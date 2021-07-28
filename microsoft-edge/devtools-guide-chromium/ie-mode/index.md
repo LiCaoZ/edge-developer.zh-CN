@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， ie11， Internet Explorer 11， ie 模式
-ms.openlocfilehash: 070bf970c784b4f2173ebc52e4494fc6807b4a8e
-ms.sourcegitcommit: 7cba715ef71cbac4ee0ebe8f07c0c0e4a2c64221
+ms.openlocfilehash: e960dd5db4f253fbd5144194555c303dfc168e0f
+ms.sourcegitcommit: 9f5dd05432f87339f4c3d71f1f9ce1d06afcaf4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "11643233"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "11675125"
 ---
 # <a name="internet-explorer-mode-and-the-devtools"></a>Internet Explorer模式和 DevTools  
 
@@ -91,10 +91,27 @@ start msedge --remote-debugging-port=9222
 
 在完全关闭并重新启动 \Microsoft Edge \ (Chromium\) 之前，IE 模式仍然不可用。  
 
+
+## <a name="replacing-internet-explorer-automation"></a>替换Internet Explorer自动化  
+
+如果现有应用程序使用 [InternetExplorer][InternetExplorerObject] 对象自动执行 Internet Explorer 11，但 Internet Explorer 11 桌面应用程序不可用，则应用程序将不起作用。  Internet Explorer 11 将于 2022 年 6 月 15 日停用。  有关详细信息，请导航到"Internet Explorer[上的Windows 10"Microsoft Edge"][BlogsWindowsExperienceFutureOfIEEdge]。  Microsoft Edge \ (Chromium\) 不支持通过对象自动执行 IE 模式，因此，将需要使用下面建议的备选方法之一更新依赖于此对象的应用程序。 `InternetExplorer`  使用 [WebBrowser][WebBrowserControl] 控件的应用程序将继续工作，并且不会受 11 Internet Explorer的影响。
+
+如果自动化应用程序不需要 IE 模式，网站 \ (或 app\) 内容正常运行，我们建议更新应用程序以使用 Microsoft Edge \ (Chromium\) 而不是 Internet Explorer 11。  许多可用的自动化工具Microsoft Edge \ (Chromium\) ，包括 WebDriver 和 Playwright。  若要了解有关使用 WebDriver 自动Microsoft Edge \ (Chromium\) ，请导航到["WebDriver 概述"。][WebDriverIndex]  若要了解有关使用 Playwright 的更多信息，请导航到["Playwright 概述"。][PlaywrightIndex]
+
+需要 IE 模式的网站 \ (或 app\) 内容正常运行的应用程序应该使用该 `WebBrowser` 控件。  该控件使用 Internet Explorer 平台 (MSHTML/Trident) 呈现 Web 内容，即使 Internet Explorer 11 桌面应用程序不可用，该控件 `WebBrowser` 也将正常工作。
+
+
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
+[PlaywrightIndex]: ../../playwright/index.md "Playwright - Microsoft Edge开发|Microsoft Docs"
+[BlogsWindowsExperienceFutureOfIEEdge]: https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/ "Internet Explorer Windows 10的未来Microsoft Edge |Windows体验博客"
 [PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326]: /previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85) "使用 F12 开发人员工具|Microsoft Docs"  
+
+[WebDriverIndex]: ../../webdriver-chromium/index.md "使用 WebDriver (Chromium) 实现测试自动化 - Microsoft Edge开发|Microsoft Docs"  
+
+[InternetExplorerObject]: /previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85) "InternetExplorer 对象 (Windows) |Microsoft Docs"
+[WebBrowserControl]: /previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752040(v=vs.85) "WebBrowser 控件 (Internet Explorer) |Microsoft Docs"

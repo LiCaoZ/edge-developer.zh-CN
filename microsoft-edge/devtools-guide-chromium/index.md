@@ -10,7 +10,7 @@ ms.technology: devtools
 keywords: microsoft edge、web 开发、f12 工具、开发工具
 ms.openlocfilehash: 78603c51dab5a61f8d6b43e60a3f252eac665d99
 ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/29/2021
 ms.locfileid: "11624757"
@@ -45,7 +45,7 @@ ms.locfileid: "11624757"
     
 :::row:::  
    :::column span="":::  
-      :::image type="complex" source="./media/devtools-intro-inspect.msft.png" alt-text="从任何元素上的上下文菜单中选择检查" lightbox="./media/devtools-intro-inspect.msft.png":::  
+      :::image type="complex" source="./media/devtools-intro-inspect.msft.png" alt-text="从任何元素上的上下文菜单中选择"检查"" lightbox="./media/devtools-intro-inspect.msft.png":::  
          从 **任何元素** 上的上下文菜单中选择"检查"  
       :::image-end:::  
    :::column-end:::  
@@ -93,12 +93,12 @@ ms.locfileid: "11624757"
 :::row-end:::  
 :::row:::  
    :::column span="":::  
-      :::image type="complex" source="media/devtools-intro-docking-right.msft.png" alt-text="选择扩展坞到右侧" lightbox="media/devtools-intro-docking-right.msft.png":::  
+      :::image type="complex" source="media/devtools-intro-docking-right.msft.png" alt-text="选择"扩展坞到右侧"" lightbox="media/devtools-intro-docking-right.msft.png":::  
          选择 **"扩展坞到右侧"**  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::  
-      :::image type="complex" source="media/devtools-intro-docking-own-window.msft.png" alt-text="选择取消停靠到单独的窗口" lightbox="media/devtools-intro-docking-own-window.msft.png":::  
+      :::image type="complex" source="media/devtools-intro-docking-own-window.msft.png" alt-text="选择"取消停靠到单独的窗口"" lightbox="media/devtools-intro-docking-own-window.msft.png":::  
          选择 **停靠到单独的窗口位置**  
       :::image-end:::  
    :::column-end:::  
@@ -110,17 +110,17 @@ DevTools 为您提供了一项令人惊叹的功能，可以检查、调试和�
 
 DevTools 在几年内逐渐增加。  你可能假设首次打开任何工具时很难了解 DevTools。  以下文本快速介绍了不同的部分。  主工具栏为您提供了一些部分，这些部分按从左到右的顺序排序。  
 
-:::image type="complex" source="./media/devtools-intro-menu-bar.msft.png" alt-text="包含说明不同部分的标签的 DevTools 菜单栏的屏幕截图。  顺序：检查工具、设备仿真工具、工具选项卡组、JavaScript 错误、问题、设置、反馈、自定义和关闭。" lightbox="./media/devtools-intro-menu-bar.msft.png":::  
-   包含说明不同部分的标签的 DevTools 菜单栏的屏幕截图。  顺序：检查工具、设备仿真工具、"工具"选项卡组、JavaScript 错误、问题、设置、反馈、自定义和关闭。  
+:::image type="complex" source="./media/devtools-intro-menu-bar.msft.png" alt-text="DevTools 菜单栏的屏幕截图，包含对不同部分进行说明的标签。  顺序为：检查工具、设备仿真工具、工具选项卡组、JavaScript 错误、问题、设置、反馈、自定义和关闭。" lightbox="./media/devtools-intro-menu-bar.msft.png":::  
+   DevTools 菜单栏的屏幕截图，包含对不同部分进行说明的标签。  顺序为：检查工具、设备仿真工具、工具选项卡组、JavaScript 错误、问题、设置、反馈、自定义和关闭。  
 :::image-end:::  
 
-*   使用 Inspect 工具可以选择当前网页上的元素。  激活后，你可以将鼠标移动到网页的不同部分，以获取有关元素和颜色覆盖的详细信息以显示尺寸、填充和边距。  
+*   你可借助检查工具选择当前网页上的某个元素。  激活后，你可以将鼠标移动到网页的不同部分，以获取有关元素和颜色覆盖的详细信息以显示尺寸、填充和边距。  
     
-    :::image type="complex" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="选中了本文第一个标题的检查工具" lightbox="./media/devtools-intro-inspect-tool.msft.png":::  
-       选中了本文第一个标题的"检查"工具  
+    :::image type="complex" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="已选中具有此文章第一个标题的检查工具" lightbox="./media/devtools-intro-inspect-tool.msft.png":::  
+       已选中具有此文章第一个标题的检查工具  
     :::image-end:::  
     
-*   [设备仿真工具][DevtoolsGuideDeviceModeIndex]在仿真设备模式下显示当前 Web 产品。  **设备仿真工具**允许你在调整浏览器大小时运行和测试产品的反应。  它还为你提供移动设备上的布局和行为估计。  
+*   [设备仿真工具][DevtoolsGuideDeviceModeIndex]显示当前 Web 产品处于仿真设备模式下。  **设备仿真工具**允许你在调整浏览器大小时运行和测试产品的反应。  它还为你提供移动设备上的布局和行为估计。  
     
     :::image type="complex" source="./media/devtools-intro-device-emulation.msft.png" alt-text="本文在仿真移动电话中的 DevTools 显示的屏幕截图" lightbox="./media/devtools-intro-device-emulation.msft.png":::  
        本文在仿真移动电话中的 DevTools 显示的屏幕截图  
@@ -160,7 +160,7 @@ DevTools 中命令菜单的屏幕截图
       :::image-end:::  
    :::column-end:::  
    :::column span="":::  
-      :::image type="complex" source="./media/devtools-intro-showing-changes.msft.png" alt-text="打开更改工具的 DevTools" lightbox="./media/devtools-intro-showing-changes.msft.png":::  
+      :::image type="complex" source="./media/devtools-intro-showing-changes.msft.png" alt-text="打开"更改"工具的 DevTools" lightbox="./media/devtools-intro-showing-changes.msft.png":::  
          打开"开发工具 **更改** 工具的 DevTools  
       :::image-end:::  
    :::column-end:::  
@@ -220,9 +220,9 @@ DevTools 团队在 DevTools 中提供新功能作为实验。  若要获取完�
 [DevtoolsGuideEvaluatePerformanceIndex]: ./evaluate-performance/index.md "开始分析运行时性能|Microsoft Docs"  
 [DevtoolsGuideExperimentalFeaturesIndex]: ./experimental-features/index.md "试验功能 | Microsoft Docs"  
 [DevtoolsGuideMemoryProblemsIndex]: ./memory-problems/index.md "修复内存问题|Microsoft Docs"  
-[DevtoolsGuideInspectStylesEditFonts]: ./inspect-styles/edit-fonts.md "在&quot;样式&quot;窗格中编辑 CSS 字体样式|Microsoft Docs"  
-[DevtoolsGuideIssuesIndex]: ./issues/index.md "使用问题工具查找并修复|Microsoft Docs"  
-[DevtoolsGuideJavascriptIndex]: ./javascript/index.md "在 Microsoft Edge 开发人员工具中调试 JavaScript 入门 | Microsoft Docs"  
+[DevtoolsGuideInspectStylesEditFonts]: ./inspect-styles/edit-fonts.md "在“样式”窗格中编辑 CSS 字体样式|Microsoft Docs"  
+[DevtoolsGuideIssuesIndex]: ./issues/index.md "使用问题工具查找并修复问题 | Microsoft Docs"  
+[DevtoolsGuideJavascriptIndex]: ./javascript/index.md "在 Microsoft Edge DevTools 中调试 JavaScript 入门 | Microsoft Docs"  
 [DevtoolsGuideJavascriptOverrides]: ./javascript/overrides.md "使用 Microsoft Edge DevTools 应用替代具有本地副本的网页|Microsoft Docs"  
 [DevtoolsGuideNetworkIndex]: ./network/index.md "检查 Microsoft Edge DevTools |Microsoft Docs"  
 [DevtoolsGuideOpenIndex]: ./open/index.md "打开 Microsoft Edge DevTools | Microsoft Docs"  

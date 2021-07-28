@@ -6,10 +6,10 @@ ms.author: msedgedevrel
 ms.date: 04/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
+keywords: microsoft edge、web 开发、f12 工具、开发工具
 ms.openlocfilehash: 6ba6a7615c2d9e2b70975af01edeeb3e10db8e59
 ms.sourcegitcommit: 31741a0c331816642ceafd20680bd3206c87c7bf
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/24/2021
 ms.locfileid: "11579741"
@@ -37,9 +37,9 @@ ms.locfileid: "11579741"
 | **编辑器** 窗格 | 查看从服务器返回的 JavaScript、HTML、CSS 和其他文件。  对 JavaScript 或 CSS 进行实验性编辑。  在刷新页面之前，所做的更改将一直保留;如果使用 Workspaces 保存到本地文件，则页面刷新后将保留所做的更改。 使用 Workspaces 或 Overrides 时，也可以编辑 HTML 文件。 |
 | **调试器** 窗格 | 使用 JavaScript 调试器设置断点、暂停运行 JavaScript，并逐步执行代码，包括你进行的任何编辑，同时观察你指定的任何 JavaScript 表达式。  观察并手动更改当前代码行范围内变量的值。 |
 
-下图显示了导航器窗格****，其中突出显示了 DevTools 左上角的红色框，右上角突出显示了"编辑器"**** 窗格，底部突出显示了"**调试器**"窗格。  最左侧是浏览器窗口的主要部分，显示呈现的网页灰显，因为调试程序暂停在断点上：
+下图显示了 **导航器** 窗格，其中突出显示了 DevTools 左上角的红色框，右上角突出显示了 **编辑器** 窗格，底部突出显示了 **调试器** 窗格。  最左侧是浏览器窗口的主要部分，显示呈现的网页灰显，因为调试程序暂停在断点上：
 
-:::image type="complex" source="../media/sources-panes-narrow-layout.msft.png" alt-text="源工具的窗格，布局较窄" lightbox="../media/sources-panes-narrow-layout.msft.png":::
+:::image type="complex" source="../media/sources-panes-narrow-layout.msft.png" alt-text=""源"工具的窗格，布局较窄" lightbox="../media/sources-panes-narrow-layout.msft.png":::
    "源"工具的窗格，布局较窄  
 :::image-end:::  
 
@@ -61,7 +61,7 @@ ms.locfileid: "11579741"
    导航 **器** 窗格
 :::image-end:::  
 
-若要访问导航器窗格的任何隐藏选项卡，请选择"更多选项卡 (![ ](../media/more-tabs-icon.msft.png) **更多选项卡**) 。
+若要访问导航器窗格的任何隐藏选项卡，请选择![更多选项卡](../media/more-tabs-icon.msft.png)(**更多选项卡**)。
 
 以下子部分涵盖导航器窗格：
 *   [使用"页面"选项卡浏览构建当前网页的资源](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
@@ -73,9 +73,9 @@ ms.locfileid: "11579741"
 
 ### <a name="using-the-page-tab-to-explore-resources-that-construct-the-current-webpage"></a>使用"页面"选项卡浏览构建当前网页的资源
 
-使用**导航**器窗格的"**** 页面"选项卡浏览从服务器返回的文件系统以构建当前网页。  选择要查看、编辑和调试的 JavaScript 文件。  " **页面** "选项卡列出了页面已加载的所有资源。
+使用**导航器**窗格的"**页**"选项卡浏览从服务器返回的文件系统以构造当前网页。  选择要查看、编辑和调试的 JavaScript 文件。  " **页面** "选项卡列出了页面已加载的所有资源。
 
-:::image type="complex" source="../media/sources-page-tab.msft.png" alt-text="源工具的导航器窗格中的页面选项卡" lightbox="../media/sources-page-tab.msft.png":::
+:::image type="complex" source="../media/sources-page-tab.msft.png" alt-text=""源"工具的"导航器"窗格中的"页面"选项卡" lightbox="../media/sources-page-tab.msft.png":::
    " **源** "工具的"导航 **器"** 窗格中的" **页面"** 选项卡
 :::image-end:::  
 
@@ -99,20 +99,20 @@ ms.locfileid: "11579741"
 
 若要更改资源的分组时间，请进行配置：
 
-1.  在左侧导航器窗格选项卡旁边 (，) 选择"... (**更多**选项") 按钮。 ****  将显示菜单。
+1.  在导航器窗格（左侧）选项卡旁边，选择 **...** （**更多选项**）"按钮。  将显示菜单。
 1.  选择或清除" **按文件夹分组"** 选项。  
 
 ### <a name="using-the-filesystem-tab-to-define-a-local-workspace"></a>使用"文件系统"选项卡定义本地 Workspace
 
-使用导航**器**窗格的"文件系统****"选项卡将文件添加到工作区，以便你在 DevTools 中所做的更改保存到本地文件系统。
+使用**导航器**窗格的"**文件系统**"选项卡将文件添加到工作区，以便在 DevTools 中所做的更改保存到本地文件系统。
 
 Workspace 中的文件在整个 DevTools 中由文件名旁边的绿色点指示。 
 
-:::image type="complex" source="../media/sources-filesystem-tab.msft.png" alt-text="工作区的文件系统选项卡" lightbox="../media/sources-filesystem-tab.msft.png":::
+:::image type="complex" source="../media/sources-filesystem-tab.msft.png" alt-text="工作区的"文件系统"选项卡" lightbox="../media/sources-filesystem-tab.msft.png":::
    工作区 **的"** 文件系统"选项卡
 :::image-end:::  
 
-默认情况下，在"源"工具中编辑文件时****，刷新网页时将放弃所做的更改。  **Sources**工具使用 Web 服务器返回的前端资源的副本。  修改服务器返回的这些前端文件时，更改不会保留，因为您未更改源文件。  您还需要在实际源代码中应用您的编辑，然后重新部署到服务器。
+默认情况下，在 **源** 工具中编辑文件时，刷新网页时将放弃更改。  **Sources**工具使用 Web 服务器返回的前端资源的副本。  修改服务器返回的这些前端文件时，更改不会保留，因为您未更改源文件。  您还需要在实际源代码中应用您的编辑，然后重新部署到服务器。
 
 相比之下，使用 Workspace 时，刷新网页时，对前端代码所做的更改将保留。  对于 Workspace，当您编辑服务器返回的前端代码时，"源"工具还会将编辑应用于本地源代码。  然后，对于其他用户查看更改，只需将已更改的源文件重新部署到服务器。
 
@@ -122,11 +122,11 @@ Workspace 中的文件在整个 DevTools 中由文件名旁边的绿色点指示
 
 ### <a name="using-the-overrides-tab-to-override-server-files-with-local-files"></a>使用"覆盖"选项卡覆盖包含本地文件的服务器文件
 
-使用**导航器**窗格的"覆盖****"选项卡覆盖页面资源 (例如图像) 文件夹中的文件。
+使用**导航器**窗格的"**替代"** 选项卡，使用本地文件夹中的文件替代页面资产（如图像）。
 
 此选项卡中的项目会覆盖服务器发送到浏览器的内容，即使服务器已发送资产。  
 
-:::image type="complex" source="../media/overrides-tab.msft.png" alt-text="导航器窗格的替代选项卡" lightbox="../media/overrides-tab.msft.png":::
+:::image type="complex" source="../media/overrides-tab.msft.png" alt-text="导航器窗格的"替代"选项卡" lightbox="../media/overrides-tab.msft.png":::
    导航 **器** 窗格的" **替代"** 选项卡
 :::image-end:::  
 
@@ -142,9 +142,9 @@ Workspace 中的文件在整个 DevTools 中由文件名旁边的绿色点指示
 
 ### <a name="using-the-content-scripts-tab-for-microsoft-edge-extensions"></a>将"内容脚本"选项卡用于Microsoft Edge扩展
 
-使用**导航器**窗格的"内容**** 脚本"选项卡查看已安装的扩展Microsoft Edge加载的任何内容脚本。 
+使用**导航器**窗格的**内容脚本**选项卡查看已安装的Microsoft Edge扩展插件加载的任何内容脚本。 
 
-:::image type="complex" source="../media/content-scripts-tab.msft.png" alt-text="导航器窗格的内容脚本选项卡" lightbox="../media/content-scripts-tab.msft.png":::
+:::image type="complex" source="../media/content-scripts-tab.msft.png" alt-text="导航器窗格的"内容脚本"选项卡" lightbox="../media/content-scripts-tab.msft.png":::
    导航 **器** 窗格的"内容 **脚本"** 选项卡
 :::image-end:::  
 
@@ -157,7 +157,7 @@ Workspace 中的文件在整个 DevTools 中由文件名旁边的绿色点指示
 
 ### <a name="using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage"></a>使用"代码段"选项卡在任何网页上运行 JavaScript 代码段
 
-使用**导航器**窗格的"代码**** 段"选项卡创建和保存 JavaScript 代码段，以便您可以在任何网页上轻松运行这些代码段。
+使用**导航器**窗格的**代码片段**选项卡创建和保存 JavaScript 代码片段，以便可以在任何网页上轻松运行这些代码片段。
 
 :::image type="complex" source="../media/snippet.msft.png" alt-text="将 jQuery 库插入网页的代码段" lightbox="../media/snippet.msft.png":::
    将 jQuery 库插入网页的代码段  
@@ -173,11 +173,11 @@ script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
 document.head.appendChild(script);
 ```  
 
-相反，您可以将此代码保存在 **代码** 段中，然后随时轻松地运行它。  选择 `Ctrl` + `S` \(Windows/Linux\) 或 `Command` + `S` \(macOS\) 时，DevTools 会将**代码段**保存到文件系统。  
+相反，您可以将此代码保存在 **代码** 段中，然后随时轻松地运行它。  选择 `Ctrl` + `S` \ (Windows/Linux\) 或 `Command` + `S` \ (macOS\) 时，DevTools 会将**代码段**保存到文件系统。  
 
 有多种方法可以运行代码段：
-*   在 **导航器窗格中** ，选择" **代码** 段"选项卡，然后选择代码段文件将其打开。  然后在编辑器窗格的底部，选择运行 **\(** ![ 运行按钮 ](../media/run-snippet-icon.msft.png) \) 。  
-*   当 DevTools 具有焦点时，选择 `Ctrl` + `P` \(Windows/Linux\) 或 `Command` + `P` \(macOS\) 打开命令[菜单][DevToolsCommandMenuIndex] `!` ，然后键入 。 
+*   在 **导航器窗格中** ，选择" **代码** 段"选项卡，然后选择代码段文件将其打开。  然后在"编辑器"窗格底部，选择**运行**（!["运行"按钮](../media/run-snippet-icon.msft.png)\）。  
+*   当 DevTools 具有焦点时，选择`Ctrl`+`P` \（Windows/Linux\） 或 `Command`+`P` \（macOS\） 打开[命令菜单][DevToolsCommandMenuIndex]，然后键入`!`。 
 
 代码段 类似于小书签。
 
@@ -187,10 +187,10 @@ document.head.appendChild(script);
 
 ### <a name="using-the-command-menu-to-open-files"></a>使用命令菜单打开文件
 
-若要打开文件，除了使用&quot;源&quot;工具**** 中的&quot;导航器&quot;窗格**** 外，还可以在 DevTools 中的任何位置使用命令菜单。
+若要打开文件，除了在**源**工具中使用**导航器**窗格外，还可以从 DevTools 中的任意位置使用命令菜单。
 
-*   在 DevTools 中的任何位置，在 `Ctrl` + `P` Windows/Linux 或 `Command` + `P` macOS 上选择。  将显示&quot;命令菜单&quot;，并列出&quot;源&quot;工具的&quot;导航器&quot;**** 窗格选项卡上**的所有**资源。  
-*   或者，在&quot;源&quot;工具中****&quot;导航器&quot;窗格的**** 选项卡旁边，选择&quot;... ** (****更多**选项") 按钮，然后选择"**打开文件"。**  
+*   在 DevTools 中的任何位置，在 `Ctrl` + `P` Windows/Linux 或 `Command` + `P` macOS 上选择。  将显示"命令"菜单，并列出**源**工具的"**导航器"** 窗格选项卡中的所有资源。  
+*   或者，在**源**工具的"**导航器**"窗格的选项卡旁，选择"**...**（**更多选项**）"按钮，然后选择 **"打开文件**"。  
 
 若要显示并选取所有文件.js，请键入 `.js` 。
 
@@ -204,9 +204,9 @@ document.head.appendChild(script);
 
 ## <a name="using-the-editor-pane-to-view-or-edit-files"></a>使用编辑器窗格查看或编辑文件
 
-使用 **"** 编辑器"窗格查看从服务器返回的前端文件，以撰写当前网页，包括 JavaScript、HTML、CSS 和图像文件。  在编辑器窗格中编辑前端文件时，DevTools 将更新网页以运行修改后的代码。 ****  
+使用 **"** 编辑器"窗格查看从服务器返回的前端文件，以撰写当前网页，包括 JavaScript、HTML、CSS 和图像文件。  在 **编辑器** 窗格中编辑前端文件时，DevTools 会更新网页以运行修改后的代码。  
 
-:::image type="complex" source="../media/editor-pane.msft.png" alt-text="源工具中的编辑器窗格" lightbox="../media/editor-pane.msft.png":::
+:::image type="complex" source="../media/editor-pane.msft.png" alt-text=""源"工具中的"编辑器"窗格" lightbox="../media/editor-pane.msft.png":::
    " **源** "工具中的" **编辑器"** 窗格  
 :::image-end:::
 
@@ -217,7 +217,7 @@ document.head.appendChild(script);
 | JavaScript | 查看、编辑和调试。 |
 | CSS | 查看和编辑。 |
 | HTML | 查看和编辑。 |
-| Images | “查看”。 |
+| 图片 | “查看”。 |
 
 默认情况下，刷新网页时将放弃编辑。  若要了解如何将更改保存到文件系统，请参阅上面的使用"文件系统"选项卡[定义本地 Workspace。](#using-the-filesystem-tab-to-define-a-local-workspace)
 
@@ -233,13 +233,13 @@ document.head.appendChild(script);
 
 ### <a name="editing-a-javascript-file"></a>编辑 JavaScript 文件
 
-若要在 DevTools 中编辑 JavaScript**** 文件，请使用"源"工具中的"编辑器 **"** 窗格。
+若要在 DevTools 中编辑 JavaScript 文件，请在**源**工具中使用**编辑器**窗格。
 
-:::image type="complex" source="../media/editing-js-in-editor-pane.msft.png" alt-text="在编辑器窗格中编辑 JavaScript" lightbox="../media/editing-js-in-editor-pane.msft.png":::
+:::image type="complex" source="../media/editing-js-in-editor-pane.msft.png" alt-text="在“编辑器”窗格编辑 JavaScript" lightbox="../media/editing-js-in-editor-pane.msft.png":::
    在 **编辑器** 窗格中编辑 JavaScript  
 :::image-end:::
 
-若要将文件加载到编辑器窗格中，请使用左侧导航器**** 窗格中 (页) 。 ****  或使用命令菜单****，如下所示：在 DevTools 的右上角，选择"自定义和控制**DevTools** \(`...` \) "，然后选择"打开**文件"。**
+若要将文件加载到"编辑器"窗格中，请使用**导航器**窗格（左侧）中的"**页**"选项卡。  或使用 **命令菜单**，如下所示：在 DevTools 的右上角，选择 **自定义和控制 DevTools** \（`...`\），然后选择 **打开文件**。
 
 #### <a name="save-and-undo"></a>保存和撤消
 
@@ -253,13 +253,13 @@ document.head.appendChild(script);
 
 #### <a name="find-and-replace"></a>查找和替换
 
-若要在当前文件中查找文本，请选择"编辑器"**** 窗格赋予其焦点，然后在 `Ctrl` + `F` Windows/Linux 或 `Command` + `F` macOS 上选择。  
+若要查找当前文件中的文本，请选择"**编辑器**"窗格，使其具有焦点，然后在 Windows/Linux 上选择`Ctrl`+`F`或在 macOS 上`Command`+`F`。  
 
-:::image type="complex" source="../media/find-replace.msft.png" alt-text="在源工具的编辑器窗格中查找和替换" lightbox="../media/find-replace.msft.png":::
+:::image type="complex" source="../media/find-replace.msft.png" alt-text="在"源"工具的"编辑器"窗格中查找和替换" lightbox="../media/find-replace.msft.png":::
    **在****"源"** 工具**的"编辑器**"窗格中查找和**替换**
 :::image-end:::
 
-若要查找并替换文本，请选择"**** 查找** ("文本框>") "替换"A-\) "****按钮。** 查看 **可** (**文件时) "A-\>B"** 按钮。
+若要查找和替换文本，请选择 **"查找**"文本框左侧的**替换**（**A-\>B**）"按钮。 查看 **可** (**文件时) "A-\>B"** 按钮。
 
 #### <a name="showing-the-changes-you-made"></a>显示所做的更改
 
@@ -267,7 +267,7 @@ To review the changes you made to a file， right-click in the **Editor** pane a
 
 The **Drawer** opens at the bottom of DevTools， showing your changes within the **Changes** tab.
 
-:::image type="complex" source="../media/local-modifications.msft.png" alt-text="在箱的更改选项卡中显示本地修改" lightbox="../media/local-modifications.msft.png":::
+:::image type="complex" source="../media/local-modifications.msft.png" alt-text="在"箱"的"更改"选项卡中显示本地修改" lightbox="../media/local-modifications.msft.png":::
    在 **"箱"** 的"更改 **"选项卡** 中显示本地 **修改**
 :::image-end:::
 
@@ -286,9 +286,9 @@ DevTools 不会重新运行脚本，因此唯一生效的 JavaScript 更改是�
 
 ### <a name="reformatting-a-minified-javascript-file-with-pretty-print"></a>使用非常打印重新格式化缩小的 JavaScript 文件
 
-若要使用"花式打印"重新设置文件的格式，使其可读，请在"编辑器****"窗格底部选择"真字打印"按钮 ![ \(Format ](../media/format-icon.msft.png) \) （显示为大括号）。  或者，如果 **"编辑器"** 窗格顶部显示"非常打印"按钮，您可以选择该按钮。
+若要使用美样打印重新格式化文件使其可读，请选择"编辑器"窗格底部的" **"美样打印** 按钮\（![格式](../media/format-icon.msft.png)\），显示为大括号。  或者，如果 **"编辑器"** 窗格顶部显示"非常打印"按钮，您可以选择该按钮。
 
-:::image type="complex" source="../media/minified.msft.png" alt-text="彩色打印按钮" lightbox="../media/minified.msft.png":::
+:::image type="complex" source="../media/minified.msft.png" alt-text=""彩色打印"按钮" lightbox="../media/minified.msft.png":::
    " **彩色打印"** 按钮  
 :::image-end:::  
 
@@ -310,7 +310,7 @@ DevTools 不会重新运行脚本，因此唯一生效的 JavaScript 更改是�
 
 来自预处理器的源映射会导致 DevTools 加载原始 JavaScript 源文件以及服务器返回的缩小的转换后的 JavaScript 文件。  然后，在设置断点并逐步执行代码时查看原始源文件。  同时，Microsoft Edge运行缩小代码。  
 
-在 **"编辑器**"窗格中，如果右键单击 JavaScript 文件，然后选择****"添加源映射"，将出现一个弹出框，包含"源**映射 URL"** 文本框和"添加 **"** 按钮。
+在"**编辑器**"窗格中，如果右键单击 JavaScript 文件，然后选择"**添加源映射**"，将显示一个弹出框，其中包含**源地图 URL**文本框和 **"添加**"按钮。
 
 即使组合、缩小或编译前端代码，源映射方法也保持其可读和可调试性。
 有关详细信息，请参阅 [将预处理的代码映射到源代码][DevToolsJavaScriptSourceMaps]。
@@ -377,7 +377,7 @@ CSS 更改会立即生效;无需手动保存更改。
 
 若要转到行号或符号 (如编辑器窗格中打开的文件中的函数名称) ，可以使用命令菜单，而不是滚动整个文件。
 
-1.   在**导航器窗格中**，选择省略号 (...)  (选项) ，然后选择打开******文件**。  将显示"命令菜单"。  
+1.   在 **导航器** 窗格中，选择省略号 （...）（**更多选项**），然后选择 **打开文件**。  将显示"命令菜单"。  
 1.   键入下列字符之一：  
 
 | Character | 命令名称 | 用途 |
@@ -389,20 +389,20 @@ CSS 更改会立即生效;无需手动保存更改。
 
 ### <a name="displaying-source-files-when-using-a-different-tool"></a>使用不同的工具时显示源文件
 
-在 DevTools 中查看源文件的主要位置是源**工具。**  但有时，你需要在查看或编辑源文件时访问其他**** 工具，**** 如元素或控制台。  使用 **"箱"中的** "快速源 ["工具][DevtoolsCustomizeIndexDrawer]。
+在 DevTools 中查看源文件的主要位置是源**工具。**  但有时需要在查看或编辑源文件时访问其他工具，例如 **元素** 或 **控制台**。  使用 **"箱"中的** "快速源 ["工具][DevtoolsCustomizeIndexDrawer]。
 
 1.  选择除"源"工具 **外** 的其他工具，如 **"元素"** 工具。  
 1.  选择 `Ctrl` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。  命令菜单将打开。  
-1.  键入 `Quick Source` ，然后选择"显示**快速源"。**  在"DevTools"窗口的底部，将显示"箱"，并选中 **"快速源"** 面板。  快速**源**面板包含你在源工具中编辑的最后一个文件，**** 该文件位于 DevTools 代码编辑器的精简版本中。  
-1.  选择 `Ctrl` + `P` \(Windows、Linux\) 或 `Command` + `P` \(macOS\) 打开 **"打开文件"** 对话框。  
+1.  键入 `Quick Source` ，然后选择"显示**快速源"。**  在"DevTools"窗口的底部，将显示"箱"，并选中 **"快速源"** 面板。  **快速源**面板包含在 **Source** 工具中编辑的最后一个文件，该文件位于精简版本的 DevTools 代码编辑器中。  
+1.  选择`Ctrl`+`P` \（Windows、Linux\） 或 `Command`+`P` \（macOS\） 以打开 **"打开文件**"对话框。  
 
 ## <a name="using-the-debugger-pane-to-debug-javascript-code"></a>使用调试器窗格调试 JavaScript 代码
 
-使用 JavaScript 调试程序逐步调试服务器返回的 JavaScript 代码。 调试程序包括调试器**** 窗格，以及你在编辑器窗格中的代码行上设置的**断**点。
+使用 JavaScript 调试程序逐步调试服务器返回的 JavaScript 代码。 调试器包括 **调试器** 窗格，以及在 **编辑器** 窗格中的代码行上设置的断点。
 
 借助调试器，你可以逐步调试代码，同时观察你指定的任何 JavaScript 表达式。  观察并手动更改变量值，并自动显示当前语句范围内哪些变量。
 
-:::image type="complex" source="../media/sources-paused-breakpoint-highlight-debug-pane.msft.png" alt-text="源工具的调试器窗格  " lightbox="../media/sources-paused-breakpoint-highlight-debug-pane.msft.png":::
+:::image type="complex" source="../media/sources-paused-breakpoint-highlight-debug-pane.msft.png" alt-text=""源"工具的"调试器"窗格  " lightbox="../media/sources-paused-breakpoint-highlight-debug-pane.msft.png":::
    **"源"** 工具的"**调试器"** 窗格  
 :::image-end:::  
 
@@ -411,7 +411,7 @@ CSS 更改会立即生效;无需手动保存更改。
 *   逐步执行代码。
 *   查看和编辑属性和变量。
 *   监视 JavaScript 表达式的值。
-*   查看调用堆栈 (到目前为止函数调用的顺序) 。
+*   查看调用堆栈（到目前为止函数调用的序列）。
 
 DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code][CodeVisualStudioComDocsEditorDebugging]中的调试器[Visual Studio。][DMCVisualStudioDebuggerNavigatingThroughCodeWithTheDebugger]
 
@@ -431,9 +431,9 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
 1.  选择 `F12` 以打开 **"DevTools"** 窗口，然后选择"源 **"** 选项卡。
 
-1.  在导航**器窗格中** (左侧) ，选择"页面"选项卡，然后选择 JavaScript**** 文件，例如 `get-started.js` 。
+1.  在 **导航器** 窗格（左侧）中，选择 **页** 选项卡，然后选择 JavaScript 文件，例如 `get-started.js`。
 
-1.  在 **"编辑器** "窗格中，选择可疑代码行附近的行号，以在该行上设置断点。  在下图中，在 行 上设置了断点 `var sum = addend1 + addend2;` 。
+1.  在 **"编辑器** "窗格中，选择可疑代码行附近的行号，以在该行上设置断点。  在下图中，在 行 上设置了断点 `var sum = addend1 + addend2;`。
 
 1.  在网页中，输入值并提交表单。  例如，输入数字，如 `5` 和 `1` ，然后选择按钮添加数字 **1 和数字 2**。  
 
@@ -445,9 +445,9 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
     在上图中，我们添加了 Watch 表达式和 ，并跨 `sum` `typeof sum` 断点添加了两行。
 
-1.  检查"范围"窗格中 **的值，** 其中显示当前断点范围内的所有变量或属性及其值。  或者，在"监视"窗格中 **添加** 表达式。  这些表达式与在语句中编写以调试代码 `console.log` 的表达式相同。  若要运行 JavaScript 命令以操作当前上下文中的数据，请使用 **控制台**。  若要打开控制台，请选择 `Esc` 。  
+1.  检查"范围"窗格中 **的值，** 其中显示当前断点范围内的所有变量或属性及其值。  或者，在"监视"窗格中 **添加** 表达式。  这些表达式与在语句中编写以调试代码 `console.log` 的表达式相同。  若要运行 JavaScript 命令以操作当前上下文中的数据，请使用 **控制台**。  若要打开控制台，请选择 `Esc`。  
 
-1.  使用调试器窗格顶部的控件逐步执行代码，如步骤****** (** `F9`) 。
+1.  使用 **调试器** 窗格顶部的控件逐步执行代码，例如 **步骤** （`F9`）。
 
 #### <a name="see-also"></a>另请参阅
 
@@ -458,12 +458,12 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 这三种方法是等效的：
 
 *   临时添加 语句 `console.log(sum)` 和 `console.log(typeof sum)` 代码，其中 `sum` 位于范围内。
-*   当调试器暂停在作用域内时，在 `sum` `console.log(typeof sum)` DevTools**** 的控制台窗格中发出 `sum` 语句。
-*   设置 **监视表达式** `sum` 和 `typeof sum` 调试 **器窗格中** 的 。
+*   当调试器在`sum`在范围内时暂停时，在 DevTools 的**控制台**窗格中发出语句`sum`和`console.log(typeof sum)`。
+*   设置 **监视表达式** `sum` 和 `typeof sum` 调试 **器窗格中** 的。
 
-当变量在范围内时，其值将自动显示在调试器窗格的"范围"部分，并且也会覆盖在计算位置的" `sum` `sum` 编辑器"******** `sum` 窗格中。  因此，您可能不需要为 定义 Watch 表达式 `sum` 。
+当变量`sum`在范围内时，`sum`及其值将自动显示在**调试器**窗格的"**范围**"部分中，并且也会覆盖在计算`sum`的编辑器窗格中。  因此，您可能不需要为 定义 Watch 表达式 `sum`。
 
-调试程序提供比语句更丰富、更灵活的显示 `console.log` 和环境。  例如，在调试器中，在逐步调试代码时，可以显示和更改所有当前定义的属性和变量的值。  还可以在控制台中发出 JavaScript**** 语句，例如更改作用域内数组中的值。   (显示控制台，请选择 **Esc**.) 
+调试程序提供比语句更丰富、更灵活的显示 `console.log` 和环境。  例如，在调试器中，在逐步调试代码时，可以显示和更改所有当前定义的属性和变量的值。  还可以在 **控制台**中发出 JavaScript 语句，例如更改范围内数组中的值。  （若要显示控制台，请选择 **Esc**。）
 
 刷新网页时，将保留断点和监视表达式。
 
@@ -475,7 +475,7 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
    Microsoft Edge**工具VS Code**扩展Visual Studio Code  
 :::image-end:::  
 
-此扩展提供对开发人员工具**的元素**Microsoft Edge**** 网络工具的访问，从 Microsoft Visual Studio Code。  
+此扩展提供从 Microsoft Visual Studio Code 中访问 Microsoft Edge DevTools 的 **Elements** 和 **网络** 工具。  
 
 有关详细信息，请参阅 Visual Studio Code[概述][DevToolsVSCodeIndex]和 GitHub 自述Microsoft Edge开发人员[工具Visual Studio Code。][GithubMicrosoftVscodeEdgeDevtools]
 

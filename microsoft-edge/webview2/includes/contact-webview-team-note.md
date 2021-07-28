@@ -11,8 +11,8 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "11399658"
 ---
-分享反馈以帮助构建更丰富的 WebView2 体验。  若要提交功能请求或 Bug，或搜索已知问题，请导航到 [Microsoft Edge WebView 反馈][GithubMicrosoftedgeWebviewfeedback] 存储库。  
+分享你的反馈，以帮助构建更丰富的 WebView2 体验。  要提交功能请求或 bug，或搜索已知问题，请导航到 [Microsoft Edge WebView 反馈][GithubMicrosoftedgeWebviewfeedback] 存储库。  
 
 <!-- links -->  
 
-[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView 反馈 - MicrosoftEdge/WebViewFeedback |GitHub"  
+[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView 反馈 - MicrosoftEdge/WebViewFeedback | GitHub"  

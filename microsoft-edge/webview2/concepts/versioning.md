@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 18ae2b8feb9310798f78e67cbb767d0642d83d24
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: 645eb4e50ba6bd74ab046b09d7071ff3c375a923
+ms.sourcegitcommit: 9f5dd05432f87339f4c3d71f1f9ce1d06afcaf4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535711"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "11675118"
 ---
 # <a name="understand-webview2-sdk-versions"></a>了解 WebView2 SDK 版本  
 
-新版本的 WebView2 SDK 的发布常规节奏与 Microsoft Edge \(Chromium\) 浏览器相同，大约每六周发布一次。  
+新版本的 WebView2 SDK 的发布常规节奏与 Microsoft Edge \ (Chromium\) 浏览器相同，大约每六周发布一次。  
 
 ## <a name="release-and-prerelease-package"></a>发布和预发布包  
 
@@ -41,7 +41,7 @@ SDK 中的 API 完全受支持。
 WebView 团队正在寻求有关将来版本中可能包含的实验性 API 的反馈。  实验性 API 在 `experimental` SDK 中标记为 。  若要帮助你评估实验性 API 并分享你的反馈，请导航到 [WebView 反馈存储库][GithubMicrosoftedgeWebviewfeedback]。  
 
 > [!CAUTION]
-> 实验性 API 可以在 SDK 中引入、修改和删除。  避免在生产应用中使用实验性 API。  
+> 实验性 API 可以在 SDK 中引入、修改和删除。  避免在生产应用中使用实验性 API。  在以稳定公开发布 API 后，Microsoft 支持该 API 的实验版本以弃用状态发布两个版本。 
 
 > [!NOTE]
 > 实验性 API 可能在你的已安装版本的 WebView2 运行时中不可用。  
