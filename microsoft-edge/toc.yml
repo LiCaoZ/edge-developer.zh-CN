@@ -197,9 +197,7 @@
               href: devtools-guide-chromium/inspect-styles/animations.md
             - name: 应用程序
               items:
-                - name: 应用程序缓存
-                  href: devtools-guide-chromium/storage/applicationcache.md
-                - name: 缓存
+                - name: 高速缓存
                   href: devtools-guide-chromium/storage/cache.md
                 - name: Cookie
                   href: devtools-guide-chromium/storage/cookies.md
@@ -477,6 +475,8 @@
               href: webview2/how-to/webdriver.md
             - name: 在 WebView2 中使用 Chromium 开发工具协议
               href: webview2/how-to/chromium-devtools-protocol.md
+            - name: 切换到预览频道
+              href: webview2/how-to/set-preview-channel.md
         - name: 参考
           href: webview2/webview2-api-reference.md
           items:
