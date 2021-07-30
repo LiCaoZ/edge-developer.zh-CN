@@ -262,7 +262,7 @@ li a {
 1.  导航到实时 **选项卡**。  
 1.  选择 **"联系人** "链接可返回到联系人页面。  现在， **联系我！** 具有与导航链接相同的字体。  
     
-    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="文本联系我！  现在字体与"主页"和"联系人"链接相同" lightbox="../media/beginners-css-multiple1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="文本联系我！  现在字体与主页和联系人链接相同" lightbox="../media/beginners-css-multiple1.msft.png":::
        文本" **联系我"！** 现在字体与 **"主页"** 和 **"联系人"** 链接相同  
     :::image-end:::  
     
@@ -367,7 +367,7 @@ li a {
     
 1.  将鼠标悬停在"主页 **"链接** 上。  链接的背景变为绿色。  
     
-    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="将鼠标悬停在"主页"链接上以显示其绿色背景" lightbox="../media/beginners-css-rule5.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="将鼠标悬停在主页链接上以显示其绿色背景" lightbox="../media/beginners-css-rule5.msft.png":::
        将鼠标悬停在"主页"链接上以显示其绿色背景  
     :::image-end:::  
     
@@ -417,7 +417,7 @@ li a {
     
 1.  选择 **"新建文件"。**  
     
-    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text=""新建文件"对话框" lightbox="../media/beginners-css-external5.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text="新建文件对话框" lightbox="../media/beginners-css-external5.msft.png":::
        "新建文件"对话框  
     :::image-end:::  
     

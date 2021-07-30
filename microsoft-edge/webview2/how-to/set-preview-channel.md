@@ -165,7 +165,7 @@ WPF 使用的方法与上述 Win32/C++ 方法类似。
 
 1.  展开 **"本地计算机策略"，** 然后展开"**计算机配置"或**"**用户配置"。**  然后展开 **"管理模板**  >  **Microsoft Edge WebView2"。**
 
-    :::image type="complex" source="./media/local-group-policy-editor.png" alt-text=""本地组策略编辑器"对话框" lightbox="./media/local-group-policy-editor.png":::
+    :::image type="complex" source="./media/local-group-policy-editor.png" alt-text="本地组策略编辑器对话框" lightbox="./media/local-group-policy-editor.png":::
        **"本地组策略编辑器** "对话框
     :::image-end:::  
 
@@ -179,7 +179,7 @@ WPF 使用的方法与上述 Win32/C++ 方法类似。
 
 1.  填写" **显示内容"** 对话框。  在 **"值名称** "列中，输入要应用于所有 WebView2 应用的星号，或仅影响指定 `.exe` WebView2 应用的文件名。  在 **"值** "列中，输入 WebView2 应用的可执行文件的路径。
 
-    :::image type="complex" source="./media/show-contents.png" alt-text=""显示内容"对话框" lightbox="./media/show-contents.png":::
+    :::image type="complex" source="./media/show-contents.png" alt-text="显示内容对话框" lightbox="./media/show-contents.png":::
        " **显示内容"** 对话框
     :::image-end:::  
 
@@ -249,7 +249,7 @@ WPF 使用的方法与上述 Win32/C++ 方法类似。
 
 1.  在" **系统属性** "对话框中，选择" **高级"选项卡** ，然后选择" **环境变量"** 按钮。
 
-    :::image type="complex" source="./media/system-properties-env-vars.png" alt-text=""系统属性"对话框中的"环境变量"按钮" lightbox="./media/system-properties-env-vars.png":::
+    :::image type="complex" source="./media/system-properties-env-vars.png" alt-text="系统属性对话框中的环境变量按钮" lightbox="./media/system-properties-env-vars.png":::
        " **系统属性"** 对话框中的" **环境变量"** 按钮
     :::image-end:::  
 

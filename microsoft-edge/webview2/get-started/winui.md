@@ -44,7 +44,7 @@ ms.locfileid: "11675132"
     *   **目标版本****：Windows 10版本 1903 (版本 18362**) 或更高版本  
     *   **最低版本****：Windows 10版本 1803 (版本 17134) **  
         
-    :::image type="complex" source="./media/winui-getting-started-project-type.png" alt-text=""新建通用Windows平台Project"对话框，包含"目标版本"和"最低版本"的选定值。" lightbox="./media/winui-getting-started-project-type.png":::
+    :::image type="complex" source="./media/winui-getting-started-project-type.png" alt-text="新建通用Windows平台Project对话框，包含目标版本和最低版本的选定值。" lightbox="./media/winui-getting-started-project-type.png":::
        "新建通用Windows平台Project"对话框，包含"目标版本"和"最低版本"的选定值。
     :::image-end:::  
     

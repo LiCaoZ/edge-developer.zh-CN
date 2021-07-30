@@ -45,7 +45,7 @@ ms.locfileid: "11624757"
     
 :::row:::  
    :::column span="":::  
-      :::image type="complex" source="./media/devtools-intro-inspect.msft.png" alt-text="从任何元素上的上下文菜单中选择"检查"" lightbox="./media/devtools-intro-inspect.msft.png":::  
+      :::image type="complex" source="./media/devtools-intro-inspect.msft.png" alt-text="从任何元素上的上下文菜单中选择检查" lightbox="./media/devtools-intro-inspect.msft.png":::  
          从 **任何元素** 上的上下文菜单中选择"检查"  
       :::image-end:::  
    :::column-end:::  
@@ -93,12 +93,12 @@ ms.locfileid: "11624757"
 :::row-end:::  
 :::row:::  
    :::column span="":::  
-      :::image type="complex" source="media/devtools-intro-docking-right.msft.png" alt-text="选择"扩展坞到右侧"" lightbox="media/devtools-intro-docking-right.msft.png":::  
+      :::image type="complex" source="media/devtools-intro-docking-right.msft.png" alt-text="选择扩展坞到右侧" lightbox="media/devtools-intro-docking-right.msft.png":::  
          选择 **"扩展坞到右侧"**  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::  
-      :::image type="complex" source="media/devtools-intro-docking-own-window.msft.png" alt-text="选择"取消停靠到单独的窗口"" lightbox="media/devtools-intro-docking-own-window.msft.png":::  
+      :::image type="complex" source="media/devtools-intro-docking-own-window.msft.png" alt-text="选择取消停靠到单独的窗口" lightbox="media/devtools-intro-docking-own-window.msft.png":::  
          选择 **停靠到单独的窗口位置**  
       :::image-end:::  
    :::column-end:::  
@@ -160,7 +160,7 @@ DevTools 中命令菜单的屏幕截图
       :::image-end:::  
    :::column-end:::  
    :::column span="":::  
-      :::image type="complex" source="./media/devtools-intro-showing-changes.msft.png" alt-text="打开"更改"工具的 DevTools" lightbox="./media/devtools-intro-showing-changes.msft.png":::  
+      :::image type="complex" source="./media/devtools-intro-showing-changes.msft.png" alt-text="打开更改工具的 DevTools" lightbox="./media/devtools-intro-showing-changes.msft.png":::  
          打开"开发工具 **更改** 工具的 DevTools  
       :::image-end:::  
    :::column-end:::  

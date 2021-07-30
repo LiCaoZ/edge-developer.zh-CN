@@ -66,7 +66,7 @@ ms.locfileid: "11709260"
 
 左侧**导航**器窗格中的"代码**** 段"选项卡列出了您的代码段。  当您要编辑代码段时，您需要从"代码段"选项卡 **中打开** 它。  
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text=""代码段"选项卡" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="代码段选项卡" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
    " **代码段"** 选项卡  
 :::image-end:::  
 
@@ -74,7 +74,7 @@ ms.locfileid: "11709260"
 
 1.  选择" **源"** 选项卡。 将显示 **"源** "工具。  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="在左侧打开"页面"选项卡的"源"工具" lightbox="../media/javascript-sources-page-pane.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="在左侧打开页面选项卡的源工具" lightbox="../media/javascript-sources-page-pane.msft.png":::
        在 **左侧** 打开" **页面"** 选项卡的"源"工具  
     :::image-end:::  
     
