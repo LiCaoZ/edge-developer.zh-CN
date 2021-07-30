@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: d9901f9c39dabfab111eb7e0c34a3e267a317110
-ms.sourcegitcommit: 59d8043e37b89da814f63bc85daf84e0e7167eab
+ms.openlocfilehash: ff6335a9d2eda8a8d66e0fd9df36cf47aaf21179
+ms.sourcegitcommit: d44dc9f230e8075efc08a62ff83e2bf2c6851776
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "11586386"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "11710436"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -62,7 +62,7 @@ ms.locfileid: "11586386"
 }
 ```  
 
-## <a name="updated-manifest"></a>更新后的清单  
+## <a name="update-manifest"></a>更新清单  
 
 服务器返回的更新清单应为 XML 文档。  查看以下代码段，查看更新后的清单 XML 文件的示例。  
 

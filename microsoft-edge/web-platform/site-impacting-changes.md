@@ -7,12 +7,12 @@ ms.date: 07/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 兼容性， Web 平台
-ms.openlocfilehash: 842e57af361c18715bfb3c001679fabb4a86d0dd
-ms.sourcegitcommit: 9f5dd05432f87339f4c3d71f1f9ce1d06afcaf4b
+ms.openlocfilehash: ea0cf4e753841f9cf2aaeaca7350b77a48e47453
+ms.sourcegitcommit: 613c4c5325177560f9e814ead1a802531f92b8ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "11675139"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "11709253"
 ---
 # <a name="site-compatibility-impacting-changes-coming-to-microsoft-edge"></a>Microsoft Edge 中影响网站兼容性的更改  
 
@@ -36,8 +36,9 @@ Microsoft Edge项目对 Web 平台进行几乎所有上游Chromium更改。  原
 | 自动升级混合内容图像 | Edge v88  |  | 对图像的非安全 \ (HTTP\) 会自动升级到 HTTPS;如果图像无法通过 HTTPS 访问，则图像下载将失败。 组 [策略][DeployedgeMicrosoftEdgePoliciesInsecurecontentallowedforurls] 可用于控制此功能。 此更改发生在Chromium项目上，Microsoft Edge项目。 有关详细信息，请导航到 [Chrome 平台状态条目][ChromestatusFeature4926989725073408]。  | 
 | 在 TLS 中删除 3DES  | Edge v93  |  | 从 Edge v93 开始，将TLS_RSA_WITH_3DES_EDE_CBC_SHA密码套件的支持。 此更改发生在Chromium项目上，Microsoft Edge项目。 有关详细信息，请导航到 [Chrome 平台状态条目][ChromestatusFeature6678134168485888]。 此外，在 Edge v93 中，兼容性策略可用于支持需要保留与过时服务器的兼容性的方案。 此兼容性策略将过时，并停止在 Edge v95 中运行。 请确保在更新之前更新受影响的服务器。 |
 | 将专用网络请求限制为保护上下文  | Edge v93  |  | 从 Edge v93 开始，从 internet (访问本地 intranet) 需要通过 HTTPS 传递这些页面。 此更改发生在Chromium项目上，Microsoft Edge项目。 有关详细信息，请导航到 [Chrome 平台状态条目][ChromestatusFeature5436853517811712]。 有两种兼容性策略可用于支持需要保留与非安全页面的兼容性的方案 [：InsecurePrivateNetworkRequestAllowed][DeployEdgeMicrosoftEdgePoliciesInsecurePrivateNetworkRequestAllowed] 和 [InsecurePrivateNetworkRequestAllowedForUrls][DeployEdgeMicrosoftEdgePoliciesInsecurePrivateNetworkRequestAllowedForUrls]。 |
-| 弃用 WebRTC 的计划 B SDP 语义 | [Chrome+1](#release-comments) \ (Edge v94\)   |  | 此更改发生在Chromium项目上，Microsoft Edge项目。 此更改将弃用 SDP 中的旧会话 (协议) 称为计划 B。此 SDP 格式将由统一计划取代，统一计划是一种符合规格且跨浏览器兼容的 SDP 格式。 有关详细信息，请导航到 [Chrome 平台状态][ChromestatusFeature5823036655665152] 条目和 PSA：计划 B SDP 弃用和删除的 [时间线 - 请迁移到统一计划][PSADeprecateWebRTCPlanB]。 Microsoft 推出计划弃用计划计划在 Chrome 后的一个版本中发布。 请求 [WebRTC 计划 B 反向源试用令牌][ChromeDevelopersOrigintrialsWebRTCPlanBOriginTrial] 允许网站继续使用已弃用 API，直到 Edge v96。 |
-| 阻止混合内容下载 | Edge v94  |  | HTTPS 页面上将阻止从 HTTP URL 下载文件。 此更改发生在Chromium项目上，Microsoft Edge项目。  有关详细信息，请导航到 [Google 安全博客条目][GoogleBlogSecurity20200206]。 |  
+| 弃用 WebRTC 的计划 B SDP 语义 | [Chrome+1](#release-comments) \ (TBA\)   |  | 此更改发生在Chromium项目上，Microsoft Edge项目。 此更改将弃用 SDP 中的旧会话 (协议) 称为计划 B。此 SDP 格式将由统一计划取代，统一计划是一种符合规格且跨浏览器兼容的 SDP 格式。 有关详细信息，请导航到 [Chrome][ChromestatusFeature5823036655665152]平台状态条目 [，PSA：计划 B SDP][PSADeprecateWebRTCPlanB]弃用和删除的时间线 - 请迁移到统一计划 ，PSA：计划 B 抛出仅限于 [M93 中的 Canary (而不是在 ][PSADeprecateWebRTCPlanBLimitedToCanaryInM93]Stable) 中引发。 Microsoft 推出计划弃用计划计划在 Chrome 后的一个版本中发布。 请求 [WebRTC 计划 B 反向源试用令牌][ChromeDevelopersOrigintrialsWebRTCPlanBOriginTrial] 允许网站继续使用已弃用 API，直到 Edge v96。 |
+| 阻止混合内容下载 | Edge v94  |  | HTTPS 页面上将阻止从 HTTP URL 下载文件。 此更改发生在Chromium项目上，Microsoft Edge项目。  有关详细信息，请导航到 [Google 安全博客条目][GoogleBlogSecurity20200206]。 |
+| 删除跨源子框架 JavaScript 对话框 | [Chrome+1](#release-comments) (Edge v94)   |  | 从 `window.alert` 跨 `window.prompt` 源 iFrame 中删除 、 `window.confirm` 和 。 此更改发生在Chromium项目上，Microsoft Edge项目。  有关详细信息，请导航到意图 [以删除：跨源子框 JS 对话框](https://groups.google.com/a/chromium.org/g/blink-dev/c/hTOXiBj3D6A/m/JtkdpDd1BAAJ)。 |   
 
 ##### <a name="release-comments"></a>发布注释  
 
@@ -88,5 +89,7 @@ Microsoft Edge项目对 Web 平台进行几乎所有上游Chromium更改。  原
 [WebDevAppCacheRemoval]: https://web.dev/appcache-removal "准备 AppCache 删除|web.dev"  
 
 [PSADeprecateWebRTCPlanB]: https://groups.google.com/g/discuss-webrtc/c/UBtZfawdIAA/m/-UVQQcubBQAJ "PSA：计划 B SDP 弃用和删除的时间线 - 请迁移到统一计划"
+
+[PSADeprecateWebRTCPlanBLimitedToCanaryInM93]: https://groups.google.com/g/discuss-webrtc/c/DRRAnej3BTE/m/EqIhrLleBgAJ "PSA：计划 B 引发仅限于 M93 中的 Canary， (Stable) "
 
 <!--todo:  cleanup links  -->  
