@@ -23,6 +23,8 @@
           items:
             - name: 实验性功能
               href: devtools-guide-chromium/experimental-features/index.md
+            - name: Microsoft Edge 93
+              href: devtools-guide-chromium/whats-new/2021/07/devtools.md
             - name: Microsoft Edge 92
               href: devtools-guide-chromium/whats-new/2021/05/devtools.md
             - name: Microsoft Edge 91
@@ -407,7 +409,7 @@
           href: web-platform/ie-to-microsoft-edge-redirection.md
         - name: Microsoft Edge 中的跟踪防护
           href: web-platform/tracking-prevention.md
-        - name: 如何检测网站中的 Microsoft Edge
+        - name: 正在从网站检测 Microsoft Edge
           href: web-platform/user-agent-guidance.md
         - name: 自定义“密码显示”按钮
           href: web-platform/password-reveal.md
