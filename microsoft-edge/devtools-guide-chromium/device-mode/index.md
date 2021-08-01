@@ -3,16 +3,16 @@ description: 使用 Microsoft Edge 中的虚拟设备构建移动优先的网站
 title: 在 Microsoft Edge DevTools 中模拟移动设备
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools, 仿真, 设备, 模拟, 移动
-ms.openlocfilehash: b62a1799b1707fc4c6890bb7ad9ad4aa9afab113
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 924f4a0dc99c4da1766e5ded43539e10f487b435
+ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564404"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "11710744"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -80,7 +80,7 @@ ms.locfileid: "11564404"
 
 使用“**设备类型**”列表模拟移动设备或桌面设备。  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="设备类型列表" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="“设备类型”列表" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
    “**设备类型**”列表  
 :::image-end:::  
 
@@ -152,7 +152,7 @@ ms.locfileid: "11564404"
 
 1.  选择“**设备**”列表>“**编辑**”。  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="选择编辑" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="选择“编辑”" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
        选择“**编辑**”  
     :::image-end:::  
     
@@ -218,7 +218,7 @@ ms.locfileid: "11564404"
 1.  选择“**性能**”面板，然后选择“**捕获设置**”\（![捕获设置](../media/capture-settings-icon.msft.png)\）。
 1.  选择 **CPU**  > **速度降低至 1/4**** 1/6**。
     
-    :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="性能面板中的CPU列表" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
+    :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="“性能”面板中的“CPU”列表" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
        “**性能**”面板中的“**CPU**”列表  
     :::image-end:::  
     
@@ -229,7 +229,7 @@ ms.locfileid: "11564404"
 1.  选择“**网络**”工具。
 1.  选择“**联机**” > “**快速 3G**”或“**慢速 3G**”。
     
-    :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="网络面板中的限制列表" lightbox="../media/device-mode-network-throttle.msft.png":::
+    :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="“网络”面板中的“限制”列表" lightbox="../media/device-mode-network-throttle.msft.png":::
        “网络”面板中的“**限制**”列表  
     :::image-end:::  
     
@@ -243,55 +243,74 @@ ms.locfileid: "11564404"
 
 1.  选择“**捕获设置**”\（![捕获设置](../media/capture-settings-icon.msft.png)\），然后选择“**网络**”列表，并将预设更改为“**快速 3G**”或“**慢速 3G**”。  
     
-    :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="从性能面板设置网络限制" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
+    :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="从“性能”面板设置网络限制" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
        从“**性能**”面板设置网络限制  
     :::image-end:::  
     
 ## <a name="override-geolocation"></a>替代地理位置  
 
-:::row:::
-   :::column span="":::
-      如果页面依赖来自移动设备的地理位置信息来正确呈现，请使用替代地理位置的 UI 来提供不同的地理位置。  
+ 如果页面依赖来自移动设备的地理位置信息来正确呈现，请使用替代地理位置的 UI 来提供不同的地理位置。
 
+:::row:::
+   :::column span="":::       
       1.  选择“**自定义和控制 DevTools**”\(`...`\) >“**更多工具**” > “**传感器**”。  
+         
+   :::column-end:::
+   :::column span="":::
+
+      1.  通过选择 `Control` + `Shift` + `P` \ (Windows、Linux\) 或 `Command` + `Shift` + `P` \ (macOS\) 打开命令菜单。  
+      1. 键入 `Sensors`，然后选择“**显示传感器**”。  
+            
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::       
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="地理位置传感器" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
          地理位置**传感器**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  打开命令菜单。  
-          *   选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。  
-      1. 键入 `Sensors`，然后选择“**显示传感器**”。  
-      
+     
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="针对地理位置显示传感器" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
          针对地理位置**显示传感器**  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
+
 在“**传感器**”面板上，可以使用“**位置**”下拉菜单选择 DevTools 中包含的预设位置之一。  若要输入自定义位置，请选择“**其他...**”， 然后输入自定义位置的坐标。  若要在位置信息不可用时在错误状态下测试页面，请选择“**位置不可用**”。  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="已选择预设位置的传感器面板" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="已选择预设位置的“传感器”面板" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
     已选择预设位置的“**传感器**”面板。  
 :::image-end:::
 
 ## <a name="set-orientation"></a>设置方向  
 
+如果页面依赖来自移动设备的方向信息来正确呈现，请打开方向 UI。  
+
 :::row:::
    :::column span="":::
-      如果页面依赖来自移动设备的方向信息来正确呈现，请打开方向 UI。  
 
       1.  选择“**自定义和控制 DevTools**”\(`...`\) >“**更多工具**” > “**传感器**”。  
+      
+      
+   :::column-end:::
+   :::column span="":::
+      1.  通过选择 `Control` + `Shift` + `P` \ (Windows、Linux\) 或 `Command` + `Shift` + `P` \ (macOS\) 打开命令菜单。  
+      1. 键入 `Sensors`，然后选择“**显示传感器**”。  
+           
+   :::column-end:::
+:::row-end:::  
+
+:::row:::
+   :::column span="":::
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="方向传感器" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
          方向**传感器**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  打开命令菜单。  
-          *   选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。  
-      1. 键入 `Sensors`，然后选择“**显示传感器**”。  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="针对方向显示传感器" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
          针对方向**显示传感器**  
@@ -301,27 +320,36 @@ ms.locfileid: "11564404"
 
 在“**传感器**”面板上，可以从“**方向**”下拉菜单中选择预设方向。  若要输入自己的方向，请选择“**自定义方向**”，然后输入自己的 [alpha][MDNDeviceOrientaitonAlpha]、 [beta][MDNDeviceOrientaitonBeta]和 [gamma][MDNDeviceOrientaitonGamma] 值。  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="传感器面板上的方向选项" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="“传感器”面板上的方向选项" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
     “**传感器**”面板上的**方向**选项  
 :::image-end:::  
 
 ## <a name="set-user-agent-string"></a>设置用户代理字符串  
 
+如果页面依赖移动设备中的用户代理字符串来正确呈现，请使用“**网络条件**”面板提供不同的用户代理字符串。  
+
 :::row:::
    :::column span="":::
-      如果页面依赖移动设备中的用户代理字符串来正确呈现，请使用“**网络条件**”面板提供不同的用户代理字符串。  
       
       1.  选择“**自定义和控制 DevTools**”\(`...`\) >“**更多工具**” > “**网络条件**”。  
-      
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="更多工具菜单中的网络条件条目" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
+           
+   :::column-end:::
+   :::column span="":::
+      1.  通过选择 `Control` + `Shift` + `P` \ (Windows、Linux\) 或 `Command` + `Shift` + `P` \ (macOS\) 打开命令菜单。  
+      1. 键入 `Network conditions`，然后选择“**显示网络条件**”。  
+           
+   :::column-end:::
+:::row-end:::  
+
+:::row:::
+   :::column span="":::
+            
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="“更多工具”菜单中的“网络条件”条目" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
          “**更多工具**”菜单中的“**网络条件**”条目  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  打开命令菜单。  
-          *   选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。  
-      1. 键入 `Network conditions`，然后选择“**显示网络条件**”。  
-      
+            
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="显示网络条件" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
          **显示网络条件**  
       :::image-end:::  
@@ -333,6 +361,34 @@ ms.locfileid: "11564404"
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="在 macOS 上，将用户代理字符串设置为 Microsoft Edge" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
     在 macOS 上，将用户代理字符串设置为 Microsoft Edge  
 :::image-end:::  
+
+## <a name="set-user-agent-client-hints"></a>设置用户代理客户端提示
+
+如果你的网站使用用户 [代理客户端提示](../../web-platform/user-agent-guidance.md)，请使用 **模拟设备** 面板添加设备和设置用户代理客户端提示。
+
+1. 打开上下文**菜单 (** 右键单击") "，然后选择"检查 **"。**
+1. 选择**设置**  >  **设备"。**
+1. 在"模拟设备"面板中，选择"**添加自定义设备..."，** 然后展开"**用户代理客户端提示"。**
+
+    :::image type="complex" source="images/emulated-devices-user-agent-client-hints.msft.png" alt-text="设置用户代理客户端提示" lightbox="images/emulated-devices-user-agent-client-hints.msft.png":::
+        设置用户代理客户端提示  
+    :::image-end::: 
+
+1. 在"设备名称"文本框 **中键入** 唯一的名称，例如 `Test101` 。
+1. 接受默认值或根据需要更改**Width、Height**和设备**像素**比率。 ****
+1. 按如下所示设置用户代理客户端提示。
+    * **品牌**和**版本**，如*Edge*和*92。* 选择 **+ 添加品牌** 以添加多个品牌和版本对。
+    * **完整浏览器版本**，例如*92.0.1111.0。*
+    * **平台**和**版本**，如*Windows*和*10.0。*
+    * **体系结构** ，如 *x86*。
+    * **设备型号** ，例如 *，一些设备型号*。
+
+    > [!NOTE]
+    > 设置或更改任何用户代理客户端提示。 没有所需的值。
+
+1. 选择**添加**。 新设备以选定状态显示在" **模拟设备** "列表顶部。
+
+还可以在网络分析参考中设置用户 [代理客户端提示](../network/reference.md)。
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 

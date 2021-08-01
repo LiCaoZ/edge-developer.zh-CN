@@ -3,16 +3,16 @@ description: 打开"网络条件"工具，禁用"自动选择"，然后从列表
 title: 替代 DevTools 中的Microsoft Edge字符串
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 50d831847342c749cd36f203998351d53325a6f8
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 06ec6905b11d01ec0e7c03fb8c4c9c843923a881
+ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564292"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "11710702"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,20 +31,20 @@ ms.locfileid: "11564292"
 
 若要覆盖[DevTools 中的][MDNUserAgent]用户Microsoft Edge字符串：  
 
-1.  选择 `Control`+`Shift`+`P` \(Windows、Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开**命令菜单**。  
+1. 选择 `Control`+`Shift`+`P` \(Windows、Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开**命令菜单**。  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-command-menu.msft.png":::
        **命令菜单**  
     :::image-end:::  
     
-1.  键入 `network conditions` ，选择 **"显示网络条件**"，然后选择 `Enter` 以打开 **"网络条件"** 工具。  
-1.  在" **用户代理"** 部分，关闭" **自动选择"** 复选框。  
+1. 键入 `network conditions` ，选择 **"显示网络条件**"，然后选择 `Enter` 以打开 **"网络条件"** 工具。  
+1. 在" **用户代理"** 部分，清除" **使用浏览器默认"** 复选框。  
     
-    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="关闭自动选择" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
-       关闭" **自动选择"**  
-    :::image-end:::  
+    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="关闭"自动选择"" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
+       清除 **"使用浏览器默认复选框** " :::image-end:::  
     
-1.  从列表中选择用户代理字符串，或输入你自己的自定义字符串。  
+1. 从下拉列表中选择用户代理或输入自定义用户代理。
+1. 选择 **"用户代理客户端提示** "查看和更改这些值，如网络 [分析参考中所述](../network/reference.md)。
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 

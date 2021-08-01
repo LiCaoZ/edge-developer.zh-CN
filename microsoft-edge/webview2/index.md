@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、edge html、Windows Forms、WinForms、WPF、.NET、WinUI、Project Reunion
-ms.openlocfilehash: 64c835d0122a1c72e610efed2c060f7921a8e2b5
-ms.sourcegitcommit: 5ae09b1ad6cd576c9fec12538b23cd849861f2b2
+ms.openlocfilehash: a2f377893f4232b86a72a68010a8194004a14d29
+ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "11627983"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "11710694"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介  
 
@@ -157,11 +157,14 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术\(HTML、
 *   .NET Framework 4.5 或更高版本  
 *   .NET Core 3.1 或更高版本  
 *   .NET 5  
-*   [WinUI 3.0][UwpToolkitsWinui3] \(预览版\)  
+*   [WinUI 3.0][UwpToolkitsWinui3]  
     
 可以在以下版本的 Windows 中运行 WebView2 应用。  
 
 *   Windows 10  
+*   Windows 10 IoT 企业版LTSC x32 2019
+*   Windows 10 IoT 企业版LTSC x64 2019
+*   Windows 10 IoT 企业版 21h1 x64
 *   Windows 8.1  
 *   Windows 7 \*\*  
 *   Windows Server 2019  

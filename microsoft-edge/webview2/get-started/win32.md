@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 6eae00a0fddb75782be5a3e94efaa5a8965674a0
-ms.sourcegitcommit: 8f37c931ecde4d58223113f7e3b42d37cc3df97f
+ms.openlocfilehash: d1baa8c81c92da31b0b65eb21b6873965831f961
+ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "11643446"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "11710736"
 ---
 # <a name="get-started-with-webview2"></a>WebView2 入门  
 
@@ -23,19 +23,19 @@ ms.locfileid: "11643446"
 
 请确保先安装以下先决条件列表，然后再继续。  
 
-*   [WebView2][Webview2Installer]运行时Microsoft Edge (Chromium) [][MicrosoftedgeinsiderDownload]安装在受支持的操作系统 \ (上的任意非稳定通道Windows 10、Windows 8.1和 Windows 7\) 。  
+*   [WebView2][Webview2Installer] 运行时或任何 [Microsoft Edge (Chromium) ][MicrosoftedgeinsiderDownload] 安装在受支持的操作系统 \ (当前为 Windows 10、Windows 8.1 和 Windows 7\) 上的非稳定通道。  
     
-*   [Visual Studio][MicrosoftVisualstudioMain]安装有 C++ 支持的 2015 或更高版本。  
+*   [Visual Studio][MicrosoftVisualstudioMain] 安装有 C++ 支持的 2015 或更高版本。  
     
 ## <a name="step-1---create-a-single-window-app"></a>步骤 1 - 创建单窗口应用  
 
 从包含单个主窗口的基本桌面项目开始。  
 
 > [!IMPORTANT]
-> 为了更好地关注演练，请使用演练：为示例应用创建传统的 Windows 桌面应用程序 ([C++][CppWindowsWalkthroughCreatingDesktopApplication]) 中修改的示例代码。  若要下载修改后的示例并开始，请导航到["WebView2 示例"。][GithubMicrosoftedgeWebview2samplesGettingStartedGuide]  
+> 为了更好地关注演练，请使用演练：为示例应用创建传统的 Windows 桌面应用程序 [ (C++ ][CppWindowsWalkthroughCreatingDesktopApplication]) 中修改的示例代码。  若要下载修改后的示例并开始，请导航到["WebView2 示例"。][GithubMicrosoftedgeWebview2samplesGettingStartedGuide]  
 
 1.  在Visual Studio中，打开 `WebView2GettingStarted.sln` 。  
-    如果使用早期版本的 Visual Studio，请将鼠标悬停在**WebView2GettingStarted**项目上，打开上下文菜单 \ (右键单击\) ，然后选择 **"属性**"。  在**配置属性**  >  **常规**下 **，Windows SDK**版本和**** 平台工具集，以使用 Win10 SDK 和Visual Studio可用的工具集。  
+    如果使用早期版本的 Visual Studio，请将鼠标悬停在**WebView2GettingStarted**项目上，打开上下文菜单 \ (右键单击\) ，然后选择"属性 **"。**  在 **"配置属性**常规"下，修改 Windows SDK 版本和平台工具集，以  >  **** 使用 Win10 SDK 和Visual Studio可用的工具集。 **** ****  
     
 :::image type="complex" source="../media/tool-version.png" alt-text="工具版本" lightbox="../media/tool-version.png":::
    工具版本  
@@ -47,26 +47,26 @@ Visual Studio显示错误，因为项目缺少 WebView2 头文件。  应在步�
 
 将 WebView2 SDK 添加到项目中。  使用 NuGet 安装 Win32 SDK。  
 
-1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击\) ，然后选择"管理NuGet**包"。**  
+1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击\) ，然后选择管理 **NuGet 程序包**。  
     
     :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="管理 NuGet 程序包" lightbox="../media/manage-nuget-packages.png":::
        管理 NuGet 程序包  
     :::image-end:::  
     
-1.  安装Windows库。  
-    1.  在搜索栏中，键入 > `Microsoft.Windows.ImplementationLibrary` **Microsoft.Windows。ImplementationLibrary**。  
-    1.  在右侧窗口中，选择"安装 **"。**  NuGet将库下载到计算机。  
+1.  安装 Windows 实现库。  
+    1.  在搜索栏中，键入"> `Microsoft.Windows.ImplementationLibrary` **选择"Microsoft.Windows.ImplementationLibrary"。**  
+    1.  在右侧窗口中，选择"安装 **"。**  NuGet 将库下载到计算机。  
         
         > [!NOTE]
-        > 实现[Windows库][GithubMicrosoftWilMain]和 Windows[运行时 C++ 模板][CppCxWrlTemplateLibraryVS2019]库是可选的，因此对于此示例而言，使用 COM 更为简单。  
+        > [Windows 实现库和][GithubMicrosoftWilMain] [Windows 运行时 C++ 模板][CppCxWrlTemplateLibraryVS2019]库是可选的，并且使使用 COM 更容易作为示例。  
         
-        :::image type="complex" source="../media/wil.png" alt-text="Windows实现库" lightbox="../media/wil.png":::
-           Windows实现库  
+        :::image type="complex" source="../media/wil.png" alt-text="Windows 实现库" lightbox="../media/wil.png":::
+           Windows 实现库  
         :::image-end:::  
         
 1.  安装 WebView2 SDK。  
     1.  在搜索栏中，键入"> `Microsoft.Web.WebView2` **选择"Microsoft.Web.WebView2"。**  
-    1.  在右侧窗口中，选择"安装 **"。**  NuGet将 SDK 下载到计算机。  
+    1.  在右侧窗口中，选择"安装 **"。**  NuGet 将 SDK 下载到计算机。  
         
         :::image type="complex" source="../media/nuget.png" alt-text="NuGet 程序包管理器" lightbox="../media/nuget.png":::
            NuGet 程序包管理器
@@ -110,7 +110,7 @@ Visual Studio显示错误，因为项目缺少 WebView2 头文件。  应在步�
 
 将 WebView 添加到主窗口。  
 
-使用 `CreateCoreWebView2Environment` 方法设置环境并找到支持Microsoft Edge \ (Chromium\) 的浏览器。  如果要指定浏览器位置、用户文件夹、浏览器标志等，也可以使用此方法，而不是 `CreateCoreWebView2EnvironmentWithOptions` 使用默认设置。  完成该方法后，在回调中运行 方法并运行 `CreateCoreWebView2Environment` `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` 方法，获取关联的 WebView。  
+使用 `CreateCoreWebView2Environment` 方法设置环境并找到 Microsoft Edge \ (Chromium\) 控件的浏览器。  如果要指定浏览器位置、用户文件夹、浏览器标志等，也可以使用此方法，而不是 `CreateCoreWebView2EnvironmentWithOptions` 使用默认设置。  完成该方法后，在回调中运行 方法并运行 `CreateCoreWebView2Environment` `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` 方法，获取关联的 WebView。  
 
 在回调中，设置一些设置，调整 WebView 的大小以使用 100% 的父窗口，然后导航到必应。  
 
@@ -159,9 +159,9 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
     }).Get());
 ```  
 
-### <a name="build-your-bing-sample-app"></a>生成必应示例应用  
+### <a name="build-your-bing-sample-app"></a>生成 Bing 示例应用  
 
-若要生成并运行应用，请选择 `F5` 。  现在，你有一个 WebView 窗口，必应页面。  
+若要生成并运行应用，请选择 `F5` 。  现在，你有一个显示 Bing 页面的 WebView 窗口。  
 
 :::image type="complex" source="../media/bing-window.png" alt-text="必应窗口" lightbox="../media/bing-window.png":::
    必应窗口  
@@ -287,12 +287,13 @@ nullptr);
 
 有关本文未涵盖的其他 WebView2 功能，请查看以下资源。  
 
+*   若要获取本教程中使用的代码，请导航到 [MicrosoftEdge/WebView2Samples 存储库][Win32GithubCode]。
 *   若要了解有关生成 WebView2 应用程序的信息，请导航到 [WebView2 开发最佳做法][WV2BestPractices]。  
 *   有关 WebView2 功能的综合示例，请导航到 [WebView2 API 示例][GithubMicrosoftedgeWebview2samplesApisample]。  
 *   对于使用 WebView2 生成的示例应用，导航到 [WebView2Browser][GithubMicrosoftedgeWebview2browser]。  
 *   有关 WebView2 API 的详细信息，请导航到 [API 参考][Webview2ReferenceWin32]。  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>与 WebView 团队Microsoft Edge联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>联系 Microsoft Edge WebView 团队  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
@@ -309,12 +310,12 @@ nullptr);
 
 [GithubMicrosoftedgeWebview2browser]: https://github.com/MicrosoftEdge/WebView2Browser "WebView2Browser - MicrosoftEdge/WebView2Browser |GitHub"  
 
-[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView 反馈 - MicrosoftEdge/WebViewFeedback |GitHub"  
+[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView 反馈 - MicrosoftEdge/WebViewFeedback | GitHub"  
 
-[GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples |GitHub"  
+[GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"  
 
 [GithubMicrosoftedgeWebview2samplesApisample]: https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md "WebView2 API 示例 - MicrosoftEdge/WebView2Samples |GitHub"  
-[GithubMicrosoftedgeWebview2samplesGettingStartedGuide]: https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide "WebView2 示例 - MicrosoftEdge/WebView2Samples |GitHub"  
+[GithubMicrosoftedgeWebview2samplesGettingStartedGuide]: https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"  
 
 [GithubMicrosoftWilMain]: https://github.com/Microsoft/wil "Windows实现库 (WIL) - microsoft/wil |GitHub"  
 
@@ -323,3 +324,5 @@ nullptr);
 [MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"  
 
 [Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 安装程序"  
+
+[Win32GithubCode]:https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted "Win32 WebView2 入门指南代码"

@@ -3,16 +3,16 @@ description: Microsoft Edge 开发人员工具网络面板功能的综合参考�
 title: 网络分析参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: bdb1145e7ee8ed7865b68f9fd632c4b1a30007e9
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
-ms.translationtype: HT
+ms.openlocfilehash: 93916c2ea65f9500ae0bf8a7a6e59caf45893bc1
+ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564831"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "11710758"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -163,10 +163,36 @@ ms.locfileid: "11564831"
 要手动替代用户代理，请使用以下步骤。  
 
 1.  打开“**网络条件**”抽屉。  
-1.  关闭“**自动选择**”复选框。  
-1.  从菜单中选择用户代理选项，或在文本框中输入自定义选项。  
+1.  清除" **自动选择"** 复选框。  
+1.  从菜单中选择用户代理选项，或在文本框中输入自定义用户代理。  
 
-<!--todo: add network condition section when available -->  
+## <a name="set-user-agent-client-hints"></a>设置用户代理客户端提示
+
+如果你的网站使用用户 [代理客户端提示，](../../web-platform/user-agent-guidance.md)请使用网络 **条件** 面板提供不同的用户代理客户端提示。
+
+1. 打开上下文**菜单 (** 右键单击") "，然后选择"检查 **"。**
+1. 选择 **"**  >  **网络网络条件"。**
+1. 在"用户代理"面板中，清除 **"使用浏览器默认"** 复选框，然后选择"**用户代理客户端提示"。**
+
+    :::image type="complex" source="images/network-conditions-user-agent-client-hints.msft.png" alt-text="设置用户代理客户端提示" lightbox="images/network-conditions-user-agent-client-hints.msft.png":::
+        设置用户代理客户端提示  
+    :::image-end::: 
+
+1. 接受"自定义 **..."** 的默认值，或者从下拉列表中选择预定义的浏览器和设备。
+1. 对于任一选项，按如下方式设置用户代理客户端提示。
+    * **品牌**和**版本**，如*Edge*和*92。* 选择 **+ 添加品牌** 以添加多个品牌和版本对。
+    * **完整浏览器版本**，例如*92.0.1111.0。*
+    * **平台**和**版本**，如*Windows*和*10.0。*
+    * **体系结构** ，如 *x86*。
+    * **设备型号** ，例如 *，一些设备型号*。
+
+    > [!NOTE]
+    > 设置或更改任何用户代理客户端提示。 没有所需的值。
+
+1. 选择**更新**。 
+1. 若要验证更改，请选择" **控制台"** 并键入 `navigator.userAgentData` 。 根据需要展开结果以查看用户代理数据更改。
+
+还可以在"模拟移动设备"中的["Microsoft Edge"中设置用户代理客户端Microsoft Edge。](../device-mode/index.md)  
 
 ## <a name="filter-requests"></a>筛选请求  
 
@@ -533,9 +559,9 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 要显示有关请求的 HTTP 标头数据，请使用以下步骤。  
 
 1.  在“请求”表的“**名称**”列下，选择请求的 URL。  
-1.  选择“**标头**”面板。  
+1.  选择**标头**面板。  
 
-:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="“标头”面板" lightbox="../media/network-resources-headers.msft.png":::
+:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="标头面板" lightbox="../media/network-resources-headers.msft.png":::
    “**标头**”面板  
 :::image-end:::  
 
