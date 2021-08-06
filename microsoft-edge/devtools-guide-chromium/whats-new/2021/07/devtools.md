@@ -77,7 +77,7 @@ ms.locfileid: "11710786"
 
 如果你使用 Visual Studio Code 中的 JavaScript 调试，你现在可以通过选择"检查Microsoft Edge启动 Visual Studio Code**开发人员**工具扩展。 ****
 
-:::image type="complex" source="../../media/2021/07/inspect-button.msft.png" alt-text="启动 DevTools Visual Studio Code中的"检查"按钮" lightbox="../../media/2021/07/inspect-button.msft.png":::
+:::image type="complex" source="../../media/2021/07/inspect-button.msft.png" alt-text="启动 DevTools Visual Studio Code中的检查按钮" lightbox="../../media/2021/07/inspect-button.msft.png":::
    启动**** DevTools Visual Studio Code中的"检查"按钮
 :::image-end:::
 
@@ -194,7 +194,7 @@ User-Agent客户端提示使浏览器信息比以分号分隔的字符串User-Ag
 
 现在，Microsoft Edge版本 93 中，"复制为**PowerShell"** 上下文菜单选项正确设置 devTools User-Agent的 User-Agent 字符串和 Cookie。  生成的 PowerShell 命令现在可以成功提出由 DevTools 观察到的相同网络请求，甚至向依赖 Cookie 的服务器发送请求。
 
-:::image type="complex" source="../../media/2021/07/copy-as-powershell.msft.png" alt-text=""复制为 PowerShell"命令" lightbox="../../media/2021/07/copy-as-powershell.msft.png":::
+:::image type="complex" source="../../media/2021/07/copy-as-powershell.msft.png" alt-text="复制为 PowerShell命令" lightbox="../../media/2021/07/copy-as-powershell.msft.png":::
    " **复制为 PowerShell"** 命令
 :::image-end:::
 
