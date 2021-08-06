@@ -136,7 +136,7 @@ Microsoft EdgeDevTools 采用了[Fluent UI，][FluentUI]为按钮和菜单提供
 1. 选择 **"将声明复制为 JS"** 或 **"复制所有声明为 JS"。**
 1. 将复制的 CSS 粘贴到文本编辑器中的 JavaScript 文件中，如Visual Studio Code。  例如：`'--more-link': 'lime'`。
 
-:::image type="complex" source="../../media/2021/07/copy-declaration-as-js.msft.png" alt-text="样式规则的上下文菜单，包括"Copy declaration as JS"和"Copy all declarations as JS"命令" lightbox="../../media/2021/07/copy-declaration-as-js.msft.png":::
+:::image type="complex" source="../../media/2021/07/copy-declaration-as-js.msft.png" alt-text="样式规则的上下文菜单，包括Copy declaration as JS和Copy all declarations as JS命令" lightbox="../../media/2021/07/copy-declaration-as-js.msft.png":::
    样式规则的上下文菜单，包括 **Copy declaration as JS** 和 Copy all **declarations as JS** commands
 :::image-end:::
 
