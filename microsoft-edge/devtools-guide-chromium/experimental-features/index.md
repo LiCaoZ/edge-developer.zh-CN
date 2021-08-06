@@ -22,12 +22,12 @@ no-loc:
 - Edit keyboard shortcuts for any action in the DevTools
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
-ms.openlocfilehash: dec4b4d111c0eb8dc9cc3963bac7339df1d9b6f6
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+ms.openlocfilehash: 25da6f4754e6c63e96e50fe4594527b0fce51e8a5aa4456c5b112ba9cb49eee1
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624750"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11806149"
 ---
 # <a name="experimental-features"></a>试验功能  
 
@@ -118,8 +118,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 1.  在 **Source Order Viewer** 部分下，选择“**显示源顺序**”复选框。  
 1.  突出显示任何 HTML 元素，以显示该网页源中顺序的覆盖。  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
-   **Source Order Viewer** in the **Accessibility** pane  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::no-loc（源订单查看器）:::在辅助功能窗格中" lightbox="../media/experiments-source-order-viewer.msft.png"::: **Source Order Viewer** 在“**辅助功能**”窗格中  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
@@ -235,7 +234,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 *   [3D View][Devtools3dViewIndex] 现在可用，在 Microsoft Edge 版本 83 或更高版本中默认处于打开状态。  
 *   [Turn on support to move tabs between panels][DevtoolsCustomizeIndex] 现在可用，在 Microsoft Edge 版本 85 或更高版本中默认处于打开状态。  
-*   [Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code][DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode] 现在可用，在 Microsoft Edge 版本 86 或更高版本中默认处于打开状态。  
+*   [Match keyboard shortcuts from Microsoft Visual Studio Code][DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode] is now available and turned by default on Microsoft Edge version 86 or later.  
 *   [Edit keyboard shortcuts for any action in the DevTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools] 现在可用，在 Microsoft Edge 版本 89 或更高版本中默认处于打开状态。  
 *   [Turn on new CSS grid debugging features][DevtoolsCssGrid] 现在可用，在 Microsoft Edge 版本 89 或更高版本中默认处于打开状态。  
 *   [Emulation: Support dual screen mode][DevtoolsDeviceModeDualScreenAndFoldables] 现在可用，在 Microsoft Edge 版本 90 或更高版本中默认处于打开状态。  
@@ -262,12 +261,12 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 [DevtoolsCssGrid]: ../css/grid.md "检查 Microsoft Edge DevTools 中的 CSS 网格 | Microsoft Docs"  
 [DevtoolsCustomizeIndex]: ../customize/index.md "自定义 Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools ":::no-loc（为 DevTools 中的任何操作编辑键盘快捷方式）::: | Microsoft Docs"  
-[DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code ":::no-loc（将 DevTools 中的键盘快捷方式与 Microsoft Visual Studio Code 相匹配）::: | Microsoft Docs"  
+[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action "编辑 DevTools 操作工具的键盘|Microsoft Docs"  
+[DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-from-visual-studio-code "匹配来自代码Microsoft Visual Studio键盘|Microsoft Docs"  
 [DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "在 DevTools Microsoft Edge中模拟双屏幕和可折叠|Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "在 Microsoft Edge DevTools 中通过设备模式模拟移动设备 | Microsoft Edge"  
 [DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "在 DevTools 的“样式”窗格中编辑 CSS 字体样式和设置 | Microsoft Docs"  
-[DevtoolsIssuesIndex]: ../issues/index.md "使用问题工具查找并修复|Microsoft Docs"  
+[DevtoolsIssuesIndex]: ../issues/index.md "使用问题工具查找并修复问题 | Microsoft Docs"  
 [DevtoolsOpenIndex]: ../open/index.md "打开 Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsShortcutsIndex]: ../shortcuts/index.md "Microsoft Edge DevTools 键盘快捷方式|Microsoft Docs"  
 <!-- external links: -->

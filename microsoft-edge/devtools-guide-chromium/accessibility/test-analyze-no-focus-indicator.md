@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 3626de9bdc2cce266efafe4b1b2e8fff501a74f7
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 98c4d9fd9f1a03f20bd6002fc5a28e06923b3c5dda0d523e20849ef6e0da1250
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597299"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802583"
 ---
 # <a name="analyze-the-lack-of-indication-of-keyboard-focus-in-a-sidebar-menu"></a>分析边栏菜单中键盘焦点的缺失
 
@@ -28,7 +28,7 @@ ms.locfileid: "11597299"
 
 1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  选择**** DevTools 左上角的"检查 \(检查图标 \) "按钮，以便该按钮突出显示为 (![ ](../media/inspect-icon.msft.png) 蓝色) 。
+1.  选择**** DevTools 左上角的"检查 \ (检查图标 \) "按钮，以便该按钮突出显示为 (![ ](../media/inspect-icon.msft.png) 蓝色) 。
 
 1.  将鼠标悬停在边栏导航菜单中的蓝色 **"猫** "链接上。  将显示 Inspect 覆盖层，显示 `a` 元素是可键盘聚焦的。  但是覆盖层不会显示当链接具有焦点时没有视觉指示。
 
@@ -44,7 +44,7 @@ ms.locfileid: "11597299"
     
 1.  选择 CSS 文件的链接。  CSS 文件将在"源" **工具中** 打开。
 
-    :::image type="complex" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="应用于源工具中链接的样式" lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="应用于"源"工具中链接的样式" lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
         应用于"源"工具中链接的样式
     :::image-end:::
     

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: d48a48de7b261a628ac99f58680deb119268a980
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 2a774daca2c81b0cc09174d943c2efd4d1e324e1bbb4675e03e690bde561315a
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483356"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11801403"
 ---
 # <a name="log-messages-in-the-console-tool"></a>在控制台工具中记录消息  
 
@@ -79,7 +79,7 @@ console.log(w3techs);
 
 ## <a name="format-and-convert-values-with-specifiers"></a>使用说明符设置值的格式和转换值
 
-所有日志方法的一个特殊功能是，您可以在日志消息中使用说明符。  说明符是日志消息的一部分，以百分比符号 \(\) 字符开始，并允许您以不同格式记录特定值， `%` 甚至转换每个值。  
+所有日志方法的一个特殊功能是，您可以在日志消息中使用说明符。  说明符是日志消息的一部分，以百分比符号 \ (\) 字符开始，并允许您以不同格式记录特定值， `%` 甚至转换每个值。  
 
 *   `%s` 日志为字符串
 *   `%i` 或 `%d` 日志为 Integers

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: a02249840256b1e5a2469a253d765eb888527662
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 4e029b769728446b294b4cf196be7a58b64b72c7a5e05906299b7bfe961fdb71
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564082"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11808506"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -38,7 +38,7 @@ ms.locfileid: "11564082"
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
-**时间线上的分配检测** 在整个记录 \(中定期获取堆快照，频率为每 50 ms\) ，最后一个快照位于录制末尾。  
+**时间线上的分配检测** 在整个记录 \ (中定期获取堆快照，频率为每 50 ms\) ，最后一个快照位于录制末尾。  
 
 :::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="日程表上的分配检测" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
    **日程表上的分配检测**  
@@ -100,7 +100,7 @@ ms.locfileid: "11564082"
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) ，由 [Meggin Kearney][MegginKearney] \(Technical Writer\) 。  
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) ，由 [Meggin Kearney][MegginKearney] \ (Technical Writer\) 。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

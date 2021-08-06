@@ -1,31 +1,31 @@
 ---
-description: 本指南概述了在 Windows 上生成渐进式 Web 应用和 Chromium (PWA) 工具。
-title: '使用渐进式 Web 应用 (Chromium) '
+description: 本指南概述了有关在 PWA 上生成渐进式 Web 应用 (Chromium) 和Windows。
+title: '渐进式 Web 应用 (Chromium) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/16/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: 渐进式 Web 应用， PWA， Edge， Windows， PWABuilder， Web 清单， 服务工作者， 推送
-ms.openlocfilehash: 3023c38790185ca6989f4a487928abc79b1d5a2c
-ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
+ms.openlocfilehash: c16850cdd86a9b83073961e81d7728ab276fae98deff3567c5dc44128c3f326e
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11480193"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11799806"
 ---
-# <a name="get-started-with-progressive-web-apps-chromium"></a>使用渐进式 Web 应用 (Chromium)   
+# <a name="get-started-with-progressive-web-apps-chromium"></a>渐进式 Web 应用 (Chromium)   
 
-渐进式 Web 应用 \(PWA\) 是逐渐增强的 [Web 应用][WikiProgressiveEnhancement]。  渐进式增强功能包括类似应用的功能，如安装、脱机支持和推送通知。  还可以打包 PWA 以用于应用商店。  可能的应用商店包括 Microsoft Store、Google Play、Mac App Store 等。  Microsoft Store 是内置于 Windows 10 的商业应用商店。  
+渐进式 Web 应用 \ (PWA\) 是逐渐增强的 [Web 应用][WikiProgressiveEnhancement]。  渐进式增强功能包括类似应用的功能，如安装、脱机支持和推送通知。  还可以打包应用商店PWA应用包。  可能的应用商店包括 Microsoft Store、Google Play、Mac 应用商店等。  应用商店Microsoft Store内置于应用商店中的商业Windows 10。  
 
-以下指南通过创建简单的 Web 应用程序并扩展为 PWA，概述了 PWA 基础知识。  已完成的项目适用于新式浏览器。  
+下面的指南通过创建简单的 Web PWA并扩展它作为一个 web 应用程序来大致了解PWA。  已完成的项目适用于新式浏览器。  
 
 > [!TIP]
-> 可以使用 [PWABuilder][PwaBuilder] 创建新的 PWA、增强现有 PWA 或打包 PWA 以用于应用商店。  
+> 可以使用[PWABuilder][PwaBuilder]创建新PWA、增强现有PWA或打包PWA应用商店的程序包。  
 
-## <a name="prerequisites"></a>必备条件  
+## <a name="prerequisites"></a>先决条件  
 
-*   使用 [Visual Studio][VisualstudioCodeMain] 代码编辑 PWA 源代码。  
+*   使用[Visual Studio Code][VisualstudioCodeMain]编辑您的PWA源代码。  
 *   使用 [Node.js][NodejsMain] 作为本地 Web 服务器。  
     
 ## <a name="create-a-basic-web-app"></a>创建基本 Web 应用  
@@ -52,23 +52,23 @@ npm start
 
 现在浏览 `http://localhost:3000` 到 以查看新的 Web 应用。  
 
-:::image type="complex" source="./media/visual-studio-nodejs-express-index.png" alt-text="在 localhost 上运行新的 PWA" lightbox="./media/visual-studio-nodejs-express-index.png":::
-   在 localhost 上运行新的 PWA  
+:::image type="complex" source="./media/visual-studio-nodejs-express-index.png" alt-text="在 localhost PWA新服务器" lightbox="./media/visual-studio-nodejs-express-index.png":::
+   在 localhost PWA新服务器  
 :::image-end:::  
 
-## <a name="get-started-building-a-pwa"></a>开始生成 PWA  
+## <a name="get-started-building-a-pwa"></a>开始构建PWA  
 
-现在你已拥有一个简单的 Web 应用程序，请通过添加 PWA 的三个要求将其扩展为 PWA<!--[3 requirements for PWAs][ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]-->[：HTTPS、Web](#step-1---use-https)[应用清单](#step-2---create-a-web-app-manifest)和服务[工作者](#step-3---add-a-service-worker)。  
+现在你已拥有一个简单的 Web 应用，请通过添加 PBA 的三PWA将其扩展为一个扩展应用程序<!--[3 requirements for PWAs][ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]-->[：HTTPS、Web](#step-1---use-https)[应用清单](#step-2---create-a-web-app-manifest)和服务[工作者](#step-3---add-a-service-worker)。  
 
 ### <a name="step-1---use-https"></a>步骤 1 - 使用 HTTPS  
 
-PWA 平台的关键部分（如 [服务工作人员][MDNServiceWorkerApi]）需要使用 HTTPS。  PWA 发布后，必须将其发布到 HTTPS URL。  
+应用程序平台PWA（如[服务][MDNServiceWorkerApi]工作人员）需要使用 HTTPS。  当PWA上时，必须将其发布到 HTTPS URL。  
 
-出于调试目的，Microsoft Edge 还 `http://localhost` 允许使用 PWA API。  
+出于调试目的，Microsoft Edge还 `http://localhost` 允许使用 PWA API。  
 
-[将 Web 应用发布为实时网站][VisualStudioNodejsTutorialPublishAzureAppService]，但请确保服务器配置为 HTTPS。  例如，你可以创建 Azure [免费帐户][AzureCreateFreeAccount]。  在 [Microsoft Azure 应用服务上][AzureWebApps] 托管网站，默认情况下它通过 HTTPS 提供。  
+[将 Web 应用发布为实时网站][VisualStudioNodejsTutorialPublishAzureAppService]，但请确保服务器配置为 HTTPS。  例如，你可以创建 Azure [免费帐户][AzureCreateFreeAccount]。  在应用程序服务[上Microsoft Azure网站][AzureWebApps]，默认情况下它通过 HTTPS 提供。  
 
-以下指南用于生成 `http://localhost` PWA。  
+以下指南使用 `http://localhost` 生成PWA。  
 
 ### <a name="step-2---create-a-web-app-manifest"></a>步骤 2 - 创建 Web 应用程序清单  
 
@@ -101,7 +101,7 @@ PWA 平台的关键部分（如 [服务工作人员][MDNServiceWorkerApi]）需�
     
 1.  将文件另存为 `/MySamplePwa/public/manifest.json` 。  
 1.  将名为 的 512x512 应用图标图像 `icon512.png` 添加到 `/MySamplePwa/public/images` 。  您可以使用示例 [图像](./media/progressive-web-app.png) 进行测试。  
-1.  在Visual Studio代码"中，打开 `/public/index.html` ，在 标记内添加以下代码 `<head>` 段。  
+1.  在 Visual Studio Code 中，打开 `/public/index.html` ，在 标记内添加以下 `<head>` 代码段。  
     
     ```html
     <link rel="manifest" href="/manifest.json">
@@ -111,7 +111,7 @@ PWA 平台的关键部分（如 [服务工作人员][MDNServiceWorkerApi]）需�
 
 服务工作人员是 PBA 背后的关键技术，可实现脱机支持、高级缓存和运行后台任务等方案，以前仅限于本机应用。  
 
-服务工作者是后台任务，可截获来自 Web 应用的网络请求。  即使 PWA 未运行，服务工作人员也尝试完成任务。  任务包括以下操作。  
+服务工作者是后台任务，可截获来自 Web 应用的网络请求。  服务工作人员会尝试完成任务，即使PWA未运行。  任务包括以下操作。  
 
 *   为来自缓存的已请求资源提供服务  
 *   发送推送通知  
@@ -121,7 +121,7 @@ PWA 平台的关键部分（如 [服务工作人员][MDNServiceWorkerApi]）需�
     
 服务工作者在一个特殊的 JavaScript 文件中定义。  有关详细信息，请导航到"[使用服务工作者和服务][MDNUsingServiceWorkers][工作者 API"。][MDNServiceWorkerApi]  
 
-若要在项目中生成服务工作器，请使用 PWA Builder 中的缓存 **第** 一个网络服务工作 [器方法][PwaBuilderServiceWorker]。  
+若要在项目中生成服务工作器，请使用来自 Builder 的**Cache-first**网络[PWA方法][PwaBuilderServiceWorker]。  
 
 1.  导航到 [pwabuilder.com/serviceworker，][PwaBuilderServiceWorker]选择 **"缓存第一个网络** 服务工作线程"，然后选择" **下载"** 按钮。  下载的文件包含以下文件：
     
@@ -129,7 +129,7 @@ PWA 平台的关键部分（如 [服务工作人员][MDNServiceWorkerApi]）需�
     *   `pwabuilder-sw.js`  
         
 1.  将下载的文件复制到 Web `public` 应用项目中的文件夹。  
-1.  在Visual Studio代码"中 `/public/index.html` ，打开 标记内并添加以下代码 `<head>` 段。  
+1.  在 Visual Studio Code 中， `/public/index.html` 打开 标记内并添加以下代码 `<head>` 段。  
     
     ```html
     <script type="module" src="/pwabuilder-sw-register.js"></script>
@@ -145,31 +145,31 @@ PWA 平台的关键部分（如 [服务工作人员][MDNServiceWorkerApi]）需�
     npm start
     ```
     
-1.  在 Microsoft Edge 中， `F12` 选择打开 Microsoft Edge DevTools。  选择 **"应用程序**"，然后选择" **服务** 工作人员"以查看服务工作人员。  如果未显示服务工作线程，则刷新页面。  
+1.  在Microsoft Edge中， `F12` 选择打开 Microsoft Edge DevTools。  选择 **"应用程序**"，然后选择" **服务** 工作人员"以查看服务工作人员。  如果未显示服务工作线程，则刷新页面。  
     
-    :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Microsoft Edge DevTools 服务工作器概述" lightbox="./media/devtools-sw-overview.png":::
-       Microsoft Edge DevTools 服务工作器概述  
+    :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Microsoft EdgeDevTools Service Worker 概述" lightbox="./media/devtools-sw-overview.png":::
+       Microsoft EdgeDevTools Service Worker 概述  
     :::image-end:::  
     
-1.  通过展开缓存存储查看服务工作 **器缓存** ，然后选择 **pwabuilder-precache**。  应显示服务工作线程缓存的所有资源。  服务工作者缓存的资源包括应用程序图标、应用程序清单、CSS 和 JavaScript 文件。  
+1.  展开"缓存"以查看服务工作器**缓存存储****选择"pwabuilder-precache"。**  应显示服务工作线程缓存的所有资源。  服务工作者缓存的资源包括应用程序图标、应用程序清单、CSS 和 JavaScript 文件。  
     
-    :::image type="complex" source="./media/devtools-cache.png" alt-text="Microsoft Edge DevTools 中的服务工作器缓存" lightbox="./media/devtools-cache.png":::
-       Service Worker cache in Microsoft Edge DevTools \(F12\)   
+    :::image type="complex" source="./media/devtools-cache.png" alt-text="DevTools Microsoft Edge工作器缓存" lightbox="./media/devtools-cache.png":::
+       DevTools \Microsoft Edge (F12\) 中的服务工作器缓存  
     :::image-end:::  
     
-1.  尝试将 PWA 作为脱机应用。  在 Microsoft Edge DevTools \(\) 中，选择"网络"，然后将 `F12` **"联机**状态"更改为"**脱机"。** ****  
+1.  尝试将PWA应用。  In Microsoft Edge DevTools \ (`F12` \) ， choose **Network** then change the **Online** status to **Offline**.  
     
-    :::image type="complex" source="./media/devtools-offline.png" alt-text="在 Microsoft Edge DevTools 中将应用设置为脱机模式" lightbox="./media/devtools-offline.png":::
-       在 Microsoft Edge DevTools 中将应用设置为脱机模式  
+    :::image type="complex" source="./media/devtools-offline.png" alt-text="在 DevTools 中将应用Microsoft Edge脱机模式" lightbox="./media/devtools-offline.png":::
+       在 DevTools 中将应用Microsoft Edge脱机模式  
     :::image-end:::  
     
 1.  刷新你的应用，它应显示用于从缓存提供应用资源的脱机机制。  
     
-    :::image type="complex" source="./media/visual-studio-nodejs-express-index.png" alt-text="脱机运行的 PWA" lightbox="./media/visual-studio-nodejs-express-index.png":::
-       脱机运行的 PWA  
+    :::image type="complex" source="./media/visual-studio-nodejs-express-index.png" alt-text="PWA脱机运行" lightbox="./media/visual-studio-nodejs-express-index.png":::
+       PWA脱机运行  
     :::image-end:::  
     
-## <a name="add-push-notifications-to-your-pwa"></a>将推送通知添加到 PWA  
+## <a name="add-push-notifications-to-your-pwa"></a>将推送通知添加到PWA  
 
 通过完成以下任务，可以创建支持推送通知的 PWA。  
 
@@ -182,11 +182,11 @@ PWA 平台的关键部分（如 [服务工作人员][MDNServiceWorkerApi]）需�
 
 ### <a name="step-1---generate-vapid-keys"></a>步骤 1 - 生成 VAPID 密钥  
 
-推送通知需要 VAPID \(自愿应用程序服务器标识\) 密钥才能将推送通知发送到 PWA 客户端。  联机 \(提供了多个 VAPID 密钥生成器，例如，vapidkeys.com [\) 。][VapidkeysMain]  生成后，应获取包含公钥和私钥的 JSON 对象。  保存密钥，以执行以下教程中的稍后步骤。  有关 VAPID 和 WebPush 的信息，请导航到使用 Mozilla 推送服务发送 VAPID 标识的 [WebPush 通知][MozillaServicesSendingVapidWebPushNotificationsPush]。  
+推送通知需要 VAPID \ (自愿应用程序服务器标识\) 密钥才能将推送通知发送到 PWA 客户端。  联机 \ (提供了多个 VAPID 密钥生成器，例如，vapidkeys.com [\) 。][VapidkeysMain]  生成后，应获取包含公钥和私钥的 JSON 对象。  保存密钥，以执行以下教程中的稍后步骤。  有关 VAPID 和 WebPush 的信息，请导航到使用 Mozilla 推送服务发送 VAPID 标识的 [WebPush 通知][MozillaServicesSendingVapidWebPushNotificationsPush]。  
 
 ### <a name="step-2---subscribe-to-push-notifications"></a>步骤 2 - 订阅推送通知  
 
-服务工作人员在 PWA 中处理推送事件和 Toast 通知交互。  若要订阅PWA推送通知，请确保满足以下条件。  
+服务工作人员在服务中处理推送事件和 toast 通知PWA。  若要订阅PWA推送通知，请确保满足以下条件。  
 
 *   你的PWA安装、激活和注册  
 *   用于完成订阅任务的代码位于应用程序主 UI 线程PWA  
@@ -299,7 +299,7 @@ self.addEventListener('notificationclick', function (event) {
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          如果未选择 \(或 activate\) toast 通知，系统会在几秒钟后自动将其关闭，Windows操作中心中将其排好队列。  
+          如果未选择 \ (或 activate\) toast 通知，系统会在几秒钟后自动将其关闭，Windows操作中心中将其排好队列。  
           
           :::image type="complex" source="./media/windows-action-center.png" alt-text="Windows操作中心中的通知" lightbox="./media/windows-action-center.png":::
              Windows操作中心中的通知  
@@ -322,7 +322,7 @@ self.addEventListener('notificationclick', function (event) {
 
 *   [MDN Web 文档上的渐进 Web 应用][MDNProgressiveWebApps]  
 *   [渐进式 Web 应用 web.dev][WebDevProgressiveWebApps]  
-*   [作为渐进 Web 应用的][HackerNewsProgressiveWebApps]黑客新闻阅读器 - 比较用于实现示例 \(黑客新闻阅读器\) PWA 的不同框架和性能模式。  
+*   [作为渐进 Web 应用的][HackerNewsProgressiveWebApps]黑客新闻阅读器 - 比较用于实现示例 \ (黑客新闻阅读器\) PWA 的不同框架和性能模式。  
 *   [为 PBA 提供一些支持][Davrous20191018MythBustingPwasNewEdgeEdition]  
 *   [渐进式 Web 应用的渐进路线图][CloudfourThinksProgressiveRoadmapYourWebApp]  
 *   [使用渐进 Web 应用的脱机 POS][MediumWebEdgeOfflinePostsProgressiveWebApps]  
@@ -364,7 +364,7 @@ self.addEventListener('notificationclick', function (event) {
 
 [MDNDedicatedWorkerGlobalScopePostMessage]: https://developer.mozilla.org/docs/Web/API/
 [MDNNotificationsApi]: https://developer.mozilla.org/docs/Web/API/Notifications_API "通知 API | MDN"  
-[MDNProgressiveWebApps]: https://developer.mozilla.org/Apps/Progressive "渐进式 Web 应用 \(PWA) |MDN"  
+[MDNProgressiveWebApps]: https://developer.mozilla.org/Apps/Progressive "渐进式 Web 应用 \ (PWA) |MDN"  
 [MDNPushApi]: https://developer.mozilla.org/docs/Web/API/Push_API "推送 API | MDN"  
 [MDNPushManager]: https://developer.mozilla.org/docs/Web/API/PushManager "PushManager |MDN"  
 [MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "服务工作线程 API |MDN"  

@@ -7,12 +7,12 @@ ms.date: 04/28/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: 渐进 Web 应用、PWA、Edge、Windows、Microsoft Store
-ms.openlocfilehash: 40a6b94412a0788c87f7231025809098c98f18e9
-ms.sourcegitcommit: 7cba715ef71cbac4ee0ebe8f07c0c0e4a2c64221
+ms.openlocfilehash: c19b5eaf0bbd152ac1b6d676514f54a2f3140e08ccb16952f0cb46f03e74e9d7
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "11643247"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11809024"
 ---
 # <a name="publish-your-progressive-web-app-to-the-microsoft-store"></a>将渐进式 Web 应用发布到Microsoft Store  
 

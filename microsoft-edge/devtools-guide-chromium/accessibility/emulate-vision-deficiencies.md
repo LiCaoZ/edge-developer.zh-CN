@@ -6,17 +6,17 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 0a0ee09c2f739beb366b4c39d113b31fb719ec6a
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 8af8e621fe67fbb17d6319f9b8e6ff28595312543b73eba33277ab0c291fc450
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597119"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803080"
 ---
 # <a name="emulate-vision-deficiencies"></a>模仿视觉缺陷  
 
-为了更好地满足色盲[\(][ColorblindawarenessMain]色盲\) 或模糊视觉的用户的需求[，Microsoft Edge DevTools][DevtoolsIndex]允许你模拟模糊的视觉和特定的颜色视觉缺陷。  模拟 **视觉缺陷工具** 可模拟以下类别。  
+为了更好地满足色盲[\ (][ColorblindawarenessMain]色盲\) 或模糊视觉的用户的需求[，Microsoft Edge DevTools][DevtoolsIndex]允许你模拟模糊的视觉和特定的颜色视觉缺陷。  模拟 **视觉缺陷工具** 可模拟以下类别。  
 
 | 色盲 | 详细信息 |  
 |:--- |:--- |  
@@ -43,13 +43,13 @@ ms.locfileid: "11597119"
 
 1.  向下滚动到 `Emulate vision deficiencies` 菜单项并选择下拉菜单以显示选项。  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="呈现工具上的模拟视觉缺陷菜单" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="呈现工具上的"模拟视觉缺陷"菜单" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
        呈现 **工具上的** "模拟视觉缺陷 **"** 菜单
     :::image-end:::  
     
 1.  选择一个选项。  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="模拟视觉缺陷菜单选项" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text=""模拟视觉缺陷"菜单选项" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
        " **模拟视觉缺陷"** 菜单选项  
     :::image-end:::  
     
@@ -72,7 +72,7 @@ ms.locfileid: "11597119"
 
 您还可以使用命令 **菜单** 访问不同的模拟。  
 
-1.  选择 `Ctrl` + `Shift` + `P` \(Windows/Linux\) 或 `Command` + `Shift` + `P` \(macOS\) 打开命令**菜单**。  
+1.  选择 `Ctrl` + `Shift` + `P` \ (Windows/Linux\) 或 `Command` + `Shift` + `P` \ (macOS\) 打开命令**菜单**。  
     
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="命令菜单" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        **命令菜单**  

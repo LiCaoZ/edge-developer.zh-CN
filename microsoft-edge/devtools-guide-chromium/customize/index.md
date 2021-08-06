@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 54cea0518656feedb981c73eb19456a7f0568814
-ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
+ms.openlocfilehash: c5f0229473583ece794f5160f3a7b1839857ad43b0e337cf9f28dba290458534
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "11710718"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798519"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -38,14 +38,14 @@ ms.locfileid: "11710718"
 若要设置，请执行下列任一操作。
 *   在 DevTools 中****，选择设置 \ (设置 ![ ](../media/settings-icon-dark.msft.png) \) 图标。
 *   当 DevTools 具有焦点时，选择 `F1` 。
-
+    
 :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="设置" lightbox="../media/customize-settings-preferences.msft.png":::
    **设置**  
 :::image-end:::  
 
 ## <a name="drawer"></a>"箱"  
 
-The **Drawer** is a second panel where your choosing tools are displayed.  
+The **Drawer** is a second panel where you can choose which tools to display.  
 
 若要打开 \ (或 close\) **收银机，** 请选择 `Escape` 。  
 
@@ -55,21 +55,21 @@ The **Drawer** is a second panel where your choosing tools are displayed.
 
 默认情况下，某些工具在主面板中打开，而其他工具显示在"箱 **"中**。  选择 **"更多** \ (`...` \) "以在"箱"中打开 **工具**。  
 
-:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="用于打开箱的按钮" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="用于打开"箱"的按钮" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
    用于打开"箱 **"的按钮**  
 :::image-end:::  
 
-您可以在主面板和箱之间移动工具。  
+可以在主面板和箱之间移动工具。  
 
 *   若要将工具从工具箱移动到主面板，请将鼠标悬停在工具上，打开上下文菜单 \ (右键单击\) 然后选择"移动到**顶部"。**  
     
-    :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="将工具从箱移到主面板" lightbox="../media/move-from-drawer.msft.png":::
+    :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="将工具从"箱"移到主面板" lightbox="../media/move-from-drawer.msft.png":::
        将工具从 **"箱"** 移到主面板  
     :::image-end:::  
     
 *   若要将工具从主面板移动到箱中，请将鼠标悬停在工具上，打开上下文菜单 \ (右键单击\) 然后选择"移动到**底部"。**  
     
-    :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="将工具从主面板移动到箱" lightbox="../media/move-to-drawer.msft.png":::
+    :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="将工具从主面板移动到"箱"" lightbox="../media/move-to-drawer.msft.png":::
        将工具从主面板移动到"箱 **"**
     :::image-end:::  
     
@@ -93,12 +93,12 @@ The **Drawer** is a second panel where your choosing tools are displayed.
    移除的开发人员工具  
 :::image-end:::  
 
-## <a name="dark-theme"></a>深色主题  
+## <a name="theme"></a>主题  
 
-导航到 [启用深色主题][DarkTheme]。  
+导航到 [将颜色主题应用到 DevTools][Theme]。  
 
-:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="深色主题" lightbox="../media/customize-settings-appearance-theme.msft.png":::
-   深色主题  
+:::image type="complex" source="./media/customize-theme-setting.png" alt-text="选择其他颜色主题" lightbox="./media/customize-theme-setting.png":::
+   选择其他颜色主题  
 :::image-end:::  
 
 ## <a name="experiments"></a>试验  
@@ -122,7 +122,7 @@ The **Drawer** is a second panel where your choosing tools are displayed.
 <!-- links -->  
 
 [DevToolsPlacement]: ./placement.md "更改 Microsoft Edge DevTools 放置 | Microsoft Docs"  
-[DarkTheme]: ./dark-theme.md "在 DevTools Microsoft Edge中启用深色|Microsoft Docs"  
+[Theme]: ./theme.md "将颜色主题应用到 DevTools |Microsoft Docs"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 54cd7230f0402bfeb4b5ee28d2bcd0947794676f
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: cde0def6e15f8dd9e430ce56754df29f380db561b540849c65f85d449c9d028d
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597286"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802221"
 ---
 # <a name="verify-that-the-page-is-usable-by-people-with-color-blindness"></a>验证页面是否由色盲用户可用
 

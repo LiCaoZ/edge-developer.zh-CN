@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 839feed56fc82af2b4d96a081c476696166075b9
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 4e31b1f1a30c1328b6ef60bbe1b7c6d4c5a602859dee12ad45d0d3bd1cc9b387
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597321"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798473"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques 
@@ -36,9 +36,9 @@ ms.locfileid: "11597321"
 
 1.  选择" **元素"** 工具。  
 1.  在 **DOM 树**中，选择要检查的元素。  
-1.  选择 **"辅助功能"** 选项卡。 你可能需要先选择"更多选项卡****"\("样式"选项卡) "更多选项卡"按钮 ![ ](../media/more-tabs-icon.msft.png) \) **按钮**。
+1.  选择 **"辅助功能"** 选项卡。 你可能需要先选择"更多选项卡****"\ ("样式"选项卡) "更多选项卡"按钮 ![ ](../media/more-tabs-icon.msft.png) \) **按钮**。
 
-:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="检查辅助功能选项卡中的 DevTools 主页的 h1 元素" lightbox="../media/accessibility-elements-accessibility.msft.png":::
+:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="检查"辅助功能"选项卡中的 DevTools 主页的 h1 元素" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    检查 `h1` "辅助功能"选项卡中的 DevTools **主页** 元素
 :::image-end:::  
 
@@ -75,7 +75,7 @@ ARIA 属性确保辅助技术（如屏幕阅读器）具有为了正确表示页
 > [!NOTE]
 > 对于计算 CSS 属性，请使用" [计算"][DevtoolsCssReferenceViewActuallyAppliedElements] 选项卡。
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="辅助功能选项卡的计算属性部分" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
+:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text=""辅助功能"选项卡的"计算属性"部分" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
    " **辅助功能"选项卡** 的" **计算属性"** 部分  
 :::image-end:::  
 
@@ -90,7 +90,7 @@ ARIA 属性确保辅助技术（如屏幕阅读器）具有为了正确表示页
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。  
+本作品根据 [知识共享署名 4.0 国际许可 ][CCA4IL] 获得许可。  
 
 
 <!-- links -->

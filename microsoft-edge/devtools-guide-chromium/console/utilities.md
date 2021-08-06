@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 436f2807c5fab1723ca6cc93fddc68d9ecf12db7
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 0f22216c26cfb1e906e60da57eb3f415d258808caabf07b1ed04d79389e48eb1
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564530"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803875"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -53,7 +53,7 @@ $_
 
 ### <a name="console-example"></a>控制台示例  
 
-在下图中，将计算一个简单的表达式 \(`2 + 2` \) 。  然后 `$_` 计算属性，其中包含相同的值。  
+在下图中，将计算一个简单的表达式 \ (`2 + 2` \) 。  然后 `$_` 计算属性，其中包含相同的值。  
 
 :::image type="complex" source="../media/console-arithmatic.msft.png" alt-text="$_ 是最近评估的表达式" lightbox="../media/console-arithmatic.msft.png":::
    `$_` 是最近计算表达式  
@@ -394,7 +394,7 @@ inspect(document.body);
 getEventListeners(object)
 ```  
 
-此命令返回在指定对象上注册的事件侦听器。  返回值是包含每个已注册事件类型 \(（如 或 `click` `keydown` \) ）的数组的对象。  每个数组的成员是描述为每种类型注册的侦听器的对象。  
+此命令返回在指定对象上注册的事件侦听器。  返回值是包含每个已注册事件类型 \ (（如 或 `click` `keydown` \) ）的数组的对象。  每个数组的成员是描述为每种类型注册的侦听器的对象。  
 
 ### <a name="console-example"></a>控制台示例  
 
@@ -440,7 +440,7 @@ keys(object)
 var player1 = {"name": "Ted", "level": 42}
 ```  
 
-在下面的代码示例和图中，为了简单起见，在键入和在控制台中) 在全局命名空间 \(中定义了 `player1` `keys(player1)` `values(player1)` 结果假定。  
+在下面的代码示例和图中，为了简单起见，在键入和在控制台中) 在全局命名空间 \ (中定义了 `player1` `keys(player1)` `values(player1)` 结果假定。  
 
 ```console
 keys(player1)
@@ -733,7 +733,7 @@ unmonitorEvents(object[, events])
 unmonitorEvents(window);
 ```  
 
-还可以有选择地停止监视对象上的特定事件。  例如，以下代码开始监视当前选择的元素上的所有事件，然后停止监视 `mouse` `mousemove` 事件 \(也许以减少控制台输出\) 。  
+还可以有选择地停止监视对象上的特定事件。  例如，以下代码开始监视当前选择的元素上的所有事件，然后停止监视 `mouse` `mousemove` 事件 \ (也许以减少控制台输出\) 。  
 
 ```console
 monitorEvents($0, "mouse");
@@ -773,7 +773,7 @@ values(object);
 
 [DevtoolsRenderingToolsJsRuntime]: ../rendering-tools/js-runtime.md "加快 JavaScript 运行时|Microsoft Docs"  
 
-[CR1050237]: https://crbug.com/1050237 "问题 1050237：调试 (函数) 运行|Chromium Bug"  
+[CR1050237]: https://crbug.com/1050237 "问题1050237：调试 (函数) 运行|Chromium Bug"  
 
 [MdnDocsWebApiConsoleDir]: https://developer.mozilla.org/docs/Web/API/Console/dir "Console.dir () |MDN"  
 [MdnDocsWebApiConsoleDirxml]: https://developer.mozilla.org/docs/Web/API/Console/dirxml "Console.dirxml () |MDN"  

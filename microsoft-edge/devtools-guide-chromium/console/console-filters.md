@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: b493bb790b48bc1c4dca0e6802d2f638099b7644
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 60b70ce0c93437050d0a5e179c86b62e34d79b5b6c54aa02d3fbe64cac73090e
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483367"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11801474"
 ---
 # <a name="filter-console-messages"></a>筛选控制台消息  
 
@@ -52,7 +52,7 @@ ms.locfileid: "11483367"
 
 [正则表达式是][MdnDocsWebJavascriptGuideRegularExpressions] 筛选邮件的一种强大方法。  例如，在 `/^Tracking/` **筛选器文本框中** 键入以仅显示以术语 开始的邮件 `Tracking` 。  如果你不熟悉正则表达式 [，RegExr][|::ref1::|Main] 是了解使用正则表达式的一个很好的资源。
 
-:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="使用筛选器文本框中的正则表达式显示以单词筛选器开始的邮件" lightbox="../media/console-filter-regex.msft.png":::
+:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="使用"筛选器"文本框中的正则表达式显示以单词筛选器开始的邮件" lightbox="../media/console-filter-regex.msft.png":::
     使用"筛选器"文本框 `filter` 中的正则表达式显示以 **单词开始** 的邮件  
 :::image-end:::  
 

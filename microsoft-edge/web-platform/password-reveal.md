@@ -1,20 +1,20 @@
 ---
 description: 提供有关自定义显示密码显示按钮的指南
-title: 自定义密码显示按钮
+title: 自定义“密码显示”按钮
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 兼容性， Web 平台， 密码展示， 眼睛图标
-ms.openlocfilehash: 93f618d28e5fa2f16dda87b4122a097ef40618c9
-ms.sourcegitcommit: 1f0b2534b51417bb19d05945fea54ddad977e88f
+ms.openlocfilehash: cc27fcfe2539dc4a78da77ba1181790ca40d9ccd1b894ad0b42241dadc3b0659
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "11526156"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803769"
 ---
-# <a name="customize-the-password-reveal-button"></a>自定义密码显示按钮  
+# <a name="customize-the-password-reveal-button"></a>自定义“密码显示”按钮  
 
 该 `password` 控件中的输入Microsoft Edge包括**密码显示**控件。  用户可以选择密码 **输入按钮** 来显示 **密码** 字段。  显示 **的密码** 字段可帮助用户验证密码是否正确。  在用户输入密码字段中的文本后，**** 用户可以选择密码显示按钮或选择**** `Alt` + `F8` 切换输入的可见性。  
 

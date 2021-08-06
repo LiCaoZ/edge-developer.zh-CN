@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 56ce6b1d8f1ad98eeb9c141c2e9b002e7679d7de
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: a8acb501d099c3708824fd3a05d1ee73b76a268e06d80a2ff14c82d6d9043a87
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597013"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11801790"
 ---
 # <a name="use-the-console-to-interact-with-the-dom"></a>使用控制台与 DOM 交互
 
@@ -69,13 +69,13 @@ document.querySelector('header').style.border = '2em solid green'
 1.  选择它，DevTools 跳转到 **"元素"** 工具。  
 1.  选择 `...` DOM 树中元素旁边的菜单。  
     
-    :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="所选元素显示在元素工具的 DOM 树中，选择溢出菜单以获取更多功能" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
+    :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="所选元素显示在"元素"工具的 DOM 树中，选择溢出菜单以获取更多功能" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
         所选元素显示在"元素"工具的 DOM **树中，** 选择溢出菜单以获取更多功能  
     :::image-end:::  
     
 1.  打开上下文菜单并选择 `Copy`  >  `Copy JS Path` 。  
     
-    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="从元素工具的 DOM 树中的元素复制 JavaScript 路径" lightbox="../media/console-dom-copy-JS-path.msft.png":::
+    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="从"元素"工具的 DOM 树中的元素复制 JavaScript 路径" lightbox="../media/console-dom-copy-JS-path.msft.png":::
         从"元素"工具的 DOM 树中的 **元素** 复制 JavaScript 路径  
     :::image-end:::  
     
@@ -102,7 +102,7 @@ document.querySelector('header').style.border = '2em solid green'
 *   `$x()` 允许您使用 XPATH 选择 DOM 元素。
 *   `$()` `$$()`和 是 和 的 `document.querySelector()` 较短版本 `document.querySelectorAll()` 。  
     
-例如，以下代码段检索网页 \(中所有的链接，就像 \) 的简短内容一 `$$('a')` 样，将链接显示为可排序表以复制和粘贴到 Excel 中。 `document.querySelectorAll('a')`
+例如，以下代码段检索网页 \ (中所有的链接，就像 \) 的简短内容一 `$$('a')` 样，将链接显示为可排序表以复制和粘贴到 Excel 中。 `document.querySelectorAll('a')`
 
 ```javascript
 console.table($$('a'),['href','text']);

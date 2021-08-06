@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 66c0686c166163f1640384d096288af0b530f135
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 8f19d7b83acfbf9a1582a9e9e8b77e88b5c6e09d2be9e3c1d9db9e76dbab6136
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519434"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807363"
 ---
 # <a name="override-webpage-resources-with-local-copies-using-microsoft-edge-devtools"></a>使用 DevTools 使用本地副本替代Microsoft Edge资源  
 
@@ -65,13 +65,13 @@ ms.locfileid: "11519434"
    在样式检查器 **中选择** 文件  
 :::image-end:::  
 
-在"**源**"编辑器上，将鼠标悬停在所选文件的文件名上，打开上下文菜单 \(右键单击\) ，然后选择"保存**以替代"。**  
+在"**源**"编辑器上，将鼠标悬停在所选文件的文件名上，打开上下文菜单 \ (右键单击\) ，然后选择"保存**以替代"。**  
 
-:::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="在源编辑器中，将文件的名称添加到替代" lightbox="../media/javascript-overrides-file-name.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="在"源"编辑器中，将文件的名称添加到替代" lightbox="../media/javascript-overrides-file-name.msft.png":::
    在 **"源** "编辑器中，将文件的名称添加到替代  
 :::image-end:::  
 
-:::image type="complex" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="在上下文菜单上，选择保存替代" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="在上下文菜单上，选择"保存替代"" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
    在上下文菜单上，选择 **"保存替代"**  
 :::image-end:::  
 
@@ -100,14 +100,14 @@ ms.locfileid: "11519434"
 
 :::row:::
    :::column span="":::
-      在" **源** "工具的" **页面** "部分，将鼠标悬停在任何文件上，打开上下文菜单 \(右键单击\) ，并将其添加到覆盖。  同样，已位于替代文件夹中的文件在图标上还有一个紫色点。  
+      在" **源** "工具的" **页面** "部分，将鼠标悬停在任何文件上，打开上下文菜单 \ (右键单击\) ，并将其添加到覆盖。  同样，已位于替代文件夹中的文件在图标上还有一个紫色点。  
       
-      :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="从源工具中选择文件进行替代" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
+      :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="从"源"工具中选择文件进行替代" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
          从"源"工具 **中选择** 文件进行替代  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      或者，在 **"** 网络"工具上，将鼠标悬停在任何文件上，打开上下文菜单 \(右键单击\) ，并将其添加到覆盖。  当替代生效时，位于您的计算机而不是实时网页中的文件。  当替代生效时，在 **"** 网络"工具上，找到文件名旁边的警告图标。  
+      或者，在 **"** 网络"工具上，将鼠标悬停在任何文件上，打开上下文菜单 \ (右键单击\) ，并将其添加到覆盖。  当替代生效时，位于您的计算机而不是实时网页中的文件。  当替代生效时，在 **"** 网络"工具上，找到文件名旁边的警告图标。  
       
       :::image type="complex" source="../media/javascript-overrides-network.msft.png" alt-text="从网络工具中选择文件进行替代" lightbox="../media/javascript-overrides-network.msft.png":::
          从网络工具 **中选择** 文件进行替代  

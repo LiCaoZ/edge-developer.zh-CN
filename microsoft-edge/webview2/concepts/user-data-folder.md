@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、用户数据文件夹
-ms.openlocfilehash: d3b3e8d81ddffec043f0988385a433eb7c817de7
-ms.sourcegitcommit: 5ae09b1ad6cd576c9fec12538b23cd849861f2b2
+ms.openlocfilehash: 6e8253499582fe7beb49b3cdf5effb0e0553073c1beebcc45ae7fe4c05e1b908
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "11627955"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800197"
 ---
 # <a name="manage-the-user-data-folder"></a>管理用户数据文件夹  
 

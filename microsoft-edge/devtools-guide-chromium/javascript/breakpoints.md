@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: fda536deb7177b933013120fc11b0896acfbbe5c
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 9734841a9994625bfbaa97a84781581415ed883ed92f8ca914b81cea277d8fac
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564173"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800487"
 ---
 <!-- Copyright Kayce Basques
 
@@ -103,7 +103,7 @@ console.log('c');
 *   将鼠标悬停在某个项上并打开上下文菜单 \(右键单击\) 删除该断点。  
 *   将鼠标悬停在“**断点**”窗格中的任意位置，然后打开上下文菜单 \(右键单击\) 以停用所有断点、禁用所有断点或删除所有断点。  禁用所有断点等效于取消选中每个断点。  取消激活所有断点将指示开发工具忽略所有代码行断点，但也要保持启用状态，以使每个断点都与重新激活每个断点时的状态相同。  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="断点窗格中的已停用断点" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="“断点”窗格中的已停用断点" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
        “**断点**”窗格中的已停用断点  
     :::image-end:::  
     
@@ -168,7 +168,7 @@ console.log('c');
 1.  选择“**源**”工具。  
 1.  选择“**因异常暂停**” \(![ 因异常暂停 ](../media/pause-on-exceptions-icon.msft.png) \)。  图标在启用时变为蓝色。  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="因异常暂停按钮" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="“因异常暂停”按钮" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
        “**因异常暂停**”按钮  
     :::image-end:::  
     

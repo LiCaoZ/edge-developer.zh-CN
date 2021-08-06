@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 822c25240ba30df31416ca783bf48d6d9ba52ed2
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: b141ad8c2baab1225df0da46a7922c0ebc86d9875153dd9ac671304148d6788c
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624631"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802977"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques 
@@ -81,7 +81,7 @@ ms.locfileid: "11624631"
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。  
+本作品根据 [知识共享署名 4.0 国际许可 ][CCA4IL] 获得许可。  
 
 
 <!-- links -->  

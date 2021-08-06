@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 2d721a0ccd27befc7a59726f4c5ef9227042b30b
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 24fd94162ec230f22a1f6e4be2c2110558950cf5a92a04d0eccd4663843e40a0
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11565090"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11804049"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -68,7 +68,7 @@ ms.locfileid: "11565090"
 
 通过自定义域映射，可以在使用自定义域的开发计算机上通过 Web 服务器查看 Android 设备上的内容。  
 
-例如，假定您的网站使用仅在域 上工作的第三方 JavaScript 库 `microsoft-edge.devtools` 。  因此，在开发计算机上在文件中创建一个条目，以将此域映射到 `hosts` `localhost` \(例如 `127.0.0.1 microsoft-edge.devtools` \) 。  设置自定义域映射和端口转发后，在 Android 设备上通过 URL 查看网站 `microsoft-edge.devtools` 。  
+例如，假定您的网站使用仅在域 上工作的第三方 JavaScript 库 `microsoft-edge.devtools` 。  因此，在开发计算机上在文件中创建一个条目，以将此域映射到 `hosts` `localhost` \ (例如 `127.0.0.1 microsoft-edge.devtools` \) 。  设置自定义域映射和端口转发后，在 Android 设备上通过 URL 查看网站 `microsoft-edge.devtools` 。  
 
 ### <a name="set-up-port-forwarding-to-proxy-server"></a>设置到代理服务器的端口转发  
 

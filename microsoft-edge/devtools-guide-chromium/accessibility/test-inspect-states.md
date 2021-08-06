@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 129a89f94925de24a4e649bd91f513de031d6b4a
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 3603723910a60f06fab30bdac4e934dbca48c5696b9a163b4ea120b4edbc822f
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597281"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802400"
 ---
 # <a name="verify-accessibility-of-all-states-of-elements"></a>验证所有元素状态可访问性
 
@@ -35,7 +35,7 @@ ms.locfileid: "11597281"
             边栏导航菜单中的链接具有足够的对比度，如检查**覆盖中所示** :::image-end:::
     :::column-end:::
     :::column:::
-        :::image type="complex" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="检查覆盖层中的警告标记了对比度不足的元素" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
+        :::image type="complex" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text=""检查"覆盖层中的警告标记了对比度不足的元素" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
             "检查"覆盖层中的警告标记了对比度 **不足** 的元素 :::image-end:::
     :::column-end:::
 :::row-end:::
@@ -57,7 +57,7 @@ ms.locfileid: "11597281"
     
 若要确认动画不运行，请执行以下步骤。
     
-1.  选择 DevTools 左上角的"检查 **\(** 检查"按钮 \) 按钮，以便图标以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
+1.  选择 DevTools 左上角的"检查 **\ (** 检查"按钮 \) 按钮，以便图标以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
 
 1.  将鼠标悬停在边栏导航菜单上的蓝色链接上。  菜单项的动画不会运行。 相反，菜单项使用弹性框覆盖的颜色和突出显示来显示。
 
@@ -74,7 +74,7 @@ ms.locfileid: "11597281"
 
 1.  如果尚未打开，请打开新选项卡 [中的][DevToolsA11yErrorsDemopage] 辅助功能测试演示网页。 然后选择 **F12** 以打开 DevTools。
 
-1.  选择 DevTools 左上角的"检查 **\(** 检查工具按钮 \) "按钮，使图标以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
+1.  选择 DevTools 左上角的"检查 **\ (** 检查工具按钮 \) "按钮，使图标以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
 
 1.  在呈现的网页中，选择边栏导航菜单中的蓝色 **"猫** "链接。  将 **打开"** 元素"工具，并选中 `<a href="#cats">Cats</a>` 元素。
 
@@ -100,7 +100,7 @@ ms.locfileid: "11597281"
 
     应用模拟状态后，可以再次使用 **Inspect** 工具在用户将鼠标悬停在元素上时检查元素的对比度，如下所示。
 
-1.  选择 DevTools 左上角的"检查 **\(** 检查器图标 \) "按钮，以便该图标在蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
+1.  选择 DevTools 左上角的"检查 **\ (** 检查器图标 \) "按钮，以便该图标在蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
 
 1.  将鼠标悬停在边栏导航菜单中的蓝色 **"猫** "链接上。  由于模拟悬停动画，该链接现在为浅蓝色。  将显示**Inspect**工具的信息覆盖层，在"对比度"行中显示橙色感叹**** 号，指示对比度不够高。
 

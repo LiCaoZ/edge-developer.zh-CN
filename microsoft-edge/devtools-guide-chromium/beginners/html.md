@@ -7,12 +7,12 @@ ms.date: 07/01/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发工具，面向初学者的开发工具，面向初学者的开发工具 HTML，面向初学者的开发工具 DOM，开发者工具 html 教程，开发者工具 html 教程，开发者工具文档对象模型教程
-ms.openlocfilehash: a049ec500e22f89db3ab1e966b55d89c2ad682fe
-ms.sourcegitcommit: 8f37c931ecde4d58223113f7e3b42d37cc3df97f
-ms.translationtype: HT
+ms.openlocfilehash: 184d6b9d130e7052a4f0d479e4837fa84281c6983ca50ab17d508b5a2f9cbe75
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "11643472"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802064"
 ---
 <!-- Copyright Katherine Jackson 
 

@@ -7,12 +7,12 @@ ms.date: 07/30/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 69e609bc0cd8618c2c138cb2ea392427513b4635
-ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
+ms.openlocfilehash: 8661096171f7e40f06d7a2d018193ee61f8b0313e3ab376bad8fad9997cf2219
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "11710786"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11806341"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-93"></a>DevTools (Microsoft Edge 93 中的新增) 
 
@@ -45,7 +45,7 @@ ms.locfileid: "11710786"
 *  红色
 *  明天晚上蓝色
 
-有关详细信息，请导航到将[颜色主题应用于 Microsoft Edge DevTools][CustomizeDarkTheme]。
+有关详细信息，请导航到 [将颜色主题应用到 DevTools][CustomizeDarkTheme]。
 
 
 ## <a name="debug-dom-node-memory-leaks-with-the-new-detached-elements-tool"></a>使用新的分离元素工具调试 DOM 节点内存泄漏
@@ -77,7 +77,7 @@ ms.locfileid: "11710786"
 
 如果你使用 Visual Studio Code 中的 JavaScript 调试，你现在可以通过选择"检查Microsoft Edge启动 Visual Studio Code**开发人员**工具扩展。 ****
 
-:::image type="complex" source="../../media/2021/07/inspect-button.msft.png" alt-text="启动 DevTools Visual Studio Code中的检查按钮" lightbox="../../media/2021/07/inspect-button.msft.png":::
+:::image type="complex" source="../../media/2021/07/inspect-button.msft.png" alt-text="启动 DevTools Visual Studio Code中的"检查"按钮" lightbox="../../media/2021/07/inspect-button.msft.png":::
    启动**** DevTools Visual Studio Code中的"检查"按钮
 :::image-end:::
 
@@ -136,7 +136,7 @@ Microsoft EdgeDevTools 采用了[Fluent UI，][FluentUI]为按钮和菜单提供
 1. 选择 **"将声明复制为 JS"** 或 **"复制所有声明为 JS"。**
 1. 将复制的 CSS 粘贴到文本编辑器中的 JavaScript 文件中，如Visual Studio Code。  例如：`'--more-link': 'lime'`。
 
-:::image type="complex" source="../../media/2021/07/copy-declaration-as-js.msft.png" alt-text="样式规则的上下文菜单，包括Copy declaration as JS和Copy all declarations as JS命令" lightbox="../../media/2021/07/copy-declaration-as-js.msft.png":::
+:::image type="complex" source="../../media/2021/07/copy-declaration-as-js.msft.png" alt-text="样式规则的上下文菜单，包括"Copy declaration as JS"和"Copy all declarations as JS"命令" lightbox="../../media/2021/07/copy-declaration-as-js.msft.png":::
    样式规则的上下文菜单，包括 **Copy declaration as JS** 和 Copy all **declarations as JS** commands
 :::image-end:::
 
@@ -194,7 +194,7 @@ User-Agent客户端提示使浏览器信息比以分号分隔的字符串User-Ag
 
 现在，Microsoft Edge版本 93 中，"复制为**PowerShell"** 上下文菜单选项正确设置 devTools User-Agent的 User-Agent 字符串和 Cookie。  生成的 PowerShell 命令现在可以成功提出由 DevTools 观察到的相同网络请求，甚至向依赖 Cookie 的服务器发送请求。
 
-:::image type="complex" source="../../media/2021/07/copy-as-powershell.msft.png" alt-text="复制为 PowerShell命令" lightbox="../../media/2021/07/copy-as-powershell.msft.png":::
+:::image type="complex" source="../../media/2021/07/copy-as-powershell.msft.png" alt-text=""复制为 PowerShell"命令" lightbox="../../media/2021/07/copy-as-powershell.msft.png":::
    " **复制为 PowerShell"** 命令
 :::image-end:::
 
@@ -212,7 +212,7 @@ User-Agent客户端提示使浏览器信息比以分号分隔的字符串User-Ag
 
 
 <!-- links -->
-[CustomizeDarkTheme]: ../../../customize/dark-theme.md "向开发人员工具Microsoft Edge应用颜色|Microsoft Docs"
+[CustomizeDarkTheme]: ../../../customize/theme.md "将颜色主题应用到 DevTools |Microsoft Docs"
 <!-- todo: link directly to the subheading in the page, when available; test the subheading link:
 [ExperimentalFeaturesDetachedElements]: ../../../experimental-features/index.md#detached-elements "Detached elements | Microsoft Docs" -->
 [CustomizeLocalization]: ../../../customize/localization.md "更改 DevTools 语言设置 | Microsoft Docs"

@@ -9,12 +9,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: 辅助功能， 开发人员辅助功能， 可访问的网站， 边缘， Web 开发， ARIA， 开发人员， UIA， UI 自动化
 ms.custom: seodec18
-ms.openlocfilehash: 99f0eb9d96bc6d53df72839c6c2f1e61cbd5494e
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 5754e6198888d54412dd7d5616c812400fee8a0180685ceda8f1f4e609541b39
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564019"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800158"
 ---
 # <a name="building-accessible-websites"></a>构建可访问的网站  
 
@@ -24,9 +24,9 @@ Web 填充了动态且复杂的网站、应用程序和用户界面，这些网�
 
 ## <a name="how-accessibility-works"></a>辅助功能的工作原理  
 
-辅助技术添加计算机通常没有的功能。  例如，视觉受损的用户可能将键盘与辅助技术（如屏幕阅读器）结合使用，而不是直接将浏览器与鼠标和屏幕结合使用。  对于 Microsoft 平台和 Web 上的应用程序，辅助技术与 Microsoft [UI 自动化](/windows/win32/winauto/uiauto-specandcommunitypromise)、特定于应用程序的对象模型（如 Microsoft Edge 中的文档对象模型 \(DOM\) ）或这些对象的组合交互。  
+辅助技术添加计算机通常没有的功能。  例如，视觉受损的用户可能将键盘与辅助技术（如屏幕阅读器）结合使用，而不是直接将浏览器与鼠标和屏幕结合使用。  对于 Microsoft 平台和 Web 上的应用程序，辅助技术与 Microsoft [UI 自动化](/windows/win32/winauto/uiauto-specandcommunitypromise)、特定于应用程序的对象模型（如 Microsoft Edge 中的文档对象模型 \ (DOM\) ）或这些对象的组合交互。  
 
-对于 Web 开发人员，某些 HTML 元素会映射到 UI 自动化对象，因此在选择这些 HTML 元素时，开发人员可以使用内置于这些元素的辅助功能属性和事件。  开发网站时，通常只需关注确保 API 正确写入 \(或指定适当的元素\) ，以便应用程序可访问。  有关详细信息，[请参阅 ARIA 和 Microsoft Edge](./aria-and-ui-automation.md) UI 自动化。  有关可访问的通用 Windows 平台 \(UWP\) 应用的信息，请导航到 Windows 开发人员中心 中的辅助功能[](/windows/uwp/design/accessibility/accessibility)主题。  
+对于 Web 开发人员，某些 HTML 元素会映射到 UI 自动化对象，因此在选择这些 HTML 元素时，开发人员可以使用内置于这些元素的辅助功能属性和事件。  开发网站时，通常只需关注确保 API 正确写入 \ (或指定适当的元素\) ，以便应用程序可访问。  有关详细信息，[请参阅 ARIA 和 Microsoft Edge](./aria-and-ui-automation.md) UI 自动化。  有关可访问的通用 Windows 平台 \ (UWP\) 应用的信息，请导航到 Windows 开发人员中心 中的辅助功能[](/windows/uwp/design/accessibility/accessibility)主题。  
 
 通过良好的编码实践，可以解决与动态内容相关的许多常见辅助功能问题，并且 [WCAG 2.0](https://www.w3.org/TR/WCAG20) 文档包括许多技术和最佳实践，可帮助你创建更易于访问的动态 Web 应用程序。  但是，即使正确编码，也不必访问动态内容。  [可访问的富 Internet 应用程序 (ARIA) ](#aria) 可帮助解决此问题。  
 
@@ -34,7 +34,7 @@ Web 填充了动态且复杂的网站、应用程序和用户界面，这些网�
 
 ## <a name="aria"></a>ARIA  
 
-W3C 的 Web 辅助功能计划 ([ARIA) ARIA](https://www.w3.org/TR/wai-aria)规范定义为使[](https://www.w3.org/WAI)所有人员均可访问的动态 Web 内容和自定义用户界面的语法。  ARIA 通过使用旨在传达自定义语义的其他属性 \(角色、属性和状态\) 扩展 HTML。  浏览器使用这些属性将控件的状态和角色传递到辅助功能 API。  
+W3C 的 Web 辅助功能计划 ([ARIA) ARIA](https://www.w3.org/TR/wai-aria)规范定义为使[](https://www.w3.org/WAI)所有人员均可访问的动态 Web 内容和自定义用户界面的语法。  ARIA 通过使用旨在传达自定义语义的其他属性 \ (角色、属性和状态\) 扩展 HTML。  浏览器使用这些属性将控件的状态和角色传递到辅助功能 API。  
 
 ### <a name="roles-properties-and-states"></a>角色、属性和状态  
 
@@ -73,19 +73,19 @@ ARIA 状态和属性是 aria 前缀的属性，可提供有关对象的特定信
 
 WebAIM 与屏幕[阅读器][WebaimProjectsScreenreadersurvey8]和低视力[][WebaimProjectsLowvisionsurvey2]用户进行调查，帮助你确定要测试哪些辅助技术和浏览器。  
 
-### <a name="learning-how-to-test"></a>了解如何测试  
+### <a name="learning-how-to-test"></a>Learning如何测试  
 
-辅助技术是复杂的工具。  不要假定你能够立即开始使用辅助技术进行测试，而无需首先了解它的工作原理。  学习使用屏幕阅读器进行测试具有一个特别容易学习的曲线。  当问题与误用屏幕阅读器有关时，屏幕阅读器用户可能会假设发生了屏幕阅读器 Bug。  
+辅助技术是复杂的工具。  不要假定你能够立即开始使用辅助技术进行测试，而无需首先了解它的工作原理。  Learning屏幕阅读器进行测试时，学习曲线尤其弯曲。  当问题与误用屏幕阅读器有关时，屏幕阅读器用户可能会假设发生了屏幕阅读器 Bug。  
 
 有关学习使用辅助技术进行测试的信息，请导航到使用 WebAIM 上的 [屏幕][WebaimArticlesScreenreaderTesting] 阅读器进行测试。  
 
 ### <a name="testing-locally"></a>本地测试  
 
-大多数设备包括内置于操作系统的辅助技术。  Microsoft Windows包括屏幕[阅读器Windows 讲述人][MicrosoftSupport22798]和Windows[放大镜][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]。  可以下载第三方辅助技术，如[NVDA、FreedomscientificSoftwareJaws]和[ZoomText。][FreedomscientificSoftwareZoomtext] [][NvaccessAboutNvda]  Apple macOS 包括 [VoiceOver][AppleAccessibilityMacVision] 屏幕阅读器。  iOS、Android 和 Linux 都支持各种辅助技术。  
+大多数设备包括内置于操作系统的辅助技术。  Microsoft Windows包括Windows[讲述][MicrosoftSupport22798]人屏幕阅读器和Windows[放大镜][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]。  可以下载第三方辅助技术，如[NVDA、FreedomscientificSoftwareJaws]和[ZoomText。][FreedomscientificSoftwareZoomtext] [][NvaccessAboutNvda]  Apple macOS 包括 [VoiceOver][AppleAccessibilityMacVision] 屏幕阅读器。  iOS、Android 和 Linux 都支持各种辅助技术。  
 
 ### <a name="testing-in-virtual-machines-and-emulators"></a>虚拟机和仿真器中的测试  
 
-在 macOS 下，如果你希望使用仅适用于 Windows（如 Windows 讲述人 或 NVDA）的辅助技术进行测试，Windows虚拟机。  具有 Microsoft Edge \(EdgeHTML\) 和 IE 的虚拟机可用于虚拟机下载页上的 VirtualBox 和[VMWare。][MicrosoftDeveloperEdgeVms]  
+在 macOS 下，如果你希望使用仅适用于 Windows 的辅助技术（如 Windows 讲述人或 NVDA）进行测试，Windows虚拟机。  具有 Microsoft Edge \ (EdgeHTML\) 和 IE 的虚拟机可用于虚拟机下载页上的 VirtualBox 和[VMWare。][MicrosoftDeveloperEdgeVms]  
 
 [Android Studio][AndroidDeveloperSdkInstallingStudioHtml] 包含一个仿真器，用于测试 Android 辅助功能套件 [中的辅助技术][GooglePlayStoreAndroidAccessibilitySuite]。  按照说明 [设置虚拟设备][AndroidDeveloperDevicesManagingAvdsHtml] 并启动 [仿真][AndroidDeveloperDevicesEmulatorHtml]器，然后从 GooglePlay 商店安装 [Android][GooglePlayStoreAndroidAccessibilitySuite] 辅助功能套件。  
 
@@ -154,7 +154,7 @@ JavaScript 库，通过简化辅助功能帮助现代 Web 应用程序解决辅�
 
 #### <a name="assistive-technology-compatibility-tests"></a>辅助技术兼容性测试  
 
-显示不同的内容类型和标准在辅助技术 \(AT\) 如屏幕阅读器中的行为的测试结果。  有关详细信息，请导航到 [辅助技术兼容性测试](http://www.powermapper.com/tests)。  
+显示不同的内容类型和标准在辅助技术 \ (AT\) 如屏幕阅读器中的行为的测试结果。  有关详细信息，请导航到 [辅助技术兼容性测试](http://www.powermapper.com/tests)。  
 
 #### <a name="building-accessible-websites-just-got-a-lot-easier"></a>构建可访问的网站变得更加简单  
 
@@ -170,7 +170,7 @@ JavaScript 库，通过简化辅助功能帮助现代 Web 应用程序解决辅�
 
 #### <a name="how-to-meet-wcag-20"></a>如何满足 WCAG 2.0  
 
-快速参考 Web 内容辅助功能指南 \(WCAG\) 2.0 要求 \(成功条件\) 和技术。  有关详细信息，请导航到如何 [开会 WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref)。  
+快速参考 Web 内容辅助功能指南 \ (WCAG\) 2.0 要求 \ (成功条件\) 和技术。  有关详细信息，请导航到如何 [开会 WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref)。  
 
 #### <a name="html-accessibility-api-mappings-10"></a>HTML 辅助功能 API 映射 1.0  
 
@@ -214,13 +214,13 @@ W3C 关于辅助功能的影响和每个人的权益的一系列简短情境视�
 
 [MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "虚拟机|Microsoft Edge开发人员"  
 
-[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "完整指南讲述人 |Microsoft 支持"  
+[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "讲述人工具的完整|Microsoft 支持"  
 [MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]: https://support.microsoft.com/windows/414948ba-8b1c-d3bd-8615-0e5e32204198 "使用放大镜使屏幕上的内容更易于查看|Microsoft 支持"  
 
-[AccessibilityinsightsWebOverview]: https://accessibilityinsights.io/docs/web/overview "适用于 Web 网站的辅助功能见解|辅助功能见解"  
+[AccessibilityinsightsWebOverview]: https://accessibilityinsights.io/docs/web/overview "Web Insights辅助功能|辅助功能Insights"  
 
 [AndroidDeveloperDevicesManagingAvdsHtml]: https://developer.android.com/tools/devices/managing-avds.html "创建和管理虚拟设备|Android 开发人员"  
-[AndroidDeveloperDevicesEmulatorHtml]: https://developer.android.com/tools/devices/emulator.html "在 Android 仿真器设备上|Android 开发人员"  
+[AndroidDeveloperDevicesEmulatorHtml]: https://developer.android.com/tools/devices/emulator.html "在 Android 设备上Emulator |Android 开发人员"  
 [AndroidDeveloperSdkInstallingStudioHtml]: https://developer.android.com/sdk/installing/studio.html "下载 Android Studio |Android 开发人员"  
 
 [AppleAccessibilityMacVision]: https://www.apple.com/accessibility/mac/vision "视觉辅助功能 - Mac |Apple"  

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 65a3fb4da235d2330bf9205b7a4a79a999559ca4
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 2b6bb6099a173bf3d9346c8374ed918300c2a4b4eb62b2e44b72fa2ec24de632
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624799"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11806977"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -86,7 +86,7 @@ Chromium问题[#1093687][CR1093687]
 
 网络 **工具** 的" **计时"** 选项卡现在包括 `respondWith` 服务工作器事件。  服务工作线程事件显示从服务工作进程事件处理程序开始运行前一段时间到处理程序承诺得到实现的时间 `respondWith` `fetch` `respondWith` `fetch` 的持续时间。  
 
-:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="网络面板的计时选项卡中的 respondWith 服务工作线程事件" lightbox="../../media/2020/06/timing-tab.msft.png":::
+:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text=""网络"面板的"计时"选项卡中的 respondWith 服务工作线程事件" lightbox="../../media/2020/06/timing-tab.msft.png":::
    网络 `respondWith` 工具的" **计时"** 选项卡中的服务 **工作器** 事件  
 :::image-end:::  
 
@@ -272,7 +272,7 @@ Chromium问题[#800028][CR800028]
 
 例如，以前，DevTools 未取消分组邮件，即使未取消选中" `hello` **组** 相似"。  现在， `hello` 邮件已取消组合。  
 
-:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="取消选中类似组时，hello 消息将取消分组" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
+:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="取消选中"类似组"时，hello 消息将取消分组" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
    取消 **选中"类似** 组"时 `hello` ，邮件将取消分组
 :::image-end:::  
 
@@ -338,7 +338,7 @@ Chromium 问题 [#1041830][CR1041830]
 [DevtoolsCommandMenu]: ../../../command-menu.md "使用 Microsoft Edge 开发工具命令菜单运行命令"
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "设置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"
 [DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features/index.md#turn-on-experimental-features "打开试验功能 - 试验功能 | Microsoft Docs"  
-[DevtoolsIssues]: ../../../issues/index.md "使用问题工具查找并修复|Microsoft Docs"
+[DevtoolsIssues]: ../../../issues/index.md "使用问题工具查找并修复问题 | Microsoft Docs"
 [DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles]: ../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files "使用编辑器窗格查看或编辑文件 - 源面板概述|Microsoft Docs"  
 [DevtoolsNetworkIndexLogActivity]: ../../../network/index.md#log-network-activity "记录网络活动 - 在 DevTools Microsoft Edge中检查网络|Microsoft Docs"
 

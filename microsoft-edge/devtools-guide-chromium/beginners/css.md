@@ -7,12 +7,12 @@ ms.date: 07/26/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools
-ms.openlocfilehash: 68db66fffc72737e32ab30eaa721574b5efa605f
-ms.sourcegitcommit: 613c4c5325177560f9e814ead1a802531f92b8ec
+ms.openlocfilehash: 99e8c525f910e42c1b58aed83bd25ef1229627cc6d42150516c9a0aa1589d95f
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "11709271"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802686"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -59,7 +59,7 @@ ms.locfileid: "11709271"
 
 你正在构建一个真实网站。  
 
-## <a name="prerequisites"></a>必备条件  
+## <a name="prerequisites"></a>先决条件  
 
 完成以下先决条件，然后再执行本教程。  
 
@@ -262,7 +262,7 @@ li a {
 1.  导航到实时 **选项卡**。  
 1.  选择 **"联系人** "链接可返回到联系人页面。  现在， **联系我！** 具有与导航链接相同的字体。  
     
-    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="文本联系我！  现在字体与主页和联系人链接相同" lightbox="../media/beginners-css-multiple1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="文本联系我！  现在字体与"主页"和"联系人"链接相同" lightbox="../media/beginners-css-multiple1.msft.png":::
        文本" **联系我"！** 现在字体与 **"主页"** 和 **"联系人"** 链接相同  
     :::image-end:::  
     
@@ -367,7 +367,7 @@ li a {
     
 1.  将鼠标悬停在"主页 **"链接** 上。  链接的背景变为绿色。  
     
-    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="将鼠标悬停在主页链接上以显示其绿色背景" lightbox="../media/beginners-css-rule5.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="将鼠标悬停在"主页"链接上以显示其绿色背景" lightbox="../media/beginners-css-rule5.msft.png":::
        将鼠标悬停在"主页"链接上以显示其绿色背景  
     :::image-end:::  
     
@@ -417,7 +417,7 @@ li a {
     
 1.  选择 **"新建文件"。**  
     
-    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text="新建文件对话框" lightbox="../media/beginners-css-external5.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text=""新建文件"对话框" lightbox="../media/beginners-css-external5.msft.png":::
        "新建文件"对话框  
     :::image-end:::  
     

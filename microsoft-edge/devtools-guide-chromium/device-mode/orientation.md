@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 71527d8dce0d7a0563feef0081ce12d40eeb5e1a
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 7f24bfe4d6858cc1816e4a0db59a494956020addb2995036282baabdfe1bcef1
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564306"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11806304"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -44,7 +44,7 @@ ms.locfileid: "11564306"
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="从方向列表中选择纵向向下" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="从"方向"列表中选择"纵向"向下" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
              从 `Portrait upside down` "**入职培训"列表中选择**  
           :::image-end:::  
        :::column-end:::

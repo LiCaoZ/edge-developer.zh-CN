@@ -7,18 +7,18 @@ ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， Web 开发， html， css， javascript， 开发人员， 扩展
-ms.openlocfilehash: dfbe7893ce576c223d2b1d39ec21b6c5f46d8356
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 14a64d92d1ec738dea444c09fd0188b90469d9d6159247d2fe3d03a27ce482a2
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397508"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11805178"
 ---
 # <a name="create-an-extension-tutorial---part-1"></a>创建扩展教程 - 第 1 部分  
 
 ## <a name="overview"></a>概述  
 
-本教程的目标是从空目录开始构建 Microsoft Edge (Chromium) 扩展。  你正在构建一个扩展，该扩展可弹出当天的"省/市/服务"图片。 在本教程中，了解如何通过完成以下操作来创建扩展。  
+本教程的目标是生成一个从Microsoft Edge (Chromium) 目录开始扩展的扩展。  你正在构建一个扩展，该扩展可弹出当天的"省/市/服务"图片。 在本教程中，了解如何通过完成以下操作来创建扩展。  
 
 *   创建 `manifest.json` 文件。  
 *   添加图标。  

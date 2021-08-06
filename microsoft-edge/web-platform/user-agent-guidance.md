@@ -1,20 +1,20 @@
 ---
 description: 本文介绍如何使用用户Microsoft Edge提示和用户代理字符串检测数据
-title: 检测Microsoft Edge网站中的内容
+title: 正在从网站检测 Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/30/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 兼容性， Web 平台， 用户代理字符串， ua 字符串， ua 替代， 用户代理客户端提示， 用户代理客户端提示， ua 客户端提示， ua ch， 功能检测， 浏览器标识， 浏览器检测， 标头， https 标头， 验证 chromium， 检测 microsoft edge， 检测 Microsoft edge
-ms.openlocfilehash: 6414ddc23b7a53e2d67432952557d2f1c4d60fa2
-ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
+ms.openlocfilehash: 39a01ebc10b48a8214b09096974a3864dcb06e572a119ec6af6b975c1657f6dd
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "11710687"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798216"
 ---
-# <a name="detecting-microsoft-edge-from-your-website"></a>检测Microsoft Edge网站中的内容
+# <a name="detecting-microsoft-edge-from-your-website"></a>正在从网站检测 Microsoft Edge
 
 浏览器为网站提供用于检测浏览器信息（如品牌、版本号和主机操作系统）的机制。 旧版 [用户代理字符串](#user-agent-strings) 已过时，并且具有导致网站兼容性问题的历史记录。 新的 [用户代理客户端提示](#user-agent-client-hints) 是检索浏览器信息的改进机制。
 

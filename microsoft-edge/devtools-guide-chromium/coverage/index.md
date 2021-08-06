@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: b31d14feac13a907ca0c5ce7ef702bcdef375ad5
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 4aa974abf33191ae790aa0b12761449a740db4939ebc5443cff0a4a94fca7365
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564460"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803715"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -64,7 +64,7 @@ Microsoft Edge DevTools 中的“**覆盖范围**”面板可帮助你查找未�
 1.  [打开“命令”菜单][DevToolsCommandMenu]。  
 1.  开始键入`coverage`，选择“**显示覆盖范围**”命令，然后选择`Enter`以运行该命令。  在“**工具箱**”中打开“**覆盖范围**”面板。  
 
-    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="覆盖范围面板" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="“覆盖范围”面板" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
        “**覆盖范围**”面板  
     :::image-end:::  
     

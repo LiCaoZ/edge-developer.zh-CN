@@ -7,20 +7,20 @@ ms.date: 03/30/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， 开发工具， 本地化， loc， 语言
-ms.openlocfilehash: b1fe4c255e77c548a7d9c95a65ad95149e6dec70
-ms.sourcegitcommit: 53de914ff3bb7d6b3ae401b0b0c21d68bd7cb84b
+ms.openlocfilehash: a83d33dcd63d6d79e898a1872a02a4d019710997617ad0854bf6c8109f1c6af1
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "11469661"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11805035"
 ---
 # <a name="change-devtools-language-settings"></a>更改 DevTools 语言设置  
 
-默认情况下，如果开发人员工具是当前支持的十种语言 \(之一，则你的开发人员工具与你的浏览器语言匹配) 。  
+默认情况下，如果开发人员工具是当前支持的十种语言 \ (之一，则你的开发人员工具与你的浏览器语言匹配) 。  
 
 :::row:::
    :::column span="2":::
-      中文 \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;  
+      中文 \ (Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;  
    :::column-end:::
    :::column span="2":::
       繁体 (中文\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;  
@@ -63,7 +63,7 @@ ms.locfileid: "11469661"
    使用中文的 DevTools  
 :::image-end:::  
 
-如果要将 DevTools 还原为英语，请导航到["DevTools][DevtoolsCustomizeIndexSettings]设置"或选择"首选项"，然后关闭 `F1` "**匹配浏览器语言"** 复选框。 ****  
+如果你想要将 DevTools 还原为英语，请导航到[DevTools 设置][DevtoolsCustomizeIndexSettings]或选择 ，选择首选项，然后关闭 `F1` "**匹配浏览器**语言"复选框。 ****  
 
 <!-- links -->  
 

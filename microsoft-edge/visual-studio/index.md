@@ -7,12 +7,12 @@ ms.date: 07/27/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， vs， visual studio， 调试器
-ms.openlocfilehash: b7f2837d1d659ad9bf396d7de61efbcdeb6fe982
-ms.sourcegitcommit: 613c4c5325177560f9e814ead1a802531f92b8ec
+ms.openlocfilehash: ef60b40f8867b282cfae85a48826317bc3964cac8bd9fc246c54c4b577e75cce
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "11709185"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11805206"
 ---
 # <a name="visual-studio"></a>Visual Studio  
 
@@ -55,7 +55,7 @@ Visual Studio生成 ASP.NET 和 ASP.NET Core 应用、启动 Web 服务器、启
 
 1.  选择绿色"播放"按钮旁边的下拉列表 **，然后选择****IIS Express"**。  
     
-    :::image type="complex" source="./media/vs-dropdown.png" alt-text="绿色播放按钮旁边的下拉列表IIS Express" lightbox="./media/vs-dropdown.png":::
+    :::image type="complex" source="./media/vs-dropdown.png" alt-text="绿色"播放"按钮旁边的下拉列表IIS Express" lightbox="./media/vs-dropdown.png":::
        绿色"播放"按钮**旁边的下拉列表IIS Express** ****  
     :::image-end:::  
 
@@ -83,7 +83,7 @@ Visual Studio生成 ASP.NET 和 ASP.NET Core 应用、启动 Web 服务器、启
 
 1.  在 `Counter.js` 中，通过选择第 13 行旁边的装订线设置断点。  
 
-    :::image type="complex" source="./media/set-breakpoint.png" alt-text="选择第 13 行旁边的装订线Counter.js在行中设置Visual Studio" lightbox="./media/set-breakpoint.png":::
+    :::image type="complex" source="./media/set-breakpoint.png" alt-text="选择"第 13 行"旁边的装订线Counter.js在"行"中设置Visual Studio" lightbox="./media/set-breakpoint.png":::
        选择"第 13 行"旁边的装订线 `Counter.js` ，以设置Visual Studio  
     :::image-end:::  
 
@@ -91,7 +91,7 @@ Visual Studio生成 ASP.NET 和 ASP.NET Core 应用、启动 Web 服务器、启
 
 1.  在**网页**顶部的导航菜单中选择"计数器"，然后选择"增量 **"。**  
 
-    :::image type="complex" source="./media/edge-counter.png" alt-text="ASP.NET Core Web 应用中的计数器页" lightbox="./media/edge-counter.png":::
+    :::image type="complex" source="./media/edge-counter.png" alt-text="ASP.NET Core Web 应用中的"计数器"页" lightbox="./media/edge-counter.png":::
        ASP.NET Core Web 应用中的"计数器"页  
     :::image-end:::  
 
@@ -117,7 +117,7 @@ Visual Studio生成 ASP.NET 和 ASP.NET Core 应用、启动 Web 服务器、启
 
 1.  在Visual Studio中，选择"**调试**  >  **附加到进程"或** `Ctrl` + `Alt` + `P` 。  
 
-    :::image type="complex" source="./media/attach-to-process.png" alt-text="选择附加到进程 Visual Studio" lightbox="./media/attach-to-process.png":::
+    :::image type="complex" source="./media/attach-to-process.png" alt-text="选择"附加到进程"Visual Studio" lightbox="./media/attach-to-process.png":::
        选择 **"附加到进程"Visual Studio**  
     :::image-end:::  
 
@@ -127,7 +127,7 @@ Visual Studio生成 ASP.NET 和 ASP.NET Core 应用、启动 Web 服务器、启
 
 1.  查看"可用进程"部分中Microsoft Edge打开的**选项卡**列表。  
 
-    :::image type="complex" source="./media/attach-to-process-dialog.png" alt-text="配置附加到进程对话框Visual Studio" lightbox="./media/attach-to-process-dialog.png":::
+    :::image type="complex" source="./media/attach-to-process-dialog.png" alt-text="配置"附加到进程"对话框Visual Studio" lightbox="./media/attach-to-process-dialog.png":::
        配置"**附加到进程"** 对话框Visual Studio  
     :::image-end:::  
 
@@ -141,7 +141,7 @@ Visual Studio生成 ASP.NET 和 ASP.NET Core 应用、启动 Web 服务器、启
 
 Microsoft Visual Studio和Microsoft Edge团队希望了解有关如何在 JavaScript 中Visual Studio。  若要发送反馈，请选择"发送**反馈"图标**Visual Studio或推文[@VisualStudio@EdgeDevTools。][TwitterIntentTweetViualstudioEdgdevtools]  
 
-:::image type="complex" source="./media/feedback-icon.png" alt-text="发送反馈图标Visual Studio" lightbox="./media/feedback-icon.png":::
+:::image type="complex" source="./media/feedback-icon.png" alt-text=""发送反馈"图标Visual Studio" lightbox="./media/feedback-icon.png":::
    "**发送反馈**"图标Visual Studio  
 :::image-end:::  
 

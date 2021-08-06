@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， Web 开发， html， css， javascript， developer， extensions， mv2， mv3， manifest
-ms.openlocfilehash: ac2358f8927a762dcef98f9e10cc9f343d8a93f1
-ms.sourcegitcommit: afeeeea9fccc3c4c096d7d44c401f4fe87ea2cd7
+ms.openlocfilehash: b78c79c8387705d99e2f28eb4a10b370b5006fde337f694b847290782f51fd4e
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "11599427"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803844"
 ---
 # <a name="manifest-file-format-for-extensions"></a>扩展名的清单文件格式
 
@@ -205,7 +205,7 @@ ms.locfileid: "11599427"
 > 原始页面位于 [此处](https://developer.chrome.com/docs/extensions/mv3/manifest/)。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。  
+本作品根据 [知识共享署名 4.0 国际许可 ][CCA4IL] 获得许可。  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

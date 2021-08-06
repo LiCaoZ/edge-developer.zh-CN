@@ -8,12 +8,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: 辅助功能， 开发人员辅助功能， 可访问的网站， 边缘， Web 开发， ARIA， 开发人员， UIA， UI 自动化
-ms.openlocfilehash: b03680d2112311b97912ed92ae446a74410c95bf
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+ms.openlocfilehash: 271cd960ef925ff3231fdc24c3b912b8caac3e8089d9f1725494ec704c26bbb6
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597114"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800183"
 ---
 # <a name="accessibility-testing"></a>辅助功能测试  
 
@@ -41,7 +41,7 @@ ms.locfileid: "11597114"
 
 #### [<a name="how-to-meet-wcag-20"></a>如何满足 WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref)  
 
-快速参考 Web 内容辅助功能指南 \(WCAG\) 2.0 要求 (成功) 和技术。
+快速参考 Web 内容辅助功能指南 \ (WCAG\) 2.0 要求 (成功) 和技术。
 
 #### [<a name="html5accessibility"></a>HTML5Accessibility](https://html5accessibility.com)  
 

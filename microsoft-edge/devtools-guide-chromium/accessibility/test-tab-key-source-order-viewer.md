@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 7e90221b581280a6eb63cee4d073622a80871903
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 87cb50eee00f5ad625e900d54aa03aece96f15e9bbd86eee1bad28b485f49374
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597249"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802250"
 ---
 # <a name="test-keyboard-support-using-the-source-order-viewer"></a>使用源订单查看器测试键盘支持
 
@@ -42,7 +42,7 @@ ms.locfileid: "11597249"
 
 若要打开源订单查看器，请执行以下命令：
 
-1.  在 DevTools 的右上角，选择"设置**\(设置** ![ ](../media/settings-button-icon.msft.png) \) 按钮。  
+1.  在 DevTools 的右上角，选择"设置**\ (设置** ![ ](../media/settings-button-icon.msft.png) \) 按钮。  
 
 1.  在 **"设置"** 下，选择"**实验"。**  
 
@@ -62,8 +62,8 @@ ms.locfileid: "11597249"
 
 1.  在"元素"工具的 DOM **树中，** 选择主要布局元素，如 `header` 元素。  数字覆盖现在显示在呈现的页面的各个部分，指示不同元素的源顺序。 
 
-    :::image type="complex" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="激活源顺序查看器将源中的元素顺序作为页面上的覆盖显示" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
-        激活源 **顺序查看器** 将源中的元素顺序作为页面上的覆盖显示
+    :::image type="complex" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="激活源订单查看器将源中的元素顺序显示为页面上的覆盖层" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
+        激活**源订单查看器** 将源中的元素顺序显示为页面上的覆盖层
     :::image-end:::
     
 1.  滚动页面以查看所有数字覆盖，包括页面页脚部分。

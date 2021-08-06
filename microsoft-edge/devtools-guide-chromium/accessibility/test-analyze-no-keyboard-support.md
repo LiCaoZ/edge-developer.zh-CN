@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 16ec030ed433fc24d3b2b88bfb423a2479996dfe
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: c8fb22e42d0edd8e064a06983b66e6c3c2c974b73cbab4209daee1ac2c818f58
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597291"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802545"
 ---
 # <a name="analyze-keyboard-support-on-forms-using-the-devtools"></a>使用 DevTools 分析表单上的键盘支持
 
@@ -26,7 +26,7 @@ ms.locfileid: "11597291"
 
 1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
     
-1.  选择**** DevTools 左上角的"检查 \(检查图标 \) "按钮，以便该按钮突出显示为 (![ ](../media/inspect-icon.msft.png) 蓝色) 。
+1.  选择**** DevTools 左上角的"检查 \ (检查图标 \) "按钮，以便该按钮突出显示为 (![ ](../media/inspect-icon.msft.png) 蓝色) 。
 
 1.  将鼠标悬停在 **50**个 **、100**个和 **200 个"支持** "按钮上。  The Inspect tool appears on the webpage， as an overlay.  " **检查"覆盖** 层的可键盘聚焦行显示，没有一个"支持"金额按钮可通过键盘访问，如带对角线的灰色圆圈所示。  按钮没有名称，并且具有 其角色，因为它们是元素，这意味着辅助技术无法访问 `generic` `div` 按钮。
 
@@ -65,7 +65,7 @@ ms.locfileid: "11597291"
 
 1.  选择 `buttons.js:18` 链接。  将 **打开"** 源"工具，显示应用的 JavaScript。
 
-    :::image type="complex" source="../media/a11y-testing-form-handling-javascript.msft.png" alt-text="负责提供表单功能的 JavaScript，如源工具中所示" lightbox="../media/a11y-testing-form-handling-javascript.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-form-handling-javascript.msft.png" alt-text="负责提供表单功能的 JavaScript，如"源"工具中所示" lightbox="../media/a11y-testing-form-handling-javascript.msft.png":::
         负责提供表单功能的 JavaScript，如"源"工具中所示
     :::image-end:::
 

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: badcaae0ad637fe7a027f78d00daf9133789693e
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 30465b62dd5319fe3a2751c541f69a44bbb51802c82e8d5386adb7a0f80a3153
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624743"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803795"
 ---
 # <a name="use-the-console"></a>使用控制台  
 
@@ -33,13 +33,13 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="下面板中的控制台，其上方打开元素工具" lightbox="../media/console-intro-console-panel.msft.png":::
+      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="下面板中的控制台，其上方打开"元素"工具" lightbox="../media/console-intro-console-panel.msft.png":::
          **下** 面板中的控制台，其上方打开 **"元素** "工具  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-直接打开控制台的最快方法为选择**** `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\) 。  
+直接打开控制台的最快方法为选择**** `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。  
 
 ## <a name="error-reports-and-console"></a>错误报告和控制台  
 
@@ -182,7 +182,7 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
 [DevtoolsConsoleConsoleLog]: ./console-log.md "在控制台工具控制台中记录|Microsoft Docs"  
 [DevtoolsConsoleReference]: ./reference.md "控制台参考|Microsoft Docs"  
 [DevtoolsConsoleUtilities]: ./utilities.md "控制台实用程序 API 参考|Microsoft Docs"  
-[DevtoolsIssuesIndex]: ../issues/index.md "使用问题工具查找并修复|Microsoft Docs"  
+[DevtoolsIssuesIndex]: ../issues/index.md "使用问题工具查找并修复问题 | Microsoft Docs"  
 <!-- external links -->
 [GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html "控制台消息示例：日志、信息、错误和警告|GitHub"  
 [MdnDocsWebApiWindow]: https://developer.mozilla.org/docs/Web/API/Window "窗口|MDN"  

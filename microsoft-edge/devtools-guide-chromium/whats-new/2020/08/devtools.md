@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: ec2219e9ebdd5d79c61bcaa813f7784246b1f5d0
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 02aa9cca6c1306885ff0c68331002bff4e4e05c02b81b8f4cb4143f8b69d63f0
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564943"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11804362"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -41,7 +41,7 @@ ms.locfileid: "11564943"
    将 DevTools 中的键盘快捷方式与Visual Studio Code  
 :::image-end:::  
 
-若要激活此功能，请导航到自定义开发人员工具中的Microsoft Edge[快捷方式][DevtoolsCustomizeShortcuts]。  
+若要激活此功能，请导航到在 [DevTools 中自定义键盘快捷方式][DevtoolsCustomizeShortcuts]。  
 
 例如，用于暂停或继续运行脚本的键盘快捷方式在 Visual Studio Code[为][VisualStudioCodeShortcutsKeyboardWindows] `F5` 。  使用**DevTools (Default) **预设，DevTools 中的同一快捷方式是 ，但在选择 Visual Studio Code 预设时，该快捷方式现在也是 `F8` **** `F5` 。  
 
@@ -173,7 +173,7 @@ The current effort to improve translation quality enables easier support for mor
 
 感谢你发送反馈并帮助改进Chromium。  您的反馈发现了开放[#1103316][CR1103316]中的问题Chromium问题。  
 
-:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="在 84 或更高版本的元素Microsoft Edge突出显示第一个搜索结果" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
+:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="在 84 或更高版本的"元素"Microsoft Edge突出显示第一个搜索结果" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
    在 84 或更高版本中的 **"** 元素"Microsoft Edge突出显示第一个搜索结果  
 :::image-end:::  
 
@@ -191,7 +191,7 @@ DevTools 现在在 [Media][DevtoolsMediaPanelIndex] 工具中显示媒体播放�
 
 若要打开新的 **媒体工具** ，请完成以下步骤。  
 
-1.  Choose **Customize and control DevTools** \(`...` \) > More **tools**  >  **Media**.  
+1.  Choose **Customize and control DevTools** \ (`...` \) > More **tools**  >  **Media**.  
     
     :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="新媒体工具" lightbox="../../media/2020/08/media-panel.msft.png":::
        新 **媒体** 工具  
@@ -208,7 +208,7 @@ DevTools 现在在 [Media][DevtoolsMediaPanelIndex] 工具中显示媒体播放�
 
 现在，可以使用"元素"工具中的上下文菜单捕获 **节点屏幕截图** 。  
 
-例如，若要获取目录的屏幕截图，请将鼠标悬停在 元素上，打开上下文菜单 \(右键单击\) ，然后选择捕获 **节点屏幕截图**。  
+例如，若要获取目录的屏幕截图，请将鼠标悬停在 元素上，打开上下文菜单 \ (右键单击\) ，然后选择捕获 **节点屏幕截图**。  
 
 :::image type="complex" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="捕获节点屏幕截图" lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
    捕获节点屏幕截图  
@@ -232,7 +232,7 @@ Chromium问题[：#1100253][CR1100253]
    第三方 Cookie 问题复选框  
 :::image-end:::  
 
-Chromium问题： [1096481][CR1096481]、 [1068116][CR1068116]、 [1080589][CR1080589]  
+Chromium问题[：1096481、1068116、1080589][CR1096481] [][CR1068116] [][CR1080589]  
 
 ### <a name="emulate-missing-local-fonts"></a>模拟缺少的本地字体  
 
@@ -293,7 +293,7 @@ DevTools 现在更好地支持以下 JavaScript 语言功能。
 | [逻辑赋值运算符][V8FeaturesLogicalAssignment] | DevTools 现在支持使用控制台和源工具中的新 、 和 运算符 `&&=` `||=` `??=` 进行逻辑分配。 **** ****  |  
 | 彩色数字 [分隔符][V8FeaturesNumericSeparators] | DevTools 现在在"源"工具中正确打印数字 **分隔** 符。  |  
 
-Chromium问题[：1086817][CR1086817] [、1080569][CR1080569]  
+Chromium问题[：1086817、1080569][CR1086817] [][CR1080569]  
 
 ### <a name="lighthouse-62-in-the-lighthouse-panel"></a>Lighthouse 面板中的 Lighthouse 6.2  
 
@@ -303,7 +303,7 @@ Chromium问题[：#772558][CR772558]
 
 ### <a name="deprecation-of-other-origins-listing-in-the-service-workers-pane"></a>在"服务工作者"窗格中弃用其他源列表  
 
-DevTools 现在提供来自服务工作者**** 窗格 \(**应用程序**工具 >**服务**工作者窗格\) 的链接，以查看来自其他源的服务工作者的完整列表。  若要在不打开 DevTools 的情况下访问列表，请导航到 `edge://service-worker-internals/?devtools` 。  
+DevTools 现在提供来自服务工作者**** 窗格 \ (**应用程序**工具 >**服务**工作者窗格\) 的链接，以查看来自其他源的服务工作者的完整列表。  若要在不打开 DevTools 的情况下访问列表，请导航到 `edge://service-worker-internals/?devtools` 。  
 
 以前，DevTools 显示一个嵌套在****"应用程序工具""服务>**窗格下**的列表。  
 
@@ -384,7 +384,7 @@ Chromium问题[：#1093227][CR1093227]
 
 " **属性** "窗格已返回。  它在[84 Microsoft Edge弃用][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]。  开发人员Microsoft Edge团队和 Chrome DevTools 团队正在计划对检查元素属性的改进。  
 
-:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="元素面板中的属性窗格" lightbox="../../media/2020/08/properties-pane.msft.png":::
+:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text=""元素"面板中的"属性"窗格" lightbox="../../media/2020/08/properties-pane.msft.png":::
    **"** 元素"工具 **中的"属性"** 窗格  
 :::image-end:::  
 
@@ -418,7 +418,7 @@ Chromium问题：[#1106221][CR1106221]
 
 #### <a name="consistently-display-resource-type-in-network-panel"></a>在网络面板中一致地显示资源类型  
 
-DevTools 现在一致地显示与原始网络请求相同的资源类型，当重定向 \(HTTP 状态代码 `/ Redirect` 为 302\) 时追加到 Type 列值。 ****  
+DevTools 现在一致地显示与原始网络请求相同的资源类型，当重定向 \ (HTTP 状态代码 `/ Redirect` 为 302\) 时追加到 Type 列值。 ****  
 
 以前，DevTools 有时将类型 `Other` 更改为 。  
 
@@ -439,7 +439,7 @@ Chromium问题[：#997694][CR997694]
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="元素面板中的清除按钮" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
+      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text=""元素"面板中的"清除"按钮" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
          "元素"工具中的 **"清除"** 按钮  
       :::image-end:::  
    :::column-end:::
@@ -469,8 +469,8 @@ Chromium问题[：#1067184][CR1067184]
 [DevtoolsCoverageIndex]: ../../../coverage/index.md "使用 DevTools Microsoft Edge中的&quot;覆盖&quot;选项卡查找未使用的 JavaScript 和 CSS |Microsoft Docs"  
 [DevtoolsCssGrid]: ../../../css/grid.md "检查 Microsoft Edge DevTools 中的 CSS 网格 | Microsoft Docs"  
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "设置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "自定义 Microsoft Edge DevTools 中的键盘快捷方式 | Microsoft Docs"  
-[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "在 DevTools |Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "在 Microsoft Edge 开发人员工具中模拟移动设备 | Microsoft Docs"  
 [DevtoolsDeviceModeDualScreenAndFoldables]: ../../../device-mode/dual-screen-and-foldables.md "在 DevTools Microsoft Edge中模拟双屏幕和可折叠|Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool "使用呈现工具分析呈现性能 - 性能分析|Microsoft Docs"  
 <!--  [DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features/index.md#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"  -->  

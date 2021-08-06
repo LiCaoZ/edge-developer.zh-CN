@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 51b7aa5119775f43861a84c1055ac9149a626d8a
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 0ac6cbe40d3bf52cfcde76554b90bc1926f555c4c031c595ce5f42c171ae8a82
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483119"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11801233"
 ---
 # <a name="monitor-changes-in-javascript-using-live-expressions"></a>使用 Live Expressions 监视 JavaScript 中的更改  
 
@@ -20,9 +20,9 @@ ms.locfileid: "11483119"
 
 ## <a name="add-a-new-live-expression"></a>添加新实时表达式  
 
-To start， choose the **Create live expression** \(eye\) button next to the **Filter** textbox.  选择它后，将显示一个文本框，供您在文本框中输入新表达式。  
+To start， choose the **Create live expression** \ (eye\) button next to the **Filter** textbox.  选择它后，将显示一个文本框，供您在文本框中输入新表达式。  
 
-:::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="选择新建实时表达式按钮以打开文本框以键入表达式" lightbox="../media/console-live-expressions-new.msft.png":::
+:::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="选择"新建实时表达式"按钮以打开文本框以键入表达式" lightbox="../media/console-live-expressions-new.msft.png":::
     选择 `New live expression` 按钮以打开文本框以键入表达式  
 :::image-end:::  
 

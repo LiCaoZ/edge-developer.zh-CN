@@ -148,6 +148,8 @@ additionalContent:
               url: /microsoft-edge/extensions-chromium/publish/publish-extension
             - text: 打开开发人员帐户
               url: /microsoft-edge/extensions-chromium/publish/create-dev-account
+            - text: 添加和管理用户
+              url: /microsoft-edge/extensions-chromium/publish/aad-account.md
             - text: 更新扩展列表
               url: /microsoft-edge/extensions-chromium/publish/update
             - text: 管理帐户设置
@@ -202,7 +204,7 @@ additionalContent:
       items:
         - title: 参考
           links:
-            - text: 如何检测Microsoft Edge网站中的内容
+            - text: 如何检测网站中的 Microsoft Edge
               url: /microsoft-edge/web-platform/user-agent-guidance
             - text: 平台状态
               url: 'https://developer.microsoft.com/microsoft-edge/platform/status'

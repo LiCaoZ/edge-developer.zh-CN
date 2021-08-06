@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: bc629286530e709bef0e04a671f1a0e56eee48ea
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 33abe417d0b06cfab78db4577a4409e321ee580701956949d021248e06491e9f
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564446"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11805078"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -33,17 +33,17 @@ ms.locfileid: "11564446"
 
 ## <a name="open-css-examples"></a>Open CSS 示例  
 
-1.  保留 `Control` \(Windows、Linux\) 或 `Command` \(macOS\) 并选择 **"CSS**示例"以在新窗口中打开。  
+1.  保留 `Control` \ (Windows、Linux\) 或 `Command` \ (macOS\) 并选择 **"CSS**示例"以在新窗口中打开。  
     
     [CSS 示例][GlitchDevToolsCssExamples]  
     
     > [!NOTE]
-    > 如果你想要将[DevTools][DevToolsCustomizePlacement]窗口停靠在下图\(中显示的视口 \) ，请选择"自定义和控制**DevTools"。** `...`  在"**自定义和控制 DevTools"** 下拉菜单上的"扩展坞**侧**"部分中，选择"扩展**坞"以向右。**  
+    > 如果你想要将[DevTools][DevToolsCustomizePlacement]窗口停靠在下图\ (中显示的视口 \) ，请选择"自定义和控制**DevTools"。** `...`  在"**自定义和控制 DevTools"** 下拉菜单上的"扩展坞**侧**"部分中，选择"扩展**坞"以向右。**  
     
 ## <a name="view-the-css-for-an-element"></a>查看元素的 CSS  
 
 1.  [打开 CSS 示例](#open-css-examples)。  
-1.  将鼠标悬停在 `Inspect Me!` 文本上，打开上下文菜单 \(右键单击\) ，然后选择"检查 **"。**  
+1.  将鼠标悬停在 `Inspect Me!` 文本上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**  
     1.  在 DevTools 中，在 **"元素** "工具的 **"DOM 树** "面板中， `Inspect Me!` 元素突出显示。  
         
         :::image type="complex" source="../media/css-elements-inspect-me.msft.png" alt-text="检查的元素在 DOM 树中突出显示" lightbox="../media/css-elements-inspect-me.msft.png":::
@@ -52,7 +52,7 @@ ms.locfileid: "11564446"
         
     1.  在 `Inspect Me!` 元素中，找到 属性的值 `data-message` 并复制它。  
 1.  在页面上的" **值 `data-message` ** "文本框中，输入值。  
-1.  将鼠标悬停在 `Inspect Me!` 文本上，打开上下文菜单 \(右键单击\) ，然后选择"检查 **"。**  
+1.  将鼠标悬停在 `Inspect Me!` 文本上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**  
     1.  在 DevTools 中的" **元素** "工具上，选择 **"样式"** 面板。  
     1.  在 **"样式"** 面板中， `Inspect Me!` 元素突出显示。  
     1.  在 `Inspect Me!` 元素中，查找 `aloha` 类规则。  
@@ -62,7 +62,7 @@ ms.locfileid: "11564446"
         
     1.  在 `aloha` 类中，查找样式的值 `padding` 并复制它。  
         
-        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="CSS 类应用于检查的元素在样式面板中突出显示" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
+        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="CSS 类应用于检查的元素在"样式"面板中突出显示" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
            CSS 类应用于选定的元素，例如 ， `aloha` 显示在" **样式"** 面板中  
         :::image-end:::  
         
@@ -76,12 +76,12 @@ ms.locfileid: "11564446"
 > 完成 [查看元素的 CSS](#view-the-css-for-an-element) 教程，然后再执行此操作。  
 
 1.  [打开 CSS 示例](#open-css-examples)。  
-1.  将鼠标悬停在 `Add A Background Color To Me!` 文本上，打开上下文菜单 \(右键单击\) ，然后选择"检查 **"。**  
+1.  将鼠标悬停在 `Add A Background Color To Me!` 文本上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**  
 1.  选择 `element.style` "样式"面板 **顶部** 附近的选项。  
 1.  键入 `background-color` 并选择 `Enter`。  
 1.  键入 `honeydew` 并选择 `Enter`。  在 **DOM 树中**，将显示应用于元素的内联样式声明。  
     
-    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="使用样式面板向 元素添加 CSS 声明" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
+    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="使用"样式"面板向 元素添加 CSS 声明" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
        使用 `background-color:honeydew` "样式"面板的 部分 `element.style` 将声明 **应用于** 元素  
     :::image-end:::  
     
@@ -93,7 +93,7 @@ ms.locfileid: "11564446"
 > 完成 [查看元素的 CSS](#view-the-css-for-an-element) 教程，然后再执行此操作。  
 
 1.  [打开 CSS 示例](#open-css-examples)。  
-1.  将鼠标悬停在 `Add A Class To Me!` 文本上，打开上下文菜单 \(右键单击\) ，然后选择"检查 **"。**  
+1.  将鼠标悬停在 `Add A Class To Me!` 文本上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**  
 1.  选择 **.cls**。  DevTools 显示一个文本框，你可以将类添加到所选元素。  
 1.  在 `color_me` "添加新 **类"** 文本框中键入 ，然后选择 `Enter` 。  "添加新 **类"文本框** 下方将出现一个复选框，可在其中打开和关闭该类。  如果 `Add A Class To Me!` 元素应用了任何其他类，则还可以在此处切换每个类。  
     
@@ -110,7 +110,7 @@ ms.locfileid: "11564446"
 
 1.  [打开 CSS 示例](#open-css-examples)。  
 1.  将鼠标悬停在 `Hover Over Me!` 文本上。  背景色更改。  
-1.  将鼠标悬停在 `Hover Over Me!` 文本上，打开上下文菜单 \(右键单击\) ，然后选择"检查 **"。**  
+1.  将鼠标悬停在 `Hover Over Me!` 文本上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**  
 1.  在"**样式"** 面板中，选择 **"：hov"。**  
 1.  选中 **"：hover"** 复选框。  背景颜色会像以前一样更改，即使你实际上并未将鼠标悬停在元素上。  
     
@@ -126,7 +126,7 @@ ms.locfileid: "11564446"
 > 完成 [查看元素的 CSS](#view-the-css-for-an-element) 教程，然后再执行此操作。  
 
 1.  [打开 CSS 示例](#open-css-examples)。  
-1.  将鼠标悬停在 `Change My Margin!` 文本上，打开上下文菜单 \(右键单击\) ，然后选择"检查 **"。**  
+1.  将鼠标悬停在 `Change My Margin!` 文本上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**  
 1.  在" **样式"** 面板的"方框模型 **"** 图表中，将鼠标悬停在 **填充上**。  元素的填充在视口中突出显示。  
 
     > [!NOTE]
@@ -154,7 +154,7 @@ ms.locfileid: "11564446"
 
 如果要调试或测试在 CSS 中定义的媒体查询，请使用以下步骤。  
 
-1.  打开开发人员工具并选择左上方第**** 二个"切换设备"工具栏图标，或在 `Ctrl` + `Shift` + `M` `Cmd` + `Shift` + `M` macOS\(选择 \) 。  
+1.  打开开发人员工具并选择左上方第**** 二个"切换设备"工具栏图标，或在 `Ctrl` + `Shift` + `M` `Cmd` + `Shift` + `M` macOS\ (选择 \) 。  
     
     :::image type="complex" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="打开设备工具栏" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
        打开设备工具栏  
@@ -172,7 +172,7 @@ ms.locfileid: "11564446"
        从预览栏中选择媒体查询  
     :::image-end:::  
     
-1.  若要调试媒体查询，并打开编辑器中的 CSS 文件;将鼠标悬停在任何栏分段上，打开上下文菜单 `Sources` \(右键单击\) ，然后选择 `reveal in source code` 。  
+1.  若要调试媒体查询，并打开编辑器中的 CSS 文件;将鼠标悬停在任何栏分段上，打开上下文菜单 `Sources` \ (右键单击\) ，然后选择 `reveal in source code` 。  
     
     :::image type="complex" source="../media/css-elements-media-queries-reveal-in-sources.msft.png" alt-text="在源编辑器中显示媒体查询" lightbox="../media/css-elements-media-queries-reveal-in-sources.msft.png":::
        在源编辑器中显示媒体查询  
@@ -184,7 +184,7 @@ ms.locfileid: "11564446"
 
 <!-- links -->  
 
-[ DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement  "更改 Microsoft Edge 开发人员工具的放置位置（取消停靠、停靠至底部、停靠至左）"   
+[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "将 DevTools 放置 (Undock、Dock 更改为 Bottom、Dock to Left) "  
 
 [GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "CSS 示例 - Microsoft Edge (Chromium) DevTools |小故障"  
 

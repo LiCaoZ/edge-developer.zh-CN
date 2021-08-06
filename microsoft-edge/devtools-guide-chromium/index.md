@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 78603c51dab5a61f8d6b43e60a3f252eac665d99
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
-ms.translationtype: HT
+ms.openlocfilehash: 3b58447e137b5bff786c75ce248f37c6f503f7b7545b26931a77477e3c440d84
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624757"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11804930"
 ---
 # <a name="microsoft-edge-chromium-developer-tools-overview"></a>Microsoft Edge （Chromium） 开发人员工具概述  
 
@@ -45,7 +45,7 @@ ms.locfileid: "11624757"
     
 :::row:::  
    :::column span="":::  
-      :::image type="complex" source="./media/devtools-intro-inspect.msft.png" alt-text="从任何元素上的上下文菜单中选择检查" lightbox="./media/devtools-intro-inspect.msft.png":::  
+      :::image type="complex" source="./media/devtools-intro-inspect.msft.png" alt-text="从任何元素上的上下文菜单中选择"检查"" lightbox="./media/devtools-intro-inspect.msft.png":::  
          从 **任何元素** 上的上下文菜单中选择"检查"  
       :::image-end:::  
    :::column-end:::  
@@ -67,7 +67,7 @@ ms.locfileid: "11624757"
 1.  选择" **自定义和控制 DevTools** \ (`...` \) "按钮。  
 1.  在相对于页面 \ (**扩展**坞端 \) 的**DevTools**的右侧，选择"扩展**坞端**"选项。  
     
-有关详细信息，请导航到"更改 Microsoft Edge DevTools [位置（"取消停靠"，"停靠到底部"，"停靠到左侧"）][DevtoolsGuideCustomizePlacement]。  
+有关详细信息，请导航到"将[DevTools 放置 (Undock、Dock To Bottom、Dock To Left) 。 ][DevtoolsGuideCustomizePlacement]  
 
 :::image type="complex" source="./media/devtools-intro-docking-menu.msft.png" alt-text="DevTools 中扩展坞侧菜单的屏幕截图" lightbox="./media/devtools-intro-docking-menu.msft.png":::  
    DevTools 中扩展坞侧菜单的屏幕截图  
@@ -93,12 +93,12 @@ ms.locfileid: "11624757"
 :::row-end:::  
 :::row:::  
    :::column span="":::  
-      :::image type="complex" source="media/devtools-intro-docking-right.msft.png" alt-text="选择扩展坞到右侧" lightbox="media/devtools-intro-docking-right.msft.png":::  
+      :::image type="complex" source="media/devtools-intro-docking-right.msft.png" alt-text="选择"扩展坞到右侧"" lightbox="media/devtools-intro-docking-right.msft.png":::  
          选择 **"扩展坞到右侧"**  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::  
-      :::image type="complex" source="media/devtools-intro-docking-own-window.msft.png" alt-text="选择取消停靠到单独的窗口" lightbox="media/devtools-intro-docking-own-window.msft.png":::  
+      :::image type="complex" source="media/devtools-intro-docking-own-window.msft.png" alt-text="选择"取消停靠到单独的窗口"" lightbox="media/devtools-intro-docking-own-window.msft.png":::  
          选择 **停靠到单独的窗口位置**  
       :::image-end:::  
    :::column-end:::  
@@ -160,7 +160,7 @@ DevTools 中命令菜单的屏幕截图
       :::image-end:::  
    :::column-end:::  
    :::column span="":::  
-      :::image type="complex" source="./media/devtools-intro-showing-changes.msft.png" alt-text="打开更改工具的 DevTools" lightbox="./media/devtools-intro-showing-changes.msft.png":::  
+      :::image type="complex" source="./media/devtools-intro-showing-changes.msft.png" alt-text="打开"更改"工具的 DevTools" lightbox="./media/devtools-intro-showing-changes.msft.png":::  
          打开"开发工具 **更改** 工具的 DevTools  
       :::image-end:::  
    :::column-end:::  
@@ -214,7 +214,7 @@ DevTools 团队在 DevTools 中提供新功能作为实验。  若要获取完�
 [DevtoolsGuideBeginnersHtml]: ./beginners/html.md "适合初学者的 DevTools：HTML 和 DOM |Microsoft Docs"  
 [DevtoolsGuideCommandMenuIndex]: ./command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"  
 [DevtoolsGuideConsoleIndex]: ./console/index.md "控制台概述 | Microsoft Docs"  
-[DevtoolsGuideCustomizePlacement]: ./customize/placement.md "更改 Microsoft Edge DevTools 位置（撤消停靠、停靠到底部、停靠到左侧）|Microsoft Docs"  
+[DevtoolsGuideCustomizePlacement]: ./customize/placement.md "Change DevTools placement (Undock， Dock To Bottom， Dock To Left) |Microsoft Docs"  
 [DevtoolsGuideDeviceModeIndex]: ./device-mode/index.md "在 Microsoft Edge 开发人员工具中模拟移动设备 | Microsoft Docs"  
 [DevtoolsGuideDomIndex]: ./dom/index.md "查看和更改 CSS 入门 | Microsoft 文档 | Microsoft Docs"  
 [DevtoolsGuideEvaluatePerformanceIndex]: ./evaluate-performance/index.md "开始分析运行时性能|Microsoft Docs"  

@@ -7,13 +7,13 @@ ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， Windows， UWP， Microsoft Store
-ms.openlocfilehash: 6b6031aac10161c16195c83496f8d8b5b842628e
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+keywords: 渐进式 Web 应用、PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
+ms.openlocfilehash: f60a43a06001e70db232685822105fe60b2334ac96dd89ea006647fa5e4d72d2
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398075"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11808282"
 ---
 # <a name="offline-and-network-connectivity-support-in-progressive-web-apps"></a>渐进式 Web 应用中的脱机和网络连接支持
 
@@ -78,11 +78,11 @@ self.addEventListener( "fetch", event => {
 });
 ```  
 
-只要浏览器对此网站提出请求，代码段就会在服务 `fetch` 工作器中运行。 在该事件中，有一个条件语句在请求针对 HTML 文件时运行。 服务工作线程使用 方法\(检查该文件是否位于任何缓存 `match()` \) 。 如果缓存中存在该请求，则返回缓存的结果。 如果没有，则运行该资源的新增内容，缓存响应副本供以后 `fetch` 使用，并返回响应。 如果 `fetch` 由于网络不可用而失败，则从缓存中返回脱机页面。
+只要浏览器对此网站提出请求，代码段就会在服务 `fetch` 工作器中运行。 在该事件中，有一个条件语句在请求针对 HTML 文件时运行。 服务工作线程使用 方法\ (检查该文件是否位于任何缓存 `match()` \) 。 如果缓存中存在该请求，则返回缓存的结果。 如果没有，则运行该资源的新增内容，缓存响应副本供以后 `fetch` 使用，并返回响应。 如果 `fetch` 由于网络不可用而失败，则从缓存中返回脱机页面。
 
-此简单介绍演示如何在 PWA 应用程序中使用渐进 (缓存) 。 每个 PWA 是不同的，并且可能使用不同的缓存策略。 代码看起来可能有所不同，并且你可能对同一应用程序中的不同路由使用不同的缓存策略。
+此简单介绍演示如何在渐进式 Web 应用中使用 (PWA) 。 每个PWA不同，可能使用不同的缓存策略。 代码看起来可能有所不同，并且你可能对同一应用程序中的不同路由使用不同的缓存策略。
 
-## <a name="use-indexeddb-in-your-pwa-to-store-structured-data"></a>在 PWA 中使用 IndexedDB 存储结构化数据
+## <a name="use-indexeddb-in-your-pwa-to-store-structured-data"></a>在数据存储区中PWA IndexedDB 存储结构化数据
 
 `IndexedDB` 是存储结构化数据的 API。 与 API 类似，它也是异步的，这意味着您可以在主线程中或 Web 工作线程（如服务工作线程） `Cache` 中使用它。 使用 API 在客户端上存储大量结构化数据或二进制数据，如 `IndexedDB` 加密媒体对象。 有关详细信息，请导航到[使用 IndexedDB 上的 MDN 开始。][MDNIndexeddbApiUsing]
 
@@ -91,7 +91,7 @@ self.addEventListener( "fetch", event => {
 有时，你可能需要存储少量数据，以便为用户提供更好的脱机体验。 如果是这样，你可能会发现 Web 存储的键值对系统的简单性满足您的需求。  
 
 > [!IMPORTANT]
-> Web 存储是一个同步进程，在工作线程（如服务工作线程）中不可用。 大量使用可能会给应用程序造成性能问题。 
+> Web 存储是一个同步进程，不能用于工作线程（如服务工作线程）。 大量使用可能会给应用程序造成性能问题。 
 
 
 有两种类型的 Web 存储： `localStorage` 和 `sessionStorage` 。 每个数据都作为单独的数据存储进行维护，与创建它的域隔离。 `sessionStorage` 仅在浏览会话期间保留 (例如，浏览器打开时（包括刷新和还原) ）。 `localStorage` 将一直保留，直到代码、用户或浏览器删除数据 (例如，当可用存储空间有限时) 。 下面的代码段演示如何使用 `localStorage` ，这类似于如何使用 `sessionStorage` 。
@@ -132,7 +132,7 @@ function insertOfflineLink( request ) {
 
 `insertOfflineLink()`方法将请求的 URL 传递给 `localStorage.getItem()` 方法以检索任何存储的元数据。 检查检索到的数据，以查看数据是否存在，如果数据存在，可以针对数据采取操作，例如生成和插入标记以显示数据。
 
-## <a name="test-for-network-connections-in-your-pwa"></a>在 PWA 中测试网络连接
+## <a name="test-for-network-connections-in-your-pwa"></a>在客户端中测试PWA
 
 除了存储信息以便脱机使用之外，了解网络连接何时可用，以便同步数据或通知用户网络状态已更改也很有用。 使用以下选项测试网络连接。
 
@@ -157,13 +157,13 @@ window.addEventListener("offline", function(){
 
 若要了解有关管理脱机方案的信息，请导航到以下页面。  
 
-*   [缓存][MDNCache]  
+*   [高速缓存][MDNCache]  
 *   [IndexedDB][MDNIndexeddbApi]  
 *   [服务工作线程][MDNServiceWorker]  
 *   [Web 存储][MDNWebStorageApi]  
 *   [navigator.onLine][MDNNavigatoronline]  
 *   [联机和脱机事件][MDNNavigatoronlineOfflineEvents]  
-*   [具有意图的请求：在 PBA 时代缓存策略][AlistapartRequestIntentCachingStrategiesAgePwas]
+*   [具有意图的请求：Caching PBA 时代的策略][AlistapartRequestIntentCachingStrategiesAgePwas]
     
 <!-- links -->  
 
@@ -177,4 +177,4 @@ window.addEventListener("offline", function(){
 
 [AbookapartGoingOffline]: https://abookapart.com/products/going-offline "由一位用户为&quot;Offliney Keith&quot;|一本书分开"  
 
-[AlistapartRequestIntentCachingStrategiesAgePwas]: https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas "具有意图的请求：Aaron Gustafson |列表分开"  
+[AlistapartRequestIntentCachingStrategiesAgePwas]: https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas "具有意图的请求：Caching Aaron Gustafson |列表分开"  

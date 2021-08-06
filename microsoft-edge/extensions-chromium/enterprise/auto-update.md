@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: ff6335a9d2eda8a8d66e0fd9df36cf47aaf21179
-ms.sourcegitcommit: d44dc9f230e8075efc08a62ff83e2bf2c6851776
+ms.openlocfilehash: 81b354c73902f79212274c3d7190054dba3525ebfe549bc046503a07df53fab8
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "11710436"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807477"
 ---
 <!-- Copyright A. W. Fuchs
 

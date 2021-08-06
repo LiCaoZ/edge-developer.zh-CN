@@ -7,12 +7,12 @@ ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 2249462b0a2dac86efa4b775171e2a3229a34431
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: 7deadd3ff21bc06574f1e6006e60af01f16ce55a0375f27a453cf998b3818c72
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461218"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803312"
 ---
 # <a name="publish-and-update-extensions-in-the-microsoft-edge-add-ons-store"></a>发布和更新加载项Microsoft Edge加载项存储中的扩展  
 
@@ -20,7 +20,7 @@ ms.locfileid: "11461218"
 
 ## <a name="publish-options-for-extensions"></a>发布扩展选项  
 
-所有扩展名都作为一个特殊的存档 \(`.zip` \) 文件作为后缀分发给 `.crx` 用户。  发布到加载项Microsoft Edge扩展作为文件 `.zip` 上载。  发布过程会自动将文件 `.zip` 转换为 `.crx` 文件。  
+所有扩展名都作为一个特殊的存档 \ (`.zip` \) 文件作为后缀分发给 `.crx` 用户。  发布到加载项Microsoft Edge扩展作为文件 `.zip` 上载。  发布过程会自动将文件 `.zip` 转换为 `.crx` 文件。  
 
 以下两种方案不需要你在加载项应用商店中Microsoft Edge扩展。  
 

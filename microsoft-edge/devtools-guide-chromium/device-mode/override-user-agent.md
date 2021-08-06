@@ -7,12 +7,12 @@ ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 06ec6905b11d01ec0e7c03fb8c4c9c843923a881
-ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
+ms.openlocfilehash: e25c980d4739477657c73d133a2479055927f3cb48477b2515d549a9b4ff7d8f
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "11710702"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11808933"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -40,7 +40,7 @@ ms.locfileid: "11710702"
 1. 键入 `network conditions` ，选择 **"显示网络条件**"，然后选择 `Enter` 以打开 **"网络条件"** 工具。  
 1. 在" **用户代理"** 部分，清除" **使用浏览器默认"** 复选框。  
     
-    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="关闭自动选择" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
+    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="关闭"自动选择"" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
        清除 **"使用浏览器默认复选框** " :::image-end:::  
     
 1. 从下拉列表中选择用户代理或输入自定义用户代理。

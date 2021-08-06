@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 48151e16a9059b5ebaadca36f29447d4ad3be8c7
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 490f38474380e7c6c8870cf5a6a83e44f5bfb645142c7aedd110529e97ed3675
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597248"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802322"
 ---
 # <a name="check-for-keyboard-support-by-using-the-tab-and-enter-keys"></a>使用 Tab 和 Enter 键检查键盘支持
 
@@ -34,7 +34,7 @@ ms.locfileid: "11597248"
 
 1.  再次 `Tab` 选择。  您重点关注的下一个元素是网页部分中的第一个 **"** 更多"链接， `content` 如大纲所指示。
     
-    :::image type="complex" source="../media/a11y-testing-keyboard-focus-on-element.msft.png" alt-text="使用键盘和 Tab 键导航文档。 焦点显示在文档中的链接上。" lightbox="../media/a11y-testing-keyboard-focus-on-element.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-keyboard-focus-on-element.msft.png" alt-text="使用键盘和"Tab"键导航文档。 焦点显示在文档中的链接上。" lightbox="../media/a11y-testing-keyboard-focus-on-element.msft.png":::
         使用键盘和 Tab 键导航文档。 焦点显示在文档中的链接上。
     :::image-end:::
     

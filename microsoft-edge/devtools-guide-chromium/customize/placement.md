@@ -1,18 +1,18 @@
 ---
 description: 如何将 Microsoft Edge DevTools 移动到视区底部或左侧或单独的窗口。
-title: '将Microsoft Edge DevTools 放置 (Undock，将扩展坞更改为底部，将扩展坞更改为左侧) '
+title: '将 DevTools 放置 (Undock，将扩展坞更改为底部，将扩展坞更改为左侧) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 3c6dbf3e4a72b793997fcbe0970c88e4bee07caf
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: ff28f8ed79998a929811e99cbe788f2b71131aa4503e13b97f33655a164a4ed9
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564362"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800731"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,9 +27,9 @@ ms.locfileid: "11564362"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>将Microsoft Edge DevTools 放置 (Undock，将扩展坞更改为底部，将扩展坞更改为左侧)   
+# <a name="change-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>将 DevTools 放置 (Undock，将扩展坞更改为底部，将扩展坞更改为左侧)   
 
-默认情况下，DevTools 固定在视口窗口 (右侧) 。  还可以将 DevTools 停靠在窗口底部或左侧，或者将 DevTools 停靠到单独的窗口。
+默认情况下，Microsoft Edge DevTools 固定在视口窗口 (右侧) 。  还可以将 DevTools 停靠在窗口底部或左侧，或者将 DevTools 停靠到单独的窗口。
 
 :::row:::
    :::column span="":::
@@ -41,7 +41,7 @@ ms.locfileid: "11564362"
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="选择扩展坞向左" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="选择"扩展坞"向左" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
          选择 **"扩展坞"向左**  
       :::image-end:::  
    :::column-end:::
@@ -77,7 +77,7 @@ DevTools 可能会撤消停靠到单独的窗口，你可以移到单独的监�
 
 ## <a name="change-placement-from-the-main-menu"></a>从主菜单更改位置  
 
-1.  选择"自定义和控制**DevTools** \(\) "，然后选择"撤消停靠到单独的窗口 `...` \(**** Undock \) "，"扩展坞到底部 \(扩展坞"到底部 \) ，或"扩展坞向左 \(扩展坞"向左 ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png) \) 。  
+1.  选择"自定义和控制**DevTools** \ (\) "，然后选择"撤消停靠到单独的窗口 `...` \ (**** Undock \) "，"扩展坞到底部 \ (扩展坞"到底部 \) ，或"扩展坞向左 \ (扩展坞"向左 ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png) \) 。  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="选择取消停靠到单独的窗口" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
        选择 **停靠到单独的窗口位置**  

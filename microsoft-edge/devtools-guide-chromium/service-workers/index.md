@@ -7,12 +7,12 @@ ms.date: 02/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， 服务工作者， PWA
-ms.openlocfilehash: c00b7c7fd18d4bb3d413369ec1464c0cb0255311
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+ms.openlocfilehash: 9a7f2f47116151ceb96853e429f84dfebd212bd5f08cde13a7ab157a798a403f
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597140"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803343"
 ---
 # <a name="service-worker-improvements"></a>服务工作者改进  
 
@@ -60,7 +60,7 @@ ms.locfileid: "11597140"
    应用程序视图  
 :::image-end:::  
 
-### <a name="service-worker-update-timeline"></a>服务工作者更新时间线  
+### <a name="service-worker-update-timeline"></a>服务工作进程更新日程表  
 
 开发人员Microsoft Edge开发人员工具团队在应用程序工具中添加了时间线，以反映服务工作者**** 的更新生命周期。  它显示安装和激活事件。  每个事件都有相应的下拉箭头，可为您提供更多详细信息。  
 

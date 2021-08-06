@@ -7,12 +7,12 @@ ms.date: 07/30/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， vs code， visual studio code， Microsoft Edge 开发人员工具， Microsoft Edge 开发人员工具扩展
-ms.openlocfilehash: 76b3b5a085088997e9df8089dbfcbad2960cc3df
-ms.sourcegitcommit: 97bc637bb12ee527df5bdc7a8892a07aec387ba1
+ms.openlocfilehash: 223e13ab943e6c9344c8d72bd08115d93c13254ad70fed07f7b09bf8286e1485
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "11722858"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11805853"
 ---
 # <a name="microsoft-edge-developer-tools-for-visual-studio-code-extension"></a>Microsoft Edge开发人员工具Visual Studio Code扩展  
 
@@ -44,7 +44,7 @@ the Microsoft Edge Developer Tools for Visual Studio Code extension allows you t
 
 选择 **"启动实例**"将在浏览器中打开浏览器窗口和Visual Studio Code。   
 
-:::image type="complex" source="./media/edge-devtools-for-vscode-launch-instance.png" alt-text="选择启动实例以在浏览器中打开Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-launch-instance.png":::
+:::image type="complex" source="./media/edge-devtools-for-vscode-launch-instance.png" alt-text="选择"启动实例"以在浏览器中打开Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-launch-instance.png":::
    选择"启动实例"以在浏览器中打开Visual Studio Code  
 :::image-end:::
 
@@ -93,7 +93,7 @@ the Microsoft Edge Developer Tools for Visual Studio Code extension allows you t
 
     The Microsoft Edge Tools： Targets panel now displays two buttons： **Launch Instance** and Generate **launch.json**.
 
-    :::image type="complex" source="./media/edge-devtools-for-vscode-targets-buttons.png" alt-text="Microsoft Edge工具：目标面板显示启动实例和launch.js按钮上的生成实例" lightbox="./media/edge-devtools-for-vscode-targets-buttons.png":::
+    :::image type="complex" source="./media/edge-devtools-for-vscode-targets-buttons.png" alt-text="Microsoft Edge工具：目标面板显示"启动实例"和launch.js按钮上的"生成实例"" lightbox="./media/edge-devtools-for-vscode-targets-buttons.png":::
        Microsoft Edge工具：目标面板显示"启动实例"和launch.js按钮上的"生成实例"  
     :::image-end:::
 
@@ -127,7 +127,7 @@ the Microsoft Edge Developer Tools for Visual Studio Code extension allows you t
 ## <a name="opening-source-files-from-the-elements-tool"></a>从"元素"工具打开源文件
 Elements 工具的一个功能是，它显示将样式和事件处理程序应用到 DOM 树中选定节点的源文件。 源文件以指向 URL 的链接的形式显示。 选择链接将在编辑器中打开Visual Studio Code文件。
 
-:::image type="complex" source="./media/edge-devtools-for-vscode-elements-files.png" alt-text="元素工具中的开放源文件" lightbox="./media/edge-devtools-for-vscode-elements-files.png":::
+:::image type="complex" source="./media/edge-devtools-for-vscode-elements-files.png" alt-text=""元素"工具中的开放源文件" lightbox="./media/edge-devtools-for-vscode-elements-files.png":::
    "元素"工具中的开放源文件  
 :::image-end:::
 
@@ -158,7 +158,7 @@ JavaScript 调试现已内置到 Visual Studio Code。 从版本 1.5.7 Visual St
 1. 选择"**边缘"。**
     在调试工具栏上，注意新的"检查"按钮 
 
-    :::image type="complex" source="./media/edge-devtools-for-vscode-inspect-button.png" alt-text="调试工具栏上现在显示的检查按钮" lightbox="./media/edge-devtools-for-vscode-inspect-button.png":::
+    :::image type="complex" source="./media/edge-devtools-for-vscode-inspect-button.png" alt-text="调试工具栏上现在显示的"检查"按钮" lightbox="./media/edge-devtools-for-vscode-inspect-button.png":::
        调试工具栏上现在显示的"检查"按钮 :::image-end:::
 
 1. 选择 **"检查**"以Microsoft Edge开发人员工具Visual Studio Code。
@@ -166,7 +166,7 @@ JavaScript 调试现已内置到 Visual Studio Code。 从版本 1.5.7 Visual St
 
     安装完成后，当您选择"检查"**时，它将**Microsoft Edge开发人员工具Visual Studio Code。
 
-    :::image type="complex" source="./media/edge-devtools-for-vscode-tools-inside.png" alt-text="检查按钮Microsoft Edge开发人员工具Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-tools-inside.png":::
+    :::image type="complex" source="./media/edge-devtools-for-vscode-tools-inside.png" alt-text=""检查"按钮Microsoft Edge开发人员工具Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-tools-inside.png":::
        "检查"按钮Microsoft Edge开发人员工具Visual Studio Code :::image-end:::
 
     现在，你可以检查 DOM、更改 CSS，并查看在浏览器中运行的项目的网络请求，而无需离开Visual Studio Code。

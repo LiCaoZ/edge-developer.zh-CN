@@ -7,12 +7,12 @@ ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 69fcd29f9b4cae9ec290798b767fbe54793cb2fd
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
-ms.translationtype: HT
+ms.openlocfilehash: fce34a73cfc303c794020bc8d3a398de714ace3e15de7272e98509a9cf0071ee
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624778"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807117"
 ---
 <!-- Copyright Jecelyn Yeen 
 

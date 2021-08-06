@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 兼容性， Web 平台， 跟踪防护， 跟踪程序， Cookie， 存储， 广告阻止， 跟踪程序阻止， 跟踪保护
-ms.openlocfilehash: 24c410beba34b992cf01b973e79c1247fdc26fee
-ms.sourcegitcommit: b5acfd4dd7f57991d659715e4621edd786d44052
+ms.openlocfilehash: 1d0353b4677e059f2035269bfff97d540f1306aa50b8d9a222ef9cd9636a961d
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "11614633"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11797834"
 ---
 # <a name="tracking-prevention-in-microsoft-edge-chromium"></a>跟踪防护在Microsoft Edge (Chromium)   
 

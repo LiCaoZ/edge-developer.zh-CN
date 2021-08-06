@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: b8a15dd3503a891698d1f96bdc99946163d738ff
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: da429c8b97b976116e336ce4a46adaa5a21d268d16322c8bc42f5f26f46e7216
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564208"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800064"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -41,9 +41,9 @@ ms.locfileid: "11564208"
 | 调用堆栈 | 对于具有 **子事件的事件**，表示每个事件类别所花时间。 |  
 | CPU 时间 | 记录的事件占用的 CPU 时间。 |  
 | 详细信息 | 有关事件的其他详细信息。 |  
-| Duration \(at time-stamp\)  | 事件及其所有子项完成所用时间;timestamp 是事件发生的时间，相对于录制的开始时间。 |  
+| Duration \ (at time-stamp\)  | 事件及其所有子项完成所用时间;timestamp 是事件发生的时间，相对于录制的开始时间。 |  
 | 自时间 | 事件在没有任何子事件的情况下所发生时间。 |  
-| 使用的堆大小 | 记录事件时应用程序使用的内存量，以及自上次采样以来使用的堆大小的增量 \(+/-\) 更改。 |  
+| 使用的堆大小 | 记录事件时应用程序使用的内存量，以及自上次采样以来使用的堆大小的增量 \ (+/-\) 更改。 |  
 
 <!--todo: add nested and child events (timelinetool) section when available -->  
 
@@ -51,7 +51,7 @@ ms.locfileid: "11564208"
 
 此部分列出了属于 Loading 类别的事件及其属性。  
 
-| 事件 | 说明 |  
+| 事件 | 描述 |  
 |:--- |:--- |  
 | 分析 HTML |  Microsoft Edge HTML 分析算法。 |  
 | 完成加载 |  网络请求已完成。 |  
@@ -61,11 +61,11 @@ ms.locfileid: "11564208"
 
 ### <a name="loading-event-properties"></a>加载事件属性  
 
-| 属性 | 说明 |  
+| 属性 | 描述 |  
 |:--- |:--- |  
 | 资源 | 所请求资源的 URL。 |  
-| 预览 | 仅预览请求的资源 \(\) 。 |  
-| Request 方法 | 用于请求 \(或 的 HTTP 方法，例如 `GET` `POST` \) 。 |  
+| 预览 | 仅预览请求的资源 \ (\) 。 |  
+| Request 方法 | 用于请求 \ (或 的 HTTP 方法，例如 `GET` `POST` \) 。 |  
 | 状态代码 | HTTP 响应代码。 |  
 | MIME 类型 | 所请求资源的 MIME 类型。 |  
 | 编码数据长度 | 请求的资源的长度（以字节为单位）。 |  
@@ -74,15 +74,15 @@ ms.locfileid: "11564208"
 
 本节列出了属于"脚本"类别的事件及其属性。  
 
-| 事件 | 说明 |  
+| 事件 | 描述 |  
 |:--- |:--- |  
 | 触发的动画帧 | 触发的计划动画帧及其回调处理程序已调用。 |  
 | 取消动画帧 |  已取消计划的动画帧。 |  
 | GC 事件 |  发生垃圾回收。 |  
 | DOMContentLoaded |  [DOMContentLoaded 事件][MDNWindowDOMContentLoadedEvent]由浏览器触发。  加载和分析页面的所有 DOM 内容时，将触发此事件。 |  
 | 评估脚本 | 已评估脚本。 |  
-| 事件 | JavaScript 事件 \(例如 ， `mousedown` 或 `key` \) 。 |  
-| 函数调用 | 进行了顶级 JavaScript 函数调用 \(浏览器进入 JavaScript engine\) 。 |  
+| 事件 | JavaScript 事件 \ (例如 ， `mousedown` 或 `key` \) 。 |  
+| 函数调用 | 进行了顶级 JavaScript 函数调用 \ (浏览器进入 JavaScript engine\) 。 |  
 | 安装计时器 | 计时器是使用 [setInterval ][MDNWindowOrWorkerGlobalScopeSetInterval] () [setTimeout ][MDNWindowOrWorkerGlobalScopeSetTimeout] () 创建的。 |  
 | 请求动画帧 | 安排 `requestAnimationFrame()` 新帧的呼叫。 |  
 | 删除计时器 | 已清除之前创建的计时器。 |  
@@ -94,7 +94,7 @@ ms.locfileid: "11564208"
 
 ### <a name="scripting-event-properties"></a>脚本事件属性  
 
-| 属性 | 说明 |  
+| 属性 | 描述 |  
 |:--- |:--- |  
 | 计时器 ID | 计时器 ID。 |  
 | 超时 | 计时器指定的超时。 |  
@@ -105,7 +105,7 @@ ms.locfileid: "11564208"
 
 此部分列出了属于"呈现"类别及其属性的事件。  
 
-| 事件 | 说明 |  
+| 事件 | 描述 |  
 |:--- |:--- |  
 | 无效布局 | 页面布局因 DOM 更改而无效。 |  
 | 布局 | 已完成页面布局。 |  
@@ -114,12 +114,12 @@ ms.locfileid: "11564208"
 
 ### <a name="rendering-event-properties"></a>呈现事件属性  
 
-| 属性 | 说明 |  
+| 属性 | 描述 |  
 |:--- |:--- |  
 | 布局无效 | 对于布局记录，是导致布局失效的代码堆栈跟踪。 |  
 | 需要布局的节点 | 对于布局记录，表示在启动中继之前标记为需要布局的节点数。  这些节点通常是开发人员代码无效的节点，以及中继根的向上路径。 |  
-| 布局树大小 | 对于布局记录，中继根 \(节点下的节点总数Microsoft Edge relayout\) 。 |  
-| 布局范围 | 可能的值为 `Partial` \(重布局边界是 DOM\) 或 的一部分 `Whole document` 。 |  
+| 布局树大小 | 对于布局记录，中继根 \ (节点下的节点总数Microsoft Edge relayout\) 。 |  
+| 布局范围 | 可能的值为 `Partial` \ (重布局边界是 DOM\) 或 的一部分 `Whole document` 。 |  
 | 受影响的元素 | 对于"重新计算样式记录"，为受样式重新计算影响的元素数。 |  
 | 样式无效 | 对于"重新计算样式"记录，提供导致样式无效的代码的堆栈跟踪。 |  
 
@@ -127,7 +127,7 @@ ms.locfileid: "11564208"
 
 此部分列出了属于 Painting 类别的事件及其属性。  
 
-| 事件 | 说明 |  
+| 事件 | 描述 |  
 |:--- |:--- |  
 | 复合层 | 用于呈现引擎的复合Microsoft Edge层。 |  
 | 图像解码 | 已解码图像资源。 |  
@@ -157,7 +157,7 @@ ms.locfileid: "11564208"
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference)由[Meggin Kearney][MegginKearney] \(Tech Writer\) and [Flavio Copes][FlavioCopes] \(Full Stack Developer\) 创作。  
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference)由[Meggin Kearney][MegginKearney] \ (Tech Writer\) and [Flavio Copes][FlavioCopes] \ (Full Stack Developer\) 创作。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

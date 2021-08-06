@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: c9b5605aff5680ff0f44386c4a69e4c9f7c08cc8
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: d3fdbec237e6e29b4ba489a728d378cfff1cc23d28ac4f8cd046fdc873a1b0aa
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564159"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800452"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -42,13 +42,13 @@ ms.locfileid: "11564159"
     
 1.  开始键入 ， `javascript` 选择 **"禁用 JavaScript"，** 然后选择 `Enter` 运行命令。  JavaScript 现已禁用。  
     
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="在命令菜单中选择禁用 JavaScript" lightbox="../media/javascript-console-command-javascript.msft.png":::
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="在命令菜单中选择"禁用 JavaScript"" lightbox="../media/javascript-console-command-javascript.msft.png":::
        在 **命令菜单中选择** "禁用 **JavaScript"**  
     :::image-end:::  
     
     源旁边的黄色 **警告图标提醒** 你 JavaScript 已禁用。  
     
-    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="源旁边的警告图标" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text=""源"旁边的警告图标" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
        "源"旁边的警告 **图标**  
     :::image-end:::  
     

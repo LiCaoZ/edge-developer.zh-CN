@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 973b440a27b0c4c06ba118fc09e4162a8fa346e8
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 97603345173a7fdf0cf65968dd4ecbef85a146963176d0815361004137461c71
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564488"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11801545"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,7 +37,7 @@ ms.locfileid: "11564488"
 
 ## <a name="open-the-command-menu"></a>打开命令菜单  
 
-选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。 或选择 **自定义和控制开发工具** \(`...` \) > **运行命令**。  
+选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。 或选择 **自定义和控制开发工具** \ (`...` \) > **运行命令**。  
 
 :::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="运行命令" lightbox="../media/command-menu-options-run-command.msft.png":::
    运行命令  

@@ -9,14 +9,14 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: 辅助功能， 开发人员辅助功能， 可访问的网站， 边缘， Web 开发， ARIA， 开发人员， UIA， UI 自动化
 ms.custom: seodec18
-ms.openlocfilehash: 2fcc8160c830b5a62d8023a5cb7cc9df376c49ca
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: bfe67fa9a869cea8e7f573c0818441650225f7e509bdfb4e41479aee32dec941
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10562608"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11799644"
 ---
-# ARIA 和 UI 自动化Microsoft Edge
+# <a name="aria-and-ui-automation-in-microsoft-edge"></a>ARIA 和 UI 自动化Microsoft Edge
 
 W3C 将可访问的富 Internet 应用程序 (ARIA) ARIA 定义为使动态 Web 内容和自定义 UI 可供访问的语法。 Microsoft Edge识别 ARIA 角色、状态和属性信息，并公开给辅助技术，辅助技术又可以使用[Microsoft UI 自动化](https://blogs.msdn.microsoft.com/winuiautomation/)API 检索信息。
 

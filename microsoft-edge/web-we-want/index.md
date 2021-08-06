@@ -1,18 +1,18 @@
 ---
 description: 跨浏览器计划侧重于识别 Web 平台中缺少的特性和功能，以作为 Web 标准或浏览器功能进行潜在开发。
-title: Web 我们希望概述
+title: “我们想要的网络”概述
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge， Web development， html， css， developer， web we want
-ms.openlocfilehash: f8d17b114dc418c727646c13c6b48525e02c60d0
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: c50567373c3e921fcc57be1c8d0dcaf6130398d85810e7194e041655d39e5193
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461503"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11806273"
 ---
 # <a name="the-web-we-want-initiative"></a>我们需要的 Web 计划
 
@@ -30,7 +30,7 @@ ms.locfileid: "11461503"
 
 *   通过遵循 [Twitter][TwitterWebWeWant] 或 [LinkedIn][LinkedInWebWeWant] 上的计划保持联系，了解最新开发内容，或参与可帮助我们确定提交的需要优先级的调查。
 
-我们已成功地将一些"需要"交付到 Chromium DevTools 中，如 Source Order Viewer \([Want][WebWeWantWants64] [、Docs][DevtoolsExperimentalFeaturesIndexSourceOrderViewer]\) 和[3D View，][Devtools3DViewIndex]类似于 Firefox DevTools 中的情况。 此外，还有一些在标准组中具有之前建议的其他"希望"。 加入我们，通过我们希望的 Web 推动 Web 的未来！
+我们已成功地将一些"需要"交付到 Chromium DevTools 中，如 Source Order Viewer \ ([Want][WebWeWantWants64] [、Docs][DevtoolsExperimentalFeaturesIndexSourceOrderViewer]\) 和[3D View，][Devtools3DViewIndex]类似于 Firefox DevTools 中的情况。 此外，还有一些在标准组中具有之前建议的其他"希望"。 加入我们，通过我们希望的 Web 推动 Web 的未来！
 
 <!-- links -->  
 

@@ -7,12 +7,12 @@ ms.date: 05/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 边缘扩展， 浏览器扩展， 加载项， 开发人员， 清单 v3， 迁移到清单 v3
-ms.openlocfilehash: 5aa1aa7446a312d581bacc4fa19ba7362c6c2a3e
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 89e957da475b8503ec5b555589fe9b6ed8f5d23101f29045f2ca13b33c314f7f
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564614"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807491"
 ---
 # <a name="prepare-to-update-your-extensions-from-manifest-v2-to-v3"></a>准备将扩展从清单 v2 更新到 v3  
 

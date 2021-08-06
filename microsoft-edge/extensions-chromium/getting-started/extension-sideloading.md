@@ -7,22 +7,22 @@ ms.date: 09/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， Web 开发， html， css， javascript， 开发人员， 扩展
-ms.openlocfilehash: 7070878b9608e6d239179078390f2315e0b289a1
-ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
+ms.openlocfilehash: 40f88e2ec3dbcba2ad0c22ef171c66a51c0f478ac86d1fe72497bf4960608c0f
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104769"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803287"
 ---
-# 旁加载扩展
+# <a name="sideload-an-extension"></a>旁加载扩展
 
-在开发期间，可以使用 Microsoft Edge \(Chromium\) 浏览器安全运行和调试扩展。 通过在你的浏览器中本地旁加载扩展，你可以运行和测试扩展。 本文介绍如何将扩展旁加载到Microsoft Edge。
+在开发期间，可以使用 Microsoft Edge \ (Chromium\) 浏览器安全运行和调试扩展。 通过在你的浏览器中本地旁加载扩展，你可以运行和测试扩展。 本文介绍如何将扩展旁加载到Microsoft Edge。
 
 若要旁加载扩展，请按照以下步骤操作。
 
 1.  通过 `edge://extensions` 选择浏览器顶部的三个点，然后选择扩展打开 **页面**。
 
-       :::image type="complex" source="./media/part1-threedots.png" alt-text="打开edge://extensions页":::
+       :::image type="complex" source="./media/part1-threedots.png" alt-text="打开"edge://extensions"页":::
           打开"edge://extensions"页 :::image-end:::
 
 1.  在扩展管理页面的 `edge://extensions` 上，使用**** 页面左下角的开关打开开发人员模式。

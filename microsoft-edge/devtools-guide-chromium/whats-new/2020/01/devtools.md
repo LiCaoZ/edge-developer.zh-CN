@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 03b17f524e9be55e1ed37147ce46b7a15fc3a17d
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: b6a3cd9b5c392f435145d4eadda0bf6abb14694a74d28ebea8c9cc72a6dc912c
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564957"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11799090"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -41,7 +41,7 @@ DevTools 团队已对 Chromium 进行 170 次更改，以解决 DevTools 中的�
    具有 **键盘** 导航和屏幕阅读器改进的 DevTools 中的性能工具  
 :::image-end:::  
 
-想要了解如何使网页可供所有用户访问？  下载[辅助功能见解][AccessibilityInsights]和[webhint][WebhintBrowserExtension]扩展，Microsoft Edge开始操作。  
+想要了解如何使网页可供所有用户访问？  下载[辅助功能Insights][AccessibilityInsights] [Webhint][WebhintBrowserExtension]扩展，Microsoft Edge开始操作。  
 
 如果使用屏幕阅读器或键盘在 DevTools 中导航，请通过向我们发推文或[][PostTweetEdgeDevTools]选择"发送反馈"图标向我们发送[反馈](#getting-in-touch-with-microsoft-edge-devtools-team)！  
 
@@ -53,7 +53,7 @@ Chromium 问题 [#963183][CR963183]
 
 :::row:::
    :::column span="":::
-      中文 \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
+      中文 \ (Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
    :::column-end:::
    :::column span="":::
       繁体 (中文\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
@@ -128,7 +128,7 @@ Webhint Microsoft Edge扩展允许你在 DevTools 中轻松扫描网页并获取
 
 ### <a name="3d-view"></a>3D 视图  
 
-使用 **3D 视图** 通过浏览文档对象模型 [\(DOM\) ][MDNDocumentObjectModel] 或 [z 索引][MDNZIndex] 堆栈上下文来调试 Web 应用程序。  
+使用 **3D 视图** 通过浏览文档对象模型 [\ (DOM\) ][MDNDocumentObjectModel] 或 [z 索引][MDNZIndex] 堆栈上下文来调试 Web 应用程序。  
 
 :::image type="complex" source="../../images/2020/01/3dview.msft.png" alt-text="DevTools 中的 3D 视图" lightbox="../../images/2020/01/3dview.msft.png":::
    DevTools 中的 3D 视图  
@@ -146,7 +146,7 @@ DevTools 团队还发布了一些 Visual Studio Code，[][VisualStudioCode]让�
 
 #### <a name="elements-for-microsoft-edge"></a>用于Microsoft Edge  
 
-通过添加[\Microsoft Edge\(Chromium\) ][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code 元素，在 Visual Studio Code 元素工具。  
+通过添加[\Microsoft Edge\ (Chromium\) ][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code 元素，在 Visual Studio Code 元素工具。  
 
 :::image type="complex" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="使用元素扩展Visual Studio Code元素的 Microsoft Edge 工具" lightbox="../../images/2020/01/elements-for-edge.msft.png":::
    元素**工具**Visual Studio Code元素扩展Microsoft Edge元素  
@@ -225,7 +225,7 @@ Chromium问题[#924693][CR924693]
 
 "应用程序"面板中的"Cookie"窗格现在显示带黄色背景的阻止的 Cookie。  
 
-:::image type="complex" source="../../images/2020/01/blockedcookies.msft.png" alt-text="应用程序面板的Cookie窗格中阻止的 Cookie" lightbox="../../images/2020/01/blockedcookies.msft.png":::
+:::image type="complex" source="../../images/2020/01/blockedcookies.msft.png" alt-text=""应用程序"面板的"Cookie"窗格中阻止的 Cookie" lightbox="../../images/2020/01/blockedcookies.msft.png":::
    "应用程序"面板的"Cookie"窗格中阻止的 Cookie  
 :::image-end:::  
 
@@ -250,7 +250,7 @@ Cookie 表中的所有单元格现在均可编辑 **，"大小** "列中的单�
 
 #### <a name="copy-as-nodejs-fetch-to-include-cookie-data"></a>复制为Node.js提取以包含 Cookie 数据  
 
-若要获取包含 Cookie 数据的表达式，请将鼠标悬停在网络请求上，打开上下文菜单 \(右键单击\) ，然后选择"复制复制"作为"Node.js `fetch` ****  >  **提取"。**  
+若要获取包含 Cookie 数据的表达式，请将鼠标悬停在网络请求上，打开上下文菜单 \ (右键单击\) ，然后选择"复制复制"作为"Node.js `fetch` ****  >  **提取"。**  
 
 :::image type="complex" source="../../images/2020/01/fetchcookies.msft.png" alt-text="作为提取Node.js复制" lightbox="../../images/2020/01/fetchcookies.msft.png":::
    作为提取Node.js复制  
@@ -300,7 +300,7 @@ Chromium问题[#985402][CR985402]
    禁用**允许滚动到文件末尾设置**  
 :::image-end:::  
 
-:::image type="complex" source="../../images/2020/01/scrollingsources.msft.png" alt-text="滚动过文件末尾现在在源面板中处于禁用状态" lightbox="../../images/2020/01/scrollingsources.msft.png":::
+:::image type="complex" source="../../images/2020/01/scrollingsources.msft.png" alt-text="滚动过文件末尾现在在"源"面板中处于禁用状态" lightbox="../../images/2020/01/scrollingsources.msft.png":::
    滚动过文件末尾现在在"源"面板中处于禁用状态  
 :::image-end:::  
 
@@ -330,7 +330,7 @@ Chromium问题[#985402][CR985402]
 
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
 [VisualStudioMarketplaceDebuggerEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "调试程序Microsoft Edge |Visual StudioMarketplace"  
-[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge \(Chromium\) |Visual StudioMarketplace"  
+[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge \ (Chromium\) |Visual StudioMarketplace"  
 [VisualStudioMarketplaceWebhintExtension]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint |Visual StudioMarketplace"
 
 [TrackingPrevention]: https://blogs.windows.com/msedgedev/2019/12/03/improving-tracking-prevention-microsoft-edge-79 "改进跟踪防护Microsoft Edge博客文章"
@@ -354,7 +354,7 @@ Chromium问题[#985402][CR985402]
 [GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "新问题 - MicrosoftDocs/edge-developer"  
 
 [TheWebWeWant]: https://webwewant.fyi "我们需要的 Web"  
-[AccessibilityInsights]: https://accessibilityinsights.io "辅助功能见解"  
+[AccessibilityInsights]: https://accessibilityinsights.io "辅助功能Insights"  
 [MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "文档对象模型 (DOM) |MDN"  
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index |MDN"  
 [EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter 帐户"  

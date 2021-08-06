@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: f6ec0652bbbb7d7e60a69877a9d44a7a2fd636a5
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 3630d8bf51a5b56ac4fd5d2ddbe56243b765660201286956f0c89cb75f3bf1cb
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624792"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803252"
 ---
 # <a name="overview-of-accessibility-testing-using-devtools"></a>使用 DevTools 的辅助功能测试概述
 
@@ -27,7 +27,7 @@ ms.locfileid: "11624792"
 
 When you open the demo page in the browser and open DevTools， notice that some issues are automatically detected in the **Issues counter**.  Select the **Issues counter** \ (Issues ![ counter ](../media/issues-counter-icon.msft.png) \) to open the Issues [tool][DevToolsIssuesTool] to view the issues and more information.
 
-:::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="问题计数器显示当前网页中的问题个个，并打开问题工具" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
+:::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text=""问题"计数器显示当前网页中的问题个个，并打开"问题"工具" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
     "问题"计数器显示当前网页中的问题个个，并打开"问题"工具
 :::image-end:::
 
@@ -46,7 +46,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 有关详细演练步骤，请导航到"[验证输入字段是否包含标签"。][DevtoolsAccessibilityTestIssuesToolCheckFieldsLabels]
 
-:::image type="complex" source="../media/a11y-testing-inspect-problematic-element.msft.png" alt-text="在问题工具中选择链接后显示有问题的 HTML 的元素工具" lightbox="../media/a11y-testing-inspect-problematic-element.msft.png":::
+:::image type="complex" source="../media/a11y-testing-inspect-problematic-element.msft.png" alt-text="在"问题"工具中选择链接后显示有问题的 HTML 的元素工具" lightbox="../media/a11y-testing-inspect-problematic-element.msft.png":::
     在"问题"工具中选择链接后显示有问题的 HTML 的元素工具
 :::image-end:::
 
@@ -139,7 +139,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 其中一个问题就是"捐赠"表单。  使用鼠标时，可以单击不同的选项来赚钱。  但是，当您尝试使用键盘访问该资金表单时，不会执行任何操作。 若要解决此问题，您需要使用 **Inspect** 工具。
 
-:::image type="complex" source="../media/a11y-testing-basics-donation-form-issue.msft.png" alt-text="演示页面上的资金表单突出显示" lightbox="../media/a11y-testing-basics-donation-form-issue.msft.png":::
+:::image type="complex" source="../media/a11y-testing-basics-donation-form-issue.msft.png" alt-text="演示页面上的"资金"表单突出显示" lightbox="../media/a11y-testing-basics-donation-form-issue.msft.png":::
     演示页面上的"资金"表单突出显示
 :::image-end:::
 
@@ -148,7 +148,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 使用 **"检查** "工具通过将鼠标悬停在网页的某些部分来检测辅助功能问题。  Inspect **** \ (Inspect ![ \) 工具位于 ](../media/inspect-icon.msft.png) DevTools 的左上角。  通过选择"检查工具"按钮 **打开"检查** "工具。
 
-:::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="通过选择检查工具按钮打开检查工具" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
+:::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="通过选择"检查工具"按钮打开"检查"工具" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
     通过选择 **"检查** 工具"按钮 **打开"检查** "工具
 :::image-end:::
 
@@ -202,7 +202,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 使用 **Inspect 工具** 时，选择呈现页上的元素将打开 **Elements** 工具。  DOM 树显示元素的 **HTML，Styles** 显示应用于元素的 CSS 属性。
 
-:::image type="complex" source="../media/a11y-testing-basics-inspector-selected-element.msft.png" alt-text="有关元素工具中显示的选定元素的详细信息" lightbox="../media/a11y-testing-basics-inspector-selected-element.msft.png":::
+:::image type="complex" source="../media/a11y-testing-basics-inspector-selected-element.msft.png" alt-text="有关"元素"工具中显示的选定元素的详细信息" lightbox="../media/a11y-testing-basics-inspector-selected-element.msft.png":::
     有关"元素"工具中显示的选定元素的详细信息
 :::image-end:::
 
@@ -222,7 +222,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 当按下 而不是 时，下一个获得焦点的元素是页面内容部分的第一个"更多"链接， `Tab` `Enter` 如大纲所指示。 ****
 
-:::image type="complex" source="../media/a11y-testing-keyboard-focus-on-element.msft.png" alt-text="使用 Tab 键导航页面。  焦点显示在页面中的更多链接上。" lightbox="../media/a11y-testing-keyboard-focus-on-element.msft.png":::
+:::image type="complex" source="../media/a11y-testing-keyboard-focus-on-element.msft.png" alt-text="使用 Tab 键导航页面。  焦点显示在页面中的"更多"链接上。" lightbox="../media/a11y-testing-keyboard-focus-on-element.msft.png":::
     使用 键导航 `Tab` 页面。  焦点显示在页面中的 **"更多** "链接上。
 :::image-end:::
 
@@ -268,7 +268,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 在 **"样式** "选项卡中，可以看到应用于链接的 CSS，如果选择指向 的链接，文件将在"源" `styles.css` 工具 **中** 打开。
 
-:::image type="complex" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="应用于链接的样式，如源工具中所示" lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
+:::image type="complex" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="应用于链接的样式，如"源"工具中所示" lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
     应用于链接的样式，如"源"工具中所示
 :::image-end:::
 
@@ -312,13 +312,13 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 接下来，我们分析表单的 JavaScript 功能。 在 **"元素**"中，选择" **事件** 侦听器"选项卡以分析表单的 JavaScript。
 
-:::image type="complex" source="../media/a11y-testing-event-handlers-on-button.msft.png" alt-text="事件侦听器选项卡，包含指向表单的 JavaScript 的链接" lightbox="../media/a11y-testing-event-handlers-on-button.msft.png":::
+:::image type="complex" source="../media/a11y-testing-event-handlers-on-button.msft.png" alt-text=""事件侦听器"选项卡，包含指向表单的 JavaScript 的链接" lightbox="../media/a11y-testing-event-handlers-on-button.msft.png":::
     " **事件侦听器"** 选项卡，包含指向表单的 JavaScript 的链接
 :::image-end:::
 
 在 **"事件侦听器**"选项卡上，选择链接以打开"源"工具，然后检查负责表单 `buttons.js:18` 功能的**** JavaScript。
 
-:::image type="complex" source="../media/a11y-testing-form-handling-javascript.msft.png" alt-text="负责接收表单功能的 JavaScript，显示在源工具中" lightbox="../media/a11y-testing-form-handling-javascript.msft.png":::
+:::image type="complex" source="../media/a11y-testing-form-handling-javascript.msft.png" alt-text="负责"接收"表单功能的 JavaScript，显示在"源"工具中" lightbox="../media/a11y-testing-form-handling-javascript.msft.png":::
     负责"接收"表单功能的 JavaScript，显示在" **源"工具** 中
 :::image-end:::
 
@@ -331,7 +331,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 使用 **Inspect** 工具单独检查页面上的每个元素非常耗时。  相反，使用 **"辅助功能"** 选项卡导航页面的 **"辅助功能树"。**  辅助功能树指示页面向辅助技术（如屏幕阅读器）提供哪些信息。
 
-:::image type="complex" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="辅助功能树中的资金表单按钮" lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
+:::image type="complex" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="辅助功能树中的"资金"表单按钮" lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
     辅助功能树中的"资金 **"表单按钮**
 :::image-end:::
 
@@ -352,7 +352,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 可以使用"辅助功能"选项卡中的"源 **顺序** 查看器"测试 **页面元素** 的顺序。 一直向下滚动，然后选中" **显示源订单"** 复选框。  现在，当您在 **"** 元素"工具中导航 DOM 树（如选择元素）时，数值覆盖显示在呈现的页面的表示源顺序的各个 `header` 部分。 
 
-:::image type="complex" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="打开源订单查看器将显示源代码中元素在页面上作为数字覆盖的顺序" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
+:::image type="complex" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="打开"源订单查看器"将显示源代码中元素在页面上作为数字覆盖的顺序" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
     打开" **源订单** 查看器"将显示源代码中元素在页面上作为数字覆盖的顺序
 :::image-end:::
 
@@ -375,7 +375,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
             边栏导航菜单中的链接具有足够的对比度，如检查**覆盖中所示** :::image-end:::
     :::column-end:::
     :::column:::
-        :::image type="complex" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="检查覆盖层中的警告标记了对比度不足的元素" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
+        :::image type="complex" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text=""检查"覆盖层中的警告标记了对比度不足的元素" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
             "检查"覆盖层中的警告标记了对比度 **不足** 的元素 :::image-end:::
     :::column-end:::
 :::row-end:::
@@ -451,8 +451,8 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 不同的接收状态使用红色 (绿色、黄色) 颜色作为区分资金状态的唯一方式。  但是，你无法预期所有用户都体验这些颜色。  如果你使用 DevTools 的视觉缺陷模拟功能，则通过模拟不同视觉的人如何理解你的设计，你可以发现这不够好。 [][DevToolsVisionDeficiencies]
 有关详细演练步骤，请导航到验证页面是否适用于色 [盲用户](test-color-blindness.md)。
-:::image type="complex" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="将页面显示为具有亚特 <9> <9>色 (色盲) 可以看到页面" lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
-    显示页面，就像有亚特 <9>色 (色盲) 会看到页面
+:::image type="complex" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="将页面显示为具有亚特色 (色盲) 可以看到页面" lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
+    显示页面，就像有亚特色 (色盲) 会看到页面
 :::image-end:::
 
 
@@ -519,8 +519,8 @@ We're constantly working on new accessibility features for DevTools.  如果缺�
 [DevToolsMediaQueries]: ../device-mode/index.md#show-media-queries "显示媒体查询 - 在 DevTools Microsoft Edge中模拟移动设备|Microsoft Docs"
 [DevToolsDeviceModeIndex]: ../device-mode/index.md "在 Microsoft Edge 开发人员工具中模拟移动设备 | Microsoft Docs"
 [DevtoolsAccessibilityReference]: reference.md "DevTools |Microsoft Docs"
-[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "深色或浅色配色方案模拟|Microsoft Docs"
-[DevToolsIssuesTool]: ../issues/index.md "使用问题工具查找并修复|Microsoft Docs"
+[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "模拟呈现的页面布局中的深色或浅色|Microsoft Docs"
+[DevToolsIssuesTool]: ../issues/index.md "使用问题工具查找并修复问题 | Microsoft Docs"
 [DevToolsReducedMotion]: ./reduced-motion-simulation.md "减少运动模拟|Microsoft Docs"
 [DevToolsVisionDeficiencies]: ./emulate-vision-deficiencies.md "模拟视觉缺陷|Microsoft Docs"
 <!-- links into test-issues-tool.md -->

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 0d2a60c31d5239a4b47102ae96a713b8bfcf46f3
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 9008af151c0caff63f3e22df12384181b14d16d9b1284c12b6b560714fcaad85
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564061"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800015"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -91,12 +91,12 @@ ms.locfileid: "11564061"
 
 有时，您可以在一个网页上运行多个媒体播放器，或者使用同一浏览器选项卡浏览不同的网页，每个网页都使用媒体播放器。
 
-你可以选择隐藏 \(或显示\) 每个媒体播放器，以简化调试体验。  
+你可以选择隐藏 \ (或显示\) 每个媒体播放器，以简化调试体验。  
 
 1.  使用同一浏览器选项卡浏览到多个不同的视频网页。  
 1.  若要隐藏媒体播放器，请完成以下操作之一。  
-    *   若要隐藏一个媒体播放器，请将鼠标悬停在媒体播放器上，打开上下文菜单 \(右键单击\) ，然后选择"隐藏**播放器"。**  
-    *   若要隐藏所有其他媒体播放器，请将鼠标悬停在媒体播放器上，打开上下文菜单 \(右键单击\) ，然后选择"隐藏**所有其他"。**  
+    *   若要隐藏一个媒体播放器，请将鼠标悬停在媒体播放器上，打开上下文菜单 \ (右键单击\) ，然后选择"隐藏**播放器"。**  
+    *   若要隐藏所有其他媒体播放器，请将鼠标悬停在媒体播放器上，打开上下文菜单 \ (右键单击\) ，然后选择"隐藏**所有其他"。**  
     
     :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="隐藏媒体播放器" lightbox="../media/media-panel-hide-show.msft.png":::
        隐藏媒体播放器  
@@ -104,7 +104,7 @@ ms.locfileid: "11564061"
     
 ## <a name="export-media-player-information"></a>导出媒体播放器信息  
 
-1.  若要将媒体播放器信息下载为 JSON 文件，请将鼠标悬停在媒体播放器上，打开上下文菜单 \(右键单击\) ，然后选择"保存播放器**信息"。**  
+1.  若要将媒体播放器信息下载为 JSON 文件，请将鼠标悬停在媒体播放器上，打开上下文菜单 \ (右键单击\) ，然后选择"保存播放器**信息"。**  
     
     :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="导出媒体信息" lightbox="../media/media-panel-save.msft.png":::
        导出媒体信息  

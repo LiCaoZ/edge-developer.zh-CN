@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: ec30925b706b4b1c6dfaaa6ce66a38fab8759ac2
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 13c41918aee9e590a0e89707d3ee031751af42a2a4d8f2f9d7fc79f48dd39867
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597252"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802235"
 ---
 # <a name="verify-that-the-page-is-usable-with-ui-animation-turned-off"></a>验证页面是否可用，同时关闭 UI 动画
 

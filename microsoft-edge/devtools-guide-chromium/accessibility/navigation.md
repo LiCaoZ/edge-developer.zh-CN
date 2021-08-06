@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 2cb57a8ea1ea34506b4698d80ae0981d8716f3d2
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+ms.openlocfilehash: e120507d05b95f857dbc27d8151fe460405aba714004f3685a76d8fd41583c81
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597103"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802626"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -58,8 +58,8 @@ DevTools 分为一系列工具。   (在命令菜单中，**** 工具称为面�
 
 ### <a name="navigate-by-keyboard"></a>使用键盘导航  
 
-*   打开 DevTools 后，选择 `Control` + `]` \(Windows、Linux\) 或 `Command` + `]` \(macOS\) 将焦点移到主工具栏上的下一个工具。
-*   选择 `Control` + `[` \(Windows、Linux\) 或 `Command` + \(macOS\) 将焦点移到主工具栏上的上 `[` 一个工具。
+*   打开 DevTools 后，选择 `Control` + `]` \ (Windows、Linux\) 或 `Command` + `]` \ (macOS\) 将焦点移到主工具栏上的下一个工具。
+*   选择 `Control` + `[` \ (Windows、Linux\) 或 `Command` + \ (macOS\) 将焦点移到主工具栏上的上 `[` 一个工具。
 *   选择 `Tab` 或 `Shift` + 重复选择，直到焦点移到主工具栏或箱工具栏的选项卡，然后使用箭头键在工具 `Tab` 之间移动。
 
 **已知问题**  
@@ -244,7 +244,7 @@ Lighthouse 报告分为与每个审核类别对应的部分。  报告打开时�
 
 <!-- links -->  
 [DevtoolsAccessibilityReference]: reference.md "DevTools |Microsoft Docs"  
-[DevtoolsAccessibilityTab]: accessibility-tab.md "使用&quot;辅助功能&quot;选项卡工具测试|Microsoft Docs"  
+[DevtoolsAccessibilityTab]: accessibility-tab.md "使用&quot;辅助功能&quot;选项卡选项测试|Microsoft Docs"  
 [MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft 文档"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "使用 Microsoft Edge 开发工具命令菜单运行命令"  
 [DevtoolsConsoleIndex]: ../console/index.md "控制台概述 | Microsoft 文档"  

@@ -7,22 +7,22 @@ ms.date: 11/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， vs code， visual studio code， 调试程序， webhint
-ms.openlocfilehash: 1aa5b66043e87ebb0f1b848dcd60e2553b378f36
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: fee9f5aa8c17aaed782d8185d5d92272367071ec26ca0f19649a33a4b183b8a4
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230689"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798280"
 ---
-# Visual Studio 代码概述  
+# <a name="visual-studio-code-overview"></a>Visual Studio 代码概述  
 
 [Visual Studio Code][VisualStudioCodeDocs]是一个轻型但功能强大的源代码编辑器。  [Visual Studio Code][VisualStudioCodeDocs]适用于 Windows、Linux 和 macOS。  它包括对 JavaScript、TypeScript 和 Node.js 的内置支持，因此在自定义之前，它是 Web 开发人员的一个很好的工具。  如果尚未使用它，[请下载][VisualstudioCode]Visual Studio Code。  
 
-##  <a name="extensions"></a>Extensions  
+## <a name="extensions"></a>Extensions  
 
 <!--todo: We want to put something like the tiles for extensions Visual Studio Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page.  I think it's a web page.  I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->  
 
-若要获取下面突出显示的任何扩展，请在 Windows/Linux 或 Visual Studio Code 中的 `Ctrl` + `Shift` + `X` `Command` + `Shift` + macOS\) 上导航到扩展 `X` \(选择。  
+若要获取下面突出显示的任何扩展，请在 Windows/Linux 或 Visual Studio Code 中的 `Ctrl` + `Shift` + `X` `Command` + `Shift` + macOS\) 上导航到扩展 `X` \ (选择。  
 
 在 Marketplace 中搜索特定扩展，然后选择"安装 **"。**  
 
@@ -55,13 +55,13 @@ ms.locfileid: "11230689"
 
 使用[调试器 for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio Code 扩展，可以分行调试前端 JavaScript 代码，并直接从 Visual Studio Code `console.log()` [查看语句][VisualstudioCode]。  
       
-使用调试器工具，你可以启动或附加到 Microsoft Edge \(EdgeHTML\) 和 Microsoft Edge \(Chromium\) 。  有关从配置和示例配置Microsoft Edge调试Visual Studio Code演练，请导航到调试 `launch.json` 器 For Microsoft Edge Visual Studio Code [Extension][VisualStudioCodeDebuggerEdge]。  选择以下图像以查看扩展的操作。  
+使用调试器工具，你可以启动或附加到 Microsoft Edge \ (EdgeHTML\) 和 Microsoft Edge \ (Chromium\) 。  有关从配置和示例配置Microsoft Edge调试Visual Studio Code演练，请导航到调试 `launch.json` 器 For Microsoft Edge Visual Studio Code [Extension][VisualStudioCodeDebuggerEdge]。  选择以下图像以查看扩展的操作。  
 
 :::image type="complex" source="./media/debugger-for-edge.png" alt-text="适用于 Edge Visual Studio Code的调试器在操作中" lightbox="./media/debugger-for-edge.gif":::
    **调试器Microsoft Edge Visual Studio Code**扩展  
 :::image-end:::  
 
-##  <a name="microsoft-edge-tools-for-visual-studio-code"></a>Microsoft Edge工具Visual Studio Code
+## <a name="microsoft-edge-tools-for-visual-studio-code"></a>Microsoft Edge工具Visual Studio Code
 
 使用[Microsoft Edge Tools for Visual Studio Code][VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode] Visual Studio Code 扩展，请使用 Microsoft Edge**** 浏览器的 Elements Visual Studio Code。  用于以下操作。  
 
@@ -76,7 +76,7 @@ ms.locfileid: "11230689"
    **Microsoft Edge工具Visual Studio Code Visual Studio Code**扩展  
 :::image-end:::  
 
-##  <a name="webhint"></a>webhint  
+## <a name="webhint"></a>webhint  
       
 使用 [Webhint（][WebhintMain]一个可自定义的 Lint 工具）可改进网站的以下功能。  
 

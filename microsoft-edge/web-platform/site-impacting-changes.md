@@ -7,12 +7,12 @@ ms.date: 07/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 兼容性， Web 平台
-ms.openlocfilehash: ea0cf4e753841f9cf2aaeaca7350b77a48e47453
-ms.sourcegitcommit: 613c4c5325177560f9e814ead1a802531f92b8ec
+ms.openlocfilehash: 21cc8d060111c9ba759290b2bb57eafe87dc11015c53086b65e2c1a2cc152eb9
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "11709253"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800631"
 ---
 # <a name="site-compatibility-impacting-changes-coming-to-microsoft-edge"></a>Microsoft Edge 中影响网站兼容性的更改  
 

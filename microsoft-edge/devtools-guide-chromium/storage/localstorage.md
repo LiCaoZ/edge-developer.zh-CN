@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 5088a1b9d7ab2b92051d099e76b8b07bbd5db5f8
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 11b4b4f1acf273979346d136cd8591edc8ac9aaf53610fd9d362299add15410b
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11565048"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11806910"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,13 +35,13 @@ ms.locfileid: "11565048"
 
 1.  选择“**应用程序**”选项卡以打开“**应用程序**”工具。  “**清单**”窗格默认显示。  
     
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-manifest.msft.png":::
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="“清单”窗格" lightbox="../media/storage-application-manifest.msft.png":::
        “**清单**”窗格  
     :::image-end:::  
     
 1.  展开“**本地存储**”菜单。  
     
-    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="本地存储菜单" lightbox="../media/storage-application-local-storage.msft.png":::
+    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="“本地存储”菜单" lightbox="../media/storage-application-local-storage.msft.png":::
        “**本地存储**”菜单  
     :::image-end:::  
     

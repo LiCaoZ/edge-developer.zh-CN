@@ -8,14 +8,14 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.assetid: 8468f8e1-9f4a-426c-a969-76eab9419137
 keywords: 辅助功能， 开发人员辅助功能， 可访问的网站， 边缘， Web 开发， ARIA， 开发人员， UIA， UI 自动化
-ms.openlocfilehash: 8d31f7b32cb92794ff8592c239436f3b101a3859
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 14195b23c7960051f11ddd200916c3b63439135eac5b9f539abe4988d6870892
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230815"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800148"
 ---
-# 设计可访问的网站  
+# <a name="designing-accessible-websites"></a>设计可访问的网站  
 
 创建非独占设计可使所有人员无论年龄、教育、地理位置、语言或残障人士都使用技术。  使用技术和浏览 Web 的用户具有广泛的能力和首选项。  在设计网站时，请记住以下关键辅助功能方案：
 
@@ -29,20 +29,20 @@ ms.locfileid: "11230815"
 
 通过良好的编码实践，可以解决 Web 上的许多常见辅助功能问题。  [WCAG (2.0](https://www.w3.org/TR/WCAG20)) Web 内容辅助功能指南文档提供了可帮助您设计更易于访问的动态 Web 应用程序的技术和最佳实践。  有关构建可访问网站的信息，请导航到"[构建可访问的网站"。](./build/index.md)
 
-##  <a name="resources"></a>资源  
+## <a name="resources"></a>资源  
 
-#### [针对包含进行设计](https://w3.org/WAI/users/Overview.html)  
+#### [<a name="designing-for-inclusion"></a>针对包含进行设计](https://w3.org/WAI/users/Overview.html)  
 
 W3C Web 辅助功能计划针对包含进行设计提供了一些资源，可帮助你更好地了解残障用户以及如何在设计网站时牢记他们。
 
-#### [设计非独占软件](https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software)  
+#### [<a name="designing-inclusive-software"></a>设计非独占软件](https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software)  
 
 设计非独占软件讨论适用于 UWP 平台和通用 Windows 平台 (Microsoft) 。
 
-#### [残障人士如何使用 Web](https://www.w3.org/WAI/intro/people-use-web/Overview.html)  
+#### [<a name="how-people-with-disabilities-use-the-web"></a>残障人士如何使用 Web](https://www.w3.org/WAI/intro/people-use-web/Overview.html)  
 
 W3C 提供的此资源介绍了残障人士（包括与年龄相关的残障人士）如何使用 Web。
 
-#### [非独占Toolkit](https://www.microsoft.com/design/practice#howwemake-section)  
+#### [<a name="inclusive-design-toolkit"></a>非独占Toolkit](https://www.microsoft.com/design/practice#howwemake-section)  
 
 Microsoft 开发了非独占Toolkit设计方案，以展示人类多样性如何创建更好的设计约束，以及如何将看似简单的解决方案连接到更广泛的市场。

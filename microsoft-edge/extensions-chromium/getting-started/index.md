@@ -1,22 +1,22 @@
 ---
-description: 了解 Chromium 扩展以及构建扩展的核心概念。
-title: Microsoft Edge (Chromium) Extensions 概念和体系结构
+description: 了解Chromium扩展的核心概念。
+title: Microsoft Edge (Chromium) 扩展概念和体系结构
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， Web 开发， html， css， javascript， 开发人员， 扩展
-ms.openlocfilehash: 05732287bc1a782ed5830d5e7028cf5580f3b605
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: cc6afc4d0ea8e242b535235e89d723d07a2f1206621a7b26874a058699759de2
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397922"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807458"
 ---
 # <a name="extension-concepts-and-architecture"></a>扩展概念和体系结构  
 
-本文简要介绍了帮助您构建扩展的概念。  若要了解 Microsoft Edge \(Chromium\) 扩展，请继续了解多选项卡浏览器如何工作。  
+本文简要介绍了帮助您构建扩展的概念。  若要了解Microsoft Edge \ (Chromium\) 扩展，请继续了解多选项卡浏览器如何工作。  
 
 ## <a name="understand-how-browsers-work"></a>了解浏览器如何工作  
 
@@ -40,7 +40,7 @@ ms.locfileid: "11397922"
 
 下面的列表概述了与扩展体系结构相关的有用信息。  
 
-1.  扩展 Web 服务器捆绑包。  扩展是 Web 资源的捆绑包。  Web 资源类似于你 \(开发人员\) Web 服务器的其他资源。  生成扩展时，将 Web 资源捆绑到 zip 文件中。  
+1.  扩展 Web 服务器捆绑包。  扩展是 Web 资源的捆绑包。  Web 资源类似于你 \ (开发人员\) Web 服务器的其他资源。  生成扩展时，将 Web 资源捆绑到 zip 文件中。  
     
     zip 文件包括 HTML、CSS、JavaScript 和图像文件。  zip 文件的根中需要另外一个文件。  另一个文件是名为 的清单文件 `manifest.json` 。  清单文件是扩展的蓝图，包括扩展版本、标题、运行扩展所需的权限等。  
     

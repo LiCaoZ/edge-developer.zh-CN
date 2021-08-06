@@ -7,12 +7,12 @@ ms.date: 03/31/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: e6233289794bc1c3ef235af46402c23173c09857
-ms.sourcegitcommit: e6a4f73be57439149e3cc56491d7364831d0079e
+ms.openlocfilehash: 523340b302f62fd98f7ec12037d56d9d401df156e9ab0851e9b6f96fc3a1ef46
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "11475209"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807484"
 ---
 # <a name="native-messaging"></a>本机消息传递  
 
@@ -119,7 +119,7 @@ ms.locfileid: "11475209"
       *   在Windows设备上，可以使用包含清单文件的目录的相对路径。  
       *   在 macOS 和 Linux 上，路径必须为绝对路径。  
           
-      主机进程从将当前目录设置为包含主机二进制文件的目录开始。  例如 \(Windows\) ，如果参数设置为 ，则使用当前目录 `C:\App\nm_host.exe` \(\) 启动二 `C:\App\` 进制文件。  
+      主机进程从将当前目录设置为包含主机二进制文件的目录开始。  例如 \ (Windows\) ，如果参数设置为 ，则使用当前目录 `C:\App\nm_host.exe` \ (\) 启动二 `C:\App\` 进制文件。  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -159,7 +159,7 @@ ms.locfileid: "11475209"
 1.  选择 **"加载解压缩**"，然后选择要旁加载的扩展包。  
 1.  选择“确定”****。  
 1.  导航到 `edge://extensions` 页面并验证扩展是否列出。  
-1.  从页面上的扩展 `microsoft_catalog_extension_id` (\(ID\) 复制该密钥。  
+1.  从页面上的扩展 `microsoft_catalog_extension_id` (\ (ID\) 复制该密钥。  
     
 准备好将扩展分发给用户时，将扩展发布到Microsoft Edge加载项商店。  已发布扩展的扩展 ID 可能与旁加载扩展时所使用的 ID 不同。  如果 ID 发生更改，则使用已发布扩展的 `allowed_origins` ID 在主机清单文件中更新。  
 

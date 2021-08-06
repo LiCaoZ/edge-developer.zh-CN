@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 052c75b610ec872329f387e46819867f299a8ca9
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 6809fd3aa39139bbed2e3ea0317d9a8c9a6f1004da26df507790170bd7e8a4e2
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597285"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802293"
 ---
 # <a name="check-for-contrast-issues-with-dark-theme-and-light-theme"></a>检查深色主题和浅主题的对比度问题
 
@@ -47,7 +47,7 @@ ms.locfileid: "11597285"
     
     在我们的演示页面上，页面的 **"私人** 状态"部分在浅色模式下不可读，需要更改。 
     
-    :::image type="complex" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="在浅色模式下，接收状态部分有对比度问题" lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="在浅色模式下，"接收状态"部分有对比度问题" lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
         在 **浅色模式下** ，"接收状态"部分有对比度问题
     :::image-end:::
     
@@ -63,7 +63,7 @@ ms.locfileid: "11597285"
 
 ## <a name="see-also"></a>另请参阅
 
-*  [深色或浅色配色方案模拟][DevToolsColorSchemeSimulation]
+*  [模拟呈现页面中的深色或浅色方案][DevToolsColorSchemeSimulation]
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
 
 
@@ -73,5 +73,5 @@ ms.locfileid: "11597285"
 
 
 <!-- links -->
-[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "深色或浅色配色方案模拟|Microsoft Docs"
+[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "模拟呈现的页面布局中的深色或浅色|Microsoft Docs"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "辅助功能测试演示网页|GitHub"

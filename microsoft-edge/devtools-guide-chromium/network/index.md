@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 63a0c8dc1d481ee3fba93146c2e2925bbdd07203
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: b6151d9b2b2f9654f3185f33477ed0dc27c0bdd5f909a8bd076a6344afe3c8c7
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11565041"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807694"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -68,7 +68,7 @@ ms.locfileid: "11565041"
     :::image-end:::  
     -->
     
-1.  若要[打开 DevTools，][DevToolsOpen]请选择 `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\)。  将 **打开控制台** 工具。  
+1.  若要[打开 DevTools，][DevToolsOpen]请选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\)。  将 **打开控制台** 工具。  
     
     :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="控制台" lightbox="../media/network-glitch-console.msft.png":::
        **控制台**  
@@ -125,7 +125,7 @@ ms.locfileid: "11565041"
 网络日志的列是可配置的。  您可以隐藏您未使用的列。  
 默认情况下，还有许多列处于隐藏状态，您可能会发现这些列很有用。  
 
-1.  将鼠标悬停在"网络日志"表的标题上，打开上下文菜单 \(右键单击\) ，然后选择"域 **"。**  现在将显示每个资源的域。  
+1.  将鼠标悬停在"网络日志"表的标题上，打开上下文菜单 \ (右键单击\) ，然后选择"域 **"。**  现在将显示每个资源的域。  
     
     :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="启用域列" lightbox="../media/network-glitch-network-edit-column.msft.png":::
        启用域列  
@@ -165,7 +165,7 @@ ms.locfileid: "11565041"
 
 屏幕截图显示网页在加载时的外观。  
 
-1.  Choose \(![ Network settings ](../media/settings-icon.msft.png) \) and turn on the Capture **screenshots** checkbox.
+1.  Choose \ (![ Network settings ](../media/settings-icon.msft.png) \) and turn on the Capture **screenshots** checkbox.
 1.  使用"空缓存"和"硬重新加载 **"工作流再次刷新** 页面。  如果需要 [有关操作方式的提醒](#simulate-a-slower-network-connection) ，请导航到"模拟较慢的连接"。  
     Screenshots panel provides thumbnails of how the page looked at various points during the loading process.  
     
@@ -307,7 +307,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
        只显示 CSS 文件  
     :::image-end:::  
     
-1.  若要同时显示脚本，请选择并按住 `Control` \(Windows、Linux\) 或 `Command` \(macOS\) ，然后选择**JS。**  
+1.  若要同时显示脚本，请选择并按住 `Control` \ (Windows、Linux\) 或 `Command` \ (macOS\) ，然后选择**JS。**  
     
     :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="只显示 CSS 和 JS 文件" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
        只显示 CSS 和 JS 文件  

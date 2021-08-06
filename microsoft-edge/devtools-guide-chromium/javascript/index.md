@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: 90a979cebcb74a118cb1d8ce88d48c7ac64c7a6d
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 42032dc16a1a36a4e33730f11486c6d382e0a62d8bb6de000f5bd6f10f9b4831
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564089"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800914"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,7 +35,7 @@ ms.locfileid: "11564089"
 
 查找一系列持续重现 Bug 的操作始终是调试的第一步。  
 
-1.  选择以下"**打开演示**"链接，然后打开新选项卡中的网页。 若要打开新选项卡中的演示，请选择并按住 `Ctrl` \(Windows、Linux\) 或 `Command` \(macOS\) ，然后选择"打开演示 **"。**  
+1.  选择以下"**打开演示**"链接，然后打开新选项卡中的网页。 若要打开新选项卡中的演示，请选择并按住 `Ctrl` \ (Windows、Linux\) 或 `Command` \ (macOS\) ，然后选择"打开演示 **"。**  
     
     [打开演示][OpenDebugJSDemo]  
     
@@ -69,9 +69,9 @@ ms.locfileid: "11564089"
    **源**工具 UI 的 3 个部分  
 :::image-end:::  
 
-1.  上 **图中导航器** 窗格 \(第 1 部分) 。  此处列出了网页请求的所有文件。  
-1.  " **编辑器** "窗格 \(上图第 2 部分) 。  在导航器窗格中选择文件 **后** ，此窗格将显示该文件的内容。  
-1.  调试 **器窗格** \(图\第 3 部分) 。  此窗格提供用于检查网页的 JavaScript 的工具。  如果 DevTools 窗口很宽，则此窗格显示在"编辑器"窗格 **的右侧** 。  
+1.  上 **图中导航器** 窗格 \ (第 1 部分) 。  此处列出了网页请求的所有文件。  
+1.  " **编辑器** "窗格 \ (上图第 2 部分) 。  在导航器窗格中选择文件 **后** ，此窗格将显示该文件的内容。  
+1.  调试 **器窗格** \ (图\第 3 部分) 。  此窗格提供用于检查网页的 JavaScript 的工具。  如果 DevTools 窗口很宽，则此窗格显示在"编辑器"窗格 **的右侧** 。  
     
 ## <a name="step-3-pause-the-code-with-a-breakpoint"></a>步骤 3：使用断点暂停代码  
 
@@ -102,7 +102,7 @@ function updateLabel() {
 1.  在**鼠标**事件类别旁，选择“**展开**” \(![展开图标](../media/expand-icon.msft.png)\)。  开发工具显示鼠标事件的列表，如**单击**和**鼠标按下**。  每个事件旁边都有一个复选框。  
 1.  选中“**单击**”旁边的复选框。  现在开发工具设置为在运行任何 `click` 事件侦听器时自动暂停。  
     
-    :::image type="complex" source="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png" alt-text="选中单击旁边的复选框" lightbox="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png" alt-text="选中“单击”旁边的复选框" lightbox="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png":::
        选中“**单击**”旁边的复选框  
     :::image-end:::  
     
@@ -172,7 +172,7 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 监视 **窗格** 允许您监视变量的值，例如 (或) `sum` 表达式 (如 `typeof sum`) 。  可以将任何有效的 JavaScript 表达式存储在监视表达式中。  
 
 1.  选择" **监视"** 窗格。  
-1.  Choose **Add watch expression** \(Add watch expression ![ ](../media/add-expression-icon.msft.png) \) .  
+1.  Choose **Add watch expression** \ (Add watch expression ![ ](../media/add-expression-icon.msft.png) \) .  
 1.  键入 `typeof sum`。  
 1.  选择 `Enter`。  DevTools 显示 `typeof sum: "string"` 。  冒号右边的值是监视表达式的结果。  
     

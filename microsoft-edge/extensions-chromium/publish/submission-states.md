@@ -7,14 +7,14 @@ ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 881166471ec5fabb66367ead650cb86b883cf01d
-ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
+ms.openlocfilehash: fee28cf377582e670080f489c442a7c7130aa7448c122d206e47605104219fbb
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "11343141"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807946"
 ---
-# 加载项应用商店中Microsoft Edge的提交状态  
+# <a name="submission-states-for-extensions-in-the-microsoft-edge-add-ons-store"></a>加载项应用商店中Microsoft Edge的提交状态  
 
 合作伙伴中心的概述页面显示整个提交流中的扩展状态。  本文介绍了你的扩展在提交和认证过程中随时可能处于的不同状态。  
 

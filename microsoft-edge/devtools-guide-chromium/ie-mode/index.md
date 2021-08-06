@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， ie11， Internet Explorer 11， ie 模式
-ms.openlocfilehash: e960dd5db4f253fbd5144194555c303dfc168e0f
-ms.sourcegitcommit: 9f5dd05432f87339f4c3d71f1f9ce1d06afcaf4b
+ms.openlocfilehash: c744e13a8d0de3b425247faa1513c2f08edbf325fb9a084c4c5dc54c7059059f
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "11675125"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11799605"
 ---
 # <a name="internet-explorer-mode-and-the-devtools"></a>Internet Explorer模式和 DevTools  
 

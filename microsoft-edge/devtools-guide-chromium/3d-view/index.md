@@ -7,12 +7,12 @@ ms.date: 12/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: bd91939a19f02a426834a85ef92eca388f8f1eda
-ms.sourcegitcommit: 5e218b24fb21fcfa9c82b99f17373fed1ba5a21c
-ms.translationtype: HT
+ms.openlocfilehash: f5b59372a5f96a4a7184f383925586938658bd579b2612555514474515f9388e
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "11203968"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800646"
 ---
 # <a name="3d-view"></a>3D 视图  
 

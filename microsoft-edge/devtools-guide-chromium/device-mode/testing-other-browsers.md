@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: f2ca56c2e15f578a970e6ceb84b1554bfda53862
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 266f2946d8132cf62ff6ed1ea32759020e4b03101150704faa4b27dfdd61ec5e
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564278"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803663"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -47,7 +47,7 @@ Firefox 具有响应 [式][MDNResponsiveDesignMode] 设计视图，该视图鼓�
 
 ### <a name="edgehtml-emulation"></a>EdgeHTML 模拟  
 
-若要模拟Windows Phones，请使用 Microsoft Edge \(EdgeHTML\) [内置模拟][ArchiveMicrosoftEdgeDevtoolsEmulation]。  
+若要模拟Windows Phones，请使用 Microsoft Edge \ (EdgeHTML\) [内置模拟][ArchiveMicrosoftEdgeDevtoolsEmulation]。  
 
 使用 [IE 11 仿真][Ie11DevToolsEmulation] 模拟页面在早期版本的 Internet Explorer。  
 
@@ -111,7 +111,7 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 完成后，了解如何通过 Apple 开发人员文档使用 [模拟器][AppleSimulatorHelp]。  
 
 > [!NOTE]
-> 若要避免每次想要使用 iOS 模拟器时都打开 Xcode，请将其打开，将鼠标悬停在扩展坞中的 iOS 模拟器图标上，打开上下文菜单 \(右键单击\) ，然后选择"保持在扩展坞中 **"。**  现在只要需要图标即可。  
+> 若要避免每次想要使用 iOS 模拟器时都打开 Xcode，请将其打开，将鼠标悬停在扩展坞中的 iOS 模拟器图标上，打开上下文菜单 \ (右键单击\) ，然后选择"保持在扩展坞中 **"。**  现在只要需要图标即可。  
 
 ###  <a name="microsoft-edge-edgehtml"></a>Microsoft Edge (EdgeHTML)   
 
@@ -119,13 +119,14 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
    新式 IE VM  
 :::image-end:::  
 
-Microsoft Edge \(EdgeHTML\) Virtual Machines \(VM\) 可使你通过 VirtualBox \(或 VMWare\) 访问计算机上不同版本的 EdgeHTML 和 IE。  在 [下载页面上选择虚拟机][MicrosoftDeveloperEdgeVms]。  
+Microsoft Edge \ (EdgeHTML\) Virtual Machines \ (VM\) 可使你通过 VirtualBox \ (或 VMWare\) 访问计算机上不同版本的 EdgeHTML 和 IE。  在 [下载页面上选择虚拟机][MicrosoftDeveloperEdgeVms]。  
 
 ## <a name="cloud-based-emulators-and-simulators"></a>基于云的模拟器和模拟器  
 
 如果你无法使用仿真器，并且无法访问真实设备，则基于云的仿真器是下一个最佳选择。  与实际设备和本地仿真器不同，基于云的模拟器的一大优点是，可以跨不同平台自动执行网站单元测试。  
 
 *   [BrowserStack (商业) ][|::ref1::|] 是最容易用于手动测试。  选择操作系统，选择浏览器版本和设备类型，选择要浏览的 URL，然后它会调节可与你交互的托管虚拟机。  还可以在同一个屏幕中运行多个仿真器，从而可以同时跨多个设备测试应用的外观。  
+*   [LambdaTest (商业 ][|::ref2::|]) 可帮助你在 2000 多个浏览器和操作系统的组合上执行手动跨浏览器测试。 用户可以录制复杂 Bug 的视频并通过集成（如 Microsoft Teams、Slack 等）共享它们。 用户可以通过并行运行测试来加快测试速度。
 *   [使用 Commercial (Labs) ][SauceLabs] 可以在仿真器内运行单元测试，这可能非常有用，可用于编写通过网站的流脚本，并随后在各种设备上观看有关此内容的视频录制。  您还可以对网站执行手动测试。  
 *   [商业 (设备) ][AppExperience] 不使用仿真器，而是使用你可以远程控制的真实设备。  如果你需要在特定设备上重现问题，并且可能未使用之前指南中的任一选项显示 Bug，这将非常有用。  
 
@@ -143,7 +144,7 @@ Microsoft Edge \(EdgeHTML\) Virtual Machines \(VM\) 可使你通过 VirtualBox \
 
 [AndroidStudioCreateManageVirtualDevices]: https://developer.android.com/tools/devices/managing-avds.html "创建和管理虚拟设备|Android 开发人员"  
 [AndroidStudioDownload]:  https://developer.android.com/sdk/installing/studio.html "下载 Android Studio 和 SDK |Android 开发人员"  
-[AndroidStudioRunAppsAndroidEmulator]: https://developer.android.com/tools/devices/emulator.html "在 Android 仿真器设备上|Android 开发人员"  
+[AndroidStudioRunAppsAndroidEmulator]: https://developer.android.com/tools/devices/emulator.html "在 Android 设备上Emulator |Android 开发人员"  
 
 [AppExperience]: https://www.sigos.com/app-experience/ "应用体验"  
 [AppleSimulatorHelp]: https://help.apple.com/simulator/mac/current "模拟器帮助 - 当前|Apple"  
@@ -152,13 +153,14 @@ Microsoft Edge \(EdgeHTML\) Virtual Machines \(VM\) 可使你通过 VirtualBox \
 [MDNResponsiveDesignMode]: https://developer.mozilla.org/docs/Tools/Responsive_Design_View "响应式设计|MDN"  
 [MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "下载 Firefox 浏览器"  
 [SauceLabs]: https://saucelabs.com "一些实验室"  
+[LambdaTest]: https://www.lambdatest.com/ "LambdaTest" 
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)由[Meggin Kearney][MegginKearney] \(Tech Writer\) 和[Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate 在 Google |工具、性能、动画、UX\) 。  
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)由[Meggin Kearney][MegginKearney] \ (Tech Writer\) 和[Paul Bakaus][PaulBakaus] \ (Open Web Developer Advocate 在 Google |工具、性能、动画、UX\) 。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
+本作品根据 [知识共享署名 4.0 国际许可 ][CCA4IL] 获得许可。  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

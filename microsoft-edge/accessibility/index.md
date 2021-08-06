@@ -8,14 +8,14 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.assetid: 1e5c42a7-4604-46ac-ad7b-a65390e5b36a
 keywords: 辅助功能， 开发人员辅助功能， 可访问的网站， 边缘， Web 开发， ARIA， 开发人员， UIA， UI 自动化
-ms.openlocfilehash: ae2b0a876b60e0475e283cc52ffd14275fc32aba
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 4c0acadcf6fccba16b4b6431a6f82b7355c50982e9a264e65227e439a8e7e737
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11232174"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800170"
 ---
-# 辅助功能概述  
+# <a name="accessibility-overview"></a>辅助功能概述  
 
 > "\[T\]他对残障的影响在 Web 上彻底更改，因为 Web 消除了许多人在物理世界面临的通信和交互障碍。" [ (辅助功能|W3C) ][W3CAccessibility]  
 
@@ -25,9 +25,9 @@ ms.locfileid: "11232174"
 
 下面是一些最佳实践、代码示例和更多资源，可让你了解有关在 Microsoft Edge 中设计、构建[][AccessibilityBuild]和测试可访问网站[][AccessibilityTest]Microsoft Edge。 [][AccessibilityDesign]  
 
-##  <a name="accessibility-in-microsoft-edge"></a>Microsoft Edge  
+## <a name="accessibility-in-microsoft-edge"></a>Microsoft Edge  
 
-在 Microsoft Edge 中，我们引入了现代[UI 自动化 API][WindowsWin32AutoEntryui] \(UIA API\) 。  UIA 的变化是浏览器辅助功能的主要投资，它为依赖于 Windows 10 中的辅助技术的用户提供更具包容性的 Web 体验打下基础。  用户还可以从网络引擎的常绿Chromium中获益。  
+在 Microsoft Edge 中，我们引入了现代[UI 自动化 API][WindowsWin32AutoEntryui] \ (UIA API\) 。  UIA 的变化是浏览器辅助功能的主要投资，它为依赖于 Windows 10 中的辅助技术的用户提供更具包容性的 Web 体验打下基础。  用户还可以从网络引擎的常绿Chromium中获益。  
 
 企业中的辅助功能系统Microsoft Edge支持现代 Web 标准，包括 ARIA、HTML5 和 CSS3。  简化的浏览器管道的下图将网页内容放入可访问的表示层。  
 
@@ -39,13 +39,13 @@ Microsoft Edge团队持续与 W3C 和其他浏览器供应商合作，以确保�
 
 有关哪些新 HTML5 功能可供用户访问Microsoft Edge，请导航到["HTML5Accessibility"。][HTML5Accessibility]  
 
-##  <a name="resources"></a>资源  
+## <a name="resources"></a>资源  
 
-#### Microsoft Windows UI 自动化博客  
+#### <a name="microsoft-windows-ui-automation-blog"></a>Microsoft Windows UI 自动化博客  
 
 [Microsoft Windows UI 自动化博客][ArchiveBlogsWinuiautomation]涵盖了与 Windows 自动化 API 相关的主题。  
 
-#### Web 辅助功能计划 (，)   
+#### <a name="web-accessibility-initiative-wai"></a>Web 辅助功能计划 (，)   
 
 Web [辅助功能计划 (一) ， ][W3CWaiHome] 提供 bt W3C 是帮助改善 Web 辅助功能的一项工作。  该网站为 Web 辅助功能入门、[][W3CWaiGettingstartedOverview]包含设计、教程和演示文稿等[][W3CWaiFundamentals][提供了][W3CWaiTeachAdvocate]各种资源。  
 

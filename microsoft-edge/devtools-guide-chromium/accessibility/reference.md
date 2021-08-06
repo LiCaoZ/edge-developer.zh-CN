@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: a906d60bb74d927fd86c21af1535a8f62eb93cad
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: db386e9c4bf3f94e2f607a356acafdceb040f0833ac5f5f0cb9cc2655e5d63c1
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597038"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802595"
 ---
 # <a name="accessibility-testing-features-in-devtools"></a>DevTools 中的辅助功能测试功能
 

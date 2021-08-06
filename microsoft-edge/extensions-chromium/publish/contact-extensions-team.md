@@ -7,12 +7,12 @@ ms.date: 02/17/2021
 ms.topic: support
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， 支持
-ms.openlocfilehash: 4f72e0f0a738d6c89ffd0dcc80bf271d8517d1b2
-ms.sourcegitcommit: 0e67a56b9dc1f7a86924d142db0efd36fd99d38b
+ms.openlocfilehash: 90a20bbce030393036750b559a9cc19198fc6df3c8dba517a30deeaa9c9cd471
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "11608658"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798258"
 ---
 # <a name="contact-microsoft-edge-extension-support"></a>联系Microsoft Edge扩展支持  
 

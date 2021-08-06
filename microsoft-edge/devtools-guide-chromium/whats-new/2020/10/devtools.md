@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: c7859631327fc031909cd25736fddb8cff3cff45
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: cddf5848056f15edecfc301723b9b290b5a1d91b4195e139d2ddaa61ef8de82f
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564894"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798055"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -49,18 +49,18 @@ ms.locfileid: "11564894"
 
 ## <a name="move-tools-between-top-and-bottom-panels"></a>在顶部和底部面板之间移动工具  
 
-DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时查看两个工具的任意组合来自定义 DevTools 并提高工作效率。  例如，将"源****"工具移动到**** 底部\(的同时查看"元素"和"源") 。 ****  若要在开放源代码项目中查看此功能的Chromium，请导航到"问题[#1075732"。][CR1075732]  
+DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时查看两个工具的任意组合来自定义 DevTools 并提高工作效率。  例如，将"源****"工具移动到**** 底部\ (的同时查看"元素"和"源") 。 ****  若要在开放源代码项目中查看此功能的Chromium，请导航到"问题[#1075732"。][CR1075732]  
 
 :::row:::
    :::column span="":::
-      若要将任何顶部工具移动到底部，请将鼠标悬停在选项卡上，打开上下文菜单 \(右键单击\) ，然后选择"移动到**底部"。**  
+      若要将任何顶部工具移动到底部，请将鼠标悬停在选项卡上，打开上下文菜单 \ (右键单击\) ，然后选择"移动到**底部"。**  
       
       :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="移动到底部" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
          移动到底部  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      若要将任何底部工具移动到顶部，请将鼠标悬停在选项卡上，打开上下文菜单 \(右键单击\) ，然后选择"移动到**顶部"。**  
+      若要将任何底部工具移动到顶部，请将鼠标悬停在选项卡上，打开上下文菜单 \ (右键单击\) ，然后选择"移动到**顶部"。**  
       
       :::image type="complex" source="../../media/2020/10/move-to-top.msft.png" alt-text="移动到顶部" lightbox="../../media/2020/10/move-to-top.msft.png":::
          移动到顶部  
@@ -121,7 +121,7 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
 
 现在，你可以为 DevTools 中任何操作自定义键盘快捷方式。  自 Microsoft Edge版本 84 起，你可以选择在 Visual Studio Code**** 和**DevTools** (键盘快捷方式的默认) [预设][DevtoolsCustomizeShortcuts]。  从 Microsoft Edge版本 87 开始，你可以打开启用键盘快捷方式**编辑器**实验以进一[步自定义键盘快捷方式][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]。  
 
-若要启用实验，请导航到[打开实验功能][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]，然后选择"启用键盘快捷方式编辑器"旁边的**复选框。**  有关自定义和编辑快捷方式的信息，请导航到 [DevTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]中任何操作编辑键盘快捷方式。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[#174309"][CR174309]。  
+若要启用实验，请导航到[打开实验功能][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]，然后选择"启用键盘快捷方式编辑器"旁边的**复选框。**  有关自定义和编辑快捷方式的详细信息，请导航到“[编辑开发工具中任何操作的键盘快捷方式][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]”。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[#174309"][CR174309]。  
 
 :::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="用于暂停脚本的自定义快捷方式" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
    用于暂停脚本的自定义快捷方式  
@@ -164,7 +164,7 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
     
 有关**WebAuthn 功能的更多信息**，请导航到 [在 Microsoft Edge DevTools][DevtoolsWebauthnIndex 中模拟验证器和调试 WebAuthn]。  
 
-您可以使用新的 [WebAuthn][DevtoolsWebauthnIndex] 工具模拟验证器并调试 [Web][GithubW3cWebauthn] 身份验证 API。  若要打开**WebAuthn**工具，请选择自定义和控制**DevTools** \(`...` \) 图标>**更多工具**  >  **WebAuthn。**  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[#1034663"。][CR1034663]  
+您可以使用新的 [WebAuthn][DevtoolsWebauthnIndex] 工具模拟验证器并调试 [Web][GithubW3cWebauthn] 身份验证 API。  若要打开**WebAuthn**工具，请选择自定义和控制**DevTools** \ (`...` \) 图标>**更多工具**  >  **WebAuthn。**  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[#1034663"。][CR1034663]  
 
 :::row:::
    :::column span="":::
@@ -187,7 +187,7 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="打开计算边栏窗格" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="打开"计算边栏"窗格" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
          打开 **"计算边栏"** 窗格  
       :::image-end:::  
    :::column-end:::  
@@ -200,7 +200,7 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
 
 #### <a name="grouping-css-properties-in-the-computed-panel"></a>在计算面板中对 CSS 属性进行分组  
 
-若要以更少的滚动量查看应用的 CSS，请按"计算"窗格中的类别对 CSS **属性进行** 分组。  在检查 CSS 时，还可以有选择地专注于一组相关属性。  从" **元素"** 工具中，选择一个元素。  若要将 \(或取消组合\) CSS 属性，请切换 **"组"** 复选框。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题#1096230、#1084673和[#1106251。][CR1106251] [][CR1096230] [][CR1084673]  
+若要以更少的滚动量查看应用的 CSS，请按"计算"窗格中的类别对 CSS **属性进行** 分组。  在检查 CSS 时，还可以有选择地专注于一组相关属性。  从" **元素"** 工具中，选择一个元素。  若要将 \ (或取消组合\) CSS 属性，请切换 **"组"** 复选框。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题#1096230、#1084673和[#1106251。][CR1106251] [][CR1096230] [][CR1084673]  
 
 :::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="对 CSS 属性进行分组" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
    对 CSS 属性进行分组  
@@ -242,7 +242,7 @@ performance.mark('end');
 
 #### <a name="display-coep-and-coop-reporting-to-endpoint"></a>向终结点显示 COEP 和 COOP 报告  
 
-查看"安全与隔离"部分下的跨源嵌入器策略 \(COEP\) 和跨源打开器策略 \(COOP\) `reporting to` **&** 终结点。  报告 [API][MdnReportingApi] 定义一个新的 HTTP 标头，它为你提供了一种指定浏览器服务器终结点以 `Report-To` 发送警告和错误的方法。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[#1051466"。][CR1051466]  
+查看"安全与隔离"部分下的跨源嵌入器策略 \ (COEP\) 和跨源打开器策略 \ (COOP\) `reporting to` **&** 终结点。  报告 [API][MdnReportingApi] 定义一个新的 HTTP 标头，它为你提供了一种指定浏览器服务器终结点以 `Report-To` 发送警告和错误的方法。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[#1051466"。][CR1051466]  
 
 :::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="报告到终结点" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
    `reporting to`终结点  
@@ -288,9 +288,9 @@ CSS **概述** 工具现在显示页面上具有颜色对比度问题的元素�
 
 [DevtoolsConsoleIndex]: ../../../console/index.md "使用控制台|Microsoft Docs"  
 [DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]:  ../../../console/utilities.md#recently-chosen-element-or-javascript-object "最近选择的元素或 JavaScript 对象 - 控制台实用程序 API |Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "自定义 Microsoft Edge DevTools 中的键盘快捷方式 | Microsoft Docs"  
-[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "编辑 DevTools 工具中任何操作|Microsoft Docs"  
-[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "在 DevTools |Microsoft Docs"  
+[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action "为 DevTools 中的任何操作编辑键盘快捷方式 | Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "在 Microsoft Edge 开发人员工具中模拟移动设备 | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReference]: ../../../evaluate-performance/reference.md "性能分析参考|Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: ../../../experimental-features/index.md#emulation-support-dual-screen-mode "模拟：支持双屏幕模式 - 实验|Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features.md#enable-experimental-apis "启用实验性 API - 实验|Microsoft Docs"  

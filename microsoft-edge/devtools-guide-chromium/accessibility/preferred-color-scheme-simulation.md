@@ -1,60 +1,71 @@
 ---
-description: 强制Microsoft Edge开发人员工具进入配色方案预览模式。
-title: '强制Microsoft Edge开发工具进入配色方案预览模式 (CSS 首选配色方案) '
+description: 呈现模拟用户的深色或浅色方案操作系统设置或浏览器设置的网页，而无需更改你自己的计算机设置。  将 CSS 媒体查询与 DevTools 呈现选项一起用于 prefers-color-scheme。
+title: 模拟呈现页面中的深色或浅色方案
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: dc2911ce7a7fcbeef7763099541822b5cd6cf053
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: c233fc26af5b4c1b061b84e7dd3998b24671696b261c345d8affa8f4b550e50d
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597067"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802613"
 ---
-# <a name="dark-or-light-color-scheme-simulation"></a>深色或浅色配色方案模拟  
+# <a name="emulate-dark-or-light-schemes-in-the-rendered-page"></a>模拟呈现页面中的深色或浅色方案
 
-许多操作系统都有一种以较暗或更浅的颜色显示任何应用程序的方法。  在深色模式操作系统中具有浅色主题的 Web 产品很正常，并且对于某些用户来说可能是一个辅助功能问题。  
+许多操作系统都有一种以较暗或更浅的颜色显示任何应用程序的方法。  在深色模式操作系统中具有浅色方案的网页产品可能难以阅读，并且对于一些用户可能是一个辅助功能问题。  
 
-对于网页，您可以使用首选配色 [方案][MDNPrefersColorScheme] CSS 媒体查询来检测用户是否希望以较暗或更浅的配色方案显示产品。  然后，若要测试结果，Microsoft Edge [DevTools][DevtoolsIndex]模拟从深色模式到浅色模式的变化，而无需更改整个操作系统的设置。  
+若要测试当用户选择深色或浅色模式时网页的呈现方式，而不是更改你自己的计算机深色模式或浅色模式设置，可以在 Microsoft Edge DevTools 中选择模拟**CSS 首选**配色方案：深色或**** 浅色。  可以从命令菜单或呈现工具**** 执行此操作，如下所述****。
 
-**模拟深色或浅色主题：**
+或者，也可以使网页根据计算机上自己的首选设置自动选择深色或浅色模式，选择"无 **模拟**"，这是默认设置。
 
-1.  打开“**命令菜单**”。  
-    1.  选择 `Ctrl` + `Shift` + `P` \(Windows/Linux\) `Command` + `Shift` + `P` 或 \(macOS\) 。  
-        
-        :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="命令菜单" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-           **命令菜单**  
-        :::image-end:::  
-        
-1.  键入 `emulate color` ，选择模拟 **CSS prefers-color-scheme： dark** 或 Emulate CSS **prefers-color-scheme： light，** 然后选择 `Enter` 。  
-    
-    :::image type="complex" source="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png" alt-text="命令菜单中的配色方案选项" lightbox="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png":::
-       命令菜单中的 **配色方案** 选项  
+若要指定用于浅色和深色配色方案 CSS，请使用 [首选][MDNPrefersColorScheme] 配色方案 CSS 媒体查询来检测用户是否希望以深色或浅色配色方案显示产品，然后自动选择您自己的自定义浅色或深色模式 CSS。  示例 CSS 代码显示在检查深色主题和浅色 [主题的对比度问题中](test-dark-mode.md)。
+
+本文介绍更改开发中网页的外观。  若要改为更改 DevTools 的显示方式，请导航到 [将颜色主题应用到 DevTools][DevtoolsCustomizeTheme]。
+
+
+## <a name="emulating-dark-or-light-mode-using-the-rendering-tool"></a>使用呈现工具模拟深色或浅色模式
+
+1.  在 DevTools 中，打开 **呈现** 工具。  为此，您可能需要选择主工具栏上的"更多工具****" (+) 图标，然后选择"呈现 **"。**
+
+1.  在模拟 **CSS 媒体功能 prefers-color-scheme** 下拉列表中，选择 **prefers-color-scheme： dark** or **prefers-color-scheme： light**。
+
+    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="使用呈现工具模拟深色或浅色模式" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
+       使用呈现工具模拟深色或 **浅色** 模式
     :::image-end:::  
-    
-    > [!IMPORTANT]
-    > 只需键入或不会显示正确的工具，因为还有一种方法可以选择 `dark` `light` [DevTools 的主题][DevtoolsCustomizeDarkTheme]。  如果想知道要选择什么，请确保选择的是呈现菜单项，而不是**外观**菜单项****。  
 
-1.  选择配色方案后，刷新当前文档以显示模拟模式。  
-    
-    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="DevTools Microsoft Edge模拟光模式" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
-       DevTools Microsoft Edge模拟光模式  
+1.  刷新页面以显示呈现的结果。
+
+    现在，您可以修改 CSS，并像查看任何其他网页一样查看呈现的结果。  有关详细信息，请导航到开始[查看和更改 CSS。][DevtoolsCssIndex]  
+
+1.  若要还原该设置，请在"**** 呈现"工具中的"**模拟 CSS 媒体功能首选-** 配色方案"下拉列表中，选择"无**模拟"。**  刷新页面时，将应用你自己的用于浅色或深色模式首选项的操作系统或浏览器设置。
+
+
+## <a name="emulating-dark-or-light-mode-using-the-command-menu"></a>使用命令菜单模拟深色或浅色模式
+
+1.  当 DevTools 具有焦点时****，通过选择 `Ctrl` + `Shift` + `P` \ (Windows/Linux\) 或 `Command` + `Shift` + `P` \ (macOS\) 打开命令菜单。  
+
+1.  键入"dark"、"light"或"emulate"。  然后选择呈现 **：模拟 CSS 首选配色方案：深色** 或呈现 **：模拟 CSS 首选配色方案：浅**色，然后选择 **Enter**。
+
+    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="使用命令菜单上的"呈现：模拟 CSS prefers-color-scheme"命令模拟深色或浅色模式" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+        使用呈现模拟深色或浅色 **模式：模拟命令** 菜单上的 CSS 首选配色方案命令
     :::image-end:::  
-    
-    像查看任何其他网页一样查看和更改 CSS。  有关详细信息，请导航到开始[查看和更改 CSS。][DevtoolsCssIndex]  
 
+    选择" **呈现"** 命令而不是 **"外观"** 命令。  " **呈现** "命令会影响开发中呈现的网页。  Appearance **** 命令会改为影响窗口的 DevTools 部分。
 
-## <a name="see-also"></a>另请参阅
+1.  刷新页面以显示呈现的结果。
+   
+    现在，您可以修改 CSS，并像查看任何其他网页一样查看呈现的结果。  有关详细信息，请导航到开始[查看和更改 CSS。][DevtoolsCssIndex]  
 
-* [检查深色主题和浅主题的对比度问题](test-dark-mode.md)
+1.  若要还原该设置，请在"命令菜单"中键入"模拟"或"方案"，然后选择"呈现 **：不模拟 CSS 首选颜色方案"。**  刷新页面时，将应用你自己的用于浅色或深色模式首选项的操作系统或浏览器设置。
 
 
 <!-- links -->  
 [DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"  
-[DevtoolsCustomizeDarkTheme]: ../customize/dark-theme.md "在 DevTools Microsoft Edge中启用深色|Microsoft Docs"
+[DevtoolsCustomizeTheme]: ../customize/theme.md "将颜色主题应用到 DevTools |Microsoft Docs"
 [DevtoolsCssIndex]: ../css/index.md "开始查看和更改 CSS |Microsoft Docs"  
 <!-- external links -->
 [MDNPrefersColorScheme]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme "prefers-color-scheme |MDN"  

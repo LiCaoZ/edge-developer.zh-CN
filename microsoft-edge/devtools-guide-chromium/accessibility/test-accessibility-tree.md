@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 0ab5e5609485505d1ad5fa6e2fffced9af25edcb
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: 6dc8456cce195402f41eb1c944fd01ef4541a1d43df175800b0f46b571400df1
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597300"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802571"
 ---
 # <a name="check-the-accessibility-tree-for-keyboard-and-screen-reader-support"></a>检查辅助功能树是否支持键盘和屏幕阅读器
 
@@ -35,7 +35,7 @@ ms.locfileid: "11597300"
 
 1.  在" **样式"选项卡** 的右侧，选择 **"辅助功能"** 选项卡。 将显示 **元素的** 辅助功能树，并展开。
 
-:::image type="complex" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="辅助功能树工具中的资金表单按钮" lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
+:::image type="complex" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="辅助功能树工具中的"资金"表单按钮" lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
     辅助功能树工具中的"资金"表单按钮
 :::image-end:::
 

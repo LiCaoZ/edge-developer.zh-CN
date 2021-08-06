@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， webdriver， selenium， 测试， 工具， 自动化， 测试
-ms.openlocfilehash: 33b9d53b72a16a9c02a03a43679137d25de0025f
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+ms.openlocfilehash: 1d7dbfb6071efde3a5f31534351668e475973f2133fc3ba0f91c4fb812ce0f8b
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624764"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798783"
 ---
 # <a name="capabilities-and-edgeoptions"></a>功能和 EdgeOptions  
 
@@ -71,7 +71,7 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 
 词典 `perfLoggingPrefs` 具有以下格式 \ (所有键都是可选的\) 。  
 
-| 项 | 类型 | 默认值 | 详细信息 |  
+| 键 | 类型 | 默认值 | 详细信息 |  
 |:--- |:--- |:--- |:--- |  
 | bufferUsageReportingInterval | 正整数 | 1000 | DevTools 跟踪缓冲区使用事件之间请求的毫秒数。  例如，如果为 1000，则每秒一次，DevTools 将报告跟踪缓冲区的已满。  如果报告指示缓冲区使用率为 100%，则发出警告。 |  
 | enableNetwork | 布尔型 | true | 从网络 (收集 \) 事件。 |  

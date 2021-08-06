@@ -4,12 +4,12 @@ ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
 ms.date: 12/09/2020
-ms.openlocfilehash: 8c0d978497b443701d8db3f694f89cd92f79c524
-ms.sourcegitcommit: 2ddfd98d1e871be9c61380a8ca57da398d38bd54
-ms.translationtype: HT
+ms.openlocfilehash: 53a2d4a9a3ea28560b25bff8d959bc372d83d072595f30ba332c32eda7808d4f
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11205640"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11797881"
 ---
 使用以下选项讨论帖子中的新功能和更改，或与 DevTools 相关的任何其他内容。  
 

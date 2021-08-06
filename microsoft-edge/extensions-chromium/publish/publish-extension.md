@@ -7,12 +7,12 @@ ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: aadb3470eb295934cde4ad26b089ac0c83898e5c
-ms.sourcegitcommit: 7cba715ef71cbac4ee0ebe8f07c0c0e4a2c64221
+ms.openlocfilehash: 56bdb6b7c6991f3eeb9393ffa0871db817f98eabbfa2901024d1d56448d46701
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "11643240"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803242"
 ---
 # <a name="publish-your-extension"></a>发布扩展  
 
@@ -20,7 +20,7 @@ ms.locfileid: "11643240"
 
 将扩展发布到Microsoft Edge加载项应用商店，以增加其范围，使其可供Microsoft Edge用户使用。  本文提供将扩展提交到加载项Microsoft Edge的过程。  
 
-## <a name="before-you-begin"></a>在开始之前  
+## <a name="before-you-begin"></a>在你开始前  
 
 你应该已准备好扩展的工作原型。  若要了解如何创建扩展，请参阅 [入门教程][ExtensionsGettingStarted]。  
 

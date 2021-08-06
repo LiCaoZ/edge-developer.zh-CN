@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: fabfa21abedb02bc83ec2bedbe3662f0d81c1bf9
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+keywords: microsoft edge、web 开发、f12 工具、开发工具
+ms.openlocfilehash: b445b0f6afda67f1d8cc46a9f1b4d2e02ae496ac205f04282796343839ca40ef
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624806"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11805988"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -118,7 +118,7 @@ Chromium问题[#1081486][CR1081486]
 
 在 Microsoft Edge 84 中，[][DevtoolsNetworkDetails]当您在网络日志中**** 为资源打开"网络"工具中的"详细信息"窗格时，它[现在将具有焦点][DevtoolsNetworkLog]。  此更改允许屏幕阅读器读出"详细信息"窗格的内容并 **与之** 交互。  
 
-:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="网络面板中的详细信息窗格在打开时将焦点" lightbox="../../media/2020/05/network-details.msft.png":::
+:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text=""网络"面板中的"详细信息"窗格在打开时将焦点" lightbox="../../media/2020/05/network-details.msft.png":::
    " **网络** "工具中的" **详细信息** "窗格在打开时将焦点
 :::image-end:::  
 
@@ -134,7 +134,7 @@ DevTools"箱"中新增的"问题"工具是为了帮助减少控制台的通知�
 
 To get started， navigate to [Find and fix problems using the Issues tool][DevtoolsIssuesIndex].  
 
-:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="DevTools箱中的问题工具" lightbox="../../media/2020/05/issues.msft.png":::
+:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="DevTools"箱"中的"问题"工具" lightbox="../../media/2020/05/issues.msft.png":::
    DevTools"箱"中的"问题"工具****  
 :::image-end:::  
 
@@ -233,7 +233,7 @@ Chromium问题[#1040019][CR1040019]
 
 当你通过选择值来选择[][DevtoolsCssReferenceColorPicker]颜色选取器或在"样式"窗格中的颜色表示形式**** 之间交替选择颜色时，将显示空格分隔 `Shift` `background-color` 的参数语法。  
 
-:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="在样式窗格中使用空格分隔的参数" lightbox="../../media/2020/05/color.msft.png":::
+:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="在"样式"窗格中使用空格分隔的参数" lightbox="../../media/2020/05/color.msft.png":::
   在"样式"窗格中使用 **空格分隔** 的参数  
 :::image-end:::  
 
@@ -266,7 +266,7 @@ Elements **** 工具中的"**属性**"窗格已弃用。  改为 `console.dir($0
 
 <!--todo:  add link Get things done quickly with app shortcuts (WebdevAppShortcuts) when section is live -->  
 
-:::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text="清单窗格中的应用快捷方式" lightbox="../../media/2020/05/app-shortcuts.msft.png":::
+:::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text=""清单"窗格中的应用快捷方式" lightbox="../../media/2020/05/app-shortcuts.msft.png":::
   "清单"窗格中 **的应用** 快捷方式  
 :::image-end:::  
 

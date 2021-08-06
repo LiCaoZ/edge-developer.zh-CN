@@ -7,12 +7,12 @@ ms.date: 06/02/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 09e1438ae7fd6547a7dd14757f54f370c9008773
-ms.sourcegitcommit: 1dd6376784c394087fe2938acaa069212cf7656e
-ms.translationtype: HT
+ms.openlocfilehash: cf8b45730e60d95f27595739446b730ce21bdfe1fe228a2bee0af33471a4581b
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "11659426"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11806789"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-92"></a>DevTools 中的新增功能 (Microsoft Edge 92)
 

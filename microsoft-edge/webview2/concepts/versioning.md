@@ -3,95 +3,153 @@ description: 用于 WebView2 Microsoft Edge模型
 title: 了解 WebView2 SDK 版本
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 08/03/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 645eb4e50ba6bd74ab046b09d7071ff3c375a923
-ms.sourcegitcommit: 9f5dd05432f87339f4c3d71f1f9ce1d06afcaf4b
+ms.openlocfilehash: b5edd47d7c4defcc6d9e8225e0d8708ba40a2085b1c4d580a8332b8193861a29
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "11675118"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11808275"
 ---
-# <a name="understand-webview2-sdk-versions"></a>了解 WebView2 SDK 版本  
+# <a name="understand-webview2-sdk-versions"></a>了解 WebView2 SDK 版本
 
-新版本的 WebView2 SDK 的发布常规节奏与 Microsoft Edge \ (Chromium\) 浏览器相同，大约每六周发布一次。  
+WebView2 SDK NuGet包同时包含发布包和预发行版包。  将预发行版 SDK 与预览频道一Microsoft Edge，或将发布 SDK 与 WebView2 运行时一同使用。
 
-## <a name="release-and-prerelease-package"></a>发布和预发布包  
+_预发布_ 如果要在将支持这些 API 添加到运行时之前测试最新的 WebView2 API（包括实验性 API），则 SDK 包在开发过程中使用。  建议使用 Canary 通道，因为它具有最新 API 的实现。  当你想要测试和使用实验性 WebView2 API 时，请使用以下组合：
+*   _WebView2_ SDK 的预发布版本。
+*   开发_客户端上_Microsoft Edge预览频道。
 
-WebView2 NuGet包同时包含发布和预发布包。  
+_发布_ SDK 包仅包含稳定的 API，而不包含实验性 API。  在开发 WebView2 应用的生产版本时，请使用以下组合：
+*   _WebView2_ SDK 的发行版。
+*   开发客户端 _上的_ WebView2 运行时。
 
-发布 **包与** 向前兼容，并包含以下组件。  
+下面提供了关于预发行版和发布 SDK 包的更多详细信息。
 
-*   [Win32 C/C++ API][ReferenceWin32]
-*   .NET [API：WPF、WinForms][DotnetMicrosoftWebWebview2WpfNamespace]和[Core][DotnetMicrosoftWebWebview2CoreNamespace]。 [][DotnetMicrosoftWebWebview2WinformsNamespace]  
-    
-SDK 中的 API 完全受支持。  
 
-**预发布包是**包含实验性 API 的发布包[的超集](#experimental-apis)。  避免使用预发布 SDK 生成生产应用。  
+## <a name="use-a-prerelease-version-of-the-sdk-along-with-a-preview-channel-of-microsoft-edge"></a>将 SDK 的预发布版本与预览频道一Microsoft Edge
 
-### <a name="roadmap"></a>路线图  
+开发 Evergreen WebView2 应用时，除了针对 WebView2 运行时进行测试之外，还定期针对最新的 Microsoft Edge 预览频道测试应用。  由于 Web 平台在不断演变，因此定期测试是确保应用继续正常工作的最佳方法。
 
-该发行版包含所有稳定且受支持的 Win32 C/C++ 和 .NET API。  预发布包包含实验性 API，这些 API 可能会根据你的反馈发生变化。  
+使用 WebView2 SDK_预发布_包时，请使用Microsoft Edge客户端上的预览频道。  预览频道也称为 _预览体验_ 成员频道。  建议使用 Canary 预览频道，而不是 Beta 或 Dev，因为 Canary 是最新的，并且具有最新实验 API 的实现。
 
-## <a name="experimental-apis"></a>实验性 API  
+SDK _预发行版_ 包是 SDK 发布包的超集，具有适用于更多实验 [性 API 的方法签名](#experimental-apis)。  预览频道提供实验性 WebView2 API 的实现。  实验性 API 可能会根据你的反馈发生变化。  避免使用 SDK 预发布包生成生产应用。
 
-WebView 团队正在寻求有关将来版本中可能包含的实验性 API 的反馈。  实验性 API 在 `experimental` SDK 中标记为 。  若要帮助你评估实验性 API 并分享你的反馈，请导航到 [WebView 反馈存储库][GithubMicrosoftedgeWebviewfeedback]。  
+有关将应用临时指向预览频道（而不是默认指向 WebView2 运行时）的信息，请导航到切换到预览频道，以测试即将推出的 [API 和功能][SetPreviewChannel]。
 
-> [!CAUTION]
-> 实验性 API 可以在 SDK 中引入、修改和删除。  避免在生产应用中使用实验性 API。  在以稳定公开发布 API 后，Microsoft 支持该 API 的实验版本以弃用状态发布两个版本。 
 
-> [!NOTE]
-> 实验性 API 可能在你的已安装版本的 WebView2 运行时中不可用。  
+## <a name="use-a-release-version-of-the-sdk-along-with-the-runtime"></a>将 SDK 的发行版与运行时一同使用
 
-## <a name="matching-webview2-runtime-versions"></a>匹配的 WebView2 运行时版本  
-WebView2 应用要求用户安装 [WebView2 运行时][MicrosoftDeveloperEdgeWebview2]。  WebView2 运行时自动更新到最新版本。  在某些情况下，用户可能需要停止自动 WebView2 运行时更新，这可能会导致应用兼容性问题。  
+使用 WebView2 _SDK_发布包时，请使用开发客户端上的 WebView2 Evergreen _Runtime，_ 而不是 Microsoft Edge预览频道。  默认情况下，WebView2 应用面向运行时，而不是Microsoft Edge。  根据设计，Microsoft Edge Stable 渠道不支持 WebView2。
 
-如果 WebView2 运行时更新已停止，请确保了解应用所需的 [WebView2 运行时][MicrosoftDeveloperEdgeWebview2] 的最低版本。  请考虑以下两项：  
+SDK _发布_ 包包含所有稳定的 Win32 C/C++ 和 .NET API，并且不包括实验性 API 的方法签名。  在 WebView2 运行时的相同或更高的内部版本号中，SDK 发布包中所有 API 都完全受支持。
 
-1.  若要成功加载 webview2 实例，需要 SDK 的最低版本，可以在要加载的最低 Microsoft Edge[][Webview2ReleaseNotes]版本下的 WebView2 发行说明**找到**。  SDK 需要加载的最低版本仅在 Web 平台发生重大变化时更改。  例如，对于 SDK[版本 1.0.622.22，][Webview2ReleaseNotes1062222]必须安装内部版本号或更高版本的[WebView2][MicrosoftDeveloperEdgeWebview2]运行时或非稳定[Microsoft Edge][MicrosoftedgeinsiderDownload]通道。 `86.0.616.0`   
-1.  支持应用中的接口和 API 所需的最低 NuGet 程序包版本位于完全 API 兼容性下的[WebView2][Webview2ReleaseNotes]**发行说明中**。  新接口和 API 会定期添加到 WebView2。  捆绑在 SDK 中的 API 和接口需要不同版本的 WebView2 运行时，因为 API 和接口会在不同的时间添加到 SDK 中。  所需的 WebView2 运行时版本与首次引入 API 的 SDK 版本的内部版本号（即第三个数字）匹配。  例如，在 SDK 版本 [1.0.622.22][Webview2ReleaseNotes1062222] 中添加的新 API 或接口需要 WebView2 运行时版本 `86.0.622.0` 或更高版本。  在稍后的 SDK 版本中添加的 API 或接口需要与 SDK 版本号相同的 WebView2 运行时。  若要帮助你确定 WebView2 运行时版本是否支持接口或 API，请导航到确定 [WebView2 运行时要求](#determine-webview2-runtime-requirement)。  
-    
-> [!IMPORTANT]
-> 在开发[Evergreen WebView2][Webview2ConceptsDistributionEvergreenDistributionMode]应用时，定期针对最新版本的 WebView2 运行时和非稳定 Microsoft Edge测试你的应用。  由于 Web 平台在不断演变，因此定期测试是确保应用按预期运行的最佳方法。  
+SDK 发布包包含以下组件：
+*  [Win32 C/C++ API][ReferenceWin32]。
+*  .NET [API：WPF、WinForms][DotnetMicrosoftWebWebview2WpfNamespace]和[Core][DotnetMicrosoftWebWebview2CoreNamespace]。 [][DotnetMicrosoftWebWebview2WinformsNamespace]
 
-### <a name="determine-webview2-runtime-requirement"></a>确定 WebView2 运行时要求  
+有关自动更新 Evergreen Runtime 的信息，请导航到分发 [WebView2 应用和 WebView2 运行时][Webview2ConceptsDistribution]。
 
-根据你使用哪个 SDK，请考虑以下项：  
 
-*   **Win32 C/C++**。  使用 `QueryInterface` 获取新接口时，请验证 的返回值 `E_NOINTERFACE` 。  值可能指示 WebView2 运行时是早期版本，并且不支持该接口。  有关其工作方式的示例，请导航到第 [622 行 - AppWindow.cpp][GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisampleAppwindowCppL622]。  
-*   **.NET 和 WinUI**。  在使用已添加到最新 SDK 的方法、属性和事件时检查 `No such interface supported` 异常。  当 WebView2 运行时是早期版本，并且不支持 API 时，可能会发生异常。  
-    
-如果 API 不可用，请考虑删除关联的功能，或通知用户需要更新 WebView2 运行时。  
+## <a name="release-cadence"></a>版本节奏
 
-<!--
-## Versioning  
+新版本的 WebView2 SDK 的发布常规节奏与 Microsoft Edge \ (Chromium\) 浏览器相同，大约每六周发布一次。  此节奏计划从版本 94 起每四周Microsoft Edge更改一次。
 
-After you have used a particular version of the SDK to build your app, your app may end up running with an older or newer version of installed browser binaries.  Until version 1.0.0.0 of WebView2 there may be breaking changes during updates that prevent your SDK from working with different versions of installed browser binaries.  After version 1.0.0.0, different versions of the SDK may work with different versions of the installed browser by using the following best practices.  
 
-1.  To account for breaking changes to the API be sure to check for failure when requesting the DLL export `CreateCoreWebView2Environment` and when running `QueryInterface` on any `CoreWebView2` object.  A return value of `E_NOINTERFACE` indicates that the SDK is not compatible with the Microsoft Edge browser binaries.  
-1.  Checking for failure from `QueryInterface` also accounts for cases where the SDK is newer than the version of the Microsoft Edge browser and your app attempts to use an interface of which the Microsoft Edge browser is unaware.  
-1.  When an interface is unavailable, you may consider disabling the associated feature if possible, or otherwise informing your users to update their browsers.  
-    -->  
+## <a name="minimum-version-and-build-number-to-instantiate-webview2"></a>实例化 WebView2 的最低版本号和内部版本号
 
-<!--links -->  
+若要使客户端能够创建 WebView2 实例并使用 WebView2 通用版本 (SDK 版本 616) 中的 API 集，客户端必须具有 WebView2 运行时版本 86.0.616.0 或更高版本。  运行时 86.0.616.0 是一个特殊版本，因为它是通用版本。
 
-[Webview2ConceptsDistributionEvergreenDistributionMode]: ./distribution.md#evergreen-distribution-mode "常青分发模式 - 使用 WebView2 分配|Microsoft Docs"  
-[Webview2ReleaseNotes]: ../release-notes.md "WebView2 SDK |Microsoft Docs"  
-[Webview2ReleaseNotes1062222]: ../release-notes.md#1062222 "1.0.622.22 - WebView2 SDK |Microsoft Docs"   
+在开发计算机上，客户端必须具有 Microsoft Edge 预览频道版本 86.0.616.0 或更高版本，或 WebView2 运行时版本 86.0.616.0 或更高版本。
 
-[DeployedgeChannels]: /deployedge/microsoft-edge-channels "频道Microsoft Edge概述|Microsoft Docs"  
 
-[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Microsoft.Web.WebView2.Core 命名空间|Microsoft Docs"  
-[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf 命名空间|Microsoft Docs"  
-[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms 命名空间|Microsoft Docs"  
-[ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ 参考|Microsoft Docs"  
+## <a name="forward-compatibility-of-apis"></a>API 的向前兼容性
 
-[MicrosoftDeveloperEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2/ "Microsoft EdgeWebView2 |Microsoft 开发人员"  
+WebView2 _版本_ SDK 自版本 1 以来一直 (，即 SDK [版本 1.0.622.22](../release-notes.md#1062222)) 。
+你可以更新 WebView2 应用以使用 SDK 最新版本的最新 API。  你的应用将继续在客户端上运行，因为客户端自动具有最新的 WebView2 Evergreen Runtime。
 
-[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView 反馈 - MicrosoftEdge/WebViewFeedback |GitHub"  
-[GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisampleAppwindowCppL622]: https://github.com/MicrosoftEdge/WebView2Samples/blob/8ec7de9d3e80a942bc7025cffad98eee75e11e64/SampleApps/WebView2APISample/AppWindow.cpp#L622 "第 622 行 - AppWindow.cpp - MicrosoftEdge/WebView2Samples |GitHub"  
+_SDK_发布包中的 WebView2 API 稳定且向前兼容。  使用与引入 API 的 SDK 内部版本号相同或更高的内部版本号的 WebView2 运行时时，WebView2 API 可正常工作。  内部版本号是 Webview2 SDK 的四部分版本号的第三部分，以及 Microsoft Edge 和 WebView2 运行时的四部分版本号。
 
-[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "下载 Microsoft Edge 预览体验成员频道"  
+*  当你使用生成号等于或小于 WebView2 运行时__ 的 WebView2 SDK 时，你有权访问该 SDK 中的每个 API 都适用于该版本的运行时。
+*  当你使用内部版本号大于 WebView2 运行时的__ WebView2 SDK 时，更新的 API 的实现在运行时中不可用。
+
+<!-- create diagram showing 3 SDK releases on a timeline, which ones would work w/ a given runtime -->
+例如，如果 API 是在 SDK 1.0 中引入的。**900**.0，该 API 将与运行时 94.0 一起运行。**900+**.0，但不包括运行时 90.0。**700**.0.
+
+<!-- dup statements, delete? -->
+必须协调用于开发的 WebView2 SDK 版本和安装在客户端计算机上的 WebView2 运行时版本。
+客户端应具有一个运行时版本，该版本支持用于开发应用的 SDK 版本中的所有最新 API。
+若要在 SDK 的发布版本中完全支持最新 API，客户端上的运行时必须具有大于或等于 SDK 内部版本号的版本号。
+
+
+## <a name="experimental-apis"></a>实验性 API
+
+WebView2 _SDK_ 预发布包中的实验性 API 不能保证向前兼容，并且可能会在将来的运行时更新中删除。
+当_WebView2_ SDK 的预发布版本最初可用时，该 SDK 仅适用于 Microsoft Edge Canary。  在此之后，预发布 SDK 还适用于 Beta 和开发人员渠道。
+使用预发布 SDK 尽早试用新 API，在提升新 API 成为稳定且向前兼容的 API 之前提供反馈。
+
+要完全支持实验性 API，请使用Microsoft Edge预览频道，而不是 WebView2 Evergreen Runtime。
+预发布 SDK 中任何实验性 API 都不能保证向前兼容。
+_SDK_发布版本中的 API 是向前兼容的。  有关详细信息，请参阅上面的 [API 的向前](#forward-compatibility-of-apis) 兼容性。
+
+WebView2 团队正在寻求有关实验性 WebView2 API 的反馈，这些 API 可能会在未来版本中提升为 Stable。
+WebView2 SDK 参考文档中将实验性 API 指示为"实验性"。
+若要帮助你评估实验性 API 并分享你的反馈，请导航到 [WebView 反馈存储库][GithubMicrosoftedgeWebviewfeedback]。
+
+避免在生产应用中使用实验性 API。  在 SDK 的后续版本中，可能会修改、删除或添加实验性 API。  在将 API 作为稳定公开发布后，该 API 的实验版本受弃用状态中的两个版本的支持。
+
+
+## <a name="matching-the-runtime-version-with-the-sdk-version"></a>将运行时版本与 SDK 版本匹配
+
+在 Evergreen 分发方法中，客户端的 WebView2 运行时将自动更新到最新版本。
+但是，用户或 IT 管理员可能会选择阻止自动更新 WebView2 运行时。
+在客户端上生成的过期运行时可能会导致使用最新 SDK 中的新 API 的更新的 WebView2 应用出现兼容性问题。
+
+如果客户端上阻止更新 WebView2 运行时，请确保你知道应用所需的 [WebView2][MicrosoftDeveloperEdgeWebview2] 运行时的最低内部版本号。
+支持版本 616 版本 616 (版本所需的最低运行时版本) 低于最新运行时版本。
+最新运行时支持最新 SDK 版本内的所有 API。
+
+若要检查 SDK 的特定内部版本号与运行时或预览Microsoft Edge之间的兼容性，请导航到[WebView2 SDK][Webview2ReleaseNotes]发行说明。
+
+
+## <a name="feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis"></a>用于测试已安装的运行时是否支持最近添加的 API 的功能检测
+
+<!-- this is the main section about QI; other articles should have a couple paragraphs only, and link to here -->
+
+如果你的应用使用 Evergreen Runtime 而不是固定版本，你应该使用 或 包装对相对新的 WebView2 API `QueryInterface` 的任何调用 `try-catch` 。  在某些情况下，客户端的 Evergreen Runtime 不是最新的内部版本，因此它滞后于 SDK 内部版本编号，因为管理员可能已经关闭 WebView2 运行时的更新，或者客户端可能处于脱机状态。
+
+在使用最新版本的 WebView2 SDK 开发 WebView2 应用时，如果使用最近添加的 API，应测试或"功能检测"该 API 是否存在于客户端安装的 WebView2 运行时中。  你的应用如何以编程方式测试 API 支持取决于编码平台。
+
+*   **Win32 C/C++**。  请求 DLL 导出时 `CreateCoreWebView2Environment` 以及在任何对象上运行时 `QueryInterface` `CoreWebView2` ，请测试 的返回值 `E_NOINTERFACE` 。  该返回值可能指示客户端的 WebView2 运行时是不支持该接口的较旧版本。  有关检查运行时中是否存在特定 WebView2 API 的示例，请查阅 `try_query` [AppWindow.cpp][GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisampleAppwindowCpp]。  此文件包装宏函数中的 WebView2 API 调用， `CHECK_FAILURE` 该函数在 中定义 `CheckFailure.h` 。
+
+*   **.NET 和 WinUI**。  使用 `try/catch` 已添加到 WebView2 SDK 的最新版本的方法、属性和事件时，使用并检查 `No such interface supported` 异常。  此异常可能指示客户端的 WebView2 运行时是不支持该 API 的较旧版本。
+
+如果代码确定 API 在客户端安装的 WebView2 运行时中不可用，应为关联的功能提供正常回退，或通知用户他们必须更新 WebView2 运行时以使用该功能。
+
+在测试安装的 WebView2 运行时是否支持 API 时，此技术作为 [WebView2 开发最佳做法列出][Webview2ConceptsDevguideTestAPIs]。
+
+
+<!--links -->
+[Webview2ConceptsDistribution]: ./distribution.md "分发 WebView2 应用和 WebView2 运行时|Microsoft Docs"
+[Webview2ReleaseNotes]: ../release-notes.md "WebView2 SDK 发行说明 | Microsoft Docs"
+[Webview2ReleaseNotes1062222]: ../release-notes.md#1062222 "1.0.622.22 - WebView2 SDK |Microsoft Docs"
+[Webview2ConceptsDevguideTestAPIs]: developer-guide.md#test-whether-newer-apis-are-supported-by-the-installed-webview2-runtime "测试安装的 WebView2 运行时应用程序是否支持 API |Microsoft Docs"
+[SetPreviewChannel]: ../how-to/set-preview-channel.md "切换到预览频道以测试即将推出的 API 和功能|Microsoft Docs"
+<!-- external links -->
+[DeployedgeChannels]: /deployedge/microsoft-edge-channels "频道Microsoft Edge概述|Microsoft Docs"
+
+[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Microsoft.Web.WebView2.Core 命名空间|Microsoft Docs"
+[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf 命名空间|Microsoft Docs"
+[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms 命名空间|Microsoft Docs"
+[DotnetApiWebview2WinformsWebview2Appliesto]: /dotnet/api/microsoft.web.webview2.winforms.webview2#applies-to "WebView2 类|Microsoft Docs"
+[ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ 参考|Microsoft Docs"
+
+[MicrosoftDeveloperEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2/ "Microsoft EdgeWebView2 |Microsoft 开发人员"
+
+[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView 反馈 - MicrosoftEdge/WebViewFeedback | GitHub"
+[GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisampleAppwindowCpp]: https://github.com/MicrosoftEdge/WebView2Samples/blob/8ec7de9d3e80a942bc7025cffad98eee75e11e64/SampleApps/WebView2APISample/AppWindow.cpp#L622 "AppWindow.cpp - MicrosoftEdge/WebView2Samples |GitHub"
+
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "下载 Microsoft Edge 预览体验成员频道"
