@@ -143,9 +143,9 @@
               items:
                 - name: 概述
                   href: devtools-guide-chromium/customize/index.md
-                - name: 深色主题
-                  href: devtools-guide-chromium/customize/dark-theme.md
-                - name: 更改位置
+                - name: 应用颜色主题
+                  href: devtools-guide-chromium/customize/theme.md
+                - name: 更改 DevTools 放置
                   href: devtools-guide-chromium/customize/placement.md
                 - name: 匹配浏览器语言
                   href: devtools-guide-chromium/customize/localization.md
@@ -277,7 +277,7 @@
               items:
                 - name: 模仿视觉缺陷
                   href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
-                - name: 模拟配色方案
+                - name: 模拟深色或浅色方案
                   href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
                 - name: 模拟运动减少
                   href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
@@ -337,6 +337,8 @@
           items:
             - name: 开发人员注册
               href: extensions-chromium/publish/create-dev-account.md
+            - name: 添加和管理用户
+              href: extensions-chromium/publish/aad-account.md
             - name: 发布扩展
               href: extensions-chromium/publish/publish-extension.md
             - name: 更新扩展
@@ -373,6 +375,8 @@
       items:
         - name: 渐进式 Web 应用概述
           href: progressive-web-apps-chromium/index.md
+        - name: 新增功能
+          href: progressive-web-apps-chromium/whats-new/pwa.md
         - name: 开始使用 PWA
           href: progressive-web-apps-chromium/get-started.md
         - name: 脱机方案
@@ -441,7 +445,7 @@
           items:
             - name: Microsoft Edge 与 WebView2 之间的区别
               href: webview2/concepts/browser-features.md
-            - name: 发布我的应用
+            - name: 分发 WebView2 应用和运行时
               href: webview2/concepts/distribution.md
             - name: 管理用户数据文件夹
               href: webview2/concepts/user-data-folder.md
@@ -451,20 +455,16 @@
               href: webview2/concepts/navigation-events.md
             - name: 进程模型
               href: webview2/concepts/process-model.md
-            - name: 安全最佳方案
+            - name: 安全性最佳方案
               href: webview2/concepts/security.md
             - name: 版本控制
               href: webview2/concepts/versioning.md
             - name: 线程模型
               href: webview2/concepts/threading-model.md
-            - name: WebView2 开发的最佳做法
+            - name: 开发的最佳做法
               href: webview2/concepts/developer-guide.md
             - name: Win32 API 约定
               href: webview2/concepts/win32-api-conventions.md
-        - name: 发行说明
-          href: webview2/release-notes.md
-        - name: 路线图
-          href: webview2/roadmap.md
         - name: 操作步骤
           items:
             - name: WebView2 中的扩展 JavaScript 方案
@@ -479,6 +479,10 @@
               href: webview2/how-to/chromium-devtools-protocol.md
             - name: 切换到预览频道
               href: webview2/how-to/set-preview-channel.md
+        - name: 发行说明
+          href: webview2/release-notes.md
+        - name: 路线图
+          href: webview2/roadmap.md
         - name: 参考
           href: webview2/webview2-api-reference.md
           items:

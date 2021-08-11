@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: e5fa4b066e47b0779fcdf2b3e814c598e9615ccf
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: d3d707d513c2a8846d7dd76eecdbe45e551d8ea6756c7b16e3a506fd41fbbeea
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564950"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11809731"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -39,7 +39,7 @@ ms.locfileid: "11564950"
 
 ### <a name="remotely-debug-microsoft-edge-on-windows-10-devices"></a>在 Windows 10 设备上远程调试 Microsoft Edge  
 
-现在，[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 \(Beta\)][RemoteTools] 应用。  使用此扩展 Windows Device [Portal][WindowsUwpDebugTestPerfDevicePortal]的应用，你可以从开发计算机上运行的 Microsoft Edge 实例连接到远程 Windows 10 设备，显示目标列表 \(Microsoft Edge 中所有选项卡，PBA 在 Windows 10 设备上打开\) ，并针对在远程[][ProgressiveWebAppsChromiumIndex]Windows 10 设备上运行的目标使用开发计算机上 DevTools。  
+现在，[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 \(Beta\)][RemoteTools] 应用。  使用此扩展 Windows Device [Portal][WindowsUwpDebugTestPerfDevicePortal]的应用，你可以从开发计算机上运行的 Microsoft Edge 实例连接到远程 Windows 10 设备，显示目标列表 \ (Microsoft Edge 中所有选项卡，PBA 在 Windows 10 设备上打开\) ，并针对在远程[][ProgressiveWebAppsChromiumIndex]Windows 10 设备上运行的目标使用开发计算机上 DevTools。  
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="现在，Microsoft Store 中提供 Microsoft Edge 远程工具 (Beta) 应用" lightbox="../../media/2020/03/remote-tools.msft.png":::
    [Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 (Beta)][RemoteTools] 应用  
@@ -109,7 +109,7 @@ Chromium 问题 [#1050999][CR1050999]
 
 对缩小文件进行更改后，"更改"工具允许您水平滚动**** 以显示所有缩小代码。  从 Microsoft Edge 83 开始，你现在可以使用键盘上的箭头键水平滚动。  
 
-:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在更改工具中显示缩小代码" lightbox="../../media/2020/03/changes.msft.png":::
+:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在"更改"工具中显示缩小代码" lightbox="../../media/2020/03/changes.msft.png":::
    在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在"更改"工具中显示对缩小代码**所做的更改**  
 :::image-end:::  
 
@@ -139,7 +139,7 @@ DevTools 能够模拟模糊的视觉和以下[颜色视觉缺陷类型][ColorBli
 | 全色盲 | 无法感觉任何颜色，灰色阴影除外\（极少\）。 |  
 
 存在这些色觉缺陷的不太极端的版本，实际上它们更为常见。  
-例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。 但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人是不同的，并且可能会看到不同的 \(能够感知更多/更少的相关颜色\) 。  
+例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。 但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人是不同的，并且可能会看到不同的 \ (能够感知更多/更少的相关颜色\) 。  
 
 通过在 DevTools 中进行更极端的仿真设计，可以保证红色弱、绿色弱、黄蓝色弱和全色弱的人也可访问你的 Web 应用。  
 
@@ -179,7 +179,7 @@ Chromium 问题 [#1051822][CR1051822]
 
 "**标头**" 选项卡上的 "**响应标头**" 部分提供了有关如何解决这些问题的更多指导：  
 
-:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="响应标头部分中的更多指南" lightbox="../../media/2020/03/guidance.msft.png":::
+:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="“响应标头”部分中的更多指南" lightbox="../../media/2020/03/guidance.msft.png":::
    "响应头" **部分中的更多** 指南  
 :::image-end:::  
 
@@ -233,7 +233,7 @@ DevTools 团队经常从 Web 开发人员那里获得反馈，尽管可以从 De
 
 ### <a name="delete-all-local-overrides-in-a-folder"></a>删除文件夹中的所有本地覆盖  
 
-设置本地覆盖**** 后，你可以将鼠标悬停在目录上，打开上下文菜单 \(右键单击\) ，然后选择新的"删除所有覆盖"选项以删除该**** 文件夹中的所有局部覆盖。  
+设置本地覆盖**** 后，你可以将鼠标悬停在目录上，打开上下文菜单 \ (右键单击\) ，然后选择新的"删除所有覆盖"选项以删除该**** 文件夹中的所有局部覆盖。  
 
 :::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="删除所有覆盖" lightbox="../../media/2020/03/overrides.msft.png":::
    删除所有覆盖  

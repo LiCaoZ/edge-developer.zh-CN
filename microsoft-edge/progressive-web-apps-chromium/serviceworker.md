@@ -7,13 +7,13 @@ ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， Windows， UWP， Microsoft Store
-ms.openlocfilehash: 314acbbd5a2f423c274f92e815b2be4329ace9b8
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+keywords: 渐进式 Web 应用、PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
+ms.openlocfilehash: cbe6a1d4e3c8b3b2d7e2d5d070c3aed4a09916719f2ada1ac73368a5fc761ef0
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399132"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11809311"
 ---
 # <a name="use-service-workers-to-manage-network-requests-and-push-notifications"></a>使用服务工作人员管理网络请求和推送通知
 
@@ -29,7 +29,7 @@ if ( "serviceWorker" in navigator ) {
 }
 ```  
 
-新式浏览器为服务工作人员提供不同级别的支持。 因此，最佳做法是在运行任何与服务工作器相关的代码之前测试对象 `serviceWorker` 是否存在。 在以上代码段中，使用位于网站根目录的文件注册服务 `serviceworker.min.js` 工作器。 确保定义服务工作线程的 JavaScript 文件位于您希望其管理 \(称为 Service Worker\) 作用域的最高级别目录中。  在上一个代码段中，文件存储在根中，服务工作器管理域中的所有页面。 如果服务工作器文件存储在目录中，则服务工作器的范围将是 `js` `js` 目录和任何子目录。  最佳做法是，将服务工作器文件放在网站的根目录下，除非需要缩小服务工作线程的范围。  
+新式浏览器为服务工作人员提供不同级别的支持。 因此，最佳做法是在运行任何与服务工作器相关的代码之前测试对象 `serviceWorker` 是否存在。 在以上代码段中，使用位于网站根目录的文件注册服务 `serviceworker.min.js` 工作器。 确保定义服务工作线程的 JavaScript 文件位于您希望其管理 \ (称为 Service Worker\) 作用域的最高级别目录中。  在上一个代码段中，文件存储在根中，服务工作器管理域中的所有页面。 如果服务工作器文件存储在目录中，则服务工作器的范围将是 `js` `js` 目录和任何子目录。  最佳做法是，将服务工作器文件放在网站的根目录下，除非需要缩小服务工作线程的范围。  
 
 ## <a name="the-service-worker-lifecycle"></a>服务工作线程生命周期  
 
@@ -94,7 +94,7 @@ self.addEventListener( "fetch", event => {
     
 <!-- links -->  
 
-[AzurewebsitesWebpushdemo]: https://webpushdemo.azurewebsites.net "Web 推送通知| Microsoft Edge 演示"  
+[AzurewebsitesWebpushdemo]: https://webpushdemo.azurewebsites.net "Web 推送通知| Microsoft Edge演示"  
 
 [MDNPwasMakingOfflineServiceWorkers]: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Offline_Service_workers "使 PA 与服务工作人员脱机工作 - PBA |MDN"  
 [MDNPwasMakeReengageablesingNotificationsPush]: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Re-engageable_Notifications_Push "如何使用通知和推送通知让 PWA 重新参与 - PBA |MDN"  

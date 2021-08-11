@@ -7,12 +7,12 @@ ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools, 仿真, 设备, 模拟, 移动
-ms.openlocfilehash: 924f4a0dc99c4da1766e5ded43539e10f487b435
-ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
+ms.openlocfilehash: 69bb8f4aa7d26a3c01e3bc8333fc93b897cf6be1c4f2eb1ee014751f51f53572
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "11710744"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11809416"
 ---
 <!-- Copyright Kayce Basques 
 

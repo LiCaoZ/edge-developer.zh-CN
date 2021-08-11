@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.localizationpriority: high
-ms.openlocfilehash: e5706de4c7938a3cb2246aa34de07c73dafe5776
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+ms.openlocfilehash: be4d8ed7ae24a7ad9d5c3a9b3979712be3b9a22e9434243298f994f55c759734
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624771"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11808541"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -357,8 +357,8 @@ background: linear-gradient(100deg, lightblue, pink);
 [Devtools3dViewIndex]: ../../../3d-view/index.md "3D 视图 | Microsoft Docs"  
 [DevtoolsConsoleIndex]: ../../../console/index.md "控制台概述 | Microsoft Docs"  
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeLocalization]: ../../../customize/localization.md "更改 DevTools 语言设置 | Microsoft Docs"  
-[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "为 DevTools 中的任何操作编辑键盘快捷方式 | Microsoft Docs"  
+[DevtoolsCustomizeLocalization]: ../../../customize/localization.md "更改开发工具语言设置 | Microsoft Docs"  
+[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action "编辑开发工具操作的键盘快捷方式 | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "在 Microsoft Edge 开发人员工具中模拟移动设备 | Microsoft Docs"  
 <!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  -->  
 <!--  [DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: ../../../experimental-features/index.md#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  -->  
