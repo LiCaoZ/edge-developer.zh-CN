@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 6dee44036906e0b802ec79b0e4d42f74cc60026d2dfe89e18c3487996ad20fb7
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: c8060b20e3b25d40fcf7a90102d19cde483d64001f7fcb8998c3fbafe4b862df
+ms.sourcegitcommit: 8a3c6e6f69a4b5419f857b9e9fc983e573fd956c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11798855"
+ms.lasthandoff: 08/09/2021
+ms.locfileid: "11810528"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -49,7 +49,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 <!--todo: add Recording section when available  -->  
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->  
 
-如果你未在 JavaScript 中十分明显，你可能需要将你的分析介绍到下一个级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面函数中的使用位置。  了解如何在 Speed Up [JavaScript Runtime][DevtoolsRenderingToolsJavascriptRuntime]中创建 CPU 配置文件。
+如果你注意到 JavaScript 中 (呈现) 出现大量 jank 和中断，你可能需要将分析介绍到下一级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面函数中的使用位置。  了解如何在"加快 [JavaScript 运行时速度"中创建 CPU 配置文件][DevtoolsRenderingToolsJavascriptRuntime]。
 
 ### <a name="javascript-problems"></a>JavaScript：问题  
 
