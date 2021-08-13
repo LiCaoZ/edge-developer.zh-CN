@@ -3,16 +3,16 @@ description: 渐进式 Web 应用和 PBA (新功能) 。
 title: 渐进式 Web 应用程序中的新增功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/04/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， pwas， pwa， 渐进式 Web 应用
-ms.openlocfilehash: b3975c85d476c68190de9d0cb6b9f710c216b3982426602f836c70befb02d1fc
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 3eb8e09d11932367770c8f6a1c1a99d2e07c1a39bca31d402e8e4bb29c012de7
+ms.sourcegitcommit: 48101fb3ad5c688ce066e8a64c29fd9cbffdaaab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11809939"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "11881758"
 ---
 # <a name="whats-new-in-progressive-web-apps"></a>渐进式 Web 应用程序中的新增功能
 
@@ -27,15 +27,15 @@ Microsoft Edge版本 93 在 2021 年 8 月 3 Microsoft Edge Beta 渠道。 本�
 
 若要对当前在独立显示模式下显示的标题栏区域进行更多控制，可能需要试验窗口控件覆盖。 窗口控件覆盖 (WCO) 是一组协同工作的功能，它们仅提供应用窗口所需的基本控件。 此布局为 Web 内容层释放了更多空间。 WCO 可用于安装的桌面 PBA。 
 
-了解有关在渐进 Web 应用和 PA (实验[功能中试验窗口控件覆盖) 。 ][ExpWCO]
+了解有关在渐进 Web 应用和 PA (实验功能中试验窗口[控件覆盖) 。 ][ExpWCO]
 
-在我们的源试用版开发人员控制台 中注册窗口控件覆盖试用版 [的来源][WCOOT]。
+在我们的源试用版开发人员控制台 中注册窗口控件覆盖 [试用版的来源][WCOOT]。
 
 ## <a name="url-handlers-origin-trial"></a>URL 处理程序源试用版
 
-开发人员现在可以在源试用版中使用实验功能 Web App URL 处理程序。 此功能允许注册已安装的应用PWA从引用其作用域的其他应用中打开链接。
+开发人员现在可以在源试用版中使用实验功能 Web App URL 处理程序。 此功能允许注册已安装的应用PWA从引用其作用域的其他应用打开链接。
 
-若要详细了解如何试验 URL 处理程序，请通过渐进式 Web 应用和 PBA (实验[) 。 ][ExpURLHandler]
+若要详细了解如何试验 URL 处理程序，请通过渐进式 Web 应用和[PWA (实验) 。 ][ExpURLHandler]
 
 在我们的源试用版开发人员控制台 中注册你的域 [以试用][URLHandlerOT]URL。
 
@@ -54,42 +54,37 @@ Microsoft Edge版本 92 在 2021 年 7 Microsoft Edge成为稳定渠道。 本�
 
 现在，你可以注册PWA主机操作系统处理特定协议。 现在Windows协议处理程序的试用版。 你可以从源试用注册页面 注册你的源 [作为][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]试用版。
 
-有关将协议处理程序与 PWA一起使用[， (PA][ExpProtocolHandlers]中的实验) 。
+若要详细了解如何对项目使用协议处理程序PWA，请通过[渐进式 Web 应用和 PWA (实验) 。 ][ExpProtocolHandlers]
 
-## <a name="streamlined-app-info-menus"></a>简化的应用信息菜单
+## <a name="streamlined-app-info-menu"></a>"简化应用信息"菜单
 
-当用户在应用的标题栏中设置 (...") 菜单时，将显示****_应用_信息菜单。 **** 我们更新了此菜单，并采用以下方式简化了用户体验：
-* 将应用发布者信息移动到顶级，并作为用户首先看到的信息。
-* 将隐私信息和控件移动到专用的第 2 级"隐私 **"** 菜单中。
-* 将与内容相关的工具移到专用的第 2 级"更多工具 **"** 菜单中。
+当用户在应用的标题栏中 (省略号) ..."按钮时，**** 将显示"应用**信息**"菜单。  我们更新了"应用**** 信息"菜单，并采用以下方式简化了用户体验，以提供与浏览器 UI 更像桌面应用的用户体验：
+*  将应用**Publisher**信息移动到顶级，并作为用户首先看到的信息。
 
-这些更改**使设置菜单**提供比浏览器 UI 更像桌面应用的用户体验。
+   :::image type="complex" source="media/app-info.png" alt-text="简化的新应用信息菜单" lightbox="media/app-info.png":::
+      简化的新应用 **信息** 菜单
+   :::image-end:::
 
-#### <a name="updated-app-info-menu"></a>更新的应用信息菜单
+*  将隐私信息和控件移动到专用的第 2 级"隐私 **"** 菜单中。
 
-:::image type="complex" source="media/app-info.png" alt-text="简化的新应用信息菜单" lightbox="media/app-info.png":::
-   简化的新应用信息菜单
-:::image-end:::
+   :::image type="complex" source="media/privacy-menu.png" alt-text="专用"隐私"菜单中的隐私控件" lightbox="media/privacy-menu.png":::
+      专用"隐私"菜单中 **的隐私** 控件
+   :::image-end:::
 
-#### <a name="dedicated-privacy-menu"></a>专用隐私菜单
+*  将与内容相关的工具移到专用的第 2 级"更多工具 **"** 菜单中。
 
-:::image type="complex" source="media/privacy-menu.png" alt-text="专用"隐私"菜单中的隐私控件" lightbox="media/privacy-menu.png":::
-   专用"隐私"菜单中 **的隐私** 控件
-:::image-end:::
+   :::image type="complex" source="media/more-tools.png" alt-text="现在，可以在"更多工具"菜单中找到与内容相关的工具" lightbox="media/more-tools.png":::
+      现在，可以在"更多工具"菜单中找到与 **内容相关的** 工具
+   :::image-end:::
 
-#### <a name="dedicated-more-tools-menu"></a>专用"更多工具"菜单
-
-:::image type="complex" source="media/more-tools.png" alt-text="现在，可以在"更多工具"菜单中找到与内容相关的工具" lightbox="media/more-tools.png":::
-   现在，可以在"更多工具"菜单中找到与 **内容相关的** 工具
-:::image-end:::
 
 ## <a name="post-install-flyout-dialog-box"></a>安装后弹出对话框
 
-从 PWA 浏览器安装 Microsoft Edge 应用程序后Windows，用户现在可以从四个选项中进行选择以轻松启动其应用： 
-* **固定到任务栏** 
-* **固定到“开始”**
-* **创建桌面快捷方式**
-* **设备登录时自动启动**
+在 PWA 上的 Microsoft Edge 浏览器安装Windows，用户现在可以从四个选项中进行选择，以轻松启动其应用： 
+*  **固定到任务栏** 
+*  **固定到“开始”**
+*  **创建桌面快捷方式**
+*  **设备登录时自动启动**
 
 为方便起见，此弹出对话框在首次启动应用时显示。
 
@@ -101,7 +96,7 @@ Microsoft Edge版本 92 在 2021 年 7 Microsoft Edge成为稳定渠道。 本�
 
 ## <a name="restore-web-apps"></a>还原 Web 应用
 
-在意外关闭之前运行的已安装网站和 PWA 现在 (，即当系统恢复) 将重新启动它们。
+在意外关闭之前运行的已安装的站点和 PWA 现在 (，即当系统恢复) 将重新启动它们。
 
 由于进程故障、系统重新启动或断电，可能会发生意外关闭。 在此更改之前，已安装的网站和 PWA 在系统还原时具有不确定的行为。  
 

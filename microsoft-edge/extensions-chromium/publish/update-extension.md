@@ -7,21 +7,22 @@ ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: c51e2237eb5d3fcd614a4b02c70e437ef83d460eb3de02a2081afc097fbf7ae9
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 61a5902317b229f375f3669d828fea1c1f3aabc002e9a7337acfa8ba75c9d8ad
+ms.sourcegitcommit: 48101fb3ad5c688ce066e8a64c29fd9cbffdaaab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11798265"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "11881728"
 ---
 # <a name="update-or-remove-your-extension"></a>更新或删除扩展  
 
-你随时可能会更新提交的扩展，也可以从加载项Microsoft Edge中删除已发布的扩展列表。  
+你随时都可以更新提交的扩展，也可以从加载项Microsoft Edge中删除已发布的扩展列表。  
+
 
 ## <a name="update-your-extension-on-the-microsoft-edge-add-ons-store"></a>更新加载项Microsoft Edge扩展  
 
 > [!NOTE]
-> 更新到扩展的认证过程的持续时间可能需要几个小时到几天。  
+> 扩展更新的认证过程持续时间可能持续几小时到几天。  
 
 ### <a name="update-an-existing-extension-in-the-microsoft-edge-add-ons-store"></a>更新加载项存储Microsoft Edge扩展  
 
@@ -29,9 +30,11 @@ ms.locfileid: "11798265"
 
 1.  导航到 [开发人员仪表板][MicrosoftPartnerCenter] ，然后选择要更新的扩展。  
 1.  更新扩展包或扩展的元数据。  如果更新扩展包，请确保增加清单文件中的版本。  
-1.  进行更改后，选择"保存**发布**"  >  **** 以更新扩展列表，并开始认证过程。  
+1.  进行更改后，选择"保存**发布**"以  >  **** 更新扩展列表，并开始认证过程。  
 1.  列 `Status` 显示后 `In the store` ，扩展更新在加载项Microsoft Edge上可用。  
-    
+
+最初创建扩展后，你将能够通过使用 Microsoft Edge 加载项[API][UsingAddonsAPI]以编程方式更新它 (一个建议，该建议将) 。
+
 ### <a name="update-your-extension-during-the-certification-step"></a>在认证步骤中更新扩展  
 
 虽然你的扩展仍处于认证阶段，在将其发布到加载项Microsoft Edge之前，你可以更新它。 如果你的扩展未能通过认证过程，你可能还需要更新你的扩展。    
@@ -41,12 +44,12 @@ ms.locfileid: "11798265"
 若要编辑提交，请完成以下步骤。  
 
 1.  导航到 [开发人员仪表板][MicrosoftPartnerCenter] ，然后选择要更新的扩展。  将显示你在上一次提交期间填写的信息。  
-1.  若要打开 **扩展概述** 部分，请使用左侧导航栏。  若要取消当前提交，请选择"**取消提交"。**  
-1.  移动到其他部分并更新扩展包或扩展的元数据。  如果更新扩展包，请确保增加清单文件中的版本，以匹配自上一个程序包版本以来的更改。  
+1.  若要打开 **扩展概述** 部分，请使用左侧导航栏。  若要取消当前提交，请选择"取消**提交"。**  
+1.  移动到其他部分，并更新扩展包或扩展的元数据。  如果更新扩展包，请确保增加清单文件中的版本，以匹配自上一个程序包版本以来的更改。  
 1.  进行更改后，选择"保存**发布**  >  **"。**  
     
 > [!IMPORTANT]
-> 此过程会停止当前提交，并从 Microsoft Edge扩展认证管道中删除你的当前提交，并且新评审从最新提交开始。  
+> 此过程将停止当前提交并从 Microsoft Edge扩展认证管道中删除你的当前提交，并且新评审从最新提交开始。  
 
 ### <a name="update-your-extension-after-it-failed-the-certification"></a>在认证失败后更新扩展  
 
@@ -60,14 +63,15 @@ ms.locfileid: "11798265"
     
 ## <a name="remove-extensions-from-the-microsoft-edge-add-ons-store"></a>从加载项存储Microsoft Edge扩展  
 
-若要从加载项Microsoft Edge中删除扩展，请完成以下步骤。  
+若要从加载项Microsoft Edge扩展，请完成以下步骤。  
 
-1.  导航到开发人员 [仪表板][MicrosoftPartnerCenter]。  从仪表板页面，选择要删除的一览。  
+1.  导航到开发人员 [仪表板][MicrosoftPartnerCenter]。  从"仪表板"页中，选择要删除的一览。  
 1.  选择 **一览上的扩展** 概述。  
 1.  选择 **"取消发布**"以从加载项Microsoft Edge列表中删除列表。  
     
-你的扩展现已从加载项Microsoft Edge中删除。  已安装扩展的用户可能会继续使用它，但新用户找不到它。  
+你的扩展现已从加载项Microsoft Edge中删除。  已安装扩展的用户可以继续使用它，但新用户找不到它。  
 
-<!-- links -->  
-
+<!-- links -->
+[UsingAddonsAPI]: api/using-addons-api.md "使用Microsoft Edge加载项 API |Microsoft Docs"
+<!-- external links -->
 [MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "合作伙伴中心"  
