@@ -132,7 +132,7 @@ Microsoft EdgeDevTools 采用了[Fluent UI，][FluentUI]为按钮和菜单提供
 
 现在，Microsoft Edge版本 93 中，您可以复制样式规则中的单个 CSS 声明或所有声明，并将其直接粘贴到 JavaScript 文件中，而无需语法问题。 若要试用此功能，请进行以下设置：
 
-1. 在 **"元素"** 工具的****"样式"窗格中，打开上下文菜单 \ (右键单击\) 样式规则中的声明。
+1. 在 **"元素"** 工具的****"样式"窗格中，打开上下文菜单 \(右键单击\) 样式规则中的声明。
 1. 选择 **"将声明复制为 JS"** 或 **"复制所有声明为 JS"。**
 1. 将复制的 CSS 粘贴到文本编辑器中的 JavaScript 文件中，如Visual Studio Code。  例如：`'--more-link': 'lime'`。
 
@@ -194,7 +194,7 @@ User-Agent客户端提示使浏览器信息比以分号分隔的字符串User-Ag
 
 现在，Microsoft Edge版本 93 中，"复制为**PowerShell"** 上下文菜单选项正确设置 devTools User-Agent的 User-Agent 字符串和 Cookie。  生成的 PowerShell 命令现在可以成功提出由 DevTools 观察到的相同网络请求，甚至向依赖 Cookie 的服务器发送请求。
 
-:::image type="complex" source="../../media/2021/07/copy-as-powershell.msft.png" alt-text=""复制为 PowerShell"命令" lightbox="../../media/2021/07/copy-as-powershell.msft.png":::
+:::image type="complex" source="../../media/2021/07/copy-as-powershell.msft.png" alt-text="复制为 PowerShell命令" lightbox="../../media/2021/07/copy-as-powershell.msft.png":::
    " **复制为 PowerShell"** 命令
 :::image-end:::
 

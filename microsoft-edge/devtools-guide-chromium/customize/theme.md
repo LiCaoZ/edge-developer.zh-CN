@@ -63,7 +63,7 @@ ms.locfileid: "11801912"
 
 1.  打开 DevTools，**然后选择设置 (** 齿轮图标) 。
 
-    :::image type="complex" source="./media/setting-button.png" alt-text=""设置 (齿轮) 图标" lightbox="./media/setting-button.png":::
+    :::image type="complex" source="./media/setting-button.png" alt-text="设置 (齿轮) 图标" lightbox="./media/setting-button.png":::
        The**设置 (** gear) icon  
     :::image-end:::  
 

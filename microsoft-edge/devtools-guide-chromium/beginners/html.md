@@ -31,7 +31,7 @@ ms.locfileid: "11802064"
 
 这是一系列教程中第一个介绍 Web 开发基础知识的教程。 了解一组 Web 开发者工具（名为 Microsoft Edge 开发者工具）可能会提高工作效率。  
 
-本教程介绍 HTML 和 [文档对象模型](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) \ (DOM\)。 HTML 是 Web 开发的核心技术之一。 它是控制网页结构和内容的语言。 DOM 还与网页的结构和内容相关，我们稍后将了解相关内容。
+本教程介绍 HTML 和 [文档对象模型](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) \(DOM\)。 HTML 是 Web 开发的核心技术之一。 它是控制网页结构和内容的语言。 DOM 还与网页的结构和内容相关，我们稍后将了解相关内容。
 
 ## <a name="goals"></a>目标  
 
@@ -218,7 +218,7 @@ ms.locfileid: "11802064"
     将节点更新为 HTML  
 ::image-end:::  
 
-1.  选择 `Control` + `Enter` \ (Windows、Linux\) 或 `Command` + `Enter` \ (macOS\) 保存更改，或在框外选择。 更改将自动显示在页面实时视图中。 文本 `Your site!` 已替换为新内容。  
+1.  选择 `Control` + `Enter` \(Windows、Linux\) 或 `Command` + `Enter` \(macOS\) 保存更改，或在框外选择。 更改将自动显示在页面实时视图中。 文本 `Your site!` 已替换为新内容。  
     
     :::image type="complex" source="media/beginners-html-edit3.msft.png" alt-text="新内容会立即显示在页面上" lightbox="media/beginners-html-edit3.msft.png":::
        新内容会立即显示在页面上  
@@ -329,7 +329,7 @@ ms.locfileid: "11802064"
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/html) ，作者为 [Katherine Jackson][KatherineJackson] \ (技术作家，Chrome DevTools\) 。  
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/html) ，作者为 [Katherine Jackson][KatherineJackson] \(技术作家，Chrome DevTools\) 。  
 
 [![知识共享许可协议][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

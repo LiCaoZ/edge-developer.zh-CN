@@ -60,7 +60,7 @@ ms.locfileid: "11797882"
     
 1.  使用 USB 电缆将 Android 设备直接连接到开发计算机。  首次尝试连接时，将显示有关开发工具检测未知设备的提示。  在 Android 设备上接受“**允许 USB 调试**”权限提示。  
     
-    :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="Android 设备上的“允许 USB 调试”权限提示" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
+    :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="Android 设备上的允许 USB 调试权限提示" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
        图 2.  Android 设备上的“**允许 USB 调试**”权限提示  
     :::image-end:::  
     

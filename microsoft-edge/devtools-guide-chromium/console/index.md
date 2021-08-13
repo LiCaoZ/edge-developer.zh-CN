@@ -39,7 +39,7 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
    :::column-end:::
 :::row-end:::  
 
-直接打开控制台的最快方法为选择**** `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。  
+直接打开控制台的最快方法为选择**** `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\) 。  
 
 ## <a name="error-reports-and-console"></a>错误报告和控制台  
 
@@ -63,7 +63,7 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
 
 控制台最常见的用例是使用 方法**** 或其他类似方法从脚本 `console.log()` 中记录信息。  若要尝试，请完成以下操作。  
 
-1.  若要打开**控制台**，请选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。  
+1.  若要打开**控制台**，请选择 `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\) 。  
 1.  导航到 [控制台消息示例：日志、信息、错误和警告][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]，或在控制台中复制并运行以下 **代码段**。  
     
     ```javascript
@@ -134,7 +134,7 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
     ```  
     
 :::image type="complex" source="../media/console-intro-reading-DOM.msft.png" alt-text="复制顶部标题 (h1) DOM 中的内容并显示在控制台中" lightbox="../media/console-intro-reading-DOM.msft.png":::
-   从 DOM 复制顶部标题 `h1` \ (\) 内容，并显示在 **控制台中**  
+   从 DOM 复制顶部标题 `h1` \(\) 内容，并显示在 **控制台中**  
 :::image-end:::  
 
 还可以更改它，而不是仅从网页中读取。  若要尝试更改网页，请完成以下操作。  

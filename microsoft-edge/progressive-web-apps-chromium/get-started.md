@@ -16,7 +16,7 @@ ms.locfileid: "11799806"
 ---
 # <a name="get-started-with-progressive-web-apps-chromium"></a>渐进式 Web 应用 (Chromium)   
 
-渐进式 Web 应用 \ (PWA\) 是逐渐增强的 [Web 应用][WikiProgressiveEnhancement]。  渐进式增强功能包括类似应用的功能，如安装、脱机支持和推送通知。  还可以打包应用商店PWA应用包。  可能的应用商店包括 Microsoft Store、Google Play、Mac 应用商店等。  应用商店Microsoft Store内置于应用商店中的商业Windows 10。  
+渐进式 Web 应用 \(PWA\) 是逐渐增强的 [Web 应用][WikiProgressiveEnhancement]。  渐进式增强功能包括类似应用的功能，如安装、脱机支持和推送通知。  还可以打包应用商店PWA应用包。  可能的应用商店包括 Microsoft Store、Google Play、Mac 应用商店等。  应用商店Microsoft Store内置于应用商店中的商业Windows 10。  
 
 下面的指南通过创建简单的 Web PWA并扩展它作为一个 web 应用程序来大致了解PWA。  已完成的项目适用于新式浏览器。  
 
@@ -157,7 +157,7 @@ npm start
        DevTools \Microsoft Edge (F12\) 中的服务工作器缓存  
     :::image-end:::  
     
-1.  尝试将PWA应用。  In Microsoft Edge DevTools \ (`F12` \) ， choose **Network** then change the **Online** status to **Offline**.  
+1.  尝试将PWA应用。  In Microsoft Edge DevTools \(`F12` \) ， choose **Network** then change the **Online** status to **Offline**.  
     
     :::image type="complex" source="./media/devtools-offline.png" alt-text="在 DevTools 中将应用Microsoft Edge脱机模式" lightbox="./media/devtools-offline.png":::
        在 DevTools 中将应用Microsoft Edge脱机模式  
@@ -182,7 +182,7 @@ npm start
 
 ### <a name="step-1---generate-vapid-keys"></a>步骤 1 - 生成 VAPID 密钥  
 
-推送通知需要 VAPID \ (自愿应用程序服务器标识\) 密钥才能将推送通知发送到 PWA 客户端。  联机 \ (提供了多个 VAPID 密钥生成器，例如，vapidkeys.com [\) 。][VapidkeysMain]  生成后，应获取包含公钥和私钥的 JSON 对象。  保存密钥，以执行以下教程中的稍后步骤。  有关 VAPID 和 WebPush 的信息，请导航到使用 Mozilla 推送服务发送 VAPID 标识的 [WebPush 通知][MozillaServicesSendingVapidWebPushNotificationsPush]。  
+推送通知需要 VAPID \(自愿应用程序服务器标识\) 密钥才能将推送通知发送到 PWA 客户端。  联机 \(提供了多个 VAPID 密钥生成器，例如，vapidkeys.com [\) 。][VapidkeysMain]  生成后，应获取包含公钥和私钥的 JSON 对象。  保存密钥，以执行以下教程中的稍后步骤。  有关 VAPID 和 WebPush 的信息，请导航到使用 Mozilla 推送服务发送 VAPID 标识的 [WebPush 通知][MozillaServicesSendingVapidWebPushNotificationsPush]。  
 
 ### <a name="step-2---subscribe-to-push-notifications"></a>步骤 2 - 订阅推送通知  
 
@@ -299,7 +299,7 @@ self.addEventListener('notificationclick', function (event) {
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          如果未选择 \ (或 activate\) toast 通知，系统会在几秒钟后自动将其关闭，Windows操作中心中将其排好队列。  
+          如果未选择 \(或 activate\) toast 通知，系统会在几秒钟后自动将其关闭，Windows操作中心中将其排好队列。  
           
           :::image type="complex" source="./media/windows-action-center.png" alt-text="Windows操作中心中的通知" lightbox="./media/windows-action-center.png":::
              Windows操作中心中的通知  
@@ -322,7 +322,7 @@ self.addEventListener('notificationclick', function (event) {
 
 *   [MDN Web 文档上的渐进 Web 应用][MDNProgressiveWebApps]  
 *   [渐进式 Web 应用 web.dev][WebDevProgressiveWebApps]  
-*   [作为渐进 Web 应用的][HackerNewsProgressiveWebApps]黑客新闻阅读器 - 比较用于实现示例 \ (黑客新闻阅读器\) PWA 的不同框架和性能模式。  
+*   [作为渐进 Web 应用的][HackerNewsProgressiveWebApps]黑客新闻阅读器 - 比较用于实现示例 \(黑客新闻阅读器\) PWA 的不同框架和性能模式。  
 *   [为 PBA 提供一些支持][Davrous20191018MythBustingPwasNewEdgeEdition]  
 *   [渐进式 Web 应用的渐进路线图][CloudfourThinksProgressiveRoadmapYourWebApp]  
 *   [使用渐进 Web 应用的脱机 POS][MediumWebEdgeOfflinePostsProgressiveWebApps]  
@@ -364,7 +364,7 @@ self.addEventListener('notificationclick', function (event) {
 
 [MDNDedicatedWorkerGlobalScopePostMessage]: https://developer.mozilla.org/docs/Web/API/
 [MDNNotificationsApi]: https://developer.mozilla.org/docs/Web/API/Notifications_API "通知 API | MDN"  
-[MDNProgressiveWebApps]: https://developer.mozilla.org/Apps/Progressive "渐进式 Web 应用 \ (PWA) |MDN"  
+[MDNProgressiveWebApps]: https://developer.mozilla.org/Apps/Progressive "渐进式 Web 应用 \(PWA) |MDN"  
 [MDNPushApi]: https://developer.mozilla.org/docs/Web/API/Push_API "推送 API | MDN"  
 [MDNPushManager]: https://developer.mozilla.org/docs/Web/API/PushManager "PushManager |MDN"  
 [MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "服务工作线程 API |MDN"  

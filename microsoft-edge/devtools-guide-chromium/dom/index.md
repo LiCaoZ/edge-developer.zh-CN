@@ -29,7 +29,7 @@ ms.locfileid: "11798623"
    limitations under the License.  -->  
 # <a name="get-started-with-viewing-and-changing-the-dom"></a>查看和更改 DOM 入门  
 
-完成这些交互式教程，了解使用 DevTools 查看和更改页面的文档对象模型[\ (](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) DOM\) 的基本Microsoft Edge。  
+完成这些交互式教程，了解使用 DevTools 查看和更改页面的文档对象模型[\(](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) DOM\) 的基本Microsoft Edge。  
 
 本教程假定你知道 DOM 和 HTML 之间的区别。 导航到“[附录：HTML 与 DOM](#appendix-html-versus-the-dom)”了解相关说明。  
 
@@ -62,7 +62,7 @@ ms.locfileid: "11798623"
         
         1.  选择开发人员工具左上角的“**检查**”（“![检查](../media/inspect-icon.msft.png)”）图标。  
             
-            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="“检查”图标" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
+            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="检查图标" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
                “**检查**”图标  
             :::image-end:::  
             
@@ -264,7 +264,7 @@ ms.locfileid: "11798623"
     1.  选择 `Control`+`V`（Windows、Linux）或 `Command`+`V` (macOS) 以将表达式粘贴到控制台中。  
     1.  选择 `Enter` 以计算表达式。
         
-        :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="“复制 JS 路径”表达式的结果" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
+        :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="复制 JS 路径表达式的结果" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
            “**复制 JS 路径**”表达式的结果  
         :::image-end:::  
         

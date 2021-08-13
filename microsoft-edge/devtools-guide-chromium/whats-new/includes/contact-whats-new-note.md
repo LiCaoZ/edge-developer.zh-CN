@@ -18,7 +18,7 @@ ms.locfileid: "11798052"
 *   向[我们想要的 Web][TheWebWeWant] 提交建议。  
 *   若要提交有关本文的错误，请使用以下“**反馈**” 部分。  
 
-:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的“发送反馈”图标" lightbox="../media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的发送反馈图标" lightbox="../media/bing-devtools-send-feedback.msft.png":::
    Microsoft Edge DevTools 中的“**发送反馈**”图标  
 :::image-end:::  
 

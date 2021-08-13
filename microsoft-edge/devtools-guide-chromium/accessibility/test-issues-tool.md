@@ -26,7 +26,7 @@ ms.locfileid: "11802446"
 
 ## <a name="view-the-accessibility-section-of-the-issues-tool"></a>查看问题工具的辅助功能部分
 
-1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。  在右上角，将显示 **问题计数器** \ (![ 问题计数器 ](../media/issues-counter-icon.msft.png) \) 。  问题 **计数器** 是语音气泡图标以及自动检测到的问题数。
+1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。  在右上角，将显示 **问题计数器** \(![ 问题计数器 ](../media/issues-counter-icon.msft.png) \) 。  问题 **计数器** 是语音气泡图标以及自动检测到的问题数。
 
     :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="DevTools 中的"问题"计数器，指示当前文档中的问题数" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
         DevTools 中的"问题"计数器，指示当前文档中的问题数****
@@ -49,7 +49,7 @@ ms.locfileid: "11802446"
 
 1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  在右上角，选择问题 **计数器** \ (![ 问题计数器 ](../media/issues-counter-icon.msft.png) \) 。  "**问题**"工具将在 DevTools 底部的"箱"中打开。 ****
+1.  在右上角，选择问题 **计数器** \(![ 问题计数器 ](../media/issues-counter-icon.msft.png) \) 。  "**问题**"工具将在 DevTools 底部的"箱"中打开。 ****
 
 1.  在" **问题"** 选项卡上，展开 **"辅助功能"** 部分。
 
@@ -57,7 +57,7 @@ ms.locfileid: "11802446"
 
 1. 选择" **在元素中打开"** 链接。
 
-    :::image type="complex" source="../media/a11y-testing-inspect-problematic-element.msft.png" alt-text="在"问题"工具中选择链接后显示有问题的 HTML 的元素工具" lightbox="../media/a11y-testing-inspect-problematic-element.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-inspect-problematic-element.msft.png" alt-text="在问题工具中选择链接后显示有问题的 HTML 的元素工具" lightbox="../media/a11y-testing-inspect-problematic-element.msft.png":::
         在"问题"工具中选择链接后显示有问题的 HTML **的元素** 工具 :::image-end:::
 
     将 **打开"** 元素"工具，同时在 DOM 树中突出显示元素。  " **样式** "窗格显示元素应用的 CSS 规则。  现在将显示以下代码。
@@ -119,7 +119,7 @@ ms.locfileid: "11802446"
 
 1.  选择 `li.high` 元素。  在呈现的网页中，突出显示**了"小**动物****"部分中的"动物"链接，显示一个小的信息覆盖层。  这是当您将鼠标悬停在"元素"工具中 DOM 树中的某个元素上时出现的 **相同** 覆盖。
 
-    :::image type="complex" source="../media/a11y-testing-element-with-contrast-issues.msft.png" alt-text="在"受影响资源"部分选择链接后突出显示的网页中的元素" lightbox="../media/a11y-testing-element-with-contrast-issues.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-element-with-contrast-issues.msft.png" alt-text="在受影响资源部分选择链接后突出显示的网页中的元素" lightbox="../media/a11y-testing-element-with-contrast-issues.msft.png":::
         在"受影响资源"部分选择链接后 **突出显示的网页中的** 元素
     :::image-end:::
 

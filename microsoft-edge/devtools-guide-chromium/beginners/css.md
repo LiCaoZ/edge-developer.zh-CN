@@ -274,7 +274,7 @@ li a {
 
 向现有规则集添加声明  
 
-1.  将鼠标悬停在 **"主页"** 链接上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**  
+1.  将鼠标悬停在 **"主页"** 链接上，打开上下文菜单 \(右键单击\) ，然后选择"检查 **"。**  
     
     :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="检查主页链接" lightbox="../media/beginners-css-add1.msft.png":::
        检查主页链接  
@@ -337,7 +337,7 @@ li a {
 
 在 DevTools 中添加新规则集  
 
-1.  Select **New Style Rule** \ (New Style Rule ![ ](../media/new-style-rule-icon.msft.png) \) which is next to **.cls**.  空的规则集将显示为 `a` 选择器。  
+1.  Select **New Style Rule** \(New Style Rule ![ ](../media/new-style-rule-icon.msft.png) \) which is next to **.cls**.  空的规则集将显示为 `a` 选择器。  
     
     :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="添加新规则" lightbox="../media/beginners-css-rule1.msft.png":::
        添加新规则  
@@ -367,7 +367,7 @@ li a {
     
 1.  将鼠标悬停在"主页 **"链接** 上。  链接的背景变为绿色。  
     
-    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="将鼠标悬停在"主页"链接上以显示其绿色背景" lightbox="../media/beginners-css-rule5.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="将鼠标悬停在主页链接上以显示其绿色背景" lightbox="../media/beginners-css-rule5.msft.png":::
        将鼠标悬停在"主页"链接上以显示其绿色背景  
     :::image-end:::  
     
@@ -417,7 +417,7 @@ li a {
     
 1.  选择 **"新建文件"。**  
     
-    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text=""新建文件"对话框" lightbox="../media/beginners-css-external5.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text="新建文件对话框" lightbox="../media/beginners-css-external5.msft.png":::
        "新建文件"对话框  
     :::image-end:::  
     
@@ -622,7 +622,7 @@ li a {
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，作者为 [Katherine Jackson][KatherineJackson] \ (技术作家，Chrome DevTools\) 。  
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，作者为 [Katherine Jackson][KatherineJackson] \(技术作家，Chrome DevTools\) 。  
 
 [![知识共享许可协议][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

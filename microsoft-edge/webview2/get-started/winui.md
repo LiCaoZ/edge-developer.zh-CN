@@ -22,7 +22,7 @@ ms.locfileid: "11675132"
 ## <a name="step-0---set-up-development-environment"></a>步骤 0 - 设置开发环境 
 
 1. 按照设置开发环境的步骤 1-4 安装 Visual Studio、配置 NuGet 程序包源并安装 Windows App SDK Extension for Visual Studio。 [][WindowsAppsWinui3ConfigureYourDevEnvironment] 
-1. 安装安装在 Windows 10 版本 1803 \ (版本 17134\) 或更高版本上的[WebView][Webview2Installer] [Microsoft Edge (Chromium) 2][MicrosoftedgeinsiderDownload]运行时或任何非稳定通道。  有关更新Windows 10，请导航到Windows[更新：常见问题解答][MicrosoftSupport12373]。  
+1. 安装安装在 Windows 10 版本 1803 \(版本 17134\) 或更高版本上的[WebView][Webview2Installer] [Microsoft Edge (Chromium) 2][MicrosoftedgeinsiderDownload]运行时或任何非稳定通道。  有关更新Windows 10，请导航到Windows[更新：常见问题解答][MicrosoftSupport12373]。  
 1.  若要访问开发人员特定的所有Visual Studio功能，请打开开发人员[模式][WindowsUwpGetStartedEnableYourDeviceForDevelopment]。  
     
 ## <a name="step-1---create-project"></a>步骤 1 - 创建Project  

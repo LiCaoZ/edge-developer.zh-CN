@@ -29,7 +29,7 @@ ms.locfileid: "11806789"
 
 在 Microsoft Edge 版本 91 或更早版本中，当 DevTools 视区较窄时，不会显示用于关闭 DevTools 的**关闭**按钮。  在 Microsoft Edge 版本 92 中，无论 DevTools 视区宽度如何，DevTools 中的**关闭**按钮始终存在。
 
-:::image type="complex" source="../../media/2021/05/close-devtools-button-always-displayed.msft.png" alt-text="即使视区较窄，现在也存在“关闭”DevTools 按钮" lightbox="../../media/2021/05/close-devtools-button-always-displayed.msft.png":::
+:::image type="complex" source="../../media/2021/05/close-devtools-button-always-displayed.msft.png" alt-text="即使视区较窄，现在也存在关闭DevTools 按钮" lightbox="../../media/2021/05/close-devtools-button-always-displayed.msft.png":::
    即使视区较窄， 现在也存在**关闭** DevTools 按钮
 :::image-end:::
 
@@ -45,11 +45,11 @@ ms.locfileid: "11806789"
 
 **更多工具**菜单在 Microsoft Edge 版本 89 中作为试验提供，始终存在。
 
-:::image type="complex" source="../../media/2021/05/more-tools-button.msft.png" alt-text="上部工具栏和抽屉工具栏中的“更多工具”按钮" lightbox="../../media/2021/05/more-tools-button.msft.png":::
+:::image type="complex" source="../../media/2021/05/more-tools-button.msft.png" alt-text="上部工具栏和抽屉工具栏中的更多工具按钮" lightbox="../../media/2021/05/more-tools-button.msft.png":::
    上部工具栏和抽屉工具栏中的“**更多工具**”按钮
 :::image-end:::
 
-:::image type="complex" source="../../media/2021/05/more-tools-menu.msft.png" alt-text="“更多工具”菜单" lightbox="../../media/2021/05/more-tools-menu.msft.png":::
+:::image type="complex" source="../../media/2021/05/more-tools-menu.msft.png" alt-text="更多工具菜单" lightbox="../../media/2021/05/more-tools-menu.msft.png":::
    “**更多工具**”菜单
 :::image-end:::
 
@@ -224,7 +224,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 跨源资源共享(CORS)错误现在显示在**问题**选项卡中。 CORS 错误有多种潜在原因。  单击以展开每个问题以了解潜在原因和解决方案。
 
-:::image type="complex" source="../../media/2021/05/cors-debugging-support.msft.png" alt-text="“问题”选项卡中的 CORS 问题" lightbox="../../media/2021/05/cors-debugging-support.msft.png":::
+:::image type="complex" source="../../media/2021/05/cors-debugging-support.msft.png" alt-text="问题选项卡中的 CORS 问题" lightbox="../../media/2021/05/cors-debugging-support.msft.png":::
    “问题”选项卡中的 CORS 问题
 :::image-end:::
 

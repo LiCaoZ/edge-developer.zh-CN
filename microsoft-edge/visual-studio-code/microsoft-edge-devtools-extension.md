@@ -93,7 +93,7 @@ the Microsoft Edge Developer Tools for Visual Studio Code extension allows you t
 
     The Microsoft Edge Tools： Targets panel now displays two buttons： **Launch Instance** and Generate **launch.json**.
 
-    :::image type="complex" source="./media/edge-devtools-for-vscode-targets-buttons.png" alt-text="Microsoft Edge工具：目标面板显示"启动实例"和launch.js按钮上的"生成实例"" lightbox="./media/edge-devtools-for-vscode-targets-buttons.png":::
+    :::image type="complex" source="./media/edge-devtools-for-vscode-targets-buttons.png" alt-text="Microsoft Edge工具：目标面板显示启动实例和launch.js按钮上的生成实例" lightbox="./media/edge-devtools-for-vscode-targets-buttons.png":::
        Microsoft Edge工具：目标面板显示"启动实例"和launch.js按钮上的"生成实例"  
     :::image-end:::
 
@@ -127,7 +127,7 @@ the Microsoft Edge Developer Tools for Visual Studio Code extension allows you t
 ## <a name="opening-source-files-from-the-elements-tool"></a>从"元素"工具打开源文件
 Elements 工具的一个功能是，它显示将样式和事件处理程序应用到 DOM 树中选定节点的源文件。 源文件以指向 URL 的链接的形式显示。 选择链接将在编辑器中打开Visual Studio Code文件。
 
-:::image type="complex" source="./media/edge-devtools-for-vscode-elements-files.png" alt-text=""元素"工具中的开放源文件" lightbox="./media/edge-devtools-for-vscode-elements-files.png":::
+:::image type="complex" source="./media/edge-devtools-for-vscode-elements-files.png" alt-text="元素工具中的开放源文件" lightbox="./media/edge-devtools-for-vscode-elements-files.png":::
    "元素"工具中的开放源文件  
 :::image-end:::
 
@@ -166,7 +166,7 @@ JavaScript 调试现已内置到 Visual Studio Code。 从版本 1.5.7 Visual St
 
     安装完成后，当您选择"检查"**时，它将**Microsoft Edge开发人员工具Visual Studio Code。
 
-    :::image type="complex" source="./media/edge-devtools-for-vscode-tools-inside.png" alt-text=""检查"按钮Microsoft Edge开发人员工具Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-tools-inside.png":::
+    :::image type="complex" source="./media/edge-devtools-for-vscode-tools-inside.png" alt-text="检查按钮Microsoft Edge开发人员工具Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-tools-inside.png":::
        "检查"按钮Microsoft Edge开发人员工具Visual Studio Code :::image-end:::
 
     现在，你可以检查 DOM、更改 CSS，并查看在浏览器中运行的项目的网络请求，而无需离开Visual Studio Code。

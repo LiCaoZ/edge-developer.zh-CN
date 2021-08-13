@@ -56,7 +56,7 @@ SDK 发布包包含以下组件：
 
 ## <a name="release-cadence"></a>版本节奏
 
-新版本的 WebView2 SDK 的发布常规节奏与 Microsoft Edge \ (Chromium\) 浏览器相同，大约每六周发布一次。  此节奏计划从版本 94 起每四周Microsoft Edge更改一次。
+新版本的 WebView2 SDK 的发布常规节奏与 Microsoft Edge \(Chromium\) 浏览器相同，大约每六周发布一次。  此节奏计划从版本 94 起每四周Microsoft Edge更改一次。
 
 
 ## <a name="minimum-version-and-build-number-to-instantiate-webview2"></a>实例化 WebView2 的最低版本号和内部版本号

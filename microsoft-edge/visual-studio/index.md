@@ -16,7 +16,7 @@ ms.locfileid: "11805206"
 ---
 # <a name="visual-studio"></a>Visual Studio  
 
-Microsoft [Visual Studio][MicrosoftVisualstudioVs]是一个集成开发环境 \ (IDE\) 。   使用它来编辑、调试、生成和发布 Web 应用。  它是一个功能丰富的程序，可用于 Web 开发的许多方面。  在大多数 IDEs 提供的标准编辑器和调试器之上，Visual Studio以下功能以便于开发过程。  
+Microsoft [Visual Studio][MicrosoftVisualstudioVs]是一个集成开发环境 \(IDE\) 。   使用它来编辑、调试、生成和发布 Web 应用。  它是一个功能丰富的程序，可用于 Web 开发的许多方面。  在大多数 IDEs 提供的标准编辑器和调试器之上，Visual Studio以下功能以便于开发过程。  
 
 *   编译器  
 *   代码完成工具  
@@ -141,7 +141,7 @@ Visual Studio生成 ASP.NET 和 ASP.NET Core 应用、启动 Web 服务器、启
 
 Microsoft Visual Studio和Microsoft Edge团队希望了解有关如何在 JavaScript 中Visual Studio。  若要发送反馈，请选择"发送**反馈"图标**Visual Studio或推文[@VisualStudio@EdgeDevTools。][TwitterIntentTweetViualstudioEdgdevtools]  
 
-:::image type="complex" source="./media/feedback-icon.png" alt-text=""发送反馈"图标Visual Studio" lightbox="./media/feedback-icon.png":::
+:::image type="complex" source="./media/feedback-icon.png" alt-text="发送反馈图标Visual Studio" lightbox="./media/feedback-icon.png":::
    "**发送反馈**"图标Visual Studio  
 :::image-end:::  
 

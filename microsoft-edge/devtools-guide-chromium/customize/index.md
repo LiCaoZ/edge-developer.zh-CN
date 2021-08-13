@@ -36,7 +36,7 @@ ms.locfileid: "11798519"
 **设置**  > **首选项**包含许多用于自定义 DevTools 的选项。  
 
 若要设置，请执行下列任一操作。
-*   在 DevTools 中****，选择设置 \ (设置 ![ ](../media/settings-icon-dark.msft.png) \) 图标。
+*   在 DevTools 中****，选择设置 \(设置 ![ ](../media/settings-icon-dark.msft.png) \) 图标。
 *   当 DevTools 具有焦点时，选择 `F1` 。
     
 :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="设置" lightbox="../media/customize-settings-preferences.msft.png":::
@@ -47,13 +47,13 @@ ms.locfileid: "11798519"
 
 The **Drawer** is a second panel where you can choose which tools to display.  
 
-若要打开 \ (或 close\) **收银机，** 请选择 `Escape` 。  
+若要打开 \(或 close\) **收银机，** 请选择 `Escape` 。  
 
 :::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="The Drawer" lightbox="../media/customize-drawer-open.msft.png":::
    The **Drawer**  
 :::image-end:::  
 
-默认情况下，某些工具在主面板中打开，而其他工具显示在"箱 **"中**。  选择 **"更多** \ (`...` \) "以在"箱"中打开 **工具**。  
+默认情况下，某些工具在主面板中打开，而其他工具显示在"箱 **"中**。  选择 **"更多** \(`...` \) "以在"箱"中打开 **工具**。  
 
 :::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="用于打开"箱"的按钮" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
    用于打开"箱 **"的按钮**  
@@ -61,15 +61,15 @@ The **Drawer** is a second panel where you can choose which tools to display.
 
 可以在主面板和箱之间移动工具。  
 
-*   若要将工具从工具箱移动到主面板，请将鼠标悬停在工具上，打开上下文菜单 \ (右键单击\) 然后选择"移动到**顶部"。**  
+*   若要将工具从工具箱移动到主面板，请将鼠标悬停在工具上，打开上下文菜单 \(右键单击\) 然后选择"移动到**顶部"。**  
     
     :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="将工具从"箱"移到主面板" lightbox="../media/move-from-drawer.msft.png":::
        将工具从 **"箱"** 移到主面板  
     :::image-end:::  
     
-*   若要将工具从主面板移动到箱中，请将鼠标悬停在工具上，打开上下文菜单 \ (右键单击\) 然后选择"移动到**底部"。**  
+*   若要将工具从主面板移动到箱中，请将鼠标悬停在工具上，打开上下文菜单 \(右键单击\) 然后选择"移动到**底部"。**  
     
-    :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="将工具从主面板移动到"箱"" lightbox="../media/move-to-drawer.msft.png":::
+    :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="将工具从主面板移动到箱" lightbox="../media/move-to-drawer.msft.png":::
        将工具从主面板移动到"箱 **"**
     :::image-end:::  
     

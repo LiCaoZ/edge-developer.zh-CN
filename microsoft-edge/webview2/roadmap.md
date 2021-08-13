@@ -36,12 +36,12 @@ WebView2 团队正在计划以下主要工作，用于将来的更新。
 
 ## <a name="webview2-runtime-and-installer"></a>WebView2 运行时和安装程序  
 
-使用常青分发模式，你可以将 WebView2 运行时的目标或链安装到用户计算机上。  Evergreen WebView2 运行时和安装程序已到达通用版本 \ (GA\) 。  有关详细信息，请导航到分发 [WebView2 应用和 WebView2 运行时][ConceptDistribution]。
+使用常青分发模式，你可以将 WebView2 运行时的目标或链安装到用户计算机上。  Evergreen WebView2 运行时和安装程序已到达通用版本 \(GA\) 。  有关详细信息，请导航到分发 [WebView2 应用和 WebView2 运行时][ConceptDistribution]。
 
 
 ## <a name="fixed-version"></a>固定版本  
 
-固定版本分发模式允许你打包Microsoft Edge二进制文件 <!--(a specific version of the WebView2 Runtime)--> 在本机应用程序中。  固定版本已达到通用版本 \ (GA\) 。  有关详细信息，请导航到分发 [WebView2 应用和 WebView2 运行时][ConceptDistribution]。
+固定版本分发模式允许你打包Microsoft Edge二进制文件 <!--(a specific version of the WebView2 Runtime)--> 在本机应用程序中。  固定版本已达到通用版本 \(GA\) 。  有关详细信息，请导航到分发 [WebView2 应用和 WebView2 运行时][ConceptDistribution]。
 
 
 ## <a name="general-availability"></a>通用  

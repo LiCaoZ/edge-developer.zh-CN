@@ -166,15 +166,15 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术\(HTML、
 *   Windows 10 IoT 企业版LTSC x64 2019
 *   Windows 10 IoT 企业版 21h1 x64
 *   Windows 8.1  
-*   Windows 7 \*\*  
+*   Windows 7   
 *   Windows Server 2019  
 *   Windows Server 2016  
 *   Windows Server 2012  
 *   Windows Server 2012 R2  
-*   Windows Server 2008 R2 \*\*  
+*   Windows Server 2008 R2   
     
 > [!IMPORTANT]
-> \*\* 对 Windows 7 和 Windows Server 2008 R2 的 WebView2 支持与 Microsoft Edge 的支持周期相同。  有关详细信息，请导航到 [Microsoft Edge 支持的操作系统][DeployedgeMicrosoftEdgeSupportedOS]。  
+>  对 Windows 7 和 Windows Server 2008 R2 的 WebView2 支持与 Microsoft Edge 的支持周期相同。  有关详细信息，请导航到 [Microsoft Edge 支持的操作系统][DeployedgeMicrosoftEdgeSupportedOS]。  
 
 ## <a name="next-steps"></a>后续步骤  
 

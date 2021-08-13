@@ -48,7 +48,7 @@ ms.locfileid: "11799660"
 1.  打开[设置，][DevToolsCustomizeSettings]例如，选择主工具栏中的齿轮图标，或选择 `Shift` + `?` 。  
 1.  选择 **"快捷方式设置** "页。
 1.  选择要自定义的操作。  例如，在" **调试器** "部分，选择 **"暂停脚本执行"** 操作。  
-1.  选择 **Edit** \ (![ EditKeyboardShortcut ](../media/edit-keyboard-shortcut-icon.msft.png) \) 图标。  
+1.  选择 **Edit** \(![ EditKeyboardShortcut ](../media/edit-keyboard-shortcut-icon.msft.png) \) 图标。  
     
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Select the action to customize from the Shortcuts page in 设置" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        Select the action to customize from the **Shortcuts** page in**设置**
@@ -61,7 +61,7 @@ ms.locfileid: "11799660"
        选择要分配给该操作的密钥  
     :::image-end:::  
     
-1.  若要保存新的键盘快捷方式，请选择选中标记 \ (![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)）图标。
+1.  若要保存新的键盘快捷方式，请选择选中标记 \(![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)）图标。
     
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="选择选中标记图标以保存新的键盘快捷方式" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
        选择选中标记图标以保存新的键盘快捷方式  
@@ -69,9 +69,9 @@ ms.locfileid: "11799660"
     
 1.  选择新的键盘快捷方式以在 DevTools 中触发操作。  
     
-在 **"快捷方式"** 页上 **，自定义键盘** 快捷方式 \ (![ CustomKeyboardShortcut ](../media/custom-keyboard-shortcut-icon.msft.png) \) 图标显示已自定义的键盘快捷方式。  若要重置所有快捷方式，请选择"**还原默认快捷方式"。**  
+在 **"快捷方式"** 页上 **，自定义键盘** 快捷方式 \(![ CustomKeyboardShortcut ](../media/custom-keyboard-shortcut-icon.msft.png) \) 图标显示已自定义的键盘快捷方式。  若要重置所有快捷方式，请选择"**还原默认快捷方式"。**  
 
-编辑某个动作的键盘快捷方式时，若要放弃所做的更改，请选择 X \ (![ XKeyboardShortcut ](../media/discard-changes-keyboard-shortcut-icon.msft.png) \) 图标。  若要删除特定操作快捷方式，请选择 Delete **快捷方式** \ (![ DeleteKeyboardShortcut ](../media/delete-keyboard-shortcut-icon.msft.png) \) 图标。  
+编辑某个动作的键盘快捷方式时，若要放弃所做的更改，请选择 X \(![ XKeyboardShortcut ](../media/discard-changes-keyboard-shortcut-icon.msft.png) \) 图标。  若要删除特定操作快捷方式，请选择 Delete **快捷方式** \(![ DeleteKeyboardShortcut ](../media/delete-keyboard-shortcut-icon.msft.png) \) 图标。  
 
 > [!NOTE]
 > 如果当前为一个操作分配了键盘快捷方式，则阻止将其保存为另一个操作。  请改为从上一操作中删除键盘快捷方式，然后将其添加到新操作。  
