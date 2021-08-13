@@ -28,7 +28,7 @@ ms.locfileid: "11802446"
 
 1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。  在右上角，将显示 **问题计数器** \(![ 问题计数器 ](../media/issues-counter-icon.msft.png) \) 。  问题 **计数器** 是语音气泡图标以及自动检测到的问题数。
 
-    :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="DevTools 中的"问题"计数器，指示当前文档中的问题数" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="DevTools 中的问题计数器，指示当前文档中的问题数" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
         DevTools 中的"问题"计数器，指示当前文档中的问题数****
     :::image-end:::
 
@@ -78,7 +78,7 @@ ms.locfileid: "11802446"
 
 1.  在" **问题"工具**中，选择"进一步 **阅读** "以了解有关问题有关详细信息。  若要打开新选项卡中的链接，请按**Ctrl**单击 Windows/Linux 上的链接，或单击 + ******** + **** macOS 上的链接的命令。
 
-    :::image type="complex" source="../media/a11y-testing-more-information-links.msft.png" alt-text="指向有关问题的更深入信息的"问题"选项卡上的链接" lightbox="../media/a11y-testing-more-information-links.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-more-information-links.msft.png" alt-text="指向有关问题的更深入信息的问题选项卡上的链接" lightbox="../media/a11y-testing-more-information-links.msft.png":::
         指向 **有关问题的** 更深入信息的"问题"选项卡上的链接
     :::image-end:::
 

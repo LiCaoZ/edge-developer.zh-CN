@@ -231,7 +231,7 @@ In short, the **DOM Tree** `!==` HTML.
 1.  选择`Control`+`P` \（Windows、Linux\） 或 `Command`+`P` \（macOS\） 以打开 **"打开文件**"对话框。  查看下图。  
 1.  键入 `script` ，然后选择 **"app/script.js"。 **  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件"对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
        使用 `script.js` "打开 **文件"对话框** 打开  
     :::image-end:::  
     

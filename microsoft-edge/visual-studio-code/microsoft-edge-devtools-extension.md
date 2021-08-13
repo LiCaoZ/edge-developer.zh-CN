@@ -44,7 +44,7 @@ the Microsoft Edge Developer Tools for Visual Studio Code extension allows you t
 
 选择 **"启动实例**"将在浏览器中打开浏览器窗口和Visual Studio Code。   
 
-:::image type="complex" source="./media/edge-devtools-for-vscode-launch-instance.png" alt-text="选择"启动实例"以在浏览器中打开Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-launch-instance.png":::
+:::image type="complex" source="./media/edge-devtools-for-vscode-launch-instance.png" alt-text="选择启动实例以在浏览器中打开Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-launch-instance.png":::
    选择"启动实例"以在浏览器中打开Visual Studio Code  
 :::image-end:::
 
@@ -158,7 +158,7 @@ JavaScript 调试现已内置到 Visual Studio Code。 从版本 1.5.7 Visual St
 1. 选择"**边缘"。**
     在调试工具栏上，注意新的"检查"按钮 
 
-    :::image type="complex" source="./media/edge-devtools-for-vscode-inspect-button.png" alt-text="调试工具栏上现在显示的"检查"按钮" lightbox="./media/edge-devtools-for-vscode-inspect-button.png":::
+    :::image type="complex" source="./media/edge-devtools-for-vscode-inspect-button.png" alt-text="调试工具栏上现在显示的检查按钮" lightbox="./media/edge-devtools-for-vscode-inspect-button.png":::
        调试工具栏上现在显示的"检查"按钮 :::image-end:::
 
 1. 选择 **"检查**"以Microsoft Edge开发人员工具Visual Studio Code。
