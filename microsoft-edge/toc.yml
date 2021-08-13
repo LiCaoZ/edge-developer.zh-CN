@@ -349,6 +349,12 @@
               href: extensions-chromium/publish/manage-settings.md
             - name: 联系人扩展支持
               href: extensions-chromium/publish/contact-extensions-team.md
+            - name: Microsoft Edge 加载项
+              items:
+                - name: 使用加载项 API
+                  href: extensions-chromium/publish/api/using-addons-api.md
+                - name: 加载项 API 参考
+                  href: extensions-chromium/publish/api/addons-api-reference.md
         - name: Microsoft Edge 加载项策略
           items:
             - name: 内容安全策略
