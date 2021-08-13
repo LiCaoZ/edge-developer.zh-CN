@@ -38,7 +38,7 @@ ms.locfileid: "11798473"
 1.  在 **DOM 树**中，选择要检查的元素。  
 1.  选择 **"辅助功能"** 选项卡。 你可能需要先选择"更多选项卡****"\("样式"选项卡) "更多选项卡"按钮 ![ ](../media/more-tabs-icon.msft.png) \) **按钮**。
 
-:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="检查"辅助功能"选项卡中的 DevTools 主页的 h1 元素" lightbox="../media/accessibility-elements-accessibility.msft.png":::
+:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="检查辅助功能选项卡中的 DevTools 主页的 h1 元素" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    检查 `h1` "辅助功能"选项卡中的 DevTools **主页** 元素
 :::image-end:::  
 
