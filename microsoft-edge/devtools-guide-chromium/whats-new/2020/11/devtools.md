@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.localizationpriority: high
-ms.openlocfilehash: be4d8ed7ae24a7ad9d5c3a9b3979712be3b9a22e9434243298f994f55c759734
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: d69ecde5b7c84d7937a41e1d62cdfc2e142ec831
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11808541"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893924"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -126,7 +126,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 1.  导航到 **应用程序**  >  **服务工作线程**。  
 1.  选择 **网络请求**。  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="从服务工作线程窗格中打开网络工具" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="从“服务工作线程”窗格中打开“网络”工具" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
        从 **服务工作线程** 窗格中打开 **网络** 工具
     :::image-end:::  
     
