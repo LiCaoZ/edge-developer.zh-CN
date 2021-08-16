@@ -1,18 +1,18 @@
 ---
-description: 使用呈现工具中的"模拟 CSS 媒体功能首选-配色方案\"下拉列表) 检查深色主题和浅色主题 (的对比度问题。
+description: 使用呈现工具中的"模拟 CSS 媒体功能 prefers-color-scheme\"下拉列表) 检查深色主题和浅色主题 (的对比度问题。
 title: 检查深色主题和浅主题的对比度问题
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 6809fd3aa39139bbed2e3ea0317d9a8c9a6f1004da26df507790170bd7e8a4e2
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 82c7bd2a24a14df52b61901304ceae234bc3f97e
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11802293"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11892972"
 ---
 # <a name="check-for-contrast-issues-with-dark-theme-and-light-theme"></a>检查深色主题和浅主题的对比度问题
 
@@ -47,7 +47,7 @@ ms.locfileid: "11802293"
     
     在我们的演示页面上，页面的 **"私人** 状态"部分在浅色模式下不可读，需要更改。 
     
-    :::image type="complex" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="在浅色模式下，接收状态部分有对比度问题" lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="在浅色模式下，"接收状态"部分有对比度问题" lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
         在 **浅色模式下** ，"接收状态"部分有对比度问题
     :::image-end:::
     

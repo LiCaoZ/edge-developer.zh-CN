@@ -6,23 +6,23 @@ ms.author: msedgedevrel
 ms.date: 08/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: c233fc26af5b4c1b061b84e7dd3998b24671696b261c345d8affa8f4b550e50d
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: a4a32215cd45aedc7f9b7261fa3a441f269939ba
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11802613"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893003"
 ---
 # <a name="emulate-dark-or-light-schemes-in-the-rendered-page"></a>模拟呈现页面中的深色或浅色方案
 
-许多操作系统都有一种以较暗或更浅的颜色显示任何应用程序的方法。  在深色模式操作系统中具有浅色方案的网页产品可能难以阅读，并且对于一些用户可能是一个辅助功能问题。  
+许多操作系统都有一种方法来以较暗或更浅的颜色显示任何应用程序。  在深色操作系统中具有浅色方案的网页产品可能难以阅读，并且对于一些用户可能是一个辅助功能问题。  
 
 若要测试当用户选择深色或浅色模式时网页的呈现方式，而不是更改你自己的计算机深色模式或浅色模式设置，可以在 Microsoft Edge DevTools 中选择模拟**CSS 首选**配色方案：深色或**** 浅色。  可以从命令菜单或呈现工具**** 执行此操作，如下所述****。
 
 或者，也可以使网页根据计算机上自己的首选设置自动选择深色或浅色模式，选择"无 **模拟**"，这是默认设置。
 
-若要指定用于浅色和深色配色方案 CSS，请使用 [首选][MDNPrefersColorScheme] 配色方案 CSS 媒体查询来检测用户是否希望以深色或浅色配色方案显示产品，然后自动选择您自己的自定义浅色或深色模式 CSS。  示例 CSS 代码显示在检查深色主题和浅色 [主题的对比度问题中](test-dark-mode.md)。
+若要指定用于浅色和深色方案 CSS，请使用首选配色 [方案][MDNPrefersColorScheme] CSS 媒体查询来检测用户是否希望以深色或浅色配色方案显示产品，然后自动选择您自己的自定义浅色或深色模式 CSS。  示例 CSS 代码显示在检查深色主题和浅色 [主题的对比度问题中](test-dark-mode.md)。
 
 本文介绍更改开发中网页的外观。  若要改为更改 DevTools 的显示方式，请导航到 [将颜色主题应用到 DevTools][DevtoolsCustomizeTheme]。
 
@@ -46,11 +46,11 @@ ms.locfileid: "11802613"
 
 ## <a name="emulating-dark-or-light-mode-using-the-command-menu"></a>使用命令菜单模拟深色或浅色模式
 
-1.  当 DevTools 具有焦点时****，通过选择 `Ctrl` + `Shift` + `P` \(Windows/Linux\) 或 `Command` + `Shift` + `P` \(macOS\) 打开命令菜单。  
+1.  当 DevTools 具有焦点时****，通过选择 `Ctrl` + `Shift` + `P` \ (Windows/Linux\) 或 `Command` + `Shift` + `P` \ (macOS\) 打开命令菜单。  
 
 1.  键入"dark"、"light"或"emulate"。  然后选择呈现 **：模拟 CSS 首选配色方案：深色** 或呈现 **：模拟 CSS 首选配色方案：浅**色，然后选择 **Enter**。
 
-    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="使用命令菜单上的呈现：模拟 CSS prefers-color-scheme 命令模拟深色或浅色模式" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="使用命令菜单上的"呈现：模拟 CSS prefers-color-scheme"命令模拟深色或浅色模式" lightbox="../media/css-console-command-menu-rendering.msft.png":::
         使用呈现模拟深色或浅色 **模式：模拟命令** 菜单上的 CSS 首选配色方案命令
     :::image-end:::  
 

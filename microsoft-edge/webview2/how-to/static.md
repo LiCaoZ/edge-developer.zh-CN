@@ -8,16 +8,16 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 8f48a4fde9e2960de6156fc14db8c84f87a49868
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: 8e778e32027af7ec7db931b1a321a6d15629d39b
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535815"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893230"
 ---
 # <a name="statically-link-the-webview2-loader-library"></a>静态链接 WebView2 加载程序库  
 
-你可能希望使用单个可执行文件（而不是许多文件的包）来分发应用程序。 若要创建单个可执行文件或减小程序包的大小，应静态链接 WebView2Loader 文件。 WebView2 SDK 包含头文件 、 `WebView2Loader.dll` 和 `IDL` 文件。 `WebView2Loader.dll` 是一个小型组件，可帮助应用在设备上找到 WebView2 运行时Microsoft Edge非稳定通道。  
+你可能希望使用单个可执行文件（而不是许多文件的包）来分发应用程序。 若要创建单个可执行文件或减小程序包的大小，应静态链接 WebView2Loader 文件。 WebView2 SDK 包含头文件 、 `WebView2Loader.dll` 和 `IDL` 文件。 `WebView2Loader.dll` 是一个小型组件，可帮助应用在设备上找到 WebView2 运行时Microsoft Edge预览通道。  
 
 对于不希望提供 的应用， `WebView2Loader.dll` 请完成以下步骤。  
 
@@ -71,11 +71,11 @@ ms.locfileid: "11535815"
 [DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"  
 
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft EdgeWebView2 API 参考|Microsoft Docs"  
-[Webview2MainNextSteps]: ../index.md#next-steps "下一步 - WebView2 Microsoft Edge预览 (简介) |Microsoft Docs"  
+[Webview2MainNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 (预览版) |Microsoft Docs"  
 [Webview2MainGetStarted]: ../index.md#get-started "入门 - WebView2 Microsoft Edge预览 (简介) |Microsoft Docs"  
 
 [GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView 反馈 - MicrosoftEdge/WebViewFeedback |GitHub"  
-[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples |GitHub"  
+[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"  
 
 [GithubMicrosoftVscodeJSDebugWhatsNew]: https://github.com/microsoft/vscode-js-debug#whats-new "新增功能- 适用于 Visual Studio Code 的 JavaScript 调试程序 - microsoft/vscode-js-debug |GitHub"  
 

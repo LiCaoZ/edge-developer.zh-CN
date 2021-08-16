@@ -1,5 +1,5 @@
 ---
-description: 了解如何注册开发人员帐户以将扩展Microsoft Edge加载项应用商店
+description: 了解如何注册开发人员帐户以将扩展发布到Microsoft Edge加载项应用商店
 title: 注册为Microsoft Edge开发人员以发布扩展
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,39 +7,39 @@ ms.date: 07/27/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 833567658b9b27cdbb2ab7f4f59e0bfc13167295a60c593f132fad0339ca41ae
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 4aadbcdc4de0efc52954dcfcd3b1ddf0c8de64c0
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11807449"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11892958"
 ---
 # <a name="register-as-a-microsoft-edge-extension-developer"></a>注册为 Microsoft Edge 扩展开发人员  
 
-若要将扩展提交到Microsoft Edge加载项商店，你必须注册为开发人员，通过 Microsoft Edge 计划。  该Microsoft Edge计划位于合作伙伴[中心上][MicrosoftPartnerCenter]。  
+若要将扩展Microsoft Edge加载项商店，你必须注册为开发人员，并Microsoft Edge计划。  该Microsoft Edge计划位于合作伙伴[中心上][MicrosoftPartnerCenter]。  
 
 > [!IMPORTANT]
 > 向应用计划提交扩展无需Microsoft Edge费用。  
 
-## <a name="before-you-begin"></a>在你开始前  
+## <a name="before-you-begin"></a>在开始之前  
 
-如果你没有帐户，或者如果你有合作伙伴中心的现有商业帐户，请创建一个新的 Microsoft 帐户[ (MSA) ][WindowsCommunityEverythingAboutMicrosoftAccounts]注册到 Microsoft Edge 计划。  若要创建 Microsoft 帐户 \(Outlook/live/Hotmail\) ，请完成以下操作。  
+如果你没有帐户，或者如果你有合作伙伴中心的现有商业帐户，请创建一个新的 Microsoft 帐户[ (MSA) ][WindowsCommunityEverythingAboutMicrosoftAccounts]注册到 Microsoft Edge 计划。  若要创建 Microsoft 帐户 \ (Outlook/live/Hotmail\) ，请完成以下操作。  
 
-1. 导航到 [account.microsoft.com][MicrosoftAccount]。  
+1. 导航到[account.microsoft.com。][MicrosoftAccount]  
 1. 选择 **"创建 Microsoft 帐户"。**
 1. 完成注册步骤。
     
-如果你在合作伙伴中心上注册了开发人员帐户，请使用相应的 Microsoft 帐户 \(MSA\) 登录到你的开发人员帐户。 然后，注册Microsoft Edge计划。 
+如果你在合作伙伴中心上注册了开发人员帐户，请使用相应的 Microsoft 帐户 \ (MSA\) 登录到你的开发人员帐户。 然后，注册Microsoft Edge计划。 
 
 > [!NOTE]
 > 当前Microsoft Edge扩展不支持使用工作或学校帐户注册。 你需要使用 MSA 帐户注册，然后将你的 Azure AD 租户与该帐户关联以用于扩展管理。 
 
-## <a name="enroll-in-the-microsoft-edge-program-on-partner-center"></a>在合作伙伴中心Microsoft Edge注册计划  
+## <a name="enroll-in-the-microsoft-edge-program-on-partner-center"></a>在合作伙伴中心Microsoft Edge计划注册  
 
 1.  导航到开发人员 [页面，然后选择][MicrosoftPartnerCenter] 合作伙伴 **中心**。  
 1.  如果你有 Microsoft 帐户，立即登录。  如果没有，请创建新的 Microsoft 帐户。 使用用于登录开发人员帐户的同一 Microsoft 帐户。  登录后，将显示注册表单。 下表介绍了注册表单上的字段。  
     
-    若要注册Microsoft Edge计划，请登录帐户并填写表单。  
+    若要注册 Microsoft Edge计划，请登录帐户并填写表单。  
     
     :::row:::
        :::column span="1":::
@@ -107,7 +107,7 @@ ms.locfileid: "11807449"
 
 若要显示你的验证状态，请导航到合作伙伴 [中心][MicrosoftPartnerCenter] ，然后选择帐户 **设置**。  等待验证过程完成时，继续生成、测试和准备提交。
 
-有关详细信息，请导航到"[发布扩展"。][ExtensionsChromiumPublishExtension]  有关扩展入门的信息，请导航到开始[Microsoft Edge (Chromium) 扩展。][ExtensionsChromiumGettingStartedIndex] 若要通过将Microsoft Edge帐户与合作伙伴中心上的 Microsoft 帐户关联来注册 Azure Active Directory 计划，请导航到"[添加和管理用户"][AddandManageUsers]
+有关详细信息，请导航到"[发布扩展"。][ExtensionsChromiumPublishExtension]  有关扩展入门的信息，请导航到开始[Microsoft Edge (Chromium) 扩展。][ExtensionsChromiumGettingStartedIndex] 若要通过将Microsoft Edge帐户与合作伙伴中心上的 Microsoft 帐户关联来注册 Azure Active Directory 计划，请导航到"添加和管理[用户"][AddandManageUsers]
 
 <!-- links -->  
 

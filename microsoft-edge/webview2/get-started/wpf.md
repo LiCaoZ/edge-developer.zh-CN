@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、wpf 应用、wpf、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
-ms.openlocfilehash: 9808c6f801e3f7a5052186bb3088621758c41762
-ms.sourcegitcommit: bbbf722067f1d255f59ab384e66798f8b77ef609
+ms.openlocfilehash: 969b6209b6cb84f5345f5b0e533f2e972e81fa58
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "11574594"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893843"
 ---
 # <a name="get-started-with-webview2-in-wpf"></a>WPF 中的 WebView2 入门
 
@@ -21,16 +21,16 @@ ms.locfileid: "11574594"
 
 ## <a name="prerequisites"></a>必备条件  
 
-请确保先安装以下先决条件列表，然后再继续。  
+请确保先安装以下必备组件列表，然后再继续。  
 
-*   [WebView2][Webview2Installer]运行时Microsoft Edge (Chromium) [][MicrosoftedgeinsiderDownload]安装在受支持的操作系统 \(上的任意非稳定通道Windows 10、Windows 8.1和 Windows 7\) 。  
+*   [WebView2][Webview2Installer]运行时或任何[Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload]必须安装在当前受支持的操作系统 \ (Windows 10、Windows 8.1 和 Windows 7\) 上。  
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 或更高版本。  
     
 ## <a name="step-1---create-a-single-window-app"></a>步骤 1 - 创建单窗口应用  
 
 从包含单个主窗口的基本桌面项目开始。  
 
-1.  In Visual Studio， choose **WPF .NET Core App** \(or **WPF .NET Framework App**\) > **Next**.  
+1.  In Visual Studio， choose **WPF .NET Core App** \ (or **WPF .NET Framework App**\) > **Next**.  
     
     :::row:::
        :::column span="1":::
@@ -43,7 +43,7 @@ ms.locfileid: "11574594"
        :::column-end:::
     :::row-end:::
     
-1.  输入 name 和**location Project****的值**。  选择 **.NET Framework 4.6.2**或更高版本 \(**或 .NET Core 3.0**或更高版本\) 。  
+1.  输入 name 和**Location** Project**值**。  选择 **.NET Framework 4.6.2**或更高版本 \ (**或 .NET Core 3.0**或更高版本\) 。  
     
     :::row:::
        :::column span="1":::
@@ -62,13 +62,13 @@ ms.locfileid: "11574594"
 
 使用 NuGet 将 WebView2 SDK 添加到项目中。  
 
-1.  将鼠标悬停在项目上，打开上下文菜单 \(右键单击\) ，然后选择"管理NuGet**包..."。**  
+1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击\) ，然后选择"管理NuGet**包..."。**  
     
     :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="管理 NuGet 程序包" lightbox="./media/wpf-getting-started-mng-nuget.png":::
        管理 NuGet 程序包
     :::image-end:::
     
-1.  在搜索栏中，键入"> `Microsoft.Web.WebView2` **选择"Microsoft.Web.WebView2"。**  
+1.  在搜索栏中，键入 `Microsoft.Web.WebView2` ">**选择"Microsoft.Web.WebView2"。**  
     
     :::image type="complex" source="./media/install-nuget.png" alt-text="NuGet" lightbox="./media/install-nuget.png":::
        NuGet  
@@ -158,7 +158,7 @@ ms.locfileid: "11574594"
     </DockPanel>
     ```  
     
-1.  在Visual Studio中，若要添加命名空间，请将 `MainWindow.xaml.cs` `CoreWebView2` 以下代码段插入顶部。  
+1.  在Visual Studio中，若要 `MainWindow.xaml.cs` 添加命名空间，请将 `CoreWebView2` 以下代码段插入顶部。  
     
     ```csharp
     using Microsoft.Web.WebView2.Core;
@@ -340,7 +340,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 *   有关 WebView2 API 的更多详细信息，请导航到 [API 参考](/dotnet/api/microsoft.web.webview2.wpf.webview2)。  
 *   有关 WebView2 的信息，请导航到["WebView2 资源"。](../index.md#next-steps)  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>与 WebView 团队Microsoft Edge联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>联系 Microsoft Edge WebView 团队  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
@@ -354,7 +354,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 [DotnetApiMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async "WebView2.EnsureCoreWebView2Async (CoreWebView2Environment) 方法|Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2WpfWebview2Executescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.ExecuteScriptAsync (String) 方法|Microsoft Docs"  
 
-[GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples |GitHub"  
+[GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"  
 
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 |Microsoft Edge开发人员"  
 

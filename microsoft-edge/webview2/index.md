@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、edge html、Windows Forms、WinForms、WPF、.NET、WinUI、Project Reunion
-ms.openlocfilehash: a2f377893f4232b86a72a68010a8194004a14d29
-ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
+ms.openlocfilehash: 4f2a7b128c55ad1b006da8ffdcf939b3e20581be
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "11710694"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893317"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介  
 
-Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术\(HTML、CSS 以及 JavaScript\)。  WebView2 控件使用 [Microsoft Edge(Chromium)][MicrosoftedgeinsiderMain] 作为绘制引擎，以在本机应用中显示 web 内容。  使用 WebView2 可以将 web 代码嵌入本机应用的不同部分。  在单个 WebView 实例中生成所有本机应用。  要了解如何开始生成 WebView2 应用，请导航到 [入门](#get-started)。  
+Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术\(HTML、CSS 以及 JavaScript\)。  WebView2 控件使用 [Microsoft Edge(Chromium)][MicrosoftedgeinsiderMain] 作为绘制引擎，以在本机应用中显示 web 内容。  使用 WebView2，可以在本机应用的不同部分嵌入 Web 代码，或在单个 WebView 实例中生成所有本机应用。  要了解如何开始生成 WebView2 应用，请导航到 [入门](#get-started)。  
 
 :::image type="complex" source="./media/WebView2/what-webview.png" alt-text="什么是 WebView?" lightbox="./media/WebView2/what-webview.png":::
    什么是 WebView?  
@@ -25,16 +25,15 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术\(HTML、
 
 ## <a name="hybrid-app-approach"></a>混合应用方法  
 
-开发人员通常必须决定是生成 web 应用还是本机应用。  此决定取决于范围和力量之间的权衡。  Web 应用的范围可以很广。  作为 Web 开发人员，你可以跨不同平台重用多数代码。  要访问本机平台的所有功能，请使用本机应用。  
+开发人员通常必须决定是生成 web 应用还是本机应用。  此决定取决于范围和电源之间的权衡。
+*  Web 应用的范围可以很广。  作为 Web 开发人员，您可以跨不同平台重用大部分代码。
+*  若要访问本机平台的所有功能，请使用本机应用。
 
 :::image type="complex" source="./media/WebView2/web-native.png" alt-text="Web 本机" lightbox="./media/WebView2/web-native.png":::
    Web 本机  
 :::image-end:::    
 
-混合应用使开发人员能够两者兼得。  混合应用开发人员会从以下优势中获益。  
-
-*   web 平台的通用性和优势。  
-*   本机平台的力量和完整功能。  
+混合应用使开发人员可以充分利用这两个世界：Web 平台的功能和强度，以及本机平台的强大功能和完整功能。  
     
 ## <a name="webview2-benefits"></a>WebView2 优势   
 
@@ -120,7 +119,7 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术\(HTML、
       ### <a name="evergreen-distribution"></a>常青分布  
    :::column-end:::
    :::column span="1":::
-      ### <a name="fixed"></a>已修复  
+      ### <a name="fixed-version-distribution"></a>固定版本分布 
    :::column-end:::
    :::column span="1":::
       ### <a name="incremental-adoption"></a>增量采用  
@@ -131,16 +130,16 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术\(HTML、
       依赖带有定期平台更新和安全修补的最新版 Chromium。  
    :::column-end:::
    :::column span="1":::
-      \(即将推出\) 选择在应用中打包 Chromium 位。  
+      （可选）在应用中打包特定Chromium位。  
    :::column-end:::
    :::column span="1":::
-      逐步将 web 组件添加到应用。  
+      将 Web 组件分片添加到应用。  
    :::column-end:::
 :::row-end:::  
 
 ## <a name="get-started"></a>入门  
 
-要使用 WebView2 控件生成并测试应用，需要 <!--both [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] and  -->安装 [WebView2 SDK][NugetPackagesMicrosoftWebWebView2]。  选择以下其中一个选项以开始使用。  
+要使用 WebView2 控件生成并测试应用，需要 <!--both [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] and -->安装 [WebView2 SDK][NugetPackagesMicrosoftWebWebView2]。  选择以下其中一个选项以开始使用。  
 
 *   [Win32 C/C++ 入门][Webview2GetStartedWin32]  
 *   [WPF 入门][Webview2GetStartedWpf]  
@@ -157,33 +156,34 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术\(HTML、
 *   .NET Framework 4.5 或更高版本  
 *   .NET Core 3.1 或更高版本  
 *   .NET 5  
+*   .NET 6 (Preview) 
 *   [WinUI 3.0][UwpToolkitsWinui3]  
     
-可以在以下版本的 Windows 中运行 WebView2 应用。  
+WebView2 应用可以在以下版本的 Windows。  
 
 *   Windows 10  
 *   Windows 10 IoT 企业版LTSC x32 2019
 *   Windows 10 IoT 企业版LTSC x64 2019
 *   Windows 10 IoT 企业版 21h1 x64
 *   Windows 8.1  
-*   Windows 7   
+*   Windows 7 \*\*  
 *   Windows Server 2019  
 *   Windows Server 2016  
 *   Windows Server 2012  
 *   Windows Server 2012 R2  
-*   Windows Server 2008 R2   
+*   Windows Server 2008 R2 \*\*  
     
 > [!IMPORTANT]
->  对 Windows 7 和 Windows Server 2008 R2 的 WebView2 支持与 Microsoft Edge 的支持周期相同。  有关详细信息，请导航到 [Microsoft Edge 支持的操作系统][DeployedgeMicrosoftEdgeSupportedOS]。  
+> \*\* 对 Windows 7 和 Windows Server 2008 R2 的 WebView2 支持与 Microsoft Edge 的支持周期相同。  有关详细信息，请导航到 [Microsoft Edge 支持的操作系统][DeployedgeMicrosoftEdgeSupportedOS]。  
 
 ## <a name="next-steps"></a>后续步骤  
 
-要详细了解如何生成并部署 WebView2 应用，请查看概念文档和操作指南。  
+若要详细了解如何生成和部署 WebView2 应用，请使用以下概念文档和操作指南。  
 
 ### <a name="concepts"></a>概念  
 
 *   [了解 WebView2 SDK 版本][Webview2ConceptsVersioning]  
-*   [使用 WebView2 分发应用][Webview2ConceptsDistribution]  
+*   [分发 WebView2 应用和 WebView2 运行时][Webview2ConceptsDistribution]  
 *   [开发安全的 WebView2 应用的最佳做法][Webview2ConceptsSecurity]  
 *   [在 WebView2 应用中管理用户数据文件夹][Webview2ConceptsUserDataFolder]  
  
@@ -197,8 +197,7 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术\(HTML、
 [!INCLUDE [contact WebView team note](./includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
-
-[Webview2ConceptsDistribution]: ./concepts/distribution.md "使用 WebView2 分发应用 | Microsoft Docs"  
+[Webview2ConceptsDistribution]: ./concepts/distribution.md "分发 WebView2 应用和 WebView2 运行时|Microsoft Docs"  
 [Webview2ConceptsSecurity]: ./concepts/security.md "开发安全的 WebView2 应用的最佳做法 | Microsoft Docs"  
 [Webview2ConceptsUserDataFolder]: ./concepts/user-data-folder.md "管理用户数据文件夹 | Microsoft Docs"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "了解 WebView2 SDK 版本 | Microsoft Docs"  

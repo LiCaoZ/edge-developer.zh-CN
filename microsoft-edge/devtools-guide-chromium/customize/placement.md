@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: ff28f8ed79998a929811e99cbe788f2b71131aa4503e13b97f33655a164a4ed9
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 8f1e950599c9fb1d1fee26328ca749d24c5c6d22
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11800731"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893623"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -41,7 +41,7 @@ ms.locfileid: "11800731"
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="选择扩展坞向左" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="选择"扩展坞"向左" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
          选择 **"扩展坞"向左**  
       :::image-end:::  
    :::column-end:::
@@ -77,7 +77,7 @@ DevTools 可能会撤消停靠到单独的窗口，你可以移到单独的监�
 
 ## <a name="change-placement-from-the-main-menu"></a>从主菜单更改位置  
 
-1.  选择"自定义和控制**DevTools** \(\) "，然后选择"撤消停靠到单独的窗口 `...` \(**** Undock \) "，"扩展坞到底部 \(扩展坞"到底部 \) ，或"扩展坞向左 \(扩展坞"向左 ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png) \) 。  
+1.  选择"自定义和控制**DevTools** \ (`...` \) "，然后选择"撤消**** 停靠到单独的窗口 \ (Undock \) "，"扩展坞到底部 \ (扩展坞"到底部 \) ，或"扩展坞向左 \ (扩展坞"向左 ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png) \) 。  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="选择取消停靠到单独的窗口" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
        选择 **停靠到单独的窗口位置**  

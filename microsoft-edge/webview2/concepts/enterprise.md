@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、企业、组策略、可管理性
-ms.openlocfilehash: 0932241d3141fe887130e4cdd5792b9e823f98960d747ebb273be2b61e10a560
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 318c2da28f9e02c0dd70619070b059e6fbc0e06a
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11809010"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893616"
 ---
 # <a name="managing-webview2-applications"></a>管理 WebView2 应用程序  
 
@@ -22,11 +22,11 @@ ms.locfileid: "11809010"
 
 ## <a name="group-policies-for-webview2"></a>WebView2 的组策略  
 
-IT 管理员可以使用组策略对象 \(GPO\) 配置 WebView2 的策略设置。  以下策略与 WebView2 相关。
+IT 管理员可以使用组策略对象 \ (GPO\) 配置 WebView2 的策略设置。  以下策略与 WebView2 相关。
 
-*   [Microsoft Edge -][EdgeUpdatePolicies]更新策略可供 IT 管理员管理 WebView2 运行时的安装和更新方面。  浏览器Microsoft Edge WebView2 运行时使用相同的更新机制进行更新。  除非策略（如 ）特定于通道，否则它同时适用于 `Update` 浏览器和 WebView2 运行时。  例如，允许 IT 管理员设置每天的时间，以禁止浏览器和 `UpdateSuppressed` WebView2 运行时自动更新。  这使 IT 管理员能够为浏览器和 WebView2 运行时配置一次首选项和代理，以控制其网络带宽/流量或用于其他目的。  IT 管理员可按照[Microsoft Edge指南配置][ConfigureMicrosoftEdge]Microsoft Edge - 更新策略。  
+*   [Microsoft Edge -][EdgeUpdatePolicies]更新策略可供 IT 管理员管理 WebView2 运行时的安装和更新方面。  浏览器Microsoft Edge WebView2 运行时使用相同的更新机制进行更新。  除非策略（如 ）特定于通道，否则它同时适用于 `Update` 浏览器和 WebView2 运行时。  例如，允许 IT 管理员设置每天的时间，以禁止浏览器和 `UpdateSuppressed` WebView2 运行时自动更新。  这使 IT 管理员能够为浏览器和 WebView2 运行时配置一次首选项和代理，以控制其网络带宽/流量或用于其他目的。  IT 管理员可以按照Microsoft Edge[指南配置][ConfigureMicrosoftEdge]Microsoft Edge - 更新策略。  
 
-*   [Microsoft Edge -][EdgeBrowserPolicies]浏览器策略不适用于 WebView2 应用程序。  这是设计使的，因为应用和浏览器具有不同的用例，并且 IT 管理员可能不知道哪些应用程序使用 WebView2。  在 WebView2 上应用浏览器策略会产生意外结果。  例如，IT 管理员可以在浏览器中阻止 JavaScript，这将破坏使用 JavaScript 的 WebView2 应用。  为了防止出现此问题，浏览器策略独立于 WebView2 策略。
+*   [Microsoft Edge - 浏览器][EdgeBrowserPolicies]策略不适用于 WebView2 应用程序。  这是设计使的，因为应用和浏览器具有不同的用例，并且 IT 管理员可能不知道哪些应用程序使用 WebView2。  在 WebView2 上应用浏览器策略会产生意外结果。  例如，IT 管理员可以在浏览器中阻止 JavaScript，这将破坏使用 JavaScript 的 WebView2 应用。  为了防止出现此问题，浏览器策略独立于 WebView2 策略。
 
 *   [WebView2 特定的][WebView2Policies] 策略可供你使用<!--dev, or admin?--> 直接管理 WebView2。  但是，我们建议 WebView2 应用开发人员实施自己的组策略来管理 WebView2 的使用，因为管理员能够更轻松地管理应用，而不是直接管理 WebView2。  
 

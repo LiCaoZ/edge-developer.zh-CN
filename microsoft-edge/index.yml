@@ -82,7 +82,7 @@ conceptualContent:
     - title: 与企业社区互动
       links:
         - itemType: reference
-          text: 'Enterprise预览体验成员 (社区) '
+          text: 'Enterprise预览体验成员 (中心) '
           url: 'https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise'
     - title: 适用于企业的扩展
       links:
@@ -136,7 +136,7 @@ additionalContent:
               url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
         - title: 扩展：开发人员指南
           links:
-            - text: 将Chromium扩展移植到Microsoft Edge
+            - text: 将Chromium扩展Microsoft Edge
               url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
             - text: 分发扩展的备用方法
               url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options

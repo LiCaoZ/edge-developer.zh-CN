@@ -1,5 +1,5 @@
 ---
-description: REST 终结点，用于自动发布提交到加载项网站的Microsoft Edge更新。
+description: REST 终结点，用于自动发布提交到加载项网站的加载项Microsoft Edge更新。
 title: 使用Microsoft Edge加载项 API
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,18 +7,18 @@ ms.date: 08/10/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， 加载项 api， 发布 api
-ms.openlocfilehash: 83d19d6fdc62153440873ea76e0aae2aadb76fbefcf81b43186b43c4c71262ab
-ms.sourcegitcommit: 48101fb3ad5c688ce066e8a64c29fd9cbffdaaab
+ms.openlocfilehash: 72a9e38e29b666db0b93bd76ee4b660c0b40d14a
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "11881784"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893791"
 ---
 # <a name="using-the-microsoft-edge-add-ons-api"></a>使用Microsoft Edge加载项 API
 
-本文与 Microsoft Edge[加载项 API][AddonsAPIRef]参考一起概述了建议Microsoft Edge加载项 API。  我们期待就建议的 API 合同提供建议和反馈。  请将你的反馈作为有关 [加载项 API 的问题提交][GitHubMicrosoftDocsEdgeDeveloperNewIssue]。
+本文与Microsoft Edge [API][AddonsAPIRef]参考一起概述了建议Microsoft Edge加载项 API。  我们期待就建议的 API 合同提供建议和反馈。  请将你的反馈作为有关 [加载项 API 的问题提交][GitHubMicrosoftDocsEdgeDeveloperNewIssue]。
 
-加载项MICROSOFT EDGE API 提供了一组 REST 终结点，用于以编程方式发布提交到 Microsoft Edge 加载项网站的加载项更新。  可以使用这些 REST 终结点自动执行将加载项上载和发布到加载项Microsoft Edge的过程。
+加载项Microsoft Edge API 提供了一组 REST 终结点，用于以编程方式发布提交到 Microsoft Edge 加载项网站的加载项更新。  可以使用这些 REST 终结点自动执行将加载项上载和发布到加载项Microsoft Edge的过程。
 
 API 的可用暂定日期为 2021 年 12 月。
 
@@ -33,7 +33,7 @@ API 的可用暂定日期为 2021 年 12 月。
 | _package_ | `.zip`包含加载项Microsoft Edge包。 |
 | _product_ | 一Microsoft Edge扩展或主题。  也称为加载项Microsoft Edge_加载项_。 |
 | _产品 ID_ | 需要发布其草稿的产品的产品 ID。  产品 ID 是一个 32 个字符的 GUID，与提交到合作伙伴中心的产品相关联。  例如：`d34f98f5-f9b7-42b1-bebb-98707202b21d`。 |
-| _提交_ | 要提交到合作伙伴中心的现有产品的更新。  产品每次更新都是一个提交，无论状态是 、还是 `In Draft` (`In Review` `In the Store` 已发布) 。 |
+| _提交_ | 要提交到合作伙伴中心的现有产品的更新。  产品每次更新都是提交，无论状态是 、还是 (`In Draft` `In Review` `In the Store` 已发布) 。 |
 
 
 <!-- ====================================================================== -->
@@ -85,7 +85,7 @@ https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token
 }
 ```
 
-有关详细信息，请导航到[OAuth 2.0 客户端凭据流。Microsoft 标识平台。][AzureOAuthGetToken]
+有关详细信息，请导航到[OAuth 2.0 客户端][AzureOAuthGetToken]凭据流。Microsoft 标识平台。
 
 
 <!-- ====================================================================== -->
@@ -131,7 +131,7 @@ https://addons.edge.microsoft.com/api/v1/products/$productID/submissions/draft/p
 
 如果请求成功并且更新过程开始，您将收到一个包含标头 `202 Accepted` 的响应状态 `Location` 代码。  若要了解操作的状态，请 `GET` 对 标头中的 URL 提出 `Location` 请求。
 
-API 参考[：Upload程序包以更新现有提交](addons-api-reference.md#upload-a-package-to-update-an-existing-submission)
+API 参考[：Upload包以更新现有提交](addons-api-reference.md#upload-a-package-to-update-an-existing-submission)
 
 
 <!-- ====================================================================== -->

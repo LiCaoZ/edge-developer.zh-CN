@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: c8060b20e3b25d40fcf7a90102d19cde483d64001f7fcb8998c3fbafe4b862df
-ms.sourcegitcommit: 8a3c6e6f69a4b5419f857b9e9fc983e573fd956c
+ms.openlocfilehash: 2c802f7ac6534f1e1f148cfff99da33965362926
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2021
-ms.locfileid: "11810528"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893560"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -60,7 +60,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 | 影响响应或动画的昂贵输入处理程序。  | 触摸，视差滚动。  | 让浏览器处理触摸和滚动，或尽可能晚地绑定侦听器。  导航到 [Paul 的运行时性能清单中的高成本输入处理程序][WebPerformanceCalendarRuntimeChecklist]。  |  
 | 影响响应、动画、加载的时间过长的 JavaScript。  | 用户在页面加载后向右滚动 setTimeout / setInterval。  | 优化 JavaScript 运行时：使用 `requestAnimationFrame` ，在帧上分布 DOM 操作，使用 [Web Workers][MDNUsingWebWorkers]。  |  
 | 影响响应的长时间运行的 JavaScript。  | [DOMContentLoaded 事件][MDNUsingWebWorkers]因使用 JS 工作而停止。  | 将纯计算工作移动到 [Web 工作人员][MDNUsingWebWorkers]。  如果需要 DOM 访问权限，请使用 `requestAnimationFrame` 。  <!--Navigate to [Optimize JavaScript Execution][WebFundamentalsPerformanceRenderingOptimizeJavascriptRuntime].  -->  |  
-| 影响响应或动画的垃圾脚本。  | 垃圾收集可能在任意位置发生。  | 编写更少的垃圾脚本。  导航到 [Paul Paul 的运行时性能清单中的动画中的垃圾回收][WebPerformanceCalendarRuntimeChecklist]。  |  
+| 影响响应或动画的垃圾脚本。  | 垃圾收集可能在任意位置发生。  | 编写更少的垃圾脚本。  导航到 [Paul 的运行时性能清单中的动画中的垃圾回收][WebPerformanceCalendarRuntimeChecklist]。  |  
 
 <!--todo: add Optimize JavaScript runtime section when available  -->  
 
@@ -77,7 +77,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 
 ### <a name="style-tools"></a>样式：工具  
 
-在"性能"工具 **中录制** 。  检查录制大事件 `Recalculate Style` \(以紫色\) 。  
+在"性能"工具 **中录制** 。  检查录制大事件 `Recalculate Style` \ (紫色\) 。  
 
 <!--todo: add Recording section when available  -->  
 

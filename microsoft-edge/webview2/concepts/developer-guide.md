@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、edge、最佳做法
-ms.openlocfilehash: d4b7544a991fb9dda80d969afc8e7da2bc83d711d9a2002fb205271f87960f2f
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 65e6801f645fd673b308a28a5229cb0a037b7b01
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11800141"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893945"
 ---
 # <a name="webview2-development-best-practices"></a>WebView2 开发的最佳做法
 
@@ -29,7 +29,7 @@ ms.locfileid: "11800141"
 
 ## <a name="run-compatibility-tests-regularly-when-using-the-evergreen-runtime"></a>使用 Evergreen 运行时时定期运行兼容性测试
 
-使用 Evergreen WebView2 运行时时，运行时会自动更新，因此必须定期运行兼容性测试。  若要确保 WebView2 应用继续正常工作，请针对[Microsoft Edge Insider (preview) Channels (][MicrosoftedgeinsiderDownload] Beta、Dev 或 Canary) 测试 WebView2 控件中的 Web 内容。
+使用 Evergreen WebView2 运行时时，运行时会自动更新，因此必须定期运行兼容性测试。  若要确保 WebView2 应用继续正常工作，请针对[Microsoft Edge Insider (preview) Channels (][MicrosoftedgeinsiderDownload] Beta、Dev 或 Canary) 在 WebView2 控件中测试 Web 内容。
 
 本指南类似于我们向 Web 开发人员提供的指导。  有关详细信息，请导航到["测试你的应用是否向前兼容"。][Webview2ConceptsDistributionStayCompatibleEvergreenMode]
 

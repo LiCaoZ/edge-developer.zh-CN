@@ -7,12 +7,12 @@ ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 61a5902317b229f375f3669d828fea1c1f3aabc002e9a7337acfa8ba75c9d8ad
-ms.sourcegitcommit: 48101fb3ad5c688ce066e8a64c29fd9cbffdaaab
+ms.openlocfilehash: 37630d60a95d174e7c97c29e6d36e61aa2d33be3
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "11881728"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893126"
 ---
 # <a name="update-or-remove-your-extension"></a>更新或删除扩展  
 
@@ -31,13 +31,13 @@ ms.locfileid: "11881728"
 1.  导航到 [开发人员仪表板][MicrosoftPartnerCenter] ，然后选择要更新的扩展。  
 1.  更新扩展包或扩展的元数据。  如果更新扩展包，请确保增加清单文件中的版本。  
 1.  进行更改后，选择"保存**发布**"以  >  **** 更新扩展列表，并开始认证过程。  
-1.  列 `Status` 显示后 `In the store` ，扩展更新在加载项Microsoft Edge上可用。  
+1.  列 `Status` 显示后 `In the store` ，扩展更新在加载项Microsoft Edge可用。  
 
-最初创建扩展后，你将能够通过使用 Microsoft Edge 加载项[API][UsingAddonsAPI]以编程方式更新它 (一个建议，该建议将) 。
+初始创建扩展后，你将能够通过使用 Microsoft Edge 加载项[API][UsingAddonsAPI]以编程方式更新它 (一个建议，该建议将) 。
 
 ### <a name="update-your-extension-during-the-certification-step"></a>在认证步骤中更新扩展  
 
-虽然你的扩展仍处于认证阶段，在将其发布到加载项Microsoft Edge之前，你可以更新它。 如果你的扩展未能通过认证过程，你可能还需要更新你的扩展。    
+当你的扩展仍处于认证阶段时，以及将其发布到加载项Microsoft Edge之前，你可以更新它。 如果你的扩展未能通过认证过程，你可能还需要更新你的扩展。    
 
 若要检查扩展的状态，请导航到与合作伙伴中心上的一览 [相关联的仪表板][MicrosoftPartnerCenter]。  
 
@@ -49,7 +49,7 @@ ms.locfileid: "11881728"
 1.  进行更改后，选择"保存**发布**  >  **"。**  
     
 > [!IMPORTANT]
-> 此过程将停止当前提交并从 Microsoft Edge扩展认证管道中删除你的当前提交，并且新评审从最新提交开始。  
+> 此过程会停止当前提交，并从 Microsoft Edge扩展认证管道中删除你的当前提交，并且新评审从最新提交开始。  
 
 ### <a name="update-your-extension-after-it-failed-the-certification"></a>在认证失败后更新扩展  
 
@@ -61,9 +61,9 @@ ms.locfileid: "11881728"
 1.  更新扩展包或包含从认证过程收到的反馈的元数据。  如果更新扩展包，请确保增加清单文件中的版本。  
 1.  进行更改后，选择"保存**发布**  >  **"。**  
     
-## <a name="remove-extensions-from-the-microsoft-edge-add-ons-store"></a>从加载项存储Microsoft Edge扩展  
+## <a name="remove-extensions-from-the-microsoft-edge-add-ons-store"></a>从加载项Microsoft Edge中删除扩展  
 
-若要从加载项Microsoft Edge扩展，请完成以下步骤。  
+若要从加载项Microsoft Edge中删除扩展，请完成以下步骤。  
 
 1.  导航到开发人员 [仪表板][MicrosoftPartnerCenter]。  从"仪表板"页中，选择要删除的一览。  
 1.  选择 **一览上的扩展** 概述。  
