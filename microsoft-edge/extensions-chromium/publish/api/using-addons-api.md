@@ -7,18 +7,18 @@ ms.date: 08/10/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， 加载项 api， 发布 api
-ms.openlocfilehash: 72a9e38e29b666db0b93bd76ee4b660c0b40d14a
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.openlocfilehash: 2663ac06985b0d32fd1f6cd46f2699ae8c44b76f
+ms.sourcegitcommit: 936f084e4e6b70b2553cc522622bf8e442cd6bf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893791"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "11906979"
 ---
 # <a name="using-the-microsoft-edge-add-ons-api"></a>使用Microsoft Edge加载项 API
 
-本文与Microsoft Edge [API][AddonsAPIRef]参考一起概述了建议Microsoft Edge加载项 API。  我们期待就建议的 API 合同提供建议和反馈。  请将你的反馈作为有关 [加载项 API 的问题提交][GitHubMicrosoftDocsEdgeDeveloperNewIssue]。
+本文与 Microsoft Edge[加载项 API][AddonsAPIRef]参考一起概述了建议Microsoft Edge加载项 API。  我们期待就建议的 API 合同提供建议和反馈。  请将你的反馈作为有关 [加载项 API 的问题提交][GitHubMicrosoftDocsEdgeDeveloperNewIssue]。
 
-加载项Microsoft Edge API 提供了一组 REST 终结点，用于以编程方式发布提交到 Microsoft Edge 加载项网站的加载项更新。  可以使用这些 REST 终结点自动执行将加载项上载和发布到加载项Microsoft Edge的过程。
+加载项MICROSOFT EDGE API 提供了一组 REST 终结点，用于以编程方式发布提交到 Microsoft Edge 加载项网站的加载项更新。  可以使用这些 REST 终结点自动执行将加载项上载和发布到加载项Microsoft Edge的过程。
 
 API 的可用暂定日期为 2021 年 12 月。
 
@@ -32,7 +32,7 @@ API 的可用暂定日期为 2021 年 12 月。
 | _操作 ID_ | REST 操作 ID。 |
 | _package_ | `.zip`包含加载项Microsoft Edge包。 |
 | _product_ | 一Microsoft Edge扩展或主题。  也称为加载项Microsoft Edge_加载项_。 |
-| _产品 ID_ | 需要发布其草稿的产品的产品 ID。  产品 ID 是一个 32 个字符的 GUID，与提交到合作伙伴中心的产品相关联。  例如：`d34f98f5-f9b7-42b1-bebb-98707202b21d`。 |
+| _产品 ID_ | 需要发布其草稿的产品的产品 ID。  产品 ID 是一个 128 位 GUID，与合作伙伴中心的产品相关联。  例如：`d34f98f5-f9b7-42b1-bebb-98707202b21d`。 |
 | _提交_ | 要提交到合作伙伴中心的现有产品的更新。  产品每次更新都是提交，无论状态是 、还是 (`In Draft` `In Review` `In the Store` 已发布) 。 |
 
 
@@ -43,7 +43,7 @@ API 的可用暂定日期为 2021 年 12 月。
 
 1. 访问 Microsoft 合作伙伴中心并登录到已发布加载项的帐户。
 
-1. 在Microsoft Edge**下**，将显示发布**API 的新**页面。
+1. 在 **"Microsoft Edge"** 下，将显示"**发布 API"的新**页面。
 
 1. 选择 **"创建 API 凭据"** 按钮以生成 API 凭据。  此步骤可能需要几分钟时间。  启用 API 后，客户端**ID、****客户端密码**和身份验证令牌**URL**会显示在此页面上。
 
@@ -107,7 +107,7 @@ https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token
 ```rest
 Endpoint: /v1/products/$productID/submissions/draft/package
 Type: PUT
-Header Parameters: $TOKEN: the access token; Content-Type: application/zip
+Header Parameters: Authorization: Bearer $TOKEN; Content-Type: application/zip
 Body content: the package file to upload
 ```
 
@@ -142,7 +142,7 @@ API 参考[：Upload包以更新现有提交](addons-api-reference.md#upload-a-p
 ```rest
 Endpoint: /v1/products/$productID/submissions/draft/package/operations/$operationID
 Type: GET
-Header Parameters: $TOKEN: the access token
+Header Parameters: Authorization: Bearer $TOKEN
 ```
 
 ### <a name="sample-request"></a>示例请求
@@ -166,7 +166,7 @@ API 参考 [：检查程序包上载的状态](addons-api-reference.md#check-the
 ```rest
 Endpoint: /v1/products/$productID/submissions
 Type: POST
-Header Parameters: $TOKEN: the access token
+Header Parameters: Authorization: Bearer $TOKEN
 Body content: Notes for certification, in plain text format
 ```
 
@@ -194,7 +194,7 @@ API 参考 [：发布产品草稿提交](addons-api-reference.md#publish-the-pro
 ```rest
 Endpoint: /v1/products/$productID/submissions/operations/$operationID
 Type: GET
-Header Parameters: $TOKEN: the access token
+Header Parameters: Authorization: Bearer $TOKEN
 ```
 
 ### <a name="sample-request"></a>示例请求

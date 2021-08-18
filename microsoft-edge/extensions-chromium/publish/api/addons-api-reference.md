@@ -7,16 +7,16 @@ ms.date: 08/10/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， 加载项 api， 发布 api
-ms.openlocfilehash: 67e680b6f8181a5f8e8ec6283d0bc0eb54ff408b
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.openlocfilehash: b511f630bf0f38142154b3319971c4da77e705eb
+ms.sourcegitcommit: 936f084e4e6b70b2553cc522622bf8e442cd6bf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893651"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "11906972"
 ---
 # <a name="microsoft-edge-add-ons-api-reference"></a>Microsoft Edge加载项 API 参考
 
-这是加载项 API 的 REST Microsoft Edge引用。  此 API 可自动发布已提交到加载项网站的加载项Microsoft Edge更新。
+这是加载项 API 的 REST Microsoft Edge引用。  此 API 可自动发布已提交到加载项网站的Microsoft Edge更新。
 
 有关概述，请导航到["使用Microsoft Edge加载项 API"。][UsingAddonsAPI]
 
@@ -38,7 +38,7 @@ ms.locfileid: "11893651"
 
 #### <a name="request-headers"></a>请求标头
 
-* 必需。  `Authorization: <auth token>`
+* 必需。  `Authorization: Bearer <auth token>`
 
 #### <a name="request-body"></a>请求正文
 
@@ -98,15 +98,13 @@ ms.locfileid: "11893651"
 
 #### <a name="uri-parameters"></a>URI 参数
 
-可以在请求 URI 上指定以下附加参数：
-
 | URI 参数 | 描述 |
 |---|---|
 | `productID` | 必需。  必须将程序包上载到的产品的产品 ID。 |
 
 #### <a name="request-headers"></a>请求标头
 
-*  必需。  `Authorization: <auth token>`
+*  必需。  `Authorization: Bearer <auth token>`
 
 *  必需。  `Content-Type: application/zip`
 
@@ -118,7 +116,7 @@ ms.locfileid: "11893651"
 
 #### <a name="response-headers"></a>响应头
 
-*  地点： `/products/\{productID}/submissions/draft/package/operations/\{operationID}`
+*  地点： `/products/{productID}/submissions/draft/package/operations/{operationID}`
 
 #### <a name="status-codes"></a>状态代码
 
@@ -144,15 +142,13 @@ ms.locfileid: "11893651"
 
 #### <a name="uri-parameters"></a>URI 参数
 
-可以在请求 URI 上指定以下附加参数：
-
 | URI 参数 | 描述 |
 |---|---|
 | `operationID` | 必需。  上一步中提交的上传请求的操作 ID。  此信息在响应标头中提供。
 
 #### <a name="request-headers"></a>请求标头
 
-* 必需。  `Authorization: <auth token>`
+* 必需。  `Authorization: Bearer <auth token>`
 
 #### <a name="request-body"></a>请求正文
 
@@ -230,7 +226,6 @@ ms.locfileid: "11893651"
 
 #### <a name="uri-parameters"></a>URI 参数
 
-可以在请求 URI 上指定以下附加参数：
 
 | URI 参数 | 描述 |
 |---|---|
@@ -238,7 +233,7 @@ ms.locfileid: "11893651"
 
 #### <a name="request-headers"></a>请求标头
 
-* 必需。  `Authorization: <auth token>`
+* 必需。  `Authorization: Bearer <auth token>`
 
 #### <a name="request-body"></a>请求正文
 
@@ -248,9 +243,7 @@ ms.locfileid: "11893651"
 
 #### <a name="response-headers"></a>响应头
 
-当存在有效的发布请求时，响应将返回标头：
-
-`Location: "/products/{productID}/submissions/operations/{operationID}"`
+* 地点： `/products/{productID}/submissions/operations/{operationID}`
 
 #### <a name="status-codes"></a>状态代码
 
@@ -280,7 +273,7 @@ ms.locfileid: "11893651"
 
 #### <a name="request-headers"></a>请求标头
 
-* 必需。  `Authorization: <auth token>`
+* 必需。  `Authorization: Bearer <auth token>`
 
 #### <a name="request-body"></a>请求正文
 
