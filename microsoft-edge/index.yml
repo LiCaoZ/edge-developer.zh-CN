@@ -4,12 +4,13 @@ summary: 浏览Microsoft Edge文档。  了解如何通过浏览Microsoft Edge�
 brand: m365
 metadata:
   title: Microsoft Edge 文档
-  description: Microsoft Edge、IT 管理员和浏览器用户的信息;包括 DevTools、Extensions、PWA、WebDriver 等。
+  description: Microsoft Edge开发人员、IT 管理员和浏览器用户的信息;包括 DevTools、Extensions、PWA、WebDriver 等。
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
   ms.date: 04/06/2021
   ms.localizationpriority: high
+  ms.prod: microsoft-edge
 highlightedContent:
   items:
     - title: 'Microsoft Edge (官方稳定渠道) '
@@ -82,7 +83,7 @@ conceptualContent:
     - title: 与企业社区互动
       links:
         - itemType: reference
-          text: 'Enterprise预览体验成员 (中心) '
+          text: 'Enterprise预览体验成员 (技术社区) '
           url: 'https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise'
     - title: 适用于企业的扩展
       links:
