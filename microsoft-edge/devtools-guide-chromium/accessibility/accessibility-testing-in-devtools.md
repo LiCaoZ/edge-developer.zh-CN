@@ -25,9 +25,9 @@ ms.locfileid: "11893042"
 
 ## <a name="automated-testing-by-using-the-issues-tool"></a>使用问题工具自动测试
 
-When you open the demo page in the browser and open DevTools， notice that some issues are automatically detected in the **Issues counter**.  Select the **Issues counter** \ (Issues ![ counter ](../media/issues-counter-icon.msft.png) \) to open the Issues [tool][DevToolsIssuesTool] to view the issues and more information.
+When you open the demo page in the browser and open DevTools， notice that some issues are automatically detected in the **Issues counter**.  Select the **Issues counter** \(Issues ![ counter ](../media/issues-counter-icon.msft.png) \) to open the Issues [tool][DevToolsIssuesTool] to view the issues and more information.
 
-:::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text=""问题"计数器显示当前网页中的问题个个，并打开"问题"工具" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
+:::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="问题计数器显示当前网页中的问题个个，并打开问题工具" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
     "问题"计数器显示当前网页中的问题个个，并打开"问题"工具
 :::image-end:::
 
@@ -46,7 +46,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 有关详细演练步骤，请导航到"[验证输入字段是否包含标签"。][DevtoolsAccessibilityTestIssuesToolCheckFieldsLabels]
 
-:::image type="complex" source="../media/a11y-testing-inspect-problematic-element.msft.png" alt-text="在"问题"工具中选择链接后显示有问题的 HTML 的元素工具" lightbox="../media/a11y-testing-inspect-problematic-element.msft.png":::
+:::image type="complex" source="../media/a11y-testing-inspect-problematic-element.msft.png" alt-text="在问题工具中选择链接后显示有问题的 HTML 的元素工具" lightbox="../media/a11y-testing-inspect-problematic-element.msft.png":::
     在"问题"工具中选择链接后显示有问题的 HTML 的元素工具
 :::image-end:::
 
@@ -146,7 +146,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 ## <a name="using-the-inspect-tool-to-detect-accessibility-issues"></a>使用检查工具检测辅助功能问题
 
-使用 **"检查** "工具通过将鼠标悬停在网页的某些部分来检测辅助功能问题。  Inspect **** \ (Inspect ![ ](../media/inspect-icon.msft.png) \) 工具位于 DevTools 的左上角。  通过选择"检查工具"按钮 **打开"检查** "工具。
+使用 **"检查** "工具通过将鼠标悬停在网页的某些部分来检测辅助功能问题。  Inspect **** \(Inspect ![ ](../media/inspect-icon.msft.png) \) 工具位于 DevTools 的左上角。  通过选择"检查工具"按钮 **打开"检查** "工具。
 
 :::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="通过选择"检查工具"按钮打开"检查"工具" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
     通过选择 **"检查** 工具"按钮 **打开"检查** "工具
@@ -169,7 +169,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 检查工具的信息覆盖的**** 上半部分显示以下信息：
 
-* 布局类型;如果元素是使用弹性框或网格定位的，则会看到相应的图标 \ (![网格布局图标](../media/grid-icon.msft.png)\).
+* 布局类型;如果元素是使用弹性框或网格定位的，则会看到相应的图标 \(![网格布局图标](../media/grid-icon.msft.png)\).
 * 元素的名称，如 、 **h1**或**div**。 ****
 * 元素的尺寸（以像素为单位）。
 * 颜色作为颜色样本， (较小的彩色方形) 和格式化值 (如 `#336699`) 。
@@ -312,7 +312,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 接下来，我们分析表单的 JavaScript 功能。 在 **"元素**"中，选择" **事件** 侦听器"选项卡以分析表单的 JavaScript。
 
-:::image type="complex" source="../media/a11y-testing-event-handlers-on-button.msft.png" alt-text=""事件侦听器"选项卡，包含指向表单的 JavaScript 的链接" lightbox="../media/a11y-testing-event-handlers-on-button.msft.png":::
+:::image type="complex" source="../media/a11y-testing-event-handlers-on-button.msft.png" alt-text="事件侦听器选项卡，包含指向表单的 JavaScript 的链接" lightbox="../media/a11y-testing-event-handlers-on-button.msft.png":::
     " **事件侦听器"** 选项卡，包含指向表单的 JavaScript 的链接
 :::image-end:::
 
@@ -352,7 +352,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 可以使用"辅助功能"选项卡中的"源 **顺序** 查看器"测试 **页面元素** 的顺序。 一直向下滚动，然后选中" **显示源订单"** 复选框。  现在，当您在 **"** 元素"工具中导航 DOM 树（如选择元素）时，数值覆盖将显示在呈现的页面的各个部分，这些部分表示 `header` 源顺序。 
 
-:::image type="complex" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="打开"源订单查看器"将显示源代码中元素在页面上作为数字覆盖的顺序" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
+:::image type="complex" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="打开源订单查看器将显示源代码中元素在页面上作为数字覆盖的顺序" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
     打开" **源订单** 查看器"将显示源代码中元素在页面上作为数字覆盖的顺序
 :::image-end:::
 
@@ -375,7 +375,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
             边栏导航菜单中的链接具有足够的对比度，如检查**覆盖中所示** :::image-end:::
     :::column-end:::
     :::column:::
-        :::image type="complex" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text=""检查"覆盖层中的警告标记了对比度不足的元素" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
+        :::image type="complex" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="检查覆盖层中的警告标记了对比度不足的元素" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
             "检查"覆盖层中的警告标记了对比度 **不足** 的元素 :::image-end:::
     :::column-end:::
 :::row-end:::

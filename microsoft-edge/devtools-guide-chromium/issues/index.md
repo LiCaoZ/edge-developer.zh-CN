@@ -50,7 +50,7 @@ ms.locfileid: "11893077"
 
 1.  导航到包含要修复的问题的网页。  例如，在一 [个新选项卡或窗口中][A11ytestingPagewitherrors] 打开辅助功能测试演示页。
 
-1.  打开 DevTools。  几秒钟后，"问题"计数器 **\ (** ![ Issues 计数器 ](../media/issues-counter-icon.msft.png) \) 显示在 DevTools 的右上角。
+1.  打开 DevTools。  几秒钟后，"问题"计数器 **\(** ![ Issues 计数器 ](../media/issues-counter-icon.msft.png) \) 显示在 DevTools 的右上角。
 
 1.  刷新页面，因为根据网络请求报告某些问题。  请注意问题计数器中 **更新的计数**。
 
@@ -71,7 +71,7 @@ ms.locfileid: "11893077"
 
 在每个问题类别中，首先列出错误，然后列出警告，然后列出提示。
 
-:::image type="complex" source="../media/issues-ordered-by-severity.msft.png" alt-text=""问题"工具显示按严重性排序的性能问题" lightbox="../media/issues-ordered-by-severity.msft.png":::
+:::image type="complex" source="../media/issues-ordered-by-severity.msft.png" alt-text="问题工具显示按严重性排序的性能问题" lightbox="../media/issues-ordered-by-severity.msft.png":::
    " **问题** "工具显示按严重性排序的性能问题
 :::image-end:::
 
@@ -86,11 +86,11 @@ ms.locfileid: "11893077"
 
 1.  打开新 [窗口或][A11ytestingPagewitherrors] 选项卡中的演示页面，然后打开 DevTools。
 
-1.  通过选择 **问题** 计数器 **\ (** ![ 问题计数器 \) 打开问题 ](../media/issues-counter-icon.msft.png) 工具。
+1.  通过选择 **问题** 计数器 **\(** ![ 问题计数器 \) 打开问题 ](../media/issues-counter-icon.msft.png) 工具。
 
 1.  选择问题以展开问题。
 
-    :::image type="complex" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text=""问题"工具显示有关如何修复该问题的其他信息" lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
+    :::image type="complex" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text="问题工具显示有关如何修复该问题的其他信息" lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
        " **问题** "工具显示有关如何修复该问题的其他信息
     :::image-end:::
 
@@ -109,7 +109,7 @@ ms.locfileid: "11893077"
 
 1.  在 **"受影响的资源**  >  **打开"中**，选择工具名称。  受影响的资源将显示在所选工具中。
 
-    :::image type="complex" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="从"问题"工具中选择打开受影响资源的工具" lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
+    :::image type="complex" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="从问题工具中选择打开受影响资源的工具" lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
        从"问题"工具中选择打开受影响资源的工具
     :::image-end:::
 
@@ -164,7 +164,7 @@ ms.locfileid: "11893077"
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/issues/index) 由 [Sam Dutton][SamDutton] \ (Developer Advocate\) 。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/issues/index) 由 [Sam Dutton][SamDutton] \(Developer Advocate\) 。
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0

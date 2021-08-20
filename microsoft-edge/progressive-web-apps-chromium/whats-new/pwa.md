@@ -67,7 +67,7 @@ Microsoft Edge版本 92 在 2021 年 7 Microsoft Edge成为稳定渠道。 本�
 
 *  将隐私信息和控件移动到专用的第 2 级"隐私 **"** 菜单中。
 
-   :::image type="complex" source="media/privacy-menu.png" alt-text="专用"隐私"菜单中的隐私控件" lightbox="media/privacy-menu.png":::
+   :::image type="complex" source="media/privacy-menu.png" alt-text="专用隐私菜单中的隐私控件" lightbox="media/privacy-menu.png":::
       专用"隐私"菜单中 **的隐私** 控件
    :::image-end:::
 

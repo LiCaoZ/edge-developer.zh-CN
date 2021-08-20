@@ -23,14 +23,14 @@ ms.locfileid: "11893843"
 
 请确保先安装以下必备组件列表，然后再继续。  
 
-*   [WebView2][Webview2Installer]运行时或任何[Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload]必须安装在当前受支持的操作系统 \ (Windows 10、Windows 8.1 和 Windows 7\) 上。  
+*   [WebView2][Webview2Installer]运行时或任何[Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload]必须安装在当前受支持的操作系统 \(Windows 10、Windows 8.1 和 Windows 7\) 上。  
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 或更高版本。  
     
 ## <a name="step-1---create-a-single-window-app"></a>步骤 1 - 创建单窗口应用  
 
 从包含单个主窗口的基本桌面项目开始。  
 
-1.  In Visual Studio， choose **WPF .NET Core App** \ (or **WPF .NET Framework App**\) > **Next**.  
+1.  In Visual Studio， choose **WPF .NET Core App** \(or **WPF .NET Framework App**\) > **Next**.  
     
     :::row:::
        :::column span="1":::
@@ -43,7 +43,7 @@ ms.locfileid: "11893843"
        :::column-end:::
     :::row-end:::
     
-1.  输入 name 和**Location** Project**值**。  选择 **.NET Framework 4.6.2**或更高版本 \ (**或 .NET Core 3.0**或更高版本\) 。  
+1.  输入 name 和**Location** Project**值**。  选择 **.NET Framework 4.6.2**或更高版本 \(**或 .NET Core 3.0**或更高版本\) 。  
     
     :::row:::
        :::column span="1":::
@@ -62,7 +62,7 @@ ms.locfileid: "11893843"
 
 使用 NuGet 将 WebView2 SDK 添加到项目中。  
 
-1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击\) ，然后选择"管理NuGet**包..."。**  
+1.  将鼠标悬停在项目上，打开上下文菜单 \(右键单击\) ，然后选择"管理NuGet**包..."。**  
     
     :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="管理 NuGet 程序包" lightbox="./media/wpf-getting-started-mng-nuget.png":::
        管理 NuGet 程序包
