@@ -77,7 +77,7 @@ ms.locfileid: "11893266"
 
 如果在 Visual Studio Code 中使用 JavaScript 调试，则现在可以通过选择"检查Microsoft Edge启动 Visual Studio Code**开发人员**工具 for Visual Studio Code**扩展。**
 
-:::image type="complex" source="../../media/2021/07/inspect-button.msft.png" alt-text="启动 DevTools Visual Studio Code中的"检查"按钮" lightbox="../../media/2021/07/inspect-button.msft.png":::
+:::image type="complex" source="../../media/2021/07/inspect-button.msft.png" alt-text="启动 DevTools Visual Studio Code中的检查按钮" lightbox="../../media/2021/07/inspect-button.msft.png":::
    启动**** DevTools Visual Studio Code中的"检查"按钮
 :::image-end:::
 
@@ -136,7 +136,7 @@ Microsoft EdgeDevTools 采用[Fluent UI，][FluentUI]为按钮和菜单提供更
 1. 选择 **"将声明复制为 JS"** 或 **"复制所有声明为 JS"。**
 1. 将复制的 CSS 粘贴到文本编辑器中的 JavaScript 文件中，如Visual Studio Code。  例如：`'--more-link': 'lime'`。
 
-:::image type="complex" source="../../media/2021/07/copy-declaration-as-js.msft.png" alt-text="样式规则的上下文菜单，包括"Copy declaration as JS"和"Copy all declarations as JS"命令" lightbox="../../media/2021/07/copy-declaration-as-js.msft.png":::
+:::image type="complex" source="../../media/2021/07/copy-declaration-as-js.msft.png" alt-text="样式规则的上下文菜单，包括 Copy declaration as JS 和 Copy all declarations as JS 命令" lightbox="../../media/2021/07/copy-declaration-as-js.msft.png":::
    样式规则的上下文菜单，包括 **Copy declaration as JS** 和 Copy all **declarations as JS** commands
 :::image-end:::
 

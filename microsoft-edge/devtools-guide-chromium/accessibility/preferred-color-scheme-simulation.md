@@ -50,7 +50,7 @@ ms.locfileid: "11893003"
 
 1.  键入"dark"、"light"或"emulate"。  然后选择呈现 **：模拟 CSS 首选配色方案：深色** 或呈现 **：模拟 CSS 首选配色方案：浅**色，然后选择 **Enter**。
 
-    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="使用命令菜单上的"呈现：模拟 CSS prefers-color-scheme"命令模拟深色或浅色模式" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="使用命令菜单上的呈现：模拟 CSS prefers-color-scheme 命令模拟深色或浅色模式" lightbox="../media/css-console-command-menu-rendering.msft.png":::
         使用呈现模拟深色或浅色 **模式：模拟命令** 菜单上的 CSS 首选配色方案命令
     :::image-end:::  
 

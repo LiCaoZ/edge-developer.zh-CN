@@ -73,7 +73,7 @@ Microsoft Edge版本 92 在 2021 年 7 Microsoft Edge成为稳定渠道。 本�
 
 *  将与内容相关的工具移到专用的第 2 级"更多工具 **"** 菜单中。
 
-   :::image type="complex" source="media/more-tools.png" alt-text="现在，可以在"更多工具"菜单中找到与内容相关的工具" lightbox="media/more-tools.png":::
+   :::image type="complex" source="media/more-tools.png" alt-text="现在，可以在更多工具菜单中找到与内容相关的工具" lightbox="media/more-tools.png":::
       现在，可以在"更多工具"菜单中找到与 **内容相关的** 工具
    :::image-end:::
 
@@ -88,7 +88,7 @@ Microsoft Edge版本 92 在 2021 年 7 Microsoft Edge成为稳定渠道。 本�
 
 为方便起见，此弹出对话框在首次启动应用时显示。
 
-:::image type="complex" source="media/postInstallFlyout.png" alt-text="安装后弹出对话框，包含"固定到任务栏"、"固定到开始"、"创建桌面快捷方式"和"在设备登录时自动启动"选项" lightbox="media/postInstallFlyout.png":::
+:::image type="complex" source="media/postInstallFlyout.png" alt-text="安装后弹出对话框，包含固定到任务栏、固定到开始、创建桌面快捷方式和在设备登录时自动启动选项" lightbox="media/postInstallFlyout.png":::
    安装后弹出对话框，包含"固定**到**任务栏"、"固定到开始******"、"创建**桌面快捷方式"和"在设备登录时**自动启动"选项**
 :::image-end:::
 

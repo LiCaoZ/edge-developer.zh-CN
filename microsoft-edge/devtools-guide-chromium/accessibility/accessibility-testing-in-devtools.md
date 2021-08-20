@@ -139,7 +139,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 其中一个问题就是"捐赠"表单。  使用鼠标时，可以单击不同的选项来赚钱。  但是，当您尝试使用键盘访问该资金表单时，不会执行任何操作。 若要解决此问题，您需要使用 **Inspect** 工具。
 
-:::image type="complex" source="../media/a11y-testing-basics-donation-form-issue.msft.png" alt-text="演示页面上的"资金"表单突出显示" lightbox="../media/a11y-testing-basics-donation-form-issue.msft.png":::
+:::image type="complex" source="../media/a11y-testing-basics-donation-form-issue.msft.png" alt-text="演示页面上的资金表单突出显示" lightbox="../media/a11y-testing-basics-donation-form-issue.msft.png":::
     演示页面上的"资金"表单突出显示
 :::image-end:::
 
@@ -148,7 +148,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 使用 **"检查** "工具通过将鼠标悬停在网页的某些部分来检测辅助功能问题。  Inspect **** \(Inspect ![ ](../media/inspect-icon.msft.png) \) 工具位于 DevTools 的左上角。  通过选择"检查工具"按钮 **打开"检查** "工具。
 
-:::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="通过选择"检查工具"按钮打开"检查"工具" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
+:::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="通过选择检查工具按钮打开检查工具" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
     通过选择 **"检查** 工具"按钮 **打开"检查** "工具
 :::image-end:::
 
@@ -202,7 +202,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 使用 **Inspect 工具** 时，选择呈现页上的元素将打开 **Elements** 工具。  DOM 树显示元素的 **HTML，Styles** 显示应用于元素的 CSS 属性。
 
-:::image type="complex" source="../media/a11y-testing-basics-inspector-selected-element.msft.png" alt-text="有关"元素"工具中显示的选定元素的详细信息" lightbox="../media/a11y-testing-basics-inspector-selected-element.msft.png":::
+:::image type="complex" source="../media/a11y-testing-basics-inspector-selected-element.msft.png" alt-text="有关元素工具中显示的选定元素的详细信息" lightbox="../media/a11y-testing-basics-inspector-selected-element.msft.png":::
     有关"元素"工具中显示的选定元素的详细信息
 :::image-end:::
 
@@ -222,7 +222,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 当按下 而不是 时，下一个获得焦点的元素是页面内容部分的第一个"更多"链接， `Tab` `Enter` 如大纲所指示。 ****
 
-:::image type="complex" source="../media/a11y-testing-keyboard-focus-on-element.msft.png" alt-text="使用 Tab 键导航页面。  焦点显示在页面中的"更多"链接上。" lightbox="../media/a11y-testing-keyboard-focus-on-element.msft.png":::
+:::image type="complex" source="../media/a11y-testing-keyboard-focus-on-element.msft.png" alt-text="使用 Tab 键导航页面。  焦点显示在页面中的更多链接上。" lightbox="../media/a11y-testing-keyboard-focus-on-element.msft.png":::
     使用 键导航 `Tab` 页面。  焦点显示在页面中的 **"更多** "链接上。
 :::image-end:::
 
@@ -268,7 +268,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 在 **"样式** "选项卡中，可以看到应用于链接的 CSS，如果选择指向 的链接，文件将在"源" `styles.css` 工具 **中** 打开。
 
-:::image type="complex" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="应用于链接的样式，如"源"工具中所示" lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
+:::image type="complex" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="应用于链接的样式，如源工具中所示" lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
     应用于链接的样式，如"源"工具中所示
 :::image-end:::
 
@@ -318,7 +318,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 在 **"事件侦听器**"选项卡上，选择链接以打开"源"工具，然后检查负责表单 `buttons.js:18` 功能的**** JavaScript。
 
-:::image type="complex" source="../media/a11y-testing-form-handling-javascript.msft.png" alt-text="负责"接收"表单功能的 JavaScript，显示在"源"工具中" lightbox="../media/a11y-testing-form-handling-javascript.msft.png":::
+:::image type="complex" source="../media/a11y-testing-form-handling-javascript.msft.png" alt-text="负责接收表单功能的 JavaScript，显示在源工具中" lightbox="../media/a11y-testing-form-handling-javascript.msft.png":::
     负责"接收"表单功能的 JavaScript，显示在" **源"工具** 中
 :::image-end:::
 
@@ -331,7 +331,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 使用 **Inspect** 工具单独检查页面上的每个元素非常耗时。  相反，使用 **辅助功能选项卡** 导航页面的 **辅助功能树**。  辅助功能树指示页面向辅助技术（如屏幕阅读器）提供哪些信息。
 
-:::image type="complex" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="辅助功能树中的"资金"表单按钮" lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
+:::image type="complex" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="辅助功能树中的资金表单按钮" lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
     辅助功能树中的"资金 **"表单按钮**
 :::image-end:::
 

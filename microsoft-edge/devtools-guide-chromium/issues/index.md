@@ -56,7 +56,7 @@ ms.locfileid: "11893077"
 
 1.  选择" **问题"计数器**。  " **问题** "工具将打开，并分组为不同类别的问题。
 
-    :::image type="complex" source="../media/issues-tool-categories.msft.png" alt-text="演示页上的"问题"工具中的问题类别" lightbox="../media/issues-tool-categories.msft.png":::
+    :::image type="complex" source="../media/issues-tool-categories.msft.png" alt-text="演示页上的问题工具中的问题类别" lightbox="../media/issues-tool-categories.msft.png":::
        演示页上的"问题"工具中的问题类别
     :::image-end:::
 
@@ -115,7 +115,7 @@ ms.locfileid: "11893077"
 
     展开的问题可能有"网络 **"** 链接，以在"网络"工具中 **显示受影响的** 资源。
 
-    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="选择网络资源链接时，将打开"网络"工具" lightbox="../media/issues-tab-view-issue.msft.png":::
+    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="选择网络资源链接时，将打开网络工具" lightbox="../media/issues-tab-view-issue.msft.png":::
     选择 **网络** 资源链接时， **将打开"网络"** 工具
     :::image-end:::
 
