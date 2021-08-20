@@ -3,24 +3,25 @@ description: REST 终结点，用于自动发布提交到加载项网站的加�
 title: 使用Microsoft Edge加载项 API
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2021
+ms.date: 08/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， 加载项 api， 发布 api
-ms.openlocfilehash: 2663ac06985b0d32fd1f6cd46f2699ae8c44b76f
-ms.sourcegitcommit: 936f084e4e6b70b2553cc522622bf8e442cd6bf2
+ms.openlocfilehash: 27c7fd8cd0fe341f83f52543930b8f7f3877f248
+ms.sourcegitcommit: 1edba4737118613dc63a0846d2049dded2342f87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "11906979"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "11909377"
 ---
-# <a name="using-the-microsoft-edge-add-ons-api"></a>使用Microsoft Edge加载项 API
+# <a name="using-the-microsoft-edge-add-ons-api-under-development"></a>使用Microsoft Edge加载项 API (开发) 
+
+> [!NOTE]
+> 本文是一个请求注释。  Microsoft Edge加载项 API 尚无法进行测试，并且合作伙伴中心尚未提供"发布 API"页。  加载项MICROSOFT EDGE API 正在积极开发中，路线图根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
 
 本文与 Microsoft Edge[加载项 API][AddonsAPIRef]参考一起概述了建议Microsoft Edge加载项 API。  我们期待就建议的 API 合同提供建议和反馈。  请将你的反馈作为有关 [加载项 API 的问题提交][GitHubMicrosoftDocsEdgeDeveloperNewIssue]。
 
-加载项MICROSOFT EDGE API 提供了一组 REST 终结点，用于以编程方式发布提交到 Microsoft Edge 加载项网站的加载项更新。  可以使用这些 REST 终结点自动执行将加载项上载和发布到加载项Microsoft Edge的过程。
-
-API 的可用暂定日期为 2021 年 12 月。
+Microsoft Edge加载项 API 提供了一组 REST 终结点，用于以编程方式发布提交到 Microsoft Edge 加载项网站的加载项更新。  可以使用这些 REST 终结点自动执行将加载项上载和发布到加载项Microsoft Edge的过程。
 
 
 <!-- ====================================================================== -->
@@ -41,17 +42,23 @@ API 的可用暂定日期为 2021 年 12 月。
 
 若要使用Microsoft Edge加载项 API，你需要在 Microsoft 合作伙伴中心中为项目启用 API。
 
+> [!NOTE]
+> 发布 **API** UI 在合作伙伴中心尚不存在。
+
 1. 访问 Microsoft 合作伙伴中心并登录到已发布加载项的帐户。
 
-1. 在 **"Microsoft Edge"** 下，将显示"**发布 API"的新**页面。
+1. 在 **"Microsoft Edge**程序"下，选择"**发布 API"。**
 
-1. 选择 **"创建 API 凭据"** 按钮以生成 API 凭据。  此步骤可能需要几分钟时间。  启用 API 后，客户端**ID、****客户端密码**和身份验证令牌**URL**会显示在此页面上。
+1. 在 **"发布 API"** 页中，选择" **创建 API 凭据"** 按钮以生成 API 凭据。  此步骤可能需要几分钟时间。  启用 API 后，客户端**ID、****客户端密码**和身份验证令牌**URL**会显示在此页面上。
 
 1. 请注意**ClientID、Client** **Secret**和**Auth Token URL。**  你将在下一步中使用它们获取访问令牌。
 
 
 <!-- ====================================================================== -->
 ## <a name="retrieving-the-access-token"></a>检索访问令牌
+
+> [!NOTE]
+> 尚未Microsoft Edge加载项 API 进行测试。
 
 获取应用程序的必要授权后，获取 API 的访问令牌。  若要使用客户端凭据授予获取令牌，请将 POST 请求发送到身份验证令牌 URL。  租户信息在以上开始步骤之前收到的 URL **中提供** 。
 
@@ -94,7 +101,7 @@ https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token
 获取访问令牌后，可以使用 Microsoft Edge 加载项 API。  此 API 公开用于获取产品列表、更新产品和发布产品的终结点。
 
 > [!NOTE]
-> 目前，没有用于创建新产品或更新产品元数据（如说明）的 API。  你必须在 Microsoft 合作伙伴中心手动完成这些任务。
+> 没有用于创建新产品或更新产品元数据（如说明）的 API。  你必须在 Microsoft 合作伙伴中心手动完成这些任务。
 
 以下示例使用域 ，它是占位符，当 API 在生产中可用 `https://addons.edge.microsoft.com/api` 时可能会替换。
 
