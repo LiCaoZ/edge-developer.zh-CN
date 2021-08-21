@@ -325,6 +325,8 @@
           items:
             - name: API 支持
               href: extensions-chromium/developer-guide/api-support.md
+            - name: 声明权限
+              href: extensions-chromium/enterprise/declare-permissions.md
             - name: 将 Chromium 扩展移植到 Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
             - name: 将扩展从清单 v2 迁移到 v3
@@ -371,9 +373,7 @@
               href: extensions-chromium/enterprise/hosting-and-updating.md
             - name: 自动更新
               href: extensions-chromium/enterprise/auto-update.md
-            - name: 声明权限
-              href: extensions-chromium/enterprise/declare-permissions.md
-    - name: 原始试验概述
+    - name: 起源试验概述
       href: origin-trials/index.md
     - name: 隐私白皮书
       href: privacy-whitepaper/index.md
