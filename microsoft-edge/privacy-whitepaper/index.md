@@ -3,7 +3,7 @@ description: Microsoft Edge 隐私白皮书
 title: Microsoft Edge 隐私白皮书
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2021
+ms.date: 08/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, 隐私, 白皮书, 信任
@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: 9627c2798ae3095b47497c699f5ae6981e6d7f272ffb64cd5a920aae90f5e85a
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 72ff9a32ac93620d5f9cf316168d8dc750f22b3b
+ms.sourcegitcommit: b7c47af115312ba1a79e8455045ca23dad3b65ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11809115"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "11910024"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书  
 
@@ -285,7 +285,7 @@ Microsoft Edge 提供了具有吸引力且以用户为中心的新选项卡页�
 
 若要增强新选项卡页面的加载时间，可在后台加载 Microsoft 新选项卡页面，以使其速度更快。 如果允许 Cookie，加载的内容可能包含 Cookie。 若要禁用后台加载 Microsoft 新选项卡页面，请导航到 `edge://settings/newTabPage` ，然后关闭设置“预加载新选项卡页面，以获得更快的体验”****。 
 
-:::image type="complex" source="./media/n-t-p1.png" alt-text="新建选项卡页面" lightbox="./media/n-t-p1.png":::
+:::image type="complex" source="./media/n-t-p1.png" alt-text="“新建选项卡”页面" lightbox="./media/n-t-p1.png":::
    “新建选项卡”页面  
 :::image-end:::  
 
@@ -398,7 +398,7 @@ Microsoft Edge 提供大声朗读功能，它向用户朗读网页内容。  若
 
 Microsoft Edge可以帮助您在在线购物时找到优惠券，折扣和更优惠的价格。  为帮助你在在线购物时查找赠券或最适合的价格，Microsoft Edge 从 Microsoft 购物服务将本地购物域列表下载到客户。  浏览网站或将项目保存到收藏时，Microsoft Edge 本地确定访问的网站是购物域还是产品详细信息网页。  如果网站被标识为购物网页，Microsoft Edge 会向 Microsoft 购物服务发送包含个人身份信息的 URL。  Microsoft 还会向该服务发送产品价格、产品图像、产品名称、评级和评论，以及 Microsoft Edge 和操作系统版本的信息。  数据通过 HTTPS 发送，并包含随机生成的标识符和 Cookie（如果允许 Cookie）。  Microsoft Edge 购物功能要求与必应共享 Cookie 信息。  例如，Cookie 可用于调试、欺诈检测和分析。  Microsoft 购物服务返回其他零售商提供的价格、历史价格趋势和该网站的任何可用赠券。  
 
-当你应用优惠券时，Cookie 将存储在你的设备上以正确分配优惠券提供商。  仅在成功在购物车应用赠券后，Microsoft 信任的赠券提供商才保存 Cookie。  在应用优惠券后，有关优惠券成功与否的信息将发送回 Microsoft 购物服务，以帮助我们了解哪些优惠券成功或失败。  发送到Microsoft购物服务的数据通过HTTPS发送，带有随机生成的标识符，该标识符随优惠券查找而变化。  
+当你应用优惠券时，Cookie 将存储在你的设备上以正确分配优惠券提供商。  仅在成功在购物车应用赠券后，Microsoft 信任的赠券提供商才保存 Cookie。  在应用优惠券后，有关优惠券成功与否的信息将发送回 Microsoft 购物服务，以帮助我们了解哪些优惠券成功或失败。  发送到 Microsoft 购物服务的数据将通过 HTTPS 发送，并包含随机生成的标识符，该标识符在每次优惠券查找时都会更改。 Edge 与必应购物合作以提供优惠券体验，其中将显示与用户查询相关的优惠券。 在某些情况下，Microsoft 可能因为使用优惠券而获得收入，尽管是否可以获得收入分成付款并不计入向用户显示的优惠券排名中。 
 
 :::image type="complex" source="./media/shopping.png" alt-text="购物和优惠券" lightbox="./media/shopping.png":::
    购物和优惠券  
@@ -411,7 +411,7 @@ Microsoft Edge可以帮助您在在线购物时找到优惠券，折扣和更优
 1.  导航到 `edge://settings/privacy`。  
 1.  关闭" **在 Microsoft Edge 中购物节省时间和资金"** 设置。  
     
-InPrivate 浏览使用启动 InPrivate 会话的配置文件的购物设置。  
+InPrivate 浏览使用启动 InPrivate 会话的配置文件的购物设置。 
 
 ## <a name="sign-in-and-identity"></a>登录和标识  
 
@@ -467,7 +467,7 @@ SmartScreen 服务存储有关信誉检查的数据，并生成已知恶意 URL 
 
 ## <a name="sync"></a>同步  
 
-使用 Microsoft 帐户登录到 Microsoft Edge，可在所有登录的 Microsoft Edge 版本之间同步浏览数据。  你可以同步浏览历史记录、收藏夹、设置、表单填充数据 \(地址等\)、密码、扩展、打开的选项卡和收集。  必须允许在 Microsoft Edge 中启用同步，并且可能会单独启用或禁用每个同步的数据类型。  收藏夹包括先前在旧版 Microsoft Edge 中设置的任何选项卡，它与其他收藏夹一起同步。  从 Microsoft Edge 的一个已登录版本中删除或修改收藏夹或其他数据，将同步到已启用同步的 Microsoft Edge 的所有其他已登录版本。  若要管理同步配置，请转到 `edge://settings/profiles/sync`。  你的同步设置可能由组织进行管理。
+使用 Microsoft 帐户登录到 Microsoft Edge，可在所有登录的 Microsoft Edge 版本之间同步浏览数据。  你可以同步浏览历史记录、收藏夹、设置、表单填充数据 \ (地址等\)、密码、扩展、打开的选项卡和收集。  必须允许在 Microsoft Edge 中启用同步，并且可能会单独启用或禁用每个同步的数据类型。  收藏夹包括先前在旧版 Microsoft Edge 中设置的任何选项卡，它与其他收藏夹一起同步。  从 Microsoft Edge 的一个已登录版本中删除或修改收藏夹或其他数据，将同步到已启用同步的 Microsoft Edge 的所有其他已登录版本。  若要管理同步配置，请转到 `edge://settings/profiles/sync`。  你的同步设置可能由组织进行管理。
 
 :::image type="complex" source="./media/sync.png" alt-text="将同步设置设为开启的图像" lightbox="./media/sync.png":::
    同步设置已开启
@@ -497,7 +497,14 @@ Microsoft Edge 旨在检测和阻止已知跟踪器。  用户可以从三个跟
 
 ## <a name="translate"></a>翻译  
 
-在 Microsoft Edge 中，你可以浏览 Web 并将网页翻译为你选择的语言。  内置翻译功能使用设备上的一项服务，可对页面的随机部分进行采样，以检测原始语言。  如果检测到的语言不是其中一种默认语言，则 Microsoft Edge 会将该网页翻译为所显示的语言或你选择的其他语言。  Microsoft Edge 不会在未经你允许的情况下翻译网页。  若要翻译网页，请打开上下文菜单 \(右键单击\) ，然后选择"翻译"****。  为了翻译网页，Microsoft Edge 通过安全 HTTPS 连接将页面的内容和随机生成的令牌发送到 Microsoft Azure 翻译服务。  存储的页面内容不用于任何目的。  若要停止 Microsoft Edge 提供的网页翻译功能，请导航到 `edge://settings/languages`，然后禁用“主动翻译非你所读语言的页面”**** 设置。  
+在 Microsoft Edge 中，你可以浏览 Web 并将网页翻译为你选择的语言。 Microsoft Edge 使用 [Microsoft Translator][MicrosoftSpeechTranslator] 来翻译网页。 此功能最初使用设备上的库来采样网页的某些可见部分，以检测原始语言。 如果检测到的语言不是你的首选语言之一，则 Microsoft Edge 会将该网页翻译为首选语言或所选择的其他语言。 然后，可以通过选择“**翻译**”来翻译页面。 你可以通过选择“**始终从 \<a language\> 中翻译页面**”将所有页面自动翻译为该语言。
+
+Microsoft Edge 不会在未经你允许的情况下翻译网页。 如果确实决定翻译，Microsoft Edge 则通过安全的 HTTPS 连接将要翻译的网页文本，以及 *目标* 和 *源* 语言和服务令牌发送到 Microsoft Translator。 服务令牌不包含任何用户个人身份信息。 [Microsoft Translator][MicrosoftSpeechTranslator] 随后处理文本，以删除任何标识符（如电子邮件或电话号码）并存储文本以改进服务。 [Microsoft 隐私声明 - Microsoft 隐私][MicrosoftPrivacyStatement] 下介绍了此通信的详细信息。
+
+要停止 Microsoft Edge 提供翻译网页服务，请完成以下步骤。
+
+1. 导航到  `edge://settings/languages`。
+1. 关闭“ **询问是否翻译非您所用语言的网页**”  切换开关并关闭网页。
 
 ## <a name="web-apps-and-pinned-sites"></a>Web 应用和已固定网站  
 
@@ -586,3 +593,7 @@ Microsoft Edge 团队将始终倾听客户的意见，且非常重视客户的�
 [W3cGeolocationApiMain]: https://w3.org/TR/geolocation-api "地理位置 API 规范第 2 版 | W3C"  
 
 [TwitterMsedgedev]: https://www.twitter.com/MSEdgeDev "Microsoft Edge Dev | Twitter"  
+
+[MicrosoftPrivacyStatement]: https://privacy.microsoft.com/privacystatement "Microsoft 隐私声明 - Microsoft 隐私"
+
+[MicrosoftSpeechTranslator]: https://azure.microsoft.com/services/cognitive-services/speech-translation/ "语音翻译| Microsoft Azure"
