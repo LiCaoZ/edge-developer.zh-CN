@@ -3,16 +3,16 @@ description: HTML 和 DOM 入门
 title: 面向初学者的开发工具：HTML 和 DOM 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/01/2021
+ms.date: 08/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发工具，面向初学者的开发工具，面向初学者的开发工具 HTML，面向初学者的开发工具 DOM，开发者工具 html 教程，开发者工具 html 教程，开发者工具文档对象模型教程
-ms.openlocfilehash: 184d6b9d130e7052a4f0d479e4837fa84281c6983ca50ab17d508b5a2f9cbe75
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 18f392e165c4b5b27e2cc816258991e396e31943
+ms.sourcegitcommit: 3d1b23679e8b61cdebe6c014247925adc04d132c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11802064"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "11920467"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -29,13 +29,13 @@ ms.locfileid: "11802064"
    limitations under the License.  -->
 # <a name="devtools-for-beginners-get-started-with-html-and-the-dom"></a>面向初学者的开发工具：HTML 和 DOM 入门  
 
-这是一系列教程中第一个介绍 Web 开发基础知识的教程。 了解一组 Web 开发者工具（名为 Microsoft Edge 开发者工具）可能会提高工作效率。  
+这是一系列教程中第一个介绍 Web 开发基础知识的教程。 了解一组 Web 开发人员工具（名为 Microsoft Edge DevTools）可提高工作效率。  
 
-本教程介绍 HTML 和 [文档对象模型](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) \(DOM\)。 HTML 是 Web 开发的核心技术之一。 它是控制网页结构和内容的语言。 DOM 还与网页的结构和内容相关，我们稍后将了解相关内容。
+本教程介绍 HTML 和 [文档对象模型](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) \ (DOM\)。 HTML 是 Web 开发的核心技术之一。 它是控制网页结构和内容的语言。 DOM 还与网页的结构和内容相关，我们稍后将了解相关内容。
 
 ## <a name="goals"></a>目标  
 
-你将通过构建网站来学习 Web 开发。  当你完成 **DevTools for Beginners** 系列的所有教程时，完成的网站可能如下图所示。  
+你将通过构建网站来学习 Web 开发。  完成 **DevTools for Beginners** 系列的所有教程后，完成的网站将如下图所示。  
 
 :::image type="complex" source="media/beginners-html-finished.msft.png" alt-text="完成的网站" lightbox="media/beginners-html-finished.msft.png":::
    完成的站点  
@@ -44,10 +44,10 @@ ms.locfileid: "11802064"
 本教程结束时，你应该了解以下概念。  
 
 *   HTML 和 DOM 如何创建网页上显示的内容。  
-*   Microsoft Edge 开发人员工具如何帮助你试验 HTML 和 DOM 更改。  
+*   开发人员Microsoft Edge如何帮助你试验 HTML 和 DOM 更改。  
 *   HTML 和 DOM 的区别。  
 
-你还将拥有一个工作网站。 可以使用该网站托管简历或博客。  
+你还将拥有一个工作网站。 您可以使用该网站来承载简历或博客。  
 
 ## <a name="prerequisites"></a>必备条件  
 
@@ -66,21 +66,21 @@ ms.locfileid: "11802064"
        编辑器选项卡  
     :::image-end:::  
     
-1.  选择“**启发式**”。 “**项目选项**”菜单将打开。  
+1.  选择 **"启发式"-"振动"。** “**项目选项**”菜单将打开。  
     
     :::image type="complex" source="media/beginners-html-setup2.msft.png" alt-text="项目选项菜单" lightbox="media/beginners-html-setup2.msft.png":::
        项目选项菜单  
     :::image-end:::  
     
-1.  选择 **"重新混合项目"。** Glitch 会创建一个可以编辑的项目副本，并随机为该项目生成一个新名称。 内容与之前相同。  
+1.  选择 **"重新混合Project"。** Glitch 会创建一个项目副本，您可以编辑该副本，并随机为该项目生成一个新名称。 内容与之前相同。  
     
     :::image type="complex" source="media/beginners-html-setup3.msft.png" alt-text="重新混合的项目" lightbox="media/beginners-html-setup3.msft.png":::
        重新混合的项目  
     :::image-end:::  
     
-1.  如果计划完成本系列中的下一教程，请选择使用 Facebook、GitHub 或 Google 帐户 **登录**故障；或向自己发送一个神奇链接。 如果选择不登录帐户，则关闭编辑器选项卡后无法编辑项目。
+1.  如果计划完成本系列的下一教程，请选择"使用 Facebook、GitHub或 Google 帐户登录小故障"; **** 或向自己发送一个神奇链接。 如果选择不登录帐户，则关闭编辑器选项卡后无法编辑项目。
 
-1.   \> **在新建窗口中**选择**显示**。  将打开一个新选项卡，显示实时页面。 在本教程中，此选项卡称为实时**选项卡**。  
+1.  选择 **"**  >  **在新建窗口中显示"。**  将打开一个新选项卡，显示实时页面。 在本教程中，此选项卡称为实时**选项卡**。  
     
     :::image type="complex" source="media/beginners-html-setup4.msft.png" alt-text="实时选项卡" lightbox="media/beginners-html-setup4.msft.png":::
        实时选项卡  
@@ -179,7 +179,7 @@ ms.locfileid: "11802064"
         :::image-end:::
     -->
 
-1. 打开**实时选项卡**，将鼠标悬停在`A new element!?!`上，打开上下文菜单（右键单击），然后选择**检查**。  
+1. 打开活动**选项卡**，将鼠标悬停在 上，右键单击 (上下文菜单，然后选择) `A new element!?!` 检查 **"。**  
     
     :::image type="complex" source="media/beginners-html-dom3.msft.png" alt-text="检查某些文本" lightbox="media/beginners-html-dom3.msft.png":::
        检查某些文本  
@@ -195,13 +195,13 @@ ms.locfileid: "11802064"
 
 由于 HTML 底部的`<script src="new.js"></script>`标记，内容`<div>A new element!?!</div>`将添加到页面。 此标记会导致某些 JavaScript 代码运行。 在[稍后的教程](../javascript/index.md)中了解有关 JavaScript 的更多内容。
 
-现在，请看做可能会更改页面内容的脚本语言。 在这种情况下，JavaScript 代码将`<div>A new element!?!</div>`添加到你的页面。 这就是此文本显示在**实时**选项卡中，而不是 HTML 中的原因。  
+现在，请看做可更改页面内容的脚本语言。 在这种情况下，JavaScript 代码将`<div>A new element!?!</div>`添加到你的页面。 这就是此文本显示在**实时**选项卡中，而不是 HTML 中的原因。  
 
 ### <a name="edit-the-dom"></a>编辑 DOM  
 
 如果你想要在不离开实时选项卡的情况下快速试验内容更改，请尝试使用 DevTools。  
 
-1.  在 DevTools 中，将鼠标悬停在`Your site!`上，打开上下文菜单(右键单击)，并选择**编辑为 HTML**。  
+1.  在 DevTools 中，将鼠标悬停在 上，打开上下文菜单 (右键单击") `Your site!` 并选择"编辑**为 HTML"。**  
     
 1.  将`<p>Your site!</p>`替换为下面的代码。  
 
@@ -218,7 +218,7 @@ ms.locfileid: "11802064"
     将节点更新为 HTML  
 ::image-end:::  
 
-1.  选择 `Control` + `Enter` \(Windows、Linux\) 或 `Command` + `Enter` \(macOS\) 保存更改，或在框外选择。 更改将自动显示在页面实时视图中。 文本 `Your site!` 已替换为新内容。  
+1.  选择 `Control` + `Enter` \ (Windows、Linux\) 或 `Command` + `Enter` \ (macOS\) 保存更改，或在框外选择。 更改将自动显示在页面实时视图中。 文本 `Your site!` 已替换为新内容。  
     
     :::image type="complex" source="media/beginners-html-edit3.msft.png" alt-text="新内容会立即显示在页面上" lightbox="media/beginners-html-edit3.msft.png":::
        新内容会立即显示在页面上  
@@ -244,9 +244,9 @@ ms.locfileid: "11802064"
     
 ### <a name="delete-a-node"></a>删除节点
 
-还可以从 DOM 树中删除节点。 执行以下步骤。
+您还可以从 DOM 树中删除节点。 执行以下步骤。
 
-1.  在** DOM 树**中，选择 `<div>A new element!?!</div>`。 DevTools 突出显示节点。 
+1.  在 **DOM 树中，** 选择 `<div>A new element!?!</div>` 。 DevTools 突出显示节点。 
     
 1.  选择键盘上的`Delete`键。  将从 DOM 树中删除`<div>A new element!?!</div>`节点。  
     
@@ -329,7 +329,7 @@ ms.locfileid: "11802064"
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/html) ，作者为 [Katherine Jackson][KatherineJackson] \(技术作家，Chrome DevTools\) 。  
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/html) ，作者为 [Katherine Jackson][KatherineJackson] \ (技术作家，Chrome DevTools\) 。  
 
 [![知识共享许可协议][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

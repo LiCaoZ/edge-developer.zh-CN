@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 8dbc4544e79bb9495cf9a891bb0bdd1216790aacbcc79aaa894c7c6949eed1d8
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 92335aa0968e9571f07ae2f46a58e427538655e2
+ms.sourcegitcommit: 3d1b23679e8b61cdebe6c014247925adc04d132c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11801598"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "11920586"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -114,7 +114,7 @@ console.clear()
 
 ## <a name="count"></a>count  
 
-此方法写入在同一行和使用相同的 调用 [count](#count) 方法次数 `label` 。  使用 [countReset](#countreset) 方法可重置计数。  
+此方法写入在同一行和同一行调用 [count](#count) 方法次数 `label` 。  使用 [countReset](#countreset) 方法可重置计数。  
 
 ### <a name="javascript-syntax"></a>JavaScript 语法  
 
@@ -377,7 +377,7 @@ console.group(label)
 
 ## <a name="groupcollapsed"></a>groupCollapsed  
 
-此方法与日志[方法相同，](#log)但组最初在记录到控制台**时折叠。**  
+此方法与日志方法相同，[](#log)但组最初在记录到控制台**时折叠。**  
 
 ### <a name="javascript-syntax"></a>JavaScript 语法  
 
@@ -665,9 +665,9 @@ console.warn(object [, object, ...])
 [DevtoolConsoleUtilities]: ./utilities.md "控制台实用程序 API 参考|Microsoft Docs"  
 [DevtoolsConsoleReferenceClear]: ./reference.md#clear-the-console "清除控制台 - 控制台|Microsoft Docs"  
 [DevtoolsConsoleReferenceFilter]: ./reference.md#filter-by-log-level "按日志级别筛选 - 控制台参考 | Microsoft Docs"  
-[DevtoolsConsoleReferencePersist]: ./reference.md#persist-messages-across-page-loads "跨页面加载保留消息 - 控制台参考|Microsoft Docs"  
+[DevtoolsConsoleReferencePersist]: ./reference.md#persist-messages-across-page-loads "跨页面加载保留消息 - 控制台|Microsoft Docs"  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) 开发人员工具概述 | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge开发人员工具概述|Microsoft Docs"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
