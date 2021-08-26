@@ -403,9 +403,9 @@
       href: visual-studio/index.md
     - name: Visual Studio Code
       items:
-        - name: Visual Studio 代码概述
+        - name: Visual Studio Code 概述
           href: visual-studio-code/index.md
-        - name: Edge 扩展调试程序
+        - name: Microsoft Edge 调试程序
           href: visual-studio-code/debugger-for-edge.md
         - name: Microsoft Edge 开发人员工具扩展
           href: visual-studio-code/microsoft-edge-devtools-extension.md
