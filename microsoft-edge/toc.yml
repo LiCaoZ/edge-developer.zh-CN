@@ -243,6 +243,8 @@
                   href: devtools-guide-chromium/inspect-styles/edit-fonts.md
                 - name: 检查 CSS 网格
                   href: devtools-guide-chromium/css/grid.md
+                - name: CSS-in-JS
+                  href: devtools-guide-chromium/css/css-in-js.md
                 - name: 强制开发工具进入打印预览模式
                   href: devtools-guide-chromium/css/print-preview.md
             - name: 问题

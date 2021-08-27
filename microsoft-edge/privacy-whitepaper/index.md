@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: 72ff9a32ac93620d5f9cf316168d8dc750f22b3b
-ms.sourcegitcommit: b7c47af115312ba1a79e8455045ca23dad3b65ee
+ms.openlocfilehash: 6a43d3102605589e783e76867dfba5c545a0078c
+ms.sourcegitcommit: d6ecc4ab48c7e0e048fd8248f6379222642e9d41
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "11910024"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "11925548"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书  
 
@@ -274,6 +274,10 @@ Internet Explorer 浏览数据本地存储在 Microsoft Edge 和 Internet Explor
 1.  选择 **"选择要清除哪些项目"。**  
     
 儿童模式不会收集用于新闻源或其他 Microsoft 服务个性化的数据。  你不得更改儿童模式的隐私设置。  其他设置（如 Windows Defender SmartScreen 和诊断数据）根据启动儿童模式的个人资料进行配置。  若要详细了解如何使用浏览器和 Windows Defender SmartScreen 的诊断数据，请导航到 [诊断数据](#diagnostic-data)和[SmartScreen](#smartscreen)。  
+
+## <a name="microsoft-edge-driver"></a>Microsoft Edge 驱动程序
+
+Microsoft Edge 驱动程序允许开发人员使用 [WebDriver 协议][WebDriverProtocol]驱动 Microsoft Edge 浏览器。  Microsoft Edge 驱动程序是一个可执行文件 `msedgedriver.exe`，独立于开发人员从其客户端代码（例如测试脚本）调用的 Microsoft Edge。  默认情况下，Microsoft Edge 驱动程序会向 Microsoft 发送诊断数据，如[新建会话 WebDriver 命令][WebDriverProtocolNewSession]的状态。  若要关闭 Microsoft Edge 驱动程序的诊断数据收集，请将 `MSEDGEDRIVER_TELEMETRY_OPTOUT` 环境变量设置为 `1`。  有关 Microsoft Edge 驱动程序的详细信息，请导航到 [使用 WebDriver 自动执行 Microsoft Edge 自动化][WebDriverDoc]。  
 
 ## <a name="network-time"></a>网络时间  
 
@@ -562,6 +566,8 @@ Microsoft Edge 团队将始终倾听客户的意见，且非常重视客户的�
 [WindowsSecurityThreatProtectionIntelligenceCriteriaPotentiallyUnwanted]: /windows/security/threat-protection/intelligence/criteria#potentially-unwanted-application-pua "可能不需要的应用程序 (PUA) - Microsoft 识别恶意软件和可能不需要的应用程序的方式 | Microsoft Docs"  
 [WindowsSecurityThreatProtectionWindowsDefender]: /windows/security/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus "检测并阻止可能不需要的应用程序 | Microsoft Docs"  
 
+[WebDriverDoc]: /microsoft-edge/webdriver-chromium "使用 WebDriver 自动执行 Microsoft Edge |Microsoft Docs"
+
 [BingMain]: https://bing.com "必应"  
 
 [ChromiumMain]: https://www.chromium.org "Chromium 项目"  
@@ -591,6 +597,9 @@ Microsoft Edge 团队将始终倾听客户的意见，且非常重视客户的�
 
 [W3cEncryptedMediaPrivacy]: https://w3.org/TR/encrypted-media#privacy "11. 隐私 - 加密媒体扩展 | W3C"  
 [W3cGeolocationApiMain]: https://w3.org/TR/geolocation-api "地理位置 API 规范第 2 版 | W3C"  
+
+[WebDriverProtocol]: https://www.w3.org/TR/webdriver2/ "WebDriver |W3C 工作草案 2020 年 8 月 24 日"
+[WebDriverProtocolNewSession]: https://www.w3.org/TR/webdriver2/#new-session "8.1 新会话|W3C 工作草案 2020 年 8 月 24 日"
 
 [TwitterMsedgedev]: https://www.twitter.com/MSEdgeDev "Microsoft Edge Dev | Twitter"  
 
