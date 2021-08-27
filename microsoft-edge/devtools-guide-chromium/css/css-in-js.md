@@ -39,13 +39,13 @@ ms.locfileid: "11925572"
 
 将样式规则复制为 JavaScript：
 
-1. 在 **"元素**"工具的****"样式"窗格中，打开上下文菜单 \ (右键单击\) 样式规则中的声明。
+1. 在 **"元素**"工具的****"样式"窗格中，打开上下文菜单 \(右键单击\) 样式规则中的声明。
 
 1. 选择 **"将声明复制为 JS"** 或 **"复制所有声明为 JS"。**
 
 1. 将复制的 CSS 粘贴到文本编辑器中的 JavaScript 文件中，如Visual Studio Code。  例如：`'--more-link': 'lime'`。
 
-:::image type="complex" source="images/copy-declaration-as-js.msft.png" alt-text="样式规则的上下文菜单，包括"Copy declaration as JS"和"Copy all declarations as JS"命令" lightbox="images/copy-declaration-as-js.msft.png":::
+:::image type="complex" source="images/copy-declaration-as-js.msft.png" alt-text="样式规则的上下文菜单，包括 Copy declaration as JS 和 Copy all declarations as JS 命令" lightbox="images/copy-declaration-as-js.msft.png":::
    样式规则的上下文菜单，包括 **Copy declaration as JS** 和 Copy all **declarations as JS** commands
 :::image-end:::
 
