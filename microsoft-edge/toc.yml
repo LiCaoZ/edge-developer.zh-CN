@@ -443,12 +443,14 @@
           items:
             - name: Win32
               href: webview2/get-started/win32.md
+            - name: WinForms
+              href: webview2/get-started/winforms.md
+            - name: WinUI 2
+              href: webview2/get-started/winui2.md
+            - name: WinUI 3
+              href: webview2/get-started/winui.md
             - name: WPF
               href: webview2/get-started/wpf.md
-            - name: Windows 窗体
-              href: webview2/get-started/winforms.md
-            - name: WinUI 3.0
-              href: webview2/get-started/winui.md
         - name: 概念
           items:
             - name: Microsoft Edge 与 WebView2 之间的区别
