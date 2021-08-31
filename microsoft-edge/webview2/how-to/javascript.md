@@ -8,29 +8,29 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 8db5c4a5b3709c144240fe88e6f8480445c1659f
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: fadd73ea14692826b7a34948989ceeaac9d4162f
+ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535822"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934118"
 ---
 # <a name="use-javascript-in-webview-for-extended-scenarios"></a>在 WebView 中对扩展方案使用 JavaScript  
 
 使用 WebView2 控件中的 JavaScript，可以自定义本机应用以满足你的要求。  本文探讨如何在 WebView2 中使用 JavaScript，并回顾如何使用高级 WebView2 特性和功能进行开发。  
 
-## <a name="before-you-begin"></a>开始之前  
+## <a name="before-you-begin"></a>在开始之前  
 
-本文假定您已有一个工作项目。  如果你没有项目，并且想要继续操作，请导航到 [WebView2 入门指南][Webview2GetStartedWpf]。  
+本文假定您已有一个工作项目。  如果你没有项目，并且想要继续操作，请导航到 [WebView2 入门指南][Webview2MainGetStarted]。
 
 ## <a name="basic-webview2-functions"></a>基本 WebView2 函数  
 
 使用以下函数开始在 WebView 应用中嵌入 JavaScript。  
 
-| API  | 说明  |
+| API  | 描述  |
 |:--- |:--- |  
 | [ExecuteScriptAsync][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | 在 WebView 控件中运行 JavaScript。 有关详细信息，请导航到入门教程。 |
-| [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | 创建文档对象模型 \(DOM\) 时运行。 |
+| [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | 创建文档对象模型 \ (DOM\) 运行。 |
       
 ## <a name="scenario--running-a-dedicated-script-file"></a>方案：运行专用脚本文件  
 
@@ -62,7 +62,7 @@ ms.locfileid: "11535822"
 
 首先，探索当前的拖放功能。  
 
-1.  创建 `.txt` 文件以拖放。  例如，创建一个名为 的文件 `contoso.txt` ，并添加文本。  
+1.  创建 `.txt` 文件以便进行拖放。  例如，创建一个名为 的文件 `contoso.txt` ，并添加文本。  
 1.  运行项目。  
 1.  将文件拖放到 `contoso.txt` WebView 控件上。  将打开一个新窗口，这是示例项目中代码的结果。  
     
@@ -94,7 +94,7 @@ ms.locfileid: "11535822"
 首先，探索当前上下文菜单功能。  
 
 1.  运行项目。  
-1.  将鼠标悬停在 WebView2 控件上的任意位置，然后打开上下文菜单 \(右键单击\) 。  上下文菜单显示默认选项。  
+1.  将鼠标悬停在 WebView2 控件上的任意位置，然后打开上下文菜单 \ (右键单击\) 。  上下文菜单显示默认选项。  
     
     :::image type="complex" source="./media/context-menu.png" alt-text="显示默认选项的上下文菜单" lightbox="./media/context-menu.png":::
        显示默认选项的上下文菜单  
@@ -108,30 +108,28 @@ ms.locfileid: "11535822"
     await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
     ```  
     
-1.  再次运行代码。  确认无法打开上下文菜单 \(右键单击\) 。  
+1.  再次运行代码。  确认无法打开上下文菜单 \ (右键单击\) 。  
     
 ## <a name="see-also"></a>另请参阅  
 
-*   若要开始使用 WebView2，请导航到["WebView2 入门指南"。][Webview2MainGetStarted]  
-*   有关 WebView2 功能的综合示例，请导航到 GitHub 上的 [WebView2Samples][GithubMicrosoftedgeWebview2samples] 存储库。  
+*   若要开始使用 WebView2，请导航到 [WebView2 入门指南][Webview2MainGetStarted]。  
+*   有关 WebView2 功能的综合示例，请导航到[webView2 示例][GithubMicrosoftedgeWebview2samples]存储库GitHub。  
 *   有关 WebView2 API 的详细信息，请导航到 [API 参考][Webview2ApiReference]。  
 *   有关 WebView2 的信息，请导航到["WebView2 资源"。][Webview2MainNextSteps]  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>与 Microsoft Edge WebView 团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>联系 Microsoft Edge WebView 团队  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
-
 [DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"  
 
-[Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API 参考|Microsoft Docs"  
-[Webview2GetStartedWpf]: ../get-started/wpf.md "WPF 预览版中的 WebView2 (入门) |Microsoft Docs"  
-[Webview2MainGetStarted]: ../index.md#get-started "入门 - Microsoft Edge WebView2 (预览版) |Microsoft Docs"  
-[Webview2MainNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 (预览版) |Microsoft Docs"  
+[Webview2ApiReference]: ../webview2-api-reference.md "Microsoft EdgeWebView2 API 参考|Microsoft Docs"  
+[Webview2MainGetStarted]: ../index.md#get-started "入门 - WebView2 Microsoft Edge简介|Microsoft Docs"  
+[Webview2MainNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 |Microsoft Docs"  
 
 [Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated]: /microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated "AddScriptToExecuteOnDocumentCreated - 0.9.579 - 接口 ICoreWebView2 |Microsoft Docs"  
 
 [Webview2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.ExeMicrosoft.Web.WebView2.Wpf () 方法 (cuteScriptAsync) |Microsoft Docs"  
 
-[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples |GitHub"  
+[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"  

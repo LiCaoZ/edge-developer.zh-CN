@@ -1,5 +1,5 @@
 ---
-description: 了解如何使用 Microsoft Edge WebView2 Chromium DevTools 协议包在 WebView2 应用中使用 Chrome NuGet协议
+description: 了解如何使用 Microsoft Edge WebView2 Chromium DevTools 协议包在 WebView2 应用中NuGet Chrome DevTools 协议
 title: 在 WebView2 中使用 Chrome DevTools 协议
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,25 +8,25 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、edge、ICoreWebView2、ICoreWebView2Controller、Chrome DevTools 协议
-ms.openlocfilehash: 16504587d70be184760627ac224cf8a12f0f7e024cba7c729ac23cb6734bad36
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 4d59cf7c8a3531622b8edad182a124502cbffbe9
+ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11803176"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934126"
 ---
 # <a name="use-chromium-devtools-protocol-in-webview2"></a>在 WebView2 中使用 Chromium 开发工具协议  
 
-开发人员[Chromium协议][GitHubChromedevtoolsDevtoolsProtocol]提供了用于检测、检查、调试和配置文件的 API Chromium基于浏览器。  Chromium DevTools 协议是 Microsoft Edge \(Chromium\) DevTools 的基础。  将 Chromium DevTools 协议用于 WebView2 平台中未实现的功能。  有关开发人员工具Chromium功能的信息，请导航到 Chromium [DevTools 协议][GitHubChromedevtoolsDevtoolsProtocol]。  
+The [Chromium DevTools Protocol][GitHubChromedevtoolsDevtoolsProtocol] provides API to instrument， inspect， debug， and profile Chromium based browsers.  Chromium DevTools 协议是 Microsoft Edge \ (Chromium\) DevTools 的基础。  将 Chromium DevTools 协议用于 WebView2 平台中未实现的功能。  有关开发人员工具Chromium功能的信息，请导航到Chromium [DevTools 协议"][GitHubChromedevtoolsDevtoolsProtocol]。  
 
 > [!CAUTION]
-> WebView2 Microsoft Edge团队不维护或支持 Chromium Tools 协议。  Chromium开发人员工具协议由开源项目Chromium维护。  
+> WebView2 Microsoft Edge团队不维护或支持 Chromium Tools 协议。  Chromium开发人员工具协议由开放源代码项目Chromium维护。  
 > 
 > 若要发送有关未来 WebView2 平台功能的建议，请导航到 ["WebView 反馈][GithubMicrosoftedgeWebview2feedback] "并提交问题。  
 
 若要在 WebView2 Chromium DevTools 协议 API，请使用以下任一操作。  
 
-*   安装并使用[Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview) ][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] NuGet 包 \(.NET\) 。  
+*   安装并使用[Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview) ][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] NuGet 包 \ (.NET\) 。  
 *   运行下列方法之一。  
     *   [.NET：CallDevToolsProtocolAsync][DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString] [、GetDevToolsProtocolEventReceiver][DotnetApiMicrosoftWebWebview2CoreCorewebview2GetdevtoolsprotocoleventreceiverViewWebview2Dotnet1077444]  
     *   Win32  [C/C++：CallDevToolsProtocolMethod][Webview2ReferenceWin32Icorewebview2ViewWebview21077444Calldevtoolsprotocolmethod] [、ICoreWebView2DevToolsProtocolEventReceiver][Webview2ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverViewWebview21077444]  
@@ -36,13 +36,13 @@ ms.locfileid: "11803176"
 > [!NOTE]
 > [Microsoft.Web.WebView2.DevToolsProtocolExtension][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] NuGet目前处于技术预览阶段。  在预览版中，请勿在生产应用中使用程序包。
 
-[Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview) ][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension]是 WebView2 团队创建的 NuGet 包，可轻松访问 Chromium DevTools 协议功能。  以下示例介绍如何在 WebView2 控件的 Chromium DevTools 协议中使用地理位置功能。  你可以遵循类似的模式来使用其他 Chromium DevTools 协议功能。  
+[Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview) ][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension]是 WebView2 团队创建的 NuGet 包，可轻松访问 Chromium DevTools 协议功能。  以下示例介绍如何在 WebView2 控件的 Chromium DevTools 协议中使用地理位置功能。  你可以遵循类似的模式来使用其他 Chromium Tools 协议功能。  
 
 ## <a name="step-1-create-a-webpage-to-find-your-geolocation"></a>步骤 1：创建网页以查找地理位置  
 
 若要创建 `HTML file` 以查找地理位置，请完成以下操作。  
 
-1.  打开Visual Studio Code \(或你选择的 IDE\) 。  
+1.  打开Visual Studio Code \ (或你选择的 IDE\) 。  
 1.  创建新 `.html` 文件。  
 1.  将以下代码段复制并粘贴到新 `.html` 文件中。  
     
@@ -88,10 +88,9 @@ ms.locfileid: "11803176"
     
 ## <a name="step-2-display-geolocationhtml-in-a-webview2"></a>步骤 2：geolocation.htmWebView2 中显示 geolocation.html  
 
-1.  若要创建 WebView2 应用，请使用以下入门指南或 WebView2 示例之一。  
-    *   [入门表单中的 WebView2 Windows WebView2][Webview2GetStartedWinforms]  
-    *   [入门 WPF 中的 WebView2][Webview2GetStartedWpf]  
-    *   [WebView2 示例][GithubMicrosoftedgeWebview2samples]  
+1.  若要创建 WebView2 应用，请使用入门指南或 WebView2 示例。
+    *   [入门](../index.md#get-started)
+    *   [WebView2 示例][GithubMicrosoftedgeWebview2samples]
         
 1.  将 WebView2 控件的初始导航设置为 `geolocation.html` 。  
     
@@ -159,16 +158,16 @@ ms.locfileid: "11803176"
 1.  运行应用。  
 1.  若要显示法国巴黎的坐标，请选择" **显示位置"** 按钮。  
     
-    :::image type="complex" source="./media/final-location-cdp.png" alt-text="在 WebView2 .html显示带巴黎坐标的 WebView2 文件" lightbox="./media/final-location-cdp.png":::
+    :::image type="complex" source="./media/final-location-cdp.png" alt-text="在 WebView2 .html显示带巴黎坐标的 webView2 文件" lightbox="./media/final-location-cdp.png":::
        在 `.html` WebView2 控件中显示文件以及巴黎的坐标  
     :::image-end:::  
     
-## <a name="file-a-chromium-devtools-protocol-bug"></a>提出开发人员Chromium协议 bug  
+## <a name="file-a-chromium-devtools-protocol-bug"></a>提交 Chromium Tools 协议 Bug  
 
 WebView2 团队不拥有 Chromium Tools 协议。  
 
 > [!IMPORTANT]
-> 将反馈和 bug Chromium问题存储库。  
+> 将反馈和 bug 直接Chromium问题存储库。  
 
 若要提交Chromium工具协议 bug 或问题，请完成以下操作。  
 
@@ -180,10 +179,6 @@ WebView2 团队不拥有 Chromium Tools 协议。
 *   [WebView2 示例][GithubMicrosoftedgeWebview2samples]  
     
  <!-- links -->  
-
-[Webview2GetStartedWinforms]: /microsoft-edge/webview2/get-started/winforms "Windows Forms | 中的 WebView2 入门Microsoft Docs"  
-[Webview2GetStartedWpf]: /microsoft-edge/webview2/get-started/wpf "WPF | 中的 WebView2 入门Microsoft Docs"  
-
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2GetdevtoolsprotocoleventreceiverViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver?view=webview2-dotnet-1.0.774.44&preserve-view=true "CoreWebView2.GetDevToolsProtocolEventReceiver (String) 方法 |Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString]: /dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync?view=webview2-dotnet-1.0.774.44&preserve-view=true#Microsoft_Web_WebView2_Core_CoreWebView2_CallDevToolsProtocolMethodAsync_System_String_System_String_ "CoreWebView2.CallDevToolsProtocolMethodAsync (String， String) 方法 |Microsoft Docs"  
 

@@ -7,16 +7,16 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 扩展 api， 开发人员， Web 开发
-ms.openlocfilehash: 1a97346c1b484470b63b447b0acd34833d93e0c12481da9acc56fc7a552b0cac
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 3e168d5942020e8a6c2e658b097dcf2b530d4380
+ms.sourcegitcommit: dc445eae30234af1ad3fa42645aabb940529912b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11807652"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934303"
 ---
 # <a name="supported-apis-for-microsoft-edge-extensions"></a>支持用于扩展Microsoft Edge API
 
-下表提供了一个 API 列表，可用于为浏览器 \Microsoft Edge \(Chromium\) 扩展。
+下表提供了一个 API 列表，可用于为浏览器 \Microsoft Edge \ (Chromium\) 扩展。
 
 | API                                   | 描述                                            
 |---------------------------------------|----------------------------------------------------------|
@@ -25,10 +25,10 @@ ms.locfileid: "11807652"
 | [browserAction](https://developer.chrome.com/extensions/browserAction) | 使用浏览器操作将图标放在工具栏上的Microsoft Edge。 您还可以使用浏览器操作添加工具提示、锁屏提醒或弹出窗口。 |
 | [browsingData](https://developer.chrome.com/extensions/browsingData) | 从用户的本地配置文件中删除浏览数据。 |
 | [命令](https://developer.chrome.com/extensions/commands) | 添加在扩展中触发操作键盘快捷方式。 例如，打开浏览器或向扩展发送命令的操作。 |
-| [contentSettings](https://developer.chrome.com/extensions/contentSettings) | 通常，内容设置允许您在每个网站上自定义Microsoft Edge，而不是全局自定义网站集的行为。 更改控制网站是否可以使用 Cookie、JavaScript 和插件等功能的设置。 |
-| [contextMenus](https://developer.chrome.com/extensions/contextMenus) | 将项目添加到上下文菜单中的 Microsoft Edge。 菜单项可能适用于不同的对象，如图像、超链接和页面。 |
+| [contentSettings](https://developer.chrome.com/extensions/contentSettings) | 通常，内容设置允许您在每个网站上（而不是全局Microsoft Edge自定义网站网站集的行为。 更改控制网站是否可以使用 Cookie、JavaScript 和插件等功能的设置。 |
+| [contextMenus](https://developer.chrome.com/extensions/contextMenus) | 将项目添加到上下文菜单中的Microsoft Edge。 菜单项可能适用于不同的对象，如图像、超链接和页面。 |
 | [Cookie](https://developer.chrome.com/extensions/cookies) | 查询和修改 Cookie，在 Cookie 更改时接收通知。 |
-| [调试器](https://developer.chrome.com/extensions/debugger) | 附加到一个或多个选项卡以检测网络交互、调试 JavaScript、更改 DOM、更改 CSS 等。 使用调试器 tabId 通过 sendCommand 定位选项卡，并按 tabId 从 onEvent 回调路由事件。 |
+| [调试器](https://developer.chrome.com/extensions/debugger) | 附加到一个或多个选项卡以检测网络交互、调试 JavaScript、更改 DOM、更改 CSS 等。 使用调试器 tabId 通过 sendCommand 定向选项卡，并按 tabId 从 onEvent 回调路由事件。 |
 | [declarativeContent](https://developer.chrome.com/extensions/declarativeContent) | 根据页面内容采取操作，而无需读取页面内容的权限。 |
 | [declarativeNetRequest](https://developer.chrome.com/extensions/declarativeNetRequest) | 通过指定声明性规则阻止或修改网络请求，提供更多隐私。 允许扩展在不截获请求和查看内容的情况下修改网络请求。 |
 | [desktopCapture](https://developer.chrome.com/extensions/desktopCapture) | 捕获屏幕、单个窗口或选项卡的内容。 |
@@ -54,7 +54,7 @@ ms.locfileid: "11807652"
 | [printerProvider](https://developer.chrome.com/extensions/printerProvider) | 使用事件查询打印机及其功能，并提交打印作业。 |
 | [隐私](https://developer.chrome.com/extensions/privacy) | 控制Microsoft Edge用户隐私的控件功能。 此 API 依赖于 `EdgeSetting` 的原型 `types` ，用于获取和设置 Microsoft Edge。 |
 | [代理](https://developer.chrome.com/extensions/proxy) | 管理客户端的代理Microsoft Edge。 此 API 依赖于 `EdgeSetting` API 的原型 `types` ，用于获取和设置 Microsoft Edge。 |
-| [运行时](https://developer.chrome.com/extensions/runtime) | 检索后台页面，返回有关清单的详细信息，并侦听和响应应用或扩展生命周期中的事件。 您还可以将 URL 的相对路径转换为完全限定的 URL。 |
+| [运行时](https://developer.chrome.com/extensions/runtime) | 检索后台页面，返回有关清单的详细信息，并侦听和响应应用或扩展生命周期中的事件。 还可以将 URL 的相对路径转换为完全限定的 URL。 |
 | [会话](https://developer.chrome.com/extensions/sessions) | 从浏览会话查询和还原选项卡和窗口。 |
 | [存储](https://developer.chrome.com/extensions/storage) | 存储、检索和跟踪用户数据更改。 |
 | [system.memory](https://developer.chrome.com/extensions/system_memory) | `system.memory`API。 |
@@ -83,9 +83,11 @@ Microsoft Edge不支持以下扩展 API：
 
 ## <a name="additional-considerations-for-supported-apis"></a>受支持的 API 的其他注意事项
 
-* 用户必须使用 MSA 或 Microsoft Edge帐户登录Azure Active Directory帐户使用 `chrome.identity.getProfileUserInfo` 。 如果用户使用本地 Active Directory Microsoft Edge登录，API 将返回电子邮件和 `null` ID 值。
+*  用户必须使用 MICROSOFT 帐户Microsoft Edge MSA 帐户 (登录) Azure Active Directory帐户。 `chrome.identity.getProfileUserInfo` 如果用户使用本地 Active Directory Microsoft Edge登录，API 将返回电子邮件和 `null` ID 值。
 
-* Microsoft Edge不支持使用Chrome Web Store付款的扩展，因为它用于为 `identity.getAuthtoken` 登录用户请求令牌。 这些令牌将发送到基于 REST 的许可 API。 
+   MSA (Microsoft) 是 Outlook.com、Live.com 或 Hotmail.com 帐户。
+
+*  Microsoft Edge不支持使用Chrome Web Store付款的扩展，因为它用于为 `identity.getAuthtoken` 登录用户请求令牌。  这些令牌将发送到基于 REST 的许可 API。
 
 
 <!-- links -->  

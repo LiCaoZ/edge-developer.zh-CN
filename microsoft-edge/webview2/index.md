@@ -1,6 +1,6 @@
 ---
 description: 使用 Microsoft Edge WebView2 控件在 Win32、.NET 以及 UWP 应用中托管 web 内容
-title: Microsoft Edge WebView2 控件
+title: Microsoft Edge WebView2 简介
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/06/2021
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、edge html、Windows Forms、WinForms、WPF、.NET、WinUI、Project Reunion
-ms.openlocfilehash: 4f2a7b128c55ad1b006da8ffdcf939b3e20581be
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.openlocfilehash: faa4c5c075e0216eebccd7520d34923878c8204f
+ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893317"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11933986"
 ---
-# <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介  
+# <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介
 
 Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术\(HTML、CSS 以及 JavaScript\)。  WebView2 控件使用 [Microsoft Edge(Chromium)][MicrosoftedgeinsiderMain] 作为绘制引擎，以在本机应用中显示 web 内容。  使用 WebView2，可以在本机应用的不同部分嵌入 Web 代码，或在单个 WebView 实例中生成所有本机应用。  要了解如何开始生成 WebView2 应用，请导航到 [入门](#get-started)。  
 
@@ -130,27 +130,28 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术\(HTML、
       依赖带有定期平台更新和安全修补的最新版 Chromium。  
    :::column-end:::
    :::column span="1":::
-      （可选）在应用中打包特定Chromium位。  
+      可以选择在应用中打包特定版本的 Chromium 位。  
    :::column-end:::
    :::column span="1":::
       将 Web 组件分片添加到应用。  
    :::column-end:::
 :::row-end:::  
 
-## <a name="get-started"></a>入门  
+## <a name="get-started"></a>入门
 
 要使用 WebView2 控件生成并测试应用，需要 <!--both [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] and -->安装 [WebView2 SDK][NugetPackagesMicrosoftWebWebView2]。  选择以下其中一个选项以开始使用。  
 
-*   [Win32 C/C++ 入门][Webview2GetStartedWin32]  
-*   [WPF 入门][Webview2GetStartedWpf]  
-*   [WinForms 入门][Webview2GetStartedWinforms]  
-*   [WinUI3 入门][Webview2GetStartedWinui]  
+*   [在 Win32 应用中开始使用 WebView2][Webview2GetStartedWin32]  
+*   [WPF 应用中的 WebView2 入门][Webview2GetStartedWpf]
+*   [WinForms 应用中的 WebView2 入门][Webview2GetStartedWinforms]
+*   [WinUI 2 应用中的 WebView2 入门][Webview2GetStartedWinui2]
+*   [WinUI 3 应用和预览版中的 WebView2 (入门) ][Webview2GetStartedWinui]
     
-[WebView2 示例][GithubMicrosoftedgeWebview2samples] 存储库包含演示所有 WebView2 SDK 功能和 API 使用模式的示例。  随着更多功能添加到 WebView2 SDK 中，示例应用将相应更新。  
+[WebView2 示例][GithubMicrosoftedgeWebview2samples] 存储库包含演示所有 WebView2 SDK 功能和 API 使用模式的示例。  随着更多功能添加到 WebView2 SDK 中，示例应用将相应更新。
 
 ## <a name="supported-platforms"></a>受支持的平台  
 
-一般可用版 \(GA\) 或预览版在以下编程环境中可用。  
+通用版本 \ (GA\) 或预览版的 WebView2 可用于以下编程环境。
 
 *   Win32 C/C++ \(GA\)  
 *   .NET Framework 4.5 或更高版本  
@@ -166,15 +167,15 @@ WebView2 应用可以在以下版本的 Windows。
 *   Windows 10 IoT 企业版LTSC x64 2019
 *   Windows 10 IoT 企业版 21h1 x64
 *   Windows 8.1  
-*   Windows 7   
+*   Windows 7 \*\*  
 *   Windows Server 2019  
 *   Windows Server 2016  
 *   Windows Server 2012  
 *   Windows Server 2012 R2  
-*   Windows Server 2008 R2   
+*   Windows Server 2008 R2 \*\*  
     
 > [!IMPORTANT]
->  对 Windows 7 和 Windows Server 2008 R2 的 WebView2 支持与 Microsoft Edge 的支持周期相同。  有关详细信息，请导航到 [Microsoft Edge 支持的操作系统][DeployedgeMicrosoftEdgeSupportedOS]。  
+> \*\* 对 Windows 7 和 Windows Server 2008 R2 的 WebView2 支持与 Microsoft Edge 的支持周期相同。  有关详细信息，请导航到 [Microsoft Edge 支持的操作系统][DeployedgeMicrosoftEdgeSupportedOS]。  
 
 ## <a name="next-steps"></a>后续步骤  
 
@@ -201,22 +202,23 @@ WebView2 应用可以在以下版本的 Windows。
 [Webview2ConceptsSecurity]: ./concepts/security.md "开发安全的 WebView2 应用的最佳做法 | Microsoft Docs"  
 [Webview2ConceptsUserDataFolder]: ./concepts/user-data-folder.md "管理用户数据文件夹 | Microsoft Docs"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "了解 WebView2 SDK 版本 | Microsoft Docs"  
-[Webview2GetStartedWin32]: ./get-started/win32.md "WebView2 入门 | Microsoft Docs"  
-[Webview2GetStartedWinforms]: ./get-started/winforms.md "Windows Forms 应用中的 WebView2 入门 | Microsoft Docs"  
-[Webview2GetStartedWinui]: ./get-started/winui.md "WinUI3 (预览版)中的 WebView2 入门 | Microsoft Docs"  
-[Webview2GetStartedWpf]: ./get-started/wpf.md "WPF (预览版)中的 WebView2 入门 |Microsoft Docs"  
-[Webview2HowToDebug]: ./how-to/debug.md "如何使用 WebView2 进行调试 | Microsoft Docs"  
+
+[Webview2GetStartedWin32]: ./get-started/win32.md "Win32 应用和应用中的 WebView2 |Microsoft Docs"  
+[Webview2GetStartedWinforms]: ./get-started/winforms.md "WinForms 应用和应用中的 WebView2 |Microsoft Docs"  
+[Webview2GetStartedWinui2]: ./get-started/winui2.md "在 WinUI 2 应用中开始使用 WebView2 |Microsoft Docs"  
+[Webview2GetStartedWinui]: ./get-started/winui.md "WinUI 3 应用和预览版中的 WebView2 (入门) |Microsoft Docs"  
+[Webview2GetStartedWpf]: ./get-started/wpf.md "WPF 应用和应用中的 WebView2 |Microsoft Docs"  
+
+[Webview2HowToDebug]: ./how-to/debug.md "开始调试 WebView2 应用|Microsoft Docs"  
 [Webview2HowToWebdriver]: ./how-to/webdriver.md "使用 Microsoft Edge 驱动程序自动执行并测试 WebView2 | Microsoft Docs"  
-[Webview2ReleaseNotes]: ./release-notes.md "WebView2 SDK 发行说明 | Microsoft Docs"  
-
-[UwpToolkitsWinui3]: /uwp/toolkits/winui3/index "Windows UI 库 3 预览版 2(2020 年 7 月) | Microsoft Docs"  
-
+[Webview2ReleaseNotes]: ./release-notes.md "WebView2 SDK |Microsoft Docs"  
+<!-- external links -->
+[UwpToolkitsWinui3]: /uwp/toolkits/winui3/index "WindowsUI Library 3 Preview 2 (2020 年 7 月) |Microsoft Docs"  
 [DeployedgeMicrosoftEdgeSupportedOS]: /deployedge/microsoft-edge-supported-operating-systems "Microsoft Edge 支持的操作系统 | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebviewfeddback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView 反馈 - MicrosoftEdge/WebViewFeedback | GitHub"  
 
 [MicrosoftedgeinsiderMain]: https://www.microsoftedgeinsider.com "Microsoft Edge 预览体验成员"  
-[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "下载 Microsoft Edge 预览体验成员"  
 
 [NugetPackagesMicrosoftWebWebView2]: https://www.nuget.org/packages/Microsoft.Web.WebView2 "Microsoft.Web.WebView2 | NuGet Gallery"  

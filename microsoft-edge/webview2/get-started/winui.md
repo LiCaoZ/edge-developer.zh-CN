@@ -1,6 +1,6 @@
 ---
-description: 适用于 WinUI 应用的 WebView2 入门指南
-title: WinUI 应用的 WebView2 入门
+description: 将 WebView2 用于 WinUI 3 应用入门指南。
+title: 'WinUI 3 应用 SDK (Windows中的 WebView2) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/17/2021
@@ -8,28 +8,28 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、winui 应用、winui、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
-ms.openlocfilehash: 64d2806cf0fa55619701e0b208366a0807407350
-ms.sourcegitcommit: 9f5dd05432f87339f4c3d71f1f9ce1d06afcaf4b
+ms.openlocfilehash: a1d2f052c8703a7a8a1792d628ba22735192a7f4
+ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "11675132"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934033"
 ---
 # <a name="get-started-with-webview2-in-winui-3-windows-app-sdk"></a>WinUI 3 应用 SDK (Windows中的 WebView2) 
 
-本文将开始创建你的第一个 WebView2 应用，并了解 [WebView2 的主要功能][MicrosoftDeveloperMicrosoftEdgeWebview2]。  你的第一个 WebView2 应用使用 WinUI3。  有关各个 API 的信息，请导航到 [API 参考][GithubMicrosoftMicrosoftUiXamlSpecsWebview2]。  
+本文将开始创建你的第一个 WebView2 应用，并了解 [WebView2 的主要功能][MicrosoftDeveloperMicrosoftEdgeWebview2]。  你的第一个 WebView2 应用使用 WinUI 3。  有关各个 API 的信息，请导航到 [API 参考][GithubMicrosoftMicrosoftUiXamlSpecsWebview2]。  
         
 ## <a name="step-0---set-up-development-environment"></a>步骤 0 - 设置开发环境 
 
 1. 按照设置开发环境的步骤 1-4 安装 Visual Studio、配置 NuGet 程序包源并安装 Windows App SDK Extension for Visual Studio。 [][WindowsAppsWinui3ConfigureYourDevEnvironment] 
-1. 安装安装在 Windows 10 版本 1803 \(版本 17134\) 或更高版本上的[WebView][Webview2Installer] [Microsoft Edge (Chromium) 2][MicrosoftedgeinsiderDownload]运行时或任何非稳定通道。  有关更新Windows 10，请导航到Windows[更新：常见问题解答][MicrosoftSupport12373]。  
-1.  若要访问开发人员特定的所有Visual Studio功能，请打开开发人员[模式][WindowsUwpGetStartedEnableYourDeviceForDevelopment]。  
+1. 安装安装在 Windows 10 版本 1803 \ (版本 17134\) 或更高版本上的[WebView][Webview2Installer] [Microsoft Edge (Chromium) 2][MicrosoftedgeinsiderDownload]运行时或任何非稳定通道。  有关更新Windows 10，请导航到Windows[更新： FAQ][MicrosoftSupport12373]。  
+1.  若要访问开发人员特定的所有Visual Studio功能，请打开[开发人员模式][WindowsUwpGetStartedEnableYourDeviceForDevelopment]。  
     
 ## <a name="step-1---create-project"></a>步骤 1 - 创建Project  
 
 从包含单个主窗口的基本桌面项目开始。  
 
-1.  在Visual Studio中，选择 **"新建项目"。**  
+1.  In Visual Studio， choose **Create a new project**.  
 1.  在项目下拉列表中，分别选择**C#、Windows**和******WinUI。**  
     
     :::image type="complex" source="./media/winui-getting-started-selections.png" alt-text="使用项目创建一个新的 WinUI Visual Studio" lightbox="./media/winui-getting-started-selections.png":::
@@ -44,13 +44,13 @@ ms.locfileid: "11675132"
     *   **目标版本****：Windows 10版本 1903 (版本 18362**) 或更高版本  
     *   **最低版本****：Windows 10版本 1803 (版本 17134) **  
         
-    :::image type="complex" source="./media/winui-getting-started-project-type.png" alt-text="新建通用Windows平台Project对话框，包含目标版本和最低版本的选定值。" lightbox="./media/winui-getting-started-project-type.png":::
+    :::image type="complex" source="./media/winui-getting-started-project-type.png" alt-text=""新建通用Windows平台Project"对话框，包含"目标版本"和"最低版本"的选定值。" lightbox="./media/winui-getting-started-project-type.png":::
        "新建通用Windows平台Project"对话框，包含"目标版本"和"最低版本"的选定值。
     :::image-end:::  
     
 1.  在"解决方案资源管理器"中，将生成两个项目。  
     *   **你的项目名称 (桌面) 。 **  桌面项目包含你的应用的代码。  `App.xaml.cs`该文件定义一个 `Application` 表示应用实例的类。  `MainWindow.xaml.cs`该文件定义一个 `MainWindow` 类，该类表示应用实例显示的主窗口。  这些类派生自 `Microsoft.UI.Xaml` WinUI 命名空间中的类型。  
-    *   **你的项目名称 (包) **。  包项目是一Windows应用程序打包Project，配置为将应用构建到 MSIX 包中进行部署。  该项目包含应用的程序包清单，并且默认情况下是解决方案的启动项目。  有关详细信息，请导航到在 Visual Studio 和程序包清单架构参考中为[MSIX][WindowsMsixDesktopToUwpPackagingDotNet]打包设置桌面[Windows 10。][UwpSchemasAppxpackageUapmanifestRoot]  
+    *   **你的项目名称 (包) 。 **  包项目是一Windows应用程序打包Project，配置为将应用构建到 MSIX 包中进行部署。  该项目包含应用的程序包清单，并且默认情况下是解决方案的启动项目。  有关详细信息，请导航到"设置桌面应用程序以打包[MSIX Visual Studio"][WindowsMsixDesktopToUwpPackagingDotNet]和"程序包清单架构参考[Windows 10"。][UwpSchemasAppxpackageUapmanifestRoot]  
 1.  在"解决方案资源管理器"中，若要显示代码，请打开 `MainWindow.xaml` 文件。  若要运行项目并显示带按钮的窗口，请选择 `F5` 。  
     
 ## <a name="step-2---add-a-webview2-control-to-your-project"></a>步骤 2 - 将 WebView2 控件添加到项目中  
@@ -271,7 +271,7 @@ private void EnsureHttps(WebView2 sender, CoreWebView2NavigationStartingEventArg
 *   有关 WebView2 的信息，请导航到["WebView2 资源"。][Webview2IndexNextSteps]  
     
     > [!NOTE]
-    > WinRT CoreWebView2 对象在发布 WebView2 API 时可能不可用。  若要了解哪些 API 可用于 WebView2 控件，请导航到 [WebView2 Spec，][GithubMicrosoftMicrosoftUiXamlSpecsWebview2] 了解可用的 API 列表。  
+    > WinRT CoreWebView2 对象在发布 WebView2 API 时可能不可用。  若要了解哪些 API 可用于 WebView2 控件，请导航到 [WebView2 Spec，][GithubMicrosoftMicrosoftUiXamlSpecsWebview2] 查看可用的 API 列表。  
     
 *   有关 WebView2 API 的详细信息，请导航到 [WebView2 spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2]。  
     
@@ -282,10 +282,10 @@ private void EnsureHttps(WebView2 sender, CoreWebView2NavigationStartingEventArg
 若要发送特定于 WinUI 的功能请求或 Bug，请导航到"问题[- microsoft/microsoft-ui-xaml"，][GithubMicrosoftMicrosoftUiXamlIssues]然后选择"**新问题"。**  
 
 <!-- links -->  
-[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 开发最佳实践|Microsoft Docs"  
+[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 开发最佳做法|Microsoft Docs"  
 [Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "导航事件|Microsoft Docs"  
-[MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "WebView2 Microsoft Edge预览 (简介) |Microsoft Docs"  
-[Webview2IndexNextSteps]: ../index.md#next-steps "下一步 - WebView2 Microsoft Edge预览 (简介) |Microsoft Docs"  
+[MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "WebView2 Microsoft Edge简介|Microsoft Docs"  
+[Webview2IndexNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 |Microsoft Docs"  
 
 [Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.ExeMicrosoft.Web.WebView2.Wpf () 方法 (cuteScriptAsync) |Microsoft Docs"  
 
@@ -293,7 +293,7 @@ private void EnsureHttps(WebView2 sender, CoreWebView2NavigationStartingEventArg
 
 [UwpSchemasAppxpackageUapmanifestRoot]: /uwp/schemas/appxpackage/uapmanifestschema/schema-root "程序包清单架构参考Windows 10 |Microsoft Docs"  
 
-[VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]: /visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box "无需使用&quot;管理扩展&quot;对话框安装 - 管理 Visual Studio |Microsoft Docs"  
+[VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]: /visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box "无需使用&quot;管理扩展&quot;对话框即可安装 - 管理 Visual Studio |Microsoft Docs"  
 
 [WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/project-reunion/set-up-your-development-environment "配置开发环境 - Windows 2020 年 5 月 (UI 库 3.0 预览 1) |Microsoft Docs"  
 [WindowsCommunitytoolkit]: /windows/communitytoolkit "Windows Community Toolkit文档|Microsoft Docs"  

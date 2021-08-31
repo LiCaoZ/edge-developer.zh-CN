@@ -1,5 +1,5 @@
 ---
-description: 生成一个扩展，该扩展可弹出一天中的"下一张""
+description: 构建一个扩展，该扩展可弹出一天中的"省/市/市/服务"图片
 title: 创建扩展教程 - 第 1 部分
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,24 +7,24 @@ ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， Web 开发， html， css， javascript， 开发人员， 扩展
-ms.openlocfilehash: 14a64d92d1ec738dea444c09fd0188b90469d9d6159247d2fe3d03a27ce482a2
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 278a99ef4be8ad4472cf5aa37b18b5cfdbd3bb79
+ms.sourcegitcommit: dc445eae30234af1ad3fa42645aabb940529912b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11805178"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934499"
 ---
 # <a name="create-an-extension-tutorial---part-1"></a>创建扩展教程 - 第 1 部分  
 
 ## <a name="overview"></a>概述  
 
-本教程的目标是生成一个从Microsoft Edge (Chromium) 目录开始扩展的扩展。  你正在构建一个扩展，该扩展可弹出当天的"省/市/服务"图片。 在本教程中，了解如何通过完成以下操作来创建扩展。  
+本教程的目标是生成一个Microsoft Edge (Chromium) 扩展，从空目录开始。  你正在构建一个扩展，该扩展可弹出当天的"省/市/服务"图片。  在本教程中，你将了解如何创建扩展，方法为：
 
 *   创建 `manifest.json` 文件。  
 *   添加图标。  
 *   打开默认弹出对话框。  
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 若要测试本教程中构建的已完成扩展，请下载 [源代码][ArchiveExtensionGettingStartedPart1]。  
 
@@ -53,7 +53,7 @@ ms.locfileid: "11805178"
 
 对于图标，我们建议使用： 
 *   `PNG` 格式，但您也可以使用 `BMP` 、 或 `GIF` `ICO` `JPEG` 格式。  
-*   128 x 128 像素的图像，如有必要，浏览器会调整其大小。  
+*   128 x 128 像素的图像，如有必要，浏览器会调整大小。  
 
 项目的目录应类似于以下结构。   
 
@@ -86,7 +86,7 @@ ms.locfileid: "11805178"
 
 ## <a name="step-3-open-a-default-pop-up-dialog"></a>步骤 3：打开默认弹出对话框  
 
-现在，创建 `HTML` 一个文件，以在用户启动扩展时运行。  在名为 的目录中 `popup.html` 创建名为 的 HTML 文件 `popup` 。  当用户选择图标以启动扩展时， `popup/popup.html` 显示为模式对话框。  
+现在，创建 `HTML` 一个文件，以在用户启动扩展时运行。  在名为 的目录中创建名为 的 HTML `popup.html` 文件 `popup` 。  当用户选择图标以启动扩展时， `popup/popup.html` 显示为模式对话框。  
 
 添加以下代码段中的代码以显示 `popup.html` 星形图像。  
 

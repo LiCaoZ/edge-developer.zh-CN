@@ -7,12 +7,12 @@ ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 12c01ba47946bb05bc1baede2f441715ac29fe8e73c8fbc504f5f16823541749
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 3dd82042700bfd5a3092179dfe33d2db5e4f1b71
+ms.sourcegitcommit: dc445eae30234af1ad3fa42645aabb940529912b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11798335"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934324"
 ---
 # <a name="alternate-extension-distribution-methods"></a>备用扩展分发方法  
 
@@ -23,31 +23,31 @@ ms.locfileid: "11798335"
 
 未从边缘加载项存储加载的扩展称为外部安装的扩展。 以下列表提供了分发外部安装的扩展的替代方法。 
 
-*   请Windows注册表 (Windows注册表) 。  
+*   使用Windows注册表 (Windows注册表) 。  
 *   在 macOS 和 Linux (使用首选项 JSON) 。  
     
-## <a name="before-you-begin"></a>在你开始前  
+## <a name="before-you-begin"></a>在开始之前  
 
-请确保在加载项存储中Microsoft Edge扩展，或打包文件，并确保其成功 `.crx` 安装在您的计算机上。  如果使用 安装 `.crx` 文件， `update_URL` 请确保可以导航到位于该 URL 的扩展名。  
+请确保在加载项网站中Microsoft Edge扩展，或打包文件，并确保其成功 `.crx` 安装在您的计算机上。  如果使用 安装 `.crx` 文件， `update_URL` 请确保可以导航到位于该 URL 的扩展名。  
 
 此外，请确保您拥有以下信息。    
 
 1.  文件的文件 `.crx` 路径或扩展 `update_URL` 名的 。
-1.  扩展的版本。  版本信息在清单文件中提供，或在加载打包扩展Microsoft Edge在 中提供 `edge://extensions` 。   
-1.  扩展的 ID。  ID 信息在加载打包的扩展Microsoft Edge `edge://extensions` 位于 以下版本。  
+1.  扩展的版本。  版本信息在清单文件中提供，或在加载打包扩展Microsoft Edge在 中 `edge://extensions` 提供。   
+1.  扩展的 ID。  ID 信息在加载打包扩展Microsoft Edge `edge://extensions` 在 中提供。  
 
 > [!NOTE] 
 > 以下示例使用 `1.0` 作为 版本 和 `aaaaaaaaaabbbbbbbbbbcccccccccc` 作为 ID。  
 
-## <a name="use-the-windows-registry-windows-only"></a>使用Windows注册表 (Windows注册表)   
+## <a name="use-the-windows-registry-windows-only"></a>请Windows注册表 (Windows注册表)   
 
 若要使用注册表Windows扩展，请执行以下步骤。
 
 1.  在注册表中查找或创建以下注册表项：  
     *   32 位 `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions` Windows：。  
     *   64 位 `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions` Windows：。  
-1.  使用与扩展 ID 相同的名称在****"扩展"下创建新密钥或文件夹。 例如，创建名称为 的键 `aaaaaaaaaabbbbbbbbbbcccccccccc` 。  
-1.  在 **Extensions** 键中， `update_url` 创建 属性，将值设置为 `https://edge.microsoft.com/extensionwebstorebase/v1/crx` 。  `update_url`属性指向 `.crx` 加载项存储中扩展Microsoft Edge文件。  
+1.  使用与扩展 ID 相同的名称在 **"** 扩展"下创建新密钥或文件夹。 例如，创建名称为 的键 `aaaaaaaaaabbbbbbbbbbcccccccccc` 。  
+1.  在 **Extensions** 键中， `update_url` 创建 属性，将值设置为 `https://edge.microsoft.com/extensionwebstorebase/v1/crx` 。  `update_url`属性指向 `.crx` 加载项网站中扩展Microsoft Edge文件。  
 
     ```json
     {
@@ -58,7 +58,7 @@ ms.locfileid: "11798335"
     > [!NOTE]
     > 如果要从客户端安装扩展Chrome Web Store，将 的值 `update_url` 设置为 `https://clients2.google.com/service/update2/crx` 。  
   
-1.  导航到 ，验证扩展Microsoft Edge中列出的扩展 `edge://extensions` 。  
+1.  导航到 ，验证扩展Microsoft Edge中列出的 `edge://extensions` 扩展。  
 
 ## <a name="use-a-preferences-json-file-macos-and-linux"></a>在 macOS 和 Linux (使用首选项 JSON)   
 
@@ -101,7 +101,7 @@ ms.locfileid: "11798335"
         }
         ```  
  
-    *  从 macOS 和 Linux 上的 Microsoft Edge 加载项存储进行安装时，将以下代码复制到 JSON 文件。
+    *  从 macOS 和 Linux 上的 Microsoft Edge 加载项网站安装时，将以下代码复制到 JSON 文件。
     
         ```json
         {
@@ -126,7 +126,7 @@ Microsoft Edge浏览器每次启动时扫描注册表中的元数据条目，并
 
 若要将扩展更新到新版本，请更新清单文件中的版本，然后在注册表中更新版本。  
 
-你可能需要卸载外部安装的扩展，这些扩展作为以前安装在计算机中的软件捆绑包的一部分进行安装。  若要卸载扩展，请删除首选项 JSON 文件，或者从注册表中删除项。   
+你可能需要卸载外部安装的扩展，这些扩展是作为以前安装在计算机中的软件捆绑包的一部分安装的。  若要卸载扩展，请删除首选项 JSON 文件，或者从注册表中删除项。   
 
 <!-- links -->  
 

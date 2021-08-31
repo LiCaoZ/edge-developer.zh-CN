@@ -353,20 +353,20 @@
               href: extensions-chromium/publish/manage-settings.md
             - name: 联系人扩展支持
               href: extensions-chromium/publish/contact-extensions-team.md
-            - name: Microsoft Edge 加载项
+            - name: Microsoft Edge 加载项策略
+              items:
+                - name: 内容安全策略
+                  href: extensions-chromium/store-policies/csp.md
+                - name: Microsoft Edge 开发人员 ADA 附录
+                  href: extensions-chromium/store-policies/ada-addendum.md
+                - name: Microsoft Edge 加载项商店开发人员策略
+                  href: extensions-chromium/store-policies/developer-policies.md
+            - name: Microsoft Edge 加载项 API
               items:
                 - name: 使用加载项 API
                   href: extensions-chromium/publish/api/using-addons-api.md
                 - name: 加载项 API 参考
                   href: extensions-chromium/publish/api/addons-api-reference.md
-        - name: Microsoft Edge 加载项策略
-          items:
-            - name: 内容安全策略
-              href: extensions-chromium/store-policies/csp.md
-            - name: Microsoft Edge 开发人员 ADA 附录
-              href: extensions-chromium/store-policies/ada-addendum.md
-            - name: Microsoft Edge 加载项存储开发人员策略
-              href: extensions-chromium/store-policies/developer-policies.md
         - name: 适用于企业的扩展
           items:
             - name: 匹配模式
