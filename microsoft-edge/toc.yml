@@ -309,9 +309,9 @@
               href: devtools-guide-chromium/shortcuts/index.md
     - name: Extensions
       items:
-        - name: 扩展概述
+        - name: Microsoft Edge扩展概述
           href: extensions-chromium/index.md
-        - name: 即刻体验
+        - name: 入门
           items:
             - name: 扩展体系结构
               href: extensions-chromium/getting-started/index.md
@@ -329,7 +329,7 @@
               href: extensions-chromium/developer-guide/api-support.md
             - name: 声明权限
               href: extensions-chromium/enterprise/declare-permissions.md
-            - name: 将 Chromium 扩展移植到 Microsoft Edge
+            - name: 将 Chrome 扩展移植到Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
             - name: 将扩展从清单 v2 迁移到 v3
               href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
@@ -337,11 +337,13 @@
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
             - name: 本机消息传递
               href: extensions-chromium/developer-guide/native-messaging.md
-        - name: 发布到 Microsoft Store
+        - name: 发布到加载项网站
           items:
-            - name: 开发人员注册
+            - name: 注册为扩展开发人员
               href: extensions-chromium/publish/create-dev-account.md
-            - name: 添加和管理用户
+            - name: 使用 GitHub 帐户发布扩展
+              href: extensions-chromium/publish/github.md
+            - name: 将用户添加到Microsoft Edge程序
               href: extensions-chromium/publish/aad-account.md
             - name: 发布扩展
               href: extensions-chromium/publish/publish-extension.md
@@ -353,13 +355,13 @@
               href: extensions-chromium/publish/manage-settings.md
             - name: 联系人扩展支持
               href: extensions-chromium/publish/contact-extensions-team.md
-            - name: Microsoft Edge 加载项策略
+            - name: Microsoft Edge加载项的策略
               items:
                 - name: 内容安全策略
                   href: extensions-chromium/store-policies/csp.md
                 - name: Microsoft Edge 开发人员 ADA 附录
                   href: extensions-chromium/store-policies/ada-addendum.md
-                - name: Microsoft Edge 加载项商店开发人员策略
+                - name: 开发人员策略
                   href: extensions-chromium/store-policies/developer-policies.md
             - name: Microsoft Edge 加载项 API
               items:
@@ -393,9 +395,9 @@
           href: progressive-web-apps-chromium/serviceworker.md
         - name: Web 应用清单
           href: progressive-web-apps-chromium/webappmanifests.md
-        - name: 试验功能
+        - name: 实验性功能
           href: progressive-web-apps-chromium/experimental-features/index.md
-        - name: 在 Microsoft Store 中发布你的 PWA
+        - name: 将 PWA 发布到Microsoft Store
           href: progressive-web-apps-chromium/microsoft-store.md
     - name: Playwright 概述
       href: playwright/index.md
