@@ -53,7 +53,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 
 <!-- ====================================================================== -->
-## <a name="turning-on-experimental-features"></a>打开实验性功能
+## <a name="turn-on-experimental-features"></a>打开实验性功能
 
 若要在 (中打开\) 或关闭\Microsoft Edge：
 

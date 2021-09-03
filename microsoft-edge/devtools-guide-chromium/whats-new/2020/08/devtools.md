@@ -397,7 +397,7 @@ When inspecting a network resource in the Network panel, DevTools now formats an
 
 The `X-Client-Data` HTTP header contains a list of experiment IDs and Microsoft Edge flags that are enabled in your browser.  The raw header values look like opaque strings since the values are `base-64-encoded`, serialized [protocol buffers][GoogleDevelopersProtocolBuffers].  To make the contents more transparent to developers, DevTools now shows the decoded values.  
 
-:::image type="complex" source="../../media/2020/08/x-client-data.msft.png" alt-text="Human-readable `X-Client-Data` header values" lightbox="../../media/2020/08/x-client-data.msft.png":::
+:::image type="complex" source="../../media/2020/08/x-client-data.msft.png" alt-text="Human-readable X-Client-Data header values" lightbox="../../media/2020/08/x-client-data.msft.png":::
    Human-readable `X-Client-Data` header values  
 :::image-end:::  
 

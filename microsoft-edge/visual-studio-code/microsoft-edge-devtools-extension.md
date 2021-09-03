@@ -94,8 +94,9 @@ ms.locfileid: "11936422"
 
 1. 在 **"Microsoft Edge：目标"面板**上，选择"**启动实例"。**  Microsoft Edge打开，并显示包含详细信息指南的默认页面。此外 **，DevTools**面板将在 Visual Studio Code。
 
-    :::image type="complex" source="./media/edge-devtools-for-vscode-targets-launch.png" alt-text="Microsoft Edge中打开"开发工具"Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-targets-launch.png":::
-       Microsoft Edge中打开"开发工具"Visual Studio Code :::image-end:::
+    :::image type="complex" source="./media/edge-devtools-for-vscode-targets-launch.png" alt-text="Microsoft Edge and DevTools panel open in Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-targets-launch.png":::
+       Microsoft Edge and DevTools panel open in Visual Studio Code
+    :::image-end:::
 
 1. 在Microsoft Edge地址栏中，导航到要调试的项目的 URL。
 
