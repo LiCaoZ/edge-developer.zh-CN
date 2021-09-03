@@ -7,18 +7,18 @@ ms.date: 05/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 实验， 渐进式 Web 应用， Web 应用， PWA， PWA
-ms.openlocfilehash: 39c530c51f5ff486a008903d75cc7d2bf06df0a3f048871bc1e7c9fce5c74359
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: fe7cf9a744401eee0c405d4c9d5238774051e31f
+ms.sourcegitcommit: 22acb7a57d9d8e21e4348aa699c1a2c53618e93d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11809353"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "11936703"
 ---
 # <a name="experimental-features-in-progressive-web-apps-pwas"></a>渐进式 Web 应用和 PBA (实验)   
 
 Microsoft Edge提供对仍在开发中的实验性功能的访问权限。  若要确定每个功能是否就绪以及何时发布每个功能，请进行测试 [并提供反馈](#providing-feedback-on-experimental-features)。  
 
-实验功能在所有渠道中Microsoft Edge，但最新的实验功能仅在 Microsoft Edge Canary 渠道 中提供。  
+实验功能在所有实验频道Microsoft Edge，但最新的实验功能仅在 Microsoft Edge Canary 渠道。  
 
 ## <a name="turn-on-experimental-features"></a>打开试验功能  
 
@@ -27,7 +27,7 @@ Microsoft Edge提供对仍在开发中的实验性功能的访问权限。  若�
 1.  打开 Microsoft Edge。   
     
     > [!NOTE]
-    > 确保使用Microsoft Edge列出实验的最新版本。  导航到 [实验功能](#features-that-are-available-to-test)。  
+    > 确保使用Microsoft Edge实验的最新版本。  导航到 [实验功能](#features-that-are-available-to-test)。  
     
 1.  导航到 `edge://flags`。  
 1.  导航到相关实验。  
@@ -38,7 +38,7 @@ Microsoft Edge提供对仍在开发中的实验性功能的访问权限。  若�
     :::image-end:::  
     
     > [!NOTE]
-    > 每个实验通常都有一个下拉菜单来选择以下值。  如果实验功能没有"实验"条目，则提供**** 说明以Microsoft Edge命令行开始使用该功能。
+    > 每个实验通常都有一个下拉菜单来选择以下值。  如果实验功能在实验上没有条目，则提供**** 说明以Microsoft Edge命令行开始使用该功能。
     > 
     > *   `Default`  
     > *   `Disabled`  
@@ -57,31 +57,31 @@ Microsoft Edge有时使用源试用版来测试特定域或网站的功能。  �
 
 ## <a name="features-that-are-available-to-test"></a>可供测试的功能  
 
-以下列表介绍了新的实验性 Web 应用功能，这些功能可用于测试和验证Microsoft Edge。  
+以下列表介绍了实验性 Web 应用功能，这些功能可用于测试和验证Microsoft Edge。 若要启用这些功能，请导航到"[打开实验性功能"。](#turn-on-experimental-features)  
 
-| 功能 | Microsoft Edge 版本 | 平台 |  
-|:--- |:--- |:--- |  
-| [URI 协议处理](#uri-protocol-handling) | 91 或更高版本 | Windows 和 Linux |    
-| [URL 链接处理](#url-link-handling) | 91 或更高版本 | Windows|
-| [适用于桌面应用的窗口控件覆盖层](#window-controls-overlay-for-installed-desktop-web-apps) | 91 或更高版本 | Windows 10|   
-| [在操作系统登录时运行](#run-on-os-login) | 88 或更高版本 | 全部 |  
-| [快捷方式](#shortcuts) | 87 或更高版本 | 全部 |  
-| [文件处理](#file-handling) | 83 或更高版本 | 所有桌面 |  
+| 功能 | 平台 |  
+|:--- |:--- |  
+| [URI 协议处理](#uri-protocol-handling) | Windows 和 Linux |    
+| [URL 链接处理](#url-link-handling) | Windows|
+| [适用于桌面应用的窗口控件覆盖层](#window-controls-overlay-for-installed-desktop-web-apps) | Windows 10|   
+| [在操作系统登录时运行](#run-on-os-login) | 全部 |  
+| [快捷方式](#shortcuts) | 全部 |  
+| [文件处理](#file-handling) | 所有桌面 |  
 
 ## <a name="uri-protocol-handling"></a>URI 协议处理  
 
-统一资源标识符 \(URI\) 可用于定义使用 HTTP 或 FTP 协议的网页和 Web 内容的链接。  URI 可用于描述指向您编成架构中任何内容的链接。  例如，协议用于描述电子邮件链接，操作系统 `mailto://` \(OS\) 或浏览器决定哪个网页或应用应处理该协议。  
+统一资源标识符 \ (URI\) 可用于定义使用 HTTP 或 FTP 协议的网页和 Web 内容的链接。  URI 可用于描述指向您编成架构中任何内容的链接。  例如，协议用于描述电子邮件链接，操作系统 `mailto://` \ (OS\) 或浏览器决定哪个网页或应用应处理该协议。  
 
 有关基于浏览器的现有支持，请导航到基于 [Web 的协议处理程序][MdnDocsWebApiNavigatorRegisterprotocolhandlerWebBasedProtocolHandlers]。  
 
 此功能允许您完成以下操作。  
 
-*   使用 web PWA清单向主机操作系统注册你的应用程序
+*   使用PWA应用的清单向主机操作系统注册你的应用程序
 *   声明PWA处理特定 URI 协议  
     
-将 PWA 注册为协议处理程序后，当用户使用特定方案（如浏览器或本机应用）选择超链接时，操作系统将激活注册的 PWA 并接收 `mailto://` `web+music://` URI。  
+将 PWA 注册为协议处理程序后，当用户选择具有特定方案（如浏览器或本机应用）的超链接时，操作系统将激活注册的 PWA 并接收 `mailto://` `web+music://` URI。  
 
-此功能要求你更新 Web 应用清单以在需要指定两个字段的 `protocol_handlers` 数组中包括数组：  
+此功能需要更新 Web 应用清单，以在需要指定两个字段的 `protocol_handlers` 数组中包括数组：  
 
 *   `protocol`：用于处理请求的协议，例如 或 `mailto` `web+jngl` 。  
 *   `url`：处理协议的应用作用域中的 HTTPS URI。  将来，计划替换以协议处理程序方案开始的 `%s` URI。  
@@ -93,7 +93,7 @@ Microsoft Edge有时使用源试用版来测试特定域或网站的功能。  �
     
 如果多个应用注册协议，则向用户显示提示。  用户从操作系统或浏览器呈现的列表中选择相应的应用。  
 
-若要在 Windows 上预览 Microsoft Edge 中的协议Windows，[请导航到](#turn-on-experimental-features)"打开实验性功能"并打开"桌面PWA**协议处理"。**  
+若要在 Microsoft Edge 中预览Windows，请导航到"打开实验性功能[](#turn-on-experimental-features)"并打开"桌面PWA**协议处理"。**  
 
 有关为协议处理程序运行的源试用版详细信息，请导航到注册 [Web 应用协议处理程序注册][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]。  
 
@@ -131,9 +131,9 @@ Microsoft Edge有时使用源试用版来测试特定域或网站的功能。  �
  
 ## <a name="url-link-handling"></a>URL 链接处理  
 
-统一资源定位器 \(URL\) 是一种 URI。  当渐进 Web 应用 \(PWA\) 注册为 https URI 的处理程序时，创建更具吸引力的体验。  PBA 可能会请求在激活关联的 URI 时启动。  例如，如果用户从电子邮件中选择指向新闻文章的链接。  用于PWA新闻文章的关联内容将自动启动以处理链接激活。  
+统一资源定位器 \ (URL\) 是一种 URI。  当渐进式 Web 应用 \ (PWA\) 注册为 https URI 的处理程序时，创建更具吸引力的体验。  PBA 可能会请求在激活关联的 URI 时启动。  例如，如果用户从电子邮件中选择指向新闻文章的链接。  用于显示PWA文章的关联内容将自动启动以处理链接的激活。  
 
-此功能允许你使用 Web PWA向浏览器注册网站，并声明浏览器处理特定链接。  若要向PWA注册网站，请向清单 `url_handlers` 文件添加可选成员。  `url_handlers`成员是 `object[]` 一个 ，用于对应用希望处理的 URI 的来源进行分组。  
+此功能允许你使用 Web PWA向浏览器注册网站，并声明浏览器处理特定链接。  若要向PWA注册网站，请向 `url_handlers` 清单文件添加可选成员。  `url_handlers`成员是 `object[]` 一个 ，用于对应用希望处理的 URI 的来源进行分组。  
 
 浏览器使用位于源上的 `web-app-origin-association` JSON 文件验证链接处理。  源文件进一步微调源的包含路径或排除路径。  有关测试 URL 处理程序的详细说明，请导航到[作为 URL 处理程序的 PWA。][GithubWicgPwaUrlHandlerBlobMainExplainerMd]  
 
@@ -169,13 +169,13 @@ To preview URL link handling in Microsoft Edge on Windows， navigate to [Turn o
 }
 ```  
 
-如果PWA URI 与 中的一个源字符串匹配，并且浏览器验证源是否同意允许此应用处理此类 URI，该 URI 将匹配 URL 处理。 `url_handlers`  
+如果PWA URI 与 中的一个源字符串匹配，并且浏览器验证源是否同意允许此应用处理此类 URI，该 URI 将匹配 URL 处理 `url_handlers` 。  
 
-`url_handlers`成员包含包含请求源的范围和其他不相关的PWA。  不将 URI 限制为与请求的 URI 相同的范围或域PWA允许对相同内容使用不同的域名，但使用相同的域名PWA。  
+`url_handlers`成员包含一个包含请求源的范围和其他不相关的PWA。  不将 URI 限制为与请求的 URI 相同的范围或域PWA允许对相同内容使用不同的域名，但使用相同的域名PWA。  
 
 #### <a name="wildcard-matching"></a>通配符匹配  
 
-使用通配符 \(`*` \) 匹配一个或多个字符。  
+使用通配符 \ (`*` \) 匹配一个或多个字符。  
 
 通配符前缀用于成员的来源字符串中 `url_handlers` ，以匹配不同的子域。  前缀必须针对 `*.` 此用法。  使用 `https` 通配符前缀时将假定此方案。  
 
@@ -190,7 +190,7 @@ To preview URL link handling in Microsoft Edge on Windows， navigate to [Turn o
     
 提供覆盖后，可使用整个 Web 客户端区域。  此功能包括清单更新。  它提供用于确定覆盖的大小和位置的方法，以帮助你安排内容。  
 
-若要预览窗口中窗口控件覆盖Microsoft Edge Windows 10，请导航到打开实验性功能并导航[](#turn-on-experimental-features)到桌面PWA**窗口控件覆盖**。   
+若要预览 Windows 中窗口控件覆盖Microsoft Edge Windows 10，请导航到"打开实验性[](#turn-on-experimental-features)功能"并导航到"桌面PWA**窗口控件覆盖"。**   
 
 ### <a name="examples-of-title-bar-area-customization"></a>标题栏区域自定义示例  
 
@@ -200,7 +200,7 @@ To preview URL link handling in Microsoft Edge on Windows， navigate to [Turn o
 
 Microsoft Visual Studio代码是在位于多个桌面平台上的"部署"上构建的常用编辑器。  
 
-以下示例显示Visual Studio Code栏以最大化可用屏幕空间以在标题栏中包括当前文件名和顶级菜单结构。  
+以下示例显示Visual Studio Code栏来最大化可用屏幕空间以在标题栏中包括当前文件名和顶级菜单结构。  
 
 :::image type="complex" source="../media/visual-studio-code-title-customization.png" alt-text="标题栏中的示例Visual Studio Code" lightbox="../media/visual-studio-code-title-customization.png":::
    标题栏中的示例Visual Studio Code  
@@ -208,7 +208,7 @@ Microsoft Visual Studio代码是在位于多个桌面平台上的"部署"上构�
 
 #### <a name="microsoft-teams"></a>Microsoft Teams  
 
-Workplace collaboration and communication tool Microsoft Teams is built with Desktop and available on multiple desktop platforms.  在下面的示例中，Microsoft Teams和导航 `back` `forward` 按钮、搜索框和用户配置文件控件。  
+Workplace collaboration and communication tool Microsoft Teams is also built with Desktop and available on multiple desktop platforms.  在下面的示例中，Microsoft Teams和导航按钮、搜索框和 `back` `forward` 用户配置文件控件。  
 
 :::image type="complex" source="../media/teams-title-customization.png" alt-text="标题栏中的示例Microsoft Teams" lightbox="../media/teams-title-customization.png":::
    标题栏中的示例Microsoft Teams  
@@ -219,18 +219,18 @@ Workplace collaboration and communication tool Microsoft Teams is built with Des
 为了最大化 Web 内容的可地址区域，浏览器会创建无框架窗口。  无框架窗口删除所有浏览器 UI，但作为覆盖提供的窗口控件除外。  窗口控件覆盖允许用户仍最小化、最大化、还原和关闭应用。  它还提供对使用 Web 应用菜单的相关浏览器控件的访问。  对于Chromium浏览器，覆盖层包括以下控件。  
 
 *   每个窗口控件按钮的宽度和高度相同的可拖动区域  
-*   The**设置 and more** \(...\) button  
+*   The**设置 and more** \ (...\) button  
 *   窗口控件按钮最小化、最大化、还原和关闭  
     
 除了前面列出的控件之外，覆盖层中显示的 UI 将在以下方案中动态调整大小。  
 
-*   启动已安装的 Web 应用后，网页的原点会在**设置**左侧显示更多 \(...\) 菜单几秒钟，然后消失。  
-*   如果用户使用**设置**和更多 \(...\) 菜单与扩展进行交互，则扩展的图标显示在三点菜单左侧的覆盖中。  退出任何扩展对话框后，图标将从覆盖层中删除。  
+*   启动已安装的 Web 应用后，网页的原点会在**设置**左侧显示更多 \ (...\) 菜单几秒钟，然后消失。  
+*   如果用户使用**设置**和更多 \ (...\) 菜单与扩展进行交互，扩展的图标将在三点菜单左侧的覆盖层中显示。  退出任何扩展对话框后，图标将从覆盖层中删除。  
     
 | 语言方向 | 覆盖位置 | 详细信息 |  
 |:--- |:--- |:--- |  
-| 从左到右 \(LTR\)  | 客户区域左上角 | 翻转控件 |  
-| 从右到左 \(RTL\)  | 工作区的右上角 |  |  
+| 从左到右 \ (LTR\)  | 客户区域左上角 | 翻转控件 |  
+| 从右到左 \ (RTL\)  | 工作区的右上角 |  |  
 
 > [!IMPORTANT]
 > 覆盖始终位于 Web 内容的 Z 索引顶部，并接受所有用户输入，而不会将输入流到 Web 内容。  
@@ -359,7 +359,7 @@ body {
 }
 ```  
 
-`titleBarContainer`ID 使用 `position: absolute` 并设置 `top` `titlebar-area-inset-top` ，将容器附加到网页顶部。  `bottom`如果窗口控件覆盖层不可见，则 设置为 并 `titlebar-area-inset-bottom` `100% - var(--fallback-title-bar-height)` 恢复为 。  ID 的背景 `titleBarContainer` 颜色与 `theme_color` 相同。  宽度设置为 ，以便元素填充网页的宽度，并且当对于连续外观可见时，该元素将流动在 `100%` `div` 覆盖层下。  
+`titleBarContainer`ID 使用 `position: absolute` 并设置 `top` `titlebar-area-inset-top` ，将容器附加到网页顶部。  `bottom`如果窗口控件覆盖层不可见，则 设置为 并 `titlebar-area-inset-bottom` `100% - var(--fallback-title-bar-height)` 恢复为 。  ID 的背景 `titleBarContainer` 颜色与 `theme_color` 相同。  宽度设置为 ，以便元素填充网页的宽度，并且当对于连续外观可见时，它将在覆盖 `100%` `div` 层下流动。  
 
 ```css
 #titleBarContainer {
@@ -484,18 +484,18 @@ body {
 }
 ```  
 
-Chromium浏览器正在测试和塑造此功能。  有关详细信息（包括代码示例），请导航到自定义窗口标题PWA[窗口控件覆盖。][WebDevWindowControlsOverlay]  
+Chromium浏览器正在测试和塑造此功能。  有关详细信息（包括代码示例），请导航到自定义PWA[标题栏的窗口控件覆盖。][WebDevWindowControlsOverlay]  
 
 ## <a name="run-on-os-login"></a>在操作系统登录时运行  
 
-此功能允许你将应用配置为在用户登录到 Microsoft Windows。  多个应用类利用此功能。  应用类包括电子邮件、聊天、监视仪表板和实时数据显示应用。  该功能允许用户在用户登录到操作系统后尽快使用应用。  此功能将自动启动PWA启动方式与手动启动方式相同。  
+此功能允许你将应用配置为在用户登录到 Microsoft Windows。  多个应用类利用此功能。  应用类包括电子邮件、聊天、监视仪表板和实时数据显示应用。  该功能允许用户在用户登录到操作系统后尽快使用应用。  此功能会自动启动PWA启动方式与手动启动方式相同。  
 
 > [!IMPORTANT]
 > **在操作系统登录上运行** 是一 [项强大的功能][GithubW3cPermissionsPowerfulFeature]。  用户应决定是否为已安装的 Web 应用启用该功能。  
 
 ### <a name="turn-on-run-on-os-login"></a>打开"在操作系统登录时运行"  
 
-若要预览适用于**** 你的用户的运行操作系统登录PWA，请导航到打开实验性功能，[](#turn-on-experimental-features)然后打开在操作系统登录上运行的桌面**PWA。**  
+若要预览适用于**** 你的用户的运行操作系统登录PWA，请导航到打开实验性功能[](#turn-on-experimental-features)，然后打开在操作系统登录上运行的**桌面 PWA。**  
 
 :::image type="complex" source="../media/desktop-pwas-run-on-os-login-flag.png" alt-text="打开在操作系统登录实验上运行的桌面 PBA" lightbox="../media/desktop-pwas-run-on-os-login-flag.png":::
    打开在**操作系统登录实验上运行的桌面 PBA**  
@@ -503,20 +503,20 @@ Chromium浏览器正在测试和塑造此功能。  有关详细信息（包括�
 
 ### <a name="turn-on-the-feature-for-the-installed-web-app"></a>打开已安装的 Web 应用的功能  
 
-若要为已安装 `Start app when you sign in` 的 PWA， 
+若要为已安装 `Start app when you sign in` 的 PWA 启用该功能， 
 
 1.  打开 Microsoft Edge。   
 1.  导航到 `edge://apps`。  
 1.  将鼠标悬停在你的应用上。  
-1.  打开上下文菜单 \(右键单击\) 然后在登录时选择 **"启动应用"。**  
+1.  打开上下文菜单 \ (右键单击\) 然后在登录时**选择"启动应用"。**  
     
-    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="在应用中登录功能时，使用上下文菜单打开开始Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
-       使用上下文菜单在用户登录**功能时打开"开始"Microsoft Edge**  
+    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="在"开始"菜单中登录功能时，使用上下文菜单Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
+       使用上下文菜单在用户登录功能时打开"开始 **"Microsoft Edge**  
     :::image-end:::  
     
 ## <a name="shortcuts"></a>快捷方式  
 
-`Shortcuts` 是清单文件的一个新增成员。  它允许你在 Web 应用中定义指向部件、关键网页或操作的链接。  Microsoft Windows将其集成为**Jumplists**。  **Jumplist 定义** 在下列 UI 元素之一上打开上下文菜单 \(右键单击\) 时出现的弹出菜单。  
+`Shortcuts` 是清单文件的一个新增成员。  它允许你在 Web 应用中定义指向部件、关键网页或操作的链接。  Microsoft Windows将其集成为**Jumplists**。  **Jumplist 定义** 在下列 UI 元素之一上打开上下文菜单 \ (右键单击\) 时出现的弹出菜单。  
 
 *   "开始"菜单上的磁贴  
 *   任务栏上的图标  
@@ -524,7 +524,7 @@ Chromium浏览器正在测试和塑造此功能。  有关详细信息（包括�
 当用户调用快捷方式时，用户将导航到该快捷方式的成员 `url` 指定的地址。  
   
 :::image type="complex" source="../media/jumplists-on-windows-10.png" alt-text="Jumplists 示例Windows 10" lightbox="../media/jumplists-on-windows-10.png":::
-   **Jumplists 示例Windows 10**  
+   **Jumplists 示例**Windows 10  
 :::image-end:::  
 
 ### <a name="shortcuts-in-the-manifest-file"></a>清单文件的快捷方式  
@@ -571,7 +571,7 @@ Chromium浏览器正在测试和塑造此功能。  有关详细信息（包括�
 
 提供有关 Web Microsoft Edge实验的反馈。  
 
-*   使用更多**\设置**\(`...` \) > 将反馈发送给 Microsoft 发送**反馈**。  
+*   使用更多**\设置**\ (`...` \) >**向 Microsoft**发送反馈。  
 *   选择 `Alt` + `Shift` + `I` 。  
     
 :::image type="complex" source="../media/send-feedback-from-progressive-web-app.png" alt-text="从用户发送PWA" lightbox="../media/send-feedback-from-progressive-web-app.png":::
@@ -592,4 +592,4 @@ Chromium浏览器正在测试和塑造此功能。  有关详细信息（包括�
 [GithubWicgPwaUrlHandlerBlobMainExplainerMd]: https://github.com/WICG/pwa-url-handler/blob/main/explainer.md "作为 URL 处理程序的 PWA |GitHub"  
 
 [WebDevFileHandling]: https://web.dev/file-handling "让 Web 应用程序成为文件处理程序|web.dev"  
-[WebDevWindowControlsOverlay]: https://web.dev/window-controls-overlay "自定义窗口控件覆盖PWA标题栏|web.dev"  
+[WebDevWindowControlsOverlay]: https://web.dev/window-controls-overlay "自定义用户标题栏PWA窗口控件|web.dev"  

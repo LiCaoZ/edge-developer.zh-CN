@@ -1,6 +1,6 @@
 ---
-description: 使用安装者自动执行和测试Microsoft Edge
-title: Puppeteer
+description: 使用安装者自动执行和测试Microsoft Edge。
+title: Puppeteer 概述
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/06/2021
@@ -8,18 +8,18 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge， Web 开发， 开发人员， 工具， 自动化， 测试
-ms.openlocfilehash: b4631ba56aff7de9eb3147cc2f53530e0b5d7f1f9e309d4a816e9d6bcd5429f3
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: ac1f159e18b7fbabd039350722d8050c89fa5e57
+ms.sourcegitcommit: 22acb7a57d9d8e21e4348aa699c1a2c53618e93d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11803754"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "11936796"
 ---
-# <a name="puppeteer-overview"></a>Puppeteer 概述  
+# <a name="puppeteer-overview"></a>Puppeteer 概述
 
-[部署程序][|::ref1::|Main]是一[个节点][NodejsMain]库，可提供高级 API，以使用[DevTools][GithubChromedevtoolsProtocol]协议Microsoft Edge \(Chromium\) 控制应用程序。  默认情况下，安装 [者启动无][WikiHeadlessBrowser] 头浏览器。  无头浏览器不显示 UI，因此您必须使用命令行。  还可以将安装工具配置为运行完整 \(无头\) Microsoft Edge。  
+[部署程序][|::ref1::|Main]是一[个节点][NodejsMain]库，它提供高级 API，以使用[DevTools][GithubChromedevtoolsProtocol]协议Microsoft Edge \ (Chromium\) 应用程序。  默认情况下，安装 [者启动无][WikiHeadlessBrowser] 头浏览器。  无头浏览器不显示 UI，因此您必须使用命令行。  还可以将安装工具配置为运行完整 \ (无头\) Microsoft Edge。  
 
-默认情况下，当你安装工具时，安装程序会下载最新版本的[Chromium][ChromiumHome]，开放源代码浏览器Microsoft Edge[也基于 构建][MicrosoftBlogsWindowsExperience20181206]。  如果已安装Microsoft Edge \(Chromium\) ，可以使用[用户核心][PuppeteerApivscore]。  `puppeteer-core` 是启动现有浏览器安装的一个轻型版本，如 Microsoft Edge \(Chromium\) 。  若要下载Microsoft Edge \(Chromium\) ，请导航到"Microsoft Edge[预览体验成员频道"。][MicrosoftedgeinsiderDownload]  
+默认情况下，当你安装工具时，安装程序会下载最新版本的[Chromium][ChromiumHome]，开放源代码浏览器Microsoft Edge[也基于][MicrosoftBlogsWindowsExperience20181206]构建。  如果已安装Microsoft Edge \ (Chromium\) ，可以使用[用户核心][PuppeteerApivscore]。  `puppeteer-core` 是启动现有浏览器安装的轻型版本，如 Microsoft Edge \ (Chromium\) 。  若要下载Microsoft Edge \ (Chromium\) ，请导航到"Microsoft Edge[预览体验成员频道"。][MicrosoftedgeinsiderDownload]  
 
 ## <a name="installing-puppeteer-core"></a>安装安装程序核心  
 
@@ -38,7 +38,7 @@ yarn add puppeteer-core
 > [!NOTE]
 > `puppeteer-core` 依赖于 Node v8.9.0 或更高版本。  下面的示例使用仅在 Node `async` / `await` v7.6.0 或更高版本中支持它。  从 `node -v` 命令行运行，以确保具有兼容的 Node.js。  
 
-`puppeteer-core` 其他浏览器测试框架（如 [WebDriver）的用户应该很熟悉][WebdriverChromiumMain]。  创建浏览器实例，打开一个页面，然后使用一个百年工具 API 对其进行操作。  在下面的代码示例中，启动 `puppeteer-core` Microsoft Edge \(Chromium\) ，导航到 `https://www.microsoftedgeinsider.com` ，将屏幕截图保存为 `example.png` 。  
+`puppeteer-core` 其他浏览器测试框架（如 [WebDriver）的用户应该很熟悉][WebdriverChromiumMain]。  创建浏览器实例，打开一个页面，然后使用一个百年工具 API 对其进行操作。  在下面的代码示例中，启动 `puppeteer-core` Microsoft Edge \ (Chromium\) ，导航到 `https://www.microsoftedgeinsider.com` ，将屏幕截图保存为 `example.png` 。  
 
 复制以下代码段并将其另存为 `example.js` 。  
 
@@ -57,7 +57,7 @@ const puppeteer = require('puppeteer-core');
 })();
 ```  
 
-更改为 `executablePath` 指向安装 Microsoft Edge \(Chromium\) 。  例如，在 macOS 上 `executablePath` ，Microsoft Edge Canary 应设置为 `/Applications/Microsoft\ Edge\ Canary.app/` 。  若要查找 ，请导航到 并复制该页面上的可执行路径，或者使用下列命令之一安装边缘 `executablePath` `edge://version` 路径包。 **** [][npmEdgePaths]  
+更改为 `executablePath` 指向安装 \Microsoft Edge \ (Chromium\) 。  例如，在 macOS 上 `executablePath` ，Microsoft Edge Canary 应设置为 `/Applications/Microsoft\ Edge\ Canary.app/` 。  若要查找 ，请导航到 并复制该页面上的可执行路径，或者使用下列命令之一安装边缘 `executablePath` `edge://version` 路径包。 **** [][npmEdgePaths]  
 
 ```shell
 npm i edge-paths
@@ -67,7 +67,7 @@ npm i edge-paths
 yarn add edge-paths
 ```  
  
-下面的代码示例使用[边缘][npmEdgePaths]路径包以编程方式查找操作系统上安装 Microsoft Edge \(Chromium\) 的路径。
+下面的代码示例使用[边缘][npmEdgePaths]路径包以编程方式查找操作系统上安装 Microsoft Edge \ (Chromium\) 的路径。
 
 ```javascript
 const edgePaths = require("edge-paths");
@@ -78,7 +78,7 @@ const EDGE_PATH = edgePaths.getEdgePath();
 最后，在 `executablePath: EDGE_PATH` 中设置 `example.js` 。  保存更改。  
 
 > [!NOTE]
-> Microsoft Edge \(EdgeHTML\) 不能与 一起工作 `puppeteer-core` 。  你必须安装预览Microsoft Edge预览体验成员[频道][MicrosoftedgeinsiderDownload]，以继续按照此示例操作。  
+> Microsoft Edge \ (EdgeHTML\) 不能与 一起工作 `puppeteer-core` 。  你必须安装预览Microsoft Edge预览体验[成员频道][MicrosoftedgeinsiderDownload]，以继续按照此示例操作。  
 
 现在， `example.js` 从命令行运行。  
 
@@ -86,7 +86,7 @@ const EDGE_PATH = edgePaths.getEdgePath();
 node example.js
 ```  
 
-`puppeteer-core` 启动Microsoft Edge，导航到 `https://www.microsoftedgeinsider.com` ，并保存网页的屏幕截图。  使用[page.setViewport 自定义屏幕截图 () 。 ][PuppeteerApipagesetviewport]  
+`puppeteer-core` 启动Microsoft Edge，导航到 `https://www.microsoftedgeinsider.com` ，并保存网页的屏幕截图。  使用[page.setViewport () 自定义屏幕截图 () 。 ][PuppeteerApipagesetviewport]  
 
 :::image type="complex" source="./media/puppeteer-example.png" alt-text="由example.png生成的example.js" lightbox="./media/puppeteer-example.png":::
    `example.png`生成的文件 `example.js`  
@@ -96,9 +96,9 @@ node example.js
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
-开发人员Microsoft Edge团队希望听到你有关使用和发送设备的反馈 `puppeteer-core` Microsoft Edge。  使用**开发人员工具**或推文Microsoft Edge中的"发送@EdgeDevTools图标，让Microsoft Edge团队[][TwitterIntentTweetEdgedevtools]了解你的想法。  
+开发人员Microsoft Edge团队希望听到你有关使用 Feedbackeer、和 Microsoft Edge `puppeteer-core` 的反馈。  使用**开发人员工具**或推文Microsoft Edge中的"发送反馈["@EdgeDevTools][TwitterIntentTweetEdgedevtools]让Microsoft Edge团队了解你的想法。  
 
-:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的发送反馈图标" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的“发送反馈”图标" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
    Microsoft Edge DevTools 中的**发送反馈**图标  
 :::image-end:::  
 
@@ -124,7 +124,7 @@ node example.js
 
 [GithubChromedevtoolsProtocol]: https://chromedevtools.github.io/devtools-protocol "Chrome DevTools 协议查看器|GitHub"  
 
-[MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge：通过更多开放源代码协作功能改善|Microsoft 体验博客"  
+[MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge：通过更多开放源代码协作网站改善|Microsoft 体验博客"  
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "下载 Microsoft Edge 预览体验成员频道"  
 
