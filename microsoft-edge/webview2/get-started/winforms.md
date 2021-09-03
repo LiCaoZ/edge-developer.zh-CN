@@ -23,7 +23,7 @@ ms.locfileid: "11934070"
 
 安装以下必备组件列表，然后再继续。
 
-*   [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2]运行时或任何 Microsoft Edge Insider [ (preview) Channel (][MicrosoftedgeinsiderDownload] Beta、Dev 或 Canary) 安装在受支持的操作系统 \ (当前 Windows 10、Windows 8.1 和 Windows 7\) 上。  
+*   [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2]运行时或任何 Microsoft Edge Insider [ (preview) Channel (][MicrosoftedgeinsiderDownload] Beta、Dev 或 Canary) 安装在受支持的操作系统 \(当前 Windows 10、Windows 8.1 和 Windows 7\) 上。  
     
     > [!NOTE]
     > WebView 团队建议使用 Canary 通道，最低要求版本为 82.0.488.0。  
@@ -52,7 +52,7 @@ ms.locfileid: "11934070"
 
 使用 NuGet 将 WebView2 SDK 添加到项目中。  
 
-1.  将鼠标悬停在项目中，打开上下文菜单 \ (右键单击\) ，然后选择"管理NuGet**包..."。**  
+1.  将鼠标悬停在项目中，打开上下文菜单 \(右键单击\) ，然后选择"管理NuGet**包..."。**  
     
     :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="管理NuGet包":::
        管理NuGet包

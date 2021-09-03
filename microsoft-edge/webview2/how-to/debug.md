@@ -25,7 +25,7 @@ WebView2 Microsoft Edge的目标是将 Web 和本机应用开发功能和工具�
 
 *   选择 `F12`。  
 *   选择 `Ctrl` + `Shift` + `I` 。  
-*   打开上下文菜单 \ (右键单击\) 并选择 `Inspect` 。  
+*   打开上下文菜单 \(右键单击\) 并选择 `Inspect` 。  
     
 有关详细信息，请导航到["DevTools 概述"。][DevtoolsGuideChromiumMain]  
 
@@ -38,7 +38,7 @@ WebView2 Microsoft Edge的目标是将 Web 和本机应用开发功能和工具�
 Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具。  在Visual Studio部分中，主要焦点是调试 WebView 控件，但其他调试方法Visual Studio一样可用。  使用以下过程仅调试 Win32 应用或 Office中的 Web 和本机代码。  
 
 > [!IMPORTANT]
-> 当你在附加了本机调试Visual Studio中调试应用时，选择可能会触发本机调试器 `F12` ，而不是开发人员工具。  选择 `Ctrl` + `Shift` + `I` ，或使用上下文菜单 \ (右键单击\) 以避免这种情况。  
+> 当你在附加了本机调试Visual Studio中调试应用时，选择可能会触发本机调试器 `F12` ，而不是开发人员工具。  选择 `Ctrl` + `Shift` + `I` ，或使用上下文菜单 \(右键单击\) 以避免这种情况。  
 
 开始之前，请确保满足以下要求。  
 
@@ -68,7 +68,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
         :::image-end:::  
         
 1.  为 WebView2 应用启用脚本调试。  
-    1.  在 WebView2 项目中，打开上下文菜单 \ (右键单击\) ，然后选择"属性 **"。**  
+    1.  在 WebView2 项目中，打开上下文菜单 \(右键单击\) ，然后选择"属性 **"。**  
     1.  在"**配置属性"下**，选择 **"调试"。**  
     1.  在调试**器类型下**，选择 **"JavaScript (WebView2) "。 **  
         

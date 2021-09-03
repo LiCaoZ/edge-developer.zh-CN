@@ -124,7 +124,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 ## Enable Composited Layers in 3D View
 <!-- on by default in 94 -->
 
-您可以将 Layers 与 z 索引和文档对象模型 \ (DOM\) 一起可视化。  此功能可帮助你进行调试，而无需频繁切换上下文。  你发现减少上下文切换是一个主要的痛点。  不能始终弄清楚你编写的代码对 Web 应用有何影响。  为了获得全面的视觉调试体验，现在已将 3D View 和复合层组合到一起。
+您可以将 Layers 与 z 索引和文档对象模型 \(DOM\) 一起可视化。  此功能可帮助你进行调试，而无需频繁切换上下文。  你发现减少上下文切换是一个主要的痛点。  不能始终弄清楚你编写的代码对 Web 应用有何影响。  为了获得全面的视觉调试体验，现在已将 3D View 和复合层组合到一起。
 
 若要使用**复合层**，请完成以下步骤。
 
@@ -149,7 +149,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 1.  打开“**网络**”窗格。
 1.  查找要更改和重新发送的网络请求。
-1.  打开上下文菜单 \ (右键单击\) ，然后选择编辑 **和重播**。
+1.  打开上下文菜单 \(右键单击\) ，然后选择编辑 **和重播**。
 1.  当**网络控制台**打开时，编辑网络请求信息。
 1.  选择 **"发送"。**
 
@@ -208,7 +208,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 这是从版本 89 Microsoft Edge的试验，自版本 94 起是一项常规功能。<!-- which release changed this from Experimental?-->
 
-现在，可以使用新的"更多工具"\ (**** `+` \) 图标打开更多工具。  打开 **Enable + button tab menus to open more tools** 试验并重新加载 DevTools 后，DevTools 顶部选项卡组的右侧将显示一个加号 \(`+`\)。  若要显示可添加到选项卡栏的其他工具的列表，请选择"更多工具"\ (**** `+` \) 图标。
+现在，可以使用新的"更多工具"\(**** `+` \) 图标打开更多工具。  打开 **Enable + button tab menus to open more tools** 试验并重新加载 DevTools 后，DevTools 顶部选项卡组的右侧将显示一个加号 \(`+`\)。  若要显示可添加到选项卡栏的其他工具的列表，请选择"更多工具"\(**** `+` \) 图标。
 
 :::image type="complex" source="../media/experiments-more-tools-button.msft.png" alt-text="顶部窗格中的更多工具" lightbox="../media/experiments-more-tools-button.msft.png":::
    顶部窗格中的**更多工具**
@@ -244,7 +244,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 #### <a name="displaying-persistent-overlays-on-flexbox-layouts-with-the-inspect-tool"></a>使用 Inspect 工具在 Flexbox 布局上显示永久性覆盖
 
-**检查**工具提供了一种快速识别和可视化网站 CSS 弹性框布局的方法，通过将鼠标悬停该布局上方来实现这一点。  选择 **DevTools** (左上角的"检查 ![ ](../media/inspect-icon.msft.png) \ (检查 \) "图标。  然后，在调试网站时，将鼠标悬停在弹性容器上方以在其周围显示轮廓。
+**检查**工具提供了一种快速识别和可视化网站 CSS 弹性框布局的方法，通过将鼠标悬停该布局上方来实现这一点。  选择 **DevTools** (左上角的"检查 ![ ](../media/inspect-icon.msft.png) \(检查 \) "图标。  然后，在调试网站时，将鼠标悬停在弹性容器上方以在其周围显示轮廓。
 
 :::image type="complex" source="../media/flexbox-hover.msft.png" alt-text="使用检查工具显示弹性框容器" lightbox="../media/flexbox-hover.msft.png":::
    使用**检查**工具显示弹性框容器

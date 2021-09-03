@@ -206,7 +206,7 @@ JavaScript 调试现已内置到 Visual Studio Code。  从版本 1.5.7 Visual S
 
     安装 Microsoft Edge工具扩展后，选择"检查"时Microsoft Edge将打开 DevTools Visual Studio Code。 ****
 
-    :::image type="complex" source="./media/edge-devtools-for-vscode-tools-inside.png" alt-text=""检查"按钮Microsoft Edge开发人员工具Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-tools-inside.png":::
+    :::image type="complex" source="./media/edge-devtools-for-vscode-tools-inside.png" alt-text="检查按钮Microsoft Edge开发人员工具Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-tools-inside.png":::
        "**检查"** 按钮Microsoft Edge开发人员工具Visual Studio Code :::image-end:::
 
     现在，你可以检查 DOM、更改 CSS，并查看在浏览器中运行的项目的网络请求，而无需离开Visual Studio Code。

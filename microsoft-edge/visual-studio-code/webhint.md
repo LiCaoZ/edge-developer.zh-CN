@@ -34,7 +34,7 @@ ms.locfileid: "11936408"
 <!-- ====================================================================== -->
 ## <a name="configuring-webhint-in-visual-studio-code"></a>在网站中配置 webhint Visual Studio Code
 
-此扩展使用默认配置[json][GithubWebhintioIndexjson]文件，用于激活 HTML、CSS、模板系统 \ (JSX/TSX、Angular 等的提示和分析程序\) 、JavaScript/TypeScript 等。
+此扩展使用默认配置[json][GithubWebhintioIndexjson]文件，用于激活 HTML、CSS、模板系统 \(JSX/TSX、Angular 等的提示和分析程序\) 、JavaScript/TypeScript 等。
 
 ```json
 {

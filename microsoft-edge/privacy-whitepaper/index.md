@@ -289,7 +289,7 @@ Microsoft Edge 提供了具有吸引力且以用户为中心的新选项卡页�
 
 若要增强新选项卡页面的加载时间，可在后台加载 Microsoft 新选项卡页面，以使其速度更快。 如果允许 Cookie，加载的内容可能包含 Cookie。 若要禁用后台加载 Microsoft 新选项卡页面，请导航到 `edge://settings/newTabPage` ，然后关闭设置“预加载新选项卡页面，以获得更快的体验”****。 
 
-:::image type="complex" source="./media/n-t-p1.png" alt-text="“新建选项卡”页面" lightbox="./media/n-t-p1.png":::
+:::image type="complex" source="./media/n-t-p1.png" alt-text="新建选项卡页面" lightbox="./media/n-t-p1.png":::
    “新建选项卡”页面  
 :::image-end:::  
 
@@ -471,7 +471,7 @@ SmartScreen 服务存储有关信誉检查的数据，并生成已知恶意 URL 
 
 ## <a name="sync"></a>同步  
 
-使用 Microsoft 帐户登录到 Microsoft Edge，可在所有登录的 Microsoft Edge 版本之间同步浏览数据。  你可以同步浏览历史记录、收藏夹、设置、表单填充数据 \ (地址等\)、密码、扩展、打开的选项卡和收集。  必须允许在 Microsoft Edge 中启用同步，并且可能会单独启用或禁用每个同步的数据类型。  收藏夹包括先前在旧版 Microsoft Edge 中设置的任何选项卡，它与其他收藏夹一起同步。  从 Microsoft Edge 的一个已登录版本中删除或修改收藏夹或其他数据，将同步到已启用同步的 Microsoft Edge 的所有其他已登录版本。  若要管理同步配置，请转到 `edge://settings/profiles/sync`。  你的同步设置可能由组织进行管理。
+使用 Microsoft 帐户登录到 Microsoft Edge，可在所有登录的 Microsoft Edge 版本之间同步浏览数据。  你可以同步浏览历史记录、收藏夹、设置、表单填充数据 \(地址等\)、密码、扩展、打开的选项卡和收集。  必须允许在 Microsoft Edge 中启用同步，并且可能会单独启用或禁用每个同步的数据类型。  收藏夹包括先前在旧版 Microsoft Edge 中设置的任何选项卡，它与其他收藏夹一起同步。  从 Microsoft Edge 的一个已登录版本中删除或修改收藏夹或其他数据，将同步到已启用同步的 Microsoft Edge 的所有其他已登录版本。  若要管理同步配置，请转到 `edge://settings/profiles/sync`。  你的同步设置可能由组织进行管理。
 
 :::image type="complex" source="./media/sync.png" alt-text="将同步设置设为开启的图像" lightbox="./media/sync.png":::
    同步设置已开启

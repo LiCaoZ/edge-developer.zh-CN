@@ -20,7 +20,7 @@ ms.locfileid: "11934296"
 
 ## <a name="publish-options-for-extensions"></a>发布扩展选项  
 
-所有扩展名作为带有后缀的特殊存档 \ (`.zip` \) 分发给 `.crx` 用户。  发布到加载项网站的Microsoft Edge作为文件 `.zip` 上载。  发布过程会自动将文件 `.zip` 转换为 `.crx` 文件。  
+所有扩展名作为带有后缀的特殊存档 \(`.zip` \) 分发给 `.crx` 用户。  发布到加载项网站的Microsoft Edge作为文件 `.zip` 上载。  发布过程会自动将文件 `.zip` 转换为 `.crx` 文件。  
 
 以下两种方案不需要你在加载项网站中Microsoft Edge扩展。  
 

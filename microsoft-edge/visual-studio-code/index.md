@@ -38,7 +38,7 @@ Visual Studio Code是一个轻型但功能强大的源代码编辑器。  Visual
 :::image-end:::
 
 若要安装 Microsoft Edge DevTools 扩展：
-1. In Visual Studio Code， navigate to **Extensions** \ (select `Ctrl` + `Shift` + `X` on Windows/Linux or `Command` + `Shift` + `X` on macOS\) .
+1. In Visual Studio Code， navigate to **Extensions** \(select `Ctrl` + `Shift` + `X` on Windows/Linux or `Command` + `Shift` + `X` on macOS\) .
 1. 在 Marketplace 中搜索扩展Microsoft Edge **Tools for VS Code，** 选择扩展，**然后选择安装**。
 
 :::image type="complex" source="./media/vscode-edge-tools-install.png" alt-text="安装 Microsoft Edge DevTools 扩展Visual Studio Code" lightbox="./media/vscode-edge-tools-install.png":::
@@ -71,7 +71,7 @@ Webhint 工具会检查代码的编码实践和常见错误。  Webhint 开放�
 :::image-end:::
 
 安装 Webhint 扩展：
-1. In Visual Studio Code， navigate to **Extensions** \ (select `Ctrl` + `Shift` + `X` on Windows/Linux or `Command` + `Shift` + `X` on macOS\) .
+1. In Visual Studio Code， navigate to **Extensions** \(select `Ctrl` + `Shift` + `X` on Windows/Linux or `Command` + `Shift` + `X` on macOS\) .
 1. 在 Marketplace 中搜索**Webhint 扩展**，选择该扩展，然后选择"安装 **"。**
 
 :::image type="complex" source="./media/visual-studio-code-extension-webhint.msft.png" alt-text="Webhint Visual Studio Code扩展" lightbox="./media/visual-studio-code-extension-webhint.msft.png":::

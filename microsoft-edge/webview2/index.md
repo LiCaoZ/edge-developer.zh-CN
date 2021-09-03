@@ -151,7 +151,7 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术\(HTML、
 
 ## <a name="supported-platforms"></a>受支持的平台  
 
-通用版本 \ (GA\) 或预览版的 WebView2 可用于以下编程环境。
+通用版本 \(GA\) 或预览版的 WebView2 可用于以下编程环境。
 
 *   Win32 C/C++ \(GA\)  
 *   .NET Framework 4.5 或更高版本  

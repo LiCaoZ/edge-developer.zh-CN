@@ -22,7 +22,7 @@ ms.locfileid: "11934033"
 ## <a name="step-0---set-up-development-environment"></a>步骤 0 - 设置开发环境 
 
 1. 按照设置开发环境的步骤 1-4 安装 Visual Studio、配置 NuGet 程序包源并安装 Windows App SDK Extension for Visual Studio。 [][WindowsAppsWinui3ConfigureYourDevEnvironment] 
-1. 安装安装在 Windows 10 版本 1803 \ (版本 17134\) 或更高版本上的[WebView][Webview2Installer] [Microsoft Edge (Chromium) 2][MicrosoftedgeinsiderDownload]运行时或任何非稳定通道。  有关更新Windows 10，请导航到Windows[更新： FAQ][MicrosoftSupport12373]。  
+1. 安装安装在 Windows 10 版本 1803 \(版本 17134\) 或更高版本上的[WebView][Webview2Installer] [Microsoft Edge (Chromium) 2][MicrosoftedgeinsiderDownload]运行时或任何非稳定通道。  有关更新Windows 10，请导航到Windows[更新： FAQ][MicrosoftSupport12373]。  
 1.  若要访问开发人员特定的所有Visual Studio功能，请打开[开发人员模式][WindowsUwpGetStartedEnableYourDeviceForDevelopment]。  
     
 ## <a name="step-1---create-project"></a>步骤 1 - 创建Project  
@@ -44,7 +44,7 @@ ms.locfileid: "11934033"
     *   **目标版本****：Windows 10版本 1903 (版本 18362**) 或更高版本  
     *   **最低版本****：Windows 10版本 1803 (版本 17134) **  
         
-    :::image type="complex" source="./media/winui-getting-started-project-type.png" alt-text=""新建通用Windows平台Project"对话框，包含"目标版本"和"最低版本"的选定值。" lightbox="./media/winui-getting-started-project-type.png":::
+    :::image type="complex" source="./media/winui-getting-started-project-type.png" alt-text="新建通用Windows平台Project对话框，包含目标版本和最低版本的选定值。" lightbox="./media/winui-getting-started-project-type.png":::
        "新建通用Windows平台Project"对话框，包含"目标版本"和"最低版本"的选定值。
     :::image-end:::  
     
