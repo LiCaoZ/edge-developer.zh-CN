@@ -298,7 +298,7 @@ CSS **概述** 工具现在显示页面上具有颜色对比度问题的元素�
 [DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]： ../../../experimental-features/index.md#enable-new-css-grid-debugging-features "Emulation： Support dual screen mode - Experimental features |Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableNetworkConsole]： ../../../experimental-features/index.md#enable-network-console "Enable Network Console - Experimental features |Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableSourceOrderViewer]： ../../../experimental-features/index.md#enable-source-order-viewer "Enable Source Order Viewer - Experimental features |Microsoft Docs&quot; [DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]： ../../../experimental-features/index.md#testing-on-foldable-and-dual-screen-devices &quot;Testing on foldable and dual-screen devices - Experimental features |Microsoft Docs"  
-[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]： ../../../experimental-features/index.md#turning-on-experimental-features "打开实验性功能 - 实验|Microsoft Docs"  
+[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]： ../../../experimental-features/index.md#turn-on-experimental-features "打开实验性功能 - 实验|Microsoft Docs"  
 [DevtoolsConsoleApiTable]： ../../../console/api.md#table "table - 控制台 API |Microsoft Docs"  
 [DevtoolsCoverageIndex]： ../../../coverage/index.md "Find unused JavaScript and CSS code with the Coverage tab in Microsoft Edge DevTools |Microsoft Docs"  
 [DevtoolsCssGrid]： ../../../css/grid.md "Inspect CSS Grid |Microsoft Docs"  

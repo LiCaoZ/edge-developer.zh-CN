@@ -337,7 +337,7 @@ Chromium 问题 [#1041830][CR1041830]
 [DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"  
 [DevtoolsCommandMenu]: ../../../command-menu.md "使用 Microsoft Edge 开发工具命令菜单运行命令"
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "设置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"
-[DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features/index.md#turning-on-experimental-features "打开实验性功能 - 实验|Microsoft Docs"  
+[DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features/index.md#turn-on-experimental-features "打开实验性功能 - 实验|Microsoft Docs"  
 [DevtoolsIssues]: ../../../issues/index.md "使用问题工具查找并修复问题 | Microsoft Docs"
 [DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles]: ../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files "使用编辑器窗格查看或编辑文件 - 源面板概述|Microsoft Docs"  
 [DevtoolsNetworkIndexLogActivity]: ../../../network/index.md#log-network-activity "记录网络活动 - 在 DevTools Microsoft Edge中检查网络|Microsoft Docs"

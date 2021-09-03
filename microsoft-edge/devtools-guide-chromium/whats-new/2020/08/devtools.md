@@ -477,7 +477,7 @@ Chromium问题[：#1067184][CR1067184]
 [DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]： ../../../experimental-features/index.md#emulation-support-dual-screen-mode "Emulation： Support dual screen mode - Experimental features |Microsoft Docs"  
 [DevtoolsExperimentalFeaturesSourceOrderViewer]： ../../../experimental-features/index.md#source-order-viewer "Source Order Viewer - Experimental features |Microsoft Docs"
 <!--  [DevtoolsExperimentalFeaturesTestOnFoldableDualScreenDevices]: ../../../experimental-features/index.md#test-on-foldable-and-dual-screen-devices "Test on foldable and dual-screen devices - Experimental features | Microsoft Docs"  -->  
-[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]： ../../../experimental-features/index.md#turning-on-experimental-features "Turning experimental features - Experimental features |Microsoft Docs"  
+[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]： ../../../experimental-features/index.md#turn-on-experimental-features "Turning experimental features - Experimental features |Microsoft Docs"  
 [DevtoolsMediaPanelIndex]： ../../../media-panel/index.md "View and debug media players information |Microsoft Docs"  
 
 [DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "如何处理接缝 - 双屏幕设备简介| Microsoft Docs"  
