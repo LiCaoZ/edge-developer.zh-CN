@@ -62,7 +62,7 @@ ms.locfileid: "11936422"
 
 选择**启动实例**将打开浏览器窗口，Microsoft Edge开发人员工具Visual Studio Code。
 
-:::image type="complex" source="./media/edge-devtools-for-vscode-launch-instance.png" alt-text="选择"启动实例"以在 Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-launch-instance.png":::
+:::image type="complex" source="./media/edge-devtools-for-vscode-launch-instance.png" alt-text="选择启动实例以在 Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-launch-instance.png":::
    选择 **"启动实例**"以在浏览器中打开Visual Studio Code
 :::image-end:::
 
@@ -120,7 +120,7 @@ ms.locfileid: "11936422"
 
     The **Microsoft Edge Tools： Targets** panel now displays two buttons： Launch **Instance** and Generate **launch.json**.
 
-    :::image type="complex" source="./media/edge-devtools-for-vscode-targets-buttons.png" alt-text=""Microsoft Edge工具： 目标"面板显示"启动实例"和"生成launch.js打开"按钮" lightbox="./media/edge-devtools-for-vscode-targets-buttons.png":::
+    :::image type="complex" source="./media/edge-devtools-for-vscode-targets-buttons.png" alt-text="Microsoft Edge工具： 目标面板显示启动实例和生成launch.js打开按钮" lightbox="./media/edge-devtools-for-vscode-targets-buttons.png":::
        the **Microsoft Edge Tools： Targets** panel displays Launch **Instance** and Generate **launch.json** buttons
     :::image-end:::
 
@@ -199,7 +199,7 @@ JavaScript 调试现已内置到 Visual Studio Code。  从版本 1.5.7 Visual S
 1. 选择 **边缘**。
     在调试工具栏上，注意" **检查"** 按钮。
 
-    :::image type="complex" source="./media/edge-devtools-for-vscode-inspect-button.png" alt-text="调试工具栏上的"检查"按钮" lightbox="./media/edge-devtools-for-vscode-inspect-button.png":::
+    :::image type="complex" source="./media/edge-devtools-for-vscode-inspect-button.png" alt-text="调试工具栏上的检查按钮" lightbox="./media/edge-devtools-for-vscode-inspect-button.png":::
        调试 **工具栏** 上的"检查"按钮 :::image-end:::
 
 1. 选择 **"检查**"以Microsoft Edge开发人员工具Visual Studio Code。

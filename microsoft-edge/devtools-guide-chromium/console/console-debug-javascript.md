@@ -55,7 +55,7 @@ ms.locfileid: "11936675"
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/console-debug-network-error-code-line.msft.png" alt-text="选择指向发生错误的网页和代码行的链接，以打开"源"工具" lightbox="../media/console-debug-network-error-code-line.msft.png":::
+      :::image type="complex" source="../media/console-debug-network-error-code-line.msft.png" alt-text="选择指向发生错误的网页和代码行的链接，以打开源工具" lightbox="../media/console-debug-network-error-code-line.msft.png":::
          选择指向发生错误的网页和代码行的链接，以打开 **"源"** 工具 :::image-end:::  
    :::column-end:::
    :::column span="":::

@@ -510,7 +510,7 @@ Chromium浏览器正在测试和塑造此功能。  有关详细信息（包括�
 1.  将鼠标悬停在你的应用上。  
 1.  打开上下文菜单 \(右键单击\) 然后在登录时**选择"启动应用"。**  
     
-    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="在"开始"菜单中登录功能时，使用上下文菜单Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
+    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="在开始菜单中登录功能时，使用上下文菜单Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
        使用上下文菜单在用户登录功能时打开"开始 **"Microsoft Edge**  
     :::image-end:::  
     

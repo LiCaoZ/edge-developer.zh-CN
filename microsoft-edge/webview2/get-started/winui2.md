@@ -60,7 +60,7 @@ ms.locfileid: "11934162"
 
 1.  在应用模板列表中，选择"空白**应用 (通用Windows) "。 **
 
-    :::image type="complex" source="media/winui2-getting-started-create-project.png" alt-text=""创建新项目"对话框" lightbox="media/winui2-getting-started-create-project.png":::
+    :::image type="complex" source="media/winui2-getting-started-create-project.png" alt-text="创建新项目对话框" lightbox="media/winui2-getting-started-create-project.png":::
        " **新建项目"** 对话框
     :::image-end:::
 
@@ -68,7 +68,7 @@ ms.locfileid: "11934162"
 
 1.  在 **"Project**名称"文本框中，输入项目名称，例如 `UWPSampleProject` 。
 
-    :::image type="complex" source="media/winui2-getting-started-config-new-project.png" alt-text=""配置新项目"对话框，用于"空白应用 (通用Windows) "" lightbox="media/winui2-getting-started-config-new-project.png":::
+    :::image type="complex" source="media/winui2-getting-started-config-new-project.png" alt-text="配置新项目对话框，用于空白应用 (通用Windows)" lightbox="media/winui2-getting-started-config-new-project.png":::
        "**为空白应用配置**新项目"对话框** (通用Windows) **
     :::image-end:::
 

@@ -33,7 +33,7 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="下面板中的控制台，其上方打开"元素"工具" lightbox="../media/console-intro-console-panel.msft.png":::
+      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="下面板中的控制台，其上方打开元素工具" lightbox="../media/console-intro-console-panel.msft.png":::
          **下** 面板中的控制台，其上方打开 **"元素** "工具  
       :::image-end:::  
    :::column-end:::
@@ -54,7 +54,7 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
 
 从 DevTools **中** ，在 Web 中搜索控制台错误字符串。  在 **控制台**中，错误消息在 **"Web"** 按钮上显示"搜索此消息"，显示为放大镜。  When you select the **Search for this message on the Web** button， a new tab opens in the browser and shows search results for the error string.
 
-:::image type="complex" source="../media/search-console-icon.msft.png" alt-text="**Console 中错误消息上的"在 Web 上搜索此消息"按钮" lightbox="../media/search-console-icon.msft.png":::
+:::image type="complex" source="../media/search-console-icon.msft.png" alt-text="Console 中错误消息上的在 Web 上搜索此消息按钮" lightbox="../media/search-console-icon.msft.png":::
    控制台 **错误消息上的"在 Web** 上搜索此消息" **按钮**
 :::image-end:::
 
