@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 8e7178395fb928b3d1bf5e59411d55d4a4567a5f
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.openlocfilehash: 03a6bc05b796b6c6c531c3fbb566aff43a3441ba
+ms.sourcegitcommit: 22acb7a57d9d8e21e4348aa699c1a2c53618e93d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893133"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "11936718"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -39,9 +39,9 @@ ms.locfileid: "11893133"
 
 焦点模式是一个试验界面，允许你根据自己的调试方案将不同工具组合在一起。  左侧显示的新“**活动栏**”包括预定义的工具组，如“**布局**”和“**调试**”。  若要自定义每个工具组，请使用“**关闭**”(`X`) 图标关闭工具，或使用“**更多工具**”(`+`) 图标添加新工具。  
 
-若要启用试验，请导航至“[启用试验功能][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]”，然后选择“**焦点模式和 DevTools 工具提示**”和“**启用 + 按钮选项卡菜单以打开更多工具**”旁边的复选框。  有关此功能的详细信息，或者要用问题和想法进行评论，请导航到 [DevTools：焦点模式 UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer]。  
+若要启用试验，请导航至“[启用试验功能][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]”，然后选择“**焦点模式和 DevTools 工具提示**”和“**启用 + 按钮选项卡菜单以打开更多工具**”旁边的复选框。  有关此功能的详细信息，或者要用问题和想法进行评论，请导航到 [DevTools: 焦点模式 UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer]。  
 
-:::image type="complex" source="../../media/2021/02/focus-mode.msft.png" alt-text="显示活动栏" lightbox="../../media/2021/02/focus-mode.msft.png":::
+:::image type="complex" source="../../media/2021/02/focus-mode.msft.png" alt-text="显示“活动栏”" lightbox="../../media/2021/02/focus-mode.msft.png":::
    显示“**活动栏**”  
 :::image-end:::  
 
@@ -50,9 +50,9 @@ ms.locfileid: "11893133"
 <!-- Title: DevTools Tooltips  -->  
 <!-- Subtitle: Learn more about how to use DevTools with informative DevTools tooltips.  -->  
 
-DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  选择“**活动栏**”底部的“帮助”(`?`) 图标，以便在 DevTools 中切换工具提示。  当工具提示打开时，请将鼠标悬停在 DevTools 的每个概述区域上，以了解有关如何使用工具的更多信息。  若要启用试验，请导航至“[启用试验功能][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]”，然后选择“**焦点模式和 DevTools 工具提示**”和“**启用 + 按钮选项卡菜单以打开更多工具**”旁边的复选框。  有关此功能的详细信息，或者要用问题和想法进行评论，请导航到 [DevTools：焦点模式 UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer]。  
+DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  选择“**活动栏**”底部的“帮助”(`?`) 图标，以便在 DevTools 中切换工具提示。  当工具提示打开时，请将鼠标悬停在 DevTools 的每个概述区域上，以了解有关如何使用工具的更多信息。  若要启用试验，请导航至“[启用试验功能][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]”，然后选择“**焦点模式和 DevTools 工具提示**”和“**启用 + 按钮选项卡菜单以打开更多工具**”旁边的复选框。  有关此功能的详细信息，或者要用问题和想法进行评论，请导航到 [DevTools: 焦点模式 UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer]。  
 
-:::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="选择活动栏中的帮助(?) 图标以显示工具提示" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
+:::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="选择“活动栏”中的“帮助”(?) 图标以显示工具提示" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
    选择“**活动栏**”中的“帮助”(`?`) 图标以显示工具提示  
 :::image-end:::  
 
@@ -72,7 +72,7 @@ DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  
     
 有关自定义和编辑快捷方式的详细信息，请导航到[在开发人员工具中自定义键盘快捷方式][DevtoolsCustomizeShortcuts]。  若要在 Chromium 开源项目中查看此功能的实时更新，请导航至问题 [174309][CR174309]。  
 
-:::image type="complex" source="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png" alt-text="在编辑模式下使用快捷方式在DevTools 设置的快捷方式上自定义键盘快捷方式" lightbox="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png":::
+:::image type="complex" source="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png" alt-text="在编辑模式下使用快捷方式在“DevTools 设置”的“快捷方式”上自定义键盘快捷方式" lightbox="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png":::
    在编辑模式下使用快捷方式在“[DevTools 设置][DevtoolsCustomizeIndexSettings]”的“快捷方式”上自定义键盘快捷方式  
 :::image-end:::  
 
@@ -98,7 +98,7 @@ DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png" alt-text="在 Microsoft Visual Studio Code 的输出下的DevTools 控制台中显示相同消息" lightbox="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png":::
+      :::image type="complex" source="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png" alt-text="在 Microsoft Visual Studio Code 的“输出”下的“DevTools 控制台”中显示相同消息" lightbox="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png":::
          在 Microsoft Visual Studio Code 的“输出”下的“DevTools 控制台”中显示相同消息  
       :::image-end:::  
    :::column-end:::
@@ -126,7 +126,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="布局窗格中的弹性框部分" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
+      :::image type="complex" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="“布局”窗格中的“弹性框”部分" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
          “**布局**”窗格中的“**弹性框**”部分  
       :::image-end:::  
    :::column-end:::
@@ -143,7 +143,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="选择一个网络请求，然后选择发起程序窗格" lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
+      :::image type="complex" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="选择一个网络请求，然后选择“发起程序”窗格" lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
          选择一个网络请求，然后选择“**发起程序**”窗格  
       :::image-end:::  
    :::column-end:::
@@ -163,12 +163,12 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/console-sidebar-default-levels-old.msft.png" alt-text="以前，如果打开控制台边栏并将鼠标悬停在默认级别上，它会突出显示" lightbox="../../media/2021/02/console-sidebar-default-levels-old.msft.png":::
+      :::image type="complex" source="../../media/2021/02/console-sidebar-default-levels-old.msft.png" alt-text="以前，如果打开控制台边栏并将鼠标悬停在“默认级别”上，它会突出显示" lightbox="../../media/2021/02/console-sidebar-default-levels-old.msft.png":::
          以前，如果打开**控制台边栏**并将鼠标悬停在“**默认级别**”上，它会突出显示  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/console-sidebar-default-levels-new.msft.png" alt-text="从 Microsoft Edge 90 开始，如果你选择控制台边栏并将鼠标悬停在默认级别上，它不会突出显示" lightbox="../../media/2021/02/console-sidebar-default-levels-new.msft.png":::
+      :::image type="complex" source="../../media/2021/02/console-sidebar-default-levels-new.msft.png" alt-text="从 Microsoft Edge 90 开始，如果你选择控制台边栏并将鼠标悬停在“默认级别”上，它不会突出显示" lightbox="../../media/2021/02/console-sidebar-default-levels-new.msft.png":::
          从 Microsoft Edge 90 开始，如果你选择**控制台边栏**并将鼠标悬停在“**默认级别**”上，它不会突出显示  
       :::image-end:::  
    :::column-end:::
@@ -209,7 +209,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 现在，“**控制台**”现在将显示更详细的[渐进式 Web 应用 (PWA)][ProgressiveWebAppsIndex] 可安装性警告消息，其中包含指向“[改进渐进式 Web 应用脱机支持检测][ChromeDeveloperBlogImprovedPwaOfflineDetection]”的链接。  
 
-:::image type="complex" source="../../media/2021/02/console-pwa-installability.msft.png" alt-text="控制台工具中的 PWA 可安装性警告" lightbox="../../media/2021/02/console-pwa-installability.msft.png":::
+:::image type="complex" source="../../media/2021/02/console-pwa-installability.msft.png" alt-text="“控制台”工具中的 PWA 可安装性警告" lightbox="../../media/2021/02/console-pwa-installability.msft.png":::
    “**控制台**”工具中的 PWA 可安装性警告  
 :::image-end:::  
 
@@ -236,12 +236,12 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png" alt-text="在上下文菜单中，选择远程地址空间" lightbox="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png":::
+      :::image type="complex" source="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png" alt-text="在上下文菜单中，选择“远程地址空间”" lightbox="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png":::
          在上下文菜单中，选择“**远程地址空间**”  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="请求表现在显示远程地址空间列" lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
+      :::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="“请求”表现在显示“远程地址空间”列" lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
          “请求”表现在显示“**远程地址空间**”列 :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -258,7 +258,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 “**应用程序**”工具中的“**Cookie**”窗格现在显示每个 Cookie 的 `SameParty` 属性。  `SameParty` 属性是一个新的布尔属性，用于指示在对相同[第一方集][GithubPrivacycgFirstPartySets]的起源的请求中是否包含 cookie。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1161427][CR1161427]。  
 
-:::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="Cookie窗格中的SameParty列" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
+:::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="“Cookie”窗格中的“SameParty”列" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
    “**Cookie**”窗格中的“**SameParty**”列  
 :::image-end:::  
 
@@ -313,7 +313,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "设置 - 自定义 Microsoft Edge 开发人员工具 | Microsoft Docs"  
 [DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "在开发人员工具中自定义键盘快捷方式 | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools]: ../../../experimental-features/index.md#enable--button-tab-menus-to-open-more-tools "启用“+”按钮选项卡菜单以打开更多工具 - 试验功能 | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../../../experimental-features/index.md#turn-on-experimental-features "打开试验功能 - 试验功能 | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../../../experimental-features/index.md#turning-on-experimental-features "打开试验功能 - 试验功能 | Microsoft Docs"  
 [DevtoolsNetworkReferenceAddRemoveColumns]: ../../../network/reference.md#add-or-remove-columns "添加或删除列 - 网络分析参考 | Microsoft Docs"  
 [DevtoolsNetworkReferenceDisplayInitiatorsDependencies]: ../../../network/reference.md#display-initiators-and-dependencies "显示发起程序和依赖项 - 网络分析参考 | Microsoft Docs"  
 
