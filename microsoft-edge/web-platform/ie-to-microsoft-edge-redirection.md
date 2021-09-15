@@ -1,22 +1,22 @@
 ---
-description: 将用户从Microsoft Edge移动到Internet Explorer
-title: 将用户从Microsoft Edge移动到Internet Explorer
+description: 将用户从Microsoft Edge移动Internet Explorer
+title: 将用户从Microsoft Edge移动Internet Explorer
 author: MSEdgeTeam
 ms.date: 11/13/2020
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， 兼容性， Web 平台， Internet Explorer
-ms.openlocfilehash: 687790a3fcbd912bf4d9896e5bd90c1d2be1159fbcc2db383b24689bd48df5b8
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: dd8db64311b60ff0c740776de94def88f22c2e96
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11798792"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976334"
 ---
-# <a name="moving-users-to-microsoft-edge-from-internet-explorer"></a>将用户从Microsoft Edge移动到Internet Explorer  
+# <a name="moving-users-to-microsoft-edge-from-internet-explorer"></a>将用户从Microsoft Edge移动Internet Explorer  
 
-许多新式网站具有的设计与 Internet Explorer \(IE\) 。  当 IE 用户访问不兼容的公共网站时，用户可能会收到一条消息。  该消息表明该网站与浏览器不兼容。  消息显示后，用户需要手动切换到新式浏览器。  为了最大限度地减少中断，从版本 84 开始，Microsoft Edge支持自动重定向用户的新功能。  当 IE 用户导航到与 IE 不兼容的网站时，Windows自动将用户重定向到Microsoft Edge。  To review the websites on the list， navigate to [Need Microsoft Edge list][MicrosoftEdgeNeededgeV1].
+许多新式网站具有的设计与 Internet Explorer \ (IE\) 。  当 IE 用户访问不兼容的公共网站时，用户可能会收到一条消息。  该消息表明该网站与浏览器不兼容。  消息显示后，用户需要手动切换到新式浏览器。  为了最大限度地减少中断，从版本 84 开始，Microsoft Edge自动重定向用户的新功能。  当 IE 用户导航到与 IE 不兼容的网站时，Windows自动将用户重定向到Microsoft Edge。  To review the websites on the list， navigate to [Need Microsoft Edge list][MicrosoftEdgeNeededgeV1].
 
 本文介绍以下概念。  
 
@@ -36,7 +36,7 @@ IE 兼容性列表仅在发生以下操作时添加网站。
 当重定向到Microsoft Edge时，用户将显示在下一个屏幕截图中的一次对话框。  该对话框为用户提供以下信息。  
 
 *   它说明了重定向网站的原因。  
-*   它会提示用户同意将浏览数据和首选项从 IE 复制到 Microsoft Edge。  
+*   它会提示用户同意将浏览数据和首选项从 IE 复制到Microsoft Edge。  
 
 :::row:::
    :::column span="":::
@@ -69,7 +69,7 @@ IE 兼容性列表仅在发生以下操作时添加网站。
 网站不兼容横幅为用户提供了以下详细信息。  
 
 *   建议用户切换到Microsoft Edge。  
-*   要设置为Microsoft Edge浏览器的优惠。  
+*   产品/Microsoft Edge设置为默认浏览器。  
 *   为用户提供浏览Microsoft Edge。    
     
 将网站从 Internet Explorer Microsoft Edge 时，将发生以下操作之一。

@@ -7,17 +7,17 @@ ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用、PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
-ms.openlocfilehash: d6216f5659b60b64c294d859cd8d14cd4433290ee421712b35a3bdc68094833b
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: 渐进式 Web 应用，PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
+ms.openlocfilehash: 47c6f98329a1da67e0f2c1a8e6243250992fb599
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11799738"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976461"
 ---
 # <a name="progressive-web-apps-on-windows-overview"></a>渐进式 Web 应用Windows概述  
 
-[渐进式 Web 应用][MDNApps] \(PWA\) 提供对开放 Web 技术的访问权限，实现跨平台互操作性，并为用户提供为设备自定义的本机、类似应用的体验。 PWA 是逐步增强的网站[][AListApartUnderstandingProgressiveEnhancement]，其功能与支持平台上的本机应用类似。 PWA 的特性结合了最好的 Web 和本机应用。  
+[渐进式 Web 应用][MDNApps] \ (PWA\) 提供对开放 Web 技术的访问权限，实现跨平台互操作性，并为用户提供为设备自定义的本机、类似应用的体验。 PWA 是逐步增强的网站[][AListApartUnderstandingProgressiveEnhancement]，其功能与支持平台上的本机应用类似。 PWA 的特性结合了最好的 Web 和本机应用。  
 
 :::row:::
     :::column:::
@@ -119,19 +119,19 @@ ms.locfileid: "11799738"
     :::column-end:::
 :::row-end:::  
 
-生成 \(或将) 网站转换为PWA以提升用户参与度。 增强功能包括推送通知、类似应用的集成和脱机支持。 继续构建开放 Web 上的受众，以便用户通过搜索和链接PWA发现你的网站。 最好使用 Web 服务器代码更新应用。  
+生成 \ (或将) 网站转换为PWA以提升用户参与度。 增强功能包括推送通知、类似应用的集成和脱机支持。 继续构建开放 Web 上的受众，以便用户通过搜索和链接PWA发现你的网站。 最好使用 Web 服务器代码更新应用。  
 
 ## <a name="pwas-on-microsoft-edge-chromium"></a>PA on Microsoft Edge (Chromium)   
 
-构建面向 Web 标准 API 的渐进式 Web 应用时，应用可能会跨平台和设备进行部署，并尽可能利用特定于设备的功能。 Microsoft Edge \(Chromium\) 中的 PA 将以下优势添加到您的网站。  
+构建面向 Web 标准 API 的渐进式 Web 应用时，应用可能会跨平台和设备进行部署，并尽可能利用特定于设备的功能。 Microsoft Edge \ (Chromium\) 中的 PA 将以下优势添加到您的网站。  
 
 *   你的应用基于基于标准的 Web 平台构建。  
 *   允许用户直接从浏览器安装应用。  
 *   允许用户在没有基于应用商店的部署或注册的情况下安装应用。  
     
-桌面 PBA 在任何支持 \Microsoft Edge \(Chromium\) [平台上都受支持](https://www.microsoft.com/edge)。 其中包括以下好处。
+桌面 PBA 在任何平台中均受支持Microsoft Edge \ (Chromium\) [可用](https://www.microsoft.com/edge)。 其中包括以下好处。
 
-*   可以直接在浏览器中使用导航栏中的 **"安装** "图标安装应用。  
+*   可以直接使用导航栏中的"安装" **图标在浏览器中** 安装应用。  
     
     :::image type="complex" source="./media/install-progressive-web-app-icon.png" alt-text="安装应用飞出和图标" lightbox="./media/install-progressive-web-app-icon.png":::
        安装应用飞出和图标  
@@ -145,7 +145,7 @@ ms.locfileid: "11799738"
     
 *   Web 通知已集成到 Windows通知系统  
 *   具有安装应用程序的浏览器配置文件的共享 Cookie 存储  
-*   使用"设置"和 **更多** \(\) 菜单访问其他浏览器功能，包括证书验证、网站权限、跟踪保护和 `...` 浏览器扩展  
+*   使用"设置"和更多 **\ (** \) 菜单访问其他浏览器功能，包括证书验证、网站权限、跟踪保护和 `...` 浏览器扩展  
 *   对调试[Microsoft Edge开发人员][DevtoolsProgressiveWebApps]工具的完全访问权限  
     
 > [!NOTE]
@@ -153,14 +153,14 @@ ms.locfileid: "11799738"
 
 ## <a name="requirements"></a>要求  
 
-若要作为PWA运行，服务器托管的 Web 应用应包含以下最低要求。  
+若要作为PWA运行，服务器托管的 Web 应用应满足以下最低要求。  
 
 :::row:::
    :::column span="1":::
       [HTTPS][WikiHttps]  
    :::column-end:::
    :::column span="2":::
-      通过为服务器或应用通信提供安全连接来保护用户。  服务工作人员和其他PWA技术仅适用于通过安全连接 \(或用于调试目的 `localhost` \) 。  
+      通过为服务器或应用通信提供安全连接来保护用户。  服务工作人员和其他PWA技术仅适用于通过安全连接 \ (或用于调试目的 `localhost` \) 。  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -227,24 +227,24 @@ ms.locfileid: "11799738"
       [Chromium PWA清单][WebDevGoodPwaChecklist]  
    :::column-end:::
    :::column span="2":::
-      根据 Google PWA检查表验证PWA数据。  
+      根据 Google PWA检查表验证PWA列表。  
    :::column-end:::
 :::row-end:::  
 
 > [!NOTE]
-> 若要将PWA[转换为Microsoft Store应用][MicrosoftDeveloperStore]，请导航到"渐进式 Web 应用[Microsoft Store"。][PwaChromiumMicrosoftStore]  
+> 若要将PWA[转换为Microsoft Store应用][MicrosoftDeveloperStore]，请导航到应用程序中的"渐进式[Web Microsoft Store"。][PwaChromiumMicrosoftStore]  
   
 ## <a name="see-also"></a>另请参阅  
 
-*   [为 PBA 提供一些支持][Davrous20191018MythBustingPwasNewEdgeEdition]  
+*   [百万亿美元 PBA][Davrous20191018MythBustingPwasNewEdgeEdition]  
 *   [渐进式 Web 应用的渐进路线图][CloudfourThinksProgressiveRoadmapYourWebApp]  
 *   [使用渐进 Web 应用的脱机 POS][MediumWebEdgeOfflinePostsProgressiveWebApps]  
 *   [PWA问答&][AaronGustafsonNotebookPwaQa]  
 *   [Web 上的百年][JoretegBlogBettingWeb]  
 *   [命名渐进式 Web 应用][Fberriman20170626NamingProgressiveWebApps]  
-*   [设计和生成不带框架的渐进式 Web (第 1) ][Smashingmagazine201907ProgressiveWebAppFrameworkPart1]  
+*   [设计和生成不带框架的渐进式 Web 应用 (第 1) ][Smashingmagazine201907ProgressiveWebAppFrameworkPart1]  
 *   [设计和生成不带框架的渐进式 Web 应用 (第 2) ][Smashingmagazine201907ProgressiveWebAppFrameworkPart2]  
-*   [设计和生成不带框架的渐进式 Web (第 3 部分) ][Smashingmagazine201907ProgressiveWebAppFrameworkPart3]  
+*   [设计和生成不带框架的渐进式 Web (第 3) ][Smashingmagazine201907ProgressiveWebAppFrameworkPart3]  
     
 <!-- links -->  
 
@@ -260,9 +260,9 @@ ms.locfileid: "11799738"
 [WindowsUWPGetStartedGuide]: /windows/uwp/get-started/universal-application-platform-guide.md "什么是通用 Windows 平台 (UWP) 应用？|Microsoft Docs"  
 [WindowsUWPLaunchResumeBackgroundTasks]: /windows/uwp/launch-resume/support-your-app-with-background-tasks.md "使用后台任务支持|Microsoft Docs"  
 [WindowsUWPPublishIndex]: /windows/uwp/publish/index.md "发布Windows应用和游戏|Microsoft Docs"  
-[WindowsUWPPublishDeveloperAccount]: /windows/uwp/publish/opening-a-developer-account.md "打开开发者帐户|Microsoft Docs"  
+[WindowsUWPPublishDeveloperAccount]: /windows/uwp/publish/opening-a-developer-account.md "打开开发人员帐户|Microsoft Docs"  
 
-[WindowsBlogsWelcomingPWAsEdgeWindows]: https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/#56z7mJwKsykfbR4I.97 "使渐进式 Web 应用Microsoft Edge和Windows 10 - Windows博客"  
+[WindowsBlogsWelcomingPWAsEdgeWindows]: https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/#56z7mJwKsykfbR4I.97 "将渐进式 Web 应用Microsoft Edge和Windows 10 - Windows博客"  
 [MicrosoftDeveloperEdgePlatformStatusBackgroundSync]: https://developer.microsoft.com/microsoft-edge/platform/status/backgroundsyncapi "后台同步 API - Microsoft Edge平台状态"  
 [MicrosoftDeveloperEdgePlatformStatusWebAppManifest]: https://developer.microsoft.com/microsoft-edge/platform/status/webapplicationmanifest "Web 应用清单 - Microsoft Edge平台状态"  
 [MicrosoftDeveloperEdgeToolsRemote]: https://developer.microsoft.com/microsoft-edge/tools/remote "即时测试"  
@@ -294,8 +294,8 @@ ms.locfileid: "11799738"
 [MDNPwaAdvantagesReEngageable]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Re-engageable "重新参与 - 渐进式 Web 应用优势"  
 [MDNPwaAdvantagesResponsive]: https://developer.mozilla.org/Apps/Progressive/Advantages#Responsive "响应式 - 渐进式 Web 应用优势"  
 [MDNPwaAdvantagesSafe]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Safe "保险箱 - 渐进式 Web 应用优势"  
-[MDNResponsiveImages]: https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images "响应式图像|MDN"  
-[MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "服务工作线程 API |MDN"  
+[MDNResponsiveImages]: https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images "响应式|MDN"  
+[MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "服务辅助 API |MDN"  
 [MDNSyncManager]: https://developer.mozilla.org/docs/Web/API/SyncManager "SyncManager |MDN"  
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Web 应用清单|MDN"  
 
@@ -315,9 +315,9 @@ ms.locfileid: "11799738"
 
 [Smashingmagazine201907ProgressiveWebAppFrameworkPart1]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-1 "设计和构建不带框架的渐进式 Web (第 1) "  
 
-[Smashingmagazine201907ProgressiveWebAppFrameworkPart2]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-2 "设计和生成不带框架的渐进式 Web (第 2) "  
+[Smashingmagazine201907ProgressiveWebAppFrameworkPart2]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-2 "设计和构建不带框架的渐进式 Web 应用程序 (第 2) "  
 
-[Smashingmagazine201907ProgressiveWebAppFrameworkPart3]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-3 "设计和构建不带框架的渐进式 Web (第 3) "  
+[Smashingmagazine201907ProgressiveWebAppFrameworkPart3]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-3 "设计和生成不带框架的渐进式 Web (第 3) "  
 
 [WebDevGoodPwaChecklist]: https://web.dev/pwa-checklist "什么是良好的渐进式 Web 应用？|web.dev"  
 

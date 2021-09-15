@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: a68cc368954d35d6c13de43af5c83a7eba18da22
-ms.sourcegitcommit: 22acb7a57d9d8e21e4348aa699c1a2c53618e93d
+ms.openlocfilehash: 9f8c56e338eab2b034d899e5778d3c85e14f1e71
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "11936671"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975925"
 ---
 # <a name="use-the-console"></a>使用控制台  
 
@@ -33,17 +33,17 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="下面板中的控制台，其上方打开元素工具" lightbox="../media/console-intro-console-panel.msft.png":::
-         **下** 面板中的控制台，其上方打开 **"元素** "工具  
+      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="下面板中的控制台，其上方打开&quot;元素&quot;工具" lightbox="../media/console-intro-console-panel.msft.png":::
+         下 **面板** 中的控制台，其上方打开 **"元素** "工具  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-直接打开控制台的最快方法为选择**** `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\) 。  
+直接打开控制台的最快方法为选择**** `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。  
 
-## <a name="error-reports-and-console"></a>错误报告和控制台  
+## <a name="error-reports-and-the-console"></a>错误报告和控制台  
 
-**控制台** 是报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，"**** 问题"计数器显示在 DevTools 中提供错误和**警告数量的**设置 图标旁边。  选择 **"问题"** 计数器以打开 **"问题** "工具并显示问题。  有关详细信息，请导航到"[控制台"中报告的"调试错误"。][DevtoolsConsoleConsoleDebugJavascript]
+控制台 **是** 报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，"**** 问题"计数器显示在 DevTools 中提供错误和警告**设置**图标旁边。  选择 **"问题"** 计数器以打开 **"问题** "工具并显示问题。  有关详细信息，请导航到["修复控制台中报告的 JavaScript 错误"。][DevtoolsConsoleConsoleDebugJavascript]
 
 :::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools 提供有关控制台中错误的详细信息" lightbox="../media/console-debug-displays-error.msft.png":::
    DevTools 提供有关控制台中错误 **的详细信息**  
@@ -52,13 +52,13 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
 
 ## <a name="look-up-error-messages-on-the-web-from-the-console"></a>从控制台查找 Web 上的错误消息
 
-从 DevTools **中** ，在 Web 中搜索控制台错误字符串。  在 **控制台**中，错误消息在 **"Web"** 按钮上显示"搜索此消息"，显示为放大镜。  When you select the **Search for this message on the Web** button， a new tab opens in the browser and shows search results for the error string.
+从 DevTools **中** ，在 Web 中搜索控制台错误消息。  在 **控制台中**，许多错误消息在 **Web** 按钮上都有"搜索此消息"，显示为放大镜。  当您选择" **在 Web 上搜索此消息** "按钮时，将在浏览器中打开一个新选项卡，并显示错误消息的搜索结果。
 
-:::image type="complex" source="../media/search-console-icon.msft.png" alt-text="Console 中错误消息上的在 Web 上搜索此消息按钮" lightbox="../media/search-console-icon.msft.png":::
+:::image type="complex" source="../media/search-console-icon.msft.png" alt-text="**Console 中错误消息上的&quot;在 Web 上搜索此消息&quot;按钮" lightbox="../media/search-console-icon.msft.png":::
    控制台 **错误消息上的"在 Web** 上搜索此消息" **按钮**
 :::image-end:::
 
-对于错误，新选项卡包含字符串"未能加载资源"的 Web 搜索结果， (`Failed to load resource` 不带引号) 。
+对于错误，新选项卡包含消息"未能加载资源"的 Web 搜索结果， (`Failed to load resource` 引号) 。
 
 :::image type="complex" source="../media/search-console-new-tab.msft.png" alt-text="从搜索控制台错误功能打开的新选项卡" lightbox="../media/search-console-new-tab.msft.png":::
    从搜索控制台错误 **功能打开的新** 选项卡
@@ -71,7 +71,7 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
 
 When you open DevTools on a webpage， there may be the overwhelming amount of information in the **Console**.  当您需要识别重要信息时，信息量将成为一个问题。  若要查看需要采取措施的重要信息，请使用 DevTools [中的问题][DevtoolsIssuesIndex] 工具。
 
-问题正在逐渐从控制台**移动到****问题工具**。  但是，控制台中仍有很多信息，这就是为什么在控制台**** 中了解自动日志和筛选器**选项是一**个好主意。  有关详细信息，请导航到"[筛选器控制台消息"。][DevtoolsConsoleConsoleFilters]
+问题正在逐渐从控制台**移动到****问题工具**。  但是，控制台中仍有很多信息，这就是为什么在控制台**** 中了解自动日志和筛选器选项是一个好主意 **。**  有关详细信息，请导航到"[筛选器控制台消息"。][DevtoolsConsoleConsoleFilters]
 
 :::image type="complex" source="../media/console-intro-noise.msft.png" alt-text="包含控制台的完整消息的 DevTools" lightbox="../media/console-intro-noise.msft.png":::
    包含控制台的完整 **消息** 的 DevTools  
@@ -81,8 +81,8 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
 
 控制台最常见的用例是使用 方法**** 或其他类似方法从脚本 `console.log()` 中记录信息。  若要尝试，请完成以下操作。  
 
-1.  若要打开**控制台**，请选择 `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\) 。  
-1.  导航到 [控制台消息示例：日志、信息、错误和][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]警告，或在控制台中复制并运行以下代码 **段**。  
+1.  若要**打开控制台，** 请选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。  
+1.  导航到 [控制台消息示例：日志、信息、错误和警告][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]，或在控制台中复制并运行以下 **代码段**。  
     
     ```javascript
     console.log('This is a log message');
@@ -151,8 +151,8 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
     document.querySelector('h1').innerHTML
     ```  
 
-:::image type="complex" source="../media/console-intro-reading-DOM.msft.png" alt-text="将顶部标题 (h1) DOM 中的内容，在控制台中显示表达式计算结果" lightbox="../media/console-intro-reading-DOM.msft.png":::
-   从 DOM 复制顶部标题 \(\) 内容，在控制台中显示 `h1` 表达式计算 **结果**
+:::image type="complex" source="../media/console-intro-reading-DOM.msft.png" alt-text="复制顶部标题 (h1) DOM 中的内容，在控制台中显示表达式评估结果" lightbox="../media/console-intro-reading-DOM.msft.png":::
+   从 DOM 复制顶部标题 \ (\) 内容，在控制台中显示 `h1` 表达式计算 **结果**
 :::image-end:::
 
 您还可以更改它，而不是仅从网页中读取。  若要尝试更改网页，请完成以下操作。  
@@ -193,7 +193,7 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
 
 <!-- links -->  
 [DevtoolsConsoleApi]: ./api.md "控制台 API 参考 | Microsoft Docs"  
-[DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "调试控制台控制台中报告|Microsoft Docs"  
+[DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "修复控制台控制台中报告的 JavaScript |Microsoft Docs"  
 [DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "使用控制台与 DOM 服务器|Microsoft Docs" 
 [DevtoolsConsoleConsoleFilters]: ./console-filters.md "筛选控制台消息|Microsoft Docs"  
 [DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "作为 JavaScript 环境的控制台|Microsoft Docs"  

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 10415578846ae1cf5b6169cd8823dbf786d1b058ce414afd1fb5c03f36da2fc8
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 415ed45bf650aa6800ab674cce74179f783a82c7
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11805411"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976386"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,7 +29,7 @@ ms.locfileid: "11805411"
    limitations under the License.  -->  
 # <a name="view-page-resources-with-microsoft-edge-devtools"></a>使用 DevTools Microsoft Edge页面资源  
 
-本指南指导你如何使用 Microsoft Edge Tools 查看网页的资源。  资源是页面为了正确显示而需要的文件。  资源示例包括 CSS、JavaScript 和 HTML 文件以及图像。  
+本指南指导你如何使用 Microsoft Edge DevTools 查看网页的资源。  资源是页面为了正确显示而需要的文件。  资源示例包括 CSS、JavaScript 和 HTML 文件以及图像。  
 
 本指南假定你熟悉 Web 开发和开发工具Microsoft Edge[基础知识][MicrosoftEdgeDevTools]。 [][MDNLearnWebDevelopment]  
 
@@ -39,13 +39,13 @@ ms.locfileid: "11805411"
 
 1.  选择 `Control`+`P`（Windows、Linux）或 `Command`+`P` (macOS)。  将 **打开"打开文件** "对话框。  
     
-    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="打开文件对话框" lightbox="../media/resources-command-menu-empty.msft.png":::
+    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="&quot;打开文件&quot;对话框" lightbox="../media/resources-command-menu-empty.msft.png":::
        " **打开文件"** 对话框  
     :::image-end:::  
     
 1.  从下拉列表中选择文件，或开始键入文件名，在自动完成框中突出显示正确的文件后 `Enter` 选择。  
     
-    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="在打开文件对话框中键入文件名" lightbox="../media/resources-command-menu-file-search.msft.png":::
+    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="在&quot;打开文件&quot;对话框中键入文件名" lightbox="../media/resources-command-menu-file-search.msft.png":::
        在"打开文件" **对话框中键入** 文件名  
     :::image-end:::  
     
@@ -59,9 +59,9 @@ ms.locfileid: "11805411"
 
 ### <a name="reveal-resources-in-the-network-tool-from-other-panels"></a>显示来自其他面板的网络工具中的资源  
 
-下面的 ["](#browse-resources) 浏览资源"部分显示如何查看来自 DevTools UI 各个部分的资源。  如果你曾经想要在网络工具中检查资源，**** 请将鼠标悬停在资源上，打开上下文菜单 \(右键单击\) ，然后选择"网络"面板中的"**展示"。**  
+下面的 ["](#browse-resources) 浏览资源"部分显示如何查看来自 DevTools UI 各个部分的资源。  如果你曾经想要检查**网络**工具中的资源，请将鼠标悬停在该资源上，打开上下文菜单 \ (右键单击\) ，然后选择网络**面板中的"展示"。**  
 
-:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="网络面板中的展示" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
+:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="&quot;网络&quot;面板中的&quot;展示&quot;" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **"网络"面板中的"展示"**  
 :::image-end:::  
 
@@ -83,7 +83,7 @@ ms.locfileid: "11805411"
 1.  选择 **"源**"工具，然后在左上角的****"导航器"窗格中，选择"**页面"** 选项卡。
 1.  Choose the **More options** (...) button to the right of the **Page** tab， and then choose Group **by folder**.
     
-    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="源工具的导航器窗格中的页面选项卡" lightbox="../media/resources-sources-page-empty.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="&quot;源&quot;工具的&quot;导航器&quot;窗格中的&quot;页面&quot;选项卡" lightbox="../media/resources-sources-page-empty.msft.png":::
        " **源** "工具的"导航 **器"** 窗格中的" **页面"** 选项卡  
     :::image-end:::  
     
@@ -108,16 +108,16 @@ ms.locfileid: "11805411"
 默认情况下，" **页面"** 选项卡按目录对资源进行分组。  若要将每个域的资源显示为一个简单列表，而不是按目录分组：
 
 1.  导航到 **"源"** 工具。  
-1.  在左侧 **导航器** (窗格中，) " **页面"** 选项卡。  
-1.  选择 **"更多选项** `...` "，然后清除"按文件夹 **分组"旁边的选中标记**。  
+1.  在左侧 **导航器** (窗格中，) "页面 **"** 选项卡。  
+1.  选择 **"更多** `...` 选项"，然后清除"按文件夹 **分组"旁边的选中标记**。  
     
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="按文件夹分组选项" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="&quot;按文件夹分组&quot;选项" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
        " **按文件夹分组"** 选项  
     :::image-end:::  
     
     资源按文件类型进行组织。  在每个文件类型内，资源按字母顺序进行组织。  
 
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="清除按文件夹分组复选框后的页面选项卡" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="清除&quot;按文件夹分组&quot;复选框后的&quot;页面&quot;选项卡" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
        清除 **"** 按文件夹分组"复选框后的"页面 **"** 选项卡  
     :::image-end:::  
     
@@ -133,14 +133,14 @@ ms.locfileid: "11805411"
     
 1.  向下滚动到"框架 **"** 窗格。  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="框架窗格" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="&quot;框架&quot;窗格" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
        " **框架"** 窗格  
     :::image-end:::  
     
 1.  展开您感兴趣的部分。  
 1.  选择一个资源进行查看。  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="在应用程序面板中查看资源" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="在&quot;应用程序&quot;面板中查看资源" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
        在"应用程序"面板 **中查看** 资源  
     :::image-end:::  
     
@@ -159,9 +159,9 @@ ms.locfileid: "11805411"
 <!-- links -->  
 
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft 文档"  
-[DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "按资源类型筛选 - 在 DevTools Microsoft Edge中检查网络|Microsoft Docs"  
-[DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "检查资源的详细信息 - 检查开发人员工具Microsoft Edge中的网络|Microsoft Docs"  
-[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "记录网络活动 - 在 DevTools Microsoft Edge中检查网络|Microsoft Docs"  
+[DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "按资源类型筛选 - 检查开发人员工具Microsoft Edge中的网络|Microsoft Docs"  
+[DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "检查资源的详细信息 - 检查 DevTools Microsoft Edge中的网络|Microsoft Docs"  
+[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "记录网络活动 - 在 DevTools Microsoft Edge中检查|Microsoft Docs"  
 
 [MDNInlineFrame]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe>：内联 Frame 元素|MDN"  
 [MDNLearnWebDevelopment]: https://developer.mozilla.org/docs/Learn "了解 Web 开发|MDN"  

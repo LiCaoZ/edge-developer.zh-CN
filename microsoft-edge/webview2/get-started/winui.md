@@ -9,11 +9,11 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、winui 应用、winui、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
 ms.openlocfilehash: a1d2f052c8703a7a8a1792d628ba22735192a7f4
-ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "11934033"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976486"
 ---
 # <a name="get-started-with-webview2-in-winui-3-windows-app-sdk"></a>WinUI 3 应用 SDK (Windows中的 WebView2) 
 
@@ -21,15 +21,15 @@ ms.locfileid: "11934033"
         
 ## <a name="step-0---set-up-development-environment"></a>步骤 0 - 设置开发环境 
 
-1. 按照设置开发环境的步骤 1-4 安装 Visual Studio、配置 NuGet 程序包源并安装 Windows App SDK Extension for Visual Studio。 [][WindowsAppsWinui3ConfigureYourDevEnvironment] 
-1. 安装安装在 Windows 10 版本 1803 \(版本 17134\) 或更高版本上的[WebView][Webview2Installer] [Microsoft Edge (Chromium) 2][MicrosoftedgeinsiderDownload]运行时或任何非稳定通道。  有关更新Windows 10，请导航到Windows[更新： FAQ][MicrosoftSupport12373]。  
-1.  若要访问开发人员特定的所有Visual Studio功能，请打开[开发人员模式][WindowsUwpGetStartedEnableYourDeviceForDevelopment]。  
+1. 按照设置开发环境的步骤 1-4 安装 Visual Studio、配置 NuGet 程序包源和安装 Windows App SDK Extension for Visual Studio。 [][WindowsAppsWinui3ConfigureYourDevEnvironment] 
+1. 安装安装在 Windows 10 版本 1803 \ (版本 17134\) 或更高版本上的[WebView][Webview2Installer] [Microsoft Edge (Chromium) 2][MicrosoftedgeinsiderDownload]运行时或任何非稳定渠道。  有关更新Windows 10，请导航Windows[更新：常见问题][MicrosoftSupport12373]。  
+1.  若要访问开发人员特定的所有Visual Studio功能，请打开开发人员[模式][WindowsUwpGetStartedEnableYourDeviceForDevelopment]。  
     
 ## <a name="step-1---create-project"></a>步骤 1 - 创建Project  
 
 从包含单个主窗口的基本桌面项目开始。  
 
-1.  In Visual Studio， choose **Create a new project**.  
+1.  在Visual Studio中，选择 **"新建项目"。**  
 1.  在项目下拉列表中，分别选择**C#、Windows**和******WinUI。**  
     
     :::image type="complex" source="./media/winui-getting-started-selections.png" alt-text="使用项目创建一个新的 WinUI Visual Studio" lightbox="./media/winui-getting-started-selections.png":::
@@ -44,13 +44,13 @@ ms.locfileid: "11934033"
     *   **目标版本****：Windows 10版本 1903 (版本 18362**) 或更高版本  
     *   **最低版本****：Windows 10版本 1803 (版本 17134) **  
         
-    :::image type="complex" source="./media/winui-getting-started-project-type.png" alt-text="新建通用Windows平台Project对话框，包含目标版本和最低版本的选定值。" lightbox="./media/winui-getting-started-project-type.png":::
+    :::image type="complex" source="./media/winui-getting-started-project-type.png" alt-text="&quot;新建通用Windows平台Project&quot;对话框，包含&quot;目标版本&quot;和&quot;最低版本&quot;的选定值。" lightbox="./media/winui-getting-started-project-type.png":::
        "新建通用Windows平台Project"对话框，包含"目标版本"和"最低版本"的选定值。
     :::image-end:::  
     
 1.  在"解决方案资源管理器"中，将生成两个项目。  
     *   **你的项目名称 (桌面) 。 **  桌面项目包含你的应用的代码。  `App.xaml.cs`该文件定义一个 `Application` 表示应用实例的类。  `MainWindow.xaml.cs`该文件定义一个 `MainWindow` 类，该类表示应用实例显示的主窗口。  这些类派生自 `Microsoft.UI.Xaml` WinUI 命名空间中的类型。  
-    *   **你的项目名称 (包) 。 **  包项目是一Windows应用程序打包Project，配置为将应用构建到 MSIX 包中进行部署。  该项目包含应用的程序包清单，并且默认情况下是解决方案的启动项目。  有关详细信息，请导航到"设置桌面应用程序以打包[MSIX Visual Studio"][WindowsMsixDesktopToUwpPackagingDotNet]和"程序包清单架构参考[Windows 10"。][UwpSchemasAppxpackageUapmanifestRoot]  
+    *   **你的项目名称 (包) 。 **  包项目是一Windows应用程序打包Project，配置为将应用构建到 MSIX 包中进行部署。  该项目包含应用的程序包清单，并且默认情况下是解决方案的启动项目。  有关详细信息，请导航到"设置桌面应用程序以打包[MSIX][WindowsMsixDesktopToUwpPackagingDotNet] Visual Studio和程序包清单[架构参考中的"Windows 10"。][UwpSchemasAppxpackageUapmanifestRoot]  
 1.  在"解决方案资源管理器"中，若要显示代码，请打开 `MainWindow.xaml` 文件。  若要运行项目并显示带按钮的窗口，请选择 `F5` 。  
     
 ## <a name="step-2---add-a-webview2-control-to-your-project"></a>步骤 2 - 将 WebView2 控件添加到项目中  
@@ -287,13 +287,13 @@ private void EnsureHttps(WebView2 sender, CoreWebView2NavigationStartingEventArg
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "WebView2 Microsoft Edge简介|Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 |Microsoft Docs"  
 
-[Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.ExeMicrosoft.Web.WebView2.Wpf () 方法 (cuteScriptAsync) |Microsoft Docs"  
+[Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "Microsoft.Web.WebView2. (.Wpf) 的 WebView2.ExecuteScriptAsync (String) |Microsoft Docs"  
 
 [NugetConsumePackagesConfiguringNugetBehavior]: /nuget/consume-packages/configuring-nuget-behavior "常见NuGet配置|Microsoft Docs"  
 
 [UwpSchemasAppxpackageUapmanifestRoot]: /uwp/schemas/appxpackage/uapmanifestschema/schema-root "程序包清单架构参考Windows 10 |Microsoft Docs"  
 
-[VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]: /visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box "无需使用&quot;管理扩展&quot;对话框即可安装 - 管理 Visual Studio |Microsoft Docs"  
+[VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]: /visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box "安装时无需使用&quot;管理扩展&quot;对话框 - 管理 Visual Studio |Microsoft Docs"  
 
 [WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/project-reunion/set-up-your-development-environment "配置开发环境 - Windows 2020 年 5 月 (UI 库 3.0 预览 1) |Microsoft Docs"  
 [WindowsCommunitytoolkit]: /windows/communitytoolkit "Windows Community Toolkit文档|Microsoft Docs"  

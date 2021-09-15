@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 8559ebeda599881e93e8532e75df94926170e39973911124ea0de576fdf1bd67
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 4f5a352445bd13b82ada82df3a528a1e80aa144e
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11803618"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976479"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -42,7 +42,7 @@ ms.locfileid: "11803618"
 
 1.  在“**存储**“下，展开 “**Cookie**”，然后选择一个源。  
     
-    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="Cookie窗格" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="“Cookie”窗格" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
        图 2：“Cookie” 窗格  
     :::image-end:::  
 

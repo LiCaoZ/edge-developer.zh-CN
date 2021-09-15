@@ -6,21 +6,21 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 60b70ce0c93437050d0a5e179c86b62e34d79b5b6c54aa02d3fbe64cac73090e
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: b493bb790b48bc1c4dca0e6802d2f638099b7644
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11801474"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975943"
 ---
 # <a name="filter-console-messages"></a>筛选控制台消息  
 
-当您浏览 Web 时，您可能会发现 **控制台** 中会大量显示各种信息。  通常信息与自己不相关。  例如有关另一个开发人员在调试时记录实时项目的信息。  有关你无法更改的当前网站性能的违反和警告详细信息。  使用控制台的筛选器选项 **减少噪音是** 有意义的。  
+当您浏览 Web 时，您可能会发现 **控制台** 中会大量显示各种信息。  通常信息与自己不相关。  例如有关另一个开发人员在调试时记录实时项目的信息。  或有关您无法更改的当前网站性能的违反和警告详细信息。  使用控制台的筛选器选项 **减少噪音是** 有意义的。  
 
 ## <a name="filter-by-log-level"></a>按记录级别筛选  
 
-对象的每个 `console` 方法都有一个附加到它的严重级别。  严重性级别为 `Verbose` `Info` 、、 `Warning` 或 `Error` 。  显示 API 文档中的严重性 [级别][DevtoolsConsoleApi]。  例如， `console.log()` 是 `Info` -level 邮件，但 `console.error()` `Error` 是 -level 邮件。  
+对象的每个 `console` 方法都有一个附加到它的严重级别。  严重性级别为 `Verbose` `Info` 、、 `Warning` 或 `Error` 。  显示 API 文档中的严重性 [级别][DevtoolsConsoleApi]。  例如， `console.log()` 是 `Info` -level 邮件，但 `console.error()` 是 `Error` -level 邮件。  
 
 若要在控制台中 **筛选消息**，请使用" **日志级别"** 下拉菜单。  你可以切换每个级别的状态。  若要关闭每个级别，请删除每个级别旁边的选中标记。  
 
@@ -52,7 +52,7 @@ ms.locfileid: "11801474"
 
 [正则表达式是][MdnDocsWebJavascriptGuideRegularExpressions] 筛选邮件的一种强大方法。  例如，在 `/^Tracking/` **筛选器文本框中** 键入以仅显示以术语 开始的邮件 `Tracking` 。  如果你不熟悉正则表达式 [，RegExr][|::ref1::|Main] 是了解使用正则表达式的一个很好的资源。
 
-:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="使用筛选器文本框中的正则表达式显示以单词筛选器开始的邮件" lightbox="../media/console-filter-regex.msft.png":::
+:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="使用&quot;筛选器&quot;文本框中的正则表达式显示以单词筛选器开始的邮件" lightbox="../media/console-filter-regex.msft.png":::
     使用"筛选器"文本框 `filter` 中的正则表达式显示以 **单词开始** 的邮件  
 :::image-end:::  
 

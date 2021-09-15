@@ -9,11 +9,11 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、winforms 应用、winforms、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET、windows 窗体
 ms.openlocfilehash: 292e859bc9d763b28dca5a7115b6edf94284c24b
-ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "11934070"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976303"
 ---
 # <a name="get-started-with-webview2-in-winforms-apps"></a>WinForms 应用中的 WebView2 入门
 
@@ -23,7 +23,7 @@ ms.locfileid: "11934070"
 
 安装以下必备组件列表，然后再继续。
 
-*   [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2]运行时或任何 Microsoft Edge Insider [ (preview) Channel (][MicrosoftedgeinsiderDownload] Beta、Dev 或 Canary) 安装在受支持的操作系统 \(当前 Windows 10、Windows 8.1 和 Windows 7\) 上。  
+*   [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2]运行时或任何[Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] (Beta、Dev 或 Canary) 安装在受支持的操作系统 \ (当前 Windows 10、Windows 8.1 和 Windows 7\) 上。  
     
     > [!NOTE]
     > WebView 团队建议使用 Canary 通道，最低要求版本为 82.0.488.0。  
@@ -52,10 +52,10 @@ ms.locfileid: "11934070"
 
 使用 NuGet 将 WebView2 SDK 添加到项目中。  
 
-1.  将鼠标悬停在项目中，打开上下文菜单 \(右键单击\) ，然后选择"管理NuGet**包..."。**  
+1.  将鼠标悬停在项目中，打开上下文菜单 \ (右键单击\) ，然后选择"管理NuGet**包..."。**  
     
-    :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="管理NuGet包":::
-       管理NuGet包
+    :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="管理 NuGet 程序包":::
+       管理 NuGet 程序包
     :::image-end:::
     
 1.  在搜索栏中，键入"> `Microsoft.Web.WebView2` **选择"Microsoft.Web.WebView2"。**  
@@ -78,7 +78,7 @@ ms.locfileid: "11934070"
 1.  在工具箱**中搜索 WebView2。** ****  
     
     > [!NOTE]
-    > 如果使用的是 Visual Studio 2017，默认情况下 **，WebView2**可能不会显示在工具箱**中**。  若要启用此行为，请选择"**工具**  >  **""** 选项  >  ****">将"**自动填充工具箱**"设置设置为 `True` 。  
+    > 如果使用的是 Visual Studio 2017，默认情况下 **，WebView2**可能不会显示在工具箱**中**。  若要启用此行为，请选择"**工具**  >  **""选项**  >  ****>"**自动填充工具箱**"设置 `True` 设置为 。  
     
     将**WebView2 控件**拖放到 Windows Forms App。
     
@@ -112,7 +112,7 @@ ms.locfileid: "11934070"
 从工具箱向窗体中添加Windows控件，然后适当地处理窗口大小事件。  
 
 1.  在 **"Windows设计器"中**，打开 **"工具箱"。**  
-1.  将**TextBox 拖放**到 Windows Forms 应用程序中。  将 **"属性"选项卡中的 TextBox** `addressBar` **命名**。  
+1.  将**TextBox 拖放**到 Windows Forms App。  将 **"属性"选项卡中的 TextBox** `addressBar` **命名**。  
 1.  将**按钮拖放到**窗体Windows中。  将"按钮"中的**文本** `Go!` 更改为 ，并**** 命名"属性"选项卡 `goButton` **中的"按钮"。**  
     
     应用应如设计器中的下图所示。  
@@ -346,16 +346,16 @@ async void InitializeAsync()
 
 <!-- links -->  
 
-[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 开发最佳做法|Microsoft Docs"  
+[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 开发最佳实践|Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 |Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "导航事件|Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2Winforms]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms 命名空间|Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2WinformsWebview2]: /dotnet/api/microsoft.web.webview2.winforms.webview2 "WebView2 类|Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async "WebView2.EnsureCoreWebView2Async (CoreWebView2Environment) 方法|Microsoft Docs"  
-[DotnetApiMicrosoftWebWebview2WinformsWebview2Executescriptasync]: /dotnet/api/microsoft.web.webview2.winforms.webview2.executescriptasync "WebView2.ExecuteScriptAsync (String) 方法|Microsoft Docs"  
+[DotnetApiMicrosoftWebWebview2WinformsWebview2Executescriptasync]: /dotnet/api/microsoft.web.webview2.winforms.webview2.executescriptasync "WebView2.ExecuteScriptAsync (String) 方法 |Microsoft Docs"  
 
-[DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport]: /dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support "配置 Windows Forms 应用以支持高 DPI - Windows 窗体|Microsoft Docs"  
+[DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport]: /dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support "Configuring your Windows Forms app for high DPI support - Windows Forms |Microsoft Docs"  
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"  
 

@@ -1,5 +1,5 @@
 ---
-description: 了解如何在网站内构建、设计和测试可访问Microsoft Edge。
+description: 了解如何在网站内构建、设计和测试Microsoft Edge。
 title: 辅助功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.assetid: 1e5c42a7-4604-46ac-ad7b-a65390e5b36a
 keywords: 辅助功能， 开发人员辅助功能， 可访问的网站， 边缘， Web 开发， ARIA， 开发人员， UIA， UI 自动化
-ms.openlocfilehash: 4c0acadcf6fccba16b4b6431a6f82b7355c50982e9a264e65227e439a8e7e737
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: ae2b0a876b60e0475e283cc52ffd14275fc32aba
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11800170"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975918"
 ---
 # <a name="accessibility-overview"></a>辅助功能概述  
 
@@ -23,11 +23,11 @@ ms.locfileid: "11800170"
 
 设计网站和其他包含技术可打造每个人都享受的体验。  非独占设计和 Web 辅助功能使每个人都能够使用 Web。  
 
-下面是一些最佳实践、代码示例和更多资源，可让你了解有关在 Microsoft Edge 中设计、构建[][AccessibilityBuild]和测试可访问网站[][AccessibilityTest]Microsoft Edge。 [][AccessibilityDesign]  
+下面是一些最佳实践、代码示例和更多资源，可便于你了解有关在 Microsoft Edge 中设计、[][AccessibilityBuild]构建和测试可访问[][AccessibilityTest]网站Microsoft Edge。 [][AccessibilityDesign]  
 
 ## <a name="accessibility-in-microsoft-edge"></a>Microsoft Edge  
 
-在 Microsoft Edge 中，我们引入了现代[UI 自动化 API][WindowsWin32AutoEntryui] \(UIA API\) 。  UIA 的变化是浏览器辅助功能的主要投资，它为依赖于 Windows 10 中的辅助技术的用户提供更具包容性的 Web 体验打下基础。  用户还可以从网络引擎的常绿Chromium中获益。  
+在 Microsoft Edge 中，我们引入了现代[UI 自动化 API][WindowsWin32AutoEntryui] \ (UIA API\) 。  UIA 的变化是浏览器辅助功能的一项重大投资，它为依赖于 Windows 10 中的辅助技术的用户提供更具包容性的 Web 体验奠定了基础。  用户还可以从网络引擎的常绿Chromium中获益。  
 
 企业中的辅助功能系统Microsoft Edge支持现代 Web 标准，包括 ARIA、HTML5 和 CSS3。  简化的浏览器管道的下图将网页内容放入可访问的表示层。  
 
@@ -43,11 +43,11 @@ Microsoft Edge团队持续与 W3C 和其他浏览器供应商合作，以确保�
 
 #### <a name="microsoft-windows-ui-automation-blog"></a>Microsoft Windows UI 自动化博客  
 
-[Microsoft Windows UI 自动化博客][ArchiveBlogsWinuiautomation]涵盖了与 Windows 自动化 API 相关的主题。  
+[Microsoft Windows UI 自动化博客][ArchiveBlogsWinuiautomation]涵盖了与 microsoft Windows API 相关的主题。  
 
-#### <a name="web-accessibility-initiative-wai"></a>Web 辅助功能计划 (，)   
+#### <a name="web-accessibility-initiative-wai"></a>Web 辅助功能计划 (的一)   
 
-Web [辅助功能计划 (一) ， ][W3CWaiHome] 提供 bt W3C 是帮助改善 Web 辅助功能的一项工作。  该网站为 Web 辅助功能入门、[][W3CWaiGettingstartedOverview]包含设计、教程和演示文稿等[][W3CWaiFundamentals][提供了][W3CWaiTeachAdvocate]各种资源。  
+Web [辅助功能计划 (，) ][W3CWaiHome] 提供 bt W3C 是帮助改善 Web 辅助功能的一项工作。  该网站为 Web 辅助功能入门、[][W3CWaiGettingstartedOverview]包含设计、教程和演示文稿等[][W3CWaiFundamentals][提供了][W3CWaiTeachAdvocate]各种资源。  
 
 <!-- links -->  
 
@@ -62,10 +62,10 @@ Web [辅助功能计划 (一) ， ][W3CWaiHome] 提供 bt W3C 是帮助改善 We
 [HTML5Accessibility]: https://html5accessibility.com "HTML5 辅助功能"  
 
 [W3CAccessibility]: https://w3.org/standards/webdesign/accessibility "辅助功能|W3C"  
-[W3CWaiFundamentals]: https://w3.org/wai/fundamentals/accessibility-intro "Web 辅助功能|Web 辅助功能计划 (的一) |W3C"  
-[W3CWaiGettingstartedOverview]: https://w3.org/wai/gettingstarted/Overview "入门：使网站成为辅助|Web 辅助功能计划 (的一) |W3C"  
-[W3CWaiHome]: https://w3.org/wai "Web 辅助功能计划 (的一) |W3C"  
-[W3CWaiTeachAdvocate]: https://w3.org/wai/teach-advocate "教学和宣传|Web 辅助功能计划 (的一) |W3C"  
+[W3CWaiFundamentals]: https://w3.org/wai/fundamentals/accessibility-intro "Web 辅助功能|Web 辅助功能计划 (一) |W3C"  
+[W3CWaiGettingstartedOverview]: https://w3.org/wai/gettingstarted/Overview "入门：使网站成为辅助|Web 辅助功能计划 (一) |W3C"  
+[W3CWaiHome]: https://w3.org/wai "Web 辅助功能计划 (一) |W3C"  
+[W3CWaiTeachAdvocate]: https://w3.org/wai/teach-advocate "教学和宣传|Web 辅助功能计划 (一) |W3C"  
 
 [WHODisabilities]: https://who.int/topics/disabilities "残障|WHO"  
 

@@ -1,5 +1,5 @@
 ---
-description: 将Microsoft Edge (Chromium) 扩展发布到Microsoft Edge加载项网站
+description: 将Microsoft Edge (Chromium) 加载项Microsoft Edge加载项网站
 title: 发布Microsoft Edge扩展
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,15 +8,15 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
 ms.openlocfilehash: 08aa1bdffbc619972622a950c4c968af3535f055
-ms.sourcegitcommit: dc445eae30234af1ad3fa42645aabb940529912b
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "11934485"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976464"
 ---
 # <a name="publish-a-microsoft-edge-extension"></a>发布Microsoft Edge扩展
 
-开发和测试你的 Microsoft Edge 扩展后，你已准备好分发你的扩展。 使用Microsoft Edge加载项网站分发扩展。  若要为用户Chromium现有 Microsoft Edge 扩展，请导航到移植现有 Chromium[扩展][PortChromiumExtension]。  
+开发和测试你的 Microsoft Edge 扩展后，你已准备好分发你的扩展。 使用Microsoft Edge加载项网站分发扩展。  若要为用户Chromium现有Microsoft Edge，请导航到移植现有 Chromium[扩展][PortChromiumExtension]。  
 
 将扩展发布到 Microsoft Edge 加载项网站，以增加其范围，使其可供其他用户Microsoft Edge使用。  本文提供将扩展提交到 Microsoft Edge 加载项网站的过程。  
 
@@ -74,12 +74,12 @@ ms.locfileid: "11934485"
 
 ### <a name="visibility"></a>可见性  
 
-选择以下可见性选项之一，以定义你的扩展在加载项Microsoft Edge中是否可被发现。  
+选择以下可见性选项之一，定义你的扩展在加载项Microsoft Edge中是否可发现。  
 
-*   `Public` \(default\)   
+*   `Public` \ (default\)   
     公共允许所有人通过搜索、浏览 Microsoft Edge 加载项网站或使用 Microsoft Edge 加载项网站中的扩展列表 URL 来发现扩展。  合作伙伴中心仪表板上的扩展概述网页中提供了列表**URL。**  
 *   `Hidden`  
-    Hidden 从搜索结果中或在加载项网站中Microsoft Edge扩展。  若要在加载项网站中Microsoft Edge隐藏的扩展，必须与客户共享扩展一览 URL。  
+    Hidden 从搜索结果中或在加载项网站Microsoft Edge扩展。  若要在加载项网站中Microsoft Edge隐藏的扩展，必须与客户共享扩展一览 URL。  
     
 > [!NOTE]
 > 你可以将扩展的可见性从"公共"**更改为**"**隐藏"。**  当可见性设置为公共时安装扩展的用户将保留对扩展的访问权限，并接收你通过 Microsoft Edge 加载项网站提供的任何更新。  
@@ -97,27 +97,27 @@ ms.locfileid: "11934485"
 <!-- ========================================================================== -->
 ## <a name="step-4-select-properties-for-your-extension"></a>步骤 4：选择扩展的属性  
 
-在 **"属性** "网页上，输入以下信息以指定扩展的属性。  这些属性在加载项网站中Microsoft Edge用户。  
+在 **"属性** "网页上，输入以下信息以指定扩展的属性。  这些属性显示在加载项网站Microsoft Edge用户。  
 
 | 扩展属性名称 | 描述 |  
 |:--- |:--- |  
-| Category \(required\)  | 最能描述扩展的类别。  在正确的类别中列出扩展可帮助用户轻松找到扩展并了解有关它的更多信息。  |  
-| 隐私策略要求 \(\)  | 指示您的扩展是否访问、收集或传输任何个人信息。  如果选择是，并且未提供 ，你的扩展**** 可能无法通过认证步骤 `Privacy policy URL` 。  |  
+| Category \ (required\)  | 最能描述扩展的类别。  在正确的类别中列出扩展可帮助用户轻松找到扩展并了解有关它的更多信息。  |  
+| 隐私策略要求 \ (\)  | 指示您的扩展是否访问、收集或传输任何个人信息。  如果选择是，并且未提供 ，你的扩展**** 可能无法通过认证步骤 `Privacy policy URL` 。  |  
 | 隐私策略 URL | 用于传达扩展如何遵循隐私法律和法规的有效隐私策略 URL。  你负责确保你的扩展遵循隐私法律和法规。  如果你的扩展正在访问、传输或收集任何个人信息，你还负责提供隐私策略 URL。  若要确定扩展是否要求隐私策略，请导航Microsoft Edge[开发人员][MicrosoftAppDeveloperAgreement]协议Microsoft Edge[加载项网站开发人员策略。][MicrosoftEdgeAddonsCatalogDeveloperPolicies]  |  
-| 网站 URL | 提供有关扩展的其他信息的网页。  必须指向自己网站上的网页，而不是加载项网站中扩展Microsoft Edge `Website URL` Web 列表。  `Website URL`帮助用户了解有关扩展、其功能以及任何其他相关信息的更多信息。  |  
+| 网站 URL | 提供有关扩展的其他信息的网页。  必须指向自己网站上的网页，而不是加载项网站中扩展Microsoft Edge `Website URL` Web 列表。  `Website URL`帮助用户了解有关扩展、扩展功能以及任何其他相关信息的更多信息。  |  
 | 支持联系人详细信息 | 支持网页的 URL 或用于联系支持团队的电子邮件地址。  |  
-| 成熟内容 | 用于指定扩展是否包含成熟内容的复选框。  扩展分级可帮助确定扩展的目标受众的适当年龄组。  若要帮助确定扩展内容是否成熟，请导航Microsoft Edge[加载项网站开发人员策略"][MicrosoftEdgeAddonsCatalogDeveloperPolicies]。  |  
+| 成熟内容 | 用于指定扩展是否包含成熟内容的复选框。  扩展分级可帮助确定扩展的目标受众的适当年龄组。  若要帮助确定扩展是否具有成熟内容，请导航Microsoft Edge[加载项网站开发人员策略"][MicrosoftEdgeAddonsCatalogDeveloperPolicies]。  |  
 
 选择 **"保存** "以继续浏览 **应用商店一览** 部分。  
 
 > [!Important]
-> 你的开发人员/组织名称、网站 URL 和支持你在注册期间提交的联系人详细信息将显示在"加载项"Microsoft Edge用户。  
+> 你的开发人员/组织名称、网站 URL 和支持你在注册期间提交的联系人详细信息将显示在加载项Microsoft Edge用户。  
 
 
 <!-- ========================================================================== -->
 ## <a name="step-5-add-store-listing-details-for-your-extension"></a>步骤 5：为扩展添加应用商店一览详细信息  
 
-以下部分中提供的信息显示在"加载项"网站上查看Microsoft Edge列表的用户。  尽管某些字段是可选的，但您应该提供尽可能多的信息。  若要在应用商店中列出扩展，需要以下详细信息。  
+以下部分中提供的信息显示给在加载项网站上查看Microsoft Edge列表的用户。  尽管某些字段是可选的，但您应该提供尽可能多的信息。  若要在应用商店中列出扩展，需要以下详细信息。  
 
 *   **扩展** 包中每种语言的说明。 若要支持多种语言，可以使用 [chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478) (的国际化 API) 。  
 *   **扩展包中** 每种语言的扩展应用商店徽标。  
@@ -127,15 +127,15 @@ ms.locfileid: "11934485"
 
 | 语言详细信息属性名称 | 描述 |  
 |:--- |:--- |  
-| 显示名称 \(required\)  | `name`在扩展的清单文件中指定的扩展的 。  若要在提交显示名称应用商店，可以在清单文件中更新名称，创建新的扩展包，然后重新加载它。  |  
-| Description \(required\)  | 该字段重点介绍扩展执行哪些功能、为什么用户应安装它，或者用户需要知道 `description` 的其他相关信息。  它应小于 10，000 个字符。  |  
-| 扩展存储徽标 \(必填\)  | 表示你的公司或纵横比 `extension logo` 为 1、建议大小为 300 x 300 像素的图像。  此外，可以使用"复制"按钮将资源从一种语言复制到所有其他语言。  为语言上载徽标后，可以在字段后找到此按钮。  |  
-| 小促销磁贴 \(可选\)  | 该 `Small promotional tile` 图像用于将扩展与应用商店中其他扩展一起显示。  图像的大小应为 440 x 280 像素。  此外，可以使用"复制"按钮将资源从一种语言复制到所有其他语言。  在上传该语言的促销磁贴后，可以在字段后找到该按钮。  |  
-| Screenshots \(optional\)  | 你最多可提交 10 个描述扩展 `screenshots` 功能的详细信息。  屏幕截图的大小必须为 640 x 480 像素或 1280 x 800 像素。  此外，可以使用"复制"按钮将资源从一种语言复制到所有其他语言。  在上载至少一种语言后，可以在字段后找到该按钮。|  
-| 大型促销磁贴 \(可选\)  | `Large promotion tiles` 在应用商店中用于更显著地在加载项网站中Microsoft Edge扩展。  图像（如果已提交）对用户可见。  PNG 文件的大小必须为 1400 x 560 像素。  此外，可以使用"复制"按钮将资源从一种语言复制到所有其他语言。  在上传该语言的促销磁贴后，可以在字段后找到该按钮。  |  
-| YouTube 视频 URL \(可选\)  | 你可以包含扩展的促销 YouTube 视频。  视频 `YouTube video URL` 显示在扩展的应用商店一览网页上。  |  
-| 简短说明 \(必填\)  | 若要编辑 `short description` ，必须更新扩展包清单文件中的描述字段，然后重新上载它。  |  
-| 搜索词 \(可选\)  | `Search terms` 是单个字词或短语，当用户在加载项网站中搜索时Microsoft Edge扩展。  搜索词不会显示给用户。  |  
+| 显示名称 \ (required\)  | `name`在扩展的清单文件中指定的扩展的 。  若要在提交显示名称应用商店，可以在清单文件中更新名称，创建新的扩展包，然后重新加载它。  |  
+| Description \ (required\)  | 该字段重点介绍扩展执行哪些功能、为什么用户应安装它，或者用户需要知道 `description` 的其他相关信息。  它应小于 10，000 个字符。  |  
+| 扩展存储徽标 \ (必填\)  | 表示你的公司或纵横比 `extension logo` 为 1、建议大小为 300 x 300 像素的图像。  此外，可以使用"复制"按钮将资源从一种语言复制到所有其他语言。  为语言上载徽标后，可以在字段后找到此按钮。  |  
+| 小促销磁贴 \ (可选\)  | 该 `Small promotional tile` 图像用于将扩展与应用商店中其他扩展一起显示。  图像的大小应为 440 x 280 像素。  此外，可以使用"复制"按钮将资源从一种语言复制到所有其他语言。  在上传该语言的促销磁贴后，可以在字段后找到该按钮。  |  
+| Screenshots \ (optional\)  | 你最多可提交 10 个描述扩展 `screenshots` 功能的详细信息。  屏幕截图的大小必须为 640 x 480 像素或 1280 x 800 像素。  此外，可以使用"复制"按钮将资源从一种语言复制到所有其他语言。  在上载至少一种语言后，可以在字段后找到该按钮。|  
+| 大型促销磁贴 \ (可选\)  | `Large promotion tiles` 在应用商店中用来在加载项网站中更Microsoft Edge扩展。  图像（如果已提交）对用户可见。  PNG 文件的大小必须为 1400 x 560 像素。  此外，可以使用"复制"按钮将资源从一种语言复制到所有其他语言。  在上传该语言的促销磁贴后，可以在字段后找到该按钮。  |  
+| YouTube 视频 URL \ (可选\)  | 你可以包含扩展的促销 YouTube 视频。  视频 `YouTube video URL` 显示在扩展的应用商店一览网页上。  |  
+| 简短说明 \ (必填\)  | 若要编辑 `short description` ，必须更新扩展包清单文件中的描述字段，然后重新上载它。  |  
+| 搜索词 \ (可选\)  | `Search terms` 是一个字词或短语，当用户在加载项网站中搜索时Microsoft Edge扩展。  搜索词不会显示给用户。  |  
 
 ### <a name="youtube-video-url-requirements"></a>YouTube 视频 URL 要求  
 
@@ -179,10 +179,10 @@ ms.locfileid: "11934485"
     
 提供相关信息后，**选择"发布**"以将扩展Microsoft Edge加载项网站。  你的提交将继续执行认证步骤。  提交后，认证过程最多可能需要 7 个工作日。  
 
-提交通过认证后，你的扩展Microsoft Edge加载项网站中发布。  合作伙伴中心仪表板中扩展的状态将更改为 `In the Store` 。  
+提交通过认证后，你的扩展Microsoft Edge加载项网站中。  合作伙伴中心仪表板中扩展的状态将更改为 `In the Store` 。  
 
 > [!NOTE]
-> 如果在提交或注册过程中遇到任何问题，请将支持票证提交到扩展"新建支持[][ExtensionsSupportForm]请求["或][MailtoExtDevSupportMicrosoftCom]发送电子邮件到 ext_dev_support@microsoft.com。  
+> 如果你在提交或注册过程中遇到任何问题，请向扩展新支持请求提交支持票证[][ExtensionsSupportForm]，或向应用[ext_dev_support@microsoft.com。][MailtoExtDevSupportMicrosoftCom]  
 
 
 <!-- ========================================================================== -->
@@ -195,11 +195,11 @@ ms.locfileid: "11934485"
 <!-- external links -->
 [MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "合作伙伴中心"  
 
-[ExtensionsSupportForm]: https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "Extensions 新的支持请求|Microsoft 支持"  
+[ExtensionsSupportForm]: https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "Extensions 新支持请求|Microsoft 支持"  
 
 [GoogleYoutubeAnswer2531367Topic7072227]: https://support.google.com/youtube/answer/2531367?ref_topic=7072227 "设置默认广告格式|YouTube 帮助"  
 
 [GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "嵌入视频上的|YouTube 帮助"  
 [GoogleYoutubeAnswer171780]: https://support.google.com/youtube/answer/171780 "嵌入视频&播放列表|YouTube 帮助"  
 
-[MailtoExtDevSupportMicrosoftCom]: mailto:ext_dev_support@microsoft.com "向用户发送电子邮件 ext_dev_support@microsoft.com" 
+[MailtoExtDevSupportMicrosoftCom]: mailto:ext_dev_support@microsoft.com "将电子邮件 ext_dev_support@microsoft.com" 

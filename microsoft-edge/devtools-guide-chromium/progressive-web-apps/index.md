@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 456c613191a278b774086b671a68498ed2bf47073d32b3eb272efe30be58d8b0
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 3a0732327aac210e399c438b8d9c34c75a7c2910
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11804142"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975999"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,20 +37,20 @@ ms.locfileid: "11804142"
 
 <!--TODO:  Link web "Progressive Web Apps" section when available. -->
 
-本指南仅讨论应用程序面板的渐进 Web **应用** 功能。  <!--If you're looking for help on the other panes, check out the last section of this guide, [Other Application panel guides](#other-application-panel-guides).  -->
+本指南仅讨论应用程序面板的渐进式 Web **应用** 功能。  <!--If you're looking for help on the other panes, check out the last section of this guide, [Other Application panel guides](#other-application-panel-guides).  -->
 
 <!--TODO:  Link to sections when available. -->
 
 ### <a name="summary"></a>摘要  
 
-*   使用清单 **窗格** 检查 Web 应用清单并触发添加到主屏幕事件。  
+*   使用清单 **窗格** 检查 Web 应用清单并触发"添加到主屏幕"事件。  
 *   使用"**** 服务工作线程"窗格执行与服务工作者相关的所有任务，例如注销或更新服务、模拟推送事件、脱机或停止服务工作线程。  
 *   从"缓存"窗格查看服务**存储**缓存。  
 *   从"清除存储"窗格中选择一个按钮，注销服务工作器并清除所有 **存储和** 缓存。  
     
 ## <a name="web-app-manifest"></a>Web 应用清单  
 
-如果希望用户能够将应用添加到其移动主屏幕，则需要 Web 应用清单。  清单定义应用在主屏幕上的显示方式、从主屏幕启动时指导用户位置以及应用在启动时的外观。  
+如果希望用户能够将应用添加到其移动主屏幕，则需要 Web 应用清单。  清单定义应用在主屏幕上的显示方式、从主屏幕启动时向用户显示什么位置，以及应用在启动时的外观。  
 
 <!--Related Guides:  
 
@@ -59,13 +59,13 @@ ms.locfileid: "11804142"
 
 <!--TODO:  Link to sections when available. -->
 
-设置清单后，可以使用"应用程序"面板的"清单******"** 窗格进行检查。  
+设置清单后，可以使用"应用程序"面板的"清单****"窗格进行检查。 ****  
 
 :::image type="complex" source="../media/manifest-pane.msft.png" alt-text="清单窗格" lightbox="../media/manifest-pane.msft.png":::
    清单**窗格**  
 :::image-end:::  
 
-*   To look at the manifest source， choose the link below **App Manifest** label \(`https://airhorner.com/manifest.json` in the previous figure\) .  
+*   To look at the manifest source， choose the link below **App Manifest** label \ (`https://airhorner.com/manifest.json` in the previous figure\) .  
 <!-- *   Choose the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->  
 *   " **标识"** 和" **演示文稿** "部分仅以更用户友好的显示方式显示清单源中的字段。  
 *   " **图标** "部分显示你指定的每个图标。  
@@ -108,7 +108,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 应用程序**面板**中的"服务工作者****"窗格是 DevTools 中用于检查和调试服务工作者的主要位置。  
 
-:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="服务工作人员窗格" lightbox="../media/service-workers-pane.msft.png":::
+:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="&quot;服务工作人员&quot;窗格" lightbox="../media/service-workers-pane.msft.png":::
    " **服务工作人员"** 窗格  
 :::image-end:::  
 
@@ -121,8 +121,8 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 *   " **同步** "按钮模拟后台同步事件。  
 *   " **注销"** 按钮将取消注册指定的服务工作器。  请查看清除 [存储](#clear-storage) ，了解通过单个按钮选择取消注册服务工作器以及擦除存储和缓存的方法。  
 *   Source **** 行将告知您当前正在运行的服务工作线程的安装时间。  链接是服务工作者的源文件的名称。  选择链接将你发送到服务工作者的源。  
-*   " **状态** "行将告知您服务工作者的状态。  上图中绿色状态指示器 \(旁边的 ID ) 当前处于活动状态的服务 `#36` 工作者。  在状态旁边，如果服务**** 工作进程已停止\(则显示启动按钮 \) 如果服务工作进程正在运行 (则**** 显示一个停止按钮 \) 。  服务工作者设计为随时由浏览器停止和启动。  使用停止按钮显式停止服务 **工作器** 可能会模拟这一点。  停止服务工作进程是测试服务工作线程再次启动备份时代码行为方式的一种好方法。  它经常显示错误，因为对永久性全局状态的错误假设。  
-*   **"客户端**"行将告知您服务工作线程的作用域。  当你 **启用** "全部显示"复选框时，焦点 **按钮最** 有用。  启用该复选框后，将列出所有注册的服务工作者。  如果选择其他选项卡中运行**** 的服务工作线程旁边的焦点按钮，Microsoft Edge焦点位于该选项卡上。  
+*   " **状态** "行将告知您服务工作者的状态。  上图中绿色状态指示器 \ (旁边的 ID ) `#36` 当前处于活动状态的服务工作者。  在状态旁边，如果服务**** 工作进程已停止\ (则显示启动按钮 \) 如果服务工作进程正在运行，则**** 显示一个停止按钮 \ (\) 。  服务工作者设计为随时由浏览器停止和启动。  使用停止按钮显式停止服务 **工作器** 可能会模拟这一点。  停止服务工作进程是测试服务工作线程再次启动备份时代码行为方式的一种好方法。  它经常显示错误，因为对永久性全局状态的错误假设。  
+*   **"客户端**"行将告知您服务工作线程的作用域。  当 **启用** "全部显示"复选框时，焦点 **按钮最** 有用。  启用该复选框后，将列出所有注册的服务工作者。  如果选择其他选项卡中运行**** 的服务工作线程旁边的焦点按钮，Microsoft Edge焦点位于该选项卡上。  
     
 如果服务工作线程导致任何错误，将显示名为 **"错误"** 的新标签。  
 
@@ -137,7 +137,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 ## <a name="service-worker-caches"></a>服务工作线程缓存  
 
-缓存**存储**窗格提供已使用 \(service worker\) [Cache API][MDNWebCacheAPI]缓存的资源的只读列表。  
+"**缓存存储**窗格提供已使用 \ (service worker\) [Cache API][MDNWebCacheAPI]缓存的资源的只读列表。  
 
 :::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="缓存存储窗格" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
    缓存**存储**窗格  
@@ -148,22 +148,22 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 如果您打开了两个或多个缓存，则缓存会显示在下面的"缓存缓存存储下。 ****  
 
-:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="缓存存储下拉列表" lightbox="../media/cache-pane-cache-storage.msft.png":::
+:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="&quot;缓存存储下拉列表" lightbox="../media/cache-pane-cache-storage.msft.png":::
    "**缓存存储**下拉列表  
 :::image-end:::  
 
 ## <a name="quota-usage"></a>配额使用情况  
 
-"缓存"窗格**存储**某些响应可能标记为"不透明"。  这是指未启用[CORS][FetchHttpCorsProtocol] **时**从不同源（如CDN或远程 API）检索的响应。  
+"缓存"窗格**存储**某些响应可能标记为"不透明"。  这是指未启用[CORS][FetchHttpCorsProtocol]时从不同源（如**CDN或远程**API）检索的响应。  
 
 <!--TODO:  Link Web "CDN" section when available. -->  
 <!--TODO:  Link Web "opaque" section when available. -->
 
-为了避免跨域信息泄露，会向用于计算存储配额限制的不透明响应的大小添加大量填充 (例如 API 是否引发\) 异常以及是否报告异常。 `QuotaExceeded` `navigator.storage`  
+为了避免跨域信息泄露，会向用于计算存储配额限制的不透明响应的大小添加大量填充 (例如是否引发 `QuotaExceeded` 异常\) 以及是否由 API 报告异常。 `navigator.storage`  
 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 
-此填充的详细信息因浏览器而异，但对于 Microsoft Edge，这意味着任何单个缓存的不透明响应对整体存储使用率的影响**** 最小大小约为[7 MB。][ChromiumIssues796060#c17]  在确定要缓存的不透明响应数时，请记住填充，因为根据不透明资源的实际大小，你很容易超过存储配额限制，这要快得多。  
+此填充的详细信息因浏览器而异，但对于 Microsoft Edge，这意味着任何单个缓存的不透明响应对整体存储使用率**** 的影响最小大小约为[7 MB。][ChromiumIssues796060#c17]  在确定要缓存的不透明响应数时，请记住填充，因为根据不透明资源的实际大小，你很容易超过存储配额限制，这要快得多。  
 
 相关指南：  
 
@@ -174,7 +174,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 ## <a name="clear-storage"></a>清除存储  
 
-"**清除存储**窗格是开发渐进式 Web 应用时非常有用的功能。  通过此窗格，您可以取消注册服务工作器，并清除所有缓存和存储，并可选择一个按钮。  <!--Check out the section below to learn more.  -->
+"**清除存储**窗格是开发渐进式 Web 应用时非常有用的功能。  通过此窗格，您可以取消注册服务工作器，并清除所有缓存和存储，并单击一个按钮即可。  <!--Check out the section below to learn more.  -->
 
 <!--Related Guides:  
 
@@ -197,7 +197,7 @@ Related Guides:
 
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "使用开发人员工具Microsoft Edge菜单运行命令|Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"  
 
 [ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium问题 796060：存储代码位于 html 中时，缓存值每次刷新时增加"  
 

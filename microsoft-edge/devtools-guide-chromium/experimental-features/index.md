@@ -23,11 +23,11 @@ no-loc:
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
 ms.openlocfilehash: 4c2a100e85e75aec6e70bdefd8db3170dbb0f2af
-ms.sourcegitcommit: 22acb7a57d9d8e21e4348aa699c1a2c53618e93d
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "11936655"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976645"
 ---
 # <a name="experimental-features"></a>试验功能
 
@@ -53,11 +53,11 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 
 <!-- ====================================================================== -->
-## <a name="turn-on-experimental-features"></a>打开实验性功能
+## <a name="turning-on-experimental-features"></a>打开实验性功能
 
 若要在 (中打开\) 或关闭\Microsoft Edge：
 
-1.  [打开 DevTools][DevtoolsOpenIndex]。  为此，在"Microsoft Edge"中，设置"更多****"按钮，这是三个点 (省略号) 。  然后将鼠标悬停在 **"更多工具"上**，然后选择"**开发人员工具"。**
+1.  [打开 DevTools][DevtoolsOpenIndex]。  为此，在"Microsoft Edge"中，设置"更多"**** 按钮，这是三个点 (省略号) 。  然后将鼠标悬停在 **"更多工具"上**，然后选择"**开发人员工具"。**
 
 1.  打开["设置][DevToolsCustomizeIndexSettings]工具"的"设置"窗格。  为此，请选择 **"设置 (** 齿轮) 图标。
 
@@ -69,7 +69,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 1.  在 **实验** 页面上，滚动浏览所有可用实验功能的列表，并选中要测试的每个功能旁边的复选框。  某些实验默认打开。
 
-1.  选择**右上角**的 X**以关闭**设置。
+1.  选择**右上角**的 X 以**关闭设置。**
 
 1.  选择" **重新加载 DevTools"** 按钮。
 
@@ -92,8 +92,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 1.  在部分 **Source Order Viewer** 下，选中" **显示源订单"** 复选框。
 1.  突出显示任何 HTML 元素，以显示该网页源中顺序的覆盖。
 
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
-   **Source Order Viewer** in the **Accessibility** pane
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::no-loc（源订单查看器）:::在辅助功能窗格中" lightbox="../media/experiments-source-order-viewer.msft.png"::: **Source Order Viewer** 在“**辅助功能**”窗格中
 :::image-end:::
 
 此实验从版本 86 Microsoft Edge开始提供，并且默认打开。
@@ -125,7 +124,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 ## Enable Composited Layers in 3D View
 <!-- on by default in 94 -->
 
-您可以将 Layers 与 z 索引和文档对象模型 \(DOM\) 一起可视化。  此功能可帮助你进行调试，而无需频繁切换上下文。  你发现减少上下文切换是一个主要的痛点。  不能始终弄清楚你编写的代码对 Web 应用有何影响。  为了获得全面的视觉调试体验，现在已将 3D View 和复合层组合到一起。
+您可以将 Layers 与 z 索引和文档对象模型 \ (DOM\) 一起可视化。  此功能可帮助你进行调试，而无需频繁切换上下文。  你发现减少上下文切换是一个主要的痛点。  不能始终弄清楚你编写的代码对 Web 应用有何影响。  为了获得全面的视觉调试体验，现在已将 3D View 和复合层组合到一起。
 
 若要使用**复合层**，请完成以下步骤。
 
@@ -137,7 +136,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
    **复合层** 窗格
 :::image-end:::
 
-此实验从版本 87 Microsoft Edge开始，并且默认打开。
+此实验从版本 87 Microsoft Edge开始提供，并且默认打开。
 
 
 <!-- ====================================================================== -->
@@ -150,7 +149,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 1.  打开“**网络**”窗格。
 1.  查找要更改和重新发送的网络请求。
-1.  打开上下文菜单 \(右键单击\) ，然后选择编辑 **和重播**。
+1.  打开上下文菜单 \ (右键单击\) ，然后选择编辑 **和重播**。
 1.  当**网络控制台**打开时，编辑网络请求信息。
 1.  选择 **"发送"。**
 
@@ -209,7 +208,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 这是从版本 89 Microsoft Edge的试验，自版本 94 起是一项常规功能。<!-- which release changed this from Experimental?-->
 
-现在，可以使用新的"更多工具"\(**** `+` \) 图标打开更多工具。  打开 **Enable + button tab menus to open more tools** 试验并重新加载 DevTools 后，DevTools 顶部选项卡组的右侧将显示一个加号 \(`+`\)。  若要显示可添加到选项卡栏的其他工具的列表，请选择"更多工具"\(**** `+` \) 图标。
+现在，可以使用新的"更多工具"\ (**** `+` \) 图标打开更多工具。  打开 **Enable + button tab menus to open more tools** 试验并重新加载 DevTools 后，DevTools 顶部选项卡组的右侧将显示一个加号 \(`+`\)。  若要显示可添加到选项卡栏的其他工具的列表，请选择"更多工具"\ (**** `+` \) 图标。
 
 :::image type="complex" source="../media/experiments-more-tools-button.msft.png" alt-text="顶部窗格中的更多工具" lightbox="../media/experiments-more-tools-button.msft.png":::
    顶部窗格中的**更多工具**
@@ -245,7 +244,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 #### <a name="displaying-persistent-overlays-on-flexbox-layouts-with-the-inspect-tool"></a>使用 Inspect 工具在 Flexbox 布局上显示永久性覆盖
 
-**检查**工具提供了一种快速识别和可视化网站 CSS 弹性框布局的方法，通过将鼠标悬停该布局上方来实现这一点。  选择 **DevTools** (左上角的"检查 ![ ](../media/inspect-icon.msft.png) \(检查 \) "图标。  然后，在调试网站时，将鼠标悬停在弹性容器上方以在其周围显示轮廓。
+**检查**工具提供了一种快速识别和可视化网站 CSS 弹性框布局的方法，通过将鼠标悬停该布局上方来实现这一点。  选择 **DevTools** (左上角的"检查 ![ ](../media/inspect-icon.msft.png) \ (检查 \) "图标。  然后，在调试网站时，将鼠标悬停在弹性容器上方以在其周围显示轮廓。
 
 :::image type="complex" source="../media/flexbox-hover.msft.png" alt-text="使用检查工具显示弹性框容器" lightbox="../media/flexbox-hover.msft.png":::
    使用**检查**工具显示弹性框容器
@@ -292,7 +291,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 [Devtools3dViewIndex]: ../3d-view/index.md ":::no-loc（3D 视图）::: | Microsoft Docs"
 [DevtoolsCssGrid]: ../css/grid.md "检查 Microsoft Edge DevTools 中的 CSS 网格 | Microsoft Docs"
 [DevtoolsCustomizeIndex]: ../customize/index.md "自定义 Microsoft Edge DevTools | Microsoft Docs"
-[DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "设置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"
+[DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "设置 - 自定义 Microsoft Edge 开发人员工具 | Microsoft Docs"
 [DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action "编辑开发工具操作的键盘快捷方式 | Microsoft Docs"
 [DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-from-visual-studio-code "匹配来自代码Microsoft Visual Studio键盘|Microsoft Docs"
 [DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "在 Microsoft Edge DevTools 中模拟双屏幕可折叠设备 | Microsoft Docs"

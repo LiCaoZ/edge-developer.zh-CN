@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: e120507d05b95f857dbc27d8151fe460405aba714004f3685a76d8fd41583c81
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 2cb57a8ea1ea34506b4698d80ae0981d8716f3d2
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11802626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975990"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -29,7 +29,7 @@ ms.locfileid: "11802626"
    limitations under the License.  -->
 # <a name="navigate-microsoft-edge-devtools-with-assistive-technology"></a>使用辅助技术导航 Microsoft Edge 开发工具  
 
-本文可帮助主要依赖于辅助技术的用户（如屏幕阅读器）使用[Microsoft Edge DevTools。][MicrosoftEdgeDevtoolsMain]  DevTools 是内置于 Web 浏览器的一Microsoft Edge工具。  
+本文可帮助主要依赖辅助技术的用户（如屏幕阅读器）使用[Microsoft Edge DevTools。][MicrosoftEdgeDevtoolsMain]  DevTools 是内置于 Web 浏览器的一Microsoft Edge工具。  
 
 有关改善网页辅助功能的 DevTools 功能，请参阅 [DevTools][DevtoolsAccessibilityReference] 中的辅助功能测试和使用 [DevTools](accessibility-testing-in-devtools.md)的辅助功能测试概述。
 
@@ -37,7 +37,7 @@ ms.locfileid: "11802626"
 
 ## <a name="overview"></a>概述  
 
-DevTools 分为一系列工具。   (在命令菜单中，**** 工具称为面板 。) 工具组织__ 到主工具栏和箱工具栏上的[ARIA][W3CWaiAriaTablist]选项卡列表中。
+DevTools 分为一系列工具。   (在命令**菜单中**，工具称为面板 。) 工具组织__ 到主工具栏和箱工具栏上的[ARIA][W3CWaiAriaTablist]选项卡列表中。
 
 以下是工具示例：
 
@@ -58,8 +58,8 @@ DevTools 分为一系列工具。   (在命令菜单中，**** 工具称为面�
 
 ### <a name="navigate-by-keyboard"></a>使用键盘导航  
 
-*   打开 DevTools 后，选择 `Control` + `]` \(Windows、Linux\) 或 `Command` + `]` \(macOS\) 将焦点移到主工具栏上的下一个工具。
-*   选择 `Control` + `[` \(Windows、Linux\) 或 `Command` + \(macOS\) 将焦点移到主工具栏上的上 `[` 一个工具。
+*   打开 DevTools 后，选择 `Control` + `]` \ (Windows、Linux\) 或 `Command` + `]` \ (macOS\) 将焦点移到主工具栏上的下一个工具。
+*   选择 `Control` + `[` \ (Windows、Linux\) 或 `Command` + \ (macOS\) 将焦点移到主工具栏上的上 `[` 一个工具。
 *   选择 `Tab` 或 `Shift` + 重复选择，直到焦点移到主工具栏或箱工具栏的选项卡，然后使用箭头键在工具 `Tab` 之间移动。
 
 **已知问题**  
@@ -126,7 +126,7 @@ DevTools 分为一系列工具。   (在命令菜单中，**** 工具称为面�
 
 元素 **工具** 包含用于检查应用于元素的 CSS 或辅助功能树中相关位置等内容的其他选项卡。  
 
-*   焦点在**DOM**树中的节点上时，选择直到 `Tab` 您听到已**** 选择样式选项卡。  
+*   焦点在 **DOM**树中的节点上时，选择直到 `Tab` 您听到" **样式"** 选项卡已选中。  
 *   使用 `Right Arrow` 浏览其他可用的选项卡。
 
 “**DOM 树**”将具有 `href` 属性的元素转换为可聚焦链接，因此可能需要多次选择 `Tab` 以访问“**样式**”窗格。  
@@ -177,7 +177,7 @@ DOM **断点** 和 **属性** 选项卡不可通过键盘访问。
 #### <a name="add-a-new-style-rule"></a>添加新的样式规则  
 
 “**新样式规则**”按钮与“**元素类别**”按钮相邻。  若要将焦点移到它，请选择 `Tab` ，然后选择 `Enter` 。  焦点将移到样式检查器内的可编辑文本字段中。  该字段的初始文本内容是在“**DOM 树**”中所选元素的标记名称。  
-您可以在此字段中键入您希望的任何类名称，然后选择为其分配 `Tab` CSS 属性。  
+您可以在此字段中键入您希望的任何类名称，然后选择为其 `Tab` 分配 CSS 属性。  
 
 ### <a name="computed-tab"></a>已计算选项卡  
 
@@ -205,7 +205,7 @@ DOM **断点** 和 **属性** 选项卡不可通过键盘访问。
 
 在 `Tab` "元素"工具的"辅助功能 **"** 选项卡内选择要四 **处移动的** 键。
 
-" **辅助功能"** 选项卡位于"样式" **选项卡** 附近。在"辅助功能"选项卡上，有一些控件用于探索辅助功能树、应用于元素的 ARIA 属性以及计算出的辅助功能属性。  有关详细信息，请导航到使用 [辅助功能选项卡测试辅助功能][DevtoolsAccessibilityTab]。
+" **辅助功能"** 选项卡位于"样式" **选项卡** 附近。在"辅助功能"选项卡上，有一些控件用于探索辅助功能树、应用于元素的 ARIA 属性以及计算的辅助功能属性。  有关详细信息，请导航到使用 [辅助功能选项卡测试辅助功能][DevtoolsAccessibilityTab]。
 
 #### <a name="accessibility-tree"></a>辅助功能树  
 
@@ -213,7 +213,7 @@ DOM **断点** 和 **属性** 选项卡不可通过键盘访问。
 
 **已知问题**  
 
-*   对于 MacOS 屏幕阅读器（如**** VoiceOver）来说，"辅助功能"选项卡Microsoft Edge [ARIA][W3CWaiAriaTree]树的类型可能未正确公开。  订阅 [Chromium 问题 #868480][ChromiumIssues868480] 以获取有关此问题进展的通知。  
+*   对于 macOS[屏幕阅读器][W3CWaiAriaTree]（如**** VoiceOver）来说，"辅助功能"选项卡Microsoft Edge ARIA 树的类型可能未正确公开。  订阅 [Chromium 问题 #868480][ChromiumIssues868480] 以获取有关此问题进展的通知。  
 *   每个 **ARIA 属性** 和 **已计算属性** 部分都标记为 [ARIA 树][W3CWaiAriaTree]，但当前每个部分都不具有焦点管理且不可通过键盘操作。  
 
 ## <a name="lighthouse-tool"></a>Lighthouse 工具
@@ -243,7 +243,7 @@ Lighthouse 报告分为与每个审核类别对应的部分。  报告打开时�
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
-[DevtoolsAccessibilityReference]: reference.md "DevTools |Microsoft Docs"  
+[DevtoolsAccessibilityReference]: reference.md "DevTools | 中的辅助功能测试功能Microsoft Docs"  
 [DevtoolsAccessibilityTab]: accessibility-tab.md "使用&quot;辅助功能&quot;选项卡选项测试|Microsoft Docs"  
 [MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft 文档"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "使用 Microsoft Edge 开发工具命令菜单运行命令"  

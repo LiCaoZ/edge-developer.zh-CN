@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: b40c9b5d29cc8045c1c3ac6ca3568f7d6c907730d0e6e6bf570dfc9ff87a4a8b
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 3240e437a917dd7074a0584b91dcc6c34576ca24
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11808240"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976663"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -33,7 +33,7 @@ ms.locfileid: "11808240"
 
 ### <a name="summary"></a>摘要  
 
-*   使用 source 地图将缩小代码映射到源代码。  然后，您能够读取和调试原始源中的已编译代码。  
+*   使用源代码地图缩小代码映射到源代码。  然后，您能够读取和调试原始源中的已编译代码。  
 *   只能使用能够生成源处理器的预处理器地图。  
 *   验证 Web 服务器能否为源服务器地图。  
     
@@ -56,19 +56,19 @@ ms.locfileid: "11808240"
 
 通常将以下类型的预处理器与 Source 地图：  
 
-*   Transpilers [\(，Traceur][BabelJS] [][GitHubWikiGoogleTraceurCompiler]\)   
-*   Compilers \([Closure Compiler][GitHubGoogleClosureCompiler]， [TypeScript][|::ref1::|Main]， [CoffeeScript][|::ref2::|Main]，[则 ) ][DartMain]  
-*   Minifiers \([UglifyJS][GitHubMishooUglifyJS]\)   
+*   Transpilers [\ (，Traceur][BabelJS]\) [][GitHubWikiGoogleTraceurCompiler]  
+*   Compilers \ ([Closure Compiler][GitHubGoogleClosureCompiler]， [TypeScript][|::ref1::|Main]， [CoffeeScript][|::ref2::|Main]， [Compiler][DartMain]\)   
+*   Minifiers \ ([UglifyJS][GitHubMishooUglifyJS]\)   
     
 ## <a name="source-maps-in-devtools-sources-tool"></a>DevTools 地图工具中的源源  
 
 来自地图的源文件会导致 DevTools 加载原始文件以及缩小的文件。  然后，使用原始文件设置断点并逐步执行代码。  同时，Microsoft Edge运行缩小代码。  通过运行代码，你可以错觉运行生产中的开发网站。  
 
-在 DevTools 地图源客户端时，应该会注意到 JavaScript 未编译，并且它引用的所有单个 JavaScript 文件都显示出来。  DevTools 地图源映射使用的是源映射，但基础功能实际上运行已编译的代码。  任何错误、日志和断点都映射到开发人员代码，以便进行出色的调试。  实际上，它让你产生一种在生产中运行开发网站的错觉。  
+在 DevTools 地图源版本时，应该会注意到 JavaScript 未编译，并且它引用的所有单个 JavaScript 文件都显示出来。  DevTools 地图源映射使用的是源映射，但基础功能实际上运行已编译的代码。  任何错误、日志和断点都映射到开发人员代码，以便进行出色的调试。  实际上，它让你产生一种在生产中运行开发网站的错觉。  
 
 ### <a name="enable-source-maps-in-settings"></a>在设置地图源源  
 
-源地图默认启用<!-- \(as of Microsoft Edge 39\)-->，但如果您想要仔细检查或启用它们;First open DevTools， choose **Customize and control DevTools** \(`...` \) >**设置**.  在首选项**窗格的****源下**，启用**JavaScript 源地图。**  您还可以启用启用 CSS**源地图。**  
+源地图默认启用<!-- \(as of Microsoft Edge 39\)-->，但如果您想要仔细检查或启用它们;First open DevTools， choose **Customize and control DevTools** \ (`...` \) >**设置**.  在首选项**窗格的****源下，** 启用**JavaScript 源地图。**  您还可以启用启用 CSS**源地图。**  
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="启用源地图" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
    **启用 JavaScript 源地图**  
@@ -76,10 +76,10 @@ ms.locfileid: "11808240"
 
 ### <a name="debugging-with-source-maps"></a>使用 Source 地图  
 
-调试代码并启用地图时，源地图显示在两处：  
+调试代码并启用源代码地图，源地图显示在两处：  
 
-1.  在控制台 \(源的链接应该是原始文件，而不是生成的\)   
-1.  单步执行代码 \(调用堆栈中的链接应打开原始源文件\)   
+1.  在控制台 \ (source 的链接应该是原始文件，而不是生成的\)   
+1.  单步执行代码 \ (调用堆栈中的链接应打开原始源文件\)   
     
 <!--todo: add link to debugging your code when section is available -->  
 <!--[DebugBreakpointsStepCode]: ../debug/breakpoints/step-code.md ""  -->  
@@ -88,7 +88,7 @@ ms.locfileid: "11808240"
 
 虽然 不是 Source Map 规范的一部分，但 允许您在使用 evals 时更轻松地 `@sourceURL` 进行开发。  帮助程序显示类似于 `//# sourceMappingURL` 属性，并提及源地图 V3 规范。  
 
-通过在你的代码中包括以下特殊注释（已对此进行评论）可以命名 evals 以及内联脚本和样式，以便每个注释在 DevTools 中显示为更符合逻辑的名称。  
+通过在你的代码中包括以下特殊注释（已对此进行评论）中，你可以命名 evals 以及内联脚本和样式，以便每个注释在 DevTools 中显示为更符合逻辑的名称。  
 
 ```javascript
 //# sourceURL=source.coffee
@@ -137,10 +137,10 @@ ms.locfileid: "11808240"
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)由[Meggin Kearney][MegginKearney] \(Tech Writer\) 和[Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate、Google：Tools、Performance、Animation 和 UX\) 创作。  
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)由[Meggin Kearney][MegginKearney] \ (Tech Writer\) 和[Paul Bakaus][PaulBakaus] \ (Open Web Developer Advocate、Google：Tools、Performance、Animation 和 UX\) 创作。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-本作品根据 [知识共享署名 4.0 国际许可 ][CCA4IL] 获得许可。  
+本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

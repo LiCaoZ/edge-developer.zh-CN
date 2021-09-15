@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 0694a88b2f25993ec02240eca4cc7e3c41ffb6cc07f1b60509f05a5e165f4e64
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: bbac00ab46e205fb692cc3de3e5f08ba854b0911
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11804077"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975998"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 

@@ -9,11 +9,11 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
 ms.openlocfilehash: fdedb23f3398d0ee6b19cdcea309f48d3d284cd1
-ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "11710674"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975937"
 ---
 # <a name="threading-model-for-webview2"></a>WebView2 的线程模型
 
@@ -26,7 +26,7 @@ ms.locfileid: "11710674"
    :::column-end:::
 :::row-end:::  
 
-WebView2 控件基于组件对象模型 [ (COM) ][WindowsWin32ComTheComponentObjectModel] 并且必须在单个线程的 Sta (STA [) ][WindowsWin32ComSingleThreadedApartments] 上运行。  
+WebView2 控件基于组件对象模型 [ (COM) ， ][WindowsWin32ComTheComponentObjectModel] 并且必须在单个线程的 Sta ([STA) ][WindowsWin32ComSingleThreadedApartments] 上运行。  
 
 ## <a name="thread-safety"></a>线程安全  
 
@@ -58,7 +58,7 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 }
 ```     
 
-相反，应安排在事件处理程序完成后进行适当的工作，如以下代码所示。
+相反，请安排在事件处理程序完成后进行适当的工作，如以下代码所示。
 
 ```csharp
 private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessageReceivedEventArgs e)
@@ -90,11 +90,11 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 
 某些 WebView2 事件读取在相关事件参数上设置的值，或在事件处理程序完成后启动一些操作。  如果还需要运行异步操作（如事件处理程序），请对关联事件的事件参数 `GetDeferral` 使用 方法。  返回的对象可确保在请求 的 方法之前不会认为事件 `Deferral` `Complete` `Deferral` 处理程序已完成。  
 
-例如，可以使用 事件在事件处理程序完成时提供 作为子 `NewWindowRequested` `CoreWebView2` 窗口进行连接的 。  但是，如果需要异步创建 ，应在 `CoreWebView2` 上 `GetDeferral` 请求 方法 `NewWindowRequestedEventArgs` 。  在 异步创建 后，在 上设置 属性，该方法返回的对象上的 `CoreWebView2` `NewWindow` `NewWindowRequestedEventArgs` `Complete` `Deferral` `GetDeferral` 请求。  
+例如，事件处理程序完成后，可以使用 事件提供 以作为子 `NewWindowRequested` `CoreWebView2` 窗口进行连接。  但是，如果需要异步创建 ，应在 `CoreWebView2` 上 `GetDeferral` 请求 方法 `NewWindowRequestedEventArgs` 。  在 异步创建 后，在 上设置 属性，该方法返回的对象上的 `CoreWebView2` `NewWindow` `NewWindowRequestedEventArgs` `Complete` `Deferral` `GetDeferral` 请求。  
 
 ## <a name="block-the-ui-thread"></a>阻止 UI 线程  
 
-WebView2 依赖 UI 线程的消息处理器来运行事件处理程序回调和异步方法完成回调。  如果使用阻止消息发送的方法（如 或 ），则 WebView2 事件处理程序和 `Task.Result` `WaitForSingleObject` async-method 完成处理程序不会运行。  例如，以下代码无法完成，因为邮件在等待完成时 `Task.Result` 停止消息 `ExecuteScriptAsync` 等待。  由于阻止了消息拦截， `ExecuteScriptAsync` 无法完成 。
+WebView2 依赖 UI 线程的消息处理器来运行事件处理程序回调和异步方法完成回调。  如果使用阻止消息发送的方法（如 或 ），则 WebView2 事件处理程序和 `Task.Result` `WaitForSingleObject` async-method 完成处理程序不会运行。  例如，以下代码无法完成，因为邮件在等待完成时停止 `Task.Result` 消息 `ExecuteScriptAsync` 等待等待。  由于阻止了消息拦截， `ExecuteScriptAsync` 无法完成 。
 
 例如，下面的代码不起作用，因为它使用 `Task.Result` 。
 
@@ -133,7 +133,7 @@ private async void Button_Click(object sender, EventArgs e)
 <!-- external links -->
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 类|Microsoft Docs"  
 
-[WindowsWin32ComSingleThreadedApartments]: /windows/win32/com/single-threaded-apartments "单线程处理|Microsoft Docs"  
+[WindowsWin32ComSingleThreadedApartments]: /windows/win32/com/single-threaded-apartments "单线程主|Microsoft Docs"  
 [WindowsWin32ComTheComponentObjectModel]: /windows/win32/com/the-component-object-model "组件对象模型|Microsoft Docs"  
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"  

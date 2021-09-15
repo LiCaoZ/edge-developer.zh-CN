@@ -1,5 +1,5 @@
 ---
-description: 你的作业不会以确保你的网站在 android 和 Microsoft Edge运行。  即使设备模式能够模拟 iPhone 等一系列其他设备，我们也鼓励你查看由其他浏览器提供的模拟解决方案。
+description: 你的作业不会以确保你的网站在 Microsoft Edge 和 Android 中运行出色结束。  即使设备模式能够模拟 iPhone 等一系列其他设备，我们也鼓励你查看由其他浏览器提供的模拟解决方案。
 title: 模拟和测试其他浏览器
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 84f3d0d1aa852f38ebcafea45fce8605616e7cc7
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.openlocfilehash: 17ce85af486e983a9092e2c28bde7bc885f16abc
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893595"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975950"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -29,7 +29,7 @@ ms.locfileid: "11893595"
    limitations under the License.  -->
 # <a name="emulate-and-test-other-browsers"></a>模拟和测试其他浏览器  
 
-你的作业不会以确保你的网站在 android 和 Microsoft Edge运行。  即使设备模式能够模拟 iPhone 等一系列其他设备，我们也鼓励你查看由其他浏览器提供的模拟解决方案。  
+你的作业不会以确保你的网站在 Microsoft Edge 和 Android 中运行出色结束。  即使设备模式能够模拟 iPhone 等一系列其他设备，我们也鼓励你查看由其他浏览器提供的模拟解决方案。  
 
 ### <a name="summary"></a>摘要  
 
@@ -47,9 +47,9 @@ Firefox 具有响应 [式][MDNResponsiveDesignMode] 设计视图，该视图鼓�
 
 ### <a name="edgehtml-emulation"></a>EdgeHTML 模拟  
 
-若要模拟Windows Phones，请使用 Microsoft Edge \(EdgeHTML\) [内置模拟][ArchiveMicrosoftEdgeDevtoolsEmulation]。  
+若要模拟Windows Phones，请使用 Microsoft Edge \ (EdgeHTML\) [内置模拟][ArchiveMicrosoftEdgeDevtoolsEmulation]。  
 
-使用 [IE 11 仿真][Ie11DevToolsEmulation] 模拟页面在早期版本的 Internet Explorer。  
+使用 [IE 11 模拟][Ie11DevToolsEmulation] 模拟页面在早期版本的 Internet Explorer。  
 
 ## <a name="device-emulators-and-simulators"></a>设备仿真器与模拟器  
 
@@ -76,7 +76,7 @@ Android 仿真器附带 Android SDK，你需要下载为 Android [Studio][Androi
 :::image-end:::  
 -->  
 
-若要安装适用于 android Chromium内容命令行管理程序，请保持仿真器运行并运行以下命令。  
+若要安装适用于 Android Chromium命令行管理程序，请保持仿真器运行并运行以下命令。  
 
 ```shell
 git clone https://github.com/PaulKinlan/chromium-android-installer.git
@@ -111,7 +111,7 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 完成后，了解如何通过 Apple 开发人员文档使用 [模拟器][AppleSimulatorHelp]。  
 
 > [!NOTE]
-> 若要避免每次想要使用 iOS 模拟器时都打开 Xcode，请将其打开，将鼠标悬停在扩展坞中的 iOS 模拟器图标上，打开上下文菜单 \(右键单击\) ，然后选择"在扩展坞中**保留"。**  现在只要需要图标即可。  
+> 若要避免每次想要使用 iOS 模拟器时都打开 Xcode，请将其打开，将鼠标悬停在扩展坞中的 iOS 模拟器图标上，打开上下文菜单 \ (右键单击\) ，然后选择"在扩展坞中**保留"。**  现在只要需要图标即可。  
 
 ###  <a name="microsoft-edge-edgehtml"></a>Microsoft Edge (EdgeHTML)   
 
@@ -119,16 +119,17 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
    新式 IE VM  
 :::image-end:::  
 
-Microsoft Edge \(EdgeHTML\) Virtual Machines \(VM\) 使您能够通过 VirtualBox \(或 VMWare\) 访问计算机上不同版本的 EdgeHTML 和 IE。  在 [下载页面上选择虚拟机][MicrosoftDeveloperEdgeVms]。  
+Microsoft Edge \ (EdgeHTML\) Virtual Machines \ (VM\) 使您能够通过 VirtualBox \ (或 VMWare\) 访问计算机上不同版本的 EdgeHTML 和 IE。  在 [下载页面上选择虚拟机][MicrosoftDeveloperEdgeVms]。  
 
 ## <a name="cloud-based-emulators-and-simulators"></a>基于云的模拟器和模拟器  
 
 如果你无法使用仿真器，并且无法访问真实设备，则基于云的仿真器是下一个最佳选择。  与实际设备和本地仿真器不同，基于云的模拟器的一大优点是，可以跨不同平台自动执行网站单元测试。  
 
 *   [BrowserStack (商业) ][|::ref1::|] 是最容易用于手动测试。  选择操作系统，选择浏览器版本和设备类型，选择要浏览的 URL，然后它会调节可与你交互的托管虚拟机。  还可以在同一个屏幕中运行多个仿真器，从而可以同时跨多个设备测试应用的外观。  
-*   [LambdaTest (商业 ][|::ref2::|]) 可帮助你在 2000 多个浏览器和操作系统的组合上执行手动跨浏览器测试。 用户可以录制复杂 Bug 的视频并通过集成（如 Microsoft Teams、Slack 等）共享它们。 用户可以通过并行运行测试来加快测试速度。
+*   [LambdaTest (商业 ][|::ref2::|]) 可帮助你在 2000 多个浏览器和操作系统的组合上执行手动跨浏览器测试。 用户可以录制复杂 Bug 的视频，并通过集成（如 Microsoft Teams、Slack 等）共享它们。 用户可以通过并行运行测试来加快测试速度。
 *   [使用 Commercial (Labs) ][SauceLabs] 可以在仿真器内运行单元测试，这可能非常有用，可用于编写通过网站的流脚本，并随后在各种设备上观看有关此内容的视频录制。  您还可以对网站执行手动测试。  
 *   [商业 (设备) ][AppExperience] 不使用仿真器，而是使用你可以远程控制的真实设备。  如果你需要在特定设备上重现问题，并且可能未使用之前指南中的任一选项显示 Bug，这将非常有用。  
+*   [TestingBot (商业 ][|::ref3::|]) 可帮助你在 3000 多个浏览器和操作系统组合上执行手动测试和自动测试。 在 TestingBot 的仿真器和物理设备上测试你的网站和移动应用。
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
@@ -154,13 +155,14 @@ Microsoft Edge \(EdgeHTML\) Virtual Machines \(VM\) 使您能够通过 VirtualBo
 [MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "下载 Firefox 浏览器"  
 [SauceLabs]: https://saucelabs.com "一些实验室"  
 [LambdaTest]: https://www.lambdatest.com/ "LambdaTest" 
+[TestingBot]: https://testingbot.com/ "TestingBot" 
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)由[Meggin Kearney][MegginKearney] \(Tech Writer\) 和[Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate 在 Google |工具、性能、动画、UX\) 。  
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)由[Meggin Kearney][MegginKearney] \ (Tech Writer\) 和[Paul Bakaus][PaulBakaus] \ (Open Web Developer Advocate 在 Google |工具、性能、动画、UX\) 。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-此作品通过 [Creative Commons Attribution 4.0 国际许可证][CCA4IL]获得许可。  
+本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

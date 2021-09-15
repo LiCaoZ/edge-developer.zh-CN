@@ -9,11 +9,11 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
 ms.openlocfilehash: 3920f147e5af2a39efffff1ce91cf37a2e861a59
-ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "11934091"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976315"
 ---
 # <a name="win32-c-webview2-api-conventions"></a>Win32 C++ WebView2 API 约定  
 

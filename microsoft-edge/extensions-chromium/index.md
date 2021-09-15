@@ -1,6 +1,6 @@
 ---
 description: 构建和发布 Microsoft Edge (Chromium) 扩展的概述。
-title: 扩展Microsoft Edge概述
+title: Microsoft Edge扩展概述
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 08/25/2021
@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， chromium 扩展
 ms.openlocfilehash: 50582ee10c0467c5e9cdb301daccba8e38a6ca9c
-ms.sourcegitcommit: dc445eae30234af1ad3fa42645aabb940529912b
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "11934422"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976560"
 ---
-# <a name="overview-of-microsoft-edge-extensions"></a>扩展Microsoft Edge概述
+# <a name="overview-of-microsoft-edge-extensions"></a>Microsoft Edge扩展概述
 
 Microsoft Edge_扩展_是一个小程序， (开发人员) 添加或修改 Microsoft Edge (Chromium) 。  扩展旨在改善用户的日常浏览体验。  它提供了对目标受众很重要的功能。  
 
@@ -91,17 +91,17 @@ Microsoft Edge_扩展_是一个小程序， (开发人员) 添加或修改 Micro
 
 ### <a name="migrate-an-existing-extension-to-microsoft-edge"></a>将现有扩展迁移到 Microsoft Edge  
 
-如果你已针对另一个基于 Chromium 的浏览器开发扩展，你可以将其提交到 Microsoft Edge 加载项网站。 不需要重写扩展，并且必须验证它在 MicrosoftEdge 中是否工作。  将现有 Chromium 扩展迁移到其他 Chromium 浏览器时，请确保相同的 API 或替代项可用于目标浏览器。
+如果你已针对另一个基于 Chromium 的浏览器开发扩展，你可以将其提交到Microsoft Edge加载项网站。 不需要重写扩展，并且必须验证它在 MicrosoftEdge 中是否工作。  将现有 Chromium 扩展迁移到其他 Chromium 浏览器时，请确保相同的 API 或替代项可用于目标浏览器。
 
 有关将 Chrome 扩展移植到 Microsoft Edge 的更多信息，请导航到[将 Chrome 扩展移植到 Microsoft Edge (Chrome)][ExtensionsChromiumDeveloperGuidePortChrome]。 将扩展移植到目标浏览器后，下一步是发布它。  
 
 ### <a name="publish-to-the-microsoft-edge-add-ons-website"></a>发布到Microsoft Edge加载项网站
 
-若要开始将扩展发布到 Microsoft Edge，必须使用 Microsoft[][MicrosoftDeveloperRegistration]帐户 (MSA) 电子邮件帐户注册开发人员帐户，以将扩展列表提交到应用商店。  MSA 帐户的 Microsoft (电子邮件地址 `@outlook.com`) 、或 `@live.com` "@hotmail.com"。  选择要注册的电子邮件地址时，请考虑是否必须与组织Microsoft Edge转移或共享该扩展的所有权。  注册完成后，你可以创建新的扩展提交到应用商店。
+若要开始将扩展发布到 Microsoft Edge，必须使用 Microsoft 帐户[][MicrosoftDeveloperRegistration] (MSA) 电子邮件帐户注册开发人员帐户，以将扩展列表提交到应用商店。  MSA 帐户的 Microsoft (电子邮件地址 `@outlook.com`) 、或 `@live.com` "@hotmail.com"。  选择要注册的电子邮件地址时，请考虑是否必须与组织Microsoft Edge转移或共享该扩展的所有权。  注册完成后，你可以创建新的扩展提交到应用商店。
 
 若要将扩展提交到应用商店，需要提供以下项：
 
-*   包含代码文件的存档 \(`.zip`\) 文件。  
+*   包含代码文件的存档 \ (`.zip`\) 文件。  
 *   所有必需的视觉资源，包括徽标和小型促销磁贴。  
 *   可选促销媒体，如屏幕截图、促销贴片和视频 URL。  
 *   描述扩展名的信息，如名称、简短描述和隐私策略链接。  

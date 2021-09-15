@@ -7,12 +7,12 @@ ms.date: 04/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 兼容性， Web 平台， 密码展示， 眼睛图标
-ms.openlocfilehash: cc27fcfe2539dc4a78da77ba1181790ca40d9ccd1b894ad0b42241dadc3b0659
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 93f618d28e5fa2f16dda87b4122a097ef40618c9
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11803769"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976455"
 ---
 # <a name="customize-the-password-reveal-button"></a>自定义“密码显示”按钮  
 
@@ -77,7 +77,7 @@ ms.locfileid: "11803769"
 *   如果焦点从密码 **字段移** 开，浏览器将删除 **密码显示** 按钮。  
 *   如果脚本修改 **密码** 字段，浏览器将删除 **密码显示** 按钮。  
 
-如果**删除密码**显示按钮，用户必须删除密码字段的内容，密码**显示按钮**才能**** 再次显示。 如果用户离开未锁定的设备，此行为可防止某人对显示密码进行细微的调整。
+如果**删除密码**显示按钮，用户必须删除密码字段的内容，密码**显示按钮**才能**** 再次显示。 如果用户离开未锁定的设备，此行为将阻止某人进行细微的调整以显示密码。
     
 如果使用**密码**管理器自动填充密码字段，**** 则密码显示按钮不可用。  
 

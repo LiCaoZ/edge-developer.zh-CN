@@ -8,20 +8,20 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge， web development， html， css， origin trials， developer
-ms.openlocfilehash: 2e27be1c26a29937e7dad35a5498d3d3fbc4a40e471d0fa4109d8d8d5c497ccf
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: cc03ec556d4b32ca37cebcd4ee7ba155bfe4404b
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11804313"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976551"
 ---
 # <a name="use-origin-trials-in-microsoft-edge"></a>在 Microsoft Edge  
 
-开发人员可以使用源试用版在有限时段内在活动网站上试用实验性 API。  使用源试用版时，Microsoft Edge网站的用户可能会运行使用实验性 API 的代码。  若要访问每个用户计算机上实验性 API，你无需转到 并 `edge://flags` 打开功能标志。  有关详细信息，请导航到 [实验性 API][DeveloperMicrsoftEdgeOriginTrials]。  此外，你可以向浏览器工程师和 Web 标准社区提供有关 API 设计、用例或使用 API 的体验的反馈。  
+开发人员可以使用源试用版在有限时段内在活动网站上试用实验性 API。  使用源试用版时，访问Microsoft Edge的网站的用户可能会运行使用实验性 API 的代码。  若要访问每个用户计算机上实验性 API，你无需转到 并 `edge://flags` 打开功能标志。  有关详细信息，请导航到 [实验性 API][DeveloperMicrsoftEdgeOriginTrials]。  此外，你可以向浏览器工程师和 Web 标准社区提供有关 API 设计、用例或使用 API 的体验的反馈。  
 
 ## <a name="get-started-using-origin-trials"></a>源试用版使用入门  
 
-有关实验性 API 在 Microsoft Edge 中提供Microsoft Edge，请导航到["Microsoft Edge试用版开发人员控制台"。][DeveloperMicrsoftEdgeOriginTrials]  确保查看测试版的最低版本Microsoft Edge和试用结束日期，以评估在网站上使用实验性 API 的适用性。  
+有关实验性 API 在 Microsoft Edge 中可用，Microsoft Edge[源试用版开发人员控制台。][DeveloperMicrsoftEdgeOriginTrials]  确保查看测试版的最低版本Microsoft Edge和试用结束日期，以评估在网站上使用实验性 API 的适用性。  
 
 > [!NOTE]
 > 如果发生以下任一情况，实验可能会早于计划结束。  
@@ -33,9 +33,9 @@ ms.locfileid: "11804313"
 
 使用以下步骤注册实验性 API 的试用版。  
 
-1.  访问 Microsoft Edge[源试用版开发人员控制台][DeveloperMicrsoftEdgeOriginTrials]页面。  
+1.  访问[Microsoft Edge源试用版开发人员控制台][DeveloperMicrsoftEdgeOriginTrials]页面。  
 1.  在任何可用实验上选择"注册"按钮。  
-1.  使用你的帐户用户名和密码GitHub开发人员控制台。  
+1.  使用你的密码登录开发人员GitHub用户名和密码。  
 1.  选择 **"授权 MicrosoftEdge"。**  
 1.  填写表单。  
     
@@ -52,7 +52,7 @@ ms.locfileid: "11804313"
     
 ### <a name="apply-your-token"></a>应用令牌  
 
-将立即生成令牌，并显示在 Microsoft Edge[试用版开发人员控制台][DeveloperMicrsoftEdgeOriginTrials]页面上。  若要开始在网站上使用试用版，请使用以下任一方法将令牌应用到你的页面。  
+令牌将立即生成并显示在Microsoft Edge[试用版开发人员控制台][DeveloperMicrsoftEdgeOriginTrials]页面上。  若要开始在网站上使用试用版，请使用以下任一方法将令牌应用到你的页面。  
 
 *   将属性值和令牌添加到使用实验性 API 的每一页上 `origin-trial` `meta` 的 标记。  
     

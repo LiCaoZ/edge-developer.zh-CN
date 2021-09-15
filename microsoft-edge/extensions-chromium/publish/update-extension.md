@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
 ms.openlocfilehash: 11d844327d2d4a652745cb73b311f4a97b6174d7
-ms.sourcegitcommit: dc445eae30234af1ad3fa42645aabb940529912b
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "11934310"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976634"
 ---
 # <a name="update-a-microsoft-edge-extension"></a>更新Microsoft Edge扩展  
 
@@ -31,7 +31,7 @@ ms.locfileid: "11934310"
 
 1.  进行更改后，选择"保存**发布**"以  >  **** 更新扩展列表，并开始认证过程。  
 
-1.  列 `Status` 显示后 `In the store` ，你的扩展更新将在 Microsoft Edge 加载项网站上提供。  
+1.  列 `Status` 显示后 `In the store` ，你的扩展更新将在Microsoft Edge加载项网站上提供。  
 
 <!-- todo: uncomment after the API is available for use.
 After your extension has been initially created, you will be able to update it programmatically by [Using the Microsoft Edge Add-ons API][UsingAddonsAPI].
@@ -40,7 +40,7 @@ After your extension has been initially created, you will be able to update it p
 
 ## <a name="update-your-extension-during-the-certification-step"></a>在认证步骤中更新扩展  
 
-虽然扩展仍处于认证阶段，且在将其发布到 Microsoft Edge 加载项网站之前，你可以更新它。 如果你的扩展未能通过认证过程，你可能还需要更新你的扩展。    
+虽然你的扩展仍处于认证阶段，在将其发布到 Microsoft Edge 加载项网站之前，你可以更新它。 如果你的扩展未能通过认证过程，你可能还需要更新你的扩展。    
 
 若要检查扩展的状态，请导航到与合作伙伴中心上的一览 [相关联的仪表板][MicrosoftPartnerCenter]。  
 

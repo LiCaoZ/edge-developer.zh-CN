@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， JavaScript， Web 开发， f12 工具， devtools
-ms.openlocfilehash: 7f70d2fef3b1f2a7055a2ee26a92fa579ca9fb8dca68abee3ec95affd6eaeb80
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: f75ac6d728c9a69542b2f58df85248759267f76d
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11801339"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975941"
 ---
 # <a name="the-console-as-a-javascript-environment"></a>作为 JavaScript 环境的控制台  
 

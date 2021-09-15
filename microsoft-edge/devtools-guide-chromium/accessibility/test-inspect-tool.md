@@ -6,20 +6,20 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 6e363e07c252dd0305216cdbeda1241d5aa2bc193e1111e6b69eeeae9f8deadd
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: c95116d38e5b0bda88af43ef8bfde4204b8cb372
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11802358"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976543"
 ---
 # <a name="use-the-inspect-tool-to-detect-accessibility-issues-by-hovering-over-the-webpage"></a>使用"检查"工具将鼠标悬停在网页上以检测辅助功能问题
 
 当您 **将** 鼠标悬停在呈现的网页上时，Inspect 工具将显示有关各个元素的信息，包括辅助功能信息。
 相比之下，" **问题"** 工具会自动报告整个网页的问题。
 
-检查 **工具** 按钮 \(Inspect ![ ](../media/inspect-icon.msft.png) \) 位于 DevTools 的左上角。  选择" **检查工具"** 按钮时，该按钮将变为蓝色，指示 **"检查** "工具处于活动状态。
+检查 **工具** 按钮 \ (Inspect \) 位于 ![ ](../media/inspect-icon.msft.png) DevTools 的左上角。  选择" **检查工具"** 按钮时，该按钮将变为蓝色，指示 **"检查** "工具处于活动状态。
 
 当 **Inspect 工具** 处于活动状态时，将鼠标悬停在呈现网页上的任何元素上将显示 **Inspect** 覆盖。 此覆盖层显示有关该元素的常规信息和辅助功能信息。  "**检查"覆盖****层的**"辅助功能"部分显示有关文本颜色对比度、屏幕阅读器文本和键盘支持的信息。
 
@@ -34,9 +34,9 @@ ms.locfileid: "11802358"
 
 1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  选择**** DevTools 左上角的"检查 \(检查 \) "按钮，使图标突出显示为蓝色 ![ ](../media/inspect-icon.msft.png) () 。
+1.  选择**** DevTools (左上角的"检查 \ (检查 \) "按钮，使图标以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
 
-    :::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="若要打开检查工具，请选择检查按钮" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="若要打开&quot;检查&quot;工具，请选择&quot;检查&quot;按钮" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
         若要打开"检查 **"** 工具，请选择" **检查"** 按钮
     :::image-end:::
 
@@ -48,7 +48,7 @@ ms.locfileid: "11802358"
 
 检查覆盖 **的底部有** 一个 **辅助功能** 部分，其中包含以下信息：
 
-*   **对比度** 定义低视力用户能否理解元素。  [WCAG][WCAG]准则定义的对比率指示是否有足够的对比度 (绿色选中标记图标) 或 (橙色感叹号-点) 。 [][W3CContrastRatio]
+*   **对比度** 定义低视力用户能否理解元素。  [WCAG][WCAG]指南定义的对比率指示是否有足够的对比度 (绿色选中标记图标) 或 (橙色感叹号图标) 。 [][W3CContrastRatio]
 
 *   **名称和****角色**是屏幕阅读器等辅助技术将报告有关元素的内容。
     *   **Name**是元素的文本 `a` 内容。  对于 元素 `<a href="/">About Us</a>` **，Inspect** 工具中显示的 Name 为"关于我们"。
@@ -65,7 +65,7 @@ ms.locfileid: "11802358"
 
 "检查"覆盖**的顶部**（位于"辅助功能"部分上方****）列出了元素的以下详细信息。
 
-*   布局类型。 如果元素是使用弹性框或网格放置的，则图标 \(![网格布局图标](../media/grid-icon.msft.png)\) 显示。
+*   布局类型。 如果元素是使用弹性框或网格定位的，则图标 \ (![网格布局图标](../media/grid-icon.msft.png)\) 显示。
 *   元素的名称，如 、 `h1` `h2` 或 `div` 。
 *   元素的尺寸（以像素为单位）。
 *   作为颜色样本的颜色颜色 (或较小的、彩色的) 和字符串形式 (如 `#336699`) 。
@@ -81,9 +81,9 @@ ms.locfileid: "11802358"
 
 1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  选择**** DevTools 左上角的"检查"按钮 \(Inspect 工具图标 \) ，使按钮突出显示为蓝色 ![ ](../media/inspect-icon.msft.png) () 。
+1.  选择**** DevTools 左上角的"检查"按钮 \ (Inspect 工具图标 \) ，以便按钮突出显示为蓝色 ![ ](../media/inspect-icon.msft.png) () 。
 
-1.  将鼠标悬停在呈现的演示网页的不同部分上。  网页中的每个元素现在都显示一个多色覆盖。 此多色覆盖层可以显示元素内部的嵌套区域。 例如，将鼠标悬停在"猫"的 **左边距上**。  Inspect **工具** 使用不同颜色突出显示 **"猫** "部分的几个矩形部分，显示来自网页上 CSS 弹性框定义的布局。
+1.  将鼠标悬停在呈现的演示网页的不同部分上。  网页中的每个元素现在都显示一个多色覆盖层。 此多色覆盖层可以显示元素内部的嵌套区域。 例如，将鼠标悬停在"猫"的 **左边距上**。  Inspect **工具** 使用不同颜色突出显示 **"猫** "部分的几个矩形部分，显示来自网页上 CSS 弹性框定义的布局。
 
 :::image type="complex" source="../media/inspect-tool-flexbox-overlay.msft.png" alt-text="使用 Inspect 工具时的多色弹性框覆盖和信息覆盖" lightbox="../media/inspect-tool-flexbox-overlay.msft.png":::
     使用 Inspect 工具时的多色弹性框覆盖 **和信息** 覆盖
@@ -98,19 +98,19 @@ ms.locfileid: "11802358"
 
 1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  选择**** DevTools (左上角的"检查"按钮 \) "检查"工具 \) ，以便该按钮突出显示为 (![ ](../media/inspect-icon.msft.png) 蓝色) 。
+1.  选择**** DevTools (左上角的"检查"按钮 \) 检查工具 \) ，以便按钮突出显示为蓝色 ![ ](../media/inspect-icon.msft.png) () 。
 
 1.  选择" **元素"** 工具。
 
-1.  在 **"检查** "工具处于活动状态时，将鼠标悬停在呈现的网页的不同部分上。  在 **"元素** "工具中，HTML DOM 树会自动展开以显示有关您将鼠标悬停在的元素的信息。  悬停不会导致" **样式"** 窗格更新。
+1.  在 **"检查** "工具处于活动状态时，将鼠标悬停在呈现的网页的不同部分上。  在 **"元素** "工具中，HTML DOM 树会自动展开以显示有关您悬停在的元素的信息。  悬停不会导致" **样式"** 窗格更新。
 
-1.  现在，选择呈现的网页内的任何元素。  " **元素** "工具会自动打开并显示 DOM 树中元素的 HTML。 该工具还会在"样式"窗格中的 **元素上显示** 应用的 CSS。  选择呈现网页上的元素将关闭 **"检查"** 工具。
+1.  现在，选择呈现的网页中的任意元素。  Elements **** 工具会自动打开并显示 DOM 树中元素的 HTML。 该工具还会在"样式"窗格中的 **元素上显示** 应用的 CSS。  选择呈现网页上的元素将关闭 **"检查"** 工具。
 
-:::image type="complex" source="../media/a11y-testing-basics-inspector-selected-element.msft.png" alt-text="有关所选元素的详细信息将显示在元素工具中" lightbox="../media/a11y-testing-basics-inspector-selected-element.msft.png":::
+:::image type="complex" source="../media/a11y-testing-basics-inspector-selected-element.msft.png" alt-text="有关所选元素的详细信息将显示在&quot;元素&quot;工具中" lightbox="../media/a11y-testing-basics-inspector-selected-element.msft.png":::
     有关所选元素的详细信息将显示在 **"** 元素"工具中
 :::image-end:::
 
-在呈现的页面中选择元素后，可以使用"样式"选项卡**** (附近的"辅助功能"选项卡) 查看****"辅助功能树"并使用"源顺序查看器******"。**
+在呈现的页面中选择元素后，可以使用"辅助功能"选项卡 ("样式"选项卡) 查看"辅助功能**** 树"并使用"源顺序查看器 **"。** **** ****
 
 
 ## <a name="see-also"></a>另请参阅

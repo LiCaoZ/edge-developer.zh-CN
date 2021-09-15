@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 2e8a90c96ea63980883dc9317f19b0957bf13dded4a0a323b8dc9afb4cf7c9a0
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 80be38fad2819fc1b05314d71a1a590a31d3c6d2
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11800376"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976655"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -66,7 +66,7 @@ ms.locfileid: "11800376"
 
 左侧**导航**器窗格中的"代码**** 段"选项卡列出了您的代码段。  当您要编辑代码段时，您需要从"代码段"选项卡 **中打开** 它。  
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="代码段选项卡" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="&quot;代码段&quot;选项卡" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
    " **代码段"** 选项卡  
 :::image-end:::  
 
@@ -74,11 +74,11 @@ ms.locfileid: "11800376"
 
 1.  选择" **源"** 选项卡。 将显示 **"源** "工具。  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="在左侧打开页面选项卡的源工具" lightbox="../media/javascript-sources-page-pane.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="在左侧打开&quot;页面&quot;选项卡的&quot;源&quot;工具" lightbox="../media/javascript-sources-page-pane.msft.png":::
        在 **左侧** 打开" **页面"** 选项卡的"源"工具  
     :::image-end:::  
     
-1.  在左侧 **导航器** (窗格中，) 代码 **段"** 选项卡。 若要访问 **代码段** 选项，你可能需要选择更多 **选项卡** \(![ 更多选项卡 ](../media/more-tabs-icon.msft.png) \) 。  
+1.  在左侧 **导航器** (窗格中，) 代码 **段"** 选项卡。 若要访问 **代码段** 选项，你可能需要选择更多 **选项卡** \ (![ 更多选项卡 ](../media/more-tabs-icon.msft.png) \) 。  
     
 ### <a name="open-the-snippets-tab-with-the-command-menu"></a>使用命令菜单打开"代码段"选项卡  
 
@@ -136,7 +136,7 @@ ms.locfileid: "11800376"
 
 1.  [打开"代码段"选项卡](#open-the-snippets-tab)。  
 1.  选择要运行的代码片段的名称。  代码片段将在**代码编辑器**中打开。  
-1.  选择 **"运行代码段** \(![ 运行 ](../media/run-snippet-icon.msft.png) 代码段 \) "。  
+1.  选择 **"运行代码段** \ (![ 运行 ](../media/run-snippet-icon.msft.png) 代码段 \) "。  
     
 ### <a name="run-a-snippet-with-the-command-menu"></a>使用命令菜单运行代码片段  
 
@@ -153,19 +153,19 @@ ms.locfileid: "11800376"
 ## <a name="rename-snippets"></a>重命名代码片段  
 
 1.  [打开"代码段"选项卡](#open-the-snippets-tab)。  
-1.  将鼠标悬停在代码段名称上，打开上下文菜单 \(右键单击\) ， **然后选择重命名**。  
+1.  将鼠标悬停在代码段名称上，打开上下文菜单 \ (右键单击\) ， **然后选择重命名**。  
     
 ## <a name="delete-snippets"></a>删除代码片段  
 
 1.  [打开"代码段"选项卡](#open-the-snippets-tab)。  
-1.  将鼠标悬停在代码段名称上，打开上下文菜单 \(右键单击\) ，然后选择"删除 **"。**  
+1.  将鼠标悬停在代码段名称上，打开上下文菜单 \ (右键单击\) ，然后选择"删除 **"。**  
 
 ## <a name="save-snippets"></a>保存代码段  
 
 默认情况下，代码段仅在 DevTools 中可用，但您也可以将它们保存到磁盘。  
 
 1.  [打开"代码段"选项卡](#open-the-snippets-tab)。  
-1.  将鼠标悬停在代码段名称上，打开上下文菜单 \(右键单击\) ，然后选择"另**存为"。**  
+1.  将鼠标悬停在代码段名称上，打开上下文菜单 \ (右键单击\) ，然后选择"另**存为"。**  
 1.  当系统提示时，选择文件名和位置。  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  

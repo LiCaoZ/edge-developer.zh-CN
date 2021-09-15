@@ -9,11 +9,11 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、安全性
 ms.openlocfilehash: 4f4da9e2db588b99f6fe2538941969beb2343a77
-ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "11934063"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976491"
 ---
 # <a name="best-practices-for-developing-secure-webview2-applications"></a>开发安全 WebView2 应用程序的最佳方案  
 
@@ -23,14 +23,14 @@ ms.locfileid: "11934063"
     *   使用每个参数之前验证 Web 消息和主机对象参数，因为 Web 消息和参数可能格式不正确 (无意或恶意\) 并会导致应用意外运行。
     *   始终检查在 WebView2 内运行的文档的来源，并评估内容可信度。  
 1.  设计特定的 Web 消息和主机对象交互，而不是使用泛型代理。  
-1.  设置以下选项，通过修改 [Win32 (或 CoreWebView2Settings) ICoreWebView2Settings ][Webview2ReferenceWin32Icorewebview2settings] [ (.NET) 来限制 ][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings]Web 内容 A2.NET) 。  
+1.  设置以下选项，以通过修改[Win32 (或 CoreWebView2Settings) ICoreWebView2Settings][Webview2ReferenceWin32Icorewebview2settings] [ (.NET) 来限制 Web 内容 A2.NET) 。 ][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings]  
     *   如果您 `AreHostObjectsAllowed` `false` 不期望 Web 内容访问主机对象，则设置为 。  
     *   如果预计 Web 内容不会向本机应用程序发布 Web 消息 `IsWebMessageEnabled` `false` ，则设置为 。  
-    *   设置为 ，如果您不期望 Web 内容运行脚本 `IsScriptEnabled` `false` \(例如，当显示静态 html content\) 。  
+    *   设置为 ，如果您不期望 Web 内容运行脚本 `IsScriptEnabled` `false` \ (例如，当显示静态 html content\) 。  
     *   如果 `AreDefaultScriptDialogsEnabled` `false` 预计 Web 内容不会显示或对话框，则设置为 `alert` `prompt` 。  
 1.  在以下步骤中，使用 `NavigationStarting` 和 `FrameNavigationStarting` 事件根据新页面的来源更新设置。  
     1.  若要阻止应用程序导航到特定页面，请使用事件检查然后阻止页面或框架导航。  
-    1.  导航到新页面时，你可能需要调整 [ICoreWebView2Settings (Win32 ][Webview2ReferenceWin32Icorewebview2settings]) 或 [CoreWebView2Settings (.NET) ][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings] 上的属性值，如前面所述。  
+    1.  导航到新页面时，你可能需要调整 [ICoreWebView2Settings (Win32) ][Webview2ReferenceWin32Icorewebview2settings] 或 [CoreWebView2Settings (.NET) ][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings] 上的属性值，如前面所述。  
 1.  导航到新文档时，使用 `ContentLoading` 事件删除公开的主机对象 `RemoveHostObjectFromScript` 。  
 
 <!--## Security

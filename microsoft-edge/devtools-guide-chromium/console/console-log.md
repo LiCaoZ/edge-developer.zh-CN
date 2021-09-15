@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 2a774daca2c81b0cc09174d943c2efd4d1e324e1bbb4675e03e690bde561315a
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: d48a48de7b261a628ac99f58680deb119268a980
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11801403"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976580"
 ---
 # <a name="log-messages-in-the-console-tool"></a>在控制台工具中记录消息  
 
@@ -45,7 +45,7 @@ console.warn('This is a warning')
 
 ## <a name="different-types-of-logs"></a>不同类型的日志  
 
-你可以向控制台发送任何有效的 JavaScript 或 DOM 引用，而不是日志 **文本**。  控制台 **很** 美观，它确定发送它的类型。  然后，它为你提供可能的最佳表示形式。  复制并粘贴控制台中的以下代码 **段或显示** 结果，导航到控制台 [消息示例：记录不同类型的][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingTypesHtml]。  
+你可以向控制台发送任何有效的 JavaScript 或 DOM 引用，而不是日志 **文本**。  **控制台**很美观，它确定发送它的类型。  然后，它为你提供可能的最佳表示形式。  复制并粘贴控制台中的以下代码 **段或显示** 结果，导航到控制台 [消息示例：记录不同类型的][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingTypesHtml]。  
 
 ```javascript
 let x = 2;
@@ -79,7 +79,7 @@ console.log(w3techs);
 
 ## <a name="format-and-convert-values-with-specifiers"></a>使用说明符设置值的格式和转换值
 
-所有日志方法的一个特殊功能是，您可以在日志消息中使用说明符。  说明符是日志消息的一部分，以百分比符号 \(\) 字符开始，并允许您以不同格式记录特定值， `%` 甚至转换每个值。  
+所有日志方法的一个特殊功能是，您可以在日志消息中使用说明符。  说明符是日志消息的一部分，以百分比符号 \ (\) 字符开始，并允许您以不同格式记录特定值， `%` 甚至转换每个值。  
 
 *   `%s` 日志为字符串
 *   `%i` 或 `%d` 日志为 Integers
@@ -112,7 +112,7 @@ console.log('%cImportant message follows','color:red;font-size:40px');
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/console-log-specifiers-expanded.msft.png" alt-text="展开结果可显示 %O 之间的差值和 %o说明符 - 正文显示为可展开的 DOM 节点或网页正文上所有 JavaScript 属性的完整列表" lightbox="../media/console-log-specifiers-expanded.msft.png":::
+      :::image type="complex" source="../media/console-log-specifiers-expanded.msft.png" alt-text="Expand 结果显示 %O 和 %o 说明符之间的差值 - 正文显示为可展开的 DOM 节点或网页正文上所有 JavaScript 属性的完整列表" lightbox="../media/console-log-specifiers-expanded.msft.png":::
         Expand 结果显示 和 说明符之间的差异 - 正文显示为可展开的 DOM 节点，或显示为网页正文上所有 `%O` `%o` JavaScript 属性的完整列表  
       :::image-end:::  
    :::column-end:::
@@ -120,7 +120,7 @@ console.log('%cImportant message follows','color:red;font-size:40px');
 
 ## <a name="group-log-messages"></a>组日志消息
 
-如果记录许多信息，可以使用 和 方法在控制台 中将日志消息显示为可展开 `group` `groupCollapsed` 和可折叠 **的组**。  可以嵌套和命名组，使数据更易于理解。  
+如果记录许多信息，可以使用 和 方法在控制台 中将日志消息显示为可展开 `group` `groupCollapsed` 和可折叠 **的组**。  可以嵌套和命名组，以便数据更易于理解。  
 
 ```javascript
 console.group("Passengers: Heart of Gold");
@@ -162,7 +162,7 @@ for (tech in technologies) {
 
 ## <a name="display-complex-data-as-tables"></a>将复杂数据显示为表  
 
-该方法不会将复杂数据记录为可折叠和可展开的对象，而是记录为可以使用不同标题 `console.table()` 进行排序的表。  排序表使用户更容易查看信息。  若要在示例中显示它，请导航到控制台 [消息示例：使用表][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithTableHtml]。
+该方法不将复杂数据记录为可折叠和可展开的对象，而是记录为可以使用不同标题 `console.table()` 进行排序的表。  排序表使用户更容易查看信息。  若要在示例中显示它，请导航到控制台 [消息示例：使用表][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithTableHtml]。
 
 ```javascript
 let technologies = {
@@ -186,7 +186,7 @@ console.table(bodyDimensions);
    使用 显示 `console.table` 数据，使其更易于阅读
 :::image-end:::  
 
-的输出 `console.table` 不仅具有显示在控制台 中的表 **格式**。    例如，如果将表格复制并粘贴到 Excel、Word 或其他支持表格数据的产品中，则结构保持不变。  
+的输出 `console.table` 不仅具有显示在控制台 中的表 **格式**。    例如，如果将表格复制并粘贴到Excel、Word 或其他支持表格数据的产品中，则结构保持不变。  
 
 <!--  The output of `console.table` has a table format not only when it displays in the **Console**.  For example, copy and paste a table in Excel, Word, or any other products that support tabular data.  -->  
 
@@ -221,7 +221,7 @@ console.table(contentElements,['nodeName', 'innerText', 'offsetHeight'])
 
 [GithubMicrosoftedgeDevtoolssamplesConsoleLoggingExamplesHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-examples.html "控制台消息示例：日志、信息、错误和警告|GitHub"  
 [GithubMicrosoftedgeDevtoolssamplesConsoleLoggingTypesHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-types.html "控制台消息示例：记录不同类型的|GitHub"  
-[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithGroupsHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-with-groups.html "控制台消息示例：对日志进行|GitHub"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithGroupsHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-with-groups.html "控制台消息示例：将日志分组|GitHub"  
 [GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithSpecifiersHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-with-specifiers.html "控制台消息示例：使用说明符记录|GitHub"  
 [GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithTableHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-with-table.html "控制台消息示例：使用表|GitHub"  
 

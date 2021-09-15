@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: b141ad8c2baab1225df0da46a7922c0ebc86d9875153dd9ac671304148d6788c
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 822c25240ba30df31416ca783bf48d6d9ba52ed2
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11802977"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975960"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques 
@@ -68,7 +68,7 @@ ms.locfileid: "11802977"
        查看问题的文档
     :::image-end:::  
 
-1.  若要返回到配置选项，请在 DevTools 中选择"**** 执行审核 `+` () "    
+1.  若要返回到配置选项，请在 DevTools 中选择"**** 执行审核 `+` () 。    
 
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
@@ -81,7 +81,7 @@ ms.locfileid: "11802977"
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-本作品根据 [知识共享署名 4.0 国际许可 ][CCA4IL] 获得许可。  
+本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
 
 <!-- links -->  

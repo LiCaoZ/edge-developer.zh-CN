@@ -8,18 +8,18 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， webdriver， selenium， 测试， 工具， 自动化， 测试
-ms.openlocfilehash: 73e073ba68aa218d050090cb4dc208d1353a1de509f065fc1e65fa53645460ae
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: cf5889ab3c5f1ca89579a398a232716008144562
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11798209"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976443"
 ---
 # <a name="verify-downloads-of-selenium-tools-for-microsoft-edge"></a>验证 Selenium Tools for Microsoft Edge  
 
-本文提供在验证[Selenium Tools][GithubMicrosoftEdgeSeleniumToolsReleases]for Microsoft Edge 的签名时使用的公钥。  
+本文提供在验证[Selenium Tools][GithubMicrosoftEdgeSeleniumToolsReleases]for Microsoft Edge 发行版的签名时使用的公钥。  
 
-适用于[Java的][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] [Selenium 工具Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases]使用[GPG 进行签名][Gnupg]。  
+适用于[Java][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava]的[Selenium 工具Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases]使用[GPG 进行签名][Gnupg]。  
 
 使用以下密钥验证开发人员工具团队提供的Microsoft Edge[签名][TwitterEdgeDevTools]。  
 

@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， Web 开发， html， css， javascript， developer， extensions， mv2， mv3， manifest
-ms.openlocfilehash: b78c79c8387705d99e2f28eb4a10b370b5006fde337f694b847290782f51fd4e
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: ac2358f8927a762dcef98f9e10cc9f343d8a93f1
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11803844"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976583"
 ---
 # <a name="manifest-file-format-for-extensions"></a>扩展名的清单文件格式
 
@@ -25,11 +25,11 @@ ms.locfileid: "11803844"
 扩展的格式 `manifest.json` 正在从清单 V2 移动到清单 V3。  此处显示了这两种格式。  若要将清单 V2 扩展迁移到清单 V3，请导航到准备将扩展从[清单 v2 更新到 v3。][MigrateToMV3]
 
 
-## <a name="format-of-manifestjson-for-extensions-using-manifest-v3"></a>使用清单 V3 manifest\.js扩展的打开格式
+## <a name="format-of-manifestjson-for-extensions-using-manifest-v3"></a>使用清单 V3 的扩展的 manifest\.json 格式
 
 以下代码显示了清单 V3 程序包中扩展支持的 `manifest.json` 字段。
 
-有关每个字段的参考信息，请导航到 [V3 (清单) ， ][ChromeDeveloperDocsExtensionsMv3Manifest] 然后选择字段上的链接。
+有关每个字段的参考信息，请导航到 ["V3 (") "清单文件格式"， ][ChromeDeveloperDocsExtensionsMv3Manifest] 然后选择这些字段上的链接。
 
 ```json
 {
@@ -110,7 +110,7 @@ ms.locfileid: "11803844"
 }
 ```
 
-## <a name="format-of-manifestjson-for-extensions-using-manifest-v2"></a>使用清单 V2 manifest\.js扩展的打开格式
+## <a name="format-of-manifestjson-for-extensions-using-manifest-v2"></a>使用清单 V2 的扩展的 manifest\.json 格式
 
 以下代码显示了清单 V2 包中支持的扩展字段 `manifest.json` 。
 
@@ -205,7 +205,7 @@ ms.locfileid: "11803844"
 > 原始页面位于 [此处](https://developer.chrome.com/docs/extensions/mv3/manifest/)。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-本作品根据 [知识共享署名 4.0 国际许可 ][CCA4IL] 获得许可。  
+本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
@@ -216,4 +216,4 @@ ms.locfileid: "11803844"
 [MigrateToMV3]: ../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md "准备将扩展从清单 v2 更新为 v3 |Microsoft Docs"
 
 [ChromeDeveloperDocsExtensionsMv3Manifest]: https://developer.chrome.com/docs/extensions/mv3/manifest "V3 (清单) |Chrome 开发人员"
-[ChromeDeveloperDocsExtensionsMv2Manifest]: https://developer.chrome.com/docs/extensions/mv2/manifest "V2 (清单文件格式) |Chrome 开发人员"
+[ChromeDeveloperDocsExtensionsMv2Manifest]: https://developer.chrome.com/docs/extensions/mv2/manifest "V2 (清单) |Chrome 开发人员"

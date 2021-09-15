@@ -6,23 +6,23 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 0ac6cbe40d3bf52cfcde76554b90bc1926f555c4c031c595ce5f42c171ae8a82
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 51b7aa5119775f43861a84c1055ac9149a626d8a
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11801233"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975924"
 ---
 # <a name="monitor-changes-in-javascript-using-live-expressions"></a>使用 Live Expressions 监视 JavaScript 中的更改  
 
-**实时表达式** 是监视进行大量更改的 JavaScript 表达式的一种很好的方法。    你可以将特定 JavaScript 表达式固定到控制台的顶部，而不是使许多控制台消息阅读和 **导航**。  
+**实时表达式** 是监视进行大量更改的 JavaScript 表达式的一种很好的方法。    你可以将特定 JavaScript 表达式固定到控制台的顶部，而不是让许多控制台消息阅读和 **导航**。  
 
 ## <a name="add-a-new-live-expression"></a>添加新实时表达式  
 
-To start， choose the **Create live expression** \(eye\) button next to the **Filter** textbox.  选择它后，将显示一个文本框，供您在文本框中输入新表达式。  
+To start， choose the **Create live expression** \ (eye\) button next to the **Filter** textbox.  选择它后，将显示一个文本框，供您在文本框中输入新表达式。  
 
-:::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="选择新建实时表达式按钮以打开文本框以键入表达式" lightbox="../media/console-live-expressions-new.msft.png":::
+:::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="选择&quot;新建实时表达式&quot;按钮以打开文本框以键入表达式" lightbox="../media/console-live-expressions-new.msft.png":::
     选择 `New live expression` 按钮以打开文本框以键入表达式  
 :::image-end:::  
 
@@ -54,7 +54,7 @@ To start， choose the **Create live expression** \(eye\) button next to the **F
 
 ## <a name="remove-live-expressions"></a>删除 Live Expressions  
 
-只要 **使 Live Expression** 保持活动状态，该表达式就可用。  若要删除 Live **Expression，** 请选择它的 `x` 旁边。  
+只要 **使 Live Expression** 保持活动状态，它就可用。  若要删除 Live **Expression，** 请选择它的 `x` 旁边。  
 
 :::image type="complex" source="../media/console-live-expressions-remove.msft.png" alt-text="若要删除 Live Expressions，请选择其旁边的 x" lightbox="../media/console-live-expressions-remove.msft.png":::
     若要删除 **Live Expressions，** 请选择 `x` 其旁边的  
@@ -77,13 +77,13 @@ To start， choose the **Create live expression** \(eye\) button next to the **F
 1.  导航到鼠标 [移动而不记录演示][GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml]。  
 1.  为 和 创建 **Live** `x` `y` Expressions。  
     
-使用**Live Expressions 时**，始终在屏幕的相同部分获取信息，并保留控制台**** 日志，查看不会更改太多值。
+使用**Live Expressions 时**，始终在屏幕的相同部分获取信息，并保留控制台**** 日志，以获得不会更改太多的值。
 
 :::image type="complex" source="../media/console-live-expressions-x-and-y.msft.png" alt-text="将鼠标的 x 和 y 位置显示为 Live Expressions" lightbox="../media/console-live-expressions-x-and-y.msft.png":::
     将 `x` 鼠标 `y` 的 和 位置显示为 Live **Expressions**  
 :::image-end:::  
 
-**Live Expressions** 以独占方式在计算机上运行，无需更改代码中要显示任何内容。  **实时** 表达式是确保您仅显示要调试的信息的一种很好的方法。  此外 **，Live Expressions** 还可帮助您限制用户计算机上的噪音。
+**Live Expressions** 以独占方式在计算机上运行，无需更改代码中要显示任何内容。  **实时** 表达式是确保只显示要调试的信息的一种很好的方法。  此外 **，Live Expressions** 还可帮助您限制用户计算机上的噪音。
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
@@ -92,4 +92,4 @@ To start， choose the **Create live expression** \(eye\) button next to the **F
 <!-- links -->  
 
 [GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html "控制台消息示例：使用表|GitHub"  
-[GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html "无需日志记录即可移动鼠标|GitHub"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html "鼠标移动而不记录|GitHub"  

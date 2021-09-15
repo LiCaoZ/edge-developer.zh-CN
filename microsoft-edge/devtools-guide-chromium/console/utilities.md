@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 0f22216c26cfb1e906e60da57eb3f415d258808caabf07b1ed04d79389e48eb1
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 436f2807c5fab1723ca6cc93fddc68d9ecf12db7
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11803875"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976275"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -39,7 +39,7 @@ ms.locfileid: "11803875"
 > [!WARNING]
 > 以下命令仅适用于开发人员Microsoft Edge**控制台**。  如果从脚本运行，则命令不起作用。  
 
-有关 和 方法以及方法其余部分的信息， `console.log()` `console.error()` `console.*` 请导航到"控制台 API[参考"。][DevToolsConsoleApi]  
+有关 和 方法以及方法其余部分的信息， `console.log()` `console.error()` `console.*` 请导航到"控制台 API 参考["。][DevToolsConsoleApi]  
 
 ## <a name="recently-evaluated-expression"></a>最近计算表达式  
 
@@ -53,7 +53,7 @@ $_
 
 ### <a name="console-example"></a>控制台示例  
 
-在下图中，将计算一个简单的表达式 \(`2 + 2` \) 。  然后 `$_` 计算属性，其中包含相同的值。  
+在下图中，将计算一个简单的表达式 \ (`2 + 2` \) 。  然后 `$_` 计算属性，其中包含相同的值。  
 
 :::image type="complex" source="../media/console-arithmatic.msft.png" alt-text="$_ 是最近评估的表达式" lightbox="../media/console-arithmatic.msft.png":::
    `$_` 是最近计算表达式  
@@ -75,7 +75,7 @@ $_
 $0
 ```  
 
-此命令返回最近选择的元素或 JavaScript 对象。  `$1` 返回第二个最近选择一个，等等。  、 、 和 命令用作对在元素工具中检查的最后 `$0` `$1` `$2` `$3` `$4` 五个 DOM******** 元素或内存工具中选定的最后五个 JavaScript 堆对象的历史引用。  
+此命令返回最近选择的元素或 JavaScript 对象。  `$1` 返回第二个最近选择一个，等等。  、 、 和 命令用作对在元素工具中检查的最后五个 DOM 元素或内存工具中选定的最后五个 JavaScript 堆对象 `$0` `$1` `$2` `$3` `$4` **的历史**引用。 ****  
 
 :::row:::
    :::column span="1":::
@@ -210,7 +210,7 @@ for (each in images) {
 :::image-end:::  
 
 > [!NOTE]
-> 在 `Shift` + `Enter` 控制台**中选择以**在不运行脚本的情况下启动新行。  
+> 在 `Shift` + `Enter` 控制台**中选择，** 在不运行脚本的情况下启动新行。  
 
 ---  
 
@@ -342,7 +342,7 @@ dir(document.head);
    使用 `document.head` 方法 `dir()` 日志记录  
 :::image-end:::  
 
-有关详细信息，请导航到控制台 API[中的 console.dir () 。][DevToolsConsoleApiConsoleDirObject]  
+有关详细信息，请导航到控制台 API [ () console.dir ][DevToolsConsoleApiConsoleDirObject] 网站。  
 
 ---  
 
@@ -394,7 +394,7 @@ inspect(document.body);
 getEventListeners(object)
 ```  
 
-此命令返回在指定对象上注册的事件侦听器。  返回值是包含每个已注册事件类型 \(（如 或 `click` `keydown` \) ）的数组的对象。  每个数组的成员是描述为每种类型注册的侦听器的对象。  
+此命令返回在指定对象上注册的事件侦听器。  返回值是包含每个已注册事件类型 \ (（如 或 `click` `keydown` \) ）的数组的对象。  每个数组的成员是描述为每种类型注册的侦听器的对象。  
 
 ### <a name="console-example"></a>控制台示例  
 
@@ -440,7 +440,7 @@ keys(object)
 var player1 = {"name": "Ted", "level": 42}
 ```  
 
-在下面的代码示例和图中，为了简单起见，在键入和在控制台中) 在全局命名空间 \(中定义了 `player1` `keys(player1)` `values(player1)` 结果假定。  
+在下面的代码示例和图中，为了简单起见，在键入和在控制台中) 在全局命名空间 \ (中定义了 `player1` `keys(player1)` `values(player1)` 结果假定。  
 
 ```console
 keys(player1)
@@ -520,7 +520,7 @@ monitorEvents(window, ["resize", "scroll"]);
 | `touch` | "touchcancel"、"touchend"、"touchmove"、"touchstart" |  
 | `control` | "blur"、"change"、"focus"、"reset"、"resize"、"scroll"、"select"、"submit"、"zoom" |  
 
-在下面的代码示例中，当前在 Elements 工具中选择了与输入文本字段上的事件 `key` `key` 对应的 **事件** 类型。  
+In the following code sample， the `key` event type corresponding to `key` events on an input text field are currently chosen in the **Elements** tool.  
 
 ```console
 monitorEvents($0, "key");
@@ -733,7 +733,7 @@ unmonitorEvents(object[, events])
 unmonitorEvents(window);
 ```  
 
-还可以有选择地停止监视对象上的特定事件。  例如，以下代码开始监视当前选择的元素上的所有事件，然后停止监视 `mouse` `mousemove` 事件 \(也许以减少控制台输出\) 。  
+还可以有选择地停止监视对象上的特定事件。  例如，以下代码开始监视当前选择的元素上的所有事件，然后停止监视 `mouse` `mousemove` 事件 \ (也许以减少控制台输出\) 。  
 
 ```console
 monitorEvents($0, "mouse");

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 97603345173a7fdf0cf65968dd4ecbef85a146963176d0815361004137461c71
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 973b440a27b0c4c06ba118fc09e4162a8fa346e8
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11801545"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975982"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,7 +29,7 @@ ms.locfileid: "11801545"
    limitations under the License.  -->  
 # <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>使用开发人员工具Microsoft Edge菜单运行命令  
 
-命令菜单提供了在 DevTools UI Microsoft Edge导航和完成常见任务（如[禁用 JavaScript）的快速方法][JavascriptDisable]。  你可能熟悉命令调色板Microsoft Visual Studio代码中的类似功能，这是命令菜单的原始灵感[][VisualStudioCodeUICommandPalette]。  
+命令菜单提供了一种快速的方式，Microsoft Edge开发人员工具 UI 和完成常见任务，例如[禁用 JavaScript][JavascriptDisable]。  你可能熟悉命令Microsoft Visual Studio代码中的类似功能，这是命令菜单的原始灵感。 [][VisualStudioCodeUICommandPalette]  
 
 :::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="使用命令菜单禁用 JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
    使用命令菜单禁用 JavaScript  
@@ -37,7 +37,7 @@ ms.locfileid: "11801545"
 
 ## <a name="open-the-command-menu"></a>打开命令菜单  
 
-选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。 或选择 **自定义和控制开发工具** \(`...` \) > **运行命令**。  
+选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。 或选择 **自定义和控制开发工具** \ (`...` \) > **运行命令**。  
 
 :::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="运行命令" lightbox="../media/command-menu-options-run-command.msft.png":::
    运行命令  

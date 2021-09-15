@@ -9,11 +9,11 @@ ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: 0ed8cea6b39e7f0fcac87df5efbe89831a4ec24c
-ms.sourcegitcommit: 3d1b23679e8b61cdebe6c014247925adc04d132c
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "11920831"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976660"
 ---
 # <a name="microsoft-edge-developer-tools-overview"></a>Microsoft Edge开发人员工具概述  
 
@@ -39,13 +39,13 @@ ms.locfileid: "11920831"
 
 若要打开和浏览 DevTools，请使用以下任一操作。  
 
-*   将鼠标悬停在网页上的任何元素上，打开上下文菜单 \(右键单击\) ，然后选择"检查 **"。**  此操作将打开 **"元素"** 工具。  
+*   将鼠标悬停在网页上的任何元素上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**  此操作将打开 **"元素"** 工具。  
 *   选择 `F12`。  
 *   在 `Ctrl` + `Shift` + `I` Windows/Linux 或 `Command` + `Option` + `I` macOS 上选择。  
     
 :::row:::  
    :::column span="":::  
-      :::image type="complex" source="./media/devtools-intro-inspect.msft.png" alt-text="从任何元素上的上下文菜单中选择检查" lightbox="./media/devtools-intro-inspect.msft.png":::  
+      :::image type="complex" source="./media/devtools-intro-inspect.msft.png" alt-text="从任何元素上的上下文菜单中选择&quot;检查&quot;" lightbox="./media/devtools-intro-inspect.msft.png":::  
          从 **任何元素** 上的上下文菜单中选择"检查"  
       :::image-end:::  
    :::column-end:::  
@@ -64,10 +64,10 @@ ms.locfileid: "11920831"
 
 打开 DevTools 时，它停靠在浏览器左侧。  若要更改 DevTools 的停靠位置，请完成以下操作。  
 
-1.  选择" **自定义和控制 DevTools** \(`...` \) "按钮。  
-1.  在相对于页面 \(**扩展**坞端 \) 的**DevTools**的右侧，选择"扩展**坞端**"选项。  
+1.  选择" **自定义和控制 DevTools** \ (`...` \) "按钮。  
+1.  在相对于页面 \ (**扩展**坞端 \) 的**DevTools**的右侧，选择"扩展**坞端**"选项。  
     
-有关详细信息，请导航到"将 [DevTools 放置 (Undock、Dock To bottom、Dock To left) " ][DevtoolsGuideCustomizePlacement]。  
+有关详细信息，请导航到"将[DevTools 放置 (Undock、Dock To bottom、Dock To left) "。 ][DevtoolsGuideCustomizePlacement]  
 
 :::image type="complex" source="./media/devtools-intro-docking-menu.msft.png" alt-text="DevTools 中扩展坞侧菜单的屏幕截图" lightbox="./media/devtools-intro-docking-menu.msft.png":::  
    DevTools 中扩展坞侧菜单的屏幕截图  
@@ -81,24 +81,24 @@ ms.locfileid: "11920831"
     
 :::row:::  
    :::column span="":::  
-      :::image type="complex" source="./media/devtools-intro-docking-left.msft.png" alt-text="选择扩展坞到左侧" lightbox="./media/devtools-intro-docking-left.msft.png":::  
+      :::image type="complex" source="./media/devtools-intro-docking-left.msft.png" alt-text="选择&quot;扩展坞到左侧&quot;" lightbox="./media/devtools-intro-docking-left.msft.png":::  
          选择 **"扩展坞到左侧"**  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::  
-      :::image type="complex" source="media/devtools-intro-docking-bottom.msft.png" alt-text="选择停靠到底部" lightbox="media/devtools-intro-docking-bottom.msft.png":::  
+      :::image type="complex" source="media/devtools-intro-docking-bottom.msft.png" alt-text="选择&quot;停靠到底部&quot;" lightbox="media/devtools-intro-docking-bottom.msft.png":::  
          选择 **"停靠到底部"**  
       :::image-end:::  
    :::column-end:::  
 :::row-end:::  
 :::row:::  
    :::column span="":::  
-      :::image type="complex" source="media/devtools-intro-docking-right.msft.png" alt-text="选择扩展坞到右侧" lightbox="media/devtools-intro-docking-right.msft.png":::  
+      :::image type="complex" source="media/devtools-intro-docking-right.msft.png" alt-text="选择&quot;扩展坞到右侧&quot;" lightbox="media/devtools-intro-docking-right.msft.png":::  
          选择 **"扩展坞到右侧"**  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::  
-      :::image type="complex" source="media/devtools-intro-docking-own-window.msft.png" alt-text="选择撤消停靠到单独的窗口" lightbox="media/devtools-intro-docking-own-window.msft.png":::  
+      :::image type="complex" source="media/devtools-intro-docking-own-window.msft.png" alt-text="选择&quot;撤消停靠到单独的窗口&quot;" lightbox="media/devtools-intro-docking-own-window.msft.png":::  
          选择 **"撤消停靠到单独的窗口"**  
       :::image-end:::  
    :::column-end:::  
@@ -126,11 +126,11 @@ DevTools 在几年内逐渐增加。  你可能假设首次打开任何工具时
        本文在仿真移动电话中的 DevTools 显示的屏幕截图  
     :::image-end:::  
     
-*   主工具栏包含用于各种方案的工具的选项卡。  您可以自定义每个工具，并且每个工具可能会基于上下文更改。  若要在隐藏的选项卡上显示工具，请选择"更多选项卡 **\(** `>>` \) "按钮。   To add a tool to the main toolbar or to the drawer's toolbar， select the **More tools** (`+`) button.  下面介绍了每个工具。  
-*   "工具"选项卡组旁边是可选错误和问题快捷方式。  在当前网页上出现 JavaScript 错误或问题时，会显示快捷方式。  " **打开控制台以查看 # 错误，# 警告** \(**JavaScript**错误 \) "按钮显示一个红色圆圈，后跟 `X` JavaScript 错误数。  若要打开 [控制台并了解][DevtoolsGuideConsoleIndex] 错误，请选择 **"JavaScript 错误"** 按钮。  " **要查看 # 问题的** 打开问题 \(**问题**\) "按钮是一个蓝色消息图标，后跟问题数。  若要打开" [问题"][DevtoolsGuideIssuesIndex] 工具，请选择" **问题"** 按钮。  
+*   主工具栏包含用于各种方案的工具的选项卡。  您可以自定义每个工具，并且每个工具可能会基于上下文更改。  若要在隐藏的选项卡上显示工具，请选择"更多选项卡 **\ (** `>>` \) "按钮。   To add a tool to the main toolbar or to the drawer's toolbar， select the **More tools** (`+`) button.  下面介绍了每个工具。  
+*   "工具"选项卡组旁边是可选错误和问题快捷方式。  在当前网页上出现 JavaScript 错误或问题时，会显示快捷方式。  打开 **控制台以查看 # 错误， # 警告** \ (**JavaScript**错误 \) 按钮显示一个红色圆圈，后跟 `X` JavaScript 错误数。  若要打开 [控制台并了解][DevtoolsGuideConsoleIndex] 错误，请选择 **"JavaScript 错误"** 按钮。  " **要查看 # 问题的** 打开问题 \ (**问题**\) "按钮是一个蓝色消息图标，后跟问题数。  若要打开" [问题"][DevtoolsGuideIssuesIndex] 工具，请选择" **问题"** 按钮。  
 *   " **设置** "按钮显示齿轮图标。  若要在网页中**设置**DevTools，**请选择"设置**按钮。  " **设置** "网页显示一个菜单，用于更改 **首选项**、打开 **实验**等。  
 *   " **发送反馈** "按钮旁边会显示一个聊天气泡的 Torso。  若要打开" **发送反馈** "对话框，请选择" **发送反馈"** 按钮。  " **发送反馈** "对话框允许你输入描述所发生情况的信息，并自动包含屏幕截图。  使用它与 DevTools 团队联系，以报告问题、问题或建议想法。  
-*   " **自定义和控制 DevTools** \(`...` \) "按钮将打开一个下拉菜单。  它允许你定义停靠 DevTools、搜索、打开不同工具等位置。  
+*   " **自定义和控制 DevTools** \ (`...` \) "按钮将打开一个下拉菜单。  它允许你定义停靠 DevTools、搜索、打开不同工具等位置。  
     
 在"工具"选项卡组中，你可以打开 DevTools 中提供的不同工具。  以下列表介绍了 DevTools 中最常用的工具。  
 
@@ -145,7 +145,7 @@ DevTools 在几年内逐渐增加。  你可能假设首次打开任何工具时
 DevTools 提供了许多要用于 Web 产品的特性和功能。  通过多种方式访问 DevTools 的不同部分，但访问所需的功能的最快方式是使用命令菜单。  有关详细信息，请导航到 [Microsoft Edge DevTools 命令菜单导航到"运行"][DevtoolsGuideCommandMenuIndex]。  若要打开命令菜单，请完成以下操作之一。  
 
 *   选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。  
-*   选择 **"自定义和控制 DevTools** \(`...` \) "，然后选择"运行**命令"。**  
+*   选择 **"自定义和控制 DevTools** \ (`...` \) "，然后选择"运行**命令"。**  
 
 :::image type="complex" source="./media/devtools-intro-command-menu.msft.png" alt-text="DevTools 中命令菜单的屏幕截图" lightbox="./media/devtools-intro-command-menu.msft.png":::  
 DevTools 中命令菜单的屏幕截图  
@@ -160,7 +160,7 @@ DevTools 中命令菜单的屏幕截图
       :::image-end:::  
    :::column-end:::  
    :::column span="":::  
-      :::image type="complex" source="./media/devtools-intro-showing-changes.msft.png" alt-text="打开更改工具的 DevTools" lightbox="./media/devtools-intro-showing-changes.msft.png":::  
+      :::image type="complex" source="./media/devtools-intro-showing-changes.msft.png" alt-text="打开&quot;更改&quot;工具的 DevTools" lightbox="./media/devtools-intro-showing-changes.msft.png":::  
          打开"开发工具 **更改** 工具的 DevTools  
       :::image-end:::  
    :::column-end:::  
@@ -170,7 +170,7 @@ DevTools 中命令菜单的屏幕截图
 
 可自定义 DevTools 以满足你的需求或工作方式。  若要更改设置，请完成以下操作之一。  
 
-*   选择**设置**\(右上角的齿轮图标\)   
+*   选择**设置**\ (右上角的齿轮图标\)   
 *   选择 `F1` 或 `?`。  
     
 在 **首选项部分中** ，你可以更改 DevTools 的几个部分。  例如，你可能使用" **与浏览器语言** 设置在 DevTools 中使用相同的语言，该语言在浏览器中使用。  有关另一个示例，请使用 **Theme** 设置更改 DevTools 的主题。  
@@ -186,7 +186,7 @@ DevTools 中命令菜单的屏幕截图
 *   定义 **设备** 模拟和测试模式下要包括的设备。  有关详细信息，请导航到 [在Microsoft Edge DevTools中模拟移动设备][DevtoolsGuideDeviceModeIndex]。  
 *   选择网络 **限制** 配置文件。  
 *   定义模拟 **位置**。  
-*   自定义键盘 **快捷方式**。  例如，若要在 DevTools 中使用相同的快捷方式，Visual Studio Code预设的"匹配****  >  **Visual Studio Code"。**  
+*   自定义键盘 **快捷方式**。  例如，若要在 DevTools 中使用相同的快捷方式，Visual Studio Code预设的"匹配快捷方式****  >  **Visual Studio Code"。**  
         
     :::image type="complex" source="./media/devtools-intro-match-keys.msft.png" alt-text="所有键盘快捷方式和菜单的屏幕截图，这些快捷方式与代码中的快捷方式Visual Studio匹配" lightbox="./media/devtools-intro-match-keys.msft.png":::  
        所有键盘快捷方式和菜单的屏幕截图，这些快捷方式与代码中的快捷方式Visual Studio匹配  
@@ -204,7 +204,7 @@ DevTools 团队在 DevTools 中提供新功能作为实验。  若要获取实�
 
 ## <a name="see-also"></a>另请参阅  
 
-*   [适用于初学者的 DevTools：入门 HTML 和 DOM 进行开发][DevtoolsGuideBeginnersHtml]  
+*   [适用于初学者的 DevTools：入门 HTML 和 DOM][DevtoolsGuideBeginnersHtml]  
 *   [Microsoft Edge (Chromium) DevTools 协议][DevtoolsProtocolIndex]  
     
 <!-- links -->  

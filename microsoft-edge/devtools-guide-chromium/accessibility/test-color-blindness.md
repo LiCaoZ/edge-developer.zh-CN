@@ -6,19 +6,19 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: cde0def6e15f8dd9e430ce56754df29f380db561b540849c65f85d449c9d028d
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 54cd7230f0402bfeb4b5ee28d2bcd0947794676f
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11802221"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976291"
 ---
 # <a name="verify-that-the-page-is-usable-by-people-with-color-blindness"></a>验证页面是否由色盲用户可用
 
 <!-- Rendering tool: Emulate vision deficiencies: Protanopia -->
 
-若要检查网页是否由色盲人士使用，请在"呈现"工具中****，**使用"模拟**视觉缺陷"下拉列表。
+若要检查网页是否由色盲人士使用，请在"呈现"工具中****，使用"模拟视力**缺陷"下拉列表**。
 
 在辅助功能测试演示网页上，不同的接收状态使用颜色作为区别的唯一方法。
 *  绿色表示已收到大量资金。
@@ -45,7 +45,7 @@ ms.locfileid: "11802221"
 
 ## <a name="see-also"></a>另请参阅
 
-*  [模拟视觉缺陷][DevToolsVisionDeficiencies]- 定义"模拟视觉缺陷****"下拉列表中的项目，包括 Protanopia、Deuteranopia、Tritanopia 和 Achromatopia。
+*  [模拟视觉][DevToolsVisionDeficiencies]缺陷 - 定义"模拟视觉缺陷****"下拉列表中的项目，包括 Protanopia、Deuteranopia、Tritanopia 和 Achromatopia。
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
 
 

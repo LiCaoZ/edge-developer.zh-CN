@@ -9,11 +9,11 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、edge、最佳做法
 ms.openlocfilehash: 65e6801f645fd673b308a28a5229cb0a037b7b01
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893945"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976497"
 ---
 # <a name="webview2-development-best-practices"></a>WebView2 开发的最佳做法
 
@@ -91,7 +91,7 @@ WebView2 应用应侦听和处理事件，以便该应用可以从支持 WebView
 [Webview2ConceptsUserDataFolder]: ../concepts/user-data-folder.md "管理用户数据文件夹 | Microsoft Docs"
 [Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]: ../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis "用于测试已安装的运行时是否支持最近添加的 API 的功能检测 - 了解 WebView2 SDK |Microsoft Docs"
 [Webview2GetStartedWin32]: ../get-started/win32.md "WebView2 入门 | Microsoft Docs"
-[Webview2GetStartedWinforms]: ../get-started/winforms.md "Windows Forms | 中的 WebView2 入门Microsoft Docs"
+[Webview2GetStartedWinforms]: ../get-started/winforms.md "在 Forms Windows 中开始使用 WebView2 |Microsoft Docs"
 [Webview2GetStartedWinui]: ../get-started/winui.md "WinUI 3 预览版中的 WebView2 (入门) |Microsoft Docs"
 [Webview2GetStartedWpf]: ../get-started/wpf.md "WPF | 中的 WebView2 入门Microsoft Docs"
 <!-- external links -->

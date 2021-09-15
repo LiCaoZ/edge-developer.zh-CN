@@ -9,11 +9,11 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
 ms.openlocfilehash: c91c445d6c741f00180f3571f5098018051faf7f
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893903"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975967"
 ---
 # <a name="microsoft-edge-webview2-roadmap"></a>Microsoft EdgeWebView2 路线图  
 
@@ -36,12 +36,12 @@ WebView2 团队正在计划以下主要工作，用于将来的更新。
 
 ## <a name="webview2-runtime-and-installer"></a>WebView2 运行时和安装程序  
 
-使用常青分发模式，你可以将 WebView2 运行时的目标或链安装到用户计算机上。  Evergreen WebView2 运行时和安装程序已到达通用版本 \(GA\) 。  有关详细信息，请导航到分发 [WebView2 应用和 WebView2 运行时][ConceptDistribution]。
+使用常青分发模式，你可以将 WebView2 运行时的目标或链安装到用户计算机上。  Evergreen WebView2 运行时和安装程序已到达通用版本 \ (GA\) 。  有关详细信息，请导航到分发 [WebView2 应用和 WebView2 运行时][ConceptDistribution]。
 
 
 ## <a name="fixed-version"></a>固定版本  
 
-固定版本分发模式允许你打包Microsoft Edge二进制文件 <!--(a specific version of the WebView2 Runtime)--> 在本机应用程序中。  固定版本已达到通用版本 \(GA\) 。  有关详细信息，请导航到分发 [WebView2 应用和 WebView2 运行时][ConceptDistribution]。
+固定版本分发模式允许你打包Microsoft Edge二进制文件 <!--(a specific version of the WebView2 Runtime)--> 在本机应用程序中。  固定版本已达到通用版本 \ (GA\) 。  有关详细信息，请导航到分发 [WebView2 应用和 WebView2 运行时][ConceptDistribution]。
 
 
 ## <a name="general-availability"></a>通用  
@@ -56,7 +56,7 @@ Win32 C/C++ SDK 已到达 GA。
 
 ### <a name="windows-ui-library-3"></a>WindowsUI 库 3
 
-可以使用 Windows App SDK 的[WinUI (3][UwpToolkitsWinui3Index] Windows UI 库 3) WebView2 Windows WebView2 控件。 This is currently in preview. 有关详细信息，请导航到 Windows [App SDK 路线图][WindowsAppSDK|::ref1::|]。
+可以使用 Windows App SDK 的[WinUI3 Windows WinUI (3][UwpToolkitsWinui3Index]) 访问应用程序中的 WebView2 Windows控件。 This is currently in preview. 有关详细信息，请导航到 Windows [App SDK 路线图][WindowsAppSDK|::ref1::|]。
 
  
 <!-- links -->  

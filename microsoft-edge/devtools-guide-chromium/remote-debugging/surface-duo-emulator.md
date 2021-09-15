@@ -7,18 +7,18 @@ ms.date: 03/25/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发工具, 远程调试, android, surface duo
-ms.openlocfilehash: 60fd8843e1a51647e71e510e1d055f2c3d6e08ddcb6aece470738d922986d26b
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 49b16f3c920735b34d44455bae437442cac3bf6e
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11809822"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976480"
 ---
 # <a name="get-started-with-remote-debugging-surface-duo-emulators"></a>远程调试 Surface Duo 仿真器入门  
 
 本文将介绍从 [Microsoft Edge][MicrosoftEdge] 的桌面版实例远程调试 [Surface Duo][MicrosoftSurfaceDevicesSurfaceDuo] 仿真程序上 [Microsoft Edge 应用][GooglePlayStoreAppsComMicrosoftEmmx]的 web 内容。  有关在 Surface Duo 设备上进行调试的信息，请遵循[远程调试 Android 设备][DevtoolsRemoteDebuggingMain]的指南。  
 
-## <a name="before-you-begin"></a>在你开始前
+## <a name="before-you-begin"></a>在开始之前
 
 运行[Surface Duo 仿真程序][DualScreenAndroidUseEmulator]前，先安装 [Surface Duo SDK][MicrosoftDownload100847]。  有关详细信息，请导航到[获取 Surface Duo SDK][DualScreenAndroidGetDuoSdk]。  
 

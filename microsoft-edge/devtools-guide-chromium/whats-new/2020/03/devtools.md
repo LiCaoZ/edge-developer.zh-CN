@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: d3d707d513c2a8846d7dd76eecdbe45e551d8ea6756c7b16e3a506fd41fbbeea
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: e5fa4b066e47b0779fcdf2b3e814c598e9615ccf
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11809731"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976382"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,17 +35,17 @@ ms.locfileid: "11809731"
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告  
 
-以下各节列出了你可能从 DevTools 团队中错过Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。  
+以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。  
 
 ### <a name="remotely-debug-microsoft-edge-on-windows-10-devices"></a>在 Windows 10 设备上远程调试 Microsoft Edge  
 
-现在，[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 \(Beta\)][RemoteTools] 应用。  使用此扩展 Windows Device [Portal][WindowsUwpDebugTestPerfDevicePortal]的应用，你可以从开发计算机上运行的 Microsoft Edge 实例连接到远程 Windows 10 设备，显示目标列表 \(Microsoft Edge 中所有选项卡，PBA 在 Windows 10 设备上打开\) ，并针对在远程[][ProgressiveWebAppsChromiumIndex]Windows 10 设备上运行的目标使用开发计算机上 DevTools。  
+现在，[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 \(Beta\)][RemoteTools] 应用。  使用此扩展 Windows Device [Portal][WindowsUwpDebugTestPerfDevicePortal]的应用，你可以从开发计算机上运行的 Microsoft Edge 实例连接到远程 Windows 10 设备，显示目标列表 \ (Microsoft Edge 和[PWA][ProgressiveWebAppsChromiumIndex]在 Windows 10 设备上打开\) ，并针对在远程 Windows 10 设备上运行的目标使用开发计算机上 DevTools。  
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="现在，Microsoft Store 中提供 Microsoft Edge 远程工具 (Beta) 应用" lightbox="../../media/2020/03/remote-tools.msft.png":::
    [Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 (Beta)][RemoteTools] 应用  
 :::image-end:::  
 
-[阅读我们的指南以设置 Windows 10 设备和开发计算机进行远程调试][DevtoolsRemoteDebuggingWindows]。  通过推文或选择发送反馈图标，告诉我们[][PostTweetEdgeDevTools]你的远程[调试](#getting-in-touch-with-microsoft-edge-devtools-team)体验！  
+[阅读我们的指南以设置 Windows 10 设备和开发计算机进行远程调试][DevtoolsRemoteDebuggingWindows]。  通过推文或选择发送反馈图标，告诉我们[][PostTweetEdgeDevTools]你的[远程调试](#getting-in-touch-with-microsoft-edge-devtools-team)体验！  
 
 ### <a name="new-ways-to-access-settings"></a>访问设置的新方法  
 
@@ -109,7 +109,7 @@ Chromium 问题 [#1050999][CR1050999]
 
 对缩小文件进行更改后，"更改"工具允许您水平滚动**** 以显示所有缩小代码。  从 Microsoft Edge 83 开始，你现在可以使用键盘上的箭头键水平滚动。  
 
-:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在更改工具中显示缩小代码" lightbox="../../media/2020/03/changes.msft.png":::
+:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在&quot;更改&quot;工具中显示缩小代码" lightbox="../../media/2020/03/changes.msft.png":::
    在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在"更改"工具中显示对缩小代码**所做的更改**  
 :::image-end:::  
 
@@ -139,11 +139,11 @@ DevTools 能够模拟模糊的视觉和以下[颜色视觉缺陷类型][ColorBli
 | 全色盲 | 无法感觉任何颜色，灰色阴影除外\（极少\）。 |  
 
 存在这些色觉缺陷的不太极端的版本，实际上它们更为常见。  
-例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。 但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人是不同的，并且可能会看到不同的 \(能够感知更多/更少的相关颜色\) 。  
+例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。 但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人是不同的，并且可能会看到不同的 \ (能够感知更多/更少的相关颜色\) 。  
 
 通过在 DevTools 中进行更极端的仿真设计，可以保证红色弱、绿色弱、黄蓝色弱和全色弱的人也可访问你的 Web 应用。  
 
-通过推 [文或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
+通过推文 [或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
 
 Chromium 问题 [#1003700][CR1003700]  
 
@@ -179,11 +179,11 @@ Chromium 问题 [#1051822][CR1051822]
 
 "**标头**" 选项卡上的 "**响应标头**" 部分提供了有关如何解决这些问题的更多指导：  
 
-:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="响应标头部分中的更多指南" lightbox="../../media/2020/03/guidance.msft.png":::
+:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="“响应标头”部分中的更多指南" lightbox="../../media/2020/03/guidance.msft.png":::
    "响应头" **部分中的更多** 指南  
 :::image-end:::  
 
-通过推 [文或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
+通过推文 [或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
 
 Chromium 问题 [#1051466][CR1051466]  
 
@@ -216,7 +216,7 @@ Chromium 问题 [#1041830][CR1041830]
 > [!NOTE]
 > 自 Microsoft Edge 75 以来，**停靠到左侧**功能已可用，但以前只能从[主菜单][DevtoolsCustomizePlacementsChangeMainMenu]中进行访问。  Microsoft Edge 83 中的新功能是，你现在可以从 "命令" 菜单中访问此功能。  
 
-通过推 [文或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
+通过推文 [或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
 
 Chromium 问题 [#1011679][CR1011679]  
 
@@ -233,13 +233,13 @@ DevTools 团队经常从 Web 开发人员那里获得反馈，尽管可以从 De
 
 ### <a name="delete-all-local-overrides-in-a-folder"></a>删除文件夹中的所有本地覆盖  
 
-设置本地覆盖**** 后，你可以将鼠标悬停在目录上，打开上下文菜单 \(右键单击\) ，然后选择新的"删除所有覆盖"选项以删除该**** 文件夹中的所有局部覆盖。  
+设置本地覆盖**** 后，你可以将鼠标悬停在目录上，打开上下文菜单 \ (右键单击\) ，然后选择新的"删除所有覆盖"选项以删除该**** 文件夹中的所有局部覆盖。  
 
 :::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="删除所有覆盖" lightbox="../../media/2020/03/overrides.msft.png":::
    删除所有覆盖  
 :::image-end:::  
 
-通过推 [文或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
+通过推文 [或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
 
 Chromium 问题 [#1016501][CR1016501]  
 
@@ -253,7 +253,7 @@ Chromium 问题 [#1016501][CR1016501]
    新的长任务 UI  
 :::image-end:::  
 
-通过推 [文或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
+通过推文 [或][PostTweetEdgeDevTools] 选择"发送反馈"图标 [发送反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ！  
 
 Chromium 问题 [#1054447][CR1054447]  
 
@@ -291,7 +291,7 @@ Android Oreo 引入了自适应图标，可在不同的设备模型之间显示�
 [DevtoolsCustomizePlacementsChangeMainMenu]: ../../../customize/placement.md#change-placement-from-the-main-menu "从主菜单菜单更改|Microsoft Docs"  
 [DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTool]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool "使用呈现工具分析呈现|Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: ../../../evaluate-performance/reference.md#view-main-thread-activity "查看主线程活动|Microsoft Docs"  
-[DevtoolsJavascriptBreakpointsLineCode]: ../../../javascript/breakpoints.md#line-of-code-breakpoints "代码行断点 - 如何使用 DevTools Microsoft Edge中的断点暂停|Microsoft Docs"  
+[DevtoolsJavascriptBreakpointsLineCode]: ../../../javascript/breakpoints.md#line-of-code-breakpoints "代码行断点 - 如何在 DevTools Microsoft Edge断点暂停代码|Microsoft Docs"  
 [DevtoolsNetworkReferenceFilterRequestsProperties]: ../../../network/reference.md#filter-requests-by-properties "按属性筛选请求 - 网络分析参考|Microsoft Docs"  
 [DevtoolsRemoteDebuggingWindows]: ../../../remote-debugging/windows.md "远程调试 Windows 10 设备|Microsoft Docs"  
 

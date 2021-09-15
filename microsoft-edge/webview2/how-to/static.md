@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 91a09823a60fbe60e9eb23d938e8a173366dbf98
-ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
+ms.openlocfilehash: a16c3f7f2f78134a3ec974900fa1cc0f0df96c42
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "11934084"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976484"
 ---
 # <a name="statically-link-the-webview2-loader-library"></a>静态链接 WebView2 加载程序库  
 
@@ -43,15 +43,6 @@ ms.locfileid: "11934084"
     :::image type="complex" source="./media/static-lib.png" alt-text="插入的代码段" lightbox="./media/static-lib.png":::
        插入的代码段  
     :::image-end:::  
-    
-1.  编辑应用生成配置的其他依赖项。  首先，查找所有 `<AdditionalDependencies>` 标记。 对于每个版本 `version.lib` ，将 作为附加依赖项添加到文件中每个不同的生成 `.vcxproj` 配置。  
-    
-    :::image type="complex" source="./media/version-lib.png" alt-text="将 version.lib 添加到 ItemDefinitionGroups" lightbox="./media/version-lib.png":::
-       添加到 `version.lib` `ItemDefinitionGroups`  
-    :::image-end:::  
-    
-    > [!NOTE]
-    > WebView2 团队旨在在未来版本中自动添加其他依赖项。  
     
 1.  编译并运行应用。  
     

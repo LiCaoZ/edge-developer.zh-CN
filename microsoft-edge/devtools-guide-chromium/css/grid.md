@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
-ms.openlocfilehash: 143d17fb577d89d4b675e78eff15af26be5746c53f75b03769e00d42bc270268
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 68493fae5e96ef1b2c7ed1205d67fd2b4cf67df5
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11801141"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975959"
 ---
 # <a name="inspect-css-grid"></a>检查 CSS 网格  
 
@@ -43,7 +43,7 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
 
 打开“**布局**”窗格。  当网格包含在页面上时，“**布局**”窗格将包括“**网格**”部分，其中包含许多用于查看网格的选项。  
 
-:::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="布局窗格" lightbox="../media/grid-layout-pane.msft.png":::
+:::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="“布局”窗格" lightbox="../media/grid-layout-pane.msft.png":::
    “**布局**”窗格  
 :::image-end:::  
 

@@ -1,18 +1,18 @@
 ---
-description: 使用开发人员工具在本机 Android 应用中开始使用远程调试 Microsoft Edge WebView。
+description: 使用开发人员工具在本机 Android 应用中远程调试 WebView Microsoft Edge入门。
 title: Android WebViews 远程调试入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: a30c4c006a8d0bb6a40d54e0821d98af77330004c0260c416e5ab3128ac47a73
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 75d948465c62c63c9ccbe0fcd46616819a04e79d
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11809241"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976599"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -31,7 +31,7 @@ ms.locfileid: "11809241"
 
 使用开发人员工具在本机 Android 应用中Microsoft Edge Android WebView。  
 
-在 Android 4.4 \(KitKat\) 或更高版本上，使用 DevTools 调试本机 Android 应用中的 WebView 内容。  
+在 Android 4.4 \ (KitKat\) 或更高版本上，使用 DevTools 调试本机 Android 应用中的 WebView 内容。  
 
 ### <a name="summary"></a>摘要  
 
@@ -75,7 +75,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 The gray graphics listed with the Android WebView represent its size and position relative to the screen of the device.  If your Android WebViews have titles set, the titles are listed as well.  
 -->  
 
-## <a name="troubleshoot"></a>排除故障  
+## <a name="troubleshoot"></a>疑难解答  
 
 你的 Android WebView 不会显示在 `edge://inspect` 页面上？  
 
@@ -94,7 +94,7 @@ The gray graphics listed with the Android WebView represent its size and positio
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) 由 [Meggin Kearney][MegginKearney] \(Tech Writer\) 。  
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) ，由 [Meggin Kearney][MegginKearney] \ (Tech Writer\) 。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

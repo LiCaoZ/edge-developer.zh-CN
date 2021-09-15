@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
 ms.openlocfilehash: 14a27cf01d088699c6253e7dff4560498c28f659
-ms.sourcegitcommit: dc445eae30234af1ad3fa42645aabb940529912b
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "11934492"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976506"
 ---
 # <a name="submission-states-for-extensions-in-the-microsoft-edge-add-ons-website"></a>加载项网站中Microsoft Edge的提交状态  
 
@@ -28,5 +28,5 @@ ms.locfileid: "11934492"
 | 6 |  审阅失败 |  如果扩展未通过审阅，则你的提交将在此状态。  在初始审阅期间或更新过程中可能发生失败评审。  你需要采取更正操作并重新提交扩展。  |  
 | 7 |  在应用商店中不可用 |  当扩展显示此状态时，有三种可能的情况：**** 从应用商店取消发布、从应用商店中删除**** 和**已阻止**。  三种状态分别在 8、9 和 10 中指定说明。  |  
 | 8 |  从应用商店中取消发布 |  你从合作伙伴中心中的Microsoft Edge加载项网站中取消发布扩展。  在合作伙伴中心中， **你选择在扩展提交** 页面上取消发布。  取消发布扩展后，Microsoft Edge 加载项网站中不再提供扩展供新用户下载，但现有用户可以继续使用其扩展副本。  |  
-| 9 |  从应用商店中删除 |  如果发现你的扩展违反 Microsoft Edge 加载项网站的条款和条件，Microsoft 可能会将其从 Microsoft Edge 加载项网站中删除，然后状态会更改到此状态。  <br />  Microsoft 删除扩展后，你的扩展在 Microsoft Edge 加载项网站上不再可用，可供新用户下载，但现有用户可以继续使用其扩展副本。  |  
-| 10 |  阻止 |  如果发现你的扩展是恶意扩展并损害用户的安全和隐私，Microsoft 有权阻止你的扩展从 Microsoft Edge 加载项网站，并且状态将更改为此状态。  如果你的扩展被阻止，它将从Microsoft Edge加载项网站和从所有用户设备中删除。  |  
+| 9 |  从应用商店中删除 |  如果发现你的扩展违反 Microsoft Edge 加载项网站的条款和条件，Microsoft 可能会将其从 Microsoft Edge 加载项网站中删除，然后状态会更改到此状态。  <br />  Microsoft 删除扩展后，你的扩展在 Microsoft Edge 加载项网站上不再可用供新用户下载，但现有用户可以继续使用其扩展副本。  |  
+| 10 |  阻止 |  如果发现你的扩展是恶意扩展并损害用户的安全和隐私，Microsoft 有权阻止你的扩展从 Microsoft Edge 加载项网站，并且状态将更改到此状态。  如果你的扩展被阻止，它将从Microsoft Edge加载项网站和从所有用户设备中删除。  |  

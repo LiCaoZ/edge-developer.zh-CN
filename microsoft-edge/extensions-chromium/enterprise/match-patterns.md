@@ -7,12 +7,12 @@ ms.date: 03/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 110c913c000e0f52e39c7bc32bf4e7550a7cdbb4af6b850c89a11ee2689d5331
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: fcb87b62cac063c7663f575fa3d992b187408c28
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11803277"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976465"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -29,7 +29,7 @@ ms.locfileid: "11803277"
    limitations under the License.  -->  
 # <a name="match-patterns"></a>匹配模式
 
-主机权限和内容脚本匹配基于匹配模式定义的一组 URL。  匹配模式实质上是一个 URL，它以允许的方案开头， (、、或 `http` ，并且可以包含 ' ' `https` `file` `ftp` `*` 字符。  特殊模式 `<all_urls>` 与以允许方案开头的任何 URL 匹配。  每个匹配模式有 3 个部分：  
+主机权限和内容脚本匹配基于匹配模式定义的一组 URL。  匹配模式实质上是一个 URL，它以允许的方案开头， (、、 或 `http` `https` `file` `ftp` ，并且可以包含 ' ' `*` 字符。  特殊模式 `<all_urls>` 与以允许方案开头的任何 URL 匹配。  每个匹配模式有 3 个部分：  
 
 *   _方案_ — 例如 `http` ， `file` 或 或 `*`  
 
@@ -54,12 +54,12 @@ ms.locfileid: "11803277"
 |:--- |:--- |:--- |  
 | `http://*/*` | 匹配使用 http 方案的任何 URL | `http://www.google.com` `http://example.org/foo/bar.html` |  
 | `http://*/foo*` | 匹配在任何主机上使用 http 方案的任何 URL，只要路径以 `/foo` | `http://example.com/foo/bar.html` `http://www.google.com/foo` |  
-| `https://*.google.com/foo*bar` | 匹配使用 https 方案的任何 URL，位于主机 \(如 、 或 `google.com` `www.google.com` `docs.google.com` `google.com` \) 上，只要路径以 开头和 `/foo` 结尾 `bar` | `https://www.google.com/foo/baz/bar` `https://docs.google.com/foobar` |  
+| `https://*.google.com/foo*bar` | 匹配使用 https 方案的任何 URL，位于主机 \ (如 、 或 `google.com` `www.google.com` `docs.google.com` `google.com` \) 上，只要路径以 开头和 `/foo` 结尾 `bar` | `https://www.google.com/foo/baz/bar` `https://docs.google.com/foobar` |  
 | `http://example.org/foo/bar.html` | 匹配指定的 URL | `http://example.org/foo/bar.html` |  
 |`file:///foo*` | 匹配其路径以 开头的任何本地文件 `/foo` | `file:///foo/bar.html` `file:///foo` |  
 | `http://127.0.0.1/*` | 匹配使用方案且位于 `http` 主机上的任何 URL `127.0.0.1` | `http://127.0.0.1` `http://127.0.0.1/foo/bar.html` |  
 | `*://mail.google.com/*` | 匹配以 或 开头的任何 `http://mail.google.com` `https://mail.google.com` URL。 | `http://mail.google.com/foo/baz/bar` `https://mail.google.com/foobar` |  
-| `<all_urls>` | 匹配使用允许方案的任何 URL。 \(请参阅本部分的开头，查看允许的方案列表。\)  | `http://example.org/foo/bar.html` `file:///bar/baz.html` |  
+| `<all_urls>` | 匹配使用允许方案的任何 URL。 \ (请参阅本部分的开头，查看允许的方案列表。\)  | `http://example.org/foo/bar.html` `file:///bar/baz.html` |  
 
 下面是模式匹配的 `_invalid_` 一些示例：
 
@@ -68,7 +68,7 @@ ms.locfileid: "11803277"
 | `http://www.foo.com` | 否 `_path_` |  
 | `http://*foo/bar` | ' `*` ' in the host can be followed only by a ' ' or ' `.` `/` ' |  
 | `http://foo.*.bar/baz` | 如果 ' `*` ' 位于 `_host_` 中，则它必须是第一个字符 |  
-| `http:/bar` | 缺少 `_scheme_` 分隔符 \(' `/` ' 应为 `//` "\)  |  
+| `http:/bar` | 缺少 `_scheme_` 分隔符 \ (' `/` ' 应为 `//` "\)  |  
 | `foo://*` | 无效 `_scheme_` |  
 
 某些方案并非在所有上下文中都受支持。

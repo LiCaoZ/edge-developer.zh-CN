@@ -8,11 +8,11 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， Web 开发， html， css， javascript， 开发人员， 扩展
 ms.openlocfilehash: 278a99ef4be8ad4472cf5aa37b18b5cfdbd3bb79
-ms.sourcegitcommit: dc445eae30234af1ad3fa42645aabb940529912b
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "11934499"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976350"
 ---
 # <a name="create-an-extension-tutorial---part-1"></a>创建扩展教程 - 第 1 部分  
 
@@ -28,7 +28,7 @@ ms.locfileid: "11934499"
 
 若要测试本教程中构建的已完成扩展，请下载 [源代码][ArchiveExtensionGettingStartedPart1]。  
 
-## <a name="step-1-create-a-manifestjson-file"></a>步骤 1：创建manifest.js文件
+## <a name="step-1-create-a-manifestjson-file"></a>步骤 1：创建 manifest.json 文件
 
 每个扩展包都必须在 `manifest.json` 根目录有一个文件。  清单提供扩展的详细信息、扩展包版本、扩展名称和说明等。  
 

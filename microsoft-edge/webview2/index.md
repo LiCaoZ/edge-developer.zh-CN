@@ -9,11 +9,11 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、edge html、Windows Forms、WinForms、WPF、.NET、WinUI、Project Reunion
 ms.openlocfilehash: faa4c5c075e0216eebccd7520d34923878c8204f
-ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "11933986"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976482"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介
 
@@ -130,7 +130,7 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术\(HTML、
       依赖带有定期平台更新和安全修补的最新版 Chromium。  
    :::column-end:::
    :::column span="1":::
-      可以选择在应用中打包特定版本的 Chromium 位。  
+      （可选）在应用中打包Chromium位的特定版本。  
    :::column-end:::
    :::column span="1":::
       将 Web 组件分片添加到应用。  
@@ -151,7 +151,7 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术\(HTML、
 
 ## <a name="supported-platforms"></a>受支持的平台  
 
-通用版本 \(GA\) 或预览版的 WebView2 可用于以下编程环境。
+通用版本 \ (GA\) 或预览版的 WebView2 可用于以下编程环境。
 
 *   Win32 C/C++ \(GA\)  
 *   .NET Framework 4.5 或更高版本  
@@ -203,8 +203,8 @@ WebView2 应用可以在以下版本的 Windows。
 [Webview2ConceptsUserDataFolder]: ./concepts/user-data-folder.md "管理用户数据文件夹 | Microsoft Docs"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "了解 WebView2 SDK 版本 | Microsoft Docs"  
 
-[Webview2GetStartedWin32]: ./get-started/win32.md "Win32 应用和应用中的 WebView2 |Microsoft Docs"  
-[Webview2GetStartedWinforms]: ./get-started/winforms.md "WinForms 应用和应用中的 WebView2 |Microsoft Docs"  
+[Webview2GetStartedWin32]: ./get-started/win32.md "在 Win32 应用和应用中开始使用 WebView2 |Microsoft Docs"  
+[Webview2GetStartedWinforms]: ./get-started/winforms.md "在 WinForms 应用中开始使用 WebView2 |Microsoft Docs"  
 [Webview2GetStartedWinui2]: ./get-started/winui2.md "在 WinUI 2 应用中开始使用 WebView2 |Microsoft Docs"  
 [Webview2GetStartedWinui]: ./get-started/winui.md "WinUI 3 应用和预览版中的 WebView2 (入门) |Microsoft Docs"  
 [Webview2GetStartedWpf]: ./get-started/wpf.md "WPF 应用和应用中的 WebView2 |Microsoft Docs"  

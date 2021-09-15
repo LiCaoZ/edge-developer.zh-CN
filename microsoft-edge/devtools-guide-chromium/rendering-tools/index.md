@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: 2c802f7ac6534f1e1f148cfff99da33965362926
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893560"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975997"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -44,12 +44,12 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 
 ### <a name="javascript-tools"></a>JavaScript：工具  
 
-在性能工具 **中** 录制并查找可疑的 `Evaluate Script` 长事件。  <!--If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->  
+在性能工具 **中录制** 并查找可疑的 `Evaluate Script` 长事件。  <!--If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->  
 
 <!--todo: add Recording section when available  -->  
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->  
 
-如果你注意到 JavaScript 中 (呈现) 出现大量 jank 和中断，你可能需要将分析介绍到下一级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面函数中的使用位置。  了解如何在"加快 [JavaScript 运行时速度"中创建 CPU 配置文件][DevtoolsRenderingToolsJavascriptRuntime]。
+如果你注意到 JavaScript 中出现 (的) ，你可能需要将分析下一个级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面函数中的使用位置。  了解如何在"加快 [JavaScript 运行时速度"中创建 CPU 配置文件][DevtoolsRenderingToolsJavascriptRuntime]。
 
 ### <a name="javascript-problems"></a>JavaScript：问题  
 
@@ -77,11 +77,11 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 
 ### <a name="style-tools"></a>样式：工具  
 
-在"性能"工具 **中录制** 。  检查录制大事件 `Recalculate Style` \(紫色\) 。  
+在"性能"工具 **中录制** 。  检查录制大事件 `Recalculate Style` \ (以紫色\) 。  
 
 <!--todo: add Recording section when available  -->  
 
-在 `Recalculate Style` "详细信息"窗格中选择一个事件以查看其 **详细信息** 。  如果样式更改需要很长时间，则性能会下降。  如果样式计算影响大量元素，则这是另一个有改进空间的区域。  
+在 `Recalculate Style` "详细信息"窗格中选择一个事件以查看其 **详细信息** 。  如果样式更改需要很长时间，则性能下降。  如果样式计算影响大量元素，则这是另一个有改进空间的区域。  
 
 :::image type="complex" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="长重新计算样式" lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
    长重新计算样式  
@@ -114,7 +114,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 
 ## <a name="layout"></a>布局  
 
-Firefox (或重排) 是浏览器计算页面上所有元素的位置和大小的过程。  Web 的布局模型意味着一个元素可能会影响其他元素;例如，元素的宽度通常会影响任何子元素的宽度，等等，一直向上和向下 `<body>` 影响树。  浏览器可能涉及此过程。  
+Firefox (或重排) 是浏览器计算页面上所有元素的位置和大小的过程。  Web 的布局模型意味着一个元素可能会影响其他元素;例如，元素的宽度通常会影响任何子元素的宽度，等等，一直向上和向下影响 `<body>` 树。  浏览器可能涉及此过程。  
 
 作为经验法则，如果你在帧完成之前要求从 DOM 返回几何值，你将发现自己具有"强制同步布局"，如果频繁重复或对大型 DOM 树执行，这可能是一个较大的性能瓶颈。  
 

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: ead22cc47668dfabe145cc23a55f201ece8d936fcbae281bb906d7bfc5534709
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 6b15d317d4c720ab5ad76b7047532df101f69376
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11807519"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976657"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,7 +29,7 @@ ms.locfileid: "11807519"
    limitations under the License.  -->
 # <a name="use-the-debugger-features"></a>使用调试程序功能
 
-本文介绍了如何在 DevTools Microsoft Edge调试器，包括如何设置代码行断点。  若要设置其他类型的断点，请参阅使用断点 [暂停代码][DevToolsJavascriptBreakpoints]。  
+本文介绍了如何在 DevTools Microsoft Edge调试器，包括如何设置代码行断点。  若要设置其他类型的断点，请参阅 [使用断点暂停代码][DevToolsJavascriptBreakpoints]。  
 
 若要了解调试的基础知识，请导航到[Microsoft Edge DevTools][DevToolsJavascriptGetStarted]中调试 JavaScript 的入门，这是一个使用基于表单的现有网页的教程。  本教程具有屏幕捕获，因此你可以浏览它。  您可以使用演示网页轻松试用调试器功能。
 
@@ -37,12 +37,12 @@ ms.locfileid: "11807519"
 
 修复 Bug 时，经常希望尝试对 JavaScript 代码进行一些更改。  无需在外部编辑器或 IDE 中进行更改，将文件重新上载到服务器，然后刷新页面;相反，若要测试更改，可以直接在 DevTools 中编辑 JavaScript 代码并立即查看结果。  
 
-若要查看和编辑 JavaScript 文件，请运行：  
+查看和编辑 JavaScript 文件：  
 
 1.  导航到 **"源"** 工具。  
-1.  在 **导航器窗格中** ，选择你的文件，以在编辑器窗格中 **打开** 它。
+1.  在 **"导航器"** 窗格中，选择文件，以在"编辑器"窗格中 **打开** 它。
 1.  在" **编辑器"** 窗格中，编辑文件。  
-1.  选择 `Ctrl`+`S` \(Windows、Linux\) 或 `Command`+`S` \(macOS\) 进行保存。  然后，DevTools 将 JavaScript 文件加载至 Microsoft Edge。  
+1.  选择 `Ctrl`+`S` \(Windows、Linux\) 或 `Command`+`S` \(macOS\) 进行保存。  然后，DevTools 将 JavaScript 文件加载至 Microsoft Edge 的 JavaScript 引擎。  
     
     :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="编辑器窗格" lightbox="../media/javascript-sources-html-minified.msft.png":::
        “**编辑器**”窗格  
@@ -50,7 +50,7 @@ ms.locfileid: "11807519"
      
 ## <a name="reformat-a-minified-javascript-file-with-pretty-print"></a>使用非常打印重新设置缩小的 JavaScript 文件
 
-若要使缩小的文件可读，请选择"编辑器"窗格底部的****"格式 ![ \(Format ](../media/format-icon.msft.png) **\) "** 按钮。
+若要使缩小的文件可读，请选择"编辑器"窗格底部的****"格式 ![ \ (格式 ](../media/format-icon.msft.png) **\) "** 按钮。
 
 :::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="格式按钮" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
    “**格式**”按钮  
@@ -80,7 +80,7 @@ ms.locfileid: "11807519"
 
 ### <a name="step-over-line-of-code"></a>逐步执行代码  
 
-当暂停包含与正在调试的问题不相关的函数的代码行时，选择"单步执行**\(** 单步 ![ 执行 \) "按钮以在不单步执行的情况下运行函数。 ](../media/step-over-icon.msft.png)  
+当暂停包含与正在调试的问题不相关的函数的代码行时，选择"单步执行 **\ (** 单步执行 ![ \) "按钮以运行函数，而无需单步 ](../media/step-over-icon.msft.png) 执行。  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="选择逐步执行" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
    选择“**逐步执行**”  
@@ -128,7 +128,7 @@ function getName() {
 
 ### <a name="step-out-of-line-of-code"></a>执行剩余代码  
 
-当暂停在与正在调试的问题不相关的函数内时，选择"单步执行 **\(** 单步执行 \) "按钮以运行函数的其余 ![ ](../media/step-out-icon.msft.png) 代码。  
+当暂停在与正在调试的问题不相关的函数内时，选择"单步执行 **\ (** 单步执行 \) "按钮以运行函数的其余 ![ ](../media/step-out-icon.msft.png) 代码。  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="选择执行剩余" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
    选择 **“执行剩余”**  
@@ -154,7 +154,7 @@ function getName() {
 
 调试长函数时，可能有许多代码与正在调试的问题不相关。  
 
-你可以选择逐行执行，但这很繁琐。  您可以选择在感兴趣的行上设置代码行断点，然后选择 Resume **脚本** 执行 \(Resume 脚本执行 ![ \) 按钮，但有一种更快的方法 ](../media/resume-script-run-icon.msft.png) 。  
+你可以选择逐行执行，但这很繁琐。  您可以选择在感兴趣的行上设置代码行断点，然后选择 Resume **脚本** 执行 \ (Resume 脚本执行 ![ \) 按钮，但有一种更快的方法 ](../media/resume-script-run-icon.msft.png) 。  
 
 将鼠标悬停在你感兴趣的代码行上，打开上下文菜单 \(右键单击\) ，然后选择“**继续至此处**”。  DevTools 会运行所有代码，一直运行到该处，然后暂停到该行。  
 
@@ -164,7 +164,7 @@ function getName() {
 
 ### <a name="restart-the-top-function-of-the-call-stack"></a>重新启动调用的顶部函数  
 
-若要暂停调用堆栈中顶部函数的第一行，同时在代码行上暂停，请将鼠标悬停在"调用堆栈"窗格中的任意位置****，打开上下文菜单 \(右键单击\) ，然后选择"**重新启动**帧"。  top 函数是最后一个运行的函数。  
+若要暂停调用堆栈中顶部函数的第一行，而暂停在代码行上，请将鼠标悬停在"调用堆栈"窗格中的任意位置****，打开上下文菜单 \ (右键单击\) ，然后选择"**重新启动**帧"。  top 函数是最后一个运行的函数。  
 
 下面的代码段是一个分步执行示例。  
 
@@ -178,7 +178,7 @@ function factorial(n) {
 }
 ```  
 
-你已在 `A` 上暂停。  选择重启**帧后**，应暂停在 上 `B` ，无需设置断点或选择 **"恢复脚本执行"。**  
+你已在 `A` 上暂停。  选择"**重新启动帧**"后，应暂停在 上，而不会设置断 `B` 点或选择 **"恢复脚本执行"。**  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-restart-frame.msft.png" alt-text="选择重启帧" lightbox="../media/javascript-source-page-debugger-restart-frame.msft.png":::
    选择 **重启帧**  
@@ -186,7 +186,7 @@ function factorial(n) {
 
 ### <a name="resume-script-runtime"></a>恢复脚本运行时  
 
-若要在脚本暂停后继续运行时，请选择 Resume **script execution** \(Resume script ![ execution ](../media/resume-script-run-icon.msft.png) \) button。  DevTools 将一直运行脚本，直到下一个断点（如果有）。  
+若要在脚本暂停后继续运行时，请选择"恢复脚本执行 **\ (** ![ Resume 脚本执行 ](../media/resume-script-run-icon.msft.png) \) "按钮。  DevTools 将一直运行脚本，直到下一个断点（如果有）。  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="选择恢复脚本执行" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
    选择“**恢复脚本执行**”  
@@ -194,7 +194,7 @@ function factorial(n) {
 
 #### <a name="force-script-runtime"></a>强制脚本运行时  
 
-若要忽略所有断点并强制脚本继续运行，请选择并按住 Resume**脚本**执行 \(Resume 脚本执行 \) 按钮，然后选择"强制脚本执行 ![ ](../media/resume-script-run-icon.msft.png) \(强制脚本执行**** ![ ](../media/force-script-run-icon.msft.png) \) "按钮。  
+若要忽略所有断点并强制脚本继续运行，请选择并按住 Resume script **execution** \ (Resume script execution \) 按钮，然后选择"强制脚本执行 ![ ](../media/resume-script-run-icon.msft.png) \ (强制脚本执行**** ![ ](../media/force-script-run-icon.msft.png) \) "按钮。  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="选择强制脚本执行" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
    选择“**强制脚本执行**”  
@@ -229,9 +229,9 @@ function factorial(n) {
    “**监视**”窗格  
 :::image-end:::  
 
-*   若要创建新的监视表达式，请选择"添加 **监视** 表达式 \(![ 添加监视表达式 ](../media/add-expression-icon.msft.png) \) 按钮。  
-*   若要刷新所有现有表达式的值，请选择"刷新 **\(** ![ 刷新 ](../media/refresh-icon.msft.png) \) "按钮。  逐步执行代码时，值将自动刷新。  
-*   若要删除监视表达式，请右键单击该表达式，然后选择"删除 **监视** 表达式 \(![ 删除监视表达式 ](../media/delete-expression-icon.msft.png) \) "。  
+*   若要创建新的监视表达式，请选择"添加 **监视** 表达式 \ (![ 添加监视表达式 ](../media/add-expression-icon.msft.png) \) "按钮。  
+*   若要刷新所有现有表达式的值，请选择"刷新 **\ (** ![ 刷新 ](../media/refresh-icon.msft.png) \) "按钮。  逐步执行代码时，值将自动刷新。  
+*   若要删除监视表达式，请右键单击该表达式，然后选择"删除 **监视** 表达式 \ (![ 删除监视表达式 ](../media/delete-expression-icon.msft.png) \) "。  
 
 ## <a name="view-the-call-stack"></a>查看调用堆栈  
 
@@ -254,7 +254,7 @@ function factorial(n) {
 This should be moved to an "Export debug data" H2 section when there is enough content for that, but there is not right now, so it is here.
 -->
 
-若要将当前调用堆栈复制到剪贴板，请将鼠标悬停在"调用**** 堆栈"窗格中的任意位置，打开上下文菜单 \(右键单击\) ，然后选择"复制堆栈跟踪 **"。**  
+若要将当前调用堆栈复制到剪贴板，请将鼠标悬停在"调用**** 堆栈"窗格中的任意位置，打开上下文菜单 \ (右键单击\) ，然后选择"复制堆栈跟踪 **"。**  
 
 :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png" alt-text="选择复制堆叠跟踪" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png":::
    选择“**复制堆叠跟踪**”  
@@ -307,7 +307,7 @@ function animate() {
     
 ### <a name="mark-a-script-as-library-code-from-settings"></a>在设置中将脚本标记为库代码  
 
-若要标记脚本的单个脚本或脚本模式 **，设置：**  
+若要从脚本标记单个脚本或脚本**设置：**  
 
 1.  打开“[设置][DevToolsCustomize]”。  
 1.  导航到“**库代码**”设置。  
@@ -327,7 +327,7 @@ function animate() {
 
 ## <a name="see-also"></a>另请参阅  
 
-*   [入门调试 JavaScript 在 Microsoft Edge DevTools][DevToolsJavascriptGetStarted] - 使用现有代码的简单简短教程，包含屏幕捕获。
+*   [入门调试 JavaScript 在 Microsoft Edge DevTools][DevToolsJavascriptGetStarted]中 - 使用现有代码的简单简短教程，包含屏幕捕获。
 *   [源工具概述][DevToolsSourcesIndex] - **源工具** 包括 JavaScript 调试程序和编辑程序。
 *   [使用 DevTools Microsoft Edge JavaScript。][DevToolsJavascriptDisable]
 

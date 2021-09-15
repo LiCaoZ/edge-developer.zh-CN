@@ -7,12 +7,12 @@ ms.date: 07/26/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools
-ms.openlocfilehash: 99e8c525f910e42c1b58aed83bd25ef1229627cc6d42150516c9a0aa1589d95f
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 68db66fffc72737e32ab30eaa721574b5efa605f
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11802686"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975986"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -59,11 +59,11 @@ ms.locfileid: "11802686"
 
 你正在构建一个真实网站。  
 
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>必备条件  
 
 完成以下先决条件，然后再执行本教程。  
 
-*   使用[入门完成 HTML][DevtoolsBeginnersHtml]和 DOM 的填写操作，或确保您已了解 HTML 和 DOM。  
+*   完成入门 HTML 和[DOM，][DevtoolsBeginnersHtml]或确保您已了解 HTML 和 DOM。  
 *   下载 [Microsoft Edge][MicrosoftEdgeInsider] Web 浏览器。  以下教程使用一组内置于 Microsoft Edge 中的 Web 开发工具（称为 Microsoft Edge DevTools）。  
 
 ## <a name="set-up-your-code"></a>设置代码  
@@ -262,7 +262,7 @@ li a {
 1.  导航到实时 **选项卡**。  
 1.  选择 **"联系人** "链接可返回到联系人页面。  现在， **联系我！** 具有与导航链接相同的字体。  
     
-    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="文本联系我！  现在字体与主页和联系人链接相同" lightbox="../media/beginners-css-multiple1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="文本联系我！  现在字体与&quot;主页&quot;和&quot;联系人&quot;链接相同" lightbox="../media/beginners-css-multiple1.msft.png":::
        文本" **联系我"！** 现在字体与 **"主页"** 和 **"联系人"** 链接相同  
     :::image-end:::  
     
@@ -274,7 +274,7 @@ li a {
 
 向现有规则集添加声明  
 
-1.  将鼠标悬停在 **"主页"** 链接上，打开上下文菜单 \(右键单击\) ，然后选择"检查 **"。**  
+1.  将鼠标悬停在 **"主页"** 链接上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**  
     
     :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="检查主页链接" lightbox="../media/beginners-css-add1.msft.png":::
        检查主页链接  
@@ -337,7 +337,7 @@ li a {
 
 在 DevTools 中添加新规则集  
 
-1.  Select **New Style Rule** \(New Style Rule ![ ](../media/new-style-rule-icon.msft.png) \) which is next to **.cls**.  空的规则集将显示为 `a` 选择器。  
+1.  Select **New Style Rule** \ (New Style Rule ![ ](../media/new-style-rule-icon.msft.png) \) which is next to **.cls**.  空的规则集将显示为 `a` 选择器。  
     
     :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="添加新规则" lightbox="../media/beginners-css-rule1.msft.png":::
        添加新规则  
@@ -367,7 +367,7 @@ li a {
     
 1.  将鼠标悬停在"主页 **"链接** 上。  链接的背景变为绿色。  
     
-    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="将鼠标悬停在主页链接上以显示其绿色背景" lightbox="../media/beginners-css-rule5.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="将鼠标悬停在&quot;主页&quot;链接上以显示其绿色背景" lightbox="../media/beginners-css-rule5.msft.png":::
        将鼠标悬停在"主页"链接上以显示其绿色背景  
     :::image-end:::  
     
@@ -417,7 +417,7 @@ li a {
     
 1.  选择 **"新建文件"。**  
     
-    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text="新建文件对话框" lightbox="../media/beginners-css-external5.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text="&quot;新建文件&quot;对话框" lightbox="../media/beginners-css-external5.msft.png":::
        "新建文件"对话框  
     :::image-end:::  
     
@@ -603,7 +603,7 @@ li a {
 
 *   更好地进行 Web 开发的最好办法就是构建更多网站。  不要担心中断工作。  请一直玩得有趣，并尽可能学习。  
 *   若要了解有关设置网页样式的信息，请导航到 CSS [简介][MDNCssFirstSteps]。  
-*   若要详细了解如何在 DevTools 中试验 CSS，请导航入门[查看和更改 CSS。][DevtoolsCssIndex]  
+*   若要详细了解如何在 DevTools 中试验 CSS，请导航到入门[查看和更改 CSS。][DevtoolsCssIndex]  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队  
 
@@ -622,7 +622,7 @@ li a {
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，作者为 [Katherine Jackson][KatherineJackson] \(技术作家，Chrome DevTools\) 。  
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，作者为 [Katherine Jackson][KatherineJackson] \ (技术作家，Chrome DevTools\) 。  
 
 [![知识共享许可协议][CCby4Image]][CCA4IL]  
 本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  

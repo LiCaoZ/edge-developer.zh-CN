@@ -8,15 +8,15 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
 ms.openlocfilehash: 95754e7fb3ff6db0e3bd29bd2921bf43d517e81c
-ms.sourcegitcommit: dc445eae30234af1ad3fa42645aabb940529912b
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "11934331"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976342"
 ---
 # <a name="manage-account-settings"></a>管理帐户设置
 
-在合作伙伴中心中管理你的Microsoft Edge开发者帐户的帐户设置[和个人资料详细信息][MicrosoftPartnerCenter]。
+在合作伙伴中心管理你的Microsoft Edge开发者帐户的帐户设置[和个人资料详细信息][MicrosoftPartnerCenter]。
 
 ## <a name="account-settings"></a>帐户设置  
 
@@ -26,7 +26,7 @@ ms.locfileid: "11934331"
 *   指向查看信息的其他页面的链接。  
 *   编辑帐户信息。  
     
-在 **"帐户详细信息** "部分，查看帐户的状态和类型。  你的卖家 ID 和其他发布者 ID 信息也显示在帐户 **详细信息** 部分中。  这些值由 Microsoft 分配，用于唯一地标识你的开发人员帐户，并且为只读。  
+在 **"帐户详细信息** "部分，查看帐户的状态和类型。  你的卖家 ID 和其他发布者 ID 信息也显示在帐户 **详细信息** 部分中。  这些值由 Microsoft 分配以唯一地标识你的开发者帐户，并且为只读。  
 
 ## <a name="contact-details"></a>联系人详细信息  
 

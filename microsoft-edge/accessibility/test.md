@@ -8,12 +8,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: 辅助功能， 开发人员辅助功能， 可访问的网站， 边缘， Web 开发， ARIA， 开发人员， UIA， UI 自动化
-ms.openlocfilehash: 271cd960ef925ff3231fdc24c3b912b8caac3e8089d9f1725494ec704c26bbb6
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: b03680d2112311b97912ed92ae446a74410c95bf
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11800183"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975920"
 ---
 # <a name="accessibility-testing"></a>辅助功能测试  
 
@@ -29,11 +29,11 @@ ms.locfileid: "11800183"
 
 #### [<a name="accessibility-evaluation-resources"></a>辅助功能评估资源](https://www.w3.org/WAI/eval/Overview.html)  
 
-辅助功能评估资源是 W3C 的一个多页资源，概述了用于评估网站辅助功能的不同方法。
+辅助功能评估资源是由 W3C 提供的多页资源，概述了用于评估网站辅助功能的不同方法。
 
 #### [<a name="assistive-technology-compatibility-tests"></a>辅助技术兼容性测试](http://www.powermapper.com/tests)  
 
-显示不同内容类型和标准在辅助技术（如屏幕阅读器 (AT) 的行为的测试结果。
+显示不同的内容类型和标准在辅助技术（如屏幕阅读器）中 (AT) 的测试结果。
 
 #### [<a name="easy-checks--a-first-review-of-web-accessibility"></a>轻松检查 – Web 辅助功能的首次评审](https://www.w3.org/WAI/eval/preliminary.html)  
 
@@ -41,7 +41,7 @@ ms.locfileid: "11800183"
 
 #### [<a name="how-to-meet-wcag-20"></a>如何满足 WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref)  
 
-快速参考 Web 内容辅助功能指南 \(WCAG\) 2.0 要求 (成功) 和技术。
+快速参考 Web 内容辅助功能指南 \ (WCAG\) 2.0 要求 (技术和) 标准。
 
 #### [<a name="html5accessibility"></a>HTML5Accessibility](https://html5accessibility.com)  
 

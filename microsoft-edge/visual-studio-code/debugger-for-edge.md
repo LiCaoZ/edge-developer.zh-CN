@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， vs code， visual studio code， debugger
 ms.openlocfilehash: cb6e80f5ae052f5de7410371e640fe4f91d29f29
-ms.sourcegitcommit: 8924ea959b1e246aa1a3db8730cd35227abe73dd
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "11925191"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976502"
 ---
 # <a name="debug-microsoft-edge-from-visual-studio-code"></a>从Microsoft Edge调试Visual Studio Code  
 
@@ -25,4 +25,4 @@ ms.locfileid: "11925191"
 <!--links -->  
 
 [VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"  
-[BrowserDebuggingInVSCode]: https://code.visualstudio.com/docs/nodejs/browser-debugging "使用浏览器工具调试Visual Studio Code"   
+[BrowserDebuggingInVSCode]: https://code.visualstudio.com/docs/nodejs/browser-debugging "使用代码调试浏览器Visual Studio Code"   

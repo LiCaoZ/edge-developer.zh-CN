@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 3f2165d6ab597459415cc2c4e186a39c25d3d16e57f7a8d9ec4b2518ea32cc19
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: f4ba5f3706460c443ae06a393e5ef63e5d336229
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11803141"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975987"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques 
@@ -53,7 +53,7 @@ ms.locfileid: "11803141"
     
 1.  检查 **颜色选取器** 中的"对比率"部分。  一个选中标记表示元素满足最低 [建议][W3CContrastMinimum]。  两个选中标记表示它符合增强 [的建议][W3CContrastEnhanced]。  
     
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="颜色选取器中的对比率部分显示 2 个选中标记和 13.97 值" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
+    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="颜色选取器中的&quot;对比率&quot;部分显示 2 个选中标记和 13.97 值" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
        颜色 **选取器** 中的"对比率"部分显示 2 个选中标记和一个值 `13.97`  
     :::image-end:::  
     
@@ -76,12 +76,12 @@ ms.locfileid: "11803141"
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-本作品根据 [知识共享署名 4.0 国际许可 ][CCA4IL] 获得许可。  
+本作品根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]获得许可。  
 
 
 <!-- links -->  
 [W3CContrastEnhanced]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced "对比度级别（增强） AAA | W3C"  
-[W3CContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum "对比度 (级别 AA) 最低|W3C"  
+[W3CContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum "对比度 (最低) AA 级别|W3C"  
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  

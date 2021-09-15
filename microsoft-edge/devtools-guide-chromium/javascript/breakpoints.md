@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: 9734841a9994625bfbaa97a84781581415ed883ed92f8ca914b81cea277d8fac
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: fda536deb7177b933013120fc11b0896acfbbe5c
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11800487"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976641"
 ---
 <!-- Copyright Kayce Basques
 
@@ -31,7 +31,7 @@ ms.locfileid: "11800487"
 
 使用断点暂停 JavaScript 代码。  本文介绍了 DevTools 中提供的每种断点类型，以及何时使用以及如何设置每种类型。
 
-有关使用现有网页的介绍性教程，请导航到在开发人员工具中Microsoft Edge [JavaScript 入门][DevtoolsJavascriptIndex]。
+有关使用现有网页的介绍性教程，请导航到在[DevTools 中开始Microsoft Edge JavaScript。][DevtoolsJavascriptIndex]
 
 ## <a name="overview-of-when-to-use-each-breakpoint-type"></a>何时使用各断点类型的概述  
 
@@ -103,7 +103,7 @@ console.log('c');
 *   将鼠标悬停在某个项上并打开上下文菜单 \(右键单击\) 删除该断点。  
 *   将鼠标悬停在“**断点**”窗格中的任意位置，然后打开上下文菜单 \(右键单击\) 以停用所有断点、禁用所有断点或删除所有断点。  禁用所有断点等效于取消选中每个断点。  取消激活所有断点将指示开发工具忽略所有代码行断点，但也要保持启用状态，以使每个断点都与重新激活每个断点时的状态相同。  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="断点窗格中的已停用断点" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="“断点”窗格中的已停用断点" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
        “**断点**”窗格中的已停用断点  
     :::image-end:::  
     
@@ -168,7 +168,7 @@ console.log('c');
 1.  选择“**源**”工具。  
 1.  选择“**因异常暂停**” \(![ 因异常暂停 ](../media/pause-on-exceptions-icon.msft.png) \)。  图标在启用时变为蓝色。  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="因异常暂停按钮" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="“因异常暂停”按钮" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
        “**因异常暂停**”按钮  
     :::image-end:::  
     
@@ -219,7 +219,7 @@ debug(hey); // This does not work.  hey() is out of scope.
 
 *   [使用调试器功能][DevtoolsJavascriptReference] - 使用"源"工具 **中的调试器** UI。
 *   [在 DevTools][DevtoolsJavascriptIndex] Microsoft Edge JavaScript 入门 - 使用现有网页的介绍性教程。
-*   [源工具概述][DevtoolsSourcesIndex]- 调试器是源工具**** 的一部分，其中包括 JavaScript 编辑器。
+*   [源工具概述][DevtoolsSourcesIndex] - 调试器是 **源** 工具的一部分，其中包括 JavaScript 编辑器。
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 

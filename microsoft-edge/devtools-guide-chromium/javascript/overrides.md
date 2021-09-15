@@ -6,17 +6,17 @@ ms.author: msedgedevrel
 ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 8f19d7b83acfbf9a1582a9e9e8b77e88b5c6e09d2be9e3c1d9db9e76dbab6136
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 66c0686c166163f1640384d096288af0b530f135
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11807363"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976616"
 ---
 # <a name="override-webpage-resources-with-local-copies-using-microsoft-edge-devtools"></a>使用 DevTools 使用本地副本替代Microsoft Edge资源  
 
-有时你需要尝试一些可能的网页修补程序，但你无法访问源文件，或者更改页面需要一个缓慢而复杂的生成过程。  你可以调试和修复 DevTools 中的所有类型问题。  但更改不会保留;刷新本地文件后，所有工作都消失。  源 [工具中的替代][DevToolsSourcesTool] 功能可帮助你解决此问题。  
+有时你需要尝试一些可能的网页修补程序，但你无法访问源文件，或者更改页面需要一个缓慢而复杂的生成过程。  你可以调试和修复 DevTools 中所有的问题。  但更改不会保留;刷新本地文件后，所有工作都消失。  源 [工具中的替代][DevToolsSourcesTool] 功能可帮助你解决此问题。  
 
 现在，您可以利用当前网页的资源，并在本地存储该资源。  刷新网页时，浏览器不会从服务器加载资源。  相反，浏览器会将其替换为你的本地资源副本。  
 
@@ -65,13 +65,13 @@ ms.locfileid: "11807363"
    在样式检查器 **中选择** 文件  
 :::image-end:::  
 
-在"**源**"编辑器上，将鼠标悬停在所选文件的文件名上，打开上下文菜单 \(右键单击\) ，然后选择"保存**以替代"。**  
+在"**源**编辑器"上，将鼠标悬停在所选文件的文件名上，打开上下文菜单 \ (右键单击\) ，然后选择"保存**以替代"。**  
 
-:::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="在源编辑器中，将文件的名称添加到替代" lightbox="../media/javascript-overrides-file-name.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="在&quot;源&quot;编辑器中，将文件的名称添加到替代" lightbox="../media/javascript-overrides-file-name.msft.png":::
    在 **"源** "编辑器中，将文件的名称添加到替代  
 :::image-end:::  
 
-:::image type="complex" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="在上下文菜单上，选择保存替代" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="在上下文菜单上，选择&quot;保存替代&quot;" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
    在上下文菜单上，选择 **"保存替代"**  
 :::image-end:::  
 
@@ -83,14 +83,14 @@ ms.locfileid: "11807363"
 
 :::row:::
    :::column span="":::
-      在下面的示例中，现在可以更改网页的样式。  若要在文件周围添加红色边框，在 **"** 样式"编辑器上复制以下样式，并将其添加到 body 元素中。  
+      在下面的示例中，现在可以更改网页的样式。  若要在文件周围添加红色边框，在 **样式** 编辑器上复制以下样式，并将其添加到 body 元素。  
       
       ```css
       border: 10px solid firebrick
       ```  
    :::column-end:::
    :::column span="":::
-      该文件将自动保存在您的计算机上。  如果刷新文件，将显示边框，并且不会丢失任何工作。  
+      该文件将自动保存在您的计算机上。  如果刷新该文件，将显示边框，并且不会丢失任何工作。  
       
       :::image type="complex" source="../media/javascript-overrides-changing-styles.msft.png" alt-text="通过编辑替代文件夹中的文件来永久更改网页样式" lightbox="../media/javascript-overrides-changing-styles.msft.png":::
          通过编辑替代文件夹中的文件来永久更改网页样式  
@@ -100,14 +100,14 @@ ms.locfileid: "11807363"
 
 :::row:::
    :::column span="":::
-      在" **源** "工具的" **页面** "部分，将鼠标悬停在任何文件上，打开上下文菜单 \(右键单击\) ，并将其添加到覆盖。  同样，已位于替代文件夹中的文件在图标上还有一个紫色点。  
+      在" **源** "工具的" **页面** "部分，将鼠标悬停在任何文件上，打开上下文菜单 \ (右键单击\) ，并将其添加到覆盖。  同样，已位于替代文件夹中的文件在图标上还有一个紫色点。  
       
-      :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="从源工具中选择文件进行替代" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
+      :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="从&quot;源&quot;工具中选择文件进行替代" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
          从"源"工具 **中选择** 文件进行替代  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      或者，在 **"** 网络"工具上，将鼠标悬停在任何文件上，打开上下文菜单 \(右键单击\) ，并将其添加到覆盖。  当替代生效时，位于您的计算机而不是实时网页中的文件。  当替代生效时，在 **"** 网络"工具上，找到文件名旁边的警告图标。  
+      或者，在 **"** 网络"工具上，将鼠标悬停在任何文件上，打开上下文菜单 \ (右键单击\) ，并将其添加到覆盖。  当替代生效时，位于您的计算机而不是实时网页中的文件。  当替代生效时，在 **"** 网络"工具上，找到文件名旁边的警告图标。  
       
       :::image type="complex" source="../media/javascript-overrides-network.msft.png" alt-text="从网络工具中选择文件进行替代" lightbox="../media/javascript-overrides-network.msft.png":::
          从网络工具 **中选择** 文件进行替代  

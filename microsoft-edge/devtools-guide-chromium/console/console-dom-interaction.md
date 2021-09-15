@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: a8acb501d099c3708824fd3a05d1ee73b76a268e06d80a2ff14c82d6d9043a87
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 56ce6b1d8f1ad98eeb9c141c2e9b002e7679d7de
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11801790"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976290"
 ---
 # <a name="use-the-console-to-interact-with-the-dom"></a>使用控制台与 DOM 交互
 
@@ -67,15 +67,15 @@ document.querySelector('header').style.border = '2em solid green'
     :::image-end:::  
     
 1.  选择它，DevTools 跳转到 **"元素"** 工具。  
-1.  选择 `...` DOM 树中元素旁边的菜单。  
+1.  选择 `...` DOM 树中的 元素旁边的菜单。  
     
-    :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="所选元素显示在元素工具的 DOM 树中，选择溢出菜单以获取更多功能" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
+    :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="所选元素显示在&quot;元素&quot;工具的 DOM 树中，选择溢出菜单以获取更多功能" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
         所选元素显示在"元素"工具的 DOM **树中，** 选择溢出菜单以获取更多功能  
     :::image-end:::  
     
 1.  打开上下文菜单并选择 `Copy`  >  `Copy JS Path` 。  
     
-    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="从元素工具的 DOM 树中的元素复制 JavaScript 路径" lightbox="../media/console-dom-copy-JS-path.msft.png":::
+    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="从&quot;元素&quot;工具的 DOM 树中的元素复制 JavaScript 路径" lightbox="../media/console-dom-copy-JS-path.msft.png":::
         从"元素"工具的 DOM 树中的 **元素** 复制 JavaScript 路径  
     :::image-end:::  
     
@@ -102,14 +102,14 @@ document.querySelector('header').style.border = '2em solid green'
 *   `$x()` 允许您使用 XPATH 选择 DOM 元素。
 *   `$()` `$$()`和 是 和 的 `document.querySelector()` 较短版本 `document.querySelectorAll()` 。  
     
-例如，以下代码段检索网页 \(中所有的链接，就像 \) 的简短内容一 `$$('a')` 样，将链接显示为可排序表以复制和粘贴到 Excel 中。 `document.querySelectorAll('a')`
+例如，以下代码段检索网页 \ (中所有的链接，就像 \) 的简短内容一样，将链接显示为可排序的表，以复制和粘贴到 Excel 中 `$$('a')` `document.querySelectorAll('a')` 。
 
 ```javascript
 console.table($$('a'),['href','text']);
 ```  
 
-:::image type="complex" source="../media/console-dom-get-all-links.msft.png" alt-text="获取网页中所有的链接，将结果显示为表格" lightbox="../media/console-dom-get-all-links.msft.png":::
-    获取网页中所有的链接，将结果显示为表格  
+:::image type="complex" source="../media/console-dom-get-all-links.msft.png" alt-text="获取网页中的所有链接，将结果显示为表格" lightbox="../media/console-dom-get-all-links.msft.png":::
+    获取网页中的所有链接，将结果显示为表格  
 :::image-end:::  
 
 但是，如果你不希望显示信息，但希望获取它作为数据。  快捷方式 `$$('a')` 提供定位链接以及每个链接的所有属性。  问题是您只需要链接和相关文本。  
@@ -210,7 +210,7 @@ console.log(out);
 Console 的另外两种有趣的 **实用程序方法处理** 事件处理。
 
 *   `getEventListeners(node)` 列出节点的所有事件侦听器。
-*   `monitorEvents(node, events)` 监视和记录节点上发生的事件。
+*   `monitorEvents(node, events)` 监视并记录节点上发生的事件。
 
 若要列出分配给网页中第一个表单的所有事件侦听器，请完成以下操作。  
 
@@ -227,7 +227,7 @@ Console 的另外两种有趣的 **实用程序方法处理** 事件处理。
 
 监视时，每次对指定元素进行更改时，都会**** 在控制台中收到通知。  将要侦听的事件定义为第二个参数。  定义要监视的事件非常重要，否则将报告元素发生的任何事件。
 
-若要每次滚动时在 **控制台** 中收到通知，请调整窗口大小，或当用户在搜索表单中输入内容时，请完成以下操作。  
+若要每次滚动时在 **控制台** 中获取通知，请调整窗口大小，或在用户在搜索表单中类型时完成以下操作。  
 
 1.  打开“**控制台**”。  
 1.  键入或复制并粘贴以下代码段。  

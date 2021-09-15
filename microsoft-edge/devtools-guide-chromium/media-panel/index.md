@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 9008af151c0caff63f3e22df12384181b14d16d9b1284c12b6b560714fcaad85
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 0d2a60c31d5239a4b47102ae96a713b8bfcf46f3
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11800015"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976661"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -29,7 +29,7 @@ ms.locfileid: "11800015"
    limitations under the License.  -->  
 # <a name="view-and-debug-media-players-information"></a>查看和调试媒体播放器信息  
 
-使用**** DevTools Microsoft Edge中的媒体工具查看信息并按浏览器选项卡调试媒体播放器。  
+使用**DevTools** Microsoft Edge中的媒体工具查看信息并按浏览器选项卡调试媒体播放器。  
 
 ## <a name="open-the-media-tool"></a>打开媒体工具  
 
@@ -91,12 +91,12 @@ ms.locfileid: "11800015"
 
 有时，您可以在一个网页上运行多个媒体播放器，或者使用同一浏览器选项卡浏览不同的网页，每个网页都使用媒体播放器。
 
-你可以选择隐藏 \(或显示\) 每个媒体播放器，以简化调试体验。  
+你可以选择隐藏 \ (或显示\) 播放器，以简化调试体验。  
 
 1.  使用同一浏览器选项卡浏览到多个不同的视频网页。  
 1.  若要隐藏媒体播放器，请完成以下操作之一。  
-    *   若要隐藏一个媒体播放器，请将鼠标悬停在媒体播放器上，打开上下文菜单 \(右键单击\) ，然后选择"隐藏**播放器"。**  
-    *   若要隐藏所有其他媒体播放器，请将鼠标悬停在媒体播放器上，打开上下文菜单 \(右键单击\) ，然后选择"隐藏**所有其他"。**  
+    *   若要隐藏一个媒体播放器，请将鼠标悬停在媒体播放器上，打开上下文菜单 \ (右键单击\) ，然后选择"隐藏**播放器"。**  
+    *   若要隐藏所有其他媒体播放器，请将鼠标悬停在媒体播放器上，打开上下文菜单 \ (右键单击\) ，然后选择"隐藏**所有其他"。**  
     
     :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="隐藏媒体播放器" lightbox="../media/media-panel-hide-show.msft.png":::
        隐藏媒体播放器  
@@ -104,7 +104,7 @@ ms.locfileid: "11800015"
     
 ## <a name="export-media-player-information"></a>导出媒体播放器信息  
 
-1.  若要将媒体播放器信息下载为 JSON 文件，请将鼠标悬停在媒体播放器上，打开上下文菜单 \(右键单击\) ，然后选择"保存播放器**信息"。**  
+1.  若要将媒体播放器信息下载为 JSON 文件，请将鼠标悬停在媒体播放器上，打开上下文菜单 \ (右键单击\) ，然后选择"保存播放器**信息"。**  
     
     :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="导出媒体信息" lightbox="../media/media-panel-save.msft.png":::
        导出媒体信息  
@@ -116,11 +116,11 @@ ms.locfileid: "11800015"
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open/index.md "打开Microsoft Edge (Chromium) DevTools |Microsoft Docs"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "打开 Microsoft Edge (Chromium) DevTools |Microsoft Docs"  
 
 [DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Android 设备远程调试入门 | Microsoft Docs"  
 
-[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "使用边缘开发人员工具最大限度地提高|必应视频"  
+[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "使用边缘开发人员工具最大程度地|必应视频"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

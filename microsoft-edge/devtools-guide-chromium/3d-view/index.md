@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
 ms.openlocfilehash: a7d4acf4005888f95c11be3affaaf31d4606db0b
-ms.sourcegitcommit: 22acb7a57d9d8e21e4348aa699c1a2c53618e93d
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "11936696"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975965"
 ---
 # <a name="3d-view"></a>3D 视图
 
@@ -48,7 +48,7 @@ ms.locfileid: "11936696"
 ### <a name="mouse-controls"></a>鼠标控件  
 
 *   旋转 DOM：选择并拖动画布空间。  
-*   平移 DOM：打开上下文菜单 \(右键单击\) 并按希望 DOM 移动的方向拖动。  
+*   平移 DOM：打开上下文菜单 \ (右键单击\) 并按希望 DOM 移动的方向拖动。  
 *   缩放：在触摸板上拖动两根手指或使用鼠标上的滚动盘。  
 
 ### <a name="on-screen-controls"></a>屏幕控件  
@@ -58,7 +58,7 @@ ms.locfileid: "11936696"
 :::image-end:::  
 
 *   将画布视图重置为原始视图：选择 **"重置相机"** 按钮，或选择 **"重置视图中的元素"，然后重新居中相机**\(侧向刷新图标\) 按钮。  
-*   刷新画布 \(例如，如果浏览器发生更改或切换到设备仿真器视图\) ：选择 **"重新拍摄快照"** 按钮或选择"**获取新快照**"按钮 \(刷新图标\)。  
+*   刷新画布 \ (例如，如果浏览器发生更改或切换到设备仿真器视图\) ：选择 **"重新拍摄快照"** 按钮或选择"**获取新快照**"按钮 \(刷新图标\)。  
 
 ## <a name="z-index"></a>Z 索引  
 
@@ -70,7 +70,7 @@ ms.locfileid: "11936696"
 
 ### <a name="highlight-elements-with-stacking-context"></a>使用堆叠上下文突出显示元素  
 
-使用 **堆叠上下文设置突出显示** 元素允许你打开 \(和 off\) 画布上元素的 z-index 标记。  默认情况下选中复选框。  
+使用 **堆叠上下文设置突出显示** 元素允许你打开 \ (和 off\) 画布上元素的 z-index 标记。  默认情况下选中复选框。  
 
 ### <a name="change-the-scope-of-your-exploration"></a>更改探索范围  
 

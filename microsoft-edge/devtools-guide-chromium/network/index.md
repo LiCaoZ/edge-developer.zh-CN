@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
 ms.openlocfilehash: e52c5ce1619256a091e6c3c3c6d2c40b3b478ed9
-ms.sourcegitcommit: 3d1b23679e8b61cdebe6c014247925adc04d132c
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "11920600"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976481"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -68,7 +68,7 @@ ms.locfileid: "11920600"
     :::image-end:::  
     -->
     
-1.  若要[打开 DevTools，][DevToolsOpen]请选择 `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\)。  将 **打开控制台** 工具。  
+1.  若要[打开 DevTools，][DevToolsOpen]请选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\)。  将 **打开控制台** 工具。  
     
     :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="控制台" lightbox="../media/network-glitch-console.msft.png":::
        **控制台**  
@@ -125,7 +125,7 @@ ms.locfileid: "11920600"
 网络日志的列是可配置的。  您可以隐藏您未使用的列。  
 默认情况下，还有一些列处于隐藏状态，您可能会发现这些列很有用。  
 
-1.  将鼠标悬停在"网络日志"表的标题上，打开上下文菜单 \(右键单击\) ，然后选择"域 **"。**  现在将显示每个资源的域。  
+1.  将鼠标悬停在"网络日志"表的标题上，打开上下文菜单 \ (右键单击\) ，然后选择"域 **"。**  现在将显示每个资源的域。  
     
     :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="启用域列" lightbox="../media/network-glitch-network-edit-column.msft.png":::
        启用域列  
@@ -146,7 +146,7 @@ ms.locfileid: "11920600"
        选择慢速 3G  
     :::image-end:::  
     
-1.  长按**Reload** \(![ Reload ](../media/refresh-icon.msft.png) \) ，然后选择 **"空缓存和硬重新加载"。**  
+1.  长按**Reload** \ (![ Reload ](../media/refresh-icon.msft.png) \) 并选择 **"空缓存和硬重新加载"。**  
     
     :::image type="complex" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="空缓存和硬重新加载" lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
        **空缓存和硬重新加载**  
@@ -161,9 +161,9 @@ ms.locfileid: "11920600"
 
 屏幕截图显示网页在加载时的外观。  
 
-1.  选择\(![ 网络设置 ](../media/settings-icon.msft.png) \) 并打开捕获 **屏幕截图** 复选框。  
+1.  选择\ (![ 网络设置 ](../media/settings-icon.msft.png) \) 并打开捕获 **屏幕截图** 复选框。  
     
-    :::image type="complex" source="../media/network-glitch-network-screenshots-setting.msft.png" alt-text="网络设置中的捕获屏幕截图复选框" lightbox="../media/network-glitch-network-screenshots-setting.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-screenshots-setting.msft.png" alt-text="&quot;网络设置&quot;中的&quot;捕获屏幕截图&quot;复选框" lightbox="../media/network-glitch-network-screenshots-setting.msft.png":::
        选择 **捕获屏幕截图**  
     :::image-end:::  
     
@@ -180,7 +180,7 @@ ms.locfileid: "11920600"
        第一张屏幕截图期间发生的网络活动  
     :::image-end:::  
     
-1.  再次选择 (![ 网络设置 \) "并关闭"捕获屏幕截图" ](../media/settings-icon.msft.png) 复选框以**** 关闭"屏幕截图"窗格。
+1.  再次选择 (![ 网络设置 \) 并关闭"捕获屏幕截图" ](../media/settings-icon.msft.png) 复选框以关闭****"屏幕截图"窗格。
 1.  再次刷新页面。  
     
 ## <a name="inspect-the-details-of-the-resource"></a>检查资源的详细信息  
@@ -208,7 +208,7 @@ ms.locfileid: "11920600"
     :::image-end:::  
     
     > [!TIP]
-    > 缩小文件时，选择"响应"面板底部的"格式**\(** ![ 格式 ](../media/format-icon.msft.png) \) "**** 按钮，以重新设置文件内容的格式，提高可读性。  
+    > 缩小文件时，选择"响应"面板底部的"格式**\ (** ![ 格式 ](../media/format-icon.msft.png) \) "**** 按钮，以重新设置文件内容的格式，提高可读性。  
     
 1.  选择 **"计时"** 面板。  将显示资源的网络活动的细分。  
     
@@ -216,7 +216,7 @@ ms.locfileid: "11920600"
        “**计时**”面板  
     :::image-end:::  
     
-1.  选择 **"关闭** \(![ 关闭 ](../media/close-icon.msft.png) \) "再次查看网络日志。  
+1.  选择 **"关闭** \ (![ Close ](../media/close-icon.msft.png) \) "再次查看网络日志。  
     
     :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="关闭按钮" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
        “**关闭**”按钮  
@@ -230,7 +230,7 @@ ms.locfileid: "11920600"
 
 <!--TODO: add cache policies section when available  -->
 
-1.  选择 **搜索** \(![ 搜索 ](../media/search-icon.msft.png) \) 。  搜索窗格将打开到网络日志的左侧。  
+1.  选择 **搜索** \ (![ 搜索 ](../media/search-icon.msft.png) \) 。  搜索窗格将打开到网络日志的左侧。  
     
     :::image type="complex" source="../media/network-glitch-network-search-empty.msft.png" alt-text="搜索窗格" lightbox="../media/network-glitch-network-search-empty.msft.png":::
        “**搜索**”窗格  
@@ -260,7 +260,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 
 默认情况下 **应** 打开"筛选器"工具栏。  如果不是：  
 
-1.  选择 **筛选器** \(![ Filter ](../media/filter-icon.msft.png) \) 以显示它。  
+1.  选择 **筛选器** \ (![ Filter ](../media/filter-icon.msft.png) \) 以显示它。  
     
 ### <a name="filter-by-string-regular-expression-or-property"></a>按字符串、正则表达式或属性筛选  
 
@@ -304,7 +304,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
        只显示 CSS 文件  
     :::image-end:::  
     
-1.  若要同时显示脚本，请选择并按住 `Control` \(Windows、Linux\) 或 `Command` \(macOS\) ，然后选择**JS。**  
+1.  若要同时显示脚本，请选择并按住 `Control` \ (Windows、Linux\) 或 `Command` \ (macOS\) ，然后选择**JS。**  
     
     :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="只显示 CSS 和 JS 文件" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
        只显示 CSS 和 JS 文件  
@@ -330,7 +330,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
        **显示请求阻止**  
     :::image-end:::  
     
-1.  选择 **添加模式** \(![ 添加模式 ](../media/add-icon.msft.png) \) 。  
+1.  选择 **添加模式** \ (![ 添加模式 ](../media/add-icon.msft.png) \) 。  
 1.  键入 `main.css`。  
     
     :::image type="complex" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="阻止 main.css" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::

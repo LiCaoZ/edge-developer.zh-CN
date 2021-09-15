@@ -9,12 +9,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: 辅助功能， 开发人员辅助功能， 可访问的网站， 边缘， Web 开发， ARIA， 开发人员， UIA， UI 自动化
 ms.custom: seodec18
-ms.openlocfilehash: bfe67fa9a869cea8e7f573c0818441650225f7e509bdfb4e41479aee32dec941
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 2fcc8160c830b5a62d8023a5cb7cc9df376c49ca
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11799644"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975961"
 ---
 # <a name="aria-and-ui-automation-in-microsoft-edge"></a>ARIA 和 UI 自动化Microsoft Edge
 
@@ -22,19 +22,19 @@ W3C 将可访问的富 Internet 应用程序 (ARIA) ARIA 定义为使动态 Web 
 
 访问[HTML5Accessibility，](https://html5accessibility.com)了解哪些新 HTML5 功能可供 Microsoft Edge。
 
-EdgeHTML Microsoft Edge呈现引擎 (构建) 网页的可访问投影，符合以下 W3C 规范：
+EdgeHTML Microsoft Edge的 (引擎) 构建网页的可访问投影，符合以下 W3C 规范：
 
 1. [HTML 辅助功能 API 映射](https://w3.org/TR/html-aam-1.0/)规范定义 HTML 元素和属性如何映射到 ARIA 和 UI 自动化对象。
    * [工作草稿](https://w3.org/TR/html-aam-1.0/) - 规范的稳定版本
-   * [编辑器的草稿](https://w3c.github.io/html-aam/) - 正在进行中。 请注意，尽管此规范具有最新更改，但这些更改可能尚未Microsoft Edge可用。
+   * [编辑器的草稿](https://w3c.github.io/html-aam/) - 正在进行中。 请注意，尽管此规范具有最新的更改，但这些更改可能尚未Microsoft Edge可用。
 
 
 2. 核心 [辅助功能 API 映射](https://w3.org/TR/core-aam-1.1/) 规范定义了生成辅助功能树以及将 ARIA 元素和属性映射到 UI 自动化对象的一般原则。
    * [工作草稿](https://w3.org/TR/core-aam-1.1/) - 规范的稳定版本
-   * [编辑器的草稿](https://w3c.github.io/core-aam/) - 正在进行中。 请注意，尽管此规范具有最新更改，但这些更改可能尚未Microsoft Edge可用。  
+   * [编辑器的草稿](https://w3c.github.io/core-aam/) - 正在进行中。 请注意，尽管此规范具有最新的更改，但这些更改可能尚未Microsoft Edge可用。  
 
 3. [辅助名称和](https://w3.org/TR/accname-aam-1.1/)说明：计算和 API 映射规范定义如何计算可访问对象的名称和说明（给定可用于辅助元素的 HTML 和 ARIA 元素和属性值）。
    * [工作草稿](https://w3.org/TR/accname-aam-1.1/) - 规范的稳定版本  
-   * [编辑器的草稿](https://w3c.github.io/accname/) - 正在进行中。 请注意，尽管此规范具有最新更改，但这些更改可能尚未Microsoft Edge可用。   
+   * [编辑器的草稿](https://w3c.github.io/accname/) - 正在进行中。 请注意，尽管此规范具有最新的更改，但这些更改可能尚未Microsoft Edge可用。   
 
 有关网站中的辅助功能体系结构Microsoft Edge，请参阅构建更易于访问的[Web](https://blogs.windows.com/msedgedev/2016/04/20/building-a-more-accessible-web-platform/)平台博客文章。  有关新体系结构如何改善最终用户体验的示例，特别是标记如何定义使用屏幕阅读器等辅助技术进行导航的体验，请访问使用 HTML5 和 [UIA](https://blogs.windows.com/msedgedev/2016/05/12/accessible-ux-with-html5-and-uia/)构建更易于访问的用户体验。

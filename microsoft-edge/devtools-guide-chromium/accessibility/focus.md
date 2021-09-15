@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: 5cbdae51a618801c81663ae75f8847b350fb4ea0f8515de72f41c60be4dda999
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 2fd53caccefefb0b0bce4b5c82f30632e11a3cb6
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11803048"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975963"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -34,14 +34,14 @@ ms.locfileid: "11803048"
 若要跟踪 DevTools 中聚焦的元素：
 
 1.  打开“**控制台**”。  
-1.  Choose **Create live expression** \(Create live expression ![ ](../media/create-live-expression-icon.msft.png) \) .  
+1.  Choose **Create live expression** \ (Create live expression ![ ](../media/create-live-expression-icon.msft.png) \) .  
     
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="创建动态表达式" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        创建动态表达式  
     :::image-end:::  
     
 1.  键入 `document.activeElement`。  
-1.  若要保存表达式，请选择活动表达式外部。
+1.  若要保存表达式，请选择活动表达式之外。
     
 `document.activeElement` 下面显示的值是表达式的结果。  
 

@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， vs code， visual studio code， 调试程序， webhint
 ms.openlocfilehash: 2637b1fd63c37cb6d98e89d0a3ff4bc1e0d3d20d
-ms.sourcegitcommit: 480455093fe6ccf3dc4fffc9b63862c789cb97cb
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "11936415"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976501"
 ---
 # <a name="visual-studio-code-overview"></a>Visual Studio Code 概述
 
@@ -25,21 +25,21 @@ Visual Studio Code是一个轻型但功能强大的源代码编辑器。  Visual
 
 
 <!-- ====================================================================== -->
-## <a name="the-microsoft-edge-devtools-extension-for-visual-studio-code"></a>适用于Microsoft Edge开发人员的 DevTools Visual Studio Code
+## <a name="the-microsoft-edge-devtools-extension-for-visual-studio-code"></a>适用于Microsoft Edge的 DevTools Visual Studio Code
 
-使用**Microsoft Edge DevTools** Visual Studio Code，可以在 Visual Studio Code 内使用 Microsoft Edge 浏览器**** 的 Elements Visual Studio Code。  使用"元素"工具可以：
+借助**Microsoft Edge 开发人员**工具Visual Studio Code，可以在 Visual Studio Code 内使用 Microsoft Edge 浏览器的 Elements **** Visual Studio Code。  使用"元素"工具可以：
 *   附加到实例或启动 Microsoft Edge。
 *   显示运行时 HTML 结构。
 *   更新布局。
 *   修复样式设置问题。
 
-:::image type="complex" source="./media/microsoft-edge-tools-for-visual-studio-code.png" alt-text="适用于Microsoft Edge开发人员的 DevTools Visual Studio Code" lightbox="./media/microsoft-edge-tools-for-visual-studio-code.png":::
+:::image type="complex" source="./media/microsoft-edge-tools-for-visual-studio-code.png" alt-text="适用于Microsoft Edge的 DevTools Visual Studio Code" lightbox="./media/microsoft-edge-tools-for-visual-studio-code.png":::
    适用于**Microsoft Edge开发人员的 DevTools** Visual Studio Code
 :::image-end:::
 
 若要安装 Microsoft Edge DevTools 扩展：
-1. In Visual Studio Code， navigate to **Extensions** \(select `Ctrl` + `Shift` + `X` on Windows/Linux or `Command` + `Shift` + `X` on macOS\) .
-1. 在 Marketplace 中搜索扩展Microsoft Edge **Tools for VS Code，** 选择扩展，**然后选择安装**。
+1. In Visual Studio Code， navigate to **Extensions** \ (select `Ctrl` + `Shift` + `X` on Windows/Linux or `Command` + `Shift` + `X` on macOS\) .
+1. 在 Marketplace 中搜索扩展Microsoft Edge **Tools for VS Code，** 选择扩展，然后选择"安装 **"。**
 
 :::image type="complex" source="./media/vscode-edge-tools-install.png" alt-text="安装 Microsoft Edge DevTools 扩展Visual Studio Code" lightbox="./media/vscode-edge-tools-install.png":::
    安装 Microsoft Edge **DevTools**扩展Visual Studio Code
@@ -47,7 +47,7 @@ Visual Studio Code是一个轻型但功能强大的源代码编辑器。  Visual
 
 ### <a name="see-also"></a>另请参阅
 
-*  [Microsoft Edge开发人员工具扩展 - Visual Studio Code][VisualStudioCodeMicrosoftEdgeDevtoolsExtension]扩展。
+*  [Microsoft Edge开发人员工具扩展Visual Studio Code][VisualStudioCodeMicrosoftEdgeDevtoolsExtension] - 使用扩展。
 *  [Microsoft Edge工具Visual Studio Code][VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode] - 有关扩展的信息，请参阅 Visual Studio Marketplace。
 
 
@@ -71,7 +71,7 @@ Webhint 工具会检查代码的编码实践和常见错误。  Webhint 开放�
 :::image-end:::
 
 安装 Webhint 扩展：
-1. In Visual Studio Code， navigate to **Extensions** \(select `Ctrl` + `Shift` + `X` on Windows/Linux or `Command` + `Shift` + `X` on macOS\) .
+1. In Visual Studio Code， navigate to **Extensions** \ (select `Ctrl` + `Shift` + `X` on Windows/Linux or `Command` + `Shift` + `X` on macOS\) .
 1. 在 Marketplace 中搜索**Webhint 扩展**，选择该扩展，然后选择"安装 **"。**
 
 :::image type="complex" source="./media/visual-studio-code-extension-webhint.msft.png" alt-text="Webhint Visual Studio Code扩展" lightbox="./media/visual-studio-code-extension-webhint.msft.png":::
@@ -86,7 +86,7 @@ Webhint 工具会检查代码的编码实践和常见错误。  Webhint 开放�
 
 <!-- ====================================================================== -->
 <!--links -->
-[VisualStudioCodeMicrosoftEdgeDevtoolsExtension]: ./microsoft-edge-devtools-extension.md "Microsoft Edge开发工具Visual Studio Code扩展|Microsoft Docs"
+[VisualStudioCodeMicrosoftEdgeDevtoolsExtension]: ./microsoft-edge-devtools-extension.md "Microsoft Edge开发人员工具Visual Studio Code扩展|Microsoft Docs"
 [VisualStudioCodeWebhint]: ./webhint.md "webhint 扩展Visual Studio Code |Microsoft Docs"
 <!-- external links -->
 [VisualstudioCode]: https://code.visualstudio.com "Visual Studio 代码"

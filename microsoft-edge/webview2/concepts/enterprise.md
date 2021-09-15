@@ -9,11 +9,11 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、企业、组策略、可管理性
 ms.openlocfilehash: 318c2da28f9e02c0dd70619070b059e6fbc0e06a
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893616"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976581"
 ---
 # <a name="managing-webview2-applications"></a>管理 WebView2 应用程序  
 
@@ -22,7 +22,7 @@ ms.locfileid: "11893616"
 
 ## <a name="group-policies-for-webview2"></a>WebView2 的组策略  
 
-IT 管理员可以使用组策略对象 \(GPO\) 配置 WebView2 的策略设置。  以下策略与 WebView2 相关。
+IT 管理员可以使用组策略对象 \ (GPO\) 配置 WebView2 的策略设置。  以下策略与 WebView2 相关。
 
 *   [Microsoft Edge -][EdgeUpdatePolicies]更新策略可供 IT 管理员管理 WebView2 运行时的安装和更新方面。  浏览器Microsoft Edge WebView2 运行时使用相同的更新机制进行更新。  除非策略（如 ）特定于通道，否则它同时适用于 `Update` 浏览器和 WebView2 运行时。  例如，允许 IT 管理员设置每天的时间，以禁止浏览器和 `UpdateSuppressed` WebView2 运行时自动更新。  这使 IT 管理员能够为浏览器和 WebView2 运行时配置一次首选项和代理，以控制其网络带宽/流量或用于其他目的。  IT 管理员可以按照Microsoft Edge[指南配置][ConfigureMicrosoftEdge]Microsoft Edge - 更新策略。  
 

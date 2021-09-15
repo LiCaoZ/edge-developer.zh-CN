@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 98c4d9fd9f1a03f20bd6002fc5a28e06923b3c5dda0d523e20849ef6e0da1250
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 3626de9bdc2cce266efafe4b1b2e8fff501a74f7
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11802583"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975921"
 ---
 # <a name="analyze-the-lack-of-indication-of-keyboard-focus-in-a-sidebar-menu"></a>分析边栏菜单中键盘焦点的缺失
 
@@ -28,7 +28,7 @@ ms.locfileid: "11802583"
 
 1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  选择**** DevTools 左上角的"检查 \(检查图标 \) "按钮，以便该按钮突出显示为 (![ ](../media/inspect-icon.msft.png) 蓝色) 。
+1.  选择**** DevTools 左上角的"检查 \ (检查图标 \) "按钮，使按钮突出显示为 (![ ](../media/inspect-icon.msft.png) 蓝色) 。
 
 1.  将鼠标悬停在边栏导航菜单中的蓝色 **"猫** "链接上。  将显示 Inspect 覆盖层，显示 `a` 元素是可键盘聚焦的。  但是覆盖层不会显示当链接具有焦点时没有视觉指示。
 
@@ -42,13 +42,13 @@ ms.locfileid: "11802583"
         检查菜单中的链接的源代码和应用样式
     :::image-end:::
     
-1.  选择 CSS 文件的链接。  CSS 文件将在"源" **工具中** 打开。
+1.  选择 CSS 文件的链接。  CSS 文件在"源" **工具中** 打开。
 
-    :::image type="complex" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="应用于源工具中链接的样式" lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="应用于&quot;源&quot;工具中链接的样式" lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
         应用于"源"工具中链接的样式
     :::image-end:::
     
-页面样式具有 CSS 伪类规则，用于指示在使用鼠标时位于哪个 `hover` 菜单项上 `#sidebar nav li a:hover` ：。  但是，没有 CSS 伪类规则，该状态在使用键盘时直观地指示您位于哪个菜单项上， `focus` 例如 `#sidebar nav li a:focus` 。
+页面样式具有 CSS 伪类规则，用于指示在使用鼠标时位于哪个 `hover` 菜单项 `#sidebar nav li a:hover` ：。  但是，没有 CSS 伪类规则，该状态在使用键盘时直观地指示您位于哪个菜单项上， `focus` 例如 `#sidebar nav li a:focus` 。
 
 此外，请注意链接的 CSS 属性设置为 `outline: none` 。  这是一种常见做法，当你使用键盘关注元素时，删除浏览器自动添加到元素的大纲。  不使用 `focus` 样式设置会导致用户混淆。
 

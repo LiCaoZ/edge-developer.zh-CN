@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: 93ff81db37fd2b17d76be314ff532322443126cb4a286c159e5f478eb0f1ab68
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: d5a5ea8faef40925fb0fb986eb984ac9ae4f051b
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11797882"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976571"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -60,7 +60,7 @@ ms.locfileid: "11797882"
     
 1.  使用 USB 电缆将 Android 设备直接连接到开发计算机。  首次尝试连接时，将显示有关开发工具检测未知设备的提示。  在 Android 设备上接受“**允许 USB 调试**”权限提示。  
     
-    :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="Android 设备上的允许 USB 调试权限提示" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
+    :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="Android 设备上的“允许 USB 调试”权限提示" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
        图 2.  Android 设备上的“**允许 USB 调试**”权限提示  
     :::image-end:::  
     

@@ -9,11 +9,11 @@ ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
 ms.openlocfilehash: 03a6bc05b796b6c6c531c3fbb566aff43a3441ba
-ms.sourcegitcommit: 22acb7a57d9d8e21e4348aa699c1a2c53618e93d
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "11936718"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976604"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -313,7 +313,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "设置 - 自定义 Microsoft Edge 开发人员工具 | Microsoft Docs"  
 [DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "在开发人员工具中自定义键盘快捷方式 | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools]: ../../../experimental-features/index.md#enable--button-tab-menus-to-open-more-tools "启用“+”按钮选项卡菜单以打开更多工具 - 试验功能 | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../../../experimental-features/index.md#turn-on-experimental-features "打开试验功能 - 试验功能 | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../../../experimental-features/index.md#turning-on-experimental-features "打开试验功能 - 试验功能 | Microsoft Docs"  
 [DevtoolsNetworkReferenceAddRemoveColumns]: ../../../network/reference.md#add-or-remove-columns "添加或删除列 - 网络分析参考 | Microsoft Docs"  
 [DevtoolsNetworkReferenceDisplayInitiatorsDependencies]: ../../../network/reference.md#display-initiators-and-dependencies "显示发起程序和依赖项 - 网络分析参考 | Microsoft Docs"  
 

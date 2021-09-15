@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 41328c73510b346bcc320118c331fe12cd7f069b066306ecf32cd60dbb9569ee
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 2e6aab865319e6ed7d108cddb77432f293153995
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11803374"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976598"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -48,7 +48,7 @@ ms.locfileid: "11803374"
 
 ### <a name="non-secure-main-origins"></a>非安全主源  
 
-当页面的主源不安全时，安全概述指出**此页面不安全**。 ****  
+当页面的主源不安全时，安全**概述指出****此页面不安全**。  
 
 :::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="非安全页面" lightbox="../media/security-security-overview-non-secure.msft.png":::
    非安全页面  

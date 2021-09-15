@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 490f38474380e7c6c8870cf5a6a83e44f5bfb645142c7aedd110529e97ed3675
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 48151e16a9059b5ebaadca36f29447d4ad3be8c7
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11802322"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976411"
 ---
 # <a name="check-for-keyboard-support-by-using-the-tab-and-enter-keys"></a>使用 Tab 和 Enter 键检查键盘支持
 
@@ -26,15 +26,15 @@ ms.locfileid: "11802322"
 
 若要使用键盘而不是鼠标检查演示页面的辅助功能问题，请执行以下步骤：
 
-1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页。
+1.  在 [浏览器的新选项卡中打开][DevToolsA11yErrorsDemopage] 辅助功能测试演示网页。
 
 1.  使用键盘导航演示文档，使用 `Tab` 和 `Shift` + `Tab` 键从元素跳到另一个元素。  在演示网页上， `Tab` 该密钥首先将焦点移到部分中的搜索 `header` 表单。
 
 1.  选择 `Tab` 以将焦点放在按钮上，然后选择单击 `Enter` 聚焦按钮。  例如，在演示页面中，选择将焦点放在"搜索" `Tab` 字段**** 上，然后选择 `Enter` 提交搜索。  此方法将产生与选择"开始" **按钮相同的结果** 。  选择 `Enter` 发送搜索 **表单** 可以正常工作。
 
-1.  再次 `Tab` 选择。  您重点关注的下一个元素是网页部分中的第一个 **"** 更多"链接， `content` 如大纲所指示。
+1.  再次 `Tab` 选择。  您重点关注的下一个元素是网页部分的第一个 **"** 更多"链接， `content` 如大纲所指示。
     
-    :::image type="complex" source="../media/a11y-testing-keyboard-focus-on-element.msft.png" alt-text="使用键盘和 Tab 键导航文档。 焦点显示在文档中的链接上。" lightbox="../media/a11y-testing-keyboard-focus-on-element.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-keyboard-focus-on-element.msft.png" alt-text="使用键盘和&quot;Tab&quot;键导航文档。 焦点显示在文档中的链接上。" lightbox="../media/a11y-testing-keyboard-focus-on-element.msft.png":::
         使用键盘和 Tab 键导航文档。 焦点显示在文档中的链接上。
     :::image-end:::
     
@@ -62,7 +62,7 @@ ms.locfileid: "11802322"
 
 *  使用键盘时，边栏导航菜单的蓝色链接不会直观地指示哪个链接具有焦点。  有关详细信息，请导航到分析边栏菜单中缺少 [键盘焦点的指示](test-analyze-no-focus-indicator.md)。
 
-*  在"资金"表单中，金额按钮和 **"四** 分百"按钮不能与键盘一起使用。  有关详细信息，请导航到 [分析表单中缺少键盘支持](test-analyze-no-keyboard-support.md)。
+*  在"金额"表单中，金额按钮和 **"月** 用"按钮不能与键盘一起使用。  有关详细信息，请导航到 [分析表单中缺少键盘支持](test-analyze-no-keyboard-support.md)。
 
 *  键盘通过页面各部分访问的顺序不正确。  在到达 **边栏导航** 菜单之前，可以浏览文档中的所有"更多"链接。  当键将焦点放在边栏导航菜单上时 `Tab` ，你已遍历所有页面内容。 边栏导航菜单旨在提供对页面内容的轻松访问。  若要详细了解如何解决此问题，请导航到使用源订单查看器 [测试键盘支持](test-tab-key-source-order-viewer.md)。
 

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 18e9c0a835d449fb9932d2fea2bf40279154eb547c1e83daa10c88390ef86190
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 2fc1a1cf7746591573fce07946c7fb11abf42705
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11802508"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975907"
 ---
 # <a name="verify-that-the-page-is-usable-with-blurred-vision"></a>验证页面是否可借助模糊视图
 

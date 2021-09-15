@@ -1,0 +1,136 @@
+### YamlMime:Landing
+title: Microsoft Edge开发人员文档
+summary: 使用 Microsoft Edge开发工具、Microsoft Edge扩展、渐进式 Web 应用、WebDriver 自动化、WebView2 等进行开发。
+metadata:
+  ms.service: websites
+  ms.topic: landing-page
+  author: MSEdgeTeam
+  ms.author: msedgedevrel
+  ms.date: 09/02/2021
+  ms.openlocfilehash: 3efbc87cbb79e4cacc47d88c8a35999ca74257e8
+  ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "11975919"
+landingContent:
+- title: Microsoft Edge 开发工具
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 开发工具概述
+      url: /microsoft-edge/devtools-guide-chromium
+    - text: 面向初学者的开发工具
+      url: /microsoft-edge/devtools-guide-chromium/beginners/html
+  - linkListType: how-to-guide
+    links:
+    - text: 命令菜单
+      url: /microsoft-edge/devtools-guide-chromium/command-menu/index
+    - text: 打开开发工具
+      url: /microsoft-edge/devtools-guide-chromium/open
+    - text: 查看和更改 CSS
+      url: /microsoft-edge/devtools-guide-chromium/css/index
+  - linkListType: reference
+    links:
+    - text: 键盘快捷方式
+      url: /microsoft-edge/devtools-guide-chromium/shortcuts
+- title: Microsoft Edge 扩展
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 扩展概述
+      url: /microsoft-edge/extensions-chromium/index
+    - text: 入门教程
+      url: /microsoft-edge/extensions-chromium/getting-started/index
+    - text: 将Chromium扩展移植到Microsoft Edge
+      url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
+  - linkListType: how-to-guide
+    links:
+    - text: 分发扩展的备用方法
+      url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
+    - text: 分步发布过程
+      url: /microsoft-edge/extensions-chromium/publish/publish-extension
+    - text: 注册为 Microsoft Edge 扩展开发人员
+      url: /microsoft-edge/extensions-chromium/publish/create-dev-account
+    - text: 创建简单扩展
+      url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
+- title: 渐进式 Web 应用
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 概述
+      url: /microsoft-edge/progressive-web-apps-chromium/index
+    - text: 渐进式 Web 应用入门
+      url: /microsoft-edge/progressive-web-apps-chromium/get-started
+    - text: 将 DevTools 与渐进式 Web 应用一同使用
+      url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
+  - linkListType: concept
+    links:
+    - text: 脱机方案
+      url: /microsoft-edge/progressive-web-apps-chromium/offline
+    - text: 服务工作者
+      url: /microsoft-edge/progressive-web-apps-chromium/serviceworker
+    - text: Web 应用清单
+      url: /microsoft-edge/progressive-web-apps-chromium/webappmanifests
+- title: WebView2
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 概述
+      url: /microsoft-edge/webview2/index
+  - linkListType: get-started
+    links:
+    - text: WebView2 入门
+      url: /microsoft-edge/webview2/gettingstarted/win32
+    - text: WPF 中的 WebView2 入门
+      url: /microsoft-edge/webview2/gettingstarted/wpf
+    - text: Windows Forms 应用中的 WebView2 入门
+      url: /microsoft-edge/webview2/gettingstarted/winforms
+  - linkListType: reference
+    links:
+    - text: Microsoft EdgeWebView2 API 参考
+      url: /microsoft-edge/webview2/webview2-api-reference
+- title: 测试&自动化
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 开发工具协议概述
+      url: /microsoft-edge/devtools-protocol-chromium
+    - text: WebDriver
+      url: /microsoft-edge/webdriver-chromium
+    - text: Puppeteer
+      url: /microsoft-edge/puppeteer
+    - text: webhint 扩展Visual Studio Code
+      url: /microsoft-edge/visual-studio-code/webhint
+- title: Web 平台
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 正在从网站检测 Microsoft Edge
+      url: /microsoft-edge/web-platform/user-agent-guidance
+    - text: 影响站点兼容性的更改
+      url: /microsoft-edge/web-platform/site-impacting-changes
+- title: Microsoft EdgeIDE 集成
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Visual Studio
+      url: /microsoft-edge/visual-studio/
+    - text: Visual Studio Code 概述
+      url: /microsoft-edge/visual-studio-code/
+    - text: 适用于开发人员的 DevTools Visual Studio Code
+      url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
+    - text: webhint 扩展Visual Studio Code
+      url: /microsoft-edge/visual-studio-code/webhint
+- title: 辅助功能
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 辅助功能概述
+      url: /microsoft-edge/accessibility/
+  - linkListType: how-to-guide
+    links:
+    - text: 辅助功能测试
+      url: /microsoft-edge/accessibility/test
+    - text: DevTools 中的辅助功能测试功能
+      url: /microsoft-edge/devtools-guide-chromium/accessibility/reference

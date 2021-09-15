@@ -8,15 +8,15 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: a4a32215cd45aedc7f9b7261fa3a441f269939ba
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893003"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11975902"
 ---
 # <a name="emulate-dark-or-light-schemes-in-the-rendered-page"></a>模拟呈现页面中的深色或浅色方案
 
-许多操作系统都有一种方法来以较暗或更浅的颜色显示任何应用程序。  在深色操作系统中具有浅色方案的网页产品可能难以阅读，并且对于一些用户可能是一个辅助功能问题。  
+许多操作系统都有一种方法以较暗或更浅的颜色显示任何应用程序。  在深色操作系统中具有浅色方案的网页产品可能难以阅读，并且对于一些用户可能是一个辅助功能问题。  
 
 若要测试当用户选择深色或浅色模式时网页的呈现方式，而不是更改你自己的计算机深色模式或浅色模式设置，可以在 Microsoft Edge DevTools 中选择模拟**CSS 首选**配色方案：深色或**** 浅色。  可以从命令菜单或呈现工具**** 执行此操作，如下所述****。
 
@@ -46,11 +46,11 @@ ms.locfileid: "11893003"
 
 ## <a name="emulating-dark-or-light-mode-using-the-command-menu"></a>使用命令菜单模拟深色或浅色模式
 
-1.  当 DevTools 具有焦点时****，通过选择 `Ctrl` + `Shift` + `P` \(Windows/Linux\) 或 `Command` + `Shift` + `P` \(macOS\) 打开命令菜单。  
+1.  当 DevTools 具有焦点时****，通过选择 `Ctrl` + `Shift` + `P` \ (Windows/Linux\) 或 `Command` + `Shift` + `P` \ (macOS\) 打开命令菜单。  
 
 1.  键入"dark"、"light"或"emulate"。  然后选择呈现 **：模拟 CSS 首选配色方案：深色** 或呈现 **：模拟 CSS 首选配色方案：浅**色，然后选择 **Enter**。
 
-    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="使用命令菜单上的呈现：模拟 CSS prefers-color-scheme 命令模拟深色或浅色模式" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="使用命令菜单上的&quot;呈现：模拟 CSS prefers-color-scheme&quot;命令模拟深色或浅色模式" lightbox="../media/css-console-command-menu-rendering.msft.png":::
         使用呈现模拟深色或浅色 **模式：模拟命令** 菜单上的 CSS 首选配色方案命令
     :::image-end:::  
 

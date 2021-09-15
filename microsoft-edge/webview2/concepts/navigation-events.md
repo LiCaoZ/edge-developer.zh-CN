@@ -9,11 +9,11 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
 ms.openlocfilehash: d133bfb99808d0e036c4b46be9ef82039aee49eb
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535704"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976496"
 ---
 # <a name="navigation-events"></a>导航事件  
 
@@ -26,7 +26,7 @@ ms.locfileid: "11535704"
    :::column-end:::
 :::row-end:::  
 
-导航事件在 WebView2 实例中显示的内容发生特定异步操作时运行。  例如，当 WebView2 用户导航到新网站时，本机内容会使用 事件侦听 `NavigationStarting` 更改。  导航操作完成后，运行 `NavigationCompleted` 。  有关导航事件的良好示例，请导航到 [WebView2 入门指南][Webview2IndexGetStarted]。  
+导航事件在 WebView2 实例中显示的内容发生特定异步操作时运行。  例如，当 WebView2 用户导航到新网站时，本机内容会使用 事件侦听 `NavigationStarting` 更改。  导航操作完成后，运行 `NavigationCompleted` 。  有关导航事件的良好示例，请导航到[WebView2 入门指南][Webview2IndexGetStarted]。  
 
 <!--todo:  Move the relevant information out of the get started guide to better focus the content and leave the most concise elements in the get started guide.  -->   
 
@@ -34,8 +34,8 @@ ms.locfileid: "11535704"
 
 :::row:::
    :::column span="1":::
-      :::image type="complex" source="../media/navigation-graph.png" alt-text="Microsoft Edge WebView2 导航事件" lightbox="../media/navigation-graph.png":::
-         Microsoft Edge WebView2 导航事件  
+      :::image type="complex" source="../media/navigation-graph.png" alt-text="WebView2 Microsoft Edge事件" lightbox="../media/navigation-graph.png":::
+         WebView2 Microsoft Edge事件  
       :::image-end:::  
       
       > [!NOTE]
@@ -52,7 +52,7 @@ ms.locfileid: "11535704"
    :::column-end:::
 :::row-end:::
 
-使用导航 ID \(`NavigationId` event\) 跟踪每个新文档的导航事件。  每次 `NavigationId` 成功导航到新文档时，WebView 事件都会更改。  
+使用导航 ID \ (`NavigationId` event\) 跟踪每个新文档的导航事件。  每次 `NavigationId` 成功导航到新文档时，WebView 事件都会更改。  
 
  具有不同事件实例的 `NavigationId` 导航事件可能会重叠。  例如，启动导航事件时，必须等待相关 `NavigationStarting` 事件。  如果随后启动另一个导航，则应该会看到第一个导航的事件，后跟第二个导航的事件，然后是第一个导航的事件，然后是第二个导航的所有其他相应导航事件。 `NavigationStarting` `NavigationStarting` `NavigationCompleted`  
  
@@ -66,20 +66,20 @@ ms.locfileid: "11535704"
 
 ## <a name="see-also"></a>另请参阅  
 
-*   若要开始使用 WebView2，请导航到 ["WebView2 入门指南"][Webview2IndexGetStarted] 指南。  
-*   有关 WebView2 功能的综合示例，请导航到 GitHub 上的 [WebView2Samples][GithubMicrosoftedgeWebview2samples] 存储库。  
+*   若要开始使用 WebView2，请导航到["WebView2 入门指南][Webview2IndexGetStarted]"。  
+*   有关 WebView2 功能的综合示例，请导航到[webView2Samples][GithubMicrosoftedgeWebview2samples]存储库GitHub。  
 *   有关 WebView2 API 的更多详细信息，请导航到 [API 参考][DotnetApiMicrosoftWebWebview2WpfWebview2]。  
 *   有关 WebView2 的信息，请导航到["WebView2 资源"。][Webview2IndexNextSteps]  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>与 Microsoft Edge WebView 团队联系  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>联系 Microsoft Edge WebView 团队  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
-[Webview2IndexGetStarted]: ../index.md#get-started "入门 - Microsoft Edge WebView2 |Microsoft Docs"  
+[Webview2IndexGetStarted]: ../index.md#get-started "入门 - WebView2 Microsoft Edge简介|Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 |Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 类|Microsoft Docs"  
 
-[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples |GitHub"  
+[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"  

@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 6d2da842cd6d2581b4dbeaf9352e68a98b34dda9f1e711358e1ae3fa3619392b
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 304cf9e36260b8637af38ed0dfe1ba91f3a56504
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11805551"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976605"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -198,7 +198,7 @@ ms.locfileid: "11805551"
 
 1.  选择**网络**工具。  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-network.msft.png" alt-text="网络面板" lightbox="../media/speed-glitch-tony-remix-network.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network.msft.png" alt-text="“网络”面板" lightbox="../media/speed-glitch-tony-remix-network.msft.png":::
        **网络**工具  
     :::image-end:::  
     
@@ -360,11 +360,11 @@ ms.locfileid: "11805551"
     
 1.  选择 `jquery.js` 行。  DevTools 在"源" **工具中** 打开文件。  如果代码行运行，则旁边将显示一个蓝色条。  红色栏表示代码行未运行，并且肯定不需要在加载网页时运行。  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="在源工具中查看 jQuery 文件" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="在&quot;源&quot;工具中查看 jQuery 文件" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
        在"源"工具 **中查看** jQuery 文件  
     :::image-end:::  
     
-1.  滚动浏览 jQuery 代码。  某些运行的行实际上只是注释。  若要去除注释并减少文件大小，请通过微型程序应用或脚本运行代码。  
+1.  滚动浏览 jQuery 代码。  某些运行的行实际上只是注释。  若要去除注释并减少文件的大小，请通过微型程序应用或脚本运行代码。  
 
 简言之，当你使用自己的代码时，**覆盖**工具可以帮助你逐行分析代码，并只交付页面加载所需的代码。  
 
@@ -443,7 +443,7 @@ ms.locfileid: "11805551"
 
 1.  选择并展开**计时** 部分。  基于 React 中可能存在许多[计时][MDNUserTimingApi]测量的事实，Tony 的应用似乎正使用 React 的开发模式。  切换到 React 的生产模式可能会产生一些简单的性能优势。  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png" alt-text="计时部分" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png" alt-text="&quot;计时&quot;部分" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png":::
        **计时**部分  
     :::image-end:::  
     
