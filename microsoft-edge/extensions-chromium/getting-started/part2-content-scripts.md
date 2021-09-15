@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， Web 开发， html， css， javascript， 开发人员， 扩展
-ms.openlocfilehash: 84cd72ad6a733747cd256d78f6f9930186971de89b993964f07a8480e47ea469
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: c5a17cbc55c6ccb42e06369474cd274d70742494
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11809332"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976519"
 ---
 # <a name="create-an-extension-tutorial-part-2"></a>创建扩展教程第 2 部分  
   
@@ -61,8 +61,8 @@ ms.locfileid: "11809332"
 
 更新并打开扩展后，将打开一个弹出窗口，并显示一个显示按钮。  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.htm扩展图标后显示":::
-   popup.htm扩展图标后显示
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html扩展图标后显示":::
+   popup.html扩展图标后显示
 :::image-end:::
 
 <!--![popup.html display after selecting the Extension icon][ImagePart2Popupdialog]  -->  
@@ -75,7 +75,7 @@ ms.locfileid: "11809332"
 
 3. 创建弹出式 JavaScript 以发送消息  
 
-首先，创建并添加代码，以向尚未创建的内容脚本发送消息，您必须立即创建该脚本并将其注入 `popup/popup.js` 浏览器选项卡。 为此，以下代码将 `onclick` 事件添加到弹出式显示按钮。  
+首先，创建并添加代码，以向尚未创建的内容脚本发送消息，您必须立即创建该脚本并将其注入 `popup/popup.js` 到浏览器选项卡中。 为此，以下代码将 `onclick` 事件添加到弹出式显示按钮。  
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
@@ -129,7 +129,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 
 原因是你使用 元素的 属性将图像 `src` `img` 注入内容页面。  内容页在运行扩展的线程不同的唯一线程上运行。  必须将静态图像文件公开为 Web 资产，它必须能够正常工作。  
 
-在文件中添加另 `manifest.json` 一项以声明该图像可供所有浏览器选项卡使用。  添加内容脚本声明时， (在下面的完整文件中看到该条目，如下所示 `manifest.json` \) 。  
+在文件中添加另 `manifest.json` 一项以声明该图像可供所有浏览器选项卡使用。  添加内容脚本声明时 (应在下面的完整文件中看到 `manifest.json` 该条目，如下所示\) 。  
 
 ```json
 "web_accessible_resources": [
@@ -139,7 +139,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 
 现在，你已在你的文件中编写代码，以向嵌入在当前活动选项卡页上的内容页发送消息，但是尚未创建和注入 `popup.js` 该内容页。  现在执行。  
 
-5.  更新manifest.js和 Web 访问的"打开"  
+5.  更新内容和 Web 访问的 manifest.json  
 
 包括 `manifest.json` 和 `content-scripts` `web_accessible_resources` 的更新如下所示。  
 
@@ -172,13 +172,13 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 }
 ```  
 
-您添加的节是 `content_scripts` 。  属性设置为 ，这意味着在加载每个选项卡时，所有文件将注入 `matches` `<all_urls>` `content_scripts` 所有浏览器选项卡页。  允许注入的文件类型为 JavaScript 和 CSS。  还添加了 `libjquery.min.js` 。  你可以从部分顶部提到的下载中包括该内容。  
+您添加的节是 `content_scripts` 。  属性设置为 ，这意味着加载每个选项卡时，所有文件将注入 `matches` `<all_urls>` `content_scripts` 所有浏览器选项卡页。  允许注入的文件类型为 JavaScript 和 CSS。  还添加了 `libjquery.min.js` 。  你可以从部分顶部提到的下载中包括该内容。  
 
 6. 添加 jQuery 并理解关联的线程  
 
-在你要注入的内容脚本中，计划使用 jQuery \(`$` \) 。  你添加了 jQuery 的缩小版本，并作为 放入扩展包 `lib\jquery.min.js` 中。  这些内容脚本在单个沙盒中运行，这意味着注入到页面中的 jQuery `popup.js` 不会与内容共享。  
+在你要注入的内容脚本中，计划使用 jQuery \ (`$` \) 。  你添加了 jQuery 的缩小版本，并作为 放入扩展包 `lib\jquery.min.js` 中。  这些内容脚本在单个沙盒中运行，这意味着注入到页面中的 jQuery `popup.js` 不会与内容共享。  
 
-请记住，即使浏览器选项卡上的 JavaScript 在加载的网页上运行，注入的任何内容也无法访问它。  注入的 JavaScript 仅有权访问该浏览器选项卡中加载的实际 DOM。  
+请记住，即使浏览器选项卡上的 JavaScript 在加载的网页上运行，注入的任何内容也无法访问它。  注入的 JavaScript 只需访问该浏览器选项卡中加载的实际 DOM。  
 
 7. 添加内容脚本消息侦听器  
 
@@ -213,14 +213,14 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 *   第一个脚本行将一个必须作为类分配给元素的节动态插入到 DOM **\<style\>** `slide-image` 标头 `img` 中。  
 *   第二个脚本行在浏览器选项卡的 正下方追加一个元素，该元素分配了 类，并将 `img` `body` 作为该 `slide-image` `imageDivId` 图像元素的 ID。  
-*   第三个脚本行添加一个涵盖整个图像的事件，允许用户选择图像上的任意位置，并且该图像将从页面 \(以及事件侦听器 `click` \) 。  
+*   第三个脚本行添加一个涵盖整个图像的事件，允许用户选择图像上的任意位置，并且该图像将从页面 \ (以及事件侦听器 `click` \) 中删除。  
 
 8. 添加功能以在选中时删除显示的图像  
 
 现在，当您浏览到任何页面 **并选择扩展图标** 时，弹出菜单将显示如下。  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.htm扩展图标后显示":::
-   popup.htm扩展图标后显示
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html扩展图标后显示":::
+   popup.html扩展图标后显示
 :::image-end:::
 
 <!--![popup.html display after selecting the Extension icon][ImagePart2Popupdialog]  -->  

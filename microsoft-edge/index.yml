@@ -115,18 +115,16 @@ additionalContent:
           links:
             - text: 辅助功能
               url: /microsoft-edge/accessibility
-            - text: 开发人员工具协议 (Chromium)
+            - text: DevTools 协议
               url: /microsoft-edge/devtools-protocol-chromium
-            - text: WebDriver (Chromium)
+            - text: WebDriver
               url: /microsoft-edge/webdriver-chromium
             - text: Puppeteer
               url: /microsoft-edge/puppeteer
             - text: 站点兼容性
               url: /microsoft-edge/web-platform/site-impacting-changes
             - text: webhint
-              url: 'https://webhint.io/docs/user-guide'
-            - text: 性能分析
-              url: /microsoft-edge/performance-analysis
+              url: /microsoft-edge/visual-studio-code/webhint
         - title: 扩展入门
           links:
             - text: 扩展概述
@@ -137,7 +135,7 @@ additionalContent:
               url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
         - title: 扩展：开发人员指南
           links:
-            - text: 将Chromium扩展Microsoft Edge
+            - text: 将Chromium扩展移植到Microsoft Edge
               url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
             - text: 分发扩展的备用方法
               url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
@@ -150,7 +148,7 @@ additionalContent:
             - text: 打开开发人员帐户
               url: /microsoft-edge/extensions-chromium/publish/create-dev-account
             - text: 添加和管理用户
-              url: /microsoft-edge/extensions-chromium/publish/aad-account.md
+              url: /microsoft-edge/extensions-chromium/publish/aad-account
             - text: 更新扩展列表
               url: /microsoft-edge/extensions-chromium/publish/update
             - text: 管理帐户设置
@@ -159,13 +157,13 @@ additionalContent:
           links:
             - text: 内容安全策略
               url: /microsoft-edge/extensions-chromium/store-policies/csp
-            - text: Microsoft Edge 加载项存储开发人员策略
+            - text: Microsoft Edge 加载项商店开发人员策略
               url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
         - title: 渐进式 Web 应用
           links:
-            - text: '概述 (Chromium) '
+            - text: 概述
               url: /microsoft-edge/progressive-web-apps-chromium/index
-            - text: '渐进式 Web 应用 (Chromium) '
+            - text: 渐进式 Web 应用入门
               url: /microsoft-edge/progressive-web-apps-chromium/get-started
             - text: 将 DevTools 与渐进式 Web 应用一同使用
               url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps

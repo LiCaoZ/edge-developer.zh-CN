@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 69b9e4566324234afdaaa2670642b9fb454ebf2c3ccabe5ada1c569370f8e6bd
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 640bb80e01f776c763af053cf8354ce90cf52e93
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11798360"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976518"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -62,7 +62,7 @@ ms.locfileid: "11798360"
     
 ## <a name="related-feature-local-overrides"></a>相关功能：本地覆盖  
 
-**本地覆盖** 是另一项类似于 Workspaces 的 DevTools 功能。  当您想要尝试对网页所做的更改，并且需要跨网页加载显示更改，但您不关心将更改映射到网页的源代码时，请使用本地替代。  
+**本地覆盖** 是另一项类似于 Workspaces 的 DevTools 功能。  当您要尝试对网页所做的更改，并且您需要跨网页加载显示更改，但您不关心将更改映射到网页的源代码时，请使用本地替代。  
 
 <!--Todo: add section when content is ready  -->  
 
@@ -115,16 +115,16 @@ ms.locfileid: "11798360"
     
 ### <a name="set-up-devtools"></a>设置 DevTools  
 
-1.  选择 `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\) 打开 DevTools**** 的控制台面板。  
+1.  选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 打开 DevTools**** 的控制台面板。  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="控制台面板" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        控制台**面板**  
     :::image-end:::  
     
 1.  导航到 **"源"** 工具。  
-1.  在左侧 **导航器** (窗格中 **，) "文件系统"** 选项卡。  
+1.  在导航 **器窗格中** (左侧) ，选择" **文件系统"** 选项卡。  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="文件系统选项卡" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="&quot;文件系统&quot;选项卡" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
        " **文件系统"** 选项卡  
     :::image-end:::  
     
@@ -133,7 +133,7 @@ ms.locfileid: "11798360"
 1.  选择 **"** 允许"以授予 DevTools 读取和写入目录的权限。  
     在" **文件系统"** 选项卡中，现在，、 和 旁边将出现 `index.html` `script.js` 一个绿色点 `styles.css` 。  绿色点表示 DevTools 已建立页面的网络资源与 中的文件之间的映射 `~/Desktop/app` 。  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="文件系统选项卡现在指示本地文件和网络文件之间的映射" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="&quot;文件系统&quot;选项卡现在指示本地文件和网络文件之间的映射" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
        " **文件系统** "选项卡现在指示本地文件和网络文件之间的映射  
     :::image-end:::  
     
@@ -202,13 +202,13 @@ In short, the **DOM Tree** `!==` HTML.
 如果要保存对网页的 HTML 更改， **请使用"源** "工具。  
 
 1.  导航到 **"源"** 工具。  
-1.  在左侧 **导航器** (窗格中，) " **页面"** 选项卡。  
+1.  在左侧 **导航器** (窗格中，) "页面 **"** 选项卡。  
 1.  选择** (索引) 。 **  将打开页面的 HTML。  
 1.  将`<h1>Workspaces Demo</h1>`替换为`<h1>I ❤️  Cake</h1>`。  查看下图。  
-1.  选择 `Control` + `S` \(Windows、Linux\) 或 `Command` + `S` \(macOS\) 保存更改。  
+1.  选择 `Control` + `S` \ (Windows、Linux\) 或 `Command` + `S` \ (macOS\) 保存更改。  
 1.  刷新页面。  `<h1>`刷新页面后，元素将继续显示新文本。  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从源工具更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从&quot;源&quot;工具更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
        从"源"工具 **更改** HTML  
     :::image-end:::  
     
@@ -231,7 +231,7 @@ In short, the **DOM Tree** `!==` HTML.
 1.  选择`Control`+`P` \（Windows、Linux\） 或 `Command`+`P` \（macOS\） 以打开 **"打开文件**"对话框。  查看下图。  
 1.  键入 `script` ，然后选择 **"app/script.js"。 **  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件&quot;对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
        使用 `script.js` "打开 **文件"对话框** 打开  
     :::image-end:::  
     
@@ -245,7 +245,7 @@ In short, the **DOM Tree** `!==` HTML.
     document.querySelector('a').style = 'font-style:italic';
     ```  
     
-1.  选择 `Control` + `S` \(Windows、Linux\) 或 `Command` + `S` \(macOS\) 保存更改。  
+1.  选择 `Control` + `S` \ (Windows、Linux\) 或 `Command` + `S` \ (macOS\) 保存更改。  
 1.  刷新页面。  
     
     > [!NOTE]
@@ -280,7 +280,7 @@ If you have more feedback on the topics or anything else, please use any of the 
 [GlitchWorkspacesDemo]: https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0 "Workspaces 演示|小故障"  
 
 [MDNCSSContent]: https://developer.mozilla.org/docs/Web/CSS/content "内容 - CSS：级联样式表|MDN"  
-[MDNWebGettingStarted]: https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web "Web 应用程序|MDN"  
+[MDNWebGettingStarted]: https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web "Web 应用程序入门|MDN"  
 [MDNSimpleLocalHTTPServer]: https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server "运行简单的本地 HTTP 服务器|MDN"  
 [MDNWebAPIsDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "DOM 简介 - Web API |MDN"  
 
@@ -290,7 +290,7 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 <!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools \(@AlphabetBrowserDevTools\) | Twitter"  -->
 
-[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port \(computer networking\) - Wikipedia"  
+[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port \ (computer networking\) - Wikipedia"  
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  

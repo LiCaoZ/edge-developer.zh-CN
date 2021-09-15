@@ -7,12 +7,12 @@ ms.date: 02/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， 服务工作者， PWA
-ms.openlocfilehash: 9a7f2f47116151ceb96853e429f84dfebd212bd5f08cde13a7ab157a798a403f
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: c00b7c7fd18d4bb3d413369ec1464c0cb0255311
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11803343"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976528"
 ---
 # <a name="service-worker-improvements"></a>服务工作者改进  
 
@@ -28,7 +28,7 @@ ms.locfileid: "11803343"
     
 这些体验跨越三个不同的开发人员工具。  
 
-1.  网络 [工具](#network) 。  选择一个通过服务工作器运行的网络请求，并访问 **计时** 工具中服务工作器的相应时间线。  
+1.  网络 [工具](#network) 。  选择一个通过服务工作器运行的网络请求，并访问计时工具中服务 **工作者的相应时间线** 。  
 1.  应用程序 [工具](#application) 。  若要调试服务工作者，请导航到" **服务工作者"** 工具。  
 1.  源 [工具](#sources) 。  单步执行提取事件处理程序时访问页面脚本信息。  
     
@@ -62,7 +62,7 @@ ms.locfileid: "11803343"
 
 ### <a name="service-worker-update-timeline"></a>服务工作进程更新日程表  
 
-开发人员Microsoft Edge开发人员工具团队在应用程序工具中添加了时间线，以反映服务工作者**** 的更新生命周期。  它显示安装和激活事件。  每个事件都有相应的下拉箭头，可为您提供更多详细信息。  
+开发人员Microsoft Edge开发人员工具团队在**应用程序**工具中添加了时间线，以反映服务工作者的更新生命周期。  它显示安装和激活事件。  每个事件都有相应的下拉箭头，可为您提供更多详细信息。  
 
 ### <a name="request-routing-and-fetch-events"></a>请求传送和提取事件  
 
@@ -80,11 +80,11 @@ ms.locfileid: "11803343"
    DOM 树  
 :::image-end:::  
 
-若要查找更多堆栈信息，在提取处理程序中设置一个断点。  详细信息将导致在页面脚本中请求资源。  当调试器在提取处理程序内暂停时，合并的堆栈信息将显示在面板右侧。  之后，你可以四处移动堆栈框架。  
+若要查找更多堆栈信息，在提取处理程序中设置一个断点。  详细信息将导致在页面脚本中请求资源。  当调试器在提取处理程序内暂停时，组合的堆栈信息将显示在面板右侧。  之后，你可以四处移动堆栈框架。  
 
 ### <a name="future-work"></a>未来工作  
 
-开发人员Microsoft Edge开发工具团队计划进一步开发缓存详细信息，并研究更多方法为[渐进式 Web][MdnProgressiveWebApps]应用程序开发人员改进服务工作器调试体验。  
+开发人员Microsoft Edge开发工具团队计划进一步开发缓存详细信息，并调查更多方法为渐进式 Web 应用程序开发人员改进服务工作[器调试][MdnProgressiveWebApps]体验。  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
 
@@ -94,4 +94,4 @@ ms.locfileid: "11803343"
 
 [MdnFetchEvent]: https://developer.mozilla.org/docs/Web/API/FetchEvent "FetchEvent |MDN"  
 [MdnProgressiveWebApps]: https://developer.mozilla.org/docs/Web/Progressive_web_apps "渐进式 Web (PA) |MDN"  
-[MdnServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "服务工作线程 API |MDN"  
+[MdnServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "服务辅助 API |MDN"  

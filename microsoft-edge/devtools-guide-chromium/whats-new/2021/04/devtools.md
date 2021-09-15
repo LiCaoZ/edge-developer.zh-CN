@@ -7,12 +7,12 @@ ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: fce34a73cfc303c794020bc8d3a398de714ace3e15de7272e98509a9cf0071ee
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 69fcd29f9b4cae9ec290798b767fbe54793cb2fd
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11807117"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976520"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -255,7 +255,7 @@ Most operating systems require square icons.  Please include at least one square
     
 要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1162042][CR1162042]。  
 
-:::image type="complex" source="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png" alt-text="新的更多网络条件...按钮打开用于配置 Content-Encoding 的网络条件工具" lightbox="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png":::
+:::image type="complex" source="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png" alt-text="新的“更多网络条件...”按钮打开用于配置 Content-Encoding 的网络条件工具" lightbox="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png":::
    新“**更多网络条件...**”按钮打开 **网络条件** 工具以进行配置 `Content-Encoding`  
 :::image-end:::  
 

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 24fd94162ec230f22a1f6e4be2c2110558950cf5a92a04d0eccd4663843e40a0
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 2d721a0ccd27befc7a59726f4c5ef9227042b30b
+ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11804049"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "11976536"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,7 +31,7 @@ ms.locfileid: "11804049"
 
 在开发计算机 Web 服务器上承载网站，然后从 Android 设备访问内容。  
 
-使用 USB 电缆和 Microsoft Edge DevTools，从开发计算机运行网站，然后在 Android 设备上查看网站。  
+使用 USB 电缆Microsoft Edge DevTools，从开发计算机运行网站，然后在 Android 设备上查看网站。  
 
 ### <a name="summary"></a>摘要  
 
@@ -45,7 +45,7 @@ ms.locfileid: "11804049"
 启用端口转发：  
 
 1.  在 [开发计算机和][RemoteDebuggingGettingStarted] Android 设备之间设置远程调试。  完成后，Android 设备应显示在"检查设备"对话框和"已连接状态"指示器******的左侧菜单中**。  
-1.  在 **DevTools 中的** "检查设备"对话框中，启用 **端口转发**。  
+1.  在**DevTools 中的**"检查设备"对话框中，启用 **"端口转发"。**  
 1.  选择 **"添加规则"。**  
     
     :::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png" alt-text="添加端口转发规则" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png":::
@@ -62,13 +62,13 @@ ms.locfileid: "11804049"
    端口转发状态  
 :::image-end:::  
 
-若要查看内容，请打开Microsoft Edge Android 设备上的端口，然后转到在"设备端口"字段中 `localhost` **指定的**端口。  例如，如果在 字段中输入 `5000` ，请访问 `localhost:5000` 。  
+若要查看内容，请打开Microsoft Edge Android 设备上的端口，然后转到在"设备端口"字段中 `localhost` **指定的端口**。  例如，如果在 字段中输入 `5000` ，请访问 `localhost:5000` 。  
 
 ## <a name="map-to-custom-local-domains"></a>映射到自定义本地域  
 
 通过自定义域映射，可以在使用自定义域的开发计算机上通过 Web 服务器查看 Android 设备上的内容。  
 
-例如，假定您的网站使用仅在域 上工作的第三方 JavaScript 库 `microsoft-edge.devtools` 。  因此，在开发计算机上在文件中创建一个条目，以将此域映射到 `hosts` `localhost` \(例如 `127.0.0.1 microsoft-edge.devtools` \) 。  设置自定义域映射和端口转发后，在 Android 设备上通过 URL 查看网站 `microsoft-edge.devtools` 。  
+例如，假定您的网站使用仅在域 上工作的第三方 JavaScript 库 `microsoft-edge.devtools` 。  因此，在开发计算机上在文件中创建一个条目，以将此域映射到 `hosts` `localhost` \ (例如 `127.0.0.1 microsoft-edge.devtools` \) 。  在设置自定义域映射和端口转发后，在 Android 设备上通过 URL 查看网站 `microsoft-edge.devtools` 。  
 
 ### <a name="set-up-port-forwarding-to-proxy-server"></a>设置到代理服务器的端口转发  
 
@@ -95,7 +95,7 @@ ms.locfileid: "11804049"
     
 1.  选择 **"修改网络"。**  
 1.  选择 **高级选项**。  将显示代理设置。  
-1.  选择代理 **菜单** ， **然后选择手动**。  
+1.  选择"**代理"** 菜单，然后选择"**手动"。**  
 1.  对于" **代理主机名"** 字段，输入 `localhost` 。  
 1.  对于 **"代理端口** "字段，输入在上一部分中为 **设备端口** 输入的端口号。  
 1.  选择"**保存"。**  
