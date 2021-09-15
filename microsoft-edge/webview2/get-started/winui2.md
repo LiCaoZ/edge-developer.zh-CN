@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、winui 应用、winui、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
-ms.openlocfilehash: b62defccc8e7369721baaabb4f114d1ad9c6040b
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: 9910190e2d615e8a6b60bfe5448149c218ff2aca
+ms.sourcegitcommit: f361ad8939242611a6ecb188b52780876083b7d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11976426"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "12016673"
 ---
 # <a name="get-started-with-webview2-in-winui-2-apps-public-preview"></a>WinUI 2 应用中的 WebView2 入门 (公共预览) 
 
@@ -27,12 +27,12 @@ ms.locfileid: "11976426"
 
 1.  安装Visual Studio版本 16.9 或更高版本。  可以接受默认值。
 
-1.  默认情况下，Visual Studio代码编辑器中不会显示行号。  若要启用行号，请选择"**** 工具  >  **""选项**  >  **""文本编辑器**  >  **""所有语言**  >  **""行号"。**  然后选择"**确定"。**
+1.  默认情况下，Visual Studio代码编辑器中不会显示行号。  若要启用行号，请选择"工具 **""**  >  **选项**  >  **""文本编辑器**  >  **""所有语言**  >  **""行号"。**  然后选择"**确定"。**
 
 
 ## <a name="step-2-install-workloads"></a>步骤 2\：安装工作负载
 
-1.  在Visual Studio中，选择 **"工具**  >  **""获取工具和功能"。**  将**Visual Studio 安装程序**窗口。
+1.  在Visual Studio"中，选择 **"工具**  >  **""获取工具和功能"。**  将**Visual Studio 安装程序**窗口。
 
 1.  在"**工作负载"选项卡**上，选择 **".NET 桌面开发"。**
 
@@ -56,7 +56,7 @@ ms.locfileid: "11976426"
 
 1.  在"**所有平台"** 下拉列表中，选择 **"Windows"。**
 
-1.  在"**所有项目类型"** 下拉列表中，选择 **"UWP"。**  选择筛选器后，将列出几种类型的应用模板。
+1.  在"**所有项目类型"** 下拉列表中，选择 **"UWP"。**  选择筛选器后，将列出多种类型的应用模板。
 
 1.  在应用模板列表中，选择"空白**应用 (通用Windows) "。 **
 
@@ -69,7 +69,7 @@ ms.locfileid: "11976426"
 1.  在 **"Project**名称"文本框中，输入项目名称，例如 `UWPSampleProject` 。
 
     :::image type="complex" source="media/winui2-getting-started-config-new-project.png" alt-text="&quot;配置新项目&quot;对话框，用于&quot;空白应用 (通用Windows) &quot;" lightbox="media/winui2-getting-started-config-new-project.png":::
-       "**为空白应用配置**新项目"对话框 (**通用Windows) **
+       "**为空白应用配置**新项目"对话框** (通用Windows) **
     :::image-end:::
 
 1.  选择" **创建"** 按钮。  将显示 **"新建通用Windows平台Project**对话框。
@@ -95,7 +95,7 @@ ms.locfileid: "11976426"
 
 1.  选中 **"包括预发布"** 复选框。
 
-1.  在"**搜索"** 框中，输入 `Microsoft.UI.Xaml` ，然后选择 **"Microsoft.UI.Xaml"。**  确保"**版本"** 是最新的预发布，然后选择"安装 **"。**
+1.  在"**搜索"** 框中，输入 `Microsoft.UI.Xaml` ，然后选择 **"Microsoft.UI.Xaml"。**  确保"**版本"** 是最新的预发行版本，然后选择"安装 **"。**
 
     :::image type="complex" source="media/winui2-nuget-package.msft.png" alt-text="程序包NuGet包管理器" lightbox="media/winui2-nuget-package.msft.png":::
        程序包NuGet包管理器
@@ -128,7 +128,7 @@ ms.locfileid: "11976426"
     <control:WebView2 x:Name="wv2" Source="https://bing.com"/>
     ```
 
-1.  保存文件。  在 `MainPage.xaml` 代码编辑器中的文件上方，显示 WebView2 内容的预览。
+1.  保存文件。  在 `MainPage.xaml` 代码编辑器中的文件上方，将显示 WebView2 内容的预览。
 
     :::image type="complex" source="media/winui2-getting-started-preview-webview2-content.png" alt-text="WebView2 内容的预览" lightbox="media/winui2-getting-started-preview-webview2-content.png":::
        WebView2 内容的预览
@@ -142,10 +142,10 @@ ms.locfileid: "11976426"
        网格在调试过程中暂时显示
     :::image-end:::
 
-1.  片刻之后，应用窗口在 WebUI 2 必应 WebView2 控件中显示 必应.com 网站。
+1.  片刻之后，应用窗口在 WebUI 2 的 WebView2 控件中显示 必应.com 网站。
 
-    :::image type="complex" source="media/winui2-getting-started-webview2-with-content.png" alt-text="在 WebView2 控件必应.com 网站的应用窗口" lightbox="media/winui2-getting-started-webview2-with-content.png":::
-       在 WebView2 控件必应.com 网站的应用窗口
+    :::image type="complex" source="media/winui2-getting-started-webview2-with-content.png" alt-text="在 WebView2 控件中必应.com 网站的应用窗口" lightbox="media/winui2-getting-started-webview2-with-content.png":::
+       在 WebView2 控件中必应.com 网站的应用窗口
     :::image-end:::
 
 1.  In Visual Studio， on the **Debug** menu， select **Stop Debugging**.  应用程序窗口关闭。
@@ -168,7 +168,7 @@ ms.locfileid: "11976426"
 若要发送特定于 WinUI 的功能请求或 Bug，请导航到"问题[- microsoft/microsoft-ui-xaml"，][GithubMicrosoftMicrosoftUiXamlIssues]然后选择"**新问题"。**  
 
 <!-- links -->  
-[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 开发最佳做法|Microsoft Docs"  
+[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 开发最佳实践|Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 |Microsoft Docs"  
 <!-- external links -->
 [GithubMicrosoftMicrosoftUiXamlIssues]: https://github.com/microsoft/microsoft-ui-xaml/issues "问题 - microsoft/microsoft-ui-xaml |GitHub"  

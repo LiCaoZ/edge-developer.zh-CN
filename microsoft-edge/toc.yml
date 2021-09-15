@@ -1,6 +1,6 @@
-- name: Microsoft Edge 文档
-  href: index.yml
-  expanded: true
+# - name: Microsoft Edge documentation # hub page, uncommenting causes 2 landing nodes with all docs pushed right
+- name: Microsoft Edge开发人员文档
+  href: developer/index.yml
   items:
     - name: 辅助功能
       items:
@@ -23,6 +23,8 @@
           items:
             - name: 实验性功能
               href: devtools-guide-chromium/experimental-features/index.md
+            - name: Microsoft Edge 94
+              href: devtools-guide-chromium/whats-new/2021/09/devtools.md
             - name: Microsoft Edge 93
               href: devtools-guide-chromium/whats-new/2021/07/devtools.md
             - name: Microsoft Edge 92
