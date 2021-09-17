@@ -8,27 +8,21 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 3920f147e5af2a39efffff1ce91cf37a2e861a59
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: 9c3cb1246592b13b1f144de16551ad1b71ae44ef
+ms.sourcegitcommit: 5113e8f2d6823239911d8a7fed64d9652a96c26e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11976315"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "12018552"
 ---
 # <a name="win32-c-webview2-api-conventions"></a>Win32 C++ WebView2 API 约定  
 
-:::row:::
-   :::column span="1":::
-      支持的平台：
-   :::column-end:::
-   :::column span="2":::
-      Win32
-   :::column-end:::
-:::row-end:::  
+支持的平台：Win32。
+
 
 ## <a name="prerequisites"></a>必备条件  
 
-*   使用 Win32 API 的体验  
+*   使用 Win32 API 的体验。
 
 ## <a name="async-methods"></a>异步方法  
 
@@ -46,11 +40,11 @@ WebView2 Win32 C++ API 中的异步方法使用委托接口联系你，原因如
 HRESULT Invoke(HRESULT result)
 ```  
 
-实现 `Invoke` 方法 `CoreWebView2` ，请求完成 `Invoke` 时请求 `CapturePreview` 方法。  单个参数 `HRESULT` 用于描述请求的成功或失败 `CapturePreview` 代码。  
+实现 `Invoke` 方法 `CoreWebView2` ，在请求 `Invoke` 完成时 `CapturePreview` 请求方法。  单个参数 `HRESULT` 用于描述请求的成功或失败 `CapturePreview` 代码。  
 
 或者，对于 ，您提供一个实例，该实例具有一个方法，用于提供 `ICoreWebView2::ExecuteScript` `Invoke` 请求的成功或失败 `ExecuteScript` 代码。  另外提供第二个参数，该参数是运行脚本的结果的 JSON。  
 
-可以手动实现委托接口，也可以将 Callback 函数 (`CompleteHandler` [WRL) ][CppCxWrlCallbackFunction]。  WRL [代码 (WRL) ][CppCxWrlCallbackFunction] 用于以下 WebView2 代码片段。  
+可以手动实现委托接口，也可以将 Callback 函数 (`CompleteHandler` [WRL) 。 ][CppCxWrlCallbackFunction]  以下 [WebView2 (代码) 使用 WRL ][CppCxWrlCallbackFunction] 代码段中的 Callback 函数。  
 
 ```cpp
 void ScriptComponent::InjectScript()

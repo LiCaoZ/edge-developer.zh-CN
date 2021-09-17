@@ -8,25 +8,18 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: fdedb23f3398d0ee6b19cdcea309f48d3d284cd1
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: f6c35d867a1176ebef2da92e6306142da08968f7
+ms.sourcegitcommit: 5113e8f2d6823239911d8a7fed64d9652a96c26e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11975937"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "12018566"
 ---
 # <a name="threading-model-for-webview2"></a>WebView2 的线程模型
 
-:::row:::
-   :::column span="1":::
-      支持的平台：
-   :::column-end:::
-   :::column span="2":::
-      Win32、Windows Forms、WinUi、WPF
-   :::column-end:::
-:::row-end:::  
+支持的平台：Win32、Windows Forms、WinUi、WPF。
 
-WebView2 控件基于组件对象模型 [ (COM) ， ][WindowsWin32ComTheComponentObjectModel] 并且必须在单个线程的 Sta ([STA) ][WindowsWin32ComSingleThreadedApartments] 上运行。  
+WebView2 控件基于组件对象模型 [ (COM) ][WindowsWin32ComTheComponentObjectModel] 并且必须在单个线程的 Sta ([STA) ][WindowsWin32ComSingleThreadedApartments] 上运行。  
 
 ## <a name="thread-safety"></a>线程安全  
 
@@ -78,12 +71,12 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 
 > [!NOTE]
 > 对于 WinForms 和 WPF 应用，若要获取用于调试的完全调用堆栈，你必须为 WebView2 应用启用本机代码调试，如下所示。
-> 1.  在 WebView2 项目中打开Visual Studio。
+> 1.  在"WebView2"中打开Visual Studio。
 > 1.  在 **"解决方案资源管理器**"中，右键单击"WebView2"项目，然后选择"属性 **"。**  
 > 1.  选择" **调试** "选项卡，然后选中" **启用本机代码调试"** 复选框，如下所示。
 
-:::image type="complex" source="../media/webview-enable-native-debug.png" alt-text="在脚本中启用本机代码Visual Studio" lightbox="../media/webview-enable-native-debug.png":::
-   在脚本中启用本机代码Visual Studio
+:::image type="complex" source="../media/webview-enable-native-debug.png" alt-text="在应用程序内启用本机代码Visual Studio" lightbox="../media/webview-enable-native-debug.png":::
+   在应用程序内启用本机代码Visual Studio
 :::image-end:::  
 
 ## <a name="deferrals"></a>Deferrals  
@@ -133,7 +126,7 @@ private async void Button_Click(object sender, EventArgs e)
 <!-- external links -->
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 类|Microsoft Docs"  
 
-[WindowsWin32ComSingleThreadedApartments]: /windows/win32/com/single-threaded-apartments "单线程主|Microsoft Docs"  
+[WindowsWin32ComSingleThreadedApartments]: /windows/win32/com/single-threaded-apartments "单线程的|Microsoft Docs"  
 [WindowsWin32ComTheComponentObjectModel]: /windows/win32/com/the-component-object-model "组件对象模型|Microsoft Docs"  
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"  

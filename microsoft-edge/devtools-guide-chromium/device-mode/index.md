@@ -7,12 +7,12 @@ ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools, 仿真, 设备, 模拟, 移动
-ms.openlocfilehash: 924f4a0dc99c4da1766e5ded43539e10f487b435
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: 46d87f271e8f86fe0886544368ea24bcae19492a
+ms.sourcegitcommit: 5113e8f2d6823239911d8a7fed64d9652a96c26e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11976650"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "12018612"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -115,7 +115,7 @@ ms.locfileid: "11976650"
     :::image-end:::  
     
 > [!NOTE]
-> 如果“**设备**”工具栏较窄，将不显示“**旋转**”按钮。  
+> 如果“**设备**”工具栏较窄，将不显示“**旋转**”按钮。 若要访问 **旋转按钮** ，请增加设备工具栏 **的宽度**。  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="设备工具栏" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
    **设备工具栏**  
@@ -356,7 +356,7 @@ ms.locfileid: "11976650"
    :::column-end:::
 :::row-end:::  
 
-在“**用户代理**”旁边，清除“**自动选择**”复选框。  然后，选择“**自定义...**”，以从预定义的用户代理字符串列表中进行选择。  若要输入你自己的用户代理字符串，请在“**输入自定义用户代理**”中输入字符串。  
+在" **用户代理"旁边**，清除" **使用浏览器默认"** 复选框。  然后，选择“**自定义...**”，以从预定义的用户代理字符串列表中进行选择。  若要输入你自己的用户代理字符串，请在“**输入自定义用户代理**”中输入字符串。  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="在 macOS 上，将用户代理字符串设置为 Microsoft Edge" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
     在 macOS 上，将用户代理字符串设置为 Microsoft Edge  

@@ -8,25 +8,18 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: d133bfb99808d0e036c4b46be9ef82039aee49eb
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: c877459d197c211bf9dbc0f2ca6d1790245e0538
+ms.sourcegitcommit: 5113e8f2d6823239911d8a7fed64d9652a96c26e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11976496"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "12018559"
 ---
 # <a name="navigation-events"></a>导航事件  
 
-:::row:::
-   :::column span="1":::
-      支持的平台：
-   :::column-end:::
-   :::column span="2":::
-      Win32、Windows Forms、WinUi、WPF
-   :::column-end:::
-:::row-end:::  
+支持的平台：Win32、Windows Forms、WinUi、WPF。
 
-导航事件在 WebView2 实例中显示的内容发生特定异步操作时运行。  例如，当 WebView2 用户导航到新网站时，本机内容会使用 事件侦听 `NavigationStarting` 更改。  导航操作完成后，运行 `NavigationCompleted` 。  有关导航事件的良好示例，请导航到[WebView2 入门指南][Webview2IndexGetStarted]。  
+导航事件在 WebView2 实例中显示的内容发生特定异步操作时运行。  例如，当 WebView2 用户导航到新网站时，本机内容会使用 事件侦听 `NavigationStarting` 更改。  导航操作完成后，运行 `NavigationCompleted` 。  有关导航事件的良好示例，请导航到[WebView2][Webview2IndexGetStarted]入门指南 。  
 
 <!--todo:  Move the relevant information out of the get started guide to better focus the content and leave the most concise elements in the get started guide.  -->   
 
