@@ -1,18 +1,18 @@
 ### YamlMime:Landing
 title: Microsoft Edge开发人员文档
-summary: 使用 Microsoft Edge开发工具、Microsoft Edge扩展、渐进式 Web 应用、WebDriver 自动化、WebView2 等进行开发。
+summary: 使用开发Microsoft Edge开发工具、Microsoft Edge扩展、渐进式 Web 应用、WebDriver 自动化、WebView2 等。
 metadata:
   ms.service: websites
   ms.topic: landing-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
   ms.date: 09/02/2021
-  ms.openlocfilehash: 3efbc87cbb79e4cacc47d88c8a35999ca74257e8
-  ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+  ms.openlocfilehash: 01829d212ac26f0fbce0359828e47de3a5980b96
+  ms.sourcegitcommit: d2098f7f400614e2ba8eee8317abaa2e043c0594
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "11975919"
+  ms.lasthandoff: 09/22/2021
+  ms.locfileid: "12033079"
 landingContent:
 - title: Microsoft Edge 开发工具
   linkLists:
@@ -34,7 +34,7 @@ landingContent:
     links:
     - text: 键盘快捷方式
       url: /microsoft-edge/devtools-guide-chromium/shortcuts
-- title: Microsoft Edge 扩展
+- title: Microsoft Edge扩展
   linkLists:
   - linkListType: overview
     links:
@@ -58,7 +58,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 概述
+    - text: 渐进式 Web 应用概述
       url: /microsoft-edge/progressive-web-apps-chromium/index
     - text: 渐进式 Web 应用入门
       url: /microsoft-edge/progressive-web-apps-chromium/get-started
@@ -76,7 +76,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 概述
+    - text: WebView2 概述
       url: /microsoft-edge/webview2/index
   - linkListType: get-started
     links:
@@ -84,22 +84,26 @@ landingContent:
       url: /microsoft-edge/webview2/gettingstarted/win32
     - text: WPF 中的 WebView2 入门
       url: /microsoft-edge/webview2/gettingstarted/wpf
-    - text: Windows Forms 应用中的 WebView2 入门
+    - text: 在表单应用中开始使用 WebView2 Windows WebView2
       url: /microsoft-edge/webview2/gettingstarted/winforms
   - linkListType: reference
     links:
     - text: Microsoft EdgeWebView2 API 参考
       url: /microsoft-edge/webview2/webview2-api-reference
-- title: 测试&自动化
+- title: 测试和自动化
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 开发工具协议概述
+    - text: DevTools 协议
       url: /microsoft-edge/devtools-protocol-chromium
-    - text: WebDriver
-      url: /microsoft-edge/webdriver-chromium
+    - text: 原始试验
+      url: /microsoft-edge/origin-trials/index
+    - text: 编剧
+      url: /microsoft-edge/playwright/index
     - text: Puppeteer
       url: /microsoft-edge/puppeteer
+    - text: WebDriver
+      url: /microsoft-edge/webdriver-chromium
     - text: webhint 扩展Visual Studio Code
       url: /microsoft-edge/visual-studio-code/webhint
 - title: Web 平台
@@ -122,15 +126,17 @@ landingContent:
       url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
     - text: webhint 扩展Visual Studio Code
       url: /microsoft-edge/visual-studio-code/webhint
-- title: 辅助功能
+- title: Microsoft Edge
   linkLists:
   - linkListType: overview
     links:
+    - text: DevTools 中的辅助功能测试功能
+      url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
     - text: 辅助功能概述
       url: /microsoft-edge/accessibility/
   - linkListType: how-to-guide
     links:
+    - text: 使用 DevTools 的辅助功能测试概述
+      url: /microsoft-edge/devtools-guide-chromium/accessibility/accessibility-testing-in-devtools
     - text: 辅助功能测试
       url: /microsoft-edge/accessibility/test
-    - text: DevTools 中的辅助功能测试功能
-      url: /microsoft-edge/devtools-guide-chromium/accessibility/reference

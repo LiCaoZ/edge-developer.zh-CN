@@ -8,7 +8,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 04/06/2021
+  ms.date: 09/09/2021
   ms.localizationpriority: high
   ms.prod: microsoft-edge
 highlightedContent:
@@ -35,156 +35,208 @@ highlightedContent:
       itemType: learn
       url: /microsoft-edge/index#microsoft-edge-for-developers
 conceptualContent:
-  title: Microsoft Edge Enterprise
-  items:
-    - title: 了解有关企业中的 Microsoft Edge 的信息
-      links:
-        - url: /deployedge/microsoft-edge-channels
-          itemType: overview
-          text: Microsoft Edge 渠道概述
-        - url: /deployedge/edge-ie-mode
-          itemType: reference
-          text: 使用企业功能
-    - title: 部署和更新 Microsoft Edge
-      links:
-        - itemType: reference
-          text: 视频 - 部署 Microsoft Edge
-          url: /deployedge/microsoft-edge-video-deploy
-        - itemType: reference
-          text: 部署到 Windows
-          url: /configmgr/apps/deploy-use/deploy-edge
-        - itemType: reference
-          text: 部署到 macOS
-          url: /intune/apps/apps-edge-macos
-    - title: 配置 Microsoft Edge
-      links:
-        - itemType: reference
-          text: 在 Windows 和 macOS 上配置 Microsoft Edge
-          url: /deployedge/configure-microsoft-edge
-        - itemType: reference
-          text: 将 Microsoft Edge 设为默认浏览器
-          url: /deployedge/edge-default-browser
-    - title: 管理安全性和隐私
-      links:
-        - itemType: reference
-          text: 安全性
-          url: /deployedge/ms-edge-security-for-business
-        - itemType: reference
-          text: 隐私
-          url: /deployedge/microsoft-edge-enterprise-privacy-settings
-    - title: 策略参考
-      links:
-        - itemType: reference
-          text: 浏览器策略参考
-          url: /deployedge/microsoft-edge-policies
-        - itemType: reference
-          text: 更新策略参考
-          url: /deployedge/microsoft-edge-update-policies
-    - title: 与企业社区互动
-      links:
-        - itemType: reference
-          text: 'Enterprise预览体验成员 (技术社区) '
-          url: 'https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise'
-    - title: 适用于企业的扩展
-      links:
-        - itemType: reference
-          text: 匹配模式
-          url: /microsoft-edge/extensions-chromium/enterprise/match-patterns
-        - itemType: reference
-          text: 托管和更新
-          url: /microsoft-edge/extensions-chromium/enterprise/hosting-and-updating
-additionalContent:
   sections:
+    - title: Microsoft Edge Enterprise
+      items:
+        - title: 了解有关企业中的 Microsoft Edge 的信息
+          links:
+            - url: /deployedge/microsoft-edge-channels
+              itemType: overview
+              text: Microsoft Edge 渠道概述
+            - url: /deployedge/edge-ie-mode
+              itemType: reference
+              text: 使用企业功能
+        - title: 部署和更新 Microsoft Edge
+          links:
+            - itemType: reference
+              text: 视频 - 部署 Microsoft Edge
+              url: /deployedge/microsoft-edge-video-deploy
+            - itemType: reference
+              text: 部署到 Windows
+              url: /configmgr/apps/deploy-use/deploy-edge
+            - itemType: reference
+              text: 部署到 macOS
+              url: /intune/apps/apps-edge-macos
+        - title: 配置 Microsoft Edge
+          links:
+            - itemType: reference
+              text: 在 Windows 和 macOS 上配置 Microsoft Edge
+              url: /deployedge/configure-microsoft-edge
+            - itemType: reference
+              text: 将 Microsoft Edge 设为默认浏览器
+              url: /deployedge/edge-default-browser
+        - title: 管理安全性和隐私
+          links:
+            - itemType: reference
+              text: 安全性
+              url: /deployedge/ms-edge-security-for-business
+            - itemType: reference
+              text: 隐私
+              url: /deployedge/microsoft-edge-enterprise-privacy-settings
+        - title: 策略参考
+          links:
+            - itemType: reference
+              text: 浏览器策略参考
+              url: /deployedge/microsoft-edge-policies
+            - itemType: reference
+              text: 更新策略参考
+              url: /deployedge/microsoft-edge-update-policies
+        - title: 与企业社区互动
+          links:
+            - itemType: reference
+              text: 'Enterprise预览体验成员 (技术社区) '
+              url: 'https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise'
+        - title: 适用于企业的扩展
+          links:
+            - itemType: overview
+              text: 在企业中管理 Microsoft Edge 扩展
+              url: /deployedge/microsoft-edge-manage-extensions
+            - itemType: reference
+              text: 匹配模式
+              url: /microsoft-edge/extensions-chromium/enterprise/match-patterns
+            - itemType: reference
+              text: 托管和更新
+              url: /microsoft-edge/extensions-chromium/enterprise/hosting-and-updating
     - title: Microsoft Edge开发人员
       items:
-        - title: 开发工具
+        - title: Microsoft Edge 开发工具
           links:
-            - text: 开发工具概述
-              url: /microsoft-edge/devtools-guide-chromium
-            - text: 面向初学者的开发工具
-              url: /microsoft-edge/devtools-guide-chromium/beginners/html
-            - text: 键盘快捷方式
-              url: /microsoft-edge/devtools-guide-chromium/shortcuts
-            - text: 命令菜单
-              url: /microsoft-edge/devtools-guide-chromium/command-menu/index
-            - text: 打开开发工具
-              url: /microsoft-edge/devtools-guide-chromium/open
-            - text: CSS
-              url: /microsoft-edge/devtools-guide-chromium/css/index
-        - title: 测试&自动化
+            - url: /microsoft-edge/devtools-guide-chromium
+              itemType: overview
+              text: 开发工具概述
+            - url: /microsoft-edge/devtools-guide-chromium/beginners/html
+              itemType: overview
+              text: 面向初学者的开发工具
+            - url: /microsoft-edge/devtools-guide-chromium/command-menu/index
+              itemType: how-to-guide
+              text: 命令菜单
+            - url: /microsoft-edge/devtools-guide-chromium/open
+              itemType: how-to-guide
+              text: 打开开发工具
+            - url: /microsoft-edge/devtools-guide-chromium/css/index
+              itemType: how-to-guide
+              text: 查看和更改 CSS
+            - url: /microsoft-edge/devtools-guide-chromium/shortcuts
+              itemType: reference
+              text: 键盘快捷方式
+        - title: Microsoft Edge扩展
           links:
-            - text: 辅助功能
-              url: /microsoft-edge/accessibility
-            - text: DevTools 协议
-              url: /microsoft-edge/devtools-protocol-chromium
-            - text: WebDriver
-              url: /microsoft-edge/webdriver-chromium
-            - text: Puppeteer
-              url: /microsoft-edge/puppeteer
-            - text: 站点兼容性
-              url: /microsoft-edge/web-platform/site-impacting-changes
-            - text: webhint
-              url: /microsoft-edge/visual-studio-code/webhint
-        - title: 扩展入门
-          links:
-            - text: 扩展概述
-              url: /microsoft-edge/extensions-chromium/index
-            - text: 入门教程
-              url: /microsoft-edge/extensions-chromium/getting-started/index
-            - text: 创建简单扩展
-              url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
-        - title: 扩展：开发人员指南
-          links:
-            - text: 将Chromium扩展移植到Microsoft Edge
-              url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
-            - text: 分发扩展的备用方法
-              url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
-            - text: 本机消息传递
-              url: /microsoft-edge/extensions-chromium/developer-guide/native-messaging
-        - title: 扩展：发布到Microsoft Store
-          links:
-            - text: 分步发布过程
-              url: /microsoft-edge/extensions-chromium/publish/publish-extension
-            - text: 打开开发人员帐户
-              url: /microsoft-edge/extensions-chromium/publish/create-dev-account
-            - text: 添加和管理用户
-              url: /microsoft-edge/extensions-chromium/publish/aad-account
-            - text: 更新扩展列表
-              url: /microsoft-edge/extensions-chromium/publish/update
-            - text: 管理帐户设置
-              url: /microsoft-edge/extensions-chromium/publish/manage-settings
-        - title: 扩展：Microsoft Edge加载项策略
-          links:
-            - text: 内容安全策略
-              url: /microsoft-edge/extensions-chromium/store-policies/csp
-            - text: Microsoft Edge 加载项商店开发人员策略
-              url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
+            - url: /microsoft-edge/extensions-chromium/index
+              itemType: overview
+              text: 扩展概述
+            - url: /microsoft-edge/extensions-chromium/getting-started/index
+              itemType: overview
+              text: 入门教程
+            - url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
+              itemType: overview
+              text: 将Chromium扩展移植到Microsoft Edge
+            - url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
+              itemType: how-to-guide
+              text: 分发扩展的备用方法
+            - url: /microsoft-edge/extensions-chromium/publish/publish-extension
+              itemType: how-to-guide
+              text: 分步发布过程
+            - url: /microsoft-edge/extensions-chromium/publish/create-dev-account
+              itemType: how-to-guide
+              text: 注册为 Microsoft Edge 扩展开发人员
+            - url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
+              itemType: how-to-guide
+              text: 创建简单扩展
         - title: 渐进式 Web 应用
           links:
-            - text: 概述
-              url: /microsoft-edge/progressive-web-apps-chromium/index
-            - text: 渐进式 Web 应用入门
-              url: /microsoft-edge/progressive-web-apps-chromium/get-started
-            - text: 将 DevTools 与渐进式 Web 应用一同使用
-              url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
-            - text: 脱机方案
-              url: /microsoft-edge/progressive-web-apps-chromium/offline
-            - text: 服务工作者
-              url: /microsoft-edge/progressive-web-apps-chromium/serviceworker
-            - text: Web 应用清单
-              url: /microsoft-edge/progressive-web-apps-chromium/webappmanifests
+            - url: /microsoft-edge/progressive-web-apps-chromium/index
+              itemType: overview
+              text: 渐进式 Web 应用概述
+            - url: /microsoft-edge/progressive-web-apps-chromium/get-started
+              itemType: overview
+              text: 渐进式 Web 应用入门
+            - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
+              itemType: overview
+              text: 将 DevTools 与渐进式 Web 应用一同使用
+            - url: /microsoft-edge/progressive-web-apps-chromium/offline
+              itemType: concept
+              text: 脱机方案
+            - url: /microsoft-edge/progressive-web-apps-chromium/serviceworker
+              itemType: concept
+              text: 服务工作者
+            - url: /microsoft-edge/progressive-web-apps-chromium/webappmanifests
+              itemType: concept
+              text: Web 应用清单
         - title: WebView2
           links:
-            - text: 概述
-              url: /microsoft-edge/webview2/index
-            - text: WebView2 入门
-              url: /microsoft-edge/webview2/gettingstarted/win32
-            - text: WPF 中的 WebView2 入门
-              url: /microsoft-edge/webview2/gettingstarted/wpf
-            - text: Windows Forms 应用中的 WebView2 入门
-              url: /microsoft-edge/webview2/gettingstarted/winforms
-            - text: 参考
-              url: /microsoft-edge/webview2/webview2-api-reference
+            - url: /microsoft-edge/webview2/index
+              itemType: overview
+              text: WebView2 概述
+            - url: /microsoft-edge/webview2/gettingstarted/win32
+              itemType: get-started
+              text: WebView2 入门
+            - url: /microsoft-edge/webview2/gettingstarted/wpf
+              itemType: get-started
+              text: WPF 中的 WebView2 入门
+            - url: /microsoft-edge/webview2/gettingstarted/winforms
+              itemType: get-started
+              text: 在表单应用中开始使用 WebView2 Windows WebView2
+            - url: /microsoft-edge/webview2/webview2-api-reference
+              itemType: reference
+              text: Microsoft EdgeWebView2 API 参考
+        - title: 测试和自动化
+          links:
+            - url: /microsoft-edge/devtools-protocol-chromium
+              itemType: how-to-guide
+              text: DevTools 协议
+            - url: /microsoft-edge/origin-trials/index
+              itemType: overview
+              text: 原始试验
+            - url: /microsoft-edge/playwright/index
+              itemType: overview
+              text: 编剧
+            - url: /microsoft-edge/puppeteer
+              itemType: how-to-guide
+              text: Puppeteer
+            - url: /microsoft-edge/webdriver-chromium
+              itemType: how-to-guide
+              text: WebDriver
+            - url: /microsoft-edge/visual-studio-code/webhint
+              itemType: how-to-guide
+              text: webhint 扩展Visual Studio Code
+        - title: Web 平台
+          links:
+            - url: /microsoft-edge/web-platform/user-agent-guidance
+              itemType: how-to-guide
+              text: 正在从网站检测 Microsoft Edge
+            - url: /microsoft-edge/web-platform/site-impacting-changes
+              itemType: how-to-guide
+              text: 影响站点兼容性的更改
+        - title: Microsoft EdgeIDE 集成
+          links:
+            - url: /microsoft-edge/visual-studio/
+              itemType: overview
+              text: Visual Studio
+            - url: /microsoft-edge/visual-studio-code/
+              itemType: overview
+              text: Visual Studio Code 概述
+            - url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
+              itemType: overview
+              text: 适用于开发人员的 DevTools Visual Studio Code
+            - url: /microsoft-edge/visual-studio-code/webhint
+              itemType: overview
+              text: webhint 扩展Visual Studio Code
+        - title: Microsoft Edge
+          links:
+            - url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
+              itemType: overview
+              text: DevTools 中的辅助功能测试功能
+            - url: /microsoft-edge/accessibility/
+              itemType: overview
+              text: 辅助功能概述
+            - url: /microsoft-edge/devtools-guide-chromium/accessibility/accessibility-testing-in-devtools
+              itemType: how-to-guide
+              text: 使用 DevTools 的辅助功能测试概述
+            - url: /microsoft-edge/accessibility/test
+              itemType: how-to-guide
+              text: 辅助功能测试
+additionalContent:
+  sections:
     - title: 帮助和支持
       items:
         - summary: 从 Microsoft 问答社区专家&解答

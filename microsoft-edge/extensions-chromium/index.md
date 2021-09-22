@@ -7,18 +7,18 @@ ms.date: 08/25/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， chromium 扩展
-ms.openlocfilehash: 50582ee10c0467c5e9cdb301daccba8e38a6ca9c
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: d43d9a9abb8dcc7f17d62c8839d808015649b31c
+ms.sourcegitcommit: d2098f7f400614e2ba8eee8317abaa2e043c0594
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11976560"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "12033015"
 ---
 # <a name="overview-of-microsoft-edge-extensions"></a>Microsoft Edge扩展概述
 
 Microsoft Edge_扩展_是一个小程序， (开发人员) 添加或修改 Microsoft Edge (Chromium) 。  扩展旨在改善用户的日常浏览体验。  它提供了对目标受众很重要的功能。  
 
-如果你有基于Microsoft Edge浏览器或特定网页功能的改进的想法或产品，可以创建一个扩展。  配套 _体验的示例包括_ 广告阻止者和密码管理器。
+如果你有基于特定 web Microsoft Edge或特定网页功能的改进的想法或产品，可以创建一个扩展。  配套 _体验的示例包括_ 广告阻止者和密码管理器。
 
 扩展的结构类似于常规 Web 应用。  扩展应至少包含以下功能：
 
@@ -91,13 +91,13 @@ Microsoft Edge_扩展_是一个小程序， (开发人员) 添加或修改 Micro
 
 ### <a name="migrate-an-existing-extension-to-microsoft-edge"></a>将现有扩展迁移到 Microsoft Edge  
 
-如果你已针对另一个基于 Chromium 的浏览器开发扩展，你可以将其提交到Microsoft Edge加载项网站。 不需要重写扩展，并且必须验证它在 MicrosoftEdge 中是否工作。  将现有 Chromium 扩展迁移到其他 Chromium 浏览器时，请确保相同的 API 或替代项可用于目标浏览器。
+如果你已针对另一个基于 Chromium 的浏览器开发扩展，你可以将其提交到 Microsoft Edge 加载项网站。 不需要重写扩展，并且必须验证它在 MicrosoftEdge 中是否工作。  将现有 Chromium 扩展迁移到其他 Chromium 浏览器时，请确保相同的 API 或替代项可用于目标浏览器。
 
 有关将 Chrome 扩展移植到 Microsoft Edge 的更多信息，请导航到[将 Chrome 扩展移植到 Microsoft Edge (Chrome)][ExtensionsChromiumDeveloperGuidePortChrome]。 将扩展移植到目标浏览器后，下一步是发布它。  
 
 ### <a name="publish-to-the-microsoft-edge-add-ons-website"></a>发布到Microsoft Edge加载项网站
 
-若要开始将扩展发布到 Microsoft Edge，必须使用 Microsoft 帐户[][MicrosoftDeveloperRegistration] (MSA) 电子邮件帐户注册开发人员帐户，以将扩展列表提交到应用商店。  MSA 帐户的 Microsoft (电子邮件地址 `@outlook.com`) 、或 `@live.com` "@hotmail.com"。  选择要注册的电子邮件地址时，请考虑是否必须与组织Microsoft Edge转移或共享该扩展的所有权。  注册完成后，你可以创建新的扩展提交到应用商店。
+若要开始将扩展发布到 Microsoft Edge，必须使用 Microsoft[][MicrosoftDeveloperRegistration]帐户 (MSA) 电子邮件帐户注册开发人员帐户，以将扩展列表提交到应用商店。  MSA 帐户的 Microsoft (电子邮件地址 `@outlook.com`) 、或 `@live.com` "@hotmail.com"。  选择要注册的电子邮件地址时，请考虑是否必须与组织Microsoft Edge转移或共享该扩展的所有权。  注册完成后，你可以创建新的扩展提交到应用商店。
 
 若要将扩展提交到应用商店，需要提供以下项：
 
@@ -115,20 +115,30 @@ Microsoft Edge_扩展_是一个小程序， (开发人员) 添加或修改 Micro
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅  
 
-*   [移植 Google Chrome 扩展][ExtensionworkshopPorting]  
-*   [构建 Safari 应用扩展][AppleDeveloperSafariservicesAppExtensionsBuilding]  
-*   [第一个扩展 (Firefox)][MDNWebextensionsYourFirst]  
-*   [入门教程 (Opera)][ChromeDeveloperExtensionsGetstarted]  
-*   [入门 (Opera)][OperaDevExtensionsGettingStarted]  
-*   [扩展概念和体系结构][ExtensionsChromiumGettingStartedIndex]  
+*  [扩展概念和体系结构][ExtensionsChromiumGettingStartedIndex]
+*  [在企业中管理 Microsoft Edge 扩展][ManageExtensionsEnterprise]
+
+外部链接：
+*  [移植 Google Chrome 扩展][ExtensionworkshopPorting]  
+*  [构建 Safari 应用扩展][AppleDeveloperSafariservicesAppExtensionsBuilding]  
+*  [第一个扩展 (Firefox)][MDNWebextensionsYourFirst]  
+*  [入门教程 (Opera)][ChromeDeveloperExtensionsGetstarted]  
+*  [入门 (Opera)][OperaDevExtensionsGettingStarted]  
+
+适用于Visual Studio Code而非Microsoft Edge：
+*  [Microsoft Edge适用于开发人员的 DevTools Visual Studio Code][EdgeDevToolsVSCode]
+*  [webhint 扩展Visual Studio Code][WebhintVSCode]
 
 
 <!-- ====================================================================== -->
 <!-- links -->  
-[ExtensionsChromiumDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md "将 Chrome 扩展移植到 Microsoft Edge (Chromium) |Microsoft Docs"  
+[ExtensionsChromiumDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md "将 Chrome 扩展移植到 Microsoft Edge |Microsoft Docs"  
 [ExtensionsChromiumGettingStartedIndex]: ./getting-started/index.md "扩展概念和体系结构|Microsoft Docs"  
 [ExtensionsChromiumPublish]: ./publish/publish-extension.md "发布Microsoft Edge扩展|Microsoft Docs"  
-
+[EdgeDevToolsVSCode]: ../visual-studio-code/microsoft-edge-devtools-extension.md "Microsoft Edge适用于开发人员的 DevTools Visual Studio Code |Microsoft Docs"
+[WebhintVSCode]: ../visual-studio-code/webhint.md "webhint 扩展Visual Studio Code |Microsoft Docs"
+<!-- external links -->
+[ManageExtensionsEnterprise]: /deployedge/microsoft-edge-manage-extensions "管理Microsoft Edge企业中扩展|Microsoft Edge Enterprise文档"
 [MicrosoftDeveloperEdgeExtensions]: https://developer.microsoft.com/microsoft-edge/extensions "开发 Microsoft Edge |Microsoft 开发人员"  
 [MicrosoftDeveloperRegistration]: https://developer.microsoft.com/registration "合作伙伴中心|Microsoft 开发人员"  
 

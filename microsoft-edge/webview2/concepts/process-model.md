@@ -1,44 +1,46 @@
 ---
-description: WebView2 进程模型。
+description: WebView2 运行时进程模型，以及它如何使用用户数据文件夹和网站隔离。
 title: WebView2 进程模型
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 09/21/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 407c532d7492bac7769c3186905e7a917d3f2fcd
-ms.sourcegitcommit: 5113e8f2d6823239911d8a7fed64d9652a96c26e
+ms.openlocfilehash: e2e7086fe7f0b313f35cc7dd06561e7b25e4f745
+ms.sourcegitcommit: d2098f7f400614e2ba8eee8317abaa2e043c0594
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2021
-ms.locfileid: "12018531"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "12033192"
 ---
 # <a name="the-webview2-process-model"></a>WebView2 进程模型
 
 支持的平台：Win32、Windows Forms、WinUI、WPF。
 
-WebView2 运行时使用与浏览器相同的Microsoft Edge模型。  此浏览器过程模型在新式 Web 浏览器的内部外观 [ (第 1 部分 ][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]) 。
+WebView2 运行时使用与浏览器相同的Microsoft Edge模型。  此浏览器过程模型在内部查看新式 Web 浏览器 ([第 1 部分 ][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]) 。
 
 
 <!-- ====================================================================== -->
 ## <a name="processes-in-the-webview2-runtime"></a>WebView2 运行时中的进程
 
-WebView2 运行时进程的集合（或 WebView2 进程组）由以下进程组成：
+_WebView2 进程组_是 WebView2 运行时进程的集合。  WebView2 进程组包括以下内容：
 *  单个浏览器进程。
-*  一个或多个呈现进程。
+*  一个或多个呈现器进程。
 *  其他帮助程序进程，如 GPU 进程和音频服务进程。
 
 :::image type="complex" source="../media/process-model-1.png" alt-text="进程 1" lightbox="../media/process-model-1.png":::
    进程 1
 :::image-end:::
 
-除了浏览器进程外，当 WebView2 应用程序使用 WebView2 功能时，此集合中进程的数量和状态可能会更改。  例如，使用 属性中的不同域从同一 WebView 创建新的 WebView `CoreWebView2Environment` `Source` 通常会启动一个新的呈现器进程。  控制何时创建这些额外进程的逻辑取决于Chromium体系结构，超出了 WebView2 运行时的范围。
+当 WebView2 应用程序使用 WebView2 功能时，WebView2 进程组中进程的数量和状态可能会发生变化。   (但是，WebView2 进程组中只有一个特定的浏览器进程。例如) 例如，从同一个 ，但在 属性中使用不同的域创建新 WebView 通常会启动一个新的呈现器进程。 `CoreWebView2Environment` `Source`
 
-例如，呈现器进程数因以下条件而异：
+呈现器进程的数量可能因以下条件而异：
 *   使用 WebView2 _运行时_ 中的网站隔离功能。  请参阅 [每帧呈现器进程 - 网站隔离](https://developers.google.com/web/updates/2018/09/inside-browser-part1#site-isolation)。
 *   使用同一用户数据文件夹的 WebView2 实例中呈现的已断开连接源的数量。
+
+控制何时创建这些额外进程的逻辑取决于Chromium体系结构，超出了 WebView2 运行时的范围。
 
 
 <!-- ====================================================================== -->
@@ -65,6 +67,8 @@ WebView2 运行时进程集合中所有进程都绑定到浏览器进程，浏�
 
 若要对浏览器和呈现器进程中的崩溃和挂起做出反应，请使用 `ProcessFailed` 的 事件 `CoreWebView2` 。
 
+<!-- todo: add info about the new APIs BrowserProcessExited and ProcessInfo -->
+
 若要安全关闭关联的浏览器和呈现器进程，请使用 的 `Close` 方法 `CoreWebView2Controller` 。
 
 若要从**** WebView2 实例的**DevTools**窗口打开浏览器任务管理器窗口，请执行下列操作之一：
@@ -77,11 +81,11 @@ WebView2 运行时进程集合中所有进程都绑定到浏览器进程，浏�
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [内部查看新式 Web 浏览器 (第 1) ][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]部分 - WebView2 运行时和 Microsoft Edge 浏览器使用的浏览器进程模型。
+*  [内部查看新式 Web 浏览器 (第 1) ][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]部分 - WebView2 运行时和浏览器使用的浏览器Microsoft Edge模型。
 *  [WebView2 入门指南][Webview2IndexGetStarted]
 *  [WebView2Samples 存储库][GithubMicrosoftedgeWebview2samples] - WebView2 功能的综合示例。
 *  [WebView2 API 参考][DotnetApiMicrosoftWebWebview2WpfWebview2]
-*  [WebView2][Webview2IndexNextSteps] _简介中的Microsoft Edge步骤_。
+*  [WebView2][Webview2IndexNextSteps]简介中的_Microsoft Edge步骤_。
 
 
 <!-- ====================================================================== -->

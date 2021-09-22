@@ -3,29 +3,32 @@ description: 在 WebView2 线程模型中，必须在具有消息等待的 UI �
 title: WebView2 的线程模型
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/28/2021
+ms.date: 09/21/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: f6c35d867a1176ebef2da92e6306142da08968f7
-ms.sourcegitcommit: 5113e8f2d6823239911d8a7fed64d9652a96c26e
+ms.openlocfilehash: bdb0f3a9ae5b4c5b5d56a151f2f9485d53ffccd6
+ms.sourcegitcommit: d2098f7f400614e2ba8eee8317abaa2e043c0594
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2021
-ms.locfileid: "12018566"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "12033142"
 ---
 # <a name="threading-model-for-webview2"></a>WebView2 的线程模型
 
 支持的平台：Win32、Windows Forms、WinUi、WPF。
 
-WebView2 控件基于组件对象模型 [ (COM) ][WindowsWin32ComTheComponentObjectModel] 并且必须在单个线程的 Sta ([STA) ][WindowsWin32ComSingleThreadedApartments] 上运行。  
+WebView2 控件基于组件对象模型 [ (COM) ][WindowsWin32ComTheComponentObjectModel] 并且必须在单个线程的 Sta ([上运行 ][WindowsWin32ComSingleThreadedApartments]) 线程。  
 
 ## <a name="thread-safety"></a>线程安全  
 
 WebView2 必须在使用消息线索的 UI 线程上创建。  所有回调都发生在该线程上，并且必须在该线程上完成对 WebView2 的请求。  从另一个线程使用 WebView2 不安全。  
 
 唯一的例外是 `Content` 属性 `CoreWebView2WebResourceRequest` 。  从 `Content` 后台线程读取属性流。  该流应为敏捷流，或应该从后台 STA 创建，以防止 UI 线程的性能下降。  
+
+> [!NOTE]
+> 对象属性是单线程的。  例如，从除 (之外的其他线程调用将成功，即返回 `CoreWebView2CookieManager.GetCookiesAsync(null)` cookie) ;但是，在此类调用之后尝试访问 cookie 的属性 (如) 将引发 `Main` `c.Domain` 异常。
 
 ## <a name="re-entrancy"></a>重新entrancy  
 
@@ -71,19 +74,55 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 
 > [!NOTE]
 > 对于 WinForms 和 WPF 应用，若要获取用于调试的完全调用堆栈，你必须为 WebView2 应用启用本机代码调试，如下所示。
-> 1.  在"WebView2"中打开Visual Studio。
+> 1.  在 WebView2 项目中打开Visual Studio。
 > 1.  在 **"解决方案资源管理器**"中，右键单击"WebView2"项目，然后选择"属性 **"。**  
 > 1.  选择" **调试** "选项卡，然后选中" **启用本机代码调试"** 复选框，如下所示。
 
-:::image type="complex" source="../media/webview-enable-native-debug.png" alt-text="在应用程序内启用本机代码Visual Studio" lightbox="../media/webview-enable-native-debug.png":::
-   在应用程序内启用本机代码Visual Studio
+:::image type="complex" source="../media/webview-enable-native-debug.png" alt-text="在脚本中启用本机代码Visual Studio" lightbox="../media/webview-enable-native-debug.png":::
+   在脚本中启用本机代码Visual Studio
 :::image-end:::  
 
 ## <a name="deferrals"></a>Deferrals  
 
 某些 WebView2 事件读取在相关事件参数上设置的值，或在事件处理程序完成后启动一些操作。  如果还需要运行异步操作（如事件处理程序），请对关联事件的事件参数 `GetDeferral` 使用 方法。  返回的对象可确保在请求 的 方法之前不会认为事件 `Deferral` `Complete` `Deferral` 处理程序已完成。  
 
-例如，事件处理程序完成后，可以使用 事件提供 以作为子 `NewWindowRequested` `CoreWebView2` 窗口进行连接。  但是，如果需要异步创建 ，应在 `CoreWebView2` 上 `GetDeferral` 请求 方法 `NewWindowRequestedEventArgs` 。  在 异步创建 后，在 上设置 属性，该方法返回的对象上的 `CoreWebView2` `NewWindow` `NewWindowRequestedEventArgs` `Complete` `Deferral` `GetDeferral` 请求。  
+例如，事件处理程序完成后，可以使用 事件提供 以作为子 `NewWindowRequested` `CoreWebView2` 窗口进行连接。  但是，如果需要异步创建 ，应在 `CoreWebView2` 上 `GetDeferral` 调用 方法 `NewWindowRequestedEventArgs` 。  在 上异步创建 和 设置 属性后，对 方法返回的对象 `CoreWebView2` `NewWindow` 调用 `NewWindowRequestedEventArgs` `Complete` `Deferral` `GetDeferral` 。  
+
+### <a name="deferrals-in-c"></a>C 中的延迟#
+
+在 `Deferral` C# 中时，最佳做法是使用它和 `using` 块。 `using`即使块 `Deferral` 中间抛出异常，块也可确保 完成 `using` 。 如果相反，你有代码可显式调用 ，但在调用发生前会引发异常，延迟不会完成，直到稍后垃圾回收器最终收集和处理延迟时。 `Complete` `Complete` 在这期间，WebView2 将等待应用代码处理事件。
+
+例如，不要执行以下操作，因为如果在调用 前出现异常，该事件不会被视为 `Complete` `WebResourceRequested` "handled"，并阻止 WebView2 呈现该 Web 内容。
+
+```csharp
+private async void WebView2WebResourceRequestedHandler(CoreWebView2 sender, 
+                           CoreWebView2WebResourceRequestedEventArgs eventArgs)
+{
+   var deferral = eventArgs.GetDeferral();
+
+   args.Response = await CreateResponse(eventArgs);
+
+   // Calling Complete is not recommended, because if CreateResponse
+   // throws an exception, the deferral isn't completed.
+   deferral.Complete();
+}
+```
+
+请改为使用 `using` 块，如以下示例所示。 `using`块确保 `Deferral` 已完成，无论 是否有异常。
+
+```csharp
+private async void WebView2WebResourceRequestedHandler(CoreWebView2 sender, 
+                           CoreWebView2WebResourceRequestedEventArgs eventArgs)
+{
+   // The using block ensures that the deferral is completed, regardless of
+   // whether there's an exception.
+   using (eventArgs.GetDeferral())
+   {
+      args.Response = await CreateResponse(eventArgs);
+   }
+}
+```
+
 
 ## <a name="block-the-ui-thread"></a>阻止 UI 线程  
 
