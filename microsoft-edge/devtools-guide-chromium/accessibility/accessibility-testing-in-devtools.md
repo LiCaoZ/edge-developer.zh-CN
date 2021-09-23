@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 7f497f531d1e86357c317bf309e1c05ce0e6f9e3
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: 7f23d16987aacbcc66371d03a79c60ad71a3a2a1
+ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11975906"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "12034217"
 ---
 # <a name="overview-of-accessibility-testing-using-devtools"></a>使用 DevTools 的辅助功能测试概述
 
@@ -23,6 +23,7 @@ ms.locfileid: "11975906"
 :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## <a name="automated-testing-by-using-the-issues-tool"></a>使用问题工具自动测试
 
 When you open the demo page in the browser and open DevTools， notice that some issues are automatically detected in the **Issues counter**.  Select the **Issues counter** \ (Issues ![ counter ](../media/issues-counter-icon.msft.png) \) to open the Issues [tool][DevToolsIssuesTool] to view the issues and more information.
@@ -58,7 +59,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 <input type="submit" value="go">
 ```
 
-此处元素的使用有误，因为 元素和 元素之间 `label` `label` 没有 `input` 连接。  当您选择搜索标签时，有效的 HTML 标签将焦点放在搜索输入 **文本框** 上。 
+此处元素的使用有误，因为 元素和 元素之间 `label` `label` 没有 `input` 连接。  当您选择搜索标签时，有效的 HTML 标签将焦点放在搜索输入 **文本框** 上。
 
 可以通过将 元素嵌套在 元素中，或添加指向 元素属性的属性来 `input` `label` `for` `id` 解决此问题 `input` 。  若要查看正确的连接，请选择"捐赠 **"表单** 上的"其他"标签。
 
@@ -105,10 +106,10 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 通过缩小浏览器窗口范围，使用箭头键滚动页面，可以看到演示页面的顶部导航栏具有一些辅助功能问题。  顶部导航栏与 **"** 搜索"窗体重叠，如上图所示，需要修复该问题。
 
-可以通过调整浏览器窗口的大小来模拟窄视区，但测试设计响应性更好的方法就是使用 **设备仿真** 工具。  以下是设备仿真 **工具的一** 些功能，可帮助你查找任何网站的辅助功能问题：
+可以通过调整浏览器窗口的大小来模拟较窄的视区，但测试设计响应性更好的方法就是使用 **设备仿真** 工具。  以下是设备仿真 **工具的一** 些功能，可帮助你查找任何网站的辅助功能问题：
 
 *  无需调整浏览器窗口的大小，即可调整页面大小并测试 CSS [媒体][DevToolsMediaQueries] 查询是否触发布局更改。
-*  检查是否使用鼠标的依赖项。 默认情况下，设备仿真假定为触摸设备。 这意味着产品依赖于悬停交互的任何功能将不起作用。 
+*  检查是否使用鼠标的依赖项。 默认情况下，设备仿真假定为触摸设备。 这意味着产品依赖于悬停交互的任何功能将不起作用。
 *  通过模拟不同的设备、缩放级别和像素比率执行视觉测试。
 *  测试产品在不可靠连接或用户脱机时的行为方式。  在低速连接上向用户显示最重要的交互也是辅助功能注意事项。
 
@@ -117,24 +118,25 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 ### <a name="wavy-underlines-in-the-dom-tree-indicate-automatically-detected-issues"></a>DOM 树中的波浪下划线指示自动检测到的问题
 
-元素工具中的 DOM **树通过** 添加波浪下划线自动在 HTML 中直接标记问题。  If you `Shift` + `click` any element that has a wavy underline， the **Issues** tool opens.
+"元素"工具中的 DOM **树通过** 添加波浪下划线自动在 HTML 中直接标记问题。  If you `Shift` + `click` any element that has a wavy underline， the **Issues** tool opens.
 
 :::image type="complex" source="../media/a11y-testing-wavy-underlines.msft.png" alt-text="在 DOM 树中以波浪下划线显示的元素有问题。  Shift+单击元素以直接解决问题" lightbox="../media/a11y-testing-wavy-underlines.msft.png":::
     在 DOM 树中以波浪下划线显示的元素有问题。  `Shift`+`click` 直接进入问题的 元素。
 :::image-end:::
 
-问题工具发现的 **这些问题是一** 些可以避免的相对明显的辅助功能问题。  使用 **问题** 工具及其指导性说明修复问题，可引导你实现可访问的产品。
+问题工具发现的 **这些问题是可以避免** 的一些相对明显的辅助功能问题。  使用 **问题** 工具及其指导性说明修复问题，可引导你实现可访问的产品。
 
 
+<!-- ====================================================================== -->
 ## <a name="limits-of-automated-testing"></a>自动测试的限制
 
 问题[工具][DevToolsIssuesTool]、辅助功能[Insights][AccessibilityInsights]和[Lighthouse][Lighthouse]是自动生成网页的辅助功能报告的工具。  从此类工具获取自动报告只是辅助功能测试之旅的开始。
 
 辅助功能与人员交互有关，即在不同的技术环境中使用产品时具有不同的需求的人。  此测试无法完全自动化，但需要用户对产品进行验证。  在最佳方案中，你可以访问具有不同辅助功能需求的测试人员和使用各种环境的测试人员。  但是，通过使用键盘进行导航并检查页面的不同部分，你已可以自己执行很多操作。
 
-在演示页面上，还有一些自动测试无法检测到的其他问题，包括： 
+在演示页面上，还有一些自动测试无法检测到的其他问题，包括：
 
-*  与页面交互后出现的问题。 
+*  与页面交互后出现的问题。
 *  与显示更改相关的问题，例如使窗口变窄。
 
 其中一个问题就是"捐赠"表单。  使用鼠标时，可以单击不同的选项来赚钱。  但是，当您尝试使用键盘访问该资金表单时，不会执行任何操作。 若要解决此问题，您需要使用 **Inspect** 工具。
@@ -144,9 +146,10 @@ When you open the demo page in the browser and open DevTools， notice that some
 :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## <a name="using-the-inspect-tool-to-detect-accessibility-issues"></a>使用检查工具检测辅助功能问题
 
-使用 **"检查** "工具通过将鼠标悬停在网页的某些部分来检测辅助功能问题。  Inspect **** \ (Inspect ![ \) 工具位于 ](../media/inspect-icon.msft.png) DevTools 的左上角。  通过选择"检查工具"按钮 **打开"检查** "工具。
+使用 **"检查** "工具通过将鼠标悬停在网页的某些部分来检测辅助功能问题。  Inspect **** \ (Inspect ![ ](../media/inspect-icon.msft.png) \) 工具位于 DevTools 的左上角。  通过选择"检查工具"按钮 **打开"检查** "工具。
 
 :::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="通过选择&quot;检查工具&quot;按钮打开&quot;检查&quot;工具" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
     通过选择 **"检查** 工具"按钮 **打开"检查** "工具
@@ -172,7 +175,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 * 布局类型;如果元素是使用弹性框或网格定位的，则会看到相应的图标 \ (![网格布局图标](../media/grid-icon.msft.png)\).
 * 元素的名称，如 、 **h1**或**div**。 ****
 * 元素的尺寸（以像素为单位）。
-* 颜色作为颜色样本， (较小的彩色方形) 和格式化值 (如 `#336699`) 。
+* 颜色作为颜色样本， (较小的彩色正方形) 和格式化值 (如 `#336699`) 。
 * 字体信息 (大小和字体系列) 。
 * 边距和填充（以像素为单位）。
 
@@ -212,6 +215,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 <!-- = test-inspect-tool.md#use-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css -->
 
 
+<!-- ====================================================================== -->
 ## <a name="verify-keyboard-support-by-using-the-tab-and-enter-keys"></a>使用 Tab 键和 Enter 键验证键盘支持
 
 并非所有用户都使用指针或触摸设备，并且某些用户可能有低视力。 若要适应这些方案，请确保 IS 与键盘一起工作。
@@ -250,17 +254,18 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 * 使用键盘在页面上四处移动时，边栏导航菜单不会向用户显示 `Tab` 焦点位置。
 * 在使用键盘时，在"捐赠"表单上 **，**50、100、** 和 200** 个按钮和表单提交功能不起作用。
-* 键盘 Tab 键顺序不正确。 键 `Tab` 在边栏导航菜单前**** 浏览页面上的所有"更多"链接。  此顺序没有帮助，因为边栏导航旨在将你导航到该 `Tab` 页面的不同部分。 
+* 键盘 Tab 键顺序不正确。 键 `Tab` 在边栏导航菜单前**** 浏览页面上的所有"更多"链接。  此顺序没有帮助，因为边栏导航旨在将你导航到该 `Tab` 页面的不同部分。
 
 让我们使用 DevTools 分析这些问题。
 
 
+<!-- ====================================================================== -->
 ## <a name="analyze-keyboard-accessibility-issues-using-devtools"></a>使用 DevTools 分析键盘辅助功能问题
 
 
 ### <a name="analyzing-the-lack-of-indication-of-keyboard-focus-in-the-sidebar-menu"></a>分析边栏菜单中缺少键盘焦点的指示
 
-若要了解为什么边栏导航未按预期优化以用于键盘，请首先使用**Inspect**工具突出显示边栏导航菜单中的链接，然后在 DOM 树中向下钻取到 元素。 `a` 
+若要了解为什么边栏导航未按预期优化以用于键盘，请首先使用**Inspect**工具突出显示边栏导航菜单中的链接，然后在 DOM 树中向下钻取到 元素。 `a`
 
 :::image type="complex" source="../media/a11y-testing-menu-link.msft.png" alt-text="检查边栏导航菜单中的链接的源代码和应用样式" lightbox="../media/a11y-testing-menu-link.msft.png":::
     检查边栏导航菜单中的链接的源代码和应用样式
@@ -272,7 +277,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
     应用于链接的样式，如"源"工具中所示
 :::image-end:::
 
-在以上示例中，当您使用鼠标时，页面样式包含菜单项上的状态，但键盘用户的 `hover` `focus` CSS 中没有任何状态。  
+在以上示例中，当您使用鼠标时，页面样式包含菜单项上的状态，但键盘用户的 `hover` `focus` CSS 中没有任何状态。
 
 此外，此示例中的链接使用 `outline: none` 。 此样式用于删除浏览器在具有焦点和使用键盘时自动添加到元素中的轮廓。  若要避免此问题，请勿使用 `outline: none` 。
 
@@ -329,7 +334,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 ### <a name="checking-the-accessibility-tree-for-keyboard-and-screen-reader-support"></a>检查辅助功能树是否支持键盘和屏幕阅读器
 
-使用 **Inspect** 工具单独检查页面上的每个元素非常耗时。  相反，使用 **"辅助功能"** 选项卡导航页面的 **"辅助功能树"。**  辅助功能树指示页面向辅助技术（如屏幕阅读器）提供哪些信息。
+使用 **Inspect** 工具单独检查页面上的每个元素非常耗时。  相反，使用 **辅助功能选项卡** 导航页面的 **辅助功能树**。  辅助功能树指示页面向辅助技术（如屏幕阅读器）提供哪些信息。
 
 :::image type="complex" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="辅助功能树中的&quot;资金&quot;表单按钮" lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
     辅助功能树中的"资金 **"表单按钮**
@@ -342,7 +347,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 ### <a name="analyzing-the-order-of-keyboard-access-to-sections-of-the-page"></a>分析键盘访问页面部分的顺序
 
-另一个问题就是页面上的 Tab 键顺序不明确。  键盘用户只有在按 Tab 键浏览整个页面的所有"更多"链接后 **才能到达边** 栏导航菜单。  本示例中，边栏导航菜单旨在作为该页面不同分区的快捷方式。  此 Tab 键顺序会导致用户体验不佳。 
+另一个问题就是页面上的 Tab 键顺序不明确。  键盘用户只有在按 Tab 键浏览整个页面的所有"更多"链接后 **才能到达边** 栏导航菜单。  本示例中，边栏导航菜单旨在作为该页面不同分区的快捷方式。  此 Tab 键顺序会导致用户体验不佳。
 
 混乱顺序的原因是它 `Tab` 由文档的源顺序确定。  也可通过使用元素上的 属性来修改 Tab 键顺序，该元素使该元素 `tabindex` 退出默认源顺序。
 
@@ -350,7 +355,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 文档的源顺序对于辅助技术非常重要，并且可能不同于元素在呈现页面上的显示顺序。  使用 CSS，您可以直观地对页面元素进行重新排序，但这并不意味着屏幕阅读器等辅助技术将按与 CSS 相同的顺序表示页面元素。
 
-可以使用"辅助功能"选项卡中的"源 **顺序** 查看器"测试 **页面元素** 的顺序。 一直向下滚动，然后选中" **显示源订单"** 复选框。  现在，当您在 **"** 元素"工具中导航 DOM 树（如选择元素）时，数值覆盖将显示在呈现的页面的各个部分，这些部分表示 `header` 源顺序。 
+可以使用"辅助功能"选项卡中的"源 **顺序** 查看器"测试 **页面元素** 的顺序。 一直向下滚动，然后选中" **显示源订单"** 复选框。  现在，当您在 **"** 元素"工具中导航 DOM 树（如选择元素）时，数值覆盖将显示在呈现的页面的各个部分，这些部分表示 `header` 源顺序。
 
 :::image type="complex" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="打开&quot;源订单查看器&quot;将显示源代码中元素在页面上作为数字覆盖的顺序" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
     打开" **源订单** 查看器"将显示源代码中元素在页面上作为数字覆盖的顺序
@@ -359,9 +364,10 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 有关详细演练步骤，请导航到使用源顺序 [查看器测试键盘支持](test-tab-key-source-order-viewer.md)。
 
 
+<!-- ====================================================================== -->
 ## <a name="testing-contrast-of-text-colors-in-various-states"></a>测试不同状态的文本颜色的对比度
 
-检查 **工具** 一次报告一个状态辅助功能问题。  首先，我们将介绍使用 Inspect 工具仅查看页面元素的静态状态的限制。  然后，我们将介绍如何检查页面元素的其他状态，通过在"样式"选项卡上选择" (切换元素状态) **\：hov。** ****
+检查 **工具** 一次报告一个状态辅助功能问题。  首先，我们将介绍使用 Inspect 工具仅查看页面元素的静态状态的限制。  然后，我们将介绍如何通过选择"样式"选项卡上的"切换元素状态" (**\：hov**) 检查页面元素**的其他状态。**
 
 ### <a name="checking-text-color-contrast-in-the-default-state"></a>检查默认状态下的文本颜色对比度
 
@@ -398,7 +404,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
     检查元素工具中具有悬停状态的元素
 :::image-end:::
 
-在" **样式"** 选项卡上，选择 **"\：hov (切换元素状态) ** 按钮。  然后使用 **Force 元素状态** 复选框选择要模拟的状态。
+在" **样式"** 选项卡上，选择 **"\：hov (Toggle 元素状态) ** 按钮。  然后使用 **Force 元素状态** 复选框选择要模拟的状态。
 
 :::image type="complex" source="../media/a11y-testing-state-simulation.msft.png" alt-text="显示所有选项的状态模拟功能" lightbox="../media/a11y-testing-state-simulation.msft.png":::
     显示所有选项的状态模拟功能
@@ -419,6 +425,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 状态模拟也是检查你是否认为不同的用户需求的一个好方法。  对于边栏导航菜单，你可以检测 `:focus` 状态是否具有对比度问题。
 
 
+<!-- ====================================================================== -->
 ## <a name="use-the-rendering-tool-to-test-accessibility-for-visual-impairment"></a>使用呈现工具测试辅助功能视觉障碍
 
 ### <a name="check-contrast-issues-with-dark-theme-and-light-themes"></a>检查深色主题和浅色主题的对比度问题
@@ -452,7 +459,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 不同的接收状态使用红色 (绿色、黄色) 颜色作为区分资金状态的唯一方式。  但是，你无法预期所有用户都体验这些颜色。  如果你使用 DevTools 的视觉缺陷模拟功能，则可以通过模拟不同视觉用户对设计的看法来发现这不够好。 [][DevToolsVisionDeficiencies]
 有关详细演练步骤，请导航到验证页面是否适用于色 [盲用户](test-color-blindness.md)。
 :::image type="complex" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="将页面显示为具有亚特色 (色盲) 会看到页面" lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
-    显示页面，就像有亚特色 (色盲) 会看见它
+    显示页面，就像有亚特色 (色盲) 会看到它
 :::image-end:::
 
 
@@ -467,7 +474,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 :::image-end:::
 
 
-### <a name="verify-that-the-page-is-usable-with-ui-animation-turned-off-reduced-motion"></a>验证页面是否可用，并关闭 UI 动画， (运动) 
+### <a name="verify-that-the-page-is-usable-with-ui-animation-turned-off-reduced-motion"></a>验证页面是否可用，并关闭 UI 动画， (运动效果) 
 
 这些天操作系统提供的另一个设置是关闭动画的方法。  动画可以帮助产品的可用性，但它们也会导致许多问题，包括混淆和混乱。 这就是产品不应向在操作系统中关闭动画的用户显示动画的原因。  通过使用 CSS 媒体查询，您可以检查用户是否希望查看动画，并相应地将其关闭。  而且，与深色和浅色模式很类似，有一种方法可以模拟使用 [DevTools 的减少运动][DevToolsReducedMotion]。
 
@@ -490,6 +497,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 有关详细的演练步骤，请导航到验证页面是否可用，并关闭 [UI 动画](test-reduced-ui-motion.md)。
 
 
+<!-- ====================================================================== -->
 ## <a name="what-to-do-next"></a>下一步该怎么办？
 
 我们介绍了许多可用于确保捕获产品中的辅助功能问题的工具。  这些工具的范围从自动检查和手动详细检查到不同状态和环境的模拟。  这些工具汇总在 [DevTools 中的辅助功能测试功能中](reference.md)。  自动化工具无法找到产品的所有问题，因为许多辅助功能障碍仅在交互式使用期间出现。
@@ -501,7 +509,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 * 使用语音识别进行测试。
 * 在高对比度模式下进行测试。
 
-了解改进 Web 产品的方法的另一个方法为使用[webhint 扩展Visual Studio Code。][WebhintForCode]  此扩展标记源代码中易检测到的辅助功能问题，并提供了如何修复这些问题的见解。
+若要了解改进 Web 产品的方法，另一个方法为将[webhint][WebhintForCode]扩展用于Visual Studio Code。  此扩展标记源代码中易检测到的辅助功能问题，并提供了如何修复这些问题的见解。
 
 :::image type="complex" source="../media/a11y-testing-webhint-in-vs-code.msft.png" alt-text="Webhint in Visual Studio Code， showing an accessibility issue by underlining the HTML element and showing an explanation of the problem" lightbox="../media/a11y-testing-webhint-in-vs-code.msft.png":::
     Webhint in Visual Studio Code， showing an accessibility issue by underlining the HTML element and showing an explanation of the problem
@@ -510,24 +518,26 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 We're constantly working on new accessibility features for DevTools.  如果缺少任何内容，请给我们发送消息，并告诉我们我们可以做什么。
 
 
+<!-- ====================================================================== -->
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
 
+<!-- ====================================================================== -->
 <!-- links -->
 [DevToolsMediaQueries]: ../device-mode/index.md#show-media-queries "显示媒体查询 - 在 DevTools Microsoft Edge中模拟移动设备|Microsoft Docs"
 [DevToolsDeviceModeIndex]: ../device-mode/index.md "在 Microsoft Edge 开发人员工具中模拟移动设备 | Microsoft Docs"
-[DevtoolsAccessibilityReference]: reference.md "DevTools | 中的辅助功能测试功能Microsoft Docs"
+[DevtoolsAccessibilityReference]: reference.md "DevTools |Microsoft Docs"
 [DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "模拟呈现的页面布局中的深色或浅色|Microsoft Docs"
 [DevToolsIssuesTool]: ../issues/index.md "使用问题工具查找并修复问题 | Microsoft Docs"
 [DevToolsReducedMotion]: ./reduced-motion-simulation.md "减少运动模拟|Microsoft Docs"
 [DevToolsVisionDeficiencies]: ./emulate-vision-deficiencies.md "模拟视觉缺陷|Microsoft Docs"
 <!-- links into test-issues-tool.md -->
 [DevToolsAccessibilityTestIssuesToolViewAccSection]: test-issues-tool.md#view-the-accessibility-section-of-the-issues-tool "查看&quot;问题&quot;工具的&quot;辅助功能&quot;部分 - 自动测试网页的辅助功能|Microsoft Docs"
-[DevtoolsAccessibilityTestIssuesToolCheckFieldsLabels]: test-issues-tool.md#verify-that-input-fields-have-labels "验证输入字段是否包含标签 - 自动测试网页的辅助功能|Microsoft Docs" 
-[DevtoolsAccessibilityTestIssuesToolCheckAltText]: test-issues-tool.md#verify-that-images-have-alt-text "验证图像是否具有替换文字 - 自动测试网页的辅助功能|Microsoft Docs "
-[DevtoolsAccessibilityTestIssuesToolCheckContrast]: test-issues-tool.md#verify-that-text-colors-have-enough-contrast "验证文本颜色是否具有足够的对比度 - 自动测试网页的辅助功能|Microsoft Docs"
+[DevtoolsAccessibilityTestIssuesToolCheckFieldsLabels]: test-issues-tool.md#verify-that-input-fields-have-labels "验证输入字段是否包含标签 - 自动测试网页的辅助功能|Microsoft Docs"
+[DevtoolsAccessibilityTestIssuesToolCheckAltText]: test-issues-tool.md#verify-that-images-have-alt-text "验证图像是否包含替换文字 - 自动测试网页的辅助功能|Microsoft Docs "
+[DevtoolsAccessibilityTestIssuesToolCheckContrast]: test-issues-tool.md#verify-that-text-colors-have-enough-contrast "验证文本颜色是否具有足够的对比度 - 自动测试网页的辅助功能问题|Microsoft Docs"
 <!-- links into test-inspect-tool.md -->
 [DevtoolsAccessibilityTestInspectToolColorHighlighting]: test-inspect-tool.md#identify-nested-regions-using-color-highlighting "使用颜色突出显示标识嵌套区域 - 使用&quot;检查&quot;工具通过将鼠标悬停在网页上方来检测|Microsoft Docs"
 [DevtoolsAccessibilityTestInspectToolIndivElems]: test-inspect-tool.md#check-individual-elements-for-text-contrast-screen-reader-text-and-keyboard-support "检查各个元素的文本对比度、屏幕阅读器文本和键盘支持 - 使用&quot;检查&quot;工具，通过将鼠标悬停在网页页面上方来检测|Microsoft Docs"
@@ -536,7 +546,7 @@ We're constantly working on new accessibility features for DevTools.  如果缺�
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "辅助功能测试演示网页|GitHub"
 [W3CContrastRatio]: https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio "对比率|W3C"
 [WCAG]: https://www.w3.org/TR/WCAG21/ "Web 内容辅助功能指南|W3C"
-[AccessibilityInsightsAssessment]: https://accessibilityinsights.io/docs/en/web/getstarted/assessment/ "Web 应用程序辅助功能Insights中的评估|辅助功能Insights"
+[AccessibilityInsightsAssessment]: https://accessibilityinsights.io/docs/en/web/getstarted/assessment/ "Web 应用程序辅助功能Insights中的|辅助功能Insights"
 [AccessibilityInsights]: https://accessibilityinsights.io "辅助功能Insights"
 [Lighthouse]: https://developers.google.com/web/tools/lighthouse/ "浅|Google"
 [WebhintForCode]:https://aka.ms/webhint4code "webhint |Visual StudioMarketplace"

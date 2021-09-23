@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Microsoft Edge 文档
-summary: 浏览Microsoft Edge文档。  了解如何通过浏览Microsoft Edge、管理员和用户的文档、教程和示例来使用 Web 应用程序。
+summary: 浏览Microsoft Edge文档。  通过浏览Microsoft Edge、管理员和用户的文档、教程和示例，了解如何使用 Web 应用程序。
 brand: m365
 metadata:
   title: Microsoft Edge 文档
@@ -175,7 +175,7 @@ conceptualContent:
               text: WPF 中的 WebView2 入门
             - url: /microsoft-edge/webview2/gettingstarted/winforms
               itemType: get-started
-              text: 在表单应用中开始使用 WebView2 Windows WebView2
+              text: Windows Forms 应用中的 WebView2 入门
             - url: /microsoft-edge/webview2/webview2-api-reference
               itemType: reference
               text: Microsoft EdgeWebView2 API 参考
