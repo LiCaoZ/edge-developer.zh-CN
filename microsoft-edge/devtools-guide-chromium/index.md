@@ -9,11 +9,11 @@ ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: ca1ba6c5b31fa526ebf977bec6d1de266c0e4dd3
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12034203"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12035892"
 ---
 # <a name="microsoft-edge-developer-tools-overview"></a>Microsoft Edge开发人员工具概述
 
@@ -154,7 +154,7 @@ DevTools 中的主工具栏包含以下部分：
        本文在仿真移动电话中的 DevTools 显示的屏幕截图
     :::image-end:::
 
-*   主工具栏包含用于各种方案的工具的选项卡。  您可以自定义每个工具，并且工具的内容可能会基于上下文更改。  若要在隐藏的选项卡上显示工具，请选择"更多选项卡 () **** `>>` 按钮。   To add a tool to the main toolbar or to the drawer's toolbar， select the **More tools** (`+`) button.  下面介绍了每个工具。
+*   主工具栏包含用于各种方案的工具的选项卡。  您可以自定义每个工具，并且工具的内容可能会基于上下文更改。  若要在隐藏的选项卡上显示工具，请选择"更多选项卡****" () `>>` 按钮。   To add a tool to the main toolbar or to the drawer's toolbar， select the **More tools** (`+`) button.  下面介绍了每个工具。
 
 *   "工具"选项卡组旁边是可选错误和问题快捷方式。  在当前网页上出现 JavaScript 错误或问题时，会显示快捷方式。  " **打开控制台以查看 # 错误， # 警告** (**JavaScript** 错误) "按钮显示一个红色圆圈，后跟 `X` JavaScript 错误数。  若要打开 [控制台并了解][DevtoolsGuideConsoleIndex] 错误，请选择 **"JavaScript 错误"** 按钮。  "**查看 # 问题** (问题) 按钮是**** 一个蓝色消息图标，后跟问题数。  若要打开" [问题"][DevtoolsGuideIssuesIndex] 工具，请选择" **问题"** 按钮。
 
@@ -181,7 +181,7 @@ DevTools 提供了许多要用于 Web 产品的特性和功能。  可以通过�
 DevTools 中命令菜单的屏幕截图
 :::image-end:::
 
-命令菜单允许你键入命令以在 DevTools 中显示、隐藏或运行功能。  打开命令菜单后，输入单词**changes**，然后选择"**箱： 显示更改"。**  The **Changes** tool opens, which is useful when you edit CSS.  在这种情况下，命令菜单提供了一个快速替代方法，选择"更多**工具**" (...) 然后选择"更改"，或在"源"**** 工具中编辑文件，然后右键单击并选择"本地修改 `.js` **"。** ****
+命令菜单允许你键入命令以在 DevTools 中显示、隐藏或运行功能。  打开命令菜单后，输入单词**changes**，然后选择"**箱： 显示更改"。**  The **Changes** tool opens, which is useful when you edit CSS.  在这种情况下，命令菜单提供了一个快速备选方法，选择"更多工具" (...) 然后选择"更改"，或在"源****"工具中编辑文件，然后右键单击并选择"本地修改**** `.js` **"。** ****
 
 键入 后，命令菜单将显示选项 `changes` ：
 
@@ -217,7 +217,7 @@ DevTools 中命令菜单的屏幕截图
 *   定义 **设备** 模拟和测试模式下要包括的设备。  有关详细信息，请导航到 [在Microsoft Edge DevTools中模拟移动设备][DevtoolsGuideDeviceModeIndex]。
 *   选择网络 **限制** 配置文件。
 *   定义模拟 **位置**。
-*   自定义键盘 **快捷方式**。  例如，若要在 DevTools 中使用相同的快捷方式（如 Visual Studio Code 中一样，**** 请选择"从预设  >  **Visual Studio Code"。**
+*   自定义键盘 **快捷方式**。  例如，若要在 DevTools 中使用相同的快捷方式（如 Visual Studio Code 中一样，**** 请选择"匹配预设  >  **Visual Studio Code"。**
 
     :::image type="complex" source="./media/devtools-intro-match-keys.msft.png" alt-text="所有键盘快捷方式和菜单的屏幕截图，这些快捷方式与代码中的快捷方式Visual Studio匹配" lightbox="./media/devtools-intro-match-keys.msft.png":::
        所有键盘快捷方式和菜单的屏幕截图，这些快捷方式与代码中的快捷方式Visual Studio匹配
@@ -227,7 +227,7 @@ DevTools 中命令菜单的屏幕截图
 <!-- ====================================================================== -->
 ## <a name="trying-experimental-features"></a>尝试实验性功能
 
-DevTools 团队在 DevTools _中提供_ 新功能作为实验。  你可以打开或关闭每个实验。  To see the full list of [Experimental features][DevtoolsGuideExperimentalFeaturesIndex]， in DevTools， select**设置** (the gear icon) ， and then select **Experimental**.
+DevTools 团队在 DevTools _中提供_ 新功能作为实验。  你可以打开或关闭每个实验。  To see the full list of [Experimental features][DevtoolsGuideExperimentalFeaturesIndex]， in DevTools， select**设置 (** the gear icon) ， and then select **Experimental**.
 
 
 <!-- ====================================================================== -->
@@ -235,13 +235,13 @@ DevTools 团队在 DevTools _中提供_ 新功能作为实验。  你可以打�
 
 [!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]
 
-若要预览[DevTools][DevtoolsGuideWhatsNew202102Devtools]中提供的最新功能，请[下载Microsoft Edge Canary，][MicrosoftedgeinsiderDownload]它夜间生成。
+若要预览[DevTools][DevtoolsGuideWhatsNew202102Devtools]中提供的最新功能，请下载[Microsoft Edge Canary，][MicrosoftedgeinsiderDownload]它夜间生成。
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*   [适用于初学者的 DevTools：入门 HTML 和 DOM 进行开发][DevtoolsGuideBeginnersHtml]
+*   [适用于初学者的 DevTools：入门 HTML 和 DOM][DevtoolsGuideBeginnersHtml]
 *   [Microsoft Edge (Chromium) DevTools 协议][DevtoolsProtocolIndex]
 
 

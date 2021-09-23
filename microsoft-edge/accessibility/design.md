@@ -9,11 +9,11 @@ ms.prod: microsoft-edge
 ms.assetid: 8468f8e1-9f4a-426c-a969-76eab9419137
 keywords: 辅助功能， 开发人员辅助功能， 可访问的网站， 边缘， Web 开发， ARIA， 开发人员， UIA， UI 自动化
 ms.openlocfilehash: 70c050d8439d1793eb53bd67610641d7ba1618dd
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12034168"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12035185"
 ---
 # <a name="designing-accessible-websites"></a>设计可访问的网站
 
@@ -25,7 +25,7 @@ ms.locfileid: "12034168"
     *   使用箭头键在列表、网格、树状视图等容器元素间导航。
     *   使用 Enter 或空格键 (\) \或调用 actions\) 激活功能。
     *   使用快捷键高效访问其他应用功能。
-*   辅助视觉体验 - 视觉受损的用户需要足够的文本对比率来表示文本内容，并且需要具有整体高对比度主题的良好视觉体验。  对于色盲用户，需要通过色彩以外的途径传递信息。
+*   辅助视觉体验 - 视觉受损的用户需要文本内容的足够文本对比率，以及整体高对比度主题的良好视觉体验。  对于色盲用户，需要通过色彩以外的途径传递信息。
 
 通过良好的编码实践，可以解决 Web 上的许多常见辅助功能问题。  [WCAG (2.0](https://www.w3.org/TR/WCAG20)) Web 内容辅助功能指南文档提供了可帮助您设计更易于访问的动态 Web 应用程序的技术和最佳实践。  有关详细信息，请导航到"[构建可访问的网站"。](./build/index.md)
 
@@ -45,4 +45,4 @@ W3C 提供的此资源介绍了残障人士（包括与年龄相关的残障人�
 
 #### [<a name="inclusive-design-toolkit"></a>非独占Toolkit](https://www.microsoft.com/design/practice#howwemake-section)
 
-Microsoft 开发了非独占Toolkit设计方案，以展示人类多样性如何创建更好的设计约束，以及如何将看似简单的解决方案连接到更广泛的市场。
+Microsoft 开发了非独占设计Toolkit来展示人类多样性如何创建更好的设计约束，以及如何将看似简单的解决方案连接到更广泛的市场。

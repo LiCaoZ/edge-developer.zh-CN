@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 16ec030ed433fc24d3b2b88bfb423a2479996dfe
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: e119fc88cc6e70ddd5286c3d765e0cf8963ea411
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11975917"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12034947"
 ---
 # <a name="analyze-keyboard-support-on-forms-using-the-devtools"></a>使用 DevTools 分析表单上的键盘支持
 
@@ -25,15 +25,15 @@ ms.locfileid: "11975917"
 <!-- 1. Inspect tool: Accessibility section: keyboard-focusable row -->
 
 1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
-    
-1.  选择**** DevTools 左上角的"检查 \ (检查图标 \) "按钮，以便该按钮突出显示为 (![ ](../media/inspect-icon.msft.png) 蓝色) 。
+
+1.  选择**** DevTools 左上角的"检查 \ (检查图标 \) "按钮，使按钮突出显示为 (![ ](../media/inspect-icon.msft.png) 蓝色) 。
 
 1.  将鼠标悬停在 **50**个 **、100**个和 **200 个"支持** "按钮上。  The Inspect tool appears on the webpage， as an overlay.  " **检查"覆盖** 层的可键盘聚焦行显示，没有一个"支持"金额按钮可通过键盘访问，如带对角线的灰色圆圈所示。  按钮没有名称，并且具有 其角色，因为它们是元素，这意味着辅助技术无法访问 `generic` `div` 按钮。
 
     :::image type="complex" source="../media/a11y-testing-donation-button-info.msft.png" alt-text="检查表单的按钮时，会显示它们无法通过键盘访问" lightbox="../media/a11y-testing-donation-button-info.msft.png":::
         检查表单的按钮时，会显示它们无法通过键盘访问
     :::image-end:::
-    
+
 1.  当 **"检查** "工具处于活动状态时，在网页上选择"其他 **输入"** 文本框，位于 **"** 开发工具"按钮上方。  将 **打开"** 元素"工具，显示网页的 DOM 树。  元素 `<input id="freedonation" class="smallinput">` 已选中。
 
     ```html
@@ -80,24 +80,27 @@ donations.addEventListener('click', e => {
   }
   if (t.classList.contains('submitbutton')) {
     alert('Thanks for your donation!')
-  } 
+  }
 })
 ```
 
-使用事件读取按钮是一个不错的做法，因为事件在鼠标指针和键盘交互上 `click` `click` 触发。  但是，由于元素不可通过键盘访问，并且此"云"按钮作为元素 () 实现，因此除非使用鼠标或事件的另一个源（如某些键盘上提供的特殊按钮），否则 `div` **** `div` 此 `<div class="submitbutton">Donate</div>` JavaScript `click` 功能永远不会运行。
+使用事件读取按钮是一个不错的做法，因为事件在鼠标指针和键盘交互上 `click` `click` 触发。  但是，由于元素不可通过键盘访问，并且此"开发工具"按钮作为元素 () 实现，因此除非使用鼠标或事件的另一个源（例如某些键盘上提供的特殊按钮）否则， `div` **** `div` 此 `<div class="submitbutton">Donate</div>` JavaScript `click` 功能永远不会运行。
 
 这是添加 JavaScript 以创建元素在本机提供的功能的经典 `button` 示例。  通过元素模拟按钮的功能 `div` 最终产生不可访问的体验。
 
 
+<!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
+<!-- ====================================================================== -->
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
 
+<!-- ====================================================================== -->
 <!-- links -->
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "辅助功能测试演示网页|GitHub"

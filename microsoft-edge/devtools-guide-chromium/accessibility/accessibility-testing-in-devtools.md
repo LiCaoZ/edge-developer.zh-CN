@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: 7f23d16987aacbcc66371d03a79c60ad71a3a2a1
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12034217"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12035171"
 ---
 # <a name="overview-of-accessibility-testing-using-devtools"></a>使用 DevTools 的辅助功能测试概述
 
@@ -102,7 +102,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 <!-- by design, this section doesn't have a corresponding how-to article -->
 
-辅助功能的一个重要部分是确保 Web 产品在较窄的视口上良好工作。 许多用户需要缩放页面才能使用它，这意味着没有太多空间。 当空间不足时，多列布局应转换为单列布局，内容按可理解的顺序放置。 这意味着将最重要的内容放置在页面顶部，将其他内容放置在页面的更下一层。
+辅助功能的一个重要部分是确保 Web 产品在较窄的视口上良好工作。 许多用户需要缩放页面才能使用它，这意味着没有太多空间。 当空间不足时，多列布局应转换为单列布局，内容按可理解的顺序放置。 这意味着将最重要的内容放在页面顶部，将其他内容放置在页面的更下一层。
 
 通过缩小浏览器窗口范围，使用箭头键滚动页面，可以看到演示页面的顶部导航栏具有一些辅助功能问题。  顶部导航栏与 **"** 搜索"窗体重叠，如上图所示，需要修复该问题。
 
@@ -113,18 +113,18 @@ When you open the demo page in the browser and open DevTools， notice that some
 *  通过模拟不同的设备、缩放级别和像素比率执行视觉测试。
 *  测试产品在不可靠连接或用户脱机时的行为方式。  在低速连接上向用户显示最重要的交互也是辅助功能注意事项。
 
-若要了解有关设备仿真**工具**的信息，请导航到在[DevTools][DevToolsDeviceModeIndex]中Microsoft Edge移动设备。
+若要了解有关设备仿真**工具**的信息，请导航到在[DevTools Microsoft Edge模拟移动设备][DevToolsDeviceModeIndex]。
 
 
 ### <a name="wavy-underlines-in-the-dom-tree-indicate-automatically-detected-issues"></a>DOM 树中的波浪下划线指示自动检测到的问题
 
-"元素"工具中的 DOM **树通过** 添加波浪下划线自动在 HTML 中直接标记问题。  If you `Shift` + `click` any element that has a wavy underline， the **Issues** tool opens.
+元素工具中的 DOM **树通过** 添加波浪下划线自动在 HTML 中直接标记问题。  If you `Shift` + `click` any element that has a wavy underline， the **Issues** tool opens.
 
 :::image type="complex" source="../media/a11y-testing-wavy-underlines.msft.png" alt-text="在 DOM 树中以波浪下划线显示的元素有问题。  Shift+单击元素以直接解决问题" lightbox="../media/a11y-testing-wavy-underlines.msft.png":::
     在 DOM 树中以波浪下划线显示的元素有问题。  `Shift`+`click` 直接进入问题的 元素。
 :::image-end:::
 
-问题工具发现的 **这些问题是可以避免** 的一些相对明显的辅助功能问题。  使用 **问题** 工具及其指导性说明修复问题，可引导你实现可访问的产品。
+问题工具发现的 **这些问题是一** 些可以避免的相对明显的辅助功能问题。  使用 **问题** 工具及其指导性说明修复问题，可引导你实现可访问的产品。
 
 
 <!-- ====================================================================== -->
@@ -149,7 +149,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 <!-- ====================================================================== -->
 ## <a name="using-the-inspect-tool-to-detect-accessibility-issues"></a>使用检查工具检测辅助功能问题
 
-使用 **"检查** "工具通过将鼠标悬停在网页的某些部分来检测辅助功能问题。  Inspect **** \ (Inspect ![ ](../media/inspect-icon.msft.png) \) 工具位于 DevTools 的左上角。  通过选择"检查工具"按钮 **打开"检查** "工具。
+使用 **"检查** "工具通过将鼠标悬停在网页的某些部分来检测辅助功能问题。  Inspect **** \ (![ Inspect ](../media/inspect-icon.msft.png) \) 工具位于 DevTools 的左上角。  通过选择"检查工具"按钮 **打开"检查** "工具。
 
 :::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="通过选择&quot;检查工具&quot;按钮打开&quot;检查&quot;工具" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
     通过选择 **"检查** 工具"按钮 **打开"检查** "工具

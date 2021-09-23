@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， 开发工具， 自定义， 快捷方式， 键盘， visual studio 代码
 ms.openlocfilehash: b0fc419d68bbb8919e298d5ac28dac7a649a2692
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12033826"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12035360"
 ---
 # <a name="customize-keyboard-shortcuts-in-devtools"></a>在 DevTools 中自定义键盘快捷方式
 
@@ -34,7 +34,7 @@ ms.locfileid: "12033826"
        将 DevTools 中的键盘快捷方式与Visual Studio Code
     :::image-end:::
 
-例如，若要暂停或继续运行脚本Visual Studio Code，请选择 `F5` 。  但是，使用 **DevTools (Default) ** 预设，若要暂停或继续运行脚本，请选择 `F8` 。  当你将预设更改为**Visual Studio Code**时，你现在还可以在 DevTools 中选择，就像在 `F5` Visual Studio Code。
+例如，若要暂停或继续运行脚本Visual Studio Code，请选择 `F5` 。  但是，使用 **DevTools (Default) ** 预设，若要暂停或继续运行脚本，请选择 `F8` 。  当你将预设更改为**Visual Studio Code**时，你现在还可以在 DevTools 中选择，就像在 Visual Studio Code `F5` 中一样。
 
 ### <a name="see-also"></a>另请参阅
 

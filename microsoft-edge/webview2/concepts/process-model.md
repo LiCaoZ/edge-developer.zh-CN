@@ -9,11 +9,11 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
 ms.openlocfilehash: e2e7086fe7f0b313f35cc7dd06561e7b25e4f745
-ms.sourcegitcommit: d2098f7f400614e2ba8eee8317abaa2e043c0594
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12033192"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12035810"
 ---
 # <a name="the-webview2-process-model"></a>WebView2 进程模型
 
@@ -48,7 +48,7 @@ _WebView2 进程组_是 WebView2 运行时进程的集合。  WebView2 进程组
 
 WebView2 运行时进程集合中所有进程都绑定到浏览器进程，浏览器进程又与 UDF (单个用户数据文件夹) 。  如果应用程序使用多个用户数据文件夹，将针对每个用户数据文件夹创建一个 WebView2 运行时进程集合。
 
-用户数据文件夹可以由多个应用程序共享，但请务必考虑对性能和管理的影响，如管理用户 [数据文件夹中所述][WebView2ManageUDF]。
+用户数据文件夹可以由多个应用程序共享，但请务必考虑对性能和管理的影响，如管理用户数据 [文件夹中所述][WebView2ManageUDF]。
 
 :::image type="complex" source="../media/process-model-2.png" alt-text="过程 2" lightbox="../media/process-model-2.png":::
    过程 2

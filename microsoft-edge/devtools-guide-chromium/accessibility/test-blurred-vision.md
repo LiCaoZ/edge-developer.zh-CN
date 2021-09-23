@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 2fc1a1cf7746591573fce07946c7fb11abf42705
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: d60d12bf4a04ecb1ff76ae6e3c6c2e52f3e5be51
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11975907"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12034919"
 ---
 # <a name="verify-that-the-page-is-usable-with-blurred-vision"></a>验证页面是否可借助模糊视图
 
@@ -24,7 +24,7 @@ ms.locfileid: "11975907"
 
 1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  选择 **Esc** 打开 DevTools 底部的"箱"。  Select the **+** icon at the top of the Drawer to display the list of tools， and then select **Rendering**.  
+1.  选择 **Esc** 打开 DevTools 底部的"箱"。  Select the **+** icon at the top of the Drawer to display the list of tools， and then select **Rendering**.
 
 1.  在"**模拟视觉缺陷**"下拉列表中，选择"**模糊的视觉"。**
 
@@ -33,7 +33,7 @@ ms.locfileid: "11975907"
     :::image-end:::
 
     请注意，CSS 属性使上方菜单上的菜单项文本难以 `text-shadow` 阅读。 例如，查看 **"主页"、"****采用动物**"和其他菜单项。
-    
+
 1.  在 **呈现工具** 的" **模拟视觉缺陷"** 中，选择"无 **模拟** "以删除模糊的视觉模拟。
 
 
@@ -43,9 +43,9 @@ ms.locfileid: "11975907"
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
 
 <!-- links -->

@@ -7,19 +7,19 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: c95116d38e5b0bda88af43ef8bfde4204b8cb372
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: 7f63db341110169b4b4d9a145dde0e2a1842e67c
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11976543"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12034870"
 ---
 # <a name="use-the-inspect-tool-to-detect-accessibility-issues-by-hovering-over-the-webpage"></a>使用"检查"工具将鼠标悬停在网页上以检测辅助功能问题
 
 当您 **将** 鼠标悬停在呈现的网页上时，Inspect 工具将显示有关各个元素的信息，包括辅助功能信息。
 相比之下，" **问题"** 工具会自动报告整个网页的问题。
 
-检查 **工具** 按钮 \ (Inspect \) 位于 ![ ](../media/inspect-icon.msft.png) DevTools 的左上角。  选择" **检查工具"** 按钮时，该按钮将变为蓝色，指示 **"检查** "工具处于活动状态。
+检查 **工具** 按钮 \ (Inspect ![ \) 位于 ](../media/inspect-icon.msft.png) DevTools 的左上角。  选择" **检查工具"** 按钮时，该按钮将变为蓝色，指示 **"检查** "工具处于活动状态。
 
 当 **Inspect 工具** 处于活动状态时，将鼠标悬停在呈现网页上的任何元素上将显示 **Inspect** 覆盖。 此覆盖层显示有关该元素的常规信息和辅助功能信息。  "**检查"覆盖****层的**"辅助功能"部分显示有关文本颜色对比度、屏幕阅读器文本和键盘支持的信息。
 
@@ -65,7 +65,7 @@ ms.locfileid: "11976543"
 
 "检查"覆盖**的顶部**（位于"辅助功能"部分上方****）列出了元素的以下详细信息。
 
-*   布局类型。 如果元素是使用弹性框或网格定位的，则图标 \ (![网格布局图标](../media/grid-icon.msft.png)\) 显示。
+*   布局类型。 如果元素是使用弹性框或网格放置的，则图标 \ (![网格布局图标](../media/grid-icon.msft.png)\) 显示。
 *   元素的名称，如 、 `h1` `h2` 或 `div` 。
 *   元素的尺寸（以像素为单位）。
 *   作为颜色样本的颜色颜色 (或较小的、彩色的) 和字符串形式 (如 `#336699`) 。
@@ -73,7 +73,7 @@ ms.locfileid: "11976543"
 *   边距和填充（以像素为单位）。
 
 
-## <a name="identify-nested-regions-using-color-highlighting"></a>使用颜色突出显示标识嵌套区域 
+## <a name="identify-nested-regions-using-color-highlighting"></a>使用颜色突出显示标识嵌套区域
 
 <!-- general info about the Inspect tool, not particularly focused on accessibility -->
 
@@ -110,7 +110,7 @@ ms.locfileid: "11976543"
     有关所选元素的详细信息将显示在 **"** 元素"工具中
 :::image-end:::
 
-在呈现的页面中选择元素后，可以使用"辅助功能"选项卡 ("样式"选项卡) 查看"辅助功能**** 树"并使用"源顺序查看器 **"。** **** ****
+在呈现的页面中选择元素后，可以使用"样式"选项卡**** (附近的"辅助功能"选项卡) 查看****"辅助功能树"并使用"源顺序查看器******"。**
 
 
 ## <a name="see-also"></a>另请参阅
@@ -120,9 +120,9 @@ ms.locfileid: "11976543"
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
 
 <!-- links -->

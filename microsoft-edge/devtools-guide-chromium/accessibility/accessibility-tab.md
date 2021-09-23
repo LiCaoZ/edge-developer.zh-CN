@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: 0fbcd8581f9977b5ef54e0381306f51df3de4010
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12034196"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12035101"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques
@@ -46,7 +46,7 @@ ms.locfileid: "12034196"
 <!-- ====================================================================== -->
 ## <a name="view-the-position-of-an-element-in-the-accessibility-tree"></a>查看元素在辅助功能树中的位置
 
-[辅助功能树][MDNAccessibilityTree]是 DOM 树的子集。  辅助功能树仅包含 DOM 树中的元素，这些元素对于通过屏幕阅读器等辅助技术显示页面内容非常有用。
+[辅助功能树][MDNAccessibilityTree]是 DOM 树的子集。  辅助功能树仅包含 DOM 树中的元素，这些元素与通过屏幕阅读器等辅助技术显示页面内容相关且有用。
 
 从"辅助功能"选项卡检查元素在辅助功能 **树中** 的位置。
 

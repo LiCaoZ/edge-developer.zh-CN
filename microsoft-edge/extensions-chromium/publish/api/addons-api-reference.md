@@ -7,12 +7,12 @@ ms.date: 08/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， 加载项 api， 发布 api
-ms.openlocfilehash: beaeabf21b4502edd029a17c6ae8e550544e0aa6
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: e1e44dbf3ede38dd72b4650c624777e46a595df7
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11976516"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12035619"
 ---
 # <a name="microsoft-edge-add-ons-api-reference-under-development"></a>Microsoft Edge正在开发 (加载项 API) 
 
@@ -21,13 +21,13 @@ ms.locfileid: "11976516"
 
 这是加载项 API 的 REST Microsoft Edge引用。  此 API 可自动发布已提交到加载项网站的加载项Microsoft Edge更新。
 
-有关概述，请导航到["Microsoft Edge加载项 API"。][UsingAddonsAPI]
+有关概述，请导航到["使用Microsoft Edge加载项 API"。][UsingAddonsAPI]
 
 
 <!-- ====================================================================== -->
 ## <a name="get-the-list-of-products"></a>获取产品列表
 
-获取属于该帐户的所有产品的列表。  
+获取属于该帐户的所有产品的列表。
 
 ### <a name="request"></a>请求
 
@@ -350,7 +350,7 @@ ms.locfileid: "11976516"
 
 | 消息 | 描述 | 示例方案 |
 |---|---|---|
-| 400 错误的请求 | 服务器无法理解该请求。 | 正文中没有 (zip) 包。  或者 `Content-Type` ，标头缺失或其值不正确。 |
+| 400 错误的请求 | 服务器无法理解该请求。 | 正文中不存在 (zip) 包。  或者 `Content-Type` ，标头缺失或其值不正确。 |
 | 401 未经授权 | 请求页面需要授权。 | 身份验证令牌缺失、过期或无效。 |
 | 404 未找到 | 服务器找不到请求的页面。 | 指定 `productID` `operationID` 或无效，或不属于正在提出请求的开发人员。 |
 | 408 请求超时 | 请求所等待的时间比服务器准备等待的时间长。 | 上传程序包时存在超时。 |

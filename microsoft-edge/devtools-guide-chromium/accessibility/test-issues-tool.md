@@ -7,26 +7,26 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: a70336b26184b81bb9f3db34d81e50a0c77fb6de
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: e2bbd4235415d9f4ef503c5b869b836dc608b9ca
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11975922"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12034863"
 ---
 # <a name="automatically-test-a-webpage-for-accessibility-issues"></a>自动测试网页中的辅助功能问题
 
-问题**工具****包括辅助功能部分**，可自动报告图像上缺少可选文本、表单字段上缺少标签以及文本颜色对比度不足等问题。  问题**工具**位于 DevTools 底部的"箱"内。 ****  本文使用辅助功能测试演示网页逐步介绍了如何使用问题工具的**辅助功能****部分。**
+" **问题** "工具包括一 **个** "辅助功能"部分，可自动报告图像上缺少可选文本、表单字段上缺少标签以及文本颜色对比度不足等问题。  问题**工具**位于 DevTools 底部的"箱"内。 ****  本文使用辅助功能测试演示网页逐步介绍了如何使用问题工具的**辅助功能****部分。**
 
-有几种打开问题 **工具的方法，** 例如：
-*  选择**** DevTools (右上角的"问题") "问题" ![ ](../media/issues-counter-icon.msft.png) 计数器 \) 。
+有几种打开问题 **工具的方法** ，例如：
+*  选择 DevTools ** (** 右上角的"问题") "问题" ![ 计数器 ](../media/issues-counter-icon.msft.png) \) 。
 *  在" **元素** "工具的 DOM 树中 **，Shift+单击** 元素上的波浪下划线。
 *  在"**命令菜单"** 中，键入 `issues` ，然后选择"**显示问题"。**
 
 
 ## <a name="view-the-accessibility-section-of-the-issues-tool"></a>查看问题工具的辅助功能部分
 
-1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。  在右上角，将显示 **问题计数器** \ (![ 问题计数器 ](../media/issues-counter-icon.msft.png) \) 。  问题 **计数器** 是语音气泡图标以及自动检测到的问题数。
+1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。  在右上角，将显示 **问题计数器** \ (![ Issues 计数器 ](../media/issues-counter-icon.msft.png) \) 。  问题 **计数器** 是语音气泡图标以及自动检测到的问题数。
 
     :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="DevTools 中的&quot;问题&quot;计数器，指示当前文档中的问题数" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
         DevTools 中的"问题"计数器，指示当前文档中的问题数****
@@ -34,7 +34,7 @@ ms.locfileid: "11975922"
 
 1.  刷新页面，因为根据网络请求报告某些问题。  请注意问题计数器中 **更新的计数**。
 
-1.  选择" **问题"计数器**。  问题**工具**将在 DevTools 底部的"箱"中打开。 ****
+1.  选择" **问题"计数器**。  "**问题**"工具将在 DevTools 底部的"箱"中打开。 ****
 
     :::image type="complex" source="../media/a11y-testing-accessibility-issues.msft.png" alt-text="问题工具中显示的辅助功能警告" lightbox="../media/a11y-testing-accessibility-issues.msft.png":::
         问题工具中显示的辅助功能警告
@@ -49,7 +49,7 @@ ms.locfileid: "11975922"
 
 1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  在右上角，选择问题 **计数器** \ (![ 问题计数器 ](../media/issues-counter-icon.msft.png) \) 。  问题**工具**将在 DevTools 底部的"箱"中打开。 ****
+1.  在右上角，选择问题 **计数器** \ (![ 问题计数器 ](../media/issues-counter-icon.msft.png) \) 。  "**问题**"工具将在 DevTools 底部的"箱"中打开。 ****
 
 1.  在" **问题"** 选项卡上，展开 **"辅助功能"** 部分。
 
@@ -85,7 +85,7 @@ ms.locfileid: "11975922"
 
 ## <a name="verify-that-images-have-alt-text"></a>验证图像是否包含替换文字
 
-基本辅助功能测试要求确保为图像 (_可选_ 文字) 可选文字。
+基本辅助功能测试需要确保为图像 (_可选_ 文字) 可选文字。
 
 若要自动检查是否为图像提供了替换文字，请使用 **问题工具，** 该工具具有 **辅助功能** 部分。  问题**工具**位于 DevTools**** 底部的"箱"中。
 
@@ -124,7 +124,7 @@ ms.locfileid: "11975922"
     :::image-end:::
 
 
-### <a name="wavy-underlines-in-the-dom-tree-indicate-automatically-detected-issues"></a>DOM 树中的波浪下划线指示自动检测到的问题 
+### <a name="wavy-underlines-in-the-dom-tree-indicate-automatically-detected-issues"></a>DOM 树中的波浪下划线指示自动检测到的问题
 
 元素工具中的 DOM **树直接** 在 HTML 中用波浪下划线标记问题。  这些问题由问题**工具报告。**  当 **Shift+单击** 带波浪下划线的任何元素时，将显示 **"问题"** 工具。
 
@@ -141,9 +141,9 @@ ms.locfileid: "11975922"
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
 
 <!-- links -->

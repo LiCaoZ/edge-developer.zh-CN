@@ -9,16 +9,16 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: 辅助功能， 开发人员辅助功能， 可访问的网站， 边缘， Web 开发， ARIA， 开发人员， UIA， UI 自动化
 ms.custom: seodec18
-ms.openlocfilehash: 1937806035d8904986b88d06be1940f669e1780a
-ms.sourcegitcommit: d2098f7f400614e2ba8eee8317abaa2e043c0594
+ms.openlocfilehash: a11e8a0b2cad9dbbd5333c9bccfb70c7e1a3f241
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12033121"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12035199"
 ---
 # <a name="aria-and-ui-automation-in-microsoft-edge"></a>ARIA 和 UI 自动化Microsoft Edge
 
-W3C 将可访问的富 Internet 应用程序 (ARIA) ARIA 定义为使动态 Web 内容和自定义 UI 可供访问的语法。  Microsoft Edge识别 ARIA 角色、状态和属性信息，并公开给辅助技术，辅助技术又可以使用[Microsoft UI 自动化 API](https://blogs.msdn.microsoft.com/winuiautomation/)检索信息。 
+W3C 将可访问的富 Internet 应用程序 (ARIA) ARIA 定义为使动态 Web 内容和自定义 UI 可访问的语法。  Microsoft Edge识别 ARIA 角色、状态和属性信息，并公开它到辅助技术，辅助技术又可以使用[Microsoft UI 自动化 API](https://blogs.msdn.microsoft.com/winuiautomation/)检索信息。
 
 访问[HTML5Accessibility，](https://html5accessibility.com)了解哪些新 HTML5 功能可供 Microsoft Edge。
 
@@ -30,11 +30,11 @@ W3C 将可访问的富 Internet 应用程序 (ARIA) ARIA 定义为使动态 Web 
 
 2. 核心 [辅助功能 API 映射](https://w3.org/TR/core-aam-1.1/) 规范定义了生成辅助功能树以及将 ARIA 元素和属性映射到 UI 自动化对象的一般原则。
    * [工作草稿](https://w3.org/TR/core-aam-1.1/) - 规范的稳定版本。
-   * [编辑器的草稿](https://w3c.github.io/core-aam/) - 正在进行中。  请注意，尽管此规范具有最新的更改，但这些更改可能尚未Microsoft Edge可用。  
+   * [编辑器的草稿](https://w3c.github.io/core-aam/) - 正在进行中。  请注意，尽管此规范具有最新的更改，但这些更改可能尚未Microsoft Edge可用。
 
 3. [辅助名称和](https://w3.org/TR/accname-aam-1.1/)说明：计算和 API 映射规范定义如何计算可访问对象的名称和说明（给定可用于辅助元素的 HTML 和 ARIA 元素和属性值）。
    * [工作草稿](https://w3.org/TR/accname-aam-1.1/) - 规范的稳定版本。
-   * [编辑器的草稿](https://w3c.github.io/accname/) - 正在进行中。  请注意，尽管此规范具有最新的更改，但这些更改可能尚未Microsoft Edge可用。   
+   * [编辑器的草稿](https://w3c.github.io/accname/) - 正在进行中。  请注意，尽管此规范具有最新的更改，但这些更改可能尚未Microsoft Edge可用。
 
 
 <!-- ====================================================================== -->

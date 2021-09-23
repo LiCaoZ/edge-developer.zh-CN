@@ -7,18 +7,18 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 7e90221b581280a6eb63cee4d073622a80871903
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: 186fb623f69fa1e67395dfdee203aeefd65c396e
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11976410"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12034779"
 ---
 # <a name="test-keyboard-support-using-the-source-order-viewer"></a>使用源订单查看器测试键盘支持
 
-文档的源顺序对于辅助技术非常重要，并且可能不同于元素在呈现页面上的显示顺序。  使用 CSS，您可以直观地对页面元素进行重新排序，但这并不意味着屏幕阅读器等辅助技术将按相同的顺序表示页面元素。  
+文档的源顺序对于辅助技术非常重要，并且可能不同于元素在呈现页面上的显示顺序。  使用 CSS，您可以直观地对页面元素进行重新排序，但这并不意味着屏幕阅读器等辅助技术将按相同的顺序表示页面元素。
 
-为了确保文档具有逻辑顺序，可以使用源顺序查看器用指定文档源代码**** 中顺序的数字标记不同的页面元素。  源**顺序查看器**位于"样式"**** 选项卡 ("**按钮附近的**"辅助功能") 。
+为了确保文档具有逻辑顺序，可以使用源顺序查看器用指定文档源代码**** 中顺序的数字标记不同的页面元素。  源**顺序查看器**位于"样式"**** 选项卡 (的"辅助功能"选项卡) 。 ****
 
 
 ## <a name="analyzing-the-order-of-keyboard-access-through-sections-of-the-page"></a>通过页面的各个部分分析键盘访问的顺序
@@ -35,16 +35,16 @@ ms.locfileid: "11976410"
 
 导致键顺序混乱的原因是，使用键盘时遇到的顺序由文档的 `Tab` 源顺序决定。  使用键盘遇到的顺序可以使用元素上的 属性进行修改，这将 `tabindex` 使该元素从源顺序中退出。
 
-在文档的源代码中，边栏导航菜单显示在网页的主要内容之后。  CSS 用于将边栏导航菜单定位到网页大部分主要内容的上方。 
+在文档的源代码中，边栏导航菜单显示在网页的主要内容之后。  CSS 用于将边栏导航菜单定位到网页大部分主要内容的上方。
 
 可以使用"辅助功能"选项卡中的"源 **顺序** 查看器"测试 **页面元素** 的顺序。 源 **订单查看器是** 一项实验性功能。 有关详细信息，请导航到"[源订单查看器"。](../experimental-features/index.md#source-order-viewer)
 
 
 若要打开源订单查看器，请执行以下命令：
 
-1.  在 DevTools 的右上角，选择"设置**\ (** 设置 ![ ](../media/settings-button-icon.msft.png) \) 按钮。  
+1.  在 DevTools 的右上角，选择"设置**\ (** 设置 ![ ](../media/settings-button-icon.msft.png) \) 按钮。
 
-1.  在 **"设置"** 下，选择"**实验"。**  
+1.  在**** 设置，**选择实验。**
 
 1.  选中" **源订单查看器"** 复选框。
 
@@ -60,12 +60,12 @@ ms.locfileid: "11976410"
 
 1.  在" **源订单查看器** "部分，选中" **显示源订单"** 复选框。  在呈现的网页中，将显示数字，指示由源文件中的代码行顺序 `Tab` 控制的顺序。
 
-1.  在"元素"工具的 DOM **树中，** 选择主要布局元素，如 `header` 元素。  数字覆盖现在显示在呈现的页面的各个部分，指示不同元素的源顺序。 
+1.  在"元素"工具的 DOM **树中，** 选择主要布局元素，如 `header` 元素。  数字覆盖现在显示在呈现的页面的各个部分，指示不同元素的源顺序。
 
     :::image type="complex" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="激活源订单查看器将源中的元素顺序显示为页面上的覆盖层" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
         激活**源订单查看器** 将源中的元素顺序显示为页面上的覆盖层
     :::image-end:::
-    
+
 1.  滚动页面以查看所有数字覆盖，包括页面页脚部分。
 
 
@@ -74,9 +74,9 @@ ms.locfileid: "11976410"
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
 
 <!-- links -->

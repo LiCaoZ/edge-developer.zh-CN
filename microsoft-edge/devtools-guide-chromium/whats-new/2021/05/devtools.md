@@ -7,12 +7,12 @@ ms.date: 06/02/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 09e1438ae7fd6547a7dd14757f54f370c9008773
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: 294b72f2d19295d8c6cb266e7eda156071b55ea5
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11976584"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12036456"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-92"></a>DevTools 中的新增功能 (Microsoft Edge 92)
 
@@ -197,7 +197,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 :::image-end:::
 
 若要了解如何运行单个 REPL 脚本或多行 REPL 脚本，请导航到[控制台作为 JavaScript 环境](../../../console/console-javascript.md)。
-    
+
 要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1076427][CR1076427]。
 
 

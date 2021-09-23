@@ -10,11 +10,11 @@ keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
 no-loc:
 - Enable new font editor tool within the Styles pane
 ms.openlocfilehash: 12b83a4c6c2e909d82f56b051c8d0cba236a3f6f
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12034210"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12036438"
 ---
 # <a name="edit-css-font-styles-and-settings-in-the-styles-pane"></a>在“样式”窗格中编辑 CSS 字体样式和设置
 

@@ -1,5 +1,5 @@
 ---
-description: 渐进式 Web 应用和 PBA (新功能) 。
+description: 渐进式 Web 应用和 PBA (的) 。
 title: 渐进式 Web 应用程序中的新增功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 08/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， pwas， pwa， 渐进式 Web 应用
-ms.openlocfilehash: 9643c8846ccea373c3051b137cc4299ba617dad7
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: 57b392f5d57342b7f3be7b2ae4b8344147639ff0
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11976504"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12035725"
 ---
 # <a name="whats-new-in-progressive-web-apps"></a>渐进式 Web 应用程序中的新增功能
 
@@ -21,27 +21,27 @@ ms.locfileid: "11976504"
 
 ## <a name="whats-new-in-microsoft-edge-93"></a>Microsoft Edge 93 中的新增功能
 
-Microsoft Edge版本 93 在 2021 年 8 月 3 Microsoft Edge Beta 渠道。 本文从开发人员和使用者的角度 (对渐进 Web 应用) PA 进行了更新。
+Microsoft Edge 93 版本在 2021 年 8 月 3 Microsoft Edge Beta 渠道。 本文从开发人员和使用者的角度 (对渐进 Web 应用) PA 进行了更新。
 
-## <a name="window-controls-overlay-origin-trials"></a>窗口控件覆盖原点试用
+## <a name="window-controls-overlay-origin-trials"></a>窗口控件覆盖原点试用版
 
-若要对当前在独立显示模式下显示的标题栏区域进行更多控制，可能需要试验窗口控件覆盖。 窗口控件覆盖 (WCO) 是一组协同工作的功能，它们仅提供应用窗口所需的基本控件。 此布局为 Web 内容层释放了更多空间。 WCO 可用于安装的桌面 PBA。 
+若要对当前在独立显示模式下显示的标题栏区域进行更多控制，可能需要试验窗口控件覆盖。 窗口控件覆盖 (WCO) 是一组协同工作的功能，它们仅提供应用窗口所需的基本控件。 此布局为 Web 内容层释放了更多空间。 WCO 可用于安装的桌面 PBA。
 
 了解有关在渐进 Web 应用和 PBA (实验功能中试验窗口[控件覆盖) 。 ][ExpWCO]
 
-在我们的源试用版开发人员控制台 中注册窗口控件覆盖 [试用版的来源][WCOOT]。
+在我们的源试用版开发人员控制台 中注册窗口控件覆盖试用版 [的来源][WCOOT]。
 
 ## <a name="url-handlers-origin-trial"></a>URL 处理程序源试用版
 
-开发人员现在可以在源试用版中使用实验功能 Web App URL 处理程序。 此功能允许注册已安装的应用PWA从引用其作用域的其他应用打开链接。
+开发人员现在可以在源试用版中使用实验性功能 Web App URL 处理程序。 此功能允许注册已安装的应用PWA从引用其作用域的其他应用打开链接。
 
-若要详细了解如何试验 URL 处理程序，请通过渐进式 Web 应用和 PBA (实验[) 。 ][ExpURLHandler]
+若要详细了解如何试验 URL 处理程序，请通过渐进式 Web 应用和[PWA (实验) 。 ][ExpURLHandler]
 
 在我们的源试用版开发人员控制台 中注册你的域 [以试用][URLHandlerOT]URL。
 
 ## <a name="support-for-the-share-api-on-macos"></a>对 macOS 上的共享 API 的支持
 
-我们已实现对 `navigator.share` 适用于 macOS 的 API 的支持。 未来几周内，此功能Microsoft Edge macOS 上的稳定浏览器。 
+我们已实现对 `navigator.share` 适用于 macOS 的 API 的支持。 未来几周内，此功能Microsoft Edge macOS 上的稳定浏览器。
 
 详细了解[navigator.share () API。][mdnShareAPI]
 
@@ -50,11 +50,11 @@ Microsoft Edge版本 93 在 2021 年 8 月 3 Microsoft Edge Beta 渠道。 本�
 
 Microsoft Edge版本 92 在 2021 年 7 Microsoft Edge成为稳定渠道。 本文从开发人员和使用者的角度 (对渐进 Web 应用) PA 进行了更新。
 
-## <a name="protocol-handlers-origin-trial"></a>协议处理程序来源试用版 
+## <a name="protocol-handlers-origin-trial"></a>协议处理程序来源试用版
 
 现在，你可以注册PWA主机操作系统处理特定协议。 现在Windows协议处理程序的试用版。 你可以从源试用注册页面 注册你的源 [作为][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]试用版。
 
-若要详细了解如何对项目使用协议处理程序PWA，请通过渐进[式 Web 应用和 PWA (实验) 。 ][ExpProtocolHandlers]
+若要详细了解如何对项目使用协议处理程序PWA，请通过[渐进式 Web 应用和 PWA ][ExpProtocolHandlers] (实验) 。
 
 ## <a name="streamlined-app-info-menu"></a>简化的应用信息菜单
 
@@ -80,8 +80,8 @@ Microsoft Edge版本 92 在 2021 年 7 Microsoft Edge成为稳定渠道。 本�
 
 ## <a name="post-install-flyout-dialog-box"></a>安装后弹出对话框
 
-在 PWA 上的 Microsoft Edge 浏览器安装Windows，用户现在可以从四个选项中进行选择，以轻松启动其应用： 
-*  **固定到任务栏** 
+在 PWA 上的 Microsoft Edge 浏览器安装Windows，用户现在可以从四个选项中进行选择以轻松启动其应用：
+*  **固定到任务栏**
 *  **固定到“开始”**
 *  **创建桌面快捷方式**
 *  **设备登录时自动启动**
@@ -96,13 +96,13 @@ Microsoft Edge版本 92 在 2021 年 7 Microsoft Edge成为稳定渠道。 本�
 
 ## <a name="restore-web-apps"></a>还原 Web 应用
 
-在意外关闭之前运行的已安装网站和 PWA 现在 (，即当系统恢复) 将重新启动它们。
+在意外关闭之前运行的已安装的站点和 PWA 现在 (，即当系统恢复) 将重新启动它们。
 
-由于进程故障、系统重新启动或断电，可能会发生意外关闭。 在此更改之前，已安装的网站和 PWA 在系统还原时具有不确定的行为。  
+由于进程故障、系统重新启动或断电，可能会发生意外关闭。 在此更改之前，已安装的网站和 PWA 在系统还原时具有不确定的行为。
 
-<!-- links -->  
+<!-- links -->
 
-<!--[ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]: /archive/microsoft-edge/legacy/developer/progressive-web-apps/index#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
+<!--[ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]: /archive/microsoft-edge/legacy/developer/progressive-web-apps/index#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->
 
 [ExpWCO]: ../experimental-features/index.md#window-controls-overlay-for-installed-desktop-web-apps "已安装桌面 Web 应用的窗口控件覆盖 - 实验功能"
 
@@ -112,9 +112,9 @@ Microsoft Edge版本 92 在 2021 年 7 Microsoft Edge成为稳定渠道。 本�
 
 [MicrosoftDeveloperMicrosoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "源试用版|Microsoft Edge开发人员"
 
-[MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration "注册 Web 应用协议处理程序|Microsoft 开发人员"  
+[MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration "注册 Web 应用协议处理程序|Microsoft 开发人员"
 
-[URLHandlerOT]: https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/web-app-url-handlers/registration/ "注册 Web 应用 URL 处理程序|Microsoft 开发人员" 
+[URLHandlerOT]: https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/web-app-url-handlers/registration/ "注册 Web 应用 URL 处理程序|Microsoft 开发人员"
 
 [WCOOT]: https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/web-app-window-controls-overlay/registration/ "注册 Web 应用窗口控件覆盖"
 

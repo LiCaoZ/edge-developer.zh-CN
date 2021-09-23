@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 54cd7230f0402bfeb4b5ee28d2bcd0947794676f
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: b3ea23442b5c3046c08f767734b58a8966708ba4
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11976291"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12034926"
 ---
 # <a name="verify-that-the-page-is-usable-by-people-with-color-blindness"></a>验证页面是否由色盲用户可用
 
@@ -32,14 +32,14 @@ ms.locfileid: "11976291"
 
 1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  选择 **Esc** 打开 DevTools 底部的"箱"。  Select the **+** icon at the top of the Drawer to see the list of tools， and then select **Rendering**.  
+1.  选择 **Esc** 打开 DevTools 底部的"箱"。  Select the **+** icon at the top of the Drawer to see the list of tools， and then select **Rendering**.
 
 1.  在"**模拟视力**障碍"下拉列表中，选择 **"Protanopia"。**  _Protanopia_ 对红色光的敏感度降低，使得难以区分绿色、红色和黄色。
 
     :::image type="complex" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="将文档作为具有 protanopia 的人显示将会看到它" lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
         将文档作为具有 protanopia 的人显示将会看到它
     :::image-end:::
-    
+
 1.  在 **呈现工具的** " **模拟视觉缺陷"下**，选择"无 **模拟** "以删除模拟。
 
 
@@ -49,9 +49,9 @@ ms.locfileid: "11976291"
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
 
 <!-- links -->

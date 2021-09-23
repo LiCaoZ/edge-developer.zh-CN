@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、edge、最佳做法
-ms.openlocfilehash: 65e6801f645fd673b308a28a5229cb0a037b7b01
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: 08269f23d109d4f84238625c32a6949e47a347ec
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11976497"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12036137"
 ---
 # <a name="webview2-development-best-practices"></a>WebView2 开发的最佳做法
 
@@ -77,6 +77,15 @@ WebView2 应用应侦听和处理事件，以便该应用可以从支持 WebView
 
 <!-- is the Ref link enough, or link to a long section in regular docs? -->
 
+## <a name="event-handlers-on-the-environment-object"></a>环境对象上的事件处理程序
+
+如果环境对象上的应用的任何事件处理程序包含对环境对象的[][CreateCoreWebView2Environment]引用，并且应用只是释放对环境和事件处理程序的引用而不删除事件处理程序，则环境对象和处理程序对象之间可能会存在循环引用，这将泄漏内存。
+
+为了防止此类内存泄露：
+*  对于任何添加的事件处理程序，在释放环境对象之前删除事件处理程序。
+*  避免在事件处理程序中持有对环境对象的引用。  相反，事件处理程序可以从"已完成事件"回调的参数访问 `sender` 环境对象。
+*  如果希望应用保留对 WebView2 对象的引用，请尽可能使用弱引用。
+
 
 ## <a name="follow-recommended-webview2-security-best-practices"></a>遵循建议的 WebView2 安全性最佳做法
 
@@ -87,11 +96,11 @@ WebView2 应用应侦听和处理事件，以便该应用可以从支持 WebView
 [Webview2ConceptsDistributionDeployingEvergreenWebview2Runtime]: ../concepts/distribution.md#deploying-the-evergreen-webview2-runtime "部署 Evergreen WebView2 运行时 - 分发 WebView2 应用和 WebView2 运行时|Microsoft Docs"
 [Webview2ConceptsDistributionFixedVersionDistributionMode]: ../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode "有关固定版本运行时分发模式的详细信息 - 分发 WebView2 应用和 WebView2 运行时|Microsoft Docs"
 [Webview2ConceptsDistributionStayCompatibleEvergreenMode]: ../concepts/distribution.md#test-your-app-for-forward-compatibility "测试应用是否向前兼容 - 分发 WebView2 应用和 WebView2 运行时|Microsoft Docs"
-[Webview2ConceptsSecurity]: ../concepts/security.md "开发安全 WebView2 应用程序应用程序的最佳实践|Microsoft Docs"
+[Webview2ConceptsSecurity]: ../concepts/security.md "开发安全的 WebView2 应用程序应用程序|Microsoft Docs"
 [Webview2ConceptsUserDataFolder]: ../concepts/user-data-folder.md "管理用户数据文件夹 | Microsoft Docs"
 [Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]: ../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis "用于测试已安装的运行时是否支持最近添加的 API 的功能检测 - 了解 WebView2 SDK |Microsoft Docs"
 [Webview2GetStartedWin32]: ../get-started/win32.md "WebView2 入门 | Microsoft Docs"
-[Webview2GetStartedWinforms]: ../get-started/winforms.md "在 Forms Windows 中开始使用 WebView2 |Microsoft Docs"
+[Webview2GetStartedWinforms]: ../get-started/winforms.md "Windows Forms | 中的 WebView2 入门Microsoft Docs"
 [Webview2GetStartedWinui]: ../get-started/winui.md "WinUI 3 预览版中的 WebView2 (入门) |Microsoft Docs"
 [Webview2GetStartedWpf]: ../get-started/wpf.md "WPF | 中的 WebView2 入门Microsoft Docs"
 <!-- external links -->
@@ -101,3 +110,5 @@ WebView2 应用应侦听和处理事件，以便该应用可以从支持 WebView
 [WebView2ProcessFailedEvent]: /microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs "ICoreWebView2ProcessFailedEventArgs |Microsoft Docs"
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "下载 Microsoft Edge 预览体验成员频道"
+
+[CreateCoreWebView2Environment]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environment "CreateCoreWebView2Environment |Microsoft Docs"

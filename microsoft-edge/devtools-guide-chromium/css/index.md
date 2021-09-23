@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.openlocfilehash: 1bb67e1ae9f2697cb0e4f999c7bf077daa22f769
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12033840"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12035451"
 ---
 <!-- Copyright Kayce Basques
 
@@ -38,7 +38,7 @@ ms.locfileid: "12033840"
     [CSS 示例][GlitchDevToolsCssExamples]
 
     > [!NOTE]
-    > 如果要将[DevTools][DevToolsCustomizePlacement]窗口停靠在下图\ (中显示的视口 \) 右侧，请选择"自定义和控制**DevTools"。** `...`  在"**自定义和控制 DevTools"** 下拉菜单上的"扩展坞**侧**"部分中，选择"扩展**坞"以向右。**
+    > 如果你想要将[DevTools][DevToolsCustomizePlacement]窗口停靠在下图\ (视图 \) 右侧，请选择"自定义和控制**DevTools"。** `...`  在"**自定义和控制 DevTools"** 下拉菜单上的"扩展坞**侧**"部分中，选择"扩展**坞"以向右。**
 
 ## <a name="view-the-css-for-an-element"></a>查看元素的 CSS
 
@@ -53,7 +53,7 @@ ms.locfileid: "12033840"
     1.  在 `Inspect Me!` 元素中，找到 属性的值 `data-message` 并复制它。
 1.  在页面上的" **值"文本框 `data-message` ** 中，输入值。
 1.  将鼠标悬停在 `Inspect Me!` 文本上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**
-    1.  在 DevTools 中的" **元素** "工具上，选择 **"样式"** 面板。
+    1.  在 DevTools 中的" **元素"** 工具上，选择 **"样式"** 面板。
     1.  在 **"样式"** 面板中， `Inspect Me!` 元素突出显示。
     1.  在 `Inspect Me!` 元素中，查找 `aloha` 类规则。
 
@@ -112,7 +112,7 @@ ms.locfileid: "12033840"
 1.  将鼠标悬停在 `Hover Over Me!` 文本上。  背景色更改。
 1.  将鼠标悬停在 `Hover Over Me!` 文本上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**
 1.  在"**样式"** 面板中，选择 **"：hov"。**
-1.  选中 **"：hover"** 复选框。  背景颜色会像以前一样更改，即使你实际上并未将鼠标悬停在元素上。
+1.  选中 **"：hover"** 复选框。  背景颜色会像以前一样更改，即使你实际上没有将鼠标悬停在元素上。
 
     :::image type="complex" source="../media/css-elements-hover-over-me-styles-hov-hover.msft.png" alt-text="切换元素上的悬停伪状态" lightbox="../media/css-elements-hover-over-me-styles-hov-hover.msft.png":::
        切换 `:hover` 元素上的伪状态
@@ -132,7 +132,7 @@ ms.locfileid: "12033840"
     > [!NOTE]
     > 根据 DevTools 窗口的大小，可能需要滚动到"样式"面板的底部以显示 **"方框模型"。** ****
 
-1.  双击"方框模型"中的左边距****，当前具有表示元素 `-` 没有左边距的值。
+1.  双击"方框模型"中的左边距****，当前具有表示元素没有 `-` 左边距的值。
 1.  键入 `100px` 并选择 `Enter`。  方框 **模型** 默认为像素，但它也接受其他值，如 `25%` 或 `10vw` 。
 
     :::row:::
@@ -148,7 +148,7 @@ ms.locfileid: "12033840"
 
 ## <a name="debugging-media-queries"></a>调试媒体查询
 
-[媒体查询][MDNUsingMediaGueries] 是一种使 Web 产品对每个用户的配置设置更改做出反应的方法。  最重要的用例是，根据视口尺寸为产品提供不同的 CSS 布局。  当有更多的屏幕空间可用时，使用单独的布局允许移动设备使用单列布局和多列布局。
+[媒体查询][MDNUsingMediaGueries] 是一种使 Web 产品对每个用户的配置设置更改做出反应的方法。  最重要的用例是，根据视口尺寸为产品提供不同的 CSS 布局。  当有更多的屏幕空间可用时，使用单独的布局允许移动设备和多列布局使用单列布局。
 
 如果要调试或测试在 CSS 中定义的媒体查询，请使用以下步骤。
 

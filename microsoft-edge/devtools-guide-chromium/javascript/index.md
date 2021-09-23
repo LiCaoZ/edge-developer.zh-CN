@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
 ms.openlocfilehash: dde3a70b6518f7012554ba93ad2613551fc602b1
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12033854"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12035787"
 ---
 <!-- Copyright Kayce Basques
 

@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: e3dc93cd378d932b78c5fcfb82cfcb66d53910bf
-ms.sourcegitcommit: d2098f7f400614e2ba8eee8317abaa2e043c0594
+ms.openlocfilehash: e3c2bda82f70eab1314bda5f94e3a3ff702150c9
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12033135"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12034954"
 ---
 # <a name="accessibility-testing-features-in-devtools"></a>DevTools 中的辅助功能测试功能
 
@@ -30,14 +30,14 @@ ms.locfileid: "12033135"
 | 验证文本是否具有足够的对比度 | **元素** 工具> **颜色选取器** > **样式"选项卡** | [使用颜色选取器测试文本颜色对比度](color-picker.md) |
 | 验证文本是否具有足够的对比度 | **检查**覆盖>**对比度行**的"辅助功能">**部分** | [使用"检查"工具将鼠标悬停在网页上以检测辅助功能问题](test-inspect-tool.md) |
 | 验证文本是否具有足够的对比度：处于悬停状态 | **"** 元素 **">"选项卡** > **切换元素状态"** | [验证所有元素状态可访问性](test-inspect-states.md) |
-| 验证文本是否具有足够的对比度：使用深色主题 (深色模式) 浅色主题 | **呈现** 工具>模拟 **CSS 媒体功能首选配色方案** | [检查深色主题和浅主题的对比度问题](test-dark-mode.md) |
+| 验证文本是否具有足够的对比度：使用深色主题 (深色模式) 浅色主题 | **呈现** 工具> **模拟 CSS 媒体功能首选配色方案** | [检查深色主题和浅主题的对比度问题](test-dark-mode.md) |
 | 验证屏幕阅读器支持：验证输入字段是否包含标签 | **报告** > **辅助功能部分** 的问题工具 | [验证输入字段是否包含标签](test-issues-tool.md#verify-that-input-fields-have-labels) |
-| 验证屏幕阅读器支持 | **检查**覆盖 **>名称和角色**的>**辅助功能****"部分** | [使用"检查"工具将鼠标悬停在网页上以检测辅助功能问题](test-inspect-tool.md) |
+| 验证屏幕阅读器支持 | **检查**工具>**名称和**角色的>**辅助功能****部分** | [使用"检查"工具将鼠标悬停在网页上以检测辅助功能问题](test-inspect-tool.md) |
 | 验证屏幕阅读器支持 | **元素**工具>**辅助功能选项卡>****辅助功能树** | [检查辅助功能树，获取键盘和屏幕阅读器支持](test-accessibility-tree.md)，以及使用 [辅助功能选项卡测试辅助功能](accessibility-tab.md) |
 | 验证网页是否对色盲者可用 | **呈现** 工具> **模拟视觉缺陷** 下拉列表 | [验证页面是否由色盲用户可用](test-color-blindness.md) |
 | 验证网页是否具有模糊视觉 | **呈现** 工具> **模拟视觉缺陷** 下拉列表 | [验证页面是否可借助模糊视图](test-blurred-vision.md) |
 | 验证网页是否可用，并关闭 UI 动画， (运动效果)  | **呈现** 工具> **模拟 CSS 媒体功能首选减少运动** | [验证页面是否可用，同时关闭 UI 动画](test-reduced-ui-motion.md) |
-| 验证网页布局在较窄时是否可用 | **设备仿真** 工具 | [验证网页布局在开发人员工具中的窄](accessibility-testing-in-devtools.md#verify-that-the-webpage-layout-is-usable-when-narrow)和模拟移动设备Microsoft Edge[可用](../device-mode/index.md) |
+| 验证网页布局在较窄时是否可用 | **设备仿真** 工具 | [验证网页布局在](accessibility-testing-in-devtools.md#verify-that-the-webpage-layout-is-usable-when-narrow)缩小时是否可用，并模拟[DevTools](../device-mode/index.md)中的Microsoft Edge设备 |
 
 
 <!-- ====================================================================== -->
@@ -57,17 +57,17 @@ ms.locfileid: "12033135"
 
 
 <!-- ====================================================================== -->
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
 
 <!-- ====================================================================== -->
-<!-- links -->  
+<!-- links -->
 [DevtoolsAccessibilityOverview]: ../../accessibility/index.md "辅助功能概述|Microsoft Docs"
 [DevtoolsAccessibilityTest]: ../../accessibility/test.md "辅助功能测试|Microsoft Docs"
 [DevtoolsAccessibilityAccessibilitytestingindevtools]: accessibility-testing-in-devtools.md "使用 DevTools 工具的辅助功能测试|Microsoft Docs"
-[DevtoolsAccessibilityNavigation]: ./navigation.md "使用Microsoft Edge技术工具导航到 DevTools |Microsoft Docs"  
+[DevtoolsAccessibilityNavigation]: ./navigation.md "使用Microsoft Edge技术工具导航到 DevTools |Microsoft Docs"
 <!-- external -->
-[MDNAccessibility]: https://developer.mozilla.org/docs/Web/Accessibility "辅助功能 | MDN"  
-[MDNScreenReader]: https://developer.mozilla.org/docs/Glossary/Screen_reader "屏幕阅读器 | MDN"  
+[MDNAccessibility]: https://developer.mozilla.org/docs/Web/Accessibility "辅助功能 | MDN"
+[MDNScreenReader]: https://developer.mozilla.org/docs/Glossary/Screen_reader "屏幕阅读器 | MDN"

@@ -8,25 +8,25 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， webdriver， selenium， 测试， 工具， 自动化， 测试
-ms.openlocfilehash: cf5889ab3c5f1ca89579a398a232716008144562
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: f72a24d6e197be0fec6f265e1bc5cf91a376b5f4
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11976443"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12036158"
 ---
-# <a name="verify-downloads-of-selenium-tools-for-microsoft-edge"></a>验证 Selenium Tools for Microsoft Edge  
+# <a name="verify-downloads-of-selenium-tools-for-microsoft-edge"></a>验证 Selenium Tools for Microsoft Edge
 
-本文提供在验证[Selenium Tools][GithubMicrosoftEdgeSeleniumToolsReleases]for Microsoft Edge 发行版的签名时使用的公钥。  
+本文提供在验证[Selenium Tools][GithubMicrosoftEdgeSeleniumToolsReleases]for Microsoft Edge 发行版的签名时使用的公钥。
 
-适用于[Java][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava]的[Selenium 工具Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases]使用[GPG 进行签名][Gnupg]。  
+适用于[Java的][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] [Selenium 工具Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases]使用[GPG 进行签名][Gnupg]。
 
-使用以下密钥验证开发人员工具团队提供的Microsoft Edge[签名][TwitterEdgeDevTools]。  
+使用以下密钥验证开发人员工具团队提供的Microsoft Edge[签名][TwitterEdgeDevTools]。
 
-## <a name="public-key-for-verifying-selenium-tools-for-microsoft-edge"></a>用于验证 Selenium Tools for Microsoft Edge  
+## <a name="public-key-for-verifying-selenium-tools-for-microsoft-edge"></a>用于验证 Selenium Tools for Microsoft Edge
 
-*   **公钥 ID：Microsoft Edge**开发人员工具团队[EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)  
-*   **公钥指纹**： `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`  
+*   **公钥 ID：Microsoft Edge**开发人员工具团队[EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)
+*   **公钥指纹**： `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`
 
 ```output
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -48,14 +48,14 @@ ptJfPKT84TtqmRoJApBgxAsnD4t4JiuvnHkYHgzAzwcXFiofj2cCeJZf1tzIk6+Z
 1lg+9MXF2PDDom1+ieCUBXFdRq6fMKldXM0V7yBOUeY=
 =0iMW
 -----END PGP PUBLIC KEY BLOCK-----
-```  
+```
 
-<!-- links -->  
+<!-- links -->
 
-[GithubMicrosoftEdgeSeleniumToolsReleases]: https://github.com/microsoft/edge-selenium-tools/releases "microsoft/edge-selenium-tools |GitHub"  
+[GithubMicrosoftEdgeSeleniumToolsReleases]: https://github.com/microsoft/edge-selenium-tools/releases "microsoft/edge-selenium-tools |GitHub"
 
-[Gnupg]: https://gnupg.org "|系统"  
+[Gnupg]: https://gnupg.org "|系统"
 
-[MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava]:https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java "com.microsoft.edge：msedge-selenium-tools-java |sonatype Maven 中央存储库搜索"  
+[MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava]:https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java "com.microsoft.edge：msedge-selenium-tools-java |sonatype Maven 中央存储库搜索"
 
-[TwitterEdgeDevTools]: https://twitter.com/edgedevtools "Microsoft Edge DevTools | Twitter"  
+[TwitterEdgeDevTools]: https://twitter.com/edgedevtools "Microsoft Edge DevTools | Twitter"

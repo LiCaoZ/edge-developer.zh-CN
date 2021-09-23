@@ -9,11 +9,11 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: 辅助功能， 开发人员辅助功能， 可访问的网站， 边缘， Web 开发， ARIA， 开发人员， UIA， UI 自动化
 ms.openlocfilehash: e3bb5de2b6e66eb6c8ac8a16083f431f84e745bd
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12034189"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12035129"
 ---
 # <a name="accessibility-testing"></a>辅助功能测试
 
@@ -62,4 +62,4 @@ ms.locfileid: "12034189"
 <!-- links: -->
 
 [DevtoolsAccessibilityAccessibilitytestingindevtools]: ../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md "使用 DevTools 工具的辅助功能测试|Microsoft Docs"
-[DevtoolsAccessibilityReference]: ../devtools-guide-chromium/accessibility/reference.md "DevTools |Microsoft Docs"
+[DevtoolsAccessibilityReference]: ../devtools-guide-chromium/accessibility/reference.md "DevTools | 中的辅助功能测试功能Microsoft Docs"
