@@ -1,21 +1,8 @@
 # - name: Microsoft Edge documentation # hub page, uncommenting causes 2 landing nodes with all docs pushed right
-- name: Microsoft Edge开发人员文档
+- name: Microsoft Edge 开发人员文档
   href: developer/index.yml
   items:
-    - name: 辅助功能
-      items:
-        - name: 辅助功能概述
-          href: accessibility/index.md
-        - name: 设计
-          href: accessibility/design.md
-        - name: 内部版本
-          href: accessibility/build/index.md
-          items:
-            - name: ARIA 和 UI 自动化
-              href: accessibility/build/ARIA-and-UI-Automation.md
-        - name: 测试
-          href: accessibility/test.md
-    - name: 开发工具
+    - name: Microsoft Edge 开发工具
       items:
         - name: 开发工具概述
           href: devtools-guide-chromium/index.md
@@ -305,13 +292,13 @@
               href: devtools-guide-chromium/console/api.md
             - name: 控制台实用工具 API 参考
               href: devtools-guide-chromium/console/utilities.md
-            - name: 开发工具协议概述
+            - name: 开发工具协议
               href: devtools-protocol-chromium/index.md
             - name: 键盘快捷方式
               href: devtools-guide-chromium/shortcuts/index.md
-    - name: Extensions
+    - name: Microsoft Edge 扩展
       items:
-        - name: Microsoft Edge扩展概述
+        - name: Microsoft Edge 扩展概述
           href: extensions-chromium/index.md
         - name: 入门
           items:
@@ -379,10 +366,6 @@
               href: extensions-chromium/enterprise/hosting-and-updating.md
             - name: 自动更新
               href: extensions-chromium/enterprise/auto-update.md
-    - name: 起源试验概述
-      href: origin-trials/index.md
-    - name: 隐私白皮书
-      href: privacy-whitepaper/index.md
     - name: 渐进式 Web 应用
       items:
         - name: 渐进式 Web 应用概述
@@ -399,46 +382,8 @@
           href: progressive-web-apps-chromium/webappmanifests.md
         - name: 实验性功能
           href: progressive-web-apps-chromium/experimental-features/index.md
-        - name: 将 PWA 发布到Microsoft Store
+        - name: 将 PWA 发布到 Microsoft Store
           href: progressive-web-apps-chromium/microsoft-store.md
-    - name: Playwright 概述
-      href: playwright/index.md
-    - name: Puppeteer 概述
-      href: puppeteer/index.md
-    - name: Visual Studio概述
-      href: visual-studio/index.md
-    - name: Visual Studio Code
-      items:
-        - name: Visual Studio Code 概述
-          href: visual-studio-code/index.md
-        - name: Microsoft Edge 调试程序
-          href: visual-studio-code/debugger-for-edge.md
-        - name: Microsoft Edge 开发人员工具扩展
-          href: visual-studio-code/microsoft-edge-devtools-extension.md
-        - name: webhint 扩展
-          href: visual-studio-code/webhint.md
-    - name: Web 平台
-      items:
-        - name: Microsoft Edge 中影响网站兼容性的更改
-          href: web-platform/site-impacting-changes.md
-        - name: 将用户从 IE 转到 Microsoft Edge
-          href: web-platform/ie-to-microsoft-edge-redirection.md
-        - name: Microsoft Edge 中的跟踪防护
-          href: web-platform/tracking-prevention.md
-        - name: 正在从网站检测 Microsoft Edge
-          href: web-platform/user-agent-guidance.md
-        - name: 自定义“密码显示”按钮
-          href: web-platform/password-reveal.md
-    - name: “我们想要的网络”概述
-      href: web-we-want/index.md
-    - name: WebDriver
-      items:
-        - name: WebDriver 概述
-          href: webdriver-chromium/index.md
-        - name: 功能和 EdgeOptions
-          href: webdriver-chromium/capabilities-edge-options.md
-        - name: 正在验证 Microsoft Edge 的 Selenium 工具下载
-          href: webdriver-chromium/verify-selenium-tools.md
     - name: WebView2
       items:
         - name: WebView2 概述
@@ -487,7 +432,7 @@
               href: webview2/how-to/static.md
             - name: 调试 WebView2
               href: webview2/how-to/debug.md
-            - name: 使用 Microsoft Edge 驱动程序实现自动化
+            - name: 使用 Edge 驱动程序实现自动化
               href: webview2/how-to/webdriver.md
             - name: 在 WebView2 中使用 Chromium 开发工具协议
               href: webview2/how-to/chromium-devtools-protocol.md
@@ -516,3 +461,65 @@
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                 - name: COM 互操作
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
+    - name: 测试和自动化
+      items:
+        - name: 开发工具协议
+          href: test-and-automation/devtools-protocol-overview-aux-node.md
+        - name: 源试验
+          href: origin-trials/index.md
+        - name: 编剧
+          href: playwright/index.md
+        - name: Puppeteer
+          href: puppeteer/index.md
+        - name: WebDriver
+          items:
+            - name: WebDriver 概述
+              href: webdriver-chromium/index.md
+            - name: 功能和 EdgeOptions
+              href: webdriver-chromium/capabilities-edge-options.md
+            - name: 正在验证 Microsoft Edge 的 Selenium 工具下载
+              href: webdriver-chromium/verify-selenium-tools.md
+        - name: webhint
+          href: test-and-automation/webhint-aux-node.md
+    - name: Web 平台
+      items:
+        - name: Microsoft Edge 中影响网站兼容性的更改
+          href: web-platform/site-impacting-changes.md
+        - name: 将用户从 IE 转到 Microsoft Edge
+          href: web-platform/ie-to-microsoft-edge-redirection.md
+        - name: Microsoft Edge 中的跟踪防护
+          href: web-platform/tracking-prevention.md
+        - name: 正在从网站检测 Microsoft Edge
+          href: web-platform/user-agent-guidance.md
+        - name: 自定义“密码显示”按钮
+          href: web-platform/password-reveal.md
+    - name: Microsoft Edge IDE 集成
+      items:
+        - name: Visual Studio 概述
+          href: visual-studio/index.md
+        - name: Visual Studio Code
+          items:
+            - name: Visual Studio Code 概述
+              href: visual-studio-code/index.md
+            - name: Microsoft Edge 调试程序
+              href: visual-studio-code/debugger-for-edge.md
+            - name: Microsoft Edge 开发人员工具扩展
+              href: visual-studio-code/microsoft-edge-devtools-extension.md
+            - name: webhint 扩展
+              href: visual-studio-code/webhint.md
+    - name: Microsoft Edge 中的辅助功能
+      items:
+        - name: 辅助功能概述
+          href: accessibility/index.md
+        - name: 设计易于访问的网站
+          href: accessibility/design.md
+        - name: 构建易于访问的网站
+          href: accessibility/build/index.md
+        - name: ARIA 和 UI 自动化
+          href: accessibility/build/ARIA-and-UI-Automation.md
+        - name: 辅助功能测试
+          href: accessibility/test.md
+    - name: 隐私白皮书
+      href: privacy-whitepaper/index.md
+    - name: “我们想要的网络”概述
+      href: web-we-want/index.md
