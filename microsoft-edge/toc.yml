@@ -278,6 +278,8 @@
               items:
                 - name: 源工具概述
                   href: devtools-guide-chromium/sources/index.md
+                - name: 在 Visual Studio Code 中的打开源文件
+                  href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
                 - name: 替代
                   href: devtools-guide-chromium/javascript/overrides.md
                 - name: 代码片段
@@ -501,7 +503,9 @@
           items:
             - name: Visual Studio Code 概述
               href: visual-studio-code/index.md
-            - name: Microsoft Edge 调试程序
+            - name: 在 Visual Studio Code 中的打开源文件
+              href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
+            - name: Edge 调试程序
               href: visual-studio-code/debugger-for-edge.md
             - name: Microsoft Edge 开发人员工具扩展
               href: visual-studio-code/microsoft-edge-devtools-extension.md
