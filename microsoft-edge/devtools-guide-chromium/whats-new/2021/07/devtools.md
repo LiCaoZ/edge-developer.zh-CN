@@ -7,14 +7,14 @@ ms.date: 07/30/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 51d8afcf72cce09810968a18d258e5026427fb31
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: efd04ba8e9e92805845b561e4c78ea089ac78cfd
+ms.sourcegitcommit: 24bb983a1ca811ba4ac038dce0c5c7f5d6bbb745
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036421"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "12057892"
 ---
-# <a name="whats-new-in-devtools-microsoft-edge-93"></a>DevTools 93 (Microsoft Edge中的新增) 
+# <a name="whats-new-in-devtools-microsoft-edge-93"></a>DevTools (Microsoft Edge 93 中的新增) 
 
 [!INCLUDE [note about What's New announcements from the Microsoft Edge DevTools team](../../includes/edge-whats-new-note.md)]
 
@@ -24,13 +24,13 @@ ms.locfileid: "12036421"
 <!-- Title: Apply themes from Visual Studio Code to DevTools -->
 <!-- Subtitle: You can now use some of the most popular color themes from Visual Studio Code, such as Monokai and Solarized Dark, in Microsoft Edge DevTools. -->
 
-除了现有浅色和深色主题之外，Microsoft Edge开发人员工具现在还支持来自 Visual Studio Code 的一些最受欢迎的颜色主题。  若要选择颜色主题，请导航**设置，然后**从"主题"下拉列表**中选择**主题。
+除了现有浅色和深色主题之外，Microsoft Edge开发人员工具现在还支持来自 Visual Studio Code 的一些最受欢迎的颜色主题。  若要选择颜色主题，请导航到**设置，然后**从"主题"下拉列表**中选择**主题。
 
 :::image type="complex" source="../../media/2021/07/all-devtools-themes.msft.png" alt-text="DevTools 的颜色主题" lightbox="../../media/2021/07/all-devtools-themes.msft.png":::
    DevTools 的颜色主题
 :::image-end:::
 
-受支持的Visual Studio Code主题包括：
+支持Visual Studio Code主题包括：
 
 浅色主题：
 *  太阳光
@@ -64,7 +64,7 @@ ms.locfileid: "12036421"
    分离 **的元素** 工具
 :::image-end:::
 
-若要打开此实验，请导航到**** 设置  >  **实验**"，然后选中分离**元素旁边的复选框**。
+若要打开此实验，请导航到 **"设置**  >  **实验**"，然后选中"分离**元素"旁边的复选框**。
 
 <!-- For more information, navigate to [Detached elements][ExperimentalFeaturesDetachedElements]. -->
 <!-- todo: link directly to the subheading in the page, when available; test the subheading link -->
@@ -75,7 +75,7 @@ ms.locfileid: "12036421"
 <!-- Title: While debugging, launch the DevTools extension by selecting the Inspect button -->
 <!-- Subtitle: Microsoft Edge DevTools for Visual Studio Code now integrates seamlessly with the JavaScript debugging workflow in the editor. -->
 
-如果你使用 Visual Studio Code 中的 JavaScript 调试，你现在可以通过选择"检查Microsoft Edge启动 Visual Studio Code**开发人员**工具扩展。 ****
+如果在 Visual Studio Code 中使用 JavaScript 调试，则现在可以通过选择"检查Microsoft Edge启动 Visual Studio Code**开发人员**工具扩展。 ****
 
 :::image type="complex" source="../../media/2021/07/inspect-button.msft.png" alt-text="启动 DevTools Visual Studio Code中的&quot;检查&quot;按钮" lightbox="../../media/2021/07/inspect-button.msft.png":::
    启动**** DevTools Visual Studio Code中的"检查"按钮
@@ -88,16 +88,16 @@ ms.locfileid: "12036421"
 *  多个 Bug 修复。
 *  扩展的更详细的文档。
 
-有关改进和修复的更多详细信息，请查看 [存储库中的更改][GithubMicrosoftVscodeEdgeDevtoolsChangelog] `vscode-edge-devtools` 日志文件。
+有关改进和修复的更多详细信息，请查看 [存储库][GithubMicrosoftVscodeEdgeDevtoolsChangelog] 中的 `vscode-edge-devtools` 更改日志文件。
 
-:::image type="complex" source="../../media/2021/07/extension-integrated-debugger.msft.png" alt-text="与调试器工作流Visual Studio Code DevTools 扩展" lightbox="../../media/2021/07/extension-integrated-debugger.msft.png":::
-   与调试器工作流Visual Studio Code DevTools 扩展
+:::image type="complex" source="../../media/2021/07/extension-integrated-debugger.msft.png" alt-text="与调试器工作流集成Visual Studio Code DevTools 扩展" lightbox="../../media/2021/07/extension-integrated-debugger.msft.png":::
+   与调试器工作流集成Visual Studio Code DevTools 扩展
 :::image-end:::
 
-有关详细信息，请从 JS 调试器工作流导航到启动 Edge [DevTools。][GithubVscodeEdgeDevtoolsDebuggerIntegration]  获取[Microsoft Edge 开发人员工具Visual Studio Code扩展][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]。  Microsoft Visual Studio代码将自动更新扩展;若要手动更新此扩展，请导航到"[手动更新扩展"。][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]  你可以在 [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools] 上提交问题并参与扩展的改进。
+有关详细信息，请从 JS 调试器工作流导航到启动 Edge [DevTools。][GithubVscodeEdgeDevtoolsDebuggerIntegration]  获取[Microsoft Edge开发人员工具Visual Studio Code扩展][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]。  Microsoft Visual Studio代码将自动更新扩展;若要改为手动更新此扩展，请导航到["手动更新扩展"。][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]  你可以在 [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools] 上提交问题并参与扩展的改进。
 
 
-## <a name="new-fluent-ui-icons-for-devtools"></a>DevTools Fluent UI 图标
+## <a name="new-fluent-ui-icons-for-devtools"></a>DevTools 的新 Fluent UI 图标
 
 <!-- Title: New look for buttons and menus in Microsoft Edge DevTools -->
 <!-- Subtitle: DevTools has adopted Fluent UI, giving it a more modern look that better aligns with the rest of the Microsoft Edge browser. -->
@@ -109,12 +109,12 @@ Microsoft EdgeDevTools 已Fluent [UI，][FluentUI]为按钮和菜单提供更现
 :::image-end:::
 
 
-## <a name="change-the-devtools-display-language-directly-from-settings"></a>直接从用户更改 DevTools 显示设置
+## <a name="change-the-devtools-display-language-directly-from-settings"></a>直接从开发人员中心更改 DevTools 显示设置
 
 <!-- Title: DevTools Settings now includes display language -->
 <!-- Subtitle: You can now skip the browser settings and change the DevTools display language directly within DevTools Settings. -->
 
-以前，若要在 DevTools 中更改显示语言，必须更改浏览器语言。  现在，你可以轻松地在 DevTools 设置切换**** 显示语言，而无需更改浏览器设置。  为此，**请设置"，** 然后在 **"** 首选项"中，从"语言 **"下拉列表中选择**一种语言。
+以前，若要在 DevTools 中更改显示语言，必须更改浏览器语言。  现在，你可以轻松切换 DevTools 设置中的**** 显示语言，而无需更改浏览器设置。  为此，**请设置"，** 然后在 **"首选项**"中，从"语言 **"下拉列表中选择**一种语言。
 
 :::image type="complex" source="../../media/2021/07/settings-browser-ui-language.msft.png" alt-text="直接从 DevTools **设置** 更改 DevTools 显示语言" lightbox="../../media/2021/07/settings-browser-ui-language.msft.png":::
    直接从 DevTools 项目更改 DevTools 显示**设置**
@@ -128,7 +128,7 @@ Microsoft EdgeDevTools 已Fluent [UI，][FluentUI]为按钮和菜单提供更现
 <!-- Title: Better support for CSS-in-JS libraries -->
 <!-- Subtitle: Copy a single declaration or all declarations for a style rule from the Styles pane, formatted for JavaScript. -->
 
-以前，在使用 CSS-in-JS 库时，无法将 CSS 声明 (为 JavaScript 设置) CSS 属性和值。 您必须编辑复制的 CSS 以匹配 JavaScript 的语法。
+以前，在使用 CSS-in-JS 库时，无法将 CSS 声明 (CSS 属性和值) JavaScript 格式。 您必须编辑复制的 CSS 以匹配 JavaScript 的语法。
 
 现在，Microsoft Edge版本 93 中，您可以复制样式规则中的单个 CSS 声明或所有声明，并将其直接粘贴到 JavaScript 文件中，而无需语法问题。 若要试用此功能，请进行以下设置：
 
@@ -150,18 +150,18 @@ Microsoft EdgeDevTools 已Fluent [UI，][FluentUI]为按钮和菜单提供更现
 
 User-Agent客户端提示比以分号分隔的字符串更易于访问浏览器User-Agent，并改进站点兼容性。  最初，User-Agent客户端提示测试和调试非常耗时。  对客户端提示的控制较少，必须正确填充客户端提示，表单正常运行。
 
-在此版本中，我们重新设计了调试体验，以便你可以轻松User-Agent多个单独字段和控件的 UI 修改客户端提示。  此外，你现在可以同时测试自定义User-Agent提示和User-Agent字符串。  你现在可以在自定义User-Agent或网络条件工具中为**设置定义客户端****提示。**
+在此版本中，我们重新设计了调试体验，以便你可以轻松User-Agent多个单独字段和控件的 UI 修改客户端提示。  此外，你现在可以同时测试自定义User-Agent提示和User-Agent字符串。  你现在可以在自定义User-Agent或网络条件工具中为**设置定义客户端****提示**。
 
 :::image type="complex" source="../../media/2021/07/ua-client-hints-in-settings.msft.png" alt-text="在User-Agent中定义自定义设备的客户端设置" lightbox="../../media/2021/07/ua-client-hints-in-settings.msft.png":::
    为User-Agent中的自定义设备定义客户端**设置**
 :::image-end:::
 
-有关在客户端中定义提示**设置，请导航到**设置[用户代理客户端提示][DeviceModeIndexSetUach]。
+有关在客户端中定义提示**设置，请导航到**"设置[用户代理客户端提示"。][DeviceModeIndexSetUach]
 
-您还可以使用User-Agent条件工具替代当前页面的客户端 **提示** 。
+您还可以使用网络User-Agent覆盖当前页面的客户端 **提示** 。
 
 :::image type="complex" source="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png" alt-text="在User-Agent条件工具中定义自定义设备的客户端提示" lightbox="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png":::
-   在User-Agent条件工具中定义自定义设备的客户端**提示**
+   在User-Agent条件工具中为自定义设备**定义客户端提示**
 :::image-end:::
 
 有关在网络条件工具中定义 **提示的信息，** 请导航到设置 [用户代理客户端提示][NetworkReferenceSetUach]。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1174299][CR1174299]。
@@ -198,7 +198,7 @@ User-Agent客户端提示比以分号分隔的字符串更易于访问浏览器U
    " **复制为 PowerShell"** 命令
 :::image-end:::
 
-有关网络活动日志的信息，请导航到"网络[分析参考"。][NetworkReference]  若要在开放源代码项目中查看Chromium历史记录，请导航到"问题[932971"。][CR932971]
+有关网络活动日志的信息，请导航到"网络[分析参考"。][NetworkReference]  若要在开放源代码项目中查看此功能Chromium历史记录，请导航到"问题[932971"。][CR932971]
 
 
 ## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道
@@ -215,7 +215,7 @@ User-Agent客户端提示比以分号分隔的字符串更易于访问浏览器U
 [CustomizeDarkTheme]: ../../../customize/theme.md "将颜色主题应用到 DevTools |Microsoft Docs"
 <!-- todo: link directly to the subheading in the page, when available; test the subheading link:
 [ExperimentalFeaturesDetachedElements]: ../../../experimental-features/index.md#detached-elements "Detached elements | Microsoft Docs" -->
-[CustomizeLocalization]: ../../../customize/localization.md "更改开发工具语言设置 | Microsoft Docs"
+[CustomizeLocalization]: ../../../customize/localization.md "更改 DevTools 语言设置 | Microsoft Docs"
 [CssReference]: ../../../css/reference.md "CSS 参考|Microsoft Docs"
 [DeviceModeIndexSetUach]: ../../../device-mode/index.md#set-user-agent-client-hints "设置用户代理客户端提示|Microsoft Docs"
 [NetworkReferenceSetUach]: ../../../network/reference.md#set-user-agent-client-hints "设置用户代理客户端提示|Microsoft Docs"
@@ -229,7 +229,7 @@ User-Agent客户端提示比以分号分隔的字符串更易于访问浏览器U
 [CR1174299]: https://bugs.chromium.org/p/chromium/issues/detail?id=1174299 "问题1174299：通过 Chrome DevTools 的网络条件选项卡重写 UA 字符串时 UA 客户端提示丢失 | Chromium bug"
 [CR2882756]: https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756 "问题2882756：\[l10n\] 为用户添加设置以选择 DevTools 区域设置|Chromium Bug"
 [CR1223208]: https://bugs.chromium.org/p/chromium/issues/detail?id=1223208 "屏幕阅读器会针对标题页眉中的错误和警告通知不恰当的|Chromium Bug"
-[CR932971]: https://bugs.chromium.org/p/chromium/issues/detail?id=932971 "932971 - &quot;网络&quot;选项卡上，&quot;复制为 Powershell ==&quot;未正确发送 cookie |Chromium Bug"
+[CR932971]: https://bugs.chromium.org/p/chromium/issues/detail?id=932971 "932971 - &quot;网络&quot;选项卡上，&quot;复制为 Powershell == &quot;不会向用户正确发送|Chromium Bug"
 
 [GithubVscodeEdgeDevtoolsDebuggerIntegration]: https://microsoft.github.io/vscode-edge-devtools/debugger-integration.html "从 JS 调试器工作流启动 Edge DevTools - vscode-edge-devtools |GitHub"
 
@@ -244,7 +244,7 @@ User-Agent客户端提示比以分号分隔的字符串更易于访问浏览器U
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-xx)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。
+> 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-93)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

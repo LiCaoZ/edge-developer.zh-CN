@@ -7,12 +7,12 @@ ms.date: 06/02/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 294b72f2d19295d8c6cb266e7eda156071b55ea5
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: ea447a974add05f3f2c2228d739296bf2a7fa906
+ms.sourcegitcommit: 24bb983a1ca811ba4ac038dce0c5c7f5d6bbb745
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036456"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "12057899"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-92"></a>DevTools 中的新增功能 (Microsoft Edge 92)
 
@@ -316,7 +316,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-xx)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。
+> 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-92)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 
