@@ -1,18 +1,18 @@
 ---
 description: 探索 Microsoft Edge DevTools 中用于查看和更改 CSS 的新工作流。
-title: CSS 参考
+title: CSS 功能参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
-ms.openlocfilehash: 4995783ca75e1f1750a748fc42befdcdeabdf9f4
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 08d8f20277e02f2a2cb28b1b8463d475b9d0870e
+ms.sourcegitcommit: 4695a3bb8ea26f8dd65c5ab8fe383765ae51850c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034737"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "12081148"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +27,7 @@ ms.locfileid: "12034737"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="css-reference"></a>CSS 参考
+# <a name="css-features-reference"></a>CSS 功能参考
 
 在以下与查看和更改 CSS 相关的 Microsoft Edge DevTools 功能综合参考中发现新的工作流。
 
@@ -550,12 +550,12 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 <!-- links -->
 
-[DevToolsCommandMenu]: ../command-menu/index.md "使用开发人员工具Microsoft Edge菜单运行命令|Microsoft Docs"
+[DevToolsCommandMenu]: ../command-menu/index.md "使用&quot;开发工具Microsoft Edge菜单运行命令|Microsoft Docs"
 [DevToolsCSSGetStarted]: ../css/index.md "查看和更改 CSS 入门 | Microsoft 文档"
 [DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class " 向类添加伪状态 - 查看和更改 CSS 入门 | Microsoft Docs"
 [DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "查看元素的 CSS - 查看和更改 CSS 入门 | Microsoft Docs"
 [DevToolsCssPrintPreview]: ../css/print-preview.md "强制 Microsoft Edge DevTools 进入打印预览模式(CSS 打印媒体类型) | Microsoft Docs"
-[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print "重新设置缩小的 JavaScript 文件，并采用非常打印的字体 - 使用调试器|Microsoft Docs"
+[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print "重新设置缩小的 JavaScript 文件，并采用非常打印方式 - 使用调试器|Microsoft Docs"
 
 [MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "颜色系统 - 材料设计"
 [MDNBoxModel]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model "框模型 | MDN"

@@ -7,12 +7,12 @@ ms.date: 08/25/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， css， css-in-js
-ms.openlocfilehash: 728109d09d9401b0ace1a98fd68a6f85bb0903de
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: 58d6c39c543892302ddb6a3ea0be0cf4e1a0f7f6
+ms.sourcegitcommit: 4695a3bb8ea26f8dd65c5ab8fe383765ae51850c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11975981"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "12081162"
 ---
 <!-- Copyright Alex Rudenko
 
@@ -37,11 +37,11 @@ ms.locfileid: "11975981"
 
 从 **"样式** "窗格中，您可以复制样式规则的声明，其格式为 JavaScript 并准备粘贴到 JavaScript 文件中。
 
-使用 CSS-in-JS 库时，您可以将 CSS 声明 (CSS 属性和值) 以便它们会自动格式化为 JavaScript。  不必手动编辑复制的 CSS 以匹配 JavaScript 的语法。  可以在样式规则中复制单个 CSS 声明或所有声明，然后将其直接粘贴到 JavaScript 文件中，而不会遇到语法问题。
+使用 CSS-in-JS 库时，您可以将 CSS 声明 (CSS 属性和值) 以便它们会自动为 JavaScript 设置格式。  不必手动编辑复制的 CSS 以匹配 JavaScript 的语法。  可以在样式规则中复制单个 CSS 声明或所有声明，然后将其直接粘贴到 JavaScript 文件中，而不会遇到语法问题。
 
 将样式规则复制为 JavaScript：
 
-1. 在"**元素**"工具的****"样式"窗格中，打开上下文菜单 \ (右键单击\) 样式规则中的声明上的"\) "。
+1. 在 **"元素**"工具的****"样式"窗格中，打开上下文菜单 \ (右键单击\) 样式规则中的声明。
 
 1. 选择 **"将声明复制为 JS"** 或 **"复制所有声明为 JS"。**
 
@@ -51,7 +51,7 @@ ms.locfileid: "11975981"
    样式规则的上下文菜单，包括 **Copy declaration as JS** 和 Copy all **declarations as JS** commands
 :::image-end:::
 
-此功能从版本 93 Microsoft Edge开始提供。 <!-- delete statement sometime after September 2, 2021 --> 若要详细了解如何查看和更改 CSS，请导航到["CSS 引用"。][CssReference]
+此功能从版本 93 Microsoft Edge开始提供。 <!-- delete statement sometime after September 2, 2021 --> 若要详细了解如何查看和更改 CSS，请导航到 [CSS 功能参考][CssReference]。
 
 
 <!-- ====================================================================== -->
@@ -98,7 +98,7 @@ function addStyle() {
 
 在 DevTools 上下文中 _，CSS-in-JS_ 意味着 CSS 内容通过 CSS 对象模型 API 注入页面。  使用 或 元素注入常规 CSS，并且具有静态源 (如 DOM 节点或 `<style>` `<link>` 网络资源) 。  相比之下，CSS-in-JS 通常没有静态源。  此处的一个特例是，可以使用 CSS 对象模型 API 更新元素的内容，从而导致源与实际的 `<style>` CSS 样式表不同步。
 
-如果你使用任何 CSS-in-JS 库 (如样式组件、因此或 JSS) ，则库可能使用 CSS 对象模型 API 在底层注入样式，具体取决于开发模式和浏览器。
+如果使用任何 CSS-in-JS 库 (如样式组件、百年计划或 JSS) ，该库可能会使用 CSS 对象模型 API 在底层注入样式，具体取决于开发模式和浏览器。
 
 我们来看看如何使用 CSS 对象模型 API 注入样式表的一些示例，类似于某些 CSS-in-JS 库使用的方法。
 
@@ -140,20 +140,20 @@ document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处](https://developer.chrome.com/blog/css-in-js/) ，作者为 [Alex 一][AlexRudenko] (Technical Writer，Chrome DevTools \& Lighthouse\) 。
+> 原始页面位于 [此处](https://developer.chrome.com/blog/css-in-js/) ，由 [Alex 则][AlexRudenko] \ (Technical Writer、Chrome DevTools \& Lighthouse\) 创作。
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[CssReference]: reference.md "CSS 参考|Microsoft Docs"
+[CssReference]: reference.md "CSS 功能参考|Microsoft Docs"
 <!-- external links -->
 [BlogCssInJsInDevTools]: https://developers.google.com/web/updates/2021/02/css-in-js "DevTools | 中的 CSS-in-JS 支持Google 博客 "
 [CsswgDraftsCssom]: https://drafts.csswg.org/cssom "CSS 对象模型 (CSSOM) |W3C CSS 工作组编辑器草稿"
-[WicgConstructStylesheet]: https://wicg.github.io/construct-stylesheets/ "可构造的样式表对象|Web Incubator CG"
+[WicgConstructStylesheet]: https://wicg.github.io/construct-stylesheets/ "可构造的样式表|Web Incubator CG"
 [MdnShadowDom]: https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM "使用卷影 DOM |MDN"
-[CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "CSS-in-JS 框架样式编辑|CodePen"
+[CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "CSS-in-JS 框架样式|CodePen"
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png

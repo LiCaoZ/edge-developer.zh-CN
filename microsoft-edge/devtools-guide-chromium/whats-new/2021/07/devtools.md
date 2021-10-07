@@ -1,30 +1,30 @@
 ---
 description: 从 Visual Studio Code 应用颜色主题，使用新的分离元素工具调试 DOM 节点内存泄漏，Microsoft Edge 开发人员工具 for Visual Studio Code 现在与 Visual Studio Code 调试器工作流集成，等等。
-title: 'DevTools (Microsoft Edge 93 中的新增) '
+title: 'DevTools (Microsoft Edge 93 中的) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/30/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: efd04ba8e9e92805845b561e4c78ea089ac78cfd
-ms.sourcegitcommit: 24bb983a1ca811ba4ac038dce0c5c7f5d6bbb745
+ms.openlocfilehash: c4652d93cc38bb396b1272f6077e00718fcae9e8
+ms.sourcegitcommit: 4695a3bb8ea26f8dd65c5ab8fe383765ae51850c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "12057892"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "12081134"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-93"></a>DevTools (Microsoft Edge 93 中的新增) 
 
 [!INCLUDE [note about What's New announcements from the Microsoft Edge DevTools team](../../includes/edge-whats-new-note.md)]
 
 
-## <a name="apply-themes-from-visual-studio-code-to-devtools"></a>将主题从 Visual Studio Code应用到 DevTools
+## <a name="apply-themes-from-visual-studio-code-to-devtools"></a>将主题从 Visual Studio Code 应用到 DevTools
 
 <!-- Title: Apply themes from Visual Studio Code to DevTools -->
 <!-- Subtitle: You can now use some of the most popular color themes from Visual Studio Code, such as Monokai and Solarized Dark, in Microsoft Edge DevTools. -->
 
-除了现有浅色和深色主题之外，Microsoft Edge开发人员工具现在还支持来自 Visual Studio Code 的一些最受欢迎的颜色主题。  若要选择颜色主题，请导航到**设置，然后**从"主题"下拉列表**中选择**主题。
+除了现有浅色和深色主题之外，Microsoft Edge开发人员工具现在还支持来自 Visual Studio Code 的一些最受欢迎的颜色主题。  若要选择颜色主题，请导航**设置，然后**从"主题"下拉列表**中选择**主题。
 
 :::image type="complex" source="../../media/2021/07/all-devtools-themes.msft.png" alt-text="DevTools 的颜色主题" lightbox="../../media/2021/07/all-devtools-themes.msft.png":::
    DevTools 的颜色主题
@@ -55,7 +55,7 @@ ms.locfileid: "12057892"
 <!-- Title: Introducing the Detached Elements tool -->
 <!-- Subtitle: Use the Detached Elements tool to find and fix DOM node memory leaks. -->
 
-如果 DOM 节点不再附加到 DOM 的任何元素，但仍被其他元素保留在内存中，则认为该节点Microsoft Edge。 浏览器无法对元素进行垃圾回收，因为某些 JavaScript 仍在引用元素，即使它不再位于页面上或 DOM 的一部分。
+如果 DOM 节点不再附加到 DOM 的任何元素，但仍被用户保留到内存中，则认为该节点Microsoft Edge。 浏览器无法对元素进行垃圾回收，因为某些 JavaScript 仍在引用元素，即使它不再位于页面上或 DOM 的一部分。
 
 新的 **分离元素工具** 查找页面上的所有分离元素并显示它们。 可以展开和折叠分离的元素以查看同时保留的父节点和子节点。 通过选择"收集垃圾"并验证当无法对**** 分离的元素进行垃圾回收时是否具有内存泄漏，可以触发浏览器的垃圾回收。 最后，可以通过使用"分析"按钮拍摄堆快照，跳转到引用已分离元素的 JavaScript。 ****
 
@@ -75,7 +75,7 @@ ms.locfileid: "12057892"
 <!-- Title: While debugging, launch the DevTools extension by selecting the Inspect button -->
 <!-- Subtitle: Microsoft Edge DevTools for Visual Studio Code now integrates seamlessly with the JavaScript debugging workflow in the editor. -->
 
-如果在 Visual Studio Code 中使用 JavaScript 调试，则现在可以通过选择"检查Microsoft Edge启动 Visual Studio Code**开发人员**工具扩展。 ****
+如果你使用 Visual Studio Code 中的 JavaScript 调试，你现在可以通过选择"检查Microsoft Edge启动 Visual Studio Code**开发人员**工具扩展。 ****
 
 :::image type="complex" source="../../media/2021/07/inspect-button.msft.png" alt-text="启动 DevTools Visual Studio Code中的&quot;检查&quot;按钮" lightbox="../../media/2021/07/inspect-button.msft.png":::
    启动**** DevTools Visual Studio Code中的"检查"按钮
@@ -90,19 +90,19 @@ ms.locfileid: "12057892"
 
 有关改进和修复的更多详细信息，请查看 [存储库][GithubMicrosoftVscodeEdgeDevtoolsChangelog] 中的 `vscode-edge-devtools` 更改日志文件。
 
-:::image type="complex" source="../../media/2021/07/extension-integrated-debugger.msft.png" alt-text="与调试器工作流集成Visual Studio Code DevTools 扩展" lightbox="../../media/2021/07/extension-integrated-debugger.msft.png":::
-   与调试器工作流集成Visual Studio Code DevTools 扩展
+:::image type="complex" source="../../media/2021/07/extension-integrated-debugger.msft.png" alt-text="与调试器工作流Visual Studio Code DevTools 扩展" lightbox="../../media/2021/07/extension-integrated-debugger.msft.png":::
+   与调试器工作流Visual Studio Code DevTools 扩展
 :::image-end:::
 
-有关详细信息，请从 JS 调试器工作流导航到启动 Edge [DevTools。][GithubVscodeEdgeDevtoolsDebuggerIntegration]  获取[Microsoft Edge开发人员工具Visual Studio Code扩展][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]。  Microsoft Visual Studio代码将自动更新扩展;若要改为手动更新此扩展，请导航到["手动更新扩展"。][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]  你可以在 [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools] 上提交问题并参与扩展的改进。
+有关详细信息，请从 JS 调试器工作流导航到启动 Edge [DevTools。][GithubVscodeEdgeDevtoolsDebuggerIntegration]  获取[Microsoft Edge 开发人员工具Visual Studio Code扩展][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]。  Microsoft Visual Studio代码将自动更新扩展;若要手动更新此扩展，请导航到"[手动更新扩展"。][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]  你可以在 [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools] 上提交问题并参与扩展的改进。
 
 
-## <a name="new-fluent-ui-icons-for-devtools"></a>DevTools 的新 Fluent UI 图标
+## <a name="new-fluent-ui-icons-for-devtools"></a>DevTools 的Fluent UI 图标
 
 <!-- Title: New look for buttons and menus in Microsoft Edge DevTools -->
 <!-- Subtitle: DevTools has adopted Fluent UI, giving it a more modern look that better aligns with the rest of the Microsoft Edge browser. -->
 
-Microsoft EdgeDevTools 已Fluent [UI，][FluentUI]为按钮和菜单提供更现代的外观，从而更好地与浏览器Microsoft Edge保持一致。
+Microsoft EdgeDevTools 采用[Fluent UI，][FluentUI]为按钮和菜单提供更现代的外观，从而更好地与浏览器的其他Microsoft Edge一致。
 
 :::image type="complex" source="../../media/2021/07/fluent-ui.msft.png" alt-text="使用自定义 UI 设计Fluent的 DevTools" lightbox="../../media/2021/07/fluent-ui.msft.png":::
    使用自定义 UI 设计Fluent的 DevTools
@@ -114,13 +114,13 @@ Microsoft EdgeDevTools 已Fluent [UI，][FluentUI]为按钮和菜单提供更现
 <!-- Title: DevTools Settings now includes display language -->
 <!-- Subtitle: You can now skip the browser settings and change the DevTools display language directly within DevTools Settings. -->
 
-以前，若要在 DevTools 中更改显示语言，必须更改浏览器语言。  现在，你可以轻松切换 DevTools 设置中的**** 显示语言，而无需更改浏览器设置。  为此，**请设置"，** 然后在 **"首选项**"中，从"语言 **"下拉列表中选择**一种语言。
+以前，若要在 DevTools 中更改显示语言，必须更改浏览器语言。  现在，你可以轻松地在 DevTools**设置**切换显示语言，而无需更改浏览器设置。  为此，**请设置"，** 然后在 **"** 首选项"中，从"语言"**下拉列表中选择一**种语言。
 
 :::image type="complex" source="../../media/2021/07/settings-browser-ui-language.msft.png" alt-text="直接从 DevTools **设置** 更改 DevTools 显示语言" lightbox="../../media/2021/07/settings-browser-ui-language.msft.png":::
    直接从 DevTools 项目更改 DevTools 显示**设置**
 :::image-end:::
 
-默认情况下，DevTools 与浏览器的显示语言匹配。  有关详细信息，请导航到"[更改 DevTools 语言设置"。][CustomizeLocalization]  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[2882756"。][CR2882756]
+默认情况下，DevTools 与浏览器的显示语言匹配。  有关详细信息，请导航到"[更改 DevTools 语言设置"。][CustomizeLocalization]  若要在开放源代码项目中查看Chromium历史记录，请导航到"问题[2882756"。][CR2882756]
 
 
 ## <a name="copy-a-declaration-in-the-styles-pane-for-css-in-js-libraries"></a>复制 CSS-in-JS 库的"样式"窗格中的声明
@@ -128,11 +128,11 @@ Microsoft EdgeDevTools 已Fluent [UI，][FluentUI]为按钮和菜单提供更现
 <!-- Title: Better support for CSS-in-JS libraries -->
 <!-- Subtitle: Copy a single declaration or all declarations for a style rule from the Styles pane, formatted for JavaScript. -->
 
-以前，在使用 CSS-in-JS 库时，无法将 CSS 声明 (CSS 属性和值) JavaScript 格式。 您必须编辑复制的 CSS 以匹配 JavaScript 的语法。
+以前，在使用 CSS-in-JS 库时，无法将 CSS 声明 (为 JavaScript 设置) CSS 属性和值。 您必须编辑复制的 CSS 以匹配 JavaScript 的语法。
 
 现在，Microsoft Edge版本 93 中，您可以复制样式规则中的单个 CSS 声明或所有声明，并将其直接粘贴到 JavaScript 文件中，而无需语法问题。 若要试用此功能，请进行以下设置：
 
-1. 在 **"元素**"工具的****"样式"窗格中，打开上下文菜单 \ (右键单击\) 样式规则中的声明。
+1. 在 **"元素"** 工具的****"样式"窗格中，打开上下文菜单 \ (右键单击\) 样式规则中的声明。
 1. 选择 **"将声明复制为 JS"** 或 **"复制所有声明为 JS"。**
 1. 将复制的 CSS 粘贴到文本编辑器中的 JavaScript 文件中，如Visual Studio Code。  例如：`'--more-link': 'lime'`。
 
@@ -140,7 +140,7 @@ Microsoft EdgeDevTools 已Fluent [UI，][FluentUI]为按钮和菜单提供更现
    样式规则的上下文菜单，包括 **Copy declaration as JS** 和 Copy all **declarations as JS** commands
 :::image-end:::
 
-若要详细了解如何查看和更改 CSS，请导航到["CSS 引用"。][CssReference]
+若要详细了解如何查看和更改 CSS，请导航到 [CSS 功能参考][CssReference]。
 
 
 ## <a name="easier-customization-of-user-agent-client-hints"></a>更轻松地自定义User-Agent客户端提示
@@ -148,19 +148,19 @@ Microsoft EdgeDevTools 已Fluent [UI，][FluentUI]为按钮和菜单提供更现
 <!-- Title: Send as many (or as few) Client Hints as you want -->
 <!-- Subtitle: Updated UI for User-Agent Client Hints in Emulated Devices settings and in the Network conditions tool. -->
 
-User-Agent客户端提示比以分号分隔的字符串更易于访问浏览器User-Agent，并改进站点兼容性。  最初，User-Agent客户端提示测试和调试非常耗时。  对客户端提示的控制较少，必须正确填充客户端提示，表单正常运行。
+User-Agent客户端提示使浏览器信息比以分号分隔的字符串User-Agent，并改进了站点兼容性。  最初，User-Agent客户端提示测试和调试非常耗时。  对客户端提示的控制较少，必须正确填充客户端提示，表单正常运行。
 
-在此版本中，我们重新设计了调试体验，以便你可以轻松User-Agent多个单独字段和控件的 UI 修改客户端提示。  此外，你现在可以同时测试自定义User-Agent提示和User-Agent字符串。  你现在可以在自定义User-Agent或网络条件工具中为**设置定义客户端****提示**。
+在此版本中，我们重新设计了调试体验，以便你可以轻松User-Agent多个单独字段和控件的 UI 修改客户端提示。  此外，你现在可以同时测试自定义User-Agent提示和User-Agent字符串。  你现在可以在自定义User-Agent或网络条件工具中为**设置定义客户端****提示。**
 
 :::image type="complex" source="../../media/2021/07/ua-client-hints-in-settings.msft.png" alt-text="在User-Agent中定义自定义设备的客户端设置" lightbox="../../media/2021/07/ua-client-hints-in-settings.msft.png":::
-   为User-Agent中的自定义设备定义客户端**设置**
+   在User-Agent中定义自定义设备的客户端**设置**
 :::image-end:::
 
-有关在客户端中定义提示**设置，请导航到**"设置[用户代理客户端提示"。][DeviceModeIndexSetUach]
+有关在客户端中定义提示**设置，请导航到**设置[用户代理客户端提示][DeviceModeIndexSetUach]。
 
-您还可以使用网络User-Agent覆盖当前页面的客户端 **提示** 。
+您还可以使用User-Agent条件工具替代当前页面的客户端 **提示** 。
 
-:::image type="complex" source="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png" alt-text="在User-Agent条件工具中定义自定义设备的客户端提示" lightbox="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png":::
+:::image type="complex" source="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png" alt-text="在User-Agent条件工具中为自定义设备定义客户端提示" lightbox="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png":::
    在User-Agent条件工具中为自定义设备**定义客户端提示**
 :::image-end:::
 
@@ -192,13 +192,13 @@ User-Agent客户端提示比以分号分隔的字符串更易于访问浏览器U
 
 以前，在**网络**工具中，在**** 网络活动日志中为给定网络请求生成 PowerShell 命令时，复制为  >  **PowerShell**上下文菜单选项不包含 Cookie。 这意味着生成的 PowerShell 命令无法成功提出相同的网络请求（如果需要 Cookie）。
 
-现在，Microsoft Edge版本 93 中，"复制为**PowerShell"** 上下文菜单选项正确设置 devTools User-Agent的字符串和 Cookie。  生成的 PowerShell 命令现在可以成功提出由 DevTools 观察到的相同网络请求，甚至向依赖 Cookie 的服务器发送请求。
+现在，Microsoft Edge版本 93 中，"复制为**PowerShell"** 上下文菜单选项正确设置 devTools User-Agent的 User-Agent 字符串和 Cookie。  生成的 PowerShell 命令现在可以成功提出由 DevTools 观察到的相同网络请求，甚至向依赖 Cookie 的服务器发送请求。
 
 :::image type="complex" source="../../media/2021/07/copy-as-powershell.msft.png" alt-text="&quot;复制为 PowerShell&quot;命令" lightbox="../../media/2021/07/copy-as-powershell.msft.png":::
    " **复制为 PowerShell"** 命令
 :::image-end:::
 
-有关网络活动日志的信息，请导航到"网络[分析参考"。][NetworkReference]  若要在开放源代码项目中查看此功能Chromium历史记录，请导航到"问题[932971"。][CR932971]
+有关网络活动日志的信息，请导航到"网络[分析参考"。][NetworkReference]  若要在开放源代码项目中查看Chromium历史记录，请导航到"问题[932971"。][CR932971]
 
 
 ## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道
@@ -216,7 +216,7 @@ User-Agent客户端提示比以分号分隔的字符串更易于访问浏览器U
 <!-- todo: link directly to the subheading in the page, when available; test the subheading link:
 [ExperimentalFeaturesDetachedElements]: ../../../experimental-features/index.md#detached-elements "Detached elements | Microsoft Docs" -->
 [CustomizeLocalization]: ../../../customize/localization.md "更改 DevTools 语言设置 | Microsoft Docs"
-[CssReference]: ../../../css/reference.md "CSS 参考|Microsoft Docs"
+[CssReference]: ../../../css/reference.md "CSS 功能参考|Microsoft Docs"
 [DeviceModeIndexSetUach]: ../../../device-mode/index.md#set-user-agent-client-hints "设置用户代理客户端提示|Microsoft Docs"
 [NetworkReferenceSetUach]: ../../../network/reference.md#set-user-agent-client-hints "设置用户代理客户端提示|Microsoft Docs"
 [ConsoleConsoleDebugJavascript]: ../../../console/console-debug-javascript.md "修复控制台控制台中报告的 JavaScript |Microsoft Docs"
