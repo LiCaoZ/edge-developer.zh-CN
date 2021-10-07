@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: b5d1a64ae5a25b778f84a74e89affcabc599b720
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 4e13ce63fb7a7b656a68972d9c9797b868e1209e
+ms.sourcegitcommit: 4695a3bb8ea26f8dd65c5ab8fe383765ae51850c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036949"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "12081176"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -436,7 +436,7 @@ DevTools 现在在父帧下列出一个专用的服务工作进程。  下图显
           
 
             [DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css
-             "更改 CSS - CSS 参考 |Microsoft Docs"
+             "更改 CSS - CSS 功能引用| Microsoft Docs"
           
 
             [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings

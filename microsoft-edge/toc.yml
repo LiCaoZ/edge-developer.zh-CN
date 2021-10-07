@@ -226,7 +226,7 @@
               href: devtools-guide-chromium/coverage/index.md
             - name: 元素
               items:
-                - name: CSS 参考
+                - name: CSS 功能参考
                   href: devtools-guide-chromium/css/reference.md
                 - name: 编辑 CSS 字体样式和设置
                   href: devtools-guide-chromium/inspect-styles/edit-fonts.md
