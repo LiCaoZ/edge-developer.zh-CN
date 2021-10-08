@@ -298,6 +298,8 @@
               href: devtools-protocol-chromium/index.md
             - name: 键盘快捷方式
               href: devtools-guide-chromium/shortcuts/index.md
+        - name: 联系 DevTools 团队
+          href: devtools-guide-chromium/contact.md
     - name: Microsoft Edge 扩展
       items:
         - name: Microsoft Edge 扩展概述
@@ -463,6 +465,8 @@
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                 - name: COM 互操作
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
+        - name: 联系 WebView2 团队
+          href: webview2/contact.md
     - name: 测试和自动化
       items:
         - name: 开发工具协议
