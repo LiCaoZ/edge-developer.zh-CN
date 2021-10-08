@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: b21865dd94027f1c638d01eef2957dfca629a918
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 87c60900d1c1f205705ed2fbff6964737314f8c6
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035857"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083854"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书
 
@@ -485,8 +485,7 @@ InPrivate 和来宾模式浏览数据不会同步到你的 Microsoft 帐户。  
 
 ## <a name="tips-and-recommendations"></a>提示和建议
 
-Microsoft Edge 希望为你提供相关的提示和建议，以便在使用浏览器的过程中获得最佳体验。  Microsoft Edge 使用可用的设备连接和配置数据来提供相关的提示和建议。  此数据将由你的操作系统、区域设置、浏览器设置以及其他设备连接和配置数据组成。  将使用你的浏览器所特有的可重置标识符，通过安全的 HTTPS 连接发送该数据。  对于 Windows 10 设备，当 Microsoft Edge 正在设置时，我们推崇在 Windows 中享受定制体验。  
-            [深入了解 Windows 中的定制体验](https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy)。
+Microsoft Edge 希望为你提供相关的提示和建议，以便在使用浏览器的过程中获得最佳体验。  Microsoft Edge 使用可用的设备连接和配置数据来提供相关的提示和建议。  此数据将由你的操作系统、区域设置、浏览器设置以及其他设备连接和配置数据组成。  将使用你的浏览器所特有的可重置标识符，通过安全的 HTTPS 连接发送该数据。  对于 Windows 10 设备，当 Microsoft Edge 正在设置时，我们推崇在 Windows 中享受定制体验。  [深入了解 Windows 中的定制体验](https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy)。
 
 在 InPrivate 浏览或来宾模式下，不会发送此数据。
 
@@ -504,9 +503,7 @@ Microsoft Edge 旨在检测和阻止已知跟踪器。  用户可以从三个跟
 
 在 Microsoft Edge 中，你可以浏览 Web 并将网页翻译为你选择的语言。 Microsoft Edge 使用 [Microsoft Translator][MicrosoftSpeechTranslator] 来翻译网页。 此功能最初使用设备上的库来采样网页的某些可见部分，以检测原始语言。 如果检测到的语言不是你的首选语言之一，则 Microsoft Edge 会将该网页翻译为首选语言或所选择的其他语言。 然后，可以通过选择“**翻译**”来翻译页面。 你可以通过选择“**始终从 \<a language\> 中翻译页面**”将所有页面自动翻译为该语言。
 
-Microsoft Edge 不会在未经你允许的情况下翻译网页。 如果确实决定翻译，Microsoft Edge 则通过安全的 HTTPS 连接将要翻译的网页文本，以及 *目标* 和 *源* 语言和服务令牌发送到 Microsoft Translator。 服务令牌不包含任何用户个人身份信息。 
-            [Microsoft Translator][MicrosoftSpeechTranslator] 随后处理文本，以删除任何标识符（如电子邮件或电话号码）并存储文本以改进服务。 
-            [Microsoft 隐私声明 - Microsoft 隐私][MicrosoftPrivacyStatement] 下介绍了此通信的详细信息。
+Microsoft Edge 不会在未经你允许的情况下翻译网页。 如果确实决定翻译，Microsoft Edge 则通过安全的 HTTPS 连接将要翻译的网页文本，以及 *目标* 和 *源* 语言和服务令牌发送到 Microsoft Translator。 服务令牌不包含任何用户个人身份信息。 [Microsoft Translator][MicrosoftSpeechTranslator] 随后处理文本，以删除任何标识符（如电子邮件或电话号码）并存储文本以改进服务。 [Microsoft 隐私声明 - Microsoft 隐私][MicrosoftPrivacyStatement] 下介绍了此通信的详细信息。
 
 要停止 Microsoft Edge 提供翻译网页服务，请完成以下步骤。
 
@@ -541,10 +538,10 @@ Windows 信息保护  \(WIP\) 可帮助防止意外泄漏公司信息。  仅可
 
 ## <a name="thank-you"></a>谢谢！
 
-Microsoft Edge 可通过 [Chromium][ChromiumMain] 开源项目和其他开源软件实现。  若要查看所有软件积分，请导航到 `edge://credits`。  
-            [Google Chrome 隐私白皮书][GoogleChromePrivacyWhitepaper]被用作收集 Chromium 开源项目相关信息的来源。
+Microsoft Edge 可通过 [Chromium][ChromiumMain] 开源项目和其他开源软件实现。  若要查看所有软件积分，请导航到 `edge://credits`。  [Google Chrome 隐私白皮书][GoogleChromePrivacyWhitepaper]被用作收集 Chromium 开源项目相关信息的来源。
 
 <!--Microsoft Edge is committed to protecting and respecting your privacy while giving you the transparency and control you deserve.  Reach out to [@MSEdgeDev][TwitterMsedgedev] on Twitter or submit feedback by opening **Settings and more (...)** > **Help and feedback** and selecting **Send feedback** with questions or comments.  -->
+
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-team"></a>与 Microsoft Edge 团队联系
 
@@ -552,175 +549,62 @@ Microsoft Edge 团队将始终倾听客户的意见，且非常重视客户的�
 
 用户反馈将通过 HTTPS 安全发送到 Microsoft，并存储在安全的 Microsoft 服务器上。  如果你包含电子邮件地址，并且在 Microsoft Edge 隐私设置中启用了“通过发送有关如何使用浏览器的可选诊断数据、访问的网站和故障报告来帮助改进 Microsoft 产品****”设置，则你设备上的浏览器安装所特有的标识符将与你的反馈相关联。  如果你使用 Microsoft 帐户登录到 Microsoft Edge，则你的反馈与帐户相关联。  所有诊断数据（包括诊断日志、记录和附件）最多保存 30 天。  剩下的反馈数据（包括可选的屏幕截图）最多保存 15 个月。  如果你提供了含反馈项的电子邮件，可提出 [请求][MicrosoftConcernPrivacy] 以删除反馈。
 
+
+<!-- ====================================================================== -->
 <!-- links -->
+[DeployedgeConfigurationExperiments]: /deployedge/edge-configuration-and-experiments "Microsoft Edge 配置和试验| Microsoft Docs"
+[DeployedgePoliciesComponentupdatesenabled]: /deployedge/microsoft-edge-policies#componentupdatesenabled "ComponentUpdatesEnabled - Microsoft Edge - 策略| Microsoft Docs"
+[DeployedgeUpdatePoliciesUpdate]: /deployedge/microsoft-edge-update-policies#update "更新 - Microsoft Edge - 更新策略 | Microsoft Docs"
+[DeployedgeEnterprisePrivacySettings]: /deployedge/microsoft-edge-enterprise-privacy-settings "配置 Microsoft Edge 策略以支持企业隐私| Microsoft Docs"
+[DeployedgePrivacyOverviewControls]: /deployoffice/privacy/overview-privacy-controls "Microsoft 365 企业应用版的隐私控制概述| Microsoft Docs"
 
+[InternetExplorer11DeployGuideCollectDataEnterpriseSiteDiscovery]: /internet-explorer/ie11-deploy-guide/collect-data-using-enterprise-site-discovery "使用“企业网站发现”收集数据 | Microsoft Docs"
 
-            [DeployedgeConfigurationExperiments]: /deployedge/edge-configuration-and-experiments
-             "Microsoft Edge 配置和试验| Microsoft Docs"
-          
+[PlayreadyOverviewSimpleEndSystem]: /playready/overview/simple-end-to-end-system "简单的端到端系统 | Microsoft Docs"
 
-            [DeployedgePoliciesComponentupdatesenabled]: /deployedge/microsoft-edge-policies#componentupdatesenabled
-             "ComponentUpdatesEnabled - Microsoft Edge - 策略| Microsoft Docs"
-          
+[WindowsPrivacyConfigureDiagnosticDataOrganization]: /windows/privacy/configure-windows-diagnostic-data-in-your-organization "在组织中配置 Windows 诊断数据| Microsoft Docs"
 
-            [DeployedgeUpdatePoliciesUpdate]: /deployedge/microsoft-edge-update-policies#update
-             "更新 - Microsoft Edge - 更新策略 | Microsoft Docs"
-          
+[WindowsSecurityInformationProtectionCollectAuditEventLogs]: /windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs "如何收集 Windows 信息保护 (WIP) 审核事件日志| Microsoft Docs"
+[WindowsSecurityThreatProtectionIntelligenceCriteriaPotentiallyUnwanted]: /windows/security/threat-protection/intelligence/criteria#potentially-unwanted-application-pua "可能不需要的应用程序 (PUA) - Microsoft 识别恶意软件和可能不需要的应用程序的方式| Microsoft Docs"
+[WindowsSecurityThreatProtectionWindowsDefender]: /windows/security/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus "检测并阻止可能不需要的应用程序| Microsoft Docs"
 
-            [DeployedgeEnterprisePrivacySettings]: /deployedge/microsoft-edge-enterprise-privacy-settings
-             "配置 Microsoft Edge 策略以支持企业隐私| Microsoft Docs"
-          
+[WebDriverDoc]: /microsoft-edge/webdriver-chromium "使用 WebDriver 自动执行 Microsoft Edge |Microsoft Docs"
 
-            [DeployedgePrivacyOverviewControls]: /deployoffice/privacy/overview-privacy-controls
-             "Microsoft 365 企业应用版的隐私控制概述| Microsoft Docs"
-          
+[BingMain]: https://bing.com "必应"
 
+[ChromiumMain]: https://www.chromium.org "Chromium 项目"
 
-            [InternetExplorer11DeployGuideCollectDataEnterpriseSiteDiscovery]: /internet-explorer/ie11-deploy-guide/collect-data-using-enterprise-site-discovery
-             "使用“企业网站发现”收集数据 | Microsoft Docs"
-          
+[GithubW3cIncubatorCommunityGroupSpeechApi]: https://wicg.github.io/speech-api "Web 语音 API 草稿报告 | W3C Incubator 社区组"
 
+[GoogleChromePrivacyWhitepaper]: https://www.google.com/chrome/privacy/whitepaper.html "Google Chrome 隐私白皮书"
 
-            [PlayreadyOverviewSimpleEndSystem]: /playready/overview/simple-end-to-end-system
-             "简单的端到端系统 | Microsoft Docs"
-          
+[MicrosoftAccountDevices]: https://account.microsoft.com/devices "设备| Microsoft 帐户"
+[MicrosoftAccountFamilyMain]: https://account.microsoft.com/family "家庭| Microsoft 帐户"
+[MicrosoftAccountPrivacy]:  https://account.microsoft.com/privacy/ "隐私| Microsoft 帐户"
+[MicrosoftAccountPrivacyAdSettings]: https://account.microsoft.com/privacy/ad-settings "添加设置 - 隐私| Microsoft 帐户"
 
+[MicrosoftConcernPrivacy]: https://www.microsoft.com/concern/privacy "报告隐私问题| Microsoft"
+[MicrosoftLicensingProductProducts]: https://www.microsoft.com/licensing/product-licensing/products "许可条款 - Microsoft 批量许可"
 
-            [WindowsPrivacyConfigureDiagnosticDataOrganization]: /windows/privacy/configure-windows-diagnostic-data-in-your-organization
-             "在组织中配置 Windows 诊断数据| Microsoft Docs"
-          
+[MicrosoftSupport10607]: https://support.microsoft.com/help/10607 "在 Microsoft Edge 中查看和删除浏览器历史记录| Microsoft Edge 支持"
+[MicrosoftSupport12413]: https://support.microsoft.com/help/12413 "什么是 Microsoft 家庭组？| Microsoft 帐户支持"
+[MicrosoftSupport17443]: https://support.microsoft.com/help/17443 "SmartScreen：FAQ | Microsoft Edge 支持"
+[MicrosoftSupport4468236]: https://support.microsoft.com/help/4468236 "Windows 10 中的诊断、反馈和隐私| Microsoft 隐私支持"
+[MicrosoftSupport4468240]: https://support.microsoft.com/help/4468240 "Windows 10 位置服务和隐私| Microsoft 隐私支持"
+[MicrosoftSupport4532583]: https://support.microsoft.com/help/4532583 "适用于个性化广告和体验的 Microsoft Edge 浏览历史记录| Microsoft 隐私支持"
+[MicrosoftSupport4533513]: https://support.microsoft.com/help/4533513 "在 Microsoft Edge 中浏览 InPrivate | Microsoft Edge 支持"
+[MicrosoftAccount4533959]: https://support.microsoft.com/help/4533959 "了解 Microsoft Edge 中的跟踪防护| Microsoft 隐私支持"
 
+[OfficeSupport4c83a8d8748642f78e462b0fdf753130]: https://support.office.com/article/4c83a8d8-7486-42f7-8e46-2b0fdf753130 "为沉浸式阅读器、阅读模式和大声朗读下载语音| Office 支持"
 
-            [WindowsSecurityInformationProtectionCollectAuditEventLogs]: /windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs
-             "如何收集 Windows 信息保护 (WIP) 审核事件日志| Microsoft Docs"
-          
+[W3cEncryptedMediaPrivacy]: https://w3.org/TR/encrypted-media#privacy "11. 隐私 - 加密媒体扩展| W3C"
+[W3cGeolocationApiMain]: https://w3.org/TR/geolocation-api "地理位置 API 规范第 2 版| W3C"
 
-            [WindowsSecurityThreatProtectionIntelligenceCriteriaPotentiallyUnwanted]: /windows/security/threat-protection/intelligence/criteria#potentially-unwanted-application-pua
-             "可能不需要的应用程序 (PUA) - Microsoft 识别恶意软件和可能不需要的应用程序的方式| Microsoft Docs"
-          
+[WebDriverProtocol]: https://www.w3.org/TR/webdriver2/ "WebDriver |W3C 工作草案 2020 年 8 月 24 日"
+[WebDriverProtocolNewSession]: https://www.w3.org/TR/webdriver2/#new-session "8.1 新会话|W3C 工作草案 2020 年 8 月 24 日"
 
-            [WindowsSecurityThreatProtectionWindowsDefender]: /windows/security/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus
-             "检测并阻止可能不需要的应用程序| Microsoft Docs"
-          
+[TwitterMsedgedev]: https://www.twitter.com/MSEdgeDev "Microsoft Edge Dev | Twitter"
 
+[MicrosoftPrivacyStatement]: https://privacy.microsoft.com/privacystatement "Microsoft 隐私声明 - Microsoft 隐私"
 
-            [WebDriverDoc]: /microsoft-edge/webdriver-chromium
-             "使用 WebDriver 自动执行 Microsoft Edge |Microsoft Docs"
-          
-
-
-            [BingMain]: https://bing.com
-             "必应"
-          
-
-
-            [ChromiumMain]: https://www.chromium.org
-             "Chromium 项目"
-          
-
-
-            [GithubW3cIncubatorCommunityGroupSpeechApi]: https://wicg.github.io/speech-api
-             "Web 语音 API 草稿报告 | W3C Incubator 社区组"
-          
-
-
-            [GoogleChromePrivacyWhitepaper]: https://www.google.com/chrome/privacy/whitepaper.html
-             "Google Chrome 隐私白皮书"
-          
-
-
-            [MicrosoftAccountDevices]: https://account.microsoft.com/devices
-             "设备| Microsoft 帐户"
-          
-
-            [MicrosoftAccountFamilyMain]: https://account.microsoft.com/family
-             "家庭| Microsoft 帐户"
-          
-
-            [MicrosoftAccountPrivacy]:  https://account.microsoft.com/privacy/
-             "隐私| Microsoft 帐户"
-          
-
-            [MicrosoftAccountPrivacyAdSettings]: https://account.microsoft.com/privacy/ad-settings
-             "添加设置 - 隐私| Microsoft 帐户"
-          
-
-
-            [MicrosoftConcernPrivacy]: https://www.microsoft.com/concern/privacy
-             "报告隐私问题| Microsoft"
-          
-
-            [MicrosoftLicensingProductProducts]: https://www.microsoft.com/licensing/product-licensing/products
-             "许可条款 - Microsoft 批量许可"
-          
-
-
-            [MicrosoftSupport10607]: https://support.microsoft.com/help/10607
-             "在 Microsoft Edge 中查看和删除浏览器历史记录| Microsoft Edge 支持"
-          
-
-            [MicrosoftSupport12413]: https://support.microsoft.com/help/12413
-             "什么是 Microsoft 家庭组？| Microsoft 帐户支持"
-          
-
-            [MicrosoftSupport17443]: https://support.microsoft.com/help/17443
-             "SmartScreen：FAQ | Microsoft Edge 支持"
-          
-
-            [MicrosoftSupport4468236]: https://support.microsoft.com/help/4468236
-             "Windows 10 中的诊断、反馈和隐私| Microsoft 隐私支持"
-          
-
-            [MicrosoftSupport4468240]: https://support.microsoft.com/help/4468240
-             "Windows 10 位置服务和隐私| Microsoft 隐私支持"
-          
-
-            [MicrosoftSupport4532583]: https://support.microsoft.com/help/4532583
-             "适用于个性化广告和体验的 Microsoft Edge 浏览历史记录| Microsoft 隐私支持"
-          
-
-            [MicrosoftSupport4533513]: https://support.microsoft.com/help/4533513
-             "在 Microsoft Edge 中浏览 InPrivate | Microsoft Edge 支持"
-          
-
-            [MicrosoftAccount4533959]: https://support.microsoft.com/help/4533959
-             "了解 Microsoft Edge 中的跟踪防护| Microsoft 隐私支持"
-          
-
-
-            [OfficeSupport4c83a8d8748642f78e462b0fdf753130]: https://support.office.com/article/4c83a8d8-7486-42f7-8e46-2b0fdf753130
-             "为沉浸式阅读器、阅读模式和大声朗读下载语音| Office 支持"
-          
-
-
-            [W3cEncryptedMediaPrivacy]: https://w3.org/TR/encrypted-media#privacy
-             "11. 隐私 - 加密媒体扩展| W3C"
-          
-
-            [W3cGeolocationApiMain]: https://w3.org/TR/geolocation-api
-             "地理位置 API 规范第 2 版| W3C"
-          
-
-
-            [WebDriverProtocol]: https://www.w3.org/TR/webdriver2/
-             "WebDriver |W3C 工作草案 2020 年 8 月 24 日"
-          
-
-            [WebDriverProtocolNewSession]: https://www.w3.org/TR/webdriver2/#new-session
-             "8.1 新会话|W3C 工作草案 2020 年 8 月 24 日"
-          
-
-
-            [TwitterMsedgedev]: https://www.twitter.com/MSEdgeDev
-             "Microsoft Edge Dev | Twitter"
-          
-
-
-            [MicrosoftPrivacyStatement]: https://privacy.microsoft.com/privacystatement
-             "Microsoft 隐私声明 - Microsoft 隐私"
-          
-
-
-            [MicrosoftSpeechTranslator]: https://azure.microsoft.com/services/cognitive-services/speech-translation/
-             "语音翻译| Microsoft Azure"
-          
+[MicrosoftSpeechTranslator]: https://azure.microsoft.com/services/cognitive-services/speech-translation/ "语音翻译| Microsoft Azure"

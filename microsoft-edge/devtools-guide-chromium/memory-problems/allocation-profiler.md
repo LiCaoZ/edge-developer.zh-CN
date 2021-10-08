@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: ea661fe1a3d5b2055bb78dcba6714fb764184eb0
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: b1446ff1501bb2699f87d7fa61eec9a5e6780178
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036900"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083805"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -45,7 +45,7 @@ ms.locfileid: "12036900"
 :::image-end:::
 
 > [!NOTE]
-> 后的编号 `@` 是对象 ID，在录制会话期间获取的多个快照中保留。  通过永久性对象 ID，可以在堆状态之间进行精确比较。  对象在垃圾回收期间移动，因此显示对象的地址没有任何意义。
+> 后一 `@` 个数字是对象 ID，在录制会话期间获取的多个快照中保留。  通过永久性对象 ID，可以在堆状态之间进行精确比较。  对象在垃圾回收期间移动，因此显示对象的地址没有任何意义。
 
 ## <a name="enable-allocation-instrumentation-on-timeline"></a>在时间线上启用分配检测
 
@@ -82,14 +82,11 @@ ms.locfileid: "12036900"
 
 ## <a name="view-memory-allocation-by-function"></a>按功能查看内存分配
 
-你能够通过 JavaScript 函数查看内存分配。  有关详细信息，请导航到按 [函数调查内存分配][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]。
+你能够通过 JavaScript 函数查看内存分配。  有关详细信息，请导航到按 [函数 调查内存分配][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevToolsOpenIndex]: ../open/index.md "打开Microsoft Edge (Chromium) 开发人员工具|Microsoft Docs"
 [DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "按功能调查内存分配 - 修复内存|Microsoft Docs"
 
@@ -98,6 +95,8 @@ ms.locfileid: "12036900"
 
 [MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "下载Microsoft Edge频道"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) ，由 [Meggin Kearney][MegginKearney] \ (Technical Writer\) 。

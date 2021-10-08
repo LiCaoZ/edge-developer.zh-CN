@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 5fe97b6a9ad5538d72bbd35b3c980717b10539aa
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: d340b0201555fc3563cb40f3598147740a3717ba
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034772"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082979"
 ---
 <!-- Copyright Kayce Basques
 
@@ -35,7 +35,7 @@ ms.locfileid: "12034772"
 
 ## <a name="assert"></a>assert
 
-当计算结果[为 时](#error)**，此方法**将错误 `expression` 写入控制台 `false` 。
+此方法在计算[结果为](#error)**时将**错误 `expression` 写入控制台 `false` 。
 
 ### <a name="javascript-syntax"></a>JavaScript 语法
 
@@ -642,18 +642,14 @@ console.warn(object [, object, ...])
 
 ---
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsConsoleConsoleLog]: ./console-log.md "控制台工具控制台中的|Microsoft Docs"
 [DevtoolConsoleUtilities]: ./utilities.md "控制台实用程序 API 参考 | Microsoft Docs"
 [DevtoolsConsoleReferenceClear]: ./reference.md#clear-the-console "清除控制台 - 控制台|Microsoft Docs"
 [DevtoolsConsoleReferenceFilter]: ./reference.md#filter-by-log-level "按日志级别筛选 - 控制台参考 | Microsoft Docs"
 [DevtoolsConsoleReferencePersist]: ./reference.md#persist-messages-across-page-loads "跨页面加载保留消息 - 控制台|Microsoft Docs"
-
 [MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge开发人员工具概述|Microsoft Docs"
 
 > [!NOTE]

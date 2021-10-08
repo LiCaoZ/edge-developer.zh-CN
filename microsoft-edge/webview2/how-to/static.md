@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 83cdd9c50a6f77a8a2fdccb9ba15d842815e1aa6
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+ms.openlocfilehash: ff085a95730060145706a51593c11794232aabb0
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12033536"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12081866"
 ---
 # <a name="statically-link-the-webview2-loader-library"></a>静态链接 WebView2 加载程序库
 
@@ -21,7 +21,7 @@ ms.locfileid: "12033536"
 
 对于不希望提供 的应用， `WebView2Loader.dll` 请完成以下步骤。
 
-1.  在 `.vcxproj` 文本编辑器（如文本编辑器）中打开应用Visual Studio Code。
+1.  在文本编辑器（如文本编辑器）中打开应用 `.vcxproj` Visual Studio Code。
 
     > [!NOTE]
     > 项目 `.vcproj` 文件可能是隐藏文件，这意味着它不会显示在Visual Studio。  使用命令行查找隐藏文件。
@@ -46,23 +46,22 @@ ms.locfileid: "12033536"
 
 1.  编译并运行应用。
 
-## <a name="getting-in-touch-with-the-webview2-team"></a>与 WebView2 团队联系
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
-
+<!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*   若要开始使用 WebView2，请导航到["WebView2 入门指南"。][Webview2MainGetStarted]
-*   有关 WebView2 功能的综合示例，请导航到[WebView2 示例][GithubMicrosoftedgeWebview2samples]GitHub。
-*   有关 WebView2 API 的更多详细信息，请导航到 [API 参考][Webview2ApiReference]。
-*   有关 WebView2 的信息，请导航到["WebView2 资源"。][Webview2MainNextSteps]
+*  [WebView2 入门指南][Webview2MainGetStarted]
+*  [WebView2Samples 存储库][GithubMicrosoftedgeWebview2samples] - WebView2 功能的综合示例。
+*  [WebView2 API 参考][Webview2ApiReference]
+*  [另请参阅][Webview2MainNextSteps] _WebView2 Microsoft Edge简介_。
 
+
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
 
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft EdgeWebView2 API 参考|Microsoft Docs"
-[Webview2MainNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 |Microsoft Docs"
+[Webview2MainNextSteps]: ../index.md#see-also "另请参阅 - WebView2 Microsoft Edge简介|Microsoft Docs"
 [Webview2MainGetStarted]: ../index.md#get-started "入门 - WebView2 Microsoft Edge简介|Microsoft Docs"
 
 [GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView 反馈 - MicrosoftEdge/WebViewFeedback | GitHub"

@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 20d1b962c62e2c07423fb1660ad0dd3fa3d2b76e
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 91daca2071fe964896aabd1eee8a6fff8d0f8c17
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034933"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082433"
 ---
 # <a name="analyze-the-lack-of-indication-of-keyboard-focus-in-a-sidebar-menu"></a>分析边栏菜单中键盘焦点的缺失
 
@@ -48,7 +48,7 @@ ms.locfileid: "12034933"
         应用于"源"工具中链接的样式
     :::image-end:::
 
-页面样式具有 CSS 伪类规则，用于指示在使用鼠标时位于哪个 `hover` 菜单项 `#sidebar nav li a:hover` ：。  但是，没有 CSS 伪类规则，该状态在使用键盘时直观地指示您位于哪个菜单项上， `focus` 例如 `#sidebar nav li a:focus` 。
+页面样式具有 CSS 伪类规则，用于指示在使用鼠标时位于哪个 `hover` 菜单项上 `#sidebar nav li a:hover` ：。  但是，没有 CSS 伪类规则，该状态在使用键盘时直观地指示您位于哪个菜单项上， `focus` 例如 `#sidebar nav li a:focus` 。
 
 此外，请注意链接的 CSS 属性设置为 `outline: none` 。  这是一种常见做法，当你使用键盘关注元素时，删除浏览器自动添加到元素的大纲。  不使用 `focus` 样式设置会导致用户混淆。
 
@@ -58,12 +58,6 @@ ms.locfileid: "12034933"
 
 *  [跟踪哪些元素有焦点](focus.md)
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
-
-
-<!-- ====================================================================== -->
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
 
 <!-- ====================================================================== -->

@@ -1,5 +1,5 @@
 ---
-description: 使用"安装工具"自动执行并测试Microsoft Edge。
+description: 使用安装者自动执行和测试Microsoft Edge。
 title: Puppeteer 概述
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,18 +8,18 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge， Web 开发， 开发人员， 工具， 自动化， 测试
-ms.openlocfilehash: 78145ae9f8a3b8c833873d2f4318b067fe7815cc
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: cbacf2ae92cea6ce14ba4e2858bf0337c7405ace
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036179"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083511"
 ---
 # <a name="puppeteer-overview"></a>Puppeteer 概述
 
 [部署程序][|::ref1::|Main]是一[个节点][NodejsMain]库，它提供高级 API，以使用[DevTools][GithubChromedevtoolsProtocol]协议Microsoft Edge \ (Chromium\) 控件。  默认情况下，安装 [者启动无][WikiHeadlessBrowser] 头浏览器。  无头浏览器不显示 UI，因此您必须使用命令行。  还可以将安装工具配置为运行完整 \ (无头\) Microsoft Edge。
 
-默认情况下，当你安装工具时，安装程序会下载最新版本的[Chromium][ChromiumHome]，开放源代码浏览器Microsoft Edge[也基于][MicrosoftBlogsWindowsExperience20181206]构建。  如果已安装Microsoft Edge \ (Chromium\) ，可以使用[用户核心][PuppeteerApivscore]。  `puppeteer-core` 是启动现有浏览器安装的一个轻型版本，如 Microsoft Edge \ (Chromium\) 。  若要下载Microsoft Edge \ (Chromium\) ，请导航到"Microsoft Edge[预览体验成员频道"。][MicrosoftedgeinsiderDownload]
+默认情况下，当你安装工具时，安装程序会下载最新版本的[Chromium][ChromiumHome]，开放源代码浏览器Microsoft Edge[也基于][MicrosoftBlogsWindowsExperience20181206]构建。  如果已安装Microsoft Edge \ (Chromium\) ，可以使用[用户核心][PuppeteerApivscore]。  `puppeteer-core` 是启动现有浏览器安装的轻型版本，例如 Microsoft Edge \ (Chromium\) 。  若要下载Microsoft Edge \ (Chromium\) ，请导航到"Microsoft Edge[预览体验成员频道"。][MicrosoftedgeinsiderDownload]
 
 ## <a name="installing-puppeteer-core"></a>安装安装程序核心
 
@@ -67,7 +67,7 @@ npm i edge-paths
 yarn add edge-paths
 ```
 
-下面的代码示例使用[边缘][npmEdgePaths]路径包以编程方式查找在操作系统上安装 Microsoft Edge \ (Chromium\) 的路径。
+下面的代码示例使用[边缘][npmEdgePaths]路径包以编程方式查找操作系统上安装 Microsoft Edge \ (Chromium\) 的路径。
 
 ```javascript
 const edgePaths = require("edge-paths");
@@ -78,7 +78,7 @@ const EDGE_PATH = edgePaths.getEdgePath();
 最后，在 `executablePath: EDGE_PATH` 中设置 `example.js` 。  保存更改。
 
 > [!NOTE]
-> Microsoft Edge \ (EdgeHTML\) 不能与 一起工作 `puppeteer-core` 。  必须安装预览Microsoft Edge预览体验[成员频道][MicrosoftedgeinsiderDownload]，以继续按照此示例操作。
+> Microsoft Edge \ (EdgeHTML\) 不能与 一起工作 `puppeteer-core` 。  你必须安装预览Microsoft Edge预览体验[成员频道][MicrosoftedgeinsiderDownload]，以继续按照此示例操作。
 
 现在， `example.js` 从命令行运行。
 
@@ -86,7 +86,7 @@ const EDGE_PATH = edgePaths.getEdgePath();
 node example.js
 ```
 
-`puppeteer-core` 启动Microsoft Edge，导航到 `https://www.microsoftedgeinsider.com` ，并保存网页的屏幕截图。  使用 [page.setViewport () 自定义屏幕截图大小 ][PuppeteerApipagesetviewport]。
+`puppeteer-core` 启动Microsoft Edge，导航到 `https://www.microsoftedgeinsider.com` ，并保存网页的屏幕截图。  使用[page.setViewport () 自定义屏幕截图 () 。 ][PuppeteerApipagesetviewport]
 
 :::image type="complex" source="./media/puppeteer-example.png" alt-text="由example.png生成的example.js" lightbox="./media/puppeteer-example.png":::
    `example.png`生成的文件 `example.js`
@@ -94,16 +94,12 @@ node example.js
 
 这只是一个简单的示例，演示了由一个和 启用的自动化和测试方案 `puppeteer-core` 。  有关一览器及其工作原理的信息，请导航到 ["百分百][|::ref2::|Main]"。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-开发人员Microsoft Edge团队希望听到你有关使用和发送设备的反馈 `puppeteer-core` Microsoft Edge。  使用**开发人员**工具或推文Microsoft Edge中的"发送@EdgeDevTools图标，让Microsoft Edge团队了解[][TwitterIntentTweetEdgedevtools]你的想法。
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
 
-:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的“发送反馈”图标" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
-   Microsoft Edge DevTools 中的**发送反馈**图标
-:::image-end:::
-
-<!--## See also
-
+<!--
+probably commented out here b/c already in main body
 *   [WebDriver (Chromium)][WebdriverChromiumMain]
 *   [WebDriver (EdgeHTML)][ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]
 *   [Chrome DevTools Protocol Viewer on GitHub][GithubChromedevtoolsProtocol]
@@ -114,14 +110,15 @@ node example.js
 *   [Puppeteer][PuppeteerMain]
 *   [puppeteer vs. puppeteer-core][PuppeteerApivscore]
 *   [page.setViewport() on Puppeteer][PuppeteerApipagesetviewport]
-*   [Headless browser on Wikipedia][WikiHeadlessBrowser]  -->
+*   [Headless browser on Wikipedia][WikiHeadlessBrowser]
+-->
+*  [请联系 Microsoft Edge DevTools](../devtools-guide-chromium/contact.md)团队，发送有关使用开发工具、处理器核心和Microsoft Edge。
 
+
+<!-- ====================================================================== -->
 <!-- links -->
-
 [WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver (Chromium) |Microsoft Docs"
-
-<!--  [ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->
-
+<!-- external links -->
 [GithubChromedevtoolsProtocol]: https://chromedevtools.github.io/devtools-protocol "Chrome DevTools 协议查看器|GitHub"
 
 [MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge：通过更多开放源代码协作网站改善|Microsoft 体验博客"
@@ -135,9 +132,11 @@ node example.js
 [npmEdgePaths]: https://www.npmjs.com/package/edge-paths "边缘路径|npm"
 
 [PuppeteerMain]: https://pptr.dev "木工"
-[PuppeteerApivscore]: https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core "一|木工"
+[PuppeteerApivscore]: https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core "一对多核|木工"
 [PuppeteerApipagesetviewport]: https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-pagesetviewportviewport "page.setViewport (视口) |木工"
 
 [TwitterIntentTweetEdgedevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools - 发布推文|Twitter"
 
 [WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "无头浏览器|Wikipedia"
+
+<!--  [ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->

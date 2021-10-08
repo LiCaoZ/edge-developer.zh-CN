@@ -1,18 +1,18 @@
 ---
 description: 打开传感器工具，然后从"地理位置"列表中选择坐标。
-title: 使用 DevTools Microsoft Edge地理位置
+title: 使用开发人员工具Microsoft Edge地理位置
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 7b5aa876d58584592ac48edf1a04f7ed5885751c
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: d4a674b5ac5db42184d0f5606b330af5d04f24c3
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035325"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12081873"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +27,7 @@ ms.locfileid: "12035325"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="override-geolocation-with-microsoft-edge-devtools"></a>使用 DevTools Microsoft Edge地理位置
+# <a name="override-geolocation-with-microsoft-edge-devtools"></a>使用开发人员工具Microsoft Edge地理位置
 
 许多网站都利用用户位置来为用户提供更相关的体验。  例如，在用户授予网站访问当前用户位置的权限后，天气网站可能会显示用户区域中的本地天气预报。
 
@@ -48,14 +48,10 @@ ms.locfileid: "12035325"
        从 `Tokyo` "**地理位置"列表中选择**
     :::image-end:::
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队
+<!-- /web/fundamentals/native-hardware/user-location/index -->
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
-<!-- links -->
-
-<!--[WebFundamentalsNativeHardwareUserLocationIndex]: /web/fundamentals/native-hardware/user-location/index "User Location"  -->
-
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/device-mode/geolocation)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。

@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 2c977cd4951123936d55b52ef30b66566cae42c4
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 7880a59f04a12718c9d9447725b9ebec95466200
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036858"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083651"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -99,7 +99,7 @@ ms.locfileid: "12036858"
 *   请考虑在 CDN 上托管内容或更改托管提供者。
 *   通过优化请求发送更少的字节。
 
-<!--   ## Contribute knowledge
+<!-- ## Contribute knowledge  / Getting in touch
 
 Do you have a network issue that should be added to this guide?
 
@@ -107,18 +107,17 @@ Do you have a network issue that should be added to this guide?
 *   Choose **Send Feedback** \(![Send Feedback](../media/smile-icon.msft.png)\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.
 *   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [NetworkPerformance]: ./index.md "使用 Microsoft Edge DevTools 检测网络活动 | Microsoft Docs"
 
 [MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]
 
 [WebFundamentalsIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D "新问题 - MicrosoftDocs/edge-developer"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > [此处](https://developers.google.com/web/tools/chrome-devtools/network/issues)可以找到原始页面，由 [Kayce Basques][KayceBasques] \（技术写作人员，Chrome DevTools \& Lighthouse\）和 [Jonathan Garbee][JonathanGarbee] \（Web技术的谷歌开发技术专家\）编写。

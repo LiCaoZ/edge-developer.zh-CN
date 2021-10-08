@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 42480de15822724a8f7adf9cdb1d78b953f54a5d
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: ecb549b3122510e4e4c7f415323a9d8d3c752a09
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036872"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083077"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -40,8 +40,7 @@ ms.locfileid: "12036872"
 *   一些 **网络工具** 筛选器，如 `URL` `XHR` 、、 `JS` 和 `CSS` 。
 *   [$0][DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]控制台实用程序 API。
 
-现在，在控制台中[为][DevtoolsConsoleIndex]使用 DevTools 本地化版本的用户提供[$0。][DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]   感谢全球开发人员社区帮助改进开发人员工具Microsoft Edge本地化。  继续 [发送本地化质量反馈](#getting-in-touch-with-microsoft-edge-devtools-team) ，以改进在所有区域设置中对 DevTools 的支持。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[#1136655"。][CR1136655]
-
+现在，在控制台中[为][DevtoolsConsoleIndex]使用 DevTools 本地化版本的用户提供[$0。][DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]   感谢全球开发人员社区帮助改进开发人员工具Microsoft Edge本地化。  继续[发送本地化质量反馈][联系人]，以改进在所有区域设置中对 DevTools 的支持。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[#1136655"。][CR1136655]
 
 :::image type="complex" source="../../media/2020/10/bing-network-japanese.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/bing-network-japanese.msft.png":::
    **具有** 非本地化筛选器的网络窗格
@@ -49,11 +48,11 @@ ms.locfileid: "12036872"
 
 ## <a name="move-tools-between-top-and-bottom-panels"></a>在顶部和底部面板之间移动工具
 
-DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时查看两个工具的任意组合来自定义 DevTools 并提高工作效率。  例如，通过将"**** 源"工具**** 移动到底部\ (，同时查看"元素"和"源") 。 ****  若要在开放源代码项目中查看此功能的Chromium，请导航到"问题[#1075732"。][CR1075732]
+DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时查看两个工具的任意组合来自定义 DevTools 并提高工作效率。  例如，将"源****"工具移动到**** 底部\ (的同时查看"元素"和"源") 。 ****  若要在开放源代码项目中查看Chromium历史记录，请导航到"问题[#1075732"。][CR1075732]
 
 :::row:::
    :::column span="":::
-      若要将任何顶部工具移到底部，请将鼠标悬停在选项卡上，打开上下文菜单 \ (右键单击\) ，然后选择"移动到**底部"。**
+      若要将任何顶部工具移动到底部，请将鼠标悬停在选项卡上，打开上下文菜单 \ (右键单击\) ，然后选择"移动到**底部"。**
 
       :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="移动到底部" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
          移动到底部 :::image-end:::
@@ -96,14 +95,14 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
    试验功能
 :::image-end:::
 
-现在Microsoft Edge开发人员工具支持以下功能来检查、查看和调试 CSS 网格。
+开发人员Microsoft Edge工具现在支持以下功能来检查、查看和调试 CSS 网格。
 
 *   使用 Inspect 工具显示简化的网格 **覆盖，或** 获取有关永久性覆盖的更多详细信息。
 *   若要启用持久网格覆盖，请选择"元素"工具中网格容器元素旁边的网格图标，**** 或在"布局"工具**中选择**网格。
 *   你可以为多个网格启用永久性覆盖。
 *   新的 **布局** 工具允许你轻松切换网格覆盖，并为每个覆盖层配置外观和内容。
 
-默认情况下，这些功能为打开状态。  有关功能的更多信息，请导航到 [CSS 网格][DevtoolsCssGrid]。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[#1047356"。][CR1047356]  此外，Microsoft Edge开发工具团队正在与 Chrome DevTools 团队和 Chromium 社区协作，以向 DevTools 添加新的弹性框工具功能。  有关开放源代码项目中的 flexbox Chromium更新，请导航到"问题[#1136394"。][CR1136394]
+默认情况下，这些功能为打开状态。  有关功能的更多信息，请导航到 [CSS 网格][DevtoolsCssGrid]。  若要在开放源代码项目中查看Chromium历史记录，请导航到"问题[#1047356"。][CR1047356]  此外，Microsoft Edge开发人员工具团队正在与 Chrome DevTools 团队和 Chromium 社区协作，以向 DevTools 添加新的弹性框工具功能。  有关开放源代码项目中 flexbox 工具Chromium更新，请导航到"问题[#1136394"。][CR1136394]
 
 :::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="具有网格的布局工具" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
    **具有** 网格的布局工具
@@ -115,7 +114,7 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
    试验功能
 :::image-end:::
 
-现在，你可以为 DevTools 中任何操作自定义键盘快捷方式。  自 Microsoft Edge版本 84 起，你可以选择在 Visual Studio Code**** 和**DevTools** (键盘快捷方式) [预设。][DevtoolsCustomizeShortcuts]  从 Microsoft Edge版本 87 开始，你可以打开启用键盘快捷方式**编辑器**实验以进一[步自定义键盘快捷方式][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]。
+现在，你可以为 DevTools 中任何操作自定义键盘快捷方式。  自Microsoft Edge版本 84 起，你能够在 Visual Studio Code 和**** **DevTools** (键盘快捷方式) 预设[。][DevtoolsCustomizeShortcuts]  从 Microsoft Edge版本 87 开始，你可以打开启用键盘快捷方式**编辑器**实验以进一[步自定义键盘快捷方式][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]。
 
 若要启用实验，请导航到[打开实验功能][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]，然后选择启用键盘快捷方式编辑器旁边的**复选框。**  有关自定义和编辑快捷方式的详细信息，请导航到“[编辑开发工具中任何操作的键盘快捷方式][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]”。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[#174309"。][CR174309]
 
@@ -123,15 +122,15 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
    用于暂停脚本的自定义快捷方式
 :::image-end:::
 
-## <a name="introducing-the-microsoft-edge-tools-for-visual-studio-code-extension"></a>Microsoft Edge Tools for Visual Studio Code 扩展
+## <a name="introducing-the-microsoft-edge-tools-for-visual-studio-code-extension"></a>Microsoft Edge工具扩展Visual Studio Code
 
-适用于**Visual Studio Code**和 Network **for Visual Studio Code**扩展的元素现在合并到新的 Microsoft Edge[开发人员工具中Visual Studio Code][VisualStudioCodeMarketplaceMsEdgedevtools]扩展。  将 Microsoft Edge DevTools 用于以下活动，而无需保留Microsoft Visual Studio代码。
+适用于**Visual Studio Code**和**Network for Visual Studio Code**的 Elements 现在合并到新的 Microsoft Edge Developer Tools for [Visual Studio Code][VisualStudioCodeMarketplaceMsEdgedevtools]扩展中。  将 Microsoft Edge DevTools 用于以下活动，而无需保留Microsoft Visual Studio代码。
 
 *   调试 DOM
 *   编辑 CSS
 *   检查网络流量
 
-借助扩展，Microsoft Edge浏览器，连接到浏览器的现有实例，或者直接从编辑器使用无头浏览器。  若要开始提供和归档有关此扩展的反馈问题，请导航到 Microsoft Edge[上的][GithubMicrosoftVscodeEdgeDevtools]Visual Studio Code 开发人员GitHub。
+借助扩展，Microsoft Edge浏览器，连接到浏览器的现有实例，或者直接从编辑器使用无头浏览器。  若要开始提供和归档有关此扩展的反馈问题，请导航到 Microsoft Edge[上的][GithubMicrosoftVscodeEdgeDevtools]Visual Studio Code 开发人员工具存储库GitHub。
 
 :::row:::
    :::column span="":::
@@ -175,7 +174,7 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
 
 #### <a name="view-the-computed-sidebar-pane-in-the-styles-pane"></a>查看"样式"窗格中的"计算边栏"窗格
 
-切换 **"样式"** 窗格中的"计算 **"** 窗格。  默认情况下 **，"****样式"窗格中**的计算窗格是折叠的。  若要切换它，请选择该按钮。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[#1073899"。][CR1073899]
+切换 **"样式"** 窗格中的"计算 **"** 窗格。  默认情况下 **，"****样式"窗格中**的计算窗格是折叠的。  若要切换它，请选择该按钮。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[#1073899"][CR1073899]。
 
 :::row:::
    :::column span="":::
@@ -226,13 +225,13 @@ performance.mark('end');
    资源类型筛选器
 :::image-end:::
 
-若要发现更多特殊关键字（如 和 ），请导航到 [按属性筛选请求 `resource-type` `url` ][DevtoolsNetworkReferenceFilterRequestsProperties]。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[][CR1104188]"#1121141#1104188。 [][CR1121141]
+若要发现更多特殊关键字（如 和 ），请导航到 [按属性筛选请求 `resource-type` `url` ][DevtoolsNetworkReferenceFilterRequestsProperties]。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题["#1121141#1104188"][CR1121141] [。][CR1104188]
 
 ### <a name="frame-details-view-updates"></a>框架详细信息视图更新
 
 #### <a name="display-coep-and-coop-reporting-to-endpoint"></a>向终结点显示 COEP 和 COOP 报告
 
-查看"安全与隔离"部分下的跨源嵌入器策略 \ (COEP\) 和跨源开放程序策略 \ (COOP\) `reporting to` **&** 终结点。  报告 [API][MdnReportingApi] 定义一个新的 HTTP 标头，它为你提供了一种指定浏览器服务器终结点以 `Report-To` 发送警告和错误的方法。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[#1051466"。][CR1051466]
+查看"安全与隔离"部分下的跨源嵌入器策略 \ (COEP\) 和跨源打开器策略 \ (COOP\) `reporting to` **&** 终结点。  报告 [API][MdnReportingApi] 定义一个新的 HTTP 标头，它为你提供了一种指定浏览器服务器终结点以 `Report-To` 发送警告和错误的方法。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[#1051466"。][CR1051466]
 
 :::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="报告到终结点" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
    `reporting to`终结点
@@ -256,7 +255,7 @@ CSS **概述** 工具现在显示页面上具有颜色对比度问题的元素�
 
 [CSS 概述辅助颜色演示][GlitchCssOverviewAccessibleColorsDemo]
 
-若要启用此实验，设置****  >  **实验"** 下，选中 **"CSS 概述"** 复选框。  若要查看具有颜色对比度问题的元素的列表，在对比度问题上，选择******文本**。  若要在"元素"工具 **中** 打开元素，请选择列表中的元素。  为了帮助修复对比度问题，Microsoft Edge开发人员工具[自动提供颜色建议][DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]。  若要在开源项目中查看此功能Chromium，请导航到"问题[#1120316"。][CR1120316]
+若要启用此实验，在 **"设置"**  >  **** 下，选中 **"CSS 概述"** 复选框。  若要查看具有颜色对比度问题的元素的列表，在对比度问题上，选择******文本**。  若要在"元素"工具 **中** 打开元素，请选择列表中的元素。  为了帮助修复对比度问题，Microsoft Edge开发人员工具[自动提供颜色建议][DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[#1120316"。][CR1120316]
 
 :::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="低色对比度问题" lightbox="../../media/2020/10/css-overview.msft.png":::
    低色对比度问题
@@ -266,26 +265,23 @@ CSS **概述** 工具现在显示页面上具有颜色对比度问题的元素�
 
 如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels] 作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
-[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsTool]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-tool "&quot;元素&quot;工具中的&quot;属性&quot;窗格弃用 - DevTools (Microsoft Edge 84) |Microsoft Docs"
+[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsTool]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-tool "&quot;元素&quot;工具中的&quot;属性&quot;窗格弃用 - DevTools (Microsoft Edge 84 中的) |Microsoft Docs"
 [DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "CSS 网格调试功能 - DevTools (Microsoft Edge 85) |Microsoft Docs"
-[DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]: ../08/devtools.md#accessible-color-suggestion-in-the-styles-pane "&quot;样式&quot;窗格中的可访问颜色建议 - DevTools (Microsoft Edge 86 中的新增) |Microsoft Docs"
+[DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]: ../08/devtools.md#accessible-color-suggestion-in-the-styles-pane "&quot;样式&quot;窗格中的可访问颜色建议 - 86 (Microsoft Edge中的新增功能) |Microsoft Docs"
 
 [DevtoolsConsoleIndex]: ../../../console/index.md "使用控制台|Microsoft Docs"
 [DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]:  ../../../console/utilities.md#recently-chosen-element-or-javascript-object "最近选择的元素或 JavaScript 对象 - 控制台实用程序 API |Microsoft Docs"
-[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "在开发人员工具中自定义键盘快捷方式 | Microsoft Docs"
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "在 DevTools 中自定义键盘快捷方式 | Microsoft Docs"
 [DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action "为 DevTools 中的任何操作编辑键盘快捷方式 | Microsoft Docs"
-[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "在 Microsoft Edge 开发人员工具中模拟移动设备 | Microsoft Docs"
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"
 [DevtoolsEvaluatePerformanceReference]: ../../../evaluate-performance/reference.md "性能分析参考 | Microsoft Docs"
 [DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: ../../../experimental-features/index.md#emulation-support-dual-screen-mode "模拟：支持双屏幕模式 - 实验|Microsoft Docs"
 [DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features.md#enable-experimental-apis "启用实验性 API - 实验|Microsoft Docs"
 <!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | Microsoft Docs"  -->
-[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]： ../../../experimental-features/index.md#enable-new-css-grid-debugging-features "Emulation： Support dual screen mode - Experimental features |Microsoft Docs&quot; [DevtoolsExperimentalFeaturesEnableNetworkConsole]： ../../../experimental-features/index.md#enable-network-console &quot;Enable Network Console - Experimental features |Microsoft Docs&quot; [DevtoolsExperimentalFeaturesEnableSourceOrderViewer]： ../../../experimental-features/index.md#enable-source-order-viewer &quot;Enable Source Order Viewer - Experimental features |Microsoft Docs&quot; [DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]： ../../../experimental-features/index.md#testing-on-foldable-and-dual-screen-devices &quot;Testing on foldable and dual-screen devices - Experimental features |Microsoft Docs&quot; [DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]： ../../../experimental-features/index.md#turning-on-experimental-features &quot;打开实验性功能 - 实验|Microsoft Docs&quot; [DevtoolsConsoleApiTable]： ../../../console/api.md#table &quot;table - 控制台 API |Microsoft Docs&quot; [DevtoolsCoverageIndex]： ../../../coverage/index.md &quot;Find unused JavaScript and CSS code with the Coverage tab in Microsoft Edge DevTools |Microsoft Docs&quot; [DevtoolsCssGrid]： ../../../css/grid.md &quot;Inspect CSS Grid |Microsoft Docs&quot; [DevtoolsCustomizeIndexDrawer]： ../../../customize/index.md#drawer &quot;Drawer - Microsoft Edge DevTools |Microsoft Docs&quot; [DevtoolsCustomizeIndexSettings]： ../../../customize/index.md#settings &quot;设置 - Microsoft Edge DevTools |Microsoft Docs&quot; [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]： ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tab &quot;Analyze rendering performance with the Rendering tab - Performance Analysis Reference |Microsoft Docs&quot; [DevtoolsMediaIndex]： ../../../media/index.md &quot;View and debug media players information |Microsoft Docs&quot; [DevtoolsNetworkReferenceFilterRequestsProperties]： ../../../network/reference.md#filter-requests-by-properties &quot;Filter requests by properties - Network Analysis reference |Microsoft Docs&quot; [DevtoolsWebauthnIndex]： ../../../webauthn/index.md &quot;Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools |Microsoft Docs"
+[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]： ../../../experimental-features/index.md#enable-new-css-grid-debugging-features "Emulation： Support dual screen mode - Experimental features |Microsoft Docs&quot; [DevtoolsExperimentalFeaturesEnableNetworkConsole]： ../../../experimental-features/index.md#enable-network-console &quot;Enable Network Console - Experimental features |Microsoft Docs&quot; [DevtoolsExperimentalFeaturesEnableSourceOrderViewer]： ../../../experimental-features/index.md#enable-source-order-viewer &quot;Enable Source Order Viewer - Experimental features |Microsoft Docs&quot; [DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]： ../../../experimental-features/index.md#testing-on-foldable-and-dual-screen-devices &quot;Testing on foldable and dual-screen devices - Experimental features |Microsoft Docs&quot; [DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]： ../../../experimental-features/index.md#turning-on-experimental-features &quot;打开实验性功能 - 实验功能|Microsoft Docs&quot; [DevtoolsConsoleApiTable]： ../../../console/api.md#table &quot;table - 控制台 API |Microsoft Docs&quot; [DevtoolsCoverageIndex]： ../../../coverage/index.md &quot;Find unused JavaScript and CSS code with the Coverage tab in Microsoft Edge DevTools |Microsoft Docs&quot; [DevtoolsCssGrid]： ../../../css/grid.md &quot;Inspect CSS Grid |Microsoft Docs&quot; [DevtoolsCustomizeIndexDrawer]： ../../../customize/index.md#drawer &quot;Drawer - Microsoft Edge DevTools |Microsoft Docs&quot; [DevtoolsCustomizeIndexSettings]： ../../../customize/index.md#settings &quot;设置 - Microsoft Edge DevTools |Microsoft Docs&quot; [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]： ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tab &quot;Analyze rendering performance with the Rendering tab - Performance Analysis Reference |Microsoft Docs&quot; [DevtoolsMediaIndex]： ../../../media/index.md &quot;View and debug media players information |Microsoft Docs&quot; [DevtoolsNetworkReferenceFilterRequestsProperties]： ../../../network/reference.md#filter-requests-by-properties &quot;Filter requests by properties - Network Analysis reference |Microsoft Docs&quot; [DevtoolsWebauthnIndex]： ../../../webauthn/index.md &quot;在 DevTools Microsoft Edge中模拟验证器和调试 WebAuthn |Microsoft Docs"
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge 预览频道"
 
@@ -302,12 +298,12 @@ CSS **概述** 工具现在显示页面上具有颜色对比度问题的元素�
 [CR1051466]: https://crbug.com/1051466 "支持 DevTools | 中的 COOP/COEP 调试Chromium Bug"
 [CR1073899]: https://crbug.com/1073899 "计算样式选项卡在响应模式下消失|Chromium Bug"
 [CR1075732]: https://crbug.com/1075732 "DevTools 个性化设置 - &quot;开发工具&quot;选项卡|Chromium Bug"
-[CR1084673]: https://crbug.com/1084673 "DevTools：改进我们呈现 CSS 自定义属性的方式 ( (一种) 。CSS 变量) 及其值|Chromium Bug"
+[CR1084673]: https://crbug.com/1084673 "DevTools：改进我们呈现 CSS 自定义属性的方式 ( (另一种) 。CSS 变量) 及其值|Chromium Bug"
 [CR1093687]: https://crbug.com/1093687 "创建用于创建和重播综合网络请求|Chromium Bug"
 [CR1096230]: https://crbug.com/1096230 "在计算样式窗格中按类别分组 CSS |Chromium Bug"
 [CR1104188]: https://crbug.com/1104188 "在搜索完整 URL 搜索时，网络工具搜索找不到|Chromium Bug"
 [CR1106251]: https://crbug.com/1106251 "☂ DevTools：改进计算样式选项卡|Chromium Bug"
-[CR1120316]: https://crbug.com/1120316 "在&quot;CSS 概述&quot;下突出显示>颜色|ChromiumBug"
+[CR1120316]: https://crbug.com/1120316 "突出显示 CSS 概述和颜色>对比度|ChromiumBug"
 [CR1121141]: https://crbug.com/1121141 "允许在网络日志日志中按资源类型|Chromium Bug"
 [CR1121312]: https://crbug.com/1121312 "设置&quot;更多工具&quot;菜单中删除|Chromium Bug"
 [CR1136394]: https://crbug.com/1136394 "Flexbox 工具|ChromiumBug"

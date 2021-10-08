@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 7ae73a58d1ec976026eeb25cb81f19076b7ae0d6
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: a7f26d9857483e503ae8f31f9211b03d941dab37
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035577"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083266"
 ---
 # <a name="use-the-console"></a>使用控制台
 
@@ -41,7 +41,7 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
 
 ## <a name="error-reports-and-the-console"></a>错误报告和控制台
 
-控制台 **是** 报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，"**** 问题"计数器将显示在 DevTools**设置**图标旁边，该图标提供错误和警告的数量。  选择 **"问题"** 计数器以打开 **"问题** "工具并显示问题。  有关详细信息，请导航到["修复控制台中报告的 JavaScript 错误"。][DevtoolsConsoleConsoleDebugJavascript]
+控制台 **是** 报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，"**** 问题"计数器将显示在 DevTools**中**提供错误和警告设置图标旁边。  选择 **"问题"** 计数器以打开 **"问题** "工具并显示问题。  有关详细信息，请导航到["修复控制台中报告的 JavaScript 错误"。][DevtoolsConsoleConsoleDebugJavascript]
 
 :::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools 提供有关控制台中错误的详细信息" lightbox="../media/console-debug-displays-error.msft.png":::
    DevTools 提供有关控制台中错误 **的详细信息**
@@ -50,7 +50,7 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
 
 ## <a name="look-up-error-messages-on-the-web-from-the-console"></a>从控制台查找 Web 上的错误消息
 
-从 DevTools **中** ，在 Web 中搜索控制台错误消息。  在 **控制台中**，许多错误消息在 **Web** 按钮上都有"搜索此消息"，显示为放大镜。  当您选择" **在 Web 上搜索此消息** "按钮时，将在浏览器中打开一个新选项卡，并显示错误消息的搜索结果。
+从 DevTools **中** ，在 Web 中搜索控制台错误消息。  在 **控制台中**，许多错误消息在 **Web** 按钮上都有"搜索此消息"，显示为放大镜。  当您选择" **在 Web 上搜索此消息** "按钮时，将在浏览器中打开一个新选项卡，并会显示错误消息的搜索结果。
 
 :::image type="complex" source="../media/search-console-icon.msft.png" alt-text="**Console 中错误消息上的&quot;在 Web 上搜索此消息&quot;按钮" lightbox="../media/search-console-icon.msft.png":::
    控制台 **错误消息上的"在 Web** 上搜索此消息" **按钮**
@@ -80,7 +80,7 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
 控制台最常见的用例是使用 方法**** 或其他类似方法从脚本 `console.log()` 中记录信息。  若要尝试，请完成以下操作。
 
 1.  若要**打开控制台，** 请选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。
-1.  导航到 [控制台消息示例：日志、信息、错误和警告][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]，或在控制台中复制并运行以下 **代码段**。
+1.  导航到 [控制台消息示例：日志、信息、错误和][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]警告，或在控制台中复制并运行以下代码 **段**。
 
     ```javascript
     console.log('This is a log message');
@@ -112,7 +112,7 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
 
 控制台 **将在** 以下行 `4` 中显示结果。  此 **"期待** "评估功能可用于调试和验证代码中没有出错。
 
-:::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="控制台会在你键入时显示 2 + 2 实时的结果" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
+:::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="在键入时，控制台将显示 2 + 2 实时的结果" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
    **控制台**会在您键入 `2 + 2` 实时内容时显示它的结果
 :::image-end:::
 
@@ -132,7 +132,7 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
 1.  选择 `tab` 获取 `document.body` 。
 1.  键入另 `.` 一个，以显示当前网页正文中可用的属性和方法的完整列表。
 
-有关使用控制台的所有方法详细信息，请导航到****[作为 JavaScript 环境的控制台][DevtoolsConsoleConsoleJavascript]。
+有关使用控制台的所有方法详细信息，请导航到**** 作为[JavaScript 环境的控制台][DevtoolsConsoleConsoleJavascript]。
 
 :::image type="complex" source="../media/console-javascript-autocomplete.msft.png" alt-text="JavaScript 表达式的控制台自动完成" lightbox="../media/console-javascript-autocomplete.msft.png":::
    **** JavaScript 表达式的控制台自动完成
@@ -149,7 +149,7 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
     document.querySelector('h1').innerHTML
     ```
 
-:::image type="complex" source="../media/console-intro-reading-DOM.msft.png" alt-text="将顶部标题 (h1) DOM 中的内容，在控制台中显示表达式计算结果" lightbox="../media/console-intro-reading-DOM.msft.png":::
+:::image type="complex" source="../media/console-intro-reading-DOM.msft.png" alt-text="复制顶部标题 (h1) DOM 中的内容，在控制台中显示表达式计算结果" lightbox="../media/console-intro-reading-DOM.msft.png":::
    从 DOM 复制顶部标题 \ (\) 内容，在控制台中显示 `h1` 表达式计算 **结果**
 :::image-end:::
 
@@ -179,16 +179,17 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
     使用控制台操作选定 **元素**
 :::image-end:::
 
-有关使用 DOM 的信息，请导航到"[使用控制台与 DOM 进行交互"。][DevtoolsConsoleConsoleDomInteraction]
 
-## <a name="learn-more-about-console"></a>详细了解控制台
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
 
-有关控制台详细信息 **，** 请导航到"控制台[][DevtoolsConsoleReference]参考["、"控制台实用程序 API][DevtoolsConsoleUtilities]参考"和"[控制台 API 参考"。][DevtoolsConsoleApi]
+*  [使用控制台与 DOM 交互][DevtoolsConsoleConsoleDomInteraction]。
+*  [控制台参考][DevtoolsConsoleReference]
+*  [控制台实用工具 API 参考][DevtoolsConsoleUtilities]
+*  [控制台 API 参考][DevtoolsConsoleApi]
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 [DevtoolsConsoleApi]: ./api.md "控制台 API 参考 | Microsoft Docs"
 [DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "修复控制台控制台中报告的 JavaScript |Microsoft Docs"

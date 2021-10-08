@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: b744a2ee1a6621020e3557c674def179c34b7975
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 1044e531555ff46a009f84df7adce6ddcd653456
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034765"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082041"
 ---
 # <a name="use-the-console-to-interact-with-the-dom"></a>使用控制台与 DOM 交互
 
@@ -261,12 +261,9 @@ unmonitorEvents($0, 'key');
 *   将控制台脚本**存储为**[代码段][DevToolsJavascriptSnippets]。
 *   使用键盘快捷方式或编辑器在网页中运行脚本。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "作为 JavaScript 环境的控制台|Microsoft Docs"
 [DevtoolsConsoleConsoleLog]: ./console-log.md "控制台工具控制台中的|Microsoft Docs"
 [DevtoolsConsoleUtilities]: ./utilities.md "控制台实用程序 API 参考 | Microsoft Docs"

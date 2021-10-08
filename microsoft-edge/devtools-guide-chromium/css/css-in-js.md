@@ -7,12 +7,12 @@ ms.date: 08/25/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， css， css-in-js
-ms.openlocfilehash: 58d6c39c543892302ddb6a3ea0be0cf4e1a0f7f6
-ms.sourcegitcommit: 4695a3bb8ea26f8dd65c5ab8fe383765ae51850c
+ms.openlocfilehash: 10861a86b17bbaba329b32f7075ed0073c9ca07f
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "12081162"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12081856"
 ---
 <!-- Copyright Alex Rudenko
 
@@ -37,11 +37,11 @@ ms.locfileid: "12081162"
 
 从 **"样式** "窗格中，您可以复制样式规则的声明，其格式为 JavaScript 并准备粘贴到 JavaScript 文件中。
 
-使用 CSS-in-JS 库时，您可以将 CSS 声明 (CSS 属性和值) 以便它们会自动为 JavaScript 设置格式。  不必手动编辑复制的 CSS 以匹配 JavaScript 的语法。  可以在样式规则中复制单个 CSS 声明或所有声明，然后将其直接粘贴到 JavaScript 文件中，而不会遇到语法问题。
+使用 CSS-in-JS 库时，您可以将 CSS 声明 (CSS 属性和值) 以便它们会自动格式化为 JavaScript。  不必手动编辑复制的 CSS 以匹配 JavaScript 的语法。  可以在样式规则中复制单个 CSS 声明或所有声明，然后将其直接粘贴到 JavaScript 文件中，而不会遇到语法问题。
 
 将样式规则复制为 JavaScript：
 
-1. 在 **"元素**"工具的****"样式"窗格中，打开上下文菜单 \ (右键单击\) 样式规则中的声明。
+1. 在 **"元素"** 工具的****"样式"窗格中，打开上下文菜单 \ (右键单击\) 样式规则中的声明。
 
 1. 选择 **"将声明复制为 JS"** 或 **"复制所有声明为 JS"。**
 
@@ -98,7 +98,7 @@ function addStyle() {
 
 在 DevTools 上下文中 _，CSS-in-JS_ 意味着 CSS 内容通过 CSS 对象模型 API 注入页面。  使用 或 元素注入常规 CSS，并且具有静态源 (如 DOM 节点或 `<style>` `<link>` 网络资源) 。  相比之下，CSS-in-JS 通常没有静态源。  此处的一个特例是，可以使用 CSS 对象模型 API 更新元素的内容，从而导致源与实际的 `<style>` CSS 样式表不同步。
 
-如果使用任何 CSS-in-JS 库 (如样式组件、百年计划或 JSS) ，该库可能会使用 CSS 对象模型 API 在底层注入样式，具体取决于开发模式和浏览器。
+如果使用任何 CSS-in-JS 库 (如样式组件、百年或 JSS) ，则库可能使用 CSS 对象模型 API 在底层注入样式，具体取决于开发模式和浏览器。
 
 我们来看看如何使用 CSS 对象模型 API 注入样式表的一些示例，类似于某些 CSS-in-JS 库使用的方法。
 
@@ -134,18 +134,6 @@ document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
 
 
 <!-- ====================================================================== -->
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-> [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处](https://developer.chrome.com/blog/css-in-js/) ，由 [Alex 则][AlexRudenko] \ (Technical Writer、Chrome DevTools \& Lighthouse\) 创作。
-
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-
-<!-- ====================================================================== -->
 <!-- links -->
 [CssReference]: reference.md "CSS 功能参考|Microsoft Docs"
 <!-- external links -->
@@ -159,3 +147,11 @@ document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies
 [AlexRudenko]: https://developers.google.com/web/resources/contributors#alex-rudenko
+
+
+<!-- ====================================================================== -->
+> [!NOTE]
+> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
+> 原始页面位于 [此处](https://developer.chrome.com/blog/css-in-js/) ，由 [Alex 则][AlexRudenko] \ (Technical Writer、Chrome DevTools \& Lighthouse\) 创作。
+
+[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。

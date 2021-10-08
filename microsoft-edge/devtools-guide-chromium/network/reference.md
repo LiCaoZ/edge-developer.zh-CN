@@ -7,12 +7,12 @@ ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: b59e4aab61c5bcb6ab65a0f2363380403ad29722
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 8ece993ae6f77fb007272490e5574365a2f916ec
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035759"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12081971"
 ---
 <!-- Copyright Kayce Basques
 
@@ -181,7 +181,7 @@ ms.locfileid: "12035759"
     :::image type="complex" source="images/network-conditions-user-agent-client-hints.msft.png" alt-text="设置用户代理客户端提示" lightbox="images/network-conditions-user-agent-client-hints.msft.png":::
         设置用户代理客户端提示 :::image-end:::
 
-1. 接受"自定义 **..."** 默认值，或者从下拉列表中选择预定义的浏览器和设备。
+1. 接受"自定义 **..."** 的默认值，或者从下拉列表中选择预定义的浏览器和设备。
 1. 对于任一选项，按如下方式设置用户代理客户端提示。
     * **品牌**和**版本**，如*Edge*和*92。* 选择 **+ 添加品牌** 以添加多个品牌和版本对。
     * **完整浏览器版本**，例如*92.0.1111.0。*
@@ -195,7 +195,7 @@ ms.locfileid: "12035759"
 1. 选择**更新**。
 1. 若要验证更改，请选择" **控制台"** 并键入 `navigator.userAgentData` 。 根据需要展开结果以查看用户代理数据更改。
 
-还可以在"模拟移动设备"的 Microsoft Edge[中设置用户代理客户端Microsoft Edge。](../device-mode/index.md)
+还可以在模拟移动设备的 Microsoft Edge[中设置用户代理客户端Microsoft Edge。](../device-mode/index.md)
 
 ## <a name="filter-requests"></a>筛选请求
 
@@ -690,7 +690,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
       **代理协商**
    :::column-end:::
    :::column span="2":::
-      浏览器正在与[代理服务器][WikiProxyServer]协商请求。
+      浏览器正在通过 [代理服务器][WikiProxyServer] 协商请求。
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -979,20 +979,16 @@ init();
    “**显示概述**”复选框
 :::image-end:::
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "调试渐进式 Web 应用 | Microsoft Docs"
-
 <!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions | Microsoft Docs"  -->
+<!-- external links -->
+[MDNHTTPDataURIs]： https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "Data URLs |MDN&quot; [WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server &quot;Proxy server - Wikipedia"
 
-[MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "数据 URL | MDN"
 
-[WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "代理服务器 - 维基百科"
-
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/network/reference)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。

@@ -7,16 +7,16 @@ ms.date: 08/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， vs code， visual studio code， webhint
-ms.openlocfilehash: a4c139871b0ae9a59bb48552f23ea2d1b60d54f9
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: 374ed05bf5956f20c5f4ca51067608026d90d87a
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11975901"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083588"
 ---
 # <a name="the-webhint-extension-for-visual-studio-code"></a>webhint 扩展Visual Studio Code
 
-使用[Webhint（][WebhintMain]一种可自定义的 Lint 工具）可改进网站的辅助功能、性能、跨浏览器PWA兼容性和安全性。  它会检查代码的最佳实践和常见错误。 此开放源代码项目最初由 Microsoft Edge 开发，现在是[OpenJS Foundation 的一部分][OpenjsFoundation]。  Microsoft Edge团队将继续与社区中的 Web 开发人员一起为 webhint 做贡献。
+使用[Webhint（][WebhintMain]一个可自定义的 Lint 工具）可改进网站的辅助功能、性能、跨浏览器PWA兼容性和安全性。  它会检查代码的最佳实践和常见错误。 此开放源代码项目最初由 Microsoft Edge 开发，现在是[OpenJS Foundation 的一部分][OpenjsFoundation]。  Microsoft Edge团队将继续与社区中的 Web 开发人员一起为 webhint 做贡献。
 
 通过添加 webhint 扩展以识别并修复 HTML、CSS、JavaScript、TypeScript 等Visual Studio Code。  提示显示为内联下划线，并汇总在"问题 **"** 窗格中。
 
@@ -28,7 +28,7 @@ ms.locfileid: "11975901"
 <!-- ====================================================================== -->
 ## <a name="installing-webhint"></a>安装 Webhint
 
-若要从网站内安装 webhint Visual Studio Code，请导航到[webhint 扩展Visual Studio Code。](index.md#the-webhint-extension-for-visual-studio-code) <!-- in the article _Visual Studio Code overview_. -->  或者，你可以从 Visual Studio Code Marketplace 安装[webhint][VisualstudioMarketplaceWebhint] Visual Studio扩展。
+若要从网站内安装 webhint Visual Studio Code，请导航到[webhint 扩展Visual Studio Code。](index.md#the-webhint-extension-for-visual-studio-code) <!-- in the article _Visual Studio Code overview_. -->  或者，也可以安装[Webhint 扩展，Visual Studio Code][VisualstudioMarketplaceWebhint]应用商店Visual Studio Webhint。
 
 
 <!-- ====================================================================== -->
@@ -92,7 +92,7 @@ ms.locfileid: "11975901"
 <!-- ====================================================================== -->
 ## <a name="getting-in-touch-with-the-webhint-team"></a>与 Webhint 团队联系
 
-通过向[Webhint][GithubWebhintioIssuesNew]存储库提交问题GitHub[反馈][GithubWebhintio]。
+通过向[Webhintio/hint 存储库提交问题来发送][GithubWebhintio]反馈。 [][GithubWebhintioIssuesNew]
 
 若要参与扩展，请 [导航到存储库][GithubWebhintioExtensionVscodeContributing] 的"参与 `webhintio/hint` "。
 
@@ -105,7 +105,7 @@ ms.locfileid: "11975901"
 
 
 <!-- ====================================================================== -->
-<!--links -->
+<!-- links -->
 [AccessibilityIndex]: /microsoft-edge/accessibility "辅助功能|Microsoft Docs"
 [VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Visual Studio Code |Microsoft Docs"
 <!-- external links -->

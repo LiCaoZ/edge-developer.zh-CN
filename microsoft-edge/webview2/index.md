@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、edge html、Windows Forms、WinForms、WPF、.NET、WinUI、Project Reunion
-ms.openlocfilehash: 25c521424b169ed737e24fae7edb31ca86dbf178
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 73db208337f6d0ccabeed55b50c6af5ea67756eb
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035738"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082839"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介
 
@@ -130,7 +130,7 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术\(HTML、
       依赖带有定期平台更新和安全修补的最新版 Chromium。
    :::column-end:::
    :::column span="1":::
-      （可选）在应用中打包特定Chromium位。
+      （可选）打包应用中特定Chromium位。
    :::column-end:::
    :::column span="1":::
       将 Web 组件分片添加到应用。
@@ -177,35 +177,28 @@ WebView2 应用可以在以下版本的 Windows。
 > [!IMPORTANT]
 > \*\* 对 Windows 7 和 Windows Server 2008 R2 的 WebView2 支持与 Microsoft Edge 的支持周期相同。  有关详细信息，请导航到 [Microsoft Edge 支持的操作系统][DeployedgeMicrosoftEdgeSupportedOS]。
 
-## <a name="next-steps"></a>后续步骤
 
-若要详细了解如何生成和部署 WebView2 应用，请使用以下概念文档和操作指南。
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
 
-### <a name="concepts"></a>概念
+*  [了解 WebView2 SDK 版本][Webview2ConceptsVersioning]
+*  [分发 WebView2 应用和 WebView2 运行时][Webview2ConceptsDistribution]
+*  [开发安全的 WebView2 应用的最佳做法][Webview2ConceptsSecurity]
+*  [在 WebView2 应用中管理用户数据文件夹][Webview2ConceptsUserDataFolder]
+*  [如何使用 WebView2 进行调试][Webview2HowToDebug]
+*  [使用 Microsoft Edge 驱动程序自动执行并测试 WebView2][Webview2HowToWebdriver]
 
-*   [了解 WebView2 SDK 版本][Webview2ConceptsVersioning]
-*   [分发 WebView2 应用和 WebView2 运行时][Webview2ConceptsDistribution]
-*   [开发安全的 WebView2 应用的最佳做法][Webview2ConceptsSecurity]
-*   [在 WebView2 应用中管理用户数据文件夹][Webview2ConceptsUserDataFolder]
 
-### <a name="how-to-guides"></a>操作指南
-
-*   [如何使用 WebView2 进行调试][Webview2HowToDebug]
-*   [使用 Microsoft Edge 驱动程序自动执行并测试 WebView2][Webview2HowToWebdriver]
-
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>联系 Microsoft Edge WebView 团队
-
-[!INCLUDE [contact WebView team note](./includes/contact-webview-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 [Webview2ConceptsDistribution]: ./concepts/distribution.md "分发 WebView2 应用和 WebView2 运行时|Microsoft Docs"
 [Webview2ConceptsSecurity]: ./concepts/security.md "开发安全的 WebView2 应用的最佳做法 | Microsoft Docs"
 [Webview2ConceptsUserDataFolder]: ./concepts/user-data-folder.md "管理用户数据文件夹 | Microsoft Docs"
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "了解 WebView2 SDK 版本 | Microsoft Docs"
 
-[Webview2GetStartedWin32]: ./get-started/win32.md "在 Win32 应用和应用中开始使用 WebView2 |Microsoft Docs"
+[Webview2GetStartedWin32]: ./get-started/win32.md "Win32 应用和应用中的 WebView2 |Microsoft Docs"
 [Webview2GetStartedWinforms]: ./get-started/winforms.md "WinForms 应用和应用中的 WebView2 |Microsoft Docs"
-[Webview2GetStartedWinui2]: ./get-started/winui2.md "在 WinUI 2 应用中开始使用 WebView2 |Microsoft Docs"
+[Webview2GetStartedWinui2]: ./get-started/winui2.md "WinUI 2 应用和应用中的 WebView2 |Microsoft Docs"
 [Webview2GetStartedWinui]: ./get-started/winui.md "WinUI 3 应用和预览版中的 WebView2 (入门) |Microsoft Docs"
 [Webview2GetStartedWpf]: ./get-started/wpf.md "WPF 应用和应用中的 WebView2 |Microsoft Docs"
 

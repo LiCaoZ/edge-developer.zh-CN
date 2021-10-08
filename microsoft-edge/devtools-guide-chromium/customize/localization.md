@@ -7,12 +7,12 @@ ms.date: 03/30/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， 开发工具， 本地化， loc， 语言
-ms.openlocfilehash: 8706a038c76c7d50a0e45fba52627572a7bea4bd
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 18df3c803d43631a3d4fef6e201289f9b19315bb
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035549"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083392"
 ---
 # <a name="change-devtools-language-settings"></a>更改 DevTools 语言设置
 
@@ -28,7 +28,7 @@ ms.locfileid: "12035549"
 :::row-end:::
 :::row:::
    :::column span="2":::
-      法语 –&#231;语
+      法语 –&#231;英语
    :::column-end:::
    :::column span="2":::
       德语 - 德语
@@ -65,6 +65,7 @@ ms.locfileid: "12035549"
 
 如果你想要将 DevTools 还原为英语，请导航到[DevTools 设置][DevtoolsCustomizeIndexSettings]或选择 ，选择首选项，然后关闭 `F1` "**匹配浏览器**语言"复选框。 ****
 
-<!-- links -->
 
-[DevtoolsCustomizeIndexSettings]: ./index.md#settings "设置 - 自定义 Microsoft Edge 开发人员工具 | Microsoft Docs"
+<!-- ====================================================================== -->
+<!-- links -->
+[DevtoolsCustomizeIndexSettings]: ./index.md#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"

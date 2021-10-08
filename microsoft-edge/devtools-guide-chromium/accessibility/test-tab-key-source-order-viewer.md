@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 186fb623f69fa1e67395dfdee203aeefd65c396e
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 579b35467b801cc19525abf1041917e152904fd0
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034779"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082748"
 ---
 # <a name="test-keyboard-support-using-the-source-order-viewer"></a>使用源订单查看器测试键盘支持
 
@@ -42,13 +42,13 @@ ms.locfileid: "12034779"
 
 若要打开源订单查看器，请执行以下命令：
 
-1.  在 DevTools 的右上角，选择"设置**\ (** 设置 ![ ](../media/settings-button-icon.msft.png) \) 按钮。
+1.  在 DevTools 的右上角，选择"设置**\ (设置** ![ ](../media/settings-button-icon.msft.png) \) 按钮。
 
-1.  在**** 设置，**选择实验。**
+1.  在**** 设置，**选择实验**。
 
 1.  选中" **源订单查看器"** 复选框。
 
-1.  在页面的右上角，设置**X**以关闭设置页。 ****  在 DevTools 顶部，消息 **一个或多个设置已更改，要求重新加载生效。** 显示。  选择" **重新加载 DevTools"** 按钮。
+1.  在页面的右上角，设置**X**关闭页面设置页。 ****  在 DevTools 顶部，消息 **一个或多个设置已更改，要求重新加载生效。** 显示。  选择" **重新加载 DevTools"** 按钮。
 
 
 
@@ -69,15 +69,12 @@ ms.locfileid: "12034779"
 1.  滚动页面以查看所有数字覆盖，包括页面页脚部分。
 
 
+<!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-
+<!-- ====================================================================== -->
 <!-- links -->
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "辅助功能测试演示网页|GitHub"

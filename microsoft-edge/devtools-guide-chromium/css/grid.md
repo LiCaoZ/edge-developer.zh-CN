@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
-ms.openlocfilehash: b78a5302706ba092734bf9f54ad2cc22d0b78dc5
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 675ab810f653c026e89b593abc235e809f53dca0
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035388"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082258"
 ---
 # <a name="inspect-css-grid"></a>检查 CSS 网格
 
@@ -182,12 +182,9 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
    突出显示网格
 :::image-end:::
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发人员工具团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsGuideChromiumOpen]: ../open/index.md "打开 Microsoft Edge 开发人员工具 | Microsoft Docs"
 
 [JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "CSS 网格 | jec.fyi"

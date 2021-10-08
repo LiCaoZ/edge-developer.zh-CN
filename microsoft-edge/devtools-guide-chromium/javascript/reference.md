@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 55e7276ee190c5e0d5887bb67ae1505e8bf24969
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 652133f6045f6a617f676781c405fd44d81386e1
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035962"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082202"
 ---
 <!-- Copyright Kayce Basques
 
@@ -42,7 +42,7 @@ ms.locfileid: "12035962"
 1.  导航到 **"源"** 工具。
 1.  在 **导航器窗格中** ，选择你的文件，以在编辑器窗格中 **打开** 它。
 1.  在" **编辑器"** 窗格中，编辑文件。
-1.  选择 `Ctrl`+`S` \(Windows、Linux\) 或 `Command`+`S` \(macOS\) 进行保存。  然后，DevTools 将 JavaScript 文件加载至 Microsoft Edge 的 JavaScript 引擎。
+1.  选择 `Ctrl`+`S` \(Windows、Linux\) 或 `Command`+`S` \(macOS\) 进行保存。  然后，DevTools 将 JavaScript 文件加载至 Microsoft Edge。
 
     :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="编辑器窗格" lightbox="../media/javascript-sources-html-minified.msft.png":::
        “**编辑器**”窗格
@@ -50,7 +50,7 @@ ms.locfileid: "12035962"
 
 ## <a name="reformat-a-minified-javascript-file-with-pretty-print"></a>使用非常打印重新设置缩小的 JavaScript 文件
 
-若要使缩小的文件可读，请选择"编辑器"窗格底部的****"格式 ![ \ (Format ](../media/format-icon.msft.png) **\) "** 按钮。
+若要使缩小的文件可读，请选择"编辑器"窗格底部的****"格式 ![ \ (格式 ](../media/format-icon.msft.png) **\) "** 按钮。
 
 :::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="格式按钮" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
    “**格式**”按钮
@@ -80,7 +80,7 @@ ms.locfileid: "12035962"
 
 ### <a name="step-over-line-of-code"></a>逐步执行代码
 
-当暂停包含与正在调试的问题不相关的函数的代码行时，选择"单步执行 **\ (** 单步执行 ![ \) "按钮以运行函数，而无需单步 ](../media/step-over-icon.msft.png) 执行。
+当暂停包含与正在调试的问题不相关的函数的代码行时，选择"单步执行 **\ (** 单步执行 ![ \) "按钮以运行函数，而无需单 ](../media/step-over-icon.msft.png) 步执行。
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="选择逐步执行" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
    选择“**逐步执行**”
@@ -128,7 +128,7 @@ function getName() {
 
 ### <a name="step-out-of-line-of-code"></a>执行剩余代码
 
-当暂停在与正在调试的问题不相关的函数内时，选择"单步执行 **\ (** 步出 \) "按钮以运行函数的其余 ![ ](../media/step-out-icon.msft.png) 代码。
+当暂停在与正在调试的问题不相关的函数内时，选择"单步执行 **\ (** 单步执行 \) "按钮以运行函数的其余 ![ ](../media/step-out-icon.msft.png) 代码。
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="选择执行剩余" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
    选择 **“执行剩余”**
@@ -154,7 +154,7 @@ function getName() {
 
 调试长函数时，可能有许多代码与正在调试的问题不相关。
 
-你可以选择逐行执行，但这很繁琐。  您可以选择在感兴趣的行上设置代码行断点，然后选择"Resume **script execution** \ (Resume script ![ execution \) "按钮，但有一种更快的方法 ](../media/resume-script-run-icon.msft.png) 。
+你可以选择逐行执行，但这很繁琐。  您可以选择在感兴趣的行上设置代码行断点，然后选择 Resume **脚本** 执行 \ (Resume 脚本执行 ![ \) 按钮，但有一种更快的方法 ](../media/resume-script-run-icon.msft.png) 。
 
 将鼠标悬停在你感兴趣的代码行上，打开上下文菜单 \(右键单击\) ，然后选择“**继续至此处**”。  DevTools 会运行所有代码，一直运行到该处，然后暂停到该行。
 
@@ -194,7 +194,7 @@ function factorial(n) {
 
 #### <a name="force-script-runtime"></a>强制脚本运行时
 
-若要忽略所有断点并强制脚本继续运行，请选择并按住 Resume**脚本**执行 \ (Resume script execution \) 按钮，然后选择"强制脚本执行 ![ ](../media/resume-script-run-icon.msft.png) \ (强制脚本执行**** ![ ](../media/force-script-run-icon.msft.png) \) "按钮。
+若要忽略所有断点并强制脚本继续运行，请选择并按住 Resume**脚本**执行 \ (Resume 脚本执行 \) 按钮，然后选择"强制脚本执行 ![ ](../media/resume-script-run-icon.msft.png) \ (强制脚本执行**** ![ ](../media/force-script-run-icon.msft.png) \) "按钮。
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="选择强制脚本执行" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
    选择“**强制脚本执行**”
@@ -229,7 +229,7 @@ function factorial(n) {
    “**监视**”窗格
 :::image-end:::
 
-*   若要创建新的监视表达式，请选择"添加 **监视** 表达式 \ (添加监视表达式 ![ ](../media/add-expression-icon.msft.png) \) "按钮。
+*   若要创建新的监视表达式，请选择"添加 **监视** 表达式 \ (![ 添加监视表达式 ](../media/add-expression-icon.msft.png) \) "按钮。
 *   若要刷新所有现有表达式的值，请选择"刷新 **\ (** ![ 刷新 ](../media/refresh-icon.msft.png) \) "按钮。  逐步执行代码时，值将自动刷新。
 *   若要删除监视表达式，请右键单击该表达式，然后选择"删除 **监视** 表达式 \ (![ 删除监视表达式 ](../media/delete-expression-icon.msft.png) \) "。
 
@@ -272,7 +272,7 @@ onChoose (get-started.js:15)
 
 若你想要在调试时忽略该脚本，请将脚本标记为库代码。  被标记为库代码时，脚本会在“**调用堆叠**”窗格中被遮盖，且你在单步执行代码时绝不会单步执行脚本的函数。
 
-例如，在下面的代码段中，line `A` 使用 `lib` ，这是第三方库。  如果您确信正在调试的问题与该第三方库不相关，那么将脚本标记为库代码 **是有意义的**。
+例如，在下面的代码段中，行使用 `A` `lib` ，这是第三方库。  如果您确信正在调试的问题与该第三方库不相关，那么将脚本标记为库代码 **是有意义的**。
 
 ```javascript
 function animate() {
@@ -288,7 +288,7 @@ function animate() {
 
 1.  打开文件。
 1.  将鼠标悬停在任意位置并打开上下文菜单 \(右键单击\)。
-1.  选择 **"添加脚本"忽略之前** (标记为**库代码的列表) 。**
+1.  选择 **"添加脚本"以**忽略 (之前显示为"标记为库**代码") 。**
 
     :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png" alt-text="在编辑器窗格中将脚本标记为库代码" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png":::
        从“**编辑器**”窗格中将脚本标记为**库代码**
@@ -299,7 +299,7 @@ function animate() {
 若要从"调用堆栈 **"窗格中将** 脚本 **标记为库** 代码：
 
 1.  将鼠标悬停在脚本的函数上，然后打开上下文菜单 \(右键单击\)。
-1.  选择 **"添加脚本"忽略之前** (标记为**库代码的列表) 。**
+1.  选择 **"添加脚本"以**忽略 (之前显示为"标记为库**代码") 。**
 
     :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="从调用堆叠窗格中将脚本标记为库代码" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
        从**调用堆叠**窗格中将脚本标记为**库代码**
@@ -307,7 +307,7 @@ function animate() {
 
 ### <a name="mark-a-script-as-library-code-from-settings"></a>在设置中将脚本标记为库代码
 
-若要标记脚本的单个脚本或脚本**模式，设置：**
+若要从脚本标记单个脚本或脚本**设置：**
 
 1.  打开“[设置][DevToolsCustomize]”。
 1.  导航到“**库代码**”设置。
@@ -325,18 +325,17 @@ function animate() {
 
 请参阅 [在任何网页上运行 JavaScript 代码段][DevToolsJavascriptSnippets]。
 
+
+<!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*   [入门调试 JavaScript][DevToolsJavascriptGetStarted]在 Microsoft Edge 开发工具 - 使用现有代码的简单简短教程，包含屏幕捕获。
-*   [源工具概述][DevToolsSourcesIndex] - **源工具** 包括 JavaScript 调试程序和编辑程序。
-*   [使用 DevTools Microsoft Edge JavaScript。][DevToolsJavascriptDisable]
+*  [入门调试 JavaScript 在 Microsoft Edge DevTools][DevToolsJavascriptGetStarted]中 - 使用现有代码的简单简短教程，包含屏幕捕获。
+*  [源工具概述][DevToolsSourcesIndex] - **源工具** 包括 JavaScript 调试程序和编辑程序。
+*  [使用 DevTools Microsoft Edge JavaScript。][DevToolsJavascriptDisable]
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevToolsJavascriptBreakpoints]: ./breakpoints.md "如何在 Microsoft Edge 开发工具中使用断点暂停代码 | Microsoft Doc"
 [DevToolsJavascriptDisable]: ./disable.md "使用 Microsoft Edge DevTools 工具禁用 JavaScript | Microsoft Docs"
 [DevToolsJavascriptGetStarted]: ./index.md "在 Microsoft Edge 开发工具中调试 JavaScript 入门 | Microsoft Docs"
@@ -344,6 +343,8 @@ function animate() {
 [DevToolsSourcesIndex]: ../sources/index.md "源工具概述 | Microsoft Docs"
 [DevToolsCustomize]: ../customize/index.md "自定义 Microsoft Edge DevTools | Microsoft Docs"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/reference)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。

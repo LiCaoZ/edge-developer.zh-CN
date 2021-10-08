@@ -7,12 +7,12 @@ ms.date: 06/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
-ms.openlocfilehash: 5df4e28feaaf3a995bdc2358c75dc0913360560c
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: e24cd8aaca2419b7f56229833dd3a02180c3051f
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034681"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083567"
 ---
 <!-- Copyright Kayce Basques
 
@@ -412,20 +412,18 @@ This is a continuation of the [Scroll into view](#scroll-into-view) section.  Fo
    未显示所有选项时在何处选择
 :::image-end:::
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发人员工具团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge \ (Chromium\) 开发人员工具|Microsoft Docs"
 [DevToolsCssGetStarted]: ../css/index.md "查看和更改 CSS 入门 | Microsoft 文档"
 [DevToolsShortcutsElements]: ../shortcuts/index.md#elements-tool-keyboard-shortcuts "“元素”工具键盘快捷方式 - Microsoft Edge 开发人员工具键盘快捷方式 | Microsoft Docs"
-
+<!-- external links -->
 [GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft Edge (Chromium) 开发人员工具 DOM 示例 | Glitch"
-
 [MDNIntroductionToDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "DOM 简介 | MDN"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/dom/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。

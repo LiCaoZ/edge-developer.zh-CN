@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: a6820f1101f11a4178c85b2c499cad6d5e4c1967
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 116c01d647159d98d6d851ae9d3ebd6b4edffe2f
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036725"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083336"
 ---
 <!-- Copyright Kayce Basques
 
@@ -31,7 +31,7 @@ ms.locfileid: "12036725"
 
 这是一个动手教程，介绍了一些最常用的 DevTools 功能，这些功能与检查页面的网络活动相关。
 
-如果要浏览功能，请导航到"网络[参考"。][DevtoolsNetworkReference]
+如果要浏览功能，请导航到[网络参考][DevtoolsNetworkReference]。
 
 <!--TODO: This entire section needs a Microsoft Edge DevTools re-write  -->
 
@@ -68,13 +68,13 @@ ms.locfileid: "12036725"
     :::image-end:::
     -->
 
-1.  若要[打开 DevTools，][DevToolsOpen]请选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\)。  将 **打开控制台** 工具。
+1.  To [Open DevTools][DevToolsOpen]， select `Control` + `Shift` + `J` \ (Windows， Linux\) or `Command` + `Option` + `J` \ (macOS\) .  将 **打开控制台** 工具。
 
     :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="控制台" lightbox="../media/network-glitch-console.msft.png":::
        **控制台**
     :::image-end:::
 
-    你可能希望将 [DevTools 停靠在窗口的底部][DevToolsCustomizePlacement]。
+    你可能希望 [扩展坞 DevTools to the bottom of your window][DevToolsCustomizePlacement]。
 
     :::image type="complex" source="../media/network-glitch-console-bottom.msft.png" alt-text="停靠在窗口底部的 DevTools" lightbox="../media/network-glitch-console-bottom.msft.png":::
        停靠在窗口底部的 DevTools
@@ -146,7 +146,7 @@ ms.locfileid: "12036725"
        选择慢速 3G
     :::image-end:::
 
-1.  长按**Reload** \ (![ Reload ](../media/refresh-icon.msft.png) \) 并选择 **"空缓存和硬重新加载"。**
+1.  长按**Reload** \ (![ Reload ](../media/refresh-icon.msft.png) \) ，然后选择 **"空缓存和硬重新加载"。**
 
     :::image type="complex" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="空缓存和硬重新加载" lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
        **空缓存和硬重新加载**
@@ -180,7 +180,7 @@ ms.locfileid: "12036725"
        第一张屏幕截图期间发生的网络活动
     :::image-end:::
 
-1.  再次选择 (网络设置 \) 并关闭"捕获屏幕截图" ![ ](../media/settings-icon.msft.png) 复选框以关闭"**** 屏幕截图"窗格。
+1.  再次选择 (网络设置 \) 并关闭"捕获屏幕截图" ![ ](../media/settings-icon.msft.png) 复选框以关闭****"屏幕截图"窗格。
 1.  再次刷新页面。
 
 ## <a name="inspect-the-details-of-the-resource"></a>检查资源的详细信息
@@ -208,7 +208,7 @@ ms.locfileid: "12036725"
     :::image-end:::
 
     > [!TIP]
-    > 缩小文件时，选择"响应"面板底部的"格式**\ (** ![ 格式 ](../media/format-icon.msft.png) \) "**** 按钮，以重新设置文件内容的格式，实现可读性。
+    > 缩小文件时，选择"响应"面板底部的"格式**\ (** ![ 格式 ](../media/format-icon.msft.png) \) "**** 按钮，以重新设置文件内容的格式，提高可读性。
 
 1.  选择 **"计时"** 面板。  将显示资源的网络活动的细分。
 
@@ -216,7 +216,7 @@ ms.locfileid: "12036725"
        “**计时**”面板
     :::image-end:::
 
-1.  选择 **"关闭** \ (![ 关闭 ](../media/close-icon.msft.png) \) "以再次查看网络日志。
+1.  选择 **关闭** \ (![ 关闭 ](../media/close-icon.msft.png) \) 再次查看网络日志。
 
     :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="关闭按钮" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
        “**关闭**”按钮
@@ -230,7 +230,7 @@ ms.locfileid: "12036725"
 
 <!--TODO: add cache policies section when available  -->
 
-1.  选择 **"搜索** (![ 搜索 ](../media/search-icon.msft.png) \) "。  搜索窗格将打开到网络日志的左侧。
+1.  选择 **搜索** \ (![ 搜索 ](../media/search-icon.msft.png) \) 。  搜索窗格将打开到网络日志的左侧。
 
     :::image type="complex" source="../media/network-glitch-network-search-empty.msft.png" alt-text="搜索窗格" lightbox="../media/network-glitch-network-search-empty.msft.png":::
        “**搜索**”窗格
@@ -290,7 +290,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
        属性筛选器
     :::image-end:::
 
-    对于可筛选属性的完整列表，导航到按 [属性 筛选请求][DevtoolsReferenceProperty]。
+    有关可筛选属性的完整列表，请导航到 [按属性筛选请求][DevtoolsReferenceProperty]。
 
 1.  清除任何文本的“**筛选器**”文本框。
 
@@ -312,7 +312,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 
 1.  若要删除筛选器并再次显示所有资源，请选择"全部 **"。**
 
-对于其他筛选工作流，导航到"[筛选请求"。][DevtoolsNetworkReferenceFilter]
+对于其他筛选工作流，导航到 [Filter requests][DevtoolsNetworkReferenceFilter]。
 
 ## <a name="block-requests"></a>阻止请求
 
@@ -353,23 +353,13 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 
 恭喜，你已完成本教程。  现在，你已了解如何使用Microsoft Edge DevTools 中的**网络**工具！
 
-导航到“[网络参考][DevtoolsNetworkReference]”以发现与检查网络活动相关的更多 DevTools 功能。
+导航到 [Network Reference][DevtoolsNetworkReference] 以发现更多与检查网络活动相关的 DevTools 功能。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>与 Microsoft Edge 开发人员工具团队联系
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->
-
-[DevToolsCustomizePlacement]: ../customize/placement.md "更改 Microsoft Edge DevTools 放置 | Microsoft Docs"
-[DevtoolsNetworkReference]: ./reference.md "网络分析参考 | Microsoft Docs"
-[DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "筛选器请求 - 网络分析参考 | Microsoft Docs"
-[DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "隐藏“概述”窗格 - 网络分析参考 | Microsoft Docs"
-[DevtoolsReferenceProperty]: ./reference.md#filter-requests-by-properties "按属性筛选请求 - 网络分析参考 | Microsoft Docs"
-[DevToolsOpen]: ../open/index.md "打开 Microsoft Edge 开发人员工具 | Microsoft Docs"
-[DevtoolsSpeedGetStarted]: ../speed/get-started.md "使用 Microsoft Edge DevTools 优化网站速度 | Microsoft Docs"
+[DevToolsCustomizePlacement]： ../customize/placement.md "Change Microsoft Edge DevTools placement |Microsoft Docs&quot; [DevtoolsNetworkReference]： ./reference.md &quot;Network analysis reference |Microsoft Docs&quot; [DevtoolsNetworkReferenceFilter]： ./reference.md#filter-requests &quot;Filter requests - Network analysis reference |Microsoft Docs&quot; [DevtoolsReferenceHideOverview]： ./reference.md#hide-the-overview-pane &quot;Hide the Overview pane - Network analysis reference |Microsoft Docs&quot; [DevtoolsReferenceProperty]： ./reference.md#filter-requests-by-properties &quot;Filter requests by properties - Network analysis reference |Microsoft Docs&quot; [DevToolsOpen]： ../open/index.md &quot;Open Microsoft Edge DevTools |Microsoft Docs&quot; [DevtoolsSpeedGetStarted]： ../speed/get-started.md&quot;使用 DevTools Microsoft Edge优化网站|Microsoft Docs"
 
 [GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "检查网络活动演示 | 小故障"
 

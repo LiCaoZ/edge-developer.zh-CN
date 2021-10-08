@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、edge、最佳做法
-ms.openlocfilehash: 08269f23d109d4f84238625c32a6949e47a347ec
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: bf14fd726c2669577b752112aadf98a36ed1c843
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036137"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083448"
 ---
 # <a name="webview2-development-best-practices"></a>WebView2 开发的最佳做法
 
@@ -29,7 +29,7 @@ ms.locfileid: "12036137"
 
 ## <a name="run-compatibility-tests-regularly-when-using-the-evergreen-runtime"></a>使用 Evergreen 运行时时定期运行兼容性测试
 
-使用 Evergreen WebView2 运行时时，运行时会自动更新，因此必须定期运行兼容性测试。  若要确保 WebView2 应用继续正常工作，请针对[Microsoft Edge Insider (preview) Channels (][MicrosoftedgeinsiderDownload] Beta、Dev 或 Canary) 在 WebView2 控件中测试 Web 内容。
+使用 Evergreen WebView2 运行时时，运行时会自动更新，因此必须定期运行兼容性测试。  若要确保 WebView2 应用继续正常工作，请针对[Microsoft Edge Insider (preview) Channels (][MicrosoftedgeinsiderDownload] Beta、Dev 或 Canary) 在 WebView2 控件中测试 web 内容。
 
 本指南类似于我们向 Web 开发人员提供的指导。  有关详细信息，请导航到["测试你的应用是否向前兼容"。][Webview2ConceptsDistributionStayCompatibleEvergreenMode]
 
@@ -92,11 +92,13 @@ WebView2 应用应侦听和处理事件，以便该应用可以从支持 WebView
 对于任何 WebView2 应用，请确保遵循我们建议的 WebView2 安全性最佳做法。  有关详细信息，请导航到 [Best practices for developing secure WebView2 applications][Webview2ConceptsSecurity]。
 
 
+
+<!-- ====================================================================== -->
 <!-- links -->
 [Webview2ConceptsDistributionDeployingEvergreenWebview2Runtime]: ../concepts/distribution.md#deploying-the-evergreen-webview2-runtime "部署 Evergreen WebView2 运行时 - 分发 WebView2 应用和 WebView2 运行时|Microsoft Docs"
 [Webview2ConceptsDistributionFixedVersionDistributionMode]: ../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode "有关固定版本运行时分发模式的详细信息 - 分发 WebView2 应用和 WebView2 运行时|Microsoft Docs"
 [Webview2ConceptsDistributionStayCompatibleEvergreenMode]: ../concepts/distribution.md#test-your-app-for-forward-compatibility "测试应用是否向前兼容 - 分发 WebView2 应用和 WebView2 运行时|Microsoft Docs"
-[Webview2ConceptsSecurity]: ../concepts/security.md "开发安全的 WebView2 应用程序应用程序|Microsoft Docs"
+[Webview2ConceptsSecurity]: ../concepts/security.md "开发安全 WebView2 应用程序应用程序的最佳实践|Microsoft Docs"
 [Webview2ConceptsUserDataFolder]: ../concepts/user-data-folder.md "管理用户数据文件夹 | Microsoft Docs"
 [Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]: ../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis "用于测试已安装的运行时是否支持最近添加的 API 的功能检测 - 了解 WebView2 SDK |Microsoft Docs"
 [Webview2GetStartedWin32]: ../get-started/win32.md "WebView2 入门 | Microsoft Docs"

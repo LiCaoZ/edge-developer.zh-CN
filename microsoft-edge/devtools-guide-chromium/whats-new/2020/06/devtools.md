@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 98bcb2a909f5d78c1d455d9fc032ee1311449057
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 33572dd7fe94d17c9ee22fd28caddafca5203f27
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036018"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083210"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -27,11 +27,11 @@ ms.locfileid: "12036018"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="whats-new-in-devtools-microsoft-edge-85"></a>DevTools (Microsoft Edge 85 中的新增) 
+# <a name="whats-new-in-devtools-microsoft-edge-85"></a>DevTools 85 (Microsoft Edge中的新增) 
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告
 
-以下各节列出了你可能从 DevTools 团队中错过Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要随时了解开发人员工具中所有最新且最好的功能，请下载[Microsoft Edge 预览][MicrosoftEdgePreviewChannels]频道，并按照 Twitter 上的[Microsoft Edge DevTools 团队进行跟踪][EdgeDevToolsTwitterAccount]。
+以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要随时了解开发人员工具中所有最新且最最好的功能，请下载[Microsoft Edge 预览][MicrosoftEdgePreviewChannels]频道，并按照 Twitter 上的[Microsoft Edge DevTools 团队进行跟踪][EdgeDevToolsTwitterAccount]。
 
 ### <a name="css-grid-debugging-features"></a>CSS 网格调试功能
 
@@ -39,7 +39,7 @@ ms.locfileid: "12036018"
    试验功能
 :::image-end:::
 
-开发人员Microsoft Edge团队正在与 Chrome DevTools 团队和 Chromium 社区协作，以将新的 CSS 网格调试功能添加到 DevTools。  现在，你可以将网格线号、网格间隔和扩展网格线显示为页面上覆盖。  此外，即将推出对网格工具的更多改进。
+开发人员Microsoft Edge团队正在与 Chrome DevTools 团队和 Chromium 社区协作，将新的 CSS 网格调试功能添加到 DevTools。  现在，你可以将网格线号、网格间隔和扩展网格线显示为页面上覆盖。  此外，即将推出对网格工具的更多改进。
 
 :::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS 网格调试功能" lightbox="../../media/2020/06/experiments-grid.msft.png":::
    CSS 网格调试功能
@@ -64,7 +64,7 @@ Chromium问题[#1047356][CR1047356]
    使用网络控制台在 [NetworkLog][DevtoolsNetworkIndexLogActivity] 中编辑和 **重播请求**
 :::image-end:::
 
-新面板" **网络控制台** "将在 [DevTools"][DevtoolsCustomizeIndexDrawer] 箱"中打开，并自动填充 HTTP 请求的信息。  若要显示从服务器返回的响应，请编辑请求 \ (\) 并选择"发送 **"。**
+网络控制台是一个新 **面板，它将** 在 [DevTools"][DevtoolsCustomizeIndexDrawer] 箱"中打开，并自动填充 HTTP 请求的信息。  若要显示从服务器返回的响应，请编辑请求 \ (\) 并选择"发送 **"。**
 
 您还可以使用网络 **控制台** 直接从 DevTools 创建和发送 HTTP 请求。
 
@@ -73,7 +73,7 @@ Chromium问题[#1047356][CR1047356]
 :::image-end:::
 
 > [!TIP]
-> 若要在主 **\ (** top\) 面板（而不是 [DevTools Drawer）][DevtoolsCustomizeIndexDrawer]中显示网络控制台，请导航到在面板之间 [移动工具](#move-tools-between-panels)。
+> 若要在主 **\ (** top\) 面板（而不是 [DevTools Drawer）][DevtoolsCustomizeIndexDrawer]中显示网络控制台，请导航到在面板 [之间移动工具](#move-tools-between-panels)。
 
 > [!NOTE]
 > 若要启用实验，请导航到 [打开实验][DevtoolsExperimentalFeaturesTurnOn] 功能，然后选择启用网络控制台旁边的 **复选框**。
@@ -84,7 +84,7 @@ Chromium问题[#1093687][CR1093687]
 
 ### <a name="service-worker-respondwith-events-in-the-timing-tab"></a>服务工作者 respondWith"计时"选项卡中的事件
 
-网络 **工具** 的" **计时"** 选项卡现在包括 `respondWith` 服务工作器事件。  服务工作线程事件显示从服务工作进程事件处理程序开始运行前一段时间到处理程序承诺得到实现的时间的 `respondWith` `fetch` `respondWith` `fetch` 持续时间。
+网络**工具****的"** 计时"选项卡现在包括 `respondWith` 服务工作器事件。  服务工作线程事件显示从服务工作进程事件处理程序开始运行前一段时间到处理程序承诺得到实现的时间 `respondWith` `fetch` `respondWith` `fetch` 的持续时间。
 
 :::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="&quot;网络&quot;面板的&quot;计时&quot;选项卡中的 respondWith 服务工作线程事件" lightbox="../../media/2020/06/timing-tab.msft.png":::
    网络 `respondWith` 工具的" **计时"** 选项卡中的服务 **工作器** 事件
@@ -123,7 +123,7 @@ Chromium问题[#1070378][CR1070378]
    试验功能
 :::image-end:::
 
-通常，元素和网络等工具**** 只能在**** DevTools 的主 \ (\) 面板中打开。  同样，诸如**3D 视图**和**** 问题等工具可能只能在 DevTools 的 (\) 中打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。
+通常，只能在 DevTools**** 的主 \ (\) 面板中打开"元素"和"网络"等工具。 ****  同样，工具（如**3D** **** 视图和问题）可能只能在 DevTools (底部\) 面板中打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。
 
 :::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="在面板之间移动工具" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
    在面板之间移动工具
@@ -136,7 +136,7 @@ Chromium问题[#897944][CR897944]
 
 ### <a name="improved-initiator-tooltip-in-the-network-panel"></a>网络面板中改进的发起人工具提示
 
-在 Microsoft Edge 83 和 84 中，"发起者"列的工具提示显示在使用水平滚动条显示的"网络日志"[][DevtoolsNetworkIndexLogActivity]中，显示资源请求的原因。  你仅能够在工具提示中水平滚动来显示发起请求的调用堆栈。
+在 Microsoft Edge 83 和 84 中，"发起者"列的工具提示（显示资源请求的原因）显示在具有水平滚动[][DevtoolsNetworkIndexLogActivity]条的网络日志中。  你仅能够在工具提示中水平滚动来显示发起请求的调用堆栈。
 
 :::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="84 中的发起Microsoft Edge提示" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
    84 中的发起Microsoft Edge提示
@@ -174,15 +174,15 @@ Chromium问题[#946975][CR946975]
 
 **Lighthouse**面板现在运行 Lighthouse 6。  有关所有更改的完整列表，请导航到 [v6.0.0 发行说明][GithubGoogleChromeLighthouse600]。
 
-Lighthouse 6.0 向报告引入了三个新指标：最大 Contentful 画图 \ (LCP\) 、累积布局 Shift \ (CLS\) 和总阻止时间 \ (TBT\) 。
+Lighthouse 6.0 向报告引入了三个新指标：最大内容量 画图 \ (LCP\) 、累积布局班次 \ (CLS\) 和总阻止时间 \ (TBT\) 。
 
 性能分数公式也进行了重新加权，以更好地反映用户的加载体验。
 
 Chromium问题[#772558][CR772558]
 
-#### <a name="first-meaningful-paint-deprecation"></a>First Meaningful 画图弃用
+#### <a name="first-meaningful-paint-deprecation"></a>第一画图弃用
 
-First Meaningful 画图 \ (FMP\) is deprecated in Lighthouse 6.0.  FMP 也从"性能" **面板中删除** 。  **最大 Contentful 画图**FMP 的建议替代项。  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->
+First Meaningful 画图 \ (FMP\) is deprecated in Lighthouse 6.0.  FMP 也从"性能" **面板中删除** 。  **最大的 Contentful 画图**FMP 的建议替代项。  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->
 
 <!--todo: add Largest Contentful Paint when section available  -->
 <!--todo: add First Meaningful Paint link and note when available  -->
@@ -214,11 +214,11 @@ DevTools 现在更好地支持一些最新的 JavaScript 语言功能。
       Nullish [并集运算符的语法突出显示][V8DevNullishCoalescing]
    :::column-end:::
    :::column span="2":::
-      DevTools 现在可以在"源"面板中正确打印空的"并排 **"运算符。**
+      DevTools 现在可以在"源"面板中正确打印空的"并 **排"运算符** 。
    :::column-end:::
 :::row-end:::
 
-[][CR1073903] [][CR1083797] Chromium#1073903、#1083214、#1083797 [][CR1083214]
+[][CR1083797] [][CR1073903]Chromium、#1073903、#1083214、#1083797 [][CR1083214]
 
 ### <a name="new-app-shortcut-warnings-in-the-manifest-pane"></a>清单窗格中的新应用快捷方式警告
 
@@ -258,8 +258,8 @@ Chromium问题[#1071432][CR1071432]
 
 当在"源"面板编辑器中执行复制[][DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles]或剪切操作时，DevTools 会复制或剪切当前内容行。
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="当光标位于第 5 行末尾时，从 DevTools pen.js复制整行并粘贴到Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
-   当光标位于第 5 行的末尾时，从 DevToolspen.js复制整行，并粘贴到 Visual Studio Code [。][VisualStudioCode] ****
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="当光标位于第 5 行的末尾时，从 DevTools pen.js复制整行并粘贴到Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+   当光标位于第 5 行的末尾时，从 DevTools 中的pen.js复制整个行，并粘贴到[Visual Studio Code][VisualStudioCode]。 ****
 :::image-end:::
 
 Chromium问题[#800028][CR800028]
@@ -268,7 +268,7 @@ Chromium问题[#800028][CR800028]
 
 #### <a name="ungroup-same-console-messages"></a>取消同一控制台消息的组
 
-控制台**控制台中的**组相似设置现在适用于重复消息。  以前，它只应用于类似的邮件。
+控制台**和控制台中的**组设置现在适用于重复消息。  以前，它只应用于类似的邮件。
 
 例如，以前，DevTools 未取消对邮件进行分组，即使未取消选中" `hello` **组** 相似"。  现在， `hello` 邮件已取消组合。
 
@@ -282,7 +282,7 @@ Chromium问题[#1082963][CR1082963]
 
 ### <a name="persisting-selected-context-only-settings"></a>持久化"仅选定上下文"设置
 
-控制台**控制台中的"** 仅所选上下文设置设置现已保留。  以前，每次关闭并重新打开 DevTools 时，设置都会重置。  更改使设置行为与其他控制台选项设置一。
+控制台**控制台中的"** 所选上下文设置现在保留。  以前，每次关闭并重新打开 DevTools 时，设置都会重置。  更改使设置行为与其他控制台选项设置一。
 
 :::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="选定的仅上下文设置" lightbox="../../media/2020/06/selected-context.msft.png":::
    **选定的仅上下文** 设置
@@ -328,14 +328,12 @@ Chromium 问题 [#1041830][CR1041830]
 
 如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels] 作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 [CssInJs]: ../../../css/css-in-js.md "CSS-in-JS 框架样式编辑|Microsoft Docs"
 [DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
-[DevtoolsCommandMenu]: ../../../command-menu.md "使用开发人员工具Microsoft Edge菜单运行命令|Microsoft Docs"
+[DevtoolsCommandMenu]: ../../../command-menu.md "使用&quot;开发工具Microsoft Edge菜单运行命令|Microsoft Docs"
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "设置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"
 [DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features/index.md#turning-on-experimental-features "打开试验功能 - 试验功能 | Microsoft Docs"
 [DevtoolsIssues]: ../../../issues/index.md "使用问题工具查找并修复问题 | Microsoft Docs"
@@ -349,7 +347,7 @@ Chromium 问题 [#1041830][CR1041830]
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium 漏洞"
 
 [CR772558]: https://crbug.com/772558 "DevTools：更新到最新版本的 Lighthouse |Chromium Bug"
-[CR800028]: https://crbug.com/800028 "在 Chrome 更新后开发人员工具编辑器中重复行快捷方式|Chromium Bug"
+[CR800028]: https://crbug.com/800028 "在 Chrome 更新后，开发人员工具编辑器中的重复行快捷方式|Chromium Bug"
 [CR912581]: https://crbug.com/912581 "在 DevTools/about：tracing |Chromium Bug"
 [CR946975]: https://crbug.com/946975 "DevTools 样式边栏不能与构造的样式表|Chromium Bug"
 [CR955497]: https://crbug.com/955497 "PBA 应用图标快捷方式菜单|Chromium Bug"
@@ -388,7 +386,7 @@ Chromium 问题 [#1041830][CR1041830]
 
 [V8DevClassFieldsPrivate]: https://v8.dev/features/class-fields#private-class-fields "私有类字段 - 公共和私有类|V8.开发"
 [V8DevCodeCaching]: https://v8.dev/blog/code-caching-for-devs "适用于 JavaScript 开发人员的代码|V8.开发"
-[V8DevNullishCoalescing]: https://v8.dev/features/nullish-coalescing "Nullish 将|V8.开发"
+[V8DevNullishCoalescing]: https://v8.dev/features/nullish-coalescing "Nullish 并|V8.开发"
 [V8DevOptionalChaining]: https://v8.dev/features/optional-chaining "可选链接|V8.开发"
 
 [WebhintMain]: https://webhint.io "webhint"

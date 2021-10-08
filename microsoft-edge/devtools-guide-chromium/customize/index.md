@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: da8d4337068f42ac34609b1bce417f876ee98e06
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 1b065a330d757f980c54e606a661186c0e30128e
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035563"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082167"
 ---
 <!-- Copyright Kayce Basques
 
@@ -48,7 +48,7 @@ ms.locfileid: "12035563"
 
 The **Drawer** is a second panel where you can choose which tools to display.
 
-若要打开\ (或关闭\) **收银机，** 请选择 `Escape` 。
+若要打开 \ (或关闭\) **收银机，** 请选择 `Escape` 。
 
 :::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="The Drawer" lightbox="../media/customize-drawer-open.msft.png":::
    The **Drawer**
@@ -73,7 +73,7 @@ The **Drawer** is a second panel where you can choose which tools to display.
 选择并拖动工具以更改排序。  你的自定义工具顺序在整个 DevTools 会话中持续存在。
 
 > [!NOTE]
-> 默认情况下， **网络工具** 通常是主工具栏上的第五个选项卡。  在下图中 **，"网络** "工具将移至主工具栏的第一个选项卡。
+> 默认情况下， **网络工具** 通常是主工具栏上的第五个选项卡。  在下图中， **网络** 工具将移动为主工具栏的第一个选项卡。
 
 :::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="面板中 Devtools 的自定义顺序" lightbox="../media/customize-network-first-position.msft.png":::
    面板中 Devtools 的自定义顺序
@@ -81,13 +81,13 @@ The **Drawer** is a second panel where you can choose which tools to display.
 
 ## <a name="open-and-close-tools"></a>打开和关闭工具
 
-若要简化 DevTools 接口，默认情况下不会打开许多工具。 若要在主面板或"箱"中打开**** 工具，请选择选项卡**** 右边的"更多工具"\ ("更多工具 ![ "\) 按钮，然后从列表中选择一个 ](../media/open-tab-icon.png) 工具。
+若要简化 DevTools 接口，默认情况下不会打开许多工具。 若要在主面板或"箱"中打开**** 工具，请选择选项卡**** 右边的"更多工具"\ ("更多工具"\) 按钮，然后从列表中选择 ![ ](../media/open-tab-icon.png) 一个工具。
 
-:::image type="complex" source="../media/open-tool-in-main-panel-or-drawer.png" alt-text="&quot;更多工具 (+) &quot;按钮打开新工具" lightbox="../media/open-tool-in-main-panel-or-drawer.png":::
+:::image type="complex" source="../media/open-tool-in-main-panel-or-drawer.png" alt-text="&quot;更多工具 (+) 按钮打开新工具" lightbox="../media/open-tool-in-main-panel-or-drawer.png":::
    " **更多工具** `+` () "按钮打开新工具
 :::image-end:::
 
-若要关闭工具，请选择工具选项卡**** (![ ](../media/close-tab-icon.png) 关闭工具 \) 按钮。
+若要关闭工具，请选择工具选项卡 **中的"关闭** ![ \ (关闭工具 ](../media/close-tab-icon.png) \) "按钮。
 
 :::image type="complex" source="../media/close-tool-in-main-panel-or-drawer.png" alt-text="选项卡的&quot;关闭&quot;按钮" lightbox="../media/close-tool-in-main-panel-or-drawer.png":::
    选项卡的" **关闭"** 按钮
@@ -95,7 +95,7 @@ The **Drawer** is a second panel where you can choose which tools to display.
 
 ## <a name="change-devtools-placement"></a>更改 DevTools 放置
 
-导航到["将 DevTools 放置 (Undock，将扩展坞更改为底部，将扩展坞更改为左侧) 。 ][DevToolsPlacement]
+导航到 [Change DevTools placement (Undock， Dock to bottom， Dock to left) ][DevToolsPlacement].
 
 :::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="移除的开发人员工具" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
    移除的开发人员工具
@@ -117,19 +117,16 @@ The **Drawer** is a second panel where you can choose which tools to display.
    还原默认设置
 :::image-end:::
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-<!-- image links -->
-
-[ImageMoreIcon]: ../media/more-icon.msft.png
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevToolsPlacement]: ./placement.md "更改 Microsoft Edge DevTools 放置 | Microsoft Docs"
 [Theme]: ./theme.md "将颜色主题应用到 DevTools |Microsoft Docs"
+<!-- image links -->
+[ImageMoreIcon]: ../media/more-icon.msft.png
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。

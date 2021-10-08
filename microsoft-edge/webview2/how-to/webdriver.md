@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、edge、ICoreWebView2、ICoreWebView2Controller、Selenium、Microsoft Edge Driver
-ms.openlocfilehash: 0b572a40d677bab470fc9c8662c85a79f19dc097
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: e5395aa5d74cf739be08d202e742330c3a506c75
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035339"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082063"
 ---
 # <a name="automate-and-test-webview2-with-microsoft-edge-driver"></a>使用驱动程序自动化和测试 WebView2 Microsoft Edge驱动程序
 
@@ -47,13 +47,13 @@ ms.locfileid: "12035339"
 > [!NOTE]
 > Selenium 支持 C\#、Java、Python、Javascript 和 Ruby。  但是，以下指南是使用 C\# 编写的。
 
-1.  首先，在**C# .NET Framework**新建一Visual Studio**项目**。  选择 **右** 下角的"下一步"继续。
+1.  首先，在 Visual Studio**中C# .NET Framework****项目。**  选择 **右** 下角的"下一步"继续。
 
     :::image type="complex" source="../media/webdriver/new-project.png" alt-text="创建新项目" lightbox="../media/webdriver/new-project.png":::
        创建新项目
     :::image-end:::
 
-1.  为**项目指定Project**名称，将其保存到首选**位置**，然后选择"创建 **"。**
+1.  为项目指定**Project**名称，将其保存到首选**位置**，然后选择"创建 **"。**
 
     :::image type="complex" source="../media/webdriver/app-create.png" alt-text="配置新项目" lightbox="../media/webdriver/app-create.png":::
        配置新项目
@@ -65,7 +65,7 @@ ms.locfileid: "12035339"
        新建项目
     :::image-end:::
 
-1.  接下来，将 Selenium 添加到项目中;使用 Selenium.WebDriver NuGet安装 Selenium，如下所示。  若要下载 Selenium.WebDriver NuGet程序包，请在 Visual Studio**中选择Project**管理NuGet****  >  **包"。**
+1.  接下来，将 Selenium 添加到项目中;使用 Selenium.WebDriver NuGet安装 Selenium，如下所示。  若要下载 Selenium.WebDriver NuGet程序包，请在"Visual Studio"Project管理NuGet********  >  **程序包"。**
 
 1.  选择" **浏览"** 选项卡。 将显示以下屏幕。
 
@@ -79,7 +79,7 @@ ms.locfileid: "12035339"
 
 1.  在 `Selenium.WebDriver` 搜索**栏中键入**，然后从结果中选择**Selenium.WebDriver。**
 
-1.  在右侧的详细信息窗口中，确保"**版本**"设置为**4.0.0-beta4**或更高版本，然后选择"安装 **"。**  NuGet将 Selenium 下载到计算机。
+1.  在右侧的详细信息窗口中，确保"**版本**"设置为**4.0.0-beta4**或更高版本，然后选择"安装 **"。**  NuGet将 Selenium 下载到你的计算机。
 
     :::image type="complex" source="../media/webdriver/nuget.png" alt-text="管理NuGet包" lightbox="../media/webdriver/nuget.png":::
        管理NuGet包
@@ -101,7 +101,7 @@ ms.locfileid: "12035339"
 
 ## <a name="step-4-drive-webview2-with-selenium-and-microsoft-edge-driver"></a>步骤 4：使用 Selenium 和 Microsoft Edge 驱动程序驱动 WebView2
 
-1.  若要使用 Selenium 和 Microsoft Edge Driver 驱动 WebView2，请首先通过复制并粘贴以下代码 `EdgeOptions` 段来创建对象。
+1.  若要使用 Selenium 和 Microsoft Edge 驱动 WebView2，请首先通过复制并粘贴以下代码段来创建 `EdgeOptions` 对象。
 
     ```csharp
     static void Main(string[] args)
@@ -146,21 +146,21 @@ ms.locfileid: "12035339"
        运行 WebView2 的 Selenium
     :::image-end:::
 
-恭喜。  通过使用 Selenium 和 Microsoft Edge Driver 成功自动化了 WebView2 项目和驱动 WebView2。
+祝贺你！  通过使用 Selenium 和 Microsoft Edge Driver 成功自动化了 WebView2 项目和驱动 WebView2。
 
 > [!Note]
 > [edge-selenium-tools][GithubSeleniumProject]是 Microsoft Edge 团队创建的项目，以允许 Selenium 3 用户使用 Selenium 4 中提供的相同 API 驱动 Edge Chromium 和 WebView2。
 
+
+<!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*   有关 API Selenium 如何驱动 WebView2 或 Microsoft Edge \ (Chromium\) 的全面信息，请导航到 Selenium 文档 上的[WebDriver。][SeleniumWebdriver]
-*   若要了解有关 WebView2 控件以及如何在本机应用中嵌入 Web 内容时使用它，请导航到"Microsoft Edge [WebView2"。][WebViewIndex]
-*   若要了解有关自动执行 Microsoft Edge \ (Chromium\) ，请导航到使用[WebDriver (Chromium) 实现测试自动化][WebdriverChromium]。
+*  [Selenium 文档中的 WebDriver][SeleniumWebdriver] - 全面了解 API Selenium 如何驱动 WebView2 或Microsoft Edge。
+*  [WebView2 Microsoft Edge][WebViewIndex]简介 - 使用 WebView2 控件将 Web 内容嵌入本机应用中。
+*  [使用 WebDriver 实现测试自动化][WebdriverChromium]- 自动Microsoft Edge。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>联系 Microsoft Edge WebView 团队
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 [WebdriverChromium]: ../../webdriver-chromium/index.md "使用 WebDriver (Chromium) 测试自动化 | Microsoft Docs"
 [WebdriverChromiumDownloadMicrosoftEdgeDriver]: ../../webdriver-chromium/index.md#download-microsoft-edge-driver "下载Microsoft Edge驱动程序 - 使用 WebDriver (Chromium) 实现测试自动化|Microsoft Docs"

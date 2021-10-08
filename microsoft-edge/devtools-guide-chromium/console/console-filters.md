@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: b60e5a8864c4e0bdaf41ea6245907bb725b0f78e
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: b6c5213d512de471029024772260f9fa33878fba
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034660"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082972"
 ---
 # <a name="filter-console-messages"></a>筛选控制台消息
 
@@ -86,12 +86,9 @@ ms.locfileid: "12034660"
     选择任何使用类型和源进行筛选的新选项
 :::image-end:::
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsConsoleApi]: ./api.md "控制台 API 参考 | Microsoft Docs"
 
 [MdnDocsWebJavascriptGuideRegularExpressions]: https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions "正则表达式 | MDN"

@@ -7,12 +7,12 @@ ms.date: 07/26/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: a5c88624537a34840468674ae2517a533f45f834
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 401f2d165f3bfdc1b979eef3ba0d2da7fcaba7db
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034884"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082104"
 ---
 <!-- Copyright Katherine Jackson
 
@@ -603,15 +603,12 @@ li a {
 *   若要了解有关设置网页样式的信息，请导航到 CSS [简介][MDNCssFirstSteps]。
 *   若要详细了解如何在 DevTools 中试验 CSS，请导航入门[查看和更改 CSS。][DevtoolsCssIndex]
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-<!--- links  --->
-
+<!-- ====================================================================== -->
+<!-- links -->
 [DevtoolsBeginnersHtml]: ./html.md "适用于初学者的 DevTools：HTML 和 DOM |Microsoft Docs"
 [DevtoolsCssIndex]: ../css/index.md "查看和更改 CSS 入门 | Microsoft 文档"
-
+<!-- external links -->
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge 预览体验成员"
 
 [GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index.html - 已准备的 amphibian |小故障"

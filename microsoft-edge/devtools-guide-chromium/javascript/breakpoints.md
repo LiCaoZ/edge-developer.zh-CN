@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: e718b2e0e0d15cca3082adb68c29cccd186992fc
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: a4eaf3a65a91a0571f0dc3051713c31ad7d1a503
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036613"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083665"
 ---
 <!-- Copyright Kayce Basques
 
@@ -31,7 +31,7 @@ ms.locfileid: "12036613"
 
 使用断点暂停 JavaScript 代码。  本文介绍了 DevTools 中提供的每种断点类型，以及何时使用以及如何设置每种类型。
 
-有关使用现有网页的介绍性教程，请导航到开始在开发人员工具中调试[JavaScript Microsoft Edge JavaScript。][DevtoolsJavascriptIndex]
+有关使用现有网页的介绍性教程，请导航到在开发人员工具中Microsoft Edge [JavaScript 入门][DevtoolsJavascriptIndex]。
 
 ## <a name="overview-of-when-to-use-each-breakpoint-type"></a>何时使用各断点类型的概述
 
@@ -215,22 +215,19 @@ debug(hey); // This does not work.  hey() is out of scope.
 1.  触发断点。
 1.  代码仍在代码行断点处暂停时，在开发工具控制台中运行 `debug()` 方法。
 
-## <a name="related-articles"></a>相关文章
 
-*   [使用调试器功能][DevtoolsJavascriptReference] - 使用"源"工具 **中的调试器** UI。
-*   [在 DevTools][DevtoolsJavascriptIndex] Microsoft Edge JavaScript 入门 - 使用现有网页的介绍性教程。
-*   [源工具概述][DevtoolsSourcesIndex] - 调试器是 **源** 工具的一部分，其中包括 JavaScript 编辑器。
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
+*  [使用调试器功能][DevtoolsJavascriptReference] - 使用"源"工具 **中的调试器** UI。
+*  [在 DevTools][DevtoolsJavascriptIndex] Microsoft Edge JavaScript 入门 - 使用现有网页的介绍性教程。
+*  [源工具概述][DevtoolsSourcesIndex] - 调试器是 **源** 工具的一部分，其中包括 JavaScript 编辑器。
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsJavascriptReference]: ./reference.md "使用调试器功能|Microsoft Docs"
-
 [DevtoolsJavascriptIndex]: index.md "在 Microsoft Edge 开发工具中调试 JavaScript 入门 | Microsoft Docs"
-
 [DevtoolsSourcesIndex]: ../sources/index.md "源工具概述 | Microsoft Docs"
 
 [MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "Fetch API | MDN"

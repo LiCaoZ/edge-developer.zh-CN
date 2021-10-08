@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 6fbe141f58c6b1e7999c3cf5a9ecb74081c93b55
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 0df2edc0e5d60cf233efb2bb4d269dec422cdaab
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035486"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083140"
 ---
 <!-- Copyright Kayce Basques
 
@@ -104,7 +104,7 @@ Choose the **Console 设置**\ (![ Console 设置 icon ](../media/settings-butto
 
 ### <a name="turn-off-message-grouping"></a>关闭邮件分组
 
-若要关闭控制台的默认邮件分组**行为**，请打开控制台[设置并选中](#open-console-settings)类似组**旁边的复选框**。  例如，导航到“[记录 XHR 和 Fetch 请求](#log-xhr-and-fetch-requests)”。
+若要关闭控制台的默认邮件分组**行为**，请打开控制台设置并选中"类似组["](#open-console-settings)**旁边的复选框**。  例如，导航到“[记录 XHR 和 Fetch 请求](#log-xhr-and-fetch-requests)”。
 
 ### <a name="log-xhr-and-fetch-requests"></a>记录 XHR 和 Fetch 请求
 
@@ -128,7 +128,7 @@ Choose the **Console 设置**\ (![ Console 设置 icon ](../media/settings-butto
 
 ### <a name="persist-messages-across-page-loads"></a>跨页面加载保留消息
 
-加载新网页时，默认操作会清除 **控制台**。  若要跨页面加载保留消息，请[打开控制台设置](#open-console-settings)并选中"保留日志"旁边的**复选框**。
+加载新网页时，默认操作会清除 **控制台**。  若要跨页面加载保留消息，请[打开](#open-console-settings)控制台设置并选中"保留日志"旁边的**复选框**。
 
 ### <a name="hide-network-messages"></a>隐藏网络消息
 
@@ -235,7 +235,7 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 
 ### <a name="turn-off-autocomplete-from-history"></a>从历史记录中关闭自动完成
 
-键入表达式时，控制台的自动完成弹出窗口将显示之前运行表达式。 ****  表达式使用 字符预先 `>` 绘制。  若要停止显示历史记录中的表达式，请打开"控制台[设置并删除](#open-console-settings)"自动**完成自历史记录**"复选框旁边的复选框。
+键入表达式时，控制台的自动完成弹出窗口将显示之前运行表达式。 ****  表达式使用 字符预先 `>` 绘制。  若要停止显示历史记录中的表达式，请打开"控制台[设置并删除](#open-console-settings)"自动**完成**自历史记录"复选框旁边的复选框。
 
 > [!NOTE]
 > 在下图中，`document.querySelector('a')` 和 `document.querySelector('img')` 是之前评估的表达式。
@@ -268,12 +268,9 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 *   从 JavaScript 中为你的网页运行 `console.clear()`。
 *   在聚焦**控制台**时选择 `Control`+`L`。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsConsoleApi]: ./api.md "控制台 API 参考 | Microsoft Docs"
 [DevtoolsConsoleConsoleLog]: ./console-log.md "在控制台工具控制台中记录|Microsoft Docs"
 [DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "作为 JavaScript 环境的控制台|Microsoft Docs"
@@ -281,7 +278,6 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 [DevtoolsConsoleIndexInspectFilterInformationOnCurrentWebpage]: ./index.md#inspect-and-filter-information-on-the-current-webpage "检查并筛选当前网页上|Microsoft Docs"
 [DevtoolsConsoleLiveExpressions]: ./live-expressions.md "使用 Live Expressions 方法监视 JavaScript 中的|Microsoft Docs"
 [DevtoolsConsoleUtilities]: ./utilities.md "控制台实用程序 API 参考 | Microsoft Docs"
-
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行|Microsoft Docs"
 
 [MdnDocsGlossaryBrowsingContext]: https://developer.mozilla.org/docs/Glossary/Browsing_context "浏览上下文 | MDN"

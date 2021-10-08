@@ -7,12 +7,12 @@ ms.date: 12/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: a81df40f48dba9ee846301b61487c2509341ca2d
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: e9497771a796bc86ae755fdf4bb4baea60885378
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035087"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082580"
 ---
 # <a name="3d-view"></a>3D 视图
 
@@ -60,7 +60,7 @@ ms.locfileid: "12035087"
    屏幕控件
 :::image-end:::
 
-若要将画布视图重置为原始视图，请选择"重置**** 相机"按钮，或选择视图中**** 的"重置元素"，然后重新居中相机 (侧刷新图标) 按钮。
+若要将画布视图重置为原始视图，请选择"重置**** 相机"按钮，或选择"**** 重置视图中的元素"和"将相机重新居中 (侧向刷新图标) 按钮。
 
 若要刷新画布，例如浏览器发生更改或切换到设备仿真器视图时，请选择"重新拍摄快照"按钮或****"获取新的快照"按钮**** (刷新图标) 。
 
@@ -118,7 +118,7 @@ ms.locfileid: "12035087"
 
 若要显示所选元素和元素的父元素，请关闭" **包含** 子元素"设置，然后再次选择"隔离 **所选元素"** 按钮。
 
-如果打开" **包含** 子元素"设置并关闭" **包含** 父元素"设置，然后选择"隔离 **所选** 元素"按钮，画布将显示元素和任何子元素。  如果同时关闭这两个设置，然后选择"隔离所选 **元素** "按钮，画布将仅显示之前选择的元素。
+如果打开" **包含** 子元素"设置并关闭" **包含** 父元素"设置，然后选择"隔离 **所选** 元素"按钮，画布将显示元素和任何子元素。  如果关闭这两个设置，然后选择"隔离所选 **元素** "按钮，画布将仅显示之前选择的元素。
 
 控件窗格上名为 **"嵌套级别的页面"的滑块，** 旁边有一个数字。  数字指示文档的图层数。  向左拖动滑块会导致最外面的图层消失，直到你将嵌套层设置为 ，这将仅显示 DOM 中最远 `1` 的后退元素。  若要删除某些待筛选邮件，请拖动滑块。  它可以帮助你仔细查看较低级别中发生的情况。
 
@@ -146,14 +146,7 @@ ms.locfileid: "12035087"
 
 
 <!-- ====================================================================== -->
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
-
-开发人员Microsoft Edge团队正在处理 UI，并基于你的反馈向 3D 视图添加更多功能。  发送反馈以帮助改进开发人员Microsoft Edge开发工具。  在**** DevTools 中选择"发送反馈"图标，或在 Windows/Linux 或 macOS 上选择，然后输入你为 `Alt` + `Shift` + `I` `Option` + `Shift` + `I` DevTools 提供的任何反馈或功能请求。
-
-
-<!-- ====================================================================== -->
 <!-- links -->
 [GithubMicrosoftedgeDevtoolssamples3dview]: https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView "Microsoft EdgeDevTools 3D 视图 - MicrosoftEdge/DevToolsSamples |GitHub"
-
 [MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "文档对象模型 (DOM) |MDN"
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index |MDN"

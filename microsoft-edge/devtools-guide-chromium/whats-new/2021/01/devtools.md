@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 4e13ce63fb7a7b656a68972d9c9797b868e1209e
-ms.sourcegitcommit: 4695a3bb8ea26f8dd65c5ab8fe383765ae51850c
+ms.openlocfilehash: f38cd808b090f4b7dfdb09c3253ba379c041cc58
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "12081176"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083196"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -52,8 +52,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-在 CSS 中处理字体时，请使用新的可视[字体编辑器][DevtoolsInspectStylesEditFonts]。  你可以定义回退字体，并使用滑块定义字体粗细、大小、行高和间距。  
-            **字体编辑器**可帮助你完成以下操作。
+在 CSS 中处理字体时，请使用新的可视[字体编辑器][DevtoolsInspectStylesEditFonts]。  你可以定义回退字体，并使用滑块定义字体粗细、大小、行高和间距。  **字体编辑器**可帮助你完成以下操作。
 
 *   在不同字体属性的单位之间切换
 *   在不同字体属性的关键字之间切换
@@ -90,8 +89,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 :::row:::
    :::column span="":::
       :::image type="complex" source="../../media/2021/01/elements-flex-container.msft.png" alt-text="弹性框 (flex) 图标和网页突出显示" lightbox="../../media/2021/01/elements-flex-container.msft.png":::
-         
-               **弹性框** (`flex`) 图标和网页突出显示 :::image-end:::
+         **弹性框** (`flex`) 图标和网页突出显示 :::image-end:::
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text="“布局”窗格中突出显示的弹性框覆盖" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
@@ -113,8 +111,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
       自动完成菜单现在显示指示对齐属性效果的图标，例如 `align-content` 和 `align-items`。
    :::column-end:::
    :::column span="":::
-      此外，DevTools 现在还会显示一条指导线，帮助你更好地查看 `align-items` CSS 属性。  
-            `gap` CSS 属性也受支持。  在下图中，`gap` CSS 属性设置为 `gap: 12px;`，并显示每个间隙的阴影图案。
+      此外，DevTools 现在还会显示一条指导线，帮助你更好地查看 `align-items` CSS 属性。  `gap` CSS 属性也受支持。  在下图中，`gap` CSS 属性设置为 `gap: 12px;`，并显示每个间隙的阴影图案。
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -167,10 +164,8 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 启用“**试验 Web 平台功能**”以访问新的 [CSS 媒体屏幕跨越功能][DualScreenWebCssMediaSpanning]和 [getWindowSegments JavaScript API][DualScreenWebJavascriptGetwindowsegments]。  导航至 `edge://flags`，然后切换“**试验 Web 平台功能**”旁边的标记。  为帮助增强用于双屏幕和可折叠设备的网站或应用，请在[模拟设备][DevtoolsDeviceModeIndex]时使用以下功能。
 
-*   
-            [跨越][DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]，即你的网站（或应用）跨两个屏幕显示。
-*   
-            [呈现接缝][DualScreenIntroductionHowToWorkWithSeam]，即两个屏幕之间的空间。
+*   [跨越][DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]，即你的网站（或应用）跨两个屏幕显示。
+*   [呈现接缝][DualScreenIntroductionHowToWorkWithSeam]，即两个屏幕之间的空间。
 
 若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1054281][CR1054281]。
 
@@ -377,14 +372,12 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 DevTools 现在在父帧下列出一个专用的服务工作进程。  下图显示了服务工作进程的详细信息。  若要显示服务工作进程详细信息，请导航至“**应用程序**” > “**帧**” > `top` > “**服务工作进程**”，然后选择一个服务工作进程。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1122507][CR1122507]。
 
 :::image type="complex" source="../../media/2021/01/application-frames-service-workers-details.msft.png" alt-text="帧详细信息中的服务工作进程信息" lightbox="../../media/2021/01/application-frames-service-workers-details.msft.png":::
-   
-            **帧**详细信息中的**服务工作进程**信息
+   **帧**详细信息中的**服务工作进程**信息
 :::image-end:::
 
 #### <a name="measure-memory-information-in-frame-details"></a>帧详细信息中的“测量内存”信息
 
-
-            `performance.measureMemory()` API 状态现在显示在“**API 可用性**”部分下。  新的 `performance.measureMemory()` API 估计整个网页的内存使用情况。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1139899][CR1139899]。
+`performance.measureMemory()` API 状态现在显示在“**API 可用性**”部分下。  新的 `performance.measureMemory()` API 估计整个网页的内存使用情况。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1139899][CR1139899]。
 
 :::image type="complex" source="../../media/2021/01/application-frames-measure-memory.msft.png" alt-text="测量内存" lightbox="../../media/2021/01/application-frames-measure-memory.msft.png":::
    测量内存
@@ -402,8 +395,7 @@ DevTools 现在在父帧下列出一个专用的服务工作进程。  下图显
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-
-            [高级感知对比度算法 (APCA)][GithubW3cSilverGuidelinesMethodsMethodFontCharacteristicContrastHtml] 取代了[颜色选取器][DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]中的 [AA][W3cWaiWcag21QuickrefContrastMinimum]/[AAA][W3cWaiWcag21QuickrefContrastEnhanced] 准则对比率。  APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式研究。  与 AA/AAA 准则相比，APCA 更依赖于上下文。  对比度是根据文本、颜色和上下文的以下空间属性计算的。
+[高级感知对比度算法 (APCA)][GithubW3cSilverGuidelinesMethodsMethodFontCharacteristicContrastHtml] 取代了[颜色选取器][DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]中的 [AA][W3cWaiWcag21QuickrefContrastMinimum]/[AAA][W3cWaiWcag21QuickrefContrastEnhanced] 准则对比率。  APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式研究。  与 AA/AAA 准则相比，APCA 更依赖于上下文。  对比度是根据文本、颜色和上下文的以下空间属性计算的。
 
 *   文本的空间属性，包括字体粗细和大小。
 *   颜色的空间属性，包括文本和背景之间的感知对比度。
@@ -419,254 +411,84 @@ DevTools 现在在父帧下列出一个专用的服务工作进程。  下图显
 
 如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
-
-            [DevtoolsWhatsNew85]: ../../2020/06/devtools.md
-             "DevTools 中的新增功能 (Microsoft Edge 85) | Microsoft Docs"
-          
-
-
-            [DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/color-picker.md
-             "使用颜色选取器来测试文本颜色 | Microsoft Docs"
-          
-
-            [DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css
-             "更改 CSS - CSS 功能引用| Microsoft Docs"
-          
-
-            [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings
-             "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"
-          
-
-            [DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md
-             "在 DevTools 中自定义键盘快捷方式 | Microsoft Docs"
-          
-
-            [DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]: ../../../device-mode/dual-screen-and-foldables.md#test-on-foldable-and-dual-screen-devices
-             "测试可折叠和双屏幕设备 - 在 Microsoft Edge DevTools 中模拟双屏幕和可折叠设备 | Microsoft Docs"
-          
-
-            [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md
-             "在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"
-          
-
-            [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport
-             "模拟移动视区 - 在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"
-          
-
-            [DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]: ../../../evaluate-performance/reference.md#record-load-performance
-             "记录负载性能 - 性能分析参考 | Microsoft Docs"
-          
-
-            [DevtoolsIndex]: ../../../index.md
-             "Microsoft Edge (Chromium) 开发人员工具概述 | Microsoft Docs"
-          
-
-            [DevtoolsInspectStylesEditFonts]: ../../../inspect-styles/edit-fonts.md
-             "在 DevTools 的“样式”窗格中编辑 CSS 字体样式和设置 | Microsoft Docs"
-          
-
-
-            [DualScreenIntroductionHowToWorkWithSeam]: /dual-screen/introduction#how-to-work-with-the-seam
-             "如何处理接缝 - 双屏幕设备简介| Microsoft Docs"
-          
-
-            [DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning
-             "用于双屏幕检测的 CSS 媒体屏幕跨越功能 | Microsoft Docs"
-          
-
-            [DualScreenWebJavascriptGetwindowsegments]: /dual-screen/web/javascript-getwindowsegments
-             "适用于双屏幕设备的 getWindowSegments JavaScript AP | Microsoft Docs"
-          
-
-
-            [GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtmlSection1]: https://microsoftedge.github.io/DevToolsSamples/whats-new/89/target-css-demo.html#section-1
-             "第 1 部分 - DevTools 中“新增功能”的 CSS :target 演示 (Microsoft Edge 89) | GitHub"
-          
-
-            [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools
-             "microsoft/vscode-edge-devtools | GitHub"
-          
-
-            [GithubMicrosoftVscodeEdgeDevtoolsPull229]: https://github.com/microsoft/vscode-edge-devtools/pull/229
-             "拉取 229：在设置中实现下拉列表以更改主题 | GitHub"
-          
-
-            [GithubMicrosoftVscodeEdgeDevtoolsPull233]: https://github.com/microsoft/vscode-edge-devtools/pull/233
-             "拉取 233：包括 Microsoft Edge 调试程序作为依赖项 | GitHub"
-          
-
-            [GithubMicrosoftVscodeEdgeDevtoolsPull235]: https://github.com/microsoft/vscode-edge-devtools/pull/235
-             "拉取 235：将 Edge DevTools 版本升级到 85.0.564.40 |GitHub"
-          
-
-            [GithubMicrosoftVscodeEdgeDevtoolsPull248]: https://github.com/microsoft/vscode-edge-devtools/pull/248
-             "拉取 248：将单个关闭按钮添加到实例面板 | GitHub"
-          
-
-            [GithubW3cSilverGuidelinesMethodsMethodFontCharacteristicContrastHtml]: https://w3c.github.io/silver/guidelines/methods/Method-font-characteristic-contrast.html
-             "选择字体特征和背景色以提供足够的对比度以方便阅读 | W3C"
-          
-
-            [GithubW3cWebappsecTrustedTypesDistSpec]: https://w3c.github.io/webappsec-trusted-types/dist/spec 
-             "受信任的类型 | W3C"
-          
-
-
-            [MicrosoftSurfaceDevicesSurfaceDuo]: https://www.microsoft.com/surface/devices/surface-duo
-             "新的 Surface Duo | Microsoft"
-          
-
-
-            [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download
-             "Microsoft Edge 预览频道"
-          
-
-
-            [VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually
-             "手动更新扩展 - Extension Marketplace | Visual Studio Code"
-          
-
-
-            [VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools
-             "Microsoft Edge Tools for Visual Studio Code | Visual Studio Marketplace"
-          
-
-            [VisualstudioMarketplaceMsjsdiagDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge
-             " Microsoft Edge 调试程序 | Visual Studio Marketplace"
-          
-
-
-            [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list
-             "Chromium 漏洞"
-          
-
-            [CR978059]: https://crbug.com/978059
-             "问题 978059：筛选 Cookie 后删除它们，删除所有 Cookie，而不仅仅是筛选的 Cookie | Chromium 漏洞"
-          
-
-            [CR997625]: https://crbug.com/997625
-             "问题 997625：新功能请求 | 需要用于查看 Cookie 中的 URL 解码值的选项 | Chromium 漏洞"
-          
-
-            [CR1003629]: https://crbug.com/1003629
-             "问题 1003629：捕获节点不再对折叠下方的节点进行屏幕截图。| Chromium 漏洞"
-          
-
-            [CR1012337]: https://crbug.com/1012337
-             "问题 1012337：清除网站数据会破坏非 Google 网站上 Google 会话 | Chromium 漏洞"
-          
-
-            [CR1028078]: https://crbug.com/1028078
-             "问题 1028078：在列表中将“联机”和“脱机”并排放置 | Chromium 漏洞"
-          
-
-            [CR1054281]: https://crbug.com/1054281
-             "问题 1054281：功能请求：DevTools 应模拟可折叠和双屏幕设备 | Chromium 漏洞"
-          
-
-            [CR1075865]: https://crbug.com/1075865
-             "问题 1075865：在 devtools 日程表中显示丢弃的帧 | Chromium 漏洞"
-          
-
-            [CR1093229]: https://crbug.com/1093229
-             "问题 1093229：DevTools：提供专用的字样编辑器 UI | Chromium 漏洞"
-          
-
-            [CR1121900]: https://crbug.com/1121900
-             "问题 1121900：DevTools：根据新规范更新对比度计算逻辑 | Chromium 漏洞"
-          
-
-            [CR1122507]: https://crbug.com/1122507
-             "问题 1122507：帧树视图中的 Surface 工作线程信息 | Chromium 漏洞"
-          
-
-            [CR1122580]: https://crbug.com/1122580
-             "问题 1122580：重载时无法禁用网络记录 | Chromium 漏洞"
-          
-
-            [CR1136394]: https://crbug.com/1136394
-             "问题 1136394：弹性框工具 |Chromium 漏洞"
-          
-
-            [CR1139899]: https://crbug.com/1139899
-             "问题 1139899：在帧详细信息视图中报告封闭的 API 的可用性 | Chromium 漏洞"
-          
-
-            [CR1139949]: https://crbug.com/1139949
-             "问题 1139949：弹性框覆盖 | Chromium 漏洞"
-          
-
-            [CR1147016]: https://crbug.com/1147016
-             "问题 1147016：颜色选取器未显示在 var() 函数中。| Chromium 漏洞"
-          
-
-            [CR1148353]: https://crbug.com/1148353
-             "问题 1148353：功能请求：从 devtools 控制台复制对象 | Chromium 漏洞"
-          
-
-            [CR1149859]: https://crbug.com/1149859
-             "问题 1149859：[功能请求][控制台] 将复制对象添加到剪贴板项目以及上下文菜单 | Chromium 漏洞"
-          
-
-            [CR1150797]: https://crbug.com/1150797
-             "问题 1150797：在“元素”面板中添加“复制元素”上下文菜单 | Chromium 漏洞"
-          
-
-            [CR1152391]: https://crbug.com/1152391
-             "问题 1152391：支持“样式”面板中的“复制 CSS”上下文菜单 | Chromium 漏洞"
-          
-
-            [CR1155120]: https://crbug.com/1155120
-             "问题 1155120：[FR]支持复制文件名和行号 | Chromium 漏洞"
-          
-
-            [CR1156628]: https://crbug.com/1156628
-             "问题 1156628：DevTools：在强制元素状态功能中添加对 :target 的支持 | Chromium 漏洞"
-          
-
-            [CR1157329]: https://crbug.com/1157329
-             "问题 1157329：辅助功能 - 讲述人：讲述人不会在“样式”选项卡中公布适用于代码的建议的计数和位置 | Chromium 漏洞"
-          
-
-
-            [MdnDocsWebCssTarget]: https://developer.mozilla.org/docs/web/css/:target
-             ":target | MDN"
-          
-
-
-            [SamsungUsMobileGalaxyFold]: https://www.samsung.com/us/mobile/galaxy-fold
-             "Galaxy Fold | Samsung US"
-          
-
-
-            [W3cWaiWcag21QuickrefContrastEnhanced]: https://www.w3.org/WAI/WCAG21/quickref#contrast-enhanced
-             "对比度（增强）- 如何满足 WCAG 的要求（快速参考）| W3C"
-          
-
-            [W3cWaiWcag21QuickrefContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref#contrast-minimum
-             "对比度（最低）- 如何满足 WCAG 的要求（快速参考）| W3C"
-          
+[DevtoolsWhatsNew85]: ../../2020/06/devtools.md "DevTools 中的新增功能 (Microsoft Edge 85) | Microsoft Docs"
+
+[DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/color-picker.md "使用颜色选取器来测试文本颜色 | Microsoft Docs"
+[DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "更改 CSS - CSS 功能引用| Microsoft Docs"
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "在 DevTools 中自定义键盘快捷方式 | Microsoft Docs"
+[DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]: ../../../device-mode/dual-screen-and-foldables.md#test-on-foldable-and-dual-screen-devices "测试可折叠和双屏幕设备 - 在 Microsoft Edge DevTools 中模拟双屏幕和可折叠设备 | Microsoft Docs"
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"
+[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport "模拟移动视区 - 在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"
+[DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]: ../../../evaluate-performance/reference.md#record-load-performance "记录负载性能 - 性能分析参考 | Microsoft Docs"
+[DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) 开发人员工具概述 | Microsoft Docs"
+[DevtoolsInspectStylesEditFonts]: ../../../inspect-styles/edit-fonts.md "在 DevTools 的“样式”窗格中编辑 CSS 字体样式和设置 | Microsoft Docs"
+
+[DualScreenIntroductionHowToWorkWithSeam]: /dual-screen/introduction#how-to-work-with-the-seam "如何处理接缝 - 双屏幕设备简介| Microsoft Docs"
+[DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "用于双屏幕检测的 CSS 媒体屏幕跨越功能 | Microsoft Docs"
+[DualScreenWebJavascriptGetwindowsegments]: /dual-screen/web/javascript-getwindowsegments "适用于双屏幕设备的 getWindowSegments JavaScript AP | Microsoft Docs"
+
+[GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtmlSection1]: https://microsoftedge.github.io/DevToolsSamples/whats-new/89/target-css-demo.html#section-1 "第 1 部分 - DevTools 中“新增功能”的 CSS :target 演示 (Microsoft Edge 89) | GitHub"
+[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
+[GithubMicrosoftVscodeEdgeDevtoolsPull229]: https://github.com/microsoft/vscode-edge-devtools/pull/229 "拉取 229：在设置中实现下拉列表以更改主题 | GitHub"
+[GithubMicrosoftVscodeEdgeDevtoolsPull233]: https://github.com/microsoft/vscode-edge-devtools/pull/233 "拉取 233：包括 Microsoft Edge 调试程序作为依赖项 | GitHub"
+[GithubMicrosoftVscodeEdgeDevtoolsPull235]: https://github.com/microsoft/vscode-edge-devtools/pull/235 "拉取 235：将 Edge DevTools 版本升级到 85.0.564.40 |GitHub"
+[GithubMicrosoftVscodeEdgeDevtoolsPull248]: https://github.com/microsoft/vscode-edge-devtools/pull/248 "拉取 248：将单个关闭按钮添加到实例面板 | GitHub"
+[GithubW3cSilverGuidelinesMethodsMethodFontCharacteristicContrastHtml]: https://w3c.github.io/silver/guidelines/methods/Method-font-characteristic-contrast.html "选择字体特征和背景色以提供足够的对比度以方便阅读 | W3C"
+[GithubW3cWebappsecTrustedTypesDistSpec]: https://w3c.github.io/webappsec-trusted-types/dist/spec  "受信任的类型 | W3C"
+
+[MicrosoftSurfaceDevicesSurfaceDuo]: https://www.microsoft.com/surface/devices/surface-duo "新的 Surface Duo | Microsoft"
+
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge 预览频道"
+
+[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "手动更新扩展 - Extension Marketplace | Visual Studio Code"
+
+[VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for Visual Studio Code | Visual Studio Marketplace"
+[VisualstudioMarketplaceMsjsdiagDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge " Microsoft Edge 调试程序 | Visual Studio Marketplace"
+
+[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium 漏洞"
+[CR978059]: https://crbug.com/978059 "问题 978059：筛选 Cookie 后删除它们，删除所有 Cookie，而不仅仅是筛选的 Cookie | Chromium 漏洞"
+[CR997625]: https://crbug.com/997625 "问题 997625：新功能请求 | 需要用于查看 Cookie 中的 URL 解码值的选项 | Chromium 漏洞"
+[CR1003629]: https://crbug.com/1003629 "问题 1003629：捕获节点不再对折叠下方的节点进行屏幕截图。| Chromium 漏洞"
+[CR1012337]: https://crbug.com/1012337 "问题 1012337：清除网站数据会破坏非 Google 网站上 Google 会话 | Chromium 漏洞"
+[CR1028078]: https://crbug.com/1028078 "问题 1028078：在列表中将“联机”和“脱机”并排放置 | Chromium 漏洞"
+[CR1054281]: https://crbug.com/1054281 "问题 1054281：功能请求：DevTools 应模拟可折叠和双屏幕设备 | Chromium 漏洞"
+[CR1075865]: https://crbug.com/1075865 "问题 1075865：在 devtools 日程表中显示丢弃的帧 | Chromium 漏洞"
+[CR1093229]: https://crbug.com/1093229 "问题 1093229：DevTools：提供专用的字样编辑器 UI | Chromium 漏洞"
+[CR1121900]: https://crbug.com/1121900 "问题 1121900：DevTools：根据新规范更新对比度计算逻辑 | Chromium 漏洞"
+[CR1122507]: https://crbug.com/1122507 "问题 1122507：帧树视图中的 Surface 工作线程信息 | Chromium 漏洞"
+[CR1122580]: https://crbug.com/1122580 "问题 1122580：重载时无法禁用网络记录 | Chromium 漏洞"
+[CR1136394]: https://crbug.com/1136394 "问题 1136394：弹性框工具 |Chromium 漏洞"
+[CR1139899]: https://crbug.com/1139899 "问题 1139899：在帧详细信息视图中报告封闭的 API 的可用性 | Chromium 漏洞"
+[CR1139949]: https://crbug.com/1139949 "问题 1139949：弹性框覆盖 | Chromium 漏洞"
+[CR1147016]: https://crbug.com/1147016 "问题 1147016：颜色选取器未显示在 var() 函数中。| Chromium 漏洞"
+[CR1148353]: https://crbug.com/1148353 "问题 1148353：功能请求：从 devtools 控制台复制对象 | Chromium 漏洞"
+[CR1149859]: https://crbug.com/1149859 "问题 1149859：[功能请求][控制台] 将复制对象添加到剪贴板项目以及上下文菜单 | Chromium 漏洞"
+[CR1150797]: https://crbug.com/1150797 "问题 1150797：在“元素”面板中添加“复制元素”上下文菜单 | Chromium 漏洞"
+[CR1152391]: https://crbug.com/1152391 "问题 1152391：支持“样式”面板中的“复制 CSS”上下文菜单 | Chromium 漏洞"
+[CR1155120]: https://crbug.com/1155120 "问题 1155120：[FR]支持复制文件名和行号 | Chromium 漏洞"
+[CR1156628]: https://crbug.com/1156628 "问题 1156628：DevTools：在强制元素状态功能中添加对 :target 的支持 | Chromium 漏洞"
+[CR1157329]: https://crbug.com/1157329 "问题 1157329：辅助功能 - 讲述人：讲述人不会在“样式”选项卡中公布适用于代码的建议的计数和位置 | Chromium 漏洞"
+
+[MdnDocsWebCssTarget]: https://developer.mozilla.org/docs/web/css/:target ":target | MDN"
+
+[SamsungUsMobileGalaxyFold]: https://www.samsung.com/us/mobile/galaxy-fold "Galaxy Fold | Samsung US"
+
+[W3cWaiWcag21QuickrefContrastEnhanced]: https://www.w3.org/WAI/WCAG21/quickref#contrast-enhanced "对比度（增强）- 如何满足 WCAG 的要求（快速参考）| W3C"
+[W3cWaiWcag21QuickrefContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref#contrast-minimum "对比度（最低）- 如何满足 WCAG 的要求（快速参考）| W3C"
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-89)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。
 
-
-            [
-              ![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
+[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies
 [JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
 
-
-            [SpanningPlaceholder]: link-t-b-d
-             "跨区占位符"
-          
+[SpanningPlaceholder]: link-t-b-d "跨区占位符"

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、安全性
-ms.openlocfilehash: e9ccbe4e8d2a4a2be03772e427af62cc4c2d3eb4
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 1e6a5e5ae4f3883e3cc6dfbd1cd1fcacc76e724d
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034499"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083532"
 ---
 # <a name="best-practices-for-developing-secure-webview2-applications"></a>开发安全 WebView2 应用程序的最佳方案
 
@@ -23,7 +23,7 @@ ms.locfileid: "12034499"
     *   使用每个参数之前验证 Web 消息和主机对象参数，因为 Web 消息和参数可能格式不正确 (无意或恶意\) 并会导致应用发生意外行为。
     *   始终检查在 WebView2 内运行的文档的来源，并评估内容可信度。
 1.  设计特定的 Web 消息和主机对象交互，而不是使用泛型代理。
-1.  设置以下选项，通过修改[Win32 (或 CoreWebView2Settings) ICoreWebView2Settings][Webview2ReferenceWin32Icorewebview2settings] A2.NET) 。 [ ][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings]
+1.  设置以下选项，通过修改 [ICoreWebView2Settings (Win32 ][Webview2ReferenceWin32Icorewebview2settings]) 或 [CoreWebView2Settings (.NET) 来限制 Web 内容功能 ][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings]。
     *   如果 `AreHostObjectsAllowed` 预计 Web 内容无法访问主机对象，则设置为 `false` 。
     *   如果预计 Web 内容不会向本机应用程序发布 Web 消息 `IsWebMessageEnabled` `false` ，则设置为 。
     *   设置为 ，如果您不期望 Web 内容运行脚本 `IsScriptEnabled` `false` \ (例如，当显示静态 html content\) 。
@@ -41,8 +41,9 @@ When examining the result of an `ExecuteScript` method call, a `WebMessageReceiv
 
 When constructing a message to send into a WebView, prefer using `PostWebMessageAsJson` and construct the JSON string parameter using a JSON library. This avoids any potential accidents of encoding information into a JSON string or script and ensure no attacker controlled input can modify the rest of the JSON message or run arbitrary script. -->
 
-<!-- links -->
 
+<!-- ====================================================================== -->
+<!-- links -->
 [Webview2Main]: ../index.md "Microsoft Edge WebView2 |Microsoft Docs"
 
 [Webview2ReferenceWin32Icorewebview2settings]: /microsoft-edge/webview2/reference/win32/icorewebview2settings "interface ICoreWebView2Settings |Microsoft Docs"

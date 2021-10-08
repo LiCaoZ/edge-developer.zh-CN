@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 6fb4d8651742c0cf2c87e6ffb8519c16d7728b3e
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: fe1ec3f4576a91ae081570913776643582ef08b9
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035850"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083897"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -33,7 +33,7 @@ ms.locfileid: "12035850"
 
 ### <a name="summary"></a>摘要
 
-*   使用源代码地图缩小代码映射到源代码。  然后，您能够读取和调试原始源中的已编译代码。
+*   使用 source 地图将缩小代码映射到源代码。  然后，您能够读取和调试原始源中的已编译代码。
 *   只能使用能够生成源处理器的预处理器地图。
 *   验证 Web 服务器能否为源服务器地图。
 
@@ -68,7 +68,7 @@ ms.locfileid: "12035850"
 
 ### <a name="enable-source-maps-in-settings"></a>在设置地图源源
 
-源地图默认启用<!-- \(as of Microsoft Edge 39\)-->，但如果您想要仔细检查或启用它们;First open DevTools， choose **Customize and control DevTools** \ (`...` \) >**设置**.  在首选项**窗格的****源下**，启用**JavaScript 源地图。**  您还可以启用启用 CSS**源地图。**
+源地图默认启用<!-- \(as of Microsoft Edge 39\)-->，但如果您想要仔细检查或启用它们;First open DevTools， choose **Customize and control DevTools** \ (`...` \) >**设置**.  在首选项**窗格的**源**下，启用** **JavaScript 源地图。**  您还可以启用启用 CSS**源地图。**
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="启用源地图" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
    **启用 JavaScript 源地图**
@@ -76,9 +76,9 @@ ms.locfileid: "12035850"
 
 ### <a name="debugging-with-source-maps"></a>使用 Source 地图
 
-调试代码并启用源代码地图，源地图显示在两处：
+调试代码并启用地图时，源地图显示在两处：
 
-1.  在控制台 \ (源的链接应该是原始文件，而不是生成的\) 
+1.  在控制台 \ (source 的链接应该是原始文件，而不是生成的\) 
 1.  单步执行代码 \ (调用堆栈中的链接应打开原始源文件\) 
 
 <!--todo: add link to debugging your code when section is available -->
@@ -111,12 +111,9 @@ ms.locfileid: "12035850"
    使用 `sourceURL`
 :::image-end:::
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [BabelJS]: https://babeljs.io "一个 JavaScript 编译器"
 
 [CoffeeScriptMain]: https://coffeescript.org "CoffeeScript"
@@ -135,6 +132,8 @@ ms.locfileid: "12035850"
 
 [TypeScriptMain]: https://www.typescriptlang.org "TypeScript"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)由[Meggin Kearney][MegginKearney] \ (Tech Writer\) 和[Paul Bakaus][PaulBakaus] \ (Open Web Developer Advocate、Google：Tools、Performance、Animation 和 UX\) 创作。

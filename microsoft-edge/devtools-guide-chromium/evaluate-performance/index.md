@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 044f9803f27aded1e85fd5cbd872d94b3827790e
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 1fb4eb1b7a75f9cab09044c9ec54ed216ff83ea6
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036298"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083833"
 ---
 <!-- Copyright Kayce Basques
 
@@ -243,13 +243,10 @@ To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->
 *   [Debounce Your Input Handlers][RenderingDebounceInputs]
 -->
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
-[DevtoolsCustomizePlacement]: ../customize/placement.md "将 DevTools 放置 (Undock、Dock 更改为 Bottom、Dock To Left) "
+[DevtoolsCustomizePlacement]: ../customize/placement.md "将 DevTools 放置 (Undock、Dock 更改为 Bottom、Dock to Left) "
 [DevtoolsSpeedGetStarted]: ../speed/get-started.md "使用 Microsoft Edge 开发人员工具优化网站速度"
 
 [TwitterEdgeDevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "EdgeDevTools - 发布推文 | Twitter"

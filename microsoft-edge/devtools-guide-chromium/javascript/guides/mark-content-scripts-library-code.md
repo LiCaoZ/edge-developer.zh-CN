@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 1ab8e2e4a63ea169e87d0016472cededf798f074
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 60fcc98c4d5c460ecc470272352eea10e39b1fb4
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034618"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083798"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,7 +29,7 @@ ms.locfileid: "12034618"
    limitations under the License.  -->
 # <a name="mark-content-scripts-as-library-code"></a>将内容脚本标记为库代码
 
-使用 **"源"** 工具逐步执行 [代码时][DevToolsJavascriptStepThroughCode]，有时会对无法识别的代码暂停。  您可能暂停了已安装的一个 Microsoft Edge 扩展的代码。  若要不在扩展代码上暂停，请完成以下操作。
+使用 **"源"** 工具逐步执行 [代码时][DevToolsJavascriptStepThroughCode]，有时会对无法识别的代码暂停。  你可能已经暂停了已安装的 Microsoft Edge 扩展的代码。  若要不在扩展代码上暂停，请完成以下操作。
 
 1.  在 DevTools 的右上角，选择齿轮图标** (设置) 。**  此时将出现**设置**页面。
 1.  在 **"设置"** 下，选择"**忽略列表"。**  将显示 **"框架**库代码 **"设置**部分。
@@ -39,14 +39,13 @@ ms.locfileid: "12034618"
        启用" **将内容脚本标记为库代码"** 复选框
     :::image-end:::
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "步骤 4：逐步完成代码 - 开始在 DevTools Microsoft Edge中调试 JavaScript |Microsoft Docs"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/guides/blackbox-chrome-extension-scripts)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。

@@ -1,5 +1,5 @@
 ---
-description: 在 DevTools 中打开Microsoft Edge所有方法。
+description: 在 DevTools 中打开 Microsoft Edge的所有方法。
 title: 打开 Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 07/01/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 30a952256a71b1ca9c20ddddeaf9fc40e7873706
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 935a4a8c895f954d9de9415ac8d1e60d5d96cb3a
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036557"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083840"
 ---
 <!-- Copyright Kayce Basques
 
@@ -36,7 +36,7 @@ ms.locfileid: "12036557"
 若要打开 DevTools，请使用以下任一选项。
 
 *   使用 Microsoft Edge UI。
-    *  选择设置**工具开发人员工具"** 中的 (`...` \) ****  >   **\>"** 图标。
+    *  选择设置**工具开发人员工具"** 中的 (`...` \) \>"图标****  >   ****。
 
 *   使用键盘。
     *   选择 `F12` 或 `Control` + `Shift` + `I` \ (Windows、Linux\) 或 `Command` + `Option` + `I` \ (macOS\) 。
@@ -49,7 +49,7 @@ ms.locfileid: "12036557"
 
 ## <a name="open-the-elements-panel-to-inspect-the-dom-or-css"></a>打开"元素"面板以检查 DOM 或 CSS
 
-通过以下任一任务，您可以检查文档对象模型 [\ (](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) DOM\) 的样式或属性。
+通过以下任一任务，您可以检查文档对象模型 [\ (](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) DOM\) 节点的样式或属性。
 
 *   将鼠标悬停在 元素上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**
 *   选择 `Control` + `Shift` + `C` \(Windows、Linux\) 或 `Command` + `Option` + `C` \(macOS\)。 有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。
@@ -122,18 +122,16 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
     > *   选择 `Ctrl` + `Shift` + `I` 。
     > *   打开上下文菜单 \ (右键单击\) > **检查**。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
-[DevtoolsConsoleIndex]: ../console/index.md "控制台概述|Microsoft Docs"
+[DevtoolsConsoleIndex]: ../console/index.md "控制台概述 | Microsoft Docs"
 [DevtoolsShortcutsIndex]: ../shortcuts/index.md "Microsoft Edge DevTools 键盘快捷方式 | Microsoft Docs"
-
 <!--[ConsoleGetStarted]: /microsoft-edge/devtools-guide-chromium/console/get-started ""  -->
 <!--[GetStartedCSS]: /microsoft-edge/devtools-guide-chromium/css "CSS"  -->
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/open)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 21c5580ff8c5cc325be844336351ceb5d1d46ddc
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 46d987b198bf3e69744611580cd3097212bed886
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035465"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083238"
 ---
 # <a name="navigation-events"></a>导航事件
 
@@ -56,21 +56,20 @@ ms.locfileid: "12035465"
 
 若要监视或取消 WebView2 实例中的子框架内的导航事件，请使用 和 事件，这些事件与等效的非 `FrameNavigationStarting` `FrameNavigationCompleted` 帧对应事件类似。
 
+
+<!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*   若要开始使用 WebView2，请导航到["WebView2 入门指南][Webview2IndexGetStarted]"。
-*   有关 WebView2 功能的综合示例，请导航到[webView2Samples][GithubMicrosoftedgeWebview2samples]存储库GitHub。
-*   有关 WebView2 API 的更多详细信息，请导航到 [API 参考][DotnetApiMicrosoftWebWebview2WpfWebview2]。
-*   有关 WebView2 的信息，请导航到["WebView2 资源"。][Webview2IndexNextSteps]
+*  [WebView2 入门指南][Webview2IndexGetStarted]
+*  [WebView2Samples 存储库][GithubMicrosoftedgeWebview2samples] - WebView2 功能的综合示例。
+*  [WebView2 API 参考][DotnetApiMicrosoftWebWebview2WpfWebview2]
+*  [另请参阅][Webview2IndexNextSteps] _WebView2 Microsoft Edge简介_。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>联系 Microsoft Edge WebView 团队
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [Webview2IndexGetStarted]: ../index.md#get-started "入门 - WebView2 Microsoft Edge简介|Microsoft Docs"
-[Webview2IndexNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 |Microsoft Docs"
+[Webview2IndexNextSteps]: ../index.md#see-also "另请参阅 - WebView2 Microsoft Edge简介|Microsoft Docs"
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 类|Microsoft Docs"
 

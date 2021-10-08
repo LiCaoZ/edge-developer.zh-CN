@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 954d68927cc938c27beebdf0470e7546564ee2d6
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 7600b0eca4ac41fef874ad4924b48a506ce436f4
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035283"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083658"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -46,7 +46,7 @@ ms.locfileid: "12035283"
 *   直接由 对象。
 *   隐式保留对其他对象的引用，从而阻止垃圾收集器自动释放这些对象。
 
-使用 DevTools \ (中的内存面板时 (在**Memory**\) 下发现的内存问题时，你可能会发现自己正在查看一些不同的信息列。 [][DevtoolsMemoryProblemsHeapSnapshots]  两个突出的"浅 **表** 大小"和 **"保留大小**"，但这表示什么？
+使用 DevTools \ (中的内存面板时) 发现内存**\) **下发现的内存问题的工具，你可能会发现自己正在查看一些不同的信息列。 [][DevtoolsMemoryProblemsHeapSnapshots]  两个突出的"浅 **表** 大小"和 **"保留大小**"，但这表示什么？
 
 :::image type="complex" source="../media/memory-problems-shallow-retained.msft.png" alt-text="浅表和保留大小" lightbox="../media/memory-problems-shallow-retained.msft.png":::
    浅表和保留大小
@@ -64,7 +64,7 @@ ms.locfileid: "12035283"
 
 这是在对象删除后释放的内存大小，以及从垃圾回收器根目录无法访问的从属 **对象**。
 
-**垃圾回收器根**由在从本机**** 代码引用 V8 外部的 JavaScript 对象时创建的句柄（本地或全局) \ (）创建。  可以在 GC 根下的堆快照内找到所有此类**** 句柄  >  **处理范围**和**GC 根**  >  **全局句柄**。  在本文档中介绍句柄而不深入介绍浏览器实现的详细信息可能会令人困惑。  垃圾回收器根和句柄都不需要担心。
+**垃圾回收器根**由在从本机**** 代码引用 V8 外部的 JavaScript 对象时创建的句柄（本地或全局 (\) ）所创建。  可以在 GC 根下的堆快照内找到所有此类**** 句柄  >  **处理范围**和**GC 根**  >  **全局句柄**。  在本文档中介绍句柄而不深入介绍浏览器实现的详细信息可能会令人困惑。  垃圾回收器根和句柄都不需要担心。
 
 存在大量内部垃圾回收器根，其中大多数对用户不感兴趣。  从应用程序的角度来看，有以下类型的根。
 
@@ -90,7 +90,7 @@ ms.locfileid: "12035283"
 
 堆是互连对象的网络。  在数学世界，此结构称为 **图形或** 内存图。  图形由**通过边缘连接的**节点构造，两者都是**** 给定的标签。
 
-*   **节点**\ (**或对象**\) 标有用于生成节点或对象的构造函数函数的名称****。
+*   **节点**\ (**或对象**\) 标有用于生成节点的构造函数函数的名称。 ****
 *   **边缘** 使用属性 的名称 **标记**。
 
 了解如何 [使用堆配置文件器记录配置文件][DevtoolsMemoryProblemsHeapSnapshots]。  在下图中，内存工具中堆快照记录中的一些 [值得注意的事项包括][DevtoolsMemoryProblemsHeapSnapshots] 距离：垃圾回收器根之间的距离。  如果几乎同一类型的所有对象都位于同一距离，而其中一些对象距离较大，那么这一点值得研究。
@@ -137,7 +137,7 @@ Dominator 对象由树结构组成，因为每个对象只有一个管理程序�
 
 **数字** 可以存储为：
 
-*   一个称为小整数 **\ (** **SMI**s\) 的直接 31 位整数值，或
+*   称为小整数 **\ (** **SMI**s\) 的直接 31 位整数值，或
 *   堆对象，称为 **堆数**。 堆编号用于存储不适合 SMI 表单的值（如双精度数）或需要对**** 值进行装箱时（例如设置其属性）。 ****
 
 **字符串** 可以存储在：
@@ -145,7 +145,7 @@ Dominator 对象由树结构组成，因为每个对象只有一个管理程序�
 *   **VM 堆**， 或
 *   在呈现 **器的内存外部**。  创建 **包装** 对象并用于访问外部存储，例如，存储从 Web 接收的脚本源和其他内容，而不是复制到 VM 堆。
 
-新 JavaScript 对象的内存从专用 JavaScript 堆 \ (或 **VM 堆**\) 。  这些对象由 V8 中的垃圾回收器管理，因此，只要至少有一个对对象的强引用，它们就保持活动状态。
+新 JavaScript 对象的内存从专用 JavaScript 堆 \ (**或 VM 堆**\) 。  这些对象由 V8 中的垃圾回收器管理，因此，只要至少有一个对对象的强引用，它们就保持活动状态。
 
 不在 JavaScript 堆中任何内容都称为 **本机对象**。  与堆对象相反，本机对象在生命周期内不由 V8 垃圾回收器管理，并且只能使用 JavaScript 包装对象从 JavaScript 访问。
 
@@ -173,15 +173,12 @@ Dominator 对象由树结构组成，因为每个对象只有一个管理程序�
 
 每个包装对象保存对相应本机对象的引用，用于将命令重定向到该对象。  反过来，对象组会保留包装对象。  但是，这不会创建一个不可存储的循环，因为垃圾回收器足够智能，可以释放不再引用其包装器的对象组。  但忘记释放单个包装会保留整个组和关联的包装器。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsMemoryProblemsHeapSnapshots]: ./heap-snapshots.md "如何记录堆快照|Microsoft Docs"
 
-[V8FastProperties]: https://v8.dev/blog/fast-properties "V8 中的快速|V8"
+[V8FastProperties]: https://v8.dev/blog/fast-properties "V8 | 中的快速属性V8"
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。

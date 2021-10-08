@@ -9,12 +9,12 @@ ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
 no-loc:
 - Enable new font editor tool within the Styles pane
-ms.openlocfilehash: 12b83a4c6c2e909d82f56b051c8d0cba236a3f6f
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: df82ce1b50f70ba36485b2faaa4f7b8b2de475c7
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036438"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083819"
 ---
 # <a name="edit-css-font-styles-and-settings-in-the-styles-pane"></a>在“样式”窗格中编辑 CSS 字体样式和设置
 
@@ -104,12 +104,9 @@ ms.locfileid: "12036438"
    打开预设关键字界面
 :::image-end:::
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
 [DevtoolsExperimentalFeaturesIndex]: ../experimental-features/index.md "试验功能 | Microsoft Docs"
 [DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../experimental-features/index.md#turning-on-experimental-features "打开试验功能 - 试验功能 | Microsoft Docs"

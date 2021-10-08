@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: ca1ba6c5b31fa526ebf977bec6d1de266c0e4dd3
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 6e76f4879b57bf3cdcd8bd0a4a08d09f93b55fac
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035892"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083112"
 ---
 # <a name="microsoft-edge-developer-tools-overview"></a>Microsoft Edge开发人员工具概述
 
@@ -36,7 +36,7 @@ ms.locfileid: "12035892"
 
 若要打开和浏览 DevTools，请执行下列任一操作：
 
-*   将鼠标悬停在网页上的任何元素上，打开上下文菜单 (右键单击") "，然后选择"检查 **"。**  将打开 DevTools，并 **选中"元素** "工具。
+*   将鼠标悬停在网页上的任何元素上，打开上下文菜单 (右键单击") "，然后选择"检查 **"。**  将打开 DevTools，并选中 **"元素** "工具。
 *   选择 `F12`。
 *   在 `Ctrl` + `Shift` + `I` Windows/Linux 或 `Command` + `Option` + `I` macOS 上选择。
 
@@ -53,7 +53,7 @@ ms.locfileid: "12035892"
 
 有两种主要方式可以与 DevTools 进行交互。
 *   使用鼠标。
-*   “键盘快捷方式”。  它们提供了访问功能的快速方法，并且辅助功能需要。  Microsoft Edge DevTools 团队致力于使用键盘和辅助技术（如屏幕阅读器）提供所有工具。  请参阅[Microsoft Edge开发人员工具键盘快捷方式][DevtoolsGuideShortcutsIndex]。
+*   “键盘快捷方式”。  它们提供了快速访问功能的方法，并且辅助功能需要。  Microsoft Edge DevTools 团队致力于使用键盘和辅助技术（如屏幕阅读器）提供所有工具。  请参阅[Microsoft Edge开发人员工具键盘快捷方式][DevtoolsGuideShortcutsIndex]。
 
 另请参阅[Open Microsoft Edge DevTools][DevtoolsGuideOpenIndex] - 如何在 DevTools 中打开不同功能。
 
@@ -121,7 +121,7 @@ DevTools 为您提供了一项令人惊叹的功能，可以检查、调试和�
 *  [源][DevtoolsGuideSourcesIndex]。  代码编辑器和 JavaScript 调试程序。  可以编辑项目、维护代码段和调试当前项目。
 *  [网络][DevtoolsGuideNetworkIndex]。  允许从网络和浏览器缓存中监视和检查请求或响应。  可以筛选请求和响应以满足您的需求并模拟不同的网络条件。
 
-最后，默认情况下，这些 (选项卡) 工具栏上：
+最后，默认情况下，工具栏 (选项卡) 更专业的工具：
 * **性能**
 * **内存**
 * **应用程序**
@@ -154,9 +154,9 @@ DevTools 中的主工具栏包含以下部分：
        本文在仿真移动电话中的 DevTools 显示的屏幕截图
     :::image-end:::
 
-*   主工具栏包含用于各种方案的工具的选项卡。  您可以自定义每个工具，并且工具的内容可能会基于上下文更改。  若要在隐藏的选项卡上显示工具，请选择"更多选项卡****" () `>>` 按钮。   To add a tool to the main toolbar or to the drawer's toolbar， select the **More tools** (`+`) button.  下面介绍了每个工具。
+*   主工具栏包含用于各种方案的工具的选项卡。  您可以自定义每个工具，并且工具的内容可能会基于上下文更改。  若要在隐藏的选项卡上显示工具，请选择"更多选项卡 () **** `>>` 按钮。   To add a tool to the main toolbar or to the drawer's toolbar， select the **More tools** (`+`) button.  下面介绍了每个工具。
 
-*   "工具"选项卡组旁边是可选错误和问题快捷方式。  在当前网页上出现 JavaScript 错误或问题时，会显示快捷方式。  " **打开控制台以查看 # 错误， # 警告** (**JavaScript** 错误) "按钮显示一个红色圆圈，后跟 `X` JavaScript 错误数。  若要打开 [控制台并了解][DevtoolsGuideConsoleIndex] 错误，请选择 **"JavaScript 错误"** 按钮。  "**查看 # 问题** (问题) 按钮是**** 一个蓝色消息图标，后跟问题数。  若要打开" [问题"][DevtoolsGuideIssuesIndex] 工具，请选择" **问题"** 按钮。
+*   "工具"选项卡组旁边是可选错误和问题快捷方式。  在当前网页上出现 JavaScript 错误或问题时，会显示快捷方式。  " **打开控制台以查看 #错误， # 警告** (**JavaScript** 错误) "按钮显示一个红色圆圈，后跟 `X` JavaScript 错误数。  若要打开 [控制台并了解][DevtoolsGuideConsoleIndex] 错误，请选择 **"JavaScript 错误"** 按钮。  "**查看 # 问题** (问题) 按钮是**** 一个蓝色消息图标，后跟问题数。  若要打开" [问题"][DevtoolsGuideIssuesIndex] 工具，请选择" **问题"** 按钮。
 
 *   " **设置** "按钮显示齿轮图标。  若要在网页中**设置**DevTools，**请选择"设置**按钮。  " **设置** "网页显示一个菜单，用于更改 **首选项**、打开 **实验**等。
 
@@ -168,7 +168,7 @@ DevTools 中的主工具栏包含以下部分：
 <!-- ====================================================================== -->
 ## <a name="power-tip-use-the-command-menu"></a>电源提示：使用命令菜单
 
-DevTools 提供了许多要用于 Web 产品的特性和功能。  可以通过多种方式访问 DevTools 的不同部分，但通常一种快速的方式是使用命令菜单。
+DevTools 提供了许多要用于 Web 产品的特性和功能。  可以通过多种方式访问 DevTools 的不同部分，但通常是使用命令菜单的快速方法。
 
 在命令菜单中，这些工具称为"面板";例如 **，Elements** 工具称为" **元素"** 面板。  若要 **切换到"元素** "工具，请选择" **元素"** 选项卡。
 
@@ -181,7 +181,7 @@ DevTools 提供了许多要用于 Web 产品的特性和功能。  可以通过�
 DevTools 中命令菜单的屏幕截图
 :::image-end:::
 
-命令菜单允许你键入命令以在 DevTools 中显示、隐藏或运行功能。  打开命令菜单后，输入单词**changes**，然后选择"**箱： 显示更改"。**  The **Changes** tool opens, which is useful when you edit CSS.  在这种情况下，命令菜单提供了一个快速备选方法，选择"更多工具" (...) 然后选择"更改"，或在"源****"工具中编辑文件，然后右键单击并选择"本地修改**** `.js` **"。** ****
+命令菜单允许你键入命令以在 DevTools 中显示、隐藏或运行功能。  打开命令菜单后，输入单词**changes**，然后选择"**箱： 显示更改"。**  The **Changes** tool opens, which is useful when you edit CSS.  在这种情况下，命令菜单提供了快速替代方法，选择"更多工具" (...) 然后选择"更改"，或在"源"工具中**** 编辑文件，然后右键单击并选择"本地修改**** `.js` **"。** ****
 
 键入 后，命令菜单将显示选项 `changes` ：
 
@@ -217,7 +217,7 @@ DevTools 中命令菜单的屏幕截图
 *   定义 **设备** 模拟和测试模式下要包括的设备。  有关详细信息，请导航到 [在Microsoft Edge DevTools中模拟移动设备][DevtoolsGuideDeviceModeIndex]。
 *   选择网络 **限制** 配置文件。
 *   定义模拟 **位置**。
-*   自定义键盘 **快捷方式**。  例如，若要在 DevTools 中使用相同的快捷方式（如 Visual Studio Code 中一样，**** 请选择"匹配预设  >  **Visual Studio Code"。**
+*   自定义键盘 **快捷方式**。  例如，若要在 DevTools 中像在 Visual Studio Code 中一样使用同一**** 快捷方式，请选择"从预设  >  **Visual Studio Code"。**
 
     :::image type="complex" source="./media/devtools-intro-match-keys.msft.png" alt-text="所有键盘快捷方式和菜单的屏幕截图，这些快捷方式与代码中的快捷方式Visual Studio匹配" lightbox="./media/devtools-intro-match-keys.msft.png":::
        所有键盘快捷方式和菜单的屏幕截图，这些快捷方式与代码中的快捷方式Visual Studio匹配
@@ -227,22 +227,16 @@ DevTools 中命令菜单的屏幕截图
 <!-- ====================================================================== -->
 ## <a name="trying-experimental-features"></a>尝试实验性功能
 
-DevTools 团队在 DevTools _中提供_ 新功能作为实验。  你可以打开或关闭每个实验。  To see the full list of [Experimental features][DevtoolsGuideExperimentalFeaturesIndex]， in DevTools， select**设置 (** the gear icon) ， and then select **Experimental**.
+DevTools 团队在 DevTools _中提供_ 新功能作为实验。  你可以打开或关闭每个实验。  To see the full list of [Experimental features][DevtoolsGuideExperimentalFeaturesIndex]， in DevTools， select**设置** (the gear icon) ， and then select **Experimental**.
 
-
-<!-- ====================================================================== -->
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
-
-[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]
-
-若要预览[DevTools][DevtoolsGuideWhatsNew202102Devtools]中提供的最新功能，请下载[Microsoft Edge Canary，][MicrosoftedgeinsiderDownload]它夜间生成。
+若要预览[DevTools][DevtoolsGuideWhatsNew202102Devtools]中的最新功能，请下载[Microsoft Edge Canary，][MicrosoftedgeinsiderDownload]它夜间生成。
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*   [适用于初学者的 DevTools：入门 HTML 和 DOM][DevtoolsGuideBeginnersHtml]
-*   [Microsoft Edge (Chromium) DevTools 协议][DevtoolsProtocolIndex]
+*  [适用于初学者的 DevTools：入门 HTML 和 DOM 进行开发][DevtoolsGuideBeginnersHtml]
+*  [Microsoft Edge (Chromium) DevTools 协议][DevtoolsProtocolIndex]
 
 
 <!-- ====================================================================== -->
@@ -251,7 +245,7 @@ DevTools 团队在 DevTools _中提供_ 新功能作为实验。  你可以打�
 [DevtoolsGuideCommandMenuIndex]: ./command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行|Microsoft Docs"
 [DevtoolsGuideConsoleIndex]: ./console/index.md "控制台概述|Microsoft Docs"
 [DevtoolsGuideCustomizePlacement]: ./customize/placement.md "Change DevTools placement (Undock， Dock To bottom， Dock To left) |Microsoft Docs"
-[DevtoolsGuideDeviceModeIndex]: ./device-mode/index.md "在 Microsoft Edge 开发人员工具中模拟移动设备 | Microsoft Docs"
+[DevtoolsGuideDeviceModeIndex]: ./device-mode/index.md "在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"
 [DevtoolsGuideDomIndex]: ./dom/index.md "查看和更改 CSS 入门 | Microsoft 文档 | Microsoft Docs"
 [DevtoolsGuideEvaluatePerformanceIndex]: ./evaluate-performance/index.md "开始分析运行时性能|Microsoft Docs"
 [DevtoolsGuideExperimentalFeaturesIndex]: ./experimental-features/index.md "试验功能 | Microsoft Docs"
@@ -271,7 +265,5 @@ DevTools 团队在 DevTools _中提供_ 新功能作为实验。  你可以打�
 [DevtoolsProtocolIndex]: ../devtools-protocol-chromium/index.md "Microsoft Edge （Chromium） DevTools 协议概述|Microsoft Docs"
 <!-- external links -->
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge 加载项"
-
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "下载 Microsoft Edge 预览体验成员频道"
-
 [GoogleChromeWebstoreExtensions]: https://chrome.google.com/webstore/category/extensions "扩展|Chrome Web Store"

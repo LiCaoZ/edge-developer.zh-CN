@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 94c8e5e4a697745e83f1d9ec54ac86398996da68
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 525ab1136b116683d88c719e253cfff6a9931203
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035689"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082020"
 ---
 <!-- Copyright Kayce Basques
 
@@ -52,7 +52,7 @@ ms.locfileid: "12035689"
 
 如果你使用的是新式框架，它可能会将源代码从易于维护的格式转换为经过优化以尽快运行的格式。
 
-工作区通常能够借助源映射 将优化的代码映射回原始 [源代码][TreehouseBlogSourceMaps]。  但在每个框架使用源映射方面，框架之间有很多差异。  Devtools 不支持所有变体。
+工作区通常能够借助源映射 将优化的代码映射回原始 [源代码][TreehouseBlogSourceMaps]。  但在每个框架使用源映射时，框架之间有很多差异。  Devtools 不支持所有变体。
 
 工作区已知无法与以下框架一起工作。
 
@@ -62,7 +62,7 @@ ms.locfileid: "12035689"
 
 ## <a name="related-feature-local-overrides"></a>相关功能：本地覆盖
 
-**本地覆盖** 是另一项类似于 Workspaces 的 DevTools 功能。  当您想要尝试对网页所做的更改，并且需要跨网页加载显示更改，但您不关心将更改映射到网页的源代码时，请使用本地替代。
+**本地覆盖** 是另一项类似于 Workspaces 的 DevTools 功能。  当您要尝试对网页所做的更改，并且您需要跨网页加载显示更改，但您不关心将更改映射到网页的源代码时，请使用本地替代。
 
 <!--Todo: add section when content is ready  -->
 
@@ -216,7 +216,7 @@ In short, the **DOM Tree** `!==` HTML.
 
 ## <a name="step-4-save-a-javascript-change-to-disk"></a>步骤 4：将 JavaScript 更改保存到磁盘
 
-使用 DevTools 的代码编辑器的主要位置是 **源** 工具。  但有时你需要在编辑文件时访问其他工具，如**元素**工具或控制台面板。 ****  当 **任何** 工具打开时，快速源工具仅为你提供 **源** 工具中的编辑器。
+使用 DevTools 的代码编辑器的主要位置是 **源** 工具。  但有时你需要在编辑文件时访问其他工具，如**元素**工具或控制台面板。 ****  快速 **源** 工具仅为你提供源工具 **中的编辑器，** 同时任何工具都打开。
 
 若要与其他工具一起打开 DevTools 代码编辑器，请执行下列操作：
 
@@ -265,16 +265,12 @@ If you have more feedback on the topics or anything else, please use any of the 
 *   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]
 *   [Twitter][TwitterAlphabetBrowserDevTools]  -->
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevToolsCssIndex]: ../css/index.md "开始查看和更改 CSS |Microsoft Docs"
-
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->
-
+<!-- external links -->
 <!--[AlphabetGroupsAlphabetBrowserDevTools]: https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools "Alphabet Browser DevTools - Alphabet Groups"  -->
 
 [GlitchWorkspacesDemo]: https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0 "Workspaces 演示|小故障"
@@ -292,6 +288,8 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 [WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port \ (computer networking\) - Wikipedia"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/workspaces/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。

@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: 75c3a1e35da6d1fc5c945fcac55cbde2b8d5ae4f
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: b8585db90b090d6bbca10bb558cf18d86a01778d
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036648"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083091"
 ---
 <!-- Copyright Kayce Basques
 
@@ -153,20 +153,19 @@ ms.locfileid: "12036648"
 | 运行 | `Enter` | `Return` |
 | 展开记录到控制台的对象的所有子属性 | 按住`Alt`，然后选择“**展开**” \(![展开](../media/expand-icon.msft.png)\) | 按住`Alt`，然后选择“**展开**” \(![展开](../media/expand-icon.msft.png)\) |
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"
 [DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "设置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"
 [DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "更改开发工具位置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"
-[DevtoolsDeviceModeIndex]: ../device-mode/index.md "在 Microsoft Edge 开发人员工具中模拟移动设备 | Microsoft Docs"
+[DevtoolsDeviceModeIndex]: ../device-mode/index.md "在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"
 [DevtoolsJavascriptBreakpointsLOC]: ../javascript/breakpoints.md#line-of-code-breakpoints "代码行断点 - 如何在 Microsoft Edge 开发工具中使用断点暂停代码 | Microsoft Doc"
 
 <!--[201705ReleaseNotesContinue]: whats-new/2017/05/devtools-release-notes#continue  -->
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/shortcuts)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。

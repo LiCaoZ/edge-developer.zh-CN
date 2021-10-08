@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: e119fc88cc6e70ddd5286c3d765e0cf8963ea411
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 86a84c86014fd55b4d3d0d3916e0f62458fa755e
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034947"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082265"
 ---
 # <a name="analyze-keyboard-support-on-forms-using-the-devtools"></a>使用 DevTools 分析表单上的键盘支持
 
@@ -93,12 +93,6 @@ donations.addEventListener('click', e => {
 ## <a name="see-also"></a>另请参阅
 
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
-
-
-<!-- ====================================================================== -->
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
 
 <!-- ====================================================================== -->

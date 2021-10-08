@@ -7,12 +7,12 @@ ms.date: 08/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发工具，面向初学者的开发工具，面向初学者的开发工具 HTML，面向初学者的开发工具 DOM，开发者工具 html 教程，开发者工具 html 教程，开发者工具文档对象模型教程
-ms.openlocfilehash: b297a13cdfaeb0e0b28a77c3e5bb033906587bc8
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 25585536d3095a435bf151a403300e1cbf76f195
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034821"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082034"
 ---
 <!-- Copyright Katherine Jackson
 
@@ -174,7 +174,7 @@ ms.locfileid: "12034821"
         :::image-end:::
     -->
 
-1. 打开活动**选项卡**，将鼠标悬停在 上，右键单击 (上下文菜单，然后选择) `A new element!?!` 检查 **"。**
+1. 打开实时**选项卡**，将鼠标悬停在 上，右键单击 (上下文菜单，然后选择) `A new element!?!` 检查 **"。**
 
     :::image type="complex" source="media/beginners-html-dom3.msft.png" alt-text="检查某些文本" lightbox="media/beginners-html-dom3.msft.png":::
        检查某些文本 :::image-end:::
@@ -296,18 +296,16 @@ ms.locfileid: "12034821"
        文件 `index.html` 的外观
     :::image-end:::
 
+
 ## <a name="next-steps"></a>后续步骤
 
 *   完成本系列的下一个教程[CSS入门][DevToolsBeginnersCss]，以了解如何设置页面样式并尝试在Microsoft Edge DevTools中进行样式更改。
 *   阅读[ DOM 简介][MDNIntroductionDom]，详细了解 DOM。
 *   有关更多动手 Web 开发体验， 请查看[Web 开发简介][CourseraIntroductionToWebDevelopment]等课程。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-<!--- links --->
-
+<!-- ====================================================================== -->
+<!-- links -->
 [DevToolsBeginnersCss]: ./css.md "适用于初学者的 DevTools：CSS |Microsoft Docs"
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge 预览体验成员"

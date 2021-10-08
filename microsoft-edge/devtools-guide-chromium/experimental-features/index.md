@@ -22,16 +22,16 @@ no-loc:
 - Edit keyboard shortcuts for any action in the DevTools
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
-ms.openlocfilehash: 8160acd42e14d934ad5358abe7d9df0836e1164f
-ms.sourcegitcommit: 24bb983a1ca811ba4ac038dce0c5c7f5d6bbb745
+ms.openlocfilehash: 00e6533d446aba209cf6e925b886421eb40e6f0b
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "12057837"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083911"
 ---
 # <a name="experimental-features"></a>试验功能
 
-Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限。  可以在发布每个 [功能之前](#providing-feedback-on-experimental-features) 进行测试并提供反馈。
+Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限。  您可以在发布每个功能之前试用这些功能和[提供反馈][联系人]。
 
 组织的所有频道Microsoft Edge实验性功能。  可以使用以下方法获取最新的实验Microsoft Edge Canary 渠道。  本文仅介绍所选实验功能。  有关完整列表，请参阅****  >  **** DevTools 设置实验"页面。
 
@@ -59,13 +59,11 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 1.  [打开 DevTools][DevtoolsOpenIndex]。  为此，在"Microsoft Edge"中，设置"更多"**** 按钮，这是三个点 (省略号) 。  然后将鼠标悬停在 **"更多工具"上**，然后选择"**开发人员工具"。**
 
-1.  打开[devTools][DevToolsCustomizeIndexSettings]设置窗格。  为此，请选择 **"设置 (** 齿轮) 图标。
+1.  打开["设置][DevToolsCustomizeIndexSettings]工具"的"设置"窗格。  为此，请选择 **"设置 (** 齿轮) 图标。
 
 1.  在"实验"窗格**设置，** 选择"实验 **"** 部分。
 
-    :::image type="complex" source="../media/experiments-devtools.msft.png" alt-text="设置中的试验页面" lightbox="../media/experiments-devtools.msft.png":::
-       **设置**中的**试验**页面
-    :::image-end:::
+    :::image type="content" source="../media/experiments-devtools.msft.png" alt-text="设置中的试验页面" lightbox="../media/experiments-devtools.msft.png":::
 
 1.  在 **实验** 页面上，滚动浏览所有可用实验功能的列表，并选中要测试的每个功能旁边的复选框。  某些实验默认打开。
 
@@ -92,8 +90,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 1.  在部分 **Source Order Viewer** 下，选中" **显示源订单"** 复选框。
 1.  突出显示任何 HTML 元素，以显示该网页源中顺序的覆盖。
 
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::no-loc（源订单查看器）:::在辅助功能窗格中" lightbox="../media/experiments-source-order-viewer.msft.png"::: **Source Order Viewer** 在“**辅助功能**”窗格中
-:::image-end:::
+:::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::no-loc (源订单查看器) ：：： 在辅助功能窗格中" lightbox="。。/media/experiments-source-order-viewer.msft.png"：：：
 
 此实验从版本 86 Microsoft Edge开始提供，并且默认打开。
 
@@ -103,7 +100,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 <!-- keep the period per the ui string literal -->
 <!-- found in Experiments in 94 60% down main list -->
 
-现在，可以使用新的可视 [字体编辑器来][DevtoolsInspectStylesEditFonts] 编辑字体。  使用它来定义字体和字体特征。  可视 **字体编辑器** 可帮助您执行以下操作：
+现在，可以使用新的可视 [字体编辑器][DevtoolsInspectStylesEditFonts] 来编辑字体。  使用它来定义字体和字体特征。  可视 **字体编辑器** 可帮助您执行以下操作：
 
 *   在不同字体属性的单位之间切换
 *   在不同字体属性的关键字之间切换
@@ -139,11 +136,9 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 [Webhint][WebhintMain] 试验在“[问题][DevtoolsIssuesIndex]”面板中显示 webhint 反馈。  选择一个问题，在网站上显示有关解决方案的文档和受影响资源的列表。  选择资源链接以在 DevTools******中**打开**** 相关的"网络、源"或"元素"窗格。
 
-:::image type="complex" source="../media/experiments-webhint.msft.png" alt-text="问题面板中的 webhint 反馈" lightbox="../media/experiments-webhint.msft.png":::
-   **问题**面板中的 webhint 反馈
-:::image-end:::
+:::image type="content" source="../media/experiments-webhint.msft.png" alt-text="问题面板中的 webhint 反馈" lightbox="../media/experiments-webhint.msft.png":::
 
-此实验从版本 85 Microsoft Edge开始提供，并且默认打开。
+此实验从版本 85 Microsoft Edge开始，并且默认打开。
 
 
 <!-- ====================================================================== -->
@@ -158,9 +153,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 1.  打开“**复合层**”窗格。
 1.  此时将显示应用的所有绘制层。  使用你自己的 Web 应用试用此功能。
 
-:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="复合层窗格" lightbox="../media/experiments-layers.msft.png":::
-   **复合层** 窗格
-:::image-end:::
+:::image type="content" source="../media/experiments-layers.msft.png" alt-text="复合层窗格" lightbox="../media/experiments-layers.msft.png":::
 
 此实验从版本 87 Microsoft Edge开始，并且默认打开。
 
@@ -179,9 +172,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 1.  当**网络控制台**打开时，编辑网络请求信息。
 1.  选择 **"发送"。**
 
-:::image type="complex" source="../media/network-network-console.msft.png" alt-text="控制台工具箱中的网络控制台" lightbox="../media/network-network-console.msft.png":::
-   **控制台**工具箱中的**网络控制台**
-:::image-end:::
+:::image type="content" source="../media/network-network-console.msft.png" alt-text="控制台工具箱中的网络控制台" lightbox="../media/network-network-console.msft.png":::
 
 此实验从版本 85 Microsoft Edge开始提供。
 
@@ -190,15 +181,13 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 ## <a name="open-source-files-in-visual-studio-code"></a>在 Visual Studio Code 中的打开源文件
 <!-- in Experiments as of 96, at end of main list -->
 
-实验**中的开放源文件**Visual Studio Code源工具的代码编辑器替换为用于编辑Visual Studio Code文件的代码编辑器。  打开此实验时，开发人员工具会检测何时编辑本地文件，并提示你选择一个用作工作区的文件夹。
+实验**中的开放源文件Visual Studio Code**源工具的代码编辑器替换为用于编辑Visual Studio Code文件的代码编辑器。  打开此实验时，开发人员工具会检测何时编辑本地文件，并提示你选择一个用作工作区的文件夹。
 
 选择要用作工作区的文件夹后，在 DevTools 中选择指向文件的任何链接将在 Visual Studio Code 中打开文件，而不是在 DevTools 中的源工具的代码编辑器中打开。
 
-:::image type="complex" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="在&quot;样式&quot;工具中选择文件链接将打开Visual Studio Code" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
-    在"样式"工具**中选择**文件链接将打开Visual Studio Code
-:::image-end:::
+:::image type="content" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="在&quot;样式&quot;工具中选择文件链接将打开Visual Studio Code" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
 
-现在，你在 DevTools 中执行的任何编辑都将更改硬盘驱动器上的文件，并实时Visual Studio Code。  可以在打开数据源中的源文件中阅读有关[Visual Studio Code。][OpenSourcesInVSCode]
+在 DevTools 中执行的任何编辑现在都会更改硬盘驱动器上的文件，并实时与Visual Studio Code。  可以在打开数据源中的源文件中阅读有关设置工作区[Visual Studio Code。][OpenSourcesInVSCode]
 
 此实验从版本 96 Microsoft Edge开始提供。
 
@@ -214,7 +203,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 *  [Match keyboard shortcuts from Microsoft Visual Studio Code][DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode] - removed from Experimental status starting from Microsoft Edge 86.
 
-*  [Turn on support to move tabs between panels][DevtoolsCustomizeIndex]- 从实验状态中删除，从 Microsoft Edge 85 开始。
+*  [Turn on support to move tabs between panels][DevtoolsCustomizeIndex]- 从 85 开始从实验Microsoft Edge中删除。
 
 *  [3D View][Devtools3dViewIndex]- 从实验状态中删除，从 Microsoft Edge 83 开始。
 
@@ -227,9 +216,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 现在，可以使用新的"更多工具"\ (**** `+` \) 图标打开更多工具。  打开 **Enable + button tab menus to open more tools** 试验并重新加载 DevTools 后，DevTools 顶部选项卡组的右侧将显示一个加号 \(`+`\)。  若要显示可添加到选项卡栏的其他工具的列表，请选择"更多工具"\ (**** `+` \) 图标。
 
-:::image type="complex" source="../media/experiments-more-tools-button.msft.png" alt-text="顶部窗格中的更多工具" lightbox="../media/experiments-more-tools-button.msft.png":::
-   顶部窗格中的**更多工具**
-:::image-end:::
+:::image type="content" source="../media/experiments-more-tools-button.msft.png" alt-text="顶部窗格中的更多工具" lightbox="../media/experiments-more-tools-button.msft.png":::
 
 ### Enable Welcome tab
 <!-- not in Experiments 94 -->
@@ -245,9 +232,10 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 每次更新 Microsoft Edge 后，**欢迎**工具都会自动打开。  若要防止每次更新后显示**欢迎**工具，请清除“**欢迎**”标题下“**每次更新后打开选项卡**”旁边的复选框。
 
-:::image type="complex" source="../media/experiments-welcome.msft.png" alt-text="欢迎工具" lightbox="../media/experiments-welcome.msft.png":::
-   **欢迎**工具
-:::image-end:::
+如果你更喜欢原始的“**新增功能**”工具，请导航到“[设置][DevtoolsCustomizeIndexSettings]” > “**试验**”，然后删除 **Enable Welcome tab** 旁边的复选框。
+
+:::image type="content" source="../media/experiments-welcome.msft.png" alt-text="欢迎工具" lightbox="../media/experiments-welcome.msft.png":::
+
 
 <!-- ====================================================================== -->
 ### Enable new CSS Flexbox debugging features
@@ -261,13 +249,11 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 **检查**工具提供了一种快速识别和可视化网站 CSS 弹性框布局的方法，通过将鼠标悬停该布局上方来实现这一点。  选择 **DevTools** (左上角的"检查 ![ ](../media/inspect-icon.msft.png) \ (检查 \) "图标。  然后，在调试网站时，将鼠标悬停在弹性容器上方以在其周围显示轮廓。
 
-:::image type="complex" source="../media/flexbox-hover.msft.png" alt-text="使用检查工具显示弹性框容器" lightbox="../media/flexbox-hover.msft.png":::
-   使用**检查**工具显示弹性框容器
-:::image-end:::
+:::image type="content" source="../media/flexbox-hover.msft.png" alt-text="使用检查工具显示弹性框容器" lightbox="../media/flexbox-hover.msft.png":::
 
 #### <a name="displaying-persistent-overlays-on-flexbox-layouts"></a>在 Flexbox 布局上显示永久性覆盖
 
-在 Microsoft Edge版本 89 或更高版本中，CSS Flexbox 功能提供在 Flexbox 布局上打开永久性覆盖的选项。  永久性覆盖具有以下优点：
+在 Microsoft Edge 版本 89 或更高版本中，CSS Flexbox 功能提供在 Flexbox 布局上打开永久性覆盖的选项。  永久性覆盖具有以下优点：
 *   滚动、移动鼠标和使用 DevTools 的其他功能时，持久覆盖层在网页上仍然可见。
 *   可以同时使用多个永久性覆盖，以便你可以一次查看多个 Flexbox 布局。
 *   持久覆盖层提供颜色配置选项。
@@ -276,32 +262,16 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 *   选择 **"元素"** 工具的 DOM 树中显示的任何 Flexbox 容器旁边的 Flexbox **椭圆图标** 。
 *   打开位于"**元素**"工具中的新布局**** 面板，并选中要突出显示的每个 Flexbox 容器旁边的复选框。
 
-:::image type="complex" source="../media/flexbox-overlay.msft.png" alt-text="DevTools 中的弹性图标和布局面板" lightbox="../media/flexbox-overlay.msft.png":::
-   DevTools 中的弹性图标和**布局**面板
-:::image-end:::
+:::image type="content" source="../media/flexbox-overlay.msft.png" alt-text="DevTools 中的弹性图标和布局面板" lightbox="../media/flexbox-overlay.msft.png":::
 
 #### <a name="configuring-persistent-overlays"></a>配置永久性覆盖
 
 若要为 CSS 网格或弹性框布局配置持久覆盖层的选项，请使用“**布局**”窗格。  “**布局**”窗格位于“**样式**”和“**计算**”窗格旁边的“**元素**”工具中。
 
-:::image type="complex" source="../media/flexbox-layout.msft.png" alt-text="布局面板" lightbox="../media/flexbox-layout.msft.png":::
-   布局面板
-:::image-end:::
+:::image type="content" source="../media/flexbox-layout.msft.png" alt-text="布局面板" lightbox="../media/flexbox-layout.msft.png":::
 
 
 <!-- ====================================================================== -->
-## <a name="providing-feedback-on-experimental-features"></a>提供有关试验功能的反馈
-
-提供有关 Microsoft Edge DevTools 试验或与 DevTools 相关的任何其他内容的反馈。
-
-*   使用 DevTools 中的“**发送反馈**”图标发送反馈
-*   向 [@EdgeDevTools][TwitterEdgedevtools] 发送推文
-
-:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Microsoft Edge DevTools 中的发送反馈图标" lightbox="../media/bing-devtools-send-feedback.msft.png":::
-   Microsoft Edge DevTools 中的“**发送反馈**”图标
-:::image-end:::
-
-
 <!-- links -->
 [OpenSourcesInVSCode]: ../sources/opening-sources-in-vscode.md "在文件中打开Visual Studio Code"
 [Devtools3dViewIndex]: ../3d-view/index.md ":::no-loc（3D 视图）::: | Microsoft Docs"

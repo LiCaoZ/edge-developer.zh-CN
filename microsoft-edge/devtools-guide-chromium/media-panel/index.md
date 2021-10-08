@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 4f732ab6af0fe46b513c85a24c44c4641e53e812
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 7bc993d7f0110a2e1a8fb749fb470f57c5ec1d9f
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035535"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083904"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -29,7 +29,7 @@ ms.locfileid: "12035535"
    limitations under the License.  -->
 # <a name="view-and-debug-media-players-information"></a>查看和调试媒体播放器信息
 
-使用**DevTools** Microsoft Edge中的媒体工具查看信息并按浏览器选项卡调试媒体播放器。
+使用**** DevTools Microsoft Edge中的媒体工具查看信息并按浏览器选项卡调试媒体播放器。
 
 ## <a name="open-the-media-tool"></a>打开媒体工具
 
@@ -75,7 +75,7 @@ ms.locfileid: "12035535"
 
 ### <a name="remote-debugging"></a>远程调试
 
-在 Android 设备上从计算机或 macOS Windows媒体播放器信息。
+在 Android 设备上从你的计算机或 macOS Windows媒体播放器信息。
 
 1.  若要设置远程调试，请导航到开始 [远程调试 Android 设备][DevtoolsGuideChromiumRemoteDebuggingIndex]。
 1.  远程查看媒体播放器信息。
@@ -110,18 +110,17 @@ ms.locfileid: "12035535"
        导出媒体信息
     :::image-end:::
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
-[DevtoolsGuideChromiumOpen]: ../open/index.md "打开Microsoft Edge (Chromium) 开发人员工具|Microsoft Docs"
+[DevtoolsGuideChromiumOpen]: ../open/index.md "打开Microsoft Edge (Chromium) DevTools |Microsoft Docs"
 
 [DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Android 设备远程调试入门 | Microsoft Docs"
 
 [BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "使用边缘开发人员工具最大限度地提高|必应视频"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/media-panel/index)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。
@@ -132,4 +131,3 @@ ms.locfileid: "12035535"
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies
 [JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
-

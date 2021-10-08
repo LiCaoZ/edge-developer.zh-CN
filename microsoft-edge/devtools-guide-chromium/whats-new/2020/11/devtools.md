@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 8de63fd8fae8d28cc89a4d890f20c62d1cba9604
-ms.sourcegitcommit: 4695a3bb8ea26f8dd65c5ab8fe383765ae51850c
+ms.openlocfilehash: d352bd76c13dc9ea466e8773d4934aa851700631
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "12081169"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083322"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -338,12 +338,9 @@ background: linear-gradient(100deg, lightblue, pink);
 
 如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: ../10/devtools.md#customize-keyboard-shortcuts-in-settings "在“设置”中自定义键盘快捷方式 - DevTools 中的新增功能 (Microsoft Edge 87)| Microsoft Docs"
 [WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: ../06/devtools.md#webhint-feedback-in-the-issues-panel "问题面板中的 webhint 反馈 - DevTools 中的新增功能 (Microsoft Edge 85) | Microsoft Docs"
 

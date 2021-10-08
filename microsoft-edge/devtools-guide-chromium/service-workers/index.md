@@ -7,12 +7,12 @@ ms.date: 02/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， 服务工作者， PWA
-ms.openlocfilehash: c97634fb151b4551a2940dcd578465b9f592ac5f
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 028c4ffe26a989fb857f740cdd853137a7f5e431
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036263"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083098"
 ---
 # <a name="service-worker-improvements"></a>服务工作者改进
 
@@ -62,7 +62,7 @@ ms.locfileid: "12036263"
 
 ### <a name="service-worker-update-timeline"></a>服务工作进程更新日程表
 
-开发人员Microsoft Edge开发人员工具团队在**应用程序**工具中添加了时间线，以反映服务工作者的更新生命周期。  它显示安装和激活事件。  每个事件都有相应的下拉箭头，可为您提供更多详细信息。
+开发人员Microsoft Edge开发人员工具团队在应用程序工具中添加了时间线，以反映服务工作者**** 的更新生命周期。  它显示安装和激活事件。  每个事件都有相应的下拉箭头，可为您提供更多详细信息。
 
 ### <a name="request-routing-and-fetch-events"></a>请求传送和提取事件
 
@@ -84,14 +84,11 @@ ms.locfileid: "12036263"
 
 ### <a name="future-work"></a>未来工作
 
-开发人员Microsoft Edge开发工具团队计划进一步开发缓存详细信息，并研究更多方法为渐进式 Web 应用程序开发人员改进服务工作[器调试][MdnProgressiveWebApps]体验。
+开发人员Microsoft Edge开发人员计划进一步开发缓存详细信息，并研究更多方法为渐进式 Web 应用程序开发人员改进服务工作[器调试][MdnProgressiveWebApps]体验。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [MdnFetchEvent]: https://developer.mozilla.org/docs/Web/API/FetchEvent "FetchEvent |MDN"
 [MdnProgressiveWebApps]: https://developer.mozilla.org/docs/Web/Progressive_web_apps "渐进式 Web (PA) |MDN"
-[MdnServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "服务工作线程 API |MDN"
+[MdnServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "服务辅助 API |MDN"

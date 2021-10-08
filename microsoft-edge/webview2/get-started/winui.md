@@ -1,6 +1,6 @@
 ---
 description: 将 WebView2 用于 WinUI 3 应用入门指南。
-title: 'WinUI 3 应用 SDK (Windows 中的 WebView2) '
+title: 'WinUI 3 应用 SDK (Windows中的 WebView2) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/17/2021
@@ -8,22 +8,22 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、winui 应用、winui、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
-ms.openlocfilehash: b3fd75883e95dc9068f9f6194ca8f2e43e420cff
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: aac79e3441292f28e1c5ed55ddb16064ca8f9528
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036564"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082272"
 ---
-# <a name="get-started-with-webview2-in-winui-3-windows-app-sdk"></a>WinUI 3 应用 SDK (Windows 中的 WebView2) 
+# <a name="get-started-with-webview2-in-winui-3-windows-app-sdk"></a>WinUI 3 应用 SDK (Windows中的 WebView2) 
 
 本文将开始创建你的第一个 WebView2 应用，并了解 [WebView2 的主要功能][MicrosoftDeveloperMicrosoftEdgeWebview2]。  你的第一个 WebView2 应用使用 WinUI 3。  有关各个 API 的信息，请导航到 [API 参考][GithubMicrosoftMicrosoftUiXamlSpecsWebview2]。
 
 ## <a name="step-0---set-up-development-environment"></a>步骤 0 - 设置开发环境
 
 1. 按照设置开发环境的步骤 1-4 安装 Visual Studio、配置 NuGet 程序包源并安装 Windows App SDK Extension for Visual Studio。 [][WindowsAppsWinui3ConfigureYourDevEnvironment]
-1. 安装安装在 Windows 10 版本 1803 \ (版本 17134\) 或更高版本上的[WebView][Webview2Installer] [Microsoft Edge (Chromium) 2][MicrosoftedgeinsiderDownload]运行时或任何非稳定渠道。  有关更新Windows 10，请导航到Windows[更新：常见问题解答][MicrosoftSupport12373]。
-1.  若要访问开发人员特定的所有Visual Studio功能，请打开开发人员[模式][WindowsUwpGetStartedEnableYourDeviceForDevelopment]。
+1. 安装安装在 Windows 10 版本 1803 \ (版本 17134\) 或更高版本上的[WebView][Webview2Installer] [Microsoft Edge (Chromium) 2][MicrosoftedgeinsiderDownload]运行时或任何非稳定通道。  有关更新Windows 10，请导航到Windows[更新： FAQ][MicrosoftSupport12373]。
+1.  若要访问开发人员特定的所有Visual Studio功能，请打开[开发人员模式][WindowsUwpGetStartedEnableYourDeviceForDevelopment]。
 
 ## <a name="step-1---create-project"></a>步骤 1 - 创建Project
 
@@ -32,8 +32,8 @@ ms.locfileid: "12036564"
 1.  In Visual Studio， choose **Create a new project**.
 1.  在项目下拉列表中，分别选择**C#、Windows**和******WinUI。**
 
-    :::image type="complex" source="./media/winui-getting-started-selections.png" alt-text="使用新建的 WinUI 项目Visual Studio" lightbox="./media/winui-getting-started-selections.png":::
-        使用新建的 WinUI 项目Visual Studio
+    :::image type="complex" source="./media/winui-getting-started-selections.png" alt-text="使用项目创建一个新的 WinUI Visual Studio" lightbox="./media/winui-getting-started-selections.png":::
+        使用项目创建一个新的 WinUI Visual Studio
     :::image-end:::
 
 1.  Choose **Blank App， Packaged (WinUI in Desktop) **  >  **Next**.
@@ -50,7 +50,7 @@ ms.locfileid: "12036564"
 
 1.  在"解决方案资源管理器"中，将生成两个项目。
     *   **你的项目名称 (桌面) 。 **  桌面项目包含你的应用的代码。  `App.xaml.cs`该文件定义一个 `Application` 表示应用实例的类。  `MainWindow.xaml.cs`该文件定义一个 `MainWindow` 类，该类表示应用实例显示的主窗口。  这些类派生自 `Microsoft.UI.Xaml` WinUI 命名空间中的类型。
-    *   **你的项目名称 (包) 。 **  包项目是一Windows应用程序打包Project，配置为将应用构建到 MSIX 包中进行部署。  该项目包含应用的程序包清单，并且默认情况下是解决方案的启动项目。  有关详细信息，请导航到"设置桌面应用程序以打包[MSIX Visual Studio][WindowsMsixDesktopToUwpPackagingDotNet]和程序包清单[架构参考中的"Windows 10"。][UwpSchemasAppxpackageUapmanifestRoot]
+    *   **你的项目名称 (Package) **。  包项目是一Windows应用程序打包Project，配置为将应用构建到 MSIX 包中进行部署。  该项目包含应用的程序包清单，并且默认情况下是解决方案的启动项目。  有关详细信息，请导航到"设置桌面应用程序以在 Visual Studio 中打包[MSIX"][WindowsMsixDesktopToUwpPackagingDotNet]和"程序包清单[架构Windows 10"。][UwpSchemasAppxpackageUapmanifestRoot]
 1.  在"解决方案资源管理器"中，若要显示代码，请打开 `MainWindow.xaml` 文件。  若要运行项目并显示带按钮的窗口，请选择 `F5` 。
 
 ## <a name="step-2---add-a-webview2-control-to-your-project"></a>步骤 2 - 将 WebView2 控件添加到项目中
@@ -229,6 +229,10 @@ private void EnsureHttps(WebView2 sender, CoreWebView2NavigationStartingEventArg
 
 若要生成并运行项目，请选择 `F5` 。  确保阻止导航到 HTTP 网站，并且允许 HTTPS 网站导航。
 
+> [!NOTE]
+> WinRT `CoreWebView2` 对象可能不适用于 WebView2 API 版本。  [WebView2 规范][GithubMicrosoftMicrosoftUiXamlSpecsWebview2]列出了哪些 API 可用于 WebView2。
+
+
 ## <a name="step-5---scripting"></a>步骤 5 - 脚本
 
 你可以在运行时使用主机应用将 JavaScript 代码注入 WebView2 控件。  你可以任务 WebView 运行任意 JavaScript 或添加初始化脚本。  在删除 JavaScript 之前，注入的 JavaScript 适用于所有新的顶级文档和任何子框架。  注入的 JavaScript 以特定计时运行。
@@ -260,34 +264,27 @@ private void EnsureHttps(WebView2 sender, CoreWebView2NavigationStartingEventArg
    WebView2 控件显示警报对话框
 :::image-end:::
 
-恭喜！你生成了第一个 WebView2 应用。
+恭喜！你生成了第一个 WebView2 应用！
 
-## <a name="next-steps"></a>后续步骤
 
-若要继续了解有关 WebView2 的更多内容，请导航到以下资源。
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
 
-*   若要了解有关生成 WebView2 应用程序的信息，请导航到 [WebView2 开发最佳做法][WV2BestPractices]。
-*   有关 WebView2 功能的综合示例，请导航到 [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain]。
-*   有关 WebView2 的信息，请导航到["WebView2 资源"。][Webview2IndexNextSteps]
+*  [WebView2 开发的最佳做法][WV2BestPractices]
+*  [WebView2Samples 存储库][GithubMicrosoftedgeWebview2samplesMain] - WebView2 功能的综合示例。
+*  [另请参阅][Webview2IndexNextSteps] _WebView2 Microsoft Edge简介_。
+*  [WebView2 规范][GithubMicrosoftMicrosoftUiXamlSpecsWebview2] - 有关 WebView2 API 的详细信息。
+*  [问题 - microsoft-ui-xaml 存储库](https://github.com/microsoft/microsoft-ui-xaml/issues) - 输入特定于 WinUI 的功能请求或 Bug。
 
-    > [!NOTE]
-    > WinRT CoreWebView2 对象在发布 WebView2 API 时可能不可用。  若要了解哪些 API 可用于 WebView2 控件，请导航到 [WebView2 Spec，][GithubMicrosoftMicrosoftUiXamlSpecsWebview2] 查看可用的 API 列表。
 
-*   有关 WebView2 API 的详细信息，请导航到 [WebView2 spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2]。
-
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>联系 Microsoft Edge WebView 团队
-
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
-
-若要发送特定于 WinUI 的功能请求或 Bug，请导航到"问题[- microsoft/microsoft-ui-xaml"，][GithubMicrosoftMicrosoftUiXamlIssues]然后选择"**新问题"。**
-
+<!-- ====================================================================== -->
 <!-- links -->
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 开发最佳实践|Microsoft Docs"
 [Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "导航事件|Microsoft Docs"
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Microsoft Edge WebView2 |Microsoft Docs"
-[Webview2IndexNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 |Microsoft Docs"
+[Webview2IndexNextSteps]: ../index.md#see-also "另请参阅 - WebView2 Microsoft Edge简介|Microsoft Docs"
 
-[Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "Microsoft.Web.WebView2.Wpf (的 WebView2.ExecuteScriptAsync) 方法 (Microsoft.Web.WebView2.Wpf) |Microsoft Docs"
+[Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "Microsoft.Web.Web.WebView2.W) |pf (的 WebView2.ExecuteScriptAsync)  (方法Microsoft Docs"
 
 [NugetConsumePackagesConfiguringNugetBehavior]: /nuget/consume-packages/configuring-nuget-behavior "常见NuGet配置|Microsoft Docs"
 
@@ -295,12 +292,11 @@ private void EnsureHttps(WebView2 sender, CoreWebView2NavigationStartingEventArg
 
 [VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]: /visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box "无需使用&quot;管理扩展&quot;对话框安装 - 管理 Visual Studio |Microsoft Docs"
 
-[WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/project-reunion/set-up-your-development-environment "配置开发环境 - Windows 2020 年 5 月 (UI 库 3.0 预览 1) |Microsoft Docs"
+[WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/project-reunion/set-up-your-development-environment "配置开发环境 - Windows UI Library 3.0 Preview 1 (2020 年 5 月) |Microsoft Docs"
 [WindowsCommunitytoolkit]: /windows/communitytoolkit "Windows Community Toolkit文档|Microsoft Docs"
 [WindowsMsixDesktopToUwpPackagingDotNet]: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net "将桌面应用程序设置为 MSIX 打包Visual Studio |Microsoft Docs"
 [WindowsUwpGetStartedEnableYourDeviceForDevelopment]: /windows/uwp/get-started/enable-your-device-for-development "启用设备进行开发|Microsoft Docs"
 
-[GithubMicrosoftMicrosoftUiXamlIssues]: https://github.com/microsoft/microsoft-ui-xaml/issues "问题 - microsoft/microsoft-ui-xaml |GitHub"
 [GithubMicrosoftMicrosoftUiXamlSpecsWebview2]: https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md "WebView2 规范 - microsoft/microsoft-ui-xaml-specs |GitHub"
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"

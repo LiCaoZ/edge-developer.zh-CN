@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 991d5f38f54734706d724234f84cbba387a7fbb0
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 94a39b6f8b0ca380a2ac2f1bf0b4d7e765215436
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034632"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082951"
 ---
 # <a name="monitor-changes-in-javascript-using-live-expressions"></a>使用 Live Expressions 监视 JavaScript 中的更改
 
@@ -85,11 +85,8 @@ To start， choose the **Create live expression** \ (eye\) button next to the **
 
 **Live Expressions** 以独占方式在计算机上运行，无需更改代码中要显示任何内容。  **实时** 表达式是确保只显示要调试的信息的一种很好的方法。  此外 **，Live Expressions** 还可帮助您限制用户计算机上的噪音。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html "控制台消息示例：使用表|GitHub"
 [GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html "无需日志记录即可移动鼠标|GitHub"

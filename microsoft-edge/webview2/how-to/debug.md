@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 6c260246540c5dce76a25616264926463e44d625
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+ms.openlocfilehash: 911ebae9b1c48670650da668918b32d072909958
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12034063"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083420"
 ---
 # <a name="get-started-debugging-webview2-apps"></a>开始调试 WebView2 应用
 
@@ -21,7 +21,7 @@ WebView2 Microsoft Edge的目标是将 Web 和本机应用开发功能和工具�
 
 ## [<a name="microsoft-edge-devtools"></a>Microsoft Edge 开发工具](#tab/devtools)
 
-使用[Microsoft Edge (Chromium) 工具][DevtoolsGuideChromiumMain]调试 WebView2 控件中显示的 Web 内容，方法与针对 WebView2 控件中显示的其他网页进行调试Microsoft Edge。  若要打开 DevTools，请设置 WebView 控件的焦点，然后使用以下操作之一。
+使用[Microsoft Edge (Chromium) ][DevtoolsGuideChromiumMain]工具调试 WebView2 控件中显示的 Web 内容，方法与为 WebView2 控件中显示的另一网页进行调试Microsoft Edge。  若要打开 DevTools，请设置 WebView 控件的焦点，然后使用以下操作之一。
 
 *   选择 `F12`。
 *   选择 `Ctrl` + `Shift` + `I` 。
@@ -35,16 +35,16 @@ WebView2 Microsoft Edge的目标是将 Web 和本机应用开发功能和工具�
 
 ## [<a name="visual-studio"></a>Visual Studio](#tab/visualstudio)
 
-Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具。  在Visual Studio部分中，主要焦点是调试 WebView 控件，但其他调试方法Visual Studio一样可用。  使用以下过程仅调试 Win32 应用或 Office中的 Web 和本机代码。
+Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具。  在Visual Studio部分中，主要焦点是调试 WebView 控件，但其他调试方法Visual Studio一样可用。  使用以下过程调试 Win32 应用中的 Web 和本机代码，Office外接程序。
 
 > [!IMPORTANT]
-> 当你在附加了本机调试Visual Studio中调试应用时，选择可能会触发本机调试器 `F12` ，而不是开发人员工具。  Select `Ctrl` + `Shift` + `I` ， or use the context menu \ (right-click\) to avoid the situation.
+> 当你在附加了Visual Studio调试器的情况下调试应用时，选择可能会触发本机 `F12` 调试器，而不是开发人员工具。  Select `Ctrl` + `Shift` + `I` ， or use the context menu \ (right-click\) to avoid the situation.
 
 开始之前，请确保满足以下要求。
 
-*   若要调试脚本，必须从应用程序内启动Visual Studio。
+*   若要调试脚本，必须从 Visual Studio 中启动应用。
 *   无法将调试器附加到正在运行的 WebView2 进程。
-*   安装Visual Studio 2019 版本 16.4 预览版 2 或更高版本。
+*   安装 Visual Studio 2019 版本 16.4 预览版 2 或更高版本。
 
 安装并设置脚本调试器工具Visual Studio。
 
@@ -124,7 +124,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
     ```
 
     > [!NOTE]
-    > Visual Studio Code源路径映射现在需要 URL，因此你的应用现在在启动时会收到命令行参数。  如果需要，可以 `url` 安全地忽略参数。
+    > Visual Studio Code源路径映射现在需要 URL，因此你的应用现在在启动时接收命令行参数。  如果需要，可以 `url` 安全地忽略参数。
 
 1.  若要在源代码中设置断点，请将鼠标悬停在行上，然后选择 `F9`
 
@@ -168,7 +168,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
     urlFilter="file://C:/path/to/my/index.ts," // To match explicit file called index.ts.
     ```
 
-    调试应用时，可能需要从呈现过程开始逐步执行代码。 如果您在网站上呈现网页，但无法访问源代码，可以使用 选项，因为网页将忽略无法 `?=value`  识别的参数。
+    调试应用时，你可能需要从呈现过程开始逐步执行代码。 如果您在网站上呈现网页，但无法访问源代码，可以使用 选项，因为网页将忽略无法 `?=value`  识别的参数。
 
     > [!IMPORTANT]
     > 在 URL 中发现第一个匹配项后，调试程序将停止。  无法同时调试两个 WebView2 控件，因为 CDP 端口由所有 WebView2 控件共享，并且使用单个端口号。
@@ -189,7 +189,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
         "useWebView": true
     ```
 
-    WebView2 控件必须打开 CDP 端口以允许调试 WebView2 控件。  必须生成代码，以确保在启动调试程序之前，只有一个 WebView2 控件具有一个 Chrome 开发人员协议 (CDP) 打开。
+    WebView2 控件必须打开 CDP 端口以允许调试 WebView2 控件。  在启动调试程序之前，必须构建代码，以确保只有一个 WebView2 控件在 CDP (打开 Chrome 开发人员) 协议。
 
 *   调试跟踪选项
 
@@ -243,26 +243,25 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
 
 * * *
 
+
+<!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*   若要开始使用 WebView2，请导航到["WebView2 入门指南"。][Webview2MainGetStarted]
-*   有关 WebView2 功能的综合示例，请导航到[webView2Samples][GithubMicrosoftedgeWebview2samples]存储库GitHub。
-*   有关 WebView2 API 的更多详细信息，请导航到 [API 参考][Webview2ApiReference]。
-*   有关 WebView2 的信息，请导航到["WebView2 资源"。][Webview2MainNextSteps]
+*  [WebView2 入门指南][Webview2MainGetStarted]
+*  [WebView2Samples 存储库][GithubMicrosoftedgeWebview2samples] - WebView2 功能的综合示例。
+*  [WebView2 API 参考][Webview2ApiReference]
+*  [另请参阅][Webview2MainNextSteps] _WebView2 Microsoft Edge简介_。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>联系 Microsoft Edge WebView 团队
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
-
-[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Setvirtualhostnametofoldermapping]: /dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping "CoreWebView2.SetVirtualHostNameToFolderMapping (String、String、CoreWebView2HostResourceAccessKind) 方法 (Microsoft.Web.WebView2.Core) |Microsoft Docs"
+<!-- external links -->
+[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Setvirtualhostnametofoldermapping]: /dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping "CoreWebView2.SetVirtualHostNameToFolderMapping (String， String， CoreWebView2HostResourceAccessKind) 方法 (Microsoft.Web.WebView2.Core) |Microsoft Docs"
 [Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: /dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments "CoreWebView2EnvironmentOptions.AdditionalBrowserArguments 属性 (Microsoft.Web.WebView2.Core) |Microsoft Docs"
 [Webview2ReferenceWin32Webview2IdlParameters]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions  "CreateCoreWebView2Environment - 全局|Microsoft Docs"
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft EdgeWebView2 API 参考|Microsoft Docs"
-[Webview2MainNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 |Microsoft Docs"
+[Webview2MainNextSteps]: ../index.md#see-also "另请参阅 - WebView2 Microsoft Edge简介|Microsoft Docs"
 [Webview2MainGetStarted]: ../index.md#get-started "入门 - WebView2 Microsoft Edge简介|Microsoft Docs"
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"

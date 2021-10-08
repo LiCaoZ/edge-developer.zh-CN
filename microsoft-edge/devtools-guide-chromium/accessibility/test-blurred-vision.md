@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: d60d12bf4a04ecb1ff76ae6e3c6c2e52f3e5be51
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: c223020759e4156f685f88023e25ae1ca30e1839
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034919"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082419"
 ---
 # <a name="verify-that-the-page-is-usable-with-blurred-vision"></a>验证页面是否可借助模糊视图
 
@@ -37,16 +37,14 @@ ms.locfileid: "12034919"
 1.  在 **呈现工具** 的" **模拟视觉缺陷"** 中，选择"无 **模拟** "以删除模糊的视觉模拟。
 
 
+<!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
 *  [模仿视觉缺陷](emulate-vision-deficiencies.md)
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-
+<!-- ====================================================================== -->
 <!-- links -->
+[Contact]: ../contact.md "联系开发人员Microsoft Edge开发人员团队|Microsoft Edge开发人员文档"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "辅助功能测试演示网页|GitHub"

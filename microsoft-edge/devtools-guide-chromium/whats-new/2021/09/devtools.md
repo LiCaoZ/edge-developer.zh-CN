@@ -1,18 +1,18 @@
 ---
 description: 轻松在 Web 上搜索控制台错误消息字符串，Visual Studio Code 的 DevTools 扩展现在具有最新的工具和主题支持，断点图标现在在使用 Visual Studio Code 主题时显示，并且可以使用键盘导航到"更多工具"按钮。
-title: 'DevTools (Microsoft Edge 94) '
+title: 'DevTools 94 (Microsoft Edge中的新增) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 0f6839c0e0a5318ee7d80c0b099f0b12eb6eb22e
-ms.sourcegitcommit: 24bb983a1ca811ba4ac038dce0c5c7f5d6bbb745
+ms.openlocfilehash: 7ecd575f32f5b6ebfdde1fe83cd1f5c1bdd21b7f
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "12057808"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082139"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-94"></a>DevTools 94 (Microsoft Edge中的新增) 
 
@@ -38,22 +38,22 @@ ms.locfileid: "12057808"
 <!-- Title: Edge DevTools for VS Code now supports themes and uses the most recent codebase -->
 <!-- Subtitle: The Edge DevTools extension for VS Code now uses the same version of the Developer Tools as your Microsoft Edge browser. We also added ways to learn more and for you to tell us what we could do better from within Visual Studio Code. -->
 
-在适用于开发人员的 Microsoft Edge Tools 扩展的Visual Studio Code，我们发布了以下更新或新功能。
+在最新版本的 Microsoft Edge DevTools Visual Studio Code，我们发布了以下更新或新功能。
 *  共享用于基于浏览器的 DevTools 的相同代码库。
 *  支持随主题一Visual Studio Code。
-*  在"**工具"** 边栏中Microsoft Edge"有用链接"部分，并添加"文档"、"**报告**Bug"和"**请求功能"按钮**。 **** ****
+*  在"**工具"** 边栏中Microsoft Edge"有用链接"部分，并添加"**文档**"、"**报告**Bug"和"**请求功能"按钮**。 ****
 *  在"**工具** () "窗格中添加"关闭"Microsoft Edge"按钮，以关闭扩展 `X` ****  >  **** 打开的浏览器。
-*  添加了对与远程工作区的 JavaScript 调试器连接的支持。
+*  添加对与远程工作区的 JavaScript 调试器连接的支持。
 
-有关详细信息，请导航到[Microsoft Edge 的 DevTools Visual Studio Code。][EdgeDevToolsExtensionForVSCode]
+有关详细信息，请导航到Microsoft Edge[的 DevTools 扩展Visual Studio Code。][EdgeDevToolsExtensionForVSCode]
 
 :::image type="complex" source="../../media/2021/09/devtools-extension-dark-theme.msft.png" alt-text="内部运行的扩展Visual Studio Code，与主题的深色主题Visual Studio Code，以及新的&quot;有用链接&quot;边栏" lightbox="../../media/2021/09/devtools-extension-dark-theme.msft.png":::
-   内部运行的扩展Visual Studio Code，与主题的深色主题Visual Studio Code，以及新的"**有用**链接"边栏
+   内部运行的扩展Visual Studio Code，与 Visual Studio Code 的深色主题匹配，以及新的"**有用**链接"边栏
 :::image-end:::
 
 还支持Visual Studio Code浅色主题。
 
-:::image type="complex" source="../../media/2021/09/devtools-extension-light-theme.msft.png" alt-text="内部运行的扩展Visual Studio Code，与主题的浅色Visual Studio Code和新的&quot;有用链接&quot;边栏匹配" lightbox="../../media/2021/09/devtools-extension-light-theme.msft.png":::
+:::image type="complex" source="../../media/2021/09/devtools-extension-light-theme.msft.png" alt-text="内部运行的扩展Visual Studio Code、匹配主题的浅色Visual Studio Code和新的&quot;有用链接&quot;边栏" lightbox="../../media/2021/09/devtools-extension-light-theme.msft.png":::
    内部运行的扩展Visual Studio Code，与主题的浅色Visual Studio Code，以及新的"**有用**链接"边栏
 :::image-end:::
 
@@ -79,9 +79,9 @@ ms.locfileid: "12057808"
 <!-- Title: Use the arrow keys to navigate to the + button to open more tools -->
 <!-- Subtitle: To open more tools, we have improved keyboard accessibility using the arrow keys on the main DevTools toolbar. -->
 
-以前，当工具栏具有焦点时，你**** 无法使用键盘上的箭头键导航到 DevTools 中的"更多工具" () `+` 工具"按钮。  使用箭头键时，到达工具栏中的最后一个工具后，焦点将循环回第一个工具，或显示"更多 **选项卡"菜单** 。
+以前，当工具栏具有焦点时，你**** 无法使用键盘上的箭头键导航到 DevTools 中的"更多工具" () " `+` 按钮。  使用箭头键时，到达工具栏中的最后一个工具后，焦点将循环回第一个工具，或显示"更多 **选项卡"菜单** 。
 
-从 Microsoft Edge版本 93 开始，当**** 焦点位于工具栏上时，可以使用箭头键选择"更多选项卡 () "按钮和"更多工具" `>>` 按钮。 ****
+从 Microsoft Edge版本 93 开始，当**** 焦点位于工具栏上时，可以使用箭头键选择"更多选项卡" () "按钮和"更多工具" `>>` 按钮。 ****
 
 若要详细了解如何使用键盘导航 DevTools，请导航Microsoft Edge[开发人员工具键盘快捷方式][DevToolsKeyboardShortcuts]。
 
@@ -94,12 +94,6 @@ ms.locfileid: "12057808"
 ## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道
 
 如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
-
-
-<!-- ====================================================================== -->
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
-
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
 
 
 <!-- ====================================================================== -->

@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: e9013df29941b5b4eeb65ae064f74be97c8e8559
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: b22ed3d1e4bfa046d2c4c2d11532eab86bb901ce
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034751"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082986"
 ---
 # <a name="fixing-javascript-errors-that-are-reported-in-the-console"></a>修复控制台中报告的 JavaScript 错误
 
@@ -193,10 +193,7 @@ there();
 :::image-end:::
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 [LookupErrorsWebFromConsole]: index.md#look-up-error-messages-on-the-web-from-the-console "从控制台查找 Web 上的错误消息 - 使用控制台|Microsoft Docs"
 [GithubMicrosoftedgeDevtoolssamplesConsoleErrorHtml]: https://microsoftedge.github.io/DevToolsSamples/console/error.html "控制台工具控制台中报告的 JavaScript |GitHub"
@@ -204,4 +201,4 @@ there();
 [GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorHtml]: https://microsoftedge.github.io/DevToolsSamples/console/network-error.html "控制台控制台中报告的网络|GitHub"
 [GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorFixedHtml]: https://microsoftedge.github.io/DevToolsSamples/console/network-error-fixed.html "修复了控制台控制台中报告的网络|GitHub"
 [GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorReportedHtml]: https://microsoftedge.github.io/DevToolsSamples/console/network-error-reported.html "控制台和 UI 服务中的网络错误|GitHub"
-[GithubMicrosoftedgeDevtoolssamplesConsoleTraceHtml]: https://microsoftedge.github.io/DevToolsSamples/console/trace.html "在控制台窗口中创建|GitHub"
+[GithubMicrosoftedgeDevtoolssamplesConsoleTraceHtml]: https://microsoftedge.github.io/DevToolsSamples/console/trace.html "在控制台控制台中|GitHub"

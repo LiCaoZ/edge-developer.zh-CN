@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 27d69f076a150dc4809e71c8e4bb2f471685e0ef
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 90090c0656ff8493b890abcbeaa4bc2bc2674135
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036515"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083812"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -140,16 +140,15 @@ ms.locfileid: "12036515"
    使用图表查看函数详细信息
 :::image-end:::
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
-[DevtoolsConsoleUtilities]: ../console/utilities.md "控制台实用程序 API 参考 | Microsoft Docs"
+[DevtoolsConsoleUtilities]: ../console/utilities.md "控制台实用程序 API 参考|Microsoft Docs"
 [DevtoolsConsoleUtilitiesProfile]: ../console/utilities.md#profile "配置文件 - 控制台实用程序 API 参考 | Microsoft Docs"
 [DevtoolsConsoleUtilitiesProfileEnd]: ../console/utilities.md#profileend "profileEnd - 控制台实用程序 API 参考 | Microsoft Docs"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > [此处](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution)可以找到原始页面，由 [Kayce Basques][KayceBasques] \（技术写作人员，Chrome DevTools \& Lighthouse\）和 [Meggin Kearney][MegginKearney] \（技术写作人员\）编写。

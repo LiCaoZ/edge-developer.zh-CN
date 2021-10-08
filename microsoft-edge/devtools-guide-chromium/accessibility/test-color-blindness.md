@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: b3ea23442b5c3046c08f767734b58a8966708ba4
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 62d6cd76ede6b428c6812180f9e177e1ed571565
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034926"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082818"
 ---
 # <a name="verify-that-the-page-is-usable-by-people-with-color-blindness"></a>验证页面是否由色盲用户可用
 
@@ -43,17 +43,14 @@ ms.locfileid: "12034926"
 1.  在 **呈现工具的** " **模拟视觉缺陷"下**，选择"无 **模拟** "以删除模拟。
 
 
+<!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
 *  [模拟视觉][DevToolsVisionDeficiencies]缺陷 - 定义"模拟视觉缺陷****"下拉列表中的项目，包括 Protanopia、Deuteranopia、Tritanopia 和 Achromatopia。
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-
+<!-- ====================================================================== -->
 <!-- links -->
 [DevToolsVisionDeficiencies]: ./emulate-vision-deficiencies.md "模拟视觉缺陷|Microsoft Docs"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "辅助功能测试演示网页|GitHub"

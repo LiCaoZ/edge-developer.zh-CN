@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、winforms 应用、winforms、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET、windows 窗体
-ms.openlocfilehash: b1c0d451ab048800f395fd250ded24ac27a3202d
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+ms.openlocfilehash: d4772721476b70de36eefe5d5548acfd2e2f15d6
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12034077"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083875"
 ---
 # <a name="get-started-with-webview2-in-winforms-apps"></a>WinForms 应用中的 WebView2 入门
 
@@ -25,10 +25,10 @@ ms.locfileid: "12034077"
 
 安装以下必备组件列表，然后再继续。
 
-*   [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2]运行时或任何[Microsoft Edge Insider (preview) Channel (][MicrosoftedgeinsiderDownload] Beta、Dev 或 Canary) 安装在受支持的 OS (当前为 Windows 10、Windows 8.1 和 Windows 7) 。
+*   [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2]运行时或任何[Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] (Beta、Dev 或 Canary) 安装在受支持的操作系统 (当前为 Windows 10、Windows 8.1 和 Windows 7) 。
 
     > [!NOTE]
-    > WebView 团队建议使用 Canary 通道，最低要求版本为 82.0.488.0。
+    > WebView2 团队建议使用 Canary 通道，最低要求版本为 82.0.488.0。
 
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 或更高版本。
 
@@ -48,7 +48,7 @@ ms.locfileid: "12034077"
     :::image type="complex" source="./media/winforms-new-project.png" alt-text="新建项目" lightbox="./media/winforms-new-project.png":::
        新建项目 :::image-end:::
 
-1.  输入 name 和**Location** Project**值**。  选择 **.NET Framework 4.7.2**或更高版本。
+1.  输入 name 和**location** Project**值**。  选择 **.NET Framework 4.7.2**或更高版本。
 
     :::image type="complex" source="./media/winforms-start-proj.png" alt-text="启动项目" lightbox="./media/winforms-start-proj.png":::
        启动项目
@@ -64,8 +64,8 @@ ms.locfileid: "12034077"
 
 1.  将鼠标悬停在项目上，打开上下文菜单 (右键单击") "，然后选择"管理NuGet**包"。**
 
-    :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="管理 NuGet 包":::
-       管理 NuGet 包
+    :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="管理 NuGet 程序包":::
+       管理 NuGet 程序包
     :::image-end:::
 
 1.  选择"**浏览"。**  在搜索栏中，键入 `Microsoft.Web.WebView2` ，然后选择 **"Microsoft.Web.WebView2"。**
@@ -93,12 +93,12 @@ ms.locfileid: "12034077"
 将 WebView 添加到你的应用。
 
 1. 选择**Project**  >  **添加窗体 (Windows窗体) 。 **
-1. 在"**添加新项**"**面板**中，C#"Windows"窗体" (Windows") "  >  ****  >  ****  >  **** 添加 **"。**
+1. 在"**添加新项**"面板中，**** 选择"C#""Windows"窗体  >  ****  >  ****  >  **" (Windows") "** 添加 **"。**
 1. 选择 **"视图**  >  **工具箱"。**
-1. 在**工具箱中**，选择 **"WebView2 Windows窗体控件"** 以展开选项。
+1. 在**工具箱中**，选择 **"WebView2"Windows"窗体控件**"以展开选项。
 
     > [!NOTE]
-    > 如果使用的是 Visual Studio 2017，默认情况下**WebView2**不会显示在工具箱**中**。 若要使**WebView2**显示在工具箱中****，请选择"**** 工具""选项""常规  >  ****  >  ****>"自动**填充工具箱**"设置设置为 `True` 。
+    > 如果使用的是 Visual Studio 2017，默认情况下 **，WebView2**不会显示在工具箱**中**。 若要使**WebView2**显示在工具箱中****，请选择"**** 工具""选项""常规  >  ****  >  ****>"自动**填充工具箱**"设置设置为 `True` 。
 
 1. 将**WebView2 控件**拖放到 Windows Forms App。
 
@@ -122,7 +122,7 @@ ms.locfileid: "12034077"
        hello webview :::image-end:::
 
     > [!NOTE]
-    > 如果正在处理高分辨率监视器，可能需要将 Windows [Forms 应用配置为高 DPI 支持][DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport]。
+    > 如果正在处理高分辨率监视器，可能需要将 Windows Forms 应用[配置为高 DPI 支持][DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport]。
 
 
 <!-- ====================================================================== -->
@@ -133,7 +133,7 @@ ms.locfileid: "12034077"
 1. 选择 **"视图**  >  **工具箱"。**
 1. 在"**工具箱"中**，选择 **"常用控件"。**
 1. 将**TextBox 控件拖放**到"Windows"应用中。
-1. 在"**属性**"面板中，将 (**名称) ****地址栏"**。
+1. 在"**属性"** 面板中，将 (**名称) ****更改为 addressBar。**
 1. 将"按钮"**控件**拖放到"Windows"应用中。
 1. 在"**属性**"面板中，将 (**名称) ****更改为 goButton**。
 1. 将 **Text 属性** 更改为 **Go！**
@@ -383,24 +383,18 @@ async void InitializeAsync()
 
 
 <!-- ====================================================================== -->
-## <a name="next-steps"></a>后续步骤
+## <a name="see-also"></a>另请参阅
 
 *  [WebView2 开发的最佳做法][WV2BestPractices]
-*  [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain] - WebView2 功能的综合示例。
-*  [接下来的步骤][Webview2IndexNextSteps] - 有关构建和部署 WebView2 应用的概念和操作说明文章。
+*  [WebView2Samples 存储库][GithubMicrosoftedgeWebview2samplesMain] - WebView2 功能的综合示例。
+*  [另请参阅][Webview2IndexNextSteps] - 有关生成和部署 WebView2 应用的概念和工作说明文章。
 *  [WebView2 API 参考][DotnetApiMicrosoftWebWebview2WinformsWebview2]
-
-
-<!-- ====================================================================== -->
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>联系 Microsoft Edge WebView 团队
-
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 开发最佳实践|Microsoft Docs"
-[Webview2IndexNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 |Microsoft Docs"
+[Webview2IndexNextSteps]: ../index.md#see-also "另请参阅 - WebView2 Microsoft Edge简介|Microsoft Docs"
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "导航事件|Microsoft Docs"
 <!-- external links -->
 [DotnetApiMicrosoftWebWebview2Winforms]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms 命名空间|Microsoft Docs"

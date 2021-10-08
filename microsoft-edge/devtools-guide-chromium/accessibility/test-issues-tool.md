@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: e2bbd4235415d9f4ef503c5b869b836dc608b9ca
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 2b8d97f45e7ddc71c69875fe55b75a999100fef6
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034863"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082440"
 ---
 # <a name="automatically-test-a-webpage-for-accessibility-issues"></a>自动测试网页中的辅助功能问题
 
@@ -26,7 +26,7 @@ ms.locfileid: "12034863"
 
 ## <a name="view-the-accessibility-section-of-the-issues-tool"></a>查看问题工具的辅助功能部分
 
-1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。  在右上角，将显示 **问题计数器** \ (![ Issues 计数器 ](../media/issues-counter-icon.msft.png) \) 。  问题 **计数器** 是语音气泡图标以及自动检测到的问题数。
+1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。  在右上角，将显示 **问题计数器** \ (![ 问题计数器 ](../media/issues-counter-icon.msft.png) \) 。  问题 **计数器** 是语音气泡图标以及自动检测到的问题数。
 
     :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="DevTools 中的&quot;问题&quot;计数器，指示当前文档中的问题数" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
         DevTools 中的"问题"计数器，指示当前文档中的问题数****
@@ -34,7 +34,7 @@ ms.locfileid: "12034863"
 
 1.  刷新页面，因为根据网络请求报告某些问题。  请注意问题计数器中 **更新的计数**。
 
-1.  选择" **问题"计数器**。  "**问题**"工具将在 DevTools 底部的"箱"中打开。 ****
+1.  选择" **问题"计数器**。  问题**工具**将在 DevTools 底部的"箱"中打开。 ****
 
     :::image type="complex" source="../media/a11y-testing-accessibility-issues.msft.png" alt-text="问题工具中显示的辅助功能警告" lightbox="../media/a11y-testing-accessibility-issues.msft.png":::
         问题工具中显示的辅助功能警告
@@ -49,7 +49,7 @@ ms.locfileid: "12034863"
 
 1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  在右上角，选择问题 **计数器** \ (![ 问题计数器 ](../media/issues-counter-icon.msft.png) \) 。  "**问题**"工具将在 DevTools 底部的"箱"中打开。 ****
+1.  在右上角，选择问题 **计数器** \ (![ 问题计数器 ](../media/issues-counter-icon.msft.png) \) 。  问题**工具**将在 DevTools 底部的"箱"中打开。 ****
 
 1.  在" **问题"** 选项卡上，展开 **"辅助功能"** 部分。
 
@@ -76,7 +76,7 @@ ms.locfileid: "12034863"
 
 1.  作为正确连接的示例，选择"捐赠 **"表单** 上的"其他"标签。  焦点指示器框正确显示在"其他"标签旁边的输入文本框上，因为**** 存在匹配 `for` 值 `id` 和属性值。
 
-1.  在" **问题"工具**中，选择"进一步 **阅读** "以了解有关该问题的更多信息。  若要打开新选项卡中的链接，请按**Ctrl**单击 Windows/Linux 上的链接，或单击 + ******** + **** macOS 上的链接的命令。
+1.  在" **问题"工具**中，选择"进一步 **阅读** "以了解有关该问题的更多信息。  若要打开新选项卡中的链接，请按**Ctrl**单击 Windows/Linux 上的链接，或单击 + ******** + **** macOS 上的链接命令。
 
     :::image type="complex" source="../media/a11y-testing-more-information-links.msft.png" alt-text="指向有关问题的更深入信息的&quot;问题&quot;选项卡上的链接" lightbox="../media/a11y-testing-more-information-links.msft.png":::
         指向 **有关问题的** 更深入信息的"问题"选项卡上的链接
@@ -135,17 +135,14 @@ ms.locfileid: "12034863"
     :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
 *  [使用问题工具查找和修复问题][DevToolsIssuesTool]
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-
+<!-- ====================================================================== -->
 <!-- links -->
 [DevToolsIssuesTool]: ../issues/index.md "使用问题工具查找并修复问题 | Microsoft Docs"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "辅助功能测试演示网页|GitHub"

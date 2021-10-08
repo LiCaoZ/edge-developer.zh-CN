@@ -7,12 +7,12 @@ ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools, 仿真, 设备, 模拟, 移动
-ms.openlocfilehash: 00ed4fe706408055856a74ee79466cf5966c1700
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: a102539ac5a42e3457f48a64b3caa1b59f888c4e
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035472"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083161"
 ---
 <!-- Copyright Kayce Basques
 
@@ -40,9 +40,9 @@ ms.locfileid: "12035472"
 
 ## <a name="limitations"></a>限制
 
-**设备仿真**是移动设备中的页面外观的[一级近似值][WikiApproximation]。  **设备仿真**实际上不会在移动设备上运行你的代码。  相反，你可以模拟笔记本电脑或台式机的移动用户体验。
+**设备模拟** 是移动设备上页面外观[一级近似][WikiApproximation]。  **设备仿真**实际上不会在移动设备上运行你的代码。  相反，你可以模拟笔记本电脑或台式机的移动用户体验。
 
-移动设备的某些方面从不在 DevTools 中模拟。  例如，移动 CPU 的体系结构与笔记本电脑或台式机 CPU 的体系结构不同。  如有疑问，最佳选择是在移动设备上实际运行页面。  当页面实际在移动设备上运行时，使用[远程调试] [DevToolsRemoteDebugging] 与计算机中的页面代码进行交互。  与代码交互时，可以进行查看、更改、调试、分析或全部四项操作。  你的计算机可以是笔记本或台式计算机。
+移动设备的某些方面从不在 DevTools 中模拟。  例如，移动 CPU 的体系结构与笔记本电脑或台式机 CPU 的体系结构不同。  如有疑问，最佳选择是在移动设备上实际运行页面。  使用 [远程调试][DevToolsRemoteDebugging] 与计算机中的页面代码交互，而你的页面实际上在移动设备上运行。  与代码交互时，可以进行查看、更改、调试、分析或全部四项操作。  你的计算机可以是笔记本或台式计算机。
 
 ## <a name="simulate-a-mobile-viewport"></a>模拟移动视区
 
@@ -155,7 +155,7 @@ ms.locfileid: "12035472"
     :::image-end:::
 
 1.  选择“**添加自定义设备**”。
-1.  在“**仿真设备**”上，输入自定义设备的设备名称、屏幕宽度和屏幕高度。  “[设备像素比][MDNWindowDevicePixelRatio]”、“[用户代理字符串][MDNUserAgent]”和“[设备类型](#set-the-device-type)”为可选字段。  设备类型字段默认为“**移动设备**”。
+1.  在“**仿真设备**”上，输入自定义设备的设备名称、屏幕宽度和屏幕高度。  [设备像素比率][MDNWindowDevicePixelRatio]、[用户代理字符串][MDNUserAgent]和设备 [类型](#set-the-device-type) 字段是可选的。  设备类型字段默认为“**移动设备**”。
 
     :::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="创建自定义设备" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
        创建自定义设备
@@ -310,7 +310,7 @@ ms.locfileid: "12035472"
    :::column-end:::
 :::row-end:::
 
-在“**传感器**”面板上，可以从“**方向**”下拉菜单中选择预设方向。  若要输入自己的方向，请选择“**自定义方向**”，然后输入自己的 [alpha][MDNDeviceOrientaitonAlpha]、 [beta][MDNDeviceOrientaitonBeta]和 [gamma][MDNDeviceOrientaitonGamma] 值。
+在“**传感器**”面板上，可以从“**方向**”下拉菜单中选择预设方向。  若要输入你自己的方向，请选择"**** 自定义方向"，然后输入你自己的 [alpha][MDNDeviceOrientaitonAlpha]、[beta][MDNDeviceOrientaitonBeta] 和 [gamma][MDNDeviceOrientaitonGamma] 值。
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="“传感器”面板上的方向选项" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
     “**传感器**”面板上的**方向**选项
@@ -380,23 +380,16 @@ ms.locfileid: "12035472"
 
 还可以在网络分析参考中设置用户 [代理客户端提示](../network/reference.md)。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
-<!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community | Microsoft Docs"  -->
 [DevToolsRemoteDebugging]: ../remote-debugging/index.md "Android 设备远程调试入门 | Microsoft Docs"
+<!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community | Microsoft Docs"  -->
+<!-- external links -->
+[MDNWindowDevicePixelRatio]：" https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio Window.devicePixelRatio |MDN&quot; [MDNUserAgent]： https://developer.mozilla.org/docs/Glossary/User_agent &quot;User Agent |MDN&quot; [MDNDeviceOrientaitonAlpha]： https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha &quot;DeviceOrientationEvent.alpha |MDN&quot; [MDNDeviceOrientaitonBeta]： https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta &quot;DeviceOrientationEvent.beta |MDN&quot; [MDNDeviceOrientaitonGamma]： https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma &quot;DeviceOrientationEvent.gamma |MDN&quot; [WikiApproximation]： https://en.wikipedia.org/wiki/Order_of_approximation#First-order &quot;近似顺序 - 一级 - 维基百科"
 
-[MDNWindowDevicePixelRatio]: https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio "Window.devicePixelRatio | MDN"
-[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "用户代理 | MDN"
-[MDNDeviceOrientaitonAlpha]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha "DeviceOrientationEvent.alpha | MDN"
-[MDNDeviceOrientaitonBeta]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta "DeviceOrientationEvent.beta | MDN"
-[MDNDeviceOrientaitonGamma]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma "DeviceOrientationEvent.gamma | MDN"
 
-[WikiApproximation]: https://en.wikipedia.org/wiki/Order_of_approximation#First-order "近似顺序 - 一级 - 维基百科"
-
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/device-mode/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。

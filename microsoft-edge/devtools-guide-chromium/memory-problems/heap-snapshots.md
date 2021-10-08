@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 5564af35103ac3703a32c61e35128ed45d8c853e
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: a8a90071dbf981158e55f7e734ef7de14a452bcf
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036942"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083406"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -31,7 +31,7 @@ ms.locfileid: "12036942"
 
 了解如何使用 DevTools 堆Microsoft Edge器记录堆快照并查找内存泄漏。
 
-DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关 DOM 节点的内存分布。  使用它获取 JavaScript 堆 \ (JS 堆\) 快照、分析内存图、比较快照和查找内存泄漏。  导航到 [对象保留树][DevtoolsMemoryProblems101ObjectsRetainingTree]。
+DevTools Microsoft Edge配置文件器中显示了 JavaScript 对象和页面的相关 DOM 节点的内存分布。  使用它获取 JavaScript 堆 \ (JS 堆\) 快照、分析内存图、比较快照和查找内存泄漏。  导航到 [对象保留树][DevtoolsMemoryProblems101ObjectsRetainingTree]。
 
 ## <a name="take-a-snapshot"></a>拍摄快照
 
@@ -54,7 +54,7 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 ## <a name="clear-snapshots"></a>清除快照
 
-选择 **"清除所有配置文件** "图标以从 DevTools (与呈现器进程关联的任何内存中删除快照 \) 。
+选择 **"清除所有配置文件** "图标，以从 DevTools (与呈现器进程关联的任何内存中删除快照 \) 。
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="删除快照" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
    删除快照
@@ -96,12 +96,12 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 顶级条目是"total"行。
 
-| 顶级条目 | 描述 |
+| 顶级条目 | 说明 |
 |:--- |:--- |
 | **构造函数** | 表示使用此构造函数创建的所有对象。  |
 | **距离** | 使用节点的最短简单路径显示到根之间的距离。  |
 | **浅表大小** | 显示由特定构造函数函数创建的所有对象的浅表大小的总和。  浅表大小是由对象 \ (通常，数组和字符串具有较大的浅表大小\) 。  导航到 [对象大小][DevtoolsMemoryProblems101ObjectSizes]。  |
-| **保留大小** | 显示同一组对象中保留的最大大小。  删除 \ (并且使从属项不再可用后可以释放的内存大小) 称为保留大小。  导航到 [对象大小][DevtoolsMemoryProblems101ObjectSizes]。  |
+| **保留大小** | 显示同一组对象中保留的最大大小。  删除 \ (并且使从属项不再可用\) 后可以释放的内存大小称为保留大小。  导航到 [对象大小][DevtoolsMemoryProblems101ObjectSizes]。  |
 
 <!--| **Number of object instances** | Displayed in the # column.  |  -->
 
@@ -109,15 +109,15 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 请记住，黄色对象具有 JavaScript 引用，红色对象是从具有黄色背景的节点引用的分离节点。
 
-**堆配置文件器中的各种构造函数 \ (group\) 条目对应于什么？**
+**堆探查器中的各种构造函数 \ (group\) 条目对应于什么？**
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="构造函数组" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
    **构造函数** 组
 :::image-end:::
 
-| 构造函数 \ (group\) 条目 | 描述 |
+| 构造函数 \ (group\) 条目 | 说明 |
 |:--- |:--- |
-| **\ (global 属性\) ** | 全局对象 \ (之间的中间对象) `window` \) 引用的对象之间。  如果对象是使用构造函数创建的，并且由全局对象保留，则保留路径可以 `Person` 表示为 `[global] > \(global property\) > Person` 。  这与标准相反，其中对象直接相互引用。  中间对象存在是出于性能原因。  会定期修改全局设置，并且属性访问优化对于非全局对象则不适用于全局对象。  |
+| **\ (global 属性\) ** | 全局对象 \ (之间的中间对象) `window` \) 引用的对象。  如果对象是使用构造函数创建的，并且由全局对象保留，则保留路径可以 `Person` 表示为 `[global] > \(global property\) > Person` 。  这与标准相反，其中对象直接相互引用。  中间对象存在是出于性能原因。  会定期修改全局设置，并且属性访问优化对于非全局对象则不适用于全局对象。  |
 | **\ (根\) ** | 保留树视图中的根条目是引用所选对象的实体。  这些条目还可以是引擎创建的用于引擎特定用途的引用。  引擎具有缓存哪些引用对象，但所有此类引用都是弱引用，并且不会阻止收集对象，因为不存在真正的强引用。  |
 | **\ (closure\) ** | 通过函数关闭对一组对象的引用计数。  |
 | **\ (array， string， number， regexp\) ** | 具有引用 Array、String、Number 或正则表达式的属性的对象类型列表。  |
@@ -132,7 +132,7 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 1.  在操作之前拍摄堆快照。
 1.  执行一个 (\ (以你认为会导致泄露的方式与页面进行交互) 。
-1.  执行反向操作 \ (执行相反的交互并重复几次\) 。
+1.  执行反向操作 \ (执行相反的交互，然后重复几次\) 。
 1.  拍摄第二个堆快照，将此快照的视图更改为**Comparison，** 比较快照**1。**
 
 在 **"比较** "视图中，将显示两个快照之间的差值。  展开总条目时，将显示添加和删除的对象实例。
@@ -145,9 +145,9 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 ### <a name="containment-view"></a>包含视图
 
-" **包含** "视图实质上是应用程序的对象结构的"鸟眼视图"。  它允许你查看函数关闭，观察共同组合 JavaScript 对象的虚拟机 \ (VM\) 内部对象，以及了解应用程序在非常低级别使用的内存量。
+" **包含** "视图实质上是应用程序的对象结构的"鸟眼视图"。  它允许你查看函数关闭，观察共同组合 JavaScript 对象的虚拟机 \ (VM\) 内部对象，并了解应用程序在非常低级别使用的内存量。
 
-| 包含视图入口点 | 描述 |
+| 包含视图入口点 | 说明 |
 |:--- |:--- |
 | **DOMWindow 对象** | JavaScript 代码的全局对象。  |
 | **GC 根** | VM 的垃圾回收使用的实际 GC 根。  GC 根由内置对象映射、符号表、VM 线程堆栈、编译缓存、处理范围和全局句柄组成。  |
@@ -198,10 +198,10 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 对象的属性和属性值具有不同的类型，并相应地进行着色。  每个属性有四种类型之一。
 
-| 属性类型 | 描述 |
+| 属性类型 | 说明 |
 |:--- |:--- |
 | **a： property** | 具有名称的常规属性，可通过 `.` \ (dot\) 运算符或通过 `[` `]` \ (brackets\) 表示法访问，例如 `["foo bar"]` 。  |
-| **0：元素** | 具有数值索引的常规属性， `[` `]` 可通过 \ (括号\) 访问。  |
+| **0：元素** | 具有数值索引的常规属性，可通过 `[` `]` \ (brackets\) 表示法访问。  |
 | **a： context var** |  函数上下文中的变量，可通过函数关闭内部的变量名称访问。  |
 | **a： system prop** | JavaScript VM 添加的属性，无法通过 JavaScript 代码访问。  |
 
@@ -232,7 +232,7 @@ leafRef = null;
 //#NOW able to be #tree GC
 ```
 
-保留对相关的父 `#leaf` \ (parentNode\) 并递归到 的引用，因此仅在 leafRef 为 nullified 时，才将整个树作为 `#tree` GC 候选项 `#tree` 。
+保留对相关父级 `#leaf` \ (parentNode\) 的引用，并递归到 ，因此仅在 leafRef 为 nullified 时，作为 GC 候选项下的 `#tree` WHOLE 树。 `#tree`
 
 :::image type="complex" source="../media/memory-problems-tree-gc.msft.png" alt-text="DOM 子树" lightbox="../media/memory-problems-tree-gc.msft.png":::
    DOM 子树
@@ -241,7 +241,7 @@ leafRef = null;
 > [!NOTE]
 > 示例：尝试此示例的泄露 [DOM 节点][GlitchDevtoolsMemoryExample06] ，了解它可能会泄露在哪里以及如何检测它。  您还可以查看此 DOM 泄漏 [大于预期的示例][GlitchDevtoolsMemoryExample09]。
 
-若要了解有关 DOM 泄漏和内存分析基础的更多信息，请参阅查找和调试由 Gonzalo Ruiz de 的[Microsoft Edge DevTools][GonzaloRuizdeVillaMemory]的内存泄漏。
+若要阅读有关 DOM 泄漏和内存分析基础的更多内容，请参阅查找和调试由 Gonzalo Ruiz de 的[Microsoft Edge DevTools][GonzaloRuizdeVillaMemory]的内存泄漏。
 
 <!--
 > [!NOTE]
@@ -250,12 +250,9 @@ leafRef = null;
 
 <!--todo: add heap profiling dom leaks section when available  -->
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsMemoryProblems101ObjectSizes]: ./memory-101.md#object-sizes "对象大小 - 内存术语|Microsoft Docs"
 [DevtoolsMemoryProblems101ObjectsRetainingTree]: ./memory-101.md#objects-retaining-tree "保留树的对象 - 内存术语|Microsoft Docs"
 
@@ -274,6 +271,8 @@ leafRef = null;
 
 [GonzaloRuizdeVillaMemory]: https://slid.es/gruizdevilla/memory "内存|幻灯片"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots) ，由 [Meggin Kearney][MegginKearney] \ (Technical Writer\) 。

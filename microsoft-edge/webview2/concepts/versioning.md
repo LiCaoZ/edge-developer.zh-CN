@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 5461d752164b2af49c7104e3008166ce8abbbaea
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: 73a150c7d8711c040156bb4f78a82f5e5bda239e
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11976427"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083231"
 ---
 # <a name="understand-webview2-sdk-versions"></a>了解 WebView2 SDK 版本
 
@@ -21,7 +21,7 @@ WebView2 SDK NuGet包同时包含发布包和预发行版包。  将预发行版
 
 _预发布_ 如果要在将支持这些 API 添加到运行时之前测试最新的 WebView2 API（包括实验性 API），则 SDK 包在开发过程中使用。  建议使用 Canary 通道，因为它具有最新 API 的实现。  当你想要测试和使用实验性 WebView2 API 时，请使用以下组合：
 *   _WebView2_ SDK 的预发布版本。
-*   开发_客户端上_Microsoft Edge预览频道。
+*   开发_客户端_上Microsoft Edge预览频道。
 
 _发布_ SDK 包仅包含稳定的 API，而不包含实验性 API。  在开发 WebView2 应用的生产版本时，请使用以下组合：
 *   _WebView2_ SDK 的发行版。
@@ -91,7 +91,7 @@ WebView2 _SDK_ 预发布包中的实验性 API 不能保证向前兼容，并且
 当_WebView2_ SDK 的预发布版本最初可用时，该 SDK 仅适用于 Microsoft Edge Canary。  在此之后，预发布 SDK 还适用于 Beta 和开发人员渠道。
 使用预发布 SDK 尽早试用新 API，在提升新 API 成为稳定且向前兼容的 API 之前提供反馈。
 
-要完全支持实验性 API，请使用 Microsoft Edge 预览频道，而不是 WebView2 Evergreen Runtime。
+要完全支持实验性 API，请使用Microsoft Edge预览频道，而不是 WebView2 Evergreen Runtime。
 预发布 SDK 中任何实验性 API 都不能保证向前兼容。
 _SDK_发布版本中的 API 是向前兼容的。  有关详细信息，请参阅上面的 [API 的向前](#forward-compatibility-of-apis) 兼容性。
 
@@ -109,10 +109,10 @@ WebView2 SDK 参考文档中将实验性 API 指示为"实验性"。
 在客户端上生成的过期运行时可能会导致使用最新 SDK 中的新 API 的更新的 WebView2 应用出现兼容性问题。
 
 如果客户端上阻止更新 WebView2 运行时，请确保你知道应用所需的 [WebView2][MicrosoftDeveloperEdgeWebview2] 运行时的最低内部版本号。
-支持版本 616 版本 616 (版本所需的最低运行时版本) 低于最新运行时版本。
+支持 SDK 版本 616 版本 616 (版本所需的最低运行时版本) 比最新运行时版本较早。
 最新运行时支持最新 SDK 版本内的所有 API。
 
-若要检查 SDK 的特定内部版本号与运行时或预览Microsoft Edge之间的兼容性，请导航到[WebView2 SDK][Webview2ReleaseNotes]发行说明。
+若要检查 SDK 的特定内部版本号与运行时或预览Microsoft Edge之间的兼容性，请导航到[WebView2 SDK][Webview2ReleaseNotes]的发行说明。
 
 
 ## <a name="feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis"></a>用于测试已安装的运行时是否支持最近添加的 API 的功能检测
@@ -132,7 +132,8 @@ WebView2 SDK 参考文档中将实验性 API 指示为"实验性"。
 在测试安装的 WebView2 运行时是否支持 API 时，此技术作为 [WebView2 开发最佳做法列出][Webview2ConceptsDevguideTestAPIs]。
 
 
-<!--links -->
+<!-- ====================================================================== -->
+<!-- links -->
 [Webview2ConceptsDistribution]: ./distribution.md "分发 WebView2 应用和 WebView2 运行时|Microsoft Docs"
 [Webview2ReleaseNotes]: ../release-notes.md "WebView2 SDK 发行说明 | Microsoft Docs"
 [Webview2ReleaseNotes1062222]: ../release-notes.md#1062222 "1.0.622.22 - WebView2 SDK |Microsoft Docs"

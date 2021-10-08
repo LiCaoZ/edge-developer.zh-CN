@@ -7,12 +7,12 @@ ms.date: 08/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: ced02274dc9ad1997ce2965db97fbcf193901f51
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: c7e50f2ef922e3e9ed7b55135f89b508843019af
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035031"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082538"
 ---
 # <a name="emulate-dark-or-light-schemes-in-the-rendered-page"></a>模拟呈现页面中的深色或浅色方案
 
@@ -65,6 +65,7 @@ ms.locfileid: "12035031"
 1.  若要还原该设置，请在"命令菜单"中键入"模拟"或"方案"，然后选择"呈现 **：不模拟 CSS 首选颜色方案"。**  刷新页面时，将应用你自己的用于浅色或深色模式首选项的操作系统或浏览器设置。
 
 
+<!-- ====================================================================== -->
 <!-- links -->
 [DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
 [DevtoolsCustomizeTheme]: ../customize/theme.md "将颜色主题应用到 DevTools |Microsoft Docs"

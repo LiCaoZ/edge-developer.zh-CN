@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: e2e7086fe7f0b313f35cc7dd06561e7b25e4f745
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: f4e8be746b19ee7be2b0545b701d971815b51c72
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035810"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082601"
 ---
 # <a name="the-webview2-process-model"></a>WebView2 进程模型
 
 支持的平台：Win32、Windows Forms、WinUI、WPF。
 
-WebView2 运行时使用与浏览器相同的Microsoft Edge模型。  此浏览器过程模型在内部查看新式 Web 浏览器 ([第 1 部分 ][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]) 。
+WebView2 运行时使用与浏览器相同的Microsoft Edge模型。  此浏览器过程模型在新式 Web 浏览器的内部 [外观 (第 1 部分 ][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]) 。
 
 
 <!-- ====================================================================== -->
@@ -34,7 +34,7 @@ _WebView2 进程组_是 WebView2 运行时进程的集合。  WebView2 进程组
    进程 1
 :::image-end:::
 
-当 WebView2 应用程序使用 WebView2 功能时，WebView2 进程组中进程的数量和状态可能会发生变化。   (但是，WebView2 进程组中只有一个特定的浏览器进程。例如) 例如，从同一个 ，但在 属性中使用不同的域创建新 WebView 通常会启动一个新的呈现器进程。 `CoreWebView2Environment` `Source`
+当 WebView2 应用程序使用 WebView2 功能时，WebView2 进程组中进程的数量和状态可能会发生变化。   (但是，WebView2 进程组中只有一个特定浏览器进程。例如) 例如，从同一个 ，但在 属性中使用不同的域创建新 WebView 通常会启动一个新的呈现器进程。 `CoreWebView2Environment` `Source`
 
 呈现器进程的数量可能因以下条件而异：
 *   使用 WebView2 _运行时_ 中的网站隔离功能。  请参阅 [每帧呈现器进程 - 网站隔离](https://developers.google.com/web/updates/2018/09/inside-browser-part1#site-isolation)。
@@ -85,19 +85,13 @@ WebView2 运行时进程集合中所有进程都绑定到浏览器进程，浏�
 *  [WebView2 入门指南][Webview2IndexGetStarted]
 *  [WebView2Samples 存储库][GithubMicrosoftedgeWebview2samples] - WebView2 功能的综合示例。
 *  [WebView2 API 参考][DotnetApiMicrosoftWebWebview2WpfWebview2]
-*  [WebView2][Webview2IndexNextSteps]简介中的_Microsoft Edge步骤_。
-
-
-<!-- ====================================================================== -->
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>联系 Microsoft Edge WebView 团队
-
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
+*  [另请参阅][Webview2IndexNextSteps] _WebView2 Microsoft Edge简介_。
 
 
 <!-- ====================================================================== -->
 <!-- links -->
 [Webview2IndexGetStarted]: ../index.md#get-started "入门 - WebView2 Microsoft Edge简介|Microsoft Docs"
-[Webview2IndexNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 |Microsoft Docs"
+[Webview2IndexNextSteps]: ../index.md#see-also "另请参阅 - WebView2 Microsoft Edge简介|Microsoft Docs"
 [WebView2ManageUDF]: ./user-data-folder.md "管理用户数据文件夹 | Microsoft Docs"
 <!-- external links -->
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 类|Microsoft Docs"

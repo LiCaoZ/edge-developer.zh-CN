@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 75b5db400ef17ff69a7ac4859adb22c325fcd816
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: c02b74ef76fc11b0eb0c262f0768c5f8d49e454f
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035703"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082147"
 ---
 <!-- Copyright Kayce Basques
 
@@ -46,12 +46,9 @@ ms.locfileid: "12035703"
 
 可以在此处显示和更改 CSS，就像任何其他网页一样。  导航到“[查看和更改 CSS 入门][DevToolsCSSGetStarted]”。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
 [DevToolsCSSGetStarted]: ./index.md "开始查看和更改 CSS |Microsoft Docs"
 

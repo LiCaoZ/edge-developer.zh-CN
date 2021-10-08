@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、edge、ICoreWebView2、ICoreWebView2Controller、Chrome DevTools 协议
-ms.openlocfilehash: 34aca46e395e1c9ec39357d3f9a942cef8c2644f
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 4837c609ecef19f359ea342598fa07af50f6dc75
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036046"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083399"
 ---
 # <a name="use-the-chrome-devtools-protocol-in-webview2"></a>在 WebView2 中使用 Chrome DevTools 协议
 
@@ -81,8 +81,8 @@ ms.locfileid: "12036046"
 1.  打开 `geolocation.html` 文件。
 1.  若要显示纬度和经度坐标，请选择"显示 **位置"** 按钮。  若要验证和比较地理位置，请将坐标复制并粘贴到 中 [https://www.bing.com/maps][BingMaps] 。
 
-    :::image type="complex" source="./media/geolocater-browser.png" alt-text="在用户位置中显示用户的Microsoft Edge" lightbox="./media/geolocater-browser.png":::
-       在用户位置中显示用户的Microsoft Edge
+    :::image type="complex" source="./media/geolocater-browser.png" alt-text="在用户位置中显示用户的地理位置Microsoft Edge" lightbox="./media/geolocater-browser.png":::
+       在用户位置中显示用户的地理位置Microsoft Edge
     :::image-end:::
 
 
@@ -163,7 +163,7 @@ ms.locfileid: "12036046"
 1.  运行应用。
 1.  若要显示法国巴黎的坐标，请选择" **显示位置"** 按钮。
 
-    :::image type="complex" source="./media/final-location-cdp.png" alt-text="在 .html 2 控件中显示带巴黎坐标的 webView2 文件" lightbox="./media/final-location-cdp.png":::
+    :::image type="complex" source="./media/final-location-cdp.png" alt-text="在 WebView2 .html显示带巴黎坐标的 WebView2 文件" lightbox="./media/final-location-cdp.png":::
        在 `.html` WebView2 控件中显示文件以及巴黎的坐标
     :::image-end:::
 
@@ -173,7 +173,7 @@ ms.locfileid: "12036046"
 
 若要请求 WebView2 平台功能，请在 [WebView2Feedback][GithubMicrosoftedgeWebview2feedback]存储库输入新问题。
 
-若要提交有关 Chrome DevTools 协议的 bug，在错误数据库中Chromium [Bug 报告][ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform]。
+若要提交有关 Chrome DevTools 协议的 bug，请提交错误报告Chromium [Bug 数据库][ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform]。
 
 Chrome DevTools 协议由开放源代码Chromium维护，而不是由 Microsoft Edge WebView2 团队维护。
 
@@ -186,7 +186,7 @@ Chrome DevTools 协议由开放源代码Chromium维护，而不是由 Microsoft 
 
 
 <!-- ====================================================================== -->
- <!-- links -->
+<!-- links -->
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2GetdevtoolsprotocoleventreceiverViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver?view=webview2-dotnet-1.0.774.44&preserve-view=true "CoreWebView2.GetDevToolsProtocolEventReceiver (String) 方法 |Microsoft Docs"
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString]: /dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync?view=webview2-dotnet-1.0.774.44&preserve-view=true#Microsoft_Web_WebView2_Core_CoreWebView2_CallDevToolsProtocolMethodAsync_System_String_System_String_ "CoreWebView2.CallDevToolsProtocolMethodAsync (String， String) 方法 |Microsoft Docs"
 

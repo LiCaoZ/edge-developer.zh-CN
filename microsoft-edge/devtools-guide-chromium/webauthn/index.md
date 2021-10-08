@@ -1,5 +1,5 @@
 ---
-description: 在 DevTools 中模拟验证Microsoft Edge调试 WebAuthn。
+description: 在 DevTools 中模拟验证Microsoft Edge WebAuthn。
 title: 在 DevTools 中模拟验证Microsoft Edge调试 WebAuthn
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 1fab104d0b8b390d9540427fc147ca9fb82bfcb4
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: e93c36226ddd44da4cec4d8eb0697c06328635c2
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036116"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082293"
 ---
 # <a name="emulate-authenticators-and-debug-webauthn-in-microsoft-edge-devtools"></a>在 DevTools 中模拟验证Microsoft Edge调试 WebAuthn
 
@@ -30,7 +30,7 @@ Web 身份验证 API 规范是开始使用 [Web 身份验证的一个很好的�
 
 1.  登录到网站。
 1.  [打开 DevTools][DevtoolsGuideChromiumOpen]。
-1.  若要打开**WebAuthn**工具，请选择自定义和控制**DevTools** \ (`...` \) 图标>**更多工具**  >  **WebAuthn。**
+1.  若要打开**WebAuthn**工具，请选择自定义和控制**DevTools** \ (`...` \) 图标>**更多工具**  >  **WebAuthn**。
 
     :::image type="complex" source="../media/webauthn-webauthn-tab.msft.png" alt-text="WebAuthn 工具" lightbox="../media/webauthn-webauthn-tab.msft.png":::
        **WebAuthn** 工具
@@ -48,7 +48,7 @@ Web 身份验证 API 规范是开始使用 [Web 身份验证的一个很好的�
     | 选项 | 值 | 详细信息 |
     |:--- |:--- |:--- |
     | `Protocol` | [ctap2][FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml] 或 [u2f][FidoallianceSpecsU2fV12Ps20170411OverviewHtml] | 虚拟验证器用于编码和解码的协议 |
-    | `Transport` |   `usb``nfc` `ble` 、、、 或 `internal` | 虚拟验证器模拟所选传输以便与客户端通信，以获取特定凭据的断言。  有关详细信息，请导航到Authenticator[枚举][GithubW3cWebauthnEnumTransport] |
+    | `Transport` |   `usb``nfc` `ble` 、、、 或 `internal` | 虚拟验证器模拟选定的传输以便与客户端通信，以获取特定凭据的断言。  有关详细信息，请导航到Authenticator[枚举][GithubW3cWebauthnEnumTransport] |
     |  `Supports resident keys` | 使用复选框 (\) 或关闭\) \ | 如果 Web 应用依赖于驻留密钥 \ (也称为客户端可发现凭据\) 。  有关详细信息，请导航到 [Resident Key Requirement 枚举][GithubW3cWebauthnEnumResidentkeyrequirement]。 |
     | `Supports user verification` | 使用复选框 (\) 或关闭\) \ | 如果 Web 应用依赖使用手势形式（如触摸和引脚代码、密码输入或生物识别识别）的本地授权，则打开。  有关详细信息，请导航到" [用户验证"][GithubW3cWebauthnEnumUserverification] |
 
@@ -76,7 +76,7 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
        查看凭据
     :::image-end:::
 
-在演示网站上，选择"验证 **"** 按钮。  确认"[凭据"表中的][GithubW3cWebauthnSctnSignCounter]凭据的 Sign **** Count 增加了 1，这表示[authenticatorGetAssertion][GithubW3cWebauthnAuthenticatorgetassertion]操作成功。
+在演示网站上，选择"验证 **"** 按钮。  确认"[凭据"表中的][GithubW3cWebauthnSctnSignCounter]凭据的"签名计数****"增加了 1，这表示[authenticatorGetAssertion][GithubW3cWebauthnAuthenticatorgetassertion]操作成功。
 
 ## <a name="export-and-remove-credentials"></a>导出和删除凭据
 
@@ -116,14 +116,11 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
    删除验证器
 :::image-end:::
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发人员工具团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsGuideChromiumOpen]: ../open/index.md "打开 Microsoft Edge 开发人员工具 | Microsoft Docs"
-
+<!-- external links -->
 [AppspotWebauthndemo]: https://webauthndemo.appspot.com "Webauthn 演示|Appspot"
 
 [FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml]: https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html "CTAP Authenticator客户端 (协议) |fido 联盟"
@@ -131,12 +128,14 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
 
 [GithubW3cWebauthn]: https://w3c.github.io/webauthn "Web 身份验证：用于访问公钥凭据级别 2 的 API |GitHub"
 [GithubW3cWebauthnAuthenticatorgetassertion]: https://w3c.github.io/webauthn#authenticatorgetassertion "authenticatorGetAssertion 操作 - Web 身份验证：用于访问公钥凭据级别 2 的 API |GitHub"
-[GithubW3cWebauthnEnumTransport]: https://w3c.github.io/webauthn#enum-transport "AuthenticatorTransport Enumeration (enum AuthenticatorTransport) - Web Authentication：用于访问公钥凭据级别 2 的 API |W3C"
-[GithubW3cWebauthnEnumResidentkeyrequirement]: https://w3c.github.io/webauthn#enum-residentKeyRequirement "Resident Key Requirement 枚举 (枚举枚举) - Web 身份验证：用于访问公钥凭据级别 2 的 API |W3C"
+[GithubW3cWebauthnEnumTransport]: https://w3c.github.io/webauthn#enum-transport "AuthenticatorTransport Enumeration (enum AuthenticatorTransport) - Web Authentication： An API for accessing Public Key Credentials Level 2 |W3C"
+[GithubW3cWebauthnEnumResidentkeyrequirement]: https://w3c.github.io/webauthn#enum-residentKeyRequirement "Resident Key Requirement 枚举 (枚举 ResidentKeyRequirement) - Web 身份验证：用于访问公钥凭据级别 2 的 API |W3C"
 [GithubW3cWebauthnEnumUserverification]: https://w3c.github.io/webauthn#user-verification "用户验证 - Web 身份验证：用于访问公钥凭据级别 2 的 API |W3C"
-[GithubW3cWebauthnSctnCreatecredential]: https://w3c.github.io/webauthn#sctn-createCredential "创建新的凭据 - PublicKeyCredential 的 [[Create]] (源、选项、sameOriginWithAncestors) 方法 - Web 身份验证：用于访问公钥凭据级别 2 |GitHub"
+[GithubW3cWebauthnSctnCreatecredential]: https://w3c.github.io/webauthn#sctn-createCredential "创建新的凭据 - PublicKeyCredential 的 [[Create]] (源、选项、sameOriginWithAncestors) 方法 - Web 身份验证：用于访问公钥凭据级别 2 的 API |GitHub"
 [GithubW3cWebauthnSctnSignCounter]: https://w3c.github.io/webauthn/#sctn-sign-counter "签名计数器注意事项 - Web 身份验证：用于访问公钥凭据级别 2 的 API |GitHub"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/webauthn/index)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。

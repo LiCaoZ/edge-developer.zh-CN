@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 416a4f7625fbba0f37a3c8fdb698eca3a8159b9b
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 86dd9fdfee277e35c720bebf9cd1fb2d4f168c1c
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036634"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083686"
 ---
 <!-- Copyright Kayce Basques
 
@@ -51,7 +51,7 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 
 <!--Todo: add background fetch api section when available -->
 
-1.  [打开 DevTools][OpenDevTools]。
+1.  [Open DevTools][OpenDevTools]。
 1.  打开“**应用程序**”工具。
 1.  打开“**后台提取**”面板。
 
@@ -78,7 +78,7 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 
 <!--Todo: add background sync api section when available -->
 
-1.  [打开 DevTools][OpenDevTools]。
+1.  [Open DevTools][OpenDevTools]。
 1.  打开“**应用程序**”工具。
 1.  打开“**后台同步**”窗格。
 
@@ -103,7 +103,7 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 
 **服务工作进程**从服务器接收一条[推送消息][MDNPush]后，服务工作进程使用[通知 API][MDNNotifications]向用户显示数据。  若要记录通知 3 天，即使 DevTools 未打开：
 
-1.  [打开 DevTools][OpenDevTools]。
+1.  [Open DevTools][OpenDevTools]。
 1.  打开“**应用程序**”工具。
 1.  打开“**通知**”窗格。
 
@@ -128,7 +128,7 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 
 若要向用户显示推送通知，**服务工作进程**必须先使用[推送消息 API][MDNPush]从服务器接收数据。  当服务工作进程准备好显示通知时，它将使用[通知 API][MDNNotifications]。  若要记录推送消息 3 天，即使 DevTools 未打开：
 
-1.  [打开 DevTools][OpenDevTools]。
+1.  [Open DevTools][OpenDevTools]。
 1.  打开“**应用程序**”工具。
 1.  打开“**推送消息**”面板。
 
@@ -149,16 +149,12 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
        在“**推送消息**”窗格中查看事件的详细信息
     :::image-end:::
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 <!--[BackgroundFetchAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2018/12/background-fetch.md "Background Fetch API"  -->
 <!--[BackgroundSyncAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2015/12/background-sync.md  "Background Sync API"  -->
-
-[OpenDevTools]: ../open/index.md "打开 Microsoft Edge (Chromium) 开发人员工具|Microsoft Docs"
+[OpenDevTools]： ../open/index.md "Open Microsoft Edge (Chromium) Developer Tools |Microsoft Docs"
 
 [MDNNotifications]: https://developer.mozilla.org/docs/Web/API/Notifications_API "通知 API | MDN"
 [MDNPush]: https://developer.mozilla.org/docs/Web/API/Push_API "推送 API | MDN"

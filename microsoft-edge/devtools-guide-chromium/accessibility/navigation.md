@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: f7e5e2d14778b983fb0e94c57a6110d76a0c3215
-ms.sourcegitcommit: 4695a3bb8ea26f8dd65c5ab8fe383765ae51850c
+ms.openlocfilehash: 31ed87b3d58d95096830b1fe7f5101bd5f211ac7
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "12081127"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082545"
 ---
 <!-- Copyright Rob Dodson
 
@@ -125,7 +125,7 @@ DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为面�
 
 *   将焦点放在“**DOM 树**”中的节点上时，选择 `Enter` 以使其可以编辑。
 *   选择 `Tab` 以在属性值之间移动。  当听到该元素的名称（例如，`h2`）时，你会位于文本输入内，并且可以更改元素的类型。
-*   选择 `Control` + `Enter` (Windows、Linux) 或 (`Command` + `Enter` macOS) 接受更改。
+*   选择 `Control` + `Enter` (Windows、Linux) 或 `Command` + `Enter` (macOS) 接受更改。
 
 例如，当你键入并选择 (Windows、Linux) 或 (macOS) 时，元素的起始标记和结束标记 `h3` `Control` + `Enter` `Command` + `Enter` `h3` 会更改。
 
@@ -135,7 +135,7 @@ DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为面�
 
 元素 **工具** 包含用于检查应用于元素的 CSS 或辅助功能树中相关位置等内容的其他选项卡。
 
-*   焦点在 **DOM**树中的节点上时，选择直到 `Tab` 您听到" **样式"** 选项卡已选中。
+*   焦点在**DOM**树中的节点上时，选择直到 `Tab` 您听到已**** 选择样式选项卡。
 *   使用 `Right Arrow` 浏览其他可用的选项卡。
 
 “**DOM 树**”将具有 `href` 属性的元素转换为可聚焦链接，因此可能需要多次选择 `Tab` 以访问“**样式**”窗格。
@@ -222,7 +222,7 @@ DOM **断点** 和 **属性** 选项卡不可通过键盘访问。
 
 **已知问题**
 
-*   对于 MacOS[屏幕阅读器][W3CWaiAriaTree]（如**** VoiceOver）来说，"辅助功能"选项卡Microsoft Edge ARIA 树的类型可能未正确公开。  订阅 [Chromium 问题 #868480][ChromiumIssues868480] 以获取有关此问题进展的通知。
+*   对于 macOS[屏幕阅读器][W3CWaiAriaTree]（如**** VoiceOver）来说，"辅助功能"选项卡Microsoft Edge ARIA 树的类型可能未正确公开。  订阅 [Chromium 问题 #868480][ChromiumIssues868480] 以获取有关此问题进展的通知。
 *   每个 **ARIA 属性** 和 **已计算属性** 部分都标记为 [ARIA 树][W3CWaiAriaTree]，但当前每个部分都不具有焦点管理且不可通过键盘操作。
 
 
@@ -251,12 +251,6 @@ Lighthouse 报告分为与每个审核类别对应的部分。  报告打开时�
 
 
 <!-- ====================================================================== -->
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
 [DevtoolsAccessibilityReference]: reference.md "DevTools |Microsoft Docs"
 [DevtoolsAccessibilityTab]: accessibility-tab.md "使用“辅助功能”选项卡选项测试辅助功能 | Microsoft Docs"
@@ -266,7 +260,7 @@ Lighthouse 报告分为与每个审核类别对应的部分。  报告打开时�
 [DevtoolsCssIndex]: ../css/index.md "查看和更改 CSS 入门 | Microsoft 文档"
 <!--[DevtoolsCssReferenceViewAppliedElement]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "CSS features reference - View only the CSS that is actually applied to an element | Microsoft Docs"  -->
 <!--[DevtoolsDomIndex]: ../dom/index.md "Get started with viewing and changing the DOM | Microsoft Docs"  -->
-[DevtoolsDomIndexViewDomNodes]： ../dom/index.md#view-dom-nodes "View DOM nodes - 查看和更改 DOM 节点|Microsoft Docs&quot; [DevtoolsDomIndexNavigateDomTreeKeyboard]： ../dom/index.md#navigate-the-dom-tree-with-a-keyboard&quot;使用键盘导航 DOM 树 - 开始查看和更改 DOM |Microsoft Docs&quot; [DevtoolsOpen]： ../open/index.md &quot;Open Microsoft Edge DevTools |Microsoft Docs&quot; [DevtoolsShortcuts]： ../shortcuts/index.md &quot;Microsoft Edge DevTools 键盘快捷方式|Microsoft Docs&quot; [DevtoolsShortcutsStylesPaneKeyboard]： ../shortcuts/index.md#styles-panel-keyboard-shortcuts &quot;Styles panel keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts |Microsoft Docs"
+[DevtoolsDomIndexViewDomNodes]： ../dom/index.md#view-dom-nodes "View DOM nodes - 查看和更改 DOM 节点|Microsoft Docs&quot; [DevtoolsDomIndexNavigateDomTreeKeyboard]： ../dom/index.md#navigate-the-dom-tree-with-a-keyboard &quot;Navigate the DOM Tree with a keyboard - 开始查看和更改 DOM |Microsoft Docs&quot; [DevtoolsOpen]： ../open/index.md &quot;Open Microsoft Edge DevTools |Microsoft Docs&quot; [DevtoolsShortcuts]： ../shortcuts/index.md &quot;Microsoft Edge DevTools 键盘快捷方式|Microsoft Docs&quot; [DevtoolsShortcutsStylesPaneKeyboard]： ../shortcuts/index.md#styles-panel-keyboard-shortcuts &quot;Styles panel keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts |Microsoft Docs"
 
 [ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "问题 868480 - 在 Mac 辅助功能中以表的形式公开 ARIA 树"
 

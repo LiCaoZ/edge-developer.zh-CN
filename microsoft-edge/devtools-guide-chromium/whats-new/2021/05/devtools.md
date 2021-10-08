@@ -7,12 +7,12 @@ ms.date: 06/02/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: ea447a974add05f3f2c2228d739296bf2a7fa906
-ms.sourcegitcommit: 24bb983a1ca811ba4ac038dce0c5c7f5d6bbb745
+ms.openlocfilehash: 0487b7625fc8174cb4a0e28ef569c3a67f28d8c1
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "12057899"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082853"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-92"></a>DevTools 中的新增功能 (Microsoft Edge 92)
 
@@ -279,11 +279,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
 
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
-
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
-
+<!-- ====================================================================== -->
 <!-- links -->
 [DevtoolsEvaluatePerfRefAnalyzeAPerfRecording]: ../../../evaluate-performance/reference.md#analyze-a-performance-recording "分析性能录制 | Microsoft Docs"
 <!-- external links -->

@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: dde3a70b6518f7012554ba93ad2613551fc602b1
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 603ac43af9143023a1b8553b6049c4aa91f3c5a6
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035787"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082874"
 ---
 <!-- Copyright Kayce Basques
 
@@ -70,8 +70,8 @@ ms.locfileid: "12035787"
 :::image-end:::
 
 *  导航 **器窗格** \ (位于左上角\) 。  此处列出了网页请求的所有文件。
-*  编辑 **者** 窗格 \ (位于右上角\) 。  在导航器窗格中选择文件 **后** ，此窗格将显示该文件的内容。
-*  调试 **器窗格** \ (位于底部\) 。  此窗格提供用于检查网页的 JavaScript 的工具。  如果 DevTools 窗口很宽，则此窗格显示在"编辑器"窗格 **的右侧** 。
+*  编辑 **者** 窗格 \ (位于右上角\) 。  在导航器窗格中选择 **文件后，** 此窗格将显示该文件的内容。
+*  调试 **器窗格** \ (位于底部\) 。  此窗格提供用于检查网页的 JavaScript 的工具。  如果 DevTools 窗口宽，则此窗格显示在"编辑器" **窗格的右侧** 。
 
 ## <a name="step-3-pause-the-code-with-a-breakpoint"></a>步骤 3：使用断点暂停代码
 
@@ -169,7 +169,7 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 
 ### <a name="method-2-watch-expressions"></a>方法 2：监视表达式
 
-监视 **窗格** 允许您监视变量的值，例如 (或) `sum` 表达式 (如 `typeof sum`) 。  可以将任何有效的 JavaScript 表达式存储在监视表达式中。
+" **监视** "窗格允许您监视变量的值，例如 (或) `sum` 表达式 (如 `typeof sum`) 。  可以将任何有效的 JavaScript 表达式存储在监视表达式中。
 
 1.  选择" **监视"** 窗格。
 1.  Choose **Add watch expression** \ (Add watch expression ![ ](../media/add-expression-icon.msft.png) \) .
@@ -224,26 +224,26 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 
 本文不介绍几个代码单步执行控件。  有关详细信息，请导航到"使用 [调试器][DevToolsJavascriptReferenceStepThroughCode] 功能"文章中的逐行代码。
 
-### <a name="see-also"></a>另请参阅
 
-*   [使用调试器功能][DevToolsJavascriptReference] - 使用"源"工具中的调试器 UI。
-*   [源工具概述][DevToolsSourcesIndex] - 介绍 JavaScript 调试工具和代码编辑器。
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
+*  [使用调试器功能][DevToolsJavascriptReference] - 使用"源"工具中的调试器 UI。
+*  [源工具概述][DevToolsSourcesIndex] - 介绍 JavaScript 调试工具和代码编辑器。
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevToolsJavascriptReference]: ./reference.md "使用调试器功能|Microsoft Docs"
 [DevToolsSourcesIndex]: ../sources/index.md "源工具概述 | Microsoft Docs"
 [DevToolsJavscriptBreakpoints]: ./breakpoints.md "如何在 Microsoft Edge 开发工具中使用断点暂停代码 | Microsoft Doc"
 [DevToolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "分步执行代码 - 使用调试器|Microsoft Docs"
-
+<!-- external links -->
+[OpenDebugJSDemo]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "打开演示 | 故障"
 <!--[inPrivate]: https://support.alphabet.com/alphabet-browser/answer/95464  -->
 
-[OpenDebugJSDemo]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "打开演示 | 故障"
 
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。

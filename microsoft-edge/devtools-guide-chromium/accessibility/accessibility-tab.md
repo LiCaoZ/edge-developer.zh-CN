@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: e0e16a453057120223c4367450e22e75cedbd20d
-ms.sourcegitcommit: 4695a3bb8ea26f8dd65c5ab8fe383765ae51850c
+ms.openlocfilehash: 1ea29828f7fae4848e1d787bc097772d0e14692a
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "12081120"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082573"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques
@@ -36,7 +36,7 @@ ms.locfileid: "12081120"
 
 1.  选择" **元素"** 工具。
 1.  在 **DOM 树**中，选择要检查的元素。
-1.  选择 **"辅助功能"** 选项卡。 你可能需要先选择更多选项卡**** \ ("样式"选项卡) 更多选项卡按钮 ![ ](../media/more-tabs-icon.msft.png) \) **按钮**。
+1.  选择 **"辅助功能"** 选项卡。 你可能需要先选择更多选项卡**** \ ("样式"选项卡) 更多选项卡按钮 ![ ](../media/more-tabs-icon.msft.png) **\) 按钮**。
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="检查&quot;辅助功能&quot;选项卡中的 DevTools 主页的 h1 元素" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    检查 `h1` "辅助功能"选项卡中的 DevTools **主页** 元素
@@ -46,7 +46,7 @@ ms.locfileid: "12081120"
 <!-- ====================================================================== -->
 ## <a name="view-the-position-of-an-element-in-the-accessibility-tree"></a>查看元素在辅助功能树中的位置
 
-[辅助功能树][MDNAccessibilityTree]是 DOM 树的子集。  辅助功能树仅包含 DOM 树中的元素，这些元素对于通过屏幕阅读器等辅助技术显示页面内容非常有用。
+[辅助功能树][MDNAccessibilityTree]是 DOM 树的子集。  辅助功能树仅包含 DOM 树中的元素，这些元素与通过屏幕阅读器等辅助技术显示页面内容相关且有用。
 
 从"辅助功能"选项卡检查元素在辅助功能 **树中** 的位置。
 
@@ -83,18 +83,6 @@ ARIA 属性确保辅助技术（如屏幕阅读器）具有为了正确表示页
 
 
 <!-- ====================================================================== -->
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-> [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
-
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-
-<!-- ====================================================================== -->
 <!-- links -->
 [DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "仅查看实际应用于元素的 CSS - CSS 功能参考|Microsoft Docs"
 [MDNAccessibilityTree]: https://developer.mozilla.org/docs/Glossary/AOM "辅助功能树 (AOM) | MDN"
@@ -102,3 +90,10 @@ ARIA 属性确保辅助技术（如屏幕阅读器）具有为了正确表示页
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+
+<!-- ====================================================================== -->
+> [!NOTE]
+> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+
+[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。

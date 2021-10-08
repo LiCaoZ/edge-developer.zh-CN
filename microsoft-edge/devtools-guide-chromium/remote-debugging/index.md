@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: 5ae559826605dab82729deae6eef2d8c0d92e63c
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: b0d0fe14f061934dc50a0f05ed4b832d63200ea3
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035878"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082692"
 ---
 <!-- Copyright Kayce Basques
 
@@ -148,12 +148,10 @@ ms.locfileid: "12035878"
 > *   截屏视频会对帧速率产生负面影响。  在测量滚动或动画时禁用截屏视频，以更准确地了解页面性能。
 > *   如果 Android 设备屏幕锁定，截屏视频的内容将消失。  解锁 Android 设备屏幕以自动恢复截屏视频。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
+<!-- external links -->
 [AndroidDeveloperStudioDevOptions]: https://developer.android.com/studio/debug/dev-options "配置设备上开发人员选项 | Android 开发人员"
 [AndroidDeveloperToolsOemUsb]: https://developer.android.com/tools/extras/oem-usb.html "安装 OEM USB 驱动程序 | Android 开发人员"
 
@@ -167,6 +165,8 @@ ms.locfileid: "12035878"
 
 [Stackoverflow21925992]: https://stackoverflow.com/questions/21925992 "插入时开发工具设备无法检测到设备 - 堆栈溢出"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。

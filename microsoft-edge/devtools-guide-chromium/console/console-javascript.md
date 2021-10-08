@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， JavaScript， Web 开发， f12 工具， devtools
-ms.openlocfilehash: 5892123734f262fc96cada6ba5ecd1f4f6e9765b
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: e11e031fd386f23b6bff21d1122dd1fb838e5914
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034639"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12081992"
 ---
 # <a name="the-console-as-a-javascript-environment"></a>作为 JavaScript 环境的控制台
 
@@ -79,7 +79,7 @@ ms.locfileid: "12034639"
 
 除了在你自己的脚本中， **控制台** 还 [支持顶级 await][GithubTc39ProposalTopLevelAwait] 在它内运行任意异步 JavaScript。  例如，使用 API 时 `fetch` 无需使用 `await` async 函数包装语句。
 
-若要获取 Microsoft Edge 开发人员工具 Visual Studio Code [GitHub存储库][GithubMicrosoftVscodeEdgeDevtools]上归档的最后 50 个问题，请完成以下操作。
+若要获取 Microsoft Edge[开发人员][GithubMicrosoftVscodeEdgeDevtools]工具开发人员存储库上Visual Studio Code GitHub 50 个问题，请完成以下操作。
 
 1.  打开“**控制台**”。
 1.  复制并粘贴以下代码段，获取包含 10 个条目的对象。
@@ -110,12 +110,9 @@ copy(await (await fetch(
 
 使用 **控制台** 作为实践 JavaScript 功能和进行一些快速计算很好的方法。  真正的功能是，您有权访问 [window][MdnDocsWebApiWindow] 对象。  你可以 [与控制台 中的 DOM 交互][DevtoolsConsoleConsoleDomInteraction]。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "使用控制台与 DOM 服务器|Microsoft Docs"
 [DevtoolsConsoleUtilities]: ./utilities.md "控制台实用程序 API 参考 | Microsoft Docs"
 

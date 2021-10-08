@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: fdd8ac857235be9dbeb45f8405bbd41f1fda709d
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 4c6fd0b3f9bd520724957534432f44495118b315
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036935"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082720"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -111,8 +111,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 :::row:::
    :::column span="":::
-      若要打开**弹性框**编辑器，请导航至“**样式**”窗格，然后选择 `display: flex` 或 `display: inline-flex` 样式旁边的新图标。  
-            **弹性框**编辑器提供了一种快速编辑弹性框属性的方法。
+      若要打开**弹性框**编辑器，请导航至“**样式**”窗格，然后选择 `display: flex` 或 `display: inline-flex` 样式旁边的新图标。  **弹性框**编辑器提供了一种快速编辑弹性框属性的方法。
    :::column-end:::
    :::column span="":::
       此外，“**布局**”窗格中的“**弹性框**”部分将显示网页上的所有弹性框元素。  你可以切换每个元素的覆盖。
@@ -176,14 +175,12 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 以前，**控制台**不在 JavaScript 字符串中输出有效的双引号 (`"`) 字符。  从 Microsoft Edge 版本 90 开始，**控制台**将使用转义的双引号 (`"`) 字符输出 JavaScript 字符串。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1178530][CR1178530]。
 
 :::image type="complex" source="../../media/2021/02/console-string-formatted-double-quotes.msft.png" alt-text="控制台将使用转义的双引号 (&#0022;) 字符输出 JavaScript 字符串" lightbox="../../media/2021/02/console-string-formatted-double-quotes.msft.png":::
-   
-            **控制台**将使用转义的双引号 (`"`) 字符输出 JavaScript 字符串
+   **控制台**将使用转义的双引号 (`"`) 字符输出 JavaScript 字符串
 :::image-end:::
 
 ### <a name="emulate-the-css-color-gamut-media-feature"></a>模拟 CSS 色域媒体功能
 
-
-            [色域][ChromestatusFeature5354410980933632]媒体查询会模拟浏览器和你正在测试的设备支持的大致颜色范围。  “**模拟 CSS 媒体功能色域**”下的下拉列表包含 DevTools 可能模拟的颜色空间。  例如，若要触发 `color-gamut: p3` 媒体查询，请从下拉列表中选择“**色域：p3**”。
+[色域][ChromestatusFeature5354410980933632]媒体查询会模拟浏览器和你正在测试的设备支持的大致颜色范围。  “**模拟 CSS 媒体功能色域**”下的下拉列表包含 DevTools 可能模拟的颜色空间。  例如，若要触发 `color-gamut: p3` 媒体查询，请从下拉列表中选择“**色域：p3**”。
 
 若要模拟 CSS 色域媒体功能，请完成以下操作。
 
@@ -251,8 +248,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 ### <a name="new-sameparty-column-in-the-cookies-pane"></a>“Cookie”窗格中新的“SameParty”列
 
-“**应用程序**”工具中的“**Cookie**”窗格现在显示每个 Cookie 的 `SameParty` 属性。  
-            `SameParty` 属性是一个新的布尔属性，用于指示在对相同[第一方集][GithubPrivacycgFirstPartySets]的起源的请求中是否包含 cookie。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1161427][CR1161427]。
+“**应用程序**”工具中的“**Cookie**”窗格现在显示每个 Cookie 的 `SameParty` 属性。  `SameParty` 属性是一个新的布尔属性，用于指示在对相同[第一方集][GithubPrivacycgFirstPartySets]的起源的请求中是否包含 cookie。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1161427][CR1161427]。
 
 :::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="“Cookie”窗格中的“SameParty”列" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
    “**Cookie**”窗格中的“**SameParty**”列
@@ -295,189 +291,67 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
+[DevtoolsAccessibilityTab]: ../../../accessibility/accessibility-tab.md "使用“辅助功能”选项卡选项测试辅助功能 | Microsoft Docs"
+[DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"
+[DevtoolsConsoleReferenceFilterByLogLevel]: ../../../console/reference.md#filter-by-log-level "按日志级别筛选 - 控制台参考 | Microsoft Docs"
+[DevtoolsConsoleReferenceFilterMessages]: ../../../console/reference.md#filter-messages "筛选消息 - 控制台参考 | Microsoft Docs"
+[DevtoolsConsoleReferenceOpenConsoleSidebar]: ../../../console/reference.md#open-the-console-sidebar "打开控制台边栏 - 控制台参考 | Microsoft Docs"
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "在 DevTools 中自定义键盘快捷方式 | Microsoft Docs"
+[DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools]: ../../../experimental-features/index.md#enable--button-tab-menus-to-open-more-tools "启用“+”按钮选项卡菜单以打开更多工具 - 试验功能 | Microsoft Docs"
+[DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../../../experimental-features/index.md#turning-on-experimental-features "打开试验功能 - 试验功能 | Microsoft Docs"
+[DevtoolsNetworkReferenceAddRemoveColumns]: ../../../network/reference.md#add-or-remove-columns "添加或删除列 - 网络分析参考 | Microsoft Docs"
+[DevtoolsNetworkReferenceDisplayInitiatorsDependencies]: ../../../network/reference.md#display-initiators-and-dependencies "显示发起程序和依赖项 - 网络分析参考 | Microsoft Docs"
 
+[ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index.md "Windows 上的渐进式 Web 应用概述 | Microsoft Docs"
 
-            [DevtoolsAccessibilityTab]: ../../../accessibility/accessibility-tab.md
-             "使用“辅助功能”选项卡选项测试辅助功能 | Microsoft Docs"
-          
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge 预览频道"
 
-            [DevtoolsCommandMenuIndex]: ../../../command-menu/index.md
-             "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"
-          
+[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "手动更新扩展 - Extension Marketplace | Visual Studio Code"
 
-            [DevtoolsConsoleReferenceFilterByLogLevel]: ../../../console/reference.md#filter-by-log-level
-             "按日志级别筛选 - 控制台参考 | Microsoft Docs"
-          
+[VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for Visual Studio Code | Visual Studio Marketplace"
 
-            [DevtoolsConsoleReferenceFilterMessages]: ../../../console/reference.md#filter-messages
-             "筛选消息 - 控制台参考 | Microsoft Docs"
-          
+[ChromeDeveloperBlogImprovedPwaOfflineDetection]: https://developer.chrome.com/blog/improved-pwa-offline-detection "改进渐进式 Web 应用脱机支持检测 | Chrome 开发人员"
 
-            [DevtoolsConsoleReferenceOpenConsoleSidebar]: ../../../console/reference.md#open-the-console-sidebar
-             "打开控制台边栏 - 控制台参考 | Microsoft Docs"
-          
+[ChromestatusFeature5354410980933632]: https://www.chromestatus.com/feature/5354410980933632 "色域媒体功能 | Chrome 平台状态"
 
-            [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings
-             "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"
-          
+[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium 漏洞"
+[CR174309]: https://crbug.com/174309 "问题 174309：DevTools：允许自定义键盘快捷方式/键绑定 | Chromium 漏洞"
+[CR887173]: https://crbug.com/887173 "问题 887173：DevTools：完整的辅助功能树检查 | Chromium 漏洞"
+[CR965802]: https://crbug.com/965802 "问题 965802：实现更准确的服务工作进程脱机功能检测 | Chromium 漏洞"
+[CR1073887]: https://crbug.com/1073887 "问题 1073887：DevTools：@media (color-gamut: ...) 颜色空间模拟 | Chromium 漏洞"
+[CR1128885]: https://crbug.com/1128885 "问题 1128885：DevTools 对 CORS-RFC1918 的支持 | Chromium 漏洞"
+[CR1146450]: https://crbug.com/1146450 "问题 1146450：[Android] 实施底页安装 | Chromium 漏洞"
+[CR1158276]: https://crbug.com/1158276 "问题 1158276：在 DevTools 的“网络”部分中无法使用箭头键展开/收起“请求发起程序链”窗格 | Chromium 漏洞"
+[CR1158827]: https://crbug.com/1158827 "问题 1158827：[权限策略] 实现对权限策略的 devtool 支持 | Chromium 漏洞"
+[CR1160637]: https://crbug.com/1160637 "问题 1160637：在“开发人员工具”窗口的“网络”部分发现“请求发起程序链”上的焦点不完整 | Chromium 漏洞"
+[CR1161427]: https://crbug.com/1161427 "问题 1161427：&#9730; 在 DevTools 中支持 SameParty Cookie 属性调试 | Chromium 漏洞"
+[CR1166710]: https://crbug.com/1166710 "问题 1166710：默认情况下打开弹性框工具试验 | Chromium 漏洞"
+[CR1169689]: https://crbug.com/1169689 "问题 1169689：PWA 安装底页不应具有类别 | Chromium 漏洞"
+[CR1175699]: https://crbug.com/1175699 "问题 1175699：弹性框编辑器 | Chromium 漏洞"
+[CR1177685]: https://crbug.com/1177685 "问题 1177685：删除非标准 fn.displayName 支持 | Chromium 漏洞"
+[CR1178530]: https://crbug.com/1178530 "问题 1178530：在打印字符串时，控制台不会转义双引号 | Chromium 漏洞"
 
-            [DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md
-             "在 DevTools 中自定义键盘快捷方式 | Microsoft Docs"
-          
+[CsswgDraftsMediaqueries4ColorGamut]: https://drafts.csswg.org/mediaqueries-4#color-gamut "颜色显示质量：“色域”功能 | CSS 工作组编辑器草稿"
 
-            [DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools]: ../../../experimental-features/index.md#enable--button-tab-menus-to-open-more-tools
-             "启用“+”按钮选项卡菜单以打开更多工具 - 试验功能 | Microsoft Docs"
-          
+[GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md "DevTools：焦点模式 UI - MicrosoftEdge/MSEdgeExplainers | GitHub"
 
-            [DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../../../experimental-features/index.md#turning-on-experimental-features
-             "打开试验功能 - 试验功能 | Microsoft Docs"
-          
+[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
 
-            [DevtoolsNetworkReferenceAddRemoveColumns]: ../../../network/reference.md#add-or-remove-columns
-             "添加或删除列 - 网络分析参考 | Microsoft Docs"
-          
+[GithubPrivacycgFirstPartySets]: https://github.com/privacycg/first-party-sets "第一方集 | GitHub"
 
-            [DevtoolsNetworkReferenceDisplayInitiatorsDependencies]: ../../../network/reference.md#display-initiators-and-dependencies
-             "显示发起程序和依赖项 - 网络分析参考 | Microsoft Docs"
-          
+[GithubW3cWebappsecPermissionsPolicyBlobMainPermissionsPolicyExplainer]: https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md "权限策略解释器 | GitHub"
 
-
-            [ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index.md
-             "Windows 上的渐进式 Web 应用概述 | Microsoft Docs"
-          
-
-
-            [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download
-             "Microsoft Edge 预览频道"
-          
-
-
-            [VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually
-             "手动更新扩展 - Extension Marketplace | Visual Studio Code"
-          
-
-
-            [VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools
-             "Microsoft Edge Tools for Visual Studio Code | Visual Studio Marketplace"
-          
-
-
-            [ChromeDeveloperBlogImprovedPwaOfflineDetection]: https://developer.chrome.com/blog/improved-pwa-offline-detection
-             "改进渐进式 Web 应用脱机支持检测 | Chrome 开发人员"
-          
-
-
-            [ChromestatusFeature5354410980933632]: https://www.chromestatus.com/feature/5354410980933632
-             "色域媒体功能 | Chrome 平台状态"
-          
-
-
-            [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list
-             "Chromium 漏洞"
-          
-
-            [CR174309]: https://crbug.com/174309
-             "问题 174309：DevTools：允许自定义键盘快捷方式/键绑定 | Chromium 漏洞"
-          
-
-            [CR887173]: https://crbug.com/887173
-             "问题 887173：DevTools：完整的辅助功能树检查 | Chromium 漏洞"
-          
-
-            [CR965802]: https://crbug.com/965802
-             "问题 965802：实现更准确的服务工作进程脱机功能检测 | Chromium 漏洞"
-          
-
-            [CR1073887]: https://crbug.com/1073887
-             "问题 1073887：DevTools：@media (color-gamut: ...) 颜色空间模拟 | Chromium 漏洞"
-          
-
-            [CR1128885]: https://crbug.com/1128885
-             "问题 1128885：DevTools 对 CORS-RFC1918 的支持 | Chromium 漏洞"
-          
-
-            [CR1146450]: https://crbug.com/1146450
-             "问题 1146450：[Android] 实施底页安装 | Chromium 漏洞"
-          
-
-            [CR1158276]: https://crbug.com/1158276
-             "问题 1158276：在 DevTools 的“网络”部分中无法使用箭头键展开/收起“请求发起程序链”窗格 | Chromium 漏洞"
-          
-
-            [CR1158827]: https://crbug.com/1158827
-             "问题 1158827：[权限策略] 实现对权限策略的 devtool 支持 | Chromium 漏洞"
-          
-
-            [CR1160637]: https://crbug.com/1160637
-             "问题 1160637：在“开发人员工具”窗口的“网络”部分发现“请求发起程序链”上的焦点不完整 | Chromium 漏洞"
-          
-
-            [CR1161427]: https://crbug.com/1161427
-             "问题 1161427：&#9730; 在 DevTools 中支持 SameParty Cookie 属性调试 | Chromium 漏洞"
-          
-
-            [CR1166710]: https://crbug.com/1166710
-             "问题 1166710：默认情况下打开弹性框工具试验 | Chromium 漏洞"
-          
-
-            [CR1169689]: https://crbug.com/1169689
-             "问题 1169689：PWA 安装底页不应具有类别 | Chromium 漏洞"
-          
-
-            [CR1175699]: https://crbug.com/1175699
-             "问题 1175699：弹性框编辑器 | Chromium 漏洞"
-          
-
-            [CR1177685]: https://crbug.com/1177685
-             "问题 1177685：删除非标准 fn.displayName 支持 | Chromium 漏洞"
-          
-
-            [CR1178530]: https://crbug.com/1178530
-             "问题 1178530：在打印字符串时，控制台不会转义双引号 | Chromium 漏洞"
-          
-
-
-            [CsswgDraftsMediaqueries4ColorGamut]: https://drafts.csswg.org/mediaqueries-4#color-gamut
-             "颜色显示质量：“色域”功能 | CSS 工作组编辑器草稿"
-          
-
-
-            [GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md
-             "DevTools：焦点模式 UI - MicrosoftEdge/MSEdgeExplainers | GitHub"
-          
-
-
-            [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools
-             "microsoft/vscode-edge-devtools | GitHub"
-          
-
-
-            [GithubPrivacycgFirstPartySets]: https://github.com/privacycg/first-party-sets
-             "第一方集 | GitHub"
-          
-
-
-            [GithubW3cWebappsecPermissionsPolicyBlobMainPermissionsPolicyExplainer]: https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md
-             "权限策略解释器 | GitHub"
-          
-
-
-            [MdnJavascriptReferenceGlobalObjectsFunctionName]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/name
-             "Function.name | MDN"
-          
+[MdnJavascriptReferenceGlobalObjectsFunctionName]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/name "Function.name | MDN"
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-90)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。
 
-
-            [
-              ![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
+[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png

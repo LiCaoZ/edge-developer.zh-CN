@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 56b53726590ee609112bb614f45fdedc13832950
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 97530fed874dfd915e3081c935509a6ae97b4321
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035073"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082587"
 ---
 # <a name="emulate-vision-deficiencies"></a>模仿视觉缺陷
 
@@ -92,7 +92,7 @@ ms.locfileid: "12035073"
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-* [验证页面是否可借助模糊视图](test-blurred-vision.md)
+*  [验证页面是否可借助模糊视图](test-blurred-vision.md)
 
 
 <!-- ====================================================================== -->

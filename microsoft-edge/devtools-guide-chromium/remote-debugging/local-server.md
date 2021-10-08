@@ -7,12 +7,12 @@ ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 5e5e525cc518bebdc78ff634d639c9a1471c8909
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 2c8b17bd6dae06d496f77d27fc33315daa6b9720
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036844"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083364"
 ---
 <!-- Copyright Kayce Basques
 
@@ -44,7 +44,7 @@ ms.locfileid: "12036844"
 
 启用端口转发：
 
-1.  在 [开发计算机和][RemoteDebuggingGettingStarted] Android 设备之间设置远程调试。  完成后，Android 设备应显示在"检查设备"对话框和"已连接状态"指示器**** 的左侧菜单中。 ****
+1.  在 [开发计算机和][RemoteDebuggingGettingStarted] Android 设备之间设置远程调试。  完成后，Android 设备应显示在"检查设备"对话框和"已连接状态"指示器******的左侧菜单中**。
 1.  在**DevTools 中的**"检查设备"对话框中，启用 **"端口转发"。**
 1.  选择 **"添加规则"。**
 
@@ -62,7 +62,7 @@ ms.locfileid: "12036844"
    端口转发状态
 :::image-end:::
 
-若要查看内容，请打开Microsoft Edge Android 设备上的端口，然后转到在"设备端口"字段中 `localhost` **指定的端口**。  例如，如果在 字段中输入 `5000` ，请访问 `localhost:5000` 。
+若要查看内容，请Microsoft Edge Android 设备上的端口，然后转到在"设备端口"字段中 `localhost` **指定的端口**。  例如，如果在 字段中输入 `5000` ，请访问 `localhost:5000` 。
 
 ## <a name="map-to-custom-local-domains"></a>映射到自定义本地域
 
@@ -87,7 +87,7 @@ ms.locfileid: "12036844"
 
 接下来，你需要将 Android 设备配置为与代理服务器通信。
 
-1.  在 Android 设备上，导航到**设置**  >  **Wlan"。**
+1.  在 Android 设备上，导航到**设置**  >  **WLAN。**
 1.  长按当前连接到的网络的名称。
 
     > [!NOTE]
@@ -109,20 +109,17 @@ ms.locfileid: "12036844"
 > [!TIP]
 > 若要恢复正常浏览，请记得在断开与开发计算机连接后在 Android 设备上还原代理设置。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [RemoteDebuggingGettingStarted]: ./index.md "Android 设备远程调试入门 | Microsoft Docs"
-
+<!-- external links -->
 [CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Debugg Web Debugging Proxy"
-
 [SquidCacheWiki]: https://wiki.squid-cache.org "Squid Wiki 代理 Wiki"
-
 [TelerikFiddler]: https://www.telerik.com/fiddler "Fiddler - 免费 Web 调试代理"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > [此处](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server)可以找到原始页面，由 [Kayce Basques][KayceBasques] \（技术写作人员，Chrome DevTools \& Lighthouse\）和 [Meggin Kearney][MegginKearney] \（技术写作人员\）编写。

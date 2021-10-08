@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 862c2ace0551a3ab01a5db1b41bddce1695fdf78
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+ms.openlocfilehash: bd9f06b91e1f9cbb6c8bf46890740ef0dfec0738
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12033760"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083371"
 ---
 <!-- Copyright Kayce Basques
 
@@ -95,15 +95,12 @@ ms.locfileid: "12033760"
    主源详细信息
 :::image-end:::
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
 [DevToolsOpen]: ../open/index.md "打开 Microsoft Edge 开发人员工具 | Microsoft Docs"
-
+<!-- external links -->
 [LetsEncrypt]: https://letsencrypt.org "让我们进行加密 - 免费 SSL/TLS 证书"
 
 [Webhint]: https://webhint.io "webhint"
@@ -111,6 +108,8 @@ ms.locfileid: "12033760"
 
 <!--[mixed]: /web/fundamentals/security/prevent-mixed-content/what-is-mixed-content ""  -->
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/security/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。

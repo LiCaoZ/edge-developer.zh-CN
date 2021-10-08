@@ -1,5 +1,5 @@
 ---
-description: 将键盘快捷方式与Visual Studio Code、模拟 Surface Duo 和 Samsung Foldy Fold、CSS 网格覆盖改进等匹配。
+description: 将键盘快捷方式与Visual Studio Code、模拟 Surface Duo 和 Samsung Fold、CSS 网格覆盖改进等匹配。
 title: 'DevTools (Microsoft Edge 86) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 2420a23652f600a5f5a574598995502b30501ad6
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 4c9f24f7728d5ff6f2bc9286fd430be92b0424b0
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036956"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083126"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -43,7 +43,7 @@ ms.locfileid: "12036956"
 
 若要激活此功能，请导航到在 [DevTools 中自定义键盘快捷方式][DevtoolsCustomizeShortcuts]。
 
-例如，用于暂停或继续运行脚本的键盘快捷方式在 Visual Studio Code[为][VisualStudioCodeShortcutsKeyboardWindows] `F5` 。  使用**DevTools (** Default) 预设，DevTools 中的同一快捷方式是 ，但在选择 Visual Studio Code 预设时，该快捷方式现在也是 `F8` **** `F5` 。
+例如，用于暂停或继续运行脚本的键盘快捷方式在 Visual Studio Code[为][VisualStudioCodeShortcutsKeyboardWindows] `F5` 。  使用**DevTools (Default) **预设，DevTools 中的同一快捷方式是 ，但在选择 Visual Studio Code 预设时，该快捷方式现在也是 `F8` **** `F5` 。
 
 Chromium问题[#174309][CR174309]
 
@@ -86,7 +86,7 @@ Chromium问题[：#1054281][CR1054281]
 
 若要启用此实验功能，请导航到[打开实验功能][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]，然后选择"重启) 后的元素"中的"启用新的 **CSS 网格 **调试功能 (配置选项"旁边的复选框。
 
-有关此功能详细信息，请导航到"检查[开发人员][DevtoolsCssGrid]工具Microsoft Edge CSS 网格。
+有关此功能详细信息，请导航到"检查开发人员工具Microsoft Edge [CSS 网格"][DevtoolsCssGrid]。
 
 Chromium问题[：#1047356][CR1047356]
 
@@ -100,8 +100,8 @@ Chromium问题[：#1047356][CR1047356]
          `table` Microsoft Edge 85 或更早版本中的控制台 API 输出 :::image-end:::
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="表 85 或更早版本Microsoft Edge控制台 API 输出粘贴到 Visual Studio Code" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
-         `table` 从 85 或更早版本Microsoft Edge的控制台 API 输出粘贴到Visual Studio Code :::image-end:::
+      :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="表 85 或更早版本Microsoft Edge的控制台 API 输出粘贴到 Visual Studio Code" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
+         `table` 从 85 或Microsoft Edge粘贴到主机中的控制台 API Visual Studio Code :::image-end:::
    :::column-end:::
 :::row-end:::
 
@@ -114,7 +114,7 @@ Chromium问题[：#1047356][CR1047356]
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="表 86 Microsoft Edge更高版本的控制台 API 输出粘贴到 Visual Studio Code" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
-         `table` 从 86 Microsoft Edge更高版本粘贴到主机中的控制台 API Visual Studio Code :::image-end:::
+         `table` 粘贴到 Microsoft Edge 86 或更高版本中的控制台 API Visual Studio Code :::image-end:::
    :::column-end:::
 :::row-end:::
 
@@ -299,7 +299,7 @@ Chromium问题[：#772558][CR772558]
 
 ### <a name="deprecation-of-other-origins-listing-in-the-service-workers-pane"></a>在"服务工作者"窗格中弃用其他源列表
 
-DevTools 现在提供来自服务工作者**** 窗格 \ (**应用程序**工具 >**服务**工作者窗格\) 的链接，以查看来自其他来源的服务工作者的完整列表。  若要在不打开 DevTools 的情况下访问列表，请导航到 `edge://service-worker-internals/?devtools` 。
+DevTools 现在提供来自服务工作者**** 窗格 \ (**应用程序**工具 >**服务**工作者窗格\) 的链接，以查看来自其他源的服务工作者的完整列表。  若要在不打开 DevTools 的情况下访问列表，请导航到 `edge://service-worker-internals/?devtools` 。
 
 以前，DevTools 显示一个嵌套在****"应用程序工具""服务>**窗格下**的列表。
 
@@ -356,7 +356,7 @@ Chromium问题：[#1107766][CR1107766]
    安全和隔离信息
 :::image-end:::
 
-将来，Microsoft Edge开发人员工具团队和 Chrome DevTools 团队计划向框架详细信息添加更多安全信息。
+将来，Microsoft Edge团队和 Chrome DevTools 团队计划向框架详细信息添加更多安全信息。
 
 Chromium问题[：#1051466][CR1051466]
 
@@ -448,12 +448,9 @@ Chromium问题[：#1067184][CR1067184]
 
 如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels] 作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel "&quot;元素&quot;面板中的&quot;属性&quot;窗格弃用 - DevTools (Microsoft Edge 84) |Microsoft Docs"
 [DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "CSS 网格调试功能 - DevTools (Microsoft Edge 85) |Microsoft Docs"
 
@@ -461,10 +458,10 @@ Chromium问题[：#1067184][CR1067184]
 [DevtoolsCoverageIndex]: ../../../coverage/index.md "使用 DevTools Microsoft Edge中的&quot;覆盖&quot;选项卡查找未使用的 JavaScript 和 CSS |Microsoft Docs"
 [DevtoolsCssGrid]: ../../../css/grid.md "检查 Microsoft Edge DevTools 中的 CSS 网格 | Microsoft Docs"
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "设置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"
-[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "在开发人员工具中自定义键盘快捷方式 | Microsoft Docs"
-[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "在 Microsoft Edge 开发人员工具中模拟移动设备 | Microsoft Docs"
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "在 DevTools 中自定义键盘快捷方式 | Microsoft Docs"
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"
 [DevtoolsDeviceModeDualScreenAndFoldables]: ../../../device-mode/dual-screen-and-foldables.md "在 Microsoft Edge DevTools 中模拟双屏幕可折叠设备 | Microsoft Docs"
-[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool "使用呈现工具分析呈现性能 - 性能分析|Microsoft Docs"
+[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool "使用呈现工具分析呈现性能 - 性能分析参考|Microsoft Docs"
 <!--  [DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features/index.md#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"  -->
 [DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]： ../../../experimental-features/index.md#emulation-support-dual-screen-mode "Emulation： Support dual screen mode - Experimental features |Microsoft Docs&quot; [DevtoolsExperimentalFeaturesSourceOrderViewer]： ../../../experimental-features/index.md#source-order-viewer &quot;Source Order Viewer - Experimental features |Microsoft Docs"
 <!--  [DevtoolsExperimentalFeaturesTestOnFoldableDualScreenDevices]: ../../../experimental-features/index.md#test-on-foldable-and-dual-screen-devices "Test on foldable and dual-screen devices - Experimental features | Microsoft Docs"  -->
@@ -493,7 +490,7 @@ Chromium问题[：#1067184][CR1067184]
 [CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Table 工具|Chromium Bug"
 [CR1051466]: https://crbug.com/1051466 "支持 DevTools | 中的 COOP/COEP 调试Chromium Bug"
 [CR1054281]: https://crbug.com/1054281 "功能请求：DevTools 应模拟可折叠和双屏幕设备|Chromium Bug"
-[CR1067184]: https://crbug.com/1067184 "功能请求：清除 Network & 元素上的筛选器按钮 -> 样式筛选器|Chromium Bug"
+[CR1067184]: https://crbug.com/1067184 "功能请求：清除 Network & Elements -> Style Filter 输入上的筛选器|Chromium Bug"
 [CR1068116]: https://crbug.com/1068116 "☂发货问题面板|Chromium Bug"
 [CR1080569]: https://crbug.com/1080569 "视点不支持逻辑分配运算符|Chromium Bug"
 [CR1080589]: https://crbug.com/1080589 "按第三方/第一方分类|Chromium Bug"
@@ -502,13 +499,13 @@ Chromium问题[：#1067184][CR1067184]
 [CR1093227]: https://crbug.com/1093227 "DevTools：建议最接近的辅助颜色|Chromium Bug"
 [CR1093247]: https://crbug.com/1093247 "在应用程序面板应用程序中显示有关框架|Chromium Bug"
 [CR1094406]: https://crbug.com/1094406 "开发人员需要 AT 的源订单查看器 https://webwewant.fyi/wants/64/"
-[CR1096068]: https://crbug.com/1096068 "DevTools：支持模拟首选的减少数据媒体功能|Chromium Bug"
+[CR1096068]: https://crbug.com/1096068 "DevTools：支持模拟首选的减少数据媒体|Chromium Bug"
 [CR1096481]: https://crbug.com/1096481 "问题横幅放置|Chromium Bug"
 [CR1100253]: https://crbug.com/1100253 "在元素上下文菜单菜单中添加屏幕截图节点|Chromium Bug"
-[CR1103316]: https://crbug.com/1103316 "元素搜索不会解析第一 (搜索结果上的突出显示文本) 等|Chromium Bug"
+[CR1103316]: https://crbug.com/1103316 "元素搜索不会解析第一 (搜索结果上突出显示) 文本等|Chromium Bug"
 [CR1103854]: https://crbug.com/1103854 "开发人员工具工具中的模糊处理 X-Client-Data |Chromium Bug"
 <!--  [CR1105205]: https://crbug.com/1105205 "Issue 1105205 | Chromium bugs"  -->
-[CR1106221]：" &quot;将导入的字体添加到样式面板中的字体系列 https://crbug.com/1106221 自动完成|Chromium Bug&quot;[CR1107766]：&quot;显示有关帧树树中由 https://crbug.com/1107766 'window.open () '生成的帧|Chromium bug&quot; [CR1115011]： &quot;从控制台复制表时，不会保留表 https://crbug.com/1115011 |Chromium Bug&quot; [CR1116085]： https://crbug.com/1116085 &quot;Please bring back the DevTools Properties inspector |Chromium Bug"
+[CR1106221]：" &quot;将导入的字体添加到样式面板中的字体系列 https://crbug.com/1106221 自动完成|Chromium Bug&quot; [CR1107766]： &quot;显示有关帧树视图的 https://crbug.com/1107766 'window.open () '生成的帧|Chromium bug&quot; [CR1115011]： &quot;从控制台复制表时，不会保留表 https://crbug.com/1115011 |Chromium Bug&quot; [CR1116085]： https://crbug.com/1116085 &quot;Please bring back the DevTools Properties inspector |Chromium Bug"
 
 [CsswgDraftsMediaqueries5DescdefMediaPrefersReducedData]: https://drafts.csswg.org/mediaqueries-5#descdef-media-prefers-reduced-data "prefers-reduced-data - 第 5 级媒体|W3C CSS 工作组编辑器草稿"
 

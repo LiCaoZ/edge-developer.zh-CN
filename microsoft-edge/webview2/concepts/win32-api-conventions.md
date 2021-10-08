@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: c27eb35eda3457979557b81e7986e830c998d892
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 2f5b3a4a849b077d33d7c8124524701a56cc2d13
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036130"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083539"
 ---
 # <a name="win32-c-webview2-api-conventions"></a>Win32 C++ WebView2 API 约定
 
@@ -44,7 +44,7 @@ HRESULT Invoke(HRESULT result)
 
 或者，对于 ，您提供一个实例，该实例具有一个方法，用于提供 `ICoreWebView2::ExecuteScript` `Invoke` 请求的成功或失败 `ExecuteScript` 代码。  另外提供第二个参数，该参数是运行脚本的结果的 JSON。
 
-可以手动实现委托接口，也可以将 Callback 函数 (`CompleteHandler` [WRL) ][CppCxWrlCallbackFunction]。  WRL [代码 (WRL) ][CppCxWrlCallbackFunction] 用于以下 WebView2 代码片段。
+可以手动实现委托接口，也可以将 Callback 函数 (`CompleteHandler` [WRL) ][CppCxWrlCallbackFunction]。  以下 [WebView2 (代码) 使用 WRL ][CppCxWrlCallbackFunction] 代码段中的 Callback 函数。
 
 ```cpp
 void ScriptComponent::InjectScript()
@@ -82,7 +82,7 @@ WebView2 Win32 C++ API 中的事件使用 和 方法对订阅和 `add_EventName`
 与异步方法完成的处理程序委托接口类似，请使用以下操作之一来设置它。
 
 *   直接实现。
-*   将 [Callback 函数 (WebView2) ][CppCxWrlCallbackFunction] 代码段中使用的 WRL 对象函数。
+*   将 [Callback 函数 (WebView2 代码) 中使用的 WRL ][CppCxWrlCallbackFunction] 对象函数。
 
 <!-- todo:  what is async method completed handler delegate interface?  Is there a shorter name for it?  -->
 
@@ -133,15 +133,15 @@ CHECK_FAILURE(m_webView->add_NavigationCompleted(
 Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 ```
 
+
+<!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*   若要开始使用 WebView2 Win32 C/C++，请导航到 [WebView2][Webview2IndexGetStarted] 指南。
-*   有关 WebView2 API 的更多详细信息，请导航到 [API 参考][DotnetApiMicrosoftWebWebview2WpfWebview2]。
+*  [WebView2 入门][Webview2IndexGetStarted] - WebView2 Win32 C/C++。
+*  [WebView2 API 参考][DotnetApiMicrosoftWebWebview2WpfWebview2]
 
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>联系 Microsoft Edge WebView 团队
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 [Webview2ReferenceWin32Icorewebview2CapturePreview]: /microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview "CapturePreview - 接口 ICoreWebView2 |Microsoft Docs"
 [CppCxWrlCallbackFunction]: /cpp/cppcx/wrl/callback-function-wrl "WRL (回调) |Microsoft Docs"

@@ -7,12 +7,12 @@ ms.date: 06/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 074f08eeae4e86072eff7b939e4b7a4e84016957
-ms.sourcegitcommit: 1c5bc4695c976805fb5acbdac3350414bf79582d
+ms.openlocfilehash: 70fd3c92fca2379bf1438727b2270b5ba06b5f2e
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "11976619"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083252"
 ---
 <!-- Copyright Sam Dutton
 
@@ -50,7 +50,7 @@ ms.locfileid: "11976619"
 
 1.  导航到包含要修复的问题的网页。  例如，在一 [个新选项卡或窗口中][A11ytestingPagewitherrors] 打开辅助功能测试演示页。
 
-1.  打开 DevTools。  几秒钟后，"问题"计数器 **\ (** ![ Issues 计数器 ](../media/issues-counter-icon.msft.png) \) 显示在 DevTools 的右上角。
+1.  打开 DevTools。  几秒钟后，"问题"计数器 **\ (** ![ Issues 计数器 \) 显示在 ](../media/issues-counter-icon.msft.png) DevTools 的右上角。
 
 1.  刷新页面，因为根据网络请求报告某些问题。  请注意问题计数器中 **更新的计数**。
 
@@ -63,7 +63,7 @@ ms.locfileid: "11976619"
 ### <a name="other-ways-to-open-the-issues-tool"></a>打开问题工具的其他方法
 
 有几种其他方法可以打开 **问题** 工具：
-*  在主**面板或** () 选择"更多工具"菜单 **+** ，然后选择****"问题 **"。**
+*  在主**面板或**" () 选择"更多工具"菜单，然后选择 **+** "问题 **"。** ****
 *  选择 **"自定义和控制 DevTools**  >  **更多工具问题**  >  **"。**
 *  在"元素"工具的 DOM **树中，** 选择并单击带 `Shift` 波浪下划线的元素名称。  或者，打开带波浪线下划线的元素上的上下文菜单，然后选择查看 **问题**。
 
@@ -86,7 +86,7 @@ ms.locfileid: "11976619"
 
 1.  打开新 [窗口或][A11ytestingPagewitherrors] 选项卡中的演示页面，然后打开 DevTools。
 
-1.  通过选择 **问题** 计数器 **\ (** ![ 问题计数器 \) 打开 ](../media/issues-counter-icon.msft.png) 问题工具。
+1.  通过选择 **问题** 计数器 **\ (** ![ 问题计数器 ](../media/issues-counter-icon.msft.png) \) 打开问题工具。
 
 1.  选择问题以展开问题。
 
@@ -122,7 +122,7 @@ ms.locfileid: "11976619"
 
 ## <a name="open-issues-from-the-dom-tree"></a>打开 DOM 树中的问题
 
-如果元素具有关联问题，则 **"** 元素"工具中的 DOM 树在元素名称下显示波浪下划线。  您可以打开上下文菜单 (右键单击) ，然后选择查看问题，或者选择并左键单击带波浪下划线**** `Shift` 的元素。
+如果元素具有关联问题，则 **"** 元素"工具中的 DOM 树在元素名称下显示波浪下划线。  可以打开上下文菜单 (右键单击) ，然后选择查看问题，或者选择并左键单击带波浪**** 下划线 `Shift` 的元素。
 
 若要对 DOM 树中带波浪下划线的元素显示问题，请执行以下步骤。
 
@@ -145,15 +145,13 @@ ms.locfileid: "11976619"
     :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-* [自动测试网页中的辅助功能问题](../accessibility/test-issues-tool.md)
+*  [自动测试网页中的辅助功能问题](../accessibility/test-issues-tool.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发人员工具团队
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 [DevtoolsOpenIndex]: ../open/index.md "打开 Microsoft Edge 开发人员工具 | Microsoft Docs"
 <!-- external links -->

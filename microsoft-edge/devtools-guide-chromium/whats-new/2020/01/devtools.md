@@ -1,5 +1,5 @@
 ---
-description: 3D 视图Visual Studio与 Microsoft Edge 集成等。
+description: 3D 视图Visual Studio与Microsoft Edge集成等。
 title: 'DevTools (Microsoft Edge 81) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 374c10494e107ce7ac3ea0bfb31e2e014ac89a20
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 16f50e2984f5867beaf0b4206c4ba47601a228cf
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036032"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083119"
 ---
 <!-- Copyright Kayce Basques
 
@@ -43,7 +43,7 @@ DevTools 团队已对 Chromium 进行 170 次更改，以解决 DevTools 中的�
 
 想要了解如何使网页可供所有用户访问？  下载[辅助功能Insights][AccessibilityInsights]和[Webhint][WebhintBrowserExtension]扩展，Microsoft Edge开始操作。
 
-如果使用屏幕阅读器或键盘在 DevTools 中导航，请通过向我们发推文或[][PostTweetEdgeDevTools]选择"发送反馈"图标向我们发送[反馈](#getting-in-touch-with-microsoft-edge-devtools-team)！
+如果你使用屏幕阅读器或键盘在 DevTools 中导航，请通过向我们发推文[][PostTweetEdgeDevTools]或选择[发送反馈][联系人]图标向我们发送反馈！
 
 Chromium 问题 [#963183][CR963183]
 
@@ -104,7 +104,7 @@ Chromium 问题 [#963183][CR963183]
 
 DevTools 会自动匹配你在 中用于Microsoft Edge的语言 `edge://settings/languages` 。
 
-如果你希望Microsoft Edge一种语言，并且你的 DevTools 保持为英语，请在 DevTools 中选择以打开设置 `F1` 并禁用**匹配浏览器语言**。 [][DevtoolsCustomizeIndexSettings]
+如果你希望Microsoft Edge一种语言，并且你的 DevTools 保持为英语，请在 DevTools 中选择以打开 设置 `F1` 并[][DevtoolsCustomizeIndexSettings]禁用**匹配浏览器语言**。
 
 :::image type="complex" source="../../images/2020/01/localized-devtools.msft.png" alt-text="德语的 DevTools" lightbox="../../images/2020/01/localized-devtools.msft.png":::
    德语的 DevTools
@@ -112,13 +112,13 @@ DevTools 会自动匹配你在 中用于Microsoft Edge的语言 `edge://settings
 
 **控制台** 消息未本地化。  只有 DevTools UI 中使用的字符串以你用于开发工具Microsoft Edge。
 
-如果你想要以与可用版本不同的语言使用 DevTools，请通过我们的推文或选择[][PostTweetEdgeDevTools]"发送反馈["](#getting-in-touch-with-microsoft-edge-devtools-team)图标。
+如果你想要以与可用版本不同的语言使用 DevTools，请通过我们的推文或选择[][PostTweetEdgeDevTools]"[发送反馈][联系人]"图标。
 
 Chromium问题[#941561][CR941561]
 
 ### <a name="webhint-microsoft-edge-extension"></a>webhint Microsoft Edge扩展
 
-Webhint Microsoft Edge扩展允许你轻松扫描网页，并获取有关辅助功能、浏览器兼容性、安全性、性能等在 DevTools 中的反馈。  有关详细信息，请参阅 [https://webhint.io][Webhint] 。
+Webhint Microsoft Edge扩展允许你在 DevTools 中轻松扫描网页并获取有关辅助功能、浏览器兼容性、安全性、性能等的反馈。  有关详细信息，请参阅 [https://webhint.io][Webhint] 。
 
 :::image type="complex" source="../../images/2020/01/webhint-browser-extension.msft.png" alt-text="安装 Webhint 浏览器扩展时 DevTools 中的 Hints 工具" lightbox="../../images/2020/01/webhint-browser-extension.msft.png":::
    安装 **Webhint** 浏览器扩展时 DevTools 中的 Hints 工具
@@ -136,17 +136,17 @@ Webhint Microsoft Edge扩展允许你轻松扫描网页，并获取有关辅助�
 
 若要访问 3D 视图，请选择 `Ctrl`  +  `Shift`  +  `P` ，键入**3D 视图，** 然后选择**显示 3D 视图**。
 
-该Microsoft Edge团队正在与 UI 上的 Chromium 团队合作，并将更多功能添加到 3D 视图，因此请[发送反馈。](#getting-in-touch-with-microsoft-edge-devtools-team)
+该Microsoft Edge团队正在与 UI 上的 Chromium 团队合作，并将更多功能添加到 3D 视图，因此请发送你的 [反馈][联系人]。
 
 Chromium问题[#987787][CR987787]
 
 ### <a name="visual-studio-code-extensions"></a>Visual Studio Code扩展
 
-DevTools 团队还发布了一些 Visual Studio Code，[][VisualStudioCode]让你可以直接从文本编辑器使用 DevTools 功能！ 请查看以下扩展：
+DevTools 团队还发布了一些适用于 Visual Studio Code[][VisualStudioCode]的扩展，让你可以直接从文本编辑器使用 DevTools 功能！ 请查看以下扩展：
 
 #### <a name="elements-for-microsoft-edge"></a>用于Microsoft Edge
 
-通过添加 Visual Studio Code [\Microsoft Edge\ (Chromium\) Visual Studio Code][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]元素工具。
+通过添加[\Microsoft Edge\ (Chromium\) ][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code 元素，在 Visual Studio Code 内使用 Elements 工具。
 
 :::image type="complex" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="元素工具Visual Studio Code元素扩展Microsoft Edge元素" lightbox="../../images/2020/01/elements-for-edge.msft.png":::
    元素**工具**Visual Studio Code元素扩展Microsoft Edge元素
@@ -166,9 +166,9 @@ DevTools 团队还发布了一些 Visual Studio Code，[][VisualStudioCode]让�
 
 #### <a name="webhint"></a>webhint
 
-[Webhint][VisualStudioMarketplaceWebhintExtension] Visual Studio Code `webhint` 在编写网页时用于改进网页。  此扩展将运行，并基于分析报告工作区文件的 `webhint` 诊断。
+[Webhint][VisualStudioMarketplaceWebhintExtension] Visual Studio Code在编写网页 `webhint` 时用于改进网页。  此扩展将运行，并基于分析报告工作区文件的 `webhint` 诊断。
 
-:::image type="complex" source="../../images/2020/01/webhint-vscode-extension.msft.png" alt-text="Webhint Visual Studio Code扩展，用于分析网站中的 .tsx Visual Studio Code" lightbox="../../images/2020/01/webhint-vscode-extension.msft.png":::
+:::image type="complex" source="../../images/2020/01/webhint-vscode-extension.msft.png" alt-text="Webhint Visual Studio Code扩展，用于分析 web 中的 .tsx Visual Studio Code" lightbox="../../images/2020/01/webhint-vscode-extension.msft.png":::
    Webhint Visual Studio Code分析 `.tsx` 文件中文件的扩展Visual Studio Code
 :::image-end:::
 
@@ -186,7 +186,7 @@ DevTools 团队还发布了一些 Visual Studio Code，[][VisualStudioCode]让�
 
 ### <a name="tracking-prevention-console-messages"></a>跟踪防护控制台消息
 
-跟踪防护是跟踪功能中Microsoft Edge一项功能，可保护你免受之前未访问过的网站的跟踪。  默认跟踪防护设置为平衡模式，可阻止第三方跟踪器和已知的恶意跟踪器，从而获得平衡隐私和 Web 兼容性的体验。  为了让你深入了解阻止某些跟踪程序时网页的兼容性，当跟踪器被阻止时，控制台中添加了警告消息。 ****
+跟踪防护是网站中Microsoft Edge一项功能，可保护你免受之前未访问过的网站的跟踪。  默认跟踪防护设置为平衡模式，可阻止第三方跟踪器和已知的恶意跟踪器，从而获得平衡隐私和 Web 兼容性的体验。  为了让你深入了解阻止某些跟踪程序时网页的兼容性，当跟踪器被阻止时，控制台中添加了警告消息。 ****
 
 :::image type="complex" source="../../images/2020/01/tracking-prevention.msft.png" alt-text="跟踪防护时控制台中的邮件阻止访问跟踪器的存储" lightbox="../../images/2020/01/tracking-prevention.msft.png":::
    跟踪防护 **时控制台** 中的邮件阻止访问跟踪器的存储
@@ -214,7 +214,7 @@ DevTools 团队还发布了一些 Visual Studio Code，[][VisualStudioCode]让�
 
 相关功能：
 
-*   打开[命令菜单][DevtoolsCommandMenuIndex]并运行命令，在启用"显示设备框架"菜单后，为包含 Moto G4 硬件 (的视口拍摄 `Capture screenshot`) 。 ****
+*   打开 [命令菜单][DevtoolsCommandMenuIndex] 并运行命令，在启用"显示设备框架"菜单后，为包含 `Capture screenshot` Moto G4 硬件 (**的视** 口拍摄) 。
 *   [限制网络和 CPU][DevtoolsDeviceModeIndexThrottleNetworkCpu] 以更精确地模拟移动用户的 Web 浏览条件。
 
 Chromium问题[#924693][CR924693]
@@ -242,7 +242,7 @@ Chromium问题[#1026879][CR1026879]
 
 #### <a name="edit-all-cookie-values"></a>编辑所有 Cookie 值
 
-Cookie 表中的所有单元格现在均可编辑 **，"大小** "列中的单元格除外，因为该列表示 Cookie 的网络大小（以字节为单位）。  有关每列的说明，请导航到"字段["。][DevtoolsStorageCookiesFields]
+Cookie 表中的所有单元格现在均可编辑 **，"大小** "列中的单元格除外，因为该列表示 Cookie 的网络大小（以字节为单位）。  有关每列的说明，请导航到"[字段"。][DevtoolsStorageCookiesFields]
 
 :::image type="complex" source="../../images/2020/01/editcookie.msft.png" alt-text="编辑 Cookie 值" lightbox="../../images/2020/01/editcookie.msft.png":::
    编辑 Cookie 值
@@ -252,8 +252,8 @@ Cookie 表中的所有单元格现在均可编辑 **，"大小** "列中的单�
 
 若要获取包含 Cookie 数据的表达式，请将鼠标悬停在网络请求上，打开上下文菜单 \ (右键单击\) ，然后选择"复制复制"作为"Node.js `fetch` ****  >  **提取"。**
 
-:::image type="complex" source="../../images/2020/01/fetchcookies.msft.png" alt-text="复制为Node.js提取" lightbox="../../images/2020/01/fetchcookies.msft.png":::
-   复制为Node.js提取
+:::image type="complex" source="../../images/2020/01/fetchcookies.msft.png" alt-text="作为提取Node.js复制" lightbox="../../images/2020/01/fetchcookies.msft.png":::
+   作为提取Node.js复制
 :::image-end:::
 
 Chromium问题[#1029826][CR1029826]
@@ -308,24 +308,21 @@ Chromium问题[#985402][CR985402]
 
 如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels] 作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
-[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport "模拟移动视区 - 在 DevTools Microsoft Edge设备模式下模拟移动设备|Microsoft Docs"
-[DevtoolsDeviceModeIndexShowDeviceFrame]: ../../../device-mode/index.md#show-device-frame "显示设备帧 - 在 DevTools Microsoft Edge设备模式下模拟移动设备|Microsoft Docs"
+[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport "模拟移动视口 - 在 DevTools Microsoft Edge设备模式下模拟移动设备|Microsoft Docs"
+[DevtoolsDeviceModeIndexShowDeviceFrame]: ../../../device-mode/index.md#show-device-frame "显示设备帧 - 在 DevTools Microsoft Edge设备模式下模拟|Microsoft Docs"
 [DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"
 [DevtoolsDeviceModeIndexThrottleNetworkCpu]: ../../../device-mode/index.md#throttle-the-network-and-cpu "限制网络和 CPU - 在 DevTools Microsoft Edge设备模式下模拟移动设备|Microsoft Docs"
-[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "设置 - 自定义 Microsoft Edge 开发人员工具 | Microsoft Docs"
-[DevtoolsStorageCookiesFields]: ../../../storage/cookies.md#fields "字段 - 使用 DevTools Microsoft Edge、查看、编辑和|Microsoft Docs"
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsStorageCookiesFields]: ../../../storage/cookies.md#fields "字段 - 使用 DevTools Microsoft Edge、查看、编辑和删除|Microsoft Docs"
 
 [VisualStudioIndex]: ../../../../visual-studio/index.md "Visual Studio |Microsoft Docs"
 
 [VisualStudioCodeDebuggerEdgeExtension]: ../../../../visual-studio-code/debugger-for-edge.md "调试程序Microsoft Edge Visual Studio Code扩展|Microsoft Docs"
 [VisualStudioCodeElementEdgeExtension]: ../../../../visual-studio-code/elements-for-edge.md "扩展Microsoft Edge Visual Studio Code元素|Microsoft Docs"
-
+<!-- external links -->
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge 预览频道"
 
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio 代码"
@@ -346,7 +343,7 @@ Chromium问题[#985402][CR985402]
 [CR1029826]: https://crbug.com/1029826 "network tab -> right choose to request -> copy -> copy as fetch does not copy cookies |ChromiumBug"
 [CR985402]: https://crbug.com/985402 "Web 应用清单图标错误字符串令人困惑|ChromiumBug"
 [CR963183]: https://crbug.com/963183 "DevTools 不符合 WCAG |ChromiumBug"
-[CR941561]: https://crbug.com/941561 "DevTools 工具的本地化|ChromiumBug"
+[CR941561]: https://crbug.com/941561 "DevTools 工具的可本地化|ChromiumBug"
 [CR987787]: https://crbug.com/987787 "Dom 3D 视图|ChromiumBug"
 
 [CSSContentDemo]: https://mathiasbynens.github.io/css-dbg-stories/css-escapes.html "未转义 CSS 内容的演示"
@@ -364,6 +361,8 @@ Chromium问题[#985402][CR985402]
 [WebhintBrowserExtension]: https://webhint.io/docs/user-guide/extensions/extension-browser "Webhint 浏览器扩展|webhint 文档"
 [WebhintVisualStudioCodeExtension]: https://webhint.io/docs/user-guide/extensions/vscode-webhint "Webhint Visual Studio Code Extension |webhint 文档"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-81)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。

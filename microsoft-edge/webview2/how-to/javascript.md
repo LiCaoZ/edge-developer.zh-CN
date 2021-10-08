@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 2b436d9acbd64ac621cfdc0979adbe45b1b09fb7
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 754ca3f49558a1b32be07f0d7d82c5b3b33a9edc
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035458"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083693"
 ---
 # <a name="use-javascript-in-webview-for-extended-scenarios"></a>在 WebView 中对扩展方案使用 JavaScript
 
@@ -27,7 +27,7 @@ ms.locfileid: "12035458"
 
 使用以下函数开始在 WebView 应用中嵌入 JavaScript。
 
-| API  | 描述  |
+| API  | 说明  |
 |:--- |:--- |
 | [ExecuteScriptAsync][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | 在 WebView 控件中运行 JavaScript。 有关详细信息，请导航到入门教程。 |
 | [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | 创建文档对象模型 \ (DOM\) 时运行。 |
@@ -37,7 +37,7 @@ ms.locfileid: "12035458"
 在此部分中，从 WebView2 控件访问专用的 JavaScript 文件。
 
 > [!NOTE]
-> 尽管内联编写 JavaScript 对于快速 JavaScript 命令可能非常高效，但会丢失 JavaScript 颜色主题和行格式，这使得在 JavaScript 中编写大量代码Visual Studio。
+> 虽然内联编写 JavaScript 对于快速 JavaScript 命令可能非常高效，但会丢失 JavaScript 颜色主题和行格式，这使得在 JavaScript 中编写大量代码Visual Studio。
 
 若要解决此问题，请用代码创建单独的 JavaScript 文件，然后使用 参数传递对该文件 `ExecuteScriptAsync` 的引用。
 
@@ -62,7 +62,7 @@ ms.locfileid: "12035458"
 
 首先，探索当前的拖放功能。
 
-1.  创建 `.txt` 文件以拖放。  例如，创建一个名为 的文件 `contoso.txt` ，并添加文本。
+1.  创建 `.txt` 文件以便进行拖放。  例如，创建一个名为 的文件 `contoso.txt` ，并添加文本。
 1.  运行项目。
 1.  将文件拖放到 `contoso.txt` WebView 控件上。  将打开一个新窗口，这是示例项目中代码的结果。
 
@@ -110,26 +110,26 @@ ms.locfileid: "12035458"
 
 1.  再次运行代码。  确认无法打开上下文菜单 \ (右键单击\) 。
 
+
+<!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*   若要开始使用 WebView2，请导航到 [WebView2 入门指南][Webview2MainGetStarted]。
-*   有关 WebView2 功能的综合示例，请导航到[webView2Samples][GithubMicrosoftedgeWebview2samples]存储库GitHub。
-*   有关 WebView2 API 的详细信息，请导航到 [API 参考][Webview2ApiReference]。
-*   有关 WebView2 的信息，请导航到["WebView2 资源"。][Webview2MainNextSteps]
+*  [WebView2 入门指南][Webview2MainGetStarted]
+*  [WebView2Samples 存储库][GithubMicrosoftedgeWebview2samples] - WebView2 功能的综合示例。
+*  [WebView2 API 参考][Webview2ApiReference]
+*  [另请参阅][Webview2MainNextSteps] _WebView2 Microsoft Edge简介_。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>联系 Microsoft Edge WebView 团队
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 [DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
 
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft EdgeWebView2 API 参考|Microsoft Docs"
 [Webview2MainGetStarted]: ../index.md#get-started "入门 - WebView2 Microsoft Edge简介|Microsoft Docs"
-[Webview2MainNextSteps]: ../index.md#next-steps "下一步 - Microsoft Edge WebView2 |Microsoft Docs"
+[Webview2MainNextSteps]: ../index.md#see-also "另请参阅 - WebView2 Microsoft Edge简介|Microsoft Docs"
 
 [Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated]: /microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated "AddScriptToExecuteOnDocumentCreated - 0.9.579 - 接口 ICoreWebView2 |Microsoft Docs"
 
-[Webview2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "Microsoft.Web.WebView2.Wpf (的 WebView2.ExecuteScriptAsync) 方法 (Microsoft.Web.WebView2.Wpf) |Microsoft Docs"
+[Webview2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "Microsoft.Web.Web.WebView2.W) |pf (的 WebView2.ExecuteScriptAsync)  (方法Microsoft Docs"
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"

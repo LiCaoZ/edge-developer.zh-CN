@@ -1,5 +1,5 @@
 ---
-description: 了解如何使用 Microsoft Edge Tools 查看和更改页面的 CSS。
+description: 了解如何使用 Microsoft Edge DevTools 查看和更改页面的 CSS。
 title: 查看和更改 CSS 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 1bb67e1ae9f2697cb0e4f999c7bf077daa22f769
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: a1e2a01bdba205474e742f4a74102ff794b6fdd6
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035451"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082727"
 ---
 <!-- Copyright Kayce Basques
 
@@ -38,7 +38,7 @@ ms.locfileid: "12035451"
     [CSS 示例][GlitchDevToolsCssExamples]
 
     > [!NOTE]
-    > 如果你想要将[DevTools][DevToolsCustomizePlacement]窗口停靠在下图\ (视图 \) 右侧，请选择"自定义和控制**DevTools"。** `...`  在"**自定义和控制 DevTools"** 下拉菜单上的"扩展坞**侧**"部分中，选择"扩展**坞"以向右。**
+    > 如果要将[DevTools][DevToolsCustomizePlacement]窗口停靠在下图\ (视图的右侧，请选择"自定义和控制**DevTools ) "。** `...`  在"**自定义和控制 DevTools"** 下拉菜单上的"扩展坞**侧**"部分中，选择"扩展**坞"以向右。**
 
 ## <a name="view-the-css-for-an-element"></a>查看元素的 CSS
 
@@ -112,7 +112,7 @@ ms.locfileid: "12035451"
 1.  将鼠标悬停在 `Hover Over Me!` 文本上。  背景色更改。
 1.  将鼠标悬停在 `Hover Over Me!` 文本上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**
 1.  在"**样式"** 面板中，选择 **"：hov"。**
-1.  选中 **"：hover"** 复选框。  背景颜色会像以前一样更改，即使你实际上没有将鼠标悬停在元素上。
+1.  选中 **"：hover"** 复选框。  背景颜色会像以前一样更改，即使你实际上并未将鼠标悬停在元素上。
 
     :::image type="complex" source="../media/css-elements-hover-over-me-styles-hov-hover.msft.png" alt-text="切换元素上的悬停伪状态" lightbox="../media/css-elements-hover-over-me-styles-hov-hover.msft.png":::
        切换 `:hover` 元素上的伪状态
@@ -152,7 +152,7 @@ ms.locfileid: "12035451"
 
 如果要调试或测试在 CSS 中定义的媒体查询，请使用以下步骤。
 
-1.  打开开发人员工具，选择左上方**** 第二个"切换设备"工具栏图标，或选择 `Ctrl` + `Shift` + `M` `Cmd` + `Shift` + `M` macOS\ (\) 。
+1.  打开开发人员工具并选择左上方第**** 二个"切换设备"工具栏图标，或在 `Ctrl` + `Shift` + `M` `Cmd` + `Shift` + `M` macOS\ (选择 \) 。
 
     :::image type="complex" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="打开设备工具栏" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
        打开设备工具栏
@@ -170,19 +170,16 @@ ms.locfileid: "12035451"
        从预览栏中选择媒体查询
     :::image-end:::
 
-1.  若要调试媒体查询，并打开编辑器中的 CSS 文件;将鼠标悬停在任何栏分段上，打开上下文菜单 \ (右键单击\) 并选择 `Sources` `reveal in source code` 。
+1.  若要调试媒体查询，并打开编辑器中的 CSS 文件;将鼠标悬停在任何栏分段上，打开上下文菜单 `Sources` \ (右键单击\) ，然后选择 `reveal in source code` 。
 
     :::image type="complex" source="../media/css-elements-media-queries-reveal-in-sources.msft.png" alt-text="在源编辑器中显示媒体查询" lightbox="../media/css-elements-media-queries-reveal-in-sources.msft.png":::
        在源编辑器中显示媒体查询
     :::image-end:::
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
-[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "将 DevTools 放置 (Undock、Dock 更改为 Bottom、Dock To Left) "
+[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "将 DevTools 放置 (Undock、Dock 更改为 Bottom、Dock to Left) "
 
 [GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "CSS 示例 - Microsoft Edge (Chromium) DevTools |小故障"
 

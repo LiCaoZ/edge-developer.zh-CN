@@ -1,5 +1,5 @@
 ---
-description: 你的作业不会以确保你的网站在 Android 和 Microsoft Edge运行结束。  尽管设备模式可以模拟一系列其他设备（如智能手机），但我们鼓励你查看由其他浏览器提供的模拟解决方案。
+description: 你的作业不会以确保你的网站在 android 和 Microsoft Edge运行结束。  尽管设备模式可以模拟一系列其他设备（如智能手机），但我们鼓励你查看由其他浏览器提供的模拟解决方案。
 title: 模拟和测试其他浏览器
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 5acdc73638a7c0288bb5feee92a75e724e00c6ad
-ms.sourcegitcommit: ce6e3f62b3c539c41c50a99bda1f3e75af903028
+ms.openlocfilehash: cfd6e78785c9f45ed9b9af74f967562e126f48c2
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "12018011"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12081888"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -29,7 +29,7 @@ ms.locfileid: "12018011"
    limitations under the License.  -->
 # <a name="emulate-and-test-other-browsers"></a>模拟和测试其他浏览器
 
-你的作业不会以确保你的网站在 Android 和 Microsoft Edge运行结束。  尽管 **设备模式** 可以模拟一系列其他设备（如智能手机），但我们鼓励你查看由其他浏览器提供的模拟解决方案。
+你的作业不会以确保你的网站在 android 和 Microsoft Edge运行结束。  尽管 **设备模式** 可以模拟一系列其他设备（如智能手机），但我们鼓励你查看由其他浏览器提供的模拟解决方案。
 
 ### <a name="summary"></a>摘要
 
@@ -49,9 +49,9 @@ Firefox 具有[][MDNResponsiveDesignMode]响应式设计视图，该视图鼓励
 
 ### <a name="edgehtml-emulation"></a>EdgeHTML 模拟
 
-若要模拟Windows Phones，请使用 Microsoft Edge \ (EdgeHTML\) [内置模拟][ArchiveMicrosoftEdgeDevtoolsEmulation]。
+若要模拟 Windows Phones，请使用 Microsoft Edge \ (EdgeHTML\) [内置模拟][ArchiveMicrosoftEdgeDevtoolsEmulation]。
 
-使用 [IE 11 仿真][Ie11DevToolsEmulation] 模拟页面在早期版本的 Internet Explorer。
+使用 [IE 11 模拟][Ie11DevToolsEmulation] 模拟页面在早期版本的 Internet Explorer。
 
 
 <!-- ====================================================================== -->
@@ -67,7 +67,7 @@ Firefox 具有[][MDNResponsiveDesignMode]响应式设计视图，该视图鼓励
 :::image-end:::
 -->
 
-目前，无法将 Microsoft Edge Android 仿真器上。  但是，您可以使用 Android 浏览器、Chromium命令行管理程序以及适用于 Android 的 Firefox，我们将在本文的稍后部分介绍这些内容。  Chromium内容命令行管理程序Chromium引擎运行Microsoft Edge，但不带特定于浏览器的功能。
+目前，无法将 Microsoft Edge Android 仿真器上。  但是，您可以使用 Android 浏览器、Chromium Shell 和 Firefox for Android，我们将在本文的稍后部分介绍这些内容。  Chromium内容命令行管理程序Chromium呈现引擎运行Microsoft Edge，但不带特定于浏览器的功能。
 
 Android 仿真器附带 Android SDK，你需要下载为 Android [Studio][AndroidStudioDownload]的一部分。  然后按照说明[设置虚拟设备并][AndroidStudioCreateManageVirtualDevices][启动仿真器][AndroidStudioRunAppsAndroidEmulator]。
 启动仿真器后，选择 **浏览器图标，** 在适用于 Android 的旧股票浏览器上测试你的网站。
@@ -80,7 +80,7 @@ Android 仿真器附带 Android SDK，你需要下载为 Android [Studio][Androi
 :::image-end:::
 -->
 
-若要安装适用于 android Chromium内容命令行管理程序，请保持仿真器运行并运行以下命令：
+若要安装适用于 Android Chromium命令行管理程序，请保持仿真器运行并运行以下命令：
 
 ```shell
 git clone https://github.com/PaulKinlan/chromium-android-installer.git
@@ -115,7 +115,7 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 完成后，了解如何通过 Apple 开发人员文档使用 [模拟器][AppleSimulatorHelp]。
 
 > [!NOTE]
-> 若要避免每次想要使用 iOS 模拟器时都打开 Xcode，请将其打开，将鼠标悬停在扩展坞中的 iOS 模拟器图标上，打开上下文菜单 \ (右键单击\) ，然后选择"在扩展坞中**保留"。**  现在只要需要图标即可。
+> 若要避免每次想要使用 iOS 模拟器时都打开 Xcode，请将其打开，将鼠标悬停在扩展坞中的 iOS 模拟器图标上，打开上下文菜单 \ (右键单击\) ，然后选择"保持在扩展坞中 **"。**  现在只要需要图标即可。
 
 ### <a name="microsoft-edge-edgehtml"></a>Microsoft Edge (EdgeHTML) 
 
@@ -123,7 +123,7 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
    新式 IE VM
 :::image-end:::
 
-Microsoft Edge \ (EdgeHTML\) Virtual Machines \ (VM\) 使您能够通过 VirtualBox \ (或 VMWare\) 访问计算机上不同版本的 EdgeHTML 和 Internet Explorer。  在下载 [页面上选择虚拟机][MicrosoftDeveloperEdgeVms]。
+Microsoft Edge \ (EdgeHTML\) 虚拟机 \ (VM\) 使你可以通过 VirtualBox \ (或 VMWare\) 访问计算机上不同版本的 EdgeHTML 和 Internet Explorer。  在下载 [页面上选择虚拟机][MicrosoftDeveloperEdgeVms]。
 
 
 <!-- ====================================================================== -->
@@ -137,18 +137,13 @@ Microsoft Edge \ (EdgeHTML\) Virtual Machines \ (VM\) 使您能够通过 Virtual
 
 *   [设备 Anywhere][AppExperience] 不使用仿真器，而是能够远程控制的真实设备。  当你需要在特定的设备上重现问题，并且某些报告中可能不会显示问题时，这非常有用。
 
-*   [LambdaTest][|::ref2::|] 可帮助你在各种浏览器和操作系统的组合上执行手动跨浏览器测试。  你可以录制复杂 Bug 的视频并通过集成（如 Microsoft Teams、Slack 等）共享它们。  可以通过并行运行测试来加快测试速度。
+*   [LambdaTest][|::ref2::|] 可帮助你在各种浏览器和操作系统的组合上执行手动跨浏览器测试。  你可以录制复杂错误的视频，并通过集成（如 Microsoft Teams、Slack 等）共享它们。  可以通过并行运行测试来加快测试速度。
 
 *   [使用操作][SauceLabs] 标签，可以在仿真器内运行单元测试，这可用于编写通过网站的流脚本，并随后在各种设备上观看此内容的视频录制。  您还可以对网站执行手动测试。
 
 *   [TestingBot][|::ref3::|] 可帮助你在各种浏览器和操作系统组合上执行手动测试和自动测试。  在 TestingBot 的仿真器和物理设备上测试你的网站和移动应用。
 
  (此列表因添加而关闭。) 
-
-<!-- ====================================================================== -->
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
 
 <!-- ====================================================================== -->
@@ -172,6 +167,8 @@ Microsoft Edge \ (EdgeHTML\) Virtual Machines \ (VM\) 使您能够通过 Virtual
 [SauceLabs]: https://saucelabs.com "一些实验室"
 [TestingBot]: https://testingbot.com/ "TestingBot"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)由[Meggin Kearney][MegginKearney] \ (Tech Writer\) 和[Paul Bakaus][PaulBakaus] \ (Open Web Developer Advocate 在 Google |工具、性能、动画、UX\) 。

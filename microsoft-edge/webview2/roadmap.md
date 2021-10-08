@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: d600c43d9bc8f0667d2099222876f6375f530353
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: ae2285b4d0cca8aba8262c27f066466856f5a358
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035332"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083672"
 ---
 # <a name="microsoft-edge-webview2-roadmap"></a>Microsoft EdgeWebView2 路线图
 
@@ -56,9 +56,10 @@ Win32 C/C++ SDK 已到达 GA。
 
 ### <a name="windows-ui-library-3"></a>WindowsUI 库 3
 
-可以使用) App SDK 的[WinUI3][UwpToolkitsWinui3Index] Windows UI 库 3 (访问Windows WebView2 控件。 This is currently in preview. 有关详细信息，请导航到 Windows [App SDK 路线图][WindowsAppSDK|::ref1::|]。
+可以使用 Windows App SDK 的[WinUI (3][UwpToolkitsWinui3Index] Windows UI 库 3) WebView2 控件Windows WebView2 控件。 This is currently in preview. 有关详细信息，请导航到 Windows [App SDK 路线图][WindowsAppSDK|::ref1::|]。
 
 
+<!-- ====================================================================== -->
 <!-- links -->
 [ConceptDistribution]: ./concepts/distribution.md "分发 WebView2 应用和 WebView2 运行时|Microsoft Docs"
 <!-- external links -->

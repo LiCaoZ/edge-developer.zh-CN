@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: b5442357cd27ada3b9a825597db471bb45d0a6d8
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 33a0436e283fd6d4526785f06eb7c678aa1af1ca
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035640"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12081985"
 ---
 <!-- Copyright Kayce Basques
 
@@ -39,7 +39,7 @@ ms.locfileid: "12035640"
 > [!WARNING]
 > 以下命令仅适用于开发人员Microsoft Edge**控制台**。  如果从脚本运行，则命令不起作用。
 
-有关 和 方法以及方法其余部分的信息， `console.log()` `console.error()` `console.*` 请导航到"控制台 API 参考["。][DevToolsConsoleApi]
+有关 和 方法以及方法其余部分的信息， `console.log()` `console.error()` `console.*` 请导航到"控制台 API[参考"。][DevToolsConsoleApi]
 
 ## <a name="recently-evaluated-expression"></a>最近计算表达式
 
@@ -53,7 +53,7 @@ $_
 
 ### <a name="console-example"></a>控制台示例
 
-在下图中，将计算一个简单的表达式 \ (`2 + 2` \) 。  然后 `$_` 计算属性，其中包含相同的值。
+在下图中，计算简单表达式 \ (`2 + 2` \) 。  然后 `$_` 计算属性，其中包含相同的值。
 
 :::image type="complex" source="../media/console-arithmatic.msft.png" alt-text="$_ 是最近评估的表达式" lightbox="../media/console-arithmatic.msft.png":::
    `$_` 是最近计算表达式
@@ -134,7 +134,7 @@ $0
 $(selector, [startNode])
 ```
 
-此命令返回对具有指定 CSS 选择器的第一个 DOM 元素的引用。  此方法是 [document.querySelector ][MdnDocsWebApiDocumentQueryselector] () 别名。
+此命令返回对具有指定 CSS 选择器的第一个 DOM 元素的引用。  此方法是 [document.querySelector ][MdnDocsWebApiDocumentQueryselector] 方法的 () 别名。
 
 ### <a name="console-example"></a>控制台示例
 
@@ -205,7 +205,7 @@ for (each in images) {
 }
 ```
 
-:::image type="complex" source="../media/console-element-selector-image-filter-all.msft.png" alt-text="使用 $$ () 选择在网页中的 <div> 元素后显示的所有图像并显示源" lightbox="../media/console-element-selector-image-filter-all.msft.png":::
+:::image type="complex" source="../media/console-element-selector-image-filter-all.msft.png" alt-text="使用 $$ () 选择在网页中的指定 div <div>元素后显示的所有图像并显示源" lightbox="../media/console-element-selector-image-filter-all.msft.png":::
    用于 `$$()` 选择网页中指定元素之后显示的所有图像 `<div>` 并显示源
 :::image-end:::
 
@@ -222,7 +222,7 @@ for (each in images) {
 $x(path, [startNode])
 ```
 
-此命令返回匹配指定 XPath 表达式的 DOM 元素的数组。
+此命令返回匹配指定 XPath 表达式的 DOM 元素数组。
 
 ### <a name="console-example"></a>控制台示例
 
@@ -760,12 +760,9 @@ values(object);
 
 ---
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsConsoleApi]: ./api.md "控制台 API 参考 | Microsoft Docs"
 [DevToolsConsoleApiConsoleDirObject]: ./api.md#dir "dir - 控制台 API |Microsoft Docs"
 
@@ -773,7 +770,7 @@ values(object);
 
 [DevtoolsRenderingToolsJsRuntime]: ../rendering-tools/js-runtime.md "加快 JavaScript 运行时|Microsoft Docs"
 
-[CR1050237]: https://crbug.com/1050237 "问题1050237：调试 (函数) 运行|Chromium Bug"
+[CR1050237]: https://crbug.com/1050237 "问题1050237： (调试) 函数|Chromium Bug"
 
 [MdnDocsWebApiConsoleDir]: https://developer.mozilla.org/docs/Web/API/Console/dir "Console.dir () |MDN"
 [MdnDocsWebApiConsoleDirxml]: https://developer.mozilla.org/docs/Web/API/Console/dirxml "Console.dirxml () |MDN"

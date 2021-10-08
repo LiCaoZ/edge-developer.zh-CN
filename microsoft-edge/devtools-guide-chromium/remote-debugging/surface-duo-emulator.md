@@ -7,12 +7,12 @@ ms.date: 03/25/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发工具, 远程调试, android, surface duo
-ms.openlocfilehash: c4ef25ee25fbdba9cd38858066a1af822f5e972f
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 88cf7f0c9cbbaed62cf9fb1f79be9c48b025a472
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036536"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12082699"
 ---
 # <a name="get-started-with-remote-debugging-surface-duo-emulators"></a>远程调试 Surface Duo 仿真器入门
 
@@ -79,17 +79,14 @@ ms.locfileid: "12036536"
 *   [Microsoft Edge Web 平台介绍在可折叠和双屏设备上构建 Web 体验的新 API][GithubMicrosoftedgeMsedgeexplainersFoldablesExplainer]
 *   [Microsoft 365 开发人员日会话录制：如何为网站和 Web 应用构建双屏体验][YoutubeDxrzwsqxpvc]
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
 [ProgressiveWebAppsIndex]: ../../progressive-web-apps-chromium/index.md "Windows 上的渐进式 Web 应用 | Microsoft Docs"
 [DevtoolsRemoteDebuggingMain]: ./index.md "Android 设备远程调试入门 | Microsoft Docs"
 [DevtoolsRemoteDebuggingIndexTroubleshootingDevtoolsIsNotDetectingAndroidDevice]: ./index.md#troubleshooting-devtools-is-not-detecting-the-android-device "疑难解答：开发工具未检测 Android 设备 - Android 设备远程调试入门 | Microsoft Docs"
-
+<!-- external links -->
 [DualScreenIndex]: /dual-screen/index "为双屏设备创建应用 | Microsoft Docs"
 [DualScreenAndroidUseEmulator]: /dual-screen/android/use-emulator "使用 Surface Duo 仿真程序 | Microsoft Docs"
 [DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "获取 Surface Duo SDK | Microsoft Docs"

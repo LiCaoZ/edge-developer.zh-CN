@@ -7,12 +7,12 @@ ms.date: 04/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 0deb6393836383e930c8928d85c4dd2299c55241
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: ad04b0d31513be249462b541ba67049a3a8d1947
+ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12034667"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "12083826"
 ---
 <!-- Copyright Kayce Basques
 
@@ -49,7 +49,7 @@ ms.locfileid: "12034667"
    导航、查看、编辑和调试服务器返回的 JavaScript
 :::image-end:::
 
-若要最大化"源"工具的大小，请取消停靠"DevTools"到单独的窗口，并可以选择将"DevTools"窗口移动到单独的监视器。  请参阅 [Change DevTools placement (Undock， Dock to bottom， Dock to left) ][DevToolsCustomizePlacement].
+若要最大化"源"工具的大小，请取消停靠"DevTools"到单独的窗口，并可以选择将"DevTools"窗口移动到单独的监视器。  请参阅 [Change DevTools placement (Undock， Dock to bottom， Dock to left) ][DevToolsCustomizePlacement]。
 
 若要加载上面显示的调试演示网页，请参阅下面的使用 [调试器的基本](#the-basic-approach-to-using-a-debugger)方法。
 
@@ -470,7 +470,7 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
 ### <a name="debug-from-visual-studio-code-directly"></a>直接从Visual Studio Code调试
 
-若要使用功能更全的 Visual Studio Code 调试程序而不是 DevTools 调试器，请使用**Microsoft Edge DevTools**扩展Visual Studio Code。
+若要使用功能更加完整的 Visual Studio Code 调试程序，而不是使用 DevTools 调试器，请使用 Microsoft Edge **DevTools**扩展Visual Studio Code。
 
 :::image type="complex" source="../media/microsoft-edge-tools-for-vs-code-extension.msft.png" alt-text="适用于Microsoft Edge开发人员的 DevTools Visual Studio Code" lightbox="../media/microsoft-edge-tools-for-vs-code-extension.msft.png":::
    适用于**Microsoft Edge开发人员的 DevTools** Visual Studio Code
@@ -490,12 +490,9 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
 *   [使用断点暂停代码][DevToolsJavaScriptBreakpoints] - 如何在调试器中设置基本和专用断点。
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevToolsBeginnersCss]: ../beginners/css.md "适用于初学者的 DevTools：CSS |Microsoft Docs"
 [DevToolsBeginnersHtml]: ../beginners/html.md "适合初学者的 DevTools：HTML 和 DOM |Microsoft Docs"
 [DevToolsCommandMenuIndex]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"
@@ -523,6 +520,8 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 [MDNContentScripts]: https://developer.mozilla.org/Add-ons/WebExtensions/Content_scripts "内容脚本|MDN"
 [TypescriptlangMain]: https://www.typescriptlang.org "TypeScript"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/sources)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
