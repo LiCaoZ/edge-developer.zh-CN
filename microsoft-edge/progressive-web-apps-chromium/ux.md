@@ -1,22 +1,22 @@
 ---
 description: 本指南概述了 PA 在 Microsoft Edge 和 Windows 上的用户体验。
-title: PBA 的用户体验
+title: PWA 的用户体验
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: 渐进式 Web 应用， PWA， edge， Windows， 桌面， 安装， 集成， microsoft store， ux
-ms.openlocfilehash: 47c1d2c19b0ab5ec495842cb2a72ec3a12813e28
-ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
+ms.openlocfilehash: 8ded6e4574e3bdfd0363e10838540467316c0a10
+ms.sourcegitcommit: 18bc9a85940de5a8f390c9a4c9d9e34c4196f5aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/11/2021
-ms.locfileid: "12087226"
+ms.locfileid: "12087679"
 ---
-# <a name="the-user-experience-of-pwas"></a>PBA 的用户体验
+# <a name="the-user-experience-of-pwas"></a>PWA 的用户体验
 
-在Windows，PWA 是一流的应用公民。  任何运行 Microsoft Edge都完全可以访问渐进式 Web 应用的技术和特征。
+在Windows，PWA 与其他应用一样。  任何运行 Microsoft Edge都完全可以访问渐进式 Web 应用的技术和特征。
 
 
 <!-- ====================================================================== -->
@@ -88,7 +88,7 @@ PBA 可以在用户登录应用时自动Windows，以便他们可以立即使用
 <!-- ====================================================================== -->
 ## <a name="app-info-menu"></a>应用信息菜单
 
-当用户在应用的标题栏中 (省略号) ..."按钮时****，将显示"**应用信息**"菜单。 此菜单包含有关应用的有用信息，例如：
+当用户在应用的标题栏中 (省略号) ..."按钮时，**** 将显示"应用**信息**"菜单。 此菜单包含有关应用的有用信息，例如：
 
 *  应用图标、名称和发布者。
 *  已授予的各种应用程序权限。

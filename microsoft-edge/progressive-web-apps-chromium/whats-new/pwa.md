@@ -3,16 +3,16 @@ description: 渐进式 Web 应用和 PA (新功能和) 。
 title: 渐进式 Web 应用程序中的新增功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/23/2021
+ms.date: 10/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， pwas， pwa， 渐进式 Web 应用， 源试用版
-ms.openlocfilehash: adcf5847eb88ec9bfd2d25c57ddede897cba20a7
-ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
+ms.openlocfilehash: c25dfd91a21d0da8b5b3b7c1c706ba4869b10321
+ms.sourcegitcommit: 18bc9a85940de5a8f390c9a4c9d9e34c4196f5aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/11/2021
-ms.locfileid: "12086926"
+ms.locfileid: "12087653"
 ---
 # <a name="whats-new-in-progressive-web-apps"></a>渐进式 Web 应用程序中的新增功能
 
@@ -20,9 +20,44 @@ ms.locfileid: "12086926"
 
 
 <!-- ====================================================================== -->
+## <a name="whats-new-in-microsoft-edge-96"></a>Microsoft Edge 96 中的新增功能
+
+### <a name="new-hub-design-for-managing-your-installed-web-apps"></a>用于管理已安装的 Web 应用的新中心设计
+
+Microsoft EdgeCanary 于 2021 年 10 月 5 日达到版本 96。  通过部分用户，我们正在测试新设计，以更好地管理已安装的 Web 应用。  当你在浏览器中转到时，它现在将显示重新设计的中心，将已安装 `edge://apps` 的 PWA 和网站作为应用列出。
+
+你可以按以下任一方式对应用进行排序：
+*  最近使用。
+*  按字母顺序，基于标题。
+*  安装日期。
+
+还可以在列表或网格视图中排列应用。 
+
+:::image type="content" source="media/edgeapps-redesign.jpg" alt-text="Microsoft Edge现在具有新的应用管理页面。" lightbox="media/edgeapps-redesign.jpg":::
+
+此外，你可以轻松将应用固定到任务栏或"开始 **"** 菜单。  你可以创建快捷方式，并启用应用以在用户登录时运行。 
+
+此外，现在还有一种轻松访问以下内容的方法：
+*  关联源的权限和隐私详细信息。
+*  有关应用程序的更多详细信息。
+
+:::image type="content" source="media/edgeapps-details.jpg" alt-text="Microsoft Edge应用程序详细信息页面。" lightbox="media/edgeapps-details.jpg":::
+
+
+<!-- ====================================================================== -->
+## <a name="whats-new-in-microsoft-edge-95"></a>Microsoft Edge 95 中的新增功能
+
+Microsoft Edge版本 95 于 2021 年 9 月 28 日移动到 Beta 渠道。 对于以下功能，源试用版保持活动状态：
+*  [适用于桌面 PWA 的窗口控件覆盖](#window-controls-overlay-origin-trials)层。
+*  [URL 处理程序](#url-handlers-origin-trial)。
+
+我们希望协议 [处理程序源试用版于](#protocol-handlers-origin-trial) 2021 年 10 月 21 日结束。
+
+
+<!-- ====================================================================== -->
 ## <a name="whats-new-in-microsoft-edge-94"></a>Microsoft Edge 94 中的新增功能
 
-Microsoft Edge 94 版在 2021 年 9 月 23 日移动到 Stable。  此发布周期很短，只是<!-- em dash --> 从 93 Microsoft Edge到 Microsoft Edge 94 Stable 的 3 周，当我们贴靠到新的四[周发布周期时][4weekReleaseBlog]。  这一新的发布节奏与加速 Chrome 的发布周期Chromium里程碑[的新节奏相匹配][Chromium4weekM]。
+Microsoft Edge 94 在 2021 年 9 月 23 日移动到 Stable。 此发布周期很短，只是<!-- em dash --> 3 周，从 Microsoft Edge 93 Stable 到 Microsoft Edge 94 Stable，因为我们贴靠到新的[4 周发布周期][4weekReleaseBlog]。  这一新的发布节奏与加速 Chrome 的发布周期Chromium里程碑[的新节奏相匹配][Chromium4weekM]。
 
 由于版本 94 的发布周期缩短Microsoft Edge，我们侧重于稳定发布周期后勤工作，我们将功能开发转移到 Microsoft Edge 版本 95。
 
@@ -82,7 +117,7 @@ Microsoft Edge版本 92 在 2021 年 7 Microsoft Edge成为稳定渠道。 本�
 
 ### <a name="streamlined-app-info-menu"></a>简化的应用信息菜单
 
-当用户在应用的标题栏中 (省略号) ..."按钮时，**** 将显示"应用**信息**"菜单。  我们更新了"应用**** 信息"菜单，并采用以下方式简化了用户体验，以提供与浏览器 UI 更像桌面应用的用户体验：
+当用户在应用的标题栏中 (省略号) ..."按钮时****，将显示"**应用信息**"菜单。  我们更新了"应用**** 信息"菜单，并采用以下方式简化了用户体验，以提供与浏览器 UI 更像桌面应用的用户体验：
 *  将应用**Publisher**信息移动到顶级，并作为用户首先看到的信息。
 
    :::image type="content" source="media/app-info.png" alt-text="简化的新应用信息菜单" lightbox="media/app-info.png":::
@@ -137,7 +172,7 @@ Microsoft Edge版本 92 在 2021 年 7 Microsoft Edge成为稳定渠道。 本�
 [WCOOT]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-window-controls-overlay/registration/ "注册 Web 应用窗口控件覆盖原点试用|Microsoft Edge开发人员"
 
 <!-- other -->
-[mdnShareAPI]: https://developer.mozilla.org/docs/Web/API/Navigator/share "Web Share API () 的 navigator.share |MDN"
+[mdnShareAPI]: https://developer.mozilla.org/docs/Web/API/Navigator/share "Web 共享 API () 的 navigator.share |MDN"
 
 [4weekReleaseBlog]: https://blogs.windows.com/msedgedev/2021/03/12/new-release-cycles-microsoft-edge-extended-stable/ "使用适用于客户的新版本周期更有效地为客户提供Microsoft Edge |Microsoft Edge博客"
 
