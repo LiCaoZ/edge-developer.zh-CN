@@ -1,18 +1,18 @@
 ---
 description: 针对开发人员工具中控制台 UI 的每种功能Microsoft Edge全面参考。
-title: 控制台参考
+title: 控制台功能参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 0df2edc0e5d60cf233efb2bb4d269dec422cdaab
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 24ddb78fc1a373c1a4858b5e390d302d987c360a
+ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083140"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "12086995"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +27,7 @@ ms.locfileid: "12083140"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="console-reference"></a>控制台参考
+# <a name="console-features-reference"></a>控制台功能参考
 
 本文引用了与开发人员工具控制台Microsoft Edge相关的功能。  它假定你已熟悉使用控制台查看记录的消息并运行 JavaScript。  如果没有，请导航到开始在控制台中运行 [JavaScript][DevtoolsConsoleConsoleJavascript] 和 [开始在控制台中记录消息][DevtoolsConsoleConsoleLog]。
 
@@ -104,7 +104,7 @@ Choose the **Console 设置**\ (![ Console 设置 icon ](../media/settings-butto
 
 ### <a name="turn-off-message-grouping"></a>关闭邮件分组
 
-若要关闭控制台的默认邮件分组**行为**，请打开控制台设置并选中"类似组["](#open-console-settings)**旁边的复选框**。  例如，导航到“[记录 XHR 和 Fetch 请求](#log-xhr-and-fetch-requests)”。
+若要关闭控制台的默认邮件分组行为，请打开控制台****[设置并选中](#open-console-settings)类似组**旁边的复选框**。  例如，导航到“[记录 XHR 和 Fetch 请求](#log-xhr-and-fetch-requests)”。
 
 ### <a name="log-xhr-and-fetch-requests"></a>记录 XHR 和 Fetch 请求
 
@@ -128,7 +128,7 @@ Choose the **Console 设置**\ (![ Console 设置 icon ](../media/settings-butto
 
 ### <a name="persist-messages-across-page-loads"></a>跨页面加载保留消息
 
-加载新网页时，默认操作会清除 **控制台**。  若要跨页面加载保留消息，请[打开](#open-console-settings)控制台设置并选中"保留日志"旁边的**复选框**。
+加载新网页时，默认操作会清除 **控制台**。  若要在页面加载时保留消息，请[打开控制台设置](#open-console-settings)并选中"保留日志 **"旁边的复选框**。
 
 ### <a name="hide-network-messages"></a>隐藏网络消息
 
@@ -204,7 +204,7 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 
 ### <a name="filter-out-messages-from-different-contexts"></a>筛选出不同上下文的消息
 
-假设您网页上有一个广告 \ (ad\) 。  广告嵌入在 中 `<iframe>` ，在控制台 中生成许多 **消息**。  由于广告在不同的[JavaScript](#choose-javascript-context)上下文中运行，因此隐藏消息的一个方法就是打开控制台设置选中"仅上下文["](#open-console-settings)旁边的**复选框**。
+假设您网页上有一个广告 \ (ad\) 。  广告嵌入在 中 `<iframe>` ，在控制台 中生成许多 **消息**。  由于广告在不同的[JavaScript](#choose-javascript-context)上下文中运行，因此隐藏消息的一个方法就是打开控制台设置选中"仅上下文["旁边的](#open-console-settings)**复选框**。
 
 ### <a name="filter-out-messages-that-dont-match-a-regular-expression-pattern"></a>筛选出与正则表达式模式不匹配的邮件
 
@@ -235,7 +235,7 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 
 ### <a name="turn-off-autocomplete-from-history"></a>从历史记录中关闭自动完成
 
-键入表达式时，控制台的自动完成弹出窗口将显示之前运行表达式。 ****  表达式使用 字符预先 `>` 绘制。  若要停止显示历史记录中的表达式，请打开"控制台[设置并删除](#open-console-settings)"自动**完成**自历史记录"复选框旁边的复选框。
+键入表达式时，控制台的自动完成弹出窗口将显示之前运行表达式。 ****  表达式使用 字符预先 `>` 绘制。  若要停止显示历史记录中的表达式，请打开"控制台[设置并删除](#open-console-settings)"从历史记录自动**完成**"复选框旁边的复选框。
 
 > [!NOTE]
 > 在下图中，`document.querySelector('a')` 和 `document.querySelector('img')` 是之前评估的表达式。
@@ -276,7 +276,7 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 [DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "作为 JavaScript 环境的控制台|Microsoft Docs"
 [DevtoolsConsoleIndex]: .index.md "使用控制台|Microsoft Docs"
 [DevtoolsConsoleIndexInspectFilterInformationOnCurrentWebpage]: ./index.md#inspect-and-filter-information-on-the-current-webpage "检查并筛选当前网页上|Microsoft Docs"
-[DevtoolsConsoleLiveExpressions]: ./live-expressions.md "使用 Live Expressions 方法监视 JavaScript 中的|Microsoft Docs"
+[DevtoolsConsoleLiveExpressions]: ./live-expressions.md "使用 Live Expressions 应用程序监视 JavaScript 中的|Microsoft Docs"
 [DevtoolsConsoleUtilities]: ./utilities.md "控制台实用程序 API 参考 | Microsoft Docs"
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行|Microsoft Docs"
 

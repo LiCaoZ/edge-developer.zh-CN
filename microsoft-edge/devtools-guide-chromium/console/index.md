@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: a7f26d9857483e503ae8f31f9211b03d941dab37
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: df98ed8dacec1c3a5b2b48bcd43079cee8c0ccdc
+ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083266"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "12086953"
 ---
 # <a name="use-the-console"></a>使用控制台
 
@@ -41,7 +41,7 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
 
 ## <a name="error-reports-and-the-console"></a>错误报告和控制台
 
-控制台 **是** 报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，"**** 问题"计数器将显示在 DevTools**中**提供错误和警告设置图标旁边。  选择 **"问题"** 计数器以打开 **"问题** "工具并显示问题。  有关详细信息，请导航到["修复控制台中报告的 JavaScript 错误"。][DevtoolsConsoleConsoleDebugJavascript]
+控制台 **是** 报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，"**** 问题"计数器将显示在 DevTools**设置**图标旁边，该图标提供错误和警告的数量。  选择 **"问题"** 计数器以打开 **"问题** "工具并显示问题。  有关详细信息，请导航到["修复控制台中报告的 JavaScript 错误"。][DevtoolsConsoleConsoleDebugJavascript]
 
 :::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools 提供有关控制台中错误的详细信息" lightbox="../media/console-debug-displays-error.msft.png":::
    DevTools 提供有关控制台中错误 **的详细信息**
@@ -50,7 +50,7 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
 
 ## <a name="look-up-error-messages-on-the-web-from-the-console"></a>从控制台查找 Web 上的错误消息
 
-从 DevTools **中** ，在 Web 中搜索控制台错误消息。  在 **控制台中**，许多错误消息在 **Web** 按钮上都有"搜索此消息"，显示为放大镜。  当您选择" **在 Web 上搜索此消息** "按钮时，将在浏览器中打开一个新选项卡，并会显示错误消息的搜索结果。
+从 DevTools **中** ，在 Web 中搜索控制台错误消息。  在 **控制台中**，许多错误消息在 **Web** 按钮上都有"搜索此消息"，显示为放大镜。  当您选择" **在 Web 上搜索此消息** "按钮时，将在浏览器中打开一个新选项卡，并显示错误消息的搜索结果。
 
 :::image type="complex" source="../media/search-console-icon.msft.png" alt-text="**Console 中错误消息上的&quot;在 Web 上搜索此消息&quot;按钮" lightbox="../media/search-console-icon.msft.png":::
    控制台 **错误消息上的"在 Web** 上搜索此消息" **按钮**
@@ -62,7 +62,7 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
    从搜索控制台错误 **功能打开的新** 选项卡
 :::image-end:::
 
-此功能是在版本 94 Microsoft Edge引入的。
+此功能是在 94 Microsoft Edge引入的。
 
 
 ## <a name="inspect-and-filter-information-on-the-current-webpage"></a>检查和筛选当前网页上的信息
@@ -79,7 +79,7 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
 
 控制台最常见的用例是使用 方法**** 或其他类似方法从脚本 `console.log()` 中记录信息。  若要尝试，请完成以下操作。
 
-1.  若要**打开控制台，** 请选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。
+1.  若要打开控制台 **，请选择** `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。
 1.  导航到 [控制台消息示例：日志、信息、错误和][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]警告，或在控制台中复制并运行以下代码 **段**。
 
     ```javascript
@@ -112,7 +112,7 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
 
 控制台 **将在** 以下行 `4` 中显示结果。  此 **"期待** "评估功能可用于调试和验证代码中没有出错。
 
-:::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="在键入时，控制台将显示 2 + 2 实时的结果" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
+:::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="控制台会在你键入时显示 2 + 2 实时的结果" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
    **控制台**会在您键入 `2 + 2` 实时内容时显示它的结果
 :::image-end:::
 
@@ -184,7 +184,7 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
 ## <a name="see-also"></a>另请参阅
 
 *  [使用控制台与 DOM 交互][DevtoolsConsoleConsoleDomInteraction]。
-*  [控制台参考][DevtoolsConsoleReference]
+*  [控制台功能参考][DevtoolsConsoleReference]
 *  [控制台实用工具 API 参考][DevtoolsConsoleUtilities]
 *  [控制台 API 参考][DevtoolsConsoleApi]
 
@@ -197,7 +197,7 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
 [DevtoolsConsoleConsoleFilters]: ./console-filters.md "筛选控制台消息|Microsoft Docs"
 [DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "作为 JavaScript 环境的控制台|Microsoft Docs"
 [DevtoolsConsoleConsoleLog]: ./console-log.md "在控制台工具控制台中记录|Microsoft Docs"
-[DevtoolsConsoleReference]: ./reference.md "控制台参考 | Microsoft Docs"
+[DevtoolsConsoleReference]: ./reference.md "控制台功能参考|Microsoft Docs"
 [DevtoolsConsoleUtilities]: ./utilities.md "控制台实用程序 API 参考 | Microsoft Docs"
 [DevtoolsIssuesIndex]: ../issues/index.md "使用问题工具查找并修复问题 | Microsoft Docs"
 <!-- external links -->

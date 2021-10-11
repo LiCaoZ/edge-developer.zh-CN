@@ -1,291 +1,174 @@
 ---
-description: 渐进式 Web (Chromium) 在本机运行Windows 10。  下面是作为 Web 开发人员需要知道的所有内容。
-title: Windows 上的渐进式 Web 应用
+description: 渐进式 Web 应用在 Windows 10。 下面是作为 Web 开发人员需要知道的所有内容。
+title: '渐进式 Web 应用 (PA) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 09/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进 Web 应用、PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
-ms.openlocfilehash: 67d1e8ba942222e660832cb2cdf39e052fe662d4
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+keywords: 渐进 Web 应用、PWA、Edge、JavaScript、UWP、Microsoft Store
+ms.openlocfilehash: 2a4715d57440a48d1d380b4da7362378981788a8
+ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035255"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "12086939"
 ---
-# <a name="progressive-web-apps-on-windows-overview"></a>渐进式 Web 应用Windows概述
+# <a name="overview-of-progressive-web-apps-pwas"></a>渐进式 Web 应用 (PA) 
 
-[渐进式 Web 应用][MDNApps] \ (PWA\) 提供对开放 Web 技术的访问权限，实现跨平台互操作性，并为用户提供为设备自定义的本机、类似应用的体验。 PWA 是逐步增强的网站[][AListApartUnderstandingProgressiveEnhancement]，其功能与支持平台上的本机应用类似。 PWA 的特性结合了最好的 Web 和本机应用。
+**[渐进式 Web][MDNApps]** (PBA) 提供对开放 Web 技术的访问权限，实现跨平台互操作性，并为用户提供为设备自定义的类似应用的体验。
+
+PWA 是一些网站 **[，其][AListApartUnderstandingProgressiveEnhancement]** 功能逐渐增强，其功能与支持平台上已安装的应用类似，与其他浏览器上的常规网站类似。
+
+应用程序质量PWA Web 和已编译应用**的最佳功能**相结合。 PWA 在浏览器（如网站）中运行，但有权访问应用功能（如脱机工作的功能）安装在操作系统上、支持推送通知和定期更新、访问硬件功能等。
+
+**PWA 是组织一等Windows。** 安装后，它们的行为与其他应用一样。 它们可以添加到"开始"菜单、固定到任务栏、处理文件、在用户登录时运行等。
+
+PBA 还可以提交**** 到 Microsoft Store，数百万Windows用户可以发现并轻松地将它们与其他 Windows 应用一起安装。
+
+
+<!-- ====================================================================== -->
+## <a name="characteristics-of-a-pwa"></a>项目的特征PWA
+
+PWA 与网站具有相同的范围：它们可以由搜索引擎编制索引，可以链接到同一基本代码的所有设备，并且可在所有设备上运行。 因此，与需要 Android、iOS 和各种桌面操作系统的特定基本代码的已编译应用比，它们的开发成本要低得多。
+
+<!-- in the below table, keep two trailing spaces after each image line's ::: to keep card elements tight but not concat'd -->
 
 :::row:::
     :::column:::
-        :::image type="icon" source="./media/i_search-small.png":::
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/i_package-small.png":::
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/i_push-notification-small.png":::
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        ### <a name="discoverablemdnpwaadvantagesdiscoverable"></a>[可发现][MDNPwaAdvantagesDiscoverable]
-    :::column-end:::
-    :::column:::
-        ### <a name="installablemdnpwaadvantagesinstallable"></a>[可安装][MDNPwaAdvantagesInstallable]
-    :::column-end:::
-    :::column:::
-        ### <a name="re-engageablemdnpwaadvantagesreengageable"></a>[重新参与][MDNPwaAdvantagesReEngageable]
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
+        :::image type="icon" source="./media/i_search-small.png":::  
+        **[可发现][MDNPwaAdvantagesDiscoverable]**  
         从 Web 搜索结果和支持的应用商店
     :::column-end:::
     :::column:::
+        :::image type="icon" source="./media/i_package-small.png":::  
+        **[可安装][MDNPwaAdvantagesInstallable]**  
         从主屏幕、"开始"菜单、任务栏等固定和启动
     :::column-end:::
     :::column:::
+        :::image type="icon" source="./media/i_push-notification-small.png":::  
+        **[重新参与][MDNPwaAdvantagesReEngageable]**  
         发送推送通知，即使应用不处于活动状态
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-        :::image type="icon" source="./media/i_offline-small.png":::
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/i_progressive-small.png":::
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/i_security-small.png":::
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        ### <a name="network-independentmdnpwaadvantagesnetworkindependent"></a>[与网络无关][MDNPwaAdvantagesNetworkIndependent]
-    :::column-end:::
-    :::column:::
-        ### <a name="progressivemdnpwaadvantagesprogressive"></a>[渐进][MDNPwaAdvantagesProgressive]
-    :::column-end:::
-    :::column:::
-        ### <a name="safemdnpwaadvantagessafe"></a>[保险箱][MDNPwaAdvantagesSafe]
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
+        :::image type="icon" source="./media/i_offline-small.png":::  
+        **[与网络无关][MDNPwaAdvantagesNetworkIndependent]**  
         在脱机和低网络条件下工作
     :::column-end:::
     :::column:::
+        :::image type="icon" source="./media/i_progressive-small.png":::  
+        **[渐进][MDNPwaAdvantagesProgressive]**  
         体验通过 (功能) 向上或向下扩展
     :::column-end:::
     :::column:::
+        :::image type="icon" source="./media/i_security-small.png":::  
+        **[保险箱][MDNPwaAdvantagesSafe]**  
         提供安全的 HTTPS 终结点和其他用户安全措施
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-        :::image type="icon" source="./media/i_responsive-small.png":::
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/i_link-small.png":::
-    :::column-end:::
-    :::column:::
-        &nbsp;
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        ### <a name="responsivemdnpwaadvantagesresponsive"></a>[响应][MDNPwaAdvantagesResponsive]
-    :::column-end:::
-    :::column:::
-        ### <a name="linkablemdnpwaadvantageslinkable"></a>[可链接][MDNPwaAdvantagesLinkable]
-    :::column-end:::
-    :::column:::
-        &nbsp;
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
+        :::image type="icon" source="./media/i_responsive-small.png":::  
+        **[响应][MDNPwaAdvantagesResponsive]**  
         适应用户的屏幕大小或方向和输入方法
     :::column-end:::
     :::column:::
+        :::image type="icon" source="./media/i_link-small.png":::  
+        **[可链接][MDNPwaAdvantagesLinkable]**  
         从标准超链接共享和启动
     :::column-end:::
     :::column:::
-        &nbsp;
     :::column-end:::
 :::row-end:::
 
-生成 \ (或将) 网站转换为PWA，以增强用户参与度。 增强功能包括推送通知、类似应用的集成和脱机支持。 继续构建开放 Web 上的受众，以便用户通过PWA和链接共享发现你的网站。 最好使用 Web 服务器代码更新应用。
 
-## <a name="pwas-on-microsoft-edge-chromium"></a>PA on Microsoft Edge (Chromium) 
+<!-- ====================================================================== -->
+## <a name="pwas-on-desktop"></a>桌面上的 PWA
 
-构建面向 Web 标准 API 的渐进式 Web 应用时，应用可能会跨平台和设备进行部署，并尽可能利用特定于设备的功能。 Microsoft Edge \ (Chromium\) 中的 PA 将以下优势添加到您的网站。
+PBA 不限于在移动主屏幕上显示网站。 PWA 基于标准、跨浏览器、Web 技术，可允许安装它们，并可以在许多不同的环境中运行。
 
-*   你的应用基于基于标准的 Web 平台构建。
-*   允许用户直接从浏览器安装应用。
-*   允许用户在没有基于应用商店的部署或注册的情况下安装应用。
+在几年中，桌面浏览已增长，并且桌面计算仍然是许多用户的主要生产力环境。 幸运的是，PWA 可以在继承该环境优势的桌面操作系统上提供完全定制的可安装体验，同时仍可从支持浏览器内和移动体验的相同代码和服务器跨平台工作。
 
-桌面 PBA 在任何支持 \Microsoft Edge \ (Chromium\) [平台上均受支持](https://www.microsoft.com/edge)。 其中包括以下好处。
+借助 Microsoft Edge 和 Windows 中的许多新 Web 功能和新功能，可以构建与桌面操作系统深度集成的体验。 仅使用 Web 技术还可确保你的应用在其他浏览器、操作系统和设备中运行。
 
-*   可以直接使用导航栏中的"安装" **图标在浏览器中** 安装应用。
+你可能完全不需要使用专有技术，因为 Web 已经发展了处理文件系统[](#bridging-the-gap-between-web-and-desktop-apps)、视频、音频、高性能代码、数据库、USB、蓝牙等功能。
 
-    :::image type="complex" source="./media/install-progressive-web-app-icon.png" alt-text="安装应用飞出和图标" lightbox="./media/install-progressive-web-app-icon.png":::
-       安装应用飞出和图标
-    :::image-end:::
+通过跨操作系统在网站、移动应用和桌面应用之间共享 (，) 降低开发成本。 你的应用还可以发布在 Microsoft Store[上，](#the-microsoft-store)以便用户Windows和安装它更熟悉和可信。
 
-*   也可以从"应用"菜单安装、运行和管理设置****  >  **应用程序**
+详细了解[PWA 如何与 Windows 集成][PwaWindowsUx]。
 
-    :::image type="complex" source="./media/app-menus.png" alt-text="设置下的应用菜单项" lightbox="./media/app-menus.png":::
-       设置下的应用菜单项
-    :::image-end:::
 
-*   Web 通知已集成到 Windows通知系统
-*   具有安装应用程序的浏览器配置文件的共享 Cookie 存储
-*   使用设置和更多 **\ (** \) 菜单访问其他浏览器功能，包括证书验证、网站权限、跟踪保护和 `...` 浏览器扩展
-*   对调试[Microsoft Edge开发人员][DevtoolsProgressiveWebApps]工具的完全访问权限
+<!-- ====================================================================== -->
+## <a name="bridging-the-gap-between-web-and-desktop-apps"></a>弥补 Web 应用和桌面应用之间的空白
 
-> [!NOTE]
-> 有关版本PWA、即将推出的功能和简短演示的信息，请导航到"内部版本[2020 PWA会话"。][BuildVideo]
+内置了许多新的 Web 功能Microsoft Edge这些功能可以使你的应用在桌面上更加集成，并为用户提供极具吸引力的体验。
 
-## <a name="requirements"></a>要求
+借助 PBA，你可以：
 
-若要作为PWA运行，服务器托管的 Web 应用应满足以下最低要求。
+*   处理文件。
+*   与其他应用共享内容。
+*   访问剪贴板。
+*   同步数据并在后台提取资源。
+*   访问设备硬件，蓝牙和 USB。
+*   将内容存储在数据库中。
+*   利用硬件加速图形。
+*   使用 CSS 布局、动画和筛选器创建高级设计。
+*   使用 WebAssembly 运行近编译的性能代码。
 
-:::row:::
-   :::column span="1":::
-      [HTTPS][WikiHttps]
-   :::column-end:::
-   :::column span="2":::
-      通过为服务器或应用通信提供安全连接来保护用户。  服务工作人员和其他PWA技术仅适用于通过安全连接 \ (或出于 `localhost` 调试目的提供\) 的 Web 资源。
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      [服务工作者][MDNServiceWorkerApi]
-   :::column-end:::
-   :::column span="2":::
-      使用服务工作线程充当服务器和客户端应用之间的网络代理。  服务工作线程提供脱机支持、资源缓存、推送通知、后台数据同步和页面加载性能优化。
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      [Web 应用清单][MDNWebAppManifest]
-   :::column-end:::
-   :::column span="2":::
-      提供一个基于 JSON 的元数据文件，该文件描述有关 Web 应用的关键信息，以便 Windows 10 和其他主机平台为 PWA 用户提供可安装的本机类似应用的体验。  关键信息包括图标、语言和 URL 入口点。
-   :::column-end:::
-:::row-end:::
+现在，使用 Web 技术无法执行很多操作，由于 Microsoft Edge，桌面上的 PWA 可以充分利用这一点，从而提供用户期望桌面应用执行哪些操作。
 
-若要成为出色的PWA，你的应用还必须满足以下要求。
+有关 [PWA 可以][Davrous20191018MythBustingPwasNewEdgeEdition] 执行哪些功能的信息，请参阅向 PWA 提供一些信息。
 
-:::row:::
-   :::column span="1":::
-      [跨浏览器兼容性][MDNCrossBrowserTesting]
-   :::column-end:::
-   :::column span="2":::
-      通过在不同PWA[环境中][MicrosoftDeveloperEdgeToolsRemote]进行测试，确保应用程序正常工作。
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      [响应式设计][WikiResponsiveWebDesign]
-   :::column-end:::
-   :::column span="2":::
-      采用流畅的布局和灵活的图像。  响应式设计包括以下使用户体验适应用户设备的元素。
 
-      *   CSS [网格][MDNCssGridLayout]
-      *   [flexbox][MDNCssFlexibleBoxLayout]
-      *   CSS [网格][MDNCssGridLayout] 和 [弹性框][MDNCssFlexibleBoxLayout]
-      *   [媒体查询][MDNMediaQueries]
-      *   [响应式图像][MDNResponsiveImages]
+<!-- ====================================================================== -->
+## <a name="the-microsoft-store"></a>The Microsoft Store
 
-      使用[浏览器的设备仿真][DevToolsGuideDeviceModeTestingOtherBrowsers]工具在本地测试，或在 Windows[或 Android][DevtoolsRemoteDebuggingIndex]上创建远程调试会话[][DevtoolsRemoteDebuggingWindows]，以在目标设备上直接进行测试。
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      [深度链接][WikiDeepLinking]
-   :::column-end:::
-   :::column span="2":::
-      将网站的每个页面路由到一个唯一 URL，以便现有用户可以通过社交媒体共享帮助你吸引更广泛的受众。
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      [验证和测试实践][Webhint]
-   :::column-end:::
-   :::column span="2":::
-      使用 [Webhint][Webhint] linter 等代码质量工具优化应用的效率、稳定性、安全性和辅助功能。
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      [Chromium PWA清单][WebDevGoodPwaChecklist]
-   :::column-end:::
-   :::column span="2":::
-      验证你的PWA Google 基线PWA清单。
-   :::column-end:::
-:::row-end:::
+由于 PWA 是 Microsoft Store 一[][PwaMicrosoftStore]流公民，因此用户可以从发现、安装到执行完全参与，而无需打开浏览器。
 
-> [!NOTE]
-> 若要将PWA转换为[Microsoft Store应用，][MicrosoftDeveloperStore]请导航到"渐进式 Web 应用[Microsoft Store"。][PwaChromiumMicrosoftStore]
+作为电脑中最常用的应用，Microsoft Store为用户安装应用提供可信且熟悉的体验。 此外，你可以查看详细的使用情况统计信息和图表，以便你了解应用中Microsoft Store方式。
 
+了解如何将[你的PWA发布到Microsoft Store。][PwaPublishToStore]
+
+
+<!-- ====================================================================== -->
+## <a name="success-stories"></a>成功案例
+
+使用PWA技术是使你的应用安全、可发现、可链接、易于**** 安装和更新****、响应迅速**** 且**独立于网络的一种很好的方法**。 **** **** 许多企业都使用 PWA 并获得成功。
+
+*   每天PWA用户数增加两次，桌面版订单数几乎与移动源 ([的][StarbucksSuccessStory]) 。
+*   Trivago 发现向主屏幕添加其 PWA 的人增加了 150%，参与度提高导致到酒店产品/ (的点击量增加了 97%。) 。 [][TrivagoSuccessStory]
+*   Tinder 使用其 PWA 将加载时间从 11.91 秒剪切到 4.68 秒，并且应用比已编译的 Android (源) [][TinderSuccessStory]小 90%。
+
+在"统计数据"网站上PWA[成功][PwaStats]案例。
+
+
+<!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
+*   [Microsoft Build 2020 PWA会话][BuildVideo]
 *   [百万亿美元 PBA][Davrous20191018MythBustingPwasNewEdgeEdition]
 *   [渐进式 Web 应用的渐进路线图][CloudfourThinksProgressiveRoadmapYourWebApp]
 *   [使用渐进 Web 应用的脱机 POS][MediumWebEdgeOfflinePostsProgressiveWebApps]
 *   [PWA问答&][AaronGustafsonNotebookPwaQa]
 *   [Web 上的百年][JoretegBlogBettingWeb]
 *   [命名渐进式 Web 应用][Fberriman20170626NamingProgressiveWebApps]
-*   [设计和生成不带框架的渐进式 Web 应用 (第 1) ][Smashingmagazine201907ProgressiveWebAppFrameworkPart1]
-*   [设计和生成不带框架的渐进式 Web 应用 (第 2) ][Smashingmagazine201907ProgressiveWebAppFrameworkPart2]
-*   [设计和生成不带框架的渐进式 Web (第 3) ][Smashingmagazine201907ProgressiveWebAppFrameworkPart3]
+*   [设计和生成不带框架的渐进式 Web (第 1) ][Smashingmagazine201907ProgressiveWebAppFrameworkPart1]
+*   [设计和生成不带框架的渐进式 Web (第 2) ][Smashingmagazine201907ProgressiveWebAppFrameworkPart2]
+*   [设计和生成不带框架的渐进式 Web (第 3 部分) ][Smashingmagazine201907ProgressiveWebAppFrameworkPart3]
+*   [什么是良好的渐进式 Web 应用？][WebDevGoodPwaChecklist]
 
-<!-- links -->
 
-[DevtoolsRemoteDebuggingIndex]: ../devtools-guide-chromium/remote-debugging/index.md "Android 设备远程调试入门 | Microsoft Docs"
-[DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "远程调试 Windows 10 设备|Microsoft Docs"
-[DevToolsGuideDeviceModeTestingOtherBrowsers]: ../devtools-guide-chromium/device-mode/testing-other-browsers.md "模拟和测试其他浏览器|Microsoft Docs"
-[DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps/index.md "调试渐进式 Web 应用 | Microsoft Docs"
-[PwaChromiumMicrosoftStore]: ./microsoft-store.md "将渐进式 Web 应用发布到Microsoft Store |Microsoft Docs"
-
-[WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "WindowsWNS (推送通知) 概述|Microsoft Docs"
-[WindowsUWPDesignDevicesDesigningTv]: /windows/uwp/design/devices/designing-for-tv.md "针对 Xbox 和电视|Microsoft Docs"
-[WindowsUWPDesignDevicesIndex]: /windows/uwp/design/devices/index.md "UWP 设备的 UI 注意事项|Microsoft Docs"
-[WindowsUWPGetStartedGuide]: /windows/uwp/get-started/universal-application-platform-guide.md "什么是通用 Windows 平台 (UWP) 应用？|Microsoft Docs"
-[WindowsUWPLaunchResumeBackgroundTasks]: /windows/uwp/launch-resume/support-your-app-with-background-tasks.md "使用后台任务支持|Microsoft Docs"
-[WindowsUWPPublishIndex]: /windows/uwp/publish/index.md "发布Windows应用和游戏|Microsoft Docs"
-[WindowsUWPPublishDeveloperAccount]: /windows/uwp/publish/opening-a-developer-account.md "打开开发人员帐户|Microsoft Docs"
-
-[WindowsBlogsWelcomingPWAsEdgeWindows]: https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/#56z7mJwKsykfbR4I.97 "使渐进式 Web 应用Microsoft Edge和Windows 10 - Windows博客"
-[MicrosoftDeveloperEdgePlatformStatusBackgroundSync]: https://developer.microsoft.com/microsoft-edge/platform/status/backgroundsyncapi "后台同步 API - Microsoft Edge平台状态"
-[MicrosoftDeveloperEdgePlatformStatusWebAppManifest]: https://developer.microsoft.com/microsoft-edge/platform/status/webapplicationmanifest "Web 应用清单 - Microsoft Edge平台状态"
-[MicrosoftDeveloperEdgeToolsRemote]: https://developer.microsoft.com/microsoft-edge/tools/remote "即时测试"
-[MicrosoftDeveloperWindowsMixedReality]: https://developer.microsoft.com/windows/mixed-reality "混合现实（针对开发人员）"
-[MicrosoftDeveloperWindowsSurfaceHub]: https://developer.microsoft.com/windows/surfacehub "Microsoft Surface Hub"
-[MicrosoftDeveloperStore]: https://developer.microsoft.com/store "Microsoft 开发人员应用商店"
-[MicrosoftEdge]: https://www.microsoft.com/edge "下载新版 Microsoft Edge 浏览器"
-[MicrosoftSupportWindowsFocusAssist]: https://support.microsoft.com/help/4026996/windows-10-turn-focus-assist-on-or-off "在打开或关闭焦点辅助Windows 10"
-[MicrosoftSupportWindowsNotificationSettings]: https://support.microsoft.com/help/4028678/windows-10-change-notification-settings "更改通知中的Windows 10"
-
-[AaronGustafsonNotebookPwaQa]: https://www.aaron-gustafson.com/notebook/pwa-qa "PWA问答&"
-
+<!-- ====================================================================== -->
+<!-- Links -->
+[MDNApps]: https://developer.mozilla.org/Apps/Progressive "渐进式 Web 应用|MDN"
 [AListApartUnderstandingProgressiveEnhancement]: https://alistapart.com/article/understandingprogressiveenhancement "了解渐进式增强 - 列表分开"
-
-[MDNApps]: https://developer.mozilla.org/Apps/Progressive "应用|MDN"
-[MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "缓存|MDN"
-[MDNCrossBrowserTesting]: https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing "跨浏览器测试|MDN"
-[MDNCssFlexibleBoxLayout]: https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout "CSS 弹性框布局|MDN"
-[MDNCssGridLayout]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout "CSS 网格布局 | MDN"
-[MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "Fetch API | MDN"
-[MDNMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries "媒体查询|MDN"
-[MDNNotificationsApi]: https://developer.mozilla.org/docs/Web/API/Notifications_API "通知 API | MDN"
-[MDNPushApi]: https://developer.mozilla.org/docs/Web/API/Push_API "推送 API | MDN"
+[PwaStats]: https://www.pwastats.com/ "与渐进式 Web 应用相关的统计数据和新闻的社区驱动列表"
+[StarbucksSuccessStory]: https://twitter.com/davidbrunelle/status/993960071406080000 "David Brunelle |Twitter"
+[TrivagoSuccessStory]: https://www.thinkwithgoogle.com/intl/en-gb/marketing-strategies/app-and-mobile/trivago-embrace-progressive-web-apps-as-the-future-of-mobile/  "接下来的十亿用户：三角网将渐进式 Web 应用作为移动设备|使用 Google 思考"
+[TinderSuccessStory]: https://medium.com/@addyosmani/a-tinder-progressive-web-app-performance-case-study-78919d98ece0 "Tinder Progress Web App 性能案例研究|Medium.com"
 [MDNPwaAdvantagesDiscoverable]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Discoverable "可发现 - 渐进式 Web 应用优势"
 [MDNPwaAdvantagesInstallable]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Installable "可安装 - 渐进式 Web 应用优势"
 [MDNPwaAdvantagesLinkable]: https://developer.mozilla.org/Apps/Progressive/Advantages#Linkable "可链接 - 渐进式 Web 应用优势"
@@ -294,35 +177,17 @@ ms.locfileid: "12035255"
 [MDNPwaAdvantagesReEngageable]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Re-engageable "重新参与 - 渐进式 Web 应用优势"
 [MDNPwaAdvantagesResponsive]: https://developer.mozilla.org/Apps/Progressive/Advantages#Responsive "响应式 - 渐进式 Web 应用优势"
 [MDNPwaAdvantagesSafe]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Safe "保险箱 - 渐进式 Web 应用优势"
-[MDNResponsiveImages]: https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images "响应式|MDN"
-[MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "服务工作线程 API |MDN"
-[MDNSyncManager]: https://developer.mozilla.org/docs/Web/API/SyncManager "SyncManager |MDN"
-[MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Web 应用清单|MDN"
-
 [BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "PWA视频"
-
-[CloudfourThinksProgressiveRoadmapYourWebApp]: https://cloudfour.com/thinks/a-progressive-roadmap-for-your-progressive-web-app "渐进式 Web 应用的渐进路线图"
-
 [Davrous20191018MythBustingPwasNewEdgeEdition]: https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition "百年计划 PBA – 新边缘版本"
-
-[Fberriman20170626NamingProgressiveWebApps]: https://fberriman.com/2017/06/26/naming-progressive-web-apps "命名渐进式 Web 应用"
-
-[JoretegBlogBettingWeb]: https://joreteg.com/blog/betting-on-the-web "Web 上的百年"
-
+[CloudfourThinksProgressiveRoadmapYourWebApp]: https://cloudfour.com/thinks/a-progressive-roadmap-for-your-progressive-web-app "渐进式 Web 应用的渐进路线图"
 [MediumWebEdgeOfflinePostsProgressiveWebApps]: https://medium.com/web-on-the-edge/offline-posts-with-progressive-web-apps-fc2dc4ad895 "使用渐进 Web 应用的脱机 POS"
-
-[PWABuilder]: https://www.pwabuilder.com "PWABuilder"
-
+[AaronGustafsonNotebookPwaQa]: https://www.aaron-gustafson.com/notebook/pwa-qa "PWA问答&"
+[JoretegBlogBettingWeb]: https://joreteg.com/blog/betting-on-the-web "Web 上的百年"
+[Fberriman20170626NamingProgressiveWebApps]: https://fberriman.com/2017/06/26/naming-progressive-web-apps "命名渐进式 Web 应用"
 [Smashingmagazine201907ProgressiveWebAppFrameworkPart1]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-1 "设计和构建不带框架的渐进式 Web (第 1) "
-
-[Smashingmagazine201907ProgressiveWebAppFrameworkPart2]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-2 "设计和构建不带框架的渐进式 Web (第 2) "
-
-[Smashingmagazine201907ProgressiveWebAppFrameworkPart3]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-3 "设计和构建不带框架的渐进式 Web (第 3) "
-
+[Smashingmagazine201907ProgressiveWebAppFrameworkPart2]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-2 "设计和构建不带框架的渐进式 Web 应用程序 (第 2) "
+[Smashingmagazine201907ProgressiveWebAppFrameworkPart3]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-3 "设计和构建不带框架的渐进式 Web (第 3 部分) "
 [WebDevGoodPwaChecklist]: https://web.dev/pwa-checklist "什么是良好的渐进式 Web 应用？|web.dev"
-
-[Webhint]: https://webhint.io "webhint"
-
-[WikiDeepLinking]: https://en.wikipedia.org/wiki/Deep_linking "深层链接 - Wikipedia"
-[WikiHttps]: https://en.wikipedia.org/wiki/HTTPS "HTTPS - Wikipedia"
-[WikiResponsiveWebDesign]: https://en.wikipedia.org/wiki/Responsive_web_design "响应式 Web 设计 - 维基百科"
+[PwaMicrosoftStore]: https://www.microsoft.com/store/apps/windows "Windows应用|Microsoft Store"
+[PwaWindowsUx]: ./ux.md "PWA 的用户体验|Microsoft Docs"
+[PwaPublishToStore]: ./how-to/microsoft-store.md "将渐进式 Web 应用发布到Microsoft Store |Microsoft Docs"

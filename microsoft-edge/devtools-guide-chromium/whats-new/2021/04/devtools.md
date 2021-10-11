@@ -7,12 +7,12 @@ ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 31d36f5fde3d81a84dfff310107bb4e4bfa71777
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 17c87626c2519cfd68016b58727693e5c56517cf
+ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082195"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "12086960"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -399,8 +399,8 @@ DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工
 [DevtoolsServiceWorkerIndex]: ../../../service-workers/index.md "服务工作进程改进 | Microsoft Docs"
 [DevtoolsSourcesUsingDebuggerPaneToDebugJavascriptCode]: ../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code "使用调试器窗格调试 JavaScript 代码 - 源工具概述 |Microsoft Docs"
 
-[ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]: ../../../../progressive-web-apps-chromium/serviceworker.md#the-service-worker-lifecycle "服务工作进程生命周期 - 使用服务工作进程管理网络请求和推送通知 | Microsoft Docs"
-[ProgressiveWebAppsWebappmanifests]: ../../../../progressive-web-apps-chromium/webappmanifests.md "使用 Web 应用清单将渐进式 Web 应用集成到操作系统 | Microsoft Docs"
+[ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]: ../../../../progressive-web-apps-chromium/how-to/service-workers.md#the-service-worker-lifecycle "服务工作进程生命周期 - 使用服务工作进程管理网络请求和推送通知 | Microsoft Docs"
+[ProgressiveWebAppsWebappmanifests]: ../../../../progressive-web-apps-chromium/how-to/web-app-manifests.md "使用 Web 应用清单将渐进式 Web 应用集成到操作系统 | Microsoft Docs"
 
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
 <!--[GithubMicrosoftVscodeEdgeDevtoolsPullxxx]: https://github.com/microsoft/vscode-edge-devtools/pull/xxx "Pull xxx: Lorem al Ipsum | GitHub"  -->
@@ -425,7 +425,7 @@ DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工
 [CR979000]: https://crbug.com/979000 "问题 979000：具有碰撞源路径的源映射不起作用。"
 [CR1066604]: https://crbug.com/1066604 "问题1066604：DevTools：查看有关 ServiceWorker 安装和激活事件的详细信息 | Chromium bug"
 <!--  [CR1066772]: https://crbug.com/1066772 "Issue 1066772: "  locked  -->
-[CR1076198]： https://crbug.com/1076198 "Issue 1076198： [Feature Request] Jump to computed property from `styles` tab&quot; [CR1092093]： https://crbug.com/1092093 &quot;Issue 1092093： Make form controls more color-stylable by supporting the 'accent-color' CSS property&quot; [CR1136655]： https://crbug.com/1136655 &quot;Issue 1136655： Devtools： Localization V2 |Chromium bug&quot; [CR1142705]： &quot;问题 1142705：在使用 webpack 时，2 个源映射指向同一虚拟文件时断点停止工作 https://crbug.com/1142705 &quot; [CR1149832]： &quot;问题 1149832： 功能请求：图像预览还应显示文件大小 https://crbug.com/1149832 &quot;[CR1158827]： https://crbug.com/1158827 &quot;Issue 1158827： [Permissions Policy] Implement devtool support for permissions policy&quot; [CR1162042]： https://crbug.com/1162042 &quot;Issue 1162042： DevTools： support disabling gzip/brotli/jxl content-encoding&quot; [CR1166577]： https://crbug.com/1166577 &quot;Issue 1166577： ☂️ Linear Memory Inspector 1.0&quot; [CR1170656]： https://crbug.com/1170656 &quot;Issue 1170656： Show intrinsic aspect-ratio&quot; [CR1178305]： https://crbug.com/1178305 &quot;Issue 1178305： Debugger doesn't show an indexed element's property value 悬停在它时&quot; [CR1180794]： &quot;问题 1180794： 断点不能用于关闭编译器内线优化 https://crbug.com/1180794 &quot; [CR1185945]： https://crbug.com/1185945 &quot;问题 1185945： 清单警告表示所有图标都必须是方形 |Chromium bug&quot; [CR1186049]： https://crbug.com/1186049 &quot;Issue 1186049： Column for Vary： header in Cache 存储 viewer&quot; [CR1187735]： https://crbug.com/1187735 &quot;Issue 1187735： Accessibility： MAS2.1.1： Keyboard： Unable to invoke the 'Var (..) 键盘的 |Chromium bug&quot; [CR1189161]： &quot;问题 1189161：堆栈跟踪不是通过 BUGS 转换 https://crbug.com/1189161 `new Error` &quot;[CR1191465]： https://crbug.com/1191465 &quot;问题 1191465： Ctrl+Shift+O 损坏 HTML"
+[CR1076198]： https://crbug.com/1076198 "Issue 1076198： [Feature Request] Jump to computed property from `styles` tab&quot; [CR1092093]： https://crbug.com/1092093 &quot;Issue 1092093： Make form controls more color-stylable by supporting the 'accent-color' CSS property&quot; [CR1136655]： https://crbug.com/1136655 &quot;Issue 1136655： Devtools： Localization V2 |Chromium bug&quot; [CR1142705]： &quot;问题 1142705：在使用 webpack 时，2 个源映射指向同一虚拟文件时断点停止工作 https://crbug.com/1142705 &quot; [CR1149832]： &quot;问题 1149832： 功能请求：图像预览还应显示文件大小 https://crbug.com/1149832 &quot;[CR1158827]： https://crbug.com/1158827 &quot;Issue 1158827： [Permissions Policy] Implement devtool support for permissions policy&quot; [CR1162042]： https://crbug.com/1162042 &quot;Issue 1162042： DevTools： support disabling gzip/brotli/jxl content-encoding&quot; [CR1166577]： https://crbug.com/1166577 &quot;Issue 1166577： ☂️ Linear Memory Inspector 1.0&quot; [CR1170656]： https://crbug.com/1170656 &quot;Issue 1170656： Show intrinsic aspect-ratio&quot; [CR1178305]： https://crbug.com/1178305 &quot;Issue 1178305： Debugger doesn't show an indexed element's property value when 它悬停&quot; [CR1180794]： &quot;问题 1180794： 断点不能用于关闭编译器内线优化 https://crbug.com/1180794 &quot; [CR1185945]： https://crbug.com/1185945 &quot;问题 1185945： 清单警告表示所有图标都必须是方形 |Chromium bug&quot; [CR1186049]： https://crbug.com/1186049 &quot;问题 1186049： Vary 的列： 缓存 存储 查看器中的标头&quot; [CR1187735]： https://crbug.com/1187735 &quot;问题 1187735： 辅助功能： MAS2.1.1： 键盘：无法调用 'Var (.&quot;。) 键盘的 |Chromium bug&quot; [CR1189161]： &quot;问题 1189161： 堆栈跟踪不是通过 BUGS 转换 https://crbug.com/1189161 `new Error` 的&quot;[CR1191465]： https://crbug.com/1191465 &quot;问题 1191465： Ctrl+Shift+O 损坏在 HTML 上"
 
 [GithubW3cWebappsecPermissionsPolicyPermissionsPolicyExplainerMd]: https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md "权限策略解释器 | GitHub"
 

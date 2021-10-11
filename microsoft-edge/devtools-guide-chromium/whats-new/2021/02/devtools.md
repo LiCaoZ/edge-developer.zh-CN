@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 4c6fd0b3f9bd520724957534432f44495118b315
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 66c319e0f4d13d681eff3f4db74354b983fb9ea5
+ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082720"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "12087016"
 ---
 <!-- Copyright Jecelyn Yeen
 
