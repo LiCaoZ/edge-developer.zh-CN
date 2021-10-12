@@ -7,12 +7,12 @@ ms.date: 09/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: 渐进式 Web 应用， PWA， edge， Windows， 桌面， 安装， 集成， microsoft store， ux
-ms.openlocfilehash: 8ded6e4574e3bdfd0363e10838540467316c0a10
-ms.sourcegitcommit: 18bc9a85940de5a8f390c9a4c9d9e34c4196f5aa
+ms.openlocfilehash: b17be37af447de5235876582439bbca590b9ab8a
+ms.sourcegitcommit: 626f107aa5ea96cb0090763185f1def084b8c2f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/11/2021
-ms.locfileid: "12087679"
+ms.locfileid: "12087756"
 ---
 # <a name="the-user-experience-of-pwas"></a>PWA 的用户体验
 
@@ -33,7 +33,7 @@ ms.locfileid: "12087679"
 
 若要从PWA安装Microsoft Store，**请选择应用页面上**的"获取"。
 
-:::image type="content" source="./media/install-twitter-microsoft-store.png" alt-text="从应用程序安装Microsoft Store。" lightbox="./media/install-twitter-microsoft-store.png":::
+:::image type="content" source="./media/install-webboard-microsoft-store.png" alt-text="从应用程序安装Microsoft Store。" lightbox="./media/install-webboard-microsoft-store.png":::
 
 
 <!-- ====================================================================== -->
@@ -88,7 +88,7 @@ PBA 可以在用户登录应用时自动Windows，以便他们可以立即使用
 <!-- ====================================================================== -->
 ## <a name="app-info-menu"></a>应用信息菜单
 
-当用户在应用的标题栏中 (省略号) ..."按钮时，**** 将显示"应用**信息**"菜单。 此菜单包含有关应用的有用信息，例如：
+当用户在应用的标题栏中 (省略号) ..."按钮时****，将显示"**应用信息**"菜单。 此菜单包含有关应用的有用信息，例如：
 
 *  应用图标、名称和发布者。
 *  已授予的各种应用程序权限。
