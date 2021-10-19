@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、edge html、Windows Forms、WinForms、WPF、.NET、WinUI、Project Reunion
-ms.openlocfilehash: 73db208337f6d0ccabeed55b50c6af5ea67756eb
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 86dcc02c596891904455ccf3dfbb5a9d06698a3d
+ms.sourcegitcommit: 3dce4eececc6b998c604547174d56be5dd0bf45d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082839"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "12100783"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介
 
@@ -130,7 +130,7 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术\(HTML、
       依赖带有定期平台更新和安全修补的最新版 Chromium。
    :::column-end:::
    :::column span="1":::
-      （可选）打包应用中特定Chromium位。
+      （可选）在应用中打包特定Chromium位。
    :::column-end:::
    :::column span="1":::
       将 Web 组件分片添加到应用。
@@ -144,7 +144,7 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术\(HTML、
 *   [在 Win32 应用中开始使用 WebView2][Webview2GetStartedWin32]
 *   [WPF 应用中的 WebView2 入门][Webview2GetStartedWpf]
 *   [WinForms 应用中的 WebView2 入门][Webview2GetStartedWinforms]
-*   [WinUI 2 应用中的 WebView2 入门][Webview2GetStartedWinui2]
+*   [WinUI 2 应用和预览版中的 WebView2 (入门) ][Webview2GetStartedWinui2]
 *   [WinUI 3 应用和预览版中的 WebView2 (入门) ][Webview2GetStartedWinui]
 
 [WebView2 示例][GithubMicrosoftedgeWebview2samples] 存储库包含演示所有 WebView2 SDK 功能和 API 使用模式的示例。  随着更多功能添加到 WebView2 SDK 中，示例应用将相应更新。
@@ -198,11 +198,11 @@ WebView2 应用可以在以下版本的 Windows。
 
 [Webview2GetStartedWin32]: ./get-started/win32.md "Win32 应用和应用中的 WebView2 |Microsoft Docs"
 [Webview2GetStartedWinforms]: ./get-started/winforms.md "WinForms 应用和应用中的 WebView2 |Microsoft Docs"
-[Webview2GetStartedWinui2]: ./get-started/winui2.md "WinUI 2 应用和应用中的 WebView2 |Microsoft Docs"
+[Webview2GetStartedWinui2]: ./get-started/winui2.md "在 WinUI 2 应用中开始使用 WebView2 |Microsoft Docs"
 [Webview2GetStartedWinui]: ./get-started/winui.md "WinUI 3 应用和预览版中的 WebView2 (入门) |Microsoft Docs"
 [Webview2GetStartedWpf]: ./get-started/wpf.md "WPF 应用和应用中的 WebView2 |Microsoft Docs"
 
-[Webview2HowToDebug]: ./how-to/debug.md "开始调试 WebView2 应用|Microsoft Docs"
+[Webview2HowToDebug]: ./how-to/debug.md "开始调试 WebView2 |Microsoft Docs"
 [Webview2HowToWebdriver]: ./how-to/webdriver.md "使用 Microsoft Edge 驱动程序自动执行并测试 WebView2 | Microsoft Docs"
 [Webview2ReleaseNotes]: ./release-notes.md "WebView2 SDK 发行说明 | Microsoft Docs"
 <!-- external links -->

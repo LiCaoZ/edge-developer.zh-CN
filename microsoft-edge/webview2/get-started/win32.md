@@ -3,39 +3,46 @@ description: 适用于 Win32 应用的 WebView2 入门指南
 title: 在 Win32 应用中开始使用 WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 09/09/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 735c14910f0ffa6243198c56fa1d270c19251573
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 17af7171cf13b4c2c8690aab4a623ce022a1fb2b
+ms.sourcegitcommit: 3dce4eececc6b998c604547174d56be5dd0bf45d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083707"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "12100776"
 ---
 # <a name="get-started-with-webview2-in-win32-apps"></a>在 Win32 应用中开始使用 WebView2
 
 本文将开始创建你的第一个 WebView2 应用，并了解 [WebView2 的主要功能][MicrosoftDeveloperMicrosoftEdgeWebview2]。  有关各个 WebView2 API 的信息，请导航到 [API 参考][Webview2ReferenceWin32]。
 
+> [!NOTE]
+> 本教程引用 WebView2 示例。 若要查看或复制示例代码，请导航到 [WebView2 示例代码][GithubMicrosoftedgeWebview2samplesMain]。
+
+
+<!-- ====================================================================== -->
 ## <a name="prerequisites"></a>必备条件
 
 请确保先安装以下必备组件列表，然后再继续。
 
 *   [WebView2][Webview2Installer]运行时或任何[Microsoft Edge Insider (preview) Channel (][MicrosoftedgeinsiderDownload] Beta、Dev 或 Canary) 安装在受支持的操作系统 \ (、Windows 10、Windows 8.1 和 Windows 7\) 上。
 
-*   [Visual Studio][MicrosoftVisualstudioMain]安装 C++ 支持的 2015 或更高版本。
+*   [Visual Studio][MicrosoftVisualstudioMain]安装有 C++ 支持的 2015 或更高版本。
 
+
+<!-- ====================================================================== -->
 ## <a name="step-1---create-a-single-window-app"></a>步骤 1 - 创建单窗口应用
 
 从包含单个主窗口的基本桌面项目开始。
 
 > [!IMPORTANT]
-> 为了更好地关注演练，请使用演练：为示例应用创建传统的 Windows 桌面 ([C++][CppWindowsWalkthroughCreatingDesktopApplication]) 中修改的示例代码。  若要下载修改后的示例并开始，请导航到["WebView2 示例"。][GithubMicrosoftedgeWebview2samplesGettingStartedGuide]
+> 为了更好地关注演练，请使用演练：为示例应用创建传统 Windows 桌面应用程序 ([C++][CppWindowsWalkthroughCreatingDesktopApplication]) 中修改的示例代码。  若要下载修改后的示例并开始，请导航到["WebView2 示例"。][GithubMicrosoftedgeWebview2samplesGettingStartedGuide]
 
 1.  在Visual Studio中，打开 `WebView2GettingStarted.sln` 。
-    如果使用早期版本的 Visual Studio，请将鼠标悬停在**WebView2GettingStarted**项目上，打开上下文菜单 \ (右键单击\) ，然后选择"**属性"。**  在**配置属性**  >  **常规**下 **，Windows SDK**版本和**** 平台工具集，以使用 Win10 SDK Visual Studio可用的工具集。
+    如果使用早期版本的 Visual Studio，请将鼠标悬停在**WebView2GettingStarted**项目上，打开上下文菜单 \ (右键单击\) ，**然后选择"属性**"。  在**配置属性**  >  **常规**下 **，Windows SDK**版本和平台**** 工具集，以使用 Win10 SDK 和Visual Studio可用的工具集。
 
 :::image type="complex" source="../media/tool-version.png" alt-text="工具版本" lightbox="../media/tool-version.png":::
    工具版本
@@ -43,11 +50,13 @@ ms.locfileid: "12083707"
 
 Visual Studio显示错误，因为项目缺少 WebView2 头文件。  应在步骤 [2 之后修复错误](#step-2---install-webview2-sdk)。
 
+
+<!-- ====================================================================== -->
 ## <a name="step-2---install-webview2-sdk"></a>步骤 2 - 安装 WebView2 SDK
 
 将 WebView2 SDK 添加到项目中。  使用 NuGet 安装 Win32 SDK。
 
-1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击\) ，然后选择"管理NuGet**包"。**
+1.  将鼠标悬停在项目中，打开上下文菜单 \ (右键单击\) ，然后选择"管理NuGet**包"。**
 
     :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="管理 NuGet 程序包" lightbox="../media/manage-nuget-packages.png":::
        管理 NuGet 程序包
@@ -58,7 +67,7 @@ Visual Studio显示错误，因为项目缺少 WebView2 头文件。  应在步�
     1.  在右侧窗口中，选择"安装 **"。**  NuGet将库下载到计算机。
 
         > [!NOTE]
-        > 实现[Windows库][GithubMicrosoftWilMain]和[Windows 运行时 C++ 模板][CppCxWrlTemplateLibraryVS2019]库是可选的，因此对于此示例而言，使用 COM 更加容易。
+        > 实现[Windows库][GithubMicrosoftWilMain]和[Windows 运行时 C++ 模板][CppCxWrlTemplateLibraryVS2019]库是可选的，并且使使用 COM 更容易作为示例。
 
         :::image type="complex" source="../media/wil.png" alt-text="Windows实现库" lightbox="../media/wil.png":::
            Windows实现库
@@ -106,11 +115,13 @@ Visual Studio显示错误，因为项目缺少 WebView2 头文件。  应在步�
    空应用
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="step-3---create-a-single-webview-within-the-parent-window"></a>步骤 3 - 在父窗口中创建单个 WebView
 
 将 WebView 添加到主窗口。
 
-使用 `CreateCoreWebView2Environment` 方法设置环境并找到支持Microsoft Edge \ (Chromium\) 的浏览器。  如果要指定浏览器位置、用户文件夹、浏览器标志等，也可以使用此方法，而不是 `CreateCoreWebView2EnvironmentWithOptions` 使用默认设置。  完成该方法后，在回调中运行 方法并运行 `CreateCoreWebView2Environment` `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` 方法，获取关联的 WebView。
+使用 `CreateCoreWebView2Environment` 方法设置环境，并找到Microsoft Edge \ (Chromium\) 控件的浏览器。  如果要指定浏览器位置、用户文件夹、浏览器标志等，也可以使用此方法，而不是 `CreateCoreWebView2EnvironmentWithOptions` 使用默认设置。  完成该方法后，在回调中运行 方法并运行 `CreateCoreWebView2Environment` `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` 方法，获取关联的 WebView。
 
 在回调中，设置一些设置，调整 WebView 的大小以使用 100% 的父窗口，然后导航到必应。
 
@@ -167,6 +178,8 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
    必应窗口
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="step-4---navigation-events"></a>步骤 4 - 导航事件
 
 WebView2 团队已在上一步中介绍了使用 `ICoreWebView2::Navigate` 方法导航到 URL 的内容。  在导航过程中，WebView 会触发主机可以侦听的一系列事件。
@@ -212,6 +225,8 @@ webviewWindow->add_NavigationStarting(Callback<ICoreWebView2NavigationStartingEv
 
 现在，应用不会导航到任何非 https 网站。  可以使用类似的机制完成其他任务，例如将导航限制到您自己的域中。
 
+
+<!-- ====================================================================== -->
 ## <a name="step-5---scripting"></a>步骤 5 - 脚本
 
 你可以在运行时使用主机应用将 JavaScript 代码注入 WebView2 控件。  你可以任务 WebView 运行任意 JavaScript 或添加初始化脚本。  在删除 JavaScript 之前，注入的 JavaScript 适用于所有新的顶级文档和任何子框架。  注入的 JavaScript 以特定计时运行。
@@ -236,8 +251,10 @@ webviewWindow->ExecuteScript(L"window.document.URL;", Callback<ICoreWebView2Exec
 现在，WebView 应始终冻结 `Object` 对象并返回页面文档一次。
 
 > [!NOTE]
-> 脚本注入 API \ (和其他一些 WebView2 API\) 是异步的，如果代码必须按特定顺序运行，则应该使用回调。
+> 脚本注入 API \ (和一些其他 WebView2 API\) 是异步的，如果代码必须按特定顺序运行，则应该使用回调。
 
+
+<!-- ====================================================================== -->
 ## <a name="step-6---communication-between-host-and-web-content"></a>步骤 6 - 主机和 Web 内容之间的通信
 
 主机和 Web 内容还可通过 方法相互 `postMessage` 通信。  在 WebView 中运行的 Web 内容可以通过 方法发布给主机，消息由主机上注册的任何 `window.chrome.webview.postMessage` `ICoreWebView2WebMessageReceivedEventHandler` 事件处理程序处理。  同样，主机可能通过 或 方法发送 Web 内容消息，由从侦听器添加的 `ICoreWebView2::PostWebMessageAsString` `ICoreWebView2::PostWebMessageAsJSON` 处理程序捕获 `window.chrome.webview.addEventListener` 。  通信机制允许 Web 内容通过传递消息要求主机运行本机 API 来使用本机功能。
@@ -246,7 +263,7 @@ webviewWindow->ExecuteScript(L"window.document.URL;", Callback<ICoreWebView2Exec
 
 1.  主机注册处理程序以将收到的消息返回给 Web 内容
 1.  主机将脚本注入 Web 内容，Web 内容注册处理程序以从主机打印消息
-1.  主机向将 URL 张贴到主机的 Web 内容注入脚本
+1.  主机将脚本注入到将 URL 张贴到主机的 Web 内容
 1.  将触发主机处理程序，并返回消息 \ (URL\) Web 内容
 1.  将触发 Web 内容的处理程序，并输出来自主机 \ (URL\) 
 
@@ -285,12 +302,14 @@ nullptr);
 
 
 <!-- ====================================================================== -->
-## <a name="see-also"></a>另请参阅
+## <a name="next-steps"></a>后续步骤
+
+有关本文未涵盖的其他 WebView2 功能，请参阅以下资源。
 
 *  [MicrosoftEdge/WebView2Samples 存储库][Win32GithubCode] - 本教程中使用的代码。
 *  [WebView2 开发的最佳做法][WV2BestPractices]
 *  [WebView2 API 示例][GithubMicrosoftedgeWebview2samplesApisample] - WebView2 功能的综合示例。
-*  [WebView2Browser][GithubMicrosoftedgeWebview2browser] - 使用 WebView2 构建的示例应用。
+*  [WebView2Browser][GithubMicrosoftedgeWebview2browser] - WebView2 示例应用。
 *  [WebView2 API 参考][Webview2ReferenceWin32]
 
 
