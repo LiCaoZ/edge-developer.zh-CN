@@ -522,6 +522,8 @@
           href: web-platform/user-agent-guidance.md
         - name: 自定义“密码显示”按钮
           href: web-platform/password-reveal.md
+        - name: 正在使用用户代理客户端提示检测 Windows 11
+          href: web-platform/how-to-detect-win11.md
     - name: Microsoft Edge IDE 集成
       items:
         - name: Visual Studio 概述

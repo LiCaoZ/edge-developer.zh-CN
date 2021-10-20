@@ -7,19 +7,19 @@ ms.date: 06/02/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 0487b7625fc8174cb4a0e28ef569c3a67f28d8c1
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 4f24d04e8c1e99890d4f1678c667dfc5ca10340c
+ms.sourcegitcommit: 54f9566aa935fb853215c9b6f995fa0c98f3261f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082853"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "12103396"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-92"></a>DevTools 中的新增功能 (Microsoft Edge 92)
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
 > [!TIP]
-> **Microsoft Build 2021**会议于 5 月 25-27 日召开。  下面是来自 Build 关于 DevTools 最新消息的视频：[Microsoft Edge｜平台现状][YoutubeEdgeStateOfThePlatform] - Microsoft Edge 为开发人员提供了具有吸引力和一致性的平台。  随着旧版浏览器逐步退出支持，Edge 将很快成为 Microsoft 在 Windows 10 上唯一支持的浏览器。  加入我们，了解有关 Edge 平台、工具和 Web 应用的最新信息。
+> **Microsoft Build 2021**会议于 5 月 25-27 日召开。  下面是来自 Build 关于 DevTools 最新消息的视频：[Microsoft Edge｜平台现状][YoutubeEdgeStateOfThePlatform] - Microsoft Edge 为开发人员提供了具有吸引力和一致性的平台。  随着旧版浏览器逐步退出支持，Edge 即将成为 Microsoft 在或更高版本中唯一Windows 10浏览器。  加入我们，了解有关 Edge 平台、工具和 Web 应用的最新信息。
 
 
 ## <a name="the-close-button-is-no-longer-hidden-when-devtools-is-narrow"></a>当 DevTools 变窄时，“关闭”按钮不再隐藏

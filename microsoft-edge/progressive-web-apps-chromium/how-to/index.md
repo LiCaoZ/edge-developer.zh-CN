@@ -1,5 +1,5 @@
 ---
-description: 渐进式 Web 应用和 PBA (的基础知识) 以及用于构建渐进式 Web 应用Windows。
+description: 渐进式 Web 应用的基础知识 (PA) ，以及用于构建渐进式 Web 应用Windows。
 title: 渐进式 Web 应用入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,18 +7,18 @@ ms.date: 09/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: 渐进式 Web 应用， PWA， Edge， Windows， PWABuilder， Web 清单， 服务工作者， 推送
-ms.openlocfilehash: 1d0626d75da7a5694c754133ec967732eec64eea
-ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
+ms.openlocfilehash: 9224267f3de2872dcb960737707c8abcac230679
+ms.sourcegitcommit: 54f9566aa935fb853215c9b6f995fa0c98f3261f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "12087112"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "12103347"
 ---
 # <a name="get-started-with-progressive-web-apps"></a>渐进式 Web 应用入门
 
 <!-- todo: make sure screenshots of DevTools are up-to-date -->
 
-渐进式 Web (PWA) 是逐渐增强的 Web [应用][WikiProgressiveEnhancement]。  渐进式增强功能包括类似应用的功能，如安装、脱机支持和推送通知。  还可以打包应用商店PWA，如 Microsoft Store、Google Play 和 Mac 应用商店。  the Microsoft Store is the commercial app store that's built into Windows 10.
+渐进式 Web (PWA) 是逐渐增强 [的 Web 应用][WikiProgressiveEnhancement]。  渐进式增强功能包括类似应用的功能，如安装、脱机支持和推送通知。  还可以打包应用商店PWA，如 Microsoft Store、Google Play 和 Mac 应用商店。  the Microsoft Store is the commercial app store that's built into Windows 10.
 
 在此概述PWA，创建一个简单的 Web 应用，并作为一个PWA。  已完成的项目适用于新式浏览器。
 
@@ -64,17 +64,17 @@ npm start
 <!-- ====================================================================== -->
 ## <a name="getting-started-building-a-pwa"></a>开始构建PWA
 
-现在你已拥有一个简单的 Web 应用，请通过添加 PBA 的三个要求PWA扩展它作为应用程序[：HTTPS、Web](#step-1---use-https) [App Manifest](#step-2---create-a-web-app-manifest)和服务[辅助程序](#step-3---add-a-service-worker)。
+现在你已拥有一个简单的 Web 应用，请通过添加 PBA 的三个要求PWA扩展它作为应用程序[：HTTPS、Web](#step-1---use-https) [App 清单](#step-2---create-a-web-app-manifest)和服务[工作者](#step-3---add-a-service-worker)。
 
 
 <!-- ====================================================================== -->
 ## <a name="step-1---use-https"></a>步骤 1 - 使用 HTTPS
 
-应用程序平台的关键PWA（如[服务][MDNServiceWorkerApi]工作者）需要使用 HTTPS。  当PWA上时，必须将其发布到 HTTPS URL。  许多主机现在默认提供 HTTPS，但如果主机未提供 HTTPS，那么"加密"会提供创建所需证书的免费替代方案。
+服务PWA（如[服务][MDNServiceWorkerApi]工作者）的关键部分需要使用 HTTPS。  当PWA上时，必须将其发布到 HTTPS URL。  许多主机现在默认提供 HTTPS，但如果你的主机未提供 HTTPS，那么"加密"会提供创建所需证书的免费替代方案。
 
-出于调试目的，Microsoft Edge `http://localhost` 还允许使用 PWA API。  本教程介绍如何生成 `http://localhost` PWA。
+出于调试目的，Microsoft Edge还 `http://localhost` 允许使用 PWA API。  本教程介绍如何生成 `http://localhost` PWA。
 
-[将 Web 应用发布为实时网站][VisualStudioNodejsTutorialPublishAzureAppService]，但请确保服务器配置为 HTTPS。  例如，你可以创建 Azure [免费帐户][AzureCreateFreeAccount]。  在应用程序服务上Microsoft Azure网站[，][AzureWebApps]默认情况下它通过 HTTPS 提供。
+[将 Web 应用发布为实时网站][VisualStudioNodejsTutorialPublishAzureAppService]，但请确保服务器配置为 HTTPS。  例如，你可以创建 Azure [免费帐户][AzureCreateFreeAccount]。  在应用程序服务[上Microsoft Azure网站，][AzureWebApps]默认情况下它通过 HTTPS 提供。
 
 
 <!-- ====================================================================== -->
@@ -84,7 +84,7 @@ npm start
 
 若要将应用部件清单添加到 Web 应用，请运行以下操作：
 
-1.  在Visual Studio Code中，选择"**文件**  >  **""** 打开文件夹"，然后选择之前 `MySamplePwa` 创建的目录。
+1.  在Visual Studio Code中，选择"**文件**""打开文件夹"，然后选择之前  >  **** `MySamplePwa` 创建的目录。
 1.  选择 `Ctrl` + `N` 以创建新文件，并粘贴以下代码段。
 
     ```json
@@ -109,7 +109,7 @@ npm start
 
 1.  将文件另存为 `/MySamplePwa/public/manifest.json` 。
 1.  将名为 的 512x512 应用图标图像 `icon512.png` 添加到 `/MySamplePwa/public/images` 。  您可以使用示例 [图像](../media/progressive-web-app.png) 进行测试。
-1.  在 Visual Studio Code 中，打开 `/public/index.html` ，在 标记内添加以下 `<head>` 代码段。
+1.  在 Visual Studio Code 中，打开 `/public/index.html` ，在 标记内添加以下代码 `<head>` 段。
 
     ```html
     <link rel="manifest" href="/manifest.json">
@@ -132,9 +132,9 @@ npm start
 
 若要在项目中生成服务工作器，请使用来自**** PWA Builder 的缓存第一网络服务工作器方法，如下所示。
 
-1. 将[源文件pwabuilder-sw-register.js并][PwaBuilderServiceWorkerRegisterJS][pwabuilder-sw.js][PwaBuilderServiceWorkerJS] Web 应用 `public` 项目中的文件夹。
+1. 将[源文件pwabuilder-sw-register.jspwabuilder-sw.js][PwaBuilderServiceWorkerRegisterJS]复制到 Web 应用[][PwaBuilderServiceWorkerJS] `public` 项目中的文件夹。
 
-1.  在Visual Studio Code中， `/public/index.html` 打开 并添加 标记中的以下代码 `<head>` 段。
+1.  在 Visual Studio Code 中， `/public/index.html` 打开 并添加标记中的以下代码 `<head>` 段。
 
     ```html
     <script type="module" src="/pwabuilder-sw-register.js"></script>
@@ -154,7 +154,7 @@ npm start
 
     :::image type="content" source="../media/devtools-sw-overview.png" alt-text="DevTools Service Worker 概述。" lightbox="../media/devtools-sw-overview.png":::
 
-1.  展开"缓存"以查看服务工作器**缓存存储****选择"pwabuilder-precache"。**  应显示服务工作线程缓存的所有资源。  服务工作者缓存的资源包括应用程序图标、应用程序清单、CSS 和 JavaScript 文件。
+1.  通过展开"缓存"来查看服务工作器**缓存存储****选择"pwabuilder-precache"。**  应显示服务工作线程缓存的所有资源。  服务工作者缓存的资源包括应用程序图标、应用程序清单、CSS 和 JavaScript 文件。
 
     :::image type="content" source="../media/devtools-cache.png" alt-text="DevTools 中的服务工作器缓存。" lightbox="../media/devtools-cache.png":::
 
@@ -228,7 +228,7 @@ npm start
 
 *   [MDN Web 文档上的渐进 Web 应用][MDNProgressiveWebApps]
 *   [渐进式 Web 应用 web.dev][WebDevProgressiveWebApps]
-*   [作为渐进式 Web 应用的][HackerNewsProgressiveWebApps]黑客新闻阅读器 - 比较用于实现黑客新闻阅读器示例PWA (框架和性能) 。
+*   [作为渐进 Web 应用的][HackerNewsProgressiveWebApps]黑客新闻阅读器 - 比较用于实现黑客新闻阅读器示例PWA (不同的框架) 。
 *   [百万亿美元 PBA][Davrous20191018MythBustingPwasNewEdgeEdition]
 *   [渐进式 Web 应用的渐进路线图][CloudfourThinksProgressiveRoadmapYourWebApp]
 *   [使用渐进 Web 应用的脱机 POS][MediumWebEdgeOfflinePostsProgressiveWebApps]
@@ -237,7 +237,7 @@ npm start
 *   [命名渐进式 Web 应用][Fberriman20170626NamingProgressiveWebApps]
 *   [设计和构建不带框架的渐进式 Web (第 1) ][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]
 *   [设计和生成不带框架的渐进式 Web (第 2) ][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]
-*   [设计和构建不带框架的渐进式 Web (第 3) ][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]
+*   [设计和构建不带框架的渐进式 Web (第 3 部分) ][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]
 
 
 <!-- ====================================================================== -->
@@ -252,7 +252,7 @@ npm start
 
 [AaronGustafsonNotebookPwaQa]: https://www.aaron-gustafson.com/notebook/pwa-qa "PWA问答&"
 
-[BrowserStackTestEdgeBrowser]: https://www.browserstack.com/test-on-microsoft-edge-browser "Microsoft Edge上的免费浏览器Windows 10 |BrowserStack"
+[BrowserStackTestEdgeBrowser]: https://www.browserstack.com/test-on-microsoft-edge-browser "免费Microsoft Edge浏览器测试Windows 10 |BrowserStack"
 
 [CloudfourThinksProgressiveRoadmapYourWebApp]: https://cloudfour.com/thinks/a-progressive-roadmap-for-your-progressive-web-app "渐进式 Web 应用的渐进路线图"
 
@@ -268,9 +268,9 @@ npm start
 
 <!-- MDN links -->
 [MDNDedicatedWorkerGlobalScopePostMessage]: https://developer.mozilla.org/docs/Web/API/
-[MDNProgressiveWebApps]: https://developer.mozilla.org/Apps/Progressive "渐进式 Web (PBA) |MDN"
-[MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "服务工作线程 API |MDN"
-[MDNUsingServiceWorkers]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers "使用服务工作人员|MDN"
+[MDNProgressiveWebApps]: https://developer.mozilla.org/Apps/Progressive "渐进式 Web (PA) |MDN"
+[MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "服务辅助 API |MDN"
+[MDNUsingServiceWorkers]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers "使用服务工作者|MDN"
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Web 应用清单|MDN"
 [MDNCrossBrowserTesting]: https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing "跨浏览器测试|MDN"
 [MDNWebWorkers]: https://developer.mozilla.org/docs/Web/API/Web_Workers_API "Web 工作人员 API - Web API |MDN"
@@ -294,9 +294,9 @@ npm start
 
 [Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-1 "设计和构建不带框架的渐进式 Web (第 1) "
 
-[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-2 "设计和构建不带框架的渐进式 Web 应用程序 (第 2) "
+[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-2 "设计和构建不带框架的渐进式 Web (第 2) "
 
-[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-3 "设计和构建不带框架的渐进式 Web (第 3 部分) "
+[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-3 "设计和生成不带框架的渐进式 Web (第 3) "
 
 [Webhint]: https://webhint.io "webhint"
 
@@ -310,7 +310,7 @@ npm start
 [MDNCssFlexibleBoxLayout]: https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout "CSS 弹性框布局|MDN"
 [MDNCssGridLayout]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout "CSS 网格布局 | MDN"
 [MDNMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries "媒体查询|MDN"
-[MDNResponsiveImages]: https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images "响应式|MDN"
+[MDNResponsiveImages]: https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images "响应式图像|MDN"
 [DevToolsGuideDeviceModeTestingOtherBrowsers]: ../../devtools-guide-chromium/device-mode/testing-other-browsers.md "模拟和测试其他浏览器|Microsoft Docs"
-[DevtoolsRemoteDebuggingWindows]: ../../devtools-guide-chromium/remote-debugging/windows.md "远程调试 Windows 10 设备|Microsoft Docs"
+[DevtoolsRemoteDebuggingWindows]: ../../devtools-guide-chromium/remote-debugging/windows.md "入门远程调试Windows设备|Microsoft Docs"
 [DevtoolsRemoteDebuggingIndex]: ../../devtools-guide-chromium/remote-debugging/index.md "Android 设备远程调试入门 | Microsoft Docs"

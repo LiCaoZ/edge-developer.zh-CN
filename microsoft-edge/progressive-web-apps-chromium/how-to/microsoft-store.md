@@ -7,12 +7,12 @@ ms.date: 08/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: 渐进 Web 应用、PWA、Edge、Windows、Microsoft Store
-ms.openlocfilehash: 96f53824dde2e5a936a70709cbdbb21a1e3f07b8
-ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
+ms.openlocfilehash: f12382b3192e13b2dce9b82af9057ac6d6797b5e
+ms.sourcegitcommit: 54f9566aa935fb853215c9b6f995fa0c98f3261f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "12087096"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "12103354"
 ---
 # <a name="publish-your-progressive-web-app-to-the-microsoft-store"></a>将渐进式 Web 应用发布到Microsoft Store
 
@@ -41,7 +41,7 @@ ms.locfileid: "12087096"
       **易于安装**
    :::column-end:::
    :::column span="2":::
-      The Microsoft Store provides a consistent and user-friendly install experience across [all Windows 10 apps][MicrosoftStoreAppsWindows].
+      The Microsoft Store provides a consistent and user-friendly install experience across [all Windows 10 or later apps][MicrosoftStoreAppsWindows].
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -49,11 +49,11 @@ ms.locfileid: "12087096"
       **应用分析**
    :::column-end:::
    :::column span="2":::
-      合作伙伴[Windows][WindowsUwpPublishIndex]仪表板提供了有关应用运行状况、使用情况等的详细分析[][WindowsUwpPublishAnalytics]。
+      合作伙伴[Windows][WindowsUwpPublishIndex]仪表板提供了有关应用运行状况、使用情况等的详细[][WindowsUwpPublishAnalytics]分析。
    :::column-end:::
 :::row-end:::
 
-若要将PWA发布到Microsoft Store，无需更改代码。  相反，你可以创建应用预订，打包你的PWA，然后提交到应用商店。  以下各节将介绍这些步骤。
+若要将PWA发布到Microsoft Store，无需更改代码。  相反，你可以创建应用预订、打包PWA，然后提交到应用商店。  以下各节将介绍这些步骤。
 
 
 <!-- ====================================================================== -->
@@ -67,7 +67,7 @@ ms.locfileid: "12087096"
     1.  使用 Microsoft Windows登录到合作伙伴中心，然后转到合作伙伴[中心仪表板][MicrosoftPartnerDashboardHome]。
     1.  导航到**Windows & Xbox。**
         *   如果**Windows & Xbox，** 则应用已注册。
-        *   如果未**Windows & Xbox，** 请选择"添加**程序"。**
+        *   如果未**Windows & Xbox，** 请选择"**添加程序"。**
 
     :::image type="content" source="../media/windows-partner-center-add-program.msft.png" alt-text="在合作伙伴中心仪表板Windows计划。" lightbox="../media/windows-partner-center-add-program.msft.png":::
 
@@ -84,7 +84,7 @@ ms.locfileid: "12087096"
 
     :::image type="content" source="../media/windows-partner-center-create-app.msft.png" alt-text="在合作伙伴中心Windows应用预订。" lightbox="../media/windows-partner-center-create-app.msft.png":::
 
-1.  若要在"打包产品"[部分显示你的](#package-your-pwa-for-the-store)发布者PWA，请选择"**产品**管理""产品  >  **标识"。**
+1.  若要显示发布者详细信息以在"打包你的产品"[部分PWA，](#package-your-pwa-for-the-store)请选择"**产品**管理""  >  **产品标识"。**
 
 
     :::image type="content" source="../media/windows-partner-center-publisher-info.msft.png" alt-text="从合作伙伴中心复制Windows发布者信息。" lightbox="../media/windows-partner-center-publisher-info.msft.png":::
@@ -103,9 +103,9 @@ ms.locfileid: "12087096"
 若要生成应用包：
 
 1.  转到["PWA生成器"。][PwabuilderMain]
-1.  键入您的网站的 URL PWA然后单击"开始 **"。**
-1.  报告完成后，请确保你的PWA已准备就绪。 如果你的PWA分数太低，你可以访问清单**选项**和服务工作者选项并查看需要工作的**** 部分。
-1.  当你的PWA准备好发布时，单击下一步，然后选择**** 发布页面的"Windows"**** 部分中的"应用商店程序包 **"** 按钮。
+1.  键入你的网站的 URL PWA然后单击"开始 **"。**
+1.  报告完成后，请确保你的PWA已准备就绪。 如果你的PWA分数太低，你可以访问清单选项和服务工作者选项并查看**** 需要工作的部分****。
+1.  当你的PWA准备发布时，单击"下一步"，然后选择发布页面的"Windows部分中"应用商店程序包 **"** 按钮。 **** ****
 1.  粘贴以下值，这些值保存在"创建 [应用预订"部分](#create-an-app-reservation) ：
     *   **程序包 ID**
     *   **发布者 ID**
@@ -123,7 +123,7 @@ ms.locfileid: "12087096"
 
 若要将应用提交到应用商店：
 
-1.  转到Windows[中心][MicrosoftPartnerDashboardWindowsOverview]
+1.  转到[Windows中心][MicrosoftPartnerDashboardWindowsOverview]
 1.  选择你的应用。
 1.  选择 **"开始提交"。**
 
@@ -131,15 +131,15 @@ ms.locfileid: "12087096"
 
 1.  系统提示时，提供有关应用的信息，如定价和年龄分级。
 
-1.  在**程序包提示**符上，选择 你在打包你的程序包 `.msixbundle` 部分PWA `.classic.appxbundle` 文件。 [](#package-your-pwa-for-the-store)
+1.  在**程序包提示**符上，选择和你在打包你的程序包部分 `.msixbundle` `.classic.appxbundle` [PWA](#package-your-pwa-for-the-store)文件。
 
-完成提交后，通常会在 24 至 48 小时内查看你的应用。  收到批准后，PWA中提供Microsoft Store。
+完成提交后，通常会在 24 至 48 小时内查看你的应用。  收到批准后，PWA中将Microsoft Store。
 
 
 <!-- ====================================================================== -->
 ## <a name="measure-usage-of-your-store-installed-pwa"></a>测量应用商店安装的应用商店的使用情况PWA
 
-初始PWA时，如果 PWA 从 Microsoft Store 安装，Microsoft Edge 将包含以下标头，其中包含对 Web 应用第一次导航的请求。 `Referer`
+当PWA启动时，如果 PWA 从 Microsoft Store 安装，Microsoft Edge 将以下标头与 Web 应用的第一个导航请求一起 `Referer` 包含。
 
 ```
 Referer: app-info://platform/microsoft-store
@@ -153,7 +153,7 @@ Referer: app-info://platform/microsoft-store
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*   [测试和提交你的PWA应用包][GithubPwaBuilderPwabuilderWindowsChromiumDocsNextStepsMd]
+*   [测试和提交PWA应用包][GithubPwaBuilderPwabuilderWindowsChromiumDocsNextStepsMd]
 *   [将新PWA发布到应用商店][GithubPwaBuilderPwabuilderWindowsChromiumDocsPublishNewAppMd]
 *   [将现有应用商店应用更新到PWA][GithubPwaBuilderPwabuilderWindowsChromiumDocsUpdateExistingAppMd]
 *   [应用商店中 PBA 的图像建议][GithubPwaBuilderPwabuilderWindowsChromiumDocsImageRecommendationsMd]
@@ -179,6 +179,6 @@ Referer: app-info://platform/microsoft-store
 [GithubPwaBuilderPwabuilderWindowsChromiumDocsImageRecommendationsMd]: https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/image-recommendations.md "程序包包Windows PWA图像|GitHub"
 [GithubPwaBuilderPwabuilderWindowsChromiumDocsNextStepsMd]: https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/next-steps.md "将你的应用程序PWA步骤Microsoft Store |GitHub"
 [GithubPwaBuilderPwabuilderWindowsChromiumDocsPublishNewAppMd]: https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/publish-new-app.md "将新应用发布到应用商店|GitHub"
-[GithubPwaBuilderPwabuilderWindowsChromiumDocsUpdateExistingAppMd]: https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/update-existing-app.md "更新应用商店应用中的现有|GitHub"
+[GithubPwaBuilderPwabuilderWindowsChromiumDocsUpdateExistingAppMd]: https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/update-existing-app.md "在应用商店中更新现有|GitHub"
 
 [PwabuilderMain]: https://www.pwabuilder.com "PWABuilder"

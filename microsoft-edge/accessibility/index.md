@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.assetid: 1e5c42a7-4604-46ac-ad7b-a65390e5b36a
 keywords: 辅助功能， 开发人员辅助功能， 可访问的网站， 边缘， Web 开发， ARIA， 开发人员， UIA， UI 自动化
-ms.openlocfilehash: 0e026ed0a54deab17c21ee94005e85d92d43f3d7
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 3e792fc3d44099d571f9b9dc4a12554da286a076
+ms.sourcegitcommit: 54f9566aa935fb853215c9b6f995fa0c98f3261f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035164"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "12103312"
 ---
 # <a name="accessibility-overview"></a>辅助功能概述
 
@@ -23,13 +23,13 @@ ms.locfileid: "12035164"
 
 设计网站和其他包含技术可打造每个人都享受的体验。  非独占设计和 Web 辅助功能使每个人都能够使用 Web。
 
-下面是一些最佳做法、代码示例和更多资源，可让你了解有关在网站中设计、[][AccessibilityDesign]生成和测试可访问[][AccessibilityBuild]Microsoft Edge。 [][AccessibilityTest]
+下面是一些最佳实践、代码示例和更多资源，可便于你了解有关在网站中设计[][AccessibilityDesign]、生成和测试[][AccessibilityBuild]可访问Microsoft Edge。 [][AccessibilityTest]
 
 
 <!-- ====================================================================== -->
-## <a name="accessibility-in-microsoft-edge"></a>Microsoft Edge
+## <a name="accessibility-in-microsoft-edge"></a>Microsoft Edge 中的辅助功能
 
-在Microsoft Edge中，我们引入了[UI 自动化 API][WindowsWin32AutoEntryui] (UIA API) 。  UIA 的变化是浏览器辅助功能的一项重大投资，它为依赖于 web 服务中的辅助技术的用户提供更具包容性的 Web 体验Windows 10。  用户还可以从网络引擎的常绿Chromium中获益。
+在Microsoft Edge中，我们引入了[UI 自动化 API][WindowsWin32AutoEntryui] (UIA API) 。  UIA 的变化是浏览器辅助功能的一项重大投资，它为依赖于浏览器或更高版本中的辅助技术的用户提供更具包容性的 web 体验Windows 10基础。  用户还可以从网络引擎的常绿Chromium中获益。
 
 [Microsoft UI 自动化 API][WindowsWin32AutoEntryui]是一个辅助功能框架，Windows应用程序提供和使用与 UI (用户界面) 。  它提供对桌面上大多数 UI 元素的编程访问。  它使辅助技术产品（如屏幕阅读器）能够向最终用户提供有关 UI 的信息，以及通过标准输入外的其他方式操作 UI。  UI 自动化还允许自动测试脚本与 UI 交互。
 
@@ -43,7 +43,7 @@ ms.locfileid: "12035164"
 
 Microsoft Edge团队持续与 W3C 和其他浏览器供应商合作，以确保新的 Web 平台功能具有足够的内置辅助功能。
 
-有关用户可以访问哪些新 HTML 功能的信息，Microsoft Edge [HTML5Accessibility][HTML5Accessibility]。
+有关哪些新 HTML 功能可供用户访问Microsoft Edge，请导航到["HTML5Accessibility"。][HTML5Accessibility]
 
 
 <!-- ====================================================================== -->
@@ -72,9 +72,9 @@ W3C 文章：
 [HTML5Accessibility]: https://html5accessibility.com "HTML5 辅助功能"
 
 [W3CAccessibility]: https://w3.org/standards/webdesign/accessibility "辅助功能|W3C"
-[W3CWaiFundamentals]: https://w3.org/wai/fundamentals/accessibility-intro "Web 辅助功能|Web 辅助功能计划 (一) |W3C"
+[W3CWaiFundamentals]: https://w3.org/wai/fundamentals/accessibility-intro "Web 辅助功能|Web 辅助功能计划 (，) |W3C"
 [W3CWaiGettingstartedOverview]: https://w3.org/wai/gettingstarted/Overview "入门：使网站成为辅助|Web 辅助功能计划 (一) |W3C"
-[W3CWaiHome]: https://w3.org/wai "Web 辅助功能计划 (，) |W3C"
+[W3CWaiHome]: https://w3.org/wai "Web 辅助功能计划 (一) |W3C"
 [W3CWaiTeachAdvocate]: https://w3.org/wai/teach-advocate "教学和宣传|Web 辅助功能计划 (，) |W3C"
 
 [WHODisabilities]: https://who.int/topics/disabilities "残障|WHO"  

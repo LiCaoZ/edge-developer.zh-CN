@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进式 Web 应用，PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
-ms.openlocfilehash: 7021c0797805270bfd4e86d08f6fc53a5ba7c05e
-ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
+ms.openlocfilehash: e950e68b969d144db858086e9d4429eee33099ce
+ms.sourcegitcommit: 54f9566aa935fb853215c9b6f995fa0c98f3261f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "12087094"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "12103480"
 ---
 # <a name="offline-and-network-connectivity-support-in-progressive-web-apps"></a>渐进式 Web 应用中的脱机和网络连接支持
 
@@ -86,13 +86,13 @@ self.addEventListener( "fetch", event => {
 *  如果缓存中不存在该请求，将运行该资源的新请求，稍后将缓存响应的副本，并 `fetch` 返回响应。
    * 如果 `fetch` 由于网络不可用而失败，则从缓存中返回脱机页面。
 
-此简单介绍演示如何在渐进式 Web 应用应用中使用 (PWA) 。 每个PWA是不同的，并且可能使用不同的缓存策略。 代码看起来可能不同，并且你可以对同一应用程序中的不同路由使用不同的缓存策略。
+此简单介绍演示如何在渐进式 Web 应用应用中使用 (PWA) 。 每个PWA不同，可能使用不同的缓存策略。 代码看起来可能不同，并且你可以对同一应用程序中的不同路由使用不同的缓存策略。
 
 
 <!-- ====================================================================== -->
 ## <a name="use-indexeddb-in-your-pwa-to-store-structured-data"></a>在数据存储区中PWA IndexedDB 存储结构化数据
 
-`IndexedDB` 是存储结构化数据的 API。 与 `Cache` API 类似，它也是异步的。 这意味着您可以在主线程中或与 Web 工作线程（如服务工作者）一起使用它。 使用 API 在客户端上存储大量结构化数据或二进制数据（如 `IndexedDB` 加密媒体对象）。  有关 [使用 IndexedDB，请参阅 MDN 一文][MDNIndexeddbApiUsing]。
+`IndexedDB` 是存储结构化数据的 API。 与 `Cache` API 类似，它也是异步的。 这意味着您可以在主线程中或与 Web 工作线程（如服务工作线程）一起使用它。 使用 API 在客户端上存储大量结构化数据或二进制数据，如 `IndexedDB` 加密媒体对象。  有关 [使用 IndexedDB，请参阅 MDN 一文][MDNIndexeddbApiUsing]。
 
 
 <!-- ====================================================================== -->
@@ -101,11 +101,11 @@ self.addEventListener( "fetch", event => {
 有时，你可能需要存储少量数据，以便为用户提供更好的脱机体验。 如果是这样，您可能会发现 Web 应用程序键值对系统的简单性存储您的需求。
 
 > [!IMPORTANT]
-> Web 存储是一个同步进程，在工作线程（如服务工作者）中不可用。 大量使用可能会给应用程序造成性能问题。
+> Web 存储是一个同步进程，不能用于工作线程（如服务工作线程）。 大量使用可能会给应用程序造成性能问题。
 
-有两种类型的 Web 存储： 和 `localStorage` `sessionStorage` 。 每种类型的 Web 存储都作为独立于创建它的域的单独数据存储进行维护。
- 
-*  `sessionStorage` 仅在浏览会话期间保留。 例如，当浏览器打开（包括刷新和还原）时。 
+有两种类型的 Web 存储： `localStorage` 和 `sessionStorage` 。 每种类型的 Web 存储都作为独立于创建它的域的单独数据存储进行维护。
+
+*  `sessionStorage` 仅在浏览会话期间保留。 例如，当浏览器打开（包括刷新和还原）时。
 *  `localStorage` 保留，直到代码、用户或浏览器删除数据。 例如，当存在可用的有限存储时。
 
 下面的代码段演示如何使用 `localStorage` ，这类似于如何使用 `sessionStorage` 。
@@ -148,7 +148,7 @@ function insertOfflineLink( request ) {
 
 
 <!-- ====================================================================== -->
-## <a name="test-for-network-connections-in-your-pwa"></a>测试连接中的网络连接PWA
+## <a name="test-for-network-connections-in-your-pwa"></a>在客户端中测试PWA
 
 除了存储信息以便脱机使用之外，了解网络连接何时可用，以便同步数据或通知用户网络状态已更改也很有用。 使用以下选项测试网络连接。
 

@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: b8585db90b090d6bbca10bb558cf18d86a01778d
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: eb96d24c1c2c8749fbedd04bc2bf24e22264a4ad
+ms.sourcegitcommit: 54f9566aa935fb853215c9b6f995fa0c98f3261f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083091"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "12103326"
 ---
 <!-- Copyright Kayce Basques
 
@@ -33,16 +33,22 @@ ms.locfileid: "12083091"
 
 还可以在工具提示中查找快捷方式。  将鼠标悬停在开发工具的 UI 元素上，以显示工具提示。  如果元素具有快捷方式，则工具提示中将包含快捷方式。
 
+另请参阅 [在 DevTools](../customize/shortcuts.md)中自定义键盘快捷方式。
+
+
+<!-- ====================================================================== -->
 ## <a name="keyboard-shortcuts-for-opening-devtools"></a>打开开发工具的键盘快捷方式
 
 如果要打开开发工具，请在光标聚焦在浏览器视口上时选择以下键盘快捷方式。
 
-| 操作 | Windows\/Linux | macOS |
+| 操作 | Windows/Linux | macOS |
 |:--- |:--- |:--- |
 | 打开上次使用的窗格 | `F12` 或 `Control`+`Shift`+`I` | `Command`+`Option`+`I` |
 | 打开“**控制台**”工具 | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |
 | 打开“**元素**”工具。 | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` 或 `Command`+`Option`+`C` |
 
+
+<!-- ====================================================================== -->
 ## <a name="global-keyboard-shortcuts"></a>全局键盘快捷方式
 
 以下键盘快捷键在大多数（如果不是全部）开发工具窗格中可用。
@@ -70,6 +76,8 @@ ms.locfileid: "12083091"
 <!-- TODO: make a bug about this UIPlacement link being ambiguous.  -->
 <!-- TODO: Link "Inspect Element Mode" when a good section exists.  -->
 
+
+<!-- ====================================================================== -->
 ## <a name="elements-tool-keyboard-shortcuts"></a>元素工具键盘快捷方式
 
 | 操作 | Windows\/Linux | macOS |
@@ -101,7 +109,7 @@ ms.locfileid: "12083091"
 
 | 操作 | Windows\/Linux | macOS |
 |:--- |:--- |:--- |
-| 暂停脚本运行时 \(如果当前运行\) 或恢复 \(如果当前暂停\) | `F8` 或 `Control`+`\` | `F8` 或 `Command`+`\` |
+| 如果当前正在运行脚本 (，请暂停脚本运行时) 如果当前 (已暂停，请恢复)  | `F8` 或 `Control`+`\` | `F8` 或 `Command`+`\` |
 | 单步跳过下一函数调用 | `F10` 或 `Control`+`'` | `F10` 或 `Command`+`'` |
 | 单步执行下一函数调用 | `F11` 或 `Control`+`;` | `F11` 或 `Command`+`;` |
 | 跳出当前函数 | `Shift`+`F11` 或 `Control`+`Shift`+`;` | `Shift`+`F11` 或 `Command`+`Shift`+`;` |
@@ -111,7 +119,7 @@ ms.locfileid: "12083091"
 | 保存所有更改 | `Control`+`Alt`+`S` | `Command`+`Option`+`S` |
 | 导航到行 | `Control`+`G` | `Control`+`G` |
 | 跳转到当前打开的文件的行号 | 选择 `Control`+`O` 以打开“[命令菜单][DevtoolsCommandMenuIndex]”，键入 `:`（后跟行号），然后选择 `Enter` | 选择 `Command`+`O` 以打开“[命令菜单][DevtoolsCommandMenuIndex]”，键入 `:`（后跟行号），然后选择 `Enter` |
-| 跳至当前打开文件的列\(例如，第 5 行，列 9\) | 选择 `Control`+`O` 以打开“[命令菜单][DevtoolsCommandMenuIndex]”，键入`:`，然后输入行号，然后输入另一个`:`，然后输入列号，然后选择 `Enter` | 选择 `Command`+`O` 以打开“[命令菜单][DevtoolsCommandMenuIndex]”，键入`:`，然后输入行号，然后输入另一个`:`，然后输入列号，然后选择 `Enter` |
+| 跳转到当前打开的文件的列 (第 5 行，第 9 列)  | 选择 `Control`+`O` 以打开“[命令菜单][DevtoolsCommandMenuIndex]”，键入`:`，然后输入行号，然后输入另一个`:`，然后输入列号，然后选择 `Enter` | 选择 `Command`+`O` 以打开“[命令菜单][DevtoolsCommandMenuIndex]”，键入`:`，然后输入行号，然后输入另一个`:`，然后输入列号，然后选择 `Enter` |
 | 如果当前文件为 HTML 或脚本，则导航到函数声明。  <br />  如果当前文件是样式表，请导航到规则集。  | 选择 `Control`+`Shift`+`O` ，然后键入声明/规则集名称，或者从选项列表中选择 | 选择 `Command`+`Shift`+`O` ，然后键入声明/规则集名称，或者从选项列表中选择 |
 | 关闭活动的选项卡 | `Alt`+`W` | `Option`+`W` |
 
@@ -125,6 +133,8 @@ ms.locfileid: "12083091"
 | 切换单行注释。  如果选择了多行，开发工具将注释添加到每行的起始位置 | `Control`+`/` | `Command`+`/` |
 | 打开或关闭下一次出现的任何单词。  每次出现时都同时突出显示 | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |
 
+
+<!-- ====================================================================== -->
 ## <a name="performance-tool-keyboard-shortcuts"></a>性能工具键盘快捷方式
 
 | 操作 | Windows\/Linux | macOS |
@@ -133,12 +143,16 @@ ms.locfileid: "12083091"
 | 保存录制 | `Control`+`S` | `Command`+`S` |
 | 加载录制 | `Control`+`O` | `Command`+`O` |
 
+
+<!-- ====================================================================== -->
 ## <a name="memory-tool-keyboard-shortcuts"></a>内存工具键盘快捷方式
 
 | 操作 | Windows\/Linux | macOS |
 |:--- |:--- |:--- |
 | 开始 /停止录制。 | `Control`+`E` | `Command`+`E` |
 
+
+<!-- ====================================================================== -->
 ## <a name="console-tool-keyboard-shortcuts"></a>控制台工具键盘快捷方式
 
 | 操作 | Windows\/Linux | macOS |
@@ -151,7 +165,7 @@ ms.locfileid: "12083091"
 | 清除“**控制台**” | `Control`+`L` | `Command`+`K` 或 `Option`+`L` |
 | 强制多行输入。  该快捷方式通常是不需要的，因为默认情况下，开发工具应该检测多行方案 | `Shift`+`Enter` | `Command`+`Return` |
 | 运行 | `Enter` | `Return` |
-| 展开记录到控制台的对象的所有子属性 | 按住`Alt`，然后选择“**展开**” \(![展开](../media/expand-icon.msft.png)\) | 按住`Alt`，然后选择“**展开**” \(![展开](../media/expand-icon.msft.png)\) |
+| 展开记录到控制台的对象的所有子属性 | 保留 `Alt` ，然后单击"**** 展开 (![ 展开 ](../media/expand-icon.msft.png))  | 保留 `Alt` ，然后单击展开**** (![ 展开 ](../media/expand-icon.msft.png)) 。 |
 
 
 <!-- ====================================================================== -->
@@ -168,7 +182,7 @@ ms.locfileid: "12083091"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/shortcuts)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/shortcuts)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

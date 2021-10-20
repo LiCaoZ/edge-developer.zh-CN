@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 44f60d67ed1dc5f278c051340bc72de5423324e3
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: e245aec982db54942fa6dc9c0619313c2a1748db
+ms.sourcegitcommit: 54f9566aa935fb853215c9b6f995fa0c98f3261f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083929"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "12103494"
 ---
 # <a name="contact-the-microsoft-edge-webview2-team"></a>联系 Microsoft Edge WebView2 团队
 
@@ -29,13 +29,13 @@ ms.locfileid: "12083929"
 <!-- ====================================================================== -->
 ## <a name="file-a-documentation-issue"></a>提出文档问题
 
-若要在GitHub输入问题，请在文章底部的"反馈"部分，选择"******此页面"** 按钮。  或者，您可以[直接在][GitHubMicrosoftDocsEdgeDeveloperNewIssue]存储库Microsoft Edge开发人员文档 `edge-developer` 提交问题。
+若要在GitHub输入问题，请在文章底部的"反馈"部分，选择****"**此页面"** 按钮。  或者，您可以[直接在][GitHubMicrosoftDocsEdgeDeveloperNewIssue]存储库Microsoft Edge开发人员文档提交 `edge-developer` 问题。
 
 
 <!-- ====================================================================== -->
 ## <a name="subscribe-to-the-webview2announcements-repo"></a>订阅 WebView2Announcements 存储库
 
-若要获取最新的新闻、API 建议和 SDK 发布公告，请订阅 [WebView2Announcements][WebView2AnnouncementsRepo] 存储库。  
+若要获取最新的新闻、API 建议和 SDK 发布公告，请订阅 [WebView2Announcements][WebView2AnnouncementsRepo] 存储库。
 
 
 <!-- ====================================================================== -->

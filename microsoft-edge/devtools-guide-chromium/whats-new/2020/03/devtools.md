@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 46d46dbb61643702f7a35902ef01d8139e2a122c
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 72709f98289a99fc9003618dd32d0f83ac096b3e
+ms.sourcegitcommit: 54f9566aa935fb853215c9b6f995fa0c98f3261f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083308"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "12103515"
 ---
 <!-- Copyright Kayce Basques
 
@@ -37,9 +37,9 @@ ms.locfileid: "12083308"
 
 以下各节列出了你可能从 DevTools 团队中错过Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。
 
-### <a name="remotely-debug-microsoft-edge-on-windows-10-devices"></a>在 Windows 10 设备上远程调试 Microsoft Edge
+### <a name="remotely-debug-microsoft-edge-on-windows-10-or-later-devices"></a>远程调试Microsoft Edge或Windows 10或更高版本的设备上的客户端
 
-现在，[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 \(Beta\)][RemoteTools] 应用。  使用此扩展 Windows Device [Portal][WindowsUwpDebugTestPerfDevicePortal]的应用，你可以从开发计算机上运行的 Microsoft Edge 实例连接到远程 Windows 10 设备，显示目标列表 \ (Microsoft Edge 中所有选项卡，PBA 在 Windows 10 设备上打开\) ， [][ProgressiveWebAppsChromiumIndex]nd 针对在远程客户端设备上运行的目标，在开发计算机上Windows 10 DevTools。
+现在，[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 \(Beta\)][RemoteTools] 应用。 此应用扩展[Windows Device Portal][WindowsUwpDebugTestPerfDevicePortal]。 你可以从在开发Microsoft Edge运行的设备连接到远程Windows 10或更高版本设备，并显示目标列表。 目标列表包括设备上打开的 Microsoft Edge 和[PA][ProgressiveWebAppsChromiumIndex] Windows选项卡。 针对在远程开发设备上运行的目标，在开发计算机上Windows DevTools。
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="现在，Microsoft Store 中提供 Microsoft Edge 远程工具 (Beta) 应用" lightbox="../../media/2020/03/remote-tools.msft.png":::
    [Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 (Beta)][RemoteTools] 应用
@@ -139,7 +139,7 @@ DevTools 能够模拟模糊的视觉和以下[颜色视觉缺陷类型][ColorBli
 | 全色盲 | 无法感觉任何颜色，灰色阴影除外\（极少\）。 |
 
 存在这些色觉缺陷的不太极端的版本，实际上它们更为常见。
-例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。 但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人是不同的，并且可能会看到不同的 \ (能够感知更多/更少的相关颜色\) 。
+例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。 但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人是不同的，并且可能会看到不同情况 \ (能够感知更多/更少的相关颜色\) 。
 
 通过在 DevTools 中进行更极端的仿真设计，可以保证红色弱、绿色弱、黄蓝色弱和全色弱的人也可访问你的 Web 应用。
 
@@ -233,7 +233,7 @@ DevTools 团队经常从 Web 开发人员那里获得反馈，尽管可以从 De
 
 ### <a name="delete-all-local-overrides-in-a-folder"></a>删除文件夹中的所有本地覆盖
 
-设置本地覆盖**** 后，你可以将鼠标悬停在目录上，打开上下文菜单 \ (右键单击\) ，然后选择新的"删除所有覆盖"选项以**** 删除该文件夹中的所有局部覆盖。
+设置本地覆盖**** 后，你可以将鼠标悬停在目录上，打开上下文菜单 \ (右键单击\) ，然后选择新的"删除所有覆盖"选项以删除该**** 文件夹中的所有局部覆盖。
 
 :::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="删除所有覆盖" lightbox="../../media/2020/03/overrides.msft.png":::
    删除所有覆盖
@@ -289,7 +289,7 @@ Android Oreo 引入了自适应图标，可在不同的设备模型之间显示�
 [DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: ../../../evaluate-performance/reference.md#view-main-thread-activity "查看主线程活动|Microsoft Docs"
 [DevtoolsJavascriptBreakpointsLineCode]: ../../../javascript/breakpoints.md#line-of-code-breakpoints "代码行断点 - 如何在 Microsoft Edge DevTools |Microsoft Docs"
 [DevtoolsNetworkReferenceFilterRequestsProperties]: ../../../network/reference.md#filter-requests-by-properties "按属性筛选请求 - 网络分析参考 | Microsoft Docs"
-[DevtoolsRemoteDebuggingWindows]: ../../../remote-debugging/windows.md "远程调试 Windows 10 设备|Microsoft Docs"
+[DevtoolsRemoteDebuggingWindows]: ../../../remote-debugging/windows.md "入门远程调试Windows设备|Microsoft Docs"
 
 [ProgressiveWebAppsChromiumIndex]: ../../../../progressive-web-apps-chromium/index.md "Windows 上的渐进式 Web 应用 | Microsoft Docs"
 

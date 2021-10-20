@@ -1,5 +1,5 @@
 ---
-description: 渐进式 Web 应用在 Windows 10。 下面是作为 Web 开发人员需要知道的所有内容。
+description: 渐进式 Web 应用在本机或Windows 10运行。  下面是作为 Web 开发人员需要知道的所有内容。
 title: 渐进式 Web 应用 （PWA） 概述
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,14 +8,16 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进 Web 应用、PWA、Edge、JavaScript、UWP、Microsoft Store
-ms.openlocfilehash: b0c09be195803addcbeed7f1093a174ac839994b
-ms.sourcegitcommit: 18bc9a85940de5a8f390c9a4c9d9e34c4196f5aa
+ms.openlocfilehash: e0f541353dd1b246ab36c8c07e2f73fcacf103b9
+ms.sourcegitcommit: 54f9566aa935fb853215c9b6f995fa0c98f3261f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "12087672"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "12103459"
 ---
 # <a name="overview-of-progressive-web-apps-pwas"></a>渐进式 Web 应用 （PWA） 概述
+
+<!-- preserve trailing spaces -->
 
 **[渐进式 Web][MDNApps]** (PBA) 提供对开放 Web 技术的访问权限，实现跨平台互操作性，并为用户提供为设备自定义的类似应用的体验。
 
@@ -23,17 +25,20 @@ PWA 是一些网站 **[，其][AListApartUnderstandingProgressiveEnhancement]** 
 
 应用程序质量PWA Web 和已编译应用**的最佳功能**相结合。 PWA 在浏览器（如网站）中运行，但有权访问应用功能（如脱机工作的功能）安装在操作系统上、支持推送通知和定期更新、访问硬件功能等。
 
-安装后 **，PWA 与 Windows 上的其他应用Windows。** 它们可以添加到"开始"菜单、固定到任务栏、处理文件、在用户登录时运行等。
+安装时 **，PWA 与 Windows 上的其他应用Windows。** 它们可以添加到"开始"菜单、固定到任务栏、处理文件、在用户登录时运行等。
 
-PBA 还可以提交**** 到 Microsoft Store，数百万Windows用户可以发现并轻松地将它们与其他 Windows 应用一起安装。
+PBA**还可以提交到**Microsoft Store数百万Windows用户可以发现并轻松地将它们与其他 Windows 应用一起安装。
 
 
 <!-- ====================================================================== -->
-## <a name="characteristics-of-a-pwa"></a>项目的特征PWA
+## <a name="characteristics-of-a-pwa"></a>事件PWA
 
 PWA 与网站具有相同的范围：它们可以由搜索引擎编制索引，可以链接到同一基本代码的所有设备，并且可在所有设备上运行。 因此，与需要 Android、iOS 和各种桌面操作系统的特定基本代码的已编译应用比，它们的开发成本要低得多。
 
-<!-- in the below table, keep two trailing spaces after each image line's ::: to keep card elements tight but not concat'd -->
+<!--
+In the below table, keep two trailing spaces after each image line and after each heading line, to keep card elements tight but not concatenated.
+Similar table: [Introduction to Microsoft Edge WebView2](..\webview2\index.md#webview2-benefits)
+-->
 
 :::row:::
     :::column:::
@@ -84,6 +89,8 @@ PWA 与网站具有相同的范围：它们可以由搜索引擎编制索引，�
     :::column-end:::
 :::row-end:::
 
+<!-- In the above table, keep two trailing spaces after each image line and after each heading line, to keep card elements tight but not concatenated. -->
+
 
 <!-- ====================================================================== -->
 ## <a name="pwas-on-desktop"></a>桌面上的 PWA
@@ -112,7 +119,7 @@ PBA 不限于在移动主屏幕上显示网站。 PWA 基于标准、跨浏览�
 *   与其他应用共享内容。
 *   访问剪贴板。
 *   同步数据并在后台提取资源。
-*   访问设备硬件，蓝牙和 USB。
+*   访问设备硬件，如 蓝牙 和 USB。
 *   将内容存储在数据库中。
 *   利用硬件加速图形。
 *   使用 CSS 布局、动画和筛选器创建高级设计。
@@ -126,9 +133,9 @@ PBA 不限于在移动主屏幕上显示网站。 PWA 基于标准、跨浏览�
 <!-- ====================================================================== -->
 ## <a name="the-microsoft-store"></a>The Microsoft Store
 
-由于 PWA 与 Microsoft Store 中其他应用一样，因此用户可以从发现、安装[到][PwaMicrosoftStore]执行，完全参与它们，而无需打开浏览器。
+由于 PWA 与 Microsoft Store 中[][PwaMicrosoftStore]其他应用一样，因此用户可以从发现、安装到执行，完全参与它们，而无需打开浏览器。
 
-作为电脑中最常用的应用，Microsoft Store为用户安装应用提供可信且熟悉的体验。 此外，你可以查看详细的使用情况统计信息和图表，以便你了解应用中Microsoft Store状况。
+作为电脑中最常用的应用，Microsoft Store为用户安装应用提供可信且熟悉的体验。 此外，你可以查看详细的使用情况统计信息和图表，以便你了解应用中Microsoft Store方式。
 
 了解如何将[你的PWA发布到Microsoft Store。][PwaPublishToStore]
 
@@ -136,11 +143,11 @@ PBA 不限于在移动主屏幕上显示网站。 PWA 基于标准、跨浏览�
 <!-- ====================================================================== -->
 ## <a name="success-stories"></a>成功案例
 
-使用PWA技术是使你的应用安全、可发现、可链接、易于**** 安装和更新****、响应迅速**** 且**独立于网络的一种很好的方法**。 **** **** 许多企业都使用 PWA 并获得成功。
+使用PWA技术是使你的应用安全、可发现、可链接、**** 易于安装和**** 更新、响应**** 迅速且**独立于网络的一种很好的方法**。 **** **** 许多企业都使用 PWA 并获得成功。
 
-*   每天PWA用户数增加两次，桌面版订单数几乎与移动源 ([的][StarbucksSuccessStory]) 。
-*   Trivago 发现将 PWA 添加到主屏幕的人增加了 150%，参与度增加导致到酒店产品/服务（源 ([) 的][TrivagoSuccessStory]点击量增加了 97%。
-*   Tinder 使用其 PWA 将加载时间从 11.91 秒剪切到 4.68 秒，并且应用比编译的 Android 应用 (源) [][TinderSuccessStory] 90%。
+*   每天PWA用户数增加两次，桌面上的订单数几乎与移动源 ([数][StarbucksSuccessStory]) 。
+*   Trivago 发现向主屏幕添加其 PWA 的人增加了 150%，参与度提高导致到酒店产品/ (的点击量增加了 97%。) 。 [][TrivagoSuccessStory]
+*   Tinder 使用其 PWA 将加载时间从 11.91 秒剪切到 4.68 秒，并且应用比已编译的 Android (源) [][TinderSuccessStory]小 90%。
 
 在"统计数据"网站上PWA[成功][PwaStats]案例。
 
@@ -157,7 +164,7 @@ PBA 不限于在移动主屏幕上显示网站。 PWA 基于标准、跨浏览�
 *   [命名渐进式 Web 应用][Fberriman20170626NamingProgressiveWebApps]
 *   [设计和生成不带框架的渐进式 Web (第 1) ][Smashingmagazine201907ProgressiveWebAppFrameworkPart1]
 *   [设计和生成不带框架的渐进式 Web 应用 (第 2) ][Smashingmagazine201907ProgressiveWebAppFrameworkPart2]
-*   [设计和生成不带框架的渐进式 Web (第 3 部分) ][Smashingmagazine201907ProgressiveWebAppFrameworkPart3]
+*   [设计和生成不带框架的渐进式 Web (第 3) ][Smashingmagazine201907ProgressiveWebAppFrameworkPart3]
 *   [什么是良好的渐进式 Web 应用？][WebDevGoodPwaChecklist]
 
 
@@ -167,7 +174,7 @@ PBA 不限于在移动主屏幕上显示网站。 PWA 基于标准、跨浏览�
 [AListApartUnderstandingProgressiveEnhancement]: https://alistapart.com/article/understandingprogressiveenhancement "了解渐进式增强 - 列表分开"
 [PwaStats]: https://www.pwastats.com/ "与渐进式 Web 应用相关的统计数据和新闻的社区驱动列表"
 [StarbucksSuccessStory]: https://twitter.com/davidbrunelle/status/993960071406080000 "David Brunelle |Twitter"
-[TrivagoSuccessStory]: https://www.thinkwithgoogle.com/intl/en-gb/marketing-strategies/app-and-mobile/trivago-embrace-progressive-web-apps-as-the-future-of-mobile/  "接下来的十亿用户：trivago 将渐进式 Web 应用作为移动网络|使用 Google 思考"
+[TrivagoSuccessStory]: https://www.thinkwithgoogle.com/intl/en-gb/marketing-strategies/app-and-mobile/trivago-embrace-progressive-web-apps-as-the-future-of-mobile/  "接下来的十亿用户：三角网将渐进式 Web 应用作为移动设备|使用 Google 思考"
 [TinderSuccessStory]: https://medium.com/@addyosmani/a-tinder-progressive-web-app-performance-case-study-78919d98ece0 "Tinder Progress Web App 性能案例研究|Medium.com"
 [MDNPwaAdvantagesDiscoverable]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Discoverable "可发现 - 渐进式 Web 应用优势"
 [MDNPwaAdvantagesInstallable]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Installable "可安装 - 渐进式 Web 应用优势"
@@ -185,8 +192,8 @@ PBA 不限于在移动主屏幕上显示网站。 PWA 基于标准、跨浏览�
 [JoretegBlogBettingWeb]: https://joreteg.com/blog/betting-on-the-web "Web 上的百年"
 [Fberriman20170626NamingProgressiveWebApps]: https://fberriman.com/2017/06/26/naming-progressive-web-apps "命名渐进式 Web 应用"
 [Smashingmagazine201907ProgressiveWebAppFrameworkPart1]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-1 "设计和构建不带框架的渐进式 Web (第 1) "
-[Smashingmagazine201907ProgressiveWebAppFrameworkPart2]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-2 "设计和构建不带框架的渐进式 Web 应用程序 (第 2) "
-[Smashingmagazine201907ProgressiveWebAppFrameworkPart3]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-3 "设计和构建不带框架的渐进式 Web (第 3 部分) "
+[Smashingmagazine201907ProgressiveWebAppFrameworkPart2]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-2 "设计和生成不带框架的渐进式 Web (第 2) "
+[Smashingmagazine201907ProgressiveWebAppFrameworkPart3]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-3 "设计和生成不带框架的渐进式 Web (第 3) "
 [WebDevGoodPwaChecklist]: https://web.dev/pwa-checklist "什么是良好的渐进式 Web 应用？|web.dev"
 [PwaMicrosoftStore]: https://www.microsoft.com/store/apps/windows "Windows应用|Microsoft Store"
 [PwaWindowsUx]: ./ux.md "PWA 的用户体验|Microsoft Docs"

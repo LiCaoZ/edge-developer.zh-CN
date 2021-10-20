@@ -1,18 +1,18 @@
 ---
-description: 打开传感器工具，然后从"地理位置"列表中选择坐标。
-title: 使用开发人员工具Microsoft Edge地理位置
+description: 在 DevTools 中打开传感器工具，然后从"地理位置"列表中选择坐标。
+title: 使用传感器工具替代地理位置
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: d4a674b5ac5db42184d0f5606b330af5d04f24c3
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: f72db0834e5a37111457c453f155acbdb940a167
+ms.sourcegitcommit: 54f9566aa935fb853215c9b6f995fa0c98f3261f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12081873"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "12103340"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,9 +27,9 @@ ms.locfileid: "12081873"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="override-geolocation-with-microsoft-edge-devtools"></a>使用开发人员工具Microsoft Edge地理位置
+# <a name="override-geolocation-with-the-sensors-tool"></a>使用传感器工具替代地理位置
 
-许多网站都利用用户位置来为用户提供更相关的体验。  例如，在用户授予网站访问当前用户位置的权限后，天气网站可能会显示用户区域中的本地天气预报。
+许多网站利用用户位置来为用户提供更相关的体验。  例如，在用户授予网站访问当前用户位置的权限后，天气网站可能会显示用户区域中的本地天气预报。
 
 <!--todo: add link to user location section when available -->
 
@@ -37,16 +37,12 @@ ms.locfileid: "12081873"
 
 1.  选择 `Control`+`Shift`+`P` \(Windows、Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开**命令菜单**。
 
-    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-command-menu.msft.png":::
-       **命令菜单**
-    :::image-end:::
+    :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单的屏幕截图。":::
 
-1.  键入 `sensors` ，选择 **显示传感器**，然后选择 `Enter` 。  传感器 **工具** 将在 DevTools 窗口底部打开。
+1.  键入 `sensors` ，选择 **面板：显示传感器**，然后选择 `Enter` 。  传感器 **工具** 在 DevTools 窗口底部打开。
 1.  从"**** 地理位置"列表中选择预设城市之一（如 ），或选择"自定义位置"以输入自定义经度和纬度坐标，或选择"位置不可用"以显示网站在用户位置不可用时的行为方式。 `Tokyo` **** ****
 
-    :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="从地理位置列表中选择东京" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
-       从 `Tokyo` "**地理位置"列表中选择**
-    :::image-end:::
+    :::image type="content" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="从地理位置列表中选择东京的屏幕截图。":::
 
 <!-- /web/fundamentals/native-hardware/user-location/index -->
 

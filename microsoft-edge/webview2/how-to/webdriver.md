@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、edge、ICoreWebView2、ICoreWebView2Controller、Selenium、Microsoft Edge Driver
-ms.openlocfilehash: fe032d6d7ad2d1592c45aee5dbfcccea55d88ea2
-ms.sourcegitcommit: 3dce4eececc6b998c604547174d56be5dd0bf45d
+ms.openlocfilehash: 7d71444ed704a086d5345fe3036c82306945a5fa
+ms.sourcegitcommit: 54f9566aa935fb853215c9b6f995fa0c98f3261f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/19/2021
-ms.locfileid: "12100769"
+ms.locfileid: "12103487"
 ---
 # <a name="automate-and-test-webview2-apps-with-microsoft-edge-driver"></a>使用驱动程序自动化和测试 WebView2 Microsoft Edge应用
 <!-- Should this article be titled:
@@ -131,7 +131,7 @@ Microsoft Edge驱动程序启动 WebView2 应用，并自动附加到应用创�
 
 在这种情况下，我们建议附加到 WebView2 的特定实例，因为让 Microsoft Edge 驱动程序启动 WebView2 应用仅适用于相对简单的方案。  当Microsoft Edge启动你的应用时，它会自动附加到创建的第一个 WebView2 实例，如果未找到 WebView2 实例，它将失败。
 
-无论使用"启动"还是"附加"方法，都必须下载 Microsoft Edge Driver，并确保版本与应用使用的 WebView2 运行时版本匹配。  配置 WebDriver 框架应用程序的初始 (如 Selenium) "与"附加"方法不同。
+无论使用"启动"还是"附加"方法，都必须下载 Microsoft Edge Driver，并确保版本与应用使用的 WebView2 运行时版本匹配。  配置 WebDriver 框架应用程序的初始步骤 (如 Selenium) "启动"与"附加"方法不同。
 
 完成启动应用或附加到 WebView2 实例的初始步骤后，你将能够使用任何受支持的 WebDriver 命令与该 WebView2 实例进行交互。
 
@@ -140,7 +140,7 @@ Microsoft Edge驱动程序启动 WebView2 应用，并自动附加到应用创�
 ## <a name="step-4a-letting-microsoft-edge-driver-launch-your-webview2-app"></a>步骤 4a：Microsoft Edge驱动程序启动 WebView2 应用
 <!-- old title: Drive WebView2 with Selenium and Microsoft Edge Driver -->
 
-如果你拥有创建单个 WebView2 实例且该实例在启动后立即处于活动状态的简单应用，请使用此"启动"方法。  在此方案中，有一个 WebView2 实例，可在启动时使用，而无需在任何本机 UI 中导航。  
+如果你拥有创建单个 WebView2 实例且该实例在启动后立即处于活动状态的简单应用，请使用此"启动"方法。  在此方案中，有一个 WebView2 实例，可在启动时使用，而无需在任何本机 UI 中导航。
 
 若要使用 Selenium 和 Microsoft Edge驱动程序驱动 WebView2：
 
@@ -210,7 +210,7 @@ Microsoft Edge驱动程序不处理本机 UI 自动化，但下面是一些导�
 
 * 使用命令行参数或环境变量等标志告诉应用直接启动到 WebView2 实例，以避免导航本机 UI。  根据您的方案，这或许可以使用步骤[4a：让驱动程序启动 WebView2 Microsoft Edge中所述的"启动"方法](#step-4a-letting-microsoft-edge-driver-launch-your-webview2-app)。  <!-- create a special test mode that displays __. -->
 
-除了确保激活 WebView2 实例之外，还需要设置 `--remote-debugging-port` 其命令行参数。  我们将在以下步骤中完成此操作。  Microsoft Edge驱动程序将使用此远程调试端口连接到 WebView2 实例。  
+除了确保激活 WebView2 实例之外，还需要设置 `--remote-debugging-port` 其命令行参数。  我们将在以下步骤中完成此操作。  Microsoft Edge驱动程序将使用此远程调试端口连接到 WebView2 实例。
 
 ### <a name="launching-the-webview2-app-with-remote-debugging-enabled"></a>启用远程调试后启动 WebView2 应用
 
