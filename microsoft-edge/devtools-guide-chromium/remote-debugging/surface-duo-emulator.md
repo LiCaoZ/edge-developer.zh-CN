@@ -7,12 +7,12 @@ ms.date: 03/25/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发工具, 远程调试, android, surface duo
-ms.openlocfilehash: 88cf7f0c9cbbaed62cf9fb1f79be9c48b025a472
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 146d17f2067ef927740a5909646b07bb8faed8cb
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082699"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108078"
 ---
 # <a name="get-started-with-remote-debugging-surface-duo-emulators"></a>远程调试 Surface Duo 仿真器入门
 
@@ -82,7 +82,8 @@ ms.locfileid: "12082699"
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
+
+[DevtoolsIndex]: ../index.md "Microsoft Edge开发人员工具|Microsoft Docs"
 [ProgressiveWebAppsIndex]: ../../progressive-web-apps-chromium/index.md "Windows 上的渐进式 Web 应用 | Microsoft Docs"
 [DevtoolsRemoteDebuggingMain]: ./index.md "Android 设备远程调试入门 | Microsoft Docs"
 [DevtoolsRemoteDebuggingIndexTroubleshootingDevtoolsIsNotDetectingAndroidDevice]: ./index.md#troubleshooting-devtools-is-not-detecting-the-android-device "疑难解答：开发工具未检测 Android 设备 - Android 设备远程调试入门 | Microsoft Docs"
@@ -91,7 +92,7 @@ ms.locfileid: "12082699"
 [DualScreenAndroidUseEmulator]: /dual-screen/android/use-emulator "使用 Surface Duo 仿真程序 | Microsoft Docs"
 [DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "获取 Surface Duo SDK | Microsoft Docs"
 
-[MicrosoftEdge]: https://www.microsoft.com/edge "推出新的 Microsoft Edge"
+[MicrosoftEdge]: https://www.microsoft.com/edge "下载Microsoft Edge浏览器|Microsoft"
 [MicrosoftSurfaceDevicesSurfaceDuo]: https://www.microsoft.com/surface/devices/surface-duo "新 Surface Duo | Microsoft Surface"
 [MicrosoftDownload100847]: https://www.microsoft.com/download/details.aspx?id=100847 "下载 Surface Duo SDK 预览版 | Microsoft 下载中心"
 

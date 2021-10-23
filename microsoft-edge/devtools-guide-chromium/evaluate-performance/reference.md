@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: fc6df99cde3a258304825d8dac5c23a6b84caf32
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 8dbfb072460d954f0a8d13ecd3acb4901a386599
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083063"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108176"
 ---
 <!-- Copyright Kayce Basques
 
@@ -549,7 +549,7 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
        **图层边框**
     :::image-end:::
 
-导航到 [debug_colors.cc][ChromiumDebugColors] 中的批注，了解颜色编码的说明。
+导航到 [debug_colors.cc][DebugColors] 中的批注，了解颜色编码的说明。
 
 ### <a name="find-scroll-performance-issues-in-realtime"></a>实时查找滚动性能问题
 
@@ -568,13 +568,13 @@ DevTools 概述了茶色中潜在的问题元素。
 
 <!-- ====================================================================== -->
 <!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge开发人员工具|Microsoft Docs"
 [DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"
 [DevtoolsEvaluatePerformanceGettingStarted]: ./index.md "开始分析运行时性能 | Microsoft Docs"
 
 [ActivityTabsDemo]: https://microsoft-edge-chromium-devtools.glitch.me/perf/activitytabs.html "活动选项卡演示 | 故障"
 
-[ChromiumDebugColors]: https://cs.chromium.org/chromium/src/cc/debug/debug_colors.cc "debug_colors.cc - 代码搜索"
+[DebugColors]: https://cs.chromium.org/chromium/src/cc/debug/debug_colors.cc "debug_colors.cc - 代码搜索"
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。

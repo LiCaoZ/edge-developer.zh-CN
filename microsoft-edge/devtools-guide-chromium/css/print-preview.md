@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: c02b74ef76fc11b0eb0c262f0768c5f8d49e454f
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: d7541c34ade9ede30b9ad8ac2995d5c3784f08ad
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082147"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108190"
 ---
 <!-- Copyright Kayce Basques
 
@@ -49,7 +49,7 @@ ms.locfileid: "12082147"
 
 <!-- ====================================================================== -->
 <!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge开发人员工具|Microsoft Docs"
 [DevToolsCSSGetStarted]: ./index.md "开始查看和更改 CSS |Microsoft Docs"
 
 [MDNUsingMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "使用媒体查询|MDN"

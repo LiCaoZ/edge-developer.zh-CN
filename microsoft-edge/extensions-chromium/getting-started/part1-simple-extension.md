@@ -6,19 +6,19 @@ ms.author: msedgedevrel
 ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium， Web 开发， html， css， javascript， 开发人员， 扩展
-ms.openlocfilehash: 5ff7b015f085ff22259128cb3a231f5c91dc4df3
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， 扩展
+ms.openlocfilehash: 03e958d3862e5eab74960c3610c1dfb8b59e85fd
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035374"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108183"
 ---
 # <a name="create-an-extension-tutorial---part-1"></a>创建扩展教程 - 第 1 部分
 
 ## <a name="overview"></a>概述
 
-本教程的目标是生成一个Microsoft Edge (Chromium) 扩展，从空目录开始。  你正在构建一个扩展，该扩展可弹出当天的"省/市/服务"图片。  在本教程中，你将了解如何创建扩展，方法为：
+本教程的目标是生成一个Microsoft Edge扩展，从空目录开始。  你正在构建一个扩展，该扩展可弹出当天的"省/市/服务"图片。  在本教程中，你将了解如何创建扩展，方法为：
 
 *   创建 `manifest.json` 文件。
 *   添加图标。
@@ -39,7 +39,7 @@ ms.locfileid: "12035374"
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
     "manifest_version": 2,
-    "description": "A Chromium extension to display the NASA picture of the day."
+    "description": "An extension to display the NASA picture of the day."
 }
 ```
 
@@ -74,7 +74,7 @@ ms.locfileid: "12035374"
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
     "manifest_version": 2,
-    "description": "A chromium extension to show the NASA picture of the day.",
+    "description": "An extension to display the NASA picture of the day.",
     "icons": {
         "16": "icons/nasapod16x16.png",
         "32": "icons/nasapod32x32.png",
@@ -104,7 +104,7 @@ ms.locfileid: "12035374"
 </html>
 ```
 
-确保将图像文件 `images/stars.jpeg` 添加到 images 文件夹中。  项目的目录应类似于以下结构。
+确保将图像文件 `images/stars.jpeg` 添加到 images 文件夹。  项目的目录应类似于以下结构。
 
 ```shell
 └── part1
@@ -127,7 +127,7 @@ ms.locfileid: "12035374"
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
     "manifest_version": 2,
-    "description": "A chromium extension to display the NASA picture of the day.",
+    "description": "An extension to display the NASA picture of the day.",
     "icons": {
         "16": "icons/nasapod16x16.png",
         "32": "icons/nasapod32x32.png",

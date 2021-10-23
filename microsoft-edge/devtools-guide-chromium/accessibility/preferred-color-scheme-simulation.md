@@ -7,12 +7,12 @@ ms.date: 08/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: c7e50f2ef922e3e9ed7b55135f89b508843019af
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 6db39732b8d3d6a229b38f6bcc4f4157e794b304
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082538"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12107693"
 ---
 # <a name="emulate-dark-or-light-schemes-in-the-rendered-page"></a>模拟呈现页面中的深色或浅色方案
 
@@ -67,7 +67,7 @@ ms.locfileid: "12082538"
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
+[DevtoolsIndex]: ../index.md "Microsoft Edge开发人员工具|Microsoft Docs"
 [DevtoolsCustomizeTheme]: ../customize/theme.md "将颜色主题应用到 DevTools |Microsoft Docs"
 [DevtoolsCssIndex]: ../css/index.md "开始查看和更改 CSS |Microsoft Docs"
 <!-- external links -->

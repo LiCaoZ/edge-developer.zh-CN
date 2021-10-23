@@ -6,17 +6,17 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium， Web 开发， html， css， javascript， developer， extensions， mv2， mv3， manifest
-ms.openlocfilehash: fdb907e5648c19ddcc7c5338b36f5a1200da2098
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， 扩展， mv2， mv3， 清单
+ms.openlocfilehash: 98312640b5bdbe1c2e976624f69bf97aa280aba0
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036914"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12107945"
 ---
 # <a name="manifest-file-format-for-extensions"></a>扩展名的清单文件格式
 
-每个扩展Microsoft Edge (Chromium) JSON 格式的清单文件，名为 `manifest.json` 。  清单文件是扩展的蓝图。  清单文件包含以下信息：
+每个扩展Microsoft Edge JSON 格式的清单文件，名为 `manifest.json` 。  清单文件是扩展的蓝图。  清单文件包含以下信息：
 
 *  扩展的版本号。
 *  扩展的标题。
@@ -212,7 +212,7 @@ ms.locfileid: "12036914"
 
 
 <!-- links -->
-[MigrateToMV3]: ../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md "准备将扩展从清单 v2 更新到 v3 |Microsoft Docs"
+[MigrateToMV3]: ../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md "准备将扩展从清单 v2 更新为 v3 |Microsoft Docs"
 
 [ChromeDeveloperDocsExtensionsMv3Manifest]: https://developer.chrome.com/docs/extensions/mv3/manifest "V3 (清单) |Chrome 开发人员"
 [ChromeDeveloperDocsExtensionsMv2Manifest]: https://developer.chrome.com/docs/extensions/mv2/manifest "V2 (清单) |Chrome 开发人员"

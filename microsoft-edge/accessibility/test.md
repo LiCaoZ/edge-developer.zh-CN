@@ -1,65 +1,54 @@
 ---
 ms.assetid: 737ac54c-ad89-4b3f-bbe2-4e4169d3f364
 description: 查看有助于评估网站的辅助功能的工具和测试过程。
-title: 辅助功能测试
+title: 辅助功能测试的资源
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: 辅助功能， 开发人员辅助功能， 可访问的网站， 边缘， Web 开发， ARIA， 开发人员， UIA， UI 自动化
-ms.openlocfilehash: e3bb5de2b6e66eb6c8ac8a16083f431f84e745bd
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 9fe4c1cc2eb3f64782b6f8b69bd88c708e657ac4
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035129"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12107658"
 ---
-# <a name="accessibility-testing"></a>辅助功能测试
+# <a name="resources-for-accessibility-testing"></a>辅助功能测试的资源
 
-辅助功能测试是可用性测试的一种形式，用于验证你的网站是否受所有人员使用。 请查看 W3C 页面 [评估 Web](https://www.w3.org/WAI/test-evaluate) 辅助功能概述，了解应何时进行测试、测试要求、应测试网站的人等。
+辅助功能测试是可用性测试的一种形式，用于验证你的网站是否受所有人员使用。 请查看 W3C 页面 [评估 Web](https://www.w3.org/WAI/test-evaluate) 辅助功能概述，了解应何时进行测试、测试要求以及应测试网站的人。
 
-使用以下工具和测试过程评估网站辅助功能：
+使用以下工具和测试过程评估网站辅助功能。
 
-#### <a name="accessibility-testing-in-devtools"></a>DevTools 中的辅助功能测试
 
-*   [DevTools 中的][DevtoolsAccessibilityReference] 辅助功能测试功能 - 辅助功能测试清单以及用于每个测试的 DevTools 功能。
+<!-- ====================================================================== -->
+## <a name="accessibility-testing-in-devtools"></a>DevTools 中的辅助功能测试
 
-*   [使用 DevTools 的][DevtoolsAccessibilityAccessibilitytestingindevtools] 辅助功能测试概述 - 使用各种 DevTools 功能测试辅助功能问题的演练。
+*   [DevTools 中的](../devtools-guide-chromium/accessibility/reference.md) 辅助功能测试功能 - 要测试的辅助功能方面的列表，以及用于每个测试的 DevTools 功能。
 
-#### [<a name="accessibility-evaluation-resources"></a>辅助功能评估资源](https://www.w3.org/WAI/eval/Overview.html)
+*   [使用 DevTools 的](../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md) 辅助功能测试概述 - 使用各种 DevTools 功能测试辅助功能问题的演练。
 
-辅助功能评估资源是由 W3C 提供的多页资源，概述了用于评估网站辅助功能的不同方法。
 
-#### [<a name="assistive-technology-compatibility-tests"></a>辅助技术兼容性测试](http://www.powermapper.com/tests)
+<!-- ====================================================================== -->
+## <a name="external-articles-and-websites"></a>外部文章和网站
 
-显示不同内容类型和标准在辅助技术（如屏幕阅读器 (AT) 的行为的测试结果。
+*  [辅助技术兼容性测试](http://www.powermapper.com/tests) - 用于显示不同内容类型和标准在辅助技术（如屏幕阅读器 (AT) 中的行为的测试结果。
 
-#### [<a name="easy-checks--a-first-review-of-web-accessibility"></a>轻松检查 – Web 辅助功能的首次评审](https://www.w3.org/WAI/eval/preliminary.html)
+*  [HTML5Accessibility](https://html5accessibility.com) - 此网站测试主要浏览器支持哪些新的 HTML5 功能。
 
-由一系列由用户进行快速检查的，可帮助您评估网页的辅助功能。
+*  [webhint](https://webhint.io) - 使用 webhint 检查过期库、安全改进、性能问题和辅助功能问题。
 
-#### [<a name="how-to-meet-wcag-20"></a>如何满足 WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref)
+*  [Web 辅助功能检查器](https://visualstudiogallery.msdn.microsoft.com/3aabefab-1681-4fea-8f95-6a62e2f0f1ec)- Visual Studio Web 应用上执行辅助功能检查 ASP.NET 扩展。
 
-快速参考 Web 内容辅助功能指南 \ (WCAG\) 2.0 要求 (成功) 和技术。
+*  [Web 辅助功能评估工具列表](https://www.w3.org/WAI/ER/tools/index.html) - Web 辅助功能评估工具列表，可帮助确定网站是否满足辅助功能准则。
 
-#### [<a name="html5accessibility"></a>HTML5Accessibility](https://html5accessibility.com)
 
-此网站测试哪些新的 HTML5 功能可供主要浏览器访问。
+<!-- ====================================================================== -->
+## <a name="the-web-accessibility-initiative-wai"></a>Web 辅助功能计划 (一) 
 
-#### [<a name="webhint"></a>webhint](https://webhint.io)
+*  [辅助功能评估资源](https://www.w3.org/WAI/eval/Overview.html) - 评估网站辅助功能的方法。
 
-使用 [webhint](https://webhint.io/) 检查过时库、安全改进、性能问题、辅助功能问题等。
+*  [轻松检查 – Web 辅助功能](https://www.w3.org/WAI/eval/preliminary.html) 的首次评审 - 快速检查，可帮助您评估网页的辅助功能。
 
-#### [<a name="web-accessibility-checker"></a>Web 辅助功能检查器](https://visualstudiogallery.msdn.microsoft.com/3aabefab-1681-4fea-8f95-6a62e2f0f1ec)
-
-在Visual Studio Web 应用上执行辅助功能检查的 ASP.NET 扩展。
-
-#### [<a name="web-accessibility-evaluation-tools-list"></a>Web 辅助功能评估工具列表](https://www.w3.org/WAI/ER/tools/index.html)
-
-可帮助确定网站是否满足辅助功能指南的 Web 辅助功能评估工具列表。
-
-<!-- links: -->
-
-[DevtoolsAccessibilityAccessibilitytestingindevtools]: ../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md "使用 DevTools 工具的辅助功能测试|Microsoft Docs"
-[DevtoolsAccessibilityReference]: ../devtools-guide-chromium/accessibility/reference.md "DevTools | 中的辅助功能测试功能Microsoft Docs"
+*  [如何满足 WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref) - 快速参考 Web 内容辅助功能指南 (WCAG) 、要求、成功条件和技术。

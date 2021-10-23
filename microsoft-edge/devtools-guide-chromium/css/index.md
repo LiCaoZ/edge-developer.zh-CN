@@ -1,5 +1,5 @@
 ---
-description: 了解如何使用 Microsoft Edge DevTools 查看和更改页面的 CSS。
+description: 了解如何使用 Microsoft Edge Tools 查看和更改页面的 CSS。
 title: 查看和更改 CSS 入门
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: a1e2a01bdba205474e742f4a74102ff794b6fdd6
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 512fb88e9f47706e725d357fa47d636536dc85cf
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082727"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108204"
 ---
 <!-- Copyright Kayce Basques
 
@@ -33,12 +33,12 @@ ms.locfileid: "12082727"
 
 ## <a name="open-css-examples"></a>Open CSS 示例
 
-1.  按住 `Control` \ (Windows、Linux\) 或 `Command` \ (macOS\) 并选择 **"CSS**示例"以在新窗口中打开。
+1.  保留 `Control` \ (Windows、Linux\) 或 `Command` \ (macOS\) 并选择 **"CSS**示例"以在新窗口中打开。
 
     [CSS 示例][GlitchDevToolsCssExamples]
 
     > [!NOTE]
-    > 如果要将[DevTools][DevToolsCustomizePlacement]窗口停靠在下图\ (视图的右侧，请选择"自定义和控制**DevTools ) "。** `...`  在"**自定义和控制 DevTools"** 下拉菜单上的"扩展坞**侧**"部分中，选择"扩展**坞"以向右。**
+    > 如果你想要将[DevTools][DevToolsCustomizePlacement]窗口停靠在下图\ (显示的视口 \) 右侧，请选择"自定义和控制**DevTools"。** `...`  在"**自定义和控制 DevTools"** 下拉菜单上的"扩展坞**侧**"部分中，选择"扩展**坞"以向右。**
 
 ## <a name="view-the-css-for-an-element"></a>查看元素的 CSS
 
@@ -53,7 +53,7 @@ ms.locfileid: "12082727"
     1.  在 `Inspect Me!` 元素中，找到 属性的值 `data-message` 并复制它。
 1.  在页面上的" **值"文本框 `data-message` ** 中，输入值。
 1.  将鼠标悬停在 `Inspect Me!` 文本上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**
-    1.  在 DevTools 中的" **元素"** 工具上，选择 **"样式"** 面板。
+    1.  在 DevTools 中的" **元素** "工具上，选择 **"样式"** 面板。
     1.  在 **"样式"** 面板中， `Inspect Me!` 元素突出显示。
     1.  在 `Inspect Me!` 元素中，查找 `aloha` 类规则。
 
@@ -132,7 +132,7 @@ ms.locfileid: "12082727"
     > [!NOTE]
     > 根据 DevTools 窗口的大小，可能需要滚动到"样式"面板的底部以显示 **"方框模型"。** ****
 
-1.  双击"方框模型"中的左边距****，当前具有表示元素没有 `-` 左边距的值。
+1.  双击"方框模型"中的左边距****，当前具有表示元素 `-` 没有左边距的值。
 1.  键入 `100px` 并选择 `Enter`。  方框 **模型** 默认为像素，但它也接受其他值，如 `25%` 或 `10vw` 。
 
     :::row:::
@@ -152,7 +152,7 @@ ms.locfileid: "12082727"
 
 如果要调试或测试在 CSS 中定义的媒体查询，请使用以下步骤。
 
-1.  打开开发人员工具并选择左上方第**** 二个"切换设备"工具栏图标，或在 `Ctrl` + `Shift` + `M` `Cmd` + `Shift` + `M` macOS\ (选择 \) 。
+1.  打开开发人员工具，选择左上方**** 第二个"切换设备"工具栏图标，或在 `Ctrl` + `Shift` + `M` `Cmd` + `Shift` + `M` macOS\ (选择 \) 。
 
     :::image type="complex" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="打开设备工具栏" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
        打开设备工具栏
@@ -181,7 +181,7 @@ ms.locfileid: "12082727"
 <!-- links -->
 [DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "将 DevTools 放置 (Undock、Dock 更改为 Bottom、Dock to Left) "
 
-[GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "CSS 示例 - Microsoft Edge (Chromium) DevTools |小故障"
+[GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "CSS 示例 - Microsoft Edge DevTools |小故障"
 
 [MDNUsingMediaGueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "使用媒体查询|MDN"
 

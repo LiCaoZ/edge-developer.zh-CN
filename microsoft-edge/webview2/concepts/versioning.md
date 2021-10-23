@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 73a150c7d8711c040156bb4f78a82f5e5bda239e
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 5960caaeb81b115297e5699896a5979895ddf643
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083231"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108456"
 ---
 # <a name="understand-webview2-sdk-versions"></a>了解 WebView2 SDK 版本
 
-WebView2 SDK NuGet包同时包含发布包和预发行版包。  将预发行版 SDK 与预览频道一Microsoft Edge，或将发布 SDK 与 WebView2 运行时一同使用。
+WebView2 SDK 的 NuGet 包包含发布包和预发行版包。  将预发行版 SDK 与预览频道一Microsoft Edge或将发布 SDK 与 WebView2 运行时一同使用。
 
 _预发布_ 如果要在将支持这些 API 添加到运行时之前测试最新的 WebView2 API（包括实验性 API），则 SDK 包在开发过程中使用。  建议使用 Canary 通道，因为它具有最新 API 的实现。  当你想要测试和使用实验性 WebView2 API 时，请使用以下组合：
 *   _WebView2_ SDK 的预发布版本。
@@ -56,7 +56,7 @@ SDK 发布包包含以下组件：
 
 ## <a name="release-cadence"></a>版本节奏
 
-新版本的 WebView2 SDK 的发布常规节奏与 Microsoft Edge \ (Chromium\) 浏览器相同，大约每六周发布一次。  此节奏计划从版本 94 起每四周Microsoft Edge更改一次。
+新版本的 WebView2 SDK 的发布与 Microsoft Edge 浏览器的一般节奏相同，大约每六周发布一次。  此节奏计划从版本 94 起每四周Microsoft Edge更改一次。
 
 
 ## <a name="minimum-version-and-build-number-to-instantiate-webview2"></a>实例化 WebView2 的最低版本号和内部版本号
@@ -68,8 +68,8 @@ SDK 发布包包含以下组件：
 
 ## <a name="forward-compatibility-of-apis"></a>API 的向前兼容性
 
-WebView2 _版本_ SDK 自版本 1 以来一直 (，即 SDK 版本 [1.0.622.22](../release-notes.md#1062222)) 。
-你可以更新 WebView2 应用以使用 SDK 最新版本的最新 API。  你的应用将继续在客户端上运行，因为客户端自动具有最新的 WebView2 Evergreen Runtime。
+WebView2 _版本_ SDK 自版本 1（即 SDK 版本 [1.0.622.22](../release-notes.md#1062222) (）以来一直) 。
+你可以更新 WebView2 应用以使用最新版 SDK 中的 API。  你的应用将继续在客户端上运行，因为客户端自动具有最新的 WebView2 Evergreen Runtime。
 
 _SDK_发布包中的 WebView2 API 稳定且向前兼容。  使用与引入 API 的 SDK 内部版本号相同或更高的内部版本号的 WebView2 运行时时，WebView2 API 可正常工作。  内部版本号是 Webview2 SDK 的四部分版本号的第三部分，以及 Microsoft Edge 和 WebView2 运行时的四部分版本号。
 
@@ -109,10 +109,10 @@ WebView2 SDK 参考文档中将实验性 API 指示为"实验性"。
 在客户端上生成的过期运行时可能会导致使用最新 SDK 中的新 API 的更新的 WebView2 应用出现兼容性问题。
 
 如果客户端上阻止更新 WebView2 运行时，请确保你知道应用所需的 [WebView2][MicrosoftDeveloperEdgeWebview2] 运行时的最低内部版本号。
-支持 SDK 版本 616 版本 616 (版本所需的最低运行时版本) 比最新运行时版本较早。
+支持 SDK 版本 616 版本 616 (通用版本所需的最低运行时版本) 低于最新运行时的版本。
 最新运行时支持最新 SDK 版本内的所有 API。
 
-若要检查 SDK 的特定内部版本号与运行时或预览Microsoft Edge之间的兼容性，请导航到[WebView2 SDK][Webview2ReleaseNotes]的发行说明。
+若要检查 SDK 的特定内部版本号与运行时或预览Microsoft Edge之间的兼容性，请导航到[WebView2 SDK][Webview2ReleaseNotes]发行说明。
 
 
 ## <a name="feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis"></a>用于测试已安装的运行时是否支持最近添加的 API 的功能检测

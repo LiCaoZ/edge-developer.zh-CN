@@ -7,12 +7,12 @@ ms.date: 04/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: ad04b0d31513be249462b541ba67049a3a8d1947
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 8dbaac2c9dd991576ab6e04d8e3286fabc50e7b7
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083826"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108652"
 ---
 <!-- Copyright Kayce Basques
 
@@ -49,7 +49,7 @@ ms.locfileid: "12083826"
    导航、查看、编辑和调试服务器返回的 JavaScript
 :::image-end:::
 
-若要最大化"源"工具的大小，请取消停靠"DevTools"到单独的窗口，并可以选择将"DevTools"窗口移动到单独的监视器。  请参阅 [Change DevTools placement (Undock， Dock to bottom， Dock to left) ][DevToolsCustomizePlacement]。
+若要最大化"源"工具的大小，请取消停靠"DevTools"到单独的窗口，并可以选择将"DevTools"窗口移动到单独的监视器。  请参阅 [Change DevTools placement (Undock， Dock to bottom， Dock to left) ][DevToolsCustomizePlacement].
 
 若要加载上面显示的调试演示网页，请参阅下面的使用 [调试器的基本](#the-basic-approach-to-using-a-debugger)方法。
 
@@ -118,7 +118,7 @@ Workspace 中的文件在整个 DevTools 中由文件名旁边的绿色点指示
 
 如果服务器返回的 JavaScript 代码与本地 JavaScript 源代码相同，工作区可正常工作。  当工作流涉及源代码转换（如缩小或 [TypeScript][TypescriptlangMain] 编译）时，工作区不能正常工作。
 
-有关详细信息，请参阅教程使用 [Workspaces 编辑文件][DevtoolsGuideChromiumWorkspacesIndex]。
+有关详细信息，请参阅教程使用 [Workspaces 编辑文件][DevtoolsGuideWorkspacesIndex]。
 
 ### <a name="using-the-overrides-tab-to-override-server-files-with-local-files"></a>使用"覆盖"选项卡覆盖包含本地文件的服务器文件
 
@@ -153,7 +153,7 @@ Workspace 中的文件在整个 DevTools 中由文件名旁边的绿色点指示
 #### <a name="see-also"></a>另请参阅
 
 *   [内容脚本][MDNContentScripts]
-*   [创建扩展教程第 2 部分][ExtensionsChromiumGetstartPart2ContentScripts]
+*   [创建扩展教程第 2 部分][ExtensionsGetstartPart2ContentScripts]
 
 ### <a name="using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage"></a>使用"代码段"选项卡在任何网页上运行 JavaScript 代码段
 
@@ -183,7 +183,7 @@ document.head.appendChild(script);
 
 #### <a name="see-also"></a>另请参阅
 
-*   [使用 Microsoft Edge DevTools 在任何网页上运行 JavaScript 代码片段][DevtoolsGuideChromiumJavascriptSnippets]
+*   [使用 Microsoft Edge DevTools 在任何网页上运行 JavaScript 代码片段][DevtoolsGuideJavascriptSnippets]
 
 ### <a name="using-the-command-menu-to-open-files"></a>使用命令菜单打开文件
 
@@ -249,7 +249,7 @@ document.head.appendChild(script);
 *   若要保存更改，请在 `Ctrl` + `S` Windows/Linux 或 `Command` + `S` macOS 上选择。
 *   若要撤消更改，请在 `Ctrl` + `Z` Windows/Linux 或 `Command` + `Z` macOS 上选择。
 
-默认情况下，刷新网页时将放弃您的编辑。  若要详细了解如何在本地文件系统中保存更改，请参阅使用 [Workspaces 编辑文件][DevtoolsGuideChromiumWorkspacesIndex]。
+默认情况下，刷新网页时将放弃您的编辑。  若要详细了解如何在本地文件系统中保存更改，请参阅使用 [Workspaces 编辑文件][DevtoolsGuideWorkspacesIndex]。
 
 #### <a name="find-and-replace"></a>查找和替换
 
@@ -329,7 +329,7 @@ DevTools 不会重新运行脚本，因此唯一生效的 JavaScript 更改是�
 *   在 **"元素** "工具中，通过用户界面控件一次处理一个 CSS 设置。  在大多数情况下，建议使用此方法。  有关详细信息，请参阅"样式"窗格中[的"编辑 CSS 字体样式和设置"。][DevToolsInspectStylesEditFonts]
 *   在 **"源** "工具中，使用文本编辑器。
 
-源工具支持直接编辑 CSS 文件。  例如，如果编辑教程"使用 [工作区][DevtoolsGuideChromiumWorkspacesIndex] 编辑文件"中的 CSS 文件以匹配下面的样式规则，则呈现的网页左上角的元素将更改 `H1` 为绿色：
+源工具支持直接编辑 CSS 文件。  例如，如果编辑教程"使用 [工作区][DevtoolsGuideWorkspacesIndex] 编辑文件"中的 CSS 文件以匹配下面的样式规则，则呈现的网页左上角的元素将更改 `H1` 为绿色：
 
 ```css
 h1 {
@@ -428,7 +428,7 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
 若要在网页上使用调试器，通常设置断点，然后从网页发送表单，如下所示：
 
-1.  在浏览器的新选项卡中打开网页。  例如，在一个新选项卡中打开此表单网页[：Demo： 入门使用 DevTools Microsoft Edge (Chromium) JavaScript。][DevtoolsGlitchMeDebugJsGetStarted]
+1.  在浏览器的新选项卡中打开网页。  例如，在一个新选项卡中打开此表单网页[：Demo： 入门使用 DevTools Microsoft Edge JavaScript。][DevtoolsGlitchMeDebugJsGetStarted]
 
 1.  选择 `F12` 以打开 **"DevTools"** 窗口，然后选择"源 **"** 选项卡。
 
@@ -452,7 +452,7 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
 #### <a name="see-also"></a>另请参阅
 
-*   [JavaScript 调试入门][DevtoolsGuideChromiumJavascriptIndex] - 使用包含一些表单控件的现有简单网页的教程。
+*   [JavaScript 调试入门][DevtoolsGuideJavascriptIndex] - 使用包含一些表单控件的现有简单网页的教程。
 
 ### <a name="advantages-of-the-debuggers-watch-and-scope-over-consolelog"></a>调试器监视和作用域比控制台\.log 的优点
 
@@ -473,7 +473,7 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 若要使用功能更加完整的 Visual Studio Code 调试程序，而不是使用 DevTools 调试器，请使用 Microsoft Edge **DevTools**扩展Visual Studio Code。
 
 :::image type="complex" source="../media/microsoft-edge-tools-for-vs-code-extension.msft.png" alt-text="适用于Microsoft Edge开发人员的 DevTools Visual Studio Code" lightbox="../media/microsoft-edge-tools-for-vs-code-extension.msft.png":::
-   适用于**Microsoft Edge开发人员的 DevTools** Visual Studio Code
+   Microsoft Edge**开发人员的 DevTools** Visual Studio Code
 :::image-end:::
 
 此扩展提供从 Microsoft Visual Studio Code 中访问 Microsoft Edge DevTools 的 **Elements** 和 **网络** 工具。
@@ -484,7 +484,7 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
 以下文章涵盖调试 **器** 窗格和断点：
 
-*   [在开发人员工具中Microsoft Edge JavaScript][DevtoolsGuideChromiumJavascriptIndex] - 使用 (简单的项目) 屏幕捕获的教程。
+*   [在开发人员工具中Microsoft Edge JavaScript][DevtoolsGuideJavascriptIndex] - 使用 (简单的项目) 屏幕捕获的教程。
 
 *   [使用调试器功能][DevToolsJavaScriptReference] - 如何使用调试器设置断点、逐步调试代码、查看和修改变量值、观看 JavaScript 表达式以及查看调用堆栈。
 
@@ -498,9 +498,9 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 [DevToolsCommandMenuIndex]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"
 [DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "设置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"
 [DevToolsCustomizePlacement]: ../customize/placement.md "将 DevTools 放置 (Undock，将扩展坞更改为底部，将扩展坞更改为左侧) |Microsoft Docs"
-[DevtoolsGuideChromiumJavascriptIndex]: ../javascript/index.md "在 Microsoft Edge 开发工具中调试 JavaScript 入门 | Microsoft Docs"
-[DevtoolsGuideChromiumJavascriptSnippets]: ../javascript/snippets.md "使用 DevTools 工具在任意网页上Microsoft Edge JavaScript |Microsoft Docs"
-[DevtoolsGuideChromiumWorkspacesIndex]: ../workspaces/index.md "使用工作区编辑文件 | Microsoft Docs"
+[DevtoolsGuideJavascriptIndex]: ../javascript/index.md "在 Microsoft Edge 开发工具中调试 JavaScript 入门 | Microsoft Docs"
+[DevtoolsGuideJavascriptSnippets]: ../javascript/snippets.md "使用 DevTools 工具在任意网页上Microsoft Edge JavaScript |Microsoft Docs"
+[DevtoolsGuideWorkspacesIndex]: ../workspaces/index.md "使用工作区编辑文件 | Microsoft Docs"
 [DevToolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "在&quot;样式&quot;窗格中编辑 CSS 字体样式|Microsoft Docs"
 [DevToolsJavaScriptBreakpoints]: ../javascript/breakpoints.md "使用断点或断点暂停|Microsoft Docs"
 [DevToolsJavaScriptGuidesMarkContentScriptsLibraryCode]: ../javascript/guides/mark-content-scripts-library-code.md "将内容脚本标记为库代码|Microsoft Docs"
@@ -509,12 +509,12 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 [DevToolsJavaScriptReferenceReformat]: ../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print "重新设置缩小的 JavaScript 文件，并采用非常打印的字体 - 使用调试器|Microsoft Docs"
 [DevToolsJavaScriptSourceMaps]: ../javascript/source-maps.md "将预处理的代码映射到源代码|Microsoft Docs"
 [DevToolsVSCodeIndex]: ../../visual-studio-code/index.md "Visual Studio Code概述|Microsoft Docs"
-[ExtensionsChromiumGetstartPart2ContentScripts]: ../../extensions-chromium/getting-started/part2-content-scripts.md "创建扩展教程第 2 部分|Microsoft Docs"
+[ExtensionsGetstartPart2ContentScripts]: ../../extensions-chromium/getting-started/part2-content-scripts.md "创建扩展教程第 2 部分|Microsoft Docs"
 <!-- external: -->
 [CodeVisualStudioComDocsEditorDebugging]: https://code.visualstudio.com/docs/editor/debugging "调试 - Visual Studio Code |Microsoft Docs"
 [DMCVisualStudioDebuggerNavigatingThroughCodeWithTheDebugger]: /visualstudio/debugger/navigating-through-code-with-the-debugger "使用调试器工具Visual Studio代码|Microsoft Docs"
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "Microsoft Edge开发人员工具Visual Studio Code |GitHub"
-[DevtoolsGlitchMeDebugJsGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "演示：入门开发人员工具Microsoft Edge (Chromium) 调试 JavaScript |Microsoft Docs"
+[DevtoolsGlitchMeDebugJsGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "演示：入门开发人员工具Microsoft Edge调试 JavaScript |Microsoft Docs"
 [HtmlstandardOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin "源 | HTML Standard"
 [W3CHtml4Frames]: https://w3.org/TR/html401/present/frames.html "框架 | W3C"
 [MDNContentScripts]: https://developer.mozilla.org/Add-ons/WebExtensions/Content_scripts "内容脚本|MDN"

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium， Web 开发， html， css， javascript， 开发人员， 扩展
-ms.openlocfilehash: d02aec528956732c9c7a08164e9733894dd00be9
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， 扩展
+ms.openlocfilehash: 18c7c4d6fbd6bd1f6c18676f6b368b7b4d5c9726
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035241"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108596"
 ---
 # <a name="create-an-extension-tutorial-part-2"></a>创建扩展教程第 2 部分
 
@@ -51,7 +51,7 @@ ms.locfileid: "12035241"
         </style>
     </head>
     <body>
-        <h1>Show the NASA picture of the day</h1>
+        <h1>Display the NASA picture of the day</h1>
         <h2>(select the image to remove)</h2>
         <button id="sendmessageid">Display</button>
         <script src="popup.js"></script>
@@ -129,7 +129,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 
 原因是你使用 元素的 属性将图像 `src` `img` 注入内容页面。  内容页在运行扩展的线程不同的唯一线程上运行。  必须将静态图像文件公开为 Web 资产，它必须能够正常工作。
 
-在文件中添加另 `manifest.json` 一项以声明该图像可供所有浏览器选项卡使用。  添加即将发布的内容脚本声明 (应在下面的完整文件中看到 `manifest.json` 该条目，如下所示\) 。
+在文件中添加另 `manifest.json` 一项以声明该图像可供所有浏览器选项卡使用。  添加内容脚本声明时， (在下面的完整文件中看到 `manifest.json` 该条目，如下所示\) 。
 
 ```json
 "web_accessible_resources": [
@@ -148,7 +148,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
     "manifest_version": 2,
-    "description": "A Chromium extension to show the NASA picture of the day.",
+    "description": "An extension to display the NASA picture of the day.",
     "icons": {
         "16": "icons/nasapod16x16.png",
         "32": "icons/nasapod32x32.png",
@@ -178,7 +178,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 
 在你要注入的内容脚本中，计划使用 jQuery \ (`$` \) 。  你添加了 jQuery 的缩小版本，并作为 放入扩展包 `lib\jquery.min.js` 中。  这些内容脚本在单个沙盒中运行，这意味着注入到页面中的 jQuery `popup.js` 不会与内容共享。
 
-请记住，即使浏览器选项卡上的 JavaScript 在加载的网页上运行，注入的任何内容也无法访问它。  注入的 JavaScript 仅有权访问该浏览器选项卡中加载的实际 DOM。
+请记住，即使浏览器选项卡上的 JavaScript 在加载的网页上运行，注入的任何内容也无法访问它。  注入的 JavaScript 只需访问该浏览器选项卡中加载的实际 DOM。
 
 7. 添加内容脚本消息侦听器
 
@@ -212,8 +212,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 当侦听器处理事件时，将运行作为第一个参数的函数。  该函数的第一个参数是属性由 分配的对象 `sendMessage` 。  该函数只处理三个 jQuery 脚本行。
 
 *   第一个脚本行将一个必须作为类分配给元素的节动态插入到 DOM **\<style\>** `slide-image` 标头 `img` 中。
-*   第二个脚本行在浏览器选项卡的 正下方追加一个元素，该元素分配了 类，并将 `img` `body` 作为该图像元素的 `slide-image` `imageDivId` ID。
-*   第三个脚本行添加一个涵盖整个图像的事件，允许用户选择图像上的任意位置，并且该图像将从页面 \ (以及事件侦听器 `click` \) 。
+*   第二个脚本行在浏览器选项卡的 正下方追加一个元素，该元素分配了 类，并将 `img` `body` 作为该 `slide-image` `imageDivId` 图像元素的 ID。
+*   第三个脚本行添加一个涵盖整个图像的事件，允许用户选择图像上的任意位置，并且该图像将从页面 \ (以及事件侦听器 `click` \) 中删除。
 
 8. 添加功能以在选中时删除显示的图像
 

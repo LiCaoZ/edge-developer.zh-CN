@@ -6,19 +6,19 @@ ms.author: msedgedevrel
 ms.date: 08/27/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 0d1a38eb8726cfc20f515a31d4179bc360ddc492
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+keywords: microsoft edge， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
+ms.openlocfilehash: 0ed384a255ebb10d6a51192bfd25618281159fb2
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035570"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108634"
 ---
 # <a name="register-as-a-microsoft-edge-extension-developer"></a>注册为 Microsoft Edge 扩展开发人员
 
 如果你是合作伙伴中心的新用户，本文将帮助你创建合作伙伴中心帐户，通过该帐户可以将 Microsoft Edge 扩展提交到 Microsoft Edge[加载项网站](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home)。
 
-如果你有合作伙伴中心帐户，但该帐户的主要所有者不是 MICROSOFT 帐户 (MSA) ，本文将帮助你创建和链接合适的帐户。  本文将帮助你创建一个 Microsoft 帐户 (MSA) （如果你没有帐户的话）并帮助你将 Microsoft 帐户 (MSA) 链接到你的合作伙伴中心帐户。
+如果你有合作伙伴中心帐户，但该帐户的主要所有者不是 MICROSOFT 帐户 (MSA) ，本文将帮助你创建和链接合适的帐户。  本文将帮助您创建一个 Microsoft 帐户 (MSA) （如果你没有帐户的话）并帮助你将 Microsoft 帐户 (MSA) 链接到你的合作伙伴中心帐户。
 
 若要在 Microsoft Edge 计划中添加和管理用户以管理扩展，可以将合作伙伴中心帐户与组织的 Azure Active Directory (Azure AD) 租户关联。
 
@@ -29,26 +29,26 @@ ms.locfileid: "12035570"
 | 帐户类型 | 描述 |
 |---|---|
 | _Microsoft 帐户 (MSA)_ | Outlook.com、Live.com 或 Hotmail.com 帐户。 |
-| _GitHub帐户_ | GitHub.com 的用户帐户。  可以使用你的个人 GitHub 帐户登录到合作伙伴中心-将 (MSA) Microsoft 帐户。 |
-| _合作伙伴中心帐户_、 _合作伙伴中心开发人员帐户_ | 合作伙伴 _中心帐户_ 是合作伙伴中心帐户 partner.microsoft.com。  若要提交Microsoft Edge扩展，你需要合作伙伴中心开发人员帐户，这是__ 一个合作伙伴中心帐户，该帐户将 Microsoft 帐户 (MSA) 作为主要所有者。 |
+| _GitHub帐户_ | 位于 GitHub.com 的用户帐户。  可以使用你的个人GitHub帐户登录到合作伙伴中心-将 (MSA) Microsoft 帐户。 |
+| _合作伙伴中心帐户_、 _合作伙伴中心开发人员帐户_ | 合作伙伴 _中心帐户_ 是合作伙伴中心 partner.microsoft.com。  若要Microsoft Edge扩展，你需要一个合作伙伴中心开发人员帐户，__ 该帐户是一个合作伙伴中心帐户，该帐户将 Microsoft 帐户 (MSA) 作为主要所有者。 |
 | _Microsoft Edge程序帐户_ | 允许多个用户在合作伙伴中心Microsoft Edge扩展。 |
-| _Azure Active Directory_ _、AD 帐户、Azure_ _AD_ | 一Azure Active Directory帐户。 |
-| _Azure Active Directory租户_ _、AAD 租户_ | 租户 _表示_ 组织。  租户是组织或应用开发人员在与 Microsoft 建立关系开始时收到的 Azure AD 的专用实例。 |
+| _Azure Active Directory_ _、AD 帐户_ _、Azure AD_ | 一Azure Active Directory帐户。 |
+| _Azure Active Directory 租户_ _、AAD 租户_ | 租户 _表示_ 组织。  租户是组织或Azure AD在与 Microsoft 建立关系开始时收到的专用租户实例。 |
 
 
 <!-- ====================================================================== -->
 ## <a name="before-you-begin"></a>在开始之前
 
-若要将扩展提交到 Microsoft Edge 加载项网站，你必须注册为开发人员，并Microsoft Edge计划。  在合作伙伴中心注册Microsoft Edge计划。  若要注册 Microsoft Edge 计划，你需要一个 Microsoft 帐户 (MSA) 。  如果你的 MSA 帐户没有 (，) 一个。  使用 MSA () 创建 Microsoft 帐户的一种方式是使用现有 GitHub 帐户登录到合作伙伴中心 - 对话框可帮助你自动创建 Microsoft 帐户 (MSA) 。
+若要将扩展提交到 Microsoft Edge 加载项网站，你必须注册为开发人员计划Microsoft Edge。  在合作伙伴中心注册Microsoft Edge计划。  若要注册 Microsoft Edge 计划，你需要一个 Microsoft 帐户 (MSA) 。  如果您没有 MSA 帐户或 MSA (，) 一个。  在 MSA () 创建 Microsoft 帐户的一种方式是使用现有 GitHub 帐户登录到合作伙伴中心 - 对话框可帮助你自动创建 Microsoft 帐户 (MSA) 。
 
 > [!NOTE]
 > 向应用计划提交扩展无需Microsoft Edge费用。
 
-如果你没有合作伙伴中心帐户，或者你拥有合作伙伴中心帐户，但其主要所有者不是 MSA (Microsoft 帐户) ，则必须：
-*  使用 MSA (现有 Microsoft) ) 注册到 Microsoft Edge 计划。
+如果你没有合作伙伴中心帐户，或者你有合作伙伴中心帐户，但其主要所有者不是 MSA (Microsoft 帐户) ，则必须：
+*  使用 MSA () ) 的现有 Microsoft 帐户注册Microsoft Edge计划。
 *  使用 MSA 帐户 (Microsoft) 。  MSA (Microsoft) 是 Outlook.com、Live.com 或 Hotmail.com 帐户。
 
-若要创建 MSA 帐户 (Microsoft) ：
+若要使用 MSA 帐户 (Microsoft) ：
 
 1. 决定是否要使用现有帐户GitHub MSA 帐户 (Microsoft) 。  请参阅[Publish Microsoft Edge extensions by using a GitHub account](github.md)。
 
@@ -61,21 +61,21 @@ ms.locfileid: "12035570"
 如果你有主要所有者是 Microsoft 帐户 (MSA) 的合作伙伴中心帐户，请使用 Microsoft 帐户 (MSA) 登录到你的合作伙伴中心帐户。  然后，注册Microsoft Edge计划。
 
 > [!NOTE]
-> 当前Microsoft Edge计划不支持使用工作或学校帐户注册。  你必须使用 MSA (Microsoft 帐户进行注册) 然后将你的 Azure AD 租户与该帐户关联，才能管理扩展。
+> 当前Microsoft Edge计划不支持使用工作或学校帐户注册。  你必须使用 MSA (Microsoft 帐户) 然后将你的 Azure AD 租户与该帐户关联，才能管理扩展。
 
 
 <!-- ====================================================================== -->
-## <a name="enroll-in-the-microsoft-edge-program-on-partner-center"></a>在合作伙伴中心Microsoft Edge注册计划
+## <a name="enroll-in-the-microsoft-edge-program-on-partner-center"></a>在合作伙伴中心Microsoft Edge计划
 
 <!-- 1.  Navigate to the [webpage about Partner Center](https://partner.microsoft.com).  You might see a "Join the Microsoft Partner Network" page with a **Become a partner** button, or a "Welcome back" page with a **Visit Partner Center** button.  Select the **Become a partner** button or the **Visit Partner Center** button. -->
 
 1.  导航到合作伙伴 [中心开发人员登录页](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)，然后选择合作伙伴 **中心**。
 
-1.  如果你拥有 MSA (Microsoft 帐户) ，请使用它登录到合作伙伴中心。  MSA (Microsoft) 是 Outlook.com、Live.com 或 Hotmail.com 帐户。  然后，使用Microsoft Edge填写计划注册表单。
+1.  如果你拥有 MSA (Microsoft) ，请使用它登录到合作伙伴中心。  MSA (Microsoft) 是 Outlook.com、Live.com 或 Hotmail.com 帐户。  然后，使用Microsoft Edge填写计划注册表单。
 
 1.  如果你没有 Microsoft 帐户 (MSA) ，请直接创建新的 Microsoft 帐户 (MSA) ，或者使用下一步使用 GitHub 帐户登录合作伙伴中心。  合作伙伴中心帐户必须具有作为 MSA (Microsoft 帐户) 。  如果你想要使用现有的个人 GitHub 帐户登录到合作伙伴中心，请打开文章使用 GitHub 帐户在新的选项卡或窗口中发布[Microsoft Edge](github.md)扩展，然后按照步骤操作。  你的GitHub帐户将链接到自动创建的 Microsoft 帐户 (MSA) 该帐户的凭据可用于注册 Microsoft Edge 程序。
 
-1.  登录后，将显示注册表单，以注册 Microsoft Edge 计划。  使用下表可帮助您填写注册表单。
+1.  登录后，将显示注册表单，以注册Microsoft Edge计划。  使用下表可帮助您填写注册表单。
 
     :::row:::
        :::column span="1":::
@@ -94,7 +94,7 @@ ms.locfileid: "12035570"
           **帐户类型**
        :::column-end:::
        :::column span="2":::
-          合作伙伴Microsoft Edge计划[提供][MicrosoftPartnerCenter]个人和公司帐户。 以下项目符号详细介绍了这些帐户。  这两种帐户类型都使您能够将扩展Microsoft Edge加载项网站。
+          合作伙伴Microsoft Edge[计划提供][MicrosoftPartnerCenter]个人和公司帐户。 以下项目符号详细介绍了这些帐户。  这两种帐户类型都使您能够将扩展Microsoft Edge加载项网站。
 
           > [!IMPORTANT]
           > 注册后，你将无法更改此字段的值。
@@ -154,7 +154,7 @@ ms.locfileid: "12035570"
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [快速入门：设置](/azure/active-directory/develop/quickstart-create-new-tenant)租户 - Active Directory 文档中Azure Active Directory (Azure AD) 租户的常规信息。
+*  [快速入门：Active](/azure/active-directory/develop/quickstart-create-new-tenant) Directory 文档中的设置租户 - Azure Active Directory (Azure AD) 租户的常规信息。
 
 
 <!-- links -->

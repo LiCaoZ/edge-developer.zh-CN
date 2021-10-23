@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 02c637094c53b4c329581f15e7e92ca7edde040a
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 2daf4baf549659b8e3c5f9d03c42058dc8a7ab1e
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082286"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108407"
 ---
 <!-- Copyright Kayce Basques
 
@@ -101,8 +101,9 @@ DevTools 不会实时更新表。  若要更新表中的数据，请完成以下
 
 <!-- ====================================================================== -->
 <!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
-<!-- external links -->
+
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge 开发人员工具|Microsoft Docs"
+
 [W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Web SQL 数据库 | W3C"
 
 

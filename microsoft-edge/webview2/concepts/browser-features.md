@@ -1,18 +1,33 @@
 ---
-description: Microsoft Edge 和 WebView2 之间的功能差异
-title: Microsoft Edge 和 WebView2 之间的功能差异
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 09/21/2021
-ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
-keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
-no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]
----
-# <a name="feature-differences-between-microsoft-edge-and-webview2"></a>Microsoft Edge 和 WebView2 之间的功能差异
+description： Microsoft Edge and WebView2 title： Feature differences between Microsoft Edge and WebView2 author： MSEdgeTeam ms.author： msedgedevrel ms.date： 09/21/2021 ms.topic： conceptual ms.prod： microsoft-edge ms.technology： webview keywords： IWebView2， IWebView2WebView， WebView2， webview， wpf 应用， wpf， edge， ICoreWebView2， ICoreWebView2Host， 浏览器控件， 边缘 htmlno-loc：
+- "Autofill for Addresses"
+- "Autofill for Passwords"
+- "Autofill for Payments""
+- "Browser Extensions""
+- "Browser Task Manager"
+- "Collections"
+- "Continue-where-I-left-off prompt"
+- "Downloads"
+- "Edge Shopping"
+- "Family Safety"
+- "Favorites"
+- "Hotkeys"
+- "IE Mode"
+- "Immersive Reader"
+- "Intrusive Ads"
+- "Read Aloud"
+- "Smart Screen"
+- "Translate"
+- "Tracking Prevention"
+- "Profile and Identity"
+- "Web Payment API"
+- "Windows Defender Application Guard"
+- "edge:// URLs"
 
-WebView2 基于新的Microsoft Edge浏览器。  你有机会将功能从浏览器扩展到基于 WebView2 的应用，这很有用。  但是，由于 WebView2 不限于类似浏览器的应用，因此需要修改或删除一些浏览器功能。  本文提供以下信息。
+---
+# <a name="feature-differences-between-microsoft-edge-and-webview2"></a>Microsoft Edge和 WebView2 之间的功能差异
+
+WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏览器扩展到基于 WebView2 的应用，这很有用。  但是，由于 WebView2 不限于类似浏览器的应用，因此需要修改或删除一些浏览器功能。  本文提供以下信息。
 
 *   修改后的浏览器功能和支持信息。
 *   启用或关闭功能的功能。
@@ -52,14 +67,14 @@ WebView2 基于新的Microsoft Edge浏览器。  你有机会将功能从浏览�
 | Immersive Reader | 关闭 | 否 | 此功能取决于用于交互的浏览器 UI。  此功能已关闭。  |
 | Intrusive Ads | 关闭 | 否 | 此功能已关闭。  |
 | 键盘快捷方式 | 查看详细信息 | 查看详细信息 | 默认情况下关闭的键盘快捷方式在 WebView2 中没有意义或导致问题。  不能关闭或打开这些快捷方式。  相反，您可以使用 事件侦听组合键 `AcceleratorKeyPressed` ，并根据需要创建自定义响应。  有关详细信息，请导航到"[其他键盘快捷方式信息"。](#additional-keyboard-shortcuts-information) |
-| PDF 批注 | 关闭 | 否 | 此功能已关闭。 PDF 查看功能已启用，但不启用以 PDF 格式绘制、墨迹书写和突出显示功能。 有关详细信息，请导航到"[禁用功能： PDF 批注支持"。](https://github.com/MicrosoftEdge/WebView2Announcements/issues/21) |
+| PDF 批注 | 关闭 | 否 | 此功能已关闭。 PDF 查看功能已启用，但 PDF 中的绘图、墨迹书写和突出显示未启用。 有关详细信息，请导航到"[禁用功能： PDF 批注支持"。](https://github.com/MicrosoftEdge/WebView2Announcements/issues/21) |
 | Read Aloud | 关闭 | 否 | 此功能已关闭。  |
 | Smart Screen | 开`*` | 否 | `*` 此功能的 UI 已删除，但基础功能仍然可用。  此外，您还可以使用 Smart Screen 命令行开关关闭。  |
 | Translate | 关闭 | 否 | 此功能已关闭。  |
 | Tracking Prevention | 开`*` | 否 | `*` 此功能的 UI 已删除，但基础功能仍然可用。  跟踪防护始终设置为平衡。|
 | Profile and Identity | 关闭 | 否 | 同步收藏夹、Cookie 等的功能已关闭。  |
 | Windows Defender Application Guard | 关闭 | 否 | 此功能已关闭。  |
-| edge:// URLs | 查看详细信息 | 否 | 设置浏览器Microsoft Edge URL `edge://` 上。  由于这些网页中的大多数Microsoft Edge WebView2 的上下文中具有品牌或没有意义，因此其中一些 URL 已关闭。  有关详细信息，请导航到["阻止的内部 URL"。](#blocked-internal-urls)  |
+| edge:// URLs | 查看详细信息 | 否 | 设置浏览器Microsoft Edge URL `edge://` 上。  由于其中大多数网页Microsoft Edge WebView2 上下文中的品牌或无意义的，因此其中一些 URL 已关闭。  有关详细信息，请导航到["阻止的内部 URL"。](#blocked-internal-urls)  |
 
 ## <a name="web-platform-features"></a>Web 平台功能
 

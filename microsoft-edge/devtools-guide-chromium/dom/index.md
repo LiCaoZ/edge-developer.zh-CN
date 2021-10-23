@@ -7,12 +7,12 @@ ms.date: 06/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
-ms.openlocfilehash: e24cd8aaca2419b7f56229833dd3a02180c3051f
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 0c5da037fd552c743a990d553d39ef252931c595
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083567"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12107966"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,7 +29,7 @@ ms.locfileid: "12083567"
    limitations under the License.  -->
 # <a name="get-started-with-viewing-and-changing-the-dom"></a>查看和更改 DOM 入门
 
-完成这些交互式教程，了解使用 DevTools 查看和更改页面的文档对象模型[\ (](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) DOM\) 的Microsoft Edge基础知识。
+完成这些交互式教程，了解使用 DevTools 查看和更改页面的文档对象模型[\ (](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) DOM\) 的基本Microsoft Edge。
 
 本教程假定你知道 DOM 和 HTML 之间的区别。 导航到“[附录：HTML 与 DOM](#appendix-html-versus-the-dom)”了解相关说明。
 
@@ -415,13 +415,12 @@ This is a continuation of the [Scroll into view](#scroll-into-view) section.  Fo
 
 <!-- ====================================================================== -->
 <!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge \ (Chromium\) 开发人员工具|Microsoft Docs"
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge开发人员工具|Microsoft Docs"
 [DevToolsCssGetStarted]: ../css/index.md "查看和更改 CSS 入门 | Microsoft 文档"
 [DevToolsShortcutsElements]: ../shortcuts/index.md#elements-tool-keyboard-shortcuts "“元素”工具键盘快捷方式 - Microsoft Edge 开发人员工具键盘快捷方式 | Microsoft Docs"
 <!-- external links -->
-[GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft Edge (Chromium) 开发人员工具 DOM 示例 | Glitch"
+[GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft EdgeDevTools DOM 示例 |小故障"
 [MDNIntroductionToDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "DOM 简介 | MDN"
-
 
 <!-- ====================================================================== -->
 > [!NOTE]

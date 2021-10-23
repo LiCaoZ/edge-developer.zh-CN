@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: fa80570ad331da2721dcbf23e02fa54421ed111d
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 7befd242042d5ded1a76b3b1b99ea688ad5006f7
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082027"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12107826"
 ---
 <!-- Copyright Kayce Basques
 
@@ -59,7 +59,7 @@ ms.locfileid: "12082027"
 
 ### <a name="reveal-resources-in-the-network-tool-from-other-panels"></a>显示来自其他面板的网络工具中的资源
 
-下面的 ["](#browse-resources) 浏览资源"部分显示如何查看来自 DevTools UI 各个部分的资源。  如果你曾经想要检查 **"** 网络"工具中的资源，请将鼠标悬停在该资源上，打开上下文菜单 \ (右键单击\) ，然后选择"网络"面板**中的"展示"。**
+下面的 ["](#browse-resources) 浏览资源"部分显示如何查看来自 DevTools UI 各个部分的资源。  如果你曾经想要在网络工具中检查资源，**** 请将鼠标悬停在该资源上，打开上下文菜单 \ (右键单击\) ，然后选择网络**面板中的"展示"。**
 
 :::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="&quot;网络&quot;面板中的&quot;展示&quot;" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **"网络"面板中的"展示"**
@@ -89,7 +89,7 @@ ms.locfileid: "12082027"
 
     下面细目了上图中的不明显项。
 
-    | 页面项 | 说明 |
+    | 页面项 | 描述 |
     |:--- |:--- |
     | `top` | 主文档 [浏览上下文][MDNInlineFrame]。 |
     | `airhorner.com` | 域。  嵌套在它下的所有资源都来自该域。  例如，文件的完整 URL `comlink.global.j` 可能是 `https://airhorner.com/scripts/comlink.global.js` 。 |
@@ -146,7 +146,7 @@ ms.locfileid: "12082027"
 
 #### <a name="browse-files-by-type-in-the-network-panel"></a>在"网络"面板中按类型浏览文件
 
-导航到 [按资源类型筛选][DevtoolsNetworkFilterByResourceType]。
+导航到["按资源类型筛选"。][DevtoolsNetworkFilterByResourceType]
 
 :::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="在网络日志中筛选 CSS" lightbox="../media/resources-network-resources-filter-css.msft.png":::
    在网络 **日志中筛选** CSS
@@ -155,8 +155,9 @@ ms.locfileid: "12082027"
 
 <!-- ====================================================================== -->
 <!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
-[DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "按资源类型筛选 - 检查开发人员工具Microsoft Edge中的网络|Microsoft Docs"
+
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge 开发人员工具|Microsoft Docs"
+[DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "按资源类型筛选 - 检查 DevTools Microsoft Edge中的网络|Microsoft Docs"
 [DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "检查资源的详细信息 - 检查 DevTools Microsoft Edge中的网络|Microsoft Docs"
 [DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "记录网络活动 - 在 DevTools Microsoft Edge中检查|Microsoft Docs"
 <!-- external links -->

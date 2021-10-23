@@ -9,12 +9,12 @@ ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
 no-loc:
 - Enable new font editor tool within the Styles pane
-ms.openlocfilehash: df82ce1b50f70ba36485b2faaa4f7b8b2de475c7
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 27bcfd59326d003bd94b780052578befda6a70ab
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083819"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108470"
 ---
 # <a name="edit-css-font-styles-and-settings-in-the-styles-pane"></a>在“样式”窗格中编辑 CSS 字体样式和设置
 
@@ -107,6 +107,6 @@ ms.locfileid: "12083819"
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
+[DevtoolsIndex]: ../index.md "Microsoft Edge开发人员工具|Microsoft Docs"
 [DevtoolsExperimentalFeaturesIndex]: ../experimental-features/index.md "试验功能 | Microsoft Docs"
 [DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../experimental-features/index.md#turning-on-experimental-features "打开试验功能 - 试验功能 | Microsoft Docs"

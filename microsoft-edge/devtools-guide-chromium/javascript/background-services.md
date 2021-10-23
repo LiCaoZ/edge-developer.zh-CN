@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 86dd9fdfee277e35c720bebf9cd1fb2d4f168c1c
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 16384c40360b2e10a422fb766832ba7a1e466dc6
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083686"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108218"
 ---
 <!-- Copyright Kayce Basques
 
@@ -154,7 +154,7 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 <!-- links -->
 <!--[BackgroundFetchAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2018/12/background-fetch.md "Background Fetch API"  -->
 <!--[BackgroundSyncAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2015/12/background-sync.md  "Background Sync API"  -->
-[OpenDevTools]： ../open/index.md "Open Microsoft Edge (Chromium) Developer Tools |Microsoft Docs"
+[OpenDevTools]： ../open/index.md "Open Microsoft Edge Developer Tools |Microsoft Docs"
 
 [MDNNotifications]: https://developer.mozilla.org/docs/Web/API/Notifications_API "通知 API | MDN"
 [MDNPush]: https://developer.mozilla.org/docs/Web/API/Push_API "推送 API | MDN"

@@ -1,18 +1,18 @@
 ---
-description: Enterprise Edge (Chromium) 扩展的策略文档。
+description: Enterprise扩展的策略文档。
 title: 匹配模式
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: cbec3a8ca6c2159303fcc614ee9c25326cec04f2
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+keywords: microsoft edge， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
+ms.openlocfilehash: 0b64c084adf40040d5f93d6c520fcbe620ce5f23
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12033581"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108274"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -29,7 +29,7 @@ ms.locfileid: "12033581"
    limitations under the License.  -->
 # <a name="match-patterns"></a>匹配模式
 
-主机权限和内容脚本匹配基于匹配模式定义的一组 URL。  匹配模式实质上是一个 URL，它以允许的方案开头， (、、 或 `http` ，并且可以包含 ' ' `https` `file` `ftp` `*` 字符。  特殊模式 `<all_urls>` 与以允许方案开头的任何 URL 匹配。  每个匹配模式有 3 个部分：
+主机权限和内容脚本匹配基于匹配模式定义的一组 URL。  匹配模式实质上是一个 URL，它以允许的方案开头， (、、 或 `http` ，并且可以包含 ' ' `https` `file` `ftp` `*` 字符。  特殊模式 `<all_urls>` 匹配以允许方案开头的任何 URL。  每个匹配模式有 3 个部分：
 
 *   _方案_ — 例如 `http` ， `file` 或 或 `*`
 

@@ -8,16 +8,16 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件
-ms.openlocfilehash: c172217083da7c0b92ce4d5a54b866f582609b39
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: ff4fe6dd8f944966aa22ced2ed9f0f868cdf24ba
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083525"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108588"
 ---
 # <a name="microsoft-edge-webview2-api-reference"></a>Microsoft Edge WebView2 API 参考
 
-利用 Microsoft Edge WebView2 控件，您可以使用 web 内容作为呈现[Microsoft Edge (Chromium) 在应用程序中](https://www.microsoftedgeinsider.com)承载 Web 内容。  有关详细信息，请导航到[WebView2 Microsoft Edge概述和](./index.md) [WebView2 入门](./get-started/win32.md)。
+利用 Microsoft Edge WebView2 控件，您可以使用基于 web Chromium 的 web [Microsoft Edge作为呈现](https://www.microsoftedgeinsider.com)引擎来托管 Web 内容。  有关详细信息，请导航到[WebView2 Microsoft Edge概述和](./index.md) [WebView2 入门](./get-started/win32.md)。
 <!-- linking to a parent node of the TOC ("Get started with WebView2") isn't supported, so the above link goes to the first child article, but with link text of the parent TOC node. -->
 
 

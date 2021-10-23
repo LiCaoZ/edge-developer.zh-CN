@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 911ebae9b1c48670650da668918b32d072909958
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 8b4dd038a10ac9c4a24e1ddcdffa3af054f35b73
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083420"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12107938"
 ---
 # <a name="get-started-debugging-webview2-apps"></a>开始调试 WebView2 应用
 
@@ -21,7 +21,7 @@ WebView2 Microsoft Edge的目标是将 Web 和本机应用开发功能和工具�
 
 ## [<a name="microsoft-edge-devtools"></a>Microsoft Edge 开发工具](#tab/devtools)
 
-使用[Microsoft Edge (Chromium) ][DevtoolsGuideChromiumMain]工具调试 WebView2 控件中显示的 Web 内容，方法与为 WebView2 控件中显示的另一网页进行调试Microsoft Edge。  若要打开 DevTools，请设置 WebView 控件的焦点，然后使用以下操作之一。
+使用[Microsoft Edge][DevtoolsGuideChromiumMain]工具调试 WebView2 控件中显示的 Web 内容，方法与为 WebView2 控件中显示的另一网页进行调试Microsoft Edge。  若要打开 DevTools，请设置 WebView 控件的焦点，然后使用以下操作之一。
 
 *   选择 `F12`。
 *   选择 `Ctrl` + `Shift` + `I` 。
@@ -35,10 +35,10 @@ WebView2 Microsoft Edge的目标是将 Web 和本机应用开发功能和工具�
 
 ## [<a name="visual-studio"></a>Visual Studio](#tab/visualstudio)
 
-Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具。  在Visual Studio部分中，主要焦点是调试 WebView 控件，但其他调试方法Visual Studio一样可用。  使用以下过程调试 Win32 应用中的 Web 和本机代码，Office外接程序。
+Visual Studio WebView2 应用中的 Web 和本机代码提供各种调试工具。  在Visual Studio部分中，主要焦点是调试 WebView 控件，但其他调试方法Visual Studio一样可用。  使用以下过程调试 Win32 应用中的 Web 和本机代码，Office外接程序。
 
 > [!IMPORTANT]
-> 当你在附加了Visual Studio调试器的情况下调试应用时，选择可能会触发本机 `F12` 调试器，而不是开发人员工具。  Select `Ctrl` + `Shift` + `I` ， or use the context menu \ (right-click\) to avoid the situation.
+> 当你在附加了本机调试Visual Studio中调试应用时，选择可能会触发本机调试器 `F12` ，而不是开发人员工具。  Select `Ctrl` + `Shift` + `I` ， or use the context menu \ (right-click\) to avoid the situation.
 
 开始之前，请确保满足以下要求。
 
@@ -84,7 +84,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
        Visual Studio添加断点
     :::image-end:::
 
-1.  若要运行调试器，请选择平台的位大小，然后选择"本地和调试器"旁边的绿色播放**Windows按钮**。  应用运行，调试程序连接到创建的第一个 WebView2 进程。
+1.  若要运行调试器，请选择平台的位大小，然后选择"本地调试器"旁边的绿色播放**Windows按钮**。  应用运行，调试程序连接到创建的第一个 WebView2 进程。
 
     :::image type="complex" source="./media/run.png" alt-text=" Visual Studio本地Windows调试器" lightbox="./media/run.png":::
        Visual Studio**本地Windows调试器**
@@ -124,7 +124,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
     ```
 
     > [!NOTE]
-    > Visual Studio Code源路径映射现在需要 URL，因此你的应用现在在启动时接收命令行参数。  如果需要，可以 `url` 安全地忽略参数。
+    > Visual Studio Code源路径映射现在需要 URL，因此你的应用现在在启动时会收到命令行参数。  如果需要，可以 `url` 安全地忽略参数。
 
 1.  若要在源代码中设置断点，请将鼠标悬停在行上，然后选择 `F9`
 
@@ -189,7 +189,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
         "useWebView": true
     ```
 
-    WebView2 控件必须打开 CDP 端口以允许调试 WebView2 控件。  在启动调试程序之前，必须构建代码，以确保只有一个 WebView2 控件在 CDP (打开 Chrome 开发人员) 协议。
+    WebView2 控件必须打开 CDP 端口以允许调试 WebView2 控件。  必须生成代码，以确保在启动调试程序之前，只有一个 WebView2 控件在 CDP (打开 chrome 开发人员) 协议。
 
 *   调试跟踪选项
 
@@ -255,8 +255,9 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
-<!-- external links -->
+
+[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge开发人员工具|Microsoft Docs"
+
 [Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Setvirtualhostnametofoldermapping]: /dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping "CoreWebView2.SetVirtualHostNameToFolderMapping (String， String， CoreWebView2HostResourceAccessKind) 方法 (Microsoft.Web.WebView2.Core) |Microsoft Docs"
 [Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: /dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments "CoreWebView2EnvironmentOptions.AdditionalBrowserArguments 属性 (Microsoft.Web.WebView2.Core) |Microsoft Docs"
 [Webview2ReferenceWin32Webview2IdlParameters]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions  "CreateCoreWebView2Environment - 全局|Microsoft Docs"

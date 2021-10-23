@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: bd9f06b91e1f9cbb6c8bf46890740ef0dfec0738
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 72e8da1de0fe597a8cc4b17958e23cf9cedf2514
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083371"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108071"
 ---
 <!-- Copyright Kayce Basques
 
@@ -98,7 +98,8 @@ ms.locfileid: "12083371"
 
 <!-- ====================================================================== -->
 <!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
+
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge 开发人员工具|Microsoft Docs"
 [DevToolsOpen]: ../open/index.md "打开 Microsoft Edge 开发人员工具 | Microsoft Docs"
 <!-- external links -->
 [LetsEncrypt]: https://letsencrypt.org "让我们进行加密 - 免费 SSL/TLS 证书"

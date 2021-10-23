@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
-ms.openlocfilehash: 675ab810f653c026e89b593abc235e809f53dca0
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: dcc7d0e4b6796bb21799d862bd6a8615a6464213
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082258"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108057"
 ---
 # <a name="inspect-css-grid"></a>检查 CSS 网格
 
@@ -29,7 +29,7 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
 
 ## <a name="discover-css-grids"></a>探索 CSS 网格
 
-如果页面上的 HTML 元素应用了 `display: grid` 或 `display: inline-grid`，则“[元素][DevtoolsGuideChromiumOpen]”面板中该元素的旁边会显示一个 `grid` 徽章。
+如果页面上的 HTML 元素应用了 `display: grid` 或 `display: inline-grid`，则“[元素][DevtoolsGuideOpen]”面板中该元素的旁边会显示一个 `grid` 徽章。
 
 :::image type="complex" source="../media/grid-discover-grid.msft.png" alt-text="探索网格" lightbox="../media/grid-discover-grid.msft.png":::
    探索网格
@@ -185,7 +185,7 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsGuideChromiumOpen]: ../open/index.md "打开 Microsoft Edge 开发人员工具 | Microsoft Docs"
+[DevtoolsGuideOpen]: ../open/index.md "打开 Microsoft Edge 开发人员工具 | Microsoft Docs"
 
 [JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "CSS 网格 | jec.fyi"
 [JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "CSS 网格 | jec.fyi"

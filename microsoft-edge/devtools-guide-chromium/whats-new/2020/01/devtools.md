@@ -1,5 +1,5 @@
 ---
-description: 3D 视图Visual Studio与Microsoft Edge集成等。
+description: 3D 视图Visual Studio与 Microsoft Edge 集成等。
 title: 'DevTools (Microsoft Edge 81) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 16f50e2984f5867beaf0b4206c4ba47601a228cf
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 965816f25bbcfb22a0e4a0d039690014dc8bce76
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083119"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108337"
 ---
 <!-- Copyright Kayce Basques
 
@@ -31,7 +31,7 @@ ms.locfileid: "12083119"
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告
 
-以下各节列出了你可能从 DevTools 团队中错过Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。
+以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。
 
 ### <a name="accessibility-improvements-to-the-devtools"></a>对 DevTools 的辅助功能改进
 
@@ -41,9 +41,9 @@ DevTools 团队已对 Chromium 进行 170 次更改，以解决 DevTools 中的�
    具有 **键盘** 导航和屏幕阅读器改进的 DevTools 中的性能工具
 :::image-end:::
 
-想要了解如何使网页可供所有用户访问？  下载[辅助功能Insights][AccessibilityInsights]和[Webhint][WebhintBrowserExtension]扩展，Microsoft Edge开始操作。
+想要了解如何使网页可供所有用户访问？  下载[辅助功能Insights][AccessibilityInsights] [Webhint][WebhintBrowserExtension]扩展，Microsoft Edge开始操作。
 
-如果你使用屏幕阅读器或键盘在 DevTools 中导航，请通过向我们发推文[][PostTweetEdgeDevTools]或选择[发送反馈][联系人]图标向我们发送反馈！
+如果你使用屏幕阅读器或键盘浏览 DevTools，请通过[发推][PostTweetEdgeDevTools]或单击**反馈**图标向我们发送你的反馈！
 
 Chromium 问题 [#963183][CR963183]
 
@@ -56,12 +56,12 @@ Chromium 问题 [#963183][CR963183]
       中文 \ (Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
    :::column-end:::
    :::column span="":::
-      中文 \ (繁体\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
+      繁体 (中文\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      法语 –&#231;英语
+      法语 –&#231;语
    :::column-end:::
    :::column span="":::
       德语 - 德语
@@ -104,7 +104,7 @@ Chromium 问题 [#963183][CR963183]
 
 DevTools 会自动匹配你在 中用于Microsoft Edge的语言 `edge://settings/languages` 。
 
-如果你希望Microsoft Edge一种语言，并且你的 DevTools 保持为英语，请在 DevTools 中选择以打开 设置 `F1` 并[][DevtoolsCustomizeIndexSettings]禁用**匹配浏览器语言**。
+如果你希望Microsoft Edge一种语言，并且你的 DevTools 保持为英语，请在 DevTools 中选择以打开设置 `F1` 并禁用[][DevtoolsCustomizeIndexSettings]**匹配浏览器语言**。
 
 :::image type="complex" source="../../images/2020/01/localized-devtools.msft.png" alt-text="德语的 DevTools" lightbox="../../images/2020/01/localized-devtools.msft.png":::
    德语的 DevTools
@@ -112,7 +112,7 @@ DevTools 会自动匹配你在 中用于Microsoft Edge的语言 `edge://settings
 
 **控制台** 消息未本地化。  只有 DevTools UI 中使用的字符串以你用于开发工具Microsoft Edge。
 
-如果你想要以与可用版本不同的语言使用 DevTools，请通过我们的推文或选择[][PostTweetEdgeDevTools]"[发送反馈][联系人]"图标。
+如果你想要以与可用版本不同的语言使用 DevTools，请通过我们的推文或选择[][PostTweetEdgeDevTools]"发送反馈 **"** 图标。
 
 Chromium问题[#941561][CR941561]
 
@@ -128,7 +128,7 @@ Webhint Microsoft Edge扩展允许你在 DevTools 中轻松扫描网页并获取
 
 ### <a name="3d-view"></a>3D 视图
 
-使用 **3D 视图** 通过浏览文档对象模型 [\ (DOM\) ][MDNDocumentObjectModel] 或 [z 索引][MDNZIndex] 堆栈上下文来调试 Web 应用程序。
+使用 **3D 视图** 通过浏览文档对象模型 [\ (DOM\) ][MDNDocumentObjectModel] 或 [z-index][MDNZIndex] 堆叠上下文来调试 Web 应用程序。
 
 :::image type="complex" source="../../images/2020/01/3dview.msft.png" alt-text="DevTools 中的 3D 视图" lightbox="../../images/2020/01/3dview.msft.png":::
    DevTools 中的 3D 视图
@@ -136,7 +136,7 @@ Webhint Microsoft Edge扩展允许你在 DevTools 中轻松扫描网页并获取
 
 若要访问 3D 视图，请选择 `Ctrl`  +  `Shift`  +  `P` ，键入**3D 视图，** 然后选择**显示 3D 视图**。
 
-该Microsoft Edge团队正在与 UI 上的 Chromium 团队合作，并将更多功能添加到 3D 视图，因此请发送你的 [反馈][联系人]。
+该Microsoft Edge团队正在与 UI 上的 Chromium 团队合作，并将更多功能添加到 3D 视图，因此请使用"发送**反馈"** 图标！
 
 Chromium问题[#987787][CR987787]
 
@@ -146,9 +146,9 @@ DevTools 团队还发布了一些适用于 Visual Studio Code[][VisualStudioCode
 
 #### <a name="elements-for-microsoft-edge"></a>用于Microsoft Edge
 
-通过添加[\Microsoft Edge\ (Chromium\) ][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code 元素，在 Visual Studio Code 内使用 Elements 工具。
+通过添加元素的 Visual Studio Code 扩展，从[Microsoft Edge Visual Studio Code][VisualStudioMarketplaceElementsMicrosoftEdgeExtension]元素工具。
 
-:::image type="complex" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="元素工具Visual Studio Code元素扩展Microsoft Edge元素" lightbox="../../images/2020/01/elements-for-edge.msft.png":::
+:::image type="complex" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="使用元素扩展Visual Studio Code元素的 Microsoft Edge 工具" lightbox="../../images/2020/01/elements-for-edge.msft.png":::
    元素**工具**Visual Studio Code元素扩展Microsoft Edge元素
 :::image-end:::
 
@@ -156,10 +156,10 @@ DevTools 团队还发布了一些适用于 Visual Studio Code[][VisualStudioCode
 
 #### <a name="debugger-for-microsoft-edge"></a>调试程序Microsoft Edge
 
-使用[调试器 for Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] Visual Studio Code 扩展，直接从 Visual Studio Code 调试在 Microsoft Edge 中运行的 JavaScript。
+使用[调试器 for Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] Visual Studio Code 扩展，直接从 Microsoft Edge 调试在 Visual Studio Code 中运行的 JavaScript。
 
-:::image type="complex" source="../../images/2020/01/vscode-debugger.msft.png" alt-text="Microsoft Edge Extension 的调试Visual Studio Code" lightbox="../../images/2020/01/vscode-debugger.msft.png":::
-   Microsoft Edge Extension 的调试Visual Studio Code
+:::image type="complex" source="../../images/2020/01/vscode-debugger.msft.png" alt-text="Visual Studio Code 中的 Microsoft Edge Extension 调试器" lightbox="../../images/2020/01/vscode-debugger.msft.png":::
+   Visual Studio Code 中的 Microsoft Edge Extension 调试器
 :::image-end:::
 
 有关详细信息，请查看如何从 Microsoft Edge[调试Visual Studio Code。][VisualStudioCodeDebuggerEdgeExtension]
@@ -176,7 +176,7 @@ DevTools 团队还发布了一些适用于 Visual Studio Code[][VisualStudioCode
 
 ### <a name="visual-studio-integration"></a>Visual Studio集成
 
-在 Visual Studio 2019 版本 16.2 或更高版本中，使用 Visual Studio 调试程序调试在 Microsoft Edge 中运行的 JavaScript。  [下载Visual Studio 2019][MicrosoftVisualStudioDownloads]以试用此功能！
+在 Visual Studio 2019 版本 16.2 或更高版本中，使用 Visual Studio 调试器调试在 Microsoft Edge 中运行的 JavaScript。  [下载Visual Studio 2019][MicrosoftVisualStudioDownloads]以试用此功能！
 
 :::image type="complex" source="../../images/2020/01/vs.msft.png" alt-text="Visual Studio Canary、Dev 或 Beta Microsoft Edge启动 Web 应用的选项" lightbox="../../images/2020/01/vs.msft.png":::
    Visual Studio Canary、Dev 或 Beta Microsoft Edge启动 Web 应用的选项
@@ -214,7 +214,7 @@ DevTools 团队还发布了一些适用于 Visual Studio Code[][VisualStudioCode
 
 相关功能：
 
-*   打开 [命令菜单][DevtoolsCommandMenuIndex] 并运行命令，在启用"显示设备框架"菜单后，为包含 `Capture screenshot` Moto G4 硬件 (**的视** 口拍摄) 。
+*   打开 [命令菜单][DevtoolsCommandMenuIndex] 并运行命令，在启用"显示设备框架"菜单后，为包含 `Capture screenshot` Moto G4 硬件 (**的** 视口拍摄) 。
 *   [限制网络和 CPU][DevtoolsDeviceModeIndexThrottleNetworkCpu] 以更精确地模拟移动用户的 Web 浏览条件。
 
 Chromium问题[#924693][CR924693]
@@ -242,7 +242,7 @@ Chromium问题[#1026879][CR1026879]
 
 #### <a name="edit-all-cookie-values"></a>编辑所有 Cookie 值
 
-Cookie 表中的所有单元格现在均可编辑 **，"大小** "列中的单元格除外，因为该列表示 Cookie 的网络大小（以字节为单位）。  有关每列的说明，请导航到"[字段"。][DevtoolsStorageCookiesFields]
+Cookie 表中的所有单元格现在均可编辑 **，"大小** "列中的单元格除外，因为该列表示 Cookie 的网络大小（以字节为单位）。  有关每列的说明，请导航到"字段["。][DevtoolsStorageCookiesFields]
 
 :::image type="complex" source="../../images/2020/01/editcookie.msft.png" alt-text="编辑 Cookie 值" lightbox="../../images/2020/01/editcookie.msft.png":::
    编辑 Cookie 值
@@ -250,7 +250,7 @@ Cookie 表中的所有单元格现在均可编辑 **，"大小** "列中的单�
 
 #### <a name="copy-as-nodejs-fetch-to-include-cookie-data"></a>复制为Node.js提取以包含 Cookie 数据
 
-若要获取包含 Cookie 数据的表达式，请将鼠标悬停在网络请求上，打开上下文菜单 \ (右键单击\) ，然后选择"复制复制"作为"Node.js `fetch` ****  >  **提取"。**
+若要获取包含 Cookie 数据的表达式，请将鼠标悬停在网络请求上，打开上下文菜单 \ (右键单击\) ，然后选择"复制复制Node.js `fetch` ****  >  **提取 "。**
 
 :::image type="complex" source="../../images/2020/01/fetchcookies.msft.png" alt-text="作为提取Node.js复制" lightbox="../../images/2020/01/fetchcookies.msft.png":::
    作为提取Node.js复制
@@ -260,7 +260,7 @@ Chromium问题[#1029826][CR1029826]
 
 ### <a name="more-accurate-web-app-manifest-icons"></a>更准确的 Web 应用清单图标
 
-以前，应用程序面板中的"清单"窗格发送了自己的请求，以显示 Web 应用清单图标。  DevTools 现在显示与开发人员使用完全相同Microsoft Edge图标。
+以前，应用程序面板中的"清单"窗格发送了自己的请求，以显示 Web 应用清单图标。  DevTools 现在显示你使用的完全相同Microsoft Edge图标。
 
 :::image type="complex" source="../../images/2020/01/manifesticons.msft.png" alt-text="清单窗格中的图标" lightbox="../../images/2020/01/manifesticons.msft.png":::
    清单窗格中的图标
@@ -311,12 +311,12 @@ Chromium问题[#985402][CR985402]
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport "模拟移动视口 - 在 DevTools Microsoft Edge设备模式下模拟移动设备|Microsoft Docs"
-[DevtoolsDeviceModeIndexShowDeviceFrame]: ../../../device-mode/index.md#show-device-frame "显示设备帧 - 在 DevTools Microsoft Edge设备模式下模拟|Microsoft Docs"
+[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport "模拟移动视区 - 在 DevTools Microsoft Edge设备模式下模拟移动设备|Microsoft Docs"
+[DevtoolsDeviceModeIndexShowDeviceFrame]: ../../../device-mode/index.md#show-device-frame "显示设备框架 - 在 DevTools Microsoft Edge设备模式下模拟移动设备|Microsoft Docs"
 [DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"
 [DevtoolsDeviceModeIndexThrottleNetworkCpu]: ../../../device-mode/index.md#throttle-the-network-and-cpu "限制网络和 CPU - 在 DevTools Microsoft Edge设备模式下模拟移动设备|Microsoft Docs"
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsStorageCookiesFields]: ../../../storage/cookies.md#fields "字段 - 使用 DevTools Microsoft Edge、查看、编辑和删除|Microsoft Docs"
+[DevtoolsStorageCookiesFields]: ../../../storage/cookies.md#fields "字段 - 使用 DevTools Microsoft Edge、查看、编辑和|Microsoft Docs"
 
 [VisualStudioIndex]: ../../../../visual-studio/index.md "Visual Studio |Microsoft Docs"
 
@@ -327,7 +327,7 @@ Chromium问题[#985402][CR985402]
 
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio 代码"
 [VisualStudioMarketplaceDebuggerEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge " Microsoft Edge 调试程序 | Visual Studio Marketplace"
-[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge \ (Chromium\) |Visual StudioMarketplace"
+[VisualStudioMarketplaceElementsMicrosoftEdgeExtension]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "用于Microsoft Edge |Visual StudioMarketplace"
 [VisualStudioMarketplaceWebhintExtension]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint |Visual StudioMarketplace"
 
 [TrackingPrevention]: https://blogs.windows.com/msedgedev/2019/12/03/improving-tracking-prevention-microsoft-edge-79 "改进跟踪防护Microsoft Edge博客文章"
@@ -343,7 +343,7 @@ Chromium问题[#985402][CR985402]
 [CR1029826]: https://crbug.com/1029826 "network tab -> right choose to request -> copy -> copy as fetch does not copy cookies |ChromiumBug"
 [CR985402]: https://crbug.com/985402 "Web 应用清单图标错误字符串令人困惑|ChromiumBug"
 [CR963183]: https://crbug.com/963183 "DevTools 不符合 WCAG |ChromiumBug"
-[CR941561]: https://crbug.com/941561 "DevTools 工具的可本地化|ChromiumBug"
+[CR941561]: https://crbug.com/941561 "DevTools 工具的本地化|ChromiumBug"
 [CR987787]: https://crbug.com/987787 "Dom 3D 视图|ChromiumBug"
 
 [CSSContentDemo]: https://mathiasbynens.github.io/css-dbg-stories/css-escapes.html "未转义 CSS 内容的演示"
@@ -372,4 +372,4 @@ Chromium问题[#985402][CR985402]
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques

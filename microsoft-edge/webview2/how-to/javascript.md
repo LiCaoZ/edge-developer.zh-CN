@@ -1,6 +1,6 @@
 ---
 description: 了解如何在 WebView2 应用中的复杂方案中使用 JavaScript
-title: 在 WebView2 应用中使用 JavaScript
+title: 在 WebView 中对扩展方案使用 JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/06/2021
@@ -8,36 +8,42 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 754ca3f49558a1b32be07f0d7d82c5b3b33a9edc
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 4e81f30742536aefc2f3943e169712fb3be06f0c
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083693"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12107952"
 ---
 # <a name="use-javascript-in-webview-for-extended-scenarios"></a>在 WebView 中对扩展方案使用 JavaScript
 
 使用 WebView2 控件中的 JavaScript，可以自定义本机应用以满足你的要求。  本文探讨如何在 WebView2 中使用 JavaScript，并回顾如何使用高级 WebView2 特性和功能进行开发。
 
+
+<!-- ====================================================================== -->
 ## <a name="before-you-begin"></a>在开始之前
 
 本文假定您已有一个工作项目。  如果你没有项目，并且想要继续操作，请导航到 [WebView2 入门指南][Webview2MainGetStarted]。
 
+
+<!-- ====================================================================== -->
 ## <a name="basic-webview2-functions"></a>基本 WebView2 函数
 
 使用以下函数开始在 WebView 应用中嵌入 JavaScript。
 
-| API  | 说明  |
+| API  | 描述  |
 |:--- |:--- |
 | [ExecuteScriptAsync][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | 在 WebView 控件中运行 JavaScript。 有关详细信息，请导航到入门教程。 |
 | [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | 创建文档对象模型 \ (DOM\) 时运行。 |
 
-## <a name="scenario--running-a-dedicated-script-file"></a>方案：运行专用脚本文件
+
+<!-- ====================================================================== -->
+## <a name="scenario-running-a-dedicated-script-file"></a>方案：运行专用脚本文件
 
 在此部分中，从 WebView2 控件访问专用的 JavaScript 文件。
 
 > [!NOTE]
-> 虽然内联编写 JavaScript 对于快速 JavaScript 命令可能非常高效，但会丢失 JavaScript 颜色主题和行格式，这使得在 JavaScript 中编写大量代码Visual Studio。
+> 尽管内联编写 JavaScript 对于快速 JavaScript 命令可能非常高效，但会丢失 JavaScript 颜色主题和行格式，这使得在 JavaScript 中编写大量代码Visual Studio。
 
 若要解决此问题，请用代码创建单独的 JavaScript 文件，然后使用 参数传递对该文件 `ExecuteScriptAsync` 的引用。
 
@@ -56,7 +62,9 @@ ms.locfileid: "12083693"
     await webView.CoreWebView2.ExecuteScriptAsync(text);
     ```
 
-## <a name="scenario--remove-drag-and-drop-functionality"></a>方案：删除拖放功能
+
+<!-- ====================================================================== -->
+## <a name="scenario-remove-drag-and-drop-functionality"></a>方案：删除拖放功能
 
 在此部分中，使用 JavaScript 从 WebView2 控件中删除拖放功能。
 
@@ -87,7 +95,9 @@ ms.locfileid: "12083693"
 1.  运行项目。
 1.  尝试拖放 `contoso.txt` 。  确认无法拖放。
 
-## <a name="scenario--removing-the-context-menu"></a>方案：删除上下文菜单
+
+<!-- ====================================================================== -->
+## <a name="scenario-removing-the-context-menu"></a>方案：删除上下文菜单
 
 在此部分中，从 WebView2 控件中删除默认上下文菜单。
 
@@ -122,7 +132,7 @@ ms.locfileid: "12083693"
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
+[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge开发人员工具|Microsoft Docs"
 
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft EdgeWebView2 API 参考|Microsoft Docs"
 [Webview2MainGetStarted]: ../index.md#get-started "入门 - WebView2 Microsoft Edge简介|Microsoft Docs"

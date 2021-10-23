@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 7bc993d7f0110a2e1a8fb749fb470f57c5ec1d9f
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: aa3711190d951d14be0ea7362ad429febf3550f7
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083904"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108358"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -29,7 +29,7 @@ ms.locfileid: "12083904"
    limitations under the License.  -->
 # <a name="view-and-debug-media-players-information"></a>查看和调试媒体播放器信息
 
-使用**** DevTools Microsoft Edge中的媒体工具查看信息并按浏览器选项卡调试媒体播放器。
+使用**DevTools** Microsoft Edge中的媒体工具查看信息并按浏览器选项卡调试媒体播放器。
 
 ## <a name="open-the-media-tool"></a>打开媒体工具
 
@@ -113,7 +113,8 @@ ms.locfileid: "12083904"
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsGuideChromiumOpen]: ../open/index.md "打开Microsoft Edge (Chromium) DevTools |Microsoft Docs"
+
+[DevtoolsGuideChromiumOpen]: ../open/index.md "打开 Microsoft Edge 开发人员工具 | Microsoft Docs"
 
 [DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Android 设备远程调试入门 | Microsoft Docs"
 

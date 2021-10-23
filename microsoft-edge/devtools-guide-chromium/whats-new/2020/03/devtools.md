@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 72709f98289a99fc9003618dd32d0f83ac096b3e
-ms.sourcegitcommit: 54f9566aa935fb853215c9b6f995fa0c98f3261f
+ms.openlocfilehash: e045800a284ab7c08b1f63afd7217e9f13dba66f
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "12103515"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12107679"
 ---
 <!-- Copyright Kayce Basques
 
@@ -35,11 +35,11 @@ ms.locfileid: "12103515"
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告
 
-以下各节列出了你可能从 DevTools 团队中错过Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。
+以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。
 
 ### <a name="remotely-debug-microsoft-edge-on-windows-10-or-later-devices"></a>远程调试Microsoft Edge或Windows 10或更高版本的设备上的客户端
 
-现在，[Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 \(Beta\)][RemoteTools] 应用。 此应用扩展[Windows Device Portal][WindowsUwpDebugTestPerfDevicePortal]。 你可以从在开发Microsoft Edge运行的设备连接到远程Windows 10或更高版本设备，并显示目标列表。 目标列表包括设备上打开的 Microsoft Edge 和[PA][ProgressiveWebAppsChromiumIndex] Windows选项卡。 针对在远程开发设备上运行的目标，在开发计算机上Windows DevTools。
+Microsoft Edge ([Beta) ][RemoteTools]远程工具应用现已在 Microsoft Store[中提供][MicrosoftStore]。 此应用扩展[Windows Device Portal][WindowsUwpDebugTestPerfDevicePortal]。 你可以从在开发Microsoft Edge运行的设备连接到远程Windows 10或更高版本设备，并显示目标列表。 此目标列表包括 Microsoft Edge 和 [PWAs][ProgressiveWebAppsChromiumIndex] 在 Windows 设备上打开的所有选项卡。 针对在远程开发设备上运行的目标，在开发计算机上Windows DevTools。
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="现在，Microsoft Store 中提供 Microsoft Edge 远程工具 (Beta) 应用" lightbox="../../media/2020/03/remote-tools.msft.png":::
    [Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 (Beta)][RemoteTools] 应用
@@ -110,7 +110,7 @@ Chromium 问题 [#1050999][CR1050999]
 对缩小文件进行更改后，"更改"工具允许您水平滚动**** 以显示所有缩小代码。  从 Microsoft Edge 83 开始，你现在可以使用键盘上的箭头键水平滚动。
 
 :::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在&quot;更改&quot;工具中显示缩小代码" lightbox="../../media/2020/03/changes.msft.png":::
-   在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在"更改"工具中显示对缩小代码**所做的更改**
+   在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以显示在"更改"工具中对缩小代码**所做的更改**
 :::image-end:::
 
 如果你使用屏幕阅读器或键盘在 DevTools 中导航，请通过向我们发推文[][PostTweetEdgeDevTools]或选择[发送反馈][联系人]图标向我们发送反馈！
@@ -139,7 +139,7 @@ DevTools 能够模拟模糊的视觉和以下[颜色视觉缺陷类型][ColorBli
 | 全色盲 | 无法感觉任何颜色，灰色阴影除外\（极少\）。 |
 
 存在这些色觉缺陷的不太极端的版本，实际上它们更为常见。
-例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。 但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人是不同的，并且可能会看到不同情况 \ (能够感知更多/更少的相关颜色\) 。
+例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。 但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人是不同的，并且可能会看到不同的 \ (能够感知更多/更少的相关颜色\) 。
 
 通过在 DevTools 中进行更极端的仿真设计，可以保证红色弱、绿色弱、黄蓝色弱和全色弱的人也可访问你的 Web 应用。
 
@@ -259,7 +259,7 @@ Chromium 问题 [#1054447][CR1054447]
 
 ### <a name="maskable-icon-support-in-the-manifest-pane"></a>"清单" 窗格中的可屏蔽图标支持
 
-Android Oreo 引入了自适应图标，可在不同的设备模型之间显示各种形状中的应用图标。  **可屏蔽图标**是支持自适应图标的新图标格式，使你可以确保[ PWA ][ProgressiveWebAppsChromiumIndex]图标在支持可屏蔽图标标准的设备上看起来不错。
+Android Oreo 引入了自适应图标，可在不同的设备模型之间显示各种形状中的应用图标。  **可屏蔽图标**是支持自适应图标的新图标格式，使你可以确保[ PWA ][ProgressiveWebAppsIndex]图标在支持可屏蔽图标标准的设备上看起来不错。
 
 在**清单**窗格中启用新的**仅显示可屏蔽图标的最小安全区域**复选框，以检查可屏蔽图标在 Android Oreo 设备上看起来是否良好。
 
@@ -291,7 +291,7 @@ Android Oreo 引入了自适应图标，可在不同的设备模型之间显示�
 [DevtoolsNetworkReferenceFilterRequestsProperties]: ../../../network/reference.md#filter-requests-by-properties "按属性筛选请求 - 网络分析参考 | Microsoft Docs"
 [DevtoolsRemoteDebuggingWindows]: ../../../remote-debugging/windows.md "入门远程调试Windows设备|Microsoft Docs"
 
-[ProgressiveWebAppsChromiumIndex]: ../../../../progressive-web-apps-chromium/index.md "Windows 上的渐进式 Web 应用 | Microsoft Docs"
+[ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index.md "Windows 上的渐进式 Web 应用 | Microsoft Docs"
 
 [WindowsUwpDebugTestPerfDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Windows 设备门户概述"
 

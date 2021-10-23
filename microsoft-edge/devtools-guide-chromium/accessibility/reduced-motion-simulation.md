@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 777520b7a152e28e3ddb8676107d43facfe284e9
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 1c5c9f03d62d43b89de0d9d617f8858b7f1b47bd
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082531"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12107644"
 ---
 # <a name="reduced-motion-simulation"></a>减少运动模拟
 
@@ -57,5 +57,5 @@ Web 产品中的动画可能是一个辅助功能问题。  操作系统通过�
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
+[DevtoolsIndex]: ../index.md "Microsoft Edge开发人员工具|Microsoft Docs"
 [MDNPrefersReducedMotion]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion "prefers-reduced-motion |MDN"

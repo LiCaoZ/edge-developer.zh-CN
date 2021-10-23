@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 613462b6c1430b0f79ad10ec304a79149078315e
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 8dc2705d80de9868bef8140de01ed82e4705d0f5
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082132"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12107812"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -49,7 +49,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 <!--todo: add Recording section when available  -->
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->
 
-如果你注意到在 JavaScript 中 (呈现) 时出现大量 jank 和中断，你可能需要将分析介绍到下一级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面函数中的使用位置。  了解如何在"加快 [JavaScript 运行时速度"中创建 CPU 配置文件][DevtoolsRenderingToolsJavascriptRuntime]。
+如果你注意到 JavaScript 中出现 (的) ，可能需要将你的分析下一个级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面函数中的使用位置。  了解如何在"加快 [JavaScript 运行时速度"中创建 CPU 配置文件][DevtoolsRenderingToolsJavascriptRuntime]。
 
 ### <a name="javascript-problems"></a>JavaScript：问题
 
@@ -81,7 +81,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 
 <!--todo: add Recording section when available  -->
 
-在 `Recalculate Style` "详细信息"窗格中选择一个事件以查看其 **详细信息** 。  如果样式更改需要很长时间，则性能下降。  如果样式计算影响大量元素，则这是另一个有改进空间的区域。
+在 `Recalculate Style` "详细信息"窗格中选择一个事件以查看其 **详细信息** 。  如果样式更改需要很长时间，则性能会下降。  如果样式计算影响大量元素，则这是另一个有改进空间的区域。
 
 :::image type="complex" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="长重新计算样式" lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
    长重新计算样式
@@ -114,7 +114,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 
 ## <a name="layout"></a>布局
 
-Firefox (或重排) 是浏览器计算页面上所有元素的位置和大小的过程。  Web 的布局模型意味着一个元素可能会影响其他元素;例如，元素的宽度通常会影响任何子元素的宽度，等等，一直向上和向下影响 `<body>` 树。  浏览器可能涉及此过程。
+Firefox (或重排) 是浏览器计算页面上所有元素的位置和大小的过程。  Web 的布局模型意味着一个元素可能会影响其他元素;例如，元素的宽度通常会影响任何子元素的宽度，等等，一直向上和向下 `<body>` 影响树。  浏览器可能涉及此过程。
 
 作为经验法则，如果你在帧完成之前要求从 DOM 返回几何值，你将发现自己具有"强制同步布局"，如果频繁重复或对大型 DOM 树执行，这可能是一个较大的性能瓶颈。
 
@@ -157,7 +157,7 @@ Firefox (或重排) 是浏览器计算页面上所有元素的位置和大小的
 
 ### <a name="paint-and-composite-tools"></a>画图和复合：工具
 
-想知道绘制需要多久或多久发生一次画？  选中" [性能"面板][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] 中的" **启用高级画** 图检测"设置，然后录制。  如果大多数呈现时间都用于绘制，则存在绘制问题。
+想知道绘制需要多久或多久发生一次画？  选中" [性能"面板][DevtoolsEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] 中的" **启用高级画** 图检测"设置，然后录制。  如果大多数呈现时间都用于绘制，则存在绘制问题。
 
 <!--
 :::image type="complex" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Long paint times in timeline recording" lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
@@ -186,7 +186,7 @@ Check out the **Rendering** panel for further configurations that are able to he
 <!-- ====================================================================== -->
 <!-- links -->
 [DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "加快 JavaScript 运行时|Microsoft Docs"
-[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "打开高级画图检测 - 性能分析|Microsoft Docs"
+[DevtoolsEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "打开高级画图检测 - 性能分析|Microsoft Docs"
 
 <!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: ./rendering-tools/forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts | Microsoft Docs"  -->
 

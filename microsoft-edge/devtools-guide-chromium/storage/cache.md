@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 11353e0ecbbea7e4b8cf7c42a28944c5b19538a9
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 08393f07f10e1bf4298d00f963bd3d04cb5b9a07
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082713"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108449"
 ---
 <!-- Copyright Kayce Basques
 
@@ -114,7 +114,8 @@ ms.locfileid: "12082713"
 
 <!-- ====================================================================== -->
 <!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
+
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge 开发人员工具|Microsoft Docs"
 [DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "记录网络活动|Microsoft Docs"
 <!-- external links -->
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "缓存|MDN"

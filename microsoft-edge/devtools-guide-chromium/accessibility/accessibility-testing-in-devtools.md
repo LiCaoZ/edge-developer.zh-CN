@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: b1968dd4e283339c7f6c65ead44595d1cf121d74
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 930e374671531883f8bd75ff228075fe7ad5e456
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082930"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12107736"
 ---
 # <a name="overview-of-accessibility-testing-using-devtools"></a>使用 DevTools 的辅助功能测试概述
 
@@ -102,7 +102,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 <!-- by design, this section doesn't have a corresponding how-to article -->
 
-辅助功能的一个重要部分是确保 Web 产品在较窄的视口上良好工作。 许多用户需要缩放页面才能使用它，这意味着没有太多空间。 当空间不足时，多列布局应转换为单列布局，内容按可理解的顺序放置。 这意味着将最重要的内容放置在页面顶部，将其他内容放置在页面的更下一层。
+辅助功能的一个重要部分是确保 Web 产品在较窄的视口上良好工作。 许多用户需要缩放页面才能使用它，这意味着没有太多空间。 当空间不足时，多列布局应转换为单列布局，内容按可理解的顺序放置。 这意味着将最重要的内容放在页面顶部，将其他内容放置在页面的更下一层。
 
 通过缩小浏览器窗口范围，使用箭头键滚动页面，可以看到演示页面的顶部导航栏具有一些辅助功能问题。  顶部导航栏与 **"** 搜索"窗体重叠，如上图所示，需要修复该问题。
 
@@ -113,24 +113,24 @@ When you open the demo page in the browser and open DevTools， notice that some
 *  通过模拟不同的设备、缩放级别和像素比率执行视觉测试。
 *  测试产品在不可靠连接或用户脱机时的行为方式。  在低速连接上向用户显示最重要的交互也是辅助功能注意事项。
 
-若要了解有关设备仿真**工具**的信息，请导航到在[DevTools Microsoft Edge模拟移动设备][DevToolsDeviceModeIndex]。
+若要了解有关设备仿真**工具**的信息，请导航到在[DevTools][DevToolsDeviceModeIndex]中Microsoft Edge移动设备。
 
 
 ### <a name="wavy-underlines-in-the-dom-tree-indicate-automatically-detected-issues"></a>DOM 树中的波浪下划线指示自动检测到的问题
 
-"元素"工具中的 DOM **树通过** 添加波浪下划线自动在 HTML 中直接标记问题。  If you `Shift` + `click` any element that has a wavy underline， the **Issues** tool opens.
+元素工具中的 DOM **树通过** 添加波浪下划线自动在 HTML 中直接标记问题。  If you `Shift` + `click` any element that has a wavy underline， the **Issues** tool opens.
 
 :::image type="complex" source="../media/a11y-testing-wavy-underlines.msft.png" alt-text="在 DOM 树中以波浪下划线显示的元素有问题。  Shift+单击元素以直接解决问题" lightbox="../media/a11y-testing-wavy-underlines.msft.png":::
     在 DOM 树中以波浪下划线显示的元素有问题。  `Shift`+`click` 直接进入问题的 元素。
 :::image-end:::
 
-问题工具发现的 **这些问题是一** 些可以避免的相对明显的辅助功能问题。  使用 **问题** 工具及其指导性说明修复问题，可引导你实现可访问的产品。
+问题工具发现的 **这些问题是可以避免** 的一些相对明显的辅助功能问题。  使用 **问题** 工具及其指导性说明修复问题，可引导你实现可访问的产品。
 
 
 <!-- ====================================================================== -->
 ## <a name="limits-of-automated-testing"></a>自动测试的限制
 
-问题[工具][DevToolsIssuesTool]、辅助功能[Insights][AccessibilityInsights]和[Lighthouse][Lighthouse]是自动生成网页的辅助功能报告的工具。  从此类工具获取自动报告只是辅助功能测试之旅的开始。
+问题[工具][DevToolsIssuesTool][、辅助功能 Insights][AccessibilityInsights]和[Lighthouse][Lighthouse]是自动生成网页的辅助功能报告的工具。  从此类工具获取自动报告只是辅助功能测试之旅的开始。
 
 辅助功能与人员交互有关，即在不同的技术环境中使用产品时具有不同的需求的人。  此测试无法完全自动化，但需要用户对产品进行验证。  在最佳方案中，你可以访问具有不同辅助功能需求的测试人员和使用各种环境的测试人员。  但是，通过使用键盘进行导航并检查页面的不同部分，你已可以自己执行很多操作。
 
@@ -149,7 +149,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 <!-- ====================================================================== -->
 ## <a name="using-the-inspect-tool-to-detect-accessibility-issues"></a>使用检查工具检测辅助功能问题
 
-使用 **"检查** "工具通过将鼠标悬停在网页的某些部分来检测辅助功能问题。  Inspect **** \ (Inspect ![ ](../media/inspect-icon.msft.png) \) 工具位于 DevTools 的左上角。  通过选择"检查工具"按钮 **打开"检查** "工具。
+使用 **"检查** "工具通过将鼠标悬停在网页的某些部分来检测辅助功能问题。  Inspect **** \ (![ Inspect ](../media/inspect-icon.msft.png) \) 工具位于 DevTools 的左上角。  通过选择"检查工具"按钮 **打开"检查** "工具。
 
 :::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="通过选择&quot;检查工具&quot;按钮打开&quot;检查&quot;工具" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
     通过选择 **"检查** 工具"按钮 **打开"检查** "工具
@@ -175,7 +175,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 * 布局类型;如果元素是使用弹性框或网格定位的，则会看到相应的图标 \ (![网格布局图标](../media/grid-icon.msft.png)\).
 * 元素的名称，如 、 **h1**或**div**。 ****
 * 元素的尺寸（以像素为单位）。
-* 颜色，作为颜色样本 (一个小的彩色正方形) 和格式化的值 (如 `#336699`) 。
+* 颜色作为颜色样本， (较小的、彩色的) 和格式化值 (如 `#336699`) 。
 * 字体信息 (大小和字体系列) 。
 * 边距和填充（以像素为单位）。
 
@@ -186,7 +186,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
-*   **对比度** 定义弱视用户能否理解元素。
+*   **对比度** 定义低视力用户能否理解元素。
     *   [WCAG][WCAG]准则定义的对比率指示文本和背景颜色之间的对比度是否足够。 [][W3CContrastRatio]  绿色选中标记图标表示没有足够的对比度，橙色感叹号图标表示对比度不足。
 
 *   **名称和****角色**指示哪些信息辅助技术（如屏幕阅读器）将报告有关元素的信息。
@@ -230,7 +230,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
     使用 键导航 `Tab` 页面。  焦点显示在页面中的 **"更多** "链接上。
 :::image-end:::
 
-在通过最后一个 **"更多** "链接后，页面将向上滚动，并且不清楚哪个元素具有焦点。
+通过最后一个 **"** 更多"链接后，页面将向上滚动，并且不清楚哪个元素具有焦点。
 
 如果你查看屏幕左下角或使用屏幕阅读器，你可以判断边栏导航菜单中的蓝色 **"猫** "链接具有焦点，因为浏览器显示 URL `#cats` 。
 
@@ -367,7 +367,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 <!-- ====================================================================== -->
 ## <a name="testing-contrast-of-text-colors-in-various-states"></a>测试不同状态的文本颜色的对比度
 
-检查 **工具** 一次报告一个状态辅助功能问题。  首先，我们将介绍使用 Inspect 工具仅查看页面元素的静态状态的限制。  然后，我们将介绍如何通过选择"样式"选项卡上的"切换元素状态" (**\：hov**) 检查页面元素**的其他状态。**
+检查 **工具** 一次报告一个状态辅助功能问题。  首先，我们将介绍使用 Inspect 工具仅查看页面元素的静态状态的限制。  然后，我们将介绍如何检查页面元素的其他状态，通过在"样式"选项卡上选择"切换元素状态 (**\：hov **) **切换元素状态** "。
 
 ### <a name="checking-text-color-contrast-in-the-default-state"></a>检查默认状态下的文本颜色对比度
 
@@ -404,7 +404,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
     检查元素工具中具有悬停状态的元素
 :::image-end:::
 
-在" **样式"** 选项卡上，选择 **"\：hov (切换元素状态) ** 按钮。  然后使用 **Force 元素状态** 复选框选择要模拟的状态。
+在" **样式"** 选项卡上，选择 **"\：hov (Toggle 元素状态) ** 按钮。  然后使用 **Force 元素状态** 复选框选择要模拟的状态。
 
 :::image type="complex" source="../media/a11y-testing-state-simulation.msft.png" alt-text="显示所有选项的状态模拟功能" lightbox="../media/a11y-testing-state-simulation.msft.png":::
     显示所有选项的状态模拟功能
@@ -432,7 +432,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 有关颜色辅助功能的另一个注意事项是，可能需要测试不同的主题，以检查对比度问题。  大多数操作系统具有深色模式和浅色模式。  网页可以使用 CSS 媒体查询对这些不同的设置做出反应。
 
-此演示页面具有浅色和深色主题。  通过使用呈现工具中的深色或浅色配色方案模拟，无需更改操作系统 [即可][DevToolsColorSchemeSimulation] 测试这两 **个主题** 。  到目前为止，本文查看使用深色主题设置的操作系统的演示页面。  如果我们改为模拟光线方案，然后刷新页面，问题工具将显示六**** 个颜色对比度问题，而不是两个。
+此演示页面具有浅色和深色主题。  通过使用呈现工具中的深色或浅色配色方案模拟，无需更改操作系统 [即可][DevToolsColorSchemeSimulation] 测试这两 **个主题** 。  到目前为止，本文查看了使用深色主题设置的操作系统的演示页面。  如果我们改为模拟光线方案，然后刷新页面，问题工具将显示六**** 个颜色对比度问题，而不是两个。
 
 有关详细演练步骤，请导航到检查深色主题和浅色主题 [的对比度问题](test-dark-mode.md)。
 
@@ -456,7 +456,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 ### <a name="verify-that-the-webpage-is-usable-by-people-with-color-blindness"></a>验证网页是否对色盲者可用
 
-不同的接收状态使用红色 (绿色、黄色) 颜色作为区分资金状态的唯一方式。  但是，你无法预期所有用户都体验这些颜色。  如果你使用 DevTools 的视觉缺陷模拟功能，则可以通过模拟不同视觉用户对设计的看法来发现这不够好。 [][DevToolsVisionDeficiencies]
+不同的接收州使用红色 (、绿色、黄色) 颜色作为区分资金状态的唯一方式。  但是，你无法预期所有用户都体验这些颜色。  如果你使用 DevTools 的视觉缺陷模拟功能，则可以通过模拟不同视觉用户对设计的看法来发现这不够好。 [][DevToolsVisionDeficiencies]
 有关详细演练步骤，请导航到验证页面是否适用于色 [盲用户](test-color-blindness.md)。
 :::image type="complex" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="将页面显示为具有亚特色 (色盲) 可以看到它" lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
     显示页面，就像有亚特色 (色盲) 会看到它
@@ -502,7 +502,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 我们介绍了许多可用于确保捕获产品中的辅助功能问题的工具。  这些工具的范围从自动检查和手动详细检查到不同状态和环境的模拟。  这些工具汇总在 [DevTools 中的辅助功能测试功能中](reference.md)。  自动化工具无法找到产品的所有问题，因为许多辅助功能障碍仅在交互式使用期间出现。
 
-这些工具均无法将正确的一轮产品测试替换为使用辅助技术并遵循检查所有所需测试的计划。 此外，您还可以使用辅助功能[评估][AccessibilityInsightsAssessment]Insights。 [][AccessibilityInsights]  您可能需要执行其他检查，例如：
+这些工具均无法将正确的一轮产品测试替换为使用辅助技术并遵循检查所有所需测试的计划。 此外，您还可以使用[辅助功能][AccessibilityInsightsAssessment]评估[Insights。][AccessibilityInsights]  您可能需要执行其他检查，例如：
 
 * 放大时进行测试。
 * 使用屏幕阅读器进行测试。
@@ -520,7 +520,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 <!-- links -->
 [DevToolsMediaQueries]: ../device-mode/index.md#show-media-queries "显示媒体查询 - 在 DevTools Microsoft Edge中模拟移动设备|Microsoft Docs"
 [DevToolsDeviceModeIndex]: ../device-mode/index.md "在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"
-[DevtoolsAccessibilityReference]: reference.md "DevTools |Microsoft Docs"
+[DevtoolsAccessibilityReference]: reference.md "DevTools | 中的辅助功能测试功能Microsoft Docs"
 [DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "模拟呈现的页面布局中的深色或浅色|Microsoft Docs"
 [DevToolsIssuesTool]: ../issues/index.md "使用问题工具查找并修复问题 | Microsoft Docs"
 [DevToolsReducedMotion]: ./reduced-motion-simulation.md "减少运动模拟|Microsoft Docs"
@@ -528,12 +528,12 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 <!-- links into test-issues-tool.md -->
 [DevToolsAccessibilityTestIssuesToolViewAccSection]: test-issues-tool.md#view-the-accessibility-section-of-the-issues-tool "查看问题工具的辅助功能部分 - 自动测试网页的辅助功能问题|Microsoft Docs"
 [DevtoolsAccessibilityTestIssuesToolCheckFieldsLabels]: test-issues-tool.md#verify-that-input-fields-have-labels "验证输入字段是否包含标签 - 自动测试网页的辅助功能|Microsoft Docs"
-[DevtoolsAccessibilityTestIssuesToolCheckAltText]: test-issues-tool.md#verify-that-images-have-alt-text "验证图像是否包含替换文本 - 自动测试网页的辅助功能|Microsoft Docs "
+[DevtoolsAccessibilityTestIssuesToolCheckAltText]: test-issues-tool.md#verify-that-images-have-alt-text "验证图像是否包含替换文字 - 自动测试网页的辅助功能|Microsoft Docs "
 [DevtoolsAccessibilityTestIssuesToolCheckContrast]: test-issues-tool.md#verify-that-text-colors-have-enough-contrast "验证文本颜色是否具有足够的对比度 - 自动测试网页的辅助功能问题|Microsoft Docs"
 <!-- links into test-inspect-tool.md -->
 [DevtoolsAccessibilityTestInspectToolColorHighlighting]: test-inspect-tool.md#identify-nested-regions-using-color-highlighting "使用颜色突出显示标识嵌套区域 - 使用&quot;检查&quot;工具通过将鼠标悬停在网页上方来检测|Microsoft Docs"
 [DevtoolsAccessibilityTestInspectToolIndivElems]: test-inspect-tool.md#check-individual-elements-for-text-contrast-screen-reader-text-and-keyboard-support "检查各个元素的文本对比度、屏幕阅读器文本和键盘支持 - 使用 Inspect 工具通过将鼠标悬停在网页页面上方来检测|Microsoft Docs"
-[DevtoolsAccessibilityTestInspectToolDomCss]: test-inspect-tool.md#use-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css "使用&quot;检查&quot;工具将鼠标悬停在网页上方以突出显示 DOM 和 CSS - 使用&quot;检查&quot;工具通过将鼠标悬停在网页上方来检测|Microsoft Docs"
+[DevtoolsAccessibilityTestInspectToolDomCss]: test-inspect-tool.md#use-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css "使用 Inspect 工具将鼠标悬停在网页上方以突出显示 DOM 和 CSS - 使用 Inspect 工具通过将鼠标悬停在网页上方来检测|Microsoft Docs"
 <!-- external links -->
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "辅助功能测试演示网页|GitHub"
 [W3CContrastRatio]: https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio "对比率|W3C"

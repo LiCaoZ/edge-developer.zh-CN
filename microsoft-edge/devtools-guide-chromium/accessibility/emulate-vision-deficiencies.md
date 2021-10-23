@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 97530fed874dfd915e3081c935509a6ae97b4321
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: a056aaf8223a5647b9263d4c1862617bb5408f60
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082587"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12107672"
 ---
 # <a name="emulate-vision-deficiencies"></a>模仿视觉缺陷
 
@@ -97,9 +97,8 @@ ms.locfileid: "12082587"
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevToolsIndex]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
+[DevToolsIndex]: ../index.md "Microsoft Edge开发人员工具|Microsoft Docs"
 [DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "分析运行时性能|Microsoft Docs"
-
 [ColorblindawarenessMain]: https://www.colourblindawareness.org "光盲意识组织"
 
 [AmfcbMain]: https://www.amfcb.org "American Foundation for the Color Blind (AFCB) "

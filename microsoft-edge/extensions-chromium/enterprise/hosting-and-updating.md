@@ -1,26 +1,26 @@
 ---
-description: 在企业中托管和发布扩展Microsoft Edge (Chromium) 。
+description: 在企业中托管和发布扩展Microsoft Edge。
 title: 在加载项网站中Microsoft Edge和更新扩展
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: be108e5d9145acb368b5772fc4a571880ac3fa2e
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+keywords: microsoft edge， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
+ms.openlocfilehash: b36b877246afe494fa5e8b7bcfff9aa5b7caedcf
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12033665"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108043"
 ---
 # <a name="publish-and-update-extensions-in-the-microsoft-edge-add-ons-website"></a>在加载项网站中Microsoft Edge和更新扩展
 
-大多数扩展都发布到Microsoft Edge[加载项][MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions]网站，以保护用户免受恶意扩展的攻击。
+大多数扩展都发布到Microsoft Edge[加载项网站][MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions]，以保护用户免受恶意扩展的攻击。
 
 ## <a name="publish-options-for-extensions"></a>发布扩展选项
 
-所有扩展名都作为一个特殊的存档 \ (`.zip` \) 文件作为后缀分发给 `.crx` 用户。  发布到加载项Microsoft Edge扩展作为文件 `.zip` 上载。  发布过程会自动将文件 `.zip` 转换为 `.crx` 文件。
+所有扩展名都作为带有后缀的特殊存档 \ (`.zip` \) 分发给 `.crx` 用户。  发布到加载项网站的Microsoft Edge作为文件 `.zip` 上载。  发布过程会自动将文件 `.zip` 转换为 `.crx` 文件。
 
 以下两种方案不需要你在加载项网站中发布Microsoft Edge扩展。
 

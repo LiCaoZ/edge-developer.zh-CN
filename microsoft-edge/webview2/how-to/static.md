@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: ff085a95730060145706a51593c11794232aabb0
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: d6248058182189a5b734e60ecd0572518572295a
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12081866"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12107959"
 ---
 # <a name="statically-link-the-webview2-loader-library"></a>静态链接 WebView2 加载程序库
 
@@ -58,7 +58,7 @@ ms.locfileid: "12081866"
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
+[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge开发人员工具|Microsoft Docs"
 
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft EdgeWebView2 API 参考|Microsoft Docs"
 [Webview2MainNextSteps]: ../index.md#see-also "另请参阅 - WebView2 Microsoft Edge简介|Microsoft Docs"
@@ -69,4 +69,4 @@ ms.locfileid: "12081866"
 
 [GithubMicrosoftVscodeJSDebugWhatsNew]: https://github.com/microsoft/vscode-js-debug#whats-new "新增功能- 适用于 Visual Studio Code 的 JavaScript 调试程序 - microsoft/vscode-js-debug |GitHub"
 
-[GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications]: https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications "Microsoft Edge (Chromium) WebView 应用程序 - Visual Studio Code - 调试器 for Microsoft Edge - microsoft/vscode-edge-debug2 |GitHub"
+[GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications]: https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications "Microsoft EdgeWebView 应用程序 - Visual Studio Code - Microsoft Edge - microsoft/vscode-edge-debug2 |GitHub"

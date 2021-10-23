@@ -8,18 +8,16 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、edge html、Windows Forms、WinForms、WPF、.NET、WinUI、Project Reunion
-ms.openlocfilehash: b0c5a2f07a2b7e255c53c5141ccc4ed3fb8e9cae
-ms.sourcegitcommit: 54f9566aa935fb853215c9b6f995fa0c98f3261f
+ms.openlocfilehash: 1a76da8248ad6725f5aef81d3c1722fe6ca4a560
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "12103543"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12107994"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介
 
-<!-- preserve trailing spaces -->
-
-Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术\(HTML、CSS 以及 JavaScript\)。  WebView2 控件使用 [Microsoft Edge(Chromium)][MicrosoftedgeinsiderMain] 作为绘制引擎，以在本机应用中显示 web 内容。  使用 WebView2，可以在本机应用的不同部分嵌入 Web 代码，或在单个 WebView 实例中生成所有本机应用。  要了解如何开始生成 WebView2 应用，请导航到 [入门](#get-started)。
+WebView2 Microsoft Edge WebView2 控件允许你将 Web 技术 (HTML、CSS 和 JavaScript) 本机应用中。  WebView2 控件使用[Microsoft Edge][MicrosoftedgeinsiderMain]作为呈现引擎，以在本机应用中显示 Web 内容。  使用 WebView2，可以在本机应用的不同部分嵌入 Web 代码，或在单个 WebView 实例中生成所有本机应用。  要了解如何开始生成 WebView2 应用，请导航到 [入门](#get-started)。
 
 :::image type="complex" source="./media/WebView2/what-webview.png" alt-text="什么是 WebView?" lightbox="./media/WebView2/what-webview.png":::
    什么是 WebView?
@@ -91,7 +89,7 @@ Similar table: [Overview of Progressive Web Apps (PWAs)](..\progressive-web-apps
     :::column:::
         :::image type="icon" source="./media/webview-reasons-fixed-small.msft.png":::  
         **固定版本分布**  
-        （可选）打包应用中Chromium位的特定版本。
+        （可选）将特定版本的 Chromium打包到应用中。
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/webview-reasons-incremental-adoption-small.msft.png":::  
@@ -106,7 +104,7 @@ Similar table: [Overview of Progressive Web Apps (PWAs)](..\progressive-web-apps
 <!-- ====================================================================== -->
 ## <a name="get-started"></a>入门
 
-要使用 WebView2 控件生成并测试应用，需要 <!--both [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] and -->安装 [WebView2 SDK][NugetPackagesMicrosoftWebWebView2]。  选择以下其中一个选项以开始使用。
+要使用 WebView2 控件生成并测试应用，需要 <!--both [Microsoft Edge][MicrosoftedgeinsiderDownload] and -->安装 [WebView2 SDK][NugetPackagesMicrosoftWebWebView2]。  选择以下其中一个选项以开始使用。
 
 *   [在 Win32 应用中开始使用 WebView2][Webview2GetStartedWin32]
 *   [WPF 应用中的 WebView2 入门][Webview2GetStartedWpf]
@@ -120,7 +118,7 @@ Similar table: [Overview of Progressive Web Apps (PWAs)](..\progressive-web-apps
 <!-- ====================================================================== -->
 ## <a name="supported-platforms"></a>受支持的平台
 
-通用版本 \ (GA\) 或预览版的 WebView2 可用于以下编程环境。
+通用 \ (GA\) WebView2 预览版可用于以下编程环境。
 
 *   Win32 C/C++ \(GA\)
 *   .NET Framework 4.5 或更高版本
@@ -165,9 +163,9 @@ WebView2 应用可以在以下版本的 Windows。
 [Webview2ConceptsUserDataFolder]: ./concepts/user-data-folder.md "管理用户数据文件夹 | Microsoft Docs"
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "了解 WebView2 SDK 版本 | Microsoft Docs"
 
-[Webview2GetStartedWin32]: ./get-started/win32.md "Win32 应用和应用中的 WebView2 |Microsoft Docs"
+[Webview2GetStartedWin32]: ./get-started/win32.md "在 Win32 应用和应用中开始使用 WebView2 |Microsoft Docs"
 [Webview2GetStartedWinforms]: ./get-started/winforms.md "WinForms 应用和应用中的 WebView2 |Microsoft Docs"
-[Webview2GetStartedWinui2]: ./get-started/winui2.md "在 WinUI 2 应用中开始使用 WebView2 |Microsoft Docs"
+[Webview2GetStartedWinui2]: ./get-started/winui2.md "WinUI 2 应用和应用中的 WebView2 |Microsoft Docs"
 [Webview2GetStartedWinui]: ./get-started/winui.md "WinUI 3 应用和预览版中的 WebView2 (入门) |Microsoft Docs"
 [Webview2GetStartedWpf]: ./get-started/wpf.md "WPF 应用和应用中的 WebView2 |Microsoft Docs"
 

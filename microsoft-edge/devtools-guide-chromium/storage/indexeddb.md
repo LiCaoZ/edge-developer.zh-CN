@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 6521b679af374ba8d7d68eb308c2245c8e984153
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: c7c2627f8fe40c2baf630be8ef3061d552ac0d30
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082335"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108351"
 ---
 <!-- Copyright Kayce Basques
 
@@ -151,7 +151,8 @@ ms.locfileid: "12082335"
 
 <!-- ====================================================================== -->
 <!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
+
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge 开发人员工具|Microsoft Docs"
 [DevtoolsJavascriptSnippets]: ../javascript/snippets.md "使用 Microsoft Edge DevTools 在任意页面上运行 JavaScript 代码段 | Microsoft Docs"
 <!-- external links -->
 [ChromiumIssue943770]: https://crbug.com/943770 "943770 - DevTools:显示 iframe IndexedDB 数据库 - chromium - Monorail"

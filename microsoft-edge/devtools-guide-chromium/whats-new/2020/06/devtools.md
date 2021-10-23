@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 33572dd7fe94d17c9ee22fd28caddafca5203f27
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: d1b8d646e69f1c8492bbf3218cb9bcf0a4ba48b8
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083210"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108211"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -31,7 +31,7 @@ ms.locfileid: "12083210"
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告
 
-以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要随时了解开发人员工具中所有最新且最最好的功能，请下载[Microsoft Edge 预览][MicrosoftEdgePreviewChannels]频道，并按照 Twitter 上的[Microsoft Edge DevTools 团队进行跟踪][EdgeDevToolsTwitterAccount]。
+以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要随时了解开发人员工具中所有最新且最好的功能，请下载[Microsoft Edge 预览][MicrosoftEdgePreviewChannels]频道，并按照 Twitter 上的[Microsoft Edge DevTools 团队进行跟踪][EdgeDevToolsTwitterAccount]。
 
 ### <a name="css-grid-debugging-features"></a>CSS 网格调试功能
 
@@ -64,7 +64,7 @@ Chromium问题[#1047356][CR1047356]
    使用网络控制台在 [NetworkLog][DevtoolsNetworkIndexLogActivity] 中编辑和 **重播请求**
 :::image-end:::
 
-网络控制台是一个新 **面板，它将** 在 [DevTools"][DevtoolsCustomizeIndexDrawer] 箱"中打开，并自动填充 HTTP 请求的信息。  若要显示从服务器返回的响应，请编辑请求 \ (\) 并选择"发送 **"。**
+网络控制台是一个新 **面板，它将** 在 [DevTools"][DevtoolsCustomizeIndexDrawer] 箱"中打开，并自动填充 HTTP 请求的信息。  若要显示从服务器返回的响应，请编辑请求 \ (如果需要\) 并选择"发送 **"。**
 
 您还可以使用网络 **控制台** 直接从 DevTools 创建和发送 HTTP 请求。
 
@@ -73,7 +73,7 @@ Chromium问题[#1047356][CR1047356]
 :::image-end:::
 
 > [!TIP]
-> 若要在主 **\ (** top\) 面板（而不是 [DevTools Drawer）][DevtoolsCustomizeIndexDrawer]中显示网络控制台，请导航到在面板 [之间移动工具](#move-tools-between-panels)。
+> 若要在 **主 \ (** top\) 面板（而不是 [DevTools Drawer）][DevtoolsCustomizeIndexDrawer]中显示网络控制台，请导航到在面板 [之间移动工具](#move-tools-between-panels)。
 
 > [!NOTE]
 > 若要启用实验，请导航到 [打开实验][DevtoolsExperimentalFeaturesTurnOn] 功能，然后选择启用网络控制台旁边的 **复选框**。
@@ -84,7 +84,7 @@ Chromium问题[#1093687][CR1093687]
 
 ### <a name="service-worker-respondwith-events-in-the-timing-tab"></a>服务工作者 respondWith"计时"选项卡中的事件
 
-网络**工具****的"** 计时"选项卡现在包括 `respondWith` 服务工作器事件。  服务工作线程事件显示从服务工作进程事件处理程序开始运行前一段时间到处理程序承诺得到实现的时间 `respondWith` `fetch` `respondWith` `fetch` 的持续时间。
+网络**工具****的"** 计时"选项卡现在包括 `respondWith` 服务工作器事件。  服务工作线程事件显示从服务工作进程事件处理程序开始运行前一段时间到处理程序承诺得到实现的时间的 `respondWith` `fetch` `respondWith` `fetch` 持续时间。
 
 :::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="&quot;网络&quot;面板的&quot;计时&quot;选项卡中的 respondWith 服务工作线程事件" lightbox="../../media/2020/06/timing-tab.msft.png":::
    网络 `respondWith` 工具的" **计时"** 选项卡中的服务 **工作器** 事件
@@ -123,7 +123,7 @@ Chromium问题[#1070378][CR1070378]
    试验功能
 :::image-end:::
 
-通常，只能在 DevTools**** 的主 \ (\) 面板中打开"元素"和"网络"等工具。 ****  同样，工具（如**3D** **** 视图和问题）可能只能在 DevTools (底部\) 面板中打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。
+通常，只能在 DevTools**** 的主 \ (\) 面板中打开"元素"和"网络"等工具。 ****  同样，工具（如**3D** **** 视图和问题）可能只能在 DevTools 的 (底部\) 打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。
 
 :::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="在面板之间移动工具" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
    在面板之间移动工具
@@ -136,7 +136,7 @@ Chromium问题[#897944][CR897944]
 
 ### <a name="improved-initiator-tooltip-in-the-network-panel"></a>网络面板中改进的发起人工具提示
 
-在 Microsoft Edge 83 和 84 中，"发起者"列的工具提示（显示资源请求的原因）显示在具有水平滚动[][DevtoolsNetworkIndexLogActivity]条的网络日志中。  你仅能够在工具提示中水平滚动来显示发起请求的调用堆栈。
+在 Microsoft Edge 83 和 84 中，显示资源请求原因的 Initiator 列的工具提示，显示在具有水平滚动[][DevtoolsNetworkIndexLogActivity]条的网络日志中。  你仅能够在工具提示中水平滚动来显示发起请求的调用堆栈。
 
 :::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="84 中的发起Microsoft Edge提示" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
    84 中的发起Microsoft Edge提示
@@ -156,7 +156,7 @@ Chromium问题[#1069404][CR1069404]
 
 ### <a name="style-editing-for-css-in-js-frameworks"></a>CSS-in-JS 框架的样式编辑
 
-现在 **，"** 样式"窗格可以更好地支持使用 CSS 对象模型和 [CSSOM ][CsswgDraftsCssom] (API 创建的) 样式。  许多 CSS-in-JS 框架和库在构建样式的底层使用 CSSOM API。
+现在 **，"** 样式"窗格更好地支持使用 CSS 对象模型和 [CSSOM ][CsswgDraftsCssom] (API 创建的) 样式。  许多 CSS-in-JS 框架和库在构建样式的底层使用 CSSOM API。
 
 现在您可以使用可构造样式表编辑在 JavaScript 中添加 [的样式][WicgConstructStylesheet]。  可构造的样式表是使用 Shadow DOM 时创建和分发可重用样式 [的一种新方式][MdnShadowDom]。
 
@@ -214,11 +214,11 @@ DevTools 现在更好地支持一些最新的 JavaScript 语言功能。
       Nullish [并集运算符的语法突出显示][V8DevNullishCoalescing]
    :::column-end:::
    :::column span="2":::
-      DevTools 现在可以在"源"面板中正确打印空的"并 **排"运算符** 。
+      DevTools 现在可以在"源"面板中正确打印空的"并排 **"运算符。**
    :::column-end:::
 :::row-end:::
 
-[][CR1083797] [][CR1073903]Chromium、#1073903、#1083214、#1083797 [][CR1083214]
+Chromium问题[#1073903][CR1073903]， [#1083214][CR1083214]， [#1083797][CR1083797]
 
 ### <a name="new-app-shortcut-warnings-in-the-manifest-pane"></a>清单窗格中的新应用快捷方式警告
 
@@ -259,7 +259,7 @@ Chromium问题[#1071432][CR1071432]
 当在"源"面板编辑器中执行复制[][DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles]或剪切操作时，DevTools 会复制或剪切当前内容行。
 
 :::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="当光标位于第 5 行的末尾时，从 DevTools pen.js复制整行并粘贴到Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
-   当光标位于第 5 行的末尾时，从 DevTools 中的pen.js复制整个行，并粘贴到[Visual Studio Code][VisualStudioCode]。 ****
+   当光标位于第 5 行的末尾时，从 DevToolspen.js复制整行，并粘贴到 Visual Studio Code [。][VisualStudioCode] ****
 :::image-end:::
 
 Chromium问题[#800028][CR800028]
@@ -268,7 +268,7 @@ Chromium问题[#800028][CR800028]
 
 #### <a name="ungroup-same-console-messages"></a>取消同一控制台消息的组
 
-控制台**和控制台中的**组设置现在适用于重复消息。  以前，它只应用于类似的邮件。
+控制台**控制台中的**组设置现在适用于重复消息。  以前，它只应用于类似的邮件。
 
 例如，以前，DevTools 未取消对邮件进行分组，即使未取消选中" `hello` **组** 相似"。  现在， `hello` 邮件已取消组合。
 
@@ -282,7 +282,7 @@ Chromium问题[#1082963][CR1082963]
 
 ### <a name="persisting-selected-context-only-settings"></a>持久化"仅选定上下文"设置
 
-控制台**控制台中的"** 所选上下文设置现在保留。  以前，每次关闭并重新打开 DevTools 时，设置都会重置。  更改使设置行为与其他控制台选项设置一。
+控制台**控制台中的"所选**上下文设置现在保留。  以前，每次关闭并重新打开 DevTools 时，设置都会重置。  更改使设置行为与其他控制台选项设置一。
 
 :::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="选定的仅上下文设置" lightbox="../../media/2020/06/selected-context.msft.png":::
    **选定的仅上下文** 设置
@@ -316,7 +316,7 @@ Chromium问题[#974550][CR974550]
 
 ### <a name="new-icons-for-breakpoints-conditional-breakpoints-and-logpoints"></a>断点、条件断点和登录点的新图标
 
-" **源** "面板具有针对断点、条件断点和日志的新设计。  断点用红色圆圈表示，就像[][VisualStudio]Visual Studio Code Visual Studio。 [][VisualStudioCode]  添加图标以区分条件断点和日志点。
+" **源** "面板具有针对断点、条件断点和日志的新设计。  断点用红色圆圈表示，就像Visual Studio Code Visual Studio [][VisualStudioCode] [。][VisualStudio]  添加图标以区分条件断点和日志点。
 
 :::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="断点" lightbox="../../media/2020/06/breakpoints.msft.png":::
    断点
@@ -332,7 +332,7 @@ Chromium 问题 [#1041830][CR1041830]
 <!-- ====================================================================== -->
 <!-- links -->
 [CssInJs]: ../../../css/css-in-js.md "CSS-in-JS 框架样式编辑|Microsoft Docs"
-[DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) 开发人员工具 | Microsoft Docs"
+[DevtoolsIndex]: ../../../index.md "Microsoft Edge开发人员工具|Microsoft Docs"
 [DevtoolsCommandMenu]: ../../../command-menu.md "使用&quot;开发工具Microsoft Edge菜单运行命令|Microsoft Docs"
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "设置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"
 [DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features/index.md#turning-on-experimental-features "打开试验功能 - 试验功能 | Microsoft Docs"
@@ -341,31 +341,31 @@ Chromium 问题 [#1041830][CR1041830]
 [DevtoolsNetworkIndexLogActivity]: ../../../network/index.md#log-network-activity "记录网络活动 - 在 DevTools Microsoft Edge中检查网络|Microsoft Docs"
 
 [CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "CSS-in-JS 框架样式编辑|CodePen"
-[CodepenZoherghadyaliZyrjgdJ]: https://codepen.io/zoherghadyali/full/zYrjgdJ "将重复消息发送到控制台|CodePen"
+[CodepenZoherghadyaliZyrjgdJ]: https://codepen.io/zoherghadyali/full/zYrjgdJ "将重复的消息发送到控制台|CodePen"
 [CodepenRachelweilYzwBzKM]: https://codepen.io/hxlnt/full/YzwBzKM "CSS 网格规划器示例 |CodePen"
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium 漏洞"
 
 [CR772558]: https://crbug.com/772558 "DevTools：更新到最新版本的 Lighthouse |Chromium Bug"
-[CR800028]: https://crbug.com/800028 "在 Chrome 更新后，开发人员工具编辑器中的重复行快捷方式|Chromium Bug"
+[CR800028]: https://crbug.com/800028 "在 Chrome 更新后开发人员工具编辑器中重复行快捷方式|Chromium Bug"
 [CR912581]: https://crbug.com/912581 "在 DevTools/about：tracing |Chromium Bug"
 [CR946975]: https://crbug.com/946975 "DevTools 样式边栏不能与构造的样式表|Chromium Bug"
-[CR955497]: https://crbug.com/955497 "PBA 应用图标快捷方式菜单|Chromium Bug"
+[CR955497]: https://crbug.com/955497 "PWA 应用图标快捷方式菜单|Chromium Bug"
 [CR974550]: https://crbug.com/974550 "Perf 面板和 performanceObserver 组件之间的指标不匹配|Chromium Bug"
 [CR1041830]: https://crbug.com/1041830 "改进断点|Chromium Bug"
-[CR1055875]: https://crbug.com/1055875 "关闭并重新打开&quot;开发人员工具&quot;菜单后，&quot;所选上下文仅控制台&quot;设置的值|Chromium Bug"
+[CR1055875]: https://crbug.com/1055875 "关闭并重新打开&quot;开发人员工具&quot;菜单后，&quot;所选上下文仅控制台&quot;设置的值不会|Chromium Bug"
 [CR1066579]: https://crbug.com/1066579 "DevTools： Show ServiceWorkers Fetch Timeline per request in Network panel |Chromium Bug"
 [CR1071432]: https://crbug.com/1071432 "Wasm Basic Developer Experience |Chromium Bug"
 [CR1073899]: https://crbug.com/1073899 "计算样式选项卡在响应模式下消失|Chromium Bug"
 [CR1073903]: https://crbug.com/1073903 "DevTools：语法突出显示对私有字段|Chromium Bug"
 [CR1082963]: https://crbug.com/1082963 "无法禁用控制台的组类似的邮件行为|Chromium Bug"
 [CR1083214]: https://crbug.com/1083214 "acorn 不支持可选链接|Chromium Bug"
-[CR1083797]: https://crbug.com/1083797 "为 null 并并的打印中断了|Chromium Bug"
+[CR1083797]: https://crbug.com/1083797 "为 null 的并成一线而中断的|Chromium Bug"
 [CR1096008]: https://crbug.com/1096008 "删除 FMP |Chromium Bug"
 [CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Table 工具|Chromium Bug"
 [CR1093687]: https://crbug.com/1093687 "创建用于创建和重播综合网络请求|Chromium Bug"
 [CR1070378]: https://crbug.com/1070378 "将 Webhint 集成到 DevTools |Chromium Bug"
-[CR1069404]: https://crbug.com/1069404 "[开发人员工具] 小组件弹出窗口太窄|Chromium Bug"
+[CR1069404]: https://crbug.com/1069404 "[开发人员工具] 小部件弹出窗口太窄|Chromium Bug"
 [CR897944]: https://crbug.com/897944 "可拖动的开发人员工具|Chromium Bug"
 
 [GithubGoogleChromeLighthouse600]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.0.0 "v6.0.0 - GoogleChrome/lighthouse |GitHub"
@@ -386,7 +386,7 @@ Chromium 问题 [#1041830][CR1041830]
 
 [V8DevClassFieldsPrivate]: https://v8.dev/features/class-fields#private-class-fields "私有类字段 - 公共和私有类|V8.开发"
 [V8DevCodeCaching]: https://v8.dev/blog/code-caching-for-devs "适用于 JavaScript 开发人员的代码|V8.开发"
-[V8DevNullishCoalescing]: https://v8.dev/features/nullish-coalescing "Nullish 并|V8.开发"
+[V8DevNullishCoalescing]: https://v8.dev/features/nullish-coalescing "Nullish 将|V8.开发"
 [V8DevOptionalChaining]: https://v8.dev/features/optional-chaining "可选链接|V8.开发"
 
 [WebhintMain]: https://webhint.io "webhint"

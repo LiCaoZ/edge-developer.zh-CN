@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: b1446ff1501bb2699f87d7fa61eec9a5e6780178
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 7f29058d2cb16d40440fd09210ad235a0e60e261
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083805"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108330"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -82,12 +82,13 @@ ms.locfileid: "12083805"
 
 ## <a name="view-memory-allocation-by-function"></a>按功能查看内存分配
 
-你能够通过 JavaScript 函数查看内存分配。  有关详细信息，请导航到按 [函数 调查内存分配][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]。
+你能够通过 JavaScript 函数查看内存分配。  有关详细信息，请导航到按 [函数调查内存分配][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]。
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevToolsOpenIndex]: ../open/index.md "打开Microsoft Edge (Chromium) 开发人员工具|Microsoft Docs"
+
+[DevToolsOpenIndex]: ../open/index.md "打开 Microsoft Edge 开发人员工具 | Microsoft Docs"
 [DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "按功能调查内存分配 - 修复内存|Microsoft Docs"
 
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->
