@@ -1,5 +1,5 @@
 ---
-description: 生成和发布 Microsoft Edge 扩展的概述。
+description: 有关构建和发布 Microsoft Edge 概述。
 title: Microsoft Edge 扩展概述
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 08/25/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， chromium 扩展
-ms.openlocfilehash: ec48eb3026a8791d01a67e81a30e475b35bef7c6
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 1aeadaebf1dfce3e2aeb3adc5f51fd8ad9e0762d
+ms.sourcegitcommit: b85c6d0abdae573d75e32b594d6823ce70a87d7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108085"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "12109146"
 ---
 # <a name="overview-of-microsoft-edge-extensions"></a>Microsoft Edge 扩展概述
 
@@ -97,7 +97,7 @@ ms.locfileid: "12108085"
 
 ### <a name="publish-to-the-microsoft-edge-add-ons-website"></a>发布到Microsoft Edge加载项网站
 
-若要开始将扩展发布到 Microsoft Edge，必须使用 Microsoft 帐户[][MicrosoftDeveloperRegistration] (MSA) 电子邮件帐户注册开发人员帐户，以将扩展列表提交到应用商店。  MSA 帐户的 Microsoft (电子邮件地址 `@outlook.com`) 、或 `@live.com` "@hotmail.com"。  选择要注册的电子邮件地址时，请考虑是否必须与组织Microsoft Edge转移或共享该扩展的所有权。  注册完成后，你可以创建新的扩展提交到应用商店。
+若要开始将扩展发布到 Microsoft Edge，必须使用 Microsoft 帐户[][MicrosoftDeveloperRegistration] (MSA) 电子邮件帐户注册开发人员帐户，以将扩展列表提交到应用商店。  MSA 帐户的 Microsoft (电子邮件地址 `@outlook.com`) 、 `@live.com` 或 `@hotmail.com` 。  选择要注册的电子邮件地址时，请考虑是否必须与组织Microsoft Edge转移或共享该扩展的所有权。  注册完成后，你可以创建新的扩展提交到应用商店。
 
 若要将扩展提交到应用商店，需要提供以下项：
 
@@ -137,7 +137,7 @@ ms.locfileid: "12108085"
 
 [ExtensionsPublish]: ./publish/publish-extension.md "发布Microsoft Edge扩展|Microsoft Docs"
 [EdgeDevToolsVSCode]: ../visual-studio-code/microsoft-edge-devtools-extension.md "Microsoft Edge适用于开发人员的 DevTools Visual Studio Code |Microsoft Docs"
-[WebhintVSCode]: ../visual-studio-code/webhint.md "webhint extension for Visual Studio Code |Microsoft Docs"
+[WebhintVSCode]: ../visual-studio-code/webhint.md "webhint 扩展Visual Studio Code |Microsoft Docs"
 <!-- external links -->
 [ManageExtensionsEnterprise]: /deployedge/microsoft-edge-manage-extensions "管理Microsoft Edge企业中扩展|Microsoft Edge Enterprise文档"
 [MicrosoftDeveloperEdgeExtensions]: https://developer.microsoft.com/microsoft-edge/extensions "开发 Microsoft Edge |Microsoft 开发人员"

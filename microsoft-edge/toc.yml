@@ -9,6 +9,8 @@
           items:
             - name: 实验性功能
               href: devtools-guide-chromium/experimental-features/index.md
+            - name: Microsoft Edge 95
+              href: devtools-guide-chromium/whats-new/2021/10/devtools.md
             - name: Microsoft Edge 94
               href: devtools-guide-chromium/whats-new/2021/09/devtools.md
             - name: Microsoft Edge 93
@@ -427,6 +429,8 @@
               href: webview2/get-started/winui.md
             - name: WPF
               href: webview2/get-started/wpf.md
+        - name: 示例代码
+          href: webview2/code-samples-links.md
         - name: 概念
           items:
             - name: Microsoft Edge 与 WebView2 之间的区别
@@ -465,6 +469,8 @@
               href: webview2/how-to/chromium-devtools-protocol.md
             - name: 切换到预览频道
               href: webview2/how-to/set-preview-channel.md
+            - name: 将 Web 内容嵌入本机应用程序中
+              href: webview2/how-to/communicate-btwn-web-native.md
         - name: 发行说明
           href: webview2/release-notes.md
         - name: 路线图
