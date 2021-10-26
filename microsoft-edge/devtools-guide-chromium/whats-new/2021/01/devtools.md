@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: f38cd808b090f4b7dfdb09c3253ba379c041cc58
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 0fdab7c22e2961a03231bac890ce2358872b77b4
+ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083196"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "12108372"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -424,7 +424,7 @@ DevTools 现在在父帧下列出一个专用的服务工作进程。  下图显
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport "模拟移动视区 - 在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"
 [DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]: ../../../evaluate-performance/reference.md#record-load-performance "记录负载性能 - 性能分析参考 | Microsoft Docs"
-[DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) 开发人员工具概述 | Microsoft Docs"
+[DevtoolsIndex]: ../../../index.md "Microsoft Edge 开发人员工具概述 | Microsoft Docs"
 [DevtoolsInspectStylesEditFonts]: ../../../inspect-styles/edit-fonts.md "在 DevTools 的“样式”窗格中编辑 CSS 字体样式和设置 | Microsoft Docs"
 
 [DualScreenIntroductionHowToWorkWithSeam]: /dual-screen/introduction#how-to-work-with-the-seam "如何处理接缝 - 双屏幕设备简介| Microsoft Docs"
