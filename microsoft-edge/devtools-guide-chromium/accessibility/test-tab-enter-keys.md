@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 8f48b7264c1d214c8ac0fb6a850074135f6a5e2d
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 3767e8ed9379c9c22e70e62ddf0b2bba476be502
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082405"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140422"
 ---
 # <a name="check-for-keyboard-support-by-using-the-tab-and-enter-keys"></a>使用 Tab 和 Enter 键检查键盘支持
 
@@ -26,13 +26,13 @@ ms.locfileid: "12082405"
 
 若要使用键盘而不是鼠标检查演示页面的辅助功能问题，请执行以下步骤：
 
-1.  在 [浏览器的新选项卡中打开][DevToolsA11yErrorsDemopage] 辅助功能测试演示网页。
+1.  在 [浏览器的新选项卡中打开](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 辅助功能测试演示网页。
 
 1.  使用键盘导航演示文档，使用 `Tab` 和 `Shift` + `Tab` 键从元素跳到另一个元素。  在演示网页上， `Tab` 该密钥首先将焦点移到部分中的搜索 `header` 表单。
 
-1.  选择 `Tab` 以将焦点放在按钮上，然后选择单击 `Enter` 聚焦按钮。  例如，在演示页面中，选择将焦点放在"搜索" `Tab` 字段**** 上，然后选择 `Enter` 提交搜索。  此方法将产生与选择"开始" **按钮相同的结果** 。  选择 `Enter` 发送搜索 **表单** 可以正常工作。
+1.  选择 `Tab` 以将焦点放在按钮上，然后选择单击 `Enter` 聚焦按钮。  例如，在演示页面中，选择将焦点放在"搜索"字段上，然后选择 `Tab` **** `Enter` 提交搜索。  此方法将产生与选择"开始" **按钮相同的结果** 。  选择 `Enter` 发送搜索 **表单** 可以正常工作。
 
-1.  再次 `Tab` 选择。  您重点关注的下一个元素是网页部分的第一个 **"** 更多"链接， `content` 如大纲所指示。
+1.  再次 `Tab` 选择。  您重点关注的下一个元素是网页部分中的第一个 **"** 更多"链接， `content` 如大纲所指示。
 
     :::image type="complex" source="../media/a11y-testing-keyboard-focus-on-element.msft.png" alt-text="使用键盘和&quot;Tab&quot;键导航文档。 焦点显示在文档中的链接上。" lightbox="../media/a11y-testing-keyboard-focus-on-element.msft.png":::
         使用键盘和 Tab 键导航文档。 焦点显示在文档中的链接上。
@@ -46,13 +46,13 @@ ms.locfileid: "12082405"
         缺少焦点样式使无法知道您当前在文档中的什么位置。 唯一的提示是在屏幕左下角显示链接目标。
     :::image-end:::
 
-1.  再次 `Tab` 选择，以到达"捐赠"窗体中的条目字段。  但是，无法通过选择 到达文本框上方的按钮 `Tab` 。 你不能使用键盘将焦点放在**50、100**或**200**按钮上，然后选择它们。 ****  此外， `Enter` 选择时不会提交该捐赠表单。
+1.  再次 `Tab` 选择，以到达"捐赠"窗体中的条目字段。  但是，无法通过选择 到达文本框上方的按钮 `Tab` 。 你不能使用键盘将焦点放在**50、100**或**200**按钮上，然后选择它们。 ****  此外， `Enter` 选择时不会提交该资金申请。
 
     :::image type="complex" source="../media/a11y-testing-form-field-with-outline.msft.png" alt-text="在资金表单中，唯一一个可通过键盘访问的元素是文本输入字段" lightbox="../media/a11y-testing-form-field-with-outline.msft.png":::
         在资金表单中，唯一一个可通过键盘访问的元素是文本输入字段
     :::image-end:::
 
-1.  再次选择会将焦点放在页面的顶部导航栏上，并包含"主页"、"采用一只猫"、"我的产品"、"作业"和"关于 `Tab` **我们"的菜单按钮**。 **** **** **** ****  选择 `Tab` 或 `Shift` + `Tab` 将焦点放在菜单按钮上，如焦点轮廓所指示。  然后选择 `Enter` 以访问网页的该部分。
+1.  再次选择会将焦点放在页面的顶部导航栏上，并包含"主页"、"采用一只猫 `Tab` **********"、"花****"、"作业**"和"关于**我们"的菜单按钮**。  选择 `Tab` 或 `Shift` + `Tab` 将焦点放在菜单按钮上，如焦点轮廓所指示。  然后选择 `Enter` 以访问网页的该部分。
 
     :::image type="complex" source="../media/a11y-testing-menu-with-outline.msft.png" alt-text="主菜单具有突出显示和焦点轮廓，因此键盘可访问" lightbox="../media/a11y-testing-menu-with-outline.msft.png":::
         主菜单具有突出显示和焦点轮廓，因此键盘可访问
@@ -71,8 +71,3 @@ ms.locfileid: "12082405"
 ## <a name="see-also"></a>另请参阅
 
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "辅助功能测试演示网页|GitHub"

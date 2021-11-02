@@ -7,18 +7,19 @@ ms.date: 09/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 7ecd575f32f5b6ebfdde1fe83cd1f5c1bdd21b7f
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 2a079469a50aad83b388ff7401de12087e7ede4e
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082139"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140793"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-94"></a>DevTools 94 (Microsoft Edge中的新增) 
 
 [!INCLUDE [note about What's New announcements from the Microsoft Edge DevTools team](../../includes/edge-whats-new-note.md)]
 
 
+<!-- ====================================================================== -->
 ## <a name="search-for-console-errors-on-the-web"></a>搜索 Web 上的控制台错误
 
 <!-- Title: Quickly debug console errors with our new integrated search feature -->
@@ -33,37 +34,39 @@ ms.locfileid: "12082139"
 :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## <a name="devtools-extension-for-visual-studio-code-includes-the-latest-tools-theme-support-and-helpful-links"></a>适用于开发人员的 DevTools Visual Studio Code包括最新的工具、主题支持和有用链接
 
-<!-- Title: Edge DevTools for VS Code now supports themes and uses the most recent codebase -->
-<!-- Subtitle: The Edge DevTools extension for VS Code now uses the same version of the Developer Tools as your Microsoft Edge browser. We also added ways to learn more and for you to tell us what we could do better from within Visual Studio Code. -->
+<!-- Title: Microsoft Edge DevTools for Visual Studio Code now supports themes and uses the most recent codebase -->
+<!-- Subtitle: The Microsoft Edge DevTools extension for Visual Studio Code now uses the same version of the Developer Tools as your Microsoft Edge browser. We also added ways to learn more and for you to tell us what we could do better from within Visual Studio Code. -->
 
-在最新版本的 Microsoft Edge DevTools Visual Studio Code，我们发布了以下更新或新功能。
+在最新版本的 Microsoft Edge DevTools 扩展中Visual Studio Code我们发布了以下更新或新功能。
 *  共享用于基于浏览器的 DevTools 的相同代码库。
-*  支持随主题一Visual Studio Code。
-*  在"**工具"** 边栏中Microsoft Edge"有用链接"部分，并添加"**文档**"、"**报告**Bug"和"**请求功能"按钮**。 ****
-*  在"**工具** () "窗格中添加"关闭"Microsoft Edge"按钮，以关闭扩展 `X` ****  >  **** 打开的浏览器。
+*  支持随主题一起Visual Studio Code。
+*  在"**工具"** 边栏中Microsoft Edge"有用链接"部分，并添加"文档"、"**报告**Bug"和"**请求功能"按钮**。 **** ****
+*  在"**工具** () "窗格中添加"关闭Microsoft Edge"按钮，以关闭扩展 `X` ****  >  **** 打开的浏览器。
 *  添加对与远程工作区的 JavaScript 调试器连接的支持。
 
-有关详细信息，请导航到Microsoft Edge[的 DevTools 扩展Visual Studio Code。][EdgeDevToolsExtensionForVSCode]
+有关详细信息，请导航到 Microsoft Edge [DevTools 扩展Visual Studio Code。][EdgeDevToolsExtensionForVSCode]
 
 :::image type="complex" source="../../media/2021/09/devtools-extension-dark-theme.msft.png" alt-text="内部运行的扩展Visual Studio Code，与主题的深色主题Visual Studio Code，以及新的&quot;有用链接&quot;边栏" lightbox="../../media/2021/09/devtools-extension-dark-theme.msft.png":::
-   内部运行的扩展Visual Studio Code，与 Visual Studio Code 的深色主题匹配，以及新的"**有用**链接"边栏
+   内部运行的扩展Visual Studio Code、匹配主题的深色Visual Studio Code以及新的"**有用**链接"边栏
 :::image-end:::
 
 还支持Visual Studio Code浅色主题。
 
-:::image type="complex" source="../../media/2021/09/devtools-extension-light-theme.msft.png" alt-text="内部运行的扩展Visual Studio Code、匹配主题的浅色Visual Studio Code和新的&quot;有用链接&quot;边栏" lightbox="../../media/2021/09/devtools-extension-light-theme.msft.png":::
-   内部运行的扩展Visual Studio Code，与主题的浅色Visual Studio Code，以及新的"**有用**链接"边栏
+:::image type="complex" source="../../media/2021/09/devtools-extension-light-theme.msft.png" alt-text="内部运行的扩展Visual Studio Code，与主题的浅色主题Visual Studio Code，以及新的&quot;有用链接&quot;边栏" lightbox="../../media/2021/09/devtools-extension-light-theme.msft.png":::
+   内部运行的扩展Visual Studio Code，与主题的浅色Visual Studio Code和新的"**有用**链接"边栏匹配
 :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## <a name="breakpoint-icons-are-now-displayed-when-using-visual-studio-code-themes"></a>断点图标现在在使用主题时Visual Studio Code显示
 
 <!-- Title: Breakpoint icons are now displayed when using themes from Visual Studio Code -->
 <!-- Subtitle: Setting, removing, and viewing breakpoints is now easier in Microsoft Edge. -->
 
-在 Microsoft Edge版本 93 中，可以将 Visual Studio Code 中使用的主题应用到 DevTools 扩展。  有关此功能详细信息，请导航到将 [颜色主题应用到 DevTools][ApplyColorThemesToDevTools]。
+在 Microsoft Edge 版本 93 中，可以将 Visual Studio Code 中使用的主题应用到 DevTools 扩展。  有关此功能详细信息，请导航到将 [颜色主题应用到 DevTools][ApplyColorThemesToDevTools]。
 
 以前，在 DevTools Visual Studio Code主题时，源工具中代码左边距上的断点图标不会显示。 ****  从 Microsoft Edge 94 开始，断点图标现在按预期方式显示。
 
@@ -74,14 +77,15 @@ ms.locfileid: "12082139"
 :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## <a name="navigate-to-the-more-tools-button-with-the-keyboard"></a>使用键盘导航到"更多工具"按钮
 
 <!-- Title: Use the arrow keys to navigate to the + button to open more tools -->
 <!-- Subtitle: To open more tools, we have improved keyboard accessibility using the arrow keys on the main DevTools toolbar. -->
 
-以前，当工具栏具有焦点时，你**** 无法使用键盘上的箭头键导航到 DevTools 中的"更多工具" () " `+` 按钮。  使用箭头键时，到达工具栏中的最后一个工具后，焦点将循环回第一个工具，或显示"更多 **选项卡"菜单** 。
+以前，当工具栏具有焦点时，你**** 无法使用键盘上的箭头键导航到 `+` DevTools () 工具"按钮。  使用箭头键时，到达工具栏中的最后一个工具后，焦点将循环回第一个工具，或显示"更多 **选项卡"菜单** 。
 
-从 Microsoft Edge版本 93 开始，当**** 焦点位于工具栏上时，可以使用箭头键选择"更多选项卡" () "按钮和"更多工具" `>>` 按钮。 ****
+从 Microsoft Edge版本 93 开始，**** 当焦点位于工具栏上时，可以使用箭头键选择"更多选项卡" () "按钮和"更多工具" `>>` 按钮。 ****
 
 若要详细了解如何使用键盘导航 DevTools，请导航Microsoft Edge[开发人员工具键盘快捷方式][DevToolsKeyboardShortcuts]。
 
@@ -113,11 +117,11 @@ ms.locfileid: "12082139"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-94)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。
+> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-94) ，由 [Jecelyn Yeen][JecelynYeen] 和开发人员 (Chrome DevTools) 。
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelynyeen

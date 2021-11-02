@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: e045800a284ab7c08b1f63afd7217e9f13dba66f
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 779be4ac228e64db377880500562a3148dea8479
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12107679"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139736"
 ---
 <!-- Copyright Kayce Basques
 
@@ -33,13 +33,15 @@ ms.locfileid: "12107679"
 
 下面是 Microsoft Edge 83 的 DevTools 中提供的新功能。
 
+
+<!-- ====================================================================== -->
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告
 
-以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。
+以下各节列出了你可能从 DevTools 团队中错过Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]并[在 Twitter 上关注我们][EdgeDevToolsTwitterAccount]。
 
 ### <a name="remotely-debug-microsoft-edge-on-windows-10-or-later-devices"></a>远程调试Microsoft Edge或Windows 10或更高版本的设备上的客户端
 
-Microsoft Edge ([Beta) ][RemoteTools]远程工具应用现已在 Microsoft Store[中提供][MicrosoftStore]。 此应用扩展[Windows Device Portal][WindowsUwpDebugTestPerfDevicePortal]。 你可以从在开发Microsoft Edge运行的设备连接到远程Windows 10或更高版本设备，并显示目标列表。 此目标列表包括 Microsoft Edge 和 [PWAs][ProgressiveWebAppsChromiumIndex] 在 Windows 设备上打开的所有选项卡。 针对在远程开发设备上运行的目标，在开发计算机上Windows DevTools。
+Microsoft Edge ([Beta) ][RemoteTools]远程工具应用现已在 Microsoft Store[中提供][MicrosoftStore]。 此应用扩展[Windows Device Portal][WindowsUwpDebugTestPerfDevicePortal]。 你可以从在开发Microsoft Edge运行的设备连接到远程Windows 10或更高版本设备，并显示目标列表。 此目标列表包括 Microsoft Edge 和 [PWA][ProgressiveWebAppsChromiumIndex] 在 Windows 设备上打开的所有选项卡。 针对在远程开发设备上运行的目标，在开发计算机上Windows工具。
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="现在，Microsoft Store 中提供 Microsoft Edge 远程工具 (Beta) 应用" lightbox="../../media/2020/03/remote-tools.msft.png":::
    [Microsoft Store][MicrosoftStore] 中提供 [Microsoft Edge 远程工具 (Beta)][RemoteTools] 应用
@@ -65,7 +67,7 @@ Chromium 问题 [#1050855][CR1050855]
 
 ### <a name="new-and-improved-infobars"></a>新增和改进的 infobars
 
-DevTools 中的信息性通知栏 \(infobars\) 现在具有改进的外观和功能。 在 Microsoft Edge 83 中，infobars 更易于阅读和提供按钮，以便你能够立即执行相关操作。
+DevTools (信息) 栏的信息栏现在具有改进的外观和更多功能。 在 Microsoft Edge 83 中，infobars 更易于阅读和提供按钮，以便你能够立即执行相关操作。
 
 :::image type="complex" source="../../media/2020/03/infobar.msft.png" alt-text="用于在 Microsoft Edge 83 中整齐打印缩小文件的信息栏" lightbox="../../media/2020/03/infobar.msft.png":::
    用于在 Microsoft Edge 版本 83 中打印缩小文件的信息栏
@@ -110,13 +112,15 @@ Chromium 问题 [#1050999][CR1050999]
 对缩小文件进行更改后，"更改"工具允许您水平滚动**** 以显示所有缩小代码。  从 Microsoft Edge 83 开始，你现在可以使用键盘上的箭头键水平滚动。
 
 :::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在&quot;更改&quot;工具中显示缩小代码" lightbox="../../media/2020/03/changes.msft.png":::
-   在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以显示在"更改"工具中对缩小代码**所做的更改**
+   在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在"更改"工具中显示对缩小代码**所做的更改**
 :::image-end:::
 
 如果你使用屏幕阅读器或键盘在 DevTools 中导航，请通过向我们发推文[][PostTweetEdgeDevTools]或选择[发送反馈][联系人]图标向我们发送反馈！
 
 Chromium 问题 [#963183][CR963183]
 
+
+<!-- ====================================================================== -->
 ## <a name="announcements-from-the-chromium-project"></a>来自 Chromium 项目的公告
 
 以下各部分公布了 Microsoft Edge 83 中提供的其他功能，这些功能是对开源 Chromium 项目的贡献。
@@ -136,10 +140,10 @@ DevTools 能够模拟模糊的视觉和以下[颜色视觉缺陷类型][ColorBli
 | 红色盲 | 无法感觉任何红色的光线。 |
 | 绿色盲 | 无法感觉任何绿色的光线。 |
 | 黄蓝色盲 | 无法感觉任何蓝色的光线。 |
-| 全色盲 | 无法感觉任何颜色，灰色阴影除外\（极少\）。 |
+| 全色盲 | 无法感知任何颜色，但灰色底纹除外 (极少) 。 |
 
 存在这些色觉缺陷的不太极端的版本，实际上它们更为常见。
-例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。 但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人是不同的，并且可能会看到不同的 \ (能够感知更多/更少的相关颜色\) 。
+例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。 但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人是不同的，并且可能会看到不同 (能够感知更多/更少的相关颜色) 。
 
 通过在 DevTools 中进行更极端的仿真设计，可以保证红色弱、绿色弱、黄蓝色弱和全色弱的人也可访问你的 Web 应用。
 
@@ -191,11 +195,11 @@ Chromium 问题 [#1051466][CR1051466]
 
 "源"面板具有用于断点、条件断点和日志点的新图标：
 
-*   断点 \(![断点](../../media/2020/03/breakpoint.msft.png)\) 用红色圆圈表示。
-*   条件断点 \(![条件断点](../../media/2020/03/conditional.msft.png)\) 用半红半白圆表示。
-*   Logpoints \(![Logpoint](../../media/2020/03/logpoint.msft.png)\) 用带控制台图标的红色圆圈表示。
+*   断点 (![断点](../../media/2020/03/breakpoint.msft.png)) 用红色圆圈表示。
+*   条件断点 (![条件断点](../../media/2020/03/conditional.msft.png)) 用半红半白圆表示。
+*   Logpoints (![Logpoint](../../media/2020/03/logpoint.msft.png)) 用带控制台图标的红色圆圈表示。
 
-新图标的动机是使 UI 与其他 GUI 调试工具 \(（通常为红色) 颜色断点\）更加一致，并便于一目了然地区分这 3 个功能。
+新图标的动机是使 UI 与其他 GUI 调试工具 (通常将断点着色为红色) 并便于一目了然地区分这 3 个功能。
 
 Chromium 问题 [#1041830][CR1041830]
 
@@ -233,7 +237,7 @@ DevTools 团队经常从 Web 开发人员那里获得反馈，尽管可以从 De
 
 ### <a name="delete-all-local-overrides-in-a-folder"></a>删除文件夹中的所有本地覆盖
 
-设置本地覆盖**** 后，你可以将鼠标悬停在目录上，打开上下文菜单 \ (右键单击\) ，然后选择新的"删除所有覆盖"选项以删除该**** 文件夹中的所有局部覆盖。
+设置本地覆盖**** 后，你可以将鼠标悬停在目录上，打开上下文菜单 (右键单击) ，然后选择新的"删除所有覆盖"选项以**** 删除该文件夹中的所有局部覆盖。
 
 :::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="删除所有覆盖" lightbox="../../media/2020/03/overrides.msft.png":::
    删除所有覆盖
@@ -272,6 +276,8 @@ Android Oreo 引入了自适应图标，可在不同的设备模型之间显示�
 > [!NOTE]
 > 此功能在 Microsoft Edge 81 中发布。  ["DevTools （Microsoft Edge 81）"][WhatsNew81]中的新增功能未涵盖 Microsoft Edge 83 中介绍的更新。
 
+
+<!-- ====================================================================== -->
 ## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道
 
 如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels] 作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
@@ -339,7 +345,7 @@ Android Oreo 引入了自适应图标，可在不同的设备模型之间显示�
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-83)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-83)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

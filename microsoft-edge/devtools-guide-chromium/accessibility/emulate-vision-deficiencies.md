@@ -7,16 +7,16 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: a056aaf8223a5647b9263d4c1862617bb5408f60
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: a5e69f20ef0ec2567c51edbc34e71706265ccac2
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12107672"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139995"
 ---
 # <a name="emulate-vision-deficiencies"></a>模仿视觉缺陷
 
-为了更好地满足色盲[\ (][ColorblindawarenessMain]色盲\) 或模糊视觉的用户的需求[，Microsoft Edge DevTools][DevtoolsIndex]允许你模拟模糊的视觉和特定的颜色视觉缺陷。  模拟 **视觉缺陷工具** 可模拟以下类别。
+为了更好地满足色盲用户 (色盲[](https://www.colourblindawareness.org)) 或模糊视觉的需求[，Microsoft Edge DevTools](../index.md)允许你模拟模糊的视觉和特定的颜色视觉缺陷。  模拟 **视觉缺陷工具** 可模拟以下类别：
 
 | 色盲 | 详细信息 |
 |:--- |:--- |
@@ -30,7 +30,7 @@ ms.locfileid: "12107672"
 <!-- ====================================================================== -->
 ## <a name="open-the-rendering-tool"></a>打开呈现工具
 
-若要模拟对 Web 产品应用的视觉缺陷，请打开["呈现工具"。][DevtoolsRenderingToolsIndex]
+若要模拟对 Web 产品应用的视觉缺陷，请打开["呈现工具"。](../rendering-tools/index.md)
 
 1.  若要打开呈现工具，请选择 `...` 工具栏中的菜单项。
 1.  选择 **"更多工具"。**
@@ -73,7 +73,7 @@ ms.locfileid: "12107672"
 
 作为替代方法，可以使用命令 **菜单** 访问不同的模拟。
 
-1.  选择 `Ctrl` + `Shift` + `P` \ (Windows/Linux\) 或 `Command` + `Shift` + `P` \ (macOS\) 打开命令**菜单**。
+1.  选择 `Ctrl` + `Shift` + `P` (Windows/Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令**菜单**。
 
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="命令菜单" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        **命令菜单**
@@ -93,12 +93,3 @@ ms.locfileid: "12107672"
 ## <a name="see-also"></a>另请参阅
 
 *  [验证页面是否可借助模糊视图](test-blurred-vision.md)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevToolsIndex]: ../index.md "Microsoft Edge开发人员工具|Microsoft Docs"
-[DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "分析运行时性能|Microsoft Docs"
-[ColorblindawarenessMain]: https://www.colourblindawareness.org "光盲意识组织"
-
-[AmfcbMain]: https://www.amfcb.org "American Foundation for the Color Blind (AFCB) "

@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 525ab1136b116683d88c719e253cfff6a9931203
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 0ef11bc6b3dd4878dfdd944a449f87b330f5b04c
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082020"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141395"
 ---
 <!-- Copyright Kayce Basques
 
@@ -38,6 +38,8 @@ ms.locfileid: "12082020"
 > *   [使用 DevTools 对 CSS 进行基本更改][DevToolsCssIndex]
 > *   [运行本地 HTTP Web 服务器][MDNSimpleLocalHTTPServer]
 
+
+<!-- ====================================================================== -->
 ## <a name="overview"></a>概述
 
 工作区使你可以将你在 Devtools 中更改的内容保存到计算机上同一文件的本地副本中。  对于本教程，计算机上应具有以下设置。
@@ -48,11 +50,13 @@ ms.locfileid: "12082020"
 
 启用工作区后，在 DevTools 中所做的更改 CSS 将保存到桌面上的源代码中。
 
+
+<!-- ====================================================================== -->
 ## <a name="limitations"></a>限制
 
 如果你使用的是新式框架，它可能会将源代码从易于维护的格式转换为经过优化以尽快运行的格式。
 
-工作区通常能够借助源映射 将优化的代码映射回原始 [源代码][TreehouseBlogSourceMaps]。  但在每个框架使用源映射时，框架之间有很多差异。  Devtools 不支持所有变体。
+工作区通常能够借助源映射 将优化的代码映射回原始 [源代码][TreehouseBlogSourceMaps]。  但在每个框架使用源映射方面，框架之间有很多差异。  Devtools 不支持所有变体。
 
 工作区已知无法与以下框架一起工作。
 
@@ -60,12 +64,16 @@ ms.locfileid: "12082020"
 
     <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
 
+
+<!-- ====================================================================== -->
 ## <a name="related-feature-local-overrides"></a>相关功能：本地覆盖
 
 **本地覆盖** 是另一项类似于 Workspaces 的 DevTools 功能。  当您要尝试对网页所做的更改，并且您需要跨网页加载显示更改，但您不关心将更改映射到网页的源代码时，请使用本地替代。
 
 <!--Todo: add section when content is ready  -->
 
+
+<!-- ====================================================================== -->
 ## <a name="step-1-set-up"></a>步骤 1：设置
 
 完成以下操作，获取工作区的动手体验。
@@ -115,14 +123,14 @@ ms.locfileid: "12082020"
 
 ### <a name="set-up-devtools"></a>设置 DevTools
 
-1.  选择 `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 打开 DevTools**** 的控制台面板。
+1.  选择 `Control` + `Shift` + `J` (Windows、Linux) 或 (`Command` + `Option` + `J` macOS) 打开 DevTools**** 的控制台面板。
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="控制台面板" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        控制台**面板**
     :::image-end:::
 
 1.  导航到 **"源"** 工具。
-1.  在左侧 **导航器** (窗格中 **，) "文件系统"** 选项卡。
+1.  在导航 **器窗格中** (左侧) ，选择" **文件系统"** 选项卡。
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="&quot;文件系统&quot;选项卡" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
        " **文件系统"** 选项卡
@@ -137,6 +145,8 @@ ms.locfileid: "12082020"
        " **文件系统** "选项卡现在指示本地文件和网络文件之间的映射
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="step-2-save-a-css-change-to-disk"></a>步骤 2：将 CSS 更改保存到磁盘
 
 1.  打开 `styles.css`。
@@ -159,6 +169,8 @@ ms.locfileid: "12082020"
 1.  再次 `styles.css` 在文本编辑器中打开。  `color`属性现在设置为你最喜爱的颜色。
 1.  刷新页面。  元素的颜色 `<h1>` 仍设置为你最喜爱的颜色。  更改将在整个刷新中保留，因为进行更改时 DevTools 将更改保存到磁盘。  然后，在刷新页面时，本地服务器从磁盘提供文件的修改副本。
 
+
+<!-- ====================================================================== -->
 ## <a name="step-3-save-an-html-change-to-disk"></a>步骤 3：将 HTML 更改保存到磁盘
 
 ### <a name="change-html-from-the-elements-panel"></a>从元素面板更改 HTML
@@ -205,7 +217,7 @@ In short, the **DOM Tree** `!==` HTML.
 1.  在左侧 **导航器** (窗格中，) " **页面"** 选项卡。
 1.  选择** (索引) 。 **  将打开页面的 HTML。
 1.  将`<h1>Workspaces Demo</h1>`替换为`<h1>I ❤️  Cake</h1>`。  查看下图。
-1.  选择 `Control` + `S` \ (Windows、Linux\) 或 `Command` + `S` \ (macOS\) 保存更改。
+1.  选择 `Control` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存更改。
 1.  刷新页面。  `<h1>`刷新页面后，元素将继续显示新文本。
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从&quot;源&quot;工具更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
@@ -214,21 +226,23 @@ In short, the **DOM Tree** `!==` HTML.
 
 1.  打开 `~/Desktop/app/index.html`。  元素 `<h1>` 包含新文本。
 
+
+<!-- ====================================================================== -->
 ## <a name="step-4-save-a-javascript-change-to-disk"></a>步骤 4：将 JavaScript 更改保存到磁盘
 
-使用 DevTools 的代码编辑器的主要位置是 **源** 工具。  但有时你需要在编辑文件时访问其他工具，如**元素**工具或控制台面板。 ****  快速 **源** 工具仅为你提供源工具 **中的编辑器，** 同时任何工具都打开。
+使用 DevTools 的代码编辑器的主要位置是 **源** 工具。  但有时你需要在编辑文件时访问其他工具，如**元素**工具或控制台面板。 ****  当 **任何** 工具打开时，快速源工具仅为你提供 **源** 工具中的编辑器。
 
 若要与其他工具一起打开 DevTools 代码编辑器，请执行下列操作：
 
 1.  导航到 **"元素"** 工具。
-1.  选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。  命令 **菜单将** 打开。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 。  命令 **菜单将** 打开。
 1.  键入 `Quick Source` ，然后选择"显示**快速源"。**  在"DevTools"窗口底部，将显示"**** 快速源"工具，其中显示 的内容，这是你在"源"工具中编辑的最后 `index.html` **一**个文件。
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="使用命令菜单打开快速源工具" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
        使用 **命令菜单** 打开快速 **源工具**
     :::image-end:::
 
-1.  选择`Control`+`P` \（Windows、Linux\） 或 `Command`+`P` \（macOS\） 以打开 **"打开文件**"对话框。  查看下图。
+1.  选择 `Control` + `P` (Windows、Linux) 或 (`Command` + `P` macOS) 打开 **"打开文件"** 对话框。  查看下图。
 1.  键入 `script` ，然后选择 **"app/script.js"。 **
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件&quot;对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
@@ -238,14 +252,14 @@ In short, the **DOM Tree** `!==` HTML.
     > [!NOTE]
     > 该 `Save Changes To Disk With Workspaces` 演示中的链接会定期设置样式。
 
-1.  使用快速源工具将以下 ** 代码script.js** 库 **的底部** 。
+1.  使用快速源工具将以下**代码script.js****库的底部**。
 
     ```javascript
     console.log('greetings from script.js');
     document.querySelector('a').style = 'font-style:italic';
     ```
 
-1.  选择 `Control` + `S` \ (Windows、Linux\) 或 `Command` + `S` \ (macOS\) 保存更改。
+1.  选择 `Control` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存更改。
 1.  刷新页面。
 
     > [!NOTE]
@@ -255,6 +269,8 @@ In short, the **DOM Tree** `!==` HTML.
        页面上的链接现在为 italicized
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 
 使用本教程中学到的内容在你自己的项目中设置工作区。  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
@@ -284,15 +300,15 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 [TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "源源地图 |Treehouse 博客"
 
-<!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools \(@AlphabetBrowserDevTools\) | Twitter"  -->
+<!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools (@AlphabetBrowserDevTools) | Twitter"  -->
 
-[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port \ (computer networking\) - Wikipedia"
+[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port (computer networking) - Wikipedia"
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/workspaces/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/workspaces/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: c6302a894c3764accbd4d5752543e0e39e36fc78
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: ebd21b599bfe38e950884b417424d1201be741df
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082958"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140317"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,20 +29,24 @@ ms.locfileid: "12082958"
    limitations under the License.  -->
 # <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>使用开发人员工具Microsoft Edge菜单运行命令
 
-命令菜单提供了一种快速的方式，Microsoft Edge开发人员工具 UI 和完成常见任务，例如[禁用 JavaScript][JavascriptDisable]。  你可能熟悉命令调色板Microsoft Visual Studio代码中的类似功能，这是命令菜单的原始灵感[][VisualStudioCodeUICommandPalette]。
+命令菜单提供了一种快速的方式，Microsoft Edge开发人员工具 UI 和完成常见任务，例如[禁用 JavaScript](../javascript/disable.md)。  你可能熟悉命令Microsoft Visual Studio代码中的类似功能，这是命令菜单的原始灵感。 [](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette)
 
 :::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="使用命令菜单禁用 JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
    使用命令菜单禁用 JavaScript
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="open-the-command-menu"></a>打开命令菜单
 
-选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。 或选择 **"自定义和控制 DevTools** \ (`...` \) >**运行命令"。**
+选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 。 或者选择 **"自定义和控制开发工具 () >** `...` **运行命令"。**
 
 :::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="运行命令" lightbox="../media/command-menu-options-run-command.msft.png":::
    运行命令
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="display-other-available-actions"></a>显示其他可用操作
 
 如果使用"打开命令菜单"中概述[](#open-the-command-menu)的工作流，"命令菜单"将打开，并预先将字符绘制到"命令菜单 `>` "文本框中。
@@ -59,18 +63,8 @@ ms.locfileid: "12082958"
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[JavascriptDisable]: ../javascript/disable.md "使用开发人员工具Microsoft Edge JavaScript |Microsoft Docs"
-
-[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "命令调色板 - Visual Studio Code UI"
-
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/command-menu/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/command-menu/index)，由技术编写 (、Chrome DevTools & Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors/kaycebasques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 68b64b423d9a6dd25bac9d6c2299d1349a48329f
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 01a04424050dd673b178afe44dde43021ac91902
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082447"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140562"
 ---
 # <a name="check-the-accessibility-tree-for-keyboard-and-screen-reader-support"></a>检查辅助功能树是否支持键盘和屏幕阅读器
 
@@ -20,13 +20,13 @@ ms.locfileid: "12082447"
 
 多个 DevTools 功能检查键盘和屏幕阅读器支持。  使用 **Inspect** 工具单独检查每个页面元素的辅助功能可能会相当耗时。  检查网页的另一种方式是使用 **辅助功能树**。  辅助功能 **树** 指示页面向辅助技术（如屏幕阅读器）提供哪些信息。
 
-辅助功能 **树** 是 DOM 树的子集，其中包含 DOM 树中的元素，这些元素对于在屏幕阅读器中显示页面内容非常有用。  辅助功能**树位于**"元素"工具**** 的"辅助功能"选项卡**** ("**样式**"选项卡) 。
+辅助功能 **树** 是 DOM 树的子集，其中包含 DOM 树中的元素，这些元素对于在屏幕阅读器中显示页面内容非常有用。  辅助功能**树位于**"元素"工具**** 的"辅助功能"选项卡**** ("样式"选项卡) 。 ****
 
 若要浏览将辅助功能树与演示页面一同使用：
 
-1.  打开 [新选项卡中的辅助功能测试][DevToolsA11yErrorsDemopage] 演示网页。 然后选择 **F12** 以打开 DevTools。
+1.  打开 [新选项卡中的辅助功能测试](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 演示网页。 然后选择 **F12** 以打开 DevTools。
 
-1.  选择**** DevTools 左上角的"检查 \ (检查图标 \) "按钮，使按钮突出显示为蓝色 ![ ](../media/inspect-icon.msft.png) () 。
+1.  选择 **DevTools** (左上角的"检查") "检查图标"按钮，以便该按钮 (![ ](../media/inspect-icon.msft.png) 蓝色) 。
 
 1.  在呈现的网页的"捐赠 **"部分** ，将鼠标悬停在 **"100"** 按钮上。  将显示 **"检查** "工具覆盖。
 
@@ -38,17 +38,11 @@ ms.locfileid: "12082447"
     辅助功能树工具中的"资金"表单按钮
 :::image-end:::
 
-树中没有名称或具有 (角色的任何元素（如 `generic` 元素) ）都存在问题，因为该元素对键盘用户或正在使用辅助技术的用户不可用。 `div`
+树中没有名称或具有 (角色的任何元素（如 `generic` 元素) ）都是一个问题，因为该元素对键盘用户或使用辅助技术的用户不可用。 `div`
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [查看元素在辅助功能树中的位置][DevtoolsAccessibilityAccessibilityTabViewTree]
+*  [查看元素在辅助功能树中的位置](accessibility-tab.md#view-the-position-of-an-element-in-the-accessibility-tree)
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsAccessibilityAccessibilityTabViewTree]: accessibility-tab.md#view-the-position-of-an-element-in-the-accessibility-tree "使用&quot;辅助功能&quot;选项卡视图元素在&quot;辅助功能树 - 测试辅助功能&quot;|Microsoft Docs"
-[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "辅助功能测试演示网页|GitHub"

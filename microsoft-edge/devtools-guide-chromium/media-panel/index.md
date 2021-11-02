@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: aa3711190d951d14be0ea7362ad429febf3550f7
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 55158bb9ae1262383f2b420866ef19cb016047e2
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108358"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140058"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -31,6 +31,8 @@ ms.locfileid: "12108358"
 
 使用**DevTools** Microsoft Edge中的媒体工具查看信息并按浏览器选项卡调试媒体播放器。
 
+
+<!-- ====================================================================== -->
 ## <a name="open-the-media-tool"></a>打开媒体工具
 
 媒体 **工具** 是 DevTools 中用于检查网页的媒体播放器的主要位置。
@@ -42,6 +44,8 @@ ms.locfileid: "12108358"
        **媒体** 面板
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="view-media-players-information"></a>查看媒体播放器信息
 
 1.  导航到包含媒体播放器的网页，如以下网页。
@@ -87,24 +91,28 @@ ms.locfileid: "12108358"
     :::image-end:::
     -->
 
+
+<!-- ====================================================================== -->
 ## <a name="hide-and-show-media-players"></a>隐藏和显示媒体播放器
 
 有时，您可以在一个网页上运行多个媒体播放器，或者使用同一浏览器选项卡浏览不同的网页，每个网页都使用媒体播放器。
 
-你可以选择隐藏 \ (或显示\) 每个媒体播放器，以简化调试体验。
+你可以选择隐藏媒体 (或) 播放器上显示，以简化调试体验。
 
 1.  使用同一浏览器选项卡浏览到多个不同的视频网页。
 1.  若要隐藏媒体播放器，请完成以下操作之一。
-    *   若要隐藏一个媒体播放器，请将鼠标悬停在媒体播放器上，打开上下文菜单 \ (右键单击\) ，然后选择"隐藏**播放器"。**
-    *   若要隐藏所有其他媒体播放器，请将鼠标悬停在媒体播放器上，打开上下文菜单 \ (右键单击\) ，然后选择"隐藏**所有其他"。**
+    *   若要隐藏一个媒体播放器，请将鼠标悬停在媒体播放器上，打开上下文菜单 (右键单击") "，然后选择"隐藏**播放器"。**
+    *   若要隐藏所有其他媒体播放器，请将鼠标悬停在媒体播放器上，打开上下文菜单 (右键单击") "，然后选择"隐藏**所有其他"。**
 
     :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="隐藏媒体播放器" lightbox="../media/media-panel-hide-show.msft.png":::
        隐藏媒体播放器
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="export-media-player-information"></a>导出媒体播放器信息
 
-1.  若要将媒体播放器信息下载为 JSON 文件，请将鼠标悬停在媒体播放器上，打开上下文菜单 \ (右键单击\) ，然后选择"保存播放器**信息"。**
+1.  若要将媒体播放器信息下载为 JSON 文件，请将鼠标悬停在媒体播放器上，打开上下文菜单 (右键单击") "，然后选择"保存播放器**信息"。**
 
     :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="导出媒体信息" lightbox="../media/media-panel-save.msft.png":::
        导出媒体信息
@@ -124,7 +132,7 @@ ms.locfileid: "12108358"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/media-panel/index)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/media-panel/index) ，由 [Jecelyn Yeen][JecelynYeen] 和开发人员 (Chrome DevTools) 。
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

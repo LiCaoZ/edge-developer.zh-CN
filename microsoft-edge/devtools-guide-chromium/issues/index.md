@@ -7,12 +7,12 @@ ms.date: 06/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 70fd3c92fca2379bf1438727b2270b5ba06b5f2e
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 5743b85c3d495830b0d09b2cdaaf6fcf5f800807
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083252"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141661"
 ---
 <!-- Copyright Sam Dutton
 
@@ -40,17 +40,18 @@ ms.locfileid: "12083252"
 *  安全性。
 *  其他。
 
-问题工具**中**的反馈由多个源提供，包括 Chromium 平台、Deque 轴、MDN 浏览器兼容性数据和 webhint。  有关填充问题工具的这些反馈 **源的信息，** 请导航到：
+问题工具**中的反馈**由多个源提供，包括 Chromium 平台、Deque 轴、MDN 浏览器兼容性数据和 webhint。  有关填充问题工具的这些反馈 **源的信息，** 请导航到：
 *  [axe 工具概述][DequeAxe]
 *  [browser-compat-data 存储库][MDNCompat]
 *  [webhint][webhintIo]
 
 
+<!-- ====================================================================== -->
 ## <a name="opening-the-issues-tool"></a>打开问题工具
 
 1.  导航到包含要修复的问题的网页。  例如，在一 [个新选项卡或窗口中][A11ytestingPagewitherrors] 打开辅助功能测试演示页。
 
-1.  打开 DevTools。  几秒钟后，"问题"计数器 **\ (** ![ Issues 计数器 \) 显示在 ](../media/issues-counter-icon.msft.png) DevTools 的右上角。
+1.  打开 DevTools。  几秒钟后，"问题" ("问题") **** 显示在 ![ ](../media/issues-counter-icon.msft.png) DevTools 的右上角。
 
 1.  刷新页面，因为根据网络请求报告某些问题。  请注意问题计数器中 **更新的计数**。
 
@@ -63,7 +64,7 @@ ms.locfileid: "12083252"
 ### <a name="other-ways-to-open-the-issues-tool"></a>打开问题工具的其他方法
 
 有几种其他方法可以打开 **问题** 工具：
-*  在主**面板或**" () 选择"更多工具"菜单，然后选择 **+** "问题 **"。** ****
+*  在主**面板或** () 选择"更多工具"菜单，然后选择 **+** "问题 **"。** ****
 *  选择 **"自定义和控制 DevTools**  >  **更多工具问题**  >  **"。**
 *  在"元素"工具的 DOM **树中，** 选择并单击带 `Shift` 波浪下划线的元素名称。  或者，打开带波浪线下划线的元素上的上下文菜单，然后选择查看 **问题**。
 
@@ -80,13 +81,14 @@ ms.locfileid: "12083252"
 若要包含由第三方网站导致的问题，请在"问题"工具顶部，选中****"包括第三方问题 **"** 复选框。
 
 
+<!-- ====================================================================== -->
 ## <a name="expand-entries-in-the-issues-tool"></a>展开问题工具中的条目
 
 问题 **工具** 提供了适用于每个问题的其他文档和推荐的修补程序。  若要展开问题以获得此附加信息，请选择一个问题，如下所示。
 
 1.  打开新 [窗口或][A11ytestingPagewitherrors] 选项卡中的演示页面，然后打开 DevTools。
 
-1.  通过选择 **问题** 计数器 **\ (** ![ 问题计数器 ](../media/issues-counter-icon.msft.png) \) 打开问题工具。
+1.  打开" **问题"** 工具，选择"问题 **" (** ![ 问题 ](../media/issues-counter-icon.msft.png) ") 。
 
 1.  选择问题以展开问题。
 
@@ -101,6 +103,7 @@ ms.locfileid: "12083252"
 *   指向更多文档的链接。
 
 
+<!-- ====================================================================== -->
 ## <a name="view-issues-in-context-of-an-associated-tool"></a>查看关联工具上下文中的问题
 
 问题工具**中**的问题可能包括打开不同工具（如元素、源或网络工具）**的一**个或多个**** 链接。 **** 可以打开其中一个工具来执行其他疑难解答步骤。 若要从问题工具打开 **链接的工具，** 请执行以下步骤。
@@ -120,9 +123,10 @@ ms.locfileid: "12083252"
     :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## <a name="open-issues-from-the-dom-tree"></a>打开 DOM 树中的问题
 
-如果元素具有关联问题，则 **"** 元素"工具中的 DOM 树在元素名称下显示波浪下划线。  可以打开上下文菜单 (右键单击) ，然后选择查看问题，或者选择并左键单击带波浪**** 下划线 `Shift` 的元素。
+如果元素具有关联问题，则 **"** 元素"工具中的 DOM 树在元素名称下显示波浪下划线。  您可以打开上下文菜单 (右键单击) ，然后选择查看问题，或选择并左键单击带波浪下划线**** `Shift` 的元素。
 
 若要对 DOM 树中带波浪下划线的元素显示问题，请执行以下步骤。
 
@@ -162,7 +166,7 @@ ms.locfileid: "12083252"
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/issues/index) 由 [Sam Dutton][SamDutton] \ (Developer Advocate\) 。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/issues/index) 由 [Sam Dutton][SamDutton] (Developer Advocate) 。
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0

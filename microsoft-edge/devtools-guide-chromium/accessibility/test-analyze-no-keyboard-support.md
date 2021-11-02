@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 86a84c86014fd55b4d3d0d3916e0f62458fa755e
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 5cf7c0a65a63ed372d2e5a26d8d9c5bbbf36ae43
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082265"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140576"
 ---
 # <a name="analyze-keyboard-support-on-forms-using-the-devtools"></a>使用 DevTools 分析表单上的键盘支持
 
@@ -24,9 +24,9 @@ ms.locfileid: "12082265"
 
 <!-- 1. Inspect tool: Accessibility section: keyboard-focusable row -->
 
-1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
+1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  选择**** DevTools 左上角的"检查 \ (检查图标 \) "按钮，使按钮突出显示为 (![ ](../media/inspect-icon.msft.png) 蓝色) 。
+1.  选择**** DevTools (左上角的"检查) 检查图标按钮，以便该按钮以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
 
 1.  将鼠标悬停在 **50**个 **、100**个和 **200 个"支持** "按钮上。  The Inspect tool appears on the webpage， as an overlay.  " **检查"覆盖** 层的可键盘聚焦行显示，没有一个"支持"金额按钮可通过键盘访问，如带对角线的灰色圆圈所示。  按钮没有名称，并且具有 其角色，因为它们是元素，这意味着辅助技术无法访问 `generic` `div` 按钮。
 
@@ -59,8 +59,8 @@ ms.locfileid: "12082265"
 
 1.  在 DOM 树中仍选择 元素后，选择"样式"选项卡右边的"事件侦听器"选项卡，然后 `<input id="freedonation" class="smallinput">` 展开******** `click` 事件侦听器。
 
-    :::image type="complex" source="../media/a11y-testing-event-handlers-on-button.msft.png" alt-text="显示使表单正常工作的 JavaScript 位置的 Event 侦听器工具" lightbox="../media/a11y-testing-event-handlers-on-button.msft.png":::
-        显示使表单正常工作的 JavaScript 位置的 Event 侦听器工具
+    :::image type="complex" source="../media/a11y-testing-event-handlers-on-button.msft.png" alt-text="显示使表单正常工作的 JavaScript 在哪里的 Event 侦听器工具" lightbox="../media/a11y-testing-event-handlers-on-button.msft.png":::
+        显示使表单正常工作的 JavaScript 在哪里的 Event 侦听器工具
     :::image-end:::
 
 1.  选择 `buttons.js:18` 链接。  将 **打开"** 源"工具，显示应用的 JavaScript。
@@ -93,8 +93,3 @@ donations.addEventListener('click', e => {
 ## <a name="see-also"></a>另请参阅
 
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "辅助功能测试演示网页|GitHub"

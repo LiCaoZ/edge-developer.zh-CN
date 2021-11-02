@@ -7,28 +7,28 @@ ms.date: 03/30/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， 开发工具， 本地化， loc， 语言
-ms.openlocfilehash: 18df3c803d43631a3d4fef6e201289f9b19315bb
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: cb460018890843243a7b4e3008eeea1b0331bbe1
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083392"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141528"
 ---
 # <a name="change-devtools-language-settings"></a>更改 DevTools 语言设置
 
-默认情况下，如果开发人员工具是当前支持的十种语言 \ (之一，则你的开发人员工具与你的浏览器语言匹配) 。
+默认情况下，如果开发人员工具是当前支持的十种语言之一，则你的开发人员工具与浏览器语言 (英语语言) 。
 
 :::row:::
    :::column span="2":::
-      中文 \ (Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
+      简 (中文) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
    :::column-end:::
    :::column span="2":::
-      中文 \ (繁体\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
+      繁体 (中文) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
-      法语 –&#231;英语
+      法语 –&#231;语
    :::column-end:::
    :::column span="2":::
       德语 - 德语

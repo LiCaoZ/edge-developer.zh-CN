@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
-ms.openlocfilehash: dcc7d0e4b6796bb21799d862bd6a8615a6464213
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 276b2390d40a884f73429af0d60f7bcc034ac382
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108057"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140597"
 ---
 # <a name="inspect-css-grid"></a>检查 CSS 网格
 
@@ -23,10 +23,14 @@ ms.locfileid: "12108057"
 *   [水果盒][JecFyiDemoCssGridFruit]
 *   [小吃盒][JecFyiDemoCssGridSnack]
 
+
+<!-- ====================================================================== -->
 ## <a name="before-you-begin"></a>开始之前
 
 CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网格布局指南][MdnCssGridLayout]开始了解 CSS 网格和许多功能。
 
+
+<!-- ====================================================================== -->
 ## <a name="discover-css-grids"></a>探索 CSS 网格
 
 如果页面上的 HTML 元素应用了 `display: grid` 或 `display: inline-grid`，则“[元素][DevtoolsGuideOpen]”面板中该元素的旁边会显示一个 `grid` 徽章。
@@ -54,6 +58,8 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
 
 <!--todo: @zoher verify the details for each of the sub-sections.  -->
 
+
+<!-- ====================================================================== -->
 ## <a name="overlay-display-settings"></a>叠加层显示设置
 
 “**叠加层显示设置**”由以下 2 部分组成。
@@ -63,16 +69,16 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
     | 线条选项 | 详细信息 |
     |:--- |:--- |
     | **隐藏线条标签** | 隐藏每个网格叠加层的线条标签。 |
-    | **显示线条编号** | 显示每个网格叠加层的线条编号（默认选中）。 |
+    | **显示线条编号** | 显示默认选中的每个网格覆盖层 (行) 。 |
     | **显示线条名称** | 显示每个网格叠加层的线条名称（倘若提供了名称）。 |
 
 *  选中以下选项旁边的复选框。
 
     | 选项 | 详细信息 |
     |:--- |:--- |
-    | **显示轨道大小**  | 显示（或隐藏）轨道的大小。 |
-    | **显示区域名称** | 显示（或隐藏）区域的名称（倘若提供了名称）。 |
-    | **延伸网格线** | 显示（或隐藏）沿每个轴的网格尺寸延伸。  默认情况下，网格线仅在设置了 `display: grid` 或 `display: inline-grid` CSS 的元素内显示。 |
+    | **显示轨道大小**  | 显示 (或) 轨的大小。 |
+    | **显示区域名称** | 当 (时) 区域的名称或隐藏区域名称。 |
+    | **延伸网格线** | 显示 (或隐藏) 沿每个轴的网格尺寸的扩展。  默认情况下，网格线仅在设置了 `display: grid` 或 `display: inline-grid` CSS 的元素内显示。 |
 
 以下各节提供了每个**叠加层显示设置**的详细信息。
 
@@ -114,7 +120,7 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
 
 | 大小 | 详细信息 |
 |:--- |:--- |
-| **创作大小** | 样式表中定义的大小（如果未定义则忽略）。 |
+| **创作大小** | 如果尚未定义样式表 (，则省略) 。 |
 | **计算大小** | 屏幕上的实际大小。 |
 
 在演示中，`snack-box` 列大小在 `grid-template-columns:1fr 2fr;` CSS 中定义。  因此，列线条标签显示了创作大小和计算大小。
@@ -151,6 +157,8 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
    **延伸网格线**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="grid-overlays"></a>网格叠加层
 
 “**网格叠加层**”部分包含页面上存在的网格列表，每个网格都带有一个复选框以及各种选项。
@@ -176,7 +184,7 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
 
 ### <a name="highlight-the-grid"></a>突出显示网格
 
-若要在“**元素**”工具中突出显示 HTML 元素并在网页上滚动到该元素，请选择“**在‘元素’面板中显示元素**”（![“在‘元素’面板中显示元素”图标](../media/show-element-in-element-panel-icon.msft.png)）图标。
+若要在 **"** 元素"工具中突出显示 HTML 元素并滚动到网页上，请选择"**** 元素"面板中的"显示元素" ("显示元素"面板图标中的") ![ ](../media/show-element-in-element-panel-icon.msft.png) 图标"。
 
 :::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="突出显示网格" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
    突出显示网格
@@ -196,7 +204,7 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/css/grid)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/css/grid) ，由 [Jecelyn Yeen][JecelynYeen] 和开发人员 (Chrome DevTools) 。
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

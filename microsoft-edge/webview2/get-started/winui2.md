@@ -8,21 +8,22 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、winui 应用、winui、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
-ms.openlocfilehash: 3980e5e511492d8bfa81cb0fd719a694fed67fd0
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: db555d65b9e2527fd0ee48b4b8a047c73af1edb1
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083546"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140198"
 ---
 # <a name="get-started-with-webview2-in-winui-2-apps-public-preview"></a>WinUI 2 应用中的 WebView2 入门 (公共预览) 
 
-本文将开始创建你的第一个 WebView2 应用，并了解 WebView2 的主要功能。 有关单个 WebView2 API 的信息，请导航到["Microsoft Edge WebView2 API 参考"，](../webview2-api-reference.md)然后选择 WinRT 引用链接。
+本文将开始创建你的第一个 WebView2 应用，并了解 WebView2 的主要功能。 有关单个 WebView2 API 的信息，请导航到["Microsoft Edge WebView2 API](../webview2-api-reference.md)参考"，然后选择 WinRT 引用链接。
 
 > [!NOTE]
 > WinUI 2 程序包依赖预发布 WebView2 程序包。  为了完全兼容 API，请使用预览浏览器通道作为运行时 (，即预览版的 Beta、Dev 或 Canary Microsoft Edge) 。
 
 
+<!-- ====================================================================== -->
 ## <a name="step-1-install-visual-studio"></a>步骤 1\：安装Visual Studio
 
 1.  安装Visual Studio版本 16.9 或更高版本。  可以接受默认值。
@@ -30,9 +31,10 @@ ms.locfileid: "12083546"
 1.  默认情况下，Visual Studio代码编辑器中不会显示行号。  若要启用行号，请选择"工具 **""**  >  **选项**  >  **""文本编辑器**  >  **""所有语言**  >  **""行号"。**  然后选择"**确定"。**
 
 
+<!-- ====================================================================== -->
 ## <a name="step-2-install-workloads"></a>步骤 2\：安装工作负载
 
-1.  在Visual Studio"中，选择 **"工具**  >  **""获取工具和功能"。**  将**Visual Studio 安装程序**窗口。
+1.  在Visual Studio中，选择 **"工具**  >  **""获取工具和功能"。**  将**Visual Studio 安装程序**窗口。
 
 1.  在"**工作负载"选项卡**上，选择 **".NET 桌面开发"。**
 
@@ -48,15 +50,16 @@ ms.locfileid: "12083546"
 1.  选择" **修改"** 按钮。  Visual Studio安装所选功能。
 
 
+<!-- ====================================================================== -->
 ## <a name="step-3-create-a-uwp-app"></a>步骤 3\：创建 UWP 应用
 
-1.  在Visual Studio中，选择"**文件**  >  **""新建**  >  **Project"。**  或使用项目的启动屏幕Visual Studio，然后选择创建新**项目**。  将显示 **"新建项目** "对话框。
+1.  在Visual Studio中，选择"**文件**  >  **""新建**  >  **Project"。**  或使用项目的启动屏幕Visual Studio，然后选择**创建新项目**。  将显示 **"新建项目** "对话框。
 
 1.  在"**所有语言**"下拉列表中，选择 **"C#"。**
 
 1.  在"**所有平台"** 下拉列表中，选择 **"Windows"。**
 
-1.  在"**所有项目类型"** 下拉列表中，选择 **"UWP"。**  选择筛选器后，将列出几种类型的应用模板。
+1.  在"**所有项目类型"** 下拉列表中，选择 **"UWP"。**  选择筛选器后，将列出多种类型的应用模板。
 
 1.  在应用模板列表中，选择"空白**应用 (通用Windows) "。 **
 
@@ -68,8 +71,8 @@ ms.locfileid: "12083546"
 
 1.  在 **"Project**名称"文本框中，输入项目名称，例如 `UWPSampleProject` 。
 
-    :::image type="complex" source="media/winui2-getting-started-config-new-project.png" alt-text="&quot;配置新项目&quot;对话框的&quot;空白应用 (通用Windows) &quot;" lightbox="media/winui2-getting-started-config-new-project.png":::
-       "**为空白应用配置**新项目"对话框 (**通用Windows) **
+    :::image type="complex" source="media/winui2-getting-started-config-new-project.png" alt-text="&quot;配置新项目&quot;对话框用于&quot;空白应用 (通用Windows) &quot;" lightbox="media/winui2-getting-started-config-new-project.png":::
+       "**为空白应用配置**新项目"对话框** (通用Windows) **
     :::image-end:::
 
 1.  选择" **创建"** 按钮。  将显示 **"新建通用Windows平台Project**对话框。
@@ -87,6 +90,7 @@ ms.locfileid: "12083546"
 :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## <a name="step-4-install-the-winui-2-nuget-package"></a>步骤 4\：安装 WinUI 2 NuGet包
 
 1.  右键单击"解决方案资源管理器"中的项目，然后选择"管理NuGet**包"。**
@@ -95,10 +99,10 @@ ms.locfileid: "12083546"
 
 1.  选中 **"包括预发布"** 复选框。
 
-1.  在"**搜索"** 框中，输入 `Microsoft.UI.Xaml` ，然后选择 **"Microsoft.UI.Xaml"。**  确保"**版本"** 是最新的预发行版本，然后选择"安装 **"。**
+1.  在"**搜索"** 框中，输入 `Microsoft.UI.Xaml` ，然后选择 **"Microsoft.UI.Xaml"。**  确保"**版本"** 是最新的预发布，然后选择"安装 **"。**
 
-    :::image type="complex" source="media/winui2-nuget-package.msft.png" alt-text="程序包NuGet包管理器" lightbox="media/winui2-nuget-package.msft.png":::
-       程序包NuGet包管理器
+    :::image type="complex" source="media/winui2-nuget-package.msft.png" alt-text="NuGet包管理器" lightbox="media/winui2-nuget-package.msft.png":::
+       NuGet包管理器
     :::image-end:::
 
     将显示 **"预览** 更改"对话框。  选择" **确定"** 按钮。  请注意，WebView2 SDK 依赖项将和 WinUI 2 一起安装。
@@ -110,6 +114,7 @@ ms.locfileid: "12083546"
 <!-- note: install halted after only WinUI 2 component, it didn't seem to install WebView2 even though that was the 2nd item listed.  assume that's ok now on my machine. -->
 
 
+<!-- ====================================================================== -->
 ## <a name="step-5-instantiate-the-webview2-control-in-xaml-code"></a>步骤 5\：在 XAML 代码中实例化 WebView2 控件
 
 ### <a name="add-the-project-reference-for-the-webview2-control"></a>添加 WebView2 控件的项目引用
@@ -128,7 +133,7 @@ ms.locfileid: "12083546"
     <control:WebView2 x:Name="wv2" Source="https://bing.com"/>
     ```
 
-1.  保存文件。  在 `MainPage.xaml` 代码编辑器中的文件上方，将显示 WebView2 内容的预览。
+1.  保存文件。  在 `MainPage.xaml` 代码编辑器中的文件上方，显示 WebView2 内容的预览。
 
     :::image type="complex" source="media/winui2-getting-started-preview-webview2-content.png" alt-text="WebView2 内容的预览" lightbox="media/winui2-getting-started-preview-webview2-content.png":::
        WebView2 内容的预览
@@ -142,10 +147,10 @@ ms.locfileid: "12083546"
        网格在调试过程中暂时显示
     :::image-end:::
 
-1.  片刻之后，应用窗口在 WebUI 2 的 WebView2 控件中显示 必应.com 网站。
+1.  片刻之后，应用窗口在 WebUI 2 必应 WebView2 控件中显示 必应.com 网站。
 
-    :::image type="complex" source="media/winui2-getting-started-webview2-with-content.png" alt-text="在 WebView2 控件中显示 必应.com 网站的应用窗口" lightbox="media/winui2-getting-started-webview2-with-content.png":::
-       在 WebView2 控件中显示 必应.com 网站的应用窗口
+    :::image type="complex" source="media/winui2-getting-started-webview2-with-content.png" alt-text="在 WebView2 控件必应.com 网站的应用窗口" lightbox="media/winui2-getting-started-webview2-with-content.png":::
+       在 WebView2 控件必应.com 网站的应用窗口
     :::image-end:::
 
 1.  In Visual Studio， on the **Debug** menu， select **Stop Debugging**.  应用程序窗口关闭。

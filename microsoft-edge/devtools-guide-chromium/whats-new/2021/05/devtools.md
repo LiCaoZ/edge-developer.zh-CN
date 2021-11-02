@@ -7,21 +7,22 @@ ms.date: 06/02/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 4f24d04e8c1e99890d4f1678c667dfc5ca10340c
-ms.sourcegitcommit: 54f9566aa935fb853215c9b6f995fa0c98f3261f
+ms.openlocfilehash: 9c2849a80b178d2ab9f279b44243b0e3ad43d687
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "12103396"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140814"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-92"></a>DevTools 中的新增功能 (Microsoft Edge 92)
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
 > [!TIP]
-> **Microsoft Build 2021**会议于 5 月 25-27 日召开。  下面是来自 Build 关于 DevTools 最新消息的视频：[Microsoft Edge｜平台现状][YoutubeEdgeStateOfThePlatform] - Microsoft Edge 为开发人员提供了具有吸引力和一致性的平台。  随着旧版浏览器逐步退出支持，Edge 即将成为 Microsoft 在或更高版本中唯一Windows 10浏览器。  加入我们，了解有关 Edge 平台、工具和 Web 应用的最新信息。
+> **Microsoft Build 2021**会议于 5 月 25-27 日召开。  下面是来自 Build 关于 DevTools 最新消息的视频：[Microsoft Edge｜平台现状][YoutubeEdgeStateOfThePlatform] - Microsoft Edge 为开发人员提供了具有吸引力和一致性的平台。  随着旧版浏览器逐步退出支持，Edge 即将成为 Microsoft 或更高版本上唯一Windows 10浏览器。  加入我们，了解有关 Edge 平台、工具和 Web 应用的最新信息。
 
 
+<!-- ====================================================================== -->
 ## <a name="the-close-button-is-no-longer-hidden-when-devtools-is-narrow"></a>当 DevTools 变窄时，“关闭”按钮不再隐藏
 
 <!-- Title: DevTools is now easier to close -->
@@ -34,6 +35,7 @@ ms.locfileid: "12103396"
 :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## <a name="add-tools-quickly-with-the-new-more-tools-button"></a>使用新的“更多工具”按钮快速添加工具
 
 <!-- Title: Add tools quickly with the new More Tools button -->
@@ -54,6 +56,7 @@ ms.locfileid: "12103396"
 :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## <a name="improvements-for-hovering-selecting-and-closing-tools"></a>悬停、选择、关闭工具的改进
 
 <!-- Title: Improvements to tab interactions -->
@@ -88,6 +91,7 @@ ms.locfileid: "12103396"
 我们还通过向主工具栏和抽屉工具栏添加“[更多工具菜单](#add-tools-quickly-with-the-new-more-tools-button)”，简化了重新添加已关闭的工具的操作。
 
 
+<!-- ====================================================================== -->
 ## <a name="better-support-for-screen-readers-in-the-console"></a>更好地支持控制台中的屏幕阅读器
 
 <!-- Title: Better screen reader support in the Console -->
@@ -107,6 +111,7 @@ ms.locfileid: "12103396"
 :::row-end:::
 
 
+<!-- ====================================================================== -->
 ## <a name="source-order-viewer"></a>源订单查看器
 
 <!--  Title: Source Order Viewer -->
@@ -125,6 +130,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1094406][CR1094406]。
 
 
+<!-- ====================================================================== -->
 ## <a name="user-agent-client-hints-for-devices-in-the-network-conditions-tab"></a>网络条件选项卡中设备的用户代理客户端提示
 
 <!--  Title: User-Agent Client Hints -->
@@ -141,6 +147,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1174299][CR1174299]。
 
 
+<!-- ====================================================================== -->
 ## <a name="microsoft-edge-developer-tools-for-visual-studio-code-version-118"></a>适用于 Visual Studio Code 版本 1.1.8 的 Microsoft Edge 开发人员工具
 
 [适用于 Visual Studio Code 的 Microsoft Edge 开发人员工具][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]针对 Microsoft Visual Studio Code 的扩展版本 1.1.8 自上一个版本以来有以下更改。  Microsoft Visual Studio Code 会自动更新扩展。  要手动更新到版本 1.1.8，请导航至“[手动更新扩展][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]”。
@@ -163,6 +170,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 有关详细信息，请导航至[使用工具][GithubIoDevToolsUsing]。
 
 
+<!-- ====================================================================== -->
 ## <a name="announcements-from-the-chromium-project"></a>来自 Chromium 项目的公告
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
@@ -274,6 +282,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 有关交集观察程序的详细信息，请导航至[信任良好，观察效果更好：交集观察程序 v2][WebDevIntersectionObserverV2]。  有关使用火形图的信息，请导航到[分析性能记录][DevtoolsEvaluatePerfRefAnalyzeAPerfRecording]。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1199137][CR1199137]。
 
 
+<!-- ====================================================================== -->
 ## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道
 
 如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
@@ -312,11 +321,11 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-92)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。
+> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-92) ，由 [Jecelyn Yeen][JecelynYeen] 和开发人员 (Chrome DevTools) 。
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelynyeen

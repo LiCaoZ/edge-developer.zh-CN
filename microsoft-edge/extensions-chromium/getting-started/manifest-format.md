@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， 扩展， mv2， mv3， 清单
-ms.openlocfilehash: 98312640b5bdbe1c2e976624f69bf97aa280aba0
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 294a43a2f963ca4b32efaa928c74f147391fcd0b
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12107945"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139883"
 ---
 # <a name="manifest-file-format-for-extensions"></a>扩展名的清单文件格式
 
@@ -25,6 +25,7 @@ ms.locfileid: "12107945"
 扩展的格式 `manifest.json` 正在从清单 V2 移动到清单 V3。  此处显示了这两种格式。  若要将清单 V2 扩展迁移到清单 V3，请导航到准备将扩展从[清单 v2 更新到 v3。][MigrateToMV3]
 
 
+<!-- ====================================================================== -->
 ## <a name="format-of-manifestjson-for-extensions-using-manifest-v3"></a>使用清单 V3 的扩展的 manifest\.json 格式
 
 以下代码显示了清单 V3 程序包中扩展支持的 `manifest.json` 字段。
@@ -110,6 +111,8 @@ ms.locfileid: "12107945"
 }
 ```
 
+
+<!-- ====================================================================== -->
 ## <a name="format-of-manifestjson-for-extensions-using-manifest-v2"></a>使用清单 V2 的扩展的 manifest\.json 格式
 
 以下代码显示了清单 V2 包中支持的扩展字段 `manifest.json` 。

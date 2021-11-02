@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、edge、ICoreWebView2、ICoreWebView2Controller、Chrome DevTools 协议
-ms.openlocfilehash: 4837c609ecef19f359ea342598fa07af50f6dc75
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: bba5e3e2cb425effadd3d7cd17c6fdd550f80237
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083399"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139729"
 ---
 # <a name="use-the-chrome-devtools-protocol-in-webview2"></a>在 WebView2 中使用 Chrome DevTools 协议
 
-[Chrome DevTools 协议][GitHubChromedevtoolsDevtoolsProtocol]提供用于检测、检查、调试和配置文件的 API Chromium基于浏览器。  Chrome DevTools 协议是开发工具Microsoft Edge的基础。  对 WebView2 平台中未实现的功能使用 Chrome DevTools 协议。
+Chrome [DevTools 协议][GitHubChromedevtoolsDevtoolsProtocol]提供用于检测、检查、调试和配置文件Chromium浏览器的 API。  Chrome DevTools 协议是开发工具Microsoft Edge的基础。  对 WebView2 平台中未实现的功能使用 Chrome DevTools 协议。
 
 若要在 WebView2 应用中使用 Chrome DevTools 协议 API，请执行下列任一操作：
 
-*   安装并使用[Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview) ][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] NuGet 包 \ (.NET\) 。
+*   安装并使用[Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview) NuGet][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension]包 (.NET) 。
 *   运行下列方法之一。
     *   [.NET：CallDevToolsProtocolAsync][DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString] [、GetDevToolsProtocolEventReceiver][DotnetApiMicrosoftWebWebview2CoreCorewebview2GetdevtoolsprotocoleventreceiverViewWebview2Dotnet1077444]
     *   Win32  [C/C++：CallDevToolsProtocolMethod][Webview2ReferenceWin32Icorewebview2ViewWebview21077444Calldevtoolsprotocolmethod] [、ICoreWebView2DevToolsProtocolEventReceiver][Webview2ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverViewWebview21077444]
@@ -41,7 +41,7 @@ ms.locfileid: "12083399"
 
 若要创建 `HTML file` 以查找地理位置，请完成以下操作。
 
-1.  打开Visual Studio Code \ (或你选择的 IDE\) 。
+1.  打开Visual Studio Code (选择的任何 IDE 或 IDE) 。
 1.  创建新 `.html` 文件。
 1.  将以下代码段复制并粘贴到新 `.html` 文件中。
 
@@ -111,7 +111,7 @@ ms.locfileid: "12083399"
 
 使用 NuGet 下载 `Microsoft.Web.WebView2.DevToolsProtocolExtension` 。  若要安装程序包，请完成以下操作。
 
-1.  选择**Project**  >  **管理NuGet程序包**  >  **浏览"。**
+1.  选择 **"Project**  >  **管理NuGet程序包**  >  **浏览"。**
 1.  键入 `Microsoft.Web.WebView2.DevToolsProtocolExtension` 并选择 **"Microsoft.Web.WebView2.DevToolsProtocolExtension**  >  **安装"。**
 
 :::image type="complex" source="./media/cdp-nuget.png" alt-text="确保 Microsoft.Web.WebView2.DevToolsProtocolExtension 显示在Visual Studio NuGet 程序包管理器" lightbox="./media/cdp-nuget.png":::
@@ -173,9 +173,9 @@ ms.locfileid: "12083399"
 
 若要请求 WebView2 平台功能，请在 [WebView2Feedback][GithubMicrosoftedgeWebview2feedback]存储库输入新问题。
 
-若要提交有关 Chrome DevTools 协议的 bug，请提交错误报告Chromium [Bug 数据库][ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform]。
+若要提交有关 Chrome DevTools 协议的 bug，在错误数据库中Chromium [Bug 报告][ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform]。
 
-Chrome DevTools 协议由开放源代码Chromium维护，而不是由 Microsoft Edge WebView2 团队维护。
+Chrome DevTools 协议由开源开发人员项目Chromium，而不是由 Microsoft Edge WebView2 团队维护。
 
 
 <!-- ====================================================================== -->
@@ -188,7 +188,7 @@ Chrome DevTools 协议由开放源代码Chromium维护，而不是由 Microsoft 
 <!-- ====================================================================== -->
 <!-- links -->
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2GetdevtoolsprotocoleventreceiverViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver?view=webview2-dotnet-1.0.774.44&preserve-view=true "CoreWebView2.GetDevToolsProtocolEventReceiver (String) 方法 |Microsoft Docs"
-[DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString]: /dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync?view=webview2-dotnet-1.0.774.44&preserve-view=true#Microsoft_Web_WebView2_Core_CoreWebView2_CallDevToolsProtocolMethodAsync_System_String_System_String_ "CoreWebView2.CallDevToolsProtocolMethodAsync (String， String) 方法 |Microsoft Docs"
+[DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString]: /dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync?view=webview2-dotnet-1.0.774.44&preserve-view=true#Microsoft_Web_WebView2_Core_CoreWebView2_CallDevToolsProtocolMethodAsync_System_String_System_String_ "CoreWebView2.CallDevToolsProtocolMethodAsync (String， String) Method |Microsoft Docs"
 
 [Webview2ReferenceWin32Icorewebview2ViewWebview21077444Calldevtoolsprotocolmethod]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.774.44&preserve-view=true#calldevtoolsprotocolmethod "CallDevToolsProtocolMethod - 接口 ICoreWebView2 |Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverViewWebview21077444]: /microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-1.0.774.44&preserve-view=true "interface ICoreWebView2DevToolsProtocolEventReceiver |Microsoft Docs"

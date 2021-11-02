@@ -1,5 +1,5 @@
 ---
-description: 如何将不同的颜色主题应用到 Microsoft Edge Tools。
+description: 如何将不同的颜色主题应用到 Microsoft Edge DevTools。
 title: 将颜色主题应用到 DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 08/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 27bdc38ba0ff426ece03023611cd16c6e1224e6c
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: b4dee9d08eb3a8094473476386bf2bb76d4dc8fb
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082398"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139694"
 ---
 <!-- Copyright Kayce Basques
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,17 +33,18 @@ ms.locfileid: "12082398"
 :::image-end:::
 
 > [!NOTE]
-> 在[93 Microsoft Edge][WhatsNew93]之前，DevTools 只有浅色和深色主题。
+> 在 Microsoft Edge [93][WhatsNew93]之前，DevTools 只有浅色和深色主题。
 
 本文介绍更改 DevTools 的外观。  若要改为更改开发中网页的显示方式，请导航到在呈现的页面中模拟深色 [或浅色方案][AccessibilityPreferredColorSchemeSimulation]。
 
 
+<!-- ====================================================================== -->
 ## <a name="available-themes"></a>可用主题
 
 默认情况下，DevTools 主题设置为系统首选项 (**** 也称为**系统首选颜色主题**) 。  如果你的操作系统设置为浅色主题，DevTools 将使用 **浅色+** 主题。  如果你的操作系统设置为深色主题，DevTools 将使用 **深色+** 主题。  但是，你可以将 DevTools 更改为任何其他主题，以便当将操作系统设置为浅色或深色主题时，DevTools 不会受到影响。
 
 浅色主题：
-- 浅色+ (默认) 
+- 浅色+ (默认值) 
 - Chromium浅色
 - 安静光
 - 太阳光
@@ -59,12 +60,14 @@ ms.locfileid: "12082398"
 - 浅色深
 - 明天晚上蓝色
 
+
+<!-- ====================================================================== -->
 ## <a name="changing-the-color-theme-from-settings"></a>更改颜色主题设置
 
-1.  打开 DevTools，**然后选择设置 (** 齿轮图标) 。
+1.  打开 DevTools，然后选择设置 (齿轮图标) 。 ****
 
-    :::image type="complex" source="./media/setting-button.png" alt-text="The 设置 (gear) icon" lightbox="./media/setting-button.png":::
-       The**设置 (** gear) icon
+    :::image type="complex" source="./media/setting-button.png" alt-text="&quot;设置 (齿轮) 图标" lightbox="./media/setting-button.png":::
+       The**设置** (gear) icon
     :::image-end:::
 
 1.  选择 **首选项**，然后在"外观 **"** 部分，从"主题"下拉列表 **中选择** 主题。
@@ -74,6 +77,7 @@ ms.locfileid: "12082398"
     :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## <a name="changing-the-color-theme-from-the-command-menu"></a>从命令菜单更改颜色主题
 
 若要使用命令菜单更改应用于 DevTools 的颜色主题：
@@ -104,5 +108,5 @@ ms.locfileid: "12082398"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。

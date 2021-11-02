@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 1ecac90e507fa30d5ae3603a687dace76abb26a6
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: bd3196bb9d62ebce53fa401ea811a87551ce96c9
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12081880"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140282"
 ---
 <!-- Copyright Kayce Basques
 
@@ -61,6 +61,8 @@ ms.locfileid: "12081880"
    运行代码片段后的网页
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="open-the-snippets-tab"></a>打开"代码段"选项卡
 
 左侧**导航**器窗格中的"代码**** 段"选项卡列出了您的代码段。  当您要编辑代码段时，您需要从"代码段"选项卡 **中打开** 它。
@@ -77,18 +79,20 @@ ms.locfileid: "12081880"
        在 **左侧** 打开" **页面"** 选项卡的"源"工具
     :::image-end:::
 
-1.  在左侧 **导航器** (窗格中，) 代码 **段"** 选项卡。 若要访问 **代码段** 选项，你可能需要选择更多 **选项卡** \ (![ 更多选项卡 ](../media/more-tabs-icon.msft.png) \) 。
+1.  在左侧**导航器** (窗格中，) 代码**段"** 选项卡。 若要访问 **"代码段**"选项，可能需要选择"更多**** 选项卡 (![ 更多选项卡 ](../media/more-tabs-icon.msft.png)) 。
 
 ### <a name="open-the-snippets-tab-with-the-command-menu"></a>使用命令菜单打开"代码段"选项卡
 
 1.  在 DevTools 中选择任何内容，以便 DevTools 具有焦点。
-1.  选择 `Control`+`Shift`+`P` \(Windows, Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开命令菜单。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令菜单。
 1.  键入 `Snippets` ，选择 **"显示代码**段"，然后选择 `Enter` 运行命令。
 
     :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="显示代码片段命令" lightbox="../media/javascript-search-show-snippets.msft.png":::
        **显示代码片段**命令
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="create-snippets"></a>创建代码片段
 
 ### <a name="create-a-snippet-through-the-sources-tool"></a>通过"源"工具创建代码段
@@ -104,7 +108,7 @@ ms.locfileid: "12081880"
 ### <a name="create-a-snippet-through-the-command-menu"></a>通过命令菜单创建代码片段
 
 1.  将光标停在 DevTools 中的任一位置。
-1.  选择 `Control`+`Shift`+`P` \(Windows, Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开命令菜单。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令菜单。
 1.  键入 `Snippet` ，选择 **创建新代码段**，然后选择 `Enter` 运行命令。
 
     :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="用于新建代码片段的命令" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
@@ -113,6 +117,8 @@ ms.locfileid: "12081880"
 
 若要使用自定义名称重命名新代码片段，请导航到[重命名代码片段](#rename-snippets)。
 
+
+<!-- ====================================================================== -->
 ## <a name="edit-snippets"></a>编辑代码片段
 
 1.  [打开"代码段"选项卡](#open-the-snippets-tab)。
@@ -123,24 +129,26 @@ ms.locfileid: "12081880"
     :::image-end:::
 
 1.  使用**代码编辑器**将 JavaScript 添加到代码片段。
-1.  当代码片段名称旁边出现星号时，表示有代码未保存。  选择 `Control`+`S` \(Windows, Linux\) 或 `Command`+`S` \(macOS\) 进行保存。
+1.  当代码片段名称旁边出现星号时，表示有代码未保存。  选择 `Control` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存。
 
     :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="代码片段名称旁边显示星号表示代码未保存" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
        代码片段名称旁边显示星号表示代码未保存
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="run-snippets"></a>运行代码片段
 
 ### <a name="run-a-snippet-from-the-sources-tool"></a>从源工具运行代码段
 
 1.  [打开"代码段"选项卡](#open-the-snippets-tab)。
 1.  选择要运行的代码片段的名称。  代码片段将在**代码编辑器**中打开。
-1.  选择 **"运行代码段** \ (![ 运行 ](../media/run-snippet-icon.msft.png) 代码段 \) "。
+1.  选择 **运行代码段** (![ 运行代码 ](../media/run-snippet-icon.msft.png) 段) 。
 
 ### <a name="run-a-snippet-with-the-command-menu"></a>使用命令菜单运行代码片段
 
 1.  将光标停在 DevTools 中的任一位置。
-1.  选择 `Control`+`Shift`+`P` \(Windows, Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开命令菜单。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令菜单。
 1.  删除 `>` 字符并在要运行的代码片段名称后键入 `!` 字符。
 
     :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="使用命令菜单运行代码片段" lightbox="../media/javascript-search-run-command.msft.png":::
@@ -149,22 +157,28 @@ ms.locfileid: "12081880"
 
 1.  选择 `Enter` 运行代码片段。
 
+
+<!-- ====================================================================== -->
 ## <a name="rename-snippets"></a>重命名代码片段
 
 1.  [打开"代码段"选项卡](#open-the-snippets-tab)。
-1.  将鼠标悬停在代码段名称上，打开上下文菜单 \ (右键单击\) ， **然后选择重命名**。
+1.  将鼠标悬停在代码段名称上，打开上下文菜单 (右键单击") "，然后选择"重命名 **"。**
 
+
+<!-- ====================================================================== -->
 ## <a name="delete-snippets"></a>删除代码片段
 
 1.  [打开"代码段"选项卡](#open-the-snippets-tab)。
-1.  将鼠标悬停在代码段名称上，打开上下文菜单 \ (右键单击\) ，然后选择"删除 **"。**
+1.  将鼠标悬停在代码段名称上，打开上下文菜单 (右键单击") "，然后选择"删除 **"。**
 
+
+<!-- ====================================================================== -->
 ## <a name="save-snippets"></a>保存代码段
 
 默认情况下，代码段仅在 DevTools 中可用，但您也可以将它们保存到磁盘。
 
 1.  [打开"代码段"选项卡](#open-the-snippets-tab)。
-1.  将鼠标悬停在代码段名称上，打开上下文菜单 \ (右键单击\) ，然后选择"另**存为"。**
+1.  将鼠标悬停在代码段名称上，打开上下文菜单 (右键单击") "，然后选择"另**存为"。**
 1.  当系统提示时，选择文件名和位置。
 
 
@@ -181,7 +195,7 @@ ms.locfileid: "12081880"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

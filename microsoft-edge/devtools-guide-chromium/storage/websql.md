@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 2daf4baf549659b8e3c5f9d03c42058dc8a7ab1e
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 7570063e1c5c93e7538613489a65eb6f0c44478f
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108407"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139792"
 ---
 <!-- Copyright Kayce Basques
 
@@ -34,6 +34,8 @@ ms.locfileid: "12108407"
 
 本指南将演示如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 检查 Web SQL 数据。
 
+
+<!-- ====================================================================== -->
 ## <a name="view-web-sql-data"></a>查看 Web SQL 数据
 
 1.  选择 **源**工具以打开**源**工具。  通常默认**清单**窗格打开。
@@ -54,10 +56,14 @@ ms.locfileid: "12108407"
        查看 Web SQL 表的数据
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="edit-web-sql-data"></a>编辑 Web SQL 数据
 
 如上文所述，在查看 Web SQL 表时不能编辑 Web SQL 数据。  但是，您可以通过编辑或删除表的 Web SQL 控制台运行语句。  导航到[运行 Web SQL 查询](#run-web-sql-queries)。
 
+
+<!-- ====================================================================== -->
 ## <a name="run-web-sql-queries"></a>运行 Web SQL 查询
 
 1.  选择数据库以打开该数据库的控制台。
@@ -67,13 +73,17 @@ ms.locfileid: "12108407"
        使用 Web SQL 控制台删除表中的行
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="refresh-a-web-sql-table"></a>刷新 Web SQL 表
 
 DevTools 不会实时更新表。  若要更新表中的数据，请完成以下操作。
 
 1.  [查看 Web SQL 表中的数据](#view-web-sql-data)。
-1.  选择**刷新** \(![Refresh](../media/refresh-icon.msft.png)\)。
+1.  Choose **Refresh (** ![ Refresh ](../media/refresh-icon.msft.png)) .
 
+
+<!-- ====================================================================== -->
 ## <a name="filter-out-columns-in-a-web-sql-table"></a>筛选 Web SQL 表中的列
 
 1.  [查看 Web SQL 表中的数据](#view-web-sql-data)。
@@ -83,6 +93,8 @@ DevTools 不会实时更新表。  若要更新表中的数据，请完成以下
        使用 **可见列**文本框减少显示的列数
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="delete-all-web-sql-data"></a>删除所有的 Web SQL 数据
 
 1.  打开**清除存储**窗格。
@@ -110,7 +122,7 @@ DevTools 不会实时更新表。  若要更新表中的数据，请完成以下
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/websql)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/websql)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

@@ -7,12 +7,12 @@ ms.date: 07/26/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 401f2d165f3bfdc1b979eef3ba0d2da7fcaba7db
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 53a8f3dad0943ae4b631d6f12e65141ba928bc06
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082104"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140527"
 ---
 <!-- Copyright Katherine Jackson
 
@@ -35,7 +35,7 @@ ms.locfileid: "12082104"
 本文是一系列教程的一部分，这些教程将指导你 Web 开发和开发工具Microsoft Edge基础知识。  通过实际构建自己的网站，可以获得实践体验。  在执行此操作之前，你不必完成前面的教程。  [设置代码将](#set-up-your-code) 演示如何进行设置。
 
 > [!NOTE]
-> 本教程专为绝对初学者设计，专注于 Web 开发 **的** 基础知识和使用 DevTools 进行 CSS 测试的基础知识。  如果你需要一个仅侧重于 DevTools 的教程，请导航到查看和 [更改 CSS 入门][DevtoolsCssIndex]。
+> 本教程专为绝对初学者设计，专注于 Web 开发 **的** 基础知识和使用 DevTools 进行 CSS 测试的基础知识。  如果你需要一个仅侧重于 DevTools 的教程，请导航到查看和 [更改 CSS 入门](../css/index.md)。
 
 在本教程的开头，您的网站应如下图所示。
 
@@ -49,6 +49,8 @@ ms.locfileid: "12082104"
    在本教程结束时，你的网站应该是什么样
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="goals"></a>目标
 
 按照本教程可更好地了解以下概念和任务。
@@ -59,21 +61,25 @@ ms.locfileid: "12082104"
 
 你正在构建一个真实网站。
 
+
+<!-- ====================================================================== -->
 ## <a name="prerequisites"></a>必备条件
 
 完成以下先决条件，然后再执行本教程。
 
-*   使用[入门完成 HTML][DevtoolsBeginnersHtml]和 DOM 的填写操作，或确保您已了解 HTML 和 DOM。
-*   下载 [Microsoft Edge][MicrosoftEdgeInsider] Web 浏览器。  以下教程使用一组内置于 Microsoft Edge 中的 Web 开发工具（称为 Microsoft Edge DevTools）。
+*   使用[入门完成 HTML](./html.md)和 DOM 的填写操作，或确保您已了解 HTML 和 DOM。
+*   下载 [Microsoft Edge](https://www.microsoftedgeinsider.com) Web 浏览器。  以下教程使用一组内置于 Microsoft Edge 中的 Web 开发工具（称为 Microsoft Edge DevTools）。
 
+
+<!-- ====================================================================== -->
 ## <a name="set-up-your-code"></a>设置代码
 
 若要创建网站，请首先执行以下步骤来设置代码。
 
 > [!NOTE]
-> 如果已完成系列的第一个教程，请跳到下一部分。  继续使用上一教程 HTML 和 [DOM 入门中的代码][DevtoolsBeginnersHtml]。
+> 如果已完成系列的第一个教程，请跳到下一部分。  继续使用上一教程 HTML 和 [DOM 入门中的代码](./html.md)。
 
-1.  打开 [源代码][GlitchCookedAmphibianIndex]。  当前选择的浏览器选项卡称为" **编辑"选项卡**。
+1.  打开 [源代码](https://glitch.com/edit/#!/cooked-amphibian?path=index.html)。  当前选择的浏览器选项卡称为" **编辑"选项卡**。
 
     :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text="编辑选项卡" lightbox="../media/beginners-css-setup1.msft.png":::
        " **编辑"** 选项卡
@@ -96,6 +102,8 @@ ms.locfileid: "12082104"
        实时 **选项卡**
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="understand-css"></a>了解 CSS
 
 **CSS** 是控制网页布局和样式的计算机语言。  下图是带边框的段落。
@@ -112,8 +120,10 @@ ms.locfileid: "12082104"
 </p>
 ```
 
-HTML 属性 `style="border: 1px dashed red; padding: 5px;"` 可能看起来是全新的。  其余部分看起来应该很熟悉。  如果没有，在尝试以下部分之前，请完成 HTML 和 [DOM][DevtoolsBeginnersHtml] 入门。
+HTML 属性 `style="border: 1px dashed red; padding: 5px;"` 可能看起来是全新的。  其余部分看起来应该很熟悉。  如果没有，在尝试以下部分之前，请完成 HTML 和 [DOM](./html.md) 入门。
 
+
+<!-- ====================================================================== -->
 ## <a name="add-inline-styles"></a>添加内联样式
 
 可以使用 **内联样式将** 样式应用于单个元素。
@@ -144,6 +154,8 @@ HTML 属性 `style="border: 1px dashed red; padding: 5px;"` 可能看起来是�
        现在，**主页**和**联系人**链接后面的背景颜色为蓝色
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="reuse-styles-on-a-single-page-with-internal-stylesheets"></a>在包含内部样式表的单个页面上重复使用样式
 
 在之前的代码段中，内联样式将样式应用于单个 `<p>` 标记。
@@ -266,6 +278,8 @@ li a {
        文本" **联系我"！** 现在字体与 **"主页"** 和 **"联系人"** 链接相同
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="experiment-with-devtools"></a>使用 DevTools 进行试验
 
 当你继续成为 Web 开发方面的专家时，你可能会发现 CSS 很复杂。  您可以编写一些不显示预期内容的代码。  Microsoft EdgeDevTools 通过实时在页面中显示更改来轻松进行试验。
@@ -274,13 +288,13 @@ li a {
 
 向现有规则集添加声明
 
-1.  将鼠标悬停在 **"主页"** 链接上，打开上下文菜单 \ (右键单击\) ，然后选择"检查 **"。**
+1.  将鼠标悬停在 **"主页"** 链接上，右键单击 (上下文菜单，) "检查 **"。**
 
     :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="检查主页链接" lightbox="../media/beginners-css-add1.msft.png":::
        检查主页链接
     :::image-end:::
 
-    DevTools 将在页面旁边打开。  代表"主页"链接的代码在 DOM 树中突出显示 `<a href="/">Home</a>` 为蓝色。  [HTML和DOM入门][DevtoolsBeginnersHtml]应该熟悉代码片段和预览。
+    DevTools 将在页面旁边打开。  代表"主页"链接的代码在 DOM 树中突出显示 `<a href="/">Home</a>` 为蓝色。  [HTML和DOM入门](./html.md)应该熟悉代码片段和预览。
 
     :::row:::
        :::column span="":::
@@ -335,7 +349,7 @@ li a {
 
 在 DevTools 中添加新规则集
 
-1.  Select **New Style Rule** \ (New Style Rule ![ ](../media/new-style-rule-icon.msft.png) \) which is next to **.cls**.  空的规则集将显示为 `a` 选择器。
+1.  Select **New Style Rule** (New Style Rule) which is next to ![ ](../media/new-style-rule-icon.msft.png) **.cls**.  空的规则集将显示为 `a` 选择器。
 
     :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="添加新规则" lightbox="../media/beginners-css-rule1.msft.png":::
        添加新规则
@@ -369,6 +383,8 @@ li a {
        将鼠标悬停在"主页"链接上以显示其绿色背景
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="reuse-styles-across-pages-with-external-stylesheets"></a>使用外部样式表跨页面重用样式
 
 在上一步中，您将以下代码段作为内部样式表添加到 `contact.html`。
@@ -478,6 +494,8 @@ li a {
        联系人页面
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="use-a-css-framework"></a>使用 CSS 框架
 
 **CSS 框架** 是由其他开发人员构建的样式集合，可更轻松地创建极具吸引力的网站。  框架提供了一组可以在页面元素上使用的样式，而不是自己定义样式。
@@ -595,34 +613,20 @@ li a {
        导航内容现在位于主内容的左侧
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 
 恭喜！你已完成！
 
 *   更好地进行 Web 开发的最好办法就是构建更多网站。  不要担心中断工作。  请一直玩得有趣，并尽可能学习。
-*   若要了解有关设置网页样式的信息，请导航到 CSS [简介][MDNCssFirstSteps]。
-*   若要详细了解如何在 DevTools 中试验 CSS，请导航入门[查看和更改 CSS。][DevtoolsCssIndex]
+*   若要了解有关设置网页样式的信息，请导航到 CSS [简介](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS)。
+*   若要了解有关如何在 DevTools 中试验 CSS 的更多信息，请导航到 [入门 Viewing and Changing CSS][DevtoolsCssIndex]。
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsBeginnersHtml]: ./html.md "适用于初学者的 DevTools：HTML 和 DOM |Microsoft Docs"
-[DevtoolsCssIndex]: ../css/index.md "查看和更改 CSS 入门 | Microsoft 文档"
-<!-- external links -->
-[MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge 预览体验成员"
-
-[GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index.html - 已准备的 amphibian |小故障"
-
-[MDNCssFirstSteps]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS "CSS 第一|MDN"
-
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，作者为 [Katherine Jackson][KatherineJackson] \ (技术作家，Chrome DevTools\) 。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，由 [来自](https://developers.google.com/web/resources/contributors#katherine-jackson) 技术编写器 (，Chrome DevTools) 。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[KatherineJackson]: https://developers.google.com/web/resources/contributors
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

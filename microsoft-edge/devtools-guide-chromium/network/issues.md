@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 7880a59f04a12718c9d9447725b9ebec95466200
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 5650be5a5cb8b997140eeaa5d1521993c380b15c
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083651"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141381"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -33,6 +33,8 @@ ms.locfileid: "12083651"
 
 若要了解**网络**工具的基础知识，请导航到[入门][NetworkPerformance]。
 
+
+<!-- ====================================================================== -->
 ## <a name="queued-or-stalled-requests"></a>请求排队或暂停
 
 **症状**
@@ -55,6 +57,8 @@ ms.locfileid: "12083651"
 *   使用 HTTP/2。  不要将域分片用于 HTTP/2。
 *   删除或延迟不必要的请求，以便提前下载关键请求。
 
+
+<!-- ====================================================================== -->
 ## <a name="slow-time-to-first-byte-ttfb"></a>第一字节时间 (TTFB) 缓慢
 
 **症状**
@@ -70,13 +74,15 @@ ms.locfileid: "12083651"
 **原因**
 
 *   客户端和服务器之间的连接速度很慢。
-*   服务器响应缓慢。  在本地托管服务器，以确定是连接速度慢还是服务器速度慢。  如果访问本地服务器时，第一字节时间\(TTFB\) 仍然缓慢，则表示是服务器速度慢。
+*   服务器响应缓慢。  在本地托管服务器，以确定是连接速度慢还是服务器速度慢。  如果您在访问本地服务器时仍 (到第一字节) TTFB，则服务器速度很慢。
 
 **修补程序**
 
 *   如果连接速度缓慢，请考虑在 CDN 上托管内容或更改托管提供者。
 *   如果服务器运行缓慢，请考虑优化数据库查询，同时实现缓存或修改服务器配置。
 
+
+<!-- ====================================================================== -->
 ## <a name="slow-content-download"></a>内容下载缓慢
 
 **症状**
@@ -104,7 +110,7 @@ ms.locfileid: "12083651"
 Do you have a network issue that should be added to this guide?
 
 *   Send a tweet to [@EdgeDevTools][MicrosoftEdgeTweet].
-*   Choose **Send Feedback** \(![Send Feedback](../media/smile-icon.msft.png)\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.
+*   Choose **Send Feedback** (![Send Feedback](../media/smile-icon.msft.png)) in the DevTools or select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS) to provide feedback or feature requests.
 *   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->
 
 
@@ -120,7 +126,7 @@ Do you have a network issue that should be added to this guide?
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> [此处](https://developers.google.com/web/tools/chrome-devtools/network/issues)可以找到原始页面，由 [Kayce Basques][KayceBasques] \（技术写作人员，Chrome DevTools \& Lighthouse\）和 [Jonathan Garbee][JonathanGarbee] \（Web技术的谷歌开发技术专家\）编写。
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/network/issues)由 (技术撰稿人[、Chrome][KayceBasques] DevTools \& Lighthouse) 和[House Garbee][JonathanGarbee] (Google Developer Expert for Web Technology) 创作。
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

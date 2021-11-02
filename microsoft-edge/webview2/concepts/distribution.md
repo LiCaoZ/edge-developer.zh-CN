@@ -8,18 +8,19 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: c8316ea2599980ad1af41808f9c2b3c45cf82298
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 3f76a4115accdbe709d31e29a5808765b21a1870
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108232"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139519"
 ---
 # <a name="distribute-a-webview2-app-and-the-webview2-runtime"></a>分发 WebView2 应用和 WebView2 运行时
 
 WebView2 应用依赖于客户端计算机上的 WebView2 运行时。  分发 WebView2 应用时，需要考虑如何将 WebView2 运行时分发到客户端计算机并更新它。
 
 
+<!-- ====================================================================== -->
 ## <a name="introduction-to-the-runtime-evergreen-distribution-and-fixed-version-distribution"></a>运行时、常青分发和固定版本分发简介
 
 ### <a name="the-webview2-runtime"></a>WebView2 运行时
@@ -42,7 +43,7 @@ WebView2 运行时是一个可再发行组件运行时，可用作 WebView2 __ (
 
 ### <a name="the-fixed-version-runtime-distribution-mode"></a>固定版本运行时分发模式
 
-在 _固定版本分发_ 模式下，下载特定版本的 WebView2 运行时，并随应用包中的 WebView2 应用一起打包它。  随应用打包的 WebView2 运行时仅由 WebView2 应用使用，客户端计算机上任何其他应用不会使用。
+在 _固定版本分发_ 模式下，下载特定版本的 WebView2 运行时，并随应用包中的 WebView2 应用一起打包它。  随应用打包的 WebView2 运行时仅由 WebView2 应用使用，而客户端计算机上任何其他应用不会使用。
 
 优点：
 *  你可以更加控制 WebView2 运行时的版本控制。  你知道哪些 WebView2 API 可用于你的应用，因为你控制哪个版本的 WebView2 运行时可用于你的应用。  你的应用无需测试是否有最新的 API。
@@ -53,9 +54,10 @@ WebView2 运行时是一个可再发行组件运行时，可用作 WebView2 __ (
 *  固定版本运行时无法通过使用安装程序进行安装。
 
 
+<!-- ====================================================================== -->
 ## <a name="understanding-the-options-at-the-runtime-download-page"></a>了解运行时下载页上的选项
 
-WebView2 页面的"下载[WebView2][Webview2Installer]运行时Microsoft Edge**提供了**几种用于将 WebView2 运行时分发到客户端计算机的选项。  了解此页的选项提供了一个很好的介绍，可帮助确定要使用哪种方法。
+[WebView2 页面的][Webview2Installer]"下载**WebView2 运行时"Microsoft Edge**提供了几种用于将 WebView2 运行时分发到客户端计算机的选项。  了解此页的选项提供了一个很好的介绍，可帮助确定要使用哪种方法。
 
 :::image type="complex" source="../media/runtime-distrib-options.png" alt-text="用于分发和更新 WebView2 运行时的选项" lightbox="../media/runtime-distrib-options.png":::
     用于分发和更新 WebView2 运行时的选项
@@ -65,7 +67,7 @@ WebView2 页面的"下载[WebView2][Webview2Installer]运行时Microsoft Edge**�
 
     *   指向引导程序的链接，使用从"获取链接"按钮 **获取** 的链接。  你的应用使用此链接以编程方式将引导程序下载到客户端并调用引导程序。  此方法无需将引导程序打包到你的应用中。  此方法依赖于 Microsoft 的 内容分发网络 (CDN) ，以获取引导程序。
 
-    *   使用引导程序 (**中的**"下载"按钮下载引导**** 程序) ，然后将引导程序与你的应用一起分发。  在此方法中，使用应用安装程序/更新程序或应用本身打包引导程序，并调用应用中包含的引导程序。  此方法可避免依赖 Microsoft CDN，以获取引导程序。
+    *   使用"引导程序 (部分中的"下载"按钮**** 下载引导程序) ，然后将引导程序与你的应用一起分发。 ****  在此方法中，使用应用安装程序/更新程序或应用本身打包引导程序，并调用应用中包含的引导程序。  此方法可避免依赖 Microsoft CDN，以获取引导程序。
 
 *  页面 **的"常青独立** 安装程序"部分提供大型的独立 Evergreen 安装程序，主要面向脱机用户。  在此方法中，使用应用安装程序/更新程序或应用本身打包独立安装程序，并调用 Evergreen Standalone 安装程序。  此方法可避免依赖 Microsoft CDN获取运行时。
 
@@ -91,9 +93,9 @@ WebView2 应用的生产版本只能将 WebView2 运行时用作支持 Web 平�
 
 #### <a name="microsoft-edge-stable-channel-isnt-supported-for-webview2"></a>Microsoft EdgeWebView2 不支持稳定渠道
 
-不允许 WebView2 应用将稳定渠道Microsoft Edge Web 平台。  此限制可防止 WebView2 应用的生产版本依赖浏览器。  WebView2 应用在生产期间无法依赖浏览器，原因如下。
+不允许 WebView2 应用将 Microsoft Edge Stable 渠道用作支持 Web 平台。  此限制可防止 WebView2 应用的生产版本依赖浏览器。  WebView2 应用在生产期间无法依赖浏览器，原因如下。
 
-*   Microsoft Edge用户设备上均存在此限制。  企业和教育中的许多设备都从 Windows Update 断开连接，或者不由 Microsoft 直接管理。  此类设备可能未Microsoft Edge安装。  要求 WebView2 应用的生产版本使用 WebView2 运行时，而不是Microsoft Edge避免使Microsoft Edge WebView2 应用的先决条件。
+*   Microsoft Edge用户设备上均存在此限制。  企业和教育中的许多设备均与 Windows 更新断开连接，或者不由 Microsoft 直接管理。  此类设备可能尚未Microsoft Edge安装。  要求 WebView2 应用的生产版本使用 WebView2 运行时，Microsoft Edge避免使Microsoft Edge WebView2 应用的先决条件。
 
 *   浏览器和应用具有不同的用例。  如果 WebView2 应用要求在客户端Microsoft Edge，这可能会导致 WebView2 应用出现意外的副作用。  例如，IT 管理员可以阻止从特定版本更新浏览器，以保持浏览器与内部网站兼容。  要求 WebView2 应用的生产版本使用 WebView2 运行时（而不是浏览器）可使 WebView2 应用保持常青，即使客户端管理员阻止了浏览器更新。
 
@@ -121,7 +123,7 @@ Evergreen WebView2 运行时将作为操作系统的一Windows 11一部分。 �
 
 设备上的所有 Evergreen 应用只需安装一次 Evergreen WebView2 运行时。  下载 [WebView2 运行时中][Webview2Installer] 提供了一些工具，可帮助你部署 Evergreen Runtime。
 
-*   对于联机客户端 _：WebView2 运行时引导_ 程序是一个小的 \ (大约 2 MB\) 安装程序。  WebView2 运行时引导程序从与用户设备体系结构匹配的 Microsoft 服务器下载并安装 Evergreen Runtime。
+*   对于联机客户端 _：WebView2_ 运行时引导程序是一个小程序 (大约 2 MB) 安装程序。  WebView2 运行时引导程序从与用户设备体系结构匹配的 Microsoft 服务器下载并安装 Evergreen Runtime。
     *   在 WebView2 应用的安装部分，链接到引导程序。  使用链接以编程方式下载引导程序;选择上面的 **下载页面上** 的"获取链接"按钮。
     *   或者，下载引导程序，然后使用 WebView2 应用打包它。
 
@@ -153,14 +155,14 @@ Evergreen WebView2 运行时将作为操作系统的一Windows 11一部分。 �
 
     *   或者，运行 [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] 并评估 `versionInfo` 是否是 `NULL` 。  `NULL` 指示未安装运行时。
 
-1.  如果未安装运行时，在应用设置过程中，使用从下载页面 (获取链接按钮中的链接****) 以编程方式下载 WebView2 运行时引导程序。
+1.  如果未安装运行时，在应用设置过程中，使用 (下载页面上的"获取链接"按钮中的链接****) 以编程方式下载 WebView2 运行时引导程序。
 
 1.  通过发出命令 从提升的进程或命令提示符调用 WebView2 运行时引导程序 `MicrosoftEdgeWebview2Setup.exe /silent /install` 。
 
 上述工作流具有多个优点：
 *   仅在需要时安装运行时。
 *   无需使用 WebView2 应用打包运行时安装程序。
-*   WebView2 运行时引导程序自动检测设备在 (体系结构) 安装匹配的 WebView2 运行时。
+*   WebView2 运行时引导程序自动检测设备在 (体系结构) ，然后安装匹配的 WebView2 运行时。
 *   运行时以静默方式安装。
 
 或者，你可以将 WebView2 运行时的 Evergreen Bootstrapper 打包到你的应用，而不是通过获取链接以编程方式按需下载引导程序。
@@ -201,9 +203,9 @@ Evergreen WebView2 运行时将作为操作系统的一Windows 11一部分。 �
 
 Web 在不断演变。  在常青分发模式下，WebView2 运行时在客户端上自动保持最新，以提供最新功能和安全修补程序。  如果使用 Evergreen 分发，为了确保 WebView2 应用与 Web 保持兼容，应设置测试基础结构。
 
-Microsoft Edge预览频道 \ (Beta、Dev 和 Canary\) 可快速了解 WebView2 运行时接下来将发生的内容。  定期针对预览Microsoft Edge WebView2 应用，并更新应用或报告[问题（如果][GithubMicrosoftedgeWebviewfeedback]出现问题）。  Canary 是推荐的预览频道，因为它以最快节奏提供，并且具有最新的 API。
+Microsoft Edge Beta、Dev 和 Canary (预览频道) 快速了解 WebView2 运行时接下来将发生的内容。  针对预览频道定期测试 WebView2 Microsoft Edge，如果出现问题，请更新应用或报告问题。 [][GithubMicrosoftedgeWebviewfeedback]  Canary 是推荐的预览频道，因为它以最快节奏提供，并且具有最新的 API。
 
-若要帮助你确定哪个频道正确，请导航到"Microsoft Edge[概述"。][DeployEdgeMicrosoftEdgeChannels]  可以在[测试Microsoft Edge][MicrosoftEdgeInsiderDownload]下载预览体验成员频道，并使用或环境变量指示测试 `regkey` 应用的通道首选项。
+若要帮助你确定哪个频道正确，请导航到"Microsoft Edge[概述"。][DeployEdgeMicrosoftEdgeChannels]  可以在[测试Microsoft Edge下载][MicrosoftEdgeInsiderDownload]预览体验成员频道，并使用或环境变量指示测试 `regkey` 应用的通道首选项。
 
 有关详细信息，请导航到 [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions]。  您还可以使用 WebDriver 自动执行 WebView2 测试，如自动执行和使用驱动程序测试[WebView2 Microsoft Edge中所述][HowToWebdriver]。
 
@@ -217,7 +219,7 @@ Microsoft Edge预览频道 \ (Beta、Dev 和 Canary\) 可快速了解 WebView2 �
 *   IT 管理员可以关闭 WebView2 运行时的更新，因为管理员可以控制其设备的更新。
 *   脱机的客户端不会收到更新的 WebView2 运行时。
 
-WebView2 运行时Microsoft Edge策略是分开的。  即使 IT 管理员已禁用 Microsoft _Edge_的自动更新，WebView2 __ 运行时仍将自动更新，除非管理员关闭运行时更新。  如果管理员禁用更新Microsoft Edge (更新，这有点) ，这不会影响客户端计算机上可用的 WebView2 API。
+WebView2 运行时Microsoft Edge和 WebView2 运行时的更新策略是分开的。  即使 IT 管理员已禁用 Microsoft _Edge_的自动更新，WebView2 __ 运行时仍将自动更新，除非管理员关闭运行时更新。  如果管理员禁用更新 Microsoft Edge (这有点) ，这不会影响客户端计算机上可用的 WebView2 API。
 
 有关详细信息，请导航到功能[检测以测试安装的运行时是否支持最近添加的 API。][Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]
 
@@ -245,9 +247,9 @@ WebView2 运行时Microsoft Edge策略是分开的。  即使 IT 管理员已禁
 
     *   对于 .NET，必须在 WebView2 属性生效 `Source` 之前指定环境。  对于 .NET，可以使用以下任一方法来指定环境：
 
-        *   设置 `CreationProperties` 元素 (\) [WPF][ReferenceWpfMicrosoftWebWebview2WpfWebview2Creationproperties] / [WinForms][ReferenceWinFormsMicrosoftWebWebview2WinFormsWebview2]\) `WebView2` 属性。  使用 `BrowserExecutableFolder` `CoreWebView2CreationProperties` \ ([WPF][ReferenceWpfMicrosoftWebWebview2WpfCorewebview2creationpropertiesCorewebview2creationproperties] / [WinForms][ReferenceWinFormsMicrosoftWebWebview2WinForms]\) 类中的成员指示固定版本二进制文件的路径。
+        *   设置 (`CreationProperties` [上的 WPF][ReferenceWpfMicrosoftWebWebview2WpfWebview2Creationproperties] / [WinForms][ReferenceWinFormsMicrosoftWebWebview2WinFormsWebview2]) 属性 `WebView2` 。  使用 `BrowserExecutableFolder` `CoreWebView2CreationProperties` [WPF][ReferenceWpfMicrosoftWebWebview2WpfCorewebview2creationpropertiesCorewebview2creationproperties] / [WinForms][ReferenceWinFormsMicrosoftWebWebview2WinForms] (中的成员) 指示固定版本二进制文件的路径。
 
-        *   或者，使用 `EnsureCoreWebView2Async` \ ([WPF][ReferenceWpfMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async] / [WinForms][ReferenceWinformsMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]\) 指定环境。  使用 `browserExecutableFolder` [CoreWebView2Environment.CreateAsync][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentCreateasync] 中的 参数指示固定版本二进制文件的路径。
+        *   或者，使用 `EnsureCoreWebView2Async` ([WPF][ReferenceWpfMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async] / [WinForms) ][ReferenceWinformsMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]指定环境。  使用 `browserExecutableFolder` [CoreWebView2Environment.CreateAsync][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentCreateasync] 中的 参数指示固定版本二进制文件的路径。
 
 1.  将固定版本二进制文件打包并随你的应用一起提供。  根据情况更新二进制文件。
 
@@ -310,7 +312,7 @@ WebView2 运行时Microsoft Edge策略是分开的。  即使 IT 管理员已禁
 [ConceptsVersioning]: ./versioning.md "了解浏览器版本和 WebView2 |Microsoft Docs"
 [HowToWebdriver]: ../how-to/webdriver.md "使用 Microsoft Edge 驱动程序自动执行并测试 WebView2 | Microsoft Docs"
 [Webview2ConceptsDevguideManageVersionsRuntime]: developer-guide.md#manage-new-versions-of-the-runtime "管理新版本的运行时|Microsoft Docs"
-[Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]: ../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis "功能检测，用于测试安装的运行时是否支持最近添加的 API - 了解 WebView2 SDK |Microsoft Docs"
+[Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]: ../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis "用于测试已安装的运行时是否支持最近添加的 API 的功能检测 - 了解 WebView2 SDK |Microsoft Docs"
 [StaticallylinktheWebView2loaderlibrary]: ../how-to/static.md "静态链接 WebView2 加载程序库|Microsoft Edge开发人员文档"
 <!-- external links -->
 [ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - 全局|Microsoft Docs"
@@ -318,10 +320,10 @@ WebView2 运行时Microsoft Edge策略是分开的。  即使 IT 管理员已禁
 
 [DeployEdgeMicrosoftEdgeChannels]: /deployedge/microsoft-edge-channels "频道Microsoft Edge概述|Microsoft Docs"
 
-[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentCreateasync]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync "CreateAsync - Microsoft.Web.WebView2.Core.CoreWebView2Environment |Microsoft Docs"
+[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentCreateasync]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync "CreateAsync - Microsoft.Web.WebView2.Core.CoreWebView2Environment 类|Microsoft Docs"
 [ReferenceWpfMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async "EnsureCoreWebView2Async -Microsoft.Web.WebView2.Wpf.WebView2 类|Microsoft Docs"
 [ReferenceWinformsMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async "EnsureCoreWebView2Async - Microsoft.Web.WebView2.WinForms.WebView2 类|Microsoft Docs"
-[ReferenceWpfMicrosoftWebWebview2WpfCorewebview2creationpropertiesCorewebview2creationproperties]: /dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties "CoreWebView2CreationProperties - Microsoft.Web.WebView2.Wpf.CoreWebView2CreationProperties 类|Microsoft Docs"
+[ReferenceWpfMicrosoftWebWebview2WpfCorewebview2creationpropertiesCorewebview2creationproperties]: /dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties "CoreWebView2CreationProperties - Microsoft.Web.WebView2.Wpf.CoreWebView2CreationProperties |Microsoft Docs"
 [ReferenceWinFormsMicrosoftWebWebview2WinForms]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms 类|Microsoft Docs"
 [ReferenceWpfMicrosoftWebWebview2WpfWebview2Creationproperties]: /dotnet/api/microsoft.web.webview2.wpf.webview2.creationproperties "CreationProperties - Microsoft.Web.WebView2.Wpf.WebView2 类|Microsoft Docs"
 [ReferenceWinFormsMicrosoftWebWebview2WinFormsWebview2]: /dotnet/api/microsoft.web.webview2.winforms.webview2 "Microsoft.Web.WebView2.WinForms.WebView2 类|Microsoft Docs"

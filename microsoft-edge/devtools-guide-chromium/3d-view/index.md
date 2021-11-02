@@ -7,27 +7,27 @@ ms.date: 12/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: e9497771a796bc86ae755fdf4bb4baea60885378
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 6f6986683764f538680993e087afbdb522824ac2
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082580"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139862"
 ---
 # <a name="3d-view"></a>3D 视图
 
-使用 **3D 视图** 通过浏览文档对象模型和 [DOM ][MDNDocumentObjectModel] (或 [z 索引][MDNZIndex]) 上下文来调试 Web 应用。  使用 **3D 视图** 执行以下操作：
+使用 **3D 视图** 通过浏览文档对象模型和 [DOM ](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) (或 [z 索引](https://developer.mozilla.org/docs/Web/CSS/z-index)) 上下文来调试 Web 应用。  使用 **3D 视图** 执行以下操作：
 *   [浏览翻译为 3D 视角的网页](#3d-dom)。
 *   [基于 z-index 堆叠上下文进行调试](#z-index)。
 *   [通过复合层从 3D 视图访问图层工具功能](#composited-layers)。
 *   [清除 DOM 窗格或](#changing-your-view) [z-index 窗格中的一些待筛选邮件](#change-the-scope-of-your-exploration)。
 *   [选取配色方案以最好地调试 DOM 问题](#dom-color-type) 或 [z-index 问题](#z-index-color-type)。
 
-若要探索 3D 视图项目的早期原型并自己运行代码，请导航到["3D 视图示例"。][GithubMicrosoftedgeDevtoolssamples3dview]
+若要探索 3D 视图项目的早期原型并自己运行代码，请导航到["3D 视图示例"。](https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView)
 
 在左侧，有三个窗格可用于调试体验：
 *   Z [索引](#z-index) 窗格。  在 Web 应用中的不同元素中导航，并注意 z-index 上下文。  Z **索引窗格** 是默认窗格。
-*   [3D DOM](#3d-dom)窗格。  通过可轻松访问的所有元素，作为一个整体探索 DOM。  若要访问该窗格，请选择"Z 索引"窗格**旁边的"DOM"** 窗格。 ****
+*   [3D DOM](#3d-dom)窗格。  通过可轻松访问的所有元素，作为一个整体探索 DOM。  若要访问该窗格，请选择 **Z 索引** 窗格旁边的 **DOM** 窗格。
 *   复合 [层窗格](#composited-layers)。  添加另一个 3D 元素以从层角度创建更全面的体验。  若要访问窗格，请选择 **"DOM"** 窗格旁边的"复合层"窗格。 ****
 
 在右侧，画布显示来自[Z 索引](#z-index)[、3D DOM](#3d-dom)或[复合层的选择](#composited-layers)。
@@ -60,7 +60,7 @@ ms.locfileid: "12082580"
    屏幕控件
 :::image-end:::
 
-若要将画布视图重置为原始视图，请选择"重置**** 相机"按钮，或选择"**** 重置视图中的元素"和"将相机重新居中 (侧向刷新图标) 按钮。
+若要将画布视图重置为原始视图，请选择"重置**** 相机"按钮，或选择视图中**** 的"重置元素"和"将相机重新居中 (侧刷新图标) 按钮。
 
 若要刷新画布，例如浏览器发生更改或切换到设备仿真器视图时，请选择"重新拍摄快照"按钮或****"获取新的快照"按钮**** (刷新图标) 。
 
@@ -142,11 +142,4 @@ ms.locfileid: "12082580"
    **复合层**窗格
 :::image-end:::
 
-**复合层**窗格打开**层**工具的元素，而不更改上下文。  你仍然可以访问每个图层的详细信息，并拥有慢**滚动**通道和**画图。**
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[GithubMicrosoftedgeDevtoolssamples3dview]: https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView "Microsoft EdgeDevTools 3D 视图 - MicrosoftEdge/DevToolsSamples |GitHub"
-[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "文档对象模型 (DOM) |MDN"
-[MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index |MDN"
+**复合层**窗格打开**层**工具的元素，而不更改上下文。  你仍然可以访问每个图层的详细信息，并拥有慢滚动通道和**画图。** ****

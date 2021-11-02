@@ -1,18 +1,18 @@
 ### YamlMime:Landing
-title: Microsoft Edge开发人员文档
-summary: 使用开发Microsoft Edge开发工具、Microsoft Edge扩展、渐进式 Web 应用、WebDriver 自动化、WebView2 等。
+title: Microsoft Edge 开发人员文档
+summary: 使用开发Microsoft Edge、Microsoft Edge扩展、渐进式 Web 应用、WebDriver 自动化、WebView2 等进行开发。
 metadata:
   ms.service: websites
   ms.topic: landing-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
   ms.date: 09/02/2021
-  ms.openlocfilehash: 01829d212ac26f0fbce0359828e47de3a5980b96
-  ms.sourcegitcommit: d2098f7f400614e2ba8eee8317abaa2e043c0594
+  ms.openlocfilehash: 1c90c248cf43b5b33935c8b6c17de5e015e9c457
+  ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/22/2021
-  ms.locfileid: "12033079"
+  ms.lasthandoff: 11/02/2021
+  ms.locfileid: "12140142"
 landingContent:
 - title: Microsoft Edge 开发工具
   linkLists:
@@ -34,7 +34,7 @@ landingContent:
     links:
     - text: 键盘快捷方式
       url: /microsoft-edge/devtools-guide-chromium/shortcuts
-- title: Microsoft Edge扩展
+- title: Microsoft Edge 扩展
   linkLists:
   - linkListType: overview
     links:
@@ -42,7 +42,7 @@ landingContent:
       url: /microsoft-edge/extensions-chromium/index
     - text: 入门教程
       url: /microsoft-edge/extensions-chromium/getting-started/index
-    - text: 将Chromium扩展移植到Microsoft Edge
+    - text: 将 Chromium 扩展移植到Microsoft Edge
       url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
   - linkListType: how-to-guide
     links:
@@ -61,17 +61,17 @@ landingContent:
     - text: 渐进式 Web 应用概述
       url: /microsoft-edge/progressive-web-apps-chromium/index
     - text: 渐进式 Web 应用入门
-      url: /microsoft-edge/progressive-web-apps-chromium/get-started
-    - text: 将 DevTools 与渐进式 Web 应用一同使用
+      url: /microsoft-edge/progressive-web-apps-chromium/how-to/index
+    - text: 将 DevTools 与渐进式 Web 应用配合使用
       url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
   - linkListType: concept
     links:
     - text: 脱机方案
-      url: /microsoft-edge/progressive-web-apps-chromium/offline
+      url: /microsoft-edge/progressive-web-apps-chromium/how-to/offline
     - text: 服务工作者
-      url: /microsoft-edge/progressive-web-apps-chromium/serviceworker
+      url: /microsoft-edge/progressive-web-apps-chromium/how-to/service-workers
     - text: Web 应用清单
-      url: /microsoft-edge/progressive-web-apps-chromium/webappmanifests
+      url: /microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests
 - title: WebView2
   linkLists:
   - linkListType: overview
@@ -80,23 +80,23 @@ landingContent:
       url: /microsoft-edge/webview2/index
   - linkListType: get-started
     links:
-    - text: WebView2 入门
+    - text: 使用 WebView2 入门
       url: /microsoft-edge/webview2/gettingstarted/win32
     - text: WPF 中的 WebView2 入门
       url: /microsoft-edge/webview2/gettingstarted/wpf
-    - text: 在表单应用中开始使用 WebView2 Windows WebView2
+    - text: Windows 窗体应用中的 WebView2 入门
       url: /microsoft-edge/webview2/gettingstarted/winforms
   - linkListType: reference
     links:
-    - text: Microsoft EdgeWebView2 API 参考
+    - text: Microsoft Edge WebView2 API 参考
       url: /microsoft-edge/webview2/webview2-api-reference
 - title: 测试和自动化
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: DevTools 协议
+    - text: 开发工具协议
       url: /microsoft-edge/devtools-protocol-chromium
-    - text: 原始试验
+    - text: 源试验
       url: /microsoft-edge/origin-trials/index
     - text: 编剧
       url: /microsoft-edge/playwright/index
@@ -104,7 +104,7 @@ landingContent:
       url: /microsoft-edge/puppeteer
     - text: WebDriver
       url: /microsoft-edge/webdriver-chromium
-    - text: webhint 扩展Visual Studio Code
+    - text: 适用于Visual Studio Code的 webhint 扩展
       url: /microsoft-edge/visual-studio-code/webhint
 - title: Web 平台
   linkLists:
@@ -112,9 +112,9 @@ landingContent:
     links:
     - text: 正在从网站检测 Microsoft Edge
       url: /microsoft-edge/web-platform/user-agent-guidance
-    - text: 影响站点兼容性的更改
+    - text: 影响网站兼容性的更改
       url: /microsoft-edge/web-platform/site-impacting-changes
-- title: Microsoft EdgeIDE 集成
+- title: Microsoft Edge IDE 集成
   linkLists:
   - linkListType: overview
     links:
@@ -122,11 +122,11 @@ landingContent:
       url: /microsoft-edge/visual-studio/
     - text: Visual Studio Code 概述
       url: /microsoft-edge/visual-studio-code/
-    - text: 适用于开发人员的 DevTools Visual Studio Code
+    - text: 适用于 Visual Studio Code 的 DevTools 扩展
       url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
-    - text: webhint 扩展Visual Studio Code
+    - text: 适用于Visual Studio Code的 webhint 扩展
       url: /microsoft-edge/visual-studio-code/webhint
-- title: Microsoft Edge
+- title: Microsoft Edge 中的辅助功能
   linkLists:
   - linkListType: overview
     links:

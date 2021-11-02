@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: b3618ca8cd5ceb9c9dafd87549b5fc7258516eaa
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 7ee72f0ebb07607cf33b0c4640892c948ccaef50
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083679"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139869"
 ---
 <!-- Copyright Kayce Basques
 
@@ -35,9 +35,11 @@ ms.locfileid: "12083679"
 
 *   了解你的页面当前与浏览器任务管理器Microsoft Edge的内存量。
 *   使用内存面板直观呈现一段时间 **的内存** 使用情况。
-*   使用堆快照 标识 (分离的 DOM 树\) 内存泄漏的 **常见原因**。
-*   在时间线上通过 Allocation instrumentation 了解 JavaScript 堆 \ (JS 堆\) **分配新内存的时间**。
+*   使用堆快照 (分离的 DOM 树) 内存泄漏的 **常见原因**。
+*   了解何时在 JavaScript 堆中分配新内存 (JS 堆) 时间线上的**Allocation instrumentation。**
 
+
+<!-- ====================================================================== -->
 ## <a name="overview"></a>概述
 
 在 RAIL **性能模型** 方面，性能工作的重点应该是用户。
@@ -58,17 +60,19 @@ ms.locfileid: "12083679"
 
 这里的关键是使用 RAIL 模型，并专注于你的用户。  了解哪些设备受你的用户欢迎，然后在这些设备上测试你的页面。  如果体验始终不佳，则页面可能会超出这些设备的内存功能。
 
+
+<!-- ====================================================================== -->
 ## <a name="monitor-memory-use-in-realtime-with-the-microsoft-edge-browser-task-manager"></a>使用浏览器任务管理器实时Microsoft Edge内存使用
 
 使用 Microsoft Edge 浏览器任务管理器作为内存问题调查的起点。  浏览器Microsoft Edge管理器是实时监视器，可告诉你页面当前使用的内存量。
 
-1.  选择 `Shift` + `Esc` 或导航到****"Microsoft Edge"主菜单，然后选择"更多工具""浏览器任务管理器"以Microsoft Edge  >  **** 浏览器任务管理器"。
+1.  选择 `Shift` + `Esc` 或导航到"Microsoft Edge"主菜单，然后选择"更多**工具**""浏览器任务管理器"以  >  **** Microsoft Edge浏览器任务管理器"。
 
     :::image type="complex" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="打开Microsoft Edge浏览器任务管理器" lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
        图 1：打开Microsoft Edge浏览器任务管理器
     :::image-end:::
 
-1.  将鼠标悬停在浏览器任务管理器Microsoft Edge表标题上，打开上下文菜单 \ (右键单击\) ，然后启用**JavaScript 内存**。
+1.  将鼠标悬停在浏览器任务管理器Microsoft Edge表标题上，右键单击 (上下文菜单，然后) **JavaScript 内存**。
 
     :::image type="complex" source="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png" alt-text="启用 JavaScript 内存" lightbox="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png":::
        图 2：启用 JavaScript 内存
@@ -77,13 +81,15 @@ ms.locfileid: "12083679"
 这两列告诉您有关页面如何使用内存的不同内容。
 
 *   " **内存** "列表示本机内存。  DOM 节点存储在本机内存中。  如果此值增加，将创建 DOM 节点。
-*   **"JavaScript 内存"** 列表示 JS 堆。  此列包含两个值。  您感兴趣的值为活动号码 \ (括号\) 。  实时数表示页面上的可访问对象使用的内存量。  如果此数目增加，则要么正在创建新对象，要么现有对象正在增长。
+*   **"JavaScript 内存"** 列表示 JS 堆。  此列包含两个值。  您感兴趣的值为活动号码 (括号中的) 。  实时数表示页面上的可访问对象使用的内存量。  如果此数目增加，则要么正在创建新对象，要么现有对象正在增长。
 
 <!--*   live number reference: https://groups.google.com/d/msg/google-chrome-developer-tools/aTMVGoNM0VY/bLmf3l2CpJ8J  -->
 
+
+<!-- ====================================================================== -->
 ## <a name="visualize-memory-leaks-with-performance-panel"></a>使用性能面板可视化内存泄漏
 
-您还可以使用性能面板作为调查的另一个起点。  "性能"面板可帮助您直观地呈现页面的内存使用。
+您还可以使用性能面板作为调查的另一个起点。  "性能"面板可帮助您直观地呈现页面在一段时间的内存使用。
 
 1.  打开**** DevTools 上的"性能"面板。
 1.  启用" **内存"** 复选框。
@@ -105,18 +111,20 @@ function grow() {
 document.getElementById('grow').addEventListener('click', grow);
 ```
 
-每次选择代码中引用的按钮时，都会将一万个节点追加到文档正文，并且一个包含一百万个字符的字符串 `div` `x` 被推送到 `x` 数组。  运行前面的代码示例在性能面板中 **生成** 记录，如下图所示。
+每次选择代码中引用的按钮时，都会将一万个节点追加到文档正文，并且一个包含一百万个字符的字符串 `div` `x` 被推送到 `x` 数组中。  运行前面的代码示例在性能面板中 **生成** 记录，如下图所示。
 
 :::image type="complex" source="../media/memory-problems-glitch-example-1-performance-memory.msft.png" alt-text="简单增长" lightbox="../media/memory-problems-glitch-example-1-performance-memory.msft.png":::
    图 3：简单增长
 :::image-end:::
 
-首先，用户界面的说明。  "**概述**"窗格**** \ (中的 HEAP 图) **表示**JS 堆。  "概述 **"窗格** 下方是" **计数器"** 窗格。  内存使用率由 JS 堆 \ (与概述窗格\) 、文档、DOM 节点、侦听器和 GPU 内存中的**HEAP**图形相同。 ****  关闭复选框以在图形中隐藏它。
+首先，用户界面的说明。  "**概述**"窗格中的**** HEAP 图 (**NET**) JS 堆。  "概述 **"窗格** 下方是" **计数器"** 窗格。  内存使用量由 JS 堆 (，与概述窗格中的**HEAP**图) 、**** 文档、DOM 节点、侦听器和 GPU 内存相同。  关闭复选框以在图形中隐藏它。
 
-现在，代码分析与上图比较。  如果查看节点计数器 \ (绿色图形\) ，它将与代码完全匹配。  节点计数在离散步骤中增加。  您可能认为每次增加的节点数都是对 的调用 `grow()` 。  JS 堆图 \ (蓝图\) 不是那么简单。  为了与最佳实践保持一样，第一个双位实际上是强制垃圾回收 \ (选择收集  **垃圾回收** ![ 强制垃圾回收按钮 ][ImageForceGarbageCollectionIcon] \) 。  在记录进行时，将显示 JS 堆大小峰值。  这是自然且预期的：JavaScript 代码将在你选择的每一个按钮上创建 DOM 节点，并创建一百万个字符的字符串时执行大量工作。  此处的关键点是 JS 堆结束时间高于其开头 \ ("开头"是强制垃圾回收\) 。  在现实世界中，如果你看到这种增加 JS 堆大小或节点大小的模式，它可能会定义内存泄漏。
+现在，代码分析与上图比较。  如果查看绿色图形 (节点) ，它将与代码完全匹配。  节点计数在离散步骤中增加。  您可能认为节点计数的每次增加都是对 的调用 `grow()` 。  使用蓝色图形 (JS 堆图) 并不简单。  为了与最佳实践保持一样，第一个下降实际上是强制垃圾回收 (选择"收集  **垃圾回收** ![ 强制垃圾回收" ][ImageForceGarbageCollectionIcon] 按钮) 。  在记录进行时，将显示 JS 堆大小峰值。  这是自然且预期的：JavaScript 代码将在你选择的每一个按钮上创建 DOM 节点，并创建一百万个字符的字符串时执行大量工作。  此处的关键点是 JS 堆结束时间高于它 (开始"，即强制垃圾回收之后) 。  在现实世界中，如果你看到这种增加 JS 堆大小或节点大小的模式，它可能会定义内存泄漏。
 
 <!--todo: the Heap snapshots and Profiles panel are not found in Edge  -->
 
+
+<!-- ====================================================================== -->
 ## <a name="discover-detached-dom-tree-memory-leaks-with-heap-snapshots"></a>使用堆快照发现分离的 DOM 树内存泄漏
 
 DOM 节点仅在没有从页面上运行的 DOM 树或 JavaScript 代码引用该节点时进行垃圾回收。  当从 DOM 树中删除节点时，该节点将被"分离"，但某些 JavaScript 仍引用它。  分离的 DOM 节点是内存泄漏的常见原因。  本部分指导你如何使用 DevTools 中的堆探查器来确定分离的节点。
@@ -147,7 +155,7 @@ document.getElementById('create').addEventListener('click', create);
    图 4：拍摄堆快照
 :::image-end:::
 
-可能需要一些时间处理和加载快照。  完成后，从名为 **HEAP SNAPSHOTS**\ (的左侧面板 \) 。
+可能需要一些时间处理和加载快照。  完成后，从左侧面板中选择它 (**堆快照**) 。
 
 在 `Detached` 类 **筛选器文本框中** 键入以搜索分离的 DOM 树。
 
@@ -171,6 +179,8 @@ document.getElementById('create').addEventListener('click', create);
 
 <!--todo: the allocation timeline does not appear in the DevTools in Edge  -->
 
+
+<!-- ====================================================================== -->
 ## <a name="identify-js-heap-memory-leaks-with-allocation-instrumentation-on-timeline"></a>在时间线上通过 Allocation instrumentation 识别 JS 堆内存泄漏
 
 **时间线上的分配检测** 是另一个可以帮助你跟踪 JS 堆中的内存泄漏的工具。
@@ -201,12 +211,14 @@ document.getElementById('grow').addEventListener('click', grow);
    图 9：已缩放的分配时间线
 :::image-end:::
 
-展开对象并选择值以查看"对象"窗格中的 **更多详细信息** 。  例如，下图中新分配的对象的详细信息指示已分配给范围 `x` 中的 `Window` 变量。
+展开对象并选择值以查看"对象"窗格中 **的更多详细信息** 。  例如，下图中新分配的对象的详细信息指示已分配给范围 `x` 中的 `Window` 变量。
 
 :::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png" alt-text="对象详细信息" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png":::
    图 10：对象详细信息
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="investigate-memory-allocation-by-function"></a>按功能调查内存分配
 
 使用 **分配采样** 分析类型查看 JavaScript 函数的内存分配。
@@ -226,11 +238,13 @@ DevTools 显示按功能细分的内存分配。  默认视图为 **"高 (从 **
    图 12：分配采样
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="spot-frequent-garbage-collections"></a>专色频繁垃圾回收
 
 如果页面似乎频繁暂停，则可能有垃圾回收问题。
 
-您可以使用浏览器任务管理器或性能Microsoft Edge记录来发现频繁垃圾回收。  在浏览器Microsoft Edge管理器中，经常出现和下降**的内存**或**JavaScript 内存**值表示频繁垃圾回收。  在性能记录中，频繁更改 \ (和下降\) JS 堆或节点计数图指示频繁垃圾回收。
+您可以使用浏览器任务管理器或性能Microsoft Edge记录来发现频繁垃圾回收。  在浏览器Microsoft Edge管理器中，经常出现和下降**的内存**或**JavaScript 内存**值表示频繁的垃圾回收。  在性能记录中， (JS 堆或节点) 频繁出现的变化指示频繁进行垃圾回收。
 
 确定问题后，可以在时间线记录上使用 **Allocation instrumentation** 来查明内存的分配位置以及导致分配的函数。
 
@@ -249,7 +263,7 @@ DevTools 显示按功能细分的内存分配。  默认视图为 **"高 (从 **
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/memory-problems/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/memory-problems/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

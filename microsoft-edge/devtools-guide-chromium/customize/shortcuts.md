@@ -1,26 +1,27 @@
 ---
 description: 自定义键盘快捷方式，包括匹配来自Visual Studio Code。
-title: 在 DevTools 中自定义键盘快捷方式
+title: 自定义键盘快捷方式
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， 开发工具， 自定义， 快捷方式， 键盘， visual studio 代码
-ms.openlocfilehash: 417b73053e16008babdf7be53fb264dfb045fa78
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 350e27d35af0e7effa79453fb915731140869b51
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083553"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139715"
 ---
-# <a name="customize-keyboard-shortcuts-in-devtools"></a>在 DevTools 中自定义键盘快捷方式
+# <a name="customize-keyboard-shortcuts"></a>自定义键盘快捷方式
 
-在******设置**的"快捷方式"页中，可以查看 Microsoft Edge DevTools 的定义快捷方式、为特定操作定义自己的快捷方式或使用预设来匹配 Microsoft Visual Studio Code 中的默认快捷方式。
+在**** 设置 的"**** 快捷方式"页中，可以查看 Microsoft Edge DevTools 定义的快捷方式、为特定操作定义自己的快捷方式或使用预设来匹配 Microsoft Visual Studio Code 中的默认快捷方式。
 
-有关列出所有默认快捷方式设置的文章，请参阅Microsoft Edge[开发人员工具键盘快捷方式][DevToolsShortcuts]。  另请参阅 [自定义 DevTools][DevToolsCustomizeSettings]。
+有关默认快捷方式设置，请参阅 [键盘快捷方式][DevToolsShortcuts]。  另请参阅 [自定义 DevTools][DevToolsCustomizeSettings]。
 
 
+<!-- ====================================================================== -->
 ## <a name="match-keyboard-shortcuts-from-visual-studio-code"></a>匹配键盘快捷方式Visual Studio Code
 
 若要将开发人员工具中的键盘快捷方式Microsoft Edge开发人员工具中的等效操作Visual Studio Code：
@@ -28,13 +29,13 @@ ms.locfileid: "12083553"
 1.  [打开 DevTools，][DevtoolsOpenMain]例如通过选择 `F12` 。
 1.  打开[设置，][DevToolsCustomizeSettings]例如，选择主工具栏中的齿轮图标，或选择 `Shift` + `?` 。
 1.  选择 **"快捷方式设置** "页。
-1.  在右上角的"从预设匹配**** 快捷方式"**下拉列表**中，选择"Visual Studio Code"而不是 **"DevTools (默认) "。 **
+1.  在右上角的"从预设匹配**** 快捷方式"下拉列表中，选择"Visual Studio Code"**** 而不是 **"DevTools (默认) "。 **
 
     :::image type="complex" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="将 DevTools 中的键盘快捷方式与Visual Studio Code" lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
        将 DevTools 中的键盘快捷方式与Visual Studio Code
     :::image-end:::
 
-例如，若要暂停或继续运行脚本Visual Studio Code，请选择 `F5` 。  但是，使用 **DevTools (默认 **) 预设，若要暂停或继续运行脚本，请选择 `F8` 。  当你将预设**更改为**Visual Studio Code 时，你现在还可以在 DevTools 中选择，就像在 Visual Studio Code `F5` 中一样。
+例如，若要暂停或继续运行脚本Visual Studio Code，请选择 `F5` 。  但是，使用 **DevTools (默认 **) 预设，若要暂停或继续运行脚本，请选择 `F8` 。  当你将预设更改为**Visual Studio Code**时，你现在还可以在 DevTools 中选择，就像在 Visual Studio Code `F5` 中一样。
 
 ### <a name="see-also"></a>另请参阅
 
@@ -42,13 +43,14 @@ ms.locfileid: "12083553"
 * [Visual Studio Code PDF 文件Windows (][VisualStudioCodeShortcutsKeyboardWindows]键盘) 
 
 
+<!-- ====================================================================== -->
 ## <a name="edit-the-keyboard-shortcut-for-a-devtools-action"></a>编辑 DevTools 操作键盘快捷方式
 
 1.  [打开 DevTools，][DevtoolsOpenMain]例如通过选择 `F12` 。
 1.  打开[设置，][DevToolsCustomizeSettings]例如，选择主工具栏中的齿轮图标，或选择 `Shift` + `?` 。
 1.  选择 **"快捷方式设置** "页。
 1.  选择要自定义的操作。  例如，在" **调试器** "部分，选择 **"暂停脚本执行"** 操作。
-1.  选择 **Edit** \ (![ EditKeyboardShortcut ](../media/edit-keyboard-shortcut-icon.msft.png) \) 图标。
+1.  Select the **Edit** (![ EditKeyboardShortcut ](../media/edit-keyboard-shortcut-icon.msft.png)) icon.
 
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Select the action to customize from the Shortcuts page in 设置" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        Select the action to customize from the **Shortcuts** page in**设置**
@@ -61,7 +63,7 @@ ms.locfileid: "12083553"
        选择要分配给该操作的密钥
     :::image-end:::
 
-1.  若要保存新的键盘快捷方式，请选择选中标记 \ (![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)）图标。
+1.  若要保存新的键盘快捷方式，请选择选中标记 (![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)) 图标。
 
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="选择选中标记图标以保存新的键盘快捷方式" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
        选择选中标记图标以保存新的键盘快捷方式
@@ -74,11 +76,11 @@ ms.locfileid: "12083553"
 
 <!-- keep in same order as screenshot: -->
 
-*  如果"自定义键盘快捷方式****" ("自定义键盘快捷方式) 旁边显示一个复选框，则表明你已自定义 ![ ](../media/custom-keyboard-shortcut-icon.msft.png) 键盘快捷方式。
+*  如果" **自定义键盘快捷方式** " ("自定义键盘快捷方式") 旁边显示一个复选框，它表示你已自定义 ![ ](../media/custom-keyboard-shortcut-icon.msft.png) 键盘快捷方式。
 
 *  若要在编辑某个动作的键盘快捷方式时删除某个动作的键盘快捷方式，请选择**** ![ DeleteKeyboardShortcut (DeleteKeyboardShortcut) ](../media/delete-keyboard-shortcut-icon.msft.png) 图标。
 
-*  若要在编辑某个动作的键盘快捷方式时为某个操作添加其他键盘快捷方式，请选择"添加快捷方式"链接，**** 或选择"自定义键盘快捷方式" (**** ![ CustomKeyboardShortcut) ](../media/custom-keyboard-shortcut-icon.msft.png) 图标。
+*  若要在编辑某个操作键盘快捷方式时为某个操作添加其他键盘快捷方式，请选择"添加快捷方式"链接，或**** 选择"自定义键盘快捷方式" (**** ![ CustomKeyboardShortcut) ](../media/custom-keyboard-shortcut-icon.msft.png) 图标。
 
 *  若要在编辑某个动作的键盘快捷方式时保存已修改或添加的键盘快捷方式，请选择选中 (![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)) 图标。
 

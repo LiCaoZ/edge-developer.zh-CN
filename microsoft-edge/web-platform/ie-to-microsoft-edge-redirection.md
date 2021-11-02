@@ -1,22 +1,22 @@
 ---
-description: 将用户从Microsoft Edge移动到Internet Explorer
-title: 将用户从Microsoft Edge移动到Internet Explorer
+description: 将用户从Microsoft Edge移动Internet Explorer
+title: 将用户从Microsoft Edge移动Internet Explorer
 author: MSEdgeTeam
 ms.date: 11/13/2020
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， 兼容性， Web 平台， Internet Explorer
-ms.openlocfilehash: d3cacae600d8131d8a951aa460e1f638e772c67d
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 8e4a73b1cfee24aa0c5076304c9e94e7119ce585
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036683"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140016"
 ---
-# <a name="moving-users-to-microsoft-edge-from-internet-explorer"></a>将用户从Microsoft Edge移动到Internet Explorer
+# <a name="moving-users-to-microsoft-edge-from-internet-explorer"></a>将用户从Microsoft Edge移动Internet Explorer
 
-许多新式网站具有与 Internet Explorer \ (IE\) 不兼容的设计。  当 IE 用户访问不兼容的公共网站时，用户可能会收到一条消息。  该消息表明该网站与浏览器不兼容。  消息显示后，用户需要手动切换到新式浏览器。  为了最大限度地减少中断，从版本 84 开始，Microsoft Edge自动重定向用户的新功能。  当 IE 用户导航到与 IE 不兼容的网站时，Windows自动将用户重定向到Microsoft Edge。  To review the websites on the list， navigate to [Need Microsoft Edge list][MicrosoftEdgeNeededgeV1].
+许多新式网站具有与 IE Internet Explorer (不兼容) 。  当 IE 用户访问不兼容的公共网站时，用户可能会收到一条消息。  该消息表明该网站与浏览器不兼容。  消息显示后，用户需要手动切换到新式浏览器。  为了最大限度地减少中断，从版本 84 开始，Microsoft Edge支持自动重定向用户的新功能。  当 IE 用户导航到与 IE 不兼容的网站时，Windows自动将用户重定向到Microsoft Edge。  To review the websites on the list， navigate to [Need Microsoft Edge list][MicrosoftEdgeNeededgeV1].
 
 本文介绍以下概念。
 
@@ -24,6 +24,8 @@ ms.locfileid: "12036683"
 *   重定向的用户体验
 *   请求更新列表
 
+
+<!-- ====================================================================== -->
 ## <a name="why-is-a-website-added-to-the-ie-compatibility-list"></a>为什么将网站添加到 IE 兼容性列表？
 
 IE 兼容性列表仅在发生以下操作时添加网站。
@@ -31,9 +33,11 @@ IE 兼容性列表仅在发生以下操作时添加网站。
 *   向 IE 用户显示一条消息，建议出于兼容性原因，用户应使用不同的浏览器。
 *   所有者请求将网站添加到 IE 兼容性列表。
 
+
+<!-- ====================================================================== -->
 ## <a name="redirection-experience"></a>重定向体验
 
-重定向到Microsoft Edge时，用户会显示下一张屏幕截图中的一次对话框。  该对话框为用户提供以下信息。
+重定向到 Microsoft Edge时，用户会显示下一张屏幕截图中的一次对话框。  该对话框为用户提供以下信息。
 
 *   它说明了重定向网站的原因。
 *   它会提示用户同意将浏览数据和首选项从 IE 复制到 Microsoft Edge。
@@ -57,7 +61,7 @@ IE 兼容性列表仅在发生以下操作时添加网站。
    :::column-end:::
 :::row-end:::
 
-如果用户未通过选中"始终显示我的浏览数据和首选项Internet Explorer复选框同意，用户可以选择"继续**浏览"** 以****   继续浏览会话。
+如果用户未通过选中"始终显示我的浏览数据和首选项Internet Explorer复选框同意，用户可以选择"继续**浏览"** 以继续****   浏览会话。
 
 最后，网站不兼容横幅将显示在每个重定向的地址栏下。  下图显示了网站不兼容横幅的示例。
 
@@ -68,7 +72,7 @@ IE 兼容性列表仅在发生以下操作时添加网站。
 网站不兼容横幅为用户提供了以下详细信息。
 
 *   建议用户切换到Microsoft Edge。
-*   将"Microsoft Edge设置为默认浏览器"的优惠。
+*   要设置为Microsoft Edge浏览器产品/服务。
 *   为用户提供浏览Microsoft Edge。
 
 当网站从 microsoft Edge Internet Explorer Microsoft Edge 时，将发生以下操作之一。
@@ -79,11 +83,13 @@ IE 兼容性列表仅在发生以下操作时添加网站。
 > [!NOTE]
 > 重定向后，用户可以继续对不在 IE 兼容性列表中的网站使用 IE。
 
+
+<!-- ====================================================================== -->
 ## <a name="request-an-update-to-the-ie-compatibility-list"></a>请求更新 IE 兼容性列表
 
 IE 兼容性列表是上一个 XML [microsoft.com。][MicrosoftOfficialHome]  此列表会定期更新，以响应用户和网站开发人员有关添加或删除网站的请求。  对列表的更新会自动下载到用户计算机。
 
-通过电子邮件发送以下信息 [，ietoedge@microsoft.com][MailtoMicrosoftIetoedge] IE 兼容性列表中添加或删除的网站。
+通过电子邮件将以下信息 [ietoedge@microsoft.com][MailtoMicrosoftIetoedge] IE 兼容性列表中添加或删除的网站。
 
 *   所有者名称
 *   公司标题

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge， Web 开发， f12 工具， devtools， 服务工作者， PWA
-ms.openlocfilehash: 028c4ffe26a989fb857f740cdd853137a7f5e431
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+keywords: microsoft edge， Web 开发， f12 工具， 开发工具， 服务工作者， PWA
+ms.openlocfilehash: ca69c82a84ebfd532b18a29531e6053e68341501
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083098"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140954"
 ---
 # <a name="service-worker-improvements"></a>服务工作者改进
 
@@ -32,6 +32,8 @@ ms.locfileid: "12083098"
 1.  应用程序 [工具](#application) 。  若要调试服务工作者，请导航到" **服务工作者"** 工具。
 1.  源 [工具](#sources) 。  单步执行提取事件处理程序时访问页面脚本信息。
 
+
+<!-- ====================================================================== -->
 ## <a name="network"></a>网络
 
 :::image type="complex" source="../media/sw-network-timeline.msft.png" alt-text="网络工具中的服务工作线程时间线" lightbox="../media/sw-network-timeline.msft.png":::
@@ -54,6 +56,8 @@ ms.locfileid: "12083098"
 
 若要了解有关 `respondWith` 提取事件更多信息，请选择 左侧的下拉箭头 `respondWith` 。  若要查找有关原始请求 **和** 收到的 **响应**的更多详细信息，请使用相应的下拉箭头。
 
+
+<!-- ====================================================================== -->
 ## <a name="application"></a>应用程序
 
 :::image type="complex" source="../media/sw-application-timeline.msft.png" alt-text="应用程序视图" lightbox="../media/sw-application-timeline.msft.png":::
@@ -62,7 +66,7 @@ ms.locfileid: "12083098"
 
 ### <a name="service-worker-update-timeline"></a>服务工作进程更新日程表
 
-开发人员Microsoft Edge开发人员工具团队在应用程序工具中添加了时间线，以反映服务工作者**** 的更新生命周期。  它显示安装和激活事件。  每个事件都有相应的下拉箭头，可为您提供更多详细信息。
+开发人员Microsoft Edge开发人员工具团队在**应用程序**工具中添加了时间线，以反映服务工作者的更新生命周期。  它显示安装和激活事件。  每个事件都有相应的下拉箭头，可为您提供更多详细信息。
 
 ### <a name="request-routing-and-fetch-events"></a>请求传送和提取事件
 
@@ -74,6 +78,8 @@ ms.locfileid: "12083098"
 
 **"网络**"工具显示通过正在调试的服务工作者发送的网络请求。  自动筛选器是缩小探索范围的方法。
 
+
+<!-- ====================================================================== -->
 ## <a name="sources"></a>源
 
 :::image type="complex" source="../media/sw-sources.msft.png" alt-text="DOM 树" lightbox="../media/sw-sources.msft.png":::
@@ -91,4 +97,4 @@ ms.locfileid: "12083098"
 <!-- links -->
 [MdnFetchEvent]: https://developer.mozilla.org/docs/Web/API/FetchEvent "FetchEvent |MDN"
 [MdnProgressiveWebApps]: https://developer.mozilla.org/docs/Web/Progressive_web_apps "渐进式 Web (PA) |MDN"
-[MdnServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "服务辅助 API |MDN"
+[MdnServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "服务工作线程 API |MDN"

@@ -8,25 +8,25 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、安全性
-ms.openlocfilehash: 1e6a5e5ae4f3883e3cc6dfbd1cd1fcacc76e724d
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 1742178283493aae1f2888d86c36cba656d7270d
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083532"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141115"
 ---
 # <a name="best-practices-for-developing-secure-webview2-applications"></a>开发安全 WebView2 应用程序的最佳方案
 
 [WebView2 控件允许][Webview2Main]开发人员在本机应用程序中承载 Web 内容。 正确使用时，承载 Web 内容具有多项优势，例如使用基于 Web 的 UI、访问 Web 平台的功能、跨平台共享代码等。  为了避免承载 Web 内容时可能出现的漏洞，请确保设计 WebView2 应用程序以密切监视 Web 内容和主机应用程序之间的交互。
 
 1.  将所有 Web 内容视为不安全。
-    *   使用每个参数之前验证 Web 消息和主机对象参数，因为 Web 消息和参数可能格式不正确 (无意或恶意\) 并会导致应用发生意外行为。
+    *   使用每个参数之前验证 Web 消息和主机对象参数，因为 Web 消息和参数可能格式不正确 (或恶意) 并会导致应用发生意外行为。
     *   始终检查在 WebView2 内运行的文档的来源，并评估内容可信度。
 1.  设计特定的 Web 消息和主机对象交互，而不是使用泛型代理。
-1.  设置以下选项，通过修改 [ICoreWebView2Settings (Win32 ][Webview2ReferenceWin32Icorewebview2settings]) 或 [CoreWebView2Settings (.NET) 来限制 Web 内容功能 ][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings]。
-    *   如果 `AreHostObjectsAllowed` 预计 Web 内容无法访问主机对象，则设置为 `false` 。
+1.  设置以下选项，通过修改[Win32 (或 CoreWebView2Settings) ICoreWebView2Settings][Webview2ReferenceWin32Icorewebview2settings] [ (.NET) 来限制 Web 内容 A2.NET) 。 ][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings]
+    *   如果您 `AreHostObjectsAllowed` `false` 不期望 Web 内容访问主机对象，则设置为 。
     *   如果预计 Web 内容不会向本机应用程序发布 Web 消息 `IsWebMessageEnabled` `false` ，则设置为 。
-    *   设置为 ，如果您不期望 Web 内容运行脚本 `IsScriptEnabled` `false` \ (例如，当显示静态 html content\) 。
+    *   设置为 ，如果您不期望 Web 内容运行脚本， (，当显示静态 `IsScriptEnabled` `false` html 内容) 。
     *   如果 `AreDefaultScriptDialogsEnabled` `false` 预计 Web 内容不会显示或对话框，则设置为 `alert` `prompt` 。
 1.  在以下步骤中，使用 `NavigationStarting` 和 `FrameNavigationStarting` 事件根据新页面的来源更新设置。
     1.  若要阻止应用程序导航到特定页面，请使用事件检查然后阻止页面或框架导航。
@@ -48,4 +48,4 @@ When constructing a message to send into a WebView, prefer using `PostWebMessage
 
 [Webview2ReferenceWin32Icorewebview2settings]: /microsoft-edge/webview2/reference/win32/icorewebview2settings "interface ICoreWebView2Settings |Microsoft Docs"
 
-[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings]: /dotnet/api/microsoft.web.webview2.core.corewebview2settings "CoreWebView2Settings 类 (Microsoft.Web.WebView2.Core) |Microsoft Docs"
+[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings]: /dotnet/api/microsoft.web.webview2.core.corewebview2settings "Microsoft.Web.WebView2.Core (CoreWebView2Settings) |Microsoft Docs"

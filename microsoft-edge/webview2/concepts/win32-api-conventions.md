@@ -8,22 +8,25 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 2f5b3a4a849b077d33d7c8124524701a56cc2d13
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 1b9e6be2552dae05e08e98da71557affa2b07783
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083539"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139393"
 ---
 # <a name="win32-c-webview2-api-conventions"></a>Win32 C++ WebView2 API 约定
 
 支持的平台：Win32。
 
 
+<!-- ====================================================================== -->
 ## <a name="prerequisites"></a>必备条件
 
 *   使用 Win32 API 的体验。
 
+
+<!-- ====================================================================== -->
 ## <a name="async-methods"></a>异步方法
 
 WebView2 Win32 C++ API 中的异步方法使用委托接口联系你，原因如下。
@@ -44,7 +47,7 @@ HRESULT Invoke(HRESULT result)
 
 或者，对于 ，您提供一个实例，该实例具有一个方法，用于提供 `ICoreWebView2::ExecuteScript` `Invoke` 请求的成功或失败 `ExecuteScript` 代码。  另外提供第二个参数，该参数是运行脚本的结果的 JSON。
 
-可以手动实现委托接口，也可以将 Callback 函数 (`CompleteHandler` [WRL) ][CppCxWrlCallbackFunction]。  以下 [WebView2 (代码) 使用 WRL ][CppCxWrlCallbackFunction] 代码段中的 Callback 函数。
+可以手动实现委托接口，也可以将 Callback 函数 (`CompleteHandler` [WRL) 。 ][CppCxWrlCallbackFunction]  以下 [WebView2 (代码) 使用 WRL ][CppCxWrlCallbackFunction] 代码段中的 Callback 函数。
 
 ```cpp
 void ScriptComponent::InjectScript()
@@ -71,6 +74,8 @@ void ScriptComponent::InjectScript()
 }
 ```
 
+
+<!-- ====================================================================== -->
 ## <a name="events"></a>事件
 
 WebView2 Win32 C++ API 中的事件使用 和 方法对订阅和 `add_EventName` `remove_EventName` 取消订阅事件。  `add_EventName`方法采用事件处理程序委托接口，并作为 `EventRegistrationToken` 输出参数返回令牌。  `remove_EventName`方法获取令牌 `EventRegistrationToken` 并取消订阅相应的事件订阅。
@@ -82,7 +87,7 @@ WebView2 Win32 C++ API 中的事件使用 和 方法对订阅和 `add_EventName`
 与异步方法完成的处理程序委托接口类似，请使用以下操作之一来设置它。
 
 *   直接实现。
-*   将 [Callback 函数 (WebView2 代码) 中使用的 WRL ][CppCxWrlCallbackFunction] 对象函数。
+*   将 [Callback 函数 (WebView2) ][CppCxWrlCallbackFunction] 代码段中使用的 WRL 对象函数。
 
 <!-- todo:  what is async method completed handler delegate interface?  Is there a shorter name for it?  -->
 
@@ -115,12 +120,16 @@ CHECK_FAILURE(m_webView->add_NavigationCompleted(
     &m_navigationCompletedToken));
 ```
 
+
+<!-- ====================================================================== -->
 ## <a name="strings"></a>字符串
 
 字符串输出参数是 `LPWSTR` 以 null 结尾的字符串。  请求程序使用 提供字符串 `CoTaskMemAlloc` 。  所有权将传输到请求者，由请求者使用 释放内存 `CoTaskMemFree` 。
 
 字符串输入参数是 `LPCWSTR` 以 null 结尾的字符串。  请求者确保字符串在同步函数请求的持续时间内有效。  如果接收器必须在函数请求完成后将值存储到某一点，则接收器必须提供字符串值的关联副本。
 
+
+<!-- ====================================================================== -->
 ## <a name="uri-and-json-parsing"></a>URI 和 JSON 分析
 
 各种方法提供或接受 URI 和 JSON 作为字符串。  使用首选库分析和生成字符串。

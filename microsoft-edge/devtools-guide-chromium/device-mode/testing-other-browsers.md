@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: cfd6e78785c9f45ed9b9af74f967562e126f48c2
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 9845f368b73c37df5ac2d3d5ea4b3685ca2d7f6f
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12081888"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140065"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -49,9 +49,9 @@ Firefox 具有[][MDNResponsiveDesignMode]响应式设计视图，该视图鼓励
 
 ### <a name="edgehtml-emulation"></a>EdgeHTML 模拟
 
-若要模拟 Windows Phones，请使用 Microsoft Edge \ (EdgeHTML\) [内置模拟][ArchiveMicrosoftEdgeDevtoolsEmulation]。
+若要模拟Windows手机，请使用 Microsoft Edge (EdgeHTML) [内置模拟][ArchiveMicrosoftEdgeDevtoolsEmulation]。
 
-使用 [IE 11 模拟][Ie11DevToolsEmulation] 模拟页面在早期版本的 Internet Explorer。
+使用 [IE 11 仿真][Ie11DevToolsEmulation] 模拟页面在早期版本的 Internet Explorer。
 
 
 <!-- ====================================================================== -->
@@ -115,7 +115,7 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 完成后，了解如何通过 Apple 开发人员文档使用 [模拟器][AppleSimulatorHelp]。
 
 > [!NOTE]
-> 若要避免每次想要使用 iOS 模拟器时都打开 Xcode，请将其打开，将鼠标悬停在扩展坞中的 iOS 模拟器图标上，打开上下文菜单 \ (右键单击\) ，然后选择"保持在扩展坞中 **"。**  现在只要需要图标即可。
+> 若要避免每次想要使用 iOS 模拟器时都打开 Xcode，请将其打开，将鼠标悬停在扩展坞中的 iOS 模拟器图标上，打开上下文菜单 (右键单击) ，然后选择"在扩展坞中**保留"。**  现在只要需要图标即可。
 
 ### <a name="microsoft-edge-edgehtml"></a>Microsoft Edge (EdgeHTML) 
 
@@ -123,13 +123,13 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
    新式 IE VM
 :::image-end:::
 
-Microsoft Edge \ (EdgeHTML\) 虚拟机 \ (VM\) 使你可以通过 VirtualBox \ (或 VMWare\) 访问计算机上不同版本的 EdgeHTML 和 Internet Explorer。  在下载 [页面上选择虚拟机][MicrosoftDeveloperEdgeVms]。
+Microsoft Edge (使用 EdgeHTML) 虚拟机 (VM) ，可以通过 VirtualBox (或 VMWare) 访问计算机上不同版本的 EdgeHTML 和 Internet Explorer。  在下载 [页面上选择虚拟机][MicrosoftDeveloperEdgeVms]。
 
 
 <!-- ====================================================================== -->
 ## <a name="cloud-based-emulators-and-simulators"></a>基于云的模拟器和模拟器
 
-如果你无法使用仿真器，并且无法访问真实设备，则基于云的仿真器是下一个最佳选择。  与实际设备和本地仿真器不同，基于云的模拟器的一大优势是，可以跨不同平台自动执行网站单元测试。
+如果你无法使用仿真器，并且无法访问真实设备，则基于云的仿真器是下一个最佳选择。  与实际设备和本地仿真器不同，基于云的模拟器的一大优点是，可以跨不同平台自动执行网站单元测试。
 
 以下产品是基于云的仿真器和相关产品的示例。  这些说明来自产品的信息网站，并用作要考虑的特性或功能的示例。
 
@@ -137,7 +137,7 @@ Microsoft Edge \ (EdgeHTML\) 虚拟机 \ (VM\) 使你可以通过 VirtualBox \ (
 
 *   [设备 Anywhere][AppExperience] 不使用仿真器，而是能够远程控制的真实设备。  当你需要在特定的设备上重现问题，并且某些报告中可能不会显示问题时，这非常有用。
 
-*   [LambdaTest][|::ref2::|] 可帮助你在各种浏览器和操作系统的组合上执行手动跨浏览器测试。  你可以录制复杂错误的视频，并通过集成（如 Microsoft Teams、Slack 等）共享它们。  可以通过并行运行测试来加快测试速度。
+*   [LambdaTest][|::ref2::|] 可帮助你在各种浏览器和操作系统的组合上执行手动跨浏览器测试。  你可以录制复杂 Bug 的视频并通过集成（如 Microsoft Teams、Slack 等）共享它们。  可以通过并行运行测试来加快测试速度。
 
 *   [使用操作][SauceLabs] 标签，可以在仿真器内运行单元测试，这可用于编写通过网站的流脚本，并随后在各种设备上观看此内容的视频录制。  您还可以对网站执行手动测试。
 
@@ -171,7 +171,7 @@ Microsoft Edge \ (EdgeHTML\) 虚拟机 \ (VM\) 使你可以通过 VirtualBox \ (
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)由[Meggin Kearney][MegginKearney] \ (Tech Writer\) 和[Paul Bakaus][PaulBakaus] \ (Open Web Developer Advocate 在 Google |工具、性能、动画、UX\) 。
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)由[Meggin Kearney][MegginKearney] (Technical Writer) 和 Paul [Bakaus][PaulBakaus] (Google |工具、性能、动画、UX) 。
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

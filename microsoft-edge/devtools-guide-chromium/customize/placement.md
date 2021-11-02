@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 3bde7068dd07503de81ae432be0238bb3ec5d165
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 80bf7cfab6a7c240a15ce9137798173de5712a79
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082426"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141668"
 ---
 <!-- Copyright Kayce Basques
 
@@ -73,14 +73,18 @@ DevTools 可能会撤消停靠到单独的窗口，你可以移到单独的监�
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="change-placement-from-the-main-menu"></a>从主菜单更改位置
 
-1.  选择"自定义和控制**DevTools** \ (\) "，然后选择"撤消停靠到单独的窗口 `...` \ (Undock \) "，"停靠到底部 \ (扩展坞"到底部 \) ，或选择"扩展坞向左 \ (扩展坞"**** 向左 ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png) \) 。
+1.  选择"自定义和控制**DevTools** (`...`) "，然后选择"撤消**** 停靠到单独的窗口" (""撤消停靠) "，选择"停靠到底部 (扩展坞"到底部) ，或选择"停靠"以从 (扩展坞向左 ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png)) 。
 
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="选择取消停靠到单独的窗口" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
        选择 **停靠到单独的窗口位置**
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="change-placement-from-the-command-menu"></a>从命令菜单更改位置
 
 1.  [打开命令菜单][DevtoolsCommandMenu]，选择 `Shift` + `Ctrl` + `P` "Windows/Linux"或 `Command` + `Shift` + `P` macOS。
@@ -92,7 +96,7 @@ DevTools 可能会撤消停靠到单独的窗口，你可以移到单独的监�
     *  **还原最后一个扩展坞位置**
     *  **撤消停靠到单独的窗口中**
 
-    还可以从主菜单访问 [命令](#change-placement-from-the-main-menu)。
+    您还可以从主菜单访问 [命令](#change-placement-from-the-main-menu)。
 
     :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Undock 命令" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
        Undock 命令
@@ -112,6 +116,6 @@ DevTools 可能会撤消停靠到单独的窗口，你可以移到单独的监�
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/placement)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/placement)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: ae2285b4d0cca8aba8262c27f066466856f5a358
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 53681ff847083ecea30bb7f14230c711757ca5e8
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083672"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140975"
 ---
 # <a name="microsoft-edge-webview2-roadmap"></a>Microsoft EdgeWebView2 路线图
 
@@ -34,16 +34,20 @@ WebView2 团队正在计划以下主要工作，用于将来的更新。
 * Xbox 预览版
 * HoloLens预览
 
+
+<!-- ====================================================================== -->
 ## <a name="webview2-runtime-and-installer"></a>WebView2 运行时和安装程序
 
-使用常青分发模式，你可以将 WebView2 运行时的目标或链安装到用户计算机上。  Evergreen WebView2 运行时和安装程序已到达通用版本 \ (GA\) 。  有关详细信息，请导航到分发 [WebView2 应用和 WebView2 运行时][ConceptDistribution]。
+使用常青分发模式，你可以将 WebView2 运行时的目标或链安装到用户计算机上。  Evergreen WebView2 运行时和安装程序已到达 GA (通用) 。  有关详细信息，请导航到分发 [WebView2 应用和 WebView2 运行时][ConceptDistribution]。
 
 
+<!-- ====================================================================== -->
 ## <a name="fixed-version"></a>固定版本
 
-固定版本分发模式允许你打包Microsoft Edge二进制文件 <!--(a specific version of the WebView2 Runtime)--> 在本机应用程序中。  固定版本已达到通用版本 \ (GA\) 。  有关详细信息，请导航到分发 [WebView2 应用和 WebView2 运行时][ConceptDistribution]。
+固定版本分发模式允许你打包Microsoft Edge二进制文件 <!--(a specific version of the WebView2 Runtime)--> 在本机应用程序中。  固定版本已进入通用版本 (GA) 。  有关详细信息，请导航到分发 [WebView2 应用和 WebView2 运行时][ConceptDistribution]。
 
 
+<!-- ====================================================================== -->
 ## <a name="general-availability"></a>通用
 
 ### <a name="win32-cc"></a>Win32 C/C++
@@ -56,7 +60,7 @@ Win32 C/C++ SDK 已到达 GA。
 
 ### <a name="windows-ui-library-3"></a>WindowsUI 库 3
 
-可以使用 Windows App SDK 的[WinUI (3][UwpToolkitsWinui3Index] Windows UI 库 3) WebView2 控件Windows WebView2 控件。 This is currently in preview. 有关详细信息，请导航到 Windows [App SDK 路线图][WindowsAppSDK|::ref1::|]。
+可以使用 Windows App SDK 中的 WinUI3 Windows UI 库 3 (访问) [WebView2][UwpToolkitsWinui3Index] Windows控件。 This is currently in preview. 有关详细信息，请导航到 Windows [App SDK 路线图][WindowsAppSDK|::ref1::|]。
 
 
 <!-- ====================================================================== -->

@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 43ad3b41c4a762597f47846dfa7e18064183365b
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 174ee7e80e6f21041917e75f9efd5988c89a53d7
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108645"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140205"
 ---
 <!-- Copyright Kayce Basques
 
@@ -31,6 +31,8 @@ ms.locfileid: "12108645"
 
 本指南将演示如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 查看、编辑和删除 [sessionStorage][MDNSessionStorage] 键值对。
 
+
+<!-- ====================================================================== -->
 ## <a name="view-sessionstorage-keys-and-values"></a>查看 sessionStorage 的键和值
 
 1.  选择**应用程序**选项卡打开**应用程序**工具。  默认显示**清单**面板。
@@ -57,6 +59,8 @@ ms.locfileid: "12108645"
        查看 `x-sid` 键的值
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="create-a-new-sessionstorage-key-value-pair"></a>新建 sessionStorage 键值对
 
 1.  [查看域的 sessionStorage 键值对](#view-sessionstorage-keys-and-values)。
@@ -66,6 +70,8 @@ ms.locfileid: "12108645"
        为了新建键值对要双击的表的空白部分
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="edit-sessionstorage-keys-or-values"></a>编辑 sessionStorage 键或值
 
 1.  [查看域的 sessionStorage 键值对](#view-sessionstorage-keys-and-values)。
@@ -75,17 +81,23 @@ ms.locfileid: "12108645"
        编辑 `sessionStorage` 键
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="delete-sessionstorage-key-value-pairs"></a>删除 sessionStorage 的键值对
 
 1.  [查看域的 `sessionStorage` 键值对](#view-sessionstorage-keys-and-values)。
 1.  选择要删除的键值对。  DevTools 会以蓝色将其突出显示以表示其已选中。
-1.  选择 `Delete` 键或选择“**删除所选内容**”\（![删除所选内容](../media/delete-icon.msft.png)\）。
+1.  选择该 `Delete` 键或选择"删除 **所选** (![ 删除所选 ](../media/delete-icon.msft.png)) 。
 
+
+<!-- ====================================================================== -->
 ## <a name="delete-all-sessionstorage-key-value-pairs-for-a-domain"></a>删除域的所有 sessionStorage 键值对
 
 1.  [查看域的 `sessionStorage` 键值对](#view-sessionstorage-keys-and-values)。
-1.  选择**全部清除l** \（全部清除![ ](../media/clear-icon.msft.png) \）。
+1.  Choose **Clear All (** Clear All ![ ](../media/clear-icon.msft.png)) .
 
+
+<!-- ====================================================================== -->
 ## <a name="interact-with-sessionstorage-from-the-console"></a>通过控制台与 sessionStorage 交互
 
 由于你通过**控制台**运行 JavaScript，并且**控制台**有权访问页面的 JavaScript 上下文，因此可以通过**控制台**与 `sessionStorage` 交互。
@@ -114,7 +126,7 @@ ms.locfileid: "12108645"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/sessionstorage)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/sessionstorage)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

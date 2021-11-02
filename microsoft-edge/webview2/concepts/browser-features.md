@@ -1,5 +1,5 @@
 ---
-description： Microsoft Edge and WebView2 title： Feature differences between Microsoft Edge and WebView2 author： MSEdgeTeam ms.author： msedgedevrel ms.date： 09/21/2021 ms.topic： conceptual ms.prod： microsoft-edge ms.technology： webview keywords： IWebView2， IWebView2WebView， WebView2， webview， wpf 应用， wpf， edge， ICoreWebView2， ICoreWebView2Host， 浏览器控件， 边缘 htmlno-loc：
+description： Microsoft Edge and WebView2 title： Feature differences between Microsoft Edge and WebView2 author： MSEdgeTeam ms.author： msedgedevrel ms.date： 09/21/2021 ms.topic： conceptual ms.prod： microsoft-edge ms.technology： webview keywords： IWebView2， IWebView2WebView， WebView2， webview， wpf 应用， wpf， edge， ICoreWebView2， ICoreWebView2Host， 浏览器控件， edge htmlno-loc：
 - "Autofill for Addresses"
 - "Autofill for Passwords"
 - "Autofill for Payments""
@@ -33,6 +33,8 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 *   启用或关闭功能的功能。
 *   有关键盘快捷方式的指南。
 
+
+<!-- ====================================================================== -->
 ## <a name="design-guidelines"></a>设计指南
 
 在 WebView2 上下文中，浏览器功能遵循以下设计准则。
@@ -40,6 +42,8 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 *   大多数功能在 WebView2 和 webView2 Microsoft Edge。  如果功能在 WebView2 上下文中不起作用或出于其他原因，则功能会修改或关闭。
 *   WebView2 功能不包括Microsoft Edge品牌。
 
+
+<!-- ====================================================================== -->
 ## <a name="browser-features"></a>浏览器功能
 
 下表显示了与浏览器浏览器不同的 WebView2 Microsoft Edge功能。
@@ -48,7 +52,7 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 *   **可** 配置指示可以使用 WebView2 API 或命令行开关打开或关闭该功能。
 
 > [!NOTE]
-> 本文不介绍使用命令行开关修改功能。  有关使用命令行开关打开和关闭功能的信息，请导航到命令行Chromium[列表][PeterExperimentsChromiumCommandLineSwitches]。
+> 本文不介绍使用命令行开关修改功能。  有关使用命令行开关打开和关闭功能的信息，请导航到"Chromium[开关"][PeterExperimentsChromiumCommandLineSwitches]列表。
 
 | 功能 | 默认状态 | 可配置 | 详细信息 |
 |:--- |:--- |:--- | :--- |
@@ -74,8 +78,10 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 | Tracking Prevention | 开`*` | 否 | `*` 此功能的 UI 已删除，但基础功能仍然可用。  跟踪防护始终设置为平衡。|
 | Profile and Identity | 关闭 | 否 | 同步收藏夹、Cookie 等的功能已关闭。  |
 | Windows Defender Application Guard | 关闭 | 否 | 此功能已关闭。  |
-| edge:// URLs | 查看详细信息 | 否 | 设置浏览器Microsoft Edge URL `edge://` 上。  由于其中大多数网页Microsoft Edge WebView2 上下文中的品牌或无意义的，因此其中一些 URL 已关闭。  有关详细信息，请导航到["阻止的内部 URL"。](#blocked-internal-urls)  |
+| edge:// URLs | 查看详细信息 | 否 | 设置浏览器Microsoft Edge URL `edge://` 上。  由于这些网页中的大多数Microsoft Edge WebView2 的上下文中具有品牌或没有意义，因此其中一些 URL 已关闭。  有关详细信息，请导航到["阻止的内部 URL"。](#blocked-internal-urls)  |
 
+
+<!-- ====================================================================== -->
 ## <a name="web-platform-features"></a>Web 平台功能
 
 下表显示了当前不可用的 WebView2 平台功能。
@@ -85,6 +91,8 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 | 推送通知 | WebView2 中未实现此功能。 |
 | Web Payment API | 此功能已关闭。 |
 
+
+<!-- ====================================================================== -->
 ## <a name="blocked-internal-urls"></a>阻止的内部 URL
 
 以下Microsoft Edge和 Google Chrome 设置网页在 WebView2 中不可用。
@@ -105,6 +113,8 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 *   `edge://supervised-user-internals`
 *   `edge://version`
 
+
+<!-- ====================================================================== -->
 ## <a name="additional-keyboard-shortcuts-information"></a>其他键盘快捷方式信息
 
 键盘快捷方式或键绑定在 Microsoft Edge 和 WebView2 中受支持。  更新Microsoft Edge时，默认键绑定可能会更改。  此外，如果 WebView2 现在支持此功能，则默认情况下关闭的键盘快捷方式可能会改为打开。  若要避免对键盘快捷方式进行此类更改，可以设置为 ，这将关闭访问浏览器功能的所有键，但会启用所有基本的文本编辑和移动 `AreBrowserAcceleratorKeysEnabled` `FALSE` 快捷方式。
@@ -125,7 +135,7 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 | 选择最后一个选项卡 | `Ctrl`+`9` |
 | 选择下一个选项卡 | `Ctrl`+`Tab` |
 | 选择上一个选项卡 | `Ctrl`+`Shift`+`Tab` |
-| 选择选项卡 \ (1 - 8\)  | `Ctrl`+`(1-8)` |
+| 选择选项卡 (1 - 8)  | `Ctrl`+`(1-8)` |
 | 显示 Favorites 栏 `*` | `Ctrl`+`Shift`+`B` |
 | 帮助 | `F1` |
 | 焦点下一个窗格 `*` | `F6` |

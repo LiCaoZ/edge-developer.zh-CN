@@ -7,12 +7,12 @@ ms.date: 04/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 兼容性， Web 平台， 密码展示， 眼睛图标
-ms.openlocfilehash: 4eb7144fa8299fd876360b81fb2d8dbaa382b37c
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+ms.openlocfilehash: 95a1cd8d70b31330efa485f3cf9fc7204409ca9c
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12033602"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141143"
 ---
 # <a name="customize-the-password-reveal-button"></a>自定义“密码显示”按钮
 
@@ -35,6 +35,8 @@ ms.locfileid: "12033602"
 
 默认情况下，密码 **显示** 按钮插入到所有 HTML 元素的 Shadow DOM 中，并将 `input` 设置为 `type` `"password"` 。  从 Microsoft Edge版本 87 开始，用户或[企业][DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled]可能会全局禁用此功能。  您（Web 设计人员和开发人员）应该希望大多数Microsoft Edge用户拥有默认体验。
 
+
+<!-- ====================================================================== -->
 ## <a name="remove-the-password-reveal-control"></a>删除密码显示控件
 
 通过定位伪 **元素，** 你可以完全删除密码显示 `::-ms-reveal` 按钮。
@@ -47,6 +49,8 @@ ms.locfileid: "12033602"
 
 但是，你应该考虑利用密码 **显示** 按钮。  本机 **密码显示** 按钮在行为 [中](#visibility-of-the-control) 内置了重要的安全措施。
 
+
+<!-- ====================================================================== -->
 ## <a name="customize-the-control-style"></a>自定义控件样式
 
 你可以改为修改密码显示按钮的样式，以更好地匹配网站的视觉语言，**** 而不是完全删除控件。  以下代码段提供了此类样式的示例。
@@ -69,6 +73,8 @@ ms.locfileid: "12033602"
 
 *   目前，没有状态选择器可用于设置密码显示按钮的切换 **状态** 样式。
 
+
+<!-- ====================================================================== -->
 ## <a name="visibility-of-the-control"></a>控件的可见性
 
 在 **用户向** 密码字段中输入文本之前，密码显示 **按钮不可用** 。  为了帮助确保用户的密码输入安全，浏览器在下列情况下禁止显示该按钮。
@@ -76,7 +82,7 @@ ms.locfileid: "12033602"
 *   如果焦点从密码 **字段移** 开，浏览器将删除 **密码显示** 按钮。
 *   如果脚本修改 **密码** 字段，浏览器将删除 **密码显示** 按钮。
 
-如果**删除密码**显示按钮，用户必须删除密码字段的内容，密码**显示按钮**才能**** 再次显示。 如果用户离开未锁定的设备，此行为可防止某人对显示密码进行细微的调整。
+如果**删除密码**显示按钮，用户必须删除密码字段的内容，密码**显示按钮**才能**** 再次显示。 如果用户离开未锁定的设备，此行为将阻止某人进行细微的调整以显示密码。
 
 如果使用**密码**管理器自动填充密码字段，**** 则密码显示按钮不可用。
 

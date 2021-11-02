@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: e8afa21c82dd4bc9868c5201ad10b2799fe434f4
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: c4a405c69cffd57b3aba4e01dbad28edc329dd53
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083378"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140667"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,15 +29,21 @@ ms.locfileid: "12083378"
    limitations under the License.  -->
 # <a name="optimize-website-speed-with-microsoft-edge-devtools"></a>使用 Microsoft Edge 开发人员工具优化网站速度
 
+
+<!-- ====================================================================== -->
 ## <a name="goal-of-tutorial"></a>教程目标
 
 本教程将指导你如何使用 Microsoft Edge 开发人员工具找到加快网站加载速度的方法。
 
+
+<!-- ====================================================================== -->
 ## <a name="prerequisites"></a>必备条件
 
 *   你应具备基本的 Web 开发体验，类似此[Web 开发类简介][CourseraIntroductionWebDevelopmentClass]中所教授的内容。
 *   你无需了解加载性能的任何信息。  本教程中将帮助你了解。
 
+
+<!-- ====================================================================== -->
 ## <a name="introduction"></a>简介
 
 这是 Tony。  Tony 在猫界很有名。  他生成了一个网站，让粉丝能够了解他最喜爱的食物。  虽然粉丝们很喜欢这个网站，但 Tony 不断听到有关网站加载缓慢的抱怨。  Tony 要求你帮忙加快站点速度。
@@ -46,6 +52,8 @@ ms.locfileid: "12083378"
    Tony 猫
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="step-1-audit-the-site"></a>步骤 1：审核站点
 
 无论何时开始改进站点的加载性能，**始终都从审核开始**。
@@ -77,13 +85,13 @@ ms.locfileid: "12083378"
        演示选项卡
     :::image-end:::
 
-1.  选择 `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\)。  Microsoft Edge 开发人员工具将在演示旁边打开。
+1.  选择 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS) 。  Microsoft Edge 开发人员工具将在演示旁边打开。
 
     :::image type="complex" source="../media/speed-glitch-tony-show-live-console.msft.png" alt-text="开发人员工具和演示" lightbox="../media/speed-glitch-tony-show-live-console.msft.png":::
        开发人员工具和演示
     :::image-end:::
 
-对于本教程中的其余屏幕截图，开发人员工具显示在单独窗口中。  选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)，打开“命令菜单”，键入`Undock` ，然后选择**移除进单独窗口**。
+对于本教程中的其余屏幕截图，开发人员工具显示在单独窗口中。  Select `Control` + `Shift` + `P` (Windows， Linux) or `Command` + `Shift` + `P` (macOS) to open the Command Menu， typing `Undock` ， and then selecting **Undock into separate window**.
 
 :::image type="complex" source="../media/speed-console.msft.png" alt-text="移除的开发人员工具" lightbox="../media/speed-console.msft.png":::
    移除的开发人员工具
@@ -93,7 +101,7 @@ ms.locfileid: "12083378"
 
 基线是指在改进性能之前有关站点执行情况的记录。
 
-1.  选择**审核**工具。  它可能隐藏在**更多面板** \(![More Panels](../media/more-panels-icon.msft.png)\) 按钮的后面。  此面板包含"灯塔"，因为支持“审核”面板的项目名为**灯塔**。
+1.  选择**审核**工具。  它可能隐藏在"更多面板**** ![ " ("更多) ](../media/more-panels-icon.msft.png) 按钮后面。  此面板包含"灯塔"，因为支持“审核”面板的项目名为**灯塔**。
 
     [!INCLUDE [audits-panel-note](../includes/audits-panel-note.md)]
 
@@ -184,6 +192,8 @@ ms.locfileid: "12083378"
    **通过审核** 部分
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="step-2-experiment"></a>步骤 2：试验
 
 审核报告中的机会部分提供如何改进页面性能的提示。  在此部分，你将对基本代码实施建议性更改，并在每次更改后审核站点，从而测量更改对站点速度的影响。
@@ -277,7 +287,7 @@ ms.locfileid: "12083378"
 再次审核页面，测量文本压缩对页面加载性能的影响类型：
 
 1.  选择**审核**工具。
-1.  选择**执行审核** \(![Perform an audit](../media/perform-icon.msft.png)\)。
+1.  Choose **Perform an audit (** Perform an audit ![ ](../media/perform-icon.msft.png)) .
 1.  保留设置与之前相同。
 1.  选择**运行审核**。
 
@@ -335,13 +345,13 @@ ms.locfileid: "12083378"
 
 然后，首个任务是查找页面加载时无需运行的代码。
 
-1.  选择 **"消除呈现阻止资源** "以显示阻止的资源： 和 `lodash.js` `jquery.js` 。
+1.  选择 **"消除呈现阻止资源** "以显示阻止的资源： `lodash.js` 和 `jquery.js` 。
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png" alt-text="有关消除阻止渲染资源机会的详细信息" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png":::
        有关**消除阻止渲染资源机会**的详细信息
     :::image-end:::
 
-1.  选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)， 打开“命令菜单”，开始键入 `Coverage` ，然后选择**显示覆盖**。
+1.  Select `Control` + `Shift` + `P` (Windows， Linux) or `Command` + `Shift` + `P` (macOS) to open the Command Menu， start typing `Coverage` ， and then choose Show **Coverage**.
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png" alt-text="从审核面板打开命令菜单" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png":::
        从**审核**面板打开“命令菜单”
@@ -351,7 +361,7 @@ ms.locfileid: "12083378"
        **覆盖**工具
     :::image-end:::
 
-1.  选择**刷新** \(![Refresh](../media/reload-icon.msft.png)\)。  **覆盖**工具概述了加载页面时 `bundle.js`、`jquery.js`和`lodash.js`中运行的代码量。  在下图中，约 76% 的 jQuery 文件和 30% 的 Lodash 文件未被使用。
+1.  选择 **"刷新** (![ 刷新 ](../media/reload-icon.msft.png)) 。  **覆盖**工具概述了加载页面时 `bundle.js`、`jquery.js`和`lodash.js`中运行的代码量。  在下图中，约 76% 的 jQuery 文件和 30% 的 Lodash 文件未被使用。
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png" alt-text="覆盖报告" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png":::
        覆盖报告
@@ -370,14 +380,14 @@ ms.locfileid: "12083378"
 加载页面时是否需要`jquery.js`和`lodash.js`文件？  **请求阻止**工具显示资源不可用时会发生的状况。
 
 1.  选择**网络**工具。
-1.  选择 `Control` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\) ，再次打开“命令菜单”。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 以再次打开命令菜单。
 1.  开始键入`blocking`，然后选择**显示请求阻止**。
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png" alt-text="请求阻止工具" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png":::
        **请求阻止**工具
     :::image-end:::
 
-1.  选择**添加模式** \(![Add Pattern](../media/add-pattern-icon.msft.png)\)，键入`/libs/*`，然后选择`Enter`进行确认。
+1.  选择 **添加模式** (![ 添加 ](../media/add-pattern-icon.msft.png)) ，键入 `/libs/*` ，然后选择 `Enter` 进行确认。
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png" alt-text="添加模式，阻止对库目录的任何请求" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png":::
        添加模式，阻止对`libs`目录的任何请求
@@ -389,7 +399,7 @@ ms.locfileid: "12083378"
        **网络**工具显示请求已被阻止
     :::image-end:::
 
-1.  选择**删除所有模式** \(![Remove all patterns](../media/remove-icon.msft.png)\)，删除`/libs/*`阻止模式。
+1.  选择 **删除所有 (** ![ 删除所有) ](../media/remove-icon.msft.png) 删除 `/libs/*` 阻止模式。
 
 通常，**请求阻止**工具可以用于模拟页面在给定资源不可用时的行为方式。
 
@@ -424,9 +434,9 @@ ms.locfileid: "12083378"
 目标是使用“性能”面板分析页面加载时主线程执行的工作，并找到延迟或删除不必要工作的方法。
 
 1.  选择**性能**工具。
-1.  单击**捕获设置** \(![Capture Settings](../media/capture-icon.msft.png)\)。
+1.  选择 **"捕获设置 (** ![ 捕获 ](../media/capture-icon.msft.png) 设置) 。
 1.  将**网络**设置为**慢速 3G**，**CPU**设置为**6x 减速**。  移动设备的硬件约束通常比笔记本电脑或台式机多，因此这些设置可以让你就像使用不那么强大的设备一样体验页面加载。
-1.  选择**刷新** \(![Refresh](../media/reload-icon.msft.png)\)。  开发人员工具会刷新页面，然后生成加载页面所执行的所有工作的可视化效果。  此可视化效果称为**跟踪**。
+1.  选择 **"刷新** (![ 刷新 ](../media/reload-icon.msft.png)) 。  开发人员工具会刷新页面，然后生成加载页面所执行的所有工作的可视化效果。  此可视化效果称为**跟踪**。
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="页面加载性能工具跟踪" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
        页面加载**性能**工具跟踪
@@ -505,6 +515,8 @@ ms.locfileid: "12083378"
 
 如果你倾向于更像`console.log()`的方法，则[用户计时 API][MDNUserTimingApi]将允许你任意标记应用生命周期的某些阶段，从而跟踪每个阶段花费的时间。
 
+
+<!-- ====================================================================== -->
 ## <a name="summary"></a>摘要
 
 *   无论何时开始优化站点的加载性能，始终都从审核开始。  审核会建立基线，并提供如何改进的提示。
@@ -535,7 +547,7 @@ ms.locfileid: "12083378"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/speed/get-started)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/speed/get-started)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

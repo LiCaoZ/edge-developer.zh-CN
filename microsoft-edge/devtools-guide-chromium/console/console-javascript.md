@@ -7,21 +7,21 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， JavaScript， Web 开发， f12 工具， devtools
-ms.openlocfilehash: e11e031fd386f23b6bff21d1122dd1fb838e5914
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: c98b4d080387ac4796da90968e25ae31a19351ac
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12081992"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140289"
 ---
 # <a name="the-console-as-a-javascript-environment"></a>作为 JavaScript 环境的控制台
 
-浏览器**** DevTools 中的控制台工具是一个[REPL][WikiReadEvalPrintLoop]环境。  这意味着你可以编写控制台中立即 **运行** 的任何 JavaScript。
+浏览器**** DevTools 中的控制台工具是一个[REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)环境。  这意味着你可以编写控制台中立即 **运行** 的任何 JavaScript。
 
 若要尝试，请完成以下操作。
 
 1.  打开“**控制台**”。
-    *   选择 `Control` + `Shift` + `J` \(Windows、Linux\) 或 `Command` + `Option` + `J` \(macOS\)。
+    *   选择 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS) 。
 1.  键入 `2 + 2`。  **当您键入**时，控制台 `4` 已经在下一行上显示结果。  该功能 `Eager evaluation` 可帮助你编写有效的 JavaScript。  键入错误或有效结果是否存在时，它将显示结果。
 
 :::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="控制台在键入时显示 2 + 2 实时的结果" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
@@ -34,6 +34,8 @@ ms.locfileid: "12081992"
    连续运行多个 JavaScript 表达式
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="autocompletion-to-write-complex-expressions"></a>编写复杂表达式的自动完成
 
 最后一个示例可能看起来不令人难看，但 **控制台** 可帮助你使用出色的自动完成功能编写复杂的 JavaScript。  此功能是了解以前不知道的方法的一种好方法。
@@ -51,16 +53,20 @@ ms.locfileid: "12081992"
    **** JavaScript 表达式的控制台自动完成
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="console-history"></a>控制台历史记录
 
 与许多其他命令行体验一样，您也有命令历史记录。  选择 `Arrow Up` 以显示之前输入的命令。  自动完成还会保留以前键入的命令的历史记录。  可以键入之前命令的前几个字母，之前的选项会显示在文本框中。
 
-此外， **控制台** 还提供了很多实用程序 [方法][DevtoolsConsoleUtilities] ，可简化您的生活。  例如， `$_` 始终包含控制台 中运行的最后一个表达式 **的结果**。
+此外， **控制台** 还提供了很多实用程序 [方法](utilities.md) ，可简化您的生活。  例如， `$_` 始终包含控制台 中运行的最后一个表达式 **的结果**。
 
 :::image type="complex" source="../media/console-javascript-console-history.msft.png" alt-text="控制台中的 $_ 表达式始终包含最后的结果" lightbox="../media/console-javascript-console-history.msft.png":::
     控制台 `$_` 中的表达式 **始终** 包含最后的结果
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="multiline-edits"></a>多行编辑
 
 默认情况下， **控制台只** 为你提供一行来编写 JavaScript 表达式。  选择 时，代码将运行 `Enter` 。 单行限制可能会使您费时无用。  若要绕绕一行限制，请选择 `Shift` + `Enter` 而不是 `Enter` 。  在下面的示例中，显示的值是按顺序运行的所有行的结果。
@@ -75,11 +81,13 @@ ms.locfileid: "12081992"
     **控制台** 已使用大括号和缩进来识别多行表达式
 :::image-end:::
 
-## <a name="network-requests-using-top-level-await"></a>使用顶级 await 请求的网络 () 
 
-除了在你自己的脚本中， **控制台** 还 [支持顶级 await][GithubTc39ProposalTopLevelAwait] 在它内运行任意异步 JavaScript。  例如，使用 API 时 `fetch` 无需使用 `await` async 函数包装语句。
+<!-- ====================================================================== -->
+## <a name="network-requests-using-top-level-await"></a>使用顶级 await () 的网络请求
 
-若要获取 Microsoft Edge[开发人员][GithubMicrosoftVscodeEdgeDevtools]工具开发人员存储库上Visual Studio Code GitHub 50 个问题，请完成以下操作。
+除了在你自己的脚本中， **控制台** 还 [支持顶级 await](https://github.com/tc39/proposal-top-level-await) 在它内运行任意异步 JavaScript。  例如，使用 API 时 `fetch` 无需使用 `await` async 函数包装语句。
+
+若要获取 Microsoft Edge 开发人员工具 for Visual Studio Code [GitHub](https://github.com/microsoft/vscode-edge-devtools)存储库上归档的最后 50 个问题，请完成以下操作。
 
 1.  打开“**控制台**”。
 1.  复制并粘贴以下代码段，获取包含 10 个条目的对象。
@@ -108,18 +116,4 @@ copy(await (await fetch(
 )).json())
 ```
 
-使用 **控制台** 作为实践 JavaScript 功能和进行一些快速计算很好的方法。  真正的功能是，您有权访问 [window][MdnDocsWebApiWindow] 对象。  你可以 [与控制台 中的 DOM 交互][DevtoolsConsoleConsoleDomInteraction]。
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "使用控制台与 DOM 服务器|Microsoft Docs"
-[DevtoolsConsoleUtilities]: ./utilities.md "控制台实用程序 API 参考 | Microsoft Docs"
-
-[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
-
-[GithubTc39ProposalTopLevelAwait]: https://github.com/tc39/proposal-top-level-await "ECMAScript 建议：顶级 await - tc39/proposal-top-level-await |GitHub"
-
-[MdnDocsWebApiWindow]: https://developer.mozilla.org/docs/Web/API/Window "窗口|MDN"
-
-[WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read-eval–print 循环|Wikipedia"
+使用 **控制台** 作为实践 JavaScript 功能和进行一些快速计算很好的方法。  真正的功能是，您有权访问 [window](https://developer.mozilla.org/docs/Web/API/Window) 对象。  你可以 [与控制台 中的 DOM 交互](console-dom-interaction.md)。

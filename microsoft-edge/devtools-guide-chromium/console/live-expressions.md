@@ -7,20 +7,22 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 94a39b6f8b0ca380a2ac2f1bf0b4d7e765215436
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 565282010ff5a9c06cf54111ef597d7c773b5461
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082951"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140688"
 ---
 # <a name="monitor-changes-in-javascript-using-live-expressions"></a>使用 Live Expressions 监视 JavaScript 中的更改
 
 **实时表达式** 是监视进行大量更改的 JavaScript 表达式的一种很好的方法。    你可以将特定 JavaScript 表达式固定到控制台的顶部，而不是让许多控制台消息阅读和 **导航**。
 
+
+<!-- ====================================================================== -->
 ## <a name="add-a-new-live-expression"></a>添加新实时表达式
 
-To start， choose the **Create live expression** \ (eye\) button next to the **Filter** textbox.  选择它后，将显示一个文本框，供您在文本框中输入新表达式。
+To start， choose the **Create live expression (** eye) button next to the **Filter** textbox.  选择它后，将显示一个文本框，供您在文本框中输入新表达式。
 
 :::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="选择&quot;新建实时表达式&quot;按钮以打开文本框以键入表达式" lightbox="../media/console-live-expressions-new.msft.png":::
     选择 `New live expression` 按钮以打开文本框以键入表达式
@@ -31,7 +33,7 @@ To start， choose the **Create live expression** \ (eye\) button next to the **
 1.  打开 **Live Expression** 文本框。
 1.  键入 `document.activeElement`。
 1.  若要保存表达式，请完成以下操作之一。
-    *   选择 `Control`+`Enter`（Windows、Linux）或 `Command`+`Enter` (macOS)。
+    *   选择 `Control` + `Enter` (Windows、Linux) 或 `Command` + `Enter` (macOS) 。
     *   在 **"Live Expression"文本框之外** 选择。
 
 表达式现在为活动表达式， `body` 并显示为结果。
@@ -52,6 +54,8 @@ To start， choose the **Create live expression** \ (eye\) button next to the **
     导航到网页中的不同元素以更新 Live **Expression**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="remove-live-expressions"></a>删除 Live Expressions
 
 只要 **使 Live Expression** 保持活动状态，它就可用。  若要删除 Live **Expression，** 请选择它的 `x` 旁边。
@@ -60,11 +64,13 @@ To start， choose the **Create live expression** \ (eye\) button next to the **
     若要删除 **Live Expressions，** 请选择 `x` 其旁边的
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="replace-console-logging-with-live-expressions"></a>将控制台日志记录替换为 Live Expressions
 
 您可以创建多个表达式，并跨浏览器会话和窗口保留每个表达式。  **实时** 表达式是一种减少调试工作流中的噪音的方法。
 
-例如，您希望监视当前网页中的鼠标移动。  导航到 ["记录鼠标移动][GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml]"演示，打开 **控制台**，并四处移动鼠标以显示包含大量信息的日志。
+例如，您希望监视当前网页中的鼠标移动。  导航到 ["记录鼠标移动](https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html)"演示，打开 **控制台**，并四处移动鼠标以显示包含大量信息的日志。
 
 :::image type="complex" source="../media/console-live-expression-mouse-logging.msft.png" alt-text="控制台显示有关鼠标位置的很多信息" lightbox="../media/console-live-expression-mouse-logging.msft.png":::
     **控制台** 显示有关鼠标位置的很多信息
@@ -74,7 +80,7 @@ To start， choose the **Create live expression** \ (eye\) button next to the **
 
 若要尝试 **Live Expressions** 作为替代方法，请完成以下操作。
 
-1.  导航到鼠标 [移动而不记录演示][GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml]。
+1.  导航到鼠标 [移动而不记录演示](https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html)。
 1.  为 和 创建 **Live** `x` `y` Expressions。
 
 使用**Live Expressions 时**，始终在屏幕的相同部分获取信息，并保留控制台**** 日志，以获得不会更改太多的值。
@@ -84,9 +90,3 @@ To start， choose the **Create live expression** \ (eye\) button next to the **
 :::image-end:::
 
 **Live Expressions** 以独占方式在计算机上运行，无需更改代码中要显示任何内容。  **实时** 表达式是确保只显示要调试的信息的一种很好的方法。  此外 **，Live Expressions** 还可帮助您限制用户计算机上的噪音。
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html "控制台消息示例：使用表|GitHub"
-[GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html "无需日志记录即可移动鼠标|GitHub"

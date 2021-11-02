@@ -7,18 +7,18 @@ ms.date: 08/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， vs code， visual studio code， webhint
-ms.openlocfilehash: 374ed05bf5956f20c5f4ca51067608026d90d87a
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: c3cfe40b86ba36025b5f883078f546531b3e68c4
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083588"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139547"
 ---
 # <a name="the-webhint-extension-for-visual-studio-code"></a>webhint 扩展Visual Studio Code
 
 使用[Webhint（][WebhintMain]一个可自定义的 Lint 工具）可改进网站的辅助功能、性能、跨浏览器PWA兼容性和安全性。  它会检查代码的最佳实践和常见错误。 此开放源代码项目最初由 Microsoft Edge 开发，现在是[OpenJS Foundation 的一部分][OpenjsFoundation]。  Microsoft Edge团队将继续与社区中的 Web 开发人员一起为 webhint 做贡献。
 
-通过添加 webhint 扩展以识别并修复 HTML、CSS、JavaScript、TypeScript 等Visual Studio Code。  提示显示为内联下划线，并汇总在"问题 **"** 窗格中。
+通过添加 webhint 扩展以识别并修复 HTML、CSS、JavaScript、TypeScript 等中的问题Visual Studio Code。  提示显示为内联下划线，并汇总在"问题 **"** 窗格中。
 
 :::image type="complex" source="./media/webhint-extension.png" alt-text="webhint 扩展Visual Studio Code":::
    webhint 扩展Visual Studio Code
@@ -28,13 +28,13 @@ ms.locfileid: "12083588"
 <!-- ====================================================================== -->
 ## <a name="installing-webhint"></a>安装 Webhint
 
-若要从网站内安装 webhint Visual Studio Code，请导航到[webhint 扩展Visual Studio Code。](index.md#the-webhint-extension-for-visual-studio-code) <!-- in the article _Visual Studio Code overview_. -->  或者，也可以安装[Webhint 扩展，Visual Studio Code][VisualstudioMarketplaceWebhint]应用商店Visual Studio Webhint。
+若要从 webhint 安装 webhint 扩展Visual Studio Code，请导航到[webhint extension for Visual Studio Code](index.md#the-webhint-extension-for-visual-studio-code)。 <!-- in the article _Visual Studio Code overview_. -->  或者，你可以从 Visual Studio Code Marketplace 安装[webhint][VisualstudioMarketplaceWebhint] Visual Studio扩展。
 
 
 <!-- ====================================================================== -->
 ## <a name="configuring-webhint-in-visual-studio-code"></a>在网站中配置 webhint Visual Studio Code
 
-此扩展使用默认配置[json][GithubWebhintioIndexjson]文件，用于激活 HTML、CSS、模板系统 \ (JSX/TSX、Angular 等的提示和分析程序\) 、JavaScript/TypeScript 等。
+此扩展使用默认配置[json][GithubWebhintioIndexjson]文件，用于激活 HTML、CSS、模板系统 (JSX/TSX、Angular 等) 、JavaScript/TypeScript 等的提示和分析程序。
 
 ```json
 {

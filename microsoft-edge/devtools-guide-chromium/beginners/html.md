@@ -7,12 +7,12 @@ ms.date: 08/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发工具，面向初学者的开发工具，面向初学者的开发工具 HTML，面向初学者的开发工具 DOM，开发者工具 html 教程，开发者工具 html 教程，开发者工具文档对象模型教程
-ms.openlocfilehash: 25585536d3095a435bf151a403300e1cbf76f195
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: bc897f346037cfabe50b3788ecb886541cceef6d
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082034"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140450"
 ---
 <!-- Copyright Katherine Jackson
 
@@ -29,10 +29,12 @@ ms.locfileid: "12082034"
    limitations under the License.  -->
 # <a name="devtools-for-beginners-get-started-with-html-and-the-dom"></a>面向初学者的开发工具：HTML 和 DOM 入门
 
-这是一系列教程中第一个介绍 Web 开发基础知识的教程。 了解一组 Web 开发人员工具（名为 Microsoft Edge DevTools）可提高工作效率。
+这是一系列教程中第一个介绍 Web 开发基础知识的教程。 了解一组名为 devTools Microsoft Edge Web 开发人员工具，这些工具可提高工作效率。
 
-本教程介绍 HTML 和 [文档对象模型](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) \ (DOM\)。 HTML 是 Web 开发的核心技术之一。 它是控制网页结构和内容的语言。 DOM 还与网页的结构和内容相关，我们稍后将了解相关内容。
+本教程介绍 HTML 和 [文档对象模型](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) 。 HTML 是 Web 开发的核心技术之一。 它是控制网页结构和内容的语言。 DOM 还与网页的结构和内容相关，我们稍后将了解相关内容。
 
+
+<!-- ====================================================================== -->
 ## <a name="goals"></a>目标
 
 你将通过构建网站来学习 Web 开发。  完成 **DevTools for Beginners** 系列的所有教程后，完成的网站将如下图所示。
@@ -49,18 +51,22 @@ ms.locfileid: "12082034"
 
 你还将拥有一个工作网站。 您可以使用该网站来承载简历或博客。
 
+
+<!-- ====================================================================== -->
 ## <a name="prerequisites"></a>必备条件
 
 在尝试本教程之前，请完成以下先决条件：
 
-*   如果不熟悉 HTML，请阅读 [HTML 文档入门][MDNGettingStartedHtml]。
-*   下载 [Microsoft Edge][MicrosoftEdgeInsider] Web 浏览器。  本教程使用一组内置于 Microsoft Edge 中的 Web 开发工具（称为 Microsoft Edge DevTools）。
+*   如果不熟悉 HTML，请阅读 [HTML 文档入门](https://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/Getting_started)。
+*   下载 [Microsoft Edge](https://www.microsoftedgeinsider.com) Web 浏览器。  本教程使用一组内置于 Microsoft Edge 中的 Web 开发工具（称为 Microsoft Edge DevTools）。
 
+
+<!-- ====================================================================== -->
 ## <a name="set-up-your-code"></a>设置代码
 
 你将在 Glitch Online 代码编辑器中构建一个网站。
 
-1.  打开[源代码][GlitchAlluringShockIndex]。 在本教程中，此选项卡称为" **编辑器"** 选项卡。
+1.  打开[源代码](https://glitch.com/edit/#!/alluring-shock?path=index.html)。 在本教程中，此选项卡称为" **编辑器"** 选项卡。
 
     :::image type="complex" source="media/beginners-html-setup1.msft.png" alt-text="编辑器选项卡" lightbox="media/beginners-html-setup1.msft.png":::
        编辑器选项卡
@@ -78,7 +84,7 @@ ms.locfileid: "12082034"
        重新混合的项目
     :::image-end:::
 
-1.  如果计划完成本系列中的下一教程，请选择"使用 Facebook、GitHub或 Google 帐户登录小故障"; **** 或向自己发送一个神奇链接。 如果选择不登录帐户，则关闭编辑器选项卡后无法编辑项目。
+1.  如果计划完成本系列中的下一教程，请选择"使用 Facebook、GitHub或 Google 帐户登录到小故障"; **** 或向自己发送一个神奇链接。 如果选择不登录帐户，则关闭编辑器选项卡后无法编辑项目。
 
 1.  选择 **"**  >  **在新建窗口中显示"。**  将打开一个新选项卡，显示实时页面。 在本教程中，此选项卡称为实时**选项卡**。
 
@@ -86,6 +92,8 @@ ms.locfileid: "12082034"
        实时选项卡
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="add-content"></a>添加内容
 
 你的网站需要更多信息。 完成以下步骤以添加一些内容。
@@ -150,6 +158,8 @@ ms.locfileid: "12082034"
     :::image type="complex" source="media/beginners-html-add5.msft.png" alt-text="新列表在活动选项卡中可见" lightbox="media/beginners-html-add5.msft.png":::
        新列表在活动选项卡中可见 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="experiment-with-content-changes-in-microsoft-edge-devtools"></a>在 Microsoft Edge 开发人员工具中试验内容更改
 
 如果要开发包含大量 HTML 的页面，在编辑器选项卡和实时选项卡之间来回切换查看更改将变得繁琐。 Microsoft Edge 开发人员工具有助于尝试内容更改，而无需离开实时**选项卡**。
@@ -210,7 +220,7 @@ ms.locfileid: "12082034"
 :::image type="complex" source="media/beginners-html-edit2.msft.png" alt-text="将节点更新为 HTML" lightbox="media/beginners-html-edit2.msft.png":::
     将节点更新为 HTML ：：image-end：：：
 
-1.  选择 `Control` + `Enter` \ (Windows、Linux\) 或 `Command` + `Enter` \ (macOS\) 保存更改，或在框外选择。 更改将自动显示在页面实时视图中。 文本 `Your site!` 已替换为新内容。
+1.  Select `Control` + `Enter` (Windows， Linux) or `Command` + `Enter` (macOS) to save your changes， or select outside the box. 更改将自动显示在页面实时视图中。 文本 `Your site!` 已替换为新内容。
 
     :::image type="complex" source="media/beginners-html-edit3.msft.png" alt-text="新内容会立即显示在页面上" lightbox="media/beginners-html-edit3.msft.png":::
        新内容会立即显示在页面上
@@ -218,6 +228,8 @@ ms.locfileid: "12082034"
 
 此工作流仅适用于试验内容更改。 如果刷新页面或关闭选项卡，更改将丢失。 如果要保存更改，请手动将代码复制到 HTML 文件中。 接下来的几节将介绍从 DOM 树更改内容的更多方法。
 
+
+<!-- ====================================================================== -->
 ## <a name="reorder-nodes"></a>对节点重新排序
 
 您还可以更改 DOM 节点的顺序。 例如，在网页上，导航菜单靠近底部。 若要将其移动到顶部，请执行以下步骤。
@@ -246,6 +258,8 @@ ms.locfileid: "12082034"
        节点已删除
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="copy-your-changes"></a>复制更改
 
 你已接近完成。 你在 DevTools 中对页面进行了一些更改，但它们不会保存到源代码中。
@@ -297,34 +311,17 @@ ms.locfileid: "12082034"
     :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 
-*   完成本系列的下一个教程[CSS入门][DevToolsBeginnersCss]，以了解如何设置页面样式并尝试在Microsoft Edge DevTools中进行样式更改。
-*   阅读[ DOM 简介][MDNIntroductionDom]，详细了解 DOM。
-*   有关更多动手 Web 开发体验， 请查看[Web 开发简介][CourseraIntroductionToWebDevelopment]等课程。
+*   完成本系列的下一个教程[CSS入门](css.md)，以了解如何设置页面样式并尝试在Microsoft Edge DevTools中进行样式更改。
+*   阅读[ DOM 简介](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction)，详细了解 DOM。
+*   有关更多动手 Web 开发体验， 请查看[Web 开发简介](https://www.coursera.org/learn/web-development)等课程。
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevToolsBeginnersCss]: ./css.md "适用于初学者的 DevTools：CSS |Microsoft Docs"
-
-[MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge 预览体验成员"
-
-[CourseraIntroductionToWebDevelopment]: https://www.coursera.org/learn/web-development "Web 开发类简介 | Coursera"
-
-[GlitchAlluringShockIndex]: https://glitch.com/edit/#!/alluring-shock?path=index.html "index.html - 启发式|小故障"
-
-[MDNGettingStartedHtml]: https://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/Getting_started "HTML 应用程序入门|MDN"
-[MDNIntroductionDom]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "DOM 简介 | MDN"
-
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/html) ，作者为 [Katherine Jackson][KatherineJackson] \ (技术作家，Chrome DevTools\) 。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于 https://developers.google.com/web/tools/chrome-devtools/beginners/html <!-- 404 now --> 由技术编写器 [ (、Chrome](https://developers.google.com/web/resources/contributors#katherine-jackson) DevTools) 。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[KatherineJackson]: https://developers.google.com/web/resources/contributors
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

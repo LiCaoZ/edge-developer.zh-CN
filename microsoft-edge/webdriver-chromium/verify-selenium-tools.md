@@ -1,5 +1,5 @@
 ---
-description: 有关验证 Selenium Tools for Microsoft Edge签名的信息。
+description: 有关验证 Selenium Tools for Microsoft Edge的信息。
 title: 正在验证 Microsoft Edge 的 Selenium 工具下载
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， webdriver， selenium， 测试， 工具， 自动化， 测试
-ms.openlocfilehash: f72a24d6e197be0fec6f265e1bc5cf91a376b5f4
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: b10bb0b495455e15f439e4f31ee6d27a728ec387
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036158"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141136"
 ---
 # <a name="verify-downloads-of-selenium-tools-for-microsoft-edge"></a>验证 Selenium Tools for Microsoft Edge
 
@@ -23,6 +23,8 @@ ms.locfileid: "12036158"
 
 使用以下密钥验证开发人员工具团队提供的Microsoft Edge[签名][TwitterEdgeDevTools]。
 
+
+<!-- ====================================================================== -->
 ## <a name="public-key-for-verifying-selenium-tools-for-microsoft-edge"></a>用于验证 Selenium Tools for Microsoft Edge
 
 *   **公钥 ID：Microsoft Edge**开发人员工具团队[EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)

@@ -7,22 +7,22 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: df98ed8dacec1c3a5b2b48bcd43079cee8c0ccdc
-ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
+ms.openlocfilehash: 9ae1322558519584df6a2dbe90a7f4029a87130d
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "12086953"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140716"
 ---
 # <a name="use-the-console"></a>使用控制台
 
 DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表包含一些任务。
 
-*   了解为什么某些内容在当前项目中无法工作， [并跟踪问题][DevtoolsConsoleConsoleDebugJavascript]。
-*   [以日志消息获取有关浏览器中][DevtoolsConsoleConsoleFilters] Web 项目的信息。
-*   [将信息][DevtoolsConsoleConsoleLog] 记录在脚本中以便进行调试。
-*   [尝试 JavaScript 表达式][DevtoolsConsoleConsoleJavascript] 在 [REPL 环境中][WikiReadEvalPrintLoop] 活动。
-*   使用 JavaScript[与浏览器中][DevtoolsConsoleConsoleDomInteraction]的 Web 项目交互。
+*   了解为什么某些内容在当前项目中无法工作， [并跟踪问题](console-debug-javascript.md)。
+*   [以日志消息获取有关浏览器中](console-filters.md) Web 项目的信息。
+*   [将信息](console-log.md) 记录在脚本中以便进行调试。
+*   [尝试 JavaScript 表达式](console-javascript.md) 在 [REPL 环境中](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) 活动。
+*   使用 JavaScript[与浏览器中](console-dom-interaction.md)的 Web 项目交互。
 
 控制台 **是** 一款很好的配套工具，可用于其他工具。  控制台 **提供了** 一种使用 JavaScript 编写功能、检查和处理当前网页的功能强大的方法。
 
@@ -37,20 +37,23 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
    :::column-end:::
 :::row-end:::
 
-直接打开控制台的最快方法为选择**** `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。
+直接打开控制台的最快方法为选择**** (Windows、Linux) 或 `Control` + `Shift` + `J` `Command` + `Option` + `J` (macOS) 。
 
+
+<!-- ====================================================================== -->
 ## <a name="error-reports-and-the-console"></a>错误报告和控制台
 
-控制台 **是** 报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，"**** 问题"计数器将显示在 DevTools**设置**图标旁边，该图标提供错误和警告的数量。  选择 **"问题"** 计数器以打开 **"问题** "工具并显示问题。  有关详细信息，请导航到["修复控制台中报告的 JavaScript 错误"。][DevtoolsConsoleConsoleDebugJavascript]
+控制台 **是** 报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，"**** 问题"计数器将显示在 DevTools 中提供错误和警告**设置**图标旁边。  选择 **"问题"** 计数器以打开 **"问题** "工具并显示问题。  有关详细信息，请导航到["修复控制台中报告的 JavaScript 错误"。](console-debug-javascript.md)
 
 :::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools 提供有关控制台中错误的详细信息" lightbox="../media/console-debug-displays-error.msft.png":::
    DevTools 提供有关控制台中错误 **的详细信息**
 :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## <a name="look-up-error-messages-on-the-web-from-the-console"></a>从控制台查找 Web 上的错误消息
 
-从 DevTools **中** ，在 Web 中搜索控制台错误消息。  在 **控制台中**，许多错误消息在 **Web** 按钮上都有"搜索此消息"，显示为放大镜。  当您选择" **在 Web 上搜索此消息** "按钮时，将在浏览器中打开一个新选项卡，并显示错误消息的搜索结果。
+从 DevTools **中** ，在 Web 中搜索控制台错误消息。  在 **控制台中**，许多错误消息在 **Web** 按钮上都有"搜索此消息"，显示为放大镜。  当您选择" **在 Web 上搜索此消息** "按钮时，将在浏览器中打开一个新选项卡，并会显示错误消息的搜索结果。
 
 :::image type="complex" source="../media/search-console-icon.msft.png" alt-text="**Console 中错误消息上的&quot;在 Web 上搜索此消息&quot;按钮" lightbox="../media/search-console-icon.msft.png":::
    控制台 **错误消息上的"在 Web** 上搜索此消息" **按钮**
@@ -65,22 +68,25 @@ DevTools 的控制台工具可帮助你完成多项任务。 ****  以下列表�
 此功能是在 94 Microsoft Edge引入的。
 
 
+<!-- ====================================================================== -->
 ## <a name="inspect-and-filter-information-on-the-current-webpage"></a>检查和筛选当前网页上的信息
 
-When you open DevTools on a webpage， there may be the overwhelming amount of information in the **Console**.  当您需要识别重要信息时，信息量将成为一个问题。  若要查看需要采取措施的重要信息，请使用 DevTools [中的问题][DevtoolsIssuesIndex] 工具。
+When you open DevTools on a webpage， there may be the overwhelming amount of information in the **Console**.  当您需要识别重要信息时，信息量将成为一个问题。  若要查看需要采取措施的重要信息，请使用 DevTools [中的问题](../issues/index.md) 工具。
 
-问题正在逐渐从控制台**移动到****问题工具**。  但是，控制台中仍有很多信息，这就是为什么在控制台**** 中了解自动日志和筛选器选项是一个好主意 **。**  有关详细信息，请导航到"[筛选器控制台消息"。][DevtoolsConsoleConsoleFilters]
+问题正在逐渐从控制台**移动到****问题工具**。  但是，控制台中仍有很多信息，这就是为什么在控制台**** 中了解自动日志和筛选器选项是一个好主意 **。**  有关详细信息，请导航到"[筛选器控制台消息"。](console-filters.md)
 
 :::image type="complex" source="../media/console-intro-noise.msft.png" alt-text="包含控制台的完整消息的 DevTools" lightbox="../media/console-intro-noise.msft.png":::
    包含控制台的完整 **消息** 的 DevTools
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="log-information-to-display-in-the-console"></a>要显示在控制台中的日志信息
 
-控制台最常见的用例是使用 方法**** 或其他类似方法从脚本 `console.log()` 中记录信息。  若要尝试，请完成以下操作。
+控制台最常见的用例是使用 方法**** 或其他类似方法从脚本 `console.log()` 中记录信息。  若要试用，请进行以下尝试：
 
-1.  若要打开控制台 **，请选择** `Control` + `Shift` + `J` \ (Windows、Linux\) 或 `Command` + `Option` + `J` \ (macOS\) 。
-1.  导航到 [控制台消息示例：日志、信息、错误和][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]警告，或在控制台中复制并运行以下代码 **段**。
+1.  若要打开控制台 **，** 请选择 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS) 。
+1.  导航到 [控制台消息示例：日志、信息、错误和](https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html)警告，或在控制台中复制并运行以下代码 **段**。
 
     ```javascript
     console.log('This is a log message');
@@ -101,18 +107,20 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
        **控制台** 已满由演示代码导致的消息
     :::image-end:::
 
-使用控制台 时，可以使用许多有用的 **方法**。  有关详细信息，请导航到"[控制台"工具中的"记录消息"。][DevtoolsConsoleConsoleLog]
+使用控制台 时，可以使用许多有用的 **方法**。  有关详细信息，请导航到"[控制台"工具中的"记录消息"。](console-log.md)
 
+
+<!-- ====================================================================== -->
 ## <a name="try-your-javascript-live-in-the-console"></a>在控制台中尝试 JavaScript 实时
 
-**控制台**不仅仅是记录信息的位置。  控制台 **是** 一个 [REPL][WikiReadEvalPrintLoop] 环境。  在控制台中编写任何 JavaScript **时**，代码会立即运行。  你会发现测试一些新的 JavaScript 功能或执行一些快速计算会很有用。  此外，还可以从新式编辑环境获取所有预期功能，如自动完成、语法突出显示和历史记录。  若要尝试，请完成以下操作。
+**控制台**不仅仅是记录信息的位置。  控制台 **是** 一个 [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) 环境。  在控制台中编写任何 JavaScript **时**，代码会立即运行。  你会发现测试一些新的 JavaScript 功能或执行一些快速计算会很有用。  此外，还可以从新式编辑环境获取所有预期功能，如自动完成、语法突出显示和历史记录。  若要尝试，请完成以下操作。
 
 1.  导航到 **控制台**。
 1.  键入 `2 + 2`。
 
 控制台 **将在** 以下行 `4` 中显示结果。  此 **"期待** "评估功能可用于调试和验证代码中没有出错。
 
-:::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="控制台会在你键入时显示 2 + 2 实时的结果" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
+:::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="在键入时，控制台将显示 2 + 2 实时的结果" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
    **控制台**会在您键入 `2 + 2` 实时内容时显示它的结果
 :::image-end:::
 
@@ -132,15 +140,17 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
 1.  选择 `tab` 获取 `document.body` 。
 1.  键入另 `.` 一个，以显示当前网页正文中可用的属性和方法的完整列表。
 
-有关使用控制台的所有方法详细信息，请导航到**** 作为[JavaScript 环境的控制台][DevtoolsConsoleConsoleJavascript]。
+有关使用控制台的所有方法详细信息，请导航到**** 作为[JavaScript 环境的控制台](console-javascript.md)。
 
 :::image type="complex" source="../media/console-javascript-autocomplete.msft.png" alt-text="JavaScript 表达式的控制台自动完成" lightbox="../media/console-javascript-autocomplete.msft.png":::
    **** JavaScript 表达式的控制台自动完成
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="interact-with-the-current-webpage-in-the-browser"></a>在浏览器中与当前网页交互
 
-**控制台**有权访问浏览器[的 Window][MdnDocsWebApiWindow]对象。  您可以编写与当前网页交互的脚本。  若要尝试，请完成以下操作。
+**控制台**有权访问浏览器[的 Window](https://developer.mozilla.org/docs/Web/API/Window)对象。  您可以编写与当前网页交互的脚本。  若要尝试，请完成以下操作。
 
 1.  打开“**控制台**”。
 1.  复制并粘贴以下代码段。
@@ -150,7 +160,7 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
     ```
 
 :::image type="complex" source="../media/console-intro-reading-DOM.msft.png" alt-text="复制顶部标题 (h1) DOM 中的内容，在控制台中显示表达式计算结果" lightbox="../media/console-intro-reading-DOM.msft.png":::
-   从 DOM 复制顶部标题 \ (\) 内容，在控制台中显示 `h1` 表达式计算 **结果**
+   复制顶部标题 () DOM 中的内容，在控制台中显示 `h1` 表达式计算 **结果**
 :::image-end:::
 
 您还可以更改它，而不是仅从网页中读取。  若要尝试更改网页，请完成以下操作。
@@ -166,7 +176,7 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
    在控制台中向 DOM 写入 **文本**
 :::image-end:::
 
-将网页的主要标题更改为 **"摇动控制台"。**  控制台 **实用程序** 方法使访问和操作当前网页变得容易。  有关详细信息，请导航到 [控制台实用程序 API 参考][DevtoolsConsoleUtilities]。  例如，若要在当前网页中所有链接周围添加绿色边框，请完成以下操作。
+将网页的主要标题更改为 **"摇动控制台"。**  控制台 **实用程序** 方法使访问和操作当前网页变得容易。  有关详细信息，请导航到 [控制台实用程序 API 参考](utilities.md)。  例如，若要在当前网页中所有链接周围添加绿色边框，请完成以下操作。
 
 1.  打开“**控制台**”。
 1.  复制并粘贴以下代码段。
@@ -183,24 +193,7 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [使用控制台与 DOM 交互][DevtoolsConsoleConsoleDomInteraction]。
-*  [控制台功能参考][DevtoolsConsoleReference]
-*  [控制台实用工具 API 参考][DevtoolsConsoleUtilities]
-*  [控制台 API 参考][DevtoolsConsoleApi]
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsConsoleApi]: ./api.md "控制台 API 参考 | Microsoft Docs"
-[DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "修复控制台控制台中报告的 JavaScript |Microsoft Docs"
-[DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "使用控制台与 DOM 服务器|Microsoft Docs"
-[DevtoolsConsoleConsoleFilters]: ./console-filters.md "筛选控制台消息|Microsoft Docs"
-[DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "作为 JavaScript 环境的控制台|Microsoft Docs"
-[DevtoolsConsoleConsoleLog]: ./console-log.md "在控制台工具控制台中记录|Microsoft Docs"
-[DevtoolsConsoleReference]: ./reference.md "控制台功能参考|Microsoft Docs"
-[DevtoolsConsoleUtilities]: ./utilities.md "控制台实用程序 API 参考 | Microsoft Docs"
-[DevtoolsIssuesIndex]: ../issues/index.md "使用问题工具查找并修复问题 | Microsoft Docs"
-<!-- external links -->
-[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html "控制台消息示例：日志、信息、错误和警告|GitHub"
-[MdnDocsWebApiWindow]: https://developer.mozilla.org/docs/Web/API/Window "窗口|MDN"
-[WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read-eval–print 循环|Wikipedia"
+*  [使用控制台与 DOM 交互](console-dom-interaction.md)。
+*  [控制台功能参考](reference.md)
+*  [控制台实用工具 API 参考](utilities.md)
+*  [控制台 API 参考](api.md)

@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 05d9d58781ef887b32090f1b522b8248761ac7bf
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 5246e98aac2dad182e82cc5deb1713c80f2c8c89
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082846"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140856"
 ---
 # <a name="override-webpage-resources-with-local-copies-using-microsoft-edge-devtools"></a>使用 DevTools 使用本地副本替代Microsoft Edge资源
 
@@ -20,6 +20,8 @@ ms.locfileid: "12082846"
 
 现在，您可以利用当前网页的资源，并在本地存储该资源。  刷新网页时，浏览器不会从服务器加载资源。  相反，浏览器会将其替换为你的本地资源副本。
 
+
+<!-- ====================================================================== -->
 ## <a name="setting-up-your-local-folder-to-store-overrides"></a>将本地文件夹设置为存储替代
 
 1.  导航到 **"源"** 工具。
@@ -55,6 +57,8 @@ ms.locfileid: "12082846"
        成功设置替代文件夹
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="adding-files-to-your-overrides-folder"></a>将文件添加到 Overrides 文件夹
 
 若要将文件添加到替代文件夹，请打开 **"元素** "工具并检查网页。  若要编辑，请选择样式检查器中的 CSS **文件** 的名称。
@@ -63,7 +67,7 @@ ms.locfileid: "12082846"
    在样式检查器 **中选择** 文件
 :::image-end:::
 
-在"**源**"编辑器上，将鼠标悬停在所选文件的文件名上，打开上下文菜单 \ (右键单击\) ，然后选择"保存**以替代"。**
+在"**源**编辑器"上，将鼠标悬停在所选文件的文件名上，打开上下文菜单 (右键单击") "，然后选择"保存**以替代"。**
 
 :::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="在&quot;源&quot;编辑器中，将文件的名称添加到替代" lightbox="../media/javascript-overrides-file-name.msft.png":::
    在 **"源** "编辑器中，将文件的名称添加到替代
@@ -81,7 +85,7 @@ ms.locfileid: "12082846"
 
 :::row:::
    :::column span="":::
-      在下面的示例中，现在可以更改网页的样式。  若要在文件周围添加红色边框，在 **样式** 编辑器上复制以下样式，并将其添加到 body 元素。
+      在下面的示例中，现在可以更改网页的样式。  若要在文件周围添加红色边框，在 **"** 样式"编辑器上复制以下样式，并将其添加到 body 元素中。
 
       ```css
       border: 10px solid firebrick
@@ -97,19 +101,21 @@ ms.locfileid: "12082846"
 
 :::row:::
    :::column span="":::
-      在" **源** "工具的" **页面** "部分，将鼠标悬停在任何文件上，打开上下文菜单 \ (右键单击\) ，并将其添加到替代。  同样，已位于替代文件夹中的文件在图标上还有一个紫色点。
+      在" **源** "工具的" **页面** "部分，将鼠标悬停在任何文件上，右键单击 (上下文菜单，) 添加覆盖。  同样，已位于替代文件夹中的文件在图标上还有一个紫色点。
 
       :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="从&quot;源&quot;工具中选择文件进行替代" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
          从"源"工具 **中选择** 文件进行替代 :::image-end:::
    :::column-end:::
    :::column span="":::
-      或者，在 **"** 网络"工具上，将鼠标悬停在任何文件上，打开上下文菜单 \ (右键单击\) ，并将其添加到覆盖。  当替代生效时，位于您的计算机上而非实时网页中的文件。  当替代生效时，在 **"** 网络"工具上，找到文件名旁边的警告图标。
+      或者，在 **"** 网络"工具上，将鼠标悬停在任何文件上，右键单击 (上下文菜单，) 添加覆盖。  当替代生效时，位于您的计算机上而非实时网页中的文件。  当替代生效时，在 **"** 网络"工具上，找到文件名旁边的警告图标。
 
       :::image type="complex" source="../media/javascript-overrides-network.msft.png" alt-text="从网络工具中选择文件进行替代" lightbox="../media/javascript-overrides-network.msft.png":::
          从网络工具 **中选择** 文件进行替代 :::image-end:::
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="two-way-interaction-of-overrides"></a>覆盖的双向交互
 
 使用 DevTools 的 **"** 源"工具提供的编辑器或要更改文件的任何编辑器。  更改将跨访问覆盖文件夹中文件的所有产品进行同步。

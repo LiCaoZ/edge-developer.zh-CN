@@ -7,12 +7,12 @@ ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 1ee3df48c635919ff35c3472a2f1476c3c5274a0
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 15d894fcc1a506ba3dbdf1c5409af60555616275
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083427"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141255"
 ---
 <!-- Copyright Kayce Basques
 
@@ -41,6 +41,8 @@ ms.locfileid: "12083427"
 *   通过减慢动画的速度、重播每个动画或查看源代码来检查动画。
 *   通过更改计时、延迟、持续时间或关键帧偏移来修改动画。
 
+
+<!-- ====================================================================== -->
 ## <a name="overview"></a>概述
 
 Microsoft Edge DevTools 动画检查器有两个主要用途。
@@ -52,9 +54,11 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
 
 ### <a name="what-is-an-animation-group"></a>什么是动画组？
 
-动画组是一组相互相关的动画。  目前，Web 没有组动画的实际概念，因此动画设计人员和开发人员必须撰写各个动画并设置动画时间，以便动画呈现为一致的视觉效果。  动画检查器根据开始时间 \（等，不包括延迟）来预测哪些动画是相关的。  动画检查器还会将动画并排分组。
+动画组是一组相互相关的动画。  目前，Web 没有组动画的实际概念，因此动画设计人员和开发人员必须撰写各个动画并设置动画时间，以便动画呈现为一致的视觉效果。  动画检查器根据开始时间以及排除延迟 (等来预测与哪些动画) 。  动画检查器还会将动画并排分组。
 换句话说，在同一脚本块中触发的一组动画会被组合在一起。  如果动画是异步动画，它会被放置在单独的组中。
 
+
+<!-- ====================================================================== -->
 ## <a name="get-started"></a>入门
 
 有两种方法可以打开动画检查器：
@@ -76,7 +80,7 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
    空动画检查器
 :::image-end:::
 
-动画检查器分为四个主要部分 \(或窗格\)。  本指南按以下方式指代每个窗格：
+动画检查器分为四个主要部分 (或窗格) 。  本指南按以下方式指代每个窗格：
 
 | 索引 | 窗格 | 描述 |
 |:--- |:--- |:--- |
@@ -97,12 +101,14 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
 
 <!--  > [!VIDEO animations/capture-animations.mp4]  -->
 
+
+<!-- ====================================================================== -->
 ## <a name="inspect-animations"></a>检查动画
 
 捕获动画后，有多种方式可以重播它：
 
 *   将鼠标悬停在“**概述**”窗格中的缩略图上，查看缩略图的预览。
-*   从“**概述**”窗格选择动画组，\(以便它显示在“**详细信息**”窗格中\) 并选择”**重播**” \(![重播图标](../media/replay-button-icon.msft.png)\) 图标。  动画会在视区中重播。  选择“**动画速度** \(![动画速度图标](../media/animation-speed-buttons-icon.msft.png)\)” 图标可更改当前选定的动画组的预览速度。  可以使用红色竖线更改当前位置。
+*   从"概述"窗格中选择****"动画组 (以便它显示在"详细信息"窗格中) 并选择****"重播 (**** ![ 图标) ](../media/replay-button-icon.msft.png) 图标。  动画会在视区中重播。  选择动画 **速度 (** ![ 动画) 图标来更改当前选定的 ](../media/animation-speed-buttons-icon.msft.png) 动画组的预览速度。  可以使用红色竖线更改当前位置。
 *   选择并拖动红色竖线以清理视区动画。
 
 ### <a name="view-animation-details"></a>查看动画详细信息
@@ -125,12 +131,14 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
    动画迭代关系图
 :::image-end:::
 
-如果两个元素应用了相同的动画，则动画检查器会向这些元素分配相同的颜色。  颜色是随机的，没有意义。  例如，在下图中，这两个元素 `div.cwccw.earlier` 和 `div.cwccw.later` 应用了相同的动画 \(`spinrightleft`\)， `div.ccwcw.earlier` 和 `div.ccwcw.later` 元素也是。
+如果两个元素应用了相同的动画，则动画检查器会向这些元素分配相同的颜色。  颜色是随机的，没有意义。  例如，在下图中，这两个元素应用了相同的动画 () 和 元素一 `div.cwccw.earlier` `div.cwccw.later` `spinrightleft` `div.ccwcw.earlier` `div.ccwcw.later` 样。
 
 :::image type="complex" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="颜色编码动画" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
    颜色编码动画
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="modify-animations"></a>修改动画
 
 有三种方法可以使用动画检查器修改动画。
@@ -167,7 +175,7 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

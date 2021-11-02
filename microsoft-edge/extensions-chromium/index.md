@@ -1,5 +1,5 @@
 ---
-description: 有关构建和发布 Microsoft Edge 概述。
+description: 生成和发布 Microsoft Edge 扩展的概述。
 title: Microsoft Edge 扩展概述
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,16 +7,16 @@ ms.date: 08/25/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， chromium 扩展
-ms.openlocfilehash: 1aeadaebf1dfce3e2aeb3adc5f51fd8ad9e0762d
-ms.sourcegitcommit: b85c6d0abdae573d75e32b594d6823ce70a87d7f
+ms.openlocfilehash: 5ae139dcfca262dcb8c94dc278399c798aed4dee
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "12109146"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141556"
 ---
 # <a name="overview-of-microsoft-edge-extensions"></a>Microsoft Edge 扩展概述
 
-扩展Microsoft Edge*是*开发人员用于添加或修改应用程序功能的小Microsoft Edge。  扩展改进了用户的浏览体验。  它通常提供对目标受众非常重要的小功能。
+扩展Microsoft Edge是开发人员用于** 添加或修改应用程序功能的小Microsoft Edge。  扩展改进了用户的浏览体验。  它通常提供对目标受众非常重要的小功能。
 
 如果你有基于Microsoft Edge浏览器或特定网页功能的改进的想法或产品，可以创建一个扩展。  配套 *体验的示例包括* 广告阻止者和密码管理器。
 
@@ -97,11 +97,11 @@ ms.locfileid: "12109146"
 
 ### <a name="publish-to-the-microsoft-edge-add-ons-website"></a>发布到Microsoft Edge加载项网站
 
-若要开始将扩展发布到 Microsoft Edge，必须使用 Microsoft 帐户[][MicrosoftDeveloperRegistration] (MSA) 电子邮件帐户注册开发人员帐户，以将扩展列表提交到应用商店。  MSA 帐户的 Microsoft (电子邮件地址 `@outlook.com`) 、 `@live.com` 或 `@hotmail.com` 。  选择要注册的电子邮件地址时，请考虑是否必须与组织Microsoft Edge转移或共享该扩展的所有权。  注册完成后，你可以创建新的扩展提交到应用商店。
+若要开始向 Microsoft Edge 发布扩展，必须使用 Microsoft[][MicrosoftDeveloperRegistration]帐户 (MSA) 电子邮件帐户注册开发人员帐户，以将扩展列表提交到应用商店。  MSA 帐户的 Microsoft (电子邮件地址 `@outlook.com`) 、 `@live.com` 或 `@hotmail.com` 。  选择要注册的电子邮件地址时，请考虑是否必须与组织Microsoft Edge转移或共享该扩展的所有权。  注册完成后，你可以创建新的扩展提交到应用商店。
 
 若要将扩展提交到应用商店，需要提供以下项：
 
-*   包含代码文件的存档 \ (`.zip`\) 文件。
+*   存档 `.zip` () 代码文件的文件。
 *   所有必需的视觉资源，包括徽标和小型促销磁贴。
 *   可选促销媒体，如屏幕截图、促销贴片和视频 URL。
 *   描述扩展名的信息，如名称、简短描述和隐私策略链接。
@@ -125,7 +125,7 @@ ms.locfileid: "12109146"
 *  [入门教程 (Opera)][ChromeDeveloperExtensionsGetstarted]
 *  [入门 (Opera)][OperaDevExtensionsGettingStarted]
 
-适用于Visual Studio Code而非Microsoft Edge：
+Visual Studio Code扩展，而不是Microsoft Edge：
 *  [Microsoft Edge适用于开发人员的 DevTools Visual Studio Code][EdgeDevToolsVSCode]
 *  [适用于Visual Studio Code的 webhint 扩展][WebhintVSCode]
 

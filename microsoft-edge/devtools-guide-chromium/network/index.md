@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 116c01d647159d98d6d851ae9d3ebd6b4edffe2f
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: b36526d2aca0948c824d6fef3b2a8f85d3f62aa2
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083336"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139939"
 ---
 <!-- Copyright Kayce Basques
 
@@ -41,6 +41,8 @@ ms.locfileid: "12083336"
 > [!VIDEO embed/e1gAyQuIFQo]
 -->
 
+
+<!-- ====================================================================== -->
 ## <a name="when-to-use-the-network-panel"></a>何时使用网络面板
 
 一般情况下，当您需要确保资源正在下载或上传时，请使用网络面板。  网络面板的最常见用例包括：
@@ -50,6 +52,8 @@ ms.locfileid: "12083336"
 
 如果正在寻找提高页面加载性能的方法，**不要** 开始于 **网络**工具。  有许多类型的负载性能问题与网络活动不相关。  从“审核”面板开始，因为它为你提供了有关改进页面的目标建议。  导航到 [优化网站速度][DevtoolsSpeedGetStarted]。
 
+
+<!-- ====================================================================== -->
 ## <a name="open-the-network-panel"></a>打开网络面板
 
 若要在本教程中取得最大功能，请打开演示并试用演示页面上的功能。
@@ -68,7 +72,7 @@ ms.locfileid: "12083336"
     :::image-end:::
     -->
 
-1.  To [Open DevTools][DevToolsOpen]， select `Control` + `Shift` + `J` \ (Windows， Linux\) or `Command` + `Option` + `J` \ (macOS\) .  将 **打开控制台** 工具。
+1.  To [Open DevTools][DevToolsOpen]， select `Control` + `Shift` + `J` (Windows， Linux) or `Command` + `Option` + `J` (macOS) .  将 **打开控制台** 工具。
 
     :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="控制台" lightbox="../media/network-glitch-console.msft.png":::
        **控制台**
@@ -88,6 +92,8 @@ ms.locfileid: "12083336"
 
 现在， **网络** 工具为空。  DevTools 仅在打开网络活动后记录网络活动，自打开 DevTools 后未发生网络活动。
 
+
+<!-- ====================================================================== -->
 ## <a name="log-network-activity"></a>记录网络活动
 
 查看页面导致的网络活动：
@@ -120,12 +126,14 @@ ms.locfileid: "12083336"
        **网络日志**中的新资源
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="show-more-information"></a>显示详细信息
 
 网络日志的列是可配置的。  您可以隐藏您未使用的列。
 默认情况下，还有一些列处于隐藏状态，您可能会发现这些列很有用。
 
-1.  将鼠标悬停在"网络日志"表的标题上，打开上下文菜单 \ (右键单击\) ，然后选择"域 **"。**  现在将显示每个资源的域。
+1.  将鼠标悬停在"网络日志"表的标题上，打开上下文菜单 (右键单击") "域 **"。**  现在将显示每个资源的域。
 
     :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="启用域列" lightbox="../media/network-glitch-network-edit-column.msft.png":::
        启用域列
@@ -134,6 +142,8 @@ ms.locfileid: "12083336"
     > [!TIP]
     > 若要查看资源的完整 URL，请将鼠标悬停在"名称"列中 **的单元格** 上。
 
+
+<!-- ====================================================================== -->
 ## <a name="simulate-a-slower-network-connection"></a>模拟较慢的网络连接
 
 用于构建站点的计算机的网络连接可能比用户的移动设备的网络连接速度快。  通过限制页面，可以更好地了解页面在移动设备上加载所花的时间。
@@ -146,7 +156,7 @@ ms.locfileid: "12083336"
        选择慢速 3G
     :::image-end:::
 
-1.  长按**Reload** \ (![ Reload ](../media/refresh-icon.msft.png) \) ，然后选择 **"空缓存和硬重新加载"。**
+1.  长按**Reload** (![ Reload ](../media/refresh-icon.msft.png)) ，然后选择 **"空缓存和硬重新加载"。**
 
     :::image type="complex" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="空缓存和硬重新加载" lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
        **空缓存和硬重新加载**
@@ -157,11 +167,13 @@ ms.locfileid: "12083336"
     > [!NOTE]
     > **空缓存和硬重新加载**工作流仅在 DevTools 打开时可用。
 
+
+<!-- ====================================================================== -->
 ## <a name="capture-screenshots"></a>捕获屏幕截图
 
 屏幕截图显示网页在加载时的外观。
 
-1.  选择\ (![ 网络设置 ](../media/settings-icon.msft.png) \) 并打开捕获 **屏幕截图** 复选框。
+1.  选择 (![ 网络设置 ](../media/settings-icon.msft.png)) 并打开" **捕获屏幕截图"** 复选框。
 
     :::image type="complex" source="../media/network-glitch-network-screenshots-setting.msft.png" alt-text="&quot;网络设置&quot;中的&quot;捕获屏幕截图&quot;复选框" lightbox="../media/network-glitch-network-screenshots-setting.msft.png":::
        选择 **捕获屏幕截图**
@@ -180,9 +192,11 @@ ms.locfileid: "12083336"
        第一张屏幕截图期间发生的网络活动
     :::image-end:::
 
-1.  再次选择 (网络设置 \) 并关闭"捕获屏幕截图" ![ ](../media/settings-icon.msft.png) 复选框以关闭****"屏幕截图"窗格。
+1.  再次 ![ (" ](../media/settings-icon.msft.png) 网络) "，然后关闭" **捕获** 屏幕截图"复选框以关闭"屏幕截图"窗格。
 1.  再次刷新页面。
 
+
+<!-- ====================================================================== -->
 ## <a name="inspect-the-details-of-the-resource"></a>检查资源的详细信息
 
 选择资源以了解有关它详细信息。
@@ -208,7 +222,7 @@ ms.locfileid: "12083336"
     :::image-end:::
 
     > [!TIP]
-    > 缩小文件时，选择"响应"面板底部的"格式**\ (** ![ 格式 ](../media/format-icon.msft.png) \) "**** 按钮，以重新设置文件内容的格式，提高可读性。
+    > 缩小文件时，选择"响应 (底部的"**** 设置) 格式"按钮，以重新设置文件内容的格式，实现 ![ ](../media/format-icon.msft.png) 可读性。 ****
 
 1.  选择 **"计时"** 面板。  将显示资源的网络活动的细分。
 
@@ -216,12 +230,14 @@ ms.locfileid: "12083336"
        “**计时**”面板
     :::image-end:::
 
-1.  选择 **关闭** \ (![ 关闭 ](../media/close-icon.msft.png) \) 再次查看网络日志。
+1.  选择 **"** 关闭 (![ 关闭 ](../media/close-icon.msft.png)) "以再次查看网络日志。
 
     :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="关闭按钮" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
        “**关闭**”按钮
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="search-network-headers-and-responses"></a>搜索网络标头和响应
 
 当您需要搜索特定字符串或正则表达式的所有资源的 HTTP 标头和响应时，请使用“**搜索**”窗格。
@@ -230,7 +246,7 @@ ms.locfileid: "12083336"
 
 <!--TODO: add cache policies section when available  -->
 
-1.  选择 **搜索** \ (![ 搜索 ](../media/search-icon.msft.png) \) 。  搜索窗格将打开到网络日志的左侧。
+1.  选择 **"搜索** (![ 搜索 ](../media/search-icon.msft.png)) 。  搜索窗格将打开到网络日志的左侧。
 
     :::image type="complex" source="../media/network-glitch-network-search-empty.msft.png" alt-text="搜索窗格" lightbox="../media/network-glitch-network-search-empty.msft.png":::
        “**搜索**”窗格
@@ -250,6 +266,8 @@ ms.locfileid: "12083336"
 
 1.  关闭"搜索"窗格和 **"标题"** 面板。
 
+
+<!-- ====================================================================== -->
 ## <a name="filter-resources"></a>筛选资源
 
 DevTools 提供了许多工作流，用于筛选出与当前任务不相关的资源。
@@ -260,7 +278,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 
 默认情况下 **应** 打开"筛选器"工具栏。  如果不是：
 
-1.  选择 **筛选器** \ (![ Filter ](../media/filter-icon.msft.png) \) 以显示它。
+1.  选择 **" (** ![ 筛选器 ](../media/filter-icon.msft.png)) 显示它。
 
 ### <a name="filter-by-string-regular-expression-or-property"></a>按字符串、正则表达式或属性筛选
 
@@ -304,7 +322,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
        只显示 CSS 文件
     :::image-end:::
 
-1.  若要同时显示脚本，请选择并按住 `Control` \ (Windows、Linux\) 或 `Command` \ (macOS\) ，然后选择**JS。**
+1.  若要同时显示脚本，请选择并保留 `Control` (Windows、Linux) `Command` 或 (macOS) ，然后选择**JS**。
 
     :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="只显示 CSS 和 JS 文件" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
        只显示 CSS 和 JS 文件
@@ -314,11 +332,13 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 
 对于其他筛选工作流，导航到 [Filter requests][DevtoolsNetworkReferenceFilter]。
 
+
+<!-- ====================================================================== -->
 ## <a name="block-requests"></a>阻止请求
 
 当某些页面资源不可用时，页面的外观和行为如何？  它是完全失败，还是仍有点功能？  阻止查找请求：
 
-1.  选择 `Control`+`Shift`+`P` \(Windows、Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开**命令菜单**。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令**菜单**。
 
     :::image type="complex" source="../media/network-glitch-network-cli-empty.msft.png" alt-text="命令菜单" lightbox="../media/network-glitch-network-cli-empty.msft.png":::
        **命令菜单**
@@ -330,7 +350,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
        **显示请求阻止**
     :::image-end:::
 
-1.  选择 **添加模式** \ (![ 添加模式 ](../media/add-icon.msft.png) \) 。
+1.  选择 **添加模式** (![ 添加模式 ](../media/add-icon.msft.png)) 。
 1.  键入 `main.css`。
 
     :::image type="complex" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="阻止 main.css" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
@@ -349,6 +369,8 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 
 1.  取消选中“**启用请求阻止**” 复选框。
 
+
+<!-- ====================================================================== -->
 ## <a name="conclusion"></a>总结
 
 恭喜，你已完成本教程。  现在，你已了解如何使用Microsoft Edge DevTools 中的**网络**工具！
@@ -359,7 +381,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 <!-- ====================================================================== -->
 <!-- links -->
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->
-[DevToolsCustomizePlacement]： ../customize/placement.md "Change Microsoft Edge DevTools placement |Microsoft Docs&quot; [DevtoolsNetworkReference]： ./reference.md &quot;Network analysis reference |Microsoft Docs&quot; [DevtoolsNetworkReferenceFilter]： ./reference.md#filter-requests &quot;Filter requests - Network analysis reference |Microsoft Docs&quot; [DevtoolsReferenceHideOverview]： ./reference.md#hide-the-overview-pane &quot;Hide the Overview pane - Network analysis reference |Microsoft Docs&quot; [DevtoolsReferenceProperty]： ./reference.md#filter-requests-by-properties &quot;Filter requests by properties - Network analysis reference |Microsoft Docs&quot; [DevToolsOpen]： ../open/index.md &quot;Open Microsoft Edge DevTools |Microsoft Docs&quot; [DevtoolsSpeedGetStarted]： ../speed/get-started.md&quot;使用 DevTools Microsoft Edge优化网站|Microsoft Docs"
+[DevToolsCustomizePlacement]： ../customize/placement.md "Change Microsoft Edge DevTools placement |Microsoft Docs&quot; [DevtoolsNetworkReference]： ./reference.md &quot;Network analysis reference |Microsoft Docs&quot; [DevtoolsNetworkReferenceFilter]： ./reference.md#filter-requests &quot;Filter requests - Network analysis reference |Microsoft Docs&quot; [DevtoolsReferenceHideOverview]： ./reference.md#hide-the-overview-pane &quot;Hide the Overview pane - Network analysis reference |Microsoft Docs&quot; [DevtoolsReferenceProperty]： ./reference.md#filter-requests-by-properties &quot;Filter requests by properties - Network analysis reference |Microsoft Docs&quot; [DevToolsOpen]： ../open/index.md &quot;Open Microsoft Edge DevTools |Microsoft Docs&quot; [DevtoolsSpeedGetStarted]： ../speed/get-started.md DevTools Microsoft Edge优化网站|Microsoft Docs"
 
 [GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "检查网络活动演示 | 小故障"
 
@@ -367,7 +389,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/network/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/network/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

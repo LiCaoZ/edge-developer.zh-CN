@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: b43440b3b1981b45056a5fbd56b297a47d4cbc4b
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+ms.openlocfilehash: 3c69d4e7cefc437b61184fe1fc7be3b0a7b36018
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12033693"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141304"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -42,6 +42,8 @@ ms.locfileid: "12033693"
 > [!NOTE]
 > 本文不适用于使用合作伙伴中心仪表板[发布的扩展。][MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd]  可以使用仪表板向用户和加载项网站发布Microsoft Edge版本。  有关详细信息，请导航到更新[Microsoft Edge扩展][ExtensionsPublishUpdateExtension]。
 
+
+<!-- ====================================================================== -->
 ## <a name="overview"></a>概述
 
 每隔几个小时，Microsoft Edge检查每个安装的扩展或应用是否都有更新 URL。  若要为扩展指定更新 URL，请使用 `update_url` 清单中的 字段。  清单 `update_url` 中的字段指向完成更新检查的位置。  对于每个 `update_url` ，它将发送对更新后的清单 XML 文件的请求。  如果更新清单 XML 文件列出了比安装的版本更新的版本，Microsoft Edge下载并安装较新版本。  相同的过程适用于手动更新，其中必须使用与当前安装的版本相同的私钥对新 `.crx` 文件进行签名。
@@ -49,6 +51,8 @@ ms.locfileid: "12033693"
 > [!NOTE]
 > 为了维护用户隐私，Microsoft Edge发送任何包含自动更新清单请求的标头，并忽略这些请求响应中的任意 `Cookie` `Set-Cookie` 标头。
 
+
+<!-- ====================================================================== -->
 ## <a name="update-url"></a>更新 URL
 
 如果你托管自己的扩展名或应用，则必须将 `update_url` 字段添加到 `manifest.json` 你的文件。  查看以下代码段，查看 的示例 `update_url` 。
@@ -62,6 +66,8 @@ ms.locfileid: "12033693"
 }
 ```
 
+
+<!-- ====================================================================== -->
 ## <a name="update-manifest"></a>更新清单
 
 服务器返回的更新清单应为 XML 文档。  查看以下代码段，查看更新后的清单 XML 文件的示例。
@@ -85,10 +91,14 @@ ms.locfileid: "12033693"
 
 更新清单 XML 文件可能包含有关多个扩展的信息，具体方法为包含多个元素。
 
+
+<!-- ====================================================================== -->
 ## <a name="testing"></a>测试
 
 默认更新检查频率为几个小时。  若要强制更新，请导航 `edge://extensions` 到"现在 **更新扩展"** 按钮并选择该按钮。
 
+
+<!-- ====================================================================== -->
 ## <a name="advanced-usage-request-parameters"></a>高级用法：请求参数
 
 基本机制很简单。  自动更新扩展：
@@ -143,11 +153,13 @@ http://contoso.com/extension_updates.php?x=id%3Daaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 > [!NOTE]
 > 将来，单个 `POST` 请求可能会替换多个 `GET` 请求。  `POST`请求正文中可能包含请求 `POST` 参数。
 
+
+<!-- ====================================================================== -->
 ## <a name="advanced-usage-minimum-browser-version"></a>高级用法：最低浏览器版本
 
 随着适用于 Microsoft Edge 扩展系统的新 API 发布，你可以发布仅适用于较新版本的扩展或应用的更新Microsoft Edge版本。  当Microsoft Edge自动更新时，大多数用户可能需要几天才能更新到该新版本。
 
-若要确保特定更新仅适用于Microsoft Edge版本或更新版本，请在你的更新清单中添加 `prodversionmin` 属性。  在下面的代码段中，属性值 指定仅在用户运行版本或更新版本Microsoft Edge `prodversionmin` `3.0.193.0` `2.0` `3.0.193.0` 更新应用。
+若要确保特定更新仅适用于Microsoft Edge版本或更新版本，请在你的更新清单中添加 `prodversionmin` 属性。  在下面的代码段中，属性值 指定仅在用户运行版本或更新版本时，Microsoft Edge `prodversionmin` `3.0.193.0` `2.0` `3.0.193.0` 更新。
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>

@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: 7065f6ccd6276d878fbf8d061ad529bd119e33fb
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: d1609dce41383aaac5069a26fb0bb3ff579cf5a9
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082552"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139841"
 ---
 <!-- Copyright Kayce Basques
 
@@ -34,7 +34,7 @@ ms.locfileid: "12082552"
 若要跟踪 DevTools 中聚焦的元素：
 
 1.  打开“**控制台**”。
-1.  Choose **Create live expression** \ (Create live expression ![ ](../media/create-live-expression-icon.msft.png) \) .
+1.  选择 **"创建实时表达式 (** ![ 创建实时表达式 ](../media/create-live-expression-icon.msft.png)) 。
 
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="创建动态表达式" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        创建动态表达式
@@ -48,8 +48,8 @@ ms.locfileid: "12082552"
 由于该表达式始终代表着焦点的元素，因此现在可以始终跟踪哪个元素具有焦点。
 
 *   将鼠标悬停在结果上，以在视区中突出显示焦点元素。
-*   将鼠标悬停在结果上，打开上下文菜单 \(右键单击\) ，然后选择“**在元素面板显示**”以在“**元素**”工具上显示 DOM 树中的元素。
-*   将鼠标悬停在结果上，打开上下文菜单 \(右键单击\)，然后选择“**存储为全局变量**”，以创建对可以在**控制台**中所使用节点的变量引用。
+*   将鼠标悬停在结果上，右键单击 (上下文菜单，) "元素"面板中的"展示"**** 以在"元素"工具上的 DOM 树中**显示元素。**
+*   将鼠标悬停在结果上，右键 (单击") "，然后选择"存储"作为全局变量，**** 以创建对可以在控制台中使用的节点的变量**引用**。
 
 
 <!-- ====================================================================== -->
@@ -59,15 +59,8 @@ ms.locfileid: "12082552"
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference)，由技术编写 (Chrome DevTools & Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors/kaycebasques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

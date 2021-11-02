@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 03acb323fdd6925a6e985d277c57a918a30735fe
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 89f6b0a2b823926f4a02fee1134084ddb0881798
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083385"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139414"
 ---
 <!-- Copyright Kayce Basques
 
@@ -45,12 +45,14 @@ ms.locfileid: "12083385"
 
 *   使用清单 **窗格** 检查 Web 应用清单并触发"添加到主屏幕"事件。
 *   使用"**** 服务工作线程"窗格执行与服务工作者相关的所有任务，例如注销或更新服务、模拟推送事件、脱机或停止服务工作线程。
-*   从"缓存"窗格查看服务**存储**缓存。
+*   从"缓存"窗格查看服务**工作存储**缓存。
 *   从"清除存储"窗格中选择一个按钮，注销服务工作器并清除所有 **存储和** 缓存。
 
+
+<!-- ====================================================================== -->
 ## <a name="web-app-manifest"></a>Web 应用清单
 
-如果希望用户能够将应用添加到其移动主屏幕，则需要 Web 应用清单。  清单定义应用在主屏幕上的显示方式、从主屏幕启动时向用户显示什么位置，以及应用在启动时的外观。
+如果希望用户能够将应用添加到其移动主屏幕，则需要 Web 应用清单。  清单定义应用在主屏幕上的显示方式、从主屏幕启动时指导用户位置以及应用在启动时的外观。
 
 <!--Related Guides:
 
@@ -65,7 +67,7 @@ ms.locfileid: "12083385"
    清单**窗格**
 :::image-end:::
 
-*   To look at the manifest source， choose the link below **App Manifest** label \ (`https://airhorner.com/manifest.json` in the previous figure\) .
+*   To look at the manifest source， choose the link below **App Manifest** label (`https://airhorner.com/manifest.json` in the previous figure) .
 <!-- *   Choose the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->
 *   " **标识"** 和" **演示文稿** "部分仅以更用户友好的显示方式显示清单源中的字段。
 *   " **图标** "部分显示你指定的每个图标。
@@ -91,10 +93,12 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!-- TODO: Rework content after sample app is created. -->
 
-<!--If you want to test out the genuine mobile experience, you may connect a real mobile device to DevTools via **remote debugging**, and then choose the **Add to Homescreen** button \(on DevTools\) to trigger the "add to homescreen" prompt on the connected mobile device.  -->
+<!--If you want to test out the genuine mobile experience, you may connect a real mobile device to DevTools via **remote debugging**, and then choose the **Add to Homescreen** button (on DevTools) to trigger the "add to homescreen" prompt on the connected mobile device.  -->
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
+
+<!-- ====================================================================== -->
 ## <a name="service-workers"></a>服务工作者
 
 服务工作者是未来 Web 平台中的基础技术。  它们是浏览器在后台运行的脚本，独立于网页。  这些脚本允许你访问无需网页或用户交互的功能，如推送通知、后台同步和脱机体验。
@@ -117,12 +121,12 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 *   " **重新加载时更新** "复选框强制服务工作者每次加载页面时进行更新。
 *   " **绕过网络"** 复选框将绕过服务工作线程，并强制浏览器转到所请求资源的网络。
 *   " **更新** "按钮将执行指定服务工作者的一次更新。
-*   " **推送** "按钮模拟不带有效负载的推送通知 (亦称为 **tickle**\) 。
+*   " **推送** "按钮模拟不带有效负载的推送通知 (**也称为滴答**) 。
 *   " **同步** "按钮模拟后台同步事件。
 *   " **注销"** 按钮将取消注册指定的服务工作器。  请查看清除 [存储](#clear-storage) ，了解通过单个按钮选择取消注册服务工作器以及擦除存储和缓存的方法。
 *   Source **** 行将告知您当前正在运行的服务工作线程的安装时间。  链接是服务工作者的源文件的名称。  选择链接将你发送到服务工作者的源。
-*   " **状态** "行将告知您服务工作者的状态。  上图中绿色状态指示器 \ (旁边的 ID ) `#36` 当前处于活动状态的服务工作者。  在状态旁边，如果服务**** 工作进程已停止\ (则显示启动按钮 \) 如果服务工作进程正在运行，则显示**** 一个停止按钮 \ (\) 。  服务工作者设计为随时由浏览器停止和启动。  使用停止按钮显式停止服务 **工作器** 可能会模拟这一点。  停止服务工作进程是测试服务工作线程再次启动备份时代码行为方式的一种好方法。  它经常显示错误，因为对永久性全局状态的错误假设。
-*   **"客户端**"行将告知您服务工作线程的作用域。  当 **启用** "全部显示"复选框时，焦点 **按钮最** 有用。  启用该复选框后，将列出所有注册的服务工作者。  如果选择其他选项卡中运行**** 的服务工作线程旁边的"焦点"按钮，Microsoft Edge焦点位于该选项卡上。
+*   " **状态** "行将告知您服务工作者的状态。  上图中绿色状态指示器旁边的 ID (表示) 当前活动的服务工作 `#36` 线程的 ID 号。  在状态旁边，如果停止**** 服务工作 (，则会显示"开始"按钮) 如果服务工作进程正在运行 (将显示**** 一个停止) 按钮。  服务工作者设计为随时由浏览器停止和启动。  使用停止按钮显式停止服务 **工作器** 可能会模拟这一点。  停止服务工作进程是测试服务工作线程再次启动备份时代码行为方式的一种好方法。  它经常显示错误，因为对永久性全局状态的错误假设。
+*   **"客户端**"行将告知您服务工作线程的作用域。  当 **启用** "全部显示"复选框时，焦点 **按钮最** 有用。  启用该复选框后，将列出所有注册的服务工作者。  如果选择其他选项卡中运行**** 的服务工作线程旁边的焦点按钮，Microsoft Edge焦点位于该选项卡上。
 
 如果服务工作线程导致任何错误，将显示名为 **"错误"** 的新标签。
 
@@ -135,9 +139,11 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!--TODO:  Capture Service Worker Errors sample when available. -->
 <!--TODO:  Link Web "How tickle works" sections when available. -->
 
+
+<!-- ====================================================================== -->
 ## <a name="service-worker-caches"></a>服务工作线程缓存
 
-缓存**存储**窗格提供已使用 \ (service worker\) [Cache API][MDNWebCacheAPI]缓存的资源的只读列表。
+"**缓存存储**窗格提供已使用缓存 API 的缓存服务工作 (缓存) [列表][MDNWebCacheAPI]。
 
 :::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="缓存存储窗格" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
    缓存**存储**窗格
@@ -152,14 +158,16 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
    "**缓存存储**下拉列表
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="quota-usage"></a>配额使用情况
 
-"缓存 **"窗格存储**响应可能标记为"不透明"。  这是指未启用[CORS][FetchHttpCorsProtocol]时从不同源（如从 CDN 或远程**API）** 检索的响应。
+"缓存 **"窗格存储**某些响应可能标记为"不透明"。  这是指未启用[CORS][FetchHttpCorsProtocol] **时**从不同源（如CDN或远程 API）检索的响应。
 
 <!--TODO:  Link Web "CDN" section when available. -->
 <!--TODO:  Link Web "opaque" section when available. -->
 
-为了避免跨域信息泄露，会向用于计算存储配额限制的不透明响应的大小添加大量填充 (例如是否引发 `QuotaExceeded` 异常\) 以及是否由 API 报告异常。 `navigator.storage`
+为了避免跨域信息泄露，向用于计算存储配额限制的不透明响应的大小添加大量填充 (例如是否引发异常) API 报告。 `QuotaExceeded` `navigator.storage`
 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 
@@ -172,6 +180,8 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--TODO:  Link Work container storage quota for opaque responses section when available. -->
 
+
+<!-- ====================================================================== -->
 ## <a name="clear-storage"></a>清除存储
 
 "**清除存储**窗格是开发渐进式 Web 应用时非常有用的功能。  通过此窗格，您可以取消注册服务工作器，并清除所有缓存和存储，并单击一个按钮即可。  <!--Check out the section below to learn more.  -->
@@ -196,7 +206,7 @@ Related Guides:
 <!-- links -->
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"
 <!-- external links -->
-[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium问题 796060：存储代码位于 html 中时，每次刷新时缓存缓存值会上升"
+[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium问题 796060：存储代码位于 html 中时，缓存值每次刷新时增加"
 
 [FetchHttpCorsProtocol]: https://fetch.spec.whatwg.org/#http-cors-protocol
 
@@ -215,7 +225,7 @@ Related Guides:
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

@@ -8,24 +8,26 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 8b4dd038a10ac9c4a24e1ddcdffa3af054f35b73
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 5616ce3e0579fa10c8f5eed1f9be8a976db7c094
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12107938"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139722"
 ---
 # <a name="get-started-debugging-webview2-apps"></a>开始调试 WebView2 应用
 
 WebView2 Microsoft Edge的目标是将 Web 和本机应用开发功能和工具的最佳组合在一起。  开发 WebView2 应用时，应调试应用。  本文概述了用于调试 WebView2 应用中的 Web 和本机代码的不同工具。
 
+
+<!-- ====================================================================== -->
 ## [<a name="microsoft-edge-devtools"></a>Microsoft Edge 开发工具](#tab/devtools)
 
-使用[Microsoft Edge][DevtoolsGuideChromiumMain]工具调试 WebView2 控件中显示的 Web 内容，方法与为 WebView2 控件中显示的另一网页进行调试Microsoft Edge。  若要打开 DevTools，请设置 WebView 控件的焦点，然后使用以下操作之一。
+使用[Microsoft Edge工具][DevtoolsGuideChromiumMain]调试 WebView2 控件中显示的 Web 内容，方法与为 WebView2 控件中显示的其他网页进行调试Microsoft Edge。  若要打开 DevTools，请设置 WebView 控件的焦点，然后使用以下操作之一。
 
 *   选择 `F12`。
 *   选择 `Ctrl` + `Shift` + `I` 。
-*   打开上下文菜单 \ (右键单击\) 并选择 `Inspect` 。
+*   打开上下文菜单 (右键单击") 并选择 `Inspect` ""。
 
 有关详细信息，请导航到["DevTools 概述"。][DevtoolsGuideChromiumMain]
 
@@ -33,16 +35,18 @@ WebView2 Microsoft Edge的目标是将 Web 和本机应用开发功能和工具�
    DevTools 调试
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## [<a name="visual-studio"></a>Visual Studio](#tab/visualstudio)
 
-Visual Studio WebView2 应用中的 Web 和本机代码提供各种调试工具。  在Visual Studio部分中，主要焦点是调试 WebView 控件，但其他调试方法Visual Studio一样可用。  使用以下过程调试 Win32 应用中的 Web 和本机代码，Office外接程序。
+Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具。  在Visual Studio部分中，主要焦点是调试 WebView 控件，但其他调试方法Visual Studio一样可用。  使用以下过程来调试 Win32 应用中的 Web 和本机代码，Office外接程序。
 
 > [!IMPORTANT]
-> 当你在附加了本机调试Visual Studio中调试应用时，选择可能会触发本机调试器 `F12` ，而不是开发人员工具。  Select `Ctrl` + `Shift` + `I` ， or use the context menu \ (right-click\) to avoid the situation.
+> 当你在附加了Visual Studio调试器的情况下调试应用时，选择可能会触发本机调试器 `F12` ，而不是开发人员工具。  选择 `Ctrl` + `Shift` + `I` ，或使用上下文菜单 (右键单击) ，以避免这种情况。
 
 开始之前，请确保满足以下要求。
 
-*   若要调试脚本，必须从 Visual Studio 中启动应用。
+*   若要调试脚本，必须从应用程序内启动Visual Studio。
 *   无法将调试器附加到正在运行的 WebView2 进程。
 *   安装 Visual Studio 2019 版本 16.4 预览版 2 或更高版本。
 
@@ -68,7 +72,7 @@ Visual Studio WebView2 应用中的 Web 和本机代码提供各种调试工具�
         :::image-end:::
 
 1.  为 WebView2 应用启用脚本调试。
-    1.  在 WebView2 项目中，打开上下文菜单 \ (右键单击\) ，然后选择"属性 **"。**
+    1.  在 WebView2 项目中，打开上下文菜单 (右键单击") "，然后选择"属性 **"。**
     1.  在"**配置属性"下**，选择 **"调试"。**
     1.  在调试**器类型下**，选择 **"JavaScript (WebView2) "。 **
 
@@ -84,7 +88,7 @@ Visual Studio WebView2 应用中的 Web 和本机代码提供各种调试工具�
        Visual Studio添加断点
     :::image-end:::
 
-1.  若要运行调试器，请选择平台的位大小，然后选择"本地调试器"旁边的绿色播放**Windows按钮**。  应用运行，调试程序连接到创建的第一个 WebView2 进程。
+1.  若要运行调试器，请选择平台的位大小，然后选择"本地和调试器"旁边的绿色播放**Windows按钮**。  应用运行，调试程序连接到创建的第一个 WebView2 进程。
 
     :::image type="complex" source="./media/run.png" alt-text=" Visual Studio本地Windows调试器" lightbox="./media/run.png":::
        Visual Studio**本地Windows调试器**
@@ -99,6 +103,8 @@ Visual Studio WebView2 应用中的 Web 和本机代码提供各种调试工具�
 > [!NOTE]
 > 如果使用 WebView2 [SetVirtualHostNameToFolderMapping][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Setvirtualhostnametofoldermapping]方法，Visual Studio 2019 中的调试器将不能理解虚拟源路径映射，因此断点无法正常工作。  此源路径映射在运行调试器时Visual Studio Code。
 
+
+<!-- ====================================================================== -->
 ## [<a name="visual-studio-code"></a>Visual Studio Code](#tab/visualstudiocode)
 
 使用Microsoft Visual Studio代码调试在 WebView2 控件中运行的脚本。  <!--Ensure that you're using Visual Studio Code version [insert build here] or later.  -->
@@ -189,7 +195,7 @@ Visual Studio WebView2 应用中的 Web 和本机代码提供各种调试工具�
         "useWebView": true
     ```
 
-    WebView2 控件必须打开 CDP 端口以允许调试 WebView2 控件。  必须生成代码，以确保在启动调试程序之前，只有一个 WebView2 控件在 CDP (打开 chrome 开发人员) 协议。
+    WebView2 控件必须打开 CDP 端口以允许调试 WebView2 控件。  必须构建代码，以确保在启动调试程序之前，只有一个 WebView2 控件具有打开的 Chrome 开发人员协议 (CDP) 打开。
 
 *   调试跟踪选项
 
@@ -258,7 +264,7 @@ Visual Studio WebView2 应用中的 Web 和本机代码提供各种调试工具�
 
 [DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge开发人员工具|Microsoft Docs"
 
-[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Setvirtualhostnametofoldermapping]: /dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping "CoreWebView2.SetVirtualHostNameToFolderMapping (String， String， CoreWebView2HostResourceAccessKind) 方法 (Microsoft.Web.WebView2.Core) |Microsoft Docs"
+[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Setvirtualhostnametofoldermapping]: /dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping "CoreWebView2.SetVirtualHostNameToFolderMapping (String、String、CoreWebView2HostResourceAccessKind) 方法 (Microsoft.Web.WebView2.Core) |Microsoft Docs"
 [Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: /dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments "CoreWebView2EnvironmentOptions.AdditionalBrowserArguments 属性 (Microsoft.Web.WebView2.Core) |Microsoft Docs"
 [Webview2ReferenceWin32Webview2IdlParameters]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions  "CreateCoreWebView2Environment - 全局|Microsoft Docs"
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft EdgeWebView2 API 参考|Microsoft Docs"

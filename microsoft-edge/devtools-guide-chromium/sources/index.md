@@ -7,12 +7,12 @@ ms.date: 04/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 8dbaac2c9dd991576ab6e04d8e3286fabc50e7b7
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 7e90c03335c27c9af782f197d7a4680ccb44f1a7
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108652"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140009"
 ---
 <!-- Copyright Kayce Basques
 
@@ -53,6 +53,8 @@ ms.locfileid: "12108652"
 
 若要加载上面显示的调试演示网页，请参阅下面的使用 [调试器的基本](#the-basic-approach-to-using-a-debugger)方法。
 
+
+<!-- ====================================================================== -->
 ## <a name="using-the-navigator-pane-to-select-files"></a>使用导航器窗格选择文件
 
 使用 **左侧 (** 导航器窗格) 导航从服务器返回的资源之间导航以构建当前网页。  选择文件、图像和其他资源，并查看其路径。
@@ -173,11 +175,11 @@ script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
 document.head.appendChild(script);
 ```
 
-相反，您可以将此代码保存在 **代码** 段中，然后随时轻松地运行它。  选择 `Ctrl` + `S` \ (Windows/Linux\) 或 `Command` + `S` \ (macOS\) 时，DevTools 会将**代码段**保存到文件系统。
+相反，您可以将此代码保存在 **代码** 段中，然后随时轻松地运行它。  当你选择 `Ctrl` + `S` (Windows/Linux) `Command` + `S` 或 (macOS) 时，DevTools**** 会将代码段保存到文件系统。
 
 有多种方法可以运行代码段：
-*   在 **导航器窗格中** ，选择" **代码** 段"选项卡，然后选择代码段文件将其打开。  然后在"编辑器"窗格底部，选择**运行**（!["运行"按钮](../media/run-snippet-icon.msft.png)\）。
-*   当 DevTools 具有焦点时，选择`Ctrl`+`P` \（Windows/Linux\） 或 `Command`+`P` \（macOS\） 打开[命令菜单][DevToolsCommandMenuIndex]，然后键入`!`。
+*   在 **导航器窗格中** ，选择" **代码** 段"选项卡，然后选择代码段文件将其打开。  然后在"编辑器"窗格底部，选择"运行**** ![ " ("运行"按钮 ](../media/run-snippet-icon.msft.png)) 。
+*   当 DevTools 具有焦点时，选择 `Ctrl` + `P` (Windows/Linux) 或 `Command` + `P` (macOS) 打开命令[菜单][DevToolsCommandMenuIndex]，然后键入 `!` 。
 
 代码段 类似于小书签。
 
@@ -202,6 +204,8 @@ document.head.appendChild(script);
 
 有关详细信息，请参阅 Run [commands with the Microsoft Edge DevTools Command Menu][DevToolsCommandMenuIndex]。
 
+
+<!-- ====================================================================== -->
 ## <a name="using-the-editor-pane-to-view-or-edit-files"></a>使用编辑器窗格查看或编辑文件
 
 使用 **"** 编辑器"窗格查看从服务器返回的前端文件，以撰写当前网页，包括 JavaScript、HTML、CSS 和图像文件。  在 **编辑器** 窗格中编辑前端文件时，DevTools 会更新网页以运行修改后的代码。
@@ -239,11 +243,11 @@ document.head.appendChild(script);
    在 **编辑器** 窗格中编辑 JavaScript
 :::image-end:::
 
-若要将文件加载到"编辑器"窗格中，请使用**导航器**窗格（左侧）中的"**页**"选项卡。  或使用 **命令菜单**，如下所示：在 DevTools 的右上角，选择 **自定义和控制 DevTools** \（`...`\），然后选择 **打开文件**。
+若要将文件加载到"编辑器"窗格中，请使用**导航器**窗格（左侧）中的"**页**"选项卡。  或使用命令 **菜单**，如下所示：在 DevTools 的右上角，选择自定义和控制 **DevTools** `...` () 然后选择打开 **文件**。
 
 #### <a name="save-and-undo"></a>保存和撤消
 
-若要使 JavaScript 更改生效，请选择 `Ctrl` + `S`\(Windows、Linux\) 或 `Command` + `S`\(macOS\)。
+若要使 JavaScript 更改生效，请选择 `Ctrl` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 。
 
 如果更改文件，文件名旁边将出现一个星号。
 *   若要保存更改，请在 `Ctrl` + `S` Windows/Linux 或 `Command` + `S` macOS 上选择。
@@ -286,7 +290,7 @@ DevTools 不会重新运行脚本，因此唯一生效的 JavaScript 更改是�
 
 ### <a name="reformatting-a-minified-javascript-file-with-pretty-print"></a>使用非常打印重新格式化缩小的 JavaScript 文件
 
-若要使用美样打印重新格式化文件使其可读，请选择"编辑器"窗格底部的" **"美样打印** 按钮\（![格式](../media/format-icon.msft.png)\），显示为大括号。  或者，如果 **"编辑器"** 窗格顶部显示"非常打印"按钮，您可以选择该按钮。
+若要使用"花式打印"重新设置文件的格式使其可读，请在"编辑器"**** 窗格底部选择"真字打印"按钮 ![ (Format) （显示为大括号 ](../media/format-icon.msft.png) ）。  或者，如果 **"编辑器"** 窗格顶部显示"非常打印"按钮，您可以选择该按钮。
 
 :::image type="complex" source="../media/minified.msft.png" alt-text="&quot;彩色打印&quot;按钮" lightbox="../media/minified.msft.png":::
    " **彩色打印"** 按钮
@@ -392,10 +396,12 @@ CSS 更改会立即生效;无需手动保存更改。
 在 DevTools 中查看源文件的主要位置是源**工具。**  但有时需要在查看或编辑源文件时访问其他工具，例如 **元素** 或 **控制台**。  使用 **"箱"中的** "快速源 ["工具][DevtoolsCustomizeIndexDrawer]。
 
 1.  选择除"源"工具 **外** 的其他工具，如 **"元素"** 工具。
-1.  选择 `Ctrl` + `Shift` + `P` \(Windows、Linux\) 或 `Command` + `Shift` + `P` \(macOS\)。  命令菜单将打开。
+1.  选择 `Ctrl` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 。  命令菜单将打开。
 1.  键入 `Quick Source` ，然后选择"显示**快速源"。**  在"DevTools"窗口的底部，将显示"箱"，并选中 **"快速源"** 面板。  **快速源**面板包含在 **Source** 工具中编辑的最后一个文件，该文件位于精简版本的 DevTools 代码编辑器中。
-1.  选择`Ctrl`+`P` \（Windows、Linux\） 或 `Command`+`P` \（macOS\） 以打开 **"打开文件**"对话框。
+1.  选择 `Ctrl` + `P` (Windows、Linux) 或 (`Command` + `P` macOS) 打开 **"打开文件"** 对话框。
 
+
+<!-- ====================================================================== -->
 ## <a name="using-the-debugger-pane-to-debug-javascript-code"></a>使用调试器窗格调试 JavaScript 代码
 
 使用 JavaScript 调试程序逐步调试服务器返回的 JavaScript 代码。
@@ -470,10 +476,10 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
 ### <a name="debug-from-visual-studio-code-directly"></a>直接从Visual Studio Code调试
 
-若要使用功能更加完整的 Visual Studio Code 调试程序，而不是使用 DevTools 调试器，请使用 Microsoft Edge **DevTools**扩展Visual Studio Code。
+若要使用功能更全的 Visual Studio Code 调试器而不是 DevTools 调试器，请使用**Microsoft Edge DevTools**扩展Visual Studio Code。
 
 :::image type="complex" source="../media/microsoft-edge-tools-for-vs-code-extension.msft.png" alt-text="适用于Microsoft Edge开发人员的 DevTools Visual Studio Code" lightbox="../media/microsoft-edge-tools-for-vs-code-extension.msft.png":::
-   Microsoft Edge**开发人员的 DevTools** Visual Studio Code
+   适用于**Microsoft Edge开发人员的 DevTools** Visual Studio Code
 :::image-end:::
 
 此扩展提供从 Microsoft Visual Studio Code 中访问 Microsoft Edge DevTools 的 **Elements** 和 **网络** 工具。
@@ -524,7 +530,7 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/sources)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/sources)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

@@ -7,34 +7,39 @@ ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 023e2d28815501b9a3f2aec84523de021be8edf5
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: b11a6e1a27dd80c937c63a24106ab98b9b822493
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036319"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141402"
 ---
 # <a name="microsoft-edge-add-ons-store-developer-policies"></a>Microsoft Edge 加载项商店开发人员策略
 
+
+<!-- ====================================================================== -->
 ## <a name="introduction-and-objective-of-this-document"></a>本文档的简介和目标
 
-感谢你有兴趣开发适用于加载项应用商店Microsoft Edge扩展。  Microsoft Edge 加载项应用商店开发人员策略 \ (加载项应用商店开发人员策略\) 适用于你的扩展，包括通过合作伙伴中心提交扩展，以及通过 Microsoft Edge 加载项提供此类扩展。 [][MicrosoftPartnerCenter]
+感谢你有兴趣开发适用于加载项应用商店Microsoft Edge扩展。  Microsoft Edge 加载项应用商店开发人员策略 (加载项应用商店开发人员策略) 适用于你的扩展，包括通过合作伙伴中心提交扩展，以及通过 Microsoft Edge 加载项提供此类扩展。 [][MicrosoftPartnerCenter]
 
-The _Microsoft Edge Add-ons store_ is also called the Microsoft Edge _Add-ons website_.  加载项_Microsoft Edge开发人员_策略也称为加载项Microsoft Edge_开发人员策略_。
+加载项_Microsoft Edge_也称为加载项Microsoft Edge_网站_。  加载项_Microsoft Edge开发人员_策略也称为加载项Microsoft Edge_开发人员_策略。
 
 
+<!-- ====================================================================== -->
 ## <a name="principles"></a>原则
 
 下面是一些入门准则：
 
-*   你应该在扩展中为用户提供独特且Microsoft Edge。  提供从加载项应用商店 \Microsoft Edge 加载项\加载项 (Microsoft Edge下载扩展的极具吸引力) 。
+*   你应该在扩展中为用户提供独特且Microsoft Edge。  提供一个令人信服的理由，从加载项Microsoft Edge加载项 (Microsoft Edge下载扩展) 。
 *   你不得误导我们的联合用户有关你的扩展功能、谁提供它等。
 *   不得试图欺骗用户、系统或生态系统。  我们的加载项Microsoft Edge任何类型的欺诈;是评分和审查操作、信用卡欺诈或其他欺诈活动。
 
-遵循加载项Microsoft Edge开发人员策略应有助于你做出选择，以增强扩展的吸引力和受众。
+遵循加载项Microsoft Edge开发人员策略有助于你做出选择，以增强扩展的吸引力和受众。
 
 扩展对于亿万用户的体验至关重要。  我们期待体验你创建并感到兴奋，帮助你向全世界提供扩展。
 
+
+<!-- ====================================================================== -->
 ## <a name="1-product-policies"></a>1. 产品策略
 
 ### <a name="11-distinct-function--value-accurate-representation"></a>1.1 Distinct 函数&值;准确的表示形式
@@ -59,7 +64,7 @@ The _Microsoft Edge Add-ons store_ is also called the Microsoft Edge _Add-ons we
 
 #### <a name="115-provide-appropriate-details"></a>1.1.5 提供相应详细信息
 
-你必须提供有关扩展和扩展一览 \ (metadata\) 功能的详细信息。  扩展必须提供有价值且高质量的用户体验。  你的扩展还必须在加载项Microsoft Edge活动状态。
+你必须提供有关扩展以及针对扩展列出元数据 (功能) 详细信息。  扩展必须提供有价值且高质量的用户体验。  你的扩展还必须在加载项Microsoft Edge活动状态。
 
 #### <a name="116-stability-and-performance"></a>1.1.6 稳定性和性能
 
@@ -75,7 +80,7 @@ The _Microsoft Edge Add-ons store_ is also called the Microsoft Edge _Add-ons we
 
 对浏览器设置的任何更改都应在扩展说明中明确记录。
 
-您的扩展可能仅修改关键设置，以将 Microsoft 网页或服务替换为第三方 \ (例如，要求使用第三方搜索引擎或将主页设置为第三方 Web 属性\) （如果你被此类第三方使用或以其他方式关联）。
+您的扩展可能仅修改关键设置以将 Microsoft 网页或服务替换为第三方 (例如，要求使用第三方搜索引擎或将主页设置为第三方 Web 属性) （如果你被此类第三方使用或以其他方式关联）。
 
 ### <a name="12-security"></a>1.2 安全性
 
@@ -84,7 +89,7 @@ The _Microsoft Edge Add-ons store_ is also called the Microsoft Edge _Add-ons we
 #### <a name="121-content-security-policies"></a>1.2.1 内容安全策略
 
 > [!NOTE]
-> 如果您对扩展进行除上述功能之外的任何更改，则对代码的任何更改都必须符合Microsoft Edge[安全策略][MicrosoftEdgeContentSecurityPolicyRemoteScript]。  例如，扩展不应下载远程脚本，随后以与描述的功能不一致的方式运行该脚本。
+> 如果对扩展进行除上述功能之外的任何更改，则对代码的任何更改都必须符合Microsoft Edge[安全策略][MicrosoftEdgeContentSecurityPolicyRemoteScript]。  例如，扩展不应下载远程脚本，随后以与描述的功能不一致的方式运行该脚本。
 
 #### <a name="122-unwanted-and-malicious-software"></a>1.2.2 不需要和恶意软件
 
@@ -92,7 +97,7 @@ The _Microsoft Edge Add-ons store_ is also called the Microsoft Edge _Add-ons we
 
 #### <a name="123-dependency-on-other-software"></a>1.2.3 依赖其他软件
 
-扩展可能依赖于非集成软件 \ (如另一个产品、模块或服务\) 以提供主要功能，但您必须在描述中披露依赖项
+扩展可能依赖于非集成软件 (如其他产品、模块或) 交付主要功能，但您必须在描述中披露依赖项
 
 #### <a name="124-extensions-update"></a>1.2.4 扩展更新
 
@@ -112,7 +117,7 @@ The _Microsoft Edge Add-ons store_ is also called the Microsoft Edge _Add-ons we
 
 ### <a name="14-usability"></a>1.4 可用性
 
-你的扩展必须符合Microsoft Edge加载项应用商店可用性标准，包括但不限于以下各小节中列出的标准。
+你的扩展必须符合Microsoft Edge加载项存储可用性标准，包括但不限于以下各小节中列出的标准。
 
 #### <a name="141-compatibility-across-platforms"></a>1.4.1 跨平台的兼容性
 
@@ -128,11 +133,11 @@ The _Microsoft Edge Add-ons store_ is also called the Microsoft Edge _Add-ons we
 
 #### <a name="151-collect-personal-information-only-when-necessary"></a>1.5.1 仅在必要时收集个人信息
 
-你的扩展可能会收集、访问、使用或传输个人信息 \ (包括 Web 浏览活动\) ;仅在需要且仅在显著披露的面向用户的功能中使用时。
+你的扩展可能会收集、访问、使用或传输个人信息 (包括 Web 浏览活动) ;仅在需要且仅在显著披露的面向用户的功能中使用时。
 
 #### <a name="152-maintain-a-privacy-policy"></a>1.5.2 维护隐私策略
 
-无论扩展是访问、收集还是传输个人信息;你必须在法律要求时提供醒目的通知并遵守隐私策略。  隐私策略必须通知用户你的扩展访问、收集或传输的个人信息、该信息的使用、存储和保护方式，并指示其披露给的各方类型。  隐私策略必须说明用户对信息的使用和共享的控制、他们如何访问其信息，并且必须遵守适用的法律和法规。  向扩展添加新特性和功能时，隐私策略必须保持最新。
+无论扩展是访问、收集还是传输个人信息;你必须在法律要求时提供醒目的通知并遵守隐私策略。  隐私策略必须告知用户你的扩展访问、收集或传输的个人信息、该信息的使用、存储和保护方式，并指示其披露给的各方类型。  隐私策略必须说明用户对信息的使用和共享的控制、他们如何访问其信息，并且必须遵守适用的法律和法规。  向扩展添加新特性和功能时，隐私策略必须保持最新。
 
 如果向 Microsoft 提供隐私策略，即表示你同意允许 Microsoft 与扩展用户共享此类隐私策略。
 
@@ -180,15 +185,15 @@ The _Microsoft Edge Add-ons store_ is also called the Microsoft Edge _Add-ons we
 
 您必须使用安全的第三方购买 API 购买物理商品或服务。  你必须使用安全的第三方购买 API，以支付与任何其他服务（包括实际管理或自我贡献）相关付款。
 
-*   如果你的扩展用于促进或收集个人贡献，或进行促销比赛或比赛，则必须遵循适用法律。
+*   如果你的扩展用于促进或收集集体贡献，或进行促销比赛或比赛，则必须遵循适用法律。
 *   您还必须明确声明，Microsoft 不是此次促销活动的集资者或主办方。
-*   在扩展中销售的产品内产品/服务不得转换为任何合法有效的货币 \ (如美元、欧元等\) 或任何物理商品或服务。
+*   在扩展中销售的产品内产品/服务不得转换为任何合法有效的货币 (如美元、欧元等) 或任何物理商品或服务。
 
 以下要求适用于使用安全的第三方购买 API：
 
 *   在交易时或收集用户的任何付款或财务信息时;您的扩展必须标识商业交易提供商、对用户进行身份验证，并获取交易的用户确认。  商业交易提供商维护一个安全的财务交换平台。
 *   您的扩展可能为用户提供保存此身份验证的能力，但用户必须能够要求每次事务进行身份验证或关闭产品内事务。
-*   如果您的扩展收集信用卡信息或者使用收集信用卡信息的第三方付款处理器，则付款处理必须符合当前的 PCI 数据安全标准 \ (PCI DSS\) 。
+*   如果您的扩展收集信用卡信息，或者使用收集信用卡信息的第三方付款处理器，则付款处理必须符合当前 PCI 数据安全标准 (PCI DSS) 。
 
 #### <a name="182-disclosing-paid-features"></a>1.8.2 泄漏付费功能
 
@@ -196,7 +201,7 @@ The _Microsoft Edge Add-ons store_ is also called the Microsoft Edge _Add-ons we
 
 ### <a name="19-notifications"></a>1.9 通知
 
-你的扩展必须遵守通知的系统设置。  这意味着向用户显示的广告和通知必须与用户首选项一致，无论通知是由 Microsoft 推送通知服务 \ (MPNS\) 、Windows 推送通知服务 \ (WNS\) 还是由任何其他服务提供。  如果用户在特定于产品或系统范围内禁用通知，扩展必须保持功能。
+你的扩展必须遵守通知的系统设置。  这意味着向用户显示的广告和通知必须与用户首选项一致，无论通知是由 Microsoft 推送通知服务 (MPNS) 、Windows 推送通知服务 (WNS) 还是由任何其他服务提供。  如果用户在特定于产品或系统范围内禁用通知，扩展必须保持功能。
 
 如果你的产品使用 MPNS 或 WNS 传输通知，它必须符合以下要求：
 
@@ -214,7 +219,7 @@ The _Microsoft Edge Add-ons store_ is also called the Microsoft Edge _Add-ons we
 
 #### <a name="194-purpose-of-notifications"></a>1.9.4 通知的用途
 
-从你的扩展发送的通知必须与该扩展或你在 Microsoft Edge 加载项应用商店中发布的其他扩展相关，并且不得包含与你的扩展不相关的任何类型的促销邮件。
+从你的扩展发送的通知必须与该扩展或你在 Microsoft Edge 加载项商店中发布的其他扩展相关，并且不得包含与你的扩展不相关的任何类型的促销邮件。
 
 ### <a name="110-advertising-conduct-and-content"></a>1.10 广告行为准则和内容
 
@@ -246,14 +251,16 @@ The _Microsoft Edge Add-ons store_ is also called the Microsoft Edge _Add-ons we
 
 如果你的扩展面向 13 岁以下的儿童，如《儿童在线隐私保护法》[中的定义][FTCChildrensPrivacy];你必须在合作伙伴中心向 Microsoft[][MicrosoftPartnerCenter]通知这一情况，并确保扩展中显示的所有广告内容都适合 13 岁以下的儿童。
 
+
+<!-- ====================================================================== -->
 ## <a name="2-content-policies"></a>2 内容策略
 
-以下策略适用于内容和元数据 \ (包括发布者名称、扩展名称、扩展图标、扩展说明、扩展屏幕截图、扩展预告片和预告片缩略图，以及提供在 Microsoft Edge 加载项中分发的其他任何扩展元数据\) 。  内容是指扩展中包含的图像、声音、视频和文本、通过扩展公开的磁贴、通知、错误消息或广告，以及从服务器或扩展连接到的任何内容。  由于扩展Microsoft Edge加载项已全球使用，因此在地区和文化规范的上下文中解释和应用这些要求。
+以下策略适用于内容和元数据 (包括发布者名称、扩展名称、扩展图标、扩展说明、扩展屏幕截图、扩展预告片和预告片缩略图，以及提供用于在 Microsoft Edge 加载项中分发的其他任何扩展元数据) 。  内容是指扩展中包含的图像、声音、视频和文本、通过扩展公开的磁贴、通知、错误消息或广告，以及从服务器或扩展连接到的任何内容。  由于扩展Microsoft Edge加载项已全球使用，因此在地区和文化规范的上下文中解释和应用这些要求。
 
 ### <a name="21-content-requirements-for-microsoft-edge-addon-catalog-listing"></a>2.1 加载项目录Microsoft Edge的内容要求
 
 你提交的元数据和扩展附带的其他内容可能不包含成熟内容。
-不符合加载项应用商店一Microsoft Edge的提交将被拒绝或立即删除。
+不符合加载项应用商店Microsoft Edge一览要求的提交将被拒绝或立即删除。
 
 ### <a name="22-content-including-names-logos-original-and-third-party"></a>2.2 内容，包括名称、徽标、原始和第三方
 
@@ -263,11 +270,11 @@ The _Microsoft Edge Add-ons store_ is also called the Microsoft Edge _Add-ons we
 
 #### <a name="231-requirements"></a>2.3.1 要求
 
-您的扩展不得包含任何促进或宣传以下实际活动的内容：\ (\) 极端或无端暴力;\ (b\) 违反;\ (c\) 非法武器;或 \ (d\) 对个人、动物或真实或个人属性使用武器。
+您的扩展不得包含任何促进或宣传以下实际活动的内容： (极端) 无端暴力; (违反) 的行为; (制造) 武器的行为;或 (对) 、动物、真实或个人属性使用武器。
 
 #### <a name="232-responsibility"></a>2.3.2 责任
 
-你的扩展不得：\ (\) 对最终用户、任何其他人员或动物造成安全风险，也不得对最终用户或其他任何人或动物造成危害;或 \ (b\) 对真实或个人属性带来风险或导致损坏。  你应单独负责所有扩展安全测试、证书获取以及任何相应功能安全措施的实施。  不得禁用任何平台安全或舒适功能，并且必须在扩展中包括所有适用的法律要求和行业标准警告、通知和免责声明。
+你的扩展不得 (向) 带来安全风险，也不得对最终用户、任何其他人员或动物造成危害、危害或其他任何危害;或 (b) 对真实或个人属性带来风险或造成损坏。  你应单独负责所有扩展安全测试、证书获取以及任何相应功能安全措施的实施。  不得禁用任何平台安全或舒适功能，并且必须在扩展中包括所有适用的法律要求和行业标准警告、通知和免责声明。
 
 ### <a name="24-defamatory-libelous-slanderous-and-threatening"></a>2.4 中拉拉、中利贝利、斯兰达和布尔
 
@@ -321,27 +328,28 @@ The _Microsoft Edge Add-ons store_ is also called the Microsoft Edge _Add-ons we
 
 #### <a name="2122-ratings-change"></a>2.12.2 评分更改
 
-如果扩展提供的内容 \ (如用户生成的内容、零售内容或其他基于 Web 的内容\) 这些内容可能适用于比分配分级更高的年龄分级，则必须要求用户选择通过使用内容筛选器或通过使用预先存在的帐户登录来接收此类内容。
+如果扩展提供的内容 (如用户生成的内容、零售内容或其他基于 Web 的内容) 可能适用于比分配分级更高的年龄分级，则必须要求用户选择通过使用内容筛选器或通过使用预先存在的帐户登录来接收此类内容。
 
 ### <a name="213-videos"></a>2.13 视频
 
 如果你在一览中提交促销视频，它应遵循此策略中提到的所有内容指南。  如果选择提供 YouTube 链接，必须确保为要嵌入的特定视频关闭广告。  若要详细了解如何打开或关闭 YouTube 上的广告，请导航[][GoogleYoutubeAnswer2531367Topic7072227]到"设置嵌入视频的默认广告格式[和广告"。][GoogleYoutubeAnswer132596]
 
 
+<!-- ====================================================================== -->
 ## <a name="certification-appeal-process"></a>认证请求流程
 
-所有扩展都应遵循上面列出的应用商店策略。 如果扩展在审查过程中失败，请查看应用商店策略以了解失败的原因。 使用合作伙伴中心提交扩展后，若要询问有关其评价或认证状态的问题，请导航到"新建支持 [请求][MicrosoftSupportSupportrequestformE7a381be9c9aFafbEd76262bc93fd9e4] "并填写表单。
+所有扩展都应遵循上面列出的应用商店策略。 如果扩展在审查过程中失败，请查看应用商店策略以了解失败的原因。 使用合作伙伴中心提交扩展后，若要询问有关其评价或认证状态的问题，请导航 [到"新建][MicrosoftSupportSupportrequestformE7a381be9c9aFafbEd76262bc93fd9e4] 支持请求"并填写表单。
 
 ### <a name="microsoft-edge-add-ons-appeal-statistics-for-fy2021"></a>Microsoft Edge2021 年 9 月加载项吸引力统计信息
 
-| 主要投诉类型#1：强制投诉 | 主要投诉类型#2：认证结果 | 其他投诉类型 | Total Complaints | 过度投诉 |
+| 主要投诉类型 #1：强制执行投诉 | 主要投诉类型 #2：认证结果 | 其他投诉类型 | Total Complaints | 过度投诉 |
 |:--- |:--- |
 | 8 | 2 | 4 | 14 | 0 |
 
 
 <!-- links -->
 
-[MicrosoftEdgeContentSecurityPolicyRemoteScript]: ./csp.md#relaxing-the-default-policy "支持默认策略 - 内容安全策略 \ (CSP\) |Microsoft Docs"
+[MicrosoftEdgeContentSecurityPolicyRemoteScript]: ./csp.md#relaxing-the-default-policy "支持默认策略 - 内容安全策略 (CSP) |Microsoft Docs"
 
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "应用开发人员协议|Microsoft Docs"
 [MicrosoftIdentifiesMalwareUnwantedApplications]: /windows/security/threat-protection/intelligence/criteria "Microsoft 如何识别恶意软件和可能不需要的应用程序|Microsoft Docs"

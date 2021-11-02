@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 224ac4b3f8fb8bf23f971526819817237158e253
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 6a2cf886ebb285fa5ab7d537bd727c2c4bcccd20
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12107686"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140156"
 ---
 <!-- Copyright Rob Dodson
 
@@ -29,17 +29,17 @@ ms.locfileid: "12107686"
    limitations under the License.  -->
 # <a name="navigate-microsoft-edge-devtools-with-assistive-technology"></a>使用辅助技术导航 Microsoft Edge 开发工具
 
-本文可帮助主要依赖辅助技术的用户（如屏幕阅读器）使用[Microsoft Edge DevTools。][MicrosoftEdgeDevtoolsMain]  DevTools 是内置于 Web 浏览器的一Microsoft Edge工具。
+本文可帮助主要依赖辅助技术（如屏幕阅读器）的用户使用 [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain]。  DevTools 是内置于 Web 浏览器的一Microsoft Edge工具。
 
-有关改善网页辅助功能的 DevTools 功能，请参阅 [DevTools][DevtoolsAccessibilityReference] 中的辅助功能测试和使用 [DevTools](accessibility-testing-in-devtools.md)的辅助功能测试概述。
+有关改善网页辅助功能的 DevTools 功能，请参阅 [DevTools](reference.md) 中的辅助功能测试和使用 [DevTools](accessibility-testing-in-devtools.md)的辅助功能测试概述。
 
 本指南将指导你完成最可访问的工具和选项卡，并突出显示你可能会遇到的问题。
 
-DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为面板 。) 工具组织到__ 主工具栏和箱工具栏上的[ARIA][W3CWaiAriaTablist]选项卡列表中。
+DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为面板 _。) _工具组织到主工具栏和箱工具栏上的[ARIA](https://www.w3.org/TR/wai-aria-1.1/#tablist)选项卡列表中。
 
 以下是工具示例：
-*   元素 **工具** 允许你 [查看和更改 DOM 节点][DevtoolsDomIndexNavigateDomTreeKeyboard] 或 [CSS][DevtoolsCssIndex]。
-*   控制台 **工具** 允许你读取 JavaScript 日志和实时编辑对象。  有关详细信息，请导航到"[使用控制台"。][DevtoolsConsoleIndex]
+*   元素**工具**允许你[查看和更改 DOM 节点](../dom/index.md#navigate-the-dom-tree-with-a-keyboard)或[CSS。](../css/index.md)
+*   控制台 **工具** 允许你读取 JavaScript 日志和实时编辑对象。  有关详细信息，请导航到"[使用控制台"。](../console/index.md)
 
 在每个工具中，都有一组或多组选项卡。  例如， **元素** 工具包含一组选项卡，包括 **样式**、 **事件**侦听器 **和辅助功能**。
 
@@ -47,13 +47,13 @@ DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为面�
 <!-- ====================================================================== -->
 ## <a name="keyboard-shortcuts"></a>键盘快捷方式
 
-[DevTools 键盘快捷方式参考][DevtoolsShortcuts]是一本有用的工作表。  请务必在浏览不同的工具时为它添加书签并引用回它。
+[DevTools 键盘快捷方式参考](../shortcuts/index.md)是一本有用的工作表。  请务必在浏览不同的工具时为它添加书签并引用回它。
 
 
 <!-- ====================================================================== -->
 ## <a name="open-devtools"></a>打开开发工具
 
-若要开始，请导航到 [打开 Microsoft Edge 开发工具] [DevtoolsOpen]。  开发工具有多种打开方式，可以通过键盘快捷方式，也可通过菜单项将其打开。
+To get started， navigate to [Open Microsoft Edge DevTools](../open/index.md).  开发工具有多种打开方式，可以通过键盘快捷方式，也可通过菜单项将其打开。
 
 
 <!-- ====================================================================== -->
@@ -63,8 +63,8 @@ DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为面�
 
 ### <a name="navigate-by-keyboard"></a>使用键盘导航
 
-*   打开 DevTools 后，选择 `Control` + `]` \ (Windows、Linux\) 或 `Command` + `]` \ (macOS\) 将焦点移到主工具栏上的下一个工具。
-*   选择 `Control` + `[` \ (Windows、Linux\) 或 `Command` + \ (macOS\) 将焦点移到主工具栏上的上 `[` 一个工具。
+*   打开 DevTools 后，选择 (Windows、Linux) 或 (macOS) 将焦点移到主工具栏上的下一 `Control` + `]` `Command` + `]` 个工具。
+*   选择 (Windows、Linux) 或 (macOS) 将焦点移到主工具栏上的上 `Control` + `[` `Command` + `[` 一个工具。
 *   选择 `Tab` 或 `Shift` + 重复选择，直到焦点移到主工具栏或箱工具栏的选项卡，然后使用箭头键在工具 `Tab` 之间移动。
 
 **已知问题**
@@ -74,9 +74,9 @@ DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为面�
 
 ### <a name="navigate-by-command-menu"></a>按命令菜单导航
 
-若要选择特定工具，请使用命令 [菜单][DevtoolsCommandMenuIndex]。  在命令菜单中，工具_称为面板。_
+若要选择特定工具，请使用命令 [菜单](../command-menu/index.md)。  在命令菜单中，工具_称为面板。_
 
-1.  打开开发工具，选择 `Control`+`Shift`+`P` \(Windows, Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 以打开“**命令菜单**”。
+1.  打开 DevTools 后 `Control` + `Shift` + `P` ， (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
     命令 **菜单** 是一个模糊搜索自动完成组合框。
 1.  键入面板名称 (工具) ，然后使用键盘上的 导航 `Down Arrow` 到正确的选项。
 1.  选择 `Enter` 以运行命令。
@@ -97,13 +97,13 @@ DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为面�
 
 1.  使用屏幕阅读器中的光标导航到要检查的元素。
 1.  模拟右键单击元素以打开上下文菜单。
-1.  选择“**检查**”选项。  这将 [打开 Elements 工具并聚焦 DOM 树中的元素][DevtoolsDomIndexViewDomNodes]。
+1.  选择“**检查**”选项。  这将 [打开元素工具，并聚焦 DOM 树中的 元素](../dom/index.md#view-dom-nodes)。
 
-“**DOM 树**”已布局为 [ARIA 树][W3CWaiAriaTree]。  例如，导航到 [使用键盘导航“**DOM Tree**”][DevtoolsDomIndexNavigateDomTreeKeyboard]。
+“**DOM 树**”已布局为 [ARIA 树](https://www.w3.org/TR/wai-aria-1.1/#tree)。  例如，导航到 [使用键盘导航“**DOM Tree**”][DevtoolsDomIndexNavigateDomTreeKeyboard]。
 
 ### <a name="copy-the-code-for-an-element-in-the-dom-tree"></a>复制 DOM 树中元素的代码
 
-1.  将焦点放在“**DOM 树**”中的节点上，然后将鼠标悬停在节点上，并打开上下文菜单 \（右键单击\）。
+1.  焦点在 **DOM**树中的节点上时，将鼠标悬停在节点上并打开上下文菜单 (右键单击") "。
 1.  展开“**复制**”选项。
 1.  选择“**复制 outerHTML**”。
 
@@ -127,7 +127,7 @@ DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为面�
 *   选择 `Tab` 以在属性值之间移动。  当听到该元素的名称（例如，`h2`）时，你会位于文本输入内，并且可以更改元素的类型。
 *   选择 `Control` + `Enter` (Windows、Linux) 或 `Command` + `Enter` (macOS) 接受更改。
 
-例如，当您键入并选择 (Windows、Linux) 或 (macOS) 时，元素的起始标记和 `h3` `Control` + `Enter` `Command` + `Enter` 结束标记 `h3` 会更改。
+例如，当你键入并选择 (Windows、Linux) 或 (macOS) 时，元素的起始标记和结束标记 `h3` `Control` + `Enter` `Command` + `Enter` `h3` 会更改。
 
 
 <!-- ====================================================================== -->
@@ -146,9 +146,9 @@ DOM **断点** 和 **属性** 选项卡不可通过键盘访问。
 
 ### <a name="styles-pane"></a>样式窗格
 
-在“**样式**”窗格查找控件筛选样式、切换元素状态 \（如 [:active][MDNActive] 和 [:focus][MDNFocus]\）、切换类别和添加新类别。   还有一个功能强大的样式检查工具，用于浏览和修改当前应用于“**DOM 树**”中处于焦点的元素的样式。
+在 **"样式** "窗格中查找用于筛选样式的控件，切换元素 (如 [：active](https://developer.mozilla.org/docs/Web/CSS/:active) 和 [：focus](https://developer.mozilla.org/docs/Web/CSS/:focus)) 、切换类和添加新类。  还有一个功能强大的样式检查工具，用于浏览和修改当前应用于“**DOM 树**”中处于焦点的元素的样式。
 
-了解“**样式**”窗格的关键概念是它只显示“**DOM 树**”窗格中当前选中节点的样式。  例如，假设已完成对 `<header>` 节点样式的检查，并且现在希望查看 `<footer>` 节点的样式。  若要执行该操作，首先需要在“**DOM 树**”中选择 `<footer>` 节点。  如果使用 [检查](#inspect-an-element-on-the-page) 工作流检查位于 `footer` 节点 \（如页脚内的链接）邻近区域中的节点（该节点焦点为“**DOM 树**”），然后使用键盘导航到您感兴趣的确切节点，可能发现这一操作更为快速。
+了解“**样式**”窗格的关键概念是它只显示“**DOM 树**”窗格中当前选中节点的样式。  例如，假设已完成对 `<header>` 节点样式的检查，并且现在希望查看 `<footer>` 节点的样式。  若要执行该操作，首先需要在“**DOM 树**”中选择 `<footer>` 节点。  您可能会发现使用"检查"工作流检查[](#inspect-an-element-on-the-page)位于节点 (常规附近的节点会更快，例如页脚) 内的链接（它聚焦 `footer` **DOM 树**）中，然后使用键盘导航到您感兴趣的精确节点。
 
 #### <a name="navigate-the-styles-pane"></a>导航“样式”窗格
 
@@ -161,7 +161,7 @@ DOM **断点** 和 **属性** 选项卡不可通过键盘访问。
 *   选择 `Tab` 以在每个 CSS 属性的可编辑版本和相应的值之间移动。  每个样式块的末尾都是一个空白的可编辑文本字段，可用于添加其他 CSS 属性。
 *   你可以继续选择在样式列表中移动，或者选择退出模式 `Tab` 并返回通过 `Escape` 箭头键导航。
 
-有关其他快捷方式，请导航到 [样式窗格键盘参考][DevtoolsShortcutsStylesPaneKeyboard]。
+有关其他快捷方式，请导航到 ["样式"窗格键盘引用](../shortcuts/index.md#styles-panel-keyboard-shortcuts)。
 
 **已知问题**
 
@@ -196,7 +196,7 @@ DOM **断点** 和 **属性** 选项卡不可通过键盘访问。
 
 #### <a name="explore-all-computed-styles"></a>浏览所有已计算的样式
 
-选择 `Tab`，直至到达已计算样式的集合。  这些内容将显示为“[ARIA 树][W3CWaiAriaTree]。  展开列表框会显示哪些 CSS 选择器正在应用已计算样式。  这些选择器按特定性进行整理。  屏幕阅读器将播报已计算的值、当前哪个 CSS 选择器正在匹配、包含该选择器的样式表文件名以及选择器行号。
+选择 `Tab`，直至到达已计算样式的集合。  这些内容将显示为“[ARIA 树](https://www.w3.org/TR/wai-aria-1.1/#tree)。  展开列表框会显示哪些 CSS 选择器正在应用已计算样式。  这些选择器按特定性进行整理。  屏幕阅读器将播报已计算的值、当前哪个 CSS 选择器正在匹配、包含该选择器的样式表文件名以及选择器行号。
 
 **已知问题**
 
@@ -208,22 +208,22 @@ DOM **断点** 和 **属性** 选项卡不可通过键盘访问。
 
 #### <a name="explore-event-listeners"></a>浏览事件侦听器
 
-事件侦听器将显示为 [ARIA 树][W3CWaiAriaTree]。  可以使用箭头键导航它们。  屏幕阅读器将播报事件侦听器所附加到的 DOM 对象名称，以及定义事件侦听器的文件名和行号。
+事件侦听器将显示为 [ARIA 树](https://www.w3.org/TR/wai-aria-1.1/#tree)。  可以使用箭头键导航它们。  屏幕阅读器将播报事件侦听器所附加到的 DOM 对象名称，以及定义事件侦听器的文件名和行号。
 
 ### <a name="accessibility-tab"></a>"辅助功能"选项卡
 
 在 `Tab` "元素"工具的"辅助功能 **"** 选项卡内选择要四 **处移动的** 键。
 
-" **辅助功能"** 选项卡位于"样式" **选项卡** 附近。在"辅助功能"选项卡上，有一些控件用于探索辅助功能树、应用于元素的 ARIA 属性以及计算的辅助功能属性。  有关详细信息，请导航到使用 [辅助功能选项卡测试辅助功能][DevtoolsAccessibilityTab]。
+" **辅助功能"** 选项卡位于"样式" **选项卡** 附近。在"辅助功能"选项卡上，有一些控件用于探索辅助功能树、应用于元素的 ARIA 属性以及计算的辅助功能属性。  有关详细信息，请导航到使用 [辅助功能选项卡测试辅助功能](accessibility-tab.md)。
 
 #### <a name="accessibility-tree"></a>辅助功能树
 
-**辅助功能树** 显示为 [ARIA 树][W3CWaiAriaTree]，其中每个 `treeitem` 对应 DOM 中的一个元素。  树将播报选定节点的已计算角色。  通用元素（如 `div` 和 `span`）将在树中播报为 “GenericContainer”。  使用箭头键来遍历树并浏览父子级关系。
+**辅助功能树** 显示为 [ARIA 树](https://www.w3.org/TR/wai-aria-1.1/#tree)，其中每个 `treeitem` 对应 DOM 中的一个元素。  树将播报选定节点的已计算角色。  通用元素（如 `div` 和 `span`）将在树中播报为 “GenericContainer”。  使用箭头键来遍历树并浏览父子级关系。
 
 **已知问题**
 
-*   对于 MacOS 屏幕阅读器（如**** VoiceOver）来说，"辅助功能"选项卡Microsoft Edge [ARIA][W3CWaiAriaTree]树的类型可能不会正确公开。  订阅 [Chromium 问题 #868480][ChromiumIssues868480] 以获取有关此问题进展的通知。
-*   每个 **ARIA 属性** 和 **已计算属性** 部分都标记为 [ARIA 树][W3CWaiAriaTree]，但当前每个部分都不具有焦点管理且不可通过键盘操作。
+*   对于 MacOS 屏幕阅读器（如**** VoiceOver）来说，"辅助功能"选项卡Microsoft Edge ARIA 树的类型可能未正确公开。 [](https://www.w3.org/TR/wai-aria-1.1/#tree)  订阅 [Chromium 问题 #868480](https://bugs.chromium.org/p/chromium/issues/detail?id=868480) 以获取有关此问题进展的通知。
+*   每个 **ARIA 属性** 和 **已计算属性** 部分都标记为 [ARIA 树](https://www.w3.org/TR/wai-aria-1.1/#tree)，但当前每个部分都不具有焦点管理且不可通过键盘操作。
 
 
 <!-- ====================================================================== -->
@@ -251,37 +251,8 @@ Lighthouse 报告分为与每个审核类别对应的部分。  报告打开时�
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsAccessibilityReference]: reference.md "DevTools | 中的辅助功能测试功能Microsoft Docs"
-[DevtoolsAccessibilityTab]: accessibility-tab.md "使用“辅助功能”选项卡选项测试辅助功能 | Microsoft Docs"
-[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge开发人员工具|Microsoft Docs"
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "使用&quot;开发工具Microsoft Edge菜单运行命令|Microsoft Docs"
-[DevtoolsConsoleIndex]: ../console/index.md "控制台概述 | Microsoft Docs"
-[DevtoolsCssIndex]: ../css/index.md "查看和更改 CSS 入门 | Microsoft 文档"
-<!--[DevtoolsCssReferenceViewAppliedElement]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "CSS features reference - View only the CSS that is actually applied to an element | Microsoft Docs"  -->
-<!--[DevtoolsDomIndex]: ../dom/index.md "Get started with viewing and changing the DOM | Microsoft Docs"  -->
-[DevtoolsDomIndexViewDomNodes]： ../dom/index.md#view-dom-nodes "View DOM nodes - 查看和更改 DOM 节点|Microsoft Docs&quot; [DevtoolsDomIndexNavigateDomTreeKeyboard]： ../dom/index.md#navigate-the-dom-tree-with-a-keyboard &quot;Navigate the DOM Tree with a keyboard - 开始查看和更改 DOM |Microsoft Docs&quot; [DevtoolsOpen]： ../open/index.md &quot;Open Microsoft Edge DevTools |Microsoft Docs&quot; [DevtoolsShortcuts]： ../shortcuts/index.md &quot;Microsoft Edge DevTools 键盘快捷方式|Microsoft Docs&quot; [DevtoolsShortcutsStylesPaneKeyboard]： ../shortcuts/index.md#styles-panel-keyboard-shortcuts &quot;Styles panel keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts |Microsoft Docs"
-
-[ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "问题 868480 - 在 Mac 辅助功能中以表的形式公开 ARIA 树"
-
-[GithubEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Docs%20Feedback%5D "新问题 - MicrosoftDocs/edge-developer - GitHub"
-
-[MDNActive]: https://developer.mozilla.org/docs/Web/CSS/:active ":active | MDN"
-[MDNFocus]: https://developer.mozilla.org/docs/Web/CSS/:focus ":focus | MDN"
-
-[MonorailChromiumIssues]: https://crbug.com "问题 - chromium - Monorail"
-
-[W3CWaiAriaTablist]: https://www.w3.org/TR/wai-aria-1.1/#tablist "选项卡列表（角色） - 可访问的富 Internet 应用程序(WAI-ARIA) 1.1 | W3C"
-[W3CWaiAriaTree]: https://www.w3.org/TR/wai-aria-1.1/#tree "树（角色） - 可访问的富 Internet 应用程序 (WAI-ARIA) 1.1 | W3C"
-
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> [此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) 可查找原始页面，其作者为 [Rob Dodson][RobDodson] \（参与者，Google WebFoundamentals\）。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) ，由 [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (Contributor、Google WebFundamentals) 。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[RobDodson]: https://developers.google.com/web/resources/contributors#rob-dodson
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 46d987b198bf3e69744611580cd3097212bed886
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 470324b1474019a758b6aa3b9b25378be9554ad2
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083238"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141507"
 ---
 # <a name="navigation-events"></a>导航事件
 
 支持的平台：Win32、Windows Forms、WinUi、WPF。
 
-导航事件在 WebView2 实例中显示的内容发生特定异步操作时运行。  例如，当 WebView2 用户导航到新网站时，本机内容会使用 事件侦听 `NavigationStarting` 更改。  导航操作完成后，运行 `NavigationCompleted` 。  有关导航事件的良好示例，请导航到[WebView2 入门指南][Webview2IndexGetStarted]。
+导航事件在 WebView2 实例中显示的内容发生特定异步操作时运行。  例如，当 WebView2 用户导航到新网站时，本机内容会使用 事件侦听 `NavigationStarting` 更改。  导航操作完成后，运行 `NavigationCompleted` 。  有关导航事件的良好示例，请导航到[WebView2][Webview2IndexGetStarted]入门指南。
 
 <!--todo:  Move the relevant information out of the get started guide to better focus the content and leave the most concise elements in the get started guide.  -->
 
@@ -44,7 +44,7 @@ ms.locfileid: "12083238"
    :::column-end:::
 :::row-end:::
 
-使用导航 ID \ (`NavigationId` event\) 跟踪每个新文档的导航事件。  每次 `NavigationId` 成功导航到新文档时，WebView 事件都会更改。
+使用导航 ID 跟踪每个新文档的导航事件 (`NavigationId` 事件) 。  每次 `NavigationId` 成功导航到新文档时，WebView 事件都会更改。
 
  具有不同事件实例的 `NavigationId` 导航事件可能会重叠。  例如，启动导航事件时，必须等待相关 `NavigationStarting` 事件。  如果随后启动另一个导航，则应该会看到第一个导航的事件，后跟第二个导航的事件，然后是第一个导航的事件，然后是第二个导航的所有其他相应导航事件。 `NavigationStarting` `NavigationStarting` `NavigationCompleted`
 

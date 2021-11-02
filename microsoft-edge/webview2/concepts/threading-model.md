@@ -8,19 +8,21 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 25c4d30e1d9cd368ac6fd15f01056958d5586a8d
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: f78c36ceefc5a1d1f2d4b145ff10541acd872206
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082279"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140695"
 ---
 # <a name="threading-model-for-webview2"></a>WebView2 的线程模型
 
 支持的平台：Win32、Windows Forms、WinUi、WPF。
 
-WebView2 控件基于组件对象模型 [ (COM) ][WindowsWin32ComTheComponentObjectModel] 并且必须在单个线程的 Thread (STA [) ][WindowsWin32ComSingleThreadedApartments] 上运行。
+WebView2 控件基于组件对象模型 [ (COM) ][WindowsWin32ComTheComponentObjectModel] 并且必须在单个线程处理线程 STA ([上运行 ][WindowsWin32ComSingleThreadedApartments]) 线程。
 
+
+<!-- ====================================================================== -->
 ## <a name="thread-safety"></a>线程安全
 
 WebView2 必须在使用消息线索的 UI 线程上创建。  所有回调都发生在该线程上，并且必须在该线程上完成对 WebView2 的请求。  从另一个线程使用 WebView2 不安全。
@@ -28,8 +30,10 @@ WebView2 必须在使用消息线索的 UI 线程上创建。  所有回调都�
 唯一的例外是 `Content` 属性 `CoreWebView2WebResourceRequest` 。  从 `Content` 后台线程读取属性流。  该流应为敏捷流，或应该从后台 STA 创建，以防止 UI 线程的性能下降。
 
 > [!NOTE]
-> 对象属性是单线程的。  例如，从线程 (调用将成功，即返回 `CoreWebView2CookieManager.GetCookiesAsync(null)` cookie) ;但是，在此类调用之后尝试访问 cookie 的属性 (如) 将引发 `Main` `c.Domain` 异常。
+> 对象属性是单线程的。  例如，从除 (之外的其他线程调用将成功，即返回 `CoreWebView2CookieManager.GetCookiesAsync(null)` cookie) ;但是，在此类调用之后尝试访问 cookie 的属性 (如) 将引发 `Main` `c.Domain` 异常。
 
+
+<!-- ====================================================================== -->
 ## <a name="reentrancy"></a>Reentrancy
 
 回调（包括事件处理程序和完成处理程序）将串行运行。  运行事件处理程序并开始消息循环后，事件处理程序或完成回调将无法以重新进入的方式运行。  如果 WebView2 应用尝试在 WebView 事件处理程序内同步创建嵌套消息循环或模式 UI，则此方法将导致尝试重新运行。  WebView2 中不支持此类重新执行，并且会无限期地将事件处理程序留在堆栈中。
@@ -74,7 +78,7 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 
 > [!NOTE]
 > 对于 WinForms 和 WPF 应用，若要获取用于调试的完全调用堆栈，你必须为 WebView2 应用启用本机代码调试，如下所示。
-> 1.  在 WebView2 项目中打开Visual Studio。
+> 1.  在 webView2 项目中打开Visual Studio。
 > 1.  在 **"解决方案资源管理器**"中，右键单击"WebView2"项目，然后选择"属性 **"。**
 > 1.  选择" **调试** "选项卡，然后选中" **启用本机代码调试"** 复选框，如下所示。
 
@@ -82,6 +86,8 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
    在应用程序内启用本机代码Visual Studio
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="deferrals"></a>Deferrals
 
 某些 WebView2 事件读取在相关事件参数上设置的值，或在事件处理程序完成后启动一些操作。  如果还需要运行异步操作（如事件处理程序），请对关联事件的事件参数 `GetDeferral` 使用 方法。  返回的对象可确保在请求 的 方法之前不会认为事件 `Deferral` `Complete` `Deferral` 处理程序已完成。
@@ -90,7 +96,7 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 
 ### <a name="deferrals-in-c"></a>C 中的延迟#
 
-使用 in C# 时，最佳做法 `Deferral` 是使用它和 `using` 块。 `using`即使块 `Deferral` 中间抛出异常，块也可确保 完成 `using` 。 如果相反，你有代码可显式调用 ，但在调用发生前会引发异常，延迟不会完成，直到稍后垃圾回收器最终收集和处理延迟时。 `Complete` `Complete` 在这期间，WebView2 将等待应用代码处理事件。
+在 C# 中时，最佳做法是使用 块 `Deferral` `using` 。 `using`即使块 `Deferral` 中间抛出异常，块也可确保 完成 `using` 。 如果相反，你有代码可显式调用 ，但在调用发生前会引发异常，延迟不会完成，直到稍后垃圾回收器最终收集和处理延迟时。 `Complete` `Complete` 在这期间，WebView2 将等待应用代码处理事件。
 
 例如，不要执行以下操作，因为如果在调用 前出现异常，该事件不会被视为 `Complete` `WebResourceRequested` "handled"，并阻止 WebView2 呈现该 Web 内容。
 
@@ -124,6 +130,7 @@ private async void WebView2WebResourceRequestedHandler(CoreWebView2 sender,
 ```
 
 
+<!-- ====================================================================== -->
 ## <a name="block-the-ui-thread"></a>阻止 UI 线程
 
 WebView2 依赖 UI 线程的消息处理器来运行事件处理程序回调和异步方法完成回调。  如果使用阻止消息发送的方法（如 或 ），则 WebView2 事件处理程序和 `Task.Result` `WaitForSingleObject` async-method 完成处理程序不会运行。  例如，以下代码无法完成，因为邮件在等待完成时停止 `Task.Result` 消息 `ExecuteScriptAsync` 等待等待。  由于阻止了消息拦截， `ExecuteScriptAsync` 无法完成 。
@@ -165,7 +172,7 @@ private async void Button_Click(object sender, EventArgs e)
 <!-- external links -->
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 类|Microsoft Docs"
 
-[WindowsWin32ComSingleThreadedApartments]: /windows/win32/com/single-threaded-apartments "单线程参与|Microsoft Docs"
+[WindowsWin32ComSingleThreadedApartments]: /windows/win32/com/single-threaded-apartments "单线程主|Microsoft Docs"
 [WindowsWin32ComTheComponentObjectModel]: /windows/win32/com/the-component-object-model "组件对象模型|Microsoft Docs"
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"

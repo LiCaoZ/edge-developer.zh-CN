@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 8dc2705d80de9868bef8140de01ed82e4705d0f5
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 6dd7d42589d56d9a0687f1d7191c5a871d5cfe74
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12107812"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139505"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -38,6 +38,8 @@ ms.locfileid: "12107812"
 *   尽可能避免布局。  选择完全不触发布局的 CSS。
 *   绘制所花的时间可能多于任何其他呈现活动。  注意画图瓶颈。
 
+
+<!-- ====================================================================== -->
 ## <a name="javascript"></a>JavaScript
 
 JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低应用程序性能。  不要让时间不当时或长时间运行的 JavaScript 干扰用户交互。
@@ -49,7 +51,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 <!--todo: add Recording section when available  -->
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->
 
-如果你注意到 JavaScript 中出现 (的) ，可能需要将你的分析下一个级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面函数中的使用位置。  了解如何在"加快 [JavaScript 运行时速度"中创建 CPU 配置文件][DevtoolsRenderingToolsJavascriptRuntime]。
+如果你注意到 JavaScript 中 (呈现) 出现大量 jank 和中断，你可能需要将分析介绍到下一级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面函数中的使用位置。  了解如何在"加快 [JavaScript 运行时速度"中创建 CPU 配置文件][DevtoolsRenderingToolsJavascriptRuntime]。
 
 ### <a name="javascript-problems"></a>JavaScript：问题
 
@@ -64,6 +66,8 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 
 <!--todo: add Optimize JavaScript runtime section when available  -->
 
+
+<!-- ====================================================================== -->
 ## <a name="style"></a>样式
 
 样式更改会非常昂贵，尤其是在这些更改影响 DOM 中的多个元素时。  每次向元素应用样式时，浏览器都会指出对所有相关元素的影响、重新计算布局和重画。
@@ -77,7 +81,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 
 ### <a name="style-tools"></a>样式：工具
 
-在"性能"工具 **中录制** 。  检查录制大事件 `Recalculate Style` \ (以紫色\) 。
+在"性能"工具 **中录制** 。  检查录制是否 `Recalculate Style` 显示紫色 (大) 。
 
 <!--todo: add Recording section when available  -->
 
@@ -112,6 +116,8 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations section when available -->
 
+
+<!-- ====================================================================== -->
 ## <a name="layout"></a>布局
 
 Firefox (或重排) 是浏览器计算页面上所有元素的位置和大小的过程。  Web 的布局模型意味着一个元素可能会影响其他元素;例如，元素的宽度通常会影响任何子元素的宽度，等等，一直向上和向下 `<body>` 影响树。  浏览器可能涉及此过程。
@@ -147,6 +153,8 @@ Firefox (或重排) 是浏览器计算页面上所有元素的位置和大小的
 
 <!--todo: add Avoid CSS that triggers layouts (Avoid large, complex layouts and layout thrashing) section when available -->
 
+
+<!-- ====================================================================== -->
 ## <a name="paint-and-composite"></a>画图和复合
 
 画图是填充像素的过程。  它通常是呈现过程成本最大的部分。  如果你注意到你的页面未以任何设计方式工作，很可能是有绘制问题。
@@ -214,7 +222,7 @@ Check out the **Rendering** panel for further configurations that are able to he
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> [此处](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)可以找到原始页面，由 [Kayce Basques][KayceBasques] \（技术写作人员，Chrome DevTools \& Lighthouse\）和 [Meggin Kearney][MegginKearney] \（技术写作人员\）编写。
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)由位于此处的[由由 (][KayceBasques]技术编写器、Chrome DevTools \& Lighthouse) 和[Meggin Kearney][MegginKearney] (Technical Writer) 创作。
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

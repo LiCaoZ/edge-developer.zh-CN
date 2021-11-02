@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 16384c40360b2e10a422fb766832ba7a1e466dc6
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: a7f3bcfd200c75d3588c79e3fe62eb245dea10c5
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108218"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141542"
 ---
 <!-- Copyright Kayce Basques
 
@@ -45,6 +45,8 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
    “**推送消息**”窗格
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="background-fetch"></a>后台提取
 
 **后台提取 API**使**服务工作进程**能够可靠地下载大型资源（如电影或播客）作为后台服务。  若要记录后台提取事件 3 天，即使 DevTools 未打开：
@@ -59,7 +61,7 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
        “**后台提取**”面板
     :::image-end:::
 
-1.  选择“**记录**”\(“![记录](../media/record-icon.msft.png)”\)。
+1.  Choose **Record** (![ Record ](../media/record-icon.msft.png)) .
    触发某些后台提取活动后，DevTools 记录事件到表中。
 
     :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="后台提取面板中的事件日志" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
@@ -72,6 +74,8 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
        在“**后台提取**”窗格中查看事件的详细信息
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="background-sync"></a>后台同步
 
 **后台同步 API**使脱机**服务工作进程**能够在重新建立可靠 Internet 连接后向服务器发送数据。  若要记录后台同步事件 3 天，即使 DevTools 未打开：
@@ -86,7 +90,7 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
        “**后台同步**”窗格
     :::image-end:::
 
-1.  选择“**记录**”\(“![记录](../media/record-icon.msft.png)”\)。
+1.  Choose **Record** (![ Record ](../media/record-icon.msft.png)) .
    触发某些后台同步活动后，DevTools 记录事件到表中。
 
     :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="“后台同步”窗格中的事件日志" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
@@ -99,6 +103,8 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
        在“**后台同步**”窗格中查看事件的详细信息
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="notifications"></a>通知
 
 **服务工作进程**从服务器接收一条[推送消息][MDNPush]后，服务工作进程使用[通知 API][MDNNotifications]向用户显示数据。  若要记录通知 3 天，即使 DevTools 未打开：
@@ -111,7 +117,7 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
        “**通知**”窗格
     :::image-end:::
 
-1.  选择“**记录**”\(“![记录](../media/record-icon.msft.png)”\)。
+1.  Choose **Record** (![ Record ](../media/record-icon.msft.png)) .
    触发某些通知活动后，DevTools 记录事件到表中。
 
     :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="“通知”窗格中的事件日志" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
@@ -124,6 +130,8 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
        在“**通知**”窗格中查看事件的详细信息
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="push-messages"></a>推送消息
 
 若要向用户显示推送通知，**服务工作进程**必须先使用[推送消息 API][MDNPush]从服务器接收数据。  当服务工作进程准备好显示通知时，它将使用[通知 API][MDNNotifications]。  若要记录推送消息 3 天，即使 DevTools 未打开：
@@ -136,7 +144,7 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
        打开“**推送消息**”窗格
     :::image-end:::
 
-1.  选择“**记录**”\(“![记录](../media/record-icon.msft.png)”\)。
+1.  Choose **Record** (![ Record ](../media/record-icon.msft.png)) .
     触发某些推送消息活动后，DevTools 记录事件到表中。
 
     :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="“推送消息”窗格中的事件日志" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
@@ -163,7 +171,7 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0

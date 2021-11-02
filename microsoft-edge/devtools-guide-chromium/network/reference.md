@@ -7,12 +7,12 @@ ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 8ece993ae6f77fb007272490e5574365a2f916ec
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: bd75b4b1e6c92b81c989e7f42c93d198e1abe20b
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12081971"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139484"
 ---
 <!-- Copyright Kayce Basques
 
@@ -31,6 +31,8 @@ ms.locfileid: "12081971"
 
 在此 Microsoft Edge 开发工具网络分析功能的全面参考中，探索分析页面加载方式的新方法。
 
+
+<!-- ====================================================================== -->
 ## <a name="record-network-requests"></a>记录网络请求
 
 默认情况下，只要开发人员工具处于打开状态，它就会在“**网络**”工具中记录所有网络请求。
@@ -43,12 +45,12 @@ ms.locfileid: "12081971"
 
 若要停止记录请求，请完成以下步骤。
 
-1.  在“**网络**”工具上，选择“**停止记录网络日志**（“![停止记录网络日志](../media/record-on-icon.msft.png)”）。  它变为灰色，表示开发人员工具不再记录请求。
-1.  当“**网络**”工具成为焦点时，选择 `Control`+`E`（Windows、Linux）或 `Command`+`E`(macOS)。
+1.  在" **网络"** 工具上，选择"停止 **记录** 网络日志 (![ 停止记录网络 ](../media/record-on-icon.msft.png) 日志) 。  它变为灰色，表示开发人员工具不再记录请求。
+1.  选择 `Control` + `E` (Windows、Linux) 或 `Command` + `E` (macOS) ，而**网络**工具已对焦。
 
 ### <a name="clear-requests"></a>清除请求
 
-在“**网络**”工具上选择“**清除**”（“![清除](../media/clear-requests-icon.msft.png)”），从“请求”表中清除所有请求。
+选择 **" (** ![ 清除 ](../media/clear-requests-icon.msft.png) **) "** 工具上的"清除"以清除"请求"表中的所有请求。
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="“清除”按钮" lightbox="../media/network-network-clear-button.msft.png":::
    “**清除**”按钮
@@ -86,7 +88,7 @@ ms.locfileid: "12081971"
 
 <!--  ### Replay XHR request  -->
 
-<!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu \(right-click\), and choose **Replay XHR**.  -->
+<!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu (right-click), and choose **Replay XHR**.  -->
 
 <!--
 :::image type="complex" source="../media/network-replay-xhr.msft.png" alt-text="Choose Replay XHR" lightbox="../media/network-replay-xhr.msft.png":::
@@ -94,6 +96,8 @@ ms.locfileid: "12081971"
 :::image-end:::
 -->
 
+
+<!-- ====================================================================== -->
 ## <a name="change-loading-behavior"></a>更改加载行为
 
 ### <a name="emulate-a-first-time-visitor-by-disabling-the-browser-cache"></a>通过禁用浏览器缓存来模拟首次访问者
@@ -109,13 +113,13 @@ ms.locfileid: "12081971"
 如果要在其他开发工具面板中工作时禁用缓存，请使用“网络条件”抽屉。
 
 1.  打开“**网络条件**”抽屉。
-1.  启用\（或关闭\）“**禁用缓存**”复选框。
+1.  打开或 ** (") "复选框** 。
 
 <!--todo: add network condition section when available -->
 
 ### <a name="manually-clear-the-browser-cache"></a>手动清除浏览器缓存
 
-要随时手动清除浏览器缓存，请打开“请求”表中任意位置的上下文菜单\（右键单击\），然后选择“**清除浏览器缓存**”。
+若要随时手动清除浏览器缓存，请打开上下文菜单 (右键单击"请求") 中的任意位置，然后选择"清除浏览器缓存 **"。**
 
 :::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="选择“清除浏览器缓存”" lightbox="../media/network-network-clear-browser-cache.msft.png":::
    选择“**清除浏览器缓存**”
@@ -156,7 +160,7 @@ ms.locfileid: "12081971"
 
 ### <a name="manually-clear-browser-cookies"></a>手动清除浏览器 Cookie
 
-若要随时手动清除浏览器 Cookie，请将鼠标悬停在“请求”表中的任意位置，打开上下文菜单\（右键单击\），然后选择“**清除浏览器 Cookie**”。
+若要随时手动清除浏览器 Cookie，请将鼠标悬停在"请求"表中的任意位置，打开上下文菜单 (右键单击") "，然后选择"清除浏览器**Cookie"。**
 
 :::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="选择“清除浏览器 Cookie”" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
    选择“**清除浏览器 Cookie**”
@@ -170,6 +174,8 @@ ms.locfileid: "12081971"
 1.  清除" **自动选择"** 复选框。
 1.  从菜单中选择用户代理选项，或在文本框中输入自定义用户代理。
 
+
+<!-- ====================================================================== -->
 ## <a name="set-user-agent-client-hints"></a>设置用户代理客户端提示
 
 如果你的网站使用用户 [代理客户端提示，](../../web-platform/user-agent-guidance.md)请使用网络 **条件** 面板提供不同的用户代理客户端提示。
@@ -197,6 +203,8 @@ ms.locfileid: "12081971"
 
 还可以在模拟移动设备的 Microsoft Edge[中设置用户代理客户端Microsoft Edge。](../device-mode/index.md)
 
+
+<!-- ====================================================================== -->
 ## <a name="filter-requests"></a>筛选请求
 
 ### <a name="filter-requests-by-properties"></a>按属性筛选请求
@@ -216,14 +224,14 @@ ms.locfileid: "12081971"
 
 | 属性 | 详细信息 |
 |:--- | :--- |
-| `domain` | 仅显示指定域中的资源。  可以使用通配符\(`*`\) 包含多个域。  例如，`*.com` 显示以 `.com` 结尾的所有域名中的资源。  开发工具在自动完成下拉菜单中填充找到的所有域。 |
+| `domain` | 仅显示指定域中的资源。  可以使用通配符来 `*` () 多个域。  例如，`*.com` 显示以 `.com` 结尾的所有域名中的资源。  开发工具在自动完成下拉菜单中填充找到的所有域。 |
 | `has-response-header` | 显示包含指定 HTTP 响应头的资源。  开发工具用找到的所有响应头填充“自动完成”下拉列表。 |
 | `is` | 用 `is:running` 查找 `WebSocket` 资源。 |
 | `larger-than` | 以字节为单位显示大于指定大小的资源。  将值设置为 `1000` 相当于将值设置为 `1k`。 |
 | `method` | 显示通过指定的 HTTP 方法类型检索的资源。  开发工具用找到的所有 HTTP 方法填充下拉列表。 |
 | `mime-type` | 显示指定 MIME 类型的资源。  开发工具用找到的所有 MIME 类型填充下拉列表。 |
-| `mixed-content` | 显示所有混合内容资源 \(`mixed-content:all`\) 或仅显示当前显示的内容资源 \(`mixed-content:displayed`\)。 |
-| `scheme` | 显示通过未受保护的 HTTP \(`scheme:http`\) 或受保护的 HTTPS \(`scheme:https`\) 检索的资源。 |
+| `mixed-content` | 显示所有混合内容 () `mixed-content:all` 或只显示当前 () 。 `mixed-content:displayed` |
+| `scheme` | 显示通过未保护的 HTTP () 或受保护的 `scheme:http` HTTPS () 。 `scheme:https` |
 | `set-cookie-domain` | 显示具有与指定值匹配的 `Domain` 属性的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 域填充“自动完成”。 |
 | `set-cookie-name` | 显示具有名称与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 名称填充“自动完成”。 |
 | `set-cookie-value` | 显示具有值与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 值填充“自动完成”。 |
@@ -317,7 +325,7 @@ ms.locfileid: "12081971"
 如果按钮不显示，则“**筛选器**”窗格可能会隐藏。
 有关详细信息，请导航到[“隐藏筛选器”窗格](#hide-the-filters-pane)。
 
-要同时启用多个类型筛选器，请按住 `Control` \(Windows、Linux\) 或 `Command` \(macOS\)，然后选择。
+若要同时启用多类型筛选器，请按住 `Control` (Windows、Linux) 或 (`Command` macOS) ，然后选择。
 
 :::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="使用类型筛选器来显示 JS、CSS 和文档资源" lightbox="../media/network-network-type-filters.msft.png":::
    使用类型筛选器来显示 JS、CSS 和文档资源
@@ -341,6 +349,8 @@ ms.locfileid: "12081971"
    “**隐藏数据 URL**”复选框
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="sort-requests"></a>排序请求
 
 默认情况下，“请求”表中的请求按启动时间排序，但可使用其他条件对表进行排序。
@@ -351,7 +361,7 @@ ms.locfileid: "12081971"
 
 ### <a name="sort-by-activity-phase"></a>按活动阶段排序
 
-要更改瀑布对请求的排序方式，请将鼠标悬停在“请求”表的标题上，打开上下文菜单 \（右键单击\），将鼠标悬停在“**瀑布**”上，然后选择以下选项之一。
+若要更改"瀑布"排序请求方式，请将鼠标悬停在"请求"表的标题上，打开上下文菜单 (右键单击") "，将鼠标悬停在****"瀑布"上，然后选择以下选项之一。
 
 :::row:::
    :::column span="1":::
@@ -397,9 +407,11 @@ ms.locfileid: "12081971"
 这些描述假设每个选项按最短到最长进行排列。  选择“**瀑布**”列的标题以反转顺序。
 
 :::image type="complex" source="../media/network-network-waterfall-total-duration.msft.png" alt-text="按总持续时间排序“瀑布”" lightbox="../media/network-network-waterfall-total-duration.msft.png":::
-   按总持续时间对瀑布进行排序\（每栏中较浅的部分是等待时间，较深的部分是下载字节的时间\）
+   按总持续时间对瀑布进行排序 (每个条的较浅部分是等待所花的时间，较暗部分是下载字节) 
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="analyze-requests"></a>分析请求
 
 只要开发人员工具处于打开状态，它就会在“**网络**”工具中记录所有请求。
@@ -479,7 +491,7 @@ ms.locfileid: "12081971"
 
 #### <a name="add-or-remove-columns"></a>添加或删除列
 
-将鼠标悬停在“请求”表的标题上，打开上下文菜单 \（右键单击\），然后选择选项来隐藏或显示它。  当前显示的选项旁边都有复选标记。
+将鼠标悬停在"请求"表的标题上，打开上下文菜单 (右键单击") "，然后选择一个选项来隐藏或显示它。  当前显示的选项旁边都有复选标记。
 
 :::image type="complex" source="../media/network-network-requests-add-column.msft.png" alt-text="向“请求”表中添加列" lightbox="../media/network-network-requests-add-column.msft.png":::
    向“请求”表中添加列
@@ -487,7 +499,7 @@ ms.locfileid: "12081971"
 
 #### <a name="add-custom-columns"></a>添加自定义列
 
-要向“请求”表中添加自定义列，请将鼠标悬停在“请求”表的标题上，打开上下文菜单\（右键单击\），然后选择“**响应标题**” > “**管理标题列**”。
+若要向"请求"表添加自定义列，请将鼠标悬停在"请求"表的标题上，打开上下文菜单" (右键单击") "，然后选择"响应标头管理****  >  **标题列"。**
 
 :::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="向“请求”表添加自定义列" lightbox="../media/network-network-requests-add-custom.msft.png":::
    向“请求”表添加自定义列
@@ -719,7 +731,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 :::row-end:::
 :::row:::
    :::column span="1":::
-      **等待中 (TTFB)**
+      **等待 (TTFB) **
    :::column-end:::
    :::column span="2":::
       浏览器正在等待响应的首个字节。  TTFB 代表到首个字节的时间。  此计时包括一次往返延迟和服务器准备响应所用的时间。
@@ -821,16 +833,18 @@ init();
 启用“**使用大请求行**”复选框，然后查看“**大小**”列的底部值。
 
 :::image type="complex" source="../media/network-network-requests-uncompressed-compare.msft.png" alt-text="未压缩资源的示例" lightbox="../media/network-network-requests-uncompressed-compare.msft.png":::
-   未压缩资源的示例\（通过网络发送的 `jquery-3.3.1.min.js` 文件的压缩大小为 `29.9 KB`，而未压缩大小为`84.9 KB`\）
+   未压缩资源示例 (通过网络发送的文件的压缩大小为 ，未压缩的大小为 `jquery-3.3.1.min.js` `29.9 KB`) `84.9 KB`
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="export-requests-data"></a>导出请求数据
 
 ### <a name="save-all-network-requests-to-a-har-file"></a>将所有网络请求保存到 HAR 文件
 
 若要将所有网络请求保存到 HAR 文件，请完成以下步骤。
 
-1.  将鼠标悬停在“请求”表中的任何请求上，然后打开上下文菜单\（右键单击\）。
+1.  将鼠标悬停在"请求"表中的任何请求上，然后打开上下文菜单 (右键单击") "。
 1.  选择“**另存为具有内容的 HAR**”。  开发工具将自打开开发工具以来发生的所有请求保存到 HAR 文件中。  无法筛选请求。  也无法保存一个请求。
 
 保存 HAR 文件后，可以将其导入开发工具进行分析。  只需将 HAR 文件拖放到“请求”表中。
@@ -845,7 +859,7 @@ init();
 
 ### <a name="copy-one-or-more-requests-to-the-clipboard"></a>将一个或多个请求复制到剪贴板
 
-在“请求”表的“**名称**”列下，将鼠标悬停在请求上，打开上下文菜单 \（右键单击\），将鼠标悬停在“**复制**”上，然后选择以下选项之一。
+在"**** 请求"表的"名称"列下，将鼠标悬停在请求上，打开上下文菜单 (右键单击") "，将鼠标悬**** 停在"复制"上，然后选择以下选项之一。
 
 | 名称 | 详细信息 |
 |:--- |:--- |
@@ -922,7 +936,7 @@ init();
 
 ### <a name="copy-formatted-response-json-to-the-clipboard"></a>将格式化响应 JSON 复制到剪贴板
 
-选择网络请求并导航到“**标头**”窗格。  要复制响应的 JSON 值，请导航到 **“请求”有效负载**，将鼠标悬停在 JSON 响应内容上，打开上下文菜单\（右键单击\），然后选择“**复制值**”。
+选择网络请求并导航到“**标头**”窗格。  若要复制响应的 JSON 值，请导航**** 到"请求有效负载"，将鼠标悬停在 JSON 响应内容上，打开上下文菜单 (右键单击") "，然后选择"复制**值"。**
 
 :::row:::
    :::column span="":::
@@ -941,13 +955,15 @@ init();
 
 1.  打开“**标头**”窗格。
 1.  打开以下其中一个标头部分。
-    *   请求有效负载 \(JSON\)
+    *   JSON (请求有效负载) 
     *   窗体数据
     *   查询字符串参数
     *   请求标头
     *   响应标头
-1.  打开上下文菜单（右键单击）>“**复制值**”。  现在可以将该值粘贴到任何编辑器中以查看它。
+1.  打开上下文菜单 (右键单击") >**复制值"。**  现在可以将该值粘贴到任何编辑器中以查看它。
 
+
+<!-- ====================================================================== -->
 ## <a name="change-the-layout-of-the-network-panel"></a>更改“网络”面板的布局
 
 可以展开或折叠“**网络**”工具用户界面的各部分，以集中重要信息。
@@ -955,7 +971,7 @@ init();
 ### <a name="hide-the-filters-pane"></a>隐藏“筛选器”窗格
 
 默认情况下，开发工具显示“**筛选器**”窗格。
-选择**筛选器** \(![筛选器](../media/filter-icon.msft.png)\)来隐藏它。
+选择 **" (** ![ 筛选器 ](../media/filter-icon.msft.png)) 隐藏它。
 
 :::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="“隐藏筛选器”按钮" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    “隐藏筛选器”按钮
@@ -991,7 +1007,7 @@ init();
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/network/reference)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/network/reference)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

@@ -7,12 +7,12 @@ ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 1f06124bca4b3444255f1e1a1ac2090371abfeeb
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+ms.openlocfilehash: 5bec8b6fc0c8eb6858219f6d39ff7869687a8ca5
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12033574"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139611"
 ---
 # <a name="update-a-microsoft-edge-extension"></a>更新Microsoft Edge扩展
 
@@ -21,6 +21,8 @@ ms.locfileid: "12033574"
 > [!NOTE]
 > 更新扩展的认证过程可能需要几个小时到几天的时间。
 
+
+<!-- ====================================================================== -->
 ## <a name="update-an-existing-extension-in-the-microsoft-edge-add-ons-website"></a>更新加载项网站Microsoft Edge扩展
 
 若要更新应用商店上的扩展，请进行以下操作：
@@ -38,9 +40,10 @@ After your extension has been initially created, you will be able to update it p
 -->
 
 
+<!-- ====================================================================== -->
 ## <a name="update-your-extension-during-the-certification-step"></a>在认证步骤中更新扩展
 
-虽然你的扩展仍处于认证阶段，在将其发布到 Microsoft Edge 加载项网站之前，你可以更新它。 如果你的扩展未能通过认证过程，你可能还需要更新你的扩展。
+当你的扩展仍处于认证阶段，且在将其发布到 Microsoft Edge 加载项网站之前，你可以更新它。 如果你的扩展未能通过认证过程，你可能还需要更新你的扩展。
 
 若要检查扩展的状态，请导航到与合作伙伴中心上的一览 [相关联的仪表板][MicrosoftPartnerCenter]。
 
@@ -50,14 +53,15 @@ After your extension has been initially created, you will be able to update it p
 
 1.  若要打开 **扩展概述** 部分，请使用左侧导航栏。  若要取消当前提交，请选择"取消**提交"。**
 
-1.  移动到其他部分并更新扩展包或扩展的元数据。  如果更新扩展包，请确保增加清单文件中的版本，以匹配自上一个程序包版本以来的更改。
+1.  移动到其他部分，并更新扩展包或扩展的元数据。  如果更新扩展包，请确保增加清单文件中的版本，以匹配自上一个程序包版本以来的更改。
 
 1.  进行更改后，选择"保存**发布**  >  **"。**
 
 > [!IMPORTANT]
-> 此过程会停止当前提交并从 Microsoft Edge 扩展认证管道中删除你的当前提交，并且新评审从最新提交开始。
+> 此过程会停止当前提交并从 Microsoft Edge扩展认证管道中删除你的当前提交，并且新评审从最新提交开始。
 
 
+<!-- ====================================================================== -->
 ## <a name="update-your-extension-after-it-failed-the-certification"></a>在认证失败后更新扩展
 
 扩展失败认证过程后，你需要更新扩展并重新提交包含反馈的扩展。
@@ -71,6 +75,7 @@ After your extension has been initially created, you will be able to update it p
 1.  进行更改后，选择"保存**发布**  >  **"。**
 
 
+<!-- ====================================================================== -->
 ## <a name="remove-an-extension-from-the-microsoft-edge-add-ons-website"></a>从加载项网站Microsoft Edge扩展
 
 若要从加载项网站Microsoft Edge扩展：

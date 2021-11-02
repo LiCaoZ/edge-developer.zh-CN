@@ -1,5 +1,5 @@
 ---
-description: 使用呈现工具中的模拟 CSS 媒体功能首选 (减少运动下拉列表) 关闭 UI 动画，检查网页是否可用。
+description: 使用呈现工具中的模拟 CSS 媒体功能首选 (减少运动下拉列表) UI 动画关闭网页是否可用。
 title: 验证页面是否可用，同时关闭 UI 动画
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 647c9716caa453851b5a406a37b2326403d9d122
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 660dcaf8e3f7afc3be97c331efcf8830aca7a801
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082811"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140408"
 ---
 # <a name="verify-that-the-page-is-usable-with-ui-animation-turned-off"></a>验证页面是否可用，同时关闭 UI 动画
 
@@ -24,7 +24,7 @@ ms.locfileid: "12082811"
 
 若要检查页面是否可用，请关闭动画：
 
-1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
+1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
 1.  在 DevTools 顶部，选择"**** 源"工具，然后在左侧的****"导航"窗格中，选择 `styles.css` 。  CSS 文件显示在"编辑器 **"** 窗格中。
 
@@ -62,8 +62,3 @@ ms.locfileid: "12082811"
 
 *  [减少运动模拟](reduced-motion-simulation.md)
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "辅助功能测试演示网页|GitHub"

@@ -7,21 +7,25 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 7b9a93068e6133cbd16e7eede6746e1f485d110a
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 766c22017fc4f62deccd5ce3026109727b4c4415
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108624"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139428"
 ---
 # <a name="emulate-authenticators-and-debug-webauthn-in-microsoft-edge-devtools"></a>在 DevTools 中模拟验证Microsoft Edge调试 WebAuthn
 
 使用 Microsoft Edge DevTools 中的**WebAuthn**工具创建基于软件的虚拟验证器并与之交互，而不是使用物理验证器在网站或应用中调试 Web 身份验证。
 
+
+<!-- ====================================================================== -->
 ## <a name="before-you-begin"></a>在开始之前
 
 Web 身份验证 API 规范是开始使用 [Web 身份验证的一个很好的位置][GithubW3cWebauthn]。
 
+
+<!-- ====================================================================== -->
 ## <a name="set-up-the-webauthn-tool"></a>设置 WebAuthn 工具
 
 1.  导航到使用 WebAuthn 的网页，如以下演示网站。
@@ -30,7 +34,7 @@ Web 身份验证 API 规范是开始使用 [Web 身份验证的一个很好的�
 
 1.  登录到网站。
 1.  [打开 DevTools][DevtoolsGuideOpen]。
-1.  若要打开**WebAuthn**工具，请选择自定义和控制**DevTools** `...` \ (\) 图标>**更多工具**  >  **WebAuthn。**
+1.  若要打开**WebAuthn**工具，请选择"自定义和控制**开发人员**工具" () "图标> `...` **更多工具**  >  **WebAuthn"。**
 
     :::image type="complex" source="../media/webauthn-webauthn-tab.msft.png" alt-text="WebAuthn 工具" lightbox="../media/webauthn-webauthn-tab.msft.png":::
        **WebAuthn** 工具
@@ -45,12 +49,12 @@ Web 身份验证 API 规范是开始使用 [Web 身份验证的一个很好的�
 
 1.  在" **新建验证器"** 部分，配置以下选项。
 
-    | 选项 | 值 | 详细信息 |
+    | 选项 | Value | 详细信息 |
     |:--- |:--- |:--- |
     | `Protocol` | [ctap2][FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml] 或 [u2f][FidoallianceSpecsU2fV12Ps20170411OverviewHtml] | 虚拟验证器用于编码和解码的协议 |
     | `Transport` |   `usb``nfc` `ble` 、、、 或 `internal` | 虚拟验证器模拟选定的传输以便与客户端通信，以获取特定凭据的断言。  有关详细信息，请导航到Authenticator[枚举][GithubW3cWebauthnEnumTransport] |
-    |  `Supports resident keys` | 使用复选框 (\) 或关闭\) \ | 如果 Web 应用依赖驻留密钥 \ (也称为客户端可发现凭据\) 。  有关详细信息，请导航到 [Resident Key Requirement 枚举][GithubW3cWebauthnEnumResidentkeyrequirement]。 |
-    | `Supports user verification` | 使用复选框 (\) 或关闭\) \ | 如果 Web 应用依赖使用手势形式（如触摸和引脚代码、密码输入或生物识别识别）的本地授权，则打开。  有关详细信息，请导航到" [用户验证"][GithubW3cWebauthnEnumUserverification] |
+    |  `Supports resident keys` | 使用复选框 (或) 或关闭" | 如果 Web 应用依赖于常驻密钥， (也称为客户端可发现凭据) 。  有关详细信息，请导航到 [Resident Key Requirement 枚举][GithubW3cWebauthnEnumResidentkeyrequirement]。 |
+    | `Supports user verification` | 使用复选框 (或) 或关闭" | 如果 Web 应用依赖使用手势形式（如触摸和引脚代码、密码输入或生物识别识别）的本地授权，则打开。  有关详细信息，请导航到" [用户验证"][GithubW3cWebauthnEnumUserverification] |
 
 1.  选择“添加”按钮****。
 1.  将显示新创建的验证器的新部分。
@@ -65,6 +69,8 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
    无凭据
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="register-a-new-credential"></a>注册新凭据
 
 若要注册新凭据，请完成以下步骤。  有关注册新凭据时[Web 身份验证 API][GithubW3cWebauthn]正在执行哪些操作的信息，请导航到"[新建凭据"。][GithubW3cWebauthnSctnCreatecredential]
@@ -78,6 +84,8 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
 
 在演示网站上，选择"验证 **"** 按钮。  确认"[凭据"表中的][GithubW3cWebauthnSctnSignCounter]凭据的"签名计数****"增加了 1，这表示[authenticatorGetAssertion][GithubW3cWebauthnAuthenticatorgetassertion]操作成功。
 
+
+<!-- ====================================================================== -->
 ## <a name="export-and-remove-credentials"></a>导出和删除凭据
 
 若要导出或删除凭据，请选择"导出 **"** 或" **删除"** 按钮。
@@ -86,6 +94,8 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
    导出或删除凭据
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="rename-an-authenticator"></a>重命名验证器
 
 若要重命名验证器，请完成以下步骤。
@@ -97,6 +107,8 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
    重命名验证器
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="set-the-active-authenticator"></a>设置活动验证器
 
 将自动激活新创建的验证器。  若要使用另一个虚拟验证器，请选择验证器旁边的 **"** 活动"单选按钮。
@@ -108,6 +120,8 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
    设置活动验证器
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="remove-a-virtual-authenticator"></a>删除虚拟验证器
 
 若要删除虚拟验证器，请选择验证器旁边的"删除 **"** 按钮。
@@ -139,7 +153,7 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/webauthn/index)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/webauthn/index) ，由 [Jecelyn Yeen][JecelynYeen] 和开发人员 (Chrome DevTools) 。
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

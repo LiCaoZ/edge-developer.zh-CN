@@ -7,26 +7,27 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 2b8d97f45e7ddc71c69875fe55b75a999100fef6
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: b883230a9e365e242aa5c7dc19481caf1b351249
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082440"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140443"
 ---
 # <a name="automatically-test-a-webpage-for-accessibility-issues"></a>自动测试网页中的辅助功能问题
 
 " **问题** "工具包括一 **个** "辅助功能"部分，可自动报告图像上缺少可选文本、表单字段上缺少标签以及文本颜色对比度不足等问题。  问题**工具**位于 DevTools 底部的"箱"内。 ****  本文使用辅助功能测试演示网页逐步介绍了如何使用问题工具的**辅助功能****部分。**
 
-有几种打开问题 **工具的方法** ，例如：
-*  选择 DevTools ** (** 右上角的"问题") "问题" ![ 计数器 ](../media/issues-counter-icon.msft.png) \) 。
+有几种打开问题 **工具的方法，** 例如：
+*  Select the **Issues counter** (![ Issues counter ](../media/issues-counter-icon.msft.png)) in the upper right of DevTools.
 *  在" **元素** "工具的 DOM 树中 **，Shift+单击** 元素上的波浪下划线。
 *  在"**命令菜单"** 中，键入 `issues` ，然后选择"**显示问题"。**
 
 
+<!-- ====================================================================== -->
 ## <a name="view-the-accessibility-section-of-the-issues-tool"></a>查看问题工具的辅助功能部分
 
-1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。  在右上角，将显示 **问题计数器** \ (![ 问题计数器 ](../media/issues-counter-icon.msft.png) \) 。  问题 **计数器** 是语音气泡图标以及自动检测到的问题数。
+1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。  在右上角，将显示"问题 **" (") ** ![ ](../media/issues-counter-icon.msft.png) 问题"计数器。  问题 **计数器** 是语音气泡图标以及自动检测到的问题数。
 
     :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="DevTools 中的&quot;问题&quot;计数器，指示当前文档中的问题数" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
         DevTools 中的"问题"计数器，指示当前文档中的问题数****
@@ -43,13 +44,14 @@ ms.locfileid: "12082440"
 1.  在" **问题"** 选项卡上，展开 **"辅助功能"** 部分。
 
 
+<!-- ====================================================================== -->
 ## <a name="verify-that-input-fields-have-labels"></a>验证输入字段是否包含标签
 
 若要检查输入字段是否连接了标签，请使用问题工具，**** 该工具会自动检查整个网页，并报告辅助功能**部分中的**此问题。
 
-1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
+1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  在右上角，选择问题 **计数器** \ (![ 问题计数器 ](../media/issues-counter-icon.msft.png) \) 。  问题**工具**将在 DevTools 底部的"箱"中打开。 ****
+1.  在右上角，选择"问题 **" ("** ![ 问题 ](../media/issues-counter-icon.msft.png) ") 。  问题**工具**将在 DevTools 底部的"箱"中打开。 ****
 
 1.  在" **问题"** 选项卡上，展开 **"辅助功能"** 部分。
 
@@ -72,24 +74,25 @@ ms.locfileid: "12082440"
     *   将 `input` 元素嵌套在 `label` 元素中。
     *   在 `label` 元素中，添加 `for` 与 元素的属性 `id` 匹配的 `input` 属性。
 
-    还有另一种方法可以测试元素之间缺少连接。 在" **元素"** 工具中， `<label>Search</label>` 选择 DOM 树中的元素。  在网页上，请注意，焦点只出现在 **搜索** 标签上，而不是输入文本框上。  正确的实现将焦点放在 `search` 输入文本框和 **搜索标签** 上。
+    还有另一种方法可以测试元素之间缺少连接。 在" **元素"** 工具中， `<label>Search</label>` 选择 DOM 树中的元素。  在网页上，请注意，焦点只出现在 **搜索** 标签上，而不是输入文本框上。  正确的实现将焦点放在输入 `search` 文本框和 **搜索标签** 上。
 
 1.  作为正确连接的示例，选择"捐赠 **"表单** 上的"其他"标签。  焦点指示器框正确显示在"其他"标签旁边的输入文本框上，因为**** 存在匹配 `for` 值 `id` 和属性值。
 
-1.  在" **问题"工具**中，选择"进一步 **阅读** "以了解有关该问题的更多信息。  若要打开新选项卡中的链接，请按**Ctrl**单击 Windows/Linux 上的链接，或单击 + ******** + **** macOS 上的链接命令。
+1.  在" **问题"工具**中，选择"进一步 **阅读** "以了解有关该问题的更多信息。  若要打开新选项卡中的链接，请按**Ctrl**单击 Windows/Linux 上的链接，或单击 + ******** + **** macOS 上的链接的命令。
 
     :::image type="complex" source="../media/a11y-testing-more-information-links.msft.png" alt-text="指向有关问题的更深入信息的&quot;问题&quot;选项卡上的链接" lightbox="../media/a11y-testing-more-information-links.msft.png":::
         指向 **有关问题的** 更深入信息的"问题"选项卡上的链接
     :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## <a name="verify-that-images-have-alt-text"></a>验证图像是否包含替换文字
 
 基本辅助功能测试需要确保为图像 (_可选_ 文字) 可选文字。
 
 若要自动检查是否为图像提供了替换文字，请使用 **问题工具，** 该工具具有 **辅助功能** 部分。  问题**工具**位于 DevTools**** 底部的"箱"中。
 
-1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
+1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
 1.  若要打开 **"问题"** 工具，请选择**** DevTools 右上角的"问题"计数器。
 
@@ -102,11 +105,12 @@ ms.locfileid: "12082440"
 有关详细信息，导航到 [图像必须具有备用文本](https://dequeuniversity.com/rules/axe/4.1/image-alt)。
 
 
+<!-- ====================================================================== -->
 ## <a name="verify-that-text-colors-have-enough-contrast"></a>验证文本颜色是否具有足够的对比度
 
 若要自动检查文本颜色是否具有足够的对比度，请使用问题 **工具，** 该工具 **具有辅助功能部分** 。  问题**工具**位于 DevTools**** 底部的"箱"中。
 
-1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
+1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
 1.  若要打开 **"问题"** 工具，请选择**** DevTools 右上角的"问题"计数器。  您可能会收到警告，指出演示网页上的两个元素的对比度不足。
 
@@ -138,11 +142,5 @@ ms.locfileid: "12082440"
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [使用问题工具查找和修复问题][DevToolsIssuesTool]
+*  [使用问题工具查找和修复问题](../issues/index.md)
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevToolsIssuesTool]: ../issues/index.md "使用问题工具查找并修复问题 | Microsoft Docs"
-[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "辅助功能测试演示网页|GitHub"

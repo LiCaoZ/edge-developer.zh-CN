@@ -22,12 +22,12 @@ no-loc:
 - Edit keyboard shortcuts for any action in the DevTools
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
-ms.openlocfilehash: 00e6533d446aba209cf6e925b886421eb40e6f0b
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: ce9ea0abcefc428db8a7e561ae81b44d66e4f0ba
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083911"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141262"
 ---
 # <a name="experimental-features"></a>试验功能
 
@@ -39,7 +39,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 <!-- ====================================================================== -->
 ## <a name="experimental-features-which-are-turned-on-by-default"></a>默认情况下打开的实验性功能
 
-自 Microsoft Edge 94 起，默认情况下会启用以下实验功能。  这意味着可以马上使用这些功能，而无需更改任何设置。  如果需要，可以关闭这些默认实验功能。
+自 94 Microsoft Edge起，以下实验功能默认打开。  这意味着可以马上使用这些功能，而无需更改任何设置。  如果需要，可以关闭这些默认实验功能。
 
 <!-- listed in this list in order per Settings > Experiments pane -->
 *  源订单查看器
@@ -55,7 +55,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 <!-- ====================================================================== -->
 ## <a name="turning-on-experimental-features"></a>打开实验性功能
 
-若要在 (中打开\) 或关闭\Microsoft Edge：
+若要在 (中) 或关闭Microsoft Edge：
 
 1.  [打开 DevTools][DevtoolsOpenIndex]。  为此，在"Microsoft Edge"中，设置"更多"**** 按钮，这是三个点 (省略号) 。  然后将鼠标悬停在 **"更多工具"上**，然后选择"**开发人员工具"。**
 
@@ -90,7 +90,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 1.  在部分 **Source Order Viewer** 下，选中" **显示源订单"** 复选框。
 1.  突出显示任何 HTML 元素，以显示该网页源中顺序的覆盖。
 
-:::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
+:::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::no-loc (辅助功能窗格中的源订单查看器) ：：：。" lightbox="。。/media/experiments-source-order-viewer.msft.png"：：：
 
 此实验从版本 86 Microsoft Edge开始提供，并且默认打开。
 
@@ -100,7 +100,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 <!-- keep the period per the ui string literal -->
 <!-- found in Experiments in 94 60% down main list -->
 
-现在，可以使用新的可视 [字体编辑器][DevtoolsInspectStylesEditFonts] 来编辑字体。  使用它来定义字体和字体特征。  可视 **字体编辑器** 可帮助您执行以下操作：
+现在，可以使用新的可视 [字体编辑器来][DevtoolsInspectStylesEditFonts] 编辑字体。  使用它来定义字体和字体特征。  可视 **字体编辑器** 可帮助您执行以下操作：
 
 *   在不同字体属性的单位之间切换
 *   在不同字体属性的关键字之间切换
@@ -129,7 +129,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 *   辅助功能
 *   跨浏览器兼容性
-*   安全性
+*   安全
 *   性能
 *   渐进式 Web 应用 (PWA)
 *   其他常见的 Web 开发问题
@@ -138,14 +138,14 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 :::image type="content" source="../media/experiments-webhint.msft.png" alt-text="问题面板中的 webhint 反馈" lightbox="../media/experiments-webhint.msft.png":::
 
-此实验从版本 85 Microsoft Edge开始，并且默认打开。
+此实验从版本 85 Microsoft Edge开始提供，并且默认打开。
 
 
 <!-- ====================================================================== -->
 ## Enable Composited Layers in 3D View
 <!-- on by default in 94 -->
 
-您可以将 Layers 与 z 索引和文档对象模型 \ (DOM\) 一起可视化。  此功能可帮助你进行调试，而无需频繁切换上下文。  你发现减少上下文切换是一个主要的痛点。  不能始终弄清楚你编写的代码对 Web 应用有何影响。  为了获得全面的视觉调试体验，现在已将 3D View 和复合层组合到一起。
+您可以将 Layers 与 z 索引和文档对象模型一起可视化 (DOM) 。  此功能可帮助你进行调试，而无需频繁切换上下文。  你发现减少上下文切换是一个主要的痛点。  不能始终弄清楚你编写的代码对 Web 应用有何影响。  为了获得全面的视觉调试体验，现在已将 3D View 和复合层组合到一起。
 
 若要使用**复合层**，请完成以下步骤。
 
@@ -168,7 +168,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 1.  打开“**网络**”窗格。
 1.  查找要更改和重新发送的网络请求。
-1.  打开上下文菜单 \ (右键单击\) ，然后选择编辑 **和重播**。
+1.  打开上下文菜单 (右键单击") "，然后选择"编辑**和重播"。**
 1.  当**网络控制台**打开时，编辑网络请求信息。
 1.  选择 **"发送"。**
 
@@ -181,13 +181,13 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 ## <a name="open-source-files-in-visual-studio-code"></a>在 Visual Studio Code 中的打开源文件
 <!-- in Experiments as of 96, at end of main list -->
 
-实验**中的开放源文件Visual Studio Code**源工具的代码编辑器替换为用于编辑Visual Studio Code文件的代码编辑器。  打开此实验时，开发人员工具会检测何时编辑本地文件，并提示你选择一个用作工作区的文件夹。
+实验**中的开放源文件**Visual Studio Code源工具的代码编辑器替换为用于编辑Visual Studio Code文件的代码编辑器。  打开此实验时，开发人员工具会检测何时编辑本地文件，并提示你选择一个用作工作区的文件夹。
 
-选择要用作工作区的文件夹后，在 DevTools 中选择指向文件的任何链接将在 Visual Studio Code 中打开文件，而不是在 DevTools 中的源工具的代码编辑器中打开。
+选择要用作工作区的文件夹后，在 DevTools 中选择某个文件的任何链接将在 Visual Studio Code 中打开该文件，而不是在 DevTools 中源工具的代码编辑器中打开。
 
 :::image type="content" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="在&quot;样式&quot;工具中选择文件链接将打开Visual Studio Code" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
 
-在 DevTools 中执行的任何编辑现在都会更改硬盘驱动器上的文件，并实时与Visual Studio Code。  可以在打开数据源中的源文件中阅读有关设置工作区[Visual Studio Code。][OpenSourcesInVSCode]
+现在，你在 DevTools 中执行的任何编辑都将更改硬盘驱动器上的文件，并实时Visual Studio Code。  可以在打开数据源中的源文件中阅读有关[设置工作区Visual Studio Code。][OpenSourcesInVSCode]
 
 此实验从版本 96 Microsoft Edge开始提供。
 
@@ -199,11 +199,11 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 这些功能已从实验提升为常规功能，并且已从实验**设置**  >  **中删除**。
 
-*  [Turn on new CSS grid debugging features][DevtoolsCssGrid]- 从实验状态中删除，从 Microsoft Edge 89 开始。
+*  [Turn on new CSS grid debugging features][DevtoolsCssGrid]- 从实验状态中删除自 Microsoft Edge 89。
 
 *  [Match keyboard shortcuts from Microsoft Visual Studio Code][DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode] - removed from Experimental status starting from Microsoft Edge 86.
 
-*  [Turn on support to move tabs between panels][DevtoolsCustomizeIndex]- 从 85 开始从实验Microsoft Edge中删除。
+*  [Turn on support to move tabs between panels][DevtoolsCustomizeIndex]- 从实验状态中删除，从 Microsoft Edge 85 开始。
 
 *  [3D View][Devtools3dViewIndex]- 从实验状态中删除，从 Microsoft Edge 83 开始。
 
@@ -214,7 +214,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 这是从版本 89 Microsoft Edge的试验，自版本 94 起是一项常规功能。<!-- which release changed this from Experimental?-->
 
-现在，可以使用新的"更多工具"\ (**** `+` \) 图标打开更多工具。  打开 **Enable + button tab menus to open more tools** 试验并重新加载 DevTools 后，DevTools 顶部选项卡组的右侧将显示一个加号 \(`+`\)。  若要显示可添加到选项卡栏的其他工具的列表，请选择"更多工具"\ (**** `+` \) 图标。
+现在，可以使用新的"更多工具" () **** `+` 工具。  打开实验并重新加载 DevTools 后， () 在 **Enable + button tab menus to open more tools** DevTools 顶部的选项卡组右侧显示加号 `+` 。  若要显示可添加到选项卡栏的其他工具的列表，请选择"更多工具****" () `+` 图标。
 
 :::image type="content" source="../media/experiments-more-tools-button.msft.png" alt-text="顶部窗格中的更多工具" lightbox="../media/experiments-more-tools-button.msft.png":::
 
@@ -247,13 +247,13 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 #### <a name="displaying-persistent-overlays-on-flexbox-layouts-with-the-inspect-tool"></a>使用 Inspect 工具在 Flexbox 布局上显示永久性覆盖
 
-**检查**工具提供了一种快速识别和可视化网站 CSS 弹性框布局的方法，通过将鼠标悬停该布局上方来实现这一点。  选择 **DevTools** (左上角的"检查 ![ ](../media/inspect-icon.msft.png) \ (检查 \) "图标。  然后，在调试网站时，将鼠标悬停在弹性容器上方以在其周围显示轮廓。
+**检查**工具提供了一种快速识别和可视化网站 CSS 弹性框布局的方法，通过将鼠标悬停该布局上方来实现这一点。  选择 **"** 检查 (![ 工具 ](../media/inspect-icon.msft.png)) 左上角的"检查项目"图标。  然后，在调试网站时，将鼠标悬停在弹性容器上方以在其周围显示轮廓。
 
 :::image type="content" source="../media/flexbox-hover.msft.png" alt-text="使用检查工具显示弹性框容器" lightbox="../media/flexbox-hover.msft.png":::
 
 #### <a name="displaying-persistent-overlays-on-flexbox-layouts"></a>在 Flexbox 布局上显示永久性覆盖
 
-在 Microsoft Edge 版本 89 或更高版本中，CSS Flexbox 功能提供在 Flexbox 布局上打开永久性覆盖的选项。  永久性覆盖具有以下优点：
+在 Microsoft Edge版本 89 或更高版本中，CSS Flexbox 功能提供在 Flexbox 布局上打开永久性覆盖的选项。  永久性覆盖具有以下优点：
 *   滚动、移动鼠标和使用 DevTools 的其他功能时，持久覆盖层在网页上仍然可见。
 *   可以同时使用多个永久性覆盖，以便你可以一次查看多个 Flexbox 布局。
 *   持久覆盖层提供颜色配置选项。

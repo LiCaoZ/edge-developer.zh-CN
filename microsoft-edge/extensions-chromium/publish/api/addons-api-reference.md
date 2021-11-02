@@ -7,19 +7,19 @@ ms.date: 08/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， 加载项 api， 发布 api
-ms.openlocfilehash: e1e44dbf3ede38dd72b4650c624777e46a595df7
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 2c1cf79dac2f6b179ada70d75a07c646eac40445
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12035619"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141521"
 ---
 # <a name="microsoft-edge-add-ons-api-reference-under-development"></a>Microsoft Edge正在开发 (加载项 API) 
 
 > [!NOTE]
-> 本文是一个请求注释。  加载项MICROSOFT EDGE API 尚未可用于测试，并且合作伙伴中心尚未提供"发布 API"页。  加载项MICROSOFT EDGE API 正在积极开发中，路线图根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
+> 本文是一个请求注释。  加载项Microsoft Edge API 尚未可用于测试，并且合作伙伴中心尚未提供"发布 API"页。  加载项MICROSOFT EDGE API 正在积极开发中，路线图根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
 
-这是加载项 API 的 REST Microsoft Edge引用。  此 API 可自动发布已提交到加载项网站的加载项Microsoft Edge更新。
+这是加载项 API 的 REST Microsoft Edge引用。  此 API 可自动发布已提交到加载项网站的Microsoft Edge更新。
 
 有关概述，请导航到["使用Microsoft Edge加载项 API"。][UsingAddonsAPI]
 
@@ -348,9 +348,9 @@ ms.locfileid: "12035619"
 
 ### <a name="4xx-client-error"></a>4xx：客户端错误
 
-| 消息 | 描述 | 示例方案 |
+| 邮件 | 描述 | 示例方案 |
 |---|---|---|
-| 400 错误的请求 | 服务器无法理解该请求。 | 正文中不存在 (zip) 包。  或者 `Content-Type` ，标头缺失或其值不正确。 |
+| 400 错误的请求 | 服务器无法理解该请求。 | 正文中没有 (zip) 包。  或者 `Content-Type` ，标头缺失或其值不正确。 |
 | 401 未经授权 | 请求页面需要授权。 | 身份验证令牌缺失、过期或无效。 |
 | 404 未找到 | 服务器找不到请求的页面。 | 指定 `productID` `operationID` 或无效，或不属于正在提出请求的开发人员。 |
 | 408 请求超时 | 请求所等待的时间比服务器准备等待的时间长。 | 上传程序包时存在超时。 |
@@ -358,11 +358,12 @@ ms.locfileid: "12035619"
 
 ### <a name="5xx-server-error"></a>5xx：服务器错误
 
-| 消息  | 描述  | 示例方案 |
+| 邮件  | 描述  | 示例方案 |
 |---|---|---|
 | 500 内部服务器错误 | 请求未完成。 | 服务器遇到意外情况。 |
 
 
+<!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
 *  [使用Microsoft Edge加载项 API][UsingAddonsAPI]

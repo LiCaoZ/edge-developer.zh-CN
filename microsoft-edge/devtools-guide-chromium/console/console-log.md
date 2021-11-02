@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: d5cab35113c7ca0a3f39b218b23e1af3b1806004
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: d17eed0e202629564dfa67f9fb0609c35adce85a
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082965"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140275"
 ---
 # <a name="log-messages-in-the-console-tool"></a>在控制台工具中记录消息
 
@@ -22,7 +22,7 @@ ms.locfileid: "12082965"
 
 在 DevTools 之前，你只能使用 `alert()` 或 `document.write()` 语句在浏览器中调试。
 
-如果要在控制台中记录 **信息**，可以使用多种方法。  查看 API 参考中所有 [可用的方法][DevtoolsConsoleApi]。  以下代码段列出了最重要的方法。
+如果要在控制台中记录 **信息**，可以使用多种方法。  查看 API 参考中所有 [可用的方法](api.md)。  以下代码段列出了最重要的方法。
 
 ```javascript
 // prints the text to the console as  a log message
@@ -35,17 +35,19 @@ console.error('This is an error')
 console.warn('This is a warning')
 ```
 
-复制并粘贴控制台中的上一个代码**** 段或导航到控制台[消息示例：日志、信息、错误和警告][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingExamplesHtml]。  在控制台中尝试任何方法时****，和 方法似乎执行相同的操作，而 和 方法在消息旁边显示图标以及检查消息堆栈跟踪 `log()` `info()` `error()` `warn()` 的方法。 [][WikiStackTrace]
+复制并粘贴控制台中的上一个代码**** 段或导航到控制台[消息示例：日志、信息、错误和警告](https://microsoftedge.github.io/DevToolsSamples/console/logging-examples.html)。  在控制台中尝试任何方法时****，和 方法似乎执行相同的操作，而 和 方法在消息旁边显示图标以及检查消息堆栈跟踪 `log()` `info()` `error()` `warn()` 的方法。 [](https://en.wikipedia.org/wiki/Stack_trace)
 
 :::image type="complex" source="../media/console-log-examples.msft.png" alt-text="控制台显示来自不同日志 API 的消息" lightbox="../media/console-log-examples.msft.png":::
    控制台 **显示** 来自不同日志 API 的消息
 :::image-end:::
 
-但是，对于不同的日志任务，仍建议使用 和 ，因为这样可以在控制台 中 `info()` `log()` 使用类型 [进行筛选][DevtoolsConsoleConsoleFilters]。
+但是，对于不同的日志任务，仍建议使用 和 ，因为这样可以在控制台 中 `info()` `log()` 使用类型 [进行筛选](console-filters.md)。
 
+
+<!-- ====================================================================== -->
 ## <a name="different-types-of-logs"></a>不同类型的日志
 
-你可以向控制台发送任何有效的 JavaScript 或 DOM 引用，而不是日志 **文本**。  控制台 **很** 美观，它确定发送它的类型。  然后，它为你提供可能的最佳表示形式。  复制并粘贴控制台中的以下代码 **段或显示** 结果，导航到控制台 [消息示例：记录不同类型的][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingTypesHtml]。
+你可以向控制台发送任何有效的 JavaScript 或 DOM 引用，而不是日志 **文本**。  **控制台**很美观，它确定发送它的类型。  然后，它为你提供可能的最佳表示形式。  复制并粘贴控制台中的以下代码 **段或显示** 结果，导航到控制台 [消息示例：记录不同类型的](https://microsoftedge.github.io/DevToolsSamples/console/logging-types.html)。
 
 ```javascript
 let x = 2;
@@ -76,9 +78,11 @@ console.log(w3techs);
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="format-and-convert-values-with-specifiers"></a>使用说明符设置值的格式和转换值
 
-所有日志方法的一个特殊功能是，您可以在日志消息中使用说明符。  说明符是日志消息的一部分，以百分比符号 \ (\) 字符开始，并允许以不同格式记录某些值， `%` 甚至转换每个值。
+所有日志方法的一个特殊功能是，您可以在日志消息中使用说明符。  说明符是日志消息的一部分，以百分比符号 () 字符开始，并允许您以不同格式记录某些值， `%` 甚至转换每个值。
 
 *   `%s` 日志为字符串
 *   `%i` 或 `%d` 日志为 Integers
@@ -102,7 +106,7 @@ console.log('%O', document.body);
 console.log('%cImportant message follows','color:red;font-size:40px');
 ```
 
-第一个示例显示，说明符的替换顺序是字符串后的参数顺序。  若要显示结果，请复制并粘贴控制台中的上一个代码**** 段或导航到控制台[消息示例：使用说明符记录][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithSpecifiersHtml]。  展开日志中的信息以显示 和 之间的巨大 `%o` 差异 `%O` 。
+第一个示例显示，说明符的替换顺序是字符串后的参数顺序。  若要显示结果，请复制并粘贴控制台中的上一个代码**** 段或导航到控制台[消息示例：使用说明符记录](https://microsoftedge.github.io/DevToolsSamples/console/logging-with-specifiers.html)。  展开日志中的信息以显示 和 之间的巨大 `%o` 差异 `%O` 。
 
 :::row:::
    :::column span="":::
@@ -115,9 +119,11 @@ console.log('%cImportant message follows','color:red;font-size:40px');
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="group-log-messages"></a>组日志消息
 
-如果记录许多信息，可以使用 和 方法在控制台 中将日志消息显示为可展开 `group` `groupCollapsed` 和可折叠 **的组**。  可以嵌套和命名组，使数据更易于理解。
+如果记录许多信息，可以使用 和 方法在控制台 中将日志消息显示为可展开 `group` `groupCollapsed` 和可折叠 **的组**。  可以嵌套和命名组，以便数据更易于理解。
 
 ```javascript
 console.group("Passengers: Heart of Gold");
@@ -142,7 +148,7 @@ for (tech in technologies) {
 }
 ```
 
-此外，第二个示例还可以选择生成组名称。  若要显示结果，请复制并粘贴控制台中的上一个代码**** 段或导航到控制台[消息示例：对日志进行分组][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithGroupsHtml]。  可以展开和折叠每个部分。
+此外，第二个示例还可以选择生成组名称。  若要显示结果，请复制并粘贴控制台中的上一个代码**** 段或导航到控制台[消息示例：对日志进行分组](https://microsoftedge.github.io/DevToolsSamples/console/logging-with-groups.html)。  可以展开和折叠每个部分。
 
 :::row:::
    :::column span="":::
@@ -155,9 +161,11 @@ for (tech in technologies) {
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="display-complex-data-as-tables"></a>将复杂数据显示为表
 
-该方法不将复杂数据记录为可折叠和可展开的对象，而是记录为可以使用不同标题 `console.table()` 进行排序的表。  排序表使用户更容易查看信息。  若要在示例中显示它，请导航到控制台 [消息示例：使用表][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithTableHtml]。
+该方法不将复杂数据记录为可折叠和可展开的对象，而是记录为可以使用不同标题 `console.table()` 进行排序的表。  排序表使用户更容易查看信息。  若要在示例中显示它，请导航到控制台 [消息示例：使用表](https://microsoftedge.github.io/DevToolsSamples/console/logging-with-table.html)。
 
 ```javascript
 let technologies = {
@@ -181,7 +189,7 @@ console.table(bodyDimensions);
    使用 显示 `console.table` 数据，使其更易于阅读
 :::image-end:::
 
-的输出 `console.table` 不仅具有显示在控制台 中的表 **格式**。    例如，如果将表复制并粘贴到Excel、Word 或其他支持表格数据的产品中，则结构保持不变。
+的输出 `console.table` 不仅具有显示在控制台 中的表 **格式**。    例如，如果将表复制并粘贴到 Excel、Word 或其他支持表格数据的产品中，则结构保持不变。
 
 <!--  The output of `console.table` has a table format not only when it displays in the **Console**.  For example, copy and paste a table in Excel, Word, or any other products that support tabular data.  -->
 
@@ -200,20 +208,4 @@ console.table(contentElements,['nodeName', 'innerText', 'offsetHeight'])
    显示和提供要显示为第二个参数 `console.table` 的属性数组的筛选器信息
 :::image-end:::
 
-您可能会尝试将日志方法用作调试网页的主要方式，因为日志方法易于使用。  请考虑任何请求 `console.log()` 的结果。  Live 产品不应使用用于调试的任何日志。  它可能会向用户显示内部信息。  控制台中创建的噪音 **非常** 强烈。  当您使用 [断点调试][DevtoolsJavascriptBreakpoints] 或 [Live Expressions][DevtoolsConsoleLiveExpressions]时，您可能会发现您的工作流更有效，并且您获得更好的结果。
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsConsoleApi]: ./api.md "控制台 API 参考 | Microsoft Docs"
-[DevtoolsConsoleConsoleFilters]: ./console-filters.md "筛选控制台消息|Microsoft Docs"
-[DevtoolsConsoleLiveExpressions]: ./live-expressions.md "使用 Live Expressions 方法监视 JavaScript 中的|Microsoft Docs"
-[DevtoolsJavascriptBreakpoints]: ../javascript/breakpoints.md "如何在 Microsoft Edge 开发工具中使用断点暂停代码 | Microsoft Doc"
-
-[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingExamplesHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-examples.html "控制台消息示例：日志、信息、错误和警告|GitHub"
-[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingTypesHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-types.html "控制台消息示例：记录不同类型的|GitHub"
-[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithGroupsHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-with-groups.html "控制台消息示例：对日志进行|GitHub"
-[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithSpecifiersHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-with-specifiers.html "控制台消息示例：使用说明符记录|GitHub"
-[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithTableHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-with-table.html "控制台消息示例：使用表|GitHub"
-
-[WikiStackTrace]: https://en.wikipedia.org/wiki/Stack_trace "堆栈跟踪|Wikipedia"
+您可能会尝试将日志方法用作调试网页的主要方式，因为日志方法易于使用。  请考虑任何请求 `console.log()` 的结果。  Live 产品不应使用用于调试的任何日志。  它可能会向用户显示内部信息。  控制台中创建的噪音 **非常** 强烈。  当您使用 [断点调试](../javascript/breakpoints.md) 或 [Live Expressions](live-expressions.md)时，您可能会发现您的工作流更有效，并且您获得更好的结果。

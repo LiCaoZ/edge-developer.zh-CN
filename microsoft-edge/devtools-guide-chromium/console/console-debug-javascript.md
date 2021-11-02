@@ -7,21 +7,22 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: b22ed3d1e4bfa046d2c4c2d11532eab86bb901ce
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 608ebfa79ee55e2351f3525a2c024bd2ce40bf57
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082986"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140310"
 ---
 # <a name="fixing-javascript-errors-that-are-reported-in-the-console"></a>修复控制台中报告的 JavaScript 错误
 
 本文介绍解决控制台中报告的 JavaScript 错误。  有关用于**显示和解析**错误消息的控制台的常规用途，请导航到"[使用控制台"。](index.md)
 
 
+<!-- ====================================================================== -->
 ## <a name="fix-javascript-errors"></a>修复 JavaScript 错误
 
-使用控制台的第一 **个体验** 可能是脚本中的错误。  若要试用它，请导航到控制台工具 [中报告的 JavaScript 错误][GithubMicrosoftedgeDevtoolssamplesConsoleErrorHtml]。
+使用控制台的第一 **个体验** 可能是脚本中的错误。  若要试用它，请导航到控制台工具 [中报告的 JavaScript 错误](https://microsoftedge.github.io/DevToolsSamples/console/error.html)。
 
 在浏览器中打开 DevTools。  右 **上方的"打开** 控制台查看错误"按钮将显示有关网页的错误。  选择按钮以将你导航到 **控制台** ，并提供有关错误的详细信息。
 
@@ -29,7 +30,7 @@ ms.locfileid: "12082986"
    DevTools 提供有关控制台中错误 **的详细信息**
 :::image-end:::
 
-控制台中的许多错误消息**在****"Web"** 按钮上都有"搜索此消息"，显示为放大镜。  此功能是在版本 94 Microsoft Edge引入的。  有关详细信息，请导航到["从控制台查找 Web 上的错误消息"。][LookupErrorsWebFromConsole]
+控制台中的许多错误消息**在****"Web"** 按钮上都有"搜索此消息"，显示为放大镜。  此功能是在版本 94 Microsoft Edge引入的。  有关详细信息，请导航到["从控制台查找 Web 上的错误消息"。](index.md#look-up-error-messages-on-the-web-from-the-console)
 
 此错误消息中的信息表明错误位于文件的第 16 `error.html` 行。  在 `error.html:16` 控制台 中选择错误消息右侧 **的链接**。  " **源** "工具将打开并突出显示包含错误的代码行。
 
@@ -40,9 +41,10 @@ ms.locfileid: "12082986"
 该脚本尝试获取文档中的第 `h2` 一个元素，并围绕该元素绘制红色边框。  但不存在 `h2` 元素，因此脚本失败。
 
 
+<!-- ====================================================================== -->
 ## <a name="find-and-debug-network-issues"></a>查找和调试网络问题
 
-控制台报告 **的其他错误** 是网络错误。  若要在操作中显示它，请导航到控制台 [中报告的网络错误][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorHtml]。
+控制台报告 **的其他错误** 是网络错误。  若要在操作中显示它，请导航到控制台 [中报告的网络错误](https://microsoftedge.github.io/DevToolsSamples/console/network-error.html)。
 
 :::image type="complex" source="../media/console-debug-network-error.msft.png" alt-text="控制台显示网络和 JavaScript 错误" lightbox="../media/console-debug-network-error.msft.png":::
    **控制台** 显示网络和 JavaScript 错误
@@ -53,7 +55,7 @@ ms.locfileid: "12082986"
 *   以 HTTP 方法开头，后 `GET` 跟 URI 的网络错误。
 *   错误 `Uncaught (in promise) TypeError: data.forEach is not a function` 。
 
-选择 `network-error.html:40` 控制台 中 **的链接**。  将 **打开"** 源"工具。  有问题的代码行突出显示，后跟 `error` \ (`x` \) 按钮。  若要显示 `Failed to load resource: the server responded with a status of 404 ()` 错误消息，请选择错误 \ (**** `x` \) 按钮。
+选择 `network-error.html:40` 控制台 中 **的链接**。  将 **打开"** 源"工具。  有问题的代码行突出显示，后跟一个 `error` () `x` 按钮。  若要显示 `Failed to load resource: the server responded with a status of 404 ()` 错误消息，请选择 () **** `x` 按钮。
 
 :::row:::
    :::column span="":::
@@ -86,19 +88,19 @@ ms.locfileid: "12082986"
     :::column-end:::
 :::row-end:::
 
-问题是什么？  两个斜杠字符 `//` \ (\) 出现在请求的 URI 中的单词 `repos` 后。  打开" **源"** 工具并检查第 26 行。  尾部斜杠字符 \ (`/` \) 出现在基本 URI 的末尾。
+问题是什么？  在请求的 URI () 两个斜杠 `//` 字符 `repos` 。  打开" **源"** 工具并检查第 26 行。  尾部斜杠 () URI 的末尾 `/` 出现。
 
 :::image type="complex" source="../media/console-debug-network-error-code-error.msft.png" alt-text="&quot;源&quot;工具显示包含错误的代码行" lightbox="../media/console-debug-network-error-code-error.msft.png":::
    " **源** "工具显示包含错误的代码行
 :::image-end:::
 
-To see the resulting page when there are no errors in the **Console**， navigate to [Fixed network error reported in Console][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorFixedHtml].
+To see the resulting page when there are no errors in the **Console**， navigate to [Fixed network error reported in Console](https://microsoftedge.github.io/DevToolsSamples/console/network-error-fixed.html).
 
-:::image type="complex" source="../media/console-debug-network-error-fixed.msft.png" alt-text="不带任何错误的示例从应用程序加载GitHub并显示该信息" lightbox="../media/console-debug-network-error-fixed.msft.png":::
-   不带任何错误的示例从应用程序加载GitHub并显示该信息
+:::image type="complex" source="../media/console-debug-network-error-fixed.msft.png" alt-text="不带任何错误的示例从 GitHub并显示信息" lightbox="../media/console-debug-network-error-fixed.msft.png":::
+   不带任何错误的示例从 GitHub并显示信息
 :::image-end:::
 
-使用防御性编码技术以避免以前的用户体验。  请确保代码捕获错误，并显示控制台中的每个 **错误**。  在控制台 [和 UI 中导航到][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorReportedHtml] 网络错误报告并查看以下项目。
+使用防御性编码技术以避免以前的用户体验。  请确保代码捕获错误，并显示控制台中的每个 **错误**。  在控制台 [和 UI 中导航到](https://microsoftedge.github.io/DevToolsSamples/console/network-error-reported.html) 网络错误报告并查看以下项目。
 
 *   向用户提供 UI 以指示出现问题。
 *   在 **控制台中**，从代码提供有关 **网络** 错误的有用信息。
@@ -122,10 +124,12 @@ const handleErrors = (response) => {
 };
 ```
 
+
+<!-- ====================================================================== -->
 ## <a name="create-errors-and-traces-in-the-console"></a>在控制台创建错误和跟踪
 
 除了 `throw Error` 上一部分中的示例之外，您还可以在控制台中创建不同的错误和跟踪 **问题**。
-若要在控制台中显示两个创建的 **错误消息**，请导航到在控制台中创建错误报告和 [断言][GithubMicrosoftedgeDevtoolssamplesConsoleErrorAssertHtml]。
+若要在控制台中显示两个创建的 **错误消息**，请导航到在控制台中创建错误报告和 [断言](https://microsoftedge.github.io/DevToolsSamples/console/error-assert.html)。
 
 :::image type="complex" source="../media/console-debug-error-assert.msft.png" alt-text="从控制台创建的错误消息" lightbox="../media/console-debug-error-assert.msft.png":::
    从控制台创建的 **错误消息**
@@ -174,7 +178,7 @@ console.assert(x >= 40, `${x} is too small`)
 > [!IMPORTANT]
 > 代码的第二行和第三行执行相同的测试。  由于断言需要记录负结果，因此在案例和 `x < 40` `if` `x >= 40` 断言中进行测试。
 
-如果不确定哪个函数请求另一个函数，请使用 方法跟踪请求获取当前函数 `console.trace()` 的函数。  若要在控制台中显示 **跟踪，** 请导航到在控制台 [中创建跟踪][GithubMicrosoftedgeDevtoolssamplesConsoleTraceHtml]。
+如果不确定哪个函数请求另一个函数，请使用 方法跟踪请求获取当前函数 `console.trace()` 的函数。  若要在控制台中显示 **跟踪，** 请导航到在控制台 [中创建跟踪](https://microsoftedge.github.io/DevToolsSamples/console/trace.html)。
 
 ```javascript
 function here() {there()}
@@ -191,14 +195,3 @@ there();
 :::image type="complex" source="../media/console-debug-trace.msft.png" alt-text="从控制台创建的跟踪" lightbox="../media/console-debug-trace.msft.png":::
    从控制台创建的 **跟踪**
 :::image-end:::
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[LookupErrorsWebFromConsole]: index.md#look-up-error-messages-on-the-web-from-the-console "从控制台查找 Web 上的错误消息 - 使用控制台|Microsoft Docs"
-[GithubMicrosoftedgeDevtoolssamplesConsoleErrorHtml]: https://microsoftedge.github.io/DevToolsSamples/console/error.html "控制台工具控制台中报告的 JavaScript |GitHub"
-[GithubMicrosoftedgeDevtoolssamplesConsoleErrorAssertHtml]: https://microsoftedge.github.io/DevToolsSamples/console/error-assert.html "在控制台控制台中创建错误报告和|GitHub"
-[GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorHtml]: https://microsoftedge.github.io/DevToolsSamples/console/network-error.html "控制台控制台中报告的网络|GitHub"
-[GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorFixedHtml]: https://microsoftedge.github.io/DevToolsSamples/console/network-error-fixed.html "修复了控制台控制台中报告的网络|GitHub"
-[GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorReportedHtml]: https://microsoftedge.github.io/DevToolsSamples/console/network-error-reported.html "控制台和 UI 服务中的网络错误|GitHub"
-[GithubMicrosoftedgeDevtoolssamplesConsoleTraceHtml]: https://microsoftedge.github.io/DevToolsSamples/console/trace.html "在控制台控制台中|GitHub"

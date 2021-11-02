@@ -6,21 +6,21 @@ ms.author: msedgedevrel
 ms.date: 04/06/2021
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.openlocfilehash: 043ce449b8447b77c22b94389c5feea21a101bec
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 7b337b0d79c05fbb69f72db2e7ebcc731b0d60b9
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108561"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139397"
 ---
 # <a name="microsoft-edge-devtools-protocol-overview"></a>Microsoft EdgeDevTools 协议概述
 
 使用 DevTools 协议检测、检查、调试和配置文件浏览器，包括Microsoft Edge。  The Microsoft Edge DevTools Protocol matches the APIS of the Chrome DevTools Protocol.  有关参考文档，请导航到 [Chrome DevTools 协议查看器](https://chromedevtools.github.io/devtools-protocol/tot)。
 
 > [!NOTE]
-> 随着 Microsoft Edge 基础 Web 平台Chromium，Microsoft Edge (EdgeHTML) [DevTools 协议](/archive/microsoft-edge/legacy/developer/devtools-protocol/index)将不会接收任何进一步的更新。  The Microsoft Edge DevTools Protocol will match the API of the Chrome DevTools Protocol going.
+> 随着 Microsoft Edge 的基础 Web 平台Chromium，Microsoft Edge (EdgeHTML) [DevTools 协议](/archive/microsoft-edge/legacy/developer/devtools-protocol/index)将不会接收任何进一步的更新。  The Microsoft Edge DevTools Protocol will match the API of the Chrome DevTools Protocol going.
 >
-> `ms` [) DevTool Microsoft Edge s](/archive/microsoft-edge/legacy/developer/devtools-protocol/index)协议不再支持在 Microsoft Edge (EdgeHTML) 中作为前缀的任何方法。
+> `ms` [Microsoft Edge (DevTool Microsoft Edge s](/archive/microsoft-edge/legacy/developer/devtools-protocol/index)协议不再) EdgeHTML) 中作为前缀的任何方法。
 
 
 <!-- ====================================================================== -->
@@ -36,7 +36,7 @@ ms.locfileid: "12108561"
     msedge.exe --remote-debugging-port=9222
     ```
 
-1.  （可选）可以使用一个不同的用户配置文件Microsoft Edge单独的应用程序实例。
+1.  （可选）可以使用不同的用户配置文件启动Microsoft Edge单独的应用程序实例。
 
     ```shell
     msedge.exe --user-data-dir=<some directory>
@@ -137,11 +137,11 @@ String(“Target is closing”)
 <!-- ====================================================================== -->
 ## <a name="remote-tools-for-microsoft-edge-beta"></a>Microsoft Edge 适用的远程工具 (Beta)
 
-现在，你可以从 Microsoft Edge (安装[) Beta](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) [Microsoft Store。](https://www.microsoft.com/store/apps/windows)  此应用使你能够远程调试Microsoft Edge计算机Windows 10或更高版本设备上运行的应用。
+现在，你可以从 Microsoft Store 安装 Beta Microsoft Edge ([) ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) [远程Microsoft Store。](https://www.microsoft.com/store/apps/windows)  此应用使你能够远程调试Microsoft Edge计算机Windows 10或更高版本设备上运行的应用。
 
 若要了解如何设置 Windows 设备，以及如何从开发计算机连接到该设备，请导航到开始使用远程调试[Windows设备](../devtools-guide-chromium/remote-debugging/windows.md)。
 
-[Microsoft Edge (Beta) ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)的远程工具使用与开发人员工具相同的 Microsoft Edge DevTools 协议与在要调试[](../devtools-guide-chromium/index.md)的 Windows 10 或更高版本设备上运行的 Microsoft Edge 通信。  此应用只是预pends and a process ID () `/msedge/` before each call to the `pid` protocol.  它支持以下 HTTP 终结点。
+[Microsoft Edge (Beta) ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)的远程工具使用与 DevTools 相同的 Microsoft Edge [DevTools](../devtools-guide-chromium/index.md)协议与在要调试的 Windows 10 或更高版本设备上运行的 Microsoft Edge 通信。  此应用只需在调用协议 `/msedge/` () `pid` 预预置进程 ID。  它支持以下 HTTP 终结点。
 
 以下参考部分适用于远程工具 for Microsoft Edge。
 
@@ -149,7 +149,7 @@ String(“Target is closing”)
 <!-- ====================================================================== -->
 ## <a name="msedgejsonlist"></a>/msedge/json/list
 
-提供所有进程 \ (包括 PBA 以及 Microsoft Edge\) 或更高版本设备上所有 Windows 10 实例的所有选项卡Windows 10进行 `msedge.exe` 调试。 [](../progressive-web-apps-chromium/index.md)
+提供用于调试的所有进程 (包括 PBA 以及 Microsoft Edge) 或更高版本设备上 Windows 10 实例的所有 `msedge.exe` 选项卡。 [](../progressive-web-apps-chromium/index.md)
 
 **参数**
 
@@ -229,7 +229,7 @@ String(“Target is closing”)
 <!-- ====================================================================== -->
 ## <a name="msedgepidjsonprotocol"></a>/msedge/[pid]/json/protocol/
 
-提供序列化为 JSON 的整个协议 API 图面，Microsoft Edge `[pid]` 提供的实例。
+为匹配所提供的 的 Microsoft Edge 实例提供序列化为 JSON 的整个协议 API 图面 `[pid]` 。
 
 **参数**
 

@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: b0d0fe14f061934dc50a0f05ed4b832d63200ea3
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: acb023ad7ff0fcaa567ad037fc73d2ef9e341da7
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082692"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139708"
 ---
 <!-- Copyright Kayce Basques
 
@@ -45,6 +45,8 @@ ms.locfileid: "12082692"
 > 当前不支持在 iOS 设备上远程调试 Microsoft Edge 应用程序。   以下指南专门针对 Android 设备上的 Microsoft Edge 进行远程调试。
 > 如果使用的是 macOS 设备，请按照 [Brightcove 调试指南][BrightcoveSupportDebuggingMobileDevices]使用 Safari 在 iOS 设备上远程调试 Microsoft Edge。  有关 Safari 中的 Web 检查器工具的更多信息，请导航至 [Safari Web 开发工具][AppleDeveloperSafariTools]。
 
+
+<!-- ====================================================================== -->
 ## <a name="step-1-discover-your-android-device"></a>步骤 1：发现 Android 设备
 
 下面的工作流适用于大多数用户。  有关更多帮助信息，请导航至[疑难解答：DevTools 未检测 Android 设备](#troubleshooting-devtools-is-not-detecting-the-android-device)一节。
@@ -83,7 +85,7 @@ ms.locfileid: "12082692"
 使用以下提示可帮助你验证软件是否正确设置。
 
 *   如果你的开发计算机运行的是 Windows，请尝试手动为 Android 设备安装 USB 驱动程序。  有关详细信息，请导航到[安装 OEM USB 驱动程序][AndroidDeveloperToolsOemUsb]。
-*   Windows 和 Android 设备\(尤其是 Samsung \)的某些组合需要其他设置。  有关详细信息，请导航到[插入时开发工具设备无法检测到设备。][Stackoverflow21925992]
+*   Windows Android 设备 (特别是 Samsung) 需要其他设置。  有关详细信息，请导航到[插入时开发工具设备无法检测到设备。][Stackoverflow21925992]
 
 如果 Android 设备上未显示“**允许 USB 调试**”提示，请使用以下提示来帮助你排除故障。
 
@@ -98,6 +100,8 @@ ms.locfileid: "12082692"
 
 如果找到未在本页面或堆栈溢出的[插入时开发工具设备无法检测到设备][Stackoverflow21925992]上提及的解决方案，请将解决方案添加到堆栈溢出问题<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->.
 
+
+<!-- ====================================================================== -->
 ## <a name="step-2-debug-content-on-your-android-device-from-your-development-machine"></a>步骤 2：从开发计算机调试 Android 设备上的内容
 
 1.  在 Android 设备上打开 Microsoft Edge。
@@ -125,14 +129,14 @@ ms.locfileid: "12082692"
 
 导航到开发工具实例的“**元素**”工具，然后将鼠标悬停在某个元素上以在 Android 设备的视口中突出显示。
 
-还可以在 Android 设备屏幕上选择一个元素，然后在“**元素 **”工具中将其选中。  选择开发工具实例中“**选择元素**” \(![选择元素](../media/select-element-icon.msft.png)\)图标，然后在 Android 设备屏幕上选择元素。
+还可以在 Android 设备屏幕上选择一个元素，然后在“**元素 **”工具中将其选中。  选择 **"** 选择 (选择元素) DevTools 实例上的"选择元素"图标，然后选择 ![ Android ](../media/select-element-icon.msft.png) 设备屏幕上的元素。
 
 > [!NOTE]
 > 第一次选择后将禁用“** 选择元素**”，因此每次使用功能时都必须重新启用。
 
 ### <a name="screencast-your-android-screen-to-your-development-machine"></a>将 Android 屏幕截屏到开发计算机
 
-选择“**切换截屏视频**” \(![切换截屏视频](../media/toggle-screencast-icon.msft.png)\) 图标可在开发工具实例中查看 Android 设备的内容。
+Choose **Toggle Screencast** (![ Toggle Screencast) icon to view the content ](../media/toggle-screencast-icon.msft.png) of your Android device in your DevTools instance.
 
 可以通过以下方式与截屏视频进行交互。
 
@@ -169,7 +173,7 @@ ms.locfileid: "12082692"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: ce2897245cad28f67cc60f77b753946fd451249f
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: bd1952939564ca9f49c50bc1386446e20ffc285c
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082412"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140429"
 ---
 # <a name="check-text-color-contrast-in-the-default-state-using-the-inspect-tool"></a>使用 Inspect 工具检查默认状态下的文本颜色对比度
 
@@ -32,9 +32,9 @@ ms.locfileid: "12082412"
 
 例如，在演示页面上，边栏导航菜单的蓝色链接具有足够的对比度，但"发送状态"部分中的绿色****"动物"链接**** 没有足够的对比度。  使用 Inspect 工具查看 **这些** 元素，如下所示：
 
-1.  打开 [新选项卡中的辅助功能测试][DevToolsA11yErrorsDemopage] 演示网页。 然后选择 **F12** 以打开 DevTools。
+1.  打开 [新选项卡中的辅助功能测试](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 演示网页。 然后选择 **F12** 以打开 DevTools。
 
-1.  选择 DevTools 左上角的"检查 **\ (** 检查"按钮 \) 按钮，以便图标以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
+1.  选择 **DevTools** (左上角的"检查) 检查"按钮，使图标以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
 
 1.  在呈现的网页中，将鼠标悬停在边栏导航菜单的蓝色 **"猫** "链接上。  将显示 **Inspect** 工具的信息覆盖层。  在信息**覆盖的**"辅助功能"部分，"对比度"行上会显示一个**** 绿色选中标记，指示此元素具有足够的文本颜色与背景色对比度。
 
@@ -49,6 +49,7 @@ ms.locfileid: "12082412"
     :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## <a name="different-options-to-inspect-text-color-contrast-in-devtools"></a>在 DevTools 中检查文本颜色对比度的不同选项
 
 使用以下 DevTools 功能检查文本颜色对比度。
@@ -63,12 +64,6 @@ ms.locfileid: "12082412"
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [验证所有元素状态可访问性][DevtoolsAccessibilityTestInspectStates]
+*  [验证所有元素状态可访问性](test-inspect-states.md)
 *  [使用"检查"工具将鼠标悬停在网页上以检测辅助功能问题](test-inspect-tool.md)
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsAccessibilityTestInspectStates]: test-inspect-states.md "验证元素的所有状态是否|Microsoft Docs"
-[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "辅助功能测试演示网页|GitHub"

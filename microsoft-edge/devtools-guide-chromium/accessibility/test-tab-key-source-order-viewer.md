@@ -7,23 +7,24 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 579b35467b801cc19525abf1041917e152904fd0
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: cd1d749bf2bc0fe5937f518c76b5255bcfae36b8
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082748"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140415"
 ---
 # <a name="test-keyboard-support-using-the-source-order-viewer"></a>使用源订单查看器测试键盘支持
 
 文档的源顺序对于辅助技术非常重要，并且可能不同于元素在呈现页面上的显示顺序。  使用 CSS，您可以直观地对页面元素进行重新排序，但这并不意味着屏幕阅读器等辅助技术将按相同的顺序表示页面元素。
 
-为了确保文档具有逻辑顺序，可以使用源顺序查看器用指定文档源代码**** 中顺序的数字标记不同的页面元素。  源**顺序查看器**位于"样式"**** 选项卡 (的"辅助功能"选项卡) 。 ****
+为了确保文档具有逻辑顺序，可以使用源顺序查看器用指定文档源代码**** 中顺序的数字标记不同的页面元素。  源**顺序查看器**位于"样式"**** 选项卡 ("**按钮附近的**"辅助功能") 。
 
 
+<!-- ====================================================================== -->
 ## <a name="analyzing-the-order-of-keyboard-access-through-sections-of-the-page"></a>通过页面的各个部分分析键盘访问的顺序
 
-辅助功能 [测试演示网页][DevToolsA11yErrorsDemopage] 有一个反直观的 Tab 键顺序，在此顺序中，键盘用户只有在按 Tab 键浏览所有"更多"链接后才能访问边栏 **导航** 菜单。  边栏导航菜单是进入页面内容深度的快捷方式。  但是，因为你需要在到达边栏导航菜单之前浏览整个页面，所以该导航菜单对键盘用户无效。
+辅助功能 [测试演示网页](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 有一个反直观的 Tab 键顺序，在此顺序中，键盘用户只有在按 Tab 键浏览所有"更多"链接后才能访问边栏 **导航** 菜单。  边栏导航菜单是进入页面内容深度的快捷方式。  但是，因为你需要在到达边栏导航菜单之前浏览整个页面，所以该导航菜单对键盘用户无效。
 
 演示 `Tab` 页面上的关键顺序为：
 1. " **搜索** "字段，然后是"搜索 **"** 字段的 **"开始"** 按钮。
@@ -42,19 +43,19 @@ ms.locfileid: "12082748"
 
 若要打开源订单查看器，请执行以下命令：
 
-1.  在 DevTools 的右上角，选择"设置**\ (设置** ![ ](../media/settings-button-icon.msft.png) \) 按钮。
+1.  在 DevTools 的右上角，选择"设置 (设置按钮) **** ![ ](../media/settings-button-icon.msft.png) 按钮。
 
 1.  在**** 设置，**选择实验**。
 
 1.  选中" **源订单查看器"** 复选框。
 
-1.  在页面的右上角，设置**X**关闭页面设置页。 ****  在 DevTools 顶部，消息 **一个或多个设置已更改，要求重新加载生效。** 显示。  选择" **重新加载 DevTools"** 按钮。
+1.  在页面右上角，设置**X** **** 以关闭设置页。  在 DevTools 顶部，消息 **一个或多个设置已更改，要求重新加载生效。** 显示。  选择" **重新加载 DevTools"** 按钮。
 
 
 
 若要激活源订单查看器并使用演示页面，请执行以下命令：
 
-1.  打开 [新选项卡中的辅助功能测试][DevToolsA11yErrorsDemopage] 演示网页。 然后选择 **F12** 以打开 DevTools。
+1.  打开 [新选项卡中的辅助功能测试](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 演示网页。 然后选择 **F12** 以打开 DevTools。
 
 1.  在" **元素"** 工具中的"样式"选项卡 **的右侧** ，选择 **"辅助功能"** 选项卡。
 
@@ -73,8 +74,3 @@ ms.locfileid: "12082748"
 ## <a name="see-also"></a>另请参阅
 
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "辅助功能测试演示网页|GitHub"

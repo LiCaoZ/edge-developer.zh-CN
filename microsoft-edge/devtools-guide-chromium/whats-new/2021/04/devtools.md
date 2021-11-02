@@ -7,12 +7,12 @@ ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 17c87626c2519cfd68016b58727693e5c56517cf
-ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
+ms.openlocfilehash: 96730f8ad0775c1d508aa3f67f1b2ad0206831d1
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "12086960"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140821"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -31,6 +31,8 @@ ms.locfileid: "12086960"
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
+
+<!-- ====================================================================== -->
 ## <a name="wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool"></a>波浪下划线突出显示元素工具中的代码问题和改进项
 
 <!--  Title: Get code hints in Elements tool  -->
@@ -43,7 +45,7 @@ ms.locfileid: "12086960"
 *   选择并按住“`Shift`”，然后选择任何波浪下划线。
 *   完成以下操作。
     1.  将鼠标悬停在任何波浪下划线上。
-    1.  打开上下文菜单\（右键单击\）。
+    1.  打开上下文菜单 (右键单击") "。
     1.  选择“**在问题中显示**”。
 
 :::row:::
@@ -57,6 +59,8 @@ ms.locfileid: "12086960"
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="learn-about-devtools-with-informative-tooltips"></a>通过信息丰富的工具提示了解 DevTools
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
@@ -66,11 +70,11 @@ ms.locfileid: "12086960"
 
 DevTools 工具提示功能可帮助你了解 DevTools 中所有不同的工具和窗格。  要关闭工具提示，请选择“`Esc`”。  要打开工具提示，请完成以下操作之一。
 
-*   选择 `Ctrl` +`Shift`+`H` \(Windows、Linux\) 或 `Cmd`+`Shift`+`H` \(macOS\)。
+*   选择 `Ctrl` + `Shift` + `H` (Windows/Linux) 或 `Cmd` + `Shift` + `H` (macOS) 。
 *   [打开命令菜单][DevtoolsCommandMenuIndexOpenCommandMenu]，然后键入 `tooltips`。
-*   选择“**自定义和控制 DevTools** \（`...`\）”>“**帮助**” > “**切换 DevTools 工具提示**”。
+*   Choose **Customize and control DevTools** () > `...` **Help**Toggle  >  **the DevTools Tooltips**.
 
-此外，如果启用 [焦点模式和 DevTools 工具提示][DevtoolsWhatsNew202102DevtoolsGroupToolsTogetherInFocusMode] 试验，还可以选择**活动栏** 底部的“**切换 DevTools 工具提示**”\（`?`\）按钮。
+此外，如果你打开焦点模式和[DevTools][DevtoolsWhatsNew202102DevtoolsGroupToolsTogetherInFocusMode]工具提示实验，还可以选择活动栏底部的切换**DevTools**工具提示 () 按钮 `?` 。 ****
 
 要显示有关如何使用 DevTools 的详细信息，请打开工具提示，然后将鼠标悬停在 DevTools 的每个轮廓区域上。
 
@@ -78,6 +82,8 @@ DevTools 工具提示功能可帮助你了解 DevTools 中所有不同的工具�
    将鼠标悬停在 **问题** 工具突出显示区域中的任意位置，以显示更多详细信息
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="service-worker-update-timeline"></a>服务工作进程更新日程表
 
 <!--todo:  Update the linked [Service Worker improvements][DevtoolsServiceWorkerIndex] article.  -->
@@ -97,6 +103,8 @@ DevTools 工具提示功能可帮助你了解 DevTools 中所有不同的工具�
 
 有关服务工作进程生命周期的详细信息，请导航到 [服务工作进程生命周期][ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]。  有关 DevTools 中渐进式 Web 应用和服务工作进程调试工具的详细信息，请导航到 [服务工作进程改进][DevtoolsServiceWorkerIndex]。  要在 Chromium 开源项目中查看此功能的实时更新，请导航至问题 [1066604][CR1066604]。
 
+
+<!-- ====================================================================== -->
 ## <a name="progressive-web-apps-no-longer-display-warnings-for-non-square-icons"></a>渐进式 Web 应用不再显示非方形图标的警告
 
 <!--  Title: Non-square icons in app manifest no longer produce warnings  -->
@@ -121,6 +129,8 @@ Most operating systems require square icons.  Please include at least one square
 
 要查看 Web 应用清单中的错误和警告，请导航到 **应用程序** 工具，然后选择“**清单**”部分。  错误和警告列在 **错误和警告** 标题下。  有关 Web 应用清单的详细信息，请导航到 [使用 Web 应用清单将渐进式 Web 应用集成到操作系统][ProgressiveWebAppsWebappmanifests]。  要创建要包含在 Web 应用清单中的图标，请导航到 [PWABuilder 映像生成器][PwabuilderImagegenerator]。  要在 Chromium 开源项目中查看此功能的实时更新，请导航至问题 [1185945][CR1185945]。
 
+
+<!-- ====================================================================== -->
 ## <a name="localized-devtools-now-supported-in-chromium-based-browsers"></a>基于 Chromium 的浏览器现在支持本地化的 DevTools
 
 <!--  Title: Localization for all  -->
@@ -132,6 +142,8 @@ Most operating systems require square icons.  Please include at least one square
    Microsoft Edge 浏览器和 DevTools 设置为日语
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="use-the-keyboard-to-navigate-to-css-variables"></a>使用键盘导航到 CSS 变量
 
 <!--  Title: Navigate to CSS variables with the arrow keys  -->
@@ -143,6 +155,8 @@ Most operating systems require square icons.  Please include at least one square
    **样式** 窗格中突出显示的 `--theme-body-background` CSS 变量
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="issues-are-automatically-sorted-by-severity"></a>问题按严重性自动排序
 
 <!-- Title: Display Issues in severity order  -->
@@ -154,6 +168,8 @@ Most operating systems require square icons.  Please include at least one square
    **问题** 工具按严重性排序显示问题
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="microsoft-edge-developer-tools-for-visual-studio-code-version-117"></a>Microsoft Edge 开发人员工具 for Visual Studio Code 版本 1.1.7
 
 <!-- Title: Microsoft Edge DevTools for Visual Studio version 1.1.7  -->
@@ -168,13 +184,15 @@ Most operating systems require square icons.  Please include at least one square
 
 要手动更新到版本 1.1.7，请导航至“[手动更新扩展][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]”。  你可以在 [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools] 上提交问题并参与提升扩展。
 
+
+<!-- ====================================================================== -->
 ## <a name="announcements-from-the-chromium-project"></a>来自 Chromium 项目的公告
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
 
 ### <a name="visualize-css-scroll-snap"></a>可视化 CSS 滚动贴靠
 
-现在可以在 **元素** 工具中切换 `scroll-snap` 徽章，以检查 CSS 滚动贴靠对齐方式。  当网页上的 HTML 元素将 `scroll-snap-type` 应用到它时，**元素** 工具中在其附近会显示一个 `scroll-snap` 徽章。  选择该徽章以打开 \（或关闭）网页上滚动贴靠放置文件夹的显示。  要查看示例网页，请导航到 [滚动贴靠演示][GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml]。  在该示例中，点显示在贴靠边缘上。  滚动端口具有实心轮廓，而对齐项具有短划线轮廓。  滚动填充以绿色填充，而滚动边距则填充为橙色。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [862450][CR862450]。
+现在可以在 **元素** 工具中切换 `scroll-snap` 徽章，以检查 CSS 滚动贴靠对齐方式。  当网页上的 HTML 元素将 `scroll-snap-type` 应用到它时，**元素** 工具中在其附近会显示一个 `scroll-snap` 徽章。  选择锁屏提醒以 (或) 网页上滚动贴贴的显示。  要查看示例网页，请导航到 [滚动贴靠演示][GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml]。  在该示例中，点显示在贴靠边缘上。  滚动端口具有实心轮廓，而对齐项具有短划线轮廓。  滚动填充以绿色填充，而滚动边距则填充为橙色。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [862450][CR862450]。
 
 :::image type="complex" source="../../media/2021/04/elements-scroll-snap-highlight.msft.png" alt-text="CSS 滚动贴靠" lightbox="../../media/2021/04/elements-scroll-snap-highlight.msft.png":::
    CSS 滚动贴靠
@@ -192,13 +210,13 @@ Most operating systems require square icons.  Please include at least one square
 
 ### <a name="new-badge-settings-pane-in-the-elements-tool"></a>元素工具中的新建徽章设置窗格
 
-现在，使用 **元素** 工具中的 **徽章设置** 来打开\（或关闭\）单个徽章。  在检查网页时，使用此功能自定义并对重要徽章保持关注。  要在 **元素** 工具顶部显示徽章设置窗格，请完成以下操作。
+现在，使用"元素 **"** 工具中的**** 锁屏提醒设置打开或 (或) 各个锁屏提醒。  在检查网页时，使用此功能自定义并对重要徽章保持关注。  要在 **元素** 工具顶部显示徽章设置窗格，请完成以下操作。
 
 1.  将鼠标悬停在任何元素上。
-1.  打开上下文菜单\（右键单击\）。
+1.  打开上下文菜单 (右键单击") "。
 1.  选择“**徽章设置...**”。
 
-要显示\（或隐藏\）徽章，请选择\（或删除\）徽章名称旁边的复选框。
+若要显示 (或隐藏) 锁屏提醒， (或) 锁屏提醒名称旁边的复选框。
 
 <!--  To review the history of this feature in the Chromium open-source project, navigate to Issue [1066772][CR1066772].  -->
 
@@ -260,7 +278,7 @@ Most operating systems require square icons.  Please include at least one square
 现在，要在 **样式** 窗格中显示计算的 CSS 值，请完成以下操作。
 
 1.  将鼠标悬停在 CSS 属性上。
-1.  打开上下文菜单\（右键单击\）。
+1.  打开上下文菜单 (右键单击") "。
 1.  选择“**查看计算值**”。
 
 要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1076198][CR1076198]。
@@ -346,7 +364,7 @@ DevTools 现在支持在 **源** 工具中使用 `[]` 表示法的 JavaScript �
 
 #### <a name="improved-outline-of-html-files"></a>改进的 HTML 文件大纲
 
-DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工具中，打开 `.html` 文件。  要打开\（或关闭\）代码大纲，请在 Windows/Linux 上选择 `Ctrl`+`Shift`+`O` 或在 macOS 上选择 `Cmd`+`Shift`+`O`。  在下图中，DevTools 现在正确列出了大纲中的所有函数。  以前，DevTools 仅显示一些函数。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [761019][CR761019] 和 [1191465][CR1191465]。
+DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工具中，打开 `.html` 文件。  若要打开或 (或) 大纲，请在 `Ctrl` + `Shift` + `O` Windows/Linux 或 `Cmd` + `Shift` + `O` macOS 上选择。  在下图中，DevTools 现在正确列出了大纲中的所有函数。  以前，DevTools 仅显示一些函数。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [761019][CR761019] 和 [1191465][CR1191465]。
 
 :::image type="complex" source="../../media/2021/04/sources-page-jobobbx-at.msft.png" alt-text=" 改进的 HTML 文件大纲" lightbox="../../media/2021/04/sources-page-jobobbx-at.msft.png":::
    改进的 HTML 文件大纲
@@ -379,6 +397,8 @@ DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工
 
 要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1189161][CR1189161]。
 
+
+<!-- ====================================================================== -->
 ## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道
 
 如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
@@ -425,7 +445,7 @@ DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工
 [CR979000]: https://crbug.com/979000 "问题 979000：具有碰撞源路径的源映射不起作用。"
 [CR1066604]: https://crbug.com/1066604 "问题1066604：DevTools：查看有关 ServiceWorker 安装和激活事件的详细信息 | Chromium bug"
 <!--  [CR1066772]: https://crbug.com/1066772 "Issue 1066772: "  locked  -->
-[CR1076198]： https://crbug.com/1076198 "Issue 1076198： [Feature Request] Jump to computed property from `styles` tab&quot; [CR1092093]： https://crbug.com/1092093 &quot;Issue 1092093： Make form controls more color-stylable by supporting the 'accent-color' CSS property&quot; [CR1136655]： https://crbug.com/1136655 &quot;Issue 1136655： Devtools： Localization V2 |Chromium bug&quot; [CR1142705]： &quot;问题 1142705：在使用 webpack 时，2 个源映射指向同一虚拟文件时断点停止工作 https://crbug.com/1142705 &quot; [CR1149832]： &quot;问题 1149832： 功能请求：图像预览还应显示文件大小 https://crbug.com/1149832 &quot;[CR1158827]： https://crbug.com/1158827 &quot;Issue 1158827： [Permissions Policy] Implement devtool support for permissions policy&quot; [CR1162042]： https://crbug.com/1162042 &quot;Issue 1162042： DevTools： support disabling gzip/brotli/jxl content-encoding&quot; [CR1166577]： https://crbug.com/1166577 &quot;Issue 1166577： ☂️ Linear Memory Inspector 1.0&quot; [CR1170656]： https://crbug.com/1170656 &quot;Issue 1170656： Show intrinsic aspect-ratio&quot; [CR1178305]： https://crbug.com/1178305 &quot;Issue 1178305： Debugger doesn't show an indexed element's property value when 它悬停&quot; [CR1180794]： &quot;问题 1180794： 断点不能用于关闭编译器内线优化 https://crbug.com/1180794 &quot; [CR1185945]： https://crbug.com/1185945 &quot;问题 1185945： 清单警告表示所有图标都必须是方形 |Chromium bug&quot; [CR1186049]： https://crbug.com/1186049 &quot;问题 1186049： Vary 的列： 缓存 存储 查看器中的标头&quot; [CR1187735]： https://crbug.com/1187735 &quot;问题 1187735： 辅助功能： MAS2.1.1： 键盘：无法调用 'Var (.&quot;。) 键盘的 |Chromium bug&quot; [CR1189161]： &quot;问题 1189161： 堆栈跟踪不是通过 BUGS 转换 https://crbug.com/1189161 `new Error` 的&quot;[CR1191465]： https://crbug.com/1191465 &quot;问题 1191465： Ctrl+Shift+O 损坏在 HTML 上"
+[CR1076198]： https://crbug.com/1076198 "Issue 1076198： [Feature Request] Jump to computed property from `styles` tab&quot; [CR1092093]： https://crbug.com/1092093 &quot;Issue 1092093： Make form controls more color-stylable by supporting the 'accent-color' CSS property&quot; [CR1136655]： https://crbug.com/1136655 &quot;Issue 1136655： Devtools： Localization V2 |Chromium bugs&quot; [CR1142705]： https://crbug.com/1142705 &quot;Issue 1142705： breakpoints stop working when 2 sourcemaps point to the same virtual file when using webpack&quot; [CR1149832]： https://crbug.com/1149832 &quot;Issue 1149832： Feature request： image preview should also show file size&quot; [CR1158827]： https://crbug.com/1158827 &quot;Issue 1158827： [Permissions Policy] Implement devtool support for permissions policy&quot; [CR1162042]： https://crbug.com/1162042 &quot;Issue 1162042： DevTools： support disabling gzip/brotli/jxl content-encoding&quot; [CR1166577]： https://crbug.com/1166577 &quot;Issue 1166577： ☂️ Linear Memory Inspector 1.0&quot; [CR1170656]： https://crbug.com/1170656 &quot;Issue 1170656： Show intrinsic aspect-ratio&quot; [CR1178305]： https://crbug.com/1178305 &quot;Issue 1178305： Debugger doesn't show an indexed element's property value when it's hovered&quot; [CR1180794]： https://crbug.com/1180794 &quot;Issue 1180794： Breakpoints don't work with Closure Compiler inlining optimization&quot; [CR1185945]： https://crbug.com/1185945 &quot;Issue 1185945： Manifest warningimplies all icons must be square |Chromium bug&quot; [CR1186049]： https://crbug.com/1186049 &quot;问题 1186049： Vary： Column for Cache 存储 viewer&quot; [CR1187735]： https://crbug.com/1187735 &quot;Issue 1187735： Accessibility： MAS2.1.1： Keyboard： Unable to invoke the 'Var (..) 键盘的 |Chromium bug&quot; [CR1189161]： https://crbug.com/1189161 &quot;问题 1189161：堆栈跟踪未通过 BUGS 转换 `new Error` &quot;[CR1191465]： https://crbug.com/1191465 &quot;问题 1191465： Ctrl+Shift+O 损坏 HTML"
 
 [GithubW3cWebappsecPermissionsPolicyPermissionsPolicyExplainerMd]: https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md "权限策略解释器 | GitHub"
 
@@ -457,7 +477,7 @@ DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-91)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。
+> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-91) ，由 [Jecelyn Yeen][JecelynYeen] 和开发人员 (Chrome DevTools) 。
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

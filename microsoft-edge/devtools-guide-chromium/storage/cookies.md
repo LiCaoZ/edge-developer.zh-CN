@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 9c08e5737a62f200fad6ed4dce437f9743ea0d98
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: bce53db0d836b5ea26839ca946f40ecadb73182f
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108414"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139435"
 ---
 <!-- Copyright Kayce Basques
 
@@ -31,6 +31,8 @@ ms.locfileid: "12108414"
 
 [HTTP Cookie][MDNHTTPCookies] 主要用于管理用户会话、存储用户个性化首选项和跟踪用户行为。  Cookie 也是导致各种网页上出现麻烦的 **此页面使用 Cookie** 许可表单的源头。  以下指南将指导你如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 查看、编辑和删除网页的 HTTP Cookie。
 
+
+<!-- ====================================================================== -->
 ## <a name="open-the-cookies-pane"></a>打开“Cookie”窗格
 
 1.  [打开 DevTools][DevToolsOpen]。
@@ -46,6 +48,8 @@ ms.locfileid: "12108414"
        图 2：“Cookie” 窗格
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="fields"></a>字段
 
 **Cookies** 表包含以下字段。
@@ -59,8 +63,10 @@ ms.locfileid: "12108414"
 *   **HTTP**。  如果为 true，则此字段指示应仅通过 HTTP 使用 Cookie，不允许 JavaScript 修改。  导航到 [HttpOnly Cookie][MDNHTTPCookiesSecure]。
 *   **安全**。  如果为 true，则此字段指示必须通过安全的 HTTPS 连接将 Cookie 发送到服务器。  导航到“[安全 Cookie][MDNHTTPCookiesSecure]”。
 *   **SameSite**。  包含 `strict`，当 Cookie 使用实验性 [Samesite][MDNHTTPCookiesSamesite] 属性时包含 `lax`。
-*   **优先级**。  包含 `low`、`medium` \(default\)，当 Cookie 使用已弃用的 [Cookie Priority][ChromiumIssue232693] 属性时包含 `high`。
+*   **优先级**。  包含 `low` `medium` 、 (默认) ，或者 Cookie 是否使用已弃 `high` 用 [Cookie Priority][ChromiumIssue232693] 属性。
 
+
+<!-- ====================================================================== -->
 ## <a name="filter-cookies"></a>筛选 Cookie
 
 使用“**筛选器**”文本框按**名称**或**值**筛选 Cookie。  不支持按其他字段筛选。
@@ -69,6 +75,8 @@ ms.locfileid: "12108414"
    图 3：筛选出任何不包含文本的 Cookie `ID`
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="edit-a-cookie"></a>编辑 Cookie
 
 **名称**、**值**、**域**、**路径**和**过期日期/最长期限**字段是可编辑的。
@@ -78,15 +86,17 @@ ms.locfileid: "12108414"
    图 4：将 Cookie 的名称设置为 `DEVTOOLS!`
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="delete-cookies"></a>删除 Cookie
 
-选择一个 Cookie 然后选择“**删除选中项** (![删除选中项](../media/delete-icon.msft.png)\)” 来删除某个 Cookie。
+Choose a cookie and choose **Delete Selected (** Delete Selected) to delete the specific ![ ](../media/delete-icon.msft.png) cookie.
 
 :::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="删除特定 Cookie" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
    图 5：删除特定 Cookie
 :::image-end:::
 
-选择“**清除所有** (![清除所有](../media/clear-icon.msft.png)\)” 来删除所有 Cookie。
+Choose **Clear All (** Clear All) to delete all ![ ](../media/clear-icon.msft.png) cookies.
 
 :::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="清除所有 Cookie" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
    图 6：清除所有 Cookie
@@ -112,7 +122,7 @@ ms.locfileid: "12108414"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/cookies)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/cookies)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

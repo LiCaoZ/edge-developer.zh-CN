@@ -7,18 +7,18 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 1c5c9f03d62d43b89de0d9d617f8858b7f1b47bd
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 130102984e6ba5a73892c6ce222bcdb93a97cfb4
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12107644"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12139974"
 ---
 # <a name="reduced-motion-simulation"></a>减少运动模拟
 
 Web 产品中的动画可能是一个辅助功能问题。  操作系统通过包括关闭动画的选项来解决此问题，以避免用户混淆和潜在的健康相关问题，例如触发癫痫。
 
-在网页上，您可以使用 [首选的减少][MDNPrefersReducedMotion] 运动 CSS 媒体查询来检测用户是否喜欢显示任何动画。  然后在测试中包装动画代码，以有条件地运行动画。
+在网页上，您可以使用 [首选的减少](https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion) 运动 CSS 媒体查询来检测用户是否喜欢显示任何动画。  然后在测试中包装动画代码，以有条件地运行动画。
 
 ```css
 @media (prefers-reduced-motion: reduce) {
@@ -53,9 +53,3 @@ Web 产品中的动画可能是一个辅助功能问题。  操作系统通过�
 ## <a name="see-also"></a>另请参阅
 
 *  [验证页面是否可用，](test-reduced-ui-motion.md) 关闭 UI 动画 - 使用演示页面的演练，并给出说明。
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsIndex]: ../index.md "Microsoft Edge开发人员工具|Microsoft Docs"
-[MDNPrefersReducedMotion]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion "prefers-reduced-motion |MDN"

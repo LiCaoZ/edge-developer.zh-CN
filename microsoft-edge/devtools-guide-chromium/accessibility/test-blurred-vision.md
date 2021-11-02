@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: c223020759e4156f685f88023e25ae1ca30e1839
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: c634c9378090a3272774a7272efedefbaf8456e5
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082419"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140548"
 ---
 # <a name="verify-that-the-page-is-usable-with-blurred-vision"></a>验证页面是否可借助模糊视图
 
@@ -22,7 +22,7 @@ ms.locfileid: "12082419"
 
 若要检查网页是否具有模糊的视觉，请进行查看：
 
-1.  在 [浏览器的新选项卡中][DevToolsA11yErrorsDemopage] 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
+1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
 1.  选择 **Esc** 打开 DevTools 底部的"箱"。  Select the **+** icon at the top of the Drawer to display the list of tools， and then select **Rendering**.
 
@@ -42,9 +42,3 @@ ms.locfileid: "12082419"
 
 *  [模仿视觉缺陷](emulate-vision-deficiencies.md)
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[Contact]: ../contact.md "联系开发人员Microsoft Edge开发人员团队|Microsoft Edge开发人员文档"
-[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "辅助功能测试演示网页|GitHub"

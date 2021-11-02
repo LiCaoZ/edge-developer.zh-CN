@@ -9,12 +9,12 @@ ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
 no-loc:
 - Enable new font editor tool within the Styles pane
-ms.openlocfilehash: 27bcfd59326d003bd94b780052578befda6a70ab
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: d1699ee1343424df7d3418b8dcfaefab34a1f17e
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108470"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141227"
 ---
 # <a name="edit-css-font-styles-and-settings-in-the-styles-pane"></a>在“样式”窗格中编辑 CSS 字体样式和设置
 
@@ -45,6 +45,8 @@ ms.locfileid: "12108470"
 
 “**字体编辑器**”由两部分组成：“字体系列”选择器和“CSS 属性”编辑器。
 
+
+<!-- ====================================================================== -->
 ## <a name="the-font-family-selector"></a>“字体系列”选择器
 
 “字体系列”选择器位于可视“**字体编辑器**”的上部。  若要选择 CSS 规则的字体，请在 CSS 编辑器中使用“**字体系列**”选择器。  可为每个 CSS 规则选择主字体和回退字体。
@@ -73,6 +75,8 @@ ms.locfileid: "12108470"
 > [!NOTE]
 > 如果为字体系列选择全局值，则不会再出现另一个下拉列表，因为 CSS 中没有该字体系列的回退字体。
 
+
+<!-- ====================================================================== -->
 ## <a name="the-css-properties-editor"></a>“CSS 属性”编辑器
 
 可在可视“**字体编辑器**”的下部更改 CSS 字体属性。  可使用任何用户界面控件更改字体大小、线条高度、字体粗细和字母间距。  所做的更改将立即在浏览器中应用。

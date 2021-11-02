@@ -8,29 +8,33 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、wpf 应用、wpf、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
-ms.openlocfilehash: 357421a219a0c006100f3455aba503851e0566c0
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 7dd9418a86e3630ac55973c946070ac929507283
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12081901"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141052"
 ---
 # <a name="get-started-with-webview2-in-wpf-apps"></a>WPF 应用中的 WebView2 入门
 
 本文将开始创建你的第一个 WebView2 应用，并了解 [WebView2 的主要功能][MicrosoftDeveloperMicrosoftEdgeWebview2]。  有关各个 API 的信息，请导航到 [API 参考][DotnetApiMicrosoftWebWebview2Wpf]。
 
+
+<!-- ====================================================================== -->
 ## <a name="prerequisites"></a>必备条件
 
 请确保先安装以下必备组件列表，然后再继续。
 
-*   [WebView2][Webview2Installer]运行时或任何[Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload]必须安装在当前受支持的操作系统 \ (Windows 10、Windows 8.1 和 Windows 7\) 上。
+*   [WebView2][Webview2Installer]运行时或任何 Microsoft Edge [Insider (preview) Channel][MicrosoftedgeinsiderDownload]必须安装在当前 (、Windows 10 Windows 8.1 和 Windows 7) 上。
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 或更高版本。
 
+
+<!-- ====================================================================== -->
 ## <a name="step-1---create-a-single-window-app"></a>步骤 1 - 创建单窗口应用
 
 从包含单个主窗口的基本桌面项目开始。
 
-1.  In Visual Studio， choose **WPF .NET Core App** \ (or **WPF .NET Framework App**\) > **Next**.
+1.  In Visual Studio， choose **WPF .NET Core App** (or **WPF .NET Framework App**) > **Next**.
 
     :::row:::
        :::column span="1":::
@@ -43,7 +47,7 @@ ms.locfileid: "12081901"
        :::column-end:::
     :::row-end:::
 
-1.  输入 name 和**location** Project**值**。  选择 **.NET Framework 4.6.2**或更高版本 \ (或 **.NET Core 3.0**或更高版本\) 。
+1.  输入 name 和**location** Project**的值**。  选择 **.NET Framework 4.6.2**或更高版本 (**.NET Core 3.0**或更高版本) 。
 
     :::row:::
        :::column span="1":::
@@ -58,11 +62,13 @@ ms.locfileid: "12081901"
 
 1.  若要创建项目，请选择"创建 **"。**
 
+
+<!-- ====================================================================== -->
 ## <a name="step-2---install-webview2-sdk"></a>步骤 2 - 安装 WebView2 SDK
 
 使用 NuGet 将 WebView2 SDK 添加到项目中。
 
-1.  将鼠标悬停在项目上，打开上下文菜单 \ (右键单击\) ，然后选择"管理NuGet**包..."。**
+1.  将鼠标悬停在项目上，打开上下文菜单 (右键单击") "，然后选择"管理NuGet**包..."。**
 
     :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="管理 NuGet 程序包" lightbox="./media/wpf-getting-started-mng-nuget.png":::
        管理 NuGet 程序包
@@ -80,6 +86,8 @@ ms.locfileid: "12081901"
        空应用
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="step-3---create-a-single-webview"></a>步骤 3 - 创建单个 WebView
 
 接下来，将 WebView 添加到你的应用。
@@ -127,6 +135,8 @@ ms.locfileid: "12081901"
        Microsoft.com
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="step-4---navigation"></a>步骤 4 - 导航
 
 添加允许用户通过向应用添加地址栏来更改 WebView2 控件显示的 URL 的能力。
@@ -158,7 +168,7 @@ ms.locfileid: "12081901"
     </DockPanel>
     ```
 
-1.  在Visual Studio中， `MainWindow.xaml.cs` 若要添加命名空间，请将 `CoreWebView2` 以下代码段插入顶部。
+1.  在Visual Studio中，若要 `MainWindow.xaml.cs` 添加命名空间，请将 `CoreWebView2` 以下代码段插入顶部。
 
     ```csharp
     using Microsoft.Web.WebView2.Core;
@@ -185,6 +195,8 @@ ms.locfileid: "12081901"
        bing.com
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="step-5---navigation-events"></a>步骤 5 - 导航事件
 
 在网页导航期间，WebView2 控件将引发事件。  承载 WebView2 控件的应用侦听以下事件。
@@ -235,6 +247,8 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 若要生成并运行项目，请选择 `F5` 。  确保导航到 HTTP 网站时，WebView 保持不变。  但是，WebView 导航到 HTTPS 网站。
 
+
+<!-- ====================================================================== -->
 ## <a name="step-6---scripting"></a>步骤 6 - 脚本
 
 你可以在运行时使用主机应用将 JavaScript 代码注入 WebView2 控件。  你可以任务 WebView 运行任意 JavaScript 或添加初始化脚本。  在删除 JavaScript 之前，注入的 JavaScript 适用于所有新的顶级文档和任何子框架。  注入的 JavaScript 以特定计时运行。
@@ -262,6 +276,8 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
    HTTPS
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="step-7---communication-between-host-and-web-content"></a>步骤 7 - 主机和 Web 内容之间的通信
 
 主机和 Web 内容可能通过以下方式使用 进行通信 `postMessage` 。

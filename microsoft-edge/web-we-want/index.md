@@ -7,12 +7,12 @@ ms.date: 03/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge， Web development， html， css， developer， web we want
-ms.openlocfilehash: c6f4541f5d9b85f6f9dc098a21192fbb9bdc3f2b
-ms.sourcegitcommit: 09975d536fb4673442f2ac6629e1787f14f110e1
+ms.openlocfilehash: 45cc75e09fb2d9c49a4abfa114e2777621a90135
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036781"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141129"
 ---
 # <a name="the-web-we-want-initiative"></a>我们需要的 Web 计划
 
@@ -30,7 +30,7 @@ ms.locfileid: "12036781"
 
 *   通过遵循 [Twitter][TwitterWebWeWant] 或 [LinkedIn][LinkedInWebWeWant] 上的计划保持联系，了解最新开发内容，或参与可帮助我们确定提交的需要优先级的调查。
 
-我们已成功地将一些"希望"提交到 Chromium DevTools 中，如源订单查看器 \ ([Want][WebWeWantWants64] [、Docs][DevtoolsExperimentalFeaturesIndexSourceOrderViewer]\) 和[3D 视图][Devtools3DViewIndex]，类似于 Firefox DevTools 中的情况。 此外，还有一些在标准组中具有之前建议的其他"希望"。 加入我们，通过我们想要的 Web 推动 Web 的未来！
+我们已成功地将一些"需要"交付到 Chromium DevTools 中，如源订单查看器 ([Want、Docs][DevtoolsExperimentalFeaturesIndexSourceOrderViewer]) 和[][WebWeWantWants64][3D 视图][Devtools3DViewIndex]，类似于 Firefox DevTools 中的情况。 此外，还有一些在标准组中具有之前建议的其他"希望"。 加入我们，通过我们想要的 Web 推动 Web 的未来！
 
 <!-- links -->
 

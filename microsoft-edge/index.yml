@@ -147,19 +147,19 @@ conceptualContent:
             - url: /microsoft-edge/progressive-web-apps-chromium/index
               itemType: overview
               text: 渐进式 Web 应用概述
-            - url: /microsoft-edge/progressive-web-apps-chromium/get-started
+            - url: /microsoft-edge/progressive-web-apps-chromium/how-to/index
               itemType: overview
               text: 渐进式 Web 应用入门
             - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
               itemType: overview
               text: 将 DevTools 与渐进式 Web 应用配合使用
-            - url: /microsoft-edge/progressive-web-apps-chromium/offline
+            - url: /microsoft-edge/progressive-web-apps-chromium/how-to/offline
               itemType: concept
               text: 脱机方案
-            - url: /microsoft-edge/progressive-web-apps-chromium/serviceworker
+            - url: /microsoft-edge/progressive-web-apps-chromium/how-to/service-workers
               itemType: concept
               text: 服务工作者
-            - url: /microsoft-edge/progressive-web-apps-chromium/webappmanifests
+            - url: /microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests
               itemType: concept
               text: Web 应用清单
         - title: WebView2

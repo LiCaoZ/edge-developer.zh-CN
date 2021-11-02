@@ -7,20 +7,22 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: b6c5213d512de471029024772260f9fa33878fba
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 23f5c60720f1360a9048ff4a4f08b130f8dd4619
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082972"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140303"
 ---
 # <a name="filter-console-messages"></a>筛选控制台消息
 
 当您浏览 Web 时，您可能会发现 **控制台** 中会大量显示各种信息。  通常信息与自己不相关。  例如有关另一个开发人员在调试时记录实时项目的信息。  或有关您无法更改的当前网站性能的违反和警告详细信息。  使用控制台的筛选器选项 **减少噪音是** 有意义的。
 
+
+<!-- ====================================================================== -->
 ## <a name="filter-by-log-level"></a>按记录级别筛选
 
-对象的每个 `console` 方法都有一个附加到它的严重级别。  严重性级别为 `Verbose` `Info` 、、 `Warning` 或 `Error` 。  显示 API 文档中的严重性 [级别][DevtoolsConsoleApi]。  例如， `console.log()` 是 `Info` -level 邮件，但 `console.error()` 是 `Error` -level 邮件。
+对象的每个 `console` 方法都有一个附加到它的严重级别。  严重性级别为 `Verbose` `Info` 、、 `Warning` 或 `Error` 。  显示 API 文档中的严重性 [级别](api.md)。  例如， `console.log()` 是 `Info` -level 邮件，但 `console.error()` 是 `Error` -level 邮件。
 
 若要在控制台中 **筛选消息**，请使用" **日志级别"** 下拉菜单。  你可以切换每个级别的状态。  若要关闭每个级别，请删除每个级别旁边的选中标记。
 
@@ -40,6 +42,8 @@ ms.locfileid: "12082972"
     在控制台中隐藏所有警告级别 **消息** 以筛选大部分噪音
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="filter-by-text"></a>按文本筛选
 
 如果要查看更多详细信息，若要使用文本筛选邮件，在"筛选器"文本框 **中** 键入字符串。  例如，在框中键入 以仅显示有关浏览器阻止 `block` 资源加载的消息。
@@ -48,14 +52,18 @@ ms.locfileid: "12082972"
     显示包含单词的消息 `block`
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="filter-by-regular-expression"></a>按正则表达式筛选
 
-[正则表达式是][MdnDocsWebJavascriptGuideRegularExpressions] 筛选邮件的一种强大方法。  例如，在 `/^Tracking/` **筛选器文本框中** 键入以仅显示以术语 开始的邮件 `Tracking` 。  如果你不熟悉正则表达式 [，RegExr][|::ref1::|Main] 是了解使用正则表达式的一个很好的资源。
+[正则表达式是](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions) 筛选邮件的一种强大方法。  例如，在 `/^Tracking/` **筛选器文本框中** 键入以仅显示以术语 开始的邮件 `Tracking` 。  如果你不熟悉正则表达式 [，RegExr](https://regexr.com) 是了解使用正则表达式的一个很好的资源。
 
 :::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="使用&quot;筛选器&quot;文本框中的正则表达式显示以单词筛选器开始的邮件" lightbox="../media/console-filter-regex.msft.png":::
     使用"筛选器"文本框 `filter` 中的正则表达式显示以 **单词开始** 的邮件
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="filter-by-message-source"></a>按邮件源筛选
 
 还可以定义要显示的消息类型以及每个消息的源位置（使用控制台的边**栏**）。 ****  为此，请选择"显示 **控制台边栏"** 按钮。
@@ -64,7 +72,7 @@ ms.locfileid: "12082972"
     若要打开 **边栏**，请选择" **显示控制台边栏"** 按钮
 :::image-end:::
 
-当 **边栏** 打开时，可以显示消息的个数以及每个消息的来源。  选项包括 `All messages` `User Messages` `Errors` 、、、、 `Warnings` 和 `Info` `Verbose` 。
+当 **边栏** 打开时，你可以显示消息的个数以及每个消息的来源。  选项包括 `All messages` `User Messages` `Errors` 、、、、 `Warnings` 和 `Info` `Verbose` 。
 
 :::image type="complex" source="../media/console-filter-sidebar-open.msft.png" alt-text="控制台边栏显示源自于的不同源消息" lightbox="../media/console-filter-sidebar-open.msft.png":::
     控制台 **边栏** 显示源自于的不同源消息
@@ -85,12 +93,3 @@ ms.locfileid: "12082972"
 :::image type="complex" source="../media/console-filter-user-message-by-source.msft.png" alt-text="选择任何使用类型和源进行筛选的新选项" lightbox="../media/console-filter-user-message-by-source.msft.png":::
     选择任何使用类型和源进行筛选的新选项
 :::image-end:::
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsConsoleApi]: ./api.md "控制台 API 参考 | Microsoft Docs"
-
-[MdnDocsWebJavascriptGuideRegularExpressions]: https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions "正则表达式 | MDN"
-
-[RegExrMain]: https://regexr.com "RegExr"

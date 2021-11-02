@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: c7c2627f8fe40c2baf630be8ef3061d552ac0d30
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: ec74f501633814211955565a526a762f5b0dad65
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108351"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141213"
 ---
 <!-- Copyright Kayce Basques
 
@@ -31,6 +31,8 @@ ms.locfileid: "12108351"
 
 本指南演示如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 查看和更改 [IndexedDB][MDNIndexedDBAPI] 数据。  本文假定你熟悉 DevTools。  本文还假定你熟悉 IndexedDB。  如果没有，导航到“[使用 IndexedDB][MDNUsingIndexedDB]”。
 
+
+<!-- ====================================================================== -->
 ## <a name="view-indexeddb-data"></a>查看 IndexedDB 数据
 
 1.  选择“**应用程序**”选项卡以打开**应用程序**工具。  “**清单**”窗格通常默认打开。
@@ -45,8 +47,8 @@ ms.locfileid: "12108351"
        “**IndexedDB**” 菜单
     :::image-end:::
 
-    *   \(![Database icon](../media/database-icon.msft.png)\) `notes - https://mdn.github.io` 表示一个数据库，其中`notes`是数据库的名称，`https://mdn.github.io`是访问数据库的来源。
-    *   \(![Object Store icon](../media/object-store-icon.msft.png)\) `notes` 是一个对象存储。
+    *    (数据库) 表示一个数据库，其中 是数据库的名称，也是 ![ ](../media/database-icon.msft.png) `notes - https://mdn.github.io` `notes` `https://mdn.github.io` 访问数据库的来源。
+    *    (![ 对象存储"图标 ](../media/object-store-icon.msft.png)) `notes` 是一个对象存储。
     *   **标题**和 **正文**是[索引][MDNUsingIndexedDBUsingIndex]。
 
     > [!NOTE]
@@ -82,14 +84,18 @@ ms.locfileid: "12108351"
        按索引对对象存储排序
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="refresh-indexeddb-data"></a>刷新 IndexedDB 数据
 
-**应用程序**工具中的 IndexedDB 值不会实时更新。  查看对象存储时，选择“**刷新**”\(“![刷新](../media/reload-icon.msft.png)”\)以刷新数据，或在查看数据库时，选择“**刷新数据库**”以刷新全部数据。
+**应用程序**工具中的 IndexedDB 值不会实时更新。  在**查看** (时选择"刷新") "刷新"以刷新数据，或选择"刷新数据库" ![ ](../media/reload-icon.msft.png) 以刷新所有数据****。
 
 :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="查看数据库" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
    查看数据库
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="edit-indexeddb-data"></a>编辑 IndexedDB 数据
 
 无法通过**应用程序**工具编辑 IndexedDB 键和值。  但是，由于 DevTools 可以访问页面上下文，因此你可以在 DevTools 中运行 JavaScript 代码来编辑 IndexedDB 数据。
@@ -102,6 +108,8 @@ ms.locfileid: "12108351"
    使用代码段与 IndexedDB 交互
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="delete-indexeddb-data"></a>删除 IndexedDB 数据
 
 ### <a name="delete-an-indexeddb-key-value-pair"></a>删除 IndexedDB 键值对
@@ -113,7 +121,7 @@ ms.locfileid: "12108351"
        选择键值对以将其删除
     :::image-end:::
 
-1.  选择`Delete`键或选择“**删除所选**”\(“![删除所选](../media/delete-icon.msft.png)”\)。
+1.  选择该 `Delete` 键或选择"删除 **所选** (![ 删除所选 ](../media/delete-icon.msft.png)) 。
 
     :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="删除键值对后对象存储的外观" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
        删除键值对后对象存储的外观
@@ -127,7 +135,7 @@ ms.locfileid: "12108351"
        查看对象存储
     :::image-end:::
 
-1.  选择“**清除对象存储**”\(“![清除对象存储](../media/clear-icon.msft.png)”\)。
+1.  选择 **"清除对象存储 (** ![ 清除对象存储 ](../media/clear-icon.msft.png)) 。
 
 ### <a name="delete-an-indexeddb-database"></a>删除 IndexedDB 数据库
 
@@ -166,7 +174,7 @@ ms.locfileid: "12108351"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/indexeddb)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/indexeddb)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

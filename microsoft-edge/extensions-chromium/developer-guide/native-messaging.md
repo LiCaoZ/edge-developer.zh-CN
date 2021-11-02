@@ -7,24 +7,26 @@ ms.date: 03/31/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 02ba2933f9fe40ba00ff7c88ed3664e2d0408f1e
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 8631184e32643446d3d1b1a8fcd60d9aeac9e15e
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108050"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141367"
 ---
 # <a name="native-messaging"></a>本机消息传递
 
-扩展使用消息传递 API 与安装在用户设备上本机 Win32 应用进行通信。  本机应用主机使用标准输入和标准输出发送和接收扩展名的邮件。  使用本机消息传递的扩展安装在Microsoft Edge与任何其他扩展类似。  但是，本机应用不是由用户安装或Microsoft Edge。
+扩展使用消息传递 API 与安装在用户设备上本机 Win32 应用进行通信。  本机应用主机使用标准输入和标准输出发送和接收扩展名的邮件。  使用本机消息传递的扩展安装在Microsoft Edge任何其他扩展类似。  但是，本机应用不是由用户安装或Microsoft Edge。
 
 若要获取扩展和本机应用主机，你有两个分发模型。
 
 *   将扩展和主机打包在一起。  当用户安装程序包时，将同时安装扩展和主机。
-*   使用加载项Microsoft Edge安装扩展[][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]，扩展会提示用户安装主机。
+*   使用加载项网站Microsoft Edge扩展[，][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]扩展会提示用户安装主机。
 
 若要创建扩展以通过本机应用主机发送和接收消息，请完成以下步骤。
 
+
+<!-- ====================================================================== -->
 ## <a name="step-1---add-permissions-to-the-extension-manifest"></a>步骤 1 - 向扩展清单添加权限
 
 将 `nativeMessaging` 权限添加到扩展的 **manifest.json** 文件。  以下代码段是 **manifest.json 的一个示例**。
@@ -47,6 +49,8 @@ ms.locfileid: "12108050"
 }
 ```
 
+
+<!-- ====================================================================== -->
 ## <a name="step-2---create-your-native-messaging-host-manifest-file"></a>步骤 2 - 创建本机消息传递主机清单文件
 
 本机应用必须提供本机消息传递主机清单文件。  清单文件包含以下信息。
@@ -77,6 +81,7 @@ ms.locfileid: "12108050"
    :::column-end:::
    :::column span="3":::
       **详细信息**
+   :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
@@ -119,7 +124,7 @@ ms.locfileid: "12108050"
       *   在Windows设备上，可以使用包含清单文件的目录的相对路径。
       *   在 macOS 和 Linux 上，路径必须为绝对路径。
 
-      主机进程从将当前目录设置为包含主机二进制文件的目录开始。  例如 \ (Windows\) ，如果参数设置为 ，则使用当前目录 `C:\App\nm_host.exe` \ (`C:\App\` \) 启动二进制文件。
+      主机进程从将当前目录设置为包含主机二进制文件的目录开始。  例如 (Windows) ，如果参数设置为 ，则使用当前目录启动二进制文件 `C:\App\nm_host.exe` `C:\App\` () 。
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -159,10 +164,12 @@ ms.locfileid: "12108050"
 1.  选择 **"加载解压缩**"，然后选择要旁加载的扩展包。
 1.  选择“确定”****。
 1.  导航到 `edge://extensions` 页面并验证扩展是否列出。
-1.  从页面上的扩展 `microsoft_catalog_extension_id` (\ (ID\) 复制密钥。
+1.  从页面上的扩展 `microsoft_catalog_extension_id` (从) ID 复制密钥。
 
-准备好将扩展分发给用户时，将扩展发布到Microsoft Edge加载项网站。  已发布扩展的扩展 ID 可能与旁加载扩展时所使用的 ID 不同。  如果 ID 发生更改，则使用已发布扩展的 `allowed_origins` ID 在主机清单文件中更新。
+准备好将扩展分发给用户时，将扩展发布到 Microsoft Edge 加载项网站。  已发布扩展的扩展 ID 可能与旁加载扩展时所使用的 ID 不同。  如果 ID 发生更改，则使用已发布扩展的 `allowed_origins` ID 在主机清单文件中更新。
 
+
+<!-- ====================================================================== -->
 ## <a name="step-3---copy-the-native-messaging-host-manifest-file-to-your-system"></a>步骤 3 - 将本机消息传递主机清单文件复制到系统中
 
 最后一步是将本机消息传递主机清单文件复制到计算机，并确保正确配置清单文件。  若要确保清单文件放置在预期位置，请完成以下操作。  位置因平台而异。
@@ -225,7 +232,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\
 ```
 
 > [!NOTE]
-> 如果您在 Microsoft Edge 加载项和 Chrome Webstore 上具有扩展，则必须添加与主机清单文件的 中的这两个存储对应的扩展名，因为只会读取与找到的第一个注册表位置对应的主机清单。 `allowed_origins`
+> 如果您在 Microsoft Edge 加载项和 Chrome Webstore 上具有扩展，则必须在主机清单文件的 中添加与这两个存储对应的扩展名，因为只会读取与找到的第一个注册表位置对应的主机清单。 `allowed_origins`
 
 ### [<a name="macos"></a>macOS](#tab/macos/)
 

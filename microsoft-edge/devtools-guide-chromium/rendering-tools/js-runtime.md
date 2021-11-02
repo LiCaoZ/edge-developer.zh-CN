@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 90090c0656ff8493b890abcbeaa4bc2bc2674135
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 8dd6f0c6ee45f376d6f13f7cd07b46bd66011c76
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083812"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141535"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -40,6 +40,8 @@ ms.locfileid: "12083812"
 *   使用**内存**工具中的分配采样准确记录调用了哪些函数以及每个函数所需的内存。
 *   将配置文件可视化为火焰图。
 
+
+<!-- ====================================================================== -->
 ## <a name="record-a-sampling-profile"></a>记录采样配置文件
 
 如果在 JavaScript 中发现垃圾，请收集采样配置文件。  采样配置文件会显示页面中函数花费的运行时间。
@@ -53,15 +55,17 @@ ms.locfileid: "12083812"
 > [!NOTE]
 > 还可以使用[控制台实用程序 API][DevtoolsConsoleUtilities] 记录和分组命令行的配置文件。
 
+
+<!-- ====================================================================== -->
 ## <a name="view-sampling-profile"></a>查看采样配置文件
 
 记录完成后，DevTools 会使用记录的数据自动填充**采样配置文件**下的**内存**面板。
 
-默认视图为**走势图\（自下而上\）**。  使用该视图允可以查看哪些函数对性能影响最大，并检查每个函数的请求路径。
+默认视图为"粗** (上) "。 **  使用该视图允可以查看哪些函数对性能影响最大，并检查每个函数的请求路径。
 
 ### <a name="change-sort-order"></a>更改排序顺序
 
-若要更改排序顺序，请选择“**聚焦定函数**”\（![聚焦选定函数](../media/focus-icon.msft.png)\）图标旁边的下拉菜单，然后从下列选项中选择一个。
+若要更改排序顺序，请选择焦点选定函数旁边的下拉菜单 (焦点选定) **** 图标，然后选择以下 ![ ](../media/focus-icon.msft.png) 选项之一。
 
 **图表**。  显示记录的时序图。
 
@@ -69,13 +73,13 @@ ms.locfileid: "12083812"
    火焰图
 :::image-end:::
 
-**走势图\（自下而上\）**。  根据对性能的影响列出函数，并使你能够检查函数的调用路径。  这是默认视图。
+**粗 (从下向上) **。  根据对性能的影响列出函数，并使你能够检查函数的调用路径。  这是默认视图。
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="走势图" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
    走势图
 :::image-end:::
 
-**树状视图\（自上而下\）**。  显示调用结构的整体图片，从调用堆栈的顶部开始。
+**树 (从上到下) 。 **  显示调用结构的整体图片，从调用堆栈的顶部开始。
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png" alt-text="树状图" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png":::
    树状图
@@ -83,10 +87,12 @@ ms.locfileid: "12083812"
 
 ### <a name="exclude-functions"></a>排除函数
 
-若要从采样配置文件中排除函数，请选择该函数，然后选择“**排除所选函数**”\（![排除所选函数](../media/exclude-icon.msft.png)\）按钮。  已排除函数\（子级\）的请求函数\（父级\）将占用分配给已排除函数\（子级\）的分配内存。
+若要从采样配置文件中排除函数，请选择该函数，然后选择排除所选**** 函数 (![ 排除所选) ](../media/exclude-icon.msft.png) 按钮。  请求函数 (子) 的 (父) 会向分配给已排除函数的子 (内存) 。
 
-选择“**还原全部函数**”\（还原全部函数![ ](../media/restore-icon.msft.png)\）按钮将所有已排除函数还原到记录中。
+Choose the **restore all functions (** restore all functions) button to restore all ![ ](../media/restore-icon.msft.png) excluded functions back into the recording.
 
+
+<!-- ====================================================================== -->
 ## <a name="view-sampling-profile-as-chart"></a>以图表模式查看采样配置文件
 
 图表视图能直观表示随时间变化的取样配置文件。
@@ -151,7 +157,7 @@ ms.locfileid: "12083812"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> [此处](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution)可以找到原始页面，由 [Kayce Basques][KayceBasques] \（技术写作人员，Chrome DevTools \& Lighthouse\）和 [Meggin Kearney][MegginKearney] \（技术写作人员\）编写。
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution)作者为[ (][KayceBasques] Technical Writer、Chrome DevTools \& Lighthouse) 和[Meggin Kearney][MegginKearney] (Technical Writer) 。
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

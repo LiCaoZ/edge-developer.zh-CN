@@ -7,12 +7,12 @@ ms.date: 06/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
-ms.openlocfilehash: 0c5da037fd552c743a990d553d39ef252931c595
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 243803cbb3818ea92625e67b39f792eafb10294c
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12107966"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141626"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,16 +29,20 @@ ms.locfileid: "12107966"
    limitations under the License.  -->
 # <a name="get-started-with-viewing-and-changing-the-dom"></a>查看和更改 DOM 入门
 
-完成这些交互式教程，了解使用 DevTools 查看和更改页面的文档对象模型[\ (](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) DOM\) 的基本Microsoft Edge。
+完成这些交互式教程，了解使用 DevTools 查看和[](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)更改页面 (DOM) 的Microsoft Edge基础知识。
 
 本教程假定你知道 DOM 和 HTML 之间的区别。 导航到“[附录：HTML 与 DOM](#appendix-html-versus-the-dom)”了解相关说明。
 
+
+<!-- ====================================================================== -->
 ## <a name="open-dom-examples"></a>打开 DOM 示例
 
-1.  按住 `Control`（Windows、Linux）或 `Command` (macOS)，然后选择“**DOM 示例**”以在新选项卡中打开。
+1.  保留 `Control` (Windows、Linux) 或 `Command` (macOS) 并选择 **"DOM 示例**"以在新选项卡中打开。
 
     [DOM 示例][GlitchDomExamples]
 
+
+<!-- ====================================================================== -->
 ## <a name="view-dom-nodes"></a>查看 DOM 节点
 
 在“元素”面板的 DOM 树中，你可以在开发人员工具中执行所有 DOM 相关活动。
@@ -60,7 +64,7 @@ ms.locfileid: "12107966"
            突出显示 `Michelangelo` 节点
         :::image-end:::
 
-        1.  选择开发人员工具左上角的“**检查**”（“![检查](../media/inspect-icon.msft.png)”）图标。
+        1.  Choose the **Inspect** (![ Inspect ](../media/inspect-icon.msft.png)) icon in the top-left corner of DevTools.
 
             :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="“检查”图标" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
                “**检查**”图标
@@ -100,7 +104,7 @@ ms.locfileid: "12107966"
 1.  在“**滚动到视图**”下，右键选择“**Magritte**”，然后选择“**检查**”。
 1.  滚动到“DOM 示例”页面的底部。
 1.  仍应在 DOM 树中选择 `<li>Magritte</li>` 节点。  如果没有，请返回到“[滚动到视图](#scroll-into-view)”，然后重新开始。
-1.  将鼠标悬停在 `<li>Magritte</li>` 节点上，打开上下文菜单（右键单击），然后选择“**滚动到视图**”。  视区将向上滚动，以便你可以查看 **Magritte** 节点。  如果无法查看“**滚动到视图**”选项，请导航至“[附录：缺少选项](#appendix-missing-options)”。
+1.  将鼠标悬停在节点上，打开上下文 `<li>Magritte</li>` 菜单 (右键单击") "，然后选择"**滚动到视图"。**  视区将向上滚动，以便你可以查看 **Magritte** 节点。  如果无法查看“**滚动到视图**”选项，请导航至“[附录：缺少选项](#appendix-missing-options)”。
 
     :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="滚动到视图" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
        **滚动到视图**
@@ -111,7 +115,7 @@ ms.locfileid: "12107966"
 可以按字符串、CSS 选择器或 XPath 选择器搜索 DOM 树。
 
 1.  将光标焦点放在“**元素**”工具上。
-1.  选择 `Control`+`F`（Windows、Linux）或 `Command`+`F` (macOS)。  搜索栏在 DOM 树的底部打开。
+1.  选择 `Control` + `F` (Windows、Linux) 或 `Command` + `F` (macOS) 。  搜索栏在 DOM 树的底部打开。
 1.  键入 `The Moon is a Harsh Mistress`。  最后一句在 DOM 树中突出显示。
 
     :::image type="complex" source="../media/dom-elements-highlighted-search-nodes-highlight.msft.png" alt-text="在搜索栏中突出显示查询" lightbox="../media/dom-elements-highlighted-search-nodes-highlight.msft.png":::
@@ -120,6 +124,8 @@ ms.locfileid: "12107966"
 
 如上所述，搜索栏还支持 CSS 和 XPath 选择器。
 
+
+<!-- ====================================================================== -->
 ## <a name="edit-the-dom"></a>编辑 DOM
 
 你可以快速编辑 DOM 并查看更改对页面有何影响。
@@ -191,8 +197,8 @@ ms.locfileid: "12107966"
 
 1.  [打开 DOM 示例](#open-dom-examples)。
 1.  在“**强制状态**”下，将鼠标悬停在“**The Lord of the Flies**”上。  背景色变为橙色。
-    1.  将鼠标悬停在“**The Lord of the Flies**”上，打开上下文菜单（右键单击），然后选择“**检查**”。
-    1.  将鼠标悬停在 `<li class="demo--hover">The Lord of the Flies</li>` 上，打开上下文菜单（右键单击），然后选择“**强制状态** > **：hover**”。  如果未显示选项，请导航至“[附录：缺少选项](#appendix-missing-options)”。  即使你实际上没有将鼠标悬停在节点上，背景色仍保持橙色。
+    1.  将鼠标悬**停在"百分之百"** 上，打开上下文菜单 (右键单击") "检查 **"。**
+    1.  悬停在 `<li class="demo--hover">The Lord of the Flies</li>` 上，打开上下文菜单 (右键单击") "，然后选择"**强制状态**  >  **：hover"。**  如果未显示选项，请导航至“[附录：缺少选项](#appendix-missing-options)”。  即使你实际上没有将鼠标悬停在节点上，背景色仍保持橙色。
 
 ### <a name="hide-a-node"></a>隐藏节点
 
@@ -215,8 +221,10 @@ ms.locfileid: "12107966"
 1.  [打开 DOM 示例](#open-dom-examples)。
 1.  在“**删除节点**”下，右键选择“**Foundation**”，然后选择“**检查**”。
     1.  选择 `Delete` 键。  节点将被删除。
-    1.  选择 `Control`+`Z`（Windows、Linux）或 `Command`+`Z` (macOS)。  最后一个操作将被撤消，节点将重新出现。
+    1.  选择 `Control` + `Z` (Windows、Linux) 或 `Command` + `Z` (macOS) 。  最后一个操作将被撤消，节点将重新出现。
 
+
+<!-- ====================================================================== -->
 ## <a name="access-nodes-in-the-console"></a>访问控制台中的节点
 
 开发人员工具提供了从控制台访问 DOM 节点或获取每个节点的 JavaScript 引用的一些快捷方式。
@@ -246,8 +254,8 @@ ms.locfileid: "12107966"
 如果需要多次引用某节点，请将其存储为全局变量。
 
 1.  [打开 DOM 示例](#open-dom-examples)。
-1.  在“**存储为全局变量**”下，将鼠标悬停在“**The Big Sleep**”上，打开上下文菜单（右键单击），然后选择“**检查**”。
-    1.  将鼠标悬停在 DOM 树中的 `<li>The Big Sleep</li>` 上，打开上下文菜单（右键单击），然后选择“**存储为全局变量**”。  如果未显示选项，请导航至“[附录：缺少选项](#appendix-missing-options)”。
+1.  在 **"存储为全局变量"下**，将鼠标**悬停在"** 大睡眠"上，打开上下文菜单 (右键单击") "检查 **"。**
+    1.  将鼠标悬停在 DOM 树中，打开上下文菜单 (`<li>The Big Sleep</li>` 右键单击") "，然后选择"存储 **"作为全局变量**。  如果未显示选项，请导航至“[附录：缺少选项](#appendix-missing-options)”。
     1.  在控制台中键入 `temp1`，然后选择 `Enter`。  表达式的结果显示变量的计算结果为节点。
 
         :::image type="complex" source="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png" alt-text="temp1 表达式的结果" lightbox="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png":::
@@ -259,15 +267,17 @@ ms.locfileid: "12107966"
 当你需要在自动测试中引用 JavaScript 路径时，请将其复制到节点。
 
 1.  [打开 DOM 示例](#open-dom-examples)。
-1.  在“**复制 JS 路径**”下，将鼠标悬停在“**The Brothers Karamazov**”上，打开上下文菜单（右键单击），然后选择“**检查**”。
-    1.  将鼠标悬停在 DOM 树中的 `<li>The Brothers Karamazov</li>` 上，打开上下文菜单（右键单击），然后选择“**复制”** > “**复制 JS 路径**”。  解析为节点的 `document.querySelector()` 表达式已复制到剪贴板。
-    1.  选择 `Control`+`V`（Windows、Linux）或 `Command`+`V` (macOS) 以将表达式粘贴到控制台中。
+1.  在 **"复制 JS 路径"下**，将鼠标悬停在 **"完成""管理**"菜单上，打开上下文菜单 (右键单击") "检查 **"。**
+    1.  将鼠标悬停在 DOM 树中，打开上下文菜单 (右键单击") "，然后选择"复制 JS 路径 `<li>The Brothers Karamazov</li>` ****  >  **"。**  解析为节点的 `document.querySelector()` 表达式已复制到剪贴板。
+    1.  选择 `Control` + `V` (Windows、Linux) 或 (`Command` + `V` macOS) 将表达式粘贴到控制台中。
     1.  选择 `Enter` 以计算表达式。
 
         :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="“复制 JS 路径”表达式的结果" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
            “**复制 JS 路径**”表达式的结果
         :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="break-on-dom-changes"></a>中断 DOM 更改
 
 开发人员工具使你可以在 JavaScript 修改 DOM 时暂停页面的 JavaScript。
@@ -278,20 +288,20 @@ ms.locfileid: "12107966"
 
 1.  [打开 DOM 示例](#open-dom-examples)。
 1.  在“**中断属性修改**”下，右键选择“**Sauerkraut**”，然后选择“**检查**”。
-    1.  在 DOM 树中，将鼠标悬停在 `<li id="target">Sauerkraut</li>` 上，打开上下文菜单（右键单击），然后选择“**中断** > **属性修改**”。  如果未显示选项，请导航至“[附录：缺少选项](#appendix-missing-options)”。
+    1.  在 DOM 树中，将鼠标悬停在 上，打开上下文菜单 (右键单击") "，然后选择"在属性修改时 `<li id="target">Sauerkraut</li>` ****  >  **中断"。**  如果未显示选项，请导航至“[附录：缺少选项](#appendix-missing-options)”。
 
         :::image type="complex" source="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png" alt-text="中断属性修改" lightbox="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png":::
            **中断属性修改**
         :::image-end:::
 
-    1.  在下一步骤中，系统将指示你选择用于暂停页面代码的按钮。  页面暂停后，你将无法再滚动页面。  必须选择“**恢复脚本**”（“![恢复脚本](../media/resume-script-icon.msft.png)”），才能使页面再次滚动。
+    1.  在下一步骤中，系统将指示你选择用于暂停页面代码的按钮。  页面暂停后，你将无法再滚动页面。  必须选择"Resume **Script (** ![ Resume Script ](../media/resume-script-icon.msft.png)) "，以便再次使页面可滚动。
 
         :::image type="complex" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="在何处继续运行脚本" lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
            在何处继续运行脚本
         :::image-end:::
 
     1.  选择上面的“**设置背景**”按钮。  这会将节点的 `style` 属性设置为 `background-color:thistle`。  开发人员工具将暂停页面并突出显示导致属性发生更改的代码。
-    1.  如上所述，选择“**恢复脚本**”（“![恢复脚本](../media/resume-script-icon.msft.png)”）。
+    1.  选择 **"恢复 (** ![ 脚本 ](../media/resume-script-icon.msft.png)) ，如前面所述。
 
 ### <a name="break-on-node-removal"></a>中断节点删除
 
@@ -299,9 +309,9 @@ ms.locfileid: "12107966"
 
 1.  [打开 DOM 示例](#open-dom-examples)。
 1.  在“**中断节点删除**”下，右键选择“**Neuromancer**”，然后选择“**检查**”。
-    1.  在 DOM 树中，将鼠标悬停在 `<li id="target">Neuromancer</li>` 上，打开上下文菜单（右键单击），然后选择“**中断** > **节点删除**”。  如果未显示选项，请导航至“[附录：缺少选项](#appendix-missing-options)”。
+    1.  在 DOM 树中，将鼠标悬停在 上，打开上下文菜单 (右键单击") "，然后选择"删除 `<li id="target">Neuromancer</li>` **节点时**中断  >  **"。**  如果未显示选项，请导航至“[附录：缺少选项](#appendix-missing-options)”。
     1.  选择上面的“**删除**”按钮。  开发人员工具将暂停页面并突出显示导致节点被删除的代码。
-    1.  选择“**恢复脚本**”（“![恢复脚本](../media/resume-script-icon.msft.png)”）。
+    1.  Choose **Resume Script (** Resume Script ![ ](../media/resume-script-icon.msft.png)) .
 
 ### <a name="break-on-subtree-modifications"></a>中断子树修改
 
@@ -309,18 +319,22 @@ ms.locfileid: "12107966"
 
 1.  [打开 DOM 示例](#open-dom-examples)。
 1.  在“**中断子树修改**”下，右键选择“**A Fire Upon The Deep**”，然后选择“**检查**”。
-    1.  在 DOM 树中，将鼠标悬停在 `<ul id="target">` 上（该节点位于 `<li>A Fire Upon the Deep</li>` 上方），打开上下文菜单（右键单击），然后选择“**中断** > **子树修改**”。  如果未显示该选项，请导航至“[附录：缺少选项](#appendix-missing-options)”。
+    1.  在 DOM 树中，将鼠标悬停在 上（即上面的节点）上，打开上下文菜单 (右键单击") "，然后选择"在子树上中断修改 `<ul id="target">` `<li>A Fire Upon the Deep</li>` ****  >  **"。**  如果未显示该选项，请导航至“[附录：缺少选项](#appendix-missing-options)”。
     1.  选择“**添加子级**。  由于向列表中添加了 `<li>` 节点，因此代码将暂停。
-    1.  选择“**恢复脚本**”（“![恢复脚本](../media/resume-script-icon.msft.png)”）。
+    1.  Choose **Resume Script (** Resume Script ![ ](../media/resume-script-icon.msft.png)) .
 
+
+<!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 
-它涵盖了开发人员工具中与 DOM 相关的大部分功能。  通过将鼠标悬停在 DOM 树中的节点上，打开上下文菜单（右键单击）并尝试本教程中未涵盖的其他选项，你能够发现其余功能。  导航至“[‘元素’面板键盘快捷方式][DevToolsShortcutsElements]”。
+它涵盖了开发人员工具中与 DOM 相关的大部分功能。  通过将鼠标悬停在 DOM 树中的节点上，打开上下文菜单 (右键单击) ，并尝试本教程未涵盖的其他选项，你可以发现其余功能。  导航至“[‘元素’面板键盘快捷方式][DevToolsShortcutsElements]”。
 
 查看 [Microsoft Edge 开发人员工具主页][MicrosoftEdgeDevTools]，了解可使用开发人员工具执行的所有其他内容。
 
 <!--Navigate to [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->
 
+
+<!-- ====================================================================== -->
 ## <a name="appendix-html-versus-the-dom"></a>附录：HTML 与 DOM
 
 以下部分快速介绍了 HTML 和 DOM 之间的区别。
@@ -392,21 +406,25 @@ ms.locfileid: "12107966"
 导航到“[DOM 简介][MDNIntroductionToDOM]”以了解更多信息。
 
 <!--
-## Appendix: Scroll into view
 
-This is a continuation of the [Scroll into view](#scroll-into-view) section.  Follow the instructions below to complete the section.
+<!-- ====================================================================== -->
+## <a name="appendix-scroll-into-view"></a>附录：滚动到视图
 
-1.  The `<li>Magritte</li>` node should still be selected in your DOM Tree.  If not, go back to [Scroll into view](#scroll-into-view) and start over.
-1.  Hover on the `<li>Magritte</li>` node, open the contextual menu \(right-click\), and choose **Scroll into view**.  Your viewport scrolls back up so that the **Magritte** node is displayed.  If you the **Scroll into view** option is not displayed, navigate to [Appendix: Missing options](#appendix-missing-options).
+这是"滚动到视图 ["部分延续](#scroll-into-view) 。  按照下面的说明完成部分。
 
-    :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="Scroll into view" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
-       Scroll into view
+1.  仍应在 DOM 树中选择 `<li>Magritte</li>` 节点。  如果没有，请返回到“[滚动到视图](#scroll-into-view)”，然后重新开始。
+1.  将鼠标悬停在节点上，打开上下文 `<li>Magritte</li>` 菜单 (右键单击") "，然后选择"**滚动到视图"。**  视区将向上滚动，以便 **显示 Magritte** 节点。  如果未显示 **"滚动到**视图"选项，请导航到"[附录：缺少选项"。](#appendix-missing-options)
+
+    :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="滚动到视图" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
+       滚动到视图
     :::image-end:::
     -->
 
+
+<!-- ====================================================================== -->
 ## <a name="appendix-missing-options"></a>附录：缺少选项
 
-本教程中的许多说明指示你将鼠标悬停在 DOM 树中的某个节点上，打开上下文菜单（右键单击），然后从弹出的上下文菜单中选择一个选项。  如果未显示上下文菜单中的指定选项，请尝试将鼠标悬停在节点文本之外并打开上下文菜单（右键单击）。
+本教程中的许多说明都指示你将鼠标悬停在 DOM 树中的节点上，打开上下文菜单 (右键单击) ，然后从弹出的上下文菜单中选择一个选项。  如果未显示上下文菜单中的指定选项，请尝试将鼠标悬停在节点文本之外并打开上下文菜单 (右键单击") "。
 
 :::image type="complex" source="../media/dom-elements-highlighted-right-click-right-side.msft.png" alt-text="未显示所有选项时在何处选择" lightbox="../media/dom-elements-highlighted-right-click-right-side.msft.png":::
    未显示所有选项时在何处选择
@@ -425,7 +443,7 @@ This is a continuation of the [Scroll into view](#scroll-into-view) section.  Fo
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/dom/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/dom/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 
