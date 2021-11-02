@@ -75,7 +75,7 @@
                   href: devtools-guide-chromium/remote-debugging/windows.md
                 - name: Android WebViews 远程调试入门
                   href: devtools-guide-chromium/remote-debugging/webviews.md
-        - name: 功能
+        - name: 操作步骤
           items:
             - name: 辅助功能
               items:
@@ -209,6 +209,8 @@
                   href: devtools-guide-chromium/storage/sessionstorage.md
                 - name: WebSQL
                   href: devtools-guide-chromium/storage/websql.md
+            - name: 更改
+              href: devtools-guide-chromium/changes/changes-tool.md
             - name: 控制台
               items:
                 - name: 控制台概述
@@ -271,6 +273,8 @@
                   href: devtools-guide-chromium/rendering-tools/index.md
                 - name: 日程表事件模式
                   href: devtools-guide-chromium/evaluate-performance/performance-reference.md
+            - name: 性能监视器
+              href: devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
             - name: 远程设备
               href: devtools-guide-chromium/remote-debugging/local-server.md
             - name: 渲染
@@ -281,7 +285,9 @@
                   href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
                 - name: 模拟运动减少
                   href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
-            - name: 安全性
+            - name: 搜索
+              href: devtools-guide-chromium/search/search-tool.md
+            - name: 安全
               href: devtools-guide-chromium/security/index.md
             - name: 源
               items:

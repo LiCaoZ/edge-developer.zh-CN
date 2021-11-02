@@ -8,119 +8,139 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge， Web 开发， 开发人员， 工具， 自动化， 测试， playwright， 节点， javascript， npm
-ms.openlocfilehash: 488d4dcef2d319f98fb4305bfcc7a18a1235312a
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 87a8c61d1fc285adc1d759bbfedd5320b03c18d1
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108141"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141809"
 ---
 # <a name="use-playwright-to-automate-and-test-in-microsoft-edge"></a>使用 Playwright 自动执行和测试Microsoft Edge
 
-[Playwright][|::ref1::|Main]是[一Node.js][NodejsMain]一个 API[][ChromiumHome]自动[Chromium、Firefox][FirefoxMain]和[WebKit][|::ref2::|Main]的功能库。  Playwright 是专为启用跨浏览器 Web 自动化而构建的，该自动化功能非常绿色、功能可靠且快速。  由于[Microsoft Edge构建于开放源代码Chromium，][MicrosoftBlogsWindowsExperience20181206]因此 Playwright 还能够自动Microsoft Edge。
+[Playwright](https://playwright.dev/docs/intro)是[一Node.js](https://nodejs.org) API 自动[Chromium、Firefox](https://www.mozilla.org/firefox)和[WebKit](https://webkit.org)的一个库。 [](https://www.chromium.org/Home)  Playwright 构建为启用常青、功能可靠且快速的跨浏览器 Web 自动化。  由于[Microsoft Edge构建于开放源代码Chromium，](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration)因此 Playwright 还能够自动Microsoft Edge。
 
-默认情况下，Playwright [启动无][WikiHeadlessBrowser] 头浏览器。  无头浏览器不显示 UI，因此您必须使用命令行。  还可以将 Playwright 配置为运行完整 \ (无头\) Microsoft Edge运行。
+默认情况下，Playwright [启动无](https://en.wikipedia.org/wiki/Headless_browser) 头浏览器。  无头浏览器不显示 UI，因此你必须使用命令行。  还可以将 Playwright 配置为 (无头) Microsoft Edge运行。
 
-默认情况下，安装 Playwright 时，安装程序会[Chromium、Firefox][FirefoxMain]和[WebKit。][|::ref3::|Main] [][ChromiumHome]  如果已安装Microsoft Edge，Playwright 只需更改一行代码，以在 Microsoft Edge 中测试您的网站或Microsoft Edge。  若要下载Microsoft Edge，请导航到"[下载Microsoft Edge"。][MicrosoftEdgeDownload]
 
-## <a name="installing-playwright"></a>安装 Playwright
-
-安装 [Playwright][|::ref4::|Main] 以通过以下命令测试网站或应用。
-
-```shell
-npm i playwright
-```
-
-## <a name="launch-microsoft-edge-with-playwright"></a>启动Microsoft Edge Playwright
+<!-- ====================================================================== -->
+## <a name="install-playwright-and-browsers"></a>安装 Playwright 和浏览器
 
 > [!NOTE]
-> [Playwright][|::ref5::|Main] Node.js版本 10.17 或以上版本。 从 `node -v` 命令行运行，以确保具有兼容的 Node.js。  适用于 Chromium、Firefox 和 WebKit 的浏览器二进制文件跨 Windows、macOS 和 Linux 工作。 有关详细信息，请导航到["Playwright 系统要求"。][PlaywrightSystemRequirements]
+> [Playwright](https://playwright.dev/docs/intro) 需要Node.js版本 12 或以上版本。 从 `node -v` 命令行运行，以确保具有兼容的 Node.js。  适用于 Chromium、Firefox 和 WebKit 的浏览器二进制文件跨 Windows、macOS 和 Linux 工作。 有关详细信息，请参阅 [Playwright 系统要求](https://playwright.dev/docs/library#system-requirements)。
 
-Playwright 应该为其他浏览器测试框架（如 [WebDriver][WebDriverChromiumMain] 或一台 [）的用户所熟悉][PuppeteerMain]。  创建浏览器实例，打开页面，然后使用 [Playwright API 对其进行操作][PlaywrightAPIReference]。  在下面的代码段中，Playwright 启动 Microsoft Edge，导航到 `https://www.microsoft.com/edge` ，将屏幕截图保存为 `example.png` 。
+首先，安装 [Playwright 测试](https://playwright.dev/docs/intro) 以测试网站或应用：
 
-复制以下代码段并将其另存为 `example.js` 。
+```console
+npm i -D @playwright/test
+```
+
+若要安装浏览器，请运行以下命令，该命令[Chromium、Firefox](https://www.mozilla.org/firefox)[和](https://www.chromium.org/Home) [WebKit：](https://webkit.org)
+
+```console
+npx playwright install 
+```
+
+
+<!-- ====================================================================== -->
+## <a name="run-a-basic-test"></a>运行基本测试
+
+其他浏览器测试框架（如 [WebDriver](../webdriver-chromium/index.md) 或一台）的用户将熟悉 [Playwright 使用的方法](../puppeteer/index.md)。  可以创建浏览器实例，在浏览器中打开页面，然后使用 [Playwright API](https://playwright.dev/docs/api/class-playwright)操作页面。
+
+[Playwright Test](https://playwright.dev/docs/intro)是 Playwright 的测试运行程序，可启动浏览器和上下文。 然后，将隔离页面传递到每个测试，如以下基本测试所示：
+
+```typescript
+// tests/foo.spec.ts
+import { test, expect } from '@playwright/test';
+
+test('basic test', async ({ page }) => {
+  await page.goto('https://playwright.dev/');
+  const title = page.locator('.navbar__inner .navbar__title');
+  await expect(title).toHaveText('Playwright');
+});
+```
+
+现在运行测试，如下所示：
+
+```console
+npx playwright test
+```
+
+有关运行测试的信息，请参阅 [Playwright >入门](https://playwright.dev/docs/intro)。
+
+
+<!-- ====================================================================== -->
+## <a name="run-tests-in-microsoft-edge"></a>在 Microsoft Edge
+
+若要在 Microsoft Edge 中运行测试，你需要为 Playwright 配置文件创建一个测试，例如 `playwright.config.ts` 。  在配置文件内，使用 Microsoft Edge Beta 渠道创建一个项目。  (目前，没有适用于 Linux.Microsoft Edge Stable 渠道) 
+
+```typescript
+// playwright.config.ts
+import { PlaywrightTestConfig } from '@playwright/test';
+
+const config: PlaywrightTestConfig = {
+  projects: [
+    {
+      name: 'Microsoft Edge',
+      use: {
+        // Supported Microsoft Edge channels are: msedge, msedge-beta, msedge-dev, msedge-canary
+        channel: 'msedge-beta',
+      },
+    },
+  ],
+};
+
+export default config
+```
+
+如果Microsoft Edge Beta尚未在系统中安装，请通过 Playwright 进行安装，如下所示：
+
+```console
+npx playwright install msedge-beta
+```
+
+使用上述文件时 `playwright.config.ts` ，Playwright Test Microsoft Edge运行测试，如下所示：
+
+```console
+npx playwright test --headed
+```
+
+
+<!-- ====================================================================== -->
+## <a name="use-playwright-as-a-library"></a>将 Playwright 用作库
+
+还可以将 Playwright 用作库，如以下代码所示。  此方法允许您使用不同的测试运行程序。
 
 ```javascript
-const { chromium } = require('playwright');
+// example.js
+const playwright = require('playwright');
 
 (async () => {
-  const browser = await chromium.launch({
-    executablePath: 'C:\\Program Files (x86)\\Microsoft\\Edge Dev\\Application\\msedge.exe'
+  const browser = await playwright.chromium.launch({
+    channel: 'msedge-beta',
   });
-  const page = await browser.newPage();
+  const context = await browser.newContext();
+  const page = await context.newPage();
   await page.goto('https://www.microsoft.com/edge');
-  await page.screenshot({path: 'example.png'});
+  await page.screenshot({ path: 'example.png' });
 
   await browser.close();
 })();
 ```
 
-更改为 `executablePath` 指向安装的 Microsoft Edge。  例如，在 macOS 上 `executablePath` ，Microsoft Edge Canary 应设置为 `/Applications/Microsoft\ Edge\ Canary.app/` 。  若要查找 ，请导航到 并复制该页面上的可执行路径，或者使用以下命令安装边缘 `executablePath` `edge://version` 路径包。 **** [][npmEdgePaths]
+:::image type="content" source="../media/playwright-example.png" alt-text="由example.png生成的文件example.js。" lightbox="../media/playwright-example.png":::
 
-```shell
-npm i edge-paths
-```
+`example.js` 是 Playwright 启用的自动化和测试方案的简单演示。  若要在其他 Web 浏览器中拍摄屏幕截图，将上述代码从 `await playwright.chromium.launch` 更改为以下代码：
 
-以下代码段使用[边缘路径][npmEdgePaths]包以编程方式查找在操作系统上安装Microsoft Edge路径。
+Firefox： 
 
 ```javascript
-const edgePaths = require("edge-paths");
-
-const EDGE_PATH = edgePaths.getEdgePath();
+  const browser = await playwright.firefox.launch({
 ```
 
-最后，在 `executablePath: EDGE_PATH` 中设置 `example.js` 。  保存更改。
+WebKit： 
 
-> [!NOTE]
-> Microsoft Edge \ (EdgeHTML\) 不能与 Playwright 一起工作。  必须安装[Microsoft Edge \ (Chromium\) ，][MicrosoftEdgeDownload]以继续按照此示例操作。
-
-现在 `example.js` 从命令行运行。
-
-```shell
-node example.js
+```javascript
+  const browser = await playwright.webkit.launch({
 ```
 
-Playwright 启动Microsoft Edge，导航到 `https://www.microsoft.com/edge` ，并保存页面的屏幕截图。  可以使用 [page.setViewportSize () 自定义页面大小 ][PlaywrightAPIPageSetViewport]。
-
-:::image type="complex" source="../media/playwright-example.png" alt-text="由example.png生成的example.js" lightbox="../media/playwright-example.png":::
-    `example.png`生成的文件 `example.js`
-:::image-end:::
-
-`example.js` 只是一个简单的演示，演示了 Playwright 启用的自动化和测试方案。  若要在多个 Web 浏览器中拍摄屏幕截图，请更改以下代码。
-
-*   Chromium  `await chromium.launch()`
-*   Firefox  `await firefox.launch()`
-*   WebKit  `await webkit.launch()`
-
-有关 Playwright 的信息，请导航到 [Playwright 网站][|::ref6::|Main]。  请查看 GitHub 上的[Playwright][PlaywrightRepo]存储库。  若要通过 Playwright 共享有关自动执行和测试网站或应用的反馈， [请提交问题][PlaywrightRepoNewIssue]。
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-[WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver |Microsoft Docs"
-[PuppeteerMain]: ../puppeteer/index.md "百年|Microsoft Docs"
-
-[MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge：通过更多开放源代码协作网站改善|Microsoft 体验博客"
-
-[MicrosoftEdgeDownload]: https://microsoft.com/edge "下载Microsoft Edge"
-
-[ChromiumHome]: https://www.chromium.org/Home "Chromium |项目Chromium"
-
-[FirefoxMain]: https://www.mozilla.org/firefox "Mozilla Firefox"
-
-[NodejsMain]: https://nodejs.org "Node.js"
-
-[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "边缘路径|npm"
-
-[PlaywrightMain]: https://playwright.dev "Playwright"
-[PlaywrightAPIReference]: https://playwright.dev#?path=docs/api.md "Playwright API 参考"
-[PlaywrightAPIPageSetViewport]: https://playwright.dev#?path=docs%2Fapi.md&q=pagesetviewportsizeviewportsize "page.setViewportSize (viewportSize) |Playwright API 参考"
-[PlaywrightSystemRequirements]: https://playwright.dev#?path=docs/intro.md&q=system-requirements "Playwright 系统要求"
-
-[PlaywrightRepo]: https://github.com/microsoft/playwright "Playwright |GitHub"
-[PlaywrightRepoNewIssue]: https://github.com/microsoft/playwright/issues/new/choose "Playwright 存储库管理中的|GitHub"
-
-[WebKitMain]: https://webkit.org "WebKit"
-
-[WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "无头浏览器|Wikipedia"
+有关 Playwright 和 Playwright 测试的信息，请转到 [Playwright 网站](https://playwright.dev/docs/intro)。  请查看上[一个 Playwright](https://github.com/microsoft/playwright) GitHub。  若要通过 Playwright 共享有关自动执行和测试网站或应用的反馈， [请提交问题](https://github.com/microsoft/playwright/issues/new/choose)。

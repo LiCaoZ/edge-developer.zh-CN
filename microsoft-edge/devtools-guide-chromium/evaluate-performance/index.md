@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 1fb4eb1b7a75f9cab09044c9ec54ed216ff83ea6
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 919eb8080d1116ecbe186f9fc9786e51dcae5edb
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083833"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141605"
 ---
 <!-- Copyright Kayce Basques
 
@@ -36,6 +36,8 @@ ms.locfileid: "12083833"
 
 <!--todo: add rail link when section is ready -->
 
+
+<!-- ====================================================================== -->
 ## <a name="get-started"></a>入门
 
 在下面的教程中，在一个实时页面上打开DevTools，并使用**性能**面板来查找页面上的性能瓶颈。
@@ -50,7 +52,7 @@ ms.locfileid: "12083833"
     https://microsoft-edge-chromium-devtools.glitch.me/sluggish/
     ```
 
-1.  选择`Control`+`Shift`+`I` \（Windows，Linux\）或`Command`+`Option`+`I` \（macOS\）以打开 DevTools。
+1.  选择 `Control` + `Shift` + `I` (Windows、Linux) 或 `Command` + `Option` + `I` (macOS) 打开 DevTools。
 
     :::image type="complex" source="../media/evaluate-performance-get-started-side-by-side.msft.png" alt-text="左侧为演示，右侧为 DevTools" lightbox="../media/evaluate-performance-get-started-side-by-side.msft.png":::
        左侧为演示，右侧为 DevTools
@@ -65,7 +67,7 @@ ms.locfileid: "12083833"
 
 1.  在 DevTools 中，选择“**性能**”工具。
 1.  确保你选择“**屏幕截图**”旁边的复选框。
-1.  选择**捕获设置** \(![捕获设置](../media/capture-settings-icon.msft.png)\)。  DevTools 显示了与捕获效果指标有关的设置。
+1.  选择 **"捕获设置 (** ![ 捕获 ](../media/capture-settings-icon.msft.png) 设置) 。  DevTools 显示了与捕获效果指标有关的设置。
 1.  对于**CPU**，请选择**4倍减速**。  DevTools 将 CPU 限制为比平时慢 4 倍。
 
     :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="CPU 限制" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
@@ -92,7 +94,7 @@ ms.locfileid: "12083833"
 
 运行优化版本的页面时，蓝色图标会移动得更快。  为什么？  两种版本都应该在相同的时间内将图标移动相同的空间。  在 "性能" 面板中进行录制，了解如何检测未优化版本中的性能瓶颈。
 
-1.  在 DevTools 中，选择“**记录** \(![记录](../media/record-icon.msft.png))”。  页面运行时，DevTools 将捕获效果指标。
+1.  在 DevTools 中， **选择"记录** (![ 记录 ](../media/record-icon.msft.png)) 。  页面运行时，DevTools 将捕获效果指标。
 
     :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="配置文件页面" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
        配置文件页面
@@ -107,13 +109,15 @@ ms.locfileid: "12083833"
 
 哇，那是海量数据。  请不要担心，很快此过程就会变得更有意义。
 
+
+<!-- ====================================================================== -->
 ## <a name="analyze-the-results"></a>分析结果
 
 在记录页面性能后，测量页面的性能质量，并找到任何相关原因。
 
 ### <a name="analyze-frames-per-second"></a>分析每秒帧数
 
-用于测量任何动画效果的主要指标是每秒的帧\(FPS\)。  当动画以 60 FPS运行时，用户会觉得很享受。
+测量任何动画性能的主要指标是每秒帧数 (FPS) 。  当动画以 60 FPS运行时，用户会觉得很享受。
 
 1.  查看 **FPS** 图表。  每当红色条显示在 **FPS**上方时，这意味着帧速率下降得过低，可能破坏用户体验。  通常，绿色条越高，FPS 越高。
 
@@ -145,7 +149,7 @@ ms.locfileid: "12083833"
 
 另一个非常方便的工具是 FPS 计数，可在页面运行时提供对 FPS 的实时估计。
 
-1.  选择 `Control`+`Shift`+`P` \(Windows、Linux\) 或 `Command`+`Shift`+`P` \(macOS\) 打开**命令菜单**。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令**菜单**。
 1.  在**命令菜单**中开始键入`Rendering`，然后选择**显示渲染**.
 1.  在呈现**工具** 中，打开 **FPS 指示器**。  新的叠加层将显示在视线的右上角。
 
@@ -195,7 +199,7 @@ ms.locfileid: "12083833"
     > 选择事件后，使用箭头键选择事件旁边的事件。
 
 1.  在 **app.update** 事件下，有一堆紫色事件。  如果每个紫色事件都比较宽，看起来每个事件上可能都有个红色三角形。
-1.  选择一个紫色的**布局**事件。  DevTools 在**摘要**面板中提供了有关事件详细信息。  实际上，存在一条有关 layout\) 强制重排 \(another 的警告。
+1.  选择一个紫色的**布局**事件。  DevTools 在**摘要**面板中提供了有关事件详细信息。  实际上，存在一条有关强制重排的 (另一个单词的布局) 。
 
 1.  在**摘要**面板中，选择**布局强制**下的 **app.js:71** 链接。  DevTools 将转到强制布局的代码行。
 
@@ -219,12 +223,14 @@ ms.locfileid: "12083833"
 
 <!--todo: add rendering section when available -->
 
+
+<!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.
 To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->
 
-为了更加熟悉**性能**工具，需要多加练习。  试着对页面进行剖析并分析结果。  如果对结果有任何疑问，请使用**发送反馈** 图标，选择 `Alt`+`Shift`+`I`  \(Windows, Linux\)，选择 `Option`+`Shift`+`I`  \(macOS\)， 或[发 tweet 给 DevTools 团队][TwitterEdgeDevtools]。  如果可能，请包括屏幕截图或指向可重现页面的链接。
+为了更加熟悉**性能**工具，需要多加练习。  试着对页面进行剖析并分析结果。  如果你对结果有任何疑问，请使用发送反馈图标，选择**** `Alt` + `Shift` + `I` (Windows、Linux) 、选择 (macOS) 或 `Option` + `Shift` + `I` [DevTools][TwitterEdgeDevtools]团队的推文。  如果可能，请包括屏幕截图或指向可重现页面的链接。
 
 :::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="Microsoft Edge 开发人员工具中的**反馈**图标" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
    Microsoft Edge DevTools 中的**发送反馈**图标
@@ -251,7 +257,7 @@ To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->
 
 [TwitterEdgeDevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "EdgeDevTools - 发布推文 | Twitter"
 
-[MDNWebRequestAnimationFrame]: https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame "Window.requestAnimationFrame\(\) | MDN"
+[MDNWebRequestAnimationFrame]: https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame "Window.requestAnimationFrame () |MDN"
 
 <!--[InPrivate]: https://support.microsoft.com/help/4026200/microsoft-edge-browse-inprivate "Browse InPrivate in Microsoft Edge"  -->
 
@@ -272,7 +278,7 @@ To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

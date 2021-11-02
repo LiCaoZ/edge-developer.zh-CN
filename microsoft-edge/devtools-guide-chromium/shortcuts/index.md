@@ -1,18 +1,18 @@
 ---
 description: Microsoft Edge 开发工具键盘快捷方式的规范文档。
-title: Microsoft Edge 开发工具键盘快捷方式
+title: 键盘快捷方式
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: eb96d24c1c2c8749fbedd04bc2bf24e22264a4ad
-ms.sourcegitcommit: 54f9566aa935fb853215c9b6f995fa0c98f3261f
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 34482f401de5814f68df58a7521e924f1b1afd89
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "12103326"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141717"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,13 +27,13 @@ ms.locfileid: "12103326"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="microsoft-edge-devtools-keyboard-shortcuts"></a>Microsoft Edge 开发工具键盘快捷方式
+# <a name="keyboard-shortcuts"></a>键盘快捷方式
 
 本文引用了 Microsoft Edge 开发工具中的键盘快捷方式。
 
-还可以在工具提示中查找快捷方式。  将鼠标悬停在开发工具的 UI 元素上，以显示工具提示。  如果元素具有快捷方式，则工具提示中将包含快捷方式。
+键盘快捷方式显示在 DevTools 中的某些工具提示中。  将鼠标悬停在开发工具的 UI 元素上，以显示工具提示。  如果元素具有快捷方式，则工具提示中将包含快捷方式。
 
-另请参阅 [在 DevTools](../customize/shortcuts.md)中自定义键盘快捷方式。
+另请参阅 [自定义键盘快捷方式](../customize/shortcuts.md)。
 
 
 <!-- ====================================================================== -->
@@ -105,6 +105,8 @@ ms.locfileid: "12103326"
 | 将属性值递增/减 10 | 选择一个值，然后选择 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | 选择一个值，然后选择 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |
 | 将属性值递增/减 100 | 选择一个值，然后选择 `Control`+`Up Arrow` / `Control`+`Down Arrow` | 选择一个值，然后选择 `Command`+`Up Arrow` / `Command`+`Down Arrow` |
 
+
+<!-- ====================================================================== -->
 ## <a name="sources-tool-keyboard-shortcuts"></a>源工具键盘快捷方式
 
 | 操作 | Windows\/Linux | macOS |

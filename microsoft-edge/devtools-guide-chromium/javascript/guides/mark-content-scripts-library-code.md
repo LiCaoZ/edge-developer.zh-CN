@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 60fcc98c4d5c460ecc470272352eea10e39b1fb4
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 7bb848e2b9ec9175c8c86b04323d456b52fddfb0
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083798"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141773"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,7 +29,7 @@ ms.locfileid: "12083798"
    limitations under the License.  -->
 # <a name="mark-content-scripts-as-library-code"></a>将内容脚本标记为库代码
 
-使用 **"源"** 工具逐步执行 [代码时][DevToolsJavascriptStepThroughCode]，有时会对无法识别的代码暂停。  你可能已经暂停了已安装的 Microsoft Edge 扩展的代码。  若要不在扩展代码上暂停，请完成以下操作。
+使用 **"源"** 工具逐步执行 [代码时][DevToolsJavascriptStepThroughCode]，有时会对无法识别的代码暂停。  您可能暂停了已安装的其中一个 Microsoft Edge 扩展的代码。  若要不在扩展代码上暂停，请完成以下操作。
 
 1.  在 DevTools 的右上角，选择齿轮图标** (设置) 。**  此时将出现**设置**页面。
 1.  在 **"设置"** 下，选择"**忽略列表"。**  将显示 **"框架**库代码 **"设置**部分。
@@ -48,7 +48,7 @@ ms.locfileid: "12083798"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/guides/blackbox-chrome-extension-scripts)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developer.chrome.com/docs/devtools/javascript/ignore-chrome-extension-scripts/)，由技术编写 (Chrome DevTools & Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

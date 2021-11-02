@@ -1,18 +1,18 @@
 ---
 description: CSS 样式编辑器中的更改现在显示在 CSS 编辑器内的 CSS Visual Studio Code。  所有控制台错误和警告现在都有一个搜索 Web 图标。  改进了用于定义客户端提示User-Agent键盘访问。  改进了对控制台中分组邮件的筛选。
-title: 'DevTools (Microsoft Edge 95) '
+title: 'DevTools (Microsoft Edge 95 中的新增) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 10/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 2af3d507800e4127de3eb03c70ddd513fdac567c
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: b2d26ab2a8b1ca5970d48e14c1e9c4b49bfab057
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108679"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141864"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-95"></a>DevTools (Microsoft Edge 95 中的新增) 
 
@@ -20,12 +20,12 @@ ms.locfileid: "12108679"
 
 
 <!-- ====================================================================== -->
-## <a name="sync-live-changes-from-the-styles-tool-in-the-visual-studio-code-extension"></a>Sync live changes from the Styles tool in the Visual Studio Code extension
+## <a name="sync-live-changes-from-the-styles-tool-in-the-visual-studio-code-extension"></a>同步来自"样式"扩展中的"样式"Visual Studio Code更改
 
 <!-- Title: CSS Mirror Editing in Visual Studio Code -->
 <!-- Subtitle: Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code. -->
 
-当前[Microsoft Edge开发人员工具扩展Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)一个称为 **"CSS 镜像编辑"的实验**。  使用此功能，您可以使用样式工具调整**** CSS，并且您应用的更改会自动添加到 CSS Visual Studio Code文件中。  你可以打开和关闭此功能。
+当前[Microsoft Edge开发人员工具扩展Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)一个称为 **"CSS 镜像编辑"的实验**。  使用此功能，您可以使用样式工具调整**** CSS，并且您应用的更改会自动添加到 css 源文件中的Visual Studio Code编辑器中。  你可以打开和关闭此功能。
 
 有关详细信息，请参阅 [Syncing live changes from the Styles tool by using CSS Mirror Editing](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#syncing-live-changes-from-the-styles-tool-by-using-css-mirror-editing)。
 
@@ -58,7 +58,7 @@ ms.locfileid: "12108679"
 *  [在网络条件工具 中定义用户代理字符串时](../../../device-mode/override-user-agent.md)。
 *  [添加自定义设备以在 设置 中模拟](../../../device-mode/index.md#add-a-custom-mobile-device)时。
 
-在 Microsoft Edge 95 之前的版本中，当从 设置 的"设备"部分**** 添加要模拟的自定义设备时，使用键盘**** 选择"用户代理客户端提示 **"** 按钮会导致激活不正确的 UI 项。  它选择了" **添加** "按钮，而不是展开"用户代理客户端提示"部分供你 **填写** 。  你开始定义的设备已立即添加，使用"用户代理客户端提示"部分 **中的空** 字段。
+在 Microsoft Edge 95 之前的版本中，当从 设置 的"设备"**** 部分添加要模拟的自定义设备时，使用**** 键盘选择"用户代理客户端提示 **"** 按钮会导致激活不正确的 UI 项。  它选择了" **添加** "按钮，而不是展开"用户代理客户端提示"部分供你 **填写** 。  你开始定义的设备已立即添加，使用"用户代理客户端提示"部分 **中的空** 字段。
 
 在 Microsoft Edge 95 版本中，此问题已修复。  现在 **，使用键盘** 选择"用户代理客户端提示"按钮将展开一个表单，您可以在其中为自定义设备指定客户端提示。
 
@@ -89,18 +89,18 @@ ms.locfileid: "12108679"
 
 :::image type="content" source="../../media/2021/10/filter-matches-group-label-asdf.png" alt-text="当筛选器字符串与组标签不匹配时，不显示组及其成员。" lightbox="../../media/2021/10/filter-matches-group-label-asdf.png":::
 
-若要查看 Chromium 开放源代码项目中此功能的历史记录，请参阅问题[363796： ☂ 控制台](https://bugs.chromium.org/p/chromium/issues/detail?id=363796)筛选器以不当方式隐藏分组的内容，并且不会隐藏组标题。
+若要查看 Chromium 开放源代码项目中此功能的历史记录，请参阅问题[363796： ☂ 控制台](https://bugs.chromium.org/p/chromium/issues/detail?id=363796)筛选器以不当方式隐藏分组内容，并且不会隐藏组标题。
 
 
 <!-- ====================================================================== -->
 ## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道
 
-如果你使用的是 Windows、Linux 或 macOS，请考虑将 Microsoft Edge [Canary](https://www.microsoftedgeinsider.com/download)预览频道用作默认开发浏览器。  预览频道让你可以访问开发人员工具Microsoft Edge功能。
+如果你使用的是 Windows、Linux 或 macOS，请考虑使用[canary preview channel of Microsoft Edge](https://www.microsoftedgeinsider.com/download)作为默认开发浏览器。  预览频道让你可以访问开发人员工具Microsoft Edge功能。
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> Chromium 项目中通知的原始页面是[What's New in DevTools (Chrome 95) ，](https://developer.chrome.com/blog/new-in-devtools-95)由[Jecelyn Yeen](https://developers.google.com/web/resources/contributors/jecelynyeen) (Developer（在 Google) 上处理 Chrome DevTools 的开发人员宣传）创作。
+> Chromium 项目中通知的原始页面是[What's New in DevTools (Chrome 95) ，](https://developer.chrome.com/blog/new-in-devtools-95)由[Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer（在 Google) 上处理 Chrome DevTools 的开发人员宣传）创作。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 08393f07f10e1bf4298d00f963bd3d04cb5b9a07
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 79c7299ad4ad0044eef4edee8d3c110ee6233c7e
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108449"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141710"
 ---
 <!-- Copyright Kayce Basques
 
@@ -33,6 +33,8 @@ ms.locfileid: "12108449"
 
 如果要尝试检查 http [缓存][MDNHTTPCaching] 数据，则这不是你想要的指南。  在"网络日志"字段的 **大小** 列中 **信息**。  导航到 [记录网络][DevtoolsNetworkLogActivity]。
 
+
+<!-- ====================================================================== -->
 ## <a name="view-cache-data"></a>查看缓存数据
 
 1.  选择**应用程序**选项卡打开**应用程序**工具。  通常默认**清单**窗格打开。
@@ -65,6 +67,8 @@ ms.locfileid: "12108449"
        查看资源的内容
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="refresh-a-resource"></a>刷新资源
 
 1.  [查看缓存](#view-cache-data)。
@@ -74,8 +78,10 @@ ms.locfileid: "12108449"
        选择要刷新的资源
     :::image-end:::
 
-1.  选择**刷新** \(![Refresh](../media/refresh-icon.msft.png)\)。
+1.  Choose **Refresh (** ![ Refresh ](../media/refresh-icon.msft.png)) .
 
+
+<!-- ====================================================================== -->
 ## <a name="filter-resources"></a>筛选资源
 
 1.  [查看缓存](#view-cache-data)。
@@ -85,6 +91,8 @@ ms.locfileid: "12108449"
        筛选与指定路径不匹配的资源
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="delete-a-resource"></a>删除资源
 
 1.  [查看缓存](#view-cache-data)。
@@ -94,8 +102,10 @@ ms.locfileid: "12108449"
        选择要删除的资源
     :::image-end:::
 
-1.  选择 **删除** \（![删除](../media/delete-icon.msft.png)\）。
+1.  选择 **"删除所选 ("** ![ 删除所选 ](../media/delete-icon.msft.png)) 。
 
+
+<!-- ====================================================================== -->
 ## <a name="delete-all-cache-data"></a>删除所有缓存数据
 
 1.  打开**应用程序** > **存储空间**。
@@ -125,7 +135,7 @@ ms.locfileid: "12108449"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/cache)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/cache)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 72e8da1de0fe597a8cc4b17958e23cf9cedf2514
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 93899f6831c03afc0ed950929e2c61eb022fc685
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108071"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141913"
 ---
 <!-- Copyright Kayce Basques
 
@@ -33,6 +33,8 @@ ms.locfileid: "12108071"
 
 <!--todo: add section when why-https is available -->
 
+
+<!-- ====================================================================== -->
 ## <a name="open-the-security-panel"></a>打开"安全"面板
 
 安全 **面板** 是 DevTools 中用于检查页面安全性的主要位置。
@@ -44,6 +46,8 @@ ms.locfileid: "12108071"
        安全**面板**
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="common-problems"></a>常见问题
 
 ### <a name="non-secure-main-origins"></a>非安全主源
@@ -77,6 +81,8 @@ ms.locfileid: "12108071"
    网络日志中的 **混合资源**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="view-details"></a>查看详细信息
 
 ### <a name="view-main-origin-certificate"></a>查看主源证书
@@ -113,7 +119,7 @@ ms.locfileid: "12108071"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/security/index)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/security/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

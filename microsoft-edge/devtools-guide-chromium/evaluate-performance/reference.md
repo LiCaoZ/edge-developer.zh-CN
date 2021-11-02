@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 8dbfb072460d954f0a8d13ecd3acb4901a386599
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: b4858ea6f7e0eeaddb7150e0b7774c936c7e653e
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108176"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141920"
 ---
 <!-- Copyright Kayce Basques
 
@@ -33,6 +33,8 @@ ms.locfileid: "12108176"
 
 导航到 [“分析运行时性能入门”][DevtoolsEvaluatePerformanceGettingStarted]，以获得关于如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 分析页面性能的指导教程。
 
+
+<!-- ====================================================================== -->
 ## <a name="record-performance"></a>记录性能
 
 ### <a name="record-runtime-performance"></a>记录运行时性能
@@ -41,7 +43,7 @@ ms.locfileid: "12108176"
 
 1.  导航到要分析的页面。
 1.  在 DevTools 中打开 **“性能”** 工具。
-1.  选择 **记录** \(![记录图标](../media/record-icon.msft.png)\)。
+1.  Choose **Record** (![ Record icon ](../media/record-icon.msft.png)) .
 
     :::image type="complex" source="../media/evaluate-performance-performance-record-highlight.msft.png" alt-text="Record" lightbox="../media/evaluate-performance-performance-record-highlight.msft.png":::
        **Record**
@@ -56,7 +58,7 @@ ms.locfileid: "12108176"
 
 1.  导航到要分析的页面。
 1.  打开 DevTools 的 **“性能”** 面板。
-1.  选择 **刷新网页** \(![刷新网页](../media/refresh-page-icon.msft.png)\)。  DevTools 在页面刷新时记录性能指标，然后在加载完成后几秒钟自动停止记录。
+1.  Choose **Refresh page (** Refresh Page ![ ](../media/refresh-page-icon.msft.png)) .  DevTools 在页面刷新时记录性能指标，然后在加载完成后几秒钟自动停止记录。
 
     :::image type="complex" source="../media/evaluate-performance-performance-refresh-button.msft.png" alt-text="刷新页面" lightbox="../media/evaluate-performance-performance-refresh-button.msft.png":::
        **刷新页面**
@@ -80,7 +82,7 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 ### <a name="force-garbage-collection-while-recording"></a>录制时强制收集垃圾
 
-录制页面时，选择 **“回收垃圾”** \(![“回收垃圾图标”](../media/collect-garbage-icon.msft.png)\) 以强制回收垃圾。
+在记录页面时，选择"收集**** (![ 垃圾回收图标) ](../media/collect-garbage-icon.msft.png) 强制进行垃圾回收。
 
 :::image type="complex" source="../media/evaluate-performance-performance-collect-garbage-button.msft.png" alt-text="回收垃圾" lightbox="../media/evaluate-performance-performance-collect-garbage-button.msft.png":::
    回收垃圾
@@ -88,7 +90,7 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 ### <a name="show-recording-settings"></a>显示录制设置
 
-选择 **“捕获设置”** \(![捕获设置](../media/capture-settings-icon.msft.png)\) 就可以看到更多与 DevTools 如何捕获性能记录相关的设置。
+选择 **"捕获 (** 捕获) "以公开与 DevTools 如何捕获性能记录 ![ ](../media/capture-settings-icon.msft.png) 相关的更多设置。
 
 :::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="捕获设置部分" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
    **“捕获设置”** 部分
@@ -140,30 +142,38 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 若要了解如何与画图信息交互，请导航到 [“视图图层”](#view-layers-information) 和 [“视图绘制探查器”](#view-paint-profiler)。
 
+
+<!-- ====================================================================== -->
 ## <a name="save-a-recording"></a>保存录制内容
 
-若要保存录制文件，请打开上下文菜单 \(右键单击\)，然后选择 **“保存配置文件”**。
+若要保存录制，请打开上下文菜单 (右键单击") "，然后选择"保存**配置文件"。**
 
 :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png" alt-text="保存配置文件" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png":::
    **保存配置文件**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="load-a-recording"></a>加载录制
 
-若要加载录制文件，请打开上下文菜单 \(右键单击\)，然后选择 **“加载配置文件”**。
+若要加载录制，请打开上下文菜单 (右键单击") "，然后选择"加载**配置文件"。**
 
 :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png" alt-text="加载配置文件" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png":::
    **加载配置文件**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="clear-the-previous-recording"></a>清除上一记录
 
-录制后，选择 **清除录制** \(![清除录制图标](../media/clear-recording-icon.msft.png)\) 以从 **性能** 面板中清除录制。
+录制后，选择"清除**** 录制 (清除录制) 以从"性能"面板 ![ ](../media/clear-recording-icon.msft.png) 中清除该录制。 ****
 
 :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png" alt-text="清除录制" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png":::
    **清除录制**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="analyze-a-performance-recording"></a>分析性能录制
 
 在 [录制运行性能](#record-runtime-performance) 或 [录制加载性能](#record-load-performance) 之后， **性能** 面板将提供许多数据以分析刚发生的操作的性能。
@@ -190,7 +200,7 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 ### <a name="search-activities"></a>搜索活动
 
-选择 `Control`+`F` \(Windows，Linux\) 或 `Command`+`F` \(macOS\) 以打开**性能**面板底部的搜索框。
+选择 `Control` + `F` (Windows、Linux) 或 (`Command` + macOS `F`) **** 打开"性能"面板底部的搜索框。
 
 :::image type="complex" source="../media/evaluate-performance-performance-search-regex.msft.png" alt-text="搜索框" lightbox="../media/evaluate-performance-performance-search-regex.msft.png":::
    搜索框
@@ -198,13 +208,13 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 导航与查询匹配的活动:
 
-*   使用 **上一步** \(![上一步](../media/previous-icon.msft.png)\) 和 **下一步** \(![下一步](../media/next-icon.msft.png)\) 按钮。
+*   使用"**上一 (** ![ 页 ](../media/previous-icon.msft.png)) "和 ("下一****) ![ ](../media/next-icon.msft.png) 按钮。
 *   选择 `Shift`+`Enter` 来选择上一步或 `Enter` 来选择下一步。
 
 修改查询设置:
 
-*   选择 **区分大小写** \(![区分大小写](../media/search-case-icon.msft.png)\)，使查询区分大小写。
-*   选择 **正则表达式** \(![正则表达式](../media/search-regex-icon.msft.png)\) ，在查询中使用正则表达式。
+*   选择 **"** 区分 (![ 区分) ](../media/search-case-icon.msft.png) 区分大小写"，使查询区分大小写。
+*   选择 **"** 正则表达式 (![ 正则表达式 ](../media/search-regex-icon.msft.png)) ，以在查询中使用正则表达式。
 
 若要隐藏搜索框，请选择 **“取消”**。
 
@@ -275,7 +285,7 @@ DevTools 为脚本随机分配颜色。  在上图中，请求来自脚本的函
 
 默认情况下，**“分组”** 菜单设置为 **“无分组”**。  使用 **“分组”** 菜单，根据各种条件对活动表进行排序。
 
-选择 **“显示最重堆叠** \(![显示最重堆叠](../media/show-heaviest-stack-icon.msft.png)\) 以显示 **“活动“** 表右侧的另一个表。  选择一个活动来填充 **最重堆叠** 表。  **“最重堆栈”** 表显示所选活动的子项需要最长的运行时间。
+选择 **"显示最** (堆栈") 显示"活动"表右侧 ![ ](../media/show-heaviest-stack-icon.msft.png) 的另一 **个** 表。  选择一个活动来填充 **最重堆叠** 表。  **“最重堆栈”** 表显示所选活动的子项需要最长的运行时间。
 
 #### <a name="the-bottom-up-panel"></a>自下而上面板
 
@@ -484,9 +494,9 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
 
 若要移动图表:
 
-*   选择 **“平移模式”** \(![“平移模式”](../media/pan-mode-icon.msft.png)\) 沿 X 轴和 Y 轴移动。
-*   选择 **“旋转模式”** \(![“旋转模式”](../media/rotate-mode-icon.msft.png)\) 沿 Z 轴旋转。
-*   选择 **“重置转换”** \(![“重置转换”](../media/reset-transform-icon.msft.png)\) 可以将图重置到原始位置。
+*   选择 **"平移** (![ 平移模式) 沿 X 和 ](../media/pan-mode-icon.msft.png) Y 轴移动。
+*   选择 **旋转模式** (![ 旋转 ](../media/rotate-mode-icon.msft.png)) 沿 Z 轴旋转。
+*   Choose **Reset Transform (** Reset Transform) to reset the diagram to the original ![ ](../media/reset-transform-icon.msft.png) position.
 
 ### <a name="view-paint-profiler"></a>查看绘图探查器
 
@@ -499,6 +509,8 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
        **“绘图探查器”** 面板
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="analyze-rendering-performance-with-the-rendering-tool"></a>使用 "渲染" 工具分析渲染性能
 
 使用 **“渲染”** 面板的功能来帮助可视化页面的渲染性能。
@@ -578,7 +590,7 @@ DevTools 概述了茶色中潜在的问题元素。
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference)，由 [Kayce Basques][KayceBasques]\（Chrome DevTools \& Lighthouse 的技术作家\）撰写。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

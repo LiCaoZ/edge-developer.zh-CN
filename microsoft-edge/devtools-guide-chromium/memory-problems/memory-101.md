@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 7600b0eca4ac41fef874ad4924b48a506ce436f4
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: f31a3e179c2044b600f0f7c12ba358df17c1c80a
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12083658"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141745"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -31,11 +31,13 @@ ms.locfileid: "12083658"
 
 本文介绍内存分析中使用的常见术语，适用于不同语言的各种内存分析工具。
 
-此处介绍的术语和概念是指内存 [面板][DevtoolsMemoryProblemsHeapSnapshots]。  如果你曾经使用过 Java、.NET 或其他一些内存探查器，那么本文可能是一个刷新程序。
+此处介绍的术语和概念是指内存 [面板][DevtoolsMemoryProblemsHeapSnapshots]。  如果你曾经使用过 Java、.NET 或其他一些内存探查器，那么本文可能是一个刷新的文章。
 
+
+<!-- ====================================================================== -->
 ## <a name="object-sizes"></a>对象大小
 
-将内存视为包含基元类型 \ (如数字和字符串\) 和对象 \ (associative arrays\) 。  它可能会显示为具有许多互连点的图形，如下图所示。
+将内存视为包含基元类型的图形 (数字和字符串) 关联数组 (对象) 。  它可能会显示为具有许多互连点的图形，如下图所示。
 
 :::image type="complex" source="../media/memory-problems-thinkgraph.msft.png" alt-text="内存的视觉表示形式" lightbox="../media/memory-problems-thinkgraph.msft.png":::
    内存的视觉表示形式
@@ -46,7 +48,7 @@ ms.locfileid: "12083658"
 *   直接由 对象。
 *   隐式保留对其他对象的引用，从而阻止垃圾收集器自动释放这些对象。
 
-使用 DevTools \ (中的内存面板时) 发现内存**\) **下发现的内存问题的工具，你可能会发现自己正在查看一些不同的信息列。 [][DevtoolsMemoryProblemsHeapSnapshots]  两个突出的"浅 **表** 大小"和 **"保留大小**"，但这表示什么？
+使用 DevTools 中的内存面板 (发现的内存问题的工具在内存 **) **下找到时，你可能会发现自己正在查看一些不同的信息列。 [][DevtoolsMemoryProblemsHeapSnapshots]  两个突出的"浅 **表** 大小"和 **"保留大小**"，但这表示什么？
 
 :::image type="complex" source="../media/memory-problems-shallow-retained.msft.png" alt-text="浅表和保留大小" lightbox="../media/memory-problems-shallow-retained.msft.png":::
    浅表和保留大小
@@ -64,18 +66,18 @@ ms.locfileid: "12083658"
 
 这是在对象删除后释放的内存大小，以及从垃圾回收器根目录无法访问的从属 **对象**。
 
-**垃圾回收器根**由在从本机**** 代码引用 V8 外部的 JavaScript 对象时创建的句柄（本地或全局 (\) ）所创建。  可以在 GC 根下的堆快照内找到所有此类**** 句柄  >  **处理范围**和**GC 根**  >  **全局句柄**。  在本文档中介绍句柄而不深入介绍浏览器实现的详细信息可能会令人困惑。  垃圾回收器根和句柄都不需要担心。
+**垃圾回收器根** 由在本地 **或** 全局 (创建) 从本机代码引用 V8 外部的 JavaScript 对象时创建的句柄。  可以在 GC 根下的堆快照内找到所有此类**** 句柄  >  **处理范围**和**GC 根**  >  **全局句柄**。  在本文档中介绍句柄而不深入介绍浏览器实现的详细信息可能会令人困惑。  垃圾回收器根和句柄都不需要担心。
 
 存在大量内部垃圾回收器根，其中大多数对用户不感兴趣。  从应用程序的角度来看，有以下类型的根。
 
-*   窗口全局对象 \ (iframe\) 。  在堆快照中，字段指示窗口最短保留 `distance` 路径上的属性引用数。
+*   窗口全局对象 (iframe 对象) 。  在堆快照中，字段指示窗口最短保留 `distance` 路径上的属性引用数。
 *   文档 DOM 树，由通过遍历文档可到达的所有本机 DOM 节点组成。  并非所有节点都有 JavaScript 包装器，但如果节点有包装器，则节点在文档处于活动状态时处于活动状态。
 *   有时对象由源工具和控制台中的调试上下文保留，**** 例如控制台评估之后****。  使用清除的控制台工具 **创建** 堆快照，在"源"工具的调试器中没有活动的 **断** 点。
 
 >[!TIP]
 > 在"内存"工具中拍摄堆 [快照之前，][DevtoolsMemoryProblemsHeapSnapshots] 请清除 **"** 控制台"工具，并停用"源"工具中的 **断** 点。  若要清除 **控制台工具** ，请运行 `clear()` 方法。
 
-内存图以根开头，该根可能是浏览器的对象或Node.js `window` `Global` 对象。  您不控制如何垃圾回收根对象。
+内存图以根开头，根目录可能是浏览器的对象或Node.js `window` `Global` 对象。  您不控制如何垃圾回收根对象。
 
 :::image type="complex" source="../media/memory-problems-dontcontrol.msft.png" alt-text="你无法控制如何对根对象进行垃圾回收。" lightbox="../media/memory-problems-dontcontrol.msft.png":::
    你无法控制如何对根对象进行垃圾回收。
@@ -86,11 +88,13 @@ ms.locfileid: "12083658"
 > [!NOTE]
 > "[浅表大小"](#shallow-size)[和"保留大小"](#retained-size)列均表示以字节为单位的数据。
 
+
+<!-- ====================================================================== -->
 ## <a name="objects-retaining-tree"></a>保留树的对象
 
 堆是互连对象的网络。  在数学世界，此结构称为 **图形或** 内存图。  图形由**通过边缘连接的**节点构造，两者都是**** 给定的标签。
 
-*   **节点**\ (**或对象**\) 标有用于生成节点的构造函数函数的名称。 ****
+*   **节点** (**或) **对象使用用于构建节点的构造函数函数的名称进行标记。 ****
 *   **边缘** 使用属性 的名称 **标记**。
 
 了解如何 [使用堆配置文件器记录配置文件][DevtoolsMemoryProblemsHeapSnapshots]。  在下图中，内存工具中堆快照记录中的一些 [值得注意的事项包括][DevtoolsMemoryProblemsHeapSnapshots] 距离：垃圾回收器根之间的距离。  如果几乎同一类型的所有对象都位于同一距离，而其中一些对象距离较大，那么这一点值得研究。
@@ -99,6 +103,8 @@ ms.locfileid: "12083658"
    与根之间的距离
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="dominators"></a>Dominators
 
 Dominator 对象由树结构组成，因为每个对象只有一个管理程序。  对象的管理者可能缺少对它所控制的对象的直接引用;也就是说，管理器的树不是图形的跨越树。
@@ -121,23 +127,25 @@ Dominator 对象由树结构组成，因为每个对象只有一个管理程序�
    动画管理程序图示
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="v8-specifics"></a>V8 特定内容
 
-分析内存时，了解堆快照为何以特定方式显示非常有用。  本节介绍一些与内存相关的主题，这些主题专门与 **V8 JavaScript** 虚拟机 \ (V8 VM 或 VM\) 。
+分析内存时，了解堆快照为何以特定方式显示非常有用。  本节介绍一些与内存相关的主题，这些主题专门与 **V8 VM** 或 VM (V8 JavaScript 虚拟机) 。
 
 ### <a name="javascript-object-representation"></a>JavaScript 对象表示形式
 
 有三种基元类型：
 
-*   数字 \ (例如 `3.14159...` \) 
-*   布尔值 \ (`true` `false` 或 \) 
-*   字符串 \ (例如 `"Werner Heisenberg"` \) 
+*   数字 `3.14159...` (例如) 
+*   布尔值 (`true` 或) `false`
+*   字符串 `"Werner Heisenberg"` (例如) 
 
 基元无法引用其他值，并且始终是叶节点或终止节点。
 
 **数字** 可以存储为：
 
-*   称为小整数 **\ (** **SMI**s\) 的直接 31 位整数值，或
+*   SMI 值中称为小整数的直接 31**位** (，) 或****
 *   堆对象，称为 **堆数**。 堆编号用于存储不适合 SMI 表单的值（如双精度数）或需要对**** 值进行装箱时（例如设置其属性）。 ****
 
 **字符串** 可以存储在：
@@ -145,7 +153,7 @@ Dominator 对象由树结构组成，因为每个对象只有一个管理程序�
 *   **VM 堆**， 或
 *   在呈现 **器的内存外部**。  创建 **包装** 对象并用于访问外部存储，例如，存储从 Web 接收的脚本源和其他内容，而不是复制到 VM 堆。
 
-新 JavaScript 对象的内存从专用 JavaScript 堆 \ (**或 VM 堆**\) 。  这些对象由 V8 中的垃圾回收器管理，因此，只要至少有一个对对象的强引用，它们就保持活动状态。
+新 JavaScript 对象的内存从专用 JavaScript 堆或 VM (**分配) 。**  这些对象由 V8 中的垃圾回收器管理，因此，只要至少有一个对对象的强引用，它们就保持活动状态。
 
 不在 JavaScript 堆中任何内容都称为 **本机对象**。  与堆对象相反，本机对象在生命周期内不由 V8 垃圾回收器管理，并且只能使用 JavaScript 包装对象从 JavaScript 访问。
 
@@ -178,11 +186,11 @@ Dominator 对象由树结构组成，因为每个对象只有一个管理程序�
 <!-- links -->
 [DevtoolsMemoryProblemsHeapSnapshots]: ./heap-snapshots.md "如何记录堆快照|Microsoft Docs"
 
-[V8FastProperties]: https://v8.dev/blog/fast-properties "V8 | 中的快速属性V8"
+[V8FastProperties]: https://v8.dev/blog/fast-properties "V8 中的快速属性|V8"
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) ，由 [Meggin Kearney][MegginKearney] \ (Technical Writer\) 。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) 由技术撰稿人 [Meggin Kearney][MegginKearney] (创作) 。
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 

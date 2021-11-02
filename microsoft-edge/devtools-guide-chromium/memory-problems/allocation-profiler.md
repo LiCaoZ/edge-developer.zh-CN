@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 7f29058d2cb16d40440fd09210ad235a0e60e261
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 122fc03f70bd00806c0384cd0f076bb56075975e
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108330"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141934"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -31,6 +31,8 @@ ms.locfileid: "12108330"
 
 在 **日程表上使用分配** 检测来查找未正确进行垃圾回收的对象，并继续保留内存。
 
+
+<!-- ====================================================================== -->
 ## <a name="how-allocation-instrumentation-on-timeline-works"></a>时间线上的分配检测的工作原理
 
 **时间线上的分配检测**将堆探查器的详细快照信息与**** 性能面板的增量更新和**跟踪**相结合。  同样，跟踪对象的堆分配涉及启动记录、执行一系列操作以及停止记录进行分析。
@@ -38,7 +40,7 @@ ms.locfileid: "12108330"
 <!--todo: add profile memory problems (heap profiler) section when available  -->
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->
 
-**时间线上的分配检测** 在整个记录 \ (定期获取堆快照，频率为每 50 ms\) ，最后一个快照位于录制末尾。
+**时间线上的分配检测** 在整个记录过程中定期获取堆快照 (频率与记录结束时每 50 毫秒) 一次最终快照的频率一样。
 
 :::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="日程表上的分配检测" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
    **日程表上的分配检测**
@@ -47,6 +49,8 @@ ms.locfileid: "12108330"
 > [!NOTE]
 > 后一 `@` 个数字是对象 ID，在录制会话期间获取的多个快照中保留。  通过永久性对象 ID，可以在堆状态之间进行精确比较。  对象在垃圾回收期间移动，因此显示对象的地址没有任何意义。
 
+
+<!-- ====================================================================== -->
 ## <a name="enable-allocation-instrumentation-on-timeline"></a>在时间线上启用分配检测
 
 完成以下操作以开始在时间线**上使用 Allocation instrumentation。**
@@ -59,6 +63,8 @@ ms.locfileid: "12108330"
        记录堆分配探查器
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="read-a-heap-allocation-timeline"></a>读取堆分配时间线
 
 堆分配时间线显示对象的创建位置，并标识保留路径。  在下图中，顶部的条形指示何时在堆中发现新对象。
@@ -80,6 +86,8 @@ ms.locfileid: "12108330"
 
 选择堆中的特定对象将显示堆快照底部部分的保留树。  检查对象的保留路径应为您提供足够的信息来了解未收集对象的原因，并且应进行必要的代码更改以删除不必要的引用。
 
+
+<!-- ====================================================================== -->
 ## <a name="view-memory-allocation-by-function"></a>按功能查看内存分配
 
 你能够通过 JavaScript 函数查看内存分配。  有关详细信息，请导航到按 [函数调查内存分配][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]。
@@ -100,7 +108,7 @@ ms.locfileid: "12108330"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) ，由 [Meggin Kearney][MegginKearney] \ (Technical Writer\) 。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) 由技术撰稿人 [Meggin Kearney][MegginKearney] (创作) 。
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 
