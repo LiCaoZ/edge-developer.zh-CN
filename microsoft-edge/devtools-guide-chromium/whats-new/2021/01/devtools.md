@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 0fdab7c22e2961a03231bac890ce2358872b77b4
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 4aff4b7334ae572f5d9fadbe0eb587fe5c80f3f5
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108372"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140996"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -32,6 +32,8 @@ ms.locfileid: "12108372"
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
+
+<!-- ====================================================================== -->
 ## <a name="whats-new-is-now-welcome"></a>“新增功能”工具现在为“欢迎”
 
 <!--  Title: What's New is now Welcome  -->
@@ -45,6 +47,8 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
    突出显示“**欢迎**”工具
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="visual-font-editor-in-the-styles-pane"></a>“样式”窗格中的可视字体编辑器
 
 <!--  Title: Visual font editor in the Styles pane  -->
@@ -65,6 +69,8 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
    可视**字体编辑器**在“**样式**”窗格中突出显示
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="css-flexbox-debugging-tools"></a>CSS 弹性框调试工具
 
 弹性框调试功能正在积极开发中。  若要启用以下两个功能的试验，请导航至“[设置][DevtoolsCustomizeIndexSettings]” > “**试验**”，然后选择“**启用新的 CSS 弹性框调试功能**”旁边的复选框。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1136394][CR1136394] 和 [1139949][CR1139949]。
@@ -80,7 +86,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 :::row:::
    :::column span="":::
-      若要打开和关闭显示弹性框容器轮廓的覆盖效果，请选择弹性框 (`flex`) 图标。
+      若要打开和关闭显示 Flexbox 容器的覆盖效果，请选择 Flexbox （`flex`） 图标。
    :::column-end:::
    :::column span="":::
       可在“**布局**”窗格中的“**样式**”和“**已计算**”旁边自定义覆盖的颜色。
@@ -89,7 +95,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 :::row:::
    :::column span="":::
       :::image type="complex" source="../../media/2021/01/elements-flex-container.msft.png" alt-text="弹性框 (flex) 图标和网页突出显示" lightbox="../../media/2021/01/elements-flex-container.msft.png":::
-         **弹性框** (`flex`) 图标和网页突出显示 :::image-end:::
+         **Flexbox** (`flex`)图标和网页突出显示 :::image-end:::
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text="“布局”窗格中突出显示的弹性框覆盖" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
@@ -126,6 +132,8 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="add-tools-quickly-with-new-more-tools-button"></a>使用新的“更多工具”按钮快速添加工具
 
 <!--  Title: Add tools quickly with new More Tools button  -->
@@ -133,12 +141,14 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-现在，你有了一种在 Microsoft Edge DevTools 中打开更多工具的新方法。  在打开此试验后，“**更多工具**”图标将在主面板右侧显示为加号 (`+`)。  若要显示要添加到主面板的其他工具的列表，请选择“**更多工具**”\(`+`\) 图标。  若要启用此试验，请导航至“[设置][DevtoolsCustomizeIndexSettings]” > “**试验**”，然后选中“**启用 + 按钮选项卡菜单以打开更多工具**”旁边的复选框。
+现在，你有了一种在 Microsoft Edge DevTools 中打开更多工具的新方法。  在打开此试验后，“**更多工具**”图标将在主面板右侧显示为加号 (`+`)。  若要显示要添加到主面板的其他工具的列表，请选择"**更多工具**" (`+`)图标。  若要启用此试验，请导航至“[设置][DevtoolsCustomizeIndexSettings]” > “**试验**”，然后选中“**启用 + 按钮选项卡菜单以打开更多工具**”旁边的复选框。
 
 :::image type="complex" source="../../media/2021/01/more-tools.msft.png" alt-text="DevTools 中突出显示“更多工具”" lightbox="../../media/2021/01/more-tools.msft.png":::
    DevTools 中突出显示“**更多工具**”
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="assistive-technologies-now-announce-position-and-count-of-css-suggestions"></a>辅助技术现在显示 CSS 建议的位置和计数
 
 <!--  Title: Assistive technologies now announce position and count of CSS suggestions  -->
@@ -152,6 +162,8 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
    “**样式**”窗格中突出显示 `suggestion` 列表
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="emulate-surface-duo-and-samsung-galaxy-fold"></a>模拟 Surface Duo 和 Samsung Galaxy Fold
 
 <!--  Title: Emulate new dual-screen and foldable devices  -->
@@ -173,6 +185,8 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
    模拟双屏幕
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="microsoft-edge-developer-tools-for-visual-studio-code-version-112"></a>Microsoft Edge Developer Tools for Visual Studio Code 1.1.2 版
 
 适用于 Microsoft Visual Studio Code 的 [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] 扩展版本 1.1.2 自上一个版本以来有以下更改。  Microsoft Visual Studio Code 会自动更新扩展。  若要手动更新到版本 1.1.2，请导航至“[手动更新扩展][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]”。
@@ -184,6 +198,8 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 你可以在 [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools] 上提交问题并参与提升扩展。
 
+
+<!-- ====================================================================== -->
 ## <a name="announcements-from-the-chromium-project"></a>来自 Chromium 项目的公告
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
@@ -407,6 +423,8 @@ DevTools 现在在父帧下列出一个专用的服务工作进程。  下图显
    颜色选取器中的 APCA
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道
 
 如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
