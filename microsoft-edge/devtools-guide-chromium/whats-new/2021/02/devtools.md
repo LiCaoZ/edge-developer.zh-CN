@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 66c319e0f4d13d681eff3f4db74354b983fb9ea5
-ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
+ms.openlocfilehash: 5e244261b46854f633deb2fe30d0b6c5ec03269d
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "12087016"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12141899"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -32,6 +32,8 @@ ms.locfileid: "12087016"
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
+
+<!-- ====================================================================== -->
 ## <a name="group-tools-together-in-focus-mode"></a>在焦点模式下将工具组合在一起
 
 <!-- Title: Grouping the tools in Focus Mode  -->
@@ -45,6 +47,8 @@ ms.locfileid: "12087016"
    显示“**活动栏**”
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="learn-about-devtools-with-informative-tooltips"></a>通过信息丰富的工具提示了解 DevTools
 
 <!-- Title: DevTools Tooltips  -->
@@ -56,6 +60,8 @@ DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  
    选择“**活动栏**”中的“帮助”(`?`) 图标以显示工具提示
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="customize-keyboard-shortcuts-in-settings"></a>在“设置”中自定义键盘快捷方式
 
 <!-- Title: Change keyboard shortcuts in Settings  -->
@@ -66,9 +72,9 @@ DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  
 
 1.  打开 DevTools，然后选择“**设置**” > “**快捷方式**”。
 1.  选择要自定义的操作。
-1.  选择“编辑”（![“编辑键盘快捷方式”图标](../../media/2021/02/edit-keyboard-shortcut-icon.msft.png)）图标。
+1.  选择“编辑”（![“编辑键盘快捷方式”图标](../../media/2021/02/edit-keyboard-shortcut-icon.msft.png)) 图标。
 1.  选择要绑定到操作的按键。
-1.  选中复选标记（![复选标记键盘快捷方式图标](../../media/2021/02/checkmark-keyboard-shortcut-icon.msft.png)\) 图标。
+1.  选中复选标记（![复选标记键盘快捷方式图标](../../media/2021/02/checkmark-keyboard-shortcut-icon.msft.png)) 图标。
 
 有关自定义和编辑快捷方式的详细信息，请导航到[在开发人员工具中自定义键盘快捷方式][DevtoolsCustomizeShortcuts]。  若要在 Chromium 开源项目中查看此功能的实时更新，请导航至问题 [174309][CR174309]。
 
@@ -76,6 +82,8 @@ DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  
    在编辑模式下使用快捷方式在“[DevTools 设置][DevtoolsCustomizeIndexSettings]”的“快捷方式”上自定义键盘快捷方式
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="microsoft-edge-devtools-for-visual-studio-code-extension-update-114"></a>Microsoft Edge DevTools for Visual Studio Code 扩展更新 1.1.4
 
 <!-- Title: Edge Devtools for Visual Studio code extension update 1.1.4  -->
@@ -102,6 +110,8 @@ DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="improved-css-flexbox-editing-with-visual-flexbox-editor-and-multiple-overlays"></a>通过可视弹性框编辑器和多个覆盖改进了 CSS 弹性框编辑
 
 <!-- Title: Try different CSS flexbox layouts with the visual flexbox editor  -->
@@ -128,6 +138,8 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="keyboard-navigation-improvements-for-network-requests"></a>网络请求的键盘导航改进
 
 <!-- Title: Navigate the request initiator chain in the Network tool with the keyboard  -->
@@ -148,6 +160,8 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="filtering-in-the-console-is-more-consistent"></a>控制台中的筛选更加一致
 
 <!-- Title: Console improvements make filtering more consistent  -->
@@ -166,6 +180,8 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="announcements-from-the-chromium-project"></a>来自 Chromium 项目的公告
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
@@ -287,6 +303,8 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道
 
 如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
