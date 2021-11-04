@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 5d56135e3c7fc1abdfacfd570f31f269dad4f07e
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: 79e5953b2731d28b60be0f60cac3576030b0ce9d
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12107875"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140639"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -32,6 +32,8 @@ ms.locfileid: "12107875"
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
+
+<!-- ====================================================================== -->
 ## <a name="microsoft-edge-and-microsoft-edge-driver-now-available-on-linux"></a>Microsoft Edge 和 Microsoft Edge 驱动程序现在可在 Linux 上使用
 
 <!-- Title: Microsoft Edge and Microsoft Edge Driver on Linux  -->
@@ -39,12 +41,14 @@ ms.locfileid: "12107875"
 
 Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上受到支持。  直接从 [Microsoft Edge 预览体验成员网站][MicrosoftinsiderDownloadPlatformLinux] 下载并安装 Microsoft Edge Dev `.deb` 或 `.rpm` 程序包，或使用 Linux 发行版的标准程序包管理工具。
 
-如果你在连续集成和交付\(CI/CD\) 解决方案中使用 Linux 环境，Microsoft Edge 驱动程序也可在 Linux 上使用。  若要开始使用 Microsoft Edge 驱动程序自动执行 Microsoft Edge Dev，请导航至 [Microsoft Edge 驱动程序下载页][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]。  有关自动执行 Microsoft Edge Dev 以及 Microsoft Edge 驱动程序的帮助，请导航到 [使用 WebDriver 测试自动化][WebdriverMain]。
+如果你在连续集成和交付 CI/CD 解决方案中使用 Linux 环境，Microsoft Edge 驱动程序也可在 Linux 上使用。  若要开始使用 Microsoft Edge 驱动程序自动执行 Microsoft Edge Dev，请导航至 [Microsoft Edge 驱动程序下载页][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]。  有关自动执行 Microsoft Edge Dev 以及 Microsoft Edge 驱动程序的帮助，请导航到 [使用 WebDriver 测试自动化][WebdriverMain]。
 
 :::image type="complex" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="Microsoft Edge Linux 版中的 DevTools" lightbox="../../media/2020/11/edge-on-linux.msft.png":::
    Microsoft Edge Linux 版中的 DevTools
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="improved-webhint-and-platform-tips-in-the-issues-tool"></a>“问题”工具中改进的 Web 提示和平台提示
 
 <!-- Title: Improvements to Issues tool and webhint integration  -->
@@ -71,6 +75,8 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
    **问题** 工具
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="composited-layers-are-now-in-3d-view"></a>复合层现在采用 3D 视图
 
 <!-- Title: 3D View is now integrated with Composited Layers  -->
@@ -78,12 +84,14 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-现在，你可以可视化显示 **Layers** 内容与 z-index 值和文档对象模型\(DOM\)。  此功能可帮助你进行调试，无需在 [3D 视图][Devtools3dViewIndex] 和 **图层工具** 之间切换。  为获得全面的视觉调试体验， [已将3D 视图和复合层组合到一起][Devtools3dViewIndex]。
+现在，你可以将 **Layers** 内容、z-index 值以及文档对象模型 (DOM) 模型一起可视化。  此功能可帮助你进行调试，无需在 [3D 视图][Devtools3dViewIndex] 和 **图层工具** 之间切换。  为获得全面的视觉调试体验， [已将3D 视图和复合层组合到一起][Devtools3dViewIndex]。
 
 :::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="复合层窗格" lightbox="../../media/2020/11/experiments-layers.msft.png":::
    **复合层** 窗格
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="css-variable-definitions-in-styles-pane"></a>“样式”窗格中的 CSS 变量定义
 
 <!-- Title: Jump to CSS variable definitions  -->
@@ -105,6 +113,8 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="service-worker-debugging-improvements"></a>服务工作线程调试改进
 
 <!-- Title:  Service worker debugging improvements in the Network, Application, and Sources tools  -->
@@ -169,6 +179,8 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="copy-property-value-of-a-network-request"></a>复制网络请求的属性值
 
 <!-- Title: Copy response JSON in Network tool using the contextual menu  -->
@@ -192,6 +204,8 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="customize-multi-press-keyboard-shortcuts"></a>自定义多键连发键盘快捷方式
 
 <!-- Title: Customize multi-press keyboard shortcuts  -->
@@ -207,6 +221,8 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
    多键连发键盘快捷方式
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="devtools-now-match-browser-language"></a>DevTools 现已匹配浏览器语言
 
 在 Microsoft Edge 版本 87 中，如果在 [DevTools 设置][DevtoolsCustomizeIndexSettings] 中打开 **匹配浏览器语言** 设置，则 DevTools 不会匹配浏览器语言。  在 Microsoft Edge 版本 88 中，如果打开 **匹配浏览器语言** 设置，则 DevTools 现在与浏览器语言匹配。  有关 **Match 浏览器语言** DevTools 设置的详细信息，请导航至 [更改 DevTools 语言设置][DevtoolsCustomizeLocalization]。
@@ -215,6 +231,8 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
    **匹配浏览器语言** DevTools 设置（日语）
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="announcements-from-the-chromium-project"></a>来自 Chromium 项目的公告
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
@@ -261,7 +279,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 #### <a name="cross-origin-isolation-information-in-the-frame-details-view"></a>框架详细信息视图中的跨域隔离信息
 
-现在，跨域隔离状态在 **安全性和隔离** 区域下显示。  新的 **API 可用性** 区域显示 `SharedArrayBuffer` \(SAB\) 的可用性，以及是否可以使用 `postMessage()` 共享缓冲区。  弃用警告显示 SAB 和 `postMessage()` 当前是否可用，但上下文并非跨域隔离。  有关跨域隔离以及为何需要如 `SharedArrayBuffers` 一样的功能的详细信息 ，请导航至 [WindowOrWorkerGlobalScope.crossOriginIsolated][MdnWindoworworkerglobalscopeCrossoriginisolated]。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [1139899][CR1139899]。
+现在，跨域隔离状态在 **安全性和隔离** 区域下显示。  新的 **API 可用性** 部分显示 `SharedArrayBuffer` (SAB) 的可用性，以及是否可以使用 `postMessage()` 共享缓冲区。  弃用警告显示 SAB 和 `postMessage()` 当前是否可用，但上下文并非跨域隔离。  有关跨域隔离以及为何需要如 `SharedArrayBuffers` 一样的功能的详细信息 ，请导航至 [WindowOrWorkerGlobalScope.crossOriginIsolated][MdnWindoworworkerglobalscopeCrossoriginisolated]。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [1139899][CR1139899]。
 
 :::image type="complex" source="../../media/2020/11/frame-cross-origin-isolated-api.msft.png" alt-text="跨域信息" lightbox="../../media/2020/11/frame-cross-origin-isolated-api.msft.png":::
    跨域信息
@@ -308,7 +326,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 若要将堆栈跟踪复制到剪贴板，请完成以下操作。
 
-1.  打开上下文菜单\（右键单击\）。
+1.  打开上下文菜单（右键单击）。
 1.  选择 **复制** > **复制堆栈跟踪**。
 
 若要查看 Chromium 开源项目中此功能的历史记录，请导航至问题 [1139615][CR1139615]。
@@ -319,7 +337,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 ### <a name="preview-wasm-variable-value-on-mouseover"></a>鼠标悬停时预览 Wasm 变量值
 
-代码暂停时，使用此功能检查 WebAssembly\(Wasm\) 变量的值。  若要显示变量的当前值，请将鼠标悬停在变量上。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [1058836][CR1058836] 和 [1071432][CR1071432]。
+代码暂停时，使用此功能检查 WebAssembly (Wasm) 变量的值。  若要显示变量的当前值，请将鼠标悬停在变量上。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [1058836][CR1058836] 和 [1071432][CR1071432]。
 
 :::image type="complex" source="../../media/2020/11/wasm-mouseover.msft.png" alt-text="鼠标悬停时预览 Wasm 变量" lightbox="../../media/2020/11/wasm-mouseover.msft.png":::
    鼠标悬停时预览 Wasm 变量
@@ -329,11 +347,13 @@ background: linear-gradient(100deg, lightblue, pink);
 
 现在，DevTools 始终使用 `kB` 显示文件和内存的大小。  以前的 DevTools 混合 `kB` 和 `KiB`。
 
-*   `kB` 或千字节\（10^3 或 1000 字节\）
-*   `KiB` 或 kibibyte \（2^10 或 1024 字节\）
+*   `kB` 或千字节 (10^3 或 1000 字节)
+*   `KiB` 或 kibibyte (2^10 或 1024 字节)
 
 例如，**网络** 工具以前在标签中使用 `kB`，但在计算中使用 `KiB`。  您的反馈表明这种前后矛盾导致混淆。  若要查看 Chromium 开源项目中此功能的历史记录，请导航至问题 [1035309][CR1035309]。
 
+
+<!-- ====================================================================== -->
 ## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道
 
 如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
@@ -409,7 +429,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-88)，并由 [Jecelyn Yeen][JecelynYeen] \（开发人员支持者，Chrome DevTools\）制作。
+> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-88)，并由 [Jecelyn Yeen][JecelynYeen]  \（开发人员支持者，Chrome DevTools\）制作。
 
 [![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
 
