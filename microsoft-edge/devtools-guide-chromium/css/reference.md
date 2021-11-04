@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 789af9d9619f1a5bb0ffb72b5bfd2db3932bcdc8
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 3a615490f189cc4a15f8ce4a8e76b279ce13fabe
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141031"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156499"
 ---
 <!-- Copyright Kayce Basques
 
@@ -31,13 +31,13 @@ ms.locfileid: "12141031"
 
 在以下与查看和更改 CSS 相关的 Microsoft Edge DevTools 功能综合参考中发现新的工作流。
 
-若要了解基础知识，请导航到 [“查看和更改 CSS 入门”][DevToolsCSSGetStarted]。
+若要了解基础知识，请导航到 [“查看和更改 CSS 入门”](../css/index.md)。
 
 
 <!-- ====================================================================== -->
 ## <a name="choose-an-element"></a>选择元素
 
-DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  所选元素在 **“DOM 树”** 上突出显示。  元素的样式显示在 **“样式”** 窗格中。  有关教程，请导航到 [查看元素的 CSS][DevToolsCSSGetStartedTutorial]。
+DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  所选元素在 **“DOM 树”** 上突出显示。  元素的样式显示在 **“样式”** 窗格中。  有关教程，请导航到 [查看元素的 CSS](../css/index.md#view-the-css-for-an-element)。
 
 > [!NOTE]
 > 下图中，**“DOM 树”** 中突出显示的 `h1` 元素就是所选元素。  在右侧的样式窗格中显示了元素的 **“样式”**。  在左侧，该元素在视区中突出显示，但只是因为当前在 **“DOM 树”** 中鼠标正悬停在它上方。
@@ -49,7 +49,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 使用以下操作之一选择元素。
 
 *   在视口中，将鼠标悬停在 元素上，打开上下文菜单 (右键单击") "检查 **"。**
-*   在 DevTools 中，选择"选择**元素 (选择**元素 ![ ") 或选择 ](../media/select-an-element-icon.msft.png) `Control` + `Shift` + `C` " (Windows、Linux) 或 `Command` + `Shift` + `C` (macOS) "，然后在视口中选择元素。
+*   在 DevTools 中，选择"选择**元素 (** 选择元素 ![) 或选择 ](../media/select-an-element-icon.msft.png) `Control` + `Shift` + `C` (Windows、Linux) 或 `Command` + `Shift` + `C` (macOS) ，然后选择视口中的元素。
 *   在 DevTools 中，选择 **“DOM 树”** 中的元素。
 *   在 DevTools 中，像在控制台中一样运行查询，将鼠标悬停在结果上，打开上下文菜单 (右键单击") "，然后选择"元素"面板中的 `document.querySelector('p')` "**展示"。** ****
 
@@ -61,7 +61,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 在 **“样式”** 窗格中，选择 CSS 规则旁边的链接，以打开定义该规则的外部样式表。  样式表将在"源" **工具的** "编辑器" **窗格中** 打开。
 
-如果样式表缩小，请选择"编辑器"窗格**** (") "设置格式" ![ ](../media/format-icon.msft.png) **按钮**。  有关详细信息，请导航到[重新设置一个缩小的 JavaScript 文件与非常打印。][DevToolsJavascriptReferenceFormat]
+如果样式表缩小，请选择"编辑器 (底部的****") 格式"按钮 ![ ](../media/format-icon.msft.png) 。 ****  有关详细信息，请导航到[重新设置一个缩小的 JavaScript 文件与非常打印。](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print)
 
 > [!NOTE]
 > 在下图中，当你选择 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` 后，将会带你到定义了 `.content h1:first-of-type` CSS 规则的 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` 行2。
@@ -101,7 +101,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 ### <a name="view-the-box-model-for-an-element"></a>查看元素的框模型
 
-若要查看元素的 [框模型][MDNBoxModel]，请导航到 **“样式”** 面板。  如果 DevTools 窗口较窄，则 **框模型** 图位于面板的底部。
+若要查看元素的 [框模型](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model)，请导航到 **“样式”** 面板。  如果 DevTools 窗口较窄，则 **框模型** 图位于面板的底部。
 
 选择并编辑值以更改值。
 
@@ -148,13 +148,13 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
    切换 `:hover` 伪类
 :::image-end:::
 
-对于交互式教程，请导航到 [“向类添加伪静态”][DevToolsCSSGetStartedAddPseudoState]。
+对于交互式教程，请导航到 [“向类添加伪静态”](../css/index.md#add-a-pseudostate-to-a-class)。
 
 ### <a name="view-a-page-in-print-mode"></a>在打印模式下查看页面
 
 在打印模式下完成以下操作以查看页面。
 
-1.  [打开“命令”菜单][DevToolsCommandMenu]。
+1.  [打开“命令”菜单](../command-menu/index.md)。
 1.  开始键入 `Rendering` 并选择 `Show Rendering`。
 1.  对于 **“模拟 CSS 媒体”** 下拉菜单中，请选择 **打印**。
 
@@ -162,7 +162,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 **“覆盖”** 工具显示页面实际使用 CSS。
 
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) ，而 DevTools[][DevToolsCommandMenu]将焦点放在其中以打开命令菜单。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) ，而 DevTools[](../command-menu/index.md)是焦点时打开命令菜单。
 1.  开始键入 `coverage` 并选择 **“显示范围”**。  出现 **“覆盖”** 工具。
 
     :::row:::
@@ -177,7 +177,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
        :::column-end:::
     :::row-end:::
 
-1.  选择 **开始检测覆盖范围并刷新页面 (** ![ 开始检测范围并刷新页面 ](../media/refresh-icon.msft.png)) 。  页面刷新和覆盖工具概述了**** 浏览器加载的每个 (使用多少 CSS 和 JavaScript) 。  绿色表示已使用的 CSS。  红色表示未使用的 CSS。
+1.  选择 **开始检测覆盖范围并刷新页面 (** ![ 开始检测范围并刷新页面 ](../media/refresh-icon.msft.png)) 。  页面刷新和覆盖工具概述了**** 从浏览器加载的每个 (JavaScript) 使用的 CSS 和 JavaScript。  绿色表示已使用的 CSS。  红色表示未使用的 CSS。
 
     :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="已使用的和未使用的 CSS (和JavaScript) 的概述" lightbox="../media/css-console-qs-coverage-run.msft.png":::
        已使用的和未使用的 CSS (和JavaScript) 的概述
@@ -194,7 +194,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 ### <a name="force-print-preview-mode"></a>强制打印预览模式
 
-导航到 [“强制 DevTools 进入打印预览模式”][DevToolsCssPrintPreview]。
+导航到 [“强制 DevTools 进入打印预览模式”](../css/print-preview.md)。
 
 
 <!-- ====================================================================== -->
@@ -209,7 +209,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 *   [添加内联声明](#add-an-inline-declaration)。  相当于向元素的 HTML 添加 `style` 属性。
 *   [向“样式规则”添加声明](#add-a-declaration-to-a-style-rule)。
 
-**该使用什么工作流?** 多数情况下，可能需要使用内联声明工作流。  内联声明具有比外部声明更高的特定性，因此内联工作流可确保更改在预期元素中生效。  有关特定性详细信息，请导航到 [“选择器类型”][MDNSelectorTypes]。
+**该使用什么工作流?** 多数情况下，可能需要使用内联声明工作流。  内联声明具有比外部声明更高的特定性，因此内联工作流可确保更改在预期元素中生效。  有关特定性详细信息，请导航到 [“选择器类型”](https://developer.mozilla.org/docs/Web/CSS/Specificity#Selector_Types)。
 
 如果要调试任何元素样式，并且需要专门测试在不同位置定义声明时的情况，请使用其他工作流。
 
@@ -530,13 +530,13 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
       **调色板切换器**
    :::column-end:::
    :::column span="2":::
-      在 [“材质设计调色板”][MaterialDesignColorSystem]、“自定义调色板”或“页面颜色调色板”之间切换。  DevTools 根据在样式表中所找到的颜色来生成页面调色板。
+      在 [“材质设计调色板”](https://material.io/guidelines/style/color.html#color-color-palette)、“自定义调色板”或“页面颜色调色板”之间切换。  DevTools 根据在样式表中所找到的颜色来生成页面调色板。
    :::column-end:::
 :::row-end:::
 
 #### <a name="sample-a-color-off-the-page-with-the-eyedropper"></a>用“取色器“在页面上打样着色
 
-打开颜色**选取器**时， (取) **** ![ ](../media/eyedropper-icon.msft.png) 器会默认打开。  完成以下操作，可将页面上的所选颜色改为其他颜色。
+打开颜色**选取器**时，默认情况下， (**** ![ 取) ](../media/eyedropper-icon.msft.png) 器会打开。  完成以下操作，可将页面上的所选颜色改为其他颜色。
 
 1.  将鼠标悬停在视区中的目标颜色上。
 1.  选择以确认。
@@ -552,25 +552,8 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevToolsCommandMenu]: ../command-menu/index.md "使用开发人员工具Microsoft Edge菜单运行命令|Microsoft Docs"
-[DevToolsCSSGetStarted]: ../css/index.md "查看和更改 CSS 入门 | Microsoft 文档"
-[DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class " 向类添加伪状态 - 查看和更改 CSS 入门 | Microsoft Docs"
-[DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "查看元素的 CSS - 查看和更改 CSS 入门 | Microsoft Docs"
-[DevToolsCssPrintPreview]: ../css/print-preview.md "强制 Microsoft Edge DevTools 进入打印预览模式(CSS 打印媒体类型) | Microsoft Docs"
-[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print "使用非常打印重新设置缩小的 JavaScript 文件 - 使用调试器|Microsoft Docs"
-
-[MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "颜色系统 - 材料设计"
-[MDNBoxModel]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model "框模型 | MDN"
-[MDNSelectorTypes]: https://developer.mozilla.org/docs/Web/CSS/Specificity#Selector_Types "选择器类型 - 特异性 | MDN"
-
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/css/reference)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/css/reference)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

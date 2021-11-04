@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 55158bb9ae1262383f2b420866ef19cb016047e2
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 65f5e8e4a27ce28d74a60ec45ca61fb3058e332e
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140058"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156786"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -29,7 +29,7 @@ ms.locfileid: "12140058"
    limitations under the License.  -->
 # <a name="view-and-debug-media-players-information"></a>查看和调试媒体播放器信息
 
-使用**DevTools** Microsoft Edge中的媒体工具查看信息并按浏览器选项卡调试媒体播放器。
+使用**** DevTools Microsoft Edge中的媒体工具查看信息并按浏览器选项卡调试媒体播放器。
 
 
 <!-- ====================================================================== -->
@@ -37,7 +37,7 @@ ms.locfileid: "12140058"
 
 媒体 **工具** 是 DevTools 中用于检查网页的媒体播放器的主要位置。
 
-1.  [打开 DevTools][DevtoolsGuideChromiumOpen]。
+1.  [打开 DevTools](../open/index.md)。
 1.  若要打开**媒体面板**，请选择"**自定义和控制 DevTools** `...`  >  **更多工具媒体**  >  **"。**
 
     :::image type="complex" source="../media/media-panel-empty.msft.png" alt-text="媒体面板" lightbox="../media/media-panel-empty.msft.png":::
@@ -50,7 +50,7 @@ ms.locfileid: "12140058"
 
 1.  导航到包含媒体播放器的网页，如以下网页。
 
-    [使用边缘开发人员工具最大程度地提高工作效率][BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]
+    [使用边缘开发人员工具最大程度地提高工作效率](https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8)
 
 1.  在" **玩家"** 菜单下，将显示媒体播放器。
 1.  选择玩家。  " **属性** "面板显示媒体播放器的属性。
@@ -79,9 +79,9 @@ ms.locfileid: "12140058"
 
 ### <a name="remote-debugging"></a>远程调试
 
-在 Android 设备上从你的计算机或 macOS Windows媒体播放器信息。
+在 Android 设备上从计算机或 macOS Windows媒体播放器信息。
 
-1.  若要设置远程调试，请导航到开始 [远程调试 Android 设备][DevtoolsGuideChromiumRemoteDebuggingIndex]。
+1.  若要设置远程调试，请导航到开始 [远程调试 Android 设备](../remote-debugging/index.md)。
 1.  远程查看媒体播放器信息。
 
     <!-- TODO: recreate image using an Android device -->
@@ -97,12 +97,12 @@ ms.locfileid: "12140058"
 
 有时，您可以在一个网页上运行多个媒体播放器，或者使用同一浏览器选项卡浏览不同的网页，每个网页都使用媒体播放器。
 
-你可以选择隐藏媒体 (或) 播放器上显示，以简化调试体验。
+你可以选择隐藏或 (每个) 播放器，以简化调试体验。
 
 1.  使用同一浏览器选项卡浏览到多个不同的视频网页。
 1.  若要隐藏媒体播放器，请完成以下操作之一。
-    *   若要隐藏一个媒体播放器，请将鼠标悬停在媒体播放器上，打开上下文菜单 (右键单击") "，然后选择"隐藏**播放器"。**
-    *   若要隐藏所有其他媒体播放器，请将鼠标悬停在媒体播放器上，打开上下文菜单 (右键单击") "，然后选择"隐藏**所有其他"。**
+    *   若要隐藏一个媒体播放器，请将鼠标悬停在媒体播放器上，右键单击 (上下文菜单，然后选择) 播放器 **"。**
+    *   若要隐藏所有其他媒体播放器，请将鼠标悬停在媒体播放器上，右键单击" ("，然后选择"隐藏所有其他 **) "。**
 
     :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="隐藏媒体播放器" lightbox="../media/media-panel-hide-show.msft.png":::
        隐藏媒体播放器
@@ -120,23 +120,8 @@ ms.locfileid: "12140058"
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-
-[DevtoolsGuideChromiumOpen]: ../open/index.md "打开 Microsoft Edge 开发人员工具 | Microsoft Docs"
-
-[DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Android 设备远程调试入门 | Microsoft Docs"
-
-[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "使用边缘开发人员工具最大限度地提高|必应视频"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/media-panel/index) ，由 [Jecelyn Yeen][JecelynYeen] 和开发人员 (Chrome DevTools) 。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/media-panel/index)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

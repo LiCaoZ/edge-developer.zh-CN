@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 649788aad5726c03d4d7d6ddfe5785f5259740ab
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: e8e141bac7c136c256f15a319315855f595f6d0a
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139421"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155540"
 ---
 <!-- Copyright Kayce Basques
 
@@ -46,7 +46,7 @@ ms.locfileid: "12139421"
 
 启用端口转发：
 
-1.  在 [开发计算机和][RemoteDebuggingGettingStarted] Android 设备之间设置远程调试。  完成后，Android 设备应显示在"检查设备"对话框和"已连接状态"指示器**** 的左侧菜单中。 ****
+1.  在 [开发计算机和](./index.md) Android 设备之间设置远程调试。  完成后，Android 设备应显示在"检查设备"对话框和"已连接状态"指示器**** 的左侧菜单中。 ****
 1.  在**DevTools 中的**"检查设备"对话框中，启用 **"端口转发"。**
 1.  选择 **"添加规则"。**
 
@@ -76,7 +76,7 @@ ms.locfileid: "12139421"
 
 ### <a name="set-up-port-forwarding-to-proxy-server"></a>设置到代理服务器的端口转发
 
-若要映射自定义域，必须在开发计算机上运行代理服务器。  代理服务器的示例包括[，即，用户][CharlesWebDebuggingProxy][、Squid 和][SquidCacheWiki] [Fiddler。][TelerikFiddler]
+若要映射自定义域，必须在开发计算机上运行代理服务器。  代理服务器的示例包括[，即，用户](https://www.charlesproxy.com)[、Squid 和](https://wiki.squid-cache.org) [Fiddler。](https://www.telerik.com/fiddler)
 
 设置到代理的端口转发：
 
@@ -91,7 +91,7 @@ ms.locfileid: "12139421"
 
 接下来，你需要将 Android 设备配置为与代理服务器通信。
 
-1.  在 Android 设备上，导航到**设置**  >  **WLAN"**。
+1.  在 Android 设备上，导航到**设置**  >  **Wlan"。**
 1.  长按当前连接到的网络的名称。
 
     > [!NOTE]
@@ -115,23 +115,8 @@ ms.locfileid: "12139421"
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[RemoteDebuggingGettingStarted]: ./index.md "Android 设备远程调试入门 | Microsoft Docs"
-<!-- external links -->
-[CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Debugg Web Debugging Proxy"
-[SquidCacheWiki]: https://wiki.squid-cache.org "Squid Wiki 代理 Wiki"
-[TelerikFiddler]: https://www.telerik.com/fiddler "Fiddler - 免费 Web 调试代理"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server)由位于此处的[由由 (][KayceBasques]技术编写器、Chrome DevTools \& Lighthouse) 和[Meggin Kearney][MegginKearney] (Technical Writer) 创作。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server)作者为 (Technical Writer、Chrome DevTools \& Lighthouse) 和[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

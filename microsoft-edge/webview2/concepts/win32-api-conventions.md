@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 1b9e6be2552dae05e08e98da71557affa2b07783
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 29e07cedf8b2147da6d1526f16a8f0166296f34b
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139393"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156450"
 ---
 # <a name="win32-c-webview2-api-conventions"></a>Win32 C++ WebView2 API 约定
 
@@ -37,7 +37,7 @@ WebView2 Win32 C++ API 中的异步方法使用委托接口联系你，原因如
 
 所有异步方法的最后一个参数是指向你提供其实现的委托接口的指针。
 
-委托接口具有一个方法，该方法将成功代码或失败代码的第一个参数 `Invoke` `HRESULT` 作为 。  此外，如果方法有结果，则可能有第二个参数是该方法的结果。  例如 [，ICoreWebView2：：CapturePreview][Webview2ReferenceWin32Icorewebview2CapturePreview] 方法将指针作为最后的参数 `ICoreWebView2CapturePreviewCompletedHandler` 。  若要发送 `CapturePreview` 方法请求，需要提供一个 `ICoreWebView2CapturePreviewCompletedHandler` 实现指针的实例。  以下代码段使用一种方法来实现。
+委托接口具有一个方法，该方法将成功代码或失败代码的第一个参数 `Invoke` `HRESULT` 作为 。  此外，如果方法有结果，则可能有第二个参数是该方法的结果。  例如 [，ICoreWebView2：：CapturePreview](/microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview) 方法将指针作为最后的参数 `ICoreWebView2CapturePreviewCompletedHandler` 。  若要发送 `CapturePreview` 方法请求，需要提供一个 `ICoreWebView2CapturePreviewCompletedHandler` 实现指针的实例。  以下代码段使用一种方法来实现。
 
 ```cpp
 HRESULT Invoke(HRESULT result)
@@ -47,7 +47,7 @@ HRESULT Invoke(HRESULT result)
 
 或者，对于 ，您提供一个实例，该实例具有一个方法，用于提供 `ICoreWebView2::ExecuteScript` `Invoke` 请求的成功或失败 `ExecuteScript` 代码。  另外提供第二个参数，该参数是运行脚本的结果的 JSON。
 
-可以手动实现委托接口，也可以将 Callback 函数 (`CompleteHandler` [WRL) 。 ][CppCxWrlCallbackFunction]  以下 [WebView2 (代码) 使用 WRL ][CppCxWrlCallbackFunction] 代码段中的 Callback 函数。
+可以手动实现委托接口，也可以将 Callback 函数 (`CompleteHandler` [WRL) ](/cpp/cppcx/wrl/callback-function-wrl)。  以下 [WebView2 (代码) 使用 WRL ](/cpp/cppcx/wrl/callback-function-wrl) 代码段中的 Callback 函数。
 
 ```cpp
 void ScriptComponent::InjectScript()
@@ -87,7 +87,7 @@ WebView2 Win32 C++ API 中的事件使用 和 方法对订阅和 `add_EventName`
 与异步方法完成的处理程序委托接口类似，请使用以下操作之一来设置它。
 
 *   直接实现。
-*   将 [Callback 函数 (WebView2) ][CppCxWrlCallbackFunction] 代码段中使用的 WRL 对象函数。
+*   将 [Callback 函数 (WebView2) ](/cpp/cppcx/wrl/callback-function-wrl) 代码段中使用的 WRL 对象函数。
 
 <!-- todo:  what is async method completed handler delegate interface?  Is there a shorter name for it?  -->
 
@@ -147,11 +147,4 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 ## <a name="see-also"></a>另请参阅
 
 *  [WebView2 入门][Webview2IndexGetStarted] - WebView2 Win32 C/C++。
-*  [WebView2 API 参考][DotnetApiMicrosoftWebWebview2WpfWebview2]
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[Webview2ReferenceWin32Icorewebview2CapturePreview]: /microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview "CapturePreview - 接口 ICoreWebView2 |Microsoft Docs"
-[CppCxWrlCallbackFunction]: /cpp/cppcx/wrl/callback-function-wrl "WRL (回调) |Microsoft Docs"
-[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 类|Microsoft Docs"
+*  [WebView2 API 参考](/dotnet/api/microsoft.web.webview2.wpf.webview2)

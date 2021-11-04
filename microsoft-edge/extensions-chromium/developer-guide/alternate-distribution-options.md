@@ -7,12 +7,12 @@ ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 472def040ad41e5ee74a1b7e68ee490811a1f64c
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 491c6a1e632061fe75477b6bd4f7ef9e0b823e61
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139925"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155470"
 ---
 # <a name="alternate-extension-distribution-methods"></a>备用扩展分发方法
 
@@ -23,7 +23,7 @@ ms.locfileid: "12139925"
 
 未从边缘加载项存储加载的扩展称为外部安装的扩展。 以下列表提供了分发外部安装的扩展的替代方法。
 
-*   请Windows注册表 (Windows注册表) 。
+*   请使用Windows注册表 (Windows注册表) 。
 *   在 macOS 和 Linux (使用首选项 JSON) 。
 
 
@@ -35,15 +35,15 @@ ms.locfileid: "12139925"
 此外，请确保您拥有以下信息。
 
 1.  文件的文件 `.crx` 路径或扩展 `update_URL` 名的 。
-1.  扩展的版本。  版本信息在清单文件中提供，或在加载打包扩展Microsoft Edge在 中 `edge://extensions` 提供。
-1.  扩展的 ID。  在加载打包扩展后，Microsoft Edge ID 信息 `edge://extensions` 位于 以下版本。
+1.  扩展的版本。  版本信息在清单文件中提供，或Microsoft Edge `edge://extensions` 打包扩展后在 中提供。
+1.  扩展的 ID。  ID 信息在加载打包扩展Microsoft Edge `edge://extensions` 位于 以下版本。
 
 > [!NOTE]
 > 以下示例使用 `1.0` 作为 版本 和 `aaaaaaaaaabbbbbbbbbbcccccccccc` 作为 ID。
 
 
 <!-- ====================================================================== -->
-## <a name="use-the-windows-registry-windows-only"></a>使用Windows注册表 (Windows注册表) 
+## <a name="use-the-windows-registry-windows-only"></a>仅Windows注册表 (Windows注册表) 
 
 若要使用注册表Windows扩展，请执行以下步骤。
 
@@ -66,7 +66,7 @@ ms.locfileid: "12139925"
 
 
 <!-- ====================================================================== -->
-## <a name="use-a-preferences-json-file-macos-and-linux"></a>将首选项 JSON 文件 (macOS 和 Linux) 
+## <a name="use-a-preferences-json-file-macos-and-linux"></a>在 macOS 和 Linux (使用首选项 JSON) 
 
 若要使用首选项 JSON 文件分发扩展名，请执行以下步骤。
 
@@ -136,13 +136,9 @@ Microsoft Edge浏览器每次启动时扫描注册表中的元数据条目，并
 
 你可能需要卸载外部安装的扩展，这些扩展是作为以前安装在计算机中的软件捆绑包的一部分安装的。  若要卸载扩展，请删除首选项 JSON 文件，或者从注册表中删除项。
 
-<!-- links -->
+
 
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。  原始页面位于 [此处](https://developer.chrome.com/apps/external_extensions)。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。  原始页面位于 [此处](https://developer.chrome.com/apps/external_extensions)。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

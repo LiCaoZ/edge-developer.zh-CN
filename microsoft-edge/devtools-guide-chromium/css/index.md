@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 85d8b0da58a970269427a263cbe1c7dddba2784a
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 029df6919f7a5cb7a0ab16911c4cf0903b5c3e47
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140982"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155477"
 ---
 <!-- Copyright Kayce Basques
 
@@ -37,10 +37,10 @@ ms.locfileid: "12140982"
 
 1.  保留 `Control` (Windows、Linux) 或 `Command` (macOS) 并选择 **"CSS**示例"以在一个新窗口中打开。
 
-    [CSS 示例][GlitchDevToolsCssExamples]
+    [CSS 示例](https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html)
 
     > [!NOTE]
-    > 如果你想要将[DevTools][DevToolsCustomizePlacement]窗口停靠在视口窗口的右侧 (下图) ，请选择"自定义和控制**DevTools"。** `...`  在"**自定义和控制 DevTools"** 下拉菜单上的"扩展坞**侧**"部分中，选择"扩展**坞"以向右。**
+    > 如果你想要将[DevTools](/microsoft-edge/devtools-guide-chromium/customize/placement)窗口停靠在视口窗口的右侧 (下图) ，请选择"自定义和控制**DevTools"。** `...`  在"**自定义和控制 DevTools"** 下拉菜单上的"扩展坞**侧**"部分中，选择"扩展**坞"以向右。**
 
 
 <!-- ====================================================================== -->
@@ -162,7 +162,7 @@ ms.locfileid: "12140982"
 <!-- ====================================================================== -->
 ## <a name="debugging-media-queries"></a>调试媒体查询
 
-[媒体查询][MDNUsingMediaGueries] 是一种使 Web 产品对每个用户的配置设置更改做出反应的方法。  最重要的用例是，根据视口尺寸为产品提供不同的 CSS 布局。  当有更多的屏幕空间可用时，使用单独的布局允许移动设备使用单列布局和多列布局。
+[媒体查询](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) 是一种使 Web 产品对每个用户的配置设置更改做出反应的方法。  最重要的用例是，根据视口尺寸为产品提供不同的 CSS 布局。  当有更多的屏幕空间可用时，使用单独的布局允许移动设备使用单列布局和多列布局。
 
 如果要调试或测试在 CSS 中定义的媒体查询，请使用以下步骤。
 
@@ -192,20 +192,8 @@ ms.locfileid: "12140982"
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "将 DevTools 放置 (Undock、Dock 更改为 Bottom、Dock to Left) "
-
-[GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "CSS 示例 - Microsoft Edge DevTools |小故障"
-
-[MDNUsingMediaGueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "使用媒体查询|MDN"
-
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/css/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/css/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

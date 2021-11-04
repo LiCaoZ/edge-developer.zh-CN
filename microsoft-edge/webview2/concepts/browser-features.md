@@ -52,7 +52,7 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 *   **可** 配置指示可以使用 WebView2 API 或命令行开关打开或关闭该功能。
 
 > [!NOTE]
-> 本文不介绍使用命令行开关修改功能。  有关使用命令行开关打开和关闭功能的信息，请导航到"Chromium[开关"][PeterExperimentsChromiumCommandLineSwitches]列表。
+> 本文不介绍使用命令行开关修改功能。  有关使用命令行开关打开和关闭功能的信息，请导航到"Chromium[开关"](https://peter.sh/experiments/chromium-command-line-switches)列表。
 
 | 功能 | 默认状态 | 可配置 | 详细信息 |
 |:--- |:--- |:--- | :--- |
@@ -195,17 +195,8 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 | 打开 DevTools Inspect | `Ctrl`+`Shift`+`C` |
 
 > [!Note]
-> 若要单独自定义任何键，请使用 [AcceleratorKeyPressed][DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444] 事件。
+> 若要单独自定义任何键，请使用 [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true) 事件。
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true "CoreWebView2Controller.AcceleratorKeyPressed 事件|Microsoft Docs"
-
-[DevtoolsShortcutsIndex]: ../../devtools-guide-chromium/shortcuts/index.md "Microsoft Edge DevTools 键盘快捷方式 | Microsoft Docs"
-
-[GithubMicrosoftedgeWebview2feedbackIssues308]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/308 "添加对 HTML5 通知 API (#308) |GitHub"
-
-[PeterExperimentsChromiumCommandLineSwitches]: https://peter.sh/experiments/chromium-command-line-switches "命令行Chromium开关列表|Peter Beverloo"
-
 <!-- [Webview2ReferenceDownloadApi]: ./download-api.md "download API | Microsoft Docs" -->

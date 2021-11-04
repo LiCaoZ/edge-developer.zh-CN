@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: c2fcec9260bdb1e39a67d8fb5a65f8f77ead423e
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: e7c8e531bf725cda9fe8829a871bd2f05da34908
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141409"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156667"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -31,7 +31,7 @@ ms.locfileid: "12141409"
 
 了解如何使用 DevTools 堆Microsoft Edge器记录堆快照并查找内存泄漏。
 
-DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关 DOM 节点的内存分布。  使用它，可以将 JavaScript 堆 (JS 堆) 快照、分析内存图、比较快照和查找内存泄漏。  导航到 [对象保留树][DevtoolsMemoryProblems101ObjectsRetainingTree]。
+DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关 DOM 节点的内存分布。  使用它，可以将 JavaScript 堆 (JS 堆) 快照、分析内存图、比较快照和查找内存泄漏。  导航到 [对象保留树](./memory-101.md#objects-retaining-tree)。
 
 
 <!-- ====================================================================== -->
@@ -45,7 +45,7 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 **快照** 最初存储在呈现器进程内存中。  当你选择快照图标进行查看时，快照会按需传输到 DevTools。
 
-将快照加载到 DevTools 并进行分析后，将显示快照标题下方的数字，并显示可到达 [的 JavaScript 对象的总大小][DevtoolsMemoryProblems101ObjectSizes]。
+将快照加载到 DevTools 并进行分析后，将显示快照标题下方的数字，并显示可到达 [的 JavaScript 对象的总大小](./memory-101.md#object-sizes)。
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png" alt-text="可到达对象的总大小" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png":::
    可到达对象的总大小
@@ -67,7 +67,7 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 关闭 DevTools 窗口不会从与呈现器进程关联的内存中删除配置文件。  重新打开 DevTools 时，以前获取的所有快照将重新出现于快照列表中。
 
 > [!NOTE]
-> 试用此散 [点对象示例，][GlitchDevtoolsMemoryExample03] 然后使用堆探查器进行配置文件。  将显示 (分配) 多个对象。
+> 试用此散 [点对象示例，](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html) 然后使用堆探查器进行配置文件。  将显示 (分配) 多个对象。
 
 
 <!-- ====================================================================== -->
@@ -106,8 +106,8 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 |:--- |:--- |
 | **构造函数** | 表示使用此构造函数创建的所有对象。  |
 | **距离** | 使用节点的最短简单路径显示到根之间的距离。  |
-| **浅表大小** | 显示由特定构造函数函数创建的所有对象的浅表大小的总和。  浅表大小是由对象存储的内存大小 (，数组和字符串通常具有较大的浅) 。  导航到 [对象大小][DevtoolsMemoryProblems101ObjectSizes]。  |
-| **保留大小** | 显示同一组对象中保留的最大大小。  在删除对象后能够释放的内存大小 (从属项将不再可用) 称为保留大小。  导航到 [对象大小][DevtoolsMemoryProblems101ObjectSizes]。  |
+| **浅表大小** | 显示由特定构造函数函数创建的所有对象的浅表大小的总和。  浅表大小是由对象存储的内存大小 (，数组和字符串通常具有较大的浅) 。  导航到 [对象大小](./memory-101.md#object-sizes)。  |
+| **保留大小** | 显示同一组对象中保留的最大大小。  在删除对象后能够释放的内存大小 (从属项将不再可用) 称为保留大小。  导航到 [对象大小](./memory-101.md#object-sizes)。  |
 
 <!--| **Number of object instances** | Displayed in the # column.  |  -->
 
@@ -134,7 +134,7 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 ### <a name="comparison-view"></a>比较视图
 
-通过将多个快照相互比较来查找泄露的对象。  若要验证特定应用程序操作不会创建泄漏 (例如，通常一对直接和反向操作（如打开文档，然后关闭文档）不应留下任何) ，您可以遵循以下方案：
+通过将多个快照相互比较来查找泄露的对象。  若要验证特定应用程序操作不会 (例如，通常一对直接和反向操作（如打开文档，然后关闭文档）不会留下任何) ，您可以遵循以下方案：
 
 1.  在操作之前拍摄堆快照。
 1.  以你认为 (导致页面泄露的方式与页面进行交互) 。
@@ -151,7 +151,7 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 ### <a name="containment-view"></a>包含视图
 
-" **包含** "视图实质上是应用程序的对象结构的"鸟眼视图"。  它使你可以速览函数关闭，观察虚拟机 (VM) 共同组合 JavaScript 对象的内部对象，以及了解应用程序在非常低级别使用的内存量。
+" **包含** "视图实质上是应用程序的对象结构的"鸟眼视图"。  它使你可以速览函数关闭，观察虚拟机 (VM) 内部对象，这些内部对象共同组合 JavaScript 对象，并了解应用程序在非常低级别使用的内存量。
 
 | 包含视图入口点 | 描述 |
 |:--- |:--- |
@@ -197,7 +197,7 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 > -->
 >
 > > [!NOTE]
-> > 请试用此示例 [，了解为何 `eval` ][GlitchDevtoolsMemoryExample07] 需要分析关闭对内存的影响。  你可能还有兴趣通过此示例跟踪它，该示例将你完成记录 [堆分配][GlitchDevtoolsMemoryExample08]。
+> > 请试用此示例 [，了解为何 `eval` ](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-07.html) 需要分析关闭对内存的影响。  你可能还有兴趣通过此示例跟踪它，该示例将你完成记录 [堆分配](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-08.html)。
 >
 
 
@@ -208,8 +208,8 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 | 属性类型 | 描述 |
 |:--- |:--- |
-| **a： property** | 具有名称的常规属性，可通过 (点) 运算符访问，或通过 (方括号) 表示法访问 `.` `[` `]` ，例如 `["foo bar"]` 。  |
-| **0：元素** | 具有数字索引的常规属性，可通过 (`[` `]` 括号) 访问。  |
+| **a： property** | 具有名称的常规属性，可通过 (点) 运算符访问，或通过 (方括号) 表示法访问， `.` `[` `]` 例如 `["foo bar"]` 。  |
+| **0：元素** | 具有数值索引的常规属性，可通过 (`[` `]` 括号) 访问。  |
 | **a： context var** |  函数上下文中的变量，可通过函数关闭内部的变量名称访问。  |
 | **a： system prop** | JavaScript VM 添加的属性，无法通过 JavaScript 代码访问。  |
 
@@ -225,7 +225,7 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 <!-- ====================================================================== -->
 ## <a name="uncover-dom-leaks"></a>发现 DOM 泄漏
 
-堆探查器能够反映浏览器本机对象与 DOM 节点、CSS 规则 (JavaScript) 之间的双向依赖关系。
+堆探查器能够反映浏览器本机对象与 DOM 节点 (CSS 规则与 JavaScript) 之间的双向依赖关系。
 这有助于发现因忘记分离的 DOM 子树四处浮动而发生的不可见泄露。
 
 DOM 泄露可能大于您想象中。  请考虑以下示例。  何时将#tree GC？
@@ -244,16 +244,16 @@ leafRef = null;
 //#NOW able to be #tree GC
 ```
 
-保持对相关的父对象对 parentNode (的引用，) 递归到 ，因此仅在 leafRef 为 nullified 时，作为 GC 候选项下的 WHOLE 树 `#leaf` `#tree` `#tree` 。
+保留对相关的父 (parentNode) 递归到 的引用，因此仅在 leafRef 为 nullified 时，作为 GC 候选项下的 WHOLE 树 `#leaf` `#tree` `#tree` 。
 
 :::image type="complex" source="../media/memory-problems-tree-gc.msft.png" alt-text="DOM 子树" lightbox="../media/memory-problems-tree-gc.msft.png":::
    DOM 子树
 :::image-end:::
 
 > [!NOTE]
-> 示例：尝试此示例的泄露 [DOM 节点][GlitchDevtoolsMemoryExample06] ，了解它可能会泄露在哪里以及如何检测它。  您还可以查看此 DOM 泄漏 [大于预期的示例][GlitchDevtoolsMemoryExample09]。
+> 示例：尝试此示例的泄露 [DOM 节点](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html) ，了解它可能会泄露在哪里以及如何检测它。  您还可以查看此 DOM 泄漏 [大于预期的示例](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html)。
 
-若要阅读有关 DOM 泄漏和内存分析基础的更多内容，请参阅查找和调试由 Gonzalo Ruiz de Checkout 使用[Microsoft Edge DevTools][GonzaloRuizdeVillaMemory]发现和调试内存泄漏。
+若要阅读有关 DOM 泄漏和内存分析基础的更多内容，请参阅查找和调试由 Gonzalo Ruiz de Checkout 使用[Microsoft Edge DevTools](https://slid.es/gruizdevilla/memory)发现和调试内存泄漏。
 
 <!--
 > [!NOTE]
@@ -264,35 +264,15 @@ leafRef = null;
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsMemoryProblems101ObjectSizes]: ./memory-101.md#object-sizes "对象大小 - 内存术语|Microsoft Docs"
-[DevtoolsMemoryProblems101ObjectsRetainingTree]: ./memory-101.md#objects-retaining-tree "保留树的对象 - 内存术语|Microsoft Docs"
-
 <!--[DevToolsHeapProfilingComparison]: https://developer.alphabet.com/devtools/docs/heap-profiling-comparison ""  -->
 <!--[DevToolsHeapProfilingContainment]: https://developer.alphabet.com/devtools/docs/heap-profiling-containment ""  -->
 <!--[DevtoolsHeapProfilingDomLeaks]: https://developer.alphabet.com/devtools/docs/heap-profiling-dom-leaks ""  -->
 <!--[DevToolsHeapProfilingSummary]: https://developer.alphabet.com/devtools/docs/heap-profiling-summary ""  -->
 <!--[DevtoolsProfileMemoryProblemsDiagnosisCausesMemoryLeaks]: ../profile/memory-problems/memory-diagnosis#narrow-down-causes-of-memory-leaks ""  -->
 
-[GlitchDevtoolsMemoryExample03]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html "example-03.html - Microsoft Edge DevTools |小故障"
-[GlitchDevtoolsMemoryExample06]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html "example-06.html - Microsoft Edge DevTools |小故障"
-[GlitchDevtoolsMemoryExample07]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-07.html "example-07.html - Microsoft Edge DevTools |小故障"
-[GlitchDevtoolsMemoryExample08]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-08.html "example-08.html - Microsoft Edge DevTools |小故障"
-[GlitchDevtoolsMemoryExample09]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html "example-09.html - Microsoft Edge DevTools |小故障"
-[GlitchDevtoolsMemoryExample10]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-10.html "example-10.html - Microsoft Edge DevTools |小故障"
-
-[GonzaloRuizdeVillaMemory]: https://slid.es/gruizdevilla/memory "内存|幻灯片"
-
-
 <!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots) 由技术撰稿人 [Meggin Kearney][MegginKearney] (创作) 。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots) 由技术撰稿人 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (创作) 。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

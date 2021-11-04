@@ -22,12 +22,12 @@ no-loc:
 - Edit keyboard shortcuts for any action in the DevTools
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
-ms.openlocfilehash: ce9ea0abcefc428db8a7e561ae81b44d66e4f0ba
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 7f29f2d9b0bebe09f26ca2eb37656fe7ffab9268
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141262"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156583"
 ---
 # <a name="experimental-features"></a>试验功能
 
@@ -39,27 +39,27 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 <!-- ====================================================================== -->
 ## <a name="experimental-features-which-are-turned-on-by-default"></a>默认情况下打开的实验性功能
 
-自 94 Microsoft Edge起，以下实验功能默认打开。  这意味着可以马上使用这些功能，而无需更改任何设置。  如果需要，可以关闭这些默认实验功能。
+自 Microsoft Edge 94 起，默认情况下会启用以下实验功能。  这意味着可以马上使用这些功能，而无需更改任何设置。  如果需要，可以关闭这些默认实验功能。
 
 <!-- listed in this list in order per Settings > Experiments pane -->
 *  源订单查看器
-*  [Emulation: Support dual screen mode][DevtoolsDeviceModeDualScreenAndFoldables]从 90 开始，默认Microsoft Edge打开。
+*  [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md)从 90 开始，默认Microsoft Edge打开。
 *  Enable webhint
 *  在元素中显示问题
 *  Enable Composited Layers in 3D View
 *  DevTools 工具提示
 *  VS Code开发工具的主题
-*  启用键盘快捷方式编辑器 - 默认从 [Edit keyboard shortcuts for any action in the DevTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools] 89 Microsoft Edge打开。
+*  启用键盘快捷方式编辑器 - 默认从 [Edit keyboard shortcuts for any action in the DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) 89 Microsoft Edge打开。
 
 
 <!-- ====================================================================== -->
 ## <a name="turning-on-experimental-features"></a>打开实验性功能
 
-若要在 (中) 或关闭Microsoft Edge：
+若要在 (中) 或) 实验Microsoft Edge：
 
-1.  [打开 DevTools][DevtoolsOpenIndex]。  为此，在"Microsoft Edge"中，设置"更多"**** 按钮，这是三个点 (省略号) 。  然后将鼠标悬停在 **"更多工具"上**，然后选择"**开发人员工具"。**
+1.  [打开 DevTools](../open/index.md)。  为此，在"Microsoft Edge"中，设置"更多****"按钮，这是三个点 (省略号) 。  然后将鼠标悬停在 **"更多工具"上**，然后选择"**开发人员工具"。**
 
-1.  打开["设置][DevToolsCustomizeIndexSettings]工具"的"设置"窗格。  为此，请选择 **"设置 (** 齿轮) 图标。
+1.  打开["设置](../customize/index.md#settings)工具"的"设置"窗格。  为此，请选择 **"设置 (** 齿轮) 图标。
 
 1.  在"实验"窗格**设置，** 选择"实验 **"** 部分。
 
@@ -67,7 +67,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 1.  在 **实验** 页面上，滚动浏览所有可用实验功能的列表，并选中要测试的每个功能旁边的复选框。  某些实验默认打开。
 
-1.  选择**右上角**的 X 以**关闭设置。**
+1.  选择右上角的**X**以关闭**设置。**
 
 1.  选择" **重新加载 DevTools"** 按钮。
 
@@ -92,7 +92,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 :::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::no-loc (辅助功能窗格中的源订单查看器) ：：：。" lightbox="。。/media/experiments-source-order-viewer.msft.png"：：：
 
-此实验从版本 86 Microsoft Edge开始提供，并且默认打开。
+此实验从版本 86 Microsoft Edge开始，并且默认打开。
 
 
 <!-- ====================================================================== -->
@@ -100,7 +100,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 <!-- keep the period per the ui string literal -->
 <!-- found in Experiments in 94 60% down main list -->
 
-现在，可以使用新的可视 [字体编辑器来][DevtoolsInspectStylesEditFonts] 编辑字体。  使用它来定义字体和字体特征。  可视 **字体编辑器** 可帮助您执行以下操作：
+现在，可以使用新的可视 [字体编辑器](../inspect-styles/edit-fonts.md) 来编辑字体。  使用它来定义字体和字体特征。  可视 **字体编辑器** 可帮助您执行以下操作：
 
 *   在不同字体属性的单位之间切换
 *   在不同字体属性的关键字之间切换
@@ -112,7 +112,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 1.  打开“**样式**”窗格。
 1.  选择" **字体编辑器"** 图标。
 
-有关新的可视内容**字体编辑器**的详细信息，请导航到“[在 DevTools 的样式窗格中编辑 CSS 字体样式和设置][DevtoolsInspectStylesEditFonts]”。
+有关新的可视内容**字体编辑器**的详细信息，请导航到“[在 DevTools 的样式窗格中编辑 CSS 字体样式和设置](../inspect-styles/edit-fonts.md)”。
 
 :::image type="complex" source="../media/font-editor-open.msft.png" alt-text="突出显示可视内容字体编辑器窗格" lightbox="../media/font-editor-open.msft.png":::
    突出显示可视内容**字体编辑器**窗格
@@ -125,20 +125,20 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 ## Enable webhint
 <!-- on by default in 94 -->
 
-[webhint][WebhintMain] 是一个开源代码工具，可为网站和本地网页提供实时反馈。  Webhint 提供 [的反馈类型][WebhintMain] 包括：
+[webhint](https://webhint.io) 是一个开源代码工具，可为网站和本地网页提供实时反馈。  Webhint 提供 [的反馈类型](https://webhint.io) 包括：
 
 *   辅助功能
 *   跨浏览器兼容性
-*   安全
+*   安全性
 *   性能
 *   渐进式 Web 应用 (PWA)
 *   其他常见的 Web 开发问题
 
-[Webhint][WebhintMain] 试验在“[问题][DevtoolsIssuesIndex]”面板中显示 webhint 反馈。  选择一个问题，在网站上显示有关解决方案的文档和受影响资源的列表。  选择资源链接以在 DevTools******中**打开**** 相关的"网络、源"或"元素"窗格。
+[Webhint](https://webhint.io) 试验在“[问题](../issues/index.md)”面板中显示 webhint 反馈。  选择一个问题，在网站上显示有关解决方案的文档和受影响资源的列表。  选择资源链接以在 DevTools******中**打开**** 相关的"网络、源"或"元素"窗格。
 
 :::image type="content" source="../media/experiments-webhint.msft.png" alt-text="问题面板中的 webhint 反馈" lightbox="../media/experiments-webhint.msft.png":::
 
-此实验从版本 85 Microsoft Edge开始提供，并且默认打开。
+此实验从版本 85 Microsoft Edge开始，并且默认打开。
 
 
 <!-- ====================================================================== -->
@@ -155,7 +155,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 :::image type="content" source="../media/experiments-layers.msft.png" alt-text="复合层窗格" lightbox="../media/experiments-layers.msft.png":::
 
-此实验从版本 87 Microsoft Edge开始，并且默认打开。
+此实验从版本 87 Microsoft Edge开始提供，并且默认打开。
 
 
 <!-- ====================================================================== -->
@@ -183,11 +183,11 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 实验**中的开放源文件**Visual Studio Code源工具的代码编辑器替换为用于编辑Visual Studio Code文件的代码编辑器。  打开此实验时，开发人员工具会检测何时编辑本地文件，并提示你选择一个用作工作区的文件夹。
 
-选择要用作工作区的文件夹后，在 DevTools 中选择某个文件的任何链接将在 Visual Studio Code 中打开该文件，而不是在 DevTools 中源工具的代码编辑器中打开。
+选择要用作工作区的文件夹后，选择 DevTools 中某个文件的任何链接将在 Visual Studio Code 中打开该文件，而不是在 DevTools 中源工具的代码编辑器中打开。
 
 :::image type="content" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="在&quot;样式&quot;工具中选择文件链接将打开Visual Studio Code" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
 
-现在，你在 DevTools 中执行的任何编辑都将更改硬盘驱动器上的文件，并实时Visual Studio Code。  可以在打开数据源中的源文件中阅读有关[设置工作区Visual Studio Code。][OpenSourcesInVSCode]
+现在，你在 DevTools 中执行的任何编辑都将更改硬盘驱动器上的文件，并实时Visual Studio Code。  可以在打开数据源中的源文件中阅读有关[设置工作区Visual Studio Code。](../sources/opening-sources-in-vscode.md)
 
 此实验从版本 96 Microsoft Edge开始提供。
 
@@ -199,13 +199,13 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 这些功能已从实验提升为常规功能，并且已从实验**设置**  >  **中删除**。
 
-*  [Turn on new CSS grid debugging features][DevtoolsCssGrid]- 从实验状态中删除自 Microsoft Edge 89。
+*  [Turn on new CSS grid debugging features](../css/grid.md)- 从实验状态中删除自 Microsoft Edge 89。
 
-*  [Match keyboard shortcuts from Microsoft Visual Studio Code][DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode] - removed from Experimental status starting from Microsoft Edge 86.
+*  [Match keyboard shortcuts from Microsoft Visual Studio Code](../customize/shortcuts.md#match-keyboard-shortcuts-from-visual-studio-code) - removed from Experimental status starting from Microsoft Edge 86.
 
-*  [Turn on support to move tabs between panels][DevtoolsCustomizeIndex]- 从实验状态中删除，从 Microsoft Edge 85 开始。
+*  [Turn on support to move tabs between panels](../customize/index.md)- 从实验状态中删除，从 Microsoft Edge 85 开始。
 
-*  [3D View][Devtools3dViewIndex]- 从实验状态中删除，从 Microsoft Edge 83 开始。
+*  [3D View](../3d-view/index.md)- 从实验状态中删除，从 Microsoft Edge 83 开始。
 
 *  以下子节中的项目。
 
@@ -232,7 +232,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 每次更新 Microsoft Edge 后，**欢迎**工具都会自动打开。  若要防止每次更新后显示**欢迎**工具，请清除“**欢迎**”标题下“**每次更新后打开选项卡**”旁边的复选框。
 
-如果你更喜欢原始的“**新增功能**”工具，请导航到“[设置][DevtoolsCustomizeIndexSettings]” > “**试验**”，然后删除 **Enable Welcome tab** 旁边的复选框。
+如果你更喜欢原始的“**新增功能**”工具，请导航到“[设置](../customize/index.md#settings)” > “**试验**”，然后删除 **Enable Welcome tab** 旁边的复选框。
 
 :::image type="content" source="../media/experiments-welcome.msft.png" alt-text="欢迎工具" lightbox="../media/experiments-welcome.msft.png":::
 
@@ -269,24 +269,3 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 若要为 CSS 网格或弹性框布局配置持久覆盖层的选项，请使用“**布局**”窗格。  “**布局**”窗格位于“**样式**”和“**计算**”窗格旁边的“**元素**”工具中。
 
 :::image type="content" source="../media/flexbox-layout.msft.png" alt-text="布局面板" lightbox="../media/flexbox-layout.msft.png":::
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[OpenSourcesInVSCode]: ../sources/opening-sources-in-vscode.md "在文件中打开Visual Studio Code"
-[Devtools3dViewIndex]: ../3d-view/index.md ":::no-loc（3D 视图）::: | Microsoft Docs"
-[DevtoolsCssGrid]: ../css/grid.md "检查 Microsoft Edge DevTools 中的 CSS 网格 | Microsoft Docs"
-[DevtoolsCustomizeIndex]: ../customize/index.md "自定义 Microsoft Edge DevTools | Microsoft Docs"
-[DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action "编辑 DevTools 操作的键盘快捷方式 | Microsoft Docs"
-[DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-from-visual-studio-code "匹配来自代码Microsoft Visual Studio键盘|Microsoft Docs"
-[DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "在 Microsoft Edge DevTools 中模拟双屏幕可折叠设备 | Microsoft Docs"
-[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "在 Microsoft Edge DevTools 中通过设备模式模拟移动设备 | Microsoft Edge"
-[DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "在 DevTools 的“样式”窗格中编辑 CSS 字体样式和设置 | Microsoft Docs"
-[DevtoolsIssuesIndex]: ../issues/index.md "使用问题工具查找并修复问题 | Microsoft Docs"
-[DevtoolsOpenIndex]: ../open/index.md "打开 Microsoft Edge 开发人员工具 | Microsoft Docs"
-[DevtoolsShortcutsIndex]: ../shortcuts/index.md "Microsoft Edge DevTools 键盘快捷方式 | Microsoft Docs"
-<!-- external links: -->
-[MicrosoftEdgeMain]: https://www.microsoft.com/edge "Microsoft Edge"
-[TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"
-[WebhintMain]: https://webhint.io "webhint"

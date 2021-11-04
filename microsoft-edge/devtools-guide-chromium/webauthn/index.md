@@ -1,18 +1,18 @@
 ---
-description: 在 DevTools 中模拟验证Microsoft Edge调试 WebAuthn。
+description: 在 DevTools 中模拟验证Microsoft Edge WebAuthn。
 title: 在 DevTools 中模拟验证Microsoft Edge调试 WebAuthn
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 766c22017fc4f62deccd5ce3026109727b4c4415
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: ef279523205d0fc482471726e246dd6bc041887a
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139428"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156569"
 ---
 # <a name="emulate-authenticators-and-debug-webauthn-in-microsoft-edge-devtools"></a>在 DevTools 中模拟验证Microsoft Edge调试 WebAuthn
 
@@ -22,7 +22,7 @@ ms.locfileid: "12139428"
 <!-- ====================================================================== -->
 ## <a name="before-you-begin"></a>在开始之前
 
-Web 身份验证 API 规范是开始使用 [Web 身份验证的一个很好的位置][GithubW3cWebauthn]。
+Web 身份验证 API 规范是开始使用 [Web 身份验证的一个很好的位置](https://w3c.github.io/webauthn)。
 
 
 <!-- ====================================================================== -->
@@ -30,10 +30,10 @@ Web 身份验证 API 规范是开始使用 [Web 身份验证的一个很好的�
 
 1.  导航到使用 WebAuthn 的网页，如以下演示网站。
 
-    [webauthndemo.appspot.com][AppspotWebauthndemo]
+    [webauthndemo.appspot.com](https://webauthndemo.appspot.com)
 
 1.  登录到网站。
-1.  [打开 DevTools][DevtoolsGuideOpen]。
+1.  [打开 DevTools](../open/index.md)。
 1.  若要打开**WebAuthn**工具，请选择"自定义和控制**开发人员**工具" () "图标> `...` **更多工具**  >  **WebAuthn"。**
 
     :::image type="complex" source="../media/webauthn-webauthn-tab.msft.png" alt-text="WebAuthn 工具" lightbox="../media/webauthn-webauthn-tab.msft.png":::
@@ -49,12 +49,12 @@ Web 身份验证 API 规范是开始使用 [Web 身份验证的一个很好的�
 
 1.  在" **新建验证器"** 部分，配置以下选项。
 
-    | 选项 | Value | 详细信息 |
+    | 选项 | 值 | 详细信息 |
     |:--- |:--- |:--- |
-    | `Protocol` | [ctap2][FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml] 或 [u2f][FidoallianceSpecsU2fV12Ps20170411OverviewHtml] | 虚拟验证器用于编码和解码的协议 |
-    | `Transport` |   `usb``nfc` `ble` 、、、 或 `internal` | 虚拟验证器模拟选定的传输以便与客户端通信，以获取特定凭据的断言。  有关详细信息，请导航到Authenticator[枚举][GithubW3cWebauthnEnumTransport] |
-    |  `Supports resident keys` | 使用复选框 (或) 或关闭" | 如果 Web 应用依赖于常驻密钥， (也称为客户端可发现凭据) 。  有关详细信息，请导航到 [Resident Key Requirement 枚举][GithubW3cWebauthnEnumResidentkeyrequirement]。 |
-    | `Supports user verification` | 使用复选框 (或) 或关闭" | 如果 Web 应用依赖使用手势形式（如触摸和引脚代码、密码输入或生物识别识别）的本地授权，则打开。  有关详细信息，请导航到" [用户验证"][GithubW3cWebauthnEnumUserverification] |
+    | `Protocol` | [ctap2](https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html) 或 [u2f](https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-u2f-overview-v1.2-ps-20170411.html) | 虚拟验证器用于编码和解码的协议 |
+    | `Transport` |   `usb``nfc` `ble` 、、、 或 `internal` | 虚拟验证器模拟所选传输以便与客户端通信，以获取特定凭据的断言。  有关详细信息，请导航到Authenticator[枚举](https://w3c.github.io/webauthn#enum-transport) |
+    |  `Supports resident keys` | 使用复选框 (或) 或关闭" | 如果 Web 应用依赖于常驻密钥， (也称为客户端可发现凭据) 。  有关详细信息，请导航到 [Resident Key Requirement 枚举](https://w3c.github.io/webauthn#enum-residentKeyRequirement)。 |
+    | `Supports user verification` | 使用复选框 (或) 或关闭" | 如果 Web 应用依赖使用手势形式（如触摸和引脚代码、密码输入或生物识别识别）的本地授权，则打开。  有关详细信息，请导航到" [用户验证"](https://w3c.github.io/webauthn#user-verification) |
 
 1.  选择“添加”按钮****。
 1.  将显示新创建的验证器的新部分。
@@ -73,7 +73,7 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
 <!-- ====================================================================== -->
 ## <a name="register-a-new-credential"></a>注册新凭据
 
-若要注册新凭据，请完成以下步骤。  有关注册新凭据时[Web 身份验证 API][GithubW3cWebauthn]正在执行哪些操作的信息，请导航到"[新建凭据"。][GithubW3cWebauthnSctnCreatecredential]
+若要注册新凭据，请完成以下步骤。  有关注册新凭据时[Web 身份验证 API](https://w3c.github.io/webauthn)正在执行哪些操作的信息，请导航到"[新建凭据"。](https://w3c.github.io/webauthn#sctn-createCredential)
 
 1.  在演示网站上，选择"**注册新凭据"。**
 1.  此时，新的凭据将添加到 WebAuthn 工具中的 **Credentials** 表中。
@@ -82,7 +82,7 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
        查看凭据
     :::image-end:::
 
-在演示网站上，选择"验证 **"** 按钮。  确认"[凭据"表中的][GithubW3cWebauthnSctnSignCounter]凭据的"签名计数****"增加了 1，这表示[authenticatorGetAssertion][GithubW3cWebauthnAuthenticatorgetassertion]操作成功。
+在演示网站上，选择"验证 **"** 按钮。  确认"[凭据"表中的](https://w3c.github.io/webauthn/#sctn-sign-counter)凭据的"签名计数****"增加了 1，这表示[authenticatorGetAssertion](https://w3c.github.io/webauthn#authenticatorgetassertion)操作成功。
 
 
 <!-- ====================================================================== -->
@@ -132,32 +132,8 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-
-[DevtoolsGuideOpen]: ../open/index.md "打开 Microsoft Edge 开发人员工具 | Microsoft Docs"
-
-[AppspotWebauthndemo]: https://webauthndemo.appspot.com "Webauthn 演示|Appspot"
-
-[FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml]: https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html "CTAP Authenticator客户端 (协议) |fido 联盟"
-[FidoallianceSpecsU2fV12Ps20170411OverviewHtml]: https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-u2f-overview-v1.2-ps-20170411.html "通用 2nd 因素 (U2F) 概述|fido 联盟"
-
-[GithubW3cWebauthn]: https://w3c.github.io/webauthn "Web 身份验证：用于访问公钥凭据级别 2 的 API |GitHub"
-[GithubW3cWebauthnAuthenticatorgetassertion]: https://w3c.github.io/webauthn#authenticatorgetassertion "authenticatorGetAssertion 操作 - Web 身份验证：用于访问公钥凭据级别 2 的 API |GitHub"
-[GithubW3cWebauthnEnumTransport]: https://w3c.github.io/webauthn#enum-transport "AuthenticatorTransport Enumeration (enum AuthenticatorTransport) - Web Authentication：用于访问公钥凭据级别 2 的 API |W3C"
-[GithubW3cWebauthnEnumResidentkeyrequirement]: https://w3c.github.io/webauthn#enum-residentKeyRequirement "Resident Key Requirement 枚举 (枚举 ResidentKeyRequirement) - Web 身份验证：用于访问公钥凭据级别 2 的 API |W3C"
-[GithubW3cWebauthnEnumUserverification]: https://w3c.github.io/webauthn#user-verification "用户验证 - Web 身份验证：用于访问公钥凭据级别 2 的 API |W3C"
-[GithubW3cWebauthnSctnCreatecredential]: https://w3c.github.io/webauthn#sctn-createCredential "创建新的凭据 - PublicKeyCredential 的 [[Create]] (源、选项、sameOriginWithAncestors) 方法 - Web 身份验证：用于访问公钥凭据级别 2 的 API |GitHub"
-[GithubW3cWebauthnSctnSignCounter]: https://w3c.github.io/webauthn/#sctn-sign-counter "签名计数器注意事项 - Web 身份验证：用于访问公钥凭据级别 2 的 API |GitHub"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/webauthn/index) ，由 [Jecelyn Yeen][JecelynYeen] 和开发人员 (Chrome DevTools) 。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/webauthn/index)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

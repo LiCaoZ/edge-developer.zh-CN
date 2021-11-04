@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: c4a405c69cffd57b3aba4e01dbad28edc329dd53
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: b0a62eed84646bd6bbaee1848cbe8de1ce1193cb
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140667"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157208"
 ---
 <!-- Copyright Kayce Basques
 
@@ -39,7 +39,7 @@ ms.locfileid: "12140667"
 <!-- ====================================================================== -->
 ## <a name="prerequisites"></a>必备条件
 
-*   你应具备基本的 Web 开发体验，类似此[Web 开发类简介][CourseraIntroductionWebDevelopmentClass]中所教授的内容。
+*   你应具备基本的 Web 开发体验，类似此[Web 开发类简介](https://www.coursera.org/learn/web-development#syllabus)中所教授的内容。
 *   你无需了解加载性能的任何信息。  本教程中将帮助你了解。
 
 
@@ -91,7 +91,7 @@ ms.locfileid: "12140667"
        开发人员工具和演示
     :::image-end:::
 
-对于本教程中的其余屏幕截图，开发人员工具显示在单独窗口中。  Select `Control` + `Shift` + `P` (Windows， Linux) or `Command` + `Shift` + `P` (macOS) to open the Command Menu， typing `Undock` ， and then selecting **Undock into separate window**.
+对于本教程中的其余屏幕截图，开发人员工具显示在单独窗口中。  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) `Undock` **** 打开"命令菜单"，键入 ，然后选择"在单独的窗口中取消停靠"。
 
 :::image type="complex" source="../media/speed-console.msft.png" alt-text="移除的开发人员工具" lightbox="../media/speed-console.msft.png":::
    移除的开发人员工具
@@ -233,7 +233,7 @@ ms.locfileid: "12140667"
        **标头**面板
     :::image-end:::
 
-1.  在**响应标头**部分搜索`content-encoding` 标头。  `content-encoding`标头不显示，意味着`bundle.js`未被压缩。  压缩资源时，此标头通常设置为 `gzip`、`deflate`或`br`。  有关这些值的说明，请导航到[指令][MDNContentEncodingDirectives]。
+1.  在**响应标头**部分搜索`content-encoding` 标头。  `content-encoding`标头不显示，意味着`bundle.js`未被压缩。  压缩资源时，此标头通常设置为 `gzip`、`deflate`或`br`。  有关这些值的说明，请导航到[指令](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Encoding#Directives)。
 
 说明已经足够。  现在开始进行更改。  通过添加几行代码启用文本压缩：
 
@@ -335,7 +335,7 @@ ms.locfileid: "12140667"
 
 *   使用图像 CDN，可以在发出请求时动态调整图像大小。
 *   至少，可以优化每个图像。  这可能会节省大量空间。
-  优化是指通过减少图像文件大小的特殊程序运行图像。  有关更多提示，请导航到[基本图像优化][EssentialImageOptimization]。
+  优化是指通过减少图像文件大小的特殊程序运行图像。  有关更多提示，请导航到[基本图像优化](https://images.guide)。
 
 ### <a name="eliminate-render-blocking-resources"></a>消除阻止渲染资源
 
@@ -351,7 +351,7 @@ ms.locfileid: "12140667"
        有关**消除阻止渲染资源机会**的详细信息
     :::image-end:::
 
-1.  Select `Control` + `Shift` + `P` (Windows， Linux) or `Command` + `Shift` + `P` (macOS) to open the Command Menu， start typing `Coverage` ， and then choose Show **Coverage**.
+1.  选择 (Windows、Linux) 或 (macOS) 打开"命令菜单"，开始 `Control` + `Shift` + `P` `Command` + `Shift` + `P` 键入 `Coverage` ，然后选择"**显示覆盖"。**
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png" alt-text="从审核面板打开命令菜单" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png":::
        从**审核**面板打开“命令菜单”
@@ -387,7 +387,7 @@ ms.locfileid: "12140667"
        **请求阻止**工具
     :::image-end:::
 
-1.  选择 **添加模式** (![ 添加 ](../media/add-pattern-icon.msft.png)) ，键入 `/libs/*` ，然后选择 `Enter` 进行确认。
+1.  选择 **添加模式** (![ 添加 ](../media/add-pattern-icon.msft.png)) ，键入 `/libs/*` ，然后选择 `Enter` 以确认。
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png" alt-text="添加模式，阻止对库目录的任何请求" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png":::
        添加模式，阻止对`libs`目录的任何请求
@@ -399,7 +399,7 @@ ms.locfileid: "12140667"
        **网络**工具显示请求已被阻止
     :::image-end:::
 
-1.  选择 **删除所有 (** ![ 删除所有) ](../media/remove-icon.msft.png) 删除 `/libs/*` 阻止模式。
+1.  选择 **"删除所有模式** (![ 删除所有) ](../media/remove-icon.msft.png) 删除 `/libs/*` 阻止模式。
 
 通常，**请求阻止**工具可以用于模拟页面在给定资源不可用时的行为方式。
 
@@ -421,7 +421,7 @@ ms.locfileid: "12140667"
 <!--[CRP]: /web/fundamentals/performance/critical-rendering-path/  -->
 
 *   虽然不太可能找到能够彻底删除的脚本，但可能找到许多在页面加载期间无需请求的脚本，它们可以异步请求。  <!--Navigate to [Using async or defer][async].  -->
-*   如果你使用框架，请检查其是否包含生产模式。  此模式可能使用[摇树优化][WebpackTreeShaking]等功能，从而消除阻止关键渲染不必要的代码。
+*   如果你使用框架，请检查其是否包含生产模式。  此模式可能使用[摇树优化](https://webpack.js.org/guides/tree-shaking)等功能，从而消除阻止关键渲染不必要的代码。
 
 <!--[async]: /web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#use_async_or_defer  -->
 
@@ -450,7 +450,7 @@ ms.locfileid: "12140667"
 
 调查跟踪，查找减少 JavaScript 工作的方法：
 
-1.  选择并展开**计时** 部分。  基于 React 中可能存在许多[计时][MDNUserTimingApi]测量的事实，Tony 的应用似乎正使用 React 的开发模式。  切换到 React 的生产模式可能会产生一些简单的性能优势。
+1.  选择并展开**计时** 部分。  基于 React 中可能存在许多[计时](https://developer.mozilla.org/docs/Web/API/User_Timing_API)测量的事实，Tony 的应用似乎正使用 React 的开发模式。  切换到 React 的生产模式可能会产生一些简单的性能优势。
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png" alt-text="&quot;计时&quot;部分" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png":::
        **计时**部分
@@ -505,7 +505,7 @@ ms.locfileid: "12140667"
 最后更改似乎大幅提升了性能！
 
 > [!NOTE]
-> 此部分简要介绍了“性能”面板。  若要了解如何分析页面性能的详细信息，请导航到[性能分析参考][DevtoolsEvaluatePerformanceReference]。
+> 此部分简要介绍了“性能”面板。  若要了解如何分析页面性能的详细信息，请导航到[性能分析参考](../evaluate-performance/reference.md)。
 
 <!--todo: add section when available -->
 
@@ -513,7 +513,7 @@ ms.locfileid: "12140667"
 
 通常， **性能**工具作为最常用的方法，可以了解站点在加载时执行哪些活动，以及找到删除不必要活动的方法。
 
-如果你倾向于更像`console.log()`的方法，则[用户计时 API][MDNUserTimingApi]将允许你任意标记应用生命周期的某些阶段，从而跟踪每个阶段花费的时间。
+如果你倾向于更像`console.log()`的方法，则[用户计时 API](https://developer.mozilla.org/docs/Web/API/User_Timing_API)将允许你任意标记应用生命周期的某些阶段，从而跟踪每个阶段花费的时间。
 
 
 <!-- ====================================================================== -->
@@ -531,27 +531,8 @@ ms.locfileid: "12140667"
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsEvaluatePerformanceReference]: ../evaluate-performance/reference.md "性能分析参考 | Microsoft Docs"
-<!-- external links -->
-[CourseraIntroductionWebDevelopmentClass]: https://www.coursera.org/learn/web-development#syllabus "Web 开发类简介 | Coursera"
-
-[EssentialImageOptimization]: https://images.guide "基本图像优化"
-
-[MDNContentEncodingDirectives]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Encoding#Directives "指令 - Content-Encoding | MDN"
-[MDNUserTimingApi]: https://developer.mozilla.org/docs/Web/API/User_Timing_API "用户计时 API | MDN"
-
-[WebpackTreeShaking]: https://webpack.js.org/guides/tree-shaking "摇树优化 | webpack"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/speed/get-started)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/speed/get-started)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

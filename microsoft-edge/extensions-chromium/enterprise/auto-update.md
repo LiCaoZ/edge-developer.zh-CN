@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 3c69d4e7cefc437b61184fe1fc7be3b0a7b36018
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 07efcff5df421b925a95753fbadf8478bf4ec794
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141304"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155379"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -40,7 +40,7 @@ ms.locfileid: "12141304"
 现在，Microsoft Edge加载项网站托管扩展，并且使用与加载项相同的机制更新Microsoft Edge。  你无法控制更新机制。  更新依赖本机二进制文件的扩展时请谨慎。
 
 > [!NOTE]
-> 本文不适用于使用合作伙伴中心仪表板[发布的扩展。][MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd]  可以使用仪表板向用户和加载项网站发布Microsoft Edge版本。  有关详细信息，请导航到更新[Microsoft Edge扩展][ExtensionsPublishUpdateExtension]。
+> 本文不适用于使用合作伙伴中心仪表板[发布的扩展。](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)  可以使用仪表板向用户和加载项网站发布Microsoft Edge版本。  有关详细信息，请导航到更新[Microsoft Edge扩展](../publish/update-extension.md)。
 
 
 <!-- ====================================================================== -->
@@ -85,7 +85,7 @@ ms.locfileid: "12141304"
 
 | 属性 | 详细信息 |
 |:--- |:--- |
-| `appid` | 扩展 ID 是基于公钥的哈希生成的。  若要查找扩展的 ID，请打开 Microsoft Edge 并导航到 `edge://extensions` 。 |
+| `appid` | 扩展 ID 是基于公钥的哈希生成的。  若要查找扩展的 ID，请打开Microsoft Edge并导航到 `edge://extensions` 。 |
 | `codebase` | 指向文件的 `.crx` URL。 |
 | `version` | 此属性值由 Microsoft Edge确定是否应下载 `.crx` 由 指定的文件 `codebase` 。  它应匹配 `version` 文件文件中 `manifest.json` `.crx` 的值。 |
 
@@ -95,7 +95,7 @@ ms.locfileid: "12141304"
 <!-- ====================================================================== -->
 ## <a name="testing"></a>测试
 
-默认更新检查频率为几个小时。  若要强制更新，请导航 `edge://extensions` 到"现在 **更新扩展"** 按钮并选择该按钮。
+默认更新检查频率为几个小时。  若要强制更新，请导航 `edge://extensions` 到 并选择" **现在更新扩展"** 按钮。
 
 
 <!-- ====================================================================== -->
@@ -170,17 +170,9 @@ http://contoso.com/extension_updates.php?x=id%3Daaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 </gupdate>
 ```
 
-<!-- links -->
-[ExtensionsPublishUpdateExtension]: ../publish/update-extension.md "更新Microsoft Edge扩展|Microsoft Docs"
-
-[MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "合作伙伴中心"
 
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/docs/apps/autoupdate)。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

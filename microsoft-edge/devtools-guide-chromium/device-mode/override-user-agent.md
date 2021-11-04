@@ -1,18 +1,18 @@
 ---
 description: 打开"网络条件"工具，禁用"自动选择"，然后从列表中选择或输入自定义字符串。
-title: 从 DevTools 重写Microsoft Edge字符串
+title: 在 DevTools 中Microsoft Edge代理字符串
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 40c2a5f3380d56b5389a62d1faac4f67e0a69c41
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 7bbe7f62b39ac302efbd25b84959eded5baf65a6
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139967"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156793"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,9 +27,9 @@ ms.locfileid: "12139967"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="override-the-user-agent-string-from-microsoft-edge-devtools"></a>从 DevTools 重写Microsoft Edge字符串
+# <a name="override-the-user-agent-string-from-microsoft-edge-devtools"></a>在 DevTools 中Microsoft Edge代理字符串
 
-若要替代[DevTools 中的][MDNUserAgent]用户Microsoft Edge字符串：
+若要替代[DevTools 中的](https://developer.mozilla.org/docs/Glossary/User_agent)用户Microsoft Edge字符串：
 
 1. 选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令**菜单**。
 
@@ -48,18 +48,8 @@ ms.locfileid: "12139967"
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "用户代理|MDN"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/device-mode/override-user-agent)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/device-mode/override-user-agent)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

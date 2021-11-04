@@ -1,5 +1,5 @@
 ---
-description: 有关验证 Selenium Tools for Microsoft Edge的信息。
+description: 有关验证 Selenium Tools for Microsoft Edge签名的信息。
 title: 正在验证 Microsoft Edge 的 Selenium 工具下载
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,20 +8,20 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， webdriver， selenium， 测试， 工具， 自动化， 测试
-ms.openlocfilehash: b10bb0b495455e15f439e4f31ee6d27a728ec387
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: bbb6afc894c5288bc183845c0b263b743957d5b3
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141136"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157248"
 ---
 # <a name="verify-downloads-of-selenium-tools-for-microsoft-edge"></a>验证 Selenium Tools for Microsoft Edge
 
-本文提供在验证[Selenium Tools][GithubMicrosoftEdgeSeleniumToolsReleases]for Microsoft Edge 发行版的签名时使用的公钥。
+本文提供在验证[Selenium Tools](https://github.com/microsoft/edge-selenium-tools/releases)for Microsoft Edge 发行版的签名时使用的公钥。
 
-适用于[Java的][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] [Selenium 工具Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases]使用[GPG 进行签名][Gnupg]。
+适用于[Java的](https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java) [Selenium 工具Microsoft Edge](https://github.com/microsoft/edge-selenium-tools/releases)使用[GPG 进行签名](https://gnupg.org)。
 
-使用以下密钥验证开发人员工具团队提供的Microsoft Edge[签名][TwitterEdgeDevTools]。
+使用以下密钥验证开发人员工具团队提供的Microsoft Edge[签名](https://twitter.com/edgedevtools)。
 
 
 <!-- ====================================================================== -->
@@ -51,13 +51,3 @@ ptJfPKT84TtqmRoJApBgxAsnD4t4JiuvnHkYHgzAzwcXFiofj2cCeJZf1tzIk6+Z
 =0iMW
 -----END PGP PUBLIC KEY BLOCK-----
 ```
-
-<!-- links -->
-
-[GithubMicrosoftEdgeSeleniumToolsReleases]: https://github.com/microsoft/edge-selenium-tools/releases "microsoft/edge-selenium-tools |GitHub"
-
-[Gnupg]: https://gnupg.org "|系统"
-
-[MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava]:https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java "com.microsoft.edge：msedge-selenium-tools-java |sonatype Maven 中央存储库搜索"
-
-[TwitterEdgeDevTools]: https://twitter.com/edgedevtools "Microsoft Edge DevTools | Twitter"

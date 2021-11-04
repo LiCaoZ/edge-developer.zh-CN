@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 7cebfd539dc9caeef226a9717e6da3da221de4ac
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 78a68fab4e65c7d83c9ac62abba656d23de27b75
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141472"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155827"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,7 +29,7 @@ ms.locfileid: "12141472"
    limitations under the License.  -->
 # <a name="force-microsoft-edge-devtools-into-print-preview-mode"></a>强制Microsoft Edge开发人员工具进入打印预览模式
 
-打印 [媒体查询][MDNUsingMediaQueries] 控制页面在打印时的外观。  若要强制页面进入打印预览模式：
+打印 [媒体查询](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) 控制页面在打印时的外观。  若要强制页面进入打印预览模式：
 
 1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令**菜单**。
 
@@ -44,23 +44,12 @@ ms.locfileid: "12141472"
        打印预览模式
     :::image-end:::
 
-可以在此处显示和更改 CSS，就像任何其他网页一样。  导航到“[查看和更改 CSS 入门][DevToolsCSSGetStarted]”。
+可以在此处显示和更改 CSS，就像任何其他网页一样。  导航到“[查看和更改 CSS 入门](./index.md)”。
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge开发人员工具|Microsoft Docs"
-[DevToolsCSSGetStarted]: ./index.md "开始查看和更改 CSS |Microsoft Docs"
-
-[MDNUsingMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "使用媒体查询|MDN"
-
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/css/print-preview)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/css/print-preview)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

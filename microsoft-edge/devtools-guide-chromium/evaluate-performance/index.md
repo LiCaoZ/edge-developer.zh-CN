@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 919eb8080d1116ecbe186f9fc9786e51dcae5edb
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 301b184c91fd6560af17d68d584fbcd2bbe0cd85
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141605"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155610"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,7 +30,7 @@ ms.locfileid: "12141605"
 # <a name="get-started-with-analyzing-runtime-performance"></a>即可体验分析运行时性能
 
 > [!NOTE]
-> 要了解如何使网页加载速度更快，请浏览[优化网站速度][DevtoolsSpeedGetStarted]。
+> 要了解如何使网页加载速度更快，请浏览[优化网站速度](../speed/get-started.md)。
 
 运行时性能是页面运行（而不是加载）时的性能。  下面的教程文章教导如何使用Microsoft Edge DevTools性能面板来分析运行时性能。  在 **RAIL** 模型方面，你在本教程中学习的技能对于分析页面的响应、动画和空闲阶段很有用。
 
@@ -59,7 +59,7 @@ ms.locfileid: "12141605"
     :::image-end:::
 
     > [!NOTE]
-    > 对于数据的其余部分，DevTools [解锁到一个单独的窗口][DevtoolsCustomizePlacement]以便更加关注于内容。
+    > 对于数据的其余部分，DevTools [解锁到一个单独的窗口](../customize/placement.md)以便更加关注于内容。
 
 ### <a name="simulate-a-mobile-cpu"></a>模拟移动 CPU
 
@@ -94,7 +94,7 @@ ms.locfileid: "12141605"
 
 运行优化版本的页面时，蓝色图标会移动得更快。  为什么？  两种版本都应该在相同的时间内将图标移动相同的空间。  在 "性能" 面板中进行录制，了解如何检测未优化版本中的性能瓶颈。
 
-1.  在 DevTools 中， **选择"记录** (![ 记录 ](../media/record-icon.msft.png)) 。  页面运行时，DevTools 将捕获效果指标。
+1.  在 DevTools 中 **，选择"** 记录 (![ 记录 ](../media/record-icon.msft.png)) 。  页面运行时，DevTools 将捕获效果指标。
 
     :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="配置文件页面" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
        配置文件页面
@@ -187,7 +187,7 @@ ms.locfileid: "12141605"
     1.  重点关注**动画帧触发**事件右上角的红色三角形。  每当显示红色三角形时，都会显示一条警告，指出可能有与事件相关的问题。
 
     > [!NOTE]
-    > 每当运行 [requestAnimationFrame()][MDNWebRequestAnimationFrame] 时，将发生 **动画帧触发**事件。
+    > 每当运行 [requestAnimationFrame()](https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame) 时，将发生 **动画帧触发**事件。
 
 1.  选择**动画帧触发**事件。  “**摘要**”面板现在将显示有关该事件的信息。  请注意“**显示**”链接。  选择后，DevTools 将突出显示启动 **动画帧触发** 事件。  另外，请关注**app.js:95**链接。  选择后，将显示源代码中的相关行。
 
@@ -230,7 +230,7 @@ ms.locfileid: "12141605"
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.
 To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->
 
-为了更加熟悉**性能**工具，需要多加练习。  试着对页面进行剖析并分析结果。  如果你对结果有任何疑问，请使用发送反馈图标，选择**** `Alt` + `Shift` + `I` (Windows、Linux) 、选择 (macOS) 或 `Option` + `Shift` + `I` [DevTools][TwitterEdgeDevtools]团队的推文。  如果可能，请包括屏幕截图或指向可重现页面的链接。
+为了更加熟悉**性能**工具，需要多加练习。  试着对页面进行剖析并分析结果。  如果你对结果有任何疑问，请使用发送反馈图标，选择**** `Alt` + `Shift` + `I` (Windows、Linux) 、选择 (macOS) 或 `Option` + `Shift` + `I` [DevTools](https://twitter.com/intent/tweet?text=@EdgeDevTools)团队的推文。  如果可能，请包括屏幕截图或指向可重现页面的链接。
 
 :::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="Microsoft Edge 开发人员工具中的**反馈**图标" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
    Microsoft Edge DevTools 中的**发送反馈**图标
@@ -251,18 +251,8 @@ To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsCustomizePlacement]: ../customize/placement.md "将 DevTools 放置 (Undock、Dock 更改为 Bottom、Dock to Left) "
-[DevtoolsSpeedGetStarted]: ../speed/get-started.md "使用 Microsoft Edge 开发人员工具优化网站速度"
-
-[TwitterEdgeDevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "EdgeDevTools - 发布推文 | Twitter"
-
-[MDNWebRequestAnimationFrame]: https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame "Window.requestAnimationFrame () |MDN"
-
 <!--[InPrivate]: https://support.microsoft.com/help/4026200/microsoft-edge-browse-inprivate "Browse InPrivate in Microsoft Edge"  -->
-
 <!--[FrameAnatomy]: https://aerotwist.com/blog/the-anatomy-of-a-frame  -->
-
 <!--[RAIL]: /web/fundamentals/performance/rail  -->
 <!--[RenderingAvoidSynchronousLayouts]: /web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing#avoid_forced_synchronous_layouts  -->
 <!--[RenderingAvoidThrashing]: /web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing  -->
@@ -273,16 +263,10 @@ To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->
 <!--[RenderingPerformance]: /web/fundamentals/performance/rendering  -->
 <!--[RenderingReduceScope]: /web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations  -->
 <!--[RenderingSimplifyPaint]: /web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas  -->
-
 <!--[StackOverflowAlphabetBrowserDevtools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser - Stack Overflow"  -->
 
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

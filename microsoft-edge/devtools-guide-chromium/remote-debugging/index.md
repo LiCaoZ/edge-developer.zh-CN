@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: acb023ad7ff0fcaa567ad037fc73d2ef9e341da7
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 4e63c9004d5ef07eb1230e2bc4b5d1fc7fcd125c
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139708"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156282"
 ---
 <!-- Copyright Kayce Basques
 
@@ -43,7 +43,7 @@ ms.locfileid: "12139708"
 
 > [!NOTE]
 > 当前不支持在 iOS 设备上远程调试 Microsoft Edge 应用程序。   以下指南专门针对 Android 设备上的 Microsoft Edge 进行远程调试。
-> 如果使用的是 macOS 设备，请按照 [Brightcove 调试指南][BrightcoveSupportDebuggingMobileDevices]使用 Safari 在 iOS 设备上远程调试 Microsoft Edge。  有关 Safari 中的 Web 检查器工具的更多信息，请导航至 [Safari Web 开发工具][AppleDeveloperSafariTools]。
+> 如果使用的是 macOS 设备，请按照 [Brightcove 调试指南](https://general.support.brightcove.com/developer/debugging-mobile-devices.html)使用 Safari 在 iOS 设备上远程调试 Microsoft Edge。  有关 Safari 中的 Web 检查器工具的更多信息，请导航至 [Safari Web 开发工具](https://developer.apple.com/safari/tools)。
 
 
 <!-- ====================================================================== -->
@@ -51,7 +51,7 @@ ms.locfileid: "12139708"
 
 下面的工作流适用于大多数用户。  有关更多帮助信息，请导航至[疑难解答：DevTools 未检测 Android 设备](#troubleshooting-devtools-is-not-detecting-the-android-device)一节。
 
-1.  打开 Android 上的“**开发人员选项**”屏幕。  有关更多信息，请导航至[配置设备上开发人员选项][AndroidDeveloperStudioDevOptions]。
+1.  打开 Android 上的“**开发人员选项**”屏幕。  有关更多信息，请导航至[配置设备上开发人员选项](https://developer.android.com/studio/debug/dev-options)。
 1.  选择“**启用 USB 调试**”。
 1.  在开发计算机上，打开 Microsoft Edge。
 1.  导航到 Microsoft Edge 中的 `edge://inspect` 页面。
@@ -84,8 +84,8 @@ ms.locfileid: "12139708"
 
 使用以下提示可帮助你验证软件是否正确设置。
 
-*   如果你的开发计算机运行的是 Windows，请尝试手动为 Android 设备安装 USB 驱动程序。  有关详细信息，请导航到[安装 OEM USB 驱动程序][AndroidDeveloperToolsOemUsb]。
-*   Windows Android 设备 (特别是 Samsung) 需要其他设置。  有关详细信息，请导航到[插入时开发工具设备无法检测到设备。][Stackoverflow21925992]
+*   如果你的开发计算机运行的是 Windows，请尝试手动为 Android 设备安装 USB 驱动程序。  有关详细信息，请导航到[安装 OEM USB 驱动程序](https://developer.android.com/tools/extras/oem-usb.html)。
+*   Windows Android (（尤其是 Samsung) ）的一些组合需要其他设置。  有关详细信息，请导航到[插入时开发工具设备无法检测到设备。](https://stackoverflow.com/questions/21925992)
 
 如果 Android 设备上未显示“**允许 USB 调试**”提示，请使用以下提示来帮助你排除故障。
 
@@ -95,10 +95,10 @@ ms.locfileid: "12139708"
     > 如果 Android 或开发计算机屏幕已锁定，则显示提示。
 
 *   更新 Android 设备和开发机的显示设置，以使每台设备都不会进入睡眠状态。
-*   将 Android 的 USB 模式设置为 PTP。  有关更多信息，请导航至 [Galaxy S4 不显示“授权 USB 调试”对话框][StackexchangeAndroid101933]。
+*   将 Android 的 USB 模式设置为 PTP。  有关更多信息，请导航至 [Galaxy S4 不显示“授权 USB 调试”对话框](https://android.stackexchange.com/questions/101933)。
 *   从 Android 设备上的“**开发人员选项**”屏幕上选择“**撤销 USB 调试授权**”，以将其重置为新状态。
 
-如果找到未在本页面或堆栈溢出的[插入时开发工具设备无法检测到设备][Stackoverflow21925992]上提及的解决方案，请将解决方案添加到堆栈溢出问题<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->.
+如果找到未在本页面或堆栈溢出的[插入时开发工具设备无法检测到设备](https://stackoverflow.com/questions/21925992)上提及的解决方案，请将解决方案添加到堆栈溢出问题<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->.
 
 
 <!-- ====================================================================== -->
@@ -154,30 +154,12 @@ Choose **Toggle Screencast** (![ Toggle Screencast) icon to view the content ](.
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-<!-- external links -->
-[AndroidDeveloperStudioDevOptions]: https://developer.android.com/studio/debug/dev-options "配置设备上开发人员选项 | Android 开发人员"
-[AndroidDeveloperToolsOemUsb]: https://developer.android.com/tools/extras/oem-usb.html "安装 OEM USB 驱动程序 | Android 开发人员"
-
-[AppleDeveloperSafariTools]: https://developer.apple.com/safari/tools "Safari Web 开发工具| Apple 开发人员"
-
-[BrightcoveSupportDebuggingMobileDevices]: https://general.support.brightcove.com/developer/debugging-mobile-devices.html "在移动设备上调试 | Brightcove 支持"
-
 <!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->
-
-[StackexchangeAndroid101933]: https://android.stackexchange.com/questions/101933 "adb - Android Enthusiast Stack Exchange"
-
-[Stackoverflow21925992]: https://stackoverflow.com/questions/21925992 "插入时开发工具设备无法检测到设备 - 堆栈溢出"
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

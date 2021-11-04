@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， 窗口控件覆盖， API
-ms.openlocfilehash: 52933abb4d1388faccb70c124b146a3dd8b78803
-ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
+ms.openlocfilehash: 4c9d8819bdf232e5f2d46475318f743fa289f9e6
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "12087111"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156198"
 ---
 # <a name="display-content-in-the-title-bar"></a>在标题栏中显示内容
 
@@ -21,7 +21,7 @@ ms.locfileid: "12087111"
 
 默认情况下，应用区域从保留的标题栏区域正下方开始。
 
-:::image type="content" source="../media/my-tracks-titlebar.png" alt-text="&quot;我的Windows&quot;演示栏上显示的默认应用标题PWA。" lightbox="../media/my-tracks-titlebar.png":::
+:::image type="content" source="../media/my-tracks-titlebar.png" alt-text="The default Windows app title bar shown on the My Tracks demo PWA." lightbox="../media/my-tracks-titlebar.png":::
 
 能够显示标题栏通常位于其中的内容可以帮助 PWA 感觉更加本机。
 
@@ -39,7 +39,7 @@ ms.locfileid: "12087111"
 
 若要启用 API：
 
-1.  转到 `edge://flags` "Microsoft Edge"。
+1.  转到 `edge://flags` Microsoft Edge。
 1.  选择 **"搜索标志** "并键入"窗口控件覆盖"。
 1.  选择 **"默认**  >  **启用重启**  >  **"。**
 
@@ -100,7 +100,7 @@ ms.locfileid: "12087111"
 }
 ```
 
-了解覆盖的位置以及覆盖的大小很重要，因为它可能并不总是位于同一侧 (例如，它位于 macOS 的左侧和 Windows) 的右侧，并且可能并不总是相同大小。
+知道覆盖的位置以及它的大小很重要，因为它可能并不总是位于同一侧 (例如，它位于 macOS 的左侧和 Windows) 的右侧，并且可能并不总是相同大小。
 
 
 <!-- ====================================================================== -->
@@ -131,7 +131,7 @@ ms.locfileid: "12087111"
 
 > [!NOTE]
 > 当用户 `geometrychange` 调整窗口大小时，会非常频繁地触发 。 为了避免过于频繁运行更改布局的代码并引起应用中的性能问题，建议使用 函数来限制事件 `debounce` 处理次数。
-> 若要了解有关 有关详细信息 `debounce` ，请参阅限制 [和取消限制的区别][CssTricksThrottlingDebouncing]。
+> 若要了解有关 有关详细信息 `debounce` ，请参阅限制 [和取消限制的区别](https://css-tricks.com/the-difference-between-throttling-and-debouncing/)。
 
 ```javascript
 const debounce = (func, wait) => {
@@ -164,33 +164,23 @@ if ('windowControlsOverlay' in navigator) {
 
 My Tracks 是一PWA窗口控件覆盖功能的应用演示应用。
 
-* [在"管理"](#enable-the-feature-in-your-app)中Microsoft Edge。
-* 转到 ["我的跟踪"][MyTracksDemoApp] 并安装应用。
+* [在"管理"中](#enable-the-feature-in-your-app)Microsoft Edge。
+* 转到 ["我的跟踪"](https://captainbrosset.github.io/mytracks/) 并安装应用。
 * 从应用 **标题栏中选择** 隐藏标题栏按钮。
 
 请注意，应用现在将内容一起显示到窗口框架的顶部，其中的标题栏曾位于该窗口框架的顶部。 地图的顶部区域也是一个拖动处理程序，可让用户移动窗口。
 
 :::image type="content" source="../media/my-tracks-draggable-titlebar.png" alt-text="地图的顶部区域可用于移动窗口。" lightbox="../media/my-tracks-draggable-titlebar.png":::
 
-此应用的源代码可以在"我的跟踪"库GitHub[访问][MyTracksDemoAppGitHub]。
+此应用的源代码可以在"我的跟踪"库GitHub[访问](https://github.com/captainbrosset/mytracks)。
 
-* [manifest.json][MyTracksDemoAppManifestJsonFile]源文件声明应用使用窗口控件覆盖功能。
-* 文件 [overlay.js][MyTracksDemoAppOverlayJsFile] 使用 `navigator.windowControlsOverlay` 对象。
-* [style.css][MyTracksDemoAppStyleCssFile]源文件使用 `titlebar-area-height` CSS 环境变量。
+* [manifest.json](https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json)源文件声明应用使用窗口控件覆盖功能。
+* 文件 [overlay.js](https://github.com/captainbrosset/mytracks/blob/main/src/overlay.js) 使用 `navigator.windowControlsOverlay` 对象。
+* [style.css](https://github.com/captainbrosset/mytracks/blob/main/mytracks/style.css)源文件使用 `titlebar-area-height` CSS 环境变量。
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
 *   [窗口控件覆盖视频教程](https://www.youtube.com/watch?v=NvClp35dFVI)
-*   [自定义窗口标题PWA窗口控件覆盖层][WebDevWindowControlsOverlay]
-
-
-<!-- links -->
-[CssTricksThrottlingDebouncing]: https://css-tricks.com/the-difference-between-throttling-and-debouncing/ "限制和取消|CSS 技巧"
-[WebDevWindowControlsOverlay]: https://web.dev/window-controls-overlay/ "自定义用户标题栏PWA窗口控件|web.dev"
-[MyTracksDemoApp]: https://captainbrosset.github.io/mytracks/ "My Tracks"
-[MyTracksDemoAppGitHub]: https://github.com/captainbrosset/mytracks "演示桌面功能PWA示例 Web |GitHub"
-[MyTracksDemoAppManifestJsonFile]: https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json
-[MyTracksDemoAppOverlayJsFile]: https://github.com/captainbrosset/mytracks/blob/main/src/overlay.js
-[MyTracksDemoAppStyleCssFile]: https://github.com/captainbrosset/mytracks/blob/main/mytracks/style.css
+*   [自定义窗口控件覆盖PWA标题栏](https://web.dev/window-controls-overlay/)

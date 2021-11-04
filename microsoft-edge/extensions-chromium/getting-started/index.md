@@ -7,16 +7,16 @@ ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， 扩展
-ms.openlocfilehash: a533bf7be495014730b6fc0018b19d9d1a7416ae
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 745f0400c804e209df5dd9cf50f1c49c79f4d7a6
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140184"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155778"
 ---
 # <a name="extension-concepts-and-architecture"></a>扩展概念和体系结构
 
-本文介绍将帮助您构建一个扩展Microsoft Edge的概念。  请继续操作，了解多选项卡浏览器如何工作。
+本文介绍将帮助您构建一个扩展Microsoft Edge概念。  请继续操作，了解多选项卡浏览器如何工作。
 
 
 <!-- ====================================================================== -->
@@ -46,7 +46,7 @@ ms.locfileid: "12140184"
 
 下面的列表概述了与扩展体系结构相关的有用信息。
 
-1.  扩展 Web 服务器捆绑包。  扩展是 Web 资源的捆绑包。  Web 资源类似于你向 Web 服务器 (Web 开发人员) 其他资源。  生成扩展时，将 Web 资源捆绑到 zip 文件中。
+1.  扩展 Web 服务器捆绑包。  扩展是 Web 资源的捆绑包。  Web 资源类似于你向 Web 开发人员 (Web) 其他资源。  生成扩展时，将 Web 资源捆绑到 zip 文件中。
 
     zip 文件包括 HTML、CSS、JavaScript 和图像文件。  zip 文件的根中需要另外一个文件。  另一个文件是名为 的清单文件 `manifest.json` 。  清单文件是扩展的蓝图，包括扩展版本、标题、运行扩展所需的权限等。
 
@@ -64,8 +64,4 @@ ms.locfileid: "12140184"
 <!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 
-有关扩展入门的信息，请导航到 [创建扩展教程][CreateAnExtensionPart1]。
-
-<!-- links -->
-
-[CreateAnExtensionPart1]: ./part1-simple-extension.md "创建扩展教程 - 第 1 部分|Microsoft Docs"
+有关扩展入门的信息，请导航到 [创建扩展教程](./part1-simple-extension.md)。

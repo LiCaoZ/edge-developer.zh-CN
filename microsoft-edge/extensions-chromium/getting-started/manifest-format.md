@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， 扩展， mv2， mv3， 清单
-ms.openlocfilehash: 294a43a2f963ca4b32efaa928c74f147391fcd0b
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: e64ca403b810b8fcf429064e421f296bca683d2f
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139883"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157346"
 ---
 # <a name="manifest-file-format-for-extensions"></a>扩展名的清单文件格式
 
@@ -22,7 +22,7 @@ ms.locfileid: "12139883"
 *  扩展的标题。
 *  运行扩展所需的权限。
 
-扩展的格式 `manifest.json` 正在从清单 V2 移动到清单 V3。  此处显示了这两种格式。  若要将清单 V2 扩展迁移到清单 V3，请导航到准备将扩展从[清单 v2 更新到 v3。][MigrateToMV3]
+扩展的格式 `manifest.json` 正在从清单 V2 移动到清单 V3。  此处显示了这两种格式。  若要将清单 V2 扩展迁移到清单 V3，请导航到准备将扩展从[清单 v2 更新到 v3。](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md)
 
 
 <!-- ====================================================================== -->
@@ -30,7 +30,7 @@ ms.locfileid: "12139883"
 
 以下代码显示了清单 V3 程序包中扩展支持的 `manifest.json` 字段。
 
-有关每个字段的参考信息，请导航到 ["V3 (") "清单文件格式"， ][ChromeDeveloperDocsExtensionsMv3Manifest] 然后选择这些字段上的链接。
+有关每个字段的参考信息，请导航 [到"V3 (") "清单文件格式"， ](https://developer.chrome.com/docs/extensions/mv3/manifest) 然后选择这些字段上的链接。
 
 ```json
 {
@@ -117,7 +117,7 @@ ms.locfileid: "12139883"
 
 以下代码显示了清单 V2 包中支持的扩展字段 `manifest.json` 。
 
-有关每个字段的参考信息，请导航到 ["V2 ][ChromeDeveloperDocsExtensionsMv2Manifest] (") "清单文件格式"，然后选择这些字段上的链接。
+有关每个字段的参考信息，请导航到 ["V2 (") "清单文件格式"， ](https://developer.chrome.com/docs/extensions/mv2/manifest) 然后选择这些字段上的链接。
 
 ```json
 {
@@ -204,18 +204,7 @@ ms.locfileid: "12139883"
 ```
 
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/docs/extensions/mv3/manifest/)。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-
-
-<!-- links -->
-[MigrateToMV3]: ../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md "准备将扩展从清单 v2 更新为 v3 |Microsoft Docs"
-
-[ChromeDeveloperDocsExtensionsMv3Manifest]: https://developer.chrome.com/docs/extensions/mv3/manifest "V3 (清单) |Chrome 开发人员"
-[ChromeDeveloperDocsExtensionsMv2Manifest]: https://developer.chrome.com/docs/extensions/mv2/manifest "V2 (清单) |Chrome 开发人员"
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

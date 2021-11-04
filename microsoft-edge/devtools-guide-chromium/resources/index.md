@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 0ca5bb5cc2d7f4dd35cefd5dcb8e47c5d1aad856
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 17991f3f231067f4cfd9a287d5954570d6a77091
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140296"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157150"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,9 +29,9 @@ ms.locfileid: "12140296"
    limitations under the License.  -->
 # <a name="view-page-resources-with-microsoft-edge-devtools"></a>使用 DevTools Microsoft Edge页面资源
 
-本指南指导你如何使用 Microsoft Edge DevTools 查看网页的资源。  资源是页面为了正确显示而需要的文件。  资源示例包括 CSS、JavaScript 和 HTML 文件以及图像。
+本指南指导你如何使用 Microsoft Edge Tools 查看网页的资源。  资源是页面为了正确显示而需要的文件。  资源示例包括 CSS、JavaScript 和 HTML 文件以及图像。
 
-本指南假定你熟悉 Web 开发和开发人员工具Microsoft Edge[基础知识][MicrosoftEdgeDevTools]。 [][MDNLearnWebDevelopment]
+本指南假定你熟悉 Web 开发和开发工具Microsoft Edge[基础知识](../../devtools-guide-chromium/index.md)。 [](https://developer.mozilla.org/docs/Learn)
 
 
 <!-- ====================================================================== -->
@@ -39,7 +39,7 @@ ms.locfileid: "12140296"
 
 当您知道要检查的资源的名称时，"命令菜单"提供了一种**** 快速打开资源的方法。
 
-1.  选择 `Control` + `P` (Windows、Linux) 或 `Command` + `P` (macOS) 。  将 **打开"打开文件** "对话框。
+1.  选择 `Control` + `P` (Windows、Linux) 或 (`Command` + `P` macOS) 。  将 **打开"打开文件** "对话框。
 
     :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="&quot;打开文件&quot;对话框" lightbox="../media/resources-command-menu-empty.msft.png":::
        " **打开文件"** 对话框
@@ -53,7 +53,7 @@ ms.locfileid: "12140296"
 
 ### <a name="open-resources-in-the-network-tool"></a>在"网络"工具中打开资源
 
-导航 [到检查资源的详细信息][DevtoolsNetworkInspectDetailsResource]。
+导航 [到检查资源的详细信息](../network/index.md#inspect-the-details-of-the-resource)。
 
 :::image type="complex" source="../media/resources-network-response.msft.png" alt-text="检查网络工具中的资源" lightbox="../media/resources-network-response.msft.png":::
    检查网络工具 **中的** 资源
@@ -61,7 +61,7 @@ ms.locfileid: "12140296"
 
 ### <a name="reveal-resources-in-the-network-tool-from-other-panels"></a>显示来自其他面板的网络工具中的资源
 
-下面的 ["](#browse-resources) 浏览资源"部分显示如何查看来自 DevTools UI 各个部分的资源。  如果你曾经想要在网络工具中检查资源，**** 请将鼠标悬停在该资源上，打开上下文菜单 (右键单击") "，然后选择"网络"面板中的"**展示"。**
+下面的 ["](#browse-resources) 浏览资源"部分显示如何查看来自 DevTools UI 各个部分的资源。  如果你曾经想要在网络工具中检查资源，**** 请将鼠标悬停在该资源上，打开上下文菜单 (右键单击") "，然后选择"网络 **"面板中的"展示"。**
 
 :::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="&quot;网络&quot;面板中的&quot;展示&quot;" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **"网络"面板中的"展示"**
@@ -73,7 +73,7 @@ ms.locfileid: "12140296"
 
 ### <a name="browse-resources-in-the-network-panel"></a>浏览"网络"面板中的资源
 
-导航到 [记录网络][DevtoolsNetworkLogActivity]。
+导航到 [记录网络](../network/index.md#log-network-activity)。
 
 :::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="网络日志中的页面资源" lightbox="../media/resources-network-resources.msft.png":::
    网络日志中 **的页面** 资源
@@ -95,7 +95,7 @@ ms.locfileid: "12140296"
 
     | 页面项 | 描述 |
     |:--- |:--- |
-    | `top` | 主文档 [浏览上下文][MDNInlineFrame]。 |
+    | `top` | 主文档 [浏览上下文](https://developer.mozilla.org/docs/Web/HTML/Element/iframe)。 |
     | `airhorner.com` | 域。  嵌套在它下的所有资源都来自该域。  例如，文件的完整 URL `comlink.global.j` 可能是 `https://airhorner.com/scripts/comlink.global.js` 。 |
     | `scripts` | 目录。 |
     | `(index)` | 主 HTML 文档。 |
@@ -150,7 +150,7 @@ ms.locfileid: "12140296"
 
 #### <a name="browse-files-by-type-in-the-network-panel"></a>在"网络"面板中按类型浏览文件
 
-导航到["按资源类型筛选"。][DevtoolsNetworkFilterByResourceType]
+导航到["按资源类型筛选"。](../network/index.md#filter-by-resource-type)
 
 :::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="在网络日志中筛选 CSS" lightbox="../media/resources-network-resources-filter-css.msft.png":::
    在网络 **日志中筛选** CSS
@@ -158,25 +158,8 @@ ms.locfileid: "12140296"
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge 开发人员工具|Microsoft Docs"
-[DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "按资源类型筛选 - 检查开发人员工具Microsoft Edge中的网络|Microsoft Docs"
-[DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "检查资源的详细信息 - 检查 DevTools Microsoft Edge中的网络|Microsoft Docs"
-[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "记录网络活动 - 在 DevTools Microsoft Edge中检查网络|Microsoft Docs"
-<!-- external links -->
-[MDNInlineFrame]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe>：内联 Frame 元素|MDN"
-[MDNLearnWebDevelopment]: https://developer.mozilla.org/docs/Learn "了解 Web 开发|MDN"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/resources/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/resources/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 07/01/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: ad0d9282847cd51196502d37bf91f76e904a71c8
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: eee88a8588b15a0ddbe26af9399e2c12ccdec95c
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139407"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155617"
 ---
 <!-- Copyright Kayce Basques
 
@@ -43,7 +43,7 @@ ms.locfileid: "12139407"
 *   使用键盘。
     *   选择 `F12` 或 `Control` + `Shift` + `I` (Windows Linux) 或 `Command` + `Option` + `I` (macOS) 。
 
-有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。
+有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键](../shortcuts/index.md)。
 
 :::image type="complex" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="从主菜单中打开 devTools Microsoft Edge开发人员工具" lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
    从主菜单中打开 devTools Microsoft Edge开发人员工具
@@ -56,7 +56,7 @@ ms.locfileid: "12139407"
 通过以下任一任务，您可以检查 DOM 节点中的文档对象[](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (样式) 属性。
 
 *   将鼠标悬停在 元素上，打开上下文菜单 (右键单击") "检查 **"。**
-*   选择 `Control` + `Shift` + `C` (Windows、Linux) 或 `Command` + `Option` + `C` (macOS) 。 有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。
+*   选择 `Control` + `Shift` + `C` (Windows、Linux) 或 `Command` + `Option` + `C` (macOS) 。 有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键](../shortcuts/index.md)。
 
 <!-- :::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text="The Inspect option" lightbox="../media/bing-right-click-inspect.msft.png":::
    The **Inspect** option
@@ -68,7 +68,7 @@ ms.locfileid: "12139407"
 <!-- ====================================================================== -->
 ## <a name="open-the-console-panel"></a>打开控制台面板
 
-若要打开控制台[面板][DevtoolsConsoleIndex]以查看记录的消息或运行 JavaScript，请选择 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS) 。 有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。
+若要打开控制台[面板](../console/index.md)以查看记录的消息或运行 JavaScript，请选择 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS) 。 有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键](../shortcuts/index.md)。
 
 <!--Navigate to [Get Started With The Console][ConsoleGetStarted].  -->
 
@@ -76,7 +76,7 @@ ms.locfileid: "12139407"
 <!-- ====================================================================== -->
 ## <a name="open-the-previous-panel"></a>打开上一个面板
 
-若要跳转到之前打开的面板，请选择 `Control` + `Shift` + `I` (Windows、Linux) 或 `Command` + `Option` + `I` (macOS) 。  有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键][DevtoolsShortcutsIndex]。
+若要跳转到之前打开的面板，请选择 `Control` + `Shift` + `I` (Windows、Linux) 或 `Command` + `Option` + `I` (macOS) 。  有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键](../shortcuts/index.md)。
 
 
 <!-- ====================================================================== -->
@@ -136,21 +136,16 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsConsoleIndex]: ../console/index.md "控制台概述 | Microsoft Docs"
-[DevtoolsShortcutsIndex]: ../shortcuts/index.md "Microsoft Edge DevTools 键盘快捷方式 | Microsoft Docs"
+
+
+
 <!--[ConsoleGetStarted]: /microsoft-edge/devtools-guide-chromium/console/get-started ""  -->
 <!--[GetStartedCSS]: /microsoft-edge/devtools-guide-chromium/css "CSS"  -->
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/open)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/open)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

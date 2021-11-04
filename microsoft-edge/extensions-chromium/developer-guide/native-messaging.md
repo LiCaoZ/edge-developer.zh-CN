@@ -7,21 +7,21 @@ ms.date: 03/31/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 8631184e32643446d3d1b1a8fcd60d9aeac9e15e
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: e868cd9f040a350bab9e201f3213ece65275c3d5
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141367"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157437"
 ---
 # <a name="native-messaging"></a>本机消息传递
 
-扩展使用消息传递 API 与安装在用户设备上本机 Win32 应用进行通信。  本机应用主机使用标准输入和标准输出发送和接收扩展名的邮件。  使用本机消息传递的扩展安装在Microsoft Edge任何其他扩展类似。  但是，本机应用不是由用户安装或Microsoft Edge。
+扩展使用消息传递 API 与安装在用户设备上本机 Win32 应用进行通信。  本机应用主机使用标准输入和标准输出发送和接收扩展名的邮件。  使用本机消息传递的扩展安装在Microsoft Edge与任何其他扩展类似。  但是，本机应用不是由应用程序安装或Microsoft Edge。
 
 若要获取扩展和本机应用主机，你有两个分发模型。
 
 *   将扩展和主机打包在一起。  当用户安装程序包时，将同时安装扩展和主机。
-*   使用加载项网站Microsoft Edge扩展[，][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]扩展会提示用户安装主机。
+*   使用加载项Microsoft Edge安装扩展[](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home)，扩展会提示用户安装主机。
 
 若要创建扩展以通过本机应用主机发送和接收消息，请完成以下步骤。
 
@@ -164,7 +164,7 @@ ms.locfileid: "12141367"
 1.  选择 **"加载解压缩**"，然后选择要旁加载的扩展包。
 1.  选择“确定”****。
 1.  导航到 `edge://extensions` 页面并验证扩展是否列出。
-1.  从页面上的扩展 `microsoft_catalog_extension_id` (从) ID 复制密钥。
+1.  从页面上的扩展 `microsoft_catalog_extension_id` (ID) 复制密钥。
 
 准备好将扩展分发给用户时，将扩展发布到 Microsoft Edge 加载项网站。  已发布扩展的扩展 ID 可能与旁加载扩展时所使用的 ID 不同。  如果 ID 发生更改，则使用已发布扩展的 `allowed_origins` ID 在主机清单文件中更新。
 
@@ -211,7 +211,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.m
 
     1.  运行 `.reg` 文件。
 
-Microsoft Edge查询根 `HKEY_CURRENT_USER` 键后跟 `HKEY_LOCAL_MACHINE` 。  在这两个项中，首先搜索 32 位注册表，然后搜索 64 位注册表以标识本机消息传递主机。  注册表项指定本机消息传递主机清单的位置。  如果注册表项的Microsoft Edge没有主机清单的位置，Chromium Chrome 注册表位置将用作回退选项。  如果Microsoft Edge在先前列出的任何位置找到注册表项，则它不会查询以下代码片段中列出的位置。  如果作为批处理脚本的一部分运行所创建的文件， `.reg` 请确保使用管理员命令提示符运行它。
+Microsoft Edge查询后跟 `HKEY_CURRENT_USER` 的根键 `HKEY_LOCAL_MACHINE` 。  在这两个项中，首先搜索 32 位注册表，然后搜索 64 位注册表以标识本机消息传递主机。  注册表项指定本机消息传递主机清单的位置。  如果注册表项的Microsoft Edge没有主机清单的位置，Chromium Chrome 注册表位置将用作回退选项。  如果Microsoft Edge在先前列出的任何位置找到注册表项，则它不会查询以下代码片段中列出的位置。  如果作为批处理脚本的一部分运行所创建的文件， `.reg` 请确保使用管理员命令提示符运行它。
 
 以下列表是注册表位置的搜索顺序。
 
@@ -280,16 +280,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\
 
 * * *
 
-<!-- links -->
-
-[MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]: https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home "Microsoft Edge 加载项"
 
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/extensions/nativeMessaging)。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

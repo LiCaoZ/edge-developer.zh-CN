@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 6c0aa6a81d7da63fb7aa0886b28576486b44e26f
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: d51bd42aeb32e6b57478849514358ce7a9fa1289
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141269"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157199"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,9 +29,9 @@ ms.locfileid: "12141269"
    limitations under the License.  -->
 # <a name="use-the-debugger-features"></a>使用调试程序功能
 
-本文介绍了如何在 DevTools Microsoft Edge调试器，包括如何设置代码行断点。  若要设置其他类型的断点，请参阅 [使用断点暂停代码][DevToolsJavascriptBreakpoints]。
+本文介绍了如何在 DevTools Microsoft Edge调试器，包括如何设置代码行断点。  若要设置其他类型的断点，请参阅 [使用断点暂停代码](./breakpoints.md)。
 
-若要了解调试的基础知识，请导航到[Microsoft Edge DevTools][DevToolsJavascriptGetStarted]中调试 JavaScript 的入门，这是一个使用基于表单的现有网页的教程。  本教程具有屏幕捕获，因此你可以浏览它。  您可以使用演示网页轻松试用调试器功能。
+若要了解调试的基础知识，请导航到[Microsoft Edge DevTools](./index.md)中调试 JavaScript 的入门，这是一个使用基于表单的现有网页的教程。  本教程具有屏幕捕获，因此你可以浏览它。  您可以使用演示网页轻松试用调试器功能。
 
 
 <!-- ====================================================================== -->
@@ -42,9 +42,9 @@ ms.locfileid: "12141269"
 查看和编辑 JavaScript 文件：
 
 1.  导航到 **"源"** 工具。
-1.  在 **"导航器"** 窗格中，选择文件，以在"编辑器"窗格中 **打开** 它。
+1.  在 **导航器窗格中** ，选择你的文件，以在编辑器窗格中 **打开** 它。
 1.  在" **编辑器"** 窗格中，编辑文件。
-1.  选择 `Ctrl` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存。  然后，DevTools 将 JavaScript 文件加载至 Microsoft Edge 的 JavaScript 引擎。
+1.  选择要 `Ctrl` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存。  然后，DevTools 将 JavaScript 文件加载至 Microsoft Edge 的 JavaScript 引擎。
 
     :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="编辑器窗格" lightbox="../media/javascript-sources-html-minified.msft.png":::
        “**编辑器**”窗格
@@ -78,7 +78,7 @@ ms.locfileid: "12141269"
        代码行断点
     :::image-end:::
 
-代码行断点设置效率可能较低，尤其是在您不知道具体查找位置或代码库较大时。  若要在调试时节省时间，请了解如何以及何时使用其他类型的断点。  有关详细信息，请导航到["使用断点暂停代码"。][DevToolsJavascriptBreakpoints]
+代码行断点设置效率可能较低，尤其是在您不知道具体查找位置或代码库较大时。  若要在调试时节省时间，请了解如何以及何时使用其他类型的断点。  有关详细信息，请导航到["使用断点暂停代码"。](./breakpoints.md)
 
 
 <!-- ====================================================================== -->
@@ -162,7 +162,7 @@ function getName() {
 
 调试长函数时，可能有许多代码与正在调试的问题不相关。
 
-你可以选择逐行执行，但这很繁琐。  您可以选择在感兴趣的行上设置代码行断点，然后选择"Resume **script execution** (Resume script ![ execution) "按钮，但有一种更快的方法 ](../media/resume-script-run-icon.msft.png) 。
+你可以选择逐行执行，但这很繁琐。  您可以选择在感兴趣的行上设置代码行断点，然后选择"恢复脚本执行 ** (** 恢复脚本执行) "按钮，但有一种更快的方法 ![ ](../media/resume-script-run-icon.msft.png) 。
 
 将鼠标悬停在感兴趣的代码行上，打开上下文菜单 (右键单击") "，然后选择"继续**到此处"。**  DevTools 会运行所有代码，一直运行到该处，然后暂停到该行。
 
@@ -172,7 +172,7 @@ function getName() {
 
 ### <a name="restart-the-top-function-of-the-call-stack"></a>重新启动调用的顶部函数
 
-若要暂停调用堆栈中顶部函数的第一行，而暂停在代码行上，请将鼠标悬停在"调用堆栈"窗格中的任意位置****，打开上下文菜单 (右键单击") "，然后选择"**重新启动**帧"。  top 函数是最后一个运行的函数。
+若要暂停调用堆栈中顶部函数的第一行，而暂停在代码行上，请将鼠标悬停在"调用堆栈"窗格中的任意位置****，打开上下文菜单 (右键单击) ，然后选择"**重新启动**帧"。  top 函数是最后一个运行的函数。
 
 下面的代码段是一个分步执行示例。
 
@@ -241,7 +241,7 @@ function factorial(n) {
    “**监视**”窗格
 :::image-end:::
 
-*   若要创建新的监视表达式，请选择"添加监视**** 表达式 (![ 添加监视表达式) ](../media/add-expression-icon.msft.png) 按钮。
+*   若要创建新的监视表达式，请选择"添加 **监视** 表达式 (![ 添加监视表达式) ](../media/add-expression-icon.msft.png) 按钮。
 *   若要刷新所有现有表达式的值，请选择"刷新 (**** ![ 刷新) ](../media/refresh-icon.msft.png) 按钮。  逐步执行代码时，值将自动刷新。
 *   若要删除监视表达式，请右键单击该表达式，然后选择"删除 **监视** 表达式 (![ 删除监视表达式 ](../media/delete-expression-icon.msft.png)) 。
 
@@ -268,7 +268,7 @@ function factorial(n) {
 This should be moved to an "Export debug data" H2 section when there is enough content for that, but there is not right now, so it is here.
 -->
 
-若要将当前调用堆栈复制到剪贴板，请将鼠标悬停在"调用**** 堆栈"窗格中的任意位置，打开上下文菜单 (右键单击") "，然后选择"复制堆栈跟踪 **"。**
+若要将当前调用堆栈复制到剪贴板，请将鼠标悬停在"调用**** 堆栈"窗格中的任意位置，打开上下文菜单 (右键单击") "，然后选择"复制**堆栈跟踪"。**
 
 :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png" alt-text="选择复制堆叠跟踪" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png":::
    选择“**复制堆叠跟踪**”
@@ -304,7 +304,7 @@ function animate() {
 
 1.  打开文件。
 1.  将鼠标悬停在任意位置并打开上下文菜单 (右键单击") "。
-1.  选择 **"添加脚本"忽略**之前 (标记为**库代码的列表) 。**
+1.  选择 **"添加脚本"忽略之前** (标记为**库代码的列表) 。**
 
     :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png" alt-text="在编辑器窗格中将脚本标记为库代码" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png":::
        从“**编辑器**”窗格中将脚本标记为**库代码**
@@ -315,7 +315,7 @@ function animate() {
 若要从"调用堆栈 **"窗格中将** 脚本 **标记为库** 代码：
 
 1.  将鼠标悬停在脚本的函数上，然后打开上下文菜单 (右键单击) 。
-1.  选择 **"添加脚本"忽略**之前 (标记为**库代码的列表) 。**
+1.  选择 **"添加脚本"忽略之前** (标记为**库代码的列表) 。**
 
     :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="从调用堆叠窗格中将脚本标记为库代码" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
        从**调用堆叠**窗格中将脚本标记为**库代码**
@@ -323,9 +323,9 @@ function animate() {
 
 ### <a name="mark-a-script-as-library-code-from-settings"></a>在设置中将脚本标记为库代码
 
-若要标记脚本中的单个脚本或脚本**设置：**
+若要标记脚本的单个脚本或脚本**模式，设置：**
 
-1.  打开“[设置][DevToolsCustomize]”。
+1.  打开“[设置](../customize/index.md)”。
 1.  导航到“**库代码**”设置。
 1.  选择“**添加模式**”。
 1.  输入脚本名称或脚本名称的正则表达式模式，以标记为**库代码**。
@@ -341,35 +341,20 @@ function animate() {
 
 如果你的控制台一次又一次地运行相同的调试代码，请考虑使用代码段。  代码段是你在 DevTools 中创作、存储和运行的运行时脚本。
 
-请参阅 [在任何网页上运行 JavaScript 代码段][DevToolsJavascriptSnippets]。
+请参阅 [在任何网页上运行 JavaScript 代码段](./snippets.md)。
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [入门调试 JavaScript 在 Microsoft Edge DevTools][DevToolsJavascriptGetStarted] - 使用现有代码的简单简短教程，包含屏幕捕获。
-*  [源工具概述][DevToolsSourcesIndex] - **源工具** 包括 JavaScript 调试程序和编辑程序。
-*  [使用 DevTools Microsoft Edge JavaScript。][DevToolsJavascriptDisable]
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevToolsJavascriptBreakpoints]: ./breakpoints.md "如何在 Microsoft Edge 开发工具中使用断点暂停代码 | Microsoft Doc"
-[DevToolsJavascriptDisable]: ./disable.md "使用 Microsoft Edge DevTools 工具禁用 JavaScript | Microsoft Docs"
-[DevToolsJavascriptGetStarted]: ./index.md "在 Microsoft Edge 开发工具中调试 JavaScript 入门 | Microsoft Docs"
-[DevToolsJavascriptSnippets]: ./snippets.md "使用 Microsoft Edge DevTools 在任意页面上运行 JavaScript 代码段 | Microsoft Docs"
-[DevToolsSourcesIndex]: ../sources/index.md "源工具概述 | Microsoft Docs"
-[DevToolsCustomize]: ../customize/index.md "自定义 Microsoft Edge DevTools | Microsoft Docs"
+*  [入门调试 JavaScript 在 Microsoft Edge DevTools](./index.md)中 - 使用现有代码的简单简短教程，包含屏幕捕获。
+*  [源工具概述](../sources/index.md) - **源工具** 包括 JavaScript 调试程序和编辑程序。
+*  [使用 DevTools Microsoft Edge JavaScript。](./disable.md)
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/reference)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/reference)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

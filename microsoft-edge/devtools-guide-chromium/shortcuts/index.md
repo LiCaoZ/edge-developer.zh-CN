@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 34482f401de5814f68df58a7521e924f1b1afd89
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 8fd3be3d4f7c2d6877f133dab83ec08f9f3b888e
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141717"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157381"
 ---
 <!-- Copyright Kayce Basques
 
@@ -58,20 +58,20 @@ ms.locfileid: "12141717"
 | 显示“**设置**” | `?` 或 `F1` | `?` 或 `Function`+`F1` |
 | 聚焦于下一窗格 | `Control`+`]` | `Command`+`]` |
 | 聚焦于上一窗格 | `Control`+`[` | `Command`+`[` |
-| 切换回上一次使用的[对接位置][DevtoolsCustomizeIndexPlacement]。  如果开发工具已处于整个会话的默认位置，则此快捷方式将开发工具撤消到单独的窗口中 | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |
-| 切换[设备仿真][DevtoolsDeviceModeIndex] | `Control`+`Shift`+`M` | `Command`+`Shift`+`M` |
+| 切换回上一次使用的[对接位置](../customize/index.md#change-devtools-placement)。  如果开发工具已处于整个会话的默认位置，则此快捷方式将开发工具撤消到单独的窗口中 | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |
+| 切换[设备仿真](../device-mode/index.md) | `Control`+`Shift`+`M` | `Command`+`Shift`+`M` |
 | 切换**检查元素模式** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` |
-| 打开“[命令菜单][DevtoolsCommandMenuIndex]”。 | `Control`+`Shift`+`P` | `Command`+`Shift`+`P` |
-| 切换[抽屉][DevtoolsCustomizeIndexDrawer] | `Escape` | `Escape` |
+| 打开“[命令菜单](../command-menu/index.md)”。 | `Control`+`Shift`+`P` | `Command`+`Shift`+`P` |
+| 切换[抽屉](../customize/index.md#drawer) | `Escape` | `Escape` |
 | 正常刷新 | `F5` 或 `Control`+`R` | `Command`+`R` |
 | 硬刷新 | `Control`+`F5` 或 `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |
 | 在当前窗格中搜索文本。  **审核**、** 应用程序 **和**安全**工具不支持 | `Control`+`F` | `Command`+`F` |
-| 在“[抽屉][DevtoolsCustomizeIndexDrawer]”中打开“**搜索**”选项卡，可以在所有加载的资源中搜索文本 | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |
+| 在“[抽屉](../customize/index.md#drawer)”中打开“**搜索**”选项卡，可以在所有加载的资源中搜索文本 | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |
 | 在"源"工具 **中打开** 文件 | `Control`+`O` 或 `Control`+`P` | `Command`+`O` 或 `Command`+`P` |
 | 放大 | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |
 | 缩小 | `Control`+`-` | `Command`+`-` |
 | 还原默认缩放级别 | `Control`+`0` | `Command`+`0` |
-| 运行代码片段 | 选择 `Control`+`O` 以打开“[命令菜单][DevtoolsCommandMenuIndex]”，键入 `!`，然后输入脚本名称，然后选择 `Enter` | 选择 `Command`+`O` 以打开“[命令菜单][DevtoolsCommandMenuIndex]”，键入 `!`，然后输入脚本名称，然后选择 `Enter` |
+| 运行代码片段 | 选择 `Control`+`O` 以打开“[命令菜单](../command-menu/index.md)”，键入 `!`，然后输入脚本名称，然后选择 `Enter` | 选择 `Command`+`O` 以打开“[命令菜单](../command-menu/index.md)”，键入 `!`，然后输入脚本名称，然后选择 `Enter` |
 
 <!-- TODO: make a bug about this UIPlacement link being ambiguous.  -->
 <!-- TODO: Link "Inspect Element Mode" when a good section exists.  -->
@@ -115,13 +115,13 @@ ms.locfileid: "12141717"
 | 单步跳过下一函数调用 | `F10` 或 `Control`+`'` | `F10` 或 `Command`+`'` |
 | 单步执行下一函数调用 | `F11` 或 `Control`+`;` | `F11` 或 `Command`+`;` |
 | 跳出当前函数 | `Shift`+`F11` 或 `Control`+`Shift`+`;` | `Shift`+`F11` 或 `Command`+`Shift`+`;` |
-| 暂停时继续至指定的代码行[][DevtoolsJavascriptBreakpointsLOC] | 按住 `Control`，然后选择代码行 | 按住 `Command`，然后选择代码行 |
+| 暂停时继续至指定的代码行[](../javascript/breakpoints.md#line-of-code-breakpoints) | 按住 `Control`，然后选择代码行 | 按住 `Command`，然后选择代码行 |
 | 选择当前所选帧下方/上方的调用帧 | `Control`+`.` / `Control`+`,` | `Control`+`.` / `Control`+`,` |
 | 保存对本地修改的更改 | `Control`+`S` | `Command`+`S` |
 | 保存所有更改 | `Control`+`Alt`+`S` | `Command`+`Option`+`S` |
 | 导航到行 | `Control`+`G` | `Control`+`G` |
-| 跳转到当前打开的文件的行号 | 选择 `Control`+`O` 以打开“[命令菜单][DevtoolsCommandMenuIndex]”，键入 `:`（后跟行号），然后选择 `Enter` | 选择 `Command`+`O` 以打开“[命令菜单][DevtoolsCommandMenuIndex]”，键入 `:`（后跟行号），然后选择 `Enter` |
-| 跳转到当前打开的文件的列 (第 5 行，第 9 列)  | 选择 `Control`+`O` 以打开“[命令菜单][DevtoolsCommandMenuIndex]”，键入`:`，然后输入行号，然后输入另一个`:`，然后输入列号，然后选择 `Enter` | 选择 `Command`+`O` 以打开“[命令菜单][DevtoolsCommandMenuIndex]”，键入`:`，然后输入行号，然后输入另一个`:`，然后输入列号，然后选择 `Enter` |
+| 跳转到当前打开的文件的行号 | 选择 `Control`+`O` 以打开“[命令菜单](../command-menu/index.md)”，键入 `:`（后跟行号），然后选择 `Enter` | 选择 `Command`+`O` 以打开“[命令菜单](../command-menu/index.md)”，键入 `:`（后跟行号），然后选择 `Enter` |
+| 跳转到当前打开的文件的列 (第 5 行，第 9 列)  | 选择 `Control`+`O` 以打开“[命令菜单](../command-menu/index.md)”，键入`:`，然后输入行号，然后输入另一个`:`，然后输入列号，然后选择 `Enter` | 选择 `Command`+`O` 以打开“[命令菜单](../command-menu/index.md)”，键入`:`，然后输入行号，然后输入另一个`:`，然后输入列号，然后选择 `Enter` |
 | 如果当前文件为 HTML 或脚本，则导航到函数声明。  <br />  如果当前文件是样式表，请导航到规则集。  | 选择 `Control`+`Shift`+`O` ，然后键入声明/规则集名称，或者从选项列表中选择 | 选择 `Command`+`Shift`+`O` ，然后键入声明/规则集名称，或者从选项列表中选择 |
 | 关闭活动的选项卡 | `Alt`+`W` | `Option`+`W` |
 
@@ -130,7 +130,7 @@ ms.locfileid: "12141717"
 | 操作 | Windows\/Linux | macOS |
 |:--- |:--- |:--- |
 | 删除最后一个词中的所有字符，直到到达光标 | `Control`+`Delete` | `Option`+`Delete` |
-| 添加或删除[代码行断点][DevtoolsJavascriptBreakpointsLOC] | 将光标焦点放在行上，然后选择 `Control`+`B` | 将光标焦点放在行上，然后选择 `Command`+`B` |
+| 添加或删除[代码行断点](../javascript/breakpoints.md#line-of-code-breakpoints) | 将光标焦点放在行上，然后选择 `Control`+`B` | 将光标焦点放在行上，然后选择 `Command`+`B` |
 | 导航到匹配的括号 | `Control`+`M` | `Control`+`M` |
 | 切换单行注释。  如果选择了多行，开发工具将注释添加到每行的起始位置 | `Control`+`/` | `Command`+`/` |
 | 打开或关闭下一次出现的任何单词。  每次出现时都同时突出显示 | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |
@@ -170,25 +170,11 @@ ms.locfileid: "12141717"
 | 展开记录到控制台的对象的所有子属性 | 保留 `Alt` ，然后单击"**** 展开 (![ 展开 ](../media/expand-icon.msft.png))  | 保留 `Alt` ，然后单击展开**** (![ 展开 ](../media/expand-icon.msft.png)) 。 |
 
 
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"
-[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "设置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"
-[DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "更改开发工具位置 - 自定义 Microsoft Edge 开发工具 | Microsoft Docs"
-[DevtoolsDeviceModeIndex]: ../device-mode/index.md "在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"
-[DevtoolsJavascriptBreakpointsLOC]: ../javascript/breakpoints.md#line-of-code-breakpoints "代码行断点 - 如何在 Microsoft Edge 开发工具中使用断点暂停代码 | Microsoft Doc"
-
 <!--[201705ReleaseNotesContinue]: whats-new/2017/05/devtools-release-notes#continue  -->
-
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/shortcuts)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/shortcuts)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 5743b85c3d495830b0d09b2cdaaf6fcf5f800807
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 909e1ffcf7b5616b216f5628d4caeab53d9b9f31
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141661"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155638"
 ---
 <!-- Copyright Sam Dutton
 
@@ -41,17 +41,17 @@ ms.locfileid: "12141661"
 *  其他。
 
 问题工具**中的反馈**由多个源提供，包括 Chromium 平台、Deque 轴、MDN 浏览器兼容性数据和 webhint。  有关填充问题工具的这些反馈 **源的信息，** 请导航到：
-*  [axe 工具概述][DequeAxe]
-*  [browser-compat-data 存储库][MDNCompat]
-*  [webhint][webhintIo]
+*  [axe 工具概述](https://www.deque.com/axe)
+*  [browser-compat-data 存储库](https://github.com/mdn/browser-compat-data)
+*  [webhint](https://webhint.io)
 
 
 <!-- ====================================================================== -->
 ## <a name="opening-the-issues-tool"></a>打开问题工具
 
-1.  导航到包含要修复的问题的网页。  例如，在一 [个新选项卡或窗口中][A11ytestingPagewitherrors] 打开辅助功能测试演示页。
+1.  导航到包含要修复的问题的网页。  例如，在一 [个新选项卡或窗口中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示页。
 
-1.  打开 DevTools。  几秒钟后，"问题" ("问题") **** 显示在 ![ ](../media/issues-counter-icon.msft.png) DevTools 的右上角。
+1.  打开 DevTools。  几秒钟后，"问题" ("问题") 显示在**** ![ ](../media/issues-counter-icon.msft.png) DevTools 的右上角。
 
 1.  刷新页面，因为根据网络请求报告某些问题。  请注意问题计数器中 **更新的计数**。
 
@@ -86,9 +86,9 @@ ms.locfileid: "12141661"
 
 问题 **工具** 提供了适用于每个问题的其他文档和推荐的修补程序。  若要展开问题以获得此附加信息，请选择一个问题，如下所示。
 
-1.  打开新 [窗口或][A11ytestingPagewitherrors] 选项卡中的演示页面，然后打开 DevTools。
+1.  打开新 [窗口或](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 选项卡中的演示页面，然后打开 DevTools。
 
-1.  打开" **问题"** 工具，选择"问题 **" (** ![ 问题 ](../media/issues-counter-icon.msft.png) ") 。
+1.  打开"**问题"** 工具，选择****"问题 ![ " (""问题 ](../media/issues-counter-icon.msft.png) ") 。
 
 1.  选择问题以展开问题。
 
@@ -126,11 +126,11 @@ ms.locfileid: "12141661"
 <!-- ====================================================================== -->
 ## <a name="open-issues-from-the-dom-tree"></a>打开 DOM 树中的问题
 
-如果元素具有关联问题，则 **"** 元素"工具中的 DOM 树在元素名称下显示波浪下划线。  您可以打开上下文菜单 (右键单击) ，然后选择查看问题，或选择并左键单击带波浪下划线**** `Shift` 的元素。
+如果元素具有关联问题，则 **"** 元素"工具中的 DOM 树在元素名称下显示波浪下划线。  你可以打开上下文菜单， (右键单击元素上的) ，然后选择查看问题，或者选择并左键**** 单击带波浪下划线 `Shift` 的元素。
 
 若要对 DOM 树中带波浪下划线的元素显示问题，请执行以下步骤。
 
-1.  在一个新选项卡或窗口中 [打开一个页面][A11ytestingPagewitherrors]，如演示页面。
+1.  在一个新选项卡或窗口中 [打开一个页面](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html)，如演示页面。
 
 1.  打开 DevTools，然后选择" **元素"** 选项卡。
 
@@ -156,21 +156,7 @@ ms.locfileid: "12141661"
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsOpenIndex]: ../open/index.md "打开 Microsoft Edge 开发人员工具 | Microsoft Docs"
-<!-- external links -->
-[A11ytestingPagewitherrors]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "辅助功能测试演示页面|Microsoft Docs"
-[DequeAxe]: https://www.deque.com/axe "axe 工具|Deque"
-[MDNCompat]: https://github.com/mdn/browser-compat-data "MDN 浏览器兼容性|GitHub"
-[webhintIo]: https://webhint.io "webhint.io"
-
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/issues/index) 由 [Sam Dutton][SamDutton] (Developer Advocate) 。
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[SamDutton]: https://developers.google.com/web/resources/contributors#sam-dutton
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/issues/index) 由 [Sam Dutton](https://developers.google.com/web/resources/contributors#sam-dutton) (Developer Advocate) 。
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

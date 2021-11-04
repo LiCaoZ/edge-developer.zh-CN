@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: ec74f501633814211955565a526a762f5b0dad65
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 9a02ac4487d8d02506cb3c700ff41fa7ff13176b
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141213"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156310"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,7 +29,7 @@ ms.locfileid: "12141213"
    limitations under the License.  -->
 # <a name="view-and-change-indexeddb-data-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 查看和更改 IndexedDB 数据
 
-本指南演示如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 查看和更改 [IndexedDB][MDNIndexedDBAPI] 数据。  本文假定你熟悉 DevTools。  本文还假定你熟悉 IndexedDB。  如果没有，导航到“[使用 IndexedDB][MDNUsingIndexedDB]”。
+本指南演示如何使用 [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) 查看和更改 [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) 数据。  本文假定你熟悉 DevTools。  本文还假定你熟悉 IndexedDB。  如果没有，导航到“[使用 IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB)”。
 
 
 <!-- ====================================================================== -->
@@ -48,11 +48,11 @@ ms.locfileid: "12141213"
     :::image-end:::
 
     *    (数据库) 表示一个数据库，其中 是数据库的名称，也是 ![ ](../media/database-icon.msft.png) `notes - https://mdn.github.io` `notes` `https://mdn.github.io` 访问数据库的来源。
-    *    (![ 对象存储"图标 ](../media/object-store-icon.msft.png)) `notes` 是一个对象存储。
-    *   **标题**和 **正文**是[索引][MDNUsingIndexedDBUsingIndex]。
+    *    (![ 对象存储图标 ](../media/object-store-icon.msft.png)) `notes` 是对象存储。
+    *   **标题**和 **正文**是[索引](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Using_an_index)。
 
     > [!NOTE]
-    > **已知限制**  第三方数据库不可见。  例如，如果使用`<iframe>`在页面上嵌入广告，并且广告网络使用 IndexedDB，则广告网络的 IndexedDB 数据将不可见。  导航到 [issue #943770][ChromiumIssue943770]。
+    > **已知限制**  第三方数据库不可见。  例如，如果使用`<iframe>`在页面上嵌入广告，并且广告网络使用 IndexedDB，则广告网络的 IndexedDB 数据将不可见。  导航到 [issue #943770](https://crbug.com/943770)。
 
 1.  选择一个数据库查看来源和版本号。
 
@@ -70,7 +70,7 @@ ms.locfileid: "12141213"
     :::image-end:::
 
     *   **总条目数**是对象存储中键值对的总数。
-    *   **密钥生成器值**是下一个可用密钥。  此字段仅在使用[密钥生成器][MDNBasicConceptsKeyGenerator]时显示。
+    *   **密钥生成器值**是下一个可用密钥。  此字段仅在使用[密钥生成器](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_keygenerator)时显示。
 
 1.  选择“**值**”列的单元格以展开该值。
 
@@ -88,7 +88,7 @@ ms.locfileid: "12141213"
 <!-- ====================================================================== -->
 ## <a name="refresh-indexeddb-data"></a>刷新 IndexedDB 数据
 
-**应用程序**工具中的 IndexedDB 值不会实时更新。  在**查看** (时选择"刷新") "刷新"以刷新数据，或选择"刷新数据库" ![ ](../media/reload-icon.msft.png) 以刷新所有数据****。
+**应用程序**工具中的 IndexedDB 值不会实时更新。  选择****" (") "刷新""刷新"以刷新数据，或选择"刷新数据库" ![ ](../media/reload-icon.msft.png) 以刷新所有数据。 ****
 
 :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="查看数据库" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
    查看数据库
@@ -102,7 +102,7 @@ ms.locfileid: "12141213"
 
 ### <a name="edit-indexeddb-data-with-snippets"></a>使用代码段编辑 IndexedDB 数据
 
-[代码段][DevtoolsJavascriptSnippets]是一种在 DevTools 中存储和运行 JavaScript 代码的方法。  运行代码段时，结果将记录到**控制台**。  可以使用代码段运行 JavaScript 代码来编辑 IndexedDB 数据库。
+[代码段](../javascript/snippets.md)是一种在 DevTools 中存储和运行 JavaScript 代码的方法。  运行代码段时，结果将记录到**控制台**。  可以使用代码段运行 JavaScript 代码来编辑 IndexedDB 数据库。
 
 :::image type="complex" source="../media/storage-sources-snippets-indexeddb-output.msft.png" alt-text="使用代码段与 IndexedDB 交互" lightbox="../media/storage-sources-snippets-indexeddb-output.msft.png":::
    使用代码段与 IndexedDB 交互
@@ -158,27 +158,8 @@ ms.locfileid: "12141213"
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge 开发人员工具|Microsoft Docs"
-[DevtoolsJavascriptSnippets]: ../javascript/snippets.md "使用 Microsoft Edge DevTools 在任意页面上运行 JavaScript 代码段 | Microsoft Docs"
-<!-- external links -->
-[ChromiumIssue943770]: https://crbug.com/943770 "943770 - DevTools:显示 iframe IndexedDB 数据库 - chromium - Monorail"
-
-[MDNBasicConceptsKeyGenerator]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_keygenerator "密钥生成器 - 基本概念 | MDN"
-[MDNIndexedDBAPI]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API "IndexedDB API | MDN"
-[MDNUsingIndexedDB]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "使用 IndexedDB | MDN"
-[MDNUsingIndexedDBUsingIndex]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Using_an_index "使用索引 - 使用 IndexedDB | MDN"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/indexeddb)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/indexeddb)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

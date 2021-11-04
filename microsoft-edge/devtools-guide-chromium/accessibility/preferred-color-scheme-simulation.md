@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 08/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 04f0cac55ea3524169e0eed1cd05f7b277aafde4
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 3fc9dffa6525b8f5edd428ebdc5286ae3c9a895e
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140177"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155463"
 ---
 # <a name="emulate-dark-or-light-schemes-in-the-rendered-page"></a>模拟呈现页面中的深色或浅色方案
 
@@ -63,4 +63,3 @@ ms.locfileid: "12140177"
     现在，您可以修改 CSS，并像查看任何其他网页一样查看呈现的结果。  有关详细信息，请导航到开始[查看和更改 CSS。](../css/index.md)
 
 1.  若要还原该设置，请在"命令菜单"中键入"模拟"或"方案"，然后选择"呈现 **：不模拟 CSS 首选颜色方案"。**  刷新页面时，将应用你自己的用于浅色或深色模式首选项的操作系统或浏览器设置。
-

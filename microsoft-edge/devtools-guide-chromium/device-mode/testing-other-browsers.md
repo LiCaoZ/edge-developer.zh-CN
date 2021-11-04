@@ -1,18 +1,18 @@
 ---
-description: 你的作业不会以确保你的网站在 android 和 Microsoft Edge运行结束。  尽管设备模式可以模拟一系列其他设备（如智能手机），但我们鼓励你查看由其他浏览器提供的模拟解决方案。
+description: 你的作业不会以确保你的网站在 Android 和 Microsoft Edge运行结束。  尽管设备模式可以模拟一系列其他设备（如智能手机），但我们鼓励你查看由其他浏览器提供的模拟解决方案。
 title: 模拟和测试其他浏览器
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 9845f368b73c37df5ac2d3d5ea4b3685ca2d7f6f
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: d94df4a68ecd9eabe8111bea3bcd10de6933207e
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140065"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157465"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -29,7 +29,7 @@ ms.locfileid: "12140065"
    limitations under the License.  -->
 # <a name="emulate-and-test-other-browsers"></a>模拟和测试其他浏览器
 
-你的作业不会以确保你的网站在 android 和 Microsoft Edge运行结束。  尽管 **设备模式** 可以模拟一系列其他设备（如智能手机），但我们鼓励你查看由其他浏览器提供的模拟解决方案。
+你的作业不会以确保你的网站在 Android 和 Microsoft Edge运行结束。  尽管 **设备模式** 可以模拟一系列其他设备（如智能手机），但我们鼓励你查看由其他浏览器提供的模拟解决方案。
 
 ### <a name="summary"></a>摘要
 
@@ -45,13 +45,13 @@ ms.locfileid: "12140065"
 
 ### <a name="firefox-responsive-design-view"></a>Firefox 响应式设计视图
 
-Firefox 具有[][MDNResponsiveDesignMode]响应式设计视图，该视图鼓励您停止就特定设备进行思考，而是通过拖动窗口的边缘来浏览设计在常见屏幕大小或您自己的屏幕大小上的变化。
+Firefox 具有[](https://developer.mozilla.org/docs/Tools/Responsive_Design_View)响应式设计视图，该视图鼓励您停止就特定设备进行思考，而是通过拖动窗口的边缘来浏览设计在常见屏幕大小或您自己的屏幕大小上的变化。
 
 ### <a name="edgehtml-emulation"></a>EdgeHTML 模拟
 
-若要模拟Windows手机，请使用 Microsoft Edge (EdgeHTML) [内置模拟][ArchiveMicrosoftEdgeDevtoolsEmulation]。
+若要模拟Windows Phones，请使用 Microsoft Edge (EdgeHTML) [内置模拟](/archive/microsoft-edge/legacy/developer/devtools-guide/emulation)。
 
-使用 [IE 11 仿真][Ie11DevToolsEmulation] 模拟页面在早期版本的 Internet Explorer。
+使用 [IE 11 模拟](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85)) 模拟页面在早期版本的 Internet Explorer。
 
 
 <!-- ====================================================================== -->
@@ -67,9 +67,9 @@ Firefox 具有[][MDNResponsiveDesignMode]响应式设计视图，该视图鼓励
 :::image-end:::
 -->
 
-目前，无法将 Microsoft Edge Android 仿真器上。  但是，您可以使用 Android 浏览器、Chromium Shell 和 Firefox for Android，我们将在本文的稍后部分介绍这些内容。  Chromium内容命令行管理程序Chromium呈现引擎运行Microsoft Edge，但不带特定于浏览器的功能。
+目前，无法将 Microsoft Edge Android 仿真器上。  但是，您可以使用 Android 浏览器、Chromium命令行管理程序以及适用于 Android 的 Firefox，我们将在本文的稍后部分介绍这些内容。  Chromium内容命令行管理程序Chromium呈现引擎运行Microsoft Edge，但不带特定于浏览器的功能。
 
-Android 仿真器附带 Android SDK，你需要下载为 Android [Studio][AndroidStudioDownload]的一部分。  然后按照说明[设置虚拟设备并][AndroidStudioCreateManageVirtualDevices][启动仿真器][AndroidStudioRunAppsAndroidEmulator]。
+Android 仿真器附带 Android SDK，你需要下载为 Android [Studio](https://developer.android.com/sdk/installing/studio.html)的一部分。  然后按照说明[设置虚拟设备并](https://developer.android.com/tools/devices/managing-avds.html)[启动仿真器](https://developer.android.com/tools/devices/emulator.html)。
 启动仿真器后，选择 **浏览器图标，** 在适用于 Android 的旧股票浏览器上测试你的网站。
 
 #### <a name="chromium-content-shell-on-android"></a>Chromium Android 上的内容 shell
@@ -100,7 +100,7 @@ chmod u+x ./chromium-android-installer/*.sh
 
 与内容Chromium类似，您可以获取 APK 以将 Firefox 安装到仿真器上。
 
-[下载正确的 .apk 文件][MozillaFirefoxDownload]。
+[下载正确的 .apk 文件](https://www.mozilla.org/firefox/all/#product-android-beta)。
 
 若要将文件安装到打开的仿真器或连接的 Android 设备上，请运行以下命令：
 
@@ -110,9 +110,9 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 
 ### <a name="ios-simulator"></a>iOS 模拟器
 
-适用于 Mac OS X 的 iOS 模拟器附带 Xcode，从 [应用商店安装][MacAppStoreXcode]。
+适用于 Mac OS X 的 iOS 模拟器附带 Xcode，从 [应用商店安装](https://itunes.apple.com/app/xcode/id497799835)。
 
-完成后，了解如何通过 Apple 开发人员文档使用 [模拟器][AppleSimulatorHelp]。
+完成后，了解如何通过 Apple 开发人员文档使用 [模拟器](https://help.apple.com/simulator/mac/current)。
 
 > [!NOTE]
 > 若要避免每次想要使用 iOS 模拟器时都打开 Xcode，请将其打开，将鼠标悬停在扩展坞中的 iOS 模拟器图标上，打开上下文菜单 (右键单击) ，然后选择"在扩展坞中**保留"。**  现在只要需要图标即可。
@@ -123,7 +123,7 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
    新式 IE VM
 :::image-end:::
 
-Microsoft Edge (使用 EdgeHTML) 虚拟机 (VM) ，可以通过 VirtualBox (或 VMWare) 访问计算机上不同版本的 EdgeHTML 和 Internet Explorer。  在下载 [页面上选择虚拟机][MicrosoftDeveloperEdgeVms]。
+Microsoft Edge (使用 EdgeHTML) 虚拟机 (VM) ，可以通过 VirtualBox (或 VMWare) 访问计算机上不同版本的 EdgeHTML 和 Internet Explorer。  在下载 [页面上选择虚拟机](https://developer.microsoft.com/microsoft-edge/tools/vms)。
 
 
 <!-- ====================================================================== -->
@@ -133,51 +133,22 @@ Microsoft Edge (使用 EdgeHTML) 虚拟机 (VM) ，可以通过 VirtualBox (或 
 
 以下产品是基于云的仿真器和相关产品的示例。  这些说明来自产品的信息网站，并用作要考虑的特性或功能的示例。
 
-*   [BrowserStack][|::ref1::|] 可帮助你执行手动测试。  选择操作系统、浏览器版本、设备类型和要浏览的 URL，然后 BrowserStack 将旋转可与之交互的托管虚拟机。  你可以在同一个屏幕中运行多个仿真器，以同时跨多个设备测试你的应用的外观。
+*   [BrowserStack](https://www.browserstack.com/automate) 可帮助你执行手动测试。  选择操作系统、浏览器版本、设备类型和要浏览的 URL，然后 BrowserStack 将旋转可与之交互的托管虚拟机。  你可以在同一个屏幕中运行多个仿真器，以同时跨多个设备测试你的应用的外观。
 
-*   [设备 Anywhere][AppExperience] 不使用仿真器，而是能够远程控制的真实设备。  当你需要在特定的设备上重现问题，并且某些报告中可能不会显示问题时，这非常有用。
+*   [设备 Anywhere](https://www.sigos.com/app-experience/) 不使用仿真器，而是能够远程控制的真实设备。  当你需要在特定的设备上重现问题，并且某些报告中可能不会显示问题时，这非常有用。
 
-*   [LambdaTest][|::ref2::|] 可帮助你在各种浏览器和操作系统的组合上执行手动跨浏览器测试。  你可以录制复杂 Bug 的视频并通过集成（如 Microsoft Teams、Slack 等）共享它们。  可以通过并行运行测试来加快测试速度。
+*   [LambdaTest](https://www.lambdatest.com/) 可帮助你在各种浏览器和操作系统的组合上执行手动跨浏览器测试。  你可以录制复杂错误的视频，并通过集成（如 Microsoft Teams、Slack 等）共享它们。  可以通过并行运行测试来加快测试速度。
 
-*   [使用操作][SauceLabs] 标签，可以在仿真器内运行单元测试，这可用于编写通过网站的流脚本，并随后在各种设备上观看此内容的视频录制。  您还可以对网站执行手动测试。
+*   [使用操作](https://saucelabs.com) 标签，可以在仿真器内运行单元测试，这可用于编写通过网站的流脚本，并随后在各种设备上观看此内容的视频录制。  您还可以对网站执行手动测试。
 
-*   [TestingBot][|::ref3::|] 可帮助你在各种浏览器和操作系统组合上执行手动测试和自动测试。  在 TestingBot 的仿真器和物理设备上测试你的网站和移动应用。
+*   [TestingBot](https://testingbot.com/) 可帮助你在各种浏览器和操作系统组合上执行手动测试和自动测试。  在 TestingBot 的仿真器和物理设备上测试你的网站和移动应用。
 
  (此列表因添加而关闭。) 
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-<!-- external DMC links -->
-[ArchiveMicrosoftEdgeDevtoolsEmulation]: /archive/microsoft-edge/legacy/developer/devtools-guide/emulation "模拟|Microsoft Docs"
-[Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "模拟浏览器、屏幕大小和 GPS 位置|Microsoft Docs"
-<!-- external non-DMC links -->
-[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "下载虚拟机"
-[AndroidStudioCreateManageVirtualDevices]: https://developer.android.com/tools/devices/managing-avds.html "创建和管理虚拟设备|Android 开发人员"
-[AndroidStudioDownload]:  https://developer.android.com/sdk/installing/studio.html "下载 Android Studio 和 SDK |Android 开发人员"
-[AndroidStudioRunAppsAndroidEmulator]: https://developer.android.com/tools/devices/emulator.html "在 Android 设备上Emulator |Android 开发人员"
-[AppleSimulatorHelp]: https://help.apple.com/simulator/mac/current "模拟器帮助 - 当前|Apple"
-[MacAppStoreXcode]: https://itunes.apple.com/app/xcode/id497799835 "Mac 应用商店上的 Xcode"
-[MDNResponsiveDesignMode]: https://developer.mozilla.org/docs/Tools/Responsive_Design_View "响应式设计|MDN"
-[MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "下载 Firefox 浏览器"
-<!-- cloud product links -->
-[BrowserStack]: https://www.browserstack.com/automate "BrowserStack"
-[AppExperience]: https://www.sigos.com/app-experience/ "应用体验"
-[LambdaTest]: https://www.lambdatest.com/ "LambdaTest"
-[SauceLabs]: https://saucelabs.com "一些实验室"
-[TestingBot]: https://testingbot.com/ "TestingBot"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)由[Meggin Kearney][MegginKearney] (Technical Writer) 和 Paul [Bakaus][PaulBakaus] (Google |工具、性能、动画、UX) 。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)由[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和[Paul Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Google |工具、性能、动画、UX) 。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
-[PaulBakaus]: https://developers.google.com/web/resources/contributors#paul-bakaus
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 93899f6831c03afc0ed950929e2c61eb022fc685
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: eeabe838f7a4b43a2080e27375179cf2b7648793
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141913"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157500"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,7 +29,7 @@ ms.locfileid: "12141913"
    limitations under the License.  -->
 # <a name="understand-security-issues-with-microsoft-edge-devtools"></a>了解开发人员工具Microsoft Edge安全问题
 
-<!--Use the **Security** Panel in [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to make sure HTTPS is properly implemented on a page.  Navigate to **Why HTTPS Matters** to learn why every website should be protected with HTTPS, even sites that do not handle sensitive user data.  -->
+<!--Use the **Security** Panel in [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) to make sure HTTPS is properly implemented on a page.  Navigate to **Why HTTPS Matters** to learn why every website should be protected with HTTPS, even sites that do not handle sensitive user data.  -->
 
 <!--todo: add section when why-https is available -->
 
@@ -39,7 +39,7 @@ ms.locfileid: "12141913"
 
 安全 **面板** 是 DevTools 中用于检查页面安全性的主要位置。
 
-1.  [打开 DevTools][DevToolsOpen]。
+1.  [打开 DevTools](../open/index.md)。
 1.  选择" **安全"** 选项卡以打开 **"安全"** 工具。
 
     :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="安全面板" lightbox="../media/security-security-overview-secure.msft.png":::
@@ -62,10 +62,10 @@ ms.locfileid: "12141913"
 
 如果已在服务器上设置 HTTPS，则解决此问题只需将服务器配置为将所有 HTTP 请求重定向到 HTTPS。
 
-如果您尚未在服务器上设置 HTTPS，Let's [Encrypt][LetsEncrypt] 提供了一种免费且相对简单的启动过程的方法。  或者，你可以考虑将网站托管在CDN。  默认情况下，HTTPS 上的大多数主要 CDN 都承载网站。
+如果您尚未在服务器上设置 HTTPS，Let's [Encrypt](https://letsencrypt.org) 提供了一种免费且相对简单的启动过程的方法。  或者，你可以考虑将网站托管在CDN。  默认情况下，HTTPS 上的大多数主要 CDN 都承载网站。
 
 > [!TIP]
-> [Webhint][Webhint]中的"使用[HTTPS"][WebhintUseHttps]提示可帮助自动执行确保所有 HTTP 请求都定向到 HTTPS 的过程。
+> [Webhint](https://webhint.io)中的"使用[HTTPS"](https://webhint.io/docs/user-guide/hints/hint-https-only)提示可帮助自动执行确保所有 HTTP 请求都定向到 HTTPS 的过程。
 
 ### <a name="mixed-content"></a>混合内容
 
@@ -103,27 +103,12 @@ ms.locfileid: "12141913"
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge 开发人员工具|Microsoft Docs"
-[DevToolsOpen]: ../open/index.md "打开 Microsoft Edge 开发人员工具 | Microsoft Docs"
-<!-- external links -->
-[LetsEncrypt]: https://letsencrypt.org "让我们进行加密 - 免费 SSL/TLS 证书"
-
-[Webhint]: https://webhint.io "webhint"
-[WebhintUseHttps]: https://webhint.io/docs/user-guide/hints/hint-https-only "使用 HTTPS |webhint 文档"
-
 <!--[mixed]: /web/fundamentals/security/prevent-mixed-content/what-is-mixed-content ""  -->
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/security/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/security/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

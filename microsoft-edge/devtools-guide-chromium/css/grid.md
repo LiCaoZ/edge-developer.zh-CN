@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
-ms.openlocfilehash: 276b2390d40a884f73429af0d60f7bcc034ac382
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 3c832a6126b886b61639d456c28f005df9a26eb7
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140597"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156352"
 ---
 # <a name="inspect-css-grid"></a>检查 CSS 网格
 
@@ -20,20 +20,20 @@ ms.locfileid: "12140597"
 
 本文图表中使用的示例来自以下网页。
 
-*   [水果盒][JecFyiDemoCssGridFruit]
-*   [小吃盒][JecFyiDemoCssGridSnack]
+*   [水果盒](https://jec.fyi/demo/css-grid-fruit)
+*   [小吃盒](https://jec.fyi/demo/css-grid-snack)
 
 
 <!-- ====================================================================== -->
 ## <a name="before-you-begin"></a>开始之前
 
-CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网格布局指南][MdnCssGridLayout]开始了解 CSS 网格和许多功能。
+CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网格布局指南](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout)开始了解 CSS 网格和许多功能。
 
 
 <!-- ====================================================================== -->
 ## <a name="discover-css-grids"></a>探索 CSS 网格
 
-如果页面上的 HTML 元素应用了 `display: grid` 或 `display: inline-grid`，则“[元素][DevtoolsGuideOpen]”面板中该元素的旁边会显示一个 `grid` 徽章。
+如果页面上的 HTML 元素应用了 `display: grid` 或 `display: inline-grid`，则“[元素](../open/index.md)”面板中该元素的旁边会显示一个 `grid` 徽章。
 
 :::image type="complex" source="../media/grid-discover-grid.msft.png" alt-text="探索网格" lightbox="../media/grid-discover-grid.msft.png":::
    探索网格
@@ -78,7 +78,7 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
     |:--- |:--- |
     | **显示轨道大小**  | 显示 (或) 轨的大小。 |
     | **显示区域名称** | 当 (时) 区域的名称或隐藏区域名称。 |
-    | **延伸网格线** | 显示 (或隐藏) 沿每个轴的网格尺寸的扩展。  默认情况下，网格线仅在设置了 `display: grid` 或 `display: inline-grid` CSS 的元素内显示。 |
+    | **延伸网格线** | 显示 (或隐藏) 轴上网格尺寸的扩展。  默认情况下，网格线仅在设置了 `display: grid` 或 `display: inline-grid` CSS 的元素内显示。 |
 
 以下各节提供了每个**叠加层显示设置**的详细信息。
 
@@ -86,7 +86,7 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
 
 默认情况下，网格叠加层上会显示正数和负数线条编号。
 
-有关网格叠加层中负数的详细信息，请导航至“[CSS 网格基于线条的放置][MdnLineBasedPlacementCssGrid]”。
+有关网格叠加层中负数的详细信息，请导航至“[CSS 网格基于线条的放置](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid)”。
 
 :::image type="complex" source="../media/grid-show-line-numbers.msft.png" alt-text="显示线条编号" lightbox="../media/grid-show-line-numbers.msft.png":::
    显示线条编号
@@ -102,7 +102,7 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
 
 ### <a name="show-line-names"></a>显示线条名称
 
-有关网格叠加层中的线条名称的详细信息，请导航至“[使用命名网格线的布局][MdnLayoutUsingNamedGridLines]”。
+有关网格叠加层中的线条名称的详细信息，请导航至“[使用命名网格线的布局](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines)”。
 
 选择“**显示线条名称**”以查看线条名称而不是编号。  在示例中，4 条线的名称为：`left`、`middle1`、`middle2` 和 `right`。
 
@@ -192,23 +192,8 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsGuideOpen]: ../open/index.md "打开 Microsoft Edge 开发人员工具 | Microsoft Docs"
-
-[JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "CSS 网格 | jec.fyi"
-[JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "CSS 网格 | jec.fyi"
-
-[MdnCssGridLayout]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout "CSS 网格布局 | MDN"
-[MdnLayoutUsingNamedGridLines]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines "使用命名网格线的布局 | MDN"
-[MdnLineBasedPlacementCssGrid]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid "CSS 网格基于线条的放置 | MDN"
-
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/css/grid) ，由 [Jecelyn Yeen][JecelynYeen] 和开发人员 (Chrome DevTools) 。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/css/grid)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

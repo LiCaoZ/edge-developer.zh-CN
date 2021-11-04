@@ -7,21 +7,21 @@ ms.date: 08/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， 加载项 api， 发布 api
-ms.openlocfilehash: 2c1cf79dac2f6b179ada70d75a07c646eac40445
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: b0eddd3ae769942129f03abe510c2d5b25ca011d
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141521"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157290"
 ---
 # <a name="microsoft-edge-add-ons-api-reference-under-development"></a>Microsoft Edge正在开发 (加载项 API) 
 
 > [!NOTE]
-> 本文是一个请求注释。  加载项Microsoft Edge API 尚未可用于测试，并且合作伙伴中心尚未提供"发布 API"页。  加载项MICROSOFT EDGE API 正在积极开发中，路线图根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
+> 本文是一个请求注释。  Microsoft Edge加载项 API 尚无法进行测试，并且合作伙伴中心尚未提供"发布 API"页。  加载项MICROSOFT EDGE API 正在积极开发中，路线图根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
 
 这是加载项 API 的 REST Microsoft Edge引用。  此 API 可自动发布已提交到加载项网站的Microsoft Edge更新。
 
-有关概述，请导航到["使用Microsoft Edge加载项 API"。][UsingAddonsAPI]
+有关概述，请导航到["使用Microsoft Edge加载项 API"。](using-addons-api.md)
 
 
 <!-- ====================================================================== -->
@@ -344,7 +344,7 @@ ms.locfileid: "12141521"
 <!-- ====================================================================== -->
 ## <a name="error-codes"></a>错误代码
 
-下面列出了常见错误代码和可能的原因。  对于完整列表，导航到 [合作伙伴中心 REST 错误代码][PartnerCenterErrorCodes] 或 [HTTP 状态代码列表][WikipediaListOfStatusCodes]。
+下面列出了常见错误代码和可能的原因。  对于完整列表，导航到 [合作伙伴中心 REST 错误代码](/partner-center/develop/error-codes) 或 [HTTP 状态代码列表](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)。
 
 ### <a name="4xx-client-error"></a>4xx：客户端错误
 
@@ -366,11 +366,4 @@ ms.locfileid: "12141521"
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [使用Microsoft Edge加载项 API][UsingAddonsAPI]
-
-
-<!-- links -->
-[UsingAddonsAPI]: using-addons-api.md "使用Microsoft Edge加载项 API |Microsoft Docs"
-<!-- external links -->
-[PartnerCenterErrorCodes]: /partner-center/develop/error-codes "合作伙伴中心 REST 错误代码|Microsoft Docs "
-[WikipediaListOfStatusCodes]: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes "HTTP 状态代码列表|Wikipedia"
+*  [使用Microsoft Edge加载项 API](using-addons-api.md)

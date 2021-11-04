@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: f31a3e179c2044b600f0f7c12ba358df17c1c80a
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: c016ed53baa0a1072201d3a30c17b6401143d883
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141745"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157535"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -31,7 +31,7 @@ ms.locfileid: "12141745"
 
 本文介绍内存分析中使用的常见术语，适用于不同语言的各种内存分析工具。
 
-此处介绍的术语和概念是指内存 [面板][DevtoolsMemoryProblemsHeapSnapshots]。  如果你曾经使用过 Java、.NET 或其他一些内存探查器，那么本文可能是一个刷新的文章。
+此处介绍的术语和概念是指内存 [面板](./heap-snapshots.md)。  如果你曾经使用过 Java、.NET 或其他一些内存探查器，那么本文可能是一个刷新程序。
 
 
 <!-- ====================================================================== -->
@@ -48,7 +48,7 @@ ms.locfileid: "12141745"
 *   直接由 对象。
 *   隐式保留对其他对象的引用，从而阻止垃圾收集器自动释放这些对象。
 
-使用 DevTools 中的内存面板 (发现的内存问题的工具在内存 **) **下找到时，你可能会发现自己正在查看一些不同的信息列。 [][DevtoolsMemoryProblemsHeapSnapshots]  两个突出的"浅 **表** 大小"和 **"保留大小**"，但这表示什么？
+使用 DevTools 中的内存面板 (在 Memory **) **下发现的内存问题的工具时，你可能会发现自己正在查看一些不同的信息列。 [](./heap-snapshots.md)  两个突出的"浅 **表** 大小"和 **"保留大小**"，但这表示什么？
 
 :::image type="complex" source="../media/memory-problems-shallow-retained.msft.png" alt-text="浅表和保留大小" lightbox="../media/memory-problems-shallow-retained.msft.png":::
    浅表和保留大小
@@ -75,9 +75,9 @@ ms.locfileid: "12141745"
 *   有时对象由源工具和控制台中的调试上下文保留，**** 例如控制台评估之后****。  使用清除的控制台工具 **创建** 堆快照，在"源"工具的调试器中没有活动的 **断** 点。
 
 >[!TIP]
-> 在"内存"工具中拍摄堆 [快照之前，][DevtoolsMemoryProblemsHeapSnapshots] 请清除 **"** 控制台"工具，并停用"源"工具中的 **断** 点。  若要清除 **控制台工具** ，请运行 `clear()` 方法。
+> 在"内存"工具中拍摄堆 [快照之前，](./heap-snapshots.md) 请清除 **"** 控制台"工具，并停用"源"工具中的 **断** 点。  若要清除 **控制台工具** ，请运行 `clear()` 方法。
 
-内存图以根开头，根目录可能是浏览器的对象或Node.js `window` `Global` 对象。  您不控制如何垃圾回收根对象。
+内存图以根开头，该根可能是浏览器的对象或Node.js `window` `Global` 对象。  您不控制如何垃圾回收根对象。
 
 :::image type="complex" source="../media/memory-problems-dontcontrol.msft.png" alt-text="你无法控制如何对根对象进行垃圾回收。" lightbox="../media/memory-problems-dontcontrol.msft.png":::
    你无法控制如何对根对象进行垃圾回收。
@@ -97,7 +97,7 @@ ms.locfileid: "12141745"
 *   **节点** (**或) **对象使用用于构建节点的构造函数函数的名称进行标记。 ****
 *   **边缘** 使用属性 的名称 **标记**。
 
-了解如何 [使用堆配置文件器记录配置文件][DevtoolsMemoryProblemsHeapSnapshots]。  在下图中，内存工具中堆快照记录中的一些 [值得注意的事项包括][DevtoolsMemoryProblemsHeapSnapshots] 距离：垃圾回收器根之间的距离。  如果几乎同一类型的所有对象都位于同一距离，而其中一些对象距离较大，那么这一点值得研究。
+了解如何 [使用堆配置文件器记录配置文件](./heap-snapshots.md)。  在下图中，内存工具中堆快照记录中的一些 [值得注意的事项包括](./heap-snapshots.md) 距离：垃圾回收器根之间的距离。  如果几乎同一类型的所有对象都位于同一距离，而其中一些对象距离较大，那么这一点值得研究。
 
 :::image type="complex" source="../media/memory-problems-root.msft.png" alt-text="与根之间的距离" lightbox="../media/memory-problems-root.msft.png":::
    与根之间的距离
@@ -170,7 +170,7 @@ Dominator 对象由树结构组成，因为每个对象只有一个管理程序�
 
 当有少量属性时，这些属性将内部存储在 JavaScript 对象中。
 
-**Map** 是描述对象种类和布局的对象。 例如，映射用于描述用于快速属性访问的隐式 [对象层次结构][V8FastProperties]。
+**Map** 是描述对象种类和布局的对象。 例如，映射用于描述用于快速属性访问的隐式 [对象层次结构](https://v8.dev/blog/fast-properties)。
 
 ### <a name="object-groups"></a>对象组
 
@@ -183,19 +183,8 @@ Dominator 对象由树结构组成，因为每个对象只有一个管理程序�
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsMemoryProblemsHeapSnapshots]: ./heap-snapshots.md "如何记录堆快照|Microsoft Docs"
-
-[V8FastProperties]: https://v8.dev/blog/fast-properties "V8 中的快速属性|V8"
-
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) 由技术撰稿人 [Meggin Kearney][MegginKearney] (创作) 。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) 由技术撰稿人 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (创作) 。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

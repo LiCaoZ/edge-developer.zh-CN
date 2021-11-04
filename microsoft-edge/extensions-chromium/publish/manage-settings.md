@@ -7,22 +7,22 @@ ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 55e25821d2ff34d8226987d4f0395527ee7e2da7
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 5d8246040ec004e8c1fb33a6fb034d8b85db9c50
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141199"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157031"
 ---
 # <a name="manage-account-settings"></a>管理帐户设置
 
-在合作伙伴中心管理你的Microsoft Edge开发者帐户的帐户设置[和个人资料详细信息][MicrosoftPartnerCenter]。
+在合作伙伴中心管理你的Microsoft Edge开发者帐户的帐户设置[和个人资料详细信息](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)。
 
 
 <!-- ====================================================================== -->
 ## <a name="account-settings"></a>帐户设置
 
-若要显示帐户设置，请选择合作伙伴中心开发人员设置 右上角的齿轮[][MicrosoftPartnerCenter]  >  **图标**。  在 **"开发人员设置**"中，查看并更新以下信息。
+若要显示帐户设置，请选择合作伙伴中心开发人员设置 右上角的齿轮[](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)  >  **图标**。  在 **"开发人员设置**"中，查看并更新以下信息。
 
 *   查看有关你的帐户的信息。
 *   指向查看信息的其他页面的链接。
@@ -51,7 +51,3 @@ ms.locfileid: "12141199"
 | 验证状态 | 当你的帐户执行验证过程时，检查你的验证状态。  例如，首次创建帐户时或更新联系人信息后，将验证您的帐户。 |
 | 程序 | 查看有关已注册计划或其他可能感兴趣的计划的信息。 |
 | 协议 | 查看您的帐户接受的协议。 |
-
-<!-- links -->
-
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "合作伙伴中心"

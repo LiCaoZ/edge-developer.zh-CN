@@ -7,12 +7,12 @@ ms.date: 09/22/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 兼容性， Web 平台， 用户代理字符串， ua 字符串， ua 替代， 用户代理客户端提示， 用户代理客户端提示， ua 客户端提示， ua ch， 功能检测， 浏览器标识， 浏览器检测， 标头， https 标头， 检测 microsoft edge， 检测 Microsoft edge
-ms.openlocfilehash: 65f0ea05453a8a8684c70d9425bb457f691bb565
-ms.sourcegitcommit: 5c9e13989cd2ea1598c8ce69192babe63ab78ac3
+ms.openlocfilehash: 7a56dafcc399baae453ff1de7822b5227b73cad7
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "12154959"
+ms.locfileid: "12155911"
 ---
 # <a name="detecting-microsoft-edge-from-your-website"></a>正在从网站检测 Microsoft Edge
 
@@ -33,15 +33,15 @@ user agent string - not used
 | 机制 | 服务器端 | 客户端 |
 |:--- |:--- |:--- |
 | **用户代理客户端提示 (** 推荐)  | `Sec-CH-UA` HTTPS 标头 | `navigator.userAgentData` JavaScript 方法 |
-| **用户代理字符串 (** 旧版)  | `User-Agent` HTTPS 标头 | `navigator.userAgent` JavaScript 方法 |
+| **旧版用户代理 (** 代理)  | `User-Agent` HTTPS 标头 | `navigator.userAgent` JavaScript 方法 |
 
 
 <!-- ====================================================================== -->
 ## <a name="feature-detection"></a>功能检测
 
-Microsoft [建议尽可能检测浏览器](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) 是否支持功能，而不是检测浏览器。
+Microsoft [建议尽可能检测](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) 浏览器是否支持功能，而不是检测浏览器。
 
-如果必须检测浏览器，Microsoft 建议使用User-Agent提示，如下所示。
+如果必须检测浏览器，Microsoft 建议User-Agent客户端提示，如下所示。
 
 
 <!-- ====================================================================== -->
@@ -98,7 +98,7 @@ Sec-CH-UA-Platform: "Windows"
 mobile: false }
 ```
 
-Microsoft Edge品牌 `GREASE` 值会随着时间而改变。 它会阻止网站在尝试检测产品版本时匹配整个品牌Microsoft Edge。
+Microsoft Edge包括 `GREASE` 一个品牌值，该值会随着时间而改变。 它会阻止网站在尝试检测产品版本时匹配整个品牌Microsoft Edge。
 
 若要请求更多详细信息（如 ）， `platform` 请使用以下代码。
 
@@ -124,7 +124,7 @@ navigator.userAgentData.getHighEntropyValues(
 
 ### <a name="platformversion-hint"></a>platformVersion 提示
 
-标头中的操作系统版本令牌尚未针对 Windows 11 `User-Agent` 更新，并且仍报告 `Windows NT 10.0` 。
+标头中的操作系统版本令牌尚未更新，Windows 11 `User-Agent` 报告 `Windows NT 10.0` 。
 
 若要区分 Windows 10 和 Windows 11，请请求 Microsoft Edge `platformVersion` 95 或更高版本中的客户端提示。 值介于 和 之间（包括 和 表示 Windows 10 版本，而 值或更高版本表示 `1.0.0` `12.0.0` `14.0.0` Windows 11。
 
@@ -160,7 +160,7 @@ function isChromium() {
 
 User-Agent字符串已过时，并且具有导致网站兼容性问题的长历史记录。
 
-如果可能，Microsoft 建议尽可能Microsoft Edge基于字符串的浏览器检测User-Agent逻辑。 如果你有一个很好的理由来检测浏览器，Microsoft Edge团队建议使用[用户代理](#user-agent-client-hints)客户端提示作为主要检测逻辑。 [用户代理客户端提示](#user-agent-client-hints) 还降低了浏览器检测代码的复杂性。
+如果可能，Microsoft 建议尽可能Microsoft Edge基于字符串的浏览器User-Agent逻辑。 如果你有一个很好的理由来检测浏览器，Microsoft Edge建议将[用户代理](#user-agent-client-hints)客户端提示用作主要检测逻辑。 [用户代理客户端提示](#user-agent-client-hints) 还降低了浏览器检测代码的复杂性。
 
 对于旧引用，以下格式用于User-Agent字符串。
 
@@ -186,9 +186,9 @@ User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/5
 
 
 <!-- ====================================================================== -->
-## <a name="identifiers-for-microsoft-edge-on-various-platforms"></a>各种平台上Microsoft Edge的标识符
+## <a name="identifiers-for-microsoft-edge-on-various-platforms"></a>各种平台上Microsoft Edge标识符
 
-在桌面操作系统上，Microsoft Edge字符串中的 `Edg` 标记通常User-Agent标识。  但是，某些设备Microsoft Edge使用不同的令牌，如下所示：
+在桌面操作系统上，Microsoft Edge字符串中的标记 `Edg` 通常User-Agent标识。  但是，某些设备Microsoft Edge使用不同的令牌，如下所示：
 
 
 | 平台 | 标识符令牌 |
@@ -212,21 +212,23 @@ User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/5
 
 可能需要更多时间来更新和测试网站的用户代理检测逻辑，以解决 Microsoft 报告的问题。 为了最大限度地提高用户的兼容性，Microsoft Edge Beta和稳定渠道使用用户代理替代列表。 更新网站时，请使用用户代理替代。 用户代理替代列表由 Microsoft 提供。
 
-替代指定要发送Microsoft Edge用户代理值，而不是指定特定网站的默认用户代理。 若要显示当前应用的用户代理替代列表，请完成以下操作。
-
+替代指定要发送Microsoft Edge用户代理值，而不是指定特定网站的默认用户代理。 若要显示当前应用的用户代理覆盖列表，请执行以下操作：
 1. 打开 Microsoft Edge Beta 或 Stable 渠道。
 1. 导航到 `edge://compat/useragent`。
 
-Canary Microsoft Edge开发人员频道当前不会接收用户代理覆盖。 Canary Microsoft Edge开发人员频道提供的环境使用默认模式Microsoft Edge代理。 使用Microsoft Edge Canary 和 Dev 渠道重现由默认用户代理导致Microsoft Edge问题。 若要在渠道或稳定渠道中Microsoft Edge Beta代理替代，请完成以下操作。
+Canary Microsoft Edge开发人员频道当前不会接收用户代理覆盖。 Canary Microsoft Edge开发人员频道提供的环境使用默认模式Microsoft Edge代理。 使用Microsoft Edge Canary 和 Dev 渠道重现由默认用户代理导致Microsoft Edge的问题。
 
-1. 打开命令提示符。 例如，在"**搜索Windows输入 cmd，** 然后选择命令**提示符**应用。
-1. 复制以下代码段。
+若要在渠道或稳定渠道中Microsoft Edge Beta代理替代：
+
+1. 打开命令提示符。  例如，在"**搜索Windows输入 cmd，** 然后选择命令**提示符**应用。
+
+1. 复制以下代码段：
 
     ```shell
     --disable-domain-action-user-agent-override
     ```
 
-1. 使用Microsoft Edge代码段运行应用程序。
+1. 使用Microsoft Edge代码段运行应用程序，如下所示：
 
     ```shell
     {path/to/microsoft/edge.ext} --disable-domain-action-user-agent-override

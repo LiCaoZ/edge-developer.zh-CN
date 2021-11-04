@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: d0a178fc82ca017dc0eacd1d5baf62da556317d2
-ms.sourcegitcommit: 5c9e13989cd2ea1598c8ce69192babe63ab78ac3
+ms.openlocfilehash: c6bfc321681888308f1e52add801dda55ae9df3b
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "12154973"
+ms.locfileid: "12157374"
 ---
 # <a name="get-started-with-webview2-in-win32-apps"></a>在 Win32 应用中开始使用 WebView2
 
-本文将开始创建你的第一个 WebView2 应用，并了解 [WebView2 的主要功能][MicrosoftDeveloperMicrosoftEdgeWebview2]。  有关单个 WebView2 API 的信息，请导航到 [API 参考][Webview2ReferenceWin32]。
+本文将开始创建你的第一个 WebView2 应用，并了解 [WebView2 的主要功能](https://developer.microsoft.com/microsoft-edge/webview2)。  有关单个 WebView2 API 的信息，请导航到 [API 参考](/microsoft-edge/webview2/reference/win32)。
 
 > [!NOTE]
-> 本教程引用 WebView2 示例。 若要查看或复制示例代码，请导航到 [WebView2 示例代码][GithubMicrosoftedgeWebview2samplesMain]。
+> 本教程引用 WebView2 示例。 若要查看或复制示例代码，请导航到 [WebView2 示例代码](https://github.com/MicrosoftEdge/WebView2Samples)。
 
 
 <!-- ====================================================================== -->
@@ -28,9 +28,9 @@ ms.locfileid: "12154973"
 
 请确保先安装以下必备组件列表，然后再继续。
 
-*   [WebView2][Webview2Installer]运行时或任何[Microsoft Edge Insider (preview) Channel (][MicrosoftedgeinsiderDownload] Beta、Dev 或 Canary) 安装在当前受支持的操作系统 (Windows 10、Windows 8.1 和 Windows 7) 上。
+*   [WebView2](https://developer.microsoft.com/microsoft-edge/webview2)运行时或任何[Microsoft Edge Insider (preview) Channel (](https://www.microsoftedgeinsider.com/download) Beta、Dev 或 Canary) 安装在当前受支持的操作系统 (Windows 10、Windows 8.1 和 Windows 7) 上。
 
-*   [Visual Studio][MicrosoftVisualstudioMain]安装有 C++ 支持的 2015 或更高版本。
+*   [Visual Studio](https://visualstudio.microsoft.com)安装有 C++ 支持的 2015 或更高版本。
 
 
 <!-- ====================================================================== -->
@@ -39,7 +39,7 @@ ms.locfileid: "12154973"
 从包含单个主窗口的基本桌面项目开始。
 
 > [!IMPORTANT]
-> 为了更好地关注演练，请使用演练：为示例应用创建传统的 Windows 桌面应用程序 ([C++][CppWindowsWalkthroughCreatingDesktopApplication]) 中修改的示例代码。  若要下载修改后的示例并开始，请导航到["WebView2 示例"。][GithubMicrosoftedgeWebview2samplesGettingStartedGuide]
+> 为了更好地关注演练，请使用演练：为示例应用创建传统的 Windows 桌面应用程序 ([C++](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019&preserve-view=true)) 中修改的示例代码。  若要下载修改后的示例并开始，请导航到["WebView2 示例"。](https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide)
 
 1.  在Visual Studio中，打开 `WebView2GettingStarted.sln` 。
     如果使用早期版本的 Visual Studio，请将鼠标悬停在**WebView2GettingStarted**项目上，打开上下文菜单 (右键单击") "，然后选择"**属性"。**  在**配置属性**  >  **常规**下 **，Windows SDK**版本和平台**** 工具集，以使用 Win10 SDK 和Visual Studio可用的工具集。
@@ -67,7 +67,7 @@ Visual Studio显示错误，因为项目缺少 WebView2 头文件。  应在步�
     1.  在右侧窗口中，选择"安装 **"。**  NuGet将库下载到计算机。
 
         > [!NOTE]
-        > 实现[Windows库][GithubMicrosoftWilMain]和 Windows[运行时 C++ 模板][CppCxWrlTemplateLibraryVS2019]库是可选的，并且使使用 COM 更容易作为示例。
+        > 实现[Windows库](https://github.com/Microsoft/wil)和 Windows[运行时 C++ 模板](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true)库是可选的，并且使使用 COM 更容易作为示例。
 
         :::image type="complex" source="../media/wil.png" alt-text="Windows实现库" lightbox="../media/wil.png":::
            Windows实现库
@@ -174,9 +174,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 
 若要生成并运行应用，请选择 `F5` 。  现在，你有一个 WebView 窗口，必应页面。
 
-:::image type="complex" source="../media/bing-window.png" alt-text="必应窗口" lightbox="../media/bing-window.png":::
-   必应窗口
-:::image-end:::
+:::image type="content" source="../media/bing-window.png" alt-text="必应窗口" lightbox="../media/bing-window.png":::
 
 
 <!-- ====================================================================== -->
@@ -190,11 +188,9 @@ WebView2 团队已在上一步中介绍了使用 `ICoreWebView2::Navigate` 方�
 1.  `HistoryChanged`
 1.  `NavigationCompleted`
 
-有关详细信息，请参阅 [WebView2 的导航事件][Webview2ConceptsNavigationEvents]。
+有关详细信息，请参阅 [WebView2 的导航事件](../concepts/navigation-events.md)。
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="导航事件" lightbox="../media/navigation-events.png":::
-   导航事件
-:::image-end:::
+:::image type="content" source="../media/navigation-events.png" alt-text="导航事件" lightbox="../media/navigation-events.png":::
 
 在错误情况下，可能会发生以下一个或多个事件，具体取决于导航是否继续错误网页。
 
@@ -306,39 +302,8 @@ nullptr);
 
 有关本文未涵盖的其他 WebView2 功能，请参阅以下资源。
 
-*  [MicrosoftEdge/WebView2Samples 存储库][Win32GithubCode] - 本教程中使用的代码。
-*  [WebView2 开发的最佳做法][WV2BestPractices]
-*  [WebView2 API 示例][GithubMicrosoftedgeWebview2samplesApisample] - WebView2 功能的综合示例。
-*  [WebView2Browser][GithubMicrosoftedgeWebview2browser] - WebView2 示例应用。
-*  [WebView2 API 参考][Webview2ReferenceWin32]
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 开发最佳实践|Microsoft Docs"
-[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 |Microsoft Edge开发人员"
-
-[Webview2ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ 参考|Microsoft Docs"
-[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "WebView2 网站的导航|Microsoft Docs"
-
-[CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true "Windows运行时 C++ 模板库 (WRL) |Microsoft Docs"
-[CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019&preserve-view=true "Walkthrough： Create a traditional Windows Desktop application (C++) |Microsoft Docs"
-
-[GithubMicrosoftedgeWebview2browser]: https://github.com/MicrosoftEdge/WebView2Browser "WebView2Browser - MicrosoftEdge/WebView2Browser |GitHub"
-
-[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView 反馈 - MicrosoftEdge/WebViewFeedback | GitHub"
-
-[GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"
-
-[GithubMicrosoftedgeWebview2samplesApisample]: https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md "WebView2 API 示例 - MicrosoftEdge/WebView2Samples |GitHub"
-[GithubMicrosoftedgeWebview2samplesGettingStartedGuide]: https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"
-
-[GithubMicrosoftWilMain]: https://github.com/Microsoft/wil "Windows实现库 (WIL) - microsoft/wil |GitHub"
-
-[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "下载 Microsoft Edge 预览体验成员频道"
-
-[MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"
-
-[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 安装程序"
-
-[Win32GithubCode]:https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted "Win32 WebView2 入门指南代码"
+*  [MicrosoftEdge/WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted) - 本教程中使用的代码。
+*  [WebView2 开发的最佳做法](../concepts/developer-guide.md)
+*  [WebView2 API 示例](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md) - WebView2 功能的综合示例。
+*  [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) - WebView2 示例应用。
+*  [WebView2 API 参考](/microsoft-edge/webview2/reference/win32)

@@ -7,16 +7,16 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 0be4a84c4f4c878418bf0c42be9918c10fa5708e
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 8830637b3f6b5cd30c158a403557c8cd28815e67
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140149"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155365"
 ---
 # <a name="content-security-policy-csp"></a>内容安全策略 (CSP) 
 
-为了缓解大量的潜在跨网站脚本问题，Microsoft Edge (扩展系统已纳入内容安全策略和 CSP) 的一般[概念][W3CContentSecurityPolicy]。  这引入了一些相当严格的策略，这些策略使扩展在默认情况下更加安全，并让你能够创建和实施规则，以管理扩展和应用程序可能加载和运行的内容类型。
+为了缓解大量的潜在跨网站脚本问题，Microsoft Edge 扩展系统已纳入内容安全策略和 CSP (的一般[) 。 ](https://w3c.github.io/webappsec-csp)  这引入了一些相当严格的策略，这些策略使扩展在默认情况下更加安全，并让你能够创建和实施规则，以管理扩展和应用程序可能加载和运行的内容类型。
 
 通常，CSP 用作扩展加载或运行的资源的阻止/允许列表机制。  通过为扩展定义合理的策略，你可以仔细考虑扩展所需的资源，并要求浏览器确保这些是你的扩展有权访问的唯一资源。  这些策略提供高于扩展请求的主机权限的安全性;它们是一层额外的保护，而不是替代。
 
@@ -30,7 +30,7 @@ ms.locfileid: "12140149"
 }
 ```
 
-> 有关 CSP 语法的完整详细信息，请参阅内容安全策略规范和 HTML5Rocks 上的"内容[][HTML5RocksIntroductionContentSecurityPolicy]安全策略简介"文章。 [][W3CContentSecurityPolicy]
+> 有关 CSP 语法的完整详细信息，请参阅内容安全策略规范和 HTML5Rocks 上的"内容[](https://www.html5rocks.com/en/tutorials/security/content-security-policy)安全策略简介"文章。 [](https://w3c.github.io/webappsec-csp)
 
 
 <!-- ====================================================================== -->
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 脚本和对象资源只能从扩展包加载，而不是从大型 Web 加载。  这将确保你的扩展仅运行你专门批准的代码，防止活动网络攻击者恶意重定向你的资源请求。
 
-请考虑在扩展包中 (jQuery 的特定版本) 从外部 CDN 加载，而不是编写依赖于 jQuery 版本的代码。  即，而不是：
+请考虑在扩展包中 (jQuery 的特定版本) 从外部 CDN 加载的其他库，而不是编写依赖于 jQuery 代码的代码。  即，而不是：
 
 ```html
 <!doctype html>
@@ -198,13 +198,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 As of Chrome 46, -->
 
-内联脚本能够通过在策略中指定源代码的 base64 编码哈希来允许。  此哈希必须以使用的哈希算法作为前缀， (sha256、sha384 或 sha512) 。  例如，导航到元素 [的哈希 \<script\> 用法][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]。
+内联脚本能够通过在策略中指定源代码的 base64 编码哈希来允许。  此哈希必须以 sha256、sha384 或 sha512 (使用的哈希算法作为) 。  例如，导航到元素 [的哈希 \<script\> 用法](https://www.w3.org/TR/CSP2#script-src-hash-usage)。
 
 **远程脚本**
 
-如果您需要一些外部 JavaScript 或对象资源，则可能会通过允许列出应接受脚本的安全源来限制策略。  验证使用扩展的提升权限加载的运行时资源是否正是您期望的资源，并且不会替换为活动网络攻击者。  由于 [中间人攻击][WikiManMiddleAttacks] 在 HTTP 上是无关紧要的和无法检测到的，因此不接受这些来源。
+如果您需要一些外部 JavaScript 或对象资源，则可能会通过允许列出应接受脚本的安全源来限制策略。  验证使用扩展的提升权限加载的运行时资源是否正是您期望的资源，并且不会替换为活动网络攻击者。  由于 [中间人攻击](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) 在 HTTP 上是无关紧要的和无法检测到的，因此不接受这些来源。
 
-目前，开发人员可以允许具有以下方案列出源 `blob` `filesystem` ：、、 `https` 和 `extension` 。  必须为 和 方案显式指定源的主机 `https` `extension` 部分。  不允许使用泛型通配符（如 https：和 ）;允许使用诸如 `https://*` `https://*.com` 这样的子 `https://*.example.com` 域通配符。  公共后缀 [列表中的域][PublicSuffixList] 也被视为常规顶级域。  若要从这些域加载资源，必须明确列出子域。  例如， `https://*.cloudfront.net` 是 无效，但 `https://XXXX.cloudfront.net` 和 `https://*.XXXX.cloudfront.net` 可以 `allowlisted` 。
+目前，开发人员可以允许具有以下方案列出源 `blob` `filesystem` ：、、 `https` 和 `extension` 。  必须为 和 方案显式指定源的主机 `https` `extension` 部分。  不允许使用泛型通配符（如 https：和 ）;允许使用诸如 `https://*` `https://*.com` 这样的子 `https://*.example.com` 域通配符。  公共后缀 [列表中的域](https://publicsuffix.org/list) 也被视为常规顶级域。  若要从这些域加载资源，必须明确列出子域。  例如， `https://*.cloudfront.net` is 无效， but `https://XXXX.cloudfront.net` `https://*.XXXX.cloudfront.net` are able to `allowlisted` .
 
 为了便于开发，通过 HTTP 从本地计算机上服务器加载的资源可以 `allowlisted` 。  可以允许在 或 的任何端口上列出脚本和 `http://127.0.0.1` 对象源 `http://localhost` 。
 
@@ -236,7 +236,7 @@ As of Chrome 46, -->
 <!-- ====================================================================== -->
 ## <a name="tightening-the-default-policy"></a>使用默认策略
 
-当然，你可以将此策略严格到扩展允许的任何程度，以便以便利为代价提高安全性。  若要指定你的扩展只能加载任何类型的 (图像等) 资源，例如，策略 可能 `default-src 'self'` 适合。
+当然，你可以将此策略严格到扩展允许的任何程度，以便以便利为代价提高安全性。  若要指定你的扩展只能加载任何类型的 (图像，等等) 从关联的扩展包，例如，策略 可能 `default-src 'self'` 合适。
 
 <!-- The Mappy sample Extension is a good example of an Extension that is been locked down above and beyond the defaults.  -->
 
@@ -261,7 +261,7 @@ document.write("<script>alert(1);</script>");
 document.write("<button onclick='alert(1);'>click me</button>'");
 ```
 
-如果用户选择该按钮， `onclick` 则脚本不会运行。  这是因为脚本未立即运行，在未将事件发生视为内容脚本的一部分之前不会解释代码，因此页面 csp (不是 Extension) 限制行为 `click` 。  由于该 CSP 不指定 `unsafe-inline` ，内联事件处理程序将被阻止。
+如果用户选择该按钮， `onclick` 则脚本不会运行。  这是因为脚本未立即运行，在未将事件发生视为内容脚本的一部分之前不会解释代码，因此页面 CSP (不是扩展) 限制行为。 `click`  由于该 CSP 不指定 `unsafe-inline` ，内联事件处理程序将被阻止。
 在这种情况下实现所需行为的正确方法可能是将处理程序添加为内容脚本中的函数， `onclick` 如下所示：
 
 ```javascript
@@ -291,22 +291,9 @@ script.innerHTML = 'eval("alert(1);")';
 在初始脚本运行时，将阻止对 `eval` 的调用。  也就是说，虽然允许初始脚本运行时，但脚本内的行为由页面的 CSP 进行控制。
 因此，根据你在扩展中编写 DOM 注入脚本的方法，对页面 CSP 的更改可能会影响扩展的行为。  由于内容脚本不受页面 CSP 的影响，因此，这是将尽可能多的扩展行为放入内容脚本（而不是 DOM 注入脚本）中的原因。
 
-<!-- image links -->
-
-<!-- links -->
-
-[HTML5RocksIntroductionContentSecurityPolicy]: https://www.html5rocks.com/en/tutorials/security/content-security-policy "内容安全策略策略简介|HTML5 百年"
-[PublicSuffixList]: https://publicsuffix.org/list "查看公共后缀列表"
-[W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]: https://www.w3.org/TR/CSP2#script-src-hash-usage "\<script\> 元素的哈希用法 - 内容安全策略级别 2 |W3C"
-[W3CContentSecurityPolicy]: https://w3c.github.io/webappsec-csp "内容安全策略级别 3 |W3C"
-[WikiManMiddleAttacks]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack "中间人攻击|Wikipedia"
 
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/extensions/contentSecurityPolicy)。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

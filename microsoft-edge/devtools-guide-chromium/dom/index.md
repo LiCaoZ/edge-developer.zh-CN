@@ -7,12 +7,12 @@ ms.date: 06/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
-ms.openlocfilehash: 243803cbb3818ea92625e67b39f792eafb10294c
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: e3215efee1629f34273cdc231a1e70bb2ce9ce53
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141626"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156219"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,7 +29,7 @@ ms.locfileid: "12141626"
    limitations under the License.  -->
 # <a name="get-started-with-viewing-and-changing-the-dom"></a>查看和更改 DOM 入门
 
-完成这些交互式教程，了解使用 DevTools 查看和[](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)更改页面 (DOM) 的Microsoft Edge基础知识。
+完成这些交互式教程，了解使用 DevTools 查看和[](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)更改页面的文档 (模型) DOM Microsoft Edge基础知识。
 
 本教程假定你知道 DOM 和 HTML 之间的区别。 导航到“[附录：HTML 与 DOM](#appendix-html-versus-the-dom)”了解相关说明。
 
@@ -39,7 +39,7 @@ ms.locfileid: "12141626"
 
 1.  保留 `Control` (Windows、Linux) 或 `Command` (macOS) 并选择 **"DOM 示例**"以在新选项卡中打开。
 
-    [DOM 示例][GlitchDomExamples]
+    [DOM 示例](https://microsoft-edge-chromium-devtools.glitch.me/static/dom)
 
 
 <!-- ====================================================================== -->
@@ -64,7 +64,7 @@ ms.locfileid: "12141626"
            突出显示 `Michelangelo` 节点
         :::image-end:::
 
-        1.  Choose the **Inspect** (![ Inspect ](../media/inspect-icon.msft.png)) icon in the top-left corner of DevTools.
+        1.  选择 **DevTools** (左上角的"检查) ![ ](../media/inspect-icon.msft.png) 检查项目图标。
 
             :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="“检查”图标" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
                “**检查**”图标
@@ -72,7 +72,7 @@ ms.locfileid: "12141626"
 
 1.  在“**检查节点**”下，选择“**Tokyo**”文本。  现在，`<li>Tokyo</li>` 在 DOM 树中突出显示。
 
-检查节点也是查看和更改节点样式的第一步。  导航到“[查看和更改 CSS 入门][DevToolsCssGetStarted]”。
+检查节点也是查看和更改节点样式的第一步。  导航到“[查看和更改 CSS 入门](../css/index.md)”。
 
 ### <a name="navigate-the-dom-tree-with-a-keyboard"></a>使用键盘浏览 DOM 树
 
@@ -104,7 +104,7 @@ ms.locfileid: "12141626"
 1.  在“**滚动到视图**”下，右键选择“**Magritte**”，然后选择“**检查**”。
 1.  滚动到“DOM 示例”页面的底部。
 1.  仍应在 DOM 树中选择 `<li>Magritte</li>` 节点。  如果没有，请返回到“[滚动到视图](#scroll-into-view)”，然后重新开始。
-1.  将鼠标悬停在节点上，打开上下文 `<li>Magritte</li>` 菜单 (右键单击") "，然后选择"**滚动到视图"。**  视区将向上滚动，以便你可以查看 **Magritte** 节点。  如果无法查看“**滚动到视图**”选项，请导航至“[附录：缺少选项](#appendix-missing-options)”。
+1.  将鼠标悬停在 `<li>Magritte</li>` 节点上，打开上下文菜单 (右键单击") "，然后选择"**滚动到视图"。**  视区将向上滚动，以便你可以查看 **Magritte** 节点。  如果无法查看“**滚动到视图**”选项，请导航至“[附录：缺少选项](#appendix-missing-options)”。
 
     :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="滚动到视图" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
        **滚动到视图**
@@ -221,7 +221,7 @@ ms.locfileid: "12141626"
 1.  [打开 DOM 示例](#open-dom-examples)。
 1.  在“**删除节点**”下，右键选择“**Foundation**”，然后选择“**检查**”。
     1.  选择 `Delete` 键。  节点将被删除。
-    1.  选择 `Control` + `Z` (Windows、Linux) 或 `Command` + `Z` (macOS) 。  最后一个操作将被撤消，节点将重新出现。
+    1.  选择 `Control` + `Z` (Windows、Linux) 或 (`Command` + `Z` macOS) 。  最后一个操作将被撤消，节点将重新出现。
 
 
 <!-- ====================================================================== -->
@@ -268,8 +268,8 @@ ms.locfileid: "12141626"
 
 1.  [打开 DOM 示例](#open-dom-examples)。
 1.  在 **"复制 JS 路径"下**，将鼠标悬停在 **"完成""管理**"菜单上，打开上下文菜单 (右键单击") "检查 **"。**
-    1.  将鼠标悬停在 DOM 树中，打开上下文菜单 (右键单击") "，然后选择"复制 JS 路径 `<li>The Brothers Karamazov</li>` ****  >  **"。**  解析为节点的 `document.querySelector()` 表达式已复制到剪贴板。
-    1.  选择 `Control` + `V` (Windows、Linux) 或 (`Command` + `V` macOS) 将表达式粘贴到控制台中。
+    1.  将鼠标悬停在 DOM 树中，打开上下文菜单 (`<li>The Brothers Karamazov</li>` 右键单击") "，然后选择"复制****  >  **JS 路径"。**  解析为节点的 `document.querySelector()` 表达式已复制到剪贴板。
+    1.  选择 `Control` + `V` (Windows、Linux) 或 `Command` + `V` (macOS) 将表达式粘贴到控制台中。
     1.  选择 `Enter` 以计算表达式。
 
         :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="“复制 JS 路径”表达式的结果" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
@@ -327,9 +327,9 @@ ms.locfileid: "12141626"
 <!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 
-它涵盖了开发人员工具中与 DOM 相关的大部分功能。  通过将鼠标悬停在 DOM 树中的节点上，打开上下文菜单 (右键单击) ，并尝试本教程未涵盖的其他选项，你可以发现其余功能。  导航至“[‘元素’面板键盘快捷方式][DevToolsShortcutsElements]”。
+它涵盖了开发人员工具中与 DOM 相关的大部分功能。  通过将鼠标悬停在 DOM 树中的节点上、打开上下文菜单 (右键单击) 并尝试本教程未涵盖的其他选项，你可以发现其余功能。  导航至“[‘元素’面板键盘快捷方式](../shortcuts/index.md#elements-tool-keyboard-shortcuts)”。
 
-查看 [Microsoft Edge 开发人员工具主页][MicrosoftEdgeDevTools]，了解可使用开发人员工具执行的所有其他内容。
+查看 [Microsoft Edge 开发人员工具主页](../../devtools-guide-chromium/index.md)，了解可使用开发人员工具执行的所有其他内容。
 
 <!--Navigate to [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->
 
@@ -403,7 +403,7 @@ ms.locfileid: "12141626"
 
 页面的 HTML 现在与 DOM 不同。  换句话说，HTML 表示初始页面内容，而 DOM 表示当前页面内容。  当 JavaScript 添加、删除或编辑节点时，DOM 将与 HTML 不同。
 
-导航到“[DOM 简介][MDNIntroductionToDOM]”以了解更多信息。
+导航到“[DOM 简介](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction)”以了解更多信息。
 
 <!--
 
@@ -424,7 +424,7 @@ ms.locfileid: "12141626"
 <!-- ====================================================================== -->
 ## <a name="appendix-missing-options"></a>附录：缺少选项
 
-本教程中的许多说明都指示你将鼠标悬停在 DOM 树中的节点上，打开上下文菜单 (右键单击) ，然后从弹出的上下文菜单中选择一个选项。  如果未显示上下文菜单中的指定选项，请尝试将鼠标悬停在节点文本之外并打开上下文菜单 (右键单击") "。
+本教程中的许多说明都指示你将鼠标悬停在 DOM 树中的节点上，打开上下文菜单 (右键单击) ，然后从弹出的上下文菜单中选择一个选项。  如果未显示上下文菜单中的指定选项，请尝试将鼠标悬停在节点文本之外，然后右键单击 (打开上下文) 。
 
 :::image type="complex" source="../media/dom-elements-highlighted-right-click-right-side.msft.png" alt-text="未显示所有选项时在何处选择" lightbox="../media/dom-elements-highlighted-right-click-right-side.msft.png":::
    未显示所有选项时在何处选择
@@ -432,22 +432,8 @@ ms.locfileid: "12141626"
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge开发人员工具|Microsoft Docs"
-[DevToolsCssGetStarted]: ../css/index.md "查看和更改 CSS 入门 | Microsoft 文档"
-[DevToolsShortcutsElements]: ../shortcuts/index.md#elements-tool-keyboard-shortcuts "“元素”工具键盘快捷方式 - Microsoft Edge 开发人员工具键盘快捷方式 | Microsoft Docs"
-<!-- external links -->
-[GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft EdgeDevTools DOM 示例 |小故障"
-[MDNIntroductionToDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "DOM 简介 | MDN"
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/dom/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/dom/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、winui 应用、winui、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
-ms.openlocfilehash: db555d65b9e2527fd0ee48b4b8a047c73af1edb1
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: e42eb9f929826c79ae36245b2c8d5c95b1a5b8e5
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140198"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155330"
 ---
 # <a name="get-started-with-webview2-in-winui-2-apps-public-preview"></a>WinUI 2 应用中的 WebView2 入门 (公共预览) 
 
 本文将开始创建你的第一个 WebView2 应用，并了解 WebView2 的主要功能。 有关单个 WebView2 API 的信息，请导航到["Microsoft Edge WebView2 API](../webview2-api-reference.md)参考"，然后选择 WinRT 引用链接。
 
 > [!NOTE]
-> WinUI 2 程序包依赖预发布 WebView2 程序包。  为了完全兼容 API，请使用预览浏览器通道作为运行时 (，即预览版的 Beta、Dev 或 Canary Microsoft Edge) 。
+> WinUI 2 程序包依赖预发布 WebView2 程序包。  为了完全实现 API 兼容性，请使用预览浏览器通道作为运行时 (，即预览版的 Beta、Dev 或 Canary Microsoft Edge) 。
 
 
 <!-- ====================================================================== -->
@@ -42,7 +42,7 @@ ms.locfileid: "12140198"
 
 1.  选择**通用Windows平台开发。**
 
-1. 在右侧，展开安装**** 详细信息  >  **通用 Windows 平台开发**，然后选择**C++ (v142) 通用**Windows 平台工具。
+1. 在右侧，展开"**** 安装详细信息  >  **通用Windows平台开发**"，然后选择 **"C++ (v142) 通用Windows工具"。**
 
     :::image type="complex" source="media/winui2-getting-started-install-workloads.png" alt-text="选择要为用户安装的Visual Studio" lightbox="media/winui2-getting-started-install-workloads.png":::
        选择要为用户安装的Visual Studio :::image-end:::
@@ -53,7 +53,7 @@ ms.locfileid: "12140198"
 <!-- ====================================================================== -->
 ## <a name="step-3-create-a-uwp-app"></a>步骤 3\：创建 UWP 应用
 
-1.  在Visual Studio中，选择"**文件**  >  **""新建**  >  **Project"。**  或使用项目的启动屏幕Visual Studio，然后选择**创建新项目**。  将显示 **"新建项目** "对话框。
+1.  在Visual Studio中，选择"**文件**  >  **""**  >  **新建Project"。**  或使用项目的启动屏幕Visual Studio，然后选择创建新**项目**。  将显示 **"新建项目** "对话框。
 
 1.  在"**所有语言**"下拉列表中，选择 **"C#"。**
 
@@ -71,8 +71,8 @@ ms.locfileid: "12140198"
 
 1.  在 **"Project**名称"文本框中，输入项目名称，例如 `UWPSampleProject` 。
 
-    :::image type="complex" source="media/winui2-getting-started-config-new-project.png" alt-text="&quot;配置新项目&quot;对话框用于&quot;空白应用 (通用Windows) &quot;" lightbox="media/winui2-getting-started-config-new-project.png":::
-       "**为空白应用配置**新项目"对话框** (通用Windows) **
+    :::image type="complex" source="media/winui2-getting-started-config-new-project.png" alt-text="&quot;配置新项目&quot;对话框的&quot;空白应用 (通用Windows) &quot;" lightbox="media/winui2-getting-started-config-new-project.png":::
+       "**为空白应用配置**新项目"对话框 (**通用Windows) **
     :::image-end:::
 
 1.  选择" **创建"** 按钮。  将显示 **"新建通用Windows平台Project**对话框。
@@ -147,10 +147,10 @@ ms.locfileid: "12140198"
        网格在调试过程中暂时显示
     :::image-end:::
 
-1.  片刻之后，应用窗口在 WebUI 2 必应 WebView2 控件中显示 必应.com 网站。
+1.  片刻之后，应用窗口在 WebUI 2 的 WebView2 控件中显示 必应.com 网站。
 
-    :::image type="complex" source="media/winui2-getting-started-webview2-with-content.png" alt-text="在 WebView2 控件必应.com 网站的应用窗口" lightbox="media/winui2-getting-started-webview2-with-content.png":::
-       在 WebView2 控件必应.com 网站的应用窗口
+    :::image type="complex" source="media/winui2-getting-started-webview2-with-content.png" alt-text="在 WebView2 控件中显示 必应.com 网站的应用窗口" lightbox="media/winui2-getting-started-webview2-with-content.png":::
+       在 WebView2 控件中显示 必应.com 网站的应用窗口
     :::image-end:::
 
 1.  In Visual Studio， on the **Debug** menu， select **Stop Debugging**.  应用程序窗口关闭。
@@ -161,17 +161,8 @@ ms.locfileid: "12140198"
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [WebView2 开发的最佳做法][WV2BestPractices]
-*  [WebView2Samples 存储库][GithubMicrosoftedgeWebview2samplesMain] - WebView2 功能的综合示例。
-*  [另请参阅][Webview2IndexNextSteps] _WebView2 Microsoft Edge简介_。
-*  [WebView2 规范][GithubMicrosoftMicrosoftUiXamlSpecsWebview2] - 有关 WebView2 API 的详细信息。
+*  [WebView2 开发的最佳做法](../concepts/developer-guide.md)
+*  [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。
+*  [另请参阅](../index.md#see-also) _WebView2 Microsoft Edge简介_。
+*  [WebView2 规范](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md) - 有关 WebView2 API 的详细信息。
 *  [问题 - microsoft-ui-xaml 存储库](https://github.com/microsoft/microsoft-ui-xaml/issues) - 输入特定于 WinUI 的功能请求或 Bug。
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 开发最佳实践|Microsoft Docs"
-[Webview2IndexNextSteps]: ../index.md#see-also "另请参阅 - WebView2 Microsoft Edge简介|Microsoft Docs"
-<!-- external links -->
-[GithubMicrosoftMicrosoftUiXamlSpecsWebview2]: https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md "WebView2 规范 - microsoft/microsoft-ui-xaml-specs |GitHub"
-[GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"

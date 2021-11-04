@@ -1,18 +1,18 @@
 ---
-description: 自定义 DevTools Microsoft Edge列表
+description: 自定义开发人员工具Microsoft Edge列表
 title: 自定义 Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: ae54eb9a0c100a6dc1b6608dc05ddad5d655ee02
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: f0966884ffb63d450aa793e25cde3be7b87d1b01
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140989"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156849"
 ---
 <!-- Copyright Kayce Basques
 
@@ -52,7 +52,7 @@ ms.locfileid: "12140989"
 
 The **Drawer** is a second panel where you can choose which tools to display.
 
-若要打开 (或关闭) **收银机"，** 请选择 `Escape` 。
+若要打开 (或) **收银机"，** 请选择 `Escape` 。
 
 :::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="The Drawer" lightbox="../media/customize-drawer-open.msft.png":::
    The **Drawer**
@@ -66,7 +66,7 @@ The **Drawer** is a second panel where you can choose which tools to display.
        将工具从 **"箱"** 移到主面板
     :::image-end:::
 
-*   若要将工具从主面板移动到箱中，请将鼠标悬停在工具上，打开上下文菜单 (右键单击") 然后选择"移动到**底部"。**
+*   若要将工具从主面板移动到箱中，请将鼠标悬停在工具上，打开上下文菜单 (右键单击") "移动到**底部"。**
 
     :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="将工具从主面板移动到&quot;箱&quot;" lightbox="../media/move-to-drawer.msft.png":::
        将工具从主面板移动到"箱 **"**
@@ -89,9 +89,9 @@ The **Drawer** is a second panel where you can choose which tools to display.
 <!-- ====================================================================== -->
 ## <a name="open-and-close-tools"></a>打开和关闭工具
 
-若要简化 DevTools 接口，默认情况下不会打开许多工具。 若要在主面板或"箱"中打开**** 工具，请选择选项卡**** 右边的"更多工具 (更多工具) 按钮，然后从列表中选择 ![ 一个 ](../media/open-tab-icon.png) 工具。
+若要简化 DevTools 接口，默认情况下不会打开许多工具。 To open a tool in the main panel or the **Drawer**， select the **More Tools** (More Tools) button to the right of ![ the ](../media/open-tab-icon.png) tabs， and then select a tool from the list.
 
-:::image type="complex" source="../media/open-tool-in-main-panel-or-drawer.png" alt-text="&quot;更多工具 (+) &quot;按钮以打开新工具" lightbox="../media/open-tool-in-main-panel-or-drawer.png":::
+:::image type="complex" source="../media/open-tool-in-main-panel-or-drawer.png" alt-text="&quot;更多工具 (+) &quot;按钮打开新工具" lightbox="../media/open-tool-in-main-panel-or-drawer.png":::
    " **更多工具** `+` () "按钮打开新工具
 :::image-end:::
 
@@ -105,7 +105,7 @@ The **Drawer** is a second panel where you can choose which tools to display.
 <!-- ====================================================================== -->
 ## <a name="change-devtools-placement"></a>更改 DevTools 放置
 
-导航到 [Change DevTools placement (Undock， Dock to bottom， Dock to left) ][DevToolsPlacement].
+导航到 [Change DevTools placement (Undock， Dock to bottom， Dock to left) ](./placement.md).
 
 :::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="移除的开发人员工具" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
    移除的开发人员工具
@@ -115,7 +115,7 @@ The **Drawer** is a second panel where you can choose which tools to display.
 <!-- ====================================================================== -->
 ## <a name="color-themes"></a>颜色主题
 
-导航到 [将颜色主题应用到 DevTools][Theme]。
+导航到 [将颜色主题应用到 DevTools](./theme.md)。
 
 :::image type="complex" source="./media/customize-theme-setting.png" alt-text="选择其他颜色主题" lightbox="./media/customize-theme-setting.png":::
    选择其他颜色主题
@@ -125,7 +125,7 @@ The **Drawer** is a second panel where you can choose which tools to display.
 <!-- ====================================================================== -->
 ## <a name="restore-default-settings"></a>还原默认设置
 
-若要还原默认主题、放置、工具顺序和任何其他自定义设置，请选择"设置****  >  ****  >  **首选项""还原默认值并刷新"。**
+若要还原默认主题、位置、工具顺序和任何其他自定义设置，请选择"设置****  >  ****  >  **首选项""还原默认值并刷新"。**
 
 :::image type="complex" source="../media/restore-default-settings.png" alt-text="还原默认设置" lightbox="../media/restore-default-settings.png":::
    还原默认设置
@@ -133,21 +133,8 @@ The **Drawer** is a second panel where you can choose which tools to display.
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevToolsPlacement]: ./placement.md "更改 Microsoft Edge DevTools 放置 | Microsoft Docs"
-[Theme]: ./theme.md "将颜色主题应用到 DevTools |Microsoft Docs"
-<!-- image links -->
-[ImageMoreIcon]: ../media/more-icon.msft.png
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -1,6 +1,6 @@
 ---
 title: 处理渐进式 Web 应用中的文件
-description: 了解如何将你的 PWA注册为文件处理程序，以将其更深入地集成到操作系统中。
+description: 了解如何将你的PWA注册为文件处理程序，以将其更深入地集成到操作系统中。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2021
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， 文件
-ms.openlocfilehash: 2d0fafb37d5da49f84797a3a41e77bb985dd0f15
-ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
+ms.openlocfilehash: 3e20f986cc95200d335e4d321fff657748c155bb
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "12087129"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156716"
 ---
 # <a name="handle-files-in-progressive-web-apps"></a>处理渐进式 Web 应用中的文件
 
@@ -21,7 +21,7 @@ ms.locfileid: "12087129"
 
 网站已允许用户使用 或 拖放上传 [ `<input type="file">` ](https://developer.mozilla.org/docs/Web/API/File/Using_files_from_web_applications)文件，但 PWA 进一步操作，并可在操作系统上注册为文件处理程序。
 
-当PWA注册为某些文件类型的文件处理程序时，操作系统可以在用户打开这些文件时自动启动该应用，这类似于Microsoft Word文件 `.docx` 的方式。
+当PWA注册为某些文件类型的文件处理程序时，操作系统可以在用户打开这些文件时自动启动该应用，这类似于Microsoft Word文件的方式 `.docx` 。
 
 
 <!-- ====================================================================== -->
@@ -31,7 +31,7 @@ ms.locfileid: "12087129"
 
 若要启用文件处理功能，
 
-1.  转到 `edge://flags` "Microsoft Edge"。
+1.  转到 `edge://flags` Microsoft Edge。
 1.  选择 **"搜索标志** "并键入"文件处理 API"。
 1.  选择 **"默认**  >  **启用重启**  >  **"。**
 
@@ -45,8 +45,8 @@ ms.locfileid: "12087129"
 
 数组的每个 `file_handlers` 条目都需要有两个属性：
 
-*  `action`：操作系统在启动应用时应导航到的PWA。
-*  `accept`：接受文件类型的对象。 键是 MIME 类型 (，使用通配符符号 接受部分类型，) 接受的文件扩展名数组 `*` 。
+*  `action`：操作系统在启动应用时应导航到PWA。
+*  `accept`：接受文件类型的对象。 键是 MIME 类型 (，使用通配符符号接受部分类型，) ，值是接受的文件 `*` 扩展名的数组。
 
 请考虑以下示例：
 
@@ -119,11 +119,11 @@ async function handleFiles(files) {
 <!-- ====================================================================== -->
 ## <a name="demo"></a>演示版
 
-"我的PWA是一款使用文件处理功能处理文件的主要演示 `.gpx` 应用。 若要试用此演示应用的功能：
+My Tracks 是PWA文件处理功能处理文件的主要演示 `.gpx` 应用。 若要试用此演示应用的功能：
 
-*  [在"管理"](#enable-the-file-handling-api)中Microsoft Edge。
-*  转到 ["我的跟踪"][MyTracksDemoApp] 并安装应用。
-*  在计算机上下载 GPX 文件。 可以使用此测试 [GPX 文件][TestGPXFile]。
+*  [在"管理"中](#enable-the-file-handling-api)Microsoft Edge。
+*  转到 ["我的跟踪"](https://captainbrosset.github.io/mytracks/) 并安装应用。
+*  在计算机上下载 GPX 文件。 可以使用此测试 [GPX 文件](https://www.visugpx.com/download.php?id=okB1eM4fzj)。
 *  打开下载的 GPX 文件。
 
 请注意，应用会自动启动，Microsoft Edge请求你处理此文件的权限。
@@ -134,16 +134,7 @@ async function handleFiles(files) {
 
 :::image type="content" source="../media/my-tracks-new-file.png" alt-text="由&quot;我的跟踪&quot;应用处理的新 GPS 轨。" lightbox="../media/my-tracks-new-file.png":::
 
-可以在"我的跟踪"库上访问此应用程序[的GitHub代码][MyTracksDemoAppGitHub]。
+此应用的源代码可以在"我的跟踪"库GitHub[访问](https://github.com/captainbrosset/mytracks)。
 
-* [manifest.json][MyTracksDemoAppManifestJsonFile]源文件使用 `file_handlers` 数组请求处理 `.gpx` 文件。
-* 文件 [file.js][MyTracksDemoAppFileJsFile] 文件 `launchQueue` 使用 对象来处理传入文件。
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[MyTracksDemoApp]: https://captainbrosset.github.io/mytracks/ "My Tracks"
-[MyTracksDemoAppGitHub]: https://github.com/captainbrosset/mytracks "示例 Web 应用，PWA桌面功能|GitHub"
-[TestGPXFile]: https://www.visugpx.com/download.php?id=okB1eM4fzj
-[MyTracksDemoAppManifestJsonFile]: https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json
-[MyTracksDemoAppFileJsFile]: https://github.com/captainbrosset/mytracks/blob/main/src/file.js
+* [manifest.json](https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json)源文件使用 `file_handlers` 数组请求处理 `.gpx` 文件。
+* 文件 [file.js](https://github.com/captainbrosset/mytracks/blob/main/src/file.js) 文件 `launchQueue` 使用 对象来处理传入文件。

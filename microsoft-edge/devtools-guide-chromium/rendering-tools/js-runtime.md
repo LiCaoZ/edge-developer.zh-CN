@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 8dd6f0c6ee45f376d6f13f7cd07b46bd66011c76
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: aad5a1088101814c3d70627e3df2b219e8b3f644
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141535"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155988"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -53,7 +53,7 @@ ms.locfileid: "12141535"
 1.  完成后，选择“**停止**”。
 
 > [!NOTE]
-> 还可以使用[控制台实用程序 API][DevtoolsConsoleUtilities] 记录和分组命令行的配置文件。
+> 还可以使用[控制台实用程序 API](../console/utilities.md) 记录和分组命令行的配置文件。
 
 
 <!-- ====================================================================== -->
@@ -87,7 +87,7 @@ ms.locfileid: "12141535"
 
 ### <a name="exclude-functions"></a>排除函数
 
-若要从采样配置文件中排除函数，请选择该函数，然后选择排除所选**** 函数 (![ 排除所选) ](../media/exclude-icon.msft.png) 按钮。  请求函数 (子) 的 (父) 会向分配给已排除函数的子 (内存) 。
+若要从采样配置文件中排除函数，请选择该函数，然后选择排除所选**** 函数 (![ 排除所选) ](../media/exclude-icon.msft.png) 按钮。  请求函数 (被) 的父 (子) 会向分配给已排除函数的 (子) 。
 
 Choose the **restore all functions (** restore all functions) button to restore all ![ ](../media/restore-icon.msft.png) excluded functions back into the recording.
 
@@ -148,21 +148,8 @@ Choose the **restore all functions (** restore all functions) button to restore 
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsConsoleUtilities]: ../console/utilities.md "控制台实用程序 API 参考|Microsoft Docs"
-[DevtoolsConsoleUtilitiesProfile]: ../console/utilities.md#profile "配置文件 - 控制台实用程序 API 参考 | Microsoft Docs"
-[DevtoolsConsoleUtilitiesProfileEnd]: ../console/utilities.md#profileend "profileEnd - 控制台实用程序 API 参考 | Microsoft Docs"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution)作者为[ (][KayceBasques] Technical Writer、Chrome DevTools \& Lighthouse) 和[Meggin Kearney][MegginKearney] (Technical Writer) 。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution)作者为 (Technical Writer、Chrome DevTools \& Lighthouse) 和[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

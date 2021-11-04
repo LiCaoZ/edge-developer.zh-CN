@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 0ef11bc6b3dd4878dfdd944a449f87b330f5b04c
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 52056a577df9391623012c9688bf2212de6b71b8
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141395"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157094"
 ---
 <!-- Copyright Kayce Basques
 
@@ -34,9 +34,9 @@ ms.locfileid: "12141395"
 > [!IMPORTANT]
 > **先决条件**：在开始本教程之前，你应知道如何执行以下操作。
 >
-> *   [使用 html、CSS 和 JavaScript 构建网页][MDNWebGettingStarted]
-> *   [使用 DevTools 对 CSS 进行基本更改][DevToolsCssIndex]
-> *   [运行本地 HTTP Web 服务器][MDNSimpleLocalHTTPServer]
+> *   [使用 html、CSS 和 JavaScript 构建网页](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web)
+> *   [使用 DevTools 对 CSS 进行基本更改](../css/index.md)
+> *   [运行本地 HTTP Web 服务器](https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server)
 
 
 <!-- ====================================================================== -->
@@ -56,7 +56,7 @@ ms.locfileid: "12141395"
 
 如果你使用的是新式框架，它可能会将源代码从易于维护的格式转换为经过优化以尽快运行的格式。
 
-工作区通常能够借助源映射 将优化的代码映射回原始 [源代码][TreehouseBlogSourceMaps]。  但在每个框架使用源映射方面，框架之间有很多差异。  Devtools 不支持所有变体。
+工作区通常能够借助源映射 将优化的代码映射回原始 [源代码](https://blog.teamtreehouse.com/introduction-source-maps)。  但在每个框架使用源映射时，框架之间有很多差异。  Devtools 不支持所有变体。
 
 工作区已知无法与以下框架一起工作。
 
@@ -80,7 +80,7 @@ ms.locfileid: "12141395"
 
 ### <a name="set-up-the-demo"></a>设置演示
 
-1.  [打开演示][GlitchWorkspacesDemo]。  <!--In the top-left of the editor, a randomly-generated project name is displayed.  -->
+1.  [打开演示](https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0)。  <!--In the top-left of the editor, a randomly-generated project name is displayed.  -->
 
     :::image type="complex" source="../media/workspaces-glitch-workspaces-demo-source.msft.png" alt-text="小故障项目" lightbox="../media/workspaces-glitch-workspaces-demo-source.msft.png":::
        小故障项目
@@ -115,7 +115,7 @@ ms.locfileid: "12141395"
        :::column-end:::
     :::row-end:::
 
-1.  打开网站Microsoft Edge并导航到本地托管的网站版本。  你应该能够使用 URL（如 或 ） `localhost:8080` 访问 `http://0.0.0.0:8080` 它。  确切的 [端口号][WikiPortURLs] 可能不同。
+1.  在网站Microsoft Edge并导航到本地托管的网站版本。  你应该能够使用 URL（如 或 ） `localhost:8080` 访问 `http://0.0.0.0:8080` 它。  确切的 [端口号](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) 可能不同。
 
     :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="演示" lightbox="../media/workspaces-workspaces-demo.msft.png":::
        演示
@@ -123,14 +123,14 @@ ms.locfileid: "12141395"
 
 ### <a name="set-up-devtools"></a>设置 DevTools
 
-1.  选择 `Control` + `Shift` + `J` (Windows、Linux) 或 (`Command` + `Option` + `J` macOS) 打开 DevTools**** 的控制台面板。
+1.  选择 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS) 打开 DevTools**** 的控制台面板。
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="控制台面板" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        控制台**面板**
     :::image-end:::
 
 1.  导航到 **"源"** 工具。
-1.  在导航 **器窗格中** (左侧) ，选择" **文件系统"** 选项卡。
+1.  在左侧 **导航器** (窗格中 **，) "文件系统"** 选项卡。
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="&quot;文件系统&quot;选项卡" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
        " **文件系统"** 选项卡
@@ -199,9 +199,9 @@ DOM 树不是 html。
 > [!NOTE]
 > This section describes why the workflow from [Try changing html from the Elements panel](#try-changing-html-from-the-elements-panel) does not work.  You should skip this section if you do not care why.
 
-*   The tree of nodes that are displayed on the **Elements** tool represents the [DOM][MDNWebAPIsDOM] of the page.
+*   The tree of nodes that are displayed on the **Elements** tool represents the [DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction) of the page.
 *   To display a page, a browser fetches html over the network, parses the html, and then converts it into a tree of DOM nodes.
-*   If the page has any JavaScript, that JavaScript may add, delete, or change DOM nodes.  CSS may change the DOM, too, using the [`content`][MDNCSSContent] property.
+*   If the page has any JavaScript, that JavaScript may add, delete, or change DOM nodes.  CSS may change the DOM, too, using the [`content`](https://developer.mozilla.org/docs/Web/CSS/content) property.
 *   The browser eventually uses the DOM to determine what content it should present to browser users.
 *   Therefore, the final state of the webpage displayed for users may be very different from the html that the browser fetched.
 *   This makes it difficult for DevTools to resolve where a change made in the **Elements** tool should be saved, because the DOM is affected by HTML, JavaScript, and CSS.
@@ -235,14 +235,14 @@ In short, the **DOM Tree** `!==` HTML.
 若要与其他工具一起打开 DevTools 代码编辑器，请执行下列操作：
 
 1.  导航到 **"元素"** 工具。
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 。  命令 **菜单将** 打开。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 。  命令 **菜单将** 打开。
 1.  键入 `Quick Source` ，然后选择"显示**快速源"。**  在"DevTools"窗口底部，将显示"**** 快速源"工具，其中显示 的内容，这是你在"源"工具中编辑的最后 `index.html` **一**个文件。
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="使用命令菜单打开快速源工具" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
        使用 **命令菜单** 打开快速 **源工具**
     :::image-end:::
 
-1.  选择 `Control` + `P` (Windows、Linux) 或 (`Command` + `P` macOS) 打开 **"打开文件"** 对话框。  查看下图。
+1.  选择 `Control` + `P` (Windows、Linux) 或 `Command` + `P` (macOS) 打开 **"打开文件"** 对话框。  查看下图。
 1.  键入 `script` ，然后选择 **"app/script.js"。 **
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件&quot;对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
@@ -252,7 +252,7 @@ In short, the **DOM Tree** `!==` HTML.
     > [!NOTE]
     > 该 `Save Changes To Disk With Workspaces` 演示中的链接会定期设置样式。
 
-1.  使用快速源工具将以下**代码script.js****库的底部**。
+1.  使用快速源工具将**script.js代码添加到****页面**底部。
 
     ```javascript
     console.log('greetings from script.js');
@@ -283,36 +283,15 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevToolsCssIndex]: ../css/index.md "开始查看和更改 CSS |Microsoft Docs"
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->
-<!-- external links -->
 <!--[AlphabetGroupsAlphabetBrowserDevTools]: https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools "Alphabet Browser DevTools - Alphabet Groups"  -->
-
-[GlitchWorkspacesDemo]: https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0 "Workspaces 演示|小故障"
-
-[MDNCSSContent]: https://developer.mozilla.org/docs/Web/CSS/content "内容 - CSS：级联样式表|MDN"
-[MDNWebGettingStarted]: https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web "Web 应用程序|MDN"
-[MDNSimpleLocalHTTPServer]: https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server "运行简单的本地 HTTP 服务器|MDN"
-[MDNWebAPIsDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "DOM 简介 - Web API |MDN"
-
 <!--[StackOverflowAlphabetBrowserDevTools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser DevTools - Stack Overflow"  -->
-
-[TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "源源地图 |Treehouse 博客"
-
 <!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools (@AlphabetBrowserDevTools) | Twitter"  -->
-
-[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port (computer networking) - Wikipedia"
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/workspaces/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/workspaces/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

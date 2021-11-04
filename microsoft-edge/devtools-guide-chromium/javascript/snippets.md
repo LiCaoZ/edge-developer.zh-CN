@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: bd3196bb9d62ebce53fa401ea811a87551ce96c9
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 142bd9343a4c45996a0b0c4d07b5512a9e45b9d8
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140282"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156933"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,11 +29,11 @@ ms.locfileid: "12140282"
    limitations under the License.  -->
 # <a name="run-snippets-of-javascript-on-any-webpage-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 在任何网页上运行 JavaScript 代码片段
 
-如果在[控制台][DevtoolsConsoleIndex]中重复运行相同的代码，请考虑换成将代码另存为代码片段。  代码片段是在[源][DevToolsSourcesTool]工具中创作的脚本。  代码片段有权访问网页的 JavaScript 上下文，并且可以在任何网页上运行代码片段。  大多数网页的安全设置会阻止在代码片段中加载其他脚本。  因此，必须将所有代码都包括在一个文件中。
+如果在[控制台](../console/index.md)中重复运行相同的代码，请考虑换成将代码另存为代码片段。  代码片段是在[源](../sources/index.md)工具中创作的脚本。  代码片段有权访问网页的 JavaScript 上下文，并且可以在任何网页上运行代码片段。  大多数网页的安全设置会阻止在代码片段中加载其他脚本。  因此，必须将所有代码都包括在一个文件中。
 
-代码片段可以替代[小书签][WikiBookmarklet]，区别在于代码片段仅在 DevTools 中运行，并且不受 URL 允许长度的限制。
+代码片段可以替代[小书签](https://en.wikipedia.org/wiki/Bookmarklet)，区别在于代码片段仅在 DevTools 中运行，并且不受 URL 允许长度的限制。
 
-使用代码片段在第三方网页进行少许内容更改的绝佳方法。  将代码片段中的代码更改添加到当前网页，并在同一上下文中运行。  有关更改网页现有代码的更多信息，请导航到[替代][DevtoolsJavascriptOverrides]。
+使用代码片段在第三方网页进行少许内容更改的绝佳方法。  将代码片段中的代码更改添加到当前网页，并在同一上下文中运行。  有关更改网页现有代码的更多信息，请导航到[替代](./overrides.md)。
 
 :::row:::
    :::column span="":::
@@ -129,7 +129,7 @@ ms.locfileid: "12140282"
     :::image-end:::
 
 1.  使用**代码编辑器**将 JavaScript 添加到代码片段。
-1.  当代码片段名称旁边出现星号时，表示有代码未保存。  选择 `Control` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存。
+1.  当代码片段名称旁边出现星号时，表示有代码未保存。  选择 `Control` + `S` (Windows、Linux) 或 (`Command` + `S` macOS) 保存。
 
     :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="代码片段名称旁边显示星号表示代码未保存" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
        代码片段名称旁边显示星号表示代码未保存
@@ -183,23 +183,8 @@ ms.locfileid: "12140282"
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsConsoleIndex]: ../console/index.md "控制台概述|Microsoft Docs"
-[DevToolsSourcesTool]: ../sources/index.md "源工具概述 | Microsoft Docs"
-[DevtoolsJavascriptOverrides]: ./overrides.md "替代 | Microsoft Docs"
-
-[MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Scratchpad | MDN"
-[WikiBookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet "小书签 | Wikipedia"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

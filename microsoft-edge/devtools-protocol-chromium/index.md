@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.date: 04/06/2021
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.openlocfilehash: 7b337b0d79c05fbb69f72db2e7ebcc731b0d60b9
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 20f9cb4b1a3076d32d28e356193cd95372272e7d
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139397"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157521"
 ---
 # <a name="microsoft-edge-devtools-protocol-overview"></a>Microsoft EdgeDevTools 协议概述
 

@@ -7,12 +7,12 @@ ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools, 仿真, 设备, 模拟, 移动
-ms.openlocfilehash: 9c0396537dfc7ba75bd979b1197b0f4c287e56a5
-ms.sourcegitcommit: 54f9566aa935fb853215c9b6f995fa0c98f3261f
+ms.openlocfilehash: 195a15c1c65da262b3bf24a4fc46bc5eb2865596
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "12103501"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155512"
 ---
 <!-- Copyright Kayce Basques
 
@@ -43,11 +43,11 @@ ms.locfileid: "12103501"
 <!-- ====================================================================== -->
 ## <a name="limitations"></a>限制
 
-**设备模拟** 是移动设备上页面外观[一级近似][WikiApproximation]。  **设备仿真** 实际上不会在移动设备上运行你的代码。  相反，你可以模拟笔记本电脑或台式机的移动用户体验。
+**设备仿真**是移动设备中的页面外观的[一级近似值](https://en.wikipedia.org/wiki/Order_of_approximation#First-order)。  **设备仿真** 实际上不会在移动设备上运行你的代码。  相反，你可以模拟笔记本电脑或台式机的移动用户体验。
 
 移动设备的某些方面从不在 DevTools 中模拟。  例如，移动 CPU 的体系结构与笔记本电脑或台式机 CPU 的体系结构不同。  如有疑问，最佳选择是在移动设备上实际运行页面。
 
-使用 [远程调试][DevToolsRemoteDebugging] 与计算机中的页面代码交互，而你的页面实际上在移动设备上运行。  与代码交互时，可以查看、更改、调试、配置文件或全部四者。  你的计算机可以是笔记本或台式计算机。
+使用 [远程调试](../remote-debugging/index.md) 与计算机中的页面代码交互，而你的页面实际上在移动设备上运行。  与代码交互时，可以查看、更改、调试、配置文件或全部四者。  你的计算机可以是笔记本或台式计算机。
 
 
 <!-- ====================================================================== -->
@@ -86,7 +86,7 @@ ms.locfileid: "12103501"
 | 选项 | 渲染方法 | 光标图标 | 触发事件 |
 |:--- |:--- |:--- |:--- |
 | 移动设备 | 移动设备 | 圆形 | `touch` |
-| 移动 (触摸)  | 移动设备 | 正常 | `click` |
+| 移动设备 (触摸)  | 移动设备 | 正常 | `click` |
 | 桌面 | 桌面 | 正常 | `click` |
 | 桌面 (触摸)  | 桌面 | 圆形 | `touch` |
 
@@ -137,13 +137,13 @@ ms.locfileid: "12103501"
 
 1.  选择 **"添加自定义设备"。**
 
-1.  在“**仿真设备**”上，输入自定义设备的设备名称、屏幕宽度和屏幕高度。  [设备像素比率][MDNWindowDevicePixelRatio]、[用户代理字符串][MDNUserAgent]和设备 [类型](#set-the-device-type) 字段是可选的。  设备类型字段默认为“**移动设备**”。
+1.  在“**仿真设备**”上，输入自定义设备的设备名称、屏幕宽度和屏幕高度。  “[设备像素比](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio)”、“[用户代理字符串](https://developer.mozilla.org/docs/Glossary/User_agent)”和“[设备类型](#set-the-device-type)”为可选字段。  设备类型字段默认为“**移动设备**”。
 
     :::image type="content" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="添加自定义设备。" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
 
 ### <a name="show-rulers"></a>显示标尺
 
-如果你需要测量屏幕尺寸，可以使用标尺测量屏幕大小（以像素为单位）。  选择 **"更多**  >  **选项"显示**标尺以显示视口上方和左侧的标尺。
+如果你需要测量屏幕尺寸，可以使用标尺测量屏幕大小（以像素为单位）。  选择 **"更多**  >  **选项" 显示标尺**以显示视口上方和左侧的标尺。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="&quot;显示标尺&quot;菜单项。":::
 
@@ -180,7 +180,7 @@ ms.locfileid: "12103501"
 
 仅限制 CPU 而不是网络：
 
-1.  选择"**性能"** 面板，然后选择 **"捕获**设置 (![ 捕获 ](../media/capture-settings-icon.msft.png) 设置) 。
+1.  选择"**性能"** 面板，然后选择"捕获**设置 (** ![ 捕获 ](../media/capture-settings-icon.msft.png) 设置) 。
 1.  选择**CPU**  >  **速度减慢 4 倍或****速度减慢 6 倍**。
 
 :::image type="content" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="&quot;性能&quot;面板中的 CPU 列表。" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
@@ -209,11 +209,11 @@ ms.locfileid: "12103501"
 
  如果页面依赖移动设备中的地理位置信息正确呈现，则使用替代地理位置的 UI 提供不同的地理位置。
 
-1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **传感器"。**
+1.  选择 **"自定义和控制开发人员工具 () >** `...` **更多工具**  >  **传感器"。**
 
     :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="用于地理位置的传感器。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
-    或者，通过选择"命令菜单" (Windows、Linux) `Control` + `Shift` + `P` 或 (`Command` + `Shift` + `P` macOS) 。  键入 `Sensors` ，然后选择显示 **传感器**。
+    或者，通过选择"命令菜单" (Windows、Linux) `Control` + `Shift` + `P` 或 (`Command` + `Shift` + `P` macOS) 。  键入 `Sensors` ，然后选择"**显示传感器"。**
 
     :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="显示命令菜单中的地理位置传感器。" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
 
@@ -227,7 +227,7 @@ ms.locfileid: "12103501"
 
 如果页面依赖来自移动设备的方向信息来正确呈现，请打开方向 UI。
 
-1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **传感器"。**
+1.  选择 **"自定义和控制开发人员工具 () >** `...` **更多工具**  >  **传感器"。**
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="&quot;更多工具&quot;菜单上的&quot;传感器&quot;命令。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
@@ -237,7 +237,7 @@ ms.locfileid: "12103501"
    针对方向**显示传感器**
 :::image-end:::
 
-在 **"传感器"** 面板上，可以从"方向"下拉菜单中选择预设**** 方向。  若要输入你自己的方向，请选择"**** 自定义方向"，然后输入你自己的 [alpha][MDNDeviceOrientaitonAlpha]、[beta][MDNDeviceOrientaitonBeta] 和 [gamma][MDNDeviceOrientaitonGamma] 值。
+在 **"传感器"** 面板上，可以从"方向"下拉菜单中选择预设**** 方向。  若要输入你自己的方向，请选择"**自定义方向**"，然后输入你自己的[alpha、beta](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha)和[](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta)[gamma](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma)值。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="&quot;传感器&quot;面板上的方向选项。" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
 
@@ -247,7 +247,7 @@ ms.locfileid: "12103501"
 
 如果页面依赖移动设备中的用户代理字符串来正确呈现，请使用“**网络条件**”面板提供不同的用户代理字符串。
 
-1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **网络条件"。**
+1.  选择 **"自定义和控制开发工具 () >** `...` **工具网络**  >  **条件"。**
 
     :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="&quot;更多工具&quot;菜单中的网络条件条目。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
 
@@ -289,21 +289,12 @@ ms.locfileid: "12103501"
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevToolsRemoteDebugging]: ../remote-debugging/index.md "Android 设备远程调试入门 | Microsoft Docs"
 <!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community | Microsoft Docs"  -->
-<!-- external links -->
-[MDNWindowDevicePixelRatio]：" https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio Window.devicePixelRatio |MDN&quot; [MDNUserAgent]： https://developer.mozilla.org/docs/Glossary/User_agent &quot;User Agent |MDN&quot; [MDNDeviceOrientaitonAlpha]： https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha &quot;DeviceOrientationEvent.alpha |MDN&quot; [MDNDeviceOrientaitonBeta]： https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta &quot;DeviceOrientationEvent.beta |MDN&quot; [MDNDeviceOrientaitonGamma]： https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma &quot;DeviceOrientationEvent.gamma |MDN&quot; [WikiApproximation]： https://en.wikipedia.org/wiki/Order_of_approximation#First-order &quot;近似顺序 - 一级 - 维基百科"
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/device-mode/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/device-mode/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

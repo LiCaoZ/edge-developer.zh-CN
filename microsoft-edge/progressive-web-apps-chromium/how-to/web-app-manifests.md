@@ -7,13 +7,13 @@ ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进 Web 应用，PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
-ms.openlocfilehash: 05dc2910d6e62833f39fd6166eb8f151be73636b
-ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
+keywords: 渐进 Web 应用、PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
+ms.openlocfilehash: 1f50b671b9817110fa5ce0bdabb48b5ce128858c
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "12087269"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156149"
 ---
 # <a name="use-a-web-app-manifest-to-integrate-a-progressive-web-app-into-the-operating-system"></a>使用 Web 应用清单将渐进式 Web 应用集成到操作系统
 
@@ -40,7 +40,7 @@ Web 应用程序清单是必须使用清单链接从网站的 HTML 页面引用�
 
 可以使用PWA清单成员进一步自定义清单，如下所示：
 
-| 成员 | 说明 |
+| 成员 | 描述 |
 |:--- |:--- |
 | `name` | 应用的名称，由操作系统用于在应用的图标旁边显示。 |
 | `short_name` | 这可用于在空间不足时显示应用名称 `name` 。 |
@@ -50,7 +50,7 @@ Web 应用程序清单是必须使用清单链接从网站的 HTML 页面引用�
 | `display` | 应用应的外观。 这将更改向用户显示多少浏览器 UI。 |
 | `theme_color` | 应用的默认主题颜色。 这会影响操作系统显示网站。 |
 | `background_color` | 应用样式表前启动应用的窗口的背景颜色。 |
-| `orientation` | 在支持设备上，这将定义应用的默认方向 (如横向或纵向) 。 |
+| `orientation` | 在支持设备上，这将为应用定义默认方向 (如横向或纵向) 。 |
 | `icons` | 由操作系统在不同上下文中使用的图标图像对象数组。 |
 | `description` | 应用是什么。 |
 
@@ -77,7 +77,7 @@ Web 应用程序清单是必须使用清单链接从网站的 HTML 页面引用�
 }
 ```
 
-若要了解有关清单成员的信息，请参阅 MDN [中的 Web][MDNWebAppManifests] 应用清单文档。
+若要了解有关清单成员的信息，请参阅 MDN [中的 Web](https://developer.mozilla.org/docs/Web/Manifest) 应用清单文档。
 
 使用清单还可以解锁允许应用像本机应用一样运行的强大功能，例如添加应用快捷方式或标识为共享目标。
 
@@ -87,7 +87,7 @@ Web 应用程序清单是必须使用清单链接从网站的 HTML 页面引用�
 <!-- ====================================================================== -->
 ## <a name="use-shortcuts-to-provide-quick-access-to-features"></a>使用快捷方式快速访问功能
 
-大多数操作系统都使用连接到应用图标的上下文菜单上的快捷方式快速访问关键应用功能。  若要在 Web 应用程序中使用PWA，请 `shortcuts` 包含 Web 应用程序清单中的 属性。  以下代码段演示如何在 Web 应用清单中定义快捷方式。
+大多数操作系统都使用连接到应用图标的上下文菜单上的快捷方式快速访问关键应用功能。  若要在 Web 应用程序中PWA，请包含 Web `shortcuts` 应用清单中的 属性。  以下代码段演示如何在 Web 应用清单中定义快捷方式。
 
 ```json
 "shortcuts": [
@@ -138,11 +138,4 @@ Web 应用程序清单是必须使用清单链接从网站的 HTML 页面引用�
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [渐进式 Web 应用 (研讨会) 。 ][AaronPWAWorkshop]
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-<!-- external links -->
-[MDNWebAppManifests]: https://developer.mozilla.org/docs/Web/Manifest "Web 应用清单|MDN"
-[AaronPWAWorkshop]: https://noti.st/aarongustafson/co3b5z/getting-started-with-progressive-web-apps-workshop "渐进 Web 应用入门 [研讨会]"
+*  [渐进式 Web 应用 (研讨会) 。 ](https://noti.st/aarongustafson/co3b5z/getting-started-with-progressive-web-apps-workshop)

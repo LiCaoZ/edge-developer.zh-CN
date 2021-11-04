@@ -7,16 +7,16 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 扩展 api， 开发人员， Web 开发
-ms.openlocfilehash: 2ed3979e187fa9905d1ceb98fe4ed6cce13cae74
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: e77ab2264e002c677bf1aff028aeb4f0c84936b2
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141374"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156885"
 ---
 # <a name="supported-apis-for-microsoft-edge-extensions"></a>支持用于扩展Microsoft Edge API
 
-下表提供了一个 API 列表，您可以在为浏览器生成扩展时Microsoft Edge API。
+下表提供了一个 API 列表，可在为浏览器生成扩展时Microsoft Edge API。
 
 | API                                   | 描述
 |---------------------------------------|----------------------------------------------------------|
@@ -25,7 +25,7 @@ ms.locfileid: "12141374"
 | [browserAction](https://developer.chrome.com/extensions/browserAction) | 使用浏览器操作将图标放在工具栏上的Microsoft Edge。 您还可以使用浏览器操作添加工具提示、锁屏提醒或弹出窗口。 |
 | [browsingData](https://developer.chrome.com/extensions/browsingData) | 从用户的本地配置文件中删除浏览数据。 |
 | [命令](https://developer.chrome.com/extensions/commands) | 添加在扩展中触发操作键盘快捷方式。 例如，打开浏览器或向扩展发送命令的操作。 |
-| [contentSettings](https://developer.chrome.com/extensions/contentSettings) | 通常，内容设置允许您在每个网站上Microsoft Edge自定义网站内容的行为，而不是全局行为。 更改控制网站是否可以使用 Cookie、JavaScript 和插件等功能的设置。 |
+| [contentSettings](https://developer.chrome.com/extensions/contentSettings) | 通常，内容设置允许您自定义每个Microsoft Edge（而不是全局）上自定义网站集的行为。 更改控制网站是否可以使用 Cookie、JavaScript 和插件等功能的设置。 |
 | [contextMenus](https://developer.chrome.com/extensions/contextMenus) | 将项目添加到上下文菜单中的Microsoft Edge。 菜单项可能适用于不同的对象，如图像、超链接和页面。 |
 | [Cookie](https://developer.chrome.com/extensions/cookies) | 查询和修改 Cookie，在 Cookie 更改时接收通知。 |
 | [调试器](https://developer.chrome.com/extensions/debugger) | 附加到一个或多个选项卡以检测网络交互、调试 JavaScript、更改 DOM、更改 CSS 等。 使用调试器 tabId 通过 sendCommand 定向选项卡，并按 tabId 从 onEvent 回调路由事件。 |
@@ -85,21 +85,17 @@ Microsoft Edge不支持以下扩展 API：
 <!-- ====================================================================== -->
 ## <a name="additional-considerations-for-supported-apis"></a>受支持的 API 的其他注意事项
 
-*  用户必须使用 MICROSOFT 帐户Microsoft Edge MSA (或) 帐户Azure Active Directory登录。 `chrome.identity.getProfileUserInfo` 如果用户使用本地 Active Directory Microsoft Edge登录，API 将返回电子邮件和 `null` ID 值。
+*  用户必须使用 MICROSOFT 帐户Microsoft Edge MSA 帐户 (或) 帐户Azure Active Directory登录。 `chrome.identity.getProfileUserInfo` 如果用户使用本地 Active Directory Microsoft Edge登录，API 将返回电子邮件和 `null` ID 值。
 
    MSA (Microsoft) 是 Outlook.com、Live.com 或 Hotmail.com 帐户。
 
 *  Microsoft Edge不支持使用Chrome Web Store付款的扩展，因为它用于为 `identity.getAuthtoken` 登录用户请求令牌。  这些令牌将发送到基于 REST 的许可 API。
 
 
-<!-- links -->
+
 
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/apps/external_extensions)。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

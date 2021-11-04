@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: f4e8be746b19ee7be2b0545b701d971815b51c72
-ms.sourcegitcommit: 0eca205728eeca1bd54b3ca34dfc81ec57cf16d8
+ms.openlocfilehash: 488bf94e72f50305feb25efd87ca5f167c362f67
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "12082601"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156086"
 ---
 # <a name="the-webview2-process-model"></a>WebView2 进程模型
 
 支持的平台：Win32、Windows Forms、WinUI、WPF。
 
-WebView2 运行时使用与浏览器相同的Microsoft Edge模型。  此浏览器过程模型在新式 Web 浏览器的内部 [外观 (第 1 部分 ][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]) 。
+WebView2 运行时使用与浏览器相同的进程Microsoft Edge模型。  此浏览器过程模型在内部查看新式 Web 浏览器 ([第 1 部分) 。 ](https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture)
 
 
 <!-- ====================================================================== -->
@@ -34,7 +34,7 @@ _WebView2 进程组_是 WebView2 运行时进程的集合。  WebView2 进程组
    进程 1
 :::image-end:::
 
-当 WebView2 应用程序使用 WebView2 功能时，WebView2 进程组中进程的数量和状态可能会发生变化。   (但是，WebView2 进程组中只有一个特定浏览器进程。例如) 例如，从同一个 ，但在 属性中使用不同的域创建新 WebView 通常会启动一个新的呈现器进程。 `CoreWebView2Environment` `Source`
+当 WebView2 应用程序使用 WebView2 功能时，WebView2 进程组中进程的数量和状态可能会发生变化。   (但是，WebView2 进程组中只有一个特定浏览器进程。例如) 从同一个 ，但在 属性中使用不同的域创建新 WebView 通常会启动新的呈现器进程。 `CoreWebView2Environment` `Source`
 
 呈现器进程的数量可能因以下条件而异：
 *   使用 WebView2 _运行时_ 中的网站隔离功能。  请参阅 [每帧呈现器进程 - 网站隔离](https://developers.google.com/web/updates/2018/09/inside-browser-part1#site-isolation)。
@@ -46,9 +46,9 @@ _WebView2 进程组_是 WebView2 运行时进程的集合。  WebView2 进程组
 <!-- ====================================================================== -->
 ## <a name="webview2-runtime-processes-and-the-user-data-folder"></a>WebView2 运行时进程和用户数据文件夹
 
-WebView2 运行时进程集合中所有进程都绑定到浏览器进程，浏览器进程又与 UDF (单个用户数据文件夹) 。  如果应用程序使用多个用户数据文件夹，将针对每个用户数据文件夹创建一个 WebView2 运行时进程集合。
+WebView2 运行时进程集合中所有进程都绑定到浏览器进程，浏览器进程又与 UDF (单个用户数据) 。  如果应用程序使用多个用户数据文件夹，将针对每个用户数据文件夹创建一个 WebView2 运行时进程集合。
 
-用户数据文件夹可以由多个应用程序共享，但请务必考虑对性能和管理的影响，如管理用户数据 [文件夹中所述][WebView2ManageUDF]。
+用户数据文件夹可以由多个应用程序共享，但请务必考虑对性能和管理的影响，如管理用户 [数据文件夹中所述](./user-data-folder.md)。
 
 :::image type="complex" source="../media/process-model-2.png" alt-text="过程 2" lightbox="../media/process-model-2.png":::
    过程 2
@@ -81,21 +81,8 @@ WebView2 运行时进程集合中所有进程都绑定到浏览器进程，浏�
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [内部查看新式 Web 浏览器 (第 1) ][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]部分 - WebView2 运行时和浏览器使用的浏览器Microsoft Edge模型。
-*  [WebView2 入门指南][Webview2IndexGetStarted]
-*  [WebView2Samples 存储库][GithubMicrosoftedgeWebview2samples] - WebView2 功能的综合示例。
-*  [WebView2 API 参考][DotnetApiMicrosoftWebWebview2WpfWebview2]
-*  [另请参阅][Webview2IndexNextSteps] _WebView2 Microsoft Edge简介_。
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[Webview2IndexGetStarted]: ../index.md#get-started "入门 - WebView2 Microsoft Edge简介|Microsoft Docs"
-[Webview2IndexNextSteps]: ../index.md#see-also "另请参阅 - WebView2 Microsoft Edge简介|Microsoft Docs"
-[WebView2ManageUDF]: ./user-data-folder.md "管理用户数据文件夹 | Microsoft Docs"
-<!-- external links -->
-[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 类|Microsoft Docs"
-
-[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"
-
-[GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]: https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture "内部查看新式 Web 浏览器 (第 1 部分) "
+*  [内部查看新式 Web 浏览器 (第 1) ](https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture)部分 - WebView2 运行时和 Microsoft Edge 使用的浏览器过程模型。
+*  [WebView2 入门指南](../index.md#get-started)
+*  [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。
+*  [WebView2 API 参考](/dotnet/api/microsoft.web.webview2.wpf.webview2)
+*  [另请参阅](../index.md#see-also) _WebView2 Microsoft Edge简介_。

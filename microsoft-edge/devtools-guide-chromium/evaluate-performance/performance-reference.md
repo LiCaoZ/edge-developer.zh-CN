@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 31bb0f00693f80470f1fe7833c1b385ef2fbdfb5
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: ce5b6d9c71180c924721b0a8445f978b70b4a3be
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141563"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156422"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -69,7 +69,7 @@ ms.locfileid: "12141563"
 |:--- |:--- |
 | 资源 | 所请求资源的 URL。 |
 | 预览 | 仅预览请求的资源 (图像) 。 |
-| Request 方法 | HTTP 方法，用于请求 (或 `GET` `POST` ，例如) 。 |
+| Request 方法 | HTTP 方法，用于请求 (或 `GET` ，例如 `POST`) 。 |
 | 状态代码 | HTTP 响应代码。 |
 | MIME 类型 | 所请求资源的 MIME 类型。 |
 | 编码数据长度 | 请求的资源的长度（以字节为单位）。 |
@@ -82,18 +82,18 @@ ms.locfileid: "12141563"
 
 | 事件 | 描述 |
 |:--- |:--- |
-| 触发的动画帧 | 触发计划动画帧，并调用其回调处理程序。 |
+| 触发的动画帧 | 触发的计划动画帧及其回调处理程序已调用。 |
 | 取消动画帧 |  已取消计划的动画帧。 |
 | GC 事件 |  发生垃圾回收。 |
-| DOMContentLoaded |  [DOMContentLoaded 事件][MDNWindowDOMContentLoadedEvent]由浏览器触发。  加载和分析页面的所有 DOM 内容时，将触发此事件。 |
+| DOMContentLoaded |  [DOMContentLoaded 事件](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded)由浏览器触发。  加载和分析页面的所有 DOM 内容时，将触发此事件。 |
 | 评估脚本 | 已评估脚本。 |
 | 事件 | JavaScript 事件 (例如 、 或 `mousedown` `key`) 。 |
 | 函数调用 | 仅在浏览器进入 JavaScript 引擎 (时，才出现顶级 JavaScript 函数) 。 |
-| 安装计时器 | 计时器是使用 [setInterval () ][MDNWindowOrWorkerGlobalScopeSetInterval] 或 [setTimeout () 创建的 ][MDNWindowOrWorkerGlobalScopeSetTimeout]。 |
+| 安装计时器 | 计时器是使用 [setInterval () ](https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval) 或 [setTimeout () 创建的 ](https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout)。 |
 | 请求动画帧 | 安排 `requestAnimationFrame()` 新帧的呼叫。 |
 | 删除计时器 | 已清除之前创建的计时器。 |
-| 时间 |  一个称为 [console.time () 的脚本 ][ConsoleApiTime]。 |
-| 时间结束 | 一个称为 [console.timeEnd () 的脚本 ][ConsoleApiTimeEnd]。 |
+| 时间 |  一个称为 [console.time () 的脚本 ](/microsoft-edge/devtools-guide-chromium/console/api#time)。 |
+| 时间结束 | 一个称为 [console.timeEnd () 的脚本 ](/microsoft-edge/devtools-guide-chromium/console/api#timeend)。 |
 | 计时器触发 | 使用 或 计划触发的 `setInterval()` 计时器 `setTimeout()` 。 |
 | XHR 就绪状态更改 | XMLHTTPRequest 的就绪状态已更改。 |
 | XHR Load | 已完成 `XMLHTTPRequest` 加载。 |
@@ -127,7 +127,7 @@ ms.locfileid: "12141563"
 | 布局无效 | 对于布局记录，是导致布局失效的代码堆栈跟踪。 |
 | 需要布局的节点 | 对于布局记录，表示在启动中继之前标记为需要布局的节点数。  这些节点通常是开发人员代码无效的节点，以及中继根的向上路径。 |
 | 布局树大小 | 对于布局记录，中继根节点下的节点总数 (启动中继Microsoft Edge节点) 。 |
-| 布局范围 | 如果重新 (边界是 DOM 或 的一部分，则 `Partial`) 值 `Whole document` 。 |
+| 布局范围 | 可能的值 `Partial` (重新布局边界是 DOM 或 的一 `Whole document`) 。 |
 | 受影响的元素 | 对于"重新计算样式记录"，为受样式重新计算影响的元素数。 |
 | 样式无效 | 对于"重新计算样式"记录，提供导致样式无效的代码的堆栈跟踪。 |
 
@@ -149,28 +149,15 @@ ms.locfileid: "12141563"
 | 属性 | 说明 |
 |:--- |:--- |
 | 位置 | 对于画图，绘制矩形的 x 和 y 坐标。 |
-| 维度 | 对于画图事件，为绘制区域的高度和宽度。 |
+| 维度 | 对于画图事件，绘制区域的高度和宽度。 |
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[ConsoleApiTime]: /microsoft-edge/devtools-guide-chromium/console/api#time "time - 控制台 API 参考"
-[ConsoleApiTimeEnd]: /microsoft-edge/devtools-guide-chromium/console/api#timeend "timeEnd - 控制台 API 参考"
 <!--[EvaluatePerformanceTimelineTool]: timeline-tool "How to Use the Timeline Tool"  -->
 
-[MDNWindowDOMContentLoadedEvent]: https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded "窗口：DOMContentLoaded 事件|MDN"
-[MDNWindowOrWorkerGlobalScopeSetInterval]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval "WindowOrWorkerGlobalScope.setInterval () |MDN"
-[MDNWindowOrWorkerGlobalScopeSetTimeout]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout "WindowOrWorkerGlobalScope.setTimeout () |MDN"
 
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference)由[Meggin Kearney][MegginKearney] (Technical Writer) 和[Flavio 一][FlavioCopes] (Full Stack Developer) 创作。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference)由[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和[Flavio 一](https://developers.google.com/web/resources/contributors#flavio-copes) (Full Stack Developer) 创作。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
-[FlavioCopes]: https://developers.google.com/web/resources/contributors#flavio-copes
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

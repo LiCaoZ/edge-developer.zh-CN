@@ -7,12 +7,12 @@ ms.date: 04/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 兼容性， Web 平台， 密码展示， 眼睛图标
-ms.openlocfilehash: 95a1cd8d70b31330efa485f3cf9fc7204409ca9c
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 887e304c249707660ddcc30a652085332bc1a180
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141143"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155323"
 ---
 # <a name="customize-the-password-reveal-button"></a>自定义“密码显示”按钮
 
@@ -33,7 +33,7 @@ ms.locfileid: "12141143"
    :::column-end:::
 :::row-end:::
 
-默认情况下，密码 **显示** 按钮插入到所有 HTML 元素的 Shadow DOM 中，并将 `input` 设置为 `type` `"password"` 。  从 Microsoft Edge版本 87 开始，用户或[企业][DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled]可能会全局禁用此功能。  您（Web 设计人员和开发人员）应该希望大多数Microsoft Edge用户拥有默认体验。
+默认情况下，密码 **显示** 按钮插入到所有 HTML 元素的 Shadow DOM 中，并将 `input` 设置为 `type` `"password"` 。  从 Microsoft Edge版本 87 开始，用户或[企业](/deployedge/microsoft-edge-policies#passwordrevealenabled)可能会全局禁用此功能。  您（Web 设计人员和开发人员）应该希望大多数Microsoft Edge用户拥有默认体验。
 
 
 <!-- ====================================================================== -->
@@ -85,7 +85,3 @@ ms.locfileid: "12141143"
 如果**删除密码**显示按钮，用户必须删除密码字段的内容，密码**显示按钮**才能**** 再次显示。 如果用户离开未锁定的设备，此行为将阻止某人进行细微的调整以显示密码。
 
 如果使用**密码**管理器自动填充密码字段，**** 则密码显示按钮不可用。
-
-<!-- links -->
-
-[DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled]: /deployedge/microsoft-edge-policies#passwordrevealenabled "PasswordRevealEnabled - Microsoft Edge - 策略|Microsoft Docs"

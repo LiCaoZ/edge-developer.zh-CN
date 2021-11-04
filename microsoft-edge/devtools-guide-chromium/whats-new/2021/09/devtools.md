@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 09/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 2a079469a50aad83b388ff7401de12087e7ede4e
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: e833892a80c01823455ad3139af5d052341827c9
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140793"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156919"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-94"></a>DevTools 94 (Microsoft Edge中的新增) 
 
@@ -27,7 +27,7 @@ ms.locfileid: "12140793"
 
 在 DevTools **中** ，在 Web 中搜索控制台错误。  在 **控制台中**，许多错误现在在 **"Web"** 按钮上显示"搜索此消息"，显示为放大镜。  当您选择" **在 Web 上搜索此消息** "按钮时，将在浏览器中打开一个新选项卡，并显示错误的搜索结果。
 
-有关详细信息，请导航到["从控制台查找 Web 上的错误消息"。][LookupErrorsWebFromConsole]
+有关详细信息，请导航到["从控制台查找 Web 上的错误消息"。](../../../console/index.md#look-up-error-messages-on-the-web-from-the-console)
 
 :::image type="complex" source="../../media/2021/09/search-console-icon.msft.png" alt-text="**Console 中错误的&quot;在 Web 上搜索此消息&quot;按钮" lightbox="../../media/2021/09/search-console-icon.msft.png":::
    控制台 **出错时"在 Web** 上搜索此消息" **按钮**
@@ -47,7 +47,7 @@ ms.locfileid: "12140793"
 *  在"**工具** () "窗格中添加"关闭Microsoft Edge"按钮，以关闭扩展 `X` ****  >  **** 打开的浏览器。
 *  添加对与远程工作区的 JavaScript 调试器连接的支持。
 
-有关详细信息，请导航到 Microsoft Edge [DevTools 扩展Visual Studio Code。][EdgeDevToolsExtensionForVSCode]
+有关详细信息，请导航到 Microsoft Edge [DevTools 扩展Visual Studio Code。](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)
 
 :::image type="complex" source="../../media/2021/09/devtools-extension-dark-theme.msft.png" alt-text="内部运行的扩展Visual Studio Code，与主题的深色主题Visual Studio Code，以及新的&quot;有用链接&quot;边栏" lightbox="../../media/2021/09/devtools-extension-dark-theme.msft.png":::
    内部运行的扩展Visual Studio Code、匹配主题的深色Visual Studio Code以及新的"**有用**链接"边栏
@@ -66,11 +66,11 @@ ms.locfileid: "12140793"
 <!-- Title: Breakpoint icons are now displayed when using themes from Visual Studio Code -->
 <!-- Subtitle: Setting, removing, and viewing breakpoints is now easier in Microsoft Edge. -->
 
-在 Microsoft Edge 版本 93 中，可以将 Visual Studio Code 中使用的主题应用到 DevTools 扩展。  有关此功能详细信息，请导航到将 [颜色主题应用到 DevTools][ApplyColorThemesToDevTools]。
+在 Microsoft Edge 版本 93 中，可以将 Visual Studio Code 中使用的主题应用到 DevTools 扩展。  有关此功能详细信息，请导航到将 [颜色主题应用到 DevTools](../../../customize/theme.md)。
 
 以前，在 DevTools Visual Studio Code主题时，源工具中代码左边距上的断点图标不会显示。 ****  从 Microsoft Edge 94 开始，断点图标现在按预期方式显示。
 
-若要了解有关使用断点调试 JavaScript 代码的信息，请导航到如何在[DevTools][PauseCodeWithBreakpoints]中暂停包含断点Microsoft Edge代码。
+若要详细了解如何使用断点调试 JavaScript 代码，请导航到如何在[DevTools](../../../javascript/breakpoints.md)中暂停包含断点Microsoft Edge代码。
 
 :::image type="complex" source="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png" alt-text="断点图标现在在使用主题时Visual Studio Code显示" lightbox="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png":::
    断点图标现在在使用主题时Visual Studio Code显示
@@ -83,11 +83,11 @@ ms.locfileid: "12140793"
 <!-- Title: Use the arrow keys to navigate to the + button to open more tools -->
 <!-- Subtitle: To open more tools, we have improved keyboard accessibility using the arrow keys on the main DevTools toolbar. -->
 
-以前，当工具栏具有焦点时，你**** 无法使用键盘上的箭头键导航到 `+` DevTools () 工具"按钮。  使用箭头键时，到达工具栏中的最后一个工具后，焦点将循环回第一个工具，或显示"更多 **选项卡"菜单** 。
+以前，如果工具栏具有焦点，你无法**** 导航到 DevTools () 工具"按钮，而使用键盘上的 `+` 箭头键。  使用箭头键时，到达工具栏中的最后一个工具后，焦点将循环回第一个工具，或显示"更多 **选项卡"菜单** 。
 
-从 Microsoft Edge版本 93 开始，**** 当焦点位于工具栏上时，可以使用箭头键选择"更多选项卡" () "按钮和"更多工具" `>>` 按钮。 ****
+从 Microsoft Edge版本 93 开始，当**** 焦点位于工具栏上时，可以使用箭头键选择"更多选项卡" () "按钮和"更多工具" `>>` 按钮。 ****
 
-若要详细了解如何使用键盘导航 DevTools，请导航Microsoft Edge[开发人员工具键盘快捷方式][DevToolsKeyboardShortcuts]。
+若要详细了解如何使用键盘导航 DevTools，请导航Microsoft Edge[开发人员工具键盘快捷方式](../../../shortcuts/index.md)。
 
 :::image type="complex" source="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png" alt-text="使用箭头键将焦点放在 **更多选项卡** 或 **更多工具** 按钮上" lightbox="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png":::
    使用箭头键将焦点放在"更多选项卡 **"或** " **更多工具"** 按钮上
@@ -97,31 +97,12 @@ ms.locfileid: "12140793"
 <!-- ====================================================================== -->
 ## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道
 
-如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[EdgeDevToolsExtensionForVSCode]: ../../../../visual-studio-code/microsoft-edge-devtools-extension.md "Microsoft Edge适用于开发人员的 DevTools Visual Studio Code |Microsoft Docs"
-[LookupErrorsWebFromConsole]: ../../../console/index.md#look-up-error-messages-on-the-web-from-the-console "从控制台查找 Web 上的错误消息 - 使用控制台|Microsoft Docs"
-[DevToolsKeyboardShortcuts]: ../../../shortcuts/index.md "Microsoft Edge DevTools 键盘快捷方式 | Microsoft Docs"
-[ApplyColorThemesToDevTools]: ../../../customize/theme.md "将颜色主题应用到 DevTools |Microsoft Docs"
-[PauseCodeWithBreakpoints]: ../../../javascript/breakpoints.md "如何在 Microsoft Edge 开发工具中使用断点暂停代码 | Microsoft Doc"
-
-<!-- external links -->
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge 预览频道"
-
-[VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Developer Tools for Visual Studio Code | Visual Studio Marketplace"
+如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道](https://www.microsoftedgeinsider.com/download)作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-94) ，由 [Jecelyn Yeen][JecelynYeen] 和开发人员 (Chrome DevTools) 。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-94)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelynyeen
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

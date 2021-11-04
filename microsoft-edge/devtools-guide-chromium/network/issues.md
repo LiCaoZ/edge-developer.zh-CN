@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 5650be5a5cb8b997140eeaa5d1521993c380b15c
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 5533dbe0bb34a5b880d857712b11b2aa84e9db59
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141381"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157514"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -31,7 +31,7 @@ ms.locfileid: "12141381"
 
 本指南将演示如何使用 Microsoft Edge DevTools 的网络面板检测网络问题或优化机会。
 
-若要了解**网络**工具的基础知识，请导航到[入门][NetworkPerformance]。
+若要了解**网络**工具的基础知识，请导航到[入门](./index.md)。
 
 
 <!-- ====================================================================== -->
@@ -74,7 +74,7 @@ ms.locfileid: "12141381"
 **原因**
 
 *   客户端和服务器之间的连接速度很慢。
-*   服务器响应缓慢。  在本地托管服务器，以确定是连接速度慢还是服务器速度慢。  如果您在访问本地服务器时仍 (到第一字节) TTFB，则服务器速度很慢。
+*   服务器响应缓慢。  在本地托管服务器，以确定是连接速度慢还是服务器速度慢。  如果在访问本地服务器时仍 (到第一字节) TTFB，则服务器速度很慢。
 
 **修补程序**
 
@@ -109,29 +109,14 @@ ms.locfileid: "12141381"
 
 Do you have a network issue that should be added to this guide?
 
-*   Send a tweet to [@EdgeDevTools][MicrosoftEdgeTweet].
+*   Send a tweet to [@EdgeDevTools](https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]).
 *   Choose **Send Feedback** (![Send Feedback](../media/smile-icon.msft.png)) in the DevTools or select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS) to provide feedback or feature requests.
-*   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[NetworkPerformance]: ./index.md "使用 Microsoft Edge DevTools 检测网络活动 | Microsoft Docs"
-
-[MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]
-
-[WebFundamentalsIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D "新问题 - MicrosoftDocs/edge-developer"
+*   [Open an issue](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D) on the docs repo.  -->
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/network/issues)由 (技术撰稿人[、Chrome][KayceBasques] DevTools \& Lighthouse) 和[House Garbee][JonathanGarbee] (Google Developer Expert for Web Technology) 创作。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/network/issues)由 (技术撰稿人[、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse) 和[House Garbee](https://developers.google.com/web/resources/contributors#jonathan-garbee) (Google Developer Expert for Web Technology) 创作。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[JonathanGarbee]: https://developers.google.com/web/resources/contributors#jonathan-garbee
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

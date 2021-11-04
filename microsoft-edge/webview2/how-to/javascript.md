@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 1f689a4a63cd8bf3be0dd0e5abfa6ff4270bb625
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 3c38b9a7129c6c1cad9aa191edc22babbfbca58a
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141108"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156856"
 ---
 # <a name="use-javascript-in-webview-for-extended-scenarios"></a>在 WebView 中对扩展方案使用 JavaScript
 
@@ -23,7 +23,7 @@ ms.locfileid: "12141108"
 <!-- ====================================================================== -->
 ## <a name="before-you-begin"></a>在开始之前
 
-本文假定您已有一个工作项目。  如果你没有项目，并且想要继续，请参阅 [WebView2 入门指南][Webview2MainGetStarted]。
+本文假定您已有一个工作项目。  如果你没有项目，并且想要继续，请参阅 [WebView2 入门指南](../index.md#get-started)。
 
 
 <!-- ====================================================================== -->
@@ -33,8 +33,8 @@ ms.locfileid: "12141108"
 
 | API  | 描述  |
 |:--- |:--- |
-| [ExecuteScriptAsync][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | 在 WebView 控件中运行 JavaScript。 有关详细信息，请导航到入门教程。 |
-| [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | 当创建文档对象模型 (DOM) 运行。 |
+| [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | 在 WebView 控件中运行 JavaScript。 有关详细信息，请导航到入门教程。 |
+| [OnDocumentCreatedAsync](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated) | 当创建文档对象模型 (DOM) 运行。 |
 
 
 <!-- ====================================================================== -->
@@ -70,7 +70,7 @@ ms.locfileid: "12141108"
 
 首先，了解当前的拖放功能：
 
-1.  创建 `.txt` 文件以便进行拖放。  例如，创建一个名为 的文件 `contoso.txt` ，并添加文本。
+1.  创建 `.txt` 文件以拖放。  例如，创建一个名为 的文件 `contoso.txt` ，并添加文本。
 
 1.  运行项目。
 
@@ -100,7 +100,7 @@ ms.locfileid: "12141108"
 <!-- ====================================================================== -->
 ## <a name="scenario-removing-the-context-menu"></a>方案：删除上下文菜单
 
-在此部分中，从 WebView2 控件 (右键单击菜单) 默认上下文菜单。
+在此部分中，从 WebView2 控件 (右键单击菜单) 菜单。
 
 若要开始，请浏览右键单击菜单的当前功能：
 
@@ -124,22 +124,7 @@ ms.locfileid: "12141108"
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [WebView2 入门指南][Webview2MainGetStarted]
-*  [WebView2Samples 存储库][GithubMicrosoftedgeWebview2samples] - WebView2 功能的综合示例。
-*  [WebView2 API 参考][Webview2ApiReference]
-*  [另请参阅][Webview2MainNextSteps] _WebView2 Microsoft Edge简介_。
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge开发人员工具|Microsoft Docs"
-
-[Webview2ApiReference]: ../webview2-api-reference.md "Microsoft EdgeWebView2 API 参考|Microsoft Docs"
-[Webview2MainGetStarted]: ../index.md#get-started "入门 - WebView2 Microsoft Edge简介|Microsoft Docs"
-[Webview2MainNextSteps]: ../index.md#see-also "另请参阅 - WebView2 Microsoft Edge简介|Microsoft Docs"
-
-[Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated]: /microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated "AddScriptToExecuteOnDocumentCreated - 0.9.579 - 接口 ICoreWebView2 |Microsoft Docs"
-
-[Webview2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "Microsoft.Web.WebView2. (.Wpf) 的 WebView2.ExecuteScriptAsync (String) |Microsoft Docs"
-
-[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"
+*  [WebView2 入门指南](../index.md#get-started)
+*  [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。
+*  [WebView2 API 参考](../webview2-api-reference.md)
+*  [另请参阅](../index.md#see-also) _WebView2 Microsoft Edge简介_。

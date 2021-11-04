@@ -7,12 +7,12 @@ ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: b11a6e1a27dd80c937c63a24106ab98b9b822493
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: e73538b6e3a72b8cea6bc949e7038894b2fff317
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141402"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156730"
 ---
 # <a name="microsoft-edge-add-ons-store-developer-policies"></a>Microsoft Edge 加载项商店开发人员策略
 
@@ -20,9 +20,9 @@ ms.locfileid: "12141402"
 <!-- ====================================================================== -->
 ## <a name="introduction-and-objective-of-this-document"></a>本文档的简介和目标
 
-感谢你有兴趣开发适用于加载项应用商店Microsoft Edge扩展。  Microsoft Edge 加载项应用商店开发人员策略 (加载项应用商店开发人员策略) 适用于你的扩展，包括通过合作伙伴中心提交扩展，以及通过 Microsoft Edge 加载项提供此类扩展。 [][MicrosoftPartnerCenter]
+感谢你有兴趣开发适用于加载项应用商店Microsoft Edge扩展。  Microsoft Edge 加载项应用商店开发人员策略 (加载项应用商店开发人员策略) 适用于你的扩展，包括通过合作伙伴中心提交扩展，以及通过 Microsoft Edge 加载项提供此类扩展。 [](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
 
-加载项_Microsoft Edge_也称为加载项Microsoft Edge_网站_。  加载项_Microsoft Edge开发人员_策略也称为加载项Microsoft Edge_开发人员_策略。
+加载项_Microsoft Edge_也称为加载项Microsoft Edge_网站_。  加载项_Microsoft Edge开发人员_策略也称为加载项Microsoft Edge_开发人员策略_。
 
 
 <!-- ====================================================================== -->
@@ -30,11 +30,11 @@ ms.locfileid: "12141402"
 
 下面是一些入门准则：
 
-*   你应该在扩展中为用户提供独特且Microsoft Edge。  提供一个令人信服的理由，从加载项Microsoft Edge加载项 (Microsoft Edge下载扩展) 。
+*   你应该在扩展中为用户提供独特且Microsoft Edge。  提供从加载项应用商店Microsoft Edge加载项 (Microsoft Edge扩展的) 。
 *   你不得误导我们的联合用户有关你的扩展功能、谁提供它等。
 *   不得试图欺骗用户、系统或生态系统。  我们的加载项Microsoft Edge任何类型的欺诈;是评分和审查操作、信用卡欺诈或其他欺诈活动。
 
-遵循加载项Microsoft Edge开发人员策略有助于你做出选择，以增强扩展的吸引力和受众。
+遵循加载项Microsoft Edge开发人员策略应有助于你做出选择，以增强扩展的吸引力和受众。
 
 扩展对于亿万用户的体验至关重要。  我们期待体验你创建并感到兴奋，帮助你向全世界提供扩展。
 
@@ -64,7 +64,7 @@ ms.locfileid: "12141402"
 
 #### <a name="115-provide-appropriate-details"></a>1.1.5 提供相应详细信息
 
-你必须提供有关扩展以及针对扩展列出元数据 (功能) 详细信息。  扩展必须提供有价值且高质量的用户体验。  你的扩展还必须在加载项Microsoft Edge活动状态。
+您必须提供有关扩展以及针对扩展列出元数据 (功能) 详细信息。  扩展必须提供有价值且高质量的用户体验。  你的扩展还必须在加载项Microsoft Edge活动状态。
 
 #### <a name="116-stability-and-performance"></a>1.1.6 稳定性和性能
 
@@ -89,15 +89,15 @@ ms.locfileid: "12141402"
 #### <a name="121-content-security-policies"></a>1.2.1 内容安全策略
 
 > [!NOTE]
-> 如果对扩展进行除上述功能之外的任何更改，则对代码的任何更改都必须符合Microsoft Edge[安全策略][MicrosoftEdgeContentSecurityPolicyRemoteScript]。  例如，扩展不应下载远程脚本，随后以与描述的功能不一致的方式运行该脚本。
+> 如果对扩展进行了除上述功能之外的任何更改，则对代码的任何更改都必须符合Microsoft Edge[安全策略](./csp.md#relaxing-the-default-policy)。  例如，扩展不应下载远程脚本，随后以与描述的功能不一致的方式运行该脚本。
 
 #### <a name="122-unwanted-and-malicious-software"></a>1.2.2 不需要和恶意软件
 
-您的扩展不得包含或启用 Microsoft 针对不需要和恶意软件 [的条件所定义的恶意软件][MicrosoftIdentifiesMalwareUnwantedApplications]。
+您的扩展不得包含或启用 Microsoft 针对不需要和恶意软件 [的条件所定义的恶意软件](/windows/security/threat-protection/intelligence/criteria)。
 
 #### <a name="123-dependency-on-other-software"></a>1.2.3 依赖其他软件
 
-扩展可能依赖于非集成软件 (如其他产品、模块或) 交付主要功能，但您必须在描述中披露依赖项
+扩展可能依赖于非集成软件 (如其他产品、模块或服务) 交付主要功能，但您必须在描述中披露依赖项
 
 #### <a name="124-extensions-update"></a>1.2.4 扩展更新
 
@@ -117,7 +117,7 @@ ms.locfileid: "12141402"
 
 ### <a name="14-usability"></a>1.4 可用性
 
-你的扩展必须符合Microsoft Edge加载项存储可用性标准，包括但不限于以下各小节中列出的标准。
+你的扩展必须符合Microsoft Edge加载项应用商店的可用性标准，包括但不限于以下子部分中列出的标准。
 
 #### <a name="141-compatibility-across-platforms"></a>1.4.1 跨平台的兼容性
 
@@ -133,11 +133,11 @@ ms.locfileid: "12141402"
 
 #### <a name="151-collect-personal-information-only-when-necessary"></a>1.5.1 仅在必要时收集个人信息
 
-你的扩展可能会收集、访问、使用或传输个人信息 (包括 Web 浏览活动) ;仅在需要且仅在显著披露的面向用户的功能中使用时。
+您的扩展可能会收集、访问、使用或传输个人信息 (包括 Web 浏览活动) ;仅在需要且仅在显著披露的面向用户的功能中使用时。
 
 #### <a name="152-maintain-a-privacy-policy"></a>1.5.2 维护隐私策略
 
-无论扩展是访问、收集还是传输个人信息;你必须在法律要求时提供醒目的通知并遵守隐私策略。  隐私策略必须告知用户你的扩展访问、收集或传输的个人信息、该信息的使用、存储和保护方式，并指示其披露给的各方类型。  隐私策略必须说明用户对信息的使用和共享的控制、他们如何访问其信息，并且必须遵守适用的法律和法规。  向扩展添加新特性和功能时，隐私策略必须保持最新。
+无论扩展是访问、收集还是传输个人信息;你必须在法律要求时提供醒目的通知并遵守隐私策略。  隐私策略必须通知用户你的扩展访问、收集或传输的个人信息、该信息的使用、存储和保护方式，并指示其披露给的各方类型。  隐私策略必须说明用户对信息的使用和共享的控制、他们如何访问其信息，并且必须遵守适用的法律和法规。  向扩展添加新特性和功能时，隐私策略必须保持最新。
 
 如果向 Microsoft 提供隐私策略，即表示你同意允许 Microsoft 与扩展用户共享此类隐私策略。
 
@@ -231,8 +231,8 @@ ms.locfileid: "12141402"
 
 #### <a name="1102-policies-and-agreements"></a>1.10.2 策略和协议
 
-扩展显示的任何广告内容都必须遵守 [Microsoft 创意接受策略][MicrosoftAdvertisingCreativeAcceptancePolicies]。
-如果你的扩展显示广告，则显示的所有内容都必须符合应用开发人员协议和此 [策略的广告要求][MicrosoftAppDeveloperAgreement] 。
+扩展显示的任何广告内容都必须遵守 [Microsoft 创意接受策略](https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-acceptance-policies)。
+如果你的扩展显示广告，则显示的所有内容都必须符合应用开发人员协议和此 [策略的广告要求](/legal/windows/agreements/app-developer-agreement) 。
 
 #### <a name="1103-quality-of-advertising"></a>1.10.3 广告质量
 
@@ -241,7 +241,7 @@ ms.locfileid: "12141402"
 
 #### <a name="1104-promotions"></a>1.10.4 促销
 
-如果你购买或创建促销广告市场活动以通过合作伙伴中心中的广告市场活动功能推广你的扩展，你向[][MicrosoftPartnerCenter]Microsoft 提供的所有广告材料（包括任何关联的登陆页面）都必须符合[Microsoft 创意][MicrosoftAdvertisingCreativeSpecifications]规范策略和[Microsoft 创意接受][MicrosoftAdvertisingCreativeAcceptancePolicies]策略。
+如果你购买或创建促销广告市场活动以通过合作伙伴中心中的广告市场活动功能推广你的扩展，你向[](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)Microsoft 提供的所有广告材料（包括任何关联的登陆页面）都必须符合[Microsoft 创意](https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-specs)规范策略和[Microsoft 创意接受](https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-acceptance-policies)策略。
 
 #### <a name="1105-notifying-users-of-opt-out-for-interest-based-advertising"></a>1.10.5 通知用户Opt-Out用于Interest-Based广告
 
@@ -249,7 +249,7 @@ ms.locfileid: "12141402"
 
 #### <a name="1106-other-guidelines"></a>1.10.6 其他准则
 
-如果你的扩展面向 13 岁以下的儿童，如《儿童在线隐私保护法》[中的定义][FTCChildrensPrivacy];你必须在合作伙伴中心向 Microsoft[][MicrosoftPartnerCenter]通知这一情况，并确保扩展中显示的所有广告内容都适合 13 岁以下的儿童。
+如果你的扩展面向 13 岁以下的儿童，如《儿童在线隐私保护法》[中的定义](https://www.ftc.gov/tips-advice/business-center/privacy-and-security/children%27s-privacy);你必须在合作伙伴中心向 Microsoft[](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)通知这一情况，并确保扩展中显示的所有广告内容都适合 13 岁以下的儿童。
 
 
 <!-- ====================================================================== -->
@@ -324,7 +324,7 @@ ms.locfileid: "12141402"
 
 #### <a name="2121-mature-content"></a>2.12.1 成熟内容
 
-将扩展提交到 [合作伙伴中心][MicrosoftPartnerCenter]时，必须指示扩展是否显示应标记为"成熟"的内容。  在确定扩展的分级时，请考虑应用内的所有内容（包括用户生成的内容和广告）以及扩展链接的内容。  如果你指示你的扩展不包含任何"成熟"内容，则你负责保持此分级的准确性。  无论为扩展提供何种分级，它仍然必须遵循加载项开发人员策略Microsoft Edge所有内容要求
+将扩展提交到 [合作伙伴中心](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)时，必须指示扩展是否显示应标记为"成熟"的内容。  在确定扩展的分级时，请考虑应用内的所有内容（包括用户生成的内容和广告）以及扩展链接的内容。  如果你指示你的扩展不包含任何"成熟"内容，则你负责保持此分级的准确性。  无论为扩展提供何种分级，它仍然必须遵循加载项开发人员策略Microsoft Edge所有内容要求
 
 #### <a name="2122-ratings-change"></a>2.12.2 评分更改
 
@@ -332,35 +332,16 @@ ms.locfileid: "12141402"
 
 ### <a name="213-videos"></a>2.13 视频
 
-如果你在一览中提交促销视频，它应遵循此策略中提到的所有内容指南。  如果选择提供 YouTube 链接，必须确保为要嵌入的特定视频关闭广告。  若要详细了解如何打开或关闭 YouTube 上的广告，请导航[][GoogleYoutubeAnswer2531367Topic7072227]到"设置嵌入视频的默认广告格式[和广告"。][GoogleYoutubeAnswer132596]
+如果你在一览中提交促销视频，它应遵循此策略中提到的所有内容指南。  如果选择提供 YouTube 链接，必须确保为要嵌入的特定视频关闭广告。  若要详细了解如何打开或关闭 YouTube 上的广告，请导航[](https://support.google.com/youtube/answer/2531367?ref_topic=7072227)到"设置嵌入视频的默认广告格式[和广告"。](https://support.google.com/youtube/answer/132596)
 
 
 <!-- ====================================================================== -->
 ## <a name="certification-appeal-process"></a>认证请求流程
 
-所有扩展都应遵循上面列出的应用商店策略。 如果扩展在审查过程中失败，请查看应用商店策略以了解失败的原因。 使用合作伙伴中心提交扩展后，若要询问有关其评价或认证状态的问题，请导航 [到"新建][MicrosoftSupportSupportrequestformE7a381be9c9aFafbEd76262bc93fd9e4] 支持请求"并填写表单。
+所有扩展都应遵循上面列出的应用商店策略。 如果扩展在审查过程中失败，请查看应用商店策略以了解失败的原因。 使用合作伙伴中心提交扩展后，若要询问有关其评价或认证状态的问题，请导航 [到"新建](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4) 支持请求"并填写表单。
 
 ### <a name="microsoft-edge-add-ons-appeal-statistics-for-fy2021"></a>Microsoft Edge2021 年 9 月加载项吸引力统计信息
 
 | 主要投诉类型 #1：强制执行投诉 | 主要投诉类型 #2：认证结果 | 其他投诉类型 | Total Complaints | 过度投诉 |
 |:--- |:--- |
 | 8 | 2 | 4 | 14 | 0 |
-
-
-<!-- links -->
-
-[MicrosoftEdgeContentSecurityPolicyRemoteScript]: ./csp.md#relaxing-the-default-policy "支持默认策略 - 内容安全策略 (CSP) |Microsoft Docs"
-
-[MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "应用开发人员协议|Microsoft Docs"
-[MicrosoftIdentifiesMalwareUnwantedApplications]: /windows/security/threat-protection/intelligence/criteria "Microsoft 如何识别恶意软件和可能不需要的应用程序|Microsoft Docs"
-
-[GoogleYoutubeAnswer2531367Topic7072227]: https://support.google.com/youtube/answer/2531367?ref_topic=7072227 "设置默认广告格式 - YouTube 帮助"
-[GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "嵌入视频上的广告 - YouTube 帮助"
-[FTCChildrensPrivacy]: https://www.ftc.gov/tips-advice/business-center/privacy-and-security/children%27s-privacy "儿童隐私 - 联邦贸易委员会"
-
-[MicrosoftAdvertisingCreativeAcceptancePolicies]: https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-acceptance-policies "创意接受策略 - Microsoft Advertising"
-[MicrosoftAdvertisingCreativeSpecifications]: https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-specs "创意规范 - Microsoft Advertising"
-
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "合作伙伴中心"
-
-[MicrosoftSupportSupportrequestformE7a381be9c9aFafbEd76262bc93fd9e4]: https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "Extensions 新的支持请求|Microsoft 支持"

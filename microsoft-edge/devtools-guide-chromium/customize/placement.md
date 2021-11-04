@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 80bf7cfab6a7c240a15ce9137798173de5712a79
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 2ca392d4faced9f10e2e6d19d86fc70fbcace62d
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141668"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156072"
 ---
 <!-- Copyright Kayce Basques
 
@@ -87,7 +87,7 @@ DevTools 可能会撤消停靠到单独的窗口，你可以移到单独的监�
 <!-- ====================================================================== -->
 ## <a name="change-placement-from-the-command-menu"></a>从命令菜单更改位置
 
-1.  [打开命令菜单][DevtoolsCommandMenu]，选择 `Shift` + `Ctrl` + `P` "Windows/Linux"或 `Command` + `Shift` + `P` macOS。
+1.  [打开命令菜单](../command-menu/index.md)，选择 `Shift` + `Ctrl` + `P` "Windows/Linux"或 `Command` + `Shift` + `P` macOS。
 1.  在 `>` 字符后输入 `dock` ，然后选择以下命令之一：
 
     *  **扩展坞到底部**
@@ -104,18 +104,8 @@ DevTools 可能会撤消停靠到单独的窗口，你可以移到单独的监�
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsCommandMenu]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行|Microsoft Docs"
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/placement)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/placement)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

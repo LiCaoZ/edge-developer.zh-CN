@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 7ee72f0ebb07607cf33b0c4640892c948ccaef50
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 92c47487a0caa39aec39ffb1c52a907eef018690
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139869"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156653"
 ---
 <!-- Copyright Kayce Basques
 
@@ -36,7 +36,7 @@ ms.locfileid: "12139869"
 *   了解你的页面当前与浏览器任务管理器Microsoft Edge的内存量。
 *   使用内存面板直观呈现一段时间 **的内存** 使用情况。
 *   使用堆快照 (分离的 DOM 树) 内存泄漏的 **常见原因**。
-*   了解何时在 JavaScript 堆中分配新内存 (JS 堆) 时间线上的**Allocation instrumentation。**
+*   在时间线上通过 Allocation instrumentation 了解 JavaScript 堆中何时 (JS) 分配 **新内存**。
 
 
 <!-- ====================================================================== -->
@@ -66,13 +66,13 @@ ms.locfileid: "12139869"
 
 使用 Microsoft Edge 浏览器任务管理器作为内存问题调查的起点。  浏览器Microsoft Edge管理器是实时监视器，可告诉你页面当前使用的内存量。
 
-1.  选择 `Shift` + `Esc` 或导航到"Microsoft Edge"主菜单，然后选择"更多**工具**""浏览器任务管理器"以  >  **** Microsoft Edge浏览器任务管理器"。
+1.  选择 `Shift` + `Esc` 或导航到"Microsoft Edge"主菜单，然后选择"更多**工具**""浏览器任务管理器"以Microsoft Edge  >  **** 浏览器任务管理器"。
 
     :::image type="complex" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="打开Microsoft Edge浏览器任务管理器" lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
        图 1：打开Microsoft Edge浏览器任务管理器
     :::image-end:::
 
-1.  将鼠标悬停在浏览器任务管理器Microsoft Edge表标题上，右键单击 (上下文菜单，然后) **JavaScript 内存**。
+1.  将鼠标悬停在浏览器任务管理器Microsoft Edge表标题上，右键单击 (上下文菜单，) **JavaScript 内存**。
 
     :::image type="complex" source="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png" alt-text="启用 JavaScript 内存" lightbox="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png":::
        图 2：启用 JavaScript 内存
@@ -93,10 +93,10 @@ ms.locfileid: "12139869"
 
 1.  打开**** DevTools 上的"性能"面板。
 1.  启用" **内存"** 复选框。
-1.  [录制][DevtoolsEvaluatePerformanceReferenceRecord]。
+1.  [录制](/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#record-performance)。
 
 > [!TIP]
-> 最佳做法是使用强制垃圾回收开始和结束录制。  若要强制进行垃圾回收，请选择记录时 **收集垃圾回收** ![ ][ImageForceGarbageCollectionIcon] 强制垃圾回收按钮。
+> 最佳做法是使用强制垃圾回收开始和结束录制。  若要强制进行垃圾回收，请选择记录时 **收集垃圾回收** ![ ](../media/collect-garbage-icon.msft.png) 强制垃圾回收按钮。
 
 若要演示内存录制，请考虑以下代码：
 
@@ -111,15 +111,15 @@ function grow() {
 document.getElementById('grow').addEventListener('click', grow);
 ```
 
-每次选择代码中引用的按钮时，都会将一万个节点追加到文档正文，并且一个包含一百万个字符的字符串 `div` `x` 被推送到 `x` 数组中。  运行前面的代码示例在性能面板中 **生成** 记录，如下图所示。
+每次选择代码中引用的按钮时，都会将一万个节点追加到文档正文，并且一个包含一百万个字符的字符串 `div` `x` 被推送到 `x` 数组。  运行前面的代码示例在性能面板中 **生成** 记录，如下图所示。
 
 :::image type="complex" source="../media/memory-problems-glitch-example-1-performance-memory.msft.png" alt-text="简单增长" lightbox="../media/memory-problems-glitch-example-1-performance-memory.msft.png":::
    图 3：简单增长
 :::image-end:::
 
-首先，用户界面的说明。  "**概述**"窗格中的**** HEAP 图 (**NET**) JS 堆。  "概述 **"窗格** 下方是" **计数器"** 窗格。  内存使用量由 JS 堆 (，与概述窗格中的**HEAP**图) 、**** 文档、DOM 节点、侦听器和 GPU 内存相同。  关闭复选框以在图形中隐藏它。
+首先，用户界面的说明。  "**概述**"窗格中的**** HEAP 图 (NET) **JS**堆。  "概述 **"窗格** 下方是" **计数器"** 窗格。  内存使用率由 JS 堆 (，与概述窗格) 、文档、DOM**** 节点、侦听器和 GPU 内存中的**HEAP**图相同。  关闭复选框以在图形中隐藏它。
 
-现在，代码分析与上图比较。  如果查看绿色图形 (节点) ，它将与代码完全匹配。  节点计数在离散步骤中增加。  您可能认为节点计数的每次增加都是对 的调用 `grow()` 。  使用蓝色图形 (JS 堆图) 并不简单。  为了与最佳实践保持一样，第一个下降实际上是强制垃圾回收 (选择"收集  **垃圾回收** ![ 强制垃圾回收" ][ImageForceGarbageCollectionIcon] 按钮) 。  在记录进行时，将显示 JS 堆大小峰值。  这是自然且预期的：JavaScript 代码将在你选择的每一个按钮上创建 DOM 节点，并创建一百万个字符的字符串时执行大量工作。  此处的关键点是 JS 堆结束时间高于它 (开始"，即强制垃圾回收之后) 。  在现实世界中，如果你看到这种增加 JS 堆大小或节点大小的模式，它可能会定义内存泄漏。
+现在，代码分析与上图比较。  如果查看绿色图形 (节点) ，它将与代码完全匹配。  节点计数在离散步骤中增加。  您可能认为每次增加的节点数都是对 的调用 `grow()` 。  使用蓝色图形 (JS 堆图) 并不简单。  为了与最佳做法保持一样，第一个双头效果实际上是强制垃圾回收 (选择"收集  **垃圾** ![ 强制垃圾回收" ](../media/collect-garbage-icon.msft.png) 按钮) 。  在记录进行时，将显示 JS 堆大小峰值。  这是自然且预期的：JavaScript 代码将在你选择的每一个按钮上创建 DOM 节点，并创建一百万个字符的字符串时执行大量工作。  此处的关键点是 JS 堆结束时间高于它 (开始"，即强制垃圾回收之后) 。  在现实世界中，如果你看到这种增加 JS 堆大小或节点大小的模式，它可能会定义内存泄漏。
 
 <!--todo: the Heap snapshots and Profiles panel are not found in Edge  -->
 
@@ -197,7 +197,7 @@ document.getElementById('grow').addEventListener('click', grow);
 
 每次推送代码中引用的按钮时，都会向数组中添加一个包含一百万个字符 `x` 的字符串。
 
-若要在时间线上记录分配检测，请打开 DevTools，导航到内存面板，选择**** 时间线上的分配检测单选按钮，选择**** 开始按钮，执行你认为导致内存泄漏的操作，然后在完成后选择停止**录制**堆配置文件停止录制**** ![ ][ImageStopRecordingIcon] 按钮。
+若要在时间线上记录分配检测，请打开 DevTools，导航到内存面板，选择**** 时间线上的分配检测单选按钮，选择**** 开始按钮，执行你认为导致内存泄漏的操作，然后在完成后选择停止**录制**堆配置文件录制**** ![ ](../media/stop-recording-icon.msft.png) 按钮。
 
 在录制时，请注意时间线上的 Allocation instrumentation 上是否显示任何蓝色条，如下图所示。
 
@@ -244,30 +244,18 @@ DevTools 显示按功能细分的内存分配。  默认视图为 **"高 (从 **
 
 如果页面似乎频繁暂停，则可能有垃圾回收问题。
 
-您可以使用浏览器任务管理器或性能Microsoft Edge记录来发现频繁垃圾回收。  在浏览器Microsoft Edge管理器中，经常出现和下降**的内存**或**JavaScript 内存**值表示频繁的垃圾回收。  在性能记录中， (JS 堆或节点) 频繁出现的变化指示频繁进行垃圾回收。
+您可以使用浏览器任务管理器或性能Microsoft Edge记录来发现频繁垃圾回收。  在浏览器Microsoft Edge管理器中，经常出现和下降**的内存**或**JavaScript 内存**值表示频繁垃圾回收。  在性能记录中， (JS 堆或节点计数) 频繁进行垃圾回收。
 
 确定问题后，可以在时间线记录上使用 **Allocation instrumentation** 来查明内存的分配位置以及导致分配的函数。
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsEvaluatePerformanceReferenceRecord]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#record-performance "记录性能 - 性能分析参考"
-<!-- image links -->
-[ImageForceGarbageCollectionIcon]: ../media/collect-garbage-icon.msft.png
-[ImageStopRecordingIcon]: ../media/stop-recording-icon.msft.png
-
 <!--[RAIL]: /profile/evaluate-performance/rail  -->
 <!--[recording]: /profile/evaluate-performance/timeline-tool#make-a-recording ""  -->
-
 <!--[hngd]: https://jsfiddle.net/kaycebasques/tmtbw8ef/  -->
 
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/memory-problems/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/memory-problems/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

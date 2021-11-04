@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 224c5c17a02a77f461b349131c41fde8ff82ebae
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 40177689831bb6a53514041f40cf09b92ca1c6f8
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141682"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155771"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -35,7 +35,7 @@ ms.locfileid: "12141682"
 
 *   使用 source 地图 将缩小代码映射到源代码。  然后，您能够读取和调试原始源中的已编译代码。
 *   只能使用能够生成源处理器的预处理器地图。
-*   验证 Web 服务器能否为源服务器地图。
+*   验证 Web 服务器能否为源地图。
 
 <!--todo: add link to preprocessors capable of producing Source Maps when section is available -->
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->
@@ -53,16 +53,16 @@ ms.locfileid: "12141682"
 <!-- ====================================================================== -->
 ## <a name="use-a-supported-preprocessor"></a>使用受支持的预处理器
 
-使用能够创建源地图的微型程序。  <!--For the most popular options, navigate to preprocessor support section.  -->  对于扩展视图，导航到源 [地图：语言、工具和其他信息][GitHubWikiSourceMapsLanguagesTools] Wiki 页面。
+使用能够创建源地图的微型程序。  <!--For the most popular options, navigate to preprocessor support section.  -->  对于扩展视图，导航到源 [地图：语言、工具和其他信息](https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info) Wiki 页面。
 
 <!--todo: add link to display the preprocessor support section when section is available -->
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->
 
-通常将以下类型的预处理器与 Source 地图：
+以下类型的预处理器通常与 Source 地图：
 
-*   Transpilers [ (，Traceur][BabelJS]) [][GitHubWikiGoogleTraceurCompiler]
-*   编译器 ([关闭编译器][GitHubGoogleClosureCompiler][、TypeScript、CoffeeScript][|::ref1::|Main]和[][|::ref2::|Main] [) ][DartMain]
-*   [UglifyJS][GitHubMishooUglifyJS] (微型) 
+*   Transpilers [ (，Traceur](https://babeljs.io)) [](https://github.com/google/traceur-compiler/wiki/Getting-Started)
+*   编译器 ([关闭编译器](https://github.com/google/closure-compiler)、TypeScript、CoffeeScript、) [](https://coffeescript.org) [](https://www.typescriptlang.org) [](https://www.dartlang.org)
+*   [UglifyJS](https://github.com/mishoo/UglifyJS) (微型) 
 
 
 <!-- ====================================================================== -->
@@ -70,11 +70,11 @@ ms.locfileid: "12141682"
 
 来自地图的源文件会导致 DevTools 加载原始文件以及缩小的文件。  然后，使用原始文件设置断点并逐步执行代码。  同时，Microsoft Edge运行缩小代码。  通过运行代码，你可以错觉运行生产中的开发网站。
 
-在 DevTools 地图源客户端时，应该会注意到 JavaScript 未编译，并且它引用的所有单个 JavaScript 文件都显示出来。  DevTools 地图源映射使用的是源映射，但基础功能实际上运行已编译的代码。  任何错误、日志和断点都映射到开发人员代码，以便进行出色的调试。  实际上，它让你产生一种在生产中运行开发网站的错觉。
+在 DevTools 地图源版本时，应该注意到 JavaScript 未编译，并且它引用的所有单个 JavaScript 文件都显示出来。  DevTools 地图源映射使用的是源映射，但基础功能实际上运行已编译的代码。  任何错误、日志和断点都映射到开发人员代码，以便进行出色的调试。  实际上，它让你产生一种在生产中运行开发网站的错觉。
 
 ### <a name="enable-source-maps-in-settings"></a>在设置地图源源
 
-源地图默认启用<!-- (as of Microsoft Edge 39)-->，但如果您想要仔细检查或启用它们;First open DevTools， choose **Customize and control DevTools** () > `...` **设置**.  在首选项**窗格的****源下，** 启用**JavaScript 源地图。**  您还可以启用启用 CSS**源地图。**
+源地图默认启用<!-- (as of Microsoft Edge 39)-->，但如果您想要仔细检查或启用它们;First open DevTools， choose **Customize and control DevTools** () > `...` **设置**.  在首选项**窗格的****源下**，打开启用**JavaScript 源地图。**  您还可以启用启用 CSS**源地图。**
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="启用源地图" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
    **启用 JavaScript 源地图**
@@ -104,7 +104,7 @@ ms.locfileid: "12141682"
 
 导航到以下页面。
 
-*   [演示][CssNinjaDemoSourceMapping]
+*   [演示](https://www.thecssninja.com/demo/source_mapping/compile.html)
 
 完成以下操作。
 
@@ -121,36 +121,8 @@ ms.locfileid: "12141682"
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[BabelJS]: https://babeljs.io "一个 JavaScript 编译器"
-
-[CoffeeScriptMain]: https://coffeescript.org "CoffeeScript"
-
-[CssNinjaDemoSourceMapping]: https://www.thecssninja.com/demo/source_mapping/compile.html "//# sourceURL eval 命名的简单示例"
-
-[DartMain]: https://www.dartlang.org "英语（英语）"
-
-[GitHubGoogleClosureCompiler]: https://github.com/google/closure-compiler "google/closure-compiler |GitHub"
-
-[GitHubMishooUglifyJS]: https://github.com/mishoo/UglifyJS "mishoo/UglifyJS |GitHub"
-
-[GitHubWikiSourceMapsLanguagesTools]: https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info "源地图：语言、工具和其他|GitHub Wiki"
-
-[GitHubWikiGoogleTraceurCompiler]: https://github.com/google/traceur-compiler/wiki/Getting-Started "入门 - google/traceur-compiler |GitHub Wiki"
-
-[TypeScriptMain]: https://www.typescriptlang.org "TypeScript"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)由[Meggin Kearney][MegginKearney] (Technical Writer) 和 Paul [Bakaus][PaulBakaus] (Open Web Developer Advocate、Google：Tools、Performance、Animation 和 UX) 创作。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)由[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和 Paul [Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Open Web Developer Advocate、Google：Tools、Performance、Animation 和 UX) 创作。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
-[PaulBakaus]: https://developers.google.com/web/resources/contributors#paul-bakaus
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

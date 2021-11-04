@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: e82e25b060ebae11b74323e65ddde252d6e50b5b
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 7bb5eb3035ce23dc4fce934bc5866fdf34584b2f
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141906"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155484"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -37,13 +37,13 @@ ms.locfileid: "12141906"
 
 *   在本机 Android 应用中打开 Android WebView 调试;在 DevTools Microsoft Edge Android WebViews。
 *   若要显示启用调试的 Android WebView 列表，请导航到 `edge://inspect` 。
-*   使用通过远程调试调试网页的相同方式调试 Android [WebView。][RemoteDebuggingGettingStarted]
+*   使用通过远程调试调试网页的相同方式调试 Android [WebView。](./index.md)
 
 
 <!-- ====================================================================== -->
 ## <a name="configure-android-webviews-to-debug"></a>将 Android WebViews 配置为调试
 
-必须在你的应用中打开 Android WebView 调试。  若要启用 Android WebView 调试，请对类运行 [setWebContentsDebuggingEnabled][AndroidDeveloperWebViewsSetWebContentsDebuggingEnabled] `WebView` 静态方法。
+必须在你的应用中打开 Android WebView 调试。  若要启用 Android WebView 调试，请对类运行 [setWebContentsDebuggingEnabled](https://developer.android.com/reference/android/webkit/WebView.html#setWebContentsDebuggingEnabled(boolean)) `WebView` 静态方法。
 
 ```java
 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -90,21 +90,8 @@ The gray graphics listed with the Android WebView represent its size and positio
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[RemoteDebuggingGettingStarted]: ./index.md "入门远程调试 Android 设备|Microsoft Docs"
-<!-- external links -->
-[AndroidDeveloperWebViewsSetWebContentsDebuggingEnabled]: https://developer.android.com/reference/android/webkit/WebView.html#setWebContentsDebuggingEnabled(boolean) "setWebContentsDebuggingEnabled - WebView |Android 开发人员"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) 由技术撰稿人 [Meggin Kearney][MegginKearney] (创作) 。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](http://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) 由技术撰稿人 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (创作) 。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](http://creativecommons.org/licenses/by/4.0)获得许可。

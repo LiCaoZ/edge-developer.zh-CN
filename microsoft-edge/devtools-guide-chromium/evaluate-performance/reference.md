@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: b4858ea6f7e0eeaddb7150e0b7774c936c7e653e
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 1471f4fb4fe1f8438dd0423a4a0e300acb32e49b
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141920"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156681"
 ---
 <!-- Copyright Kayce Basques
 
@@ -31,7 +31,7 @@ ms.locfileid: "12141920"
 
 本页是与分析性能相关 Microsoft Edge DevTools 功能的综合参考。
 
-导航到 [“分析运行时性能入门”][DevtoolsEvaluatePerformanceGettingStarted]，以获得关于如何使用 [Microsoft Edge DevTools][MicrosoftEdgeDevTools] 分析页面性能的指导教程。
+导航到 [“分析运行时性能入门”](./index.md)，以获得关于如何使用 [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) 分析页面性能的指导教程。
 
 
 <!-- ====================================================================== -->
@@ -253,7 +253,7 @@ DevTools 为脚本随机分配颜色。  在上图中，请求来自脚本的函
 *   当想按照记录期间发生的顺序查看活动时，请使用 [“事件日志”](#the-event-log-panel) 面板。
 
 > [!NOTE]
-> 接下来的三个部分均指向相同的演示。  在 [“活动选项卡演示”][ActivityTabsDemo] 中自己运行演示。
+> 接下来的三个部分均指向相同的演示。  在 [“活动选项卡演示”](https://microsoft-edge-chromium-devtools.glitch.me/perf/activitytabs.html) 中自己运行演示。
 
 #### <a name="root-activities"></a>根活动
 
@@ -495,7 +495,7 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
 若要移动图表:
 
 *   选择 **"平移** (![ 平移模式) 沿 X 和 ](../media/pan-mode-icon.msft.png) Y 轴移动。
-*   选择 **旋转模式** (![ 旋转 ](../media/rotate-mode-icon.msft.png)) 沿 Z 轴旋转。
+*   选择 **旋转模式** (![ 旋转 ](../media/rotate-mode-icon.msft.png)) 旋转模式以沿 Z 轴旋转。
 *   Choose **Reset Transform (** Reset Transform) to reset the diagram to the original ![ ](../media/reset-transform-icon.msft.png) position.
 
 ### <a name="view-paint-profiler"></a>查看绘图探查器
@@ -517,7 +517,7 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
 
 若要打开 **“渲染”** 工具:
 
-1.  [打开“命令”菜单][DevToolsCommandMenu]。
+1.  [打开“命令”菜单](../command-menu/index.md#open-the-command-menu)。
 1.  开始键入 `Rendering` 并选择 `Show Rendering`。  DevTools 会在 DevTools 窗口的底部显示**渲染**工具。
 
     :::image type="complex" source="../media/evaluate-performance-console-drawer-rendering.msft.png" alt-text="渲染工具" lightbox="../media/evaluate-performance-console-drawer-rendering.msft.png":::
@@ -561,7 +561,7 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
        **图层边框**
     :::image-end:::
 
-导航到 [debug_colors.cc][DebugColors] 中的批注，了解颜色编码的说明。
+导航到 [debug_colors.cc](https://cs.chromium.org/chromium/src/cc/debug/debug_colors.cc) 中的批注，了解颜色编码的说明。
 
 ### <a name="find-scroll-performance-issues-in-realtime"></a>实时查找滚动性能问题
 
@@ -579,22 +579,8 @@ DevTools 概述了茶色中潜在的问题元素。
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge开发人员工具|Microsoft Docs"
-[DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"
-[DevtoolsEvaluatePerformanceGettingStarted]: ./index.md "开始分析运行时性能 | Microsoft Docs"
-
-[ActivityTabsDemo]: https://microsoft-edge-chromium-devtools.glitch.me/perf/activitytabs.html "活动选项卡演示 | 故障"
-
-[DebugColors]: https://cs.chromium.org/chromium/src/cc/debug/debug_colors.cc "debug_colors.cc - 代码搜索"
-
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

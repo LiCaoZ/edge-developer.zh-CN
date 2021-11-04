@@ -7,16 +7,16 @@ ms.date: 08/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， vs code， visual studio code， webhint
-ms.openlocfilehash: c3cfe40b86ba36025b5f883078f546531b3e68c4
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 5cd40a4c9c7a7b91893853064bd8fc56d98e34f9
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139547"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156996"
 ---
 # <a name="the-webhint-extension-for-visual-studio-code"></a>webhint 扩展Visual Studio Code
 
-使用[Webhint（][WebhintMain]一个可自定义的 Lint 工具）可改进网站的辅助功能、性能、跨浏览器PWA兼容性和安全性。  它会检查代码的最佳实践和常见错误。 此开放源代码项目最初由 Microsoft Edge 开发，现在是[OpenJS Foundation 的一部分][OpenjsFoundation]。  Microsoft Edge团队将继续与社区中的 Web 开发人员一起为 webhint 做贡献。
+使用[Webhint（](https://webhint.io)一种可自定义的 Lint 工具）可改进网站的辅助功能、性能、跨浏览器PWA兼容性和安全性。  它会检查代码的最佳实践和常见错误。 此开放源代码项目最初由 Microsoft Edge 开发，现在是[OpenJS Foundation 的一部分](https://openjsf.org)。  Microsoft Edge团队将继续与社区中的 Web 开发人员一起为 webhint 做贡献。
 
 通过添加 webhint 扩展以识别并修复 HTML、CSS、JavaScript、TypeScript 等中的问题Visual Studio Code。  提示显示为内联下划线，并汇总在"问题 **"** 窗格中。
 
@@ -28,13 +28,13 @@ ms.locfileid: "12139547"
 <!-- ====================================================================== -->
 ## <a name="installing-webhint"></a>安装 Webhint
 
-若要从 webhint 安装 webhint 扩展Visual Studio Code，请导航到[webhint extension for Visual Studio Code](index.md#the-webhint-extension-for-visual-studio-code)。 <!-- in the article _Visual Studio Code overview_. -->  或者，你可以从 Visual Studio Code Marketplace 安装[webhint][VisualstudioMarketplaceWebhint] Visual Studio扩展。
+若要从 webhint 安装 webhint 扩展Visual Studio Code，请导航到[webhint extension for Visual Studio Code](index.md#the-webhint-extension-for-visual-studio-code)。 <!-- in the article _Visual Studio Code overview_. -->  或者，也可以安装[Webhint 扩展，Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint)应用商店Visual Studio Webhint。
 
 
 <!-- ====================================================================== -->
 ## <a name="configuring-webhint-in-visual-studio-code"></a>在网站中配置 webhint Visual Studio Code
 
-此扩展使用默认配置[json][GithubWebhintioIndexjson]文件，用于激活 HTML、CSS、模板系统 (JSX/TSX、Angular 等) 、JavaScript/TypeScript 等的提示和分析程序。
+此扩展使用默认配置[json](https://github.com/webhintio/hint/blob/master/packages/configuration-development/index.json)文件，该文件可激活 HTML、CSS、模板化系统 (JSX/TSX、Angular 等) 、JavaScript/TypeScript 等的提示和分析程序。
 
 ```json
 {
@@ -86,37 +86,19 @@ ms.locfileid: "12139547"
 }
 ```
 
-如果你希望对激活的提示和分析程序进行更多控制，请创建一个本地 `.hintrc` 文件来配置 Webhint。  有关特定提示输出的帮助，请导航到 [Webhint 用户指南][WebhintDocsUserguideConfiguringSummary]。
+如果你希望对激活的提示和分析程序进行更多控制，请创建一个本地 `.hintrc` 文件来配置 Webhint。  有关特定提示输出的帮助，请导航到 [Webhint 用户指南](https://webhint.io/docs/user-guide/configuring-webhint/summary)。
 
 
 <!-- ====================================================================== -->
 ## <a name="getting-in-touch-with-the-webhint-team"></a>与 Webhint 团队联系
 
-通过向[Webhintio/hint 存储库提交问题来发送][GithubWebhintio]反馈。 [][GithubWebhintioIssuesNew]
+通过向[Webhintio/hint 存储库提交问题来发送](https://github.com/webhintio/hint)反馈。 [](https://github.com/webhintio/hint/issues/new)
 
-若要参与扩展，请 [导航到存储库][GithubWebhintioExtensionVscodeContributing] 的"参与 `webhintio/hint` "。
+若要参与扩展，请 [导航到存储库](https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md) 的"参与 `webhintio/hint` "。
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [辅助功能][AccessibilityIndex]
-*  [Visual Studio Code][VisualstudiocodeIndex]
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[AccessibilityIndex]: /microsoft-edge/accessibility "辅助功能|Microsoft Docs"
-[VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Visual Studio Code |Microsoft Docs"
-<!-- external links -->
-[GithubWebhintio]: https://github.com/webhintio/hint "webhint |GitHub"
-[GithubWebhintioExtensionVscodeContributing]: https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md "参与 - webhint |GitHub"
-[GithubWebhintioIndexjson]: https://github.com/webhintio/hint/blob/master/packages/configuration-development/index.json "index.json - webhintio/hint |GitHub"
-[GithubWebhintioIssuesNew]: https://github.com/webhintio/hint/issues/new "新问题 - webhintio/hint |GitHub"
-
-[VisualstudioMarketplaceWebhint]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint |Visual StudioMarketplace"
-
-[OpenjsFoundation]: https://openjsf.org "OpenJS Foundation"
-
-[WebhintDocsUserguideConfiguringSummary]: https://webhint.io/docs/user-guide/configuring-webhint/summary "配置 Webhint |webhint 文档"
-[WebhintMain]: https://webhint.io "webhint"
+*  [辅助功能](/microsoft-edge/accessibility)
+*  [Visual Studio Code](/microsoft-edge/visual-studio-code/index)

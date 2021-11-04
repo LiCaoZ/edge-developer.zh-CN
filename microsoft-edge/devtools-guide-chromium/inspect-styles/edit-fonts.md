@@ -9,12 +9,12 @@ ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
 no-loc:
 - Enable new font editor tool within the Styles pane
-ms.openlocfilehash: d1699ee1343424df7d3418b8dcfaefab34a1f17e
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 4c39213411d518662b37d230df7ed1507f637b1e
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141227"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156576"
 ---
 # <a name="edit-css-font-styles-and-settings-in-the-styles-pane"></a>在“样式”窗格中编辑 CSS 字体样式和设置
 
@@ -26,7 +26,7 @@ ms.locfileid: "12141227"
 
 为了在使用版式时更加轻松，可视“**字体编辑器**”现在位于“**样式**”窗格中。  你可以更改字体设置，更改会立即呈现在浏览器中。  所有这些内容都无需深入了解 CSS。
 
-当前，**Enable new font editor tool within the Styles pane** 功能处于试验阶段，你需要[为 Microsoft Edge 开发人员工具启用它][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]。
+当前，**Enable new font editor tool within the Styles pane** 功能处于试验阶段，你需要[为 Microsoft Edge 开发人员工具启用它](../experimental-features/index.md#turning-on-experimental-features)。
 
 “**样式**”窗格中的任何 CSS（字体定义或内嵌样式）都会自动显示一个图标，用于打开可视“**字体编辑器**”。  若要打开可视“**字体编辑器**”，请选择“**字体编辑器**”图标。
 
@@ -107,10 +107,3 @@ ms.locfileid: "12141227"
 :::image type="complex" source="../media/font-editor-preset-font-sizes.msft.png" alt-text="打开预设关键字界面" lightbox="../media/font-editor-preset-font-sizes.msft.png":::
    打开预设关键字界面
 :::image-end:::
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsIndex]: ../index.md "Microsoft Edge开发人员工具|Microsoft Docs"
-[DevtoolsExperimentalFeaturesIndex]: ../experimental-features/index.md "试验功能 | Microsoft Docs"
-[DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../experimental-features/index.md#turning-on-experimental-features "打开试验功能 - 试验功能 | Microsoft Docs"

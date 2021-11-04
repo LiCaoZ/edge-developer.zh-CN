@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 89f6b0a2b823926f4a02fee1134084ddb0881798
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 399fdf07194bf465fa335d85f7b3c9a23530a6ff
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139414"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155624"
 ---
 <!-- Copyright Kayce Basques
 
@@ -45,7 +45,7 @@ ms.locfileid: "12139414"
 
 *   使用清单 **窗格** 检查 Web 应用清单并触发"添加到主屏幕"事件。
 *   使用"**** 服务工作线程"窗格执行与服务工作者相关的所有任务，例如注销或更新服务、模拟推送事件、脱机或停止服务工作线程。
-*   从"缓存"窗格查看服务**工作存储**缓存。
+*   从"缓存"窗格查看服务**存储**缓存。
 *   从"清除存储"窗格中选择一个按钮，注销服务工作器并清除所有 **存储和** 缓存。
 
 
@@ -117,7 +117,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 :::image-end:::
 
 *   如果将服务工作器安装到当前打开的页面，则它将在此窗格中列出。  例如，在上图中，为 作用域安装了一个服务工作器 `https://weather-pwa-sample.firebaseapp.com` 。
-*   " **脱机** "复选框将 DevTools 置于脱机模式。  这等效于"网络"工具中提供的脱机**** 模式，或命令 `Go offline` 菜单中[的选项][DevtoolsCommandMenuIndex]。
+*   " **脱机** "复选框将 DevTools 置于脱机模式。  这等效于"网络"工具中提供的脱机**** 模式，或命令 `Go offline` 菜单中[的选项](../command-menu/index.md)。
 *   " **重新加载时更新** "复选框强制服务工作者每次加载页面时进行更新。
 *   " **绕过网络"** 复选框将绕过服务工作线程，并强制浏览器转到所请求资源的网络。
 *   " **更新** "按钮将执行指定服务工作者的一次更新。
@@ -125,8 +125,8 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 *   " **同步** "按钮模拟后台同步事件。
 *   " **注销"** 按钮将取消注册指定的服务工作器。  请查看清除 [存储](#clear-storage) ，了解通过单个按钮选择取消注册服务工作器以及擦除存储和缓存的方法。
 *   Source **** 行将告知您当前正在运行的服务工作线程的安装时间。  链接是服务工作者的源文件的名称。  选择链接将你发送到服务工作者的源。
-*   " **状态** "行将告知您服务工作者的状态。  上图中绿色状态指示器旁边的 ID (表示) 当前活动的服务工作 `#36` 线程的 ID 号。  在状态旁边，如果停止**** 服务工作 (，则会显示"开始"按钮) 如果服务工作进程正在运行 (将显示**** 一个停止) 按钮。  服务工作者设计为随时由浏览器停止和启动。  使用停止按钮显式停止服务 **工作器** 可能会模拟这一点。  停止服务工作进程是测试服务工作线程再次启动备份时代码行为方式的一种好方法。  它经常显示错误，因为对永久性全局状态的错误假设。
-*   **"客户端**"行将告知您服务工作线程的作用域。  当 **启用** "全部显示"复选框时，焦点 **按钮最** 有用。  启用该复选框后，将列出所有注册的服务工作者。  如果选择其他选项卡中运行**** 的服务工作线程旁边的焦点按钮，Microsoft Edge焦点位于该选项卡上。
+*   " **状态** "行将告知您服务工作者的状态。  上图中绿色状态指示器旁边的 ID (表示) 当前活动的服务工作 `#36` 线程的 ID 号。  在状态旁边，如果服务**** 工作 (停止，则启动按钮) 如果服务工作进程正在运行 (将显示一个停止****) 按钮。  服务工作者设计为随时由浏览器停止和启动。  使用停止按钮显式停止服务 **工作器** 可能会模拟这一点。  停止服务工作进程是测试服务工作线程再次启动备份时代码行为方式的一种好方法。  它经常显示错误，因为对永久性全局状态的错误假设。
+*   **"客户端**"行将告知您服务工作线程的作用域。  当 **启用** "全部显示"复选框时，焦点 **按钮最** 有用。  启用该复选框后，将列出所有注册的服务工作者。  如果选择其他选项卡中运行**** 的服务工作线程旁边的"焦点"按钮，Microsoft Edge焦点位于该选项卡上。
 
 如果服务工作线程导致任何错误，将显示名为 **"错误"** 的新标签。
 
@@ -143,7 +143,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!-- ====================================================================== -->
 ## <a name="service-worker-caches"></a>服务工作线程缓存
 
-"**缓存存储**窗格提供已使用缓存 API 的缓存服务工作 (缓存) [列表][MDNWebCacheAPI]。
+"**缓存存储**窗格提供已使用缓存 API 的缓存服务工作 (缓存) [列表](https://developer.mozilla.org/docs/Web/API/Cache)。
 
 :::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="缓存存储窗格" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
    缓存**存储**窗格
@@ -162,20 +162,20 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!-- ====================================================================== -->
 ## <a name="quota-usage"></a>配额使用情况
 
-"缓存 **"窗格存储**某些响应可能标记为"不透明"。  这是指未启用[CORS][FetchHttpCorsProtocol] **时**从不同源（如CDN或远程 API）检索的响应。
+"缓存"窗格**存储**响应可能标记为"不透明"。  这是指未启用[CORS](https://fetch.spec.whatwg.org/#http-cors-protocol) **时**从不同源（如CDN或远程 API）检索的响应。
 
 <!--TODO:  Link Web "CDN" section when available. -->
 <!--TODO:  Link Web "opaque" section when available. -->
 
-为了避免跨域信息泄露，向用于计算存储配额限制的不透明响应的大小添加大量填充 (例如是否引发异常) API 报告。 `QuotaExceeded` `navigator.storage`
+为了避免跨域信息泄露，向用于计算存储配额限制的不透明响应大小添加大量填充 (例如是否引发异常) API 报告。 `QuotaExceeded` `navigator.storage`
 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 
-此填充的详细信息因浏览器而异，但对于 Microsoft Edge，这意味着任何单个缓存的不透明响应对整体存储使用率**** 的影响最小大小约为[7 MB。][ChromiumIssues796060#c17]  在确定要缓存的不透明响应数时，请记住填充，因为根据不透明资源的实际大小，你很容易超过存储配额限制，这要快得多。
+此填充的详细信息因浏览器而异，但对于 Microsoft Edge，这意味着任何单个缓存的不透明响应对整体存储使用率**** 的影响最小大小约为[7 MB。](https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17)  在确定要缓存的不透明响应数时，请记住填充，因为根据不透明资源的实际大小，你很容易超过存储配额限制，这要快得多。
 
 相关指南：
 
-*   [堆栈溢出：对不透明响应应用哪些限制？][StackOverflowLimitationsForOpaqueResponses]
+*   [堆栈溢出：对不透明响应应用哪些限制？](https://stackoverflow.com/q/39109789/385997)
 <!--*   [Alphabet work container: Understanding Storage Quota](/web/tools/Alphabet-work-container/guides/storage-quota#beware_of_opaque_responses)  -->
 
 <!--TODO:  Link Work container storage quota for opaque responses section when available. -->
@@ -203,17 +203,6 @@ Related Guides:
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"
-<!-- external links -->
-[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium问题 796060：存储代码位于 html 中时，缓存值每次刷新时增加"
-
-[FetchHttpCorsProtocol]: https://fetch.spec.whatwg.org/#http-cors-protocol
-
-[MDNWebCacheAPI]: https://developer.mozilla.org/docs/Web/API/Cache "缓存 - Web API |MDN"
-
-[StackOverflowLimitationsForOpaqueResponses]: https://stackoverflow.com/q/39109789/385997 "堆栈溢出：对不透明响应应用哪些限制？"
-
 <!--[WebEstimatingAvailableStorageSpace]: whats-new/2017/08/estimating-available-storage-space  -->
 <!--[RemoteDebugging]: /debug/remote-debugging/remote-debugging  -->
 
@@ -224,12 +213,7 @@ Related Guides:
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

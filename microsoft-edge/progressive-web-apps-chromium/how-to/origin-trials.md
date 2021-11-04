@@ -1,21 +1,21 @@
 ---
-title: 实验功能和来源试用
-description: 了解如何在 PWA测试实验性网站Microsoft Edge并注册站点源试用版，以便与用户一起在生产中使用这些功能。
+title: 实验性功能和源试用版
+description: 了解如何在 PWA测试实验Microsoft Edge并注册站点源试用版，以便与用户一起在生产中使用这些功能。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进 Web 应用， PWA， Microsoft Edge， 实验， 源试用版
-ms.openlocfilehash: fb72f0ebdd35c308c1d88714cf7b7f41ba015e17
-ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
+keywords: 渐进式 Web 应用， PWA， Microsoft Edge， 实验， 源试用版
+ms.openlocfilehash: a593bb41ed312097379598533ebdc36dc95f33a2
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "12087089"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155918"
 ---
-# <a name="experimental-features-and-origin-trials"></a>实验功能和来源试用
+# <a name="experimental-features-and-origin-trials"></a>实验性功能和源试用版
 
 PWA中的某些Microsoft Edge仍处于实验阶段。 实验功能可通过两种方式使用：
 
@@ -41,7 +41,7 @@ PWA中的某些Microsoft Edge仍处于实验阶段。 实验功能可通过两�
 
 Microsoft Edge有时使用源试用版来测试特定域或网站的功能。 你可能想要对网站使用源试用版来应用特定功能。 如果你是网站所有者，你可以注册源试用版。 源试用版向访问你的Microsoft Edge的用户提供一定比例的功能。
 
-有关源试用版详细信息，请参阅Microsoft Edge[源试用版开发人员控制台][MicrosoftDeveloperMicrosoftEdgeOriginTrials]。
+有关源试用版详细信息，请参阅Microsoft Edge[源试用版开发人员控制台](https://developer.microsoft.com/microsoft-edge/origin-trials)。
 
 
 <!-- ====================================================================== -->
@@ -51,15 +51,9 @@ Microsoft Edge有时使用源试用版来测试特定域或网站的功能。 �
 
 | 功能 | 平台 |
 |:--- |:--- |
-| [URI 协议处理][FeatureProtocolHandling] | Windows 和 Linux |
-| [URL 链接处理][FeatureUrlHandling] | Windows |
-| [适用于桌面应用的窗口控件覆盖层][FeatureWindowControlsOverlay] | 全部 |
-| [文件处理][FeatureFileHandling] | 所有桌面 |
+| [URI 协议处理](./handle-protocols.md) | Windows 和 Linux |
+| [URL 链接处理](./handle-urls.md) | Windows |
+| [适用于桌面应用的窗口控件覆盖层](./window-controls-overlay.md) | 全部 |
+| [文件处理](./handle-files.md) | 所有桌面 |
 
 <!-- Links -->
-
-[MicrosoftDeveloperMicrosoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "源试用版|Microsoft Edge开发人员"
-[FeatureWindowControlsOverlay]: ./window-controls-overlay.md "显示标题栏中的内容|Microsoft Docs"
-[FeatureUrlHandling]: ./handle-urls.md "处理渐进式 Web 应用应用程序中|Microsoft Docs"
-[FeatureProtocolHandling]: ./handle-protocols.md "在渐进式 Web 应用应用程序中处理|Microsoft Docs"
-[FeatureFileHandling]: ./handle-files.md "在渐进式 Web 应用应用程序中处理|Microsoft Docs"

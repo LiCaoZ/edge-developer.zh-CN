@@ -7,12 +7,12 @@ ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 96730f8ad0775c1d508aa3f67f1b2ad0206831d1
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: ab782f6f00ad56d89c42aa2520d2a4f3ee0b369a
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140821"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156807"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -38,14 +38,14 @@ ms.locfileid: "12140821"
 <!--  Title: Get code hints in Elements tool  -->
 <!--  Subtitle: Wavy underlines like the ones you see in Visual Studio Code now display in the Elements tool.  Underlines alert you to code issues related to accessibility, compatibility, security, performance, and  so on.  -->
 
-在大多数新式 IDE 中，文本下的波浪下划线指示语法错误。   在 Microsoft Edge 版本 91 或更高版本中，波浪下划线显示在 **元素** 工具的 **DOM** 视图中的 HTML 下。  波浪下划线指示与辅助功能、兼容性、性能等相关的代码问题和建议。  有关如何查看和编辑问题的详细信息，请导航到 [使用问题工具查找和解决问题][DevtoolsIssuesIndex]。
+在大多数新式 IDE 中，文本下的波浪下划线指示语法错误。   在 Microsoft Edge 版本 91 或更高版本中，波浪下划线显示在 **元素** 工具的 **DOM** 视图中的 HTML 下。  波浪下划线指示与辅助功能、兼容性、性能等相关的代码问题和建议。  有关如何查看和编辑问题的详细信息，请导航到 [使用问题工具查找和解决问题](../../../issues/index.md)。
 
 要打开 **问题** 工具并详细了解问题及其修复方法，请完成以下操作之一。
 
 *   选择并按住“`Shift`”，然后选择任何波浪下划线。
 *   完成以下操作。
     1.  将鼠标悬停在任何波浪下划线上。
-    1.  打开上下文菜单 (右键单击") "。
+    1.  打开上下文菜单（右键单击）。
     1.  选择“**在问题中显示**”。
 
 :::row:::
@@ -71,10 +71,10 @@ ms.locfileid: "12140821"
 DevTools 工具提示功能可帮助你了解 DevTools 中所有不同的工具和窗格。  要关闭工具提示，请选择“`Esc`”。  要打开工具提示，请完成以下操作之一。
 
 *   选择 `Ctrl` + `Shift` + `H` (Windows/Linux) 或 `Cmd` + `Shift` + `H` (macOS) 。
-*   [打开命令菜单][DevtoolsCommandMenuIndexOpenCommandMenu]，然后键入 `tooltips`。
+*   [打开命令菜单](../../../command-menu/index.md#open-the-command-menu)，然后键入 `tooltips`。
 *   Choose **Customize and control DevTools** () > `...` **Help**Toggle  >  **the DevTools Tooltips**.
 
-此外，如果你打开焦点模式和[DevTools][DevtoolsWhatsNew202102DevtoolsGroupToolsTogetherInFocusMode]工具提示实验，还可以选择活动栏底部的切换**DevTools**工具提示 () 按钮 `?` 。 ****
+此外，如果你打开焦点模式和[DevTools](../02/devtools.md#group-tools-together-in-focus-mode)工具提示实验，还可以选择活动栏底部的切换**DevTools**工具提示 () 按钮 `?` 。 ****
 
 要显示有关如何使用 DevTools 的详细信息，请打开工具提示，然后将鼠标悬停在 DevTools 的每个轮廓区域上。
 
@@ -86,7 +86,7 @@ DevTools 工具提示功能可帮助你了解 DevTools 中所有不同的工具�
 <!-- ====================================================================== -->
 ## <a name="service-worker-update-timeline"></a>服务工作进程更新日程表
 
-<!--todo:  Update the linked [Service Worker improvements][DevtoolsServiceWorkerIndex] article.  -->
+<!--todo:  Update the linked [Service Worker improvements](../../../service-workers/index.md) article.  -->
 
 <!--  Title: The tasks associated with your Service Worker  -->
 <!--  Subtitle: Debug with Service Worker Update Cycle  -->
@@ -101,7 +101,7 @@ DevTools 工具提示功能可帮助你了解 DevTools 中所有不同的工具�
    查看服务工作进程 **更新周期** 中的 **日程表**
 :::image-end:::
 
-有关服务工作进程生命周期的详细信息，请导航到 [服务工作进程生命周期][ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]。  有关 DevTools 中渐进式 Web 应用和服务工作进程调试工具的详细信息，请导航到 [服务工作进程改进][DevtoolsServiceWorkerIndex]。  要在 Chromium 开源项目中查看此功能的实时更新，请导航至问题 [1066604][CR1066604]。
+有关服务工作进程生命周期的详细信息，请导航到 [服务工作进程生命周期](../../../../progressive-web-apps-chromium/how-to/service-workers.md#the-service-worker-lifecycle)。  有关 DevTools 中渐进式 Web 应用和服务工作进程调试工具的详细信息，请导航到 [服务工作进程改进](../../../service-workers/index.md)。  要在 Chromium 开源项目中查看此功能的实时更新，请导航至问题 [1066604](https://crbug.com/1066604)。
 
 
 <!-- ====================================================================== -->
@@ -110,7 +110,7 @@ DevTools 工具提示功能可帮助你了解 DevTools 中所有不同的工具�
 <!--  Title: Non-square icons in app manifest no longer produce warnings  -->
 <!--  Subtitle: As long as square icons are included in the app manifest, non-square icons no longer produce warnings  -->
 
-在 [Microsoft Edge 版本 90][DevtoolsWhatsNew202102Devtools] 或更早版本中，如果 PWA 的 Web 应用清单包含非方形图标，则在 **错误和警告** 部分中显示针对每个非方形图标的警告。  在 Microsoft Edge 版本 91 或更高版本中，如果至少提供了一个方形图标，则 **应用程序** 工具中的 **清单** 部分不显示任何警告。  如果未提供任何方形图标，则会显示一条如下警告消息。
+在 [Microsoft Edge 版本 90](../02/devtools.md) 或更早版本中，如果 PWA 的 Web 应用清单包含非方形图标，则在 **错误和警告** 部分中显示针对每个非方形图标的警告。  在 Microsoft Edge 版本 91 或更高版本中，如果至少提供了一个方形图标，则 **应用程序** 工具中的 **清单** 部分不显示任何警告。  如果未提供任何方形图标，则会显示一条如下警告消息。
 
 ```output
 Most operating systems require square icons.  Please include at least one square icon in the array.
@@ -127,7 +127,7 @@ Most operating systems require square icons.  Please include at least one square
    :::column-end:::
 :::row-end:::
 
-要查看 Web 应用清单中的错误和警告，请导航到 **应用程序** 工具，然后选择“**清单**”部分。  错误和警告列在 **错误和警告** 标题下。  有关 Web 应用清单的详细信息，请导航到 [使用 Web 应用清单将渐进式 Web 应用集成到操作系统][ProgressiveWebAppsWebappmanifests]。  要创建要包含在 Web 应用清单中的图标，请导航到 [PWABuilder 映像生成器][PwabuilderImagegenerator]。  要在 Chromium 开源项目中查看此功能的实时更新，请导航至问题 [1185945][CR1185945]。
+要查看 Web 应用清单中的错误和警告，请导航到 **应用程序** 工具，然后选择“**清单**”部分。  错误和警告列在 **错误和警告** 标题下。  有关 Web 应用清单的详细信息，请导航到 [使用 Web 应用清单将渐进式 Web 应用集成到操作系统](../../../../progressive-web-apps-chromium/how-to/web-app-manifests.md)。  要创建要包含在 Web 应用清单中的图标，请导航到 [PWABuilder 映像生成器](https://www.pwabuilder.com/imageGenerator)。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1185945"。](https://crbug.com/1185945)
 
 
 <!-- ====================================================================== -->
@@ -136,7 +136,7 @@ Most operating systems require square icons.  Please include at least one square
 <!--  Title: Localization for all  -->
 <!--  Subtitle: Match browser language enabled to all Chromium-based browsers  -->
 
-从 [Microsoft Edge 版本 81][DevtoolsWhatsNew202001DevtoolsUsingDevtoolsInOtherLanguages] 开始，Microsoft Edge DevTools 以你自己的语言显示。  许多开发人员使用自己母语版本的其他开发人员工具（如 StackOverflow 和 Visual Studio Code），而不仅仅是英语版本。  Microsoft Edge DevTools 团队、Chrome DevTools 团队和 Google Lighthouse 团队通力协作，在所有基于 Chromium 的浏览器中提供相同的体验。  有关如何在你的语言中使用 DevTools 的详细信息，请导航到 [更改 DevTools 语言设置][DevtoolsCustomizeLocalization]。  有关 Chromium 开源项目中此功能的协作方面的详细信息，请导航到 [1136655][CR1136655]。
+从 [Microsoft Edge 版本 81](../../2020/01/devtools.md#using-the-devtools-in-other-languages) 开始，Microsoft Edge DevTools 以你自己的语言显示。  许多开发人员使用自己母语版本的其他开发人员工具（如 StackOverflow 和 Visual Studio Code），而不仅仅是英语版本。  Microsoft Edge DevTools 团队、Chrome DevTools 团队和 Google Lighthouse 团队通力协作，在所有基于 Chromium 的浏览器中提供相同的体验。  有关如何在你的语言中使用 DevTools 的详细信息，请导航到 [更改 DevTools 语言设置](../../../customize/localization.md)。  有关开放源代码项目中有关此功能的协作Chromium，请导航到["1136655"。](https://crbug.com/1136655)
 
 :::image type="complex" source="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png" alt-text="Microsoft Edge 浏览器和 DevTools 设置为日语" lightbox="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png":::
    Microsoft Edge 浏览器和 DevTools 设置为日语
@@ -149,7 +149,7 @@ Most operating systems require square icons.  Please include at least one square
 <!--  Title: Navigate to CSS variables with the arrow keys  -->
 <!--  Subtitle: In the Styles pane, use the arrow keys to choose CSS variables.  Select `Enter` to see the variable definition.  -->
 
-从 [Microsoft Edge 版本 88][DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane] 开始，**样式** 窗格显示 CSS 变量，并直接提供指向每个变量定义的链接。  在 Microsoft Edge 版本 91 或更高版本中，可以使用箭头键轻松导航到 CSS 变量。  要在 **样式** 窗格中打开定义，请将鼠标悬停在变量上，然后选择“`Enter`”。  有关 CSS 变量的详细信息，请导航到 [使用 CSS 自定义属性（变量）][MdnDocsWebCssUsingCssCustomProperties]。  要在 Chromium 开源项目中查看此功能的实时更新，请导航至问题 [1187735][CR1187735]。
+从 [Microsoft Edge 版本 88](../../2020/11/devtools.md#css-variable-definitions-in-styles-pane) 开始，**样式** 窗格显示 CSS 变量，并直接提供指向每个变量定义的链接。  在 Microsoft Edge 版本 91 或更高版本中，可以使用箭头键轻松导航到 CSS 变量。  要在 **样式** 窗格中打开定义，请将鼠标悬停在变量上，然后选择“`Enter`”。  有关 CSS 变量的详细信息，请导航到 [使用 CSS 自定义属性（变量）](https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties)。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1187735"。](https://crbug.com/1187735)
 
 :::image type="complex" source="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png" alt-text="样式窗格中突出显示的 --theme-body-background CSS 变量" lightbox="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png":::
    **样式** 窗格中突出显示的 `--theme-body-background` CSS 变量
@@ -162,7 +162,7 @@ Most operating systems require square icons.  Please include at least one square
 <!-- Title: Display Issues in severity order  -->
 <!-- Subtitle: Entries in the Issues tool now display in severity order and allow you to focus your updates on the most important issues. -->
 
-**Issue** 工具显示改进网站的建议，包括辅助功能、性能、安全性等。 根据你的反馈，问题现在按严重性自动排序。  在每个反馈类别中，首先显示标记为 **错误** 的每个问题，后跟标记为 **警告** 的每个问题，然后显示标记为 **提示** 的每个问题。  为了帮助优化问题，我们计划为将来的更新提供额外的筛选器选项。  有关如何查看问题的详细信息，请导航到 [使用问题工具查找和解决问题][DevtoolsIssuesIndex]。
+**Issue** 工具显示改进网站的建议，包括辅助功能、性能、安全性等。 根据你的反馈，问题现在按严重性自动排序。  在每个反馈类别中，首先显示标记为 **错误** 的每个问题，后跟标记为 **警告** 的每个问题，然后显示标记为 **提示** 的每个问题。  为了帮助优化问题，我们计划为将来的更新提供额外的筛选器选项。  有关如何查看问题的详细信息，请导航到 [使用问题工具查找和解决问题](../../../issues/index.md)。
 
 :::image type="complex" source="../../media/2021/04/elements-issues-ordered-issues.msft.png" alt-text="问题工具按严重性排序显示问题" lightbox="../../media/2021/04/elements-issues-ordered-issues.msft.png":::
    **问题** 工具按严重性排序显示问题
@@ -175,14 +175,14 @@ Most operating systems require square icons.  Please include at least one square
 <!-- Title: Microsoft Edge DevTools for Visual Studio version 1.1.7  -->
 <!-- Subtitle: Increased target closure reliability, automatically update the side panel, new contextual menu for settings and Changelog, and more. -->
 
-[Microsoft Edge 工具 for Visual Studio Code 扩展][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] 版本 1.1.7 提供 [Microsoft Edge 版本 88][DevtoolsWhatsNew202011Devtools] 中的 DevTools。  此扩展现在支持 ARM 设备，并且不再依赖于 [Microsoft Edge 调试程序][VisualstudioMarketplaceMsjsdiagDebuggerForEdge] 扩展。  版本 1.1.7 包括以下 bug 修复和改进。
+[Microsoft Edge 工具 for Visual Studio Code 扩展](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) 版本 1.1.7 提供 [Microsoft Edge 版本 88](../../2020/11/devtools.md) 中的 DevTools。  此扩展现在支持 ARM 设备，并且不再依赖于 [Microsoft Edge 调试程序](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) 扩展。  版本 1.1.7 包括以下 bug 修复和改进。
 
 *   更新了目标关闭的可靠性。
 *   更新了侧面板，以在调试创建或销毁的目标时自动刷新。
 *   添加了一个新的上下文菜单，可让你更快地访问扩展设置和最新的 Changelog。
 *   更新并简化了扩展文档（包括最新功能）的发布。
 
-要手动更新到版本 1.1.7，请导航至“[手动更新扩展][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]”。  你可以在 [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools] 上提交问题并参与提升扩展。
+要手动更新到版本 1.1.7，请导航至“[手动更新扩展](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually)”。  你可以在 [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools) 上提交问题并参与提升扩展。
 
 
 <!-- ====================================================================== -->
@@ -192,7 +192,7 @@ Most operating systems require square icons.  Please include at least one square
 
 ### <a name="visualize-css-scroll-snap"></a>可视化 CSS 滚动贴靠
 
-现在可以在 **元素** 工具中切换 `scroll-snap` 徽章，以检查 CSS 滚动贴靠对齐方式。  当网页上的 HTML 元素将 `scroll-snap-type` 应用到它时，**元素** 工具中在其附近会显示一个 `scroll-snap` 徽章。  选择锁屏提醒以 (或) 网页上滚动贴贴的显示。  要查看示例网页，请导航到 [滚动贴靠演示][GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml]。  在该示例中，点显示在贴靠边缘上。  滚动端口具有实心轮廓，而对齐项具有短划线轮廓。  滚动填充以绿色填充，而滚动边距则填充为橙色。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [862450][CR862450]。
+现在可以在 **元素** 工具中切换 `scroll-snap` 徽章，以检查 CSS 滚动贴靠对齐方式。  当网页上的 HTML 元素将 `scroll-snap-type` 应用到它时，**元素** 工具中在其附近会显示一个 `scroll-snap` 徽章。  选择锁屏提醒以 (或) 网页上滚动贴贴的显示。  要查看示例网页，请导航到 [滚动贴靠演示](https://microsoft-edge-chromium-devtools.glitch.me/css-dbg-stories/css-scroll-snap.html)。  在该示例中，点显示在贴靠边缘上。  滚动端口具有实心轮廓，而对齐项具有短划线轮廓。  滚动填充以绿色填充，而滚动边距则填充为橙色。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [862450](https://crbug.com/862450)。
 
 :::image type="complex" source="../../media/2021/04/elements-scroll-snap-highlight.msft.png" alt-text="CSS 滚动贴靠" lightbox="../../media/2021/04/elements-scroll-snap-highlight.msft.png":::
    CSS 滚动贴靠
@@ -200,9 +200,9 @@ Most operating systems require square icons.  Please include at least one square
 
 ### <a name="new-memory-inspector-tool"></a>新建内存检查器工具
 
-使用新的 **内存检查器** 工具检查 JavaScript 和 Wasm 内存中的 `ArrayBuffer`。  打开 [JS 中内存][GlitchMemoryInspectorDemoJsHtml] 演示网页。  在 **源** 工具中，打开 `memory-write-wasm` 文件，并在行 `0x03c` 处设置断点。  刷新网页。  展开调试程序窗格中的“**范围**”部分。  新图标显示在 **缓冲区** 值 的旁边。  选择它以打开新的 **内存检查器** 工具。
+使用新的 **内存检查器** 工具检查 JavaScript 和 Wasm 内存中的 `ArrayBuffer`。  打开 [JS 中内存](https://memory-inspector.glitch.me/demo-js.html) 演示网页。  在 **源** 工具中，打开 `memory-write-wasm` 文件，并在行 `0x03c` 处设置断点。  刷新网页。  展开调试程序窗格中的“**范围**”部分。  新图标显示在 **缓冲区** 值 的旁边。  选择它以打开新的 **内存检查器** 工具。
 
-要了解在 **源** 工具中调试的详细信息，请导航到 [使用调试程序窗格调试 JavaScript 代码][DevtoolsSourcesUsingDebuggerPaneToDebugJavascriptCode]。  要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1166577][CR1166577]。
+要了解在 **源** 工具中调试的详细信息，请导航到 [使用调试程序窗格调试 JavaScript 代码](../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code)。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1166577"。](https://crbug.com/1166577)
 
 :::image type="complex" source="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png" alt-text="内存检查器工具" lightbox="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png":::
    **内存检查器** 工具
@@ -213,10 +213,10 @@ Most operating systems require square icons.  Please include at least one square
 现在，使用"元素 **"** 工具中的**** 锁屏提醒设置打开或 (或) 各个锁屏提醒。  在检查网页时，使用此功能自定义并对重要徽章保持关注。  要在 **元素** 工具顶部显示徽章设置窗格，请完成以下操作。
 
 1.  将鼠标悬停在任何元素上。
-1.  打开上下文菜单 (右键单击") "。
+1.  打开上下文菜单（右键单击）。
 1.  选择“**徽章设置...**”。
 
-若要显示 (或隐藏) 锁屏提醒， (或) 锁屏提醒名称旁边的复选框。
+若要显示 (或隐藏) 锁屏提醒， (或删除) 锁屏提醒名称旁边的复选框。
 
 <!--  To review the history of this feature in the Chromium open-source project, navigate to Issue [1066772][CR1066772].  -->
 
@@ -255,17 +255,17 @@ Most operating systems require square icons.  Please include at least one square
    :::column-end:::
 :::row-end:::
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1149832][CR1149832] and [1170656][CR1170656]。
+若要在开放源代码项目中查看此功能的历史记录Chromium，请导航到"问题"1149832 1170656"。 [](https://crbug.com/1149832) [](https://crbug.com/1170656)
 
 ### <a name="new-options-to-configure-content-encodings-in-the-network-conditions-tool"></a>用于在网络条件工具中配置 Content-Encoding 的新选项
 
-在 **网络** 工具中，选择 **限制** 下拉菜单旁边的新“**更多网络条件...**”按钮，以打开 **网络条件** 工具。  要测试是否为不支持 [gzip][GnuSoftwareGzipManual]、[brotli][|::ref1::|Main] 或其他将来 `Content-Encoding` 的浏览器正确编码服务器响应，请完成以下操作。
+在 **网络** 工具中，选择 **限制** 下拉菜单旁边的新“**更多网络条件...**”按钮，以打开 **网络条件** 工具。  要测试是否为不支持 [gzip](https://www.gnu.org/software/gzip/manual)、[brotli](https://www.brotli.org) 或其他将来 `Content-Encoding` 的浏览器正确编码服务器响应，请完成以下操作。
 
 1.  打开“**网络条件**”工具。
 1.  导航到 **接受的 Content-Encoding**。
 1.  删除要测试的 `Content-Encoding` 旁边的复选框。
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1162042][CR1162042]。
+若要查看开放源代码项目中此功能的历史记录Chromium，请导航到"问题[1162042"。](https://crbug.com/1162042)
 
 :::image type="complex" source="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png" alt-text="新的“更多网络条件...”按钮打开用于配置 Content-Encoding 的网络条件工具" lightbox="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png":::
    新“**更多网络条件...**”按钮打开 **网络条件** 工具以进行配置 `Content-Encoding`
@@ -278,10 +278,10 @@ Most operating systems require square icons.  Please include at least one square
 现在，要在 **样式** 窗格中显示计算的 CSS 值，请完成以下操作。
 
 1.  将鼠标悬停在 CSS 属性上。
-1.  打开上下文菜单 (右键单击") "。
+1.  打开上下文菜单（右键单击）。
 1.  选择“**查看计算值**”。
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1076198][CR1076198]。
+若要在开放源代码项目中查看此功能Chromium历史记录，请导航到"问题[1076198"。](https://crbug.com/1076198)
 
 :::image type="complex" source="../../media/2021/04/elements-styles-highlight-view-computed-value.msft.png" alt-text="显示计算值的新快捷方式" lightbox="../../media/2021/04/elements-styles-highlight-view-computed-value.msft.png":::
    显示计算值的新快捷方式
@@ -289,7 +289,7 @@ Most operating systems require square icons.  Please include at least one square
 
 #### <a name="support-for-the-accent-color-keyword"></a>支持强调色关键字
 
-**样式** 窗格的自动完成 UI 现在检测 `accent-color` CSS 关键字，这允许你为元素生成的 UI 控件指定强调色。  元素生成的 UI 控件示例包括复选框或单选按钮。 有关 Chromium 实现状态的详细信息，请导航到 [功能：强调色 CSS 属性][ChromestatusFeature4752739957473280]。  要启用此功能，请导航到 `edge://flags#enable-experimental-web-platform-features` 并将复选框设置为“**已启用**”。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1092093][CR1092093]。
+**样式** 窗格的自动完成 UI 现在检测 `accent-color` CSS 关键字，这允许你为元素生成的 UI 控件指定强调色。  元素生成的 UI 控件示例包括复选框或单选按钮。 有关 Chromium 实现状态的详细信息，请导航到 [功能：强调色 CSS 属性](https://chromestatus.com/feature/4752739957473280)。  要启用此功能，请导航到 `edge://flags#enable-experimental-web-platform-features` 并将复选框设置为“**已启用**”。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1092093"。](https://crbug.com/1092093)
 
 :::image type="complex" source="../../media/2021/04/elements-styles-accent-color.msft.png" alt-text="强调色 CSS 关键字" lightbox="../../media/2021/04/elements-styles-accent-color.msft.png":::
    `accent-color` CSS 关键字
@@ -298,9 +298,9 @@ Most operating systems require square icons.  Please include at least one square
 ### <a name="display-details-about-blocked-features-in-the-frame-details-view"></a>在帧详细信息视图中显示有关被阻止功能的详细信息
 
 权限策略是一个 Web 平台 API，它使网站能够允许或阻止在单个帧或其嵌入的 `iframe` 中使用浏览器功能。
-有关详细信息，请导航到 [权限策略解释器][GithubW3cWebappsecPermissionsPolicyPermissionsPolicyExplainerMd]。  要显示有关阻止功能原因的详细信息，请完成以下操作。
+有关详细信息，请导航到 [权限策略解释器](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md)。  要显示有关阻止功能原因的详细信息，请完成以下操作。
 
-1.  导航到 [OOPIF 权限策略][GlitchPermissionPolicyDemoMain]。
+1.  导航到 [OOPIF 权限策略](http://permission-policy-demo.glitch.me)。
 1.  导航到 **应用程序** 工具。
 1.  选择一个帧。
 1.  导航到 **权限策略** 部分。
@@ -308,7 +308,7 @@ Most operating systems require square icons.  Please include at least one square
 1.  选择“**显示详细信息**”。
 1.  选择每个策略旁边的图标，以导航到 `iframe` 或阻止该功能的网络请求。
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1158827][CR1158827]。
+若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1158827](https://crbug.com/1158827)。
 
 :::image type="complex" source="../../media/2021/04/application-frames-top-permission-policy-disabled-features-show-details-highlight.msft.png" alt-text="帧详细信息视图中阻止的功能" lightbox="../../media/2021/04/application-frames-top-permission-policy-disabled-features-show-details-highlight.msft.png":::
    帧详细信息视图中阻止的功能
@@ -329,7 +329,7 @@ Most operating systems require square icons.  Please include at least one square
 
 ### <a name="new-vary-header-column-in-the-cache-storage-pane"></a>缓存存储窗格中的新的变化标头列
 
-使用 **缓存存储** 窗格中的新 `Vary Header` 列显示 [变化][HttpwgSpecsRfc7231HtmlHeaderVary] HTTP 响应标头值。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1186049][CR1186049]。
+使用 **缓存存储** 窗格中的新 `Vary Header` 列显示 [变化](https://httpwg.org/specs/rfc7231.html#header.vary) HTTP 响应标头值。  若要在开放源代码项目中查看此功能的Chromium，请导航到"问题[1186049"。](https://crbug.com/1186049)
 
 :::image type="complex" source="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png" alt-text="变化标头列" lightbox="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png":::
    变化标头列
@@ -339,12 +339,12 @@ Most operating systems require square icons.  Please include at least one square
 
 #### <a name="support-for-new-javascript-features"></a>支持新的 JavaScript 功能
 
-DevTools 现在支持新的 [专用品牌检查 obj 中的 a.k.a. #foo][V8DevFeaturesPrivateBrandChecks] JavaScript 语言功能。  专用品牌检查功能扩展了 [in 运算符][MdnDocsWebJavascriptReferenceOperatorsIn]，以支持在特定对象上的 [专用类字段][V8DevFeaturesClassFieldsPrivateClassFields]。  请在 **控制台** 和 **源** 工具中试用。  此外，若要检查专用字段，请完成以下操作。
+DevTools 现在支持新的 [专用品牌检查 obj 中的 a.k.a. #foo](https://v8.dev/features/private-brand-checks) JavaScript 语言功能。  专用品牌检查功能扩展了 [in 运算符](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/in)，以支持在特定对象上的 [专用类字段](https://v8.dev/features/class-fields#private-class-fields)。  请在 **控制台** 和 **源** 工具中试用。  此外，若要检查专用字段，请完成以下操作。
 
 1.  导航到 **调试程序** 窗格。
 1.  导航到 **范围** 部分。
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [11374][CR11374]。
+要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [11374](https://crbug.com/v8/11374)。
 
 :::image type="complex" source="../../media/2021/04/sources-page-pen-js-breakpoint-scope-script-dog.msft.png" alt-text="JavaScript 专用品牌检查" lightbox="../../media/2021/04/sources-page-pen-js-breakpoint-scope-script-dog.msft.png":::
    JavaScript 专用品牌检查
@@ -352,11 +352,11 @@ DevTools 现在支持新的 [专用品牌检查 obj 中的 a.k.a. #foo][V8DevFea
 
 #### <a name="enhanced-support-for-breakpoints-debugging"></a>对断点调试的增强支持
 
-新式 JavaScript 捆绑程序（如 [Webpack][WebpackJsMain]）和 [汇总][RollupjsMain] 支持代码拆分。  要了解有关代码拆分的详细信息，请导航到 [代码拆分][JsWebpackGuidesCodeSplittingTextThereAreThreeGeneralApproachesToCodeSplittingSplitCodeViaInlineFunctionCallsWithinModules]。  在 Microsoft Edge 版本 90 或更早版本中，DevTools 仅在单个捆绑包中设置断点。  在 Microsoft Edge 版本 91 或更高版本中，在调试共享组件时，DevTools 会在多个捆绑包中正确设置断点。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1142705][CR1142705]、[979000][CR979000] 和 [1180794][CR1180794]。
+新式 JavaScript 捆绑程序（如 [Webpack](https://webpack.js.org)）和 [汇总](https://rollupjs.org) 支持代码拆分。  要了解有关代码拆分的详细信息，请导航到 [代码拆分](https://webpack.js.org/guides/code-splitting/#:~:text=There%20are%20three%20general%20approaches%20to%20code%20splitting,Split%20code%20via%20inline%20function%20calls%20within%20modules.)。  在 Microsoft Edge 版本 90 或更早版本中，DevTools 仅在单个捆绑包中设置断点。  在 Microsoft Edge 版本 91 或更高版本中，在调试共享组件时，DevTools 会在多个捆绑包中正确设置断点。  若要在开放源代码项目中查看此功能的历史记录Chromium，请导航到问题[](https://crbug.com/1142705)1142705、979000[](https://crbug.com/979000)和[1180794](https://crbug.com/1180794)。
 
 #### <a name="support-hover-preview-with-bracket-notation"></a>支持使用括号表示法的悬停预览
 
-DevTools 现在支持在 **源** 工具中使用 `[]` 表示法的 JavaScript 成员表达式上进行悬停预览。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1178305][CR1178305]。
+DevTools 现在支持在 **源** 工具中使用 `[]` 表示法的 JavaScript 成员表达式上进行悬停预览。  若要在开放源代码项目中查看Chromium历史记录，请导航到"问题[1178305"。](https://crbug.com/1178305)
 
 :::image type="complex" source="../../media/2021/04/sources-page-pen.js-breakpoint-arr-i-a.msft.png" alt-text="支持使用 [] 表示法的悬停预览" lightbox="../../media/2021/04/sources-page-pen.js-breakpoint-arr-i-a.msft.png":::
    支持使用 `[]` 表示法的悬停预览
@@ -364,7 +364,7 @@ DevTools 现在支持在 **源** 工具中使用 `[]` 表示法的 JavaScript �
 
 #### <a name="improved-outline-of-html-files"></a>改进的 HTML 文件大纲
 
-DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工具中，打开 `.html` 文件。  若要打开或 (或) 大纲，请在 `Ctrl` + `Shift` + `O` Windows/Linux 或 `Cmd` + `Shift` + `O` macOS 上选择。  在下图中，DevTools 现在正确列出了大纲中的所有函数。  以前，DevTools 仅显示一些函数。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [761019][CR761019] 和 [1191465][CR1191465]。
+DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工具中，打开 `.html` 文件。  若要打开或 (或) 大纲，请在 `Ctrl` + `Shift` + `O` Windows/Linux 或 `Cmd` + `Shift` + `O` macOS 上选择。  在下图中，DevTools 现在正确列出了大纲中的所有函数。  以前，DevTools 仅显示一些函数。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题"761019 1191465" [](https://crbug.com/1191465)。 [](https://crbug.com/761019)
 
 :::image type="complex" source="../../media/2021/04/sources-page-jobobbx-at.msft.png" alt-text=" 改进的 HTML 文件大纲" lightbox="../../media/2021/04/sources-page-jobobbx-at.msft.png":::
    改进的 HTML 文件大纲
@@ -372,7 +372,7 @@ DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工
 
 #### <a name="proper-error-stack-traces-for-wasm-debugging"></a>Wasm 调试的正确错误堆栈跟踪
 
-在 Microsoft Edge 版本 90 或更早版本中，DevTools 仅在错误堆栈跟踪中显示泛型 Wasm 引用。  在 Microsoft Edge 版本 91 或更高版本中，DevTools 解析内联函数请求，并在 Wasm 调试的错误堆栈跟踪中显示源位置。  要详细了解 **控制台** 中的错误堆栈跟踪，请导航到 [错误][DevtoolsConsoleApiError]。
+在 Microsoft Edge 版本 90 或更早版本中，DevTools 仅在错误堆栈跟踪中显示泛型 Wasm 引用。  在 Microsoft Edge 版本 91 或更高版本中，DevTools 解析内联函数请求，并在 Wasm 调试的错误堆栈跟踪中显示源位置。  要详细了解 **控制台** 中的错误堆栈跟踪，请导航到 [错误](../../../console/api.md#error)。
 
 在 Microsoft Edge 版本 91 或更高版本中，DevTools 解析内联函数请求，并显示 Wasm 调试的正确错误堆栈跟踪。
 
@@ -395,93 +395,22 @@ DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工
    :::column-end:::
 :::row-end:::
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1189161][CR1189161]。
+若要查看开放源代码项目中此功能的历史记录Chromium，请导航到"问题[1189161"。](https://crbug.com/1189161)
 
 
 <!-- ====================================================================== -->
 ## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道
 
-如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
+如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道](https://www.microsoftedgeinsider.com/download)作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsWhatsNew202001DevtoolsUsingDevtoolsInOtherLanguages]: ../../2020/01/devtools.md#using-the-devtools-in-other-languages "使用其他语言的 DevTools - DevTools (Microsoft Edge 81) 中的新增功能 | Microsoft Docs"
-[DevtoolsWhatsNew202011Devtools]: ../../2020/11/devtools.md "DevTools 中的新增功能 (Microsoft Edge 88) | Microsoft Docs"
-[DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]: ../../2020/11/devtools.md#css-variable-definitions-in-styles-pane "样式窗格中的 CSS 变量定义 - DevTools (Microsoft Edge 88) 中的新增功能 | Microsoft Docs"
-[DevtoolsWhatsNew202102Devtools]: ../02/devtools.md "DevTools (Microsoft Edge 90) 中的新增功能 | Microsoft Docs"
-[DevtoolsWhatsNew202102DevtoolsGroupToolsTogetherInFocusMode]: ../02/devtools.md#group-tools-together-in-focus-mode "专注模式下将工具组合在一起 - DevTools (Microsoft Edge 90) 中的新增功能 | Microsoft Docs"
-
-[DevtoolsCommandMenuIndexOpenCommandMenu]: ../../../command-menu/index.md#open-the-command-menu "打开命令菜单 - 使用 Microsoft Edge DevTools 命令菜单运行命令 | Microsoft Docs"
-[DevtoolsConsoleApiError]: ../../../console/api.md#error "错误 - 控制台 API 参考 | Microsoft Docs"
-[DevtoolsCustomizeLocalization]: ../../../customize/localization.md "更改 DevTools 语言设置 | Microsoft Docs"
-[DevtoolsIssuesIndex]: ../../../issues/index.md "使用问题工具查找并修复问题 | Microsoft Docs"
-[DevtoolsServiceWorkerIndex]: ../../../service-workers/index.md "服务工作进程改进 | Microsoft Docs"
-[DevtoolsSourcesUsingDebuggerPaneToDebugJavascriptCode]: ../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code "使用调试器窗格调试 JavaScript 代码 - 源工具概述 |Microsoft Docs"
-
-[ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]: ../../../../progressive-web-apps-chromium/how-to/service-workers.md#the-service-worker-lifecycle "服务工作进程生命周期 - 使用服务工作进程管理网络请求和推送通知 | Microsoft Docs"
-[ProgressiveWebAppsWebappmanifests]: ../../../../progressive-web-apps-chromium/how-to/web-app-manifests.md "使用 Web 应用清单将渐进式 Web 应用集成到操作系统 | Microsoft Docs"
-
-[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
 <!--[GithubMicrosoftVscodeEdgeDevtoolsPullxxx]: https://github.com/microsoft/vscode-edge-devtools/pull/xxx "Pull xxx: Lorem al Ipsum | GitHub"  -->
-
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge 预览频道"
-
-[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "手动更新扩展 - Extension Marketplace | Visual Studio Code"
-
-[VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for Visual Studio Code | Visual Studio Marketplace"
-[VisualstudioMarketplaceMsjsdiagDebuggerForEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge " Microsoft Edge 调试程序 | Visual Studio Marketplace"
-
-[BrotliMain]: https://www.brotli.org "Brotli"
-
-[ChromestatusFeature4752739957473280]: https://chromestatus.com/feature/4752739957473280 "功能：强调色 CSS 属性 | Chrome 平台状态"
-
-[CsswgDraftsCssUi4WidgetAccent]: https://drafts.csswg.org/css-ui-4/#widget-accent "小组件强调色：强调色属性 - CSS 基本用户界面模块级别 4 | CSS 工作组编辑器草稿"
-
-[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium 漏洞"
-[CR11374]: https://crbug.com/v8/11374 "问题 11374：实现专用字段的人体工学品牌检查"
-[CR761019]: https://crbug.com/761019 "问题761019：“转到符号”缺少第一个函数，并且如果包含所有类型化字符，则首选更差的匹配项"
-[CR862450]: https://crbug.com/862450 "问题 862450：[css-scroll-snap] 考虑为 css 滚动贴靠添加 Devtools 功能"
-[CR979000]: https://crbug.com/979000 "问题 979000：具有碰撞源路径的源映射不起作用。"
-[CR1066604]: https://crbug.com/1066604 "问题1066604：DevTools：查看有关 ServiceWorker 安装和激活事件的详细信息 | Chromium bug"
 <!--  [CR1066772]: https://crbug.com/1066772 "Issue 1066772: "  locked  -->
-[CR1076198]： https://crbug.com/1076198 "Issue 1076198： [Feature Request] Jump to computed property from `styles` tab&quot; [CR1092093]： https://crbug.com/1092093 &quot;Issue 1092093： Make form controls more color-stylable by supporting the 'accent-color' CSS property&quot; [CR1136655]： https://crbug.com/1136655 &quot;Issue 1136655： Devtools： Localization V2 |Chromium bugs&quot; [CR1142705]： https://crbug.com/1142705 &quot;Issue 1142705： breakpoints stop working when 2 sourcemaps point to the same virtual file when using webpack&quot; [CR1149832]： https://crbug.com/1149832 &quot;Issue 1149832： Feature request： image preview should also show file size&quot; [CR1158827]： https://crbug.com/1158827 &quot;Issue 1158827： [Permissions Policy] Implement devtool support for permissions policy&quot; [CR1162042]： https://crbug.com/1162042 &quot;Issue 1162042： DevTools： support disabling gzip/brotli/jxl content-encoding&quot; [CR1166577]： https://crbug.com/1166577 &quot;Issue 1166577： ☂️ Linear Memory Inspector 1.0&quot; [CR1170656]： https://crbug.com/1170656 &quot;Issue 1170656： Show intrinsic aspect-ratio&quot; [CR1178305]： https://crbug.com/1178305 &quot;Issue 1178305： Debugger doesn't show an indexed element's property value when it's hovered&quot; [CR1180794]： https://crbug.com/1180794 &quot;Issue 1180794： Breakpoints don't work with Closure Compiler inlining optimization&quot; [CR1185945]： https://crbug.com/1185945 &quot;Issue 1185945： Manifest warningimplies all icons must be square |Chromium bug&quot; [CR1186049]： https://crbug.com/1186049 &quot;问题 1186049： Vary： Column for Cache 存储 viewer&quot; [CR1187735]： https://crbug.com/1187735 &quot;Issue 1187735： Accessibility： MAS2.1.1： Keyboard： Unable to invoke the 'Var (..) 键盘的 |Chromium bug&quot; [CR1189161]： https://crbug.com/1189161 &quot;问题 1189161：堆栈跟踪未通过 BUGS 转换 `new Error` &quot;[CR1191465]： https://crbug.com/1191465 &quot;问题 1191465： Ctrl+Shift+O 损坏 HTML"
 
-[GithubW3cWebappsecPermissionsPolicyPermissionsPolicyExplainerMd]: https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md "权限策略解释器 | GitHub"
-
-[GlitchMemoryInspectorDemoJsHtml]: https://memory-inspector.glitch.me/demo-js.html "JS 中的内存 | 故障"
-[GlitchMemoryInspectorDemoWasmHtml]: https://memory-inspector.glitch.me/demo-wasm.html "Wasm 中的内存 | 故障"
-
-[GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml]: https://microsoft-edge-chromium-devtools.glitch.me/css-dbg-stories/css-scroll-snap.html "滚动贴靠演示 | 故障"
-
-[GlitchPermissionPolicyDemoMain]: http://permission-policy-demo.glitch.me "OOPIF 权限策略 | 故障"
-
-[GnuSoftwareGzipManual]: https://www.gnu.org/software/gzip/manual "gzip：数据压缩程序 | GNU 操作系统"
-
-[HttpwgSpecsRfc7231HtmlHeaderVary]: https://httpwg.org/specs/rfc7231.html#header.vary "变化 - 超文本传输协议 (HTTP/1.1)：语义和内容 | IETF HTTP 工作组"
-
-[JsWebpackGuidesCodeSplittingTextThereAreThreeGeneralApproachesToCodeSplittingSplitCodeViaInlineFunctionCallsWithinModules]: https://webpack.js.org/guides/code-splitting/#:~:text=There%20are%20three%20general%20approaches%20to%20code%20splitting,Split%20code%20via%20inline%20function%20calls%20within%20modules. "有三种可用的常规代码拆分方法：入口点：使用入口配置手动拆分代码。防止重复：使用条目依赖项或 SplitChunksPlugin 来消除和拆分区块。动态导入：通过模块中的内联函数调用拆分代码。- 代码拆分 | webpack"
-
-[MdnDocsWebCssUsingCssCustomProperties]: https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties "使用 CSS 自定义属性（变量）| MDN"
-
-[MdnDocsWebJavascriptReferenceOperatorsIn]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/in "in 运算符 | MDN"
-
-[PwabuilderImagegenerator]: https://www.pwabuilder.com/imageGenerator "映像生成器 | PWABuilder"
-
-[RollupjsMain]: https://rollupjs.org "rollup.js"
-
-[V8DevFeaturesPrivateBrandChecks]: https://v8.dev/features/private-brand-checks "专用品牌检查 obj 中 a.k.a. #foo | V8"
-[V8DevFeaturesClassFieldsPrivateClassFields]: https://v8.dev/features/class-fields#private-class-fields "专用类字段 - 公共和专用类字段 | V8"
-
-[WebpackJsMain]: https://webpack.js.org "Webpack"
 
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-91) ，由 [Jecelyn Yeen][JecelynYeen] 和开发人员 (Chrome DevTools) 。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-91)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

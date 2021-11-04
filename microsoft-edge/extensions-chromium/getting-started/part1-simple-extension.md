@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， 扩展
-ms.openlocfilehash: cf9dff64751890c5891ab26e1431ed2f71a1e3b3
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 499deb80fa163eaec85d6bb0165dfef7e8cdecaf
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141570"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157073"
 ---
 # <a name="create-an-extension-tutorial---part-1"></a>创建扩展教程 - 第 1 部分
 
@@ -30,7 +30,7 @@ ms.locfileid: "12141570"
 <!-- ====================================================================== -->
 ## <a name="before-you-begin"></a>在开始之前
 
-若要测试本教程中构建的已完成扩展，请下载 [源代码][ArchiveExtensionGettingStartedPart1]。
+若要测试本教程中构建的已完成扩展，请下载 [源代码](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part1/part1)。
 
 
 <!-- ====================================================================== -->
@@ -114,7 +114,7 @@ ms.locfileid: "12141570"
 </html>
 ```
 
-确保将图像文件 `images/stars.jpeg` 添加到 images 文件夹中。  项目的目录应类似于以下结构。
+确保将图像文件 `images/stars.jpeg` 添加到 images 文件夹。  项目的目录应类似于以下结构。
 
 ```shell
 └── part1
@@ -153,7 +153,7 @@ ms.locfileid: "12141570"
 
 <!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
-这是开发工作扩展所需的一切。  现在，继续旁加载和测试扩展。 有关详细信息，请导航到 [旁加载扩展][TestExtensionSideload]。
+这是开发工作扩展所需的一切。  现在，继续旁加载和测试扩展。 有关详细信息，请导航到 [旁加载扩展](./extension-sideloading.md)。
 
 <!-- image links -->
 
@@ -163,9 +163,3 @@ ms.locfileid: "12141570"
 <!--[ImagePart1Threedots]: ./media/part1-threedots.png "Choose Extensions"  -->
 <!--[ImagePart1DevelopermodeToggle]: ./media/part1-developermode-toggle.png "Enable Developer Mode"  -->
 <!--[ImagePart1InstalledExtension]: ./media/part1-installed-extension.png "Installed Extensions"  -->
-
-<!-- links -->
-
-[ArchiveExtensionGettingStartedPart1]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part1/part1 "已完成的扩展包源|Microsoft Docs"
-
-[TestExtensionSideload]: ./extension-sideloading.md "测试扩展 (旁加载) |Microsoft Docs"

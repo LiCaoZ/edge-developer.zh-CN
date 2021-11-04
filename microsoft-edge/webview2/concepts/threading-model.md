@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: f78c36ceefc5a1d1f2d4b145ff10541acd872206
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: c144ec889d1ce004b4e4a12c6049db72d32c2db6
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140695"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157360"
 ---
 # <a name="threading-model-for-webview2"></a>WebView2 的线程模型
 
 支持的平台：Win32、Windows Forms、WinUi、WPF。
 
-WebView2 控件基于组件对象模型 [ (COM) ][WindowsWin32ComTheComponentObjectModel] 并且必须在单个线程处理线程 STA ([上运行 ][WindowsWin32ComSingleThreadedApartments]) 线程。
+WebView2 控件基于组件对象模型 [ (COM) ](/windows/win32/com/the-component-object-model) 并且必须在单个线程的 Thread (STA [) ](/windows/win32/com/single-threaded-apartments) 上运行。
 
 
 <!-- ====================================================================== -->
@@ -30,7 +30,7 @@ WebView2 必须在使用消息线索的 UI 线程上创建。  所有回调都�
 唯一的例外是 `Content` 属性 `CoreWebView2WebResourceRequest` 。  从 `Content` 后台线程读取属性流。  该流应为敏捷流，或应该从后台 STA 创建，以防止 UI 线程的性能下降。
 
 > [!NOTE]
-> 对象属性是单线程的。  例如，从除 (之外的其他线程调用将成功，即返回 `CoreWebView2CookieManager.GetCookiesAsync(null)` cookie) ;但是，在此类调用之后尝试访问 cookie 的属性 (如) 将引发 `Main` `c.Domain` 异常。
+> 对象属性是单线程的。  例如，从线程调用成功 (即返回 `CoreWebView2CookieManager.GetCookiesAsync(null)` cookie) ;但是，在此类调用之后尝试访问 cookie 的属性 (如) 将引发 `Main` `c.Domain` 异常。
 
 
 <!-- ====================================================================== -->
@@ -78,7 +78,7 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 
 > [!NOTE]
 > 对于 WinForms 和 WPF 应用，若要获取用于调试的完全调用堆栈，你必须为 WebView2 应用启用本机代码调试，如下所示。
-> 1.  在 webView2 项目中打开Visual Studio。
+> 1.  在 WebView2 项目中打开Visual Studio。
 > 1.  在 **"解决方案资源管理器**"中，右键单击"WebView2"项目，然后选择"属性 **"。**
 > 1.  选择" **调试** "选项卡，然后选中" **启用本机代码调试"** 复选框，如下所示。
 
@@ -159,20 +159,7 @@ private async void Button_Click(object sender, EventArgs e)
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [WebView2 入门指南][Webview2IndexGetStarted]
-*  [WebView2Samples 存储库][GithubMicrosoftedgeWebview2samples] - WebView2 功能的综合示例。
-*  [WebView2 API 参考][DotnetApiMicrosoftWebWebview2WpfWebview2]
-*  [另请参阅][Webview2IndexNextSteps] _WebView2 Microsoft Edge简介_。
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[Webview2IndexGetStarted]: ../index.md#get-started "入门 - WebView2 Microsoft Edge简介|Microsoft Docs"
-[Webview2IndexNextSteps]: ../index.md#see-also "另请参阅 - WebView2 Microsoft Edge简介|Microsoft Docs"
-<!-- external links -->
-[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 类|Microsoft Docs"
-
-[WindowsWin32ComSingleThreadedApartments]: /windows/win32/com/single-threaded-apartments "单线程主|Microsoft Docs"
-[WindowsWin32ComTheComponentObjectModel]: /windows/win32/com/the-component-object-model "组件对象模型|Microsoft Docs"
-
-[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 示例 - MicrosoftEdge/WebView2Samples | GitHub"
+*  [WebView2 入门指南](../index.md#get-started)
+*  [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。
+*  [WebView2 API 参考](/dotnet/api/microsoft.web.webview2.wpf.webview2)
+*  [另请参阅](../index.md#see-also) _WebView2 Microsoft Edge简介_。

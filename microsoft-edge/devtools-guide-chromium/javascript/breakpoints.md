@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: 450fe4fc5890c8b35961c8fb8ad9f252d013a3c5
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 4cd9cb7709b4f9f3c870df808f111e048317d437
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141416"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156331"
 ---
 <!-- Copyright Kayce Basques
 
@@ -31,7 +31,7 @@ ms.locfileid: "12141416"
 
 使用断点暂停 JavaScript 代码。  本文介绍了 DevTools 中提供的每种断点类型，以及何时使用以及如何设置每种类型。
 
-有关使用现有网页的介绍性教程，请导航到在开发人员工具中Microsoft Edge [JavaScript 入门][DevtoolsJavascriptIndex]。
+有关使用现有网页的介绍性教程，请导航到在开发人员工具中Microsoft Edge [JavaScript 入门](index.md)。
 
 
 <!-- ====================================================================== -->
@@ -141,7 +141,7 @@ console.log('c');
 当 XHR 的请求 URL 包含指定字符串时，若要中断，请使用 XHR 断点。  开发工具将在 XHR 运行 `send()` 方法的代码行上暂停。
 
 > [!NOTE]
-> 此功能还适用于 [Fetch API][MDNFetchApi] 请求。
+> 此功能还适用于 [Fetch API](https://developer.mozilla.org/docs/Web/API/Fetch_API) 请求。
 
 例如，当网页请求 URL 不正确，并且希望快速找到导致错误请求的 AJAX 或 Fetch 源代码时，这非常有用。
 
@@ -233,26 +233,14 @@ debug(hey); // This does not work.  hey() is out of scope.
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [使用调试器功能][DevtoolsJavascriptReference] - 使用"源"工具 **中的调试器** UI。
-*  [在 DevTools][DevtoolsJavascriptIndex] Microsoft Edge JavaScript 入门 - 使用现有网页的介绍性教程。
-*  [源工具概述][DevtoolsSourcesIndex] - 调试器是 **源** 工具的一部分，其中包括 JavaScript 编辑器。
+*  [使用调试器功能](./reference.md) - 使用"源"工具 **中的调试器** UI。
+*  [在 DevTools](index.md) Microsoft Edge JavaScript 入门 - 使用现有网页的介绍性教程。
+*  [源工具概述](../sources/index.md) - 调试器是 **源** 工具的一部分，其中包括 JavaScript 编辑器。
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsJavascriptReference]: ./reference.md "使用调试器功能|Microsoft Docs"
-[DevtoolsJavascriptIndex]: index.md "在 Microsoft Edge 开发工具中调试 JavaScript 入门 | Microsoft Docs"
-[DevtoolsSourcesIndex]: ../sources/index.md "源工具概述 | Microsoft Docs"
-
-[MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "Fetch API | MDN"
-
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

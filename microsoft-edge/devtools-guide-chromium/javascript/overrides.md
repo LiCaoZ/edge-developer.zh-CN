@@ -6,17 +6,17 @@ ms.author: msedgedevrel
 ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 5246e98aac2dad182e82cc5deb1713c80f2c8c89
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 29bf8f79438d1c278716e752580c1e92ff1ac06e
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140856"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155764"
 ---
 # <a name="override-webpage-resources-with-local-copies-using-microsoft-edge-devtools"></a>使用 DevTools 使用本地副本替代Microsoft Edge资源
 
-有时你需要尝试一些可能的网页修补程序，但你无法访问源文件，或者更改页面需要一个缓慢而复杂的生成过程。  你可以调试和修复 DevTools 中所有的问题。  但更改不会保留;刷新本地文件后，所有工作都消失。  源 [工具中的替代][DevToolsSourcesTool] 功能可帮助你解决此问题。
+有时你需要尝试一些可能的网页修补程序，但你无法访问源文件，或者更改页面需要一个缓慢而复杂的生成过程。  你可以调试和修复 DevTools 中所有的问题。  但更改不会保留;刷新本地文件后，所有工作都消失。  源 [工具中的替代](../sources/index.md) 功能可帮助你解决此问题。
 
 现在，您可以利用当前网页的资源，并在本地存储该资源。  刷新网页时，浏览器不会从服务器加载资源。  相反，浏览器会将其替换为你的本地资源副本。
 
@@ -67,7 +67,7 @@ ms.locfileid: "12140856"
    在样式检查器 **中选择** 文件
 :::image-end:::
 
-在"**源**编辑器"上，将鼠标悬停在所选文件的文件名上，打开上下文菜单 (右键单击") "，然后选择"保存**以替代"。**
+在"**源**"编辑器上，将鼠标悬停在所选文件的文件名上，打开上下文菜单 (右键单击") "保存**替代"。**
 
 :::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="在&quot;源&quot;编辑器中，将文件的名称添加到替代" lightbox="../media/javascript-overrides-file-name.msft.png":::
    在 **"源** "编辑器中，将文件的名称添加到替代
@@ -85,7 +85,7 @@ ms.locfileid: "12140856"
 
 :::row:::
    :::column span="":::
-      在下面的示例中，现在可以更改网页的样式。  若要在文件周围添加红色边框，在 **"** 样式"编辑器上复制以下样式，并将其添加到 body 元素中。
+      在下面的示例中，现在可以更改网页的样式。  若要在文件周围添加红色边框，在 **样式** 编辑器上复制以下样式，并将其添加到 body 元素。
 
       ```css
       border: 10px solid firebrick
@@ -119,8 +119,3 @@ ms.locfileid: "12140856"
 ## <a name="two-way-interaction-of-overrides"></a>覆盖的双向交互
 
 使用 DevTools 的 **"** 源"工具提供的编辑器或要更改文件的任何编辑器。  更改将跨访问覆盖文件夹中文件的所有产品进行同步。
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevToolsSourcesTool]: ../sources/index.md "源工具概述 | Microsoft Docs"

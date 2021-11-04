@@ -7,12 +7,12 @@ ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: bd75b4b1e6c92b81c989e7f42c93d198e1abe20b
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 426419bf7f95947a5482cc90c9d4103a5bc61195
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139484"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155687"
 ---
 <!-- Copyright Kayce Basques
 
@@ -127,7 +127,7 @@ ms.locfileid: "12139484"
 
 ### <a name="emulate-offline"></a>模拟脱机
 
-一种称为“[渐进式 Web 应用][DevtoolsProgressiveWebApps]”的新 web 应用程序，，可在**服务人员**的帮助下脱机运行。  在构建这种类型的应用程序时，快速模拟没有数据连接的设备可能会很有用。
+一种称为“[渐进式 Web 应用](../progressive-web-apps/index.md)”的新 web 应用程序，，可在**服务人员**的帮助下脱机运行。  在构建这种类型的应用程序时，快速模拟没有数据连接的设备可能会很有用。
 
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
@@ -230,8 +230,8 @@ ms.locfileid: "12139484"
 | `larger-than` | 以字节为单位显示大于指定大小的资源。  将值设置为 `1000` 相当于将值设置为 `1k`。 |
 | `method` | 显示通过指定的 HTTP 方法类型检索的资源。  开发工具用找到的所有 HTTP 方法填充下拉列表。 |
 | `mime-type` | 显示指定 MIME 类型的资源。  开发工具用找到的所有 MIME 类型填充下拉列表。 |
-| `mixed-content` | 显示所有混合内容 () `mixed-content:all` 或只显示当前 () 。 `mixed-content:displayed` |
-| `scheme` | 显示通过未保护的 HTTP () 或受保护的 `scheme:http` HTTPS () 。 `scheme:https` |
+| `mixed-content` | 显示所有混合内容 () `mixed-content:all` 或只显示当前 `mixed-content:displayed` () 。 |
+| `scheme` | 显示通过未保护的 HTTP () 或受保护的 `scheme:http` HTTPS `scheme:https` () 。 |
 | `set-cookie-domain` | 显示具有与指定值匹配的 `Domain` 属性的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 域填充“自动完成”。 |
 | `set-cookie-name` | 显示具有名称与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 名称填充“自动完成”。 |
 | `set-cookie-value` | 显示具有值与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 值填充“自动完成”。 |
@@ -341,7 +341,7 @@ ms.locfileid: "12139484"
 
 ### <a name="hide-data-urls"></a>隐藏数据 URL
 
-[数据 URL][MDNHTTPDataURIs] 是嵌入到其他文档中的小文件。  任何显示在“请求”表中以 `data:` 开头的请求都是数据 URL。
+[数据 URL](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) 是嵌入到其他文档中的小文件。  任何显示在“请求”表中以 `data:` 开头的请求都是数据 URL。
 
 若要隐藏请求，请关闭“**隐藏数据 URL**”复选框。
 
@@ -361,7 +361,7 @@ ms.locfileid: "12139484"
 
 ### <a name="sort-by-activity-phase"></a>按活动阶段排序
 
-若要更改"瀑布"排序请求方式，请将鼠标悬停在"请求"表的标题上，打开上下文菜单 (右键单击") "，将鼠标悬停在****"瀑布"上，然后选择以下选项之一。
+若要更改"瀑布"对请求的排序方式，请将鼠标悬停在"请求"表的标题上，打开上下文菜单 (右键单击") "，将鼠标悬停在****"瀑布"上，然后选择以下选项之一。
 
 :::row:::
    :::column span="1":::
@@ -702,7 +702,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
       **代理协商**
    :::column-end:::
    :::column span="2":::
-      浏览器正在通过 [代理服务器][WikiProxyServer] 协商请求。
+      浏览器正在与[代理服务器](https://en.wikipedia.org/wiki/Proxy_server)协商请求。
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -936,7 +936,7 @@ init();
 
 ### <a name="copy-formatted-response-json-to-the-clipboard"></a>将格式化响应 JSON 复制到剪贴板
 
-选择网络请求并导航到“**标头**”窗格。  若要复制响应的 JSON 值，请导航**** 到"请求有效负载"，将鼠标悬停在 JSON 响应内容上，打开上下文菜单 (右键单击") "，然后选择"复制**值"。**
+选择网络请求并导航到“**标头**”窗格。  若要复制响应的 JSON 值，请导航**** 到"请求有效负载"，将鼠标悬停在 JSON 响应内容上，打开上下文菜单 (右键单击") "，然后选择"复制**值**"。
 
 :::row:::
    :::column span="":::
@@ -997,21 +997,11 @@ init();
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "调试渐进式 Web 应用 | Microsoft Docs"
 <!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions | Microsoft Docs"  -->
-<!-- external links -->
-[MDNHTTPDataURIs]： https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "Data URLs |MDN&quot; [WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server &quot;Proxy server - Wikipedia"
-
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/network/reference)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/network/reference)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

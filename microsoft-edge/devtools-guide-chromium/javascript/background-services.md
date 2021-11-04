@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: a7f3bcfd200c75d3588c79e3fe62eb245dea10c5
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 0436eda9adfb19c4d526e62759307d8a1fd9bf01
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141542"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157528"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,7 +30,7 @@ ms.locfileid: "12141542"
 # <a name="debug-background-services-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 调试后台服务
 
 Microsoft Edge DevTools 的**后台服务**部分是 JavaScript API 的一个工具集合，使你的网站能够在用户未打开网站时发送和接收更新。
-后台服务在功能上类似于 [后台进程][WikiBackgroundProcess]。
+后台服务在功能上类似于后台 [进程](https://en.wikipedia.org/wiki/Background_process)。
 Microsoft Edge DevTools 将以下每个 API 都作为后台服务：
 
 *   [后台提取](#background-fetch)
@@ -53,7 +53,7 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 
 <!--Todo: add background fetch api section when available -->
 
-1.  [Open DevTools][OpenDevTools]。
+1.  [打开 DevTools](../open/index.md)。
 1.  打开“**应用程序**”工具。
 1.  打开“**后台提取**”面板。
 
@@ -82,7 +82,7 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 
 <!--Todo: add background sync api section when available -->
 
-1.  [Open DevTools][OpenDevTools]。
+1.  [打开 DevTools](../open/index.md)。
 1.  打开“**应用程序**”工具。
 1.  打开“**后台同步**”窗格。
 
@@ -107,9 +107,9 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 <!-- ====================================================================== -->
 ## <a name="notifications"></a>通知
 
-**服务工作进程**从服务器接收一条[推送消息][MDNPush]后，服务工作进程使用[通知 API][MDNNotifications]向用户显示数据。  若要记录通知 3 天，即使 DevTools 未打开：
+**服务工作进程**从服务器接收一条[推送消息](https://developer.mozilla.org/docs/Web/API/Push_API)后，服务工作进程使用[通知 API](https://developer.mozilla.org/docs/Web/API/Notifications_API)向用户显示数据。  若要记录通知 3 天，即使 DevTools 未打开：
 
-1.  [Open DevTools][OpenDevTools]。
+1.  [打开 DevTools](../open/index.md)。
 1.  打开“**应用程序**”工具。
 1.  打开“**通知**”窗格。
 
@@ -134,9 +134,9 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 <!-- ====================================================================== -->
 ## <a name="push-messages"></a>推送消息
 
-若要向用户显示推送通知，**服务工作进程**必须先使用[推送消息 API][MDNPush]从服务器接收数据。  当服务工作进程准备好显示通知时，它将使用[通知 API][MDNNotifications]。  若要记录推送消息 3 天，即使 DevTools 未打开：
+若要向用户显示推送通知，**服务工作进程**必须先使用[推送消息 API](https://developer.mozilla.org/docs/Web/API/Push_API)从服务器接收数据。  当服务工作进程准备好显示通知时，它将使用[通知 API](https://developer.mozilla.org/docs/Web/API/Notifications_API)。  若要记录推送消息 3 天，即使 DevTools 未打开：
 
-1.  [Open DevTools][OpenDevTools]。
+1.  [打开 DevTools](../open/index.md)。
 1.  打开“**应用程序**”工具。
 1.  打开“**推送消息**”面板。
 
@@ -159,22 +159,17 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 
 
 <!-- ====================================================================== -->
-<!-- links -->
+
 <!--[BackgroundFetchAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2018/12/background-fetch.md "Background Fetch API"  -->
 <!--[BackgroundSyncAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2015/12/background-sync.md  "Background Sync API"  -->
-[OpenDevTools]： ../open/index.md "Open Microsoft Edge Developer Tools |Microsoft Docs"
 
-[MDNNotifications]: https://developer.mozilla.org/docs/Web/API/Notifications_API "通知 API | MDN"
-[MDNPush]: https://developer.mozilla.org/docs/Web/API/Push_API "推送 API | MDN"
+
+
+
 <!--[ServiceWorkerCacheStorage]: https://alphabet.dev/service-workers-cache-storage "Service workers and the Cache Storage API | alphabet.dev"  -->
-[WikiBackgroundProcess]: https://en.wikipedia.org/wiki/Background_process “后台进程 - Wikipedia”
+
 
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

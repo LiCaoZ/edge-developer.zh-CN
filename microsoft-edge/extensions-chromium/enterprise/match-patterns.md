@@ -7,12 +7,12 @@ ms.date: 03/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 82999a1dc1d64d3a0ec90c04c4281227424d887f
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: ece353c4f8890b1c8d008e6ccbd9c142517b2f57
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141234"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155372"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -29,7 +29,7 @@ ms.locfileid: "12141234"
    limitations under the License.  -->
 # <a name="match-patterns"></a>匹配模式
 
-主机权限和内容脚本匹配基于匹配模式定义的一组 URL。  匹配模式实质上是一个 URL，它以允许的方案开头， (、、 或 `http` `https` `file` `ftp` ，并且可以包含 ' ' `*` 字符。  特殊模式 `<all_urls>` 与以允许方案开头的任何 URL 匹配。  每个匹配模式有 3 个部分：
+主机权限和内容脚本匹配基于匹配模式定义的一组 URL。  匹配模式实质上是一个 URL，它以允许的方案开头， (、、或 `http` ，并且可以包含 ' ' `https` `file` `ftp` `*` 字符。  特殊模式 `<all_urls>` 匹配以允许方案开头的任何 URL。  每个匹配模式有 3 个部分：
 
 *   _方案_ — 例如 `http` ， `file` 或 或 `*`
 
@@ -68,17 +68,13 @@ ms.locfileid: "12141234"
 | `http://www.foo.com` | 否 `_path_` |
 | `http://*foo/bar` | ' `*` ' in the host can be followed only by a ' ' or ' `.` `/` ' |
 | `http://foo.*.bar/baz` | 如果 ' `*` ' 位于 `_host_` 中，则它必须是第一个字符 |
-| `http:/bar` | 缺少 `_scheme_` 分隔 (' ' `/` 应为" `//` ")  |
+| `http:/bar` | 缺少 `_scheme_` 分隔 (' `/` ' 应为 `//` "")  |
 | `foo://*` | 无效 `_scheme_` |
 
 某些方案并非在所有上下文中都受支持。
 
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/extensions/match_patterns)。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

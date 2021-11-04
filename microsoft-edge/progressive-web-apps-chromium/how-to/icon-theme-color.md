@@ -7,13 +7,13 @@ ms.date: 09/27/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用， PWA， Edge， Windows， 主题， 颜色， 图标
-ms.openlocfilehash: f3e28a6051bff53b0984d382dde83fa0a9a2cfdb
-ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
+keywords: 渐进式 Web 应用， PWA， 边缘， Windows， 主题， 颜色， 图标
+ms.openlocfilehash: d790d6e327fedd884fee1f6b4663588d21a824a9
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "12087121"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156464"
 ---
 # <a name="define-icons-and-a-theme-color"></a>定义图标和主题颜色
 
@@ -58,14 +58,14 @@ ms.locfileid: "12087121"
 
 数组中的 `icons` 每个图标应至少具有 和 `src` 属性， `sizes` 但也可以具有 `type` 和 `purpose` 属性。
 
-| 属性 | 说明 |
+| 属性 | 描述 |
 |:--- |:--- |
 | `src` | 图像文件的路径，可以是应用根文件夹的相对路径或绝对 URL。 |
 | `sizes` | 一个以空格分隔的大小列表，对应图像可用于这些大小。 |
 | `type` | 操作系统快速检测映像类型的可选提示 |
 | `purpose` | 操作系统根据上下文选择正确映像的可选提示。 这可以是 `monochrome` 、 `maskable` 或 `any` 。 |
 
-详细了解图标 [成员][MDNIconManifestMember]。
+详细了解图标 [成员](https://developer.mozilla.org/docs/Web/Manifest/icons)。
 
 <!-- TODO: add information about which sizes Windows require at a minimum, and which sizes are used where -->
 
@@ -89,21 +89,13 @@ ms.locfileid: "12087121"
 }
 ```
 
-各个网页还可使用 meta 标记定义[ `theme-color` 主题颜色][MDNThemeColorMeta]。 当页面上存在此 meta 标记时，其定义的颜色将替代在 Web 应用清单中发现的颜色。
+各个网页还可使用 meta 标记定义[ `theme-color` 主题颜色](https://developer.mozilla.org/docs/Web/HTML/Element/meta/name/theme-color)。 当页面上存在此 meta 标记时，其定义的颜色将替代在 Web 应用清单中发现的颜色。
 
 > [!NOTE]
-> 可以使用窗口 [控件覆盖功能][WindowControlsOverlay] 在标题栏区域中显示应用内容。
+> 可以使用窗口 [控件覆盖功能](./window-controls-overlay.md) 在标题栏区域中显示应用内容。
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*   [PWABuilder 图像生成器][PWABuilderImageGenerator]
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[MDNIconManifestMember]: https://developer.mozilla.org/docs/Web/Manifest/icons "图标 - Web 应用|MDN"
-[PWABuilderImageGenerator]: https://www.pwabuilder.com/imageGenerator "图像生成器|PWABuiler.com"
-[MDNThemeColorMeta]: https://developer.mozilla.org/docs/Web/HTML/Element/meta/name/theme-color "theme-color - HTML |MDN"
-[WindowControlsOverlay]: ./window-controls-overlay.md "显示标题栏中的内容|Microsoft Docs"
+*   [PWABuilder 图像生成器](https://www.pwabuilder.com/imageGenerator)

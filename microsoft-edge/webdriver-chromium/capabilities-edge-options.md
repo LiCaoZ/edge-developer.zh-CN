@@ -8,20 +8,20 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， webdriver， selenium， 测试， 工具， 自动化， 测试
-ms.openlocfilehash: ca26fa90d2ef99d727a21aa3e411a01de8920b0d
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 6a6d24720ff1012d965d69d54a70b51ce02f35aa
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141010"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156975"
 ---
 # <a name="capabilities-and-edgeoptions"></a>功能和 EdgeOptions
 
-功能是可用于自定义和配置会话 `EdgeDriver` 的选项。  若要了解如何启动新 `EdgeDriver` 会话，请导航到自动[Microsoft Edge。][WebdriverIndexAutomateMicrosoftEdge]  本文介绍所有支持的功能Microsoft Edge并提供有关将这些功能传递到 `EdgeDriver` 会话的详细信息。
+功能是可用于自定义和配置会话 `EdgeDriver` 的选项。  若要了解如何启动新 `EdgeDriver` 会话，请导航到自动[](./index.md#automate-microsoft-edge)Microsoft Edge。  本文介绍所有支持的功能，Microsoft Edge并提供有关将这些功能传递到 `EdgeDriver` 会话的详细信息。
 
-功能作为 JSON 映射传递到 WebDriver 会话。  WebDriver 测试框架提供 WebDriver 语言绑定。  WebDriver 语言绑定通常提供类型安全的便利方法，因此无需自己配置 JSON 映射。  不同的 WebDriver 语言绑定使用不同的机制来配置功能。  [Selenium][SeleniumMain] 通过 类配置 `EdgeOptions` 功能。
+功能作为 JSON 映射传递到 WebDriver 会话。  WebDriver 测试框架提供 WebDriver 语言绑定。  WebDriver 语言绑定通常提供类型安全的便利方法，因此无需自己配置 JSON 映射。  不同的 WebDriver 语言绑定使用不同的机制来配置功能。  [Selenium](https://www.selenium.dev) 通过 类配置 `EdgeOptions` 功能。
 
-若要详细了解如何配置功能，请参阅文档了解首选 WebDriver 测试框架。  有关详细信息，请导航到["选择 WebDriver 测试框架"。][WebdriverIndexChooseAWebdriverTestingFramework]
+若要详细了解如何配置功能，请参阅文档了解首选 WebDriver 测试框架。  有关详细信息，请导航到["选择 WebDriver 测试框架"。](./index.md#choose-a-webdriver-testing-framework)
 
 
 <!-- ====================================================================== -->
@@ -46,7 +46,7 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 <!-- ====================================================================== -->
 ## <a name="recognized-capabilities"></a>可识别的功能
 
-有关接受的标准 `EdgeDriver` 功能，请导航到 [Selenium 文档][SharedCapabilitiesSeleniumDocumentation] 和 [W3C WebDriver 标准][CapabilitiesW3cWebdriver]。  本文仅列出了特定于 Microsoft Edge。
+有关接受的标准 `EdgeDriver` 功能，请导航到 [Selenium 文档](https://www.selenium.dev/documentation/en/driver_idiosyncrasies/shared_capabilities/) 和 [W3C WebDriver 标准](https://www.w3.org/TR/webdriver#capabilities)。  本文仅列出了特定于 Microsoft Edge。
 
 
 <!-- ====================================================================== -->
@@ -59,17 +59,17 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 | args | 字符串列表 |  | 启动命令时要使用的命令行参数Microsoft Edge。  具有关联值的参数应用符号分隔 (`=` 例如 `['start-maximized', 'user-data-dir=/tmp/temp_profile']` ，) 。 |
 | binary | 字符串 |  | 在 macOS Microsoft Edge二进制文件 (路径，路径应为实际二进制文件，而不只是应用。  例如 `/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge` ，) 。 |
 | debuggerAddress | 字符串 |  | 要连接到的调试器服务器的地址，格式为 `hostname/ip:port` ，例如 `127.0.0.1:38947` 。 |
-| 分离 | 布尔型 | `false` | 如果为 ，Microsoft Edge WebDriver 服务关闭时退出，即使 WebDriver 本地端尚未 `false` 关闭会话。  如果 `true` 为 ，Microsoft Edge仅在 WebDriver 本地端关闭会话时退出。  如果 为 ，并且 WebDriver 本地端不关闭会话，则不清理该实例使用的临时用户 `true` `EdgeDriver` Microsoft Edge文件夹。 |
-| excludeSwitches | 字符串列表 |  | 默认情况下，Microsoft Edge开关以排除该 EdgeDriver 的列表，该列表在启动 Microsoft Edge。  避免 `--` 使用开关前缀。 |
+| 分离 | 布尔型 | `false` | 如果为 ，Microsoft Edge WebDriver 服务关闭时退出，即使 `false` WebDriver 本地端尚未关闭会话。  如果 `true` 为 ，Microsoft Edge仅在 WebDriver 本地端关闭会话时退出。  如果 为 ，并且 WebDriver 本地端不关闭会话，则不清理该实例使用的临时用户 `true` `EdgeDriver` Microsoft Edge文件夹。 |
+| excludeSwitches | 字符串列表 |  | 默认情况下，Microsoft Edge切换到排除该 EdgeDriver 的命令行开关列表在启动 Microsoft Edge。  避免 `--` 使用开关前缀。 |
 | extensions | 字符串列表 |  | 启动时要安装的扩展的列表。  列表中的每个项目应为 base64 编码的打包扩展 `.crx` () 。 |
 | localState | 字典 |  | 包含每个条目的字典，包含首选项的名称和值。  首选项将应用于用户数据文件夹中的本地状态文件。 |
 | minidumpPath | 字符串 |  | 用于存储最小Microsoft Edge的目录。   (Linux.)  |
 | mobileEmulation | 字典 |  | 值为 的字典， `deviceName` 或和 `deviceMetrics` 的值 `userAgent` 。 |
 | perfLoggingPrefs | 字典 |  | 指定性能日志记录首选项的可选字典。  有关详细信息，请导航到 [perfLoggingPrefs 对象](#perfloggingprefs-object)。 |
-| prefs | 字典 |  | 包含每个条目的字典，包含首选项的名称和值。  首选项仅适用于使用的用户配置文件。  例如，导航到用户 `Preferences` 数据文件夹中的 Microsoft Edge。 |
-| wdpAddress | 字符串 |  | 要连接到Windows Device Portal 服务器的地址，格式为 `hostname/ip:port` ，例如 `127.0.0.1:50080` 。  有关详细信息，请导航到"远程[调试 - Windows 10设备"。][DevtoolsRemoteDebuggingWindows] |
+| prefs | 字典 |  | 包含每个条目的字典，包含首选项的名称和值。  首选项仅适用于使用的用户配置文件。  例如，导航到 `Preferences` 用户数据文件夹中的 Microsoft Edge。 |
+| wdpAddress | 字符串 |  | 连接到的 Windows Device Portal 服务器的地址，例如 `hostname/ip:port` `127.0.0.1:50080` 。  有关详细信息，请导航到"远程[调试 - Windows 10设备"。](../devtools-guide-chromium/remote-debugging/windows.md) |
 | wdpPassword | 字符串 |  | 连接到 Device Portal 服务器时Windows可选密码。  如果服务器已启用身份验证，则必需。 |
-| wdpUsername | 字符串 |  | 连接到 Device Portal 服务器时使用的可选Windows用户名。  如果服务器已启用身份验证，则必需。 |
+| wdpUsername | 字符串 |  | 连接到 Device Portal 服务器时Windows的可选用户名。  如果服务器已启用身份验证，则必需。 |
 | windowsApp | 字符串 |  | 要启动的应用Microsoft Edge模型 ID，例如 `Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE` 。  使用 Device Portal 连接到 Windows 10X `windowsApp` `binary` 设备或仿真器Windows使用。 |
 | windowTypes | 字符串列表 |  | 窗口句柄列表中显示的窗口类型列表。  若要访问 Android webview 元素，请 `webview` 包含到列表中。 |
 
@@ -84,7 +84,7 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 | bufferUsageReportingInterval | 正整数 | 1000 | DevTools 跟踪缓冲区使用事件之间请求的毫秒数。  例如，如果为 1000，则每秒一次，则 DevTools 报告跟踪缓冲区的已满。  如果报告指示缓冲区使用率为 100%，则发出警告。 |
 | enableNetwork | 布尔型 | true | 收集 (或不收集) 网络域中的任何事件。 |
 | enablePage | 布尔型 | true | 收集 (或不收集) 页面域中的任何事件。 |
-| traceCategories | 字符串 |  (空)  | 一个逗号分隔Microsoft Edge跟踪类别的字符串，应收集跟踪事件。  未指定或空字符串禁用跟踪。 |
+| traceCategories | 字符串 |  (空)  | 一个以逗号分隔Microsoft Edge跟踪类别的字符串，应收集跟踪事件。  未指定或空字符串禁用跟踪。 |
 
 
 <!-- ====================================================================== -->
@@ -96,13 +96,3 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 |:--- |:--- |:--- |
 | msedge.msedgedriverVersion | 字符串 | EdgeDriver 的版本。 |
 | msedge.userDataDir | 字符串 | 用户数据文件夹的路径，该实例Microsoft Edge路径。 |
-
-<!-- links -->
-[DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "远程调试设备Windows入门|Microsoft Docs"
-[WebdriverIndexChooseAWebdriverTestingFramework]: ./index.md#choose-a-webdriver-testing-framework "选择 WebDriver 测试框架 - 使用 WebDriver (Chromium) 实现测试自动化|Microsoft Docs"
-[WebdriverIndexAutomateMicrosoftEdge]: ./index.md#automate-microsoft-edge "自动Microsoft Edge - WebDriver (Chromium) |Microsoft Docs"
-<!-- external links -->
-[SeleniumMain]: https://www.selenium.dev "SeleniumHQ 浏览器自动化"
-[SharedCapabilitiesSeleniumDocumentation]: https://www.selenium.dev/documentation/en/driver_idiosyncrasies/shared_capabilities/ "共享功能|Selenium 文档"
-
-[CapabilitiesW3cWebdriver]: https://www.w3.org/TR/webdriver#capabilities "功能 - WebDriver 规范|W3C"

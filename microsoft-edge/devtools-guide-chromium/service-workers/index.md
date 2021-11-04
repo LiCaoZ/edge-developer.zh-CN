@@ -6,22 +6,22 @@ ms.author: msedgedevrel
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge， Web 开发， f12 工具， 开发工具， 服务工作者， PWA
-ms.openlocfilehash: ca69c82a84ebfd532b18a29531e6053e68341501
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge， Web 开发， f12 工具， devtools， 服务工作者， PWA
+ms.openlocfilehash: 63cfb86ccb2ada9679e7e513c4bff8b583280a20
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140954"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157493"
 ---
 # <a name="service-worker-improvements"></a>服务工作者改进
 
-本文将指导你改进开发人员工具，以使用服务工作者，以及[][MdnServiceWorkerApi]通过每个服务工作者的网络请求。  服务**工作线程改进**在**网络**、**应用程序和****源工具中**。  改进简化了以下任务。
+本文将指导你改进开发人员工具，以使用服务工作者，以及[](https://developer.mozilla.org/docs/Web/API/Service_Worker_API)通过每个服务工作者的网络请求。  服务**工作线程改进**在**网络**、**应用程序和****源工具中**。  改进简化了以下任务。
 
 *   根据服务工作者日程表进行调试。
     *   请求开示和启动持续时间。
     *   更新到服务工作者注册。
-    *   使用提取事件处理程序 [的请求的][MdnFetchEvent] 运行时。
+    *   使用提取事件处理程序 [的请求的](https://developer.mozilla.org/docs/Web/API/FetchEvent) 运行时。
     *   用于加载客户端的所有提取事件的运行时。
 *   了解提取事件处理程序、安装事件处理程序和激活事件处理程序的运行时详细信息。
 *   使用页面脚本信息进入和退出提取 [事件处理程序](#sources)。
@@ -90,11 +90,4 @@ ms.locfileid: "12140954"
 
 ### <a name="future-work"></a>未来工作
 
-开发人员Microsoft Edge开发人员计划进一步开发缓存详细信息，并研究更多方法为渐进式 Web 应用程序开发人员改进服务工作[器调试][MdnProgressiveWebApps]体验。
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[MdnFetchEvent]: https://developer.mozilla.org/docs/Web/API/FetchEvent "FetchEvent |MDN"
-[MdnProgressiveWebApps]: https://developer.mozilla.org/docs/Web/Progressive_web_apps "渐进式 Web (PA) |MDN"
-[MdnServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "服务工作线程 API |MDN"
+开发人员Microsoft Edge开发工具团队计划进一步开发缓存详细信息，并研究更多方法为渐进式 Web 应用程序开发人员改进服务工作[器调试](https://developer.mozilla.org/docs/Web/Progressive_web_apps)体验。

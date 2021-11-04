@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: b36526d2aca0948c824d6fef3b2a8f85d3f62aa2
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 46fd31d2e78de3bde60a013d3707c66ef14f8823
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139939"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155806"
 ---
 <!-- Copyright Kayce Basques
 
@@ -31,7 +31,7 @@ ms.locfileid: "12139939"
 
 这是一个动手教程，介绍了一些最常用的 DevTools 功能，这些功能与检查页面的网络活动相关。
 
-如果要浏览功能，请导航到[网络参考][DevtoolsNetworkReference]。
+如果要浏览功能，请导航到"网络[参考"。](./reference.md)
 
 <!--TODO: This entire section needs a Microsoft Edge DevTools re-write  -->
 
@@ -50,7 +50,7 @@ ms.locfileid: "12139939"
 *   确保资源上载或下载实际正在进行。
 *   检查单个资源的属性，如 HTTP 标头、内容、大小等。
 
-如果正在寻找提高页面加载性能的方法，**不要** 开始于 **网络**工具。  有许多类型的负载性能问题与网络活动不相关。  从“审核”面板开始，因为它为你提供了有关改进页面的目标建议。  导航到 [优化网站速度][DevtoolsSpeedGetStarted]。
+如果正在寻找提高页面加载性能的方法，**不要** 开始于 **网络**工具。  有许多类型的负载性能问题与网络活动不相关。  从“审核”面板开始，因为它为你提供了有关改进页面的目标建议。  导航到 [优化网站速度](../speed/get-started.md)。
 
 
 <!-- ====================================================================== -->
@@ -58,7 +58,7 @@ ms.locfileid: "12139939"
 
 若要在本教程中取得最大功能，请打开演示并试用演示页面上的功能。
 
-1.  打开 “[入门][GlitchNetworkGetStarted]”演示。
+1.  打开 “[入门](https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html)”演示。
 
     :::image type="complex" source="../media/network-glitch-inspect-network-activity-demo.msft.png" alt-text="演示" lightbox="../media/network-glitch-inspect-network-activity-demo.msft.png":::
        演示
@@ -72,13 +72,13 @@ ms.locfileid: "12139939"
     :::image-end:::
     -->
 
-1.  To [Open DevTools][DevToolsOpen]， select `Control` + `Shift` + `J` (Windows， Linux) or `Command` + `Option` + `J` (macOS) .  将 **打开控制台** 工具。
+1.  若要[打开 DevTools，](../open/index.md)请选择 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS) 。  将 **打开控制台** 工具。
 
     :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="控制台" lightbox="../media/network-glitch-console.msft.png":::
        **控制台**
     :::image-end:::
 
-    你可能希望 [扩展坞 DevTools to the bottom of your window][DevToolsCustomizePlacement]。
+    你可能希望将 [DevTools 停靠在窗口的底部](../customize/placement.md)。
 
     :::image type="complex" source="../media/network-glitch-console-bottom.msft.png" alt-text="停靠在窗口底部的 DevTools" lightbox="../media/network-glitch-console-bottom.msft.png":::
        停靠在窗口底部的 DevTools
@@ -115,7 +115,7 @@ ms.locfileid: "12139939"
     *   **粘滞键**。  请求的不同阶段的图形表示形式。  若要显示细目，请将鼠标悬停在瀑布上。
 
     > [!NOTE]
-    > 网络日志上方的图形称为“概述”。  本教程中不会使用"概述"图，因此可以将其隐藏。  导航到 [隐藏概述窗格][DevtoolsReferenceHideOverview]。
+    > 网络日志上方的图形称为“概述”。  本教程中不会使用"概述"图，因此可以将其隐藏。  导航到 [隐藏概述窗格](./reference.md#hide-the-overview-pane)。
 
 1.  打开 DevTools 后，它会在网络日志中记录网络活动。
     若要演示这一点，请首先查看**网络日志** 的底部，并记下上一次活动。
@@ -162,7 +162,7 @@ ms.locfileid: "12139939"
        **空缓存和硬重新加载**
     :::image-end:::
 
-    在重复访问时，浏览器通常会从[缓存][MDNHTTPCache]中提供一些文件，从而加快页面加载速度。  **空缓存和硬重新加载** 会强制浏览器访问所有资源的网络。  使用它来显示第一次访问者如何体验页面加载。
+    在重复访问时，浏览器通常会从[缓存](https://developer.mozilla.org/docs/Web/HTTP/Caching)中提供一些文件，从而加快页面加载速度。  **空缓存和硬重新加载** 会强制浏览器访问所有资源的网络。  使用它来显示第一次访问者如何体验页面加载。
 
     > [!NOTE]
     > **空缓存和硬重新加载**工作流仅在 DevTools 打开时可用。
@@ -222,7 +222,7 @@ ms.locfileid: "12139939"
     :::image-end:::
 
     > [!TIP]
-    > 缩小文件时，选择"响应 (底部的"**** 设置) 格式"按钮，以重新设置文件内容的格式，实现 ![ ](../media/format-icon.msft.png) 可读性。 ****
+    > 缩小文件时，选择"响应 (底部的"**** 设置) 格式"按钮，以重新设置文件内容的格式，提高 ![ ](../media/format-icon.msft.png) 可读性。 ****
 
 1.  选择 **"计时"** 面板。  将显示资源的网络活动的细分。
 
@@ -308,7 +308,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
        属性筛选器
     :::image-end:::
 
-    有关可筛选属性的完整列表，请导航到 [按属性筛选请求][DevtoolsReferenceProperty]。
+    对于可筛选属性的完整列表，导航到按 [属性 筛选请求](./reference.md#filter-requests-by-properties)。
 
 1.  清除任何文本的“**筛选器**”文本框。
 
@@ -330,7 +330,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 
 1.  若要删除筛选器并再次显示所有资源，请选择"全部 **"。**
 
-对于其他筛选工作流，导航到 [Filter requests][DevtoolsNetworkReferenceFilter]。
+对于其他筛选工作流，导航到"[筛选请求"。](./reference.md#filter-requests)
 
 
 <!-- ====================================================================== -->
@@ -375,25 +375,15 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 
 恭喜，你已完成本教程。  现在，你已了解如何使用Microsoft Edge DevTools 中的**网络**工具！
 
-导航到 [Network Reference][DevtoolsNetworkReference] 以发现更多与检查网络活动相关的 DevTools 功能。
+导航到“[网络参考](./reference.md)”以发现与检查网络活动相关的更多 DevTools 功能。
 
 
 <!-- ====================================================================== -->
-<!-- links -->
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->
-[DevToolsCustomizePlacement]： ../customize/placement.md "Change Microsoft Edge DevTools placement |Microsoft Docs&quot; [DevtoolsNetworkReference]： ./reference.md &quot;Network analysis reference |Microsoft Docs&quot; [DevtoolsNetworkReferenceFilter]： ./reference.md#filter-requests &quot;Filter requests - Network analysis reference |Microsoft Docs&quot; [DevtoolsReferenceHideOverview]： ./reference.md#hide-the-overview-pane &quot;Hide the Overview pane - Network analysis reference |Microsoft Docs&quot; [DevtoolsReferenceProperty]： ./reference.md#filter-requests-by-properties &quot;Filter requests by properties - Network analysis reference |Microsoft Docs&quot; [DevToolsOpen]： ../open/index.md &quot;Open Microsoft Edge DevTools |Microsoft Docs&quot; [DevtoolsSpeedGetStarted]： ../speed/get-started.md DevTools Microsoft Edge优化网站|Microsoft Docs"
 
-[GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "检查网络活动演示 | 小故障"
-
-[MDNHTTPCache]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP 缓存 | MDN"
 
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/network/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [][KayceBasques]
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/network/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

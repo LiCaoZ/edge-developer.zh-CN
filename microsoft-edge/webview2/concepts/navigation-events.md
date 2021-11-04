@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: a2ffac5b3061094e30636b553b2c2dfd0f4c30ff
-ms.sourcegitcommit: 5c9e13989cd2ea1598c8ce69192babe63ab78ac3
+ms.openlocfilehash: d05f12468ec232a5ca0cf85e0334394e9b56e82f
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "12154946"
+ms.locfileid: "12155869"
 ---
 # <a name="navigation-events-for-webview2"></a>WebView2 的导航事件
 
 支持的平台：Win32、Windows Forms、WinUi、WPF。
 
-导航事件在 WebView2 实例中显示的内容发生特定异步操作时运行。  例如，当 WebView2 用户导航到新网站时，本机内容通过侦听事件来侦听 `NavigationStarting` 更改。  导航操作完成后，运行 `NavigationCompleted` 。  有关导航事件的良好示例，请参阅 [入门](../index.md#get-started)。
+导航事件在 WebView2 实例中显示的内容发生特定异步操作时运行。  例如，当 WebView2 用户导航到新网站时，本机内容通过侦听事件来侦听 `NavigationStarting` 更改。  导航操作完成后，运行 `NavigationCompleted` 。  有关导航事件的示例，请参阅特定于平台 [的入门](../index.md#get-started) 文章。
 
 <!--todo:  Move the relevant information out of the get started guide to better focus the content and leave the most concise elements in the get started guide.  -->
 

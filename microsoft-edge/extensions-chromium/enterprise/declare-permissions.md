@@ -7,12 +7,12 @@ ms.date: 03/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 0b494f1a4c0bf9ae29ab072cf00b45a7d71f869b
-ms.sourcegitcommit: f2c56030b2141eba01b534984579762421eff6aa
+ms.openlocfilehash: d04f5079533cec5e48d3b2e9eb2012a29ee64773
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12033714"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12157066"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -51,7 +51,7 @@ ms.locfileid: "12033714"
 |:--- |:--- |
 | `activeTab` | 请求根据规范向扩展授予 `activeTab` 权限。 |
 | `alarms` | 授予对 API 的扩展 `chrome.alarms` 访问权限。 |
-| `background` | 使Microsoft Edge提前启动并延迟关闭，以便扩展的生命周期更长。  如果任何安装的扩展具有权限，Microsoft Edge登录到用户的计算机，以及用户启动该扩展之前 `background` ，Microsoft Edge。  权限还使Microsoft Edge继续运行，即使其最后一个窗口已关闭，直到用户显式退出 `background` Microsoft Edge。  此权限不会影响浏览器中关闭的扩展。  `background`该权限通常在背景页上使用。 |
+| `background` | 使Microsoft Edge提前启动并延迟关闭，以便扩展的生命周期更长。  如果任何安装的扩展具有权限，Microsoft Edge只要用户登录到用户的计算机，以及用户启动 Microsoft Edge 之前，该扩展就会以不 `background` Microsoft Edge。  该权限还使Microsoft Edge继续运行，即使其最后一个窗口已关闭，直到用户显式退出 `background` Microsoft Edge。  此权限不会影响浏览器中关闭的扩展。  `background`该权限通常在背景页上使用。 |
 | `bookmarks` | 授予对 API 的扩展 `chrome.bookmarks` 访问权限。 |
 | `browsingData` | 授予对 API 的扩展 `chrome.browsingData` 访问权限。 |
 | `certificateProvider` | 授予对 API 的扩展 `chrome.certificateProvider` 访问权限。 |
@@ -63,7 +63,7 @@ ms.locfileid: "12033714"
 | `debugger` | 授予对 API 的扩展 `chrome.debugger` 访问权限。 |
 | `declarativeContent` | 授予对 API 的扩展 `chrome.declarativeContent` 访问权限。 |
 | `declarativeNetRequest` | 授予对 API 的扩展 `chrome.declarativeNetRequest` 访问权限。 |
-| `declarativeNetRequestFeedback` | 授予对 API 内事件和方法的扩展访问权限， `chrome.declarativeNetRequest` 这将返回有关匹配的声明性规则的信息。 |
+| `declarativeNetRequestFeedback` | 授予对 API 内事件和方法的扩展访问权限 `chrome.declarativeNetRequest` ，这将返回有关匹配的声明性规则的信息。 |
 | `declarativeWebRequest` | 授予对 API 的扩展 `chrome.declarativeWebRequest` 访问权限。 |
 | `desktopCapture` | 授予对 API 的扩展 `chrome.desktopCapture` 访问权限。 |
 | `documentScan` | 授予对 API 的扩展 `chrome.documentScan` 访问权限。 |
@@ -115,14 +115,10 @@ ms.locfileid: "12033714"
 | `webRequest` | 授予对 API 的扩展 `chrome.webRequest` 访问权限。 |
 | `webRequestBlocking` | 如果扩展使用 API 阻止 `chrome.webRequest` 请求，此为必需项。 |
 
-<!-- links -->
+
 
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/)。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

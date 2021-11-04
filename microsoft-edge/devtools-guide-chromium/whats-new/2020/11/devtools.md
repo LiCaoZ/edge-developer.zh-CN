@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 79e5953b2731d28b60be0f60cac3576030b0ce9d
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 7d09cd44a81ff4fb905e36343481e6cf519dade8
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140639"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156954"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -39,9 +39,9 @@ ms.locfileid: "12140639"
 <!-- Title: Microsoft Edge and Microsoft Edge Driver on Linux  -->
 <!-- Subtitle: Get Microsoft Edge Dev on Ubuntu, Debian, Fedora, and openSUSE distributions and start automating in CI/CD environments with Microsoft Edge Driver. -->
 
-Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上受到支持。  直接从 [Microsoft Edge 预览体验成员网站][MicrosoftinsiderDownloadPlatformLinux] 下载并安装 Microsoft Edge Dev `.deb` 或 `.rpm` 程序包，或使用 Linux 发行版的标准程序包管理工具。
+Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上受到支持。  直接从 [Microsoft Edge 预览体验成员网站](https://www.microsoftedgeinsider.com/download?platform=linux) 下载并安装 Microsoft Edge Dev `.deb` 或 `.rpm` 程序包，或使用 Linux 发行版的标准程序包管理工具。
 
-如果你在连续集成和交付 CI/CD 解决方案中使用 Linux 环境，Microsoft Edge 驱动程序也可在 Linux 上使用。  若要开始使用 Microsoft Edge 驱动程序自动执行 Microsoft Edge Dev，请导航至 [Microsoft Edge 驱动程序下载页][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]。  有关自动执行 Microsoft Edge Dev 以及 Microsoft Edge 驱动程序的帮助，请导航到 [使用 WebDriver 测试自动化][WebdriverMain]。
+如果你在连续集成和交付 CI/CD 解决方案中使用 Linux 环境，Microsoft Edge 驱动程序也可在 Linux 上使用。  若要开始使用 Microsoft Edge 驱动程序自动执行 Microsoft Edge Dev，请导航至 [Microsoft Edge 驱动程序下载页](https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads)。  有关自动执行 Microsoft Edge Dev 以及 Microsoft Edge 驱动程序的帮助，请导航到 [使用 WebDriver 测试自动化](../../../../webdriver-chromium/index.md)。
 
 :::image type="complex" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="Microsoft Edge Linux 版中的 DevTools" lightbox="../../media/2020/11/edge-on-linux.msft.png":::
    Microsoft Edge Linux 版中的 DevTools
@@ -54,18 +54,18 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 <!-- Title: Improvements to Issues tool and webhint integration  -->
 <!-- Subtitle: Categories and third-party filtering make it easier to survey issues in the Issues tool.  Issues surfaced by webhint now have improved code snippets and documentation links to help you fix problems in your website.  -->
 
-开源工具 [Webhint][WebhintMain] 为网站和本地网页提供实时反馈。  自 [Microsoft Edge 版本 85][WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel] 开始，在[问题] [DevtoolsIssuesIndex]工具中查看Webhint 反馈。  现在，通过添加以下类别，可以更轻松地审阅 **问题** 工具中出现的问题。
+开源工具 [Webhint](https://webhint.io) 为网站和本地网页提供实时反馈。  从 [Microsoft Edge 版本 85](../06/devtools.md#webhint-feedback-in-the-issues-panel) 开始，在 [问题](../../../issues/index.md) 工具中审阅 Webhint 反馈。  现在，通过添加以下类别，可以更轻松地审阅 **问题** 工具中出现的问题。
 
-*   [辅助功能][WebhintUserGuideHintsAccessibility]
-*   [兼容性][WebhintUserGuideHintsCompatibility]
-*   [性能][WebhintUserGuideHintsPerformance]
-*   [隐患][WebhintUserGuideHintsPitfalls]
-*   [PWA][WebhintUserGuideHintsPwa]
-*   [安全性][WebhintUserGuideHintsSecurity]
+*   [辅助功能](https://webhint.io/docs/user-guide/hints/accessibility)
+*   [兼容性](https://webhint.io/docs/user-guide/hints/compatibility)
+*   [性能](https://webhint.io/docs/user-guide/hints/performance)
+*   [隐患](https://webhint.io/docs/user-guide/hints/pitfalls)
+*   [PWA](https://webhint.io/docs/user-guide/hints/pwa)
+*   [安全性](https://webhint.io/docs/user-guide/hints/security)
 
 你现在可以使用新复选框筛选出第三方问题。  筛选器功能可帮助你隐藏第三方库或其他源中与代码相关的问题。
 
-为帮助审阅 [Webhint][WebhintMain] 显示的问题，**问题** 工具现在显示以下信息。
+为帮助审阅 [Webhint](https://webhint.io) 显示的问题，**问题** 工具现在显示以下信息。
 
 *   改进的代码段。
 *   指向其他相关面板的链接。
@@ -84,7 +84,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-现在，你可以将 **Layers** 内容、z-index 值以及文档对象模型 (DOM) 模型一起可视化。  此功能可帮助你进行调试，无需在 [3D 视图][Devtools3dViewIndex] 和 **图层工具** 之间切换。  为获得全面的视觉调试体验， [已将3D 视图和复合层组合到一起][Devtools3dViewIndex]。
+现在，你可以将 **Layers** 内容、z-index 值以及文档对象模型 (DOM) 模型一起可视化。  此功能可帮助你进行调试，无需在 [3D 视图](../../../3d-view/index.md) 和 **图层工具** 之间切换。  为获得全面的视觉调试体验， [已将3D 视图和复合层组合到一起](../../../3d-view/index.md)。
 
 :::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="复合层窗格" lightbox="../../media/2020/11/experiments-layers.msft.png":::
    **复合层** 窗格
@@ -97,7 +97,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 <!-- Title: Jump to CSS variable definitions  -->
 <!-- Subtitle: Choose any CSS variable to navigate directly to the definition in the Styles tool. -->
 
-在 **样式** 窗格中，[CSS变量][MdnUsingCssCustomProperties] 现在直接链接到每个定义。  选择变量以轻松查看或更改 CSS 变量定义。  在示例中，DevTools 显示 `body` 元素的 CSS 属性。  若要显示 `--theme-body-background` CSS 变量的变量定义，请完成以下操作。
+在 **样式** 窗格中，[CSS变量](https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties) 现在直接链接到每个定义。  选择变量以轻松查看或更改 CSS 变量定义。  在示例中，DevTools 显示 `body` 元素的 CSS 属性。  若要显示 `--theme-body-background` CSS 变量的变量定义，请完成以下操作。
 
 1.  在 **样式** 窗格中，选择 `var(--theme-body-background)`。
 1.  **样式** 窗格现在显示 `--theme-body-background` CSS 变量的定义。
@@ -120,7 +120,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 <!-- Title:  Service worker debugging improvements in the Network, Application, and Sources tools  -->
 <!-- Subtitle:  Making service workers easier to debug for progressive web applications and more.  -->
 
-[网络](#network-tool)、[应用程序](#application-tool) 和 [源](#sources-tool) 工具中的以下新功能可帮助您构建 [PWA][ProgressiveWebAppsIndex]。  在调试服务工作线程遇到困难时，请使用以下功能。
+[网络](#network-tool)、[应用程序](#application-tool) 和 [源](#sources-tool) 工具中的以下新功能可帮助您构建 [PWA](../../../../progressive-web-apps-chromium/index.md)。  在调试服务工作线程遇到困难时，请使用以下功能。
 
 请求路由显示基于通过服务工作线程运行的网络请求的 `startup` 和 `fetch` 事件。  通过 **应用程序** 或 **网络工具** 访问时间线。  当你与服务人员遇到问题，并且想要显示内容或事件有问题时，日程表`startup``fetch`帮助。
 
@@ -151,7 +151,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 ### <a name="network-tool"></a>网络工具
 
-调试通过服务工作线程运行的网络请求。  您还可以从 **应用程序** 工具打开网络请求。  对于每个请求，开发工具在 [Timing][DevtoolsNetworkReferenceDisplayTimingBreakdownRequest] 窗格中显示以下信息。
+调试通过服务工作线程运行的网络请求。  您还可以从 **应用程序** 工具打开网络请求。  对于每个请求，DevTools 在 [计时](../../../network/reference.md#display-the-timing-breakdown-of-a-request) 窗格中显示以下信息。
 
 *   请求开示和启动持续时间。
 *   对服务工作线程注册的更改。
@@ -189,9 +189,9 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 在 **网络** 工具中，使用新的 **复制值** 选项复制网络请求的属性值。  将属性值复制为解码的 JSON 值。  在旧版 Microsoft Edge 中，必须执行下列操作之一复制值。
 
 *   突出显示并复制整个文本。
-*   将值存储为全局变量（如果适用），然后从 DevTools [控制台][DevtoolsConsoleIndex] 将其复制。
+*   将值存储为全局变量（如果适用），然后从 DevTools [控制台](../../../console/index.md) 将其复制。
 
-若要将属性值复制到剪贴板，导航至 [复制格式化响应 JSON 到剪贴板][DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]。  若要审阅 Chromium 开源项目中此功能的历史记录，请导航至问题[1132084][CR1132084]。
+若要将属性值复制到剪贴板，导航至 [复制格式化响应 JSON 到剪贴板](../../../network/reference.md#copy-formatted-response-json-to-the-clipboard)。  若要审阅 Chromium 开源项目中此功能的历史记录，请导航至问题[1132084](https://crbug.com/1132084)。
 
 :::row:::
    :::column span="":::
@@ -213,9 +213,9 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-[自 Microsoft Edge 版本 87][WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings] 起，可以为 DevTools 中任何操作自定义键盘快捷方式。  在 Microsoft Edge 版本 88 中，现在可以创建多键连发快捷方式。  若要在 DevTools 中为某个操作设置快捷方式，请导航至 [设置][DevtoolsCustomizeIndexSettings] > **实验**，并选中 **启用键盘快捷方式编辑器** 旁边的复选框。  有关自定义和编辑快捷方式的详细信息，请导航到“[编辑开发工具中任何操作的键盘快捷方式][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]”。
+[自 Microsoft Edge 版本 87](../10/devtools.md#customize-keyboard-shortcuts-in-settings) 起，可以为 DevTools 中任何操作自定义键盘快捷方式。  在 Microsoft Edge 版本 88 中，现在可以创建多键连发快捷方式。  若要在 DevTools 中为某个操作设置快捷方式，请导航至 [设置](../../../customize/index.md#settings) > **实验**，并选中 **启用键盘快捷方式编辑器** 旁边的复选框。  有关自定义和编辑快捷方式的详细信息，请导航到“[编辑开发工具中任何操作的键盘快捷方式](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action)”。
 
-例如，红色高亮显示的是为 **开始录制事件** 操作而自定义的多键连发键盘快捷方式。  若要在 Chromium 开源项目中查看此功能实时更新，请导航至 [问题 #174309][CR174309]。
+例如，红色高亮显示的是为 **开始录制事件** 操作而自定义的多键连发键盘快捷方式。  若要在 Chromium 开源项目中查看此功能实时更新，请导航至 [问题 #174309](https://crbug.com/174309)。
 
 :::image type="complex" source="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png" alt-text="和弦键盘快捷方式" lightbox="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png":::
    多键连发键盘快捷方式
@@ -225,7 +225,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 <!-- ====================================================================== -->
 ## <a name="devtools-now-match-browser-language"></a>DevTools 现已匹配浏览器语言
 
-在 Microsoft Edge 版本 87 中，如果在 [DevTools 设置][DevtoolsCustomizeIndexSettings] 中打开 **匹配浏览器语言** 设置，则 DevTools 不会匹配浏览器语言。  在 Microsoft Edge 版本 88 中，如果打开 **匹配浏览器语言** 设置，则 DevTools 现在与浏览器语言匹配。  有关 **Match 浏览器语言** DevTools 设置的详细信息，请导航至 [更改 DevTools 语言设置][DevtoolsCustomizeLocalization]。
+在 Microsoft Edge 版本 87 中，如果在 [DevTools 设置](../../../customize/index.md#settings) 中打开 **匹配浏览器语言** 设置，则 DevTools 不会匹配浏览器语言。  在 Microsoft Edge 版本 88 中，如果打开 **匹配浏览器语言** 设置，则 DevTools 现在与浏览器语言匹配。  有关 **Match 浏览器语言** DevTools 设置的详细信息，请导航至 [更改 DevTools 语言设置](../../../customize/localization.md)。
 
 :::image type="complex" source="../../media/2020/11/startpage-devtools-settings-japanese.msft.png" alt-text="匹配浏览器语言 DevTools 设置（日语）" lightbox="../../media/2020/11/startpage-devtools-settings-japanese.msft.png":::
    **匹配浏览器语言** DevTools 设置（日语）
@@ -239,7 +239,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 ### <a name="new-css-angle-visualization-tools"></a>全新 CSS 角度可视化工具
 
-现在，DevTools 可以更好地支持 CSS 角度调试。  如果页面上 HTML 元素应用 CSS 角度，**样式** 工具中该角度旁边会显示一个时钟图标。  若要切换时钟覆盖层，请选择时钟图标。  若要更改角度，请选择时钟中的任何位置或拖动指针。  若要更改角度值，还可使用鼠标和键盘快捷方式。  <!--  To learn more, navigate to [Angle Clock][DevtoolsCssReferenceChangeAngleValueWithAngleClock].  -->  若要在 Chromium 开源项目中查看此功能实时更新，请导航到“问题” [1126178][CR1126178] 和 [1138633][CR1138633]。
+现在，DevTools 可以更好地支持 CSS 角度调试。  如果页面上 HTML 元素应用 CSS 角度，**样式** 工具中该角度旁边会显示一个时钟图标。  若要切换时钟覆盖层，请选择时钟图标。  若要更改角度，请选择时钟中的任何位置或拖动指针。  若要更改角度值，还可使用鼠标和键盘快捷方式。  <!--  To learn more, navigate to [Angle Clock][DevtoolsCssReferenceChangeAngleValueWithAngleClock].  -->  若要在 Chromium 开源项目中查看此功能实时更新，请导航到“问题” [1126178](https://crbug.com/1126178) 和 [1138633](https://crbug.com/1138633)。
 
 <!--todo:  add link when css angle clock section exists.  -->
 
@@ -261,7 +261,7 @@ background: linear-gradient(100deg, lightblue, pink);
 1.  打开 **模拟自定义存储配额** 复选框。
 1.  输入有效号码。
 
-若要了解如何在 DevTools 中模拟移动设备和其他功能的详细信息，请导航至 [在 Microsoft Edge DevTools 中模拟移动设备移动设备][DevtoolsDeviceModeIndex]。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [945786][CR945786] 和 [1146985][CR1146985]。
+若要了解如何在 DevTools 中模拟移动设备和其他功能的详细信息，请导航至 [在 Microsoft Edge DevTools 中模拟移动设备移动设备](../../../device-mode/index.md)。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [945786](https://crbug.com/945786) 和 [1146985](https://crbug.com/1146985)。
 
 :::image type="complex" source="../../media/2020/11/storage-quota.msft.png" alt-text="模拟存储配额大小" lightbox="../../media/2020/11/storage-quota.msft.png":::
    模拟存储配额大小
@@ -269,7 +269,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 ### <a name="report-cors-errors-in-the-network-tool"></a>报告网络工具中的 CORS 错误
 
-通过导航至 [CORS 错误演示][GlitchCorsErrors] 尝试此功能。  打开 **网络** 工具，刷新页面，并观察失败的 CORS 网络请求。  状态列显示 **CORS 错误**。  将鼠标悬停在错误上时，工具提示现在将显示错误代码。  在 Microsoft Edge 版本 87 及更早版本中，DevTools 只显示CORS 错误的一般 **（失败）** 状态。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至问题[1141824][CR1141824]。
+通过导航至 [CORS 错误演示](https://cors-errors.glitch.me) 尝试此功能。  打开 **网络** 工具，刷新页面，并观察失败的 CORS 网络请求。  状态列显示 **CORS 错误**。  将鼠标悬停在错误上时，工具提示现在将显示错误代码。  在 Microsoft Edge 版本 87 及更早版本中，DevTools 只显示CORS 错误的一般 **（失败）** 状态。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至问题[1141824](https://crbug.com/1141824)。
 
 :::image type="complex" source="../../media/2020/11/cors-err.msft.png" alt-text="CORS 错误" lightbox="../../media/2020/11/cors-err.msft.png":::
    CORS 错误
@@ -279,7 +279,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 #### <a name="cross-origin-isolation-information-in-the-frame-details-view"></a>框架详细信息视图中的跨域隔离信息
 
-现在，跨域隔离状态在 **安全性和隔离** 区域下显示。  新的 **API 可用性** 部分显示 `SharedArrayBuffer` (SAB) 的可用性，以及是否可以使用 `postMessage()` 共享缓冲区。  弃用警告显示 SAB 和 `postMessage()` 当前是否可用，但上下文并非跨域隔离。  有关跨域隔离以及为何需要如 `SharedArrayBuffers` 一样的功能的详细信息 ，请导航至 [WindowOrWorkerGlobalScope.crossOriginIsolated][MdnWindoworworkerglobalscopeCrossoriginisolated]。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [1139899][CR1139899]。
+现在，跨域隔离状态在 **安全性和隔离** 区域下显示。  新的 **API 可用性** 部分显示 `SharedArrayBuffer` (SAB) 的可用性，以及是否可以使用 `postMessage()` 共享缓冲区。  弃用警告显示 SAB 和 `postMessage()` 当前是否可用，但上下文并非跨域隔离。  有关跨域隔离以及为何需要如 `SharedArrayBuffers` 一样的功能的详细信息 ，请导航至 [WindowOrWorkerGlobalScope.crossOriginIsolated](https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated)。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [1139899](https://crbug.com/1139899)。
 
 :::image type="complex" source="../../media/2020/11/frame-cross-origin-isolated-api.msft.png" alt-text="跨域信息" lightbox="../../media/2020/11/frame-cross-origin-isolated-api.msft.png":::
    跨域信息
@@ -294,7 +294,7 @@ background: linear-gradient(100deg, lightblue, pink);
 1.  展开 **工作线程** 树。
 1.  选择工作线程。
 
-若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [1122507][CR1122507] 和 [1051466][CR1051466]。
+若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [1122507](https://crbug.com/1122507) 和 [1051466](https://crbug.com/1051466)。
 
 :::image type="complex" source="../../media/2020/11/application-frames-service-workers.msft.png" alt-text="Web 工作线程信息" lightbox="../../media/2020/11/application-frames-service-workers.msft.png":::
    Web 工作线程信息
@@ -302,7 +302,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 #### <a name="display-opener-frame-details-for-opened-windows"></a>显示已打开窗口的原框架详细信息
 
-现在，DevTools 在相关的父 [框架][MdnWindowFrames] 下组织已打开的 [窗口][MdnWindowConstructors]。  例如，如果 `top` 框架打开 `Window` 到 `https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium`， 则框架 `Window` 将显示在 **列表** 中的 `top` 之下。
+现在，DevTools 在相关的父 [框架](https://developer.mozilla.org/docs/Web/API/Window/frames) 下组织已打开的 [窗口](https://developer.mozilla.org/docs/Web/API/Window#Constructors)。  例如，如果 `top` 框架打开 `Window` 到 `https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium`， 则框架 `Window` 将显示在 **列表** 中的 `top` 之下。
 
 若要显示负责在 **元素** 工具中打开另一个窗口的框架，请完成以下操作。
 
@@ -316,7 +316,7 @@ background: linear-gradient(100deg, lightblue, pink);
 1.  选择已打开窗口以打开 `Window` 详细信息。
 1.  选择 **原框架** 链接。
 
-若要查看 Chromium 开源项目中此功能的历史记录，请导航到问题 [1107766][CR1107766]。
+若要查看 Chromium 开源项目中此功能的历史记录，请导航到问题 [1107766](https://crbug.com/1107766)。
 
 :::image type="complex" source="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png" alt-text="已打开框架的详细信息" lightbox="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png":::
    已打开框架的详细信息
@@ -329,7 +329,7 @@ background: linear-gradient(100deg, lightblue, pink);
 1.  打开上下文菜单（右键单击）。
 1.  选择 **复制** > **复制堆栈跟踪**。
 
-若要查看 Chromium 开源项目中此功能的历史记录，请导航至问题 [1139615][CR1139615]。
+若要查看 Chromium 开源项目中此功能的历史记录，请导航至问题 [1139615](https://crbug.com/1139615)。
 
 :::image type="complex" source="../../media/2020/11/copy-stacktrace.msft.png" alt-text="复制堆栈跟踪" lightbox="../../media/2020/11/copy-stacktrace.msft.png":::
    复制堆栈跟踪
@@ -337,7 +337,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 ### <a name="preview-wasm-variable-value-on-mouseover"></a>鼠标悬停时预览 Wasm 变量值
 
-代码暂停时，使用此功能检查 WebAssembly (Wasm) 变量的值。  若要显示变量的当前值，请将鼠标悬停在变量上。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [1058836][CR1058836] 和 [1071432][CR1071432]。
+代码暂停时，使用此功能检查 WebAssembly (Wasm) 变量的值。  若要显示变量的当前值，请将鼠标悬停在变量上。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [1058836](https://crbug.com/1058836) 和 [1071432](https://crbug.com/1071432)。
 
 :::image type="complex" source="../../media/2020/11/wasm-mouseover.msft.png" alt-text="鼠标悬停时预览 Wasm 变量" lightbox="../../media/2020/11/wasm-mouseover.msft.png":::
    鼠标悬停时预览 Wasm 变量
@@ -350,90 +350,23 @@ background: linear-gradient(100deg, lightblue, pink);
 *   `kB` 或千字节 (10^3 或 1000 字节)
 *   `KiB` 或 kibibyte (2^10 或 1024 字节)
 
-例如，**网络** 工具以前在标签中使用 `kB`，但在计算中使用 `KiB`。  您的反馈表明这种前后矛盾导致混淆。  若要查看 Chromium 开源项目中此功能的历史记录，请导航至问题 [1035309][CR1035309]。
+例如，**网络** 工具以前在标签中使用 `kB`，但在计算中使用 `KiB`。  您的反馈表明这种前后矛盾导致混淆。  若要查看 Chromium 开源项目中此功能的历史记录，请导航至问题 [1035309](https://crbug.com/1035309)。
 
 
 <!-- ====================================================================== -->
 ## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道
 
-如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
+如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道](https://www.microsoftedgeinsider.com/download)作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: ../10/devtools.md#customize-keyboard-shortcuts-in-settings "在“设置”中自定义键盘快捷方式 - DevTools 中的新增功能 (Microsoft Edge 87)| Microsoft Docs"
-[WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: ../06/devtools.md#webhint-feedback-in-the-issues-panel "问题面板中的 webhint 反馈 - DevTools 中的新增功能 (Microsoft Edge 85) | Microsoft Docs"
-
-[Devtools3dViewIndex]: ../../../3d-view/index.md "3D 视图 | Microsoft Docs"
-[DevtoolsConsoleIndex]: ../../../console/index.md "控制台概述 | Microsoft Docs"
-[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "设置 - 自定义 Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCustomizeLocalization]: ../../../customize/localization.md "更改 DevTools 语言设置 | Microsoft Docs"
-[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action "编辑 DevTools 操作的键盘快捷方式 | Microsoft Docs"
-[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "在 Microsoft Edge DevTools 中模拟移动设备 | Microsoft Docs"
 <!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  -->
 <!--  [DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: ../../../experimental-features/index.md#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  -->
-[DevtoolsIssuesIndex]: ../../../issues/index.md“使用问题工具查找并修复问题 | Microsoft Docs”[DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: ../../../network/reference.md#copy-formatted-response-json-to-the-clipboard“格式化的响应 JSON 复制到剪贴板 - 网络分析参考 | Microsoft Docs”[DevtoolsNetworkReferenceDisplayTimingBreakdownRequest]: ../../../network/reference.md#display-the-timing-breakdown-of-a-request“显示请求的时间分析 - 网络分析参考 | Microsoft Docs”
-
 <!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: ../../../css/reference.md#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS features reference | Microsoft Docs"  -->
 
-[ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index.md "Windows 上的渐进式 Web 应用 | Microsoft Docs"
-
-[WebdriverMain]: ../../../../webdriver-chromium/index.md "使用 WebDriver 测试自动化 | Microsoft Docs"
-
-[MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "下载 WebDriver | Microsoft 开发人员"
-
-[MicrosoftinsiderDownloadPlatformLinux]: https://www.microsoftedgeinsider.com/download?platform=linux "下载 Microsoft Edge 预览体验成员频道"
-
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge 预览频道"
-
-[VisualStudioCodeMain]: https://code.visualstudio.com "Visual Studio 代码"
-
-[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium 漏洞"
-
-[CR174309]: https://crbug.com/174309 "问题 174309：DevTools：允许自定义键盘快捷方式/键绑定 | Chromium 漏洞"
-[CR945786]: https://crbug.com/945786 "问题 945786：DevTools：允许替代 navigator.storage.estimate () | Chromium 漏洞"
-[CR1029427]: https://crbug.com/1029427 "问题 1029427：减少前端协议消息调度的性能开销 | Chromium 漏洞"
-[CR1035309]: https://crbug.com/1035309 "问题 1035309：DevTools 应始终使用 MB 而不是 mebibyte 表示兆字节 | Chromium 漏洞"
-[CR1051466]: https://crbug.com/1051466 "问题 1051466：在 DevTools 中支持 COOP/COEP 调试 | Chromium 漏洞"
-[CR1058836]: https://crbug.com/1058836 "问题 1058836：关于 Wasm 调试的 UX 问题 | Chromium 漏洞"
-[CR1071432]: https://crbug.com/1071432 "问题 1071432：☂️ Wasm 基本开发人员体验 | Chromium 漏洞"
-[CR1107766]: https://crbug.com/1107766 "问题 1107766：显示有关框架树中的“window.open ()”生成的框架的信息 |Chromium 漏洞"
-[CR1122507]: https://crbug.com/1122507 "问题 1122507：帧树视图中的 Surface 工作线程信息 | Chromium 漏洞"
-[CR1126178]: https://crbug.com/1126178 "问题 1126178：☂ DevTools：CSS <类型> 组件 | Chromium 漏洞"
-[CR1130556]: https://crbug.com/1130556 "问题 1130556：DevTools：测试映像回退（模拟）| Chromium 漏洞"
-[CR1132084]: https://crbug.com/1132084 "问题 1132084：无法轻松复制 JSON 请求有效负载 | Chromium 漏洞"
-[CR1136394]: https://crbug.com/1136394 "问题 1136394：弹性框工具 |Chromium 漏洞"
-[CR1138633]: https://crbug.com/1138633 "问题 1138633：DevTools：CSS <角度> 组件应反映其驻留属性在时钟背景中的外观 | Chromium 漏洞"
-[CR1139615]: https://crbug.com/1139615 "问题 1139615：网络发起程序应提供复制堆栈跟踪的能力 | Chromium 漏洞"
-[CR1139899]: https://crbug.com/1139899 "问题 1139899：在帧详细信息视图中报告封闭的 API 的可用性 | Chromium 漏洞"
-[CR1139945]: https://crbug.com/1139945 "问题 1139945：样式面板中弹性框 CSS 属性的图标 | Chromium 漏洞"
-[CR1141824]: https://crbug.com/1141824 "问题 1141824：改进 DevTools 中的 CORS 错误报告 | Chromium 漏洞"
-[CR1144090]: https://crbug.com/1144090 "问题 1144090：将弹性样式修饰器添加到元素树 |Chromium 漏洞"
-[CR1146985]: https://crbug.com/1146985 "问题 1146985：清除的文本仍显示于 Dev Tools 窗口的“存储”部分文本框中 | Chromium 漏洞"
-
-[GlitchCorsErrors]: https://cors-errors.glitch.me "CORS 错误 | 故障"
-
-[MdnCors]: https://developer.mozilla.org/docs/Web/HTTP/CORS "跨域资源共享 (CORS) | MDN"
-[MdnUsingCssCustomProperties]: https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties "使用 CSS 自定义属性（变量）| MDN"
-[MdnWindowConstructors]: https://developer.mozilla.org/docs/Web/API/Window#Constructors "构造函数 - 窗口 | MDN"
-[MdnWindowFrames]: https://developer.mozilla.org/docs/Web/API/Window/frames "Window.frames | MDN"
-[MdnWindoworworkerglobalscopeCrossoriginisolated]: https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated "WindowOrWorkerGlobalScope.crossOriginIsolated | MDN"
-
-[WebhintMain]: https://webhint.io "webhint"
-[WebhintUserGuideHintsAccessibility]: https://webhint.io/docs/user-guide/hints/accessibility "辅助功能 | webhint"
-[WebhintUserGuideHintsCompatibility]: https://webhint.io/docs/user-guide/hints/compatibility "兼容性 | webhint"
-[WebhintUserGuideHintsPerformance]: https://webhint.io/docs/user-guide/hints/performance "性能 | webhint"
-[WebhintUserGuideHintsPitfalls]: https://webhint.io/docs/user-guide/hints/pitfalls "隐患 | webhint"
-[WebhintUserGuideHintsPwa]: https://webhint.io/docs/user-guide/hints/pwa "PWA | webhint"
-[WebhintUserGuideHintsSecurity]: https://webhint.io/docs/user-guide/hints/security "安全 | webhint"
 
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-88)，并由 [Jecelyn Yeen][JecelynYeen]  \（开发人员支持者，Chrome DevTools\）制作。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-88)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

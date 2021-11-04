@@ -7,16 +7,16 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， 扩展
-ms.openlocfilehash: b3820ae60c17d71fa9b28eb417fc5a795ea8fa9c
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: f88476efe57a6f8057fa359a396adc39bddc2483
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141829"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156625"
 ---
 # <a name="create-an-extension-tutorial-part-2"></a>创建扩展教程第 2 部分
 
-[此部件已完成的扩展包源][ArchiveExtensionGettingStartedPart2]
+[此部件已完成的扩展包源](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2)
 
 
 <!-- ====================================================================== -->
@@ -131,7 +131,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 
 原因是你使用 元素的 属性将图像 `src` `img` 注入内容页面。  内容页在运行扩展的线程不同的唯一线程上运行。  必须将静态图像文件公开为 Web 资产，它必须能够正常工作。
 
-在文件中添加另 `manifest.json` 一项以声明该图像可供所有浏览器选项卡使用。  添加内容脚本声明 (应在下面的完整文件中看到该条目，如下所示 `manifest.json`) 。
+在文件中添加另 `manifest.json` 一项以声明该图像可供所有浏览器选项卡使用。  在添加即将 (的内容脚本声明时，应该可以看到下面的完整 `manifest.json`) 。
 
 ```json
 "web_accessible_resources": [
@@ -215,7 +215,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 *   第一个脚本行将一个必须作为类分配给元素的节动态插入到 DOM **\<style\>** `slide-image` 标头 `img` 中。
 *   第二个脚本行在浏览器选项卡的 正下方追加一个元素，该元素分配了 类，并将 `img` `body` 作为该 `slide-image` `imageDivId` 图像元素的 ID。
-*   第三个脚本行添加一个涵盖整个图像的事件，允许用户选择图像上的任意位置，并且该图像将从页面 (以及事件侦听器文件中删除 `click`) 。
+*   第三个脚本行添加一个涵盖整个图像的事件，允许用户选择图像上的任意位置，并且该图像将从页面中删除 (它是事件侦听器 `click`) 。
 
 8. 添加功能以在选中时删除显示的图像
 
@@ -234,10 +234,3 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 :::image-end:::
 
 你已创建一个扩展，该扩展从扩展图标弹出窗口成功发送消息，并动态插入作为浏览器选项卡上的内容运行的 JavaScript。 注入的内容设置图像元素以显示静态星形 jpeg。
-
-<!-- image links -->
-
-
-<!-- links -->
-
-[ArchiveExtensionGettingStartedPart2]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2 "已完成的扩展包源|Microsoft Docs"

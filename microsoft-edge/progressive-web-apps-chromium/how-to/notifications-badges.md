@@ -1,6 +1,6 @@
 ---
-title: 使用通知、推送通知和锁屏提醒重新吸引用户
-description: 了解如何使用推送通知、通知和广告 API 在渐进 Web 应用应用中提供重新吸引 (PWA) 。
+title: 使用通知、推送消息和徽章重新吸引用户
+description: 了解如何使用推送通知、通知和广告 API 在渐进式 Web 应用应用中提供重新 (PWA) 。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/17/2021
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进式 Web 应用， PWA， Edge， Windows， 推送， 通知， 锁屏提醒
-ms.openlocfilehash: 9c6290d1f5af7b8f1a12dee1829fa278b2a414ba
-ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
+ms.openlocfilehash: bd3e31c110f7927f3fd388d2ad8a305e7235f9fd
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "12087088"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155337"
 ---
-# <a name="re-engage-users-with-notifications-push-messages-and-badges"></a>使用通知、推送通知和锁屏提醒重新吸引用户
+# <a name="re-engage-users-with-notifications-push-messages-and-badges"></a>使用通知、推送消息和徽章重新吸引用户
 
-使用后台同步、定期后台同步和后台提取，渐进 Web 应用能够在应用未运行时工作，例如更新缓存数据或在设备重新获得连接时发送消息。  若要重新吸引用户使用该应用，后台任务完成后，可以使用通知和锁屏提醒。
+使用后台同步、定期后台同步和后台提取，渐进 Web 应用能够在应用未运行时工作，例如更新缓存数据或在设备重新连接时发送消息。  若要重新吸引用户使用该应用，后台任务完成后，可以使用通知和锁屏提醒。
 
 通知对于应用参与系统的通知中心并显示图像和文本信息非常有用。 通知对于提醒用户应用中状态的重要更改非常有用。 但是，通知通常会干扰用户的工作流，并且应该很少使用。
 
@@ -137,7 +137,7 @@ self.addEventListener('notificationclick', event => {
 <!-- ====================================================================== -->
 ## <a name="display-a-badge-on-the-app-icon"></a>在应用图标上显示锁屏提醒
 
-PWA 可以使用应用锁屏提醒 API 在应用图标 [上显示锁屏提醒][MDNAppBadgingAPI]。 锁屏提醒可以为空，也可以包含数字。
+PWA 可以使用应用锁屏提醒 API 在应用图标 [上显示锁屏提醒](https://developer.mozilla.org/docs/Web/API/Badging_API)。 锁屏提醒可以为空，也可以包含数字。
 
 ### <a name="check-for-support"></a>检查支持
 
@@ -175,7 +175,7 @@ navigator.setAppBadge(42).then(() => {
 
 ### <a name="clearing-the-badge"></a>清除锁屏提醒
 
-若要删除应用图标上的锁屏提醒，请使用来自前端或服务工作者的以下代码。
+若要删除应用图标上的锁屏提醒，请使用前端或服务工作者中的以下代码。
 
 ```javascript
 navigator.clearAppBadge();
@@ -196,21 +196,21 @@ navigator.setAppBadge(0);
 若要创建PWA推送通知的组：
 
 1.  使用推送 API 订阅 [消息传递服务](https://developer.mozilla.org/docs/Web/API/Push_API)。
-1.  从服务收到消息时，使用通知 API 显示 [Toast 消息](https://developer.mozilla.org/docs/Web/API/Notifications_API)。
+1.  当从服务接收消息时，使用通知 API 显示 [Toast 消息](https://developer.mozilla.org/docs/Web/API/Notifications_API)。
 
 与服务工作人员一样，推送通知 API 是基于标准的 API。  推送通知 API 跨浏览器工作，因此代码应在支持 PA 的任何地方运行。  有关将推送消息发送到服务器上不同浏览器的信息，请参阅 [Web 推送](https://www.npmjs.com/package/web-push)。
 
-以下步骤改编自 Mozilla 提供的服务工作者 [手册][ServiceWorkerCookbookPushRichDemo] 中的"推送丰富演示"。  本指南具有许多有用的 Web 推送和服务工作者方法。
+以下步骤改编自 Mozilla 提供的服务工作者 [手册](https://serviceworke.rs/push-rich_demo.html) 中的"推送丰富演示"。  本指南具有许多有用的 Web 推送和服务工作者方法。
 
 
 <!-- ====================================================================== -->
 ### <a name="step-1---generate-vapid-keys"></a>步骤 1 - 生成 VAPID 密钥
 
-推送通知需要 VAPID (自愿应用服务器标识) 密钥，才能将推送通知发送到 PWA 客户端。  可在线使用多个 VAPID 密钥生成器 ([例如][VapidkeysMain] ，vapidkeys.com) 。
+推送通知需要 VAPID (应用程序服务器标识) 密钥，才能将推送通知发送到 PWA 客户端。  联机支持多个 VAPID 密钥生成器 ([例如](https://vapidkeys.com) ，vapidkeys.com) 。
 
 生成密钥后，你将收到包含公钥和私钥的 JSON 对象。  保存 VAPID 密钥，供稍后在本教程中使用。
 
-有关 VAPID 和 WebPush 的信息，请参阅 [使用 Mozilla 推送][MozillaServicesSendingVapidWebPushNotificationsPush]服务发送 VAPID 标识的 WebPush 通知。
+有关 VAPID 和 WebPush 的信息，请参阅 [使用 Mozilla 推送](https://blog.mozilla.org/services/2016/08/23/sending-vapid-identified-webpush-notifications-via-mozillas-push-service)服务发送 VAPID 标识的 WebPush 通知。
 
 
 <!-- ====================================================================== -->
@@ -219,12 +219,12 @@ navigator.setAppBadge(0);
 服务工作人员在服务中处理推送事件和 toast 通知PWA。  若要订阅PWA推送通知，请执行以下操作：
 
 *   请确保你的PWA安装、激活和注册。
-*   确保用于完成订阅任务的代码位于订阅任务的主要 UI 线程PWA。
+*   确保用于完成订阅任务的代码位于用户主 UI 线程PWA。
 *   请确保具有网络连接。
 
 在新建推送订阅之前，Microsoft Edge检查用户是否已授予PWA接收通知的权限。
 
-如果用户尚未向用户授予PWA权限，浏览器会提示用户获取权限。  如果用户不向浏览器授予权限，则请求将引发 `registration.pushManager.subscribe` `DOMException` ，必须处理。  有关权限管理 More on， go to [Push Notifications in Microsoft Edge][WindowsBlogsWebNotificationsEdge].
+如果用户尚未向用户授予PWA权限，浏览器会提示用户获取权限。  如果用户不向浏览器授予权限，则请求将引发 `registration.pushManager.subscribe` `DOMException` ，必须处理。  有关权限管理 More on permission management， go to [Push Notifications in Microsoft Edge](https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge#UAbvU2ymUlHO8EUV.97).
 
 在 `pwabuilder-sw-register.js` 文件中，附加以下代码段：
 
@@ -264,18 +264,18 @@ function urlBase64ToUint8Array(base64String) {
 }
 ```
 
-另请参阅 [PushManager][MDNPushManager] 和 [Web 推送][NPMWebPushUsage]。
+另请参阅 [PushManager](https://developer.mozilla.org/docs/Web/API/PushManager) 和 [Web 推送](https://www.npmjs.com/package/web-push#usage)。
 
 
 <!-- ====================================================================== -->
 ### <a name="step-3---listen-for-push-notifications"></a>步骤 3 - 侦听推送通知
 
-在服务中创建订阅PWA，向服务工作者添加处理程序以响应推送事件。  推送事件从服务器发送以显示 Toast 通知。  Toast 通知显示已接收邮件的数据。  若要执行以下任一任务，必须添加 `click` 处理程序：
+在服务中创建订阅PWA，将处理程序添加到服务工作线程以响应推送事件。  推送事件从服务器发送以显示 Toast 通知。  Toast 通知显示已接收邮件的数据。  若要执行以下任一任务，必须添加 `click` 处理程序：
 
 *   消除 Toast 通知。
 *   打开窗口。
 *   将焦点放在窗口上。
-*   打开新窗口，将焦点放在新窗口上，以显示PWA页。
+*   打开焦点并放在新窗口上，以显示PWA页。
 
 若要在 `click` 文件中添加处理程序，请为 事件和 `pwabuilder-sw.js` 事件添加以下 `push` `notificationclick` 处理程序：
 
@@ -322,13 +322,13 @@ self.addEventListener('notificationclick', function (event) {
 
     :::image type="content" source="../media/notification-permission.png" alt-text="用于启用通知的权限对话框。" lightbox="../media/notification-permission.png":::
 
-1.  模拟服务器端推送通知，如下所示。  在浏览器中PWA `http://localhost:3000` 打开应用后，选择 `F12` 打开 DevTools。  选择 **"**  >  **应用程序服务工作**  >  **线程**推送"以将测试推送通知发送到PWA。
+1.  模拟服务器端推送通知，如下所示。  在浏览器中PWA `http://localhost:3000` 打开应用后，选择 `F12` 打开 DevTools。  选择 **"**  >  **应用程序服务工作**  >  **线程**推送"将测试推送通知发送到PWA。
 
     推送通知显示在任务栏附近。
 
     :::image type="content" source="../media/devtools-push.png" alt-text="从 DevTools 推送通知。" lightbox="../media/devtools-push.png":::
 
-    如果未选择" ("或) Toast__ 通知，系统会在几秒钟后自动关闭它，Windows操作中心中将其排好队列。
+    如果未选择" (或) Toast__ 通知，系统会在几秒钟后自动关闭它，Windows操作中心中将其排Windows队列。
 
     :::image type="content" source="../media/windows-action-center.png" alt-text="Windows操作中心中的通知。" lightbox="../media/windows-action-center.png":::
 
@@ -336,16 +336,4 @@ self.addEventListener('notificationclick', function (event) {
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*   [Web 推送通知演示][AzurewebsitesWebpushdemo]
-
-
-<!-- ====================================================================== -->
-<!-- external links -->
-[MDNAppBadgingAPI]: https://developer.mozilla.org/docs/Web/API/Badging_API "Badging API - Web API |MDN"
-[MDNPushManager]: https://developer.mozilla.org/docs/Web/API/PushManager "PushManager |MDN"
-[ServiceWorkerCookbookPushRichDemo]: https://serviceworke.rs/push-rich_demo.html "推送丰富演示|ServiceWorker Cookbook"
-[VapidkeysMain]: https://vapidkeys.com "安全 VAPID 密钥生成器|VapidKeys"
-[MozillaServicesSendingVapidWebPushNotificationsPush]: https://blog.mozilla.org/services/2016/08/23/sending-vapid-identified-webpush-notifications-via-mozillas-push-service "通过 Mozilla 的推送服务中心发送 VAPID 标识的 WebPush |Mozilla 服务"
-[WindowsBlogsWebNotificationsEdge]: https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge#UAbvU2ymUlHO8EUV.97 "Web 通知Microsoft Edge |Windows博客"
-[NPMWebPushUsage]: https://www.npmjs.com/package/web-push#usage "用法 - Web 推送|NPM"
-[AzurewebsitesWebpushdemo]: https://webpushdemo.azurewebsites.net "Web 推送通知| Microsoft Edge演示"
+*   [Web 推送通知演示](https://webpushdemo.azurewebsites.net)

@@ -7,19 +7,19 @@ ms.date: 06/02/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 9c2849a80b178d2ab9f279b44243b0e3ad43d687
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 1de5e3e4437ee84007db35237834680d3ac05b01
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140814"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155717"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-92"></a>DevTools 中的新增功能 (Microsoft Edge 92)
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
 > [!TIP]
-> **Microsoft Build 2021**会议于 5 月 25-27 日召开。  下面是来自 Build 关于 DevTools 最新消息的视频：[Microsoft Edge｜平台现状][YoutubeEdgeStateOfThePlatform] - Microsoft Edge 为开发人员提供了具有吸引力和一致性的平台。  随着旧版浏览器逐步退出支持，Edge 即将成为 Microsoft 或更高版本上唯一Windows 10浏览器。  加入我们，了解有关 Edge 平台、工具和 Web 应用的最新信息。
+> **Microsoft Build 2021**会议于 5 月 25-27 日召开。  下面是来自 Build 关于 DevTools 最新消息的视频：[Microsoft Edge｜平台现状](https://www.youtube.com/watch?v=sU0WRZ0kkNo) - Microsoft Edge 为开发人员提供了具有吸引力和一致性的平台。  随着旧版浏览器逐步淘汰支持，Edge 即将成为 Microsoft 在或更高版本上唯一Windows 10浏览器。  加入我们，了解有关 Edge 平台、工具和 Web 应用的最新信息。
 
 
 <!-- ====================================================================== -->
@@ -127,7 +127,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 有关详细信息，请导航到[使用源订单查看器测试键盘支持](../../../accessibility/test-tab-key-source-order-viewer.md)。
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1094406][CR1094406]。
+要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1094406](https://crbug.com/1094406)。
 
 
 <!-- ====================================================================== -->
@@ -144,22 +144,22 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 有关详细信息，请导航到[用户代理客户端提示](../../../../web-platform/user-agent-guidance.md#user-agent-client-hints)。
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1174299][CR1174299]。
+要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1174299](https://crbug.com/1174299)。
 
 
 <!-- ====================================================================== -->
 ## <a name="microsoft-edge-developer-tools-for-visual-studio-code-version-118"></a>适用于 Visual Studio Code 版本 1.1.8 的 Microsoft Edge 开发人员工具
 
-[适用于 Visual Studio Code 的 Microsoft Edge 开发人员工具][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]针对 Microsoft Visual Studio Code 的扩展版本 1.1.8 自上一个版本以来有以下更改。  Microsoft Visual Studio Code 会自动更新扩展。  要手动更新到版本 1.1.8，请导航至“[手动更新扩展][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]”。
+[适用于 Visual Studio Code 的 Microsoft Edge 开发人员工具](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)针对 Microsoft Visual Studio Code 的扩展版本 1.1.8 自上一个版本以来有以下更改。  Microsoft Visual Studio Code 会自动更新扩展。  要手动更新到版本 1.1.8，请导航至“[手动更新扩展](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually)”。
 
-你可以在 [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools] 上提交问题并参与扩展的改进。
+你可以在 [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools) 上提交问题并参与扩展的改进。
 
 ### <a name="in-context-documentation-and-ui-to-make-it-easier-to-use-the-devtools-extension"></a>通过上下文文档和 UI 更轻松地使用 DevTools 扩展
 
 <!-- Title: In-context documentation and UI make it easier to get started using the Developer Tools extension -->
 <!-- Subtitle: The Microsoft Edge Developer Tools for Visual Studio Code extension now presents helpful text, buttons, and links, and opens a documentation page with guidance on how to get started. -->
 
-[针对 Visual Studio Code 的 Microsoft Edge 开发人员工具][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]版本 1.1.8 现在提供了更简单的方法来启动新的 Microsoft Edge 实例，方法是提供说明、按钮、链接、文档页作为指南。
+[针对 Visual Studio Code 的 Microsoft Edge 开发人员工具](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)版本 1.1.8 现在提供了更简单的方法来启动新的 Microsoft Edge 实例，方法是提供说明、按钮、链接、文档页作为指南。
 
 *  在 Visual Studio Code的“**活动栏**”中选择“**Microsoft Edge 工具**”按钮时，“**Microsoft Edge 工具：目标**”面板现在会显示说明性文本、按钮和链接，而不是空白面板。
 
@@ -167,7 +167,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 *  **Microsoft Edge 工具：目标**面板现在具有**生成 launch.json**按钮和说明，以帮助启动项目以在 Microsoft Edge 中进行调试。
 
-有关详细信息，请导航至[使用工具][GithubIoDevToolsUsing]。
+有关详细信息，请导航至[使用工具](https://microsoft.github.io/vscode-edge-devtools/using.html)。
 
 
 <!-- ====================================================================== -->
@@ -188,7 +188,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 <!-- screenshot uses https://jec.fyi -->
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1203241][CR1203241]。
+要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1203241](https://crbug.com/1203241)。
 
 
 ### <a name="support-for-const-redeclarations-in-the-console"></a>在控制台中支持常量重新声明
@@ -206,7 +206,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 若要了解如何运行单个 REPL 脚本或多行 REPL 脚本，请导航到[控制台作为 JavaScript 环境](../../../console/console-javascript.md)。
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1076427][CR1076427]。
+要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1076427](https://crbug.com/1076427)。
 
 
 ### <a name="new-shortcut-to-view-iframe-details"></a>查看 iframe 详细信息的新快捷方式
@@ -225,7 +225,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 <!-- demo page: https://wolfib.github.io/web-demos/ esp https://wolfib.github.io/web-demos/jsIframe.html -->
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1192084][CR1192084]。
+要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1192084](https://crbug.com/1192084)。
 
 
 ### <a name="enhanced-cors-debugging-support"></a>增强的 CORS 调试支持
@@ -238,7 +238,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 <!-- screenshot uses http://cors-errors.glitch.me -->
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1141824][CR1141824]。
+要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1141824](https://crbug.com/1141824)。
 
 
 ### <a name="renamed-xhr-filter-to-fetchxhr"></a>已将 XHR 筛选器重命名为 Fetch\/XHR
@@ -250,10 +250,10 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 :::image-end:::
 
 有关详细信息，请导航至：
-*  [XMLHttpRequest spec][XhrSpecWhatwgOrg]
-*  [提取规范][FetchSpecWhatwgOrg]
+*  [XMLHttpRequest spec](https://xhr.spec.whatwg.org)
+*  [提取规范](https://fetch.spec.whatwg.org)
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1201398][CR1201398]。
+要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1201398](https://crbug.com/1201398)。
 
 
 ### <a name="filter-wasm-resource-type-in-the-network-tool"></a>在网络工具中筛选 Wasm 资源类型
@@ -266,7 +266,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 <!-- screenshot uses http://memory-inspector.glitch.me/demo-wasm.html -->
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1103638][CR1103638]。
+要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1103638](https://crbug.com/1103638)。
 
 
 ### <a name="compute-intersections-are-now-included-in-the-performance-tool"></a>计算交集现在包含在性能工具中
@@ -279,53 +279,18 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 <!-- screenshot uses https://googlechrome.github.io/samples/intersectionobserver -->
 
-有关交集观察程序的详细信息，请导航至[信任良好，观察效果更好：交集观察程序 v2][WebDevIntersectionObserverV2]。  有关使用火形图的信息，请导航到[分析性能记录][DevtoolsEvaluatePerfRefAnalyzeAPerfRecording]。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1199137][CR1199137]。
+有关交集观察程序的详细信息，请导航至[信任良好，观察效果更好：交集观察程序 v2](https://web.dev/intersectionobserver-v2)。  有关使用火形图的信息，请导航到[分析性能记录](../../../evaluate-performance/reference.md#analyze-a-performance-recording)。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1199137](https://crbug.com/1199137)。
 
 
 <!-- ====================================================================== -->
 ## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道
 
-如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
+如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道](https://www.microsoftedgeinsider.com/download)作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsEvaluatePerfRefAnalyzeAPerfRecording]: ../../../evaluate-performance/reference.md#analyze-a-performance-recording "分析性能录制 | Microsoft Docs"
-<!-- external links -->
-[XhrSpecWhatwgOrg]: https://xhr.spec.whatwg.org "XMLHttpRequest spec | WHATWG"
-[FetchSpecWhatwgOrg]: https://fetch.spec.whatwg.org "提取规范 | WHATWG"
-
-[WebDevIntersectionObserverV2]: https://web.dev/intersectionobserver-v2 "信任很好，观察效果更好：交集观察程序 v2 | web.dev"
-
-[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
-[GithubIoDevToolsUsing]: https://microsoft.github.io/vscode-edge-devtools/using.html "使用工具 | GitHub"
-
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge 预览频道"
-
-[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "手动更新扩展 - Extension Marketplace | Visual Studio Code"
-
-[VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Developer Tools for Visual Studio Code | Visual Studio Marketplace"
-
-[YoutubeEdgeStateOfThePlatform]: https://www.youtube.com/watch?v=sU0WRZ0kkNo "Microsoft Edge：平台现状 | Youtube"
-
-[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium 漏洞"
-[CR1094406]: https://crbug.com/1094406 "问题1094406：开发人员需要源订单查看器 | Chromium bug"
-[CR1174299]: https://crbug.com/1174299 "问题1174299：通过 Chrome DevTools 的网络条件选项卡重写 UA 字符串时 UA 客户端提示丢失 | Chromium bug"
-[CR1203241]: https://crbug.com/1203241 "问题1203241：CSS 网格编辑器 | Chromium bug"
-[CR1076427]: https://crbug.com/1076427 "问题1076427：DevTools 控制台应支持常量重新声明 | Chromium bug"
-[CR1192084]: https://crbug.com/1192084 "问题1192084：将“显示帧详细信息”右键单击选项添加到元素视图中的 iframe/html 标记 | Chromium bug"
-[CR1141824]: https://crbug.com/1141824 "问题 1141824：改进 DevTools 中的 CORS 错误报告 | Chromium 漏洞"
-[CR1201398]: https://crbug.com/1201398 "问题1201398：功能请求：重命名网络面板中的 XHR 类型筛选器 | Chromium bug"
-[CR1103638]: https://crbug.com/1103638 "问题1103638：用于显示 WebAssembly 资源的网络面板 | Chromium bug"
-[CR1199137]: https://crbug.com/1199137 "问题1199137：在性能面板中显示 IntersectionObserver 成本 | Chromium bug"
-
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-92) ，由 [Jecelyn Yeen][JecelynYeen] 和开发人员 (Chrome DevTools) 。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-92)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelynyeen
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

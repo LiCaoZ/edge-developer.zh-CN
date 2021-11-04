@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 07/30/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: b44a98a36424a074b372f00e210b60c5c1927775
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 90716942b9e4bd8205e9078e45ba1d9bba111b8b
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141885"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156758"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-93"></a>DevTools (Microsoft Edge 93 中的新增) 
 
@@ -46,7 +46,7 @@ ms.locfileid: "12141885"
 *  红色
 *  明天晚上蓝色
 
-有关详细信息，请导航到 [将颜色主题应用到 DevTools][CustomizeDarkTheme]。
+有关详细信息，请导航到 [将颜色主题应用到 DevTools](../../../customize/theme.md)。
 
 
 <!-- ====================================================================== -->
@@ -68,7 +68,7 @@ ms.locfileid: "12141885"
 
 若要打开此实验，请导航到 **"设置**  >  **实验**"，然后选中"分离**元素"旁边的复选框**。
 
-<!-- For more information, navigate to [Detached elements][ExperimentalFeaturesDetachedElements]. -->
+<!-- For more information, navigate to [Detached elements](../../../experimental-features/index.md#detached-elements). -->
 <!-- todo: link directly to the subheading in the page, when available; test the subheading link -->
 
 
@@ -91,13 +91,13 @@ ms.locfileid: "12141885"
 *  多个 Bug 修复。
 *  扩展的更详细的文档。
 
-有关改进和修复的更多详细信息，请查看 [存储库][GithubMicrosoftVscodeEdgeDevtoolsChangelog] 中的 `vscode-edge-devtools` 更改日志文件。
+有关改进和修复的更多详细信息，请查看 [存储库](https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md) 中的 `vscode-edge-devtools` 更改日志文件。
 
 :::image type="complex" source="../../media/2021/07/extension-integrated-debugger.msft.png" alt-text="与调试器工作流Visual Studio Code DevTools 扩展" lightbox="../../media/2021/07/extension-integrated-debugger.msft.png":::
    与调试器工作流Visual Studio Code DevTools 扩展
 :::image-end:::
 
-有关详细信息，请参阅浏览器[调试与 Microsoft Edge 中的 DevTools Visual Studio Code。](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code)  获取[Microsoft Edge开发人员工具Visual Studio Code扩展][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]。  Microsoft Visual Studio代码将自动更新扩展;若要手动更新此扩展，请导航到"[手动更新扩展"。][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]  你可以在 [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools] 上提交问题并参与扩展的改进。
+有关详细信息，请参阅浏览器[调试与 Microsoft Edge 中的 DevTools Visual Studio Code。](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code)  获取[Microsoft Edge开发人员工具Visual Studio Code扩展](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)。  Microsoft Visual Studio代码将自动更新扩展;若要手动更新此扩展，请导航到"[手动更新扩展"。](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually)  你可以在 [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools) 上提交问题并参与扩展的改进。
 
 
 <!-- ====================================================================== -->
@@ -106,7 +106,7 @@ ms.locfileid: "12141885"
 <!-- Title: New look for buttons and menus in Microsoft Edge DevTools -->
 <!-- Subtitle: DevTools has adopted Fluent UI, giving it a more modern look that better aligns with the rest of the Microsoft Edge browser. -->
 
-Microsoft EdgeDevTools 采用了[Fluent UI，][FluentUI]为按钮和菜单提供更现代的外观，从而更好地与浏览器Microsoft Edge保持一致。
+Microsoft EdgeDevTools 采用了[Fluent UI，](https://developer.microsoft.com/en-us/fluentui#/)为按钮和菜单提供更现代的外观，从而更好地与浏览器Microsoft Edge保持一致。
 
 :::image type="complex" source="../../media/2021/07/fluent-ui.msft.png" alt-text="使用自定义 UI 设计Fluent的 DevTools" lightbox="../../media/2021/07/fluent-ui.msft.png":::
    使用自定义 UI 设计Fluent的 DevTools
@@ -125,7 +125,7 @@ Microsoft EdgeDevTools 采用了[Fluent UI，][FluentUI]为按钮和菜单提供
    直接从 DevTools 项目更改 DevTools 显示**设置**
 :::image-end:::
 
-默认情况下，DevTools 与浏览器的显示语言匹配。  有关详细信息，请导航到"[更改 DevTools 语言设置"。][CustomizeLocalization]  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[2882756"。][CR2882756]
+默认情况下，DevTools 与浏览器的显示语言匹配。  有关详细信息，请导航到"[更改 DevTools 语言设置"。](../../../customize/localization.md)  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[2882756"。](https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756)
 
 
 <!-- ====================================================================== -->
@@ -146,7 +146,7 @@ Microsoft EdgeDevTools 采用了[Fluent UI，][FluentUI]为按钮和菜单提供
    样式规则的上下文菜单，包括 **Copy declaration as JS** 和 Copy all **declarations as JS** commands
 :::image-end:::
 
-若要详细了解如何查看和更改 CSS，请导航到 [CSS 功能参考][CssReference]。
+若要详细了解如何查看和更改 CSS，请导航到 [CSS 功能参考](../../../css/reference.md)。
 
 
 <!-- ====================================================================== -->
@@ -163,7 +163,7 @@ User-Agent客户端提示使浏览器信息比以分号分隔的字符串User-Ag
    在User-Agent中定义自定义设备的客户端**设置**
 :::image-end:::
 
-有关在客户端中定义提示**设置，请导航到**设置[用户代理客户端提示][DeviceModeIndexSetUach]。
+有关在客户端中定义提示**设置，请导航到**设置[用户代理客户端提示](../../../device-mode/index.md#set-user-agent-client-hints)。
 
 您还可以使用User-Agent条件工具替代当前页面的客户端 **提示** 。
 
@@ -171,7 +171,7 @@ User-Agent客户端提示使浏览器信息比以分号分隔的字符串User-Ag
    在User-Agent条件工具中为自定义 **设备定义客户端** 提示
 :::image-end:::
 
-有关在网络条件工具中定义 **提示的信息，** 请导航到设置 [用户代理客户端提示][NetworkReferenceSetUach]。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1174299][CR1174299]。
+有关在网络条件工具中定义 **提示的信息，** 请导航到设置 [用户代理客户端提示](../../../network/reference.md#set-user-agent-client-hints)。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1174299](https://bugs.chromium.org/p/chromium/issues/detail?id=1174299)。
 
 
 <!-- ====================================================================== -->
@@ -190,7 +190,7 @@ User-Agent客户端提示使浏览器信息比以分号分隔的字符串User-Ag
 
 <!-- It'd be good to have a video of this a11y fix where the text that the screen reader announces is displayed -->
 
-有关调试控制台错误的信息，请导航到"修复控制台[中报告的 JavaScript 错误"。][ConsoleConsoleDebugJavascript]  有关 DevTools 发现的问题以及你可以对网页进行改进的信息，请导航到使用问题工具查找并 [修复问题][IssuesIndex]。  若要在开放源代码项目中查看Chromium历史记录，请导航到"问题[1223208"。][CR1223208]
+有关调试控制台错误的信息，请导航到"修复控制台[中报告的 JavaScript 错误"。](../../../console/console-debug-javascript.md)  有关 DevTools 发现的问题以及你可以对网页进行改进的信息，请导航到使用问题工具查找并 [修复问题](../../../issues/index.md)。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1223208"。](https://bugs.chromium.org/p/chromium/issues/detail?id=1223208)
 
 
 <!-- ====================================================================== -->
@@ -201,58 +201,24 @@ User-Agent客户端提示使浏览器信息比以分号分隔的字符串User-Ag
 
 以前，在**网络**工具中，在**** 网络活动日志中为给定网络请求生成 PowerShell 命令时，复制为  >  **PowerShell**上下文菜单选项不包含 Cookie。 这意味着生成的 PowerShell 命令无法成功提出相同的网络请求（如果需要 Cookie）。
 
-现在，Microsoft Edge版本 93 中，"复制为**PowerShell"** 上下文菜单选项正确设置 devTools User-Agent的字符串和 Cookie。  生成的 PowerShell 命令现在可以成功提出由 DevTools 观察到的相同网络请求，甚至向依赖 Cookie 的服务器发送请求。
+现在，Microsoft Edge版本 93 中，"复制为**PowerShell"** 上下文菜单选项正确设置 devTools User-Agent的 User-Agent 字符串和 Cookie。  生成的 PowerShell 命令现在可以成功提出由 DevTools 观察到的相同网络请求，甚至向依赖 Cookie 的服务器发送请求。
 
 :::image type="complex" source="../../media/2021/07/copy-as-powershell.msft.png" alt-text="&quot;复制为 PowerShell&quot;命令" lightbox="../../media/2021/07/copy-as-powershell.msft.png":::
    " **复制为 PowerShell"** 命令
 :::image-end:::
 
-有关网络活动日志的信息，请导航到"网络[分析参考"。][NetworkReference]  若要在开放源代码项目中查看此功能的Chromium，请导航到"问题[932971"。][CR932971]
+有关网络活动日志的信息，请导航到"网络[分析参考"。](../../../network/reference.md)  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[932971"。](https://bugs.chromium.org/p/chromium/issues/detail?id=932971)
 
 
 <!-- ====================================================================== -->
 ## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道
 
-如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道][MicrosoftEdgePreviewChannels]作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
+如果你使用的是 Windows、Linux 或 macOS，请考虑使用 [ Microsoft Edge 预览频道](https://www.microsoftedgeinsider.com/download)作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[CustomizeDarkTheme]: ../../../customize/theme.md "将颜色主题应用到 DevTools |Microsoft Docs"
-<!-- todo: link directly to the subheading in the page, when available; test the subheading link:
-[ExperimentalFeaturesDetachedElements]: ../../../experimental-features/index.md#detached-elements "Detached elements | Microsoft Docs" -->
-[CustomizeLocalization]: ../../../customize/localization.md "更改 DevTools 语言设置 | Microsoft Docs"
-[CssReference]: ../../../css/reference.md "CSS 功能参考|Microsoft Docs"
-[DeviceModeIndexSetUach]: ../../../device-mode/index.md#set-user-agent-client-hints "设置用户代理客户端提示|Microsoft Docs"
-[NetworkReferenceSetUach]: ../../../network/reference.md#set-user-agent-client-hints "设置用户代理客户端提示|Microsoft Docs"
-[ConsoleConsoleDebugJavascript]: ../../../console/console-debug-javascript.md "修复控制台控制台中报告的 JavaScript |Microsoft Docs"
-[IssuesIndex]: ../../../issues/index.md "使用问题工具查找并修复问题 | Microsoft Docs"
-[NetworkReference]: ../../../network/reference.md "网络分析参考|Microsoft Docs"
-
-<!-- external links -->
-[FluentUI]: https://developer.microsoft.com/en-us/fluentui#/ "FluentUI |developer.microsoft.com"
-
-[CR1174299]: https://bugs.chromium.org/p/chromium/issues/detail?id=1174299 "问题1174299：通过 Chrome DevTools 的网络条件选项卡重写 UA 字符串时 UA 客户端提示丢失 | Chromium bug"
-[CR2882756]: https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756 "问题2882756：\[l10n\] 为用户添加设置以选择 DevTools 区域设置|Chromium Bug"
-[CR1223208]: https://bugs.chromium.org/p/chromium/issues/detail?id=1223208 "屏幕阅读器会针对标题页眉中的错误和警告通知不恰当的|Chromium Bug"
-[CR932971]: https://bugs.chromium.org/p/chromium/issues/detail?id=932971 "932971 - &quot;网络&quot;选项卡中，&quot;复制为 Powershell ==&quot;未正确发送 cookie |Chromium Bug"
-
-[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
-[GithubMicrosoftVscodeEdgeDevtoolsChangelog]: https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md "Changelog 文件 - vscode-edge-devtools |GitHub"
-
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge 预览频道"
-
-[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "手动更新扩展 - Extension Marketplace | Visual Studio Code"
-
-[VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Developer Tools for Visual Studio Code | Visual Studio Marketplace"
-
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的][GoogleSitePolicies]作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ][CCA4IL]中描述的条款使用。
-> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-93) ，由 [Jecelyn Yeen][JecelynYeen] 和开发人员 (Chrome DevTools) 。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
+> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-93)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可][CCby4Image]][CCA4IL] 本作品根据[知识共享署名 4.0 国际许可][CCA4IL]获得许可。
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelynyeen
+[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

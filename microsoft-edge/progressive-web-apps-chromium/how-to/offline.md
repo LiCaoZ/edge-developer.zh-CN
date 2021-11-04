@@ -7,13 +7,13 @@ ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用，PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
-ms.openlocfilehash: e950e68b969d144db858086e9d4429eee33099ce
-ms.sourcegitcommit: 54f9566aa935fb853215c9b6f995fa0c98f3261f
+keywords: 渐进 Web 应用、PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
+ms.openlocfilehash: d652013282ec7e8929c8df9202df433da9825883
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "12103480"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156177"
 ---
 # <a name="offline-and-network-connectivity-support-in-progressive-web-apps"></a>渐进式 Web 应用中的脱机和网络连接支持
 
@@ -23,7 +23,7 @@ ms.locfileid: "12103480"
 <!-- ====================================================================== -->
 ## <a name="use-caching-to-improve-pwa-performance"></a>使用缓存来提高PWA性能
 
-随着服务 [工作者的引入][MDNServiceWorker]，Web 平台添加了 `Cache` API 以提供对托管缓存资源的访问权限。 此基于承诺的 API 允许开发人员存储和检索许多 Web 资源：HTML、CSS、JavaScript、图像、JSON 等。 通常，缓存 API 在服务工作线程的上下文中使用，但它在对象的主线程中 `window` 也可用。
+随着服务 [工作者的引入](https://developer.mozilla.org/docs/Web/API/ServiceWorker)，Web 平台添加了 `Cache` API 以提供对托管缓存资源的访问权限。 此基于承诺的 API 允许开发人员存储和检索许多 Web 资源：HTML、CSS、JavaScript、图像、JSON 等。 通常，缓存 API 在服务工作线程的上下文中使用，但它在对象的主线程中 `window` 也可用。
 
 API 的一个常见用途是在安装服务工作器时预缓存关键资源， `Cache` 如以下代码片段所示。
 
@@ -92,7 +92,7 @@ self.addEventListener( "fetch", event => {
 <!-- ====================================================================== -->
 ## <a name="use-indexeddb-in-your-pwa-to-store-structured-data"></a>在数据存储区中PWA IndexedDB 存储结构化数据
 
-`IndexedDB` 是存储结构化数据的 API。 与 `Cache` API 类似，它也是异步的。 这意味着您可以在主线程中或与 Web 工作线程（如服务工作线程）一起使用它。 使用 API 在客户端上存储大量结构化数据或二进制数据，如 `IndexedDB` 加密媒体对象。  有关 [使用 IndexedDB，请参阅 MDN 一文][MDNIndexeddbApiUsing]。
+`IndexedDB` 是存储结构化数据的 API。 与 `Cache` API 类似，它也是异步的。 这意味着您可以在主线程中或与 Web 工作线程（如服务工作者）一起使用它。 使用 API 在客户端上存储大量结构化数据或二进制数据，如 `IndexedDB` 加密媒体对象。  有关 [使用 IndexedDB，请参阅 MDN 一文](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB)。
 
 
 <!-- ====================================================================== -->
@@ -101,9 +101,9 @@ self.addEventListener( "fetch", event => {
 有时，你可能需要存储少量数据，以便为用户提供更好的脱机体验。 如果是这样，您可能会发现 Web 应用程序键值对系统的简单性存储您的需求。
 
 > [!IMPORTANT]
-> Web 存储是一个同步进程，不能用于工作线程（如服务工作线程）。 大量使用可能会给应用程序造成性能问题。
+> Web 存储是一个同步进程，在工作线程（如服务工作者）中不可用。 大量使用可能会给应用程序造成性能问题。
 
-有两种类型的 Web 存储： `localStorage` 和 `sessionStorage` 。 每种类型的 Web 存储都作为独立于创建它的域的单独数据存储进行维护。
+有两种类型的 Web 存储： 和 `localStorage` `sessionStorage` 。 每种类型的 Web 存储都作为独立于创建它的域的单独数据存储进行维护。
 
 *  `sessionStorage` 仅在浏览会话期间保留。 例如，当浏览器打开（包括刷新和还原）时。
 *  `localStorage` 保留，直到代码、用户或浏览器删除数据。 例如，当存在可用的有限存储时。
@@ -174,19 +174,9 @@ window.addEventListener("offline", function(){
 ## <a name="see-also"></a>另请参阅
 
 *   [高速缓存](https://developer.mozilla.org/docs/Web/API/Cache)
-*   [IndexedDB][MDNIndexeddbApi]
-*   [服务工作线程][MDNServiceWorker]
-*   [Web 存储][MDNWebStorageApi]
-*   [navigator.onLine][MDNNavigatoronline]
-*   [联机和脱机事件][MDNNavigatoronlineOfflineEvents]
+*   [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API)
+*   [服务工作线程](https://developer.mozilla.org/docs/Web/API/ServiceWorker)
+*   [Web 存储](https://developer.mozilla.org/docs/Web/API/Web_Storage_API)
+*   [navigator.onLine](https://developer.mozilla.org/docs/Web/API/NavigatorOnLine)
+*   [联机和脱机事件](https://developer.mozilla.org/docs/Web/API/NavigatorOnLine/Online_and_offline_events)
 *   [具有意图的请求：Caching时的策略](https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[MDNIndexeddbApi]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API "IndexedDB API | MDN"
-[MDNIndexeddbApiUsing]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "使用 IndexDb - IndexDB API |MDN"
-[MDNServiceWorker]: https://developer.mozilla.org/docs/Web/API/ServiceWorker "ServiceWorker |MDN"
-[MDNWebStorageApi]: https://developer.mozilla.org/docs/Web/API/Web_Storage_API "Web 存储 API |MDN"
-[MDNNavigatoronline]: https://developer.mozilla.org/docs/Web/API/NavigatorOnLine "NavigatorOnLine |MDN"
-[MDNNavigatoronlineOfflineEvents]: https://developer.mozilla.org/docs/Web/API/NavigatorOnLine/Online_and_offline_events "联机和脱机事件 - NavigatorOnLine |MDN"

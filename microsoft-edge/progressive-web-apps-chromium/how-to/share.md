@@ -8,23 +8,23 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， 共享
-ms.openlocfilehash: a4b46de09e5e49650610271ccec2e800590d3554
-ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
+ms.openlocfilehash: a5f86868cc8dc2f2a174ed3ab25668551b3551db
+ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "12087266"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12156471"
 ---
 # <a name="share-with-other-apps"></a>与其他应用共享
 
 在应用之间共享内容由移动设备所热门，其中操作文件或复制内容不如在桌面操作系统上直观。 在移动电话上，通常使用短信与好友共享图像。
 
-但是共享内容不再保留给移动设备，并且也有可能在移动设备上的应用之间Windows。
+但是共享内容不再保留给移动设备，并且也有可能在移动设备的应用之间Windows。
 
 共享内容有两个方面，并且两者都可以由 PWA 使用。
 
 *   共享内容：PWA生成内容 (文本、链接或文件时) 将内容传输给操作系统，让用户决定要使用哪个应用接收该内容。
-*   接收共享内容：当PWA用作在操作系统级别注册的内容目标时。
+*   接收共享内容：当PWA用作内容目标时，在操作系统级别注册。
 
 注册为共享目标的 PWA 感觉与操作系统的本机集成性更明显，并且更吸引用户。
 
@@ -32,10 +32,10 @@ ms.locfileid: "12087266"
 <!-- ====================================================================== -->
 ## <a name="sharing-content"></a>共享内容
 
-PWA 可以使用 [Web 共享 API][MDNWebShareAPI] 触发操作系统共享对话框。
+PWA 可以使用 [Web 共享 API](https://developer.mozilla.org/docs/Web/API/Web_Share_API) 触发操作系统共享对话框。
 
 > [!NOTE]
-> Web 共享仅适用于通过 HTTPS 服务的网站 (PBA) 的情况，并且只能调用它以响应用户操作。
+> Web 共享仅适用于通过 HTTPS (服务的网站，对于 PWA) ，只能调用它以响应用户操作。
 
 若要共享链接、文本或文件等内容，请使用 `navigator.share` 函数。 函数接受至少应具有以下属性之一的对象：
 
@@ -99,7 +99,7 @@ function shareSomeFiles(files) {
 }
 ```
 
-`files`共享对象成员必须是对象 `File` 数组。 了解有关文件 [接口的更多信息][MDNFileInterface]。
+`files`共享对象成员必须是对象 `File` 数组。 了解有关文件 [接口的更多信息](https://developer.mozilla.org/docs/Web/API/File)。
 
 构造对象的一种方式是使用 API 请求资源，然后使用返回的响应新建， `File` `fetch` `File` 如下所示。
 
@@ -115,23 +115,23 @@ async function getImageFileFromURL(imageURL, title) {
 
 ### <a name="demo"></a>演示版
 
-[DevTools 使用技巧][DemoDevToolsTips]是PWA函数共享文本 `navigator.share` 和链接的一个工具。
+[DevTools 使用技巧](https://devtoolstips.org/)是PWA函数共享文本 `navigator.share` 和链接的一个工具。
 
 若要测试功能：：
 
-*  转到[DevTools 使用技巧][DemoDevToolsTips]。
+*  转到[DevTools 使用技巧](https://devtoolstips.org/)。
 *  选择主页上显示的任何提示。
 *  选择 **"共享提示"。**
 
 :::image type="content" source="../media/devtools-tips-share.png" alt-text="&quot;Windows共享&quot;对话框允许用户选取要共享内容的应用。" lightbox="../media/devtools-tips-share.png":::
 
-可以在上[找到源代码GitHub。][DemoDevToolsTipsGitHub] 特别是，应用程序使用 Web 共享 API 在 [share.js源文件中 ][DemoDevToolsTipsShareFunction] 。
+可以在[""上找到GitHub。](https://github.com/captainbrosset/devtools-tips/) 特别是，应用程序使用 Web 共享 API 在 [share.js源文件中 ](https://github.com/captainbrosset/devtools-tips/blob/main/src/assets/share.js#L38) 。
 
 
 <!-- ====================================================================== -->
 ## <a name="receiving-shared-content"></a>接收共享内容
 
-通过使用 Web 共享目标 API，PWA 还可以注册为在系统共享对话框中显示为应用，并处理来自其他应用的共享内容。 可以在 Web 共享目标 API [W3C][W3CWebShareTargetAPI]规范草稿中了解有关 Web 共享目标 API 的信息。
+通过使用 Web 共享目标 API，PWA 还可以注册为在系统共享对话框中显示为应用，并处理来自其他应用的共享内容。 可以在 Web 共享目标 API [W3C](https://w3c.github.io/web-share-target/level-2/)规范草稿中了解有关 Web 共享目标 API 的信息。
 
 > [!NOTE]
 > 只有已安装的 PWA 才能注册为共享目标。
@@ -156,7 +156,7 @@ async function getImageFileFromURL(imageURL, title) {
 }
 ```
 
-当用户选取你的应用作为共享内容的目标时，PWA 将启动，并且对属性指定的 URL 进行 HTTP 请求，共享数据将传递为 、 和 `GET` `action` `title` `text` `url` 查询参数。 实际上，会提出以下请求 `/handle-shared-content/?title=shared title&text=shared text&url=shared url` ：。
+当用户选取你的应用作为共享内容的目标时，PWA 将启动，并且对属性指定的 URL 进行 HTTP 请求，共享数据作为 、 和 查询参数传递 `GET` `action` `title` `text` `url` 。 实际上，会提出以下请求 `/handle-shared-content/?title=shared title&text=shared text&url=shared url` ：。
 
 如果已有使用这些其他名称的代码，可以将默认 、 和 `title` `text` 查询参数 `url` 映射到其他名称。
 
@@ -190,7 +190,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 ### <a name="handle-post-shared-data"></a>处理 POST 共享数据
 
-如果共享数据旨在以任何方式更改你的应用，例如通过更新应用中存储的一些内容，则必须使用 方法并使用 定义 `POST` 编码类型 `enctype` 。
+如果共享数据旨在以任何方式更改你的应用，例如通过更新应用中存储的一些内容，则必须使用 方法并使用 定义编码 `POST` 类型 `enctype` 。
 
 ```json
 {
@@ -229,11 +229,11 @@ self.addEventListener('fetch', event => {
 });
 ```
 
-在以上代码段中，服务工作者截获请求，以某种方式使用数据 (例如本地存储内容（例如) ）以及将用户重定向到成功 `POST` 页面。 这样，即使网络关闭，应用也可以运行。 它可以选择仅本地存储内容，或在连接恢复时将其发送到服务器 (例如，使用后台[同步) 。][BackgroundSync]
+在以上代码段中，服务工作者截获请求，以某种方式使用数据 (例如本地存储内容（例如) ）以及将用户重定向到成功 `POST` 页面。 这样，即使网络关闭，应用也可以运行。 它可以选择仅本地存储内容，或在连接恢复时将其发送到服务器 (例如，使用 [后台](./background-syncs.md) 同步) 。
 
 ### <a name="handle-files"></a>处理文件
 
-应用还可以处理共享文件。 若要处理文件PWA，必须使用 `POST` 方法和编码 `multipart/form-data` 类型。 此外，你必须声明你的应用可以处理的文件类型。
+应用还可以处理共享文件。 若要处理用户PWA，必须使用 `POST` 方法和编码 `multipart/form-data` 类型。 此外，你必须声明你的应用可以处理的文件类型。
 
 ```json
 {
@@ -288,18 +288,5 @@ self.addEventListener('fetch', event => {
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [与使用 Web 共享 API 的操作系统共享 UI 集成][ShareWebDev]
-*  [使用 Web 共享目标 API 接收共享数据][ShareTargetWebDev]
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[MDNWebShareAPI]: https://developer.mozilla.org/docs/Web/API/Web_Share_API "Web 共享 API - Web API |MDN"
-[MDNFileInterface]: https://developer.mozilla.org/docs/Web/API/File "文件 - Web API |MDN"
-[W3CWebShareTargetAPI]: https://w3c.github.io/web-share-target/level-2/ "Web 共享目标 API |W3C"
-[BackgroundSync]: ./background-syncs.md "在后台服务器中同步|Microsoft Docs"
-[ShareWebDev]: https://web.dev/web-share/ "与 OS 共享 UI 与 Web 共享 API 集成|web.dev"
-[ShareTargetWebDev]: https://web.dev/web-share-target/ "使用 Web 共享目标 API 服务接收|web.dev"
-[DemoDevToolsTips]: https://devtoolstips.org/ "DevTools 使用技巧"
-[DemoDevToolsTipsGitHub]: https://github.com/captainbrosset/devtools-tips/ "DevTools 使用技巧 |GitHub"
-[DemoDevToolsTipsShareFunction]: https://github.com/captainbrosset/devtools-tips/blob/main/src/assets/share.js#L38 "DevTools 使用技巧 |GitHub"
+*  [与使用 Web 共享 API 的操作系统共享 UI 集成](https://web.dev/web-share/)
+*  [使用 Web 共享目标 API 接收共享数据](https://web.dev/web-share-target/)
