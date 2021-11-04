@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: bbedc684915eedfc1fcee00f281e532269ac5dbd
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: d0a178fc82ca017dc0eacd1d5baf62da556317d2
+ms.sourcegitcommit: 5c9e13989cd2ea1598c8ce69192babe63ab78ac3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141941"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12154973"
 ---
 # <a name="get-started-with-webview2-in-win32-apps"></a>在 Win32 应用中开始使用 WebView2
 
@@ -190,7 +190,7 @@ WebView2 团队已在上一步中介绍了使用 `ICoreWebView2::Navigate` 方�
 1.  `HistoryChanged`
 1.  `NavigationCompleted`
 
-有关详细信息，请导航到["导航事件"。][Webview2ConceptsNavigationEvents]
+有关详细信息，请参阅 [WebView2 的导航事件][Webview2ConceptsNavigationEvents]。
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="导航事件" lightbox="../media/navigation-events.png":::
    导航事件
@@ -318,8 +318,8 @@ nullptr);
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 开发最佳实践|Microsoft Docs"
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 |Microsoft Edge开发人员"
 
-[Webview2ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ |Microsoft Docs"
-[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "导航事件|Microsoft Docs"
+[Webview2ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ 参考|Microsoft Docs"
+[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "WebView2 网站的导航|Microsoft Docs"
 
 [CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true "Windows运行时 C++ 模板库 (WRL) |Microsoft Docs"
 [CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019&preserve-view=true "Walkthrough： Create a traditional Windows Desktop application (C++) |Microsoft Docs"

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、winui 应用、winui、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
-ms.openlocfilehash: be5c6fe42a1588812f46ad9811ff2f5045e45410
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 15354ece973e984df15c14040b10e5a8755633f9
+ms.sourcegitcommit: 5c9e13989cd2ea1598c8ce69192babe63ab78ac3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141822"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12154966"
 ---
 # <a name="get-started-with-webview2-in-winui-3-windows-app-sdk"></a>WinUI 3 应用 SDK (Windows中的 WebView2) 
 
@@ -206,7 +206,7 @@ using Microsoft.Web.WebView2.Core;
 > [!NOTE]
 > 如果发生 HTTP 重定向，则一行 `NavigationStarting` 中有多个事件。
 
-有关详细信息，请导航到["导航事件"。][Webviews2ConceptsNavigationEvents]
+有关详细信息，请参阅 [WebView2 的导航事件][Webviews2ConceptsNavigationEvents]。
 
 发生错误时，将引发以下事件，并可能导航到错误网页。
 
@@ -291,7 +291,7 @@ private void EnsureHttps(WebView2 sender, CoreWebView2NavigationStartingEventArg
 <!-- ====================================================================== -->
 <!-- links -->
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 开发最佳实践|Microsoft Docs"
-[Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "导航事件|Microsoft Docs"
+[Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "WebView2 网站的导航|Microsoft Docs"
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Microsoft Edge WebView2 |Microsoft Docs"
 [Webview2IndexNextSteps]: ../index.md#see-also "另请参阅 - WebView2 Microsoft Edge简介|Microsoft Docs"
 
@@ -301,7 +301,7 @@ private void EnsureHttps(WebView2 sender, CoreWebView2NavigationStartingEventArg
 
 [UwpSchemasAppxpackageUapmanifestRoot]: /uwp/schemas/appxpackage/uapmanifestschema/schema-root "程序包清单架构参考Windows 10 |Microsoft Docs"
 
-[VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]: /visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box "无需使用&quot;管理扩展&quot;对话框安装 - 管理 Visual Studio |Microsoft Docs"
+[VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]: /visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box "在未使用&quot;管理扩展&quot;对话框的情况下安装 - 管理 Visual Studio |Microsoft Docs"
 
 [WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/project-reunion/set-up-your-development-environment "配置开发环境 - Windows 2020 年 5 月 (UI 库 3.0 预览 1) |Microsoft Docs"
 [WindowsCommunitytoolkit]: /windows/communitytoolkit "Windows Community Toolkit文档|Microsoft Docs"

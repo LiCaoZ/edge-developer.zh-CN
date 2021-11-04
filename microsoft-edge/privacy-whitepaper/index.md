@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: f870f93c1672a996ad56e072947e4809155347f3
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.openlocfilehash: b141dba53990801226f373796d91b83930201b9f
+ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108617"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12140737"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书
 
@@ -26,6 +26,8 @@ ms.locfileid: "12108617"
 
 本白皮书重点介绍桌面版的Microsoft Edge。 文档的某些部分可能包含并非面向所有用户的功能或体验。  本白皮书还讨论了当前产品中存在的功能和服务，但将来可能会发生更改。  Microsoft 实践数据收集最小化。 数据将保留最短时间。  保留时间因功能或服务而异，并且可能会随时间而变化。
 
+
+<!-- ====================================================================== -->
 ## <a name="address-bar-and-suggestions"></a>地址栏和建议
 
 通过地址栏，可输入网站 URL 并搜索 Web。  默认情况下，地址栏使用输入的字符提供搜索和网站建议。  建议来自收藏夹、浏览历史记录、以前的搜索和默认搜索提供程序。
@@ -68,6 +70,8 @@ ms.locfileid: "12108617"
 
 其他搜索提供程序收集的数据遵循公司的隐私策略。
 
+
+<!-- ====================================================================== -->
 ## <a name="autofill"></a>自动填充
 
 自动填充Microsoft Edge可保存表单条目数据。 表单条目数据包括密码、付款信息、地址和其他数据（如生日）。 访问网站并开始填写表单时，Microsoft Edge使用表单填充信息将保存的自动填充数据与窗体匹配。  Microsoft Edge提供以前在打开类似表单时保存的表单条目数据。  密码和信用卡信息仅在你对每个密码和卡的显式权限下保存。
@@ -84,14 +88,18 @@ ms.locfileid: "12108617"
 
 使用**来宾**模式时，自动填充不可用，并且不会添加新的自动填充项。  对于 **InPrivate** 模式，Microsoft Edge提供自动填充条目，但不会添加新的自动填充条目。
 
+
+<!-- ====================================================================== -->
 ## Cast
 
-Cast 在 Microsoft Edge 中，可以使用 Google Cast将媒体显示到另一个屏幕。  若要访问Cast，请打开 **"设置"和更多 \（...\）** > **更多工具** > **Cast介质到设备**。  Cast 依赖于未随Microsoft Edge自动安装的媒体路由器扩展。  第一次使用 Cast 时，Microsoft Edge 会提示你允许安装媒体路由器扩展。
+Cast 在 Microsoft Edge 中，可以使用 Google Cast将媒体显示到另一个屏幕。  若要访问 Cast，请打开**设置和更多 (...)** > **更多工具** > **Cast介质到设备**。  Cast 依赖于未随Microsoft Edge自动安装的媒体路由器扩展。  第一次使用 Cast 时，Microsoft Edge 会提示你允许安装媒体路由器扩展。
 
 选择“**重启**”，从 Chrome Web Store 安装媒体路由器扩展。 启动时，Microsoft Edge定期向Chrome Web Store发送更新请求。 更新请求包括有关Microsoft Edge版本的基本数据。 定期更新请求使媒体路由器扩展保持最新。
 
 Google 可能会收集一些与媒体路由器扩展相关联的数据。 若要卸载媒体路由器扩展，请导航到 `edge://flags#edge-on-demand-media-router`并更改设置。 卸载也会停止来自Chrome Web Store的更新。 扩展已隐藏，且不会显示在“安装的扩展”**** 列表中。 有关“安装的扩展”**** 列表，请导航到 `edge://extensions`。
 
+
+<!-- ====================================================================== -->
 ## <a name="collections"></a>集锦
 
 可以从 Web 收集网站、文本和图像，并在Microsoft Edge中使用"集合"组织内容。  所有集合数据均本地存储在设备上，并按 Microsoft Edge 配置文件进行组织。  如果已为集合启用同步，则集合、备注和注释可在所有已登录和同步版本的Microsoft Edge中使用。
@@ -106,6 +114,8 @@ Google 可能会收集一些与媒体路由器扩展相关联的数据。 若要
 在 Microsoft 必应中搜索时，可以使用集合的标题查找相关的 Pinterest 主题页面。 导航到 `edge://settings/privacy`。 在 Collections 中打开**显示来自 Pinterest 的建议**设置。 Microsoft Edge 不会向 Pinterest 发送有关集锦的数据。 可以删除建议并停止搜索 Pinterest 主题页面。 导航到 `edge://settings/privacy` 并关闭 **“在收藏夹中显示来自 Pinterest 的建议”** 设置。
 使用 **InPrivate** 或 **Guest** 模式时，集合不可用。
 
+
+<!-- ====================================================================== -->
 ## <a name="crashes"></a>故障
 
 如果启用了可选诊断数据（包括崩溃报告），则在意外崩溃或关闭Microsoft Edge时收集诊断数据。 诊断数据用于诊断和修复Microsoft Edge和其他 Microsoft 产品和服务的问题。
@@ -124,10 +134,14 @@ Google 可能会收集一些与媒体路由器扩展相关联的数据。 若要
 
 若要在Windows 10及更高版本上关闭故障诊断数据收集，请打开 **"开始** > **设置** > **""隐私**"，然后选择 **"诊断和反馈**"。  对于所有其他平台上的 Microsoft Edge 版本，请导航到 `edge://settings/privacy`，然后禁用“通过发送有关如何使用浏览器的可选诊断数据、访问的网站和故障报告来帮助改进 Microsoft 产品”**** 设置。 可以在企业级别管理诊断数据收集。 导航到[组织管理的组策略][DeployedgeEnterprisePrivacySettings]。
 
+
+<!-- ====================================================================== -->
 ## <a name="developer-tools"></a>开发人员工具
 
 Microsoft Edge 开发人员工具有关网站调试和测试的帮助。 打开 **"设置"等 （...）** > **更多工具**，然后选择**开发人员工具。** 在开发人员工具中启用某些功能时，Microsoft Edge从 Microsoft 服务器请求模块并将其下载到设备。 请求通过安全的 HTTPS 连接发送，并包含表示Microsoft Edge版本的非唯一标识符。 需要远程下载的特定体验包括 3D 视图和"元素工具辅助功能"窗格。 Webhint 集成需要在打开开发人员工具时自动请求的远程模块。
 
+
+<!-- ====================================================================== -->
 ## <a name="diagnostic-data"></a>诊断数据
 
 Microsoft 使用诊断数据来改进产品和服务。 诊断数据还用于确保产品安全、最新并按预期运行。 Microsoft 认可并践行信息收集最小化。 我们力求仅收集所需的信息，并仅根据需要存储这些信息来改进产品和服务。
@@ -148,7 +162,7 @@ Microsoft Edge收集一组必需的诊断数据，以确保产品安全、更新
 
 Microsoft Edge 团队通过限制数据访问或删除个人身份信息来尊重诊断数据的敏感性。 若要在Windows 10及更高版本的设备上重置浏览器特有的标识符，请导航到 **"开始** > **设置** > **隐私** > **诊断和反馈**"，然后在"**删除诊断数据**"下选择"**删除**"，或将**诊断数据**下的设置从 **"完整**"更改为 **"基本**"或关闭 **"可选诊断数据**"。
 
-在其他平台上，若要生成浏览器所特有的全新可重置标识符 \(ID\)，请导航到 `edge://settings/privacy`，然后禁用“通过发送有关如何使用浏览器的可选诊断数据、访问的网站和故障报告来帮助改进 Microsoft 产品”**** 设置。 对于由组织设置的组策略管理的设备，重置 \(ID\) 功能可能有所不同。
+在其他平台上，若要生成浏览器特有的新的可重置标识符 (ID) ，请导航到 `edge://settings/privacy` 并关闭**通过发送有关浏览器、访问的网站和崩溃报告使用方式的可选诊断数据来帮助改进 Microsoft 产品**设置。 对于由组织设置的组策略管理的设备，重置 (ID) 功能可能有所不同。
 
 如果你使用的是 Windows 10 版本 1803（2018 年 4 月更新）或更高版本，若要在诊断数据查看器中查看与 Microsoft 共享的产品数据，请导航到“开始****” > “设置****” > “隐私****” > “诊断和反馈****”，然后在“查看诊断数据****”下选择“打开诊断数据查看器****”。
 
@@ -158,13 +172,15 @@ Microsoft Edge 团队通过限制数据访问或删除个人身份信息来尊�
 
 对于Windows 10及更高版本的Microsoft Edge，发送可选诊断数据由Windows 诊断数据设置确定。 该设置会反映在 `edge://settings/privacy` 中。 转到“开始****” > “设置****” > “隐私****” > “诊断和反馈****”，以更改 Windows 设置。 在所有其他平台上，若要控制诊断数据的集合，请导航到 `edge://settings/privacy`，然后启用或禁用“通过发送有关如何使用浏览器的可选诊断数据、访问的网站和故障报告来帮助改进 Microsoft 产品****”。 该设置用于与设备上安装 Microsoft Edge 相关联的所有配置文件。  此设置不会跨设备同步。 此设置适用于 **InPrivate** 浏览和来宾模式。 浏览 **InPrivate** 或来 **宾** 模式时，绝不会发送有关你访问的网站的信息。 如果设备使用组织设置的组策略进行管理，请参阅 `edge://settings/privacy`中所述。
 
+
+<!-- ====================================================================== -->
 ## <a name="digital-rights-management-and-media-licenses"></a>数字版权管理和媒体许可证
 
-当网站提供受数字Rights Management \（DRM\） 保护的媒体内容时，Microsoft Edge使用安全的播放管道来确保不正确地查看或复制内容。 作为该功能的一部分，Microsoft Edge可能会在设备上存储与 DRM 相关的数据，包括唯一标识符和媒体许可证。 Microsoft Edge还可以将唯一标识符传输到内容提供程序指定的媒体授权服务器。 使用网站时，Microsoft Edge检索 DRM 信息，以确保你有权使用该内容。 数据可帮助验证对受保护内容的访问权限，并确保无缝媒体体验。
+当网站提供受数字版权管理 (DRM) 保护的媒体内容时，Microsoft Edge 使用安全播放管道确保内容不会不正确地查看或复制。 作为该功能的一部分，Microsoft Edge可能会在设备上存储与 DRM 相关的数据，包括唯一标识符和媒体许可证。 Microsoft Edge还可以将唯一标识符传输到内容提供程序指定的媒体授权服务器。 使用网站时，Microsoft Edge检索 DRM 信息，以确保你有权使用该内容。 数据可帮助验证对受保护内容的访问权限，并确保无缝媒体体验。
 
 Microsoft Edge 支持使用适用于 HTML5 网站的加密媒体扩展 API (EME API) 的 DRM。  EME API 允许网站与名为“内容解密模块 (CDM)”的 DRM 提供商进行通信。 开发人员的 CDM 实施可能支持其他 DRM 系统（例如，Google 的 Widevine 或 Microsoft 的 PlayReady）。  内容提供商可以选择支持一个或多个潜在的 DRM 系统。 提供程序可以使用 EME API 的功能来确定要用于特定客户端的 DRM 系统。 有关 EME 隐私的详细信息，请导航到[加密媒体扩展隐私][W3cEncryptedMediaPrivacy]。
 
-Microsoft Edge仅在Windows 10及更高版本上支持 PlayReady DRM。 PlayReady 是一种 DRM 实现，可提供 4K 视频和 Dolby Atmos 音频等媒体体验。  Microsoft Edge 使用 Windows 平台媒体基础 API 来支持 PlayReady。  若要验证对受保护内容的访问权限，Microsoft Edge使用Windows 10或 Windows 11 操作系统。 Windows 使用唯一标识符 \（ID\），并将 ID 与 PlayReady 服务通信。  在设备上持久保存的 PlayReady 的所有 EME、CDM 和浏览器数据都将存储在 Microsoft Edge 中并保留。  有关 PlayReady 的详细信息，请导航到[简易端到端系统][PlayreadyOverviewSimpleEndSystem]。
+Microsoft Edge仅在Windows 10及更高版本上支持 PlayReady DRM。 PlayReady 是一种 DRM 实现，可提供 4K 视频和 Dolby Atmos 音频等媒体体验。  Microsoft Edge 使用 Windows 平台媒体基础 API 来支持 PlayReady。  若要验证对受保护内容的访问权限，Microsoft Edge使用Windows 10或 Windows 11 操作系统。 Windows 使用唯一标识符 (ID)，并将 ID 与 PlayReady 服务通信。  在设备上持久保存的 PlayReady 的所有 EME、CDM 和浏览器数据都将存储在 Microsoft Edge 中并保留。  有关 PlayReady 的详细信息，请导航到[简易端到端系统][PlayreadyOverviewSimpleEndSystem]。
 
 Microsoft Edge 支持 Google DRM 的 Widevine，默认情况下，此选项处于启用状态。  Microsoft Edge 定期从 Google 服务器获取 Widevine 更新。  使用 Widevine 可能包括与 Google 的通信。  若要选择退出使用 Microsoft Edge 中的 Widevine，请导航到 `edge://flags/#edge-widevine-drm` 并禁用 Widevine DRM 设置。  Widevine 可创建唯一的设备标识符并将其传输到 Google。  有关 Widevine 和隐私的更多详细信息，请导航到 Google 隐私策略。
 
@@ -179,18 +195,24 @@ Microsoft Edge 支持 Adobe 的 Flash Access DRM，由某些网站使用，而�
 *   **允许网站播放受保护的内容**设置控制基于 CDM 的 DRM 系统（如 PlayReady 和 Widevine）的播放，但不控制基于非 CDM 的系统（如 Flash Access DRM）的播放。  若要管理 Flash 网站权限，请导航到 `edge://settings/content/flash`。  关闭设置会导致媒体函数停止正常工作。
 *   禁用“**允许对受保护的内容使用标识符**”设置将阻止为 Flash Access DRM 创建标识符，并阻止 Widevine 定期提取 Google 中的更新。  关闭设置可能会导致某些网站上的媒体函数停止正常工作。
 
+
+<!-- ====================================================================== -->
 ## <a name="do-not-track"></a>禁止跟踪
 
 可以在Microsoft Edge上启用**禁止跟踪**。 导航到 `edge://settings/privacy`。 打开 **"发送"禁止跟踪"请求** 设置。  如果启用**禁止跟踪**功能，Microsoft Edge使用传出的 `DNT:1 HTTP` HTTP、HTTPS 和 SPDY 浏览流量请求发送头。 此功能告知你访问的网站不要使用跟踪器。 但是，启用“**发送‘禁止跟踪’请求**”设置并不能保证网站无法跟踪你。 某些网站可能会通过向你显示非以前浏览过的广告来接受请求。 Microsoft Edge不控制是否接受请求。 可帮助防止网站跟踪你。 导航到 `edge://settings/privacy`。 将**跟踪防护**设置更改为**Balanced** 或**Strict**。
 
 使用 **来宾** 模式时，Microsoft Edge不会发送 **禁止跟踪** 请求。  使用 **InPrivate** 浏览时，Microsoft Edge仅 **在** 为正在使用的配置文件启用 **"发送""禁止跟踪"请求** 设置时发送禁止跟踪请求。
 
+
+<!-- ====================================================================== -->
 ## <a name="downloads"></a>下载
 
 借助 Microsoft Edge，可安全可靠地下载文件。  若要选择在设备上下载文件的位置，请导航到 `edge://settings/downloads`。  如果启用 SmartScreen，则文件的相关信息（如文件名和 URL）将发送到 SmartScreen 以检查文件的信誉。 信誉检查可帮助你避免意外下载会损害设备的已知恶意软件。  若要更改 SmartScreen 设置，请导航到 `edge://settings/privacy` 并切换 SmartScreen。 有关 SmartScreen 的详细信息，请导航到 [SmartScreen](#smartscreen) 部分。
 
 若要查看先前下载的历史记录，请导航到 `edge://downloads`。  若要清除浏览数据并删除下载历史记录，请导航到 `edge://settings/clearBrowserData`。  从 Microsoft Edge 中删除下载历史记录不会删除设备中的文件。  从设备中删除下载的文件不会从下载历史记录中删除文件。  使用 **InPrivate** 浏览或 **来宾** 模式时，关闭 **InPrivate** 或来 **宾** 窗口时，会清除会话中的下载历史记录。 文件仍保存在设备上。
 
+
+<!-- ====================================================================== -->
 ## <a name="extensions-and-microsoft-edge-add-ons"></a>扩展和 Microsoft Edge 加载项
 
 可以在Microsoft Edge中安装扩展，以将函数添加到浏览器。 从 Microsoft Edge 加载项网站或其他扩展存储中安装扩展时，Microsoft 会收集扩展信息，帮助开发人员和 Microsoft 了解如何使用扩展。 Microsoft Edge 收集聚合数据，包括扩展的下载次数和有关其执行方式的信息（如故障数据）。 Microsoft 将与扩展的开发人员共享聚合数据。
@@ -207,6 +229,8 @@ Microsoft Edge 支持 Adobe 的 Flash Access DRM，由某些网站使用，而�
 
 如果扩展在 Microsoft Edge 加载项网站上不可用，Microsoft Edge本地复制并安装 Google Chrome 中的扩展，而无需将其打开或连接到Chrome Web Store。  Microsoft Edge 需要你的许可才能启用该扩展，并允许启用其他存储中的扩展。  如果你已授予权限，则 Microsoft Edge 将允许安装其他存储中的扩展，并使用 Chrome Web Store 来更新你的扩展。  可以控制允许从其他商店进行扩展的选项。 导航到 `edge://extensions`。 切换**允许其他存储中的扩展**设置。
 
+
+<!-- ====================================================================== -->
 ## <a name="family-safety"></a>家庭安全
 
 Microsoft 提供了一些工具来帮助家庭保持联系，让孩子在运行微软桌面的 Windows、Xbox 和 Android 设备上更安全。
@@ -227,6 +251,8 @@ Web 筛选可防止家庭组中的孩子转到家庭组织者阻止的成熟网�
 
 家庭组组织者可能会停止从家庭安全门户中收集数据。  有关 Microsoft 家庭安全功能的详细信息，请导航到[什么是 Microsoft 家庭组？][MicrosoftSupport12413]
 
+
+<!-- ====================================================================== -->
 ## <a name="geolocation"></a>地理位置
 
 Microsoft Edge 支持 [地理位置 API][W3cGeolocationApiMain]，这允许网站在你的允许下访问你的位置信息。  网站可能会询问你的位置，例如，在尝试查找离你最近的咖啡店时。  在允许网站访问你的位置之前，Microsoft Edge 会始终征求你的许可。  若要管理权限或始终阻止网站访问你所在的位置，请导航到 `edge://settings/content/location`。
@@ -247,6 +273,8 @@ Microsoft Edge在向位置服务发出请求时生成新的随机 ID。  Microso
 
 **InPrivate** 浏览使用启动 **InPrivate** 会话的配置文件的位置权限设置。 在向站点授予你的位置之前，**来宾**模式始终会要求你提供权限。
 
+
+<!-- ====================================================================== -->
 ## <a name="import-browser-data"></a>导入浏览器数据
 
 第一次启动浏览器时，Microsoft Edge 将提供交互式无缝体验。  可以将浏览器数据导入到其他浏览器Microsoft Edge。  在导入期间，可以保留现有数据，也可以将其删除并重新启动。  数据包括收藏夹、浏览历史记录、自动填充数据、扩展、设置以及其他浏览数据。
@@ -261,6 +289,8 @@ Microsoft Edge在向位置服务发出请求时生成新的随机 ID。  Microso
 
 若要随时导入其他浏览器中的数据，请导航到 `edge://settings/importData`。
 
+
+<!-- ====================================================================== -->
 ## <a name="install-and-update"></a>安装和更新
 
 可在 Windows 和 macOS 等平台上下载和安装 Microsoft Edge。  Microsoft Edge 使用更新服务使 Microsoft Edge 版本处于最新状态，并确保安全。
@@ -271,6 +301,8 @@ Microsoft Edge 就安装和更新进度对 Microsoft Edge 更新服务执行 pin
 
 默认情况下，所有 Microsoft Edge 用户都会启用自动更新。  在所有平台上，Microsoft Edge 都会在启动时和运行时定期检查更新。  在 macOS 设备上，Microsoft AutoUpdate 还会定期检查 Microsoft 产品的更新。  组织可以使用更多控件和配置。  有关控件和配置的详细信息，请导航到 ["更新][DeployedgeUpdatePoliciesUpdate]"。
 
+
+<!-- ====================================================================== -->
 ## <a name="internet-explorer-mode"></a>Internet Explorer 模式
 
 Microsoft Edge 通过 Internet Explorer (IE) 集成简化了体验。  Microsoft Edge 仅支持 IE 11，而 IE 模式仅在 Windows 上可用。  通过组策略，组织可以使用 IE 模式功能。  管理员选择在 Microsoft Edge 的 IE 模式下打开特定网站。
@@ -288,16 +320,21 @@ Windows 设备上的非企业用户也可以访问 IE 模式。  若要启用 IE
 Internet Explorer 浏览数据本地存储在 Microsoft Edge 和 Internet Explorer 中。  若要在 IE 模式下浏览时删除浏览数据，请导航到 `edge://settings/privacy`，并从“清除浏览数据”**** 和“清除 Internet Explorer 的浏览数据”**** 中清除数据。
 
 
+<!-- ====================================================================== -->
 ## <a name="intrusive-ads"></a>侵入式广告
 
 为了提供更好的浏览体验，Microsoft Edge 将阻止在显示侵入性或误导性广告的网站上加载广告。 启用“广告屏蔽”后，Microsoft Edge 将定期从 Microsoft 服务器下载显示有侵入性或误导性广告的最新网站列表，并存储在设备本地。  下载请求中不包含任何用户标识符。  如果访问列表上的网站，Microsoft Edge 会阻止该网站上的所有广告，并且你会看到 `Ads blocked` 消息。  为获得网站广告，请导航到 `edge://settings/content/ads` 并更改设置。 除了下载具有侵入式广告的网站列表之外，“广告屏蔽”功能不会向 Microsoft 发送其他信息，也不会在你浏览网站时向 Microsoft 请求其他信息。
 
+
+<!-- ====================================================================== -->
 ## <a name="jump-list"></a>跳转列表
 
-使用 Microsoft Edge 中的“跳转列表”，你可以通过将鼠标悬停在任务栏中的 Microsoft Edge 图标上并打开上下文菜单\（右键单击\）轻松找到最近关闭的网站。 为每个配置文件本地存储最后三个关闭的选项卡。  若要从Windows 10及更高版本的跳转列表中删除网站，请将鼠标悬停在每个站点上，然后打开上下文菜单 \（右键单击\）。
+使用 Microsoft Edge 中的“跳转列表”，你可以通过将鼠标悬停在任务栏中的 Microsoft Edge 图标上并打开上下文菜单（右键单击）轻松找到最近关闭的网站。 为每个配置文件本地存储最后三个关闭的选项卡。  若要从 Windows 10 及更高版本的跳转列表中删除网站，请将鼠标悬停在每个站点上，然后打开上下文菜单（右键单击）。
 
 可以在跳转列表中清除或更改最近关闭的选项卡的显示。 导航到， `edge://settings/privacy` 然后选择**选择每次关闭浏览器时要清除的内容**设置。 使用 **InPrivate** 窗口时，Microsoft Edge 不会将关闭的选项卡信息添加到“跳转列表”。  使用 **来宾** 模式时，跳转列表不可用。  有关清除浏览数据的详细信息，请导航到[查看和删除 Microsoft Edge 中的浏览器历史记录][MicrosoftSupport10607]。
 
+
+<!-- ====================================================================== -->
 ## <a name="kids-mode"></a>儿童模式
 
 儿童模式是专为 Microsoft Edge 中的儿童设计的便捷浏览模式。  有了儿童友好功能和安全护栏，“儿童模式”是儿童安全浏览网络的理想之地。  儿童模式包括自定义浏览器主题、儿童友好内容、基于允许列表进行浏览、必应安全搜索设置为严格以及退出密码要求等功能。  儿童模式不需要子帐户或个人资料，因此你无法登录儿童模式。
@@ -315,19 +352,25 @@ Internet Explorer 浏览数据本地存储在 Microsoft Edge 和 Internet Explor
 
 儿童模式不会收集用于新闻源或其他 Microsoft 服务个性化的数据。  你不得更改儿童模式的隐私设置。  其他设置（如 Windows Defender SmartScreen 和诊断数据）根据启动儿童模式的个人资料进行配置。  若要详细了解如何使用浏览器和 Windows Defender SmartScreen 的诊断数据，请导航到 [诊断数据](#diagnostic-data)和[SmartScreen](#smartscreen)。
 
+
+<!-- ====================================================================== -->
 ## <a name="microsoft-edge-driver"></a>Microsoft Edge 驱动程序
 
 Microsoft Edge 驱动程序允许开发人员使用 [WebDriver 协议][WebDriverProtocol]驱动 Microsoft Edge 浏览器。  Microsoft Edge驱动程序是可执行文件 `msedgedriver.exe` 与Microsoft Edge进行分隔。 开发人员可以从客户端代码（例如测试脚本）调用驱动程序。  默认情况下，Microsoft Edge 驱动程序会向 Microsoft 发送诊断数据，如[新建会话 WebDriver 命令][WebDriverProtocolNewSession]的状态。  若要关闭 Microsoft Edge 驱动程序的诊断数据收集，请将 `MSEDGEDRIVER_TELEMETRY_OPTOUT` 环境变量设置为 `1`。  有关 Microsoft Edge 驱动程序的详细信息，请导航到 [使用 WebDriver 自动执行 Microsoft Edge 自动化][WebDriverDoc]。
 
+
+<!-- ====================================================================== -->
 ## <a name="network-time"></a>网络时间
 
 Microsoft Edge 使用 Microsoft 网络时间服务来跟踪来自外部源（如时间服务器）的时间。  通过随机间隔或当 Microsoft Edge 遇到过期的 SSL 证书时，Microsoft Edge 可能会向 Microsoft 发送请求，以获取来自受信任源的时间。  如果 Microsoft Edge 检测到系统时钟不准确，将会更频繁地发出请求。  如果用户更改了操作系统上的时间且该时间与正确时区相冲突，则会导致系统时钟不准确。  Microsoft 网络时间服务用于获取协调世界时 (UTC)。  请求中不包含 cookie 或用户标识符，并且不会记录任何数据。
 
+
+<!-- ====================================================================== -->
 ## <a name="new-tab-page"></a>“新建选项卡”页面
 
 Microsoft Edge提供了一个以用户为中心的新选项卡页面，其中的搜索框由[Bing][|::ref2::|Main]提供支持。 Microsoft Edge还为你最常访问的网站提供快速链接磁贴，以及来自 Microsoft 新闻或 Office 365 的相关内容。 可以通过选择 **"自定义** "按钮来更改新选项卡页的外观。 为每个配置文件设置新的选项卡页首选项，并将其存储在本地设备上。 首选项不会跨设备同步。
 
-为了加快 Microsoft 新选项卡页的加载时间，可以在后台加载该页面。 如果允许 Cookie，加载的内容可能包含 Cookie。 可以关闭 Microsoft 新选项卡页面的后台加载。 导航到 `edge://settings/newTabPage` 并关闭 **"预加载新选项卡"页，以获得更快的体验** 设置。
+为了加快 Microsoft Edge 新选项卡页的加载时间，可以在后台加载该页面。 如果允许 Cookie，加载的内容可能包含 Cookie。 可以关闭 Microsoft 新选项卡页面的后台加载。 导航到 `edge://settings/newTabPage` 并关闭 **"预加载新选项卡"页，以获得更快的体验** 设置。
 
 :::image type="complex" source="./media/n-t-p1.png" alt-text="“新建选项卡”页面" lightbox="./media/n-t-p1.png":::
    “新建选项卡”页面
@@ -353,6 +396,8 @@ Microsoft Edge 收集有关如何使用新选项卡页的诊断数据，如与�
 
 **InPrivate** 浏览和 **来宾** 模式提供了替代的新选项卡页面体验。
 
+
+<!-- ====================================================================== -->
 ## <a name="on-startup"></a>启动时
 
 通过 Microsoft Edge，你可以从上次浏览会话中打开上次打开的选项卡，选择从上次离开的位置开始浏览。 它将打开上一浏览会话中最后打开的选项卡，包括会话 Cookie。 此功能在启动时仍然可用，以还原上一会话中的选项卡，并让你登录到已访问的网站。  你可以将 Microsoft 配置为 edge 显示上一浏览会话中打开的选项卡。 导航到 `edge://settings/onStartup` 并打开" **继续，其中你已离开"** 设置。 如果你选择“**从上次离开的位置继续**”设置并在每次关闭浏览器时清除浏览数据，则将删除你指定的数据，但该 URL 会保留到下一次会话。
@@ -361,6 +406,8 @@ Microsoft Edge 收集有关如何使用新选项卡页的诊断数据，如与�
 
 启动时不会还原**InPrivate**和**来宾**模式选项卡。
 
+
+<!-- ====================================================================== -->
 ## <a name="password-monitor"></a>密码监视器
 
 Microsoft Edge 致力于保证你在 Web 上的安全性。 为了帮助保护你个人信息的隐私和安全，如果你登录到了 Microsoft Edge，密码监视器会在第三方数据泄露你的凭据时提醒你。 如果启用了密码监视器，则已保存的凭据将在你的设备上进行本地哈希和加密，然后通过 HTTPS 发送到 Microsoft 服务器，并与已知泄露凭据的加密列表进行比较。
@@ -371,6 +418,8 @@ Microsoft Edge 致力于保证你在 Web 上的安全性。 为了帮助保护�
 
 该功能仅适用于已登录到 Microsoft Edge 的用户。 Microsoft Edge 要求你提供启用密码监视器的权限。  若要启用\（或禁用\）“密码监视器”，请导航到 `edge://passwords`。
 
+
+<!-- ====================================================================== -->
 ## <a name="payments"></a>付款
 
 通过 Microsoft Edge，你可以将付款信息保存到你的浏览器配置文件，以及在你浏览时根据需要使用信息自动填充付款表单，从而帮助你提高工作效率。  遇到类似付款表单时，Microsoft Edge 将使用保存的信息填写表单。  信用卡和其他付款信息仅通过显式权限保存。
@@ -405,12 +454,16 @@ Microsoft Edge支持 PaymentRequest API。 API 允许你使用之前使用自动
 > [!NOTE]
 > 选择退出“[Microsoft 隐私仪表板][MicrosoftAccountPrivacy]”上的个性化广告，不会禁用对个性化搜索结果和新闻源内容的浏览历史记录的收集和使用。 您可以关闭个性化搜索结果和新闻的 Microsoft Edge浏览历史记录的收集和使用。 导航到 `edge://settings/privacy`。 在 **"个性化 Web 体验** "中， **允许 Microsoft 使用帐户中的浏览历史记录个性化广告、搜索、新闻和其他Microsoft 服务** 设置，从而关闭"改善 Web 体验"。 如果停止共享数据，Microsoft 将不再收集和使用你的浏览历史记录来个性化广告、搜索结果和资讯。 有关 Microsoft Edge 中的个性化设置的详细信息，请导航到[用于个性化广告和体验的 Microsoft Edge 浏览历史记录][MicrosoftSupport4532583]。
 
+
+<!-- ====================================================================== -->
 ## <a name="print"></a>Print
 
 借助 Microsoft Edge，可使用多种设备和应用程序来打印网页、PDF 文件或其他内容。 打印到打印机、应用程序或 PDF 时，Microsoft Edge 会将命令和文件信息发送到设备的操作系统。 不会将该信息发送给 Microsoft。 该信息不会发送给 Microsoft，且所有发送到设备操作系统的数据在完成或取消打印后将立即删除。 若要更改打印目标，请导航到 `edge://settings/printing`。
 
 也可以使用 Microsoft Print to PDF 将网页和文件打印到 PDF，此操作不会将有关该文件的任何数据发送回 Microsoft。  对 PDF 文件所做的任何批注将本地保存到文件。
 
+
+<!-- ====================================================================== -->
 ## <a name="profiles"></a>配置文件
 
 Microsoft Edge 中的配置文件使你能够将浏览数据分隔到独立的配置文件中。  与一个配置文件关联的数据独立于与其他配置文件关联的数据。  例如，如果你在不同的配置文件中设置了个人收藏夹和历史记录，那么它们就不会与你的工作帐户同步。
@@ -427,14 +480,18 @@ Microsoft Edge 中的配置文件使你能够将浏览数据分隔到独立的�
 
 关闭所有 **InPrivate** 窗口后，将清除特定 **InPrivate** 会话的浏览数据。  使用 Windows 输入法编辑器 (IME) 键盘进行输入和墨迹书写时，可能会收集数据以改进语言识别和建议功能。  在 **InPrivate** 和正常浏览期间使用 Windows 输入法键盘时，可以停止 Microsoft 收集墨迹书写和键入数据。 打开 **"开始** > **设置** > **隐私**"，并关闭 **"墨迹书写"和"键入个性化设置**"。  有关**InPrivate**浏览的详细信息，请导航到[Microsoft Edge 中的"浏览 InPrivate"。][MicrosoftSupport4533513]
 
+
+<!-- ====================================================================== -->
 ## <a name="read-aloud"></a>大声朗读
 
-Microsoft Edge 提供大声朗读功能，它向用户朗读网页内容。  若要启动“大声朗读”，请将鼠标悬停在页面上的任意位置，并打开上下文菜单 \（右键单击 \）或打开““**设置和更多(...)**” 并选择“ **大声朗读**”。  大声朗读提供了多种语音，可用于阅读网页内容。  如果使用的语音安装在 Windows 设置的"**时间和语言**"部分[Windows 10及更高版本上][OfficeSupport4c83a8d8748642f78e462b0fdf753130]，并且想要清除以前使用的任何语音的本地缓存，请导航到`edge://settings/clearBrowserData`。
+Microsoft Edge 提供大声朗读功能，它向用户朗读网页内容。  若要启动“大声朗读”，请将鼠标悬停在页面上的任意位置，并打开上下文菜单（右键单击）或打开“**设置和更多(...)**” 并选择“ **大声朗读**”。  大声朗读提供了多种语音，可用于阅读网页内容。  如果使用的语音安装在 Windows 设置的"**时间和语言**"部分[Windows 10及更高版本上][OfficeSupport4c83a8d8748642f78e462b0fdf753130]，并且想要清除以前使用的任何语音的本地缓存，请导航到`edge://settings/clearBrowserData`。
 
 当你启动“大声朗读”时，Microsoft Edge 将使用 [Web 语音 API][GithubW3cIncubatorCommunityGroupSpeechApi]。 根据你选择的语音，将使用平台提供的客户端库（例如，特定于你的操作系统的客户端库）或由 Azure 认知服务提供支持的服务器端库，将页面内容从文本转换为语音。
 
 如果使用客户端库将内容转换为语音，则不会向 Microsoft 服务器发送任何信息。 如果使用 Azure 认知服务（如任何语音名称中的“Online”一词所示）将内容转换为语音，则文本以及随机生成的令牌将发送到 Microsoft。  转换完成后，服务会将音频文件中的口述文本返回到你的设备。  所有数据在从设备传输到 Microsoft 时都会加密，反之亦然。  发送给 Microsoft 的文本和生成的音频文件将在转换发生后立即删除；任何时间段内均不会存储有关你的 Web 内容的其他数据。
 
+
+<!-- ====================================================================== -->
 ## <a name="releasing-new-functionality"></a>发布新功能
 
 为改进 Microsoft Edge，Microsoft Edge 团队一直在向用户学习。  在学习过程中，某些用户可能会在新功能公开发布之前体验这些新功能。
@@ -449,10 +506,14 @@ Microsoft 开发人员需要了解新函数对Microsoft Edge Microsoft 服务。
 
 函数标记不是安装函数的唯一Microsoft Edge。 标记在共享同一Microsoft Edge集的所有实例之间共享。  Microsoft Edge 将 HTTPS 中的信息发送给 Microsoft 服务。 浏览 **InPrivate** 或来 **宾** 模式时，浏览器不会发送信息。 可以阻止发送数据。 请导航到 `edge://settings/privacy`，然后关闭 **“通过发送有关如何使用浏览器的可选诊断数据、访问的网站和故障报告来帮助改进 Microsoft 产品”** 设置。 有关如何重置浏览器特有的标识符的详细信息，请导航到[有关如何使用浏览器的诊断数据](#diagnostic-data)部分。
 
+
+<!-- ====================================================================== -->
 ## <a name="resolve-navigation-errors"></a>解决导航错误
 
 如果 Microsoft Edge 检测到 SSL 连接超时、证书错误或可能由强制网络门户（例如，旅馆或机场的 Wi-Fi 网络）导致的其他网络问题，Microsoft Edge 将向 `http://edge.microsoft.com/captiveportal/generate_204` 发送请求并检查响应代码。 强制网络门户包括酒店或机场的 Wi-Fi 网络。 如果请求重定向到另一个 URL，Microsoft Edge 将在新选项卡中打开该 URL，假定该 URL 是一个登录页面。  对强制网络门户检测页的请求是无状态服务。 不会记录请求，也不会发送或保存 Cookie。  在 Windows 平台上，Microsoft Edge 使用 Windows 强制网络门户服务。 否则，将使用 Microsoft Edge 强制网络门户服务。 可以关闭该服务。 导航到 `edge://settings/privacy`，并关闭 **"使用 Web 服务帮助解决导航错误** "设置。
 
+
+<!-- ====================================================================== -->
 ## <a name="secure-dns"></a>安全 DNS
 
 导航到网站时，浏览器需要查找网络地址，如 `93.184.216.34`，以解析主机名，例如 `example.com`。 安全 DNS 通过与 DNS 服务提供程序的 HTTPS 连接使用服务执行此查找。 安全 DNS 可防止网络上的攻击者修改或窃听查找。
@@ -463,6 +524,8 @@ Microsoft Edge 支持使用特定的安全 DNS 提供商。 如果选择安全 D
 
 对于属于组织的托管计算机，默认 `off` 安全 DNS。 可以使用管理策略对其进行配置。 **InPrivate** 浏览使用从中启动 **InPrivate** 会话的配置文件的安全 DNS 设置。 来宾模式将始终使用当前的服务提供商。
 
+
+<!-- ====================================================================== -->
 ## <a name="shopping"></a>购物
 
 Microsoft Edge可以帮助您在在线购物时找到优惠券，折扣和更优惠的价格。 为帮助你在在线购物时查找赠券或最适合的价格，Microsoft Edge 从 Microsoft 购物服务将本地购物域列表下载到客户。
@@ -510,6 +573,8 @@ macOS 上 Microsoft Edge 中的标识在 Microsoft 应用间共享。 共享标�
 
 使用来宾模式或 InPrivate 时，无法登录到 Microsoft Edge。
 
+
+<!-- ====================================================================== -->
 ## <a name="smartscreen"></a>SmartScreen
 
 SmartScreen 旨在帮助你安全浏览 Web。  访问网站或下载文件时，SmartScreen 会检查 URL 或文件的信誉。  如果 SmartScreen 确定网站或文件有恶意，则会阻止你访问网站或下载文件。
@@ -534,22 +599,30 @@ SmartScreen 服务存储有关信誉检查的数据，并生成已知恶意 URL 
 
 此外，SmartScreen 还可以检查下载文件的 URL，确定是否有任何内容可能归类为不需要的应用。  阻止可能不需要的应用有助于提供更高效、高性能和更愉悦的 Windows 体验。  默认情况下，该设置处于关闭状态，并且仅在Windows 10和更高版本的设备上可用。  若要启用该功能，请导航到 `edge://settings/privacy`，启用“阻止可能不需要的应用”**** 设置。  有关如何对可能不需要的应用进行分类的详细信息，请导航到[可能不需要的应用程序 (PUA)][WindowsSecurityThreatProtectionIntelligenceCriteriaPotentiallyUnwanted]。  有关如何配置设置的详细信息，请导航到[检测并阻止可能不需要的应用程序][WindowsSecurityThreatProtectionWindowsDefender]。
 
+
+<!-- ====================================================================== -->
 ## <a name="speech-recognition"></a>语音识别
 
 若要将语音转换为文本，Microsoft Edge 支持 [Web 语音 API][GithubW3cIncubatorCommunityGroupSpeechApi]。  如果网站所含 Web 功能需要将语音捕获和转换为文本并请求访问你的麦克风，则 Microsoft Edge 会将捕获的音频发送到 Microsoft 服务，将其转换为文本。  录制的音频通过与 Microsoft Azure 认知服务的安全 HTTPS 连接使用随机生成的令牌发送。  不会出于任何目的存储录制的音频内容。  文本将发送回你的设备，然后发送到网站。
 
 若要关闭将语音转换为文本，可以拒绝任何提示许可的站点的麦克风访问。  若要关闭所有网站的麦克风权限，请导航到 `edge://settings/content/microphone`。
 
+
+<!-- ====================================================================== -->
 ## <a name="spellcheck"></a>拼写检查
 
 当你在浏览器中输入时，Microsoft Edge 将检查拼写。  拼写检查服务已在设备本地完成。 Microsoft Edge不会将有关键入的信息发送给 Microsoft 进行拼写检查。 可以关闭该功能。 导航到 `edge://settings/languages`。 在 **"检查拼写"中**，关闭每种所需语言的设置。
 
 向 Microsoft Edge 添加新语言后，浏览器将使用 HTTPS 将新语言字典下载到设备。  该字典用于内置拼写检查服务。  从 Microsoft Edge 设置中删除语言将从设备中删除字典。  来宾模式不使用来自配置文件或任何添加的语言的自定义字典。  若要添加或删除本地字典中的单词，请导航到 `edge://settings/languages`，在“检查拼写”**** 下选择“添加或删除单词”****。
 
+
+<!-- ====================================================================== -->
 ## <a name="suggest-similar-sites"></a>建议类似网站
 
 为了帮助解决地址栏中导致网站错误的 URL 拼写错误，Microsoft Edge 可能会建议使用正确的 URL。  出现网站导航错误时，Microsoft Edge 会将 Web 地址的域发送到 Microsoft 服务，以建议更正的 URL。  Microsoft Edge 不包含域中的标识符或令牌。  如果服务找到建议，它将返回建议的 URL。  Microsoft 存储不正确的域和建议的域。 帮助改进服务。  为了帮助导航到正确的网站，默认情况下将启用该功能。  若要关闭该功能，请导航到 `edge://settings/privacy`，然后在“服务”**** 下禁用“建议在找不到网站时显示类似网站”**** 设置。
 
+
+<!-- ====================================================================== -->
 ## <a name="sync"></a>同步
 
 使用Microsoft 帐户登录Microsoft Edge，可以跨所有已登录版本的Microsoft Edge同步浏览数据。 可以同步浏览历史记录、收藏夹、设置、表单填充数据（包括地址等）、密码、扩展、打开选项卡和集合。 可以选择是否在Microsoft Edge中运行同步。 可以单独控制每个同步的数据类型。
@@ -566,12 +639,16 @@ SmartScreen 服务存储有关信誉检查的数据，并生成已知恶意 URL 
 
 InPrivate 和来宾模式浏览数据不会同步到你的 Microsoft 帐户。  但是，在 InPrivate 会话过程中创建的收藏夹将同步到已启用同步的 Microsoft Edge 已登录版本。
 
+
+<!-- ====================================================================== -->
 ## <a name="tips-and-recommendations"></a>提示和建议
 
 Microsoft Edge 希望为你提供相关的提示和建议，以便在使用浏览器的过程中获得最佳体验。  Microsoft Edge 使用可用的设备连接和配置数据来提供相关的提示和建议。  此数据将由你的操作系统、区域设置、浏览器设置以及其他设备连接和配置数据组成。  将使用你的浏览器所特有的可重置标识符，通过安全的 HTTPS 连接发送该数据。  对于设置Microsoft Edge时Windows 10和更高版本的设备，我们遵循 Windows 中定制的体验。  [深入了解 Windows 中的定制体验](https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy)。
 
 在 InPrivate 浏览或来宾模式下，不会发送此数据。
 
+
+<!-- ====================================================================== -->
 ## <a name="tracking-prevention"></a>跟踪防护
 
 Microsoft Edge 旨在检测和阻止已知跟踪器。  用户可以从三个跟踪防护级别中进行选择：“基本”、“平衡”和“严格”。  为了保护用户隐私，默认情况下选择“平衡”。  Microsoft Edge 使用已知跟踪器的开源列表，在页面上加载任意跟踪器之前对其进行检测。  列表更新时，会定期将列表下载到设备。  出于统计目的，被阻止的跟踪器数和这些跟踪器名称将本地存储在设备上。  若要清除数据，请导航到 `edge://settings/privacy/blockedTrackers`。  检测和阻止跟踪器在设备本地上进行。  若要禁用跟踪防护，请导航到 `edge://settings/privacy`。  有关跟踪防护的详细信息，请导航到[了解 Microsoft Edge 中的跟踪防护][MicrosoftAccount4533959]。
@@ -582,6 +659,8 @@ Microsoft Edge 旨在检测和阻止已知跟踪器。  用户可以从三个跟
    跟踪防护
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## <a name="translate"></a>翻译
 
 在 Microsoft Edge 中，你可以浏览 Web 并将网页翻译为你选择的语言。 Microsoft Edge 使用 [Microsoft Translator][MicrosoftSpeechTranslator] 来翻译网页。 此功能最初使用设备上的库来采样网页的某些可见部分，以检测原始语言。 如果检测到的语言不是你的首选语言之一，则 Microsoft Edge 会将该网页翻译为首选语言或所选择的其他语言。 然后，可以通过选择“**翻译**”来翻译页面。 可通过从\<a language\>复选框中选择 **"始终翻译页面**"，以该语言自动翻译所有页面。
@@ -593,27 +672,35 @@ Microsoft Edge 不会在未经你允许的情况下翻译网页。 如果确实�
 1. 导航到  `edge://settings/languages`。
 1. 关闭“ **询问是否翻译非您所用语言的网页**”  切换开关并关闭网页。
 
+
+<!-- ====================================================================== -->
 ## <a name="web-apps-and-pinned-sites"></a>Web 应用和已固定网站
 
 Microsoft Edge使你能够安装网站开发人员创建的 Web 应用，并固定你最喜欢的网站。
 
 固定网站时，会将其添加到任务栏或快捷栏。  数据本地存储在设备上。  对于某些站点，有关网站是否已固定的信息与网站共享，因此站点不知道是否提示固定。  可通过任务栏或快捷栏管理已固定网站。  已固定网站在 Microsoft Edge 窗口中打开，并使用与特定版本的 Microsoft Edge 相同的网站权限和诊断数据设置。
 
+
+<!-- ====================================================================== -->
 ## <a name="webview"></a>WebView
 
 Microsoft Edge WebView 控件允许应用开发人员在 Windows 7、Windows 10 及更高版本的本机应用程序中托管 Web 内容。  托管 WebView2 实例的应用程序可能会向 Microsoft 发送诊断数据。 诊断数据可以包括你如何使用Microsoft Edge和你访问的站点。
 
 若要启用诊断数据收集，请导航到 `edge://settings/privacy`。 打开 **可选诊断数据** 设置。 若要在 Windows 10 上禁用 Microsoft Edge 故障诊断数据收集，请打开“**开始**” > “**设置**” > “**隐私**”并选择“**诊断和反馈**”。 若要关闭所有其他平台的诊断数据收集，请导航到 `edge://settings/privacy`。 **通过发送有关如何使用浏览器、访问的网站和故障报告设置的可选诊断数据，关闭帮助改进 Microsoft 产品**。 托管 Microsoft Edge WebView 的应用程序可能会收集受开发人员数据收集管理和相关隐私策略约束的其他数据。
 
+
+<!-- ====================================================================== -->
 ## <a name="windows-defender-application-guard"></a>Windows Defender 应用程序防护
 
 Windows Defender 应用程序防护 (WDAG) 是一项适用于组织的功能。  打开Windows Defender 应用程序防护时，Microsoft Edge打开隔离容器内不受信任的站点。 使用容器有助于保护组织中的资源免受恶意站点或网络钓鱼攻击。 仅对组织管理的组策略启用此功能。 它仅适用于最新版本的 Windows 10 和更高版本。 WDAG 收集有关在独立容器中打开不受信任的网站的产品改进诊断数据（例如打开新应用程序防护窗口所需的时间）。
 
 在你同意后，WDAG 还会收集有关如何使用浏览器的信息以及有关你访问的网站的信息。  若要在 Windows 10 上禁用 Microsoft Edge 故障诊断数据收集，请打开“**开始**” > “**设置**” > “**隐私**”并选择“**诊断和反馈**”。  若要禁止所有其他平台的诊断数据收集，请在正常浏览会话中导航到 `edge://settings/privacy`，然后禁用“通过发送有关如何使用浏览器的可选诊断数据、访问的网站和故障报告来帮助改进 Microsoft 产品”**** 设置。
 
+
+<!-- ====================================================================== -->
 ## <a name="windows-information-protection"></a>Windows 信息保护
 
-Windows 信息保护 \（WIP\） 有助于防止意外泄漏公司信息。 它仅适用于组织通过组织管理的组策略。 为标识为公司资产的站点启用 WIP。 通过地址栏中的“管理”图标标识属于企业资产的网站。 WIP 可防止从浏览器复制和粘贴，或将某些文件上传到组织外部的站点。
+Windows 信息保护 (WIP) 有助于防止意外泄漏公司信息。 它仅适用于组织通过组织管理的组策略。 为标识为公司资产的站点启用 WIP。 通过地址栏中的“管理”图标标识属于企业资产的网站。 WIP 可防止从浏览器复制和粘贴，或将某些文件上传到组织外部的站点。
 
 :::image type="complex" source="./media/w-i-p.png" alt-text="Windows 信息保护" lightbox="./media/w-i-p.png":::
    Windows 信息保护
@@ -621,6 +708,8 @@ Windows 信息保护 \（WIP\） 有助于防止意外泄漏公司信息。 它�
 
 如果你的 Microsoft Edge 版本启用了 WIP，该浏览器将收集事件日志，并将其发送给你的组织。  如果启用了 WIP，则不能选择退出数据收集。  WIP 只适用于 2016 年 8 月或更高版本的 Windows 10 版本。  有关由 WIP 捕获的事件日志的详细信息，请导航到[如何收集 Windows 信息保护 (WIP) 审核事件日志][WindowsSecurityInformationProtectionCollectAuditEventLogs]。
 
+
+<!-- ====================================================================== -->
 ## <a name="thank-you"></a>谢谢！
 
 Microsoft Edge 可通过 [Chromium][ChromiumMain] 开源项目和其他开源软件实现。  若要查看所有软件积分，请导航到 `edge://credits`。  [Google Chrome 隐私白皮书][GoogleChromePrivacyWhitepaper]被用作收集 Chromium 开源项目相关信息的来源。
@@ -630,6 +719,7 @@ Microsoft Edge 可通过 [Chromium][ChromiumMain] 开源项目和其他开源软
 <!-- Are we removing mentions of Chromium? Such as above? -->
 
 
+<!-- ====================================================================== -->
 ## <a name="getting-in-touch-with-the-microsoft-edge-team"></a>与 Microsoft Edge 团队联系
 
 Microsoft Edge 团队将始终倾听客户的意见，且非常重视客户的反馈。  若要在 Microsoft Edge 中提供反馈，请打开“**设置和更多**” > “**帮助和反馈**”并选择“**发送反馈**”。  对于渐进式 Web 应用 (PWA)，请打开“**设置和更多(...)**”并选择“**向 Microsoft 发送反馈**”。  提供有关反馈的详细信息，但所有其他信息都是可选的。

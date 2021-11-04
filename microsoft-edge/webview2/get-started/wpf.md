@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、wpf 应用、wpf、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
-ms.openlocfilehash: 7dd9418a86e3630ac55973c946070ac929507283
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: d849306d02dd075f05f586fa5f8292e574da89f5
+ms.sourcegitcommit: 5c9e13989cd2ea1598c8ce69192babe63ab78ac3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141052"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12154980"
 ---
 # <a name="get-started-with-webview2-in-wpf-apps"></a>WPF 应用中的 WebView2 入门
 
@@ -207,7 +207,7 @@ ms.locfileid: "12141052"
 *   `HistoryChanged`
 *   `NavigationCompleted`
 
-有关详细信息，请导航到["导航事件"。][Webview2ConceptsNavigationEvents]
+有关详细信息，请参阅 [WebView2 的导航事件][Webview2ConceptsNavigationEvents]。
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="导航事件":::
    导航事件
@@ -360,7 +360,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 <!-- ====================================================================== -->
 <!-- links -->
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 开发最佳实践|Microsoft Docs"
-[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "导航事件|Microsoft Docs"
+[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "WebView2 网站的导航|Microsoft Docs"
 
 [DotnetApiMicrosoftWebWebview2Wpf]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf 命名空间|Microsoft Docs"
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 类|Microsoft Docs"
