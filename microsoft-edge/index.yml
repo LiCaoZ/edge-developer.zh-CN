@@ -152,7 +152,10 @@ conceptualContent:
               text: 渐进式 Web 应用入门
             - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
               itemType: overview
-              text: 将 DevTools 与渐进式 Web 应用配合使用
+              text: 调试渐进式 Web 应用
+            - url: /microsoft-edge/progressive-web-apps-chromium/whats-new/pwa
+              itemType: overview
+              text: 渐进式 Web 应用中的新增功能
             - url: /microsoft-edge/progressive-web-apps-chromium/how-to/offline
               itemType: concept
               text: 脱机方案
@@ -167,15 +170,21 @@ conceptualContent:
             - url: /microsoft-edge/webview2/index
               itemType: overview
               text: WebView2 概述
-            - url: /microsoft-edge/webview2/gettingstarted/win32
+            - url: /microsoft-edge/webview2/get-started/win32
               itemType: get-started
-              text: 使用 WebView2 入门
-            - url: /microsoft-edge/webview2/gettingstarted/wpf
+              text: Win32 应用中的 WebView2 入门
+            - url: /microsoft-edge/webview2/get-started/winforms
               itemType: get-started
-              text: WPF 中的 WebView2 入门
-            - url: /microsoft-edge/webview2/gettingstarted/winforms
+              text: WinForms 应用中的 WebView2 入门
+            - url: /microsoft-edge/webview2/get-started/winui2
               itemType: get-started
-              text: Windows 窗体应用中的 WebView2 入门
+              text: WinUI 2 应用中的 WebView2 入门
+            - url: /microsoft-edge/webview2/get-started/winui
+              itemType: get-started
+              text: WinUI 3 应用中的 WebView2 入门
+            - url: /microsoft-edge/webview2/get-started/wpf
+              itemType: get-started
+              text: WPF 应用中的 WebView2 入门
             - url: /microsoft-edge/webview2/webview2-api-reference
               itemType: reference
               text: Microsoft Edge WebView2 API 参考
