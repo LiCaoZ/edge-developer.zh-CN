@@ -8,20 +8,20 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 914cd4ace3d4dc5457a5f81bb0bb933b7546079f
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 6ea1a60470c32fbb31e95390f7732f1ff2d3cf37
+ms.sourcegitcommit: f1fc8a18f6a7754c9c7f0171bfa5e12fbeecccee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155855"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "12157933"
 ---
 # <a name="switch-to-a-preview-channel-to-test-upcoming-apis-and-features"></a>切换到预览频道以测试即将推出的 API 和功能
 
-WebView2 Evergreen Runtime 的更新通常包括新的 API 和功能。  其中某些更新可能会破坏 WebView2 应用。  若要提前测试实验性 API 并确保应用的向前兼容性，你应该使用 Microsoft Edge 预览频道以及 WebView2 SDK 的预发布版本来执行兼容性测试。
+WebView2 Evergreen Runtime 的更新通常包括新的 API 和功能。  其中某些更新可能会破坏 WebView2 应用。  若要提前测试实验性 API 并确保应用的向前兼容性，你应该使用 Microsoft Edge 预览通道以及 WebView2 SDK 的预发布版本执行兼容性测试。
 
 测试预发布 SDK 包时，需要指示应用程序使用 Microsoft Edge (Beta、Dev 或 Canary) 的预览频道，而不是默认使用 WebView2 运行时。  下面介绍了几种执行此操作的方法。
 
-WebView2 运行时没有实验性 WebView2 API。  若要在预发布 SDK 中使用实验性 API 时运行 WebView2 代码，) 上的客户端 (需要具有 Microsoft Edge 预览通道。  建议使用 Canary 预览频道，因为它位于其他频道之前，并且具有最新的实验 API。
+WebView2 运行时没有最新的实验性 WebView2 API。  若要在预发布 SDK 中使用实验性 API 时运行 WebView2 代码，) 上的客户端 () 需要有一个 Microsoft Edge 预览通道。  建议使用 Canary 预览频道，因为它位于其他频道之前，并且具有最新的实验 API。
 
 预发布 SDK 与预览频道协同工作，如下所示：
 *  WebView2 SDK 的预发布版本包含实验性 API 的方法签名，这允许你在应用中使用实验性 WebView2 API 编写代码。
@@ -41,7 +41,9 @@ WebView2 运行时没有实验性 WebView2 API。  若要在预发布 SDK 中使
 <!-- intro/overview of 4 approaches ======================================= -->
 ## <a name="approaches-to-making-your-app-use-a-specific-browser-channel"></a>使应用使用特定浏览器通道的方法
 
-有几种方法让 WebView2 应用使用指定的预览频道Microsoft Edge：
+初始化 WebView2 时，它将尝试查找计算机上要使用的有效运行时。 它可以是 WebView2 运行时、Microsoft Edge预览通道或包含固定版本二进制文件的指定位置。 有关受支持的运行时的信息，可以阅读分发 [WebView2 应用和 WebView2 运行时](../concepts/distribution.md)。
+
+有几种方法使 WebView2 应用使用指定的预览频道Microsoft Edge：
 *  通过调用函数。
 *  使用组策略。
 *  通过使用注册表替代。
@@ -49,9 +51,20 @@ WebView2 运行时没有实验性 WebView2 API。  若要在预发布 SDK 中使
 
 下面介绍了这些方法。
 
+### <a name="browser-executable-folder"></a>浏览器可执行文件夹
+
+一个方法是使用浏览器可执行文件夹。  在此方法中，指定包含运行时二进制文件的文件夹。 此文件夹可以是下列位置之一：
+*  WebView2 运行时的安装位置。
+*  预览频道Microsoft Edge。
+*  包含你已自己部署到计算机中的固定版本二进制文件的文件夹。
+
+如果将浏览器可执行文件夹设置为 Microsoft Edge 的特定预览频道，则当预览频道更新到较新版本时，你将需要更新位置。 这是因为该位置包含版本号作为其路径的一部分。 因此，我们建议仅将此方法用于本地测试。
+
 ### <a name="default-channel-search-order"></a>默认通道搜索顺序
 
 本节适用于使用组策略、注册表替代或环境变量。
+
+如果未指定特定的浏览器可执行文件夹，则 WebView2 将尝试从已知默认位置之一加载运行时。
 
 默认通道搜索顺序为：
 1.  WebView2 运行时。
@@ -59,17 +72,12 @@ WebView2 运行时没有实验性 WebView2 API。  若要在预发布 SDK 中使
 1.  开发人员的开发人员Microsoft Edge。
 1.  Canary 通道Microsoft Edge。
 
-如果设置浏览器可执行文件夹，将覆盖上述搜索顺序。
-
-如果使用组策略、注册表替代或环境变量来设置发布通道首选项，这将使用默认搜索顺序的相反顺序。
-
+如果使用组策略、注册表替代或环境变量将发布频道首选项设置为 ，这将使用默认搜索顺序的 `1` 相反顺序。
 
 <!-- 1. Code ============================================================== -->
 ## <a name="using-code"></a>使用代码
 
-如果要使应用程序通过调用 函数Microsoft Edge预览通道，请完成以下步骤。
-
-此方法仅适用于本地测试，不应交付。  这是因为此方法需要查找 Edge 浏览器安装路径，该路径可能会在将来的更新中更改。
+如果要通过调用 函数使应用程序使用特定运行时，请完成以下步骤。
 
 ### <a name="win32c"></a>Win32\/C++
 
@@ -93,7 +101,7 @@ WebView2 运行时没有实验性 WebView2 API。  若要在预发布 SDK 中使
             .Get());
     ```
 
-1.  将 `subFolder` 变量替换为您想要使用Microsoft Edge预览频道的文件夹路径。  例如：
+1.  将 `subFolder` 变量替换为要Microsoft Edge预览频道的文件夹路径。  例如：
 
     ```cpp
     HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
@@ -139,7 +147,7 @@ WPF 使用的方法与上述 Win32/C++ 方法类似。
 <!-- 2. Group Policy ====================================================== -->
 ## <a name="using-a-group-policy"></a>使用组策略
 
-如果要使应用程序使用组策略Microsoft Edge预览通道，请复制 ADMX 和 ADML 文件到该 `PolicyDefinitions` 文件夹，如下所示。
+如果你想要让应用程序使用组策略Microsoft Edge预览通道，请复制 ADMX 和 ADML 文件到该 `PolicyDefinitions` 文件夹，如下所示。
 
 1.  从下载并部署适用于Microsoft Edge[下载策略文件](https://www.microsoft.com/edge/business/download)。
 
@@ -149,7 +157,7 @@ WPF 使用的方法与上述 Win32/C++ 方法类似。
 
 1.  打开本地 **组策略编辑器**。  为此，请在搜索Windows，键入"组策略"，然后选择"编辑**组策略"。**
 
-1.  展开 **"本地计算机策略"，** 然后展开"**计算机配置"或**"**用户配置"。**  然后展开****  >  **WebView2 Microsoft Edge模板**。
+1.  展开 **"本地计算机策略"，** 然后展开"**计算机配置"或**"**用户配置"。**  然后展开 **"管理模板**  >  **Microsoft Edge WebView2"。**
 
     :::image type="complex" source="./media/local-group-policy-editor.png" alt-text="&quot;本地组策略编辑器&quot;对话框" lightbox="./media/local-group-policy-editor.png":::
        **"本地组策略编辑器** "对话框
@@ -195,7 +203,7 @@ WPF 使用的方法与上述 Win32/C++ 方法类似。
 
     星号 (*) 值名称使此替代适用于所有 WebView2 应用。  如果只想将此替代应用于特定的 WebView2 应用，请将星号替换为应用的可执行文件的文件名。
 
-    将 `C:\Users\myname\AppData\Local\Microsoft\Edge SxS\Application\88.0.680.0` 替换为所需的预览Microsoft Edge路径。
+    将 `C:\Users\myname\AppData\Local\Microsoft\Edge SxS\Application\88.0.680.0` 替换为所需预览Microsoft Edge路径。
 
 #### <a name="resuming-using-the-default-webview2-evergreen-runtime"></a>使用默认的 WebView2 Evergreen Runtime 恢复
 
@@ -205,7 +213,7 @@ WPF 使用的方法与上述 Win32/C++ 方法类似。
 
 ### <a name="registry-override-release-channel-preference"></a>注册表替代：发布通道首选项
 
-若要使应用程序使用Microsoft Edge预览通道，请通过更改频道的搜索顺序来更改发布频道首选项的注册表替代：
+若要使应用程序使用Microsoft Edge预览通道，请使用注册表替代，该替代通过更改频道的搜索顺序来更改发布频道首选项：
 
 1.  打开 PowerShell 终端或启用 PowerShell 的命令提示符。
 
@@ -227,7 +235,7 @@ WPF 使用的方法与上述 Win32/C++ 方法类似。
 
 若要使应用程序使用环境变量Microsoft Edge预览通道：
 
-1.  在"Windows"栏中，输入"environment"，然后选择"**编辑系统环境变量"。**
+1.  在Windows栏中，输入"environment"，然后选择"**编辑系统环境变量"。**
 
     :::image type="complex" source="./media/search-bar-edit-sys-env-vars.png" alt-text="使用Windows搜索栏查找编辑环境变量的地方" lightbox="./media/search-bar-edit-sys-env-vars.png":::
        使用Windows搜索栏查找编辑环境变量的地方
@@ -241,9 +249,9 @@ WPF 使用的方法与上述 Win32/C++ 方法类似。
 
 1.  在"**环境变量"****对话框的"** 用户变量"部分，选择"新建 **"。**
 
-1.  在"**新建用户变量**"对话框中，将"**** 变量名称"设置为 ，将"变量"值设置为首选 `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER` 浏览器通道的路径。 ****
+1.  在"**新建用户变量**"对话框中，将"**** 变量名称"设置为 ，将"变量"值设置为首选浏览器通道或 `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER` 固定版本二进制文件的路径。 ****
 
-    或者，将 **"变量名称"** 设置为 `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` ，将 **"变量"值设置为** `1` 。
+    或者，将 **"变量名称**"设置为 ，将"变量"值设置为"反向搜索"，并首先使用非 `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` **** `1` 稳定通道。 除 指示 `1` 默认搜索顺序之外的任何值。
 
 1.  选择 **"** 确定"关闭对话框。
 
@@ -255,4 +263,4 @@ WPF 使用的方法与上述 Win32/C++ 方法类似。
 > 此方法可设置所有 WebView2 应用的环境变量，而不只是要测试的应用。  若要仅为要测试的 WebView2 应用设置此环境变量，如果从命令提示符运行应用，请设置环境变量 `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE=1` 。  这仅针对当前命令提示符进程和该实例中任何新的 `cmd.exe` 子进程设置环境 `cmd.exe` 变量。  然后，环境变量仅适用于你正在测试的 WebView2 应用。
 
 > [!NOTE]
-> 通过此方式设置环境变量后，环境变量将应用于创建的任何新进程。  环境变量不适用于已在运行的进程。  为了确保所有进程都使用新的环境变量，您可能需要重新启动Visual Studio或注销Windows然后重新登录。
+> 通过此方式设置环境变量后，环境变量将应用于创建的任何新进程。  环境变量不适用于已在运行的进程。  为确保所有进程都使用新的环境变量，您可能需要重新启动Visual Studio或注销Windows然后重新登录。

@@ -7,12 +7,12 @@ metadata:
   author: MSEdgeTeam
   ms.author: msedgedevrel
   ms.date: 09/02/2021
-  ms.openlocfilehash: 1c90c248cf43b5b33935c8b6c17de5e015e9c457
-  ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+  ms.openlocfilehash: 7358ec27c8f989d0f1e07443d5f85499879cc74e
+  ms.sourcegitcommit: f1fc8a18f6a7754c9c7f0171bfa5e12fbeecccee
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/02/2021
-  ms.locfileid: "12140142"
+  ms.lasthandoff: 11/05/2021
+  ms.locfileid: "12157961"
 landingContent:
 - title: Microsoft Edge 开发工具
   linkLists:
@@ -62,8 +62,10 @@ landingContent:
       url: /microsoft-edge/progressive-web-apps-chromium/index
     - text: 渐进式 Web 应用入门
       url: /microsoft-edge/progressive-web-apps-chromium/how-to/index
-    - text: 将 DevTools 与渐进式 Web 应用配合使用
+    - text: 调试渐进式 Web 应用
       url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
+    - text: 渐进式 Web 应用程序中的新增功能
+      url: /microsoft-edge/progressive-web-apps-chromium/whats-new/pwa
   - linkListType: concept
     links:
     - text: 脱机方案
@@ -80,12 +82,16 @@ landingContent:
       url: /microsoft-edge/webview2/index
   - linkListType: get-started
     links:
-    - text: 使用 WebView2 入门
-      url: /microsoft-edge/webview2/gettingstarted/win32
-    - text: WPF 中的 WebView2 入门
-      url: /microsoft-edge/webview2/gettingstarted/wpf
-    - text: Windows 窗体应用中的 WebView2 入门
-      url: /microsoft-edge/webview2/gettingstarted/winforms
+    - text: 在 Win32 应用中开始使用 WebView2
+      url: /microsoft-edge/webview2/get-started/win32
+    - text: WinForms 应用中的 WebView2 入门
+      url: /microsoft-edge/webview2/get-started/winforms
+    - text: WinUI 2 应用中的 WebView2 入门
+      url: /microsoft-edge/webview2/get-started/winui2
+    - text: 在 WinUI 3 应用中开始使用 WebView2
+      url: /microsoft-edge/webview2/get-started/winui
+    - text: WPF 应用中的 WebView2 入门
+      url: /microsoft-edge/webview2/get-started/wpf
   - linkListType: reference
     links:
     - text: Microsoft Edge WebView2 API 参考
@@ -110,7 +116,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 正在从网站检测 Microsoft Edge
+    - text: 检测Microsoft Edge网站中的内容
       url: /microsoft-edge/web-platform/user-agent-guidance
     - text: 影响网站兼容性的更改
       url: /microsoft-edge/web-platform/site-impacting-changes
