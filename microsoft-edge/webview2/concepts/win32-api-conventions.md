@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 29e07cedf8b2147da6d1526f16a8f0166296f34b
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 44f90b4de85437b524392362863f594c4ac5c4ce
+ms.sourcegitcommit: 1e32efb1c9811ec7c65816e938d1a64b1ca5ece6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156450"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "12158479"
 ---
 # <a name="win32-c-webview2-api-conventions"></a>Win32 C++ WebView2 API 约定
 
@@ -146,5 +146,5 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [WebView2 入门][Webview2IndexGetStarted] - WebView2 Win32 C/C++。
+*  [在 Win32 应用中开始使用 WebView2](../get-started/win32.md) - WebView2 Win32 C/C++。
 *  [WebView2 API 参考](/dotnet/api/microsoft.web.webview2.wpf.webview2)

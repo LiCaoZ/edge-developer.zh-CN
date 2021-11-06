@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 278fb9ef9d34eb65c0c1689b1e39acda2a0d12eb
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 5e826d88f4a23ed7e355fd49545f111f7e7c7283
+ms.sourcegitcommit: 1e32efb1c9811ec7c65816e938d1a64b1ca5ece6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155757"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "12158507"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -35,14 +35,14 @@ ms.locfileid: "12155757"
 <!-- ====================================================================== -->
 ## <a name="improving-devtools-localization"></a>改进 DevTools 本地化
 
-为了满足翻译需求，Microsoft Edge团队侧重于提高翻译质量。  从 Microsoft Edge版本 87 开始，锁定多个字符串和术语，即使开发人员工具的其余部分以其他语言显示，这些字符串和术语也不会改变。  受影响字符串和术语的列表包括以下内容。
+为了满足翻译需求，Microsoft Edge团队侧重于提高翻译质量。  从 Microsoft Edge版本 87 开始，锁定多个字符串和术语，即使其他语言显示其余的 DevTools，这些字符串和术语也不会改变。  受影响字符串和术语的列表包括以下内容。
 
 *   **Lighthouse 工具中的**字符串。
 *   术语 `service worker` 。
 *   一些 **网络工具** 筛选器，如 `URL` `XHR` 、、 `JS` 和 `CSS` 。
 *   [$0](../../../console/utilities.md#recently-chosen-element-or-javascript-object)控制台实用程序 API。
 
-现在，在控制台中[为](../../../console/index.md)使用 DevTools 本地化版本的用户提供[$0。](../../../console/utilities.md#recently-chosen-element-or-javascript-object)   感谢全球开发人员社区帮助改进开发人员工具Microsoft Edge本地化。  继续[发送本地化质量反馈][联系人]，以改进在所有区域设置中对 DevTools 的支持。  若要在开源项目中查看此功能Chromium，请导航到"问题"#A0"1136655"。 [](https://crbug.com/1136655)
+现在，在控制台中[为](../../../console/index.md)使用 DevTools 本地化版本的用户提供[$0。](../../../console/utilities.md#recently-chosen-element-or-javascript-object)   感谢全球开发人员社区帮助改进开发人员工具Microsoft Edge本地化。  继续 [发送本地化质量反馈](../../../contact.md) ，以改进在所有区域设置中对 DevTools 的支持。  若要在开源项目中查看此功能Chromium，请导航到"问题"#A0"1136655"。 [](https://crbug.com/1136655)
 
 :::image type="complex" source="../../media/2020/10/bing-network-japanese.msft.png" alt-text="具有非本地化筛选器的网络工具" lightbox="../../media/2020/10/bing-network-japanese.msft.png":::
    **具有** 非本地化筛选器的网络窗格
@@ -52,7 +52,7 @@ ms.locfileid: "12155757"
 <!-- ====================================================================== -->
 ## <a name="move-tools-between-top-and-bottom-panels"></a>在顶部和底部面板之间移动工具
 
-DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时查看两个工具的任意组合来自定义 DevTools 并提高工作效率。  例如，将"源****"工具移动到****"源" (查看"元素"和"源") 。 ****  To review the history of this feature in the Chromium open-source project， navigate to Issue [#1075732](https://crbug.com/1075732).
+DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时查看两个工具的任意组合来自定义 DevTools 并提高工作效率。  例如，将 **"源"** 工具移动到****"源" (查看"元素"和"源") 。 ****  若要在开放源代码项目中查看此功能的Chromium，请导航到"问题"#A0"1075732"。 [](https://crbug.com/1075732)
 
 :::row:::
    :::column span="":::
@@ -82,7 +82,7 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
 *   保存和导出集合和环境。
 *   在网络控制台工具中编辑和导出 **环境变量** 集。
 
-若要在开放源代码项目中查看此功能Chromium，请导航到"问题"#A0"1093687"。 [](https://crbug.com/1093687)
+若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1093687"。](https://crbug.com/1093687)
 
 :::row:::
    :::column span="":::
@@ -110,7 +110,7 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
 *   你可以为多个网格启用永久性覆盖。
 *   新的 **布局** 工具允许你轻松切换网格覆盖，并为每个覆盖层配置外观和内容。
 
-默认情况下，这些功能为打开状态。  有关功能详细信息，请导航到 [CSS 网格](../../../css/grid.md)。  To review the history of this feature in the Chromium open-source project， navigate to Issue [#1047356](https://crbug.com/1047356).  此外，Microsoft Edge开发人员工具团队正在与 Chrome DevTools 团队和 Chromium 社区协作，向 DevTools 添加新的弹性框工具功能。  有关开放源代码项目中 flexbox 工具Chromium，请导航到"问题"#A0"1136394"。 [](https://crbug.com/1136394)
+默认情况下，这些功能为打开状态。  有关功能详细信息，请导航到 [CSS 网格](../../../css/grid.md)。  若要查看开放源代码项目中此功能的历史记录Chromium，请导航到"问题"#A0"1047356"。 [](https://crbug.com/1047356)  此外，Microsoft Edge开发人员工具团队正在与 Chrome DevTools 团队和 Chromium 社区协作，向 DevTools 添加新的弹性框工具功能。  有关开放源代码项目中 flexbox 工具Chromium，请导航到"问题"#A0"1136394"。 [](https://crbug.com/1136394)
 
 :::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="具有网格的布局工具" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
    **具有** 网格的布局工具
@@ -203,7 +203,7 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
 
 #### <a name="grouping-css-properties-in-the-computed-panel"></a>在计算面板中对 CSS 属性进行分组
 
-若要以更少的滚动量查看应用的 CSS，请按"计算"窗格中的类别对 CSS **属性进行** 分组。  在检查 CSS 时，还可以有选择地专注于一组相关属性。  从" **元素"** 工具中，选择一个元素。  若要将 (或取消) CSS 属性，请切换" **组"** 复选框。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题"#1096230、#1084673 和[](https://crbug.com/1096230) [#1106251。](https://crbug.com/1106251) [](https://crbug.com/1084673)
+若要以更少的滚动量查看应用的 CSS，请按"计算"窗格中的类别对 CSS **属性进行** 分组。  在检查 CSS 时，还可以有选择地专注于一组相关属性。  从" **元素"** 工具中，选择一个元素。  若要对 (或取消) CSS 属性进行分组，请切换 **"组"** 复选框。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题"#1096230、#1084673 和[](https://crbug.com/1096230)[#1106251。](https://crbug.com/1106251) [](https://crbug.com/1084673)
 
 :::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="对 CSS 属性进行分组" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
    对 CSS 属性进行分组
@@ -239,13 +239,13 @@ performance.mark('end');
    资源类型筛选器
 :::image-end:::
 
-若要发现更多特殊关键字（如 和 `resource-type` `url` ），请导航到 [按属性筛选请求](../../../network/reference.md#filter-requests-by-properties)。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题" [#1121141](https://crbug.com/1121141)和[#1104188](https://crbug.com/1104188)。
+若要发现更多特殊关键字（如 `resource-type` 和 `url` ），请导航到 [按属性 筛选请求](../../../network/reference.md#filter-requests-by-properties)。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题" [#1121141](https://crbug.com/1121141) [和 #1104188](https://crbug.com/1104188)。
 
 ### <a name="frame-details-view-updates"></a>框架详细信息视图更新
 
 #### <a name="display-coep-and-coop-reporting-to-endpoint"></a>向终结点显示 COEP 和 COOP 报告
 
-查看"安全与隔离"部分下的跨源嵌入 (COEP) 和跨源打开器策略 (COOP) `reporting to` **&** 终结点。  报告 [API](https://developer.mozilla.org/docs/Web/API/Reporting_API) 定义一个新的 HTTP 标头，它为你提供了一种指定浏览器服务器终结点以 `Report-To` 发送警告和错误的方法。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题"#A0"1051466"。 [](https://crbug.com/1051466)
+在"安全与隔离" (下查看跨源嵌入器策略) 和跨源打开器策略 (COOP) `reporting to` **&** 终结点。  报告 [API](https://developer.mozilla.org/docs/Web/API/Reporting_API) 定义一个新的 HTTP 标头，它为你提供了一种指定浏览器服务器终结点以 `Report-To` 发送警告和错误的方法。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题"#A0"1051466"。 [](https://crbug.com/1051466)
 
 :::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="报告到终结点" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
    `reporting to`终结点
@@ -269,7 +269,7 @@ CSS **概述** 工具现在显示页面上具有颜色对比度问题的元素�
 
 [CSS 概述辅助颜色演示](https://css-overview-accessible-colors-demo.glitch.me)
 
-若要启用此实验，在 **"设置"**  >  **下**，选中 **"CSS 概述"** 复选框。  若要查看具有颜色对比度问题的元素的列表，在对比度问题上，选择******文本**。  若要在"元素"工具 **中** 打开元素，请选择列表中的元素。  为了帮助修复对比度问题，开发人员Microsoft Edge自动[提供颜色建议](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane)。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题"#A0"1120316"。 [](https://crbug.com/1120316)
+若要启用此实验，在 **"设置"**  >  **** 下，选中 **"CSS 概述"** 复选框。  若要查看具有颜色对比度问题的元素的列表，在对比度问题上，选择******文本**。  若要在"元素"工具 **中** 打开元素，请选择列表中的元素。  为了帮助修复对比度问题，Microsoft Edge开发人员[工具自动提供颜色建议](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane)。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题"#A0"1120316"。 [](https://crbug.com/1120316)
 
 :::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="低色对比度问题" lightbox="../../media/2020/10/css-overview.msft.png":::
    低色对比度问题

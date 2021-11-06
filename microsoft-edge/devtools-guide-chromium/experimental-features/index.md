@@ -22,16 +22,16 @@ no-loc:
 - Edit keyboard shortcuts for any action in the DevTools
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
-ms.openlocfilehash: 7f29f2d9b0bebe09f26ca2eb37656fe7ffab9268
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: a210d88c40dc34a37ed464aabe51e2510d7fe943
+ms.sourcegitcommit: 1e32efb1c9811ec7c65816e938d1a64b1ca5ece6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156583"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "12158486"
 ---
 # <a name="experimental-features"></a>试验功能
 
-Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限。  您可以在发布每个功能之前试用这些功能和[提供反馈][联系人]。
+Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限。  可以在发布每个功能之前试用 [这些功能并提供](../contact.md) 反馈。
 
 组织的所有频道Microsoft Edge实验性功能。  可以使用以下方法获取最新的实验Microsoft Edge Canary 渠道。  本文仅介绍所选实验功能。  有关完整列表，请参阅****  >  **** DevTools 设置实验"页面。
 
@@ -55,9 +55,9 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 <!-- ====================================================================== -->
 ## <a name="turning-on-experimental-features"></a>打开实验性功能
 
-若要在 (中) 或) 实验Microsoft Edge：
+若要在 (中) 或关闭Microsoft Edge：
 
-1.  [打开 DevTools](../open/index.md)。  为此，在"Microsoft Edge"中，设置"更多****"按钮，这是三个点 (省略号) 。  然后将鼠标悬停在 **"更多工具"上**，然后选择"**开发人员工具"。**
+1.  [打开 DevTools](../open/index.md)。  为此，在"Microsoft Edge"中，设置"更多"**** 按钮，这是三个点 (省略号) 。  然后将鼠标悬停在 **"更多工具"上**，然后选择"**开发人员工具"。**
 
 1.  打开["设置](../customize/index.md#settings)工具"的"设置"窗格。  为此，请选择 **"设置 (** 齿轮) 图标。
 
@@ -92,7 +92,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 :::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::no-loc (辅助功能窗格中的源订单查看器) ：：：。" lightbox="。。/media/experiments-source-order-viewer.msft.png"：：：
 
-此实验从版本 86 Microsoft Edge开始，并且默认打开。
+此实验从版本 86 Microsoft Edge开始提供，并且默认打开。
 
 
 <!-- ====================================================================== -->
@@ -100,7 +100,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 <!-- keep the period per the ui string literal -->
 <!-- found in Experiments in 94 60% down main list -->
 
-现在，可以使用新的可视 [字体编辑器](../inspect-styles/edit-fonts.md) 来编辑字体。  使用它来定义字体和字体特征。  可视 **字体编辑器** 可帮助您执行以下操作：
+现在，可以使用新的可视 [字体编辑器来](../inspect-styles/edit-fonts.md) 编辑字体。  使用它来定义字体和字体特征。  可视 **字体编辑器** 可帮助您执行以下操作：
 
 *   在不同字体属性的单位之间切换
 *   在不同字体属性的关键字之间切换
@@ -138,7 +138,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 :::image type="content" source="../media/experiments-webhint.msft.png" alt-text="问题面板中的 webhint 反馈" lightbox="../media/experiments-webhint.msft.png":::
 
-此实验从版本 85 Microsoft Edge开始，并且默认打开。
+此实验从版本 85 Microsoft Edge开始提供，并且默认打开。
 
 
 <!-- ====================================================================== -->

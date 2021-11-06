@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 07/26/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 53a8f3dad0943ae4b631d6f12e65141ba928bc06
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+keywords: microsoft edge、web 开发、f12 工具、devtools
+ms.openlocfilehash: 47344ed896d27619633bc33850081392978668ed
+ms.sourcegitcommit: 1e32efb1c9811ec7c65816e938d1a64b1ca5ece6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140527"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "12158542"
 ---
 <!-- Copyright Katherine Jackson
 
@@ -288,7 +288,7 @@ li a {
 
 向现有规则集添加声明
 
-1.  将鼠标悬停在 **"主页"** 链接上，右键单击 (上下文菜单，) "检查 **"。**
+1.  将鼠标悬停在 **"主页"** 链接上，打开上下文菜单 (右键单击") "检查 **"。**
 
     :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="检查主页链接" lightbox="../media/beginners-css-add1.msft.png":::
        检查主页链接
@@ -621,7 +621,7 @@ li a {
 
 *   更好地进行 Web 开发的最好办法就是构建更多网站。  不要担心中断工作。  请一直玩得有趣，并尽可能学习。
 *   若要了解有关设置网页样式的信息，请导航到 CSS [简介](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS)。
-*   若要了解有关如何在 DevTools 中试验 CSS 的更多信息，请导航到 [入门 Viewing and Changing CSS][DevtoolsCssIndex]。
+*   若要详细了解如何在 DevTools 中试验 CSS，请导航入门[查看和更改 CSS。](../css/index.md)
 
 
 <!-- ====================================================================== -->

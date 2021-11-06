@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 8fd3be3d4f7c2d6877f133dab83ec08f9f3b888e
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 3bef51b631e84156242a27b351d25e0a8e2caec8
+ms.sourcegitcommit: 1e32efb1c9811ec7c65816e938d1a64b1ca5ece6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157381"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "12158465"
 ---
 <!-- Copyright Kayce Basques
 
@@ -39,10 +39,10 @@ ms.locfileid: "12157381"
 <!-- ====================================================================== -->
 ## <a name="keyboard-shortcuts-for-opening-devtools"></a>打开开发工具的键盘快捷方式
 
-如果要打开开发工具，请在光标聚焦在浏览器视口上时选择以下键盘快捷方式。
+若要打开 DevTools，当光标聚焦在浏览器视口上时，请按以下键盘快捷方式：
 
 | 操作 | Windows/Linux | macOS |
-|:--- |:--- |:--- |
+|---|---|---|
 | 打开上次使用的窗格 | `F12` 或 `Control`+`Shift`+`I` | `Command`+`Option`+`I` |
 | 打开“**控制台**”工具 | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |
 | 打开“**元素**”工具。 | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` 或 `Command`+`Option`+`C` |
@@ -51,10 +51,10 @@ ms.locfileid: "12157381"
 <!-- ====================================================================== -->
 ## <a name="global-keyboard-shortcuts"></a>全局键盘快捷方式
 
-以下键盘快捷键在大多数（如果不是全部）开发工具窗格中可用。
+大多数 DevTools 面板中都提供以下键盘快捷方式。
 
-| 操作 | Windows\/Linux | macOS |
-|:--- |:--- |:--- |
+| 操作 | Windows/Linux | macOS |
+|---|---|---|
 | 显示“**设置**” | `?` 或 `F1` | `?` 或 `Function`+`F1` |
 | 聚焦于下一窗格 | `Control`+`]` | `Command`+`]` |
 | 聚焦于上一窗格 | `Control`+`[` | `Command`+`[` |
@@ -71,7 +71,7 @@ ms.locfileid: "12157381"
 | 放大 | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |
 | 缩小 | `Control`+`-` | `Command`+`-` |
 | 还原默认缩放级别 | `Control`+`0` | `Command`+`0` |
-| 运行代码片段 | 选择 `Control`+`O` 以打开“[命令菜单](../command-menu/index.md)”，键入 `!`，然后输入脚本名称，然后选择 `Enter` | 选择 `Command`+`O` 以打开“[命令菜单](../command-menu/index.md)”，键入 `!`，然后输入脚本名称，然后选择 `Enter` |
+| 运行代码片段 | 按 `Control` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `!` 后跟脚本名称，然后按 `Enter` | 按 `Command` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `!` 后跟脚本名称，然后按 `Enter` |
 
 <!-- TODO: make a bug about this UIPlacement link being ambiguous.  -->
 <!-- TODO: Link "Inspect Element Mode" when a good section exists.  -->
@@ -80,57 +80,61 @@ ms.locfileid: "12157381"
 <!-- ====================================================================== -->
 ## <a name="elements-tool-keyboard-shortcuts"></a>元素工具键盘快捷方式
 
-| 操作 | Windows\/Linux | macOS |
-|:--- |:--- |:--- |
+| 操作 | Windows/Linux | macOS |
+|---|---|---|
 | 撤消更改 | `Control`+`Z` | `Command`+`Z` |
 | 恢复更改 | `Control`+`Y` | `Command`+`Shift`+`Z` |
 | 选择当前所选元素上方/下方元素 | `Up Arrow` / `Down Arrow` | `Up Arrow` / `Down Arrow` |
 | 展开当前选定的节点。  如果节点已展开，则此快捷方式将选择下方的元素 | `Right Arrow` | `Right Arrow` |
 | 折叠当前选定的节点。  如果节点已折叠，则此快捷方式将选择上方的元素 | `Left Arrow` | `Left Arrow` |
-| 展开或折叠当前选定的节点及所有子节点 | 按住 `Control`+`Alt`，然后选择元素名称旁边的**箭头**图标 | 按住 `Option`，然后选择元素名称旁边的**箭头**图标 |
+| 展开或折叠当前选定的节点及所有子节点 | 保留 `Control` + `Alt` ，然后单击**元素**名称旁边的箭头图标 | 保留 `Option` ，然后单击 **元素** 名称旁边的箭头图标 |
 | 在当前选定的元素上切换“**编辑属性**”模式 | `Enter` | `Enter` |
 | 进入“**编辑属性**”模式后，选择下一个/上一个属性 | `Tab` / `Shift`+`Tab` | `Tab` / `Shift`+`Tab` |
 | 隐藏当前所选元素 | `H` | `H` |
 | 在当前选定的元素上切换“**编辑为 HTML**”模式 | `Function`+`F2` | `F2` |
 
-### <a name="styles-panel-keyboard-shortcuts"></a>样式窗格键盘快捷方式
+### <a name="styles-pane-keyboard-shortcuts"></a>样式窗格键盘快捷方式
 
-| 操作 | Windows\/Linux | macOS |
-|:--- |:--- |:--- |
-| 导航属性值已声明的所在行 | 按住 `Control`，然后选择属性值 | 按住 `Command`，然后选择属性值 |
-| 循环显示颜色值的 RBGA、HSLA 和 Hex 表示形式 | 按住 `Shift`，然后选中值旁边的“**颜色预览**”复选框。 | 按住 `Shift`，然后选中值旁边的“**颜色预览**”复选框。 |
-| 选择下一个/上一个属性或值 | 选择属性名称或值，然后选择 `Tab` / `Shift`+`Tab` | 选择属性名称或值，然后选择 `Tab` / `Shift`+`Tab` |
-| 将属性值递增/减 0.1 | 选择一个值，然后选择 `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | 选择值，然后选择 `Option`+`Up Arrow` /选项+向下箭头 |
-| 将属性值递增/减 1 | 选择一个值，然后选择 `Up Arrow` / `Down Arrow` | 选择一个值，然后选择 `Up Arrow` / `Down Arrow` |
-| 将属性值递增/减 10 | 选择一个值，然后选择 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | 选择一个值，然后选择 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |
-| 将属性值递增/减 100 | 选择一个值，然后选择 `Control`+`Up Arrow` / `Control`+`Down Arrow` | 选择一个值，然后选择 `Command`+`Up Arrow` / `Command`+`Down Arrow` |
+| 操作 | Windows/Linux | macOS |
+|---|---|---|
+| 转到声明属性值的行 | 保留 `Control` ，然后单击属性值 | 保留 `Command` ，然后单击属性值 |
+| 循环显示颜色值的 RBGA、HSLA 和 Hex 表示形式 | 保留 `Shift` ，然后单击值 **旁边的"颜色** 预览"框 | 保留 `Shift` ，然后单击值 **旁边的"颜色** 预览"框 |
+| 选择下一个/上一个属性或值 | 单击属性名称或值，然后按 `Tab` / `Shift`+`Tab` | 单击属性名称或值，然后按 `Tab` / `Shift`+`Tab` |
+| 将属性值递增/减 0.1 | 单击某个值，然后按 `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | 单击某个值，然后按 `Option` + `Up Arrow` /Option+向下箭头 |
+| 将属性值递增/减 1 | 单击某个值，然后按 `Up Arrow` / `Down Arrow` | 单击某个值，然后按 `Up Arrow` / `Down Arrow` |
+| 将属性值递增/减 10 | 单击某个值，然后按 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | 单击某个值，然后按 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |
+| 将属性值递增/减 100 | 单击某个值，然后按 `Control`+`Up Arrow` / `Control`+`Down Arrow` | 单击某个值，然后按 `Command`+`Up Arrow` / `Command`+`Down Arrow` |
+| 循环浏览角度值的 (度) 、 ( (grad) 、弧度 (弧) ，然后 (旋转角度值的) 表示形式 | 保留 `Shift` ，然后单击 **值旁边的"角度** 预览"框 | 保留 `Shift` ，然后单击 **值旁边的"角度** 预览"框 |
+| 将角度值递增/减 1 | 单击 **值旁边的"角度** 预览"框，然后按 `Up Arrow` / `Down Arrow` | 单击 **值旁边的"角度** 预览"框，然后按 `Up Arrow` / `Down Arrow` |
+| 将角度值递增/减 10 | 单击 **值旁边的"角度** 预览"框，然后按 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | 单击 **值旁边的"角度** 预览"框，然后按 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |
+| 将角度值递增/减 15 | Click the **Angle Preview** box next to the value then press ， click / mouse slide on the Angle `Shift` Clock **Overlay** | Click the **Angle Preview** box next to the value then press ， click / mouse slide on the Angle `Shift` Clock **Overlay** |
 
 
 <!-- ====================================================================== -->
 ## <a name="sources-tool-keyboard-shortcuts"></a>源工具键盘快捷方式
 
-| 操作 | Windows\/Linux | macOS |
-|:--- |:--- |:--- |
+| 操作 | Windows/Linux | macOS |
+|---|---|---|
 | 如果当前正在运行脚本 (，请暂停脚本运行时) 如果当前 (已暂停，请恢复)  | `F8` 或 `Control`+`\` | `F8` 或 `Command`+`\` |
 | 单步跳过下一函数调用 | `F10` 或 `Control`+`'` | `F10` 或 `Command`+`'` |
 | 单步执行下一函数调用 | `F11` 或 `Control`+`;` | `F11` 或 `Command`+`;` |
 | 跳出当前函数 | `Shift`+`F11` 或 `Control`+`Shift`+`;` | `Shift`+`F11` 或 `Command`+`Shift`+`;` |
-| 暂停时继续至指定的代码行[](../javascript/breakpoints.md#line-of-code-breakpoints) | 按住 `Control`，然后选择代码行 | 按住 `Command`，然后选择代码行 |
+| 暂停时继续至指定的代码行[](../javascript/breakpoints.md#line-of-code-breakpoints) | 保留 `Control` ，然后单击代码行 | 保留 `Command` ，然后单击代码行 |
 | 选择当前所选帧下方/上方的调用帧 | `Control`+`.` / `Control`+`,` | `Control`+`.` / `Control`+`,` |
 | 保存对本地修改的更改 | `Control`+`S` | `Command`+`S` |
 | 保存所有更改 | `Control`+`Alt`+`S` | `Command`+`Option`+`S` |
 | 导航到行 | `Control`+`G` | `Control`+`G` |
-| 跳转到当前打开的文件的行号 | 选择 `Control`+`O` 以打开“[命令菜单](../command-menu/index.md)”，键入 `:`（后跟行号），然后选择 `Enter` | 选择 `Command`+`O` 以打开“[命令菜单](../command-menu/index.md)”，键入 `:`（后跟行号），然后选择 `Enter` |
-| 跳转到当前打开的文件的列 (第 5 行，第 9 列)  | 选择 `Control`+`O` 以打开“[命令菜单](../command-menu/index.md)”，键入`:`，然后输入行号，然后输入另一个`:`，然后输入列号，然后选择 `Enter` | 选择 `Command`+`O` 以打开“[命令菜单](../command-menu/index.md)”，键入`:`，然后输入行号，然后输入另一个`:`，然后输入列号，然后选择 `Enter` |
-| 如果当前文件为 HTML 或脚本，则导航到函数声明。  <br />  如果当前文件是样式表，请导航到规则集。  | 选择 `Control`+`Shift`+`O` ，然后键入声明/规则集名称，或者从选项列表中选择 | 选择 `Command`+`Shift`+`O` ，然后键入声明/规则集名称，或者从选项列表中选择 |
+| 跳转到当前打开的文件的行号 | 按 `Control` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` 后跟行号，然后按 `Enter` | 按 `Command` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` 后跟行号，然后按 `Enter` |
+| 跳转到当前打开的文件的列 (第 5 行，第 9 列)  | 按 `Control` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` ，然后键入行号，然后键入另一个 `:` ，然后按列号 `Enter` | 按 `Command` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` ，然后键入行号，然后键入另一个 `:` ，然后按列号 `Enter` |
+| 如果当前文件为 HTML 或脚本，则导航到函数声明。  <br />  如果当前文件是样式表，请导航到规则集。  | 按 `Control` + `Shift` + `O` ，然后键入声明/规则集，或者从选项列表中选择它 | press `Command` + `Shift` + `O` ，然后键入声明 /规则集，或者从选项列表中选择它 |
 | 关闭活动的选项卡 | `Alt`+`W` | `Option`+`W` |
 
 ### <a name="code-editor-keyboard-shortcuts"></a>代码编辑器键盘快捷方式
 
-| 操作 | Windows\/Linux | macOS |
-|:--- |:--- |:--- |
+| 操作 | Windows/Linux | macOS |
+|---|---|---|
 | 删除最后一个词中的所有字符，直到到达光标 | `Control`+`Delete` | `Option`+`Delete` |
-| 添加或删除[代码行断点](../javascript/breakpoints.md#line-of-code-breakpoints) | 将光标焦点放在行上，然后选择 `Control`+`B` | 将光标焦点放在行上，然后选择 `Command`+`B` |
+| 添加或删除[代码行断点](../javascript/breakpoints.md#line-of-code-breakpoints) | 将光标聚焦在行上，然后按 `Control`+`B` | 将光标聚焦在行上，然后按 `Command`+`B` |
 | 导航到匹配的括号 | `Control`+`M` | `Control`+`M` |
 | 切换单行注释。  如果选择了多行，开发工具将注释添加到每行的起始位置 | `Control`+`/` | `Command`+`/` |
 | 打开或关闭下一次出现的任何单词。  每次出现时都同时突出显示 | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |
@@ -139,8 +143,8 @@ ms.locfileid: "12157381"
 <!-- ====================================================================== -->
 ## <a name="performance-tool-keyboard-shortcuts"></a>性能工具键盘快捷方式
 
-| 操作 | Windows\/Linux | macOS |
-|:--- |:--- |:--- |
+| 操作 | Windows/Linux | macOS |
+|---|---|---|
 | 开始 /停止录制。 | `Control`+`E` | `Command`+`E` |
 | 保存录制 | `Control`+`S` | `Command`+`S` |
 | 加载录制 | `Control`+`O` | `Command`+`O` |
@@ -149,16 +153,16 @@ ms.locfileid: "12157381"
 <!-- ====================================================================== -->
 ## <a name="memory-tool-keyboard-shortcuts"></a>内存工具键盘快捷方式
 
-| 操作 | Windows\/Linux | macOS |
-|:--- |:--- |:--- |
+| 操作 | Windows/Linux | macOS |
+|---|---|---|
 | 开始 /停止录制。 | `Control`+`E` | `Command`+`E` |
 
 
 <!-- ====================================================================== -->
 ## <a name="console-tool-keyboard-shortcuts"></a>控制台工具键盘快捷方式
 
-| 操作 | Windows\/Linux | macOS |
-|:--- |:--- |:--- |
+| 操作 | Windows/Linux | macOS |
+|---|---|---|
 | 接受自动完成建议 | `Right Arrow` 或 `Tab` | `Right Arrow` 或 `Tab` |
 | 拒绝自动完成建议 | `Escape` | `Escape` |
 | 获取上一语句 | `Up Arrow` | `Up Arrow` |
@@ -169,8 +173,6 @@ ms.locfileid: "12157381"
 | 运行 | `Enter` | `Return` |
 | 展开记录到控制台的对象的所有子属性 | 保留 `Alt` ，然后单击"**** 展开 (![ 展开 ](../media/expand-icon.msft.png))  | 保留 `Alt` ，然后单击展开**** (![ 展开 ](../media/expand-icon.msft.png)) 。 |
 
-
-<!--[201705ReleaseNotesContinue]: whats-new/2017/05/devtools-release-notes#continue  -->
 
 <!-- ====================================================================== -->
 > [!NOTE]

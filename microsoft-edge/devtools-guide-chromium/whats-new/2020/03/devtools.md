@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 9edc57149beb4321e6d1f2bbf0efbdfd2ffeb17e
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 07177df58e6e016d74ddb517b1df6c17ff2f60d3
+ms.sourcegitcommit: 1e32efb1c9811ec7c65816e938d1a64b1ca5ece6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157101"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "12158563"
 ---
 <!-- Copyright Kayce Basques
 
@@ -41,13 +41,13 @@ ms.locfileid: "12157101"
 
 ### <a name="remotely-debug-microsoft-edge-on-windows-10-or-later-devices"></a>远程调试Microsoft Edge或Windows 10或更高版本的设备上的客户端
 
-Microsoft Edge ([Beta) ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)远程工具应用现已在 Microsoft Store[中提供](https://www.microsoft.com/store/apps/windows)。 此应用扩展[Windows Device Portal](/windows/uwp/debug-test-perf/device-portal)。 你可以从在开发Microsoft Edge运行的设备连接到远程Windows 10或更高版本设备，并显示目标列表。 此目标列表包括 Microsoft Edge 和 [PWA][ProgressiveWebAppsChromiumIndex] 在 Windows 设备上打开的所有选项卡。 针对在远程开发设备上运行的目标，在开发计算机上Windows工具。
+Microsoft Edge ([Beta) ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)远程工具应用现已在 Microsoft Store[中提供](https://www.microsoft.com/store/apps/windows)。 此应用扩展[Windows Device Portal](/windows/uwp/debug-test-perf/device-portal)。 你可以从在开发Microsoft Edge运行的设备连接到远程Windows 10或更高版本设备，并显示目标列表。 目标列表包括设备上打开Microsoft Edge [PBA](../../../../progressive-web-apps-chromium/index.md) Windows选项卡。 针对在远程开发设备上运行的目标，在开发计算机上Windows工具。
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="现在，Microsoft Store 中提供 Microsoft Edge 远程工具 (Beta) 应用" lightbox="../../media/2020/03/remote-tools.msft.png":::
    [Microsoft Store](https://www.microsoft.com/store/apps/windows) 中提供 [Microsoft Edge 远程工具 (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) 应用
 :::image-end:::
 
-[阅读我们的指南以设置 Windows 10 设备和开发计算机进行远程调试](../../../remote-debugging/windows.md)。  通过推文或选择[发送反馈][联系人[](https://twitter.com/intent/tweet?text=@EdgeDevTools)]图标，告诉我们你的远程调试体验！
+[阅读我们的指南以设置 Windows 10 设备和开发计算机进行远程调试](../../../remote-debugging/windows.md)。  通过推文或选择"发送反馈"图标[](https://twitter.com/intent/tweet?text=@EdgeDevTools)，告诉我们你的[远程调试](../../../contact.md)体验！
 
 ### <a name="new-ways-to-access-settings"></a>访问设置的新方法
 
@@ -115,7 +115,7 @@ Chromium 问题 [#1050999](https://crbug.com/1050999)
    在 Microsoft Edge 83 中，可以使用箭头键水平滚动，以在"更改"工具中显示对缩小代码**所做的更改**
 :::image-end:::
 
-如果你使用屏幕阅读器或键盘在 DevTools 中导航，请通过向我们发推文[](https://twitter.com/intent/tweet?text=@EdgeDevTools)或选择[发送反馈][联系人]图标向我们发送反馈！
+如果使用屏幕阅读器或键盘在 DevTools 中导航，请通过向我们发推文或[](https://twitter.com/intent/tweet?text=@EdgeDevTools)选择"发送反馈"图标向我们发送[反馈](../../../contact.md)！
 
 Chromium 问题 [#963183](https://crbug.com/963183)
 
@@ -147,7 +147,7 @@ DevTools 能够模拟模糊的视觉和以下[颜色视觉缺陷类型](http://w
 
 通过在 DevTools 中进行更极端的仿真设计，可以保证红色弱、绿色弱、黄蓝色弱和全色弱的人也可访问你的 Web 应用。
 
-通过推文 [或](https://twitter.com/intent/tweet?text=@EdgeDevTools) 选择"[发送反馈][联系人]"图标发送反馈！
+通过推文 [或](https://twitter.com/intent/tweet?text=@EdgeDevTools) 选择"发送反馈 ["图标发送反馈](../../../contact.md) ！
 
 Chromium 问题 [#1003700](https://crbug.com/1003700)
 
@@ -187,7 +187,7 @@ Chromium 问题 [#1051822](https://crbug.com/1051822)
    "响应头" **部分中的更多** 指南
 :::image-end:::
 
-通过推文 [或](https://twitter.com/intent/tweet?text=@EdgeDevTools) 选择"[发送反馈][联系人]"图标发送反馈！
+通过推文 [或](https://twitter.com/intent/tweet?text=@EdgeDevTools) 选择"发送反馈 ["图标发送反馈](../../../contact.md) ！
 
 Chromium 问题 [#1051466](https://crbug.com/1051466)
 
@@ -199,7 +199,7 @@ Chromium 问题 [#1051466](https://crbug.com/1051466)
 *   条件断点 (![条件断点](../../media/2020/03/conditional.msft.png)) 用半红半白圆表示。
 *   Logpoints (![Logpoint](../../media/2020/03/logpoint.msft.png)) 用带控制台图标的红色圆圈表示。
 
-新图标的动机是使 UI 与其他 GUI 调试工具 (这通常将断点着色为红色) 并便于一目了然地区分这 3 个功能。
+新图标的动机是使 UI 与其他 GUI 调试工具 (通常将断点着色为红色) 并便于一目了然地区分这 3 个功能。
 
 Chromium 问题 [#1041830](https://crbug.com/1041830)
 
@@ -220,7 +220,7 @@ Chromium 问题 [#1041830](https://crbug.com/1041830)
 > [!NOTE]
 > 自 Microsoft Edge 75 以来，**停靠到左侧**功能已可用，但以前只能从[主菜单](../../../customize/placement.md#change-placement-from-the-main-menu)中进行访问。  Microsoft Edge 83 中的新功能是，你现在可以从 "命令" 菜单中访问此功能。
 
-通过推文 [或](https://twitter.com/intent/tweet?text=@EdgeDevTools) 选择"[发送反馈][联系人]"图标发送反馈！
+通过推文 [或](https://twitter.com/intent/tweet?text=@EdgeDevTools) 选择"发送反馈 ["图标发送反馈](../../../contact.md) ！
 
 Chromium 问题 [#1011679](https://crbug.com/1011679)
 
@@ -237,13 +237,13 @@ DevTools 团队经常从 Web 开发人员那里获得反馈，尽管可以从 De
 
 ### <a name="delete-all-local-overrides-in-a-folder"></a>删除文件夹中的所有本地覆盖
 
-设置本地覆盖**** 后，你可以将鼠标悬停在目录上，打开上下文菜单 (右键单击) ，然后选择新的"删除所有覆盖"选项以删除该**** 文件夹中的所有局部覆盖。
+设置本地覆盖**** 后，你可以将鼠标悬停在目录上，打开上下文菜单 (右键单击) ，然后选择新的"删除所有覆盖"选项以**** 删除该文件夹中的所有局部覆盖。
 
 :::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="删除所有覆盖" lightbox="../../media/2020/03/overrides.msft.png":::
    删除所有覆盖
 :::image-end:::
 
-通过推文 [或](https://twitter.com/intent/tweet?text=@EdgeDevTools) 选择"[发送反馈][联系人]"图标发送反馈！
+通过推文 [或](https://twitter.com/intent/tweet?text=@EdgeDevTools) 选择"发送反馈 ["图标发送反馈](../../../contact.md) ！
 
 Chromium 问题 [#1016501](https://crbug.com/1016501)
 
@@ -257,7 +257,7 @@ Chromium 问题 [#1016501](https://crbug.com/1016501)
    新的长任务 UI
 :::image-end:::
 
-通过推文 [或](https://twitter.com/intent/tweet?text=@EdgeDevTools) 选择"[发送反馈][联系人]"图标发送反馈！
+通过推文 [或](https://twitter.com/intent/tweet?text=@EdgeDevTools) 选择"发送反馈 ["图标发送反馈](../../../contact.md) ！
 
 Chromium 问题 [#1054447](https://crbug.com/1054447)
 

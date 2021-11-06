@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge， Web 开发， 开发人员， 工具， 自动化， 测试
-ms.openlocfilehash: 85e9984bf7bc48683621980368aeccc21a779bd3
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 7f51fdeb84183c09ee509c76a83eac52ffe67f71
+ms.sourcegitcommit: 1e32efb1c9811ec7c65816e938d1a64b1ca5ece6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156387"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "12158556"
 ---
 # <a name="puppeteer-overview"></a>Puppeteer 概述
 
@@ -103,7 +103,7 @@ node example.js
 ## <a name="see-also"></a>另请参阅
 
 *   [WebDriver](../webdriver-chromium/index.md)
-*   [WebDriver (EdgeHTML) ][ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]
+*   [WebDriver (EdgeHTML)](/archive/microsoft-edge/legacy/developer/webdriver/index)
 *   [Chrome 开发人员工具协议查看器GitHub](https://chromedevtools.github.io/devtools-protocol)
 *   [Microsoft Edge：通过 Microsoft 体验博客上的更多开放源代码协作改善 Web](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration)
 *   [下载 Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download)
@@ -115,8 +115,3 @@ node example.js
 *   [维基百科上的无头浏览器](https://en.wikipedia.org/wiki/Headless_browser)
 -->
 *  [联系 Microsoft Edge DevTools](../devtools-guide-chromium/contact.md)团队，发送有关使用 Feedbackeer、Microsoft Edge。
-
-
-<!-- ====================================================================== -->
-<!--  [ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->
-<!--  [ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->

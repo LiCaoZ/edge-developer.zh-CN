@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 77b56f5a9e5459710ee7f5928b40187ca6a468b5
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 5fd6af5546d9e0f49165de692f00c0389fc07683
+ms.sourcegitcommit: 1e32efb1c9811ec7c65816e938d1a64b1ca5ece6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156604"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "12158514"
 ---
 <!-- Copyright Kayce Basques
 
@@ -52,7 +52,7 @@ Chromium问题[#1048378](https://crbug.com/1048378)
 
 ### <a name="match-keyboard-shortcuts-in-the-devtools-to-visual-studio-code"></a>将 DevTools 中的键盘快捷方式与Visual Studio Code
 
-从你的[反馈][联系人]和 Chromium[公共](https://bugs.chromium.org/p/chromium/issues/list)问题跟踪器中，Microsoft Edge DevTools 团队了解到你需要在 DevTools 中自定义键盘快捷方式的能力。  在 Microsoft Edge 84 中，你现在能够将 DevTools 中的键盘快捷方式与[Visual Studio Code](https://code.visualstudio.com/)匹配，这只是团队为快捷方式自定义正在处理的功能之一。
+从[你的反馈](../../../contact.md)和Chromium[](https://bugs.chromium.org/p/chromium/issues/list)问题跟踪器中，Microsoft Edge DevTools 团队了解到你需要在 DevTools 中自定义键盘快捷方式的能力。  在 Microsoft Edge 84 中，你现在能够将 DevTools 中的键盘快捷方式与[Visual Studio Code](https://code.visualstudio.com/)匹配，这只是团队为快捷方式自定义正在处理的功能之一。
 
 :::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="将 DevTools 中的键盘快捷方式与Visual Studio Code" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
    在Microsoft Edge模式下使用 DevTools
@@ -64,7 +64,7 @@ Chromium问题[#1048378](https://crbug.com/1048378)
 
 例如，用于暂停或继续运行脚本的键盘快捷方式在 Visual Studio Code[为](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) `F5` 。  使用**DevTools (Default) **预设，DevTools 中的同一快捷方式是，但具有 Visual Studio Code `F8` 预设，该快捷方式现在也是**** `F5` 。
 
-此功能目前作为实验在 Microsoft Edge 84 中可用，因此请与团队共享你的 [反馈][联系人] ！
+此功能目前作为实验Microsoft Edge 84 中提供，因此请与[团队分享你的](../../../contact.md)反馈！
 
 Chromium问题[#174309](https://crbug.com/174309)
 
