@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: eeabe838f7a4b43a2080e27375179cf2b7648793
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: b3fcafedb47be3a7de8114fd46d3a4c36e3525c3
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157500"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170328"
 ---
 <!-- Copyright Kayce Basques
 
@@ -69,7 +69,7 @@ ms.locfileid: "12157500"
 
 ### <a name="mixed-content"></a>混合内容
 
-**混合** 内容意味着页面的主源是安全的，但页面从非安全源请求资源。  混合内容页仅部分受保护，因为探查器可以访问 HTTP 内容，并且易受中间人攻击。
+**混合内容**<!--[mixed content](/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)--> 表示页面的主源是安全的，但页面从非安全源请求资源。  混合内容页仅部分受保护，因为探查器可以访问 HTTP 内容，并且易受中间人攻击。
 
 :::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="混合内容" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
    混合内容
@@ -100,10 +100,6 @@ ms.locfileid: "12157500"
 :::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="主源详细信息" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
    主源详细信息
 :::image-end:::
-
-
-<!-- ====================================================================== -->
-<!--[mixed]: /web/fundamentals/security/prevent-mixed-content/what-is-mixed-content ""  -->
 
 
 <!-- ====================================================================== -->

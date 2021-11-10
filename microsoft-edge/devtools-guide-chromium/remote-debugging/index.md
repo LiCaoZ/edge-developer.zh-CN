@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: 4e63c9004d5ef07eb1230e2bc4b5d1fc7fcd125c
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 5f0b97c6c6ade68a02dfc622f3d2ae2dd013c22a
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156282"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170664"
 ---
 <!-- Copyright Kayce Basques
 
@@ -85,7 +85,7 @@ ms.locfileid: "12156282"
 使用以下提示可帮助你验证软件是否正确设置。
 
 *   如果你的开发计算机运行的是 Windows，请尝试手动为 Android 设备安装 USB 驱动程序。  有关详细信息，请导航到[安装 OEM USB 驱动程序](https://developer.android.com/tools/extras/oem-usb.html)。
-*   Windows Android (（尤其是 Samsung) ）的一些组合需要其他设置。  有关详细信息，请导航到[插入时开发工具设备无法检测到设备。](https://stackoverflow.com/questions/21925992)
+*   Windows Android 设备 (特别是 Samsung) 需要其他设置。  有关详细信息，请导航到[插入时开发工具设备无法检测到设备。](https://stackoverflow.com/questions/21925992)
 
 如果 Android 设备上未显示“**允许 USB 调试**”提示，请使用以下提示来帮助你排除故障。
 
@@ -98,7 +98,7 @@ ms.locfileid: "12156282"
 *   将 Android 的 USB 模式设置为 PTP。  有关更多信息，请导航至 [Galaxy S4 不显示“授权 USB 调试”对话框](https://android.stackexchange.com/questions/101933)。
 *   从 Android 设备上的“**开发人员选项**”屏幕上选择“**撤销 USB 调试授权**”，以将其重置为新状态。
 
-如果找到未在本页面或堆栈溢出的[插入时开发工具设备无法检测到设备](https://stackoverflow.com/questions/21925992)上提及的解决方案，请将解决方案添加到堆栈溢出问题<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->.
+如果找到未在本页面或堆栈溢出的[插入时开发工具设备无法检测到设备](https://stackoverflow.com/questions/21925992)上提及的解决方案，请将解决方案添加到堆栈溢出问题<!--, or [open an issue in the webfundamentals repository](https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging]) -->.
 
 
 <!-- ====================================================================== -->
@@ -151,10 +151,6 @@ Choose **Toggle Screencast** (![ Toggle Screencast) icon to view the content ](.
 > *   截屏视频仅显示页面内容。  截屏视频的透明部分表示设备界面，例如 Microsoft Edge 地址栏、Android 状态栏或 Android 键盘。
 > *   截屏视频会对帧速率产生负面影响。  在测量滚动或动画时禁用截屏视频，以更准确地了解页面性能。
 > *   如果 Android 设备屏幕锁定，截屏视频的内容将消失。  解锁 Android 设备屏幕以自动恢复截屏视频。
-
-
-<!-- ====================================================================== -->
-<!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->
 
 
 <!-- ====================================================================== -->

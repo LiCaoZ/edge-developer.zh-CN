@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 0436eda9adfb19c4d526e62759307d8a1fd9bf01
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 27a46999a0f0e6b8808547c1a39eefd642245056
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157528"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170615"
 ---
 <!-- Copyright Kayce Basques
 
@@ -159,17 +159,7 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 
 
 <!-- ====================================================================== -->
-
-<!--[BackgroundFetchAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2018/12/background-fetch.md "Background Fetch API"  -->
-<!--[BackgroundSyncAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2015/12/background-sync.md  "Background Sync API"  -->
-
-
-
-
-<!--[ServiceWorkerCacheStorage]: https://alphabet.dev/service-workers-cache-storage "Service workers and the Cache Storage API | alphabet.dev"  -->
-
-
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services) ，由技术编写者 [、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse (创作) 。
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

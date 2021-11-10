@@ -7,12 +7,12 @@ ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools, 仿真, 设备, 模拟, 移动
-ms.openlocfilehash: 195a15c1c65da262b3bf24a4fc46bc5eb2865596
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 4219d43412ff25a320e94937ee4e7dfadc697936
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155512"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170405"
 ---
 <!-- Copyright Kayce Basques
 
@@ -180,7 +180,7 @@ ms.locfileid: "12155512"
 
 仅限制 CPU 而不是网络：
 
-1.  选择"**性能"** 面板，然后选择"捕获**设置 (** ![ 捕获 ](../media/capture-settings-icon.msft.png) 设置) 。
+1.  选择"**性能"** 面板，然后选择 **"捕获**设置 (![ 捕获 ](../media/capture-settings-icon.msft.png) 设置) 。
 1.  选择**CPU**  >  **速度减慢 4 倍或****速度减慢 6 倍**。
 
 :::image type="content" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="&quot;性能&quot;面板中的 CPU 列表。" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
@@ -193,13 +193,13 @@ ms.locfileid: "12155512"
 
     :::image type="content" source="../media/device-mode-network-throttle.msft.png" alt-text="网络面板中的限制列表。" lightbox="../media/device-mode-network-throttle.msft.png":::
 
-    或者 `Control` + `Shift` + `P` ， (Windows、Linux) 或 `Command` (macOS + `Shift` + `P`) **** `3G` ******** 打开"命令菜单"，键入 ，然后选择"启用快速 3G 限制"或"启用慢速 3G 限制"。
+    或者选择 (Windows、Linux) 或 (macOS) 打开命令菜单，键入 ，然后选择 `Control` + `Shift` + `P` `Command` + `Shift` + `P` **** `3G` 启用快速**3G****** 限制或启用慢速 3G 限制。
 
     :::image type="content" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="从&quot;命令菜单&quot;中选择&quot;启用快速或缓慢的 3G 限制&quot;。" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
 
 您还可以从"性能"面板设置 **网络** 限制：
 
-1.  选择 **"捕获设置 (** 捕获设置) 并选择"网络"列表，将预设更改为 ![ ](../media/capture-settings-icon.msft.png) **"快速 3G"** 或"**慢速 3G"。** ****
+1.  选择**捕获设置 (** 捕获设置) 并选择网络列表，将预设更改为 ![ ](../media/capture-settings-icon.msft.png) 快速**3G**或******慢速 3G**。
 
     :::image type="content" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="从&quot;性能&quot;面板设置网络限制。" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
 
@@ -209,11 +209,11 @@ ms.locfileid: "12155512"
 
  如果页面依赖移动设备中的地理位置信息正确呈现，则使用替代地理位置的 UI 提供不同的地理位置。
 
-1.  选择 **"自定义和控制开发人员工具 () >** `...` **更多工具**  >  **传感器"。**
+1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **传感器"。**
 
     :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="用于地理位置的传感器。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
-    或者，通过选择"命令菜单" (Windows、Linux) `Control` + `Shift` + `P` 或 (`Command` + `Shift` + `P` macOS) 。  键入 `Sensors` ，然后选择"**显示传感器"。**
+    或者，通过选择"命令菜单" (Windows、Linux) `Control` + `Shift` + `P` 或 (`Command` + `Shift` + `P` macOS) 。  键入 `Sensors` ，然后选择显示 **传感器**。
 
     :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="显示命令菜单中的地理位置传感器。" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
 
@@ -227,7 +227,7 @@ ms.locfileid: "12155512"
 
 如果页面依赖来自移动设备的方向信息来正确呈现，请打开方向 UI。
 
-1.  选择 **"自定义和控制开发人员工具 () >** `...` **更多工具**  >  **传感器"。**
+1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **传感器"。**
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="&quot;更多工具&quot;菜单上的&quot;传感器&quot;命令。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
@@ -247,7 +247,7 @@ ms.locfileid: "12155512"
 
 如果页面依赖移动设备中的用户代理字符串来正确呈现，请使用“**网络条件**”面板提供不同的用户代理字符串。
 
-1.  选择 **"自定义和控制开发工具 () >** `...` **工具网络**  >  **条件"。**
+1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具网络**  >  **条件"。**
 
     :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="&quot;更多工具&quot;菜单中的网络条件条目。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
 
@@ -276,7 +276,7 @@ ms.locfileid: "12155512"
 1.  按如下所示设置用户代理客户端提示。
     *  **品牌**和**版本**，如*Edge*和*92。*  选择 **+ 添加品牌** 以添加多个品牌和版本对。
     *  **完整浏览器版本**，例如*92.0.1111.0。*
-    *  **平台**和**版本**，如*Windows*和*10.0。*
+    *  **平台**和**版本**，如*Windows* *和 10.0。*
     *  **体系结构** ，如 *x86*。
     *  **设备型号** ，例如 *，一些设备型号*。
 
@@ -286,10 +286,6 @@ ms.locfileid: "12155512"
 1. 选择**添加**。 新设备以选定状态显示在" **模拟设备** "列表顶部。
 
 还可以在网络分析参考中设置用户 [代理客户端提示](../network/reference.md)。
-
-
-<!-- ====================================================================== -->
-<!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community | Microsoft Docs"  -->
 
 
 <!-- ====================================================================== -->

@@ -1,18 +1,18 @@
 ---
-description: 打开传感器工具并导航到"方向"部分。
-title: 使用 DevTools Microsoft Edge设备方向
+description: 使用传感器工具的"方向"部分模拟设备方向。
+title: 模拟设备方向
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 97c1ddfc6ae4258fa41d65e4a05ede0f9395ebc9
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 2a24676d74259569eba5b41fef99d1ac180ff518
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156016"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170398"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +27,7 @@ ms.locfileid: "12156016"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="simulate-device-orientation-with-microsoft-edge-devtools"></a>使用 DevTools Microsoft Edge设备方向
+# <a name="simulate-device-orientation"></a>模拟设备方向
 
 完成以下操作以模拟来自 DevTools 的不同Microsoft Edge方向。
 
@@ -49,8 +49,8 @@ ms.locfileid: "12156016"
        :::column-end:::
        :::column span="":::
           选择" **自定义方向"后**，将启用 、 `alpha` 和 `beta` `gamma` 字段。
-          <!--To understand how each axis works, navigate to [Alpha][alpha], [Beta][beta], and [Gamma][gamma].  -->
-          <!--todo: update links to alpha, beta, and gamma section when available -->
+          <!--To understand how each axis works, navigate to [Device Orientation & Motion](). -->
+          <!--todo: update links to local copy of alpha/beta/gamma sections from https://developers.google.com/web/fundamentals/native-hardware/device-orientation#alpha , beta, and gamma section when available; see "original page" below -->
           您还可以通过拖动方向模型来设置 **自定义方向**。  在 `Shift` 拖动以沿轴旋转之前 `alpha` 按住。
 
           :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="方向模型" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::

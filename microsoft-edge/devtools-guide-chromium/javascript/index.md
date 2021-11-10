@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: 4e78143ee619b196fe6be3d14f80697cea67a00f
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 504f3fc4d283995c31376033eb487e99e6c97ad7
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155820"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170657"
 ---
 <!-- Copyright Kayce Basques
 
@@ -37,7 +37,7 @@ ms.locfileid: "12155820"
 
 查找一系列持续重现 Bug 的操作始终是调试的第一步。
 
-1.  选择以下"**打开演示"** 链接，然后打开新选项卡中的网页。 若要在新选项卡中打开演示，请选择并按住 `Ctrl` (Windows、Linux) 或 `Command` (macOS) ，然后选择"**打开演示"。**
+1.  选择以下"**打开演示"** 链接，然后打开新选项卡中的网页。 若要在新选项卡中打开演示，请选择并按住 `Ctrl` (Windows、Linux) 或 `Command` (macOS) ，然后选择"打开演示 **"。**
 
     [打开演示](https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html)
 
@@ -74,8 +74,8 @@ ms.locfileid: "12155820"
 :::image-end:::
 
 *  导航 **器窗格** (左上角显示) 。  此处列出了网页请求的所有文件。
-*  The **Editor** pane (in the upper right corner) .  在导航器窗格中选择文件 **后** ，此窗格将显示该文件的内容。
-*  调试 **器** 窗格 (位于底部) 。  此窗格提供用于检查网页的 JavaScript 的工具。  如果 DevTools 窗口宽，则此窗格显示在"编辑器" **窗格的右侧** 。
+*  编辑器 **窗格** (右上角显示) 。  在导航器窗格中选择文件 **后** ，此窗格将显示该文件的内容。
+*  调试 **器** 窗格 (位于底部) 。  此窗格提供用于检查网页的 JavaScript 的工具。  如果 DevTools 窗口很宽，则此窗格显示在"编辑器"窗格 **的右侧** 。
 
 
 <!-- ====================================================================== -->
@@ -102,7 +102,7 @@ function updateLabel() {
 
 简而言之，断点可以比 `console.log()` 方法更快地查找和修复错误。
 
-如果你后退一步并思考应用的工作原理，你可能会有根据地猜测错误总和 () 是在与"添加数字 `5 + 1 = 51` 1"和"数字 `click` **2"** 按钮关联的事件侦听器中计算的。  因此，可能想在 `click` 侦听器运行期间暂停代码。  **事件侦听器断点**可以完全实现此要求：
+如果你后退一步并思考应用的工作原理，你可以有根据的猜测，在与"添加数字 1"和"数字 `5 + 1 = 51` `click` **2"** 按钮关联的事件侦听器中计算错误总和 () 。  因此，可能想在 `click` 侦听器运行期间暂停代码。  **事件侦听器断点**可以完全实现此要求：
 
 1.  在调试 **器窗格中** ，选择 **"事件侦听器断点"** 以展开部分。  开发工具显示可展开事件类别的列表，如**动画**和**剪贴板**。
 1.  在" **鼠标事件"** 类别旁边， **选择"展开** (![ 展开图标 ](../media/expand-icon.msft.png)) 。  开发工具显示鼠标事件的列表，如**单击**和**鼠标按下**。  每个事件旁边都有一个复选框。
@@ -123,9 +123,9 @@ function updateLabel() {
     > [!NOTE]
     > 如果在另一行暂停，则将拥有一个浏览器扩展，此扩展会在你访问的每个网页上注册一个 `click` 事件侦听器。  你已在扩展的 `click` 侦听器中暂停。  如果使用 InPrivate 模式以**在专用模式中浏览**，这会禁用所有扩展，可能会看到每次在指定的代码行上暂停。
 
-<!--todo: add inprivate section when available -->
+<!--todo: add inprivate section when available in this repo [InPrivate](https://support.alphabet.com/alphabet-browser/answer/95464) -->
 
-**事件侦听器断点**只是开发工具中提供的许多类型的断点之一。  记住所有不同的类型，以帮助你尽快调试不同的方案。  <!--  To learn when and how to use each type, navigate to [Pause your code with breakpoints][JSBreakpoints].  -->
+**事件侦听器断点**只是开发工具中提供的许多类型的断点之一。  记住所有不同的类型，以帮助你尽快调试不同的方案。  若要了解何时以及如何使用每种类型，请参阅使用断 [点暂停代码](breakpoints.md)。
 
 
 <!-- ====================================================================== -->
@@ -142,7 +142,7 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
     > [!NOTE]
     > 开发工具跳过几行代码。  这是因为 `inputsAreEmpty()` 的计算结果为 false，因此 `if` 语句的代码块不会运行。
 
-1.  在**** DevTools 的"源"**** 工具上，选择"单步执行下一个函数调用 (单步执行下一个函数调用) "以逐步完成函数的运行时，一次一 ![ ](../media/step-into-icon.msft.png) `updateLabel()` 行。
+1.  在**** DevTools 的"源"工具上，选择"单步执行下一个函数调用** (** 单步执行下一个函数调用) "以逐步完成函数的运行时，一次一 ![ ](../media/step-into-icon.msft.png) `updateLabel()` 行。
 
 一次查看一行是单步执行代码的基本概念。  如果查看 `get-started.js` 中的代码，则该错误可能在 `updateLabel()` 函数中。  可以使用另一种类型的断点来将代码暂停在错误的可能位置附近，而不是单步执行代码的每一行。
 
@@ -181,7 +181,7 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 
 ### <a name="method-2-watch-expressions"></a>方法 2：监视表达式
 
-监视 **窗格** 允许您监视变量的值，例如 (或) `sum` 表达式 (如 `typeof sum`) 。  可以将任何有效的 JavaScript 表达式存储在监视表达式中。
+监视 **窗格** 允许您监视变量的值，例如 (或) 表达式 (`sum` 如 `typeof sum`) 。  可以将任何有效的 JavaScript 表达式存储在监视表达式中。
 
 1.  选择" **监视"** 窗格。
 1.  Choose **Add watch expression (** Add watch expression ![ ](../media/add-expression-icon.msft.png)) .
@@ -213,12 +213,12 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 <!-- ====================================================================== -->
 ## <a name="step-7-apply-a-fix"></a>步骤 7：应用修补程序
 
-我们已确定该 Bug 的可能修复方法。  接下来，直接在 DevTools UI 中编辑 JavaScript 代码，然后重新运行演示以测试修复，如下所示。
+我们已确定针对 Bug 的可能修复方法。  接下来，直接在 DevTools UI 中编辑 JavaScript 代码，然后重新运行演示以测试修复，如下所示。
 
 1.  Choose **Resume script execution (** Resume script execution ![ ](../media/resume-script-run-icon.msft.png)) .
 1.  在" **编辑器"** 窗格中，将行替换为 `var sum = addend1 + addend2` `var sum = parseInt(addend1) + parseInt(addend2)` 。
 1.  选择 `Control` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存更改。
-1.  Choose **Deactivate breakpoints** (![ Deactivate breakpoints ](../media/deactivate-breakpoints-button-icon.msft.png)) .  它将更改蓝色，以指示选项处于活动状态。  设置“**停用断点**”时，开发工具会忽略你设置的任何断点。
+1.  选择 **"停用断点 (** ![ 停用断点 ](../media/deactivate-breakpoints-button-icon.msft.png)) 。  它将更改蓝色，以指示选项处于活动状态。  设置“**停用断点**”时，开发工具会忽略你设置的任何断点。
 1.  尝试使用具有不同值的演示。  演示现在计算正确。
 
 > [!CAUTION]
@@ -246,10 +246,6 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 
 *  [使用调试器功能](./reference.md) - 使用"源"工具中的调试器 UI。
 *  [源工具概述](../sources/index.md) - 介绍 JavaScript 调试工具和代码编辑器。
-
-
-<!-- ====================================================================== -->
-<!--[inPrivate]: https://support.alphabet.com/alphabet-browser/answer/95464  -->
 
 
 <!-- ====================================================================== -->

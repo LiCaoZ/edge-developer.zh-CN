@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 81726e596e6b30b752aefba5c2a3ba1021d8d427
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: 71e3391d055d0b9e483f7504b9478589c6ffe648
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140730"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170342"
 ---
 <!-- Copyright Kayce Basques
 
@@ -39,7 +39,7 @@ ms.locfileid: "12140730"
 > [!WARNING]
 > 以下命令仅适用于开发人员Microsoft Edge**控制台**。  如果从脚本运行，则命令不起作用。
 
-有关 和 方法以及方法其余部分的信息， `console.log()` `console.error()` `console.*` 请导航到"控制台 API 参考["。](api.md)
+有关 和 方法以及方法其余部分的信息， `console.log()` `console.error()` `console.*` 请导航到"控制台 API[参考"。](api.md)
 
 
 <!-- ====================================================================== -->
@@ -55,7 +55,7 @@ $_
 
 ### <a name="console-example"></a>控制台示例
 
-在下图中，计算一个 `2 + 2` () 表达式。  然后 `$_` 计算属性，其中包含相同的值。
+在下图中，将计算 `2 + 2` () 表达式。  然后 `$_` 计算属性，其中包含相同的值。
 
 :::image type="complex" source="../media/console-arithmatic.msft.png" alt-text="$_ 是最近评估的表达式" lightbox="../media/console-arithmatic.msft.png":::
    `$_` 是最近计算表达式
@@ -122,7 +122,7 @@ $0
    该 `$0`
 :::image-end:::
 
-下图中，图像显示在同一网页中选择的不同元素。  `$0`现在引用新选择的元素，而 `$1` 返回之前选择的元素。
+在下图中，图像显示在同一网页中选择的不同元素。  `$0`现在引用新选择的元素，而 `$1` 返回之前选择的元素。
 
 :::image type="complex" source="../media/console-image-highlighted-$1.msft.png" alt-text="$1" lightbox="../media/console-image-highlighted-$1.msft.png":::
    该 `$1`
@@ -153,7 +153,7 @@ $(selector, [startNode])
 若要在 DOM 中查找第一个元素或在网页上查找并显示该元素，请完成以下操作。
 
 1.  将鼠标悬停在返回的结果上。
-1.  打开上下文菜单 (右键单击") "。
+1.  打开上下文菜单（右键单击）。
 1.  选择 **"元素面板"中的"展示"。**
 
 在下图中，将返回对当前选择的元素的引用， `src` 并显示 属性。
@@ -313,7 +313,7 @@ debug(method)
 ```
 
 >[!NOTE]
-> 错误[Chromium #1050237](https://crbug.com/1050237)跟踪函数的 `debug()` Bug。  如果遇到问题，请尝试改为 [使用断](../javascript/breakpoints.md) 点。
+> 错误[Chromium #1050237](https://crbug.com/1050237)使用 函数跟踪 `debug()` Bug。  如果遇到问题，请尝试改为 [使用断](../javascript/breakpoints.md) 点。
 
 请求指定方法时，调试程序在 Sources 工具的 方法内调用**和中断。**  它允许你逐步调试代码。
 
@@ -329,7 +329,7 @@ debug("debug");
 
 用于 `undebug(method)` 停止方法上的中断，或使用 UI 关闭所有断点。
 
-有关断点详细信息，请导航到如何在[DevTools](../javascript/breakpoints.md)中暂停包含断Microsoft Edge代码。
+有关断点的信息，请导航到"[使用断点暂停代码"。](../javascript/breakpoints.md)
 
 ---
 
@@ -418,7 +418,7 @@ inspect(document.body);
 getEventListeners(object)
 ```
 
-此命令返回在指定对象上注册的事件侦听器。  返回值是 (包含每个已注册事件类型（如 或) ）的 `click` `keydown` 数组的对象。  每个数组的成员是描述为每种类型注册的侦听器的对象。
+此命令返回在指定对象上注册的事件侦听器。  返回值是包含每个已注册事件类型的数组的对象， (或 `click` `keydown`) 。  每个数组的成员是描述为每种类型注册的侦听器的对象。
 
 ### <a name="console-example"></a>控制台示例
 
@@ -810,6 +810,6 @@ values(object);
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/console/utilities)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/console/utilities) ，由技术编写者 [、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse (创作) 。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

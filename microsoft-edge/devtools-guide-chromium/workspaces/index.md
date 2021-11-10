@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 52056a577df9391623012c9688bf2212de6b71b8
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: f9b87e2ade07df3f2d667ce8ae579f3a8c4f187d
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157094"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170643"
 ---
 <!-- Copyright Kayce Basques
 
@@ -62,7 +62,7 @@ ms.locfileid: "12157094"
 
 *   创建React应用
 
-    <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
+    <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to share your knowledge with the rest of the DevTools community.  -->
 
 
 <!-- ====================================================================== -->
@@ -115,7 +115,7 @@ ms.locfileid: "12157094"
        :::column-end:::
     :::row-end:::
 
-1.  在网站Microsoft Edge并导航到本地托管的网站版本。  你应该能够使用 URL（如 或 ） `localhost:8080` 访问 `http://0.0.0.0:8080` 它。  确切的 [端口号](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) 可能不同。
+1.  在网站中Microsoft Edge一个选项卡，然后导航到本地托管的网站版本。  你应该能够使用 URL（如 或 ） `localhost:8080` 访问 `http://0.0.0.0:8080` 它。  确切的 [端口号](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) 可能不同。
 
     :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="演示" lightbox="../media/workspaces-workspaces-demo.msft.png":::
        演示
@@ -123,7 +123,7 @@ ms.locfileid: "12157094"
 
 ### <a name="set-up-devtools"></a>设置 DevTools
 
-1.  选择 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS) 打开 DevTools**** 的控制台面板。
+1.  选择 `Control` + `Shift` + `J` (Windows、Linux) 或 (`Command` + `Option` + `J` macOS) 打开 DevTools**** 的控制台面板。
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="控制台面板" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        控制台**面板**
@@ -217,7 +217,7 @@ In short, the **DOM Tree** `!==` HTML.
 1.  在左侧 **导航器** (窗格中，) " **页面"** 选项卡。
 1.  选择** (索引) 。 **  将打开页面的 HTML。
 1.  将`<h1>Workspaces Demo</h1>`替换为`<h1>I ❤️  Cake</h1>`。  查看下图。
-1.  选择 `Control` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存更改。
+1.  选择 `Control` + `S` (Windows、Linux) 或 (`Command` + `S` macOS) 保存更改。
 1.  刷新页面。  `<h1>`刷新页面后，元素将继续显示新文本。
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从&quot;源&quot;工具更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
@@ -230,7 +230,7 @@ In short, the **DOM Tree** `!==` HTML.
 <!-- ====================================================================== -->
 ## <a name="step-4-save-a-javascript-change-to-disk"></a>步骤 4：将 JavaScript 更改保存到磁盘
 
-使用 DevTools 的代码编辑器的主要位置是 **源** 工具。  但有时你需要在编辑文件时访问其他工具，如**元素**工具或控制台面板。 ****  当 **任何** 工具打开时，快速源工具仅为你提供 **源** 工具中的编辑器。
+使用 DevTools 的代码编辑器的主要位置是 **源** 工具。  但有时你需要在编辑文件时访问其他工具，如**元素**工具或控制台面板。 ****  快速 **源** 工具仅为你提供源工具 **中的编辑器，** 同时任何工具都打开。
 
 若要与其他工具一起打开 DevTools 代码编辑器，请执行下列操作：
 
@@ -242,7 +242,7 @@ In short, the **DOM Tree** `!==` HTML.
        使用 **命令菜单** 打开快速 **源工具**
     :::image-end:::
 
-1.  选择 `Control` + `P` (Windows、Linux) 或 `Command` + `P` (macOS) 打开 **"打开文件"** 对话框。  查看下图。
+1.  选择 `Control` + `P` (Windows、Linux) 或 (`Command` + `P` macOS) 打开 **"打开文件"** 对话框。  查看下图。
 1.  键入 `script` ，然后选择 **"app/script.js"。 **
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件&quot;对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
@@ -252,7 +252,7 @@ In short, the **DOM Tree** `!==` HTML.
     > [!NOTE]
     > 该 `Save Changes To Disk With Workspaces` 演示中的链接会定期设置样式。
 
-1.  使用快速源工具将**script.js代码添加到****页面**底部。
+1.  使用快速源工具将以下**代码script.js****库的底部**。
 
     ```javascript
     console.log('greetings from script.js');
@@ -273,20 +273,13 @@ In short, the **DOM Tree** `!==` HTML.
 <!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 
-使用本教程中学到的内容在你自己的项目中设置工作区。  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
+使用本教程中学到的内容在你自己的项目中设置工作区。  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to share your knowledge with the rest of the DevTools community.  -->
 
 <!--
 If you have more feedback on the topics or anything else, please use any of the channels below:
-
-*   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]
-*   [Twitter][TwitterAlphabetBrowserDevTools]  -->
-
-
-<!-- ====================================================================== -->
-<!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->
-<!--[AlphabetGroupsAlphabetBrowserDevTools]: https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools "Alphabet Browser DevTools - Alphabet Groups"  -->
-<!--[StackOverflowAlphabetBrowserDevTools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser DevTools - Stack Overflow"  -->
-<!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools (@AlphabetBrowserDevTools) | Twitter"  -->
+*   [Mailing List](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools)
+*   [Twitter](https://twitter.com/alphabetbrowserdevtools)
+-->
 
 
 <!-- ====================================================================== -->

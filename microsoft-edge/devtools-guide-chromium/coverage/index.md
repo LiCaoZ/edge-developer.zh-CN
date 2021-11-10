@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 01cb73369d503ee9c3b1ab5c5428df17a9236229
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 41cb5a5a838fe2069d102b6c89c9005524b9e7f6
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156338"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170258"
 ---
 <!-- Copyright Kayce Basques
 
@@ -56,10 +56,8 @@ Microsoft Edge DevTools 中的“**覆盖范围**”面板可帮助你查找未�
 
 此样式表不仅包括按钮组件的代码。  它包含**所有**Bootstrap 组件的 CSS。  但是，你未使用任何其他 Bootstrap 组件。  因此，你的页面正在下载一组不需要的 CSS。  由于以下原因，此额外的 CSS 是一个问题。
 
-*   额外的代码会降低页面加载速度。  <!--Navigate to [Render-Blocking CSS][render].  -->
+*   额外的代码会降低页面加载速度。  <!--Navigate to [Render-Blocking CSS](/web/fundamentals/performance/critical-rendering-path/render-blocking-css).  -->
 *   如果用户在移动设备上访问页面，则额外的代码会使用其手机网络数据。
-
-<!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->
 
 
 <!-- ====================================================================== -->
@@ -77,9 +75,9 @@ Microsoft Edge DevTools 中的“**覆盖范围**”面板可帮助你查找未�
 ## <a name="record-code-coverage"></a>记录代码覆盖范围
 
 1.  在“**覆盖范围**”面板中选择以下按钮之一。
-    *   如果你想要 **查看加载** 页面所需的代码 (请选择"开始检测覆盖范围并重新加载页面") "开始检测覆盖和重新加载 ![ ](../media/reload-icon.msft.png) 页面"页面。
-    *   如果你想要 **查看** 与 (后使用的代码，请选择"检测范围) 检测 ![ ](../media/record-icon.msft.png) 范围"选项。
-1.  选择 **"停止检测** 覆盖范围"和" (停止检测覆盖"和"显示结果") 停止记录代码 ![ ](../media/stop-icon.msft.png) 覆盖范围时显示结果。
+    *   如果你想要 **查看加载** 页面所需的代码， (开始检测覆盖和重新加载页面) 选择开始检测覆盖和重新加载 ![ ](../media/reload-icon.msft.png) 页面。
+    *   如果你想要 **查看** 与页面 (使用的代码，请选择"检测范围) 检测 ![ ](../media/record-icon.msft.png) 范围"选项。
+1.  选择 **"停止检测** 覆盖范围"， ("停止检测覆盖范围"和"显示结果") 停止记录 ![ ](../media/stop-icon.msft.png) 代码覆盖时显示结果。
 
 
 <!-- ====================================================================== -->
@@ -99,10 +97,6 @@ Microsoft Edge DevTools 中的“**覆盖范围**”面板可帮助你查找未�
 
 
 <!-- ====================================================================== -->
-
-
-
-
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/coverage/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)

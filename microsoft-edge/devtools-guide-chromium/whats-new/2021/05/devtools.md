@@ -7,19 +7,19 @@ ms.date: 06/02/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 1de5e3e4437ee84007db35237834680d3ac05b01
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: f64341c7f3f379398ba886423af4fd5401a81ede
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155717"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170356"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-92"></a>DevTools 中的新增功能 (Microsoft Edge 92)
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
 > [!TIP]
-> **Microsoft Build 2021**会议于 5 月 25-27 日召开。  下面是来自 Build 关于 DevTools 最新消息的视频：[Microsoft Edge｜平台现状](https://www.youtube.com/watch?v=sU0WRZ0kkNo) - Microsoft Edge 为开发人员提供了具有吸引力和一致性的平台。  随着旧版浏览器逐步淘汰支持，Edge 即将成为 Microsoft 在或更高版本上唯一Windows 10浏览器。  加入我们，了解有关 Edge 平台、工具和 Web 应用的最新信息。
+> **Microsoft Build 2021**会议于 5 月 25-27 日召开。  下面是来自 Build 关于 DevTools 最新消息的视频：[Microsoft Edge｜平台现状](https://www.youtube.com/watch?v=sU0WRZ0kkNo) - Microsoft Edge 为开发人员提供了具有吸引力和一致性的平台。  随着旧版浏览器逐步退出支持，Edge 即将成为 Microsoft 在或更高版本中唯一Windows 10浏览器。  加入我们，了解有关 Edge 平台、工具和 Web 应用的最新信息。
 
 
 <!-- ====================================================================== -->
@@ -204,7 +204,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
    控制台中允许重新声明常量变量
 :::image-end:::
 
-若要了解如何运行单个 REPL 脚本或多行 REPL 脚本，请导航到[控制台作为 JavaScript 环境](../../../console/console-javascript.md)。
+若要了解如何运行单个 REPL 脚本或多行 REPL 脚本，请导航到在控制台 中运行[JavaScript。](../../../console/console-javascript.md)
 
 要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1076427](https://crbug.com/1076427)。
 

@@ -7,12 +7,12 @@ ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: ab782f6f00ad56d89c42aa2520d2a4f3ee0b369a
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: a3ce2dbd8090e6bf88f97a3710ae4b93582d6976
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156807"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170510"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -70,7 +70,7 @@ ms.locfileid: "12156807"
 
 DevTools 工具提示功能可帮助你了解 DevTools 中所有不同的工具和窗格。  要关闭工具提示，请选择“`Esc`”。  要打开工具提示，请完成以下操作之一。
 
-*   选择 `Ctrl` + `Shift` + `H` (Windows/Linux) 或 `Cmd` + `Shift` + `H` (macOS) 。
+*   选择 `Ctrl` + `Shift` + `H` (Windows/Linux) 或 (`Cmd` + `Shift` + `H` macOS) 。
 *   [打开命令菜单](../../../command-menu/index.md#open-the-command-menu)，然后键入 `tooltips`。
 *   Choose **Customize and control DevTools** () > `...` **Help**Toggle  >  **the DevTools Tooltips**.
 
@@ -202,7 +202,7 @@ Most operating systems require square icons.  Please include at least one square
 
 使用新的 **内存检查器** 工具检查 JavaScript 和 Wasm 内存中的 `ArrayBuffer`。  打开 [JS 中内存](https://memory-inspector.glitch.me/demo-js.html) 演示网页。  在 **源** 工具中，打开 `memory-write-wasm` 文件，并在行 `0x03c` 处设置断点。  刷新网页。  展开调试程序窗格中的“**范围**”部分。  新图标显示在 **缓冲区** 值 的旁边。  选择它以打开新的 **内存检查器** 工具。
 
-要了解在 **源** 工具中调试的详细信息，请导航到 [使用调试程序窗格调试 JavaScript 代码](../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code)。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1166577"。](https://crbug.com/1166577)
+要了解在 **源** 工具中调试的详细信息，请导航到 [使用调试程序窗格调试 JavaScript 代码](../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code)。  若要在开放源代码项目中查看此功能的Chromium，请导航到"问题[1166577"。](https://crbug.com/1166577)
 
 :::image type="complex" source="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png" alt-text="内存检查器工具" lightbox="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png":::
    **内存检查器** 工具
@@ -216,9 +216,9 @@ Most operating systems require square icons.  Please include at least one square
 1.  打开上下文菜单（右键单击）。
 1.  选择“**徽章设置...**”。
 
-若要显示 (或隐藏) 锁屏提醒， (或删除) 锁屏提醒名称旁边的复选框。
+若要显示 (或隐藏) ，请选择 (或) 锁屏提醒名称旁边的复选框。
 
-<!--  To review the history of this feature in the Chromium open-source project, navigate to Issue [1066772][CR1066772].  -->
+<!--  To review the history of this feature in the Chromium open-source project, navigate to Issue [1066772](https://crbug.com/1066772).  -->
 
 :::image type="complex" source="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png" alt-text="元素工具中的徽章设置窗格" lightbox="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png":::
    **元素** 工具中的 **徽章设置** 窗格
@@ -255,7 +255,7 @@ Most operating systems require square icons.  Please include at least one square
    :::column-end:::
 :::row-end:::
 
-若要在开放源代码项目中查看此功能的历史记录Chromium，请导航到"问题"1149832 1170656"。 [](https://crbug.com/1149832) [](https://crbug.com/1170656)
+若要在开放源代码项目中查看此功能Chromium，请导航到"问题"1149832 1170656" [](https://crbug.com/1170656)。 [](https://crbug.com/1149832)
 
 ### <a name="new-options-to-configure-content-encodings-in-the-network-conditions-tool"></a>用于在网络条件工具中配置 Content-Encoding 的新选项
 
@@ -265,7 +265,7 @@ Most operating systems require square icons.  Please include at least one square
 1.  导航到 **接受的 Content-Encoding**。
 1.  删除要测试的 `Content-Encoding` 旁边的复选框。
 
-若要查看开放源代码项目中此功能的历史记录Chromium，请导航到"问题[1162042"。](https://crbug.com/1162042)
+若要在开放源代码项目中查看此功能Chromium历史记录，请导航到"问题[1162042"。](https://crbug.com/1162042)
 
 :::image type="complex" source="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png" alt-text="新的“更多网络条件...”按钮打开用于配置 Content-Encoding 的网络条件工具" lightbox="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png":::
    新“**更多网络条件...**”按钮打开 **网络条件** 工具以进行配置 `Content-Encoding`
@@ -281,7 +281,7 @@ Most operating systems require square icons.  Please include at least one square
 1.  打开上下文菜单（右键单击）。
 1.  选择“**查看计算值**”。
 
-若要在开放源代码项目中查看此功能Chromium历史记录，请导航到"问题[1076198"。](https://crbug.com/1076198)
+若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1076198"。](https://crbug.com/1076198)
 
 :::image type="complex" source="../../media/2021/04/elements-styles-highlight-view-computed-value.msft.png" alt-text="显示计算值的新快捷方式" lightbox="../../media/2021/04/elements-styles-highlight-view-computed-value.msft.png":::
    显示计算值的新快捷方式
@@ -356,7 +356,7 @@ DevTools 现在支持新的 [专用品牌检查 obj 中的 a.k.a. #foo](https://
 
 #### <a name="support-hover-preview-with-bracket-notation"></a>支持使用括号表示法的悬停预览
 
-DevTools 现在支持在 **源** 工具中使用 `[]` 表示法的 JavaScript 成员表达式上进行悬停预览。  若要在开放源代码项目中查看Chromium历史记录，请导航到"问题[1178305"。](https://crbug.com/1178305)
+DevTools 现在支持在 **源** 工具中使用 `[]` 表示法的 JavaScript 成员表达式上进行悬停预览。  若要在开放源代码项目中查看此功能的Chromium，请导航到"问题[1178305"。](https://crbug.com/1178305)
 
 :::image type="complex" source="../../media/2021/04/sources-page-pen.js-breakpoint-arr-i-a.msft.png" alt-text="支持使用 [] 表示法的悬停预览" lightbox="../../media/2021/04/sources-page-pen.js-breakpoint-arr-i-a.msft.png":::
    支持使用 `[]` 表示法的悬停预览
@@ -364,7 +364,7 @@ DevTools 现在支持在 **源** 工具中使用 `[]` 表示法的 JavaScript �
 
 #### <a name="improved-outline-of-html-files"></a>改进的 HTML 文件大纲
 
-DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工具中，打开 `.html` 文件。  若要打开或 (或) 大纲，请在 `Ctrl` + `Shift` + `O` Windows/Linux 或 `Cmd` + `Shift` + `O` macOS 上选择。  在下图中，DevTools 现在正确列出了大纲中的所有函数。  以前，DevTools 仅显示一些函数。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题"761019 1191465" [](https://crbug.com/1191465)。 [](https://crbug.com/761019)
+DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工具中，打开 `.html` 文件。  若要打开或 (代码) ，请在 `Ctrl` + `Shift` + `O` Windows/Linux 或 `Cmd` + `Shift` + `O` macOS 上选择。  在下图中，DevTools 现在正确列出了大纲中的所有函数。  以前，DevTools 仅显示一些函数。  若要在开放源代码项目中查看此功能Chromium历史记录，请导航到"问题"761019 1191465" [](https://crbug.com/761019) [。](https://crbug.com/1191465)
 
 :::image type="complex" source="../../media/2021/04/sources-page-jobobbx-at.msft.png" alt-text=" 改进的 HTML 文件大纲" lightbox="../../media/2021/04/sources-page-jobobbx-at.msft.png":::
    改进的 HTML 文件大纲
@@ -395,7 +395,7 @@ DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工
    :::column-end:::
 :::row-end:::
 
-若要查看开放源代码项目中此功能的历史记录Chromium，请导航到"问题[1189161"。](https://crbug.com/1189161)
+若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1189161"。](https://crbug.com/1189161)
 
 
 <!-- ====================================================================== -->
@@ -405,10 +405,6 @@ DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工
 
 
 <!-- ====================================================================== -->
-<!--[GithubMicrosoftVscodeEdgeDevtoolsPullxxx]: https://github.com/microsoft/vscode-edge-devtools/pull/xxx "Pull xxx: Lorem al Ipsum | GitHub"  -->
-<!--  [CR1066772]: https://crbug.com/1066772 "Issue 1066772: "  locked  -->
-
-
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-91)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。

@@ -1,18 +1,18 @@
 ---
 description: 在日程表上使用分配检测来查找未正确进行垃圾回收的对象，并继续保留内存。
-title: 如何在时间线上使用分配检测
+title: 在日程表上使用分配检测
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 0fe2f905f869176fbc993b1bfb95f3230c7c602c
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 4c674deebde5a86fa5e014854b4840aec180e949
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157542"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170251"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -27,7 +27,7 @@ ms.locfileid: "12157542"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
-# <a name="how-to-use-allocation-instrumentation-on-timeline"></a>如何在时间线上使用分配检测
+# <a name="use-allocation-instrumentation-on-timeline"></a>在日程表上使用分配检测
 
 在 **日程表上使用分配** 检测来查找未正确进行垃圾回收的对象，并继续保留内存。
 
@@ -35,7 +35,7 @@ ms.locfileid: "12157542"
 <!-- ====================================================================== -->
 ## <a name="how-allocation-instrumentation-on-timeline-works"></a>时间线上的分配检测的工作原理
 
-**时间线上的分配检测**将堆探查器的详细快照信息与**** 性能面板的增量更新和**跟踪**相结合。  同样，跟踪对象的堆分配涉及启动记录、执行一系列操作以及停止记录进行分析。
+**时间线上的分配检测**将堆探查器的详细快照信息与[](heap-snapshots.md)性能面板的增量更新和**跟踪**相结合。  同样，跟踪对象的堆分配涉及启动记录、执行一系列操作以及停止记录进行分析。
 
 <!--todo: add profile memory problems (heap profiler) section when available  -->
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->
@@ -90,17 +90,12 @@ ms.locfileid: "12157542"
 <!-- ====================================================================== -->
 ## <a name="view-memory-allocation-by-function"></a>按功能查看内存分配
 
-你能够通过 JavaScript 函数查看内存分配。  有关详细信息，请导航到按 [函数调查内存分配](./index.md#investigate-memory-allocation-by-function)。
-
-
-<!-- ====================================================================== -->
-<!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->
-<!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->
+你能够通过 JavaScript 函数查看内存分配。  有关详细信息，请导航到按 [函数 调查内存分配](./index.md#investigate-memory-allocation-by-function)。
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) 由技术撰稿人 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (创作) 。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) 由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

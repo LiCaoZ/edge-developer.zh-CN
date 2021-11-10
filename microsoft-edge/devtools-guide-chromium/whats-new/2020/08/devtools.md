@@ -1,18 +1,18 @@
 ---
-description: 将键盘快捷方式与Visual Studio Code、模拟 Surface Duo 和 Samsung 一起折叠、CSS 网格覆盖改进等。
+description: 将键盘快捷方式与Visual Studio Code、模拟 Surface Duo 和 Samsung 的 Fold、CSS 网格覆盖改进等。
 title: 'DevTools (Microsoft Edge 86) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: f66152b90497ea58c29abb9d7fcb1e87632402c9
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 7d13593e7b1fc3f442dde0e3c0becb5739f57c71
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157332"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170391"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -37,7 +37,7 @@ ms.locfileid: "12157332"
 
 ### <a name="match-keyboard-shortcuts-in-devtools-to-visual-studio-code"></a>将 DevTools 中的键盘快捷方式与Visual Studio Code
 
-在 Microsoft Edge 86 中，你可以将 DevTools 中的键盘快捷方式与代码 中的Microsoft Visual Studio[匹配](https://code.visualstudio.com)。
+在 Microsoft Edge 86 中，你可以将 DevTools 中的键盘快捷方式与代码中的Microsoft Visual Studio[匹配](https://code.visualstudio.com)。
 
 :::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="将 DevTools 中的键盘快捷方式与Visual Studio Code" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
    将 DevTools 中的键盘快捷方式与Visual Studio Code
@@ -69,7 +69,7 @@ Chromium问题[#174309](https://crbug.com/174309)
 
 若要启用此实验功能，请 [导航到打开](../../../experimental-features/index.md#turning-on-experimental-features) 实验功能，然后选择模拟 **：支持双屏**模式旁边的复选框。
 
-有关此功能的信息，请导航到模拟开发人员工具中的双屏幕[和可折叠Microsoft Edge设备](../../../device-mode/dual-screen-and-foldables.md)。
+有关此功能的信息，请导航到模拟开发人员工具中的双屏幕和可折叠Microsoft Edge[设备](../../../device-mode/dual-screen-and-foldables.md)。
 
 Chromium问题： [#1054281](https://crbug.com/1054281)
 
@@ -86,9 +86,9 @@ Chromium问题： [#1054281](https://crbug.com/1054281)
 
 开发人员Microsoft Edge团队和 Chrome DevTools 团队共同协作开发其他功能。  新功能包括多个覆盖，这些覆盖是永久性的，并且通过"元素"**** 工具上的新"布局"窗格**可配置**。
 
-若要启用此实验性功能，请导航[](../../../experimental-features/index.md#turning-on-experimental-features)到打开实验功能，并选中"重启后元素"中的"布局边栏"窗格中"启用新的**CSS 网格**调试功能 (配置选项"旁边的复选框) 。
+若要启用此实验性功能，请导航[](../../../experimental-features/index.md#turning-on-experimental-features)到"打开实验功能 **"，** 并选中"重启后元素"中的"布局侧边栏"窗格中"启用新的 CSS 网格调试功能 (配置选项"旁边的复选框) 。
 
-有关此功能详细信息，请导航到"检查开发人员工具Microsoft Edge [CSS 网格"](../../../css/grid.md)。
+有关此功能详细信息，请导航到"检查[开发人员工具Microsoft Edge CSS 网格"](../../../css/grid.md)。
 
 Chromium问题： [#1047356](https://crbug.com/1047356)
 
@@ -103,7 +103,7 @@ Chromium问题： [#1047356](https://crbug.com/1047356)
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="表 粘贴到 Microsoft Edge 85 或更早版本中的控制台 API Visual Studio Code" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
-         `table` 从 85 或Microsoft Edge粘贴到主机中的控制台 API Visual Studio Code :::image-end:::
+         `table` 粘贴到 Microsoft Edge 85 或更早版本中的控制台 API Visual Studio Code :::image-end:::
    :::column-end:::
 :::row-end:::
 
@@ -169,10 +169,10 @@ The current effort to improve translation quality enables easier support for mor
 
 在 Microsoft Edge 84 和 85 中，"元素"**** 工具的第一个搜索结果未突出显示。  其余搜索结果已正确突出显示。
 
-感谢你发送反馈并帮助改进Chromium。  您的反馈在开源[1103316](https://crbug.com/1103316)发现问题Chromium问题。
+感谢你发送反馈并帮助改进Chromium。  您的反馈发现了开源[1103316](https://crbug.com/1103316)中的问题Chromium问题。
 
 :::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="在 84 或更高版本的&quot;元素&quot;Microsoft Edge突出显示第一个搜索结果" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
-   在 84 或更高版本中的 **"** 元素"Microsoft Edge突出显示第一个搜索结果
+   突出显示 84 或更高版本中 **"** 元素"Microsoft Edge的第一个搜索结果
 :::image-end:::
 
 此问题现已在所有版本的 Microsoft Edge 中Microsoft Edge。
@@ -191,7 +191,7 @@ DevTools 现在在媒体工具中显示媒体 [播放器](../../../media-panel/i
 
 若要打开新的 **媒体工具** ，请完成以下步骤。
 
-1.  选择 **"自定义和控制开发人员工具" () >** `...` **更多工具**  >  **""媒体"。**
+1.  选择 **"自定义和控制开发人员工具 () >** `...` **更多工具**  >  **""媒体"。**
 
     :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="新媒体工具" lightbox="../../media/2020/08/media-panel.msft.png":::
        新 **媒体** 工具
@@ -272,7 +272,7 @@ Chromium问题： [#1090802](https://crbug.com/1090802)
 ### <a name="emulate-prefers-reduced-data"></a>模拟 prefers-reduced-data
 
 > [!NOTE]
-> 在 Microsoft Edge 86 中，若要启用此功能，请导航到"实验 `edge://flags#enable-experimental-web-platform-features` **性 Web 平台功能"标志并打开**该标志。  模拟选项仅在启用标志时显示。
+> 在 Microsoft Edge 86 中，若要启用此功能，请导航到"实验 `edge://flags#enable-experimental-web-platform-features` **性 Web 平台功能"标志并打开**。  模拟选项仅在启用标志时显示。
 
 首选 [的缩减数据](https://drafts.csswg.org/mediaqueries-5#descdef-media-prefers-reduced-data) 媒体查询可检测减少数据的用户内容首选项。  如果选中，用户将接收使用较少数据的备用页面内容。
 
@@ -293,7 +293,7 @@ DevTools 现在更好地支持以下 JavaScript 语言功能。
 | [逻辑赋值运算符](https://v8.dev/features/logical-assignment) | DevTools 现在支持使用控制台和源工具中的新 、 和 运算符 `&&=` `||=` `??=` 进行逻辑分配。 **** ****  |
 | 彩色数字 [分隔符](https://v8.dev/features/numeric-separators) | DevTools 现在在"源"工具中正确打印数字 **分隔** 符。  |
 
-Chromium问题[：1086817、1080569](https://crbug.com/1086817) [](https://crbug.com/1080569)
+Chromium问题[：1086817](https://crbug.com/1086817) [、1080569](https://crbug.com/1080569)
 
 ### <a name="lighthouse-62-in-the-lighthouse-panel"></a>Lighthouse 面板中的 Lighthouse 6.2
 
@@ -303,7 +303,7 @@ Chromium问题： [#772558](https://crbug.com/772558)
 
 ### <a name="deprecation-of-other-origins-listing-in-the-service-workers-pane"></a>在"服务工作者"窗格中弃用其他源列表
 
-DevTools 现在从服务工作者窗格**** (应用程序工具>**服务**工作者**** 窗格) 中提供一个链接，以查看来自其他来源的服务工作者的完整列表。  若要在不打开 DevTools 的情况下访问列表，请导航到 `edge://service-worker-internals/?devtools` 。
+DevTools 现在从服务工作者窗格**** (**应用程序**工具 >**服务**工作者窗格) 提供了一个链接，用于查看来自其他来源的服务工作者的完整列表。  若要在不打开 DevTools 的情况下访问列表，请导航到 `edge://service-worker-internals/?devtools` 。
 
 以前，DevTools 显示一个嵌套在****"应用程序工具""服务>**窗格下**的列表。
 
@@ -360,7 +360,7 @@ Chromium问题： [#1107766](https://crbug.com/1107766)
    安全和隔离信息
 :::image-end:::
 
-将来，Microsoft Edge开发人员工具团队和 Chrome DevTools 团队计划向框架详细信息添加更多安全信息。
+将来，Microsoft Edge开发工具团队和 Chrome DevTools 团队计划向框架详细信息添加更多安全信息。
 
 Chromium问题： [#1051466](https://crbug.com/1051466)
 
@@ -380,13 +380,13 @@ Chromium问题： [#1093227](https://crbug.com/1093227)
 
 #### <a name="reinstate-properties-pane-in-the-elements-panel"></a>恢复"元素"面板中的"属性"窗格
 
-" **属性** "窗格已返回。  它在[84 Microsoft Edge弃用](../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel)。  开发人员Microsoft Edge团队和 Chrome DevTools 团队正在计划对检查元素属性的改进。
+" **属性** "窗格已返回。  它在[84 Microsoft Edge弃用](../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel)。  开发人员Microsoft Edge团队和 Chrome DevTools 团队正在计划改进检查元素属性。
 
 :::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="&quot;元素&quot;面板中的&quot;属性&quot;窗格" lightbox="../../media/2020/08/properties-pane.msft.png":::
    **"** 元素"工具 **中的"属性"** 窗格
 :::image-end:::
 
-Chromium问题：  <!--  [#1105205][CR1105205],  -->  [#1116085](https://crbug.com/1116085)
+Chromium问题： <!-- [#1105205](https://crbug.com/1105205), --> [#1116085](https://crbug.com/1116085)
 
 <!--
 #### Human-readable X-Client-Data header values in the Network panel
@@ -456,10 +456,6 @@ Chromium问题： [#1067184](https://crbug.com/1067184)
 
 
 <!-- ====================================================================== -->
-<!--  [DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features/index.md#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"  -->
-<!--  [DevtoolsExperimentalFeaturesTestOnFoldableDualScreenDevices]: ../../../experimental-features/index.md#test-on-foldable-and-dual-screen-devices "Test on foldable and dual-screen devices - Experimental features | Microsoft Docs"  -->
-<!--  [CR1105205]: https://crbug.com/1105205 "Issue 1105205 | Chromium bugs"  -->
-
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-86)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。

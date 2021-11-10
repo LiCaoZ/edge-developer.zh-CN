@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， 扩展
-ms.openlocfilehash: 499deb80fa163eaec85d6bb0165dfef7e8cdecaf
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: c3796a1334ece1c1ba3e6bd20473a77ae03ba53b
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157073"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170573"
 ---
 # <a name="create-an-extension-tutorial---part-1"></a>创建扩展教程 - 第 1 部分
 
@@ -154,12 +154,3 @@ ms.locfileid: "12157073"
 <!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 这是开发工作扩展所需的一切。  现在，继续旁加载和测试扩展。 有关详细信息，请导航到 [旁加载扩展](./extension-sideloading.md)。
-
-<!-- image links -->
-
-<!--[ImagePart1Heirarchy]: ./media/part1-heirarchy.png "Directory Structure"  -->
-<!--[ImagePart1Badge1]: ./media/part1-badge1.png "Toolbar Badge Icon"  -->
-<!--[ImagePart1Heirarchy1]: ./media/part1-heirarchy1.png "Directory Structure for Extension"  -->
-<!--[ImagePart1Threedots]: ./media/part1-threedots.png "Choose Extensions"  -->
-<!--[ImagePart1DevelopermodeToggle]: ./media/part1-developermode-toggle.png "Enable Developer Mode"  -->
-<!--[ImagePart1InstalledExtension]: ./media/part1-installed-extension.png "Installed Extensions"  -->

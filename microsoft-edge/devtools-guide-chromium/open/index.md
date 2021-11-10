@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 07/01/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: eee88a8588b15a0ddbe26af9399e2c12ccdec95c
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 31aa7b6b9a3912d0e3ae2a5d2c2bbd49c9519110
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155617"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170244"
 ---
 <!-- Copyright Kayce Basques
 
@@ -38,12 +38,12 @@ ms.locfileid: "12155617"
 若要打开 DevTools，请使用以下任一选项。
 
 *   使用 Microsoft Edge UI。
-    *  选择 **"设置工具开发人员工具" () ">"** 图标和 `...` ****  >   **"更多工具"图标**。
+    *  选择 **"设置工具" () ">** 工具"图标等 `...` ****  >   ****。
 
 *   使用键盘。
-    *   选择 `F12` 或 `Control` + `Shift` + `I` (Windows Linux) 或 `Command` + `Option` + `I` (macOS) 。
+    *   按 `F12` 或 `Control` + `Shift` + `I` (Windows Linux) 或 (`Command` + `Option` + `I` macOS) 。
 
-有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键](../shortcuts/index.md)。
+请参阅 [键盘快捷方式](../shortcuts/index.md)。
 
 :::image type="complex" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="从主菜单中打开 devTools Microsoft Edge开发人员工具" lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
    从主菜单中打开 devTools Microsoft Edge开发人员工具
@@ -53,30 +53,25 @@ ms.locfileid: "12155617"
 <!-- ====================================================================== -->
 ## <a name="open-the-elements-panel-to-inspect-the-dom-or-css"></a>打开"元素"面板以检查 DOM 或 CSS
 
-通过以下任一任务，您可以检查 DOM 节点中的文档对象[](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (样式) 属性。
+在浏览器中查看呈现的网页时，若要检查文档对象模型 [ (](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) DOM) 节点的样式或属性，请执行下列任一操作：
+*   右键单击呈现的网页中的 元素，然后选择"检查 **"。**
+*   按 `Control` + `Shift` + `C` (Windows、Linux) 或 (`Command` + `Option` + `C` macOS) 。  请参阅 [键盘快捷方式](../shortcuts/index.md)。
 
-*   将鼠标悬停在 元素上，打开上下文菜单 (右键单击") "检查 **"。**
-*   选择 `Control` + `Shift` + `C` (Windows、Linux) 或 `Command` + `Option` + `C` (macOS) 。 有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键](../shortcuts/index.md)。
+请参阅 [适用于初学者的 DevTools：CSS 入门](../beginners/css.md)。
 
-<!-- :::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text="The Inspect option" lightbox="../media/bing-right-click-inspect.msft.png":::
-   The **Inspect** option
-:::image-end:::  -->
-
-<!--Navigate to [Get Started With Viewing And Changing CSS][GetStartedCSS].  -->
+<!-- :::image type="content" source="../media/bing-right-click-inspect.msft.png" alt-text="The Inspect option" lightbox="../media/bing-right-click-inspect.msft.png"::: -->
 
 
 <!-- ====================================================================== -->
 ## <a name="open-the-console-panel"></a>打开控制台面板
 
-若要打开控制台[面板](../console/index.md)以查看记录的消息或运行 JavaScript，请选择 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS) 。 有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键](../shortcuts/index.md)。
-
-<!--Navigate to [Get Started With The Console][ConsoleGetStarted].  -->
+若要打开控制台[面板](../console/index.md)以查看记录的消息或运行 JavaScript，请按 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS) 。  请参阅 [键盘快捷方式](../shortcuts/index.md)。
 
 
 <!-- ====================================================================== -->
 ## <a name="open-the-previous-panel"></a>打开上一个面板
 
-若要跳转到之前打开的面板，请选择 `Control` + `Shift` + `I` (Windows、Linux) 或 `Command` + `Option` + `I` (macOS) 。  有关更多信息，请导航至 [Microsoft Edge DevTools 键盘快捷键](../shortcuts/index.md)。
+若要跳转到之前打开的面板，请按 `Control` + `Shift` + `I` (Windows、Linux) 或 (`Command` + `Option` + `I` macOS) 。  请参阅 [键盘快捷方式](../shortcuts/index.md)。
 
 
 <!-- ====================================================================== -->
@@ -129,18 +124,7 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 1.  将开关设置为关闭后，验证 `F12` 是否不再打开 DevTools。
 
     > [!NOTE]
-    > 在关闭按 F12 键时打开 **DevTools**后，执行下列操作之一以打开 DevTools。
-    >
-    > *   选择 `Ctrl` + `Shift` + `I` 。
-    > *   打开上下文菜单 (右键单击"检查) >**检查"。**
-
-
-<!-- ====================================================================== -->
-
-
-
-<!--[ConsoleGetStarted]: /microsoft-edge/devtools-guide-chromium/console/get-started ""  -->
-<!--[GetStartedCSS]: /microsoft-edge/devtools-guide-chromium/css "CSS"  -->
+    > 在关闭"按 F12 键时打开 **DevTools"** 后，再次打开"DevTools"。  例如，按 `Ctrl` + `Shift` + `I` 或右键单击网页，然后选择"检查 **"。**
 
 
 <!-- ====================================================================== -->

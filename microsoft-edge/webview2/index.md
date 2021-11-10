@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、edge html、Windows Forms、WinForms、WPF、.NET、WinUI、Project Reunion
-ms.openlocfilehash: eeb440d8276b66db95f443dfb925863edf697935
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: d1fa90a2187f4f038e484644effa90d4e2e60643
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155680"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170671"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介
 
@@ -104,9 +104,9 @@ Similar table: [Overview of Progressive Web Apps (PWAs)](..\progressive-web-apps
 <!-- ====================================================================== -->
 ## <a name="get-started"></a>入门
 
-要使用 WebView2 控件生成并测试应用，需要 <!--both [Microsoft Edge][MicrosoftedgeinsiderDownload] and -->安装 [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2)。  选择以下其中一个选项以开始使用。
+要使用 WebView2 控件生成并测试应用，需要 <!--both Microsoft Edge and -->安装 [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2)。  选择以下其中一个选项以开始使用。
 
-*   [在 Win32 应用中开始使用 WebView2](./get-started/win32.md)
+*   [Win32 应用中的 WebView2 入门](./get-started/win32.md)
 *   [WPF 应用中的 WebView2 入门](./get-started/wpf.md)
 *   [WinForms 应用中的 WebView2 入门](./get-started/winforms.md)
 *   [WinUI 2 应用和预览版中的 WebView2 (入门) ](./get-started/winui2.md)

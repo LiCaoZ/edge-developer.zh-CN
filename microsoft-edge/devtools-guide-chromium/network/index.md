@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 46fd31d2e78de3bde60a013d3707c66ef14f8823
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 7cbac43a85176b07edc0c0ba1e44f4e651abaec7
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155806"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170650"
 ---
 <!-- Copyright Kayce Basques
 
@@ -192,7 +192,7 @@ ms.locfileid: "12155806"
        第一张屏幕截图期间发生的网络活动
     :::image-end:::
 
-1.  再次 ![ (" ](../media/settings-icon.msft.png) 网络) "，然后关闭" **捕获** 屏幕截图"复选框以关闭"屏幕截图"窗格。
+1.  再次 ![ ("网络) "，然后关闭"捕获屏幕截图" ](../media/settings-icon.msft.png) 复选框以**** 关闭"屏幕截图"窗格。
 1.  再次刷新页面。
 
 
@@ -222,7 +222,7 @@ ms.locfileid: "12155806"
     :::image-end:::
 
     > [!TIP]
-    > 缩小文件时，选择"响应 (底部的"**** 设置) 格式"按钮，以重新设置文件内容的格式，提高 ![ ](../media/format-icon.msft.png) 可读性。 ****
+    > 缩小文件时，选择"响应 (底部的"**** 设置) 格式"按钮以重新设置文件内容的格式，实现 ![ ](../media/format-icon.msft.png) 可读性。 ****
 
 1.  选择 **"计时"** 面板。  将显示资源的网络活动的细分。
 
@@ -230,7 +230,7 @@ ms.locfileid: "12155806"
        “**计时**”面板
     :::image-end:::
 
-1.  选择 **"** 关闭 (![ 关闭 ](../media/close-icon.msft.png)) "以再次查看网络日志。
+1.  选择 **"** 关闭 ![ ](../media/close-icon.msft.png) (") "关闭"以再次查看网络日志。
 
     :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="关闭按钮" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
        “**关闭**”按钮
@@ -242,7 +242,7 @@ ms.locfileid: "12155806"
 
 当您需要搜索特定字符串或正则表达式的所有资源的 HTTP 标头和响应时，请使用“**搜索**”窗格。
 
-例如，假设你想要验证你的资源是否使用了合理的**缓存策略**。
+例如，假设你想要验证你的资源是否使用了合理的**缓存策略**。<!--[cache policies](../../../web/tools/lighthouse/audits/cache-policy) -->
 
 <!--TODO: add cache policies section when available  -->
 
@@ -322,7 +322,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
        只显示 CSS 文件
     :::image-end:::
 
-1.  若要同时显示脚本，请选择并保留 `Control` (Windows、Linux) `Command` 或 (macOS) ，然后选择**JS**。
+1.  若要同时显示脚本，请选择并按住 `Control` (Windows、Linux) 或 (`Command` macOS) ，然后选择**JS**。
 
     :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="只显示 CSS 和 JS 文件" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
        只显示 CSS 和 JS 文件
@@ -350,7 +350,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
        **显示请求阻止**
     :::image-end:::
 
-1.  选择 **添加模式** (![ 添加模式 ](../media/add-icon.msft.png)) 。
+1.  选择 **添加模式** (![ 添加 ](../media/add-icon.msft.png) 模式) 。
 1.  键入 `main.css`。
 
     :::image type="complex" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="阻止 main.css" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
@@ -379,9 +379,6 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 
 
 <!-- ====================================================================== -->
-<!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->
-
-
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/network/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)

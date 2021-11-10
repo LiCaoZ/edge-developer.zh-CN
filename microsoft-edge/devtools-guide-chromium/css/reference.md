@@ -1,18 +1,18 @@
 ---
-description: 在 DevTools 中查看Microsoft Edge CSS 规则。
+description: 在 DevTools 中查看和更改 CSS Microsoft Edge的功能。
 title: CSS 功能参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 10/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 1f7e582b9157bf409565e516dd5b303684789a31
-ms.sourcegitcommit: 1e32efb1c9811ec7c65816e938d1a64b1ca5ece6
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 44877b654cceaad841db5cd1830c0d0635fe00cc
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "12158532"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170384"
 ---
 <!-- Copyright Kayce Basques
 
@@ -59,7 +59,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 在 **"样式** "窗格中，单击 CSS 规则旁边的链接以打开定义该规则的外部样式表。  样式表将在"源" **工具的** "编辑器" **窗格中** 打开。
 
-如果样式表缩小，请单击"编辑器 (底部的****) ![ 设置格式 ](../media/format-icon.msft.png) "**按钮**。  有关详细信息，请参阅使用非常打印 [重新设置缩小的 JavaScript 文件](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print)。
+如果样式表缩小，请单击"编辑器"窗格**** (") "设置格式 ![ ](../media/format-icon.msft.png) "**按钮**。  有关详细信息，请参阅使用非常打印 [重新设置缩小的 JavaScript 文件](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print)。
 
 在下图中，单击后，您将进入 定义 CSS 规则的第 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` 2 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` `.content h1:first-of-type` 行。
 
@@ -155,7 +155,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 **“覆盖”** 工具显示页面实际使用 CSS。
 
-1.  打开命令[菜单](../command-menu/index.md)，按 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) ，而 DevTools 具有焦点。
+1.  打开命令[菜单](../command-menu/index.md)，按 `Control` + `Shift` + `P` (Windows、Linux) `Command` + `Shift` + `P` 或 (macOS) ，而 DevTools 具有焦点。
 1.  开始键入 `coverage` 并选择 **“显示范围”**。  出现 **“覆盖”** 工具。
 
     从命令菜单打开"覆盖"选项卡：
@@ -166,7 +166,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
     :::image type="content" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="&quot;覆盖&quot;选项卡。" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
 
-1.  单击 **开始检测覆盖范围并刷新页面 (** ![ 开始检测范围并刷新页面 ](../media/refresh-icon.msft.png)) 。  页面刷新和"范围"**** 选项卡概述了从浏览器加载的每个 (使用多少 CSS 和 JavaScript) 。  绿色表示已使用的 CSS。  红色表示未使用的 CSS。
+1.  单击 **开始检测覆盖范围并刷新页面 (** ![ 开始检测范围并刷新页面 ](../media/refresh-icon.msft.png)) 。  页面刷新和"范围"**** 选项卡概述了浏览器加载的每个 (使用多少 CSS 和 JavaScript) 。  绿色表示已使用的 CSS。  红色表示未使用的 CSS。
 
     使用和未使用 CSS (JavaScript) 概述：
 
@@ -241,10 +241,10 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 | 键盘快捷方式 | 递增者 |
 |---|---|
-| `Alt`+`Up` (Windows、Linux) 或 (`Option` + `Up` macOS)  | 0.1 |
+| `Alt`+`Up` (Windows、Linux) 或 `Option` + `Up` (macOS)  | 0.1 |
 | `Up` | 1 (或 0.1，如果当前值介于 -1 和 1 之间)  |
 | `Shift`+`Up` | 10 |
-| `Shift`+`Page Up` (Windows、Linux) 或 (`Shift` + `Command` + `Up` macOS)  | 100 |
+| `Shift`+`Page Up` (Windows、Linux) 或 `Shift` + `Command` + `Up` (macOS)  | 100 |
 
 若要缩小，请按 `Down` 键而不是 `Up` 键。
 
@@ -372,7 +372,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 1.  将鼠标悬停在要添加 `text-shadow` 声明的样式规则上。
 1.  [显示 **“更多操作”** 工具栏](#reveal-the-more-actions-toolbar)。
-1.  单击 **添加文本阴影** (![ 添加文本阴影 ](../media/add-text-shadow-icon.msft.png) 图标) 。
+1.  单击 **"添加文本阴影** (![ 添加文本阴影 ](../media/add-text-shadow-icon.msft.png) 图标) 。
 
 :::image type="content" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="添加文本阴影。" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
 
@@ -402,7 +402,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 1.  [选择元素](#select-an-element)。
 
-1.  在 **“样式”** 面板中，找到 `color`、`background-color` 或要更改的类似声明。  在 、 或类似值的左侧，有一个小 `color` `background-color` 正方形，这是颜色的预览。
+1.  在 **“样式”** 面板中，找到 `color`、`background-color` 或要更改的类似声明。  在 、 或类似值的左侧有一个小正方形，这是 `color` `background-color` 颜色的预览。
 
     下图中，`rgba(0, 0, 0, 0.7)` 左侧的小方块是该颜色的预览。
 
@@ -430,7 +430,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 ### <a name="sample-a-color-off-the-page-with-the-eyedropper"></a>用“取色器“在页面上打样着色
 
-打开颜色**选取器**时，默认情况下， (**** ![ 取) ](../media/eyedropper-icon.msft.png) 器会打开。
+打开颜色选取**器**时， (取色**** 器) ![ ](../media/eyedropper-icon.msft.png) 已打开。
 
 若要将所选颜色更改为页面上的某种其他颜色：
 

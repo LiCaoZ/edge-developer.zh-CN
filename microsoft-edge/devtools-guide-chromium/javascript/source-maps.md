@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 40177689831bb6a53514041f40cf09b92ca1c6f8
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 455aee36befe5f24ba1799281a096bf1f99ed326
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155771"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170335"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -33,12 +33,15 @@ ms.locfileid: "12155771"
 
 ### <a name="summary"></a>摘要
 
-*   使用 source 地图 将缩小代码映射到源代码。  然后，您能够读取和调试原始源中的已编译代码。
+*   使用源代码地图缩小代码映射到源代码。  然后，您能够读取和调试原始源中的已编译代码。
 *   只能使用能够生成源处理器的预处理器地图。
-*   验证 Web 服务器能否为源地图。
+*   验证 Web 服务器能否为源服务器地图。
 
-<!--todo: add link to preprocessors capable of producing Source Maps when section is available -->
-<!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->
+<!--
+no longer in original file:
+todo: add link to preprocessors capable of producing Source Maps when section is available
+/web/tools/setup/setup-preprocessors?#supported_preprocessors
+-->
 
 
 <!-- ====================================================================== -->
@@ -46,8 +49,11 @@ ms.locfileid: "12155771"
 
 本文介绍如何在 DevTools 源工具地图 JavaScript Source 对象进行交互。  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->
 
-<!--todo: add link to Set Up CSS & JS Preprocessors when section is available -->
-<!--[]: /web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content ""  -->
+<!--
+no longer in original file:
+todo: add link to Set Up CSS & JS Preprocessors when section is available
+/web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content
+-->
 
 
 <!-- ====================================================================== -->
@@ -55,14 +61,17 @@ ms.locfileid: "12155771"
 
 使用能够创建源地图的微型程序。  <!--For the most popular options, navigate to preprocessor support section.  -->  对于扩展视图，导航到源 [地图：语言、工具和其他信息](https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info) Wiki 页面。
 
-<!--todo: add link to display the preprocessor support section when section is available -->
-<!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->
+<!--
+no longer in original file:
+todo: add link to display the preprocessor support section when section is available
+/web/tools/setup/setup-preprocessors?#supported_preprocessors
+-->
 
-以下类型的预处理器通常与 Source 地图：
+通常将以下类型的预处理器与 Source 地图：
 
-*   Transpilers [ (，Traceur](https://babeljs.io)) [](https://github.com/google/traceur-compiler/wiki/Getting-Started)
+*   Transpilers [ (，Traceur](https://babeljs.io) [) ](https://github.com/google/traceur-compiler/wiki/Getting-Started)
 *   编译器 ([关闭编译器](https://github.com/google/closure-compiler)、TypeScript、CoffeeScript、) [](https://coffeescript.org) [](https://www.typescriptlang.org) [](https://www.dartlang.org)
-*   [UglifyJS](https://github.com/mishoo/UglifyJS) (微型) 
+*   [UglifyJS](https://github.com/mishoo/UglifyJS) (小型) 
 
 
 <!-- ====================================================================== -->
@@ -82,13 +91,10 @@ ms.locfileid: "12155771"
 
 ### <a name="debugging-with-source-maps"></a>使用 Source 地图
 
-调试代码并启用地图时，源地图显示在两处：
+调试[代码并启用源代码地图](index.md#step-4-step-through-the-code)时，源地图显示在两处：
 
 1.  在控制台 (源的链接应该是原始文件，而不是生成的) 
 1.  单步执行代码 (调用堆栈中的链接应打开原始源文件) 
-
-<!--todo: add link to debugging your code when section is available -->
-<!--[DebugBreakpointsStepCode]: ../debug/breakpoints/step-code.md ""  -->
 
 
 <!-- ====================================================================== -->

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 92c47487a0caa39aec39ffb1c52a907eef018690
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 48259c922bf268bd835f841667e03164358bb699
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156653"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170272"
 ---
 <!-- Copyright Kayce Basques
 
@@ -35,14 +35,14 @@ ms.locfileid: "12156653"
 
 *   了解你的页面当前与浏览器任务管理器Microsoft Edge的内存量。
 *   使用内存面板直观呈现一段时间 **的内存** 使用情况。
-*   使用堆快照 (分离的 DOM 树) 内存泄漏的 **常见原因**。
-*   在时间线上通过 Allocation instrumentation 了解 JavaScript 堆中何时 (JS) 分配 **新内存**。
+*   通过堆快照 (分离的 DOM 树) 内存泄漏 **的常见原因**。
+*   了解何时在 JavaScript 堆中分配新内存 (JS 堆) 时间线上的**Allocation instrumentation。**
 
 
 <!-- ====================================================================== -->
 ## <a name="overview"></a>概述
 
-在 RAIL **性能模型** 方面，性能工作的重点应该是用户。
+在**RAIL**中<!-- [RAIL](/profile/evaluate-performance/rail) --> 性能模型，您的性能工作的重点应该是您的用户。
 
 <!--todo: add RAIL section when available  -->
 
@@ -93,7 +93,7 @@ ms.locfileid: "12156653"
 
 1.  打开**** DevTools 上的"性能"面板。
 1.  启用" **内存"** 复选框。
-1.  [录制](/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#record-performance)。
+1.  [录制](../evaluate-performance/reference.md#record-performance)。
 
 > [!TIP]
 > 最佳做法是使用强制垃圾回收开始和结束录制。  若要强制进行垃圾回收，请选择记录时 **收集垃圾回收** ![ ](../media/collect-garbage-icon.msft.png) 强制垃圾回收按钮。
@@ -111,15 +111,15 @@ function grow() {
 document.getElementById('grow').addEventListener('click', grow);
 ```
 
-每次选择代码中引用的按钮时，都会将一万个节点追加到文档正文，并且一个包含一百万个字符的字符串 `div` `x` 被推送到 `x` 数组。  运行前面的代码示例在性能面板中 **生成** 记录，如下图所示。
+每次选择代码中引用的按钮时，都会将一万个节点追加到文档正文，并且一个包含一百万个字符的字符串 `div` `x` 被推送到 `x` 数组中。  运行上一个代码示例将生成性能 **面板中的** 录制，如下图所示。
 
 :::image type="complex" source="../media/memory-problems-glitch-example-1-performance-memory.msft.png" alt-text="简单增长" lightbox="../media/memory-problems-glitch-example-1-performance-memory.msft.png":::
    图 3：简单增长
 :::image-end:::
 
-首先，用户界面的说明。  "**概述**"窗格中的**** HEAP 图 (NET) **JS**堆。  "概述 **"窗格** 下方是" **计数器"** 窗格。  内存使用率由 JS 堆 (，与概述窗格) 、文档、DOM**** 节点、侦听器和 GPU 内存中的**HEAP**图相同。  关闭复选框以在图形中隐藏它。
+首先，用户界面的说明。  "**概述**"窗格中的**** HEAP 图 (**NET**) JS 堆。  "概述 **"窗格** 下方是" **计数器"** 窗格。  内存使用率由 JS 堆 (，与概述窗格中的**HEAP**图) 、**** 文档、DOM 节点、侦听器和 GPU 内存相同。  关闭复选框以在图形中隐藏它。
 
-现在，代码分析与上图比较。  如果查看绿色图形 (节点) ，它将与代码完全匹配。  节点计数在离散步骤中增加。  您可能认为每次增加的节点数都是对 的调用 `grow()` 。  使用蓝色图形 (JS 堆图) 并不简单。  为了与最佳做法保持一样，第一个双头效果实际上是强制垃圾回收 (选择"收集  **垃圾** ![ 强制垃圾回收" ](../media/collect-garbage-icon.msft.png) 按钮) 。  在记录进行时，将显示 JS 堆大小峰值。  这是自然且预期的：JavaScript 代码将在你选择的每一个按钮上创建 DOM 节点，并创建一百万个字符的字符串时执行大量工作。  此处的关键点是 JS 堆结束时间高于它 (开始"，即强制垃圾回收之后) 。  在现实世界中，如果你看到这种增加 JS 堆大小或节点大小的模式，它可能会定义内存泄漏。
+现在，代码分析与上图比较。  如果查看绿色图形 (节点) ，它将与代码完全匹配。  节点计数在离散步骤中增加。  您可能认为每次增加的节点数都是对 的调用 `grow()` 。  使用蓝色图形 (JS 堆图) 并不简单。  为了与最佳实践保持一样，第一个双头式回收实际上是强制垃圾回收 (选择"收集  **垃圾** ![ 强制垃圾回收" ](../media/collect-garbage-icon.msft.png) 按钮) 。  在记录进行时，将显示 JS 堆大小峰值。  这是自然且预期的：JavaScript 代码将在你选择的每一个按钮上创建 DOM 节点，并创建一百万个字符的字符串时执行大量工作。  此处的关键点是 JS 堆结束时间高于它 (开始"，即强制垃圾回收之后) 。  在现实世界中，如果你看到这种增加 JS 堆大小或节点大小的模式，它可能会定义内存泄漏。
 
 <!--todo: the Heap snapshots and Profiles panel are not found in Edge  -->
 
@@ -232,7 +232,7 @@ document.getElementById('grow').addEventListener('click', grow);
 1.  完成要调查的网页上的操作。
 1.  完成 **所有操作** 后，选择"停止"按钮。
 
-DevTools 显示按功能细分的内存分配。  默认视图为 **"高 (从 **下) "，它显示在顶部分配了大部分内存的函数。
+DevTools 显示按功能细分的内存分配。  默认视图为"重 ** (从下向上) ， **它显示在顶部分配最多内存的函数。
 
 :::image type="complex" source="../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png" alt-text="分配采样" lightbox="../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png":::
    图 12：分配采样
@@ -244,18 +244,17 @@ DevTools 显示按功能细分的内存分配。  默认视图为 **"高 (从 **
 
 如果页面似乎频繁暂停，则可能有垃圾回收问题。
 
-您可以使用浏览器任务管理器或性能Microsoft Edge记录来发现频繁垃圾回收。  在浏览器Microsoft Edge管理器中，经常出现和下降**的内存**或**JavaScript 内存**值表示频繁垃圾回收。  在性能记录中， (JS 堆或节点计数) 频繁进行垃圾回收。
+您可以使用浏览器任务管理器或性能Microsoft Edge记录来发现频繁垃圾回收。  在浏览器Microsoft Edge管理器中，经常出现和下降**的内存**或**JavaScript 内存**值表示频繁的垃圾回收。  在性能记录中， (JS 堆或节点计数) 频繁进行垃圾回收。
 
 确定问题后，可以在时间线记录上使用 **Allocation instrumentation** 来查明内存的分配位置以及导致分配的函数。
 
 
 <!-- ====================================================================== -->
-<!--[RAIL]: /profile/evaluate-performance/rail  -->
-<!--[recording]: /profile/evaluate-performance/timeline-tool#make-a-recording ""  -->
-<!--[hngd]: https://jsfiddle.net/kaycebasques/tmtbw8ef/  -->
-
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/memory-problems/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+
+<!-- [recording](/profile/evaluate-performance/timeline-tool#make-a-recording) -->
+<!-- [hngd](https://jsfiddle.net/kaycebasques/tmtbw8ef/) -->

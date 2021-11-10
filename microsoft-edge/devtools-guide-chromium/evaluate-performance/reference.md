@@ -1,18 +1,18 @@
 ---
 description: 在 Microsoft Edge DevTools 中记录和分析性能所有方法的参考。
-title: 性能分析引用
+title: 性能功能参考
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 1471f4fb4fe1f8438dd0423a4a0e300acb32e49b
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 761200feadcd4705d3630f81a64fa6fd92d574a3
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156681"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170692"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +27,7 @@ ms.locfileid: "12156681"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="performance-analysis-reference"></a>性能分析引用
+# <a name="performance-features-reference"></a>性能功能参考
 
 本页是与分析性能相关 Microsoft Edge DevTools 功能的综合参考。
 
@@ -82,7 +82,7 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 ### <a name="force-garbage-collection-while-recording"></a>录制时强制收集垃圾
 
-在记录页面时，选择"收集**** (![ 垃圾回收图标) ](../media/collect-garbage-icon.msft.png) 强制进行垃圾回收。
+在记录页面时，选择"收集**** (![ 垃圾回收图标) ](../media/collect-garbage-icon.msft.png) 以强制进行垃圾回收。
 
 :::image type="complex" source="../media/evaluate-performance-performance-collect-garbage-button.msft.png" alt-text="回收垃圾" lightbox="../media/evaluate-performance-performance-collect-garbage-button.msft.png":::
    回收垃圾
@@ -90,7 +90,7 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 ### <a name="show-recording-settings"></a>显示录制设置
 
-选择 **"捕获 (** 捕获) "以公开与 DevTools 如何捕获性能记录 ![ ](../media/capture-settings-icon.msft.png) 相关的更多设置。
+选择 **"捕获 (** 捕获) ，以公开与 DevTools 如何捕获性能记录 ![ ](../media/capture-settings-icon.msft.png) 相关的更多设置。
 
 :::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="捕获设置部分" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
    **“捕获设置”** 部分
@@ -200,7 +200,7 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 ### <a name="search-activities"></a>搜索活动
 
-选择 `Control` + `F` (Windows、Linux) 或 (`Command` + macOS `F`) **** 打开"性能"面板底部的搜索框。
+选择 `Control` + `F` (Windows、Linux) 或 (macOS) 打开"性能"面板底部的 `Command` + `F` **搜索**框。
 
 :::image type="complex" source="../media/evaluate-performance-performance-search-regex.msft.png" alt-text="搜索框" lightbox="../media/evaluate-performance-performance-search-regex.msft.png":::
    搜索框
@@ -208,7 +208,7 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 导航与查询匹配的活动:
 
-*   使用"**上一 (** ![ 页 ](../media/previous-icon.msft.png)) "和 ("下一****) ![ ](../media/next-icon.msft.png) 按钮。
+*   使用"上**一 (** ![ 页 ](../media/previous-icon.msft.png)) "和**** ("下一) ![ ](../media/next-icon.msft.png) 按钮。
 *   选择 `Shift`+`Enter` 来选择上一步或 `Enter` 来选择下一步。
 
 修改查询设置:
@@ -285,7 +285,7 @@ DevTools 为脚本随机分配颜色。  在上图中，请求来自脚本的函
 
 默认情况下，**“分组”** 菜单设置为 **“无分组”**。  使用 **“分组”** 菜单，根据各种条件对活动表进行排序。
 
-选择 **"显示最** (堆栈") 显示"活动"表右侧 ![ ](../media/show-heaviest-stack-icon.msft.png) 的另一 **个** 表。  选择一个活动来填充 **最重堆叠** 表。  **“最重堆栈”** 表显示所选活动的子项需要最长的运行时间。
+选择 **"显示最 (堆栈** ") 显示"活动"表右侧 ![ 的另一 ](../media/show-heaviest-stack-icon.msft.png) **个** 表。  选择一个活动来填充 **最重堆叠** 表。  **“最重堆栈”** 表显示所选活动的子项需要最长的运行时间。
 
 #### <a name="the-bottom-up-panel"></a>自下而上面板
 
@@ -495,7 +495,7 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
 若要移动图表:
 
 *   选择 **"平移** (![ 平移模式) 沿 X 和 ](../media/pan-mode-icon.msft.png) Y 轴移动。
-*   选择 **旋转模式** (![ 旋转 ](../media/rotate-mode-icon.msft.png)) 旋转模式以沿 Z 轴旋转。
+*   选择 **旋转模式** (![ 旋转 ](../media/rotate-mode-icon.msft.png)) 沿 Z 轴旋转。
 *   Choose **Reset Transform (** Reset Transform) to reset the diagram to the original ![ ](../media/reset-transform-icon.msft.png) position.
 
 ### <a name="view-paint-profiler"></a>查看绘图探查器

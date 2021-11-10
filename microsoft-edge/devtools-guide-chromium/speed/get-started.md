@@ -1,18 +1,18 @@
 ---
 description: 了解如何使用 Microsoft Edge 开发人员工具找到加快网站加载速度的方法。
-title: 使用 Microsoft Edge 开发人员工具优化网站速度
+title: 优化网站速度
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: b0a62eed84646bd6bbaee1848cbe8de1ce1193cb
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 7e02c5e5aa85b7b670086316188b247f6f631fa2
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157208"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170412"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +27,7 @@ ms.locfileid: "12157208"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="optimize-website-speed-with-microsoft-edge-devtools"></a>使用 Microsoft Edge 开发人员工具优化网站速度
+# <a name="optimize-website-speed"></a>优化网站速度
 
 
 <!-- ====================================================================== -->
@@ -85,13 +85,13 @@ ms.locfileid: "12157208"
        演示选项卡
     :::image-end:::
 
-1.  选择 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS) 。  Microsoft Edge 开发人员工具将在演示旁边打开。
+1.  选择 `Control` + `Shift` + `J` (Windows、Linux) 或 (`Command` + `Option` + `J` macOS) 。  Microsoft Edge 开发人员工具将在演示旁边打开。
 
     :::image type="complex" source="../media/speed-glitch-tony-show-live-console.msft.png" alt-text="开发人员工具和演示" lightbox="../media/speed-glitch-tony-show-live-console.msft.png":::
        开发人员工具和演示
     :::image-end:::
 
-对于本教程中的其余屏幕截图，开发人员工具显示在单独窗口中。  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) `Undock` **** 打开"命令菜单"，键入 ，然后选择"在单独的窗口中取消停靠"。
+对于本教程中的其余屏幕截图，开发人员工具显示在单独窗口中。  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` macOS + `P`) `Undock` **** 打开"命令菜单"，键入 ，然后选择"在单独的窗口中取消停靠"。
 
 :::image type="complex" source="../media/speed-console.msft.png" alt-text="移除的开发人员工具" lightbox="../media/speed-console.msft.png":::
    移除的开发人员工具
@@ -233,7 +233,7 @@ ms.locfileid: "12157208"
        **标头**面板
     :::image-end:::
 
-1.  在**响应标头**部分搜索`content-encoding` 标头。  `content-encoding`标头不显示，意味着`bundle.js`未被压缩。  压缩资源时，此标头通常设置为 `gzip`、`deflate`或`br`。  有关这些值的说明，请导航到[指令](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Encoding#Directives)。
+1.  在**响应标头**部分搜索`content-encoding` 标头。  `content-encoding`标头不显示，意味着`bundle.js`未被压缩。  压缩资源时，此标头通常设置为 `gzip`、`deflate`或`br`。  有关这些值的说明，请参阅 [指令](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Encoding#Directives)。
 
 说明已经足够。  现在开始进行更改。  通过添加几行代码启用文本压缩：
 
@@ -328,14 +328,10 @@ ms.locfileid: "12157208"
 对于小型应用，像这样调整一次大小可能就已足够。  但对于大型应用，这显然不可扩展。  以下是一些在大型应用中管理图像的策略：
 
 *   在编译流程中调整图像大小。
-*   在编译流程中创建每个图像的多个大小，然后在`srcset`代码中使用。  在运行时，浏览器会负责选择最适合设备的大小。
-    <!--Navigate to [Relative-sized images][relative].  -->
-
-<!--[relative]: /web/fundamentals/design-and-ux/responsive/images#relative_sized_images  -->
-
+*   在编译流程中创建每个图像的多个大小，然后在`srcset`代码中使用。  在运行时，浏览器会负责选择最适合设备的大小。  <!-- See [Relative-sized images](https://developers.google.com/web/fundamentals/design-and-ux/responsive/images#relative_sized_images). -->
 *   使用图像 CDN，可以在发出请求时动态调整图像大小。
 *   至少，可以优化每个图像。  这可能会节省大量空间。
-  优化是指通过减少图像文件大小的特殊程序运行图像。  有关更多提示，请导航到[基本图像优化](https://images.guide)。
+  优化是指通过减少图像文件大小的特殊程序运行图像。  有关更多提示，请参阅 [基本映像优化](https://images.guide)。
 
 ### <a name="eliminate-render-blocking-resources"></a>消除阻止渲染资源
 
@@ -345,13 +341,13 @@ ms.locfileid: "12157208"
 
 然后，首个任务是查找页面加载时无需运行的代码。
 
-1.  选择 **"消除呈现阻止资源** "以显示阻止的资源： `lodash.js` 和 `jquery.js` 。
+1.  选择 **"消除呈现阻止资源** "以显示阻止的资源： 和 `lodash.js` `jquery.js` 。
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png" alt-text="有关消除阻止渲染资源机会的详细信息" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png":::
        有关**消除阻止渲染资源机会**的详细信息
     :::image-end:::
 
-1.  选择 (Windows、Linux) 或 (macOS) 打开"命令菜单"，开始 `Control` + `Shift` + `P` `Command` + `Shift` + `P` 键入 `Coverage` ，然后选择"**显示覆盖"。**
+1.  Select `Control` + `Shift` + `P` (Windows， Linux) or `Command` + `Shift` + `P` (macOS) to open the Command Menu， start typing `Coverage` ， and then choose Show **Coverage**.
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png" alt-text="从审核面板打开命令菜单" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png":::
        从**审核**面板打开“命令菜单”
@@ -361,7 +357,7 @@ ms.locfileid: "12157208"
        **覆盖**工具
     :::image-end:::
 
-1.  选择 **"刷新** (![ 刷新 ](../media/reload-icon.msft.png)) 。  **覆盖**工具概述了加载页面时 `bundle.js`、`jquery.js`和`lodash.js`中运行的代码量。  在下图中，约 76% 的 jQuery 文件和 30% 的 Lodash 文件未被使用。
+1.  Choose **Refresh (** ![ Refresh ](../media/reload-icon.msft.png)) .  **覆盖**工具概述了加载页面时 `bundle.js`、`jquery.js`和`lodash.js`中运行的代码量。  在下图中，约 76% 的 jQuery 文件和 30% 的 Lodash 文件未被使用。
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png" alt-text="覆盖报告" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png":::
        覆盖报告
@@ -380,7 +376,7 @@ ms.locfileid: "12157208"
 加载页面时是否需要`jquery.js`和`lodash.js`文件？  **请求阻止**工具显示资源不可用时会发生的状况。
 
 1.  选择**网络**工具。
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 以再次打开命令菜单。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 以再次打开命令菜单。
 1.  开始键入`blocking`，然后选择**显示请求阻止**。
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png" alt-text="请求阻止工具" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png":::
@@ -418,12 +414,10 @@ ms.locfileid: "12157208"
 
 **关键渲染路径**是指加载页面所需的代码。  通常，在页面加载期间仅交付关键代码，然后延迟加载其他所有内容，可以加快页面加载速度。
 
-<!--[CRP]: /web/fundamentals/performance/critical-rendering-path/  -->
+<!-- [Critical Rendering Path](/web/fundamentals/performance/critical-rendering-path/) -->
 
-*   虽然不太可能找到能够彻底删除的脚本，但可能找到许多在页面加载期间无需请求的脚本，它们可以异步请求。  <!--Navigate to [Using async or defer][async].  -->
+*   虽然不太可能找到能够彻底删除的脚本，但可能找到许多在页面加载期间无需请求的脚本，它们可以异步请求。  <!-- See [Using async or defer](/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#use_async_or_defer). -->
 *   如果你使用框架，请检查其是否包含生产模式。  此模式可能使用[摇树优化](https://webpack.js.org/guides/tree-shaking)等功能，从而消除阻止关键渲染不必要的代码。
-
-<!--[async]: /web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#use_async_or_defer  -->
 
 ### <a name="do-less-main-thread-work"></a>减少主线程工作
 
@@ -436,7 +430,7 @@ ms.locfileid: "12157208"
 1.  选择**性能**工具。
 1.  选择 **"捕获设置 (** ![ 捕获 ](../media/capture-icon.msft.png) 设置) 。
 1.  将**网络**设置为**慢速 3G**，**CPU**设置为**6x 减速**。  移动设备的硬件约束通常比笔记本电脑或台式机多，因此这些设置可以让你就像使用不那么强大的设备一样体验页面加载。
-1.  选择 **"刷新** (![ 刷新 ](../media/reload-icon.msft.png)) 。  开发人员工具会刷新页面，然后生成加载页面所执行的所有工作的可视化效果。  此可视化效果称为**跟踪**。
+1.  Choose **Refresh (** ![ Refresh ](../media/reload-icon.msft.png)) .  开发人员工具会刷新页面，然后生成加载页面所执行的所有工作的可视化效果。  此可视化效果称为**跟踪**。
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="页面加载性能工具跟踪" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
        页面加载**性能**工具跟踪
@@ -505,9 +499,7 @@ ms.locfileid: "12157208"
 最后更改似乎大幅提升了性能！
 
 > [!NOTE]
-> 此部分简要介绍了“性能”面板。  若要了解如何分析页面性能的详细信息，请导航到[性能分析参考](../evaluate-performance/reference.md)。
-
-<!--todo: add section when available -->
+> 此部分简要介绍了“性能”面板。  若要详细了解如何分析页面性能，请参阅 [性能功能参考](../evaluate-performance/reference.md)。
 
 #### <a name="doing-less-main-thread-work-in-the-real-world"></a>在现实世界中减少主线程工作
 
@@ -522,11 +514,13 @@ ms.locfileid: "12157208"
 *   无论何时开始优化站点的加载性能，始终都从审核开始。  审核会建立基线，并提供如何改进的提示。
 *   一次进行一个更改，并在每次更改后审核网页，从而显示独立更改对性能的影响。
 
+
+<!-- ====================================================================== -->
 <!--
 ## Next steps
 
 *   Run audits on your own site!  If you need help interpreting your report, or finding ways to improve your load performance, check out [Feedback](#feedback) for ways to get help from the DevTools community.  Stack Overflow, the mailing list, or Twitter are probably best for these types of questions.
-*   Please leave [feedback](#feedback) on this tutorial.  I really do use the data to make better tutorials for you.
+*   Please leave [feedback](#feedback) on this tutorial.  The data is used to make better tutorials.
 -->
 
 

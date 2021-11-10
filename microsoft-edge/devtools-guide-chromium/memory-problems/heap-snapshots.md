@@ -1,18 +1,18 @@
 ---
 description: 了解如何使用 DevTools 堆Microsoft Edge器记录堆快照并查找内存泄漏。
-title: 如何记录堆快照
+title: 记录堆快照
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: e7c8e531bf725cda9fe8829a871bd2f05da34908
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 93d9feb70e2042139c2e9162435032da156828fd
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156667"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170601"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -27,11 +27,11 @@ ms.locfileid: "12156667"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="how-to-record-heap-snapshots"></a>如何记录堆快照
+# <a name="record-heap-snapshots"></a>记录堆快照
 
 了解如何使用 DevTools 堆Microsoft Edge器记录堆快照并查找内存泄漏。
 
-DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关 DOM 节点的内存分布。  使用它，可以将 JavaScript 堆 (JS 堆) 快照、分析内存图、比较快照和查找内存泄漏。  导航到 [对象保留树](./memory-101.md#objects-retaining-tree)。
+DevTools Microsoft Edge配置文件器中显示了 JavaScript 对象和页面的相关 DOM 节点的内存分布。  使用它，可以将 JavaScript 堆 (JS 堆) 快照、分析内存图、比较快照和查找内存泄漏。  导航到 [对象保留树](./memory-101.md#objects-retaining-tree)。
 
 
 <!-- ====================================================================== -->
@@ -58,7 +58,7 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 <!-- ====================================================================== -->
 ## <a name="clear-snapshots"></a>清除快照
 
-选择 **"清除所有配置文件** "图标 (从 DevTools 和与呈现器进程关联的任何内存中删除) 。
+选择 **"清除所有配置文件** "图标，从 DevTools (与呈现器进程关联的任何内存中删除快照) 。
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="删除快照" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
    删除快照
@@ -75,13 +75,13 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 从不同的角度查看不同任务的快照。
 
-**摘要视图** 显示按构造函数名称分组的对象。  使用它来搜寻对象 (和内存使用) 按构造函数名称分组的类型。  它尤其有助于跟踪 **DOM 泄露**。
+**摘要视图** 显示按构造函数名称分组的对象。  使用它来搜寻对象 (，并且内存) 按构造函数名称分组的类型来使用对象。  它尤其有助于跟踪 **DOM 泄露**。
 
 <!--todo: add profile memory problems memory diagnosis (tracking down DOM leaks) section when available  -->
 
 **比较视图**。  显示两个快照之间的差值。  使用它来比较两 (操作之前) 之后的内存快照。  通过检查释放的内存和引用计数中的增量，你可以确认内存泄漏的存在和原因。
 
-**包含视图**。  允许浏览堆内容。  **包含视图** 提供了更好的对象结构视图，帮助分析全局命名空间窗口中 (引用) 以找出对象周围的内容。  使用它来分析关闭，并深入到较低级别的对象中。
+**包含视图**。  允许浏览堆内容。  **包含视图** 提供了更好的对象结构视图，帮助分析全局命名空间 (窗口中) 对象，以找出对象周围的内容。  使用它来分析关闭，并深入到较低级别的对象中。
 
 若要在视图之间切换，请使用视图顶部的选择器。
 
@@ -106,8 +106,8 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 |:--- |:--- |
 | **构造函数** | 表示使用此构造函数创建的所有对象。  |
 | **距离** | 使用节点的最短简单路径显示到根之间的距离。  |
-| **浅表大小** | 显示由特定构造函数函数创建的所有对象的浅表大小的总和。  浅表大小是由对象存储的内存大小 (，数组和字符串通常具有较大的浅) 。  导航到 [对象大小](./memory-101.md#object-sizes)。  |
-| **保留大小** | 显示同一组对象中保留的最大大小。  在删除对象后能够释放的内存大小 (从属项将不再可用) 称为保留大小。  导航到 [对象大小](./memory-101.md#object-sizes)。  |
+| **浅表大小** | 显示由特定构造函数函数创建的所有对象的浅表大小的总和。  浅表大小是由对象存储的内存大小 (，数组和字符串具有较大的浅表) 。  导航到 [对象大小](./memory-101.md#object-sizes)。  |
+| **保留大小** | 显示同一组对象中保留的最大大小。  在删除对象后能够释放的内存大小 (使从属项不再可用) 称为保留大小。  导航到 [对象大小](./memory-101.md#object-sizes)。  |
 
 <!--| **Number of object instances** | Displayed in the # column.  |  -->
 
@@ -115,7 +115,7 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 请记住，黄色对象具有 JavaScript 引用，红色对象是从具有黄色背景的节点引用的分离节点。
 
-**堆配置文件器中的 (项) 对应的不同构造函数是什么？**
+**堆配置文件器中的 (中的) 条目对应的不同构造函数是什么？**
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="构造函数组" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
    **构造函数** 组
@@ -134,11 +134,11 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 ### <a name="comparison-view"></a>比较视图
 
-通过将多个快照相互比较来查找泄露的对象。  若要验证特定应用程序操作不会 (例如，通常一对直接和反向操作（如打开文档，然后关闭文档）不会留下任何) ，您可以遵循以下方案：
+通过将多个快照相互比较来查找泄露的对象。  若要验证特定应用程序操作不会创建泄漏 (例如，通常一对直接和反向操作（如打开文档，然后关闭文档）不应留下任何) ，您可以遵循以下方案：
 
 1.  在操作之前拍摄堆快照。
 1.  以你认为 (导致页面泄露的方式与页面进行交互) 。
-1.  执行反向操作 (相反的交互，然后重复多次) 。
+1.  执行反向操作 (执行相反的交互，然后多次) 。
 1.  拍摄第二个堆快照，将此快照的视图更改为**Comparison，** 比较快照**1。**
 
 在 **"比较** "视图中，将显示两个快照之间的差值。  展开总条目时，将显示添加和删除的对象实例。
@@ -151,7 +151,7 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 ### <a name="containment-view"></a>包含视图
 
-" **包含** "视图实质上是应用程序的对象结构的"鸟眼视图"。  它使你可以速览函数关闭，观察虚拟机 (VM) 内部对象，这些内部对象共同组合 JavaScript 对象，并了解应用程序在非常低级别使用的内存量。
+" **包含** "视图实质上是应用程序的对象结构的"鸟眼视图"。  它允许你查看函数关闭，观察虚拟机 (VM) 共同组合 JavaScript 对象的内部对象，并了解应用程序在非常低的级别使用的内存量。
 
 | 包含视图入口点 | 描述 |
 |:--- |:--- |
@@ -208,8 +208,8 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 | 属性类型 | 描述 |
 |:--- |:--- |
-| **a： property** | 具有名称的常规属性，可通过 (点) 运算符访问，或通过 (方括号) 表示法访问， `.` `[` `]` 例如 `["foo bar"]` 。  |
-| **0：元素** | 具有数值索引的常规属性，可通过 (`[` `]` 括号) 访问。  |
+| **a： property** | 具有名称的常规属性，可通过点 (运算符) ，或通过 (方括号) `.` `[` `]` 访问，例如 `["foo bar"]` 。  |
+| **0：元素** | 具有数值索引的常规属性，可通过 (`[` `]` 括号) 表示法。  |
 | **a： context var** |  函数上下文中的变量，可通过函数关闭内部的变量名称访问。  |
 | **a： system prop** | JavaScript VM 添加的属性，无法通过 JavaScript 代码访问。  |
 
@@ -225,10 +225,10 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 <!-- ====================================================================== -->
 ## <a name="uncover-dom-leaks"></a>发现 DOM 泄漏
 
-堆探查器能够反映浏览器本机对象与 DOM 节点 (CSS 规则与 JavaScript) 之间的双向依赖关系。
+堆探查器能够反映浏览器本机对象与 DOM 节点、CSS 规则 (JavaScript) 之间的双向依赖关系。
 这有助于发现因忘记分离的 DOM 子树四处浮动而发生的不可见泄露。
 
-DOM 泄露可能大于您想象中。  请考虑以下示例。  何时将#tree GC？
+DOM 泄露可能大于您想象中。  请考虑以下示例。  何时#tree GC？
 
 ```javascript
 var select = document.querySelector;
@@ -244,7 +244,7 @@ leafRef = null;
 //#NOW able to be #tree GC
 ```
 
-保留对相关的父 (parentNode) 递归到 的引用，因此仅在 leafRef 为 nullified 时，作为 GC 候选项下的 WHOLE 树 `#leaf` `#tree` `#tree` 。
+将维护对相关的父 (parentNode) 递归到 的引用，因此仅在 leafRef 为 nullified 时，作为 GC 候选项下的 WHOLE 树 `#leaf` `#tree` `#tree` 。
 
 :::image type="complex" source="../media/memory-problems-tree-gc.msft.png" alt-text="DOM 子树" lightbox="../media/memory-problems-tree-gc.msft.png":::
    DOM 子树
@@ -253,26 +253,27 @@ leafRef = null;
 > [!NOTE]
 > 示例：尝试此示例的泄露 [DOM 节点](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html) ，了解它可能会泄露在哪里以及如何检测它。  您还可以查看此 DOM 泄漏 [大于预期的示例](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html)。
 
-若要阅读有关 DOM 泄漏和内存分析基础的更多内容，请参阅查找和调试由 Gonzalo Ruiz de Checkout 使用[Microsoft Edge DevTools](https://slid.es/gruizdevilla/memory)发现和调试内存泄漏。
+若要了解有关 DOM 泄漏和内存分析基础的更多信息，请参阅查找和调试由 Gonzalo Ruiz de Checkout 使用[Microsoft Edge DevTools](https://slid.es/gruizdevilla/memory)发现和调试内存泄漏。
 
 <!--
 > [!NOTE]
 > Example: Try this **demo** to play with detached DOM trees.
 -->
 
-<!--todo: add heap profiling dom leaks section when available  -->
+<!-- todo: add heap profiling dom leaks section when available -->
 
 
 <!-- ====================================================================== -->
-<!--[DevToolsHeapProfilingComparison]: https://developer.alphabet.com/devtools/docs/heap-profiling-comparison ""  -->
-<!--[DevToolsHeapProfilingContainment]: https://developer.alphabet.com/devtools/docs/heap-profiling-containment ""  -->
-<!--[DevtoolsHeapProfilingDomLeaks]: https://developer.alphabet.com/devtools/docs/heap-profiling-dom-leaks ""  -->
-<!--[DevToolsHeapProfilingSummary]: https://developer.alphabet.com/devtools/docs/heap-profiling-summary ""  -->
-<!--[DevtoolsProfileMemoryProblemsDiagnosisCausesMemoryLeaks]: ../profile/memory-problems/memory-diagnosis#narrow-down-causes-of-memory-leaks ""  -->
+<!--[heap profiling comparison](https://developer.alphabet.com/devtools/docs/heap-profiling-comparison) -->
+<!--[heap profiling containment](https://developer.alphabet.com/devtools/docs/heap-profiling-containment) -->
+<!--[heap profiling DOM leaks](https://developer.alphabet.com/devtools/docs/heap-profiling-dom-leaks) -->
+<!--[heap profiling summary](https://developer.alphabet.com/devtools/docs/heap-profiling-summary) -->
+<!--[narrow down causes of memory leaks](../profile/memory-problems/memory-diagnosis#narrow-down-causes-of-memory-leaks) -->
+
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots) 由技术撰稿人 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (创作) 。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots) 由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

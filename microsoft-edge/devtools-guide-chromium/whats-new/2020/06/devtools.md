@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 4d4b1c11e7818f7d8b73577de0620854604d883d
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: a3a6dd9236bee5285366cc13261e7136b7d5d3c4
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156191"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170370"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -33,7 +33,7 @@ ms.locfileid: "12156191"
 <!-- ====================================================================== -->
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告
 
-以下各节列出了你可能从 DevTools 团队中错过Microsoft Edge通知。  查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要随时了解开发人员工具中所有最新且最最好的功能，请下载[Microsoft Edge 预览](https://www.microsoftedgeinsider.com/download/)频道，并按照 Twitter 上的[Microsoft Edge DevTools 团队进行跟踪](https://twitter.com/EdgeDevTools)。
+以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要随时了解开发人员工具中所有最新且最重要的功能，请下载[Microsoft Edge 预览](https://www.microsoftedgeinsider.com/download/)频道，并按照 Twitter 上的[Microsoft Edge DevTools 团队进行跟踪](https://twitter.com/EdgeDevTools)。
 
 ### <a name="css-grid-debugging-features"></a>CSS 网格调试功能
 
@@ -41,7 +41,7 @@ ms.locfileid: "12156191"
    试验功能
 :::image-end:::
 
-开发人员Microsoft Edge团队正在与 Chrome DevTools 团队和 Chromium 社区协作，以将新的 CSS 网格调试功能添加到 DevTools。  现在，你可以将网格线号、网格间隔和扩展网格线显示为页面上覆盖。  此外，即将推出对网格工具的更多改进。
+开发人员Microsoft Edge团队与 Chrome DevTools 团队和 Chromium 社区协作，将新的 CSS 网格调试功能添加到 DevTools。  现在，你可以将网格线号、网格间隔和扩展网格线显示为页面上覆盖。  此外，即将推出对网格工具的更多改进。
 
 :::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS 网格调试功能" lightbox="../../media/2020/06/experiments-grid.msft.png":::
    CSS 网格调试功能
@@ -80,13 +80,13 @@ Chromium问题[#1047356](https://crbug.com/1047356)
 > [!NOTE]
 > 若要启用实验，请导航到 [打开实验](../../../experimental-features/index.md#turning-on-experimental-features) 功能，然后选择启用网络控制台旁边的 **复选框**。
 >
-> 打开网络[日志](../../../network/index.md#log-network-activity)，打开上下文菜单 (右键单击") "编辑和**重播"。**
+> 打开网络[日志](../../../network/index.md#log-network-activity)，打开上下文菜单 (右键单击") "，然后选择"编辑和**重播"。**
 
 Chromium问题[#1093687](https://crbug.com/1093687)
 
 ### <a name="service-worker-respondwith-events-in-the-timing-tab"></a>服务工作者 respondWith"计时"选项卡中的事件
 
-网络**工具****的"** 计时"选项卡现在包括 `respondWith` 服务工作器事件。  服务工作线程事件显示从服务工作进程事件处理程序开始运行前一段时间到处理程序承诺得到实现的时间的 `respondWith` `fetch` `respondWith` `fetch` 持续时间。
+网络**工具****的"** 计时"选项卡现在包括 `respondWith` 服务工作器事件。  服务工作线程事件显示从服务工作进程事件处理程序开始运行前一段时间到处理程序承诺得到实现的时间 `respondWith` `fetch` `respondWith` `fetch` 的持续时间。
 
 :::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="&quot;网络&quot;面板的&quot;计时&quot;选项卡中的 respondWith 服务工作线程事件" lightbox="../../media/2020/06/timing-tab.msft.png":::
    网络 `respondWith` 工具的" **计时"** 选项卡中的服务 **工作器** 事件
@@ -125,7 +125,7 @@ Chromium问题[#1070378](https://crbug.com/1070378)
    试验功能
 :::image-end:::
 
-通常，仅在 DevTools**** 的顶部 (打开元素和网络) 等工具。 ****  同样，工具（如**3D** **** 视图和问题）可能只能在 (面板底部) 打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。
+通常，仅在 DevTools**** 的顶部 (打开元素和网络) 等工具。 ****  同样，诸如**3D 视图**和**** 问题等工具可能只能在 DevTools (底部的) 箱中打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。
 
 :::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="在面板之间移动工具" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
    在面板之间移动工具
@@ -160,7 +160,7 @@ Chromium问题[#1069404](https://crbug.com/1069404)
 
 ### <a name="style-editing-for-css-in-js-frameworks"></a>CSS-in-JS 框架的样式编辑
 
-现在 **，"** 样式"窗格可以更好地支持使用 CSS 对象模型和 [CSSOM ](https://drafts.csswg.org/cssom) (创建的) 样式。  许多 CSS-in-JS 框架和库在构建样式的底层使用 CSSOM API。
+现在 **，"** 样式"窗格可以更好地支持使用 CSS 对象模型和 [CSSOM ](https://drafts.csswg.org/cssom) (API 创建的) 样式。  许多 CSS-in-JS 框架和库在构建样式的底层使用 CSSOM API。
 
 现在您可以使用可构造样式表编辑在 JavaScript 中添加 [的样式](https://wicg.github.io/construct-stylesheets/)。  可构造的样式表是使用 Shadow DOM 时创建和分发可重用样式 [的一种新方式](https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM)。
 
@@ -186,7 +186,7 @@ Chromium问题[#772558](https://crbug.com/772558)
 
 #### <a name="first-meaningful-paint-deprecation"></a>First Meaningful 画图弃用
 
-First Meaningful 画图 (FMP) is deprecated in Lighthouse 6.0.  FMP 也从"性能" **面板中删除** 。  **最大的 Contentful 画图**FMP 的建议替代项。  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->
+First Meaningful 画图 (FMP) is deprecated in Lighthouse 6.0.  FMP 也从"性能" **面板中删除** 。  **最大的 Contentful 画图**FMP 的建议替代项。  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint](https://web.dev/first-meaningful-paint).  -->
 
 <!--todo: add Largest Contentful Paint when section available  -->
 <!--todo: add First Meaningful Paint link and note when available  -->
@@ -218,11 +218,11 @@ DevTools 现在更好地支持一些最新的 JavaScript 语言功能。
       Nullish [并集运算符的语法突出显示](https://v8.dev/features/nullish-coalescing)
    :::column-end:::
    :::column span="2":::
-      DevTools 现在可以在"源"面板中正确打印空的"并排 **"运算符。**
+      DevTools 现在可以在"源"面板中正确打印空的"并 **排"运算符** 。
    :::column-end:::
 :::row-end:::
 
-Chromium问题[1073903](https://crbug.com/1073903) [、#1083214、#1083797](https://crbug.com/1083214) [](https://crbug.com/1083797)
+Chromium问题[#1073903](https://crbug.com/1073903)， [#1083214](https://crbug.com/1083214)， [#1083797](https://crbug.com/1083797)
 
 ### <a name="new-app-shortcut-warnings-in-the-manifest-pane"></a>清单窗格中的新应用快捷方式警告
 
@@ -233,7 +233,7 @@ Chromium问题[1073903](https://crbug.com/1073903) [、#1083214、#1083797](http
 " **清单** "窗格现在显示针对以下条件的警告。
 
 * 应用快捷方式图标小于 96x96 像素
-* 应用快捷方式图标和清单图标不是 (，因为图标在应用中) 
+* 应用快捷方式图标和清单图标不是 (，因为会忽略这些) 
 
 :::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="应用快捷方式警告" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
    应用快捷方式警告
@@ -260,7 +260,7 @@ Chromium问题[#1071432](https://crbug.com/1071432)
 
 ### <a name="line-wise-copy-and-cut-in-sources-panel"></a>在"源面板"中按照行进行复制和剪切
 
-当在"源"面板编辑器中执行复制[](../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files)或剪切操作时，DevTools 会复制或剪切当前内容行。
+当在"源"面板编辑器中执行复制[](../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files)或剪切操作时，DevTools 将复制或剪切当前内容行。
 
 :::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="当光标位于第 5 行的末尾时，从 DevTools pen.js复制整行并粘贴到Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
    当光标位于第 5 行的末尾时，从 DevToolspen.js复制整行，并粘贴到 Visual Studio Code [。](https://code.visualstudio.com/) ****
@@ -272,7 +272,7 @@ Chromium问题[#800028](https://crbug.com/800028)
 
 #### <a name="ungroup-same-console-messages"></a>取消同一控制台消息的组
 
-控制台**控制台中的**组设置现在适用于重复消息。  以前，它只应用于类似的邮件。
+控制台**和控制台**中的组设置现在适用于重复消息。  以前，它只应用于类似的邮件。
 
 例如，以前，DevTools 未取消对邮件进行分组，即使未取消选中" `hello` **组** 相似"。  现在， `hello` 邮件已取消组合。
 
@@ -314,13 +314,13 @@ Chromium问题[#912581](https://crbug.com/912581)
    在性能工具中 **对齐导航** 计时
 :::image-end:::
 
-First 画图、 First Contentful 画图 和 Largest Contentful 画图 事件更新为相对于导航的开始，这意味着计时与 报告 `DOMContentLoaded` 的时间匹配 `PerformanceObserver` 。
+First 画图、First Contentful 画图 和 Largest Contentful 画图 事件的时间更新为相对于导航的开始，这意味着计时与 报告 `DOMContentLoaded` 的时间匹配 `PerformanceObserver` 。
 
 Chromium问题[#974550](https://crbug.com/974550)
 
 ### <a name="new-icons-for-breakpoints-conditional-breakpoints-and-logpoints"></a>断点、条件断点和登录点的新图标
 
-" **源** "面板具有针对断点、条件断点和日志的新设计。  断点用红色圆圈表示，就像[Visual Studio Code和](https://code.visualstudio.com/)Visual Studio。 [](https://visualstudio.microsoft.com/)  添加图标以区分条件断点和日志点。
+" **源** "面板具有针对断点、条件断点和日志的新设计。  断点用红色圆圈表示，就像[](https://visualstudio.microsoft.com/)Visual Studio Code Visual Studio。 [](https://code.visualstudio.com/)  添加图标以区分条件断点和日志点。
 
 :::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="断点" lightbox="../../media/2020/06/breakpoints.msft.png":::
    断点
@@ -335,23 +335,10 @@ Chromium 问题 [#1041830](https://crbug.com/1041830)
 如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道](https://www.microsoftedgeinsider.com/download/) 作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
 
 
-<!--[WebDevLighthouseWhatsNew60]: https://web.dev/lighthouse-whats-new-6.0 "What's New in Lighthouse 6.0 | Web.Dev"  -->
-<!--[WebDevVitalsCoreWeb]: https://web.dev/vitals#core-web-vitals "Core Web Vitals - Web Vitals | Web.Dev"  -->
-<!--[WebdevAppShortcuts]: https://alphabet-dev/app-shortcuts "Get things done quickly with app shortcuts | alphabet-dev"  -->
-<!--[WebdevCls]: https://alphabet-dev/cls "Cumulative Layout Shift (CLS) | alphabet-dev"  -->
-<!--[WebdevControlFocus]: https://alphabet-dev/control-focus-with-tabindex "Control focus with tabindex | alphabet-dev"  -->
-<!--[WebdevMeasureSpeedLabField]: https://alphabet-dev/how-to-measure-speed#lab-data-vs-field-data "Lab data vs Field data - How to measure speed? | alphabet-dev"  -->
-<!--[WebdevLabelsText]: https://alphabet-dev/labels-and-text-alternatives "Labels and text alternatives | alphabet-dev"  -->
-<!--[WebdevTbt]: https://alphabet-dev/tbt "Total Blocking Time (TBT) | alphabet-dev"  -->
-<!--[WebFundamentalComponentsShadowdom]: /web/fundamentals/web-components/shadowdom  -->
-<!--[WebDevLcp]: https://web.dev/lcp "Largest Contentful Paint (LCP) | Web.Dev"  -->
-<!--[WebDevFirstMeaningfulPaint]: https://web.dev/first-meaningful-paint "First Meaningful Paint | Web.Dev"  -->
-<!--[WhatsNew201902ConstructableStylesheets]: ../../2019/02/constructable-stylesheets.md "Constructable Stylesheets: seamless reusable styles | Microsoft Docs"  -->
-
-
-
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-85)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+

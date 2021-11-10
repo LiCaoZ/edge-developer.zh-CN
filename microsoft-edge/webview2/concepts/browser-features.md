@@ -52,33 +52,33 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 *   **可** 配置指示可以使用 WebView2 API 或命令行开关打开或关闭该功能。
 
 > [!NOTE]
-> 本文不介绍使用命令行开关修改功能。  有关使用命令行开关打开和关闭功能的信息，请导航到"Chromium[开关"](https://peter.sh/experiments/chromium-command-line-switches)列表。
+> 本文不介绍使用命令行开关修改功能。  有关使用命令行开关打开和关闭功能的信息，请参阅命令行Chromium[列表](https://peter.sh/experiments/chromium-command-line-switches)。
 
 | 功能 | 默认状态 | 可配置 | 详细信息 |
-|:--- |:--- |:--- | :--- |
-| Autofill for Addresses | 开 | 是 | 默认情况下，此功能处于启用状态。  可以使用 WebView2 自动填充 API 打开或关闭此功能。  |
-| Autofill for Passwords | 开 | 是 | 默认情况下，此功能处于启用状态。  可以使用 WebView2 自动填充 API 打开或关闭此功能。  |
-| 付款自动填充 | 关闭 | 否 | 此功能已关闭。  |
-| 浏览器扩展 | 关闭 | 否 | 此功能已关闭。  |
-| Browser Task Manager | 关闭 | 否 | 此功能已关闭。  |
-| Collections | 关闭 | 否 | 此功能已关闭。  |
-| Continue-where-I-left-off prompt | 关闭 | 否 | 此功能已关闭。  |
-| Downloads | 开 | 是 | WebView2 提供了一个 API，允许你自定义下载 UI 以操作下载。 例如，可以阻止、重定向、保存、暂停等。  <!--For more information, navigate to [download API][Webview2ReferenceDownloadApi].--> |
-| Edge Shopping | 关闭 | 否 | 此功能已关闭。  |
-| Family Safety | 关闭 | 否 | 此功能已关闭。  |
-| Favorites | 关闭 | 否 | 此功能已关闭。  |
+| --- | --- | --- | --- |
+| Autofill for Addresses | 开 | 是 | 默认情况下，此功能处于启用状态。  可以使用 WebView2 自动填充 API 打开或关闭此功能。 |
+| Autofill for Passwords | 开 | 是 | 默认情况下，此功能处于启用状态。  可以使用 WebView2 自动填充 API 打开或关闭此功能。 |
+| 付款自动填充 | 关闭 | 否 | 此功能已关闭。 |
+| 浏览器扩展 | 关闭 | 否 | 此功能已关闭。 |
+| Browser Task Manager | 关闭 | 否 | 此功能已关闭。 |
+| Collections | 关闭 | 否 | 此功能已关闭。 |
+| Continue-where-I-left-off prompt | 关闭 | 否 | 此功能已关闭。 |
+| Downloads | 开 | 是 | WebView2 提供了一个 API，允许你自定义下载 UI 以操作下载。 例如，可以阻止、重定向、保存、暂停等。  有关详细信息，请参阅下载[API。](/microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_downloadstarting) |
+| Edge Shopping | 关闭 | 否 | 此功能已关闭。 |
+| Family Safety | 关闭 | 否 | 此功能已关闭。 |
+| Favorites | 关闭 | 否 | 此功能已关闭。 |
 | IE Mode | 关闭 | 否 | 此功能已关闭。 与 IE 模式相比，WebView2 不支持 IE 模式，并且行为 (如 MHT 或 BIN 支持) 。 |
-| Immersive Reader | 关闭 | 否 | 此功能取决于用于交互的浏览器 UI。  此功能已关闭。  |
-| Intrusive Ads | 关闭 | 否 | 此功能已关闭。  |
-| 键盘快捷方式 | 查看详细信息 | 查看详细信息 | 默认情况下关闭的键盘快捷方式在 WebView2 中没有意义或导致问题。  不能关闭或打开这些快捷方式。  相反，您可以使用 事件侦听组合键 `AcceleratorKeyPressed` ，并根据需要创建自定义响应。  有关详细信息，请导航到"[其他键盘快捷方式信息"。](#additional-keyboard-shortcuts-information) |
-| PDF 批注 | 关闭 | 否 | 此功能已关闭。 PDF 查看功能已启用，但 PDF 中的绘图、墨迹书写和突出显示未启用。 有关详细信息，请导航到"[禁用功能： PDF 批注支持"。](https://github.com/MicrosoftEdge/WebView2Announcements/issues/21) |
-| Read Aloud | 关闭 | 否 | 此功能已关闭。  |
-| Smart Screen | 开`*` | 否 | `*` 此功能的 UI 已删除，但基础功能仍然可用。  此外，您还可以使用 Smart Screen 命令行开关关闭。  |
-| Translate | 关闭 | 否 | 此功能已关闭。  |
-| Tracking Prevention | 开`*` | 否 | `*` 此功能的 UI 已删除，但基础功能仍然可用。  跟踪防护始终设置为平衡。|
-| Profile and Identity | 关闭 | 否 | 同步收藏夹、Cookie 等的功能已关闭。  |
-| Windows Defender Application Guard | 关闭 | 否 | 此功能已关闭。  |
-| edge:// URLs | 查看详细信息 | 否 | 设置浏览器Microsoft Edge URL `edge://` 上。  由于这些网页中的大多数Microsoft Edge WebView2 的上下文中具有品牌或没有意义，因此其中一些 URL 已关闭。  有关详细信息，请导航到["阻止的内部 URL"。](#blocked-internal-urls)  |
+| Immersive Reader | 关闭 | 否 | 此功能取决于用于交互的浏览器 UI。  此功能已关闭。 |
+| Intrusive Ads | 关闭 | 否 | 此功能已关闭。 |
+| 键盘快捷方式 | 查看详细信息 | 查看详细信息 | 默认情况下关闭的键盘快捷方式在 WebView2 中没有意义或导致问题。  不能关闭或打开这些快捷方式。  相反，您可以使用 事件侦听组合键 `AcceleratorKeyPressed` ，并根据需要创建自定义响应。  有关详细信息，请参阅其他 [键盘快捷方式信息](#additional-keyboard-shortcuts-information)。 |
+| PDF 批注 | 关闭 | 否 | 此功能已关闭。 PDF 查看功能已启用，但不启用以 PDF 格式绘制、墨迹书写和突出显示功能。 有关详细信息，请参阅[Disabling Feature： PDF Annotations Support。](https://github.com/MicrosoftEdge/WebView2Announcements/issues/21) |
+| Read Aloud | 关闭 | 否 | 此功能已关闭。 |
+| Smart Screen | 开`*` | 否 | `*` 此功能的 UI 已删除，但基础功能仍然可用。  此外，您还可以使用 Smart Screen 命令行开关关闭。 |
+| Translate | 关闭 | 否 | 此功能已关闭。 |
+| Tracking Prevention | 开`*` | 否 | `*` 此功能的 UI 已删除，但基础功能仍然可用。  跟踪防护始终设置为平衡。 |
+| Profile and Identity | 关闭 | 否 | 同步收藏夹、Cookie 等的功能已关闭。 |
+| Windows Defender Application Guard | 关闭 | 否 | 此功能已关闭。 |
+| edge:// URLs | 查看详细信息 | 否 | 设置浏览器Microsoft Edge URL `edge://` 上。  由于这些网页中的大多数Microsoft Edge WebView2 的上下文中具有品牌或没有意义，因此其中一些 URL 已关闭。  有关详细信息，请参阅[阻止的内部 URL。](#blocked-internal-urls) |
 
 
 <!-- ====================================================================== -->
@@ -119,7 +119,7 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 
 键盘快捷方式或键绑定在 Microsoft Edge 和 WebView2 中受支持。  更新Microsoft Edge时，默认键绑定可能会更改。  此外，如果 WebView2 现在支持此功能，则默认情况下关闭的键盘快捷方式可能会改为打开。  若要避免对键盘快捷方式进行此类更改，可以设置为 ，这将关闭访问浏览器功能的所有键，但会启用所有基本的文本编辑和移动 `AreBrowserAcceleratorKeysEnabled` `FALSE` 快捷方式。
 
-在 WebView2 中，始终关闭以下快捷方式。  星号 () 表示快捷方式未关闭，但它访问的功能已关闭，或者该功能不适用于 `*` WebView2。
+在 WebView2 中，始终关闭以下快捷方式。  星号 () 表示快捷方式未关闭，但它访问的功能已关闭，或者功能不适用于 `*` WebView2。
 
 | 操作 | Windows |
 |:--- |:--- |
@@ -196,7 +196,3 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 
 > [!Note]
 > 若要单独自定义任何键，请使用 [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true) 事件。
-
-
-<!-- ====================================================================== -->
-<!-- [Webview2ReferenceDownloadApi]: ./download-api.md "download API | Microsoft Docs" -->

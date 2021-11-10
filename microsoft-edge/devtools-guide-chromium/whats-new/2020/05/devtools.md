@@ -1,18 +1,18 @@
 ---
-description: 在高对比度模式下Windows DevTools，匹配 DevTools 中的键盘快捷方式以Visual Studio Code等。
+description: 在高对比度模式下Windows DevTools，将 DevTools 中的键盘快捷方式Visual Studio Code等。
 title: 'DevTools (Microsoft Edge 84) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 5fd6af5546d9e0f49165de692f00c0389fc07683
-ms.sourcegitcommit: 1e32efb1c9811ec7c65816e938d1a64b1ca5ece6
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 73b297e30f891d4e60541115fb6937490c99f8d6
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "12158514"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170629"
 ---
 <!-- Copyright Kayce Basques
 
@@ -37,7 +37,7 @@ ms.locfileid: "12158514"
 
 ### <a name="use-the-devtools-in-windows-high-contrast-mode"></a>在高对比度模式下Windows DevTools
 
-现在Microsoft Edge开发人员工具在高对比度模式下Windows高对比度模式显示。
+当 Microsoft Edge DevTools 在高对比度模式下时，Windows以高对比度模式显示。
 
 :::image type="complex" source="../../media/2020/05/high-contrast.msft.png" alt-text="在Microsoft Edge模式下使用 DevTools" lightbox="../../media/2020/05/high-contrast.msft.png":::
    在Microsoft Edge模式下使用 DevTools
@@ -46,23 +46,33 @@ ms.locfileid: "12158514"
 [按照说明在设置中打开高对比度Windows。](https://support.microsoft.com/help/4026951/windows-10-turn-high-contrast-mode-on-or-off)  若要在"工具"中打开Microsoft Edge，请选择 `F12` 或 `Ctrl` + `Shift` + `I` 。  DevTools 以高对比度模式显示。
 
 > [!NOTE]
-> 当前Microsoft Edge开发工具在 macOS 上支持Windows高对比度模式。
+> 当前Microsoft Edge开发工具支持 macOS 上的Windows高对比度模式。
 
 Chromium问题[#1048378](https://crbug.com/1048378)
 
 ### <a name="match-keyboard-shortcuts-in-the-devtools-to-visual-studio-code"></a>将 DevTools 中的键盘快捷方式与Visual Studio Code
 
-从[你的反馈](../../../contact.md)和Chromium[](https://bugs.chromium.org/p/chromium/issues/list)问题跟踪器中，Microsoft Edge DevTools 团队了解到你需要在 DevTools 中自定义键盘快捷方式的能力。  在 Microsoft Edge 84 中，你现在能够将 DevTools 中的键盘快捷方式与[Visual Studio Code](https://code.visualstudio.com/)匹配，这只是团队为快捷方式自定义正在处理的功能之一。
+从[你的反馈](../../../contact.md)和Chromium[](https://bugs.chromium.org/p/chromium/issues/list)问题跟踪器中，Microsoft Edge DevTools 团队了解到你需要在 DevTools 中自定义键盘快捷方式的能力。  在 Microsoft Edge 84 中，你现在能够将 DevTools 中的键盘快捷方式与[Visual Studio Code](https://code.visualstudio.com/)匹配，这只是团队为快捷方式自定义所处理的功能之一。
 
 :::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="将 DevTools 中的键盘快捷方式与Visual Studio Code" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
    在Microsoft Edge模式下使用 DevTools
 :::image-end:::
 
-若要试用实验，请设置选择或选择 DevTools 右上角的 Devtools 设置 图标图标，打开 `?` ![ ](../../../media/settings-icon.msft.png) DevTools 应用。  导航到**实验部分**，并选中**启用自定义键盘快捷方式设置选项卡 (重新加载) 。 **  现在重新加载 DevTools，再次设置打开"工具"，然后导航到 **"快捷方式"** 部分。
+若要尝试实验：
 
-在"从预设 (匹配快捷方式) 选择 **"DevTools** ****) 默认选项"，然后选择 **"Visual Studio Code"。**  DevTools 中的键盘快捷方式现在与开发工具中的等效操作Visual Studio Code。
+1. 在 DevTools**** 中，设置选择或选择 `?` DevTools 设置右上角的 ![ "Devtools"图标图标，打开 ](../../../media/settings-icon.msft.png) "开发工具"。
 
-例如，用于暂停或继续运行脚本的键盘快捷方式在 Visual Studio Code[为](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) `F5` 。  使用**DevTools (Default) **预设，DevTools 中的同一快捷方式是，但具有 Visual Studio Code `F8` 预设，该快捷方式现在也是**** `F5` 。
+1. 在实验**部分中**，选中复选框启用**自定义键盘快捷方式设置选项卡 (重新加载) 。 **
+
+1. 重新加载 DevTools。
+
+1. 再次**设置"，** 然后选择 **"快捷方式"** 部分。
+
+1. Click the **Match shortcuts from preset** dropdown， select **DevTools (Default) **， and then select **Visual Studio Code**.  
+
+DevTools 中的键盘快捷方式现在与开发人员工具中的等效操作Visual Studio Code。
+
+例如，用于暂停或继续运行脚本的键盘快捷方式在 Visual Studio Code[为](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) `F5` 。  使用**DevTools (Default) **预设，DevTools 中的同一快捷方式是，但具有 Visual Studio Code 预设，该快捷方式现在也是 `F8` **** `F5` 。
 
 此功能目前作为实验Microsoft Edge 84 中提供，因此请与[团队分享你的](../../../contact.md)反馈！
 
@@ -70,25 +80,25 @@ Chromium问题[#174309](https://crbug.com/174309)
 
 ### <a name="remote-debug-surface-duo-emulators"></a>远程调试 Surface Duo 仿真器
 
-现在，你能够使用开发人员工具的完整功能远程调试[在 Surface Duo](/dual-screen/android/use-emulator)模拟器中Microsoft Edge Web[内容](../../../index.md)。
+现在，你能够使用开发人员工具的完整功能远程调试[在 Surface Duo](/dual-screen/android/use-emulator)仿真器中Microsoft Edge [Web 内容](../../../index.md)。
 
-使用 [Surface Duo 仿真](/dual-screen/android/use-emulator)器，你可以测试 Web 内容在可折叠和双屏幕设备的新类上呈现方式。  仿真器运行 Android 操作系统，并提供[Microsoft Edge Android 应用](https://play.google.com/store/apps/details?id=com.microsoft.emmx)。  在开发人员应用中Microsoft Edge [Web 内容，](https://play.google.com/store/apps/details?id=com.microsoft.emmx)然后使用 Microsoft Edge Tools[调试它](../../../index.md)。
+使用 [Surface Duo 仿真](/dual-screen/android/use-emulator)器，你可以测试 Web 内容在可折叠和双屏幕设备的新类上呈现方式。  仿真器运行 Android 操作系统，并提供[Microsoft Edge Android 应用](https://play.google.com/store/apps/details?id=com.microsoft.emmx)。  在开发人员应用中加载[Microsoft Edge内容，然后](https://play.google.com/store/apps/details?id=com.microsoft.emmx)使用 Microsoft Edge Tools 调试[它](../../../index.md)。
 
 :::image type="complex" source="../../media/2020/05/surface-duo-emulator.msft.png" alt-text="Surface Duo Microsoft Edge上运行的 Surface Duo 应用" lightbox="../../media/2020/05/surface-duo-emulator.msft.png":::
    Surface Duo 仿真程序上的 Microsoft Edge 应用
 :::image-end:::
 
-桌面 `edge://inspect` 实例的页面显示**surfaceD Microsoft Edge Emulator，** 其中列出了在 Surface Duo 仿真器上运行的已打开选项卡或[](https://www.microsoft.com/edge/)[PWA。](../../../../progressive-web-apps-chromium/index.md) [](/dual-screen/android/use-emulator)
+桌面实例的页面显示 `edge://inspect` **SurfaceD Microsoft Edge Emulator，** 其中列出了在[Surface Duo](/dual-screen/android/use-emulator)仿真器上运行的已打开选项卡或[PWA。](../../../../progressive-web-apps-chromium/index.md) [](https://www.microsoft.com/edge/)
 
 :::image type="complex" source="../../media/2020/05/edge-inspect.msft.png" alt-text="edge://inspect 页面在模拟器上运行的 Microsoft Edge 应用程序中显示打开选项卡的列表" lightbox="../../media/2020/05/edge-inspect.msft.png":::
    `edge://inspect` 页面在模拟器上运行的 Microsoft Edge 应用程序中显示打开选项卡的列表
 :::image-end:::
 
-选择要**调试**的选项卡或PWA检查以打开["devTools"Microsoft Edge选项卡](../../../index.md)。  [按照分步指南在 Surface Duo](../../../remote-debugging/surface-duo-emulator.md)模拟器上远程调试 Web 内容。
+选择要**调试**的选项卡或PWA检查以打开["devTools Microsoft Edge"。](../../../index.md)  [按照分步指南在 Surface Duo](../../../remote-debugging/surface-duo-emulator.md)仿真器上远程调试 Web 内容。
 
 ### <a name="resize-the-devtools-drawer-more-easily"></a>更轻松地调整 DevTools 箱的大小
 
-在 Microsoft Edge 83 或更早版本中，你仅能通过将鼠标悬停在"箱"工具栏内来调整[Devtools"](../../../customize/index.md#drawer)箱"的大小。  The Drawer behavely different than the other resize controls for panes in the DevTools where you hover on the border of the pane to resize it.  选择下图可显示调整"箱"大小在版本 83 或更早版本中Microsoft Edge。
+在 Microsoft Edge 83 或更早版本，你仅能通过将鼠标悬停在"箱"工具栏内来调整[Devtools"](../../../customize/index.md#drawer)箱"的大小。  The Drawer behavely different than the other resize controls for panes in the DevTools where you hover on the border of the pane to resize it.  选择下图可显示调整"箱"大小在 83 或 Microsoft Edge 早期版本中Microsoft Edge。
 
 :::image type="complex" source="../../media/2020/05/drawer-83.msft.png" alt-text="调整 83 中 DevTools Microsoft Edge" lightbox="../../media/2020/05/drawer-83.msft.gif":::
    调整 83 中 DevTools Microsoft Edge
@@ -96,7 +106,7 @@ Chromium问题[#174309](https://crbug.com/174309)
 
 <!--todo:  create png that represents the gif information  -->
 
-从 Microsoft Edge 84 开始，现在通过将鼠标悬停在"箱"边框上，可以调整"箱"的大小。  此更改将调整 DevTools 箱大小的行为与调整 DevTools 中其他窗格的大小的方式保持一致。  选择下图以显示 84 中正在Microsoft Edge大小。
+从 Microsoft Edge 84 开始，通过将鼠标悬停在"箱"边框上，可以调整"箱"的大小。  此更改将调整 DevTools 箱大小的行为与调整 DevTools 中其他窗格的大小的方式保持一致。  选择以下图像，在 84 中显示Microsoft Edge大小。
 
 :::image type="complex" source="../../media/2020/05/drawer-84.msft.png" alt-text="调整 84 中 DevTools Microsoft Edge" lightbox="../../media/2020/05/drawer-84.msft.gif":::
    调整 84 中 DevTools Microsoft Edge
@@ -134,7 +144,7 @@ Chromium 问题 [#963183](https://crbug.com/963183)
 
 ### <a name="fix-site-issues-with-the-new-issues-tool-in-the-devtools-drawer"></a>修复开发人员工具箱中新问题工具的网站问题
 
-DevTools"箱"中新增的"问题"工具是为了帮助减少控制台的通知疲劳和**混乱。** ****  目前，**控制台**是网站开发人员、库、框架和网站Microsoft Edge记录消息、警告和错误的中心位置。  "**问题**"工具以结构化、聚合且可操作的方式聚合来自浏览器的警告、指向 Microsoft Edge DevTools 中受影响资源的链接，并提供有关如何修复问题的指南。  随着时间的推移，问题工具（而不是控制台）Microsoft Edge中显示越来越多的警告，这应该**** 有助于减少控制台中的混乱 **。** ****
+DevTools"箱"中新增的"问题"工具是为了帮助减少控制台的通知疲劳和**混乱。** ****  目前，**控制台**是网站开发人员、库、框架Microsoft Edge记录消息、警告和错误的中心位置。  "**问题**"工具以结构化、聚合且可操作的方式聚合来自浏览器的警告、指向 Microsoft Edge DevTools 中受影响的资源的链接，并提供有关如何修复问题的指南。  随着时间的推移，问题工具（而不是控制台）Microsoft Edge中显示越来越多的警告，这有助于减少控制台**** 中的混乱 **。** ****
 
 To get started， navigate to [Find and fix problems using the Issues tool](../../../issues/index.md).
 
@@ -172,7 +182,7 @@ Chromium问题[#1040025](https://crbug.com/1040025)
 
 相反，选择 **"录制** ![ "图标， ](../../../media/record-icon.msft.png) 手动重新加载页面，等待页面加载，然后停止录制。
 
-如果显示，Microsoft Edge DevTools 未从 Microsoft Edge 中的内部分析数据 `Total Blocking Time: Unavailable` 获取所需Microsoft Edge。
+如果 `Total Blocking Time: Unavailable` 显示，Microsoft Edge DevTools 未从内部分析数据获取Microsoft Edge。
 
 :::image type="complex" source="../../media/2020/05/tbt.msft.png" alt-text="性能面板记录的页脚中的总阻止时间信息" lightbox="../../media/2020/05/tbt.msft.png":::
    性能面板记录的页脚中的总 **阻止时间** 信息
@@ -187,7 +197,7 @@ Chromium问题[#1054381](https://crbug.com/1054381)
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->
 <!--todo:  add link layout shifts (WebdevCls) when section is live  -->
 
-选择 **"布局班次** "事件以在"摘要"窗格中显示布局 **班次的详细信息** 。  将鼠标悬停在 **"移动位置** "和"移动到 **"字段上** ，可直观地显示发生布局移动的位置。
+选择 **"布局班次** "事件以在"摘要"窗格中显示布局 **班次的详细信息** 。  将鼠标悬停在 **"移动位置** "和" **移动到** "字段上，可直观地显示发生布局切换的位置。
 
 :::image type="complex" source="../../media/2020/05/cls.msft.png" alt-text="布局转换的详细信息" lightbox="../../media/2020/05/cls.msft.png":::
    布局转换的详细信息
@@ -266,7 +276,7 @@ Elements **** 工具中的"**属性**"窗格已弃用。  改为 `console.dir($0
 
 应用快捷方式可帮助用户在 Web 应用中快速启动常见任务或推荐任务。  应用快捷方式菜单只针对安装在用户的桌面或移动设备上的渐进式 [Web](../../../../progressive-web-apps-chromium/index.md) 应用显示。
 
-<!--For more information, navigate to [Get things done quickly with app shortcuts][WebdevAppShortcuts].  -->
+<!-- For more information, see [Get things done quickly with app shortcuts](https://alphabet-dev/app-shortcuts). -->
 
 <!--todo:  add link Get things done quickly with app shortcuts (WebdevAppShortcuts) when section is live -->
 
@@ -282,17 +292,8 @@ Elements **** 工具中的"**属性**"窗格已弃用。  改为 `console.dir($0
 
 
 <!-- ====================================================================== -->
-<!--[DevtoolsWhatsNew201901Inspect]: ../../../whats-new/2019/01/devtools.md#inspect "Detailed tooltips in Inspect Mode - What's New In DevTools (Edge 73) | Microsoft Docs"  -->
-<!--[WebdevAppShortcuts]: https://alphabet-dev/app-shortcuts "Get things done quickly with app shortcuts | alphabet-dev"  -->
-<!--[WebdevCls]: https://alphabet-dev/cls "Cumulative Layout Shift (CLS) | alphabet-dev"  -->
-<!--[WebdevControlFocus]: https://alphabet-dev/control-focus-with-tabindex "Control focus with tabindex | alphabet-dev"  -->
-<!--[WebdevMeasureSpeedLabField]: https://alphabet-dev/how-to-measure-speed#lab-data-vs-field-data "Lab data vs Field data - How to measure speed? | alphabet-dev"  -->
-<!--[WebdevLabelsText]: https://alphabet-dev/labels-and-text-alternatives "Labels and text alternatives | alphabet-dev"  -->
-<!--[WebdevTbt]: https://alphabet-dev/tbt "Total Blocking Time (TBT) | alphabet-dev"  -->
-<!--[WebdevCoreWebVitals]: https://alphabet-dev/vitals#core-web-vitals "Core Web Vitals | alphabet-dev"  -->
-
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-84)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-84) ，由技术编写者 [、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse (创作) 。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -3,7 +3,7 @@ description: Microsoft Edge 隐私白皮书
 title: Microsoft Edge 隐私白皮书
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/15/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 隐私， 白皮书， 隐私白皮书， 信任， Microsoft edge 隐私， 浏览器隐私， 隐私设置
@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: b5e1c385e2e2b770243397f56371e01e70b55ccd
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 64da62f1a05c2d2b246186717a5cc427a3239be5
+ms.sourcegitcommit: a6990df8668359546bdeb0184e6d6594d97bd355
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155631"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "12158616"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书
 
@@ -538,7 +538,7 @@ Microsoft Edge 购物功能要求与必应共享 Cookie 信息。  例如，Cook
 
 当你应用优惠券时，Cookie 将存储在你的设备上以正确分配优惠券提供商。  仅在成功在购物车应用赠券后，Microsoft 信任的赠券提供商才保存 Cookie。  在应用优惠券后，有关优惠券成功与否的信息将发送回 Microsoft 购物服务，以帮助我们了解哪些优惠券成功或失败。
 
-发送到 Microsoft 购物服务的数据通过 HTTPS 发送，其中包含随机生成的标识符，该标识符会更改每个优惠券查找。 Microsoft Edge与必应购物的合作伙伴一起提供与用户查询相关的优惠券。 在某些情况下，Microsoft 可能会获得使用优惠券的收入。 是否可以接收收入份额付款不会纳入向用户显示的优惠券排名。
+发送到 Microsoft 购物服务的数据通过 HTTPS 发送，其中包含随机生成的标识符，该标识符会更改每个优惠券查找。 Microsoft Edge 与必应购物合作，提供与用户查询相关的优惠券。 在某些情况下，Microsoft 可能会获得使用优惠券的收入。 是否可以接收收入份额付款不会纳入向用户显示的优惠券排名。
 
 :::image type="complex" source="./media/shopping.png" alt-text="购物和优惠券" lightbox="./media/shopping.png":::
    购物和优惠券
@@ -554,6 +554,10 @@ Microsoft Edge 购物功能要求与必应共享 Cookie 信息。  例如，Cook
 **InPrivate** 浏览使用启动 **InPrivate** 会话的配置文件的购物设置。
 
 InPrivate 浏览使用启动 InPrivate 会话的配置文件的购物设置。
+
+
+<!-- ====================================================================== -->
+## <a name="sign-in-and-identity"></a>登录和标识
 
 登录到Microsoft Edge提供了许多功能，可提高浏览器的效率。 若要在首次启动Microsoft Edge时无缝登录，它会尝试从操作系统检测你的身份。 如果Microsoft Edge从操作系统检测到你的身份，但你不希望继续登录到Microsoft Edge，请导航到 `edge://settings/profiles` 并注销或删除配置文件。
 
@@ -674,6 +678,20 @@ Microsoft Edge 不会在未经你允许的情况下翻译网页。 如果确实�
 
 
 <!-- ====================================================================== -->
+## <a name="travel"></a>旅行
+
+当你执行与旅行相关的联机活动时，Microsoft Edge 可帮助你找到有关旅行的建议。  为了帮助你在联机规划旅行时查找建议，Microsoft Edge 从 Microsoft 旅行服务将旅行域列表下载到客户端。
+
+在你访问网站时，Microsoft Edge 在本地确定你所在的网站是否为旅行域。  如果确认该网站是与旅行相关的网页，Microsoft Edge 则将域、航班日期、出发和到达位置和乘客计数以及有关 Microsoft Edge 和 Cookie（如果允许 Cookie）的信息发送到服务。  此数据不包括任何个人身份信息，并通过 HTTPS 发送。
+
+Microsoft Edge 旅行功能需要与必应共享 Cookie 信息。  例如，可以将 Cookie 用于调试、欺诈检测和分析。  在浏览器中访问 Bing.com 并更新必应页面上的任何设置时，Bing.com 将在浏览器中创建 Cookie 并将信息存储在 Cookie 中。  此 Cookie 在 Bing.com 页面之间共享，并由 Microsoft Edge 将此 Cookie 发送到 Microsoft 旅行服务，以保持你的体验一致。
+
+默认情况下，旅行服务处于启用状态。  如果要在 Microsoft Edge 中更改“旅行”设置，请执行以下操作：
+1. 导航到 `edge://settings/privacy`。
+2. 在页面底部的“**服务**”部分中，禁用设置“**在 Microsoft Edge 中显示旅行建议**”。
+
+
+<!-- ====================================================================== -->
 ## <a name="web-apps-and-pinned-sites"></a>Web 应用和已固定网站
 
 Microsoft Edge使你能够安装网站开发人员创建的 Web 应用，并固定你最喜欢的网站。
@@ -713,10 +731,6 @@ Windows 信息保护 (WIP) 有助于防止意外泄漏公司信息。 它仅适�
 ## <a name="thank-you"></a>谢谢！
 
 Microsoft Edge 可通过 [Chromium](https://www.chromium.org) 开源项目和其他开源软件实现。  若要查看所有软件积分，请导航到 `edge://credits`。  [Google Chrome 隐私白皮书](https://www.google.com/chrome/privacy/whitepaper.html)被用作收集 Chromium 开源项目相关信息的来源。
-
-Microsoft Edge 可通过 [Chromium](https://www.chromium.org) 开源项目和其他开源软件实现。  若要查看所有软件积分，请导航到 `edge://credits`。  [Google Chrome 隐私白皮书](https://www.google.com/chrome/privacy/whitepaper.html)被用作收集 Chromium 开源项目相关信息的来源。
-
-<!-- Are we removing mentions of Chromium? Such as above? -->
 
 
 <!-- ====================================================================== -->

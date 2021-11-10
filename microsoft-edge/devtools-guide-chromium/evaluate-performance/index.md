@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 301b184c91fd6560af17d68d584fbcd2bbe0cd85
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 6c919cd7b03a5a00bf67d7c20bf0da64fc86aab4
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155610"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170622"
 ---
 <!-- Copyright Kayce Basques
 
@@ -94,7 +94,7 @@ ms.locfileid: "12155610"
 
 运行优化版本的页面时，蓝色图标会移动得更快。  为什么？  两种版本都应该在相同的时间内将图标移动相同的空间。  在 "性能" 面板中进行录制，了解如何检测未优化版本中的性能瓶颈。
 
-1.  在 DevTools 中 **，选择"** 记录 (![ 记录 ](../media/record-icon.msft.png)) 。  页面运行时，DevTools 将捕获效果指标。
+1.  在 DevTools 中， **选择"记录** (![ 记录 ](../media/record-icon.msft.png)) 。  页面运行时，DevTools 将捕获效果指标。
 
     :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="配置文件页面" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
        配置文件页面
@@ -208,9 +208,10 @@ ms.locfileid: "12155610"
     :::image-end:::
 
     > [!NOTE]
-    > 这段代码的问题在于，在每个动画帧中，它都会改变每个图标的样式，然后查询每个图标在页面上的位置。  由于样式发生变化，而浏览器不知道每个图标的位置是否发生变化，所以要重新布局图标，才能计算出新的位置。  <!--  > To learn more, navigate to [Avoid forced synchronous layouts][RenderingAvoidSynchronousLayouts].  -->
-
-<!-- todo: add layouts section when available -->
+    > 这段代码的问题在于，在每个动画帧中，它都会改变每个图标的样式，然后查询每个图标在页面上的位置。  由于样式发生变化，而浏览器不知道每个图标的位置是否发生变化，所以要重新布局图标，才能计算出新的位置。
+    <!--
+    > To learn more, see [Avoid forced synchronous layouts](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing#avoid_forced_synchronous_layouts).
+    -->
 
 这有许多需要学习。  现在，已经为分析运行时性能的基本工作流程打下了坚实的基础。  太棒了。
 
@@ -219,52 +220,36 @@ ms.locfileid: "12155610"
 使用刚学到的工作流和工具，在演示中选择“**优化**”以打开优化的代码，执行另一个性能记录，然后分析结果。  从改进的帧速率到“**主**”节中绘制图表事件的减少，应用的优化版本执行的工作要少得多，从而产生更好的性能。
 
 > [!NOTE]
-> 即使优化版本也有不足，因为它可以操纵每个图标的 `top` 属性。  更好的方法是保留仅影响合成的属性。  <!--  > For more information, navigate to [Use transform and opacity changes for animations][RenderingCompositor].  -->
-
-<!--todo: add rendering section when available -->
+> 即使优化版本也有不足，因为它可以操纵每个图标的 `top` 属性。  更好的方法是保留仅影响合成的属性。  <!--  > For more information, see [Use transform and opacity changes for animations](https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count#use_transform_and_opacity_changes_for_animations). todo: add rendering section when available -->
 
 
 <!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.
-To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->
+To learn more, navigate to [Measure Performance With The RAIL Model](https://developers.google.com/web/fundamentals/performance/rail). -->
 
-为了更加熟悉**性能**工具，需要多加练习。  试着对页面进行剖析并分析结果。  如果你对结果有任何疑问，请使用发送反馈图标，选择**** `Alt` + `Shift` + `I` (Windows、Linux) 、选择 (macOS) 或 `Option` + `Shift` + `I` [DevTools](https://twitter.com/intent/tweet?text=@EdgeDevTools)团队的推文。  如果可能，请包括屏幕截图或指向可重现页面的链接。
+为了更加熟悉**性能**工具，需要多加练习。  试着对页面进行剖析并分析结果。  如果你对结果有任何疑问，请使用发送反馈图标，选择**** `Alt` + `Shift` + `I` (Windows、Linux) 、选择 (macOS) 或 `Option` + `Shift` + `I` [DevTools](https://twitter.com/intent/tweet?text=@EdgeDevTools)团队推文。  如果可能，请包括屏幕截图或指向可重现页面的链接。
 
 :::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="Microsoft Edge 开发人员工具中的**反馈**图标" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
    Microsoft Edge DevTools 中的**发送反馈**图标
 :::image-end:::
 
-<!-- To really become an expert in runtime performance, you must learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance Overview][RenderingPerformance].  [The Anatomy Of A Frame][FrameAnatomy] dives into even more detail.  -->
+<!-- To really become an expert in runtime performance, you must learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance Overview](https://developers.google.com/web/fundamentals/performance/rendering).  [The Anatomy Of A Frame](https://aerotwist.com/blog/the-anatomy-of-a-frame/) dives into even more detail. -->
 
 最后，可通过多种方法来改善运行时性能。  本文重点介绍了一个特定的动画瓶颈，有针对性地参观性能面板，但这只是可能遇到的众多瓶颈之一。  <!--  The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:  -->
 
 <!--
-*   [Optimizing JS Execution][RenderingOptimizeJS]
-*   [Reduce The Scope And Complexity Of Style Calculations][RenderingReduceScope]
-*   [Avoid Large, Complex Layouts And Layout Thrashing][RenderingAvoidThrashing]
-*   [Simplify Paint Complexity And Reduce Paint Areas][RenderingSimplifyPaint]
-*   [Stick To Compositor-Only Properties And Manage Layer Count][RenderingManageLayers]
-*   [Debounce Your Input Handlers][RenderingDebounceInputs]
+*   [Optimizing JS Execution](https://developers.google.com/web/fundamentals/performance/rendering/optimize-javascript-execution)
+*   [Reduce The Scope And Complexity Of Style Calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)
+*   [Avoid Large, Complex Layouts And Layout Thrashing](/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing)
+*   [Simplify Paint Complexity And Reduce Paint Areas](/web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas)
+*   [Stick To Compositor-Only Properties And Manage Layer Count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count)
+*   [Debounce Your Input Handlers](/web/fundamentals/performance/rendering/debounce-your-input-handlers)
 -->
 
 
 <!-- ====================================================================== -->
-<!--[InPrivate]: https://support.microsoft.com/help/4026200/microsoft-edge-browse-inprivate "Browse InPrivate in Microsoft Edge"  -->
-<!--[FrameAnatomy]: https://aerotwist.com/blog/the-anatomy-of-a-frame  -->
-<!--[RAIL]: /web/fundamentals/performance/rail  -->
-<!--[RenderingAvoidSynchronousLayouts]: /web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing#avoid_forced_synchronous_layouts  -->
-<!--[RenderingAvoidThrashing]: /web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing  -->
-<!--[RenderingCompositor]: /web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count#use_transform_and_opacity_changes_for_animations  -->
-<!--[RenderingDebounceInputs]: /web/fundamentals/performance/rendering/debounce-your-input-handlers  -->
-<!--[RenderingManageLayers]: /web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count  -->
-<!--[RenderingOptimizeJS]: /web/fundamentals/performance/rendering/optimize-javascript-execution  -->
-<!--[RenderingPerformance]: /web/fundamentals/performance/rendering  -->
-<!--[RenderingReduceScope]: /web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations  -->
-<!--[RenderingSimplifyPaint]: /web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas  -->
-<!--[StackOverflowAlphabetBrowserDevtools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser - Stack Overflow"  -->
-
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)

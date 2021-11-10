@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: ce5b6d9c71180c924721b0a8445f978b70b4a3be
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 9f5825f59d661b6912c79d71a0a7b7c2be2cf05c
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156422"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170685"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -43,9 +43,9 @@ ms.locfileid: "12156422"
 | 调用堆栈 | 对于具有 **子事件的事件**，表示每个事件类别所花时间。 |
 | CPU 时间 | 记录的事件占用的 CPU 时间。 |
 | 详细信息 | 有关事件的其他详细信息。 |
-| 持续时间 (时间戳)  | 事件及其所有子项完成所用时间;timestamp 是事件发生的时间，与录制开始的时间相关。 |
+| 持续时间 (时间戳)  | 事件及其所有子项完成所用时间;timestamp 是事件发生的时间，相对于录制的开始时间。 |
 | 自时间 | 事件在没有任何子事件的情况下所发生时间。 |
-| 使用的堆大小 | 记录事件时应用程序使用的内存量，以及自上次采样 (使用的堆 (+/-) 的增量变化。 |
+| 使用的堆大小 | 记录事件时应用程序使用的内存量，以及自上次采样以来 (+/-) 使用的堆大小变化。 |
 
 <!--todo: add nested and child events (timelinetool) section when available -->
 
@@ -57,7 +57,7 @@ ms.locfileid: "12156422"
 
 | 事件 | 描述 |
 |:--- |:--- |
-| 分析 HTML |  Microsoft Edge HTML 分析算法。 |
+| 分析 HTML |  Microsoft Edge运行 HTML 分析算法。 |
 | 完成加载 |  网络请求已完成。 |
 | 接收数据 |  已接收请求的数据。  有一个或多个接收数据事件。 |
 | 接收响应 |  来自请求的初始 HTTP 响应。 |
@@ -69,7 +69,7 @@ ms.locfileid: "12156422"
 |:--- |:--- |
 | 资源 | 所请求资源的 URL。 |
 | 预览 | 仅预览请求的资源 (图像) 。 |
-| Request 方法 | HTTP 方法，用于请求 (或 `GET` ，例如 `POST`) 。 |
+| Request 方法 | 用于请求请求的 HTTP (`GET` 或 `POST` ，例如) 。 |
 | 状态代码 | HTTP 响应代码。 |
 | MIME 类型 | 所请求资源的 MIME 类型。 |
 | 编码数据长度 | 请求的资源的长度（以字节为单位）。 |
@@ -126,8 +126,8 @@ ms.locfileid: "12156422"
 |:--- |:--- |
 | 布局无效 | 对于布局记录，是导致布局失效的代码堆栈跟踪。 |
 | 需要布局的节点 | 对于布局记录，表示在启动中继之前标记为需要布局的节点数。  这些节点通常是开发人员代码无效的节点，以及中继根的向上路径。 |
-| 布局树大小 | 对于布局记录，中继根节点下的节点总数 (启动中继Microsoft Edge节点) 。 |
-| 布局范围 | 可能的值 `Partial` (重新布局边界是 DOM 或 的一 `Whole document`) 。 |
+| 布局树大小 | 对于布局记录，中继根目录下的节点总数 (启动中继Microsoft Edge节点) 。 |
+| 布局范围 | 可能的值 (重布局边界是 DOM 或) `Partial` 的一部分 `Whole document` 。 |
 | 受影响的元素 | 对于"重新计算样式记录"，为受样式重新计算影响的元素数。 |
 | 样式无效 | 对于"重新计算样式"记录，提供导致样式无效的代码的堆栈跟踪。 |
 
@@ -153,11 +153,8 @@ ms.locfileid: "12156422"
 
 
 <!-- ====================================================================== -->
-<!--[EvaluatePerformanceTimelineTool]: timeline-tool "How to Use the Timeline Tool"  -->
-
-
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference)由[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和[Flavio 一](https://developers.google.com/web/resources/contributors#flavio-copes) (Full Stack Developer) 创作。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference) ，由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和 [Flavio Stack Developer](https://developers.google.com/web/resources/contributors#flavio-copes) (创作) 。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

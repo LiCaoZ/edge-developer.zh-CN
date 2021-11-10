@@ -7,12 +7,12 @@ ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 426419bf7f95947a5482cc90c9d4103a5bc61195
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 5a28e5276897e13d27d372f85397098764a754e5
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155687"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170321"
 ---
 <!-- Copyright Kayce Basques
 
@@ -45,12 +45,12 @@ ms.locfileid: "12155687"
 
 若要停止记录请求，请完成以下步骤。
 
-1.  在" **网络"** 工具上，选择"停止 **记录** 网络日志 (![ 停止记录网络 ](../media/record-on-icon.msft.png) 日志) 。  它变为灰色，表示开发人员工具不再记录请求。
-1.  选择 `Control` + `E` (Windows、Linux) 或 `Command` + `E` (macOS) ，而**网络**工具已对焦。
+1.  在" **网络"** 工具上，选择"停止 **记录** 网络日志 (![ 停止记录网络日志 ](../media/record-on-icon.msft.png)) 。  它变为灰色，表示开发人员工具不再记录请求。
+1.  在 `Control` + `E` (Windows网络) 时 (选择) 、Linux) 或 `Command` + `E`) macOS。 ****
 
 ### <a name="clear-requests"></a>清除请求
 
-选择 **" (** ![ 清除 ](../media/clear-requests-icon.msft.png) **) "** 工具上的"清除"以清除"请求"表中的所有请求。
+选择 **" (** ![ 清除 ](../media/clear-requests-icon.msft.png) **) "** 工具上的"清除请求"以清除"请求"表中的所有请求。
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="“清除”按钮" lightbox="../media/network-network-clear-button.msft.png":::
    “**清除**”按钮
@@ -113,13 +113,13 @@ ms.locfileid: "12155687"
 如果要在其他开发工具面板中工作时禁用缓存，请使用“网络条件”抽屉。
 
 1.  打开“**网络条件**”抽屉。
-1.  打开或 ** (") "复选框** 。
+1.  打开或 (禁用 **) "复选框** 。
 
 <!--todo: add network condition section when available -->
 
 ### <a name="manually-clear-the-browser-cache"></a>手动清除浏览器缓存
 
-若要随时手动清除浏览器缓存，请打开上下文菜单 (右键单击"请求") 中的任意位置，然后选择"清除浏览器缓存 **"。**
+若要随时手动清除浏览器缓存，请打开上下文菜单 (右键单击") "表中的任意位置，然后选择"清除浏览器缓存 **"。**
 
 :::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="选择“清除浏览器缓存”" lightbox="../media/network-network-clear-browser-cache.msft.png":::
    选择“**清除浏览器缓存**”
@@ -127,9 +127,7 @@ ms.locfileid: "12155687"
 
 ### <a name="emulate-offline"></a>模拟脱机
 
-一种称为“[渐进式 Web 应用](../progressive-web-apps/index.md)”的新 web 应用程序，，可在**服务人员**的帮助下脱机运行。  在构建这种类型的应用程序时，快速模拟没有数据连接的设备可能会很有用。
-
-<!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
+一种称为“[渐进式 Web 应用](../progressive-web-apps/index.md)”的新 web 应用程序，，可在**服务人员**的帮助下脱机运行。<!-- [service workers](/web/fundamentals/getting-started/primers/service-workers) --> 在构建这种类型的应用程序时，快速模拟没有数据连接的设备可能会很有用。
 
 选择"**无限制**"下拉菜单，在 **"预设**"下搜索，然后选择"脱机"**** 以模拟脱机网络体验。
 
@@ -160,7 +158,7 @@ ms.locfileid: "12155687"
 
 ### <a name="manually-clear-browser-cookies"></a>手动清除浏览器 Cookie
 
-若要随时手动清除浏览器 Cookie，请将鼠标悬停在"请求"表中的任意位置，打开上下文菜单 (右键单击") "，然后选择"清除浏览器**Cookie"。**
+若要随时手动清除浏览器 Cookie，请将鼠标悬停在"请求"表中的任意位置，打开上下文菜单" (右键单击") "，然后选择"清除浏览器**Cookie"。**
 
 :::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="选择“清除浏览器 Cookie”" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
    选择“**清除浏览器 Cookie**”
@@ -187,11 +185,11 @@ ms.locfileid: "12155687"
     :::image type="complex" source="images/network-conditions-user-agent-client-hints.msft.png" alt-text="设置用户代理客户端提示" lightbox="images/network-conditions-user-agent-client-hints.msft.png":::
         设置用户代理客户端提示 :::image-end:::
 
-1. 接受"自定义 **..."** 的默认值，或者从下拉列表中选择预定义的浏览器和设备。
+1. 接受"自定义 **..."** 默认值，或者从下拉列表中选择预定义的浏览器和设备。
 1. 对于任一选项，按如下方式设置用户代理客户端提示。
     * **品牌**和**版本**，如*Edge*和*92。* 选择 **+ 添加品牌** 以添加多个品牌和版本对。
     * **完整浏览器版本**，例如*92.0.1111.0。*
-    * **平台**和**版本**，如*Windows*和*10.0。*
+    * **平台**和**版本**，如*Windows* *和 10.0。*
     * **体系结构** ，如 *x86*。
     * **设备型号** ，例如 *，一些设备型号*。
 
@@ -201,7 +199,7 @@ ms.locfileid: "12155687"
 1. 选择**更新**。
 1. 若要验证更改，请选择" **控制台"** 并键入 `navigator.userAgentData` 。 根据需要展开结果以查看用户代理数据更改。
 
-还可以在模拟移动设备的 Microsoft Edge[中设置用户代理客户端Microsoft Edge。](../device-mode/index.md)
+还可以在"模拟移动设备"的 Microsoft Edge[中设置用户代理客户端Microsoft Edge。](../device-mode/index.md)
 
 
 <!-- ====================================================================== -->
@@ -224,14 +222,14 @@ ms.locfileid: "12155687"
 
 | 属性 | 详细信息 |
 |:--- | :--- |
-| `domain` | 仅显示指定域中的资源。  可以使用通配符来 `*` () 多个域。  例如，`*.com` 显示以 `.com` 结尾的所有域名中的资源。  开发工具在自动完成下拉菜单中填充找到的所有域。 |
+| `domain` | 仅显示指定域中的资源。  可以使用通配符来 () `*` 多个域。  例如，`*.com` 显示以 `.com` 结尾的所有域名中的资源。  开发工具在自动完成下拉菜单中填充找到的所有域。 |
 | `has-response-header` | 显示包含指定 HTTP 响应头的资源。  开发工具用找到的所有响应头填充“自动完成”下拉列表。 |
 | `is` | 用 `is:running` 查找 `WebSocket` 资源。 |
 | `larger-than` | 以字节为单位显示大于指定大小的资源。  将值设置为 `1000` 相当于将值设置为 `1k`。 |
 | `method` | 显示通过指定的 HTTP 方法类型检索的资源。  开发工具用找到的所有 HTTP 方法填充下拉列表。 |
 | `mime-type` | 显示指定 MIME 类型的资源。  开发工具用找到的所有 MIME 类型填充下拉列表。 |
-| `mixed-content` | 显示所有混合内容 () `mixed-content:all` 或只显示当前 `mixed-content:displayed` () 。 |
-| `scheme` | 显示通过未保护的 HTTP () 或受保护的 `scheme:http` HTTPS `scheme:https` () 。 |
+| `mixed-content` | 显示所有混合内容 () `mixed-content:all` 或只显示当前 () 。 `mixed-content:displayed` |
+| `scheme` | 显示通过未保护的 HTTP () 或受保护的 `scheme:http` HTTPS () 。 `scheme:https` |
 | `set-cookie-domain` | 显示具有与指定值匹配的 `Domain` 属性的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 域填充“自动完成”。 |
 | `set-cookie-name` | 显示具有名称与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 名称填充“自动完成”。 |
 | `set-cookie-value` | 显示具有值与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 值填充“自动完成”。 |
@@ -361,7 +359,7 @@ ms.locfileid: "12155687"
 
 ### <a name="sort-by-activity-phase"></a>按活动阶段排序
 
-若要更改"瀑布"对请求的排序方式，请将鼠标悬停在"请求"表的标题上，打开上下文菜单 (右键单击") "，将鼠标悬停在****"瀑布"上，然后选择以下选项之一。
+若要更改"瀑布"对请求的排序方式，请将鼠标悬停在"请求"表的标题上，打开上下文菜单 (右键单击") "，将鼠标悬**** 停在"瀑布"上，然后选择以下选项之一。
 
 :::row:::
    :::column span="1":::
@@ -407,7 +405,7 @@ ms.locfileid: "12155687"
 这些描述假设每个选项按最短到最长进行排列。  选择“**瀑布**”列的标题以反转顺序。
 
 :::image type="complex" source="../media/network-network-waterfall-total-duration.msft.png" alt-text="按总持续时间排序“瀑布”" lightbox="../media/network-network-waterfall-total-duration.msft.png":::
-   按总持续时间对瀑布进行排序 (每个条的较浅部分是等待所花的时间，较暗部分是下载字节) 
+   按总持续时间对瀑布进行排序 (每个条的较浅部分是等待所花的时间，较暗的部分是下载字节) 
 :::image-end:::
 
 
@@ -499,7 +497,7 @@ ms.locfileid: "12155687"
 
 #### <a name="add-custom-columns"></a>添加自定义列
 
-若要向"请求"表添加自定义列，请将鼠标悬停在"请求"表的标题上，打开上下文菜单" (右键单击") "，然后选择"响应标头管理****  >  **标题列"。**
+若要向"请求"表添加自定义列，请将鼠标悬停在"请求"表的标题上，打开上下文菜单" (右键单击") "，然后选择"响应标头管理****  >  **标题**列"。
 
 :::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="向“请求”表添加自定义列" lightbox="../media/network-network-requests-add-custom.msft.png":::
    向“请求”表添加自定义列
@@ -619,10 +617,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 1.  在“请求”表的“**名称**”列下，选择请求的 URL。
 1.  选择“**Cookie**”面板。
 
-<!--For more information about each of the columns, navigate to [Fields][ManageDataCookiesFields].  -->
-
-<!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->
-<!--TODO: add link when section is available -->
+<!--For more information about each of the columns, navigate to [Fields](manage-data/cookies#fields).  TODO: add link when section is available -->
 
 :::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="“Cookie”面板" lightbox="../media/network-network-resources-cookies.msft.png":::
    “Cookie”面板
@@ -848,10 +843,7 @@ init();
 1.  选择“**另存为具有内容的 HAR**”。  开发工具将自打开开发工具以来发生的所有请求保存到 HAR 文件中。  无法筛选请求。  也无法保存一个请求。
 
 保存 HAR 文件后，可以将其导入开发工具进行分析。  只需将 HAR 文件拖放到“请求”表中。
-<!--For more information, navigate to also [HAR Analyzer][HARAnalyzer].  -->
-
-<!--[HARAnalyzer]: https://toolbox.alphabetapps.com/apps/har_analyzer  -->
-<!--Todo: add section link when content is available  -->
+<!--For more information, see also [HAR Analyzer](https://toolbox.alphabetapps.com/apps/har_analyzer)  Todo: add section link when content is available  -->
 
 :::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="选择“另存为具有内容的 HAR”" lightbox="../media/network-network-requests-save-har-content.msft.png":::
    选择“**另存为具有内容的 HAR**”
@@ -936,7 +928,7 @@ init();
 
 ### <a name="copy-formatted-response-json-to-the-clipboard"></a>将格式化响应 JSON 复制到剪贴板
 
-选择网络请求并导航到“**标头**”窗格。  若要复制响应的 JSON 值，请导航**** 到"请求有效负载"，将鼠标悬停在 JSON 响应内容上，打开上下文菜单 (右键单击") "，然后选择"复制**值**"。
+选择网络请求并导航到“**标头**”窗格。  要复制响应的 JSON 值，请导航**** 到"请求有效负载"，将鼠标悬停在 JSON 响应内容上，打开上下文菜单 (右键单击") "，然后选择"复制**值"。**
 
 :::row:::
    :::column span="":::
@@ -971,7 +963,7 @@ init();
 ### <a name="hide-the-filters-pane"></a>隐藏“筛选器”窗格
 
 默认情况下，开发工具显示“**筛选器**”窗格。
-选择 **" (** ![ 筛选器 ](../media/filter-icon.msft.png)) 隐藏它。
+选择 **"** 筛选器 (![ 筛选器 ](../media/filter-icon.msft.png)) 隐藏它。
 
 :::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="“隐藏筛选器”按钮" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    “隐藏筛选器”按钮
@@ -997,11 +989,8 @@ init();
 
 
 <!-- ====================================================================== -->
-<!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions | Microsoft Docs"  -->
-
-<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/network/reference)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/network/reference) ，由技术编写者 [、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse (创作) 。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

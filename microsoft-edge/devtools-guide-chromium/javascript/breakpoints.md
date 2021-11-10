@@ -1,18 +1,18 @@
 ---
-description: 了解在 Microsoft Edge 开发工具中暂停代码的所有方法。
-title: 如何在 Microsoft Edge 开发工具中使用断点暂停代码
+description: 了解在 DevTools 中暂停Microsoft Edge的所有方法。
+title: 使用断点暂停代码
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: 4cd9cb7709b4f9f3c870df808f111e048317d437
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: 532ef432f0394fbcec95eb9b2fa20432b1c8e0cf
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156331"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170608"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,11 +27,11 @@ ms.locfileid: "12156331"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="how-to-pause-your-code-with-breakpoints-in-microsoft-edge-devtools"></a>如何在 Microsoft Edge 开发工具中使用断点暂停代码
+# <a name="pause-your-code-with-breakpoints"></a>使用断点暂停代码
 
 使用断点暂停 JavaScript 代码。  本文介绍了 DevTools 中提供的每种断点类型，以及何时使用以及如何设置每种类型。
 
-有关使用现有网页的介绍性教程，请导航到在开发人员工具中Microsoft Edge [JavaScript 入门](index.md)。
+有关使用现有网页的介绍性教程，请导航到调试 [JavaScript 入门](index.md)。
 
 
 <!-- ====================================================================== -->
@@ -105,7 +105,7 @@ console.log('c');
 
 *   选中条目旁边的复选框以禁用该断点。
 *   将鼠标悬停在某个项上并打开上下文菜单 (右键单击) 删除该断点。
-*   将鼠标悬停在"**** 断点"窗格中的任意位置并打开上下文菜单 (右键单击") "以停用所有断点、禁用所有断点或删除所有断点。  禁用所有断点等效于取消选中每个断点。  取消激活所有断点将指示开发工具忽略所有代码行断点，但也要保持启用状态，以使每个断点都与重新激活每个断点时的状态相同。
+*   将鼠标悬停在"**** 断点"窗格中的任意位置，然后打开上下文菜单 (右键单击") "停用所有断点、禁用所有断点或删除所有断点。  禁用所有断点等效于取消选中每个断点。  取消激活所有断点将指示开发工具忽略所有代码行断点，但也要保持启用状态，以使每个断点都与重新激活每个断点时的状态相同。
 
     :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="“断点”窗格中的已停用断点" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
        “**断点**”窗格中的已停用断点
@@ -178,7 +178,7 @@ console.log('c');
 想要暂停引发已捕获或未捕获异常的代码行时，请使用异常断点。
 
 1.  选择“**源**”工具。
-1.  选择 **"在异常时暂停" ("** ![ 在异常时 ](../media/pause-on-exceptions-icon.msft.png) 暂停) "。  图标在启用时变为蓝色。
+1.  选择 **"在异常时暂停" ("** ![ 在异常时暂停 ](../media/pause-on-exceptions-icon.msft.png)) "。  图标在启用时变为蓝色。
 
     :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="“因异常暂停”按钮" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
        “**因异常暂停**”按钮

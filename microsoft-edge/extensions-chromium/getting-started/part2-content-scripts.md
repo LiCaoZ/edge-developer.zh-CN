@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， 扩展
-ms.openlocfilehash: f88476efe57a6f8057fa359a396adc39bddc2483
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: adf0d4775aed5fc814c7695c4e104b60262cdc74
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156625"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170587"
 ---
 # <a name="create-an-extension-tutorial-part-2"></a>创建扩展教程第 2 部分
 
@@ -67,7 +67,7 @@ ms.locfileid: "12156625"
    popup.html扩展图标后显示
 :::image-end:::
 
-<!--![popup.html display after selecting the Extension icon][ImagePart2Popupdialog]  -->
+<!--![popup.html display after selecting the Extension icon] -->
 
 2.  更新策略以在浏览器选项卡顶部显示图像
 
@@ -131,7 +131,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 
 原因是你使用 元素的 属性将图像 `src` `img` 注入内容页面。  内容页在运行扩展的线程不同的唯一线程上运行。  必须将静态图像文件公开为 Web 资产，它必须能够正常工作。
 
-在文件中添加另 `manifest.json` 一项以声明该图像可供所有浏览器选项卡使用。  在添加即将 (的内容脚本声明时，应该可以看到下面的完整 `manifest.json`) 。
+在文件中添加另 `manifest.json` 一项以声明该图像可供所有浏览器选项卡使用。  添加内容脚本声明 (应在下面的完整文件中看到该条目，如下所示 `manifest.json`) 。
 
 ```json
 "web_accessible_resources": [
@@ -180,7 +180,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 
 在你要注入的内容脚本中，计划使用 jQuery `$` () 。  你添加了 jQuery 的缩小版本，并作为 放入扩展包 `lib\jquery.min.js` 中。  这些内容脚本在单个沙盒中运行，这意味着注入到页面中的 jQuery `popup.js` 不会与内容共享。
 
-请记住，即使浏览器选项卡上的 JavaScript 在加载的网页上运行，注入的任何内容也无法访问它。  注入的 JavaScript 只需访问该浏览器选项卡中加载的实际 DOM。
+请记住，即使浏览器选项卡上的 JavaScript 在加载的网页上运行，注入的任何内容也无法访问它。  注入的 JavaScript 仅有权访问该浏览器选项卡中加载的实际 DOM。
 
 7. 添加内容脚本消息侦听器
 
@@ -215,7 +215,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 *   第一个脚本行将一个必须作为类分配给元素的节动态插入到 DOM **\<style\>** `slide-image` 标头 `img` 中。
 *   第二个脚本行在浏览器选项卡的 正下方追加一个元素，该元素分配了 类，并将 `img` `body` 作为该 `slide-image` `imageDivId` 图像元素的 ID。
-*   第三个脚本行添加一个涵盖整个图像的事件，允许用户选择图像上的任意位置，并且该图像将从页面中删除 (它是事件侦听器 `click`) 。
+*   第三个脚本行添加一个涵盖整个图像的事件，允许用户选择图像上的任意位置，并且该图像会从页面中删除 (并且它是事件侦听器 `click`) 。
 
 8. 添加功能以在选中时删除显示的图像
 
@@ -225,7 +225,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
    popup.html扩展图标后显示
 :::image-end:::
 
-<!--![popup.html display after selecting the Extension icon][ImagePart2Popupdialog]  -->
+<!-- ![popup.html display after selecting the Extension icon] -->
 
 选择该按钮 `Display` 时，将获取下面的内容。  如果在图像上的任意位置选择，该图像元素将被删除，选项卡页折叠 `stars.jpeg` 回最初显示的内容。
 
