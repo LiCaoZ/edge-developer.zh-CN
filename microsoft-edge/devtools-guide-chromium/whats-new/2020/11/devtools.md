@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 7d09cd44a81ff4fb905e36343481e6cf519dade8
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 18844c7618240d0aca564607194a5fa9d8bebf56
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156954"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170678"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -235,15 +235,13 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 <!-- ====================================================================== -->
 ## <a name="announcements-from-the-chromium-project"></a>来自 Chromium 项目的公告
 
-[!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
+[!INCLUDE [Chromium What's New note](../../includes/chromium-whats-new-note.md)]
 
 ### <a name="new-css-angle-visualization-tools"></a>全新 CSS 角度可视化工具
 
-现在，DevTools 可以更好地支持 CSS 角度调试。  如果页面上 HTML 元素应用 CSS 角度，**样式** 工具中该角度旁边会显示一个时钟图标。  若要切换时钟覆盖层，请选择时钟图标。  若要更改角度，请选择时钟中的任何位置或拖动指针。  若要更改角度值，还可使用鼠标和键盘快捷方式。  <!--  To learn more, navigate to [Angle Clock][DevtoolsCssReferenceChangeAngleValueWithAngleClock].  -->  若要在 Chromium 开源项目中查看此功能实时更新，请导航到“问题” [1126178](https://crbug.com/1126178) 和 [1138633](https://crbug.com/1138633)。
+现在，DevTools 可以更好地支持 CSS 角度调试。  如果页面上 HTML 元素应用 CSS 角度，**样式** 工具中该角度旁边会显示一个时钟图标。  若要切换时钟覆盖层，请点击时钟图标。  若要更改角度，请点击时钟中的任何位置或拖动指针。  若要更改角度值，还可使用鼠标和键盘快捷方式。  若要了解更多信息，请参阅[使用角度时钟更改角度值](../../../css/reference.md#change-angle-value-with-the-angle-clock)。  若要在 Chromium 开源项目中查看此功能的实时更新，请参阅问题 [1126178](https://crbug.com/1126178) 和 [1138633](https://crbug.com/1138633)。
 
-<!--todo:  add link when css angle clock section exists.  -->
-
-示例使用了以下 CSS 角度。
+以下 CSS 角度用于示例：
 
 ```css
 background: linear-gradient(100deg, lightblue, pink);
@@ -360,11 +358,6 @@ background: linear-gradient(100deg, lightblue, pink);
 
 
 <!-- ====================================================================== -->
-<!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  -->
-<!--  [DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: ../../../experimental-features/index.md#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  -->
-<!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: ../../../css/reference.md#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS features reference | Microsoft Docs"  -->
-
-
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-88)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。

@@ -41,24 +41,22 @@
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
         - name: 入门
           items:
-            - name: 适合初学者
-              items:
-                - name: 打开开发工具
-                  href: devtools-guide-chromium/open/index.md
-                - name: HTML 和 DOM 入门
-                  href: devtools-guide-chromium/beginners/html.md
-                - name: 开始查看和更改 DOM
-                  href: devtools-guide-chromium/dom/index.md
-                - name: CSS 入门
-                  href: devtools-guide-chromium/beginners/css.md
-                - name: 查看和更改 CSS 入门
-                  href: devtools-guide-chromium/css/index.md
-                - name: 调试 JavaScript 入门
-                  href: devtools-guide-chromium/javascript/index.md
-                - name: 开始分析运行时性能
-                  href: devtools-guide-chromium/evaluate-performance/index.md
-                - name: 查看页面资源
-                  href: devtools-guide-chromium/resources/index.md
+            - name: 打开开发工具
+              href: devtools-guide-chromium/open/index.md
+            - name: HTML 和 DOM 入门
+              href: devtools-guide-chromium/beginners/html.md
+            - name: 开始查看和更改 DOM
+              href: devtools-guide-chromium/dom/index.md
+            - name: CSS 入门
+              href: devtools-guide-chromium/beginners/css.md
+            - name: 查看和更改 CSS 入门
+              href: devtools-guide-chromium/css/index.md
+            - name: 调试 JavaScript 入门
+              href: devtools-guide-chromium/javascript/index.md
+            - name: 分析运行时性能入门
+              href: devtools-guide-chromium/evaluate-performance/index.md
+            - name: 查看页面资源
+              href: devtools-guide-chromium/resources/index.md
             - name: 使用工作区编辑文件
               href: devtools-guide-chromium/workspaces/index.md
             - name: 检查网络活动
@@ -67,64 +65,68 @@
               href: devtools-guide-chromium/speed/get-started.md
             - name: 远程调试
               items:
-                - name: Android 设备远程调试入门
+                - name: 远程调试 Android 设备入门
                   href: devtools-guide-chromium/remote-debugging/index.md
-                - name: 开始使用 Surface Duo 客户端远程调试
+                - name: 远程调试 Surface Duo 入门
                   href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
-                - name: Windows 设备远程调试入门
+                - name: 远程调试 Windows 设备入门
                   href: devtools-guide-chromium/remote-debugging/windows.md
-                - name: Android WebViews 远程调试入门
+                - name: 远程调试 Android WebViews 入门
                   href: devtools-guide-chromium/remote-debugging/webviews.md
         - name: 操作步骤
           items:
-            - name: 辅助功能
+            - name: 测试辅助功能
               items:
                 - name: DevTools 中的辅助功能测试功能
                   href: devtools-guide-chromium/accessibility/reference.md
                 - name: 使用 DevTools 的辅助功能测试概述
                   href: devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md
-                - name: 问题工具
+                - name: 使用辅助技术导航开发工具
+                  href: devtools-guide-chromium/accessibility/navigation.md
+                - name: 图像替换文字
                   items:
                     - name: 自动测试网页中的辅助功能问题
                       href: devtools-guide-chromium/accessibility/test-issues-tool.md
-                - name: 检查工具
+                - name: 键盘支持
                   items:
-                    - name: 使用"检查"工具将鼠标悬停在网页上以检测辅助功能问题
-                      href: devtools-guide-chromium/accessibility/test-inspect-tool.md
                     - name: 使用 Tab 和 Enter 键检查键盘支持
                       href: devtools-guide-chromium/accessibility/test-tab-enter-keys.md
                     - name: 分析边栏菜单中键盘焦点的缺失
                       href: devtools-guide-chromium/accessibility/test-analyze-no-focus-indicator.md
                     - name: 分析窗体中键盘支持缺失
                       href: devtools-guide-chromium/accessibility/test-analyze-no-keyboard-support.md
-                - name: '"辅助功能"选项卡'
-                  items:
-                    - name: 检查辅助功能树是否支持键盘和屏幕阅读器
-                      href: devtools-guide-chromium/accessibility/test-accessibility-tree.md
                     - name: 使用源订单查看器测试键盘支持
                       href: devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer.md
-                    - name: 使用"辅助功能"选项卡测试辅助功能
-                      href: devtools-guide-chromium/accessibility/accessibility-tab.md
-                - name: '"样式"选项卡'
+                - name: 文本对比度
                   items:
-                    - name: 验证所有元素状态可访问性
-                      href: devtools-guide-chromium/accessibility/test-inspect-states.md
                     - name: 使用颜色选取器测试文本颜色对比度
                       href: devtools-guide-chromium/accessibility/color-picker.md
-                - name: 呈现工具
-                  items:
+                    - name: 验证所有元素状态可访问性
+                      href: devtools-guide-chromium/accessibility/test-inspect-states.md
                     - name: 检查深色主题和浅主题的对比度问题
                       href: devtools-guide-chromium/accessibility/test-dark-mode.md
+                - name: 屏幕阅读器支持
+                  items:
+                    - name: 使用"检查"工具将鼠标悬停在网页上以检测辅助功能问题
+                      href: devtools-guide-chromium/accessibility/test-inspect-tool.md
+                    - name: 检查辅助功能树是否支持键盘和屏幕阅读器
+                      href: devtools-guide-chromium/accessibility/test-accessibility-tree.md
+                    - name: 使用"辅助功能"选项卡测试辅助功能
+                      href: devtools-guide-chromium/accessibility/accessibility-tab.md
+                - name: 视觉缺陷
+                  items:
                     - name: 验证页面是否由色盲用户可用
                       href: devtools-guide-chromium/accessibility/test-color-blindness.md
                     - name: 验证页面是否可借助模糊视图
                       href: devtools-guide-chromium/accessibility/test-blurred-vision.md
                     - name: 验证页面是否可用，同时关闭 UI 动画
                       href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
+                - name: 在缩小时可用
+                  items:
+                    - name: 验证网页布局在缩小时是否可用
+                      href: devtools-guide-chromium/accessibility/narrow.md
                 - name: 使用 Lighthouse 测试辅助功能
                   href: devtools-guide-chromium/accessibility/lighthouse.md
-                - name: 使用辅助技术导航开发工具
-                  href: devtools-guide-chromium/accessibility/navigation.md
                 - name: 跟踪哪些元素有焦点
                   href: devtools-guide-chromium/accessibility/focus.md
             - name: 命令菜单
@@ -155,9 +157,7 @@
                   href: devtools-guide-chromium/device-mode/geolocation.md
                 - name: 模拟设备方向
                   href: devtools-guide-chromium/device-mode/orientation.md
-            - name: IE 模式
-              href: devtools-guide-chromium/ie-mode/index.md
-            - name: Javascript 疑难解答
+            - name: JavaScript 调试
               items:
                 - name: 使用调试程序功能
                   href: devtools-guide-chromium/javascript/reference.md
@@ -167,15 +167,11 @@
                   href: devtools-guide-chromium/javascript/source-maps.md
                 - name: 将内容脚本标记为库代码
                   href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
-            - name: 内存故障排除
-              items:
-                - name: 内存术语
-                  href: devtools-guide-chromium/memory-problems/memory-101.md
-                - name: 修复内存问题
-                  href: devtools-guide-chromium/memory-problems/index.md
+            - name: 在 IE 模式下使用 DevTools
+              href: devtools-guide-chromium/ie-mode/index.md
             - name: 性能故障排除
               items:
-                - name: 性能分析引用
+                - name: 性能功能参考
                   href: devtools-guide-chromium/evaluate-performance/reference.md
                 - name: 时间线事件参考
                   href: devtools-guide-chromium/evaluate-performance/performance-reference.md
@@ -187,6 +183,8 @@
               href: devtools-guide-chromium/shortcuts/index.md
         - name: 工具
           items:
+            - name: 关于面板和工具箱工具
+              href: devtools-guide-chromium/about-panel-drawer-tools.md
             - name: 3D 视图
               href: devtools-guide-chromium/3d-view/index.md
             - name: 动画
@@ -253,7 +251,7 @@
               href: devtools-guide-chromium/media-panel/index.md
             - name: 内存
               items:
-                - name: 内存概述
+                - name: 修复内存问题
                   href: devtools-guide-chromium/memory-problems/index.md
                 - name: 记录堆快照
                   href: devtools-guide-chromium/memory-problems/heap-snapshots.md
@@ -261,6 +259,8 @@
                   href: devtools-guide-chromium/rendering-tools/js-runtime.md
                 - name: 在时间线上使用分配检测
                   href: devtools-guide-chromium/memory-problems/allocation-profiler.md
+                - name: 内存术语
+                  href: devtools-guide-chromium/memory-problems/memory-101.md
             - name: 网络
               items:
                 - name: 概述
@@ -271,8 +271,6 @@
               items:
                 - name: 分析运行时性能
                   href: devtools-guide-chromium/rendering-tools/index.md
-                - name: 日程表事件模式
-                  href: devtools-guide-chromium/evaluate-performance/performance-reference.md
             - name: 性能监视器
               href: devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
             - name: 远程设备
@@ -293,8 +291,6 @@
               items:
                 - name: 源工具概述
                   href: devtools-guide-chromium/sources/index.md
-                - name: 在 Visual Studio Code 中的打开源文件
-                  href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
                 - name: 替代
                   href: devtools-guide-chromium/javascript/overrides.md
                 - name: 代码片段
@@ -518,7 +514,7 @@
               href: webdriver-chromium/index.md
             - name: 功能和 EdgeOptions
               href: webdriver-chromium/capabilities-edge-options.md
-            - name: 正在验证 Microsoft Edge 的 Selenium 工具下载
+            - name: 验证 Microsoft Edge 的 Selenium 工具下载
               href: webdriver-chromium/verify-selenium-tools.md
         - name: webhint
           href: test-and-automation/webhint-aux-node.md
@@ -530,11 +526,11 @@
           href: web-platform/ie-to-microsoft-edge-redirection.md
         - name: Microsoft Edge 中的跟踪防护
           href: web-platform/tracking-prevention.md
-        - name: 正在从网站检测 Microsoft Edge
+        - name: 从网站检测 Microsoft Edge
           href: web-platform/user-agent-guidance.md
         - name: 自定义“密码显示”按钮
           href: web-platform/password-reveal.md
-        - name: 正在使用用户代理客户端提示检测 Windows 11
+        - name: 使用用户代理客户端提示检测 Windows 11
           href: web-platform/how-to-detect-win11.md
     - name: Microsoft Edge IDE 集成
       items:
@@ -556,9 +552,9 @@
       items:
         - name: 辅助功能概述
           href: accessibility/index.md
-        - name: 设计易于访问的网站
+        - name: 设计可访问的网站
           href: accessibility/design.md
-        - name: 构建易于访问的网站
+        - name: 构建可访问的网站
           href: accessibility/build/index.md
         - name: ARIA 和 UI 自动化
           href: accessibility/build/ARIA-and-UI-Automation.md
