@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， 窗口控件覆盖， API
-ms.openlocfilehash: 4c9d8819bdf232e5f2d46475318f743fa289f9e6
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: d9d63bbcac53a0d592031c00ee8270184801b193
+ms.sourcegitcommit: 29208d0ce55dfeee7dad383bf1ae9dd96a590020
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156198"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "12176637"
 ---
 # <a name="display-content-in-the-title-bar"></a>在标题栏中显示内容
 
@@ -21,13 +21,13 @@ ms.locfileid: "12156198"
 
 默认情况下，应用区域从保留的标题栏区域正下方开始。
 
-:::image type="content" source="../media/my-tracks-titlebar.png" alt-text="The default Windows app title bar shown on the My Tracks demo PWA." lightbox="../media/my-tracks-titlebar.png":::
+:::image type="content" source="../media/my-tracks-titlebar.png" alt-text="&quot;我的Windows&quot;演示栏上显示的默认应用标题PWA。" lightbox="../media/my-tracks-titlebar.png":::
 
 能够显示标题栏通常位于其中的内容可以帮助 PWA 感觉更加本机。
 
 许多桌面应用程序Visual Studio Code、Microsoft Teams或Microsoft Edge已执行过此操作。
 
-:::image type="content" source="../media/vscode-titlebar.png" alt-text="VS Code标题栏区域中显示内容。" lightbox="../media/vscode-titlebar.png":::
+:::image type="content" source="../media/vscode-titlebar.png" alt-text="Visual Studio Code标题栏区域中显示内容。" lightbox="../media/vscode-titlebar.png":::
 
 窗口控件覆盖 API 允许你在应用的整个图面区域上显示 Web 内容，将关键系统所需的窗口控件移动到覆盖层，并让你的内容保持清除此覆盖。
 
@@ -100,13 +100,13 @@ ms.locfileid: "12156198"
 }
 ```
 
-知道覆盖的位置以及它的大小很重要，因为它可能并不总是位于同一侧 (例如，它位于 macOS 的左侧和 Windows) 的右侧，并且可能并不总是相同大小。
+了解覆盖的位置以及它的大小很重要，因为它可能并不总是位于同一侧 (例如，它位于 macOS 的左侧和 Windows) 的右侧，并且可能并不总是相同大小。
 
 
 <!-- ====================================================================== -->
 ## <a name="make-regions-of-your-app-drag-handlers-for-the-window"></a>为窗口创建应用拖动处理程序的区域
 
-隐藏标题栏时，只有系统关键窗口控件保持可见 (最大化、最小化、关闭以及应用信息按钮) ，这意味着用户移动应用的空间非常少。
+当标题栏隐藏时，只有系统关键窗口控件 (最大化、最小化、关闭以及应用信息按钮) ，这意味着用户很少能够四处移动应用。
 
 您可以使用 CSS `-webkit-app-region` 属性为用户提供更多拖动应用程序的方法。 例如，如果你有自己的标题栏，你可以将其转换为窗口拖动处理程序。
 
@@ -162,9 +162,9 @@ if ('windowControlsOverlay' in navigator) {
 <!-- ====================================================================== -->
 ## <a name="demo-pwa"></a>演示PWA
 
-My Tracks 是一PWA窗口控件覆盖功能的应用演示应用。
+My Tracks 是PWA窗口控件覆盖功能的应用演示应用。
 
-* [在"管理"中](#enable-the-feature-in-your-app)Microsoft Edge。
+* [在"管理"](#enable-the-feature-in-your-app)中Microsoft Edge。
 * 转到 ["我的跟踪"](https://captainbrosset.github.io/mytracks/) 并安装应用。
 * 从应用 **标题栏中选择** 隐藏标题栏按钮。
 
@@ -172,7 +172,7 @@ My Tracks 是一PWA窗口控件覆盖功能的应用演示应用。
 
 :::image type="content" source="../media/my-tracks-draggable-titlebar.png" alt-text="地图的顶部区域可用于移动窗口。" lightbox="../media/my-tracks-draggable-titlebar.png":::
 
-此应用的源代码可以在"我的跟踪"库GitHub[访问](https://github.com/captainbrosset/mytracks)。
+可以在"我的跟踪"存储库上访问此应用的[GitHub代码](https://github.com/captainbrosset/mytracks)。
 
 * [manifest.json](https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json)源文件声明应用使用窗口控件覆盖功能。
 * 文件 [overlay.js](https://github.com/captainbrosset/mytracks/blob/main/src/overlay.js) 使用 `navigator.windowControlsOverlay` 对象。
