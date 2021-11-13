@@ -8,28 +8,28 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、edge、ICoreWebView2、ICoreWebView2Controller、Selenium、Microsoft Edge Driver
-ms.openlocfilehash: 7d71444ed704a086d5345fe3036c82306945a5fa
-ms.sourcegitcommit: 54f9566aa935fb853215c9b6f995fa0c98f3261f
+ms.openlocfilehash: 45208b80745974c61e358b5867be29b28eebe60d
+ms.sourcegitcommit: 1778d99be7de1fb2f5fda50b0891415922dc5b38
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "12103487"
+ms.lasthandoff: 11/13/2021
+ms.locfileid: "12177043"
 ---
-# <a name="automate-and-test-webview2-apps-with-microsoft-edge-driver"></a>使用驱动程序自动化和测试 WebView2 Microsoft Edge应用
+# <a name="automate-and-test-webview2-apps-with-microsoft-edge-driver"></a>使用驱动程序自动执行和测试 WebView2 Microsoft Edge
 <!-- Should this article be titled:
 # Automate and test WebView2 with Microsoft Edge Driver, Selenium, and WebDriver
 this filename is webdriver.md, should the title include "WebDriver"?
 -->
 
-本文介绍如何通过使用 Selenium 框架实现浏览器测试自动化，使用 Microsoft Edge 驱动程序自动执行和测试 WebView2 应用。
+本文介绍如何使用 Selenium 框架实现浏览器测试自动化，通过 Microsoft Edge 驱动程序自动化和测试 WebView2 应用。
 
 本文提供了有关使用 Selenium 框架和 C#的说明，但您可以使用任何支持 WebDriver 的库、框架和编程语言。  若要使用除 Selenium 外的其他 WebDriver 测试框架完成相同的任务，请参考您所选择的框架的官方文档。
 
-若要为 WebView2 应用创建模拟用户交互的自动测试，可以使用Microsoft Edge驱动程序。  Microsoft EdgeDriver 是 Microsoft 对 W3C [WebDriver 协议的](https://www.w3.org/TR/webdriver2)实现。  W3C WebDriver 协议允许程序控制 Web 浏览器的行为。
+若要为 WebView2 应用创建模拟用户交互的自动测试，可以使用Microsoft Edge驱动程序。  Microsoft Edge驱动程序是 Microsoft 对 W3C [WebDriver 协议的](https://www.w3.org/TR/webdriver2)实现。  W3C WebDriver 协议允许程序控制 Web 浏览器的行为。
 
 测试作者编写使用 WebDriver 命令告诉浏览器执行特定操作的测试。  Microsoft Edge驱动程序接收这些命令，然后要求浏览器执行请求的操作。  Microsoft Edge驱动程序支持自动执行 Microsoft Edge 浏览器和 WebView2 应用。
 
-有关 WebDriver 协议的关系，Microsoft Edge驱动程序作为该协议的实现，以及 Selenium 测试框架，请参阅[WebDriver 概述](../../webdriver-chromium/index.md#relationship-between-webdriver-and-other-software)。
+有关 WebDriver 协议之间的关系，Microsoft Edge驱动程序作为该协议的实现，以及 Selenium 测试框架，请参阅[WebDriver 概述](../../webdriver-chromium/index.md#relationship-between-webdriver-and-other-software)。
 
 
 <!-- ====================================================================== -->
@@ -45,12 +45,12 @@ this filename is webdriver.md, should the title include "WebDriver"?
 <!-- ====================================================================== -->
 ## <a name="step-2-install-microsoft-edge-driver"></a>步骤 2：安装Microsoft Edge驱动程序
 
-按照说明安装驱动程序[Microsoft Edge驱动程序](../../webdriver-chromium/index.md#download-microsoft-edge-driver)。  Microsoft EdgeDriver 是 Selenium 自动化和测试 WebView2 所需的特定于浏览器的驱动程序。
+按照说明安装驱动程序[Microsoft Edge驱动程序](../../webdriver-chromium/index.md#download-microsoft-edge-driver)。  Microsoft Edge驱动程序是 Selenium 自动化和测试 WebView2 所需的特定于浏览器的驱动程序。
 
 确保驱动程序的版本Microsoft Edge你的应用使用的 WebView2 运行时的版本相匹配。  若要使 WebView2API 示例正常工作，请确保你的 WebView2 运行时版本大于或等于最新 WebView2 SDK 版本的受支持版本。
 
-*  若要查找最新的 WebView2 SDK 版本，请导航到 [WebView2 SDK 的发行说明](../release-notes.md)。
-*  若要了解当前具有的 WebView2 运行时版本，请导航到 `edge://settings/help` 。
+*  若要查找最新的 WebView2 SDK 版本，请参阅 [WebView2 SDK 发行说明](../release-notes.md)。
+*  若要了解你当前拥有哪个版本的 WebView2 运行时，请转到 `edge://settings/help` 。
 
 
 <!-- ====================================================================== -->
@@ -58,11 +58,11 @@ this filename is webdriver.md, should the title include "WebDriver"?
 
 此时，你已安装 WebView2 运行时，生成了 WebView2 项目，并Microsoft Edge驱动程序。  接下来，开始使用 Selenium，如下所示。
 
-1.  首先，在**C# .NET Framework**新建Visual Studio**项目**。  选择 **右** 下角的"下一步"继续。
+1.  首先，在 C# .NET Framework**新建一****Visual Studio。**  选择 **右** 下角的"下一步"继续。
 
     :::image type="content" source="../media/webdriver/new-project.png" alt-text="创建新项目" lightbox="../media/webdriver/new-project.png":::
 
-1.  为项目指定**Project**名称，将其保存到首选**位置**，然后选择"创建 **"。**
+1.  为**项目指定Project**名称，将其保存到首选**位置**，然后选择"创建 **"。**
 
     :::image type="content" source="../media/webdriver/app-create.png" alt-text="配置新项目" lightbox="../media/webdriver/app-create.png":::
 
@@ -70,7 +70,7 @@ this filename is webdriver.md, should the title include "WebDriver"?
 
     :::image type="content" source="../media/webdriver/start-app.png" alt-text="新建项目" lightbox="../media/webdriver/start-app.png":::
 
-1.  接下来，将 Selenium 添加到项目中;使用 Selenium.WebDriver NuGet安装 Selenium，如下所示。  若要下载 Selenium.WebDriver NuGet程序包，请在 Visual Studio**中选择**"Project管理**** NuGet  >  **程序包"。**
+1.  接下来，将 Selenium 添加到项目中;使用 Selenium.WebDriver NuGet安装 Selenium，如下所示。  若要下载 Selenium.WebDriver NuGet程序包，请在"Visual Studio"中选择Project**** 管理NuGet****  >  **包"。**
 
 1.  选择" **浏览"** 选项卡。 将显示以下屏幕。
 
@@ -82,13 +82,13 @@ this filename is webdriver.md, should the title include "WebDriver"?
 
 1.  在 `Selenium.WebDriver` 搜索**栏中键入**，然后从结果中选择**Selenium.WebDriver。**
 
-1.  在右侧的详细信息窗口中，确保"**版本**"设置为**4.0.0-beta4**或更高版本，然后选择"安装 **"。**  NuGet将 Selenium 下载到你的计算机。
+1.  在右侧的详细信息窗口中，确保"**版本**"设置为**4.0.0**或更高版本，然后选择"安装 **"。**  NuGet将 Selenium 下载到你的计算机。
 
     :::image type="content" source="../media/webdriver/nuget.png" alt-text="管理NuGet包" lightbox="../media/webdriver/nuget.png":::
 
-    若要了解有关 Selenium.WebDriver NuGet程序包的详细信息，请导航到[Selenium.WebDriver 4.0.0-beta4。](https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-beta4)
+    若要了解有关 Selenium.WebDriver 程序包NuGet，请参阅[Selenium.WebDriver。](https://www.nuget.org/packages/Selenium.WebDriver)
 
-1.  `OpenQA.Selenium.Edge`通过添加文件 `using OpenQA.Selenium.Edge;` 开头的 语句 `Program.cs` 来使用。
+1.  `OpenQA.Selenium.Edge`通过添加文件 `using OpenQA.Selenium.Edge;` 开头的 语句来使用 `Program.cs` ：
 
     ```csharp
     using OpenQA.Selenium.Edge;
@@ -108,7 +108,7 @@ this filename is webdriver.md, should the title include "WebDriver"?
 
 决定是否使用"启动"或"附加"方法将 Selenium 配置为驱动 WebView2。
 
-* "启动"方法：在某些情况下，适合让驱动程序Microsoft Edge启动 WebView2 应用。
+* "启动"方法：在某些情况下，让驱动程序处理Microsoft Edge WebView2 应用是合适的。
 Microsoft Edge驱动程序启动 WebView2 应用，并自动附加到应用创建的第一个可用的 WebView2 实例。
 
 * "附加"方法：在其他方案中，适合将Microsoft Edge驱动程序附加到正在运行的 WebView2 实例。  在驱动程序之外启动Microsoft Edge，然后将Microsoft Edge驱动程序附加到正在运行的 WebView2 实例。  此"附加"方法适用于与"启动"方法不兼容的 WebView2 应用。
@@ -116,22 +116,22 @@ Microsoft Edge驱动程序启动 WebView2 应用，并自动附加到应用创�
 ### <a name="approach-1-letting-microsoft-edge-driver-launch-your-webview2-app"></a>方法 1：让Microsoft Edge驱动程序启动 WebView2 应用
 <!-- preferred phrase -->
 
-如果你有一个用于创建单个 WebView2 实例且该实例在启动后立即处于活动状态的简单应用，可以使用"启动"方法;使用[步骤 4a：让Microsoft Edge驱动程序启动 WebView2 应用](#step-4a-letting-microsoft-edge-driver-launch-your-webview2-app)。
+如果你有一个用于创建单个 WebView2 实例且该实例在启动后立即处于活动状态的简单应用，可以使用"启动"方法;使用[步骤 4a：Microsoft Edge驱动程序启动 WebView2 应用](#step-4a-letting-microsoft-edge-driver-launch-your-webview2-app)。
 
 在此方案中，有一个 WebView2 实例，可在启动时使用，而无需在任何本机 UI 中导航。
 
 ### <a name="approach-2-attaching-microsoft-edge-driver-to-a-running-webview2-app"></a>方法 2：将Microsoft Edge驱动程序附加到正在运行的 WebView2 应用
 <!-- preferred phrase -->
 
-如果你有任何不符合上述"启动"方案的情况，你应该将 Microsoft Edge 驱动程序附加到正在运行的 WebView2 实例 (而不是让 Microsoft Edge Driver 处理 WebView2 启动) ;使用[步骤 4b：将Microsoft Edge驱动程序附加到正在运行的 WebView2 应用](#step-4b-attaching-microsoft-edge-driver-to-a-running-webview2-app)。
+如果你有任何不符合上述"启动"方案的情况，你应该将 Microsoft Edge 驱动程序附加到正在运行的 WebView2 实例 (而不是让 Microsoft Edge 驱动程序处理 WebView2 启动) ;使用步骤[4b：](#step-4b-attaching-microsoft-edge-driver-to-a-running-webview2-app)将 Microsoft Edge 驱动程序附加到正在运行的 WebView2 应用。
 
 一些不符合"启动"方案的方案示例如下：
 *  创建 WebView2 实例之前，你需要在一些本机 UI 中导航。
 *  你的应用将创建多个 WebView2 实例，并且你想要附加到特定实例。
 
-在这种情况下，我们建议附加到 WebView2 的特定实例，因为让 Microsoft Edge 驱动程序启动 WebView2 应用仅适用于相对简单的方案。  当Microsoft Edge启动你的应用时，它会自动附加到创建的第一个 WebView2 实例，如果未找到 WebView2 实例，它将失败。
+在这种情况下，我们建议附加到 WebView2 的特定实例，因为让 Microsoft Edge 驱动程序启动 WebView2 应用仅适用于相对简单的方案。  当Microsoft Edge启动你的应用时，它会自动附加到所创建的第一个 WebView2 实例，如果未找到 WebView2 实例，它将失败。
 
-无论使用"启动"还是"附加"方法，都必须下载 Microsoft Edge Driver，并确保版本与应用使用的 WebView2 运行时版本匹配。  配置 WebDriver 框架应用程序的初始步骤 (如 Selenium) "启动"与"附加"方法不同。
+无论使用"启动"还是"附加"方法，都必须下载 Microsoft Edge Driver，并确保版本与应用使用的 WebView2 运行时版本匹配。  配置 WebDriver 框架应用程序的初始 (如 Selenium) "与"附加"方法不同。
 
 完成启动应用或附加到 WebView2 实例的初始步骤后，你将能够使用任何受支持的 WebDriver 命令与该 WebView2 实例进行交互。
 
@@ -154,15 +154,14 @@ Microsoft Edge驱动程序启动 WebView2 应用，并自动附加到应用创�
 
     接下来，我们将添加执行以下操作的代码：
 
-    *   将 `edgeOptions` 选项和 Chromium 配置为使用 WebView2 和 `UseChromium` `UseWebView` `true` 。
+    *   将 `edgeOptions` 选项设置为 ，以配置为使用 `UseWebView` WebView2。 `true`
     *   设置为 `edgeOptions.BinaryLocation` WebView2 应用二进制文件的文件路径。
     *   使用 `EdgeDriver` 创建对象 `edgeOptions` 。
 
 1.  复制以下代码并将其粘贴到下方 `edgeOptions` ：
 
     ```csharp
-    //Set edgeOptions to use Chromium and WebView2
-    edgeOptions.UseChromium = true;
+    //Set edgeOptions to use WebView2
     edgeOptions.UseWebView = true;
 
     //Set the BinaryLocation to the filepath of the WebView2API Sample runtime
@@ -172,7 +171,7 @@ Microsoft Edge驱动程序启动 WebView2 应用，并自动附加到应用创�
 
 1.  在以上代码中，指定项目运行时的正确文件路径和Microsoft Edge驱动程序运行时。
 
-    `EdgeDriver` 现在已配置为驱动项目中的 WebView2。  例如，如果你使用的是 **WebView2API 示例**，你的代码现在可以通过运行 命令导航到 ，如下一个代码列表 `https://microsoft.com` `e.Url = @"https://www.microsoft.com";` 所示。
+    `EdgeDriver` 现在已配置为驱动项目中的 WebView2。  例如，如果你使用的是 **WebView2API 示例**，则代码现在可以通过运行 命令转到 ，如下一个代码列表 `https://microsoft.com` `e.Url = @"https://www.microsoft.com";` 所示。
 
 1.  验证 Selenium 能否驱动 WebView2。  为此，请在此行上设置一个断点 `e.Url = @"https://www.microsoft.com";` ，然后运行该项目。
 
@@ -196,15 +195,15 @@ Microsoft Edge驱动程序启动 WebView2 应用，并自动附加到应用创�
 ## <a name="step-4b-attaching-microsoft-edge-driver-to-a-running-webview2-app"></a>步骤 4b：将Microsoft Edge驱动程序附加到正在运行的 WebView2 应用
 <!-- description: Automating a WebView2 instance in an already-running application by attaching Edge Driver to the WebView2 app. -->
 
-本部分介绍如何将驱动程序Microsoft Edge一个已运行的 WebView2 实例。  如果还没有单个 WebView2 实例，或者 WebView2 实例需要在某些本机 UI 中导航，请使用此部分和方法。
+本部分介绍如何将Microsoft Edge驱动程序附加到已在运行的 WebView2 实例。  如果还没有单个 WebView2 实例，或者 WebView2 实例需要在某些本机 UI 中导航，请使用此部分和方法。
 
-一个问题就是，若要自动化基于 WebView2 的应用，有时首先需要在本机 GUI 中执行一些操作才能启动 WebView2 控件。  作为一种解决方案，你需要在驱动程序之外Microsoft Edge本机 UI，并以某种方式确保 WebView2 实例显示，如下所示。
+一个问题就是，若要自动化基于 WebView2 的应用，有时首先需要在本机 GUI 中执行一些操作才能启动 WebView2 控件。  作为一种解决方案，你需要在驱动程序Microsoft Edge本机 UI，并以某种方式确保显示 WebView2 实例，如下所示。
 
-在此方案中，如果你具有一些要导航的本机 UI，你将使用 Microsoft Edge Driver 外的方法（如命令行脚本）或单独的工具（如 WinAppDriver）启动你的应用。 启动应用进程后，触发 WebView2 实例化，然后将Microsoft Edge驱动程序附加到正在运行的 WebView2 实例。
+在此方案中，你需要导航一些本机 UI，你将使用 Microsoft Edge Driver（如命令行脚本）或单独的工具（如 WinAppDriver）来启动你的应用。 启动应用进程后，触发 WebView2 实例化，然后将Microsoft Edge驱动程序附加到正在运行的 WebView2 实例。
 
 Microsoft Edge驱动程序不处理本机 UI 自动化，但下面是一些导航本机 UI 和显示要自动处理的 WebView2 实例的其他方法：
 
-*  WindowsApplication Driver ([WinAppDriver](https://github.com/Microsoft/WinAppDriver)) 是一项服务，用于支持 Windows 应用程序上的 Selenium Windows自动化。  此服务支持在 Windows 10 PC 上测试通用 Windows 平台 (UWP) 、Windows Forms (WinForms) 、Windows Presentation Foundation (WPF) 和经典 Windows (Win32) 应用。
+*  Windows应用程序驱动程序 ([WinAppDriver](https://github.com/Microsoft/WinAppDriver)) 是一项支持 Windows 应用程序上的 Selenium 类似 UI 测试自动化的服务。  此服务支持在 Windows 10 PC 上测试通用 Windows 平台 (UWP) 、Windows Forms (WinForms) 、Windows Presentation Foundation (WPF) 和经典 Windows (Win32) 应用。
 
 *  直接使用 Microsoft Native UI 自动化。  [Microsoft UI 自动化](/windows/win32/winauto/entry-uiauto-win32)框架允许自动测试脚本与 UI 进行交互。  Microsoft UI 自动化使Windows应用程序能够提供和使用有关用户界面和 UI (编程) 。  它提供对桌面上大多数 UI 元素的编程访问。  它使辅助技术产品（如屏幕阅读器）能够向最终用户提供有关 UI 的信息，并按标准输入和标准输入外的其他方式操作 UI。 <!-- condense that; 1st para -->
 
@@ -224,11 +223,10 @@ Microsoft Edge驱动程序不处理本机 UI 自动化，但下面是一些导�
 
 ### <a name="attaching-microsoft-edge-driver-to-the-launched-webview2-app"></a>将Microsoft Edge驱动程序附加到启动的 WebView2 应用
 
-1. 使用 属性告诉Microsoft Edge驱动程序连接到你之前指定的远程调试端口，而不是 `EdgeOptions.DebuggerAddress` 启动新应用程序：
+1. 使用 属性告知Microsoft Edge驱动程序连接到你之前指定的远程调试端口，而不是 `EdgeOptions.DebuggerAddress` 启动新应用程序：
 
 ```csharp
 EdgeOptions edgeOptions = new EdgeOptions();
-edgeOptions.UseChromium = true;
 edgeOptions.UseWebView = true;
 edgeOptions.DebuggerAddress = "localhost:9222";
 EdgeDriver edgeDriver = new EdgeDriver(edgeOptions);
