@@ -24,7 +24,7 @@ highlightedContent:
       url: 'https://www.microsoftedgeinsider.com/whats-new'
     - title: 获取支持
       itemType: reference
-      url: /microsoft-edge/index#help-and-support
+      url: /microsoft-edge/index#additional-content
     - title: 如何使用 Microsoft Edge
       itemType: learn
       url: 'https://support.microsoft.com/microsoft-edge?ocid=DMC-End-User-Support'
