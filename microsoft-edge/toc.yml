@@ -503,7 +503,7 @@
     - name: 测试和自动化
       items:
         - name: 开发工具协议
-          href: test-and-automation/devtools-protocol-overview-aux-node.md
+          href: test-and-automation/devtools-protocol.md
         - name: 源试验
           href: origin-trials/index.md
         - name: 编剧
@@ -519,7 +519,7 @@
             - name: 验证 Microsoft Edge 的 Selenium 工具下载
               href: webdriver-chromium/verify-selenium-tools.md
         - name: webhint
-          href: test-and-automation/webhint-aux-node.md
+          href: test-and-automation/webhint.md
     - name: Web 平台
       items:
         - name: Microsoft Edge 中影响网站兼容性的更改
@@ -548,7 +548,7 @@
               href: visual-studio-code/debugger-for-edge.md
             - name: Microsoft Edge 开发人员工具扩展
               href: visual-studio-code/microsoft-edge-devtools-extension.md
-            - name: webhint 扩展
+            - name: webhint
               href: visual-studio-code/webhint.md
     - name: Microsoft Edge 中的辅助功能
       items:
@@ -564,5 +564,5 @@
           href: accessibility/test.md
     - name: 隐私白皮书
       href: privacy-whitepaper/index.md
-    - name: “我们想要的网络”概述
+    - name: 我们需要的 Web 计划
       href: web-we-want/index.md
