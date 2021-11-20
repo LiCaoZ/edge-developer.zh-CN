@@ -1,5 +1,5 @@
 ---
-title: 在后台同步和更新可编程 Web (PWA) 应用程序。
+title: 在后台同步和更新渐进式 Web (PWA) 应用。
 description: 了解在应用未运行时如何在后台工作，以将内容与服务器同步、获取新资源或处理长时间下载。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进 Web 应用， PWA， Edge， JavaScript， 服务工作线程， 后台， 同步， 提取
-ms.openlocfilehash: cb49e9047aec7b2307eae038edaf73b0d44674a3
-ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
+ms.openlocfilehash: f8ccc35cea57ce0b60ccae8b444dfcd2ce5d57e9
+ms.sourcegitcommit: aea4d6f07de1c2a4b9c2a31b821e2103df99c030
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "12087101"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "12185771"
 ---
 # <a name="synchronize-and-update-in-the-background"></a>在后台同步和更新
 
-使用服务工作者，PBA 可以在用户甚至没有使用应用时在后台工作。 这以前保留给本机应用，但现在也可供 PWA 使用，从而可以提供更好的脱机体验。
+使用服务工作线程时， (PA) 在用户甚至没有使用该应用时都可以在后台工作。 这以前保留给本机应用，但现在也可供 PBA 使用，从而可以提供更好的脱机体验。
 
 请考虑以下用例：
 
@@ -42,7 +42,7 @@ ms.locfileid: "12087101"
 
 ### <a name="check-for-support"></a>检查支持
 
-虽然此 API 在 Microsoft Edge中可用，但应确保它在其他运行你的应用的浏览器和设备中受支持。 可通过测试对象是否 `ServiceWorkerRegistration` 具有 属性来 `sync` 完成此操作：
+此 API 在 Microsoft Edge中可用，但应确保在运行应用的其他浏览器和设备中支持此 API。 可通过测试对象是否 `ServiceWorkerRegistration` 具有 属性来 `sync` 完成此操作：
 
 ```javascript
 navigator.serviceWorker.ready.then(registration => {
@@ -61,7 +61,7 @@ navigator.serviceWorker.ready.then(registration => {
 首先需要请求同步。这可以通过应用程序前端或服务工作者完成。
 
 *   当你希望让用户负责以后同步时，从前端请求同步是不错的选择。
-*   当你希望对用户透明时，从服务工作线程请求同步是一个不错的选择。 在这种情况下，服务工作者可以检测失败的提取请求并立即请求同步。
+*   当你希望对用户透明时，从服务工作线程请求同步是不错的选择。 在这种情况下，服务工作者可以检测失败的提取请求并立即请求同步。
 
 若要请求同步，需要 和 `ServiceWorkerRegistration` 标记名称。 在应用程序前端代码中，执行以下操作：
 
@@ -129,7 +129,7 @@ self.addEventListener('sync', event => {
 
 1.  重新加载应用。 现在将显示影片详细信息。
 
-对于示例代码，请转到上[一GitHub。](https://github.com/captainbrosset/movies-db-pwa/)
+对于示例代码，请转到 GitHub[上的源代码](https://github.com/captainbrosset/movies-db-pwa/)。
 
 ### <a name="debug-background-syncs-with-devtools"></a>使用 DevTools 调试后台同步
 
@@ -158,10 +158,10 @@ self.addEventListener('sync', event => {
 <!-- ====================================================================== -->
 ## <a name="regularly-get-fresh-content-with-the-periodic-background-sync-api"></a>定期后台同步 API 定期获取新鲜内容
 
-定期后台同步 API 允许 PWA 在后台定期检索新鲜内容，以便用户可以在稍后再次打开应用时立即访问它。 使用此 API 时，PBA 无需下载新内容 (如用户在使用应用时) 新文章) 这会减慢体验速度，而是在更方便的时间检索它。
+定期后台同步 API 允许 PWA 在后台定期检索新鲜内容，以便用户可以在稍后再次打开应用时立即访问它。 使用此 API 时，PBA 无需下载新内容 (如用户在使用应用时) 新文章) 这会降低体验速度，而是可以在更方便的时间检索它。
 
 > [!NOTE]
-> 定期同步仅在设备位于已知网络 (（即) 之前已连接到的一个网络）上时发生，Microsoft Edge 会限制同步频率以匹配用户使用该应用的频率。
+> 定期同步仅在设备位于已知网络 (即) 之前已连接到的网络）时发生，Microsoft Edge 会限制同步频率以匹配用户使用该应用的频率。
 
 ### <a name="check-for-support"></a>检查支持
 
@@ -194,7 +194,7 @@ if (status.state === 'granted') {
 
 ### <a name="register-a-periodic-sync"></a>注册定期同步
 
-若要注册定期同步，你需要定义最小间隔和唯一的标记名称 (以便多个定期后台同步可以注册到) 。
+若要注册定期同步，你需要定义最小间隔和唯一的标记 (以便多个定期后台同步可以注册到) 。
 
 ```javascript
 async function registerPeriodicSync() {
@@ -204,7 +204,7 @@ async function registerPeriodicSync() {
 }
 ```
 
-以上 `minInterval` 代码中使用的 对应于 1 天（以毫秒为单位）。 此间隔最少，Microsoft Edge在定期同步事件（如网络连接以及用户是否定期使用应用）向服务工作者发出警报之前，将考虑其他因素。
+以上 `minInterval` 代码中使用的 对应于 1 天（以毫秒为单位）。 此时间间隔仅为最小间隔，Microsoft Edge在定期同步事件（如网络连接以及用户是否定期使用应用）向服务工作者发出警报之前，将考虑其他因素。
 
 ### <a name="react-to-periodic-sync-events"></a>React定期同步事件
 
@@ -285,14 +285,14 @@ navigator.serviceWorker.ready.then(async registration => {
 
 上述 `my-download-id` 应为此后台提取的唯一字符串标识符。 `fileUrls` 是要下载的文件的列表，这将是字符串 URL 数组。 `options`和 是可用于自定义浏览器中下载活动的外观的对象。
 
-可以在 `fetch` [BackgroundFetchManager.fetch](https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/fetch) 文档和介绍后台提取 () 函数 [相关详细信息](https://developers.google.com/web/updates/2018/12/background-fetch)。
+有关该函数的信息，请参阅 `fetch` [BackgroundFetchManager.fetch () ](https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/fetch) 文档和 [介绍后台提取](https://developers.google.com/web/updates/2018/12/background-fetch)。
 
 
 <!-- ====================================================================== -->
 ## <a name="re-engage-users-with-notifications-and-badges"></a>使用通知和锁屏提醒重新吸引用户
 
-通知 API 和 App Badging API 可用于让用户知道后台任务、下载或新鲜内容已完成，而不会中断其工作流。 使用通知和锁屏提醒可增加用户与你的应用的重新参与度。
+使用通知和 App Badging API 让用户知道后台任务、下载或新鲜内容已完成，而不会中断其工作流。 使用通知和锁屏提醒可增加用户与你的应用的重新参与度。
 
-通过Microsoft Edge，通知与系统通知中心集成，锁屏提醒显示在任务栏的应用图标上。
+使用 Microsoft Edge，通知与系统通知中心集成，锁屏提醒显示在任务栏的应用图标上。
 
 若要了解如何使用这些 API，请参阅使用通知、推送通知和锁屏提醒重新吸引 [用户](./notifications-badges.md)。
