@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 2f95c52b772c02a9ae6835e98ffcf70ebdd563fb
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: d37ed264789f8594ac46ebb0acba830cac532f72
+ms.sourcegitcommit: 1e32efb1c9811ec7c65816e938d1a64b1ca5ece6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156828"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "12158549"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -154,7 +154,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 <!--  Title: Assistive technologies now announce position and count of CSS suggestions  -->
 <!--  Subtitle: CSS suggestions are now easier to navigate using screen readers -->
 
-编辑 CSS 时，你将获得功能的下拉列表。  辅助技术用户无法使用此功能，因为它是在 Microsoft Edge 版本 89 中公布的。  辅助技术用户现在可以在“**样式**”窗格中浏览 CSS 建议。  在 Microsoft Edge 版本 88 及更早版本中，辅助技术公布了 `Suggestion`，因为用户在“**导航**”窗格中编辑 CSS 时浏览了建议列表。  在 Microsoft Edge 版本 89 中，辅助技术用户现在可以听到当前建议的位置和计数。  当用户浏览建议列表时，每条建议都会公布，例如建议 3/5。  若要了解有关在 DevTools 中编写 CSS 的详细信息，请导航至“[更改 CSS](../../../css/reference.md#change-css)”。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1157329](https://crbug.com/1157329)。
+编辑 CSS 时，你将获得功能的下拉列表。  辅助技术用户无法使用此功能，因为它是在 Microsoft Edge 版本 89 中公布的。  辅助技术用户现在可以在“**样式**”窗格中浏览 CSS 建议。  在 Microsoft Edge 版本 88 及更早版本中，辅助技术公布了 `Suggestion`，因为用户在“**导航**”窗格中编辑 CSS 时浏览了建议列表。  在 Microsoft Edge 版本 89 中，辅助技术用户现在可以听到当前建议的位置和计数。  当用户浏览建议列表时，每条建议都会公布，例如建议 3/5。  要详细了解如何在 DevTools 中编写 CSS，请参阅 [CSS 功能参考](../../../css/reference.md)。  要在 Chromium 开放源代码项目中查看此功能的历史记录，请参阅问题 [1157329](https://crbug.com/1157329)。
 
 若要在启用此试验的情况下查看显示和朗读多条建议的视频，请导航至 YouTube 上的“[Voiceover 公布 devtools 选项](https://youtu.be/9TcUpleEwwA)”。
 
