@@ -3,7 +3,7 @@ description: Microsoft Edge DevTools 中的最新试验功能
 title: 试验功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/16/2021
+ms.date: 11/22/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools, 试验
@@ -18,169 +18,270 @@ no-loc:
 - Enable Welcome tab
 - 3D View
 - Turn on support to move tabs between panels
-- Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code
-- Edit keyboard shortcuts for any action in the DevTools
+- Match keyboard shortcuts in DevTools to Microsoft Visual Studio Code
+- Edit keyboard shortcuts for any action in DevTools
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
-ms.openlocfilehash: bd538c65daa6b1da48da699ca503875e41b1280b
-ms.sourcegitcommit: 9c31ae7307cf595a2ac2e655524e187777714765
+ms.openlocfilehash: cb08431ac7d04e4c08253a61cacf4c17ff24fc4d
+ms.sourcegitcommit: c1f5b8d23ade4bd4e808dcb855a2e7636eff597b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "12184041"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "12191143"
 ---
 # <a name="experimental-features"></a>试验功能
 
-Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限。  可以在发布每个功能之前试用 [这些功能并提供](../contact.md) 反馈。
+<!-- 
+Policies for maintaining this page:
+Cover the latest Canary version.
+Keep h2 sections in same order as Microsoft Edge DevTools > Experiments page.
+In the heading and UI steps, keep the checkbox label UI string as-is.
+Include an h2 section for every checkbox that's in public-facing Microsoft Edge DevTools > Experiments page.
+If no info is an an h2 section, comment out the h2 heading & section.
+When a checkbox is removed from all the preview channels, move its section down to "Previously Experimental features which are now regular features" and comment it out.
+-->
 
-组织的所有频道Microsoft Edge实验性功能。  可以使用以下方法获取最新的实验Microsoft Edge Canary 渠道。  本文仅介绍所选实验功能。  有关完整列表，请参阅****  >  **** DevTools 设置实验"页面。
+Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限。  本文列出并介绍了最新版 Canary 预览频道中的大多数实验Microsoft Edge。
+
+组织[的所有频道Microsoft Edge](/deployedge/microsoft-edge-channels)实验性功能。 可以通过使用 Microsoft Edge Canary 渠道 获取最新的[实验Microsoft Edge Canary 渠道。](https://www.microsoftedgeinsider.com/welcome?channel=canary) 若要查看最新版本中提供的完整列表Microsoft Edge，请参阅****  >  DevTools 设置**实验**"页面。
+
+<!-- no Warning formatting, because UI already contains red "WARNING" at top -->
+这些实验可能不稳定或不可靠，可能需要重启 DevTools。
 
 
 <!-- ====================================================================== -->
-## <a name="experimental-features-which-are-turned-on-by-default"></a>默认情况下打开的实验性功能
+## <a name="experiments-which-are-turned-on-by-default"></a>默认情况下打开的实验
 
-自 Microsoft Edge 96 起，默认情况下会启用以下实验功能。  这意味着可以马上使用这些功能，而无需更改任何设置。  如果需要，可以关闭这些默认实验功能。
+自 96 Microsoft Edge起，以下实验功能默认打开。 你可以马上使用这些功能，而无需更改任何设置。 如果需要，可以关闭这些默认实验功能。
 
 <!-- listed in order of the Settings > Experiments pane -->
 *  源订单查看器
 *  启用前向缓存调试支持
 *  [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md)从 90 开始，默认Microsoft Edge打开。
 *  启用实验性隐藏问题菜单
-*  在 \<length\> "样式"窗格中启用 CSS 创作工具
 *  Enable webhint
 *  在元素中显示问题
 *  Enable Composited Layers in 3D View
 *  DevTools 工具提示
-*  VS Code开发工具的主题 <!-- literal checkbox label -->
+*  VS Code开发工具的主题 <!-- preserve literal UI string, including "VS" & "the" -->
 *  在 Visual Studio Code 中的打开源文件
-*  启用键盘快捷方式编辑器 - 默认从 [Edit keyboard shortcuts for any action in the DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) 89 Microsoft Edge打开。
+*  启用键盘快捷方式编辑器 - 默认从 [Edit keyboard shortcuts for any action in DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) 89 Microsoft Edge打开。
+*  启用动态欢迎内容 - 在版本 96 中，此实验默认关闭。  在版本 97 & 98 中，此实验默认打开。
 
-<!-- *  Detached Elements - in 96 this checkmark is only present when a corpnet account is hooked up -->
+<!-- don't place a comment line between list item lines, above; that would create a gap -->
 
-<!-- *  Enable dynamic Welcome content - turned on by default in v97 & v98, not v96 -->
+<!-- Don't list this checkbox in this article; it's being removed: -->
+<!-- *  Enable CSS \<length\> authoring tool in the Styles pane -->
+
+<!-- *  Detached Elements 
+Is the Detached Elements experiment checkbox intended to be present for external users?
+Is the Detached Elements experiment checkbox intended to be turned on by default, for external users?
+-->
 
 
 <!-- ====================================================================== -->
-## <a name="turning-on-experimental-features"></a>打开实验性功能
+## <a name="turning-an-experiment-on-or-off"></a>打开或关闭实验
 
-若要打开或关闭实验性功能，Microsoft Edge：
+实验性功能会不断更新，并且可能会导致性能问题。  这是你可能想要关闭实验的一个原因。
 
-1.  [打开 DevTools](../open/index.md)。  为此，在"Microsoft Edge"中，设置**更多** (...) >**工具**  >  **"。**
+若要打开或关闭实验，Microsoft Edge：
 
-1.  打开[devTools](../customize/index.md#settings)设置窗格。  为此，请选择 **"设置 (** 齿轮) 图标。
+1.  [打开 DevTools](../open/index.md)。  例如，在 macOS (上按 `Ctrl` + `Shift` + `I` Windows/Linux) 或 `Command` + `Option` + `I` () 。
 
-1.  在"实验"窗格**设置，** 选择"实验 **"** 部分。
+1.  单击 **"设置 (** 齿轮) 图标以打开 DevTools[设置窗格。](../customize/index.md#settings)
+
+1.  在"实验"窗格**设置，** 单击"实验 **"** 部分。
 
     :::image type="content" source="../media/experiments-devtools.msft.png" alt-text="设置中的试验页面" lightbox="../media/experiments-devtools.msft.png":::
 
-1.  在 **实验** 页面上，滚动浏览所有可用实验功能的列表，并选中要测试的每个功能旁边的复选框。  某些实验默认打开。
+1.  在实验 **页面上** ，选中或清除实验的复选框。 默认情况下，某些实验 (选中) 打开。
 
-1.  选择右上角的**X**以关闭**设置。**
+1.  单击 **"** 关闭 (DevTools > 设置 中的"关闭"图标。) 右上方的"关闭"以关闭 ![ ](../media/settings-close-icon-light-theme.png) DevTools**设置。**
 
-1.  选择" **重新加载 DevTools"** 按钮。
-
-> [!NOTE]
-> 实验性功能会不断更新，并且可能会导致性能问题。  若要关闭试验功能，请打开“**试验**”页面并清除要关闭的试验功能的复选框。
+1.  单击" **重新加载 DevTools"** 按钮。
 
 
 <!-- ====================================================================== -->
-<!-- ====================================================================== -->
-<!-- Keep h2 sections in same order as Microsoft Edge DevTools > Experiments page. -->
-<!-- Include an h2 section for every checkbox that's in Microsoft Edge DevTools > Experiments page, many of them commented out.  Keep in mind which version the rendered page targets.  If a checkbox has been removed, move its section to the bottom section of this page. -->
+## <a name="restoring-defaults-for-which-experiments-are-selected"></a>还原已选择实验的默认值
+
+若要还原打开实验功能的默认设置，请：
+
+1.  [打开 DevTools](../open/index.md)。  例如，在 macOS (上按 `Ctrl` + `Shift` + `I` Windows/Linux) 或 `Command` + `Option` + `I` () 。
+
+1.  选择**设置 (** ![ 开发人员设置中的") >" ](../media/settings-gear-icon-light-mode.png) **图标**。
+
+1.  单击"**还原默认值并刷新**"按钮，然后单击"关闭**** (DevTools > 设置 中的"关闭 ![ "图标 ](../media/settings-close-icon-light-theme.png) 。) 。
+
+<!-- For more information about customizing settings, see [Settings](../customize/index.md#settings) in _Customize Microsoft Edge DevTools_. -->
 
 
 <!-- ====================================================================== -->
-<!-- ## Allow extensions to load custom stylesheets -->
+## <a name="filtering-the-experiments"></a>筛选实验
+
+你可以按标题中包含的文本筛选实验性功能。
+
+1.  [打开 DevTools](../open/index.md)。  例如，在 macOS (上按 `Ctrl` + `Shift` + `I` Windows/Linux) 或 `Command` + `Option` + `I` () 。
+
+1.  选择**设置 (** ![ 开发设置中的") >" ](../media/settings-gear-icon-light-mode.png) **图标**。
+
+1.  在"筛选器 **"文本框** 中单击并输入文本，如 **时间线**。  键入时，只有匹配的复选框显示在实验 **页面中** 。
+
+1.  若要结束筛选，请清除 **"筛选器"** 文本框。
+
+
+<!-- ====================================================================== -->
+## <a name="providing-feedback-about-the-experiments"></a>提供有关实验的反馈
+
+我们期待收到有关实验功能的反馈。
+
+* 通过推文将反馈发送给我们[@EdgeDevTools。](https://twitter.com/edgedevtools)
+
+* [联系 Microsoft Edge DevTools 团队](../contact.md)。
+
+* 打开焦点**模式**实验后，在活动栏底部，选择"帮助****" (焦点模式**** 的活动栏中的"帮助"图标) >反馈"，以显示"发送反馈 ![ ](../media/help-icon-of-focus-mode.png) "窗口****。 ****
+
+
+<!-- ====================================================================== -->
+## <a name="list-of-experiments"></a>实验列表
+
+下面列出了最新版 Canary 预览频道中显示Microsoft Edge实验。
+
+
+<!-- ====================================================================== -->
+## <a name="allow-extensions-to-load-custom-stylesheets"></a>允许扩展加载自定义样式表
 <!-- present in 96, 98 -->
 
-
-<!-- ====================================================================== -->
-<!-- ## Capture node creation stacks -->
-<!-- present in 96, 98 -->
+某些Microsoft Edge加载项可以定义 DevTools 的自定义颜色主题。 如果安装具有主题的加载项，则需要启用"允许扩展加载自定义样式表****"实验来查看加载项主题。
 
 
 <!-- ====================================================================== -->
-<!-- ## Automatically pretty print in the Sources Panel -->
+## <a name="capture-node-creation-stacks"></a>捕获节点创建堆栈
 <!-- present in 96, 98 -->
+
+若要在运行时将 DOM 节点添加到 DOM 时捕获 JavaScript 堆栈跟踪，请启用此实验。 捕获的堆栈跟踪显示在"元素"面板的"**堆栈****跟踪"** 窗格中。
 
 
 <!-- ====================================================================== -->
-<!-- ## Protocol Monitor -->
+## <a name="automatically-pretty-print-in-the-sources-panel"></a>在"源面板"中自动打印
 <!-- present in 96, 98 -->
+
+打开此实验时，当你在"源"面板中显示缩小文件时，该文件在"源"面板中的单个选项卡中打开，非常打印。
+
+关闭此实验后，带按钮的 UI 提示会询问你是否要以设计方式打印文件。  文件在附加后缀为 **：formatted**的其他选项卡中打开。
+
+*  缩小 _文件_ 将连接为一个长行。
+*  相比之下， _更智能的_ 打印以缩进、更可读的格式呈现文件的内容。
+
+
+<!-- ====================================================================== -->
+## <a name="protocol-monitor"></a>协议监视器
+<!-- present in 96, 98 -->
+
+DevTools 使用 DevTools 协议与检查的页面通信。
+
+若要监视 DevTools 发送和接收的消息以调试检查的页面：
+
+1.  [打开 DevTools](../open/index.md)。  例如，在 macOS (上按 `Ctrl` + `Shift` + `I` Windows/Linux) 或 `Command` + `Option` + `I` () 。
+
+1.  在 DevTools 中，选择 **"设置**  >  **实验"。**
+
+1.  选中"**协议监视器**"复选框，然后单击"**** 关闭 (DevTools > 设置 中的"关闭"图标。) ![ ](../media/settings-close-icon-light-theme.png) 关闭设置。 ****
+
+1.  打开命令**菜单** `Control` + `Shift` + `P` () ，然后在文本框中键入协议。 ****
+
+1.  选择 **"显示协议监视器"。**  将出现以下消息："一个或多个设置已更改，要求重新加载生效。"
+
+1.  单击 **显示在邮件旁边的"重新加载 DevTools"** 按钮。
+
+1.  协议**监视器**工具显示在 DevTools 底部的"箱"中。 ****
 
 
 <!-- ====================================================================== -->
 <!-- ## Show CSP Violations view -->
 <!-- present in 96, 98 -->
 
+<!-- Needs content. -->
+
 
 <!-- ====================================================================== -->
 <!-- ## Record coverage while performance tracing -->
 <!-- present in 96, 98 -->
+
+<!-- Needs content. -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Show option to take heap snapshot where globals are treated as root -->
 <!-- present in 96, 98 -->
 
+<!-- Needs content. -->
+
 
 <!-- ====================================================================== -->
 ## <a name="source-order-viewer"></a>源订单查看器
 <!-- present in 96, 98 -->
 
-**Source Order Viewer** 是显示网页源中元素顺序的试验。  屏幕显示顺序可以不同于源的顺序，这会使屏幕阅读器和键盘用户混淆。  使用 **Source Order Viewer** 试验查找屏幕显示顺序和源顺序之间的差异。
+**Source Order Viewer** 是显示网页源中元素顺序的试验。 屏幕显示顺序可以不同于源的顺序，这会使屏幕阅读器和键盘用户混淆。 使用 **Source Order Viewer** 试验查找屏幕显示顺序和源顺序之间的差异。
 
 若要使用 **Source Order Viewer** ：
+
+1.  [打开 DevTools](../open/index.md)。  例如，在 macOS (上按 `Ctrl` + `Shift` + `I` Windows/Linux) 或 `Command` + `Option` + `I` () 。
+
 1.  打开“**元素**”工具。
-1.  在" **样式"选项卡** 的右侧，选择 **"辅助功能"** 选项卡。
+
+1.  在" **样式"选项卡** 的右侧，单击 **"辅助功能"** 选项卡。
+
 1.  在部分 **Source Order Viewer** 下，选中" **显示源订单"** 复选框。
-1.  突出显示任何 HTML 元素，以显示该网页源中顺序的覆盖。
 
-:::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
+1.  突出显示任何 HTML 元素以显示网页源中订单的覆盖。
 
-此实验从版本 86 Microsoft Edge开始提供，并且默认打开。
+:::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::no-loc (源订单查看器) ：：： 在辅助功能窗格中" lightbox="。。/media/experiments-source-order-viewer.msft.png"：：：
 
+此实验从版本 86 Microsoft Edge开始，并且默认打开。
 
-<!-- ====================================================================== -->
-<!-- ## Enable back-forward cache debugging support -->
-<!-- present in 96, 98 -->
+有关详细信息，[请参阅使用 Source Order Viewer ](../accessibility/test-tab-key-source-order-viewer.md)
 
 
 <!-- ====================================================================== -->
-<!-- ## Timeline: event initiators -->
+## <a name="enable-back-forward-cache-debugging-support"></a>启用前向缓存调试支持
 <!-- present in 96, 98 -->
 
+前向缓存或 *bfcache*。 在内存中保存已访问网页的快照，加快浏览历史记录的浏览速度。
 
-<!-- ====================================================================== -->
-<!-- ## Timeline: WebGL-based flamechart -->
-<!-- present in 96, 98 -->
+无法缓存某些网页。 启用此实验以将" **前向缓存"** 部分添加到" **应用程序"** 面板。  启用前向缓存调试提供有关无法存储在 中的网页的信息 `bfcache` 。
 
 
 <!-- ====================================================================== -->
 <!-- ## WebAssembly Debugging: Enable DWARF support -->
 <!-- present in 96, 98 -->
 
+<!-- Needs content. -->
+
 
 <!-- ====================================================================== -->
-<!-- ## Emulation: Support dual screen mode -->
+## Emulation: Support dual screen mode
 <!-- present in 96, 98 -->
 
-<!-- [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md) -->
+有关详细信息，请参阅 [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md) 。
 
 
 <!-- ====================================================================== -->
 <!-- ## Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines -->
 <!-- present in 96, 98 -->
 
+<!-- Needs content. -->
+
 
 <!-- ====================================================================== -->
 <!-- ## Enable full accessibility tree view in the Elements panel -->
 <!-- present in 96, 98 -->
 
+<!-- Needs content. -->
+
 
 <!-- ====================================================================== -->
-## <a name="enable-new-font-editor-tool-within-the-styles-pane"></a>Enable new Font Editor tool within the Styles pane.
-<!-- keep period, per literal checkbox label>
+## Enable new Font Editor tool within the Styles pane
+
 <!-- present in 96, 98 -->
 
 现在，可以使用新的可视 [字体编辑器来](../inspect-styles/edit-fonts.md) 编辑字体。  使用它来定义字体和字体特征。  可视 **字体编辑器** 可帮助您执行以下操作：
@@ -191,8 +292,13 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 *   生成准确的 CSS 代码
 
 若要使用新的可视化**字体编辑器：**
+
+1.  [打开 DevTools](../open/index.md)。  例如，在 macOS (上按 `Ctrl` + `Shift` + `I` Windows/Linux) 或 `Command` + `Option` + `I` () 。
+
 1.  打开“**元素**”工具。
+
 1.  打开“**样式**”窗格。
+
 1.  选择" **字体编辑器"** 图标。
 
 有关新的可视字体编辑器 **的详细信息**，请参阅 [DevTools](../inspect-styles/edit-fonts.md)中的样式窗格中编辑 CSS 字体样式和设置。
@@ -203,42 +309,34 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 此实验从版本 89 Microsoft Edge开始提供。
 
+有关详细信息，请参阅DevTools 中的样式窗格中编辑 [CSS 字体样式和设置](../inspect-styles/edit-fonts.md)。
+
 
 <!-- ====================================================================== -->
 <!-- ## Enable automatic contrast issue reporting via the Issues Panel -->
 <!-- present in 96, 98 -->
+
+<!-- Needs content. -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Enable experimental cookie features -->
 <!-- present in 96, 98 -->
 
+<!-- Needs content. -->
+
 
 <!-- ====================================================================== -->
-<!-- ## Enable experimental hide issues menu -->
+## <a name="enable-reporting-api-panel-in-the-application-panel"></a>在应用程序面板中启用报告 API 面板
 <!-- present in 96, 98 -->
 
-
-<!-- ====================================================================== -->
-<!-- ## Allow grouping and hiding of issues by IssueKind -->
-<!-- present in 96, 98 -->
-
-
-<!-- ====================================================================== -->
-<!-- ## Enable Reporting API panel in the Application panel -->
-<!-- present in 96, 98 -->
-
-
-<!-- ====================================================================== -->
-<!-- ## Enable CSS \<length\> authoring tool in the Styles pane (https://goo.gle/length-feedback) -->
-<!-- present in 96, 97, 98 -->
-<!-- in 97 & 98 the label is shorter: -->
-<!-- ## Enable CSS \<length\> authoring tool in the Styles pane -->
-
+使用报告 API 捕获某些错误，如安全违反或已弃用 API 调用。 这些错误在用户访问您的网站并发送到服务器终结点时发生。 启用此实验以在应用程序面板中添加**报告**API**** 部分，其中列出了发送到终结点的所有报告。
 
 <!-- ====================================================================== -->
 <!-- ## Log DevTools uncaught exceptions to Console -->
 <!-- present in 96, 98 -->
+
+<!-- Needs content. -->
 
 
 <!-- ====================================================================== -->
@@ -258,29 +356,39 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 :::image type="content" source="../media/experiments-webhint.msft.png" alt-text="问题面板中的 webhint 反馈" lightbox="../media/experiments-webhint.msft.png":::
 
-此实验从版本 85 Microsoft Edge开始提供，并且默认打开。
+此实验从版本 85 Microsoft Edge开始，并且默认打开。
 
 
 <!-- ====================================================================== -->
-<!-- ## Show issues in Elements -->
+
+## <a name="show-issues-in-elements"></a>在元素中显示问题
 <!-- present in 96, 98 -->
 
+启用此实验，在"元素"工具的 **"DOM"** 视图中查看 HTML 下的 **语法** 错误。 有关详细信息，请参阅 [元素工具 中的波浪下划线突出显示代码问题和改进](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool)。
 
 <!-- ====================================================================== -->
 ## Enable Composited Layers in 3D View
 <!-- present in 96, 98 -->
 
-您可以将 Layers 与 z 索引和文档对象模型一起可视化 (DOM) 。  此功能可帮助你进行调试，而无需频繁切换上下文。  你发现减少上下文切换是一个主要的痛点。  不能始终弄清楚你编写的代码对 Web 应用有何影响。  为了获得全面的视觉调试体验，现在已将 3D View 和复合层组合到一起。
+您可以将 Layers 与 z 索引和文档对象模型一起可视化 (DOM) 。 为了获得全面的视觉调试体验，现在已将 3D View 和复合层组合到一起。
 
-若要使用**复合层**，请完成以下步骤。
+此功能可帮助你进行调试，而无需频繁切换上下文。 减少上下文切换可解决开发人员的一个主要问题。 此功能可明确您编写的代码对 Web 应用有何影响。
+
+若要使用 **复合层**：
+
+1.  [打开 DevTools](../open/index.md)。  例如，在 macOS (上按 `Ctrl` + `Shift` + `I` Windows/Linux) 或 `Command` + `Option` + `I` () 。
+
+1.  按 `Esc` 以显示 **"箱"。**
 
 1.  在 **"箱"** 上，选择 **3D View** 工具。
+
 1.  打开“**复合层**”窗格。
+
 1.  此时将显示应用的所有绘制层。  使用你自己的 Web 应用试用此功能。
 
 :::image type="content" source="../media/experiments-layers.msft.png" alt-text="复合层窗格" lightbox="../media/experiments-layers.msft.png":::
 
-此实验从版本 87 Microsoft Edge开始，并且默认打开。
+此实验从版本 87 Microsoft Edge开始提供，并且默认打开。
 
 
 <!-- ====================================================================== -->
@@ -289,13 +397,17 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 **网络控制台**是试验通过 HTTP 提出综合网络请求的工作主题。  可以使用网络 **控制台实验** 发送 Web API 请求。
 
-若要使用**网络控制台**，请完成以下步骤。
+若要使用 **网络控制台**：
+
+1.  [打开 DevTools](../open/index.md)。  例如，在 macOS (上按 `Ctrl` + `Shift` + `I` Windows/Linux) 或 `Command` + `Option` + `I` () 。
 
 1.  打开“**网络**”窗格。
-1.  查找要更改和重新发送的网络请求。
-1.  打开上下文菜单 (右键单击") "，然后选择"编辑**和重播"。**
-1.  当**网络控制台**打开时，编辑网络请求信息。
-1.  选择 **"发送"。**
+
+1.  右键单击要更改和重新发送的网络请求，然后选择"编辑和**重播"。**
+
+1.  在 **网络控制台中**，编辑网络请求信息。
+
+1.  单击**发送**。
 
 :::image type="content" source="../media/network-network-console.msft.png" alt-text="控制台工具箱中的网络控制台" lightbox="../media/network-network-console.msft.png":::
 
@@ -305,8 +417,6 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 <!-- ====================================================================== -->
 ## <a name="focus-mode"></a>焦点模式
 
-<!-- present in 96, 98 -->
-
 焦点模式实验提供了一 **个活动**栏，它是一个紧凑的水平或垂直工具栏，可使 DevTools UI 保持干净，并且适用于较小的窗口。  将当前主工具固定到活动栏。
 
 :::image type="content" source="../media/experimental-features/focus-mode.png" alt-text="焦点模式，包括活动栏。":::
@@ -315,165 +425,163 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 
 <!-- ====================================================================== -->
-<!-- ## DevTools Tooltips -->
+## <a name="devtools-tooltips"></a>DevTools 工具提示
 <!-- present in 96, 98 -->
+
+启用此实验可查看 DevTools 中所有不同工具和窗格的工具提示。 有关详细信息，请参阅了解[包含信息性工具提示的 DevTools。](../whats-new/2021/04/devtools.md#learn-about-devtools-with-informative-tooltips)
+
+<!-- ====================================================================== -->
+## <a name="detached-elements"></a>分离的元素
+<!-- present in 96, 98 -->
+
+<!-- maintainers: see notes about this experiment, in the list of experiments which are turned on by default, at top of article -->
+
+Web 应用程序中的内存泄漏难以查找和修复。
+
+DevTools Microsoft Edge分离的元素面板可帮助调查和解决内存泄漏的常见来源。 ****
+
+当应用程序的 JavaScript 代码在内存中保留数量不断增加的对象时，会发生内存泄漏。 JavaScript 代码应释放这些对象，以便浏览器可以重用内存空间。
+
+<!-- todo: add more info, probably with an image.  See the Detached Elements tutorial (in progress). -->
 
 
 <!-- ====================================================================== -->
-<!-- ## Detached Elements -->
+## <a name="vs-code-themes-for-the-devtools"></a>VS Code开发工具的主题
 <!-- present in 96, 98 -->
+<!-- preserve literal UI string, including "VS" & "the" -->
 
-
-<!-- ====================================================================== -->
-<!-- ## VS Code themes for the DevTools -->
-<!-- present in 96, 98 -->
+若要在 devTools Visual Studio主题，请VS Code**开发工具实验的开发人员主题**。 有关详细信息，请参阅向 [DevTools 应用颜色主题](../customize/theme.md)。
 
 
 <!-- ====================================================================== -->
 ## <a name="open-source-files-in-visual-studio-code"></a>在 Visual Studio Code 中的打开源文件
 <!-- present in 96, 98 -->
 
-实验**中的开放源文件**Visual Studio Code源工具的代码编辑器替换为用于编辑Visual Studio Code文件的代码编辑器。  打开此实验时，开发人员工具会检测何时编辑本地文件，并提示你选择一个用作工作区的文件夹。
+实验**中的**开放源文件Visual Studio Code源工具的代码编辑器替换为用于编辑Visual Studio Code文件的代码编辑器。 打开此实验时，开发人员工具会检测何时编辑本地文件，并提示你选择一个用作工作区的文件夹。
 
-选择要用作工作区的文件夹后，在 DevTools 中选择某个文件的任何链接将在 Visual Studio Code 中打开该文件，而不是在 DevTools 中源工具的代码编辑器中打开。
+选择要用作工作区的文件夹时，选择 DevTools 中某个文件的任何链接将在Visual Studio Code。  在早期版本的 Microsoft Edge 中，此操作在 DevTools 中的源工具的代码编辑器中打开文件。
 
 :::image type="content" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="在&quot;样式&quot;工具中选择文件链接将打开Visual Studio Code" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
 
-现在，你在 DevTools 中执行的任何编辑都将更改硬盘驱动器上的文件，并实时Visual Studio Code。  有关设置工作区的阅读，请参阅在文件打开[Visual Studio Code。](../sources/opening-sources-in-vscode.md)
+现在，你在 DevTools 中执行的任何编辑都更改硬盘上的文件，并实时与Visual Studio Code。 可以在打开数据源中的源文件中阅读有关[Visual Studio Code。](../sources/opening-sources-in-vscode.md)
 
 此实验从版本 96 Microsoft Edge开始提供。
 
 
 <!-- ====================================================================== -->
-<!-- Microsoft Edge automatically pretty print in the Sources Panel -->
+<!-- >> [!WARNING]
+> These experiments are particularly unstable. Enable at your own risk. -->
+
+
+<!-- ====================================================================== -->
+<!-- ## Ignore List for JavaScript frames on Timeline
 <!-- present in 96, 98 -->
 
-
-<!-- ====================================================================== -->
-<!-- ====================================================================== -->
-<!-- "WARNING: These experiments are particularly unstable:" -->
-
-
-<!-- ====================================================================== -->
-<!-- ## Ignore List for JavaScript frames on Timeline -->
-<!-- present in 96, 98 -->
+<!-- Needs content. -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Input events on Timeline overview -->
 <!-- present in 96, 98 -->
 
+<!-- Needs content. -->
+
 
 <!-- ====================================================================== -->
 <!-- ## Live heap profile -->
 <!-- present in 96, 98 -->
+
+<!-- Needs content. -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Sampling heap profiler timeline -->
 <!-- present in 96, 98 -->
 
+<!-- Needs content. -->
+
 
 <!-- ====================================================================== -->
 <!-- ## Enable keyboard shortcut editor -->
 <!-- present in 96, 98 -->
 
-
-<!-- ====================================================================== -->
-<!-- ## Timeline: invalidation tracking -->
-<!-- present in 96, 98 -->
-
-
-<!-- ====================================================================== -->
-<!-- ## Timeline: show all events -->
-<!-- present in 96, 98 -->
-
-
-<!-- ====================================================================== -->
-<!-- ## Timeline: V8 Runtime Call Stats on Timeline -->
-<!-- present in 96, 98 -->
-
-
-<!-- ====================================================================== -->
-<!-- ## Timeline: Replay input events -->
-<!-- present in 96, 98 -->
+<!-- Needs content. -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Enable dynamic Welcome content -->
 <!-- present in 96, 98 -->
 
+<!-- Needs content. -->
+
 
 <!-- ====================================================================== -->
-<!-- ====================================================================== -->
-## <a name="previously-experimental-features-which-are-now-regular-features"></a>以前作为常规功能的实验性功能
+<!-- todo: move these sections into regular articles
+## Previously Experimental features which are now regular features
 
-<!-- todo: move these sections into regular articles -->
+These features have been promoted from experimental to regular features, and have been removed from **Settings** > **Experiments**.
 
-这些功能已从实验提升为常规功能，并且已从实验**设置**  >  **中删除**。
+*  [Turn on new CSS grid debugging features](../css/grid.md) - removed from experimental status starting with Microsoft Edge 89.
 
-*  [Turn on new CSS grid debugging features](../css/grid.md)- 从 89 开始从实验Microsoft Edge中删除。
+*  [Match keyboard shortcuts from Microsoft Visual Studio Code](../customize/shortcuts.md#match-keyboard-shortcuts-from-visual-studio-code) - removed from experimental status starting with Microsoft Edge 86.
 
-*  [Match keyboard shortcuts from Microsoft Visual Studio Code](../customize/shortcuts.md#match-keyboard-shortcuts-from-visual-studio-code) - removed from Experimental status starting from Microsoft Edge 86.
+*  [Turn on support to move tabs between panels](../customize/index.md) - removed from experimental status starting with Microsoft Edge 85.
 
-*  [Turn on support to move tabs between panels](../customize/index.md)- 从实验状态中删除，从 Microsoft Edge 85 开始。
+*  [3D View](../3d-view/index.md) - removed from experimental status starting with Microsoft Edge 83.
 
-*  [3D View](../3d-view/index.md)- 从实验状态中删除，从 Microsoft Edge 83 开始。
-
-*  以下子节中的项目。
+*  The items in the following subsections.
 
 ### Enable + button tab menus to open more tools
 
-这是从版本 89 Microsoft Edge的试验，自版本 94 起是一项常规功能。<!-- which release changed this from Experimental?-->
+This experiment started with Microsoft Edge version 89, and is a regular feature as of version 94.
 
-现在，可以使用新的"更多工具"图标**** 打开 `+` () 工具。  打开实验并重新加载 DevTools 后， () 在 **Enable + button tab menus to open more tools** DevTools 顶部的选项卡组右侧显示加号 `+` 。  若要显示可添加到选项卡栏的其他工具的列表，请单击"更多工具" () **** `+` 图标。
+You can now open more tools using the new **More Tools** (![The 'More Tools' icon.](../media/more-tools-icon-light-theme.png)) icon.  After you turn on the **Enable + button tab menus to open more tools** experiment and reload DevTools, a plus sign (![The 'More Tools' icon.](../media/more-tools-icon-light-theme.png)) appears to the right of the tab group at the top of DevTools.  To display a list of other tools that you can add to the tab bar, click the **More Tools** (![The 'More Tools' icon.](../media/more-tools-icon-light-theme.png)) icon.
 
-:::image type="content" source="../media/experiments-more-tools-button.msft.png" alt-text="顶部窗格中的更多工具。" lightbox="../media/experiments-more-tools-button.msft.png":::
+:::image type="content" source="../media/experiments-more-tools-button.msft.png" alt-text="More Tools in the top pane." lightbox="../media/experiments-more-tools-button.msft.png":::
 
 ### Enable Welcome tab
 
-这是从版本 89 Microsoft Edge的试验，自版本 94 起是一项常规功能。<!-- which release changed this from Experimental?-->
+The Welcome tab was an experiment starting with Microsoft Edge version 89. It is a regular feature as of version 94.
 
-此试验使用新的**欢迎**工具替换**新增功能**工具。  它显示以下内容的更新设计。
+This experiment replaces the **What's New** tool with the new **Welcome** tool.  It displays a refreshed design for the following content.
 
-*   指向开发人员文档的链接
-*   最新功能
-*   发行说明
-*   用于联系 Microsoft Edge DevTools 团队的选项
+*   Links to developer docs
+*   Latest features
+*   Release notes
+*   Option to contact the Microsoft Edge DevTools team
 
-每次更新 Microsoft Edge 后，**欢迎**工具都会自动打开。  若要防止每次更新后显示**欢迎**工具，请清除“**欢迎**”标题下“**每次更新后打开选项卡**”旁边的复选框。
+The **Welcome** tool opens automatically after each update to Microsoft Edge.  To prevent the display of the **Welcome** tool after each update, clear the checkbox next to **Open tab after each update** under the **Welcome** tool title.
 
-:::image type="content" source="../media/experiments-welcome.msft.png" alt-text="欢迎工具" lightbox="../media/experiments-welcome.msft.png":::
+:::image type="content" source="../media/experiments-welcome.msft.png" alt-text="Welcome tool" lightbox="../media/experiments-welcome.msft.png":::
 
-
-<!-- ====================================================================== -->
 ### Enable new CSS Flexbox debugging features
 
-这是从版本 89 Microsoft Edge的试验，自版本 94 起是一项常规功能。<!-- which release changed this from Experimental?-->
+This was an experiment starting with Microsoft Edge version 89, and is a regular feature as of version 94.
 
-此功能提供了许多新的可视化效果，可帮助你调试 CSS Flexbox 布局。
+This feature provides many new visualizations to help you debug CSS Flexbox layouts.
 
-#### <a name="displaying-persistent-overlays-on-flexbox-layouts-with-the-inspect-tool"></a>使用 Inspect 工具在 Flexbox 布局上显示永久性覆盖
+#### Displaying persistent overlays on Flexbox layouts with the Inspect tool
 
-**检查**工具提供了一种快速识别和可视化网站 CSS 弹性框布局的方法，通过将鼠标悬停该布局上方来实现这一点。  选择 **"检查** (![ 工具 ](../media/inspect-icon.msft.png)) 左上角的"检查项目"图标。  然后，在调试网站时，将鼠标悬停在弹性容器上方以在其周围显示轮廓。
+The **Inspect** tool provides a quick way to identify and visualize CSS Flexbox layouts in a website by hovering on them with the mouse.  Select the **Inspect** (![Inspect](../media/inspect-icon.msft.png)) icon in the top-left corner of DevTools.  Then, while debugging the website, hover on a flex container to display outlines around the flex container.
 
-:::image type="content" source="../media/flexbox-hover.msft.png" alt-text="使用检查工具显示弹性框容器" lightbox="../media/flexbox-hover.msft.png":::
+:::image type="content" source="../media/flexbox-hover.msft.png" alt-text="Display Flexbox containers with the Inspect tool" lightbox="../media/flexbox-hover.msft.png":::
 
-#### <a name="displaying-persistent-overlays-on-flexbox-layouts"></a>在 Flexbox 布局上显示永久性覆盖
+#### Displaying persistent overlays on Flexbox layouts
 
-在 Microsoft Edge版本 89 或更高版本中，CSS Flexbox 功能提供在 Flexbox 布局上打开永久性覆盖的选项。  永久性覆盖具有以下优点：
-*   滚动、移动鼠标和使用 DevTools 的其他功能时，持久覆盖层在网页上仍然可见。
-*   可以同时使用多个永久性覆盖，以便你可以一次查看多个 Flexbox 布局。
-*   持久覆盖层提供颜色配置选项。
+In Microsoft Edge version 89 or later, the CSS Flexbox feature offers the option to turn on persistent overlays on Flexbox layouts.  Persistent overlays provide the following benefits:
+*   Persistent overlays remain visible on the webpage as you scroll, move your mouse, and use other features of DevTools.
+*   Multiple persistent overlays can be used at the same time, to allow you to review several Flexbox layouts at once.
+*   Persistent overlays offer color configuration options.
 
-若要切换 Flexbox 布局上的永久性覆盖，请执行下列任一操作：
-*   选择 **"元素"** 工具的 DOM 树中显示的任何 Flexbox 容器旁边的 Flexbox **椭圆图标** 。
-*   打开位于"**元素**"工具中的新布局**** 面板，并选中要突出显示的每个 Flexbox 容器旁边的复选框。
+To toggle persistent overlays on Flexbox layout, do either of the following:
+*   Select the **Flexbox** oval icon next to any Flexbox container displayed in the DOM tree of the **Elements** tool.
+*   Open the new **Layout** panel located in the **Elements** tool, and select the checkbox next to each Flexbox container you want to highlight.
 
-:::image type="content" source="../media/flexbox-overlay.msft.png" alt-text="DevTools 中的弹性图标和布局面板" lightbox="../media/flexbox-overlay.msft.png":::
+:::image type="content" source="../media/flexbox-overlay.msft.png" alt-text="Flex icons and Layout panel in DevTools" lightbox="../media/flexbox-overlay.msft.png":::
 
-#### <a name="configuring-persistent-overlays"></a>配置永久性覆盖
+#### Configuring persistent overlays
 
-若要为 CSS 网格或弹性框布局配置持久覆盖层的选项，请使用“**布局**”窗格。  “**布局**”窗格位于“**样式**”和“**计算**”窗格旁边的“**元素**”工具中。
+To configure options for persistent overlays for CSS grids or Flexbox layouts, use the **Layout** pane.  The **Layout** pane is located in the **Elements** tool next to the **Styles** and **Computed** panes.
 
-:::image type="content" source="../media/flexbox-layout.msft.png" alt-text="布局面板" lightbox="../media/flexbox-layout.msft.png":::
+:::image type="content" source="../media/flexbox-layout.msft.png" alt-text="Layout panel" lightbox="../media/flexbox-layout.msft.png":::
+-->

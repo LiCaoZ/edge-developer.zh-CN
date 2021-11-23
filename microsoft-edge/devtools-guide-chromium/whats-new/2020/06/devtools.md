@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: a3a6dd9236bee5285366cc13261e7136b7d5d3c4
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.openlocfilehash: 54864fbb20b77d787c8ee597f7a1e30535272d0e
+ms.sourcegitcommit: c1f5b8d23ade4bd4e808dcb855a2e7636eff597b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170370"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "12191132"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -27,13 +27,13 @@ ms.locfileid: "12170370"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="whats-new-in-devtools-microsoft-edge-85"></a>DevTools 85 (Microsoft Edge中的新增) 
+# <a name="whats-new-in-devtools-microsoft-edge-85"></a>DevTools (Microsoft Edge 85 中的新增) 
 
 
 <!-- ====================================================================== -->
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告
 
-以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要随时了解开发人员工具中所有最新且最重要的功能，请下载[Microsoft Edge 预览](https://www.microsoftedgeinsider.com/download/)频道，并按照 Twitter 上的[Microsoft Edge DevTools 团队进行跟踪](https://twitter.com/EdgeDevTools)。
+以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要随时了解开发人员工具中所有最新且最好的功能，请下载[Microsoft Edge 预览](https://www.microsoftedgeinsider.com/download/)频道，并按照 Twitter 上的[Microsoft Edge DevTools 团队。](https://twitter.com/EdgeDevTools)
 
 ### <a name="css-grid-debugging-features"></a>CSS 网格调试功能
 
@@ -41,14 +41,14 @@ ms.locfileid: "12170370"
    试验功能
 :::image-end:::
 
-开发人员Microsoft Edge团队与 Chrome DevTools 团队和 Chromium 社区协作，将新的 CSS 网格调试功能添加到 DevTools。  现在，你可以将网格线号、网格间隔和扩展网格线显示为页面上覆盖。  此外，即将推出对网格工具的更多改进。
+开发人员Microsoft Edge团队正在与 Chrome DevTools 团队和 Chromium 社区协作，将新的 CSS 网格调试功能添加到 DevTools。  现在，你可以将网格线号、网格间隔和扩展网格线显示为页面上覆盖。  此外，即将推出对网格工具的更多改进。
 
 :::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS 网格调试功能" lightbox="../../media/2020/06/experiments-grid.msft.png":::
    CSS 网格调试功能
 :::image-end:::
 
 > [!NOTE]
-> 若要启用实验，请导航到打开 [实验](../../../experimental-features/index.md#turning-on-experimental-features) 功能，并选中启用新的 CSS 网格调试功能 **旁边的复选框**。
+> 若要启用实验， [请导航到](../../../experimental-features/index.md#turning-an-experiment-on-or-off) 打开或关闭实验，然后选中启用新的 CSS 网格调试功能 **旁边的复选框**。
 >
 > 若要使用示例试用实验，请导航到 [CSS 网格规划器示例](https://codepen.io/hxlnt/full/YzwBzKM)。
 
@@ -66,7 +66,7 @@ Chromium问题[#1047356](https://crbug.com/1047356)
    使用网络控制台在 [NetworkLog](../../../network/index.md#log-network-activity) 中编辑和 **重播请求**
 :::image-end:::
 
-网络控制台是一个新 **面板，它将** 在 [DevTools"](../../../customize/index.md#drawer) 箱"中打开，并自动填充 HTTP 请求的信息。  若要显示从服务器返回的响应，请编辑请求 (并) 发送 **"。**
+新面板" **网络控制台** "将在 [DevTools"](../../../customize/index.md#drawer) 箱"中打开，并自动填充 HTTP 请求的信息。  若要显示从服务器返回的响应，请编辑请求 (并) 发送 **"。**
 
 您还可以使用网络 **控制台** 直接从 DevTools 创建和发送 HTTP 请求。
 
@@ -78,15 +78,15 @@ Chromium问题[#1047356](https://crbug.com/1047356)
 > To display **Network Console** in the main (top) panel instead of the [DevTools Drawer，](../../../customize/index.md#drawer)navigate to [moving tools between panels](#move-tools-between-panels).
 
 > [!NOTE]
-> 若要启用实验，请导航到 [打开实验](../../../experimental-features/index.md#turning-on-experimental-features) 功能，然后选择启用网络控制台旁边的 **复选框**。
+> 若要启用实验，请导航到打开或关闭 [实验](../../../experimental-features/index.md#turning-an-experiment-on-or-off) ，然后选择启用网络控制台旁边的 **复选框**。
 >
-> 打开网络[日志](../../../network/index.md#log-network-activity)，打开上下文菜单 (右键单击") "，然后选择"编辑和**重播"。**
+> 打开"[网络日志"，](../../../network/index.md#log-network-activity)打开上下文菜单 (右键单击") "，然后选择"编辑和**重播"。**
 
 Chromium问题[#1093687](https://crbug.com/1093687)
 
 ### <a name="service-worker-respondwith-events-in-the-timing-tab"></a>服务工作者 respondWith"计时"选项卡中的事件
 
-网络**工具****的"** 计时"选项卡现在包括 `respondWith` 服务工作器事件。  服务工作线程事件显示从服务工作进程事件处理程序开始运行前一段时间到处理程序承诺得到实现的时间 `respondWith` `fetch` `respondWith` `fetch` 的持续时间。
+网络 **工具** 的" **计时"** 选项卡现在包括 `respondWith` 服务工作器事件。  服务工作线程事件显示从服务工作进程事件处理程序开始运行前一段时间到处理程序承诺得到实现的时间 `respondWith` `fetch` `respondWith` `fetch` 的持续时间。
 
 :::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="&quot;网络&quot;面板的&quot;计时&quot;选项卡中的 respondWith 服务工作线程事件" lightbox="../../media/2020/06/timing-tab.msft.png":::
    网络 `respondWith` 工具的" **计时"** 选项卡中的服务 **工作器** 事件
@@ -113,7 +113,7 @@ Chromium问题[#1066579](https://crbug.com/1066579)
 :::image-end:::
 
 > [!NOTE]
-> 若要启用实验，请导航到打开 [实验](../../../experimental-features/index.md#turning-on-experimental-features) 功能，然后选择启用 **Webhint 旁边的复选框**。
+> 若要启用实验，请导航到打开或 [关闭实验](../../../experimental-features/index.md#turning-an-experiment-on-or-off) ，然后选择启用 **Webhint 旁边的复选框**。
 >
 > 打开" [问题](../../../issues/index.md) "面板以显示来自 Webhint 的反馈。
 
@@ -125,20 +125,20 @@ Chromium问题[#1070378](https://crbug.com/1070378)
    试验功能
 :::image-end:::
 
-通常，仅在 DevTools**** 的顶部 (打开元素和网络) 等工具。 ****  同样，诸如**3D 视图**和**** 问题等工具可能只能在 DevTools (底部的) 箱中打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。
+通常，仅在 DevTools**** 的顶部 (打开元素) 网络等工具。 ****  同样 **，3D 视图**和问题等**** 工具可能只能在 DevTools (底部的) 中打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。
 
 :::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="在面板之间移动工具" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
    在面板之间移动工具
 :::image-end:::
 
 > [!NOTE]
-> 若要启用实验，请导航到打开 [实验](../../../experimental-features/index.md#turning-on-experimental-features) 功能，然后选择启用支持以在面板之间 **移动选项卡旁边的复选框**。
+> 若要启用实验，请 [导航到打开](../../../experimental-features/index.md#turning-an-experiment-on-or-off) 或关闭实验，然后选择启用支持以在面板之间 **移动选项卡旁边的复选框**。
 
 Chromium问题[#897944](https://crbug.com/897944)
 
 ### <a name="improved-initiator-tooltip-in-the-network-panel"></a>网络面板中改进的发起人工具提示
 
-在 Microsoft Edge 83 和 84 中，"发起者"列的工具提示显示在使用水平滚动条显示的"网络日志[](../../../network/index.md#log-network-activity)"中，显示资源请求的原因。  你仅能够在工具提示中水平滚动来显示发起请求的调用堆栈。
+在 Microsoft Edge 83 和 84 中，"发起者"列的工具提示显示在使用水平滚动条显示的"网络日志"[](../../../network/index.md#log-network-activity)中，显示资源请求的原因。  你仅能够在工具提示中水平滚动来显示发起请求的调用堆栈。
 
 :::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="84 中的发起Microsoft Edge提示" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
    84 中的发起Microsoft Edge提示
@@ -160,7 +160,7 @@ Chromium问题[#1069404](https://crbug.com/1069404)
 
 ### <a name="style-editing-for-css-in-js-frameworks"></a>CSS-in-JS 框架的样式编辑
 
-现在 **，"** 样式"窗格可以更好地支持使用 CSS 对象模型和 [CSSOM ](https://drafts.csswg.org/cssom) (API 创建的) 样式。  许多 CSS-in-JS 框架和库在构建样式的底层使用 CSSOM API。
+" **样式** "窗格现在更好地支持使用 CSS 对象模型和 [CSSOM ](https://drafts.csswg.org/cssom) (API 创建的) 样式。  许多 CSS-in-JS 框架和库在构建样式的底层使用 CSSOM API。
 
 现在您可以使用可构造样式表编辑在 JavaScript 中添加 [的样式](https://wicg.github.io/construct-stylesheets/)。  可构造的样式表是使用 Shadow DOM 时创建和分发可重用样式 [的一种新方式](https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM)。
 
@@ -233,7 +233,7 @@ Chromium问题[#1073903](https://crbug.com/1073903)， [#1083214](https://crbug.
 " **清单** "窗格现在显示针对以下条件的警告。
 
 * 应用快捷方式图标小于 96x96 像素
-* 应用快捷方式图标和清单图标不是 (，因为会忽略这些) 
+* 应用快捷方式图标和清单图标不是 (，因为图标在应用中) 
 
 :::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="应用快捷方式警告" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
    应用快捷方式警告
@@ -263,7 +263,7 @@ Chromium问题[#1071432](https://crbug.com/1071432)
 当在"源"面板编辑器中执行复制[](../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files)或剪切操作时，DevTools 将复制或剪切当前内容行。
 
 :::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="当光标位于第 5 行的末尾时，从 DevTools pen.js复制整行并粘贴到Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
-   当光标位于第 5 行的末尾时，从 DevToolspen.js复制整行，并粘贴到 Visual Studio Code [。](https://code.visualstudio.com/) ****
+   当光标位于第 5 行的末尾时，从 DevTools 中的pen.js复制整个行，并粘贴到[Visual Studio Code](https://code.visualstudio.com/)。 ****
 :::image-end:::
 
 Chromium问题[#800028](https://crbug.com/800028)
@@ -272,7 +272,7 @@ Chromium问题[#800028](https://crbug.com/800028)
 
 #### <a name="ungroup-same-console-messages"></a>取消同一控制台消息的组
 
-控制台**和控制台**中的组设置现在适用于重复消息。  以前，它只应用于类似的邮件。
+控制台**控制台中的**组设置现在适用于重复消息。  以前，它只应用于类似的邮件。
 
 例如，以前，DevTools 未取消对邮件进行分组，即使未取消选中" `hello` **组** 相似"。  现在， `hello` 邮件已取消组合。
 

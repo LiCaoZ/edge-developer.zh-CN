@@ -7,16 +7,16 @@ ms.date: 03/31/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: e868cd9f040a350bab9e201f3213ece65275c3d5
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 852abfed942d449e9d6ed65dc945d88f4e633747
+ms.sourcegitcommit: c1f5b8d23ade4bd4e808dcb855a2e7636eff597b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157437"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "12191118"
 ---
 # <a name="native-messaging"></a>本机消息传递
 
-扩展使用消息传递 API 与安装在用户设备上本机 Win32 应用进行通信。  本机应用主机使用标准输入和标准输出发送和接收扩展名的邮件。  使用本机消息传递的扩展安装在Microsoft Edge与任何其他扩展类似。  但是，本机应用不是由应用程序安装或Microsoft Edge。
+扩展使用消息传递 API 与安装在用户设备上本机 Win32 应用进行通信。  本机应用主机使用标准输入和标准输出发送和接收扩展名的邮件。  使用本机消息传递的扩展安装在Microsoft Edge与任何其他扩展类似。  但是，本机应用不是由 Microsoft Edge。
 
 若要获取扩展和本机应用主机，你有两个分发模型。
 
@@ -160,11 +160,11 @@ ms.locfileid: "12157437"
 旁加载扩展以测试主机的本机消息传递。
 若要在开发和检索期间旁加载扩展 `microsoft_catalog_extension_id` ，请完成以下操作。
 
-1.  导航到 `edge://extensions` ，然后打开"开发人员模式"切换按钮。
+1.  导航到 `edge://extensions` ，然后打开"开发工具模式"切换按钮。
 1.  选择 **"加载解压缩**"，然后选择要旁加载的扩展包。
 1.  选择“确定”****。
 1.  导航到 `edge://extensions` 页面并验证扩展是否列出。
-1.  从页面上的扩展 `microsoft_catalog_extension_id` (ID) 复制密钥。
+1.  从页面上的 `microsoft_catalog_extension_id` 扩展 (从) ID 复制密钥。
 
 准备好将扩展分发给用户时，将扩展发布到 Microsoft Edge 加载项网站。  已发布扩展的扩展 ID 可能与旁加载扩展时所使用的 ID 不同。  如果 ID 发生更改，则使用已发布扩展的 `allowed_origins` ID 在主机清单文件中更新。
 
@@ -178,8 +178,6 @@ ms.locfileid: "12157437"
 > 请确保对清单文件提供读取权限，并且对主机运行时运行权限。
 
 ### [<a name="windows"></a>Windows](#tab/windows/)
-
-<a id="copy-manifest-file"></a>
 
 清单文件可能位于文件系统中的任何位置。  应用安装程序必须创建注册表项，并且将注册表项的默认值设置为清单文件的完整路径。  以下位置是注册表项的示例。
 
@@ -211,7 +209,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.m
 
     1.  运行 `.reg` 文件。
 
-Microsoft Edge查询后跟 `HKEY_CURRENT_USER` 的根键 `HKEY_LOCAL_MACHINE` 。  在这两个项中，首先搜索 32 位注册表，然后搜索 64 位注册表以标识本机消息传递主机。  注册表项指定本机消息传递主机清单的位置。  如果注册表项的Microsoft Edge没有主机清单的位置，Chromium Chrome 注册表位置将用作回退选项。  如果Microsoft Edge在先前列出的任何位置找到注册表项，则它不会查询以下代码片段中列出的位置。  如果作为批处理脚本的一部分运行所创建的文件， `.reg` 请确保使用管理员命令提示符运行它。
+Microsoft Edge查询后跟 `HKEY_CURRENT_USER` 的根键 `HKEY_LOCAL_MACHINE` 。  在这两个项中，首先搜索 32 位注册表，然后搜索 64 位注册表以标识本机消息传递主机。  注册表项指定本机消息传递主机清单的位置。  如果注册表项的 Microsoft Edge没有主机清单的位置，Chromium 和 Chrome 注册表位置将用作回退选项。  如果Microsoft Edge在先前列出的任何位置找到注册表项，则它不会查询以下代码片段中列出的位置。  如果作为批处理脚本的一部分运行所创建的文件， `.reg` 请确保使用管理员命令提示符运行它。
 
 以下列表是注册表位置的搜索顺序。
 
@@ -232,11 +230,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\
 ```
 
 > [!NOTE]
-> 如果您在 Microsoft Edge 加载项和 Chrome Webstore 上具有扩展，则必须在主机清单文件的 中添加与这两个存储对应的扩展名，因为只会读取与找到的第一个注册表位置对应的主机清单。 `allowed_origins`
+> 如果您在 Microsoft Edge 加载项和 Chrome Webstore 上具有扩展，则必须添加与主机清单文件中这两个存储对应的扩展名，因为只会读取与找到的第一个注册表位置对应的主机清单。 `allowed_origins`
 
 ### [<a name="macos"></a>macOS](#tab/macos/)
-
-<a id="copy-manifest-file"></a>
 
 若要存储清单文件，请完成以下操作之一。
 
@@ -261,8 +257,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\
     使用 Stable 渠道 ` {Channel_Name}` 时，不是必需的。
 
 ### [<a name="linux"></a>Linux](#tab/linux/)
-
-<a id="copy-manifest-file"></a>
 
 若要存储清单文件，请完成以下操作之一。
 
