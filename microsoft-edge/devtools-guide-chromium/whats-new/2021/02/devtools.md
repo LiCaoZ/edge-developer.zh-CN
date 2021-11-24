@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 2bf1660fa928b42b109990d4798ea0caf0bad954
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 50a4f3ede8278638f7d82e7dfce9f125689bf736
+ms.sourcegitcommit: c1f5b8d23ade4bd4e808dcb855a2e7636eff597b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156597"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "12191174"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -41,7 +41,7 @@ ms.locfileid: "12156597"
 
 焦点模式是一个试验界面，允许你根据自己的调试方案将不同工具组合在一起。  左侧显示的新“**活动栏**”包括预定义的工具组，如“**布局**”和“**调试**”。  若要自定义每个工具组，请使用“**关闭**”(`X`) 图标关闭工具，或使用“**更多工具**”(`+`) 图标添加新工具。
 
-若要启用试验，请导航至“[启用试验功能](../../../experimental-features/index.md#turning-on-experimental-features)”，然后选择“**焦点模式和 DevTools 工具提示**”和“**启用 + 按钮选项卡菜单以打开更多工具**”旁边的复选框。  有关此功能的详细信息，或者要用问题和想法进行评论，请导航到 [DevTools: 焦点模式 UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md)。
+若要启用试验，请导航至“启用或禁用试验[](../../../experimental-features/index.md#turning-an-experiment-on-or-off)”，然后选择“焦点模式和 DevTools 工具提示****”和“启用 + 按钮选项卡菜单以打开更多工具****”旁边的复选框。  有关此功能的详细信息，或者要用问题和想法进行评论，请导航到 [DevTools: 焦点模式 UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md)。
 
 :::image type="complex" source="../../media/2021/02/focus-mode.msft.png" alt-text="显示“活动栏”" lightbox="../../media/2021/02/focus-mode.msft.png":::
    显示“**活动栏**”
@@ -54,7 +54,7 @@ ms.locfileid: "12156597"
 <!-- Title: DevTools Tooltips  -->
 <!-- Subtitle: Learn more about how to use DevTools with informative DevTools tooltips.  -->
 
-DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  选择“**活动栏**”底部的“帮助”(`?`) 图标，以便在 DevTools 中切换工具提示。  当工具提示打开时，请将鼠标悬停在 DevTools 的每个概述区域上，以了解有关如何使用工具的更多信息。  若要启用试验，请导航至“[启用试验功能](../../../experimental-features/index.md#turning-on-experimental-features)”，然后选择“**焦点模式和 DevTools 工具提示**”和“**启用 + 按钮选项卡菜单以打开更多工具**”旁边的复选框。  有关此功能的详细信息，或者要用问题和想法进行评论，请导航到 [DevTools: 焦点模式 UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md)。
+DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  选择“**活动栏**”底部的“帮助”(`?`) 图标，以便在 DevTools 中切换工具提示。  当工具提示打开时，请将鼠标悬停在 DevTools 的每个概述区域上，以了解有关如何使用工具的更多信息。  若要启用试验，请导航至“启用或禁用试验[](../../../experimental-features/index.md#turning-an-experiment-on-or-off)”，然后选择“焦点模式和 DevTools 工具提示****”和“启用 + 按钮选项卡菜单以打开更多工具****”旁边的复选框。  有关此功能的详细信息，或者要用问题和想法进行评论，请导航到 [DevTools: 焦点模式 UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md)。
 
 :::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="选择“活动栏”中的“帮助”(?) 图标以显示工具提示" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
    选择“**活动栏**”中的“帮助”(`?`) 图标以显示工具提示
@@ -288,7 +288,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 *   若要显示完整的辅助功能树视图，请选择“**切换到辅助功能树视图**”。
 *   若要显示 DOM 树视图，请选择“**切换到 DOM 树视图**”。
 
-若要启用试验，请导航至“[启用试验功能](../../../experimental-features/index.md#turning-on-experimental-features)”，然后选中“**在‘元素’窗格中启用完整的辅助功能树视图**”旁边的复选框。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [887173](https://crbug.com/887173)。
+若要启用试验，请导航至“启用或禁用试验[](../../../experimental-features/index.md#turning-an-experiment-on-or-off)”，然后选择“在‘元素’窗格中启用完整的辅助功能树视图****”旁边的复选框。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [887173](https://crbug.com/887173)。
 
 :::row:::
    :::column span="":::
