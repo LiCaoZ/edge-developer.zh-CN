@@ -3,17 +3,17 @@ description: 了解如何管理 WebView2 应用程序
 title: 管理 WebView2 应用程序
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/21/2020
+ms.date: 11/12/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、企业、组策略、可管理性
-ms.openlocfilehash: f760473ff6d2d8b5b423a31f462680e86518400c
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: fb9d07e1d857e99739e2bc5d87a2066ec8cda4f5
+ms.sourcegitcommit: dd895443f2ef4e045543cb639c412062657bf3cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156100"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "12191353"
 ---
 # <a name="managing-webview2-applications"></a>管理 WebView2 应用程序
 
@@ -33,6 +33,18 @@ IT 管理员可以使用组策略对象 (GPO) WebView2 的策略设置。  以�
 
 
 <!-- ====================================================================== -->
+## <a name="windows-server-update-services-wsus"></a>Windows Server Update Services (WSUS)
+
+[Windows Server Update Services (WSUS) ](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)使信息技术管理员能够部署最新的 Microsoft 产品更新。 可以使用 WSUS 完全管理通过 Microsoft 更新将发布的 WebView2 更新分发到网络上的计算机。
+
+> [!NOTE]
+> 建议使用默认更新程序接收 WebView2 Microsoft Edge方法。 应谨慎修改更新和服务路径。
+
+### <a name="webview2-deployment-and-update-using-wsus"></a>使用 WSUS 的 WebView2 部署和更新
+
+Configuration Manager 中的 WebView2 选项存在于"Microsoft Edge"节点下。 有关详细信息，请访问 Update [Microsoft Edge](/mem/configmgr/apps/deploy-use/deploy-edge)。
+
+
 ## <a name="see-also"></a>另请参阅
 
 *  [分发 WebView2 应用和 WebView2 运行时](./distribution.md) - 关于常青、自更新的 WebView2 运行时。

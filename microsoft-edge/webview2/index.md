@@ -3,17 +3,17 @@ description: 使用 Microsoft Edge WebView2 控件在 Win32、.NET 以及 UWP �
 title: Microsoft Edge WebView2 简介
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 11/12/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、edge html、Windows Forms、WinForms、WPF、.NET、WinUI、Project Reunion
-ms.openlocfilehash: d1fa90a2187f4f038e484644effa90d4e2e60643
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.openlocfilehash: 492891eceb41885cd89e36fcb7468ae0739c3c58
+ms.sourcegitcommit: dd895443f2ef4e045543cb639c412062657bf3cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170671"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "12191360"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介
 
@@ -89,7 +89,7 @@ Similar table: [Overview of Progressive Web Apps (PWAs)](..\progressive-web-apps
     :::column:::
         :::image type="icon" source="./media/webview-reasons-fixed-small.msft.png":::  
         **固定版本分布**  
-        （可选）将特定版本的 Chromium打包到应用中。
+        可以选择在应用中打包特定版本的 Chromium 位。
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/webview-reasons-incremental-adoption-small.msft.png":::  
@@ -124,14 +124,16 @@ Similar table: [Overview of Progressive Web Apps (PWAs)](..\progressive-web-apps
 *   .NET Framework 4.5 或更高版本
 *   .NET Core 3.1 或更高版本
 *   .NET 5
-*   .NET 6 (Preview) 
+*   .NET 6
+*   WinUI 2.0 (Preview) 
 *   [WinUI 3.0](/uwp/toolkits/winui3/index)
 
 WebView2 应用可以在以下版本的 Windows。
 
+*   Windows 11
 *   Windows 10
-*   Windows 10 IoT 企业版LTSC x32 2019
-*   Windows 10 IoT 企业版LTSC x64 2019
+*   Windows 10 IoT 企业版 LTSC x32 2019
+*   Windows 10 IoT 企业版 LTSC x64 2019
 *   Windows 10 IoT 企业版 21h1 x64
 *   Windows 8.1
 *   Windows 7 \*\*
@@ -142,7 +144,7 @@ WebView2 应用可以在以下版本的 Windows。
 *   Windows Server 2008 R2 \*\*
 
 > [!IMPORTANT]
-> \*\* 对 Windows 7 和 Windows Server 2008 R2 的 WebView2 支持与 Microsoft Edge 的支持周期相同。  有关详细信息，请导航到 [Microsoft Edge 支持的操作系统](/deployedge/microsoft-edge-supported-operating-systems)。
+> 对 Windows 7 和 Windows Server 2008 R2 的 WebView2 支持将具有与 Microsoft Edge 相同的支持时间线。  有关详细信息，请参阅Microsoft Edge[支持的操作系统。](/deployedge/microsoft-edge-supported-operating-systems)
 
 
 <!-- ====================================================================== -->
