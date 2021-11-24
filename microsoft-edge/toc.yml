@@ -307,6 +307,12 @@
       items:
         - name: Microsoft Edge 扩展概述
           href: extensions-chromium/index.md
+        - name: 新增功能
+          items:
+            - name: Microsoft Edge 加载项已发布功能
+              href: extensions-chromium/whats-new/released-features.md
+            - name: Microsoft Edge 加载项路线图
+              href: extensions-chromium/whats-new/roadmap.md
         - name: 入门
           items:
             - name: 扩展体系结构
