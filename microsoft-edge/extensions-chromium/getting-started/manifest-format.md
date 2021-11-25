@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， 扩展， mv2， mv3， 清单
-ms.openlocfilehash: e64ca403b810b8fcf429064e421f296bca683d2f
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 19819bd09e92f334d892c1e21abec0112fdc1e37
+ms.sourcegitcommit: 77b290f3c59c0224a19bcf98533024aadf04e13f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157346"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "12209956"
 ---
 # <a name="manifest-file-format-for-extensions"></a>扩展名的清单文件格式
 
@@ -22,7 +22,7 @@ ms.locfileid: "12157346"
 *  扩展的标题。
 *  运行扩展所需的权限。
 
-扩展的格式 `manifest.json` 正在从清单 V2 移动到清单 V3。  此处显示了这两种格式。  若要将清单 V2 扩展迁移到清单 V3，请导航到准备将扩展从[清单 v2 更新到 v3。](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md)
+扩展的格式 `manifest.json` 正在从清单 V2 移动到清单 V3。  此处显示了这两种格式。  若要将清单 V2 扩展迁移到清单 V3，请参阅准备将扩展从[清单 V2 更新到 V3。](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md)
 
 
 <!-- ====================================================================== -->
@@ -30,7 +30,7 @@ ms.locfileid: "12157346"
 
 以下代码显示了清单 V3 程序包中扩展支持的 `manifest.json` 字段。
 
-有关每个字段的参考信息，请导航 [到"V3 (") "清单文件格式"， ](https://developer.chrome.com/docs/extensions/mv3/manifest) 然后选择这些字段上的链接。
+有关每个字段的参考信息，请导航到 ["V3 (") "清单文件格式"， ](https://developer.chrome.com/docs/extensions/mv3/manifest) 然后选择这些字段上的链接。
 
 ```json
 {

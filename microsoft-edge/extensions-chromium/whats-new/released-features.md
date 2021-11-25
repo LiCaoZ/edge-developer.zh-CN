@@ -1,20 +1,20 @@
 ---
 description: Microsoft Edge加载项发布的功能提供了有关在合作伙伴中心上为扩展开发人员启动的功能的信息。
-title: Microsoft Edge加载项发布的功能
+title: Microsoft Edge 加载项已发布功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 11/24/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， 加载项发布功能， 加载项新功能， 加载项功能启动
-ms.openlocfilehash: 7519a99ad4ab2241fa69d01eb25c1fd2da05ff89
-ms.sourcegitcommit: 16ebc122085d84bcca2eaa356ecf4c5b4259885d
+ms.openlocfilehash: 58ed15148e149e65b11f3883fac89cfcb4b262b6
+ms.sourcegitcommit: 77b290f3c59c0224a19bcf98533024aadf04e13f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/24/2021
-ms.locfileid: "12192384"
+ms.locfileid: "12209928"
 ---
-# <a name="microsoft-edge-add-ons-released-features"></a>Microsoft Edge加载项发布的功能
+# <a name="microsoft-edge-add-ons-released-features"></a>Microsoft Edge 加载项已发布功能
 
 本文介绍了在合作伙伴中心上 [为扩展开发人员](https://partner.microsoft.com/dashboard/home) 启动的功能。
 
@@ -37,6 +37,13 @@ ms.locfileid: "12192384"
 此功能允许扩展开发人员从合作伙伴中心仪表板和概述页面查看[](https://partner.microsoft.com/dashboard/home)其扩展提交。  开发人员可以更轻松地跟踪其扩展提交查看状态、查看过去的更新、查看提交状态，以及管理合作伙伴中心上的扩展。
 
 *2021 年 5 月发布*
+
+<!-- ====================================================================== -->
+## <a name="support-for-manifest-v3-extensions"></a>支持清单 V3 扩展
+
+Microsoft Edge加载项现在支持使用清单 V3 的扩展。 有关详细信息 [，请查看]( https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254) 博客。
+
+*2021 年 4 月发布*
 
 
 <!-- ====================================================================== -->
