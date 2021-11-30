@@ -3,29 +3,31 @@ description: 使用安装者自动执行和测试Microsoft Edge。
 title: Puppeteer 概述
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/06/2021
+ms.date: 11/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge， Web 开发， 开发人员， 工具， 自动化， 测试
-ms.openlocfilehash: 7f51fdeb84183c09ee509c76a83eac52ffe67f71
-ms.sourcegitcommit: 1e32efb1c9811ec7c65816e938d1a64b1ca5ece6
+ms.openlocfilehash: 37da6569fd4683b38fc971774710806f1fe4e16f
+ms.sourcegitcommit: fd82fddb567614daec21d33997f9f6b4826476a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "12158556"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "12233256"
 ---
 # <a name="puppeteer-overview"></a>Puppeteer 概述
 
-[部署程序](https://pptr.dev)是一[个节点](https://nodejs.org)库，它提供高级 API，以Microsoft Edge[开发人员协议控制应用程序](https://chromedevtools.github.io/devtools-protocol)。  默认情况下，安装 [者启动无](https://en.wikipedia.org/wiki/Headless_browser) 头浏览器。  无头浏览器不显示 UI，因此您必须使用命令行。  还可以将一个安装器配置为 (无头) Microsoft Edge运行。
+[部署程序](https://pptr.dev)是一[个节点](https://nodejs.org)库，它提供高级 API 以使用[DevTools Microsoft Edge控制应用程序](https://chromedevtools.github.io/devtools-protocol)。  默认情况下，安装 [者启动无](https://en.wikipedia.org/wiki/Headless_browser) 头浏览器。  无头浏览器不会在用户界面 (用户界面) ，因此必须使用命令行。  还可以将安装程序配置为在无头 (运行完整) Microsoft Edge。
 
-默认情况下，当你安装工具时，安装程序会下载最新版本的[Chromium](https://www.chromium.org/Home)，开放源代码浏览器Microsoft Edge[也基于](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration)构建。  如果已安装Microsoft Edge，可以使用[安装程序核心](https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core)。  `puppeteer-core` 是启动现有浏览器安装的一个轻型版本的一个（如 Microsoft Edge）。  若要下载Microsoft Edge，请导航到"Microsoft Edge[预览体验成员频道"。](https://www.microsoftedgeinsider.com/download)
+默认情况下，当你安装工具时，安装程序会下载最新版本的[Chromium](https://www.chromium.org/Home)，开放源代码浏览器Microsoft Edge[也基于](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration)构建。
+
+如果已安装Microsoft Edge，可以使用[用户核心](https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core)。  `puppeteer-core` 是启动现有浏览器安装的一个轻型版本的一个（如 Microsoft Edge）。  若要下载Microsoft Edge，请转到下载[Microsoft Edge预览体验成员频道。](https://www.microsoftedgeinsider.com/download)
 
 
 <!-- ====================================================================== -->
 ## <a name="installing-puppeteer-core"></a>安装安装程序核心
 
-可以使用以下 `puppeteer-core` 命令之一添加到网站或应用。
+可以使用以下命令之一 `puppeteer-core` 添加到网站或应用：
 
 ```shell
 npm i puppeteer-core
@@ -39,79 +41,80 @@ yarn add puppeteer-core
 <!-- ====================================================================== -->
 ## <a name="launch-microsoft-edge-with-puppeteer-core"></a>启动Microsoft Edge核心发布
 
-> [!NOTE]
-> `puppeteer-core` 依赖于 Node v8.9.0 或更高版本。  下面的示例使用仅在 Node `async` / `await` v7.6.0 或更高版本中支持它。  从 `node -v` 命令行运行，以确保具有兼容的 Node.js。
+`puppeteer-core` 类似于其他浏览器测试框架，如[WebDriver。](../webdriver-chromium/index.md)  创建浏览器实例，打开网页，然后使用安装工具 API 操作网页。
 
-`puppeteer-core` 其他浏览器测试框架（如 [WebDriver）的用户应该很熟悉](../webdriver-chromium/index.md)。  创建浏览器实例，打开一个页面，然后使用一个百年工具 API 对其进行操作。  在下面的代码示例中， `puppeteer-core` 启动 Microsoft Edge，导航到 `https://www.microsoftedgeinsider.com` ，将屏幕截图保存为 `example.png` 。
+若要用于 `puppeteer-core` 启动Microsoft Edge：
 
-复制以下代码段并将其另存为 `example.js` 。
+1.  `puppeteer-core` 需要 Node v8.9.0 或更高版本。  请确保你拥有兼容的版本Node.js。  为此，请 `node -v` 从命令行运行。  另外，下面的示例使用 `async` / `await` ，它仅在 Node v7.6.0 或更高版本中受支持。
 
-```javascript
-const puppeteer = require('puppeteer-core');
+1.  在下面的代码示例中， `puppeteer-core` 启动 Microsoft Edge，转到 `https://www.microsoftedgeinsider.com` ，将屏幕截图保存为 `example.png` 。  复制以下代码段并将其另存为 `example.js` ：
 
-(async () => {
-  const browser = await puppeteer.launch({
-    executablePath: 'C:\\Program Files (x86)\\Microsoft\\Edge Dev\\Application\\msedge.exe'
-  });
-  const page = await browser.newPage();
-  await page.goto('https://www.microsoftedgeinsider.com');
-  await page.screenshot({path: 'example.png'});
+    ```javascript
+    const puppeteer = require('puppeteer-core');
+    
+    (async () => {
+      const browser = await puppeteer.launch({
+        executablePath: 'C:\\Program Files (x86)\\Microsoft\\Edge Dev\\Application\\msedge.exe'
+      });
+      const page = await browser.newPage();
+      await page.goto('https://www.microsoftedgeinsider.com');
+      await page.screenshot({path: 'example.png'});
+    
+      await browser.close();
+    })();
+    ```
+    
+1.  按照后续步骤查找可执行路径，然后更改为指向安装的 `executablePath` Microsoft Edge。  例如，在 macOS 上 `executablePath` ，Microsoft Edge Canary 应设置为 `/Applications/Microsoft\ Edge\ Canary.app/` 。
 
-  await browser.close();
-})();
-```
+1.  若要查找 `executablePath` ，一个简单的手动方法是转到 `edge://version` 并复制该 **页面上的可执行** 文件路径。
 
-更改为 `executablePath` 指向安装的 Microsoft Edge。  例如，在 macOS 上 `executablePath` ，Microsoft Edge Canary 应设置为 `/Applications/Microsoft\ Edge\ Canary.app/` 。  若要查找 ，请导航到 并复制该页面上的可执行路径，或者使用下列命令之一安装边缘 `executablePath` `edge://version` 路径包。 **** [](https://www.npmjs.com/package/edge-paths)
+1.  或者，若要以编程方式查找可执行路径，请首先通过[](https://www.npmjs.com/package/edge-paths)运行以下命令之一安装边缘路径包：
 
-```shell
-npm i edge-paths
-```
+    ```shell
+    npm i edge-paths
+    ```
+    
+    ```shell
+    yarn add edge-paths
+    ```
+    
+1.  然后，如果使用 查找可执行 `edge-paths` 路径，请运行类似以下示例的代码。 它使用[边缘路径](https://www.npmjs.com/package/edge-paths)包以编程方式查找在操作系统上安装Microsoft Edge路径：
 
-```shell
-yarn add edge-paths
-```
+    ```javascript
+    const edgePaths = require("edge-paths");
+    
+    const EDGE_PATH = edgePaths.getEdgePath();
+    ```
+    
+1.  现在，你已经找到可执行路径 (或以编程方式) ，在 `example.js` 中设置 `executablePath: EDGE_PATH` 。  保存更改。
 
-下面的代码示例使用[边缘路径](https://www.npmjs.com/package/edge-paths)包以编程方式查找在操作系统上安装Microsoft Edge路径。
+1.  从 `example.js` 命令行运行：
 
-```javascript
-const edgePaths = require("edge-paths");
+    ```shell
+    node example.js
+    ```
 
-const EDGE_PATH = edgePaths.getEdgePath();
-```
+    `puppeteer-core` 启动Microsoft Edge，转到 `https://www.microsoftedgeinsider.com` ，并保存网页的屏幕截图。  可以通过调用 [page.setViewport () 来自定义屏幕截图大小 ](https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-pagesetviewportviewport)。
 
-最后，在 `executablePath: EDGE_PATH` 中设置 `example.js` 。  保存更改。
+     以下 `example.png` 文件由 生成 `example.js` ：
 
-> [!NOTE]
-> Microsoft Edge (EdgeHTML) 不能与 一起工作 `puppeteer-core` 。  你必须安装预览Microsoft Edge预览体验[成员频道](https://www.microsoftedgeinsider.com/download)，以继续按照此示例操作。
+     :::image type="content" source="./media/puppeteer-example.png" alt-text="由example.png生成的example.js。" lightbox="./media/puppeteer-example.png":::
 
-现在， `example.js` 从命令行运行。
-
-```shell
-node example.js
-```
-
-`puppeteer-core` 启动Microsoft Edge，导航到 `https://www.microsoftedgeinsider.com` ，并保存网页的屏幕截图。  使用 [page.setViewport () 自定义屏幕截图大小 ](https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-pagesetviewportviewport)。
-
-:::image type="complex" source="./media/puppeteer-example.png" alt-text="由example.png生成的文件example.js" lightbox="./media/puppeteer-example.png":::
-   `example.png`生成的文件 `example.js`
-:::image-end:::
-
-这只是一个简单的示例，演示了由一个和 启用的自动化和测试方案 `puppeteer-core` 。  有关一览器及其工作原理的信息，请导航到 ["百分百](https://pptr.dev)"。
+前面的示例演示了可以使用一个和 介绍的基本自动化和测试方案 `puppeteer-core` 。  有关一线用户及其工作方式的信息，请参阅[一下"一线用户"。](https://pptr.dev)
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*   [WebDriver](../webdriver-chromium/index.md)
-*   [WebDriver (EdgeHTML)](/archive/microsoft-edge/legacy/developer/webdriver/index)
-*   [Chrome 开发人员工具协议查看器GitHub](https://chromedevtools.github.io/devtools-protocol)
-*   [Microsoft Edge：通过 Microsoft 体验博客上的更多开放源代码协作改善 Web](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration)
-*   [下载 Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download)
-*   [Chromium项目Chromium](https://www.chromium.org/Home)
-*   [Node.js](https://nodejs.org)
-*   [Puppeteer](https://pptr.dev)
-*   [一对多核](https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core)
-*   [Page.setViewport () on 一台（位于百利场上）](https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-pagesetviewportviewport)
-*   [维基百科上的无头浏览器](https://en.wikipedia.org/wiki/Headless_browser)
--->
-*  [联系 Microsoft Edge DevTools](../devtools-guide-chromium/contact.md)团队，发送有关使用 Feedbackeer、Microsoft Edge。
+*  [WebDriver](../webdriver-chromium/index.md)
+*  [WebDriver (EdgeHTML)](/archive/microsoft-edge/legacy/developer/webdriver/index)
+*  [Chrome 开发人员工具协议查看器GitHub](https://chromedevtools.github.io/devtools-protocol)
+*  [Microsoft Edge：通过 Microsoft 体验博客上的更多开放源代码协作改善 Web](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration)
+*  [下载 Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download)
+*  [Chromium项目Chromium](https://www.chromium.org/Home)
+*  [Node.js](https://nodejs.org)
+*  [Puppeteer](https://pptr.dev)
+*  [一对多核](https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core)
+*  [Page.setViewport () on 一台（位于百利场上）](https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-pagesetviewportviewport)
+*  [维基百科上的无头浏览器](https://en.wikipedia.org/wiki/Headless_browser)
+*  [联系 Microsoft Edge DevTools](../devtools-guide-chromium/contact.md)团队，发送有关使用开发工具、处理器核心和 Microsoft Edge。

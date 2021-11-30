@@ -1,0 +1,15 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0f05928e0ec9581a4724551f9d0295f50174fed8
+ms.sourcegitcommit: fd82fddb567614daec21d33997f9f6b4826476a1
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "12233274"
+blank_issues_enabled: true
+contact_links:
+- name: DevTools 问题
+  url: https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/contact
+  about: Learn more about how to submit feature requests or bug reports about Microsoft Edge DevTools.
+- name: WebView2 问题
+  url: https://github.com/MicrosoftEdge/WebView2Feedback/issues
+  about: Use the WebView2Feedback repository to report feedback, submit feature suggestions or bugs about WebView2, search for existing known issues for WebView2, or share tips and best practices.
