@@ -7,13 +7,13 @@ ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用，PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
-ms.openlocfilehash: 08925f5da6bacbc1b922088bc9f1732283ad7d76
-ms.sourcegitcommit: 242e9611f73507f587d1669af24d0e3423f722dc
+keywords: 渐进式 Web 应用、PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
+ms.openlocfilehash: cb5887789cf54e2f8d464e2032dd121c7035a90c
+ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "12087092"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "12235633"
 ---
 # <a name="use-service-workers-to-manage-network-requests-and-push-notifications"></a>使用服务工作人员管理网络请求和推送通知
 
@@ -23,7 +23,7 @@ ms.locfileid: "12087092"
 <!-- ====================================================================== -->
 ## <a name="registering-a-service-worker"></a>注册服务工作线程
 
-与其他 Web 工作人员类似，服务工作人员必须存在于单独的文件中。 注册服务工作器时引用此文件，如以下代码片段所示。
+与其他 Web 工作人员类似，服务工作人员必须存在于单独的文件中。 注册服务工作器时引用此文件，如以下代码所示：
 
 ```javascript
 if ( "serviceWorker" in navigator ) {
@@ -31,9 +31,9 @@ if ( "serviceWorker" in navigator ) {
 }
 ```
 
-新式浏览器为服务工作人员提供不同级别的支持。 因此，最佳做法是先测试对象是否存在，然后再运行任何与 `serviceWorker` 服务工作器相关的代码。 在以上代码段中，使用位于网站根目录的文件注册服务 `serviceworker.min.js` 工作器。
+新式浏览器为服务工作人员提供不同级别的支持。 因此，最佳做法是先测试对象是否存在，然后再运行任何与 `serviceWorker` 服务工作器相关的代码。 在以上代码中，使用位于网站根目录的文件注册服务 `serviceworker.min.js` 工作器。
 
-确保将服务工作线程文件放在您希望它管理的最高级别目录中。  此类目录称为 _服务工作_ 器的范围。  在上一个代码段中，文件存储在根中，服务工作器管理域中的所有页面。
+确保将服务工作线程文件放在您希望它管理的最高级别目录中。  此类目录称为 _服务工作_ 器的范围。  在之前的代码中，文件存储在根中，服务工作者管理域中的所有页面。
 
 如果服务工作器文件存储在目录中，则服务工作器的范围将是 `js` `js` 目录和任何子目录。  最佳做法是，将服务工作器文件放在网站的根目录下，除非需要缩小服务工作线程的范围。
 
@@ -76,7 +76,9 @@ if ( "serviceWorker" in navigator ) {
 <!-- ====================================================================== -->
 ## <a name="using-fetch-in-service-workers"></a>在服务工作者中使用提取
 
-在服务工作线程中使用的主要事件是 `fetch` 事件。  每次浏览器尝试访问服务工作器范围内的内容时，该事件 `fetch` 都会运行。 以下代码段演示如何将侦听器添加到提取事件。
+在服务工作线程中使用的主要事件是 `fetch` 事件。  每次浏览器尝试访问服务工作器范围内的内容时，都会 `fetch` 运行该事件。
+
+以下代码演示如何将侦听器添加到 fetch 事件：
 
 ```javascript
 self.addEventListener( "fetch", event => {
@@ -84,7 +86,9 @@ self.addEventListener( "fetch", event => {
 });
 ```
 
-在处理程序中，你可以控制请求是否进入网络、是否从缓存拉取 `fetch` ，等等。  您采用的方法可能有所不同，具体视所请求的资源类型、更新频率以及应用程序特有的其他业务逻辑而异。  下面是一些您可以执行哪些功能的示例：
+在处理程序中，你可以控制请求是否进入网络、是否从缓存拉取 `fetch` ，等等。  您采用的方法可能有所不同，具体视所请求的资源类型、更新频率以及应用程序特有的其他业务逻辑而异。
+
+下面是您可以在处理程序中执行哪些操作的示例 `fetch` ：
 
 *   如果可用，则从缓存返回响应;否则，回退到通过网络请求资源。
 *   从网络提取资源、缓存副本并返回响应。
@@ -96,7 +100,7 @@ self.addEventListener( "fetch", event => {
 <!-- ====================================================================== -->
 ## <a name="push-notifications"></a>推送通知
 
-服务工作人员可以向用户推送通知。  推送通知可以提示用户经过一段时间后重新使用您的应用程序。  若要了解更多信息，请参阅使用通知、推送通知和锁 [屏提醒重新吸引用户](./notifications-badges.md)。
+服务工作人员可以向用户推送通知。  推送通知可以提示用户经过一段时间后重新使用您的应用程序。  若要了解更多信息，请参阅 [使用锁屏提醒、通知和推送通知重新吸引用户](./notifications-badges.md)。
 
 
 <!-- ====================================================================== -->

@@ -1,5 +1,5 @@
 ---
-title: 与其他应用共享
+title: 与其他应用共享内容
 description: 了解如何与其他应用共享来自PWA内容并接受来自其他应用的共享内容。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,36 +8,36 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， 共享
-ms.openlocfilehash: a5f86868cc8dc2f2a174ed3ab25668551b3551db
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: ee9b0fe5313e69b0713cbf2a02297f0967a39596
+ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156471"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "12235654"
 ---
-# <a name="share-with-other-apps"></a>与其他应用共享
+# <a name="share-content-with-other-apps"></a>与其他应用共享内容
 
-在应用之间共享内容由移动设备所热门，其中操作文件或复制内容不如在桌面操作系统上直观。 在移动电话上，通常使用短信与好友共享图像。
+在应用之间共享内容由移动设备所热门，其中操作文件或复制内容不如在桌面操作系统上直观。  例如，在移动电话上，通常通过发送短信与好友共享图像。  但是，共享内容不会保留给移动设备;此外，在应用程序上的应用之间Windows共享。
 
-但是共享内容不再保留给移动设备，并且也有可能在移动设备的应用之间Windows。
+共享内容有两个方向，这两个方向都可以由渐进式 Web 应用 (PWA) ：
 
-共享内容有两个方面，并且两者都可以由 PWA 使用。
+| Direction | 描述 |
+|---|---|
+| 共享内容 | 若要共享内容，PWA生成 (内容，例如文本、链接或) 将共享内容上线到操作系统。  操作系统允许用户决定要使用哪个应用接收该内容。 |
+| 接收共享内容 | 若要接收内容，PWA用作内容目标。  该PWA在操作系统中注册为内容共享目标。 |
 
-*   共享内容：PWA生成内容 (文本、链接或文件时) 将内容传输给操作系统，让用户决定要使用哪个应用接收该内容。
-*   接收共享内容：当PWA用作内容目标时，在操作系统级别注册。
-
-注册为共享目标的 PWA 感觉与操作系统的本机集成性更明显，并且更吸引用户。
+注册为共享目标的 PWA 感觉本地已集成到操作系统中，并且更吸引用户。
 
 
 <!-- ====================================================================== -->
 ## <a name="sharing-content"></a>共享内容
 
-PWA 可以使用 [Web 共享 API](https://developer.mozilla.org/docs/Web/API/Web_Share_API) 触发操作系统共享对话框。
+PWA 可以使用 [Web 共享 API](https://developer.mozilla.org/docs/Web/API/Web_Share_API) 触发显示操作系统共享对话框。
 
 > [!NOTE]
-> Web 共享仅适用于通过 HTTPS (服务的网站，对于 PWA) ，只能调用它以响应用户操作。
+> Web 共享仅适用于通过 HTTPS (服务的网站，PBA) ，并且只能调用它以响应用户操作。
 
-若要共享链接、文本或文件等内容，请使用 `navigator.share` 函数。 函数接受至少应具有以下属性之一的对象：
+若要共享链接、文本或文件等内容，请使用 `navigator.share` 函数，如下所示。  `navigator.share`函数接受至少应具有以下属性之一的对象：
 
 *   `title`：共享内容的短标题。
 *   `text`：共享内容的较长说明。
@@ -58,9 +58,9 @@ function shareSomeContent(title, text, url) {
 }
 ```
 
-在以上代码段中，我们首先检查浏览器是否支持 Web 共享（如果 `navigator.share` 已定义）。 函数 `navigator.share` 返回一个承诺，该承诺在共享成功时解析，在出现错误时拒绝。
+在以上代码中，我们首先通过测试是否已定义来检查浏览器是否支持 Web `navigator.share` 共享。  该 `navigator.share` 函数返回 [一个 Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) 对象，该对象在共享成功时解析，在发生错误时拒绝。
 
-因为此处使用了承诺，所以可以使用 函数 `async` 重写此代码。
+因为此处使用了 Promise，所以上述代码可以重写为 `async` 函数，如下所示：
 
 ```javascript
 async function shareSomeContent(title, text, url) {
@@ -77,17 +77,18 @@ async function shareSomeContent(title, text, url) {
 }
 ```
 
-在Windows，上述代码将触发共享对话框，允许用户选取应用以接收共享内容。
+在Windows，上述代码将触发共享对话框，允许用户选取应用以接收共享内容。  共享对话框如下所示：
 
-:::image type="content" source="../media/windows-share-dialog.png" alt-text="&quot;共享&quot;对话框Windows。" lightbox="../media/windows-share-dialog.png":::
+:::image type="content" source="../media/windows-share-dialog.png" alt-text="&quot;共享&quot;对话框Windows。":::
 
-用户选择应用接收共享内容后，由该应用以任何方式处理它。 例如，电子邮件应用可能将 用作 `title` 电子邮件主题，将 用作 `text` 正文。
+用户选择应用接收共享内容后，由该应用以任何方式处理它。  例如，电子邮件应用可能将 用作 `title` 电子邮件主题，并使用 `text` 作为电子邮件正文。
+
 
 ### <a name="sharing-files"></a>共享文件
 
 函数 `navigator.share` 还接受用于 `files` 与其他应用共享文件的数组。
 
-在共享文件之前，测试共享文件是否受浏览器支持，这一点很重要。 若要检查是否支持共享文件，请使用 `navigator.canShare` 函数。
+在共享文件之前，测试共享文件是否受浏览器支持，这一点很重要。 若要检查是否支持共享文件，请使用 `navigator.canShare` 函数：
 
 ```javascript
 function shareSomeFiles(files) {
@@ -101,7 +102,11 @@ function shareSomeFiles(files) {
 
 `files`共享对象成员必须是对象 `File` 数组。 了解有关文件 [接口的更多信息](https://developer.mozilla.org/docs/Web/API/File)。
 
-构造对象的一种方式是使用 API 请求资源，然后使用返回的响应新建， `File` `fetch` `File` 如下所示。
+构造对象的一 `File` 种方式是：
+1. 首先，使用 `fetch` API 请求资源。
+1. 然后，使用返回的响应创建新的 `File` 。
+
+此方法如下所示。
 
 ```javascript
 async function getImageFileFromURL(imageURL, title) {
@@ -111,36 +116,42 @@ async function getImageFileFromURL(imageURL, title) {
 }
 ```
 
-在以上代码段中，函数使用其 URL 提取图像，然后使用 函数将其转换为 Blob 对象，该对象可用于 `getImageFileFromURL` `response.blob()` 创建 `File` 对象。
+在以上代码中：
+1. `getImageFileFromURL`函数使用 URL 获取图像。
+1. 该 `response.blob()` 函数将图像转换为二进制大型对象 (BLOB) 。
+1. 代码使用 BLOB `File` 创建对象。
 
-### <a name="demo"></a>演示版
 
-[DevTools 使用技巧](https://devtoolstips.org/)是PWA函数共享文本 `navigator.share` 和链接的一个工具。
+### <a name="demo-of-sharing-content"></a>共享内容的演示
+
+[DevTools 使用技巧](https://devtoolstips.org/)是一PWA，它使用 `navigator.share` 函数共享文本和链接。
 
 若要测试功能：：
 
-*  转到[DevTools 使用技巧](https://devtoolstips.org/)。
-*  选择主页上显示的任何提示。
-*  选择 **"共享提示"。**
+1. 转到[DevTools 使用技巧](https://devtoolstips.org/)。
+2. 选择提示。
+3. 单击 **"共享提示"。**
 
-:::image type="content" source="../media/devtools-tips-share.png" alt-text="&quot;Windows共享&quot;对话框允许用户选取要共享内容的应用。" lightbox="../media/devtools-tips-share.png":::
+将显示Windows**共享**"对话框。  用户选取要共享内容的应用：
 
-可以在[""上找到GitHub。](https://github.com/captainbrosset/devtools-tips/) 特别是，应用程序使用 Web 共享 API 在 [share.js源文件中 ](https://github.com/captainbrosset/devtools-tips/blob/main/src/assets/share.js#L38) 。
+:::image type="content" source="../media/devtools-tips-share.png" alt-text="&quot;Windows共享&quot;对话框允许用户选取应该接收共享内容的应用。":::
+
+可以在[""上找到GitHub。](https://github.com/captainbrosset/devtools-tips/)  应用程序使用应用程序源文件中的 Web [share.js](https://github.com/captainbrosset/devtools-tips/blob/main/src/assets/share.js#L38) API。
 
 
 <!-- ====================================================================== -->
 ## <a name="receiving-shared-content"></a>接收共享内容
 
-通过使用 Web 共享目标 API，PWA 还可以注册为在系统共享对话框中显示为应用，并处理来自其他应用的共享内容。 可以在 Web 共享目标 API [W3C](https://w3c.github.io/web-share-target/level-2/)规范草稿中了解有关 Web 共享目标 API 的信息。
+通过使用[Web 共享目标](https://w3c.github.io/web-share-target/level-2/)API，PWA注册为在系统共享对话框中显示为应用。  然后PWA Web 共享目标 API 处理来自其他应用的共享内容。
 
 > [!NOTE]
 > 只有已安装的 PWA 才能注册为共享目标。
 
 ### <a name="register-as-a-target"></a>注册为目标
 
-首先，将你的PWA注册为共享目标。 若要注册，请使用 `share_target` 清单成员。 安装应用后，操作系统将使用 成员将你的应用包括在系统共享对话框中，并知道在用户选取应用时 `share_target` 要执行哪些操作。
+若要接收共享内容，首先要将你的PWA注册为共享目标。  若要注册，请使用 `share_target` 清单成员。  安装应用后，操作系统会使用该 `share_target` 成员将你的应用包括在系统共享对话框中。  操作系统知道在用户选取你的应用时要执行哪些操作来共享内容。
 
-`share_target`成员必须包含系统将共享内容传递到应用的必要信息。 请考虑以下清单代码。
+`share_target`成员必须包含系统将共享内容传递到应用的必要信息。  请考虑以下清单代码：
 
 ```json
 {
@@ -156,9 +167,9 @@ async function getImageFileFromURL(imageURL, title) {
 }
 ```
 
-当用户选取你的应用作为共享内容的目标时，PWA 将启动，并且对属性指定的 URL 进行 HTTP 请求，共享数据作为 、 和 查询参数传递 `GET` `action` `title` `text` `url` 。 实际上，会提出以下请求 `/handle-shared-content/?title=shared title&text=shared text&url=shared url` ：。
+当用户选择你的应用作为共享内容的目标时，PWA启动。  `GET`对 属性指定的 URL 进行 HTTP `action` 请求。  共享数据作为 、 `title` 和 `text` `url` 查询参数传递。  将提出以下请求 `/handle-shared-content/?title=shared title&text=shared text&url=shared url` ：。
 
-如果已有使用这些其他名称的代码，可以将默认 、 和 `title` `text` 查询参数 `url` 映射到其他名称。
+如果您有使用其他查询参数名称的现有代码，您可以将默认 `title` 、 `text` 和 `url` 查询参数映射到其他名称。  在下面的示例中，、 `title` 和 查询参数将映射到 、 和 `text` `url` `subject` `body` `address` ：
 
 ```json
 {
@@ -176,7 +187,7 @@ async function getImageFileFromURL(imageURL, title) {
 
 ### <a name="handle-get-shared-data"></a>处理 GET 共享数据
 
-若要处理在代码代码中通过 GET 请求PWA数据，请使用构造函数 `URL` 提取查询参数。
+若要处理通过 GET 请求在代码代码中PWA的数据，请使用构造函数 `URL` 提取查询参数：
 
 ```javascript
 window.addEventListener('DOMContentLoaded', () => {
@@ -190,7 +201,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 ### <a name="handle-post-shared-data"></a>处理 POST 共享数据
 
-如果共享数据旨在以任何方式更改你的应用，例如通过更新应用中存储的一些内容，则必须使用 方法并使用 定义编码 `POST` 类型 `enctype` 。
+如果共享数据旨在以任何方式更改你的应用，例如通过更新应用中存储的一些内容，则必须使用 方法并使用 定义编码 `POST` 类型 `enctype` ：
 
 ```json
 {
@@ -207,7 +218,7 @@ window.addEventListener('DOMContentLoaded', () => {
 }
 ```
 
-`POST`HTTP 请求将包含编码为 的共享数据 `multipart/form-data` 。 可以使用服务器端代码在 HTTP 服务器上访问此数据，但当用户处于脱机状态时，这不起作用。 为了提供更好的体验，可以使用事件侦听器访问服务工作器 `fetch` 中的数据。
+`POST`HTTP 请求包含编码为 的共享数据 `multipart/form-data` 。  您可以使用服务器端代码在 HTTP 服务器上访问此数据，但当用户处于脱机状态时，这不起作用。  为了提供更好的体验，可以使用事件侦听器访问服务工作器中的数据， `fetch` 如下所示：
 
 ```javascript
 self.addEventListener('fetch', event => {
@@ -229,11 +240,17 @@ self.addEventListener('fetch', event => {
 });
 ```
 
-在以上代码段中，服务工作者截获请求，以某种方式使用数据 (例如本地存储内容（例如) ）以及将用户重定向到成功 `POST` 页面。 这样，即使网络关闭，应用也可以运行。 它可以选择仅本地存储内容，或在连接恢复时将其发送到服务器 (例如，使用 [后台](./background-syncs.md) 同步) 。
+在以上代码中：
 
-### <a name="handle-files"></a>处理文件
+1. 服务工作线程截获 `POST` 请求。
 
-应用还可以处理共享文件。 若要处理用户PWA，必须使用 `POST` 方法和编码 `multipart/form-data` 类型。 此外，你必须声明你的应用可以处理的文件类型。
+1. 以某种方式使用数据 (例如将内容存储在本地) 。
+
+1. 将用户重定向到成功页面。  这样，即使网络关闭，应用也可以运行。  应用可以选择仅本地存储内容，也可以选择稍后在连接还原时（例如，使用后台同步 (将 [内容发送到](./background-syncs.md)) 。
+
+### <a name="handle-shared-files"></a>处理共享文件
+
+应用还可以处理共享文件。 若要在文件中处理PWA，必须使用 `POST` 方法和编码 `multipart/form-data` 类型。 此外，你必须声明你的应用可以处理的文件类型。
 
 ```json
 {
@@ -246,7 +263,8 @@ self.addEventListener('fetch', event => {
             "files": [
                 {
                     "name": "textFile",
-                    "accept": ["text/plain", "text/html", "text/css", "text/javascript"]
+                    "accept": ["text/plain", "text/html", "text/css", 
+                               "text/javascript"]
                 }
             ]
         }
@@ -254,9 +272,9 @@ self.addEventListener('fetch', event => {
 }
 ```
 
-上述清单代码告知系统你的应用可以接受各种 mime 类型的文本文件。 文件扩展名也可在数组中 `accept` 传递， `.txt` 例如。
+上述清单代码告知系统你的应用可以接受各种 MIME 类型的文本文件。  还可以在数组中传递文件扩展名（如 `.txt` `accept` ）。
 
-若要访问共享文件，请使用与之前一样的请求 `formData` ，并使用 读取 `FileReader` 内容。
+若要访问共享文件，请使用与之前一样的请求 `formData` ，并使用 读取 `FileReader` 内容，如下所示：
 
 ```javascript
 self.addEventListener('fetch', event => {

@@ -8,52 +8,53 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， 窗口控件覆盖， API
-ms.openlocfilehash: d9d63bbcac53a0d592031c00ee8270184801b193
-ms.sourcegitcommit: 29208d0ce55dfeee7dad383bf1ae9dd96a590020
+ms.openlocfilehash: 707dacacb46943bc68146f19bd4e57e7d38ef085
+ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "12176637"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "12235661"
 ---
 # <a name="display-content-in-the-title-bar"></a>在标题栏中显示内容
 
-虽然移动版 PWA 可以定义他们希望如何使用应用清单文件的显示属性显示，但[](https://developer.mozilla.org/docs/Web/Manifest/display)桌面 PBA 无法使用它来创建沉浸式、本机式体验。
+一PWA应用程序清单文件中使用[display](https://developer.mozilla.org/docs/Web/Manifest/display)属性，定义它在移动平台上的显示方式。  但是，若要创建类似本机的沉浸式体验， _桌面_ PBA 无法采用这种方法。
 
-默认情况下，应用区域从保留的标题栏区域正下方开始。
+默认情况下，应用区域紧接在保留的标题栏区域下方开始：
 
-:::image type="content" source="../media/my-tracks-titlebar.png" alt-text="&quot;我的Windows&quot;演示栏上显示的默认应用标题PWA。" lightbox="../media/my-tracks-titlebar.png":::
+:::image type="content" source="../media/my-tracks-titlebar.png" alt-text="The default Windows app title bar shown on the My Tracks demo app.":::
 
-能够显示标题栏通常位于其中的内容可以帮助 PWA 感觉更加本机。
+正常情况下显示标题栏的内容可以帮助 PWA 感觉更加本机。  许多桌面应用程序（如 Visual Studio Code、Microsoft Teams 和 Microsoft Edge 已执行如下操作：
 
-许多桌面应用程序Visual Studio Code、Microsoft Teams或Microsoft Edge已执行过此操作。
+:::image type="content" source="../media/vscode-titlebar.png" alt-text="Visual Studio Code标题栏区域中显示内容。":::
 
-:::image type="content" source="../media/vscode-titlebar.png" alt-text="Visual Studio Code标题栏区域中显示内容。" lightbox="../media/vscode-titlebar.png":::
-
-窗口控件覆盖 API 允许你在应用的整个图面区域上显示 Web 内容，将关键系统所需的窗口控件移动到覆盖层，并让你的内容保持清除此覆盖。
+窗口控件覆盖 API 执行以下操作：
+*  允许你在应用的整个图面区域显示 Web 内容。
+*  将关键系统所需的窗口控件移动到覆盖层中。
+*  使内容可以保持清除此覆盖层。
 
 
 <!-- ====================================================================== -->
 ## <a name="enable-the-window-controls-overlay-api-in-microsoft-edge"></a>在窗口中启用窗口控件覆盖 API Microsoft Edge
 
-窗口控件覆盖 API 是实验性的，需要先在Microsoft Edge启用。
+窗口控件覆盖 API 是实验性的，必须在Microsoft Edge中启用，以使用它。
 
-若要启用 API：
+若要启用窗口控件覆盖 API：
 
-1.  转到 `edge://flags` Microsoft Edge。
-1.  选择 **"搜索标志** "并键入"窗口控件覆盖"。
+1.  在Microsoft Edge中，转到 `edge://flags` 。
+1.  选择 **"搜索标志** "，然后键入"窗口控件覆盖"。
 1.  选择 **"默认**  >  **启用重启**  >  **"。**
 
-    :::image type="content" source="../media/enable-window-controls-overlay-experiment.png" alt-text="启用窗口控件覆盖 API 实验。" lightbox="../media/enable-window-controls-overlay-experiment.png":::
+    :::image type="content" source="../media/enable-window-controls-overlay-experiment.png" alt-text="启用窗口控件覆盖 API 实验。":::
 
-窗口控件覆盖 API 也作为源试用功能提供。 你可以为应用的用户使用源试用版，以便从此功能中获益，而无需启用它。
+窗口控件覆盖 API 也作为源试用功能提供。  若要使应用的用户从窗口控件覆盖中获益，而无需在 Microsoft Edge 中启用它，可以使用源试用版。
 
 有关源试用版详细信息，请转到Microsoft Edge[源试用版开发人员控制台。](https://developer.microsoft.com/microsoft-edge/origin-trials)
 
 
 <!-- ====================================================================== -->
-## <a name="enable-the-feature-in-your-app"></a>在应用中启用该功能
+## <a name="enable-the-window-controls-overlay-in-your-app"></a>在应用中启用窗口控件覆盖
 
-首先要使用 属性在应用清单文件中启用此功能，[](./web-app-manifests.md) `display_override` 如下面的代码示例所示。
+首先要在应用的 Web 应用清单文件中启用窗口控件 [覆盖功能](./web-app-manifests.md)。  为此，在清单文件中，设置 `display_override` 属性：
 
 ```json
 {
@@ -65,13 +66,15 @@ ms.locfileid: "12176637"
 <!-- ====================================================================== -->
 ## <a name="toggle-the-title-bar"></a>切换标题栏
 
-启用后，应用的用户可以通过单击标题栏切换按钮来选择是否具有标题栏。
+启用"窗口控件覆盖"功能后，用户可以通过单击标题栏切换按钮来选择是否具有标题栏：
 
-:::image type="content" source="../media/my-tracks-titlebar-toggle.png" alt-text="选择标题栏切换按钮。" lightbox="../media/my-tracks-titlebar-toggle.png":::
+:::image type="content" source="../media/my-tracks-titlebar-toggle.png" alt-text="选择标题栏切换按钮。":::
 
-由于用户可以做出此选择，并且你的应用还可以在 Web 浏览器或移动设备上运行，因此代码无法对是否显示窗口控件覆盖做出任何假设。 因此，代码对标题栏几何图形更改做出反应非常重要。
+代码无法假定显示窗口控件覆盖层，因为：
+*  用户可以选择是否显示标题栏。
+*  你的应用还可以在 Web 浏览器或移动设备上运行，也可以作为桌面应用运行。
 
-若要了解更多信息，请参阅React[覆盖更改。](#react-to-overlay-changes)
+因此，代码需要响应标题栏几何图形更改。  若要了解更多信息，请参阅React[覆盖更改。](#react-to-overlay-changes)
 
 
 <!-- ====================================================================== -->
@@ -79,7 +82,7 @@ ms.locfileid: "12176637"
 
 [`env()`](https://developer.mozilla.org/docs/Web/CSS/env)CSS 函数可用于访问用户代理定义的环境变量。
 
-四个新的环境变量随窗口控件覆盖功能一起提供。
+窗口控件覆盖功能添加了四个环境变量：
 
 | 变量 | 说明 |
 |:--- |:---
@@ -88,7 +91,7 @@ ms.locfileid: "12176637"
 | `titlebar-area-width` | 覆盖的宽度，以 `px` |
 | `titlebar-area-height` | 覆盖的高度，以 `px` |
 
-例如，可以使用这些变量来定位自己的标题栏并调整其大小。
+可以使用这些环境变量来定位应用的标题栏并调整其大小：
 
 ```css
 #title-bar {
@@ -100,15 +103,15 @@ ms.locfileid: "12176637"
 }
 ```
 
-了解覆盖的位置以及它的大小很重要，因为它可能并不总是位于同一侧 (例如，它位于 macOS 的左侧和 Windows) 的右侧，并且可能并不总是相同大小。
+了解覆盖的位置以及它的重要位置。  覆盖可能并不总是位于窗口的同一侧;在 macOS 上，覆盖位于左侧，但在Windows，覆盖位于右侧。  此外，覆盖可能并不总是相同大小。
 
 
 <!-- ====================================================================== -->
 ## <a name="make-regions-of-your-app-drag-handlers-for-the-window"></a>为窗口创建应用拖动处理程序的区域
 
-当标题栏隐藏时，只有系统关键窗口控件 (最大化、最小化、关闭以及应用信息按钮) ，这意味着用户很少能够四处移动应用。
+隐藏标题栏时，只有系统关键窗口控件 (最大化、最小化、关闭以及应用信息图标) 。 **** **** **** ****  这意味着用户很少能四处移动应用。
 
-您可以使用 CSS `-webkit-app-region` 属性为用户提供更多拖动应用程序的方法。 例如，如果你有自己的标题栏，你可以将其转换为窗口拖动处理程序。
+您可以使用 CSS `-webkit-app-region` 属性为用户提供更多拖动应用程序的方法。  例如，如果你的应用有自己的标题栏，你可以将其标题栏转换为窗口拖动处理程序：
 
 ```css
 #title-bar {
@@ -125,13 +128,12 @@ ms.locfileid: "12176637"
 <!-- ====================================================================== -->
 ## <a name="react-to-overlay-changes"></a>React覆盖更改
 
-用户可以在应用运行时切换标题栏或更改窗口尺寸。 了解何时发生这些事件对于你的应用来说非常重要。 您可能需要重新排列标题栏中显示的某些内容，或页面上其他位置的布局部分。
+用户可以在应用运行时切换标题栏或更改窗口尺寸。  了解何时发生这些事件对于你的应用来说非常重要。  你的应用可能需要重新排列标题栏中显示的内容，或重新排列页面上其他位置的布局。
 
-可以使用 对象的 事件和 属性来侦听更改， `geometrychange` `visible` `navigator.windowControlsOverlay` 并知道标题栏是否可见。
+若要侦听更改，请使用 `geometrychange` 事件。  若要检测标题栏是否可见，请使用 `visible` 对象上的 `navigator.windowControlsOverlay` 属性。
 
 > [!NOTE]
-> 当用户 `geometrychange` 调整窗口大小时，会非常频繁地触发 。 为了避免过于频繁运行更改布局的代码并引起应用中的性能问题，建议使用 函数来限制事件 `debounce` 处理次数。
-> 若要了解有关 有关详细信息 `debounce` ，请参阅限制 [和取消限制的区别](https://css-tricks.com/the-difference-between-throttling-and-debouncing/)。
+> 当用户 `geometrychange` 调整窗口大小时，会非常频繁地触发 。  若要避免过于频繁运行更改布局的代码，并且导致应用中出现性能问题，请使用 函数来限制 `debounce` 处理事件的时间。  请参阅 [限制和取消跳到的区别](https://css-tricks.com/the-difference-between-throttling-and-debouncing/)。
 
 ```javascript
 const debounce = (func, wait) => {
@@ -160,22 +162,26 @@ if ('windowControlsOverlay' in navigator) {
 
 
 <!-- ====================================================================== -->
-## <a name="demo-pwa"></a>演示PWA
+## <a name="demo-app"></a>演示应用
 
-My Tracks 是PWA窗口控件覆盖功能的应用演示应用。
+My Tracks 是PWA窗口控件覆盖功能的主要演示应用。
 
-* [在"管理"](#enable-the-feature-in-your-app)中Microsoft Edge。
-* 转到 ["我的跟踪"](https://captainbrosset.github.io/mytracks/) 并安装应用。
-* 从应用 **标题栏中选择** 隐藏标题栏按钮。
+1. 在Microsoft Edge中，[启用窗口控件覆盖](#enable-the-window-controls-overlay-in-your-app)。
 
-请注意，应用现在将内容一起显示到窗口框架的顶部，其中的标题栏曾位于该窗口框架的顶部。 地图的顶部区域也是一个拖动处理程序，可让用户移动窗口。
+2. 转到 ["我的跟踪"](https://captainbrosset.github.io/mytracks/) 并安装应用。
 
-:::image type="content" source="../media/my-tracks-draggable-titlebar.png" alt-text="地图的顶部区域可用于移动窗口。" lightbox="../media/my-tracks-draggable-titlebar.png":::
+3. 从应用 **标题栏中选择** 隐藏标题栏按钮。
 
-可以在"我的跟踪"存储库上访问此应用的[GitHub代码](https://github.com/captainbrosset/mytracks)。
+   应用现在一向显示窗口框架顶部的内容，标题栏以前位于该窗口框架的顶部。  地图的顶部区域是一个拖动处理程序，以允许用户移动窗口。
+
+   :::image type="content" source="../media/my-tracks-draggable-titlebar.png" alt-text="地图的顶部区域可用于移动窗口。":::
+
+此应用程序的源代码位于"我的轨 ["](https://github.com/captainbrosset/mytracks) 存储库。
 
 * [manifest.json](https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json)源文件声明应用使用窗口控件覆盖功能。
+
 * 文件 [overlay.js](https://github.com/captainbrosset/mytracks/blob/main/src/overlay.js) 使用 `navigator.windowControlsOverlay` 对象。
+
 * [style.css](https://github.com/captainbrosset/mytracks/blob/main/mytracks/style.css)源文件使用 `titlebar-area-height` CSS 环境变量。
 
 
