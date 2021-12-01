@@ -403,7 +403,7 @@
               items:
                 - name: 定义图标和主题颜色
                   href: progressive-web-apps-chromium/how-to/icon-theme-color.md
-                - name: 使用通知、推送消息和徽章重新吸引用户
+                - name: 使用锁屏提醒、通知和推送通知重新吸引用户
                   href: progressive-web-apps-chromium/how-to/notifications-badges.md
                 - name: 处理文件
                   href: progressive-web-apps-chromium/how-to/handle-files.md
@@ -413,7 +413,7 @@
                   href: progressive-web-apps-chromium/how-to/handle-protocols.md
                 - name: 在标题栏中显示内容
                   href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
-                - name: 与其他应用共享
+                - name: 与其他应用共享内容
                   href: progressive-web-apps-chromium/how-to/share.md
                 - name: 定义应用快捷方式
                   href: progressive-web-apps-chromium/how-to/shortcuts.md

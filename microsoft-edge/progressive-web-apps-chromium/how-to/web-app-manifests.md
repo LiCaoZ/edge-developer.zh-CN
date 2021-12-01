@@ -7,19 +7,19 @@ ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进 Web 应用、PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
-ms.openlocfilehash: 1f50b671b9817110fa5ce0bdabb48b5ce128858c
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: 渐进式 Web 应用、PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
+ms.openlocfilehash: ef92b1fc3652aebbc7d6100dd012263512c25c40
+ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156149"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "12235605"
 ---
 # <a name="use-a-web-app-manifest-to-integrate-a-progressive-web-app-into-the-operating-system"></a>使用 Web 应用清单将渐进式 Web 应用集成到操作系统
 
 网站的 Web 应用清单控制渐进式 Web (PWA) 在设备上安装时的外观和行为。 Web 应用清单提供了一些信息，如应用名称、系统菜单中表示应用的图标文件位置，以及操作系统 (OS) 在标题栏中使用的主题颜色。
 
-Web 应用程序清单是必须使用清单链接从网站的 HTML 页面引用的 JSON 文件。 在网站的 HTML 页的 和 标记之间插入以下代码， `<head>` `</head>` 以链接到清单文件：
+Web 应用程序清单是必须使用清单链接从网站的 HTML 页引用的 JSON 文件。 在网站的 HTML 页的 和 标记之间插入以下代码， `<head>` `</head>` 以链接到清单文件：
 
 ```html
 <link rel="manifest" href="/manifest.json">
@@ -50,11 +50,11 @@ Web 应用程序清单是必须使用清单链接从网站的 HTML 页面引用�
 | `display` | 应用应的外观。 这将更改向用户显示多少浏览器 UI。 |
 | `theme_color` | 应用的默认主题颜色。 这会影响操作系统显示网站。 |
 | `background_color` | 应用样式表前启动应用的窗口的背景颜色。 |
-| `orientation` | 在支持设备上，这将为应用定义默认方向 (如横向或纵向) 。 |
+| `orientation` | 在支持设备上，这将定义应用应用的默认 (如横向或纵向) 。 |
 | `icons` | 由操作系统在不同上下文中使用的图标图像对象数组。 |
 | `description` | 应用是什么。 |
 
-下面是使用这些清单成员的清单文件：
+以下清单文件使用上述清单成员：
 
 ```json
 {
@@ -77,7 +77,7 @@ Web 应用程序清单是必须使用清单链接从网站的 HTML 页面引用�
 }
 ```
 
-若要了解有关清单成员的信息，请参阅 MDN [中的 Web](https://developer.mozilla.org/docs/Web/Manifest) 应用清单文档。
+若要了解有关清单成员的信息，请参阅 [MDN 的 Web](https://developer.mozilla.org/docs/Web/Manifest) 应用清单。
 
 使用清单还可以解锁允许应用像本机应用一样运行的强大功能，例如添加应用快捷方式或标识为共享目标。
 
@@ -87,7 +87,9 @@ Web 应用程序清单是必须使用清单链接从网站的 HTML 页面引用�
 <!-- ====================================================================== -->
 ## <a name="use-shortcuts-to-provide-quick-access-to-features"></a>使用快捷方式快速访问功能
 
-大多数操作系统都使用连接到应用图标的上下文菜单上的快捷方式快速访问关键应用功能。  若要在 Web 应用程序中PWA，请包含 Web `shortcuts` 应用清单中的 属性。  以下代码段演示如何在 Web 应用清单中定义快捷方式。
+大多数操作系统都通过使用连接到应用图标的右键菜单上的快捷方式快速访问关键应用功能。  若要在 Web 应用程序中PWA，请 `shortcuts` 包含 Web 应用清单中的 属性。
+
+以下代码演示如何在 Web 应用清单中定义快捷方式。
 
 ```json
 "shortcuts": [
@@ -132,7 +134,7 @@ Web 应用程序清单是必须使用清单链接从网站的 HTML 页面引用�
 
 上述 `share_target` 对象建立 `/share.html` 为 `action` 共享页面。  此示例还定义了将传递到该页面的三个参数 `action` ：、 `title` `text` 和 `url` 。
 
-若要了解有关使用共享目标功能的信息，请参阅 [与其他应用共享](share.md)。
+若要详细了解如何使用"共享目标"功能，请参阅 [与其他应用共享内容](share.md)。
 
 
 <!-- ====================================================================== -->

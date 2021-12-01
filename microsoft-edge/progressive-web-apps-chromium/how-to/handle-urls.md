@@ -1,6 +1,6 @@
 ---
 title: 处理渐进式 Web 应用中的 URL
-description: 了解如何将你的 PWA注册为 URL 处理程序，以将其与其他应用程序在操作系统中深入集成。
+description: 了解如何将你的 PWA注册为 URL 处理程序，以将其与其他应用程序在操作系统中进一步集成。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/29/2021
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， URL
-ms.openlocfilehash: eee535b5cbafd0b0d6d3c893fe67750654b76d8d
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 43f56f3098062565c76081217b528087fef9b287
+ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155946"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "12235732"
 ---
 # <a name="handle-urls-in-progressive-web-apps"></a>处理渐进式 Web 应用中的 URL
 
@@ -30,13 +30,13 @@ ms.locfileid: "12155946"
 
 URL 处理仍处于实验阶段，若要启用它：
 
-1.  转到 `edge://flags` Microsoft Edge。
+1.  转到 `edge://flags` "Microsoft Edge"。
 1.  选择 **"搜索标志** "并键入"url 处理"。
 1.  选择 **"默认**  >  **启用重启**  >  **"。**
 
-    :::image type="content" source="../media/enable-url-handling-experiment.png" alt-text="启用 URL 处理 API 实验。" lightbox="../media/enable-url-handling-experiment.png":::
+    :::image type="content" source="../media/enable-url-handling-experiment.png" alt-text="启用 URL 处理 API 实验。":::
 
-URL 处理也是 Microsoft Edge 中的一种Microsoft Edge。 了解如何 [在源试用版中注册网站](./origin-trials.md#enroll-your-site-in-an-origin-trial)。
+URL 处理也是 Microsoft Edge 中的一项Microsoft Edge。 了解如何 [在源试用版中注册网站](./origin-trials.md#enroll-your-site-in-an-origin-trial)。
 
 
 <!-- ====================================================================== -->
@@ -62,7 +62,7 @@ URL 处理也是 Microsoft Edge 中的一种Microsoft Edge。 了解如何 [在�
 }
 ```
 
-在以上示例中，应用注册为处理其源设置为 或其任何子域的 `contoso.com` URL，以及 `conto.so` 。
+在以上示例中，注册应用以处理其源设置为 或其任何子域以及 的 `contoso.com` `conto.so` URL。
 
 
 <!-- ====================================================================== -->
@@ -70,11 +70,11 @@ URL 处理也是 Microsoft Edge 中的一种Microsoft Edge。 了解如何 [在�
 
 Microsoft Edge验证已PWA URL 的所有权，以成功启动应用。 当处理的 URL 和 PWA位于同一源上时和它们不在同一源上时，这是必需的。 在大多数情况下，PWA将处理同一来源的 URL，但这不是必需的。
 
-源所有权通过 JSON 文件建立，该 JSON 文件Microsoft Edge验证客户端和 URL 之间的 `web-app-origin-association` PWA握手。
+源所有权通过 JSON 文件建立，该 JSON 文件Microsoft Edge验证证书和 `web-app-origin-association` URL 之间的PWA握手。
 
 让我们以尝试处理和 URL PWA托管的示例 `https://app.contoso.com` `https://contoso.com` `https://partnerapp.com` 。
 
-*  若要建立PWA源的所有权，以下 JSON 内容 `contoso.com` 需要在 中提供 `https://contoso.com/.well-known/web-app-origin-association` 。
+*  若要建立PWA源 `contoso.com` 的所有权，以下 JSON 内容需要在 中提供 `https://contoso.com/.well-known/web-app-origin-association` 。
 
     ```json
     {
@@ -116,7 +116,7 @@ Microsoft Edge验证已PWA URL 的所有权，以成功启动应用。 当处理
 
 从 Web 浏览器测试应用的 URL 处理将不起作用，因为浏览器内页面导航不会触发操作系统级别的 URL 处理。
 
-若要测试该功能，请向自己发送聊天消息应用中的 URL 或桌面电子邮件客户端（如 Windows 邮件）。 还可使用"运行Windows应用：
+若要测试该功能，请将聊天消息应用中的 URL 或桌面电子邮件客户端（如 Windows Mail）发送给自己。 还可使用"运行Windows应用：
 
 *  按 `Windows logo key`  +  `R` 。
 *  输入应用处理的 URL。
@@ -129,7 +129,7 @@ Microsoft Edge验证已PWA URL 的所有权，以成功启动应用。 当处理
 <!-- ====================================================================== -->
 ## <a name="demo"></a>演示版
 
-[DevTools 使用技巧](https://devtoolstips.org/)是一PWA，用于处理其自己的域的 URL，以便应用在使用时（而不是网站）打开。
+[DevTools 使用技巧](https://devtoolstips.org/)是一PWA，用于处理其自己的域的 URL，以便应用在使用时打开而不是网站。
 
 若要在 DevTools 应用程序上测试 URL 使用技巧：
 
@@ -142,7 +142,7 @@ Microsoft Edge验证已PWA URL 的所有权，以成功启动应用。 当处理
 
 Windows已注册应用以处理此 URL，并要求你选择想要使用的应用。 选择 DevTools 使用技巧应用。 您还可以选择" **记住我的选择** "以避免每次看到此对话框。
 
-:::image type="content" source="../media/devtools-tips-url-handling-app-selection.png" alt-text="选择要在应用程序上处理 URL Windows。" lightbox="../media/devtools-tips-url-handling-app-selection.png":::
+:::image type="content" source="../media/devtools-tips-url-handling-app-selection.png" alt-text="选择要在应用程序上处理 URL Windows。":::
 
 应用启动并显示提示页面。
 

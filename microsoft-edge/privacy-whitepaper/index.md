@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: 64da62f1a05c2d2b246186717a5cc427a3239be5
-ms.sourcegitcommit: a6990df8668359546bdeb0184e6d6594d97bd355
+ms.openlocfilehash: 99c575b223f4cf90661b294d3467890defbe9beb
+ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "12158616"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "12235591"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书
 
@@ -574,9 +574,6 @@ InPrivate 浏览使用启动 InPrivate 会话的配置文件的购物设置。
 macOS 上 Microsoft Edge 中的标识在 Microsoft 应用间共享。 共享标识允许你登录到 Microsoft 应用，而无需单独输入凭据（如果你已登录到设备上的另一个 Microsoft 应用）。 在 macOS 上，不会根据你在另一个 Microsoft 应用中的身份验证状态自动登录到Microsoft Edge。 尝试登录到 Microsoft Edge 时，可使用设备上来自其他 Microsoft 应用的凭据无缝登录到 Microsoft Edge。  同样，当你登录到帐户以Microsoft Edge时，如果尝试登录其他 Microsoft 应用，则可以使用Microsoft Edge凭据来帮助你在设备上登录到其他 Microsoft 应用，而无需再次输入凭据。
 
 使用来 **来宾** 模式或 **InPrivate**时，无法登录Microsoft Edge。
-
-使用来宾模式或 InPrivate 时，无法登录到 Microsoft Edge。
-
 
 <!-- ====================================================================== -->
 ## <a name="smartscreen"></a>SmartScreen

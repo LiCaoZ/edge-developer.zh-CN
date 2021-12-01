@@ -1,22 +1,22 @@
 ---
-description: 显示如何使用 PWA 生成渐进式 Web (应用程序) 。
 title: 示例 PWA
+description: 显示如何使用 PWA 生成渐进式 Web (应用程序) 。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 11/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: 渐进式 Web 应用， PWA， 演示， 示例
-ms.openlocfilehash: a7a35724c3e8226b35e7f74fe3f2d960ed148484
-ms.sourcegitcommit: aea4d6f07de1c2a4b9c2a31b821e2103df99c030
+ms.openlocfilehash: 172692c8887a3c24429974c52bc950bce43e690c
+ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "12185820"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "12235796"
 ---
 # <a name="sample-pwas"></a>示例 PWA
 
-使用此示例应用列表可了解有关如何使用适用于渐进式 Web 应用和 PA (功能和 API) 。
+使用这些适用于 PBA (渐进式 web) 可了解如何使用适用于 PWA 的功能和 API。
 
 
 <!-- ====================================================================== -->
@@ -32,7 +32,7 @@ ms.locfileid: "12185820"
 *  [Web 共享](./how-to/share.md#sharing-content)
 *  [共享目标](./how-to/share.md#receiving-shared-content)
 
-:::image type="content" source="./media/webboard-reduced.png" alt-text="Webboard 绘图应用程序。" lightbox="./media/webboard.png":::
+:::image type="content" source="./media/webboard.png" alt-text="Webboard 是一款用于绘制和智能白板的渐进式 Web 应用。":::
 
 
 <!-- ====================================================================== -->
@@ -46,17 +46,17 @@ ms.locfileid: "12185820"
 
 *  [Web 共享](./how-to/share.md#sharing-content)
 *  [URL 处理](./how-to/handle-urls.md)
-*  [后台同步](./how-to/background-syncs.md#synchronize-data-with-the-server-with-the-background-sync-api)
-*  [定期后台同步](./how-to/background-syncs.md#regularly-get-fresh-content-with-the-periodic-background-sync-api)
+*  [后台同步](./how-to/background-syncs.md#use-the-background-sync-api-to-synchronize-data-with-the-server)
+*  [定期后台同步](./how-to/background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content)
 *  [通知](./how-to/notifications-badges.md#display-notifications-in-the-action-center)
 
-:::image type="content" source="./media/devtools-tips.png" alt-text="devtools-tips 应用。" lightbox="./media/devtools-tips.png":::
+:::image type="content" source="./media/devtools-tips.png" alt-text="devtools-tips 渐进式 Web 应用显示 DevTools 的提示和技巧列表。":::
 
 
 <!-- ====================================================================== -->
 ## <a name="my-tracks"></a>My Tracks
 
-GPS 跟踪可视化应用。
+用于可视化 GPS 轨的渐进式 Web 应用。
 
 [应用](https://captainbrosset.github.io/mytracks/)[、源代码和自述文件](https://github.com/captainbrosset/mytracks)。
 
@@ -67,28 +67,28 @@ GPS 跟踪可视化应用。
 *  [快捷方式](./how-to/shortcuts.md)
 *  [文件处理](./how-to/handle-files.md)
 
-:::image type="content" source="./media/my-tracks.png" alt-text="&quot;我的跟踪&quot;应用。" lightbox="./media/my-tracks.png":::
+:::image type="content" source="./media/my-tracks.png" alt-text="&quot;我的跟踪&quot;应用。":::
 
 
 <!-- ====================================================================== -->
 ## <a name="my-movies"></a>我的电影
 
-搜索和存储电影。
+用于搜索和存储电影的渐进式 Web 应用。
 
-[应用](https://quirky-rosalind-ac1e65.netlify.app/)、 [源代码](https://github.com/captainbrosset/movies-db-pwa)。
+[应用](https://quirky-rosalind-ac1e65.netlify.app/)、 [源代码](https://github.com/captainbrosset/movies-db-pwa)。<!-- todo: link to readme -->
 
 功能：
 
-*  [后台同步](./how-to/background-syncs.md#synchronize-data-with-the-server-with-the-background-sync-api)
+*  [后台同步](./how-to/background-syncs.md#use-the-background-sync-api-to-synchronize-data-with-the-server)
 *  [通知](./how-to/notifications-badges.md#display-notifications-in-the-action-center)
 
-:::image type="content" source="./media/my-movies.png" alt-text="我的电影应用。" lightbox="./media/my-movies.png":::
+:::image type="content" source="./media/my-movies.png" alt-text="我的电影应用。":::
 
 
 <!-- ====================================================================== -->
 ## <a name="bpm-techno"></a>BPM 一年
 
-实时的PMB 计数器。
+使用 () 计数器时每分钟) 一次。
 
 [应用](https://bpmtech.no/)[、源代码和自述文件](https://github.com/webmaxru/bpm-counter)。
 
@@ -100,7 +100,7 @@ GPS 跟踪可视化应用。
 *  [协议处理](./how-to/handle-protocols.md)
 *  [共享目标](./how-to/share.md#receiving-shared-content)
 
-:::image type="content" source="./media/bpm-techno.png" alt-text="&quot;下一次开发&quot;应用。" lightbox="./media/bpm-techno.png":::
+:::image type="content" source="./media/bpm-techno.png" alt-text="&quot;下一次开发&quot;应用。":::
 
 
 <!-- ====================================================================== -->
@@ -114,4 +114,4 @@ CSS 场。
 
 *  [窗口控件覆盖](./how-to/window-controls-overlay.md)
 
-:::image type="content" source="./media/1div-demo.png" alt-text="1DIV 应用。" lightbox="./media/1div-demo.png":::
+:::image type="content" source="./media/1div-demo.png" alt-text="1DIV 应用。":::
