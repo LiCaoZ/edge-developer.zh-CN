@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 08/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: c274d0c6a7057eeb007fd9ce8d1ee3a5f00bc04d
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: c6629a2ce779f7c83ba4450cb30cbe5ade7ea9b6
+ms.sourcegitcommit: d07ba273ff9ce81f05c8e086bc266d06f48b9373
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156030"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "12250410"
 ---
 <!-- Copyright Kayce Basques
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,14 +26,11 @@ ms.locfileid: "12156030"
    limitations under the License.  -->
 # <a name="apply-color-themes-to-devtools"></a>将颜色主题应用到 DevTools
 
-你可以将各种颜色主题应用到 Microsoft Edge Tools，包括多个来自 Visual Studio Code 的主题，[例如](https://code.visualstudio.com)Monokai 和大光深色。  主题影响窗格、按钮和代码语法突出显示的颜色。
+你可以将各种颜色主题应用到 Microsoft Edge Tools，包括多个来自 Visual Studio Code 的主题，[例如](https://code.visualstudio.com)Monokai 和子光深色。  主题影响窗格、按钮和代码语法突出显示的颜色。
 
 :::image type="complex" source="./media/all-devtools-themes.png" alt-text="各种 DevTools 颜色主题" lightbox="./media/all-devtools-themes.png":::
    各种 DevTools 颜色主题
 :::image-end:::
-
-> [!NOTE]
-> 在[93 Microsoft Edge](../whats-new/2021/07/devtools.md)之前，DevTools 只有浅色和深色主题。
 
 本文介绍更改 DevTools 的外观。  若要改为更改开发中网页的显示方式，请导航到在呈现的页面中模拟深色 [或浅色方案](../accessibility/preferred-color-scheme-simulation.md)。
 
@@ -41,18 +38,18 @@ ms.locfileid: "12156030"
 <!-- ====================================================================== -->
 ## <a name="available-themes"></a>可用主题
 
-默认情况下，DevTools 主题设置为系统首选项 (**** 也称为**系统首选颜色主题**) 。  如果你的操作系统设置为浅色主题，DevTools 将使用 **浅色+** 主题。  如果你的操作系统设置为深色主题，DevTools 将使用 **深色+** 主题。  但是，你可以将 DevTools 更改为任何其他主题，以便当将操作系统设置为浅色或深色主题时，DevTools 不会受到影响。
+默认情况下，DevTools 主题设置为系统首选项 (**** 也称为**系统首选颜色**主题) 。  如果你的操作系统设置为浅色主题，DevTools 将使用 **浅色+** 主题。  如果你的操作系统设置为深色主题，DevTools 将使用 **深色+** 主题。  但是，你可以将 DevTools 更改为任何其他主题，以便当将操作系统设置为浅色或深色主题时，DevTools 不会受到影响。
 
 浅色主题：
 - 浅色+ (默认) 
-- Chromium浅色
+- Chromium浅
 - 安静光
 - 太阳光
 
 深色主题：
 - 深色+ (默认) 
 - Abyss
-- Chromium深色
+- Chromium深
 - Kimbie Dark
 - 单声道
 - Monokai Dimmed
@@ -64,9 +61,9 @@ ms.locfileid: "12156030"
 <!-- ====================================================================== -->
 ## <a name="changing-the-color-theme-from-settings"></a>更改颜色主题设置
 
-1.  打开 DevTools，**然后选择设置 (** 齿轮图标) 。
+1.  打开 DevTools，然后选择设置 (齿轮图标) 。 ****
 
-    :::image type="complex" source="./media/setting-button.png" alt-text="&quot;设置 (齿轮) 图标" lightbox="./media/setting-button.png":::
+    :::image type="complex" source="./media/setting-button.png" alt-text="The 设置 (gear) icon" lightbox="./media/setting-button.png":::
        the**设置** (gear) icon
     :::image-end:::
 
