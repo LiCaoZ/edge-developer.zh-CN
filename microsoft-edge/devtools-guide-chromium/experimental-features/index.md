@@ -1,9 +1,9 @@
 ---
+title: 实验性功能
 description: Microsoft Edge DevTools 中的最新试验功能
-title: 试验功能
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/22/2021
+ms.date: 11/30/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools, 试验
@@ -22,12 +22,12 @@ no-loc:
 - Edit keyboard shortcuts for any action in DevTools
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
-ms.openlocfilehash: 364bc1ef8df7ed7a96986ddb3403a0b07ea12db4
-ms.sourcegitcommit: d07ba273ff9ce81f05c8e086bc266d06f48b9373
+ms.openlocfilehash: 68b9fc54902f52362421e1f624911092720985b2
+ms.sourcegitcommit: ccccb41b1695469774df7d3e0718184d0cea360f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "12250424"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "12260879"
 ---
 # <a name="experimental-features"></a>试验功能
 
@@ -41,9 +41,9 @@ If no info is an an h2 section, comment out the h2 heading & section.
 When a checkbox is removed from all the preview channels, move its section down to "Previously Experimental features which are now regular features" and comment it out.
 -->
 
-Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限。  本文列出并介绍了大多数实验性功能，这些功能在最新版本的 Canary preview channel of Microsoft Edge。
+Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限。  本文列出并介绍了最新版本的 Canary 预览频道中的大多数实验Microsoft Edge。
 
-组织[的所有频道Microsoft Edge](/deployedge/microsoft-edge-channels)实验性功能。 可以通过使用 Microsoft Edge Canary 渠道 获取最新的[实验Microsoft Edge Canary 渠道。](https://www.microsoftedgeinsider.com/welcome?channel=canary) 若要查看最新版本中提供的完整列表Microsoft Edge，请参阅****  >  DevTools 设置**实验**页面。
+组织[的所有频道Microsoft Edge](/deployedge/microsoft-edge-channels)实验性功能。 可以通过使用 Microsoft Edge Canary 渠道 获取最新的[实验Microsoft Edge Canary 渠道。](https://www.microsoftedgeinsider.com/welcome?channel=canary) 若要查看最新版本中提供的完整列表Microsoft Edge，请参阅****  >  DevTools 设置**实验**"页面。
 
 <!-- no Warning formatting, because UI already contains red "WARNING" at top -->
 这些实验可能不稳定或不可靠，可能需要重启 DevTools。
@@ -64,9 +64,9 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 *  Enable Composited Layers in 3D View.
 *  DevTools 工具提示。
 *  VS Code开发工具的主题。 <!-- preserve literal UI string, including "VS" & "the" -->
-*  在文件中打开Visual Studio Code。
+*  open source files in Visual Studio Code.
 *  启用键盘快捷方式编辑器 - [Edit keyboard shortcuts for any action in DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) 。
-*  启用动态欢迎内容，默认为现在关闭，但在 Microsoft Edge版本 97 中默认启用。
+*  启用动态欢迎内容，默认为现在关闭，但在版本 97 中Microsoft Edge启用。
 
 <!-- don't place a comment line between list item lines, above; that would create a gap -->
 
@@ -88,7 +88,7 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 
 1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 (`Command` + `Option` + `I` 按) 。
 
-1.  单击 **"设置 (** 齿轮) 图标以打开 DevTools[设置窗格。](../customize/index.md#settings)
+1.  单击 **"设置 (** 齿轮) 图标打开 DevTools[设置窗格。](../customize/index.md#settings)
 
 1.  在"实验"窗格**设置，** 单击"实验 **"** 部分。
 
@@ -108,9 +108,9 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 
 1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 (`Command` + `Option` + `I` 按) 。
 
-1.  选择**设置 (** ![ 开发人员设置中的") >" ](../media/settings-gear-icon-light-mode.png) **图标。**
+1.  选择**设置 (** 开发人员设置中的 ![ ") >"图标。) > ](../media/settings-gear-icon-light-mode.png) **首选项"。**
 
-1.  单击"**还原默认值并刷新**"按钮，然后单击"关闭**** (开发人员工具中的"关闭 ![ "> 设置。) 。 ](../media/settings-close-icon-light-theme.png)
+1.  单击"**还原默认值并刷新**"按钮，然后单击"关闭**** (DevTools > 设置 中的"关闭 ![ "图标 ](../media/settings-close-icon-light-theme.png) 。) 。
 
 <!-- For more information about customizing settings, see [Settings](../customize/index.md#settings) in _Customize Microsoft Edge DevTools_. -->
 
@@ -122,7 +122,7 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 
 1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 (`Command` + `Option` + `I` 按) 。
 
-1.  选择**设置 (** 开发人员设置中的 ![ ") >" ](../media/settings-gear-icon-light-mode.png) **图标**。
+1.  选择**设置 (** ![ 开发设置中的") >" ](../media/settings-gear-icon-light-mode.png) **图标**。
 
 1.  在"筛选器 **"文本框** 中单击并输入文本，如 **时间线**。  键入时，只有匹配的复选框显示在实验 **页面中** 。
 
@@ -138,7 +138,7 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 
 * [联系开发人员Microsoft Edge团队](../contact.md)。
 
-* 打开焦点**模式**实验后，在活动栏底部，选择"帮助******" (焦点**模式的活动栏中的"帮助"图标) >反馈"，以显示"发送反馈 ![ ](../media/help-icon-of-focus-mode.png) "窗口。 **** ****
+* 打开焦点**模式**实验后，在活动栏底部，选择"帮助****" (焦点模式**** 的活动栏中的"帮助"图标) >反馈"，以显示"发送反馈 ![ ](../media/help-icon-of-focus-mode.png) "窗口****。 ****
 
 
 <!-- ====================================================================== -->
@@ -185,7 +185,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 1.  在 DevTools 中，选择 **"设置**  >  **实验"。**
 
-1.  选中"**协议监视器**"复选框，然后单击"**** 关闭 (DevTools > 设置 中的"关闭"图标 ![ ](../media/settings-close-icon-light-theme.png) 。) 关闭设置。 ****
+1.  选中"**协议监视器**"复选框，然后单击"**** 关闭 (DevTools > 设置 中的"关闭" ![ 图标。) ](../media/settings-close-icon-light-theme.png) 关闭设置。 ****
 
 1.  打开命令**菜单** `Control` + `Shift` + `P` () ，然后在文本框中键入协议。 ****
 
@@ -368,7 +368,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 ## Enable Composited Layers in 3D View
 <!-- present in 96, 98 -->
 
-您可以将 Layers 与 z 索引和文档对象模型一起可视化 (DOM) 。 为了获得全面的视觉调试体验，现在已将 3D View 和复合层组合到一起。
+您可以将层与 z 索引和文档对象模型一起可视化 (DOM) 。 为了获得全面的视觉调试体验，现在已将 3D View 和复合层组合到一起。
 
 此功能可帮助你进行调试，而无需频繁切换上下文。 减少上下文切换可解决开发人员的一个主要问题。 此功能可明确您编写的代码对 Web 应用有何影响。
 
@@ -433,13 +433,13 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 <!-- maintainers: see notes about this experiment, in the list of experiments which are turned on by default, at top of article -->
 
-Web 应用程序中的内存泄漏难以查找和修复。
+Web 应用程序中的内存泄漏可能难以查找和修复。
 
-DevTools 中新的分离Microsoft Edge面板可帮助调查和解决内存泄漏的常见来源。 ****
+DevTools 中新的分离Microsoft Edge面板可帮助调查和解决内存泄漏的常见源。 ****
 
 当应用程序的 JavaScript 代码在内存中保留数量不断增加的对象时，会发生内存泄漏。 JavaScript 代码应释放这些对象，以便浏览器可以重用内存空间。
 
-<!-- todo: add more info, probably with an image.  See the Detached Elements tutorial (in progress). -->
+有关详细信息，请参阅使用分离的元素工具 [调试 DOM 内存泄漏](../memory-problems/dom-leaks.md)
 
 
 <!-- ====================================================================== -->
@@ -447,7 +447,7 @@ DevTools 中新的分离Microsoft Edge面板可帮助调查和解决内存泄漏
 <!-- present in 96, 98 -->
 <!-- preserve literal UI string, including "VS" & "the" -->
 
-若要在 devTools Visual Studio主题，请VS Code**开发工具实验的开发人员主题**。 有关详细信息，请参阅向 [DevTools 应用颜色主题](../customize/theme.md)。
+若要在 devTools Visual Studio主题，请为**DevTools VS Code主题**。 有关详细信息，请参阅向 [DevTools 应用颜色主题](../customize/theme.md)。
 
 
 <!-- ====================================================================== -->
@@ -456,11 +456,11 @@ DevTools 中新的分离Microsoft Edge面板可帮助调查和解决内存泄漏
 
 实验**中的开放源文件**Visual Studio Code源工具的代码编辑器替换为用于编辑Visual Studio Code文件的代码编辑器。 打开此实验时，开发人员工具会检测何时编辑本地文件，并提示你选择一个用作工作区的文件夹。
 
-选择要用作工作区的文件夹时，在 DevTools 中选择指向文件的任何链接将在 Visual Studio Code。  在早期版本的 Microsoft Edge 中，此操作在 DevTools 中的"源"工具的代码编辑器中打开文件。
+选择要用作工作区的文件夹时，在 DevTools 中选择指向文件的任何链接将在 Visual Studio Code。  在早期版本的 Microsoft Edge 中，此操作在 DevTools 中的源工具的代码编辑器中打开文件。
 
 :::image type="content" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="在&quot;样式&quot;工具中选择文件链接将打开Visual Studio Code" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
 
-现在，你在 DevTools 中执行的任何编辑都更改硬盘上的文件，并实时与Visual Studio Code。 可以在打开数据源中的源文件中阅读有关[Visual Studio Code。](../sources/opening-sources-in-vscode.md)
+现在，你在 DevTools 中执行的任何编辑都更改硬盘上的文件，并实时Visual Studio Code。 可以在打开数据源中的源文件中阅读有关[Visual Studio Code。](../sources/opening-sources-in-vscode.md)
 
 
 <!-- ====================================================================== -->
