@@ -253,6 +253,8 @@
               href: devtools-guide-chromium/media-panel/index.md
             - name: 内存
               items:
+                - name: 查找分离的元素
+                  href: devtools-guide-chromium/memory-problems/dom-leaks.md
                 - name: 修复内存问题
                   href: devtools-guide-chromium/memory-problems/index.md
                 - name: 记录堆快照
