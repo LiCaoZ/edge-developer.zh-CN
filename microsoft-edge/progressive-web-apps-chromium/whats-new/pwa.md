@@ -7,16 +7,16 @@ ms.date: 11/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， pwas， pwa， 渐进式 Web 应用， 源试用版
-ms.openlocfilehash: f905a29502fac4fa3662e054ee801491cb266f6f
-ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
+ms.openlocfilehash: 0aa7884f32e14e9e17f74a4f1d4f0e968c208160
+ms.sourcegitcommit: 2915729570149ae4bac14eadf387426ee97e7840
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "12235578"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "12264774"
 ---
 # <a name="whats-new-in-progressive-web-apps"></a>渐进式 Web 应用中的新增功能
 
-此页面列出了来自 Web 应用团队的 PBA Microsoft Edge Web Apps 的更新。  若要试用新功能，请查看这些通知。  若要了解最新且最最好的功能，请下载Microsoft Edge[预览频道](https://www.microsoftedgeinsider.com/download)。
+此页面列出了来自 Web 应用团队的 PBA Microsoft Edge Web Apps 的更新。  若要试用新功能，请查看这些通知。  若要使用最新且最最好的功能，请下载Microsoft Edge[预览频道](https://www.microsoftedgeinsider.com/download)。
 
 
 <!-- ====================================================================== -->
@@ -105,17 +105,17 @@ Microsoft Edge版本 93 在 2021 年 9 月 2 Microsoft Edge稳定渠道。 本�
 
 ### <a name="measure-usage-of-your-store-installed-pwa"></a>测量应用商店安装的应用商店的使用情况PWA
 
-Microsoft Edge现在包含引用器标头，其中包含对已安装的 Microsoft Store 的第一个PWA。
+Microsoft Edge现在包含引用器标头，其中包含对已安装的 Microsoft Store 的第一个导航PWA。
 
 此功能是在 91 Microsoft Edge中首次引入的，我们在版本 93 中Microsoft Edge Bug 修复程序。
 
-有关详细信息，请[通过将渐进式 Web 应用发布到Microsoft Store。](../how-to/microsoft-store.md#measure-usage-of-your-store-installed-pwa)
+有关详细信息，请[从将渐进式 Web 应用发布到Microsoft Store。](../how-to/microsoft-store.md#measure-usage-of-your-pwa-installed-from-the-microsoft-store)
 
 ### <a name="window-controls-overlay-origin-trials"></a>窗口控件覆盖原点试用版
 
 若要对当前在独立显示模式下显示的标题栏区域进行更多控制，可能需要试验窗口控件覆盖。 窗口控件覆盖 (WCO) 是一组协同工作的功能，它们仅提供应用窗口所需的基本控件。 此布局为 Web 内容层释放了更多空间。 WCO 可用于安装的桌面 PBA。
 
-了解有关在渐进 Web 应用和 PA (实验功能中试验窗口[控件覆盖) 。 ](../how-to/window-controls-overlay.md)
+了解有关在渐进式 Web 应用和 PBA 中实验性功能 ([窗口控件覆盖) 。 ](../how-to/window-controls-overlay.md)
 
 在我们的源试用版开发人员控制台 中注册 **Web 应用窗口控件覆盖** 试用版 [的来源](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-window-controls-overlay/registration/)。
 
@@ -123,7 +123,7 @@ Microsoft Edge现在包含引用器标头，其中包含对已安装的 Microsof
 
 开发人员现在可以在源试用版中使用实验性功能 Web App URL 处理程序。 此功能允许注册已安装的应用PWA从引用其作用域的其他应用打开链接。
 
-若要详细了解如何试验 URL 处理程序，请通过渐进式 Web 应用和 PBA (实验[) 。 ](../how-to/handle-urls.md)
+若要详细了解如何试验 URL 处理程序，请通过渐进式 Web 应用和[PWA (实验) 。 ](../how-to/handle-urls.md)
 
 在我们的源试用版开发人员控制台 中注册你的域，以试用 Web 应用 **URL** [处理程序](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-url-handlers/registration/)。
 
@@ -137,7 +137,7 @@ Microsoft Edge现在包含引用器标头，其中包含对已安装的 Microsof
 <!-- ====================================================================== -->
 ## <a name="whats-new-in-microsoft-edge-92"></a>Microsoft Edge 92 中的新增功能
 
-Microsoft Edge版本 92 在 2021 年 7 Microsoft Edge成为稳定渠道。 本文从开发人员和使用者的角度 (对渐进 Web 应用) PA 进行了更新。
+Microsoft Edge版本 92 在 2021 年 7 月 22 Microsoft Edge成为稳定渠道。 本文从开发人员和使用者的角度 (对渐进 Web 应用) PA 进行了更新。
 
 ### <a name="protocol-handlers-origin-trial"></a>协议处理程序来源试用版
 
@@ -147,7 +147,7 @@ Microsoft Edge版本 92 在 2021 年 7 Microsoft Edge成为稳定渠道。 本�
 
 ### <a name="streamlined-app-info-menu"></a>简化的应用信息菜单
 
-当用户在应用的标题栏中 (省略号) ..."按钮时，**** 将显示"**应用信息**"菜单。  我们更新了"应用**** 信息"菜单，并采用以下方式简化了用户体验，以提供与浏览器 UI 更像桌面应用的用户体验：
+当用户在应用的标题栏中 (省略号) ..."按钮时，**** 将显示"应用**信息**"菜单。  我们更新了"应用**** 信息"菜单，并采用以下方式简化了用户体验，以提供与浏览器 UI 更像桌面应用的用户体验：
 *  将应用**Publisher**信息移动到顶级，并作为用户首先看到的信息。
 
    :::image type="content" source="media/app-info.png" alt-text="简化的新应用信息菜单":::
@@ -176,6 +176,6 @@ Microsoft Edge版本 92 在 2021 年 7 Microsoft Edge成为稳定渠道。 本�
 
 ### <a name="restore-web-apps"></a>还原 Web 应用
 
-在意外关闭之前运行的已安装网站和 PWA 现在 (，即当系统恢复) 将重新启动它们。
+在意外关闭之前运行的已安装的站点和 PWA 现在 (，即当系统恢复) 将重新启动它们。
 
 由于进程故障、系统重新启动或断电，可能会发生意外关闭。 在此更改之前，已安装的网站和 PWA 在系统还原时具有不确定的行为。
