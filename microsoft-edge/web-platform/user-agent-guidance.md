@@ -3,16 +3,16 @@ description: 本文介绍如何使用客户端Microsoft Edge和User-Agent字符�
 title: 正在从网站检测 Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/22/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 兼容性， Web 平台， 用户代理字符串， ua 字符串， ua 替代， 用户代理客户端提示， 用户代理客户端提示， ua 客户端提示， ua ch， 功能检测， 浏览器标识， 浏览器检测， 标头， https 标头， 检测 microsoft edge， 检测 Microsoft edge
-ms.openlocfilehash: 6298b252a5a5d4fdafa42f20fcbca3cab6b688eb
-ms.sourcegitcommit: d07ba273ff9ce81f05c8e086bc266d06f48b9373
+ms.openlocfilehash: db7de05d840d013e8c98f0f14e205250f832e264
+ms.sourcegitcommit: 0a7c7fea4490b74018beb65e93d03a8d887e24ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "12250417"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "12268329"
 ---
 # <a name="detecting-microsoft-edge-from-your-website"></a>正在从网站检测 Microsoft Edge
 
@@ -22,7 +22,7 @@ User-Agent string
 user agent string - not used
 -->
 
-本文介绍Microsoft Edge检索用户代理信息的方法。
+本文介绍了检索用户Microsoft Edge支持的方法。
 
 浏览器为网站提供用于检测浏览器信息（如品牌、版本号和主机操作系统）的机制。 旧版 [用户代理字符串](#user-agent-strings) 已过时，并且具有导致网站兼容性问题的历史记录。 新的 [用户代理客户端提示](#user-agent-client-hints) 是检索浏览器信息的改进机制。
 
@@ -33,7 +33,7 @@ user agent string - not used
 | 机制 | 服务器端 | 客户端 |
 |:--- |:--- |:--- |
 | **用户代理客户端提示 (** 推荐)  | `Sec-CH-UA` HTTPS 标头 | `navigator.userAgentData` JavaScript 方法 |
-| **旧版用户代理 (** 字符串)  | `User-Agent` HTTPS 标头 | `navigator.userAgent` JavaScript 方法 |
+| **旧版用户代理 (** 代理)  | `User-Agent` HTTPS 标头 | `navigator.userAgent` JavaScript 方法 |
 
 
 <!-- ====================================================================== -->
@@ -49,7 +49,7 @@ Microsoft [建议尽可能检测](https://developer.mozilla.org/docs/Learn/Tools
 
 Microsoft Edge版本 90 User-Agent客户端提示。
 
-User-Agent客户端提示是访问浏览器信息（如浏览器名称、版本号、平台等）的更简洁、更隐私的方式。 很快User-Agent浏览器将冻结并弃用该字符串。 例如，Chrome 平台状态网站描述功能 [： 减少用户代理字符串信息中的更改](https://www.chromestatus.com/feature/5704553745874944)。
+User-Agent客户端提示是访问浏览器信息（如浏览器名称、版本号、平台等）的更简洁、更隐私的方式。 很快，User-Agent将被各种浏览器冻结和弃用。 例如，Chrome 平台状态网站描述功能 [： 减少用户代理字符串信息中的更改](https://www.chromestatus.com/feature/5704553745874944)。
 
 当你User-Agent时，使用客户端提示：
 - 确定新的浏览器活动是否来自预期用户。
@@ -59,25 +59,25 @@ User-Agent客户端提示是访问浏览器信息（如浏览器名称、版本�
 - 阻止 *不受支持的* 浏览器。
 - 限制对网站上功能的访问。
 
-有关详细信息，请导航到 W3C 组草稿Community[报告：User-Agent客户端提示"中的规范](https://wicg.github.io/ua-client-hints/)。
+有关详细信息，请导航到[W3C 组草稿Community：User-Agent客户端提示"中的规范](https://wicg.github.io/ua-client-hints/)。
 
 ### <a name="user-agent-client-hints-https-header"></a>User-Agent客户端提示 HTTPS 标头
 
-当Microsoft Edge向服务器发送 HTTPS 请求时，它会发送一组低向User-Agent客户端提示标头。 有关详细信息，请导航到低 [向异性提示表](https://wicg.github.io/client-hints-infrastructure/#low-entropy-table)。 如果服务器需要有关浏览器的更具体的信息，则其响应包括 `Accept-CH` 标头。 该响应标头的值是服务器从浏览器需要的所有客户端提示请求标头的逗号分隔列表，例如 `Accept-CH: Sec-CH-UA-Full-Version,Sec-CH-UA-Platform-Version` 。 下一Microsoft Edge HTTPS 请求将包含指定的客户端User-Agent标头。
+当Microsoft Edge向服务器发送 HTTPS 请求时，它会向客户端提示标头User-Agent一组低向异性。 有关详细信息，请导航到低 [向异性提示表](https://wicg.github.io/client-hints-infrastructure/#low-entropy-table)。 如果服务器需要有关浏览器的更具体的信息，则其响应包括 `Accept-CH` 标头。 该响应标头的值是服务器从浏览器需要的所有客户端提示请求标头的逗号分隔列表，例如 `Accept-CH: Sec-CH-UA-Full-Version,Sec-CH-UA-Platform-Version` 。 下一Microsoft Edge HTTPS 请求将包含指定的客户端User-Agent标头。
 
-默认情况下，Microsoft Edge发送以下格式的 、 和 `Sec-CH-UA` `Sec-CH-UA-Mobile` `Sec-CH-UA-Platform` 请求标头。
+默认情况下，Microsoft Edge发送以下格式的 、 和 `Sec-CH-UA` `Sec-CH-UA-Mobile` `Sec-CH-UA-Platform` 请求头。
 
 ```https
-Sec-CH-UA: "Chromium";v="92", "Microsoft Edge";v="92","Placeholder;Browser Brand";v="99"
+Sec-CH-UA: "Chromium";v="92", "Microsoft Edge";v="92", "Placeholder;Browser Brand";v="99"
 Sec-CH-UA-Mobile: ?0
 Sec-CH-UA-Platform: "Windows"
 ```
 
 下表显示了具有示例值的所有可用提示请求标头。
 
-| User-Agent请求标头 | 响应User-Agent的示例 |
+| User-Agent请求标头 | 响应User-Agent示例 |
 |:--- |:--- |
-| `Sec-CH-UA` | `"Chromium";v="91", "Microsoft Edge";v="91","GREASE";v="99"` |
+| `Sec-CH-UA` | `"Chromium";v="91", "Microsoft Edge";v="91", "GREASE";v="99"` |
 | `Sec-CH-UA-Mobile` | `?0` |
 | `Sec-CH-UA-Full-Version` | `91.0.866.0` |
 | `Sec-CH-UA-Platform` | `Windows` |
@@ -94,8 +94,23 @@ Sec-CH-UA-Platform: "Windows"
 可以在客户端User-Agent JavaScript 访问客户端提示。 调用默认 时 `navigator.userAgentData` ，它将返回以下响应。
 
 ```JSON
-{ brands: [ {brand: "Chromium","version":"91"}, {brand: "Microsoft Edge","version":"91"}, {brand: "GREASE","version":"99"}, ]
-mobile: false }
+{
+  "brands": [
+    {
+      "brand": "Chromium",
+      "version":"91"
+    },
+    {
+      "brand": "Microsoft Edge",
+      "version":"91"
+    },
+    {
+      "brand": "GREASE",
+      "version":"99"
+    }
+  ],
+  "mobile": false 
+}
 ```
 
 Microsoft Edge品牌 `GREASE` 值会随着时间而改变。 它会阻止网站在尝试检测产品版本时匹配整个品牌Microsoft Edge。
@@ -126,14 +141,15 @@ navigator.userAgentData.getHighEntropyValues(
 
 若要区分Windows 10和Windows 11，请请求 `platformVersion` 客户端提示Microsoft Edge。 值介于 和 之间（包括 和 表示 Windows 10 版本，而 值或更高版本表示 `1.0.0` `12.0.0` `14.0.0` Windows 11。
 
+
 ### <a name="combine-user-agent-client-hints-with-feature-detection"></a>将User-Agent客户端提示与功能检测相结合
 
-将User-Agent提示与 [功能检测](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) 相结合是提供兼容 Web 内容的一种有效方法。 Microsoft 建议使用此模式：
+将User-Agent客户端提示 [与功能检测](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) 相结合是提供兼容 Web 内容的一种有效方法。 Microsoft 建议使用此模式：
 * 提高代码可维护性。
 * 减少代码错误。
 * 减少代码中断（由对字符串User-Agent更改。
 
-如果你需要检查与 Chrome 类似浏览器，Microsoft 建议检测 ，这是为浏览器 `Chromium` Microsoft Edge。
+如果需要检查与 Chrome 类似浏览器，Microsoft 建议检测 ，这是为浏览器 `Chromium` Microsoft Edge。
 
 使用此方法验证品牌，并针对所有受影响的基于Chromium `Chromium` 应用检测：
 
@@ -160,18 +176,26 @@ User-Agent字符串已过时，并且具有导致网站兼容性问题的长历�
 
 如果可能，Microsoft 建议尽可能Microsoft Edge基于字符串的浏览器User-Agent逻辑。 如果你有一个很好的理由来检测浏览器，Microsoft Edge建议将[用户代理](#user-agent-client-hints)客户端提示用作主要检测逻辑。 [用户代理客户端提示](#user-agent-client-hints) 还降低了浏览器检测代码的复杂性。
 
-对于旧引用，以下格式用于User-Agent字符串。
+对于旧引用，以下信息包含在User-Agent字符串中。
 
-在Windows上 `User-Agent` ，HTTP 请求标头采用以下格式：
+在 `User-Agent` Windows，HTTP 请求标头包括：
 
-```https
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46
+```
+Mozilla/5.0 (Windows NT 10.0; Win64; x64)  
+AppleWebKit/537.36 (KHTML, like Gecko)  
+Chrome/90.0.4430.85  
+Safari/537.36  
+Edg/90.0.818.46
 ```
 
-在 Android 上 `User-Agent` ，HTTP 请求标头采用以下格式：
+在 Android 上 `User-Agent` ，HTTP 请求标头包括：
 
-```https
-User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Mobile Safari/537.36 EdgA/90.0.818.46
+```
+Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N)  
+AppleWebKit/537.36 (KHTML, like Gecko)  
+Chrome/90.0.4430.85  
+Mobile Safari/537.36  
+EdgA/90.0.818.46
 ```
 
 来自 方法的响应 `navigator.userAgent` 值采用以下格式：
@@ -180,13 +204,13 @@ User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/5
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4501.0 Safari/537.36 Edg/91.0.866.0"
 ```
 
-平台标识符根据操作系统发生变化，并且版本号会随着时间的推移而递增。 格式与用户代理Chromium，末尾添加 `Edg` 新令牌。 Microsoft 选择令牌以避免由字符串引起的兼容性问题，字符串以前用于基于 `Edg` `Edge` EdgeHTML 的旧版Microsoft Edge浏览器。 令牌 `Edg` 还与用于 iOS 和[](https://blogs.windows.com/msedgedev/2017/10/05/microsoft-edge-ios-android-developer)Android 的现有令牌一致。
+平台标识符根据操作系统发生变化，并且版本号会随着时间的推移而递增。 格式与用户代理Chromium，末尾添加一 `Edg` 个新令牌。 Microsoft 选择令牌以避免由字符串引起的兼容性问题，字符串以前用于基于 `Edg` `Edge` EdgeHTML Microsoft Edge旧版浏览器。 令牌 `Edg` 还与用于 iOS 和[](https://blogs.windows.com/msedgedev/2017/10/05/microsoft-edge-ios-android-developer)Android 的现有令牌一致。
 
 
 <!-- ====================================================================== -->
 ## <a name="identifiers-for-microsoft-edge-on-various-platforms"></a>各种平台上Microsoft Edge标识符
 
-在桌面操作系统上，Microsoft Edge字符串中的标记 `Edg` 通常User-Agent标识。  但是，某些设备Microsoft Edge使用不同的令牌，如下所示：
+在桌面操作系统上，Microsoft Edge字符串中的 `Edg` 标记通常User-Agent标识。  但是，某些设备Microsoft Edge使用不同令牌，如下所示：
 
 | 平台 | 标识符令牌 |
 |:--- |:--- |
@@ -204,7 +228,7 @@ User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/5
 <!-- ====================================================================== -->
 ## <a name="user-agent-overrides"></a>User-Agent替代
 
-有时，网站无法识别Microsoft Edge代理。 因此，一组网站功能可能无法正常运行。 当 Microsoft 收到问题类型通知时，Microsoft 会 (网站所有者联系) 并通知你更新的用户代理。
+有时，网站无法识别Microsoft Edge代理。 因此，一组网站功能可能无法正常运行。 当 Microsoft 收到问题类型通知时，Microsoft 会 (网站所有者联系) 并通知你已更新的用户代理。
 
 可能需要更多时间来更新和测试网站的用户代理检测逻辑，以解决 Microsoft 报告的问题。 为了最大限度地提高用户的兼容性，Microsoft Edge Beta和稳定渠道使用用户代理替代列表。 更新网站时，请使用用户代理替代。 用户代理替代列表由 Microsoft 提供。
 
@@ -212,19 +236,19 @@ User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/5
 1. 打开 Microsoft Edge Beta 或 Stable 渠道。
 1. 导航到 `edge://compat/useragent`。
 
-Canary Microsoft Edge开发人员频道当前不会接收用户代理覆盖。 Canary Microsoft Edge开发人员频道提供的环境使用默认模式Microsoft Edge代理。 使用Microsoft Edge Canary 和 Dev 渠道重现由默认用户代理导致Microsoft Edge的问题。
+Canary Microsoft Edge开发人员频道当前不会接收用户代理替代。 Canary Microsoft Edge开发人员频道提供的环境使用默认模式Microsoft Edge代理。 使用Microsoft Edge Canary 和 Dev 渠道重现由默认用户代理导致Microsoft Edge问题。
 
-若要关闭客户或稳定渠道中的Microsoft Edge Beta覆盖：
+若要在渠道或稳定渠道中关闭Microsoft Edge Beta替代：：
 
 1. 打开命令提示符。  例如，在"**搜索Windows输入 cmd，** 然后选择命令**提示符**应用。
 
-1. 复制以下代码段：
+1. 复制以下代码：
 
     ```shell
     --disable-domain-action-user-agent-override
     ```
 
-1. 使用Microsoft Edge代码段运行应用，如下所示：
+1. 使用Microsoft Edge代码运行应用，如下所示：
 
     ```shell
     {path/to/microsoft/edge.ext} --disable-domain-action-user-agent-override
