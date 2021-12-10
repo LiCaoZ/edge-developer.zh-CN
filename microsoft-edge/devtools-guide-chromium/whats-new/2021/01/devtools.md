@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: d37ed264789f8594ac46ebb0acba830cac532f72
-ms.sourcegitcommit: 1e32efb1c9811ec7c65816e938d1a64b1ca5ece6
+ms.openlocfilehash: 71636531d1b948d7c875728e9b0c86f0447d757b
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "12158549"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12268988"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -84,24 +84,17 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 在“**元素**”工具中，新的弹性框 (flex) 图标可帮助你识别代码中的弹性框容器。  选择弹性框 (flex) 图标可打开或关闭显示弹性框容器轮廓的覆盖效果。  可在“**布局**”窗格中自定义覆盖的颜色，其位于“**样式**”和“**已计算**”旁边。
 
-:::row:::
-   :::column span="":::
-      若要打开和关闭显示 Flexbox 容器的覆盖效果，请选择 Flexbox （`flex`） 图标。
-   :::column-end:::
-   :::column span="":::
-      可在“**布局**”窗格中的“**样式**”和“**已计算**”旁边自定义覆盖的颜色。
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-flex-container.msft.png" alt-text="弹性框 (flex) 图标和网页突出显示" lightbox="../../media/2021/01/elements-flex-container.msft.png":::
-         **Flexbox** (`flex`)图标和网页突出显示 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text="“布局”窗格中突出显示的弹性框覆盖" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
-         “**布局**”窗格中突出显示的**弹性框覆盖** :::image-end:::
-   :::column-end:::
-:::row-end:::
+若要打开和关闭显示 Flexbox 容器的覆盖效果，请选择 Flexbox （`flex`） 图标。
+
+可在“**样式**”和“**已计算**”旁边的“**布局**”窗格中自定义覆盖层的颜色。
+
+突出显示的**弹性框**（`flex`）图标和网页：
+
+:::image type="content" source="../../media/2021/01/elements-flex-container.msft.png" alt-text="弹性框 (flex) 图标和网页突出显示" lightbox="../../media/2021/01/elements-flex-container.msft.png":::
+
+“**布局**”窗格中突出显示的 **弹性框覆盖**：
+
+:::image type="content" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text="“布局”窗格中突出显示的弹性框覆盖" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
 
 ### <a name="display-alignment-icons-and-visual-guides-when-flexbox-layouts-change-using-css-properties"></a>使用 CSS 属性更改弹性框布局时显示对齐图标和可视化向导
 
@@ -112,25 +105,17 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 当你编辑弹性框布局的 CSS 时，“**样式**”窗格中的 CSS 自动完成现在会在相关弹性框属性旁边显示有用的图标。  若要尝试此新功能，请打开“**元素**”工具并选择一个 flex 容器。  然后在“**样式**”窗格中添加或更改该容器上的属性。
 
-:::row:::
-   :::column span="":::
-      自动完成菜单现在显示指示对齐属性效果的图标，例如 `align-content` 和 `align-items`。
-   :::column-end:::
-   :::column span="":::
-      此外，DevTools 现在还会显示一条指导线，帮助你更好地查看 `align-items` CSS 属性。  `gap` CSS 属性也受支持。  在下图中，`gap` CSS 属性设置为 `gap: 12px;`，并显示每个间隙的阴影图案。
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="突出显示以 align- 开头的 CSS 属性的“自动完成”菜单" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
-         突出显示以以下内容开头的 CSS 属性的“自动完成”菜单 `align-`
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-flex-container-align-items-center-gap-12px.msft.png" alt-text="CSS 属性和网页中的弹性框间隙突出显示" lightbox="../../media/2021/01/elements-flex-container-align-items-center-gap-12px.msft.png":::
-         CSS 属性和网页中的弹性框 `gap` 突出显示 :::image-end:::
-   :::column-end:::
-:::row-end:::
+自动完成菜单现在显示指示对齐属性效果的图标，例如 `align-content` 和 `align-items`。
+
+此外，DevTools 现在还会显示一条指导线，帮助你更好地查看 `align-items` CSS 属性。  `gap` CSS 属性也受支持。  在下图中，`gap` CSS 属性设置为 `gap: 12px;`，并显示每个间隙的阴影图案。
+
+突出显示的以 `align-` 开头的 CSS 属性“自动完成”菜单：
+
+:::image type="content" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="突出显示以 align- 开头的 CSS 属性的“自动完成”菜单" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
+
+突出显示的 CSS 属性和网页中的弹性框 `gap`：
+
+:::image type="content" source="../../media/2021/01/elements-flex-container-align-items-center-gap-12px.msft.png" alt-text="CSS 属性和网页中的弹性框间隙突出显示" lightbox="../../media/2021/01/elements-flex-container-align-items-center-gap-12px.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -218,16 +203,13 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 现在可使用 DevTools 强制 [:target](https://developer.mozilla.org/docs/web/css/:target) CSS 伪类。  当唯一元素（目标元素）具有与 URL 片段匹配的 `id` 时，将触发 `:target` 伪类。  例如，`http://www.example.com/index.html#section1` URL 在带有 `id="section1"` 的 HTML 元素上触发 `:target` 伪类。  若要尝试突出显示了第 1 部分的演示，请导航至“[CSS :target 演示](https://microsoftedge.github.io/DevToolsSamples/whats-new/89/target-css-demo.html#section-1)”。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1156628](https://crbug.com/1156628)。
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-styles-none-forced.msft.png" alt-text="突出显示网页，未强制 CSS" lightbox="../../media/2021/01/elements-styles-none-forced.msft.png":::
-         突出显示网页，未强制 CSS :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-styles-target-forced.msft.png" alt-text="已强制 :target CSS 且突出显示网页" lightbox="../../media/2021/01/elements-styles-target-forced.msft.png":::
-         `:target` 已强制 CSS 且突出显示网页 :::image-end:::
-   :::column-end:::
-:::row-end:::
+突出显示网页，未强制 CSS：
+
+:::image type="content" source="../../media/2021/01/elements-styles-none-forced.msft.png" alt-text="突出显示网页，未强制 CSS" lightbox="../../media/2021/01/elements-styles-none-forced.msft.png":::
+
+`:target` 已强制 CSS 且突出显示网页：
+
+:::image type="content" source="../../media/2021/01/elements-styles-target-forced.msft.png" alt-text="已强制 :target CSS 且突出显示网页" lightbox="../../media/2021/01/elements-styles-target-forced.msft.png":::
 
 #### <a name="use-duplicate-elements-to-copy-elements"></a>使用“复制元素”复制元素
 
@@ -249,36 +231,25 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 现在，你可以通过上下文菜单中的几个新选项更快地复制 CSS 属性。  在“**元素**”工具中，选择一个元素。  若要复制值，请在“**样式**”窗格中，将鼠标悬停在 CSS 类或 CSS 属性上，打开上下文菜单（右键单击），然后选择复制选项。
 
-:::row:::
-   :::column span="":::
-      CSS 类的复制选项。
+右键单击菜单中 CSS 类的复制选项：
 
-      | 选项 | 详细信息 |
-      |:--- |:--- |
-      | **复制选择器** | 复制当前选择器名称。 |
-      | **复制规则** | 复制当前选择器的规则。 |
-      | **复制所有声明** | 复制当前规则下的所有声明，包括无效和有前缀的属性。 |
-   :::column-end:::
-   :::column span="":::
-      CSS 属性的复制选项。
+| 选项 | 详细信息 |
+|:--- |:--- |
+| **复制选择器** | 复制当前选择器名称。 |
+| **复制规则** | 复制当前选择器的规则。 |
+| **复制所有声明** | 复制当前规则下的所有声明，包括无效和有前缀的属性。 |
 
-      | 选项 | 详细信息 |
-      |:--- |:--- |
-      | **复制声明** | 复制当前行的声明。 |
-      | **复制属性** | 复制当前行的属性。 |
-      | **复制值** | 复制当前行的值。 |
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/copy-css-class.msft.png" alt-text="上下文菜单中 CSS 类的复制选项" lightbox="../../media/2021/01/copy-css-class.msft.png":::
-         上下文菜单中 CSS 类的复制选项 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/copy-css-property-cropped.msft.png" alt-text="上下文菜单中 CSS 属性的复制选项" lightbox="../../media/2021/01/copy-css-property.msft.png":::
-         上下文菜单中 CSS 属性的复制选项 :::image-end:::
-   :::column-end:::
-:::row-end:::
+:::image type="content" source="../../media/2021/01/copy-css-class.msft.png" alt-text="右键单击菜单中 CSS 类的复制选项" lightbox="../../media/2021/01/copy-css-class.msft.png":::
+
+右键单击菜单中 CSS 属性的复制选项：
+
+| 选项 | 详细信息 |
+|:--- |:--- |
+| **复制声明** | 复制当前行的声明。 |
+| **复制属性** | 复制当前行的属性。 |
+| **复制值** | 复制当前行的值。 |
+
+:::image type="content" source="../../media/2021/01/copy-css-property-cropped.msft.png" alt-text="右键单击菜单中 CSS 属性的复制选项" lightbox="../../media/2021/01/copy-css-property.msft.png":::
 
 若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1152391](https://crbug.com/1152391)。
 
@@ -336,50 +307,25 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 现在，你可以在“**控制台**”和“**源**”工具中复制对象值。  复制对象值的能力在处理大型对象时很有用。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1148353](https://crbug.com/1148353) 和 [1149859](https://crbug.com/1149859)。
 
-:::row:::
-   :::column span="":::
-      在“**控制台**”工具中，将鼠标悬停在某个对象上，打开上下文菜单（右键单击），然后选择“**复制对象**”。
-   :::column-end:::
-   :::column span="":::
-      在“**源**”工具中，在断点处，将鼠标悬停在某个对象上，在“**对象**”弹出窗口中突出显示某个对象，打开上下文菜单（右键单击），然后选择“**复制对象**”。
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/console-copy-object.msft.png" alt-text="在“控制台”中复制对象" lightbox="../../media/2021/01/console-copy-object.msft.png":::
-         在“**控制台**”中复制对象
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png" alt-text="在“源”中复制对象" lightbox="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png":::
-         在“**源**”中复制对象
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+在“**控制台**”工具中，将鼠标悬停在某个对象上，打开上下文菜单（右键单击），然后选择“**复制对象**”。
+
+:::image type="content" source="../../media/2021/01/console-copy-object.msft.png" alt-text="在“控制台”中复制对象" lightbox="../../media/2021/01/console-copy-object.msft.png":::
+
+在“**源**”工具中，在断点处，将鼠标悬停在某个对象上，在“**对象**”弹出窗口中突出显示某个对象，打开上下文菜单（右键单击），然后选择“**复制对象**”。
+
+:::image type="content" source="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png" alt-text="在“源”中复制对象" lightbox="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png":::
 
 #### <a name="copy-file-name-in-the-sources-tool-and-styles-pane"></a>在“源”工具和“样式”窗格中复制文件名
 
 现在，你可以使用上下文菜单复制文件名。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1155120](https://crbug.com/1155120)。
 
-:::row:::
-   :::column span="":::
-      在“**源**”工具中，将鼠标悬停在某个文件名上，打开上下文菜单（右键单击），然后选择“**复制文件名**”。
-   :::column-end:::
-   :::column span="":::
-      在“**元素**”工具 >“**样式**”窗格中，将鼠标悬停在某个文件名上，打开上下文菜单（右键单击），然后选择“**复制文件名**”。
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/sources-copy-file-name.msft.png" alt-text="在“源”中复制文件名" lightbox="../../media/2021/01/sources-copy-file-name.msft.png":::
-         在“**源**”中复制文件名
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-styles-copy-file-name.msft.png" alt-text="在“样式”窗格中复制文件名" lightbox="../../media/2021/01/elements-styles-copy-file-name.msft.png":::
-         在“**样式**”窗格中复制文件名 :::image-end:::
-   :::column-end:::
-:::row-end:::
+在“**源**”工具中，将鼠标悬停在某个文件名上，打开上下文菜单（右键单击），然后选择“**复制文件名**”。
+
+:::image type="content" source="../../media/2021/01/sources-copy-file-name.msft.png" alt-text="在“源”中复制文件名" lightbox="../../media/2021/01/sources-copy-file-name.msft.png":::
+
+在“**元素**”工具 >“**样式**”窗格中，将鼠标悬停在某个文件名上，打开上下文菜单（右键单击），然后选择“**复制文件名**”。
+
+:::image type="content" source="../../media/2021/01/elements-styles-copy-file-name.msft.png" alt-text="在“样式”窗格中复制文件名" lightbox="../../media/2021/01/elements-styles-copy-file-name.msft.png":::
 
 ### <a name="updates-to-frame-details"></a>帧详细信息更新
 

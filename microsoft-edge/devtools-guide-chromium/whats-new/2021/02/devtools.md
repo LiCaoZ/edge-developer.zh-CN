@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 50a4f3ede8278638f7d82e7dfce9f125689bf736
-ms.sourcegitcommit: c1f5b8d23ade4bd4e808dcb855a2e7636eff597b
+ms.openlocfilehash: 363c7f47f1264c238b88e850c6e7508be4cec4aa
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "12191174"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12269177"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -91,24 +91,13 @@ DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  
 
 适用于 Microsoft Visual Studio Code 的 [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) 扩展版本 1.1.4 现在在每个 DevTools 实例旁边显示一个网站图标。  来自 Microsoft Edge 的控制台消息现在显示在 Microsoft Visual Studio Code 的“**输出**”下的“**DevTools 控制台**”中。  Microsoft Visual Studio Code 会自动更新扩展。  若要手动更新到版本 1.1.4，请导航至“[手动更新扩展](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually)”。  你可以在 [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools) 上提交问题并参与提升扩展。
 
-:::row:::
-   :::column span="":::
-      下图显示了来自 Microsoft Edge 的“**控制台**”工具中记录的示例网页的消息。
-   :::column-end:::
-   :::column span="":::
-      下图显示了来自 Microsoft Visual Studio Code 的“**输出**”下的“**DevTools 控制台**”中记录的示例网页的相同消息。
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png" alt-text="在 Microsoft Edge DevTools 的控制台中显示消息" lightbox="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png":::
-         在 Microsoft Edge DevTools 的控制台中显示消息 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png" alt-text="在 Microsoft Visual Studio Code 的“输出”下的“DevTools 控制台”中显示相同消息" lightbox="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png":::
-         在 Microsoft Visual Studio Code 的“输出”下的“DevTools 控制台”中显示相同消息 :::image-end:::
-   :::column-end:::
-:::row-end:::
+下图显示了来自 Microsoft Edge“**控制台**”工具中记录的示例网页的消息：
+
+:::image type="content" source="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png" alt-text="在 Microsoft Edge DevTools 的控制台中显示消息" lightbox="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png":::
+
+下图显示了来自 Microsoft Visual Studio Code“**输出**”下“**DevTools 控制台**”中记录的示例网页的相同消息：
+
+:::image type="content" source="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png" alt-text="在 Microsoft Visual Studio Code“输出”下的“DevTools 控制台”中显示相同消息" lightbox="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -119,24 +108,13 @@ DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  
 
 DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display: flex` 或 `display: inline-flex` CSS 样式应用于 HTML 元素，则“**元素**”工具中该元素旁边将显示 `flex` 图标。  若要在网页上显示（或隐藏）弹性覆盖，请选择 `flex` 图标。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1166710](https://crbug.com/1166710) 和 [1175699](https://crbug.com/1175699)。
 
-:::row:::
-   :::column span="":::
-      若要打开**弹性框**编辑器，请导航至“**样式**”窗格，然后选择 `display: flex` 或 `display: inline-flex` 样式旁边的新图标。  **弹性框**编辑器提供了一种快速编辑弹性框属性的方法。
-   :::column-end:::
-   :::column span="":::
-      此外，“**布局**”窗格中的“**弹性框**”部分将显示网页上的所有弹性框元素。  你可以切换每个元素的覆盖。
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-styles-display-flex-window.msft.png" alt-text="CSS 弹性框调试工具" lightbox="../../media/2021/02/elements-styles-display-flex-window.msft.png":::
-         CSS 弹性框调试工具 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="“布局”窗格中的“弹性框”部分" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
-         “**布局**”窗格中的“**弹性框**”部分 :::image-end:::
-   :::column-end:::
-:::row-end:::
+若要打开**弹性框**编辑器，请导航至“**样式**”窗格，然后选择 `display: flex` 或 `display: inline-flex` 样式旁边的新图标。  **弹性框**编辑器提供了一种快速编辑弹性框属性的方法。
+
+:::image type="content" source="../../media/2021/02/elements-styles-display-flex-window.msft.png" alt-text="CSS 弹性框调试工具" lightbox="../../media/2021/02/elements-styles-display-flex-window.msft.png":::
+
+此外，“**布局**”窗格中的“**弹性框**”部分将显示网页上的所有弹性框元素。  你可以切换每个元素的覆盖。
+
+:::image type="content" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="“布局”窗格中的“弹性框”部分" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -149,16 +127,13 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 在 Microsoft Edge 版本 90 中，在“**发起程序**”窗格中，你可以使用键盘上的箭头键展开或折叠请求链。  链中的焦点网络请求现在也会突出显示。  若要在“**网络**”工具中了解有关发起程序的更多信息，请导航至“[显示发起程序和依赖项](../../../network/reference.md#display-initiators-and-dependencies)”。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1158276](https://crbug.com/1158276) 和 [1160637](https://crbug.com/1160637)。
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="选择一个网络请求，然后选择“发起程序”窗格" lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
-         选择一个网络请求，然后选择“**发起程序**”窗格 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png" alt-text="展开或折叠请求发起程序链并遵循突出显示的行" lightbox="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png":::
-         展开或折叠请求发起程序链并遵循突出显示的行 :::image-end:::
-   :::column-end:::
-:::row-end:::
+选择一个网络请求，然后选择“**发起程序**”窗格：
+
+:::image type="content" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="选择一个网络请求，然后选择“发起程序”窗格" lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
+
+展开或折叠请求发起程序链并执行突出显示的行：
+
+:::image type="content" source="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png" alt-text="展开或折叠请求发起程序链并遵循突出显示的行" lightbox="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -169,16 +144,13 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 当使用[控制台边栏](../../../console/reference.md#open-the-console-sidebar)进行筛选时，“[日志级别](../../../console/reference.md#filter-by-log-level)”下拉列表中的筛选器不可用。  以前，“**日志级别**”下拉列表在你悬停时会突出显示，即使从**控制台边栏**中选择了筛选器也是如此。  在 Microsoft Edge 版本 90 中，当你从**控制台边栏**中选择筛选器后将鼠标悬停在“**日志级别**”下拉列表上时，它不再突出显示。  若要了解有关**控制台**中的筛选的更多信息，请导航至“[筛选消息](../../../console/reference.md#filter-messages)”。
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/console-sidebar-default-levels-old.msft.png" alt-text="以前，如果打开控制台边栏并将鼠标悬停在“默认级别”上，它会突出显示" lightbox="../../media/2021/02/console-sidebar-default-levels-old.msft.png":::
-         以前，如果打开**控制台边栏**并将鼠标悬停在“**默认级别**”上，它会突出显示 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/console-sidebar-default-levels-new.msft.png" alt-text="从 Microsoft Edge 90 开始，如果你选择控制台边栏并将鼠标悬停在“默认级别”上，它不会突出显示" lightbox="../../media/2021/02/console-sidebar-default-levels-new.msft.png":::
-         从 Microsoft Edge 90 开始，如果你选择**控制台边栏**并将鼠标悬停在“**默认级别**”上，它不会突出显示 :::image-end:::
-   :::column-end:::
-:::row-end:::
+以前，如果打开“**控制台边栏**”并将鼠标悬停在“**默认级别**”上，它会突出显示：
+
+:::image type="content" source="../../media/2021/02/console-sidebar-default-levels-old.msft.png" alt-text="以前，如果打开控制台边栏并将鼠标悬停在“默认级别”上，它会突出显示" lightbox="../../media/2021/02/console-sidebar-default-levels-old.msft.png":::
+
+从 Microsoft Edge 90 开始，如果你选择“**控制台边栏**”并将鼠标悬停在“**默认级别**”上，它将不会突出显示：
+
+:::image type="content" source="../../media/2021/02/console-sidebar-default-levels-new.msft.png" alt-text="从 Microsoft Edge 90 开始，如果你选择控制台边栏并将鼠标悬停在“默认级别”上，它不会突出显示" lightbox="../../media/2021/02/console-sidebar-default-levels-new.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -242,17 +214,13 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 现在，“请求”表将显示一个标题为“**远程地址空间**”的新列。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1128885](https://crbug.com/1128885)。
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png" alt-text="在上下文菜单中，选择“远程地址空间”" lightbox="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png":::
-         在上下文菜单中，选择“**远程地址空间**”
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="“请求”表现在显示“远程地址空间”列" lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
-         “请求”表现在显示“**远程地址空间**”列 :::image-end:::
-   :::column-end:::
-:::row-end:::
+在上下文菜单中，选择“**远程地址空间**”：
+
+:::image type="complex" source="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png" alt-text="在上下文菜单中，选择“远程地址空间”" lightbox="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png":::
+
+现在，“请求”表显示“**远程地址空间**”列：
+
+:::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="“请求”表现在显示“远程地址空间”列" lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
 
 ### <a name="display-allowed-and-disallowed-features-in-the-frame-details-view"></a>在“框架详细信息”视图中显示允许和禁止的功能
 
@@ -290,18 +258,13 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 若要启用试验，请导航至“启用或禁用试验[](../../../experimental-features/index.md#turning-an-experiment-on-or-off)”，然后选择“在‘元素’窗格中启用完整的辅助功能树视图****”旁边的复选框。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [887173](https://crbug.com/887173)。
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="显示 DOM 树视图" lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
-         显示 **DOM 树视图**
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png" alt-text="显示完整的辅助功能树视图" lightbox="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png":::
-         显示**完整的辅助功能树视图**
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+显示 **DOM 树视图**：
+
+:::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="显示 DOM 树视图" lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
+
+显示**完整的辅助功能树视图**：
+
+:::image type="complex" source="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png" alt-text="显示完整的辅助功能树视图" lightbox="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png":::
 
 
 <!-- ====================================================================== -->

@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 18844c7618240d0aca564607194a5fa9d8bebf56
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.openlocfilehash: 2dd010981b01343541828eb326974d3af8beb27c
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170678"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12268996"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -102,16 +102,13 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 1.  在 **样式** 窗格中，选择 `var(--theme-body-background)`。
 1.  **样式** 窗格现在显示 `--theme-body-background` CSS 变量的定义。
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/11/css-variable-support.msft.png" alt-text="链接到样式的 CSS 变量" lightbox="../../media/2020/11/css-variable-support.msft.png":::
-         链接到样式的 CSS 变量 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/11/css-variable-support-target.msft.png" alt-text="链接到样式目标的 CSS 变量" lightbox="../../media/2020/11/css-variable-support-target.msft.png":::
-         链接到样式目标的 CSS 变量 :::image-end:::
-   :::column-end:::
-:::row-end:::
+链接到样式的 CSS 变量：
+
+:::image type="content" source="../../media/2020/11/css-variable-support.msft.png" alt-text="链接到样式的 CSS 变量" lightbox="../../media/2020/11/css-variable-support.msft.png":::
+
+链接到样式目标的 CSS 变量：
+
+:::image type="content" source="../../media/2020/11/css-variable-support-target.msft.png" alt-text="链接到样式目标的 CSS 变量" lightbox="../../media/2020/11/css-variable-support-target.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -168,16 +165,13 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 若要定位请求发起程序，请使用服务工作线程中 JavaScript 代码的调用堆栈。  下图中调用堆栈以服务工作线程中的 JavaScript 代码开头，并将对原始网页请求的引用显示为 `(index):157`。  第二个图中，选择引用并打开提出请求的发起程序。  第二个图中的发起程序是网页。
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png" alt-text="此 service-worker.js 文件和调用堆栈突出显示请求原始发起程序。" lightbox="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png":::
-         `service-worker.js` 文件和调用堆栈突出显示请求原始发起程序 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/11/service-worker-sources-call-stack-target.msft.png" alt-text="（索引）网页是请求发起程序" lightbox="../../media/2020/11/service-worker-sources-call-stack-target.msft.png":::
-         `(index)` 网页是请求发起程序 :::image-end:::
-   :::column-end:::
-:::row-end:::
+突出显示请求发起程序的 `service-worker.js` 文件和调用堆栈：
+
+:::image type="content" source="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png" alt-text="突出显示请求发起程序的 service-worker.js 文件和调用堆栈。" lightbox="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png":::
+
+`(index)` 网页是请求发起程序：
+
+:::image type="content" source="../../media/2020/11/service-worker-sources-call-stack-target.msft.png" alt-text="（索引）网页是请求发起程序" lightbox="../../media/2020/11/service-worker-sources-call-stack-target.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -191,18 +185,15 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 *   突出显示并复制整个文本。
 *   将值存储为全局变量（如果适用），然后从 DevTools [控制台](../../../console/index.md) 将其复制。
 
-若要将属性值复制到剪贴板，导航至 [复制格式化响应 JSON 到剪贴板](../../../network/reference.md#copy-formatted-response-json-to-the-clipboard)。  若要审阅 Chromium 开源项目中此功能的历史记录，请导航至问题[1132084](https://crbug.com/1132084)。
+要将属性值复制到剪贴板，请参阅 [复制格式化响应 JSON 到剪贴板](../../../network/reference.md#copy-formatted-response-json-to-the-clipboard)。  要在 Chromium 开放源代码项目中查看此功能的历史记录，请参阅问题 [1132084](https://crbug.com/1132084)。
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/11/copy-property-value.msft.png" alt-text="在 DevTools 中复制属性值" lightbox="../../media/2020/11/copy-property-value.msft.png":::
-         在 DevTools 中复制属性值 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="在 Microsoft Visual Studio Code 中粘贴属性值" lightbox="../../media/2020/11/paste-property-value.msft.png":::
-         在 Microsoft Visual Studio Code 中粘贴属性值 :::image-end:::
-   :::column-end:::
-:::row-end:::
+在 DevTools 中复制属性值：
+
+:::image type="content" source="../../media/2020/11/copy-property-value.msft.png" alt-text="在 DevTools 中复制属性值" lightbox="../../media/2020/11/copy-property-value.msft.png":::
+
+在 Microsoft Visual Studio Code 中粘贴属性值：
+
+:::image type="content" source="../../media/2020/11/paste-property-value.msft.png" alt-text="在 Microsoft Visual Studio Code 中粘贴属性值" lightbox="../../media/2020/11/paste-property-value.msft.png":::
 
 
 <!-- ====================================================================== -->
