@@ -7,12 +7,12 @@ ms.date: 03/31/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 852abfed942d449e9d6ed65dc945d88f4e633747
-ms.sourcegitcommit: c1f5b8d23ade4bd4e808dcb855a2e7636eff597b
+ms.openlocfilehash: 6b8b09e8f28bbbd6368beeadb95f8a30be2d3424
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "12191118"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12269450"
 ---
 # <a name="native-messaging"></a>本机消息传递
 
@@ -73,100 +73,25 @@ ms.locfileid: "12191118"
 }
 ```
 
-主机清单文件必须是包含以下密钥的有效 JSON 文件。
+主机清单文件必须是包含以下密钥的有效 JSON 文件：
 
-:::row:::
-   :::column span="1":::
-      **密钥**
-   :::column-end:::
-   :::column span="3":::
-      **详细信息**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      ---
+| 密钥 | 详细信息 |
+| --- | --- |
+| `name` | 指定本机消息传递主机的名称。  客户端将字符串传递到 `runtime.connectNative` 或 `runtime.sendNativeMessage` 。<br/>  该值只能包含小写字母数字字符、下划线和点。<br/> 该值不得以点开始或结尾，而一个点不得后跟另一个点。 |
+| `description` | 描述应用。 |
+| `path` | 指定本机消息传递主机二进制文件的路径。<br/> 在Windows设备上，可以使用包含清单文件的目录的相对路径。<br/>  在 macOS 和 Linux 上，路径必须为绝对路径。<br/>  主机进程从将当前目录设置为包含主机二进制文件的目录开始。  例如 (Windows) ，如果参数设置为 ，则使用当前目录启动二进制文件 `C:\App\nm_host.exe` `C:\App\` () 。 |
+| `type` | 指定用于与本机消息传递主机通信的接口的类型。  该值指示Microsoft Edge `stdin` 主机 `stdout` 进行通信。  唯一可接受的值为 `stdio` 。 |
+| `allowed_origins` | 指定有权访问本机消息传递主机的扩展的列表。  若要打开应用以标识扩展并与扩展通信，在本机消息传递主机清单文件中，设置以下值：<br/> `"allowed_origins": ["chrome-extension://{microsoft_catalog_extension_id}"]`|
 
-      `name`
-   :::column-end:::
-   :::column span="3":::
-      ---
-
-      指定本机消息传递主机的名称。  客户端将字符串传递到 `runtime.connectNative` 或 `runtime.sendNativeMessage` 。
-
-      *   该值只能包含小写字母数字字符、下划线和点。
-      *   该值不得以点开始或结尾，而一个点不得后跟另一个点。
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      ---
-
-      `description`
-   :::column-end:::
-   :::column span="3":::
-      ---
-
-      描述应用。
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      ---
-
-      `path`
-   :::column-end:::
-   :::column span="3":::
-      ---
-
-      指定本机消息传递主机二进制文件的路径。
-
-      *   在Windows设备上，可以使用包含清单文件的目录的相对路径。
-      *   在 macOS 和 Linux 上，路径必须为绝对路径。
-
-      主机进程从将当前目录设置为包含主机二进制文件的目录开始。  例如 (Windows) ，如果参数设置为 ，则使用当前目录启动二进制文件 `C:\App\nm_host.exe` `C:\App\` () 。
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      ---
-
-      `type`
-   :::column-end:::
-   :::column span="3":::
-      ---
-
-      指定用于与本机消息传递主机通信的接口的类型。  该值指示Microsoft Edge `stdin` 主机 `stdout` 进行通信。
-      唯一可接受的值为 `stdio` 。
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      ---
-
-      `allowed_origins`
-   :::column-end:::
-   :::column span="3":::
-      ---
-
-      指定有权访问本机消息传递主机的扩展的列表。  若要打开应用以标识扩展并与扩展通信，请在你的本机消息传递主机清单文件中设置以下值。
-
-      ```json
-      "allowed_origins": ["chrome-extension://{microsoft_catalog_extension_id}"]
-      ```
-   :::column-end:::
-:::row-end:::
-
-旁加载扩展以测试主机的本机消息传递。
-若要在开发和检索期间旁加载扩展 `microsoft_catalog_extension_id` ，请完成以下操作。
+旁加载扩展以测试主机的本机消息传递。  在开发期间旁加载扩展并检索 `microsoft_catalog_extension_id` ：
 
 1.  导航到 `edge://extensions` ，然后打开"开发工具模式"切换按钮。
 1.  选择 **"加载解压缩**"，然后选择要旁加载的扩展包。
 1.  选择“确定”****。
 1.  导航到 `edge://extensions` 页面并验证扩展是否列出。
-1.  从页面上的 `microsoft_catalog_extension_id` 扩展 (从) ID 复制密钥。
+1.  从页面上的扩展 `microsoft_catalog_extension_id` (从) ID 复制密钥。
 
-准备好将扩展分发给用户时，将扩展发布到 Microsoft Edge 加载项网站。  已发布扩展的扩展 ID 可能与旁加载扩展时所使用的 ID 不同。  如果 ID 发生更改，则使用已发布扩展的 `allowed_origins` ID 在主机清单文件中更新。
+准备好将扩展分发给用户时，将扩展发布到Microsoft Edge加载项网站。  已发布扩展的扩展 ID 可能与旁加载扩展时所使用的 ID 不同。  如果 ID 发生更改，则使用已发布扩展的 `allowed_origins` ID 在主机清单文件中更新。
 
 
 <!-- ====================================================================== -->
@@ -209,7 +134,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.m
 
     1.  运行 `.reg` 文件。
 
-Microsoft Edge查询后跟 `HKEY_CURRENT_USER` 的根键 `HKEY_LOCAL_MACHINE` 。  在这两个项中，首先搜索 32 位注册表，然后搜索 64 位注册表以标识本机消息传递主机。  注册表项指定本机消息传递主机清单的位置。  如果注册表项的 Microsoft Edge没有主机清单的位置，Chromium 和 Chrome 注册表位置将用作回退选项。  如果Microsoft Edge在先前列出的任何位置找到注册表项，则它不会查询以下代码片段中列出的位置。  如果作为批处理脚本的一部分运行所创建的文件， `.reg` 请确保使用管理员命令提示符运行它。
+Microsoft Edge查询根 `HKEY_CURRENT_USER` 键后跟 `HKEY_LOCAL_MACHINE` 。  在这两个项中，首先搜索 32 位注册表，然后搜索 64 位注册表以标识本机消息传递主机。  注册表项指定本机消息传递主机清单的位置。  如果注册表项的 Microsoft Edge没有主机清单的位置，则 Chromium 和 Chrome 注册表位置将用作回退选项。  如果Microsoft Edge在先前列出的任何位置找到注册表项，则它不会查询以下代码片段中列出的位置。  如果作为批处理脚本的一部分运行所创建的文件， `.reg` 请确保使用管理员命令提示符运行它。
 
 以下列表是注册表位置的搜索顺序。
 
@@ -230,7 +155,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\
 ```
 
 > [!NOTE]
-> 如果您在 Microsoft Edge 加载项和 Chrome Webstore 上具有扩展，则必须添加与主机清单文件中这两个存储对应的扩展名，因为只会读取与找到的第一个注册表位置对应的主机清单。 `allowed_origins`
+> 如果您在 Microsoft Edge 加载项和 Chrome Webstore 上具有扩展，则必须添加与主机清单文件的 中的这两个存储对应的扩展名，因为只会读取与找到的第一个注册表位置对应的主机清单。 `allowed_origins`
 
 ### [<a name="macos"></a>macOS](#tab/macos/)
 

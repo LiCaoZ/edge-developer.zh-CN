@@ -1,22 +1,22 @@
 ---
-description: 在 DevTools 中模拟Microsoft Edge缺陷。
 title: '在 DevTools Microsoft Edge色盲 (中模拟视觉缺陷) '
+description: 在 DevTools 中模拟Microsoft Edge缺陷。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: a5e69f20ef0ec2567c51edbc34e71706265ccac2
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.date: 06/07/2021
+ms.openlocfilehash: 23f5be5bb7c1ba33f0b33ab7ecf560aae48e5570
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139995"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12269121"
 ---
 # <a name="emulate-vision-deficiencies"></a>模仿视觉缺陷
 
-为了更好地满足色盲用户 (色盲[](https://www.colourblindawareness.org)) 或模糊视觉的需求[，Microsoft Edge DevTools](../index.md)允许你模拟模糊的视觉和特定的颜色视觉缺陷。  模拟 **视觉缺陷工具** 可模拟以下类别：
+为了更好地满足色盲用户 (色盲[](https://www.colourblindawareness.org)) 或模糊视觉Microsoft Edge[开发人员](../index.md)工具允许你模拟模糊的视觉和特定的色盲。  模拟 **视觉缺陷工具** 可模拟以下类别：
 
 | 色盲 | 详细信息 |
 |:--- |:--- |
@@ -36,36 +36,23 @@ ms.locfileid: "12139995"
 1.  选择 **"更多工具"。**
 1.  选择 **"呈现"。**
 
-    :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="打开呈现工具" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
-       打开 **呈现** 工具
-    :::image-end:::
+    :::image type="content" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="打开呈现工具。" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
 
 " **呈现** "菜单显示在箱中。
 
 1.  向下滚动到 `Emulate vision deficiencies` 菜单项并选择下拉菜单以显示选项。
 
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="呈现工具上的&quot;模拟视觉缺陷&quot;菜单" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
-       呈现 **工具上的** "模拟视觉缺陷 **"** 菜单
-    :::image-end:::
+    :::image type="content" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="呈现工具上的&quot;模拟视觉缺陷&quot;菜单。" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
 
 1.  选择一个选项。
 
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="&quot;模拟视觉缺陷&quot;菜单选项" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
-       " **模拟视觉缺陷"** 菜单选项
-    :::image-end:::
+    :::image type="content" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="&quot;模拟视力缺陷&quot;菜单选项。" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
 
 1.  主窗口显示对应用于当前页面的选定选项的模拟。
 
-    :::row:::
-       :::column span="":::
-          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="使用模糊视觉模拟显示" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
-             使用**模糊视觉模拟显示** :::image-end:::
-       :::column-end:::
-       :::column span="":::
-          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="使用 Achromatop进行模拟显示" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
-             使用**Achromatop进行模拟显示** :::image-end:::
-       :::column-end:::
-    :::row-end:::
+    :::image type="content" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="使用模糊视觉模拟显示。" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
+
+    :::image type="content" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="使用 Achromatopoma 模拟显示。" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -75,15 +62,11 @@ ms.locfileid: "12139995"
 
 1.  选择 `Ctrl` + `Shift` + `P` (Windows/Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令**菜单**。
 
-    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="命令菜单" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-       **命令菜单**
-    :::image-end:::
+    :::image type="content" source="../media/css-console-command-menu-rendering.msft.png" alt-text="命令菜单。" lightbox="../media/css-console-command-menu-rendering.msft.png":::
 
 1.  键入 `emulate` ，选择要模拟的，然后选择 `Enter` 。
 
-    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="命令菜单中提供的不同模拟选项" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
-       命令菜单中提供的不同 **模拟选项**
-    :::image-end:::
+    :::image type="content" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="命令菜单中提供的不同模拟选项。" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
 
 > [!IMPORTANT]
 > " **模拟视觉缺陷"** 工具模拟每个缺陷人士可能如何查看你的产品的近似值。  每个人是不同的，因此视觉缺陷的严重性因人而异。  为了更好地满足用户的需求，请避免任何可能导致问题的颜色组合。  模拟 **视觉缺陷** 工具不是产品的完整辅助功能评估。  相反 **，"模拟视觉缺陷"** 工具应为您提供良好的第一步以避免出现问题。

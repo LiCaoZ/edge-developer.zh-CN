@@ -1,18 +1,18 @@
 ---
-description: 如何将 Microsoft Edge DevTools 移动到视区底部或左侧或单独的窗口。
 title: '将 DevTools 放置 (Undock，将扩展坞更改为底部，将扩展坞更改为左侧) '
+description: 如何将 Microsoft Edge DevTools 移动到视区底部或左侧或单独的窗口。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 2ca392d4faced9f10e2e6d19d86fc70fbcace62d
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 05/04/2021
+ms.openlocfilehash: d952a4a70dd66adec315850347cb4f2b302da3fb
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156072"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12268953"
 ---
 <!-- Copyright Kayce Basques
 
@@ -31,57 +31,29 @@ ms.locfileid: "12156072"
 
 默认情况下，Microsoft Edge DevTools 固定在视口窗口 (右侧) 。  还可以将 DevTools 停靠在窗口底部或左侧，或者将 DevTools 停靠到单独的窗口。
 
-:::row:::
-   :::column span="":::
-      DevTools 固定到窗口左侧：
-   :::column-end:::
-   :::column span="":::
-      DevTools 固定到窗口底部：
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="选择&quot;扩展坞&quot;向左" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
-         选择 **"扩展坞"向左**
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="选择停靠到底部" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
-         当你希望应用本机保护时，可选择 `Dock to bottom`
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+DevTools 固定到窗口左侧：
 
-DevTools 可能会撤消停靠到单独的窗口，你可以移到单独的监视器：
+:::image type="content" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="DevTools 固定到窗口的左侧。" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
 
-:::row:::
-   :::column span="":::
-      浏览器窗口：
-   :::column-end:::
-   :::column span="":::
-      DevTools 在单独的窗口中取消停靠：
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="单独窗口中的浏览器" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
-         单独窗口中的浏览器 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="在单独窗口中取消停靠的 DevTools" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
-         在单独窗口中取消停靠的 DevTools :::image-end:::
-   :::column-end:::
-:::row-end:::
+DevTools 固定到窗口底部：
+
+:::image type="content" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="DevTools 固定到窗口底部。" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+
+DevTools 可以撤消停靠到单独的窗口，你可以移动到单独的监视器。  浏览器随后具有自己的专用窗口，没有 DevTools，已取消停靠：
+
+:::image type="content" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="没有 DevTools 的其自己的专用窗口中的浏览器，已取消停靠。" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
+
+然后，DevTools 将撤消停靠到其自己的单独专用窗口中：
+
+:::image type="content" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="DevTools 已取消停靠到其自己的单独专用窗口中。" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## <a name="change-placement-from-the-main-menu"></a>从主菜单更改位置
 
-1.  选择"自定义和控制**DevTools** (`...`) "，然后选择"撤消**** 停靠到单独的窗口" (""撤消停靠) "，选择"停靠到底部 (扩展坞"到底部) ，或选择"停靠"以从 (扩展坞向左 ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png)) 。
+1.  单击"自定义和控制**DevTools** () "，然后选择"撤消停靠到单独的窗口" ("撤消停靠) "，选择"停靠到底部 (扩展坞到底部) "，或选择"扩展坞向左 (扩展坞向左 `...` **** ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png)) "。
 
-    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="选择取消停靠到单独的窗口" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
-       选择 **停靠到单独的窗口位置**
-    :::image-end:::
+:::image type="content" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="选择&quot;撤消停靠到单独的窗口&quot;。" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -96,11 +68,9 @@ DevTools 可能会撤消停靠到单独的窗口，你可以移到单独的监�
     *  **还原最后一个扩展坞位置**
     *  **撤消停靠到单独的窗口中**
 
-    您还可以从主菜单访问 [命令](#change-placement-from-the-main-menu)。
+    您还可以从主菜单访问 [这些命令](#change-placement-from-the-main-menu)。
 
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Undock 命令" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
-       Undock 命令
-    :::image-end:::
+    :::image type="content" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Undock 命令。" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
 
 
 <!-- ====================================================================== -->

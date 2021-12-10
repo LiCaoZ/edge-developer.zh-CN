@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 142bd9343a4c45996a0b0c4d07b5512a9e45b9d8
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: 17f76ebb740fc2decc9314e73e1de24367fe7459
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156933"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12269380"
 ---
 <!-- Copyright Kayce Basques
 
@@ -35,25 +35,21 @@ ms.locfileid: "12156933"
 
 使用代码片段在第三方网页进行少许内容更改的绝佳方法。  将代码片段中的代码更改添加到当前网页，并在同一上下文中运行。  有关更改网页现有代码的更多信息，请导航到[替代](./overrides.md)。
 
-:::row:::
-   :::column span="":::
-      例如，下图所示左侧为 DevTools 主页，右侧为一些代码片段源代码。
+下图显示了左侧的 DevTools 主页和右侧一些代码段源代码。
 
-      :::image type="complex" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="运行代码片段之前" lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
-         运行代码片段之前的网页 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      运行代码片段之前网页的代码片段源代码。
+运行代码段之前的网页：
 
-      ```javascript
-      console.log('Hello, Snippets!');
-      document.body.innerHTML = '';
-      var p = document.createElement('p');
-      p.textContent = 'Hello, Snippets!';
-      document.body.appendChild(p);
-      ```
-   :::column-end:::
-:::row-end:::
+:::image type="content" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="运行代码片段之前的网页" lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
+
+运行代码段之前网页的代码段源代码：
+
+```javascript
+console.log('Hello, Snippets!');
+document.body.innerHTML = '';
+var p = document.createElement('p');
+p.textContent = 'Hello, Snippets!';
+document.body.appendChild(p);
+```
 
 下图所示为运行代码片段后出现的网页。  将弹出**控制台抽屉式选项卡**显示代码片段记录的 `Hello, Snippets!` 消息，并且网页的内容全部更改。
 
@@ -129,7 +125,7 @@ ms.locfileid: "12156933"
     :::image-end:::
 
 1.  使用**代码编辑器**将 JavaScript 添加到代码片段。
-1.  当代码片段名称旁边出现星号时，表示有代码未保存。  选择 `Control` + `S` (Windows、Linux) 或 (`Command` + `S` macOS) 保存。
+1.  当代码片段名称旁边出现星号时，表示有代码未保存。  选择 `Control` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存。
 
     :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="代码片段名称旁边显示星号表示代码未保存" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
        代码片段名称旁边显示星号表示代码未保存

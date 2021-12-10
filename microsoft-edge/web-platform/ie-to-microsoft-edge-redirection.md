@@ -7,12 +7,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， 兼容性， Web 平台， Internet Explorer
-ms.openlocfilehash: b8d83653a875b19da40654b744e7f86a9f86029e
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: aea9cc3cc131e5477e26c06cf5cec4e1ee900283
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157003"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12269394"
 ---
 # <a name="moving-users-to-microsoft-edge-from-internet-explorer"></a>将用户从Microsoft Edge移动到Internet Explorer
 
@@ -37,31 +37,25 @@ IE 兼容性列表仅在发生以下操作时添加网站。
 <!-- ====================================================================== -->
 ## <a name="redirection-experience"></a>重定向体验
 
-重定向到 Microsoft Edge 时，用户会显示下一张屏幕截图中的一次对话框。  该对话框为用户提供以下信息。
+重定向到Microsoft Edge时，用户会显示下一张屏幕截图中的一次对话框。  该对话框为用户提供以下信息：
+*  它说明了重定向网站的原因。
+*  它会提示用户同意将浏览数据和首选项从 IE 复制到 Microsoft Edge。
 
-*   它说明了重定向网站的原因。
-*   它会提示用户同意将浏览数据和首选项从 IE 复制到 Microsoft Edge。
+将导入以下浏览数据：
+*  收藏夹
+*  密码
+*  搜索引擎
+*  打开选项卡
+*  历史记录
+*  设置
+*  Cookie
+*  主页
 
-:::row:::
-   :::column span="":::
-      将导入以下浏览数据。
+浏览通知并提示导入数据和首选项：
 
-      *   收藏夹
-      *   密码
-      *   搜索引擎
-      *   打开选项卡
-      *   历史记录
-      *   “设置”
-      *   Cookie
-      *   主页
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../media/neededge-dialog1.msft.png" alt-text="浏览通知并提示导入数据和首选项" lightbox="../media/neededge-dialog1.msft.png":::
-         浏览通知并提示导入数据和首选项 :::image-end:::
-   :::column-end:::
-:::row-end:::
+:::image type="content" source="../media/neededge-dialog1.msft.png" alt-text="浏览通知并提示导入数据和首选项" lightbox="../media/neededge-dialog1.msft.png":::
 
-如果用户未通过选中"始终显示我的浏览数据和首选项Internet Explorer复选框同意，用户可以选择"继续**浏览"** 以继续****   浏览会话。
+如果用户未通过选中"始终从 Internet Explorer 显示我的浏览数据和首选项"复选框来同意，用户可以选择"**继续浏览"以**继续****   浏览会话。
 
 最后，网站不兼容横幅将显示在每个重定向的地址栏下。  下图显示了网站不兼容横幅的示例。
 
@@ -72,7 +66,7 @@ IE 兼容性列表仅在发生以下操作时添加网站。
 网站不兼容横幅为用户提供了以下详细信息。
 
 *   建议用户切换到Microsoft Edge。
-*   要设置为Microsoft Edge浏览器产品/服务。
+*   要设置为Microsoft Edge浏览器的优惠。
 *   为用户提供浏览Microsoft Edge。
 
 当网站从 microsoft Edge Internet Explorer Microsoft Edge 时，将发生以下操作之一。
@@ -89,7 +83,7 @@ IE 兼容性列表仅在发生以下操作时添加网站。
 
 IE 兼容性列表是上一个 XML [microsoft.com。](https://www.microsoft.com)  此列表会定期更新，以响应用户和网站开发人员有关添加或删除网站的请求。  对列表的更新会自动下载到用户计算机。
 
-通过电子邮件将以下信息 [ietoedge@microsoft.com](mailto:ietoedge@microsoft.com) IE 兼容性列表中添加或删除的网站。
+将以下信息通过电子邮件发送 [ietoedge@microsoft.com，](mailto:ietoedge@microsoft.com) 以添加或删除 IE 兼容性列表中的网站。
 
 *   所有者名称
 *   公司标题

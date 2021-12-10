@@ -1,18 +1,18 @@
 ---
+title: 替代用户代理字符串
 description: 打开"网络条件"工具，禁用"自动选择"，然后从列表中选择或输入自定义字符串。
-title: 在 DevTools 中Microsoft Edge代理字符串
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 7bbe7f62b39ac302efbd25b84959eded5baf65a6
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 07/19/2021
+ms.openlocfilehash: c5bf0adcacac98ac152e33da7c7e8ffa7e9a773d
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156793"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12268940"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,24 +27,23 @@ ms.locfileid: "12156793"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="override-the-user-agent-string-from-microsoft-edge-devtools"></a>在 DevTools 中Microsoft Edge代理字符串
+# <a name="override-the-user-agent-string"></a>替代用户代理字符串
 
-若要替代[DevTools 中的](https://developer.mozilla.org/docs/Glossary/User_agent)用户Microsoft Edge字符串：
+若要覆盖[DevTools 中的](https://developer.mozilla.org/docs/Glossary/User_agent)用户Microsoft Edge字符串：
 
-1. 选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令**菜单**。
+1. 按 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
 
-    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-command-menu.msft.png":::
-       **命令菜单**
-    :::image-end:::
+   :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单":::
+    
+1. 键入 `network conditions` ，选择 **"显示网络条件**"，然后按 `Enter` 以打开 **"网络条件"** 工具。
 
-1. 键入 `network conditions` ，选择 **显示网络条件**，然后选择 `Enter` 打开 **网络条件** 工具。
 1. 在" **用户代理"** 部分，清除" **使用浏览器默认"** 复选框。
 
-    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="关闭&quot;自动选择&quot;" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
-       清除 **"使用浏览器默认复选框** " :::image-end:::
+   :::image type="content" source="../media/clear-use-browser-default-checkbox.png" alt-text="清除&quot;使用浏览器默认值&quot;复选框。":::
 
-1. 从下拉列表中选择用户代理或输入自定义用户代理。
-1. 选择 **"用户代理客户端提示** "查看和更改这些值，如网络 [分析参考中所述](../network/reference.md)。
+1. 从下拉列表中选择用户代理，或输入自定义用户代理。
+
+1. 单击 **"用户代理客户端提示** "查看和更改这些值，如网络功能 [参考中所述](../network/reference.md)。
 
 
 <!-- ====================================================================== -->

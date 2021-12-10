@@ -7,12 +7,12 @@ ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools, 仿真, 设备, 模拟, 移动
-ms.openlocfilehash: 4219d43412ff25a320e94937ee4e7dfadc697936
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.openlocfilehash: c1d81db0d6914f8202609e7d73e57585ec579dcb
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170405"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12269009"
 ---
 <!-- Copyright Kayce Basques
 
@@ -91,7 +91,7 @@ ms.locfileid: "12170405"
 | 桌面 (触摸)  | 桌面 | 圆形 | `touch` |
 
 > [!NOTE]
-> 如果未显示**设备类型**列表，请选择"更多选项****  >  **""添加设备类型"。**
+> 如果未显示 **"设备类型**"列表，请选择"更多**选项**  >  **""添加设备类型"。**
 
 ### <a name="mobile-device-viewport-mode"></a>移动设备视区模式
 
@@ -116,7 +116,7 @@ ms.locfileid: "12170405"
 
 #### <a name="show-device-frame"></a>显示设备框架
 
-若要模拟特定移动设备的尺寸，请打开"更多选项"，然后选择"显示设备**** 框架"以显示视口周围的物理设备框架。 ****
+若要模拟特定移动设备的尺寸，请打开"更多选项"，然后选择"显示设备**** 框架"以在视口周围显示物理设备框。 ****
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="&quot;显示设备框架&quot;菜单项。" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
 
@@ -143,7 +143,7 @@ ms.locfileid: "12170405"
 
 ### <a name="show-rulers"></a>显示标尺
 
-如果你需要测量屏幕尺寸，可以使用标尺测量屏幕大小（以像素为单位）。  选择 **"更多**  >  **选项" 显示标尺**以显示视口上方和左侧的标尺。
+如果你需要测量屏幕尺寸，可以使用标尺测量屏幕大小（以像素为单位）。  选择 **"更多**  >  **选项"显示**标尺以显示视口上方和左侧的标尺。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="&quot;显示标尺&quot;菜单项。":::
 
@@ -193,13 +193,13 @@ ms.locfileid: "12170405"
 
     :::image type="content" source="../media/device-mode-network-throttle.msft.png" alt-text="网络面板中的限制列表。" lightbox="../media/device-mode-network-throttle.msft.png":::
 
-    或者选择 (Windows、Linux) 或 (macOS) 打开命令菜单，键入 ，然后选择 `Control` + `Shift` + `P` `Command` + `Shift` + `P` **** `3G` 启用快速**3G****** 限制或启用慢速 3G 限制。
+    或者 `Control` + `Shift` + `P` ， (Windows、Linux) 或 `Command` (macOS + `Shift` + `P`) **** `3G` ******** 打开"命令菜单"，键入 ，然后选择"启用快速 3G 限制"或"启用慢速 3G 限制"。
 
     :::image type="content" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="从&quot;命令菜单&quot;中选择&quot;启用快速或缓慢的 3G 限制&quot;。" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
 
 您还可以从"性能"面板设置 **网络** 限制：
 
-1.  选择**捕获设置 (** 捕获设置) 并选择网络列表，将预设更改为 ![ ](../media/capture-settings-icon.msft.png) 快速**3G**或******慢速 3G**。
+1.  选择 **"捕获设置 (** 捕获设置) ，然后选择"网络"列表，将预设更改为 ![ ](../media/capture-settings-icon.msft.png) **"快速 3G"** 或"**慢速 3G"。** ****
 
     :::image type="content" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="从&quot;性能&quot;面板设置网络限制。" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
 
@@ -209,7 +209,7 @@ ms.locfileid: "12170405"
 
  如果页面依赖移动设备中的地理位置信息正确呈现，则使用替代地理位置的 UI 提供不同的地理位置。
 
-1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **传感器"。**
+1.  选择 **"自定义和控制开发人员工具 () >** `...` **更多工具**  >  **传感器"。**
 
     :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="用于地理位置的传感器。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
@@ -227,7 +227,7 @@ ms.locfileid: "12170405"
 
 如果页面依赖来自移动设备的方向信息来正确呈现，请打开方向 UI。
 
-1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **传感器"。**
+1.  选择 **"自定义和控制开发人员工具 () >** `...` **更多工具**  >  **传感器"。**
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="&quot;更多工具&quot;菜单上的&quot;传感器&quot;命令。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
@@ -247,7 +247,7 @@ ms.locfileid: "12170405"
 
 如果页面依赖移动设备中的用户代理字符串来正确呈现，请使用“**网络条件**”面板提供不同的用户代理字符串。
 
-1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具网络**  >  **条件"。**
+1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **网络条件"。**
 
     :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="&quot;更多工具&quot;菜单中的网络条件条目。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
 
@@ -276,7 +276,7 @@ ms.locfileid: "12170405"
 1.  按如下所示设置用户代理客户端提示。
     *  **品牌**和**版本**，如*Edge*和*92。*  选择 **+ 添加品牌** 以添加多个品牌和版本对。
     *  **完整浏览器版本**，例如*92.0.1111.0。*
-    *  **平台**和**版本**，如*Windows* *和 10.0。*
+    *  **平台**和**版本**，如*Windows*和*10.0。*
     *  **体系结构** ，如 *x86*。
     *  **设备型号** ，例如 *，一些设备型号*。
 
@@ -285,7 +285,7 @@ ms.locfileid: "12170405"
 
 1. 选择**添加**。 新设备以选定状态显示在" **模拟设备** "列表顶部。
 
-还可以在网络分析参考中设置用户 [代理客户端提示](../network/reference.md)。
+还可以在网络工具中设置用户代理 **客户端** 提示;请参阅 [网络功能参考](../network/reference.md)。
 
 
 <!-- ====================================================================== -->

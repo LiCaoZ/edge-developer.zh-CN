@@ -7,12 +7,12 @@ ms.date: 06/02/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: f64341c7f3f379398ba886423af4fd5401a81ede
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.openlocfilehash: 900201456cc0bba9613e2e51d3b79cc26ef5cbe8
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170356"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12269387"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-92"></a>DevTools 中的新增功能 (Microsoft Edge 92)
 
@@ -71,16 +71,13 @@ ms.locfileid: "12170356"
 
 例如，当你在**性能**工具中并将鼠标悬停在**网络**工具的选项卡上时，这些改进有助于防止意外关闭**网络**工具。
 
-:::row:::
-    :::column:::
-        :::image type="complex" source="../../media/2021/05/hovering-on-tool-tab-before.msft.png" alt-text="重新格式化之前的选项卡" lightbox="../../media/2021/05/hovering-on-tool-tab-before.msft.png":::
-           重新格式化之前的选项卡 :::image-end:::
-    :::column-end:::
-    :::column:::
-        :::image type="complex" source="../../media/2021/05/hovering-on-tool-tab-after.msft.png" alt-text="重新格式化后的选项卡" lightbox="../../media/2021/05/hovering-on-tool-tab-after.msft.png":::
-           重新格式化后的选项卡 :::image-end:::
-    :::column-end:::
-:::row-end:::
+重新格式化前的选项卡：
+
+:::image type="content" source="../../media/2021/05/hovering-on-tool-tab-before.msft.png" alt-text="重新格式化之前的选项卡" lightbox="../../media/2021/05/hovering-on-tool-tab-before.msft.png":::
+
+重新格式化后的选项卡：
+
+:::image type="content" source="../../media/2021/05/hovering-on-tool-tab-after.msft.png" alt-text="重新格式化后的选项卡" lightbox="../../media/2021/05/hovering-on-tool-tab-after.msft.png":::
 
 这些改进尤其适用于本地化 DevTools 的用户，在这些用户中，选项卡可能更窄且更易于意外关闭。
 
@@ -99,16 +96,13 @@ ms.locfileid: "12170356"
 
 在 Microsoft Edge 版本 92 之前，在**控制台**中，屏幕阅读器等辅助技术未公布自动完成建议或已评估表达式的结果。 已修复此问题。
 
-:::row:::
-    :::column:::
-        :::image type="complex" source="../../media/2021/05/screen-reader-support-in-console-autocomplete.msft.png" alt-text="在控制台中，屏幕阅读器现在会播报当前选择的自动完成建议" lightbox="../../media/2021/05/screen-reader-support-in-console-autocomplete.msft.png":::
-           在**控制台**中，屏幕阅读器现在将播报当前选择的自动完成建议 :::image-end:::
-    :::column-end:::
-    :::column:::
-        :::image type="complex" source="../../media/2021/05/screen-reader-support-in-console-evaluated-expression.msft.png" alt-text="在控制台中，屏幕阅读器现在将播报计算表达式的结果" lightbox="../../media/2021/05/screen-reader-support-in-console-evaluated-expression.msft.png":::
-           在**控制台**中，屏幕阅读器现在将播报计算表达式的结果 :::image-end:::
-    :::column-end:::
-:::row-end:::
+在 **控制台中**，屏幕阅读器现在宣布当前选择的自动完成建议：
+
+:::image type="content" source="../../media/2021/05/screen-reader-support-in-console-autocomplete.msft.png" alt-text="在控制台中，屏幕阅读器现在会播报当前选择的自动完成建议" lightbox="../../media/2021/05/screen-reader-support-in-console-autocomplete.msft.png":::
+
+在 **控制台中**，屏幕阅读器现在宣布计算表达式的结果：
+
+:::image type="content" source="../../media/2021/05/screen-reader-support-in-console-evaluated-expression.msft.png" alt-text="在控制台中，屏幕阅读器现在将播报计算表达式的结果" lightbox="../../media/2021/05/screen-reader-support-in-console-evaluated-expression.msft.png":::
 
 
 <!-- ====================================================================== -->

@@ -1,18 +1,18 @@
 ---
 description: 从 Visual Studio Code 应用颜色主题，使用新的分离元素工具调试 DOM 节点内存泄漏，Microsoft Edge 开发人员工具 for Visual Studio Code 现在与 Visual Studio Code 调试器工作流集成，等等。
-title: 'DevTools (Microsoft Edge 93) '
+title: 'DevTools (Microsoft Edge 93 中的新增) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/30/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 4e90f0f8d91e533545c6d43620a3ef442bfa98d5
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.openlocfilehash: 0a2547d89fd5d8e6c70b8cf9c5e4cf1032c9d5e7
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170300"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12269436"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-93"></a>DevTools (Microsoft Edge 93 中的新增) 
 
@@ -20,7 +20,7 @@ ms.locfileid: "12170300"
 
 
 <!-- ====================================================================== -->
-## <a name="apply-themes-from-visual-studio-code-to-devtools"></a>将主题从 Visual Studio Code应用到 DevTools
+## <a name="apply-themes-from-visual-studio-code-to-devtools"></a>将主题从 Visual Studio Code 应用到 DevTools
 
 <!-- Title: Apply themes from Visual Studio Code to DevTools -->
 <!-- Subtitle: You can now use some of the most popular color themes from Visual Studio Code, such as Monokai and Solarized Dark, in Microsoft Edge DevTools. -->
@@ -31,7 +31,7 @@ ms.locfileid: "12170300"
    DevTools 的颜色主题
 :::image-end:::
 
-受支持的Visual Studio Code主题包括：
+支持Visual Studio Code主题包括：
 
 浅色主题：
 *  太阳光
@@ -57,7 +57,7 @@ ms.locfileid: "12170300"
 <!-- Title: Introducing the Detached Elements tool -->
 <!-- Subtitle: Use the Detached Elements tool to find and fix DOM node memory leaks. -->
 
-如果 DOM 节点不再附加到 DOM 的任何元素，但仍被用户保留到内存中，则认为该节点Microsoft Edge。 浏览器无法对元素进行垃圾回收，因为某些 JavaScript 仍在引用元素，即使它不再位于页面上或 DOM 的一部分。
+如果 DOM 节点不再附加到 DOM 的任何元素，但仍被组织保留到内存中，则认为该节点Microsoft Edge。 浏览器无法对元素进行垃圾回收，因为某些 JavaScript 仍在引用元素，即使它不再位于页面上或 DOM 的一部分。
 
 新的 **分离元素工具** 查找页面上的所有分离元素并显示它们。 可以展开和折叠分离的元素以查看同时保留的父节点和子节点。 通过选择"收集垃圾"并验证当无法对**** 分离的元素进行垃圾回收时是否具有内存泄漏，可以触发浏览器的垃圾回收。 最后，可以通过使用"分析"按钮拍摄堆快照，跳转到引用已分离元素的 JavaScript。 ****
 
@@ -66,14 +66,14 @@ ms.locfileid: "12170300"
    分离 **的元素** 工具
 :::image-end:::
 
-若要打开此实验，请导航到 **"设置**  >  **实验**"，然后选中"分离**元素"旁边的复选框**。
+若要打开此实验，请导航到 **"设置**  >  **实验**"，并选中"分离元素 **"旁边的复选框**。
 
 <!-- For more information, navigate to [Detached elements](../../../experimental-features/index.md#detached-elements). -->
 <!-- todo: link directly to the subheading in the page, when available; test the subheading link -->
 
 
 <!-- ====================================================================== -->
-## <a name="the-visual-studio-code-debugger-now-integrates-with-the-devtools-extension"></a>现在Visual Studio Code调试器与 DevTools 扩展集成
+## <a name="the-visual-studio-code-debugger-now-integrates-with-the-devtools-extension"></a>现在Visual Studio Code调试程序与 DevTools 扩展集成
 
 <!-- Title: While debugging, launch the DevTools extension by selecting the Inspect button -->
 <!-- Subtitle: Microsoft Edge DevTools for Visual Studio Code now integrates seamlessly with the JavaScript debugging workflow in the editor. -->
@@ -91,22 +91,22 @@ ms.locfileid: "12170300"
 *  多个 Bug 修复。
 *  扩展的更详细的文档。
 
-有关改进和修复的更多详细信息，请查看 [存储库](https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md) 中的 `vscode-edge-devtools` 更改日志文件。
+有关改进和修复的更多详细信息，请查看 [存储库中的更改](https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md) `vscode-edge-devtools` 日志文件。
 
-:::image type="complex" source="../../media/2021/07/extension-integrated-debugger.msft.png" alt-text="与调试器工作流集成Visual Studio Code DevTools 扩展" lightbox="../../media/2021/07/extension-integrated-debugger.msft.png":::
-   与调试器工作流集成Visual Studio Code DevTools 扩展
+:::image type="complex" source="../../media/2021/07/extension-integrated-debugger.msft.png" alt-text="与调试器工作流Visual Studio Code DevTools 扩展" lightbox="../../media/2021/07/extension-integrated-debugger.msft.png":::
+   与调试器工作流Visual Studio Code DevTools 扩展
 :::image-end:::
 
-有关详细信息，请参阅浏览器[调试与 Microsoft Edge 中的 DevTools Visual Studio Code。](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code)  获取[Microsoft Edge 开发人员工具Visual Studio Code扩展](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)。  Microsoft Visual Studio代码将自动更新扩展;若要手动更新此扩展，请导航到"[手动更新扩展"。](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually)  你可以在 [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools) 上提交问题并参与扩展的改进。
+有关详细信息，请参阅浏览器[调试与 Microsoft Edge 中的 DevTools Visual Studio Code。](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code)  获取[Microsoft Edge 开发人员工具Visual Studio Code扩展](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)。  Microsoft Visual Studio代码自动更新扩展;若要手动更新此扩展，请导航到"手动[更新扩展"。](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually)  你可以在 [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools) 上提交问题并参与扩展的改进。
 
 
 <!-- ====================================================================== -->
-## <a name="new-fluent-ui-icons-for-devtools"></a>DevTools 的新 Fluent UI 图标
+## <a name="new-fluent-ui-icons-for-devtools"></a>DevTools Fluent UI 图标
 
 <!-- Title: New look for buttons and menus in Microsoft Edge DevTools -->
 <!-- Subtitle: DevTools has adopted Fluent UI, giving it a more modern look that better aligns with the rest of the Microsoft Edge browser. -->
 
-Microsoft EdgeDevTools 采用 Fluent [UI，](https://developer.microsoft.com/en-us/fluentui#/)为按钮和菜单提供更现代的外观，从而更好地与浏览器Microsoft Edge保持一致。
+Microsoft Edge DevTools 已采用 Fluent [UI，](https://developer.microsoft.com/en-us/fluentui#/)为按钮和菜单提供更现代的外观，从而更好地与 Microsoft Edge 浏览器的其余部分保持一致。
 
 :::image type="complex" source="../../media/2021/07/fluent-ui.msft.png" alt-text="使用自定义 UI 设计Fluent的 DevTools" lightbox="../../media/2021/07/fluent-ui.msft.png":::
    使用自定义 UI 设计Fluent的 DevTools
@@ -114,12 +114,12 @@ Microsoft EdgeDevTools 采用 Fluent [UI，](https://developer.microsoft.com/en-
 
 
 <!-- ====================================================================== -->
-## <a name="change-the-devtools-display-language-directly-from-settings"></a>直接从开发人员中心更改 DevTools 显示设置
+## <a name="change-the-devtools-display-language-directly-from-settings"></a>直接从用户更改 DevTools 显示设置
 
 <!-- Title: DevTools Settings now includes display language -->
 <!-- Subtitle: You can now skip the browser settings and change the DevTools display language directly within DevTools Settings. -->
 
-以前，若要在 DevTools 中更改显示语言，必须更改浏览器语言。  现在，你可以轻松切换 DevTools 设置中的**** 显示语言，而无需更改浏览器设置。  为此，**请设置，** 然后在**首选项**中，从"语言 **"下拉列表中选择**语言。
+以前，若要在 DevTools 中更改显示语言，必须更改浏览器语言。  现在，你可以轻松地在 DevTools**设置**切换显示语言，而无需更改浏览器设置。  为此，**请设置"，** 然后在 **"** 首选项"中，从"语言"**下拉列表中选择一**种语言。
 
 :::image type="complex" source="../../media/2021/07/settings-browser-ui-language.msft.png" alt-text="直接从 DevTools **设置** 更改 DevTools 显示语言" lightbox="../../media/2021/07/settings-browser-ui-language.msft.png":::
    直接从 DevTools 项目更改 DevTools 显示**设置**
@@ -134,11 +134,11 @@ Microsoft EdgeDevTools 采用 Fluent [UI，](https://developer.microsoft.com/en-
 <!-- Title: Better support for CSS-in-JS libraries -->
 <!-- Subtitle: Copy a single declaration or all declarations for a style rule from the Styles pane, formatted for JavaScript. -->
 
-以前，在使用 CSS-in-JS 库时，无法将 CSS 声明 (为 JavaScript 设置) CSS 属性和值。 您必须编辑复制的 CSS 以匹配 JavaScript 的语法。
+以前，在使用 CSS-in-JS 库时，无法将 CSS 声明 (为 JavaScript 格式化) CSS 属性和值。 您必须编辑复制的 CSS 以匹配 JavaScript 的语法。
 
 现在，Microsoft Edge版本 93 中，您可以复制样式规则中的单个 CSS 声明或所有声明，并将其直接粘贴到 JavaScript 文件中，而无需语法问题。 若要试用此功能，请进行以下设置：
 
-1. 在 **"元素**"工具的****"样式"窗格中，打开上下文菜单 (右键) 在样式规则的声明上单击"列表"。
+1. 在 **"元素**"工具的****"样式"窗格中，打开上下文菜单 (右键) 在样式规则中的声明上单击"列表"。
 1. 选择 **"将声明复制为 JS"** 或 **"复制所有声明为 JS"。**
 1. 将复制的 CSS 粘贴到文本编辑器中的 JavaScript 文件中，如Visual Studio Code。  例如：`'--more-link': 'lime'`。
 
@@ -155,20 +155,20 @@ Microsoft EdgeDevTools 采用 Fluent [UI，](https://developer.microsoft.com/en-
 <!-- Title: Send as many (or as few) Client Hints as you want -->
 <!-- Subtitle: Updated UI for User-Agent Client Hints in Emulated Devices settings and in the Network conditions tool. -->
 
-User-Agent客户端提示比以分号分隔的字符串更易于访问浏览器User-Agent，并改进网站兼容性。  最初，User-Agent客户端提示测试和调试非常耗时。  对客户端提示的控制较少，必须正确填充客户端提示，表单正常运行。
+User-Agent客户端提示使浏览器信息比以分号分隔的字符串User-Agent，并改进了网站兼容性。  最初，User-Agent客户端提示测试和调试非常耗时。  对客户端提示的控制较少，必须正确填充客户端提示，表单正常运行。
 
 在此版本中，我们重新设计了调试体验，以便你可以轻松User-Agent多个单独字段和控件的 UI 修改客户端提示。  此外，你现在可以同时测试自定义User-Agent提示和User-Agent字符串。  你现在可以在自定义User-Agent或网络条件工具中为**设置定义客户端****提示。**
 
 :::image type="complex" source="../../media/2021/07/ua-client-hints-in-settings.msft.png" alt-text="为User-Agent中的自定义设备定义客户端设置" lightbox="../../media/2021/07/ua-client-hints-in-settings.msft.png":::
-   为User-Agent中的自定义设备定义客户端**设置**
+   在User-Agent中定义自定义设备的客户端**设置**
 :::image-end:::
 
 有关在客户端中定义提示**设置，** 请导航到"设置[用户代理客户端提示"。](../../../device-mode/index.md#set-user-agent-client-hints)
 
 您还可以使用User-Agent条件工具替代当前页面的客户端 **提示** 。
 
-:::image type="complex" source="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png" alt-text="在User-Agent条件工具中为自定义设备定义客户端提示" lightbox="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png":::
-   在User-Agent条件工具中为自定义设备**定义客户端提示**
+:::image type="complex" source="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png" alt-text="在User-Agent条件工具中定义自定义设备的客户端提示" lightbox="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png":::
+   在User-Agent条件工具中定义自定义设备的客户端**提示**
 :::image-end:::
 
 有关在网络条件工具中定义 **提示的信息，** 请导航到设置 [用户代理客户端提示](../../../network/reference.md#set-user-agent-client-hints)。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1174299](https://bugs.chromium.org/p/chromium/issues/detail?id=1174299)。
@@ -190,7 +190,7 @@ User-Agent客户端提示比以分号分隔的字符串更易于访问浏览器U
 
 <!-- It'd be good to have a video of this a11y fix where the text that the screen reader announces is displayed -->
 
-有关调试控制台错误的信息，请导航到"修复控制台[中报告的 JavaScript 错误"。](../../../console/console-debug-javascript.md)  有关 DevTools 发现的问题以及你可以对网页进行改进的信息，请导航到使用问题工具查找并 [修复问题](../../../issues/index.md)。  若要在开放源代码项目中查看Chromium历史记录，请导航到"问题[1223208"。](https://bugs.chromium.org/p/chromium/issues/detail?id=1223208)
+有关调试控制台错误的信息，请导航到"修复控制台[中报告的 JavaScript 错误"。](../../../console/console-debug-javascript.md)  有关 DevTools 发现的问题以及你可以对网页进行改进的信息，请导航到使用问题工具查找并 [修复问题](../../../issues/index.md)。  若要在开放源代码项目中查看此功能Chromium历史记录，请导航到"问题[1223208"。](https://bugs.chromium.org/p/chromium/issues/detail?id=1223208)
 
 
 <!-- ====================================================================== -->
@@ -207,7 +207,7 @@ User-Agent客户端提示比以分号分隔的字符串更易于访问浏览器U
    " **复制为 PowerShell"** 命令
 :::image-end:::
 
-有关网络活动日志的信息，请导航到"网络[分析参考"。](../../../network/reference.md)  若要在开放源代码项目中查看此功能的Chromium，请导航到"问题[932971"。](https://bugs.chromium.org/p/chromium/issues/detail?id=932971)
+有关网络活动日志的信息，请参阅 [网络功能参考](../../../network/reference.md)。  有关此功能的历史记录，请参阅 Issue [932971。](https://bugs.chromium.org/p/chromium/issues/detail?id=932971)
 
 
 <!-- ====================================================================== -->

@@ -1,18 +1,18 @@
 ---
-description: 使用传感器工具的"方向"部分模拟设备方向。
 title: 模拟设备方向
+description: 使用传感器工具的"方向"部分模拟设备方向。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 2a24676d74259569eba5b41fef99d1ac180ff518
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.date: 05/04/2021
+ms.openlocfilehash: 2bbb77dfab44e9cfc99da12f3d4c4b8071cc3a0f
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170398"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12269083"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,35 +29,26 @@ ms.locfileid: "12170398"
    limitations under the License.  -->
 # <a name="simulate-device-orientation"></a>模拟设备方向
 
-完成以下操作以模拟来自 DevTools 的不同Microsoft Edge方向。
+从 DevTools 中模拟Microsoft Edge方向。
 
 <!--todo: update device orientation section when available -->
 
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令**菜单**。
+1.  按 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
 
-    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-command-menu.msft.png":::
-       **命令菜单**
-    :::image-end:::
+    :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单" lightbox="../media/device-mode-console-command-menu.msft.png":::
 
 1.  键入 `sensors` ，选择 **显示传感器**，然后选择 `Enter` 。  传感器 **工具** 将在 DevTools 窗口底部打开。
+
 1.  从 **"方向**"列表中，选择预设方向之一（如 ）或选择"自定义方向" `Portrait upside down` 来提供你自己的精确方向。 ****
 
-    :::row:::
-       :::column span="":::
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="从&quot;方向&quot;列表中选择&quot;纵向&quot;向下" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
-             从 `Portrait upside down` "**入职培训"列表中选择** :::image-end:::
-       :::column-end:::
-       :::column span="":::
-          选择" **自定义方向"后**，将启用 、 `alpha` 和 `beta` `gamma` 字段。
-          <!--To understand how each axis works, navigate to [Device Orientation & Motion](). -->
-          <!--todo: update links to local copy of alpha/beta/gamma sections from https://developers.google.com/web/fundamentals/native-hardware/device-orientation#alpha , beta, and gamma section when available; see "original page" below -->
-          您还可以通过拖动方向模型来设置 **自定义方向**。  在 `Shift` 拖动以沿轴旋转之前 `alpha` 按住。
+:::image type="content" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="从&quot;方向&quot;列表中选择&quot;纵向&quot;向下" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
 
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="方向模型" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
-             方向 **模型**
-          :::image-end:::
-       :::column-end:::
-    :::row-end:::
+如果选择" **自定义方向"，** 则启用 、 和 `alpha` `beta` `gamma` 旋转轴字段。
+<!--To understand how each axis works, see [Device Orientation & Motion - Rotation data](https://developers.google.com/web/fundamentals/native-hardware/device-orientation#rotation_data). -->
+<!-- todo: link to a local copy of that article section when available; see "original page" below -->
+您还可以通过拖动方向模型来设置 **自定义方向**。  例如，若要沿轴 `alpha` 旋转，请按住 `Shift` ，然后再拖动：
+
+:::image type="content" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="方向模型" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
 
 
 <!-- ====================================================================== -->

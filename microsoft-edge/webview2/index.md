@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、edge html、Windows Forms、WinForms、WPF、.NET、WinUI、Project Reunion
-ms.openlocfilehash: 492891eceb41885cd89e36fcb7468ae0739c3c58
-ms.sourcegitcommit: dd895443f2ef4e045543cb639c412062657bf3cd
+ms.openlocfilehash: ede9f612c5cec1bfdb5ea36f06950a153d77fe15
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "12191360"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12268932"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介
 
-WebView2 Microsoft Edge允许你将 Web 技术 (HTML、CSS 和 JavaScript) 本机应用中。  WebView2 控件使用[Microsoft Edge](https://www.microsoftedgeinsider.com)作为呈现引擎，以在本机应用中显示 Web 内容。  使用 WebView2，可以在本机应用的不同部分嵌入 Web 代码，或在单个 WebView 实例中生成所有本机应用。  要了解如何开始生成 WebView2 应用，请导航到 [入门](#get-started)。
+WebView2 Microsoft Edge WebView2 控件允许你将 Web 技术 (HTML、CSS 和 JavaScript) 本机应用中。  WebView2 控件使用[Microsoft Edge](https://www.microsoftedgeinsider.com)作为呈现引擎，以在本机应用中显示 Web 内容。  使用 WebView2，可以在本机应用的不同部分嵌入 Web 代码，或在单个 WebView 实例中生成所有本机应用。  要了解如何开始生成 WebView2 应用，请导航到 [入门](#get-started)。
 
 :::image type="complex" source="./media/WebView2/what-webview.png" alt-text="什么是 WebView?" lightbox="./media/WebView2/what-webview.png":::
    什么是 WebView?
@@ -41,64 +41,23 @@ WebView2 Microsoft Edge允许你将 Web 技术 (HTML、CSS 和 JavaScript) 本�
 <!-- ====================================================================== -->
 ## <a name="webview2-benefits"></a>WebView2 优势
 
-<!--
-In the below table, keep two trailing spaces after each image line and after each heading line, to keep card elements tight but not concatenated.
-Similar table: [Overview of Progressive Web Apps (PWAs)](..\progressive-web-apps-chromium\index.md#characteristics-of-a-pwa)
--->
+*  **Web 生态系统&技能集**。  利用 web 生态系统中存在的整个 web 平台、库、工具以及人才。
 
-:::row:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-web-ecosystem-skillset-small.msft.png":::  
-        **Web 生态系统 & 技能集**  
-        利用 web 生态系统中存在的整个 web 平台、库、工具以及人才。
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-rapid-innovation-small.msft.png":::  
-        **快速创新**  
-        Web 开发允许快速部署和迭代。
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-windows-7-8-10-support-small.msft.png":::  
-        **Windows 7、8 以及 10 支持**  
-        支持跨 Windows 7、Windows 8 以及 Windows 10 的一致用户体验。
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-native-capabilities-small.msft.png":::  
-        **本机功能**  
-        访问完整的本机 API 集。
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-code-sharing-small.msft.png":::  
-        **代码共享**  
-        向代码库添加 web 代码可以增加跨多个平台的重用。
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-microsoft-support-small.msft.png":::  
-        **Microsoft 支持**  
-        当 WebView2 在通用版本发布时，Microsoft 提供支持并添加新功能 (GA) 。
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-evergreen-small.msft.png":::  
-        **常青分布**  
-        依赖带有定期平台更新和安全修补的最新版 Chromium。
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-fixed-small.msft.png":::  
-        **固定版本分布**  
-        可以选择在应用中打包特定版本的 Chromium 位。
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-incremental-adoption-small.msft.png":::  
-        **增量采用**  
-        将 Web 组件分片添加到应用。
-    :::column-end:::
-:::row-end:::
+*  **快速创新**。  Web 开发允许快速部署和迭代。
 
-<!-- In the above table, keep two trailing spaces after each image line and after each heading line, to keep card elements tight but not concatenated. -->
+*  **Windows 7、8 和 10 支持**。  支持跨 Windows 7、Windows 8 以及 Windows 10 的一致用户体验。
+
+*  **本机功能**。  访问完整的本机 API 集。
+
+*  **代码共享**。  向代码库添加 web 代码可以增加跨多个平台的重用。
+
+*  **Microsoft 支持**。  当 WebView2 在通用版本发布时，Microsoft 提供支持并添加新功能 (GA) 。
+
+*  **常青分布**。  依赖带有定期平台更新和安全修补的最新版 Chromium。
+
+*  **固定版本分发**。  （可选）在应用中打包特定Chromium位。
+
+*  **增量采用**。  将 Web 组件分片添加到应用。
 
 
 <!-- ====================================================================== -->
@@ -144,7 +103,7 @@ WebView2 应用可以在以下版本的 Windows。
 *   Windows Server 2008 R2 \*\*
 
 > [!IMPORTANT]
-> 对 Windows 7 和 Windows Server 2008 R2 的 WebView2 支持将具有与 Microsoft Edge 相同的支持时间线。  有关详细信息，请参阅Microsoft Edge[支持的操作系统。](/deployedge/microsoft-edge-supported-operating-systems)
+> 对 Windows 7 和 Windows Server 2008 R2 的 WebView2 支持将具有与 Microsoft Edge 相同的支持时间线。  有关详细信息，请参阅支持Microsoft Edge[操作系统。](/deployedge/microsoft-edge-supported-operating-systems)
 
 
 <!-- ====================================================================== -->

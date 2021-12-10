@@ -1,18 +1,18 @@
 ---
-description: 辅助功能改进、在其他语言中使用 DevTools 等。
 title: 'DevTools (Microsoft Edge 80) '
+description: 辅助功能改进、在其他语言中使用 DevTools 等。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 8482febad193cac3739678ea877a0dc3610cf854
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.date: 05/11/2021
+ms.openlocfilehash: 5753d0284226f3c87d41dfea10c7d5a4b558bd0d
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170377"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12269289"
 ---
 <!-- Copyright Kayce Basques
 
@@ -33,7 +33,7 @@ ms.locfileid: "12170377"
 <!-- ====================================================================== -->
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告
 
-以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道](https://aka.ms/microsoftedge)并[在 Twitter 上关注我们](https://aka.ms/twitter/edgedevtools)。
+以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道](https://aka.ms/microsoftedge)并[在 Twitter 上关注我们](https://aka.ms/twitter/edgedevtools)。
 
 ### <a name="accessibility-improvements-to-the-devtools"></a>对 DevTools 的辅助功能改进
 
@@ -53,46 +53,16 @@ Chromium 问题 [#963183](https://crbug.com/963183)
 
 许多开发人员使用其他开发人员工具（如 StackOverflow 和 Visual Studio Code，使用其本地语言，而不只是使用英语。  我们很高兴宣布 DevTools 的本地化，你现在可以使用英语之外 10 种语言之一：
 
-:::row:::
-   :::column span="":::
-      简 (简体中文) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
-   :::column-end:::
-   :::column span="":::
-      繁体 (中文) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      法语 –&#231;英语
-   :::column-end:::
-   :::column span="":::
-      德语 - 德语
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      意大利语 - 意大利语
-   :::column-end:::
-   :::column span="":::
-      日语 - &#26085;&#26412;&#35486;
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      朝鲜语 - &#54620;&#44397;&#50612;
-   :::column-end:::
-   :::column span="":::
-      葡萄牙语 - 图卢&#234;语
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      俄语 – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
-   :::column-end:::
-   :::column span="":::
-      西班牙语 - 电子邮件&#241;ol
-   :::column-end:::
-:::row-end:::
+* 简 (简体) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
+* 繁体 (中文) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
+* 法语 – 法属&#231;语
+* 德语 - 德语
+* 意大利语 - 意大利语
+* 日语 - &#26085;&#26412;&#35486;
+* 朝鲜语 - &#54620;&#44397;&#50612;
+* 葡萄牙语 - 图卢&#234;语
+* 俄语 – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
+* 西班牙语 - 电子邮件&#241;ol
 
 <!--
 |  |  |
@@ -122,7 +92,7 @@ Webhint Microsoft Edge扩展允许你在 DevTools 中轻松扫描网页并获取
    安装 **Webhint** 浏览器扩展时 DevTools 中的 Hints 工具
 :::image-end:::
 
-[尝试 webhint 浏览器扩展Microsoft Edge。](https://aka.ms/webhint/edge-extension)  安装扩展后，打开 DevTools 并选择 **提示** 工具。  从此处运行可自定义的网站扫描。  前往 [webhint.io](https://aka.ms/webhint/browser-extension) 了解更多信息。
+[尝试 webhint 浏览器扩展Microsoft Edge。](https://aka.ms/webhint/edge-extension)  安装扩展后，打开 DevTools 并选择 **提示** 工具。  从此处运行可自定义的网站扫描。  请 [前往](https://aka.ms/webhint/browser-extension) webhint.io 了解更多信息。
 
 ### <a name="3d-view"></a>3D 视图
 
@@ -132,7 +102,7 @@ Webhint Microsoft Edge扩展允许你在 DevTools 中轻松扫描网页并获取
    DevTools 中的 **3D** 视图
 :::image-end:::
 
-若要访问 3D 视图，请转到 并确保 `edge://flags` 开发人员 **工具实验** 标记设置为 **已启用**。  重新启动Microsoft Edge并打开 DevTools。  在 `F1` DevTools 中选择或打开**** 设置实验"部分，然后打开  >  ****"启用**3D 视图"** 复选框。  现在，选择 `Ctrl`  +  `Shift`  +  `P` ，在**3D 视图中键入 ，** 然后选择**显示 3D 视图**。
+若要访问 3D 视图，请转到 并确保 `edge://flags` 开发人员 **工具实验** 标记设置为 **已启用**。  重新启动Microsoft Edge并打开 DevTools。  在 `F1` DevTools 中选择或打开**** 设置实验"部分，然后打开"  >  **** 启用**3D 视图"** 复选框。  现在，选择 `Ctrl`  +  `Shift`  +  `P` ，在**3D 视图中键入 ，** 然后选择**显示 3D 视图**。
 
 We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](../../../contact.md).
 
@@ -140,21 +110,21 @@ Chromium问题[#987787](https://crbug.com/987787)
 
 ### <a name="visual-studio-code-extensions"></a>Visual Studio Code扩展
 
-DevTools 团队还发布了一些适用于 Visual Studio Code[](https://aka.ms/vscode)的扩展，让你可以直接从文本编辑器使用 DevTools 功能。 请查看以下扩展。
+DevTools 团队还发布了一些 Visual Studio Code，[](https://aka.ms/vscode)让你可以直接从文本编辑器使用 DevTools 功能。 请查看以下扩展。
 
 #### <a name="elements-for-microsoft-edge"></a>用于Microsoft Edge
 
-通过将元素添加到 Visual Studio Code 扩展，从内部使用[Elements Microsoft Edge Visual Studio Code](https://aka.ms/elements4code)工具。
+通过添加元素的 Visual Studio Code 扩展，从[Microsoft Edge Visual Studio Code](https://aka.ms/elements4code)元素工具。
 
 :::image type="complex" source="../../images/2019/12/elements-for-edge.msft.png" alt-text="元素工具Visual Studio Code元素扩展Microsoft Edge元素" lightbox="../../images/2019/12/elements-for-edge.msft.png":::
-   元素**工具**Visual Studio Code元素扩展Microsoft Edge元素
+   使用**元素**扩展Visual Studio Code元素的 Microsoft Edge 工具
 :::image-end:::
 
-有关详细信息，请查看适用于扩展[Microsoft Edge Visual Studio Code元素](../../../../visual-studio-code/elements-for-edge.md)。
+有关详细信息，请查看元素[的扩展Microsoft Edge Visual Studio Code元素](../../../../visual-studio-code/elements-for-edge.md)。
 
 #### <a name="debugger-for-microsoft-edge"></a>调试程序Microsoft Edge
 
-使用[调试器 for Microsoft Edge](https://aka.ms/debugger4code) Visual Studio Code 扩展，直接从 Microsoft Edge 调试Visual Studio Code。
+使用[调试器 for Microsoft Edge](https://aka.ms/debugger4code) Visual Studio Code 扩展，直接从 Microsoft Edge 调试在 Visual Studio Code 中运行的 JavaScript。
 
 :::image type="complex" source="../../images/2019/12/vscode-debugger.msft.png" alt-text="Visual Studio Code 中的 Microsoft Edge Extension 调试器" lightbox="../../images/2019/12/vscode-debugger.msft.png":::
    Visual Studio Code 中的 Microsoft Edge Extension 调试器
@@ -184,7 +154,7 @@ DevTools 团队还发布了一些适用于 Visual Studio Code[](https://aka.ms/v
 
 ### <a name="tracking-prevention-console-messages"></a>跟踪防护控制台消息
 
-跟踪防护是网站中Microsoft Edge一项功能，可阻止你在访问网站之前被网站跟踪。  默认跟踪防护设置为平衡模式，可阻止第三方跟踪器和已知的恶意跟踪器，从而获得平衡隐私和 Web 兼容性的体验。  为了让你深入了解某些跟踪程序被阻止时网页的兼容性，Microsoft Edge 团队在控制台中添加了跟踪程序被阻止时警告消息。 ****
+跟踪防护是网站中Microsoft Edge一项功能，可阻止你在访问网站之前被网站跟踪。  默认跟踪防护设置为平衡模式，可阻止第三方跟踪器和已知的恶意跟踪器，从而获得平衡隐私和 Web 兼容性的体验。  为了让你深入了解阻止某些跟踪程序时网页的兼容性，Microsoft Edge 团队在控制台中添加了跟踪程序被阻止时警告消息。 ****
 
 :::image type="complex" source="../../images/2019/12/tracking-prevention.msft.png" alt-text="跟踪防护时控制台中的邮件阻止访问跟踪器的存储" lightbox="../../images/2019/12/tracking-prevention.msft.png":::
    跟踪防护 **时控制台** 中的邮件阻止访问跟踪器的存储
@@ -207,14 +177,14 @@ DevTools 团队还发布了一些适用于 Visual Studio Code[](https://aka.ms/v
 
 例如，之前，当使用 重新声明本地变量时， `let` 控制台会出错：
 
-:::image type="complex" source="../../images/2019/12/letbefore.msft.png" alt-text="Microsoft Edge 79 中的控制台显示允许重新声明失败" lightbox="../../images/2019/12/letbefore.msft.png":::
+:::image type="complex" source="../../images/2019/12/letbefore.msft.png" alt-text="79 Microsoft Edge中的控制台显示允许重新声明失败" lightbox="../../images/2019/12/letbefore.msft.png":::
    Microsoft Edge **** 79 中的控制台显示允许重新声明失败
 :::image-end:::
 
 现在，控制台允许重新声明：
 
-:::image type="complex" source="../../images/2019/12/letafter.msft.png" alt-text="80 中的Microsoft Edge显示允许重新声明成功" lightbox="../../images/2019/12/letafter.msft.png":::
-   **80** Microsoft Edge 80 中的控制台显示允许重新声明成功
+:::image type="complex" source="../../images/2019/12/letafter.msft.png" alt-text="Microsoft Edge 80 中的控制台显示允许重新声明成功" lightbox="../../images/2019/12/letafter.msft.png":::
+   Microsoft Edge **** 80 中的控制台显示 let 重新声明成功
 :::image-end:::
 
 Chromium问题[#1004193](https://crbug.com/1004193)
@@ -237,7 +207,7 @@ DevTools 已开始支持 DEBUGG 调试标准，这意味着增加了对在 DevTo
 
 #### <a name="request-initiator-chains-in-the-initiator-panel"></a>发起者面板中的请求发起人链
 
-现在，你能够以嵌套列表查看网络请求的发起方和依赖项。  这可以帮助您了解请求资源的原因，或特定资源（如脚本 (导致的网络活动) 活动。
+现在，你能够以嵌套列表查看网络请求的发起方和依赖项。  这可以帮助您了解请求资源的原因，或特定资源（如脚本 (导致的网络) 活动。
 
 :::image type="complex" source="../../images/2019/12/initiators.msft.png" alt-text="发起者面板中的请求发起人链" lightbox="../../images/2019/12/initiators.msft.png":::
    发起者面板中的请求 **发起人** 链
@@ -272,13 +242,13 @@ Chromium问题[#988253](https://crbug.com/988253)
    网络工具中的新 **路径和** URL 列
 :::image-end:::
 
-若要显示新列，请将鼠标悬停在**** 瀑布表标题上，打开上下文菜单 (，) 单击"路径"或 **"URL"。** ****
+若要显示新列，请将鼠标悬停在**瀑布**表标题上，右键单击" () 菜单，然后选择"路径"或 **"URL"。** ****
 
 Chromium问题[#993366](https://crbug.com/993366)
 
 #### <a name="updated-user-agent-strings"></a>更新User-Agent字符串
 
-DevTools 支持通过"网络User-Agent设置 **自定义字符串** 。  the User-Agent string affects the `User-Agent` HTTP header attached to network resources， and the value of `navigator.userAgent` .
+DevTools 支持通过User-Agent条件面板设置 **自定义字符串** 。  the User-Agent string affects the `User-Agent` HTTP header attached to network resources， and the value of `navigator.userAgent` .
 
 预定义User-Agent字符串已更新，以反映新式浏览器版本。
 

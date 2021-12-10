@@ -8,12 +8,12 @@ ms.topic: tutorial
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、winui 应用、winui、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
-ms.openlocfilehash: d1da63de6223d3289b8ba4c8d37babe886b41256
-ms.sourcegitcommit: a01bd8e1ac92a60fc6b1e202ab299ae2714def11
+ms.openlocfilehash: ad0757a1509d3f988e683614ee5714333cf01291
+ms.sourcegitcommit: ce369c50134212b12e8a44eb45fa63bae134b7cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "12158067"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "12269684"
 ---
 # <a name="get-started-with-webview2-in-winui-3-windows-app-sdk"></a>WinUI 3 应用 SDK (Windows中的 WebView2) 
 
@@ -60,7 +60,7 @@ ms.locfileid: "12158067"
 
 1.  在"解决方案资源管理器"中， `MainWindow.xaml` 打开 文件以显示代码。
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -121,7 +121,7 @@ ms.locfileid: "12158067"
         // myButton.Content = "Clicked";
     ```
 
-1.  单击 **"**  >  **文件""保存 (Ctrl+Shift+S) ，** 以保存项目。
+1.  单击 **"**  >  **文件""全部 (Ctrl+Shift+S) **"以保存项目。
 
 1.  按 **F5**生成并运行项目。
 
@@ -182,7 +182,7 @@ ms.locfileid: "12158067"
     }
     ```
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -197,7 +197,7 @@ ms.locfileid: "12158067"
 
 ## <a name="step-4---navigation-events"></a>步骤 4 - 导航事件
 
-在此部分中，您将添加代码以导入 WebView2 核心库。
+在此部分中，您将添加用于导入 WebView2 核心库的代码。
 
 1.  将以下行添加到 的顶部 `MainWindow.xaml.cs` ：
 
@@ -249,7 +249,7 @@ ms.locfileid: "12158067"
     }
     ```
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -286,7 +286,7 @@ ms.locfileid: "12158067"
     }
     ```
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -305,5 +305,4 @@ ms.locfileid: "12158067"
 *  [WebView2 开发的最佳做法](../concepts/developer-guide.md)
 *  [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。
 *  [另请参阅](../index.md#see-also) _WebView2 Microsoft Edge简介_。
-*  [WebView2 规范](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md) - 有关 WebView2 API 的详细信息。
 *  [问题 - microsoft-ui-xaml 存储库](https://github.com/microsoft/microsoft-ui-xaml/issues) - 输入特定于 WinUI 的功能请求或 Bug。

@@ -1,5 +1,5 @@
 ---
-description: 将键盘快捷方式匹配到Visual Studio Code、模拟 Surface Duo 和 Samsung 的 Fold、CSS 网格覆盖改进等。
+description: 将键盘快捷方式与Visual Studio Code、模拟 Surface Duo 和 Samsung Foldy Fold、CSS 网格覆盖改进等匹配。
 title: 'DevTools (Microsoft Edge 86) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 3333b18caed274c0ec628494782bf88443b0b6f7
-ms.sourcegitcommit: c1f5b8d23ade4bd4e808dcb855a2e7636eff597b
+ms.openlocfilehash: 0a030806a5cfdb69084c0fa9c01ca4ddcb43e028
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "12191160"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12269044"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -39,13 +39,13 @@ ms.locfileid: "12191160"
 
 在 Microsoft Edge 86 中，你可以将 DevTools 中的键盘快捷方式与代码中的Microsoft Visual Studio[匹配](https://code.visualstudio.com)。
 
-:::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="将 DevTools 中的键盘快捷方式与Visual Studio Code" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
-   将 DevTools 中的键盘快捷方式与Visual Studio Code
+:::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="将 DevTools 中的键盘快捷方式匹配为Visual Studio Code" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
+   将 DevTools 中的键盘快捷方式匹配为Visual Studio Code
 :::image-end:::
 
 若要激活此功能，请导航到在 [DevTools 中自定义键盘快捷方式](../../../customize/shortcuts.md)。
 
-例如，用于暂停或继续运行脚本的键盘快捷方式在 Visual Studio Code[为](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) `F5` 。  使用**DevTools (** Default) 预设，DevTools 中的同一快捷方式是 ，但在选择 Visual Studio Code 预设时，该快捷方式现在也是 `F8` **** `F5` 。
+例如，用于暂停或继续运行脚本的键盘快捷方式在 Visual Studio Code[为](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) `F5` 。  使用**DevTools (Default) **预设，DevTools 中的同一快捷方式是 ，但在选择 Visual Studio Code 预设时，该快捷方式现在也是 `F8` **** `F5` 。
 
 Chromium问题[#174309](https://crbug.com/174309)
 
@@ -69,7 +69,7 @@ Chromium问题[#174309](https://crbug.com/174309)
 
 若要打开此实验功能，请 [导航到打开](../../../experimental-features/index.md#turning-an-experiment-on-or-off) 或关闭实验，然后选择模拟 **：支持双屏**模式旁边的复选框。
 
-有关此功能详细信息，请导航到在[DevTools 中](../../../device-mode/dual-screen-and-foldables.md)模拟双屏幕和可折叠Microsoft Edge设备。
+有关此功能的信息，请导航到模拟开发人员工具中的双屏幕和可折叠Microsoft Edge[设备](../../../device-mode/dual-screen-and-foldables.md)。
 
 Chromium问题： [#1054281](https://crbug.com/1054281)
 
@@ -86,9 +86,9 @@ Chromium问题： [#1054281](https://crbug.com/1054281)
 
 开发人员Microsoft Edge团队和 Chrome DevTools 团队共同协作开发其他功能。  新功能包括多个覆盖，这些覆盖是永久性的，并且通过"元素"**** 工具上的新"布局"窗格**可配置**。
 
-若要启用此实验功能，请导航到[](../../../experimental-features/index.md#turning-an-experiment-on-or-off)打开或关闭实验，并选中"重启后元素"中的"布局侧栏"窗格中提供的"启用新的**CSS 网格**调试功能 (配置选项"旁边的复选框) 。
+若要启用此实验功能，请导航到[](../../../experimental-features/index.md#turning-an-experiment-on-or-off)打开或关闭实验，并选中"重启后的元素"中的"布局侧栏"窗格中"启用新的**CSS 网格**调试功能 (配置选项"旁边的复选框) 。
 
-有关此功能详细信息，请导航到"检查开发人员工具Microsoft Edge [CSS 网格"](../../../css/grid.md)。
+有关此功能详细信息，请导航到"检查[开发人员](../../../css/grid.md)工具Microsoft Edge CSS 网格。
 
 Chromium问题： [#1047356](https://crbug.com/1047356)
 
@@ -96,29 +96,23 @@ Chromium问题： [#1047356](https://crbug.com/1047356)
 
 在 Microsoft Edge 85 或更早版本中，复制的格式 `console.table` 丢失。  如果从表控制台 API 复制[](../../../console/api.md#table)并粘贴了输出，则仅保留表的文本。
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta.msft.png" alt-text="表 85 或Microsoft Edge控制台 API 输出" lightbox="../../media/2020/08/console-table-beta.msft.png":::
-         `table` Microsoft Edge 85 或更早版本中的控制台 API 输出 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="表 粘贴到 Microsoft Edge 85 或更早版本中的控制台 API Visual Studio Code" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
-         `table` 从 85 Microsoft Edge或更早版本粘贴到主机中的控制台 API Visual Studio Code :::image-end:::
-   :::column-end:::
-:::row-end:::
+`table` Microsoft Edge 85 或更早版本中的控制台 API 输出：
+
+:::image type="content" source="../../media/2020/08/console-table-beta.msft.png" alt-text="表 85 或Microsoft Edge控制台 API 输出" lightbox="../../media/2020/08/console-table-beta.msft.png":::
+
+`table` 85 或更早版本Microsoft Edge的控制台 API 输出粘贴到Visual Studio Code：
+
+:::image type="content" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="表 粘贴到 Microsoft Edge 85 或更早版本中的控制台 API Visual Studio Code" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
 
 在 Microsoft Edge 86 或更高版本中，从**控制台**复制表时，格式设置现已保留。
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-canary.msft.png" alt-text="表 86 或更高版本Microsoft Edge控制台 API 输出" lightbox="../../media/2020/08/console-table-canary.msft.png":::
-         `table` Microsoft Edge 86 或更高版本中的控制台 API 输出 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="表 86 Microsoft Edge更高版本的控制台 API 输出粘贴到 Visual Studio Code" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
-         `table` 从 86 Microsoft Edge或更高版本粘贴到主机中的控制台 API Visual Studio Code :::image-end:::
-   :::column-end:::
-:::row-end:::
+`table` Microsoft Edge 86 或更高版本中的控制台 API 输出：
+
+:::image type="content" source="../../media/2020/08/console-table-canary.msft.png" alt-text="表 86 或Microsoft Edge控制台 API 输出" lightbox="../../media/2020/08/console-table-canary.msft.png":::
+
+`table` 将 86 Microsoft Edge更高版本中的控制台 API 输出粘贴到Visual Studio Code：
+
+:::image type="content" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="表 86 或更高版本Microsoft Edge控制台 API 输出粘贴到 Visual Studio Code" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
 
 Chromium问题： [#1115011](https://crbug.com/1115011)
 
@@ -147,18 +141,13 @@ Chromium问题： [#1094406](https://crbug.com/1094406)
 
 Your feedback and internal discoveries uncovered which text strings used in the Microsoft Edge feedback should remain untranslated or create confusion when translated.
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-stable.msft.png" alt-text="Microsoft Edge DevTools in Traditional Chinese" lightbox="localization-improvements-chinese-complex-stable.msft.png":::
-         Microsoft Edge DevTools 85 and earlier in Traditional Chinese
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png" alt-text="Microsoft Edge DevTools in Japanese" lightbox="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png":::
-         Microsoft Edge DevTools 86  or later in Traditional Chinese
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+Microsoft Edge DevTools 85 and earlier in Traditional Chinese:
+
+:::image type="content" source="../../media/2020/08/localization-improvements-chinese-complex-stable.msft.png" alt-text="Microsoft Edge DevTools in Traditional Chinese" lightbox="localization-improvements-chinese-complex-stable.msft.png":::
+
+Microsoft Edge DevTools 86 or later in Traditional Chinese:
+
+:::image type="content" source="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png" alt-text="Microsoft Edge DevTools in Japanese" lightbox="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png":::
 
 To meet your translation needs, the Microsoft Edge DevTools team is focused on improving translation quality.
 
@@ -169,10 +158,10 @@ The current effort to improve translation quality enables easier support for mor
 
 在 Microsoft Edge 84 和 85 中，"元素"**** 工具的第一个搜索结果未突出显示。  其余搜索结果已正确突出显示。
 
-感谢你发送反馈并帮助改进Chromium。  您的反馈发现了开源[1103316](https://crbug.com/1103316)中的问题Chromium问题。
+感谢你发送反馈并帮助改进Chromium。  您的反馈发现了开放[1103316](https://crbug.com/1103316)中的问题Chromium问题。
 
 :::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="在 84 或更高版本的&quot;元素&quot;Microsoft Edge突出显示第一个搜索结果" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
-   突出显示 84 或更高版本中 **"** 元素"Microsoft Edge的第一个搜索结果
+   在 84 或更高版本中的 **"** 元素"Microsoft Edge突出显示第一个搜索结果
 :::image-end:::
 
 此问题现已在所有版本的 Microsoft Edge。
@@ -238,7 +227,7 @@ Chromium问题[：1096481、1068116、1080589](https://crbug.com/1096481) [](htt
 
 打开 ["呈现"工具](../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) 并使用新的 **"禁用本地字体"功能** 模拟规则 `local()` 中缺少 `@font-face` 的源。
 
-例如，当字体安装在设备上且规则使用它作为字体时，Microsoft Edge `Rubik` `@font-face src` `local()` 使用设备中的本地字体文件。
+例如，当字体安装在你的设备上并且该规则使用它作为字体时，Microsoft Edge `Rubik` `@font-face src` 使用设备 `local()` 中的本地字体文件。
 
 启用 **"禁用** 本地字体"后，DevTools 将忽略 `local()` 字体，并提取网络的每个字体。
 
@@ -272,7 +261,7 @@ Chromium问题： [#1090802](https://crbug.com/1090802)
 ### <a name="emulate-prefers-reduced-data"></a>模拟 prefers-reduced-data
 
 > [!NOTE]
-> 在 Microsoft Edge 86 中，若要启用此功能，请导航到"实验 `edge://flags#enable-experimental-web-platform-features` 性 Web 平台功能"标志**并打开**。  模拟选项仅在启用标志时显示。
+> 在 Microsoft Edge 86 中，若要启用此功能，请导航到"实验 `edge://flags#enable-experimental-web-platform-features` **性 Web 平台功能"标志并打开**。  模拟选项仅在启用标志时显示。
 
 首选 [的缩减数据](https://drafts.csswg.org/mediaqueries-5#descdef-media-prefers-reduced-data) 媒体查询可检测减少数据的用户内容首选项。  如果选中，用户将接收使用较少数据的备用页面内容。
 
@@ -303,9 +292,9 @@ Chromium问题： [#772558](https://crbug.com/772558)
 
 ### <a name="deprecation-of-other-origins-listing-in-the-service-workers-pane"></a>在"服务工作者"窗格中弃用其他源列表
 
-DevTools 现在提供了一个链接****，该链接来自服务工作者窗格 (**应用程序**工具>**服务**工作者窗格) 以查看来自其他源的服务工作者的完整列表。  若要在不打开 DevTools 的情况下访问列表，请导航到 `edge://service-worker-internals/?devtools` 。
+DevTools 现在提供来自服务工作者**** 窗格 (**应用程序**工具>**服务**工作者窗格) 的链接，以查看来自其他来源的服务工作者的完整列表。  若要在不打开 DevTools 的情况下访问列表，请导航到 `edge://service-worker-internals/?devtools` 。
 
-以前，DevTools 显示一个嵌套在****"应用程序工具""服务>**窗格下**的列表。
+以前，DevTools 显示嵌套在"应用程序**** 工具""服务>**窗格下**的列表。
 
 :::image type="complex" source="../../media/2020/08/sw-other-origins.msft.png" alt-text="链接到其他来源" lightbox="../../media/2020/08/sw-other-origins.msft.png":::
    链接到其他来源
@@ -319,16 +308,13 @@ DevTools 现在动态重新计算并显示覆盖信息的摘要。  在覆盖工
 
 在下图的第一个中，摘要最初显示，在下图的第二个汇总中，将在应用 CSS 筛选 `344 kB of 1.7 MB (20%) used so far.  1.4 MB unused.` `26.8 kB of 408 kB (7%) used so far.  381 kB unused.` 后显示摘要。
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/coverage-compare.msft.png" alt-text="覆盖摘要" lightbox="../../media/2020/08/coverage-compare.msft.png":::
-         覆盖摘要 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="已筛选项目的范围摘要" lightbox="../../media/2020/08/coverage-compare-css-filter.msft.png":::
-         已筛选项目的范围摘要 :::image-end:::
-   :::column-end:::
-:::row-end:::
+覆盖摘要：
+
+:::image type="content" source="../../media/2020/08/coverage-compare.msft.png" alt-text="覆盖摘要" lightbox="../../media/2020/08/coverage-compare.msft.png":::
+
+已筛选项目的范围摘要：
+
+:::image type="content" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="已筛选项目的范围摘要" lightbox="../../media/2020/08/coverage-compare-css-filter.msft.png":::
 
 Chromium问题： [#1061385](https://crbug.com/1090802)
 
@@ -360,7 +346,7 @@ Chromium问题： [#1107766](https://crbug.com/1107766)
    安全和隔离信息
 :::image-end:::
 
-将来，Microsoft Edge开发工具团队和 Chrome DevTools 团队计划向框架详细信息添加更多安全信息。
+将来，Microsoft Edge开发人员工具团队和 Chrome DevTools 团队计划向框架详细信息添加更多安全信息。
 
 Chromium问题： [#1051466](https://crbug.com/1051466)
 
@@ -380,7 +366,7 @@ Chromium问题： [#1093227](https://crbug.com/1093227)
 
 #### <a name="reinstate-properties-pane-in-the-elements-panel"></a>恢复"元素"面板中的"属性"窗格
 
-" **属性** "窗格已返回。  它在[84 Microsoft Edge弃用](../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel)。  开发人员Microsoft Edge团队和 Chrome DevTools 团队正在计划针对检查元素属性的改进。
+" **属性** "窗格已返回。  它在[84 Microsoft Edge弃用](../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel)。  开发人员Microsoft Edge团队和 Chrome DevTools 团队正在计划改进以检查元素的属性。
 
 :::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="&quot;元素&quot;面板中的&quot;属性&quot;窗格" lightbox="../../media/2020/08/properties-pane.msft.png":::
    **"** 元素"工具 **中的"属性"** 窗格
@@ -416,7 +402,7 @@ Chromium问题： [#1106221](https://crbug.com/1106221)
 
 #### <a name="consistently-display-resource-type-in-network-panel"></a>在网络面板中一致地显示资源类型
 
-DevTools 现在一致地显示与原始网络请求相同的资源类型，当重定向 HTTP 状态代码 `/ Redirect` 为 302 时 (附加到 Type 列) 值。 ****
+DevTools 现在一致地显示与原始网络请求相同的资源类型，当重定向 HTTP 状态代码 302 时 (附加到 Type `/ Redirect` 列) 值。 ****
 
 以前，DevTools 有时将类型 `Other` 更改为 。
 
@@ -435,16 +421,13 @@ Chromium问题： [#997694](https://crbug.com/997694)
 
 选择" **清除"** 按钮以删除任何输入的文本。
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="&quot;元素&quot;面板中的&quot;清除&quot;按钮" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
-         "元素"工具中的 **"清除"** 按钮 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-network.msft.png" alt-text="清除网络面板中的按钮" lightbox="../../media/2020/08/clear-button-network.msft.png":::
-         网络工具中的  **"清除"** 按钮 :::image-end:::
-   :::column-end:::
-:::row-end:::
+**"** 元素"工具中的 **"清除"** 按钮：
+
+:::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="&quot;元素&quot;面板中的&quot;清除&quot;按钮" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
+
+**清除** 网络工具  **中的** 按钮：
+
+:::image type="complex" source="../../media/2020/08/clear-button-network.msft.png" alt-text="清除网络面板中的按钮" lightbox="../../media/2020/08/clear-button-network.msft.png":::
 
 Chromium问题： [#1067184](https://crbug.com/1067184)
 

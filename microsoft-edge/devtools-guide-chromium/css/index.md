@@ -1,18 +1,18 @@
 ---
-description: 了解如何使用 Microsoft Edge Tools 查看和更改页面的 CSS。
 title: 查看和更改 CSS 入门
+description: 了解如何使用 Microsoft Edge Tools 查看和更改页面的 CSS。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 029df6919f7a5cb7a0ab16911c4cf0903b5c3e47
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 05/04/2021
+ms.openlocfilehash: 6ecf87a2e4c2f14e6b9b2db08540a859f3e502b4
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155477"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12269297"
 ---
 <!-- Copyright Kayce Basques
 
@@ -35,30 +35,35 @@ ms.locfileid: "12155477"
 <!-- ====================================================================== -->
 ## <a name="open-css-examples"></a>Open CSS 示例
 
-1.  保留 `Control` (Windows、Linux) 或 `Command` (macOS) 并选择 **"CSS**示例"以在一个新窗口中打开。
+1.  按住 `Control` (Windows、Linux) 或 `Command` (macOS) 然后单击 **"CSS 示例**"以在一个新窗口中打开。
 
     [CSS 示例](https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html)
 
     > [!NOTE]
-    > 如果你想要将[DevTools](/microsoft-edge/devtools-guide-chromium/customize/placement)窗口停靠在视口窗口的右侧 (下图) ，请选择"自定义和控制**DevTools"。** `...`  在"**自定义和控制 DevTools"** 下拉菜单上的"扩展坞**侧**"部分中，选择"扩展**坞"以向右。**
+    > 如果要将[DevTools](/microsoft-edge/devtools-guide-chromium/customize/placement)窗口停靠在视口窗口的右侧 (下图) ，请单击"自定义**和控制 DevTools"。** `...`  在"**自定义和控制 DevTools"** 下拉菜单上的"扩展**坞侧**"部分中，选择"扩展坞 **"以向右。**
 
 
 <!-- ====================================================================== -->
 ## <a name="view-the-css-for-an-element"></a>查看元素的 CSS
 
 1.  [打开 CSS 示例](#open-css-examples)。
-1.  将鼠标悬停在 `Inspect Me!` 文本上，打开上下文菜单 (右键单击") "，然后选择"检查 **"。**
+
+1.  右键单击 `Inspect Me!` 文本，然后单击"检查 **"。**
+
     1.  在 DevTools 中，在 **"元素** "工具的 **"DOM 树** "面板中， `Inspect Me!` 元素突出显示。
 
-        :::image type="complex" source="../media/css-elements-inspect-me.msft.png" alt-text="检查的元素在 DOM 树中突出显示" lightbox="../media/css-elements-inspect-me.msft.png":::
-           检查的元素在 **DOM 树中突出显示**
-        :::image-end:::
+        :::image type="content" source="../media/css-elements-inspect-me.msft.png" alt-text="检查的元素在 DOM 树中突出显示。" lightbox="../media/css-elements-inspect-me.msft.png":::
 
     1.  在 `Inspect Me!` 元素中，找到 属性的值 `data-message` 并复制它。
+
 1.  在页面上的" **值"文本框 `data-message` ** 中，输入值。
-1.  将鼠标悬停在 `Inspect Me!` 文本上，打开上下文菜单 (右键单击") "，然后选择"检查 **"。**
+
+1.  右键单击 `Inspect Me!` 文本，然后单击"检查 **"。**
+
     1.  在 DevTools 中的" **元素"** 工具上，选择 **"样式"** 面板。
+
     1.  在 **"样式"** 面板中， `Inspect Me!` 元素突出显示。
+
     1.  在 `Inspect Me!` 元素中，查找 `aloha` 类规则。
 
         > [!NOTE]
@@ -66,9 +71,7 @@ ms.locfileid: "12155477"
 
     1.  在 `aloha` 类中，查找样式 `padding` 的值并复制它。
 
-        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="CSS 类应用于检查的元素在&quot;样式&quot;面板中突出显示" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
-           CSS 类应用于选定的元素，例如 ， `aloha` 显示在" **样式"** 面板中
-        :::image-end:::
+        :::image type="content" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="CSS 类应用于检查的元素在&quot;样式&quot;面板中突出显示。" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
 
 1.  在页面上的" **值"文本框 `padding` ** 中，输入值。
 
@@ -82,14 +85,18 @@ ms.locfileid: "12155477"
 > 完成 [查看元素的 CSS](#view-the-css-for-an-element) 教程，然后再执行此操作。
 
 1.  [打开 CSS 示例](#open-css-examples)。
-1.  将鼠标悬停在 `Add A Background Color To Me!` 文本上，打开上下文菜单 (右键单击") "，然后选择"检查 **"。**
+
+1.  右键单击 `Add A Background Color To Me!` 文本，然后单击"检查 **"。**
+
 1.  选择 `element.style` "样式"面板 **顶部** 附近的选项。
+
 1.  键入 `background-color` 并选择 `Enter`。
+
 1.  键入 `honeydew` 并选择 `Enter`。  在 **DOM 树中**，将显示应用于元素的内联样式声明。
 
-    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="使用&quot;样式&quot;面板向 元素添加 CSS 声明" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
-       使用 `background-color:honeydew` "样式"面板的 部分 `element.style` 将声明 **应用于** 元素
-    :::image-end:::
+    使用 `background-color:honeydew` "样式"面板的 部分将 `element.style` 声明应用于**** 元素：
+
+    :::image type="content" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="使用&quot;样式&quot;面板向 元素添加 CSS 声明。" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -101,13 +108,16 @@ ms.locfileid: "12155477"
 > 完成 [查看元素的 CSS](#view-the-css-for-an-element) 教程，然后再执行此操作。
 
 1.  [打开 CSS 示例](#open-css-examples)。
-1.  将鼠标悬停在 `Add A Class To Me!` 文本上，打开上下文菜单 (右键单击") "，然后选择"检查 **"。**
-1.  选择 **.cls**。  DevTools 显示一个文本框，你可以将类添加到所选元素。
+
+1.  右键单击 `Add A Class To Me!` 文本，然后单击"检查 **"。**
+
+1.  单击 **".cls"。**  DevTools 显示一个文本框，可在其中向所选元素添加类。
+
 1.  在 `color_me` "添加新 **类"** 文本框中键入 ，然后选择 `Enter` 。  "添加新 **类"文本框** 下方将出现一个复选框，可在其中打开和关闭该类。  如果 `Add A Class To Me!` 元素应用了任何其他类，则还可以在此处切换每个类。
 
-    :::image type="complex" source="../media/css-elements-add-a-class-to-me-styles-cls.msft.png" alt-text="将 color_me 类应用到 元素" lightbox="../media/css-elements-add-a-class-to-me-styles-cls.msft.png":::
-       类 `color_me` 使用"样式"面板的 **.cls**部分应用到元素****
-    :::image-end:::
+类 `color_me` 使用"样式"面板的 **.cls**部分应用到**** 元素：
+
+:::image type="content" source="../media/css-elements-add-a-class-to-me-styles-cls.msft.png" alt-text="将 color_me 类应用到 元素。" lightbox="../media/css-elements-add-a-class-to-me-styles-cls.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -119,14 +129,18 @@ ms.locfileid: "12155477"
 > 完成 [查看元素的 CSS](#view-the-css-for-an-element) 教程，然后再执行此操作。
 
 1.  [打开 CSS 示例](#open-css-examples)。
+
 1.  将鼠标悬停在 `Hover Over Me!` 文本上。  背景色更改。
-1.  将鼠标悬停在 `Hover Over Me!` 文本上，打开上下文菜单 (右键单击") "，然后选择"检查 **"。**
-1.  在"**样式"** 面板中，选择 **"：hov"。**
+
+1.  右键单击 `Hover Over Me!` 文本，然后单击"检查 **"。**
+
+1.  在"**样式"** 面板中，单击 **"：hov"。**
+
 1.  选中 **"：hover"** 复选框。  背景颜色会像以前一样更改，即使你实际上没有将鼠标悬停在元素上。
 
-    :::image type="complex" source="../media/css-elements-hover-over-me-styles-hov-hover.msft.png" alt-text="切换元素上的悬停伪状态" lightbox="../media/css-elements-hover-over-me-styles-hov-hover.msft.png":::
-       切换 `:hover` 元素上的伪状态
-    :::image-end:::
+切换元素 `:hover` 上的伪状态：
+
+:::image type="content" source="../media/css-elements-hover-over-me-styles-hov-hover.msft.png" alt-text="切换元素上的悬停伪状态。" lightbox="../media/css-elements-hover-over-me-styles-hov-hover.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -138,25 +152,25 @@ ms.locfileid: "12155477"
 > 完成 [查看元素的 CSS](#view-the-css-for-an-element) 教程，然后再执行此操作。
 
 1.  [打开 CSS 示例](#open-css-examples)。
-1.  将鼠标悬停在 `Change My Margin!` 文本上，打开上下文菜单 (右键单击") "，然后选择"检查 **"。**
+
+1.  右键单击 `Change My Margin!` 文本，然后单击"检查 **"。**
+
 1.  在" **样式"** 面板的"方框模型 **"** 图表中，将鼠标悬停在 **填充上**。  元素的填充在视口中突出显示。
 
     > [!NOTE]
     > 根据 DevTools 窗口的大小，可能需要滚动到"样式"面板的底部以显示 **"方框模型"。** ****
 
-1.  双击"方框模型"中的左边距****，当前具有表示元素没有 `-` 左边距的值。
+1.  双击"方框模型"中的左边距****，当前具有表示元素 `-` 没有 的值 `margin-left` 。
+
 1.  键入 `100px` 并选择 `Enter`。  方框 **模型** 默认为像素，但它也接受其他值，如 `25%` 或 `10vw` 。
 
-    :::row:::
-       :::column span="":::
-          :::image type="complex" source="../media/css-elements-change-my-margin-styles-padding.msft.png" alt-text="将鼠标悬停在元素的填充上" lightbox="../media/css-elements-change-my-margin-styles-padding.msft.png":::
-             将鼠标悬停在元素的填充上 :::image-end:::
-       :::column-end:::
-       :::column span="":::
-          :::image type="complex" source="../media/css-elements-change-my-margin-styles-margin-edit.msft.png" alt-text="更改元素的左边距" lightbox="../media/css-elements-change-my-margin-styles-margin-edit.msft.png":::
-             更改元素的左边距 :::image-end:::
-       :::column-end:::
-    :::row-end:::
+    将鼠标悬停在元素的填充上：
+
+    :::image type="content" source="../media/css-elements-change-my-margin-styles-padding.msft.png" alt-text="将鼠标悬停在元素的填充上。" lightbox="../media/css-elements-change-my-margin-styles-padding.msft.png":::
+
+    更改元素的左边距：
+
+    :::image type="content" source="../media/css-elements-change-my-margin-styles-margin-edit.msft.png" alt-text="更改元素的左边距。" lightbox="../media/css-elements-change-my-margin-styles-margin-edit.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -166,29 +180,23 @@ ms.locfileid: "12155477"
 
 如果要调试或测试在 CSS 中定义的媒体查询，请使用以下步骤。
 
-1.  打开开发人员工具，选择左上方**** 第二个"切换设备"工具栏图标，或选择 `Ctrl` + `Shift` + `M` `Cmd` + `Shift` + `M` macOS (上的) 。
+1.  打开开发人员工具，选择左上方**** 第二个"切换设备"工具栏图标，或选择 macOS (上的 `Ctrl` + `Shift` + `M` `Cmd` + `Shift` + `M`) 。
 
-    :::image type="complex" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="打开设备工具栏" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
-       打开设备工具栏
-    :::image-end:::
+    打开设备工具栏：
 
-1.  打开设备工具栏后，选择右上方的菜单， `...` 然后选择"**查看媒体查询"。**  网页上方显示的彩色条代表不同的媒体查询。
+    :::image type="content" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="打开设备工具栏。" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
 
-    :::image type="complex" source="../media/css-elements-media-queries-showing-mq.msft.png" alt-text="在设备工具栏中显示媒体查询" lightbox="../media/css-elements-media-queries-showing-mq.msft.png":::
-       在设备工具栏中显示媒体查询
-    :::image-end:::
+1.  打开设备工具栏后，选择右上方的 `...` 菜单，然后单击"**查看媒体查询"。**  网页上方显示的彩色条代表不同的媒体查询。
 
-1.  将鼠标悬停在条形的边界上，以显示不同媒体查询的值。  选择每个页面以调整网页大小以匹配。
+    :::image type="content" source="../media/css-elements-media-queries-showing-mq.msft.png" alt-text="在设备工具栏中显示媒体查询。" lightbox="../media/css-elements-media-queries-showing-mq.msft.png":::
+       
+1.  将鼠标悬停在条形的边界上，以显示不同媒体查询的值。  单击每个媒体查询值以调整网页大小以匹配。
 
-    :::image type="complex" source="../media/css-elements-media-queries-select-bar.msft.png" alt-text="从预览栏中选择媒体查询" lightbox="../media/css-elements-media-queries-select-bar.msft.png":::
-       从预览栏中选择媒体查询
-    :::image-end:::
+    :::image type="content" source="../media/css-elements-media-queries-select-bar.msft.png" alt-text="从预览栏中选择&quot;媒体查询&quot;。" lightbox="../media/css-elements-media-queries-select-bar.msft.png":::
 
-1.  若要调试媒体查询，并打开编辑器中的 CSS 文件;将鼠标悬停在任何栏分段上，打开上下文菜单 (右键单击") "，然后选择 `Sources` `reveal in source code` 。
+1.  若要调试媒体查询，然后在编辑器中打开 CSS 文件，请 `Sources` 右键单击条段，然后单击 `reveal in source code` 。
 
-    :::image type="complex" source="../media/css-elements-media-queries-reveal-in-sources.msft.png" alt-text="在源编辑器中显示媒体查询" lightbox="../media/css-elements-media-queries-reveal-in-sources.msft.png":::
-       在源编辑器中显示媒体查询
-    :::image-end:::
+    :::image type="content" source="../media/css-elements-media-queries-reveal-in-sources.msft.png" alt-text="在源编辑器中显示媒体查询。" lightbox="../media/css-elements-media-queries-reveal-in-sources.msft.png":::
 
 
 <!-- ====================================================================== -->

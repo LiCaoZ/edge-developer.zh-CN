@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 068bdcfa761b65a9eec0fb6cce7e52b953bef679
-ms.sourcegitcommit: c1f5b8d23ade4bd4e808dcb855a2e7636eff597b
+ms.openlocfilehash: 5755e50201715ddf138b8bd07419038f2d159a73
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "12191153"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12269240"
 ---
 # <a name="get-started-debugging-webview2-apps"></a>开始调试 WebView2 应用
 
@@ -28,7 +28,7 @@ WebView2 Microsoft Edge的目标是将 Web 和本机应用开发功能和工具�
 
 *   选择 `F12`。
 *   选择 `Ctrl` + `Shift` + `I` 。
-*   打开上下文菜单 (右键单击) 并选择 `Inspect` 。
+*   打开上下文菜单 (右键单击") 并选择 `Inspect` ""。
 
 有关详细信息，请导航到["DevTools 概述"。](../index.md)
 
@@ -50,7 +50,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
 
 *   若要调试脚本，必须从应用程序内启动Visual Studio。
 *   无法将调试器附加到正在运行的 WebView2 进程。
-*   安装Visual Studio 2019 版本 16.4 预览版 2 或更高版本。
+*   安装 Visual Studio 2019 版本 16.4 预览版 2 或更高版本。
 
 安装并设置脚本调试器工具Visual Studio。
 
@@ -90,7 +90,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
        Visual Studio添加断点
     :::image-end:::
 
-1.  若要运行调试器，请选择平台的位大小，然后选择"本地调试器"旁边的绿色播放**Windows按钮**。  应用运行，调试程序连接到创建的第一个 WebView2 进程。
+1.  若要运行调试器，请选择平台的位大小，然后选择"本地和调试器"旁边的绿色播放**Windows按钮**。  应用运行，调试程序连接到创建的第一个 WebView2 进程。
 
     :::image type="complex" source="./media/run.png" alt-text=" Visual Studio本地Windows调试器" lightbox="./media/run.png":::
        Visual Studio**本地Windows调试器**
@@ -103,7 +103,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
     :::image-end:::
 
 > [!NOTE]
-> 如果使用 WebView2 [SetVirtualHostNameToFolderMapping](/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping)方法，Visual Studio 2019 中的调试程序将不能理解虚拟源路径映射，因此断点无法正常工作。  此源路径映射在运行调试器时Visual Studio Code。
+> 如果使用 WebView2 [SetVirtualHostNameToFolderMapping](/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping)方法，Visual Studio 2019 中的调试器将不能理解虚拟源路径映射，因此断点无法正常工作。  此源路径映射在运行调试器时Visual Studio Code。
 
 
 <!-- ====================================================================== -->
@@ -133,7 +133,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
     ```
 
     > [!NOTE]
-    > Visual Studio Code源路径映射现在需要 URL，因此你的应用现在在启动时接收命令行参数。  如果需要，可以 `url` 安全地忽略参数。
+    > Visual Studio Code源路径映射现在需要 URL，因此你的应用现在在启动时会收到命令行参数。  如果需要，可以 `url` 安全地忽略参数。
 
 1.  若要在源代码中设置断点，请将鼠标悬停在行上，然后选择 `F9`
 
@@ -198,7 +198,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
         "useWebView": true
     ```
 
-    WebView2 控件必须打开 CDP 端口以允许调试 WebView2 控件。  必须生成代码，以确保在启动调试程序之前，只有一个 WebView2 控件在 CDP (打开 Chrome 开发人员) 协议。
+    WebView2 控件必须打开 CDP 端口以允许调试 WebView2 控件。  必须生成代码，以确保在启动调试程序之前，只有一个 WebView2 控件具有打开的 Chrome 开发人员协议 (CDP) 打开。
 
 *   调试跟踪选项
 
@@ -206,33 +206,30 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
 
     1.  添加 `trace` 参数。
 
-        :::row:::
-           :::column span="":::
-              ```json
-                "name": "Hello debugging world",
-                "type": "pwa-msedge",
-                "port": 9222,
-                "request": "attach",
-                "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
-                "env": {
-                "Path": "%path%;e:/path/to/your/build/location; "
-                },
-                "useWebView": true
-                ,"trace": true  // Turn on  debug tracing, and save the output to a log file.
-              ```
+        ```json
+        "name": "Hello debugging world",
+        "type": "pwa-msedge",
+        "port": 9222,
+        "request": "attach",
+        "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
+        "env": {
+        "Path": "%path%;e:/path/to/your/build/location; "
+        },
+        "useWebView": true
+        ,"trace": true  // Turn on debug tracing, and save the output to a log file.
+        ```
 
-              :::image type="complex" source="./media/trace-log.png" alt-text=" 将调试输出保存到日志文件。" lightbox="./media/trace-log.png":::
-                 将调试输出保存到日志文件 :::image-end:::
-           :::column-end:::
-           :::column span="":::
-              ```json
-              ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
-              ```
+        将调试输出保存为日志文件：
 
-              :::image type="complex" source="./media/verbose.png" alt-text=" 详细输出" lightbox="./media/verbose.png":::
-                 Visual Studio Code详细跟踪打开后调试输出 :::image-end:::
-           :::column-end:::
-        :::row-end:::
+        :::image type="content" source="./media/trace-log.png" alt-text=" 将调试输出保存到日志文件。" lightbox="./media/trace-log.png":::
+            
+        ```json
+        ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
+        ```
+
+        Visual Studio Code详细跟踪功能启用调试输出：
+
+        :::image type="content" source="./media/verbose.png" alt-text="Visual Studio Code详细跟踪打开后调试输出" lightbox="./media/verbose.png":::
 
 *   调试Office加载项。
 

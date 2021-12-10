@@ -8,25 +8,37 @@ ms.topic: tutorial
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、winui 应用、winui、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
-ms.openlocfilehash: b1fef6fea33324bb8fcfedad6dd67b236eab8f61
-ms.sourcegitcommit: a01bd8e1ac92a60fc6b1e202ab299ae2714def11
+ms.openlocfilehash: 7ce84c1638bc3848742de2f5c436cf04425da69f
+ms.sourcegitcommit: ce369c50134212b12e8a44eb45fa63bae134b7cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "12158053"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "12269677"
 ---
 # <a name="get-started-with-webview2-in-winui-2-apps-public-preview"></a>WinUI 2 应用中的 WebView2 入门 (公共预览) 
 
 本文将开始在 WinUI 2 中创建第一个 WebView2 应用，并了解 WebView2 的主要功能。 有关单个 WebView2 API 的信息，请导航到["Microsoft Edge WebView2 API](../webview2-api-reference.md)参考"，然后选择 WinRT 引用链接。
 
 > [!NOTE]
-> WinUI 2 程序包依赖于预发布 WebView2 程序包。 为了完全实现 API 兼容性，请使用预览浏览器通道作为运行时，如预览版的 Beta、Dev 或 Canary Microsoft Edge。
+> [WinUI 2 程序包](https://www.nuget.org/packages/Microsoft.UI.Xaml/2.8.0-prerelease.210927001)依赖预发布 WebView2 程序包。 为了完全实现 API 兼容性，请使用预览浏览器通道作为运行时，如预览版的 Beta、Dev 或 Canary Microsoft Edge。
+
+> [!Important]
+> WebView2 WinUI 2 控件正在积极开发中。 有些功能将丢失或断开。 其中一些包括：
+> * 下载 UI -- 虽然下载 UI 功能当前不起作用，但修复问题后，此功能可能会自动显示在应用的 UI 中。  若要保持兼容性，你应该通过截获下载开始事件手动禁用下载 UI [功能](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2downloadstartingeventargs)。
+> * 自动填充 UI
+> * 文件选取器对话框
+> * 后台音频
+> * 打印为 PDF
+> * 打印预览
+> * 将 COM 对象 (WinRT AddHostObject) 
+> * Playready DRM
+> * 20H2 Windows设备上的服务工作人员
 
 ## <a name="step-0---prerequisites"></a>步骤 0 - 先决条件
 
 1.  安装[Microsoft Visual Studio 2019 版本 16.9](/visualstudio/releases/2019/release-notes-v16.9)或更高版本。 接受默认值。
 
-1.  默认情况下，Visual Studio代码编辑器中不会显示行号。 若要启用行号，请选择"工具 **""**  >  **选项**  >  **""文本编辑器**  >  **""所有语言**  >  **""行号"。**  然后选择"**确定"。**
+1.  默认情况下，Visual Studio代码编辑器中不会显示行号。 若要启用行号，请选择"**** 工具  >  **""选项**  >  **""文本编辑器**  >  **""所有语言**  >  **""行号"。**  然后选择"**确定"。**
 
 
 ## <a name="step-1---install-workloads"></a>步骤 1 - 安装工作负载
@@ -39,9 +51,9 @@ ms.locfileid: "12158053"
 
 1.  单击 **"使用 C++ 进行桌面开发"。**
 
-1.  单击**通用Windows平台开发。**
+1.  单击**通用Windows平台开发**。
 
-1. 在右侧，展开安装**** 详细信息  >  **通用 Windows 平台开发**，然后单击**C++ (v142) 通用**Windows 工具。
+1. 在右侧，展开安装**** 详细信息  >  **通用 Windows 平台开发**，然后单击**C++ (v142) 通用**Windows 平台工具。
 
     :::image type="complex" source="media/winui2-getting-started-install-workloads.png" alt-text="修改 Visual Studio 2019 对话框显示卡片和安装详细信息。" lightbox="media/winui2-getting-started-install-workloads.png":::
        修改 Visual Studio 2019 对话框显示卡片和安装详细信息。 包含通用 Windows 平台开发显示和可选项目的安装详细信息。
@@ -52,28 +64,28 @@ ms.locfileid: "12158053"
 
 ## <a name="step-2---create-a-uwp-app"></a>步骤 2 - 创建 UWP 应用
 
-1.  在Visual Studio中，单击"**文件**  >  **""**  >  **新建Project"。**  或使用项目的启动屏幕Visual Studio，然后选择创建新**项目**。  将显示 **"新建项目** "对话框。
+1.  在Visual Studio中，单击"**新建**  >  ****  >  **Project"。**  或使用项目的启动屏幕Visual Studio，然后选择创建新**项目**。  将显示 **"新建项目** "对话框。
 
 1.  在"**所有语言**"下拉列表中，单击 **"C#"。**
 
 1.  在"**所有平台"** 下拉列表中，单击 **"Windows"。**
 
-1.  在"**所有项目类型"** 下拉列表中，单击 **"UWP"。**  选择筛选器后，将列出多种类型的应用模板。
+1.  在"**所有项目类型"** 下拉列表中，单击 **"UWP"。**  选择筛选器后，将列出几种类型的应用模板。
 
 1.  在应用模板列表中，单击"空白**应用 (通用Windows) "。 **
 
-    :::image type="complex" source="media/winui2-getting-started-create-project.png" alt-text="&quot;创建新项目&quot;对话框将显示空白应用 (通用窗口) 卡片。" lightbox="media/winui2-getting-started-create-project.png":::
-       将显示"新建项目"对话框。 筛选条件以红色突出显示。 通用窗口 (的空白) 以红色突出显示。
+    :::image type="complex" source="media/winui2-getting-started-create-project.png" alt-text="&quot;创建新项目&quot;对话框将显示空白应用 (通用) 卡片。" lightbox="media/winui2-getting-started-create-project.png":::
+       将显示"新建项目"对话框。 筛选条件以红色突出显示。 通用 windows (卡) 空白应用以红色突出显示。
     :::image-end:::
 
 1.  单击“下一步”****。
 
-    "**配置新项目"对话框**将显示"空白应用 (**通用Windows) "。 **
+    "**配置新项目"对话框**将显示，对于"空白应用" (**通用Windows) 。 **
 
 1.  在 **"Project**名称"文本框中，输入项目名称，如 `UWPSampleProject` 。
 
-    :::image type="complex" source="media/winui2-getting-started-config-new-project.png" alt-text="&quot;配置新项目&quot;对话框将显示&quot;空白应用&quot;和&quot;通用 (文本框Windows) 。" lightbox="media/winui2-getting-started-config-new-project.png":::
-       "配置新项目"对话框将显示"空白应用"和"通用 (文本框Windows) 。 显示的文本框包括项目名称、位置、解决方案和解决方案名称。
+    :::image type="complex" source="media/winui2-getting-started-config-new-project.png" alt-text="&quot;配置新项目&quot;对话框显示&quot;空白应用&quot;和&quot;通用 (文本框Windows) 。" lightbox="media/winui2-getting-started-config-new-project.png":::
+       "配置新项目"对话框显示"空白应用"和"通用 (文本框Windows) 。 显示的文本框包括项目名称、位置、解决方案和解决方案名称。
     :::image-end:::
 
 1.  单击“创建”****。  将显示 **"新建通用Windows平台Project**对话框。
@@ -82,7 +94,7 @@ ms.locfileid: "12158053"
 
 1.  在"开发人员**模式"部分**，单击"**打开"。**  " **使用开发人员功能** "对话框将打开，以确认打开开发人员模式。
 
-1.  单击 **"是**"，然后**关闭设置**窗口。
+1.  单击 **"是**"，然后**关闭**设置窗口。
 
     Visual Studio 显示解决方案和项目。
 
@@ -98,10 +110,10 @@ ms.locfileid: "12158053"
 
 1.  选中 **"包括预发布"** 复选框。
 
-1.  在"**搜索"** 框中，输入 `Microsoft.UI.Xaml` ，然后选择 **"Microsoft.UI.Xaml"。**  确保"**版本"** 是最新的预发布，然后选择"安装 **"。**
+1.  在"**搜索"** 框中，输入 `Microsoft.UI.Xaml` ，然后选择 **"Microsoft.UI.Xaml"。**  确保"**版本"** 是最新的预发行版本，然后选择"安装 **"。**
 
-    :::image type="complex" source="media/winui2-nuget-package.msft.png" alt-text="NuGet包管理器" lightbox="media/winui2-nuget-package.msft.png":::
-       NuGet包管理器
+    :::image type="complex" source="media/winui2-nuget-package.msft.png" alt-text="程序包NuGet包管理器" lightbox="media/winui2-nuget-package.msft.png":::
+       程序包NuGet包管理器
     :::image-end:::
 
     将显示 **"预览** 更改"对话框。
@@ -133,7 +145,7 @@ ms.locfileid: "12158053"
     <control:WebView2 x:Name="wv2" Source="https://bing.com"/>
     ```
 
-1.  保存文件。 在 `MainPage.xaml` 代码编辑器中的文件上方，显示 WebView2 内容的预览。
+1.  保存文件。 在 `MainPage.xaml` 代码编辑器中的文件上方，将显示 WebView2 内容的预览。
 
     :::image type="complex" source="media/winui2-getting-started-preview-webview2-content.png" alt-text="WebView2 内容的预览" lightbox="media/winui2-getting-started-preview-webview2-content.png":::
        WebView2 内容的预览
@@ -150,7 +162,7 @@ ms.locfileid: "12158053"
 1.  片刻之后，应用窗口在 WebUI 2 必应 WebView2 控件中显示网站。
 
     :::image type="complex" source="media/winui2-getting-started-webview2-with-content.png" alt-text="示例应用显示必应网站。" lightbox="media/winui2-getting-started-webview2-with-content.png":::
-       包含 WebView2 控件的示例应用将显示必应 http://www.bing.com 网站。
+       具有 WebView2 控件的示例应用将显示必应 http://www.bing.com 网站。
     :::image-end:::
 
 1.  在Visual Studio中，单击 **"调试**  >  **""停止调试**"以关闭应用窗口。
@@ -162,7 +174,6 @@ ms.locfileid: "12158053"
 ## <a name="next-steps"></a>后续步骤
 
 *  [WebView2 开发的最佳做法](../concepts/developer-guide.md)
-*  [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。
+*  [WebView2 UWP 示例应用](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp) - WebView2 功能的综合示例。
 *  [另请参阅](../index.md#see-also) _WebView2 Microsoft Edge简介_。
-*  [WebView2 规范](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md) - 有关 WebView2 API 的详细信息。
 *  [问题 - microsoft-ui-xaml 存储库](https://github.com/microsoft/microsoft-ui-xaml/issues) - 输入特定于 WinUI 的功能请求或 Bug。

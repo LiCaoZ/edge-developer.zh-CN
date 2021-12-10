@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: f9b87e2ade07df3f2d667ce8ae579f3a8c4f187d
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.openlocfilehash: 7462506c7633c85cc992f0a7ac5ed034973decba
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170643"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12269366"
 ---
 <!-- Copyright Kayce Basques
 
@@ -56,7 +56,7 @@ ms.locfileid: "12170643"
 
 如果你使用的是新式框架，它可能会将源代码从易于维护的格式转换为经过优化以尽快运行的格式。
 
-工作区通常能够借助源映射 将优化的代码映射回原始 [源代码](https://blog.teamtreehouse.com/introduction-source-maps)。  但在每个框架使用源映射时，框架之间有很多差异。  Devtools 不支持所有变体。
+工作区通常能够借助源映射 将优化的代码映射回原始 [源代码](https://blog.teamtreehouse.com/introduction-source-maps)。  但在每个框架使用源映射方面，框架之间有很多差异。  Devtools 不支持所有变体。
 
 工作区已知无法与以下框架一起工作。
 
@@ -68,7 +68,7 @@ ms.locfileid: "12170643"
 <!-- ====================================================================== -->
 ## <a name="related-feature-local-overrides"></a>相关功能：本地覆盖
 
-**本地覆盖** 是另一项类似于 Workspaces 的 DevTools 功能。  当您要尝试对网页所做的更改，并且您需要跨网页加载显示更改，但您不关心将更改映射到网页的源代码时，请使用本地替代。
+**本地覆盖** 是另一项类似于 Workspaces 的 DevTools 功能。  当您想要尝试对网页所做的更改，并且需要跨网页加载显示更改，但您不关心将更改映射到网页的源代码时，请使用本地替代。
 
 <!--Todo: add section when content is ready  -->
 
@@ -98,24 +98,20 @@ ms.locfileid: "12170643"
     <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped directory is referred to as `~/Desktop/app`.  -->
 
 1.  在 `app` 桌面上创建目录。  将文件副本从目录 `workspaces-demo` 保存到 `app` 目录。  在本教程的其余部分中，目录称为 `~/Desktop/app` 。
-1.  在 中启动本地 Web 服务器 `~/Desktop/app` 。  下面是一些用于启动的示例代码 `SimpleHTTPServer` ，但您可以使用您喜欢的任何服务器。
 
-    :::row:::
-       :::column span="":::
-          ```bash
-          cd ~/Desktop/app
-          python -m SimpleHTTPServer # Python 2
-          ```
-       :::column-end:::
-       :::column span="":::
-          ```bash
-          cd ~/Desktop/app
-          python -m http.server # Python 3
-          ```
-       :::column-end:::
-    :::row-end:::
+1. 在 中启动本地 Web 服务器 `~/Desktop/app` 。  下面是一些用于启动的示例代码 `SimpleHTTPServer` ，但您可以使用您喜欢的任何服务器。
 
-1.  在网站中Microsoft Edge一个选项卡，然后导航到本地托管的网站版本。  你应该能够使用 URL（如 或 ） `localhost:8080` 访问 `http://0.0.0.0:8080` 它。  确切的 [端口号](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) 可能不同。
+   ```bash
+   cd ~/Desktop/app
+   python -m SimpleHTTPServer # Python 2
+   ```
+
+   ```bash
+   cd ~/Desktop/app
+   python -m http.server # Python 3
+   ```
+
+1.  打开网站Microsoft Edge并导航到网站的本地托管版本。  你应该能够使用 URL（如 或 ） `localhost:8080` 访问 `http://0.0.0.0:8080` 它。  确切的 [端口号](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) 可能不同。
 
     :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="演示" lightbox="../media/workspaces-workspaces-demo.msft.png":::
        演示
@@ -217,7 +213,7 @@ In short, the **DOM Tree** `!==` HTML.
 1.  在左侧 **导航器** (窗格中，) " **页面"** 选项卡。
 1.  选择** (索引) 。 **  将打开页面的 HTML。
 1.  将`<h1>Workspaces Demo</h1>`替换为`<h1>I ❤️  Cake</h1>`。  查看下图。
-1.  选择 `Control` + `S` (Windows、Linux) 或 (`Command` + `S` macOS) 保存更改。
+1.  选择 `Control` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存更改。
 1.  刷新页面。  `<h1>`刷新页面后，元素将继续显示新文本。
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从&quot;源&quot;工具更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
@@ -235,14 +231,14 @@ In short, the **DOM Tree** `!==` HTML.
 若要与其他工具一起打开 DevTools 代码编辑器，请执行下列操作：
 
 1.  导航到 **"元素"** 工具。
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 。  命令 **菜单将** 打开。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 。  命令 **菜单将** 打开。
 1.  键入 `Quick Source` ，然后选择"显示**快速源"。**  在"DevTools"窗口底部，将显示"**** 快速源"工具，其中显示 的内容，这是你在"源"工具中编辑的最后 `index.html` **一**个文件。
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="使用命令菜单打开快速源工具" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
        使用 **命令菜单** 打开快速 **源工具**
     :::image-end:::
 
-1.  选择 `Control` + `P` (Windows、Linux) 或 (`Command` + `P` macOS) 打开 **"打开文件"** 对话框。  查看下图。
+1.  选择 `Control` + `P` (Windows、Linux) 或 `Command` + `P` (macOS) 打开 **"打开文件"** 对话框。  查看下图。
 1.  键入 `script` ，然后选择 **"app/script.js"。 **
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件&quot;对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::

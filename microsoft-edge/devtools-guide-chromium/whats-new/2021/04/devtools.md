@@ -7,12 +7,12 @@ ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: a3ce2dbd8090e6bf88f97a3710ae4b93582d6976
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.openlocfilehash: 47648327f22fefc3bc236a5b9bbe8e0d6ce3c025
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170510"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12269457"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -48,16 +48,13 @@ ms.locfileid: "12170510"
     1.  打开上下文菜单（右键单击）。
     1.  选择“**在问题中显示**”。
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/04/elements-iframe-highlight-issues.msft.png" alt-text="在元素工具中选择带下划线的错误" lightbox="../../media/2021/04/elements-iframe-highlight-issues.msft.png":::
-         在 **元素** 工具中选择带下划线的错误 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/04/elements-iframe-highlight-issues-focus.msft.png" alt-text="在问题工具中显示错误详细信息" lightbox="../../media/2021/04/elements-iframe-highlight-issues-focus.msft.png":::
-         在 **问题** 工具中显示错误详细信息 :::image-end:::
-   :::column-end:::
-:::row-end:::
+在"元素"工具中选择 **带下划线** 的错误：
+
+:::image type="complex" source="../../media/2021/04/elements-iframe-highlight-issues.msft.png" alt-text="在&quot;元素&quot;工具中选择带下划线的错误" lightbox="../../media/2021/04/elements-iframe-highlight-issues.msft.png":::
+
+在"问题"工具 **中显示错误** 详细信息：
+
+:::image type="complex" source="../../media/2021/04/elements-iframe-highlight-issues-focus.msft.png" alt-text="在问题工具中显示错误详细信息" lightbox="../../media/2021/04/elements-iframe-highlight-issues-focus.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -74,7 +71,7 @@ DevTools 工具提示功能可帮助你了解 DevTools 中所有不同的工具�
 *   [打开命令菜单](../../../command-menu/index.md#open-the-command-menu)，然后键入 `tooltips`。
 *   Choose **Customize and control DevTools** () > `...` **Help**Toggle  >  **the DevTools Tooltips**.
 
-此外，如果你打开焦点模式和[DevTools](../02/devtools.md#group-tools-together-in-focus-mode)工具提示实验，还可以选择活动栏底部的切换**DevTools**工具提示 () 按钮 `?` 。 ****
+此外，如果你打开焦点模式和 [DevTools](../02/devtools.md#group-tools-together-in-focus-mode) 工具提示实验，还可以选择活动栏底部的切换 **DevTools** 工具提示 (`?`) **按钮**。
 
 要显示有关如何使用 DevTools 的详细信息，请打开工具提示，然后将鼠标悬停在 DevTools 的每个轮廓区域上。
 
@@ -116,16 +113,13 @@ DevTools 工具提示功能可帮助你了解 DevTools 中所有不同的工具�
 Most operating systems require square icons.  Please include at least one square icon in the array.
 ```
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png" alt-text="在 Microsoft Edge 版本 90 或更早版本中，每个非正方形图标都会显示错误" lightbox="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png":::
-         在 Microsoft Edge 版本 90 或更早版本中，每个非正方形图标都会显示错误 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/04/edge91-application-manifest-errors-and-warnings.msft.png" alt-text="在 Microsoft Edge 版本 91 或更高版本中，如果提供至少一个方形图标，则不会显示任何错误" lightbox="../../media/2021/04/edge91-application-manifest-errors-and-warnings.msft.png":::
-         在 Microsoft Edge 版本 91 或更高版本中，如果提供至少一个方形图标，则不会显示任何错误 :::image-end:::
-   :::column-end:::
-:::row-end:::
+在Microsoft Edge版本 90 或更早版本中，将针对非方形的每个图标显示错误：
+
+:::image type="content" source="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png" alt-text="在 Microsoft Edge 版本 90 或更早版本中，每个非方形图标都将显示错误" lightbox="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png":::
+
+在Microsoft Edge版本 91 或更高版本中，提供至少一个方形图标时不会显示错误：
+
+:::image type="content" source="../../media/2021/04/edge91-application-manifest-errors-and-warnings.msft.png" alt-text="在Microsoft Edge版本 91 或更高版本中，提供至少一个方形图标时不会显示错误" lightbox="../../media/2021/04/edge91-application-manifest-errors-and-warnings.msft.png":::
 
 要查看 Web 应用清单中的错误和警告，请导航到 **应用程序** 工具，然后选择“**清单**”部分。  错误和警告列在 **错误和警告** 标题下。  有关 Web 应用清单的详细信息，请导航到 [使用 Web 应用清单将渐进式 Web 应用集成到操作系统](../../../../progressive-web-apps-chromium/how-to/web-app-manifests.md)。  要创建要包含在 Web 应用清单中的图标，请导航到 [PWABuilder 映像生成器](https://www.pwabuilder.com/imageGenerator)。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1185945"。](https://crbug.com/1185945)
 
@@ -202,7 +196,7 @@ Most operating systems require square icons.  Please include at least one square
 
 使用新的 **内存检查器** 工具检查 JavaScript 和 Wasm 内存中的 `ArrayBuffer`。  打开 [JS 中内存](https://memory-inspector.glitch.me/demo-js.html) 演示网页。  在 **源** 工具中，打开 `memory-write-wasm` 文件，并在行 `0x03c` 处设置断点。  刷新网页。  展开调试程序窗格中的“**范围**”部分。  新图标显示在 **缓冲区** 值 的旁边。  选择它以打开新的 **内存检查器** 工具。
 
-要了解在 **源** 工具中调试的详细信息，请导航到 [使用调试程序窗格调试 JavaScript 代码](../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code)。  若要在开放源代码项目中查看此功能的Chromium，请导航到"问题[1166577"。](https://crbug.com/1166577)
+要了解在 **源** 工具中调试的详细信息，请导航到 [使用调试程序窗格调试 JavaScript 代码](../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code)。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1166577"。](https://crbug.com/1166577)
 
 :::image type="complex" source="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png" alt-text="内存检查器工具" lightbox="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png":::
    **内存检查器** 工具
@@ -216,7 +210,7 @@ Most operating systems require square icons.  Please include at least one square
 1.  打开上下文菜单（右键单击）。
 1.  选择“**徽章设置...**”。
 
-若要显示 (或隐藏) ，请选择 (或) 锁屏提醒名称旁边的复选框。
+若要显示 (或隐藏) 锁屏提醒， (或) 锁屏提醒名称旁边的复选框。
 
 <!--  To review the history of this feature in the Chromium open-source project, navigate to Issue [1066772](https://crbug.com/1066772).  -->
 
@@ -236,24 +230,13 @@ Most operating systems require square icons.  Please include at least one square
 
 该信息可帮助你更好地了解图像并应用优化。  选择图像预览时，**网络** 工具中也提供了图像纵横比信息。
 
-:::row:::
-   :::column span="":::
-      在 **元素** 工具中，图像预览现在显示有关图像的详细信息。
-   :::column-end:::
-   :::column span="":::
-      此外，当你选择图像预览时，**网络** 工具中提供了图像纵横比信息。
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/04/elements-inspect-image-src-hover-preview.msft.png" alt-text="元素工具中包含纵横比信息的图像预览" lightbox="../../media/2021/04/elements-inspect-image-src-hover-preview.msft.png":::
-         **元素**工具中包含纵横比信息的图像预览 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/04/network-img-name-filters-preview.msft.png" alt-text="网络工具中的图像纵横比信息" lightbox="../../media/2021/04/network-img-name-filters-preview.msft.png":::
-         **网络** 工具中的图像纵横比信息 :::image-end:::
-   :::column-end:::
-:::row-end:::
+在 **"元素** "工具中，图像预览现在显示有关图像的详细信息，包括纵横比：
+
+:::image type="content" source="../../media/2021/04/elements-inspect-image-src-hover-preview.msft.png" alt-text="元素工具中包含纵横比信息的图像预览" lightbox="../../media/2021/04/elements-inspect-image-src-hover-preview.msft.png":::
+
+此外，当你选择图像预览时，网络工具中**** 还会提供图像纵横比信息：
+
+:::image type="content" source="../../media/2021/04/network-img-name-filters-preview.msft.png" alt-text="网络工具中的图像纵横比信息" lightbox="../../media/2021/04/network-img-name-filters-preview.msft.png":::
 
 若要在开放源代码项目中查看此功能Chromium，请导航到"问题"1149832 1170656" [](https://crbug.com/1170656)。 [](https://crbug.com/1149832)
 
@@ -265,7 +248,7 @@ Most operating systems require square icons.  Please include at least one square
 1.  导航到 **接受的 Content-Encoding**。
 1.  删除要测试的 `Content-Encoding` 旁边的复选框。
 
-若要在开放源代码项目中查看此功能Chromium历史记录，请导航到"问题[1162042"。](https://crbug.com/1162042)
+若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1162042"。](https://crbug.com/1162042)
 
 :::image type="complex" source="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png" alt-text="新的“更多网络条件...”按钮打开用于配置 Content-Encoding 的网络条件工具" lightbox="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png":::
    新“**更多网络条件...**”按钮打开 **网络条件** 工具以进行配置 `Content-Encoding`
@@ -289,7 +272,7 @@ Most operating systems require square icons.  Please include at least one square
 
 #### <a name="support-for-the-accent-color-keyword"></a>支持强调色关键字
 
-**样式** 窗格的自动完成 UI 现在检测 `accent-color` CSS 关键字，这允许你为元素生成的 UI 控件指定强调色。  元素生成的 UI 控件示例包括复选框或单选按钮。 有关 Chromium 实现状态的详细信息，请导航到 [功能：强调色 CSS 属性](https://chromestatus.com/feature/4752739957473280)。  要启用此功能，请导航到 `edge://flags#enable-experimental-web-platform-features` 并将复选框设置为“**已启用**”。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1092093"。](https://crbug.com/1092093)
+**样式** 窗格的自动完成 UI 现在检测 `accent-color` CSS 关键字，这允许你为元素生成的 UI 控件指定强调色。  元素生成的 UI 控件示例包括复选框或单选按钮。 有关 Chromium 实现状态的详细信息，请导航到 [功能：强调色 CSS 属性](https://chromestatus.com/feature/4752739957473280)。  要启用此功能，请导航到 `edge://flags#enable-experimental-web-platform-features` 并将复选框设置为“**已启用**”。  若要在开放源代码项目中查看此功能Chromium历史记录，请导航到"问题[1092093"。](https://crbug.com/1092093)
 
 :::image type="complex" source="../../media/2021/04/elements-styles-accent-color.msft.png" alt-text="强调色 CSS 关键字" lightbox="../../media/2021/04/elements-styles-accent-color.msft.png":::
    `accent-color` CSS 关键字
@@ -329,7 +312,7 @@ Most operating systems require square icons.  Please include at least one square
 
 ### <a name="new-vary-header-column-in-the-cache-storage-pane"></a>缓存存储窗格中的新的变化标头列
 
-使用 **缓存存储** 窗格中的新 `Vary Header` 列显示 [变化](https://httpwg.org/specs/rfc7231.html#header.vary) HTTP 响应标头值。  若要在开放源代码项目中查看此功能的Chromium，请导航到"问题[1186049"。](https://crbug.com/1186049)
+使用 **缓存存储** 窗格中的新 `Vary Header` 列显示 [变化](https://httpwg.org/specs/rfc7231.html#header.vary) HTTP 响应标头值。  若要在开放源代码项目中查看Chromium历史记录，请导航到"问题[1186049"。](https://crbug.com/1186049)
 
 :::image type="complex" source="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png" alt-text="变化标头列" lightbox="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png":::
    变化标头列
@@ -356,7 +339,7 @@ DevTools 现在支持新的 [专用品牌检查 obj 中的 a.k.a. #foo](https://
 
 #### <a name="support-hover-preview-with-bracket-notation"></a>支持使用括号表示法的悬停预览
 
-DevTools 现在支持在 **源** 工具中使用 `[]` 表示法的 JavaScript 成员表达式上进行悬停预览。  若要在开放源代码项目中查看此功能的Chromium，请导航到"问题[1178305"。](https://crbug.com/1178305)
+DevTools 现在支持在 **源** 工具中使用 `[]` 表示法的 JavaScript 成员表达式上进行悬停预览。  若要在开放源代码项目中查看Chromium历史记录，请导航到"问题[1178305"。](https://crbug.com/1178305)
 
 :::image type="complex" source="../../media/2021/04/sources-page-pen.js-breakpoint-arr-i-a.msft.png" alt-text="支持使用 [] 表示法的悬停预览" lightbox="../../media/2021/04/sources-page-pen.js-breakpoint-arr-i-a.msft.png":::
    支持使用 `[]` 表示法的悬停预览
@@ -364,7 +347,7 @@ DevTools 现在支持在 **源** 工具中使用 `[]` 表示法的 JavaScript �
 
 #### <a name="improved-outline-of-html-files"></a>改进的 HTML 文件大纲
 
-DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工具中，打开 `.html` 文件。  若要打开或 (代码) ，请在 `Ctrl` + `Shift` + `O` Windows/Linux 或 `Cmd` + `Shift` + `O` macOS 上选择。  在下图中，DevTools 现在正确列出了大纲中的所有函数。  以前，DevTools 仅显示一些函数。  若要在开放源代码项目中查看此功能Chromium历史记录，请导航到"问题"761019 1191465" [](https://crbug.com/761019) [。](https://crbug.com/1191465)
+DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工具中，打开 `.html` 文件。  若要打开或 (代码) ，请在 `Ctrl` + `Shift` + `O` Windows/Linux 或 `Cmd` + `Shift` + `O` macOS 上选择。  在下图中，DevTools 现在正确列出了大纲中的所有函数。  以前，DevTools 仅显示一些函数。  若要在开放源代码项目中查看此功能的历史记录Chromium，请导航到"问题"761019 1191465" 。 [](https://crbug.com/761019) [](https://crbug.com/1191465)
 
 :::image type="complex" source="../../media/2021/04/sources-page-jobobbx-at.msft.png" alt-text=" 改进的 HTML 文件大纲" lightbox="../../media/2021/04/sources-page-jobobbx-at.msft.png":::
    改进的 HTML 文件大纲
@@ -376,26 +359,15 @@ DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工
 
 在 Microsoft Edge 版本 91 或更高版本中，DevTools 解析内联函数请求，并显示 Wasm 调试的正确错误堆栈跟踪。
 
-:::row:::
-   :::column span="":::
-      在 Microsoft Edge 版本 90 及更早版本中，源位置不会显示在错误堆栈跟踪中。  源位置包括 `dsquare`。
-   :::column-end:::
-   :::column span="":::
-      在 Microsoft Edge 版本 91 及更高版本中，源位置显示在错误堆栈跟踪中。
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error-old.msft.png" alt-text="以前的 Wasm 调试的错误堆栈跟踪" lightbox="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error-old.msft.png":::
-         Wasm 调试的正确错误堆栈跟踪 :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png" alt-text="Wasm 调试的正确错误堆栈跟踪" lightbox="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png":::
-         Wasm 调试的正确错误堆栈跟踪 :::image-end:::
-   :::column-end:::
-:::row-end:::
+在Microsoft Edge版本 90 及更早版本中，源位置不会显示在错误堆栈跟踪中。  源位置包括 `dsquare`。  Wasm 调试以前的错误堆栈跟踪：
 
-若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1189161"。](https://crbug.com/1189161)
+:::image type="complex" source="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error-old.msft.png" alt-text="以前的 Wasm 调试的错误堆栈跟踪" lightbox="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error-old.msft.png":::
+
+在Microsoft Edge版本 91 及更高版本中，源位置显示在错误堆栈跟踪中。  Wasm 调试的正确错误堆栈跟踪：
+
+:::image type="complex" source="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png" alt-text="Wasm 调试的正确错误堆栈跟踪" lightbox="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png":::
+
+To review the history of this feature in the Chromium open-source project， navigate to Issue [1189161](https://crbug.com/1189161).
 
 
 <!-- ====================================================================== -->

@@ -1,18 +1,18 @@
 ---
-description: 使用 DevTools 开始测试辅助功能问题
 title: 使用 DevTools 的辅助功能测试概述
+description: 使用 DevTools 开始测试辅助功能问题
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: f1c2a615cd05e091b23aa57f5225a184e5554456
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.date: 06/07/2021
+ms.openlocfilehash: 12399e66b668aa31b8eaf90ac8161aa2f7803273
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170314"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12269205"
 ---
 # <a name="overview-of-accessibility-testing-using-devtools"></a>使用 DevTools 的辅助功能测试概述
 
@@ -26,7 +26,7 @@ ms.locfileid: "12170314"
 
 When you open the demo page in the browser and open DevTools， notice that some issues are automatically detected in the **Issues counter**.  单击问题 **计数器** (问题) 打开 ![ ](../media/issues-counter-icon.msft.png) [问题工具][DevToolsIssuesTool]以查看问题和详细信息。
 
-:::image type="content" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="&quot;问题&quot;计数器显示当前网页中的问题个个，并打开&quot;问题&quot;工具。" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
+:::image type="content" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="&quot;问题&quot;计数器显示当前网页中有多少问题，并打开&quot;问题&quot;工具。" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
 
 对于本文，我们将重点介绍问题**工具**的**辅助功能部分。**
 
@@ -39,7 +39,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 显示的第一个警告是 `Form elements must have labels: Element has no title attribute. Element has no placeholder attribute` 。  展开此部分，然后单击"在元素中**** 打开"链接时，将打开 **"** 元素"工具，同时在 DOM 树中突出显示元素。  " **样式** "选项卡显示应用于 元素的 CSS。
 
-有关详细演练步骤，请参阅验证 [输入字段是否包含标签](test-issues-tool.md#verify-that-input-fields-have-labels)。
+有关详细演练步骤，请参阅验证 [输入字段是否具有标签](test-issues-tool.md#verify-that-input-fields-have-labels)。
 
 :::image type="content" source="../media/a11y-testing-inspect-problematic-element.msft.png" alt-text="元素工具，在单击问题工具中的链接后显示有问题的 HTML。" lightbox="../media/a11y-testing-inspect-problematic-element.msft.png":::
 
@@ -82,11 +82,11 @@ When you open the demo page in the browser and open DevTools， notice that some
 有关详细演练步骤，请参阅验证 [文本颜色是否具有足够的对比度](test-issues-tool.md#verify-that-text-colors-have-enough-contrast)。
 
 
-### <a name="verify-that-the-webpage-layout-is-usable-when-narrow"></a>验证网页布局在较窄时是否可用
+### <a name="verify-that-the-webpage-layout-is-usable-when-narrow"></a>验证网页布局在缩小时是否可用
 
 <!-- corresponding how-to article: narrow.md -->
 
-辅助功能的一个重要部分是确保 Web 产品在较窄的视口上良好工作。 许多用户需要缩放页面才能使用它，这意味着没有太多空间。 当空间不足时，多列布局应转换为单列布局，内容按可理解的顺序放置。 这意味着将最重要的内容放在页面顶部，将其他内容放置在页面的更下一层。
+辅助功能的一个重要部分是确保 Web 产品在较窄的视口上良好工作。 许多用户需要缩放页面才能使用它，这意味着没有太多空间。 当空间不足时，多列布局应转换为单列布局，内容按可理解的顺序放置。 这意味着将最重要的内容放置在页面顶部，将其他内容放置在页面的更下一层。
 
 通过缩小浏览器窗口范围，使用箭头键滚动页面，可以看到演示页面的顶部导航栏具有一些辅助功能问题。  顶部导航栏与 **"** 搜索"窗体重叠，如上图所示，需要修复该问题。
 
@@ -102,11 +102,11 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 ### <a name="wavy-underlines-in-the-dom-tree-indicate-automatically-detected-issues"></a>DOM 树中的波浪下划线指示自动检测到的问题
 
-元素工具中的 DOM **树通过** 添加波浪下划线自动在 HTML 中直接标记问题。  If you `Shift` + `click` any element that has a wavy underline， the **Issues** tool opens.
+"元素"工具中的 DOM **树通过** 添加波浪下划线自动在 HTML 中直接标记问题。  If you `Shift` + `click` any element that has a wavy underline， the **Issues** tool opens.
 
 :::image type="content" source="../media/a11y-testing-wavy-underlines.msft.png" alt-text="在 DOM 树中以波浪下划线显示的元素有问题。  Shift+单击 元素，直接进入问题。" lightbox="../media/a11y-testing-wavy-underlines.msft.png":::
 
-问题工具发现的 **这些问题是可以避免** 的一些相对明显的辅助功能问题。  使用 **问题** 工具及其指导性说明修复问题，可引导你实现可访问的产品。
+问题工具发现的 **这些问题是一** 些可以避免的相对明显的辅助功能问题。  使用 **问题** 工具及其指导性说明修复问题，可引导你实现可访问的产品。
 
 
 <!-- ====================================================================== -->
@@ -149,7 +149,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 * 布局类型;如果元素是使用弹性框或网格定位的，则会看到相应的 (![网格布局图标](../media/grid-icon.msft.png)).
 * 元素的名称，如 、 **h1**或**div**。 ****
 * 元素的尺寸（以像素为单位）。
-* 颜色作为颜色样本， (较小的彩色方形) 和格式化值 (如 `#336699`) 。
+* 颜色，作为颜色样本 (较小的彩色正方形) 和格式化的值 (如 `#336699`) 。
 * 字体信息 (大小和字体系列) 。
 * 边距和填充（以像素为单位）。
 
@@ -246,7 +246,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 使用 元素实现"支持"表单上的按钮，而自动测试工具无法将元素识别 `div` 为表单上的控件。
 
-若要调查这一点，可以使用 **"检查** "工具将鼠标悬停在"捐赠"表单的按钮上。  结果是它们都不是键盘可访问的，如信息覆盖的 **键盘** 可聚焦行上的灰色圈所指示。  如信息覆盖的****"名称****"和"角色"行所示，"捐赠"表单的按钮也没有任何名称，其角色为 (表示或元素 `generic` `div` `span`) ，这意味着它们不能通过辅助技术访问。
+若要调查这一点，可以使用 **"检查** "工具将鼠标悬停在"捐赠"表单的按钮上。  结果是它们都不是键盘可访问的，如信息覆盖的 **键盘** 可聚焦行上的灰色圈所指示。  如信息覆盖的****"名称****"和"角色"行所示，"捐赠"表单的按钮也没有任何名称，它们的角色为 (表示或元素 `generic` `div` `span`) ，这意味着它们不能通过辅助技术访问。
 
 :::image type="content" source="../media/a11y-testing-donation-button-info.msft.png" alt-text="检查窗体的按钮时发现它们不能通过键盘访问。" lightbox="../media/a11y-testing-donation-button-info.msft.png":::
 
@@ -286,7 +286,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 ### <a name="checking-the-accessibility-tree-for-keyboard-and-screen-reader-support"></a>检查辅助功能树是否支持键盘和屏幕阅读器
 
-使用 **Inspect** 工具单独检查页面上的每个元素非常耗时。  相反，使用 **辅助功能选项卡** 导航页面的 **辅助功能树**。  辅助功能树指示页面向辅助技术（如屏幕阅读器）提供哪些信息。
+使用 **Inspect** 工具单独检查页面上的每个元素非常耗时。  相反，使用 **"辅助功能"** 选项卡导航页面的 **"辅助功能树"。**  辅助功能树指示页面向辅助技术（如屏幕阅读器）提供哪些信息。
 
 :::image type="content" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="辅助功能树中的&quot;捐赠&quot;表单按钮。" lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
 
@@ -305,7 +305,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 文档的源顺序对于辅助技术非常重要，并且可能不同于元素在呈现页面上的显示顺序。  使用 CSS，您可以直观地对页面元素进行重新排序，但这并不意味着屏幕阅读器等辅助技术将按与 CSS 相同的顺序表示页面元素。
 
-可以使用"辅助功能"选项卡中的"源 **顺序** 查看器"测试 **页面元素** 的顺序。 一直向下滚动，然后选中" **显示源订单"** 复选框。  现在，当您在 **"** 元素"工具中导航 DOM 树（如单击 元素）时，数值覆盖显示在呈现的页面的各个部分，这些部分表示 `header` 源顺序。
+可以使用"辅助功能"选项卡中的"源 **顺序** 查看器"测试 **页面元素** 的顺序。 一直向下滚动，然后选中" **显示源订单"** 复选框。  现在，当您在 **"** 元素"工具中导航 DOM 树（如单击 元素）时，数值覆盖显示在呈现的页面的表示源顺序的各个 `header` 部分。
 
 :::image type="content" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="打开源订单查看器将显示源代码中元素的顺序作为页面上的数字覆盖。" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
 
@@ -319,18 +319,15 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 ### <a name="checking-text-color-contrast-in-the-default-state"></a>检查默认状态下的文本颜色对比度
 
-除了问题工具中的自动颜色对比度测试之外，您还可以**** 使用**Inspect**工具检查各个页面元素是否具有足够的对比度。  如果对比度信息可用，" **检查** "覆盖层将显示对比率和复选框项。  绿色选中标记图标表示对比度足够高，黄色警报图标表示对比度不足。
+除了问题工具中的自动颜色对比度测试之外，您还可以**** 使用**Inspect**工具检查各个页面元素是否具有足够的对比度。  如果对比度信息可用，" **检查** "覆盖层将显示对比率和复选框项。
 
-例如，边栏导航菜单中的链接具有足够的对比度，但"参与状态"部分中的**** 绿色"动物"列表**** 项没有。  "检查"覆盖层中的警告标记了对比度 **不足** 的元素。
+绿色选中标记图标表示没有足够的对比度，橙色警告图标表示对比度不足。  例如，边栏导航菜单中的链接具有足够的对比度，如绿色选中标记图标所示：
 
-:::row:::
-    :::column:::
-        :::image type="content" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="边栏导航菜单中的链接具有足够的对比度，如 Inspect 覆盖中所示。" lightbox="../media/a11y-testing-enough-contrast.msft.png":::
-    :::column-end:::
-    :::column:::
-        :::image type="content" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="&quot;检查&quot;覆盖层中的警告标记了对比度不足的元素。" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
-    :::column-end:::
-:::row-end:::
+:::image type="content" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="边栏导航菜单中的链接具有足够的对比度，如 Inspect 覆盖中所示。" lightbox="../media/a11y-testing-enough-contrast.msft.png":::
+
+"检查"覆盖层中的警告标记了对比度 **不足** 的元素。  例如，"接收状态 **"** 部分中的绿色"**** 动物"列表项没有足够的对比度，如"检查"覆盖**层所示**。  覆盖层显示橙色圆的感叹号：
+
+:::image type="content" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="&quot;检查&quot;覆盖层中的警告标记了对比度不足的元素。" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
 
 这样 **使用 Inspect** 工具并不能完全测试元素。 页面上的元素可能具有不同的状态，所有这些状态都需要进行测试。 例如，如果将鼠标悬停在边栏导航菜单上，请注意更改链接颜色动画。
 
@@ -346,7 +343,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 :::image type="content" source="../media/a11y-testing-inspecting-link-to-hover.msft.png" alt-text="检查元素工具中具有悬停状态的元素。" lightbox="../media/a11y-testing-inspecting-link-to-hover.msft.png":::
 
-在" **样式"** 选项卡上，单击 **"\：hov (Toggle 元素状态) ** 按钮。  然后使用 **Force 元素状态** 复选框选择要模拟的状态。
+在" **样式"** 选项卡上，单击 **"\：hov (切换元素状态) ** 按钮。  然后使用 **Force 元素状态** 复选框选择要模拟的状态。
 
 :::image type="content" source="../media/a11y-testing-state-simulation.msft.png" alt-text="显示所有选项的状态模拟功能。" lightbox="../media/a11y-testing-state-simulation.msft.png":::
 
@@ -368,30 +365,24 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 有关颜色辅助功能的另一个注意事项是，可能需要测试不同的主题，以检查对比度问题。  大多数操作系统具有深色模式和浅色模式。  网页可以使用 CSS 媒体查询对这些不同的设置做出反应。
 
-此演示页面具有浅色和深色主题。  通过使用呈现工具中的深色或浅色配色方案模拟，无需更改操作系统 [即可](./preferred-color-scheme-simulation.md) 测试这两 **个主题** 。  到目前为止，本文查看了使用深色主题设置的操作系统的演示页面。  如果我们改为模拟光线方案，然后刷新页面，问题工具将显示六**** 个颜色对比度问题，而不是两个。
+此演示页面具有浅色和深色主题。  通过使用呈现工具中的深色或浅色配色方案模拟，无需更改操作系统 [即可](./preferred-color-scheme-simulation.md) 测试这两 **个主题** 。  到目前为止，本文查看使用深色主题设置的操作系统的演示页面。  如果我们改为模拟光线方案，然后刷新页面，问题工具将显示六**** 个颜色对比度问题，而不是两个。
 
 有关详细演练步骤，请参阅检查深色主题和浅色主题 [的对比度问题](test-dark-mode.md)。
 
+在呈现工具中切换到浅 **色** 主题时，将报告以下问题：
 
-在呈现工具中 **切换到浅色** 主题时，请注意以下项目。
+*  由于浅色主题更改，检测到新的对比度问题：
 
-*  由于浅色主题更改，检测到新的对比度问题。
-*  页面 **的整个"接收状态** "部分在浅色模式下不可读取。
+   :::image type="content" source="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png" alt-text="由于浅色主题更改而检测到新的对比度问题。" lightbox="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png":::
 
-:::row:::
-    :::column:::
-        :::image type="content" source="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png" alt-text="由于浅色主题更改而检测到新的对比度问题。" lightbox="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png":::
-    :::column-end:::
-    :::column:::
-        :::image type="content" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="在浅色模式下标记为对比度问题的接收状态项目。" lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
-    :::column-end:::
-:::row-end:::
+*  由于 **对比度** 问题，页面的"接收状态"部分在浅色模式下无法读取：
+
+   :::image type="content" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="在浅色模式下标记为对比度问题的接收状态项目。" lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
 
 
 ### <a name="verify-that-the-webpage-is-usable-by-people-with-color-blindness"></a>验证网页是否对色盲者可用
 
-不同的接收状态使用红色 (、绿色、黄色) 颜色作为区分资金状态的唯一方式。  但是，你无法预期所有用户都体验这些颜色。  如果你使用 DevTools 的视觉缺陷模拟功能，则可以通过模拟不同视觉用户对设计的看法来发现这不够好。 [](./emulate-vision-deficiencies.md)
-有关详细演练步骤，请参阅验证页面是否适用于色 [盲用户](test-color-blindness.md)。
+不同的接收状态使用红色 (绿色、黄色) 颜色作为区分资金状态的唯一方式。  但是，你无法预期所有用户都体验这些颜色。  如果你使用 DevTools 的视觉缺陷模拟功能，则可以通过模拟不同视觉用户对设计的看法来发现这不够好。 [](./emulate-vision-deficiencies.md)  有关详细的演练步骤，请参阅验证页面是否适用于色 [盲用户](test-color-blindness.md)。
 
 :::image type="content" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="将页面显示为具有亚特色 (色盲) 可以看到它。" lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
 
@@ -404,13 +395,13 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 :::image type="content" source="../media/a11y-testing-simulating-blur.msft.png" alt-text="模拟模糊的页面可能会发现辅助功能问题。" lightbox="../media/a11y-testing-simulating-blur.msft.png":::
 
 
-### <a name="verify-that-the-page-is-usable-with-ui-animation-turned-off-reduced-motion"></a>验证页面是否可用，并关闭 UI 动画 (减少运动) 
+### <a name="verify-that-the-page-is-usable-with-ui-animation-turned-off-reduced-motion"></a>验证页面是否可用，并关闭 UI 动画， (运动效果) 
 
 这些天操作系统提供的另一个设置是关闭动画的方法。  动画可以帮助产品的可用性，但它们也会导致许多问题，包括混淆和混乱。 这就是产品不应向在操作系统中关闭动画的用户显示动画的原因。  通过使用 CSS 媒体查询，您可以检查用户是否希望查看动画，并相应地将其关闭。  而且，与深色和浅色模式很类似，有一种方法可以模拟使用 [DevTools 的减少运动](./reduced-motion-simulation.md)。
 
-在此处的演示页面中，当单击边栏导航菜单的不同部分时，关闭动画将停止页面的平滑滚动。  这可以通过在媒体查询中将平滑滚动设置包装在 CSS 中实现：
+在此处的演示页中，当单击边栏导航菜单的不同部分时，关闭动画将停止页面的平滑滚动。  这可以通过在媒体查询中将平滑滚动设置包装在 CSS 中实现：
 
-:::image type="content" source="../media/a11y-testing-simulating-reduced-motion.msft.png" alt-text="模拟减少运动和 CSS，以确保仅在用户需要时发生平滑滚动。" lightbox="../media/a11y-testing-simulating-reduced-motion.msft.png":::
+:::image type="content" source="../media/a11y-testing-simulating-reduced-motion.msft.png" alt-text="模拟减少的动作和 CSS，以确保仅在用户需要时发生平滑滚动。" lightbox="../media/a11y-testing-simulating-reduced-motion.msft.png":::
 
 ```css
 @media (prefers-reduced-motion: no-preference) {
@@ -437,6 +428,6 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 * 使用语音识别进行测试。
 * 在高对比度模式下进行测试。
 
-若要了解改进 Web 产品的方法，另一个方法为将[webhint](https://aka.ms/webhint4code)扩展用于Visual Studio Code。  此扩展标记源代码中易检测到的辅助功能问题，并提供了如何修复这些问题的见解。
+了解改进 Web 产品的方法的另一个方法为使用[webhint 扩展Visual Studio Code。](https://aka.ms/webhint4code)  此扩展标记源代码中易检测到的辅助功能问题，并提供了如何修复这些问题的见解。
 
 :::image type="content" source="../media/a11y-testing-webhint-in-vs-code.msft.png" alt-text="Webhint in Visual Studio Code， showing an accessibility issue by underlining the HTML element and showing an explanation of the problem." lightbox="../media/a11y-testing-webhint-in-vs-code.msft.png":::

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: d05f12468ec232a5ca0cf85e0334394e9b56e82f
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.openlocfilehash: de475330a30798b434e615f199debbf1f6390972
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155869"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12269226"
 ---
 # <a name="navigation-events-for-webview2"></a>WebView2 的导航事件
 
@@ -33,23 +33,18 @@ ms.locfileid: "12155869"
 
 以下事件描述每次导航操作期间 WebView2 的状态：
 
-:::row:::
-   :::column span="1":::
-      :::image type="content" source="../media/navigation-graph.png" alt-text="WebView2 Microsoft Edge事件。" lightbox="../media/navigation-graph.png":::
-   :::column-end:::
-   :::column span="2":::
-      | Sequence | 事件名称 | 详细信息 |
-      |:--- |:--- |:--- |
-      | 1 | `NavigationStarting` |  WebView2 开始导航，导航结果为网络请求。  在事件期间，主机可能会禁止该请求。 |
-      | 2 | `SourceChanged` |  WebView2 的源将更改到新的 URL。  该事件可能由不会导致网络请求（如片段导航）的导航操作导致。 |
-      | 3 | `ContentLoading` |  WebView2 开始加载新页面的内容。 |
-      | 4 | `HistoryChanged` |  导航导致 WebView2 的历史记录更新。 |
-      | 5 | `DOMContentLoaded` |  WebView2 已完成对 DOM 内容进行分析，但尚未在页面上加载所有图像、脚本和其他内容。 |
-      | 6 | `NavigationCompleted` |  WebView2 完成新页面上的内容加载。 |
-   :::column-end:::
-:::row-end:::
+:::image type="content" source="../media/navigation-graph.png" alt-text="WebView2 导航事件。" lightbox="../media/navigation-graph.png":::
 
-上图显示了在各自的事件参数上具有相同的属性 `NavigationId` 的导航事件。
+| Sequence | 事件名称 | 详细信息 |
+| --- | --- | --- |
+| 1 | `NavigationStarting` |  WebView2 开始导航，导航结果为网络请求。  在事件期间，主机可能会禁止该请求。 |
+| 2 | `SourceChanged` |  WebView2 的源将更改到新的 URL。  该事件可能由不会导致网络请求（如片段导航）的导航操作导致。 |
+| 3 | `ContentLoading` |  WebView2 开始加载新页面的内容。 |
+| 4 | `HistoryChanged` |  导航导致 WebView2 的历史记录更新。 |
+| 5 | `DOMContentLoaded` |  WebView2 已完成对 DOM 内容进行分析，但尚未在页面上加载所有图像、脚本和其他内容。 |
+| 6 | `NavigationCompleted` |  WebView2 完成新页面上的内容加载。 |
+
+上图显示了在各自的事件参数上具有相同的 `NavigationId` 属性的导航事件。
 
 使用事件记录中提供的导航 ID (跟踪每个新文档的 `NavigationId` 导航) 。  `NavigationId`每次成功导航到新文档时，WebView2 的事件都会更改。
 

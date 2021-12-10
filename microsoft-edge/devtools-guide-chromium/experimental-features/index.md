@@ -22,12 +22,12 @@ no-loc:
 - Edit keyboard shortcuts for any action in DevTools
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
-ms.openlocfilehash: 68b9fc54902f52362421e1f624911092720985b2
-ms.sourcegitcommit: ccccb41b1695469774df7d3e0718184d0cea360f
+ms.openlocfilehash: 335003da60de1d0009c6ad80cb98431b1e053d90
+ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "12260879"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "12269233"
 ---
 # <a name="experimental-features"></a>试验功能
 
@@ -43,7 +43,7 @@ When a checkbox is removed from all the preview channels, move its section down 
 
 Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限。  本文列出并介绍了最新版本的 Canary 预览频道中的大多数实验Microsoft Edge。
 
-组织[的所有频道Microsoft Edge](/deployedge/microsoft-edge-channels)实验性功能。 可以通过使用 Microsoft Edge Canary 渠道 获取最新的[实验Microsoft Edge Canary 渠道。](https://www.microsoftedgeinsider.com/welcome?channel=canary) 若要查看最新版本中提供的完整列表Microsoft Edge，请参阅****  >  DevTools 设置**实验**"页面。
+组织[的所有频道Microsoft Edge](/deployedge/microsoft-edge-channels)实验性功能。 可以使用以下方法获取最新的实验[Microsoft Edge Canary 渠道。](https://www.microsoftedgeinsider.com/welcome?channel=canary) 若要查看最新版本中提供的完整列表Microsoft Edge，请参阅****  >  DevTools 设置**实验**"页面。
 
 <!-- no Warning formatting, because UI already contains red "WARNING" at top -->
 这些实验可能不稳定或不可靠，可能需要重启 DevTools。
@@ -88,7 +88,7 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 
 1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 (`Command` + `Option` + `I` 按) 。
 
-1.  单击 **"设置 (** 齿轮) 图标打开 DevTools[设置窗格。](../customize/index.md#settings)
+1.  单击 **"设置 (** 齿轮) 图标以打开 DevTools[设置窗格。](../customize/index.md#settings)
 
 1.  在"实验"窗格**设置，** 单击"实验 **"** 部分。
 
@@ -96,7 +96,7 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 
 1.  在实验 **页面上** ，选中或清除实验的复选框。 默认情况下，某些实验 (选中) 打开。
 
-1.  单击 **" ("** 中的"关闭"图标。> 设置) 右上方的"关闭"图标以关闭 ![ ](../media/settings-close-icon-light-theme.png) DevTools**设置。**
+1.  单击 **"** 关闭 ("中的"关闭"图标。> 设置) 右上方的"关闭"图标以关闭 ![ ](../media/settings-close-icon-light-theme.png) DevTools**设置。**
 
 1.  单击" **重新加载 DevTools"** 按钮。
 
@@ -108,9 +108,9 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 
 1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 (`Command` + `Option` + `I` 按) 。
 
-1.  选择**设置 (** 开发人员设置中的 ![ ") >"图标。) > ](../media/settings-gear-icon-light-mode.png) **首选项"。**
+1.  选择**设置 (** ![ 开发人员设置中的") >" ](../media/settings-gear-icon-light-mode.png) **图标。**
 
-1.  单击"**还原默认值并刷新**"按钮，然后单击"关闭**** (DevTools > 设置 中的"关闭 ![ "图标 ](../media/settings-close-icon-light-theme.png) 。) 。
+1.  单击"**还原默认值并刷新"** 按钮，然后单击"关闭**** (DevTools > 设置 中的"关闭 ![ "图标 ](../media/settings-close-icon-light-theme.png)) 。
 
 <!-- For more information about customizing settings, see [Settings](../customize/index.md#settings) in _Customize Microsoft Edge DevTools_. -->
 
@@ -122,7 +122,7 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 
 1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 (`Command` + `Option` + `I` 按) 。
 
-1.  选择**设置 (** ![ 开发设置中的") >" ](../media/settings-gear-icon-light-mode.png) **图标**。
+1.  选择**设置 (** 开发设置中的 ![ ") >" ](../media/settings-gear-icon-light-mode.png) **图标**。
 
 1.  在"筛选器 **"文本框** 中单击并输入文本，如 **时间线**。  键入时，只有匹配的复选框显示在实验 **页面中** 。
 
@@ -138,7 +138,7 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 
 * [联系开发人员Microsoft Edge团队](../contact.md)。
 
-* 打开焦点**模式**实验后，在活动栏底部，选择"帮助****" (焦点模式**** 的活动栏中的"帮助"图标) >反馈"，以显示"发送反馈 ![ ](../media/help-icon-of-focus-mode.png) "窗口****。 ****
+* 打开焦点**模式**实验后，在活动栏底部，选择"帮助**** (焦点模式的活动**** 栏中的"帮助"图标) >反馈"，以显示"发送反馈 ![ ](../media/help-icon-of-focus-mode.png) "窗口。 **** ****
 
 
 <!-- ====================================================================== -->
@@ -185,7 +185,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 1.  在 DevTools 中，选择 **"设置**  >  **实验"。**
 
-1.  选中"**协议监视器**"复选框，然后单击"**** 关闭 (DevTools > 设置 中的"关闭" ![ 图标。) ](../media/settings-close-icon-light-theme.png) 关闭设置。 ****
+1.  选中"**协议监视器**"复选框，然后单击"**** 关闭 (开发人员工具"> 设置中的"关闭" ![ ](../media/settings-close-icon-light-theme.png) **图标**。) 关闭设置。
 
 1.  打开命令**菜单** `Control` + `Shift` + `P` () ，然后在文本框中键入协议。 ****
 
@@ -235,7 +235,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 1.  突出显示任何 HTML 元素以显示网页源中订单的覆盖。
 
-:::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::no-loc (辅助功能窗格中的源订单查看器) ：：：。" lightbox="。。/media/experiments-source-order-viewer.msft.png"：：：
+:::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::no-loc (辅助功能窗格中的源订单查看器) ：：：。。/media/experiments-source-order-viewer.msft.png"：：：
 
 此实验默认打开。
 
@@ -301,13 +301,13 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 1.  选择" **字体编辑器"** 图标。
 
-有关新的可视字体编辑器 **的详细信息**，请参阅 [DevTools](../inspect-styles/edit-fonts.md)中的样式窗格中编辑 CSS 字体样式和设置。
+有关新的可视字体编辑器 **的详细信息，** 请参阅在样式窗格中编辑 [CSS 字体样式和设置](../inspect-styles/edit-fonts.md)。
 
 :::image type="complex" source="../media/font-editor-open.msft.png" alt-text="突出显示可视内容字体编辑器窗格" lightbox="../media/font-editor-open.msft.png":::
    突出显示可视内容**字体编辑器**窗格
 :::image-end:::
 
-有关详细信息，请参阅DevTools 中的样式窗格中编辑 [CSS 字体样式和设置](../inspect-styles/edit-fonts.md)。
+有关详细信息，请参阅"样式"窗格中[的"编辑 CSS 字体样式和设置"。](../inspect-styles/edit-fonts.md)
 
 
 <!-- ====================================================================== -->
