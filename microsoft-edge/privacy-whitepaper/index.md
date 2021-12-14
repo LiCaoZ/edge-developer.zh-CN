@@ -3,7 +3,7 @@ description: Microsoft Edge 隐私白皮书
 title: Microsoft Edge 隐私白皮书
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/03/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge， 隐私， 白皮书， 隐私白皮书， 信任， Microsoft edge 隐私， 浏览器隐私， 隐私设置
@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: 99c575b223f4cf90661b294d3467890defbe9beb
-ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
+ms.openlocfilehash: 247ae01f16bf1ed1db83d49caa404e6fcc4156f1
+ms.sourcegitcommit: 8201e2e0939e1807986d973246fcf38416f92d7e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "12235591"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "12269972"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书
 
@@ -275,6 +275,13 @@ Microsoft Edge在向位置服务发出请求时生成新的随机 ID。  Microso
 
 
 <!-- ====================================================================== -->
+## <a name="image-enhancement"></a>图像增强
+为了提供更好的浏览体验，Microsoft Edge 通过改进图像的颜色、照明、对比度和清晰度来提供图像增强功能。 启用图像增强功能后，Microsoft Edge 会对图像进行加密并将其传输到 Microsoft 服务器以执行图像增强。 对服务器的请求中不包含任何用户标识符。 图像缓存 30 天以提高性能。 
+
+若要控制图像增强，请导航到 `edge://settings/privacy` 并打开或关闭 **Microsoft Edge 中的增强图像设置**。 
+
+
+<!-- ====================================================================== -->
 ## <a name="import-browser-data"></a>导入浏览器数据
 
 第一次启动浏览器时，Microsoft Edge 将提供交互式无缝体验。  可以将浏览器数据导入到其他浏览器Microsoft Edge。  在导入期间，可以保留现有数据，也可以将其删除并重新启动。  数据包括收藏夹、浏览历史记录、自动填充数据、扩展、设置以及其他浏览数据。
@@ -514,6 +521,33 @@ Microsoft 开发人员需要了解新函数对Microsoft Edge Microsoft 服务。
 
 
 <!-- ====================================================================== -->
+## <a name="search-results-data-for-product-improvement"></a>搜索结果数据以改进产品 
+为了改进你在 Microsoft Edge、Microsoft 必应、Microsoft 新闻和其他 Microsoft 服务中的体验，当启用此功能的设置时，Microsoft Edge 将收集并使用你在 Microsoft Edge 中的网络搜索数据。 Microsoft 将使用你的搜索结果活动，使每个人的 Web 和搜索体验更好、更相关且更有用。 Microsoft 收集的数据来自你在 Web 上执行的搜索，包括 Microsoft 不拥有或不运营的网站。
+
+* Microsoft Edge 将删除标识数据收集对象（人员或设备）的数据，以清理和取消识别数据。 
+
+* Microsoft 不会使用我们收集的任何信息来进行个性化设置或向你提供广告。 
+
+* Microsoft 收集的数据永远不会与你的帐户或设备相关联。 
+
+* 此数据收集和设置在托管设备上不可用。 
+
+Microsoft 收集数据的数据可能包括搜索查询、显示给你的搜索结果，以及你与这些搜索结果的交互，例如你单击的链接。 Microsoft 也会收集人口统计数据。 
+
+若要管理用于改进产品的搜索结果活动的收集和使用，请执行以下操作: 
+
+1. 打开 Microsoft Edge。
+
+1. 选择 **“设置及更多”** > **“设置”**。 
+
+1. 选择 **“隐私、搜索和服务”**。 
+
+1. 在 **搜索和服务改进** 下，打开或关闭 **通过在 Web 上发送搜索结果来帮助改进 Microsoft 产品**。 
+
+如果停止共享你的数据，Microsoft 可能会继续使用以前收集的搜索结果数据，但它仍将被取消标识，并且不会与你或你的设备相关联。
+
+
+<!-- ====================================================================== -->
 ## <a name="secure-dns"></a>安全 DNS
 
 导航到网站时，浏览器需要查找网络地址，如 `93.184.216.34`，以解析主机名，例如 `example.com`。 安全 DNS 通过与 DNS 服务提供程序的 HTTPS 连接使用服务执行此查找。 安全 DNS 可防止网络上的攻击者修改或窃听查找。
@@ -565,7 +599,7 @@ InPrivate 浏览使用启动 InPrivate 会话的配置文件的购物设置。
 
 如果向操作系统添加了新的标识，而你的 Microsoft Edge 配置文件当前尚无标识，则 Microsoft Edge 会将特定标识添加到你的配置文件。  如果你使用 Microsoft 帐户或工作或学校帐户登录 Microsoft Edge，并且在 Windows 10 配置文件上没有标识，则会将特定帐户添加到 Windows 10 配置文件，除非你在登录时明确选择不将其添加到 Windows 10。
 
-登录到Microsoft Edge启用单一登录。 你将自动登录到某些网站（如必应）和其他标识支持的体验，例如同步。如果要将登录限制为Microsoft Edge而非其他 Microsoft 站点（如 [必应](https://bing.com)），则可以注销特定站点。 Microsoft Edge 将创建一个注销 cookie，告知 Microsoft Edge 不要登录到特定网站来方便日后访问。
+登录到Microsoft Edge启用单一登录。 你将自动登录到某些网站 (如必应) 和其他标识支持的体验 (如同步)。如果要将自动登录限制为 Microsoft 站点 (如 [必应](https://bing.com))，则可以退出登录浏览器。
 
 若要使用用户名和密码再次登录到特定网站或清除 cookie ，请导航到 `edge://settings/privacy`。 有关清除浏览数据的详细信息，请导航到[查看和删除 Microsoft Edge 中的浏览器历史记录](https://support.microsoft.com/help/10607)。
 
