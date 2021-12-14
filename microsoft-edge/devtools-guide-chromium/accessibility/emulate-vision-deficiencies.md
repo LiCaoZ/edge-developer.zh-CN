@@ -1,5 +1,5 @@
 ---
-title: '在 DevTools Microsoft Edge色盲 (中模拟视觉缺陷) '
+title: '在 DevTools 和色盲Microsoft Edge中 (视觉缺陷) '
 description: 在 DevTools 中模拟Microsoft Edge缺陷。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,16 +7,16 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 06/07/2021
-ms.openlocfilehash: 23f5be5bb7c1ba33f0b33ab7ecf560aae48e5570
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.openlocfilehash: ab64e9a819d5e1256166cda2de8cfe394031eca1
+ms.sourcegitcommit: 8dcac32f975886847d829efaf17aa7ea082e4714
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269121"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "12270118"
 ---
 # <a name="emulate-vision-deficiencies"></a>模仿视觉缺陷
 
-为了更好地满足色盲用户 (色盲[](https://www.colourblindawareness.org)) 或模糊视觉Microsoft Edge[开发人员](../index.md)工具允许你模拟模糊的视觉和特定的色盲。  模拟 **视觉缺陷工具** 可模拟以下类别：
+为了更好地满足色盲用户 (色盲[](https://www.colourblindawareness.org)) 或模糊视觉的需求[，Microsoft Edge DevTools](../index.md)允许你模拟模糊的视觉和特定的色盲。  模拟 **视觉缺陷工具** 可模拟以下类别：
 
 | 色盲 | 详细信息 |
 |:--- |:--- |
@@ -30,43 +30,35 @@ ms.locfileid: "12269121"
 <!-- ====================================================================== -->
 ## <a name="open-the-rendering-tool"></a>打开呈现工具
 
-若要模拟对 Web 产品应用的视觉缺陷，请打开["呈现工具"。](../rendering-tools/index.md)
+若要模拟有视力缺陷的人看到你的网页，请打开 [呈现工具](../rendering-tools/index.md)。
 
-1.  若要打开呈现工具，请选择 `...` 工具栏中的菜单项。
-1.  选择 **"更多工具"。**
-1.  选择 **"呈现"。**
+1.  单击 **"自定义"，并控制** () `...` 的 DevTools 控件。
+1.  转到"**更多工具**  >  **""** 呈现 **"** 以在箱中打开"呈现"面板。
 
-    :::image type="content" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="打开呈现工具。" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
+    > [!div class="mx-imgBorder"]
+    > ![从"更多工具"菜单打开"呈现"面板](../media/getting-to-the-rendering-tools.msft.png)
 
-" **呈现** "菜单显示在箱中。
+1.  向下滚动到" **模拟视觉缺陷** "部分，单击"无 **模拟** "下拉列表并选择其中一个选项。
 
-1.  向下滚动到 `Emulate vision deficiencies` 菜单项并选择下拉菜单以显示选项。
+    > [!div class="mx-imgBorder"]
+    > !["呈现"面板中的"模拟视觉缺陷"部分](../media/accessibility-emulate-vision-menu-options.msft.png)
 
-    :::image type="content" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="呈现工具上的&quot;模拟视觉缺陷&quot;菜单。" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
+1.  浏览器窗口模拟当前页面上所选的视觉缺陷。
 
-1.  选择一个选项。
-
-    :::image type="content" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="&quot;模拟视力缺陷&quot;菜单选项。" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
-
-1.  主窗口显示对应用于当前页面的选定选项的模拟。
-
-    :::image type="content" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="使用模糊视觉模拟显示。" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
-
-    :::image type="content" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="使用 Achromatopoma 模拟显示。" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
-
+    > [!div class="mx-imgBorder"]
+    > ![浏览器窗口，网页中已修改颜色，用于模拟选定颜色视觉缺陷](../media/accessibility-blurred-vision-emulation.msft.png)
 
 <!-- ====================================================================== -->
 ## <a name="use-the-command-menu"></a>使用命令菜单
 
 作为替代方法，可以使用命令 **菜单** 访问不同的模拟。
 
-1.  选择 `Ctrl` + `Shift` + `P` (Windows/Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令**菜单**。
+1.  按 `Ctrl` + `Shift` + `P` (Windows/Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令**菜单**。
 
-    :::image type="content" source="../media/css-console-command-menu-rendering.msft.png" alt-text="命令菜单。" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+1.  键入 `emulate` ，然后选择要模拟的视觉缺陷的类型，然后按 `Enter` 。
 
-1.  键入 `emulate` ，选择要模拟的，然后选择 `Enter` 。
-
-    :::image type="content" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="命令菜单中提供的不同模拟选项。" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
+    > [!div class="mx-imgBorder"]
+    > ![显示不同类型的视觉缺陷的命令菜单](../media/accessibility-emulation-command-menu-results.msft.png)
 
 > [!IMPORTANT]
 > " **模拟视觉缺陷"** 工具模拟每个缺陷人士可能如何查看你的产品的近似值。  每个人是不同的，因此视觉缺陷的严重性因人而异。  为了更好地满足用户的需求，请避免任何可能导致问题的颜色组合。  模拟 **视觉缺陷** 工具不是产品的完整辅助功能评估。  相反 **，"模拟视觉缺陷"** 工具应为您提供良好的第一步以避免出现问题。

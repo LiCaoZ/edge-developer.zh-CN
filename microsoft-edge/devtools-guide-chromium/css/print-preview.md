@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 78a68fab4e65c7d83c9ac62abba656d23de27b75
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.openlocfilehash: a41cad0c52e9ad875b33f00e73505d02f9ce2e44
+ms.sourcegitcommit: 8dcac32f975886847d829efaf17aa7ea082e4714
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155827"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "12270099"
 ---
 <!-- Copyright Kayce Basques
 
@@ -31,18 +31,17 @@ ms.locfileid: "12155827"
 
 打印 [媒体查询](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) 控制页面在打印时的外观。  若要强制页面进入打印预览模式：
 
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令**菜单**。
+1.  按 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
 
-    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="命令菜单" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-       **命令菜单**
-    :::image-end:::
+    > [!div class="mx-imgBorder"]
+    > ![打开命令菜单](../media/print-preview-open-command-menu.png)
 
-1.  键入 `rendering` ，选择 **"显示呈现**"，然后选择 `Enter` 。
-1.  在"**模拟 CSS 媒体"下**，选择"**打印"。**
+1.  键入 `rendering` ，选择 **"显示呈现"** 选项，然后按 `Enter` 。
+1.  " **呈现"** 面板在"箱" **中打开**。
+1.  在 **"模拟 CSS 媒体类型"下，** 选择"**打印"。**
 
-    :::image type="complex" source="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png" alt-text="打印预览模式" lightbox="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png":::
-       打印预览模式
-    :::image-end:::
+    > [!div class="mx-imgBorder"]
+    > ![已选择打印 CSS 媒体类型的呈现面板](../media/print-preview-css-media-type.png)
 
 可以在此处显示和更改 CSS，就像任何其他网页一样。  导航到“[查看和更改 CSS 入门](./index.md)”。
 

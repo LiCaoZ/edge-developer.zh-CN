@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 130102984e6ba5a73892c6ce222bcdb93a97cfb4
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.openlocfilehash: acb7acbfaa1131d658ff08fc7f0aa83e10007d4b
+ms.sourcegitcommit: 8dcac32f975886847d829efaf17aa7ea082e4714
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139974"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "12270077"
 ---
 # <a name="reduced-motion-simulation"></a>减少运动模拟
 
@@ -33,18 +33,15 @@ Web 产品中的动画可能是一个辅助功能问题。  操作系统通过�
 
 若要模拟操作系统的缩减运动设置，而无需更改操作系统设置：
 
-1.  打开“**命令菜单**”。
-    1.  在 `Control` + `Shift` + `P` Windows/Linux 或 `Command` + `Shift` + `P` macOS 上选择。
+1.  在 `Control` + `Shift` + `P` "Windows/Linux"或 macOS 上键入 `Command` + `Shift` + `P` 以打开 **"命令菜单"。**
+    
+    > [!div class="mx-imgBorder"]
+    > ![打开命令菜单](../media/reduced-motion-open-command-menu.png)
 
-        :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="命令菜单" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-           **命令菜单**
-        :::image-end:::
+1.  键入 `reduced` ，以打开和关闭模拟。  选择 **模拟 CSS prefers-reduced-motion** 选项并按 `Enter` 。
 
-1.  键入 `reduced` ，以打开和关闭模拟。  选择该选项，然后选择 `Enter` 。
-
-    :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="从命令菜单打开或关闭首选的减少运动设置" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
-       从命令菜单打开或 **关闭首选的** 减少 **运动设置**
-    :::image-end:::
+    > [!div class="mx-imgBorder"]
+    > !["命令"菜单中的"模拟 CSS 首选减少运动"选项](../media/reduced-motion-command-menu-entry.png)
 
 1.  刷新网页并检查动画是否运行。
 
