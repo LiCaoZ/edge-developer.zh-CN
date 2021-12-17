@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 7cbac43a85176b07edc0c0ba1e44f4e651abaec7
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.openlocfilehash: 1ab7482a98b96d7cb572397edf7991701ca43b57
+ms.sourcegitcommit: 638194d122f1c0f78d868cf2ef95d421869899a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170650"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "12278031"
 ---
 <!-- Copyright Kayce Basques
 
@@ -58,7 +58,7 @@ ms.locfileid: "12170650"
 
 若要在本教程中取得最大功能，请打开演示并试用演示页面上的功能。
 
-1.  打开 “[入门](https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html)”演示。
+1.  打开 “[入门](https://microsoftedge.github.io/Demos/network-tutorial/)”演示。
 
     :::image type="complex" source="../media/network-glitch-inspect-network-activity-demo.msft.png" alt-text="演示" lightbox="../media/network-glitch-inspect-network-activity-demo.msft.png":::
        演示
@@ -192,7 +192,7 @@ ms.locfileid: "12170650"
        第一张屏幕截图期间发生的网络活动
     :::image-end:::
 
-1.  再次 ![ ("网络) "，然后关闭"捕获屏幕截图" ](../media/settings-icon.msft.png) 复选框以**** 关闭"屏幕截图"窗格。
+1.  再次 ![ (" ](../media/settings-icon.msft.png) 网络) "，然后关闭" **捕获** 屏幕截图"复选框以关闭"屏幕截图"窗格。
 1.  再次刷新页面。
 
 
@@ -201,7 +201,7 @@ ms.locfileid: "12170650"
 
 选择资源以了解有关它详细信息。
 
-1.  选择 `getstarted.html`。  将显示 **"标题** "面板。  使用此面板检查 HTTP 标头。
+1.  选择 `network-tutorial/`。  将显示 **"标题** "面板。  使用此面板检查 HTTP 标头。
 
     :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="标头面板" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
        “**标头**”面板
@@ -222,7 +222,7 @@ ms.locfileid: "12170650"
     :::image-end:::
 
     > [!TIP]
-    > 缩小文件时，选择"响应 (底部的"**** 设置) 格式"按钮以重新设置文件内容的格式，实现 ![ ](../media/format-icon.msft.png) 可读性。 ****
+    > 缩小文件时，选择"响应 (底部的"**** 设置) 格式"按钮，以重新设置文件内容的格式，提高 ![ ](../media/format-icon.msft.png) 可读性。 ****
 
 1.  选择 **"计时"** 面板。  将显示资源的网络活动的细分。
 
@@ -230,7 +230,7 @@ ms.locfileid: "12170650"
        “**计时**”面板
     :::image-end:::
 
-1.  选择 **"** 关闭 ![ ](../media/close-icon.msft.png) (") "关闭"以再次查看网络日志。
+1.  选择 **"** 关闭 (![ 关闭 ](../media/close-icon.msft.png)) "以再次查看网络日志。
 
     :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="关闭按钮" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
        “**关闭**”按钮
@@ -302,7 +302,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
        负筛选器
     :::image-end:::
 
-1.  键入 `domain:cdn.glitch.com` 到“**筛选器**”文本框。  DevTools 筛选出 URL 不匹配此域的任何资源。
+1.  键入 `larger-than:1000` 到“**筛选器**”文本框。  DevTools 筛选出响应小于 1000 字节的任何资源。
 
     :::image type="complex" source="../media/network-glitch-network-filter-property-value.msft.png" alt-text="属性筛选器" lightbox="../media/network-glitch-network-filter-property-value.msft.png":::
        属性筛选器
@@ -322,7 +322,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
        只显示 CSS 文件
     :::image-end:::
 
-1.  若要同时显示脚本，请选择并按住 `Control` (Windows、Linux) 或 (`Command` macOS) ，然后选择**JS**。
+1.  若要同时显示脚本，请选择并按住 `Control` (Windows、Linux) 或 `Command` (macOS) ，然后选择**JS**。
 
     :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="只显示 CSS 和 JS 文件" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
        只显示 CSS 和 JS 文件
@@ -338,12 +338,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 
 当某些页面资源不可用时，页面的外观和行为如何？  它是完全失败，还是仍有点功能？  阻止查找请求：
 
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令**菜单**。
-
-    :::image type="complex" source="../media/network-glitch-network-cli-empty.msft.png" alt-text="命令菜单" lightbox="../media/network-glitch-network-cli-empty.msft.png":::
-       **命令菜单**
-    :::image-end:::
-
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
 1.  键入 `block` ，选择 **显示请求阻止**，然后选择 `Enter` 。
 
     :::image type="complex" source="../media/network-glitch-network-cli-block.msft.png" alt-text="显示请求阻止" lightbox="../media/network-glitch-network-cli-block.msft.png":::

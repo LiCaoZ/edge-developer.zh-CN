@@ -1,19 +1,19 @@
 ---
-description: 适用于 Win32 应用的 WebView2 入门指南
 title: Win32 应用中的 WebView2 入门
+description: 通过使用示例应用和 WebView2 SDK 开始构建适用于 Win32 的 WebView2。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/05/2021
+ms.date: 12/13/2021
 ms.topic: tutorial
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
-ms.openlocfilehash: 6f55333c318234208c51d8809ebd17f3f47ac257
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.openlocfilehash: a20a66345a3c54693908eeb6795ff18d0fb478ba
+ms.sourcegitcommit: 638194d122f1c0f78d868cf2ef95d421869899a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269429"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "12277977"
 ---
 # <a name="get-started-with-webview2-in-win32-apps"></a>Win32 应用中的 WebView2 入门
 
@@ -27,9 +27,9 @@ ms.locfileid: "12269429"
 
 在继续之前安装以下必备组件。
 
-1.  [Visual Studio](https://visualstudio.microsoft.com)安装 C++ 支持的 2015 或更高版本。
+1.  [Visual Studio](https://visualstudio.microsoft.com)安装有 C++ 支持的 2015 或更高版本。
 
-1.  [WebView2](https://developer.microsoft.com/microsoft-edge/webview2)运行时，或任何 Microsoft Edge [Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta、Dev 或 Canary) 安装在受支持的操作系统 (OS) 。 当前受支持的操作系统列表是 Windows 11、Windows 10、Windows 8.1 和 Windows 7。
+1.  [WebView2](https://developer.microsoft.com/microsoft-edge/webview2)运行时，或安装在Microsoft Edge操作系统)  (OS) 上的任何 Microsoft Edge [Insider (preview (渠道](https://www.microsoftedgeinsider.com/download) (Beta、Dev 或 Can) ary) 。 当前受支持的操作系统列表是 Windows 11、Windows 10、Windows 8.1 和 Windows 7。
 
 
 <!-- ====================================================================== -->
@@ -41,7 +41,7 @@ ms.locfileid: "12269429"
 > 为了更好地关注演练，请使用演练：为示例应用创建传统的 Windows 桌面应用程序 ([C++](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp)) 中修改的示例代码。  若要下载修改后的示例并开始，请导航到["WebView2 示例"。](https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide)
 
 1.  在Visual Studio中，打开 `WebView2GettingStarted.sln` 。
-    如果使用早期版本的 Visual Studio，请在"解决方案资源管理器"中右键**** 单击 **"WebView2GettingStarted"，** 然后选择"属性 **"。** 单击 **"配置属性**  >  **常规**"，Windows **SDK**版本和**平台工具**集，以使用 Win10 SDK 和 Visual Studio工具集。
+    如果使用早期版本的 Visual Studio，请在"解决方案资源管理器"中右**** 键单击 **"WebView2GettingStarted"，** 然后选择"属性 **"。** 单击 **"配置属性**常规"，然后Windows SDK 版本和平台工具集，以使用 Win10 SDK 和 Visual Studio  >  **** 工具集。 **** ****
 
 :::image type="complex" source="../media/tool-version.png" alt-text="工具版本" lightbox="../media/tool-version.png":::
    工具版本
@@ -54,24 +54,29 @@ Visual Studio显示错误，因为项目缺少 WebView2 头文件。 完成第 2
 
 将 WebView2 SDK 添加到项目中。  使用 NuGet 安装 Win32 SDK。
 
-1.  在 **"解决方案资源管理器**"中，右键单击项目名称，然后选择"管理NuGet**包"。**
+1.  在 **"解决方案资源管理器**"中，右键单击项目名称，然后选择"管理**NuGet包"。**
 
     :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="管理 NuGet 程序包" lightbox="../media/manage-nuget-packages.png":::
        管理 NuGet 程序包
     :::image-end:::
 
+    > [!WARNING]
+    > 如果在以下步骤中看不到预期的搜索结果，请检查NuGet位置。 单击 **"工具**  >  **选项**  >  **NuGet 程序包管理器**  >  **包源"。** 请确保在程序包 **源中** ，存在 **nuget.com** 源 `https://api.nuget.org/v3/index.json` 。 如果**包源**不包含该源，请在"名称"文本框和 `nuget.com` **** `https://api.nuget.org/v3/index.json` "源"文本框中输入****。 然后单击更新**和****确定**。
+
 1.  安装Windows库。
+    1.  在 **"NuGet"** 窗口中，单击"**浏览"** 选项卡。
     1.  在搜索栏中，键入 > `Microsoft.Windows.ImplementationLibrary` **Microsoft.Windows。ImplementationLibrary**。
     1.  在右侧窗口中，选择"安装 **"。**  NuGet将库下载到计算机。
 
         > [!NOTE]
-        > 实现[Windows库](https://github.com/Microsoft/wil)和 Windows[运行时 C++ 模板](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true)库是可选的，因此对于此示例而言，使用 COM 更为简单。
+        > 实现[Windows库](https://github.com/Microsoft/wil)和 Windows[运行时 C++ 模板](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true)库是可选的，使使用 COM 更容易作为示例。
 
         :::image type="complex" source="../media/wil.png" alt-text="Windows实现库" lightbox="../media/wil.png":::
            Windows实现库
         :::image-end:::
 
 1.  安装 WebView2 SDK。
+    1.  在 **"NuGet"** 窗口中，单击"**浏览"** 选项卡。
     1.  在搜索栏中，键入 `Microsoft.Web.WebView2` 并选择 **"Microsoft.Web.WebView2"。**
     1.  在右侧窗口中，单击"安装 **"。**  NuGet将 SDK 下载到计算机。
 
@@ -102,7 +107,7 @@ Visual Studio显示错误，因为项目缺少 WebView2 头文件。 完成第 2
 
 ### <a name="build-your-empty-sample-app"></a>生成空示例应用
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -118,7 +123,7 @@ Visual Studio显示错误，因为项目缺少 WebView2 头文件。 完成第 2
 
 将 WebView2 控件添加到主窗口。
 
-使用 `CreateCoreWebView2Environment` 方法设置环境，并找到Microsoft Edge控件的浏览器。  如果要指定浏览器位置、用户文件夹、浏览器标志等，也可以使用此方法，而不是 `CreateCoreWebView2EnvironmentWithOptions` 使用默认设置。  完成该方法后，在回调中运行 方法并运行 `CreateCoreWebView2Environment` `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` 方法，获取关联的 WebView。
+使用 `CreateCoreWebView2Environment` 方法设置环境并找到Microsoft Edge控件的浏览器。  如果要指定浏览器位置、用户文件夹、浏览器标志等，也可以使用此方法，而不是 `CreateCoreWebView2EnvironmentWithOptions` 使用默认设置。  完成该方法后，在回调中运行 方法并运行 `CreateCoreWebView2Environment` `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` 方法，获取关联的 WebView。
 
 在回调中，设置一些设置，调整 WebView2 的大小以填充父窗口的 100%，并显示必应。
 
@@ -169,7 +174,7 @@ Visual Studio显示错误，因为项目缺少 WebView2 头文件。 完成第 2
 
 ### <a name="build-your-bing-sample-app"></a>生成必应示例应用
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -248,7 +253,7 @@ WebView2 团队已在上一步中介绍了使用 `ICoreWebView2::Navigate` 方�
     现在，WebView2 冻结 `Object` 并返回页面文档一次。
 
 > [!NOTE]
-> 脚本注入 API (其他一些 WebView2) 异步的，如果代码必须按特定顺序运行，则应该使用回调。
+> 脚本注入 API (其他一些 WebView2 API) 异步的，如果代码必须按特定顺序运行，则应该使用回调。
 
 
 <!-- ====================================================================== -->
@@ -263,7 +268,7 @@ WebView2 团队已在上一步中介绍了使用 `ICoreWebView2::Navigate` 方�
 1.  主机注册处理程序以将收到的消息返回给 Web 内容。
 1.  主机将脚本注入 Web 内容，Web 内容注册处理程序以从主机打印消息。
 1.  主机将脚本注入到将 URL 张贴到主机的 Web 内容。
-1.  将触发主机处理程序，并返回消息 (Web) URL。
+1.  将触发主机处理程序，并返回 (Web) URL 的消息。
 1.  将触发 Web 内容的处理程序，并输出来自主机的消息 (URL) 。
 
 复制以下代码段并粘贴到 `HelloWebView.cpp` 中。
@@ -289,7 +294,7 @@ webviewWindow->AddScriptToExecuteOnDocumentCreated(
 nullptr);
 ```
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
 
 1.  按 **F5** 生成并运行项目。
 

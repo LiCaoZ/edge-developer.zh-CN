@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 7462506c7633c85cc992f0a7ac5ed034973decba
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.openlocfilehash: 32d970b3c536f746c6e5e659c3baf7d01314b1fa
+ms.sourcegitcommit: 638194d122f1c0f78d868cf2ef95d421869899a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269366"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "12277984"
 ---
 <!-- Copyright Kayce Basques
 
@@ -76,36 +76,19 @@ ms.locfileid: "12269366"
 <!-- ====================================================================== -->
 ## <a name="step-1-set-up"></a>步骤 1：设置
 
-完成以下操作，获取工作区的动手体验。
-
 ### <a name="set-up-the-demo"></a>设置演示
 
-1.  [打开演示](https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0)。  <!--In the top-left of the editor, a randomly-generated project name is displayed.  -->
+1.  [打开演示源代码](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces)。
 
-    :::image type="complex" source="../media/workspaces-glitch-workspaces-demo-source.msft.png" alt-text="小故障项目" lightbox="../media/workspaces-glitch-workspaces-demo-source.msft.png":::
-       小故障项目
-    :::image-end:::
+1.  在 `app` 桌面上创建目录。  将 、 和 文件 `index.html` `styles.css` `script.js` 的副本从演示源代码保存到 `app` 目录中。  在本教程的其余部分中，目录称为 `~/Desktop/app` 。
 
-    <!--1.  Choose the project name.  -->
-    <!--1.  Choose **Advanced Options** > **Download Project**.
-
-    :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="The Download Project button" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
-       The Download Project button
-    :::image-end:::
-
-    -->
-    <!--1.  Close the tab.  -->
-    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped directory is referred to as `~/Desktop/app`.  -->
-
-1.  在 `app` 桌面上创建目录。  将文件副本从目录 `workspaces-demo` 保存到 `app` 目录。  在本教程的其余部分中，目录称为 `~/Desktop/app` 。
-
-1. 在 中启动本地 Web 服务器 `~/Desktop/app` 。  下面是一些用于启动的示例代码 `SimpleHTTPServer` ，但您可以使用您喜欢的任何服务器。
+1.  在 中启动本地 Web 服务器 `~/Desktop/app` 。  下面是一些用于启动的示例代码 `SimpleHTTPServer` ，但您可以使用您喜欢的任何服务器。
 
    ```bash
    cd ~/Desktop/app
    python -m SimpleHTTPServer # Python 2
    ```
-
+   
    ```bash
    cd ~/Desktop/app
    python -m http.server # Python 3
@@ -126,7 +109,7 @@ ms.locfileid: "12269366"
     :::image-end:::
 
 1.  导航到 **"源"** 工具。
-1.  在左侧 **导航器** (窗格中 **，) "文件系统"** 选项卡。
+1.  在左侧 **导航器** (窗格中，) " **文件系统"** 选项卡。
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="&quot;文件系统&quot;选项卡" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
        " **文件系统"** 选项卡
@@ -213,7 +196,7 @@ In short, the **DOM Tree** `!==` HTML.
 1.  在左侧 **导航器** (窗格中，) " **页面"** 选项卡。
 1.  选择** (索引) 。 **  将打开页面的 HTML。
 1.  将`<h1>Workspaces Demo</h1>`替换为`<h1>I ❤️  Cake</h1>`。  查看下图。
-1.  选择 `Control` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存更改。
+1.  选择 `Control` + `S` (Windows、Linux) 或 (`Command` + `S` macOS) 保存更改。
 1.  刷新页面。  `<h1>`刷新页面后，元素将继续显示新文本。
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从&quot;源&quot;工具更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
@@ -238,7 +221,7 @@ In short, the **DOM Tree** `!==` HTML.
        使用 **命令菜单** 打开快速 **源工具**
     :::image-end:::
 
-1.  选择 `Control` + `P` (Windows、Linux) 或 `Command` + `P` (macOS) 打开 **"打开文件"** 对话框。  查看下图。
+1.  选择 `Control` + `P` (Windows、Linux) 或 (`Command` + `P` macOS) 打开 **"打开文件"** 对话框。  查看下图。
 1.  键入 `script` ，然后选择 **"app/script.js"。 **
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件&quot;对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
@@ -248,7 +231,7 @@ In short, the **DOM Tree** `!==` HTML.
     > [!NOTE]
     > 该 `Save Changes To Disk With Workspaces` 演示中的链接会定期设置样式。
 
-1.  使用快速源工具将以下**代码script.js****库的底部**。
+1.  使用快速源工具将**script.js代码添加到****页面**底部。
 
     ```javascript
     console.log('greetings from script.js');
@@ -269,13 +252,7 @@ In short, the **DOM Tree** `!==` HTML.
 <!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 
-使用本教程中学到的内容在你自己的项目中设置工作区。  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to share your knowledge with the rest of the DevTools community.  -->
-
-<!--
-If you have more feedback on the topics or anything else, please use any of the channels below:
-*   [Mailing List](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools)
-*   [Twitter](https://twitter.com/alphabetbrowserdevtools)
--->
+使用本教程中学到的内容在你自己的项目中设置工作区。
 
 
 <!-- ====================================================================== -->
