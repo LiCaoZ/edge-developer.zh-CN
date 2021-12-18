@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 863b82a5a60a01a1f65c6f792f1dbbb6b2874a12
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.openlocfilehash: 523a3892b217327b9c3f010e8432ed12f84fa7c4
+ms.sourcegitcommit: b701ad89af83d25febecd2dbb2d778a320cecfd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170076"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "12278865"
 ---
 # <a name="accessibility-testing-features-in-devtools"></a>DevTools 中的辅助功能测试功能
 
@@ -32,7 +32,7 @@ ms.locfileid: "12170076"
 
 | 要检查的辅助功能方面 | DevTools 的功能 | 文章或副标题 |
 |---|---|---|
-| 验证键盘支持 | **检查** 工具> **覆盖的辅助功能** 部分 | [使用"检查"工具将鼠标悬停在网页上以检测辅助功能问题](test-inspect-tool.md) |
+| 验证键盘支持 | **检查** 工具> **覆盖的辅助功能** 部分 | [使用 Inspect 工具通过将](test-inspect-tool.md) 鼠标悬停在网页上方并使用 Inspect 工具分析 HTML 页面来 [检测辅助功能问题](../css/inspect.md) |
 | 验证键盘支持 | `Tab`、 `Shift+Tab` 和 `Enter` 键 | [使用 Tab 和 Enter 键检查键盘支持](test-tab-enter-keys.md) |
 | 验证键盘支持：验证是否指示焦点 | **检查** 工具 **、"样式"** 选项卡和 **"源"** 工具 | [分析边栏菜单中键盘焦点的缺失](test-analyze-no-focus-indicator.md) |
 | 验证键盘支持：验证窗体按钮是否可与键盘一同使用 | **检查**工具 **、"元素"工具中的 DOM****树和****"事件侦听器"** 选项卡 | [分析窗体中键盘支持缺失](test-analyze-no-keyboard-support.md) |
@@ -44,9 +44,9 @@ ms.locfileid: "12170076"
 
 | 要检查的辅助功能方面 | DevTools 的功能 | 文章或副标题 |
 |---|---|---|
-| 验证文本是否具有足够的对比度 (自动用于整个页面)  | **报告** > **辅助功能部分** 的问题工具 | [验证文本颜色是否具有足够的对比度](test-issues-tool.md#verify-that-text-colors-have-enough-contrast) |
+| 验证文本是否具有足够的对比度 (自动显示整个页面)  | **报告** > **辅助功能部分** 的问题工具 | [验证文本颜色是否具有足够的对比度](test-issues-tool.md#verify-that-text-colors-have-enough-contrast) |
 | 验证文本是否具有足够的对比度 | **元素** 工具> **颜色选取器** > **样式"选项卡** | [使用颜色选取器测试文本颜色对比度](color-picker.md) |
-| 验证文本是否具有足够的对比度 | **检查**覆盖>**对比度行**的"辅助功能">**部分** | [使用"检查"工具将鼠标悬停在网页上以检测辅助功能问题](test-inspect-tool.md) |
+| 验证文本是否具有足够的对比度 | **检查**覆盖>**对比度行**的"辅助功能">**部分** | [使用 Inspect 工具通过将](test-inspect-tool.md) 鼠标悬停在网页上方并使用 Inspect 工具分析 HTML 页面来 [检测辅助功能问题](../css/inspect.md) |
 | 验证文本是否具有足够的对比度：处于悬停状态 | **"** 元素 **">"选项卡** > **切换元素状态"** | [验证所有元素状态可访问性](test-inspect-states.md) |
 | 验证文本是否具有足够的对比度：使用深色主题 (深色模式) 浅色主题 | **呈现** 工具> **模拟 CSS 媒体功能首选配色方案** | [检查深色主题和浅主题的对比度问题](test-dark-mode.md) |
 
@@ -57,8 +57,8 @@ ms.locfileid: "12170076"
 | 要检查的辅助功能方面 | DevTools 的功能 | 文章或副标题 |
 |---|---|---|
 | 验证屏幕阅读器支持：验证输入字段是否包含标签 | **报告** > **辅助功能部分** 的问题工具 | [验证输入字段是否包含标签](test-issues-tool.md#verify-that-input-fields-have-labels) |
-| 验证屏幕阅读器支持 | **检查**工具 **>名称和角色**的>**辅助功能****部分** | [使用"检查"工具将鼠标悬停在网页上以检测辅助功能问题](test-inspect-tool.md) |
-| 验证屏幕阅读器支持 | **元素** 工具> **辅助功能选项卡** > **辅助功能树** | [检查辅助功能树，获取键盘和屏幕阅读器支持](test-accessibility-tree.md)，以及使用 [辅助功能选项卡测试辅助功能](accessibility-tab.md) |
+| 验证屏幕阅读器支持 | **检查**覆盖 **>名称和角色**的>**辅助功能"****部分** | [使用 Inspect 工具通过将](test-inspect-tool.md) 鼠标悬停在网页上方并使用 Inspect 工具分析 HTML 页面来 [检测辅助功能问题](../css/inspect.md) |
+| 验证屏幕阅读器支持 | **元素**工具>**辅助功能选项卡>****辅助功能树** | [检查辅助功能树，获取键盘和屏幕阅读器支持](test-accessibility-tree.md)，以及使用 [辅助功能选项卡测试辅助功能](accessibility-tab.md) |
 
 
 <!-- ====================================================================== -->
@@ -72,11 +72,11 @@ ms.locfileid: "12170076"
 
 
 <!-- ====================================================================== -->
-## <a name="usable-when-narrow"></a>在窄时可用
+## <a name="usable-when-narrow"></a>在缩小时可用
 
 | 要检查的辅助功能方面 | DevTools 的功能 | 文章或副标题 |
 |---|---|---|
-| 验证网页布局在较窄时是否可用 | **设备仿真** 工具 | [验证网页布局在开发人员工具中的窄](accessibility-testing-in-devtools.md#verify-that-the-webpage-layout-is-usable-when-narrow)和模拟移动设备Microsoft Edge[可用](../device-mode/index.md) |
+| 验证网页布局在缩小时是否可用 | **设备仿真** 工具 | [验证网页布局在开发人员工具中的窄](accessibility-testing-in-devtools.md#verify-that-the-webpage-layout-is-usable-when-narrow)和模拟移动设备Microsoft Edge[可用](../device-mode/index.md) |
 
 
 <!-- ====================================================================== -->

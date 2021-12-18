@@ -7,12 +7,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 06/07/2021
-ms.openlocfilehash: 12399e66b668aa31b8eaf90ac8161aa2f7803273
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.openlocfilehash: 70135f95dd36a5007b2b46bcf77fd53e17dbe84b
+ms.sourcegitcommit: b701ad89af83d25febecd2dbb2d778a320cecfd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269205"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "12278830"
 ---
 # <a name="overview-of-accessibility-testing-using-devtools"></a>使用 DevTools 的辅助功能测试概述
 
@@ -112,7 +112,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 <!-- ====================================================================== -->
 ## <a name="limits-of-automated-testing"></a>自动测试的限制
 
-问题[工具](../issues/index.md)[、辅助功能 Insights](https://accessibilityinsights.io)和[Lighthouse](https://developers.google.com/web/tools/lighthouse/)是自动生成网页的辅助功能报告的工具。  从此类工具获取自动报告只是辅助功能测试之旅的开始。
+问题[工具](../issues/index.md)、辅助功能[Insights](https://accessibilityinsights.io)和[Lighthouse](https://developers.google.com/web/tools/lighthouse/)是自动生成网页的辅助功能报告的工具。  从此类工具获取自动报告只是辅助功能测试之旅的开始。
 
 辅助功能与人员交互有关，即在不同的技术环境中使用产品时具有不同的需求的人。  此测试无法完全自动化，但需要用户对产品进行验证。  在最佳方案中，你可以访问具有不同辅助功能需求的测试人员和使用各种环境的测试人员。  但是，通过使用键盘进行导航并检查页面的不同部分，你已可以自己执行很多操作。
 
@@ -141,15 +141,14 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 :::image type="content" source="../media/a11y-testing-basics-inspector-overlay.msft.png" alt-text="检查工具的辅助功能部分包括对比度线（如果适用）。" lightbox="../media/a11y-testing-basics-inspector-overlay.msft.png":::
 
-有关详细演练步骤，请参阅使用颜色 [突出显示标识嵌套区域](test-inspect-tool.md#identify-nested-regions-using-color-highlighting)。
-<!-- = test-inspect-tool.md##identify-nested-regions-using-color-highlighting -->
+有关详细演练步骤，请参阅使用颜色 [突出显示标识嵌套区域](test-inspect-tool.md#identify-nested-regions-using-color-highlighting)。<!-- = test-inspect-tool.md##identify-nested-regions-using-color-highlighting -->  有关 Inspect 工具的主要文章是 [使用 Inspect 工具分析 HTML 页面](../css/inspect.md)。
 
 检查工具的信息覆盖的**** 上半部分显示以下信息：
 
 * 布局类型;如果元素是使用弹性框或网格定位的，则会看到相应的 (![网格布局图标](../media/grid-icon.msft.png)).
 * 元素的名称，如 、 **h1**或**div**。 ****
 * 元素的尺寸（以像素为单位）。
-* 颜色，作为颜色样本 (较小的彩色正方形) 和格式化的值 (如 `#336699`) 。
+* 颜色作为颜色样本， (较小的彩色正方形) 和格式化值 (如 `#336699`) 。
 * 字体信息 (大小和字体系列) 。
 * 边距和填充（以像素为单位）。
 
@@ -182,7 +181,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 使用 **Inspect 工具** 时，将鼠标悬停在打开 **Elements** 的呈现页面的不同部分时，你会注意到 DOM 树会自动刷新。
 
-有关详细的演练步骤，请参阅使用检查工具将鼠标悬停在网页上[以突出显示 DOM 和 CSS。](test-inspect-tool.md#use-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css)
+有关详细的演练步骤，请参阅使用检查工具将鼠标悬停在网页上[以突出显示 DOM 和 CSS。](test-inspect-tool.md#use-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css)  有关 Inspect 工具的主要文章是 [使用 Inspect 工具分析 HTML 页面](../css/inspect.md)。
 
 
 <!-- ====================================================================== -->
@@ -315,7 +314,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 <!-- ====================================================================== -->
 ## <a name="testing-contrast-of-text-colors-in-various-states"></a>测试不同状态的文本颜色的对比度
 
-检查 **工具** 一次报告一个状态辅助功能问题。  首先，我们将介绍使用 Inspect 工具仅查看页面元素的静态状态的限制。  然后，我们将介绍如何检查页面元素的其他状态，方法是单击"样式"选项卡上的"切换元素 (**\：hov **) 切换 **元素状态** "。
+检查 **工具** 一次报告一个状态辅助功能问题。  首先，我们将介绍使用 Inspect 工具仅查看页面元素的静态状态的限制。  然后，我们将介绍如何检查页面元素的其他状态，方法是单击"样式"选项卡上的 **" (切换元素状态) \：hov"。** ****
 
 ### <a name="checking-text-color-contrast-in-the-default-state"></a>检查默认状态下的文本颜色对比度
 
@@ -395,7 +394,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 :::image type="content" source="../media/a11y-testing-simulating-blur.msft.png" alt-text="模拟模糊的页面可能会发现辅助功能问题。" lightbox="../media/a11y-testing-simulating-blur.msft.png":::
 
 
-### <a name="verify-that-the-page-is-usable-with-ui-animation-turned-off-reduced-motion"></a>验证页面是否可用，并关闭 UI 动画， (运动效果) 
+### <a name="verify-that-the-page-is-usable-with-ui-animation-turned-off-reduced-motion"></a>验证页面是否可用，并关闭 UI 动画， (运动) 
 
 这些天操作系统提供的另一个设置是关闭动画的方法。  动画可以帮助产品的可用性，但它们也会导致许多问题，包括混淆和混乱。 这就是产品不应向在操作系统中关闭动画的用户显示动画的原因。  通过使用 CSS 媒体查询，您可以检查用户是否希望查看动画，并相应地将其关闭。  而且，与深色和浅色模式很类似，有一种方法可以模拟使用 [DevTools 的减少运动](./reduced-motion-simulation.md)。
 

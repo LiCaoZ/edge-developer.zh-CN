@@ -8,22 +8,22 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， 窗口控件覆盖， API
-ms.openlocfilehash: 707dacacb46943bc68146f19bd4e57e7d38ef085
-ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
+ms.openlocfilehash: 16bebfa2a7bb5e9786aac4372924f1f60851032c
+ms.sourcegitcommit: b701ad89af83d25febecd2dbb2d778a320cecfd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "12235661"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "12278823"
 ---
 # <a name="display-content-in-the-title-bar"></a>在标题栏中显示内容
 
-一PWA应用程序清单文件中使用[display](https://developer.mozilla.org/docs/Web/Manifest/display)属性，定义它在移动平台上的显示方式。  但是，若要创建类似本机的沉浸式体验， _桌面_ PBA 无法采用这种方法。
+一PWA应用程序清单文件中显示属性，定义它在移动平台上的显示方式。 [](https://developer.mozilla.org/docs/Web/Manifest/display)  但是，若要创建类似本机的沉浸式体验， _桌面_ PBA 无法采用这种方法。
 
 默认情况下，应用区域紧接在保留的标题栏区域下方开始：
 
 :::image type="content" source="../media/my-tracks-titlebar.png" alt-text="The default Windows app title bar shown on the My Tracks demo app.":::
 
-正常情况下显示标题栏的内容可以帮助 PWA 感觉更加本机。  许多桌面应用程序（如 Visual Studio Code、Microsoft Teams 和 Microsoft Edge 已执行如下操作：
+正常情况下显示标题栏的内容可以帮助 PWA 感觉更加本机。  许多桌面应用程序（如Visual Studio Code、Microsoft Teams和Microsoft Edge已执行如下操作：
 
 :::image type="content" source="../media/vscode-titlebar.png" alt-text="Visual Studio Code标题栏区域中显示内容。":::
 
@@ -46,7 +46,7 @@ ms.locfileid: "12235661"
 
     :::image type="content" source="../media/enable-window-controls-overlay-experiment.png" alt-text="启用窗口控件覆盖 API 实验。":::
 
-窗口控件覆盖 API 也作为源试用功能提供。  若要使应用的用户从窗口控件覆盖中获益，而无需在 Microsoft Edge 中启用它，可以使用源试用版。
+窗口控件覆盖 API 也作为源试用功能提供。  若要使应用的用户从窗口控件覆盖中获益，而无需在 Microsoft Edge 中启用它，可以使用原点试用版。
 
 有关源试用版详细信息，请转到Microsoft Edge[源试用版开发人员控制台。](https://developer.microsoft.com/microsoft-edge/origin-trials)
 
@@ -153,7 +153,7 @@ if ('windowControlsOverlay' in navigator) {
         // Detect if the Window Controls Overlay is visible.
         const isOverlayVisible = navigator.windowControlsOverlay.visible;
         // Get the size and position of the title bar area.
-        const titleBarRect = e.boundingRect;
+        const titleBarRect = e.titlebarAreaRect;
 
         console.log(`The overlay is ${isOverlayVisible ? 'visible' : 'hidden'}, the title bar width is ${titleBarRect.width}px`);
     }, 200));
@@ -166,7 +166,7 @@ if ('windowControlsOverlay' in navigator) {
 
 My Tracks 是PWA窗口控件覆盖功能的主要演示应用。
 
-1. 在Microsoft Edge中，[启用窗口控件覆盖](#enable-the-window-controls-overlay-in-your-app)。
+1. 在Microsoft Edge中，[启用窗口控件覆盖。](#enable-the-window-controls-overlay-in-your-app)
 
 2. 转到 ["我的跟踪"](https://captainbrosset.github.io/mytracks/) 并安装应用。
 
@@ -190,3 +190,4 @@ My Tracks 是PWA窗口控件覆盖功能的主要演示应用。
 
 *   [窗口控件覆盖视频教程](https://www.youtube.com/watch?v=NvClp35dFVI)
 *   [自定义窗口控件覆盖PWA标题栏](https://web.dev/window-controls-overlay/)
+*   [开箱而出](https://alistapart.com/article/breaking-out-of-the-box/)

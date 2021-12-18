@@ -247,6 +247,8 @@
                   href: devtools-guide-chromium/css/css-in-js.md
                 - name: 强制开发工具进入打印预览模式
                   href: devtools-guide-chromium/css/print-preview.md
+            - name: 检查
+              href: devtools-guide-chromium/css/inspect.md
             - name: 问题
               href: devtools-guide-chromium/issues/index.md
             - name: Media
