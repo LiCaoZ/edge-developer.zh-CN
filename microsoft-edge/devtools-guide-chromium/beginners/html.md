@@ -1,18 +1,18 @@
 ---
-description: HTML 和 DOM 入门
 title: 面向初学者的开发工具：HTML 和 DOM 入门
+description: 入门 HTML 和 DOM 一起显示。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/06/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发工具，面向初学者的开发工具，面向初学者的开发工具 HTML，面向初学者的开发工具 DOM，开发者工具 html 教程，开发者工具 html 教程，开发者工具文档对象模型教程
-ms.openlocfilehash: bc897f346037cfabe50b3788ecb886541cceef6d
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
-ms.translationtype: HT
+ms.date: 08/06/2021
+ms.openlocfilehash: 80e8e07815cf3a57d593dbd26dc6009f8f059472
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140450"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284628"
 ---
 <!-- Copyright Katherine Jackson
 

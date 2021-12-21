@@ -1,18 +1,18 @@
 ---
-description: 在 DevTools 中打开Microsoft Edge所有方法。
 title: 打开 Microsoft Edge DevTools
+description: 在 DevTools 中打开所有Microsoft Edge方法。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/01/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 5349e41bb2fd6dc6f959ad650905f6a361e89a50
-ms.sourcegitcommit: c1f5b8d23ade4bd4e808dcb855a2e7636eff597b
+ms.date: 07/01/2021
+ms.openlocfilehash: 0505bebab47305f4b530e06b1028a21f60b032fa
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "12191125"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286882"
 ---
 <!-- Copyright Kayce Basques
 
@@ -38,15 +38,15 @@ ms.locfileid: "12191125"
 若要打开 DevTools，请使用以下任一选项。
 
 *   使用 Microsoft Edge UI。
-    *  选择 **"设置工具开发人员工具**" () `...` 图标>****  >   **更多工具"图标**。
+    *  选择 **"设置更多工具开发人员** () ">"图标。 `...` ****  >   ****
 
 *   使用键盘。
     *   按 `F12` 或 `Control` + `Shift` + `I` (Windows Linux) 或 `Command` + `Option` + `I` (macOS) 。
 
 请参阅 [键盘快捷方式](../shortcuts/index.md)。
 
-:::image type="complex" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="从主菜单打开Microsoft Edge DevTools" lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
-   从主菜单打开Microsoft Edge DevTools
+:::image type="complex" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="从主菜单中打开 devTools Microsoft Edge开发人员工具" lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
+   从主菜单中打开 devTools Microsoft Edge开发人员工具
 :::image-end:::
 
 
@@ -55,7 +55,7 @@ ms.locfileid: "12191125"
 
 在浏览器中查看呈现的网页时，若要检查文档对象模型 [ (](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) DOM) 节点的样式或属性，请执行下列任一操作：
 *   右键单击呈现的网页中的 元素，然后选择"检查 **"。**
-*   按 `Control` + `Shift` + `C` (Windows、Linux) 或 (`Command` + `Option` + `C` macOS) 。  请参阅 [键盘快捷方式](../shortcuts/index.md)。
+*   按`Control`+`Shift`+`C`（Windows、Linux）或 `Command`+`Option`+`C` （macOS）。  请参阅 [键盘快捷方式](../shortcuts/index.md)。
 
 请参阅 [适用于初学者的 DevTools：CSS 入门](../beginners/css.md)。
 
@@ -71,7 +71,7 @@ ms.locfileid: "12191125"
 <!-- ====================================================================== -->
 ## <a name="open-the-previous-panel"></a>打开上一个面板
 
-若要跳转到之前打开的面板， `Control` + `Shift` + `I` 请按 (Windows、Linux) 或 (`Command` + `Option` + `I` macOS) 。  请参阅 [键盘快捷方式](../shortcuts/index.md)。
+若要跳转到之前打开的面板，请按 `Control` + `Shift` + `I` (Windows、Linux) 或 (`Command` + `Option` + `I` macOS) 。  请参阅 [键盘快捷方式](../shortcuts/index.md)。
 
 
 <!-- ====================================================================== -->
@@ -122,6 +122,6 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/open)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/open)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

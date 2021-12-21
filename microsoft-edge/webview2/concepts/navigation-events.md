@@ -1,19 +1,19 @@
 ---
-description: WebView2 的导航事件：NavigationStarting、SourceChanged、ContentLoading、HistoryChanged、DOMContentLoaded 和 NavigationCompleted。
 title: WebView2 的导航事件
+description: WebView2 的导航事件：NavigationStarting、SourceChanged、ContentLoading、HistoryChanged、DOMContentLoaded 和 NavigationCompleted。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/28/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: de475330a30798b434e615f199debbf1f6390972
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.date: 10/28/2021
+ms.openlocfilehash: 9e330c19f87f7750ee852cd8ef2c103d20dfc7bb
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269226"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286308"
 ---
 # <a name="navigation-events-for-webview2"></a>WebView2 的导航事件
 

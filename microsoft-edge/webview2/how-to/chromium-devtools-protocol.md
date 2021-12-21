@@ -1,19 +1,19 @@
 ---
-description: 如何使用 Microsoft Edge WebView2 Chrome DevTools 协议包在 WebView2 应用中使用 Chrome NuGet协议。
 title: 在 WebView2 中使用 Chrome DevTools 协议
+description: 如何使用 Microsoft Edge WebView2 Chrome DevTools 协议包在 WebView2 应用中使用 Chrome NuGet协议。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、edge、ICoreWebView2、ICoreWebView2Controller、Chrome DevTools 协议
-ms.openlocfilehash: b8c246dce21141de07d846ccd4aaf0ec7bc6c88c
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 05/06/2021
+ms.openlocfilehash: 10f245b50087d0805c3f299967db2ce2d72031d7
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156877"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286203"
 ---
 # <a name="use-the-chrome-devtools-protocol-in-webview2"></a>在 WebView2 中使用 Chrome DevTools 协议
 
@@ -175,11 +175,11 @@ Chrome [DevTools 协议](https://chromedevtools.github.io/devtools-protocol)提�
 
 若要提交有关 Chrome DevTools 协议的 bug，在错误数据库中Chromium [Bug 报告](https://bugs.chromium.org/p/chromium/issues/entry?components=Platform%3EDevTools%3EPlatform)。
 
-Chrome DevTools 协议由开源开发人员项目Chromium，而不是由 Microsoft Edge WebView2 团队维护。
+Chrome DevTools 协议由开放源代码Chromium维护，而不是由 Microsoft Edge WebView2 团队维护。
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [Microsoft EdgeDevTools 协议概述](../../devtools-protocol-chromium/index.md)
+*  [Microsoft Edge DevTools 协议概述](../../devtools-protocol-chromium/index.md)
 *  [WebView2 示例](https://github.com/MicrosoftEdge/WebView2Samples)

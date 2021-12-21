@@ -3,16 +3,16 @@ title: 控制台概述
 description: 控制台工具在开发人员工具Microsoft Edge简介。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 04/13/2021
-ms.openlocfilehash: 156d3c06db86a7c17bba38af6494f3192bf491fe
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.openlocfilehash: 0271302b288e160d71ed337a8e3bc0bf0b55f5fb
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12268960"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286469"
 ---
 # <a name="console-overview"></a>控制台概述
 
@@ -40,7 +40,7 @@ DevTools 的控制台工具可帮助你完成多项任务： ****
 <!-- ====================================================================== -->
 ## <a name="error-reports-and-the-console"></a>错误报告和控制台
 
-控制台 **是** 报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，"**** 问题"计数器将显示在 DevTools 中提供错误和**警告数量的**设置 图标旁边。  选择 **"问题"** 计数器以打开 **"问题** "工具并显示问题。  有关详细信息，请参阅修复控制台中 [报告的 JavaScript 错误](console-debug-javascript.md)。
+控制台 **是** 报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，"**** 问题"计数器将显示在 DevTools**设置**图标旁边，该图标提供错误和警告的数量。  选择 **"问题"** 计数器以打开 **"问题** "工具并显示问题。  有关详细信息，请参阅修复控制台中 [报告的 JavaScript 错误](console-debug-javascript.md)。
 
 DevTools 提供有关控制台中错误 **的详细信息**：
 
@@ -62,7 +62,7 @@ DevTools 提供有关控制台中错误 **的详细信息**：
 
 :::image type="content" source="../media/search-console-new-tab.msft.png" alt-text="从搜索控制台错误功能打开的新选项卡。" lightbox="../media/search-console-new-tab.msft.png":::
 
-此功能是在版本 94 Microsoft Edge引入的。
+此功能是在 94 Microsoft Edge引入的。
 
 
 <!-- ====================================================================== -->

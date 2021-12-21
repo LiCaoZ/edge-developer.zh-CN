@@ -1,22 +1,22 @@
 ---
-title: 调试 DOM 内存泄漏
+title: 使用分离的元素工具调试 DOM 内存泄漏
 description: 使用 DevTools Microsoft Edge分离的元素工具查找和修复 DOM 内存泄漏。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/30/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， 开发工具， 分离的元素， 文档对象模型， dom， 内存， 泄漏， 节点
-ms.openlocfilehash: 2ff7292af7ff78618c3fdcfcf5d2c2ae9ef0b9a5
-ms.sourcegitcommit: ccccb41b1695469774df7d3e0718184d0cea360f
+ms.date: 11/30/2021
+ms.openlocfilehash: 8d54e87f529ee22fb01e16953e3fa2abe351b647
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "12260906"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284796"
 ---
 # <a name="debug-dom-memory-leaks-with-the-detached-elements-tool"></a>使用分离的元素工具调试 DOM 内存泄漏
 
-当元素不再附加到文档对象模型 (DOM) 树，但仍由页面上运行的一些 JavaScript 引用时，应用程序中可能会发生内存泄漏。 这些元素称为 *分离元素*。 对于在已分离元素 (GC) 进行垃圾回收的浏览器，不得从 DOM 树或 JavaScript 代码引用该元素。
+当某个元素不再附加到文档对象模型 (DOM) 树，但仍由页面上运行的一些 JavaScript 引用时，应用程序中可能会发生内存泄漏。 这些元素称为 *分离元素*。 对于在已分离元素 (GC) 进行垃圾回收的浏览器，不得从 DOM 树或 JavaScript 代码引用该元素。
 
 本文介绍如何使用 Microsoft Edge DevTools 中的分离元素工具查找浏览器无法在演示应用程序中 GC 的分离元素，并确定仍在引用已分离元素的 JavaScript。 **** 通过更改 JavaScript 以释放 元素，可以减少页面上的分离元素数量。
 
@@ -26,7 +26,7 @@ ms.locfileid: "12260906"
 <!-- ====================================================================== -->
 ## <a name="open-the-detached-elements-tool"></a>打开分离的元素工具
 
-默认情况下 **，分离的元素**工具在 Microsoft Edge 97 及更高版本中可用。 通过进入 Microsoft Edge检查你的版本 `edge://version` 。 如果你的版本小于 97，请阅读打开或[](../experimental-features/index.md#turning-an-experiment-on-or-off)关闭实验，了解打开分离**元素实验**的说明。
+分离**的元素工具**默认在 Microsoft Edge 97 及更高版本中可用。 通过进入 Microsoft Edge检查你的版本 `edge://version` 。 如果你的版本小于 97，请阅读打开或[](../experimental-features/index.md#turning-an-experiment-on-or-off)关闭实验，了解打开分离**元素实验**的说明。
 
 打开分离 **的元素工具** ：
 
@@ -44,7 +44,7 @@ ms.locfileid: "12260906"
 <!-- ====================================================================== -->
 ## <a name="get-detached-elements"></a>获取分离的元素
 
-"**获取**分离元素 ("获取分离的元素"图标。"分离的元素"工具中的") "按钮在网页上查找并显示所有分离 ![ ](images/get-detached-elements-icon-light-mode.png) 的元素。 ****
+"**获取**分离元素 ("获取分离元素"图标。"分离元素"工具中的") "按钮在网页上查找并显示所有分离 ![ ](images/get-detached-elements-icon-light-mode.png) 的元素。 ****
 
 若要查找分离的元素：
 
@@ -70,7 +70,7 @@ ms.locfileid: "12260906"
 
 接下来，在浏览器中 (GC) 垃圾回收：
 
-1. 在"**分离的元素"** 工具中，单击****"收集 (垃圾回收"图标。) ![ ](images/collect-garbage-icon-light-mode.png) 图标。
+1. 在"**分离的元素"** 工具中，单击****"收集垃圾 ("收集垃圾"图标。) ![ ](images/collect-garbage-icon-light-mode.png) 图标。
 
 1. 单击" **获取分离的元素** ![ ("分离的元素"图标。) ](images/get-detached-elements-icon-light-mode.png) 图标。
 
@@ -98,7 +98,7 @@ ms.locfileid: "12260906"
 
 1. 在底部**面板**的内存工具中，选择链接 **"room.js：13"。**
 
-   " **源** "工具在顶部面板中打开到文件的第 13 ** 行 **room.js。
+   "**源**"工具在顶部面板中打开到文件的第 13**行room.js。 **
 
 1. 在room.js函数中，演示应用程序的 JavaScript 代码会将会议室中的每条消息 `hide()` 添加到**** `unmounted` 数组中。 `unmounted`数组是引用已分离元素的对象。
 
@@ -114,7 +114,7 @@ ms.locfileid: "12260906"
 
 若要标识导致保留整个树的已分离树中的原因节点：
 
-1.  单击" **分离** 元素 ("分离元素"图标。单击) "图标以破坏分离树内的 ![ ](images/detach-elements-icon-light-mode.png) 父子链接。
+1.  单击" **分离** ("元素"图标。单击) "图标以破坏分离树内的父 ![ ](images/detach-elements-icon-light-mode.png) 子链接。
 
     :::image type="content" source="./images/detached-elements-remove-links.msft.png" alt-text="分离的元素工具中的分离元素按钮。" lightbox="./images/detached-elements-remove-links.msft.png":::
 
@@ -148,6 +148,6 @@ ms.locfileid: "12260906"
 
 同样，当用户滚动过去时，社交媒体中的源可能会分离元素，当用户向后滚动时，再将它们重新附加到 DOM。 分离的元素并不总是指示内存泄漏，内存泄漏并不总是由分离的元素导致。
 
-对于长时间运行的应用，仅泄露几千字节的小内存可能会随着时间的推移显著降低性能。 使用此 React 框架的 Web 开发人员知道React维护 DOM 的虚拟化副本。 无法正确卸载组件可能会导致应用程序泄露虚拟 DOM 的较大部分。
+对于长时间运行的应用，仅泄露几千字节的小内存可能会随着时间的推移显著降低性能。 使用虚拟框架React知道React维护 DOM 的虚拟化副本。 无法正确卸载组件可能会导致应用程序泄露虚拟 DOM 的较大部分。
 
-此演示应用及其泄漏是人为的。 在生产网站或应用上测试分离的元素工具。 如果发现分离元素工具的潜在问题，请与 Microsoft Edge [DevTools](../contact.md)团队联系，以发送有关分离元素工具和内存泄漏**** 调试的反馈。
+此演示应用及其泄漏是人为的。 在生产网站或应用上测试分离的元素工具。 如果发现分离元素工具的潜在问题，请联系 Microsoft Edge [DevTools](../contact.md)团队，以发送有关分离元素工具和内存泄漏**** 调试的反馈。

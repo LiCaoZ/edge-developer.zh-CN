@@ -1,18 +1,18 @@
 ---
+title: 我们需要的 Web 计划
 description: 跨浏览器计划侧重于识别 Web 平台中缺少的特性和功能，以作为 Web 标准或浏览器功能进行潜在开发。
-title: “我们想要的网络”概述
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge， Web development， html， css， developer， web we want
-ms.openlocfilehash: 86c73331d46d454fc2e1ae616f8d995324bf5a5a
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 03/15/2021
+ms.openlocfilehash: 353c3a5c64df74da79db4d972b67085cc74183c7
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155890"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286490"
 ---
 # <a name="the-web-we-want-initiative"></a>我们需要的 Web 计划
 

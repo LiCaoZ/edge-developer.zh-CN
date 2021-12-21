@@ -1,18 +1,18 @@
 ---
-description: 使用 Microsoft Edge DevTools 内存面板识别内存占用大的函数。
 title: 加速 JavaScript 运行时
+description: 使用 DevTools 的内存面板识别高成本、低效率Microsoft Edge函数。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: aad5a1088101814c3d70627e3df2b219e8b3f644
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 05/04/2021
+ms.openlocfilehash: a578f82982b1af0b93e5be148b2acbd4ce2ba787
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155988"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286343"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -44,7 +44,7 @@ ms.locfileid: "12155988"
 <!-- ====================================================================== -->
 ## <a name="record-a-sampling-profile"></a>记录采样配置文件
 
-如果在 JavaScript 中发现垃圾，请收集采样配置文件。  采样配置文件会显示页面中函数花费的运行时间。
+如果你注意到 jank (JavaScript 中呈现) 中断，请收集一个采样配置文件。  采样配置文件会显示页面中函数花费的运行时间。
 
 1.  导航到 DevTools 的**内存**工具。
 1.  选择“**分配采样**”按钮。
@@ -65,7 +65,7 @@ ms.locfileid: "12155988"
 
 ### <a name="change-sort-order"></a>更改排序顺序
 
-若要更改排序顺序，请选择焦点选定函数旁边的下拉菜单 (焦点选定) **** 图标，然后选择以下 ![ ](../media/focus-icon.msft.png) 选项之一。
+若要更改排序顺序，请选择焦点选定函数旁边的下拉菜单 (焦点选定函数****) 图标，然后选择以下 ![ ](../media/focus-icon.msft.png) 选项之一。
 
 **图表**。  显示记录的时序图。
 
@@ -87,7 +87,7 @@ ms.locfileid: "12155988"
 
 ### <a name="exclude-functions"></a>排除函数
 
-若要从采样配置文件中排除函数，请选择该函数，然后选择排除所选**** 函数 (![ 排除所选) ](../media/exclude-icon.msft.png) 按钮。  请求函数 (被) 的父 (子) 会向分配给已排除函数的 (子) 。
+若要从采样配置文件中排除函数，请选择该函数，然后选择"排除**** 所选函数 ![ ("按钮) ](../media/exclude-icon.msft.png) 函数。  请求函数 (被) 的父 (子) 由分配给已排除函数的 (分配的内存) 。
 
 Choose the **restore all functions (** restore all functions) button to restore all ![ ](../media/restore-icon.msft.png) excluded functions back into the recording.
 
@@ -150,6 +150,6 @@ Choose the **restore all functions (** restore all functions) button to restore 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution)作者为 (Technical Writer、Chrome DevTools \& Lighthouse) 和[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution)由[由 (](https://developers.google.com/web/resources/contributors#kayce-basques) Technical Writer、Chrome DevTools \& Lighthouse) 和[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

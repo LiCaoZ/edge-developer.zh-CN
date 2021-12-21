@@ -1,18 +1,18 @@
 ---
+title: 调试后台服务
 description: 如何使用 Microsoft Edge DevTools 调试后台提取、后台同步、通知和推送通知。
-title: 使用 Microsoft Edge DevTools 调试后台服务
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 27a46999a0f0e6b8808547c1a39eefd642245056
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 05/04/2021
+ms.openlocfilehash: a97e518b33288b67ffdba9a881241c8545654b1d
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170615"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285384"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +27,7 @@ ms.locfileid: "12170615"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="debug-background-services-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 调试后台服务
+# <a name="debug-background-services"></a>调试后台服务
 
 Microsoft Edge DevTools 的**后台服务**部分是 JavaScript API 的一个工具集合，使你的网站能够在用户未打开网站时发送和接收更新。
 后台服务在功能上类似于后台 [进程](https://en.wikipedia.org/wiki/Background_process)。
@@ -161,5 +161,5 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services) ，由技术编写者 [、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse (创作) 。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

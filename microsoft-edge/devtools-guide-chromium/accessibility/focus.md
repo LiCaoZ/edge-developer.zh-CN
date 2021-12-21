@@ -1,18 +1,18 @@
 ---
-description: 打开控制台，创建一个动态表达式，然后将表达式设置为document.activeElement。
 title: 跟踪哪些元素有焦点
+description: 打开控制台，创建一个动态表达式，然后将表达式设置为document.activeElement。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: d1609dce41383aaac5069a26fb0bb3ff579cf5a9
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.date: 06/07/2021
+ms.openlocfilehash: 579778027e633c4ee56128a71d3d65a358ecf8b8
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139841"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286175"
 ---
 <!-- Copyright Kayce Basques
 
@@ -34,7 +34,7 @@ ms.locfileid: "12139841"
 若要跟踪 DevTools 中聚焦的元素：
 
 1.  打开“**控制台**”。
-1.  选择 **"创建实时表达式 (** ![ 创建实时表达式 ](../media/create-live-expression-icon.msft.png)) 。
+1.  Choose **Create live expression (** Create live expression ![ ](../media/create-live-expression-icon.msft.png)) .
 
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="创建动态表达式" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        创建动态表达式
@@ -48,7 +48,7 @@ ms.locfileid: "12139841"
 由于该表达式始终代表着焦点的元素，因此现在可以始终跟踪哪个元素具有焦点。
 
 *   将鼠标悬停在结果上，以在视区中突出显示焦点元素。
-*   将鼠标悬停在结果上，右键单击 (上下文菜单，) "元素"面板中的"展示"**** 以在"元素"工具上的 DOM 树中**显示元素。**
+*   将鼠标悬停在结果上，右键单击" (") "，然后选择"元素"面板中的"**** 展示"，在"元素"工具上的"DOM 树"中**显示元素。**
 *   将鼠标悬停在结果上，右键 (单击") "，然后选择"存储"作为全局变量，**** 以创建对可以在控制台中使用的节点的变量**引用**。
 
 

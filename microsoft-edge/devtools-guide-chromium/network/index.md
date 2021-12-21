@@ -1,18 +1,18 @@
 ---
+title: 检查网络活动
 description: 有关 Microsoft Edge DevTools 中最受欢迎的网络相关功能的教程。
-title: 检查 Microsoft Edge DevTools 中的网络活动
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 1ab7482a98b96d7cb572397edf7991701ca43b57
-ms.sourcegitcommit: 638194d122f1c0f78d868cf2ef95d421869899a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 05/04/2021
+ms.openlocfilehash: 6c7befffc9746adb73b2a4633bb4d2b835389b4e
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "12278031"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285426"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,11 +27,11 @@ ms.locfileid: "12278031"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="inspect-network-activity-in-microsoft-edge-devtools"></a>检查 Microsoft Edge DevTools 中的网络活动
+# <a name="inspect-network-activity"></a>检查网络活动
 
 这是一个动手教程，介绍了一些最常用的 DevTools 功能，这些功能与检查页面的网络活动相关。
 
-如果要浏览功能，请导航到"网络[参考"。](./reference.md)
+如果要浏览功能，请参阅网络 [功能参考](./reference.md)。
 
 <!--TODO: This entire section needs a Microsoft Edge DevTools re-write  -->
 
@@ -50,7 +50,7 @@ ms.locfileid: "12278031"
 *   确保资源上载或下载实际正在进行。
 *   检查单个资源的属性，如 HTTP 标头、内容、大小等。
 
-如果正在寻找提高页面加载性能的方法，**不要** 开始于 **网络**工具。  有许多类型的负载性能问题与网络活动不相关。  从“审核”面板开始，因为它为你提供了有关改进页面的目标建议。  导航到 [优化网站速度](../speed/get-started.md)。
+如果正在寻找提高页面加载性能的方法，**不要** 开始于 **网络**工具。  有许多类型的负载性能问题与网络活动不相关。  从“审核”面板开始，因为它为你提供了有关改进页面的目标建议。  请参阅 [优化网站速度](../speed/get-started.md)。
 
 
 <!-- ====================================================================== -->
@@ -192,7 +192,7 @@ ms.locfileid: "12278031"
        第一张屏幕截图期间发生的网络活动
     :::image-end:::
 
-1.  再次 ![ (" ](../media/settings-icon.msft.png) 网络) "，然后关闭" **捕获** 屏幕截图"复选框以关闭"屏幕截图"窗格。
+1.  再次 ![ ("网络设置) 并关闭"捕获屏幕截图" ](../media/settings-icon.msft.png) 复选框以关闭****"屏幕截图"窗格。
 1.  再次刷新页面。
 
 
@@ -222,7 +222,7 @@ ms.locfileid: "12278031"
     :::image-end:::
 
     > [!TIP]
-    > 缩小文件时，选择"响应 (底部的"**** 设置) 格式"按钮，以重新设置文件内容的格式，提高 ![ ](../media/format-icon.msft.png) 可读性。 ****
+    > 缩小文件时，选择"响应" (底部的****"设置) 格式"按钮，以重新设置文件内容的格式，提高 ![ ](../media/format-icon.msft.png) 可读性****。
 
 1.  选择 **"计时"** 面板。  将显示资源的网络活动的细分。
 
@@ -230,7 +230,7 @@ ms.locfileid: "12278031"
        “**计时**”面板
     :::image-end:::
 
-1.  选择 **"** 关闭 (![ 关闭 ](../media/close-icon.msft.png)) "以再次查看网络日志。
+1.  选择 **"** 关闭 (![ 关闭 ](../media/close-icon.msft.png)) 再次查看网络日志。
 
     :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="关闭按钮" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
        “**关闭**”按钮
@@ -322,7 +322,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
        只显示 CSS 文件
     :::image-end:::
 
-1.  若要同时显示脚本，请选择并按住 `Control` (Windows、Linux) 或 `Command` (macOS) ，然后选择**JS**。
+1.  若要同时显示脚本，请选择并保留 `Control` (Windows、Linux) `Command` 或 (macOS) ，然后选择**JS**。
 
     :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="只显示 CSS 和 JS 文件" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
        只显示 CSS 和 JS 文件
@@ -338,14 +338,14 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 
 当某些页面资源不可用时，页面的外观和行为如何？  它是完全失败，还是仍有点功能？  阻止查找请求：
 
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令**菜单**。
 1.  键入 `block` ，选择 **显示请求阻止**，然后选择 `Enter` 。
 
     :::image type="complex" source="../media/network-glitch-network-cli-block.msft.png" alt-text="显示请求阻止" lightbox="../media/network-glitch-network-cli-block.msft.png":::
        **显示请求阻止**
     :::image-end:::
 
-1.  选择 **添加模式** (![ 添加 ](../media/add-icon.msft.png) 模式) 。
+1.  选择 **添加模式** (![ 添加模式 ](../media/add-icon.msft.png)) 。
 1.  键入 `main.css`。
 
     :::image type="complex" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="阻止 main.css" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
@@ -368,14 +368,14 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 <!-- ====================================================================== -->
 ## <a name="conclusion"></a>总结
 
-恭喜，你已完成本教程。  现在，你已了解如何使用Microsoft Edge DevTools 中的**网络**工具！
+恭喜！你已完成教程！  现在，你已了解如何在 DevTools **Microsoft Edge网络**工具。
 
-导航到“[网络参考](./reference.md)”以发现与检查网络活动相关的更多 DevTools 功能。
+若要发现与检查网络活动相关的更多 DevTools 功能，请参阅 [网络功能参考](./reference.md)。
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/network/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/network/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

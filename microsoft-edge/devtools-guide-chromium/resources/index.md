@@ -1,18 +1,18 @@
 ---
-description: 按帧、域、类型或其他条件组织资源。
 title: 查看页面资源
+description: 按帧、域、类型或其他条件组织资源。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 13e94c971e12c1e54e8857374a11e2a15839bd6b
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.date: 05/04/2021
+ms.openlocfilehash: bbd076487ef6bed7dd69b76afe8bb98e3a800226
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170265"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285055"
 ---
 <!-- Copyright Kayce Basques
 
@@ -95,7 +95,7 @@ ms.locfileid: "12170265"
 
 1.  选择 **"源**"工具，然后在左上角的****"导航器"窗格中，选择"**页面"** 选项卡。
 
-1.  单击"**页面**" (...) "按钮的"更多选项"，然后选择"按**文件夹分组"。** ****
+1.  单击"**页面** (") "按钮的"更多选项"，然后选择"按**文件夹分组"。** ****
 
     :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="&quot;源&quot;工具的&quot;导航器&quot;窗格中的&quot;页面&quot;选项卡" lightbox="../media/resources-sources-page-empty.msft.png":::
        " **源** "工具的"导航 **器"** 窗格中的" **页面"** 选项卡
@@ -179,6 +179,6 @@ ms.locfileid: "12170265"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/resources/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/resources/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -3,16 +3,16 @@ title: 查看和更改 CSS 入门
 description: 了解如何使用 Microsoft Edge Tools 查看和更改页面的 CSS。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: 6ecf87a2e4c2f14e6b9b2db08540a859f3e502b4
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.openlocfilehash: 0a471a75ebb6d1f57806e7a2bc6d08bf39b355b9
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269297"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285125"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,7 +29,7 @@ ms.locfileid: "12269297"
    limitations under the License.  -->
 # <a name="get-started-with-viewing-and-changing-css"></a>查看和更改 CSS 入门
 
-完成这些交互式教程，了解使用 DevTools 查看和更改页面 CSS Microsoft Edge基础知识。
+完成这些交互式教程，了解使用 DevTools 查看和更改页面的 CSS Microsoft Edge基础知识。
 
 
 <!-- ====================================================================== -->
@@ -40,7 +40,7 @@ ms.locfileid: "12269297"
     [CSS 示例](https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html)
 
     > [!NOTE]
-    > 如果要将[DevTools](/microsoft-edge/devtools-guide-chromium/customize/placement)窗口停靠在视口窗口的右侧 (下图) ，请单击"自定义**和控制 DevTools"。** `...`  在"**自定义和控制 DevTools"** 下拉菜单上的"扩展**坞侧**"部分中，选择"扩展坞 **"以向右。**
+    > 如果你想要将[DevTools](/microsoft-edge/devtools-guide-chromium/customize/placement)窗口停靠在视口窗口的右侧 (下图) ，请单击"自定义和控制**DevTools"。** `...`  在"**自定义和控制 DevTools"** 下拉菜单上的"扩展**坞侧**"部分中，选择"扩展坞 **"以向右。**
 
 
 <!-- ====================================================================== -->
@@ -180,7 +180,7 @@ ms.locfileid: "12269297"
 
 如果要调试或测试在 CSS 中定义的媒体查询，请使用以下步骤。
 
-1.  打开开发人员工具，选择左上方**** 第二个"切换设备"工具栏图标，或选择 macOS (上的 `Ctrl` + `Shift` + `M` `Cmd` + `Shift` + `M`) 。
+1.  打开开发人员工具，然后选择第二**** 个位于左上方的"切换设备"工具栏图标， `Ctrl` + `Shift` + `M` 或选择 `Cmd` + `Shift` + `M` " (macOS) "。
 
     打开设备工具栏：
 
@@ -202,6 +202,6 @@ ms.locfileid: "12269297"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/css/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/css/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

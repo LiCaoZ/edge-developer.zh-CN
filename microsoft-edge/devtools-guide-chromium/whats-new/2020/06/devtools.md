@@ -1,18 +1,18 @@
 ---
-description: CSS 网格调试功能、使用网络控制台编辑和重播请求等。
 title: 'DevTools (Microsoft Edge 85) '
+description: CSS 网格调试功能、使用网络控制台编辑和重播请求等。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 958273ae95973b847b167b03067ed892babc427f
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.date: 05/04/2021
+ms.openlocfilehash: 4e7af7daa675f31e5cb67a8c170d6a028ba6ebed
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12268974"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284117"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -33,7 +33,7 @@ ms.locfileid: "12268974"
 <!-- ====================================================================== -->
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告
 
-以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要随时了解开发人员工具中所有最新且最最好的功能，请下载[Microsoft Edge 预览](https://www.microsoftedgeinsider.com/download/)频道，并按照 Twitter 上的[Microsoft Edge DevTools 团队。](https://twitter.com/EdgeDevTools)
+以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要随时了解开发人员工具中所有最新且最的功能，请下载[Microsoft Edge 预览](https://www.microsoftedgeinsider.com/download/)频道，并按照 Twitter 上的[Microsoft Edge DevTools 团队进行跟踪](https://twitter.com/EdgeDevTools)。
 
 ### <a name="css-grid-debugging-features"></a>CSS 网格调试功能
 
@@ -41,7 +41,7 @@ ms.locfileid: "12268974"
    试验功能
 :::image-end:::
 
-开发人员Microsoft Edge团队正在与 Chrome DevTools 团队和 Chromium 社区协作，将新的 CSS 网格调试功能添加到 DevTools。  现在，你可以将网格线号、网格间隔和扩展网格线显示为页面上覆盖。  此外，即将推出对网格工具的更多改进。
+开发人员Microsoft Edge团队与 Chrome DevTools 团队和 Chromium 社区协作，将新的 CSS 网格调试功能添加到 DevTools。  现在，你可以将网格线号、网格间隔和扩展网格线显示为页面上覆盖。  此外，即将推出对网格工具的更多改进。
 
 :::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS 网格调试功能" lightbox="../../media/2020/06/experiments-grid.msft.png":::
    CSS 网格调试功能
@@ -80,7 +80,7 @@ Chromium问题[#1047356](https://crbug.com/1047356)
 > [!NOTE]
 > 若要启用实验，请导航到打开或关闭 [实验](../../../experimental-features/index.md#turning-an-experiment-on-or-off) ，然后选择启用网络控制台旁边的 **复选框**。
 >
-> 打开网络[日志](../../../network/index.md#log-network-activity)，打开上下文菜单 (右键单击") "，然后选择"编辑和**重播"。**
+> 打开"[网络日志"，](../../../network/index.md#log-network-activity)打开上下文菜单 (右键单击") "，然后选择"编辑和**重播"。**
 
 Chromium问题[#1093687](https://crbug.com/1093687)
 
@@ -125,7 +125,7 @@ Chromium问题[#1070378](https://crbug.com/1070378)
    试验功能
 :::image-end:::
 
-通常，仅在 DevTools**** 的顶部 (打开元素和网络) 等工具。 ****  同样，工具（如**3D** **** 视图和问题）可能只能在 DevTools (底部的) 中打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。
+通常，仅在 DevTools**** 的顶部 (打开元素) 网络等工具。 ****  同样 **，3D 视图**和问题等**** 工具可能只能在 DevTools (底部的) 箱中打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。
 
 :::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="在面板之间移动工具" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
    在面板之间移动工具
@@ -138,16 +138,16 @@ Chromium问题[#897944](https://crbug.com/897944)
 
 ### <a name="improved-initiator-tooltip-in-the-network-panel"></a>网络面板中改进的发起人工具提示
 
-在 Microsoft Edge 83 和 84 中，"发起者"列的工具提示显示在使用水平滚动条显示的"网络日志[](../../../network/index.md#log-network-activity)"中，显示资源请求的原因。  你仅能够在工具提示中水平滚动来显示发起请求的调用堆栈。
+在 Microsoft Edge 83 和 84 中，"发起者"列的工具提示（显示资源请求的原因）显示在具有水平滚动[](../../../network/index.md#log-network-activity)条的网络日志中。  你仅能够在工具提示中水平滚动来显示发起请求的调用堆栈。
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Microsoft Edge 84 中的发起Microsoft Edge提示" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
-   Microsoft Edge 84 中的发起Microsoft Edge提示
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="84 中的发起Microsoft Edge提示" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
+   84 中的发起Microsoft Edge提示
 :::image-end:::
 
 从 Microsoft Edge 85 开始，现在可以在工具提示中显示 Initiator 调用堆栈，而无需水平滚动。
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Microsoft Edge 85 中的发起Microsoft Edge提示" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
-   Microsoft Edge 85 中的发起Microsoft Edge提示
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="85 中的发起Microsoft Edge提示" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
+   85 中的发起Microsoft Edge提示
 :::image-end:::
 
 Chromium问题[#1069404](https://crbug.com/1069404)
@@ -203,7 +203,7 @@ DevTools 现在更好地支持一些最新的 JavaScript 语言功能：
 
 *  Nullish 并 [集运算符 的语法突出显示](https://v8.dev/features/nullish-coalescing)。  DevTools 现在可以在"源"面板中正确打印空的"并 **排"运算符** 。
 
-Chromium问题[#1073903](https://crbug.com/1073903)， [#1083214](https://crbug.com/1083214)， [#1083797](https://crbug.com/1083797)
+Chromium问题[#1073903](https://crbug.com/1073903)、 [#1083214](https://crbug.com/1083214)、 [#1083797](https://crbug.com/1083797)
 
 ### <a name="new-app-shortcut-warnings-in-the-manifest-pane"></a>清单窗格中的新应用快捷方式警告
 
@@ -214,7 +214,7 @@ Chromium问题[#1073903](https://crbug.com/1073903)， [#1083214](https://crbug.
 " **清单** "窗格现在显示针对以下条件的警告。
 
 * 应用快捷方式图标小于 96x96 像素
-* 应用快捷方式图标和清单图标不是 (，因为图标在应用中) 
+* 应用快捷方式图标和清单图标不是 (，因为会忽略这些) 
 
 :::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="应用快捷方式警告" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
    应用快捷方式警告
@@ -244,7 +244,7 @@ Chromium问题[#1071432](https://crbug.com/1071432)
 当在"源"面板编辑器中执行复制[](../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files)或剪切操作时，DevTools 将复制或剪切当前内容行。
 
 :::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="当光标位于第 5 行的末尾时，从 DevTools pen.js复制整行并粘贴到Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
-   当光标位于第 5 行的末尾时，从 DevTools 中的pen.js复制整个行，并粘贴到 Visual Studio Code [。](https://code.visualstudio.com/) ****
+   当光标位于第 5 行的末尾时，从 DevToolspen.js复制整行，并粘贴到 Visual Studio Code [。](https://code.visualstudio.com/) ****
 :::image-end:::
 
 Chromium问题[#800028](https://crbug.com/800028)
@@ -301,7 +301,7 @@ Chromium问题[#974550](https://crbug.com/974550)
 
 ### <a name="new-icons-for-breakpoints-conditional-breakpoints-and-logpoints"></a>断点、条件断点和登录点的新图标
 
-" **源** "面板具有针对断点、条件断点和日志的新设计。  断点用红色圆圈表示，就像[Visual Studio Code和](https://code.visualstudio.com/)Visual Studio。 [](https://visualstudio.microsoft.com/)  添加图标以区分条件断点和日志点。
+" **源** "面板具有针对断点、条件断点和日志的新设计。  断点用红色圆圈表示，就像[](https://visualstudio.microsoft.com/)Visual Studio Code Visual Studio。 [](https://code.visualstudio.com/)  添加图标以区分条件断点和日志点。
 
 :::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="断点" lightbox="../../media/2020/06/breakpoints.msft.png":::
    断点

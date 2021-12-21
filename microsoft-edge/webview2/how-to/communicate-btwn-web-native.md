@@ -1,19 +1,19 @@
 ---
-description: 使用 WebView2 将 Web 内容嵌入本机应用程序中
 title: 将 Web 内容嵌入本机应用程序中
+description: 使用 WebView2 将 Web 内容嵌入本机应用程序中。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview、WebView2 消息、WebView2 JavaScript、WebView2 本机对象
-ms.openlocfilehash: 82844f3b789b239427d5e4c614b2b5b6b44fdd11
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.date: 10/15/2021
+ms.openlocfilehash: 20751e085f6db2f9a69c76f70fbd9867a82bb6ac
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12108675"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286973"
 ---
 # <a name="embed-web-content-into-native-applications"></a>将 Web 内容嵌入本机应用程序中
 
@@ -74,7 +74,7 @@ To see messaging in action， run the sample app， then select the **Scenario**
     ```
 
     > [!NOTE]
-    > 本教程的其余部分使用 `ScenarioWebMessage.html` WebView2 示例中的文件。  在您工作时比较您自己的 HTML 文件，或复制并粘贴来自 [ScenarioWebMessage.html](https://github.com/MicrosoftEdge/WebView2Samples/blob/a12bfcc2bc8a1155529c35c7bd4645036f492ca0/SampleApps/WebView2APISample/assets/ScenarioWebMessage.html)的内容。
+    > 本教程的其余部分使用 `ScenarioWebMessage.html` WebView2 示例中的文件。  在您工作时比较您自己的 HTML 文件，或复制并粘贴来自ScenarioWebMessage.html[ 的内容 ](https://github.com/MicrosoftEdge/WebView2Samples/blob/a12bfcc2bc8a1155529c35c7bd4645036f492ca0/SampleApps/WebView2APISample/assets/ScenarioWebMessage.html)。
 
     此示例使用 Web 上的 JavaScript 事件侦听器。
 
@@ -119,7 +119,7 @@ To see messaging in action， run the sample app， then select the **Scenario**
         return true;
     ```
 
-这完成显示 WebView2 如何通过简单消息进行通信的示例。
+这完成了显示 WebView2 如何通过简单消息进行通信的示例。
 
 ### <a name="receive-message-strings-via-postmessage"></a>通过 postMessage 接收邮件字符串
 
@@ -251,7 +251,7 @@ C++ 文件处理标题文本，并作为字符串将文本传达给主机应用�
     }).Get(), &m_webMessageReceivedToken));
     ```
 
-1. 主机应用使用生成的资源脚本Microsoft Visual C++ `Inject Script` [WebView2APISample.rc](https://github.com/MicrosoftEdge/WebView2Samples/blob/c7d7c75184dec0c46634f27a8f4beba320b04618/SampleApps/WebView2APISample/WebView2APISample.rc)中的菜单项将窗口边界发送回网页。
+1. 主机应用使用生成的资源脚本 `Inject Script` Microsoft Visual C++ [WebView2APISample.rc](https://github.com/MicrosoftEdge/WebView2Samples/blob/c7d7c75184dec0c46634f27a8f4beba320b04618/SampleApps/WebView2APISample/WebView2APISample.rc)中的菜单项将窗口边界发送回网页。
 
     ```xml
         MENUITEM "Inject Script",               IDM_INJECT_SCRIPT

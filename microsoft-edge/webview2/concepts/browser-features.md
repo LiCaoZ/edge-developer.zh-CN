@@ -1,14 +1,30 @@
 ---
-description: Microsoft Edge和 WebView2 之间的功能差异
-title: Microsoft Edge和 WebView2 之间的功能差异
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 09/21/2021
-ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
-keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
-no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]
+title： feature differences between Microsoft Edge and WebView2 description： Feature differences between Microsoft Edge and WebView2.
+author： MSEdgeTeam ms.author： msedgedevrel ms.topic： conceptual ms.prod： microsoft-edge ms.technology： webview keywords： IWebView2， IWebView2WebView， WebView2， webview， wpf apps， wpf， edge， ICoreWebView2， ICoreWebView2， browser control， edge html no-loc：
+- "Autofill for Addresses"
+- "Autofill for Passwords"
+- "Autofill for Payments""
+- "Browser Extensions""
+- "Browser Task Manager"
+- "Collections"
+- "Continue-where-I-left-off prompt"
+- "Downloads"
+- "Edge Shopping"
+- "Family Safety"
+- "Favorites"
+- "Hotkeys"
+- "IE Mode"
+- "Immersive Reader"
+- "Intrusive Ads"
+- "Read Aloud"
+- "Smart Screen"
+- "Translate"
+- "Tracking Prevention"
+- "Profile and Identity"
+- "Web Payment API"
+- "Windows Defender Application Guard"
+- " edge:// URLs " ms.date： 09/21/2021
+
 ---
 # <a name="feature-differences-between-microsoft-edge-and-webview2"></a>Microsoft Edge和 WebView2 之间的功能差异
 
@@ -63,7 +79,7 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 | Tracking Prevention | 开`*` | 否 | `*` 此功能的 UI 已删除，但基础功能仍然可用。  跟踪防护始终设置为平衡。 |
 | Profile and Identity | 关闭 | 否 | 同步收藏夹、Cookie 等的功能已关闭。 |
 | Windows Defender Application Guard | 关闭 | 否 | 此功能已关闭。 |
-| edge:// URLs | 查看详细信息 | 否 | 设置浏览器Microsoft Edge URL `edge://` 上。  由于这些网页中的大多数Microsoft Edge WebView2 的上下文中具有品牌或没有意义，因此其中一些 URL 已关闭。  有关详细信息，请参阅[阻止的内部 URL。](#blocked-internal-urls) |
+| edge:// URLs | 查看详细信息 | 否 | 设置浏览器Microsoft Edge URL `edge://` 上。  由于这些网页中的大多数Microsoft Edge WebView2 上下文中具有品牌或没有意义，因此其中一些 URL 已关闭。  有关详细信息，请参阅[阻止的内部 URL。](#blocked-internal-urls) |
 
 
 <!-- ====================================================================== -->

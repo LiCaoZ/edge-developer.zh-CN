@@ -3,16 +3,16 @@ title: 替代用户代理字符串
 description: 打开"网络条件"工具，禁用"自动选择"，然后从列表中选择或输入自定义字符串。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 07/19/2021
-ms.openlocfilehash: c5bf0adcacac98ac152e33da7c7e8ffa7e9a773d
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.openlocfilehash: 79ecf034b1cc97ef00ce3674b2cce4fef106ffb2
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12268940"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285069"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,7 +29,7 @@ ms.locfileid: "12268940"
    limitations under the License.  -->
 # <a name="override-the-user-agent-string"></a>替代用户代理字符串
 
-若要覆盖[DevTools 中的](https://developer.mozilla.org/docs/Glossary/User_agent)用户Microsoft Edge字符串：
+若要替代[DevTools 中的](https://developer.mozilla.org/docs/Glossary/User_agent)用户Microsoft Edge字符串：
 
 1. 按 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
 
@@ -49,6 +49,6 @@ ms.locfileid: "12268940"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/device-mode/override-user-agent)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/device-mode/override-user-agent)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

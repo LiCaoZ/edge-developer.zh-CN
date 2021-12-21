@@ -1,18 +1,18 @@
 ---
-description: 了解如何将扩展从清单 V2 更新到 V3
 title: 准备将扩展从清单 V2 更新到 V3
+description: 将扩展从清单 V2 更新到 V3。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/24/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， 扩展开发， 边缘扩展， 浏览器扩展， 加载项， 开发人员， 清单 v3， 迁移到清单 v3
-ms.openlocfilehash: a04181d5f5ec6fc5ee5a790b0ec7348701c7769a
-ms.sourcegitcommit: 77b290f3c59c0224a19bcf98533024aadf04e13f
+ms.date: 11/24/2021
+ms.openlocfilehash: 46ecda8ce6eb94375b0c4546d7269de8a2020d21
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "12209935"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284063"
 ---
 # <a name="prepare-to-update-your-extensions-from-manifest-v2-to-v3"></a>准备将扩展从清单 V2 更新到 V3
 
@@ -30,7 +30,7 @@ ms.locfileid: "12209935"
 <!-- ====================================================================== -->
 ## <a name="run-time-host-permissions"></a>运行时主机权限
 
-在安装时，扩展可能会请求访问所有网站和内容所需的全面权限。  这些权限允许扩展在最小干预下运行，因此存在用户隐私和安全性风险。  为了提高透明度，Microsoft Edge团队提供了一些控件，使用户能够在运行时允许或限制对网站的访问。
+在安装时，扩展可能会请求访问所有网站和内容所需的全面权限。  这些权限允许扩展在最小干预下运行，因此存在用户隐私和安全性风险。  为了提高透明度，Microsoft Edge扩展团队提供了一些控件，使用户能够在运行时允许或限制对网站的访问。
 
 
 <!-- ====================================================================== -->
@@ -62,4 +62,4 @@ Microsoft Edge扩展团队将 Web 请求[API](https://developer.chrome.com/docs/
 
 当前声明性 Net 请求 API 实现在 Microsoft Edge Stable 和 Beta 渠道中可用。  请测试更改并提供反馈。
 
-Microsoft Edge扩展团队将在我们的博客中发布更新。  可以通过 Microsoft Tech Community 提供有关更改的反馈;请参阅清单[V3 更改现在Microsoft Edge。](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254)
+Microsoft Edge扩展团队将在我们的博客中发布更新。  可以通过 Microsoft Tech Community 提供有关更改的反馈;请参阅清单[V3](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254)更改现在Microsoft Edge。

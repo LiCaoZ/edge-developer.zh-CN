@@ -1,18 +1,18 @@
 ---
+title: 查看缓存数据
 description: 如何从 Microsoft Edge DevTools 的应用程序面板查看缓存数据。
-title: 使用 Microsoft Edge DevTools 查看缓存数据
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: bcd94f18e03ca042e9499c817c0effa8a14a927d
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 05/04/2021
+ms.openlocfilehash: cd87915816f51bed1a47fd399d9d273947cd2e4a
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155505"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285041"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +27,7 @@ ms.locfileid: "12155505"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="view-cache-data-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 查看缓存数据
+# <a name="view-cache-data"></a>查看缓存数据
 
 本指南将演示如何使用 [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) 检查[缓存](https://developer.mozilla.org/docs/Web/API/Cache)数据。
 
@@ -78,7 +78,7 @@ ms.locfileid: "12155505"
        选择要刷新的资源
     :::image-end:::
 
-1.  选择 **"刷新** (![ 刷新 ](../media/refresh-icon.msft.png)) 。
+1.  Choose **Refresh (** ![ Refresh ](../media/refresh-icon.msft.png)) .
 
 
 <!-- ====================================================================== -->
@@ -125,6 +125,6 @@ ms.locfileid: "12155505"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/cache)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/cache)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

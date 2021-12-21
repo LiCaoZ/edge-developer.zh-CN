@@ -1,25 +1,25 @@
 ---
-description: 了解如何在 IE 模式下测试旧版网站或Microsoft Edge。
-title: 使用Internet Explorer驱动程序在 IE 模式下自动Microsoft Edge
+title: 使用 Internet Explorer 驱动程序在 IE 模式下自动Microsoft Edge
+description: 如何在 IE 模式下测试旧版网站或Microsoft Edge。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/23/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， webdriver， selenium， 测试， 工具， 自动化， 测试， ie， Internet Explorer， ie 模式
-ms.openlocfilehash: 367e18716d8f938814a653dbff7c35db801145ea
-ms.sourcegitcommit: bc66f7178f405fc3ae0061172f9736eab16760b3
+ms.date: 11/23/2021
+ms.openlocfilehash: 1cf7eda8ae85d6b8c59dca1f199b5156f79c36af
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "12268307"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286497"
 ---
-# <a name="use-internet-explorer-driver-to-automate-ie-mode-in-microsoft-edge"></a>使用Internet Explorer驱动程序在 IE 模式下自动Microsoft Edge
+# <a name="use-internet-explorer-driver-to-automate-ie-mode-in-microsoft-edge"></a>使用 Internet Explorer 驱动程序在 IE 模式下自动Microsoft Edge
 
-如果你有业务关键型的旧网站或应用，你可能需要在 IE Internet Explorer (模式下) 测试内容Microsoft Edge。  本文介绍如何开始使用 IEDriver Internet Explorer驱动程序 (IEDriver) 自动执行 IE Microsoft Edge。
+如果你有业务关键型的旧网站或应用，可能需要在 IE Internet Explorer (中测试内容) 在Microsoft Edge。  本文介绍如何开始使用 IEDriver Internet Explorer驱动程序 (IEDriver) 自动执行 IE Microsoft Edge。
 
-iE mode in Microsoft Edge is a feature for organizations that still need Internet Explorer 11 for backward compatibility for legacy websites or apps.  若要详细了解 IE 模式，请阅读什么是 [iE Internet Explorer (IE) 模式？](/deployedge/edge-ie-mode)
+IE mode in Microsoft Edge is a feature for organizations that still need Internet Explorer 11 for backward compatibility for legacy websites or apps.  若要详细了解 IE 模式，请阅读什么是 [iE Internet Explorer (IE) 模式？](/deployedge/edge-ie-mode)
 
 从**2022 年 6 月 15**Internet Explorer 11 将不再支持某些版本的 Windows 10。 有关详细信息，请阅读Internet Explorer [11 桌面应用停用常见问题解答](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/internet-explorer-11-desktop-app-retirement-faq/ba-p/2366549)。
 
@@ -27,7 +27,7 @@ iE mode in Microsoft Edge is a feature for organizations that still need Interne
 <!-- ====================================================================== -->
 ## <a name="download-internet-explorer-driver-iedriver"></a>下载Internet Explorer驱动程序 (IEDriver) 
 
-若要开始在 IE 模式下在 Microsoft Edge 自动执行测试，[请下载 IEDriver](https://www.selenium.dev/downloads/)。  请确保你下载的 IEDriver 版本是或 `4.0.0.0` 更大。
+若要开始在 IE 模式下在 Microsoft Edge自动执行测试，[请下载 IEDriver](https://www.selenium.dev/downloads/)。  请确保你下载的 IEDriver 版本是或 `4.0.0.0` 更大。
 
 :::image type="content" source="./media/iedriver-install.msft.png" alt-text="Selenium 的下载页面的 IEDriver 部分。" lightbox="./media/iedriver-install.msft.png":::
 
@@ -39,7 +39,7 @@ iE mode in Microsoft Edge is a feature for organizations that still need Interne
 <!-- ====================================================================== -->
 ## <a name="automate-ie-mode-in-microsoft-edge"></a>自动执行 IE 模式Microsoft Edge
 
-以下各节将介绍使用 Selenium 在 IE 模式下Microsoft Edge。
+以下各节将介绍在 IE 模式下使用 Selenium Microsoft Edge。
 
 > [!NOTE]
 > 本文提供了有关使用 Selenium 框架的说明，但您可以使用任何支持 WebDriver 的库、框架和编程语言。  若要使用另一个框架完成相同的任务，请参阅文档中的选择框架。
@@ -186,7 +186,7 @@ ieOptions.EdgeExecutablePath = "C:/Program Files (x86)/Microsoft/Edge/Applicatio
 
 1. 通过调用 定义一 `ie_options` 个新变量 `webdriver.IeOptions()` 。
 
-1. 将 `ie_options.attach_to_edge_chrome` 属性设置为 `True` ， 和 设置为可执行 `ie_options.edge_executable_path` 文件Microsoft Edge路径。
+1. 将 `ie_options.attach_to_edge_chrome` 属性设置为 ，将 设置为 可执行文件Microsoft Edge `True` `ie_options.edge_executable_path` 路径。
 
 ```python
 ie_options = webdriver.IeOptions()
@@ -344,4 +344,4 @@ while (newHandles.length == initialHandleCount) {
 
 *  [使用 WebDriver 自动Microsoft Edge](/microsoft-edge/webdriver-chromium) - 使用 WebDriver Microsoft Edge实现自动化的概述。
 *  [Selenium 文档](https://www.selenium.dev/documentation) - 有关 Selenium 上下文中的 WebDriver 以及如何使用 Selenium 编写自动 WebDriver 测试的信息。
-*  联系[Microsoft Edge DevTools](../devtools-guide-chromium/contact.md)团队，发送有关使用 WebDriver、WebDriver 测试框架 (如 Selenium) 和 Microsoft Edge 的反馈。
+*  联系[Microsoft Edge DevTools](../devtools-guide-chromium/contact.md)团队，发送有关使用 WebDriver、WebDriver 测试框架 (如 Selenium) 和 Microsoft Edge。

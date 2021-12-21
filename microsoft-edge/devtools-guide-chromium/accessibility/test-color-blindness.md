@@ -1,20 +1,20 @@
 ---
+title: 验证页面是否对色盲者可用
 description: 使用呈现工具中的"模拟视觉缺陷"下拉列表，检查具有色盲的人是否可使用此网页。
-title: 验证页面是否由色盲用户可用
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 025c71dce2d9d9613189b5258bd08b66e23c5cd9
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.date: 06/07/2021
+ms.openlocfilehash: 9d56e2337e3755f21200275eb7bbd6c84ab741f4
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140541"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285496"
 ---
-# <a name="verify-that-the-page-is-usable-by-people-with-color-blindness"></a>验证页面是否由色盲用户可用
+# <a name="verify-that-a-page-is-usable-by-people-with-color-blindness"></a>验证页面是否对色盲者可用
 
 <!-- Rendering tool: Emulate vision deficiencies: Protanopia -->
 

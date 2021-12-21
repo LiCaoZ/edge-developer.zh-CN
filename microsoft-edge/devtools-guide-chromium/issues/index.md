@@ -1,18 +1,18 @@
 ---
-description: 使用问题工具识别和修复当前网页的问题。
 title: 使用问题工具查找和修复问题
+description: 使用问题工具识别和修复当前网页的问题。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/24/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 909e1ffcf7b5616b216f5628d4caeab53d9b9f31
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 06/24/2021
+ms.openlocfilehash: c6f5253695a7b22683fcf198fe82dcb44b8638e6
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155638"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286896"
 ---
 <!-- Copyright Sam Dutton
 
@@ -30,7 +30,7 @@ ms.locfileid: "12155638"
 
 # <a name="find-and-fix-problems-using-the-issues-tool"></a>使用问题工具查找和修复问题
 
-在 Microsoft Edge工具中，问题工具自动分析当前**** 网页，报告按类型分组的问题，并提供文档以帮助解释和解决问题。
+在 Microsoft Edge工具中，问题工具自动分析**** 当前网页，报告按类型分组的问题，并提供文档以帮助解释和解决问题。
 
 问题 **工具** 提供以下类别的反馈：
 *  辅助功能。
@@ -40,7 +40,7 @@ ms.locfileid: "12155638"
 *  安全性。
 *  其他。
 
-问题工具**中的反馈**由多个源提供，包括 Chromium 平台、Deque 轴、MDN 浏览器兼容性数据和 webhint。  有关填充问题工具的这些反馈 **源的信息，** 请导航到：
+问题工具**中**的反馈由多个源提供，包括 Chromium 平台、Deque 轴、MDN 浏览器兼容性数据和 webhint。  有关填充问题工具的这些反馈 **源的信息，** 请导航到：
 *  [axe 工具概述](https://www.deque.com/axe)
 *  [browser-compat-data 存储库](https://github.com/mdn/browser-compat-data)
 *  [webhint](https://webhint.io)
@@ -51,7 +51,7 @@ ms.locfileid: "12155638"
 
 1.  导航到包含要修复的问题的网页。  例如，在一 [个新选项卡或窗口中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示页。
 
-1.  打开 DevTools。  几秒钟后，"问题" ("问题") 显示在**** ![ ](../media/issues-counter-icon.msft.png) DevTools 的右上角。
+1.  打开 DevTools。  几秒钟后，"问题" (**** ![ 问题) 显示在 ](../media/issues-counter-icon.msft.png) DevTools 的右上角。
 
 1.  刷新页面，因为根据网络请求报告某些问题。  请注意问题计数器中 **更新的计数**。
 
@@ -64,7 +64,7 @@ ms.locfileid: "12155638"
 ### <a name="other-ways-to-open-the-issues-tool"></a>打开问题工具的其他方法
 
 有几种其他方法可以打开 **问题** 工具：
-*  在主**面板或** () 选择"更多工具"菜单，然后选择 **+** "问题 **"。** ****
+*  在主**面板或** () 选择"更多工具"菜单 **+** ，然后选择****"问题 **"。**
 *  选择 **"自定义和控制 DevTools**  >  **更多工具问题**  >  **"。**
 *  在"元素"工具的 DOM **树中，** 选择并单击带 `Shift` 波浪下划线的元素名称。  或者，打开带波浪线下划线的元素上的上下文菜单，然后选择查看 **问题**。
 
@@ -88,7 +88,7 @@ ms.locfileid: "12155638"
 
 1.  打开新 [窗口或](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 选项卡中的演示页面，然后打开 DevTools。
 
-1.  打开"**问题"** 工具，选择****"问题 ![ " (""问题 ](../media/issues-counter-icon.msft.png) ") 。
+1.  打开"**问题"** 工具，选择****"问题 ![ " ("计数器 ](../media/issues-counter-icon.msft.png)) 。
 
 1.  选择问题以展开问题。
 
@@ -126,7 +126,7 @@ ms.locfileid: "12155638"
 <!-- ====================================================================== -->
 ## <a name="open-issues-from-the-dom-tree"></a>打开 DOM 树中的问题
 
-如果元素具有关联问题，则 **"** 元素"工具中的 DOM 树在元素名称下显示波浪下划线。  你可以打开上下文菜单， (右键单击元素上的) ，然后选择查看问题，或者选择并左键**** 单击带波浪下划线 `Shift` 的元素。
+如果元素具有关联问题，则 **"** 元素"工具中的 DOM 树在元素名称下显示波浪下划线。  您可以打开上下文菜单 (右键单击) ，然后选择查看问题，或者选择并左键单击带波浪下划线**** `Shift` 的元素。
 
 若要对 DOM 树中带波浪下划线的元素显示问题，请执行以下步骤。
 

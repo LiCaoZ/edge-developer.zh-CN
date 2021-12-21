@@ -3,16 +3,16 @@ title: 查看和更改 DOM 入门
 description: 如何查看节点、搜索节点、编辑节点、引用控制台中的节点、中断节点更改等。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
 ms.date: 06/29/2021
-ms.openlocfilehash: e921779a4ad14b83b55a60aa6c4039a104bfbdc1
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.openlocfilehash: 30ea99aadfd9aaddf90486aa80dbb3d09d1bc42c
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269254"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286945"
 ---
 <!-- Copyright Kayce Basques
 
@@ -37,7 +37,7 @@ ms.locfileid: "12269254"
 <!-- ====================================================================== -->
 ## <a name="open-dom-examples"></a>打开 DOM 示例
 
-1.  按住 `Control` (Windows、Linux) 或 (`Command` macOS) 然后单击["DOM 示例](https://microsoft-edge-chromium-devtools.glitch.me/static/dom)"以在新选项卡中打开该页面。
+1.  按住 `Control` (Windows、Linux) 或 `Command` (macOS) 然后单击["DOM 示例](https://microsoft-edge-chromium-devtools.glitch.me/static/dom)"以在新选项卡中打开该页面。
 
 
 <!-- ====================================================================== -->
@@ -65,7 +65,7 @@ ms.locfileid: "12269254"
 
 1.  在 **"检查节点"下**，单击 **"东京** "文本。  现在，`<li>Tokyo</li>` 在 DOM 树中突出显示。
 
-检查节点也是查看和更改节点样式的第一步。  请参阅[入门和更改 CSS。](../css/index.md)
+检查节点也是查看和更改节点样式的第一步。  请参阅[入门查看和更改 CSS。](../css/index.md)
 
 ### <a name="navigate-the-dom-tree-with-a-keyboard"></a>使用键盘浏览 DOM 树
 
@@ -111,7 +111,7 @@ ms.locfileid: "12269254"
 
 1.  将光标焦点放在“**元素**”工具上。
 
-1.  按 `Control` + `F` (Windows、Linux) 或 (`Command` + `F` macOS) 。  搜索栏在 DOM 树的底部打开。
+1.  按 `Control` + `F` (Windows、Linux) 或 `Command` + `F` (macOS) 。  搜索栏在 DOM 树的底部打开。
 
 1.  键入 `The Moon is a Harsh Mistress`。  最后一句在 DOM 树中突出显示。
 
@@ -231,7 +231,7 @@ ms.locfileid: "12269254"
 
     1.  选择 `Delete` 键。  节点将被删除。
 
-    1.  选择 `Control` + `Z` (Windows、Linux) `Command` + `Z` 或 (macOS) 。  最后一个操作将被撤消，节点将重新出现。
+    1.  选择 `Control` + `Z` (Windows、Linux) 或 `Command` + `Z` (macOS) 。  最后一个操作将被撤消，节点将重新出现。
 
 
 <!-- ====================================================================== -->
@@ -284,7 +284,7 @@ ms.locfileid: "12269254"
 
     1.  在 `<li>The Brothers Karamazov</li>` DOM 树中右键单击，然后选择"**复制**  >  **JS 路径"。**  解析为节点的 `document.querySelector()` 表达式已复制到剪贴板。
 
-    1.  按 `Control` + `V` (Windows、Linux) 或 `Command` + `V` (macOS) 将表达式粘贴到控制台中。
+    1.  按 `Control` + `V` (Windows、Linux) 或 (`Command` + `V` macOS) 将表达式粘贴到控制台中。
 
     1.  按 `Enter` 计算表达式。
 
@@ -318,7 +318,7 @@ ms.locfileid: "12269254"
 
     1.  单击上面的 **"设置背景** "按钮。  这会将节点的 `style` 属性设置为 `background-color:thistle`。  开发人员工具将暂停页面并突出显示导致属性发生更改的代码。
 
-    1.  选择 **"恢复脚本** (![ 恢复 ](../media/resume-script-icon.msft.png)) ，如前面所述。
+    1.  选择 **"恢复 (** ![ 脚本 ](../media/resume-script-icon.msft.png)) ，如前面所述。
 
 ### <a name="break-on-node-removal"></a>中断节点删除
 
@@ -332,7 +332,7 @@ ms.locfileid: "12269254"
 
     1.  单击上面的 **"删除** "按钮。  开发人员工具将暂停页面并突出显示导致节点被删除的代码。
 
-    1.  Select **Resume Script (** Resume Script ![ ](../media/resume-script-icon.msft.png)) .
+    1.  选择 **"恢复脚本** (![ 恢复脚本 ](../media/resume-script-icon.msft.png)) 。
 
 ### <a name="break-on-subtree-modifications"></a>中断子树修改
 
@@ -442,6 +442,6 @@ html
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/dom/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/dom/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

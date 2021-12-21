@@ -1,19 +1,19 @@
 ---
-description: Linux 上的 Microsoft Edge、”问题“工具中改进的 Webhint 提示、新的服务工作线程调试功能等。
 title: DevTools 中的新增功能 (Microsoft Edge 88)
+description: Linux 上的 Microsoft Edge、”问题“工具中改进的 Webhint 提示、新的服务工作线程调试功能等。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 2dd010981b01343541828eb326974d3af8beb27c
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.date: 05/04/2021
+ms.openlocfilehash: dd7143f30e3a4e0c4b332922d48867deefc2ca97
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12268996"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285706"
 ---
 <!-- Copyright Jecelyn Yeen
 

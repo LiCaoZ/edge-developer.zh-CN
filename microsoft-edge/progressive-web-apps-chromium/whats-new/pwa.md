@@ -1,18 +1,18 @@
 ---
-description: 适用于渐进式 Web 应用和 PA 的新功能 (源) 。
 title: 渐进式 Web 应用中的新增功能
+description: 适用于渐进式 Web 应用和 PA 的新功能 (源) 。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， pwas， pwa， 渐进式 Web 应用， 源试用版
-ms.openlocfilehash: 0aa7884f32e14e9e17f74a4f1d4f0e968c208160
-ms.sourcegitcommit: 2915729570149ae4bac14eadf387426ee97e7840
+ms.date: 11/19/2021
+ms.openlocfilehash: a91348732f0c7641551804d3e1bac61b7019494f
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "12264774"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12287050"
 ---
 # <a name="whats-new-in-progressive-web-apps"></a>渐进式 Web 应用中的新增功能
 
@@ -87,7 +87,7 @@ Microsoft Edge版本 95 于 2021 年 9 月 28 日移动到 Beta 渠道。
 <!-- ====================================================================== -->
 ## <a name="whats-new-in-microsoft-edge-94"></a>Microsoft Edge 94 中的新增功能
 
-Microsoft Edge 94 在 2021 年 9 月 23 日移动到 Stable。 此发布周期很短，只是<!-- em dash --> 3 周，从 Microsoft Edge 93 Stable 到 Microsoft Edge 94 Stable，因为我们贴靠到新的[4 周发布周期](https://blogs.windows.com/msedgedev/2021/03/12/new-release-cycles-microsoft-edge-extended-stable/)。  这一新的发布节奏与加速 Chrome 的发布周期Chromium里程碑[的新节奏相匹配](https://blog.chromium.org/2021/03/speeding-up-release-cycle.html)。
+Microsoft Edge 94 在 2021 年 9 月 23 日移动到 Stable。 此发布周期很短，只是<!-- em dash --> 3 周，从 Microsoft Edge 93 Stable 到 Microsoft Edge 94 Stable，当我们贴靠到新的[4 周发布周期时](https://blogs.windows.com/msedgedev/2021/03/12/new-release-cycles-microsoft-edge-extended-stable/)。  此新版本节奏与加速 Chrome 的发布周期Chromium里程碑[的新节奏相匹配](https://blog.chromium.org/2021/03/speeding-up-release-cycle.html)。
 
 由于版本 94 的发布周期缩短Microsoft Edge，我们专注于稳定发布周期后勤工作，我们将功能开发转移到 Microsoft Edge 版本 95。
 
@@ -109,13 +109,13 @@ Microsoft Edge现在包含引用器标头，其中包含对已安装的 Microsof
 
 此功能是在 91 Microsoft Edge中首次引入的，我们在版本 93 中Microsoft Edge Bug 修复程序。
 
-有关详细信息，请[从将渐进式 Web 应用发布到Microsoft Store。](../how-to/microsoft-store.md#measure-usage-of-your-pwa-installed-from-the-microsoft-store)
+有关详细信息，请[从将渐进 Web 应用发布到Microsoft Store。](../how-to/microsoft-store.md#measure-usage-of-your-pwa-installed-from-the-microsoft-store)
 
 ### <a name="window-controls-overlay-origin-trials"></a>窗口控件覆盖原点试用版
 
 若要对当前在独立显示模式下显示的标题栏区域进行更多控制，可能需要试验窗口控件覆盖。 窗口控件覆盖 (WCO) 是一组协同工作的功能，它们仅提供应用窗口所需的基本控件。 此布局为 Web 内容层释放了更多空间。 WCO 可用于安装的桌面 PBA。
 
-了解有关在渐进式 Web 应用和 PBA 中实验性功能 ([窗口控件覆盖) 。 ](../how-to/window-controls-overlay.md)
+若要详细了解如何试验渐进式 Web 应用和 PBA 中的实验功能 ([窗口) 。 ](../how-to/window-controls-overlay.md)
 
 在我们的源试用版开发人员控制台 中注册 **Web 应用窗口控件覆盖** 试用版 [的来源](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-window-controls-overlay/registration/)。
 
@@ -123,7 +123,7 @@ Microsoft Edge现在包含引用器标头，其中包含对已安装的 Microsof
 
 开发人员现在可以在源试用版中使用实验性功能 Web App URL 处理程序。 此功能允许注册已安装的应用PWA从引用其作用域的其他应用打开链接。
 
-若要详细了解如何试验 URL 处理程序，请通过渐进式 Web 应用和[PWA (实验) 。 ](../how-to/handle-urls.md)
+若要详细了解如何试验 URL 处理程序，请通过渐进式 Web 应用和 PBA (实验[) 。 ](../how-to/handle-urls.md)
 
 在我们的源试用版开发人员控制台 中注册你的域，以试用 Web 应用 **URL** [处理程序](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-url-handlers/registration/)。
 
@@ -137,13 +137,13 @@ Microsoft Edge现在包含引用器标头，其中包含对已安装的 Microsof
 <!-- ====================================================================== -->
 ## <a name="whats-new-in-microsoft-edge-92"></a>Microsoft Edge 92 中的新增功能
 
-Microsoft Edge版本 92 在 2021 年 7 月 22 Microsoft Edge成为稳定渠道。 本文从开发人员和使用者的角度 (对渐进 Web 应用) PA 进行了更新。
+Microsoft Edge 92 版本在 2021 年 7 月 22 Microsoft Edge稳定渠道。 本文从开发人员和使用者的角度 (对渐进 Web 应用) PA 进行了更新。
 
 ### <a name="protocol-handlers-origin-trial"></a>协议处理程序来源试用版
 
 现在，你可以注册PWA主机操作系统处理特定协议。 现在Windows协议处理程序的试用版。 可以在源试用注册页面 注册 **你的** 源，以使用 Web 应用协议处理程序 [试用版](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration)。
 
-若要详细了解如何将协议处理程序与 PWA一起使用[， (PA) ](../how-to/handle-protocols.md)。
+若要详细了解如何对项目使用协议处理程序PWA，请通过[渐进式 Web 应用和 PWA (实验) 。 ](../how-to/handle-protocols.md)
 
 ### <a name="streamlined-app-info-menu"></a>简化的应用信息菜单
 
@@ -176,6 +176,6 @@ Microsoft Edge版本 92 在 2021 年 7 月 22 Microsoft Edge成为稳定渠道�
 
 ### <a name="restore-web-apps"></a>还原 Web 应用
 
-在意外关闭之前运行的已安装的站点和 PWA 现在 (，即当系统恢复) 将重新启动它们。
+在意外关闭之前运行的已安装网站和 PWA 现在 (，即当系统恢复) 将重新启动它们。
 
 由于进程故障、系统重新启动或断电，可能会发生意外关闭。 在此更改之前，已安装的网站和 PWA 在系统还原时具有不确定的行为。

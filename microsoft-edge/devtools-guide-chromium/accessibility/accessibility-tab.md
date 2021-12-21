@@ -1,18 +1,18 @@
 ---
-description: 使用"辅助功能"选项卡测试辅助功能。
 title: 使用"辅助功能"选项卡测试辅助功能
+description: 使用"辅助功能"选项卡测试辅助功能。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 1484aeb20b7cdd73e3916734730cf6c24a56c47f
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.date: 06/07/2021
+ms.openlocfilehash: be17be80599bf9699b9335c35c5422cc2f9cc4af
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139855"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284446"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques
@@ -36,7 +36,7 @@ ms.locfileid: "12139855"
 
 1.  选择" **元素"** 工具。
 1.  在 **DOM 树**中，选择要检查的元素。
-1.  选择 **"辅助功能"** 选项卡。 可能需要先选择"更多选项卡" (""更多选项卡"按钮) "样式"选项卡**** ![ ](../media/more-tabs-icon.msft.png) 右边的"更多**选项卡"** 按钮。
+1.  选择 **"辅助功能"** 选项卡。 可能需要先选择"更多选项卡" ("更多选项卡"按钮) "样式"选项卡**** ![ ](../media/more-tabs-icon.msft.png) 右边的"更多**选项卡**"按钮。
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="检查&quot;辅助功能&quot;选项卡中的 DevTools 主页的 h1 元素" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    检查 `h1` "辅助功能"选项卡中的 DevTools **主页** 元素
@@ -46,7 +46,7 @@ ms.locfileid: "12139855"
 <!-- ====================================================================== -->
 ## <a name="view-the-position-of-an-element-in-the-accessibility-tree"></a>查看元素在辅助功能树中的位置
 
-[辅助功能树](https://developer.mozilla.org/docs/Glossary/AOM)是 DOM 树的子集。  辅助功能树仅包含 DOM 树中的元素，这些元素与通过屏幕阅读器等辅助技术显示页面内容相关且有用。
+[辅助功能树](https://developer.mozilla.org/docs/Glossary/AOM)是 DOM 树的子集。  辅助功能树仅包含 DOM 树中的元素，这些元素对于通过屏幕阅读器等辅助技术显示页面内容非常有用。
 
 从"辅助功能"选项卡检查元素在辅助功能 **树中** 的位置。
 
@@ -85,6 +85,6 @@ ARIA 属性确保辅助技术（如屏幕阅读器）具有为了正确表示页
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors/kaycebasques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

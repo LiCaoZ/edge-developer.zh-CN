@@ -1,25 +1,25 @@
 ---
-description: 在 WebView2 线程模型中，必须在具有消息等待的 UI 线程上创建 WebView2。
 title: WebView2 的线程模型
+description: 在 WebView2 线程模型中，必须在具有消息等待的 UI 线程上创建 WebView2。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/21/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: c144ec889d1ce004b4e4a12c6049db72d32c2db6
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 09/21/2021
+ms.openlocfilehash: 34a642ef1504c52bc3a3edc98472877a6196cfee
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157360"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284824"
 ---
 # <a name="threading-model-for-webview2"></a>WebView2 的线程模型
 
 支持的平台：Win32、Windows Forms、WinUi、WPF。
 
-WebView2 控件基于组件对象模型 [ (COM) ](/windows/win32/com/the-component-object-model) 并且必须在单个线程的 Thread (STA [) ](/windows/win32/com/single-threaded-apartments) 上运行。
+WebView2 控件基于组件对象模型 [ (COM) ](/windows/win32/com/the-component-object-model) 并且必须在单个线程的 Sta (STA [) ](/windows/win32/com/single-threaded-apartments) 上运行。
 
 
 <!-- ====================================================================== -->
@@ -30,7 +30,7 @@ WebView2 必须在使用消息线索的 UI 线程上创建。  所有回调都�
 唯一的例外是 `Content` 属性 `CoreWebView2WebResourceRequest` 。  从 `Content` 后台线程读取属性流。  该流应为敏捷流，或应该从后台 STA 创建，以防止 UI 线程的性能下降。
 
 > [!NOTE]
-> 对象属性是单线程的。  例如，从线程调用成功 (即返回 `CoreWebView2CookieManager.GetCookiesAsync(null)` cookie) ;但是，在此类调用之后尝试访问 cookie 的属性 (如) 将引发 `Main` `c.Domain` 异常。
+> 对象属性是单线程的。  例如，从除 (之外的其他线程调用将成功，即返回 `CoreWebView2CookieManager.GetCookiesAsync(null)` cookie) ;但是，在此类调用之后尝试访问 cookie 的属性 (如) 将引发 `Main` `c.Domain` 异常。
 
 
 <!-- ====================================================================== -->
@@ -82,8 +82,8 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 > 1.  在 **"解决方案资源管理器**"中，右键单击"WebView2"项目，然后选择"属性 **"。**
 > 1.  选择" **调试** "选项卡，然后选中" **启用本机代码调试"** 复选框，如下所示。
 
-:::image type="complex" source="../media/webview-enable-native-debug.png" alt-text="在应用程序内启用本机代码Visual Studio" lightbox="../media/webview-enable-native-debug.png":::
-   在应用程序内启用本机代码Visual Studio
+:::image type="complex" source="../media/webview-enable-native-debug.png" alt-text="在脚本中启用本机代码Visual Studio" lightbox="../media/webview-enable-native-debug.png":::
+   在脚本中启用本机代码Visual Studio
 :::image-end:::
 
 
@@ -96,7 +96,7 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 
 ### <a name="deferrals-in-c"></a>C 中的延迟#
 
-在 C# 中时，最佳做法是使用 块 `Deferral` `using` 。 `using`即使块 `Deferral` 中间抛出异常，块也可确保 完成 `using` 。 如果相反，你有代码可显式调用 ，但在调用发生前会引发异常，延迟不会完成，直到稍后垃圾回收器最终收集和处理延迟时。 `Complete` `Complete` 在这期间，WebView2 将等待应用代码处理事件。
+在 `Deferral` C# 中时，最佳做法是使用 块 `using` 。 `using`即使块 `Deferral` 中间抛出异常，块也可确保 完成 `using` 。 如果相反，你有代码可显式调用 ，但在调用发生前会引发异常，延迟将等到垃圾回收器最终收集和处理延迟后一段时间才会完成。 `Complete` `Complete` 在这期间，WebView2 将等待应用代码处理事件。
 
 例如，不要执行以下操作，因为如果在调用 前出现异常，该事件不会被视为 `Complete` `WebResourceRequested` "handled"，并阻止 WebView2 呈现该 Web 内容。
 

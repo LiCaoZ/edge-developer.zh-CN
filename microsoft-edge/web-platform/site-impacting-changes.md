@@ -3,26 +3,26 @@ title: Microsoft Edge 中影响网站兼容性的更改
 description: 针对可能会影响网站兼容性的Microsoft Edge影响大的更改摘要。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/01/2021
 keywords: microsoft edge， 兼容性， Web 平台
-ms.openlocfilehash: 6daf651ed7d537138b698dbb81c9d27512f9d45b
-ms.sourcegitcommit: f92b68aa7e5f08e7bf0b7c87f361fc743a0950e7
+ms.date: 11/01/2021
+ms.openlocfilehash: 01493ecb8a334c2238fd57d54e2d3a3d54ea4a2f
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "12246047"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284075"
 ---
 # <a name="site-compatibility-impacting-changes-coming-to-microsoft-edge"></a>Microsoft Edge 中影响网站兼容性的更改
 
-Web 平台是一组用于构建网页的技术。  这些技术包括 HTML、CSS、JavaScript 和许多其他开放标准。  Web 平台不断发展以改进用户体验、安全性和隐私。  在某些情况下，更改可能会影响现有网页的功能。  有关即将推出的项目 Web 平台Chromium，请参阅[Chrome 平台状态发布时间线](https://www.chromestatus.com/features/schedule)。
+Web 平台是一组用于构建网页的技术。  这些技术包括 HTML、CSS、JavaScript 和许多其他开放标准。  Web 平台不断发展以改进用户体验、安全性和隐私。  在某些情况下，更改可能会影响现有网页的功能。  有关即将推出的项目 Web Chromium更改的信息，请参阅 Chrome[平台状态发布时间线](https://www.chromestatus.com/features/schedule)。
 
-出于功能和兼容性Microsoft Edge，Chromium项目对 Web 平台进行的所有更改。  Microsoft 保持对浏览器的完全Microsoft Edge，并可以延迟或拒绝更改。  浏览器Microsoft Edge决定更改是否对浏览器用户的好处。
+出于功能和兼容性原因，Microsoft Edge几乎采用项目对 web Chromium的所有更改。  Microsoft 保持对浏览器的完全Microsoft Edge，并可以延迟或拒绝更改。  该Microsoft Edge团队决定更改是否对浏览器用户的好处。
 
-下表中Microsoft Edge计划偏离Chromium发布时间或行为的功能区域。  此表还突出显示了团队正在跟踪Microsoft Edge影响大的更改。
+下表Microsoft Edge计划Chromium发布时间或行为上偏离计划的功能区域。  此表还突出显示了团队正在跟踪Microsoft Edge影响大的更改。
 
-经常查看本文。  当Microsoft Edge发展、日程表稳定以及宣布新更改时，团队会更新本文。
+经常查看本文。  随着Microsoft Edge的不断发展、日程表的强化以及新更改的公布，该团队将更新本文。
 
 
 <!-- ====================================================================== -->
@@ -40,8 +40,8 @@ Web 平台是一组用于构建网页的技术。  这些技术包括 HTML、CSS
 | 删除 Adobe Flash | v88 | | 此更改发生在 Microsoft Edge 基于的 Chromium 项目中。  有关详细信息，请参阅 Adobe [Flash Chromium路线图](https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021-)。 |
 | 删除 FTP 支持 | v88 | Beta v87 | 在 v88 中，完全删除了 FTP 支持。  此更改发生在 Microsoft Edge 所基于的 Chromium 项目中。  有关详细信息，请参阅 Chrome [平台状态条目](https://chromestatus.com/feature/6246151319715840)。  具有仍然需要 FTP 支持的网站的企业可以通过将站点配置为使用 [IE](/deployedge/edge-ie-mode)模式来继续使用 FTP。 |
 | 自动升级混合内容图像 | v88 | | 对图像 (非) HTTP 文件会自动升级到 HTTPS。  如果图像无法通过 HTTPS 使用，则图像下载将失败。  组 [策略](/deployedge/microsoft-edge-policies#insecurecontentallowedforurls) 可用于控制此功能。  此更改发生在 Microsoft Edge 基于的 Chromium 项目中。  有关详细信息，请参阅 Chrome [平台状态条目](https://chromestatus.com/feature/4926989725073408)。 |
-| 在 TLS 中删除 3DES | v93 | | 从 v93 开始，将TLS_RSA_WITH_3DES_EDE_CBC_SHA密码套件的支持。  此更改发生在 Microsoft Edge 基于的 Chromium 项目中。  有关详细信息，请参阅 Chrome [平台状态条目](https://chromestatus.com/feature/6678134168485888)。  此外，在 v93 中，兼容性策略可用于支持需要保留与过时服务器的兼容性的方案。  此兼容性策略将过时，在 v95 中停止运行。  请确保在更新之前更新受影响的服务器。 |
-| 弃用 WebRTC 的计划 B SDP 语义 | v98 (Chrome+2)  | | 此更改发生在 Microsoft Edge 所基于的 Chromium 项目中。  此更改将弃用 SDP 中的旧会话 (协议) 称为计划 B。 此 SDP 格式将由统一计划取代，统一计划是一种符合规格且跨浏览器兼容的 SDP 格式。  有关详细信息，请参阅 [Chrome](https://www.chromestatus.com/feature/5823036655665152)平台状态条目 [PSA：计划 B 应在 M96 Beta 和 Stable](https://groups.google.com/g/discuss-webrtc/c/zRIgxG18D80/m/k4ZPzBO3AAAJ)中抛出 [，PSA：Plan B throwing in Stable and Extended Deprecation Trial End Date](https://groups.google.com/u/1/g/discuss-webrtc/c/gEHrZyYKsfU)。  Microsoft 推出计划弃用计划为 Chrome 后的两个版本。  请求 [WebRTC 计划 B 反向源试用](https://developer.chrome.com/origintrials/#/view_trial/3892235977954951169) 令牌允许网站继续使用已弃用 API，直到 v101。 |
+| 在 TLS 中删除 3DES | v93 | | 从 v93 开始，将TLS_RSA_WITH_3DES_EDE_CBC_SHA加密套件的支持。  此更改发生在 Microsoft Edge 基于的 Chromium 项目中。  有关详细信息，请参阅 Chrome [平台状态条目](https://chromestatus.com/feature/6678134168485888)。  此外，在 v93 中，兼容性策略可用于支持需要保留与过时服务器的兼容性的方案。  此兼容性策略将过时，在 v95 中停止运行。  请确保在更新之前更新受影响的服务器。 |
+| 弃用 WebRTC 的计划 B SDP 语义 | v98 (Chrome+2)  | | 此更改发生在 Microsoft Edge 所基于的 Chromium 项目中。  此更改将弃用名为计划 B (SDP) 旧会话描述协议。 此 SDP 格式将由统一计划取代，统一计划是一种符合规格且跨浏览器兼容的 SDP 格式。  有关详细信息，请参阅 [Chrome](https://www.chromestatus.com/feature/5823036655665152)平台状态条目 [PSA：计划 B 应在 M96 Beta 和 Stable](https://groups.google.com/g/discuss-webrtc/c/zRIgxG18D80/m/k4ZPzBO3AAAJ)中抛出 [，PSA：Plan B throwing in Stable and Extended Deprecation Trial End Date](https://groups.google.com/u/1/g/discuss-webrtc/c/gEHrZyYKsfU)。  Microsoft 推出计划弃用计划为 Chrome 后的两个版本。  请求 [WebRTC 计划 B 反向源试用](https://developer.chrome.com/origintrials/#/view_trial/3892235977954951169) 令牌允许网站继续使用已弃用 API，直到 v101。 |
 | 将专用网络请求限制为保护上下文 | v94 | | 从 v94 开始，从 internet (访问本地 intranet) 需要通过 HTTPS 传递这些页面。  此更改发生在 Microsoft Edge 所基于的 Chromium 项目中。  有关详细信息，请参阅 Chrome [平台状态条目](https://chromestatus.com/feature/5436853517811712)。  可使用两个兼容性策略支持需要保留与非安全页面的兼容性的方案：[InsecurePrivateNetworkRequestAllowed](/deployedge/microsoft-edge-policies#insecureprivatenetworkrequestsallowed) 和 [InsecurePrivateNetworkRequestAllowedForUrls](/deployedge/microsoft-edge-policies#insecureprivatenetworkrequestsallowedforurls)。 |
 | 阻止混合内容下载 | v94 | | HTTPS 页面上将阻止从 HTTP URL 下载文件。  此更改发生在 Microsoft Edge 所基于的 Chromium 项目中。  有关详细信息，请参阅 Google [安全博客条目](https://security.googleblog.com/2020/02/protecting-users-from-insecure_6.html)。 |
 | 阻止第三方上下文中的 WebSQL | v97 | | 将阻止使用第三方框架使用旧的 WebSQL 功能。  一Enterprise [WebSQLInThirdPartyContextEnabled](/deployedge/microsoft-edge-policies#websqlinthirdpartycontextenabled)将作为选择退出，直到 v101。  此更改发生在 Microsoft Edge 所基于的 Chromium 项目中。  有关详细信息，请参阅 Chrome [平台状态条目](https://chromestatus.com/feature/5684870116278272)。 |
@@ -58,6 +58,6 @@ Web 平台是一组用于构建网页的技术。  这些技术包括 HTML、CSS
 | v123 | 功能或更改在版本 123 Microsoft Edge提供。 |
 | v123 (Chrome+1)  | 功能或更改在版本 123 Microsoft Edge，它是 Chrome 版本 122 中提供功能或更改后的一个版本。 |
 | v123 (Chrome+2)  | 功能或更改在版本 123 中Microsoft Edge，这是 Chrome 版本 121 中提供功能或更改后的两个版本。 |
-| Beta v123 | 功能或更改在 Microsoft Edge Beta 预览频道的版本 123 中提供。 | 
-| Dev v123 | 功能或更改在开发人员预览频道版本 123 中Microsoft Edge。 | 
+| Beta v123 | 功能或更改在版本 123 的试用版预览渠道中提供Microsoft Edge。 | 
+| Dev v123 | 功能或更改在版本 123 的开发人员预览频道中提供Microsoft Edge。 | 
 | Canary v123 | 功能或更改在 Canary 预览频道的版本 123 中Microsoft Edge。 | 

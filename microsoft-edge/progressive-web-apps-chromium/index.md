@@ -1,19 +1,19 @@
 ---
 title: 渐进式 Web 应用 （PWA） 概述
-description: 渐进式 Web (PA) 在 Windows 10 或更高版本上运行。  作为 Web 开发人员，以下是您需要了解的关于 PWA 的所有信息。
+description: 渐进式 Web (PBA) 在 Windows 10 或更高版本上运行。  作为 Web 开发人员，以下是您需要了解的关于 PWA 的所有信息。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用、PWA、Edge、JavaScript、UWP、Microsoft Store
-ms.openlocfilehash: bc53b6c8975f9398ad303d14f9c6190cc78b11d8
-ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
+keywords: 渐进 Web 应用、PWA、Edge、JavaScript、UWP、Microsoft Store
+ms.date: 11/17/2021
+ms.openlocfilehash: cd72fa246ea50b56d3df3e255bb9dab0c661e5c0
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "12235598"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12287064"
 ---
 # <a name="overview-of-progressive-web-apps-pwas"></a>渐进式 Web 应用 （PWA） 概述
 
@@ -21,13 +21,13 @@ ms.locfileid: "12235598"
 
 PWA 是一些网站**[](https://alistapart.com/article/understandingprogressiveenhancement)**，其功能逐渐增强，如安装在支持平台上的本机应用，同时与其他浏览器上的常规网站一样运行。
 
-应用程序质量PWA Web 和已编译应用**的最佳功能**。 PBA 在浏览器（如网站）中运行。  但是，PWA 也有权访问应用功能;例如：
-*  一PWA设备脱机时仍可正常工作。
+网站质量PWA Web 和已编译应用**的最佳组合**。 PBA 在浏览器（如网站）中运行。  但是，PWA 也有权访问应用功能;例如：
+*  PWA脱机时，设备仍可运行。
 *  可以在操作系统上安装 PWA。
 *  PWA 支持推送通知和定期更新。
 *  PWA 可以访问硬件功能。
 
-安装时，PWA**与 Windows 上的其他应用Windows。**  例如：
+安装后，PWA**与 Windows 上的其他应用Windows。**  例如：
 *  A PWA can be added to the Start Menu.
 *  可以将PWA固定到任务栏。
 *  PWA 可以处理文件。
@@ -36,8 +36,8 @@ PWA 是一些网站**[](https://alistapart.com/article/understandingprogressivee
 
 PWA 与 **网站具有相同的范围**：
 *  PBA 可通过搜索引擎编制索引。
-*  一PWA可链接到的项。
-*  A PWA can work on all devices， from a single codebase.
+*  可以将PWA链接至的项。
+*  a PWA can work on all devices， from a single codebase.
 
 PBA 的**** 跨平台开发成本比编译的应用要低得多，这些应用需要针对每个平台使用特定代码库，例如适用于 Android、iOS 和每个桌面操作系统的单独代码库。
 
@@ -77,7 +77,7 @@ Microsoft Edge 和 Windows 添加了许多新的 Web 功能和特性。  这些�
 *  USB
 *  蓝牙
 
-使用PWA，可以使用在网站、移动应用和桌面应用之间共享的单个基本代码， (操作系统) 。  通过使用跨平台共享的单个基本代码，您可以降低开发成本。  你的应用也可以发布到 Microsoft Store，以便用户Windows和安装它更熟悉和可信。
+使用PWA，可以使用在网站、移动应用和桌面应用之间共享的单个基本代码， (操作系统) 。  通过使用跨平台共享的单个基本代码，您可以降低开发成本。  你的应用也可以发布在 Microsoft Store，以便用户Windows和安装它更熟悉和可信。
 
 详细了解[PWA 如何与 Windows 集成](ux.md)。
 
@@ -85,7 +85,7 @@ Microsoft Edge 和 Windows 添加了许多新的 Web 功能和特性。  这些�
 <!-- ====================================================================== -->
 ## <a name="bridging-the-gap-between-web-and-desktop-apps"></a>弥补 Web 应用和桌面应用之间的空白
 
-Microsoft Edge内置了许多新功能，这些功能可以使 Web 应用在桌面平台上更加集成。  这些功能跨 Web 和桌面平台提供了更具吸引力的体验。  使用渐进式 Web (PA) ，您可以：
+Microsoft Edge内置了许多新功能，这些功能可以使 Web 应用在桌面平台上更加集成。  这些功能跨 Web 和桌面平台提供了更具吸引力的体验。  使用渐进 Web 应用 (PA) ，您可以：
 *   处理文件。
 *   与其他应用共享内容。
 *   访问剪贴板。
@@ -96,17 +96,17 @@ Microsoft Edge内置了许多新功能，这些功能可以使 Web 应用在桌�
 *   使用 CSS 布局、动画和筛选器创建高级设计。
 *   使用 WebAssembly 运行近编译的性能代码。
 
-现在，使用 Web 技术无法执行很多工作。  借助Microsoft Edge，桌面上的 PWA 可以充分利用 Web 技术，以交付用户期望桌面应用能够执行哪些操作。
+现在，使用 Web 技术无法执行很多工作。  借助Microsoft Edge，桌面上的 PWA 可以充分利用 Web 技术，以交付用户期望桌面应用执行哪些操作。
 
 有关 [PWA 可以](https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition) 执行哪些功能的信息，请参阅向 PWA 提供一些信息。
 
 
 <!-- ====================================================================== -->
-## <a name="the-microsoft-store"></a>The Microsoft Store
+## <a name="the-microsoft-store"></a>the Microsoft Store
 
 由于渐进式 Web (PA) 与[Microsoft Store](https://www.microsoft.com/store/apps/windows)中其他应用一样，因此用户可以与它们完全互动（从发现、安装到执行）而无需<!-- em dashes--> 曾经打开浏览器。
 
-the Microsoft Store app is the most used app on PC.  该Microsoft Store为用户提供了可信赖且熟悉的安装应用的体验。  此外，你可以查看详细的使用情况统计信息和图表，以便你了解应用中Microsoft Store状况。
+the Microsoft Store app is the most used app on PC.  该Microsoft Store为用户提供了可信赖且熟悉的安装应用的体验。  此外，你可以查看详细的使用情况统计信息和图表，以便你了解应用中Microsoft Store方式。
 
 了解如何将[你的PWA发布到Microsoft Store。](how-to/microsoft-store.md)
 
@@ -114,13 +114,13 @@ the Microsoft Store app is the most used app on PC.  该Microsoft Store为用户
 <!-- ====================================================================== -->
 ## <a name="success-stories"></a>成功案例
 
-使用渐进式 Web (PWA) 技术是使应用安全、可发现、可链接****、易于**** 安装和更新、**** 响应迅速且**** 独立于网络的一种**很好的方法**。 ****  许多企业都成功使用 PBA。  例如：
+使用渐进的 Web App (PWA) 技术是使应用安全、可发现、**** 可链接****、易于安装和**** 更新、响应**** 迅速且独立于网络的一种******很好的方法**。  许多企业都成功使用 PBA。  例如：
 
-*   该百PWA每天增加两次活动用户。  桌面上的订单率几乎与移动源 ([的) 。](https://twitter.com/davidbrunelle/status/993960071406080000)
-*   Trivago 发现向主屏幕添加其PWA用户增加了 150%。  预订增加导致到酒店产品/服务（源产品/服务）的 ([增加](https://www.thinkwithgoogle.com/intl/en-gb/marketing-strategies/app-and-mobile/trivago-embrace-progressive-web-apps-as-the-future-of-mobile/) 97) 。
-*   Tinder 将加载时间从 11.91 秒剪切到 4.68 秒（使用PWA）。  该应用比已编译的 Android 应用小 90%， ([源) 。](https://medium.com/@addyosmani/a-tinder-progressive-web-app-performance-case-study-78919d98ece0)
+*   该百PWA每天增加两次活动用户。  桌面上的订单率几乎与移动 ([源) 。](https://twitter.com/davidbrunelle/status/993960071406080000)
+*   Trivago 发现向主屏幕添加其PWA用户增加了 150%。  预订增加导致到酒店产品/服务（源产品/服务）的 ([增加了](https://www.thinkwithgoogle.com/intl/en-gb/marketing-strategies/app-and-mobile/trivago-embrace-progressive-web-apps-as-the-future-of-mobile/) 97) 。
+*   Tinder 使用其技术将负载时间从 11.91 秒剪切到 4.68 PWA。  该应用比已编译的 Android 应用小 90%， ([源) 。](https://medium.com/@addyosmani/a-tinder-progressive-web-app-performance-case-study-78919d98ece0)
 
-在统计数据网站上阅读[PWA成功](https://www.pwastats.com/)案例。
+在"统计数据"网站上PWA[成功](https://www.pwastats.com/)案例。
 
 
 <!-- ====================================================================== -->
@@ -135,6 +135,6 @@ the Microsoft Store app is the most used app on PC.  该Microsoft Store为用户
 *  [Web 上的百年](https://joreteg.com/blog/betting-on-the-web)
 *  [命名渐进式 Web 应用](https://fberriman.com/2017/06/26/naming-progressive-web-apps)
 *  [设计和生成不带框架的渐进式 Web (第 1) ](https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-1)
-*  [设计和生成不带框架的渐进式 Web (第 2) ](https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-2)
+*  [设计和生成不带框架的渐进式 Web (第 2 部分) ](https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-2)
 *  [设计和生成不带框架的渐进式 Web (第 3 部分) ](https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-3)
 *  [什么是良好的渐进式 Web 应用？](https://web.dev/pwa-checklist)

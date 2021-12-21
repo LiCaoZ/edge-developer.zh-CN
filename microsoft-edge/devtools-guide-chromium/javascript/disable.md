@@ -1,18 +1,18 @@
 ---
-description: 打开命令菜单并运行"禁用 JavaScript"命令。
-title: 使用 DevTools Microsoft Edge JavaScript
+title: 禁用 JavaScript
+description: 若要在 DevTools 中禁用 JavaScript，请打开命令菜单并运行"禁用 JavaScript"命令。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 059526da28886a9306ec9bbfd359ea29f55430e5
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 05/04/2021
+ms.openlocfilehash: 1b18415fab8d6c925749eeb22a554c5894dbc24a
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155589"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285076"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,14 +27,14 @@ ms.locfileid: "12155589"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="disable-javascript-with-microsoft-edge-devtools"></a>使用 DevTools Microsoft Edge JavaScript
+# <a name="disable-javascript"></a>禁用 JavaScript
 
 若要在浏览器不支持 JavaScript 时查看网页的呈现效果，请暂时关闭 JavaScript。
 
 完成以下操作以检查网页在关闭 JavaScript 时如何显示和行为。
 
 1.  [打开 Microsoft Edge DevTools](../open/index.md)。
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令**菜单**。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
 
     :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="命令菜单" lightbox="../media/javascript-console-command.msft.png":::
        **命令菜单**
@@ -65,6 +65,6 @@ ms.locfileid: "12155589"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/disable)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/disable)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

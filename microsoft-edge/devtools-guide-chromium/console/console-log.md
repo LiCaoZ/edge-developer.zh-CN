@@ -3,16 +3,16 @@ title: 在控制台工具中记录消息
 description: 如何在开发人员工具控制台中记录Microsoft Edge JavaScript。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 04/13/2021
-ms.openlocfilehash: c0af34774c12dd16be25fc2d1fe784ebf6f1c384
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.openlocfilehash: a2fe96fc9d354de4419da7b8008cd9490be12367
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269093"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284803"
 ---
 # <a name="log-messages-in-the-console-tool"></a>在控制台工具中记录消息
 
@@ -177,7 +177,7 @@ console.table(bodyDimensions);
 
 :::image type="content" source="../media/console-log-table.msft.png" alt-text="使用 console.table 显示数据，使其更易于阅读。" lightbox="../media/console-log-table.msft.png":::
 
-的输出 `console.table` 不仅具有显示在控制台 中的表 **格式**。    例如，如果将表复制并粘贴到Excel、Word 或其他支持表格数据的产品中，则结构保持不变。
+的输出 `console.table` 不仅具有显示在控制台 中的表 **格式**。    例如，如果将表格复制并粘贴到 Excel、Word 或其他支持表格数据的产品中，则结构保持不变。
 
 <!--  The output of `console.table` has a table format not only when it displays in the **Console**.  For example, copy and paste a table in Excel, Word, or any other products that support tabular data.  -->
 

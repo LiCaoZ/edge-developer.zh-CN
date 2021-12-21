@@ -1,18 +1,18 @@
 ---
-description: 使用 Microsoft Edge DevTools 动画检查器检查和修改动画。
 title: 检查动画
+description: 使用 Microsoft Edge DevTools 动画检查器检查和修改动画。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 5052ba456c5322fcdb8669c140bd62076e050c0a
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 05/11/2021
+ms.openlocfilehash: 32881bf5baa8a1c9512a1ee2a43a2730f06ecc69
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157395"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284348"
 ---
 <!-- Copyright Kayce Basques
 
@@ -54,7 +54,7 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
 
 ### <a name="what-is-an-animation-group"></a>什么是动画组？
 
-动画组是一组相互相关的动画。  目前，Web 没有组动画的实际概念，因此动画设计人员和开发人员必须撰写各个动画并设置动画时间，以便动画呈现为一致的视觉效果。  动画检查器根据开始时间以及排除延迟 (等来预测与哪些动画) 。  动画检查器还会将动画并排分组。
+动画组是一组相互相关的动画。  目前，Web 没有组动画的实际概念，因此动画设计人员和开发人员必须撰写各个动画并设置动画时间，以便动画呈现为一致的视觉效果。  动画检查器根据开始时间以及排除延迟 (等来预测哪些动画) 。  动画检查器还会将动画并排分组。
 换句话说，在同一脚本块中触发的一组动画会被组合在一起。  如果动画是异步动画，它会被放置在单独的组中。
 
 
@@ -131,7 +131,7 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
    动画迭代关系图
 :::image-end:::
 
-如果两个元素应用了相同的动画，则动画检查器会向这些元素分配相同的颜色。  颜色是随机的，没有意义。  例如，在下图中，这两个元素应用了相同的动画 () 和 元素一 `div.cwccw.earlier` `div.cwccw.later` `spinrightleft` `div.ccwcw.earlier` `div.ccwcw.later` 样。
+如果两个元素应用了相同的动画，则动画检查器会向这些元素分配相同的颜色。  颜色是随机的，没有意义。  例如，在下图中，这两个元素应用了相同的动画 `div.cwccw.earlier` `div.cwccw.later` () 和 元素一 `spinrightleft` `div.ccwcw.earlier` `div.ccwcw.later` 样。
 
 :::image type="complex" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="颜色编码动画" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
    颜色编码动画
@@ -175,6 +175,6 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

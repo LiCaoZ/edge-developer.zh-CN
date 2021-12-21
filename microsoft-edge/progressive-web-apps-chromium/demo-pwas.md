@@ -3,16 +3,16 @@ title: 示例 PWA
 description: 显示如何使用 PWA 生成渐进式 Web (应用程序) 。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: 渐进式 Web 应用， PWA， 演示， 示例
-ms.openlocfilehash: 172692c8887a3c24429974c52bc950bce43e690c
-ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
+ms.date: 11/19/2021
+ms.openlocfilehash: c5be318b9f28f0e173a01407c41b5b687484340c
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "12235796"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284523"
 ---
 # <a name="sample-pwas"></a>示例 PWA
 

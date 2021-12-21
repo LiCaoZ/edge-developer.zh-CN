@@ -1,18 +1,18 @@
 ---
-description: 波浪下划线突出显示了元素工具、服务工作进程更新日程表等中的代码问题。
 title: DevTools 中的新增功能 (Microsoft Edge 91)
+description: 波浪下划线突出显示了元素工具、服务工作进程更新日程表等中的代码问题。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 47648327f22fefc3bc236a5b9bbe8e0d6ce3c025
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.date: 05/06/2021
+ms.openlocfilehash: 0107a525d50e9fded6395aff3c2b7a4373be6856
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269457"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286693"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -71,7 +71,7 @@ DevTools 工具提示功能可帮助你了解 DevTools 中所有不同的工具�
 *   [打开命令菜单](../../../command-menu/index.md#open-the-command-menu)，然后键入 `tooltips`。
 *   Choose **Customize and control DevTools** () > `...` **Help**Toggle  >  **the DevTools Tooltips**.
 
-此外，如果你打开焦点模式和 [DevTools](../02/devtools.md#group-tools-together-in-focus-mode) 工具提示实验，还可以选择活动栏底部的切换 **DevTools** 工具提示 (`?`) **按钮**。
+此外，如果你打开焦点模式和[DevTools](../02/devtools.md#group-tools-together-in-focus-mode)工具提示实验，还可以选择活动栏底部的切换**DevTools**工具提示 () 按钮 `?` 。 ****
 
 要显示有关如何使用 DevTools 的详细信息，请打开工具提示，然后将鼠标悬停在 DevTools 的每个轮廓区域上。
 
@@ -113,11 +113,11 @@ DevTools 工具提示功能可帮助你了解 DevTools 中所有不同的工具�
 Most operating systems require square icons.  Please include at least one square icon in the array.
 ```
 
-在Microsoft Edge版本 90 或更早版本中，将针对非方形的每个图标显示错误：
+在Microsoft Edge版本 90 或更早版本中，每个非方形图标都将显示错误：
 
-:::image type="content" source="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png" alt-text="在 Microsoft Edge 版本 90 或更早版本中，每个非方形图标都将显示错误" lightbox="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png":::
+:::image type="content" source="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png" alt-text="在Microsoft Edge版本 90 或更早版本中，对于非正方形的每个图标，都将显示错误" lightbox="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png":::
 
-在Microsoft Edge版本 91 或更高版本中，提供至少一个方形图标时不会显示错误：
+在Microsoft Edge版本 91 或更高版本中，当您提供至少一个方形图标时，不会显示任何错误：
 
 :::image type="content" source="../../media/2021/04/edge91-application-manifest-errors-and-warnings.msft.png" alt-text="在Microsoft Edge版本 91 或更高版本中，提供至少一个方形图标时不会显示错误" lightbox="../../media/2021/04/edge91-application-manifest-errors-and-warnings.msft.png":::
 
@@ -238,7 +238,7 @@ Most operating systems require square icons.  Please include at least one square
 
 :::image type="content" source="../../media/2021/04/network-img-name-filters-preview.msft.png" alt-text="网络工具中的图像纵横比信息" lightbox="../../media/2021/04/network-img-name-filters-preview.msft.png":::
 
-若要在开放源代码项目中查看此功能Chromium，请导航到"问题"1149832 1170656" [](https://crbug.com/1170656)。 [](https://crbug.com/1149832)
+若要在开放源代码项目中查看此功能的历史记录Chromium，请导航到"问题[1149832并](https://crbug.com/1149832)1170656。 [](https://crbug.com/1170656)
 
 ### <a name="new-options-to-configure-content-encodings-in-the-network-conditions-tool"></a>用于在网络条件工具中配置 Content-Encoding 的新选项
 
@@ -272,7 +272,7 @@ Most operating systems require square icons.  Please include at least one square
 
 #### <a name="support-for-the-accent-color-keyword"></a>支持强调色关键字
 
-**样式** 窗格的自动完成 UI 现在检测 `accent-color` CSS 关键字，这允许你为元素生成的 UI 控件指定强调色。  元素生成的 UI 控件示例包括复选框或单选按钮。 有关 Chromium 实现状态的详细信息，请导航到 [功能：强调色 CSS 属性](https://chromestatus.com/feature/4752739957473280)。  要启用此功能，请导航到 `edge://flags#enable-experimental-web-platform-features` 并将复选框设置为“**已启用**”。  若要在开放源代码项目中查看此功能Chromium历史记录，请导航到"问题[1092093"。](https://crbug.com/1092093)
+**样式** 窗格的自动完成 UI 现在检测 `accent-color` CSS 关键字，这允许你为元素生成的 UI 控件指定强调色。  元素生成的 UI 控件示例包括复选框或单选按钮。 有关 Chromium 实现状态的详细信息，请导航到 [功能：强调色 CSS 属性](https://chromestatus.com/feature/4752739957473280)。  要启用此功能，请导航到 `edge://flags#enable-experimental-web-platform-features` 并将复选框设置为“**已启用**”。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1092093"。](https://crbug.com/1092093)
 
 :::image type="complex" source="../../media/2021/04/elements-styles-accent-color.msft.png" alt-text="强调色 CSS 关键字" lightbox="../../media/2021/04/elements-styles-accent-color.msft.png":::
    `accent-color` CSS 关键字
@@ -312,7 +312,7 @@ Most operating systems require square icons.  Please include at least one square
 
 ### <a name="new-vary-header-column-in-the-cache-storage-pane"></a>缓存存储窗格中的新的变化标头列
 
-使用 **缓存存储** 窗格中的新 `Vary Header` 列显示 [变化](https://httpwg.org/specs/rfc7231.html#header.vary) HTTP 响应标头值。  若要在开放源代码项目中查看Chromium历史记录，请导航到"问题[1186049"。](https://crbug.com/1186049)
+使用 **缓存存储** 窗格中的新 `Vary Header` 列显示 [变化](https://httpwg.org/specs/rfc7231.html#header.vary) HTTP 响应标头值。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1186049"。](https://crbug.com/1186049)
 
 :::image type="complex" source="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png" alt-text="变化标头列" lightbox="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png":::
    变化标头列
@@ -335,11 +335,11 @@ DevTools 现在支持新的 [专用品牌检查 obj 中的 a.k.a. #foo](https://
 
 #### <a name="enhanced-support-for-breakpoints-debugging"></a>对断点调试的增强支持
 
-新式 JavaScript 捆绑程序（如 [Webpack](https://webpack.js.org)）和 [汇总](https://rollupjs.org) 支持代码拆分。  要了解有关代码拆分的详细信息，请导航到 [代码拆分](https://webpack.js.org/guides/code-splitting/#:~:text=There%20are%20three%20general%20approaches%20to%20code%20splitting,Split%20code%20via%20inline%20function%20calls%20within%20modules.)。  在 Microsoft Edge 版本 90 或更早版本中，DevTools 仅在单个捆绑包中设置断点。  在 Microsoft Edge 版本 91 或更高版本中，在调试共享组件时，DevTools 会在多个捆绑包中正确设置断点。  若要在开放源代码项目中查看此功能的历史记录Chromium，请导航到问题[](https://crbug.com/1142705)1142705、979000[](https://crbug.com/979000)和[1180794](https://crbug.com/1180794)。
+新式 JavaScript 捆绑程序（如 [Webpack](https://webpack.js.org)）和 [汇总](https://rollupjs.org) 支持代码拆分。  要了解有关代码拆分的详细信息，请导航到 [代码拆分](https://webpack.js.org/guides/code-splitting/#:~:text=There%20are%20three%20general%20approaches%20to%20code%20splitting,Split%20code%20via%20inline%20function%20calls%20within%20modules.)。  在 Microsoft Edge 版本 90 或更早版本中，DevTools 仅在单个捆绑包中设置断点。  在 Microsoft Edge 版本 91 或更高版本中，在调试共享组件时，DevTools 会在多个捆绑包中正确设置断点。  若要在开放源代码项目中查看此功能的历史记录Chromium，请导航到"问题[](https://crbug.com/1142705)"1142705、979000 [](https://crbug.com/979000) [1180794。](https://crbug.com/1180794)
 
 #### <a name="support-hover-preview-with-bracket-notation"></a>支持使用括号表示法的悬停预览
 
-DevTools 现在支持在 **源** 工具中使用 `[]` 表示法的 JavaScript 成员表达式上进行悬停预览。  若要在开放源代码项目中查看Chromium历史记录，请导航到"问题[1178305"。](https://crbug.com/1178305)
+DevTools 现在支持在 **源** 工具中使用 `[]` 表示法的 JavaScript 成员表达式上进行悬停预览。  若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1178305"。](https://crbug.com/1178305)
 
 :::image type="complex" source="../../media/2021/04/sources-page-pen.js-breakpoint-arr-i-a.msft.png" alt-text="支持使用 [] 表示法的悬停预览" lightbox="../../media/2021/04/sources-page-pen.js-breakpoint-arr-i-a.msft.png":::
    支持使用 `[]` 表示法的悬停预览
@@ -347,7 +347,7 @@ DevTools 现在支持在 **源** 工具中使用 `[]` 表示法的 JavaScript �
 
 #### <a name="improved-outline-of-html-files"></a>改进的 HTML 文件大纲
 
-DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工具中，打开 `.html` 文件。  若要打开或 (代码) ，请在 `Ctrl` + `Shift` + `O` Windows/Linux 或 `Cmd` + `Shift` + `O` macOS 上选择。  在下图中，DevTools 现在正确列出了大纲中的所有函数。  以前，DevTools 仅显示一些函数。  若要在开放源代码项目中查看此功能的历史记录Chromium，请导航到"问题"761019 1191465" 。 [](https://crbug.com/761019) [](https://crbug.com/1191465)
+DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工具中，打开 `.html` 文件。  若要打开或 (代码) ，请在 `Ctrl` + `Shift` + `O` Windows/Linux 或 `Cmd` + `Shift` + `O` macOS 上选择。  在下图中，DevTools 现在正确列出了大纲中的所有函数。  以前，DevTools 仅显示一些函数。  若要在开放源代码项目中查看此功能的Chromium，请导航到"问题"761019 1191465" [](https://crbug.com/761019) [。](https://crbug.com/1191465)
 
 :::image type="complex" source="../../media/2021/04/sources-page-jobobbx-at.msft.png" alt-text=" 改进的 HTML 文件大纲" lightbox="../../media/2021/04/sources-page-jobobbx-at.msft.png":::
    改进的 HTML 文件大纲
@@ -367,7 +367,7 @@ DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工
 
 :::image type="complex" source="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png" alt-text="Wasm 调试的正确错误堆栈跟踪" lightbox="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png":::
 
-To review the history of this feature in the Chromium open-source project， navigate to Issue [1189161](https://crbug.com/1189161).
+若要在开放源代码项目中查看此功能Chromium，请导航到"问题[1189161"。](https://crbug.com/1189161)
 
 
 <!-- ====================================================================== -->

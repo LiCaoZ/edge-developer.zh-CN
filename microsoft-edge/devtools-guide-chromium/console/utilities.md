@@ -3,16 +3,16 @@ title: 控制台实用工具 API 参考
 description: 开发人员工具控制台中提供的便利Microsoft Edge引用。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: 5f8ba983da512131899d47d762ecf17929a644cb
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.openlocfilehash: c4aba62a3c14e1e8862a1194712f2f23719fc206
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269415"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284404"
 ---
 <!-- Copyright Kayce Basques
 
@@ -54,7 +54,7 @@ $_
 
 ### <a name="example"></a>示例
 
-在下图中，将计算 () `2 + 2` 表达式。  然后 `$_` 计算属性，其中包含相同的值。
+在下图中，计算一个 `2 + 2` () 表达式。  然后 `$_` 计算属性，其中包含相同的值。
 
 :::image type="content" source="../media/console-arithmatic.msft.png" alt-text="$_ 是最近评估的表达式。" lightbox="../media/console-arithmatic.msft.png":::
    `$_` 是最近计算表达式
@@ -174,7 +174,7 @@ for (each in images) {
 
 用于 `$$()` 选择网页中指定元素之后显示的所有图像 `<div>` 并显示源：
 
-:::image type="content" source="../media/console-element-selector-image-filter-all.msft.png" alt-text="使用 $$ () 选择显示在网页中的 <div> 元素后显示的所有图像，并显示源。" lightbox="../media/console-element-selector-image-filter-all.msft.png":::
+:::image type="content" source="../media/console-element-selector-image-filter-all.msft.png" alt-text="使用 $$ () 选择显示在网页中的 <div> 元素之后显示的所有图像，并显示源。" lightbox="../media/console-element-selector-image-filter-all.msft.png":::
 
 > [!NOTE]
 > 在 `Shift` + `Enter` 控制台**中选择，** 在不运行脚本的情况下启动新行。
@@ -274,7 +274,7 @@ debug(method)
 ```
 
 >[!NOTE]
-> 问题[Chromium #1050237](https://crbug.com/1050237)跟踪函数的 `debug()` Bug。  如果遇到问题，请尝试改为 [使用断](../javascript/breakpoints.md) 点。
+> 错误[Chromium #1050237](https://crbug.com/1050237)跟踪函数的 `debug()` Bug。  如果遇到问题，请尝试改为 [使用断](../javascript/breakpoints.md) 点。
 
 ### <a name="example"></a>示例
 
@@ -371,7 +371,7 @@ inspect(document.body);
 <!-- ====================================================================== -->
 ## <a name="geteventlisteners"></a>getEventListeners
 
-`getEventListeners(object)` 返回在指定对象上注册的事件侦听器。  返回值是包含每个已注册事件类型（如 或) ） (`click` 数组 `keydown` 的对象。  每个数组的成员是描述为每种类型注册的侦听器的对象。
+`getEventListeners(object)` 返回在指定对象上注册的事件侦听器。  返回值是包含每个已注册事件类型的数组的对象， (`click` 或 `keydown`) 。  每个数组的成员是描述为每种类型注册的侦听器的对象。
 
 ### <a name="syntax"></a>语法
 
@@ -387,7 +387,7 @@ getEventListeners(object)
 getEventListeners(document);
 ```
 
-:::image type="content" source="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png" alt-text="使用 getEventListeners 文档库 (输出) 。" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png":::
+:::image type="content" source="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png" alt-text="使用 getEventListeners 文档 (输出) 。" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png":::
    使用 的结果 `getEventListeners(document)`
 :::image-end:::
 
@@ -741,6 +741,6 @@ values(object);
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/console/utilities)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/console/utilities)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

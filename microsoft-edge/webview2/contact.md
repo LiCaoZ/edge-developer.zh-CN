@@ -1,19 +1,19 @@
 ---
-description: 与 WebView2 Microsoft Edge联系以提交功能请求或 Bug 报告。
 title: 联系 Microsoft Edge WebView2 团队
+description: 与 WebView2 Microsoft Edge联系以提交功能请求或 Bug 报告。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/29/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: ed43615656612b6f429b6538b36618a6cf212f86
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 09/29/2021
+ms.openlocfilehash: 2f18d5b629436f35a6d2dde9294592c4b81e4ca9
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156688"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286217"
 ---
 # <a name="contact-the-microsoft-edge-webview2-team"></a>联系 Microsoft Edge WebView2 团队
 

@@ -1,18 +1,18 @@
 ---
+title: 模拟移动设备
 description: 使用 Microsoft Edge 中的虚拟设备构建移动优先的网站。
-title: 在 Microsoft Edge DevTools 中模拟移动设备
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/19/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools, 仿真, 设备, 模拟, 移动
-ms.openlocfilehash: c1d81db0d6914f8202609e7d73e57585ec579dcb
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.date: 07/19/2021
+ms.openlocfilehash: 880848446f2dd4c7dcedb082a34ed18d1760a4ce
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269009"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286770"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,9 +27,9 @@ ms.locfileid: "12269009"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="emulate-mobile-devices-in-microsoft-edge-devtools"></a>在 Microsoft Edge DevTools 中模拟移动设备
+# <a name="emulate-mobile-devices"></a>模拟移动设备
 
-使用“**设备仿真**”来大致了解你的页面在移动设备上的外观和响应方式。  Microsoft Edge DevTools 提供了一系列功能，可帮助你模拟移动设备。  该系列包括以下功能。
+使用“**设备仿真**”来大致了解你的页面在移动设备上的外观和响应方式。  Microsoft Edge DevTools 提供了一系列功能，可帮助你模拟移动设备。  该集合包括以下功能：
 
 *   [模拟移动视区](#simulate-a-mobile-viewport)
 *   [限制网络](#throttle-the-network-only)
@@ -53,7 +53,7 @@ ms.locfileid: "12269009"
 <!-- ====================================================================== -->
 ## <a name="simulate-a-mobile-viewport"></a>模拟移动视区
 
-选择"切换 **设备仿真 (**  切换设备工具栏) 或选择"自定义和控制 ![ ](../media/toggle-device-toolbar-dark-icon.msft.png) **DevTools** (`...`) > **设备模拟** "以打开使您能够模拟移动视口的 UI。
+选择切换 **设备仿真 (**  切换设备工具栏) 或选择自定义和控制 ![ ](../media/toggle-device-toolbar-dark-icon.msft.png) **DevTools** (`...`) > **设备模拟** 以打开使您能够模拟移动视口的 UI。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="设备工具栏。" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
 
@@ -86,7 +86,7 @@ ms.locfileid: "12269009"
 | 选项 | 渲染方法 | 光标图标 | 触发事件 |
 |:--- |:--- |:--- |:--- |
 | 移动设备 | 移动设备 | 圆形 | `touch` |
-| 移动设备 (触摸)  | 移动设备 | 正常 | `click` |
+| 移动 (触摸)  | 移动设备 | 正常 | `click` |
 | 桌面 | 桌面 | 正常 | `click` |
 | 桌面 (触摸)  | 桌面 | 圆形 | `touch` |
 
@@ -193,7 +193,7 @@ ms.locfileid: "12269009"
 
     :::image type="content" source="../media/device-mode-network-throttle.msft.png" alt-text="网络面板中的限制列表。" lightbox="../media/device-mode-network-throttle.msft.png":::
 
-    或者 `Control` + `Shift` + `P` ， (Windows、Linux) 或 `Command` (macOS + `Shift` + `P`) **** `3G` ******** 打开"命令菜单"，键入 ，然后选择"启用快速 3G 限制"或"启用慢速 3G 限制"。
+    或者 `Control` + `Shift` + `P` ， (Windows、Linux) 或 (`Command` macOS + `Shift` + `P` ****) `3G` ******** 打开"命令菜单"，键入 ，然后选择"启用快速 3G 限制"或"启用慢速 3G 限制"。
 
     :::image type="content" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="从&quot;命令菜单&quot;中选择&quot;启用快速或缓慢的 3G 限制&quot;。" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
 
@@ -209,7 +209,7 @@ ms.locfileid: "12269009"
 
  如果页面依赖移动设备中的地理位置信息正确呈现，则使用替代地理位置的 UI 提供不同的地理位置。
 
-1.  选择 **"自定义和控制开发人员工具 () >** `...` **更多工具**  >  **传感器"。**
+1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **传感器"。**
 
     :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="用于地理位置的传感器。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
@@ -227,7 +227,7 @@ ms.locfileid: "12269009"
 
 如果页面依赖来自移动设备的方向信息来正确呈现，请打开方向 UI。
 
-1.  选择 **"自定义和控制开发人员工具 () >** `...` **更多工具**  >  **传感器"。**
+1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **传感器"。**
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="&quot;更多工具&quot;菜单上的&quot;传感器&quot;命令。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
@@ -247,11 +247,11 @@ ms.locfileid: "12269009"
 
 如果页面依赖移动设备中的用户代理字符串来正确呈现，请使用“**网络条件**”面板提供不同的用户代理字符串。
 
-1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **网络条件"。**
+1.  选择 **"自定义和控制开发工具 () >** `...` **工具网络**  >  **条件"。**
 
     :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="&quot;更多工具&quot;菜单中的网络条件条目。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
 
-1.  或者，通过选择"命令菜单" (Windows、Linux) `Control` + `Shift` + `P` 或 (`Command` + `Shift` + `P` macOS) 。键入 `Network conditions` ，然后选择"**显示网络条件"。**
+1.  或者，选择"命令菜单"， (Windows、Linux) `Control` + `Shift` + `P` 或 (`Command` + `Shift` + `P` macOS) 。键入 `Network conditions` ，然后选择"**显示网络条件"。**
 
     :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="显示网络条件。" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
 
@@ -291,6 +291,6 @@ ms.locfileid: "12269009"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/device-mode/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/device-mode/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

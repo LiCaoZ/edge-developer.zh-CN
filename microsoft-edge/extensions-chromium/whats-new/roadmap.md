@@ -1,22 +1,22 @@
 ---
+title: Microsoft Edge 加载项路线图
 description: 有关适用于扩展的新合作伙伴中心功能Microsoft Edge更新。
-title: Microsoft Edge加载项路线图
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/24/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， 路线图， 加载项路线图
-ms.openlocfilehash: 00a249b0ec2b7cea9eb78fdd0b5be6f523c35da4
-ms.sourcegitcommit: 16ebc122085d84bcca2eaa356ecf4c5b4259885d
+ms.date: 11/24/2021
+ms.openlocfilehash: 9112e9fdeedf241b90031be7aeafc29734853e86
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "12192383"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285622"
 ---
-# <a name="microsoft-edge-add-ons-roadmap"></a>Microsoft Edge加载项路线图
+# <a name="microsoft-edge-add-ons-roadmap"></a>Microsoft Edge 加载项路线图
 
-此路线图文章介绍有关适用于扩展的新合作伙伴中心Microsoft Edge更新。  我们频繁更新此信息，因此请务必经常查看。
+此路线图文章介绍有关适用于扩展的新合作伙伴中心功能Microsoft Edge更新。  我们频繁更新此信息，因此请务必经常查看。
 
 > [!NOTE]
 > Microsoft 合作伙伴中心 [发布的功能](https://partner.microsoft.com/dashboard/home) 通常会更改。  合作伙伴中心基于市场变化和客户反馈不断发展。  本文中所述的功能也可能会更改。
@@ -34,6 +34,6 @@ ms.locfileid: "12192383"
 
 若要检查合作伙伴中心最近发布的功能，请参阅Microsoft Edge[加载项发布的功能](released-features.md)。
 
-若要查看消费者路线图，请转到预览[Microsoft Edge路线图](https://www.microsoftedgeinsider.com/whats-next)，然后向下滚动到功能**路线图部分。** 
+若要查看消费者路线图，请转到 Insider [Roadmap Microsoft Edge](https://www.microsoftedgeinsider.com/whats-next)并向下滚动到"**功能路线图"** 部分。 
 
-若要查看有关该指南的完整Microsoft Edge，请参阅Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge)。
+若要查看有关 Microsoft Edge 的完整路线图，请参阅 Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge)。

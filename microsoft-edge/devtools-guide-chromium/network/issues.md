@@ -1,18 +1,18 @@
 ---
-description: 了解如何使用 Microsoft Edge DevTools 的网络面板检测网络问题。
 title: 网络问题指南
+description: 如何在 DevTools 的网络面板中检测Microsoft Edge问题。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 5533dbe0bb34a5b880d857712b11b2aa84e9db59
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 05/04/2021
+ms.openlocfilehash: 62d15accdd8210289176fa36977167ca7bc4faa2
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157514"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285349"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -74,7 +74,7 @@ ms.locfileid: "12157514"
 **原因**
 
 *   客户端和服务器之间的连接速度很慢。
-*   服务器响应缓慢。  在本地托管服务器，以确定是连接速度慢还是服务器速度慢。  如果在访问本地服务器时仍 (到第一字节) TTFB，则服务器速度很慢。
+*   服务器响应缓慢。  在本地托管服务器，以确定是连接速度慢还是服务器速度慢。  如果访问本地服务器时，TTFB (到第一字节) 速度较慢，则服务器速度很慢。
 
 **修补程序**
 
@@ -117,6 +117,6 @@ Do you have a network issue that should be added to this guide?
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/network/issues)由 (技术撰稿人[、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse) 和[House Garbee](https://developers.google.com/web/resources/contributors#jonathan-garbee) (Google Developer Expert for Web Technology) 创作。
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/network/issues)由 (技术编写器[、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse) 和[House Garbee](https://developers.google.com/web/resources/contributors#jonathan-garbee) (Google Developer Expert for Web Technology) 创作。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

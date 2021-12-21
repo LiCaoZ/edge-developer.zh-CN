@@ -1,25 +1,25 @@
 ---
-description: 有关验证 Selenium Tools for Microsoft Edge签名的信息。
 title: 正在验证 Microsoft Edge 的 Selenium 工具下载
+description: 如何验证 Selenium Tools for Microsoft Edge GPG 签名。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/29/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， webdriver， selenium， 测试， 工具， 自动化， 测试
-ms.openlocfilehash: bbb6afc894c5288bc183845c0b263b743957d5b3
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 01/29/2021
+ms.openlocfilehash: cab778a0a6383c621aaed65f13fbc6f3d6a3e04c
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157248"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286478"
 ---
-# <a name="verify-downloads-of-selenium-tools-for-microsoft-edge"></a>验证 Selenium Tools for Microsoft Edge
+# <a name="verify-downloads-of-selenium-tools-for-microsoft-edge"></a>验证 Microsoft Edge 的 Selenium 工具下载
 
 本文提供在验证[Selenium Tools](https://github.com/microsoft/edge-selenium-tools/releases)for Microsoft Edge 发行版的签名时使用的公钥。
 
-适用于[Java的](https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java) [Selenium 工具Microsoft Edge](https://github.com/microsoft/edge-selenium-tools/releases)使用[GPG 进行签名](https://gnupg.org)。
+适用于[Java](https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java)的[Selenium 工具Microsoft Edge](https://github.com/microsoft/edge-selenium-tools/releases)使用[GPG 进行签名](https://gnupg.org)。
 
 使用以下密钥验证开发人员工具团队提供的Microsoft Edge[签名](https://twitter.com/edgedevtools)。
 

@@ -1,24 +1,24 @@
 ---
-description: 分析边栏菜单中缺少键盘焦点指示，因为链接上的焦点状态缺少 CSS 伪类规则，再加上该链接没有大纲设置。
 title: 分析边栏菜单中键盘焦点的缺失
+description: 分析边栏菜单中缺少键盘焦点指示，因为链接上的焦点状态缺少 CSS 伪类规则，再加上该链接没有大纲设置。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 1870b029107ca60516843e32b5c74628d2573f6b
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.date: 06/07/2021
+ms.openlocfilehash: fdc7b9a29b467407bbd4861f424b76d6fb9659f5
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140569"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285531"
 ---
 # <a name="analyze-the-lack-of-indication-of-keyboard-focus-in-a-sidebar-menu"></a>分析边栏菜单中键盘焦点的缺失
 
 <!-- Inspect tool, and CSS rules: pseudo-classes for states -->
 
-在辅助功能测试演示页中，使用键盘时，包含蓝色链接的边栏导航菜单不会直观地指示哪个链接具有焦点。  为了找出为什么边栏菜单使键盘用户感到困惑，我们将查找适用于 和 状态的 CSS 伪类规则，以及链接大纲的 `hover` `focus` CSS 属性。
+在辅助功能测试演示页面中，使用键盘时，包含蓝色链接的边栏导航菜单不会直观地指示哪个链接具有焦点。  为了找出为什么边栏菜单使键盘用户感到困惑，我们将查找适用于 和 状态的 CSS 伪类规则，以及链接大纲的 `hover` `focus` CSS 属性。
 
 此分析发现边栏导航菜单的链接中缺少键盘焦点指示的原因是：
 *  链接 `a` 的 CSS 属性设置为 `outline: none` 。
@@ -28,7 +28,7 @@ ms.locfileid: "12140569"
 
 1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  选择**** DevTools (左上角的"检查) 检查图标按钮，以便该按钮以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
+1.  选择 **DevTools** (左上角的"检查) 检查图标按钮，使按钮突出显示为蓝色 ![ ](../media/inspect-icon.msft.png) () 。
 
 1.  将鼠标悬停在边栏导航菜单中的蓝色 **"猫** "链接上。  将显示 Inspect 覆盖层，显示 `a` 元素是可键盘聚焦的。  但是覆盖层不会显示当链接具有焦点时没有视觉指示。
 
@@ -48,7 +48,7 @@ ms.locfileid: "12140569"
         应用于"源"工具中链接的样式
     :::image-end:::
 
-页面样式具有 CSS 伪类规则，用于指示在使用鼠标时位于哪个 `hover` 菜单项 `#sidebar nav li a:hover` ：。  但是，没有 CSS 伪类规则，该状态在使用键盘时直观地指示您位于哪个菜单项上， `focus` 例如 `#sidebar nav li a:focus` 。
+页面样式具有 CSS 伪类规则，用于指示在使用鼠标时位于哪个 `hover` 菜单项上 `#sidebar nav li a:hover` ：。  但是，没有 CSS 伪类规则，该状态在使用键盘时直观地指示您位于哪个菜单项上， `focus` 例如 `#sidebar nav li a:focus` 。
 
 此外，请注意链接的 CSS 属性设置为 `outline: none` 。  这是一种常见做法，当你使用键盘关注元素时，删除浏览器自动添加到元素的大纲。  不使用 `focus` 样式设置会导致用户混淆。
 

@@ -1,33 +1,33 @@
 ---
-description: 将 Chrome 扩展移植到 Microsoft Edge
 title: 将 Chrome 扩展移植到Microsoft Edge
+description: 将 Chrome 扩展移植到 Microsoft Edge。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/17/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 7a6fe06d7e37676ee88842bf955907e7a0885bf5
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 02/17/2021
+ms.openlocfilehash: 48d2bf699d2543c960ba71393d2e09fd2d1d536d
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155603"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284957"
 ---
 # <a name="port-a-chrome-extension-to-microsoft-edge"></a>将 Chrome 扩展移植到Microsoft Edge
 
-Microsoft Edge允许你将 Chrome 扩展移植到Microsoft Edge更改最少。  Chrome 支持的扩展 API 和清单密钥与 Microsoft Edge。  有关 API 列表，Microsoft Edge [API 支持](./api-support.md)。
+只需进行很少的更改，Microsoft Edge 便可支持你将 Chrome 扩展移植到 Microsoft Edge。  Chrome 支持的扩展 API 和清单密钥与 Microsoft Edge。  有关受 API 支持Microsoft Edge，请导航到 API[支持](./api-support.md)。
 
 若要移植 Chrome 扩展，请完成以下步骤。
 
-1.  查看扩展中使用的 Chrome 扩展 API 和Microsoft Edge支持[扩展的 API](./api-support.md)列表。
+1.  查看扩展中使用的 Chrome 扩展 API 和Microsoft Edge支持扩展[的 API](./api-support.md)列表。
 
     > [!NOTE]
     > 如果你的扩展使用的 API 不受 Microsoft Edge，它可能不会直接移植。
 
 1.  在清单文件中，将 `update_URL` 字段设置为 `https://edge.microsoft.com/extensionwebstorebase/v1/crx` 。  值指向加载项网站中扩展Microsoft Edge文件，并允许Microsoft Edge检查 `.crx` 扩展更新。
 1.  如果在 `Chrome` 扩展的名称或说明中使用的，则使用 重新命名扩展 `Microsoft Edge` 。  若要通过认证过程，需要更改。
-1.  通过旁加载扩展来测试扩展Microsoft Edge[在扩展中是否正常工作](../getting-started/extension-sideloading.md)。
+1.  通过旁加载扩展 来测试扩展Microsoft Edge[在扩展中是否正常工作](../getting-started/extension-sideloading.md)。
 1.  如果面临任何问题，可以使用 DevTools 在 Microsoft Edge中调试扩展，或[联系我们](mailto:ext_dev_support@microsoft.com)。
 1.  按照[发布指南在](../publish/publish-extension.md)加载项网站上Microsoft Edge扩展。
 
@@ -38,4 +38,4 @@ Microsoft Edge允许你将 Chrome 扩展移植到Microsoft Edge更改最少。  
 <!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 
-准备好在加载项网站中发布扩展Microsoft Edge，创建[开发人员](../publish/create-dev-account.md)帐户并[发布扩展](../publish/publish-extension.md)。
+准备好在加载项网站中发布扩展Microsoft Edge，创建开发人员[帐户并](../publish/create-dev-account.md)[发布扩展](../publish/publish-extension.md)。

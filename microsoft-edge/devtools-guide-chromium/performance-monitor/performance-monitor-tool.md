@@ -1,18 +1,18 @@
 ---
-description: 性能监视器工具提供实时性能指标，以帮助调查性能问题。
 title: 性能监视器
+description: DevTools 中的性能监视器工具提供实时性能指标，以帮助调查性能问题。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/28/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: fbff7752c1cfadf25c151f2aed89e4df55e224cc
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.date: 10/28/2021
+ms.openlocfilehash: 9393ce7bf725b79cbb6653627763e49ae0775ea2
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141984"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284201"
 ---
 # <a name="performance-monitor"></a>性能监视器
 
@@ -51,8 +51,8 @@ ms.locfileid: "12141984"
 | **JS 堆大小** | 页面上 JavaScript 程序使用的内存量。  默认情况下显示。 |
 | **DOM 节点** | 浏览器中跨选项卡的 DOM 节点 (个) 。  默认情况下显示。 |
 | **JS 事件侦听器** | 浏览器中跨选项卡的 JavaScript 事件侦听器 (数) 。 |
-| **文档** | 浏览器上的文档对象数 (选项卡) 。 |
-| **文档框架** | 浏览器中跨选项卡显示的文档 (数) 。 |
+| **文档** | 浏览器中跨选项卡显示的文档 (数) 。 |
+| **文档框架** | 浏览器上的文档框架数 (选项卡) 。 |
 | **布局/秒** | 浏览器引擎每秒构造页面布局次数。 |
 | **样式重新计算/秒** | 浏览器引擎每秒计算页面的 CSS 样式次数。 |
 

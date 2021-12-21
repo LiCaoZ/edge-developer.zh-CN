@@ -1,18 +1,18 @@
 ---
+title: 使用"覆盖"面板查找未使用的 JavaScript 和 CSS 代码
 description: 如何在 Microsoft Edge DevTools 中查找和分析未使用的 JavaScript 和 CSS 代码。
-title: 使用 Microsoft Edge DevTools 中的“覆盖范围”面板查找未使用的 JavaScript 和 CSS 代码
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 41cb5a5a838fe2069d102b6c89c9005524b9e7f6
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 05/04/2021
+ms.openlocfilehash: 838fe5bccd3fd7ca429968514e6fc6c4161abb1b
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170258"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284614"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +27,7 @@ ms.locfileid: "12170258"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="find-unused-javascript-and-css-code-with-the-coverage-panel-in-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 中的“覆盖范围”面板查找未使用的 JavaScript 和 CSS 代码
+# <a name="find-unused-javascript-and-css-code-with-the-coverage-panel"></a>使用"覆盖"面板查找未使用的 JavaScript 和 CSS 代码
 
 Microsoft Edge DevTools 中的“**覆盖范围**”面板可帮助你查找未使用的 JavaScript 和 CSS 代码。  删除未使用的代码可能会加快页面加载速度并保存移动用户的手机网络数据。
 
@@ -76,8 +76,8 @@ Microsoft Edge DevTools 中的“**覆盖范围**”面板可帮助你查找未�
 
 1.  在“**覆盖范围**”面板中选择以下按钮之一。
     *   如果你想要 **查看加载** 页面所需的代码， (开始检测覆盖和重新加载页面) 选择开始检测覆盖和重新加载 ![ ](../media/reload-icon.msft.png) 页面。
-    *   如果你想要 **查看** 与页面 (使用的代码，请选择"检测范围) 检测 ![ ](../media/record-icon.msft.png) 范围"选项。
-1.  选择 **"停止检测** 覆盖范围"， ("停止检测覆盖范围"和"显示结果") 停止记录 ![ ](../media/stop-icon.msft.png) 代码覆盖时显示结果。
+    *   如果你想要 **查看** 与 (后使用的代码，请选择"检测范围) 检测 ![ ](../media/record-icon.msft.png) 范围"选项。
+1.  选择 **"停止检测** 覆盖"， ("停止检测覆盖范围"和"显示结果") 停止记录 ![ ](../media/stop-icon.msft.png) 代码覆盖时显示结果。
 
 
 <!-- ====================================================================== -->
@@ -99,6 +99,6 @@ Microsoft Edge DevTools 中的“**覆盖范围**”面板可帮助你查找未�
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/coverage/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/coverage/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

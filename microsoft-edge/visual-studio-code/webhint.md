@@ -1,24 +1,24 @@
 ---
-description: 安装和使用 webhint 扩展Visual Studio Code。
 title: webhint 扩展Visual Studio Code
+description: 安装和使用 webhint 扩展Visual Studio Code。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/24/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， vs code， visual studio code， webhint
-ms.openlocfilehash: 79b31c2cac18c177008af033e971c3f57cf3b43c
-ms.sourcegitcommit: aea4d6f07de1c2a4b9c2a31b821e2103df99c030
+ms.date: 08/24/2021
+ms.openlocfilehash: 3493bd8e20eef049c4c9fd4430a6dcc0ce5949b9
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "12185808"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12287036"
 ---
 # <a name="the-webhint-extension-for-visual-studio-code"></a>webhint 扩展Visual Studio Code
 
 使用[Webhint（](https://webhint.io)一个可自定义的 Lint 工具）可改进网站的辅助功能、性能、跨浏览器PWA兼容性和安全性。  它会检查代码的最佳实践和常见错误。 此开放源代码项目最初由 Microsoft Edge 开发，现在是[OpenJS Foundation 的一部分](https://openjsf.org)。  Microsoft Edge团队将继续与社区中的 Web 开发人员一起为 webhint 做贡献。
 
-通过添加 webhint 扩展以识别并修复 HTML、CSS、JavaScript、TypeScript 等中的问题Visual Studio Code。  提示显示为内联下划线，并汇总在"问题 **"** 窗格中。
+通过添加 webhint 扩展以识别并修复 HTML、CSS、JavaScript、TypeScript 等Visual Studio Code。  提示显示为内联下划线，并汇总在"问题 **"** 窗格中。
 
 :::image type="complex" source="./media/webhint-extension.png" alt-text="webhint 扩展Visual Studio Code":::
    webhint 扩展Visual Studio Code

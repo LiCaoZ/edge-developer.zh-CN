@@ -1,18 +1,18 @@
 ---
-description: 开发人员工具的默认Microsoft Edge快捷方式。
 title: 键盘快捷方式
+description: 开发人员工具的默认Microsoft Edge快捷方式。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: b597e9c4163a82826a6c02b6690d77337cfb9efe
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.date: 05/04/2021
+ms.openlocfilehash: cace155ad5f07f3f306c7c14d7cf83b502a3ac84
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170279"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284572"
 ---
 <!-- Copyright Kayce Basques
 
@@ -104,7 +104,7 @@ ms.locfileid: "12170279"
 | 将属性值递增/减 1 | 单击某个值，然后按 `Up Arrow` / `Down Arrow` | 单击某个值，然后按 `Up Arrow` / `Down Arrow` |
 | 将属性值递增/减 10 | 单击某个值，然后按 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | 单击某个值，然后按 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |
 | 将属性值递增/减 100 | 单击某个值，然后按 `Control`+`Up Arrow` / `Control`+`Down Arrow` | 单击某个值，然后按 `Command`+`Up Arrow` / `Command`+`Down Arrow` |
-| 循环浏览角度 (度) 度、 (grad) 、弧度 (弧) 并旋转角度值的 () 表示形式 | 保留 `Shift` ，然后单击 **值旁边的"角度** 预览"框 | 保留 `Shift` ，然后单击 **值旁边的"角度** 预览"框 |
+| 循环角度值的 (度) 、 (grad) 、弧度 (弧) 并旋转角度值的 () 表示形式 | 保留 `Shift` ，然后单击 **值旁边的"角度** 预览"框 | 保留 `Shift` ，然后单击 **值旁边的"角度** 预览"框 |
 | 将角度值递增/减 1 | 单击 **值旁边的"角度** 预览"框，然后按 `Up Arrow` / `Down Arrow` | 单击 **值旁边的"角度** 预览"框，然后按 `Up Arrow` / `Down Arrow` |
 | 将角度值递增/减 10 | 单击 **值旁边的"角度** 预览"框，然后按 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | 单击 **值旁边的"角度** 预览"框，然后按 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |
 | 将角度值递增/减 15 | Click the **Angle Preview** box next to the value then press ， click / mouse slide on the Angle `Shift` Clock **Overlay** | Click the **Angle Preview** box next to the value then press ， click / mouse slide on the Angle `Shift` Clock **Overlay** |
@@ -115,7 +115,7 @@ ms.locfileid: "12170279"
 
 | 操作 | Windows/Linux | macOS |
 |---|---|---|
-| 如果当前 (脚本运行时) ，请暂停脚本运行时 (如果当前已暂停，请)  | `F8` 或 `Control`+`\` | `F8` 或 `Command`+`\` |
+| 如果当前正在运行脚本 (，请暂停脚本运行时) 如果当前 (已暂停，请恢复)  | `F8` 或 `Control`+`\` | `F8` 或 `Command`+`\` |
 | 单步跳过下一函数调用 | `F10` 或 `Control`+`'` | `F10` 或 `Command`+`'` |
 | 单步执行下一函数调用 | `F11` 或 `Control`+`;` | `F11` 或 `Command`+`;` |
 | 跳出当前函数 | `Shift`+`F11` 或 `Control`+`Shift`+`;` | `Shift`+`F11` 或 `Command`+`Shift`+`;` |
@@ -125,8 +125,8 @@ ms.locfileid: "12170279"
 | 保存所有更改 | `Control`+`Alt`+`S` | `Command`+`Option`+`S` |
 | 导航到行 | `Control`+`G` | `Control`+`G` |
 | 跳转到当前打开的文件的行号 | 按 `Control` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` 后跟行号，然后按 `Enter` | 按 `Command` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` 后跟行号，然后按 `Enter` |
-| 跳转到当前打开的文件列， (第 5 行，第 9 列)  | 按 `Control` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` ，然后键入行号，然后键入另一个 `:` ，然后按列号 `Enter` | 按 `Command` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` ，然后键入行号，然后键入另一个 `:` ，然后按列号 `Enter` |
-| 如果当前文件为 HTML 或脚本，则导航到函数声明。  <br />  如果当前文件是样式表，请导航到规则集。  | 按 `Control` + `Shift` + `O` ，然后键入声明/规则集名称，或者从选项列表中选择它 | press `Command` + `Shift` + `O` ，然后键入声明/规则集的名称，或者从选项列表中选择它 |
+| 跳转到当前打开的文件的一列 (例如第 5 行，第 9 列)  | 按 `Control` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` ，然后键入行号，然后键入另一个 `:` ，然后按列号 `Enter` | 按 `Command` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` ，然后键入行号，然后键入另一个 `:` ，然后按列号 `Enter` |
+| 如果当前文件为 HTML 或脚本，则导航到函数声明。  <br />  如果当前文件是样式表，请导航到规则集。  | 按 `Control` + `Shift` + `O` ，然后键入声明 /规则集，或者从选项列表中选择它 | press `Command` + `Shift` + `O` ，然后键入声明/规则集的名称，或者从选项列表中选择它 |
 | 关闭活动的选项卡 | `Alt`+`W` | `Option`+`W` |
 
 ### <a name="code-editor-keyboard-shortcuts"></a>代码编辑器键盘快捷方式
@@ -177,6 +177,6 @@ ms.locfileid: "12170279"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/shortcuts)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/shortcuts)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

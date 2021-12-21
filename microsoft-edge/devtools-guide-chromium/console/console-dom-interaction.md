@@ -1,18 +1,18 @@
 ---
-description: 如何使用控制台工具在浏览器中与当前网页进行交互的概述
 title: 使用控制台与 DOM 交互
+description: 如何使用控制台工具在浏览器中与当前网页交互。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/13/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: e3e2594a8069d77814da91133d8946574932d840
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.date: 04/13/2021
+ms.openlocfilehash: 9d31d7ad75dfd04f9bff21e42499ff22f5313905
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140331"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284397"
 ---
 # <a name="use-the-console-to-interact-with-the-dom"></a>使用控制台与 DOM 交互
 
@@ -25,7 +25,7 @@ ms.locfileid: "12140331"
 若要引用网页的标题，请完成以下操作。
 
 1.  打开“**控制台**”。
-    *   选择 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS) 。
+    *   选择 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS)。
 1.  在控制台中键入或复制并粘贴以下 **代码段**。
 
     ```javascript
@@ -108,7 +108,7 @@ document.querySelector('header').style.border = '2em solid green'
 *   `$x()` 允许您使用 XPATH 选择 DOM 元素。
 *   `$()` `$$()`和 是 和 的 `document.querySelector()` 较短版本 `document.querySelectorAll()` 。
 
-例如，以下代码段检索网页 (中所有的链接，就像) 的简短内容一样，将链接显示为可排序表，以复制和粘贴到 Excel 中。 `$$('a')` `document.querySelectorAll('a')`
+例如，以下代码段检索网页 (中所有的链接，就像) 的简短内容一样，将链接显示为可排序的表格，以复制和粘贴到 Excel 中 `$$('a')` `document.querySelectorAll('a')` 。
 
 ```javascript
 console.table($$('a'),['href','text']);
@@ -233,7 +233,7 @@ Console 的另外两种有趣的 **实用程序方法处理** 事件处理。
 
 监视时，每次对指定元素进行更改时，都会**** 在控制台中收到通知。  将要侦听的事件定义为第二个参数。  定义要监视的事件非常重要，否则将报告元素发生的任何事件。
 
-若要每次滚动时在 **控制台** 中收到通知，请调整窗口大小或当用户在搜索表单中类型时，请完成以下操作。
+若要每次滚动时在 **控制台** 中获取通知，请调整窗口大小，或在用户在搜索表单中类型时完成以下操作。
 
 1.  打开“**控制台**”。
 1.  键入或复制并粘贴以下代码段。

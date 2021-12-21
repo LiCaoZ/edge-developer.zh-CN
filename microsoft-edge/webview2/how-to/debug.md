@@ -1,19 +1,19 @@
 ---
+title: 开始调试 WebView2 应用
 description: 了解如何调试 WebView2 控件。
-title: 开始调试 WebView2 应用程序
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2021
-ms.topic: how-to
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 5755e50201715ddf138b8bd07419038f2d159a73
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.date: 09/15/2021
+ms.openlocfilehash: 5d427db64571d08c01135ca2518995d0c5495324
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269240"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286980"
 ---
 # <a name="get-started-debugging-webview2-apps"></a>开始调试 WebView2 应用
 
@@ -24,7 +24,7 @@ WebView2 Microsoft Edge的目标是将 Web 和本机应用开发功能和工具�
 
 ## [<a name="microsoft-edge-devtools"></a>Microsoft Edge 开发工具](#tab/devtools)
 
-使用[Microsoft Edge工具](../index.md)调试 WebView2 控件中显示的 Web 内容，方法与为 WebView2 控件中显示的其他网页进行调试Microsoft Edge。  若要打开 DevTools，请设置 WebView 控件的焦点，然后使用以下操作之一。
+使用[Microsoft Edge工具](../index.md)调试 WebView2 控件中显示的 Web 内容，方法与为 WebView2 控件中显示的另一个网页Microsoft Edge。  若要打开 DevTools，请设置 WebView 控件的焦点，然后使用以下操作之一。
 
 *   选择 `F12`。
 *   选择 `Ctrl` + `Shift` + `I` 。
@@ -41,10 +41,10 @@ WebView2 Microsoft Edge的目标是将 Web 和本机应用开发功能和工具�
 
 ## [<a name="visual-studio"></a>Visual Studio](#tab/visualstudio)
 
-Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具。  在Visual Studio部分中，主要焦点是调试 WebView 控件，但其他调试方法Visual Studio一样可用。  使用以下过程仅调试 Win32 应用或 Office中的 Web 和本机代码。
+Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具。  在Visual Studio部分中，主要焦点是调试 WebView 控件，但其他调试方法Visual Studio一样可用。  使用以下过程调试 Win32 应用中的 Web 和本机代码，Office外接程序。
 
 > [!IMPORTANT]
-> 当你在附加了本机调试Visual Studio中调试应用时，选择可能会触发本机调试器 `F12` ，而不是开发人员工具。  选择 `Ctrl` + `Shift` + `I` ，或使用上下文菜单 (右键单击) ，以避免这种情况。
+> 当你在附加了本机调试Visual Studio中调试应用时，选择可能会触发本机调试器 `F12` ，而不是开发人员工具。  选择 `Ctrl` + `Shift` + `I` ，或使用上下文菜单 (右键) 以避免这种情况。
 
 开始之前，请确保满足以下要求。
 
@@ -198,7 +198,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
         "useWebView": true
     ```
 
-    WebView2 控件必须打开 CDP 端口以允许调试 WebView2 控件。  必须生成代码，以确保在启动调试程序之前，只有一个 WebView2 控件具有打开的 Chrome 开发人员协议 (CDP) 打开。
+    WebView2 控件必须打开 CDP 端口以允许调试 WebView2 控件。  必须生成代码，以确保在启动调试程序之前，只有一个 WebView2 控件的 Chrome 开发人员协议 (CDP) 打开。
 
 *   调试跟踪选项
 

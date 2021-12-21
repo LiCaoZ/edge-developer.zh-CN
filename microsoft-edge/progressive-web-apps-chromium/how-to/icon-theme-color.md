@@ -1,23 +1,23 @@
 ---
 title: 定义图标和主题颜色
-description: 了解如何为应用定义应用图标PWA标题栏的主题颜色，以及应用窗口的背景色。
+description: 了解如何为应用窗口定义PWA图标、标题栏的主题颜色以及应用窗口的背景色。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/27/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用， PWA， Edge， Windows， 主题， 颜色， 图标
-ms.openlocfilehash: be788867c23fdba9ef957514ed9d1b8414a69350
-ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
+keywords: 渐进式 Web 应用， PWA， 边缘， Windows， 主题， 颜色， 图标
+ms.date: 09/27/2021
+ms.openlocfilehash: 46e07e48145cd38e6e4eecb2e25288ab199f1549
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "12235724"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285258"
 ---
 # <a name="define-icons-and-a-theme-color"></a>定义图标和主题颜色
 
-可以按照安装在操作系统或操作系统Windows操作系统中的 PA 的方式自定义安装在 (操作系统) 。  一PWA定义标题栏的一组图标和主题颜色。
+可以按照安装在操作系统Windows操作系统或操作系统中的 PA 的方式自定义安装在 (操作系统) 。  一PWA定义标题栏的一组图标和主题颜色。
 
 
 <!-- ====================================================================== -->
@@ -73,9 +73,9 @@ ms.locfileid: "12235724"
 <!-- ====================================================================== -->
 ## <a name="choose-a-theme-color"></a>选择主题颜色
 
-在Windows，PWA 具有自己的应用程序窗口，其中包含应用名称和系统关闭、最大化和最小化**图标**的标题栏。 **** ****
+在Windows，PWA 具有自己的应用程序窗口，其中包含应用名称和系统关闭、最大化和最小化图标**的标题栏。** **** ****
 
-web 内容由 PWA填充窗口的整个图面区域，标题栏区域除外，可以使用主题颜色进行自定义。
+由模板创建的 web PWA填充窗口的整个图面区域，标题栏区域除外，可以使用主题颜色自定义该区域。
 
 下图显示了在PWA主题颜色时，以及使用与应用的主要颜色匹配的主题颜色时，用户标题栏的外观：
 

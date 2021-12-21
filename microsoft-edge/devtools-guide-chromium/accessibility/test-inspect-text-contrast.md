@@ -1,18 +1,18 @@
 ---
-description: 使用页面上的"检查"工具的信息覆盖来检查默认状态下的文本颜色对比度，该页面上有一个包含"对比度"信息的"辅助功能"部分。
 title: 使用 Inspect 工具检查默认状态下的文本颜色对比度
+description: 使用页面上的"检查"工具的信息覆盖来检查默认状态下的文本颜色对比度，该页面上有一个包含"对比度"信息的"辅助功能"部分。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: bd1952939564ca9f49c50bc1386446e20ffc285c
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.date: 06/07/2021
+ms.openlocfilehash: 5fc1693578f89a0b8bbcb3b454ab1a79b66b5131
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140429"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285468"
 ---
 # <a name="check-text-color-contrast-in-the-default-state-using-the-inspect-tool"></a>使用 Inspect 工具检查默认状态下的文本颜色对比度
 
@@ -42,7 +42,7 @@ ms.locfileid: "12140429"
         菜单项具有足够的对比度，如 Inspect 工具中所示
     :::image-end:::
 
-1.  在呈现的网页的"私人 **状态"** 部分，将鼠标悬停在 **"动物"** 链接上。  **Inspect 工具**的信息覆盖层在 Contrast 行上显示橙色感叹号****，指示此元素没有足够的文本与背景颜色的对比度。
+1.  在呈现的网页的"私人 **状态"** 部分，将鼠标悬停在 **"动物"** 链接上。  **Inspect 工具**的信息覆盖层在"对比度"行上显示橙色感叹号****，指示此元素没有足够的文本与背景颜色的对比度。
 
     :::image type="complex" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="对比度不足的元素，如 Inspect 工具中的警告所示" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
         对比度不足的元素，如 Inspect 工具中的警告所示

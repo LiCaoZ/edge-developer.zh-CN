@@ -1,18 +1,18 @@
 ---
-description: 了解如何使用 Microsoft Edge 开发人员工具查看和更改页面的 CSS。
-title: 检查 Microsoft Edge 开发人员工具中的 CSS 网格
+title: 检查 CSS 网格
+description: 使用 Microsoft Edge DevTools 查看和更改页面 CSS 的 CSS。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
-ms.openlocfilehash: 3c832a6126b886b61639d456c28f005df9a26eb7
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 05/04/2021
+ms.openlocfilehash: 94c8b1adeb492ce1f8c47175c9d73882edb0787c
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156352"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285797"
 ---
 # <a name="inspect-css-grid"></a>检查 CSS 网格
 
@@ -69,7 +69,7 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
     | 线条选项 | 详细信息 |
     |:--- |:--- |
     | **隐藏线条标签** | 隐藏每个网格叠加层的线条标签。 |
-    | **显示线条编号** | 显示默认选中的每个网格覆盖层 (行) 。 |
+    | **显示线条编号** | 显示默认选中的每个网格覆盖 (的行) 。 |
     | **显示线条名称** | 显示每个网格叠加层的线条名称（倘若提供了名称）。 |
 
 *  选中以下选项旁边的复选框。
@@ -77,8 +77,8 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
     | 选项 | 详细信息 |
     |:--- |:--- |
     | **显示轨道大小**  | 显示 (或) 轨的大小。 |
-    | **显示区域名称** | 当 (时) 区域的名称或隐藏区域名称。 |
-    | **延伸网格线** | 显示 (或隐藏) 轴上网格尺寸的扩展。  默认情况下，网格线仅在设置了 `display: grid` 或 `display: inline-grid` CSS 的元素内显示。 |
+    | **显示区域名称** | 在 (时) 区域的名称或隐藏区域名称。 |
+    | **延伸网格线** | 显示 (或隐藏) 沿每个轴的网格尺寸的扩展。  默认情况下，网格线仅在设置了 `display: grid` 或 `display: inline-grid` CSS 的元素内显示。 |
 
 以下各节提供了每个**叠加层显示设置**的详细信息。
 
@@ -184,7 +184,7 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
 
 ### <a name="highlight-the-grid"></a>突出显示网格
 
-若要在 **"** 元素"工具中突出显示 HTML 元素并滚动到网页上，请选择"**** 元素"面板中的"显示元素" ("显示元素"面板图标中的") ![ ](../media/show-element-in-element-panel-icon.msft.png) 图标"。
+若要在 **"** 元素"工具中突出显示 HTML 元素并滚动到网页上，请选择"**** 元素"面板中的"显示元素" ("显示元素"面板图标) ![ ](../media/show-element-in-element-panel-icon.msft.png) 图标。
 
 :::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="突出显示网格" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
    突出显示网格

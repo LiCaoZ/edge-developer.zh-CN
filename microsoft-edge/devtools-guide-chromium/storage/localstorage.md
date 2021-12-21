@@ -1,18 +1,18 @@
 ---
-description: 如何使用“本地存储”窗格和控制台查看和编辑 localStorage。
-title: 使用 Microsoft Edge DevTools 查看和编辑本地存储
+title: 查看和编辑本地存储
+description: 如何使用"本地模式"窗格和控制台查看和编辑 localStorage 键值对存储值对。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: c847222cb6fd1aa86732a8db3d70359325e3f63e
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 05/04/2021
+ms.openlocfilehash: c1a0e0f079024e92a11c28c22a1672ab61414528
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157122"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285013"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +27,7 @@ ms.locfileid: "12157122"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="view-and-edit-local-storage-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 查看和编辑本地存储
+# <a name="view-and-edit-local-storage"></a>查看和编辑本地存储
 
 本指南演示如何使用 [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) 查看、编辑和删除 [localStorage](https://developer.mozilla.org/docs/Web/API/Window/localStorage) 键值对。
 
@@ -87,7 +87,7 @@ ms.locfileid: "12157122"
 
 1.  [查看域的`localStorage`键值对](#view-localstorage-keys-and-values)。
 1.  选择要删除的键值对。  DevTools 会以蓝色将其突出显示以表示其已选中。
-1.  Select the `Delete` key or choose Delete Selected ** (** Delete ![ Selected ](../media/delete-icon.msft.png)) .
+1.  选择该 `Delete` 键或选择"删除 **所选** (![ 删除所选 ](../media/delete-icon.msft.png)) 。
 
 
 <!-- ====================================================================== -->
@@ -117,6 +117,6 @@ ms.locfileid: "12157122"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

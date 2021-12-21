@@ -1,18 +1,18 @@
 ---
-description: 如果发现自己在控制台中重复键入相同的JavaScript表达式，请尝试使用动态表达式。
-title: 使用 Live Expressions 实时观看 JavaScript 表达式值
+title: 使用 Live Expressions 监视 JavaScript 中的更改
+description: 使用 Live Expressions 实时观看 JavaScript 表达式值。  如果发现自己在控制台中重复键入相同的JavaScript表达式，请尝试使用动态表达式。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/13/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 565282010ff5a9c06cf54111ef597d7c773b5461
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.date: 04/13/2021
+ms.openlocfilehash: 330fc2585d75b490619445d1c5dde993dd1b313c
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140688"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286084"
 ---
 # <a name="monitor-changes-in-javascript-using-live-expressions"></a>使用 Live Expressions 监视 JavaScript 中的更改
 

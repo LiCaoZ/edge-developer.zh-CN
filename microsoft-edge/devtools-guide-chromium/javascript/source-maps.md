@@ -1,18 +1,18 @@
 ---
-description: 即使组合、缩小或编译客户端代码，也保持其可读和可调试。
 title: 将预处理的代码映射到源代码
+description: 即使组合、缩小或编译客户端代码，也保持其可读和可调试。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 455aee36befe5f24ba1799281a096bf1f99ed326
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.date: 05/04/2021
+ms.openlocfilehash: babaee94c59b01787701961eab629b9c383f4799
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170335"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284215"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -69,21 +69,21 @@ todo: add link to display the preprocessor support section when section is avail
 
 通常将以下类型的预处理器与 Source 地图：
 
-*   Transpilers [ (，Traceur](https://babeljs.io) [) ](https://github.com/google/traceur-compiler/wiki/Getting-Started)
-*   编译器 ([关闭编译器](https://github.com/google/closure-compiler)、TypeScript、CoffeeScript、) [](https://coffeescript.org) [](https://www.typescriptlang.org) [](https://www.dartlang.org)
-*   [UglifyJS](https://github.com/mishoo/UglifyJS) (小型) 
+*   Transpilers [ (，Traceur](https://babeljs.io)) [](https://github.com/google/traceur-compiler/wiki/Getting-Started)
+*   编译器 ([关闭编译器](https://github.com/google/closure-compiler)[、TypeScript、CoffeeScript、) ](https://www.typescriptlang.org) [](https://coffeescript.org) [](https://www.dartlang.org)
+*   [UglifyJS](https://github.com/mishoo/UglifyJS) (微型) 
 
 
 <!-- ====================================================================== -->
-## <a name="source-maps-in-devtools-sources-tool"></a>DevTools 地图工具中的源源
+## <a name="source-maps-in-devtools-sources-tool"></a>DevTools 地图工具中的源内容
 
 来自地图的源文件会导致 DevTools 加载原始文件以及缩小的文件。  然后，使用原始文件设置断点并逐步执行代码。  同时，Microsoft Edge运行缩小代码。  通过运行代码，你可以错觉运行生产中的开发网站。
 
-在 DevTools 地图源版本时，应该注意到 JavaScript 未编译，并且它引用的所有单个 JavaScript 文件都显示出来。  DevTools 地图源映射使用的是源映射，但基础功能实际上运行已编译的代码。  任何错误、日志和断点都映射到开发人员代码，以便进行出色的调试。  实际上，它让你产生一种在生产中运行开发网站的错觉。
+在 DevTools 地图源版本时，应该会注意到 JavaScript 未编译，并且它引用的所有单个 JavaScript 文件都显示出来。  DevTools 地图源映射使用的是源映射，但基础功能实际上运行已编译的代码。  任何错误、日志和断点都映射到开发人员代码，以便进行出色的调试。  实际上，它让你产生一种在生产中运行开发网站的错觉。
 
 ### <a name="enable-source-maps-in-settings"></a>在设置地图源源
 
-源地图默认启用<!-- (as of Microsoft Edge 39)-->，但如果您想要仔细检查或启用它们;First open DevTools， choose **Customize and control DevTools** () > `...` **设置**.  在首选项**窗格的****源下**，打开启用**JavaScript 源地图。**  您还可以启用启用 CSS**源地图。**
+源地图默认启用<!-- (as of Microsoft Edge 39)-->，但如果您想要仔细检查或启用它们;First open DevTools， choose **Customize and control DevTools** () > `...` **设置**.  在首选项**窗格的****源下**，启用**JavaScript 源地图。**  您还可以启用启用 CSS**源地图。**
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="启用源地图" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
    **启用 JavaScript 源地图**
@@ -91,7 +91,7 @@ todo: add link to display the preprocessor support section when section is avail
 
 ### <a name="debugging-with-source-maps"></a>使用 Source 地图
 
-调试[代码并启用源代码地图](index.md#step-4-step-through-the-code)时，源地图显示在两处：
+调试[代码并启用](index.md#step-4-step-through-the-code)地图时，源地图显示在两处：
 
 1.  在控制台 (源的链接应该是原始文件，而不是生成的) 
 1.  单步执行代码 (调用堆栈中的链接应打开原始源文件) 
@@ -102,7 +102,7 @@ todo: add link to display the preprocessor support section when section is avail
 
 虽然 不是 Source Map 规范的一部分，但 允许您在使用 evals 时更轻松地 `@sourceURL` 进行开发。  帮助程序显示类似于 `//# sourceMappingURL` 属性，并提及源地图 V3 规范。
 
-通过在你的代码中包括以下特殊注释（已对此进行评论）中，你可以命名 evals 以及内联脚本和样式，以便每个注释在 DevTools 中显示为更符合逻辑的名称。
+通过在你的代码中包括以下特殊注释（已对此进行评论）可以命名 evals 以及内联脚本和样式，以便每个注释在 DevTools 中显示为更符合逻辑的名称。
 
 ```javascript
 //# sourceURL=source.coffee

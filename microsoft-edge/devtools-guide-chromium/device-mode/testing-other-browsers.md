@@ -1,18 +1,18 @@
 ---
-description: 你的作业不会以确保你的网站在 Android 和 Microsoft Edge运行结束。  尽管设备模式可以模拟一系列其他设备（如智能手机），但我们鼓励你查看由其他浏览器提供的模拟解决方案。
 title: 模拟和测试其他浏览器
+description: 你的作业不会以确保你的网站在 Android 和 Microsoft Edge运行结束。  尽管设备模式可以模拟一系列其他设备（如智能手机），但我们鼓励你查看由其他浏览器提供的模拟解决方案。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: d94df4a68ecd9eabe8111bea3bcd10de6933207e
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 05/04/2021
+ms.openlocfilehash: d61cadeb25078c19926c20bce8f0481597c24a0d
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157465"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286028"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -45,7 +45,7 @@ ms.locfileid: "12157465"
 
 ### <a name="firefox-responsive-design-view"></a>Firefox 响应式设计视图
 
-Firefox 具有[](https://developer.mozilla.org/docs/Tools/Responsive_Design_View)响应式设计视图，该视图鼓励您停止就特定设备进行思考，而是通过拖动窗口的边缘来浏览设计在常见屏幕大小或您自己的屏幕大小上的变化。
+Firefox 具有[](https://developer.mozilla.org/docs/Tools/Responsive_Design_View)响应式设计视图，鼓励您停止就特定设备进行思考，而是通过拖动窗口的边缘来浏览设计在常见屏幕大小或您自己的屏幕大小上的变化。
 
 ### <a name="edgehtml-emulation"></a>EdgeHTML 模拟
 
@@ -67,7 +67,7 @@ Firefox 具有[](https://developer.mozilla.org/docs/Tools/Responsive_Design_View
 :::image-end:::
 -->
 
-目前，无法将 Microsoft Edge Android 仿真器上。  但是，您可以使用 Android 浏览器、Chromium命令行管理程序以及适用于 Android 的 Firefox，我们将在本文的稍后部分介绍这些内容。  Chromium内容命令行管理程序Chromium呈现引擎运行Microsoft Edge，但不带特定于浏览器的功能。
+目前，无法将 Microsoft Edge Android 仿真器上。  但是，您可以使用 Android 浏览器、Chromium Shell 和适用于 Android 的 Firefox，我们将在本文的稍后部分介绍这些内容。  Chromium内容命令行管理程序在Chromium引擎中运行Microsoft Edge，但不带特定于浏览器的功能。
 
 Android 仿真器附带 Android SDK，你需要下载为 Android [Studio](https://developer.android.com/sdk/installing/studio.html)的一部分。  然后按照说明[设置虚拟设备并](https://developer.android.com/tools/devices/managing-avds.html)[启动仿真器](https://developer.android.com/tools/devices/emulator.html)。
 启动仿真器后，选择 **浏览器图标，** 在适用于 Android 的旧股票浏览器上测试你的网站。
@@ -80,7 +80,7 @@ Android 仿真器附带 Android SDK，你需要下载为 Android [Studio](https:
 :::image-end:::
 -->
 
-若要安装适用于 Android Chromium命令行管理程序，请保持仿真器运行并运行以下命令：
+若要安装适用于 android Chromium内容命令行管理程序，请保持仿真器运行并运行以下命令：
 
 ```shell
 git clone https://github.com/PaulKinlan/chromium-android-installer.git
@@ -115,7 +115,7 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 完成后，了解如何通过 Apple 开发人员文档使用 [模拟器](https://help.apple.com/simulator/mac/current)。
 
 > [!NOTE]
-> 若要避免每次想要使用 iOS 模拟器时都打开 Xcode，请将其打开，将鼠标悬停在扩展坞中的 iOS 模拟器图标上，打开上下文菜单 (右键单击) ，然后选择"在扩展坞中**保留"。**  现在只要需要图标即可。
+> 若要避免每次想要使用 iOS 模拟器时都打开 Xcode，请将其打开，将鼠标悬停在扩展坞中的 iOS 模拟器图标上，打开上下文菜单 (右键单击) ，然后选择"保持在扩展坞中 **"。**  现在只要需要图标即可。
 
 ### <a name="microsoft-edge-edgehtml"></a>Microsoft Edge (EdgeHTML) 
 
@@ -129,7 +129,7 @@ Microsoft Edge (使用 EdgeHTML) 虚拟机 (VM) ，可以通过 VirtualBox (或 
 <!-- ====================================================================== -->
 ## <a name="cloud-based-emulators-and-simulators"></a>基于云的模拟器和模拟器
 
-如果你无法使用仿真器，并且无法访问真实设备，则基于云的仿真器是下一个最佳选择。  与实际设备和本地仿真器不同，基于云的模拟器的一大优点是，可以跨不同平台自动执行网站单元测试。
+如果你无法使用仿真器，并且无法访问真实设备，则基于云的仿真器是下一个最佳选择。  与实际设备和本地仿真器不同，基于云的模拟器的一大优势是，可以跨不同平台自动执行网站单元测试。
 
 以下产品是基于云的仿真器和相关产品的示例。  这些说明来自产品的信息网站，并用作要考虑的特性或功能的示例。
 
@@ -137,13 +137,13 @@ Microsoft Edge (使用 EdgeHTML) 虚拟机 (VM) ，可以通过 VirtualBox (或 
 
 *   [设备 Anywhere](https://www.sigos.com/app-experience/) 不使用仿真器，而是能够远程控制的真实设备。  当你需要在特定的设备上重现问题，并且某些报告中可能不会显示问题时，这非常有用。
 
-*   [LambdaTest](https://www.lambdatest.com/) 可帮助你在各种浏览器和操作系统的组合上执行手动跨浏览器测试。  你可以录制复杂错误的视频，并通过集成（如 Microsoft Teams、Slack 等）共享它们。  可以通过并行运行测试来加快测试速度。
+*   [LambdaTest](https://www.lambdatest.com/) 可帮助你在各种浏览器和操作系统的组合上执行手动跨浏览器测试。  你可以录制复杂 Bug 的视频并通过集成（如 Microsoft Teams、Slack 等）共享它们。  可以通过并行运行测试来加快测试速度。
 
 *   [使用操作](https://saucelabs.com) 标签，可以在仿真器内运行单元测试，这可用于编写通过网站的流脚本，并随后在各种设备上观看此内容的视频录制。  您还可以对网站执行手动测试。
 
 *   [TestingBot](https://testingbot.com/) 可帮助你在各种浏览器和操作系统组合上执行手动测试和自动测试。  在 TestingBot 的仿真器和物理设备上测试你的网站和移动应用。
 
- (此列表因添加而关闭。) 
+ (此列表因加法而关闭。) 
 
 
 <!-- ====================================================================== -->

@@ -1,23 +1,23 @@
 ---
-description: 了解如何静态链接 WebView2 加载程序库。
-title: 如何静态链接 WebView2 加载程序库
+title: 静态链接 WebView2 加载程序库
+description: 如何静态链接 WebView2 加载程序库。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
-ms.topic: how-to
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 9c2bf849b3d34ea71f857fc9f2ef74c8d7ad8044
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 05/06/2021
+ms.openlocfilehash: a025d5cf5cc12d239d2560911f448123bc14cf59
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156821"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286196"
 ---
 # <a name="statically-link-the-webview2-loader-library"></a>静态链接 WebView2 加载程序库
 
-你可能希望使用单个可执行文件（而不是许多文件的包）来分发应用程序。 若要创建单个可执行文件或减小程序包的大小，应静态链接 WebView2Loader 文件。 WebView2 SDK 包含头文件 、 `WebView2Loader.dll` 和 `IDL` 文件。 `WebView2Loader.dll` 是一个小组件，可帮助应用在设备上找到 WebView2 运行时Microsoft Edge预览通道。
+你可能希望使用单个可执行文件（而不是许多文件的包）来分发应用程序。 若要创建单个可执行文件或减小程序包的大小，应静态链接 WebView2Loader 文件。 WebView2 SDK 包含头文件 、 `WebView2Loader.dll` 和 `IDL` 文件。 `WebView2Loader.dll` 是一个小型组件，可帮助应用在设备上找到 WebView2 运行时Microsoft Edge预览通道。
 
 对于不希望提供 的应用， `WebView2Loader.dll` 请完成以下步骤。
 

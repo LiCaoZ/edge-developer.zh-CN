@@ -1,18 +1,18 @@
 ---
-description: 使用"源"工具查看、修改和调试服务器返回的 JavaScript，并检查包含当前网页的资源。  若要将"源"工具用作开发环境，请向 Workspace 中添加源文件。
 title: 源工具概述
+description: 使用"源"工具查看、修改和调试服务器返回的 JavaScript，并检查包含当前网页的资源。  若要将"源"工具用作开发环境，请向 Workspace 中添加源文件。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 7bffbde7dd8e5403c799ccd2d75bc680e18bd381
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 04/20/2021
+ms.openlocfilehash: eb2b4638366f2ae66d629b29aa6d0e33b621dc98
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155995"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285755"
 ---
 <!-- Copyright Kayce Basques
 
@@ -49,7 +49,7 @@ ms.locfileid: "12155995"
    导航、查看、编辑和调试服务器返回的 JavaScript
 :::image-end:::
 
-若要最大化"源"工具的大小，请取消停靠"DevTools"到单独的窗口，并可以选择将"DevTools"窗口移动到单独的监视器。  请参阅 [Change DevTools placement (Undock， Dock to bottom， Dock to left) ](../customize/placement.md).
+若要最大化"源"工具的大小，请取消停靠"DevTools"到单独的窗口，并可以选择将"DevTools"窗口移动到单独的监视器。  请参阅[更改 DevTools 放置位置（取消停靠，停靠到底部，停靠到左侧）](../customize/placement.md)。
 
 若要加载上面显示的调试演示网页，请参阅下面的使用 [调试器的基本](#the-basic-approach-to-using-a-debugger)方法。
 
@@ -175,17 +175,17 @@ script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
 document.head.appendChild(script);
 ```
 
-相反，您可以将此代码保存在 **代码** 段中，然后随时轻松地运行它。  当你选择 `Ctrl` + `S` (Windows/Linux) `Command` + `S` 或 (macOS) 时，DevTools**** 会将代码段保存到文件系统。
+相反，您可以将此代码保存在 **代码** 段中，然后随时轻松地运行它。  当你选择 `Ctrl` + `S` (Windows/Linux) 或 `Command` + `S` (macOS) 时，DevTools 会将**代码段**保存到文件系统。
 
 有多种方法可以运行代码段：
-*   在 **导航器窗格中** ，选择" **代码** 段"选项卡，然后选择代码段文件将其打开。  然后在"编辑器"窗格底部，选择"运行**** ![ " ("运行"按钮 ](../media/run-snippet-icon.msft.png)) 。
-*   当 DevTools 具有焦点时，选择 `Ctrl` + `P` (Windows/Linux) 或 `Command` + `P` (macOS) 打开命令[菜单](../command-menu/index.md)，然后键入 `!` 。
+*   在 **导航器窗格中** ，选择" **代码** 段"选项卡，然后选择代码段文件将其打开。  然后在“编辑器”窗格底部，选择“**运行**”(![“运行”按钮](../media/run-snippet-icon.msft.png))。
+*   当 DevTools 具有焦点时，选择 `Ctrl` + `P` (Windows/Linux) 或 `Command` + `P` (macOS) 以打开“[命令菜单](../command-menu/index.md)”，然后键入 `!`。
 
 代码段 类似于小书签。
 
 #### <a name="see-also"></a>另请参阅
 
-*   [使用 Microsoft Edge DevTools 在任何网页上运行 JavaScript 代码片段](../javascript/snippets.md)
+*   [在任何网页上运行 JavaScript 代码段](../javascript/snippets.md)
 
 ### <a name="using-the-command-menu-to-open-files"></a>使用命令菜单打开文件
 
@@ -243,11 +243,11 @@ document.head.appendChild(script);
    在 **编辑器** 窗格中编辑 JavaScript
 :::image-end:::
 
-若要将文件加载到"编辑器"窗格中，请使用**导航器**窗格（左侧）中的"**页**"选项卡。  或使用命令 **菜单**，如下所示：在 DevTools 的右上角，选择自定义和控制 **DevTools** `...` () 然后选择打开 **文件**。
+若要将文件加载到"编辑器"窗格中，请使用**导航器**窗格（左侧）中的"**页**"选项卡。  或使用“**命令菜单**”，如下所示: 在 DevTools 的右上角，选择“**自定义和控制 DevTools**”(`...`)，然后选择“**打开文件**”。
 
 #### <a name="save-and-undo"></a>保存和撤消
 
-若要使 JavaScript 更改生效，请选择 `Ctrl` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 。
+若要使 JavaScript 更改生效，请选择 `Ctrl` + `S` (Windows、Linux) 或 `Command` + `S` (macOS)。
 
 如果更改文件，文件名旁边将出现一个星号。
 *   若要保存更改，请在 `Ctrl` + `S` Windows/Linux 或 `Command` + `S` macOS 上选择。
@@ -290,7 +290,7 @@ DevTools 不会重新运行脚本，因此唯一生效的 JavaScript 更改是�
 
 ### <a name="reformatting-a-minified-javascript-file-with-pretty-print"></a>使用非常打印重新格式化缩小的 JavaScript 文件
 
-若要使用"花式打印"重新设置文件的格式使其可读，请在"编辑器"**** 窗格底部选择"真字打印"按钮 ![ (Format) （显示为大括号 ](../media/format-icon.msft.png) ）。  或者，如果 **"编辑器"** 窗格顶部显示"非常打印"按钮，您可以选择该按钮。
+若要使用美样打印重新格式化文件使其可读，请选择“编辑器”窗格底部的“**美样打印**”按钮（![格式](../media/format-icon.msft.png)），其显示为大括号。  或者，如果 **"编辑器"** 窗格顶部显示"非常打印"按钮，您可以选择该按钮。
 
 :::image type="complex" source="../media/minified.msft.png" alt-text="&quot;彩色打印&quot;按钮" lightbox="../media/minified.msft.png":::
    " **彩色打印"** 按钮
@@ -396,9 +396,9 @@ CSS 更改会立即生效;无需手动保存更改。
 在 DevTools 中查看源文件的主要位置是源**工具。**  但有时需要在查看或编辑源文件时访问其他工具，例如 **元素** 或 **控制台**。  使用 **"箱"中的** "快速源 ["工具](../customize/index.md#drawer)。
 
 1.  选择除"源"工具 **外** 的其他工具，如 **"元素"** 工具。
-1.  选择 `Ctrl` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 。  命令菜单将打开。
+1.  选择 `Ctrl` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS)。  命令菜单将打开。
 1.  键入 `Quick Source` ，然后选择"显示**快速源"。**  在"DevTools"窗口的底部，将显示"箱"，并选中 **"快速源"** 面板。  **快速源**面板包含在 **Source** 工具中编辑的最后一个文件，该文件位于精简版本的 DevTools 代码编辑器中。
-1.  选择 `Ctrl` + `P` (Windows、Linux) 或 (`Command` + `P` macOS) 打开 **"打开文件"** 对话框。
+1.  选择 `Ctrl` + `P` (Windows、Linux) 或 `Command` + `P` (macOS) 以打开“**打开文件**”对话框。
 
 
 <!-- ====================================================================== -->
@@ -434,7 +434,7 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
 若要在网页上使用调试器，通常设置断点，然后从网页发送表单，如下所示：
 
-1.  在浏览器的新选项卡中打开网页。  例如，在一个新选项卡中打开此表单网页[：Demo： 入门使用 DevTools Microsoft Edge JavaScript。](https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html)
+1.  在浏览器的新选项卡中打开网页。  例如，在一个新选项卡中打开此表单网页: [演示: 使用 JavaScript 配合 Microsoft Edge DevTools 进行调试入门](https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html)。
 
 1.  选择 `F12` 以打开 **"DevTools"** 窗口，然后选择"源 **"** 选项卡。
 
@@ -476,10 +476,10 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
 ### <a name="debug-from-visual-studio-code-directly"></a>直接从Visual Studio Code调试
 
-若要使用功能更加完整的 Visual Studio Code 调试程序而不是 DevTools 调试器，请使用**Microsoft Edge DevTools**扩展Visual Studio Code。
+若要使用功能更全的 Visual Studio Code 调试程序而不是 DevTools 调试器，请使用适用于 Visual Studio Code 的 **Microsoft Edge DevTools**扩展。
 
-:::image type="complex" source="../media/microsoft-edge-tools-for-vs-code-extension.msft.png" alt-text="Microsoft Edge开发人员的 DevTools Visual Studio Code" lightbox="../media/microsoft-edge-tools-for-vs-code-extension.msft.png":::
-   适用于**Microsoft Edge开发人员的 DevTools** Visual Studio Code
+:::image type="complex" source="../media/microsoft-edge-tools-for-vs-code-extension.msft.png" alt-text="适用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展" lightbox="../media/microsoft-edge-tools-for-vs-code-extension.msft.png":::
+   适用于 Visual Studio Code 的 **Microsoft Edge DevTools** 扩展
 :::image-end:::
 
 此扩展提供从 Microsoft Visual Studio Code 中访问 Microsoft Edge DevTools 的 **Elements** 和 **网络** 工具。
@@ -490,7 +490,7 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
 以下文章涵盖调试 **器** 窗格和断点：
 
-*   [在开发人员工具中Microsoft Edge JavaScript](../javascript/index.md) - 使用 (简单的项目) 屏幕捕获的教程。
+*   [JavaScript 调试](../javascript/index.md) 入门 - 使用 (简单的项目) 屏幕捕获的教程。
 
 *   [使用调试器功能](../javascript/reference.md) - 如何使用调试器设置断点、逐步调试代码、查看和修改变量值、观看 JavaScript 表达式以及查看调用堆栈。
 
@@ -500,6 +500,6 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/sources)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors/kaycebasques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/sources)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -1,19 +1,19 @@
 ---
-description: “新增功能”工具现在为“欢迎”，内含“样式”窗格中的可视字体编辑器、CSS 弹性框调试工具等。
 title: DevTools 中的新增功能 (Microsoft Edge 89)
+description: “新增功能”工具现在为“欢迎”，内含“样式”窗格中的可视字体编辑器、CSS 弹性框调试工具等。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 71636531d1b948d7c875728e9b0c86f0447d757b
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.date: 05/04/2021
+ms.openlocfilehash: ae6acd78c6f2eca151d464c4c46c297eed5f9cb1
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12268988"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285405"
 ---
 <!-- Copyright Jecelyn Yeen
 

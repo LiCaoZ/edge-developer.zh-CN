@@ -1,19 +1,19 @@
 ---
-description: 适用于 WinForms 应用的 WebView2 入门指南
 title: WinForms 应用中的 WebView2 入门
+description: 将 WebView2 用于 WinForms 应用入门指南。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/05/2021
-ms.topic: tutorial
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、winforms 应用、winforms、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET、windows 窗体
-ms.openlocfilehash: 1382fae8420a52eb77babab31e0213fa2aeaa702
-ms.sourcegitcommit: a01bd8e1ac92a60fc6b1e202ab299ae2714def11
+ms.date: 11/05/2021
+ms.openlocfilehash: 6cefec3be79d2e70fab70f5f0086a87a49dd1402
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "12158163"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286238"
 ---
 # <a name="get-started-with-webview2-in-winforms-apps"></a>WinForms 应用中的 WebView2 入门
 
@@ -27,7 +27,7 @@ ms.locfileid: "12158163"
 
 1.  [Visual Studio](https://visualstudio.microsoft.com) 2017 或更高版本。
 
-1.  [WebView2](https://developer.microsoft.com/microsoft-edge/webview2)运行时，或安装在Microsoft Edge操作系统[ ( (](https://www.microsoftedgeinsider.com/download)操作系统) 上的预览体验成员)  ( (Beta、Dev 或 Canary) 预览版。 当前受支持的操作系统列表是 Windows 11、Windows 10、Windows 8.1 和 Windows 7。
+1.  [WebView2](https://developer.microsoft.com/microsoft-edge/webview2)运行时 ，或任何 Microsoft Edge [Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta、Dev 或 Canary) 安装在受支持的操作系统 (OS) 。 当前受支持的操作系统列表是 Windows 11、Windows 10、Windows 8.1 和 Windows 7。
 
     > [!NOTE]
     > WebView2 团队建议使用 Canary 频道。 最低要求版本为 82.0.488.0。
@@ -39,7 +39,7 @@ ms.locfileid: "12158163"
 
 1.  打开 Visual Studio。
 
-1.  单击 **"文件**  >  **""**  >  **新建Project"。**
+1.  单击 **"文件**  >  ****  >  **""新建Project"。**
 
 1.  单击 **"新建项目"。**
 
@@ -63,7 +63,7 @@ ms.locfileid: "12158163"
 
 1. 在 **"解决方案资源管理器**"中，右键单击项目名称，然后选择"管理NuGet**包"。**
 
-    :::image type="content" source="media/wpf-getting-started-mng-nuget-reduced.png" alt-text="管理NuGet包。" lightbox="media/wpf-getting-started-mng-nuget.png":::
+    :::image type="content" source="media/wpf-getting-started-mng-nuget-reduced.png" alt-text="管理 NuGet 程序包。" lightbox="media/wpf-getting-started-mng-nuget.png":::
 
 1.  单击**浏览**。
 
@@ -79,7 +79,7 @@ ms.locfileid: "12158163"
 
 1.  单击**确定**继续。
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -95,7 +95,7 @@ ms.locfileid: "12158163"
 
 1.  单击**Project**  >  **添加窗体 (Windows窗体) 。 **
 
-1.  在"**添加新项**"面板中，单击"Visual **C# Items**  >  **Web**Windows  >  **Forms**Form (Windows Forms  >  **) "，** 然后单击"添加 **"。**
+1.  在"**添加新项**"面板中，单击"Visual **C# Items**  >  **Web**Windows  >  **Forms**Form (Windows Forms  >  **) "，** 然后单击"**添加"。**
 
 1.  单击 **"视图**  >  **工具箱"。**
 
@@ -104,7 +104,7 @@ ms.locfileid: "12158163"
     > [!NOTE]
     > 如果使用的是 Visual Studio 2017，默认情况下 **，WebView2**不会显示在工具箱**中**。 若要使**WebView2**显示在工具箱中****，请选择"**** 工具""选项""常规  >  ****  >  ****>"**自动填充工具箱**"设置设置为 `True` 。
 
-1.  将**WebView2 控件**拖动到 Windows Forms App 中。
+1.  将**WebView2 控件**拖到 Windows Forms App。
 
     :::image type="content" source="./media/winforms-toolbox.png" alt-text="显示 WebView2 的工具箱" lightbox="./media/winforms-toolbox.png":::
 
@@ -114,7 +114,7 @@ ms.locfileid: "12158163"
 
 1.  Source **** 属性设置 WebView2 控件中显示的初始 URI。 将 **Source 属性** 设置为 `https://www.microsoft.com` 。
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -131,7 +131,7 @@ ms.locfileid: "12158163"
 <!-- ====================================================================== -->
 ## <a name="step-4---add-controls-and-process-window-resize-events"></a>步骤 4 - 添加控件并处理窗口大小事件
 
-将更多控件添加到工具箱Windows窗体，然后处理窗口大小事件，如下所示。
+从工具箱向窗体Windows控件，然后处理窗口大小事件，如下所示。
 
 1.  单击 **"视图**  >  **工具箱"。**
 
@@ -187,7 +187,7 @@ ms.locfileid: "12158163"
     }
     ```
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -223,7 +223,7 @@ ms.locfileid: "12158163"
 
     现在 `goButton_Click` ，函数将 WebView2 控件导航到地址栏中输入的 URI。
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -284,7 +284,7 @@ ms.locfileid: "12158163"
 
     在构造函数中 `EnsureHttps` ，注册为 WebView2 控件上事件 `NavigationStarting` 的事件处理程序。
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -313,7 +313,7 @@ ms.locfileid: "12158163"
     }
     ```
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -387,7 +387,7 @@ ms.locfileid: "12158163"
     }
     ```
 
-1. 单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
+1. 单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
 
 1. 按 **F5** 生成并运行项目。
 

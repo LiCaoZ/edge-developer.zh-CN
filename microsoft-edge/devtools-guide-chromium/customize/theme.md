@@ -1,18 +1,18 @@
 ---
-description: 如何将不同的颜色主题应用到 Microsoft Edge Tools。
 title: 将颜色主题应用到 DevTools
+description: 如何将不同的颜色主题应用到 Microsoft Edge Tools。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/03/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: c6629a2ce779f7c83ba4450cb30cbe5ade7ea9b6
-ms.sourcegitcommit: d07ba273ff9ce81f05c8e086bc266d06f48b9373
+ms.date: 08/03/2021
+ms.openlocfilehash: 991cfa5eac070361f63aec6dfdcde4205c43cb0c
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "12250410"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286728"
 ---
 <!-- Copyright Kayce Basques
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ ms.locfileid: "12250410"
    limitations under the License.  -->
 # <a name="apply-color-themes-to-devtools"></a>将颜色主题应用到 DevTools
 
-你可以将各种颜色主题应用到 Microsoft Edge Tools，包括多个来自 Visual Studio Code 的主题，[例如](https://code.visualstudio.com)Monokai 和子光深色。  主题影响窗格、按钮和代码语法突出显示的颜色。
+你可以将各种颜色主题应用到 Microsoft Edge Tools，包括多个来自 Visual Studio Code 的主题，[例如](https://code.visualstudio.com)Monokai 和大光深色。  主题影响窗格、按钮和代码语法突出显示的颜色。
 
 :::image type="complex" source="./media/all-devtools-themes.png" alt-text="各种 DevTools 颜色主题" lightbox="./media/all-devtools-themes.png":::
    各种 DevTools 颜色主题
@@ -44,27 +44,27 @@ ms.locfileid: "12250410"
 - 浅色+ (默认) 
 - Chromium浅
 - 安静光
-- 太阳光
+- 太阳能化光
 
 深色主题：
 - 深色+ (默认) 
-- Abyss
+- 深渊
 - Chromium深
-- Kimbie Dark
-- 单声道
-- Monokai Dimmed
+- 金月深色
+- Monokai
+- Mono kai Dimmed
 - 红色
-- 浅色深
-- 明天晚上蓝色
+- 太阳能化深色
+- 明晚蓝色
 
 
 <!-- ====================================================================== -->
 ## <a name="changing-the-color-theme-from-settings"></a>更改颜色主题设置
 
-1.  打开 DevTools，然后选择设置 (齿轮图标) 。 ****
+1.  打开 DevTools，**然后选择设置 (** 齿轮图标) 。
 
     :::image type="complex" source="./media/setting-button.png" alt-text="The 设置 (gear) icon" lightbox="./media/setting-button.png":::
-       the**设置** (gear) icon
+       The**设置** (gear) icon
     :::image-end:::
 
 1.  选择 **首选项**，然后在"外观 **"** 部分，从"主题"下拉列表 **中选择** 主题。
@@ -92,5 +92,5 @@ ms.locfileid: "12250410"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

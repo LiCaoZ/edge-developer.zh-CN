@@ -1,18 +1,18 @@
 ---
-description: 所有关于服务工作者改进和如何使用每个改进。
 title: 服务工作者改进
+description: 如何使用每个服务工作者改进。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/19/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， 服务工作者， PWA
-ms.openlocfilehash: 63cfb86ccb2ada9679e7e513c4bff8b583280a20
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 02/19/2021
+ms.openlocfilehash: 00da3a1b220e99d877124439747e2373c53215ce
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157493"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285741"
 ---
 # <a name="service-worker-improvements"></a>服务工作者改进
 

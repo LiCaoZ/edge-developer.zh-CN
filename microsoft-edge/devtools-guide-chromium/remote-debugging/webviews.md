@@ -1,18 +1,18 @@
 ---
-description: 使用开发人员工具在本机 Android 应用中远程调试 WebView Microsoft Edge入门。
 title: Android WebViews 远程调试入门
+description: 使用开发人员工具在本机 Android 应用中远程调试 WebView Microsoft Edge入门。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 7bb5eb3035ce23dc4fce934bc5866fdf34584b2f
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 05/04/2021
+ms.openlocfilehash: 93feb5a6dfccb3269328ab14dc8ca7f3dc9553bc
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155484"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285335"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -31,7 +31,7 @@ ms.locfileid: "12155484"
 
 使用开发人员工具在本机 Android 应用中Microsoft Edge Android WebView。
 
-在 Android 4.4 (KitKat) 或更高版本上，使用 DevTools 调试本机 Android 应用中的 WebView 内容。
+在 Android 4.4 (KitKat) 或更高版本上，使用 DevTools 在本机 Android 应用中调试 WebView 内容。
 
 ### <a name="summary"></a>摘要
 
@@ -92,6 +92,6 @@ The gray graphics listed with the Android WebView represent its size and positio
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](http://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) 由技术撰稿人 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (创作) 。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) 由技术编写人员 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (创作) 。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](http://creativecommons.org/licenses/by/4.0)获得许可。

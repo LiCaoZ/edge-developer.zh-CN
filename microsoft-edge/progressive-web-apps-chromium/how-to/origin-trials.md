@@ -1,23 +1,23 @@
 ---
 title: 实验性功能和源试用版
-description: 了解如何测试 PWA 中的实验Microsoft Edge并注册站点源试用版，以便与用户一起在生产中使用这些功能。
+description: 如何在网站中测试PWA测试Microsoft Edge并注册站点源试用版，以便与用户一起在生产中使用这些功能。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进式 Web 应用， PWA， Microsoft Edge， 实验， 源试用版
-ms.openlocfilehash: a18c88cce53c80b0174df4a58bad5117138ecef2
-ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
+ms.date: 09/15/2021
+ms.openlocfilehash: 519abec26eade7fe0d9b8d3f6f1a00ee14f3d1a8
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "12235717"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12287078"
 ---
 # <a name="experimental-features-and-origin-trials"></a>实验性功能和源试用版
 
-目前，PWA中的一Microsoft Edge功能仍处于实验阶段。 实验功能可通过两种方式使用：
+PWA中的某些Microsoft Edge仍处于实验阶段。 实验功能可通过两种方式使用：
 
 *   通过启用 Microsoft Edge。
 *   在源试用版中注册网站，以便与用户一起测试生产中的功能。
@@ -39,9 +39,9 @@ ms.locfileid: "12235717"
 <!-- ====================================================================== -->
 ## <a name="enroll-your-site-in-an-origin-trial"></a>在源试用版中注册网站
 
-Microsoft Edge有时使用源试用版来测试特定域或网站的功能。 你可能想要对网站使用源试用版来应用特定功能。 如果你是网站所有者，你可以注册源试用版。 源试用版向访问你的网站的Microsoft Edge用户提供一定比例的功能。
+Microsoft Edge有时使用源试用版来测试特定域或网站的功能。 你可能想要对网站使用源试用版来应用特定功能。 如果你是网站所有者，你可以注册源试用版。 源试用版向访问你的Microsoft Edge的用户提供一定比例的功能。
 
-有关源试用版详细信息，请参阅Microsoft Edge[源试用版开发人员控制台。](https://developer.microsoft.com/microsoft-edge/origin-trials)
+有关源试用版详细信息，请参阅Microsoft Edge[源试用版开发人员控制台](https://developer.microsoft.com/microsoft-edge/origin-trials)。
 
 
 <!-- ====================================================================== -->

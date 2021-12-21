@@ -1,18 +1,18 @@
 ---
-description: 远程调试 Surface Duo 仿真程序入门。
-title: 远程调试 Surface Duo 仿真程序入门
+title: 远程调试 Surface Duo 仿真器入门
+description: Surface Duo 仿真器远程调试入门。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发工具, 远程调试, android, surface duo
-ms.openlocfilehash: 567b68e6884d0c4e7ce015ee73ca24b504a1bfda
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 03/25/2021
+ms.openlocfilehash: 7de526ca2109143777aa8537631bdc944504837d
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157136"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286658"
 ---
 # <a name="get-started-with-remote-debugging-surface-duo-emulators"></a>远程调试 Surface Duo 仿真器入门
 
@@ -72,7 +72,7 @@ ms.locfileid: "12157136"
 > [!NOTE]
 > 如果在 `edge://inspect` 页上未显示 **SurfaceDuoEmulator**，请尝试在 [Surface Duo 仿真程序](/dual-screen/android/use-emulator)上的 [Microsoft Edge应用程序](https://play.google.com/store/apps/details?id=com.microsoft.emmx)中打开或关闭选项卡。  有关其他疑难解答步骤，请导航到 [Android 设备的疑难解答部分](./index.md#troubleshooting-devtools-is-not-detecting-the-android-device)。
 
-从模拟器上运行的打开的选项卡列表中，在具有要调试的 Web 内容的选项卡上选择“**检查**”。  [Microsoft Edge 开发工具](../index.md)将在新窗口中打开。  Choose **Toggle Screencast** (![ Toggle Screencast) to view the web content from your Surface ](../media/toggle-screencast-icon.msft.png) [Duo emulator](/dual-screen/android/use-emulator) in the DevTools window.  现在可以使用 Microsoft Edge 开发工具在 [Surface Duo 仿真程序](/dual-screen/android/use-emulator)上调试 Web 内容。
+从模拟器上运行的打开的选项卡列表中，在具有要调试的 Web 内容的选项卡上选择“**检查**”。  [Microsoft Edge 开发工具](../index.md)将在新窗口中打开。  选择**切换屏幕 (** 切换) 切换屏幕视频"，在"开发工具"窗口中从 Surface Duo 模拟器查看 ![ ](../media/toggle-screencast-icon.msft.png) Web 内容。 [](/dual-screen/android/use-emulator)  现在可以使用 Microsoft Edge 开发工具在 [Surface Duo 仿真程序](/dual-screen/android/use-emulator)上调试 Web 内容。
 
 :::image type="complex" source="../media/remote-debugging-surface-duo-devtools.msft.png" alt-text="使用 Microsoft Edge 开发工具在 Surface Duo 仿真程序的 Microsoft Edge 应用程序中调试 Bing" lightbox="../media/remote-debugging-surface-duo-devtools.msft.png":::
    使用 Microsoft Edge 开发工具在 Surface Duo 仿真程序的 Microsoft Edge 应用程序中调试 Bing

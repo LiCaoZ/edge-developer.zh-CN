@@ -1,18 +1,18 @@
 ---
-description: 使用颜色选取器测试文本颜色对比度。
 title: 使用颜色选取器测试文本颜色对比度
+description: 使用颜色选取器测试文本颜色对比度。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: d3724356cf38319a44b6eb60f0bbce30e67b6390
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.date: 06/07/2021
+ms.openlocfilehash: d5e0da4d5569ff476142b3badc72ad126c230132
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12139848"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285769"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques
@@ -36,7 +36,7 @@ ms.locfileid: "12139848"
 
 在 DevTools 中，查看文本元素的对比率的一个方法就是从"样式"选项卡使用 **颜色选取** 器。 颜色选取器可帮助你验证文本是否满足建议的对比率级别。
 
-**若要使用颜色选取器检查文本颜色对比度，**
+**若要使用颜色选取器检查文本颜色对比度：**
 
 1.  在 DevTools 中，选择 **"元素"** 工具。
 1.  在 **DOM 树**中，选择要检查的文本元素。
@@ -69,6 +69,6 @@ ms.locfileid: "12139848"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors/kaycebasques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

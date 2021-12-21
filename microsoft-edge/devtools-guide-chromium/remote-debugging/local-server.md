@@ -1,18 +1,18 @@
 ---
-description: 在开发计算机 Web 服务器上承载网站，然后从 Android 设备访问内容。
 title: 访问本地服务器
+description: 如何在开发计算机 Web 服务器上承载网站，然后从 Android 设备访问内容。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: e8e141bac7c136c256f15a319315855f595f6d0a
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 05/11/2021
+ms.openlocfilehash: a24b808ac6258cf81b138c41ea8e4cfcaea9aaf9
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155540"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285048"
 ---
 <!-- Copyright Kayce Basques
 
@@ -46,7 +46,7 @@ ms.locfileid: "12155540"
 
 启用端口转发：
 
-1.  在 [开发计算机和](./index.md) Android 设备之间设置远程调试。  完成后，Android 设备应显示在"检查设备"对话框和"已连接状态"指示器**** 的左侧菜单中。 ****
+1.  在 [开发计算机和](./index.md) Android 设备之间设置远程调试。  完成后，Android 设备应显示在"检查设备"对话框和"已连接状态"指示器******的左侧菜单中**。
 1.  在**DevTools 中的**"检查设备"对话框中，启用 **"端口转发"。**
 1.  选择 **"添加规则"。**
 
@@ -91,7 +91,7 @@ ms.locfileid: "12155540"
 
 接下来，你需要将 Android 设备配置为与代理服务器通信。
 
-1.  在 Android 设备上，导航到**设置**  >  **Wlan"。**
+1.  在 Android 设备上，导航到**设置**  >  **WLAN"**。
 1.  长按当前连接到的网络的名称。
 
     > [!NOTE]
@@ -117,6 +117,6 @@ ms.locfileid: "12155540"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server)作者为 (Technical Writer、Chrome DevTools \& Lighthouse) 和[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server)由[由 (](https://developers.google.com/web/resources/contributors#kayce-basques) Technical Writer、Chrome DevTools \& Lighthouse) 和[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

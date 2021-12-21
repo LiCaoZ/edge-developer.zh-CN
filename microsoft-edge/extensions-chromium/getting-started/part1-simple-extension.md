@@ -1,18 +1,18 @@
 ---
-description: 构建一个扩展，该扩展可弹出一天中的"省/市/市/服务"图片
 title: 创建扩展教程 - 第 1 部分
+description: 构建一个扩展，该扩展可弹出一天中的"省/市/服务"图片。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， 扩展
-ms.openlocfilehash: c3796a1334ece1c1ba3e6bd20473a77ae03ba53b
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.date: 01/07/2021
+ms.openlocfilehash: dffe8454c3b282de7ccb0bed525011c2f4fad0c6
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170573"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286336"
 ---
 # <a name="create-an-extension-tutorial---part-1"></a>创建扩展教程 - 第 1 部分
 
@@ -114,7 +114,7 @@ ms.locfileid: "12170573"
 </html>
 ```
 
-确保将图像文件 `images/stars.jpeg` 添加到 images 文件夹。  项目的目录应类似于以下结构。
+确保将图像文件 `images/stars.jpeg` 添加到 images 文件夹中。  项目的目录应类似于以下结构。
 
 ```shell
 └── part1

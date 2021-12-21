@@ -1,18 +1,18 @@
 ---
-description: 用户期望交互式和流畅的页面。  像素管道中的每个阶段都代表引入 jank 的机会。  了解用于识别和修复降低运行时性能的常见问题的工具和策略。
 title: 分析运行时性能
+description: 像素管道中的每个阶段都有机会引入 jank (呈现中断) 。  了解用于识别和修复降低运行时性能的常见问题的工具和策略，以便实现交互式和流畅的页面。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 8b67db573bbbed62d5918af1e3f686c1002740a8
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.date: 05/04/2021
+ms.openlocfilehash: 860152fce6cccf922fc73583bd031b479783b265
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170580"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286350"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -29,7 +29,7 @@ ms.locfileid: "12170580"
    limitations under the License.  -->
 # <a name="analyze-runtime-performance"></a>分析运行时性能
 
-用户期望交互式和流畅的页面。  像素管道中的每个阶段都代表引入 jank 的机会。  了解用于识别和修复降低运行时性能的常见问题的工具和策略。
+用户期望交互式和流畅的页面。  像素管道中的每个阶段都有机会引入 jank (呈现中断) 。  了解用于识别和修复降低运行时性能的常见问题的工具和策略。
 
 ### <a name="summary"></a>摘要
 
@@ -46,12 +46,12 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 
 ### <a name="javascript-tools"></a>JavaScript：工具
 
-在性能工具 **中** 录制并查找可疑的 `Evaluate Script` 长事件。  <!--If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->
+在性能工具 **中录制** 并查找可疑的 `Evaluate Script` 长事件。  <!--If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->
 
 <!--todo: add Recording section when available  -->
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->
 
-如果你注意到在 JavaScript 中 (出现) 的一些 jank 和中断，你可能需要将分析介绍到下一级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面函数中的使用位置。  了解如何在"加快 [JavaScript 运行时速度"中创建 CPU 配置文件](./js-runtime.md)。
+如果你注意到 JavaScript 中出现 (呈现) 中断，可能需要将分析下一级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面函数中的使用位置。  了解如何在"加快 [JavaScript 运行时速度"中创建 CPU 配置文件](./js-runtime.md)。
 
 ### <a name="javascript-problems"></a>JavaScript：问题
 
@@ -120,7 +120,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 <!-- ====================================================================== -->
 ## <a name="layout"></a>布局
 
-Firefox (或重排) 是浏览器计算页面上所有元素的位置和大小的过程。  Web 的布局模型意味着一个元素可能会影响其他元素;例如，元素的宽度通常会影响任何子元素的宽度，等等，一直向上和向下 `<body>` 影响树。  浏览器可能涉及此过程。
+Firefox (或重排) 是浏览器计算页面上所有元素的位置和大小的过程。  Web 的布局模型意味着一个元素可能会影响其他元素;例如，元素的宽度通常会影响任何子元素的宽度，等等，一直向上和向下影响 `<body>` 树。  浏览器可能涉及此过程。
 
 作为经验法则，如果你在帧完成之前要求从 DOM 返回几何值，你将发现自己具有"强制同步布局"，如果频繁重复或对大型 DOM 树执行，这可能是一个较大的性能瓶颈。
 
@@ -159,7 +159,7 @@ Firefox (或重排) 是浏览器计算页面上所有元素的位置和大小的
 
 画图是填充像素的过程。  它通常是呈现过程成本最大的部分。  如果你注意到你的页面未以任何设计方式工作，很可能是有绘制问题。
 
-合成是页面的绘制部分组合在一起以在屏幕上显示的地方。  大多数情况下，如果你坚持使用仅合成器属性，并且完全避免绘制，你应该注意到性能有显著改进，但需要留意层数过多。  <!--See [Stick to compositor-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->
+合成是页面的绘制部分组合在一起以在屏幕上显示的地方。  在大多数情况下，如果你坚持使用仅合成器属性，并且完全避免绘制，你应该注意到性能有显著改进，但需要留意层数过多。  <!--See [Stick to compositor-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->
 
@@ -196,6 +196,6 @@ The Timeline Tool page is deprecated.
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)由 (技术撰稿人[、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse) 和[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)作者为 (技术撰稿人[、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse) 和[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

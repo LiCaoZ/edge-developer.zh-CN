@@ -1,25 +1,25 @@
 ---
 title: 使用"检查"工具将鼠标悬停在网页上以检测辅助功能问题
-description: 将鼠标悬停在网页上方，使用"检查"工具检测辅助功能问题。
+description: 通过将鼠标悬停在网页上，使用"检查"工具检测辅助功能问题。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 06/07/2021
-ms.openlocfilehash: a6d516981c89391efe6c6fc03551838bb7db803b
-ms.sourcegitcommit: b701ad89af83d25febecd2dbb2d778a320cecfd3
+ms.openlocfilehash: 77a5784d103b83c2c4547a3ef9003f4e6ec6db54
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "12278872"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285482"
 ---
 # <a name="use-the-inspect-tool-to-detect-accessibility-issues-by-hovering-over-the-webpage"></a>使用"检查"工具将鼠标悬停在网页上以检测辅助功能问题
 
 当您 **将** 鼠标悬停在呈现的网页上时，Inspect 工具将显示有关各个元素的信息，包括辅助功能信息。
 相比之下，" **问题"** 工具会自动报告整个网页的问题。
 
-检查 **工具** 按钮 (![ 检查 ](../media/inspect-icon.msft.png)) 位于 DevTools 的左上角。  选择" **检查工具"** 按钮时，该按钮将变为蓝色，指示 **"检查** "工具处于活动状态。
+检查 **工具** 按钮 (检查) 位于 ![ ](../media/inspect-icon.msft.png) DevTools 的左上角。  选择" **检查工具"** 按钮时，该按钮将变为蓝色，指示 **"检查** "工具处于活动状态。
 
 当 **Inspect 工具** 处于活动状态时，将鼠标悬停在呈现网页上的任何元素上将显示 **Inspect** 覆盖。 此覆盖层显示有关该元素的常规信息和辅助功能信息。  "**检查"覆盖****层的**"辅助功能"部分显示有关文本颜色对比度、屏幕阅读器文本和键盘支持的信息。
 
@@ -51,7 +51,7 @@ ms.locfileid: "12278872"
 
 检查覆盖 **的底部有** 一个 **辅助功能** 部分，其中包含以下信息：
 
-*   **对比度** 定义低视力用户能否理解元素。  [WCAG](https://www.w3.org/TR/WCAG21/)准则定义的对比率指示是否有足够的对比度 (绿色选中标记图标) 或 (橙色感叹号图标) 。 [](https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio)
+*   **对比度** 定义低视力用户能否理解元素。  [WCAG](https://www.w3.org/TR/WCAG21/)指南定义的对比率指示是否有足够的对比度 (绿色选中标记图标) 或 (橙色感叹号图标) 。 [](https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio)
 
 *   **名称和****角色**是屏幕阅读器等辅助技术将报告有关元素的内容。
     *   **Name**是元素的文本 `a` 内容。  对于 元素 `<a href="/">About Us</a>` **，Inspect** 工具中显示的 Name 为"关于我们"。
@@ -72,7 +72,7 @@ ms.locfileid: "12278872"
 *   布局类型。 如果元素是使用弹性框或网格放置的，则会显示 (![网格布局图标](../media/grid-icon.msft.png)) 显示。
 *   元素的名称，如 、 `h1` `h2` 或 `div` 。
 *   元素的尺寸（以像素为单位）。
-*   作为颜色样本的颜色颜色 (或较小的彩色方形) 和字符串形式 (如 `#336699`) 。
+*   作为颜色样本的颜色颜色 (或较小的、彩色) 和字符串形式 (如 `#336699`) 。
 *   字体信息，如大小和字体系列。
 *   边距和填充（以像素为单位）。
 
@@ -86,7 +86,7 @@ ms.locfileid: "12278872"
 
 1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  选择**** DevTools (左上角的"检查"按钮) "检查工具"图标，以便按钮突出显示为蓝色 ![ ](../media/inspect-icon.msft.png) () 。
+1.  选择**** DevTools (左上角的"检查") "检查工具"图标，使按钮突出显示为蓝色 ![ ](../media/inspect-icon.msft.png) () 。
 
 1.  将鼠标悬停在呈现的演示网页的不同部分上。  网页中的每个元素现在都显示一个多色覆盖层。 此多色覆盖层可以显示元素内部的嵌套区域。 例如，将鼠标悬停在"猫"的 **左边距上**。  Inspect **工具** 使用不同颜色突出显示 **"猫** "部分的几个矩形部分，显示来自网页上 CSS 弹性框定义的布局。
 

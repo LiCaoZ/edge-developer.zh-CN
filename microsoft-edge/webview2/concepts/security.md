@@ -1,36 +1,36 @@
 ---
-description: 了解如何开发安全的 WebView2 应用程序
 title: 开发安全 WebView2 应用程序的最佳方案
+description: 如何开发安全的 WebView2 应用程序。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、安全性
-ms.openlocfilehash: a7d693841c7a25a06ad5e78d4d0cd8c9af1ab253
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 10/14/2020
+ms.openlocfilehash: 9f37ac0222de86b814f639c7af36dbf6758f70fd
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156051"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285615"
 ---
 # <a name="best-practices-for-developing-secure-webview2-applications"></a>开发安全 WebView2 应用程序的最佳方案
 
 [WebView2 控件允许](../index.md)开发人员在本机应用程序中承载 Web 内容。 正确使用时，承载 Web 内容具有多项优势，例如使用基于 Web 的 UI、访问 Web 平台的功能、跨平台共享代码等。  为了避免承载 Web 内容时可能出现的漏洞，请确保设计 WebView2 应用程序以密切监视 Web 内容和主机应用程序之间的交互。
 
 1.  将所有 Web 内容视为不安全。
-    *   使用每个参数之前验证 Web 消息和主机对象参数，因为 Web 消息和参数可能格式不正确 (或恶意) 并会导致应用发生意外行为。
+    *   使用每个参数之前验证 Web 消息和主机对象参数，因为 Web 消息和参数可能 (或恶意错误) 并会导致应用发生意外行为。
     *   始终检查在 WebView2 内运行的文档的来源，并评估内容可信度。
 1.  设计特定的 Web 消息和主机对象交互，而不是使用泛型代理。
-1.  设置以下选项，通过修改 [Win32 (或 CoreWebView2Settings) ICoreWebView2Settings ](/microsoft-edge/webview2/reference/win32/icorewebview2settings) [ (.NET) 来限制 ](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)Web 内容 A2.NET) 。
-    *   如果您 `AreHostObjectsAllowed` `false` 不期望 Web 内容访问主机对象，则设置为 。
+1.  设置以下选项，通过修改[ICoreWebView2Settings (Win32](/microsoft-edge/webview2/reference/win32/icorewebview2settings)) 或[CoreWebView2Settings (.NET) 来限制 Web 内容 A2.NET) 。 ](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
+    *   如果 `AreHostObjectsAllowed` 预计 Web 内容无法访问主机对象，则设置为 `false` 。
     *   如果预计 Web 内容不会向本机应用程序发布 Web 消息 `IsWebMessageEnabled` `false` ，则设置为 。
-    *   设置为 ，如果您不期望 Web 内容运行脚本， (，当显示静态 `IsScriptEnabled` `false` html 内容) 。
+    *   设置为 ，如果您预计 Web 内容不会运行脚本， (，例如，在显示静态 `IsScriptEnabled` `false` html 内容) 。
     *   如果 `AreDefaultScriptDialogsEnabled` `false` 预计 Web 内容不会显示或对话框，则设置为 `alert` `prompt` 。
 1.  在以下步骤中，使用 `NavigationStarting` 和 `FrameNavigationStarting` 事件根据新页面的来源更新设置。
     1.  若要阻止应用程序导航到特定页面，请使用事件检查然后阻止页面或框架导航。
-    1.  导航到新页面时，你可能需要调整 [ICoreWebView2Settings (Win32) ](/microsoft-edge/webview2/reference/win32/icorewebview2settings) 或 [CoreWebView2Settings (.NET) ](/dotnet/api/microsoft.web.webview2.core.corewebview2settings) 上的属性值，如前面所述。
+    1.  导航到新页面时，你可能需要调整 [ICoreWebView2Settings (Win32 ](/microsoft-edge/webview2/reference/win32/icorewebview2settings)) 或 [CoreWebView2Settings (.NET) ](/dotnet/api/microsoft.web.webview2.core.corewebview2settings) 上的属性值，如前面所述。
 1.  导航到新文档时，使用 `ContentLoading` 事件删除公开的主机对象 `RemoveHostObjectFromScript` 。
 
 <!--## Security

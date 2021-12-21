@@ -1,38 +1,38 @@
 ---
-description: 使用内容脚本在页面正文标记下方动态插入 "版"
 title: 创建扩展教程第 2 部分
+description: 使用内容脚本在页面正文标记下方动态插入一张"一张"。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， 扩展
-ms.openlocfilehash: adf0d4775aed5fc814c7695c4e104b60262cdc74
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.date: 01/07/2021
+ms.openlocfilehash: c1b4aa420073ff07646733fc160fdb364d31bad4
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170587"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12287197"
 ---
 # <a name="create-an-extension-tutorial-part-2"></a>创建扩展教程第 2 部分
 
-[此部件已完成的扩展包源](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2)
+[此部分的已完成扩展包源](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2)
 
 
 <!-- ====================================================================== -->
 ## <a name="overview"></a>概述
 
-本教程介绍以下扩展技术。
-*   将 JavaScript 库注入扩展
-*   向浏览器选项卡公开扩展资源
-*   将内容页包含到现有浏览器选项卡中
-*   让内容页侦听弹出窗口中的邮件并做出响应
+本教程介绍以下扩展技术：
+*   将 JavaScript 库注入扩展。
+*   向浏览器选项卡公开扩展资源。
+*   包括现有浏览器选项卡中的内容页。
+*   让内容页侦听来自弹出窗口的消息并做出响应。
 
 你将了解如何更新弹出菜单，以将静态星形图像替换为标题和标准 HTML 按钮。  选中该按钮时，会将嵌入扩展中的星形图像传递给内容页。  该图像将插入到活动的浏览器选项卡中。请按照以下步骤了解更多详细信息。
 
-1.  从弹出窗口中删除图像，并将其替换为按钮
+1.  从弹出窗口中删除图像，并将其替换为按钮。
 
-首先，使用显示标题和按钮的直接标记 `popup.html` 更新文件。  你很快就会对按钮进行编程，但现在只需包含对空 JavaScript 文件的引用 `popup.js` 。  下面是更新 HTML。
+首先，使用 `popup.html` 显示标题和按钮的一些简单标记更新文件。  你很快就会对按钮进行编程，但现在只需包含对空 JavaScript 文件的引用 `popup.js` 。  下面是更新后的 HTML：
 
 ```html
 <html>
@@ -131,7 +131,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 
 原因是你使用 元素的 属性将图像 `src` `img` 注入内容页面。  内容页在运行扩展的线程不同的唯一线程上运行。  必须将静态图像文件公开为 Web 资产，它必须能够正常工作。
 
-在文件中添加另 `manifest.json` 一项以声明该图像可供所有浏览器选项卡使用。  添加内容脚本声明 (应在下面的完整文件中看到该条目，如下所示 `manifest.json`) 。
+在文件中添加另 `manifest.json` 一项以声明该图像可供所有浏览器选项卡使用。  在添加即将 (的内容脚本声明时，应该可以看到下面的完整 `manifest.json`) 。
 
 ```json
 "web_accessible_resources": [
@@ -214,8 +214,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 当侦听器处理事件时，将运行作为第一个参数的函数。  该函数的第一个参数是属性由 分配的对象 `sendMessage` 。  该函数只处理三个 jQuery 脚本行。
 
 *   第一个脚本行将一个必须作为类分配给元素的节动态插入到 DOM **\<style\>** `slide-image` 标头 `img` 中。
-*   第二个脚本行在浏览器选项卡的 正下方追加一个元素，该元素分配了 类，并将 `img` `body` 作为该 `slide-image` `imageDivId` 图像元素的 ID。
-*   第三个脚本行添加一个涵盖整个图像的事件，允许用户选择图像上的任意位置，并且该图像会从页面中删除 (并且它是事件侦听器 `click`) 。
+*   第二个脚本行在浏览器选项卡的 正下方追加一个元素，该元素分配了 类，并将 `img` `body` 作为该图像元素的 `slide-image` `imageDivId` ID。
+*   第三个脚本行添加一个涵盖整个图像的事件，允许用户选择图像上的任意位置，并且该图像将从页面中删除， (它是事件侦听器 `click`) 。
 
 8. 添加功能以在选中时删除显示的图像
 
@@ -233,4 +233,4 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
    在浏览器中显示的图像
 :::image-end:::
 
-你已创建一个扩展，该扩展从扩展图标弹出窗口成功发送消息，并动态插入作为浏览器选项卡上的内容运行的 JavaScript。 注入的内容设置图像元素以显示静态星形 jpeg。
+你已创建一个扩展，该扩展从扩展图标弹出窗口成功发送消息，并动态插入作为浏览器选项卡上的内容运行的 JavaScript。 注入的内容设置图像元素以显示静态星 `.jpeg` 文件。

@@ -1,21 +1,21 @@
 ---
-description: 了解 WebView2 接下来将做什么
-title: WebView 2 Microsoft Edge路线图
+title: WebView2 路线图
+description: 了解 WebView2 接下来将做什么。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: e518a0edfd94564be0ac6ed7ad2d7eecd40d87ae
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 01/07/2021
+ms.openlocfilehash: 9dda626f2fa6b635bbf801d75226a738f1d5f905
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157192"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284635"
 ---
-# <a name="microsoft-edge-webview2-roadmap"></a>Microsoft EdgeWebView2 路线图
+# <a name="webview2-roadmap"></a>WebView2 路线图
 
 > [!NOTE]
 > Last Updated： July 2021
@@ -32,13 +32,13 @@ WebView2 团队正在计划以下主要工作，用于将来的更新。
 * UWP 预览版
 * MacOS 预览版
 * Xbox 预览版
-* HoloLens预览
+* HoloLens 预览版
 
 
 <!-- ====================================================================== -->
 ## <a name="webview2-runtime-and-installer"></a>WebView2 运行时和安装程序
 
-使用常青分发模式，你可以将 WebView2 运行时的目标或链安装到用户计算机上。  Evergreen WebView2 运行时和安装程序已使用 GA (通用) 。  有关详细信息，请导航到分发 [WebView2 应用和 WebView2 运行时](./concepts/distribution.md)。
+使用常青分发模式，你可以将 WebView2 运行时的目标或链安装到用户计算机上。  Evergreen WebView2 运行时和安装程序已进入通用版本 (GA) 。  有关详细信息，请导航到分发 [WebView2 应用和 WebView2 运行时](./concepts/distribution.md)。
 
 
 <!-- ====================================================================== -->
@@ -58,6 +58,6 @@ Win32 C/C++ SDK 已到达 GA。
 
 .NET SDK 已到达 GA。
 
-### <a name="windows-ui-library-3"></a>WindowsUI 库 3
+### <a name="windows-ui-library-3"></a>Windows UI 库 3
 
-可以使用 Windows App SDK 中的 WinUI3 Windows UI 库 3 (访问) [WebView2](/uwp/toolkits/winui3/index) Windows控件。 This is currently in preview. 有关详细信息，请导航到 Windows [App SDK 路线图](https://github.com/microsoft/WindowsAppSDK/blob/main/docs/roadmap.md)。
+可以使用 Windows App SDK 的 WinUI3 Windows UI 库 3 (访问) [WebView2](/uwp/toolkits/winui3/index)控件。 This is currently in preview. 有关详细信息，请导航到 Windows [App SDK 路线图](https://github.com/microsoft/WindowsAppSDK/blob/main/docs/roadmap.md)。

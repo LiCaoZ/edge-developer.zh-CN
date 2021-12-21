@@ -1,18 +1,18 @@
 ---
+title: 在任何网页上运行 JavaScript 代码段
 description: 代码片段是在 Microsoft Edge DevTools 的源工具中创作和运行的小型脚本。  可以通过任何网页访问和运行资源。  当你运行代码片段时，它是通过当前打开网页的上下文运行。
-title: 使用 Microsoft Edge DevTools 在任何网页上运行 JavaScript 代码片段
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 17f76ebb740fc2decc9314e73e1de24367fe7459
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 05/04/2021
+ms.openlocfilehash: cf28c9a455b6db0a322a1b30cd700902154bee61
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269380"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284257"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +27,7 @@ ms.locfileid: "12269380"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="run-snippets-of-javascript-on-any-webpage-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 在任何网页上运行 JavaScript 代码片段
+# <a name="run-snippets-of-javascript-on-any-webpage"></a>在任何网页上运行 JavaScript 代码段
 
 如果在[控制台](../console/index.md)中重复运行相同的代码，请考虑换成将代码另存为代码片段。  代码片段是在[源](../sources/index.md)工具中创作的脚本。  代码片段有权访问网页的 JavaScript 上下文，并且可以在任何网页上运行代码片段。  大多数网页的安全设置会阻止在代码片段中加载其他脚本。  因此，必须将所有代码都包括在一个文件中。
 
@@ -80,7 +80,7 @@ document.body.appendChild(p);
 ### <a name="open-the-snippets-tab-with-the-command-menu"></a>使用命令菜单打开"代码段"选项卡
 
 1.  在 DevTools 中选择任何内容，以便 DevTools 具有焦点。
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令菜单。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令菜单。
 1.  键入 `Snippets` ，选择 **"显示代码**段"，然后选择 `Enter` 运行命令。
 
     :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="显示代码片段命令" lightbox="../media/javascript-search-show-snippets.msft.png":::
@@ -104,7 +104,7 @@ document.body.appendChild(p);
 ### <a name="create-a-snippet-through-the-command-menu"></a>通过命令菜单创建代码片段
 
 1.  将光标停在 DevTools 中的任一位置。
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令菜单。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令菜单。
 1.  键入 `Snippet` ，选择 **创建新代码段**，然后选择 `Enter` 运行命令。
 
     :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="用于新建代码片段的命令" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
@@ -125,7 +125,7 @@ document.body.appendChild(p);
     :::image-end:::
 
 1.  使用**代码编辑器**将 JavaScript 添加到代码片段。
-1.  当代码片段名称旁边出现星号时，表示有代码未保存。  选择 `Control` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存。
+1.  当代码片段名称旁边出现星号时，表示有代码未保存。  选择要 `Control` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存。
 
     :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="代码片段名称旁边显示星号表示代码未保存" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
        代码片段名称旁边显示星号表示代码未保存
@@ -144,7 +144,7 @@ document.body.appendChild(p);
 ### <a name="run-a-snippet-with-the-command-menu"></a>使用命令菜单运行代码片段
 
 1.  将光标停在 DevTools 中的任一位置。
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令菜单。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令菜单。
 1.  删除 `>` 字符并在要运行的代码片段名称后键入 `!` 字符。
 
     :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="使用命令菜单运行代码片段" lightbox="../media/javascript-search-run-command.msft.png":::
@@ -181,6 +181,6 @@ document.body.appendChild(p);
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

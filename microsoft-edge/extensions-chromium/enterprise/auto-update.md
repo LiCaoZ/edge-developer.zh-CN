@@ -1,18 +1,18 @@
 ---
-description: 了解自动更新到 Microsoft Edge
-title: 自动更新 Microsoft Edge
+title: 自动更新扩展Microsoft Edge
+description: 了解 Microsoft Edge 中的Microsoft Edge。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 07efcff5df421b925a95753fbadf8478bf4ec794
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 04/13/2021
+ms.openlocfilehash: 5470d77dd74eaa4d5cea2d62931d5eb49ab43241
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155379"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285321"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -27,7 +27,7 @@ ms.locfileid: "12155379"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="automatically-update-extensions-in-microsoft-edge"></a>自动更新 Microsoft Edge
+# <a name="automatically-update-extensions-in-microsoft-edge"></a>自动更新扩展Microsoft Edge
 
 将扩展设置为自动更新时，扩展将在设置为自动更新Microsoft Edge共享以下优势。
 
@@ -85,7 +85,7 @@ ms.locfileid: "12155379"
 
 | 属性 | 详细信息 |
 |:--- |:--- |
-| `appid` | 扩展 ID 是基于公钥的哈希生成的。  若要查找扩展的 ID，请打开Microsoft Edge并导航到 `edge://extensions` 。 |
+| `appid` | 扩展 ID 是基于公钥的哈希生成的。  若要查找扩展的 ID，请打开 Microsoft Edge 并导航到 `edge://extensions` 。 |
 | `codebase` | 指向文件的 `.crx` URL。 |
 | `version` | 此属性值由 Microsoft Edge确定是否应下载 `.crx` 由 指定的文件 `codebase` 。  它应匹配 `version` 文件文件中 `manifest.json` `.crx` 的值。 |
 
@@ -95,7 +95,7 @@ ms.locfileid: "12155379"
 <!-- ====================================================================== -->
 ## <a name="testing"></a>测试
 
-默认更新检查频率为几个小时。  若要强制更新，请导航 `edge://extensions` 到 并选择" **现在更新扩展"** 按钮。
+默认更新检查频率为几个小时。  若要强制更新，请导航 `edge://extensions` 到"现在 **更新扩展"** 按钮并选择该按钮。
 
 
 <!-- ====================================================================== -->

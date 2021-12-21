@@ -1,22 +1,22 @@
 ---
-description: IE 模式和Microsoft Edge DevTools。
 title: 在"开发工具"模式下Internet Explorer DevTools
+description: IE 模式和Microsoft Edge DevTools。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， ie11， Internet Explorer 11， ie 模式
-ms.openlocfilehash: 98e3a16e3152b6376d44a5a102bc16fe7dc19f10
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 09/10/2021
+ms.openlocfilehash: 8526bddc9483f30c91ee56b53b2b0fceb6489897
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156009"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286420"
 ---
 # <a name="use-devtools-in-internet-explorer-mode"></a>在"开发工具"模式下Internet Explorer DevTools
 
-Internet Explorer开发人员 (集成后) IE 模式Microsoft Edge IE 模式。   IE 模式允许企业指定仅在 11 Internet Explorer工作的网站列表。  当您导航到 Microsoft Edge 中的这些网站时，Internet Explorer 11 的实例将运行并在选项卡中呈现网站。 IE 模式允许企业管理与当前与任何新式 Web 浏览器不兼容的技术的兼容性。
+Internet Explorer与 (DevTools) IE 模式Microsoft Edge模式。   IE 模式允许企业指定仅在 11 Internet Explorer的网站列表。  当您导航到 Microsoft Edge 中的这些网站时，Internet Explorer 11 的实例将运行并在选项卡中呈现网站。 IE 模式允许企业管理与当前与任何新式 Web 浏览器不兼容的技术的兼容性。
 
 IE 模式中包含对以下技术的支持：
 
@@ -24,7 +24,7 @@ IE 模式中包含对以下技术的支持：
 *   ActiveX控件。
 *   其他旧版组件。
 
-在 IE 模式下，呈现过程基于 Internet Explorer 11。  此Microsoft Edge管理器处理呈现过程的生命周期。  呈现过程被限定为特定网站集或应用选项卡 (生命周期) 。  当选项卡以 IE 模式呈现时，IE 模式指示器图标将显示在特定选项卡的地址栏中。
+在 IE 模式下，呈现过程基于 Internet Explorer 11。  Microsoft Edge进程管理器处理呈现过程的生命周期。  呈现过程被限定为特定网站集或应用选项卡 (生命周期) 。  当选项卡以 IE 模式呈现时，IE 模式指示器图标将显示在特定选项卡的地址栏中。
 
 :::image type="complex" source="../media/ie-mode-badge.msft.png" alt-text="地址栏中的 IE 模式指示器图标" lightbox="../media/ie-mode-badge.msft.png":::
    地址栏中的 IE 模式指示器图标
@@ -36,7 +36,7 @@ IE 模式在 2019 年 5 Windows 10 1903 (Update) 上可用，并且适用于所�
 <!-- ====================================================================== -->
 ## <a name="open-devtools-on-a-tab-in-ie-mode"></a>在 IE 模式下打开选项卡上的 DevTools
 
-如果 IE 管理员已配置网站以在 IE 模式下Enterprise，则地址栏中将显示 IE 模式指示器图标。  若要在 IE 模式下查看网站的文档模式，请选择地址栏中的 IE 模式指示器图标。
+如果管理员将网站配置为以 IE 模式Enterprise，则地址栏中将显示 IE 模式指示器图标。  若要在 IE 模式下查看网站的文档模式，请选择地址栏中的 IE 模式指示器图标。
 
 :::image type="complex" source="../media/ie-mode-badge-doc-mode.msft.png" alt-text="使用 IE 模式指示器图标查看文档模式" lightbox="../media/ie-mode-badge-doc-mode.msft.png":::
    使用 IE 模式指示器图标查看文档模式
@@ -63,13 +63,13 @@ IE 模式在 2019 年 5 Windows 10 1903 (Update) 上可用，并且适用于所�
 <!-- ====================================================================== -->
 ## <a name="remote-debugging-in-ie-mode"></a>IE 模式下的远程调试
 
-启动Microsoft Edge，同时从命令行界面启用远程调试。  Microsoft Visual Studio、Microsoft Visual Studio 代码和其他开发工具通常运行命令以启动Microsoft Edge。  以下命令启动 Microsoft Edge远程调试端口设置为 `9222` 。
+启动Microsoft Edge，同时从命令行界面启用远程调试。  Microsoft Visual Studio、Microsoft Visual Studio 代码和其他开发工具通常运行命令以启动Microsoft Edge。  以下命令启动Microsoft Edge远程调试端口设置为 `9222` 。
 
 ```shell
 start msedge --remote-debugging-port=9222
 ```
 
-使用命令行Microsoft Edge启动 IE 模式后，IE 模式将不可用。  你仍然可以导航到网站 (或应用) 以其他方式显示在 IE 模式下。  使用 (11) 呈现内容的网站Chromium或Internet Explorer应用。  依赖于 11 Internet Explorer的网页的某些部分ActiveX控件）可能无法正确呈现。  IE 模式指示器图标不会显示在地址栏中。
+使用命令行Microsoft Edge启动 IE 模式后，IE 模式将不可用。  你仍然可以导航到网站 (或) 以其他方式显示在 IE 模式下的应用。  使用 (11) 呈现内容的网站Chromium或Internet Explorer应用。  依赖于 11 Internet Explorer的网页的某些部分ActiveX控件）可能无法正确呈现。  IE 模式指示器图标不会显示在地址栏中。
 
 在关闭并重新启动 IE 模式之前，IE 模式Microsoft Edge。
 
@@ -77,7 +77,7 @@ start msedge --remote-debugging-port=9222
 <!-- ====================================================================== -->
 ## <a name="replace-internet-explorer-automation"></a>将Internet Explorer自动化
 
-如果现有应用程序使用 [InternetExplorer](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)) 对象自动执行 Internet Explorer 11，但 Internet Explorer 11 桌面应用程序不可用，则应用程序将不起作用。  Internet Explorer 11 将于 2022 年 6 月 15 日停用。  有关详细信息，请导航到"Internet Explorer[上的Windows 10"Microsoft Edge"。](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/)
+如果现有应用程序使用 [InternetExplorer](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)) 对象自动执行 Internet Explorer 11，但 Internet Explorer 11 桌面应用程序不可用，则应用程序将不起作用。  Internet Explorer 11 将于 2022 年 6 月 15 日停用。  有关详细信息，请导航到"Internet Explorer[上的Windows 10"Microsoft Edge"](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/)。
 
 Microsoft Edge不支持通过 对象自动执行 IE 模式，因此需要更新依赖此对象的应用程序，使用下面建议的备选方法 `InternetExplorer` 之一。  使用 [WebBrowser](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752040(v=vs.85)) 控件的应用程序将继续工作，并且不受 11 Internet Explorer的影响。
 

@@ -1,32 +1,32 @@
 ---
+title: 'WinUI 3 应用 SDK (Windows 中的 WebView2) '
 description: 适用于 WinUI 3 的 WebView2 (Windows App SDK) 指南。
-title: 'WinUI 3 应用 SDK (Windows中的 WebView2) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/05/2021
-ms.topic: tutorial
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、winui 应用、winui、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
-ms.openlocfilehash: ad0757a1509d3f988e683614ee5714333cf01291
-ms.sourcegitcommit: ce369c50134212b12e8a44eb45fa63bae134b7cc
+ms.date: 11/05/2021
+ms.openlocfilehash: 6771ff6ddd02055bb082d296a4ad0a1deee280e9
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "12269684"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286210"
 ---
-# <a name="get-started-with-webview2-in-winui-3-windows-app-sdk"></a>WinUI 3 应用 SDK (Windows中的 WebView2) 
+# <a name="get-started-with-webview2-in-winui-3-windows-app-sdk"></a>WinUI 3 应用 SDK (Windows 中的 WebView2) 
 
-本文将开始在 WinUI 3 和 App SDK (Windows创建第一个 WebView2) 。 了解 [WebView2 的主要功能](../index.md)。 有关各个 API 详细信息，请参阅 [API 参考](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)。
+本文将开始在 WinUI 3 应用 SDK (Windows创建第一个 WebView2) 。 了解 [WebView2 的主要功能](../index.md)。 有关各个 API 详细信息，请参阅 [API 参考](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)。
 
 
 ## <a name="step-0---set-up-development-environment"></a>步骤 0 - 设置开发环境
 
 1. 按照设置开发环境的步骤 1-4 安装 Visual Studio、配置 NuGet 程序包源并安装 Windows App SDK Extension for Visual Studio。 [](/windows/apps/project-reunion/set-up-your-development-environment)
 
-1. 安装安装在 Windows 10 版本 1803 (版本 17134 或更高版本Microsoft Edge [WebView2](https://developer.microsoft.com/microsoft-edge/webview2)运行时或任何) 渠道。 [](https://www.microsoftedgeinsider.com/download)  有关更新或Windows 10，请参阅Windows[更新：常见问题](https://support.microsoft.com/help/12373)。
+1. 安装安装在 Windows 10 版本 1803 (版本 17134 或更高版本) [WebView](https://developer.microsoft.com/microsoft-edge/webview2) [Microsoft Edge 2](https://www.microsoftedgeinsider.com/download)运行时或任何非) 渠道。  有关更新或Windows 10，请参阅Windows[更新：常见问题](https://support.microsoft.com/help/12373)。
 
-1.  若要访问开发人员特定的所有Visual Studio功能，请打开开发人员[模式](/windows/uwp/get-started/enable-your-device-for-development)。
+1.  若要访问所有特定于开发人员Visual Studio功能，请打开开发人员[模式](/windows/uwp/get-started/enable-your-device-for-development)。
 
 
 ## <a name="step-1---create-project"></a>步骤 1 - 创建Project
@@ -34,7 +34,7 @@ ms.locfileid: "12269684"
 从包含单个主窗口的基本桌面项目开始。
 
 1.  在Visual Studio中，单击 **"新建项目"。**
-1.  在项目筛选器菜单中，选择 **"C#"。** **Windows**、和**WinUI**。
+1.  在项目筛选器菜单中，选择 **"C#"。** **Windows**、 和**WinUI**。
 
     :::image type="complex" source="./media/winui-getting-started-selections.png" alt-text="使用项目创建一个新的 WinUI Visual Studio。" lightbox="./media/winui-getting-started-selections.png":::
         使用项目创建一个新的 WinUI Visual Studio
@@ -121,7 +121,7 @@ ms.locfileid: "12269684"
         // myButton.Content = "Clicked";
     ```
 
-1.  单击 **"**  >  **文件""全部 (Ctrl+Shift+S) **"以保存项目。
+1.  单击 **"**  >  **文件""保存 (Ctrl+Shift+S) **"以保存项目。
 
 1.  按 **F5**生成并运行项目。
 

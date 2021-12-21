@@ -1,18 +1,18 @@
 ---
-description: 了解在 DevTools 中暂停Microsoft Edge的所有方法。
 title: 使用断点暂停代码
+description: 了解在 DevTools 中暂停Microsoft Edge的所有方法。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 532ef432f0394fbcec95eb9b2fa20432b1c8e0cf
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.date: 05/04/2021
+ms.openlocfilehash: 1bd515fb93322f8ad4a9858587fe78a631395282
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170608"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284285"
 ---
 <!-- Copyright Kayce Basques
 
@@ -104,8 +104,8 @@ console.log('c');
 :::image-end:::
 
 *   选中条目旁边的复选框以禁用该断点。
-*   将鼠标悬停在某个项上并打开上下文菜单 (右键单击) 删除该断点。
-*   将鼠标悬停在"**** 断点"窗格中的任意位置，然后打开上下文菜单 (右键单击") "停用所有断点、禁用所有断点或删除所有断点。  禁用所有断点等效于取消选中每个断点。  取消激活所有断点将指示开发工具忽略所有代码行断点，但也要保持启用状态，以使每个断点都与重新激活每个断点时的状态相同。
+*   将鼠标悬停在某个条目上并打开上下文菜单 (右键单击) 删除该断点。
+*   将鼠标悬停在"**** 断点"窗格中的任意位置并打开上下文菜单 (右键单击") "停用所有断点、禁用所有断点或删除所有断点。  禁用所有断点等效于取消选中每个断点。  取消激活所有断点将指示开发工具忽略所有代码行断点，但也要保持启用状态，以使每个断点都与重新激活每个断点时的状态相同。
 
     :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="“断点”窗格中的已停用断点" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
        “**断点**”窗格中的已停用断点
@@ -178,7 +178,7 @@ console.log('c');
 想要暂停引发已捕获或未捕获异常的代码行时，请使用异常断点。
 
 1.  选择“**源**”工具。
-1.  选择 **"在异常时暂停" ("** ![ 在异常时暂停 ](../media/pause-on-exceptions-icon.msft.png)) "。  图标在启用时变为蓝色。
+1.  选择 **"在异常时暂停" ("** ![ 在异常时 ](../media/pause-on-exceptions-icon.msft.png) 暂停) "。  图标在启用时变为蓝色。
 
     :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="“因异常暂停”按钮" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
        “**因异常暂停**”按钮
@@ -234,13 +234,13 @@ debug(hey); // This does not work.  hey() is out of scope.
 ## <a name="see-also"></a>另请参阅
 
 *  [使用调试器功能](./reference.md) - 使用"源"工具 **中的调试器** UI。
-*  [在 DevTools](index.md) Microsoft Edge JavaScript 入门 - 使用现有网页的介绍性教程。
+*  [调试 JavaScript](index.md) 入门 - 使用现有网页的介绍性教程。
 *  [源工具概述](../sources/index.md) - 调试器是 **源** 工具的一部分，其中包括 JavaScript 编辑器。
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

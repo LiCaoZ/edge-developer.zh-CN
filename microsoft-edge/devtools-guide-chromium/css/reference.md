@@ -1,18 +1,18 @@
 ---
-description: 在 DevTools 中查看和更改 CSS Microsoft Edge的功能。
 title: CSS 功能参考
+description: 在 DevTools 中查看和更改 CSS Microsoft Edge的功能。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/29/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 44877b654cceaad841db5cd1830c0d0635fe00cc
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.date: 10/29/2021
+ms.openlocfilehash: 9b3991e56daf546ff6de65741c79518f72933bdb
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170384"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285160"
 ---
 <!-- Copyright Kayce Basques
 
@@ -59,7 +59,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 在 **"样式** "窗格中，单击 CSS 规则旁边的链接以打开定义该规则的外部样式表。  样式表将在"源" **工具的** "编辑器" **窗格中** 打开。
 
-如果样式表缩小，请单击"编辑器"窗格**** (") "设置格式 ![ ](../media/format-icon.msft.png) "**按钮**。  有关详细信息，请参阅使用非常打印 [重新设置缩小的 JavaScript 文件](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print)。
+如果样式表缩小，请单击"编辑器"窗格**** (") "设置格式" ![ ](../media/format-icon.msft.png) **按钮**。  有关详细信息，请参阅使用非常打印 [重新设置缩小的 JavaScript 文件](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print)。
 
 在下图中，单击后，您将进入 定义 CSS 规则的第 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` 2 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` `.content h1:first-of-type` 行。
 
@@ -166,7 +166,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
     :::image type="content" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="&quot;覆盖&quot;选项卡。" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
 
-1.  单击 **开始检测覆盖范围并刷新页面 (** ![ 开始检测范围并刷新页面 ](../media/refresh-icon.msft.png)) 。  页面刷新和"范围"**** 选项卡概述了浏览器加载的每个 (使用多少 CSS 和 JavaScript) 。  绿色表示已使用的 CSS。  红色表示未使用的 CSS。
+1.  单击 **开始检测覆盖范围并刷新页面 (** ![ 开始检测范围并刷新页面 ](../media/refresh-icon.msft.png)) 。  页面刷新和"范围"**** 选项卡概述了从浏览器加载的每个 (使用多少 CSS 和 JavaScript) 。  绿色表示已使用的 CSS。  红色表示未使用的 CSS。
 
     使用和未使用 CSS (JavaScript) 概述：
 
@@ -242,7 +242,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 | 键盘快捷方式 | 递增者 |
 |---|---|
 | `Alt`+`Up` (Windows、Linux) 或 `Option` + `Up` (macOS)  | 0.1 |
-| `Up` | 1 (或 0.1，如果当前值介于 -1 和 1 之间)  |
+| `Up` | 1 (0.1，如果当前值介于 -1 和 1 之间)  |
 | `Shift`+`Up` | 10 |
 | `Shift`+`Page Up` (Windows、Linux) 或 `Shift` + `Command` + `Up` (macOS)  | 100 |
 
@@ -278,7 +278,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 添加新的样式规则：
 
 1.  [选择元素](#select-an-element)。
-1.  单击 **"新建样式规则** (![ 新建样式规则 ](../media/new-style-rule-icon.msft.png)) 。  DevTools 在 **element.style** 规则下方插入新规则。
+1.  单击 **"新建样式规则** (![ 新建样式 ](../media/new-style-rule-icon.msft.png) 规则) 。  DevTools 在 **element.style** 规则下方插入新规则。
 
 在下图中，DevTools 在单击"新建样式规则" `h1.devsite-page-title` 后 **添加样式规则**。
 
@@ -318,7 +318,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
     :::image type="content" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="显示&quot;更多操作&quot; (...) 。" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
 
-1.  将鼠标 **悬停在"更多** `...` () "可显示上述操作。
+1.  将鼠标 **悬停在"更多** `...` () "按钮可显示上述操作。
 
     将鼠标悬停在 **“更多动作“** 上，就会显示出 **“下方插入样式规则”** 操作。
 
@@ -372,7 +372,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 1.  将鼠标悬停在要添加 `text-shadow` 声明的样式规则上。
 1.  [显示 **“更多操作”** 工具栏](#reveal-the-more-actions-toolbar)。
-1.  单击 **"添加文本阴影** (![ 添加文本阴影 ](../media/add-text-shadow-icon.msft.png) 图标) 。
+1.  单击 **"添加文本阴影** (![ 添加文本阴影图标 ](../media/add-text-shadow-icon.msft.png)) 。
 
 :::image type="content" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="添加文本阴影。" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
 
@@ -402,7 +402,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 1.  [选择元素](#select-an-element)。
 
-1.  在 **“样式”** 面板中，找到 `color`、`background-color` 或要更改的类似声明。  在 、 或类似值的左侧有一个小正方形，这是 `color` `background-color` 颜色的预览。
+1.  在 **“样式”** 面板中，找到 `color`、`background-color` 或要更改的类似声明。  在 、 或类似值的左侧，有一个小 `color` `background-color` 正方形，这是颜色的预览。
 
     下图中，`rgba(0, 0, 0, 0.7)` 左侧的小方块是该颜色的预览。
 
@@ -430,7 +430,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 ### <a name="sample-a-color-off-the-page-with-the-eyedropper"></a>用“取色器“在页面上打样着色
 
-打开颜色选取**器**时， (取色**** 器) ![ ](../media/eyedropper-icon.msft.png) 已打开。
+打开颜色**选取器**时，默认情况下， (**** ![ 取) ](../media/eyedropper-icon.msft.png) 器会打开。
 
 若要将所选颜色更改为页面上的某种其他颜色：
 
@@ -473,6 +473,6 @@ Angle **Clock** 提供了一个 GUI，用于更改 CSS 属性值中的角度量�
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/css/reference)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/css/reference)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

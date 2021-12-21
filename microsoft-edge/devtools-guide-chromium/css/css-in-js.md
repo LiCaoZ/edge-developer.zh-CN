@@ -1,18 +1,18 @@
 ---
-description: 以针对 JavaScript 设置格式并准备粘贴到 JavaScript 文件中的方式复制样式规则的声明。  编辑最初由 CSSOM 函数定义的样式规则。
 title: CSS-in-JS 框架的样式编辑
+description: 以针对 JavaScript 设置格式并准备粘贴到 JavaScript 文件中的方式复制样式规则的声明。  编辑最初由 CSSOM 函数定义的样式规则。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/25/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， css， css-in-js
-ms.openlocfilehash: b6241c152baf859337c14cda0e6f0de25d27b06b
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 08/25/2021
+ms.openlocfilehash: 809f06988a4ff07f1a8d1a64e1e2b7772f7ad07c
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156317"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284782"
 ---
 <!-- Copyright Alex Rudenko
 
@@ -37,18 +37,18 @@ ms.locfileid: "12156317"
 
 从 **"样式** "窗格中，您可以复制样式规则的声明，其格式为 JavaScript 并准备粘贴到 JavaScript 文件中。
 
-使用 CSS-in-JS 库时，您可以将 CSS 声明 (CSS 属性和值) ，以便它们会自动为 JavaScript 设置格式。  不必手动编辑复制的 CSS 以匹配 JavaScript 的语法。  可以在样式规则中复制单个 CSS 声明或所有声明，然后将其直接粘贴到 JavaScript 文件中，而不会遇到语法问题。
+使用 CSS-in-JS 库时，您可以将 CSS 声明 (CSS 属性和值) 以便它们会自动格式化为 JavaScript。  不必手动编辑复制的 CSS 以匹配 JavaScript 的语法。  可以在样式规则中复制单个 CSS 声明或所有声明，然后将其直接粘贴到 JavaScript 文件中，而不会遇到语法问题。
 
 将样式规则复制为 JavaScript：
 
-1. 在 **"元素**"工具的****"样式"窗格中，打开上下文菜单 (右键) 在样式规则的声明上单击"列表"。
+1. 在**元素**工具的**样式**窗格中，打开样式规则中声明的上下文菜单（右键单击）。
 
-1. 选择 **"将声明复制为 JS"** 或 **"复制所有声明为 JS"。**
+1. 选择**将声明复制为 JS** 或**将所有声明复制为 JS** 。
 
-1. 将复制的 CSS 粘贴到文本编辑器中的 JavaScript 文件中，如Visual Studio Code。  例如：`'--more-link': 'lime'`。
+1. 将复制的 CSS 粘贴到文本编辑器中的 JavaScript 文件中，例如Visual Studio Code。  例如：`'--more-link': 'lime'`。
 
-:::image type="complex" source="images/copy-declaration-as-js.msft.png" alt-text="样式规则的上下文菜单，包括&quot;Copy declaration as JS&quot;和&quot;Copy all declarations as JS&quot;命令" lightbox="images/copy-declaration-as-js.msft.png":::
-   样式规则的上下文菜单，包括 **Copy declaration as JS** 和 Copy all **declarations as JS** commands
+:::image type="complex" source="images/copy-declaration-as-js.msft.png" alt-text="样式规则的上下文菜单，包括&quot;将声明复制为 JS&quot;和&quot;将所有声明复制为 JS&quot;命令" lightbox="images/copy-declaration-as-js.msft.png":::
+   样式规则的上下文菜单，包括 **复制声明为 JS** 和 **复制所有声明作为 JS** 命令
 :::image-end:::
 
 此功能从版本 93 Microsoft Edge开始提供。 <!-- delete statement sometime after September 2, 2021 --> 若要详细了解如何查看和更改 CSS，请导航到 [CSS 功能参考](reference.md)。
@@ -96,9 +96,9 @@ function addStyle() {
 
 下面是 _CSS-in-JS_的含义，以及它不同于常规 CSS 的方式。  _CSS-in-JS_的定义有点模糊。  从广泛的意义上说，这是一种使用 JavaScript 管理 CSS 代码的方法。  例如，这可能意味着 CSS 内容是使用 JavaScript 定义的，而最终的 CSS 输出由应用进行生成。
 
-在 DevTools 上下文中 _，CSS-in-JS_ 意味着 CSS 内容通过 CSS 对象模型 API 注入页面。  使用 或 元素注入常规 CSS，并且具有静态源 (如 DOM 节点或网络资源 `<style>` `<link>`) 。  相比之下，CSS-in-JS 通常没有静态源。  此处的一个特例是，可以使用 CSS 对象模型 API 更新元素的内容，从而导致源与实际的 `<style>` CSS 样式表不同步。
+在 DevTools 上下文中 _，CSS-in-JS_ 意味着 CSS 内容通过 CSS 对象模型 API 注入页面。  常规 CSS 使用 或 元素进行注入，并且具有静态源 (如 DOM 节点或 `<style>` `<link>` 网络资源) 。  相比之下，CSS-in-JS 通常没有静态源。  此处的一个特例是，可以使用 CSS 对象模型 API 更新元素的内容，从而导致源与实际的 `<style>` CSS 样式表不同步。
 
-如果你使用任何 CSS-in-JS 库 (如样式组件、百年计划或 JSS) ，该库可能会使用 CSS 对象模型 API 在底层注入样式，具体取决于开发模式和浏览器。
+如果您使用任何 CSS-in-JS 库 (如样式组件、用户或 JSS) ，该库可能会使用 CSS 对象模型 API 在底层注入样式，具体取决于开发模式和浏览器。
 
 我们来看看如何使用 CSS 对象模型 API 注入样式表的一些示例，类似于某些 CSS-in-JS 库使用的方法。
 

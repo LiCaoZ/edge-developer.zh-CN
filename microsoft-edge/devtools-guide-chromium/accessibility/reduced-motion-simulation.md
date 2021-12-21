@@ -1,18 +1,18 @@
 ---
+title: 减少运动模拟
 description: 使用开发人员工具模拟运动减少。
-title: '使用开发人员工具使用 CSS 首选 (运动效果来模拟) '
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: acb7acbfaa1131d658ff08fc7f0aa83e10007d4b
-ms.sourcegitcommit: 8dcac32f975886847d829efaf17aa7ea082e4714
+ms.date: 06/07/2021
+ms.openlocfilehash: 2365e1185c7d3010b1d3e26d0eb41bced0f64f9a
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "12270077"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284649"
 ---
 # <a name="reduced-motion-simulation"></a>减少运动模拟
 
@@ -33,7 +33,7 @@ Web 产品中的动画可能是一个辅助功能问题。  操作系统通过�
 
 若要模拟操作系统的缩减运动设置，而无需更改操作系统设置：
 
-1.  在 `Control` + `Shift` + `P` "Windows/Linux"或 macOS 上键入 `Command` + `Shift` + `P` 以打开 **"命令菜单"。**
+1.  在 `Control` + `Shift` + `P` Windows/Linux 或 macOS 上键入 `Command` + `Shift` + `P` 以打开**命令菜单**。
     
     > [!div class="mx-imgBorder"]
     > ![打开命令菜单](../media/reduced-motion-open-command-menu.png)

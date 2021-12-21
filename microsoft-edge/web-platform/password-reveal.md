@@ -1,22 +1,22 @@
 ---
-description: 提供有关自定义显示密码显示按钮的指南
 title: 自定义“密码显示”按钮
+description: 提供有关自定义密码显示按钮的显示的指导。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/29/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， 兼容性， Web 平台， 密码展示， 眼睛图标
-ms.openlocfilehash: 4dbfe4a41b4d2156a0c6e0fcb1dab9cd20b7d762
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.date: 04/29/2021
+ms.openlocfilehash: f4a5e66c81dc33cb85c3a97212bada19930735b7
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269282"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285783"
 ---
 # <a name="customize-the-password-reveal-button"></a>自定义“密码显示”按钮
 
-此 `password` 参数中的输入Microsoft Edge包括**密码显示**控件。  若要确保正确输入密码，用户可以单击密码显示按钮或按 ，**** 以显示密码 `Alt` + `F8` 字段中的字符。
+该 `password` 控件中的输入Microsoft Edge包括**密码显示**控件。  若要确保正确输入密码，用户可以单击密码显示按钮或按 ，**** 以显示密码 `Alt` + `F8` 字段中的字符。
 
 带 **点** 隐藏用户输入的字符的密码字段。  密码 **显示** 按钮显示在密码 **字段的右侧** 。  目视图标显示在隐藏密码文本的点旁边：
 
@@ -26,7 +26,7 @@ ms.locfileid: "12269282"
 
 :::image type="complex" source="./media/mdn-demo-password-reveal-on.msft.png" alt-text="目视图标上有一个斜杠，并且显示原始密码文本" lightbox="./media/mdn-demo-password-reveal-on.msft.png":::
 
-默认情况下，密码 **显示** 按钮插入到所有 HTML 元素的 Shadow DOM 中，并将 `input` 设置为 `type` `"password"` 。  从版本 87 Microsoft Edge，用户或[企业](/deployedge/microsoft-edge-policies#passwordrevealenabled)可能会全局禁用此功能。  Web 设计人员和开发人员应该希望大多数Microsoft Edge用户拥有默认体验。
+默认情况下，密码 **显示** 按钮插入到所有 HTML 元素的 Shadow DOM 中，并将 `input` 设置为 `type` `"password"` 。  从 Microsoft Edge版本 87 开始，用户或[企业](/deployedge/microsoft-edge-policies#passwordrevealenabled)可能会全局禁用此功能。  您（Web 设计人员和开发人员）应该希望大多数Microsoft Edge用户拥有默认体验。
 
 
 <!-- ====================================================================== -->

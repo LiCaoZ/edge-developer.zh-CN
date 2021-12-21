@@ -1,24 +1,24 @@
 ---
-description: 若要快速查看页面各节的 Tab 键顺序，请使用辅助功能工具中"样式"选项卡右边的"源顺序查看器"。
 title: 使用源订单查看器测试键盘支持
+description: 若要快速查看页面各节的 Tab 键顺序，请使用辅助功能工具中"样式"选项卡右边的"源顺序查看器"。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: cd1d749bf2bc0fe5937f518c76b5255bcfae36b8
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.date: 06/07/2021
+ms.openlocfilehash: e9c54d6982bff8947ae5324f03f934ff7d891903
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140415"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284642"
 ---
 # <a name="test-keyboard-support-using-the-source-order-viewer"></a>使用源订单查看器测试键盘支持
 
 文档的源顺序对于辅助技术非常重要，并且可能不同于元素在呈现页面上的显示顺序。  使用 CSS，您可以直观地对页面元素进行重新排序，但这并不意味着屏幕阅读器等辅助技术将按相同的顺序表示页面元素。
 
-为了确保文档具有逻辑顺序，可以使用源顺序查看器用指定文档源代码**** 中顺序的数字标记不同的页面元素。  源**顺序查看器**位于"样式"**** 选项卡 ("**按钮附近的**"辅助功能") 。
+为了确保文档具有逻辑顺序，可以使用源顺序查看器用指定文档源代码**** 中顺序的数字标记不同的页面元素。  源**顺序查看器**位于"样式"**** 选项卡 (的"辅助功能"选项卡) 。 ****
 
 
 <!-- ====================================================================== -->

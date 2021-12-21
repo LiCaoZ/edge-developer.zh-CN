@@ -1,18 +1,18 @@
 ---
-description: Microsoft Edge加载项发布的功能提供了有关在合作伙伴中心上为扩展开发人员启动的功能的信息。
 title: Microsoft Edge 加载项已发布功能
+description: Microsoft Edge加载项发布的功能提供了有关在合作伙伴中心上为扩展开发人员启动的功能的信息。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/24/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， 加载项发布功能， 加载项新功能， 加载项功能启动
-ms.openlocfilehash: 58ed15148e149e65b11f3883fac89cfcb4b262b6
-ms.sourcegitcommit: 77b290f3c59c0224a19bcf98533024aadf04e13f
+ms.date: 11/24/2021
+ms.openlocfilehash: 55d69c3214a6e6dbd5a40f5182815476f087a681
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "12209928"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284691"
 ---
 # <a name="microsoft-edge-add-ons-released-features"></a>Microsoft Edge 加载项已发布功能
 

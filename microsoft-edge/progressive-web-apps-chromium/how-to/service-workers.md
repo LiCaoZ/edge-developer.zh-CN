@@ -3,17 +3,17 @@ title: 使用服务工作人员管理网络请求和推送通知
 description: 服务工作人员是 Web 工作人员，可帮助提高性能、响应不同的网络条件以及提高与 Web 应用程序的连接。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用、PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
-ms.openlocfilehash: cb5887789cf54e2f8d464e2032dd121c7035a90c
-ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
+keywords: 渐进 Web 应用，PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
+ms.date: 01/07/2021
+ms.openlocfilehash: df05806140da3b9027443697fb5f76459e1c0297
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "12235633"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286602"
 ---
 # <a name="use-service-workers-to-manage-network-requests-and-push-notifications"></a>使用服务工作人员管理网络请求和推送通知
 

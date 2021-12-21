@@ -1,19 +1,19 @@
 ---
-description: 了解如何在 WebView2 应用中的复杂方案中使用 JavaScript
 title: 在 WebView 中对扩展方案使用 JavaScript
+description: 如何在 WebView2 应用中的复杂方案中使用 JavaScript。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
-ms.topic: how-to
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 3c38b9a7129c6c1cad9aa191edc22babbfbca58a
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 05/06/2021
+ms.openlocfilehash: c8e350941112a06b694c0112acf6256f87e608bc
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156856"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286189"
 ---
 # <a name="use-javascript-in-webview-for-extended-scenarios"></a>在 WebView 中对扩展方案使用 JavaScript
 
@@ -34,7 +34,7 @@ ms.locfileid: "12156856"
 | API  | 描述  |
 |:--- |:--- |
 | [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | 在 WebView 控件中运行 JavaScript。 有关详细信息，请导航到入门教程。 |
-| [OnDocumentCreatedAsync](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated) | 当创建文档对象模型 (DOM) 运行。 |
+| [OnDocumentCreatedAsync](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated) | 创建文档对象模型或 DOM (时) 运行。 |
 
 
 <!-- ====================================================================== -->
@@ -43,7 +43,7 @@ ms.locfileid: "12156856"
 在此部分中，你将从 WebView2 控件访问专用的 JavaScript 文件。
 
 > [!NOTE]
-> 虽然内联编写 JavaScript 对于快速 JavaScript 命令可能非常高效，但会丢失 JavaScript 颜色主题和行格式，这使得在 JavaScript 中编写大量代码Visual Studio。
+> 尽管内联编写 JavaScript 对于快速 JavaScript 命令可能非常高效，但会丢失 JavaScript 颜色主题和行格式，这使得在 JavaScript 中编写大量代码Visual Studio。
 
 若要解决此问题，请用代码创建单独的 JavaScript 文件，然后使用 参数传递对该文件 `ExecuteScriptAsync` 的引用。
 
@@ -100,7 +100,7 @@ ms.locfileid: "12156856"
 <!-- ====================================================================== -->
 ## <a name="scenario-removing-the-context-menu"></a>方案：删除上下文菜单
 
-在此部分中，从 WebView2 控件 (右键单击菜单) 菜单。
+在此部分中，从 WebView2 控件 (右键单击菜单) 默认上下文菜单。
 
 若要开始，请浏览右键单击菜单的当前功能：
 
@@ -118,7 +118,7 @@ ms.locfileid: "12156856"
     await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
     ```
 
-1.  再次运行代码。  确认无法打开上下文菜单 (右键) 。
+1.  再次运行代码。  确认无法打开上下文菜单 (右键单击) 。
 
 
 <!-- ====================================================================== -->

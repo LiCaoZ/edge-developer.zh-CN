@@ -1,18 +1,18 @@
 ---
-description: 有关使用辅助技术（如屏幕阅读器）导航 Microsoft Edge 开发工具的指南。
 title: 使用辅助技术导航 Microsoft Edge 开发工具
+description: 有关使用辅助技术（如屏幕阅读器）导航 Microsoft Edge 开发工具的指南。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 48da4a7898972d7486aa74390e839b400f930417
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.date: 06/07/2021
+ms.openlocfilehash: b8976510223bbb70ca4cfa0c4405813c9b9915e1
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269100"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286077"
 ---
 <!-- Copyright Rob Dodson
 
@@ -29,13 +29,13 @@ ms.locfileid: "12269100"
    limitations under the License.  -->
 # <a name="navigate-microsoft-edge-devtools-with-assistive-technology"></a>使用辅助技术导航 Microsoft Edge 开发工具
 
-本文可帮助主要依赖辅助技术的用户（如屏幕阅读器）使用[Microsoft Edge DevTools。](../../devtools-guide-chromium/index.md)  DevTools 是内置于浏览器浏览器的一Microsoft Edge工具。
+本文可帮助主要依赖辅助技术的用户（如屏幕阅读器）使用[Microsoft Edge DevTools。](../../devtools-guide-chromium/index.md)  DevTools 是内置于 Web 浏览器的一Microsoft Edge工具。
 
 有关改善网页辅助功能的 DevTools 功能，请参阅 [DevTools](reference.md) 中的辅助功能测试和使用 [DevTools](accessibility-testing-in-devtools.md)的辅助功能测试概述。
 
 本指南将指导你完成最可访问的工具和选项卡，并突出显示你可能会遇到的问题。
 
-DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为面板 _。) _工具组织到主工具栏和箱工具栏上的[ARIA](https://www.w3.org/TR/wai-aria-1.1/#tablist)选项卡列表中。
+DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为面板 。) 工具组织到__ 主工具栏和箱工具栏上的[ARIA](https://www.w3.org/TR/wai-aria-1.1/#tablist)选项卡列表中。
 
 以下是工具示例：
 *   元素**工具**允许你[查看和更改 DOM 节点](../dom/index.md#navigate-the-dom-tree-with-a-keyboard)或[CSS。](../css/index.md)
@@ -103,7 +103,7 @@ To get started， navigate to [Open Microsoft Edge DevTools](../open/index.md). 
 
 ### <a name="copy-the-code-for-an-element-in-the-dom-tree"></a>复制 DOM 树中元素的代码
 
-1.  焦点在 **DOM**树中的节点上时，将鼠标悬停在该节点上，然后打开上下文菜单 (右键单击") "。
+1.  焦点在 **DOM**树中的节点上时，将鼠标悬停在节点上并打开上下文菜单 (右键单击") "。
 1.  展开“**复制**”选项。
 1.  选择“**复制 outerHTML**”。
 
@@ -115,7 +115,7 @@ To get started， navigate to [Open Microsoft Edge DevTools](../open/index.md). 
 
 *   将焦点放在“**DOM 树**”中的节点上时，选择 `Enter` 以使其可以编辑。
 *   选择 `Tab` 以在属性值之间移动。  听到“空格”声音时，你已位于空白文本输入内，并且能够键入新的属性值。
-*   选择 `Control` + `Enter` (Windows、Linux) 或 (macOS) 接受更改并听到元素 `Command` + `Enter` 的全部内容。
+*   选择 `Control` + `Enter` (Windows、Linux) 或 (`Command` macOS) 接受更改并听到元素 + `Enter` 的全部内容。
 
 **已知问题**
 
@@ -125,7 +125,7 @@ To get started， navigate to [Open Microsoft Edge DevTools](../open/index.md). 
 
 *   将焦点放在“**DOM 树**”中的节点上时，选择 `Enter` 以使其可以编辑。
 *   选择 `Tab` 以在属性值之间移动。  当听到该元素的名称（例如，`h2`）时，你会位于文本输入内，并且可以更改元素的类型。
-*   选择 `Control` + `Enter` (Windows、Linux) 或 `Command` + `Enter` (macOS) 接受更改。
+*   选择 `Control` + `Enter` (Windows、Linux) 或 (`Command` + `Enter` macOS) 接受更改。
 
 例如，当你键入并选择 (Windows、Linux) 或 (macOS) 时，元素的起始标记和结束标记 `h3` `Control` + `Enter` `Command` + `Enter` `h3` 会更改。
 
@@ -148,7 +148,7 @@ DOM **断点** 和 **属性** 选项卡不可通过键盘访问。
 
 在 **"样式** "窗格中查找用于筛选样式的控件，切换元素 (如 [：active](https://developer.mozilla.org/docs/Web/CSS/:active) 和 [：focus](https://developer.mozilla.org/docs/Web/CSS/:focus)) 、切换类和添加新类。  还有一个功能强大的样式检查工具，用于浏览和修改当前应用于“**DOM 树**”中处于焦点的元素的样式。
 
-了解“**样式**”窗格的关键概念是它只显示“**DOM 树**”窗格中当前选中节点的样式。  例如，假设已完成对 `<header>` 节点样式的检查，并且现在希望查看 `<footer>` 节点的样式。  若要执行该操作，首先需要在“**DOM 树**”中选择 `<footer>` 节点。  您可能会发现，使用"检查"工作流[](#inspect-an-element-on-the-page)检查节点 (的常规附近节点会更快，例如页脚) 内的链接（它聚焦 `footer` **DOM 树**）中，然后使用键盘导航到您感兴趣的精确节点。
+了解“**样式**”窗格的关键概念是它只显示“**DOM 树**”窗格中当前选中节点的样式。  例如，假设已完成对 `<header>` 节点样式的检查，并且现在希望查看 `<footer>` 节点的样式。  若要执行该操作，首先需要在“**DOM 树**”中选择 `<footer>` 节点。  您可能会发现使用"检查"工作流检查[](#inspect-an-element-on-the-page)位于节点 (常规附近的节点（例如页脚) 中的链接，该链接将聚焦 `footer` **DOM 树**）的速度更快，然后使用键盘导航到您感兴趣的精确节点。
 
 #### <a name="navigate-the-styles-pane"></a>导航“样式”窗格
 
@@ -222,7 +222,7 @@ DOM **断点** 和 **属性** 选项卡不可通过键盘访问。
 
 **已知问题**
 
-*   对于 MacOS[屏幕阅读器](https://www.w3.org/TR/wai-aria-1.1/#tree)（如**** VoiceOver）来说，"辅助功能"选项卡Microsoft Edge ARIA 树的类型可能未正确公开。  订阅 [Chromium 问题 #868480](https://bugs.chromium.org/p/chromium/issues/detail?id=868480) 以获取有关此问题进展的通知。
+*   对于 MacOS 屏幕阅读器（如**** VoiceOver）来说，"辅助功能"选项卡Microsoft Edge ARIA 树的类型可能未正确公开。 [](https://www.w3.org/TR/wai-aria-1.1/#tree)  订阅 [Chromium 问题 #868480](https://bugs.chromium.org/p/chromium/issues/detail?id=868480) 以获取有关此问题进展的通知。
 *   每个 **ARIA 属性** 和 **已计算属性** 部分都标记为 [ARIA 树](https://www.w3.org/TR/wai-aria-1.1/#tree)，但当前每个部分都不具有焦点管理且不可通过键盘操作。
 
 

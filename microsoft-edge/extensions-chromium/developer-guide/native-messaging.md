@@ -1,24 +1,24 @@
 ---
-description: 本机消息传递文档
 title: 本机消息传递
+description: 为了与安装在用户设备上本机 Win32 应用进行通信，扩展使用消息传递 API。  本机应用主机使用标准输入和标准输出发送和接收扩展名的邮件。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/31/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 6b8b09e8f28bbbd6368beeadb95f8a30be2d3424
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.date: 03/31/2021
+ms.openlocfilehash: 24df1361aff653a1b697feb9b3218034f441b482
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269450"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286861"
 ---
 # <a name="native-messaging"></a>本机消息传递
 
-扩展使用消息传递 API 与安装在用户设备上本机 Win32 应用进行通信。  本机应用主机使用标准输入和标准输出发送和接收扩展名的邮件。  使用本机消息传递的扩展安装在Microsoft Edge与任何其他扩展类似。  但是，本机应用不是由 Microsoft Edge。
+为了与安装在用户设备上本机 Win32 应用进行通信，扩展使用消息传递 API。  本机应用主机使用标准输入和标准输出发送和接收扩展名的邮件。  使用本机消息传递的扩展安装在Microsoft Edge与任何其他扩展类似。  但是，本机应用不是由用户安装或Microsoft Edge。
 
-若要获取扩展和本机应用主机，你有两个分发模型。
+若要获取扩展和本机应用主机，有两种分发模型：
 
 *   将扩展和主机打包在一起。  当用户安装程序包时，将同时安装扩展和主机。
 *   使用加载项Microsoft Edge安装扩展[](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home)，扩展会提示用户安装主机。
@@ -155,7 +155,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\
 ```
 
 > [!NOTE]
-> 如果您在 Microsoft Edge 加载项和 Chrome Webstore 上具有扩展，则必须添加与主机清单文件的 中的这两个存储对应的扩展名，因为只会读取与找到的第一个注册表位置对应的主机清单。 `allowed_origins`
+> 如果您在 Microsoft Edge 加载项和 Chrome Webstore 上具有扩展，则必须在主机清单文件的 中添加与这两个存储对应的扩展名，因为只会读取与找到的第一个注册表位置对应的主机清单。 `allowed_origins`
 
 ### [<a name="macos"></a>macOS](#tab/macos/)
 

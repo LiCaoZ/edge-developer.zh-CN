@@ -1,18 +1,18 @@
 ---
-description: 了解如何筛选控制台消息
-title: 开始在控制台中筛选消息
+title: 筛选控制台消息
+description: 如何筛选控制台消息。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/13/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 23f5c60720f1360a9048ff4a4f08b130f8dd4619
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.date: 04/13/2021
+ms.openlocfilehash: f7f63cb8dabd6f61b39b80b3d5d889e8ad9e802f
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140303"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284369"
 ---
 # <a name="filter-console-messages"></a>筛选控制台消息
 

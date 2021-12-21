@@ -1,19 +1,19 @@
 ---
 title: 处理渐进式 Web 应用中的协议
-description: 了解如何将你的PWA注册为协议处理程序，以将其与其他应用程序在操作系统中深入集成。
+description: 如何将你的 PWA注册为协议处理程序，以将其与其他应用程序在操作系统中深入集成。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/29/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， 协议
-ms.openlocfilehash: 62064b7cc0262e959d617e3c20f5a7ec0534a3dd
-ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
+ms.date: 09/29/2021
+ms.openlocfilehash: 893adcbbb434655c7e776a28d0556fd4b0d82e82
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "12235766"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284915"
 ---
 # <a name="handle-protocols-in-progressive-web-apps"></a>处理渐进式 Web 应用中的协议
 
@@ -37,7 +37,7 @@ ms.locfileid: "12235766"
 
 :::image type="content" source="../media/enable-protocol-handling-experiment.png" alt-text="启用&quot;协议处理&quot;API 实验。":::
 
-协议处理也是 Microsoft Edge 中的一项Microsoft Edge。 了解如何 [在源试用版中注册网站](./origin-trials.md#enroll-your-site-in-an-origin-trial)。
+协议处理也是 Microsoft Edge 中的一个Microsoft Edge。 了解如何 [在源试用版中注册网站](./origin-trials.md#enroll-your-site-in-an-origin-trial)。
 
 
 <!-- ====================================================================== -->

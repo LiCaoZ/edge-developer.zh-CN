@@ -1,22 +1,22 @@
 ---
-description: 呈现模拟用户的深色或浅色方案操作系统设置或浏览器设置的网页，而无需更改你自己的计算机设置。  将 CSS 媒体查询与 DevTools 呈现选项一起用于 prefers-color-scheme。
 title: 模拟呈现页面中的深色或浅色方案
+description: 呈现模拟用户的深色或浅色方案操作系统设置或浏览器设置的网页，而无需更改你自己的计算机设置。  将 CSS 媒体查询与 DevTools 呈现选项一起用于 prefers-color-scheme。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/03/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: 3fc9dffa6525b8f5edd428ebdc5286ae3c9a895e
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 08/03/2021
+ms.openlocfilehash: 7bbff99b042ba7aaac8212983a6868099aed0512
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155463"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286070"
 ---
 # <a name="emulate-dark-or-light-schemes-in-the-rendered-page"></a>模拟呈现页面中的深色或浅色方案
 
-许多操作系统都有一种方法来以较暗或更浅的颜色显示任何应用程序。  在深色操作系统中具有浅色方案的网页产品可能难以阅读，并且对于一些用户可能是一个辅助功能问题。
+许多操作系统都有一种方法以较暗或更浅的颜色显示任何应用程序。  在深色操作系统中具有浅色方案的网页产品可能难以阅读，并且对于一些用户可能是一个辅助功能问题。
 
 若要测试当用户选择深色或浅色模式时网页的呈现方式，而不是更改你自己的计算机深色模式或浅色模式设置，可以在 Microsoft Edge DevTools 中选择模拟**CSS 首选**配色方案：深色或**** 浅色。  可以从命令菜单或呈现工具**** 执行此操作，如下所述****。
 

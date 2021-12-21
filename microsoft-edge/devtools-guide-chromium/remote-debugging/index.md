@@ -1,18 +1,18 @@
 ---
-description: 从 Windows 或 macOS 计算机在 Android 设备上远程调试实时内容。
 title: Android 设备远程调试入门
+description: 从 Windows 或 macOS 计算机在 Android 设备上远程调试实时内容。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge,web 开发,f12 工具,开发工具
-ms.openlocfilehash: d2a4076d23fca8def5f5e02932bcfe6c079fadba
-ms.sourcegitcommit: 29208d0ce55dfeee7dad383bf1ae9dd96a590020
+ms.date: 05/04/2021
+ms.openlocfilehash: 24feafbd4f9158379f92d318819660b021cc6d8d
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "12176630"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285762"
 ---
 <!-- Copyright Kayce Basques
 
@@ -77,7 +77,7 @@ ms.locfileid: "12176630"
 使用以下提示可帮助你验证软件是否正确设置。
 
 *   如果你的开发计算机运行的是 Windows，请尝试手动为 Android 设备安装 USB 驱动程序。  有关详细信息，请参阅安装 [OEM USB 驱动程序](https://developer.android.com/tools/extras/oem-usb.html)。
-*   Windows Android (（特别是 Samsung) ）的一些组合需要其他设置。  有关详细信息，请参阅 [DevTools 设备在](https://stackoverflow.com/questions/21925992)插入 时检测设备。
+*   Windows Android (（特别是 Samsung) 设备）的一些组合需要其他设置。  有关详细信息，请参阅 [DevTools 设备在](https://stackoverflow.com/questions/21925992)插入 时检测设备。
 
 如果 **Android 设备上** 未显示"允许 USB 调试"提示，请尝试：
 
@@ -141,6 +141,6 @@ The version of Microsoft Edge running on your Android device determines the vers
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

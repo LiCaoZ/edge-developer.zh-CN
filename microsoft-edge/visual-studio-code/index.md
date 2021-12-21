@@ -1,45 +1,45 @@
 ---
+title: Visual Studio Code 概述
 description: Microsoft Edge 和 Visual Studio Code。
-title: Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/24/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， vs code， visual studio code， 调试程序， webhint
-ms.openlocfilehash: 28452a7de22a2b716734c5825d7bd7f96882aa02
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 08/24/2021
+ms.openlocfilehash: 4be37420c9c47aa738761479771736d2a394b1d2
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156156"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285237"
 ---
 # <a name="visual-studio-code-overview"></a>Visual Studio Code 概述
 
-Visual Studio Code JavaScript、TypeScript 和 Node.js支持，因此对于 Web 开发人员来说，这是一个很好的工具。  Visual Studio Code是一款轻型但强大的源代码编辑器，可用于 Windows、Linux 和 macOS。  本文概述了为开发人员工具Visual Studio Code用户添加功能Microsoft Edge扩展。
+Visual Studio Code JavaScript、TypeScript 和 Node.js支持，因此对于 Web 开发人员来说，这是一个很好的工具。  Visual Studio Code是一款轻型但强大的源代码编辑器，可用于 Windows、Linux 和 macOS。  本文概述了为开发人员工具Visual Studio Code用户添加功能的Microsoft Edge扩展。
 
 *  [下载Visual Studio Code](https://code.visualstudio.com)
 *  [入门](https://code.visualstudio.com/Docs)- Visual Studio Code
 
 
 <!-- ====================================================================== -->
-## <a name="the-microsoft-edge-devtools-extension-for-visual-studio-code"></a>Microsoft Edge开发人员的 DevTools Visual Studio Code
+## <a name="the-microsoft-edge-devtools-extension-for-visual-studio-code"></a>适用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展
 
-使用**Microsoft Edge DevTools**扩展Visual Studio Code，可以在 Visual Studio Code 内使用 Microsoft Edge**** 浏览器的 Elements Visual Studio Code。  使用"元素"工具可以：
+借助**Microsoft Edge DevTools** Visual Studio Code，可以在 Visual Studio Code 内使用 Microsoft Edge**** 浏览器的 Elements Visual Studio Code。  使用"元素"工具可以：
 *   附加到实例或启动 Microsoft Edge。
 *   显示运行时 HTML 结构。
 *   更新布局。
 *   修复样式设置问题。
 
-:::image type="complex" source="./media/microsoft-edge-tools-for-visual-studio-code.png" alt-text="Microsoft Edge开发人员的 DevTools Visual Studio Code" lightbox="./media/microsoft-edge-tools-for-visual-studio-code.png":::
-   适用于**Microsoft Edge开发人员的 DevTools** Visual Studio Code
+:::image type="complex" source="./media/microsoft-edge-tools-for-visual-studio-code.png" alt-text="适用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展" lightbox="./media/microsoft-edge-tools-for-visual-studio-code.png":::
+   适用于 Visual Studio Code 的 **Microsoft Edge DevTools** 扩展
 :::image-end:::
 
 若要安装 Microsoft Edge DevTools 扩展：
 1. In Visual Studio Code， navigate to **Extensions** (select `Ctrl` + `Shift` + `X` on Windows/Linux or `Command` + `Shift` + `X` on macOS) .
-1. 在 Marketplace 中搜索扩展Microsoft Edge **Tools for VS Code，** 选择扩展，然后选择"安装 **"。**
+1. 在 Marketplace 中搜索扩展**Microsoft Edge Tools for VS Code，** 选择扩展，然后选择"安装 **"。**
 
-:::image type="complex" source="./media/vscode-edge-tools-install.png" alt-text="安装 Microsoft Edge DevTools 扩展Visual Studio Code" lightbox="./media/vscode-edge-tools-install.png":::
+:::image type="complex" source="./media/vscode-edge-tools-install.png" alt-text="安装 Microsoft Edge 开发人员的 DevTools Visual Studio Code" lightbox="./media/vscode-edge-tools-install.png":::
    安装 Microsoft Edge **DevTools**扩展Visual Studio Code
 :::image-end:::
 
@@ -58,7 +58,7 @@ Visual Studio Code JavaScript、TypeScript 和 Node.js支持，因此对于 Web 
 *   性能
 *   跨浏览器兼容性
 *   PWA兼容性
-*   安全性
+*   安全
 
 Webhint 工具会检查代码的编码实践和常见错误。  Webhint 开放源代码项目最初由 Microsoft Edge 开发，现在是[OpenJS Foundation 的一部分](https://openjsf.org)。  Microsoft Edge团队将继续与社区中的 Web 开发人员一起为 webhint 做贡献。
 

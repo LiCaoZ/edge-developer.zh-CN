@@ -3,16 +3,16 @@ title: 修复控制台中报告的 JavaScript 错误
 description: 调试和解决控制台中报告的与 JavaScript 相关的错误。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 04/13/2021
-ms.openlocfilehash: 42e3f9ff694039f3850ea26b416ebd2783641240
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.openlocfilehash: 9a98b6e242770d399f45e303d37c5c6ba66762d1
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269107"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285804"
 ---
 # <a name="fixing-javascript-errors-that-are-reported-in-the-console"></a>修复控制台中报告的 JavaScript 错误
 
@@ -28,7 +28,7 @@ ms.locfileid: "12269107"
 
 :::image type="content" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools 提供有关控制台中错误的详细信息。" lightbox="../media/console-debug-displays-error.msft.png":::
 
-控制台中的许多错误消息**在****"Web"** 按钮上都有"搜索此消息"，显示为放大镜。  此功能是在版本 94 Microsoft Edge引入的。  有关详细信息，请参阅从控制台查找 [Web 上的错误消息](index.md#look-up-error-messages-on-the-web-from-the-console)。
+控制台中的许多错误消息**在****"Web"** 按钮上都有"搜索此消息"，显示为放大镜。  此功能是在 94 Microsoft Edge引入的。  有关详细信息，请参阅从控制台查找 [Web 上的错误消息](index.md#look-up-error-messages-on-the-web-from-the-console)。
 
 此错误消息中的信息表明错误位于文件的第 16 `error.html` 行。  在 `error.html:16` 控制台 中选择错误消息右侧 **的链接**。  " **源** "工具将打开并突出显示代码行，并出现错误：
 
@@ -74,7 +74,7 @@ ms.locfileid: "12269107"
 
 :::image type="content" source="../media/console-debug-network-error-network-detail.msft.png" alt-text="检查&quot;网络&quot;工具中的标头可能会提供更多信息。" lightbox="../media/console-debug-network-error-network-detail.msft.png":::
 
-问题是什么？  在请求的 `//` URI () 两个斜杠字符 `repos` 。  打开" **源"** 工具并检查第 26 行。  尾部斜杠 () URI 的末尾 `/` 出现。
+问题是什么？  在请求的 URI () 两个斜杠字符 `//` `repos` 。  打开" **源"** 工具并检查第 26 行。  尾部斜杠 () URI 的末尾 `/` 出现。
 
 " **源** "工具显示包含错误的代码行：
 

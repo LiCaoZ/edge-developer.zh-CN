@@ -1,18 +1,18 @@
 ---
-description: 关于 webhint 扩展Visual Studio Code。
 title: 适用于Visual Studio Code的 webhint 扩展
+description: webhint extension for Visual Studio Code is a customizable lint tool to improve the accessibility， performance， cross-browser compatibility， PWA compatibility， and security of your site.  扩展将检查代码的最佳实践和常见错误。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， vs code， visual studio code， webhint
-ms.openlocfilehash: fc07d8750cbe69cd66c8ccb61bdb99452bfbad21
-ms.sourcegitcommit: aea4d6f07de1c2a4b9c2a31b821e2103df99c030
+ms.date: 11/19/2021
+ms.openlocfilehash: 8b89bc075b449adf76eec9d7f4dd8aafae67a7d1
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "12185832"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285776"
 ---
 # <a name="webhint-extension-for-visual-studio-code"></a>适用于Visual Studio Code的 webhint 扩展
 

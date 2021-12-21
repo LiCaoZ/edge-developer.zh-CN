@@ -1,18 +1,18 @@
 ---
-description: 使用呈现工具中的"模拟 CSS 媒体功能首选-配色方案\"下拉列表) 查看深色模式和浅色模式 (深色主题和浅色主题控件的对比度问题。
 title: 检查深色主题和浅主题的对比度问题
+description: " (使用呈现工具中的\"模拟 CSS 媒体功能首选-配色方案\\\"下拉列表) 针对深色模式和浅色模式) 检查深色主题和浅色主题控件的对比度问题。"
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: f4d7c193666b13b259fd308c6d177203b3e51f97
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.date: 06/07/2021
+ms.openlocfilehash: 962bcda6f290a93230d670c33c70a924e55d5c39
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140513"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285475"
 ---
 # <a name="check-for-contrast-issues-with-dark-theme-and-light-theme"></a>检查深色主题和浅主题的对比度问题
 

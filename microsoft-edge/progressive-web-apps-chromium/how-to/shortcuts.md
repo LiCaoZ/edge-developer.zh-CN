@@ -1,25 +1,25 @@
 ---
 title: 定义应用快捷方式
-description: 了解如何在任务栏的上下文菜单中Windows应用的常见任务。
+description: 如何使你的应用的常见任务在任务栏的Windows菜单中可用。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进式 Web 应用， PWA， Edge， Windows， 任务栏， 跳转列表， 快捷方式
-ms.openlocfilehash: 9fcd76335c86ec20d3e83fa40d4f4d8df808ed18
-ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
+ms.date: 09/13/2021
+ms.openlocfilehash: 9dc418688880dbaf12c79ea5843eae7dc8ed5ebd
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "12235612"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286595"
 ---
 # <a name="define-app-shortcuts"></a>定义应用快捷方式
 
 应用快捷方式使用户能够更快、更轻松地完成常见任务，并可以提升他们对应用的参与度。
 
-在移动设备上，快捷方式通常可以通过长按应用图标来访问。  在Windows，快捷方式作为 Jumplist 集成。  Jumplists 定义在右键单击磁贴或右键单击任务栏中的"开始"菜单时出现的弹出菜单。
+在移动设备上，快捷方式通常可以通过长按应用图标来访问。  在Windows，快捷方式作为 Jumplist 集成。  Jumplist 定义在右键单击磁贴或右键单击任务栏中的"开始"菜单时出现的弹出菜单。
 
 下图显示了 iOS 上 Microsoft Edge快捷方式：
 
@@ -78,7 +78,7 @@ ms.locfileid: "12235612"
 若要测试是否正确配置了快捷方式：
 
 1.   在Microsoft Edge中，转到你的应用。
-1.   [打开 DevTools，](../../devtools-guide-chromium/open/index.md)例如按 `Ctrl` + `Shift` + `I` (/Linux `Command` + `Option` + Windows 上的 `I`) 或 macOS () 。
+1.   [打开 DevTools，](../../devtools-guide-chromium/open/index.md)例如按 (/Linux Windows 上的) 或 `Ctrl` + `Shift` + `I` `Command` + `Option` + `I` (macOS) 。
 1.   在主工具栏中，选择 **"应用程序"** 工具。  如有必要，请单击"**更多工具** (+) "，然后选择"应用程序 **"。**
 1.   在应用程序**工具中****，选择清单**。
 1.   向下滚动以显示快捷方式列表。

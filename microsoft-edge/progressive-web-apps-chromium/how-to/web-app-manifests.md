@@ -1,23 +1,23 @@
 ---
 title: 使用 Web 应用清单将渐进式 Web 应用集成到操作系统
-description: 了解如何使用 Web 应用清单将渐进式 Web 应用集成到操作系统中。
+description: 如何使用 Web 应用清单将渐进式 Web 应用集成到操作系统中。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用、PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
-ms.openlocfilehash: ef92b1fc3652aebbc7d6100dd012263512c25c40
-ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
+keywords: 渐进 Web 应用，PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
+ms.date: 01/07/2021
+ms.openlocfilehash: 6854792081bdf3436f6b2cfd60768e651b48f0bc
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "12235605"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284082"
 ---
 # <a name="use-a-web-app-manifest-to-integrate-a-progressive-web-app-into-the-operating-system"></a>使用 Web 应用清单将渐进式 Web 应用集成到操作系统
 
-网站的 Web 应用清单控制渐进式 Web (PWA) 在设备上安装时的外观和行为。 Web 应用清单提供了一些信息，如应用名称、系统菜单中表示应用的图标文件位置，以及操作系统 (OS) 在标题栏中使用的主题颜色。
+网站的 Web 应用清单控制在设备上 (PWA) 渐进式 Web 应用的外观和行为。 Web 应用清单提供了一些信息，如应用名称、系统菜单中表示应用的图标文件位置，以及操作系统 (OS) 在标题栏中使用的主题颜色。
 
 Web 应用程序清单是必须使用清单链接从网站的 HTML 页引用的 JSON 文件。 在网站的 HTML 页的 和 标记之间插入以下代码， `<head>` `</head>` 以链接到清单文件：
 
@@ -87,7 +87,7 @@ Web 应用程序清单是必须使用清单链接从网站的 HTML 页引用的 
 <!-- ====================================================================== -->
 ## <a name="use-shortcuts-to-provide-quick-access-to-features"></a>使用快捷方式快速访问功能
 
-大多数操作系统都通过使用连接到应用图标的右键菜单上的快捷方式快速访问关键应用功能。  若要在 Web 应用程序中PWA，请 `shortcuts` 包含 Web 应用清单中的 属性。
+大多数操作系统都通过使用连接到应用图标的右键菜单上的快捷方式快速访问关键应用功能。  若要在 Web 应用程序中PWA，请包含 Web `shortcuts` 应用清单中的 属性。
 
 以下代码演示如何在 Web 应用清单中定义快捷方式。
 

@@ -1,52 +1,52 @@
 ---
-ms.assetid: 1b3ebc25-d023-4f23-bbba-dce066c20de8
-description: ARIA 应用程序的最佳方案 (ARIA) 如何共同创建可访问的网站。
 title: 有关构建可访问网站的资源
+description: ARIA 应用程序与可访问的丰富 Internet 应用程序 (ARIA) 如何共同创建可访问的网站。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: 辅助功能， 开发人员辅助功能， 可访问的网站， 边缘， Web 开发， ARIA， 开发人员， UIA， UI 自动化
+ms.assetid: 1b3ebc25-d023-4f23-bbba-dce066c20de8
 ms.custom: seodec18
-ms.openlocfilehash: ce742d0126008b47bcacb2ad164f76e1feb5cb3b
-ms.sourcegitcommit: 97b32870897c702eed52d9fbbd13cfff2046ad87
+ms.date: 05/11/2021
+ms.openlocfilehash: 6aaec65df880a3a980900291336f6264a8763c75
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "12107784"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285216"
 ---
 # <a name="resources-about-building-accessible-websites"></a>有关构建可访问网站的资源
 
-Web 填充了动态且复杂的网站、应用程序和用户界面，这些网站、应用程序和用户界面是使用 HTML、CSS 和 JavaScript 的组合构建的。  但是，当设计和构建时没有考虑辅助功能时，依赖辅助技术来浏览 Web 的人很难使用这些复杂的网站。 [](https://webaim.org/articles/motor/assistive)
+Web 填充了动态且复杂的网站、应用程序和用户界面，这些网站、应用程序和用户界面是使用 HTML、CSS 和 JavaScript 的组合构建的。  但是，当设计和构建时没有考虑辅助功能时，依赖辅助技术来浏览 Web 的人很难使用这些复杂网站。 [](https://webaim.org/articles/motor/assistive)
 
 构建可供残障人士访问的网站需要有关用户界面的语义信息。  可访问的网站允许辅助技术（如屏幕阅读器）传达必要的信息，以帮助具有各种功能的人使用网站。
 
-访问[HTML5Accessibility，](https://html5accessibility.com)了解哪些新 HTML5 功能可供 Microsoft Edge。
+访问[HTML5Accessibility，](https://html5accessibility.com)了解哪些新 HTML5 功能可供用户Microsoft Edge。
 
 
 <!-- ====================================================================== -->
 ## <a name="how-accessibility-works"></a>辅助功能的工作原理
 
-辅助技术添加计算机通常没有的功能。  例如，低视力用户可能将键盘与辅助技术（如屏幕阅读器）结合使用，而不是直接将浏览器与鼠标和屏幕结合使用。  
+辅助技术添加计算机通常没有的功能。  例如，低视力用户可能会将键盘与辅助技术（如屏幕阅读器）结合使用，而不是直接将浏览器与鼠标和屏幕结合使用。  
 
 对于 Microsoft 平台和 Web 上的应用程序，辅助技术与以下任意组合交互：
 *  Microsoft [UI 自动化](/windows/win32/winauto/uiauto-specandcommunitypromise)。
-*  特定于应用程序的对象模型，如文档对象模型 (DOM) 中Microsoft Edge。
+*  应用程序特定的对象模型，如文档对象模型 (DOM) Microsoft Edge。
 
 对于 Web 开发人员，某些 HTML 元素会映射到 UI 自动化对象，因此在选择这些 HTML 元素时，开发人员可以使用内置于这些元素的辅助功能属性和事件。  开发网站时，通常只需确保 API 正确写入或指定了适当的元素，应用程序就可访问。
 
-有关详细信息，[请参阅 ARIA 和 Microsoft Edge](./aria-and-ui-automation.md) UI 自动化。  辅助通用Windows平台 (UWP) 在[辅助功能中进行了](/windows/uwp/design/accessibility/accessibility)Windows 开发人员中心。
+有关详细信息，[请参阅 ARIA 和 Microsoft Edge](./aria-and-ui-automation.md) UI 自动化。  辅助通用Windows平台 (UWP) 应用在[辅助功能中进行了](/windows/uwp/design/accessibility/accessibility)Windows 开发人员中心。
 
 通过良好的编码实践，可以解决与动态内容有关的许多常见辅助功能问题。  [WCAG 2.0](https://www.w3.org/TR/WCAG20)文档包括许多技术和最佳实践，可帮助你创建更易于访问的动态 Web 应用程序。  但是，即使正确编码，也不必访问动态内容。  [可访问的富 Internet 应用程序 (ARIA) ](#aria) 可帮助解决此问题。
 
-有关 Web 辅助功能详细信息，请参阅 Web[](https://www.w3.org/WAI/intro/accessibility.php)辅助功能计划为 WEB 辅助功能简介[ (一) 。 ](https://www.w3.org/WAI)
+有关 Web 辅助功能详细信息，请参阅 Web[](https://www.w3.org/WAI/intro/accessibility.php)辅助功能计划对 Web 辅助功能的简介[ (一) 。 ](https://www.w3.org/WAI)
 
 
 <!-- ====================================================================== -->
 ## <a name="aria"></a>ARIA
 
-W3C 的 Web 辅助功能计划 ([ARIA) ARIA](https://www.w3.org/TR/wai-aria)规范定义为使[](https://www.w3.org/WAI)所有人员均可访问的动态 Web 内容和自定义用户界面的语法。  ARIA 通过使用其他属性来扩展 HTML (、属性和状态) 旨在传达自定义语义。  浏览器使用这些属性将控件的状态和角色传递到辅助功能 API。
+W3C 的 Web 辅助功能计划 ([ARIA) ARIA](https://www.w3.org/TR/wai-aria)规范定义为使所有[](https://www.w3.org/WAI)人员均可访问的动态 Web 内容和自定义用户界面的语法。  ARIA 通过使用其他属性来扩展 HTML (、属性和状态) 旨在传达自定义语义。  浏览器使用这些属性将控件的状态和角色传递到辅助功能 API。
 
 ### <a name="roles-properties-and-states"></a>角色、属性和状态
 
@@ -91,7 +91,7 @@ WebAIM 与屏幕[阅读器](https://webaim.org/projects/screenreadersurvey8)和�
 
 ### <a name="learning-how-to-test"></a>Learning测试
 
-辅助技术是复杂的工具。  不要假定无需先了解辅助技术的工作原理，即可立即开始使用辅助技术进行测试。  Learning屏幕阅读器进行测试时，学习曲线尤其弯曲。  一位屏幕阅读器的新手可能会认为屏幕阅读器存在 Bug，而该问题实际上可能是使用屏幕阅读器时出错。
+辅助技术是复杂的工具。  不要假定无需先了解辅助技术的工作原理，即可立即开始使用辅助技术进行测试。  Learning屏幕阅读器进行测试时，有一个特别弯曲的学习曲线。  一位屏幕阅读器的新手可能会认为屏幕阅读器存在 Bug，而该问题实际上可能是使用屏幕阅读器时出错。
 
 在 WebAIM[中通过](https://webaim.org/articles/screenreader_testing)屏幕阅读器进行测试提供了有关学习使用辅助技术进行测试的信息。
 
@@ -124,11 +124,11 @@ WebAIM 与屏幕[阅读器](https://webaim.org/projects/screenreadersurvey8)和�
 
 ### <a name="the-a11y-project"></a>A11Y 项目
 
-[A11Y Project](http://a11yproject.com)社区推动的一项工作，用于简化 Web 辅助功能。  请查看[A11Y](https://a11yproject.com) Project了解基本的辅助功能原则、辅助功能模式和小组件库，以及辅助功能软件、博客、书籍[](https://a11yproject.com/patterns)和工具上的资源[](http://a11yproject.com/resources.html)。
+[A11Y Project](http://a11yproject.com)社区推动的一项工作，用于简化 Web 辅助功能。  查看[A11Y](https://a11yproject.com) Project了解基本的辅助功能原则、辅助功能模式和小组件库，以及辅助功能软件、博客、书籍[](https://a11yproject.com/patterns)和工具上的资源[](http://a11yproject.com/resources.html)。
 
-### <a name="web-accessibility-initiative-wai"></a>Web 辅助功能计划 (使用) 
+### <a name="web-accessibility-initiative-wai"></a>Web 辅助功能计划 (，) 
 
-W3C [Web 辅助功能 (一) ，旨在 ](https://w3.org/WAI) 帮助改善 Web 的辅助功能。  他们的网站为 Web 辅助功能入门[](https://www.w3.org/WAI/gettingstarted/Overview.html)、包含设计、教程和演示文稿[](https://www.w3.org/WAI/users/Overview.html)等[提供了](https://www.w3.org/WAI/train.html)各种资源。
+W3C Web 辅助功能 ([一) 一 ](https://w3.org/WAI) 项帮助改善 Web 辅助功能的工作。  他们的网站为 Web 辅助功能入门[](https://www.w3.org/WAI/gettingstarted/Overview.html)、包含设计、教程和演示文稿[](https://www.w3.org/WAI/users/Overview.html)等[提供了](https://www.w3.org/WAI/train.html)各种资源。
 
 
 <!-- ====================================================================== -->
@@ -160,7 +160,7 @@ JavaScript 库，通过简化辅助功能帮助现代 Web 应用程序解决辅�
 
 ### <a name="openajax-examples"></a>OpenAjax 示例
 
-[OpenAjax 联盟网站](http://oaa-accessibility.org)是验证一项用于验证一些适用于一些用户、用户和
+[OpenAjax 联盟网站](http://oaa-accessibility.org)是验证一项用于验证一些适用于一些用户、用户和用户、用户、用户和用户、用户和用户
 
 ### <a name="patterns"></a>模式
 
@@ -178,7 +178,7 @@ JavaScript 库，通过简化辅助功能帮助现代 Web 应用程序解决辅�
 
 ### <a name="accessible-name-and-description-computation-and-mappings-11"></a>辅助名称和说明：计算和映射 1.1
 
-此 W3C 映射文档介绍了浏览器如何确定 Web 内容语言中的可访问对象的名称和说明，以及如何在辅助功能 API 中公开它们。  有关详细信息，请转到辅助名称和说明 [：计算和映射 1.1](https://www.w3.org/TR/accname-1.1)。
+此 W3C 映射文档介绍了浏览器如何确定 Web 内容语言中可访问对象的名称和说明，以及如何在辅助功能 API 中公开它们。  有关详细信息，请转到辅助名称和说明 [：计算和映射 1.1](https://www.w3.org/TR/accname-1.1)。
 
 ### <a name="accessibility-evaluation-resources"></a>辅助功能评估资源
 
@@ -186,11 +186,11 @@ JavaScript 库，通过简化辅助功能帮助现代 Web 应用程序解决辅�
 
 ### <a name="assistive-technology-compatibility-tests"></a>辅助技术兼容性测试
 
-显示不同内容类型和标准在 AT 和 AT 辅助技术（如屏幕阅读器 () 的行为的测试结果。  有关详细信息，请转到辅助 [技术兼容性测试](http://www.powermapper.com/tests)。
+显示不同内容类型和标准在辅助技术（如屏幕阅读器）中 (AT) 的测试结果。  有关详细信息，请转到辅助 [技术兼容性测试](http://www.powermapper.com/tests)。
 
 ### <a name="building-accessible-websites-just-got-a-lot-easier"></a>构建可访问的网站变得更加简单
 
-本 .NET Web 开发和工具博客文章Visual Studio[扩展 Web 辅助功能检查器](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebAccessibilityChecker)。  有关详细信息，请转到构建 [可访问的网站，只需简单得多](https://devblogs.microsoft.com/aspnet/building-accessible-websites-just-got-a-lot-easier)。
+本 .NET Web 开发和工具博客文章介绍了 Visual Studio扩展[Web 辅助功能检查器](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebAccessibilityChecker)。  有关详细信息，请转到构建 [可访问的网站，只需简单得多](https://devblogs.microsoft.com/aspnet/building-accessible-websites-just-got-a-lot-easier)。
 
 ### <a name="core-accessibility-api-mappings-11"></a>核心辅助功能 API 映射 1.1
 
@@ -206,19 +206,19 @@ JavaScript 库，通过简化辅助功能帮助现代 Web 应用程序解决辅�
 
 ### <a name="html-accessibility-api-mappings-10"></a>HTML 辅助功能 API 映射 1.0
 
-此 W3C 映射文档说明了 HTML5.1 元素和属性如何映射到平台辅助功能 API。  有关详细信息，请转到 HTML [辅助功能 API 映射 1.0](https://www.w3.org/TR/html-aam-1.0)。
+此 W3C 映射文档说明了 HTML5.1 元素和属性如何映射到平台辅助功能 API。  有关详细信息，请转到 HTML [Accessibility API Mappings 1.0](https://www.w3.org/TR/html-aam-1.0)。
 
 ### <a name="quick-tips"></a>快速使用技巧
 
-[A11Y](http://a11yproject.com)网站中有关辅助功能的快速 Web 开发Project。  有关详细信息，请转到[快速使用技巧。](http://a11yproject.com#Quick-tips)
+[A11Y](http://a11yproject.com)网站中的辅助功能快速 Web 开发Project。  有关详细信息，请转到[快速使用技巧。](http://a11yproject.com#Quick-tips)
 
 ### <a name="site-scan"></a>网站扫描
 
-中心上的网站Microsoft Edge Dev检查过期库、布局问题和辅助功能问题。  有关详细信息，请转到"网站[扫描"。](https://developer.microsoft.com/microsoft-edge/tools)
+Microsoft Edge Dev 中心上的"网站扫描"工具检查过期库、布局问题和辅助功能问题。  有关详细信息，请转到"网站[扫描"。](https://developer.microsoft.com/microsoft-edge/tools)
 
 ### <a name="techniques-for-wcag-20"></a>WCAG 2.0 的技术
 
-W3C 中的技术，为 Web 开发人员提供有关满足 Web 内容辅助功能指南 ([WCAG) 2.0 成功](https://w3.org/TR/WCAG20) 标准的指导。  有关详细信息，请转到 [WCAG 2.0 的技术](https://www.w3.org/TR/WCAG20-TECHS/Overview.html)。
+W3C 中的技术，为 Web 开发人员提供有关满足 Web 内容辅助功能指南 [ (WCAG) 2.0 成功](https://w3.org/TR/WCAG20) 标准的指导。  有关详细信息，请转到 [WCAG 2.0 的技术](https://www.w3.org/TR/WCAG20-TECHS/Overview.html)。
 
 ### <a name="tips-on-developing-for-web-accessibility"></a>使用技巧 Web 辅助功能开发
 

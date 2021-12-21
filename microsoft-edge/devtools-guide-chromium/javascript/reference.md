@@ -1,18 +1,18 @@
 ---
-description: 在此 Microsoft Edge DevTools 调试功能的全面参考中发现新的调试工作流。
 title: 使用调试程序功能
+description: 在此 Microsoft Edge DevTools 调试功能的全面参考中发现新的调试工作流。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
-ms.openlocfilehash: d51bd42aeb32e6b57478849514358ce7a9fa1289
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 05/04/2021
+ms.openlocfilehash: a9352487588e01facb776afa3e4299193ff549f7
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157199"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286406"
 ---
 <!-- Copyright Kayce Basques
 
@@ -31,7 +31,7 @@ ms.locfileid: "12157199"
 
 本文介绍了如何在 DevTools Microsoft Edge调试器，包括如何设置代码行断点。  若要设置其他类型的断点，请参阅 [使用断点暂停代码](./breakpoints.md)。
 
-若要了解调试的基础知识，请导航到[Microsoft Edge DevTools](./index.md)中调试 JavaScript 的入门，这是一个使用基于表单的现有网页的教程。  本教程具有屏幕捕获，因此你可以浏览它。  您可以使用演示网页轻松试用调试器功能。
+若要了解调试的基础知识，请参阅调试 [JavaScript](./index.md)入门，这是一个使用基于表单的现有网页的教程。  本教程具有屏幕捕获，因此你可以浏览它。  您可以使用演示网页轻松试用调试器功能。
 
 
 <!-- ====================================================================== -->
@@ -42,7 +42,7 @@ ms.locfileid: "12157199"
 查看和编辑 JavaScript 文件：
 
 1.  导航到 **"源"** 工具。
-1.  在 **导航器窗格中** ，选择你的文件，以在编辑器窗格中 **打开** 它。
+1.  在 **"导航器"** 窗格中，选择文件，以在"编辑器"窗格中 **打开** 它。
 1.  在" **编辑器"** 窗格中，编辑文件。
 1.  选择要 `Ctrl` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存。  然后，DevTools 将 JavaScript 文件加载至 Microsoft Edge 的 JavaScript 引擎。
 
@@ -112,7 +112,7 @@ function getName() {
 
 ### <a name="step-into-line-of-code"></a>逐行执行代码
 
-当暂停包含与正在调试的问题相关的函数调用的代码行时，请选择"单步执行 (单步执行****) "按钮以进一步调查该 ![ ](../media/step-into-icon.msft.png) 函数。
+当暂停包含与正在调试的问题相关的函数调用的代码行时，选择"单步执行 (单步执行****) "按钮以进一步调查该 ![ ](../media/step-into-icon.msft.png) 函数。
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png" alt-text="选择逐行执行" lightbox="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png":::
    选择“**逐行执行**”
@@ -162,9 +162,9 @@ function getName() {
 
 调试长函数时，可能有许多代码与正在调试的问题不相关。
 
-你可以选择逐行执行，但这很繁琐。  您可以选择在感兴趣的行上设置代码行断点，然后选择"恢复脚本执行 ** (** 恢复脚本执行) "按钮，但有一种更快的方法 ![ ](../media/resume-script-run-icon.msft.png) 。
+你可以选择逐行执行，但这很繁琐。  您可以选择在感兴趣的行上设置代码行断点，然后选择"恢复脚本执行 ** (** Resume 脚本执行) "按钮，但有一种更快的方法 ![ ](../media/resume-script-run-icon.msft.png) 。
 
-将鼠标悬停在感兴趣的代码行上，打开上下文菜单 (右键单击") "，然后选择"继续**到此处"。**  DevTools 会运行所有代码，一直运行到该处，然后暂停到该行。
+将鼠标悬停在你感兴趣的代码行上，打开上下文菜单 (右键单击") "，然后选择"继续**在此处"。**  DevTools 会运行所有代码，一直运行到该处，然后暂停到该行。
 
 :::image type="complex" source="../media/javascript-source-page-continue-to-here.msft.png" alt-text="选择继续至此处" lightbox="../media/javascript-source-page-continue-to-here.msft.png":::
    选择“**继续至此处**”
@@ -172,7 +172,7 @@ function getName() {
 
 ### <a name="restart-the-top-function-of-the-call-stack"></a>重新启动调用的顶部函数
 
-若要暂停调用堆栈中顶部函数的第一行，而暂停在代码行上，请将鼠标悬停在"调用堆栈"窗格中的任意位置****，打开上下文菜单 (右键单击) ，然后选择"**重新启动**帧"。  top 函数是最后一个运行的函数。
+若要暂停调用堆栈中顶部函数的第一行，而暂停在代码行上，请将鼠标悬停在"调用堆栈"窗格中的任意位置****，打开上下文菜单 (右键单击") "，然后选择"**重新启动**框架"。  top 函数是最后一个运行的函数。
 
 下面的代码段是一个分步执行示例。
 
@@ -186,7 +186,7 @@ function factorial(n) {
 }
 ```
 
-你已在 `A` 上暂停。  选择重启**帧后**，应暂停在 上 `B` ，无需设置断点或选择 **"恢复脚本执行"。**
+你已在 `A` 上暂停。  选择"**重新启动帧**"后，应暂停在 上，而不会设置断 `B` 点或选择 **"恢复脚本执行"。**
 
 :::image type="complex" source="../media/javascript-source-page-debugger-restart-frame.msft.png" alt-text="选择重启帧" lightbox="../media/javascript-source-page-debugger-restart-frame.msft.png":::
    选择 **重启帧**
@@ -202,7 +202,7 @@ function factorial(n) {
 
 #### <a name="force-script-runtime"></a>强制脚本运行时
 
-若要忽略所有断点并强制脚本继续运行，请选择并按住 Resume script **execution** (Resume script execution) 按钮，然后选择"强制脚本执行 (![ 强制脚本执行 ](../media/resume-script-run-icon.msft.png) **** ![ ](../media/force-script-run-icon.msft.png)) "按钮。
+若要忽略所有断点并强制脚本继续运行，请选择并按住 Resume script **execution** (Resume script execution) 按钮，然后选择"强制脚本执行 ![ (强制脚本执行 ](../media/resume-script-run-icon.msft.png) **** ![ ](../media/force-script-run-icon.msft.png)) "按钮。
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="选择强制脚本执行" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
    选择“**强制脚本执行**”
@@ -243,7 +243,7 @@ function factorial(n) {
 
 *   若要创建新的监视表达式，请选择"添加 **监视** 表达式 (![ 添加监视表达式) ](../media/add-expression-icon.msft.png) 按钮。
 *   若要刷新所有现有表达式的值，请选择"刷新 (**** ![ 刷新) ](../media/refresh-icon.msft.png) 按钮。  逐步执行代码时，值将自动刷新。
-*   若要删除监视表达式，请右键单击该表达式，然后选择"删除 **监视** 表达式 (![ 删除监视表达式 ](../media/delete-expression-icon.msft.png)) 。
+*   若要删除监视表达式，请右键单击该表达式，然后选择"**** 删除监视表达式 (![ 删除监视表达式 ](../media/delete-expression-icon.msft.png)) 。
 
 
 <!-- ====================================================================== -->
@@ -288,7 +288,7 @@ onChoose (get-started.js:15)
 
 若你想要在调试时忽略该脚本，请将脚本标记为库代码。  被标记为库代码时，脚本会在“**调用堆叠**”窗格中被遮盖，且你在单步执行代码时绝不会单步执行脚本的函数。
 
-例如，在下面的代码段中，line `A` 使用 `lib` ，这是第三方库。  如果您确信正在调试的问题与该第三方库不相关，那么将脚本标记为库代码 **是有意义的**。
+例如，在下面的代码段中，行使用 `A` `lib` ，这是第三方库。  如果您确信正在调试的问题与该第三方库不相关，那么将脚本标记为库代码 **是有意义的**。
 
 ```javascript
 function animate() {
@@ -347,14 +347,14 @@ function animate() {
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [入门调试 JavaScript 在 Microsoft Edge DevTools](./index.md)中 - 使用现有代码的简单简短教程，包含屏幕捕获。
+*  [入门调试 JavaScript](./index.md) - 使用现有代码的简单简短教程，包含屏幕捕获。
 *  [源工具概述](../sources/index.md) - **源工具** 包括 JavaScript 调试程序和编辑程序。
-*  [使用 DevTools Microsoft Edge JavaScript。](./disable.md)
+*  [禁用 JavaScript](./disable.md)。
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/reference)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/reference)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

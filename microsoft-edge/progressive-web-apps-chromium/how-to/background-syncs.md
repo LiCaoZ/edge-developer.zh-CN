@@ -1,19 +1,19 @@
 ---
 title: 在后台同步PWA更新服务器
-description: 了解在应用未运行时如何在后台工作，以将内容与服务器同步、获取新资源或处理长时间下载。
+description: 如何在应用未运行时在后台工作、将内容与服务器同步、获取新资源或处理长时间下载。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/14/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进 Web 应用， PWA， Edge， JavaScript， 服务工作线程， 后台， 同步， 提取
-ms.openlocfilehash: 0511601ed0e853960ac38f8521c53c2717036afc
-ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
+ms.date: 09/14/2021
+ms.openlocfilehash: 64191a8c62e904e3799a6dddaaee3a513d12bc2b
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "12235787"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286623"
 ---
 # <a name="synchronize-and-update-a-pwa-in-the-background"></a>在后台同步PWA更新服务器
 
@@ -46,7 +46,7 @@ ms.locfileid: "12235787"
 
 ### <a name="check-for-support"></a>检查支持
 
-后台同步 API 在 Microsoft Edge中可用，但你应确保在运行应用的其他浏览器和设备中支持后台同步 API。  若要确保支持后台同步 API，请测试 `ServiceWorkerRegistration` 对象是否具有 `sync` 属性：
+后台同步 API 在 Microsoft Edge 中可用，但你应确保在运行应用的其他浏览器和设备中支持后台同步 API。  若要确保支持后台同步 API，请测试 `ServiceWorkerRegistration` 对象是否具有 `sync` 属性：
 
 ```javascript
 navigator.serviceWorker.ready.then(registration => {
@@ -164,7 +164,7 @@ self.addEventListener('sync', event => {
 使用定期后台同步 API，PBA 不必下载新内容 (例如用户) 应用时发布的新文章。  下载内容可能会减慢体验速度，因此，改为在更方便的时间检索内容。
 
 > [!NOTE]
-> 定期同步仅在设备位于已知网络 (，即设备在运行前已连接到的网络时) 。  Microsoft Edge限制同步频率，以匹配用户使用应用的频率。
+> 定期同步仅在设备位于已知网络 (，即设备在运行前已连接到的网络时) 。  Microsoft Edge限制同步频率，以匹配用户使用该应用的频率。
 
 ### <a name="check-for-support"></a>检查支持
 
@@ -213,7 +213,7 @@ async function registerPeriodicSync() {
 
 ### <a name="react-to-periodic-sync-events"></a>React定期同步事件
 
-当Microsoft Edge确定是运行定期同步的一个好时间时，Microsoft Edge向服务工作者 `periodicsync` 发送事件。 可以使用注册 `periodicsync` 同步时指定的相同标记名称来处理此事件。
+当Microsoft Edge确定是运行定期同步的一个好时间时，Microsoft Edge向 `periodicsync` 服务工作者发送事件。 可以使用注册 `periodicsync` 同步时指定的相同标记名称来处理此事件。
 
 ```javascript
 self.addEventListener('periodicsync', event => {
@@ -232,7 +232,7 @@ self.addEventListener('periodicsync', event => {
 
 ### <a name="demo-app"></a>演示应用
 
-[DevTools 使用技巧](https://devtoolstips.org/)是一PWA定期后台同步 API 的开发人员。  [DevTools 使用技巧] PWA每天提取新的开发人员工具提示，将它们存储在缓存中，以便用户可以在下次打开应用时访问它们，无论他们是否联机。
+[DevTools 使用技巧](https://devtoolstips.org/)是一PWA定期后台同步 API 的开发人员。  [DevTools 使用技巧] PWA每天提取新的开发人员工具提示，将它们存储在缓存中，以便用户下次打开应用时可以访问它们，无论他们是否联机。
 
 :::image type="content" source="../media/devtools-tips-demo.png" alt-text="DevTools 使用技巧应用。":::
 
@@ -302,6 +302,6 @@ navigator.serviceWorker.ready.then(async registration => {
 
 使用 App Badging API 和通知 API 让用户知道后台任务、下载或新鲜内容已完成，而不会中断其工作流。  使用锁屏提醒和通知可增加用户与你的应用的重新参与度。
 
-使用 Microsoft Edge，锁屏提醒会显示在任务栏的应用图标上，并且通知会与系统通知中心集成。
+使用Microsoft Edge，锁屏提醒会显示在任务栏的应用图标上，并且通知会与系统通知中心集成。
 
 若要了解如何使用这些 API，请参阅使用锁屏提醒、通知和推送通知重新吸引 [用户](./notifications-badges.md)。

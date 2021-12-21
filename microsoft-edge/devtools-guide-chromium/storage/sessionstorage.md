@@ -1,18 +1,18 @@
 ---
+title: 查看和编辑会话存储
 description: 如何使用会话存储窗格和控制台查看和编辑 sessionStorage。
-title: 使用 Microsoft Edge DevTools 查看和编辑会话存储
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 78852fe4afedcc1eaf57ded7d9759a37cb8e9a0d
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 05/04/2021
+ms.openlocfilehash: 89c9e3cbfc49064c2886a1a116781e1c732c381a
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156254"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286665"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +27,7 @@ ms.locfileid: "12156254"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="view-and-edit-session-storage-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 查看和编辑会话存储
+# <a name="view-and-edit-session-storage"></a>查看和编辑会话存储
 
 本指南将演示如何使用 [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) 查看、编辑和删除 [sessionStorage](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage) 键值对。
 
@@ -118,6 +118,6 @@ ms.locfileid: "12156254"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/sessionstorage)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/sessionstorage)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

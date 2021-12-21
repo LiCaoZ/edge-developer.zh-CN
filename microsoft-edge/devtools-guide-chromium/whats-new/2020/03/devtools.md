@@ -1,18 +1,18 @@
 ---
-description: 模拟命令菜单中的颜色视觉缺陷、停靠到左侧等。
 title: DevTools （Microsoft Edge 83）中的新增功能
+description: 模拟命令菜单中的颜色视觉缺陷、停靠到左侧等。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 07177df58e6e016d74ddb517b1df6c17ff2f60d3
-ms.sourcegitcommit: 1e32efb1c9811ec7c65816e938d1a64b1ca5ece6
+ms.date: 05/04/2021
+ms.openlocfilehash: 787d1015a9f949eb5baee3846710e2bf2f1bb10d
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "12158563"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284236"
 ---
 <!-- Copyright Kayce Basques
 
@@ -37,11 +37,11 @@ ms.locfileid: "12158563"
 <!-- ====================================================================== -->
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告
 
-以下各节列出了你可能从 DevTools 团队中错过Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道](https://www.microsoftedgeinsider.com/download)并[在 Twitter 上关注我们](https://twitter.com/EdgeDevTools)。
+以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道](https://www.microsoftedgeinsider.com/download)并[在 Twitter 上关注我们](https://twitter.com/EdgeDevTools)。
 
 ### <a name="remotely-debug-microsoft-edge-on-windows-10-or-later-devices"></a>远程调试Microsoft Edge或Windows 10或更高版本的设备上的客户端
 
-Microsoft Edge ([Beta) ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)远程工具应用现已在 Microsoft Store[中提供](https://www.microsoft.com/store/apps/windows)。 此应用扩展[Windows Device Portal](/windows/uwp/debug-test-perf/device-portal)。 你可以从在开发Microsoft Edge运行的设备连接到远程Windows 10或更高版本设备，并显示目标列表。 目标列表包括设备上打开Microsoft Edge [PBA](../../../../progressive-web-apps-chromium/index.md) Windows选项卡。 针对在远程开发设备上运行的目标，在开发计算机上Windows工具。
+Microsoft Edge ([Beta) ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)远程工具应用现已在 Microsoft Store[中提供](https://www.microsoft.com/store/apps/windows)。 此应用扩展[Windows Device Portal](/windows/uwp/debug-test-perf/device-portal)。 你可以从在开发Microsoft Edge运行的设备连接到远程Windows 10或更高版本设备，并显示目标列表。 此目标列表包括 Microsoft Edge[设备上打开](../../../../progressive-web-apps-chromium/index.md)的所有选项卡Windows PA。 针对在远程开发设备上运行的目标，在开发计算机上Windows DevTools。
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="现在，Microsoft Store 中提供 Microsoft Edge 远程工具 (Beta) 应用" lightbox="../../media/2020/03/remote-tools.msft.png":::
    [Microsoft Store](https://www.microsoft.com/store/apps/windows) 中提供 [Microsoft Edge 远程工具 (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) 应用
@@ -140,7 +140,7 @@ DevTools 能够模拟模糊的视觉和以下[颜色视觉缺陷类型](http://w
 | 红色盲 | 无法感觉任何红色的光线。 |
 | 绿色盲 | 无法感觉任何绿色的光线。 |
 | 黄蓝色盲 | 无法感觉任何蓝色的光线。 |
-| 全色盲 | 无法感知任何颜色，但灰色底纹除外 (极少) 。 |
+| 全色盲 | 无法感知任何颜色，灰色底纹除外 (非常少见) 。 |
 
 存在这些色觉缺陷的不太极端的版本，实际上它们更为常见。
 例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。 但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人是不同的，并且可能会看到不同 (能够感知更多/更少的相关颜色) 。
@@ -237,7 +237,7 @@ DevTools 团队经常从 Web 开发人员那里获得反馈，尽管可以从 De
 
 ### <a name="delete-all-local-overrides-in-a-folder"></a>删除文件夹中的所有本地覆盖
 
-设置本地覆盖**** 后，你可以将鼠标悬停在目录上，打开上下文菜单 (右键单击) ，然后选择新的"删除所有覆盖"选项以**** 删除该文件夹中的所有局部覆盖。
+设置本地覆盖**** 后，你可以将鼠标悬停在目录上，打开上下文菜单 (右键单击) ，然后选择新的"删除所有覆盖"选项以删除该**** 文件夹中的所有局部覆盖。
 
 :::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="删除所有覆盖" lightbox="../../media/2020/03/overrides.msft.png":::
    删除所有覆盖
@@ -286,6 +286,6 @@ Android Oreo 引入了自适应图标，可在不同的设备模型之间显示�
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-83)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-83)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

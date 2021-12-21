@@ -3,16 +3,16 @@ title: 使用 Inspect 工具分析 HTML 页面
 description: 如何使用 DevTools 中的"检查"工具Microsoft Edge HTML 页面。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 12/16/2021
-ms.openlocfilehash: dc81641563da19e9d3eb971646aca25bc27a221f
-ms.sourcegitcommit: b701ad89af83d25febecd2dbb2d778a320cecfd3
+ms.openlocfilehash: 79d0b92254c5a68a42ed572edb1d8228244bbc69
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "12278884"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284355"
 ---
 # <a name="analyze-html-pages-using-the-inspect-tool"></a>使用 Inspect 工具分析 HTML 页面
 
@@ -64,7 +64,7 @@ Inspect **** 覆盖层显示有关元素的以下信息：
 <!-- ====================================================================== -->
 ## <a name="inspecting-non-accessible-elements"></a>检查不可访问的元素
 
-CSS 属性为 的元素 `pointer-events: none` 不适用于 **Inspect** 工具。  在" [检查演示](https://microsoftedge.github.io/DevToolsSamples/inspector/inspector-demo.html) "页中，将鼠标悬停在 上，你将看到父元素 () 显示 `Overlay Button` `div.wrapper` 而不是 `Overlay Button` 。
+CSS 属性为 的元素 `pointer-events: none` 不适用于 **Inspect** 工具。  在" [检查演示](https://microsoftedge.github.io/DevToolsSamples/inspector/inspector-demo.html) "页中，将鼠标悬停在 上，你将看到父元素 () `Overlay Button` `div.wrapper` 显示而不是 `Overlay Button` 。
 
 ![无法选择 CSS 属性为"pointer events： none"的元素。](images/inspect-tool-element-element-without-pointer-events.msft.png)
 

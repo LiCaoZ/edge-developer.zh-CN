@@ -1,18 +1,18 @@
 ---
-description: 了解如何使用 Microsoft Edge DevTools 查看、编辑和删除页面的 HTTP Cookie。
-title: 使用 Microsoft Edge DevTools 查看、编辑和删除 Cookie
+title: 查看、编辑和删除 Cookie
+description: 如何使用 DevTools 查看、编辑和删除页面的 HTTP Microsoft Edge Cookie。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: b4dca69dde395c1f1e558b633bb1a257ef036e26
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 05/04/2021
+ms.openlocfilehash: d6a42bfef26e1e0f3e8add8ab66edd38580f0c35
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155491"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284775"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +27,7 @@ ms.locfileid: "12155491"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="view-edit-and-delete-cookies-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 查看、编辑和删除 Cookie
+# <a name="view-edit-and-delete-cookies"></a>查看、编辑和删除 Cookie
 
 [HTTP Cookie](https://developer.mozilla.org/docs/Web/HTTP/Cookies) 主要用于管理用户会话、存储用户个性化首选项和跟踪用户行为。  Cookie 也是导致各种网页上出现麻烦的 **此页面使用 Cookie** 许可表单的源头。  以下指南将指导你如何使用 [Microsoft Edge DevTools](/microsoft-edge/devtools-guide-chromium) 查看、编辑和删除网页的 HTTP Cookie。
 
@@ -90,7 +90,7 @@ ms.locfileid: "12155491"
 <!-- ====================================================================== -->
 ## <a name="delete-cookies"></a>删除 Cookie
 
-选择一个 Cookie， **然后选择"** 删除 ![ (") "删除特定 ](../media/delete-icon.msft.png) Cookie"。
+Choose a cookie and choose **Delete Selected (** Delete Selected) to delete the specific ![ ](../media/delete-icon.msft.png) cookie.
 
 :::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="删除特定 Cookie" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
    图 5：删除特定 Cookie
@@ -106,6 +106,6 @@ Choose **Clear All (** Clear All) to delete all ![ ](../media/clear-icon.msft.pn
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/cookies)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/cookies)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

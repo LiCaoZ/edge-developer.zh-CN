@@ -1,18 +1,18 @@
 ---
-description: 使用 Microsoft Edge 中的虚拟设备增强双屏幕和可折叠设备的网站。
 title: 在 DevTools 中模拟双屏幕和可折叠Microsoft Edge设备
+description: 使用 Microsoft Edge 中的虚拟设备增强双屏幕和可折叠设备的网站。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， 开发工具， 模拟， 设备， 模拟， 移动， 双屏， 可折叠， Surface Duo， Samsung 用户折叠
-ms.openlocfilehash: 18f104fed225e649176ffc7fa86d335b9bbf6fdf
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 05/04/2021
+ms.openlocfilehash: 495431f0fa8a8320bad66783e06b5e7722e9b842
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156037"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12287246"
 ---
 # <a name="emulate-dual-screen-and-foldable-devices-in-microsoft-edge-devtools"></a>在 DevTools 中模拟双屏幕和可折叠Microsoft Edge设备
 
@@ -26,7 +26,7 @@ ms.locfileid: "12156037"
 *   单屏或折叠状态
 *   双屏或展开状态
 
-打开实验性[Web 平台 API，](#turn-on-experimental-apis)并使用[CSS 媒体](/dual-screen/web/css-media-spanning)屏幕跨区功能以及[JavaScript getWindowSegments API](/dual-screen/web/javascript-getwindowsegments)增强你的网站 (或适用于双屏幕和可折叠设备的应用) 。
+打开实验性[Web 平台 API，](#turn-on-experimental-apis)并使用[CSS 媒体](/dual-screen/web/css-media-spanning)屏幕跨区功能以及[JavaScript getWindowSegments API](/dual-screen/web/javascript-getwindowsegments)增强适用于双屏和可折叠设备的网站 (或应用) 。
 
 :::image type="complex" source="../media/experiments-surface-duo-emulation.msft.png" alt-text="模拟 Surface Duo Microsoft Edge" lightbox="../media/experiments-surface-duo-emulation.msft.png":::
    模拟 Surface Duo Microsoft Edge
@@ -47,25 +47,25 @@ ms.locfileid: "12156037"
 :::image-end:::
 
 > [!NOTE]
-> 如果使用[CSS](/dual-screen/web/css-media-spanning)媒体查询或[JavaScript Windows Segment](/dual-screen/web/javascript-getwindowsegments)枚举 API 增强 Surface Duo 的网站或应用，还必须在 Surface [Duo](https://www.microsoft.com/surface/devices/surface-duo)设备上的 Android [Microsoft Edge](https://play.google.com/store/apps/details?id=com.microsoft.emmx)应用中打开实验**性 Web**平台[](https://www.microsoft.com/surface/devices/surface-duo)功能标志。
+> 如果使用[CSS](/dual-screen/web/css-media-spanning)媒体查询或[JavaScript Windows Segment](/dual-screen/web/javascript-getwindowsegments)枚举 API 增强 Surface Duo 的网站或应用，还必须在 Surface [Duo](https://www.microsoft.com/surface/devices/surface-duo)设备上的 Android [Microsoft Edge](https://play.google.com/store/apps/details?id=com.microsoft.emmx)应用中打开实验**性 Web**平台功能[](https://www.microsoft.com/surface/devices/surface-duo)标志。
 >
-> If the **Experimental Web Platform features** flag is turned on in [desktop Microsoft Edge](https://www.microsoft.com/edge) and turned off in the [Android Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx), the behavior of your website or app in the Surface Duo emulator in desktop Microsoft Edge does not match with the [Android Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) on [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo).  确保 Android 和桌面设备之间的标志Microsoft Edge，以在桌面设备上成功使用 Surface Duo [Microsoft Edge。](https://www.microsoft.com/edge)
+> 如果在桌面[Microsoft Edge](https://www.microsoft.com/edge)中打开实验性**Web**平台功能标志，并且在[Android Microsoft Edge](https://play.google.com/store/apps/details?id=com.microsoft.emmx)应用中关闭，则你的网站或应用在桌面 Microsoft Edge 中的 Surface Duo 模拟器中的行为与 Android [Microsoft Edge 应用不匹配](https://play.google.com/store/apps/details?id=com.microsoft.emmx)在[Surface Duo 上](https://www.microsoft.com/surface/devices/surface-duo)。  确保 Android 和桌面设备之间的标志Microsoft Edge，以在桌面设备上成功使用 Surface Duo [Microsoft Edge。](https://www.microsoft.com/edge)
 
 
 <!-- ====================================================================== -->
 ## <a name="test-on-foldable-and-dual-screen-devices"></a>在可折叠和双屏设备上测试
 
-当你在 Microsoft Edge 中模拟双屏状态中的[Surface Duo](https://www.microsoft.com/surface/devices/surface-duo)时， (两个屏幕之间的空间) 绘制在你的网站或应用上。
+当你在 Microsoft Edge 中模拟双屏幕状态中的[Surface Duo](https://www.microsoft.com/surface/devices/surface-duo)时， (两个屏幕之间的空间) 绘制在你的网站或应用上。
 
-模拟显示与在 Surface Duo (Android) [在 Microsoft Edge 应用中](https://play.google.com/store/apps/details?id=com.microsoft.emmx)呈现你的网站或[应用的方式相匹配](https://www.microsoft.com/surface/devices/surface-duo)。  你可能必须更新你的网站 (或应用) ，以更好地显示在一起。  若要详细了解如何调整网站应用 (应用) 适应变化，请导航到"如何处理["。](/dual-screen/introduction#how-to-work-with-the-seam)
+模拟显示与在 Surface Duo (Android) [在 Microsoft Edge 应用中](https://play.google.com/store/apps/details?id=com.microsoft.emmx)呈现你的[网站或应用的方式相匹配](https://www.microsoft.com/surface/devices/surface-duo)。  你可能必须更新你的网站或 (应用) ，以更好地显示在一起。  若要详细了解如何调整你的网站或 (应用) 适应变化，请导航到如何 [与用户一起操作](/dual-screen/introduction#how-to-work-with-the-seam)。
 
-设备 [工具栏](../device-mode/index.md#simulate-a-mobile-viewport) 具有其他功能，可帮助你在多个状态和方向中测试你的网站或应用。  选择 **旋转** (![ 旋转 ](../media/rotate-dark-icon.msft.png)) 将视口旋转到横向。 将该功能与 **Span** (Span) 结合使用，可在单屏或折叠、双屏或展开状态 ![ ](../media/span-dark-icon.msft.png) 之间进行切换。  这些功能共同允许你在所有四种可能状态和方向中测试网站或应用。
+设备 [工具栏](../device-mode/index.md#simulate-a-mobile-viewport) 具有其他功能，可帮助你在多个状态和方向中测试你的网站或应用。  选择 **旋转** (![ 旋转 ](../media/rotate-dark-icon.msft.png)) 将视口旋转到横向。 将此功能与 **Span** (Span) 结合使用，可在单屏或折叠、双屏或展开状态 ![ ](../media/span-dark-icon.msft.png) 之间进行切换。  这些功能共同允许你在所有四种可能状态和方向中测试网站或应用。
 
 :::image type="complex" source="../media/experiments-dual-screen-emulation-rotate-span.msft.png" alt-text="双屏幕和可折叠设备的状态和方向矩阵" lightbox="../media/experiments-dual-screen-emulation-rotate-span.msft.png":::
    双屏幕和可折叠设备的状态和方向矩阵
 :::image-end:::
 
-ExperimentalApis (的"实验性 **Web** 平台) ![ 功能"图标显示"实验性 Web ](../media/experimental-apis-dark-icon.msft.png) **平台功能"标志** 的状态。  如果此标志已打开，则突出显示该图标。  如果关闭标志，则不突出显示图标。  若要在标志 (或) ，请选择图标或导航到 并 `edge://flags` 切换标志。
+ExperimentalApis ** (** 的"实验性 Web 平台) 图标显示"实验 ![ 性 Web ](../media/experimental-apis-dark-icon.msft.png) **平台功能"标志** 的状态。  如果此标志已打开，则突出显示该图标。  如果关闭标志，则不突出显示图标。  若要在标志 (或) ，请选择图标或导航到 并 `edge://flags` 切换标志。
 
 > [!NOTE]
 > 以下是当前已知问题的列表。
@@ -76,7 +76,7 @@ ExperimentalApis (的"实验性 **Web** 平台) ![ 功能"图标显示"实验性
 <!-- ====================================================================== -->
 ## <a name="additional-resources"></a>其他资源
 
-下面是可帮助您增强用于双屏设备的 (或) 应用的其他资源。
+下面是可帮助你增强用于双屏幕设备 (应用) 应用的其他资源。
 
 *   有关在双屏设备上进行 Web 开发的信息，请导航到 [双屏幕 Web 体验](/dual-screen/web/index)。
 *   安装 [Surface Duo 仿真器](/dual-screen/android/use-emulator)。  Surface Duo 仿真器不同于 Microsoft Edge 中的仿真器，运行 Android，并且与[Android Studio 集成](https://developer.android.com/studio/)。  有关详细信息，请导航到[获取 Surface Duo SDK](/dual-screen/android/get-duo-sdk)。

@@ -1,18 +1,18 @@
 ---
-description: 更新或删除加载项Microsoft Edge扩展。
 title: 更新Microsoft Edge扩展
+description: 更新或删除加载项网站Microsoft Edge扩展。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/17/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: bda6b8bb4f846426dd743e45a34afa4a5ab6a453
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 02/17/2021
+ms.openlocfilehash: 0a67178100fb1e894984df62f7a7590c30d4ad9c
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157423"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284761"
 ---
 # <a name="update-a-microsoft-edge-extension"></a>更新Microsoft Edge扩展
 
@@ -33,7 +33,7 @@ ms.locfileid: "12157423"
 
 1.  进行更改后，选择"保存**发布**"以  >  **** 更新扩展列表，并开始认证过程。
 
-1.  列 `Status` 显示后 `In the store` ，你的扩展更新将在Microsoft Edge加载项网站上提供。
+1.  列 `Status` 显示后 `In the store` ，你的扩展更新将在 Microsoft Edge 加载项网站上提供。
 
 <!-- todo: uncomment after the API is available for use.
 After your extension has been initially created, you will be able to update it programmatically by [Using the Microsoft Edge Add-ons API](api/using-addons-api.md).
@@ -43,7 +43,7 @@ After your extension has been initially created, you will be able to update it p
 <!-- ====================================================================== -->
 ## <a name="update-your-extension-during-the-certification-step"></a>在认证步骤中更新扩展
 
-当你的扩展仍处于认证阶段，且在将其发布到 Microsoft Edge 加载项网站之前，你可以更新它。 如果你的扩展未能通过认证过程，你可能还需要更新你的扩展。
+虽然你的扩展仍处于认证阶段，在将其发布到 Microsoft Edge 加载项网站之前，你可以更新它。 如果你的扩展未能通过认证过程，你可能还需要更新扩展。
 
 若要检查扩展的状态，请导航到与合作伙伴中心上的一览 [相关联的仪表板](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)。
 
@@ -53,12 +53,12 @@ After your extension has been initially created, you will be able to update it p
 
 1.  若要打开 **扩展概述** 部分，请使用左侧导航栏。  若要取消当前提交，请选择"取消**提交"。**
 
-1.  移动到其他部分，并更新扩展包或扩展的元数据。  如果更新扩展包，请确保增加清单文件中的版本，以匹配自上一个程序包版本以来的更改。
+1.  移动到其他部分并更新扩展包或扩展的元数据。  如果更新扩展包，请确保增加清单文件中的版本，以匹配自上一个程序包版本以来的更改。
 
 1.  进行更改后，选择"保存**发布**  >  **"。**
 
 > [!IMPORTANT]
-> 此过程会停止当前提交并从 Microsoft Edge扩展认证管道中删除你的当前提交，并且新评审从最新提交开始。
+> 此过程将停止当前提交并从 Microsoft Edge扩展认证管道中删除你的当前提交，并且新评审从最新提交开始。
 
 
 <!-- ====================================================================== -->

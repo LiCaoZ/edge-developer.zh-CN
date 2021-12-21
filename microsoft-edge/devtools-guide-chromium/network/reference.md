@@ -3,16 +3,16 @@ title: 网络功能参考
 description: Microsoft Edge 开发人员工具网络面板功能的综合参考。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 07/19/2021
-ms.openlocfilehash: 47a4158e7816d0d636b5a767af22acba7b8d0c3b
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.openlocfilehash: 9de205eea597dcff6df97c576358441d491a79be
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269443"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284299"
 ---
 <!-- Copyright Kayce Basques
 
@@ -44,11 +44,11 @@ ms.locfileid: "12269443"
 若要停止录制请求：
 
 1.  在" **网络"** 工具上，单击"停止 **记录** 网络日志 (![ 停止记录网络日志 ](../media/record-on-icon.msft.png)) 。  它变为灰色，表示开发人员工具不再记录请求。
-1.  在 (Windows焦点时) Linux (`Control` + `E` 或 `Command` + `E`) macOS**** 命令。
+1.  在 (Windows焦点时) Linux (`Control` + `E` `Command` + `E` 或) macOS**** 命令。
 
 ### <a name="clear-requests"></a>清除请求
 
-单击"**网络** ![ (") "清除"按钮以清除" ](../media/clear-requests-icon.msft.png) 请求****"表中的所有请求。
+单击"**网络** (") 清除"按钮以清除" ![ ](../media/clear-requests-icon.msft.png) 请求"表中的**** 所有请求。
 
 :::image type="content" source="../media/network-network-clear-button.msft.png" alt-text="&quot;清除&quot;按钮。" lightbox="../media/network-network-clear-button.msft.png":::
 
@@ -106,13 +106,13 @@ ms.locfileid: "12269443"
 如果要在其他开发工具面板中工作时禁用缓存，请使用“网络条件”抽屉。
 
 1.  打开“**网络条件**”抽屉。
-1.  打开或 (") **缓存"复选框** 。
+1.  打开或 (禁用 **) "复选框** 。
 
 <!--todo: add network condition section when available -->
 
 ### <a name="manually-clear-the-browser-cache"></a>手动清除浏览器缓存
 
-若要随时手动清除浏览器缓存，请打开上下文菜单 (右键单击"请求") 中的任意位置，然后单击"清除**浏览器缓存"。**
+若要随时手动清除浏览器缓存，请打开上下文菜单 (右键单击") "表中的任意位置，然后单击"清除**浏览器缓存"。**
 
 选择 **"清除浏览器缓存"：**
 
@@ -218,8 +218,8 @@ ms.locfileid: "12269443"
 | `larger-than` | 以字节为单位显示大于指定大小的资源。  将值设置为 `1000` 相当于将值设置为 `1k`。 |
 | `method` | 显示通过指定的 HTTP 方法类型检索的资源。  开发工具用找到的所有 HTTP 方法填充下拉列表。 |
 | `mime-type` | 显示指定 MIME 类型的资源。  开发工具用找到的所有 MIME 类型填充下拉列表。 |
-| `mixed-content` | 显示所有混合内容 () `mixed-content:all` 或只显示当前 () 。 `mixed-content:displayed` |
-| `scheme` | 显示通过未保护的 HTTP () 或受保护的 `scheme:http` HTTPS `scheme:https` () 。 |
+| `mixed-content` | 显示所有混合内容 () `mixed-content:all` 或只显示当前 `mixed-content:displayed` () 。 |
+| `scheme` | 显示通过未保护的 HTTP () 或受保护的 `scheme:http` HTTPS () 。 `scheme:https` |
 | `set-cookie-domain` | 显示具有与指定值匹配的 `Domain` 属性的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 域填充“自动完成”。 |
 | `set-cookie-name` | 显示具有名称与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 名称填充“自动完成”。 |
 | `set-cookie-value` | 显示具有值与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 值填充“自动完成”。 |
@@ -241,7 +241,7 @@ ms.locfileid: "12269443"
 
 如果未显示按钮，则" **筛选器"** 窗格可能处于隐藏状态。  请参阅 [隐藏筛选器窗格](#hide-the-filters-pane)。
 
-若要同时启用多类型筛选器，请长按 `Control` (Windows、Linux) 或 `Command` (macOS) ，然后单击筛选器。
+若要同时启用多类型筛选器，请长按 `Control` (Windows、Linux) 或 (`Command` macOS) 然后单击筛选器。
 
 使用类型筛选器显示 JS、CSS 和文档资源：
 
@@ -611,7 +611,7 @@ init();
 
 将格式化的响应 JSON 粘贴到Microsoft Visual Studio代码：
 
-:::image type="content" source="../media/network-header-paste-property-value.msft.png" alt-text="Microsoft Visual Studio JSON 格式响应的代码。" lightbox="../media/network-header-paste-property-value.msft.png":::
+:::image type="content" source="../media/network-header-paste-property-value.msft.png" alt-text="Microsoft Visual Studio格式响应 JSON 的代码。" lightbox="../media/network-header-paste-property-value.msft.png":::
 
 ### <a name="copy-property-values-from-network-requests-to-your-clipboard"></a>将属性值从网络请求复制到剪贴板
 
@@ -636,7 +636,7 @@ init();
 
 ### <a name="hide-the-filters-pane"></a>隐藏“筛选器”窗格
 
-默认情况下，DevTools 显示" **筛选器"** 窗格。  若要隐藏" **筛选器"** 窗格， **请选择"** 筛选器 (![ 筛选器 ](../media/filter-icon.msft.png)) 。
+默认情况下，DevTools 显示" **筛选器"** 窗格。  若要隐藏" **筛选器"** 窗格， **请选择"筛选器** (![ 筛选器 ](../media/filter-icon.msft.png)) 。
 
 :::image type="content" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="&quot;隐藏筛选器&quot;按钮。" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
 
@@ -658,6 +658,6 @@ init();
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/network/reference)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/network/reference)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

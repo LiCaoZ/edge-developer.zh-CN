@@ -1,18 +1,18 @@
 ---
+title: 查看 Web SQL数据
 description: 如何通过 Web SQL Microsoft Edge DevTools 的应用程序面板的 Web SQL 数据。
-title: 使用 Microsoft Edge DevTools 查看 Web SQL 数据
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge，web 开发，f12 工具，devtools
-ms.openlocfilehash: 7bc2e45bdcff59a0e2213619a979e3696b22b19d
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+keywords: microsoft edge, web 开发, f12 工具, devtools
+ms.date: 05/04/2021
+ms.openlocfilehash: b8bd3e7d8a0f631cce4234bda2318b818998a377
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155498"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285923"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +27,7 @@ ms.locfileid: "12155498"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="view-web-sql-data-with-microsoft-edge-devtools"></a>使用 Microsoft Edge DevTools 查看 Web SQL 数据
+# <a name="view-web-sql-data"></a>查看 Web SQL数据
 
 > [!WARNING]
 > Web SQL 规范[未得到维护](https://w3.org/TR/webdatabase/#status-of-this-document)。
@@ -80,7 +80,7 @@ ms.locfileid: "12155498"
 DevTools 不会实时更新表。  若要更新表中的数据，请完成以下操作。
 
 1.  [查看 Web SQL 表中的数据](#view-web-sql-data)。
-1.  选择 **"刷新** (![ 刷新 ](../media/refresh-icon.msft.png)) 。
+1.  Choose **Refresh (** ![ Refresh ](../media/refresh-icon.msft.png)) .
 
 
 <!-- ====================================================================== -->
@@ -114,6 +114,6 @@ DevTools 不会实时更新表。  若要更新表中的数据，请完成以下
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/websql)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/websql)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

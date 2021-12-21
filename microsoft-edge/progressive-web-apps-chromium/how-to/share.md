@@ -1,19 +1,19 @@
 ---
 title: 与其他应用共享内容
-description: 了解如何与其他应用共享来自PWA内容并接受来自其他应用的共享内容。
+description: 如何与其他应用共享来自PWA内容并接受来自其他应用的共享内容。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/27/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， 共享
-ms.openlocfilehash: ee9b0fe5313e69b0713cbf2a02297f0967a39596
-ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
+ms.date: 09/27/2021
+ms.openlocfilehash: 137d4d90224c4a44f121dfc156efbae5c26724cc
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "12235654"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286784"
 ---
 # <a name="share-content-with-other-apps"></a>与其他应用共享内容
 
@@ -35,7 +35,7 @@ ms.locfileid: "12235654"
 PWA 可以使用 [Web 共享 API](https://developer.mozilla.org/docs/Web/API/Web_Share_API) 触发显示操作系统共享对话框。
 
 > [!NOTE]
-> Web 共享仅适用于通过 HTTPS (服务的网站，PBA) ，并且只能调用它以响应用户操作。
+> Web 共享仅适用于通过 HTTPS (服务的网站，对于 PBA) ，只能调用它以响应用户操作。
 
 若要共享链接、文本或文件等内容，请使用 `navigator.share` 函数，如下所示。  `navigator.share`函数接受至少应具有以下属性之一的对象：
 
@@ -124,7 +124,7 @@ async function getImageFileFromURL(imageURL, title) {
 
 ### <a name="demo-of-sharing-content"></a>共享内容的演示
 
-[DevTools 使用技巧](https://devtoolstips.org/)是一PWA，它使用 `navigator.share` 函数共享文本和链接。
+[DevTools 使用技巧](https://devtoolstips.org/)是PWA函数共享文本 `navigator.share` 和链接的一个工具。
 
 若要测试功能：：
 
@@ -132,7 +132,7 @@ async function getImageFileFromURL(imageURL, title) {
 2. 选择提示。
 3. 单击 **"共享提示"。**
 
-将显示Windows**共享**"对话框。  用户选取要共享内容的应用：
+将显示**Windows共享"** 对话框。  用户选取要共享内容的应用：
 
 :::image type="content" source="../media/devtools-tips-share.png" alt-text="&quot;Windows共享&quot;对话框允许用户选取应该接收共享内容的应用。":::
 
@@ -187,7 +187,7 @@ async function getImageFileFromURL(imageURL, title) {
 
 ### <a name="handle-get-shared-data"></a>处理 GET 共享数据
 
-若要处理通过 GET 请求在代码代码中PWA的数据，请使用构造函数 `URL` 提取查询参数：
+若要处理在代码代码中通过 GET 请求PWA的数据，请使用构造函数 `URL` 提取查询参数：
 
 ```javascript
 window.addEventListener('DOMContentLoaded', () => {
@@ -246,11 +246,11 @@ self.addEventListener('fetch', event => {
 
 1. 以某种方式使用数据 (例如将内容存储在本地) 。
 
-1. 将用户重定向到成功页面。  这样，即使网络关闭，应用也可以运行。  应用可以选择仅本地存储内容，也可以选择稍后在连接还原时（例如，使用后台同步 (将 [内容发送到](./background-syncs.md)) 。
+1. 将用户重定向到成功页面。  这样，即使网络关闭，应用也可以运行。  应用可以选择仅在本地存储内容，也可以选择稍后在连接还原时（如使用后台同步）将内容 (服务器) 。 [](./background-syncs.md)
 
 ### <a name="handle-shared-files"></a>处理共享文件
 
-应用还可以处理共享文件。 若要在文件中处理PWA，必须使用 `POST` 方法和编码 `multipart/form-data` 类型。 此外，你必须声明你的应用可以处理的文件类型。
+应用还可以处理共享文件。 若要处理文件PWA，必须使用 `POST` 方法和编码 `multipart/form-data` 类型。 此外，你必须声明你的应用可以处理的文件类型。
 
 ```json
 {

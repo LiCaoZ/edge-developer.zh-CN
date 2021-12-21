@@ -1,18 +1,18 @@
 ---
-description: 了解如何在 Microsoft Edge DevTools 中评估运行时性能。
-title: 分析运行时性能入门
+title: 即可体验分析运行时性能
+description: 如何在 DevTools 中Microsoft Edge运行时性能。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 6c919cd7b03a5a00bf67d7c20bf0da64fc86aab4
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.date: 05/04/2021
+ms.openlocfilehash: 715d2732c9ed05228117f8913567668fabcedb5a
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170622"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284362"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,7 +30,7 @@ ms.locfileid: "12170622"
 # <a name="get-started-with-analyzing-runtime-performance"></a>即可体验分析运行时性能
 
 > [!NOTE]
-> 要了解如何使网页加载速度更快，请浏览[优化网站速度](../speed/get-started.md)。
+> 若要了解如何加快页面加载速度，请参阅优化 [网站速度](../speed/get-started.md)。
 
 运行时性能是页面运行（而不是加载）时的性能。  下面的教程文章教导如何使用Microsoft Edge DevTools性能面板来分析运行时性能。  在 **RAIL** 模型方面，你在本教程中学习的技能对于分析页面的响应、动画和空闲阶段很有用。
 
@@ -94,7 +94,7 @@ ms.locfileid: "12170622"
 
 运行优化版本的页面时，蓝色图标会移动得更快。  为什么？  两种版本都应该在相同的时间内将图标移动相同的空间。  在 "性能" 面板中进行录制，了解如何检测未优化版本中的性能瓶颈。
 
-1.  在 DevTools 中， **选择"记录** (![ 记录 ](../media/record-icon.msft.png)) 。  页面运行时，DevTools 将捕获效果指标。
+1.  在 DevTools 中 **，选择"** 记录 (![ 记录 ](../media/record-icon.msft.png)) 。  页面运行时，DevTools 将捕获效果指标。
 
     :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="配置文件页面" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
        配置文件页面
@@ -149,7 +149,7 @@ ms.locfileid: "12170622"
 
 另一个非常方便的工具是 FPS 计数，可在页面运行时提供对 FPS 的实时估计。
 
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令**菜单**。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
 1.  在**命令菜单**中开始键入`Rendering`，然后选择**显示渲染**.
 1.  在呈现**工具** 中，打开 **FPS 指示器**。  新的叠加层将显示在视线的右上角。
 
@@ -252,6 +252,6 @@ To learn more, navigate to [Measure Performance With The RAIL Model](https://dev
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

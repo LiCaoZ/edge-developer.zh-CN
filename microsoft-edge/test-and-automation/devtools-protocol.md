@@ -1,17 +1,17 @@
 ---
-description: 使用 DevTools 协议检测、检查、调试和配置文件浏览器，包括Microsoft Edge。  匹配 Chrome DevTools 协议。
 title: 开发工具协议
+description: 使用 DevTools 协议检测、检查、调试和配置文件浏览器，包括Microsoft Edge。  匹配 Chrome DevTools 协议。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.openlocfilehash: da64f73e67b49f1b7f7349ecd21aa01b9e02ef07
-ms.sourcegitcommit: aea4d6f07de1c2a4b9c2a31b821e2103df99c030
+ms.date: 11/19/2021
+ms.openlocfilehash: e29201f038e7ff97fd7cd4e5b10245cc65a55881
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "12185831"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285790"
 ---
 # <a name="devtools-protocol"></a>开发工具协议
 

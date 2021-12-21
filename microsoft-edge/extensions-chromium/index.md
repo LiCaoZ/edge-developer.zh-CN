@@ -1,18 +1,18 @@
 ---
-description: 构建和发布 Microsoft Edge 扩展的概述。
 title: Microsoft Edge 扩展概述
+description: 构建和发布 Microsoft Edge 扩展的概述。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/25/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， chromium 扩展
-ms.openlocfilehash: 7c8cce43a64d526ee4bb86b96bb0d1a18a718fa9
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
-ms.translationtype: HT
+ms.date: 08/25/2021
+ms.openlocfilehash: fc5989805440a94c9e58c35364e7b46895dbe1ef
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12156863"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12287176"
 ---
 # <a name="overview-of-microsoft-edge-extensions"></a>Microsoft Edge 扩展概述
 

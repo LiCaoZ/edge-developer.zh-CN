@@ -3,18 +3,18 @@ title: 在“样式”窗格中编辑 CSS 字体样式和设置
 description: 了解如何使用 Microsoft Edge 开发人员工具中的“样式”窗格更改 CSS 字体样式和设置。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
 no-loc:
 - Enable new font editor tool within the Styles pane
 ms.date: 03/11/2021
-ms.openlocfilehash: 3066faec6afabb27f9d454e18307a20315d44f1f
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.openlocfilehash: 212a235ec3fc58efe285852d1726efe185882e90
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269275"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286021"
 ---
 # <a name="edit-css-font-styles-and-settings-in-the-styles-pane"></a>在“样式”窗格中编辑 CSS 字体样式和设置
 

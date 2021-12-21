@@ -1,19 +1,19 @@
 ---
 title: 渐进式 Web 应用中的脱机和网络连接支持
-description: 了解如何使用支持技术创建复原体验，以适应不同的网络条件。
+description: 如何使用支持技术创建复原体验，以适应不同的网络条件。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用、PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
-ms.openlocfilehash: 36c4bafca23cac88ab292b022f157fcdd66163d5
-ms.sourcegitcommit: 418eca66278525e923fecaf9cc30fc9b09bb98f5
+keywords: 渐进 Web 应用，PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
+ms.date: 01/07/2021
+ms.openlocfilehash: 80e2683c11d6c1fac5f226d3123926fc76650542
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "12235710"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284901"
 ---
 # <a name="offline-and-network-connectivity-support-in-progressive-web-apps"></a>渐进式 Web 应用中的脱机和网络连接支持
 
@@ -91,7 +91,7 @@ self.addEventListener( "fetch", event => {
 *  如果缓存中不存在该请求，将运行该资源的新请求，稍后将缓存响应的副本，并 `fetch` 返回响应。
    * 如果 `fetch` 由于网络不可用而失败，则从缓存中返回脱机页面。
 
-此简单介绍演示如何在渐进式 Web 应用应用中使用 (PWA) 。 每个PWA不同，可能使用不同的缓存策略。 代码看起来可能不同，并且你可以对同一应用程序中的不同路由使用不同的缓存策略。
+此简单介绍演示如何在渐进式 Web 应用中使用 (PWA) 。 每个PWA不同，可能使用不同的缓存策略。 代码看起来可能不同，并且你可以对同一应用程序中的不同路由使用不同的缓存策略。
 
 
 <!-- ====================================================================== -->
@@ -106,7 +106,7 @@ self.addEventListener( "fetch", event => {
 有时，你可能需要存储少量数据，以便为用户提供更好的脱机体验。 如果是这样，您可能会发现 Web 应用程序键值对系统的简单性存储您的需求。
 
 > [!IMPORTANT]
-> Web 存储是一个同步进程，不能用于工作线程，如服务工作线程。 大量使用 Web 存储可能会导致应用程序的性能问题。
+> Web 存储是一个同步进程，在工作线程（如服务工作线程）中不可用。 大量使用 Web 存储可能会导致应用程序的性能问题。
 
 有两种类型的 Web 存储： 和 `localStorage` `sessionStorage` 。 每种类型的 Web 存储都作为独立于创建它的域的单独数据存储进行维护。
 
@@ -154,7 +154,7 @@ function insertOfflineLink( request ) {
 
 
 <!-- ====================================================================== -->
-## <a name="test-for-network-connections-in-your-pwa"></a>测试连接中的网络连接PWA
+## <a name="test-for-network-connections-in-your-pwa"></a>在客户端中测试PWA
 
 除了存储信息以便脱机使用之外，了解网络连接何时可用，以便同步数据或通知用户网络状态已更改也很有用。
 

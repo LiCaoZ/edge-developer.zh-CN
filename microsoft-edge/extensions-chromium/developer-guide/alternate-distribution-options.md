@@ -1,20 +1,20 @@
 ---
-description: 了解如何使用不使用已验证存储的备用方法分发扩展
-title: 分发扩展的备用方法
+title: 分发扩展的替代方法
+description: 如何使用不使用已验证存储的备用方法分发扩展。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/17/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 491c6a1e632061fe75477b6bd4f7ef9e0b823e61
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 02/17/2021
+ms.openlocfilehash: a6eec619bb116a13d234caf9a674551b8a04bc44
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155470"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12287190"
 ---
-# <a name="alternate-extension-distribution-methods"></a>备用扩展分发方法
+# <a name="alternative-ways-to-distribute-extensions"></a>分发扩展的替代方法
 
 通常，扩展通过加载项Microsoft Edge分发。 在某些情况下，开发人员可能需要使用备用方法分发扩展。 例如：
 
@@ -23,7 +23,7 @@ ms.locfileid: "12155470"
 
 未从边缘加载项存储加载的扩展称为外部安装的扩展。 以下列表提供了分发外部安装的扩展的替代方法。
 
-*   请使用Windows注册表 (Windows注册表) 。
+*   请Windows注册表 (Windows注册表) 。
 *   在 macOS 和 Linux (使用首选项 JSON) 。
 
 
@@ -35,22 +35,22 @@ ms.locfileid: "12155470"
 此外，请确保您拥有以下信息。
 
 1.  文件的文件 `.crx` 路径或扩展 `update_URL` 名的 。
-1.  扩展的版本。  版本信息在清单文件中提供，或Microsoft Edge `edge://extensions` 打包扩展后在 中提供。
-1.  扩展的 ID。  ID 信息在加载打包扩展Microsoft Edge `edge://extensions` 位于 以下版本。
+1.  扩展的版本。  版本信息在清单文件中提供，或在加载打包扩展Microsoft Edge在 中 `edge://extensions` 提供。
+1.  扩展的 ID。  在加载打包扩展Microsoft Edge `edge://extensions` ID 信息可在 以下版本获取。
 
 > [!NOTE]
 > 以下示例使用 `1.0` 作为 版本 和 `aaaaaaaaaabbbbbbbbbbcccccccccc` 作为 ID。
 
 
 <!-- ====================================================================== -->
-## <a name="use-the-windows-registry-windows-only"></a>仅Windows注册表 (Windows注册表) 
+## <a name="use-the-windows-registry-windows-only"></a>使用Windows注册表 (Windows注册表) 
 
 若要使用注册表Windows扩展，请执行以下步骤。
 
 1.  在注册表中查找或创建以下注册表项：
     *   32 位 `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions` Windows：。
     *   64 位 `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions` Windows：。
-1.  使用与扩展 ID 相同的名称在****"扩展"下创建新密钥或文件夹。 例如，创建名称为 的键 `aaaaaaaaaabbbbbbbbbbcccccccccc` 。
+1.  使用与扩展 ID 相同的名称在 **"** 扩展"下创建新密钥或文件夹。 例如，创建名称为 的键 `aaaaaaaaaabbbbbbbbbbcccccccccc` 。
 1.  在 **Extensions** 键中， `update_url` 创建 属性，将值设置为 `https://edge.microsoft.com/extensionwebstorebase/v1/crx` 。  `update_url`属性指向 `.crx` 加载项网站中扩展Microsoft Edge文件。
 
     ```json
@@ -62,11 +62,11 @@ ms.locfileid: "12155470"
     > [!NOTE]
     > 如果要从客户端安装扩展Chrome Web Store，将 的值 `update_url` 设置为 `https://clients2.google.com/service/update2/crx` 。
 
-1.  导航到 ，验证扩展Microsoft Edge中列出的 `edge://extensions` 扩展。
+1.  导航到 ，验证扩展Microsoft Edge中列出的扩展 `edge://extensions` 。
 
 
 <!-- ====================================================================== -->
-## <a name="use-a-preferences-json-file-macos-and-linux"></a>在 macOS 和 Linux (使用首选项 JSON) 
+## <a name="use-a-preferences-json-file-macos-and-linux"></a>将首选项 JSON 文件 (macOS 和 Linux) 
 
 若要使用首选项 JSON 文件分发扩展名，请执行以下步骤。
 
@@ -124,7 +124,7 @@ ms.locfileid: "12155470"
     }
     ```
 
-1.  导航到 ，验证扩展Microsoft Edge安装于 `edge://extensions` 中。
+1.  通过导航到 ，验证扩展Microsoft Edge安装于 中 `edge://extensions` 。
 
 
 <!-- ====================================================================== -->

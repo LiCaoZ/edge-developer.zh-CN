@@ -1,20 +1,20 @@
 ---
+title: 搜索面板
 description: DevTools Microsoft Edge中的搜索工具可帮助查找源文件。
-title: 搜索
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/28/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: a857cf232a2f9fa3a234a5020d172dd1ead3b69c
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.date: 10/28/2021
+ms.openlocfilehash: 27c93ed08140c333f8440f0290b649b0db2bf151
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12141994"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285944"
 ---
-# <a name="search"></a>搜索
+# <a name="the-search-panel"></a>搜索面板
 
 使用 **搜索** 工具查找网页的特定源文件。
 
@@ -30,7 +30,7 @@ ms.locfileid: "12141994"
 
 1.  [打开 DevTools](../open/index.md) (`F12`) 。
 
-1.  按 `Control` + `Shift` + `F` (Windows/Linux) 或 (`Command` + `Option` + `F` macOS) 。
+1.  按 `Control` + `Shift` + `F` (Windows/Linux) 或 `Command` + `Option` + `F` (macOS) 。
 
 The **Search** tool appears in the **Drawer**， and shows the search toolbar：
 
@@ -70,11 +70,11 @@ The **Search** tool appears in the **Drawer**， and shows the search toolbar：
 
 
 <!-- ====================================================================== -->
-## <a name="match-case-lowercase-or-uppercase-characters"></a>匹配大小写 (小写或大写) 
+## <a name="match-case-lowercase-or-uppercase-characters"></a>大小写 (小写或大写字符) 
 
 默认情况下， **搜索** 工具不区分大小写。  搜索词匹配该词的出现次数，无论小写还是大写字符。
 
-若要仅查找与特定大小写匹配的结果 (小写或大写) ，请单击搜索工具栏中的"区分大小写**** (`Aa`) "按钮。
+若要仅查找与特定大小写匹配的结果 (小写或大写) ，请单击搜索工具栏中的"区分大小写 (**** `Aa`) "按钮。
 
 
 <!-- ====================================================================== -->
@@ -100,10 +100,10 @@ The **Search** tool appears in the **Drawer**， and shows the search toolbar：
 
 若要更新搜索结果，请执行下列任一操作：
 *  再次搜索，在搜索输入字段中键入术语。
-*  单击工具栏 **中的"** 刷新 ![ (刷新 ](../media/search-tool/search-tool-refresh.png) 搜索) 按钮。
+*  单击工具栏 **中的"** 刷新 ![ (刷新搜索 ](../media/search-tool/search-tool-refresh.png)) 按钮。
 
 
 <!-- ====================================================================== -->
 ## <a name="clear-a-search"></a>清除搜索
 
-若要清除搜索结果，请单击工具栏 **中的"清除** (![ 清除) ](../media/search-tool/search-tool-clear.png) 按钮。
+若要清除搜索结果，请单击工具栏 **中的"清除** (![ 清除 ](../media/search-tool/search-tool-clear.png)) "按钮。

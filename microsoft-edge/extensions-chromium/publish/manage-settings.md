@@ -1,22 +1,22 @@
 ---
-description: 管理合作伙伴计划的合作伙伴Microsoft Edge帐户。
 title: 管理帐户设置
+description: 管理合作伙伴计划的合作伙伴Microsoft Edge帐户。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/17/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: 5d8246040ec004e8c1fb33a6fb034d8b85db9c50
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 02/17/2021
+ms.openlocfilehash: b88bc781c457787d8b02d28aebe5b1656661bba2
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157031"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284754"
 ---
 # <a name="manage-account-settings"></a>管理帐户设置
 
-在合作伙伴中心管理你的Microsoft Edge开发者帐户的帐户设置[和个人资料详细信息](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)。
+在合作伙伴中心 管理你的Microsoft Edge开发者帐户的帐户设置[和个人资料详细信息](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)。
 
 
 <!-- ====================================================================== -->
@@ -28,7 +28,7 @@ ms.locfileid: "12157031"
 *   指向查看信息的其他页面的链接。
 *   编辑帐户信息。
 
-在 **"帐户详细信息** "部分，查看帐户的状态和类型。  你的卖家 ID 和其他发布者 ID 信息也显示在帐户 **详细信息** 部分中。  这些值由 Microsoft 分配，用于唯一地标识你的开发人员帐户，并且为只读。
+在 **"帐户详细信息** "部分，查看帐户的状态和类型。  你的卖家 ID 和其他发布者 ID 信息也显示在帐户 **详细信息** 部分中。  这些值由 Microsoft 分配以唯一地标识你的开发者帐户，并且为只读。
 
 
 <!-- ====================================================================== -->

@@ -1,18 +1,18 @@
 ---
-description: 了解如何在清单中声明 API 的权限
 title: 在扩展清单中声明 API 权限
+description: 了解如何在清单中声明 API 的权限。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
-ms.openlocfilehash: d04f5079533cec5e48d3b2e9eb2012a29ee64773
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 03/17/2021
+ms.openlocfilehash: 53d5f523d270a7ddf3b8179df97d394711c51e88
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12157066"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12287162"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -51,7 +51,7 @@ ms.locfileid: "12157066"
 |:--- |:--- |
 | `activeTab` | 请求根据规范向扩展授予 `activeTab` 权限。 |
 | `alarms` | 授予对 API 的扩展 `chrome.alarms` 访问权限。 |
-| `background` | 使Microsoft Edge提前启动并延迟关闭，以便扩展的生命周期更长。  如果任何安装的扩展具有权限，Microsoft Edge只要用户登录到用户的计算机，以及用户启动 Microsoft Edge 之前，该扩展就会以不 `background` Microsoft Edge。  该权限还使Microsoft Edge继续运行，即使其最后一个窗口已关闭，直到用户显式退出 `background` Microsoft Edge。  此权限不会影响浏览器中关闭的扩展。  `background`该权限通常在背景页上使用。 |
+| `background` | 使Microsoft Edge提前启动并延迟关闭，以便扩展的生命周期更长。  如果任何安装的扩展具有权限，Microsoft Edge登录到用户计算机后，以及用户启动 Microsoft Edge 之前，该扩展将以不明显方式 `background` Microsoft Edge。  权限还使Microsoft Edge继续运行，即使其最后一个窗口已关闭，直到用户显式退出 `background` Microsoft Edge。  此权限不会影响浏览器中关闭的扩展。  `background`该权限通常在背景页上使用。 |
 | `bookmarks` | 授予对 API 的扩展 `chrome.bookmarks` 访问权限。 |
 | `browsingData` | 授予对 API 的扩展 `chrome.browsingData` 访问权限。 |
 | `certificateProvider` | 授予对 API 的扩展 `chrome.certificateProvider` 访问权限。 |
@@ -63,7 +63,7 @@ ms.locfileid: "12157066"
 | `debugger` | 授予对 API 的扩展 `chrome.debugger` 访问权限。 |
 | `declarativeContent` | 授予对 API 的扩展 `chrome.declarativeContent` 访问权限。 |
 | `declarativeNetRequest` | 授予对 API 的扩展 `chrome.declarativeNetRequest` 访问权限。 |
-| `declarativeNetRequestFeedback` | 授予对 API 内事件和方法的扩展访问权限 `chrome.declarativeNetRequest` ，这将返回有关匹配的声明性规则的信息。 |
+| `declarativeNetRequestFeedback` | 授予对 API 内事件和方法的扩展访问权限， `chrome.declarativeNetRequest` 这将返回有关匹配的声明性规则的信息。 |
 | `declarativeWebRequest` | 授予对 API 的扩展 `chrome.declarativeWebRequest` 访问权限。 |
 | `desktopCapture` | 授予对 API 的扩展 `chrome.desktopCapture` 访问权限。 |
 | `documentScan` | 授予对 API 的扩展 `chrome.documentScan` 访问权限。 |

@@ -1,18 +1,18 @@
 ---
 title: 适用于初学者的 DevTools：CSS 入门
-description: CSS 入门
+description: 开始使用 CSS 的 DevTools 教程。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 07/26/2021
-ms.openlocfilehash: b03ff5b96c5a266f6494b05e849b5b32c3142e2f
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.openlocfilehash: fe68f903e58abb9b43980f316e0b18e98cc081d5
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269198"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284740"
 ---
 <!-- Copyright Katherine Jackson
 
@@ -27,7 +27,6 @@ ms.locfileid: "12269198"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="devtools-for-beginners-get-started-with-css"></a>适用于初学者的 DevTools：CSS 入门
 
 本教程介绍如何使用 CSS 设置网页样式。  此外，还了解如何使用 Microsoft Edge DevTools 试验 CSS 更改。
@@ -63,7 +62,7 @@ ms.locfileid: "12269198"
 
 完成以下先决条件，然后再执行本教程。
 
-*   使用[入门 DOM](./html.md)完成 HTML 和 DOM 的填写，或确保您已了解 HTML 和 DOM。
+*   使用[HTML 和 DOM](./html.md)完成入门，或确保您已了解 HTML 和 DOM。
 *   下载 [Microsoft Edge](https://www.microsoftedgeinsider.com) Web 浏览器。  以下教程使用一组内置于 Microsoft Edge 中的 Web 开发工具（称为 Microsoft Edge DevTools）。
 
 
@@ -81,9 +80,9 @@ ms.locfileid: "12269198"
 
 1.  选择 **"cooked-amphibian"。**  弹出一个菜单。
 
-    :::image type="content" source="../media/beginners-css-setup2.msft.png" alt-text="&quot;Project 选项&quot;菜单。" lightbox="../media/beginners-css-setup2.msft.png":::
+    :::image type="content" source="../media/beginners-css-setup2.msft.png" alt-text="&quot;Project选项&quot;菜单。" lightbox="../media/beginners-css-setup2.msft.png":::
 
-1.  选择 **"重新混合Project"。**  Glitch 将创建一个可编辑的项目副本。
+1.  选择**Remix Project**。  Glitch 将创建一个可编辑的项目副本。
 
     > [!NOTE]
     > Glitch 会为新项目生成随机名称。
@@ -248,7 +247,7 @@ li a {
 
 向现有规则集添加声明
 
-1.  将鼠标悬停在**主页链接**上，打开上下文菜单 (右键单击") "检查 **"。**
+1.  将鼠标悬停在 **"主页"** 链接上，打开上下文菜单 (右键单击") "，然后选择"检查 **"。**
 
     :::image type="content" source="../media/beginners-css-add1.msft.png" alt-text="检查&quot;主页&quot;链接。" lightbox="../media/beginners-css-add1.msft.png":::
 
@@ -441,11 +440,11 @@ li a {
 
 1.  将前面的代码段添加到 `<header>` 中的 标记 `index.html`。
 
-    :::image type="content" source="../media/beginners-css-jumbotron1.msft.png" alt-text="在 index.html 中添加类。" lightbox="../media/beginners-css-jumbotron1.msft.png":::
+    :::image type="content" source="../media/beginners-css-jumbotron1.msft.png" alt-text="在类中添加index.html。" lightbox="../media/beginners-css-jumbotron1.msft.png":::
 
 1.  将代码添加到 `<header>` 中的 标记 `contact.html`。
 
-    :::image type="content" source="../media/beginners-css-jumbotron2.msft.png" alt-text="在 contact.html 中添加类。" lightbox="../media/beginners-css-jumbotron2.msft.png":::
+    :::image type="content" source="../media/beginners-css-jumbotron2.msft.png" alt-text="在类中添加contact.html。" lightbox="../media/beginners-css-jumbotron2.msft.png":::
 
 1.  在实时选项卡中查看更改。 标题周围有一个大的灰色框。
 
@@ -510,12 +509,12 @@ li a {
 
 *   更好地进行 Web 开发的最好办法就是构建更多网站。  不要担心中断工作。  请一直玩得有趣，并尽可能学习。
 *   若要了解有关设置网页样式的信息，请导航到 CSS [简介](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS)。
-*   若要详细了解如何在 DevTools 中试验 CSS，请导航到入门[查看和更改 CSS。](../css/index.md)
+*   若要详细了解如何在 DevTools 中试验 CSS，请导航入门[查看和更改 CSS。](../css/index.md)
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，由位于 Chrome DevTools (的 [Katherine Writer](https://developers.google.com/web/resources/contributors#katherine-jackson)) 。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，由 [由技术](https://developers.google.com/web/resources/contributors#katherine-jackson) 编写器 (，Chrome DevTools) 。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -3,17 +3,17 @@ title: 在标题栏中显示内容
 description: 了解如何使用窗口控件覆盖 API 为应用使用整个窗口区域。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/02/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， 窗口控件覆盖， API
-ms.openlocfilehash: 16bebfa2a7bb5e9786aac4372924f1f60851032c
-ms.sourcegitcommit: b701ad89af83d25febecd2dbb2d778a320cecfd3
+ms.date: 09/02/2021
+ms.openlocfilehash: 77a3e452b3edea6bb1fe452cfc60ee5e6c959d10
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "12278823"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285244"
 ---
 # <a name="display-content-in-the-title-bar"></a>在标题栏中显示内容
 
@@ -46,7 +46,7 @@ ms.locfileid: "12278823"
 
     :::image type="content" source="../media/enable-window-controls-overlay-experiment.png" alt-text="启用窗口控件覆盖 API 实验。":::
 
-窗口控件覆盖 API 也作为源试用功能提供。  若要使应用的用户从窗口控件覆盖中获益，而无需在 Microsoft Edge 中启用它，可以使用原点试用版。
+窗口控件覆盖 API 也作为源试用功能提供。  若要使应用的用户从窗口控件覆盖中获益，而无需在 Microsoft Edge 中启用它，可以使用源试用版。
 
 有关源试用版详细信息，请转到Microsoft Edge[源试用版开发人员控制台。](https://developer.microsoft.com/microsoft-edge/origin-trials)
 
@@ -109,7 +109,7 @@ ms.locfileid: "12278823"
 <!-- ====================================================================== -->
 ## <a name="make-regions-of-your-app-drag-handlers-for-the-window"></a>为窗口创建应用拖动处理程序的区域
 
-隐藏标题栏时，只有系统关键窗口控件 (最大化、最小化、关闭以及应用信息图标) 。 **** **** **** ****  这意味着用户很少能四处移动应用。
+当标题栏隐藏时，只有系统关键窗口控件 (最大化、最小化、关闭以及应用信息图标****) 。 **** **** ****  这意味着用户很少能四处移动应用。
 
 您可以使用 CSS `-webkit-app-region` 属性为用户提供更多拖动应用程序的方法。  例如，如果你的应用有自己的标题栏，你可以将其标题栏转换为窗口拖动处理程序：
 
@@ -166,7 +166,7 @@ if ('windowControlsOverlay' in navigator) {
 
 My Tracks 是PWA窗口控件覆盖功能的主要演示应用。
 
-1. 在Microsoft Edge中，[启用窗口控件覆盖。](#enable-the-window-controls-overlay-in-your-app)
+1. 在Microsoft Edge中，[启用窗口控件覆盖](#enable-the-window-controls-overlay-in-your-app)。
 
 2. 转到 ["我的跟踪"](https://captainbrosset.github.io/mytracks/) 并安装应用。
 
@@ -189,5 +189,5 @@ My Tracks 是PWA窗口控件覆盖功能的主要演示应用。
 ## <a name="see-also"></a>另请参阅
 
 *   [窗口控件覆盖视频教程](https://www.youtube.com/watch?v=NvClp35dFVI)
-*   [自定义窗口控件覆盖PWA标题栏](https://web.dev/window-controls-overlay/)
+*   [自定义窗口标题栏PWA窗口控件覆盖](https://web.dev/window-controls-overlay/)
 *   [开箱而出](https://alistapart.com/article/breaking-out-of-the-box/)

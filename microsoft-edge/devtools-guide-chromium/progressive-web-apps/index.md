@@ -1,18 +1,18 @@
 ---
-description: 使用应用程序面板检查、修改和调试 Web 应用清单、服务工作者和服务工作者缓存。
 title: 调试渐进式 Web 应用
+description: 使用应用程序面板检查、修改和调试 Web 应用清单、服务工作者和服务工作者缓存。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 2aa7958859813f062c92e6e602d09b4a3350e78e
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.date: 05/04/2021
+ms.openlocfilehash: a9f1c445e39deecfe7e24e8dd888b1269f89048a
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170594"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285748"
 ---
 <!-- Copyright Kayce Basques
 
@@ -45,7 +45,7 @@ ms.locfileid: "12170594"
 
 *   使用清单 **窗格** 检查 Web 应用清单并触发"添加到主屏幕"事件。
 *   使用"**** 服务工作线程"窗格执行与服务工作者相关的所有任务，例如注销或更新服务、模拟推送事件、脱机或停止服务工作线程。
-*   从"缓存和缓存"窗格中查看**存储**缓存。
+*   从"缓存"窗格查看服务**工作存储**缓存。
 *   从"清除存储"窗格中选择一个按钮，注销服务工作器并清除所有 **存储和** 缓存。
 
 
@@ -127,7 +127,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 *   " **同步** "按钮模拟后台同步事件。
 *   " **注销"** 按钮将取消注册指定的服务工作器。  请查看清除 [存储](#clear-storage) ，了解通过单个按钮选择取消注册服务工作器以及擦除存储和缓存的方法。
 *   Source **** 行将告知您当前正在运行的服务工作线程的安装时间。  链接是服务工作者的源文件的名称。  选择链接将你发送到服务工作者的源。
-*   " **状态** "行将告知您服务工作者的状态。  上图中绿色状态 (旁边的 ID) 表示当前活动的服务 `#36` 工作线程。  在状态旁边，如果服务**** 工作 (停止，则启动按钮) 如果服务工作进程正在运行 (将显示一个停止****) 按钮。  服务工作者设计为随时由浏览器停止和启动。  使用停止按钮显式停止服务 **工作器** 可能会模拟这一点。  停止服务工作进程是测试服务工作线程再次启动备份时代码行为方式的一种好方法。  它经常显示错误，因为对永久性全局状态的错误假设。
+*   " **状态** "行将告知您服务工作者的状态。  上图中绿色状态指示器旁边的 ID `#36` (，) 当前处于活动状态的服务工作线程。  在状态旁边，如果服务**** 工作 (停止，则会显示"开始"按钮) 如果服务工作进程正在运行 (**** 将显示一个停止) 按钮。  服务工作者设计为随时由浏览器停止和启动。  使用停止按钮显式停止服务 **工作器** 可能会模拟这一点。  停止服务工作进程是测试服务工作线程再次启动备份时代码行为方式的一种好方法。  它经常显示错误，因为对永久性全局状态的错误假设。
 *   **"客户端**"行将告知您服务工作线程的作用域。  当 **启用** "全部显示"复选框时，焦点 **按钮最** 有用。  启用该复选框后，将列出所有注册的服务工作者。  如果选择其他选项卡中运行**** 的服务工作线程旁边的焦点按钮，Microsoft Edge焦点位于该选项卡上。
 
 如果服务工作线程导致任何错误，将显示名为 **"错误"** 的新标签。
@@ -145,7 +145,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!-- ====================================================================== -->
 ## <a name="service-worker-caches"></a>服务工作线程缓存
 
-"**缓存存储**窗格提供已使用缓存 API 的缓存服务工作 (缓存) [列表](https://developer.mozilla.org/docs/Web/API/Cache)。
+"**缓存存储**窗格提供使用缓存 API 的缓存服务工作 (缓存) [列表](https://developer.mozilla.org/docs/Web/API/Cache)。
 
 :::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="缓存存储窗格" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
    缓存**存储**窗格
@@ -164,12 +164,12 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!-- ====================================================================== -->
 ## <a name="quota-usage"></a>配额使用情况
 
-"缓存"窗格**存储**某些响应可能标记为"不透明"。<!-- [opaque](/web/fundamentals/glossary#opaque-response) -->  这是指从不同源（如从源）检索**CDN**<!-- [CDN](/web/fundamentals/glossary#CDN) --> 或远程 API，如果 [CORS](https://fetch.spec.whatwg.org/#http-cors-protocol) 未启用。
+"缓存"窗格**存储**某些响应可能标记为"不透明"。<!-- [opaque](/web/fundamentals/glossary#opaque-response) -->  这是指从不同源检索的响应，如从源CDN ****<!-- [CDN](/web/fundamentals/glossary#CDN) --> 或远程 API，如果 [CORS](https://fetch.spec.whatwg.org/#http-cors-protocol) 未启用。
 
 <!--TODO:  Link Web "CDN" section when available. -->
 <!--TODO:  Link Web "opaque" section when available. -->
 
-为了避免跨域信息泄露，向用于计算存储配额限制的不透明响应大小添加大量填充 (例如是否引发异常) API 报告 `QuotaExceeded` `navigator.storage` 。
+为了避免跨域信息泄露，向用于计算存储配额限制的不透明响应的大小添加大量填充 (例如是否引发异常) API 报告。 `QuotaExceeded` `navigator.storage`
 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 <!-- [Estimating available storage space](whats-new/2017/08/estimating-available-storage-space) -->
@@ -187,7 +187,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!-- ====================================================================== -->
 ## <a name="clear-storage"></a>清除存储
 
-"**清除存储**窗格是开发渐进式 Web 应用时非常有用的功能。  通过此窗格，您可以取消注册服务工作器，并清除所有缓存和存储，并单击一个按钮即可。  <!--Check out the section below to learn more.  -->
+"**清除存储**窗格是开发渐进式 Web 应用时非常有用的功能。  通过此窗格，您可以取消注册服务工作器，并清除所有缓存和存储，同时选择一个按钮。  <!--Check out the section below to learn more.  -->
 
 <!--Related Guides:
 
@@ -208,6 +208,6 @@ Related Guides:
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps) ，由技术编写者 [、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse (创作) 。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

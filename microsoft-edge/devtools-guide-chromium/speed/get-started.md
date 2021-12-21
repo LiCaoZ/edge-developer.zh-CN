@@ -1,18 +1,18 @@
 ---
-description: 了解如何使用 Microsoft Edge 开发人员工具找到加快网站加载速度的方法。
 title: 优化网站速度
+description: 如何使用开发人员Microsoft Edge工具查找使网站加载速度更快的方法。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 7e02c5e5aa85b7b670086316188b247f6f631fa2
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.date: 05/04/2021
+ms.openlocfilehash: b97a18e3c17454b7f9a9a3288d74b9eb63651721
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170412"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286014"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,10 +28,6 @@ ms.locfileid: "12170412"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # <a name="optimize-website-speed"></a>优化网站速度
-
-
-<!-- ====================================================================== -->
-## <a name="goal-of-tutorial"></a>教程目标
 
 本教程将指导你如何使用 Microsoft Edge 开发人员工具找到加快网站加载速度的方法。
 
@@ -85,13 +81,13 @@ ms.locfileid: "12170412"
        演示选项卡
     :::image-end:::
 
-1.  选择 `Control` + `Shift` + `J` (Windows、Linux) 或 (`Command` + `Option` + `J` macOS) 。  Microsoft Edge 开发人员工具将在演示旁边打开。
+1.  选择 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS)。  Microsoft Edge 开发人员工具将在演示旁边打开。
 
     :::image type="complex" source="../media/speed-glitch-tony-show-live-console.msft.png" alt-text="开发人员工具和演示" lightbox="../media/speed-glitch-tony-show-live-console.msft.png":::
        开发人员工具和演示
     :::image-end:::
 
-对于本教程中的其余屏幕截图，开发人员工具显示在单独窗口中。  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` macOS + `P`) `Undock` **** 打开"命令菜单"，键入 ，然后选择"在单独的窗口中取消停靠"。
+对于本教程中的其余屏幕截图，开发人员工具显示在单独窗口中。  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) `Undock` **** 打开"命令菜单"，键入 ，然后选择"在单独的窗口中撤消"。
 
 :::image type="complex" source="../media/speed-console.msft.png" alt-text="移除的开发人员工具" lightbox="../media/speed-console.msft.png":::
    移除的开发人员工具
@@ -383,7 +379,7 @@ ms.locfileid: "12170412"
        **请求阻止**工具
     :::image-end:::
 
-1.  选择 **添加模式** (![ 添加 ](../media/add-pattern-icon.msft.png)) ，键入 `/libs/*` ，然后选择 `Enter` 以确认。
+1.  选择 **添加模式** (![ 添加 ](../media/add-pattern-icon.msft.png)) ，键入 `/libs/*` ，然后选择 `Enter` 进行确认。
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png" alt-text="添加模式，阻止对库目录的任何请求" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png":::
        添加模式，阻止对`libs`目录的任何请求
@@ -527,6 +523,6 @@ ms.locfileid: "12170412"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/speed/get-started)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/speed/get-started)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -1,18 +1,18 @@
 ---
-description: 要测试的网页辅助功能方面，以及 Microsoft DevTools 中的相应功能。
 title: DevTools 中的辅助功能测试功能
+description: 要测试的网页辅助功能方面，以及 Microsoft DevTools 中的相应功能。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 523a3892b217327b9c3f010e8432ed12f84fa7c4
-ms.sourcegitcommit: b701ad89af83d25febecd2dbb2d778a320cecfd3
+ms.date: 06/07/2021
+ms.openlocfilehash: 2745f2a1d05a6e5f11310002cf59fab6e4f6382e
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "12278865"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285608"
 ---
 # <a name="accessibility-testing-features-in-devtools"></a>DevTools 中的辅助功能测试功能
 
@@ -57,8 +57,8 @@ ms.locfileid: "12278865"
 | 要检查的辅助功能方面 | DevTools 的功能 | 文章或副标题 |
 |---|---|---|
 | 验证屏幕阅读器支持：验证输入字段是否包含标签 | **报告** > **辅助功能部分** 的问题工具 | [验证输入字段是否包含标签](test-issues-tool.md#verify-that-input-fields-have-labels) |
-| 验证屏幕阅读器支持 | **检查**覆盖 **>名称和角色**的>**辅助功能"****部分** | [使用 Inspect 工具通过将](test-inspect-tool.md) 鼠标悬停在网页上方并使用 Inspect 工具分析 HTML 页面来 [检测辅助功能问题](../css/inspect.md) |
-| 验证屏幕阅读器支持 | **元素**工具>**辅助功能选项卡>****辅助功能树** | [检查辅助功能树，获取键盘和屏幕阅读器支持](test-accessibility-tree.md)，以及使用 [辅助功能选项卡测试辅助功能](accessibility-tab.md) |
+| 验证屏幕阅读器支持 | **检查**工具>**名称和**角色的>**辅助功能****部分** | [使用 Inspect 工具通过将](test-inspect-tool.md) 鼠标悬停在网页上方并使用 Inspect 工具分析 HTML 页面来 [检测辅助功能问题](../css/inspect.md) |
+| 验证屏幕阅读器支持 | **元素** 工具> **辅助功能选项卡** > **辅助功能树** | [检查辅助功能树，获取键盘和屏幕阅读器支持](test-accessibility-tree.md)，以及使用 [辅助功能选项卡测试辅助功能](accessibility-tab.md) |
 
 
 <!-- ====================================================================== -->
@@ -66,9 +66,9 @@ ms.locfileid: "12278865"
 
 | 要检查的辅助功能方面 | DevTools 的功能 | 文章或副标题 |
 |---|---|---|
-| 验证网页是否对色盲者可用 | **呈现** 工具> **模拟视觉缺陷** 下拉列表 | [验证页面是否由色盲用户可用](test-color-blindness.md) |
-| 验证网页是否具有模糊视觉 | **呈现** 工具> **模拟视觉缺陷** 下拉列表 | [验证页面是否可借助模糊视图](test-blurred-vision.md) |
-| 验证网页是否可用，并关闭 UI 动画， (运动效果)  | **呈现** 工具> **模拟 CSS 媒体功能首选减少运动** | [验证页面是否可用，同时关闭 UI 动画](test-reduced-ui-motion.md) |
+| 验证网页是否对色盲者可用 | **呈现** 工具> **模拟视觉缺陷** 下拉列表 | [验证页面是否对色盲者可用](test-color-blindness.md) |
+| 验证网页是否具有模糊视觉 | **呈现** 工具> **模拟视觉缺陷** 下拉列表 | [验证页面是否可用模糊视觉](test-blurred-vision.md) |
+| 验证网页是否可用，并关闭 UI 动画， (运动效果)  | **呈现** 工具>模拟 **CSS 媒体功能首选减少运动** | [验证页面是否可用，并关闭 UI 动画](test-reduced-ui-motion.md) |
 
 
 <!-- ====================================================================== -->

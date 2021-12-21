@@ -1,18 +1,18 @@
 ---
-description: 在日程表上使用分配检测来查找未正确进行垃圾回收的对象，并继续保留内存。
 title: 在日程表上使用分配检测
+description: 在日程表上使用分配检测来查找未正确进行垃圾回收的对象，并继续保留内存。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 4c674deebde5a86fa5e014854b4840aec180e949
-ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
+ms.date: 05/04/2021
+ms.openlocfilehash: fe9a583c01aee68442375e208dc4204aa1da428b
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "12170251"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285062"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -40,14 +40,14 @@ ms.locfileid: "12170251"
 <!--todo: add profile memory problems (heap profiler) section when available  -->
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->
 
-**时间线上的分配检测** 在整个记录过程中定期获取堆快照 (频率与记录结束时每 50 毫秒) 一次最终快照的频率一样。
+**时间线上的分配检测** 在整个记录过程中定期获取堆快照 (频率与记录结束时每 50 毫秒) 一个最终快照的频率一样。
 
 :::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="日程表上的分配检测" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
    **日程表上的分配检测**
 :::image-end:::
 
 > [!NOTE]
-> 后一 `@` 个数字是对象 ID，在录制会话期间获取的多个快照中保留。  通过永久性对象 ID，可以在堆状态之间进行精确比较。  对象在垃圾回收期间移动，因此显示对象的地址没有任何意义。
+> 后的编号 `@` 是对象 ID，在录制会话期间获取的多个快照中保留。  通过永久性对象 ID，可以在堆状态之间进行精确比较。  对象在垃圾回收期间移动，因此显示对象的地址没有任何意义。
 
 
 <!-- ====================================================================== -->
@@ -96,6 +96,6 @@ ms.locfileid: "12170251"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) 由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) 由技术撰稿人 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (创作) 。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

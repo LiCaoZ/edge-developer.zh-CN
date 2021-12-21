@@ -1,22 +1,22 @@
 ---
-title: '在 DevTools 和色盲Microsoft Edge中 (视觉缺陷) '
+title: 模仿视觉缺陷
 description: 在 DevTools 中模拟Microsoft Edge缺陷。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 06/07/2021
-ms.openlocfilehash: ab64e9a819d5e1256166cda2de8cfe394031eca1
-ms.sourcegitcommit: 8dcac32f975886847d829efaf17aa7ea082e4714
+ms.openlocfilehash: 9a6af4abf82e4423dc3fea83100a62c86744fb66
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "12270118"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284439"
 ---
 # <a name="emulate-vision-deficiencies"></a>模仿视觉缺陷
 
-为了更好地满足色盲用户 (色盲[](https://www.colourblindawareness.org)) 或模糊视觉的需求[，Microsoft Edge DevTools](../index.md)允许你模拟模糊的视觉和特定的色盲。  模拟 **视觉缺陷工具** 可模拟以下类别：
+为了更好地满足色盲用户 (色盲[](https://www.colourblindawareness.org)) 或模糊视觉Microsoft Edge[开发人员工具](../index.md)允许你模拟模糊的视觉和特定的颜色视觉缺陷。  模拟 **视觉缺陷工具** 可模拟以下类别：
 
 | 色盲 | 详细信息 |
 |:--- |:--- |
@@ -67,4 +67,4 @@ ms.locfileid: "12270118"
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [验证页面是否可借助模糊视图](test-blurred-vision.md)
+*  [验证页面是否可用模糊视觉](test-blurred-vision.md)

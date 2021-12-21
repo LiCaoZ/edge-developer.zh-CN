@@ -3,16 +3,16 @@ title: 性能功能参考
 description: 在 Microsoft Edge DevTools 中记录和分析性能所有方法的参考。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: f56acd9c0e6be93c5d7831cf5effd6848505360f
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.openlocfilehash: fffe9ac49ae143d14681b871c34d60c54d08e354
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269156"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12286546"
 ---
 <!-- Copyright Kayce Basques
 
@@ -74,7 +74,7 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 ### <a name="force-garbage-collection-while-recording"></a>录制时强制收集垃圾
 
-在记录页面时，选择"收集**** (![ 垃圾回收图标) ](../media/collect-garbage-icon.msft.png) 以强制进行垃圾回收。
+在记录页面时，选择"收集**** 垃圾 (![ 收集垃圾图标 ](../media/collect-garbage-icon.msft.png)) 强制进行垃圾回收。
 
 :::image type="content" source="../media/evaluate-performance-performance-collect-garbage-button.msft.png" alt-text="收集垃圾。" lightbox="../media/evaluate-performance-performance-collect-garbage-button.msft.png":::
 
@@ -184,13 +184,13 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 ### <a name="search-activities"></a>搜索活动
 
-选择 `Control` + `F` (Windows、Linux) 或 (`Command` + macOS `F`) **** 打开"性能"面板底部的搜索框。
+选择 `Control` + `F` (Windows、Linux) 或 (macOS) 打开"性能"面板底部的 `Command` + `F` **搜索**框。
 
 :::image type="content" source="../media/evaluate-performance-performance-search-regex.msft.png" alt-text="搜索框。" lightbox="../media/evaluate-performance-performance-search-regex.msft.png":::
 
 导航与查询匹配的活动:
 
-*   使用"上**一 (** ![ 页 ](../media/previous-icon.msft.png)) "和 ("下) **** ![ ](../media/next-icon.msft.png) 按钮。
+*   使用"上**一 (** ![ 页 ](../media/previous-icon.msft.png) ****) "和 ("下一) ![ ](../media/next-icon.msft.png) 按钮。
 
 *   选择 `Shift`+`Enter` 来选择上一步或 `Enter` 来选择下一步。
 
@@ -261,7 +261,7 @@ DevTools 为脚本随机分配颜色。  在上图中，请求来自脚本的函
 
 默认情况下，**“分组”** 菜单设置为 **“无分组”**。  使用 **“分组”** 菜单，根据各种条件对活动表进行排序。
 
-选择 **"显示最 (堆栈** ") 显示"活动"表右侧 ![ 的另一 ](../media/show-heaviest-stack-icon.msft.png) **个** 表。  选择一个活动来填充 **最重堆叠** 表。  **“最重堆栈”** 表显示所选活动的子项需要最长的运行时间。
+Choose **Show Heaviest Stack** (Show ![ Heaviest Stack) to reveal another table to the right of the ](../media/show-heaviest-stack-icon.msft.png) **Activity** table.  选择一个活动来填充 **最重堆叠** 表。  **“最重堆栈”** 表显示所选活动的子项需要最长的运行时间。
 
 #### <a name="the-bottom-up-panel"></a>自下而上面板
 
@@ -435,11 +435,11 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
 
 若要移动图表:
 
-*   选择 **"** 平移 (![ 平移模式) 沿 X 和 ](../media/pan-mode-icon.msft.png) Y 轴移动。
+*   选择 **"平移** (![ 平移模式) 沿 X 和 ](../media/pan-mode-icon.msft.png) Y 轴移动。
 
-*   选择 **旋转模式** (![ 旋转 ](../media/rotate-mode-icon.msft.png)) 模式以沿 Z 轴旋转。
+*   选择 **旋转模式** (![ 旋转 ](../media/rotate-mode-icon.msft.png) 模式) 沿 Z 轴旋转。
 
-*   选择 **"重置转换** (![ 重置) 将图表 ](../media/reset-transform-icon.msft.png) 重置为原始位置。
+*   选择 **"重置 (** ![ 重置转换 ](../media/reset-transform-icon.msft.png)) 将图表重置为原始位置。
 
 ### <a name="view-paint-profiler"></a>查看绘图探查器
 
@@ -447,7 +447,7 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
 
 1.  [打开](#turn-on-advanced-paint-instrumentation)。
 
-1.  Select a**画图**event in the **Main** section.
+1.  在 **"画图****部分选择**一个事件。
 
     **"画图配置文件器"** 面板：
 
@@ -517,6 +517,6 @@ DevTools 概述了茶色中潜在的问题元素。
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference)，由技术编写 (Chrome DevTools \& Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

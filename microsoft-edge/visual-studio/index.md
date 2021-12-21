@@ -1,22 +1,22 @@
 ---
-description: Microsoft Edge和Visual Studio Web 开发。
 title: Visual Studio Web 开发
+description: Microsoft Edge和Visual Studio Web 开发。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/27/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， Web 开发， f12 工具， devtools， vs， visual studio， 调试器
-ms.openlocfilehash: 9b345d6b7aae6ef9ef423d6d6559cb5935390b2e
-ms.sourcegitcommit: b0604ac0d43cef4df04256bed3a375febc45d1a4
+ms.date: 07/27/2021
+ms.openlocfilehash: d1fdcbf1a3f61647dd869c832f1cb569cd1bef0d
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155358"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12284663"
 ---
 # <a name="visual-studio-for-web-development"></a>Visual Studio Web 开发
 
-Microsoft [Visual Studio](https://visualstudio.microsoft.com/vs)是一个集成开发环境， (IDE) 。   使用它来编辑、调试、生成和发布 Web 应用。  它是一个功能丰富的程序，可用于 Web 开发的许多方面。  在大多数 IDEs 提供的标准编辑器和调试器之上，Visual Studio以下功能以便于开发过程。
+Microsoft [Visual Studio](https://visualstudio.microsoft.com/vs)是一个集成开发环境， (IDE) 。   使用它来编辑、调试、生成和发布 Web 应用。  它是一个功能丰富的程序，可用于 Web 开发的许多方面。  在大多数 IDEs 提供的标准编辑器和调试器之上，Visual Studio以下功能简化开发过程。
 
 *   编译器
 *   代码完成工具
@@ -35,13 +35,13 @@ Visual Studio生成 ASP.NET 和 ASP.NET Core 应用、启动 Web 服务器、启
 
 通过简化的工作流，您可以调试直接从 IDE Microsoft Edge中运行的 JavaScript。
 
-### <a name="create-a-new-aspnet-core-web-app"></a>创建新的 web ASP.NET Core Web 应用
+### <a name="create-a-new-aspnet-core-web-app"></a>新建 web ASP.NET Core应用程序
 
 1.  Open Visual Studio 2019 and select **Create a new project**.
 
 1.  在下一屏幕的搜索框中，输入 **react**。
 
-1.  从**ASP.NET Core中选择**React.js"，然后选择"下一步 **"。**
+1.  Select **ASP.NET Core with React.js** from the list of templates and then **Next**.
 
 :::image type="complex" source="./media/create-new-project.png" alt-text="使用 ASP.NET Core 新建 web React.js" lightbox="./media/create-new-project.png":::
    使用 ASP.NET Core 新建 web React.js
@@ -51,7 +51,7 @@ Visual Studio生成 ASP.NET 和 ASP.NET Core 应用、启动 Web 服务器、启
 
 ### <a name="launch-microsoft-edge-from-visual-studio"></a>从Microsoft Edge启动Visual Studio
 
-创建项目后，使用 Visual Studio调试 JavaScript。
+创建项目后，使用Visual Studio调试 JavaScript。
 
 1.  打开 `ClientApp/src/components/Counter.js`。
 
@@ -63,11 +63,11 @@ Visual Studio生成 ASP.NET 和 ASP.NET Core 应用、启动 Web 服务器、启
 
 1.  选择 **"启用脚本调试**  >  **"。**
 
-    :::image type="complex" source="./media/enable-script-debugging.png" alt-text="启用脚本调试Visual Studio" lightbox="./media/enable-script-debugging.png":::
-       启用脚本调试Visual Studio
+    :::image type="complex" source="./media/enable-script-debugging.png" alt-text="在脚本调试中Visual Studio" lightbox="./media/enable-script-debugging.png":::
+       在脚本调试中Visual Studio
     :::image-end:::
 
-1.  在同一下拉列表中，>要**** 启动的 Microsoft Edge Visual Studio 预览频道（如 Microsoft Edge Canary、Dev 或 Beta）中的"Web 浏览器"。  如果你尚未使用其中一个预览Microsoft Edge，请导航到"Microsoft Edge[预览体验成员频道"](https://www.microsoftedgeinsider.com/download)下载一个。
+1.  在同一个下拉列表中，>**** 要启动的 Microsoft Edge 预览频道（如 Visual Studio Canary、Dev 或 Beta Microsoft Edge Web 浏览器）。  如果你尚未使用其中一个预览Microsoft Edge，请导航到"Microsoft Edge[预览体验成员频道"](https://www.microsoftedgeinsider.com/download)下载一个。
 
     :::image type="complex" source="./media/set-web-browser.png" alt-text="选择要启动Microsoft Edge的预览Visual Studio频道" lightbox="./media/set-web-browser.png":::
        选择要启动Microsoft Edge的预览Visual Studio频道
@@ -86,7 +86,7 @@ Visual Studio生成 ASP.NET 和 ASP.NET Core 应用、启动 Web 服务器、启
 1.  在 `Counter.js` 中，通过选择第 13 行旁边的装订线设置断点。
 
     :::image type="complex" source="./media/set-breakpoint.png" alt-text="Select the gutter next to Line 13 in Counter.js to set a breakpoint in Visual Studio" lightbox="./media/set-breakpoint.png":::
-       选择第 13 行旁边的装订线以 `Counter.js` 在 Visual Studio
+       选择"第 13 行"旁边的装订线， `Counter.js` 以在 Visual Studio
     :::image-end:::
 
 1.  切换回已启动Microsoft Edge Visual Studio实例。
@@ -97,13 +97,13 @@ Visual Studio生成 ASP.NET 和 ASP.NET Core 应用、启动 Web 服务器、启
        ASP.NET Core Web 应用中的"计数器"页
     :::image-end:::
 
-1.  中 JavaScript 调试Visual Studio命中你在 中设置的断点 `Counter.js` 。  Visual Studio暂停在 Microsoft Edge 中运行的 JavaScript 的运行时，你可以逐行执行脚本。
+1.  中 JavaScript 调试Visual Studio命中你在 中设置的断点 `Counter.js` 。  Visual Studio现在暂停在 Microsoft Edge 中运行的 JavaScript 的运行时，你可以逐行执行脚本。
 
     :::image type="complex" source="./media/hit-breakpoint.png" alt-text="Visual Studio暂停 JavaScript 在 Microsoft Edge" lightbox="./media/hit-breakpoint.png":::
        Visual Studio暂停 JavaScript 在 Microsoft Edge
     :::image-end:::
 
-该示例只是对 Visual Studio 中提供的功能的一个Visual Studio。  有关 Visual Studio 2019 中功能Visual Studio[文档](/visualstudio/windows/index)。
+该示例只是对 Visual Studio 中提供的功能的一Visual Studio。  有关 Visual Studio 2019 中功能Visual Studio[文档](/visualstudio/windows/index)。
 
 
 <!-- ====================================================================== -->
@@ -111,7 +111,7 @@ Visual Studio生成 ASP.NET 和 ASP.NET Core 应用、启动 Web 服务器、启
 
 以前，你从Microsoft Edge启动Visual Studio。  或者，你可以将Visual Studio调试器附加到Microsoft Edge运行中，如下所示。
 
-1.  首先，确保没有正在运行的 Microsoft Edge。
+1.  首先，确保不存在正在运行的 Microsoft Edge。
 
 1.  从命令行运行以下命令。
 
@@ -125,21 +125,21 @@ Visual Studio生成 ASP.NET 和 ASP.NET Core 应用、启动 Web 服务器、启
        选择 **"附加到进程"Visual Studio**
     :::image-end:::
 
-1.  在"**附加到进程"** 对话框中，将 **"** 连接类型"设置为 **"Chrome devtools 协议 websocket (，) "。 **
+1.  在"**附加到进程"** 对话框中，将 **"** 连接类型"设置为 **"Chrome devtools 协议 Websocket (，) "。 **
 
 1.  在" **连接目标** "文本框中，键入 `http://localhost:9222/` 并选择 `Enter` 。
 
-1.  查看"可用进程"部分中Microsoft Edge打开**的选项卡列表**。
+1.  查看"可用进程"部分中Microsoft Edge打开的**选项卡**列表。
 
-    :::image type="complex" source="./media/attach-to-process-dialog.png" alt-text="配置&quot;附加到进程&quot;对话框Visual Studio" lightbox="./media/attach-to-process-dialog.png":::
-       配置"**附加到进程"** 对话框Visual Studio
+    :::image type="complex" source="./media/attach-to-process-dialog.png" alt-text="Configure the Attach to Process dialog in Visual Studio" lightbox="./media/attach-to-process-dialog.png":::
+       Configure the **Attach to Process** dialog in Visual Studio
     :::image-end:::
 
 1.  从列表中选择要调试的选项卡，然后选择"附加 **"。**
 
-1.  在"**选择代码类型"对话框中**，选择 **"JavaScript (Microsoft Edge - Chromium) "，然后选择**"确定 **"。**
+1.  在"**选择代码类型**"对话框中，选择 **"JavaScript (Microsoft Edge - Chromium) "，然后选择**"确定 **"。**
 
-现在Visual Studio调试器附加到Microsoft Edge。  您可以暂停 JavaScript 的运行，设置断点，并直接在 Visual Studio 的 `console.log()` **调试输出**窗口中查看语句。
+现在Visual Studio调试器附加到Microsoft Edge。  您可以暂停 JavaScript 的运行，在 Visual Studio 调试输出窗口中直接设置 `console.log()` 断点**** 和查看Visual Studio。
 
 
 <!-- ====================================================================== -->

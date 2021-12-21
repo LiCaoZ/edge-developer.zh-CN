@@ -1,24 +1,24 @@
 ---
+title: 验证页面是否可用，并关闭 UI 动画
 description: 使用呈现工具中的模拟 CSS 媒体功能首选 (减少运动下拉列表) UI 动画关闭网页是否可用。
-title: 验证页面是否可用，同时关闭 UI 动画
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.openlocfilehash: 660dcaf8e3f7afc3be97c331efcf8830aca7a801
-ms.sourcegitcommit: 148b9b2f609eb775ed7fd71d50ac98a829ca90df
+ms.date: 06/07/2021
+ms.openlocfilehash: 990cab647033907b923ee326d17d2be76b2a6e6c
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12140408"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285461"
 ---
-# <a name="verify-that-the-page-is-usable-with-ui-animation-turned-off"></a>验证页面是否可用，同时关闭 UI 动画
+# <a name="verify-that-a-page-is-usable-with-ui-animation-turned-off"></a>验证页面是否可用，并关闭 UI 动画
 
 网页不应向在操作系统中关闭动画的用户显示动画。  动画可以帮助产品的可用性，但它们也会导致干扰、混淆或混乱。
 
-若要检查网页是否可使用 UI 动画关闭 (运动) ，请在"呈现"工具中，使用"模拟 CSS**** 媒体"功能**首选**"减少运动"下拉列表。
+若要检查网页是否可使用关闭 UI 动画 (减少运动 **) ，** 请在"呈现"工具中，使用"模拟 CSS 媒体"功能 **首选** "减少运动"下拉列表。
 
 在辅助功能测试演示网页中，关闭操作系统中的动画或使用 DevTools 模拟该设置时，当您选择边栏导航菜单的链接时，网页不会使用平滑滚动。  这是通过以下方法实现的：在媒体查询中将平滑滚动设置包装在 CSS 中，然后使用 **呈现** 工具模拟操作系统设置，以减小动画效果。
 
@@ -28,7 +28,7 @@ ms.locfileid: "12140408"
 
 1.  在 DevTools 顶部，选择"**** 源"工具，然后在左侧的****"导航"窗格中，选择 `styles.css` 。  CSS 文件显示在"编辑器 **"** 窗格中。
 
-1.  选择 macOS 上的 Windows/Linux 或**Command+F 上的 Ctrl+F，** 然后输入**** `@media` 。  将显示以下 CSS 媒体查询，用于确认它在网页上使用。
+1.  选择 macOS 上的 Windows/Linux 或**Command+F**上的**Ctrl+F，** 然后输入 `@media` 。  将显示以下 CSS 媒体查询，用于确认它在网页上使用。
 
     ```css
     @media (prefers-reduced-motion: no-preference) {

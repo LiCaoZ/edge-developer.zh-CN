@@ -1,18 +1,18 @@
 ---
 title: 使用 DevTools 的辅助功能测试概述
-description: 使用 DevTools 开始测试辅助功能问题
+description: 使用 DevTools 开始测试辅助功能问题。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 06/07/2021
-ms.openlocfilehash: 70135f95dd36a5007b2b46bcf77fd53e17dbe84b
-ms.sourcegitcommit: b701ad89af83d25febecd2dbb2d778a320cecfd3
+ms.openlocfilehash: 829a3549c4c385d793a655a3ad76fa3bb6b3528a
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "12278830"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285678"
 ---
 # <a name="overview-of-accessibility-testing-using-devtools"></a>使用 DevTools 的辅助功能测试概述
 
@@ -97,7 +97,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 *  通过模拟不同的设备、缩放级别和像素比率执行视觉测试。
 *  测试产品在不可靠连接或用户脱机时的行为方式。  在低速连接上向用户显示最重要的交互也是辅助功能注意事项。
 
-若要了解有关设备仿真**工具**的信息，请参阅在[DevTools](../device-mode/index.md)中模拟Microsoft Edge移动设备。
+若要了解有关设备仿真**工具**的信息，请参阅在[Microsoft Edge Tools 中模拟移动设备](../device-mode/index.md)。
 
 
 ### <a name="wavy-underlines-in-the-dom-tree-indicate-automatically-detected-issues"></a>DOM 树中的波浪下划线指示自动检测到的问题
@@ -112,7 +112,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 <!-- ====================================================================== -->
 ## <a name="limits-of-automated-testing"></a>自动测试的限制
 
-问题[工具](../issues/index.md)、辅助功能[Insights](https://accessibilityinsights.io)和[Lighthouse](https://developers.google.com/web/tools/lighthouse/)是自动生成网页的辅助功能报告的工具。  从此类工具获取自动报告只是辅助功能测试之旅的开始。
+问题[工具](../issues/index.md)[、辅助功能 Insights](https://accessibilityinsights.io)和[Lighthouse](https://developers.google.com/web/tools/lighthouse/)是自动生成网页的辅助功能报告的工具。  从此类工具获取自动报告只是辅助功能测试之旅的开始。
 
 辅助功能与人员交互有关，即在不同的技术环境中使用产品时具有不同的需求的人。  此测试无法完全自动化，但需要用户对产品进行验证。  在最佳方案中，你可以访问具有不同辅助功能需求的测试人员和使用各种环境的测试人员。  但是，通过使用键盘进行导航并检查页面的不同部分，你已可以自己执行很多操作。
 
@@ -314,7 +314,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 <!-- ====================================================================== -->
 ## <a name="testing-contrast-of-text-colors-in-various-states"></a>测试不同状态的文本颜色的对比度
 
-检查 **工具** 一次报告一个状态辅助功能问题。  首先，我们将介绍使用 Inspect 工具仅查看页面元素的静态状态的限制。  然后，我们将介绍如何检查页面元素的其他状态，方法是单击"样式"选项卡上的 **" (切换元素状态) \：hov"。** ****
+检查 **工具** 一次报告一个状态辅助功能问题。  首先，我们将介绍使用 Inspect 工具仅查看页面元素的静态状态的限制。  然后，我们将介绍如何检查页面元素的其他状态，方法是单击"样式"选项卡上的 (切换元素状态) **\：hov。** ****
 
 ### <a name="checking-text-color-contrast-in-the-default-state"></a>检查默认状态下的文本颜色对比度
 
@@ -381,7 +381,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 ### <a name="verify-that-the-webpage-is-usable-by-people-with-color-blindness"></a>验证网页是否对色盲者可用
 
-不同的接收状态使用红色 (绿色、黄色) 颜色作为区分资金状态的唯一方式。  但是，你无法预期所有用户都体验这些颜色。  如果你使用 DevTools 的视觉缺陷模拟功能，则可以通过模拟不同视觉用户对设计的看法来发现这不够好。 [](./emulate-vision-deficiencies.md)  有关详细的演练步骤，请参阅验证页面是否适用于色 [盲用户](test-color-blindness.md)。
+不同的接收状态使用红色 (绿色、黄色) 颜色作为区分资金状态的唯一方式。  但是，你无法预期所有用户都体验这些颜色。  如果你使用 DevTools 的视觉缺陷模拟功能，则可以通过模拟不同视觉用户对设计的看法来发现这不够好。 [](./emulate-vision-deficiencies.md)  有关详细演练步骤，请参阅验证页面是否对色盲 [者可用](test-color-blindness.md)。
 
 :::image type="content" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="将页面显示为具有亚特色 (色盲) 可以看到它。" lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
 
@@ -389,7 +389,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 ### <a name="verify-that-the-webpage-is-usable-with-blurred-vision"></a>验证网页是否具有模糊视觉
 
 呈现工具的另一 **个** 有趣功能是，你可以模拟模糊的视觉。  如果我们从"模拟**** 视觉缺陷"下拉列表中选择"**** 模糊视觉"选项，可以看到上菜单中文本上的投影使阅读菜单项变得困难。
-有关详细的演练步骤，请参阅验证页面是否 [可用模糊的视觉](test-blurred-vision.md)。
+有关详细演练步骤，请参阅验证页面是否可用 [模糊的视觉](test-blurred-vision.md)。
 
 :::image type="content" source="../media/a11y-testing-simulating-blur.msft.png" alt-text="模拟模糊的页面可能会发现辅助功能问题。" lightbox="../media/a11y-testing-simulating-blur.msft.png":::
 
@@ -420,7 +420,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 我们介绍了许多可用于确保捕获产品中的辅助功能问题的工具。  这些工具的范围从自动检查和手动详细检查到不同状态和环境的模拟。  这些工具汇总在 [DevTools 中的辅助功能测试功能中](reference.md)。  自动化工具无法找到产品的所有问题，因为许多辅助功能障碍仅在交互式使用期间出现。
 
-这些工具均无法将正确的一轮产品测试替换为使用辅助技术并遵循检查所有所需测试的计划。 此外，您还可以使用[辅助功能](https://accessibilityinsights.io/docs/en/web/getstarted/assessment/)评估[Insights。](https://accessibilityinsights.io)  您可能需要执行其他检查，例如：
+这些工具均无法将正确的一轮产品测试替换为使用辅助技术并遵循检查所有所需测试的计划。 您还可以使用辅助功能[评估功能](https://accessibilityinsights.io/docs/en/web/getstarted/assessment/)Insights。 [](https://accessibilityinsights.io)  您可能需要执行其他检查，例如：
 
 * 放大时进行测试。
 * 使用屏幕阅读器进行测试。
