@@ -1,18 +1,18 @@
 ---
-title: DevTools 中的新增功能 (Microsoft Edge 94)
 description: 轻松在 Web 上搜索主机错误消息字符串，适用于 Visual Studio Code 的 DevTools 扩展现在拥有最新工具和主题支持，现在使用 Visual Studio Code 主题时会显示断点图标，并且可以使用键盘导航到“更多工具”按钮。
+title: DevTools 中的新增功能 (Microsoft Edge 94)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.date: 09/03/2021
+ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.date: 09/03/2021
-ms.openlocfilehash: d2116eb4408c315c78166996e08b9923e3e5b5c4
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 10a1976d9a8a1355f82e21c5f13658dab8bd590e
+ms.sourcegitcommit: 9920f4826b1d16ee0e4842703844437a6d22e816
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285916"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "12170286"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-94"></a>DevTools 中的新增功能 (Microsoft Edge 94)
 
