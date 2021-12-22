@@ -1,22 +1,22 @@
 ---
-description: Microsoft Edge 隐私白皮书
 title: Microsoft Edge 隐私白皮书
+description: Microsoft Edge 隐私白皮书。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/10/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge， 隐私， 白皮书， 隐私白皮书， 信任， Microsoft edge 隐私， 浏览器隐私， 隐私设置
 ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: 247ae01f16bf1ed1db83d49caa404e6fcc4156f1
-ms.sourcegitcommit: 8201e2e0939e1807986d973246fcf38416f92d7e
+ms.date: 12/10/2021
+ms.openlocfilehash: f0c2c9230f65b1a089ebc53ce3f7b8969c156b4f
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "12269972"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12285328"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书
 

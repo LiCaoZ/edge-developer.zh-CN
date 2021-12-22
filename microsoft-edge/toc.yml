@@ -117,11 +117,11 @@
                       href: devtools-guide-chromium/accessibility/accessibility-tab.md
                 - name: 视觉缺陷
                   items:
-                    - name: 验证页面是否由色盲用户可用
+                    - name: 验证页面是否对色盲者可用
                       href: devtools-guide-chromium/accessibility/test-color-blindness.md
-                    - name: 验证页面是否可借助模糊视图
+                    - name: 验证页面是否在视觉模糊时可用
                       href: devtools-guide-chromium/accessibility/test-blurred-vision.md
-                    - name: 验证页面是否可用，同时关闭 UI 动画
+                    - name: 验证页面是否在关闭 UI 动画时可用
                       href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
                 - name: 在缩小时可用
                   items:

@@ -1,19 +1,19 @@
 ---
-description: CSS 弹性框调试支持、网页上的性能提示显示、问题工具更新等
 title: DevTools 中的新增功能 (Microsoft Edge 90)
+description: CSS 弹性框调试支持、网页上的性能提示显示、问题工具更新等。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 363c7f47f1264c238b88e850c6e7508be4cec4aa
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
+ms.date: 05/04/2021
+ms.openlocfilehash: 1a856dc8dbacb0b20fa51c90c3e2b48f66326d11
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269177"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12287253"
 ---
 <!-- Copyright Jecelyn Yeen
 

@@ -1,25 +1,26 @@
 ---
-description: “更多工具”按钮、开始使用 DevTools 扩展的上下文文档、对控制台中屏幕阅读器的增强支持等。
 title: DevTools 中的新增功能 (Microsoft Edge 92)
+description: “更多工具”按钮、开始使用 DevTools 扩展的上下文文档、对控制台中屏幕阅读器的增强支持等。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/02/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
+ms.localizationpriority: high
 keywords: microsoft edge、web 开发、f12 工具、开发工具
-ms.openlocfilehash: 900201456cc0bba9613e2e51d3b79cc26ef5cbe8
-ms.sourcegitcommit: fd3b79a0570cfefc2a40107b223569210cb2c2d4
-ms.translationtype: MT
+ms.date: 06/02/2021
+ms.openlocfilehash: 5333a7a91b2713489ebe7a3d73487a35a02c0691
+ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "12269387"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "12287218"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-92"></a>DevTools 中的新增功能 (Microsoft Edge 92)
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
 > [!TIP]
-> **Microsoft Build 2021**会议于 5 月 25-27 日召开。  下面是来自 Build 关于 DevTools 最新消息的视频：[Microsoft Edge｜平台现状](https://www.youtube.com/watch?v=sU0WRZ0kkNo) - Microsoft Edge 为开发人员提供了具有吸引力和一致性的平台。  随着旧版浏览器逐步退出支持，Edge 即将成为 Microsoft 在或更高版本中唯一Windows 10浏览器。  加入我们，了解有关 Edge 平台、工具和 Web 应用的最新信息。
+> **Microsoft Build 2021**会议于 5 月 25-27 日召开。  下面是来自 Build 关于 DevTools 最新消息的视频：[Microsoft Edge｜平台现状](https://www.youtube.com/watch?v=sU0WRZ0kkNo) - Microsoft Edge 为开发人员提供了具有吸引力和一致性的平台。  随着旧版浏览器逐步退出支持，Edge 即将成为 Microsoft 在 Windows 10 或更高版本中支持的唯一浏览器。  加入我们，了解有关 Edge 平台、工具和 Web 应用的最新信息。
 
 
 <!-- ====================================================================== -->
@@ -71,11 +72,11 @@ ms.locfileid: "12269387"
 
 例如，当你在**性能**工具中并将鼠标悬停在**网络**工具的选项卡上时，这些改进有助于防止意外关闭**网络**工具。
 
-重新格式化前的选项卡：
+重新格式化之前的选项卡:
 
 :::image type="content" source="../../media/2021/05/hovering-on-tool-tab-before.msft.png" alt-text="重新格式化之前的选项卡" lightbox="../../media/2021/05/hovering-on-tool-tab-before.msft.png":::
 
-重新格式化后的选项卡：
+重新格式化后的选项卡:
 
 :::image type="content" source="../../media/2021/05/hovering-on-tool-tab-after.msft.png" alt-text="重新格式化后的选项卡" lightbox="../../media/2021/05/hovering-on-tool-tab-after.msft.png":::
 
@@ -96,11 +97,11 @@ ms.locfileid: "12269387"
 
 在 Microsoft Edge 版本 92 之前，在**控制台**中，屏幕阅读器等辅助技术未公布自动完成建议或已评估表达式的结果。 已修复此问题。
 
-在 **控制台中**，屏幕阅读器现在宣布当前选择的自动完成建议：
+在**控制台**中，屏幕阅读器现在会播报当前选择的自动完成建议:
 
 :::image type="content" source="../../media/2021/05/screen-reader-support-in-console-autocomplete.msft.png" alt-text="在控制台中，屏幕阅读器现在会播报当前选择的自动完成建议" lightbox="../../media/2021/05/screen-reader-support-in-console-autocomplete.msft.png":::
 
-在 **控制台中**，屏幕阅读器现在宣布计算表达式的结果：
+在**控制台**中，屏幕阅读器现在将播报计算表达式的结果:
 
 :::image type="content" source="../../media/2021/05/screen-reader-support-in-console-evaluated-expression.msft.png" alt-text="在控制台中，屏幕阅读器现在将播报计算表达式的结果" lightbox="../../media/2021/05/screen-reader-support-in-console-evaluated-expression.msft.png":::
 
@@ -198,7 +199,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
    控制台中允许重新声明常量变量
 :::image-end:::
 
-若要了解如何运行单个 REPL 脚本或多行 REPL 脚本，请导航到在控制台 中运行[JavaScript。](../../../console/console-javascript.md)
+若要了解如何运行单个 REPL 脚本或多行 REPL 脚本，请导航到[在控制台中运行JavaScript](../../../console/console-javascript.md)。
 
 要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1076427](https://crbug.com/1076427)。
 
