@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
-ms.date: 05/11/2021
-ms.openlocfilehash: 6cf8bbfce5a50f12bc9924e8570c373eab09da54
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.date: 12/13/2021
+ms.openlocfilehash: 86f74a86e3fd1c32155b0fbd502d5a66834eb5a7
+ms.sourcegitcommit: d50ea51447623ba405a824811e173f4d26d39c2c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286357"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "12289352"
 ---
 <!-- Copyright Kayce Basques
 
@@ -39,9 +39,7 @@ ms.locfileid: "12286357"
 
 DevTools 团队已对 Chromium 进行 170 次更改，以解决 DevTools 中的高影响颜色对比度、键盘和屏幕阅读器问题。  每个生成 Web 的开发人员都应能够使用 DevTools。
 
-:::image type="complex" source="../../images/2019/12/a11y-performance-tool.msft.gif" alt-text="具有键盘导航和屏幕阅读器改进的 DevTools 中的性能工具" lightbox="../../images/2019/12/a11y-performance-tool.msft.gif":::
-   具有 **键盘** 导航和屏幕阅读器改进的 DevTools 中的性能工具
-:::image-end:::
+![具有键盘导航和屏幕阅读器改进的 DevTools 中的性能工具。](../../media/2019/12/a11y-performance-tool.msft.png)
 
 想要了解如何使网页可供所有用户访问？  下载[辅助功能Insights](https://aka.ms/a11yinsights) [Webhint](https://aka.ms/webhint/browser-extension)扩展，Microsoft Edge开始操作。
 
@@ -114,27 +112,27 @@ DevTools 团队还发布了一些 Visual Studio Code，[](https://aka.ms/vscode)
 
 #### <a name="elements-for-microsoft-edge"></a>用于Microsoft Edge
 
-通过添加元素来Visual Studio Code[元素](https://aka.ms/elements4code)扩展，从Microsoft Edge Visual Studio Code元素。
+通过添加元素的 Visual Studio Code 扩展，从[Microsoft Edge Visual Studio Code](https://aka.ms/elements4code)元素工具。
 
 :::image type="complex" source="../../images/2019/12/elements-for-edge.msft.png" alt-text="元素工具Visual Studio Code元素扩展Microsoft Edge元素" lightbox="../../images/2019/12/elements-for-edge.msft.png":::
    元素**工具**Visual Studio Code元素扩展Microsoft Edge元素
 :::image-end:::
 
-有关详细信息，请查看适用于扩展[Microsoft Edge Visual Studio Code元素](../../../../visual-studio-code/elements-for-edge.md)。
+有关详细信息，请查看元素[的扩展Microsoft Edge Visual Studio Code元素](../../../../visual-studio-code/elements-for-edge.md)。
 
 #### <a name="debugger-for-microsoft-edge"></a>调试程序Microsoft Edge
 
-使用[调试器 for Microsoft Edge](https://aka.ms/debugger4code) Visual Studio Code 扩展，直接从 Microsoft Edge 调试Visual Studio Code。
+使用[调试器 for Microsoft Edge](https://aka.ms/debugger4code) Visual Studio Code 扩展，直接从 Microsoft Edge 调试 Visual Studio Code 中运行的 JavaScript。
 
-:::image type="complex" source="../../images/2019/12/vscode-debugger.msft.png" alt-text="Visual Studio Code 中的 Microsoft Edge Extension 调试器" lightbox="../../images/2019/12/vscode-debugger.msft.png":::
-   Visual Studio Code 中的 Microsoft Edge Extension 调试器
+:::image type="complex" source="../../images/2019/12/vscode-debugger.msft.png" alt-text="Microsoft Edge Extension 的调试Visual Studio Code" lightbox="../../images/2019/12/vscode-debugger.msft.png":::
+   Microsoft Edge Extension 的调试Visual Studio Code
 :::image-end:::
 
 有关详细信息，请查看如何从 Microsoft Edge[调试Visual Studio Code。](../../../../visual-studio-code/debugger-for-edge.md)
 
 #### <a name="webhint"></a>webhint
 
-[Webhint](https://aka.ms/webhint4code) Visual Studio Code在编写网页 `webhint` 时用于改进网页！ 此扩展将运行，并基于分析报告工作区文件的 `webhint` 诊断。
+[Webhint](https://aka.ms/webhint4code) Visual Studio Code在编写网页时 `webhint` 用于改进网页！ 此扩展将运行，并基于分析报告工作区文件的 `webhint` 诊断。
 
 :::image type="complex" source="../../images/2019/12/webhint-vscode-extension.msft.png" alt-text="Webhint Visual Studio Code扩展，用于分析 web 中的 .tsx Visual Studio Code" lightbox="../../images/2019/12/webhint-vscode-extension.msft.png":::
    Webhint Visual Studio Code分析 `.tsx` 文件中文件的扩展Visual Studio Code
@@ -150,11 +148,11 @@ DevTools 团队还发布了一些 Visual Studio Code，[](https://aka.ms/vscode)
    Visual Studio Canary、Dev 或 Beta Microsoft Edge启动 Web 应用的选项
 :::image-end:::
 
-[阅读我们的博客文章，了解如何](https://aka.ms/vs/debug-edge)从 Microsoft Edge 调试Visual Studio。
+[阅读我们的博客文章，了解如何从 Microsoft Edge 调试Visual Studio。](https://aka.ms/vs/debug-edge)
 
 ### <a name="tracking-prevention-console-messages"></a>跟踪防护控制台消息
 
-跟踪防护是网站中Microsoft Edge一项功能，可阻止你在访问网站之前被网站跟踪。  默认跟踪防护设置为平衡模式，可阻止第三方跟踪器和已知的恶意跟踪器，从而获得平衡隐私和 Web 兼容性的体验。  为了让你深入了解某些跟踪程序被阻止时网页的兼容性，Microsoft Edge团队在控制台中添加了跟踪程序被阻止时警告消息。 ****
+跟踪防护是网站中Microsoft Edge一项功能，可阻止你在访问网站之前被网站跟踪。  默认跟踪防护设置为平衡模式，可阻止第三方跟踪器和已知的恶意跟踪器，从而获得平衡隐私和 Web 兼容性的体验。  为了让你深入了解阻止某些跟踪程序时网页的兼容性，Microsoft Edge团队在控制台中添加了跟踪程序被阻止时警告消息。 ****
 
 :::image type="complex" source="../../images/2019/12/tracking-prevention.msft.png" alt-text="跟踪防护时控制台中的邮件阻止访问跟踪器的存储" lightbox="../../images/2019/12/tracking-prevention.msft.png":::
    跟踪防护 **时控制台** 中的邮件阻止访问跟踪器的存储
@@ -178,12 +176,12 @@ DevTools 团队还发布了一些 Visual Studio Code，[](https://aka.ms/vscode)
 例如，之前，当使用 重新声明本地变量时， `let` 控制台会出错：
 
 :::image type="complex" source="../../images/2019/12/letbefore.msft.png" alt-text="第 79 Microsoft Edge个控制台显示允许重新声明失败" lightbox="../../images/2019/12/letbefore.msft.png":::
-   **79** Microsoft Edge 79 中的控制台显示允许重新声明失败
+   显示**允许**重新声明失败Microsoft Edge 79 中的控制台
 :::image-end:::
 
 现在，控制台允许重新声明：
 
-:::image type="complex" source="../../images/2019/12/letafter.msft.png" alt-text="80 Microsoft Edge中的控制台显示允许重新声明成功" lightbox="../../images/2019/12/letafter.msft.png":::
+:::image type="complex" source="../../images/2019/12/letafter.msft.png" alt-text="Microsoft Edge 80 中的控制台显示允许重新声明成功" lightbox="../../images/2019/12/letafter.msft.png":::
    Microsoft Edge **** 80 中的控制台显示允许重新声明成功
 :::image-end:::
 
@@ -207,7 +205,7 @@ DevTools 已开始支持 DEBUGG 调试标准，这意味着增加了对在 DevTo
 
 #### <a name="request-initiator-chains-in-the-initiator-panel"></a>发起者面板中的请求发起人链
 
-现在，你能够以嵌套列表查看网络请求的发起方和依赖项。  这可以帮助您了解请求资源的原因，或特定资源活动（如 (脚本）) 活动。
+现在，你能够以嵌套列表查看网络请求的发起方和依赖项。  这可以帮助您了解请求资源的原因，或特定资源活动 (（如脚本) 的原因。
 
 :::image type="complex" source="../../images/2019/12/initiators.msft.png" alt-text="发起者面板中的请求发起人链" lightbox="../../images/2019/12/initiators.msft.png":::
    发起者面板中的请求 **发起人** 链
@@ -242,7 +240,7 @@ Chromium问题[#988253](https://crbug.com/988253)
    网络工具中的新 **路径和** URL 列
 :::image-end:::
 
-若要显示新列，请将鼠标悬停在"**瀑布**表"标题上，右键单击" () 菜单，然后选择"路径"或 **"URL"。** ****
+若要显示新列，请将鼠标悬停在**瀑布**表标题上，右键单击" () 菜单，然后选择"路径"或 **"URL"。** ****
 
 Chromium问题[#993366](https://crbug.com/993366)
 
