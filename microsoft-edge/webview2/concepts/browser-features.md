@@ -1,30 +1,14 @@
 ---
-title： feature differences between Microsoft Edge and WebView2 description： Feature differences between Microsoft Edge and WebView2.
-author： MSEdgeTeam ms.author： msedgedevrel ms.topic： conceptual ms.prod： microsoft-edge ms.technology： webview keywords： IWebView2， IWebView2WebView， WebView2， webview， wpf apps， wpf， edge， ICoreWebView2， ICoreWebView2， browser control， edge html no-loc：
-- "Autofill for Addresses"
-- "Autofill for Passwords"
-- "Autofill for Payments""
-- "Browser Extensions""
-- "Browser Task Manager"
-- "Collections"
-- "Continue-where-I-left-off prompt"
-- "Downloads"
-- "Edge Shopping"
-- "Family Safety"
-- "Favorites"
-- "Hotkeys"
-- "IE Mode"
-- "Immersive Reader"
-- "Intrusive Ads"
-- "Read Aloud"
-- "Smart Screen"
-- "Translate"
-- "Tracking Prevention"
-- "Profile and Identity"
-- "Web Payment API"
-- "Windows Defender Application Guard"
-- " edge:// URLs " ms.date： 09/21/2021
-
+title: Microsoft Edge和 WebView2 之间的功能差异
+description: Microsoft Edge和 WebView2 之间的功能差异
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.topic: conceptual
+ms.prod: microsoft-edge
+ms.technology: webview
+keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]
+ms.date: 09/21/2021
 ---
 # <a name="feature-differences-between-microsoft-edge-and-webview2"></a>Microsoft Edge和 WebView2 之间的功能差异
 

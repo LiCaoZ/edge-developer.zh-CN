@@ -235,7 +235,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 1.  突出显示任何 HTML 元素以显示网页源中订单的覆盖。
 
-:::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::no-loc (源订单查看器) ：：： 在辅助功能窗格中" lightbox="。。/media/experiments-source-order-viewer.msft.png"：：：
+:::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
 
 此实验默认打开。
 
