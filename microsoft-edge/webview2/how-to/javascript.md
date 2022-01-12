@@ -1,29 +1,29 @@
 ---
 title: 在 WebView 中对扩展方案使用 JavaScript
-description: 如何在 WebView2 应用中的复杂方案中使用 JavaScript。
+description: 了解如何在 WebView2 应用中的复杂方案中使用 JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.date: 1/5/2022
+ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.date: 05/06/2021
-ms.openlocfilehash: c8e350941112a06b694c0112acf6256f87e608bc
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 5c63c110c76f88d34b54edcde2d69ddab75adef5
+ms.sourcegitcommit: 44a533400bc5562a14d3c34413421c515b3936a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286189"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "12293015"
 ---
 # <a name="use-javascript-in-webview-for-extended-scenarios"></a>在 WebView 中对扩展方案使用 JavaScript
 
-使用 WebView2 控件中的 JavaScript，可以自定义本机应用以满足你的要求。  本文探讨如何在 WebView2 中使用 JavaScript，并回顾如何使用高级 WebView2 特性和功能进行开发。
+使用 WebView2 控件中的 JavaScript，可以自定义本机应用以满足你的要求。 本文探讨如何在 WebView2 中使用 JavaScript，并回顾如何使用高级 WebView2 特性和功能进行开发。
 
 
 <!-- ====================================================================== -->
 ## <a name="before-you-begin"></a>在开始之前
 
-本文假定您已有一个工作项目。  如果你没有项目，并且想要继续，请参阅 [WebView2 入门指南](../index.md#get-started)。
+本文假定您已有一个工作项目。 如果你没有项目，并且想要继续，请参阅 [WebView2 入门指南](../index.md#get-started)。
 
 
 <!-- ====================================================================== -->
@@ -36,6 +36,28 @@ ms.locfileid: "12286189"
 | [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | 在 WebView 控件中运行 JavaScript。 有关详细信息，请导航到入门教程。 |
 | [OnDocumentCreatedAsync](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated) | 创建文档对象模型或 DOM (时) 运行。 |
 
+
+<!-- ====================================================================== -->
+## <a name="scenario-executescript-json-encoded-results"></a>应用场景：ExecuteScript JSON 编码的结果
+
+
+由于 的结果为 JSON 编码，因此，如果 JavaScript 的求值结果是字符串，您将收到 JSON 编码的字符串，而不是字符串 `ExecuteScriptAsync` 的值。 例如，以下脚本生成一个具有以下值的字符串，包括开头和结尾的引号以及转义斜杠：
+
+ * 脚本： ```var result = await webView22.CoreWebView2.ExecuteScriptAsync(@"'example'");``` 
+ * 结果： ```"\"example\"";```
+
+该脚本返回一个 `ExecuteScript` 字符串，该字符串由 JSON 编码。 如果从脚本调用 ，则结果将双双编码为 JSON 字符串，其值为 `JSON.stringify` JSON 字符串。
+
+只有直接位于结果中的属性包含在 JSON 编码的对象中;继承的属性不包括在 JSON 编码的对象中。 大多数 DOM 对象继承所有属性，因此需要将其值显式复制到另一个对象中以返回。 例如：
+
+脚本              | 结果
+---                 | ---
+`performance.memory`  | `{}`
+`(() => { const {totalJSHeapSize, usedJSHeapSize} = performance.memory; return {totalJSHeapSize, usedJSHeapSize}; })();` |  `{"totalJSHeapSize":4434368,"usedJSHeapSize":2832912}`
+
+当我们返回时，在结果中看不到其任何属性， `performance.memory` 因为所有属性都是继承的。 如果改为将特定属性值复制到自己的新对象中以返回，则结果中会 `performance.memory` 显示这些属性。
+
+通过该脚本执行 `ExecuteScriptAsync` 脚本时，在全局上下文中运行。 让脚本使用匿名函数，这样你定义的任何变量就不会使全局上下文化。 例如，如果多次运行脚本，则后续运行该脚本时将引发异常，因为是在首次运行脚本 `const example = 10;` `example` 时定义的。 如果您改为运行脚本 `(() => { const example = 10; })();` ， `example` 则变量将定义在匿名函数的上下文中。 这样一来，它不会使全局上下文受到任何影响，并且可以多次运行。
 
 <!-- ====================================================================== -->
 ## <a name="scenario-running-a-dedicated-script-file"></a>方案：运行专用脚本文件
@@ -100,7 +122,7 @@ ms.locfileid: "12286189"
 <!-- ====================================================================== -->
 ## <a name="scenario-removing-the-context-menu"></a>方案：删除上下文菜单
 
-在此部分中，从 WebView2 控件 (右键单击菜单) 默认上下文菜单。
+在此部分中，从 WebView2 控件中删除 (单击菜单) 菜单。
 
 若要开始，请浏览右键单击菜单的当前功能：
 

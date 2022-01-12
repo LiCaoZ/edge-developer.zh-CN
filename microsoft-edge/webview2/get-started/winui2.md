@@ -1,5 +1,5 @@
 ---
-title: 'WinUI 2 应用中的 WebView2 入门 (公共预览) '
+title: '使用 WinUI 2 中的 WebView2 (UWP) 应用 (公共预览) '
 description: 适用于 WinUI 2 应用的 WebView2 入门指南。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,16 +8,16 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2、webview2、WebView、webview、winui 应用、winui、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
 ms.date: 11/05/2021
-ms.openlocfilehash: 333ea2acee4280cc3875aa98bdbb8b7e657c04d7
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 0a39c599e66051576693c341d2811f336a3ab5d5
+ms.sourcegitcommit: 44a533400bc5562a14d3c34413421c515b3936a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286742"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "12293050"
 ---
-# <a name="get-started-with-webview2-in-winui-2-apps-public-preview"></a>WinUI 2 应用中的 WebView2 入门 (公共预览) 
+# <a name="get-started-with-webview2-in-winui-2-uwp-apps-public-preview"></a>使用 WinUI 2 中的 WebView2 (UWP) 应用 (公共预览) 
 
-本文将开始在 WinUI 2 中创建第一个 WebView2 应用，并了解 WebView2 的主要功能。 有关单个 WebView2 API 的信息，请导航到["Microsoft Edge WebView2 API 参考"，](../webview2-api-reference.md)然后选择 WinRT 引用链接。
+本文将开始在 WinUI 2 和 UWP () 创建第一个 WebView2 应用，并了解 WebView2 的主要功能。 有关单个 WebView2 API 的信息，请参阅 Microsoft Edge [WebView2 API 参考](../webview2-api-reference.md)，然后选择 WinRT 引用链接。 请注意，WinUI2 仅支持 UWP。
 
 > [!NOTE]
 > [WinUI 2 程序包](https://www.nuget.org/packages/Microsoft.UI.Xaml/2.8.0-prerelease.210927001)依赖预发布 WebView2 程序包。 为了完全实现 API 兼容性，请使用预览浏览器通道作为运行时，如预览版的 Beta、Dev 或 Canary Microsoft Edge。
@@ -84,13 +84,13 @@ ms.locfileid: "12286742"
 
 1.  在 **"Project**名称"文本框中，输入项目名称，如 `UWPSampleProject` 。
 
-    :::image type="complex" source="media/winui2-getting-started-config-new-project.png" alt-text="&quot;配置新项目&quot;对话框将显示&quot;空白应用&quot;和&quot;通用 (文本框Windows) 。" lightbox="media/winui2-getting-started-config-new-project.png":::
-       "配置新项目"对话框将显示"空白应用"和"通用 (文本框Windows) 。 显示的文本框包括项目名称、位置、解决方案和解决方案名称。
+    :::image type="complex" source="media/winui2-getting-started-config-new-project.png" alt-text="&quot;配置新项目&quot;对话框显示&quot;空白应用&quot;和&quot;通用 (文本框Windows) 。" lightbox="media/winui2-getting-started-config-new-project.png":::
+       "配置新项目"对话框显示"空白应用"和"通用 (文本框Windows) 。 显示的文本框包括项目名称、位置、解决方案和解决方案名称。
     :::image-end:::
 
 1.  单击“创建”****。  将显示 **"新建通用Windows平台Project**对话框。
 
-1.  单击“确定”****。  如果**设置**几个步骤，则"开始"窗口可能会打开。
+1.  单击“确定”****。  如果**设置**几个步骤，则"设置"窗口可能会打开。
 
 1.  在"开发人员**模式"部分**，单击"**打开"。**  " **使用开发人员功能** "对话框将打开，以确认打开开发人员模式。
 
@@ -159,10 +159,10 @@ ms.locfileid: "12286742"
        网格在调试期间短暂显示。
     :::image-end:::
 
-1.  片刻之后，应用窗口在 WebUI 2 必应 WebView2 控件中显示网站。
+1.  片刻之后，应用窗口在 WebUI 必应 WebUI 2 的 WebView2 控件中显示网站。
 
     :::image type="complex" source="media/winui2-getting-started-webview2-with-content.png" alt-text="示例应用显示必应网站。" lightbox="media/winui2-getting-started-webview2-with-content.png":::
-       包含 WebView2 控件的示例应用将显示必应 http://www.bing.com 网站。
+       具有 WebView2 控件的示例应用将显示必应 http://www.bing.com 网站。
     :::image-end:::
 
 1.  在Visual Studio中，单击 **"调试**  >  **""停止调试**"以关闭应用窗口。

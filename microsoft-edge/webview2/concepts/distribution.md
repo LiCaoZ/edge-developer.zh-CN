@@ -1,19 +1,19 @@
 ---
 title: 分发 WebView2 应用和 WebView2 运行时
-description: 使用 WebView2 发布应用时Microsoft Edge选项。
+description: 使用 WebView2 发布应用时Microsoft Edge选项
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 12/30/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.date: 08/03/2021
-ms.openlocfilehash: c65acdb063fff4681045547018c6fc03bf41ee91
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: fff148bafd4ad9d860b71f858fa802deb0738287
+ms.sourcegitcommit: 44a533400bc5562a14d3c34413421c515b3936a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286329"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "12293043"
 ---
 # <a name="distribute-a-webview2-app-and-the-webview2-runtime"></a>分发 WebView2 应用和 WebView2 运行时
 
@@ -25,7 +25,7 @@ WebView2 应用依赖于客户端计算机上的 WebView2 运行时。  分发 W
 
 ### <a name="the-webview2-runtime"></a>WebView2 运行时
 
-WebView2 运行时是一个可再发行组件运行时，可用作 WebView2 __ (或) Web 平台的基础组件。  此概念类似于 Visual C++/.NET 应用的 .NET 运行时。  WebView2 运行时包含经过Microsoft Edge修改的二进制文件，这些二进制文件针对 WebView2 应用进行了微调和测试。  安装 WebView2 运行时后，它不会显示为用户可见的浏览器应用。  例如，用户没有浏览器桌面快捷方式或"开始"菜单中 **的条目** 。
+WebView2 运行时是一个可再发行运行时，并充当 WebView2 __ (或) Web 平台的基础组件。  此概念类似于 Visual C++/.NET 应用的 .NET 运行时。  WebView2 运行时包含经过Microsoft Edge修改的二进制文件，这些二进制文件针对 WebView2 应用进行了微调和测试。  安装 WebView2 运行时后，它不会显示为用户可见的浏览器应用。  例如，用户没有浏览器桌面快捷方式或"开始"菜单中 **的条目** 。
 
 有两种不同的方法将 WebView2 运行时分发和更新到客户端计算机：常青分发模式和固定版本分发模式。
 
@@ -57,7 +57,7 @@ WebView2 运行时是一个可再发行组件运行时，可用作 WebView2 __ (
 <!-- ====================================================================== -->
 ## <a name="understanding-the-options-at-the-runtime-download-page"></a>了解运行时下载页上的选项
 
-**WebView2**页面的"下载[WebView2](https://developer.microsoft.com/microsoft-edge/webview2#download-section)运行时Microsoft Edge提供了几种用于将 WebView2 运行时分发到客户端计算机的选项。  了解此页的选项提供了一个很好的介绍，可帮助确定要使用哪种方法。
+WebView2 页面的"下载[WebView2](https://developer.microsoft.com/microsoft-edge/webview2#download-section)运行时 **"Microsoft Edge提供了**几种用于将 WebView2 运行时分发到客户端计算机的选项。  了解此页的选项提供了一个很好的介绍，可帮助确定要使用哪种方法。
 
 :::image type="complex" source="../media/runtime-distrib-options.png" alt-text="用于分发和更新 WebView2 运行时的选项" lightbox="../media/runtime-distrib-options.png":::
     用于分发和更新 WebView2 运行时的选项
@@ -83,6 +83,10 @@ WebView2 运行时是一个可再发行组件运行时，可用作 WebView2 __ (
 
 如果你想要使用固定版本分发模式，可以跳过接下来的几个部分并导航到有关固定版本运行时分发 [模式的详细信息](#details-about-the-fixed-version-runtime-distribution-mode)。
 
+### <a name="servicing-the-webview2-runtime-through-windows-server-update-services-wsus"></a>通过 WSUS Windows Server Update Services (WebView2 运行时) 
+
+请参阅管理[WebView2](enterprise.md#windows-server-update-services-wsus) Windows Server Update Services (一) WSUS 应用程序部分。
+
 ### <a name="runtime-or-browser-support-during-development-or-production"></a>开发或生产期间运行时或浏览器支持
 
 在开发和测试期间，WebView2 应用可以使用以下任一选项作为支持 Web 平台：
@@ -91,13 +95,13 @@ WebView2 运行时是一个可再发行组件运行时，可用作 WebView2 __ (
 
 WebView2 应用的生产版本只能将 WebView2 运行时用作支持 Web 平台，Microsoft Edge。
 
-#### <a name="microsoft-edge-stable-channel-isnt-supported-for-webview2"></a>Microsoft Edge Stable 渠道不支持 WebView2
+#### <a name="microsoft-edge-stable-channel-isnt-supported-for-webview2"></a>Microsoft Edge WebView2 不支持 Stable 渠道
 
 不允许 WebView2 应用将稳定渠道Microsoft Edge Web 平台。  此限制可防止 WebView2 应用的生产版本依赖浏览器。  WebView2 应用在生产期间无法依赖浏览器，原因如下。
 
-*   Microsoft Edge用户设备上均存在此限制。  企业和教育中的许多设备与 Windows 更新断开连接，或者不由 Microsoft 直接管理。  此类设备可能尚未Microsoft Edge安装。  要求 WebView2 应用的生产版本使用 WebView2 运行时Microsoft Edge可以避免使Microsoft Edge WebView2 应用的先决条件。
+*   Microsoft Edge用户设备上均存在此限制。  企业和教育中的许多设备与 Windows 更新断开连接，或者不是由 Microsoft 直接管理。  此类设备可能尚未Microsoft Edge安装。  要求 WebView2 应用的生产版本使用 WebView2 运行时，而不是Microsoft Edge避免使Microsoft Edge WebView2 应用的先决条件。
 
-*   浏览器和应用具有不同的用例。  如果 WebView2 应用要求Microsoft Edge客户端上存在，这可能会导致 WebView2 应用出现意外的副作用。  例如，IT 管理员可以阻止从特定版本更新浏览器，以保持浏览器与内部网站兼容。  要求 WebView2 应用的生产版本使用 WebView2 运行时（而不是浏览器）可使 WebView2 应用保持常青，即使客户端管理员阻止了浏览器更新。
+*   浏览器和应用具有不同的用例。  如果 WebView2 应用要求在客户端Microsoft Edge，则可能对 WebView2 应用产生意外的负面影响。  例如，IT 管理员可以阻止从特定版本更新浏览器，以保持浏览器与内部网站兼容。  要求 WebView2 应用的生产版本使用 WebView2 运行时（而不是浏览器）可使 WebView2 应用保持常青，即使客户端管理员阻止了浏览器更新。
 
 *   与浏览器相反，WebView2 运行时针对应用方案进行开发和测试，在某些情况下，WebView2 运行时可能包含浏览器中尚未提供的 Bug 修复。
 
@@ -123,7 +127,7 @@ Evergreen WebView2 运行时将作为操作系统的一Windows 11一部分。 �
 
 设备上的所有 Evergreen 应用只需安装一次 Evergreen WebView2 运行时。  下载 [WebView2 运行时中](https://developer.microsoft.com/microsoft-edge/webview2#download-section) 提供了一些工具，可帮助你部署 Evergreen Runtime。
 
-*   对于联机客户端 _：WebView2 运行时引导_ 程序是一个 (大约 2 MB) 安装程序。  WebView2 运行时引导程序从与用户设备体系结构匹配的 Microsoft 服务器下载并安装 Evergreen Runtime。
+*   对于联机客户端 _：WebView2_ 运行时引导程序是一个 (大约 2 MB) 安装程序。  WebView2 运行时引导程序从与用户设备体系结构匹配的 Microsoft 服务器下载并安装 Evergreen Runtime。
     *   在 WebView2 应用的安装部分，链接到引导程序。  使用链接以编程方式下载引导程序;选择上面的 **下载页面上** 的"获取链接"按钮。
     *   或者，下载引导程序，然后使用 WebView2 应用打包它。
 
@@ -155,7 +159,7 @@ Evergreen WebView2 运行时将作为操作系统的一Windows 11一部分。 �
 
     *   或者，运行 [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) 并评估 `versionInfo` 是否是 `NULL` 。  `NULL` 指示未安装运行时。
 
-1.  如果未安装运行时，在应用设置过程中，使用 (下载页面上的"获取链接"按钮中的链接) **** 以编程方式下载 WebView2 运行时引导程序。
+1.  如果未安装运行时，在应用设置过程中，使用从下载页面 (获取链接按钮中的链接****) 以编程方式下载 WebView2 运行时引导程序。
 
 1.  通过发出命令 从提升的进程或命令提示符调用 WebView2 运行时引导程序 `MicrosoftEdgeWebview2Setup.exe /silent /install` 。
 
@@ -219,7 +223,7 @@ Microsoft Edge Beta (Dev 和 Canary) 预览频道，可快速了解 WebView2 运
 *   IT 管理员可以关闭 WebView2 运行时的更新，因为管理员可以控制其设备的更新。
 *   脱机的客户端不会收到更新的 WebView2 运行时。
 
-WebView2 运行时Microsoft Edge策略是分开的。  即使 IT 管理员已禁用 Microsoft _Edge_的自动更新，WebView2 __ 运行时仍将自动更新，除非管理员关闭运行时更新。  如果管理员禁用更新 Microsoft Edge (这有点) ，这不会影响客户端计算机上可用的 WebView2 API。
+WebView2 运行时Microsoft Edge策略是分开的。  即使 IT 管理员已禁用 Microsoft _Edge_的自动更新，WebView2 __ 运行时仍将自动更新，除非管理员关闭运行时更新。  如果管理员禁用更新Microsoft Edge (更新，这有点) ，这不会影响客户端计算机上可用的 WebView2 API。
 
 有关详细信息，请导航到功能[检测以测试安装的运行时是否支持最近添加的 API。](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis)
 
@@ -249,9 +253,9 @@ WebView2 运行时Microsoft Edge策略是分开的。  即使 IT 管理员已禁
 
     *   对于 .NET，必须在 WebView2 属性生效 `Source` 之前指定环境。  对于 .NET，可以使用以下任一方法来指定环境：
 
-        *   设置 (`CreationProperties` [上的 WPF](/dotnet/api/microsoft.web.webview2.wpf.webview2.creationproperties) / [WinForms](/dotnet/api/microsoft.web.webview2.winforms.webview2)) 属性 `WebView2` 。  使用 `BrowserExecutableFolder` `CoreWebView2CreationProperties` [WPF](/dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties) / [WinForms](/dotnet/api/microsoft.web.webview2.winforms) (中的成员) 指示固定版本二进制文件的路径。
+        *   设置 (`CreationProperties` [上的 WPF](/dotnet/api/microsoft.web.webview2.wpf.webview2.creationproperties) / [WinForms](/dotnet/api/microsoft.web.webview2.winforms.webview2)) 属性 `WebView2` 。  使用 `BrowserExecutableFolder` `CoreWebView2CreationProperties` [WPF](/dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties) / [WinForms](/dotnet/api/microsoft.web.webview2.winforms) (中的 成员) 指示固定版本二进制文件的路径。
 
-        *   或者，使用 `EnsureCoreWebView2Async` ([WPF](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async) / [WinForms](/dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async)) 指定环境。  使用 `browserExecutableFolder` [CoreWebView2Environment.CreateAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync) 中的 参数指示固定版本二进制文件的路径。
+        *   或者， (`EnsureCoreWebView2Async` [WPF](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async) / [WinForms) ](/dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async)指定环境。  使用 `browserExecutableFolder` [CoreWebView2Environment.CreateAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync) 中的 参数指示固定版本二进制文件的路径。
 
 1.  将固定版本二进制文件打包并随你的应用一起提供。  根据情况更新二进制文件。
 
@@ -280,7 +284,8 @@ WebView2 运行时Microsoft Edge策略是分开的。  即使 IT 管理员已禁
             PlayReady 的权限
         :::image-end:::
 
-### <a name="files-to-ship-with-the-app"></a>要随应用一起提供的文件
+<!-- ====================================================================== -->
+## <a name="files-to-ship-with-the-app"></a>要随应用一起提供的文件
 
 `WebView2Loader`代码需要随应用一起提供。  这可以通过静态链接到应用 [二](../how-to/static.md)进制文件，或者包含与应用体系结构相匹配的 实现 `WebView2Loader.lib` `WebView2Loader.dll` 。
 
