@@ -11,12 +11,12 @@ no-loc:
 - Cast
 - Google Cast
 ms.date: 12/10/2021
-ms.openlocfilehash: f0c2c9230f65b1a089ebc53ce3f7b8969c156b4f
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 609a6b7314593832f9d9df322e2d43f0ef557761
+ms.sourcegitcommit: 44a533400bc5562a14d3c34413421c515b3936a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285328"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "12292982"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书
 
@@ -255,23 +255,25 @@ Web 筛选可防止家庭组中的孩子转到家庭组织者阻止的成熟网�
 <!-- ====================================================================== -->
 ## <a name="geolocation"></a>地理位置
 
-Microsoft Edge 支持 [地理位置 API](https://w3.org/TR/geolocation-api)，这允许网站在你的允许下访问你的位置信息。  网站可能会询问你的位置，例如，在尝试查找离你最近的咖啡店时。  在允许网站访问你的位置之前，Microsoft Edge 会始终征求你的许可。  若要管理权限或始终阻止网站访问你所在的位置，请导航到 `edge://settings/content/location`。
+浏览 Web 时，网站可能会从 Microsoft Edge 请求设备的位置。 有关你的设备位置的数据（可能是精确数据，也可能是模糊数据）。 例如，请求一个精确的位置来提供特定位置的驾驶路线。 可能需要一个不精确的位置来提供与常规位置相关的搜索结果、新闻和天气。
 
-在地址栏右侧，Microsoft Edge 指示什么情况下共享/不共享你的位置。
+Microsoft Edge支持[地理位置 API](https://w3.org/TR/geolocation-api)，允许网站在你许可的情况下访问你的精确位置。 在允许网站访问你的位置之前，Microsoft Edge 会始终征求你的许可。 若要管理特定于站点的权限或始终阻止站点访问精确位置，请转到 `edge://settings/content/location`。
+
+Microsoft Edge 指示何时在地址栏右侧共享精确位置。 
 
 :::image type="complex" source="./media/geolocation2.png" alt-text="位置" lightbox="./media/geolocation2.png":::
    位置
 :::image-end:::
 
-如果允许与站点共享位置，Microsoft Edge将本地网络信息发送到 Microsoft 位置服务。 信息包括你的 IP 地址和附近的 Wi-Fi 接入点。 Microsoft 服务使用此信息来估计地理位置坐标。 地理位置估计与你同意与其共享位置的网站共享。
+如果允许与站点共享精确位置，Microsoft Edge 将本地网络信息发送到 Microsoft 定位服务。 此信息包括 IP 地址和邻近 Wi-Fi 接入点。 Microsoft 位置服务使用此信息估计地理位置坐标。 地理位置估计值与你同意共享精确位置的站点共享。
 
-可以允许Microsoft Edge在Windows 10及更高版本上为请求站点提供更精确的位置。 打开 **"设置** > **隐私** > **位置**"，然后打开"**允许访问此设备上的位置**"，**并允许应用访问你的位置**设置。
+可以允许 Microsoft Edge 在Windows 10及 Windows 11 上为请求站点提供更精确的位置。 打开 **"设置** > **隐私** > **位置**"，然后打开"**允许访问此设备上的位置**"，**并允许应用访问你的位置**设置。
 
- 如果禁用“**允许访问此设备上的位置**”和“**允许应用访问你的位置**”设置，Microsoft Edge 将提供指向请求网站的近似位置。 仅当之前允许共享你的位置时，才与请求网站共享信息。 有关 Windows 位置设置的详细信息，请导航到 [Windows 位置服务和隐私](https://support.microsoft.com/help/4468240)。
+如果关闭 **“允许访问此设备上的位置”** 和 **“允许应用访问你的位置”** 设置，某些站点可以使用 IP 地址等信息来确定设备不精确的位置。 有关 Windows 位置设置的详细信息，请导航到 [Windows 位置服务和隐私](https://support.microsoft.com/help/4468240)。
 
-Microsoft Edge在向位置服务发出请求时生成新的随机 ID。  Microsoft Edge位置服务不存储地理位置坐标。
+Microsoft Edge 不存储地理位置坐标。 向 Microsoft 定位服务请求时，Microsoft Edge 每个请求生成一个新的随机 ID。
 
-**InPrivate** 浏览使用启动 **InPrivate** 会话的配置文件的位置权限设置。 在向站点授予你的位置之前，**来宾**模式始终会要求你提供权限。
+**InPrivate** 浏览使用启动 **InPrivate** 会话的配置文件的精确位置权限设置。 在向站点授予你的精确位置之前，**来宾**模式始终会要求你提供权限。
 
 
 <!-- ====================================================================== -->
