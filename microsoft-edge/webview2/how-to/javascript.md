@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: 5c63c110c76f88d34b54edcde2d69ddab75adef5
-ms.sourcegitcommit: 44a533400bc5562a14d3c34413421c515b3936a6
+ms.openlocfilehash: f196afc78a2e3c02dbfcf05cf5b718c8a3bebb26
+ms.sourcegitcommit: f8423351b06b5c7bb0bb8e90cc38572242e13ac0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "12293015"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "12293843"
 ---
 # <a name="use-javascript-in-webview-for-extended-scenarios"></a>在 WebView 中对扩展方案使用 JavaScript
 
@@ -41,10 +41,12 @@ ms.locfileid: "12293015"
 ## <a name="scenario-executescript-json-encoded-results"></a>应用场景：ExecuteScript JSON 编码的结果
 
 
-由于 的结果为 JSON 编码，因此，如果 JavaScript 的求值结果是字符串，您将收到 JSON 编码的字符串，而不是字符串 `ExecuteScriptAsync` 的值。 例如，以下脚本生成一个具有以下值的字符串，包括开头和结尾的引号以及转义斜杠：
+由于 的结果为 JSON 编码，因此，如果 JavaScript 的求值结果是字符串，您将收到 JSON 编码的字符串，而不是字符串 `ExecuteScriptAsync` 的值。 例如，以下代码执行生成字符串的脚本。  生成的字符串包括开头的引号、结尾的引号和转义斜杠：
 
- * 脚本： ```var result = await webView22.CoreWebView2.ExecuteScriptAsync(@"'example'");``` 
- * 结果： ```"\"example\"";```
+```csharp
+string result = await coreWebView2.ExecuteScriptAsync(@"'example'");
+Debug.Assert(result == "\"example\"");
+```
 
 该脚本返回一个 `ExecuteScript` 字符串，该字符串由 JSON 编码。 如果从脚本调用 ，则结果将双双编码为 JSON 字符串，其值为 `JSON.stringify` JSON 字符串。
 
@@ -65,7 +67,7 @@ ms.locfileid: "12293015"
 在此部分中，你将从 WebView2 控件访问专用的 JavaScript 文件。
 
 > [!NOTE]
-> 尽管内联编写 JavaScript 对于快速 JavaScript 命令可能非常高效，但会丢失 JavaScript 颜色主题和行格式，这使得在 JavaScript 中编写大量代码Visual Studio。
+> 虽然内联编写 JavaScript 对于快速 JavaScript 命令可能非常高效，但会丢失 JavaScript 颜色主题和行格式，这使得在 JavaScript 中编写大量代码Visual Studio。
 
 若要解决此问题，请用代码创建单独的 JavaScript 文件，然后使用 参数传递对该文件 `ExecuteScriptAsync` 的引用。
 
@@ -122,7 +124,7 @@ ms.locfileid: "12293015"
 <!-- ====================================================================== -->
 ## <a name="scenario-removing-the-context-menu"></a>方案：删除上下文菜单
 
-在此部分中，从 WebView2 控件中删除 (单击菜单) 菜单。
+在此部分中，从 WebView2 控件 (右键单击菜单) 默认上下文菜单。
 
 若要开始，请浏览右键单击菜单的当前功能：
 
