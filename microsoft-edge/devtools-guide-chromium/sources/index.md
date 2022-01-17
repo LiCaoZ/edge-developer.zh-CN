@@ -9,7 +9,7 @@ keywords: microsoft edge、web 开发、f12 工具、开发工具
 ms.date: 04/20/2021
 ms.openlocfilehash: eb2b4638366f2ae66d629b29aa6d0e33b621dc98
 ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/21/2021
 ms.locfileid: "12285755"
@@ -185,7 +185,7 @@ document.head.appendChild(script);
 
 #### <a name="see-also"></a>另请参阅
 
-*   [在任何网页上运行 JavaScript 代码段](../javascript/snippets.md)
+*   [在任何网页上运行 JavaScript 的代码片段](../javascript/snippets.md)
 
 ### <a name="using-the-command-menu-to-open-files"></a>使用命令菜单打开文件
 
@@ -490,7 +490,7 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
 以下文章涵盖调试 **器** 窗格和断点：
 
-*   [JavaScript 调试](../javascript/index.md) 入门 - 使用 (简单的项目) 屏幕捕获的教程。
+*   [调试 JavaScript 入门](../javascript/index.md) - 使用现有简单项目的教程（通过屏幕捕获）。
 
 *   [使用调试器功能](../javascript/reference.md) - 如何使用调试器设置断点、逐步调试代码、查看和修改变量值、观看 JavaScript 表达式以及查看调用堆栈。
 

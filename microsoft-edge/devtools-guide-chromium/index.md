@@ -1,6 +1,6 @@
 ---
 title: Microsoft Edge 开发人员工具概述
-description: 了解开发人员Microsoft Edge工具。
+description: 了解 Microsoft Edge 开发人员工具。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -10,7 +10,7 @@ keywords: microsoft edge， Web 开发， f12 工具， 开发工具， Microsof
 ms.date: 09/23/2021
 ms.openlocfilehash: 111335454c53827f47c85113778a69f5f0a4c615
 ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/21/2021
 ms.locfileid: "12284810"

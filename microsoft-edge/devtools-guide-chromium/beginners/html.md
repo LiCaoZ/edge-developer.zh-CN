@@ -1,6 +1,6 @@
 ---
 title: 面向初学者的开发工具：HTML 和 DOM 入门
-description: 入门 HTML 和 DOM 一起显示。
+description: HTML 和 DOM 入门。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -9,7 +9,7 @@ keywords: microsoft edge, web 开发, f12 工具, 开发工具，面向初学者
 ms.date: 08/06/2021
 ms.openlocfilehash: 80e8e07815cf3a57d593dbd26dc6009f8f059472
 ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/21/2021
 ms.locfileid: "12284628"
