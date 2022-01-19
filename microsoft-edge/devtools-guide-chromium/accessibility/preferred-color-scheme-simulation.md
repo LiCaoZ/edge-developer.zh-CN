@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 08/03/2021
-ms.openlocfilehash: 7bbff99b042ba7aaac8212983a6868099aed0512
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: b23b1ca1b986f22f7c5c97299c99ab4e07e8df41
+ms.sourcegitcommit: 94d7608a85a1a99a67f82cef9a0d59065cc5b337
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286070"
+ms.lasthandoff: 01/18/2022
+ms.locfileid: "12303345"
 ---
 # <a name="emulate-dark-or-light-schemes-in-the-rendered-page"></a>模拟呈现页面中的深色或浅色方案
 
@@ -30,7 +30,9 @@ ms.locfileid: "12286070"
 <!-- ====================================================================== -->
 ## <a name="emulating-dark-or-light-mode-using-the-rendering-tool"></a>使用呈现工具模拟深色或浅色模式
 
-1.  在 DevTools 中，打开 **呈现** 工具。  为此，您可能需要选择主工具栏上的"更多工具****" (+) 图标，然后选择"呈现 **"。**
+1.  在 DevTools 中，打开呈现工具。  为此，请单击主工具栏或****" (+) "图标的"更多工具"，然后选择"呈现 **"。**
+    
+    或者，如果呈现工具已打开，但已被隐藏，请单击工具栏上的"**** 更多选项卡 (>>) "图标，然后选择"呈现 **"。**
 
 1.  在模拟 **CSS 媒体功能 prefers-color-scheme** 下拉列表中，选择 **prefers-color-scheme： dark** or **prefers-color-scheme： light**。
 
@@ -48,7 +50,7 @@ ms.locfileid: "12286070"
 <!-- ====================================================================== -->
 ## <a name="emulating-dark-or-light-mode-using-the-command-menu"></a>使用命令菜单模拟深色或浅色模式
 
-1.  当 DevTools 具有焦点时****，通过选择 (Windows/Linux) 或 (macOS) `Ctrl` + `Shift` + `P` `Command` + `Shift` + `P` 打开命令) 。
+1.  当 DevTools 具有焦点时****，通过选择 (Windows/Linux) 或 (macOS) `Ctrl` + `Shift` + `P` `Command` + `Shift` + `P` 打开命令菜单。
 
 1.  键入"dark"、"light"或"emulate"。  然后选择呈现 **：模拟 CSS 首选配色方案：深色** 或呈现 **：模拟 CSS 首选配色方案：浅**色，然后选择 **Enter**。
 
