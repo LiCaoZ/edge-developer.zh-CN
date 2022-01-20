@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 1/20/2022
-ms.openlocfilehash: 0730b25914cad55e5eb81f6443ee6cfb35ee25dd
-ms.sourcegitcommit: f3a81f0fe8edab8bef9c027efb7195c65445e109
+ms.openlocfilehash: 0df7719b1654edd79c401d4ee5a966b84f3536c1
+ms.sourcegitcommit: c85f78b0372ea32fcadfc1d48e94a98f5bc58b4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/20/2022
-ms.locfileid: "12311179"
+ms.locfileid: "12311213"
 ---
 # <a name="distribute-a-webview2-app-and-the-webview2-runtime"></a>分发 WebView2 应用和 WebView2 运行时
 
@@ -60,15 +60,15 @@ WebView2 运行时是一个可再发行组件运行时，可用作 WebView2 __ (
 <!-- ====================================================================== -->
 ## <a name="understanding-the-options-at-the-runtime-download-page"></a>了解运行时下载页上的选项
 
-[WebView2 页面的](https://developer.microsoft.com/microsoft-edge/webview2#download-section)"下载**WebView2**运行时Microsoft Edge提供了几种用于将 WebView2 运行时分发到客户端计算机的选项。  了解此页的选项提供了一个很好的介绍，可帮助确定要使用哪种方法。
+**WebView2**页面的"下载[WebView2](https://developer.microsoft.com/microsoft-edge/webview2#download-section)运行时"Microsoft Edge提供了几种用于将 WebView2 运行时分发到客户端计算机的选项。  了解此页的选项提供了一个很好的介绍，可帮助确定要使用哪种方法。
 
 :::image type="content" source="../media/runtime-distrib-options.png" alt-text="用于分发和更新 WebView2 运行时的选项。" lightbox="../media/runtime-distrib-options.png":::
 
 * 页面 **的 Evergreen Bootstrapper** 部分为联机用户提供在客户端计算机上运行的一个小的 Evergreen Runtime 引导程序。  引导程序在客户端上下载并安装相应的 WebView2 Evergreen Runtime。  可以通过几种不同的方式使用引导程序：
 
-  * 指向引导程序的链接，使用从"获取链接"按钮 **获取** 的链接。  你的应用使用此链接以编程方式将引导程序下载到客户端并调用引导程序。  此方法无需将引导程序打包到你的应用中。  此方法依赖于 Microsoft 的 内容分发网络 (CDN) ，以获取引导程序。
+  * 指向引导程序的链接，使用从"获取链接"按钮 **获取** 的链接。  你的应用使用此链接以编程方式将引导程序下载到客户端并调用引导程序。  此方法无需将引导程序打包到你的应用中。  此方法依赖于 Microsoft 的 内容分发网络 (CDN) ，才能获取引导程序。
 
-  * 使用"引导程序 (部分中的"下载"**** 按钮下载引导程序****) ，然后将引导程序与你的应用一起分发。  在此方法中，使用应用安装程序/更新程序或应用本身打包引导程序，并调用应用中包含的引导程序。  此方法可避免依赖 Microsoft CDN，以获取引导程序。
+  * 使用"引导程序 (部分中的"下载"按钮**** 下载引导程序) ，然后将引导程序与你的应用一起分发。 ****  在此方法中，使用应用安装程序/更新程序或应用本身打包引导程序，并调用应用中包含的引导程序。  此方法可避免依赖 Microsoft CDN，以获取引导程序。
 
 * 页面 **的"常青独立** 安装程序"部分提供大型的独立 Evergreen 安装程序，主要面向脱机用户。  在此方法中，使用应用安装程序/更新程序或应用本身打包独立安装程序，并调用 Evergreen Standalone 安装程序。  此方法可避免依赖 Microsoft CDN获取运行时。
 
@@ -86,7 +86,7 @@ WebView2 运行时是一个可再发行组件运行时，可用作 WebView2 __ (
 
 ### <a name="servicing-the-webview2-runtime-through-windows-server-update-services-wsus"></a>通过 WSUS Windows Server Update Services (WebView2 运行时) 
 
-请参阅管理[WebView2](enterprise.md#windows-server-update-services-wsus) Windows Server Update Services (中) WSUS 应用程序部分。
+请参阅管理[WebView2](enterprise.md#windows-server-update-services-wsus) Windows Server Update Services (一) WSUS 应用程序部分。
 
 ### <a name="runtime-or-browser-support-during-development-or-production"></a>开发或生产期间运行时或浏览器支持
 
@@ -100,11 +100,11 @@ WebView2 应用的生产版本只能将 WebView2 运行时用作支持 Web 平�
 
 #### <a name="microsoft-edge-stable-channel-isnt-supported-for-webview2"></a>Microsoft Edge WebView2 不支持 Stable 渠道
 
-不允许 WebView2 应用将稳定渠道Microsoft Edge Web 平台。  此限制可防止 WebView2 应用的生产版本依赖浏览器。  WebView2 应用在生产期间无法依赖浏览器，原因如下：
+不允许 WebView2 应用将 Microsoft Edge Stable 渠道用作支持 Web 平台。  此限制可防止 WebView2 应用的生产版本依赖浏览器。  WebView2 应用在生产期间无法依赖浏览器，原因如下：
 
-* Microsoft Edge用户设备上均存在此限制。  企业和教育中的许多设备与 Windows 更新断开连接，或者不是由 Microsoft 直接管理。  此类设备可能尚未Microsoft Edge安装。  要求 WebView2 应用的生产版本使用 WebView2 运行时Microsoft Edge可以避免使Microsoft Edge WebView2 应用的先决条件。
+* Microsoft Edge用户设备上均存在此限制。  企业和教育中的许多设备与 Windows 更新断开连接，或者不是由 Microsoft 直接管理。  此类设备可能未Microsoft Edge安装。  要求 WebView2 应用的生产版本使用 WebView2 运行时，而不是Microsoft Edge避免使Microsoft Edge WebView2 应用的先决条件。
 
-* 浏览器和应用具有不同的用例。  如果 WebView2 应用要求在客户端Microsoft Edge，这可能会导致 WebView2 应用出现意外的负面影响。  例如，IT 管理员可以阻止从特定版本更新浏览器，以保持浏览器与内部网站兼容。  要求 WebView2 应用的生产版本使用 WebView2 运行时（而不是浏览器）可使 WebView2 应用保持常青，即使客户端管理员阻止了浏览器更新。
+* 浏览器和应用具有不同的用例。  如果 WebView2 应用要求在客户端Microsoft Edge，则可能对 WebView2 应用产生意外的负面影响。  例如，IT 管理员可以阻止从特定版本更新浏览器，以保持浏览器与内部网站兼容。  要求 WebView2 应用的生产版本使用 WebView2 运行时（而不是浏览器）可使 WebView2 应用保持常青，即使客户端管理员阻止了浏览器更新。
 
 * 与浏览器相反，WebView2 运行时针对应用方案进行开发和测试，在某些情况下，WebView2 运行时可能包含浏览器中尚未提供的 Bug 修复。
 
@@ -262,7 +262,7 @@ WebView2 运行时Microsoft Edge策略是分开的。  即使 IT 管理员已禁
 
 对于具有严格兼容性要求的限制环境，请考虑使用固定版本分发模式。  固定版本分发模式以前称为 _自带的_。
 
-在固定版本分发模式下，你可以控制更新应用的 WebView2 运行时的时间。  下载 WebView2 运行时的特定版本，然后使用 WebView2 应用打包它。  客户端上的 WebView2 运行时不会自动更新。  相反，你可以定期更新打包并随更新的应用一起分发的 WebView2 运行时。  固定版本方法不使用 WebView2 运行时的注册表项。
+在固定版本分发模式下，你可以控制应用的 WebView2 运行时更新的时间。  下载 WebView2 运行时的特定版本，然后使用 WebView2 应用打包它。  客户端上的 WebView2 运行时不会自动更新。  相反，你可以定期更新打包并随更新的应用一起分发的 WebView2 运行时。  固定版本方法不使用 WebView2 运行时的注册表项。
 
 固定版本二进制文件超过 250 MB，并且会使你的应用包增大该大小。
 
@@ -270,7 +270,7 @@ WebView2 运行时Microsoft Edge策略是分开的。  即使 IT 管理员已禁
 
 1. 从下载 WebView2 运行时（作为程序包）下载 [WebView2](https://developer.microsoft.com/microsoft-edge/webview2#download-section)运行时的固定版本。
 
-   可在此网站上下载最新版和第二个最新主要版本的修补程序最晚版本。  保留所需的任何版本的存档副本。
+   可在此网站上下载最新和第二个最新主要版本的修补程序最晚版本。  保留所需的任何版本的存档副本。
 
 1. 使用命令行命令或 WinRAR 等解压缩工具解压缩 WebView2 运行时 `expand {path to the package} -F:* {path to the destination folder}` 包。  避免通过文件资源管理器解压缩，因为该方法可能无法生成正确的文件夹结构。
 
@@ -286,7 +286,28 @@ WebView2 运行时Microsoft Edge策略是分开的。  即使 IT 管理员已禁
 
        *  或者，使用 `EnsureCoreWebView2Async` ([WPF](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async) / [WinForms) ](/dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async)指定环境。  使用 `browserExecutableFolder` [CoreWebView2Environment.CreateAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync) 中的 参数指示固定版本二进制文件的路径。
 
+    * 对于 WinUI，通过指定安装的位置并设置运行时路径的环境变量，确保应用有权访问文件夹。
+
+        *  实现此目标的方法之一是，将以下C#代码添加到你的应用：
+        
+        ```csharp
+        StorageFolder localFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
+        String fixedPath = Path.Combine(localFolder.Path, "FixedRuntime\\(version number)");
+        Debug.WriteLine($"Launch path [{localFolder.Path}]");
+        Debug.WriteLine($"FixedRuntime path [{fixedPath}]");
+        Environment.SetEnvironmentVariable("WEBVIEW2_BROWSER_EXECUTABLE_FOLDER", fixedPath);
+        ```
 1. 将固定版本二进制文件打包并随你的应用一起提供。  根据情况更新二进制文件。
+
+    * 对于 WinUI，这可能包括在代码编辑器 (.csproj) 打开项目文件，然后在项目标记中添加以下代码段：
+
+        ```xml
+        <Content Include="FixedRuntime\(version number)\\**\*.*">
+        <CopyToOutputDirectory>PreserveNewest<CopyToOutputDirector>
+        </Content>
+        ```
+
+        验证该 `bin\**designated architecture**\Release` 文件夹是否具有匹配的 FixedRuntime\\ (版本号) 包含运行时文件的文件夹。
 
 ### <a name="known-issues-for-fixed-version"></a>固定版本的已知问题
 
@@ -325,7 +346,7 @@ WebView2 运行时Microsoft Edge策略是分开的。  即使 IT 管理员已禁
     \WebView2Loader.dll
 ```
 
-对于 .NET 托管应用，还需要包括核心 WebView2 功能 () 和 `Microsoft.Web.WebView2.Core.dll` WPF/WinForms 特定功能 (或 `Microsoft.Web.WebView2.Winforms.dll` `Microsoft.Web.WebView2.WPF.dll`) 的 WebView2 .NET 程序集。
+对于 .NET 托管应用，还需要包含 WebView2 .NET 程序集，用于核心 WebView2 功能 () 以及 `Microsoft.Web.WebView2.Core.dll` WPF/WinForms 特定的功能 (`Microsoft.Web.WebView2.Winforms.dll` 或 `Microsoft.Web.WebView2.WPF.dll`) 。
 
 示例本机应用文件夹结构：
 
