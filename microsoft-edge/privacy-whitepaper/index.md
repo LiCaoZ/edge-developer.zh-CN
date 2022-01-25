@@ -5,18 +5,17 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge， 隐私， 白皮书， 隐私白皮书， 信任， Microsoft edge 隐私， 浏览器隐私， 隐私设置
 ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
 ms.date: 12/10/2021
-ms.openlocfilehash: 609a6b7314593832f9d9df322e2d43f0ef557761
-ms.sourcegitcommit: 44a533400bc5562a14d3c34413421c515b3936a6
+ms.openlocfilehash: f3db0f826d4cbebe14ed206b0e5c81a17f87fa9d
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "12292982"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320961"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书
 
