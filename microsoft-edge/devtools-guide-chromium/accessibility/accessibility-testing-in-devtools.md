@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 06/07/2021
-ms.openlocfilehash: 829a3549c4c385d793a655a3ad76fa3bb6b3528a
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: d0a13f69fd406bc3881f3df1dfe930f7c98175d4
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285678"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318308"
 ---
 # <a name="overview-of-accessibility-testing-using-devtools"></a>使用 DevTools 的辅助功能测试概述
 
@@ -97,7 +96,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 *  通过模拟不同的设备、缩放级别和像素比率执行视觉测试。
 *  测试产品在不可靠连接或用户脱机时的行为方式。  在低速连接上向用户显示最重要的交互也是辅助功能注意事项。
 
-若要了解有关设备仿真**工具**的信息，请参阅在[Microsoft Edge Tools 中模拟移动设备](../device-mode/index.md)。
+若要了解有关设备仿真**工具**的信息，请参阅在 Microsoft Edge [DevTools 中模拟移动设备](../device-mode/index.md)。
 
 
 ### <a name="wavy-underlines-in-the-dom-tree-indicate-automatically-detected-issues"></a>DOM 树中的波浪下划线指示自动检测到的问题
@@ -148,7 +147,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 * 布局类型;如果元素是使用弹性框或网格定位的，则会看到相应的 (![网格布局图标](../media/grid-icon.msft.png)).
 * 元素的名称，如 、 **h1**或**div**。 ****
 * 元素的尺寸（以像素为单位）。
-* 颜色作为颜色样本， (较小的彩色正方形) 和格式化值 (如 `#336699`) 。
+* 颜色作为颜色样本， (较小的彩色方形) 和格式化值 (如 `#336699`) 。
 * 字体信息 (大小和字体系列) 。
 * 边距和填充（以像素为单位）。
 
@@ -314,7 +313,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 <!-- ====================================================================== -->
 ## <a name="testing-contrast-of-text-colors-in-various-states"></a>测试不同状态的文本颜色的对比度
 
-检查 **工具** 一次报告一个状态辅助功能问题。  首先，我们将介绍使用 Inspect 工具仅查看页面元素的静态状态的限制。  然后，我们将介绍如何检查页面元素的其他状态，方法是单击"样式"选项卡上的 (切换元素状态) **\：hov。** ****
+检查 **工具** 一次报告一个状态辅助功能问题。  首先，我们将介绍使用 Inspect 工具仅查看页面元素的静态状态的限制。  然后，我们将介绍如何检查页面元素的其他状态，方法是单击"样式"选项卡上的"切换元素 (**\：hov **) 切换 **元素状态** "。
 
 ### <a name="checking-text-color-contrast-in-the-default-state"></a>检查默认状态下的文本颜色对比度
 
@@ -394,7 +393,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 :::image type="content" source="../media/a11y-testing-simulating-blur.msft.png" alt-text="模拟模糊的页面可能会发现辅助功能问题。" lightbox="../media/a11y-testing-simulating-blur.msft.png":::
 
 
-### <a name="verify-that-the-page-is-usable-with-ui-animation-turned-off-reduced-motion"></a>验证页面是否可用，并关闭 UI 动画， (运动) 
+### <a name="verify-that-the-page-is-usable-with-ui-animation-turned-off-reduced-motion"></a>验证页面是否可用，并关闭 UI 动画， (运动效果) 
 
 这些天操作系统提供的另一个设置是关闭动画的方法。  动画可以帮助产品的可用性，但它们也会导致许多问题，包括混淆和混乱。 这就是产品不应向在操作系统中关闭动画的用户显示动画的原因。  通过使用 CSS 媒体查询，您可以检查用户是否希望查看动画，并相应地将其关闭。  而且，与深色和浅色模式很类似，有一种方法可以模拟使用 [DevTools 的减少运动](./reduced-motion-simulation.md)。
 
@@ -420,7 +419,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 我们介绍了许多可用于确保捕获产品中的辅助功能问题的工具。  这些工具的范围从自动检查和手动详细检查到不同状态和环境的模拟。  这些工具汇总在 [DevTools 中的辅助功能测试功能中](reference.md)。  自动化工具无法找到产品的所有问题，因为许多辅助功能障碍仅在交互式使用期间出现。
 
-这些工具均无法将正确的一轮产品测试替换为使用辅助技术并遵循检查所有所需测试的计划。 您还可以使用辅助功能[评估功能](https://accessibilityinsights.io/docs/en/web/getstarted/assessment/)Insights。 [](https://accessibilityinsights.io)  您可能需要执行其他检查，例如：
+这些工具均无法将正确的一轮产品测试替换为使用辅助技术并遵循检查所有所需测试的计划。 此外，您还可以使用辅助功能[评估](https://accessibilityinsights.io/docs/en/web/getstarted/assessment/)Insights。 [](https://accessibilityinsights.io)  您可能需要执行其他检查，例如：
 
 * 放大时进行测试。
 * 使用屏幕阅读器进行测试。

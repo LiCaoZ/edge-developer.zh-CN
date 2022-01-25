@@ -1,14 +1,30 @@
 ---
-title: Microsoft Edge和 WebView2 之间的功能差异
-description: Microsoft Edge和 WebView2 之间的功能差异
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
-keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
-no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]
-ms.date: 09/21/2021
+title： feature differences between Microsoft Edge and WebView2 description： Feature differences between Microsoft Edge and WebView2.
+author： MSEdgeTeam ms.author： msedgedevrel ms.topic： conceptual ms.prod： microsoft-edge ms.technology： webview no-loc：
+- "Autofill for Addresses"
+- "Autofill for Passwords"
+- "Autofill for Payments""
+- "Browser Extensions""
+- "Browser Task Manager"
+- "Collections"
+- "Continue-where-I-left-off prompt"
+- "Downloads"
+- "Edge Shopping"
+- "Family Safety"
+- "Favorites"
+- "Hotkeys"
+- "IE Mode"
+- "Immersive Reader"
+- "Intrusive Ads"
+- "Read Aloud"
+- "Smart Screen"
+- "Translate"
+- "Tracking Prevention"
+- "Profile and Identity"
+- "Web Payment API"
+- "Windows Defender Application Guard"
+- " edge:// URLs " ms.date： 09/21/2021
+
 ---
 # <a name="feature-differences-between-microsoft-edge-and-webview2"></a>Microsoft Edge和 WebView2 之间的功能差异
 
@@ -104,7 +120,7 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 
 键盘快捷方式或键绑定在 Microsoft Edge 和 WebView2 中受支持。  更新Microsoft Edge时，默认键绑定可能会更改。  此外，如果 WebView2 现在支持此功能，则默认情况下关闭的键盘快捷方式可能会改为打开。  若要避免对键盘快捷方式进行此类更改，可以设置为 ，这将关闭访问浏览器功能的所有键，但会启用所有基本的文本编辑和移动 `AreBrowserAcceleratorKeysEnabled` `FALSE` 快捷方式。
 
-在 WebView2 中，始终关闭以下快捷方式。  星号 () 表示快捷方式未关闭，但它访问的功能已关闭，或者功能不适用于 `*` WebView2。
+在 WebView2 中，始终关闭以下快捷方式。  星号 () 表示快捷方式未关闭，但它访问的功能已关闭，或者该功能不适用于 `*` WebView2。
 
 | 操作 | Windows |
 |:--- |:--- |

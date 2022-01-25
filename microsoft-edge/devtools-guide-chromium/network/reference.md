@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 07/19/2021
-ms.openlocfilehash: 9de205eea597dcff6df97c576358441d491a79be
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 230bf6b1c4c2344984db2da8bc2dd07e903f8805
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284299"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12317881"
 ---
 <!-- Copyright Kayce Basques
 
@@ -44,11 +43,11 @@ ms.locfileid: "12284299"
 若要停止录制请求：
 
 1.  在" **网络"** 工具上，单击"停止 **记录** 网络日志 (![ 停止记录网络日志 ](../media/record-on-icon.msft.png)) 。  它变为灰色，表示开发人员工具不再记录请求。
-1.  在 (Windows焦点时) Linux (`Control` + `E` `Command` + `E` 或) macOS**** 命令。
+1.  在 (Windows焦点时 (linux) `Control` + `E` `Command` + `E` 或) macOS**** 命令。
 
 ### <a name="clear-requests"></a>清除请求
 
-单击"**网络** (") 清除"按钮以清除" ![ ](../media/clear-requests-icon.msft.png) 请求"表中的**** 所有请求。
+单击"**网络** (上的"清除 ![ ](../media/clear-requests-icon.msft.png)) "按钮以清除"请求****"表中的所有请求。
 
 :::image type="content" source="../media/network-network-clear-button.msft.png" alt-text="&quot;清除&quot;按钮。" lightbox="../media/network-network-clear-button.msft.png":::
 
@@ -112,7 +111,7 @@ ms.locfileid: "12284299"
 
 ### <a name="manually-clear-the-browser-cache"></a>手动清除浏览器缓存
 
-若要随时手动清除浏览器缓存，请打开上下文菜单 (右键单击") "表中的任意位置，然后单击"清除**浏览器缓存"。**
+若要随时手动清除浏览器缓存，请打开上下文菜单 (右键单击") "表中的任意位置，然后单击"清除浏览器缓存 **"。**
 
 选择 **"清除浏览器缓存"：**
 
@@ -122,7 +121,7 @@ ms.locfileid: "12284299"
 
 一种称为“[渐进式 Web 应用](../progressive-web-apps/index.md)”的新 web 应用程序，，可在**服务人员**的帮助下脱机运行。<!-- [service workers](/web/fundamentals/getting-started/primers/service-workers) --> 在构建这种类型的应用程序时，快速模拟没有数据连接的设备可能会很有用。
 
-若要模拟脱机网络体验，请选择"没有**** 限制"下拉菜单>**预设**  >  **"。**
+若要模拟脱机网络体验，请选择"没有**** 限制"下拉菜单 **>"脱机预设**  >  **"。**
 
 " **脱机** "下拉菜单：
 
@@ -189,7 +188,7 @@ ms.locfileid: "12284299"
 1. 选择**更新**。
 1. 若要验证更改，请单击" **控制台** "并键入 `navigator.userAgentData` 。 根据需要展开结果以查看用户代理数据更改。
 
-还可以在模拟移动设备中的 Microsoft Edge[中设置用户代理客户端Microsoft Edge。](../device-mode/index.md)
+还可以在"模拟移动设备"的 Microsoft Edge[中设置用户代理客户端Microsoft Edge。](../device-mode/index.md)
 
 
 <!-- ====================================================================== -->
@@ -219,7 +218,7 @@ ms.locfileid: "12284299"
 | `method` | 显示通过指定的 HTTP 方法类型检索的资源。  开发工具用找到的所有 HTTP 方法填充下拉列表。 |
 | `mime-type` | 显示指定 MIME 类型的资源。  开发工具用找到的所有 MIME 类型填充下拉列表。 |
 | `mixed-content` | 显示所有混合内容 () `mixed-content:all` 或只显示当前 `mixed-content:displayed` () 。 |
-| `scheme` | 显示通过未保护的 HTTP () 或受保护的 `scheme:http` HTTPS () 。 `scheme:https` |
+| `scheme` | 显示通过未保护的 HTTP () 或受保护的 `scheme:http` HTTPS `scheme:https` () 。 |
 | `set-cookie-domain` | 显示具有与指定值匹配的 `Domain` 属性的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 域填充“自动完成”。 |
 | `set-cookie-name` | 显示具有名称与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 名称填充“自动完成”。 |
 | `set-cookie-value` | 显示具有值与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 值填充“自动完成”。 |
@@ -480,7 +479,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
   - 浏览器正在磁盘缓存中短暂分配空间。
 - **已停止**。 由于 **Queueing**中所述的任何原因，请求可能会停止。
 - **DNS 查找**。 浏览器正在解析请求的 IP 地址。
-- **初始连接**。 浏览器正在建立连接，包括 TCP 握手，然后重试和协商 SSL (层) 。
+- **初始连接**。 浏览器正在建立连接，包括 TCP 握手，然后重试和协商安全套接字层 (SSL) 。
 - **代理协商**。 浏览器正在与[代理服务器](https://en.wikipedia.org/wiki/Proxy_server)协商请求。
 - **请求已发送**。 正在发送请求。
 - **ServiceWorker Preparation**。 浏览器正在启动服务工作线程。
@@ -611,7 +610,7 @@ init();
 
 将格式化的响应 JSON 粘贴到Microsoft Visual Studio代码：
 
-:::image type="content" source="../media/network-header-paste-property-value.msft.png" alt-text="Microsoft Visual Studio格式响应 JSON 的代码。" lightbox="../media/network-header-paste-property-value.msft.png":::
+:::image type="content" source="../media/network-header-paste-property-value.msft.png" alt-text="Microsoft Visual Studio JSON 格式响应的代码。" lightbox="../media/network-header-paste-property-value.msft.png":::
 
 ### <a name="copy-property-values-from-network-requests-to-your-clipboard"></a>将属性值从网络请求复制到剪贴板
 

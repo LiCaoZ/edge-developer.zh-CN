@@ -6,14 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.assetid: 737ac54c-ad89-4b3f-bbe2-4e4169d3f364
-keywords: 辅助功能， 开发人员辅助功能， 可访问的网站， 边缘， Web 开发， ARIA， 开发人员， UIA， UI 自动化
 ms.date: 01/07/2021
-ms.openlocfilehash: 5a32f20297743261dfaa4a7b7c8586c11d49e14d
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 7742e93d935129355aa8c377a9ced38ee02c0424
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284495"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318266"
 ---
 # <a name="resources-for-accessibility-testing"></a>辅助功能测试的资源
 

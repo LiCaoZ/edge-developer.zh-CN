@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 10/28/2021
-ms.openlocfilehash: 27c93ed08140c333f8440f0290b649b0db2bf151
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: c12bdace3d8f14cff109cd3b4183b8a396f2f3cb
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285944"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12317804"
 ---
 # <a name="the-search-panel"></a>搜索面板
 
@@ -46,7 +45,7 @@ The **Search** tool appears in the **Drawer**， and shows the search toolbar：
 
 1.  [打开 DevTools](../open/index.md) (`F12`) 。
 
-1.  打开命令[菜单](../command-menu/index.md)，按 `Control` + `Shift` + `P` (Windows/Linux) 或 `Command` + `Shift` + `P` (macOS) 。
+1.  打开命令[菜单](../command-menu/index.md)，按 `Control` + `Shift` + `P` (Windows/Linux) 或 (`Command` + `Shift` + `P` macOS) 。
 
 1.  键入 `search` ，然后按 `Enter` 。
 
@@ -70,11 +69,11 @@ The **Search** tool appears in the **Drawer**， and shows the search toolbar：
 
 
 <!-- ====================================================================== -->
-## <a name="match-case-lowercase-or-uppercase-characters"></a>大小写 (小写或大写字符) 
+## <a name="match-case-lowercase-or-uppercase-characters"></a>匹配大小写 (小写或大写) 
 
 默认情况下， **搜索** 工具不区分大小写。  搜索词匹配该词的出现次数，无论小写还是大写字符。
 
-若要仅查找与特定大小写匹配的结果 (小写或大写) ，请单击搜索工具栏中的"区分大小写 (**** `Aa`) "按钮。
+若要仅查找与特定大小写匹配的结果 (小写或大写) ，请单击搜索工具栏中的"区分大小写****" () " `Aa` 按钮。
 
 
 <!-- ====================================================================== -->

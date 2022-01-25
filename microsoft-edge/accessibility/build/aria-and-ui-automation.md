@@ -1,26 +1,25 @@
 ---
-title: ARIA 和 UI 自动化在Microsoft Edge
+title: ARIA 和 UI 自动化Microsoft Edge
 description: 了解如何Microsoft Edge ARIA 信息，然后向随后可以使用 Microsoft UI 自动化 API 的辅助技术公开该信息。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: 辅助功能， 开发人员辅助功能， 可访问的网站， 边缘， Web 开发， ARIA， 开发人员， UIA， UI 自动化
 ms.assetid: ffd1bc60-2ef1-4f11-8156-b63544cede77
 ms.custom: seodec18
 ms.date: 03/05/2020
-ms.openlocfilehash: 04a20acbf79fa0528e06520305bef78a9be0e911
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: f99c387ea5b47e3184438de22b69d9096e696681
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285202"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318343"
 ---
-# <a name="aria-and-ui-automation-in-microsoft-edge"></a>ARIA 和 UI 自动化在Microsoft Edge
+# <a name="aria-and-ui-automation-in-microsoft-edge"></a>ARIA 和 UI 自动化Microsoft Edge
 
-W3C 将可访问的富 Internet 应用程序 (ARIA) 定义为使动态 Web 内容和自定义 UI 可访问的语法。  Microsoft Edge识别 ARIA 角色、状态和属性信息，并公开给辅助技术，辅助技术又可以使用[Microsoft UI 自动化 API](https://blogs.msdn.microsoft.com/winuiautomation/)检索信息。
+W3C 将可访问的富 Internet 应用程序 (ARIA) ARIA 定义为使动态 Web 内容和自定义 UI 可供访问的语法。  Microsoft Edge识别 ARIA 角色、状态和属性信息，并公开给辅助技术，辅助技术又可以使用[Microsoft UI 自动化](https://blogs.msdn.microsoft.com/winuiautomation/)API 检索信息。
 
-访问[HTML5Accessibility，](https://html5accessibility.com)了解哪些新 HTML5 功能可供用户Microsoft Edge。
+访问[HTML5Accessibility，](https://html5accessibility.com)了解哪些新 HTML5 功能可供 Microsoft Edge。
 
 该Microsoft Edge引擎构建网页的可访问投影，符合以下 W3C 规范。
 

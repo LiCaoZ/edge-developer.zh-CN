@@ -6,14 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 09/29/2021
-ms.openlocfilehash: 2f18d5b629436f35a6d2dde9294592c4b81e4ca9
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 6213eb8f4ad26070616325f07ae9c6d27805208e
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286217"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12317797"
 ---
 # <a name="contact-the-microsoft-edge-webview2-team"></a>联系 Microsoft Edge WebView2 团队
 
@@ -29,7 +28,7 @@ ms.locfileid: "12286217"
 <!-- ====================================================================== -->
 ## <a name="file-a-documentation-issue"></a>提出文档问题
 
-若要在GitHub中输入问题，请在文章底部的"反馈"部分，选择****"**此页面"** 按钮。  或者，您可以[直接在](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback])存储库Microsoft Edge开发人员文档 `edge-developer` 提交问题。
+若要在GitHub输入问题，请在文章底部的"反馈"部分，选择"******此页面"** 按钮。  或者，您可以[直接在](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback])存储库Microsoft Edge开发人员文档 `edge-developer` 提交问题。
 
 
 <!-- ====================================================================== -->

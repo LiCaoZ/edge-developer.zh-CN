@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 06/07/2021
-ms.openlocfilehash: 149e84514417c28a89f16648c926db3bfe5fb656
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 176af0d8f06e7f75f5db2adf2d787c8ee8bbd781
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285517"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318070"
 ---
 # <a name="analyze-keyboard-support-on-forms"></a>分析窗体上的键盘支持
 
@@ -26,7 +25,7 @@ ms.locfileid: "12285517"
 
 1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  选择 **DevTools** (左上角的"检查) 检查图标按钮，使按钮突出显示为蓝色 ![ ](../media/inspect-icon.msft.png) () 。
+1.  选择**** DevTools (左上角的"检查") "检查图标"按钮，以便该按钮以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
 
 1.  将鼠标悬停在 **50**个 **、100**个和 **200 个"支持** "按钮上。  The Inspect tool appears on the webpage， as an overlay.  " **检查"覆盖** 层的可键盘聚焦行显示，没有一个"支持"金额按钮可通过键盘访问，如带对角线的灰色圆圈所示。  按钮没有名称，并且具有 其角色，因为它们是元素，这意味着辅助技术无法访问 `generic` `div` 按钮。
 
@@ -84,7 +83,7 @@ donations.addEventListener('click', e => {
 })
 ```
 
-使用事件读取按钮是一个不错的做法，因为事件在鼠标指针和键盘交互上 `click` `click` 触发。  但是，由于元素不可通过键盘访问，并且此"云"按钮作为元素 () 实现，因此除非使用鼠标或事件的另一个源（例如某些键盘上提供的特殊按钮），否则 `div` **** `div` 此 `<div class="submitbutton">Donate</div>` JavaScript `click` 功能永远不会运行。
+使用事件读取按钮是一个不错的做法，因为事件在鼠标指针和键盘交互上 `click` `click` 触发。  但是，由于元素不可通过键盘访问，并且此"云"按钮作为元素 () 实现，因此除非使用鼠标或事件的另一个源（例如某些键盘上提供的特殊按钮）否则， `div` **** `div` 此 `<div class="submitbutton">Donate</div>` JavaScript `click` 功能永远不会运行。
 
 这是添加 JavaScript 以创建元素在本机提供的功能的经典 `button` 示例。  通过元素模拟按钮的功能 `div` 最终产生不可访问的体验。
 

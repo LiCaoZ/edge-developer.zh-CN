@@ -1,11 +1,10 @@
 ---
 title: 实验性功能
-description: Microsoft Edge Tools 中的最新实验功能。
+description: DevTools 中的最新Microsoft Edge功能。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools, 试验
 no-loc:
 - Enable webhint
 - Enable Network Console
@@ -22,12 +21,12 @@ no-loc:
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
 ms.date: 11/30/2021
-ms.openlocfilehash: a52f819a34f888f7026ed2a6ac0140991fd9dcc0
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 20894a79818a0fd05b350e2fd7ee8cfea4714d77
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286035"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12317818"
 ---
 # <a name="experimental-features"></a>试验功能
 
@@ -43,7 +42,7 @@ When a checkbox is removed from all the preview channels, move its section down 
 
 Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限。  本文列出并介绍了最新版本的 Canary 预览频道中的大多数实验Microsoft Edge。
 
-组织[的所有频道Microsoft Edge](/deployedge/microsoft-edge-channels)实验性功能。 可以通过使用 Microsoft Edge Canary 渠道 获取最新的[实验Microsoft Edge Canary 渠道。](https://www.microsoftedgeinsider.com/welcome?channel=canary) 若要查看最新版本中提供的完整列表Microsoft Edge，请参阅****  >  DevTools 设置**实验**页面。
+组织[的所有频道Microsoft Edge](/deployedge/microsoft-edge-channels)实验性功能。 可以使用以下方法获取最新的实验[Microsoft Edge Canary 渠道。](https://www.microsoftedgeinsider.com/welcome?channel=canary) 若要查看最新版本中提供的完整列表Microsoft Edge，请参阅****  >  DevTools 设置**实验**"页面。
 
 <!-- no Warning formatting, because UI already contains red "WARNING" at top -->
 这些实验可能不稳定或不可靠，可能需要重启 DevTools。
@@ -66,7 +65,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 *  VS Code开发工具的主题。 <!-- preserve literal UI string, including "VS" & "the" -->
 *  open source files in Visual Studio Code.
 *  启用键盘快捷方式编辑器 - [Edit keyboard shortcuts for any action in DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) 。
-*  启用动态欢迎内容，默认为现在关闭，但在 Microsoft Edge版本 97 中默认启用。
+*  启用动态欢迎内容，默认为现在关闭，但在版本 97 中Microsoft Edge启用。
 
 <!-- don't place a comment line between list item lines, above; that would create a gap -->
 
@@ -86,9 +85,9 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 
 若要打开或关闭实验，Microsoft Edge：
 
-1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 `Command` + `Option` + `I` (按) 。
+1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 (`Command` + `Option` + `I` 按) 。
 
-1.  单击 **"设置 (** 齿轮) 图标以打开 DevTools[设置窗格。](../customize/index.md#settings)
+1.  单击 **"设置 (** 齿轮) 图标打开 DevTools 设置窗格。 [](../customize/index.md#settings)
 
 1.  在"实验"窗格**设置，** 单击"实验 **"** 部分。
 
@@ -96,7 +95,7 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 
 1.  在实验 **页面上** ，选中或清除实验的复选框。 默认情况下，某些实验 (选中) 打开。
 
-1.  单击 **"** 关闭 ("中的"关闭"图标。> 设置) 右上方的"关闭"图标以关闭 ![ ](../media/settings-close-icon-light-theme.png) DevTools**设置。**
+1.  单击 **"** 关闭 ("中的"关闭"图标。> 设置) 右上方的"关闭"图标以关闭 ![ ](../media/settings-close-icon-light-theme.png) "DevTools**设置"。**
 
 1.  单击" **重新加载 DevTools"** 按钮。
 
@@ -106,11 +105,11 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 
 若要还原打开实验功能的默认设置，请：
 
-1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 `Command` + `Option` + `I` (按) 。
+1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 (`Command` + `Option` + `I` 按) 。
 
-1.  选择**设置 (** ![ 开发人员设置中的") >" ](../media/settings-gear-icon-light-mode.png) **图标**。
+1.  选择**设置 (** ![ 开发人员设置中的") >" ](../media/settings-gear-icon-light-mode.png) **图标。**
 
-1.  单击"**还原默认值并刷新"** 按钮，然后单击"关闭**** (DevTools > 设置 中的"关闭 ![ "图标 ](../media/settings-close-icon-light-theme.png) 。) 。
+1.  单击"**还原默认值并刷新**"按钮，然后单击"关闭**** (DevTools > 设置 中的"关闭 ![ "图标 ](../media/settings-close-icon-light-theme.png) 。) 。
 
 <!-- For more information about customizing settings, see [Settings](../customize/index.md#settings) in _Customize Microsoft Edge DevTools_. -->
 
@@ -120,9 +119,9 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 
 你可以按标题中包含的文本筛选实验性功能。
 
-1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 `Command` + `Option` + `I` (按) 。
+1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 (`Command` + `Option` + `I` 按) 。
 
-1.  选择**设置 (** ![ 开发设置中的") >" ](../media/settings-gear-icon-light-mode.png) **图标**。
+1.  选择**设置 (** 开发设置中的 ![ ") >" ](../media/settings-gear-icon-light-mode.png) **图标**。
 
 1.  在"筛选器 **"文本框** 中单击并输入文本，如 **时间线**。  键入时，只有匹配的复选框显示在实验 **页面中** 。
 
@@ -134,11 +133,11 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 
 我们期待收到有关实验功能的反馈。
 
-* 通过推文将反馈发送给我们[@EdgeDevTools。](https://twitter.com/edgedevtools)
+* 请通过发布推文 [@EdgeDevTools](https://twitter.com/edgedevtools) 向我们发送反馈。
 
 * [联系开发人员Microsoft Edge团队](../contact.md)。
 
-* 打开焦点**模式**实验后，在活动栏底部，选择"帮助******" (焦点**模式的活动栏中的"帮助"图标) >反馈"，以显示"发送反馈 ![ ](../media/help-icon-of-focus-mode.png) "窗口。 **** ****
+* 打开焦点**模式**实验后，在活动栏底部，选择"帮助****" (焦点模式**** 的活动栏中的"帮助"图标) >反馈"，以显示"发送反馈 ![ ](../media/help-icon-of-focus-mode.png) "窗口。 **** ****
 
 
 <!-- ====================================================================== -->
@@ -181,11 +180,11 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 若要监视 DevTools 发送和接收的消息以调试检查的页面：
 
-1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 `Command` + `Option` + `I` (按) 。
+1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 (`Command` + `Option` + `I` 按) 。
 
 1.  在 DevTools 中，选择 **"设置**  >  **实验"。**
 
-1.  选中"**协议监视器**"复选框，然后单击"**** 关闭 (DevTools > 设置 中的"关闭"图标。) ![ ](../media/settings-close-icon-light-theme.png) 关闭设置。 ****
+1.  选中"**协议监视器**"复选框，然后单击"**** 关闭 (DevTools > 设置 中的"关闭"图标。) 关闭 ![ ](../media/settings-close-icon-light-theme.png) 设置。 ****
 
 1.  打开命令**菜单** `Control` + `Shift` + `P` () ，然后在文本框中键入协议。 ****
 
@@ -225,7 +224,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 若要使用 **Source Order Viewer** ：
 
-1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 `Command` + `Option` + `I` (按) 。
+1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 (`Command` + `Option` + `I` 按) 。
 
 1.  打开“**元素**”工具。
 
@@ -235,7 +234,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 1.  突出显示任何 HTML 元素以显示网页源中订单的覆盖。
 
-:::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
+:::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::no-loc (源订单查看器) ：：： 在辅助功能窗格中" lightbox="。。/media/experiments-source-order-viewer.msft.png"：：：
 
 此实验默认打开。
 
@@ -262,7 +261,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 ## Emulation: Support dual screen mode
 <!-- present in 96, 98 -->
 
-有关详细信息，请参阅 [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md) 。
+有关详细信息，请参阅 [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md)。
 
 
 <!-- ====================================================================== -->
@@ -293,7 +292,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 若要使用新的可视化**字体编辑器：**
 
-1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 `Command` + `Option` + `I` () 。
+1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 (`Command` + `Option` + `I` 按) 。
 
 1.  打开“**元素**”工具。
 
@@ -374,7 +373,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 若要使用 **复合层**：
 
-1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 `Command` + `Option` + `I` () 。
+1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 (`Command` + `Option` + `I` 按) 。
 
 1.  按 `Esc` 以显示 **"箱"。**
 
@@ -397,7 +396,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 若要使用 **网络控制台**：
 
-1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 `Command` + `Option` + `I` () 。
+1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 (`Command` + `Option` + `I` 按) 。
 
 1.  打开“**网络**”窗格。
 
@@ -447,7 +446,7 @@ DevTools Microsoft Edge分离的元素面板可帮助调查和解决内存泄漏
 <!-- present in 96, 98 -->
 <!-- preserve literal UI string, including "VS" & "the" -->
 
-若要在 devTools Visual Studio主题，请为**DevTools VS Code**主题。 有关详细信息，请参阅向 [DevTools 应用颜色主题](../customize/theme.md)。
+若要在 devTools Visual Studio主题，请VS Code**开发工具实验的主题**。 有关详细信息，请参阅向 [DevTools 应用颜色主题](../customize/theme.md)。
 
 
 <!-- ====================================================================== -->
@@ -456,11 +455,11 @@ DevTools Microsoft Edge分离的元素面板可帮助调查和解决内存泄漏
 
 实验**中的开放源文件**Visual Studio Code源工具的代码编辑器替换为用于编辑Visual Studio Code文件的代码编辑器。 打开此实验时，开发人员工具会检测何时编辑本地文件，并提示你选择一个用作工作区的文件夹。
 
-选择要用作工作区的文件夹时，在 DevTools 中选择指向文件的任何链接将在 Visual Studio Code。  在早期版本的 Microsoft Edge 中，此操作在 DevTools 中的"源"工具的代码编辑器中打开文件。
+选择要用作工作区的文件夹时，在 DevTools 中选择指向文件的任何链接将在 Visual Studio Code。  在早期版本的 Microsoft Edge 中，此操作在 DevTools 中的源工具的代码编辑器中打开文件。
 
 :::image type="content" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="在&quot;样式&quot;工具中选择文件链接将打开Visual Studio Code" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
 
-现在，你在 DevTools 中执行的任何编辑都更改硬盘上的文件，并实时Visual Studio Code。 可以在打开数据源中的源文件中阅读有关[Visual Studio Code。](../sources/opening-sources-in-vscode.md)
+现在，你在 DevTools 中执行的任何编辑都更改硬盘上的文件，并实时与Visual Studio Code。 可以在打开数据源中的源文件中阅读有关[Visual Studio Code。](../sources/opening-sources-in-vscode.md)
 
 
 <!-- ====================================================================== -->

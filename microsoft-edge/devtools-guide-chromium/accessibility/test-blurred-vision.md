@@ -1,20 +1,19 @@
 ---
-title: 验证页面是否可用模糊视觉
+title: 验证页面是否在视觉模糊时可用
 description: 若要验证网页是否可使用模糊视觉，在"呈现"工具中，使用"模拟视觉缺陷"下拉列表。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 06/07/2021
-ms.openlocfilehash: ed4f41f28db13d555c6cdbfb469b470935da671d
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: efcc340ec814c379b18aeada8feb44f69cc389cc
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285489"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318049"
 ---
-# <a name="verify-that-a-page-is-usable-with-blurred-vision"></a>验证页面是否可用模糊视觉
+# <a name="verify-that-a-page-is-usable-with-blurred-vision"></a>验证页面是否在视觉模糊时可用
 
 <!-- Rendering tool: Emulate vision deficiencies: Blurred vision -->
 

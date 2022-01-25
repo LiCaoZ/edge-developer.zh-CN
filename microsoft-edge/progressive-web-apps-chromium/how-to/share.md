@@ -6,14 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， 共享
 ms.date: 09/27/2021
-ms.openlocfilehash: 137d4d90224c4a44f121dfc156efbae5c26724cc
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 887507b6d4f2c29c31304657f67b5a1a2ebc76b4
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286784"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12317811"
 ---
 # <a name="share-content-with-other-apps"></a>与其他应用共享内容
 
@@ -35,7 +34,7 @@ ms.locfileid: "12286784"
 PWA 可以使用 [Web 共享 API](https://developer.mozilla.org/docs/Web/API/Web_Share_API) 触发显示操作系统共享对话框。
 
 > [!NOTE]
-> Web 共享仅适用于通过 HTTPS (服务的网站，对于 PBA) ，只能调用它以响应用户操作。
+> Web 共享仅适用于通过 HTTPS (服务的网站，对于 PWA) ，只能调用它以响应用户操作。
 
 若要共享链接、文本或文件等内容，请使用 `navigator.share` 函数，如下所示。  `navigator.share`函数接受至少应具有以下属性之一的对象：
 
@@ -134,7 +133,7 @@ async function getImageFileFromURL(imageURL, title) {
 
 将显示**Windows共享"** 对话框。  用户选取要共享内容的应用：
 
-:::image type="content" source="../media/devtools-tips-share.png" alt-text="&quot;Windows共享&quot;对话框允许用户选取应该接收共享内容的应用。":::
+:::image type="content" source="../media/devtools-tips-share.png" alt-text="the Windows Share dialog allows the user to pick which app should receive the shared content.":::
 
 可以在[""上找到GitHub。](https://github.com/captainbrosset/devtools-tips/)  应用程序使用应用程序源文件中的 Web [share.js](https://github.com/captainbrosset/devtools-tips/blob/main/src/assets/share.js#L38) API。
 
@@ -187,7 +186,7 @@ async function getImageFileFromURL(imageURL, title) {
 
 ### <a name="handle-get-shared-data"></a>处理 GET 共享数据
 
-若要处理在代码代码中通过 GET 请求PWA的数据，请使用构造函数 `URL` 提取查询参数：
+若要处理在代码代码中通过 GET 请求PWA数据，请使用构造函数 `URL` 提取查询参数：
 
 ```javascript
 window.addEventListener('DOMContentLoaded', () => {
@@ -250,7 +249,7 @@ self.addEventListener('fetch', event => {
 
 ### <a name="handle-shared-files"></a>处理共享文件
 
-应用还可以处理共享文件。 若要处理文件PWA，必须使用 `POST` 方法和编码 `multipart/form-data` 类型。 此外，你必须声明你的应用可以处理的文件类型。
+应用还可以处理共享文件。 若要在文件中处理PWA，必须使用 `POST` 方法和编码 `multipart/form-data` 类型。 此外，你必须声明你的应用可以处理的文件类型。
 
 ```json
 {

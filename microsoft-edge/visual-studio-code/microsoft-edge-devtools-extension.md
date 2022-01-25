@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge， Web 开发， f12 工具， devtools， vs code， visual studio code， Microsoft Edge 开发人员工具， Microsoft Edge 开发人员工具扩展
 ms.date: 10/26/2021
-ms.openlocfilehash: 793707c6f93ace5711b9de870797bcd8277ec0fe
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: aa28e1abdb95cd48ba185fe8b6d4e3b789bf704f
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286833"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318448"
 ---
 # <a name="microsoft-edge-devtools-extension-for-visual-studio-code"></a>用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展
 
@@ -21,7 +20,7 @@ Microsoft Edge DevTools extension for Visual Studio Code
 Microsoft Edge DevTools extension
 -->
 
-开发人员Microsoft Edge开发人员工具Visual Studio Code允许你从浏览器内使用浏览器的元素工具和网络Visual Studio Code。 **** ****  如果不离开Visual Studio Code，Microsoft Edge DevTools 使用以下功能连接到 Microsoft Edge 实例：
+使用 Microsoft Edge DevTools 扩展Visual Studio Code，你可以从网站内使用浏览器的元素工具和网络Visual Studio Code。 **** ****  如果不离开Visual Studio Code，Microsoft Edge DevTools 使用以下功能连接到 Microsoft Edge 实例：
 * 查看运行时 HTML 结构。
 * 更改布局。
 * 更改 CSS (样式) 。
@@ -37,7 +36,7 @@ Microsoft Edge DevTools extension
 
 在Visual Studio Code中，此扩展由多个变体引用：
 *  **Microsoft Edge开发人员工具Visual Studio Code** - 如扩展市场的详细信息中所示**的全名**。
-*  **Microsoft Edge工具VS Code**扩展 - 在扩展市场中搜索时列出的**扩展**。
+*  **Microsoft Edge Tools for VS Code** - 在扩展市场中搜索时列出的**扩展**。
 *  **Microsoft Edge工具**- 活动栏中的图标**工具提示**。
 *  **Edge DevTools** - 选项卡名称。
 
@@ -49,7 +48,7 @@ Microsoft Edge DevTools extension
 
 若要从内部安装扩展Visual Studio Code，请参阅 Microsoft Edge [DevTools 扩展Visual Studio Code。](index.md#the-microsoft-edge-devtools-extension-for-visual-studio-code)
 
-或者，你可以[从 Microsoft Edge 应用商店下载 Visual Studio DevTools](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)扩展。  您可以在以下[时间查看GitHub。](https://github.com/microsoft/vscode-edge-devtools)
+或者，你可以[从 Microsoft Edge 下载 DevTools](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) Visual Studio扩展。  您可以在以下[时间查看GitHub。](https://github.com/microsoft/vscode-edge-devtools)
 
 ### <a name="updating-the-extension"></a>更新扩展
 
@@ -61,15 +60,15 @@ Microsoft Visual Studio Code 会自动更新扩展。  若要手动更新扩展�
 
 若要打开工具面板，请在活动**栏中**选择"工具Microsoft Edge**图标**。
 
-使用 Microsoft Edge DevTools 扩展，可以轻松启动 Edge 实例或生成文件以 `launch.json` 自动执行调试工作流。
+使用 Microsoft Edge DevTools 扩展，可以轻松启动 Edge 实例或生成文件以自动 `launch.json` 执行调试工作流。
 
 :::image type="content" source="./media/edge-devtools-for-vscode-extension-icon.png" alt-text="Microsoft Edge开发人员工具Visual Studio Code扩展" lightbox="./media/edge-devtools-for-vscode-extension-icon.png":::
 
 选择 **"启动实例**"将打开浏览器窗口，并打开"Edge **DevTools"** 选项卡Visual Studio Code。
 
-:::image type="content" source="./media/edge-devtools-for-vscode-launch-instance.png" alt-text="选择&quot;启动实例&quot;以在浏览器中打开Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-launch-instance.png":::
+:::image type="content" source="./media/edge-devtools-for-vscode-launch-instance.png" alt-text="选择&quot;启动实例&quot;以在 Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-launch-instance.png":::
 
-使用 Microsoft Edge中的 DevTools 扩展Visual Studio Code中检查 HTML 元素Microsoft Edge。 例如，选择成功 **！** 在浏览器中，注意"元素"工具将打开，并突出显示 HTML。
+使用 Microsoft Edge 中的 DevTools 扩展Visual Studio Code检查该元素中的 HTML Microsoft Edge。 例如，选择成功 **！** 在浏览器中，注意"元素"工具将打开，并突出显示 HTML。
 
 :::image type="content" source="./media/edge-devtools-for-vscode-elements.png" alt-text="突出显示 HTML 的元素工具" lightbox="./media/edge-devtools-for-vscode-elements.png":::
 
@@ -78,9 +77,9 @@ Microsoft Visual Studio Code 会自动更新扩展。  若要手动更新扩展�
 ## <a name="modes-for-using-microsoft-edge-devtools-in-visual-studio-code"></a>在开发人员Microsoft Edge开发人员工具Visual Studio Code
 
 可以在以下三种模式之一中使用此扩展：
-* 启动Microsoft Edge窗口中的 Web 应用程序，然后转到 Web 应用程序。
+* 在Microsoft Edge中启动 Web 应用程序，然后转到 Web 应用程序。
 * 附加到运行实例的 Microsoft Edge。
-* 打开新实例的 Microsoft Edge 内部Visual Studio Code。
+* 在文件内打开Microsoft Edge的新Visual Studio Code。
 
 每种模式都需要您从本地 Web 服务器（从任务或命令行Visual Studio Code Web 应用程序提供服务）。  使用文件内的 URL 参数 `launch.json` 告知用户Visual Studio Code打开哪个 URL。
 
@@ -88,13 +87,13 @@ Microsoft Visual Studio Code 会自动更新扩展。  若要手动更新扩展�
 <!-- ====================================================================== -->
 ## <a name="opening-a-new-browser-instance"></a>打开新的浏览器实例
 
-若要从网站打开浏览器Visual Studio Code：
+若要从网站中打开浏览器Visual Studio Code：
 
 1. 在活动**栏上**，选择 **"Microsoft Edge工具"。**
 
-1. 在 **"Microsoft Edge：目标"面板上**，选择"**启动实例"。**  Microsoft Edge打开，并显示包含详细信息指南的默认页面。  此外 **，Edge DevTools**选项卡和面板显示在 Visual Studio Code，其中包含**欢迎**、**元素****和网络**工具。
+1. 在 **"Microsoft Edge：目标"面板上**，选择"**启动实例"。**  Microsoft Edge打开，并显示包含详细信息指南的默认页面。  此外，Edge **DevTools**选项卡和面板显示在 Visual Studio Code，其中包含**欢迎****、元素****和网络**工具。
 
-    :::image type="content" source="./media/edge-devtools-for-vscode-targets-launch.png" alt-text="Microsoft Edge中打开开发人员面板Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-targets-launch.png":::
+    :::image type="content" source="./media/edge-devtools-for-vscode-targets-launch.png" alt-text="Microsoft Edge打开的开发人员面板Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-targets-launch.png":::
 
 1. 在Microsoft Edge地址栏中，转到要调试的项目的 URL。
 
@@ -102,13 +101,13 @@ Microsoft Visual Studio Code 会自动更新扩展。  若要手动更新扩展�
 <!-- ====================================================================== -->
 ## <a name="changing-the-default-page-to-your-project-website"></a>将默认页面更改到项目网站
 
-若要调试项目，您可能需要更改在 Visual Studio Code 中打开的默认Microsoft Edge页面。  若要将默认页面更改为项目的网站，请执行以下操作：
+若要调试项目，您可能需要更改在 Microsoft Edge 中打开的默认Visual Studio Code。  若要将默认页面更改为项目的网站，请执行以下操作：
 
 1.  在Visual Studio Code中，选择"**文件**  >  **""新建窗口"。**  请注意，没有打开的文件夹。
 
 1.  在活动**栏上**，选择 **"Microsoft Edge工具"。**
 
-1.  在 **"Microsoft Edge：目标"** 面板中，选择 **"打开文件夹"** 链接。
+1.  在 **"Microsoft Edge：目标"** 面板中，选择**打开文件夹**链接。
 
 1.  选择具有新的默认页面的项目文件夹，以在 Visual Studio Code 中开始调试。
 
@@ -128,27 +127,27 @@ Microsoft Visual Studio Code 会自动更新扩展。  若要手动更新扩展�
 
 1.  保存 `launch.json`。
 
-1.  选择 **"Project"** 以验证Microsoft Edge是否打开并显示您输入的 URL。  此外，DevTools 将在Visual Studio Code。
+1.  选择 **"Project"** 以验证Microsoft Edge并显示您输入的 URL。  此外，DevTools 将在 Visual Studio Code。
 
 
 <!-- ====================================================================== -->
 ## <a name="changing-the-extension-settings"></a>更改扩展设置
 
-可以在扩展中自定义 devTools Visual Studio Code。
+可以在开发人员扩展中自定义Visual Studio Code工具。
 
 自定义设置：
 
-1.  在Visual Studio Code"活动**栏"上**，选择"Microsoft Edge**工具"。**
+1.  In Visual Studio Code， on the **Activity Bar，** select **Microsoft Edge Tools**.
 
-1. 在**Microsoft Edge工具**目标"中，选择"更多操作 (...) 目标"一词的右侧，然后选择  >  ****"打开**设置"。** **** ****  注意：如果使用鼠标，若要访问"其他操作" (...) ，请选择"目标"窗格或将鼠标悬停在**** 该窗格上。 ****
+1. 在**Microsoft Edge工具**目标"中，选择"更多操作" (...) "目标"一词的右侧，然后选择  >  ****"**** 打开**设置"。** ****  注意：如果使用鼠标，若要访问"其他操作" (...) ，请选择"目标"窗格或将鼠标**** 悬停在该窗格上。 ****
 
     :::image type="content" source="./media/edge-tools-open-settings-icon.msft.png" alt-text="&quot;工具Microsoft Edge目标&quot;面板上的&quot;更多操作&quot;图标，用于更改 DevTools 扩展的设置" lightbox="./media/edge-tools-open-settings-icon.msft.png":::
 
 ### <a name="reloading-the-extension-after-changing-settings"></a>更改设置后重新加载扩展
 
-某些设置有一条注释，**指出 (后需要重新加载) 。 **  使此类设置生效：
+某些设置有一条注释，**指出 (更改后需要重新加载) 。 **  使此类设置生效：
 
-1.  关闭扩展打开的浏览器，或在"工具Microsoft Edge**** 窗格中，选择"关闭实例  >  ******** `X` () "。  此操作还会自动关闭 **"Edge DevTools"** 选项卡。
+1.  关闭扩展打开的浏览器，或在"工具Microsoft Edge窗格中****，选择"关闭实例  >  ******** `X` () "。  此操作还会自动关闭 **"Edge DevTools"** 选项卡。
 
 1.  在 **"Microsoft Edge**  >  **目标"** 窗格中，选择"**启动实例"** 按钮。  Microsoft Edge，并显示 **"Edge DevTools"** 选项卡。
 
@@ -160,9 +159,9 @@ Microsoft Visual Studio Code 会自动更新扩展。  若要手动更新扩展�
 
 若要查看更改日志，请进行以下设置：
 
-1.  在Visual Studio Code"活动**栏"上**，选择"Microsoft Edge**工具"。**
+1.  In Visual Studio Code， on the **Activity Bar，** select **Microsoft Edge Tools**.
 
-1. In **Microsoft Edge Tools**  >  **Targets，** select More **Actions** (...) to the right of the **word TARGETS，** and then select **View Changelog**.  注意：如果使用鼠标，若要访问"其他操作" (...) ，请选择"目标"窗格或将鼠标悬停在**** 该窗格上。 ****
+1. In **Microsoft Edge Tools**  >  **Targets，** select More **Actions** (...) to the right of the word **TARGETS，** and then select **View Changelog**.  注意：如果使用鼠标，若要访问"其他操作" (...) ，请选择"目标"窗格或将鼠标**** 悬停在该窗格上。 ****
 
     :::image type="content" source="./media/view-changelog-menuitem.msft.png" alt-text="&quot;查看更改日志&quot;菜单项，以查看对扩展所做的更改" lightbox="./media/view-changelog-menuitem.msft.png":::
 
@@ -172,7 +171,7 @@ Microsoft Visual Studio Code 会自动更新扩展。  若要手动更新扩展�
 <!-- ====================================================================== -->
 ## <a name="changing-to-headless-mode"></a>更改为无头模式
 
-默认情况下，扩展启动Microsoft Edge新窗口中，该窗口在任务栏上显示另一个浏览器图标。
+默认情况下，扩展启动Microsoft Edge新窗口中，这将在任务栏上显示另一个浏览器图标。
 
 选择 **"切换屏幕视频** "在编辑器中显示浏览器，或隐藏浏览器（如果已显示）。
 
@@ -218,7 +217,7 @@ DevTools Microsoft Edge样式工具非常适用于调试和调整 CSS 属性样�
 
 CSS 镜像编辑是开发人员工具扩展的实验Microsoft Edge，可解决此问题。  打开镜像编辑时，在 DevTools 的样式工具中进行的任何更改也会更改工作区中的文件。
 
-在下面的示例中，我们已在 Visual Studio Code `index.html` 中打开，Microsoft Edge DevTools 扩展处于打开状态。  当我们在 CSS 选择器中选择弹性框图标并将 更改为 时，我们不仅可以看到浏览器和 `.searchbar` `flex-direction` `column` DevTools 中的更改，Visual Studio Code 还会自动导航到正确的样式表文件和相应的行号，并插入 `flex-direction: column` CSS 代码。 
+在下面的示例中，我们已在 Visual Studio Code 中打开，Microsoft Edge `index.html` DevTools 扩展处于打开状态。  当我们在 CSS 选择器中选择弹性框图标并将 更改为 时，我们不仅可以看到浏览器和 `.searchbar` `flex-direction` `column` DevTools 中的更改，Visual Studio Code 还会自动导航到正确的样式表文件和相应的行号，并插入 `flex-direction: column` CSS 代码。 
 
 :::image type="content" source="./media/css-mirror-editing-start.msft.png" alt-text="在样式工具中选择弹性框图标以创建 CSS 更改" lightbox="./media/css-mirror-editing-start.msft.png":::
 
@@ -256,7 +255,7 @@ CSS 镜像编辑是开发人员工具扩展的实验Microsoft Edge，可解决�
 
 源代码中的问题用波浪下划线突出显示。 可以检查该问题并获取有关问题所在、如何修复以及在何处查找详细信息的详细信息。  若要检查该问题，请选择具有波浪下划线的代码：
 
-:::image type="content" source="./media/edge-devtools-for-vscode-inline-issue-reporting.msft.png" alt-text="一段代码内报告的辅助功能问题，用于显示如何修复该问题以及在何处查找详细信息。" lightbox="./media/edge-devtools-for-vscode-inline-issue-reporting.msft.png":::
+:::image type="content" source="./media/edge-devtools-for-vscode-inline-issue-reporting.msft.png" alt-text="在代码段内报告的辅助功能问题，显示如何解决该问题以及在何处查找详细信息。" lightbox="./media/edge-devtools-for-vscode-inline-issue-reporting.msft.png":::
 
 若要查看文件的所有问题，请选择"查看**问题"。**
 
@@ -280,7 +279,7 @@ JavaScript 调试内置于Visual Studio Code。  可以在 Chrome、Microsoft Ed
     * 选择**F5，** 或在菜单栏上选择"**调试**"图标，然后选择"**运行并调试"。**
     * 打开"Visual Studio Code"命令调色板，然后选择"**调试：打开链接"。**
 
-    :::image type="content" source="./media/edge-devtools-for-vscode-start-session.png" alt-text="从 JavaScript Microsoft Edge启动 DevTools" lightbox="./media/edge-devtools-for-vscode-start-session.png":::
+    :::image type="content" source="./media/edge-devtools-for-vscode-start-session.png" alt-text="从Microsoft Edge启动 JavaScript 调试器中的 DevTools" lightbox="./media/edge-devtools-for-vscode-start-session.png":::
 
 1.  选择 **边缘**。  在调试工具栏上，注意" **检查"** 按钮。
 
@@ -290,20 +289,20 @@ JavaScript 调试内置于Visual Studio Code。  可以在 Chrome、Microsoft Ed
 
     首次选择"检查 **"** 时，编辑器会提示你安装扩展，Microsoft Edge[开发人员工具Visual Studio Code。](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)
 
-    安装 Microsoft Edge工具扩展后，选择"检查"时Microsoft Edge将打开 DevTools Visual Studio Code。 ****
+    安装 Microsoft Edge工具扩展后，选择"检查"时，Microsoft Edge将打开**** DevTools Visual Studio Code。
 
     :::image type="content" source="./media/edge-devtools-for-vscode-tools-inside.png" alt-text="&quot;检查&quot;按钮Microsoft Edge开发人员工具Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-tools-inside.png":::
 
-    现在，您可以检查 DOM，更改 CSS，并查看浏览器中运行的项目的网络请求，而无需离开Visual Studio Code。
+    现在，您可以检查 DOM，更改 CSS，并查看在浏览器中运行的项目的网络请求，而无需离开Visual Studio Code。
 
     您还可以使用编辑器中的调试控制台与浏览器中的文档进行交互。  你具有窗口对象的完全访问权限，并且可以使用[控制台实用程序 API。](/microsoft-edge/devtools-guide-chromium/console/utilities)
 
     :::image type="content" source="./media/edge-devtools-for-vscode-debug-console.png" alt-text="编辑器中的调试控制台与浏览器中打开的文档交互" lightbox="./media/edge-devtools-for-vscode-debug-console.png":::
 
 
-### <a name="automatically-attaching-to-microsoft-edge-and-launching-devtools-in-visual-studio-code"></a>自动连接到 Microsoft Edge，并启动开发人员Visual Studio Code
+### <a name="automatically-attaching-to-microsoft-edge-and-launching-devtools-in-visual-studio-code"></a>自动附加到 Microsoft Edge，并启动开发人员Visual Studio Code
 
-1.  如果你想要自动附加到 Microsoft Edge，Microsoft Edge Visual Studio Code 中的 DevTools，请执行上述步骤，然后创建一个文件， `launch.json` 如下所示。
+1.  如果你想要自动附加到 Microsoft Edge，Microsoft Edge Visual Studio Code 中的 DevTools，请执行上述步骤，然后创建一个文件 `launch.json` ，如下所示。
 
     选择**Microsoft Edge**类型。  在 `launch.json` 文件中，将 `pwa-msedge` 指定为 类型：
 
@@ -328,7 +327,7 @@ JavaScript 调试内置于Visual Studio Code。  可以在 Chrome、Microsoft Ed
 
 #### <a name="see-also"></a>另请参阅
 
-*  [调试文章中](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations)的_启动_配置Visual Studio Code。
+*  [在调试](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations)文章中_启动_配置Visual Studio Code。
 
 
 <!-- ====================================================================== -->

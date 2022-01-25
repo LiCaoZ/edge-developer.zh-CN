@@ -5,20 +5,19 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 06/07/2021
-ms.openlocfilehash: e9c54d6982bff8947ae5324f03f934ff7d891903
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 8351bc7ac0e97beaff7732b139d50774d8c5543b
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284642"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12317930"
 ---
 # <a name="test-keyboard-support-using-the-source-order-viewer"></a>使用源订单查看器测试键盘支持
 
 文档的源顺序对于辅助技术非常重要，并且可能不同于元素在呈现页面上的显示顺序。  使用 CSS，您可以直观地对页面元素进行重新排序，但这并不意味着屏幕阅读器等辅助技术将按相同的顺序表示页面元素。
 
-为了确保文档具有逻辑顺序，可以使用源顺序查看器用指定文档源代码**** 中顺序的数字标记不同的页面元素。  源**顺序查看器**位于"样式"**** 选项卡 (的"辅助功能"选项卡) 。 ****
+为了确保文档具有逻辑顺序，可以使用源顺序查看器用指定文档源代码**** 中顺序的数字标记不同的页面元素。  源**顺序查看器**位于"样式"**** 选项卡 (附近的"辅助功能") 。 ****
 
 
 <!-- ====================================================================== -->
@@ -49,7 +48,7 @@ ms.locfileid: "12284642"
 
 1.  选中" **源订单查看器"** 复选框。
 
-1.  在页面右上角，设置**X** **** 以关闭设置页。  在 DevTools 顶部，消息 **一个或多个设置已更改，要求重新加载生效。** 显示。  选择" **重新加载 DevTools"** 按钮。
+1.  在页面右上角的"设置"，**** 选择 **"X"** 关闭设置页。  在 DevTools 顶部，消息 **一个或多个设置已更改，要求重新加载生效。** 显示。  选择" **重新加载 DevTools"** 按钮。
 
 
 

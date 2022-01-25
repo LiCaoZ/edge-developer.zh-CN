@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: e010006e9689d392ed4fce7e5d69b29cf415fe6c
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 6f0715bd358c31d48cceac30139e3dd33c3819d7
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284089"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12317916"
 ---
 <!-- Copyright Kayce Basques
 
@@ -94,7 +93,7 @@ ms.locfileid: "12284089"
    python -m http.server # Python 3
    ```
 
-1.  打开网站Microsoft Edge并导航到本地托管的网站版本。  你应该能够使用 URL（如 或 ） `localhost:8080` 访问 `http://0.0.0.0:8080` 它。  确切的 [端口号](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) 可能不同。
+1.  在网站中Microsoft Edge一个选项卡，然后导航到本地托管的网站版本。  你应该能够使用 URL（如 或 ） `localhost:8080` 访问 `http://0.0.0.0:8080` 它。  确切的 [端口号](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) 可能不同。
 
     :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="演示" lightbox="../media/workspaces-workspaces-demo.msft.png":::
        演示
@@ -193,10 +192,10 @@ In short, the **DOM Tree** `!==` HTML.
 如果要保存对网页的 HTML 更改， **请使用"源** "工具。
 
 1.  导航到 **"源"** 工具。
-1.  在左侧 **导航器** (窗格中，) "页面 **"** 选项卡。
+1.  在左侧 **导航器** (窗格中，) " **页面"** 选项卡。
 1.  选择** (索引) 。 **  将打开页面的 HTML。
 1.  将`<h1>Workspaces Demo</h1>`替换为`<h1>I ❤️  Cake</h1>`。  查看下图。
-1.  选择 `Control` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存更改。
+1.  选择 `Control` + `S` (Windows、Linux) 或 (`Command` + `S` macOS) 保存更改。
 1.  刷新页面。  `<h1>`刷新页面后，元素将继续显示新文本。
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从&quot;源&quot;工具更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
@@ -231,14 +230,14 @@ In short, the **DOM Tree** `!==` HTML.
     > [!NOTE]
     > 该 `Save Changes To Disk With Workspaces` 演示中的链接会定期设置样式。
 
-1.  使用快速源工具将**script.js代码添加到****页面**底部。
+1.  使用快速源工具将以下 ** 代码script.js** 库 **的底部** 。
 
     ```javascript
     console.log('greetings from script.js');
     document.querySelector('a').style = 'font-style:italic';
     ```
 
-1.  选择 `Control` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存更改。
+1.  选择 `Control` + `S` (Windows、Linux) 或 (`Command` + `S` macOS) 保存更改。
 1.  刷新页面。
 
     > [!NOTE]

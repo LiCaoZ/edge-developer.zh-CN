@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: e1083352a86851b74d392e1b76b01210c04a7d23
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: fd15ab3e3802cf6f5fb5c7757f905e40307f9a2e
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286735"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12317965"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,7 +28,7 @@ ms.locfileid: "12286735"
    limitations under the License.  -->
 # <a name="customize-microsoft-edge-devtools"></a>自定义 Microsoft Edge DevTools
 
-此页面列出了自定义 DevTools Microsoft Edge的方法。
+此页面列出了自定义开发工具Microsoft Edge的方法。
 
 
 <!-- ====================================================================== -->
@@ -66,7 +65,7 @@ The **Drawer** is a second panel where you can choose which tools to display.
        将工具从 **"箱"** 移到主面板
     :::image-end:::
 
-*   若要将工具从主面板移动到箱中，请将鼠标悬停在工具上，打开上下文菜单 (右键单击") 然后选择"移动到**底部"。**
+*   若要将工具从主面板移动到箱中，请将鼠标悬停在工具上，打开上下文菜单 (右键单击") "移动到**底部"。**
 
     :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="将工具从主面板移动到&quot;箱&quot;" lightbox="../media/move-to-drawer.msft.png":::
        将工具从主面板移动到"箱 **"**
@@ -89,13 +88,13 @@ The **Drawer** is a second panel where you can choose which tools to display.
 <!-- ====================================================================== -->
 ## <a name="open-and-close-tools"></a>打开和关闭工具
 
-若要简化 DevTools 接口，默认情况下不会打开许多工具。 To open a tool in the main panel or the **Drawer**， select the **More Tools** (More Tools) button to the right of ![ the ](../media/open-tab-icon.png) tabs， and then select a tool from the list.
+若要简化 DevTools 接口，默认情况下不会打开许多工具。 若要在主面板或"箱"中打开**** 工具，请选择选项卡**** 右边的"更多工具" ("更多工具) "按钮，然后从列表中选择 ![ 一个 ](../media/open-tab-icon.png) 工具。
 
-:::image type="complex" source="../media/open-tool-in-main-panel-or-drawer.png" alt-text="&quot;更多工具 (+) 按钮打开新工具" lightbox="../media/open-tool-in-main-panel-or-drawer.png":::
+:::image type="complex" source="../media/open-tool-in-main-panel-or-drawer.png" alt-text="&quot;更多工具 (+) &quot;按钮以打开新工具" lightbox="../media/open-tool-in-main-panel-or-drawer.png":::
    " **更多工具** `+` () "按钮打开新工具
 :::image-end:::
 
-若要关闭工具，请选择工具 (中的 **"关闭**) ![ ](../media/close-tab-icon.png) 关闭工具"按钮。
+若要关闭工具，请选择工具 (**** 中的"关闭) ![ ](../media/close-tab-icon.png) 关闭工具"按钮。
 
 :::image type="complex" source="../media/close-tool-in-main-panel-or-drawer.png" alt-text="选项卡的&quot;关闭&quot;按钮" lightbox="../media/close-tool-in-main-panel-or-drawer.png":::
    选项卡的" **关闭"** 按钮
@@ -105,7 +104,7 @@ The **Drawer** is a second panel where you can choose which tools to display.
 <!-- ====================================================================== -->
 ## <a name="change-devtools-placement"></a>更改 DevTools 放置
 
-导航到 [Change DevTools placement (Undock， Dock to bottom， Dock to left) ](./placement.md).
+导航到"[将 DevTools 放置 (Undock，将扩展坞更改为底部，将扩展坞更改为左侧) 。 ](./placement.md)
 
 :::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="移除的开发人员工具" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
    移除的开发人员工具

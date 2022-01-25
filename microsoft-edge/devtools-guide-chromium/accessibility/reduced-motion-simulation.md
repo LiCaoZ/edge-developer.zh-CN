@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 06/07/2021
-ms.openlocfilehash: 2365e1185c7d3010b1d3e26d0eb41bced0f64f9a
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: d3a6e13ca4c6cf33a60ded39e7f5d29034da6a6c
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284649"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318105"
 ---
 # <a name="reduced-motion-simulation"></a>减少运动模拟
 

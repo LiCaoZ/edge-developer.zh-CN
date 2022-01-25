@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: 787d1015a9f949eb5baee3846710e2bf2f1bb10d
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 28177b9ec954aa364ae258039ac9e82f89b7b218
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284236"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12317937"
 ---
 <!-- Copyright Kayce Basques
 
@@ -41,7 +40,7 @@ ms.locfileid: "12284236"
 
 ### <a name="remotely-debug-microsoft-edge-on-windows-10-or-later-devices"></a>远程调试Microsoft Edge或Windows 10或更高版本的设备上的客户端
 
-Microsoft Edge ([Beta) ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)远程工具应用现已在 Microsoft Store[中提供](https://www.microsoft.com/store/apps/windows)。 此应用扩展[Windows Device Portal](/windows/uwp/debug-test-perf/device-portal)。 你可以从在开发Microsoft Edge运行的设备连接到远程Windows 10或更高版本设备，并显示目标列表。 此目标列表包括 Microsoft Edge[设备上打开](../../../../progressive-web-apps-chromium/index.md)的所有选项卡Windows PA。 针对在远程开发设备上运行的目标，在开发计算机上Windows DevTools。
+Microsoft Edge ([Beta) ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)远程工具应用现已在 Microsoft Store[中提供](https://www.microsoft.com/store/apps/windows)。 此应用扩展[Windows Device Portal](/windows/uwp/debug-test-perf/device-portal)。 你可以从在开发Microsoft Edge运行的设备连接到远程Windows 10或更高版本设备，并显示目标列表。 目标列表包括设备上打开Microsoft Edge [PBA](../../../../progressive-web-apps-chromium/index.md)中Windows选项卡。 针对在远程开发设备上运行的目标，在开发计算机上Windows DevTools。
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="现在，Microsoft Store 中提供 Microsoft Edge 远程工具 (Beta) 应用" lightbox="../../media/2020/03/remote-tools.msft.png":::
    [Microsoft Store](https://www.microsoft.com/store/apps/windows) 中提供 [Microsoft Edge 远程工具 (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) 应用
@@ -199,7 +198,7 @@ Chromium 问题 [#1051466](https://crbug.com/1051466)
 *   条件断点 (![条件断点](../../media/2020/03/conditional.msft.png)) 用半红半白圆表示。
 *   Logpoints (![Logpoint](../../media/2020/03/logpoint.msft.png)) 用带控制台图标的红色圆圈表示。
 
-新图标的动机是使 UI 与其他 GUI 调试工具 (通常将断点着色为红色) 并便于一目了然地区分这 3 个功能。
+新图标的动机是使 UI 与其他 GUI 调试工具 (这通常将断点着色为红色) 并便于一目了然地区分这 3 个功能。
 
 Chromium 问题 [#1041830](https://crbug.com/1041830)
 
@@ -237,7 +236,7 @@ DevTools 团队经常从 Web 开发人员那里获得反馈，尽管可以从 De
 
 ### <a name="delete-all-local-overrides-in-a-folder"></a>删除文件夹中的所有本地覆盖
 
-设置本地覆盖**** 后，你可以将鼠标悬停在目录上，打开上下文菜单 (右键单击) ，然后选择新的"删除所有覆盖"选项以删除该**** 文件夹中的所有局部覆盖。
+设置本地覆盖**** 后，你可以将鼠标悬停在目录上，打开上下文菜单 (右键单击) ，然后选择新的"删除所有覆盖"选项以删除该文件夹中**** 的所有局部覆盖。
 
 :::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="删除所有覆盖" lightbox="../../media/2020/03/overrides.msft.png":::
    删除所有覆盖

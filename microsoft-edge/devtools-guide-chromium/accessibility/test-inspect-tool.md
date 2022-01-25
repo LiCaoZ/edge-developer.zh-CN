@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 06/07/2021
-ms.openlocfilehash: 77a5784d103b83c2c4547a3ef9003f4e6ec6db54
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 617fa6b284b73e9cfdf4e8f951c0fbb404e5776c
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285482"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12317944"
 ---
 # <a name="use-the-inspect-tool-to-detect-accessibility-issues-by-hovering-over-the-webpage"></a>使用"检查"工具将鼠标悬停在网页上以检测辅助功能问题
 
@@ -72,7 +71,7 @@ ms.locfileid: "12285482"
 *   布局类型。 如果元素是使用弹性框或网格放置的，则会显示 (![网格布局图标](../media/grid-icon.msft.png)) 显示。
 *   元素的名称，如 、 `h1` `h2` 或 `div` 。
 *   元素的尺寸（以像素为单位）。
-*   作为颜色样本的颜色颜色 (或较小的、彩色) 和字符串形式 (如 `#336699`) 。
+*   颜色样本颜色颜色 (或较小的彩色正方形) 和字符串形式 (如 `#336699`) 。
 *   字体信息，如大小和字体系列。
 *   边距和填充（以像素为单位）。
 
@@ -86,7 +85,7 @@ ms.locfileid: "12285482"
 
 1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  选择**** DevTools (左上角的"检查") "检查工具"图标，使按钮突出显示为蓝色 ![ ](../media/inspect-icon.msft.png) () 。
+1.  选择**** DevTools (左上角的"检查"按钮) 检查工具图标"，以便按钮突出显示为 (![ ](../media/inspect-icon.msft.png) 蓝色) 。
 
 1.  将鼠标悬停在呈现的演示网页的不同部分上。  网页中的每个元素现在都显示一个多色覆盖层。 此多色覆盖层可以显示元素内部的嵌套区域。 例如，将鼠标悬停在"猫"的 **左边距上**。  Inspect **工具** 使用不同颜色突出显示 **"猫** "部分的几个矩形部分，显示来自网页上 CSS 弹性框定义的布局。
 
@@ -104,7 +103,7 @@ ms.locfileid: "12285482"
 
 1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  选择**** DevTools (左上角的"检查") "检查"工具按钮，使按钮突出显示为 (![ ](../media/inspect-icon.msft.png) 蓝色) 。
+1.  选择**** DevTools (左上角的"检查") "检查"工具按钮，以便该按钮以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
 
 1.  选择" **元素"** 工具。
 
@@ -116,7 +115,7 @@ ms.locfileid: "12285482"
     有关所选元素的详细信息将显示在 **"** 元素"工具中
 :::image-end:::
 
-在呈现的页面中选择元素后，可以使用"样式"选项卡**** (旁的"辅助功能"选项卡) **** 查看 **"** 辅助功能树"并使用"源顺序查看器 **"。**
+在呈现的页面中选择元素后，可以使用"样式"选项卡**** (附近的"辅助功能"选项卡) 查看****"辅助功能树"并使用"源顺序查看器******"。**
 
 
 <!-- ====================================================================== -->

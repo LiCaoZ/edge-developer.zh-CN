@@ -6,14 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
 ms.date: 05/06/2021
-ms.openlocfilehash: 5ba17e9cb810a6491e7dee8af2d821de97953b2e
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 599e9781969d683cbcbe886b7ca17ab1b1eeac66
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286224"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12317790"
 ---
 # <a name="win32-c-webview2-api-conventions"></a>Win32 C++ WebView2 API 约定
 
@@ -47,7 +46,7 @@ HRESULT Invoke(HRESULT result)
 
 或者，对于 ，您提供一个实例，该实例具有一个方法，用于提供 `ICoreWebView2::ExecuteScript` `Invoke` 请求的成功或失败 `ExecuteScript` 代码。  另外提供第二个参数，该参数是运行脚本的结果的 JSON。
 
-可以手动实现委托接口，也可以将 Callback 函数 (`CompleteHandler` [WRL) 。 ](/cpp/cppcx/wrl/callback-function-wrl)  WRL [代码 (WRL) ](/cpp/cppcx/wrl/callback-function-wrl) 用于以下 WebView2 代码片段。
+可以手动实现委托接口，也可以将 Callback 函数 (`CompleteHandler` [WRL) ](/cpp/cppcx/wrl/callback-function-wrl)。  以下 [WebView2 (代码) 使用 WRL ](/cpp/cppcx/wrl/callback-function-wrl) 代码段中的 Callback 函数。
 
 ```cpp
 void ScriptComponent::InjectScript()

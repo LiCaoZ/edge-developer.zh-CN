@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
 ms.date: 06/07/2021
-ms.openlocfilehash: b8976510223bbb70ca4cfa0c4405813c9b9915e1
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 5c31562fd5fcde4deef0b0757a13bd25458fc9c0
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286077"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318126"
 ---
 <!-- Copyright Rob Dodson
 
@@ -35,7 +34,7 @@ ms.locfileid: "12286077"
 
 本指南将指导你完成最可访问的工具和选项卡，并突出显示你可能会遇到的问题。
 
-DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为面板 。) 工具组织到__ 主工具栏和箱工具栏上的[ARIA](https://www.w3.org/TR/wai-aria-1.1/#tablist)选项卡列表中。
+DevTools 分为一系列工具。   (在命令 **菜单中**，工具称为面板 _。) _工具组织到主工具栏和箱工具栏上的 [ARIA](https://www.w3.org/TR/wai-aria-1.1/#tablist) 选项卡列表中。
 
 以下是工具示例：
 *   元素**工具**允许你[查看和更改 DOM 节点](../dom/index.md#navigate-the-dom-tree-with-a-keyboard)或[CSS。](../css/index.md)
@@ -76,7 +75,7 @@ To get started， navigate to [Open Microsoft Edge DevTools](../open/index.md). 
 
 若要选择特定工具，请使用命令 [菜单](../command-menu/index.md)。  在命令菜单中，工具_称为面板。_
 
-1.  打开 DevTools 后 `Control` + `Shift` + `P` ， (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
+1.  打开 DevTools 后 `Control` + `Shift` + `P` ， (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令**菜单**。
     命令 **菜单** 是一个模糊搜索自动完成组合框。
 1.  键入面板名称 (工具) ，然后使用键盘上的 导航 `Down Arrow` 到正确的选项。
 1.  选择 `Enter` 以运行命令。
@@ -115,7 +114,7 @@ To get started， navigate to [Open Microsoft Edge DevTools](../open/index.md). 
 
 *   将焦点放在“**DOM 树**”中的节点上时，选择 `Enter` 以使其可以编辑。
 *   选择 `Tab` 以在属性值之间移动。  听到“空格”声音时，你已位于空白文本输入内，并且能够键入新的属性值。
-*   选择 `Control` + `Enter` (Windows、Linux) 或 (`Command` macOS) 接受更改并听到元素 + `Enter` 的全部内容。
+*   选择 `Control` + `Enter` (Windows、Linux) 或 (macOS) 接受更改并听到元素 `Command` + `Enter` 的全部内容。
 
 **已知问题**
 
@@ -148,7 +147,7 @@ DOM **断点** 和 **属性** 选项卡不可通过键盘访问。
 
 在 **"样式** "窗格中查找用于筛选样式的控件，切换元素 (如 [：active](https://developer.mozilla.org/docs/Web/CSS/:active) 和 [：focus](https://developer.mozilla.org/docs/Web/CSS/:focus)) 、切换类和添加新类。  还有一个功能强大的样式检查工具，用于浏览和修改当前应用于“**DOM 树**”中处于焦点的元素的样式。
 
-了解“**样式**”窗格的关键概念是它只显示“**DOM 树**”窗格中当前选中节点的样式。  例如，假设已完成对 `<header>` 节点样式的检查，并且现在希望查看 `<footer>` 节点的样式。  若要执行该操作，首先需要在“**DOM 树**”中选择 `<footer>` 节点。  您可能会发现使用"检查"工作流检查[](#inspect-an-element-on-the-page)位于节点 (常规附近的节点（例如页脚) 中的链接，该链接将聚焦 `footer` **DOM 树**）的速度更快，然后使用键盘导航到您感兴趣的精确节点。
+了解“**样式**”窗格的关键概念是它只显示“**DOM 树**”窗格中当前选中节点的样式。  例如，假设已完成对 `<header>` 节点样式的检查，并且现在希望查看 `<footer>` 节点的样式。  若要执行该操作，首先需要在“**DOM 树**”中选择 `<footer>` 节点。  您可能会发现使用"检查"工作流检查[](#inspect-an-element-on-the-page)位于节点 (（例如页脚) 中的链接）的节点会更快，这样会侧重于 `footer` **DOM 树**，然后使用键盘导航到您感兴趣的精确节点。
 
 #### <a name="navigate-the-styles-pane"></a>导航“样式”窗格
 
@@ -253,6 +252,6 @@ Lighthouse 报告分为与每个审核类别对应的部分。  报告打开时�
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) ，由 [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (Contributor、Google WebFundamentals) 。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) 由 [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (Contributor、Google WebFundamentals) 。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

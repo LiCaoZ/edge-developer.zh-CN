@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 06/07/2021
-ms.openlocfilehash: 5fc1693578f89a0b8bbcb3b454ab1a79b66b5131
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: c5d5d5250455f90ce8e6c4ffff8a116abcb3a229
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285468"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12317986"
 ---
 # <a name="check-text-color-contrast-in-the-default-state-using-the-inspect-tool"></a>使用 Inspect 工具检查默认状态下的文本颜色对比度
 
@@ -34,7 +33,7 @@ ms.locfileid: "12285468"
 
 1.  打开 [新选项卡中的辅助功能测试](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 演示网页。 然后选择 **F12** 以打开 DevTools。
 
-1.  选择 **DevTools** (左上角的"检查) 检查"按钮，使图标以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
+1.  选择**** DevTools (左上角的"检查) 检查"按钮，使图标以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
 
 1.  在呈现的网页中，将鼠标悬停在边栏导航菜单的蓝色 **"猫** "链接上。  将显示 **Inspect** 工具的信息覆盖层。  在信息**覆盖的**"辅助功能"部分，"对比度"行上会显示一个**** 绿色选中标记，指示此元素具有足够的文本颜色与背景色对比度。
 

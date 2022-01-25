@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 10/19/2021
-ms.openlocfilehash: a0209768154dcf85c087cbf5683bf3575fcd8c1e
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 3d66883985b2df0f2ba96c542454b5e536f8ee45
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286140"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318147"
 ---
 # <a name="verify-that-the-webpage-layout-is-usable-when-narrow"></a>验证网页布局在缩小时是否可用
 
@@ -27,4 +26,4 @@ ms.locfileid: "12286140"
 *  通过模拟不同的设备、缩放级别和像素比率执行视觉测试。
 *  测试产品在不可靠连接或用户脱机时的行为方式。  在低速连接上向用户显示最重要的交互也是辅助功能注意事项。
 
-若要了解有关设备仿真**工具**的信息，请参阅在[Microsoft Edge Tools 中模拟移动设备](../device-mode/index.md)。
+若要了解有关设备仿真**工具**的信息，请参阅在 Microsoft Edge [DevTools 中模拟移动设备](../device-mode/index.md)。

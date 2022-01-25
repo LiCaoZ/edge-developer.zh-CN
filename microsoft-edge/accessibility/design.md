@@ -6,14 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.assetid: 8468f8e1-9f4a-426c-a969-76eab9419137
-keywords: 辅助功能， 开发人员辅助功能， 可访问的网站， 边缘， Web 开发， ARIA， 开发人员， UIA， UI 自动化
 ms.date: 10/27/2020
-ms.openlocfilehash: 52e916700d1047185950ceb28834871e947f81f5
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 46dc3121d89006d22ad9c9c60ddf78dabbcb5b6c
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285181"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318315"
 ---
 # <a name="designing-accessible-websites"></a>设计易于访问的网站
 
@@ -53,8 +52,8 @@ ms.locfileid: "12285181"
 
 *  [针对包含进行](https://w3.org/WAI/users/Overview.html) 设计 - 针对包含进行设计由 W3C Web 辅助功能计划提供的资源可帮助你更好地了解残障用户以及如何在设计网站时牢记他们。
 
-*  [设计非独占软件](https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software)- 设计非独占软件讨论适用于通用 Windows 平台和 UWP (的 Microsoft 设计) 。
+*  [设计非独占软件](https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software)- 设计非独占软件讨论适用于通用 Windows Platform (UWP) 的 Microsoft 设计原则和) 。
 
 *  [残障人士](https://www.w3.org/WAI/intro/people-use-web/Overview.html) 如何使用 Web - W3C 提供的此资源介绍了残障人士（包括与年龄相关的残障人士）如何使用 Web。
 
-*  [非独占Toolkit](https://www.microsoft.com/design/practice#howwemake-section) - Microsoft 开发了非独占设计Toolkit，以展示人类多样性如何创建更好的设计约束以及如何将看似简单的解决方案连接到更广泛的市场。
+*  [非独占设计Toolkit](https://www.microsoft.com/design/practice#howwemake-section) - Microsoft 开发了非独占设计Toolkit，以展示人类多样性如何创建更好的设计约束以及如何将看似简单的解决方案连接到更广泛的市场。

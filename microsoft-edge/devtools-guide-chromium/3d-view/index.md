@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
 ms.date: 12/03/2020
-ms.openlocfilehash: af9fa9f56c3f8a7ee05b313d4da6e787e66bed25
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: a70e7a9ed52e4489ac2796b3a45269033486e013
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284481"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318245"
 ---
 # <a name="3d-view"></a>3D 视图
 
@@ -60,7 +59,7 @@ ms.locfileid: "12284481"
    屏幕控件
 :::image-end:::
 
-若要将画布视图重置为原始视图，请选择"重置**** 相机"按钮，或选择"**** 重置视图中的元素"和"将相机重新居中 (侧刷新图标) 按钮。
+若要将画布视图重置为原始视图，请选择"重置**** 相机"按钮，或选择"**** 重置视图中的元素"和"将相机重新居中 (旁刷新图标) 按钮。
 
 若要刷新画布，例如浏览器发生更改或切换到设备仿真器视图时，请选择"重新拍摄快照"按钮或****"获取新的快照"按钮**** (刷新图标) 。
 

@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 06/07/2021
-ms.openlocfilehash: be17be80599bf9699b9335c35c5422cc2f9cc4af
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 482b999fe225d05514640d142de9e06dda65c3cf
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284446"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318238"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques
@@ -36,7 +35,7 @@ ms.locfileid: "12284446"
 
 1.  选择" **元素"** 工具。
 1.  在 **DOM 树**中，选择要检查的元素。
-1.  选择 **"辅助功能"** 选项卡。 可能需要先选择"更多选项卡" ("更多选项卡"按钮) "样式"选项卡**** ![ ](../media/more-tabs-icon.msft.png) 右边的"更多**选项卡**"按钮。
+1.  选择 **"辅助功能"** 选项卡。 可能需要先选择"更多选项卡" ("更多选项卡"按钮) "样式"选项卡右边的**** ![ ](../media/more-tabs-icon.msft.png) "更多**选项卡"** 按钮。
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="检查&quot;辅助功能&quot;选项卡中的 DevTools 主页的 h1 元素" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    检查 `h1` "辅助功能"选项卡中的 DevTools **主页** 元素

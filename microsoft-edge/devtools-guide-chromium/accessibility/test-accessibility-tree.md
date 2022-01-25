@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 06/07/2021
-ms.openlocfilehash: 5aaec94801757e38b864ff8e0ead2aeb8e73cf1e
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: cc847d977f72dc9c2030174ef24c2ff868e4b7c9
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285601"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318084"
 ---
 # <a name="check-the-accessibility-tree-for-keyboard-and-screen-reader-support"></a>检查辅助功能树是否支持键盘和屏幕阅读器
 
@@ -20,7 +19,7 @@ ms.locfileid: "12285601"
 
 多个 DevTools 功能检查键盘和屏幕阅读器支持。  使用 **Inspect** 工具单独检查每个页面元素的辅助功能可能会相当耗时。  检查网页的另一种方式是使用 **辅助功能树**。  辅助功能 **树** 指示页面向辅助技术（如屏幕阅读器）提供哪些信息。
 
-辅助功能 **树** 是 DOM 树的子集，其中包含 DOM 树中的元素，这些元素对于在屏幕阅读器中显示页面内容非常有用。  辅助功能**树位于**"样式"选项卡**** 附近的"元素******" ("辅助功能**") 。
+辅助功能 **树** 是 DOM 树的子集，其中包含 DOM 树中的元素，这些元素对于在屏幕阅读器中显示页面内容非常有用。  辅助功能**树位于**"元素"工具**** 的"辅助功能"选项卡**** ("**样式**"选项卡) 。
 
 若要浏览将辅助功能树与演示页面一同使用：
 
@@ -38,7 +37,7 @@ ms.locfileid: "12285601"
     辅助功能树工具中的"资金"表单按钮
 :::image-end:::
 
-树中没有名称或具有 (角色的任何元素（如 `generic` 元素) ）都是一个问题，因为该元素对键盘用户或使用辅助技术的用户不可用 `div` 。
+树中没有名称或具有 (角色的任何元素（如 `generic` 元素) ）都存在问题，因为该元素对键盘用户或正在使用辅助技术的用户不可用。 `div`
 
 
 <!-- ====================================================================== -->

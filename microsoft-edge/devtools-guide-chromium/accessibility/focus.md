@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge,web 开发,f12 工具,开发工具
 ms.date: 06/07/2021
-ms.openlocfilehash: 579778027e633c4ee56128a71d3d65a358ecf8b8
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: ecfc49e9d4cd816098e895d21312f16b7f230172
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286175"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318203"
 ---
 <!-- Copyright Kayce Basques
 
@@ -48,8 +47,8 @@ ms.locfileid: "12286175"
 由于该表达式始终代表着焦点的元素，因此现在可以始终跟踪哪个元素具有焦点。
 
 *   将鼠标悬停在结果上，以在视区中突出显示焦点元素。
-*   将鼠标悬停在结果上，右键单击" (") "，然后选择"元素"面板中的"**** 展示"，在"元素"工具上的"DOM 树"中**显示元素。**
-*   将鼠标悬停在结果上，右键 (单击") "，然后选择"存储"作为全局变量，**** 以创建对可以在控制台中使用的节点的变量**引用**。
+*   将鼠标悬停在结果上，右键单击 () 上下文菜单，然后选择"元素"面板中的"**** 展示"，在"元素"工具上的"DOM 树"中**显示元素。**
+*   将鼠标悬停在结果上，右键单击" (") "，然后选择"存储"作为全局变量****，以创建对可以在控制台中使用的节点的变量**引用**。
 
 
 <!-- ====================================================================== -->
@@ -61,6 +60,6 @@ ms.locfileid: "12286175"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference)，由技术编写 (Chrome DevTools & Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors/kaycebasques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference)，由技术编写 (、Chrome DevTools & Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors/kaycebasques)
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

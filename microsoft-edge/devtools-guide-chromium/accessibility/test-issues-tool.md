@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 06/07/2021
-ms.openlocfilehash: a09c173c7beecbee706380573065d83d48db9564
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 953f9c42c61b8ee93da24adda28b7b8da77b27ea
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285510"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12317951"
 ---
 # <a name="automatically-test-a-webpage-for-accessibility-issues"></a>自动测试网页中的辅助功能问题
 
@@ -27,7 +26,7 @@ ms.locfileid: "12285510"
 <!-- ====================================================================== -->
 ## <a name="view-the-accessibility-section-of-the-issues-tool"></a>查看问题工具的辅助功能部分
 
-1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。  在右上角，将显示"问题****" (") " ![ ](../media/issues-counter-icon.msft.png) 计数器。  问题 **计数器** 是语音气泡图标以及自动检测到的问题数。
+1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。  在右上角，将显示"问题 **" (") ** ![ ](../media/issues-counter-icon.msft.png) 计数器。  问题 **计数器** 是语音气泡图标以及自动检测到的问题数。
 
     :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="DevTools 中的&quot;问题&quot;计数器，指示当前文档中的问题数" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
         DevTools 中的"问题"计数器，指示当前文档中的问题数****
@@ -51,7 +50,7 @@ ms.locfileid: "12285510"
 
 1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  在右上角，选择"问题 **" ("** ![ 问题 ](../media/issues-counter-icon.msft.png) ") 。  问题**工具**将在 DevTools 底部的"箱"中打开。 ****
+1.  在右上方，选择"问题 **" ("** ![ 问题 ](../media/issues-counter-icon.msft.png) ") 。  问题**工具**将在 DevTools 底部的"箱"中打开。 ****
 
 1.  在" **问题"** 选项卡上，展开 **"辅助功能"** 部分。
 
@@ -78,7 +77,7 @@ ms.locfileid: "12285510"
 
 1.  作为正确连接的示例，选择"捐赠 **"表单** 上的"其他"标签。  焦点指示器框正确显示在"其他"标签旁边的输入文本框上，因为**** 存在匹配 `for` 值 `id` 和属性值。
 
-1.  在" **问题"工具**中，选择"进一步 **阅读** "以了解有关该问题的更多信息。  若要打开新选项卡中的链接，请按**Ctrl**单击 Windows/Linux 上的链接，或单击 + ******** + **** macOS 上的链接的命令。
+1.  在" **问题"工具**中，选择"进一步 **阅读** "以了解有关该问题的更多信息。  若要打开新选项卡中的链接，请按**Ctrl**单击 + **** Windows/Linux 上的链接，或**** 单击 macOS 上的 + ****"命令"链接。
 
     :::image type="complex" source="../media/a11y-testing-more-information-links.msft.png" alt-text="指向有关问题的更深入信息的&quot;问题&quot;选项卡上的链接" lightbox="../media/a11y-testing-more-information-links.msft.png":::
         指向 **有关问题的** 更深入信息的"问题"选项卡上的链接

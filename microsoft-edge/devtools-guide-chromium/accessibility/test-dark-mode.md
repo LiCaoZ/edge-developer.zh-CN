@@ -1,18 +1,17 @@
 ---
 title: 检查深色主题和浅主题的对比度问题
-description: " (使用呈现工具中的\"模拟 CSS 媒体功能首选-配色方案\\\"下拉列表) 针对深色模式和浅色模式) 检查深色主题和浅色主题控件的对比度问题。"
+description: 使用呈现工具中的"模拟 CSS 媒体功能首选-配色方案\"下拉列表) 检查深色主题和浅色主题 (的对比度问题。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 06/07/2021
-ms.openlocfilehash: 962bcda6f290a93230d670c33c70a924e55d5c39
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: c1e8b687e0cbb579eb606712b0ede4321ab79ee3
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285475"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318021"
 ---
 # <a name="check-for-contrast-issues-with-dark-theme-and-light-theme"></a>检查深色主题和浅主题的对比度问题
 
@@ -22,7 +21,7 @@ ms.locfileid: "12285475"
 
 大多数操作系统都提供深色模式和浅色模式。  您的网页可以使用 CSS 媒体查询对此操作系统设置做出反应。  您可以使用呈现工具中的 CSS 选项测试这些主题并测试 CSS 媒体查询，而无需更改 `prefers-color-scheme` **操作系统** 设置。
 
-例如，辅助功能测试演示页面包括浅色主题和深色主题。  演示页面从操作系统继承深色或浅色主题设置。  如果我们使用 DevTools 模拟将操作系统设置为浅色方案，然后刷新演示网页，问题工具将显示六个**** 色对比度问题，而不是两个。   (你可能会看到不同的数字。) 
+例如，辅助功能测试演示页面包括浅色主题和深色主题。  演示页面从操作系统继承深色或浅色主题设置。  如果我们使用 DevTools 模拟将操作系统设置为浅色方案，然后刷新演示网页，问题工具将显示六个**** 色对比度问题，而不是两个。   (您可能会看到不同的数字。) 
 
 
 若要模拟用户的首选颜色主题选择：：
