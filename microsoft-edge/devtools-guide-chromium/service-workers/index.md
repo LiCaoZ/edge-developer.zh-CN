@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge， Web 开发， f12 工具， devtools， 服务工作者， PWA
 ms.date: 02/19/2021
-ms.openlocfilehash: 00da3a1b220e99d877124439747e2373c53215ce
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 5aa81652847bf57fa9c5a4c9fa1b2da3ba9ead9b
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285741"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320786"
 ---
 # <a name="service-worker-improvements"></a>服务工作者改进
 

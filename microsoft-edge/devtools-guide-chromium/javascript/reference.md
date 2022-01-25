@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: a9352487588e01facb776afa3e4299193ff549f7
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 2a8899e221bee9ec9ef81cc8a4e3aaafbf0d4b4d
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286406"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320975"
 ---
 <!-- Copyright Kayce Basques
 
@@ -54,7 +53,7 @@ ms.locfileid: "12286406"
 <!-- ====================================================================== -->
 ## <a name="reformat-a-minified-javascript-file-with-pretty-print"></a>使用非常打印重新设置缩小的 JavaScript 文件
 
-若要使缩小的文件可读，请选择"编辑器"窗格底部的****" (格式) " ![ ](../media/format-icon.msft.png) 按钮。 ****
+若要使缩小的文件可读，请选择"编辑器"窗格 () "设置格式**** ![ ](../media/format-icon.msft.png) "**按钮**。
 
 :::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="格式按钮" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
    “**格式**”按钮
@@ -136,7 +135,7 @@ function getName() {
 
 ### <a name="step-out-of-line-of-code"></a>执行剩余代码
 
-当暂停在与正在调试的问题不相关的函数内时，选择"步骤 (步骤) "按钮以运行函数的其余**** ![ ](../media/step-out-icon.msft.png) 代码。
+当暂停在与正在调试的问题不相关的函数内时，选择"步骤 ** (** 步骤) "按钮以运行函数的其余 ![ ](../media/step-out-icon.msft.png) 代码。
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="选择执行剩余" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
    选择 **“执行剩余”**
@@ -162,9 +161,9 @@ function getName() {
 
 调试长函数时，可能有许多代码与正在调试的问题不相关。
 
-你可以选择逐行执行，但这很繁琐。  您可以选择在感兴趣的行上设置代码行断点，然后选择"恢复脚本执行 ** (** Resume 脚本执行) "按钮，但有一种更快的方法 ![ ](../media/resume-script-run-icon.msft.png) 。
+你可以选择逐行执行，但这很繁琐。  您可以选择在感兴趣的行上设置代码行断点，然后选择"Resume **script execution** (Resume script ![ execution) "按钮，但有一种更快的方法 ](../media/resume-script-run-icon.msft.png) 。
 
-将鼠标悬停在你感兴趣的代码行上，打开上下文菜单 (右键单击") "，然后选择"继续**在此处"。**  DevTools 会运行所有代码，一直运行到该处，然后暂停到该行。
+将鼠标悬停在感兴趣的代码行上，打开上下文菜单 (右键单击") "，然后选择"继续**到此处"。**  DevTools 会运行所有代码，一直运行到该处，然后暂停到该行。
 
 :::image type="complex" source="../media/javascript-source-page-continue-to-here.msft.png" alt-text="选择继续至此处" lightbox="../media/javascript-source-page-continue-to-here.msft.png":::
    选择“**继续至此处**”
@@ -172,7 +171,7 @@ function getName() {
 
 ### <a name="restart-the-top-function-of-the-call-stack"></a>重新启动调用的顶部函数
 
-若要暂停调用堆栈中顶部函数的第一行，而暂停在代码行上，请将鼠标悬停在"调用堆栈"窗格中的任意位置****，打开上下文菜单 (右键单击") "，然后选择"**重新启动**框架"。  top 函数是最后一个运行的函数。
+若要暂停调用堆栈中顶部函数的第一行，而暂停在代码行上，请将鼠标悬停在"调用堆栈"窗格中的任意位置****，打开上下文菜单 (右键单击") "，然后选择"**重新启动**帧"。  top 函数是最后一个运行的函数。
 
 下面的代码段是一个分步执行示例。
 
@@ -241,7 +240,7 @@ function factorial(n) {
    “**监视**”窗格
 :::image-end:::
 
-*   若要创建新的监视表达式，请选择"添加 **监视** 表达式 (![ 添加监视表达式) ](../media/add-expression-icon.msft.png) 按钮。
+*   若要创建新的监视表达式，请选择"添加 **监视** 表达式 (![ 添加监视表达式 ](../media/add-expression-icon.msft.png)) 按钮。
 *   若要刷新所有现有表达式的值，请选择"刷新 (**** ![ 刷新) ](../media/refresh-icon.msft.png) 按钮。  逐步执行代码时，值将自动刷新。
 *   若要删除监视表达式，请右键单击该表达式，然后选择"**** 删除监视表达式 (![ 删除监视表达式 ](../media/delete-expression-icon.msft.png)) 。
 
@@ -268,7 +267,7 @@ function factorial(n) {
 This should be moved to an "Export debug data" H2 section when there is enough content for that, but there is not right now, so it is here.
 -->
 
-若要将当前调用堆栈复制到剪贴板，请将鼠标悬停在"调用**** 堆栈"窗格中的任意位置，打开上下文菜单 (右键单击") "，然后选择"复制**堆栈跟踪"。**
+若要将当前调用堆栈复制到剪贴板，请将鼠标悬停在"调用**** 堆栈"窗格中的任意位置，打开上下文菜单 (右键单击") "，然后选择"复制堆栈跟踪 **"。**
 
 :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png" alt-text="选择复制堆叠跟踪" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png":::
    选择“**复制堆叠跟踪**”
@@ -323,7 +322,7 @@ function animate() {
 
 ### <a name="mark-a-script-as-library-code-from-settings"></a>在设置中将脚本标记为库代码
 
-若要标记脚本的单个脚本或脚本**模式，设置：**
+若要标记脚本中的单个脚本或脚本**设置：**
 
 1.  打开“[设置](../customize/index.md)”。
 1.  导航到“**库代码**”设置。

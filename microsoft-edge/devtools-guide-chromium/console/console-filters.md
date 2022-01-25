@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 04/13/2021
-ms.openlocfilehash: f7f63cb8dabd6f61b39b80b3d5d889e8ad9e802f
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 05a47948377983178cff5d968546bb8a10f8688d
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284369"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318525"
 ---
 # <a name="filter-console-messages"></a>筛选控制台消息
 

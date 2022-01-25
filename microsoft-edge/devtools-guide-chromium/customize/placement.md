@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: f74d73ad02cfbcbfa14664c0e8c5ff6995e0a4ec
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: d7eeac5c2bd52fd9c5e926d517769e45cb460dc6
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286462"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318763"
 ---
 <!-- Copyright Kayce Basques
 
@@ -51,7 +50,7 @@ DevTools 可以撤消停靠到单独的窗口，你可以移动到单独的监�
 <!-- ====================================================================== -->
 ## <a name="change-placement-from-the-main-menu"></a>从主菜单更改位置
 
-1.  单击"自定义和控制**DevTools** () "，然后选择"撤消停靠到单独的窗口" (""撤消停靠) "，选择"停靠到底部 (扩展坞到底部) "，或选择"扩展坞向左 (扩展坞向左 `...` **** ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png)) "。
+1.  单击"自定义和控制**DevTools** () "，然后选择"撤消停靠到单独的窗口" ("撤消停靠) "，选择"停靠到底部 (扩展坞到底部) "，或选择"扩展坞向左 (扩展坞向左 `...` **** ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png)) "。
 
 :::image type="content" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="选择&quot;撤消停靠到单独的窗口&quot;。" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
 

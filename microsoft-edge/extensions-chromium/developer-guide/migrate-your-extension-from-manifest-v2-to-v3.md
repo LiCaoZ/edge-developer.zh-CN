@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge， 扩展开发， 边缘扩展， 浏览器扩展， 加载项， 开发人员， 清单 v3， 迁移到清单 v3
 ms.date: 11/24/2021
-ms.openlocfilehash: 46ecda8ce6eb94375b0c4546d7269de8a2020d21
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: a62954367f8c843bf5d9e6069a98f2b5c34c9336
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284063"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320429"
 ---
 # <a name="prepare-to-update-your-extensions-from-manifest-v2-to-v3"></a>准备将扩展从清单 V2 更新到 V3
 
@@ -30,7 +29,7 @@ ms.locfileid: "12284063"
 <!-- ====================================================================== -->
 ## <a name="run-time-host-permissions"></a>运行时主机权限
 
-在安装时，扩展可能会请求访问所有网站和内容所需的全面权限。  这些权限允许扩展在最小干预下运行，因此存在用户隐私和安全性风险。  为了提高透明度，Microsoft Edge扩展团队提供了一些控件，使用户能够在运行时允许或限制对网站的访问。
+在安装时，扩展可能会请求访问所有网站和内容所需的全面权限。  这些权限允许扩展在最小干预下运行，因此存在用户隐私和安全性风险。  为了提高透明度，Microsoft Edge扩展团队提供了允许用户在运行时允许或限制对网站的访问的控件。
 
 
 <!-- ====================================================================== -->
@@ -54,7 +53,7 @@ Microsoft Edge扩展团队将 Web 请求[API](https://developer.chrome.com/docs/
 <!-- ====================================================================== -->
 ## <a name="background-service-workers"></a>后台服务工作者
 
-服务工作人员可在 Canary 预览频道中测试Microsoft Edge。  若要将扩展从后台页面迁移到服务工作者，请参阅从 [后台页面迁移到服务工作者](https://developer.chrome.com/docs/extensions/mv3/migrating_to_service_workers)。  开发人员Microsoft Edge团队正在评估并调查此更改对开发人员和用户的影响。
+服务工作人员可在测试服务的 Canary 预览频道中Microsoft Edge。  若要将扩展从后台页面迁移到服务工作者，请参阅从 [后台页面迁移到服务工作者](https://developer.chrome.com/docs/extensions/mv3/migrating_to_service_workers)。  开发人员Microsoft Edge团队正在评估并调查此更改对开发人员和用户的影响。
 
 
 <!-- ====================================================================== -->
@@ -62,4 +61,4 @@ Microsoft Edge扩展团队将 Web 请求[API](https://developer.chrome.com/docs/
 
 当前声明性 Net 请求 API 实现在 Microsoft Edge Stable 和 Beta 渠道中可用。  请测试更改并提供反馈。
 
-Microsoft Edge扩展团队将在我们的博客中发布更新。  可以通过 Microsoft Tech Community 提供有关更改的反馈;请参阅清单[V3](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254)更改现在Microsoft Edge。
+Microsoft Edge扩展团队将在我们的博客中发布更新。  可以通过 Microsoft Tech Community 提供有关更改的反馈;请参阅清单 V3 更改现已[Microsoft Edge。](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254)

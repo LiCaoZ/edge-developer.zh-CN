@@ -6,14 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2、webview、WebView2 消息、WebView2 JavaScript、WebView2 本机对象
 ms.date: 10/15/2021
-ms.openlocfilehash: 20751e085f6db2f9a69c76f70fbd9867a82bb6ac
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 41738ee818add27633fed829e213045e156f85bb
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286973"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319337"
 ---
 # <a name="embed-web-content-into-native-applications"></a>将 Web 内容嵌入本机应用程序中
 
@@ -50,7 +49,7 @@ To see messaging in action， run the sample app， then select the **Scenario**
 
 我们如何更改文本颜色？  示例首先在本机创建按钮。  然后，该示例添加以下代码，以在单击按钮时发布 Web 消息。  此代码将 Web 文本的颜色更改为蓝色。
 
-1. 该示例包含 C++ 代码，用于创建Windows时 `SendJsonWebMessage()` 调用的按钮。
+1. 该示例包含 C++ 代码，用于创建Windows时调用 `SendJsonWebMessage()` 的按钮。
 
     有关使用 C++ 创建按钮的信息，请参阅 [如何创建按钮](/windows/win32/controls/create-a-button)。
 
@@ -74,7 +73,7 @@ To see messaging in action， run the sample app， then select the **Scenario**
     ```
 
     > [!NOTE]
-    > 本教程的其余部分使用 `ScenarioWebMessage.html` WebView2 示例中的文件。  在您工作时比较您自己的 HTML 文件，或复制并粘贴来自ScenarioWebMessage.html[ 的内容 ](https://github.com/MicrosoftEdge/WebView2Samples/blob/a12bfcc2bc8a1155529c35c7bd4645036f492ca0/SampleApps/WebView2APISample/assets/ScenarioWebMessage.html)。
+    > 本教程的其余部分使用 `ScenarioWebMessage.html` WebView2 示例中的文件。  在您工作时比较您自己的 HTML 文件，或复制并粘贴来自 [ScenarioWebMessage.html](https://github.com/MicrosoftEdge/WebView2Samples/blob/a12bfcc2bc8a1155529c35c7bd4645036f492ca0/SampleApps/WebView2APISample/assets/ScenarioWebMessage.html)的内容。
 
     此示例使用 Web 上的 JavaScript 事件侦听器。
 
@@ -105,7 +104,7 @@ To see messaging in action， run the sample app， then select the **Scenario**
     It should change the text color of this paragraph.</p>
     ```
 
-1. 该 `Post Message JSON` 菜单项位于生成的资源Microsoft Visual C++文件[WebView2APISample.rc 中](https://github.com/MicrosoftEdge/WebView2Samples/blob/c7d7c75184dec0c46634f27a8f4beba320b04618/SampleApps/WebView2APISample/WebView2APISample.rc)。
+1. 该 `Post Message JSON` 菜单项位于已生成Microsoft Visual C++文件[WebView2APISample.rc 中](https://github.com/MicrosoftEdge/WebView2Samples/blob/c7d7c75184dec0c46634f27a8f4beba320b04618/SampleApps/WebView2APISample/WebView2APISample.rc)。
 
     ```xml
     MENUITEM "Post Message JSON",           IDM_POST_WEB_MESSAGE_JSON
@@ -251,7 +250,7 @@ C++ 文件处理标题文本，并作为字符串将文本传达给主机应用�
     }).Get(), &m_webMessageReceivedToken));
     ```
 
-1. 主机应用使用生成的资源脚本 `Inject Script` Microsoft Visual C++ [WebView2APISample.rc](https://github.com/MicrosoftEdge/WebView2Samples/blob/c7d7c75184dec0c46634f27a8f4beba320b04618/SampleApps/WebView2APISample/WebView2APISample.rc)中的菜单项将窗口边界发送回网页。
+1. 主机应用使用已生成资源脚本Microsoft Visual C++ `Inject Script` [WebView2APISample.rc](https://github.com/MicrosoftEdge/WebView2Samples/blob/c7d7c75184dec0c46634f27a8f4beba320b04618/SampleApps/WebView2APISample/WebView2APISample.rc)中的菜单项将窗口边界发送回网页。
 
     ```xml
         MENUITEM "Inject Script",               IDM_INJECT_SCRIPT

@@ -6,18 +6,17 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge， Web 开发， 开发人员， 工具， 自动化， 测试， playwright， 节点， javascript， npm
 ms.date: 11/24/2020
-ms.openlocfilehash: fe01cf897298616e9cb347c942da434327c13c2b
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: a568d3e3611d857201e6bba8476041424ce53fe5
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284670"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320233"
 ---
 # <a name="use-playwright-to-automate-and-test-in-microsoft-edge"></a>使用 Playwright 自动执行和测试Microsoft Edge
 
-[Playwright](https://playwright.dev/docs/intro)是[一Node.js](https://nodejs.org) API 自动[Chromium、Firefox](https://www.mozilla.org/firefox)和[WebKit](https://webkit.org)的功能库。 [](https://www.chromium.org/Home)  Playwright 构建为启用常青、功能可靠且快速的跨浏览器 Web 自动化。  由于Microsoft Edge构建于开放源代码[Chromium，](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration)因此 Playwright 还能够自动Microsoft Edge。
+[Playwright](https://playwright.dev/docs/intro)是[一Node.js](https://nodejs.org) API 自动[](https://www.chromium.org/Home)[Chromium、Firefox](https://www.mozilla.org/firefox)和[WebKit](https://webkit.org)的功能库。  Playwright 构建为启用常青、功能可靠且快速的跨浏览器 Web 自动化。  由于Microsoft Edge构建于开放源代码[Chromium，](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration)因此 Playwright 还能够自动Microsoft Edge。
 
 默认情况下，Playwright [启动无](https://en.wikipedia.org/wiki/Headless_browser) 头浏览器。  无头浏览器不显示 UI，因此你必须使用命令行。  还可以将 Playwright 配置为 (无头) Microsoft Edge运行。
 
@@ -26,7 +25,7 @@ ms.locfileid: "12284670"
 ## <a name="install-playwright-and-browsers"></a>安装 Playwright 和浏览器
 
 > [!NOTE]
-> [Playwright](https://playwright.dev/docs/intro) 需要Node.js版本 12 或以上版本。 从 `node -v` 命令行运行，确保你的版本与 Node.js。  适用于 Chromium、Firefox 和 WebKit 的浏览器二进制文件跨 Windows、macOS 和 Linux 工作。 有关详细信息，请参阅 [Playwright 系统要求](https://playwright.dev/docs/library#system-requirements)。
+> [Playwright](https://playwright.dev/docs/intro) 需要Node.js版本 12 或以上版本。 从 `node -v` 命令行运行，确保具有兼容的 Node.js。  适用于 Chromium、Firefox 和 WebKit 的浏览器二进制文件跨 Windows、macOS 和 Linux 工作。 有关详细信息，请参阅 [Playwright 系统要求](https://playwright.dev/docs/library#system-requirements)。
 
 首先，安装 [Playwright 测试](https://playwright.dev/docs/intro) 以测试网站或应用：
 
@@ -71,7 +70,7 @@ npx playwright test
 <!-- ====================================================================== -->
 ## <a name="run-tests-in-microsoft-edge"></a>在 Microsoft Edge
 
-若要在 Microsoft Edge 中运行测试，你需要为 Playwright 配置文件创建一个测试，例如 `playwright.config.ts` 。  在配置文件内，使用 Microsoft Edge Beta 渠道创建一个项目。  (目前，没有适用于 Linux.Microsoft Edge Stable 渠道) 
+若要在 Microsoft Edge 中运行测试，需要为 Playwright 配置文件创建一个测试，例如 `playwright.config.ts` 。  在配置文件内，使用 Microsoft Edge Beta 渠道创建一个项目。  (目前，没有适用于 Linux.Microsoft Edge Stable 渠道) 
 
 ```typescript
 // playwright.config.ts

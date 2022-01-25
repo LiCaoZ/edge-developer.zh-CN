@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: 838fe5bccd3fd7ca429968514e6fc6c4161abb1b
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 19ba1d9a139f86ea4dbf62eb779ffd48bfda9d5c
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284614"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320380"
 ---
 <!-- Copyright Kayce Basques
 
@@ -75,9 +74,9 @@ Microsoft Edge DevTools 中的“**覆盖范围**”面板可帮助你查找未�
 ## <a name="record-code-coverage"></a>记录代码覆盖范围
 
 1.  在“**覆盖范围**”面板中选择以下按钮之一。
-    *   如果你想要 **查看加载** 页面所需的代码， (开始检测覆盖和重新加载页面) 选择开始检测覆盖和重新加载 ![ ](../media/reload-icon.msft.png) 页面。
+    *   如果你想要 **查看加载** 页面所需的代码， (开始检测覆盖和重新加载页面) 选择"开始检测覆盖范围和重新加载 ![ ](../media/reload-icon.msft.png) 页面"页面。
     *   如果你想要 **查看** 与 (后使用的代码，请选择"检测范围) 检测 ![ ](../media/record-icon.msft.png) 范围"选项。
-1.  选择 **"停止检测** 覆盖"， ("停止检测覆盖范围"和"显示结果") 停止记录 ![ ](../media/stop-icon.msft.png) 代码覆盖时显示结果。
+1.  选择 **"停止检测** 覆盖范围"， ("停止检测覆盖"，) 记录代码覆盖范围时显示 ![ ](../media/stop-icon.msft.png) 结果"。
 
 
 <!-- ====================================================================== -->

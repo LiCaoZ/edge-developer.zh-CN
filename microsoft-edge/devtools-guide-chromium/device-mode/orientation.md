@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: 945c487b3082cc8eaccd7842e8da67012932247b
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 72159917514a7483b0541c9a3feb09fb2f78c2b9
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286042"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320905"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,7 +28,7 @@ ms.locfileid: "12286042"
    limitations under the License.  -->
 # <a name="simulate-device-orientation"></a>模拟设备方向
 
-从 DevTools Microsoft Edge不同的设备方向。
+从 DevTools 中模拟Microsoft Edge方向。
 
 <!--todo: update device orientation section when available -->
 

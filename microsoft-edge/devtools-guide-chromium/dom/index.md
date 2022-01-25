@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
 ms.date: 06/29/2021
-ms.openlocfilehash: 30ea99aadfd9aaddf90486aa80dbb3d09d1bc42c
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: a9ec12d5eff8ef8c965ea5475a19e11b25824087
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286945"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320772"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,7 +28,7 @@ ms.locfileid: "12286945"
    limitations under the License.  -->
 # <a name="get-started-with-viewing-and-changing-the-dom"></a>查看和更改 DOM 入门
 
-按照这些交互式教程了解使用 DevTools 查看和更改[](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)页面的文档 (模型) DOM Microsoft Edge基础知识。
+按照这些交互式教程了解使用 DevTools 查看和更改页面的文档 ([模型) ](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) DOM Microsoft Edge基础知识。
 
 本教程假定你知道 DOM 和 HTML 之间的区别。 有关[说明，请参阅附录：HTML 与 DOM。](#appendix-html-versus-the-dom)
 
@@ -37,7 +36,7 @@ ms.locfileid: "12286945"
 <!-- ====================================================================== -->
 ## <a name="open-dom-examples"></a>打开 DOM 示例
 
-1.  按住 `Control` (Windows、Linux) 或 `Command` (macOS) 然后单击["DOM 示例](https://microsoft-edge-chromium-devtools.glitch.me/static/dom)"以在新选项卡中打开该页面。
+1.  按住 `Control` (Windows、Linux) 或 (`Command` macOS) ，然后单击["DOM 示例](https://microsoft-edge-chromium-devtools.glitch.me/static/dom)"以打开新选项卡中的页面。
 
 
 <!-- ====================================================================== -->
@@ -65,7 +64,7 @@ ms.locfileid: "12286945"
 
 1.  在 **"检查节点"下**，单击 **"东京** "文本。  现在，`<li>Tokyo</li>` 在 DOM 树中突出显示。
 
-检查节点也是查看和更改节点样式的第一步。  请参阅[入门查看和更改 CSS。](../css/index.md)
+检查节点也是查看和更改节点样式的第一步。  请参阅[入门和更改 CSS。](../css/index.md)
 
 ### <a name="navigate-the-dom-tree-with-a-keyboard"></a>使用键盘浏览 DOM 树
 
@@ -111,7 +110,7 @@ ms.locfileid: "12286945"
 
 1.  将光标焦点放在“**元素**”工具上。
 
-1.  按 `Control` + `F` (Windows、Linux) 或 `Command` + `F` (macOS) 。  搜索栏在 DOM 树的底部打开。
+1.  按 `Control` + `F` (Windows、Linux) 或 (`Command` + `F` macOS) 。  搜索栏在 DOM 树的底部打开。
 
 1.  键入 `The Moon is a Harsh Mistress`。  最后一句在 DOM 树中突出显示。
 
@@ -328,7 +327,7 @@ ms.locfileid: "12286945"
 
 1.  在"**删除节点时中断"下**，右键单击 **"管理程序**"，然后选择"检查 **"。**
 
-    1.  在 DOM 树中，将鼠标悬停在 上，打开上下文菜单 (右键单击") "，然后选择"删除 `<li id="target">Neuromancer</li>` **节点时**中断  >  **"。**  如果 [选项未显示，](#appendix-missing-options) 请参阅附录：缺少选项。
+    1.  在 DOM 树中，将鼠标悬停在 上，打开上下文菜单 (`<li id="target">Neuromancer</li>` 右键单击") "，然后选择"删除**节点时**  >  **中断"。**  如果 [选项未显示，](#appendix-missing-options) 请参阅附录：缺少选项。
 
     1.  单击上面的 **"删除** "按钮。  开发人员工具将暂停页面并突出显示导致节点被删除的代码。
 
@@ -346,7 +345,7 @@ ms.locfileid: "12286945"
 
     1.  单击"**添加子级"。**  由于向列表中添加了 `<li>` 节点，因此代码将暂停。
 
-    1.  Select **Resume Script (** Resume Script ![ ](../media/resume-script-icon.msft.png)) .
+    1.  选择 **"恢复脚本** (![ 恢复脚本 ](../media/resume-script-icon.msft.png)) 。
 
 
 <!-- ====================================================================== -->

@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: c1a0e0f079024e92a11c28c22a1672ab61414528
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 091cd1929dba12824b4eae0f24c5dd96f8dfa6e1
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285013"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320646"
 ---
 <!-- Copyright Kayce Basques
 
@@ -87,7 +86,7 @@ ms.locfileid: "12285013"
 
 1.  [查看域的`localStorage`键值对](#view-localstorage-keys-and-values)。
 1.  选择要删除的键值对。  DevTools 会以蓝色将其突出显示以表示其已选中。
-1.  选择该 `Delete` 键或选择"删除 **所选** (![ 删除所选 ](../media/delete-icon.msft.png)) 。
+1.  Select the `Delete` key or choose Delete Selected ** (** Delete ![ Selected ](../media/delete-icon.msft.png)) .
 
 
 <!-- ====================================================================== -->

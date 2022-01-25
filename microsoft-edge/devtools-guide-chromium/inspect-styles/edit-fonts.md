@@ -5,16 +5,15 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
 no-loc:
 - Enable new font editor tool within the Styles pane
 ms.date: 03/11/2021
-ms.openlocfilehash: 212a235ec3fc58efe285852d1726efe185882e90
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: c4f57065a82c6d4df0be2d5b4dfe20fbafad9f7d
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286021"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319547"
 ---
 # <a name="edit-css-font-styles-and-settings-in-the-styles-pane"></a>在“样式”窗格中编辑 CSS 字体样式和设置
 

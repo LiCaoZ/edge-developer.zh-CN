@@ -5,18 +5,17 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: 渐进式 Web 应用， PWA， 演示， 示例
 ms.date: 11/19/2021
-ms.openlocfilehash: c5be318b9f28f0e173a01407c41b5b687484340c
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: ebcbe83b882b53424d65506cf02db846b884f7cf
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284523"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319477"
 ---
 # <a name="sample-pwas"></a>示例 PWA
 
-使用这些适用于 PBA (渐进式 web) 可了解如何使用适用于 PWA 的功能和 API。
+使用这些适用于 PWA (渐进 web) 可了解如何使用适用于 PWA 的功能和 API。
 
 
 <!-- ====================================================================== -->
@@ -88,7 +87,7 @@ ms.locfileid: "12284523"
 <!-- ====================================================================== -->
 ## <a name="bpm-techno"></a>BPM 一年
 
-使用 () 计数器时每分钟) 一次。
+使用 () 计数器时每分钟) 数。
 
 [应用](https://bpmtech.no/)[、源代码和自述文件](https://github.com/webmaxru/bpm-counter)。
 

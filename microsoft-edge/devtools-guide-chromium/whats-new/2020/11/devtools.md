@@ -5,15 +5,14 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、devtools
 ms.localizationpriority: high
 ms.date: 05/04/2021
-ms.openlocfilehash: dd7143f30e3a4e0c4b332922d48867deefc2ca97
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 343d1e3ed1bb97d4acfd5e4c4fee342eb3721d12
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285706"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319722"
 ---
 <!-- Copyright Jecelyn Yeen
 

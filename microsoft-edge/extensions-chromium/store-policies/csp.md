@@ -5,18 +5,17 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
 ms.date: 01/07/2021
-ms.openlocfilehash: cf45220962416589511ec522b0a805716d5b4f3c
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: a65d483aae84aafdc80587cdb2b7848de8113581
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284551"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319806"
 ---
 # <a name="content-security-policy-csp"></a>内容安全策略 (CSP) 
 
-为了缓解大量的潜在跨站点脚本问题，Microsoft Edge 扩展系统已纳入内容安全策略和 CSP) 的一般[概 (概念](https://w3c.github.io/webappsec-csp)。  这引入了一些相当严格的策略，这些策略使扩展在默认情况下更加安全，并让你能够创建和实施规则，以管理扩展和应用程序可能加载和运行的内容类型。
+为了缓解大量的潜在跨网站脚本问题，Microsoft Edge 扩展系统已纳入内容安全策略和 CSP ([一](https://w3c.github.io/webappsec-csp)) 。  这引入了一些相当严格的策略，这些策略使扩展在默认情况下更加安全，并让你能够创建和实施规则，以管理扩展和应用程序可能加载和运行的内容类型。
 
 通常，CSP 用作扩展加载或运行的资源的阻止/允许列表机制。  通过为扩展定义合理的策略，你可以仔细考虑扩展所需的资源，并要求浏览器确保这些是你的扩展有权访问的唯一资源。  这些策略提供高于扩展请求的主机权限的安全性;它们是一层额外的保护，而不是替代。
 
@@ -103,7 +102,7 @@ function() { return foo && foo.bar && foo.bar.baz };
 
 为了使此操作按预期方式工作，必须更改以下三项：
 
-*   必须将 `clickHandler` 定义移动到外部 JavaScript 文件 (`popup.js` 可能是一个很好的目标) 。
+*   必须将 `clickHandler` 定义移动到外部 JavaScript 文件中， (`popup.js` 可能是一个很好的目标) 。
 *   内联事件处理程序定义必须重写为 ，并 `addEventListener` 提取到 `popup.js` 中。
     如果当前正在使用类似 的代码启动程序，请考虑通过挂钩到文档的事件或窗口的事件来替换它， `<body onload="main();">` `DOMContentLoaded` `load` 具体取决于你的要求。  使用前者，因为它通常更快速地触发。
 
@@ -198,13 +197,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 As of Chrome 46, -->
 
-内联脚本能够通过在策略中指定源代码的 base64 编码哈希来允许。  此哈希必须以 sha256、sha384 或 sha512 (使用的哈希算法作为前缀) 。  例如，导航到元素 [的哈希 \<script\> 用法](https://www.w3.org/TR/CSP2#script-src-hash-usage)。
+内联脚本能够通过在策略中指定源代码的 base64 编码哈希来允许。  此哈希必须以 sha256、sha384 或 sha512 (使用的哈希算法作为) 。  例如，导航到元素 [的哈希 \<script\> 用法](https://www.w3.org/TR/CSP2#script-src-hash-usage)。
 
 **远程脚本**
 
 如果您需要一些外部 JavaScript 或对象资源，则可能会通过允许列出应接受脚本的安全源来限制策略。  验证使用扩展的提升权限加载的运行时资源是否正是您期望的资源，并且不会替换为活动网络攻击者。  由于 [中间人攻击](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) 在 HTTP 上是无关紧要的和无法检测到的，因此不接受这些来源。
 
-目前，开发人员可以允许具有以下方案列出源 `blob` `filesystem` ：、、 `https` 和 `extension` 。  必须为 和 方案显式指定源的主机 `https` `extension` 部分。  不允许使用泛型通配符（如 https：和 ）;允许使用诸如 `https://*` `https://*.com` 这样的子 `https://*.example.com` 域通配符。  公共后缀 [列表中的域](https://publicsuffix.org/list) 也被视为常规顶级域。  若要从这些域加载资源，必须明确列出子域。  例如， `https://*.cloudfront.net` 是 无效，但 `https://XXXX.cloudfront.net` `https://*.XXXX.cloudfront.net` 和 可以 `allowlisted` 。
+目前，开发人员可以允许具有以下方案列出源 `blob` `filesystem` ：、、 `https` 和 `extension` 。  必须为 和 方案显式指定源的主机 `https` `extension` 部分。  不允许使用泛型通配符（如 https：和 ）;允许使用诸如 `https://*` `https://*.com` 这样的子 `https://*.example.com` 域通配符。  公共后缀 [列表中的域](https://publicsuffix.org/list) 也被视为常规顶级域。  若要从这些域加载资源，必须明确列出子域。  例如， `https://*.cloudfront.net` is 无效， but `https://XXXX.cloudfront.net` `https://*.XXXX.cloudfront.net` are able to `allowlisted` .
 
 为了便于开发，从本地计算机上服务器加载的 HTTP 资源可以 `allowlisted` 。  可以允许在 或 的任何端口上列出脚本和 `http://127.0.0.1` 对象源 `http://localhost` 。
 
@@ -218,7 +217,7 @@ As of Chrome 46, -->
 ```
 
 > [!NOTE]
-> 和 `script-src` `object-src` 都由策略定义。  Microsoft Edge不接受不将每个值限制为至少为" (") `self` 的策略。
+> 和 `script-src` `object-src` 都由策略定义。  Microsoft Edge不接受不将其中每个值限制为至少为" (") `self` 的策略。
 
 <!-- Making use of Google Analytics is the canonical example for this sort of policy definition.  It is common enough that an Analytics boilerplate of sorts is provided in the Event Tracking with Google Analytics sample Extension, and a brief tutorial that goes into more detail.  -->
 
@@ -236,7 +235,7 @@ As of Chrome 46, -->
 <!-- ====================================================================== -->
 ## <a name="tightening-the-default-policy"></a>使用默认策略
 
-当然，你可以将此策略严格到扩展允许的任何程度，以便以便利为代价提高安全性。  若要指定你的扩展只能加载任何类型的 (图像等) 从关联的扩展包加载资源，例如，策略 可能 `default-src 'self'` 合适。
+当然，你可以将此策略严格到扩展允许的任何程度，以便以便利为代价提高安全性。  若要指定你的扩展只能加载任何类型的 (图像，等等) 从关联的扩展包，例如，策略 可能 `default-src 'self'` 合适。
 
 <!-- The Mappy sample Extension is a good example of an Extension that is been locked down above and beyond the defaults.  -->
 
@@ -255,7 +254,7 @@ document.write("<script>alert(1);</script>");
  ```
 
 此内容脚本会立即 `alert` 在 上引发 `document.write()` 。  请注意，无论页面可以指定何种策略，这都将运行。
-但是，行为会变得更加复杂，既包括该 DOM 注入脚本，也针对任何在注入时未立即运行的脚本。  Imagine你的扩展正在提供指定 的关联 CSP 的页面上运行 `script-src 'self'` 。  现在假设内容脚本运行以下代码：
+但是，行为会变得更加复杂，既包括该 DOM 注入脚本，也针对任何在注入时未立即运行的脚本。  Imagine扩展正在提供指定 的关联 CSP 的页面上运行 `script-src 'self'` 。  现在假设内容脚本运行以下代码：
 
 ```javascript
 document.write("<button onclick='alert(1);'>click me</button>'");

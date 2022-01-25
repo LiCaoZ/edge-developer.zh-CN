@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: 485acfe74db2a3521f7e18eed23b7c705d838e7d
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 5437ce3124452506ce301a82d6d166a21171fe65
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285671"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319757"
 ---
 <!-- Copyright Kayce Basques
 
@@ -88,7 +87,7 @@ ms.locfileid: "12285671"
 <!-- ====================================================================== -->
 ## <a name="refresh-indexeddb-data"></a>刷新 IndexedDB 数据
 
-**应用程序**工具中的 IndexedDB 值不会实时更新。  在**查看** (时选择"刷新") "刷新"以刷新数据，或选择"刷新数据库" ![ ](../media/reload-icon.msft.png) 以刷新所有数据****。
+**应用程序**工具中的 IndexedDB 值不会实时更新。  选择 **"** 刷新 (") 对象存储时刷新数据"，或选择"刷新数据库"以 ![ ](../media/reload-icon.msft.png) 刷新所有数据。 ****
 
 :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="查看数据库" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
    查看数据库
@@ -135,7 +134,7 @@ ms.locfileid: "12285671"
        查看对象存储
     :::image-end:::
 
-1.  选择 **"清除对象存储 (** ![ 清除对象存储 ](../media/clear-icon.msft.png)) 。
+1.  Choose **Clear object store (** Clear object store ![ ](../media/clear-icon.msft.png)) .
 
 ### <a name="delete-an-indexeddb-database"></a>删除 IndexedDB 数据库
 

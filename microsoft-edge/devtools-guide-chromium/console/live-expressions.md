@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 04/13/2021
-ms.openlocfilehash: 330fc2585d75b490619445d1c5dde993dd1b313c
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 683292ef363fb9b489a1946ec73d3c00a91d5034
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286084"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320492"
 ---
 # <a name="monitor-changes-in-javascript-using-live-expressions"></a>使用 Live Expressions 监视 JavaScript 中的更改
 

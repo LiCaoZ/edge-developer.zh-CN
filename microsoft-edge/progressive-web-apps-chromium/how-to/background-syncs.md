@@ -6,14 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进 Web 应用， PWA， Edge， JavaScript， 服务工作线程， 后台， 同步， 提取
 ms.date: 09/14/2021
-ms.openlocfilehash: 64191a8c62e904e3799a6dddaaee3a513d12bc2b
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: ccba6c0c7c39ed84478f1b3d70f4d6f7f3386e5f
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286623"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319778"
 ---
 # <a name="synchronize-and-update-a-pwa-in-the-background"></a>在后台同步PWA更新服务器
 
@@ -232,7 +231,7 @@ self.addEventListener('periodicsync', event => {
 
 ### <a name="demo-app"></a>演示应用
 
-[DevTools 使用技巧](https://devtoolstips.org/)是一PWA定期后台同步 API 的开发人员。  [DevTools 使用技巧] PWA每天提取新的开发人员工具提示，将它们存储在缓存中，以便用户下次打开应用时可以访问它们，无论他们是否联机。
+[DevTools 使用技巧](https://devtoolstips.org/)是一PWA定期后台同步 API 的开发人员。  [DevTools 使用技巧] PWA每天提取新的开发人员工具提示，将它们存储在缓存中，以便用户可以在下次打开应用时访问它们，无论他们是否联机。
 
 :::image type="content" source="../media/devtools-tips-demo.png" alt-text="DevTools 使用技巧应用。":::
 
@@ -302,6 +301,6 @@ navigator.serviceWorker.ready.then(async registration => {
 
 使用 App Badging API 和通知 API 让用户知道后台任务、下载或新鲜内容已完成，而不会中断其工作流。  使用锁屏提醒和通知可增加用户与你的应用的重新参与度。
 
-使用Microsoft Edge，锁屏提醒会显示在任务栏的应用图标上，并且通知会与系统通知中心集成。
+使用 Microsoft Edge，锁屏提醒会显示在任务栏的应用图标上，并且通知会与系统通知中心集成。
 
 若要了解如何使用这些 API，请参阅使用锁屏提醒、通知和推送通知重新吸引 [用户](./notifications-badges.md)。

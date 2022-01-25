@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 12/11/2020
-ms.openlocfilehash: fc9f2f65e4ff6a8d22fdecc71060a62bf17bc8d5
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 0ac77cf97cfe913b04af08ab0a9e7c25999f7759
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285083"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319463"
 ---
 # <a name="override-webpage-resources-with-local-copies"></a>使用本地副本替代网页资源
 

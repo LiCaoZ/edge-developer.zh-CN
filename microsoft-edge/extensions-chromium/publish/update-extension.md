@@ -1,18 +1,17 @@
 ---
 title: 更新Microsoft Edge扩展
-description: 更新或删除加载项网站Microsoft Edge扩展。
+description: 更新或删除加载项Microsoft Edge扩展。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
 ms.date: 02/17/2021
-ms.openlocfilehash: 0a67178100fb1e894984df62f7a7590c30d4ad9c
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: f264108ff3432ee519d72241ec012039819231e1
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284761"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319813"
 ---
 # <a name="update-a-microsoft-edge-extension"></a>更新Microsoft Edge扩展
 
@@ -33,7 +32,7 @@ ms.locfileid: "12284761"
 
 1.  进行更改后，选择"保存**发布**"以  >  **** 更新扩展列表，并开始认证过程。
 
-1.  列 `Status` 显示后 `In the store` ，你的扩展更新将在 Microsoft Edge 加载项网站上提供。
+1.  列 `Status` 显示后 `In the store` ，你的扩展更新将在Microsoft Edge加载项网站上提供。
 
 <!-- todo: uncomment after the API is available for use.
 After your extension has been initially created, you will be able to update it programmatically by [Using the Microsoft Edge Add-ons API](api/using-addons-api.md).
@@ -58,7 +57,7 @@ After your extension has been initially created, you will be able to update it p
 1.  进行更改后，选择"保存**发布**  >  **"。**
 
 > [!IMPORTANT]
-> 此过程将停止当前提交并从 Microsoft Edge扩展认证管道中删除你的当前提交，并且新评审从最新提交开始。
+> 此过程会停止当前提交并从 Microsoft Edge扩展认证管道中删除你的当前提交，并且新评审从最新提交开始。
 
 
 <!-- ====================================================================== -->

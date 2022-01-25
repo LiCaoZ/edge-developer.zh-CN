@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， 支持
 ms.date: 02/17/2021
-ms.openlocfilehash: ccf0f9a98aff018896a8c905b0740fd576fe4fce
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 1cdfc80a85d1d581b2f9fca82e01f0526ac388da
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12287106"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319218"
 ---
 # <a name="contact-microsoft-edge-extensions-support"></a>联系Microsoft Edge扩展支持
 
@@ -26,10 +25,10 @@ ms.locfileid: "12287106"
 
 1.  如果在将扩展提交到合作伙伴中心时有任何问题，请参阅 [发布扩展](./publish-extension.md)。
 
-1.  若要在 Microsoft Edge 加载项网站上的集合中启用扩展，请导航到"提交请求"，将扩展添加到 Microsoft Edge 加载项主页[上](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u)的集合并填写表单。
+1.  若要在 Microsoft Edge 加载项网站上的集合中启用扩展，请导航到"提交请求"，将扩展添加到 Microsoft Edge 加载项主页[上的集合并](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u)填写表单。
 
 
 <!-- ====================================================================== -->
 ## <a name="report-copyright-or-trademark-infringement"></a>报告版权或商标侵犯
 
-如果认为加载项网站中的Microsoft Edge违反版权或商标，请参阅侵权通知并填写表单。 [](https://www.microsoft.com/info/Marketplace.html)  扩展Microsoft Edge审核你的报告，然后执行必要的操作。
+如果认为加载项网站中的Microsoft Edge违反版权或商标，请参阅侵权通知并填写表单。 [](https://www.microsoft.com/info/Marketplace.html)  扩展Microsoft Edge团队会审核你的报告，然后执行必要的操作。

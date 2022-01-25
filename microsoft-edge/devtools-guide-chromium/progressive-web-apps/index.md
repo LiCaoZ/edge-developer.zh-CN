@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: a9f1c445e39deecfe7e24e8dd888b1269f89048a
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: e2d69544184786dffe03aa004e4e3b5946433d8b
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285748"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320107"
 ---
 <!-- Copyright Kayce Basques
 
@@ -45,7 +44,7 @@ ms.locfileid: "12285748"
 
 *   使用清单 **窗格** 检查 Web 应用清单并触发"添加到主屏幕"事件。
 *   使用"**** 服务工作线程"窗格执行与服务工作者相关的所有任务，例如注销或更新服务、模拟推送事件、脱机或停止服务工作线程。
-*   从"缓存"窗格查看服务**工作存储**缓存。
+*   从"缓存"窗格查看服务**存储**缓存。
 *   从"清除存储"窗格中选择一个按钮，注销服务工作器并清除所有 **存储和** 缓存。
 
 
@@ -123,11 +122,11 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 *   " **重新加载时更新** "复选框强制服务工作者每次加载页面时进行更新。
 *   " **绕过网络"** 复选框将绕过服务工作线程，并强制浏览器转到所请求资源的网络。
 *   " **更新** "按钮将执行指定服务工作者的一次更新。
-*   " **推送** "按钮模拟不带有效负载的推送通知 (**也称为滴答**) 。
+*   "**推送**"按钮模拟不带有效负载的推送通知 (也称为**tickle) 。**
 *   " **同步** "按钮模拟后台同步事件。
 *   " **注销"** 按钮将取消注册指定的服务工作器。  请查看清除 [存储](#clear-storage) ，了解通过单个按钮选择取消注册服务工作器以及擦除存储和缓存的方法。
 *   Source **** 行将告知您当前正在运行的服务工作线程的安装时间。  链接是服务工作者的源文件的名称。  选择链接将你发送到服务工作者的源。
-*   " **状态** "行将告知您服务工作者的状态。  上图中绿色状态指示器旁边的 ID `#36` (，) 当前处于活动状态的服务工作线程。  在状态旁边，如果服务**** 工作 (停止，则会显示"开始"按钮) 如果服务工作进程正在运行 (**** 将显示一个停止) 按钮。  服务工作者设计为随时由浏览器停止和启动。  使用停止按钮显式停止服务 **工作器** 可能会模拟这一点。  停止服务工作进程是测试服务工作线程再次启动备份时代码行为方式的一种好方法。  它经常显示错误，因为对永久性全局状态的错误假设。
+*   " **状态** "行将告知您服务工作者的状态。  上图中绿色状态指示器旁边的 ID `#36` (，) 当前活动的服务工作线程的 ID 号。  在状态旁边，如果服务**** 工作 (停止) 将显示一个"开始"按钮 (如果服务工作进程正在运行，**** 则会显示一个) 按钮。  服务工作者设计为随时由浏览器停止和启动。  使用停止按钮显式停止服务 **工作器** 可能会模拟这一点。  停止服务工作进程是测试服务工作线程再次启动备份时代码行为方式的一种好方法。  它经常显示错误，因为对永久性全局状态的错误假设。
 *   **"客户端**"行将告知您服务工作线程的作用域。  当 **启用** "全部显示"复选框时，焦点 **按钮最** 有用。  启用该复选框后，将列出所有注册的服务工作者。  如果选择其他选项卡中运行**** 的服务工作线程旁边的焦点按钮，Microsoft Edge焦点位于该选项卡上。
 
 如果服务工作线程导致任何错误，将显示名为 **"错误"** 的新标签。
@@ -154,7 +153,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 > [!NOTE]
 > 首次打开缓存并添加资源时，DevTools 可能无法检测到更改。  刷新页面并显示缓存。
 
-如果您打开了两个或多个缓存，则缓存会显示在下面的"缓存缓存存储下。 ****
+如果打开了两个或多个缓存，则缓存会显示在下面的"缓存缓存存储下。 ****
 
 :::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="&quot;缓存存储下拉列表" lightbox="../media/cache-pane-cache-storage.msft.png":::
    "**缓存存储**下拉列表
@@ -164,12 +163,12 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!-- ====================================================================== -->
 ## <a name="quota-usage"></a>配额使用情况
 
-"缓存"窗格**存储**某些响应可能标记为"不透明"。<!-- [opaque](/web/fundamentals/glossary#opaque-response) -->  这是指从不同源检索的响应，如从源CDN ****<!-- [CDN](/web/fundamentals/glossary#CDN) --> 或远程 API，如果 [CORS](https://fetch.spec.whatwg.org/#http-cors-protocol) 未启用。
+"缓存"窗格**存储**响应可能标记为"不透明"。<!-- [opaque](/web/fundamentals/glossary#opaque-response) -->  这是指从不同来源检索的响应，如从源CDN ****<!-- [CDN](/web/fundamentals/glossary#CDN) --> 或远程 API，如果 [CORS](https://fetch.spec.whatwg.org/#http-cors-protocol) 未启用。
 
 <!--TODO:  Link Web "CDN" section when available. -->
 <!--TODO:  Link Web "opaque" section when available. -->
 
-为了避免跨域信息泄露，向用于计算存储配额限制的不透明响应的大小添加大量填充 (例如是否引发异常) API 报告。 `QuotaExceeded` `navigator.storage`
+为了避免跨域信息泄露，向用于计算存储配额限制的不透明响应的大小添加大量填充 (例如是否引发异常) API 报告 `QuotaExceeded` `navigator.storage` 。
 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 <!-- [Estimating available storage space](whats-new/2017/08/estimating-available-storage-space) -->

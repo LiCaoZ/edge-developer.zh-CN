@@ -6,22 +6,21 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用， PWA， Edge， Windows， 任务栏， 跳转列表， 快捷方式
 ms.date: 09/13/2021
-ms.openlocfilehash: 9dc418688880dbaf12c79ea5843eae7dc8ed5ebd
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: b08033dadb97aa40845f30577d6ca2ba82efa135
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286595"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319043"
 ---
 # <a name="define-app-shortcuts"></a>定义应用快捷方式
 
 应用快捷方式使用户能够更快、更轻松地完成常见任务，并可以提升他们对应用的参与度。
 
-在移动设备上，快捷方式通常可以通过长按应用图标来访问。  在Windows，快捷方式作为 Jumplist 集成。  Jumplist 定义在右键单击磁贴或右键单击任务栏中的"开始"菜单时出现的弹出菜单。
+在移动设备上，快捷方式通常可以通过长按应用图标来访问。  在Windows，快捷方式作为 Jumplist 集成。  Jumplists define popup menus that appear when you right-click a tile in the "开始"菜单， or right-click an icon in the taskbar.
 
-下图显示了 iOS 上 Microsoft Edge快捷方式：
+下图显示了 iOS 上Microsoft Edge快捷方式：
 
 :::image type="content" source="../media/edge-ios-shortcuts.png" alt-text="iOS 上Microsoft Edge快捷方式。":::
 

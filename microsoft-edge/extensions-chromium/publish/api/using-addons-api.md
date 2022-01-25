@@ -1,27 +1,26 @@
 ---
 title: '使用Microsoft Edge加载项 API (开发) '
-description: REST 终结点，用于自动发布提交到加载项网站的Microsoft Edge更新。
+description: REST 终结点，用于自动发布提交到加载项网站的加载项Microsoft Edge更新。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， 加载项 api， 发布 api
 ms.date: 08/19/2021
-ms.openlocfilehash: 3aee22a7a0cc420c7b42a65b17c5307d6f4f1a2a
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: d9927736336780f96882538a0d8fb84cce32f159
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12287155"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319225"
 ---
 # <a name="using-the-microsoft-edge-add-ons-api-under-development"></a>使用Microsoft Edge加载项 API (开发) 
 
 > [!NOTE]
-> 本文是一个请求注释。  加载项Microsoft Edge API 尚未可用于测试，并且合作伙伴中心尚未提供"发布 API"页。  加载项MICROSOFT EDGE API 正在积极开发中，路线图根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
+> 本文是一个请求注释。  Microsoft Edge加载项 API 尚未可用于测试，并且合作伙伴中心尚未提供"发布 API"页。  加载项MICROSOFT EDGE API 正在积极开发中，路线图根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
 
 本文与 Microsoft Edge[加载项 API](addons-api-reference.md)参考一起概述了建议Microsoft Edge加载项 API。  我们期待就建议的 API 合同提供建议和反馈。  请将你的反馈作为有关 [加载项 API 的问题提交](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API])。
 
-加载项MICROSOFT EDGE API 提供了一组 REST 终结点，用于以编程方式发布提交到 Microsoft Edge 加载项网站的加载项更新。  可以使用这些 REST 终结点自动执行将加载项上载和发布到加载项Microsoft Edge的过程。
+Microsoft Edge加载项 API 提供了一组 REST 终结点，用于以编程方式发布提交到 Microsoft Edge 加载项网站的加载项更新。  可以使用这些 REST 终结点自动执行将加载项上载和发布到加载项Microsoft Edge的过程。
 
 
 <!-- ====================================================================== -->
@@ -34,7 +33,7 @@ ms.locfileid: "12287155"
 | _package_ | `.zip`包含加载项Microsoft Edge包。 |
 | _product_ | 一Microsoft Edge扩展或主题。  也称为加载项Microsoft Edge_加载项_。 |
 | _产品 ID_ | 需要发布其草稿的产品的产品 ID。  产品 ID 是一个 128 位 GUID，与合作伙伴中心的产品相关联。  例如：`d34f98f5-f9b7-42b1-bebb-98707202b21d`。 |
-| _提交_ | 要提交到合作伙伴中心的现有产品的更新。  产品每次更新都是一个提交，无论状态是 、还是 `In Draft` (`In Review` `In the Store` 已发布) 。 |
+| _提交_ | 要提交到合作伙伴中心的现有产品的更新。  产品每次更新都是提交，无论状态是 、还是 (`In Draft` `In Review` `In the Store` 已发布) 。 |
 
 
 <!-- ====================================================================== -->
@@ -92,7 +91,7 @@ https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token
 }
 ```
 
-有关详细信息，请导航到[OAuth 2.0 客户端](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token)凭据流。Microsoft 标识平台。
+有关详细信息，请导航到[OAuth 2.0 客户端凭据流Microsoft 标识平台。](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token)
 
 
 <!-- ====================================================================== -->
@@ -120,7 +119,7 @@ Body content: the package file to upload
 
 `$productID` 是你想要Microsoft Edge加载项的 ID。  可以通过以下任一方式获取产品 ID：
 
-*  登录到 Microsoft 合作伙伴中心。  导航到**Microsoft Edge >** 概述"，然后选择想要其产品 ID 的扩展。  扩展概述页面将打开。  URL 中的 GUID 是产品 ID。
+*  登录到 Microsoft 合作伙伴中心。  导航到**Microsoft Edge >概述**"，然后选择想要其产品 ID 的扩展。  扩展概述页面将打开。  URL 中的 GUID 是产品 ID。
 
 *  调用 `/products` API 获取所有产品及其产品 ID 的列表。  有关 API 详细信息 `/products` ，请导航到"[获取产品列表"。](addons-api-reference.md#get-the-list-of-products)
 
@@ -168,7 +167,7 @@ API 参考 [：检查程序包上载的状态](addons-api-reference.md#check-the
 <!-- ====================================================================== -->
 ## <a name="publishing-the-submission"></a>发布提交
 
-使用此 API 将产品的当前草稿发布到 Microsoft Edge 加载项网站。
+使用此 API 将产品的当前草稿发布到Microsoft Edge加载项网站。
 
 ```rest
 Endpoint: /v1/products/$productID/submissions

@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
 ms.date: 05/11/2021
-ms.openlocfilehash: 32881bf5baa8a1c9512a1ee2a43a2730f06ecc69
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 52ff8365e2c60845614711dba98aa24bddac395c
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284348"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319561"
 ---
 <!-- Copyright Kayce Basques
 
@@ -54,7 +53,7 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
 
 ### <a name="what-is-an-animation-group"></a>什么是动画组？
 
-动画组是一组相互相关的动画。  目前，Web 没有组动画的实际概念，因此动画设计人员和开发人员必须撰写各个动画并设置动画时间，以便动画呈现为一致的视觉效果。  动画检查器根据开始时间以及排除延迟 (等来预测哪些动画) 。  动画检查器还会将动画并排分组。
+动画组是一组相互相关的动画。  目前，Web 没有组动画的实际概念，因此动画设计人员和开发人员必须撰写各个动画并设置动画时间，以便动画呈现为一致的视觉效果。  动画检查器根据开始时间以及排除延迟 (等来预测与哪些动画) 。  动画检查器还会将动画并排分组。
 换句话说，在同一脚本块中触发的一组动画会被组合在一起。  如果动画是异步动画，它会被放置在单独的组中。
 
 
@@ -108,7 +107,7 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
 捕获动画后，有多种方式可以重播它：
 
 *   将鼠标悬停在“**概述**”窗格中的缩略图上，查看缩略图的预览。
-*   从"概述"窗格中选择****"动画组 (以便它显示在"详细信息"窗格中) 并选择****"重播 (**** ![ 图标) ](../media/replay-button-icon.msft.png) 图标。  动画会在视区中重播。  选择动画 **速度 (** ![ 动画) 图标来更改当前选定的 ](../media/animation-speed-buttons-icon.msft.png) 动画组的预览速度。  可以使用红色竖线更改当前位置。
+*   从"概述"窗格中选择****"动画组 (以便它显示在"详细信息"窗格中) **** 并选择"重播 (**** ![ 图标) ](../media/replay-button-icon.msft.png) 图标。  动画会在视区中重播。  选择动画 **速度 (** ![ 动画) 图标来更改当前选定的 ](../media/animation-speed-buttons-icon.msft.png) 动画组的预览速度。  可以使用红色竖线更改当前位置。
 *   选择并拖动红色竖线以清理视区动画。
 
 ### <a name="view-animation-details"></a>查看动画详细信息
@@ -131,7 +130,7 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
    动画迭代关系图
 :::image-end:::
 
-如果两个元素应用了相同的动画，则动画检查器会向这些元素分配相同的颜色。  颜色是随机的，没有意义。  例如，在下图中，这两个元素应用了相同的动画 `div.cwccw.earlier` `div.cwccw.later` () 和 元素一 `spinrightleft` `div.ccwcw.earlier` `div.ccwcw.later` 样。
+如果两个元素应用了相同的动画，则动画检查器会向这些元素分配相同的颜色。  颜色是随机的，没有意义。  例如，在下图中，这两个元素应用了相同的 () 动画，与 `div.cwccw.earlier` `div.cwccw.later` 和 `spinrightleft` 元素一 `div.ccwcw.earlier` `div.ccwcw.later` 样。
 
 :::image type="complex" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="颜色编码动画" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
    颜色编码动画

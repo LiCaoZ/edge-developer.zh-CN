@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， 路线图， 加载项路线图
 ms.date: 11/24/2021
-ms.openlocfilehash: 9112e9fdeedf241b90031be7aeafc29734853e86
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: a127744961a5eb08318902b402977ec3e7342366
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285622"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320198"
 ---
 # <a name="microsoft-edge-add-ons-roadmap"></a>Microsoft Edge 加载项路线图
 
@@ -34,6 +33,6 @@ ms.locfileid: "12285622"
 
 若要检查合作伙伴中心最近发布的功能，请参阅Microsoft Edge[加载项发布的功能](released-features.md)。
 
-若要查看消费者路线图，请转到 Insider [Roadmap Microsoft Edge](https://www.microsoftedgeinsider.com/whats-next)并向下滚动到"**功能路线图"** 部分。 
+若要查看消费者路线图，请转到预览[Microsoft Edge路线图](https://www.microsoftedgeinsider.com/whats-next)，然后向下滚动到功能**路线图部分。** 
 
-若要查看有关 Microsoft Edge 的完整路线图，请参阅 Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge)。
+若要查看有关该指南的完整Microsoft Edge，请参阅Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge)。

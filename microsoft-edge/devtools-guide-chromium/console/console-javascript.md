@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge， JavaScript， Web 开发， f12 工具， devtools
 ms.date: 04/13/2021
-ms.openlocfilehash: af2a374298e924a797d65a0a4c5c7a383bbd2e84
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: fa43e095ef01e6cc4d180d5885c3c7ce2e49c25f
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285188"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318903"
 ---
 # <a name="run-javascript-in-the-console"></a>在控制台中运行 JavaScript
 
@@ -87,7 +86,7 @@ ms.locfileid: "12285188"
 
 除了在你自己的脚本中， **控制台** 还 [支持顶级 await](https://github.com/tc39/proposal-top-level-await) 在它内运行任意异步 JavaScript。  例如，使用 API 时 `fetch` 无需使用 `await` async 函数包装语句。
 
-若要获取最近 50 个在 Microsoft Edge[开发人员工具中Visual Studio Code GitHub](https://github.com/microsoft/vscode-edge-devtools)存储库：
+若要获取最近 50 个问题，请Microsoft Edge[开发人员工具Visual Studio Code GitHub](https://github.com/microsoft/vscode-edge-devtools)存储库：
 
 1.  打开“**控制台**”。
 1.  复制并粘贴以下代码段，获取包含 10 个条目的对象。

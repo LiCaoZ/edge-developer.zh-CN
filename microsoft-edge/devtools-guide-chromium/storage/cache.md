@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: cd87915816f51bed1a47fd399d9d273947cd2e4a
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 7069bbb9cf998c2fa0750213566897d3f942c477
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285041"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320793"
 ---
 <!-- Copyright Kayce Basques
 
@@ -78,7 +77,7 @@ ms.locfileid: "12285041"
        选择要刷新的资源
     :::image-end:::
 
-1.  Choose **Refresh (** ![ Refresh ](../media/refresh-icon.msft.png)) .
+1.  Choose **Refresh (** Refresh ![ ](../media/refresh-icon.msft.png)) .
 
 
 <!-- ====================================================================== -->

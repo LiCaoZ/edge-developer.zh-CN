@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 06/24/2021
-ms.openlocfilehash: c6f5253695a7b22683fcf198fe82dcb44b8638e6
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 2f47c985379c92f1c0fa59b842ba6f4b41d5d28a
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286896"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319351"
 ---
 <!-- Copyright Sam Dutton
 
@@ -88,7 +87,7 @@ ms.locfileid: "12286896"
 
 1.  打开新 [窗口或](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 选项卡中的演示页面，然后打开 DevTools。
 
-1.  打开"**问题"** 工具，选择****"问题 ![ " ("计数器 ](../media/issues-counter-icon.msft.png)) 。
+1.  打开" **问题"** 工具，选择"问题 **" (""** ![ 问题 ](../media/issues-counter-icon.msft.png) ") 。
 
 1.  选择问题以展开问题。
 
@@ -126,7 +125,7 @@ ms.locfileid: "12286896"
 <!-- ====================================================================== -->
 ## <a name="open-issues-from-the-dom-tree"></a>打开 DOM 树中的问题
 
-如果元素具有关联问题，则 **"** 元素"工具中的 DOM 树在元素名称下显示波浪下划线。  您可以打开上下文菜单 (右键单击) ，然后选择查看问题，或者选择并左键单击带波浪下划线**** `Shift` 的元素。
+如果元素具有关联问题，则 **"** 元素"工具中的 DOM 树在元素名称下显示波浪下划线。  可以打开上下文菜单 (右键单击) ，然后选择"查看问题"，或者选择并左键单击带**** 波浪下划线 `Shift` 的元素。
 
 若要对 DOM 树中带波浪下划线的元素显示问题，请执行以下步骤。
 

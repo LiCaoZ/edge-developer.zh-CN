@@ -1,22 +1,21 @@
 ---
 title: 管理帐户设置
-description: 管理合作伙伴计划的合作伙伴Microsoft Edge帐户。
+description: 管理合作伙伴中心帐户，以Microsoft Edge计划。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
 ms.date: 02/17/2021
-ms.openlocfilehash: b88bc781c457787d8b02d28aebe5b1656661bba2
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: df6d2fa3a327f7af4273981e588eaa1e88b952fa
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284754"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319036"
 ---
 # <a name="manage-account-settings"></a>管理帐户设置
 
-在合作伙伴中心 管理你的Microsoft Edge开发者帐户的帐户设置[和个人资料详细信息](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)。
+在合作伙伴中心管理你的开发者帐户Microsoft Edge帐户设置[和个人资料详细信息](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)。
 
 
 <!-- ====================================================================== -->
@@ -34,11 +33,11 @@ ms.locfileid: "12284754"
 <!-- ====================================================================== -->
 ## <a name="contact-details"></a>联系人详细信息
 
-" **联系人信息** "部分显示创建帐户时提供的详细信息。  Microsoft Edge扩展团队使用联系人详细信息来联系你有关你的帐户的信息。  此外显示名称"联系人信息"部分Microsoft Edge"加载项"网站中显示的**发布者。**
+" **联系人信息** "部分显示创建帐户时提供的详细信息。  Microsoft Edge扩展团队使用联系人详细信息来联系你有关你的帐户的信息。  同时显示名称"联系人信息"部分Microsoft Edge"加载项"网站中显示的**发布者。**
 
 如果联系人信息发生更改，请编辑 **"联系人信息"** 部分。  选择 **"更新**"，进行更改，然后选择"保存 **"。**  还可以 **选择左侧导航** 菜单中的"联系人信息"以打开 **"联系人信息"** 部分。
 
-如果你需要更改任何联系人详细信息，Microsoft Edge团队可能会再次验证你的帐户，尤其是在你有公司帐户时。  审核进行中 `Pending` ，你的验证状态将返回。  验证过程从几天到几周不等，你的公司可能会收到来自我们的验证合作伙伴的电话。
+如果需要更改任何联系人详细信息，Microsoft Edge扩展团队可能会再次验证你的帐户，尤其是在你有公司帐户时。  审核进行中 `Pending` ，你的验证状态将返回。  验证过程从几天到几周不等，你的公司可能会收到来自我们的验证合作伙伴的电话。
 
 
 <!-- ====================================================================== -->

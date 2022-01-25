@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 12/13/2021
-ms.openlocfilehash: a4ec091fa1e07fbb14ccd6291e6ade6dd53c38ea
-ms.sourcegitcommit: d50ea51447623ba405a824811e173f4d26d39c2c
+ms.openlocfilehash: bcd5463a7cbcfc516142735fdbbf2816947165c2
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "12289390"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319911"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -31,13 +30,13 @@ ms.locfileid: "12289390"
 
 本文介绍内存分析中使用的常见术语，适用于不同语言的各种内存分析工具。
 
-此处介绍的术语和概念是指内存 [面板](./heap-snapshots.md)。  如果你曾经使用过 Java、.NET 或其他一些内存探查器，那么本文可能是一个刷新的文章。
+此处介绍的术语和概念是指内存 [面板](./heap-snapshots.md)。  如果你曾经使用过 Java、.NET 或其他一些内存探查器，那么本文可能是一个刷新程序。
 
 
 <!-- ====================================================================== -->
 ## <a name="object-sizes"></a>对象大小
 
-将内存视为包含基元类型的图形 (数字和字符串) 关联数组 (对象) 。  内存可以直观地表示为具有多个互连点的图形，如下所示：
+将内存视为包含基元类型的图形， (数字和字符串) 关联数组 (对象) 。  内存可以直观地表示为具有多个互连点的图形，如下所示：
 
 :::image type="content" source="../media/memory-problems-thinkgraph.msft.png" alt-text="内存的视觉表示形式。" lightbox="../media/memory-problems-thinkgraph.msft.png":::
 
@@ -45,7 +44,7 @@ ms.locfileid: "12289390"
 
 *   直接;内存由对象本身持有。
 
-*   隐式，通过保留对其他对象的引用。  保留对其他对象的引用的对象可防止垃圾回收器在 GC 记录器中 (这些) 。
+*   隐式，通过保留对其他对象的引用。  保留对其他对象的引用的对象可防止垃圾回收器在 GC (自动释放) 。
 
 DevTools 中的内存面板是调查内存问题的工具。 [](./heap-snapshots.md)
 
@@ -67,9 +66,9 @@ _呈现器内存_  = _本机内存_  + _页面的 JS 堆内存_  + _由页面启
 
 ### <a name="retained-size"></a>保留大小
 
-保留__ 大小是对象删除后释放的内存大小，以及因垃圾回收根目录和 GC 根 (无法访问的依赖) 。
+保留__ 大小是对象删除后释放的内存大小，以及从垃圾回收根目录和 GC 根目录 (无法访问) 。
 
-_垃圾回收根_由作为本地或全局__ (创建的句柄（从本机代码引用 V8 VM 外部的 JavaScript 对象时) 创建）。  可以在 GC 根下的堆快照内找到所有此类**** 句柄  >  **处理范围**和**GC 根**  >  **全局句柄**。  在本文档中介绍句柄而不深入介绍浏览器实现的详细信息可能会令人困惑。  垃圾回收根和句柄都不需要担心。
+垃圾回收_根_由从本机代码到__ V8 VM 外部的 JavaScript 对象进行引用时 (创建为本地或全局) 的句柄。  可以在 GC 根下的堆快照内找到所有此类**** 句柄  >  **处理范围**和**GC 根**  >  **全局句柄**。  在本文档中介绍句柄而不深入介绍浏览器实现的详细信息可能会令人困惑。  垃圾回收根和句柄都不需要担心。
 
 有许多内部 GC 根，其中大多数根对用户不感兴趣。  从应用程序的角度来看，有以下类型的根：
 
@@ -99,7 +98,7 @@ _垃圾回收根_由作为本地或全局__ (创建的句柄（从本机代码�
 
 为图形中的节点和边缘提供标签，如下所示：
 
-*   _节点_ (_或_) 使用用于构建这些节点或对象的构造函数函数的名称进行标记。 __
+*   _节点_ (_或) _对象标有用于生成节点的构造函数函数的名称。 __
 
 *   _边缘_ 使用属性 的名称 _标记_。
 
@@ -155,7 +154,7 @@ Dominator 对象由树结构组成，因为每个对象只有一个管理程序�
 <!-- ====================================================================== -->
 ## <a name="v8-specifics"></a>V8 特定内容
 
-分析内存时，了解堆快照为何以特定方式显示非常有用。  本部分介绍一些与内存相关的主题，这些主题专门与 _V8 JavaScript_ 虚拟机相对应 (此处缩写为 _V8 VM，_ 或仅 _VM_) 。
+分析内存时，了解堆快照为何以特定方式显示非常有用。  本节介绍一些与内存相关的主题，这些主题专门与 _V8 JavaScript_ 虚拟机相对应 (此处缩写为 _V8 VM，_ 或仅 _VM_) 。
 
 ### <a name="javascript-object-representation"></a>JavaScript 对象表示形式
 
@@ -179,11 +178,11 @@ Dominator 对象由树结构组成，因为每个对象只有一个管理程序�
 
 *   呈现器**内存中的外部。**  创建 _包装_ 对象并用于访问外部存储，例如，存储从 Web 接收的脚本源和其他内容，而不是复制到 VM 堆。
 
-新 JavaScript 对象的内存从专用 JavaScript 堆或 VM (_分配) 。_  这些对象由 VM V8 的垃圾回收器管理，因此，只要至少有一个强引用，这些对象就会保持活动状态<!-- undefined term --> 。
+新 JavaScript 对象的内存从专用 JavaScript 堆或 VM 堆 (_分配) 。_  这些对象由 VM V8 的垃圾回收器管理，因此，只要至少有一个强引用，这些对象就会保持活动状态<!-- undefined term --> 。
 
 **本机对象** - 任何不在 JavaScript 堆中的对象都称为 _本机对象_。  与堆对象相反，本机对象在其整个生命周期内不由 V8 垃圾回收器管理，并且只能使用 JavaScript 包装对象从 JavaScript 访问。
 
-cons **string (** concatenation string) is an object that consists of pairs of strings that are stored and then joined， and is a result of concatenation.  仅根据需要 **联接 cons 字符串** 内容。  例如，需要构造联接字符串的子字符串时。
+cons **string** (concatenation string) is an object that consists of pairs of strings that are stored and then joined， and is a result of concatenation.  仅根据需要 **联接 cons 字符串** 内容。  例如，需要构造联接字符串的子字符串时。
 
 例如，如果连接 和 ，则得到一个表示连接结果的字符串，并且 `a` `b` `(a, b)` 是一个 cons 字符串。  如果稍后连接了 `d` 该结果，则得到另一个 cons 字符串 `((a, b, d)` ：。
 
@@ -212,6 +211,6 @@ cons **string (** concatenation string) is an object that consists of pairs of s
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) 由技术编写人员 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (创作) 。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) 由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

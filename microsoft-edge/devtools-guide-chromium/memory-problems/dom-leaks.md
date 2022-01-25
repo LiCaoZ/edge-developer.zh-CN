@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge， Web 开发， f12 工具， 开发工具， 分离的元素， 文档对象模型， dom， 内存， 泄漏， 节点
 ms.date: 11/30/2021
-ms.openlocfilehash: 8d54e87f529ee22fb01e16953e3fa2abe351b647
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 709c43f69bad93b23ec0f632e9a7126a25fa8274
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284796"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320009"
 ---
 # <a name="debug-dom-memory-leaks-with-the-detached-elements-tool"></a>使用分离的元素工具调试 DOM 内存泄漏
 
@@ -26,7 +25,7 @@ ms.locfileid: "12284796"
 <!-- ====================================================================== -->
 ## <a name="open-the-detached-elements-tool"></a>打开分离的元素工具
 
-分离**的元素工具**默认在 Microsoft Edge 97 及更高版本中可用。 通过进入 Microsoft Edge检查你的版本 `edge://version` 。 如果你的版本小于 97，请阅读打开或[](../experimental-features/index.md#turning-an-experiment-on-or-off)关闭实验，了解打开分离**元素实验**的说明。
+默认情况下 **，分离的元素**工具在 Microsoft Edge 97 及更高版本中可用。 通过访问 Microsoft Edge检查你的版本 `edge://version` 。 如果你的版本小于 97，请阅读打开或[](../experimental-features/index.md#turning-an-experiment-on-or-off)关闭实验，了解打开分离**元素实验**的说明。
 
 打开分离 **的元素工具** ：
 
@@ -44,7 +43,7 @@ ms.locfileid: "12284796"
 <!-- ====================================================================== -->
 ## <a name="get-detached-elements"></a>获取分离的元素
 
-"**获取**分离元素 ("获取分离元素"图标。"分离元素"工具中的") "按钮在网页上查找并显示所有分离 ![ ](images/get-detached-elements-icon-light-mode.png) 的元素。 ****
+"**获取**分离的元素 ("获取分离的元素"图标。"分离的元素"工具中的") "按钮在网页上查找并显示所有分离 ![ ](images/get-detached-elements-icon-light-mode.png) 的元素。 ****
 
 若要查找分离的元素：
 
@@ -96,7 +95,7 @@ ms.locfileid: "12284796"
 
    :::image type="content" source="./images/detached-elements-heap-snapshot.msft.png" alt-text="从分离的元素工具引用堆快照。" lightbox="./images/detached-elements-heap-snapshot.msft.png":::
 
-1. 在底部**面板**的内存工具中，选择链接 **"room.js：13"。**
+1. 在底部**面板**的"内存"工具中，选择链接 **"room.js：13"。**
 
    "**源**"工具在顶部面板中打开到文件的第 13**行room.js。 **
 
@@ -114,7 +113,7 @@ ms.locfileid: "12284796"
 
 若要标识导致保留整个树的已分离树中的原因节点：
 
-1.  单击" **分离** ("元素"图标。单击) "图标以破坏分离树内的父 ![ ](images/detach-elements-icon-light-mode.png) 子链接。
+1.  单击" **分离** 元素 ("分离元素"图标。单击) "图标可销毁已分离树内的父 ![ ](images/detach-elements-icon-light-mode.png) 子链接。
 
     :::image type="content" source="./images/detached-elements-remove-links.msft.png" alt-text="分离的元素工具中的分离元素按钮。" lightbox="./images/detached-elements-remove-links.msft.png":::
 
@@ -150,4 +149,4 @@ ms.locfileid: "12284796"
 
 对于长时间运行的应用，仅泄露几千字节的小内存可能会随着时间的推移显著降低性能。 使用虚拟框架React知道React维护 DOM 的虚拟化副本。 无法正确卸载组件可能会导致应用程序泄露虚拟 DOM 的较大部分。
 
-此演示应用及其泄漏是人为的。 在生产网站或应用上测试分离的元素工具。 如果发现分离元素工具的潜在问题，请联系 Microsoft Edge [DevTools](../contact.md)团队，以发送有关分离元素工具和内存泄漏**** 调试的反馈。
+此演示应用及其泄漏是人为的。 在生产网站或应用上测试分离的元素工具。 如果发现分离元素工具的潜在问题，请与 Microsoft Edge [DevTools](../contact.md)团队联系，以发送有关分离元素工具和内存泄漏**** 调试的反馈。

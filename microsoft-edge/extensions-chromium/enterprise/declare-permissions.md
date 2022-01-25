@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
 ms.date: 03/17/2021
-ms.openlocfilehash: 53d5f523d270a7ddf3b8179df97d394711c51e88
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: e9a8edce996483964b46d97ecefe9d6faf851df6
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12287162"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320366"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -51,7 +50,7 @@ ms.locfileid: "12287162"
 |:--- |:--- |
 | `activeTab` | 请求根据规范向扩展授予 `activeTab` 权限。 |
 | `alarms` | 授予对 API 的扩展 `chrome.alarms` 访问权限。 |
-| `background` | 使Microsoft Edge提前启动并延迟关闭，以便扩展的生命周期更长。  如果任何安装的扩展具有权限，Microsoft Edge登录到用户计算机后，以及用户启动 Microsoft Edge 之前，该扩展将以不明显方式 `background` Microsoft Edge。  权限还使Microsoft Edge继续运行，即使其最后一个窗口已关闭，直到用户显式退出 `background` Microsoft Edge。  此权限不会影响浏览器中关闭的扩展。  `background`该权限通常在背景页上使用。 |
+| `background` | 使Microsoft Edge提前启动并延迟关闭，以便扩展的生命周期更长。  如果任何安装的扩展具有权限，Microsoft Edge在用户登录到用户计算机时，以及用户启动 Microsoft Edge 之前，该扩展将 `background` Microsoft Edge。  权限还使Microsoft Edge继续运行，即使其最后一个窗口已关闭，直到用户显式退出 `background` Microsoft Edge。  此权限不会影响浏览器中关闭的扩展。  `background`该权限通常在背景页上使用。 |
 | `bookmarks` | 授予对 API 的扩展 `chrome.bookmarks` 访问权限。 |
 | `browsingData` | 授予对 API 的扩展 `chrome.browsingData` 访问权限。 |
 | `certificateProvider` | 授予对 API 的扩展 `chrome.certificateProvider` 访问权限。 |

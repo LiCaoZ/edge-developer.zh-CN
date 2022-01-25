@@ -1,23 +1,22 @@
 ---
 title: 实验性功能和源试用版
-description: 如何在网站中测试PWA测试Microsoft Edge并注册站点源试用版，以便与用户一起在生产中使用这些功能。
+description: 如何测试实验PWA中的功能Microsoft Edge并注册站点源试用版，以便与用户一起在生产中使用这些功能。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用， PWA， Microsoft Edge， 实验， 源试用版
 ms.date: 09/15/2021
-ms.openlocfilehash: 519abec26eade7fe0d9b8d3f6f1a00ee14f3d1a8
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: c91115ffdf9d5210f57227a8d8f3d02eb2ed7757
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12287078"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319750"
 ---
 # <a name="experimental-features-and-origin-trials"></a>实验性功能和源试用版
 
-PWA中的某些Microsoft Edge仍处于实验阶段。 实验功能可通过两种方式使用：
+其中某些PWA功能Microsoft Edge实验性功能。 实验功能可通过两种方式使用：
 
 *   通过启用 Microsoft Edge。
 *   在源试用版中注册网站，以便与用户一起测试生产中的功能。

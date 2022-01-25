@@ -5,18 +5,17 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 10/28/2021
-ms.openlocfilehash: 9393ce7bf725b79cbb6653627763e49ae0775ea2
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 10394a60c60002cd83203b83a4817a5035ed46d0
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284201"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319470"
 ---
 # <a name="performance-monitor"></a>性能监视器
 
-在**DevTools** Microsoft Edge性能监视器工具，可实时查看网页的运行时性能。
+在**DevTools** Microsoft Edge性能监视器工具获取网页的运行时性能实时视图。
 
 性能 **监视器** 工具可帮助确定性能问题来自何处。  网站运行缓慢的原因有多种。  此工具提供了一些线索，用于了解这些问题是否与原因相关，例如：
 *  高内存或 CPU 使用率。
@@ -51,7 +50,7 @@ ms.locfileid: "12284201"
 | **JS 堆大小** | 页面上 JavaScript 程序使用的内存量。  默认情况下显示。 |
 | **DOM 节点** | 浏览器中跨选项卡的 DOM 节点 (个) 。  默认情况下显示。 |
 | **JS 事件侦听器** | 浏览器中跨选项卡的 JavaScript 事件侦听器 (数) 。 |
-| **文档** | 浏览器中跨选项卡显示的文档 (数) 。 |
+| **文档** | 浏览器上的文档对象数 (选项卡) 。 |
 | **文档框架** | 浏览器上的文档框架数 (选项卡) 。 |
 | **布局/秒** | 浏览器引擎每秒构造页面布局次数。 |
 | **样式重新计算/秒** | 浏览器引擎每秒计算页面的 CSS 样式次数。 |

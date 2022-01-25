@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: d08a6d1853df57c822bd6360e5586b33308da468
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 3dce6e06c77a7b5cd9464d9c0c7dd369c6f7f604
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285195"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318917"
 ---
 <!-- Copyright Kayce Basques
 
@@ -281,7 +280,7 @@ console.info('info');
 
 #### <a name="output"></a>输出
 
-:::image type="content" source="../media/console-demo-info-button.msft.png" alt-text="示例 console.info () 的结果" lightbox="../media/console-demo-info-button.msft.png":::
+:::image type="content" source="../media/console-demo-info-button.msft.png" alt-text="示例 #console.info () 的结果" lightbox="../media/console-demo-info-button.msft.png":::
 
 ---
 
@@ -437,6 +436,6 @@ console.warn('warn');
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/console/api)，由技术编写 (Chrome DevTools & Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors/kaycebasques)
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/console/api) ，由技术编写者 [、Chrome](https://developers.google.com/web/resources/contributors/kaycebasques) DevTools & Lighthouse (创作) 。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

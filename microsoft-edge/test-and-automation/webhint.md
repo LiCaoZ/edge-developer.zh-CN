@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge， Web 开发， vs code， visual studio code， webhint
 ms.date: 11/19/2021
-ms.openlocfilehash: 8b89bc075b449adf76eec9d7f4dd8aafae67a7d1
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 86ebb568d879228fb96dd06d0a5ce812e32be8bf
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285776"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319638"
 ---
 # <a name="webhint-extension-for-visual-studio-code"></a>适用于Visual Studio Code的 webhint 扩展
 

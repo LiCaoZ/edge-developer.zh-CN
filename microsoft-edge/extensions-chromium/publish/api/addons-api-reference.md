@@ -1,25 +1,24 @@
 ---
 title: 'Microsoft Edge开发中 (加载项 API) '
-description: 加载项 API 参考，适用于 REST 终结点，可自动发布提交到加载项网站的加载项Microsoft Edge更新。
+description: 加载项 API 参考，适用于 REST 终结点，用于自动发布提交到加载项网站的加载项Microsoft Edge更新。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， 加载项 api， 发布 api
 ms.date: 08/19/2021
-ms.openlocfilehash: 74b05bf09b62009e3f9083a1ef725baa44af46d5
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 3529f3648c5999d2cc5ecc155f5b6efa6a14005e
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12287141"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319232"
 ---
 # <a name="microsoft-edge-add-ons-api-reference-under-development"></a>Microsoft Edge开发中 (加载项 API) 
 
 > [!NOTE]
-> 本文是一个请求注释。  加载项Microsoft Edge API 尚未可用于测试，并且合作伙伴中心尚未提供"发布 API"页。  加载项MICROSOFT EDGE API 正在积极开发中，路线图根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
+> 本文是一个请求注释。  Microsoft Edge加载项 API 尚未可用于测试，并且合作伙伴中心尚未提供"发布 API"页。  加载项MICROSOFT EDGE API 正在积极开发中，路线图根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
 
-这是加载项 API 的 REST Microsoft Edge引用。  此 API 可自动发布已提交到加载项网站的Microsoft Edge更新。
+这是加载项 API 的 REST Microsoft Edge引用。  此 API 可自动发布已提交到加载项网站的加载项Microsoft Edge更新。
 
 有关概述，请参阅[使用Microsoft Edge加载项 API。](using-addons-api.md)
 

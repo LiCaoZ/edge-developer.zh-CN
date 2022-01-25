@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge， Web 开发， f12 工具， 开发工具， 更改
 ms.date: 10/28/2021
-ms.openlocfilehash: d7226023b2e4ad3fe15436358f8555e3d4f454fc
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: c356260741a7ff907e431c78ec4c02bf9ad9627d
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284383"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318560"
 ---
 # <a name="changes-tool"></a>更改工具
 
@@ -34,7 +33,7 @@ The **Changes tool** tracks any changes you have made to CSS or JavaScript in De
 <!-- ====================================================================== -->
 ## <a name="open-the-changes-tool-by-clicking-the-more-tools-icon"></a>通过单击"更多工具"图标打开"更改"工具
 
-在主工具栏**或"箱**"工具栏上，单击"更多**工具** `+` " () 图标，然后选择"更改 **"：**
+在主工具栏**或"箱**"工具栏上，**** 单击"更多工具 `+` () 图标，然后选择"更改 **"：**
 
 :::image type="content" source="../media/changes-tool/changes-tool-via-plus-menu-reduced.msft.png" alt-text="&quot;更多工具 (+) 主工具栏中的图标和菜单，同时选择&quot;更改&quot;工具。" lightbox="../media/changes-tool/changes-tool-via-plus-menu.msft.png":::
 
@@ -52,7 +51,7 @@ The **Changes** tool appears in the main toolbar or in the **Drawer**， dependi
 <!-- ====================================================================== -->
 ## <a name="open-the-changes-tool-by-using-the-command-menu"></a>使用命令菜单打开"更改"工具
 
-通过按["命令](../command-menu/index.md)菜单"Windows/Linux 或 Mac 上， `Ctrl` + `Shift` + `P` `Command` + `Shift` + `P` 然后键入 `changes` 。  突出显示 **"显示更改** "命令;按 `Enter` 。
+通过按[](../command-menu/index.md) `Ctrl` + `Shift` + `P` Windows/Linux `Command` + `Shift` + `P` 或 Mac `changes` 上的 命令菜单，然后键入 。  突出显示 **"显示更改** "命令;按 `Enter` 。
 
 :::image type="content" source="../media/changes-tool/changes-tool-command-menu-reduced.msft.png" alt-text="在命令菜单中，开始键入&quot;更改&quot;，然后选择&quot;显示更改&quot;命令。" lightbox="../media/changes-tool/changes-tool-command-menu.msft.png":::
 

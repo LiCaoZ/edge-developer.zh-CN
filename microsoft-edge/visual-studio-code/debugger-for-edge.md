@@ -5,20 +5,19 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge， Web 开发， f12 工具， devtools， vs code， visual studio code， debugger
 ms.date: 11/10/2021
-ms.openlocfilehash: ea6610f7f05aef990ddf4ecd9580eed64d27a622
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 8d16964f2a133fc459756fcdc7b91f0502104d33
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286588"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320541"
 ---
 # <a name="debug-microsoft-edge-in-visual-studio-code"></a>在Microsoft Edge中调试Visual Studio Code
 
 [Visual Studio Code](https://code.visualstudio.com)内置调试程序，Microsoft Edge启动浏览器或附加到已运行的浏览器。
 
-通过此内置调试程序，你可以分行调试前端 JavaScript 代码，并直接从 `console.log()` Visual Studio Code。
+通过此内置调试器，你可以分行调试前端 JavaScript 代码，并直接从 `console.log()` Visual Studio Code。
 
 有关详细信息，请参阅浏览器[调试VS Code。](https://code.visualstudio.com/docs/nodejs/browser-debugging)
 

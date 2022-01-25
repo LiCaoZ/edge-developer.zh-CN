@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 04/13/2021
-ms.openlocfilehash: 9d31d7ad75dfd04f9bff21e42499ff22f5313905
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 6713dc2f65d106ac624a08ade6606d8b57a3c839
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284397"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318931"
 ---
 # <a name="use-the-console-to-interact-with-the-dom"></a>使用控制台与 DOM 交互
 

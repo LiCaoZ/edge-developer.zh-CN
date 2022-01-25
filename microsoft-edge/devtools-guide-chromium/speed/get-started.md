@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: b97a18e3c17454b7f9a9a3288d74b9eb63651721
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 7ecb5baaa97af06258d025a3b284b8409a87b693
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286014"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318861"
 ---
 <!-- Copyright Kayce Basques
 
@@ -87,7 +86,7 @@ ms.locfileid: "12286014"
        开发人员工具和演示
     :::image-end:::
 
-对于本教程中的其余屏幕截图，开发人员工具显示在单独窗口中。  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) `Undock` **** 打开"命令菜单"，键入 ，然后选择"在单独的窗口中撤消"。
+对于本教程中的其余屏幕截图，开发人员工具显示在单独窗口中。  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) `Undock` **** 打开"命令菜单"，键入 ，然后选择"在单独的窗口中取消停靠"。
 
 :::image type="complex" source="../media/speed-console.msft.png" alt-text="移除的开发人员工具" lightbox="../media/speed-console.msft.png":::
    移除的开发人员工具
@@ -97,7 +96,7 @@ ms.locfileid: "12286014"
 
 基线是指在改进性能之前有关站点执行情况的记录。
 
-1.  选择**审核**工具。  它可能隐藏在"更多面板**** ![ " ("更多) ](../media/more-panels-icon.msft.png) 按钮后面。  此面板包含"灯塔"，因为支持“审核”面板的项目名为**灯塔**。
+1.  选择**审核**工具。  它可能隐藏在"更多面板 **" ("** ![ 更多) ](../media/more-panels-icon.msft.png) 按钮后面。  此面板包含"灯塔"，因为支持“审核”面板的项目名为**灯塔**。
 
     [!INCLUDE [audits-panel-note](../includes/audits-panel-note.md)]
 
@@ -372,7 +371,7 @@ ms.locfileid: "12286014"
 加载页面时是否需要`jquery.js`和`lodash.js`文件？  **请求阻止**工具显示资源不可用时会发生的状况。
 
 1.  选择**网络**工具。
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 以再次打开命令菜单。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 再次打开命令菜单。
 1.  开始键入`blocking`，然后选择**显示请求阻止**。
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png" alt-text="请求阻止工具" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png":::

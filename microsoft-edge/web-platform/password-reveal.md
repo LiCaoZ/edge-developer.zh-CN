@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge， 兼容性， Web 平台， 密码展示， 眼睛图标
 ms.date: 04/29/2021
-ms.openlocfilehash: f4a5e66c81dc33cb85c3a97212bada19930735b7
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 393a90aa68587faad6111c14d634add8fa96538e
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285783"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320639"
 ---
 # <a name="customize-the-password-reveal-button"></a>自定义“密码显示”按钮
 
@@ -26,7 +25,7 @@ ms.locfileid: "12285783"
 
 :::image type="complex" source="./media/mdn-demo-password-reveal-on.msft.png" alt-text="目视图标上有一个斜杠，并且显示原始密码文本" lightbox="./media/mdn-demo-password-reveal-on.msft.png":::
 
-默认情况下，密码 **显示** 按钮插入到所有 HTML 元素的 Shadow DOM 中，并将 `input` 设置为 `type` `"password"` 。  从 Microsoft Edge版本 87 开始，用户或[企业](/deployedge/microsoft-edge-policies#passwordrevealenabled)可能会全局禁用此功能。  您（Web 设计人员和开发人员）应该希望大多数Microsoft Edge用户拥有默认体验。
+默认情况下，密码 **显示** 按钮插入到所有 HTML 元素的 Shadow DOM 中，并将 `input` 设置为 `type` `"password"` 。  从版本 87 Microsoft Edge，用户或[企业](/deployedge/microsoft-edge-policies#passwordrevealenabled)可能会全局禁用此功能。  您（Web 设计人员和开发人员）应该希望大多数Microsoft Edge用户拥有默认体验。
 
 
 <!-- ====================================================================== -->

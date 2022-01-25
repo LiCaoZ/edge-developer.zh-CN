@@ -6,14 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进 Web 应用，PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
 ms.date: 01/07/2021
-ms.openlocfilehash: df05806140da3b9027443697fb5f76459e1c0297
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 046ca1e0f670d0becbe1de7f10f45599598a162f
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286602"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318392"
 ---
 # <a name="use-service-workers-to-manage-network-requests-and-push-notifications"></a>使用服务工作人员管理网络请求和推送通知
 

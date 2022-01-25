@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， 加载项发布功能， 加载项新功能， 加载项功能启动
 ms.date: 11/24/2021
-ms.openlocfilehash: 55d69c3214a6e6dbd5a40f5182815476f087a681
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 5e60b28598cf506dd33bc4a42aa395c076738bd2
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284691"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320954"
 ---
 # <a name="microsoft-edge-add-ons-released-features"></a>Microsoft Edge 加载项已发布功能
 

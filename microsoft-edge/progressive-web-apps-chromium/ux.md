@@ -5,34 +5,33 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: 渐进式 Web 应用， PWA， edge， Windows， 桌面， 安装， 集成， microsoft store， ux
 ms.date: 09/15/2021
-ms.openlocfilehash: a69ee70c9b7f8d2d49a602287610b458a07f8dd8
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: c700ed3cd6fb686b7b89061c8eacc32aaa5f32b1
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284110"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318679"
 ---
 # <a name="the-user-experience-of-pwas"></a>PWA 的用户体验
 
-在Windows中， (PA) 的渐进 Web 应用与其他应用一样。  任何运行 Microsoft Edge都完全可以访问渐进式 Web 应用的技术和特征。
+在Windows，渐进式 Web (PA) 与其他应用一样。  任何运行 Microsoft Edge都完全可以访问渐进式 Web 应用的技术和特征。
 
 
 <!-- ====================================================================== -->
 ## <a name="installing-a-pwa"></a>安装PWA
 
-当Microsoft Edge网站是可安装的渐进式 Web 应用 (PWA) 时， ("应用可用"图标。) 图标显示在地址**** 栏中 ![ ](media/app-available-icon.png) 。
+当Microsoft Edge网站是可安装的渐进式 Web 应用 (PWA) 时，应用程序**可用 ("** 应用可用"图标。) 图标显示在地址 ![ ](media/app-available-icon.png) 栏中。
 
-1.  单击"**应用 ("** 可用"图标。) ![ ](media/app-available-icon.png) 图标安装PWA。
+1.  单击"**可用应用 ("** 应用 ![ "图标。) ](media/app-available-icon.png) 图标以安装PWA。
 
     :::image type="content" source="./media/edge-app-install-flyout.png" alt-text="Microsoft Edge 中的安装提示。":::
 
 1.  单击 **"** 安装"以完成安装，PWA运行Windows。
 
-许多 PA 也存在于Microsoft Store中，可以直接从该位置安装，而无需打开Microsoft Edge。
+许多 PA 也存在于 Microsoft Store 中，可以直接从该位置安装，而无需打开 Microsoft Edge。
 
-若要从PWA安装Microsoft Store，**请选择应用页面上**的"获取"：
+若要从PWA安装Microsoft Store，请在应用页面上选择获取： ****
 
 :::image type="content" source="./media/install-webboard-microsoft-store.png" alt-text="从应用程序安装Microsoft Store。":::
 
@@ -42,9 +41,9 @@ ms.locfileid: "12284110"
 
 若要查找已安装的渐进式 Web 应用 (PA) Microsoft Edge，请转到 `edge://apps` 。  在此页面上，可以通过单击"打开"打开任何 **应用**。  若要了解有关应用或卸载应用的详细信息，请单击"详细信息 **"。**
 
-:::image type="content" source="./media/edge-apps-listing.png" alt-text="应用程序中已安装的应用 edge://apps。":::
+:::image type="content" source="./media/edge-apps-listing.png" alt-text="应用程序中已安装应用 edge://apps。":::
 
-还可以像管理其他应用一样 **，在**"应用和功能&设置中管理WINDOWS PA。
+还可以像管理其他应用一**样，** 在应用和功能&管理 Windows PWA。
 
 1.  在Windows中，选择"**开始**  >  **设置"。**
 1.  在"查找设置"搜索**字段中键入"apps"，** 然后选择"**添加或删除程序"。**
@@ -56,13 +55,13 @@ ms.locfileid: "12284110"
 <!-- ====================================================================== -->
 ## <a name="windows-integration"></a>Windows 集成
 
-渐进式 Web (PA) 像本机应用一样显示在 Windows。 它们显示在任务栏中 (可以固定到其中) 菜单，或者使用 在应用之间切换 `Alt` + `Tab` 时。
+渐进式 Web (PBA) 像本机应用一样Windows。 它们显示在任务栏中 (可以固定到其中) 菜单，或者使用 在应用之间切换 `Alt` + `Tab` 时。
 
-PWA 和本机应用可以并排驻留在任务栏中， (此处用红色框表示) ：
+PWA 和本机应用可以并排驻留在任务栏中 (PA 由红色框) 表示：
 
 :::image type="content" source="./media/pwas-in-the-taskbar.png" alt-text="任务栏中的 PBA 和本机应用并排显示。":::
 
-在使用 PA 在窗口之间切换时，将显示 PBA 和本机 (此处用红色框表示 `Alt` + `Tab` ，) ：
+在使用 PBA 在窗口之间切换时，将显示 PBA 和本机 (此处由红色框指示 `Alt` + `Tab` ，) ：
 
 :::image type="content" source="./media/pwas-in-alttab.png" alt-text="当使用 Alt+Tab 在窗口之间切换时，将显示 PWA 和本机应用。":::
 
@@ -98,7 +97,7 @@ WINDOWS上的 PA 可在用户登录时自动启动，以便他们可以立即使
 <!-- ====================================================================== -->
 ## <a name="app-info-menu"></a>应用信息菜单
 
-当用户在渐进 Web 应用 (标题栏中)  (PWA) 省略**** 号"..."按钮时，将显示"应用信息"菜单： ****
+当用户在渐进 Web 应用 (标题栏中) 省略号"..."按钮 (PWA) "应用信息"菜单将显示： **** ****
 
 :::image type="content" source="./media/app-info-menu.png" alt-text="&quot;应用信息&quot;菜单。":::
 

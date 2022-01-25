@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， 扩展
 ms.date: 01/07/2021
-ms.openlocfilehash: c1b4aa420073ff07646733fc160fdb364d31bad4
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 4f97e568bc534140c013f1a452fb73bedf8e580b
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12287197"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318658"
 ---
 # <a name="create-an-extension-tutorial-part-2"></a>创建扩展教程第 2 部分
 
@@ -131,7 +130,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 
 原因是你使用 元素的 属性将图像 `src` `img` 注入内容页面。  内容页在运行扩展的线程不同的唯一线程上运行。  必须将静态图像文件公开为 Web 资产，它必须能够正常工作。
 
-在文件中添加另 `manifest.json` 一项以声明该图像可供所有浏览器选项卡使用。  在添加即将 (的内容脚本声明时，应该可以看到下面的完整 `manifest.json`) 。
+在文件中添加另 `manifest.json` 一项以声明该图像可供所有浏览器选项卡使用。  在添加即将 (的内容脚本声明时，应在下面的完整文件中看到该条目 `manifest.json`) 。
 
 ```json
 "web_accessible_resources": [

@@ -1,25 +1,24 @@
 ---
 title: 处理渐进式 Web 应用中的 URL
-description: 如何将你的 PWA注册为 URL 处理程序，以将其与其他应用程序在操作系统中深入集成。
+description: 如何将你的 PWA注册为 URL 处理程序，以将其与其他应用程序在操作系统中进一步集成。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， URL
 ms.date: 01/12/2022
-ms.openlocfilehash: ed3c4e30a774e0ccaa682ac46aa6e0ff630af830
-ms.sourcegitcommit: 94d7608a85a1a99a67f82cef9a0d59065cc5b337
+ms.openlocfilehash: 500b2eeca1abf4ef4b59694d1d2b8fceeef32223
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2022
-ms.locfileid: "12303352"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318651"
 ---
 # <a name="handle-urls-in-progressive-web-apps"></a>处理渐进式 Web 应用中的 URL
 
 许多操作系统上的本机应用程序都可以与 URL 相关联。 当激活关联的 URL 时，它们可以请求启动，而不是浏览器。
 
-渐进式 Web (PBA) 也可以以相同方式处理 URL，以创建更具吸引力的体验。
+渐进式 Web (PWA) 也可以以相同方式处理 URL，以创建更具吸引力的体验。
 
 > [!NOTE]
 > 对实验清单 `url_handlers` 成员的支持（如下文所述）正在逐步淘汰。清单 `url_handlers` 成员将由新的清单成员取代，该成员当前 `handle_links` 正在标准化和实施。
@@ -40,7 +39,7 @@ URL 处理是一项实验性功能。 若要启用 URL 处理实验，
    > [!div class="mx-imgBorder"]
    > ![启用"桌面PWA URL 处理"实验。](../media/enable-url-handling-experiment.png)
 
-URL 处理是 Microsoft Edge 中的一种Microsoft Edge。 了解如何 [在源试用版中注册网站](./origin-trials.md#enroll-your-site-in-an-origin-trial)。
+URL 处理是 Microsoft Edge 中的一项Microsoft Edge。 了解如何 [在源试用版中注册网站](./origin-trials.md#enroll-your-site-in-an-origin-trial)。
 
 
 <!-- ====================================================================== -->
@@ -72,11 +71,11 @@ URL 处理是 Microsoft Edge 中的一种Microsoft Edge。 了解如何 [在源�
 <!-- ====================================================================== -->
 ## <a name="verify-the-origin-ownership"></a>验证源所有权
 
-Microsoft Edge验证渐进式 Web 应用对已处理 URL 的所有权，以成功启动应用。 当已处理的 URL 和渐进式 Web (PWA) 位于同一源上时和不在同一源上时，这是必需的。 在大多数情况下，PWA将处理同一来源的 URL，但这不是必需的。
+Microsoft Edge验证渐进式 Web 应用对已处理 URL 的所有权，以成功启动应用。 当处理的 URL 和渐进式 Web (PWA) 位于同一源上时和不在同一源上时，这是必需的。 在大多数情况下，PWA将处理同一来源的 URL，但这不是必需的。
 
 源所有权通过 JSON 文件建立，该 JSON 文件Microsoft Edge验证客户端和 URL 之间的PWA `web-app-origin-association` 握手。
 
-让我们以尝试处理和 URL PWA托管的示例 `https://app.contoso.com` `https://contoso.com` `https://partnerapp.com` 。
+让我们以尝试处理和 URL PWA托管 `https://app.contoso.com` `https://contoso.com` 的示例 `https://partnerapp.com` 。
 
 *  若要建立PWA源的所有权，以下 JSON 内容 `contoso.com` 需要在 中提供 `https://contoso.com/.well-known/web-app-origin-association` 。
 
@@ -143,7 +142,7 @@ Microsoft Edge验证渐进式 Web 应用对已处理 URL 的所有权，以成�
 
 1. 单击**可用的应用。安装 DevTools** ![ 使用技巧 ("应用可用"。 安装 DevTools 使用技巧图标。) 栏中的图标以在本地安装 ](../media/app-available-icon.png) DevTools 使用技巧应用。
 
-1. 按 `Windows logo key`  +  `R` 以打开"Windows**运行"** 对话框。
+1. 按 `Windows logo key`  +  `R` 以打开 **"Windows"** 对话框。
 
 1. 输入网站上提示之一的 URL，例如 https://devtoolstips.org/tips/en/find-css-changes/ 。
 
@@ -156,7 +155,7 @@ Windows你的应用可以处理 URL，但由于可能有其他应用可以处理
 
 DevTools 使用技巧启动并显示使用技巧页面。
 
-可以在[""上找到GitHub。](https://github.com/captainbrosset/devtools-tips/)
+可以在 上[找到源代码GitHub。](https://github.com/captainbrosset/devtools-tips/)
 * DevTools 使用技巧应用在[manifest.json](https://github.com/captainbrosset/devtools-tips/blob/main/src/manifest.json)文件中注册已处理的 URL。
 * 网站在 [Web-app-origin-association 文件中建立应用的所有权](https://github.com/captainbrosset/devtools-tips/blob/main/src/.well-known/web-app-origin-association) 。
 

@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: 9da35b640b0f9b6987c7c2b91427de2a8037f467
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 3fae503c48bbc10ea2cd2e260a164d5c74268ddb
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284229"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320968"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -31,7 +30,7 @@ ms.locfileid: "12284229"
 
 了解如何使用 DevTools 堆Microsoft Edge器记录堆快照并查找内存泄漏。
 
-DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关 DOM 节点的内存分布。  使用它，可以将 JavaScript 堆 (JS 堆) 快照、分析内存图形、比较快照和查找内存泄漏。  导航到 [对象保留树](./memory-101.md#objects-retaining-tree)。
+DevTools Microsoft Edge配置文件器中显示了 JavaScript 对象和页面的相关 DOM 节点的内存分布。  使用它，可以将 JavaScript 堆 (JS 堆) 快照、分析内存图形、比较快照和查找内存泄漏。  导航到 [对象保留树](./memory-101.md#objects-retaining-tree)。
 
 
 <!-- ====================================================================== -->
@@ -58,7 +57,7 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 <!-- ====================================================================== -->
 ## <a name="clear-snapshots"></a>清除快照
 
-选择 **"清除所有配置文件** "图标以从 DevTools (与呈现器进程关联的任何内存中删除快照) 。
+选择 **"清除所有配置文件** "图标 (从 DevTools 中删除快照，并删除与呈现器进程关联的任何) 。
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="删除快照" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
    删除快照
@@ -67,7 +66,7 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 关闭 DevTools 窗口不会从与呈现器进程关联的内存中删除配置文件。  重新打开 DevTools 时，以前获取的所有快照将重新出现于快照列表中。
 
 > [!NOTE]
-> 试用此散 [点对象示例，](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html) 然后使用堆探查器进行配置文件。  将显示 (分配) 多个对象。
+> 试用此散 [点对象示例，](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html) 然后使用堆探查器进行配置文件。  将显示 (分配) 对象。
 
 
 <!-- ====================================================================== -->
@@ -79,9 +78,9 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 <!--todo: add profile memory problems memory diagnosis (tracking down DOM leaks) section when available  -->
 
-**比较视图**。  显示两个快照之间的差值。  使用它来比较两 (操作) 之前和之后的内存快照。  通过检查释放的内存和引用计数中的增量，你可以确认内存泄漏的存在和原因。
+**比较视图**。  显示两个快照之间的差值。  使用它来比较两 (操作之前) 之后的内存快照。  通过检查释放的内存和引用计数中的增量，你可以确认内存泄漏的存在和原因。
 
-**包含视图**。  允许浏览堆内容。  **包含视图** 提供了更好的对象结构视图，帮助分析全局命名空间 (窗口中) 对象的位置。  使用它来分析关闭，并深入到较低级别的对象中。
+**包含视图**。  允许浏览堆内容。  **包含视图** 提供了更好的对象结构视图，帮助分析全局命名空间 (窗口中) 对象，以找出对象周围的内容。  使用它来分析关闭，并深入到较低级别的对象中。
 
 若要在视图之间切换，请使用视图顶部的选择器。
 
@@ -107,7 +106,7 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 | **构造函数** | 表示使用此构造函数创建的所有对象。  |
 | **距离** | 使用节点的最短简单路径显示到根之间的距离。  |
 | **浅表大小** | 显示由特定构造函数函数创建的所有对象的浅表大小的总和。  浅表大小是由对象存储的内存大小 (，数组和字符串通常具有较大的浅) 。  导航到 [对象大小](./memory-101.md#object-sizes)。  |
-| **保留大小** | 显示同一组对象中保留的最大大小。  在删除对象后能够释放的内存大小 (使从属项不再可用) 称为保留大小。  导航到 [对象大小](./memory-101.md#object-sizes)。  |
+| **保留大小** | 显示同一组对象中保留的最大大小。  在删除对象后能够释放的内存大小 (使从属对象不再) 称为保留大小。  导航到 [对象大小](./memory-101.md#object-sizes)。  |
 
 <!--| **Number of object instances** | Displayed in the # column.  |  -->
 
@@ -115,7 +114,7 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 请记住，黄色对象具有 JavaScript 引用，红色对象是从具有黄色背景的节点引用的分离节点。
 
-**堆配置文件器中的 (器) 条目对应的不同构造函数是什么？**
+**堆配置文件器中的 (项) 对应的不同构造函数是什么？**
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="构造函数组" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
    **构造函数** 组
@@ -123,7 +122,7 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 | 构造函数 (组) 条目 | 描述 |
 |:--- |:--- |
-| ** (全局属性) ** | 全局对象之间的中间对象 (例如) 对象和它 `window` 引用的对象。  如果对象是使用构造函数创建的，并且由全局对象保留，则保留路径可以 `Person` 表示为 `[global] > (global property) > Person` 。  这与标准相反，其中对象直接相互引用。  中间对象存在是出于性能原因。  会定期修改全局设置，并且属性访问优化对于非全局对象则不适用于全局对象。  |
+| ** (全局属性) ** | 全局对象之间的中间对象 (，) 对象和它 `window` 引用的对象。  如果对象是使用构造函数创建的，并且由全局对象保留，则保留路径可以 `Person` 表示为 `[global] > (global property) > Person` 。  这与标准相反，其中对象直接相互引用。  中间对象存在是出于性能原因。  会定期修改全局设置，并且属性访问优化对于非全局对象则不适用于全局对象。  |
 | ** (根) ** | 保留树视图中的根条目是引用所选对象的实体。  这些条目还可以是引擎创建的用于引擎特定用途的引用。  引擎具有缓存哪些引用对象，但所有此类引用都是弱引用，并且不会阻止收集对象，因为不存在真正的强引用。  |
 | ** (关闭) ** | 通过函数关闭对一组对象的引用计数。  |
 | ** (数组、字符串、数字、regexp) ** | 具有引用 Array、String、Number 或正则表达式的属性的对象类型列表。  |
@@ -151,13 +150,13 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 ### <a name="containment-view"></a>包含视图
 
-" **包含** "视图实质上是应用程序的对象结构的"鸟眼视图"。  它使你可以速览函数关闭，观察虚拟机 (VM) 内部对象，这些内部对象共同组合 JavaScript 对象，并了解应用程序在非常低级别使用的内存量。
+" **包含** "视图实质上是应用程序的对象结构的"鸟眼视图"。  它允许你查看函数关闭，观察虚拟机 (VM) 共同组合 JavaScript 对象的内部对象，以及了解应用程序在非常低级别使用的内存量。
 
 | 包含视图入口点 | 描述 |
 |:--- |:--- |
 | **DOMWindow 对象** | JavaScript 代码的全局对象。  |
 | **GC 根** | VM 的垃圾回收使用的实际 GC 根。  GC 根由内置对象映射、符号表、VM 线程堆栈、编译缓存、处理范围和全局句柄组成。  |
-| **本机对象** | JavaScript VM (JavaScript 虚拟机中的浏览器对象) 推送"，以允许自动化，例如 DOM 节点、CSS 规则。  |
+| **本机对象** | JavaScript VM (JavaScript VM) "推送"的浏览器对象允许自动化，例如 DOM 节点、CSS 规则。  |
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png" alt-text="包含视图" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png":::
    **包含** 视图
@@ -208,8 +207,8 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 
 | 属性类型 | 描述 |
 |:--- |:--- |
-| **a： property** | 具有名称的常规属性，可通过点 (运算符) ，或通过 (方括号) `.` `[` `]` 访问，例如 `["foo bar"]` 。  |
-| **0：元素** | 具有数字索引的常规属性，可通过 (`[` `]` 括号) 访问。  |
+| **a： property** | 具有名称的常规属性，可通过点 (运算符) ，或通过 (方括号) 表示法访问 `.` `[` `]` ，例如 `["foo bar"]` 。  |
+| **0：元素** | 带数字索引的常规属性，可通过 (`[` `]` 括号) 表示法。  |
 | **a： context var** |  函数上下文中的变量，可通过函数关闭内部的变量名称访问。  |
 | **a： system prop** | JavaScript VM 添加的属性，无法通过 JavaScript 代码访问。  |
 
@@ -225,7 +224,7 @@ DevTools Microsoft Edge配置文件器显示页面的 JavaScript 对象和相关
 <!-- ====================================================================== -->
 ## <a name="uncover-dom-leaks"></a>发现 DOM 泄漏
 
-堆探查器能够反映浏览器本机对象与 DOM 节点、CSS 规则 (JavaScript) 之间的双向依赖关系。
+堆探查器能够反映浏览器本机对象与 DOM 节点、CSS 规则 (JavaScript 对象之间的) 依赖关系。
 这有助于发现因忘记分离的 DOM 子树四处浮动而发生的不可见泄露。
 
 DOM 泄露可能大于您想象中。  请考虑以下示例。  何时将#tree GC？
@@ -253,7 +252,7 @@ leafRef = null;
 > [!NOTE]
 > 示例：尝试此示例的泄露 [DOM 节点](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html) ，了解它可能会泄露在哪里以及如何检测它。  您还可以查看此 DOM 泄漏 [大于预期的示例](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html)。
 
-若要阅读有关 DOM 泄漏和内存分析基础的更多内容，请参阅查找和调试由 Gonzalo Ruiz de 的[Microsoft Edge DevTools](https://slid.es/gruizdevilla/memory)的内存泄漏。
+若要了解有关 DOM 泄漏和内存分析基础的更多信息，请参阅查找和调试由 Gonzalo Ruiz de 的[Microsoft Edge DevTools](https://slid.es/gruizdevilla/memory)的内存泄漏。
 
 <!--
 > [!NOTE]
@@ -274,6 +273,6 @@ leafRef = null;
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots) 由技术编写人员 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (创作) 。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots) 由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

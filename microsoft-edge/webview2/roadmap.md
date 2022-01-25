@@ -6,18 +6,17 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
 ms.date: 01/07/2021
-ms.openlocfilehash: 9ca4da42c10323daca76f8fa40bdc85d5eab1c00
-ms.sourcegitcommit: d50ea51447623ba405a824811e173f4d26d39c2c
+ms.openlocfilehash: 7c058898124b3e7e58c6a1aacd29e89e51ec834b
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "12289343"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319582"
 ---
 # <a name="webview2-roadmap"></a>WebView2 路线图
 
-使用 Microsoft Edge WebView2 控件，可以在本机应用程序中嵌入 Web 技术。  本文概述了 WebView2 的潜在路线图。
+WebView2 Microsoft Edge WebView2 控件允许你在本机应用程序中嵌入 Web 技术。  本文概述了 WebView2 的潜在路线图。
 
 WebView2 正在积极开发中，路线图将继续根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
 
@@ -35,7 +34,7 @@ WebView2 团队正在计划以下主要工作，用于将来的更新：
 <!-- ====================================================================== -->
 ## <a name="webview2-runtime-and-installer"></a>WebView2 运行时和安装程序
 
-使用常青分发模式，你可以将 WebView2 运行时目标或链安装到用户计算机上。  Evergreen WebView2 运行时和安装程序已进入通用版本 (GA) 。  有关详细信息，请参阅分发 [WebView2 应用和 WebView2 运行时](./concepts/distribution.md)。
+使用常青分发模式，你可以将 WebView2 运行时目标或链安装到用户计算机上。  Evergreen WebView2 运行时和安装程序已使用 GA (通用) 。  有关详细信息，请参阅分发 [WebView2 应用和 WebView2 运行时](./concepts/distribution.md)。
 
 
 <!-- ====================================================================== -->
@@ -59,4 +58,4 @@ Win32 C/C++ SDK 已到达 GA。
 
 ### <a name="windows-ui-library-3"></a>Windows UI 库 3
 
-可以使用 Windows App SDK 的[WinUI (3](/uwp/toolkits/winui3/index) Windows UI 库 3) WebView2 Windows控件。  This is currently in preview. 有关详细信息，请参阅应用[WINDOWS SDK 路线图](https://github.com/microsoft/WindowsAppSDK/blob/main/docs/roadmap.md)。
+可以使用 Windows App SDK 的[WinUI3](/uwp/toolkits/winui3/index) (UI 库 3) 应用程序中Windows WebView2 控件。  This is currently in preview. 有关详细信息，请参阅应用[Windows SDK 路线图](https://github.com/microsoft/WindowsAppSDK/blob/main/docs/roadmap.md)。

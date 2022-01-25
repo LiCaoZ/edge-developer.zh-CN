@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: b8bd3e7d8a0f631cce4234bda2318b818998a377
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 7a43eb630abe1786c03d87bdc7c98ce2d705ed89
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285923"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320086"
 ---
 <!-- Copyright Kayce Basques
 
@@ -80,7 +79,7 @@ ms.locfileid: "12285923"
 DevTools 不会实时更新表。  若要更新表中的数据，请完成以下操作。
 
 1.  [查看 Web SQL 表中的数据](#view-web-sql-data)。
-1.  Choose **Refresh (** ![ Refresh ](../media/refresh-icon.msft.png)) .
+1.  Choose **Refresh (** Refresh ![ ](../media/refresh-icon.msft.png)) .
 
 
 <!-- ====================================================================== -->

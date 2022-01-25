@@ -6,24 +6,23 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， 窗口控件覆盖， API
 ms.date: 09/02/2021
-ms.openlocfilehash: 77a3e452b3edea6bb1fe452cfc60ee5e6c959d10
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 0676f1d013093ad85ba5fb383de4ec9076c74990
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285244"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320758"
 ---
 # <a name="display-content-in-the-title-bar"></a>在标题栏中显示内容
 
-一PWA应用程序清单文件中显示属性，定义它在移动平台上的显示方式。 [](https://developer.mozilla.org/docs/Web/Manifest/display)  但是，若要创建类似本机的沉浸式体验， _桌面_ PBA 无法采用这种方法。
+一PWA应用程序清单文件中使用[display](https://developer.mozilla.org/docs/Web/Manifest/display)属性，定义它在移动平台上的显示方式。  但是，若要创建类似本机的沉浸式体验， _桌面_ PBA 无法采用这种方法。
 
 默认情况下，应用区域紧接在保留的标题栏区域下方开始：
 
 :::image type="content" source="../media/my-tracks-titlebar.png" alt-text="The default Windows app title bar shown on the My Tracks demo app.":::
 
-正常情况下显示标题栏的内容可以帮助 PWA 感觉更加本机。  许多桌面应用程序（如Visual Studio Code、Microsoft Teams和Microsoft Edge已执行如下操作：
+正常情况下显示标题栏的内容可以帮助 PWA 感觉更加本机。  许多桌面应用程序（如 Visual Studio Code、Microsoft Teams 和 Microsoft Edge 已执行如下操作：
 
 :::image type="content" source="../media/vscode-titlebar.png" alt-text="Visual Studio Code标题栏区域中显示内容。":::
 
@@ -109,7 +108,7 @@ ms.locfileid: "12285244"
 <!-- ====================================================================== -->
 ## <a name="make-regions-of-your-app-drag-handlers-for-the-window"></a>为窗口创建应用拖动处理程序的区域
 
-当标题栏隐藏时，只有系统关键窗口控件 (最大化、最小化、关闭以及应用信息图标****) 。 **** **** ****  这意味着用户很少能四处移动应用。
+隐藏标题栏时，只有系统关键窗口控件 (最大化、最小化、关闭以及应用信息图标) 。 **** **** **** ****  这意味着用户很少能四处移动应用。
 
 您可以使用 CSS `-webkit-app-region` 属性为用户提供更多拖动应用程序的方法。  例如，如果你的应用有自己的标题栏，你可以将其标题栏转换为窗口拖动处理程序：
 
@@ -164,9 +163,9 @@ if ('windowControlsOverlay' in navigator) {
 <!-- ====================================================================== -->
 ## <a name="demo-app"></a>演示应用
 
-My Tracks 是PWA窗口控件覆盖功能的主要演示应用。
+My Tracks 是一PWA窗口控件覆盖功能的应用演示应用。
 
-1. 在Microsoft Edge中，[启用窗口控件覆盖](#enable-the-window-controls-overlay-in-your-app)。
+1. 在Microsoft Edge中，[启用窗口控件覆盖。](#enable-the-window-controls-overlay-in-your-app)
 
 2. 转到 ["我的跟踪"](https://captainbrosset.github.io/mytracks/) 并安装应用。
 
@@ -189,5 +188,5 @@ My Tracks 是PWA窗口控件覆盖功能的主要演示应用。
 ## <a name="see-also"></a>另请参阅
 
 *   [窗口控件覆盖视频教程](https://www.youtube.com/watch?v=NvClp35dFVI)
-*   [自定义窗口标题栏PWA窗口控件覆盖](https://web.dev/window-controls-overlay/)
+*   [自定义用户标题PWA窗口控件覆盖层](https://web.dev/window-controls-overlay/)
 *   [开箱而出](https://alistapart.com/article/breaking-out-of-the-box/)

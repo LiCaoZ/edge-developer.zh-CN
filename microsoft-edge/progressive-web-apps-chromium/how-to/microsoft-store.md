@@ -6,14 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进 Web 应用、PWA、Edge、Windows、Microsoft Store
 ms.date: 12/03/2021
-ms.openlocfilehash: b07383c925523cebbe761c3f66c48152cc150ee7
-ms.sourcegitcommit: 2915729570149ae4bac14eadf387426ee97e7840
+ms.openlocfilehash: ee49dfd1ac8274db3492fd5060012b2075997ac8
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "12264756"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320219"
 ---
 # <a name="publish-a-progressive-web-app-to-the-microsoft-store"></a>将渐进式 Web 应用发布到Microsoft Store
 
@@ -21,10 +20,10 @@ ms.locfileid: "12264756"
 
 | 优势 | 描述 |
 |---|---|
-| **可发现性** | 用户自然地在应用商店中查找应用。  当你发布到应用Microsoft Store，Windows数百万用户可以发现你的PWA应用Windows应用。  应用商店通过类别、已选择的集合等展示应用。  应用发现门户为应用的潜在用户提供轻松的浏览和购物体验。  你甚至可以 [使用屏幕截图、Hero](/windows/uwp/publish/app-screenshots-and-images) 图像和视频预告片增强应用商店一览。 |
+| **可发现性** | 用户自然地在应用商店中查找应用。  当你发布到应用Microsoft Store，Windows数百万PWA发现你的Windows应用。  应用商店通过类别、已选择的集合等展示应用。  应用发现门户为应用的潜在用户提供轻松的浏览和购物体验。  你甚至可以 [使用屏幕截图、Hero](/windows/uwp/publish/app-screenshots-and-images) 图像和视频预告片增强应用商店一览。 |
 | **Trustiness** | Windows客户知道他们可以信任他们的Microsoft Store购买和下载，因为他们遵守严格的 Microsoft[质量和安全标准](/legal/windows/agreements/store-policies)。 |
-| **易于安装** | The Microsoft Store provides a consistent and user-friendly install experience across [all Windows 10 or later apps](https://www.microsoft.com/store/apps/windows). |
-| **应用分析** | 合作伙伴[Windows](/windows/uwp/publish/index)仪表板提供了有关应用运行状况、使用情况等的详细分析[](/windows/uwp/publish/analytics)。 |
+| **易于安装** | the Microsoft Store provides a consistent and user-friendly install experience across [all Windows 10 or later apps](https://www.microsoft.com/store/apps/windows). |
+| **应用分析** | 合作伙伴[Windows](/windows/uwp/publish/index)仪表板可提供有关应用运行状况、使用情况等的详细[](/windows/uwp/publish/analytics)分析。 |
 
 若要将PWA发布到Microsoft Store，无需更改代码。  相反，你可以创建应用预订、打包PWA，然后提交到应用商店。  以下各节将介绍这些步骤。
 
@@ -56,7 +55,7 @@ ms.locfileid: "12264756"
 
     :::image type="content" source="../media/windows-partner-center-create-app.msft.png" alt-text="在合作伙伴中心创建Windows预订。":::
 
-1.  若要显示发布者详细信息，以在程序包你的[PWA部分中，](#package-your-pwa-for-the-store)**选择产品**管理产品  >  **标识**。
+1.  若要显示发布者详细信息，以在打包你的[PWA部分中使用](#package-your-pwa-for-the-store)**，请选择产品**管理  >  **产品标识**。
 
     :::image type="content" source="../media/windows-partner-center-publisher-info.msft.png" alt-text="从合作伙伴中心复制Windows发布者信息。" lightbox="../media/windows-partner-center-publisher-info.msft.png":::
     <!-- lightbox justified because large detailed image -->
@@ -70,14 +69,14 @@ ms.locfileid: "12264756"
 <!-- ====================================================================== -->
 ## <a name="package-your-pwa-for-the-store"></a>打包PWA应用商店
 
-现在你已拥有应用发布信息，请为Windows生成一个PWA。
+现在你已拥有应用发布信息，请为Windows生成一个应用包PWA。
 
 若要生成应用包：
 
 1.  转到["PWA生成器"。](https://www.pwabuilder.com)
-1.  键入你的网站的 URL PWA然后单击"开始 **"。**
-1.  报告完成后，请确保你的PWA已准备就绪。 如果你的PWA分数太低，你可以访问清单选项和服务工作者选项并查看**** 需要工作的部分****。
-1.  当你的PWA准备好发布时，单击下一步，然后选择**** 发布页面的**Windows部分**中的**** 应用商店程序包按钮。
+1.  键入您网站的 URL PWA然后单击"开始 **"。**
+1.  报告完成后，请确保你的PWA已准备就绪。 如果你的PWA分数太低，你可以访问清单选项和服务工作者选项并查看**** 需要工作的章节****。
+1.  准备好发布PWA后，单击"下一步 **"，** 然后选择**** 发布页面的"Windows"**** 部分中的"应用商店程序包"按钮。
 1.  粘贴以下值，这些值保存在"创建 [应用预订"部分](#create-an-app-reservation) ：
     *   **程序包 ID**
     *   **发布者 ID**
@@ -86,7 +85,7 @@ ms.locfileid: "12264756"
     :::image type="content" source="../media/pwabuilder-windows-package-options.png" alt-text="将发布者信息粘贴到 PWABuilder 中。":::
 
 1.  选择"**生成"。**
-1.  若要下载你的Windows程序包，**请选择下载。**
+1.  若要下载应用Windows程序包，请选择"下载 **"。**
 
 下载的内容 `.zip` 是包含文件和 `.msixbundle` 文件的 `.classic.appxbundle` 存档。  这两个应用包PWA各种应用包上的Windows运行。  有关详细信息，请参阅[什么是经典程序包？。](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/classic-package.md)
 
@@ -103,7 +102,7 @@ ms.locfileid: "12264756"
 
 1.  系统提示时，提供有关应用的信息，如定价和年龄分级。
 
-1.  在**程序包提示**符上，选择 在打包你的程序包部分中生成的 和 `.msixbundle` `.classic.appxbundle` [PWA](#package-your-pwa-for-the-store)文件。
+1.  在**程序包提示**符上，选择 你在打包你的程序包 `.msixbundle` 部分PWA `.classic.appxbundle` 文件。 [](#package-your-pwa-for-the-store)
 
 完成提交后，通常会在 24 至 48 小时内查看你的应用。  收到批准后，PWA中将Microsoft Store。
 
@@ -111,7 +110,7 @@ ms.locfileid: "12264756"
 <!-- ====================================================================== -->
 ## <a name="measure-usage-of-your-pwa-installed-from-the-microsoft-store"></a>测量从PWA安装的 Microsoft Store
 
-在PWA启动时，如果 PWA 从 Microsoft Store 安装，Microsoft Edge 将以下标头与 Web 应用的第一个导航请求一起 `Referer` 包含。
+初始PWA时，如果 PWA 从 Microsoft Store 安装，Microsoft Edge将以下标头与 Web 应用的第一个导航 `Referer` 请求一起提供。
 
 ```
 Referer: app-info://platform/microsoft-store
@@ -125,21 +124,21 @@ Referer: app-info://platform/microsoft-store
 <!-- ====================================================================== -->
 ## <a name="redirect-to-locale-specific-domains-without-displaying-additional-ui"></a>重定向到特定于区域设置的域，而不显示其他 UI
 
-默认情况下，PWA应用重定向到特定于区域设置Microsoft Store将显示其他 UI。  添加的 UI 显示 URL 和页面标题。  添加此 UI 是因为导航到特定于区域设置域的域被视为"超出范围"。  但是，可以通过指定与项目关联的特定于区域设置的来源来阻止显示PWA。
+默认情况下，PWA安装的应用程序在Microsoft Store重定向到特定于区域设置域时显示其他 UI。  添加的 UI 显示 URL 和页面标题。  添加此 UI 是因为导航到特定于区域设置域的域被视为"超出范围"。  但是，可以通过指定与项目关联的特定于区域设置的来源来阻止显示PWA。
 
-下图显示了当用户在用户移动到外部的 ui 作用域时引入PWA。 
+下图显示了当用户移动到外部的 UI 作用域时引入PWA。 
 
 :::image type="content" source="../media/locale-redirection-additional-ui.png" alt-text="当应用重定向到另一个域时，具有 URL 和页面标题的其他 UI。":::
 
 ### <a name="domain-redirection-with-browser-installed-pwas"></a>使用浏览器安装的 PWA 进行域重定向
 
-Web 应用清单绑定到单个域。  但是，某些 PWA 为在全球特定地区的客户使用区域设置特定的域。  在 Web 浏览器中访问 PWA 时，客户会无缝地从主体域 (（例如 contoso.com) ）过渡到特定于区域设置域 (例如 contoso.co.ke) ，因为重定向发生在该网站的初始加载过程中。
+Web 应用清单绑定到单个域。  但是，某些 PWA 为在全球特定地区的客户使用区域设置特定的域。  在 Web 浏览器中访问 PWA 时，客户会从主体域 (（例如 contoso.com) ）无缝转换为特定于区域设置域 (例如 contoso.co.ke) ，因为重定向发生在该网站的初始加载过程中。
 
 因此，从PWA安装Microsoft Edge将安装PWA特定区域设置域中的域。  后续启动的 PWA直接转到特定于区域设置的域，而不是先转到主体域。
 
 ### <a name="domain-redirection-with-pwas-installed-from-the-microsoft-store"></a>域重定向（从服务器安装 PWA Microsoft Store
 
-从服务器安装的 PWA Microsoft Store一个指向主体域的硬编码起始 URL。  启动PWA时，PWA最初导航到主体域，然后客户 (必要时) 重定向到其区域设置特定的域。 如果发生该重定向，则认为该导航"超出范围"。  因此，应用会在页面顶部显示 URL 和页面标题。
+从服务器安装的 PWA Microsoft Store一个指向主体域的硬编码起始 URL。  启动 PWA 时，PWA最初导航到主体域，然后客户可能会 (将) 重定向到其区域设置特定的域。 如果发生该重定向，则认为该导航"超出范围"。  因此，应用会在页面顶部显示 URL 和页面标题。
 
 显示 URL 和页面标题是一项安全功能，可确保用户知道他们已离开网站PWA。  当用户从网站上下文的另一个网站加载页面时，此添加的 UI PWA。  但是，当用户在同一网站的所有域之间移动时，添加的 UI 可能不合适。
 
@@ -162,7 +161,7 @@ Web 应用清单绑定到单个域。  但是，某些 PWA 为在全球特定地
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*   [测试和提交你的PWA应用包](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/next-steps.md)
+*   [测试和提交你的PWA包](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/next-steps.md)
 *   [将新PWA发布到应用商店](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/publish-new-app.md)
 *   [将现有应用商店应用更新到PWA](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/update-existing-app.md)
 *   [应用商店中 PBA 的图像建议](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/image-recommendations.md)

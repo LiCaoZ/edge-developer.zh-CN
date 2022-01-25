@@ -6,14 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进 Web 应用，PWA、Edge、JavaScript、Windows、UWP、Microsoft Store
 ms.date: 01/07/2021
-ms.openlocfilehash: 80e2683c11d6c1fac5f226d3123926fc76650542
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 8f05d82adeeef046ccc99627681e0b1a9d828fa7
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284901"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319190"
 ---
 # <a name="offline-and-network-connectivity-support-in-progressive-web-apps"></a>渐进式 Web 应用中的脱机和网络连接支持
 
@@ -106,9 +105,9 @@ self.addEventListener( "fetch", event => {
 有时，你可能需要存储少量数据，以便为用户提供更好的脱机体验。 如果是这样，您可能会发现 Web 应用程序键值对系统的简单性存储您的需求。
 
 > [!IMPORTANT]
-> Web 存储是一个同步进程，在工作线程（如服务工作线程）中不可用。 大量使用 Web 存储可能会导致应用程序的性能问题。
+> Web 存储是一个同步进程，不能用于工作线程（如服务工作线程）。 大量使用 Web 存储可能会导致应用程序的性能问题。
 
-有两种类型的 Web 存储： 和 `localStorage` `sessionStorage` 。 每种类型的 Web 存储都作为独立于创建它的域的单独数据存储进行维护。
+有两种类型的 Web 存储： `localStorage` 和 `sessionStorage` 。 每种类型的 Web 存储都作为独立于创建它的域的单独数据存储进行维护。
 
 *  `sessionStorage` 仅在浏览会话期间保留。 例如，当浏览器打开（包括刷新和还原）时。
 *  `localStorage` 保留，直到代码、用户或浏览器删除数据。 例如，当存在可用的有限存储时。
@@ -154,7 +153,7 @@ function insertOfflineLink( request ) {
 
 
 <!-- ====================================================================== -->
-## <a name="test-for-network-connections-in-your-pwa"></a>在客户端中测试PWA
+## <a name="test-for-network-connections-in-your-pwa"></a>测试连接中的网络连接PWA
 
 除了存储信息以便脱机使用之外，了解网络连接何时可用，以便同步数据或通知用户网络状态已更改也很有用。
 
@@ -187,4 +186,4 @@ window.addEventListener("offline", function(){
 *   [Web 存储](https://developer.mozilla.org/docs/Web/API/Web_Storage_API)
 *   [navigator.onLine](https://developer.mozilla.org/docs/Web/API/NavigatorOnLine)
 *   [联机和脱机事件](https://developer.mozilla.org/docs/Web/API/NavigatorOnLine/Online_and_offline_events)
-*   [具有意图的请求：Caching时的策略](https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas)
+*   [具有意图的请求：Caching PBA 时代的策略](https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas)

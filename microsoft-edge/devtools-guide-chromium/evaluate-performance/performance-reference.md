@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: 0f27ba64e709be685ed87dd42ea6a14206ca5fc4
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: cc8ae4024589fba273e7fb0c0a9c67bf3965f75e
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284341"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319274"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -45,7 +44,7 @@ ms.locfileid: "12284341"
 | 详细信息 | 有关事件的其他详细信息。 |
 | 持续时间 (时间戳)  | 事件及其所有子项完成所用时间;timestamp 是事件发生的时间，相对于录制的开始时间。 |
 | 自时间 | 事件在没有任何子事件的情况下所发生时间。 |
-| 使用的堆大小 | 记录事件时应用程序使用的内存量，以及自上次采样以来 (+/-) 使用的堆大小变化的内存量。 |
+| 使用的堆大小 | 记录事件时应用程序使用的内存量，以及自上次采样以来 (+/-) 使用的堆大小变化。 |
 
 <!--todo: add nested and child events (timelinetool) section when available -->
 
@@ -87,8 +86,8 @@ ms.locfileid: "12284341"
 | GC 事件 |  发生垃圾回收。 |
 | DOMContentLoaded |  [DOMContentLoaded 事件](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded)由浏览器触发。  加载和分析页面的所有 DOM 内容时，将触发此事件。 |
 | 评估脚本 | 已评估脚本。 |
-| 事件 | JavaScript 事件 (例如 、 `mousedown` 或 `key`) 。 |
-| 函数调用 | 仅在浏览器进入 JavaScript 引擎 (时，才显示顶级 JavaScript 函数) 。 |
+| 事件 | JavaScript 事件 (例如 、 或 `mousedown` `key`) 。 |
+| 函数调用 | 仅在浏览器进入 JavaScript 引擎 (时，才出现顶级 JavaScript 函数) 。 |
 | 安装计时器 | 计时器是使用 [setInterval () ](https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval) 或 [setTimeout () 创建的 ](https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout)。 |
 | 请求动画帧 | 安排 `requestAnimationFrame()` 新帧的呼叫。 |
 | 删除计时器 | 已清除之前创建的计时器。 |
@@ -127,7 +126,7 @@ ms.locfileid: "12284341"
 | 布局无效 | 对于布局记录，是导致布局失效的代码堆栈跟踪。 |
 | 需要布局的节点 | 对于布局记录，表示在启动中继之前标记为需要布局的节点数。  这些节点通常是开发人员代码无效的节点，以及中继根的向上路径。 |
 | 布局树大小 | 对于布局记录，中继根节点下的节点总数 (启动中继Microsoft Edge节点) 。 |
-| 布局范围 | 可能的值 (重布局边界是 DOM 或 的一 `Partial` `Whole document`) 。 |
+| 布局范围 | 如果重新 (边界是 DOM 或 的一部分，则 `Partial`) 值 `Whole document` 。 |
 | 受影响的元素 | 对于"重新计算样式记录"，为受样式重新计算影响的元素数。 |
 | 样式无效 | 对于"重新计算样式"记录，提供导致样式无效的代码的堆栈跟踪。 |
 
@@ -149,12 +148,12 @@ ms.locfileid: "12284341"
 | 属性 | 说明 |
 |:--- |:--- |
 | 位置 | 对于画图，绘制矩形的 x 和 y 坐标。 |
-| 维度 | 对于画图事件，绘制区域的高度和宽度。 |
+| 维度 | 对于画图事件，为绘制区域的高度和宽度。 |
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始 [页面位于此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference) ，由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和 [Flavio Flas](https://developers.google.com/web/resources/contributors#flavio-copes) (Full Stack Developer) 创作。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference) ，由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) and [Flavio 一](https://developers.google.com/web/resources/contributors#flavio-copes) (Full Stack Developer) 创作。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, 开发人员工具
 ms.date: 05/04/2021
-ms.openlocfilehash: 94c8b1adeb492ce1f8c47175c9d73882edb0787c
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 487e2cedc3d31aefd767ac926973a29758c5570d
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285797"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320597"
 ---
 # <a name="inspect-css-grid"></a>检查 CSS 网格
 
@@ -69,7 +68,7 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
     | 线条选项 | 详细信息 |
     |:--- |:--- |
     | **隐藏线条标签** | 隐藏每个网格叠加层的线条标签。 |
-    | **显示线条编号** | 显示默认选中的每个网格覆盖 (的行) 。 |
+    | **显示线条编号** | 显示默认选中的每个网格覆盖层 (行) 。 |
     | **显示线条名称** | 显示每个网格叠加层的线条名称（倘若提供了名称）。 |
 
 *  选中以下选项旁边的复选框。
@@ -77,7 +76,7 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
     | 选项 | 详细信息 |
     |:--- |:--- |
     | **显示轨道大小**  | 显示 (或) 轨的大小。 |
-    | **显示区域名称** | 在 (时) 区域的名称或隐藏区域名称。 |
+    | **显示区域名称** | 当 (时，) 区域的名称或隐藏区域名称。 |
     | **延伸网格线** | 显示 (或隐藏) 沿每个轴的网格尺寸的扩展。  默认情况下，网格线仅在设置了 `display: grid` 或 `display: inline-grid` CSS 的元素内显示。 |
 
 以下各节提供了每个**叠加层显示设置**的详细信息。

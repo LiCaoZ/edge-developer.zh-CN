@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: 0a471a75ebb6d1f57806e7a2bc6d08bf39b355b9
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 73f75e6d5a764826093aa0890b581312e8b7d5da
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285125"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320156"
 ---
 <!-- Copyright Kayce Basques
 
@@ -35,7 +34,7 @@ ms.locfileid: "12285125"
 <!-- ====================================================================== -->
 ## <a name="open-css-examples"></a>Open CSS 示例
 
-1.  按住 `Control` (Windows、Linux) 或 `Command` (macOS) 然后单击 **"CSS 示例**"以在一个新窗口中打开。
+1.  按住 `Control` (Windows、Linux) 或 (`Command` macOS) ，然后单击 **"CSS**示例"以在一个新窗口中打开。
 
     [CSS 示例](https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html)
 
@@ -180,7 +179,7 @@ ms.locfileid: "12285125"
 
 如果要调试或测试在 CSS 中定义的媒体查询，请使用以下步骤。
 
-1.  打开开发人员工具，然后选择第二**** 个位于左上方的"切换设备"工具栏图标， `Ctrl` + `Shift` + `M` 或选择 `Cmd` + `Shift` + `M` " (macOS) "。
+1.  打开开发人员工具，然后选择第二**** 个位于左上方的"切换设备"工具栏图标，或选择 `Ctrl` + `Shift` + `M` `Cmd` + `Shift` + `M` " (macOS) "。
 
     打开设备工具栏：
 

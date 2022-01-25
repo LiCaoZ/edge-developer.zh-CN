@@ -6,22 +6,21 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， webdriver， selenium， 测试， 工具， 自动化， 测试， ie， Internet Explorer， ie 模式
 ms.date: 11/23/2021
-ms.openlocfilehash: 1cf7eda8ae85d6b8c59dca1f199b5156f79c36af
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 34b6ea5e023332b0d88e11dbc445805331fc3428
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286497"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319120"
 ---
 # <a name="use-internet-explorer-driver-to-automate-ie-mode-in-microsoft-edge"></a>使用 Internet Explorer 驱动程序在 IE 模式下自动Microsoft Edge
 
-如果你有业务关键型的旧网站或应用，可能需要在 IE Internet Explorer (中测试内容) 在Microsoft Edge。  本文介绍如何开始使用 IEDriver Internet Explorer驱动程序 (IEDriver) 自动执行 IE Microsoft Edge。
+如果你有业务关键型的旧网站或应用，你可能需要在 IE Internet Explorer (模式下) 测试Microsoft Edge。  本文介绍如何开始使用 IEDriver Internet Explorer驱动程序 (IEDriver) 自动执行 IE Microsoft Edge。
 
 IE mode in Microsoft Edge is a feature for organizations that still need Internet Explorer 11 for backward compatibility for legacy websites or apps.  若要详细了解 IE 模式，请阅读什么是 [iE Internet Explorer (IE) 模式？](/deployedge/edge-ie-mode)
 
-从**2022 年 6 月 15**Internet Explorer 11 将不再支持某些版本的 Windows 10。 有关详细信息，请阅读Internet Explorer [11 桌面应用停用常见问题解答](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/internet-explorer-11-desktop-app-retirement-faq/ba-p/2366549)。
+从**2022**年 6 月 15 Internet Explorer 11 将不再支持某些版本的 Windows 10。 有关详细信息，请阅读Internet Explorer [11 桌面应用停用常见问题解答](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/internet-explorer-11-desktop-app-retirement-faq/ba-p/2366549)。
 
 
 <!-- ====================================================================== -->
@@ -39,12 +38,12 @@ IE mode in Microsoft Edge is a feature for organizations that still need Interne
 <!-- ====================================================================== -->
 ## <a name="automate-ie-mode-in-microsoft-edge"></a>自动执行 IE 模式Microsoft Edge
 
-以下各节将介绍在 IE 模式下使用 Selenium Microsoft Edge。
+以下各节将介绍使用 Selenium 在 Microsoft Edge 中自动执行 IE 模式。
 
 > [!NOTE]
 > 本文提供了有关使用 Selenium 框架的说明，但您可以使用任何支持 WebDriver 的库、框架和编程语言。  若要使用另一个框架完成相同的任务，请参阅文档中的选择框架。
 
-若要在 IE Microsoft Edge IEDriver 中启动应用：
+若要使用 IEDriver Microsoft Edge IE 模式下启动应用：
 
 1.  使用 `InternetExplorerOptions` 指向浏览器的其他属性Microsoft Edge定义。
 
@@ -56,7 +55,7 @@ IE mode in Microsoft Edge is a feature for organizations that still need Interne
 <!-- ====================================================================== -->
 ## <a name="the-complete-sample"></a>完整示例
 
-以下示例在 IE Microsoft Edge启动文件，导航到 bing.com [，然后](https://www.bing.com/)搜索"WebDriver"。
+以下示例在 IE 模式下Microsoft Edge，导航到 bing.com [，然后](https://www.bing.com/)搜索"WebDriver"。
 
 ### [<a name="c"></a>C#](#tab/c-sharp/)
 
@@ -186,7 +185,7 @@ ieOptions.EdgeExecutablePath = "C:/Program Files (x86)/Microsoft/Edge/Applicatio
 
 1. 通过调用 定义一 `ie_options` 个新变量 `webdriver.IeOptions()` 。
 
-1. 将 `ie_options.attach_to_edge_chrome` 属性设置为 ，将 设置为 可执行文件Microsoft Edge `True` `ie_options.edge_executable_path` 路径。
+1. 将 `ie_options.attach_to_edge_chrome` 属性设置为 `True` ， 和 设置为可执行 `ie_options.edge_executable_path` 文件Microsoft Edge路径。
 
 ```python
 ie_options = webdriver.IeOptions()
@@ -344,4 +343,4 @@ while (newHandles.length == initialHandleCount) {
 
 *  [使用 WebDriver 自动Microsoft Edge](/microsoft-edge/webdriver-chromium) - 使用 WebDriver Microsoft Edge实现自动化的概述。
 *  [Selenium 文档](https://www.selenium.dev/documentation) - 有关 Selenium 上下文中的 WebDriver 以及如何使用 Selenium 编写自动 WebDriver 测试的信息。
-*  联系[Microsoft Edge DevTools](../devtools-guide-chromium/contact.md)团队，发送有关使用 WebDriver、WebDriver 测试框架 (如 Selenium) 和 Microsoft Edge。
+*  请与[Microsoft Edge DevTools](../devtools-guide-chromium/contact.md)团队联系，发送有关使用 WebDriver、WebDriver 测试框架 (如 Selenium) 和 Microsoft Edge。

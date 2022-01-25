@@ -6,20 +6,19 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
 ms.date: 09/21/2021
-ms.openlocfilehash: 34a642ef1504c52bc3a3edc98472877a6196cfee
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: a7b055de51d03c61c5c1859c99964b91cd254956
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284824"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319624"
 ---
 # <a name="threading-model-for-webview2"></a>WebView2 的线程模型
 
 支持的平台：Win32、Windows Forms、WinUi、WPF。
 
-WebView2 控件基于组件对象模型 [ (COM) ](/windows/win32/com/the-component-object-model) 并且必须在单个线程的 Sta (STA [) ](/windows/win32/com/single-threaded-apartments) 上运行。
+WebView2 控件基于组件对象模型 [ (COM) ](/windows/win32/com/the-component-object-model) 并且必须在单个线程处理线程上 (STA [) ](/windows/win32/com/single-threaded-apartments) 线程。
 
 
 <!-- ====================================================================== -->
@@ -96,7 +95,7 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 
 ### <a name="deferrals-in-c"></a>C 中的延迟#
 
-在 `Deferral` C# 中时，最佳做法是使用 块 `using` 。 `using`即使块 `Deferral` 中间抛出异常，块也可确保 完成 `using` 。 如果相反，你有代码可显式调用 ，但在调用发生前会引发异常，延迟将等到垃圾回收器最终收集和处理延迟后一段时间才会完成。 `Complete` `Complete` 在这期间，WebView2 将等待应用代码处理事件。
+在 `Deferral` C# 中时，最佳做法是使用它和 `using` 块。 `using`即使块 `Deferral` 中间抛出异常，块也可确保 完成 `using` 。 如果相反，你有代码可显式调用 ，但在调用发生前会引发异常，延迟将等到垃圾回收器最终收集和处理延迟后一段时间才会完成。 `Complete` `Complete` 在这期间，WebView2 将等待应用代码处理事件。
 
 例如，不要执行以下操作，因为如果在调用 前出现异常，该事件不会被视为 `Complete` `WebResourceRequested` "handled"，并阻止 WebView2 呈现该 Web 内容。
 
@@ -162,4 +161,4 @@ private async void Button_Click(object sender, EventArgs e)
 *  [WebView2 入门指南](../index.md#get-started)
 *  [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。
 *  [WebView2 API 参考](/dotnet/api/microsoft.web.webview2.wpf.webview2)
-*  [另请参阅](../index.md#see-also) _WebView2 Microsoft Edge简介_。
+*  [另请参阅](../index.md#see-also)- 在_WebView2 Microsoft Edge简介中_。

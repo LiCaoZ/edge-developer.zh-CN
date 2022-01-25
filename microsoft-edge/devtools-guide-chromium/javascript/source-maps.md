@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: babaee94c59b01787701961eab629b9c383f4799
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 57a1805a88393ca85a93ce884646856f17f41a5d
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284215"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320877"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -33,7 +32,7 @@ ms.locfileid: "12284215"
 
 ### <a name="summary"></a>摘要
 
-*   使用源代码地图缩小代码映射到源代码。  然后，您能够读取和调试原始源中的已编译代码。
+*   使用 source 地图将缩小代码映射到源代码。  然后，您能够读取和调试原始源中的已编译代码。
 *   只能使用能够生成源处理器的预处理器地图。
 *   验证 Web 服务器能否为源服务器地图。
 
@@ -70,8 +69,8 @@ todo: add link to display the preprocessor support section when section is avail
 通常将以下类型的预处理器与 Source 地图：
 
 *   Transpilers [ (，Traceur](https://babeljs.io)) [](https://github.com/google/traceur-compiler/wiki/Getting-Started)
-*   编译器 ([关闭编译器](https://github.com/google/closure-compiler)[、TypeScript、CoffeeScript、) ](https://www.typescriptlang.org) [](https://coffeescript.org) [](https://www.dartlang.org)
-*   [UglifyJS](https://github.com/mishoo/UglifyJS) (微型) 
+*   编译器 ([关闭编译器](https://github.com/google/closure-compiler)、TypeScript、CoffeeScript、) [](https://coffeescript.org) [](https://www.typescriptlang.org) [](https://www.dartlang.org)
+*   [UglifyJS](https://github.com/mishoo/UglifyJS) (小型) 
 
 
 <!-- ====================================================================== -->
@@ -79,11 +78,11 @@ todo: add link to display the preprocessor support section when section is avail
 
 来自地图的源文件会导致 DevTools 加载原始文件以及缩小的文件。  然后，使用原始文件设置断点并逐步执行代码。  同时，Microsoft Edge运行缩小代码。  通过运行代码，你可以错觉运行生产中的开发网站。
 
-在 DevTools 地图源版本时，应该会注意到 JavaScript 未编译，并且它引用的所有单个 JavaScript 文件都显示出来。  DevTools 地图源映射使用的是源映射，但基础功能实际上运行已编译的代码。  任何错误、日志和断点都映射到开发人员代码，以便进行出色的调试。  实际上，它让你产生一种在生产中运行开发网站的错觉。
+在 DevTools 地图源客户端时，应该会注意到 JavaScript 未编译，并且它引用的所有单个 JavaScript 文件都显示出来。  DevTools 地图源映射使用的是源映射，但基础功能实际上运行已编译的代码。  任何错误、日志和断点都映射到开发人员代码，以便进行出色的调试。  实际上，它让你产生一种在生产中运行开发网站的错觉。
 
 ### <a name="enable-source-maps-in-settings"></a>在设置地图源源
 
-源地图默认启用<!-- (as of Microsoft Edge 39)-->，但如果您想要仔细检查或启用它们;First open DevTools， choose **Customize and control DevTools** () > `...` **设置**.  在首选项**窗格的****源下**，启用**JavaScript 源地图。**  您还可以启用启用 CSS**源地图。**
+源地图默认启用<!-- (as of Microsoft Edge 39)-->，但如果您想要仔细检查或启用它们;First open DevTools， choose **Customize and control DevTools** (`...`) >**设置**.  在首选项**窗格的****源下，** 打开启用**JavaScript 源地图。**  您还可以启用启用 CSS**源地图。**
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="启用源地图" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
    **启用 JavaScript 源地图**
@@ -129,6 +128,6 @@ todo: add link to display the preprocessor support section when section is avail
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)由[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和 Paul [Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Open Web Developer Advocate、Google：Tools、Performance、Animation 和 UX) 创作。
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)由[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和[Paul Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Open Web Developer Advocate、Google：Tools、Performance、Animation 和 UX) 创作。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

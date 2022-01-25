@@ -6,14 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Controller、浏览器控件、边缘 html
 ms.date: 12/13/2021
-ms.openlocfilehash: 55a242ff32371f4df533e57e0195f59c9c0d48bd
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 9bd3195bb53daecc3ceacad72377121d8a04f2c2
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286763"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318966"
 ---
 # <a name="get-started-with-webview2-in-win32-apps"></a>Win32 应用中的 WebView2 入门
 
@@ -29,7 +28,7 @@ ms.locfileid: "12286763"
 
 1.  [Visual Studio](https://visualstudio.microsoft.com)安装有 C++ 支持的 2015 或更高版本。
 
-1.  [WebView2](https://developer.microsoft.com/microsoft-edge/webview2)运行时 ，或任何 Microsoft Edge [Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta、Dev 或 Canary) 安装在受支持的操作系统 (OS) 。 当前受支持的操作系统列表是 Windows 11、Windows 10、Windows 8.1 和 Windows 7。
+1.  [WebView2](https://developer.microsoft.com/microsoft-edge/webview2)运行时，或任何 Microsoft Edge [Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta、Dev 或 Canary) 安装在受支持的操作系统 (OS) 。 当前支持的操作系统列表是 Windows 11、Windows 10、Windows 8.1 和 Windows 7。
 
 
 <!-- ====================================================================== -->
@@ -38,10 +37,10 @@ ms.locfileid: "12286763"
 从包含单个主窗口的基本桌面项目开始。
 
 > [!IMPORTANT]
-> 为了更好地关注演练，请使用演练：为示例应用创建传统 Windows 桌面应用程序 ([C++](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp)) 中修改的示例代码。  若要下载修改后的示例并开始，请导航到["WebView2 示例"。](https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide)
+> 为了更好地关注演练，请使用演练：为示例应用创建传统的 Windows 桌面 ([C++](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp)) 中修改的示例代码。  若要下载修改后的示例并开始，请导航到["WebView2 示例"。](https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide)
 
 1.  在Visual Studio中，打开 `WebView2GettingStarted.sln` 。
-    如果使用早期版本的 Visual Studio，请在"解决方案资源管理器"中右**** 键单击 **"WebView2GettingStarted"，** 然后选择"属性 **"。** 单击 **"配置属性**  >  **常规**"，Windows **SDK**版本和**平台工具**集，以使用 Win10 SDK 和 Visual Studio工具集。
+    如果使用早期版本的 Visual Studio，请在"解决方案资源管理器"中右键**** 单击 **"WebView2GettingStarted"，** 然后选择"属性 **"。** 单击 **"配置属性**  >  **常规**"，Windows **SDK**版本和**平台工具**集，以使用 Win10 SDK 和 Visual Studio工具集。
 
 :::image type="complex" source="../media/tool-version.png" alt-text="工具版本" lightbox="../media/tool-version.png":::
    工具版本
@@ -64,8 +63,8 @@ Visual Studio显示错误，因为项目缺少 WebView2 头文件。 完成第 2
     > 如果在以下步骤中看不到预期的搜索结果，请检查NuGet位置。 单击 **"工具**  >  **选项**  >  **NuGet 程序包管理器**  >  **包源"。** 请确保在程序包源 **中** ，存在 **nuget.com** 源 `https://api.nuget.org/v3/index.json` 。 如果**包源**不包含该源，请在"名称"文本框和 `nuget.com` **** `https://api.nuget.org/v3/index.json` "源"文本框中输入****。 然后单击更新**和****确定**。
 
 1.  安装Windows库。
-    1.  在 **"NuGet**窗口中，单击"浏览 **"** 选项卡。
-    1.  在搜索栏中，键入 `Microsoft.Windows.ImplementationLibrary` ">**选择"Microsoft.Windows"。ImplementationLibrary**。
+    1.  在 **"NuGet"** 窗口中，单击"浏览 **"** 选项卡。
+    1.  在搜索栏中，键入 > `Microsoft.Windows.ImplementationLibrary` **Microsoft.Windows。ImplementationLibrary**。
     1.  在右侧窗口中，选择"安装 **"。**  NuGet将库下载到计算机。
 
         > [!NOTE]
@@ -76,7 +75,7 @@ Visual Studio显示错误，因为项目缺少 WebView2 头文件。 完成第 2
         :::image-end:::
 
 1.  安装 WebView2 SDK。
-    1.  在 **"NuGet**窗口中，单击"浏览 **"** 选项卡。
+    1.  在 **"NuGet"** 窗口中，单击"浏览 **"** 选项卡。
     1.  在搜索栏中，键入 `Microsoft.Web.WebView2` 并选择 **"Microsoft.Web.WebView2"。**
     1.  在右侧窗口中，单击"安装 **"。**  NuGet将 SDK 下载到计算机。
 
@@ -268,7 +267,7 @@ WebView2 团队已在上一步中介绍了使用 `ICoreWebView2::Navigate` 方�
 1.  主机注册处理程序以将收到的消息返回给 Web 内容。
 1.  主机将脚本注入 Web 内容，Web 内容注册处理程序以从主机打印消息。
 1.  主机将脚本注入到将 URL 张贴到主机的 Web 内容。
-1.  将触发主机处理程序，并返回 (Web) URL 的消息。
+1.  将触发主机处理程序，并返回消息 (Web) URL。
 1.  将触发 Web 内容的处理程序，并输出来自主机的消息 (URL) 。
 
 复制以下代码段并粘贴到 `HelloWebView.cpp` 中。
@@ -294,7 +293,7 @@ webviewWindow->AddScriptToExecuteOnDocumentCreated(
 nullptr);
 ```
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
 
 1.  按 **F5** 生成并运行项目。
 

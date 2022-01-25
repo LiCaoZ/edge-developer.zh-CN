@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
 ms.date: 02/17/2021
-ms.openlocfilehash: 17d762790b46db8c5460baee8d80dae4d8164a62
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: b480f851cd335cfb96b4ad13b0dd9de035af1e00
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285895"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318420"
 ---
 # <a name="microsoft-edge-add-ons-store-developer-policies"></a>Microsoft Edge 加载项商店开发人员策略
 
@@ -20,9 +19,9 @@ ms.locfileid: "12285895"
 <!-- ====================================================================== -->
 ## <a name="introduction-and-objective-of-this-document"></a>本文档的简介和目标
 
-感谢你有兴趣开发适用于加载项应用商店Microsoft Edge扩展。  Microsoft Edge 加载项应用商店开发人员策略 (加载项应用商店开发人员策略) 适用于你的扩展，包括通过合作伙伴中心提交扩展，以及通过 Microsoft Edge 加载项提供此类扩展。 [](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
+感谢你有兴趣开发适用于加载项Microsoft Edge扩展。  Microsoft Edge 加载项应用商店开发人员策略 (加载项应用商店开发人员策略) 适用于你的扩展，包括通过合作伙伴中心提交扩展，以及通过 Microsoft Edge 加载项提供此类扩展。 [](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
 
-加载项_Microsoft Edge_也称为加载项Microsoft Edge_网站_。  加载项_Microsoft Edge开发人员_策略也称为加载项Microsoft Edge_开发人员_策略。
+加载项_Microsoft Edge_也称为加载项Microsoft Edge_网站_。  加载项_Microsoft Edge开发人员_策略也称为加载项Microsoft Edge_开发人员策略_。
 
 
 <!-- ====================================================================== -->
@@ -30,7 +29,7 @@ ms.locfileid: "12285895"
 
 下面是一些入门准则：
 
-*   你应该在扩展中提供独特且独特的价值，以Microsoft Edge。  提供一个令人信服的理由，从加载项Microsoft Edge加载项 (Microsoft Edge下载扩展) 。
+*   你应该在扩展中提供独特且独特的价值，以用于Microsoft Edge。  提供从加载项应用商店Microsoft Edge加载项 (Microsoft Edge扩展的) 。
 *   你不得误导我们的联合用户有关你的扩展功能、谁提供它等。
 *   不得试图欺骗用户、系统或生态系统。  我们的加载项中Microsoft Edge任何类型的欺诈;无论它是评分和审查操作、信用卡欺诈或其他欺诈活动。
 
@@ -64,7 +63,7 @@ ms.locfileid: "12285895"
 
 #### <a name="115-provide-appropriate-details"></a>1.1.5 提供相应详细信息
 
-你必须提供有关扩展以及一览扩展的元数据 (功能) 信息详细信息。  扩展必须提供有价值且高质量的用户体验。  你的扩展还必须在加载项Microsoft Edge活动状态。
+您必须提供有关扩展以及针对扩展的元数据类型列表 (功能) 信息详细信息。  扩展必须提供有价值且高质量的用户体验。  你的扩展还必须在加载项Microsoft Edge活动状态。
 
 #### <a name="116-stability-and-performance"></a>1.1.6 稳定性和性能
 
@@ -80,7 +79,7 @@ ms.locfileid: "12285895"
 
 对浏览器设置的任何更改都应在扩展说明中明确记录。
 
-您的扩展可能仅修改关键设置，以将 Microsoft 网页或服务替换为第三方 (例如，要求使用第三方搜索引擎或将主页设置为第三方 Web 属性) （如果你被此类第三方使用或以其他方式关联）。
+您的扩展可能仅修改关键设置，以将 Microsoft 网页或服务替换为第三方 (例如，要求使用第三方搜索引擎，或将主页设置为第三方 Web 属性) （如果你被此类第三方使用或以其他方式关联）。
 
 ### <a name="12-security"></a>1.2 安全性
 
@@ -89,7 +88,7 @@ ms.locfileid: "12285895"
 #### <a name="121-content-security-policies"></a>1.2.1 内容安全策略
 
 > [!NOTE]
-> 如果对扩展进行除上述功能之外的任何更改，则对代码的任何更改都必须符合Microsoft Edge[安全策略](./csp.md#relaxing-the-default-policy)。  例如，扩展不应下载远程脚本，随后以与描述的功能不一致的方式运行该脚本。
+> 如果对扩展进行了超出上述功能的任何更改，则对代码的任何更改都必须符合Microsoft Edge[安全策略](./csp.md#relaxing-the-default-policy)。  例如，扩展不应下载远程脚本，随后以与描述的功能不一致的方式运行该脚本。
 
 #### <a name="122-unwanted-and-malicious-software"></a>1.2.2 不需要和恶意软件
 
@@ -101,7 +100,7 @@ ms.locfileid: "12285895"
 
 #### <a name="124-extensions-update"></a>1.2.4 扩展更新
 
-除非 Microsoft 另行允许，否则扩展必须仅通过加载项Microsoft Edge更新。
+除非 Microsoft 另行许可，否则扩展必须仅通过加载项Microsoft Edge更新。
 
 ### <a name="13-product-is-testable"></a>1.3 产品可测试
 
@@ -117,7 +116,7 @@ ms.locfileid: "12285895"
 
 ### <a name="14-usability"></a>1.4 可用性
 
-你的扩展必须符合Microsoft Edge加载项存储可用性标准，包括但不限于以下各小节中列出的标准。
+你的扩展必须符合Microsoft Edge加载项应用商店可用性标准，包括但不限于以下各小节中列出的标准。
 
 #### <a name="141-compatibility-across-platforms"></a>1.4.1 跨平台的兼容性
 
@@ -133,7 +132,7 @@ ms.locfileid: "12285895"
 
 #### <a name="151-collect-personal-information-only-when-necessary"></a>1.5.1 仅在必要时收集个人信息
 
-你的扩展可能会收集、访问、使用或传输个人信息 (包括 Web 浏览活动) ;仅在需要且仅在显著披露的面向用户的功能中使用时。
+您的扩展可能会收集、访问、使用或传输个人信息 (包括 Web 浏览活动) ;仅在需要且仅在显著披露的面向用户的功能中使用时。
 
 #### <a name="152-maintain-a-privacy-policy"></a>1.5.2 维护隐私策略
 
@@ -243,7 +242,7 @@ ms.locfileid: "12285895"
 
 如果你购买或创建促销广告市场活动以通过合作伙伴中心中的广告市场活动功能推广你的扩展，你向[](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)Microsoft 提供的所有广告材料（包括任何关联的登陆页面）都必须符合[Microsoft 创意](https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-specs)规范策略和[Microsoft 创意接受](https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-acceptance-policies)策略。
 
-#### <a name="1105-notifying-users-of-opt-out-for-interest-based-advertising"></a>1.10.5 通知用户Opt-Out用于Interest-Based广告
+#### <a name="1105-notifying-users-of-opt-out-for-interest-based-advertising"></a>1.10.5 通知用户Opt-OutInterest-Based广告
 
 你的隐私声明或使用条款必须让用户知道你计划向广告服务提供商发送个人信息，并且必须告诉用户他们如何选择退出基于兴趣的广告。
 
@@ -260,7 +259,7 @@ ms.locfileid: "12285895"
 ### <a name="21-content-requirements-for-microsoft-edge-addon-catalog-listing"></a>2.1 加载项目录Microsoft Edge的内容要求
 
 你提交的元数据和扩展附带的其他内容可能不包含成熟内容。
-不符合加载项应用商店Microsoft Edge一览要求的提交将被拒绝或立即删除。
+不符合加载项应用商店一Microsoft Edge的提交将被拒绝或立即删除。
 
 ### <a name="22-content-including-names-logos-original-and-third-party"></a>2.2 内容，包括名称、徽标、原始和第三方
 
@@ -270,11 +269,11 @@ ms.locfileid: "12285895"
 
 #### <a name="231-requirements"></a>2.3.1 要求
 
-您的扩展不得包含任何促进或宣传以下实际活动的内容： (极端) 无端暴力; (违反) 的行为; (制造) 武器的行为;或 () 对个人、动物、真实或个人属性使用武器。
+您的扩展不得包含任何促进或宣传以下实际活动的内容： (极端) 无端暴力; (b) 违反; (制造) 武器的行为;或 (对) 、动物、真实或个人属性使用武器。
 
 #### <a name="232-responsibility"></a>2.3.2 责任
 
-你的扩展不得 (向) 带来安全风险，也不得对最终用户、任何其他人员或动物造成危害、危害或其他任何损害;或 (b) 对真实或个人属性带来风险或造成损坏。  你应单独负责所有扩展安全测试、证书获取以及任何相应功能安全措施的实施。  不得禁用任何平台安全或舒适功能，并且必须在扩展中包括所有适用的法律要求和行业标准警告、通知和免责声明。
+你的扩展不得： (对) 带来安全风险，也不会对最终用户、任何其他人员或动物造成危害、危害或其他任何损害;或 (b) 对真实或个人属性带来风险或造成损坏。  你应单独负责所有扩展安全测试、证书获取以及任何相应功能安全措施的实施。  不得禁用任何平台安全或舒适功能，并且必须在扩展中包括所有适用的法律要求和行业标准警告、通知和免责声明。
 
 ### <a name="24-defamatory-libelous-slanderous-and-threatening"></a>2.4 中拉拉、中利贝利、斯兰达和布尔
 

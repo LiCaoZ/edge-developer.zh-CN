@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， 扩展， mv2， mv3， 清单
 ms.date: 06/07/2021
-ms.openlocfilehash: b023582e2c07390b9fec41d7c31e5233dd7d15bf
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 44ba879dc7eb76ac510f47fcb8a057c21ae261ed
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284943"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320674"
 ---
 # <a name="manifest-file-format-for-extensions"></a>扩展名的清单文件格式
 
@@ -30,7 +29,7 @@ ms.locfileid: "12284943"
 
 以下代码显示了清单 V3 程序包中扩展支持的 `manifest.json` 字段。
 
-有关每个字段的参考信息，请导航到 ["V3 (") "清单文件格式"， ](https://developer.chrome.com/docs/extensions/mv3/manifest) 然后选择字段上的链接。
+有关每个字段的参考信息，请导航到 ["V3 (") "清单文件格式"， ](https://developer.chrome.com/docs/extensions/mv3/manifest) 然后选择这些字段上的链接。
 
 ```json
 {
@@ -117,7 +116,7 @@ ms.locfileid: "12284943"
 
 以下代码显示了清单 V2 包中支持的扩展字段 `manifest.json` 。
 
-有关每个字段的参考信息，请导航到 ["V2 ](https://developer.chrome.com/docs/extensions/mv2/manifest) (") "清单文件格式"，然后选择这些字段上的链接。
+有关每个字段的参考信息，请导航 [到"V2 ](https://developer.chrome.com/docs/extensions/mv2/manifest) (") "清单文件格式"，然后选择这些字段上的链接。
 
 ```json
 {

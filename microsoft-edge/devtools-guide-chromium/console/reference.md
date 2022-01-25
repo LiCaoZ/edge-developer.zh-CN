@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: e16e5326bd5ad0d5bc4164a8c4e37cfe34d34ca5
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: b5d0b9c03ec846d4512068d9c624a77d64dc0ea6
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286105"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320065"
 ---
 <!-- Copyright Kayce Basques
 
@@ -108,11 +107,11 @@ Choose the **Console 设置** (Console 设置 icon ![) ](../media/settings-butto
 
 ### <a name="turn-off-message-grouping"></a>关闭邮件分组
 
-若要关闭控制台的默认邮件分组**行为**，请打开控制台设置并选中"类似组["](#open-console-settings)**旁边的复选框**。  例如，导航到“[记录 XHR 和 Fetch 请求](#log-xhr-and-fetch-requests)”。
+若要关闭控制台的默认邮件分组行为，请打开控制台**** 设置并选中"类似组["](#open-console-settings)**旁边的复选框**。  例如，导航到“[记录 XHR 和 Fetch 请求](#log-xhr-and-fetch-requests)”。
 
 ### <a name="log-xhr-and-fetch-requests"></a>记录 XHR 和 Fetch 请求
 
-若要在每次发生时将所有和请求记录到控制台，请打开控制台设置并选中 `XMLHttpRequest` `Fetch` Log **XMLHttpRequests**[旁边的](#open-console-settings)复选框。 ****
+若要在每次发生时将所有和请求记录到控制台，请打开控制台 `XMLHttpRequest` `Fetch` 设置，然后选择**Log XMLHttpRequests**[旁边的](#open-console-settings)复选框。 ****
 
 :::image type="complex" source="../media/console-xhr-fetch.msft.png" alt-text="记录 XMLHttpRequest 和 Fetch 请求" lightbox="../media/console-xhr-fetch.msft.png":::
    记录 `XMLHttpRequest` 和 `Fetch` 请求
@@ -132,7 +131,7 @@ Choose the **Console 设置** (Console 设置 icon ![) ](../media/settings-butto
 
 ### <a name="persist-messages-across-page-loads"></a>跨页面加载保留消息
 
-加载新网页时，默认操作会清除 **控制台**。  若要跨页面加载保留消息，请[打开](#open-console-settings)控制台设置并选中"保留日志"旁边的**复选框**。
+加载新网页时，默认操作会清除 **控制台**。  若要在页面加载时保留消息，请[打开](#open-console-settings)"控制台设置并选中"保留日志 **"旁边的复选框**。
 
 ### <a name="hide-network-messages"></a>隐藏网络消息
 
@@ -210,7 +209,7 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 
 ### <a name="filter-out-messages-from-different-contexts"></a>筛选出不同上下文的消息
 
-假设您网页上有一个 (广告) 广告。  广告嵌入在 中 `<iframe>` ，在控制台 中生成许多 **消息**。  由于广告在不同的[JavaScript](#choose-javascript-context)上下文中运行，因此隐藏消息的一个方法就是打开控制台设置选中"仅上下文["旁边的](#open-console-settings)**复选框**。
+假设您网页上有一个 (广告) 广告。  广告嵌入在 中 `<iframe>` ，在控制台 中生成许多 **消息**。  由于广告在不同的[JavaScript](#choose-javascript-context)上下文中运行，因此隐藏消息的一个方法就是打开控制台设置选中"仅上下文["](#open-console-settings)旁边的**复选框**。
 
 ### <a name="filter-out-messages-that-dont-match-a-regular-expression-pattern"></a>筛选出与正则表达式模式不匹配的邮件
 
@@ -243,7 +242,7 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 
 ### <a name="turn-off-autocomplete-from-history"></a>从历史记录中关闭自动完成
 
-键入表达式时，控制台的自动完成弹出窗口将显示之前运行表达式。 ****  表达式使用 字符预先 `>` 绘制。  若要停止显示历史记录中的表达式，请打开"控制台[设置并删除](#open-console-settings)"从历史记录自动**完成**"复选框旁边的复选框。
+键入表达式时，控制台的自动完成弹出窗口将显示之前运行表达式。 ****  表达式使用 字符预先 `>` 绘制。  若要停止显示历史记录中的表达式，请打开"控制台[设置并删除](#open-console-settings)"自动**完成自历史记录**"复选框旁边的复选框。
 
 > [!NOTE]
 > 在下图中，`document.querySelector('a')` 和 `document.querySelector('img')` 是之前评估的表达式。
@@ -272,8 +271,8 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 
 若要清除 **控制台**，请完成以下任何工作流。
 
-*   选择" **清除控制台 (** ![ 清除) ](../media/clear-console-button-icon.msft.png) 按钮。
-*   将鼠标悬停在消息上，打开上下文菜单 (右键单击") "，然后选择"清除**控制台"。**
+*   选择" **清除控制台 (** ![ 清除控制台 ](../media/clear-console-button-icon.msft.png)) 按钮。
+*   将鼠标悬停在消息上，打开上下文菜单 (右键单击") "，然后选择"清除控制台 **"。**
 *   在**控制台**中输入 `clear()`，然后选择 `Enter`。
 *   从 JavaScript 中为你的网页运行 `console.clear()`。
 *   在聚焦**控制台**时选择 `Control`+`L`。

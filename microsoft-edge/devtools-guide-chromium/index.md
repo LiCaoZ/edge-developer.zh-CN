@@ -6,14 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge， Web 开发， f12 工具， 开发工具， Microsoft Edge 开发人员工具
 ms.date: 09/23/2021
-ms.openlocfilehash: 111335454c53827f47c85113778a69f5f0a4c615
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
-ms.translationtype: HT
+ms.openlocfilehash: d3d262ac355f2f94e40c4721e662122425c34b42
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284810"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319358"
 ---
 # <a name="microsoft-edge-developer-tools-overview"></a>Microsoft Edge 开发人员工具概述
 

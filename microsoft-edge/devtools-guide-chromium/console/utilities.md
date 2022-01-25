@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: c4aba62a3c14e1e8862a1194712f2f23719fc206
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: a8eaa42af2963f0402094f4ec22f1fb756400971
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284404"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319484"
 ---
 <!-- Copyright Kayce Basques
 
@@ -371,7 +370,7 @@ inspect(document.body);
 <!-- ====================================================================== -->
 ## <a name="geteventlisteners"></a>getEventListeners
 
-`getEventListeners(object)` 返回在指定对象上注册的事件侦听器。  返回值是包含每个已注册事件类型的数组的对象， (`click` 或 `keydown`) 。  每个数组的成员是描述为每种类型注册的侦听器的对象。
+`getEventListeners(object)` 返回在指定对象上注册的事件侦听器。  返回值是 (包含每个已注册事件类型（如 或) ）的 `click` `keydown` 数组的对象。  每个数组的成员是描述为每种类型注册的侦听器的对象。
 
 ### <a name="syntax"></a>语法
 

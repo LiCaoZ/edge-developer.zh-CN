@@ -6,14 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2、IWebView2WebView、webview2、webview、wpf 应用、wpf、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
 ms.date: 10/28/2021
-ms.openlocfilehash: 9e330c19f87f7750ee852cd8ef2c103d20dfc7bb
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: c363da5b0bc31214bfa009ede640162f72be8d6f
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286308"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319092"
 ---
 # <a name="navigation-events-for-webview2"></a>WebView2 的导航事件
 

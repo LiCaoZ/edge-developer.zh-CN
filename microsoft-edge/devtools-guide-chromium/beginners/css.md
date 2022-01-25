@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 07/26/2021
-ms.openlocfilehash: fe68f903e58abb9b43980f316e0b18e98cc081d5
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 89ea7c89c10bad1ac646d29df17ec9b0ecd0b3ab
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284740"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318616"
 ---
 <!-- Copyright Katherine Jackson
 
@@ -62,7 +61,7 @@ ms.locfileid: "12284740"
 
 完成以下先决条件，然后再执行本教程。
 
-*   使用[HTML 和 DOM](./html.md)完成入门，或确保您已了解 HTML 和 DOM。
+*   使用[入门完成 HTML](./html.md)和 DOM 的填写操作，或确保您已了解 HTML 和 DOM。
 *   下载 [Microsoft Edge](https://www.microsoftedgeinsider.com) Web 浏览器。  以下教程使用一组内置于 Microsoft Edge 中的 Web 开发工具（称为 Microsoft Edge DevTools）。
 
 
@@ -80,7 +79,7 @@ ms.locfileid: "12284740"
 
 1.  选择 **"cooked-amphibian"。**  弹出一个菜单。
 
-    :::image type="content" source="../media/beginners-css-setup2.msft.png" alt-text="&quot;Project选项&quot;菜单。" lightbox="../media/beginners-css-setup2.msft.png":::
+    :::image type="content" source="../media/beginners-css-setup2.msft.png" alt-text="&quot;Project 选项&quot;菜单。" lightbox="../media/beginners-css-setup2.msft.png":::
 
 1.  选择**Remix Project**。  Glitch 将创建一个可编辑的项目副本。
 
@@ -247,7 +246,7 @@ li a {
 
 向现有规则集添加声明
 
-1.  将鼠标悬停在 **"主页"** 链接上，打开上下文菜单 (右键单击") "，然后选择"检查 **"。**
+1.  将鼠标悬停在 **"主页"** 链接上，打开上下文菜单 (右键单击") "检查 **"。**
 
     :::image type="content" source="../media/beginners-css-add1.msft.png" alt-text="检查&quot;主页&quot;链接。" lightbox="../media/beginners-css-add1.msft.png":::
 
@@ -515,6 +514,6 @@ li a {
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，由 [由技术](https://developers.google.com/web/resources/contributors#katherine-jackson) 编写器 (，Chrome DevTools) 。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，由 [来自](https://developers.google.com/web/resources/contributors#katherine-jackson) 技术编写器 (，Chrome DevTools) 。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

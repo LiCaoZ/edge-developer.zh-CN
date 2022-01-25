@@ -1,18 +1,17 @@
 ---
 title: 扩展概念和体系结构
-description: 构建扩展Microsoft Edge和核心概念的体系结构。
+description: 扩展Microsoft Edge和构建扩展的核心概念。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， 扩展
 ms.date: 01/07/2021
-ms.openlocfilehash: b77b4409f66b489043a466d7485d7f3bec9642e5
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 93cd86ef01513dd5ea6b6a3b6a384039d92cd086
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286840"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318693"
 ---
 # <a name="extension-concepts-and-architecture"></a>扩展概念和体系结构
 
@@ -46,7 +45,7 @@ ms.locfileid: "12286840"
 
 下面的列表概述了与扩展体系结构相关的有用信息。
 
-1.  扩展 Web 服务器捆绑包。  扩展是 Web 资源的捆绑包。  Web 资源类似于你向 Web 服务器 (Web 开发人员) 其他资源。  生成扩展时，将 Web 资源捆绑到 zip 文件中。
+1.  扩展 Web 服务器捆绑包。  扩展是 Web 资源的捆绑包。  Web 资源类似于你向 Web 开发人员 (Web) 其他资源。  生成扩展时，将 Web 资源捆绑到 zip 文件中。
 
     zip 文件包括 HTML、CSS、JavaScript 和图像文件。  zip 文件的根中需要另外一个文件。  另一个文件是名为 的清单文件 `manifest.json` 。  清单文件是扩展的蓝图，包括扩展版本、标题、运行扩展所需的权限等。
 

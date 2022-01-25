@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge，web 开发，f12 工具，devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: a578f82982b1af0b93e5be148b2acbd4ce2ba787
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: f0cefe6cf8718cadf19c5dd72ef8be4bcab8668a
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286343"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320338"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -61,11 +60,11 @@ ms.locfileid: "12286343"
 
 记录完成后，DevTools 会使用记录的数据自动填充**采样配置文件**下的**内存**面板。
 
-默认视图为"粗** (上) "。 **  使用该视图允可以查看哪些函数对性能影响最大，并检查每个函数的请求路径。
+默认视图为"粗** (从下向上) "。 **  使用该视图允可以查看哪些函数对性能影响最大，并检查每个函数的请求路径。
 
 ### <a name="change-sort-order"></a>更改排序顺序
 
-若要更改排序顺序，请选择焦点选定函数旁边的下拉菜单 (焦点选定函数****) 图标，然后选择以下 ![ ](../media/focus-icon.msft.png) 选项之一。
+若要更改排序顺序，请选择焦点选定函数旁边的下拉菜单 (焦点选定) **** 图标，然后选择以下 ![ ](../media/focus-icon.msft.png) 选项之一。
 
 **图表**。  显示记录的时序图。
 
@@ -87,7 +86,7 @@ ms.locfileid: "12286343"
 
 ### <a name="exclude-functions"></a>排除函数
 
-若要从采样配置文件中排除函数，请选择该函数，然后选择"排除**** 所选函数 ![ ("按钮) ](../media/exclude-icon.msft.png) 函数。  请求函数 (被) 的父 (子) 由分配给已排除函数的 (分配的内存) 。
+若要从采样配置文件中排除函数，请选择该函数，然后选择排除所选函数 **， (** ![ 排除所选) ](../media/exclude-icon.msft.png) 按钮。  请求函数 (的) 的父 (子) 由分配给已排除函数的 (分配的内存) 。
 
 Choose the **restore all functions (** restore all functions) button to restore all ![ ](../media/restore-icon.msft.png) excluded functions back into the recording.
 
@@ -150,6 +149,6 @@ Choose the **restore all functions (** restore all functions) button to restore 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution)由[由 (](https://developers.google.com/web/resources/contributors#kayce-basques) Technical Writer、Chrome DevTools \& Lighthouse) 和[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution)由 (技术撰稿人、Chrome DevTools \& Lighthouse) 和[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员， chromium 扩展
 ms.date: 08/25/2021
-ms.openlocfilehash: fc5989805440a94c9e58c35364e7b46895dbe1ef
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 29935f3995ea92269cb8e0e9c7e5931b1913e197
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12287176"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318455"
 ---
 # <a name="overview-of-microsoft-edge-extensions"></a>Microsoft Edge 扩展概述
 

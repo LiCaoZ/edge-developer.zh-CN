@@ -5,28 +5,27 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 09/22/2021
-ms.openlocfilehash: 8ef0b8779810b6eb301207c098b662da718aee4e
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: f88e96458227d96fd4aedd9d734eca628c8c7551
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285342"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319428"
 ---
 # <a name="opening-source-files-in-visual-studio-code"></a>在文件中打开Visual Studio Code
 
-实验 `Open source files in Visual Studio Code` 允许你使用 Microsoft Edge Tools，但随后在 Visual Studio Code 而不是 DevTools 源工具的代码编辑器中编辑文件。
+实验 `Open source files in Visual Studio Code` 允许你使用 Microsoft Edge Tools，但在 Visual Studio Code 而不是在 DevTools 源工具的代码编辑器中编辑文件。
 
-如果使用 Visual Studio Code并且使用 DevTools 更改 CSS 规则，那么与使用 Visual Studio Code 中的代码编辑器相反，您必须使用 DevTools 的"源"工具中的代码编辑器，这一点似乎有些奇怪。  通过此实验，我们想要更改这一点。  这就是我们将新实验添加到开发人员工具的原因。  当你在实验过程中打开开放源文件**Visual Studio Code，** 本地文件将得到不同的处理。
+如果使用 Visual Studio Code并且使用 DevTools 更改 CSS 规则，那么与使用 Visual Studio Code 中的代码编辑器相反，您必须使用 DevTools 的"源"工具中的代码编辑器，这一点似乎有些奇怪。  通过此实验，我们想要更改这一点。  这就是我们将新实验添加到开发人员工具的原因。  当你在实验过程中打开开放源文件**Visual Studio Code，** 本地文件将具有不同的处理。
 
 
 <!-- ====================================================================== -->
 ## <a name="setting-up-editing-local-files-in-visual-studio-code"></a>设置编辑本地文件Visual Studio Code
 
-首先，选择"devTools >设置**** 实验""打开Visual Studio Code源文件"，然后重新  >  ****  >  **** 启动 DevTools。
+首先，选择"DevTools >设置**** 实验""打开Visual Studio Code"源文件"，然后重新  >  ****  >  **** 启动 DevTools。
 
-启用此实验后，假设在Microsoft Edge中，转到本地服务器 (或) 或 `http://localhost` `http://127.0.0.1` 打开本地文件。
+启用此实验后，假设在Microsoft Edge中，转到本地服务器 (或) 打开本地 `http://localhost` `http://127.0.0.1` 文件。
 
 :::image type="complex" source="../media/experiment-sources-in-code-local-project.msft..png" alt-text="Microsoft Edge打开本地文件。" lightbox="../media/experiment-sources-in-code-local-project.msft..png":::
    Microsoft Edge打开本地文件。
@@ -50,10 +49,10 @@ ms.locfileid: "12285342"
    要求获取文件夹访问权限的 DevTools
 :::image-end:::
 
-授予权限后，你选择的文件夹将添加为 DevTools 中的 Workspace，位于"源"工具的 **"文件系统****"选项卡**中。  这意味着你在 DevTools 中编辑的任何文件现在Microsoft Visual Studio代码而不是源工具中打开。 作为指示器，我们在文件名 `linked` 旁边显示一个图标。  本示例中，我们将选择"样式 `base.css` "工具 **中** 的链接。
+授予权限后，你选择的文件夹将添加为 DevTools 中的 Workspace，位于"源"工具的 **"文件系统****"选项卡**中。  这意味着，在 DevTools 中编辑的任何文件现在Microsoft Visual Studio代码而不是源工具中打开。 作为指示器，我们在文件名 `linked` 旁边显示一个图标。  本示例中，我们将选择"样式 `base.css` "工具 **中** 的链接。
 
 :::image type="complex" source="../media/experiment-sources-in-code-selecting-link.msft.png" alt-text="在&quot;样式&quot;工具中选择文件链接将打开Visual Studio Code" lightbox="../media/experiment-sources-in-code-selecting-link.msft.png":::
-   在"样式 **"工具中选择**文件链接将打开Visual Studio Code
+   在"样式"**工具中选择文件**链接将打开Visual Studio Code
 :::image-end:::
 
 DevTools 打开一个 Visual Studio Code，并显示根文件夹中的所有文件。  DevTools 还会打开所选的文件，滚动到 CSS 选择器的正确行。
@@ -72,15 +71,15 @@ DevTools 打开一个 Visual Studio Code，并显示根文件夹中的所有文�
 <!-- ====================================================================== -->
 ## <a name="changing-the-workspace-settings"></a>更改工作区设置
 
-如果你通过选择齿轮图标或设置上的设置 (转到 DevTools **** ****) ，你可以更改实验 `Shift + ?` 的行为。  当您在 **"工作区**"设置，**** 您具有一些选项。
+如果你通过选择齿轮图标或设置上的设置 (转到 DevTools) ，你可以更改实验******** `Shift + ?` 的行为。  当您**选择"工作区**"**页设置，** 您有几个选项。
 
 :::image type="complex" source="../media/experiment-sources-in-code-workspace-settings.msft.png" alt-text="显示多个选项的工作区的设置窗格" lightbox="../media/experiment-sources-in-code-workspace-settings.msft.png":::
    显示多个选项的工作区的设置窗格
 :::image-end:::
 
-**"设置**  >  **工作区**"页列出了工作区以及配置选项。
+**"设置**  >  **工作区**"页将列出工作区以及配置选项。
 
-*  若要设置是否打开 Visual Studio Code 中的源文件，请选中"在Visual Studio Code**打开源文件**"复选框。
+*  若要设置是否打开 Visual Studio Code 中的源文件，请选中"打开 Visual Studio Code 源文件 **"** 复选框。
 
 *  若要自动将 DevTools 更改保存到磁盘，请选中" **将 DevTools 更改保存到磁盘"** 复选框。
 

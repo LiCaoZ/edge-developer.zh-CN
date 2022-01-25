@@ -6,18 +6,17 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2、IWebView2WebView、webview2、webview、edge、ICoreWebView2、ICoreWebView2Controller、Chrome DevTools 协议
 ms.date: 05/06/2021
-ms.openlocfilehash: 10f245b50087d0805c3f299967db2ce2d72031d7
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: bb54c939d927f9809bc8a0dc43cd120817cd9ef3
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286203"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319456"
 ---
 # <a name="use-the-chrome-devtools-protocol-in-webview2"></a>在 WebView2 中使用 Chrome DevTools 协议
 
-Chrome [DevTools 协议](https://chromedevtools.github.io/devtools-protocol)提供用于检测、检查、调试和配置文件Chromium浏览器的 API。  Chrome DevTools 协议是开发工具Microsoft Edge的基础。  对 WebView2 平台中未实现的功能使用 Chrome DevTools 协议。
+[Chrome DevTools 协议](https://chromedevtools.github.io/devtools-protocol)提供用于检测、检查、调试和配置文件的 API Chromium基于浏览器。  Chrome DevTools 协议是开发工具Microsoft Edge的基础。  对 WebView2 平台中未实现的功能使用 Chrome DevTools 协议。
 
 若要在 WebView2 应用中使用 Chrome DevTools 协议 API，请执行下列任一操作：
 
@@ -163,7 +162,7 @@ Chrome [DevTools 协议](https://chromedevtools.github.io/devtools-protocol)提�
 1.  运行应用。
 1.  若要显示法国巴黎的坐标，请选择" **显示位置"** 按钮。
 
-    :::image type="complex" source="./media/final-location-cdp.png" alt-text="在 .html 2 控件中显示带巴黎坐标的 webView2 文件" lightbox="./media/final-location-cdp.png":::
+    :::image type="complex" source="./media/final-location-cdp.png" alt-text="在 .html 2 控件中显示文件，并包含巴黎的坐标" lightbox="./media/final-location-cdp.png":::
        在 `.html` WebView2 控件中显示文件以及巴黎的坐标
     :::image-end:::
 

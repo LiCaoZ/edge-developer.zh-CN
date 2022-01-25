@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools, 仿真, 设备, 模拟, 移动
 ms.date: 07/19/2021
-ms.openlocfilehash: 880848446f2dd4c7dcedb082a34ed18d1760a4ce
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: a07827e514345b52ad1eb91c655624ce6c41bc02
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286770"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320940"
 ---
 <!-- Copyright Kayce Basques
 
@@ -53,7 +52,7 @@ ms.locfileid: "12286770"
 <!-- ====================================================================== -->
 ## <a name="simulate-a-mobile-viewport"></a>模拟移动视区
 
-选择切换 **设备仿真 (**  切换设备工具栏) 或选择自定义和控制 ![ ](../media/toggle-device-toolbar-dark-icon.msft.png) **DevTools** (`...`) > **设备模拟** 以打开使您能够模拟移动视口的 UI。
+选择"切换 **设备仿真 (**  切换设备工具栏) 或选择"自定义和控制 ![ ](../media/toggle-device-toolbar-dark-icon.msft.png) **DevTools** (`...`) > **设备模拟** "以打开使您能够模拟移动视口的 UI。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="设备工具栏。" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
 
@@ -180,7 +179,7 @@ ms.locfileid: "12286770"
 
 仅限制 CPU 而不是网络：
 
-1.  选择"**性能"** 面板，然后选择 **"捕获**设置 (![ 捕获 ](../media/capture-settings-icon.msft.png) 设置) 。
+1.  选择"**性能"** 面板，然后选择"捕获**设置 (** ![ 捕获设置) 。 ](../media/capture-settings-icon.msft.png)
 1.  选择**CPU**  >  **速度减慢 4 倍或****速度减慢 6 倍**。
 
 :::image type="content" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="&quot;性能&quot;面板中的 CPU 列表。" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
@@ -193,13 +192,13 @@ ms.locfileid: "12286770"
 
     :::image type="content" source="../media/device-mode-network-throttle.msft.png" alt-text="网络面板中的限制列表。" lightbox="../media/device-mode-network-throttle.msft.png":::
 
-    或者 `Control` + `Shift` + `P` ， (Windows、Linux) 或 (`Command` macOS + `Shift` + `P` ****) `3G` ******** 打开"命令菜单"，键入 ，然后选择"启用快速 3G 限制"或"启用慢速 3G 限制"。
+    或者 `Control` + `Shift` + `P` ， (Windows、Linux) 或 `Command` (macOS + `Shift` + `P`) **** `3G` ******** 打开"命令菜单"，键入 ，然后选择"启用快速 3G 限制"或"启用慢速 3G 限制"。
 
     :::image type="content" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="从&quot;命令菜单&quot;中选择&quot;启用快速或缓慢的 3G 限制&quot;。" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
 
 您还可以从"性能"面板设置 **网络** 限制：
 
-1.  选择 **"捕获设置 (** 捕获设置) ，然后选择"网络"列表，将预设更改为 ![ ](../media/capture-settings-icon.msft.png) **"快速 3G"** 或"**慢速 3G"。** ****
+1.  选择 **"捕获设置 (** 捕获设置) 并选择"网络"列表，将预设更改为 ![ ](../media/capture-settings-icon.msft.png) **"快速 3G"** 或"**慢速 3G"。** ****
 
     :::image type="content" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="从&quot;性能&quot;面板设置网络限制。" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
 
@@ -209,7 +208,7 @@ ms.locfileid: "12286770"
 
  如果页面依赖移动设备中的地理位置信息正确呈现，则使用替代地理位置的 UI 提供不同的地理位置。
 
-1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **传感器"。**
+1.  选择 **"自定义和控制开发人员工具 () >** `...` **更多工具**  >  **传感器"。**
 
     :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="用于地理位置的传感器。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
@@ -227,7 +226,7 @@ ms.locfileid: "12286770"
 
 如果页面依赖来自移动设备的方向信息来正确呈现，请打开方向 UI。
 
-1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **传感器"。**
+1.  选择 **"自定义和控制开发人员工具 () >** `...` **更多工具**  >  **传感器"。**
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="&quot;更多工具&quot;菜单上的&quot;传感器&quot;命令。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
@@ -251,7 +250,7 @@ ms.locfileid: "12286770"
 
     :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="&quot;更多工具&quot;菜单中的网络条件条目。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
 
-1.  或者，选择"命令菜单"， (Windows、Linux) `Control` + `Shift` + `P` 或 (`Command` + `Shift` + `P` macOS) 。键入 `Network conditions` ，然后选择"**显示网络条件"。**
+1.  或者，通过选择"命令菜单" (Windows、Linux) `Control` + `Shift` + `P` 或 (`Command` + `Shift` + `P` macOS) 。键入 `Network conditions` ，然后选择"**显示网络条件"。**
 
     :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="显示网络条件。" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
 

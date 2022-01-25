@@ -6,18 +6,17 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用， PWA， Edge， Windows， 推送， 通知， 锁屏提醒
 ms.date: 09/17/2021
-ms.openlocfilehash: 5e2d0f096ab872e3398f464f8fc07e0c57d7e33c
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 310ae63f5567dc5afe87f40c9085d9f5f04d6f7d
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284530"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319204"
 ---
 # <a name="re-engage-users-with-badges-notifications-and-push-messages"></a>使用锁屏提醒、通知和推送通知重新吸引用户
 
-渐进式 Web (PBA) 在应用未运行时能够工作，例如更新缓存中的数据，或在设备重新连接时发送消息。  为此，请使用以下 API，这些 API 在后台同步[PWA更新中介绍](background-syncs.md)：
+渐进式 Web (PBA) 在应用未运行时能够工作，例如更新缓存中的数据，或在设备重新获得连接时发送消息。  为此，请使用以下 API，这些 API 在后台同步[PWA更新中介绍](background-syncs.md)：
 
 *  后台同步 API
 *  定期后台同步 API
@@ -61,7 +60,7 @@ navigator.setAppBadge();
 navigator.setAppBadge(42);
 ```
 
-:::image type="content" source="../media/app-badge-in-taskbar.png" alt-text="一PWA任务栏Windows图标，锁屏提醒显示数字 42。":::
+:::image type="content" source="../media/app-badge-in-taskbar.png" alt-text="一PWA任务栏中的Windows图标，锁屏提醒显示数字 42。":::
 
 函数返回 Promise，可用于了解锁屏提醒的添加时间，并捕获 `setAppBadge` 潜在错误，如下所示：
 
@@ -218,7 +217,7 @@ self.addEventListener('notificationclick', event => {
 <!-- ====================================================================== -->
 ### <a name="step-1---generate-vapid-keys"></a>步骤 1 - 生成 VAPID 密钥
 
-推送通知需要 VAPID (自动应用服务器) 标识密钥，才能向 PWA 客户端发送推送通知。  可在线使用多个 VAPID 密钥 (例如[，vapidkeys.com) 。](https://vapidkeys.com)
+推送通知需要 VAPID (自动应用程序服务器标识) 密钥，才能将推送通知发送到 PWA 客户端。  可在线使用多个 VAPID 密钥生成器 (例如[，vapidkeys.com) 。](https://vapidkeys.com)
 
 生成密钥后，你将收到包含公钥和私钥的 JSON 对象。  保存 VAPID 密钥，供以下教程稍后使用。
 
@@ -231,12 +230,12 @@ self.addEventListener('notificationclick', event => {
 服务工作人员在服务中处理推送事件和 toast 通知PWA。  若要订阅PWA推送通知，请执行以下操作：
 
 *   请确保你的PWA安装、激活和注册。
-*   确保用于完成订阅任务的代码位于用户主 UI 线程PWA。
+*   确保用于完成订阅任务的代码位于订阅任务的主要 UI 线程PWA。
 *   请确保具有网络连接。
 
 在新建推送订阅之前，Microsoft Edge检查用户是否已授予PWA接收通知的权限。
 
-如果用户尚未向用户授予PWA权限，浏览器会提示用户获取权限。  如果用户未向浏览器授予权限，则请求将引发 `registration.pushManager.subscribe` `DOMException` ，必须处理。  有关权限管理 More on permission management， go to [Push Notifications in Microsoft Edge](https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge#UAbvU2ymUlHO8EUV.97).
+如果用户尚未向用户授予PWA权限，浏览器会提示用户获取权限。  如果用户未向浏览器授予权限，则请求将引发 `registration.pushManager.subscribe` `DOMException` ，必须处理。  有关权限管理 More on， go to [Push Notifications in Microsoft Edge](https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge#UAbvU2ymUlHO8EUV.97).
 
 在 `pwabuilder-sw-register.js` 文件中，附加以下代码：
 
@@ -282,12 +281,12 @@ function urlBase64ToUint8Array(base64String) {
 <!-- ====================================================================== -->
 ### <a name="step-3---listen-for-push-notifications"></a>步骤 3 - 侦听推送通知
 
-在服务中创建订阅PWA，向服务工作者添加处理程序以响应推送事件。  推送事件从服务器发送以显示 Toast 通知。  Toast 通知显示已接收邮件的数据。  若要执行以下任一任务，必须添加 `click` 处理程序：
+在服务中创建订阅PWA，将处理程序添加到服务工作者以响应推送事件。  推送事件从服务器发送以显示 Toast 通知。  Toast 通知显示已接收邮件的数据。  若要执行以下任一任务，必须添加 `click` 处理程序：
 
 *   消除 Toast 通知。
 *   打开窗口。
 *   将焦点放在窗口上。
-*   打开新窗口，将焦点放在新窗口上，以显示PWA页。
+*   打开焦点并放在新窗口上，以显示PWA页。
 
 若要在 `click` 文件中添加处理程序，请为 事件和 `pwabuilder-sw.js` 事件添加以下 `push` `notificationclick` 处理程序：
 
@@ -330,17 +329,17 @@ self.addEventListener('notificationclick', function (event) {
 
 若要为用户测试推送通知PWA：
 
-1.  转到你的PWA `http://localhost:3000` 。。  当服务工作者激活并尝试订阅你的PWA推送通知时，Microsoft Edge提示你允许PWA显示通知。  选择 **"允许"。**
+1.  转到你的PWA `http://localhost:3000` 。。  当服务工作者激活并尝试订阅PWA推送通知时，Microsoft Edge提示你允许PWA显示通知。  选择 **"允许"。**
 
     :::image type="content" source="../media/notification-permission.png" alt-text="用于启用通知的权限对话框。":::
 
-1.  模拟服务器端推送通知，如下所示。  在浏览器中PWA打开 `http://localhost:3000` 开发人员工具后，选择 `F12` 打开 DevTools。  选择 **"**  >  **应用程序服务工作者**  >  **推送**"将测试推送通知发送到PWA。
+1.  模拟服务器端推送通知，如下所示。  在浏览器中PWA `http://localhost:3000` 打开应用后，选择 `F12` 打开 DevTools。  选择 **"**  >  **应用程序服务工作者**  >  **** 推送"将测试推送通知发送到PWA。
 
     推送通知显示在任务栏附近。
 
     :::image type="content" source="../media/devtools-push.png" alt-text="从 DevTools 推送通知。":::
 
-    如果未选择" ("或) Toast__ 通知，系统会在几秒钟后自动关闭它，Windows操作中心中将其排Windows队列。
+    如果未选择" (或) Toast 通知__，系统会在几秒钟后自动将其关闭，Windows操作中心中排队。
 
     :::image type="content" source="../media/windows-action-center.png" alt-text="Windows操作中心中的通知。":::
 

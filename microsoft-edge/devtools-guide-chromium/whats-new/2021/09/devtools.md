@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 09/03/2021
-ms.openlocfilehash: d2116eb4408c315c78166996e08b9923e3e5b5c4
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
-ms.translationtype: HT
+ms.openlocfilehash: 320d747dedd2b7b6fb7c7cb172c420ac51466e38
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285916"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318497"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-94"></a>DevTools 中的新增功能 (Microsoft Edge 94)
 

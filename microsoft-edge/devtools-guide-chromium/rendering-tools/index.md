@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: 860152fce6cccf922fc73583bd031b479783b265
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: e4de8af002dba22e1670128e1932b4f602a29c4a
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286350"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319050"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -51,7 +50,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 <!--todo: add Recording section when available  -->
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->
 
-如果你注意到 JavaScript 中出现 (呈现) 中断，可能需要将分析下一级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面函数中的使用位置。  了解如何在"加快 [JavaScript 运行时速度"中创建 CPU 配置文件](./js-runtime.md)。
+如果你注意到在 JavaScript 中 (呈现) 出现大量 jank 和中断，你可能需要将分析介绍到下一级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面函数中的使用位置。  了解如何在"加快 [JavaScript 运行时速度"中创建 CPU 配置文件](./js-runtime.md)。
 
 ### <a name="javascript-problems"></a>JavaScript：问题
 
@@ -120,7 +119,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 <!-- ====================================================================== -->
 ## <a name="layout"></a>布局
 
-Firefox (或重排) 是浏览器计算页面上所有元素的位置和大小的过程。  Web 的布局模型意味着一个元素可能会影响其他元素;例如，元素的宽度通常会影响任何子元素的宽度，等等，一直向上和向下影响 `<body>` 树。  浏览器可能涉及此过程。
+布局 (Firefox) 是浏览器计算页面上所有元素的位置和大小的过程。  Web 的布局模型意味着一个元素可能会影响其他元素;例如，元素的宽度通常会影响任何子元素的宽度，等等，一直向上和向下影响 `<body>` 树。  浏览器可能涉及此过程。
 
 作为经验法则，如果你在帧完成之前要求从 DOM 返回几何值，你将发现自己具有"强制同步布局"，如果频繁重复或对大型 DOM 树执行，这可能是一个较大的性能瓶颈。
 
@@ -196,6 +195,6 @@ The Timeline Tool page is deprecated.
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)作者为 (技术撰稿人[、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse) 和[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)由 (技术撰稿人[、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse) 和[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

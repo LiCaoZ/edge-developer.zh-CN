@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, 开发工具, 远程调试, android, surface duo
 ms.date: 03/25/2021
-ms.openlocfilehash: 7de526ca2109143777aa8537631bdc944504837d
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: c5bb757f09ceda25e77ebbfe6c13c0eef1c9c937
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286658"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320478"
 ---
 # <a name="get-started-with-remote-debugging-surface-duo-emulators"></a>远程调试 Surface Duo 仿真器入门
 

@@ -7,14 +7,13 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.technology: webview
-keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、CoreWebView2、ICoreWebView2Host、浏览器控件、edge html、Windows Forms、WinForms、WPF、.NET、WinUI、Project Reunion
 ms.date: 11/12/2021
-ms.openlocfilehash: c492f0a0b7cd46f592a9dac89243398049363b50
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: e4e8ab8f43fbb5ab55fd3cc7516da7f038dee413
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285223"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320485"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介
 

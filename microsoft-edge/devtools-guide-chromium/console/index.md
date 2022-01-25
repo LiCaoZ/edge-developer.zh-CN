@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 04/13/2021
-ms.openlocfilehash: 0271302b288e160d71ed337a8e3bc0bf0b55f5fb
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 47b2dc378e1746e3a97ab9ceda308c006af424f7
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286469"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320611"
 ---
 # <a name="console-overview"></a>控制台概述
 
@@ -40,7 +39,7 @@ DevTools 的控制台工具可帮助你完成多项任务： ****
 <!-- ====================================================================== -->
 ## <a name="error-reports-and-the-console"></a>错误报告和控制台
 
-控制台 **是** 报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，"**** 问题"计数器将显示在 DevTools**设置**图标旁边，该图标提供错误和警告的数量。  选择 **"问题"** 计数器以打开 **"问题** "工具并显示问题。  有关详细信息，请参阅修复控制台中 [报告的 JavaScript 错误](console-debug-javascript.md)。
+控制台 **是** 报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，"**** 问题"计数器将显示在 DevTools 中提供错误和警告**数量的**设置 图标旁边。  选择 **"问题"** 计数器以打开 **"问题** "工具并显示问题。  有关详细信息，请参阅修复控制台中 [报告的 JavaScript 错误](console-debug-javascript.md)。
 
 DevTools 提供有关控制台中错误 **的详细信息**：
 
@@ -62,7 +61,7 @@ DevTools 提供有关控制台中错误 **的详细信息**：
 
 :::image type="content" source="../media/search-console-new-tab.msft.png" alt-text="从搜索控制台错误功能打开的新选项卡。" lightbox="../media/search-console-new-tab.msft.png":::
 
-此功能是在 94 Microsoft Edge引入的。
+此功能是在版本 94 Microsoft Edge引入的。
 
 
 <!-- ====================================================================== -->
@@ -82,7 +81,7 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
 
 控制台最常见的用例是使用 方法**** 或其他类似方法从脚本 `console.log()` 中记录信息。  若要试用，请进行以下尝试：
 
-1.  若要打开控制台 **，** 请选择 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS) 。
+1.  若要打开控制台 **，请选择** `Control` + `Shift` + `J` (Windows、Linux) 或 (`Command` + `Option` + `J` macOS) 。
 1.  请参阅 [控制台消息示例：日志、信息、错误和警告](https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html)，或在控制台中复制并运行以下 **代码**。
 
     ```javascript

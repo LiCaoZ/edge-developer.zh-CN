@@ -6,14 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， webdriver， selenium， 测试， 工具， 自动化， 测试
 ms.date: 02/10/2021
-ms.openlocfilehash: a03e7879cf4604980686afe5bf89f88538c5b279
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: b45164fbc9aebe80f31c403208a545cbd8648c80
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286477"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319617"
 ---
 # <a name="capabilities-and-edgeoptions"></a>功能和 EdgeOptions
 
@@ -31,7 +30,6 @@ ms.locfileid: "12286477"
 
 ```csharp
 var options = new EdgeOptions();
-options.UseChromium = true;
 options.AddExtensions("/path/to/extension.crx");
 var driver = new EdgeDriver(options);
 ```
@@ -46,7 +44,7 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 <!-- ====================================================================== -->
 ## <a name="recognized-capabilities"></a>可识别的功能
 
-有关接受的标准 `EdgeDriver` 功能，请导航到 [Selenium 文档](https://www.selenium.dev/documentation/en/driver_idiosyncrasies/shared_capabilities/) 和 [W3C WebDriver 标准](https://www.w3.org/TR/webdriver#capabilities)。  本文仅列出特定于 Microsoft Edge。
+有关接受的标准 `EdgeDriver` 功能，请导航到 [Selenium 文档](https://www.selenium.dev/documentation/en/driver_idiosyncrasies/shared_capabilities/) 和 [W3C WebDriver 标准](https://www.w3.org/TR/webdriver#capabilities)。  本文仅列出了特定于 Microsoft Edge。
 
 
 <!-- ====================================================================== -->
@@ -56,17 +54,17 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 
 | 功能 | 类型 | 默认值 | 详细信息 |
 |:--- |:--- |:--- |:--- |
-| args | 字符串列表 |  | 启动命令时要使用的命令行参数Microsoft Edge。  具有关联值的参数应用符号分隔 (`=` 例如 `['start-maximized', 'user-data-dir=/tmp/temp_profile']` ，) 。 |
+| args | 字符串列表 |  | 启动命令时使用的命令行参数Microsoft Edge。  具有关联值的参数应用符号分隔 (`=` 例如 `['start-maximized', 'user-data-dir=/tmp/temp_profile']` ，) 。 |
 | binary | 字符串 |  | 在 macOS Microsoft Edge二进制文件 (路径，路径应为实际二进制文件，而不只是应用。  例如 `/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge` ，) 。 |
 | debuggerAddress | 字符串 |  | 要连接到的调试器服务器的地址，格式为 `hostname/ip:port` ，例如 `127.0.0.1:38947` 。 |
-| 分离 | 布尔型 | `false` | 如果为 ，Microsoft Edge WebDriver 服务关闭时退出，即使 WebDriver 本地端尚未 `false` 关闭会话。  如果 `true` 为 ，Microsoft Edge仅在 WebDriver 本地结束关闭会话时退出。  如果 为 ，并且 WebDriver 本地端不关闭会话，则不清理该实例使用的临时用户 `true` `EdgeDriver` Microsoft Edge文件夹。 |
+| 分离 | 布尔型 | `false` | 如果为 ，Microsoft Edge WebDriver 服务关闭时退出，即使 `false` WebDriver 本地端尚未关闭会话。  如果 `true` 为 ，Microsoft Edge仅在 WebDriver 本地端关闭会话时退出。  如果 为 ，并且 WebDriver 本地端不关闭会话，则不清理该实例使用的临时用户 `true` `EdgeDriver` Microsoft Edge文件夹。 |
 | excludeSwitches | 字符串列表 |  | 默认情况下，Microsoft Edge开关以排除该 EdgeDriver 的列表，该列表在启动 Microsoft Edge。  避免 `--` 使用开关前缀。 |
 | extensions | 字符串列表 |  | 启动时要安装的扩展的列表。  列表中的每个项目应为 base64 编码的打包扩展 `.crx` () 。 |
 | localState | 字典 |  | 包含每个条目的字典，包含首选项的名称和值。  首选项将应用于用户数据文件夹中的本地状态文件。 |
-| minidumpPath | 字符串 |  | 用于存储最小Microsoft Edge的目录。   (Linux.)  |
+| minidumpPath | 字符串 |  | 用于存储最小Microsoft Edge的目录。   (仅在 Linux.)  |
 | mobileEmulation | 字典 |  | 值为 的字典， `deviceName` 或和 `deviceMetrics` 的值 `userAgent` 。 |
 | perfLoggingPrefs | 字典 |  | 指定性能日志记录首选项的可选字典。  有关详细信息，请导航到 [perfLoggingPrefs 对象](#perfloggingprefs-object)。 |
-| prefs | 字典 |  | 包含每个条目的字典，包含首选项的名称和值。  首选项仅适用于使用的用户配置文件。  例如，导航到 `Preferences` Microsoft Edge 的用户数据文件夹中的文件。 |
+| prefs | 字典 |  | 包含每个条目的字典，包含首选项的名称和值。  首选项仅适用于使用的用户配置文件。  例如，导航到 Microsoft Edge 的用户 `Preferences` 数据文件夹中的文件。 |
 | wdpAddress | 字符串 |  | 连接到的Windows门户服务器的地址，例如 `hostname/ip:port` `127.0.0.1:50080` 。  有关详细信息，请导航到"远程[调试 - Windows 10设备"。](../devtools-guide-chromium/remote-debugging/windows.md) |
 | wdpPassword | 字符串 |  | 连接到 Device Portal 服务器时Windows可选密码。  如果服务器已启用身份验证，则必需。 |
 | wdpUsername | 字符串 |  | 连接到 Device Portal 服务器时Windows的可选用户名。  如果服务器已启用身份验证，则必需。 |
@@ -83,8 +81,8 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 |:--- |:--- |:--- |:--- |
 | bufferUsageReportingInterval | 正整数 | 1000 | DevTools 跟踪缓冲区使用事件之间请求的毫秒数。  例如，如果为 1000，则每秒一次，则 DevTools 报告跟踪缓冲区的已满。  如果报告指示缓冲区使用率为 100%，则发出警告。 |
 | enableNetwork | 布尔型 | true | 收集 (或不从) 域收集事件。 |
-| enablePage | 布尔型 | true | 收集 (或不收集) 页面域中的任何事件。 |
-| traceCategories | 字符串 |  (空)  | 一个逗号分隔Microsoft Edge跟踪类别的字符串，应收集跟踪事件。  未指定或空字符串禁用跟踪。 |
+| enablePage | 布尔型 | true | 若要收集 (或不收集) 页面域中的任何事件。 |
+| traceCategories | 字符串 |  (空)  | 应收集其跟踪Microsoft Edge跟踪类别的逗号分隔字符串。  未指定或空字符串禁用跟踪。 |
 
 
 <!-- ====================================================================== -->
@@ -95,4 +93,4 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 | 功能 | 类型 | 详细信息 |
 |:--- |:--- |:--- |
 | msedge.msedgedriverVersion | 字符串 | EdgeDriver 的版本。 |
-| msedge.userDataDir | 字符串 | 用户数据文件夹的路径，该实例Microsoft Edge路径。 |
+| msedge.userDataDir | 字符串 | 用户数据文件夹的路径，该实例Microsoft Edge。 |

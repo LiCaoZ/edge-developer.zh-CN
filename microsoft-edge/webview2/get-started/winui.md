@@ -1,30 +1,29 @@
 ---
-title: 'WinUI 3 应用 SDK (Windows 中的 WebView2) '
+title: 'WinUI 3 应用 SDK (Windows中的 WebView2) '
 description: 适用于 WinUI 3 的 WebView2 (Windows App SDK) 指南。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2、webview2、WebView、webview、winui 应用、winui、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
 ms.date: 11/05/2021
-ms.openlocfilehash: 6771ff6ddd02055bb082d296a4ad0a1deee280e9
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: c7e6e07049d89afc92df3b4e4009546d76fadf4d
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286210"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318945"
 ---
-# <a name="get-started-with-webview2-in-winui-3-windows-app-sdk"></a>WinUI 3 应用 SDK (Windows 中的 WebView2) 
+# <a name="get-started-with-webview2-in-winui-3-windows-app-sdk"></a>WinUI 3 应用 SDK (Windows中的 WebView2) 
 
-本文将开始在 WinUI 3 应用 SDK (Windows创建第一个 WebView2) 。 了解 [WebView2 的主要功能](../index.md)。 有关各个 API 详细信息，请参阅 [API 参考](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)。
+本文将开始在 WinUI 3 和 App SDK (Windows创建第一个 WebView2) 。 了解 [WebView2 的主要功能](../index.md)。 有关各个 API 详细信息，请参阅 [API 参考](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)。
 
 
 ## <a name="step-0---set-up-development-environment"></a>步骤 0 - 设置开发环境
 
 1. 按照设置开发环境的步骤 1-4 安装 Visual Studio、配置 NuGet 程序包源并安装 Windows App SDK Extension for Visual Studio。 [](/windows/apps/project-reunion/set-up-your-development-environment)
 
-1. 安装安装在 Windows 10 版本 1803 (版本 17134 或更高版本) [WebView](https://developer.microsoft.com/microsoft-edge/webview2) [Microsoft Edge 2](https://www.microsoftedgeinsider.com/download)运行时或任何非) 渠道。  有关更新或Windows 10，请参阅Windows[更新：常见问题](https://support.microsoft.com/help/12373)。
+1. 安装安装在 Windows 10 版本 1803 (版本 17134 或更高版本Microsoft Edge [WebView2](https://developer.microsoft.com/microsoft-edge/webview2)运行时或任何非) 渠道。 [](https://www.microsoftedgeinsider.com/download)  有关更新Windows 10或更高版本，请参阅 Windows [Update： FAQ](https://support.microsoft.com/help/12373)。
 
 1.  若要访问所有特定于开发人员Visual Studio功能，请打开开发人员[模式](/windows/uwp/get-started/enable-your-device-for-development)。
 
@@ -50,13 +49,13 @@ ms.locfileid: "12286210"
 
 1. 单击“确定”****。
 
-    :::image type="complex" source="./media/winui-getting-started-project-type.png" alt-text="&quot;新建通用Windows平台Project&quot;对话框，包含&quot;目标版本&quot;和&quot;最低版本&quot;的选定值。" lightbox="./media/winui-getting-started-project-type.png":::
-       "新建通用Windows平台Project"对话框，包含"目标版本"和"最低版本"的选定值。
+    :::image type="complex" source="./media/winui-getting-started-project-type.png" alt-text="&quot;新建通用Windows平台Project对话框，包含&quot;目标版本&quot;和&quot;最低版本&quot;的选定值。" lightbox="./media/winui-getting-started-project-type.png":::
+       "新建通用Windows平台Project对话框，包含"目标版本"和"最低版本"的选定值。
     :::image-end:::
 
     解决方案资源管理器显示生成的两个新项目：
     *   **你的项目名称 (桌面) 。 **  桌面项目包含你的应用的代码。  `App.xaml.cs`该文件定义一个 `Application` 表示应用实例的类。 `MainWindow.xaml.cs`该文件定义一个 `MainWindow` 类，该类表示应用实例显示的主窗口。  这些类派生自 `Microsoft.UI.Xaml` WinUI 命名空间中的类型。
-    *   **你的项目名称 (包) 。 **  包项目是一Windows应用程序打包Project，配置为将应用构建到 MSIX 包中进行部署。 该项目包含应用的程序包清单，并且默认情况下是解决方案的启动项目。 有关详细信息，请参阅在 Visual Studio 中为[MSIX](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net)打包设置桌面应用程序[Windows 10。](/uwp/schemas/appxpackage/uapmanifestschema/schema-root)
+    *   **你的项目名称 (包) 。 **  包项目是一Windows应用程序打包Project，配置为将应用构建到 MSIX 包中进行部署。 该项目包含应用的程序包清单，并且默认情况下是解决方案的启动项目。 有关详细信息，请参阅在 Visual Studio 中为[MSIX](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net)打包设置桌面应用程序和程序包[清单架构Windows 10。](/uwp/schemas/appxpackage/uapmanifestschema/schema-root)
 
 1.  在"解决方案资源管理器"中， `MainWindow.xaml` 打开 文件以显示代码。
 
@@ -121,7 +120,7 @@ ms.locfileid: "12286210"
         // myButton.Content = "Clicked";
     ```
 
-1.  单击 **"**  >  **文件""保存 (Ctrl+Shift+S) **"以保存项目。
+1.  单击 **"**  >  **文件""保存 (Ctrl+Shift+S) ，** 以保存项目。
 
 1.  按 **F5**生成并运行项目。
 

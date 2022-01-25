@@ -5,18 +5,17 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， 扩展
 ms.date: 09/24/2020
-ms.openlocfilehash: 87b4f147fc8f25076faa27e5e52298dfe02501dd
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 2bc2ef3be58d5a80f1660122d9aa59a98fb9a18e
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284964"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320765"
 ---
 # <a name="sideload-an-extension"></a>旁加载扩展
 
-在开发期间，可以使用Microsoft Edge浏览器安全地运行和调试扩展。  通过在你的浏览器中本地旁加载扩展，你可以运行和测试扩展。  本文介绍如何将扩展旁加载到Microsoft Edge。
+在开发过程中，可以使用 Microsoft Edge 安全运行和调试扩展。  通过在你的浏览器中本地旁加载扩展，你可以运行和测试扩展。  本文介绍如何将扩展旁加载到Microsoft Edge。
 
 旁加载扩展：
 

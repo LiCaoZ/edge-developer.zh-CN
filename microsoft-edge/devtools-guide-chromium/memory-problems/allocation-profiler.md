@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: fe9a583c01aee68442375e208dc4204aa1da428b
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: c001dd4d35d933b3385499dffb9ab03afc655632
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285062"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320324"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -40,7 +39,7 @@ ms.locfileid: "12285062"
 <!--todo: add profile memory problems (heap profiler) section when available  -->
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->
 
-**时间线上的分配检测** 在整个记录过程中定期获取堆快照 (频率与记录结束时每 50 毫秒) 一个最终快照的频率一样。
+**时间线上的分配检测** 在整个记录过程中定期获取堆快照 (频率与记录结束时每 50 毫秒) 一次最终快照的频率一样。
 
 :::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="日程表上的分配检测" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
    **日程表上的分配检测**

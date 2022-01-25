@@ -1,25 +1,24 @@
 ---
 title: 处理渐进式 Web 应用中的协议
-description: 如何将你的 PWA注册为协议处理程序，以将其与其他应用程序在操作系统中深入集成。
+description: 如何将你的 PWA注册为协议处理程序，以将其与其他应用程序更加深入地集成在操作系统中。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， 协议
 ms.date: 01/12/2022
-ms.openlocfilehash: 734e1393eb6efa42340783adfd071dd5d2aaa138
-ms.sourcegitcommit: c85f78b0372ea32fcadfc1d48e94a98f5bc58b4a
+ms.openlocfilehash: 2590aed5ae88bdc0779ce7c9bd6865a5a84fcb60
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "12311206"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319197"
 ---
 # <a name="handle-protocols-in-progressive-web-apps"></a>处理渐进式 Web 应用中的协议
 
 为了创建更具吸引力的体验，渐进式 Web 应用可以处理多个协议。  统一资源定位 (URL) 是一个字符串，客户端可标识 Web 上的资源。 URL 的第一部分是 _协议_，如 或 `http` `mailto` ，它可让客户端了解如何检索资源。
 
-使用协议处理，PWA时，PWA注册以处理某些允许的协议。  例如，电子邮件客户端应用可以注册以处理协议，或者地理位置 `mailto` 应用可以注册以处理 `geo` 协议。
+使用协议处理，PWA时，PWA可以注册以处理某些允许的协议。  例如，电子邮件客户端应用可以注册以处理协议，或者地理位置 `mailto` 应用可以注册以处理 `geo` 协议。
 
 如果自定义协议注册以前缀开头PWA，也可以处理 `web+` 自定义协议。
 

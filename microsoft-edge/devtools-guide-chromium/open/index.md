@@ -1,18 +1,17 @@
 ---
 title: 打开 Microsoft Edge DevTools
-description: 在 DevTools 中打开所有Microsoft Edge方法。
+description: 在 DevTools 中可以打开Microsoft Edge所有方法。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 07/01/2021
-ms.openlocfilehash: 0505bebab47305f4b530e06b1028a21f60b032fa
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: c60679788f7e1d4866b87c04945536f1fa8e3770
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286882"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319946"
 ---
 <!-- Copyright Kayce Basques
 
@@ -38,10 +37,10 @@ ms.locfileid: "12286882"
 若要打开 DevTools，请使用以下任一选项。
 
 *   使用 Microsoft Edge UI。
-    *  选择 **"设置更多工具开发人员** () ">"图标。 `...` ****  >   ****
+    *  选择 **"设置工具" () ">** 工具"图标和 `...` ****  >   **更多选项**。
 
 *   使用键盘。
-    *   按 `F12` 或 `Control` + `Shift` + `I` (Windows Linux) 或 `Command` + `Option` + `I` (macOS) 。
+    *   按 `F12` 或 `Control` + `Shift` + `I` (Windows Linux) 或 (`Command` + `Option` + `I` macOS) 。
 
 请参阅 [键盘快捷方式](../shortcuts/index.md)。
 
@@ -71,13 +70,13 @@ ms.locfileid: "12286882"
 <!-- ====================================================================== -->
 ## <a name="open-the-previous-panel"></a>打开上一个面板
 
-若要跳转到之前打开的面板，请按 `Control` + `Shift` + `I` (Windows、Linux) 或 (`Command` + `Option` + `I` macOS) 。  请参阅 [键盘快捷方式](../shortcuts/index.md)。
+若要跳转到之前打开的面板，请按 `Control` + `Shift` + `I` (Windows、Linux) 或 `Command` + `Option` + `I` (macOS) 。  请参阅 [键盘快捷方式](../shortcuts/index.md)。
 
 
 <!-- ====================================================================== -->
 ## <a name="auto-open-devtools-on-every-new-tab"></a>自动打开每个新选项卡上的 DevTools
 
-若要自动打开每个新选项卡上的 DevTools，Microsoft Edge命令行中打开"开发工具"并传递 `--auto-open-devtools-for-tabs` 标志。
+若要自动打开每个新选项卡上的 DevTools，请从Microsoft Edge打开"开发工具"并传递 `--auto-open-devtools-for-tabs` 标志。
 
 ### [<a name="cmd-windows"></a>CMD (Windows) ](#tab/cmd-Windows/)
 

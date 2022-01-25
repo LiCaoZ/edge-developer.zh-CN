@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge、web 开发、f12 工具、开发工具
 ms.date: 05/04/2021
-ms.openlocfilehash: 715d2732c9ed05228117f8913567668fabcedb5a
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 7a01d5cb141526c34996a8196976a0b481efe137
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284362"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320513"
 ---
 <!-- Copyright Kayce Basques
 
@@ -52,7 +51,7 @@ ms.locfileid: "12284362"
     https://microsoft-edge-chromium-devtools.glitch.me/sluggish/
     ```
 
-1.  选择 `Control` + `Shift` + `I` (Windows、Linux) 或 `Command` + `Option` + `I` (macOS) 打开 DevTools。
+1.  选择 `Control` + `Shift` + `I` (Windows、Linux) 或 (`Command` + `Option` + `I` macOS) 打开 DevTools。
 
     :::image type="complex" source="../media/evaluate-performance-get-started-side-by-side.msft.png" alt-text="左侧为演示，右侧为 DevTools" lightbox="../media/evaluate-performance-get-started-side-by-side.msft.png":::
        左侧为演示，右侧为 DevTools
@@ -149,7 +148,7 @@ ms.locfileid: "12284362"
 
 另一个非常方便的工具是 FPS 计数，可在页面运行时提供对 FPS 的实时估计。
 
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
+1.  选择 `Control`+`Shift`+`P` (Windows、Linux)或 `Command`+`Shift`+`P` (macOS)以打开 **命令菜单**。
 1.  在**命令菜单**中开始键入`Rendering`，然后选择**显示渲染**.
 1.  在呈现**工具** 中，打开 **FPS 指示器**。  新的叠加层将显示在视线的右上角。
 
@@ -229,7 +228,7 @@ ms.locfileid: "12284362"
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.
 To learn more, navigate to [Measure Performance With The RAIL Model](https://developers.google.com/web/fundamentals/performance/rail). -->
 
-为了更加熟悉**性能**工具，需要多加练习。  试着对页面进行剖析并分析结果。  如果你对结果有任何疑问，请使用发送反馈图标，选择**** `Alt` + `Shift` + `I` (Windows、Linux) 、选择 (macOS) 或 `Option` + `Shift` + `I` [DevTools](https://twitter.com/intent/tweet?text=@EdgeDevTools)团队推文。  如果可能，请包括屏幕截图或指向可重现页面的链接。
+为了更加熟悉**性能**工具，需要多加练习。  试着对页面进行剖析并分析结果。  如果你对结果有任何疑问，请使用发送反馈图标，选择**** `Alt` + `Shift` + `I` (Windows、Linux) 、选择 (macOS) 或 `Option` + `Shift` + `I` [DevTools](https://twitter.com/intent/tweet?text=@EdgeDevTools)团队的推文。  如果可能，请包括屏幕截图或指向可重现页面的链接。
 
 :::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="Microsoft Edge 开发人员工具中的**反馈**图标" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
    Microsoft Edge DevTools 中的**发送反馈**图标

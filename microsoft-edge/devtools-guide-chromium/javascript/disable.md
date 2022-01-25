@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: 1b18415fab8d6c925749eeb22a554c5894dbc24a
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: f9fa89e121b18fd01c4aeed6a2dcbf1c3ae6ef00
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285076"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319736"
 ---
 <!-- Copyright Kayce Basques
 
@@ -34,7 +33,7 @@ ms.locfileid: "12285076"
 完成以下操作以检查网页在关闭 JavaScript 时如何显示和行为。
 
 1.  [打开 Microsoft Edge DevTools](../open/index.md)。
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
+1.  选择 `Control`+`Shift`+`P` (Windows、Linux)或 `Command`+`Shift`+`P` (macOS)以打开 **命令菜单**。
 
     :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="命令菜单" lightbox="../media/javascript-console-command.msft.png":::
        **命令菜单**

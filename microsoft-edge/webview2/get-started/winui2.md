@@ -1,23 +1,22 @@
 ---
-title: '使用 WinUI 2 中的 WebView2 (UWP) 应用 (公共预览) '
+title: '使用 WinUI 2 中的 WebView2 (UWP) 应用 (公共预览版) '
 description: 适用于 WinUI 2 应用的 WebView2 入门指南。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2、webview2、WebView、webview、winui 应用、winui、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
 ms.date: 11/05/2021
-ms.openlocfilehash: 0a39c599e66051576693c341d2811f336a3ab5d5
-ms.sourcegitcommit: 44a533400bc5562a14d3c34413421c515b3936a6
+ms.openlocfilehash: 94c7e56638a67d5e5162b7d45040d0ad6a7272d8
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "12293050"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319610"
 ---
-# <a name="get-started-with-webview2-in-winui-2-uwp-apps-public-preview"></a>使用 WinUI 2 中的 WebView2 (UWP) 应用 (公共预览) 
+# <a name="get-started-with-webview2-in-winui-2-uwp-apps-public-preview"></a>使用 WinUI 2 中的 WebView2 (UWP) 应用 (公共预览版) 
 
-本文将开始在 WinUI 2 和 UWP () 创建第一个 WebView2 应用，并了解 WebView2 的主要功能。 有关单个 WebView2 API 的信息，请参阅 Microsoft Edge [WebView2 API 参考](../webview2-api-reference.md)，然后选择 WinRT 引用链接。 请注意，WinUI2 仅支持 UWP。
+本文将开始在 WinUI 2 和 UWP () 创建第一个 WebView2 应用，并了解 WebView2 的主要功能。 有关各个 WebView2 API 的信息，请参阅 Microsoft Edge [WebView2 API 参考](../webview2-api-reference.md)，然后选择 WinRT 引用链接。 请注意，WinUI2 仅支持 UWP。
 
 > [!NOTE]
 > [WinUI 2 程序包](https://www.nuget.org/packages/Microsoft.UI.Xaml/2.8.0-prerelease.210927001)依赖预发布 WebView2 程序包。 为了完全实现 API 兼容性，请使用预览浏览器通道作为运行时，如预览版的 Beta、Dev 或 Canary Microsoft Edge。
@@ -32,7 +31,7 @@ ms.locfileid: "12293050"
 > * 打印预览
 > * 将 COM 对象 (WinRT AddHostObject) 
 > * Playready DRM
-> * 20H2 Windows设备上的服务工作人员
+> * 20H2 Windows之前的设备上的服务工作人员
 
 ## <a name="step-0---prerequisites"></a>步骤 0 - 先决条件
 
@@ -51,9 +50,9 @@ ms.locfileid: "12293050"
 
 1.  单击 **"使用 C++ 进行桌面开发"。**
 
-1.  单击**通用Windows平台开发**。
+1.  单击**通用Windows平台开发。**
 
-1. 在右侧，展开安装**** 详细信息  >  **通用 Windows 平台开发**，然后单击**C++ (v142) 通用**Windows 平台工具。
+1. 在右侧，展开"**** 安装详细信息通用  >  **Windows平台开发**"，然后单击 **"C++ (v142) 通用Windows工具"。**
 
     :::image type="complex" source="media/winui2-getting-started-install-workloads.png" alt-text="修改 Visual Studio 2019 对话框显示卡片和安装详细信息。" lightbox="media/winui2-getting-started-install-workloads.png":::
        修改 Visual Studio 2019 对话框显示卡片和安装详细信息。 包含通用 Windows 平台开发显示和可选项目的安装详细信息。
@@ -74,13 +73,13 @@ ms.locfileid: "12293050"
 
 1.  在应用模板列表中，单击"空白**应用 (通用Windows) "。 **
 
-    :::image type="complex" source="media/winui2-getting-started-create-project.png" alt-text="&quot;创建新项目&quot;对话框将显示空白应用 (通用窗口) 卡片。" lightbox="media/winui2-getting-started-create-project.png":::
+    :::image type="complex" source="media/winui2-getting-started-create-project.png" alt-text="&quot;创建新项目&quot;对话框将显示空白应用 (通用) 卡片。" lightbox="media/winui2-getting-started-create-project.png":::
        将显示"新建项目"对话框。 筛选条件以红色突出显示。 通用 windows (卡) 空白应用以红色突出显示。
     :::image-end:::
 
 1.  单击“下一步”****。
 
-    "**配置新项目"对话框**将显示，对于"空白应用" (**通用Windows) 。 **
+    "**配置新项目"对话框**将显示"空白应用 (**通用Windows) "。 **
 
 1.  在 **"Project**名称"文本框中，输入项目名称，如 `UWPSampleProject` 。
 
@@ -112,8 +111,8 @@ ms.locfileid: "12293050"
 
 1.  在"**搜索"** 框中，输入 `Microsoft.UI.Xaml` ，然后选择 **"Microsoft.UI.Xaml"。**  确保"**版本"** 是最新的预发行版本，然后选择"安装 **"。**
 
-    :::image type="complex" source="media/winui2-nuget-package.msft.png" alt-text="NuGet包管理器" lightbox="media/winui2-nuget-package.msft.png":::
-       NuGet包管理器
+    :::image type="complex" source="media/winui2-nuget-package.msft.png" alt-text="程序包NuGet包管理器" lightbox="media/winui2-nuget-package.msft.png":::
+       程序包NuGet包管理器
     :::image-end:::
 
     将显示 **"预览** 更改"对话框。
@@ -159,7 +158,7 @@ ms.locfileid: "12293050"
        网格在调试期间短暂显示。
     :::image-end:::
 
-1.  片刻之后，应用窗口在 WebUI 必应 WebUI 2 的 WebView2 控件中显示网站。
+1.  片刻之后，应用窗口在 WebUI 2 必应 WebView2 控件中显示网站。
 
     :::image type="complex" source="media/winui2-getting-started-webview2-with-content.png" alt-text="示例应用显示必应网站。" lightbox="media/winui2-getting-started-webview2-with-content.png":::
        具有 WebView2 控件的示例应用将显示必应 http://www.bing.com 网站。

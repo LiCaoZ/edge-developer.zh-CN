@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: 1bd515fb93322f8ad4a9858587fe78a631395282
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 75e8e28d64ef9acbd6004a7d8da13c379e2882ea
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284285"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320142"
 ---
 <!-- Copyright Kayce Basques
 
@@ -86,7 +85,7 @@ console.log('c');
 1.  选择“**源**”工具。
 1.  打开包含要中断的代码行的文件。
 1.  转到代码行。
-1.  代码行的左侧是行号列。  将鼠标悬停在行号上并打开上下文菜单 (右键单击) 。
+1.  代码行的左侧是行号列。  将鼠标悬停在行号上并打开上下文菜单 (右键单击") "。
 1.  选择“**添加条件断点**”。  代码行下方将显示一个对话框。
 1.  在对话框中输入条件。
 1.  选择 `Enter` 以激活断点。  行号列旁边的图标。
@@ -104,8 +103,8 @@ console.log('c');
 :::image-end:::
 
 *   选中条目旁边的复选框以禁用该断点。
-*   将鼠标悬停在某个条目上并打开上下文菜单 (右键单击) 删除该断点。
-*   将鼠标悬停在"**** 断点"窗格中的任意位置并打开上下文菜单 (右键单击") "停用所有断点、禁用所有断点或删除所有断点。  禁用所有断点等效于取消选中每个断点。  取消激活所有断点将指示开发工具忽略所有代码行断点，但也要保持启用状态，以使每个断点都与重新激活每个断点时的状态相同。
+*   将鼠标悬停在某个项上并打开上下文菜单 (右键单击) 删除该断点。
+*   将鼠标悬停在"**** 断点"窗格中的任意位置，然后打开上下文菜单 (右键单击") "以停用所有断点、禁用所有断点或删除所有断点。  禁用所有断点等效于取消选中每个断点。  取消激活所有断点将指示开发工具忽略所有代码行断点，但也要保持启用状态，以使每个断点都与重新激活每个断点时的状态相同。
 
     :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="“断点”窗格中的已停用断点" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
        “**断点**”窗格中的已停用断点
@@ -178,7 +177,7 @@ console.log('c');
 想要暂停引发已捕获或未捕获异常的代码行时，请使用异常断点。
 
 1.  选择“**源**”工具。
-1.  选择 **"在异常时暂停" ("** ![ 在异常时 ](../media/pause-on-exceptions-icon.msft.png) 暂停) "。  图标在启用时变为蓝色。
+1.  选择 **"在异常时暂停" ("** ![ 在异常时暂停 ](../media/pause-on-exceptions-icon.msft.png)) "。  图标在启用时变为蓝色。
 
     :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="“因异常暂停”按钮" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
        “**因异常暂停**”按钮

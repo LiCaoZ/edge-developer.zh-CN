@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 12/16/2021
-ms.openlocfilehash: 79d0b92254c5a68a42ed572edb1d8228244bbc69
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 10961a01eed441bc34dd554d970cb3145f2b2efc
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284355"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320912"
 ---
 # <a name="analyze-html-pages-using-the-inspect-tool"></a>使用 Inspect 工具分析 HTML 页面
 

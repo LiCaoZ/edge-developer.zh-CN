@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium， 扩展开发， 浏览器扩展， 加载项， 合作伙伴中心， 开发人员
 ms.date: 02/17/2021
-ms.openlocfilehash: a6eec619bb116a13d234caf9a674551b8a04bc44
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: bbe82f275bbe8c6753d32ecf994ea66c58f43cf1
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12287190"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318833"
 ---
 # <a name="alternative-ways-to-distribute-extensions"></a>分发扩展的替代方法
 
@@ -36,7 +35,7 @@ ms.locfileid: "12287190"
 
 1.  文件的文件 `.crx` 路径或扩展 `update_URL` 名的 。
 1.  扩展的版本。  版本信息在清单文件中提供，或在加载打包扩展Microsoft Edge在 中 `edge://extensions` 提供。
-1.  扩展的 ID。  在加载打包扩展Microsoft Edge `edge://extensions` ID 信息可在 以下版本获取。
+1.  扩展的 ID。  在加载打包扩展后，Microsoft Edge ID `edge://extensions` 信息位于 以下版本。
 
 > [!NOTE]
 > 以下示例使用 `1.0` 作为 版本 和 `aaaaaaaaaabbbbbbbbbbcccccccccc` 作为 ID。
@@ -62,11 +61,11 @@ ms.locfileid: "12287190"
     > [!NOTE]
     > 如果要从客户端安装扩展Chrome Web Store，将 的值 `update_url` 设置为 `https://clients2.google.com/service/update2/crx` 。
 
-1.  导航到 ，验证扩展Microsoft Edge中列出的扩展 `edge://extensions` 。
+1.  导航到 ，验证扩展Microsoft Edge中列出的 `edge://extensions` 扩展。
 
 
 <!-- ====================================================================== -->
-## <a name="use-a-preferences-json-file-macos-and-linux"></a>将首选项 JSON 文件 (macOS 和 Linux) 
+## <a name="use-a-preferences-json-file-macos-and-linux"></a>在 macOS 和 Linux (使用首选项 JSON) 
 
 若要使用首选项 JSON 文件分发扩展名，请执行以下步骤。
 
@@ -124,7 +123,7 @@ ms.locfileid: "12287190"
     }
     ```
 
-1.  通过导航到 ，验证扩展Microsoft Edge安装于 中 `edge://extensions` 。
+1.  导航到 ，验证扩展Microsoft Edge安装于 中 `edge://extensions` 。
 
 
 <!-- ====================================================================== -->

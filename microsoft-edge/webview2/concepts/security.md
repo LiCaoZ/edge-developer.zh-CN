@@ -6,14 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html、安全性
 ms.date: 10/14/2020
-ms.openlocfilehash: 8963f8811375404de5cb872421dd6738eceba5f7
-ms.sourcegitcommit: f8423351b06b5c7bb0bb8e90cc38572242e13ac0
+ms.openlocfilehash: ae0f5711c6939dc52a23e7f96cab16f10c21b9fa
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "12293836"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319603"
 ---
 # <a name="best-practices-for-developing-secure-webview2-applications"></a>开发安全 WebView2 应用程序的最佳方案
 
@@ -27,7 +26,7 @@ ms.locfileid: "12293836"
 
 *  设计特定的 Web 消息和主机对象交互，而不是使用泛型代理。
 
-*  设置以下选项，通过修改 [ICoreWebView2Settings (Win32 ](/microsoft-edge/webview2/reference/win32/icorewebview2settings)) 或 [CoreWebView2Settings (.NET) ](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)来限制 Web 内容功能：
+*  设置以下选项以通过修改 [ICoreWebView2Settings (Win32 ](/microsoft-edge/webview2/reference/win32/icorewebview2settings)) 或 [CoreWebView2Settings (.NET) ](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)来限制 Web 内容功能：
 
     *  如果不希望 Web 内容访问主机对象，则设置为 `AreHostObjectsAllowed` `false` 。
 
@@ -41,7 +40,7 @@ ms.locfileid: "12293836"
 
     *  若要阻止应用程序导航到特定页面，请使用 和 事件检查页面或框架导航，然后有条件 `NavigationStarting` `FrameNavigationStarting` 地阻止导航。
 
-    *  导航到新页面时，你可能需要调整 [ICoreWebView2Settings (Win32) ](/microsoft-edge/webview2/reference/win32/icorewebview2settings) 或 [CoreWebView2Settings (.NET) ](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)上的属性值，如前面所述。
+    *  导航到新页面时，可能需要调整 [ICoreWebView2Settings (Win32) ](/microsoft-edge/webview2/reference/win32/icorewebview2settings) 或 [CoreWebView2Settings (.NET) ](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)上的属性值，如前面所述。
 
 *  导航到新文档时，请使用 `ContentLoading` 事件并 `RemoveHostObjectFromScript` 删除公开的主机对象。
 

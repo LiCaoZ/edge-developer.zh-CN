@@ -6,18 +6,17 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2、webview2、WebView、webview、wpf 应用、wpf、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET
 ms.date: 11/05/2021
-ms.openlocfilehash: e59ac172cd8457ba2b1502bf5eca17f76d5a8036
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: f9cfd37c1fea0837691e6e76525f96053d24b627
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12287043"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318819"
 ---
 # <a name="get-started-with-webview2-in-wpf-apps"></a>WPF 应用中的 WebView2 入门
 
-在本文中，开始在 WPF Windows Presentation Foundation (创建第一) WebView2 应用，并了解[WebView2 的主要功能](https://developer.microsoft.com/microsoft-edge/webview2)。 有关各个 API 详细信息，请参阅 [API 参考](/dotnet/api/microsoft.web.webview2.wpf)。
+在本文中，开始在 WPF Windows Presentation Foundation (WPF) 创建第一个 WebView2 应用，并了解[WebView2 的主要功能](https://developer.microsoft.com/microsoft-edge/webview2)。 有关各个 API 详细信息，请参阅 [API 参考](/dotnet/api/microsoft.web.webview2.wpf)。
 
 
 <!-- ====================================================================== -->
@@ -27,7 +26,7 @@ ms.locfileid: "12287043"
 
 1.  [Visual Studio](https://visualstudio.microsoft.com) 2017 或更高版本。
 
-1.  [WebView2](https://developer.microsoft.com/microsoft-edge/webview2)运行时 ，或任何 Microsoft Edge [Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta、Dev 或 Canary) 安装在受支持的操作系统 (OS) 。 当前受支持的操作系统列表是 Windows 11、Windows 10、Windows 8.1 和 Windows 7。
+1.  [WebView2](https://developer.microsoft.com/microsoft-edge/webview2)运行时，或任何 Microsoft Edge [Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta、Dev 或 Canary) 安装在受支持的操作系统 (OS) 。 当前支持的操作系统列表是 Windows 11、Windows 10、Windows 8.1 和 Windows 7。
 
     > [!NOTE]
     > WebView2 团队建议使用 Canary 通道，最低要求版本为 82.0.488.0。
@@ -40,21 +39,21 @@ ms.locfileid: "12287043"
 
 1.  打开 Microsoft Visual Studio。 
 
-1.  在打开的面板中，**单击"新建**项目"，或在应用程序中**单击"新建**  >  ****  >  **Project"。**
+1.  在打开的面板中，单击 **"新建**项目"，或在应用程序中单击 **"文件**""新建  >  ****  >  **Project"。**
 
 1. 搜索 WPF 应用。
  
-1. 单击**WPF 应用 A0.NET 核心) ****或 WPF 应用 (.NET Framework) **卡。
+1. 单击**WPF 应用 (.NET Core) **或**WPF 应用 (.NET Framework) **卡。
 
     :::image type="complex" source="./media/wpf-getting-started-wpf-core.png" alt-text="创建新项目面板将显示 WPF 应用搜索结果，包括 WPF 核心卡。":::
-      创建新项目面板将显示 WPF 应用搜索结果。 突出显示的按钮是 WPF 应用 .NET core Windows Presentation Foundation客户端应用程序，C#、XAML、Windows桌面。 该对话框显示下一个按钮。
+      创建新项目面板将显示 WPF 应用搜索结果。 突出显示的按钮是 WPF 应用 .NET core Windows Presentation Foundation客户端应用程序，C#、XAML、Windows和桌面。 该对话框显示下一个按钮。
     :::image-end:::
 
     :::image type="complex" source="./media/wpf-getting-started-wpf-fw.png" alt-text="创建新项目面板将显示 WPF 应用搜索结果，包括 WPF 框架卡。":::
       创建新项目面板将显示 WPF 应用搜索结果。 突出显示的按钮是 WPF 应用 .NET core Windows Presentation Foundation客户端应用程序，C#、Windows桌面。 该对话框显示下一个按钮。
           :::image-end:::
 
-1.  对于 **"WPF 应用 A0.NET 核心) **输入名称Project**位置**的值****，然后单击"下一步 **"。**
+1.  对于**WPF 应用 (.NET Core) ****输入**名称Project**位置**的值，然后单击下一**步**。
 
     :::image type="complex" source="./media/wpf-getting-started-create-core.png" alt-text="配置新项目 WPF 应用程序对话框将显示项目名称、位置和解决方案名称文本框。":::
       配置新项目 WPF 应用程序对话框将显示项目名称、位置和解决方案名称文本框。 对话框显示"后退"和"下一步"按钮。
@@ -66,7 +65,7 @@ ms.locfileid: "12287043"
           "其他信息"对话框显示目标框架的下拉菜单。 选项为 .NET core 3.0、3.1。 和 5.0。 对话框显示后退并创建按钮。
         :::image-end:::
 
-1. 对于**WPF 应用 (.NET Framework) **输入 Project**和** **Location**的值，然后选择".NET Framework **4.6.2**或更高版本"。
+1. 对于**WPF 应用 (.NET Framework) **输入"Project位置****"的值，然后选择".NET Framework **** **4.6.2**或更高版本"。
  
     :::image type="complex" source="./media/wpf-getting-started-create-fw.png" alt-text="配置新项目 WPF 应用 .NET framework 对话框显示项目名称、位置和解决方案名称文本框。":::
       配置新项目 WPF 应用 .NET framework 对话框显示项目名称、位置和解决方案名称文本框。 框架下拉菜单显示 .NET framework 版本，包括 4.6.1 和 4.7.2。 该对话框显示后退并创建按钮。
@@ -90,7 +89,7 @@ ms.locfileid: "12287043"
 
 1.  单击**浏览**。 在搜索栏中，键入 `Microsoft.Web.WebView2` ，然后选择 **"Microsoft.Web.WebView2"。**
 
-    :::image type="complex" source="./media/install-nuget.png" alt-text="NuGet包管理器&quot;对话框显示 Microsoft.Web.WebView2 卡。" lightbox="./media/install-nuget.png":::
+    :::image type="complex" source="./media/install-nuget.png" alt-text="NuGet程序包管理器&quot;对话框显示 Microsoft.Web.WebView2 卡。" lightbox="./media/install-nuget.png":::
        The NuGet package manager dialog box displays search results including Microsoft.Web.WebView2 card. 该对话框显示版本和安装按钮。
     :::image-end:::
 
@@ -249,7 +248,7 @@ ms.locfileid: "12287043"
     > 请确保在地址栏中输入完整 URL。 如果 URL 不以 或 为起始， `ArgumentException` 则应用将 `http://` 生成 `https://` 。
 
     :::image type="complex" source="./media/wpf-getting-started-bing.png" alt-text="应用显示必应网站。":::
-       示例应用在地址必应 URL https://www.bing.com 显示网站。
+       示例应用程序在地址必应 URL https://www.bing.com 显示网站。
     :::image-end:::
 
 
@@ -302,7 +301,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 在构造函数中 `EnsureHttps` ，注册为 WebView2 控件上事件 `NavigationStarting` 的事件处理程序。
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -333,7 +332,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
     }
     ```
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -406,7 +405,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
     }
     ```
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
 
 1.  按 **F5** 生成并运行项目。
 

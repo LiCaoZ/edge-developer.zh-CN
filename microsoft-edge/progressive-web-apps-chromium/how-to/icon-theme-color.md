@@ -6,18 +6,17 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用， PWA， 边缘， Windows， 主题， 颜色， 图标
 ms.date: 09/27/2021
-ms.openlocfilehash: 46e07e48145cd38e6e4eecb2e25288ab199f1549
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 9d9299c74718bab288883e8e007dfe17c2bcd287
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285258"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319330"
 ---
 # <a name="define-icons-and-a-theme-color"></a>定义图标和主题颜色
 
-可以按照安装在操作系统Windows操作系统或操作系统中的 PA 的方式自定义安装在 (操作系统) 。  一PWA定义标题栏的一组图标和主题颜色。
+可以按照安装在操作系统Windows操作系统或操作系统中的 PA 进行自定义 (操作系统) 。  一PWA可以定义标题栏的一组图标和主题颜色。
 
 
 <!-- ====================================================================== -->
@@ -73,7 +72,7 @@ ms.locfileid: "12285258"
 <!-- ====================================================================== -->
 ## <a name="choose-a-theme-color"></a>选择主题颜色
 
-在Windows，PWA 具有自己的应用程序窗口，其中包含应用名称和系统关闭、最大化和最小化图标**的标题栏。** **** ****
+在Windows，PWA 具有自己的应用程序窗口，其中包含应用名称和系统关闭、最大化和最小化**图标**的标题栏。 **** ****
 
 由模板创建的 web PWA填充窗口的整个图面区域，标题栏区域除外，可以使用主题颜色自定义该区域。
 

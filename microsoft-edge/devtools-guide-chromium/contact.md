@@ -1,23 +1,22 @@
 ---
 title: 联系 Microsoft Edge DevTools 团队
-description: 与开发人员Microsoft Edge联系，以提交有关针对开发人员进行开发的功能请求或错误Microsoft Edge。
+description: 与开发人员Microsoft Edge联系以提交有关针对开发人员进行开发的功能请求或 bug Microsoft Edge。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 09/29/2021
-ms.openlocfilehash: 9e0e7f38b80cc5d209af704945e9a43faf2da1e1
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: e41adb815b866832ab71e9a7c9f8940f64b89230
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284789"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318889"
 ---
 # <a name="contact-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge DevTools 团队
 
-发送反馈以帮助改进Microsoft Edge开发工具。  请与 Microsoft Edge开发人员工具团队联系，以提交有关针对开发人员进行开发的功能请求或Microsoft Edge。
+发送反馈以帮助改进Microsoft Edge开发人员工具。  请与 Microsoft Edge开发人员工具团队联系，以提交有关针对开发人员进行开发的功能请求或Microsoft Edge。
 
 有几种方法可以与开发人员工具团队Microsoft Edge联系。
 
@@ -37,7 +36,7 @@ ms.locfileid: "12284789"
 <!-- ====================================================================== -->
 ## <a name="file-a-documentation-issue"></a>提出文档问题
 
-若要在GitHub中输入问题，请在文章底部的"反馈"部分，选择****"**此页面"** 按钮。
+若要在GitHub输入问题，请在文章底部的"反馈"部分，选择"******此页面"** 按钮。
 
 或者，[您可以直接](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback])在存储库Microsoft Edge开发人员文档 `edge-developer` 提交问题。
 
@@ -45,7 +44,7 @@ ms.locfileid: "12284789"
 <!-- ====================================================================== -->
 ## <a name="send-a-tweet-to-edgedevtools"></a>向 EdgeDevTools 发送推文
 
-Microsoft Edge DevTools 具有一个[EdgeDevTools Twitter 帐户，该帐户](https://twitter.com/EdgeDevTools)具有新闻。  有关在开发工具中Microsoft Edge开发，你可以向 [ @EdgeDevTools](https://twitter.com/intent/tweet?text= @EdgeDevTools) 。
+Microsoft Edge DevTools 有一个[EdgeDevTools Twitter 帐户，该帐户](https://twitter.com/EdgeDevTools)具有新闻。  有关使用开发人员工具在 Microsoft Edge 开发，你可以向 [ @EdgeDevTools](https://twitter.com/intent/tweet?text= @EdgeDevTools) 。
 
 
 <!-- ====================================================================== -->

@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: bbd076487ef6bed7dd69b76afe8bb98e3a800226
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 2e584d5550a04c587a7a2d3176bdbbb4e81e3265
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285055"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318777"
 ---
 <!-- Copyright Kayce Basques
 
@@ -95,7 +94,7 @@ ms.locfileid: "12285055"
 
 1.  选择 **"源**"工具，然后在左上角的****"导航器"窗格中，选择"**页面"** 选项卡。
 
-1.  单击"**页面** (") "按钮的"更多选项"，然后选择"按**文件夹分组"。** ****
+1.  单击"**页面**" (...) "按钮的"更多选项"，然后选择"按**文件夹分组"。** ****
 
     :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="&quot;源&quot;工具的&quot;导航器&quot;窗格中的&quot;页面&quot;选项卡" lightbox="../media/resources-sources-page-empty.msft.png":::
        " **源** "工具的"导航 **器"** 窗格中的" **页面"** 选项卡

@@ -1,19 +1,18 @@
 ---
 title: 处理渐进式 Web 应用中的文件
-description: 如何将你的PWA注册为文件处理程序，以将其更深入地集成到操作系统中。
+description: 如何将你的 PWA注册为文件处理程序，以将其更深入地集成到操作系统中。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: 渐进式 Web 应用， PWA， Edge， JavaScript， 文件
 ms.date: 09/01/2021
-ms.openlocfilehash: 32a53c89d933d89aa1076eb3b3e7eae20dcf4017
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 3346430123edecb2491cbe7b8458edcb807654e1
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284103"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319211"
 ---
 # <a name="handle-files-in-progressive-web-apps"></a>处理渐进式 Web 应用中的文件
 
@@ -21,7 +20,7 @@ ms.locfileid: "12284103"
 
 网站已允许用户使用 或 拖放上传 [ `<input type="file">` ](https://developer.mozilla.org/docs/Web/API/File/Using_files_from_web_applications)文件，但 PWA 进一步操作，并可在操作系统上注册为文件处理程序。
 
-当PWA注册为某些文件类型的文件处理程序时，操作系统可以在用户打开这些文件时自动启动该应用，Microsoft Word文件的方式类似 `.docx` 。
+当PWA注册为某些文件类型的文件处理程序时，操作系统可以在用户打开这些文件时自动启动该应用，这类似于Microsoft Word文件的方式 `.docx` 。
 
 
 <!-- ====================================================================== -->
@@ -31,7 +30,7 @@ ms.locfileid: "12284103"
 
 若要启用文件处理功能，
 
-1.  转到 `edge://flags` "Microsoft Edge"。
+1.  转到 `edge://flags` Microsoft Edge。
 1.  选择 **"搜索标志** "并键入"文件处理 API"。
 1.  选择 **"默认**  >  **启用重启**  >  **"。**
 
@@ -46,7 +45,7 @@ ms.locfileid: "12284103"
 数组的每个 `file_handlers` 条目都需要有两个属性：
 
 *  `action`：操作系统在启动应用时应导航到的PWA。
-*  `accept`：接受文件类型的对象。 键是 MIME 类型 (，使用通配符符号 接受部分类型，) 接受的文件扩展名数组 `*` 。
+*  `accept`：接受文件类型的对象。 键是 MIME 类型 (，使用通配符符号接受部分类型，) ，值 `*` 是接受的文件扩展名的数组。
 
 请考虑以下示例：
 
@@ -121,7 +120,7 @@ async function handleFiles(files) {
 
 "我的PWA是一款使用文件处理功能处理文件的主要演示 `.gpx` 应用。 若要试用此演示应用的功能：
 
-*  [启用 Microsoft Edge。](#enable-the-file-handling-api)
+*  [在"管理"](#enable-the-file-handling-api)中Microsoft Edge。
 *  转到 ["我的跟踪"](https://captainbrosset.github.io/mytracks/) 并安装应用。
 *  在计算机上下载 GPX 文件。 可以使用此测试 [GPX 文件](https://www.visugpx.com/download.php?id=okB1eM4fzj)。
 *  打开下载的 GPX 文件。

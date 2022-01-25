@@ -6,14 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2、webview2、WebView、webview、winforms 应用、winforms、edge、CoreWebView2、浏览器控件、edge html、入门、入门、.NET、windows 窗体
 ms.date: 11/05/2021
-ms.openlocfilehash: 6cefec3be79d2e70fab70f5f0086a87a49dd1402
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: f8c361f1c97af936a5487f77bab2f2963953e921
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286238"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319491"
 ---
 # <a name="get-started-with-webview2-in-winforms-apps"></a>WinForms 应用中的 WebView2 入门
 
@@ -27,7 +26,7 @@ ms.locfileid: "12286238"
 
 1.  [Visual Studio](https://visualstudio.microsoft.com) 2017 或更高版本。
 
-1.  [WebView2](https://developer.microsoft.com/microsoft-edge/webview2)运行时 ，或任何 Microsoft Edge [Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta、Dev 或 Canary) 安装在受支持的操作系统 (OS) 。 当前受支持的操作系统列表是 Windows 11、Windows 10、Windows 8.1 和 Windows 7。
+1.  [WebView2](https://developer.microsoft.com/microsoft-edge/webview2)运行时，或安装在Microsoft Edge操作系统[ (](https://www.microsoftedgeinsider.com/download)操作系统) 操作系统 (Beta、Dev 或 Canary) 上的预览体验成员 (预览) 。 当前支持的操作系统列表是 Windows 11、Windows 10、Windows 8.1 和 Windows 7。
 
     > [!NOTE]
     > WebView2 团队建议使用 Canary 频道。 最低要求版本为 82.0.488.0。
@@ -43,13 +42,13 @@ ms.locfileid: "12286238"
 
 1.  单击 **"新建项目"。**
 
-    :::image type="content" source="./media/winforms-opening-panel.png" alt-text="打开Visual Studio面板将显示&quot;新建项目&quot;卡片。" lightbox="./media/winforms-opening-panel.png":::
+    :::image type="content" source="./media/winforms-opening-panel.png" alt-text="The Visual Studio opening panel displays the Create a new project card." lightbox="./media/winforms-opening-panel.png":::
 
 1.  选择**C# Windows Forms App (.NET Framework) "，** 然后单击"下一**步"。**
 
     :::image type="content" source="./media/winforms-new-project.png" alt-text="在&quot;创建新项目&quot;面板中，选择&quot;C# > Windows Forms App (.NET Framework) &quot;。" lightbox="./media/winforms-new-project.png":::
 
-1.  输入 name 和**location** Project**值**。  在"**框架**"下拉列表中，.NET Framework **4.7.2**或更高版本。
+1.  输入 name 和**location Project****的值**。  在"**框架**"下拉列表中，.NET Framework **4.7.2**或更高版本。
 
     :::image type="content" source="./media/winforms-start-proj.png" alt-text="填写&quot;配置新项目&quot;面板。" lightbox="./media/winforms-start-proj.png":::
 
@@ -63,7 +62,7 @@ ms.locfileid: "12286238"
 
 1. 在 **"解决方案资源管理器**"中，右键单击项目名称，然后选择"管理NuGet**包"。**
 
-    :::image type="content" source="media/wpf-getting-started-mng-nuget-reduced.png" alt-text="管理 NuGet 程序包。" lightbox="media/wpf-getting-started-mng-nuget.png":::
+    :::image type="content" source="media/wpf-getting-started-mng-nuget-reduced.png" alt-text="管理NuGet包。" lightbox="media/wpf-getting-started-mng-nuget.png":::
 
 1.  单击**浏览**。
 
@@ -102,7 +101,7 @@ ms.locfileid: "12286238"
 1.  在**工具箱中**，单击 **"WebView2 Windows窗体控件"** 展开选项。
 
     > [!NOTE]
-    > 如果使用的是 Visual Studio 2017，默认情况下 **，WebView2**不会显示在工具箱**中**。 若要使**WebView2**显示在工具箱中****，请选择"**** 工具""选项""常规  >  ****  >  ****>"**自动填充工具箱**"设置设置为 `True` 。
+    > 如果使用的是 Visual Studio 2017，则**默认情况下，WebView2**不会显示在工具箱**中**。 若要使**WebView2**显示在工具箱中****，请选择"**** 工具""选项""常规  >  ****  >  ****>"自动填充**工具箱**"设置设置为 `True` 。
 
 1.  将**WebView2 控件**拖到 Windows Forms App。
 
@@ -139,11 +138,11 @@ ms.locfileid: "12286238"
 
 1.  将**TextBox 控件**拖到"Windows"应用。
 
-1.  在"**属性"** 面板中，将 (**名称) ****地址栏"**。
+1.  在"**属性"** 面板中，将" (**名称) ****地址栏"。**
 
-1.  将"**按钮"** 控件拖到"Windows"应用。
+1.  将"**按钮"** 控件拖到"Windows窗体"应用。
 
-1.  在"**属性**"面板中，将 (**名称) ****更改为 goButton**。
+1.  在"**属性"** 面板中，将 (**名称) ****更改为 goButton**。
 
 1.  将 **Text 属性** 更改为 **Go！**
 
@@ -284,7 +283,7 @@ ms.locfileid: "12286238"
 
     在构造函数中 `EnsureHttps` ，注册为 WebView2 控件上事件 `NavigationStarting` 的事件处理程序。
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -313,7 +312,7 @@ ms.locfileid: "12286238"
     }
     ```
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -387,7 +386,7 @@ ms.locfileid: "12286238"
     }
     ```
 
-1. 单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
+1. 单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
 
 1. 按 **F5** 生成并运行项目。
 

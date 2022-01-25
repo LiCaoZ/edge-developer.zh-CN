@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: 4e7af7daa675f31e5cb67a8c170d6a028ba6ebed
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 756137aab688c166ed71a495e1587a849fd2d7f3
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284117"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320527"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -33,7 +32,7 @@ ms.locfileid: "12284117"
 <!-- ====================================================================== -->
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告
 
-以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要随时了解开发人员工具中所有最新且最的功能，请下载[Microsoft Edge 预览](https://www.microsoftedgeinsider.com/download/)频道，并按照 Twitter 上的[Microsoft Edge DevTools 团队进行跟踪](https://twitter.com/EdgeDevTools)。
+以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要随时了解开发人员工具中所有最新且最最好的功能，请下载[Microsoft Edge 预览](https://www.microsoftedgeinsider.com/download/)频道，并按照 Twitter 上的[Microsoft Edge DevTools 团队。](https://twitter.com/EdgeDevTools)
 
 ### <a name="css-grid-debugging-features"></a>CSS 网格调试功能
 
@@ -41,7 +40,7 @@ ms.locfileid: "12284117"
    试验功能
 :::image-end:::
 
-开发人员Microsoft Edge团队与 Chrome DevTools 团队和 Chromium 社区协作，将新的 CSS 网格调试功能添加到 DevTools。  现在，你可以将网格线号、网格间隔和扩展网格线显示为页面上覆盖。  此外，即将推出对网格工具的更多改进。
+开发人员Microsoft Edge团队正在与 Chrome DevTools 团队和 Chromium 社区协作，将新的 CSS 网格调试功能添加到 DevTools。  现在，你可以将网格线号、网格间隔和扩展网格线显示为页面上覆盖。  此外，即将推出对网格工具的更多改进。
 
 :::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS 网格调试功能" lightbox="../../media/2020/06/experiments-grid.msft.png":::
    CSS 网格调试功能
@@ -80,7 +79,7 @@ Chromium问题[#1047356](https://crbug.com/1047356)
 > [!NOTE]
 > 若要启用实验，请导航到打开或关闭 [实验](../../../experimental-features/index.md#turning-an-experiment-on-or-off) ，然后选择启用网络控制台旁边的 **复选框**。
 >
-> 打开"[网络日志"，](../../../network/index.md#log-network-activity)打开上下文菜单 (右键单击") "，然后选择"编辑和**重播"。**
+> 打开网络 [日志](../../../network/index.md#log-network-activity)，打开上下文菜单 (右键单击) ，然后选择编辑和 **重播**。
 
 Chromium问题[#1093687](https://crbug.com/1093687)
 
@@ -125,7 +124,7 @@ Chromium问题[#1070378](https://crbug.com/1070378)
    试验功能
 :::image-end:::
 
-通常，仅在 DevTools**** 的顶部 (打开元素) 网络等工具。 ****  同样 **，3D 视图**和问题等**** 工具可能只能在 DevTools (底部的) 箱中打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。
+通常，仅在 DevTools**** 的顶部 (打开元素) 网络等工具。 ****  同样，工具（如**3D** **** 视图和问题）可能只能在 DevTools (底部的) 箱中打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。
 
 :::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="在面板之间移动工具" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
    在面板之间移动工具
@@ -138,7 +137,7 @@ Chromium问题[#897944](https://crbug.com/897944)
 
 ### <a name="improved-initiator-tooltip-in-the-network-panel"></a>网络面板中改进的发起人工具提示
 
-在 Microsoft Edge 83 和 84 中，"发起者"列的工具提示（显示资源请求的原因）显示在具有水平滚动[](../../../network/index.md#log-network-activity)条的网络日志中。  你仅能够在工具提示中水平滚动来显示发起请求的调用堆栈。
+在 Microsoft Edge 83 和 84 中，"发起者"列的工具提示（显示资源请求的原因）显示在具有水平[](../../../network/index.md#log-network-activity)滚动条的网络日志中。  你仅能够在工具提示中水平滚动来显示发起请求的调用堆栈。
 
 :::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="84 中的发起Microsoft Edge提示" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
    84 中的发起Microsoft Edge提示
@@ -160,7 +159,7 @@ Chromium问题[#1069404](https://crbug.com/1069404)
 
 ### <a name="style-editing-for-css-in-js-frameworks"></a>CSS-in-JS 框架的样式编辑
 
-现在 **，"** 样式"窗格可以更好地支持使用 CSS 对象模型和 [CSSOM ](https://drafts.csswg.org/cssom) (API 创建的) 样式。  许多 CSS-in-JS 框架和库在构建样式的底层使用 CSSOM API。
+现在 **，"** 样式"窗格可以更好地支持使用 CSS 对象模型和 CSSOM ([API 创建的) ](https://drafts.csswg.org/cssom) 样式。  许多 CSS-in-JS 框架和库在构建样式的底层使用 CSSOM API。
 
 现在您可以使用可构造样式表编辑在 JavaScript 中添加 [的样式](https://wicg.github.io/construct-stylesheets/)。  可构造的样式表是使用 Shadow DOM 时创建和分发可重用样式 [的一种新方式](https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM)。
 
@@ -184,7 +183,7 @@ Lighthouse 6.0 向报告引入了三个新指标：最大内容量 画图 (LCP) 
 
 Chromium问题[#772558](https://crbug.com/772558)
 
-#### <a name="first-meaningful-paint-deprecation"></a>第一画图弃用
+#### <a name="first-meaningful-paint-deprecation"></a>First Meaningful 画图弃用
 
 First Meaningful 画图 (FMP) is deprecated in Lighthouse 6.0.  FMP 也从"性能" **面板中删除** 。  **最大的 Contentful 画图**FMP 的建议替代项。  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint](https://web.dev/first-meaningful-paint).  -->
 
@@ -203,7 +202,7 @@ DevTools 现在更好地支持一些最新的 JavaScript 语言功能：
 
 *  Nullish 并 [集运算符 的语法突出显示](https://v8.dev/features/nullish-coalescing)。  DevTools 现在可以在"源"面板中正确打印空的"并 **排"运算符** 。
 
-Chromium问题[#1073903](https://crbug.com/1073903)、 [#1083214](https://crbug.com/1083214)、 [#1083797](https://crbug.com/1083797)
+Chromium问题[1073903、#1083214、#1083797](https://crbug.com/1083214) [](https://crbug.com/1073903) [](https://crbug.com/1083797)
 
 ### <a name="new-app-shortcut-warnings-in-the-manifest-pane"></a>清单窗格中的新应用快捷方式警告
 
@@ -243,7 +242,7 @@ Chromium问题[#1071432](https://crbug.com/1071432)
 
 当在"源"面板编辑器中执行复制[](../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files)或剪切操作时，DevTools 将复制或剪切当前内容行。
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="当光标位于第 5 行的末尾时，从 DevTools pen.js复制整行并粘贴到Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="当光标位于第 5 行末尾时，从 DevTools pen.js复制整行并粘贴到Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
    当光标位于第 5 行的末尾时，从 DevToolspen.js复制整行，并粘贴到 Visual Studio Code [。](https://code.visualstudio.com/) ****
 :::image-end:::
 
@@ -267,7 +266,7 @@ Chromium问题[#1082963](https://crbug.com/1082963)
 
 ### <a name="persisting-selected-context-only-settings"></a>持久化"仅选定上下文"设置
 
-控制台**控制台中的"** 所选上下文设置现在保留。  以前，每次关闭并重新打开 DevTools 时，设置都会重置。  更改使设置行为与其他控制台选项设置一。
+控制台**控制台中的"仅**所选上下文设置设置现已保留。  以前，每次关闭并重新打开 DevTools 时，设置都会重置。  更改使设置行为与其他控制台选项设置一。
 
 :::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="选定的仅上下文设置" lightbox="../../media/2020/06/selected-context.msft.png":::
    **选定的仅上下文** 设置
@@ -295,7 +294,7 @@ Chromium问题[#912581](https://crbug.com/912581)
    在性能工具中 **对齐导航** 计时
 :::image-end:::
 
-First 画图、 First Contentful 画图 和 Largest Contentful 画图 事件更新为相对于导航的开始，这意味着计时与 报告 `DOMContentLoaded` 的时间匹配 `PerformanceObserver` 。
+First 画图、 First Contentful 画图 和 Largest Contentful 画图 事件的时间更新为相对于导航的开始，这意味着计时与 报告 `DOMContentLoaded` 的时间匹配 `PerformanceObserver` 。
 
 Chromium问题[#974550](https://crbug.com/974550)
 

@@ -3,17 +3,16 @@ title: 在 WebView 中对扩展方案使用 JavaScript
 description: 了解如何在 WebView2 应用中的复杂方案中使用 JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 1/5/2022
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2、IWebView2WebView、webview2、webview、win32 应用、win32、edge、ICoreWebView2、ICoreWebView2Host、浏览器控件、边缘 html
-ms.openlocfilehash: f196afc78a2e3c02dbfcf05cf5b718c8a3bebb26
-ms.sourcegitcommit: f8423351b06b5c7bb0bb8e90cc38572242e13ac0
+ms.date: 1/5/2022
+ms.openlocfilehash: ffff70566e72bf9c1d8ccc8a0580f35ba2d91481
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "12293843"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320030"
 ---
 # <a name="use-javascript-in-webview-for-extended-scenarios"></a>在 WebView 中对扩展方案使用 JavaScript
 
@@ -34,7 +33,7 @@ ms.locfileid: "12293843"
 | API  | 描述  |
 |:--- |:--- |
 | [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | 在 WebView 控件中运行 JavaScript。 有关详细信息，请导航到入门教程。 |
-| [OnDocumentCreatedAsync](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated) | 创建文档对象模型或 DOM (时) 运行。 |
+| [OnDocumentCreatedAsync](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated) | 创建文档对象模型 (DOM) 运行时运行。 |
 
 
 <!-- ====================================================================== -->

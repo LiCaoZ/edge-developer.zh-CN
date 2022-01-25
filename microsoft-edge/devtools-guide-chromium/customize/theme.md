@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 08/03/2021
-ms.openlocfilehash: 991cfa5eac070361f63aec6dfdcde4205c43cb0c
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 0a119b22ae7c2695b5c32c10393886605b95014c
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286728"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320331"
 ---
 <!-- Copyright Kayce Basques
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +25,7 @@ ms.locfileid: "12286728"
    limitations under the License.  -->
 # <a name="apply-color-themes-to-devtools"></a>将颜色主题应用到 DevTools
 
-你可以将各种颜色主题应用到 Microsoft Edge Tools，包括多个来自 Visual Studio Code 的主题，[例如](https://code.visualstudio.com)Monokai 和大光深色。  主题影响窗格、按钮和代码语法突出显示的颜色。
+你可以将各种颜色主题应用到 Microsoft Edge Tools，包括多个来自 Visual Studio Code 的主题，[如](https://code.visualstudio.com)Monokai 和子光深色。  主题影响窗格、按钮和代码语法突出显示的颜色。
 
 :::image type="complex" source="./media/all-devtools-themes.png" alt-text="各种 DevTools 颜色主题" lightbox="./media/all-devtools-themes.png":::
    各种 DevTools 颜色主题
@@ -38,10 +37,10 @@ ms.locfileid: "12286728"
 <!-- ====================================================================== -->
 ## <a name="available-themes"></a>可用主题
 
-默认情况下，DevTools 主题设置为系统首选项 (**** 也称为**系统首选颜色**主题) 。  如果你的操作系统设置为浅色主题，DevTools 将使用 **浅色+** 主题。  如果你的操作系统设置为深色主题，DevTools 将使用 **深色+** 主题。  但是，你可以将 DevTools 更改为任何其他主题，以便当将操作系统设置为浅色或深色主题时，DevTools 不会受到影响。
+默认情况下，DevTools 主题设置为系统首选项 (**** 也称为**系统首选颜色主题**) 。  如果你的操作系统设置为浅色主题，DevTools 将使用 **浅色+** 主题。  如果你的操作系统设置为深色主题，DevTools 将使用 **深色+** 主题。  但是，你可以将 DevTools 更改为任何其他主题，以便当将操作系统设置为浅色或深色主题时，DevTools 不会受到影响。
 
 浅色主题：
-- 浅色+ (默认) 
+- 浅色+ (默认值) 
 - Chromium浅
 - 安静光
 - 太阳能化光
@@ -64,7 +63,7 @@ ms.locfileid: "12286728"
 1.  打开 DevTools，**然后选择设置 (** 齿轮图标) 。
 
     :::image type="complex" source="./media/setting-button.png" alt-text="The 设置 (gear) icon" lightbox="./media/setting-button.png":::
-       The**设置** (gear) icon
+       **"设置 (** 齿轮) 图标
     :::image-end:::
 
 1.  选择 **首选项**，然后在"外观 **"** 部分，从"主题"下拉列表 **中选择** 主题。

@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: cace155ad5f07f3f306c7c14d7cf83b502a3ac84
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: bff1f1b61ccabc17468057d03d4ec4dc08d7ec24
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284572"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320779"
 ---
 <!-- Copyright Kayce Basques
 
@@ -125,8 +124,8 @@ ms.locfileid: "12284572"
 | 保存所有更改 | `Control`+`Alt`+`S` | `Command`+`Option`+`S` |
 | 导航到行 | `Control`+`G` | `Control`+`G` |
 | 跳转到当前打开的文件的行号 | 按 `Control` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` 后跟行号，然后按 `Enter` | 按 `Command` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` 后跟行号，然后按 `Enter` |
-| 跳转到当前打开的文件的一列 (例如第 5 行，第 9 列)  | 按 `Control` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` ，然后键入行号，然后键入另一个 `:` ，然后按列号 `Enter` | 按 `Command` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` ，然后键入行号，然后键入另一个 `:` ，然后按列号 `Enter` |
-| 如果当前文件为 HTML 或脚本，则导航到函数声明。  <br />  如果当前文件是样式表，请导航到规则集。  | 按 `Control` + `Shift` + `O` ，然后键入声明 /规则集，或者从选项列表中选择它 | press `Command` + `Shift` + `O` ，然后键入声明/规则集的名称，或者从选项列表中选择它 |
+| 跳转到当前打开的文件列， (第 5 行，第 9 列)  | 按 `Control` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` ，然后键入行号，然后键入另一个 `:` ，然后按列号 `Enter` | 按 `Command` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` ，然后键入行号，然后键入另一个 `:` ，然后按列号 `Enter` |
+| 如果当前文件为 HTML 或脚本，则导航到函数声明。  <br />  如果当前文件是样式表，请导航到规则集。  | 按 `Control` + `Shift` + `O` ，然后键入声明/规则集的名称，或者从选项列表中选择它 | press `Command` + `Shift` + `O` ，然后键入声明 /规则集的名称，或者从选项列表中选择它 |
 | 关闭活动的选项卡 | `Alt`+`W` | `Option`+`W` |
 
 ### <a name="code-editor-keyboard-shortcuts"></a>代码编辑器键盘快捷方式

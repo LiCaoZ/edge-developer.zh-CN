@@ -1,18 +1,17 @@
 ---
-title: 在任何网页上运行 JavaScript 代码段
+title: 在任何网页上运行 JavaScript 的代码片段
 description: 代码片段是在 Microsoft Edge DevTools 的源工具中创作和运行的小型脚本。  可以通过任何网页访问和运行资源。  当你运行代码片段时，它是通过当前打开网页的上下文运行。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: cf28c9a455b6db0a322a1b30cd700902154bee61
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: fa50b7a3db274b63df7d5928df206bb815450701
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284257"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320506"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +26,7 @@ ms.locfileid: "12284257"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="run-snippets-of-javascript-on-any-webpage"></a>在任何网页上运行 JavaScript 代码段
+# <a name="run-snippets-of-javascript-on-any-webpage"></a>在任何网页上运行 JavaScript 的代码片段
 
 如果在[控制台](../console/index.md)中重复运行相同的代码，请考虑换成将代码另存为代码片段。  代码片段是在[源](../sources/index.md)工具中创作的脚本。  代码片段有权访问网页的 JavaScript 上下文，并且可以在任何网页上运行代码片段。  大多数网页的安全设置会阻止在代码片段中加载其他脚本。  因此，必须将所有代码都包括在一个文件中。
 
@@ -158,7 +157,7 @@ document.body.appendChild(p);
 ## <a name="rename-snippets"></a>重命名代码片段
 
 1.  [打开"代码段"选项卡](#open-the-snippets-tab)。
-1.  将鼠标悬停在代码段名称上，打开上下文菜单 (右键单击") "，然后选择"重命名 **"。**
+1.  将鼠标悬停在代码段名称上，打开上下文菜单 (右键单击") "重命名 **"。**
 
 
 <!-- ====================================================================== -->

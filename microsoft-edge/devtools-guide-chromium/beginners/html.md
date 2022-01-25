@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, 开发工具，面向初学者的开发工具，面向初学者的开发工具 HTML，面向初学者的开发工具 DOM，开发者工具 html 教程，开发者工具 html 教程，开发者工具文档对象模型教程
 ms.date: 08/06/2021
-ms.openlocfilehash: 80e8e07815cf3a57d593dbd26dc6009f8f059472
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
-ms.translationtype: HT
+ms.openlocfilehash: 2d27720b15f8987938127210ba8c6d85ad98207f
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12284628"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318582"
 ---
 <!-- Copyright Katherine Jackson
 

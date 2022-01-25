@@ -3,16 +3,15 @@ title: 使用用户代理客户端提示检测 Windows 11
 description: 如何使用客户端Windows 10 Windows 11和User-Agent和解决方案。
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/04/2022
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge， 兼容性， Web 平台， 用户代理字符串， ua 字符串， 用户代理客户端提示， 用户代理客户端提示， ua 客户端提示， ua ch， windows 11， win11， 检测 windows 11， windows 检测
-ms.openlocfilehash: ef1e39a92a07b52fee4d8de0ffbb6610d8640bb1
-ms.sourcegitcommit: 6e7df7ed7bc9974161eaf7f5ea2d0d789afe36e2
+ms.date: 01/04/2022
+ms.openlocfilehash: a82f022cf7b3f3174d5c651bebfb54faac89e746
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "12305571"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320212"
 ---
 # <a name="detect-windows-11-using-user-agent-client-hints"></a>使用用户代理客户端提示检测 Windows 11
 
@@ -28,22 +27,22 @@ user agent information
 *  User-Agent旧版 (字符串) 。
 *  User-Agent客户端提示 (推荐) 。
 
-有关这两种方法的详细信息，请参阅[从Microsoft Edge检测数据](user-agent-guidance.md)。
+有关这两种方法的详细信息，请参阅[从Microsoft Edge检测方法](user-agent-guidance.md)。
 
-在 Microsoft Edge 和 Chrome 中，网站可以通过 Windows 11 和 Windows 10 客户端提示User-Agent UA-CH (区分) 。 可以在以下 UA-CH 请求标头中找到此信息：
+在 Microsoft Edge 和 Chrome 中，网站可以通过 Windows 11 UA-CH Windows 10 User-Agent 客户端提示 (用户) 。 可以在以下 UA-CH 请求标头中找到此信息：
 
 | 头字段 | 指示Windows 10 | 指示Windows 11 |
 | --- | --- | --- |
 | `Sec-CH-UA-Platform` | `Windows` | `Windows` |
 | `Sec-CH-UA-Platform-Version` | 值介于 `1.0.0` 和 之间 `10.0.0` | `13.0.0` 及以上 |
 
-User-Agent字符串不会进行更新以区分Windows 11和Windows 10。  我们不建议使用User-Agent字符串来检索用户代理数据。  不支持客户端提示User-Agent将无法区分客户端提示Windows 11 Windows 10。
+User-Agent字符串不会进行更新以区分Windows 11和Windows 10。  我们不建议使用User-Agent字符串来检索用户代理数据。  不支持客户端提示的User-Agent将无法区分Windows 11和Windows 10。
 
 
 <!-- ====================================================================== -->
 ## <a name="browsers-that-support-user-agent-client-hints"></a>支持客户端提示User-Agent浏览器
 
-下表显示哪些浏览器支持区分Windows 11和Windows 10。
+下表显示了哪些浏览器支持区分Windows 11和Windows 10。
 
 | 浏览器 | 通过客户端提示User-Agent区别？ |
 | --- | --- |
@@ -97,7 +96,7 @@ navigator.userAgentData.getHighEntropyValues(["platformVersion"])
 <!-- To edit SVG go to link: http://www.plantuml.com/plantuml/uml/lOz1ImCn48Nl-ol6dkf2-WCMAQrxwLaHBrwcwRCD9DauCz6_RvQYk8XNJmFpFjx7swcnM4snkx4B4YYnGGAxgLeC6LrfSV2XS3PQZJ6WtVMzJ1yAkLqHA_abymXvXz3w6KSDXYkZdIUt9Hsexn_mLg561_09edrFBvcgGXoVM_j0TqzxKfEGpzivKdZdBwxoG9lDPl5nQJg6YE-WdKvT4_chICkK5KlJtdiKS-DX-D5J8jlh96a6HWbj3SU_aF-Pybly5SqZTyYdck8d -->
 ![使用 Critical-CH 和 Accept-CH 标头的请求](./criticalCH.svg)
 
-从 Microsoft Edge版本 96 开始，可以使用新标头接收具有优化性能的所需高向 `Critical-CH` 度标头。 
+从 Microsoft Edge版本 96 开始，可以使用新标头接收具有优化性能的所需高向 `Critical-CH` 异性标头。 
 
 请记住， `Critical-CH` 和首选项将一直保留，直到清除会话 Cookie，或者直到用户清除给定源的站点数据或 `Accept-CH` Cookie。 有关 有关详细信息， `Critical-CH` 请参阅客户端 [提示可靠性](https://github.com/WICG/client-hints-infrastructure/blob/main/reliability.md)。
 
@@ -105,7 +104,7 @@ navigator.userAgentData.getHighEntropyValues(["platformVersion"])
 <!-- ====================================================================== -->
 ## <a name="detecting-specific-windows-versions"></a>检测特定Windows版本
 
-若要检测特定版本的Windows，请使用客户端提示中的以下 `platformVersion` User-Agent值：
+若要检测特定版本的Windows，请使用客户端提示中的以下User-Agent `platformVersion` 值：
 
 | 版本 | `platformVersion` |
 | --- | --- | --- |

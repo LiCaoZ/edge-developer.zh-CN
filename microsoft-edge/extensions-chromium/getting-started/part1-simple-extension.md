@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge， Web 开发， html， css， javascript， 开发人员， 扩展
 ms.date: 01/07/2021
-ms.openlocfilehash: dffe8454c3b282de7ccb0bed525011c2f4fad0c6
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: bf4c4bdf07714d5c3e316b80bfecedd2b0401cfa
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12286336"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318489"
 ---
 # <a name="create-an-extension-tutorial---part-1"></a>创建扩展教程 - 第 1 部分
 

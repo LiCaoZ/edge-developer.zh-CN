@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/04/2021
-ms.openlocfilehash: 0fb0416eb935465f1299ee9330759e5ade15459f
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 22820e3436fcf12fc93c5a6e392892306603d327
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285356"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12318504"
 ---
 <!-- Copyright Kayce Basques
 
@@ -33,9 +32,9 @@ ms.locfileid: "12285356"
 
 <!--todo: add link to user location section when available -->
 
-如果您要构建的 UI 根据用户所在的位置而更改，您可能需要确保网站在世界各地的不同位置正常运行。  若要在 DevTools Microsoft Edge地理位置，请完成以下操作。
+如果您要构建的 UI 根据用户所在的位置而更改，您可能需要确保网站在世界各地的不同位置正常运行。  若要在 DevTools 中Microsoft Edge地理位置，请完成以下操作。
 
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
+1.  选择 `Control`+`Shift`+`P` (Windows、Linux)或 `Command`+`Shift`+`P` (macOS)以打开 **命令菜单**。
 
     :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单的屏幕截图。":::
 

@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web 开发, f12 工具, devtools
 ms.date: 05/11/2021
-ms.openlocfilehash: a24b808ac6258cf81b138c41ea8e4cfcaea9aaf9
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: 39c68ae953a51b9bf637254289d58bdbcf0a79c5
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285048"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12319309"
 ---
 <!-- Copyright Kayce Basques
 
@@ -72,7 +71,7 @@ ms.locfileid: "12285048"
 
 通过自定义域映射，可以在使用自定义域的开发计算机上通过 Web 服务器查看 Android 设备上的内容。
 
-例如，假定您的网站使用仅在域 上工作的第三方 JavaScript 库 `microsoft-edge.devtools` 。  因此，在开发计算机上在文件中创建一个条目，以将此域 `hosts` 映射到 (`localhost` 例如 `127.0.0.1 microsoft-edge.devtools` ，) 。  在设置自定义域映射和端口转发后，在 Android 设备上通过 URL 查看网站 `microsoft-edge.devtools` 。
+例如，假定您的网站使用仅在域 上工作的第三方 JavaScript 库 `microsoft-edge.devtools` 。  因此，在开发计算机上在文件中创建一个条目，以将此域 `hosts` `localhost` (例如 `127.0.0.1 microsoft-edge.devtools` ，) 。  在设置自定义域映射和端口转发后，在 Android 设备上通过 URL 查看网站 `microsoft-edge.devtools` 。
 
 ### <a name="set-up-port-forwarding-to-proxy-server"></a>设置到代理服务器的端口转发
 
@@ -91,7 +90,7 @@ ms.locfileid: "12285048"
 
 接下来，你需要将 Android 设备配置为与代理服务器通信。
 
-1.  在 Android 设备上，导航到**设置**  >  **WLAN"**。
+1.  在 Android 设备上，导航到**设置**  >  **WLAN。**
 1.  长按当前连接到的网络的名称。
 
     > [!NOTE]
@@ -117,6 +116,6 @@ ms.locfileid: "12285048"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server)由[由 (](https://developers.google.com/web/resources/contributors#kayce-basques) Technical Writer、Chrome DevTools \& Lighthouse) 和[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server)由 (技术撰稿人、Chrome DevTools \& Lighthouse) 和[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
 [![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。

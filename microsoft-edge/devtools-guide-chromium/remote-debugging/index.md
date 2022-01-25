@@ -5,14 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge,web 开发,f12 工具,开发工具
 ms.date: 05/04/2021
-ms.openlocfilehash: 24feafbd4f9158379f92d318819660b021cc6d8d
-ms.sourcegitcommit: 6fa0ef440a4e4565a2055dc2742d5d1bf8744939
+ms.openlocfilehash: c0a76fde7c2574871bc06bea5946adfa677687ab
+ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "12285762"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "12320849"
 ---
 <!-- Copyright Kayce Basques
 
@@ -114,14 +113,14 @@ The version of Microsoft Edge running on your Android device determines the vers
 
 转到 DevTools 实例的 **"** 元素"工具，将鼠标悬停在某个元素上以在 Android 设备的视口中突出显示它。
 
-还可以点击 Android 设备屏幕上的某个元素，以在"元素"工具 **中选择** 它。  单击 **"** 选择 (选择元素) DevTools 实例上的"选择元素"图标，然后在 Android 设备 ![ ](../media/select-element-icon.msft.png) 屏幕上选择元素。
+还可以点击 Android 设备屏幕上的某个元素，以在"元素"工具 **中选择** 它。  单击 **"** 选择 (选择元素) ![ DevTools 实例上的"选择元素"图标，然后在 Android 设备屏幕上 ](../media/select-element-icon.msft.png) 选择元素。
 
 > [!NOTE]
 > **Select Element** is disabled after the first selection， so you need to re-enable it every time you want to use this feature.
 
 ### <a name="screencast-your-android-screen-to-your-development-machine"></a>将 Android 屏幕截屏到开发计算机
 
-单击 **切换屏幕 (** 切换) 图标，在 ![ DevTools 实例中查看 Android 设备 ](../media/toggle-screencast-icon.msft.png) 的内容。
+单击 **切换屏幕 (** 切换) 图标，在 DevTools 实例中查看 ![ ](../media/toggle-screencast-icon.msft.png) Android 设备的内容。
 
 可以通过多种方式与屏幕广播交互：
 
