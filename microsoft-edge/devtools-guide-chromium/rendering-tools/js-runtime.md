@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: f0cefe6cf8718cadf19c5dd72ef8be4bcab8668a
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 4a857e53e28eac34c1237592e49d1cceafeaeb20
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320338"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324872"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -30,7 +30,7 @@ ms.locfileid: "12320338"
 
 使用**内存**工具识别内存占用大的函数。
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="示例配置文件" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="示例配置文件。" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
    示例配置文件
 :::image-end:::
 
@@ -64,31 +64,31 @@ ms.locfileid: "12320338"
 
 ### <a name="change-sort-order"></a>更改排序顺序
 
-若要更改排序顺序，请选择焦点选定函数旁边的下拉菜单 (焦点选定) **** 图标，然后选择以下 ![ ](../media/focus-icon.msft.png) 选项之一。
+若要更改排序顺序，请选择焦点选定函数旁边的下拉菜单 (焦点选定函数****。) 图标，然后选择以下 ![ ](../media/focus-icon.msft.png) 选项之一。
 
 **图表**。  显示记录的时序图。
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="火焰图" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="饼图。" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
    火焰图
 :::image-end:::
 
 **粗 (从下向上) **。  根据对性能的影响列出函数，并使你能够检查函数的调用路径。  这是默认视图。
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="走势图" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="粗图表。" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
    走势图
 :::image-end:::
 
 **树 (从上到下) 。 **  显示调用结构的整体图片，从调用堆栈的顶部开始。
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png" alt-text="树状图" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png" alt-text="树形图。" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png":::
    树状图
 :::image-end:::
 
 ### <a name="exclude-functions"></a>排除函数
 
-若要从采样配置文件中排除函数，请选择该函数，然后选择排除所选函数 **， (** ![ 排除所选) ](../media/exclude-icon.msft.png) 按钮。  请求函数 (的) 的父 (子) 由分配给已排除函数的 (分配的内存) 。
+若要从采样配置文件中排除函数，请选择该函数，然后选择排除所选函数 ** (** ![ 排除所选函数。) ](../media/exclude-icon.msft.png) 按钮。  请求函数 (的) 的父 (子) 由分配给已排除函数的 (分配的内存) 。
 
-Choose the **restore all functions (** restore all functions) button to restore all ![ ](../media/restore-icon.msft.png) excluded functions back into the recording.
+选择" **还原所有函数 (** ![ 还原所有函数。) 按钮将所有排除的函数 ](../media/restore-icon.msft.png) 还原回录制中。
 
 
 <!-- ====================================================================== -->
@@ -98,7 +98,7 @@ Choose the **restore all functions (** restore all functions) button to restore 
 
 [记录采样配置文件](#record-a-sampling-profile)后，将[排序顺序更改](#change-sort-order)为**图表**，以使用火焰图查看记录。
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="火焰图视图" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="饼图视图。" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
    火焰图视图
 :::image-end:::
 
@@ -111,7 +111,7 @@ Choose the **restore all functions (** restore all functions) button to restore 
 
 函数颜色随机。  与其他面板中使用的颜色没有任何关联。  然而，函数在整个调用中的颜色都是相同的，这样你就可以观察到每个运行时的模式。
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png" alt-text="带批注的火焰图" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png" alt-text="批注的绘制图。" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png":::
    带批注的火焰图
 :::image-end:::
 
@@ -121,7 +121,7 @@ Choose the **restore all functions (** restore all functions) button to restore 
 
 在概览上选择、按住并左右拖动鼠标，以放大调用堆栈的特定部分。  放大后，调用堆栈自动显示所选记录的部分。
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png" alt-text="已放大的图表" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png" alt-text="图表已缩放。" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png":::
    已放大的图表
 :::image-end:::
 
@@ -141,7 +141,7 @@ Choose the **restore all functions (** restore all functions) button to restore 
 <!--*   **Aggregated total time**.  Aggregate total time for all invocations of the function, including functions called by this function.  -->
 <!--*   **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="使用图表查看函数详细信息" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="在图表中查看函数详细信息。" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
    使用图表查看函数详细信息
 :::image-end:::
 
@@ -151,4 +151,5 @@ Choose the **restore all functions (** restore all functions) button to restore 
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution)由 (技术撰稿人、Chrome DevTools \& Lighthouse) 和[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

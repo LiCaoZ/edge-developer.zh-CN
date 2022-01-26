@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
-ms.openlocfilehash: 66d383a37aa2fdbb1ca79450ef3d1671d00c82b9
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 22783cda1891f50da023324a916dca84906f60dd
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319862"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324746"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -156,9 +156,9 @@ http://contoso.com/extension_updates.php?x=id%3Daaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 <!-- ====================================================================== -->
 ## <a name="advanced-usage-minimum-browser-version"></a>高级用法：最低浏览器版本
 
-随着适用于 Microsoft Edge 扩展系统的新 API 发布，你可以发布仅适用于较新版本的扩展或应用的更新Microsoft Edge版本。  当Microsoft Edge自动更新时，大多数用户可能需要几天才能更新到该新版本。
+随着适用于 Microsoft Edge 扩展系统的新 API 发布，你可以发布仅适用于较新版本的扩展或应用的Microsoft Edge版本。  当Microsoft Edge自动更新时，大多数用户可能需要几天时间才能更新到该新版本。
 
-若要确保特定更新仅适用于Microsoft Edge版本或更新版本，请在你的更新清单中添加 `prodversionmin` 属性。  在下面的代码段中，属性值 指定仅在用户运行版本或更新版本时，Microsoft Edge `prodversionmin` `3.0.193.0` `2.0` `3.0.193.0` 更新。
+若要确保特定更新仅适用于Microsoft Edge版本或高于特定版本的更新版本，请在你的更新清单中添加 `prodversionmin` 属性。  在下面的代码段中，属性值 指定仅在用户运行或更新版本时，你的应用 `prodversionmin` `3.0.193.0` `2.0` Microsoft Edge `3.0.193.0` 版本。
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
@@ -174,4 +174,5 @@ http://contoso.com/extension_updates.php?x=id%3Daaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/docs/apps/autoupdate)。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

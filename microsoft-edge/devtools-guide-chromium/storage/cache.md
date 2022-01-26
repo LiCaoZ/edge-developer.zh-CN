@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 7069bbb9cf998c2fa0750213566897d3f942c477
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 2083886d304239f9dcf770a2e5fc945d0290475a
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320793"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324844"
 ---
 <!-- Copyright Kayce Basques
 
@@ -38,31 +38,31 @@ ms.locfileid: "12320793"
 
 1.  选择**应用程序**选项卡打开**应用程序**工具。  通常默认**清单**窗格打开。
 
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-manifest.msft.png":::
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="&quot;清单&quot;窗格。" lightbox="../media/storage-application-manifest.msft.png":::
        **清单**窗格
     :::image-end:::
 
 1.  展开 **缓存存储** 部分以查看可用的缓存。
 
-    :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="可用缓存" lightbox="../media/storage-application-cache-storage.msft.png":::
+    :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="可用缓存。" lightbox="../media/storage-application-cache-storage.msft.png":::
        可用缓存
     :::image-end:::
 
 1.  选择缓存以查看内容。
 
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-root-headers.msft.png" alt-text="查看缓存的内容" lightbox="../media/storage-application-cache-storage-domain-root-headers.msft.png":::
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-root-headers.msft.png" alt-text="查看缓存的内容。" lightbox="../media/storage-application-cache-storage-domain-root-headers.msft.png":::
        查看缓存的内容
     :::image-end:::
 
 1.  选择资源以查看表下部分中的 HTTP 标题。
 
-    :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="查看资源的 HTTP 标题" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
+    :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="查看资源的 HTTP 标头。" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
        查看资源的 HTTP 标题
     :::image-end:::
 
 1.  选择 **预览** 以查看资源的内容。
 
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="查看资源的内容" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="查看资源的内容。" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
        查看资源的内容
     :::image-end:::
 
@@ -73,11 +73,11 @@ ms.locfileid: "12320793"
 1.  [查看缓存](#view-cache-data)。
 1.  选择要刷新的资源。  DevTools 会突出显示它以表明已选中。
 
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="选择要刷新的资源" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="选择要刷新的资源。" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
        选择要刷新的资源
     :::image-end:::
 
-1.  Choose **Refresh (** Refresh ![ ](../media/refresh-icon.msft.png)) .
+1.  选择 **"刷新** (![ 刷新 ](../media/refresh-icon.msft.png) "。) 。
 
 
 <!-- ====================================================================== -->
@@ -86,7 +86,7 @@ ms.locfileid: "12320793"
 1.  [查看缓存](#view-cache-data)。
 1.  使用 **路径筛选"** 文本框来筛选与提供的路径不匹配的资源。
 
-    :::image type="complex" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="筛选与指定路径不匹配的资源" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
+    :::image type="complex" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="筛选出与指定路径不匹配的资源。" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
        筛选与指定路径不匹配的资源
     :::image-end:::
 
@@ -97,11 +97,11 @@ ms.locfileid: "12320793"
 1.  [查看缓存](#view-cache-data)。
 1.  选择要删除的资源。  DevTools 会突出显示它以表明已选中。
 
-    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="选择要删除的资源" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
+    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="选择要删除的资源。" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
        选择要删除的资源
     :::image-end:::
 
-1.  Choose **Delete Selected (** Delete selected ![ ](../media/delete-icon.msft.png)) .
+1.  选择 **"删除所选** ![ ("，然后选择" ](../media/delete-icon.msft.png) 删除) "。
 
 
 <!-- ====================================================================== -->
@@ -110,13 +110,13 @@ ms.locfileid: "12320793"
 1.  打开**应用程序** > **存储空间**。
 1.  确保已启用" **缓存存储** 复选框。
 
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="缓存存储复选框" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="&quot;缓存存储复选框。" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
        **缓存存储** 复选框
     :::image-end:::
 
 1.  选择**清除网站数据**。
 
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="清除网站数据按钮" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="&quot;清除网站数据&quot;按钮。" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
        **清除网站数据**按钮
     :::image-end:::
 
@@ -126,4 +126,5 @@ ms.locfileid: "12320793"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/cache)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

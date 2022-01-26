@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 11/05/2021
-ms.openlocfilehash: f8c361f1c97af936a5487f77bab2f2963953e921
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: d89b9e6bb13f8c06d71c36d07fcb8ca730bf2018
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319491"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324774"
 ---
 # <a name="get-started-with-webview2-in-winforms-apps"></a>WinForms 应用中的 WebView2 入门
 
@@ -70,11 +70,11 @@ ms.locfileid: "12319491"
 
 1.  在搜索栏中，键入 `WebView2` ，然后单击 **"Microsoft.Web.WebView2"。**
 
-    :::image type="content" source="./media/install-nuget.png" alt-text="NuGet" lightbox="./media/install-nuget.png":::
+    :::image type="content" source="./media/install-nuget.png" alt-text="NuGet。" lightbox="./media/install-nuget.png":::
 
 1.  接受默认版本，然后选择"安装 **"。**
 
-    :::image type="content" source="./media/winforms-install-webview2-preview.png" alt-text="预览更改" lightbox="./media/winforms-install-webview2-preview.png":::
+    :::image type="content" source="./media/winforms-install-webview2-preview.png" alt-text="预览更改。" lightbox="./media/winforms-install-webview2-preview.png":::
 
 1.  单击**确定**继续。
 
@@ -105,11 +105,11 @@ ms.locfileid: "12319491"
 
 1.  将**WebView2 控件**拖到 Windows Forms App。
 
-    :::image type="content" source="./media/winforms-toolbox.png" alt-text="显示 WebView2 的工具箱" lightbox="./media/winforms-toolbox.png":::
+    :::image type="content" source="./media/winforms-toolbox.png" alt-text="显示 WebView2 的工具箱。" lightbox="./media/winforms-toolbox.png":::
 
 1.  在" **属性** "面板中， (** Name) ** 设置为 **webView**。 根据需要 **使用"分类** " **和** "字母顺序"排序选项查找属性。
 
-    :::image type="content" source="./media/winforms-properties.png" alt-text="WebView2 控件的属性" lightbox="./media/winforms-properties.png":::
+    :::image type="content" source="./media/winforms-properties.png" alt-text="WebView2 控件的属性。" lightbox="./media/winforms-properties.png":::
 
 1.  Source **** 属性设置 WebView2 控件中显示的初始 URI。 将 **Source 属性** 设置为 `https://www.microsoft.com` 。
 
@@ -138,7 +138,7 @@ ms.locfileid: "12319491"
 
 1.  将**TextBox 控件**拖到"Windows"应用。
 
-1.  在"**属性"** 面板中，将" (**名称) ****地址栏"。**
+1.  在"**属性**"面板中，将" (**名称) ****地址栏"。**
 
 1.  将"**按钮"** 控件拖到"Windows窗体"应用。
 
@@ -150,11 +150,11 @@ ms.locfileid: "12319491"
 
 1.  将文本框排列到按钮的左侧，按如下所示的文本对齐。
 
-    :::image type="content" source="./media/winforms-designer.png" alt-text="WinForms 设计器" lightbox="./media/winforms-designer.png":::
+    :::image type="content" source="./media/winforms-designer.png" alt-text="WinForms 设计器。" lightbox="./media/winforms-designer.png":::
 
 1.  调整文本框的大小，如下所示。
 
-    :::image type="content" source="./media/winforms-designer-txtbtn.png" alt-text="WinForms 设计器文本框和按钮" lightbox="./media/winforms-designer-txtbtn.png":::
+    :::image type="content" source="./media/winforms-designer-txtbtn.png" alt-text="WinForms 设计器文本框和按钮。" lightbox="./media/winforms-designer-txtbtn.png":::
 
 1. 单击 **"**  >  **查看**代码"打开 `Form1.cs` 文件。
 
@@ -192,7 +192,7 @@ ms.locfileid: "12319491"
 
     确保应用如下图所示。
 
-:::image type="content" source="./media/winforms-app.png" alt-text="应用" lightbox="./media/winforms-app.png":::
+:::image type="content" source="./media/winforms-app.png" alt-text="应用。" lightbox="./media/winforms-app.png":::
 
 
 <!-- ====================================================================== -->
@@ -231,7 +231,7 @@ ms.locfileid: "12319491"
 > [!NOTE]
 > 在地址栏中输入完整 URL。  如果 `ArgumentException` URL 不以 或 为起始，则 `http://` 会引发 。 `https://`
 
-:::image type="content" source="./media/winforms-bing.png" alt-text="bing.com" lightbox="./media/winforms-bing.png":::
+:::image type="content" source="./media/winforms-bing.png" alt-text="bing.com。" lightbox="./media/winforms-bing.png":::
 
 
 <!-- ====================================================================== -->
@@ -247,7 +247,7 @@ ms.locfileid: "12319491"
 
 有关详细信息，请参阅 [WebView2 的导航事件](../concepts/navigation-events.md)。
 
-:::image type="content" source="../media/navigation-events.png" alt-text="导航事件":::
+:::image type="content" source="../media/navigation-events.png" alt-text="导航事件。":::
 
 发生错误时，将引发以下事件，并可能依赖于导航到错误网页。
 
@@ -283,7 +283,7 @@ ms.locfileid: "12319491"
 
     在构造函数中 `EnsureHttps` ，注册为 WebView2 控件上事件 `NavigationStarting` 的事件处理程序。
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -312,13 +312,13 @@ ms.locfileid: "12319491"
     }
     ```
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
 1.  确保应用在您转到不使用 HTTPS 的网站时显示警报。
 
-:::image type="content" source="./media/winforms-https.png" alt-text="https" lightbox="./media/winforms-https.png":::
+:::image type="content" source="./media/winforms-https.png" alt-text="https。" lightbox="./media/winforms-https.png":::
 
 
 <!-- ====================================================================== -->
@@ -386,7 +386,7 @@ ms.locfileid: "12319491"
     }
     ```
 
-1. 单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
+1. 单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
 
 1. 按 **F5** 生成并运行项目。
 

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 2e584d5550a04c587a7a2d3176bdbbb4e81e3265
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 79f6ea53b4272222b475d2add800b764ecf0b708
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318777"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324879"
 ---
 <!-- Copyright Kayce Basques
 
@@ -44,15 +44,15 @@ ms.locfileid: "12318777"
 
 当您知道要检查的资源的名称时，"命令菜单"提供了一种**** 快速打开资源的方法。
 
-1.  选择 `Control` + `P` (Windows、Linux) 或 `Command` + `P` (macOS) 。  将 **打开"打开文件** "对话框。
+1.  选择 `Control` + `P` (Windows、Linux) 或 (`Command` + `P` macOS) 。  将 **打开"打开文件** "对话框。
 
-    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="&quot;打开文件&quot;对话框" lightbox="../media/resources-command-menu-empty.msft.png":::
+    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="&quot;打开文件&quot;对话框。" lightbox="../media/resources-command-menu-empty.msft.png":::
        " **打开文件"** 对话框
     :::image-end:::
 
 1.  从下拉列表中选择文件，或开始键入文件名，在自动完成框中突出显示正确的文件后 `Enter` 选择。
 
-    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="在&quot;打开文件&quot;对话框中键入文件名" lightbox="../media/resources-command-menu-file-search.msft.png":::
+    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="在&quot;打开文件&quot;对话框中键入文件名。" lightbox="../media/resources-command-menu-file-search.msft.png":::
        在"打开文件" **对话框中键入** 文件名
     :::image-end:::
 
@@ -62,7 +62,7 @@ ms.locfileid: "12318777"
 
 导航 [到检查资源的详细信息](../network/index.md#inspect-the-details-of-the-resource)。
 
-:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="检查网络工具中的资源" lightbox="../media/resources-network-response.msft.png":::
+:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="检查&quot;网络&quot;工具中的资源。" lightbox="../media/resources-network-response.msft.png":::
    检查网络工具 **中的** 资源
 :::image-end:::
 
@@ -70,7 +70,7 @@ ms.locfileid: "12318777"
 
 下一部分 ["浏览网络"](#browse-resources-in-the-network-panel)面板中的资源 显示如何查看来自 DevTools UI 各个部分的资源。  若要在"网络 **"工具中**检查资源，请右键单击该资源，然后选择"网络 **"面板中的"展示"。**
 
-:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="&quot;网络&quot;面板中的&quot;展示&quot;" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
+:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="在网络面板中显示。" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **"网络"面板中的"展示"**
 :::image-end:::
 
@@ -80,7 +80,7 @@ ms.locfileid: "12318777"
 
 导航到 [记录网络](../network/index.md#log-network-activity)。
 
-:::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="网络日志中的页面资源" lightbox="../media/resources-network-resources.msft.png":::
+:::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="网络日志中的页面资源。" lightbox="../media/resources-network-resources.msft.png":::
    网络日志中 **的页面** 资源
 :::image-end:::
 
@@ -94,9 +94,9 @@ ms.locfileid: "12318777"
 
 1.  选择 **"源**"工具，然后在左上角的****"导航器"窗格中，选择"**页面"** 选项卡。
 
-1.  单击"**页面**" (...) "按钮的"更多选项"，然后选择"按**文件夹分组"。** ****
+1.  单击页面**选项卡** (...) "按钮，然后选择"按文件夹**分组"。** ****
 
-    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="&quot;源&quot;工具的&quot;导航器&quot;窗格中的&quot;页面&quot;选项卡" lightbox="../media/resources-sources-page-empty.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="&quot;源&quot;工具的&quot;导航器&quot;窗格中的&quot;页面&quot;选项卡。" lightbox="../media/resources-sources-page-empty.msft.png":::
        " **源** "工具的"导航 **器"** 窗格中的" **页面"** 选项卡
     :::image-end:::
 
@@ -112,7 +112,7 @@ ms.locfileid: "12318777"
 
 1.  选择一个资源，在编辑器中查看 **它**。
 
-    :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="在编辑器中查看文件" lightbox="../media/resources-sources-page-resource.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="在编辑器中查看文件。" lightbox="../media/resources-sources-page-resource.msft.png":::
        在编辑器中查看 **文件**
     :::image-end:::
 
@@ -128,13 +128,13 @@ ms.locfileid: "12318777"
 
 1.  单击 **"更多选项** `...` "，然后清除 **"按文件夹分组"** 复选框。
 
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="&quot;按文件夹分组&quot;选项" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="&quot;按文件夹分组&quot;选项。" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
        " **按文件夹分组"** 选项
     :::image-end:::
 
     资源按文件类型进行组织。  在每个文件类型内，资源按字母顺序进行组织。
 
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="清除&quot;按文件夹分组&quot;复选框后的&quot;页面&quot;选项卡" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="清除&quot;按文件夹分组&quot;复选框后的&quot;页面&quot;选项卡。" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
        清除 **"** 按文件夹分组"复选框后的"页面 **"** 选项卡
     :::image-end:::
 
@@ -146,13 +146,13 @@ ms.locfileid: "12318777"
 
 1.  选择" **应用程序"** 选项卡。 应用程序 **工具** 将打开。  默认情况下，清单 **窗格** 通常首先打开。
 
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="应用程序工具" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="应用程序工具。" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
        **应用程序**工具
     :::image-end:::
 
 1.  向下滚动到"框架 **"** 窗格。
 
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="&quot;框架&quot;窗格" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="&quot;框架&quot;窗格。" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
        " **框架"** 窗格
     :::image-end:::
 
@@ -160,7 +160,7 @@ ms.locfileid: "12318777"
 
 1.  选择一个资源进行查看。
 
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="在&quot;应用程序&quot;面板中查看资源" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="在&quot;应用程序&quot;面板中查看资源。" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
        在"应用程序"面板 **中查看** 资源
     :::image-end:::
 
@@ -170,7 +170,7 @@ ms.locfileid: "12318777"
 
 请参阅 [按资源类型筛选](../network/index.md#filter-by-resource-type)。
 
-:::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="在网络日志中筛选 CSS" lightbox="../media/resources-network-resources-filter-css.msft.png":::
+:::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="在网络日志中筛选 CSS。" lightbox="../media/resources-network-resources-filter-css.msft.png":::
    在网络 **日志中筛选** CSS
 :::image-end:::
 
@@ -180,4 +180,5 @@ ms.locfileid: "12318777"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/resources/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

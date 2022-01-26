@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/13/2021
-ms.openlocfilehash: 0fceffb85bff91df2043162bd4632ed5d95af715
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: a3ef686164bbd94391e7426745c26e8516a0ef2d
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319981"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324690"
 ---
 <!-- Copyright Kayce Basques
 
@@ -73,7 +73,7 @@ Chromium 问题 [#963183](https://crbug.com/963183)
 
 转到 ， `edge://flags` 将 **"启用本地化开发人员工具"标志**设置为 **"已启用"。**  此外，将 **"开发人员工具实验"标志**设置为 **"已启用"。**  重新启动Microsoft Edge并打开 DevTools。  <!-- Select `F1` in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  DevTools 与 用于在 中Microsoft Edge语言 `edge://settings/languages` 匹配。
 
-:::image type="complex" source="../../images/2019/12/localized-devtools.msft.png" alt-text="德语的 DevTools" lightbox="../../images/2019/12/localized-devtools.msft.png":::
+:::image type="complex" source="../../images/2019/12/localized-devtools.msft.png" alt-text="德语的 DevTools。" lightbox="../../images/2019/12/localized-devtools.msft.png":::
    德语的 DevTools
 :::image-end:::
 
@@ -85,7 +85,7 @@ Chromium问题[#941561](https://crbug.com/941561)
 
 Webhint Microsoft Edge扩展允许你在 DevTools 中轻松扫描网页并获取有关辅助功能、浏览器兼容性、安全性、性能等的反馈。  有关详细信息，请参阅 [https://webhint.io](https://aka.ms/webhint) 。
 
-:::image type="complex" source="../../images/2019/12/webhint-browser-extension.msft.png" alt-text="安装 Webhint 浏览器扩展时 DevTools 中的 Hints 工具" lightbox="../../images/2019/12/webhint-browser-extension.msft.png":::
+:::image type="complex" source="../../images/2019/12/webhint-browser-extension.msft.png" alt-text="安装 Webhint 浏览器扩展时 DevTools 中的 Hints 工具。" lightbox="../../images/2019/12/webhint-browser-extension.msft.png":::
    安装 **Webhint** 浏览器扩展时 DevTools 中的 Hints 工具
 :::image-end:::
 
@@ -95,7 +95,7 @@ Webhint Microsoft Edge扩展允许你在 DevTools 中轻松扫描网页并获取
 
 使用 **3D** (视图通过浏览文档对象模型或 [DOM ](https://developer.mozilla.org/docs/Web/API/Document_Object_Model)) [或 z 索引](https://developer.mozilla.org/docs/Web/CSS/z-index) 堆栈上下文来调试 Web 应用程序。
 
-:::image type="complex" source="../../images/2019/12/3dview.msft.png" alt-text="DevTools 中的 3D 视图" lightbox="../../images/2019/12/3dview.msft.png":::
+:::image type="complex" source="../../images/2019/12/3dview.msft.png" alt-text="DevTools 中的 3D 视图。" lightbox="../../images/2019/12/3dview.msft.png":::
    DevTools 中的 **3D** 视图
 :::image-end:::
 
@@ -111,9 +111,9 @@ DevTools 团队还发布了一些 Visual Studio Code，[](https://aka.ms/vscode)
 
 #### <a name="elements-for-microsoft-edge"></a>用于Microsoft Edge
 
-通过将元素添加到 Visual Studio Code 扩展，从[Microsoft Edge Visual Studio Code](https://aka.ms/elements4code)元素工具。
+通过将元素添加到 Visual Studio Code 扩展，使用元素Microsoft Edge Visual Studio Code[元素](https://aka.ms/elements4code)。
 
-:::image type="complex" source="../../images/2019/12/elements-for-edge.msft.png" alt-text="元素工具Visual Studio Code元素扩展Microsoft Edge元素" lightbox="../../images/2019/12/elements-for-edge.msft.png":::
+:::image type="complex" source="../../images/2019/12/elements-for-edge.msft.png" alt-text="中的 Elements 工具Visual Studio Code元素扩展Microsoft Edge元素。" lightbox="../../images/2019/12/elements-for-edge.msft.png":::
    元素**工具**Visual Studio Code元素扩展Microsoft Edge元素
 :::image-end:::
 
@@ -121,19 +121,19 @@ DevTools 团队还发布了一些 Visual Studio Code，[](https://aka.ms/vscode)
 
 #### <a name="debugger-for-microsoft-edge"></a>调试程序Microsoft Edge
 
-使用[调试器 for Microsoft Edge](https://aka.ms/debugger4code) Visual Studio Code 扩展，直接从 Microsoft Edge 调试 Visual Studio Code 中运行 JavaScript。
+使用[调试器 for Microsoft Edge](https://aka.ms/debugger4code) Visual Studio Code 扩展，直接从 Microsoft Edge 调试在 Visual Studio Code 中运行的 JavaScript。
 
-:::image type="complex" source="../../images/2019/12/vscode-debugger.msft.png" alt-text="Microsoft Edge Extension 的调试Visual Studio Code" lightbox="../../images/2019/12/vscode-debugger.msft.png":::
-   Microsoft Edge Extension 的调试Visual Studio Code
+:::image type="complex" source="../../images/2019/12/vscode-debugger.msft.png" alt-text="Microsoft Edge Extension 的调试Visual Studio Code。" lightbox="../../images/2019/12/vscode-debugger.msft.png":::
+   Visual Studio Code 中的 Microsoft Edge Extension 调试器
 :::image-end:::
 
 有关详细信息，请查看如何从 Microsoft Edge[调试Visual Studio Code。](../../../../visual-studio-code/debugger-for-edge.md)
 
 #### <a name="webhint"></a>webhint
 
-[Webhint](https://aka.ms/webhint4code) Visual Studio Code在编写网页时 `webhint` 用于改进网页！ 此扩展将运行，并基于分析报告工作区文件的 `webhint` 诊断。
+[Webhint](https://aka.ms/webhint4code) Visual Studio Code在编写 `webhint` 网页时用于改进网页！ 此扩展将运行，并基于分析报告工作区文件的 `webhint` 诊断。
 
-:::image type="complex" source="../../images/2019/12/webhint-vscode-extension.msft.png" alt-text="Webhint Visual Studio Code扩展，用于分析网站中的 .tsx Visual Studio Code" lightbox="../../images/2019/12/webhint-vscode-extension.msft.png":::
+:::image type="complex" source="../../images/2019/12/webhint-vscode-extension.msft.png" alt-text="Webhint Visual Studio Code扩展，用于分析 Visual Studio Code 中的 .tsx 文件。" lightbox="../../images/2019/12/webhint-vscode-extension.msft.png":::
    Webhint Visual Studio Code分析 `.tsx` 文件中文件的扩展Visual Studio Code
 :::image-end:::
 
@@ -147,13 +147,13 @@ DevTools 团队还发布了一些 Visual Studio Code，[](https://aka.ms/vscode)
    Visual Studio Canary、Dev 或 Beta Microsoft Edge启动 Web 应用的选项
 :::image-end:::
 
-[阅读我们的博客文章，了解如何](https://aka.ms/vs/debug-edge)从 Microsoft Edge 调试Visual Studio。
+[阅读我们的博客文章，了解如何从 Microsoft Edge 调试Visual Studio。](https://aka.ms/vs/debug-edge)
 
 ### <a name="tracking-prevention-console-messages"></a>跟踪防护控制台消息
 
-跟踪防护是网站中Microsoft Edge一项功能，可阻止你在访问网站之前被网站跟踪。  默认跟踪防护设置为平衡模式，可阻止第三方跟踪器和已知的恶意跟踪器，从而获得平衡隐私和 Web 兼容性的体验。  为了让你深入了解阻止某些跟踪程序时网页的兼容性，Microsoft Edge 团队在跟踪程序被阻止时在控制台中添加了警告消息。 ****
+跟踪防护是网站Microsoft Edge一项独特功能，可阻止你在访问网站之前被网站跟踪。  默认跟踪防护设置为平衡模式，可阻止第三方跟踪器和已知的恶意跟踪器，从而获得平衡隐私和 Web 兼容性的体验。  为了让你深入了解阻止某些跟踪程序时网页的兼容性，Microsoft Edge团队在控制台中添加了跟踪程序被阻止时警告消息。 ****
 
-:::image type="complex" source="../../images/2019/12/tracking-prevention.msft.png" alt-text="跟踪防护时控制台中的邮件阻止访问跟踪器的存储" lightbox="../../images/2019/12/tracking-prevention.msft.png":::
+:::image type="complex" source="../../images/2019/12/tracking-prevention.msft.png" alt-text="跟踪防护时控制台中的邮件阻止访问跟踪器的存储。" lightbox="../../images/2019/12/tracking-prevention.msft.png":::
    跟踪防护 **时控制台** 中的邮件阻止访问跟踪器的存储
 :::image-end:::
 
@@ -174,13 +174,13 @@ DevTools 团队还发布了一些 Visual Studio Code，[](https://aka.ms/vscode)
 
 例如，之前，当使用 重新声明本地变量时， `let` 控制台会出错：
 
-:::image type="complex" source="../../images/2019/12/letbefore.msft.png" alt-text="第 79 Microsoft Edge个控制台显示允许重新声明失败" lightbox="../../images/2019/12/letbefore.msft.png":::
+:::image type="complex" source="../../images/2019/12/letbefore.msft.png" alt-text="79 中的Microsoft Edge显示允许重新声明失败。" lightbox="../../images/2019/12/letbefore.msft.png":::
    **79** Microsoft Edge 79 中的控制台显示允许重新声明失败
 :::image-end:::
 
 现在，控制台允许重新声明：
 
-:::image type="complex" source="../../images/2019/12/letafter.msft.png" alt-text="Microsoft Edge 80 中的控制台显示允许重新声明成功" lightbox="../../images/2019/12/letafter.msft.png":::
+:::image type="complex" source="../../images/2019/12/letafter.msft.png" alt-text="80 中的Microsoft Edge显示允许重新声明成功。" lightbox="../../images/2019/12/letafter.msft.png":::
    Microsoft Edge **** 80 中的控制台显示允许重新声明成功
 :::image-end:::
 
@@ -195,7 +195,7 @@ DevTools 已开始支持 DEBUGG 调试标准，这意味着增加了对在 DevTo
 
 <!-- [TODO: Replace this image with screenshot in Edge] -->
 <!--
-:::image type="complex" source="../../images/2019/12/wasm.msft.png" alt-text="The new DWARF-powered WebAssembly debugging" lightbox="../../images/2019/12/wasm.msft.png":::
+:::image type="complex" source="../../images/2019/12/wasm.msft.png" alt-text="The new DWARF-powered WebAssembly debugging." lightbox="../../images/2019/12/wasm.msft.png":::
    The new DWARF-powered WebAssembly debugging
 :::image-end:::
 -->
@@ -206,7 +206,7 @@ DevTools 已开始支持 DEBUGG 调试标准，这意味着增加了对在 DevTo
 
 现在，你能够以嵌套列表查看网络请求的发起方和依赖项。  这可以帮助您了解请求资源的原因，或特定资源活动（如 (脚本）) 活动。
 
-:::image type="complex" source="../../images/2019/12/initiators.msft.png" alt-text="发起者面板中的请求发起人链" lightbox="../../images/2019/12/initiators.msft.png":::
+:::image type="complex" source="../../images/2019/12/initiators.msft.png" alt-text="发起者面板中的请求发起人链。" lightbox="../../images/2019/12/initiators.msft.png":::
    发起者面板中的请求 **发起人** 链
 :::image-end:::
 
@@ -225,7 +225,7 @@ Chromium问题[#842488](https://crbug.com/842488)
 
 选择网络资源以检查它后，网络面板现在在概述中为资源设置蓝色 **边框**。  这可以帮助您检测网络请求是早于还是晚于预期发生。
 
-:::image type="complex" source="../../images/2019/12/overview.msft.png" alt-text="突出显示已检查资源的&quot;概述&quot;窗格" lightbox="../../images/2019/12/overview.msft.png":::
+:::image type="complex" source="../../images/2019/12/overview.msft.png" alt-text="突出显示已检查资源的&quot;概述&quot;窗格。" lightbox="../../images/2019/12/overview.msft.png":::
    突出显示 **已** 检查资源的"概述"窗格
 :::image-end:::
 
@@ -235,7 +235,7 @@ Chromium问题[#988253](https://crbug.com/988253)
 
 使用"**网络"** 工具**中的新"** 路径"和 **"URL"** 列显示每个网络资源的绝对路径或完整 URL。
 
-:::image type="complex" source="../../images/2019/12/columns.msft.png" alt-text="&quot;网络&quot;面板中的新&quot;路径&quot;和&quot;URL&quot;列" lightbox="../../images/2019/12/columns.msft.png":::
+:::image type="complex" source="../../images/2019/12/columns.msft.png" alt-text="&quot;网络&quot;面板中的新&quot;路径&quot;和&quot;URL&quot;列。" lightbox="../../images/2019/12/columns.msft.png":::
    网络工具中的新 **路径和** URL 列
 :::image-end:::
 
@@ -249,7 +249,7 @@ DevTools 支持通过"网络User-Agent设置 **自定义字符串** 。  the Use
 
 预定义User-Agent字符串已更新，以反映新式浏览器版本。
 
-:::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text="&quot;网络条件&quot;面板中的&quot;用户代理&quot;菜单" lightbox="../../images/2019/12/useragent.msft.png":::
+:::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text="&quot;网络条件&quot;面板中的&quot;用户代理&quot;菜单。" lightbox="../../images/2019/12/useragent.msft.png":::
    "网络条件"面板中的" **用户代理"** 菜单
 :::image-end:::
 
@@ -266,7 +266,7 @@ Chromium问题[#1029031](https://crbug.com/1029031)
 
 配置 UI 具有新的响应式设计，并且限制配置选项已简化。  有关限制 UI 更改的信息，请参阅审核 [面板限制](https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling)。
 
-:::image type="complex" source="../../images/2019/12/start.msft.png" alt-text="新配置 UI" lightbox="../../images/2019/12/start.msft.png":::
+:::image type="complex" source="../../images/2019/12/start.msft.png" alt-text="新配置 UI。" lightbox="../../images/2019/12/start.msft.png":::
    新配置 UI
 :::image-end:::
 
@@ -279,7 +279,7 @@ Chromium问题[#1029031](https://crbug.com/1029031)
 > [!CAUTION]
 > 你可能会注意到 HTML 文件的代码覆盖差异很大，具体取决于是按函数**** 还是**按块模式**使用。  在按 **函数模式使用** 时，HTML 文件中内联脚本被视为函数。  如果脚本完全运行，则 DevTools 将整个脚本标记为已用代码。  只有当脚本完全不运行时，DevTools 才将脚本标记为未使用的代码。
 
-:::image type="complex" source="../../images/2019/12/modes.msft.png" alt-text="覆盖模式下拉菜单" lightbox="../../images/2019/12/modes.msft.png":::
+:::image type="complex" source="../../images/2019/12/modes.msft.png" alt-text="覆盖模式下拉菜单。" lightbox="../../images/2019/12/modes.msft.png":::
    覆盖模式下拉菜单
 :::image-end:::
 
@@ -301,4 +301,5 @@ Chromium问题[#1004203](https://crbug.com/1004203)
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-80)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

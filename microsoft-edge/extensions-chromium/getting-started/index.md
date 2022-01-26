@@ -1,21 +1,21 @@
 ---
 title: 扩展概念和体系结构
-description: 扩展Microsoft Edge和构建扩展的核心概念。
+description: 构建扩展Microsoft Edge和核心概念的体系结构。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/07/2021
-ms.openlocfilehash: 93cd86ef01513dd5ea6b6a3b6a384039d92cd086
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 5c0733c99153783eff3767c7f6a3f03103d5de2c
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318693"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324613"
 ---
 # <a name="extension-concepts-and-architecture"></a>扩展概念和体系结构
 
-本文介绍将帮助您构建一个扩展Microsoft Edge的概念。  请继续操作，了解多选项卡浏览器如何工作。
+本文介绍将帮助您构建扩展Microsoft Edge概念。  请继续操作，了解多选项卡浏览器如何工作。
 
 
 <!-- ====================================================================== -->
@@ -25,7 +25,7 @@ ms.locfileid: "12318693"
 
 1.  每个浏览器选项卡彼此独立。 每个选项卡在独立于其他浏览器选项卡和线程的单独线程中运行。
 
-    :::image type="complex" source="./media/index-image1-browsertabs.png" alt-text="每个浏览器选项卡一个线程" lightbox="./media/index-image1-browsertabs.png":::
+    :::image type="complex" source="./media/index-image1-browsertabs.png" alt-text="每个浏览器选项卡一个线程。" lightbox="./media/index-image1-browsertabs.png":::
        每个浏览器选项卡一个线程
     :::image-end:::
 
@@ -35,7 +35,7 @@ ms.locfileid: "12318693"
 
 1.  扩展模型使用不同的通信模型。  与选项卡页类似，扩展在独立于其他选项卡页线程的单个线程中运行。  选项卡将单个 GET 请求发送到远程服务器，然后呈现页面。  但是，扩展的工作方式类似于远程服务器。  在浏览器中安装扩展在浏览器中创建独立 Web 服务器。  扩展名独立于所有选项卡页。
 
-    :::image type="complex" source="./media/index-image3-upsidedown.png" alt-text="扩展使用不同的通信模型" lightbox="./media/index-image3-upsidedown.png":::
+    :::image type="complex" source="./media/index-image3-upsidedown.png" alt-text="扩展使用不同的通信模型。" lightbox="./media/index-image3-upsidedown.png":::
        扩展使用不同的通信模型
     :::image-end:::
 

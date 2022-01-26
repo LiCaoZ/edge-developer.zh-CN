@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 7a01d5cb141526c34996a8196976a0b481efe137
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 09e07aa5bf9c36fc40c323c7a4706daaae5c4512
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320513"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324767"
 ---
 <!-- Copyright Kayce Basques
 
@@ -66,10 +66,10 @@ ms.locfileid: "12320513"
 
 1.  在 DevTools 中，选择“**性能**”工具。
 1.  确保你选择“**屏幕截图**”旁边的复选框。
-1.  选择 **"捕获设置 (** ![ 捕获 ](../media/capture-settings-icon.msft.png) 设置) 。  DevTools 显示了与捕获效果指标有关的设置。
+1.  选择 **"捕获设置 (** ![ 捕获 ](../media/capture-settings-icon.msft.png) 设置。) 。  DevTools 显示了与捕获效果指标有关的设置。
 1.  对于**CPU**，请选择**4倍减速**。  DevTools 将 CPU 限制为比平时慢 4 倍。
 
-    :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="CPU 限制" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="CPU 限制。" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
        CPU 限制
     :::image-end:::
 
@@ -93,16 +93,16 @@ ms.locfileid: "12320513"
 
 运行优化版本的页面时，蓝色图标会移动得更快。  为什么？  两种版本都应该在相同的时间内将图标移动相同的空间。  在 "性能" 面板中进行录制，了解如何检测未优化版本中的性能瓶颈。
 
-1.  在 DevTools 中 **，选择"** 记录 (![ 记录 ](../media/record-icon.msft.png)) 。  页面运行时，DevTools 将捕获效果指标。
+1.  在 DevTools 中 **，选择"** 记录 (![ 记录 ](../media/record-icon.msft.png) "。) 。  页面运行时，DevTools 将捕获效果指标。
 
-    :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="配置文件页面" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="配置文件页面。" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
        配置文件页面
     :::image-end:::
 
 1.  稍等几秒钟。
 1.  选择**停止**。  DevTools 停止录制，处理数据，然后在 "性能" 面板上显示结果。
 
-    :::image type="complex" source="../media/evaluate-performance-performance-capture-results.msft.png" alt-text="配置文件的结果" lightbox="../media/evaluate-performance-performance-capture-results.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-capture-results.msft.png" alt-text="配置文件的结果。" lightbox="../media/evaluate-performance-performance-capture-results.msft.png":::
        配置文件的结果
     :::image-end:::
 
@@ -120,25 +120,25 @@ ms.locfileid: "12320513"
 
 1.  查看 **FPS** 图表。  每当红色条显示在 **FPS**上方时，这意味着帧速率下降得过低，可能破坏用户体验。  通常，绿色条越高，FPS 越高。
 
-    :::image type="complex" source="../media/evaluate-performance-performance-fps-chart.msft.png" alt-text="FPS 图表" lightbox="../media/evaluate-performance-performance-fps-chart.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-fps-chart.msft.png" alt-text="FPS 图表。" lightbox="../media/evaluate-performance-performance-fps-chart.msft.png":::
        **FPS** 图表
     :::image-end:::
 
 1.  在 **FPS** 图表下方，显示 **CPU** 图表。  **CPU** 图表中的颜色对应于“性能”面板底部的“**摘要**”面板中的颜色。  **CPU** 图表充满颜色意味着在录制过程中 CPU 已达到极限。  每当 CPU 长时间达到最大值时，这意味着你应该寻找减少工作的办法。
 
-    :::image type="complex" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="CPU 图表和摘要面板" lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="CPU 图表和摘要面板。" lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
        **CPU**图表和**摘要**面板
     :::image-end:::
 
 1.  鼠标悬停在 **FPS**、 **CPU**或**NET** 图表上。  DevTools 将显示该时间点处的页面截图。  左右移动鼠标以重播录音。  引用该操作为擦除，它对于手动分析动画的进程很有用。
 
-    :::image type="complex" source="../media/evaluate-performance-performance-screenshot-hover.msft.png" alt-text="查看2500ms左右的录制页面截图" lightbox="../media/evaluate-performance-performance-screenshot-hover.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-screenshot-hover.msft.png" alt-text="查看 2500 毫秒记录标记周围的页面屏幕截图。" lightbox="../media/evaluate-performance-performance-screenshot-hover.msft.png":::
        查看2500ms左右的录制页面截图
     :::image-end:::
 
 1.  在“**框架**”部分，将鼠标悬停在其中一个绿色方块上。  DevTools 将显示该特定帧的 FPS。  每帧可能远低于 60 FPS的目标。
 
-    :::image type="complex" source="../media/evaluate-performance-performance-frame-hover.msft.png" alt-text="鼠标悬停在框架上" lightbox="../media/evaluate-performance-performance-frame-hover.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-frame-hover.msft.png" alt-text="将鼠标悬停在图框上。" lightbox="../media/evaluate-performance-performance-frame-hover.msft.png":::
        鼠标悬停在框架上
     :::image-end:::
 
@@ -152,7 +152,7 @@ ms.locfileid: "12320513"
 1.  在**命令菜单**中开始键入`Rendering`，然后选择**显示渲染**.
 1.  在呈现**工具** 中，打开 **FPS 指示器**。  新的叠加层将显示在视线的右上角。
 
-    :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="FPS 计数" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="FPS 指示器。" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
        **FPS 计数**
         :::image-end:::
 
@@ -164,19 +164,19 @@ ms.locfileid: "12320513"
 
 1.  未选择任何事件时，“**摘要**”面板将显示活动的细目。  页面大部分时间都在渲染。  由于性能是减少工作量的艺术，因此你的目标是减少花费在进行绘制工作上的时间。
 
-    :::image type="complex" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text="摘要面板" lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text="摘要面板。" lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
        摘要**面板**
     :::image-end:::
 
 1.  展开**重点**部分。  DevTools 将显示一段时间内主线程上活动的帧图表。  x 轴表示一段时间内的记录。  每个条形表示一个事件。  宽条表示该事件花费了更长的时间。  Y 轴表示调用堆叠。  当事件堆叠在一起时，这意味着上面的事件导致了下面的事件。
 
-    :::image type="complex" source="../media/evaluate-performance-performance-main.msft.png" alt-text="主要部分" lightbox="../media/evaluate-performance-performance-main.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-main.msft.png" alt-text="&quot;主&quot;部分。" lightbox="../media/evaluate-performance-performance-main.msft.png":::
        **主要**部分
     :::image-end:::
 
 1.  记录中有很多数据。  如果要放大单个事件；请选择、按住并将光标拖动到**Overview**上，即包括**FPS**、**CPU**和**NET**图表的部分。  “**主**”节和“**摘要**”面板仅显示所选部分录制的信息。
 
-    :::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="放大事件" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="放大事件。" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
        放大事件
     :::image-end:::
 
@@ -190,7 +190,7 @@ ms.locfileid: "12320513"
 
 1.  选择**动画帧触发**事件。  “**摘要**”面板现在将显示有关该事件的信息。  请注意“**显示**”链接。  选择后，DevTools 将突出显示启动 **动画帧触发** 事件。  另外，请关注**app.js:95**链接。  选择后，将显示源代码中的相关行。
 
-    :::image type="complex" source="../media/evaluate-performance-performance-animation-frame-fired.msft.png" alt-text="有关动画帧触发事件的详细信息" lightbox="../media/evaluate-performance-performance-animation-frame-fired.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-animation-frame-fired.msft.png" alt-text="有关动画帧触发事件详细信息。" lightbox="../media/evaluate-performance-performance-animation-frame-fired.msft.png":::
        有关**动画帧触发**事件的详细信息
     :::image-end:::
 
@@ -202,7 +202,7 @@ ms.locfileid: "12320513"
 
 1.  在**摘要**面板中，选择**布局强制**下的 **app.js:71** 链接。  DevTools 将转到强制布局的代码行。
 
-    :::image type="complex" source="../media/evaluate-performance-sources-app-update.msft.png" alt-text="导致强制布局的代码行" lightbox="../media/evaluate-performance-sources-app-update.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-sources-app-update.msft.png" alt-text="导致强制布局的代码行。" lightbox="../media/evaluate-performance-sources-app-update.msft.png":::
        导致强制布局的代码行
     :::image-end:::
 
@@ -253,4 +253,5 @@ To learn more, navigate to [Measure Performance With The RAIL Model](https://dev
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 57a1805a88393ca85a93ce884646856f17f41a5d
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 92d5e33087e8a5a9a4e623187de6a382424dc988
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320877"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324739"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -32,7 +32,7 @@ ms.locfileid: "12320877"
 
 ### <a name="summary"></a>摘要
 
-*   使用 source 地图将缩小代码映射到源代码。  然后，您能够读取和调试原始源中的已编译代码。
+*   使用源代码地图缩小代码映射到源代码。  然后，您能够读取和调试原始源中的已编译代码。
 *   只能使用能够生成源处理器的预处理器地图。
 *   验证 Web 服务器能否为源服务器地图。
 
@@ -46,7 +46,7 @@ todo: add link to preprocessors capable of producing Source Maps when section is
 <!-- ====================================================================== -->
 ## <a name="get-started-with-preprocessors"></a>预处理器入门
 
-本文介绍如何在 DevTools 源工具地图 JavaScript Source 对象进行交互。  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->
+本文介绍如何在 DevTools 源工具地图 JavaScript 源应用程序交互。  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->
 
 <!--
 no longer in original file:
@@ -80,11 +80,11 @@ todo: add link to display the preprocessor support section when section is avail
 
 在 DevTools 地图源客户端时，应该会注意到 JavaScript 未编译，并且它引用的所有单个 JavaScript 文件都显示出来。  DevTools 地图源映射使用的是源映射，但基础功能实际上运行已编译的代码。  任何错误、日志和断点都映射到开发人员代码，以便进行出色的调试。  实际上，它让你产生一种在生产中运行开发网站的错觉。
 
-### <a name="enable-source-maps-in-settings"></a>在设置地图源源
+### <a name="enable-source-maps-in-settings"></a>在设置中地图源应用程序
 
-源地图默认启用<!-- (as of Microsoft Edge 39)-->，但如果您想要仔细检查或启用它们;First open DevTools， choose **Customize and control DevTools** (`...`) >**设置**.  在首选项**窗格的****源下，** 打开启用**JavaScript 源地图。**  您还可以启用启用 CSS**源地图。**
+源地图默认启用<!-- (as of Microsoft Edge 39)-->，但如果您想要仔细检查或启用它们;First open DevTools， choose **Customize and control DevTools** (`...`) >**设置**.  在首选项**窗格的****源下**，启用**JavaScript 源地图。**  您还可以启用启用 CSS**源地图。**
 
-:::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="启用源地图" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
+:::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="启用源地图。" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
    **启用 JavaScript 源地图**
 :::image-end:::
 
@@ -120,7 +120,7 @@ todo: add link to display the preprocessor support section when section is avail
 
 如果展开" **源** "子面板，现在将显示一个包含先前输入的自定义文件名的新文件。  如果双击查看此文件，则它包含原始源的已编译 JavaScript。  但是，最后一行是 `// @sourceURL` 指示原始源文件的注释。  这有助于你在使用语言抽象时进行调试。
 
-:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="使用 sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
+:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="使用 sourceURL。" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
    使用 `sourceURL`
 :::image-end:::
 
@@ -130,4 +130,5 @@ todo: add link to display the preprocessor support section when section is avail
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)由[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和[Paul Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Open Web Developer Advocate、Google：Tools、Performance、Animation 和 UX) 创作。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

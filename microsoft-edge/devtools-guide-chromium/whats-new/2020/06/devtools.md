@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 756137aab688c166ed71a495e1587a849fd2d7f3
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 80e8c6168122f7e1d32021e9f8f7218033fcc11d
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320527"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324697"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -32,17 +32,17 @@ ms.locfileid: "12320527"
 <!-- ====================================================================== -->
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告
 
-以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要随时了解开发人员工具中所有最新且最最好的功能，请下载[Microsoft Edge 预览](https://www.microsoftedgeinsider.com/download/)频道，并按照 Twitter 上的[Microsoft Edge DevTools 团队。](https://twitter.com/EdgeDevTools)
+以下各节列出了你可能从 DevTools 团队中错过Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要随时了解开发人员工具中所有最新且最最好的功能，请下载[Microsoft Edge 预览](https://www.microsoftedgeinsider.com/download/)频道，并按照 Twitter 上的[Microsoft Edge DevTools 团队进行跟踪](https://twitter.com/EdgeDevTools)。
 
 ### <a name="css-grid-debugging-features"></a>CSS 网格调试功能
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="试验功能":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能。":::
    试验功能
 :::image-end:::
 
 开发人员Microsoft Edge团队正在与 Chrome DevTools 团队和 Chromium 社区协作，将新的 CSS 网格调试功能添加到 DevTools。  现在，你可以将网格线号、网格间隔和扩展网格线显示为页面上覆盖。  此外，即将推出对网格工具的更多改进。
 
-:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS 网格调试功能" lightbox="../../media/2020/06/experiments-grid.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS 网格调试功能。" lightbox="../../media/2020/06/experiments-grid.msft.png":::
    CSS 网格调试功能
 :::image-end:::
 
@@ -55,13 +55,13 @@ Chromium问题[#1047356](https://crbug.com/1047356)
 
 ### <a name="edit-and-replay-requests-with-the-network-console"></a>使用网络控制台编辑和重播请求
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="试验功能":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能。":::
    试验功能
 :::image-end:::
 
 你现在可以使用网络控制台**在**网络日志中对请求使用[编辑和](../../../network/index.md#log-network-activity)**重播**。
 
-:::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="使用网络控制台在 NetworkLog 中编辑和重播请求" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="使用网络控制台在 NetworkLog 中编辑和重播请求。" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
    使用网络控制台在 [NetworkLog](../../../network/index.md#log-network-activity) 中编辑和 **重播请求**
 :::image-end:::
 
@@ -69,7 +69,7 @@ Chromium问题[#1047356](https://crbug.com/1047356)
 
 您还可以使用网络 **控制台** 直接从 DevTools 创建和发送 HTTP 请求。
 
-:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="网络控制台面板" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="网络控制台面板。" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
    网络 **控制台** 面板
 :::image-end:::
 
@@ -79,7 +79,7 @@ Chromium问题[#1047356](https://crbug.com/1047356)
 > [!NOTE]
 > 若要启用实验，请导航到打开或关闭 [实验](../../../experimental-features/index.md#turning-an-experiment-on-or-off) ，然后选择启用网络控制台旁边的 **复选框**。
 >
-> 打开网络 [日志](../../../network/index.md#log-network-activity)，打开上下文菜单 (右键单击) ，然后选择编辑和 **重播**。
+> 打开网络[日志](../../../network/index.md#log-network-activity)，打开上下文菜单 (右键单击") "，然后选择"编辑和**重播"。**
 
 Chromium问题[#1093687](https://crbug.com/1093687)
 
@@ -87,13 +87,13 @@ Chromium问题[#1093687](https://crbug.com/1093687)
 
 网络 **工具** 的" **计时"** 选项卡现在包括 `respondWith` 服务工作器事件。  服务工作线程事件显示从服务工作进程事件处理程序开始运行前一段时间到处理程序承诺得到实现的时间 `respondWith` `fetch` `respondWith` `fetch` 的持续时间。
 
-:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="&quot;网络&quot;面板的&quot;计时&quot;选项卡中的 respondWith 服务工作线程事件" lightbox="../../media/2020/06/timing-tab.msft.png":::
+:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="网络面板的&quot;计时&quot;选项卡中的 respondWith 服务工作进程事件。" lightbox="../../media/2020/06/timing-tab.msft.png":::
    网络 `respondWith` 工具的" **计时"** 选项卡中的服务 **工作器** 事件
 :::image-end:::
 
 展开 **收到的响应** 以显示来自响应的其他信息， `fetch` 如 `CacheStorageCacheName` 、 `serviceWorkerResponseSource` 和 `ResponseTime` 。
 
-:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="展开收到的响应以显示提取响应中的附加信息" lightbox="../../media/2020/06/timing-tab2.msft.png":::
+:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="展开收到的响应以显示提取响应中的附加信息。" lightbox="../../media/2020/06/timing-tab2.msft.png":::
    展开 **收到的响应** 以显示来自响应的其他 `fetch` 信息
 :::image-end:::
 
@@ -101,13 +101,13 @@ Chromium问题[#1066579](https://crbug.com/1066579)
 
 ### <a name="webhint-feedback-in-the-issues-panel"></a>问题面板中的 webhint 反馈
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="试验功能":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能。":::
    试验功能
 :::image-end:::
 
 [webhint](https://webhint.io) 是一个开放源代码工具，提供有关网站的辅助功能、跨浏览器兼容性、安全性、性能、PWA 和其他常见 Web 开发问题实时反馈。  查看"问题"面板中的 [webhint](../../../issues/index.md) 反馈。
 
-:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="问题面板中的 webhint 反馈" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="问题面板中的 webhint 反馈。" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
    问题面板中的 webhint 反馈
 :::image-end:::
 
@@ -120,13 +120,13 @@ Chromium问题[#1070378](https://crbug.com/1070378)
 
 ### <a name="move-tools-between-panels"></a>在面板之间移动工具
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="试验功能":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能。":::
    试验功能
 :::image-end:::
 
-通常，仅在 DevTools**** 的顶部 (打开元素) 网络等工具。 ****  同样，工具（如**3D** **** 视图和问题）可能只能在 DevTools (底部的) 箱中打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。
+通常，只能在 DevTools**** 的顶部 (打开元素) 网络等工具。 ****  同样 **，3D 视图**和问题等**** 工具可能只能在 DevTools (底部的) 箱中打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。
 
-:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="在面板之间移动工具" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="在面板之间移动工具。" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
    在面板之间移动工具
 :::image-end:::
 
@@ -137,15 +137,15 @@ Chromium问题[#897944](https://crbug.com/897944)
 
 ### <a name="improved-initiator-tooltip-in-the-network-panel"></a>网络面板中改进的发起人工具提示
 
-在 Microsoft Edge 83 和 84 中，"发起者"列的工具提示（显示资源请求的原因）显示在具有水平[](../../../network/index.md#log-network-activity)滚动条的网络日志中。  你仅能够在工具提示中水平滚动来显示发起请求的调用堆栈。
+在 Microsoft Edge 83 和 84 中，"发起者"列的工具提示显示在使用水平滚动条显示的"网络日志[](../../../network/index.md#log-network-activity)"中，显示资源请求的原因。  你仅能够在工具提示中水平滚动来显示发起请求的调用堆栈。
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="84 中的发起Microsoft Edge提示" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="84 中的发起Microsoft Edge提示。" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
    84 中的发起Microsoft Edge提示
 :::image-end:::
 
 从 Microsoft Edge 85 开始，现在可以在工具提示中显示 Initiator 调用堆栈，而无需水平滚动。
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="85 中的发起Microsoft Edge提示" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="85 中的发起Microsoft Edge提示。" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
    85 中的发起Microsoft Edge提示
 :::image-end:::
 
@@ -159,13 +159,13 @@ Chromium问题[#1069404](https://crbug.com/1069404)
 
 ### <a name="style-editing-for-css-in-js-frameworks"></a>CSS-in-JS 框架的样式编辑
 
-现在 **，"** 样式"窗格可以更好地支持使用 CSS 对象模型和 CSSOM ([API 创建的) ](https://drafts.csswg.org/cssom) 样式。  许多 CSS-in-JS 框架和库在构建样式的底层使用 CSSOM API。
+现在 **，"** 样式"窗格更好地支持使用 CSS 对象模型和 [CSSOM ](https://drafts.csswg.org/cssom) (API 创建的) 样式。  许多 CSS-in-JS 框架和库在构建样式的底层使用 CSSOM API。
 
 现在您可以使用可构造样式表编辑在 JavaScript 中添加 [的样式](https://wicg.github.io/construct-stylesheets/)。  可构造的样式表是使用 Shadow DOM 时创建和分发可重用样式 [的一种新方式](https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM)。
 
 例如，使用 `h1` CSSOM API `CSSStyleSheet` (的) 以前不可编辑。  样式现在在"样式"面板中 **可** 编辑。
 
-:::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="将随 CSSStyleSheet 一起添加的 h1 样式的背景属性从粉色更改为浅色" lightbox="../../media/2020/06/css-in-js.msft.png":::
+:::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="将随 CSSStyleSheet 一起添加的 h1 样式的背景属性从粉色更改为浅色。" lightbox="../../media/2020/06/css-in-js.msft.png":::
    将 `background` 随 一起 `h1` 添加的样式 `CSSStyleSheet` 的属性从 更改 `pink` 到 `lightblue` 。
 :::image-end:::
 
@@ -202,7 +202,7 @@ DevTools 现在更好地支持一些最新的 JavaScript 语言功能：
 
 *  Nullish 并 [集运算符 的语法突出显示](https://v8.dev/features/nullish-coalescing)。  DevTools 现在可以在"源"面板中正确打印空的"并 **排"运算符** 。
 
-Chromium问题[1073903、#1083214、#1083797](https://crbug.com/1083214) [](https://crbug.com/1073903) [](https://crbug.com/1083797)
+Chromium问题[1073903](https://crbug.com/1073903) [、#1083214](https://crbug.com/1083214) [、#1083797](https://crbug.com/1083797)
 
 ### <a name="new-app-shortcut-warnings-in-the-manifest-pane"></a>清单窗格中的新应用快捷方式警告
 
@@ -213,9 +213,9 @@ Chromium问题[1073903、#1083214、#1083797](https://crbug.com/1083214) [](http
 " **清单** "窗格现在显示针对以下条件的警告。
 
 * 应用快捷方式图标小于 96x96 像素
-* 应用快捷方式图标和清单图标不是 (，因为会忽略这些) 
+* 应用快捷方式图标和清单图标不是 (，因为图标在应用中) 
 
-:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="应用快捷方式警告" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
+:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="应用快捷方式警告。" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
    应用快捷方式警告
 :::image-end:::
 
@@ -225,7 +225,7 @@ Chromium问题[#955497](https://crbug.com/955497)
 
 现在 **，"** 元素"工具**** 中的"计算"窗格在所有视口大小中一致地显示为一个窗格。  以前 **，当**DevTools**** 视口的宽度较窄时，计算窗格合并在"样式"窗格中。
 
-:::image type="complex" source="../../media/2020/06/computed-pane.msft.png" alt-text="即使 DevTools 较窄，计算窗格也一致显示为单独的窗格" lightbox="../../media/2020/06/computed-pane.msft.png":::
+:::image type="complex" source="../../media/2020/06/computed-pane.msft.png" alt-text="即使 DevTools 较窄，计算窗格也一致显示为单独的窗格。" lightbox="../../media/2020/06/computed-pane.msft.png":::
    即使**** DevTools 较窄，计算窗格也一致显示为单独的窗格。
 :::image-end:::
 
@@ -242,7 +242,7 @@ Chromium问题[#1071432](https://crbug.com/1071432)
 
 当在"源"面板编辑器中执行复制[](../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files)或剪切操作时，DevTools 将复制或剪切当前内容行。
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="当光标位于第 5 行末尾时，从 DevTools pen.js复制整行并粘贴到Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="当光标位于第 5 行的末尾时，从 DevTools pen.js复制整行并粘贴到Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
    当光标位于第 5 行的末尾时，从 DevToolspen.js复制整行，并粘贴到 Visual Studio Code [。](https://code.visualstudio.com/) ****
 :::image-end:::
 
@@ -252,7 +252,7 @@ Chromium问题[#800028](https://crbug.com/800028)
 
 #### <a name="ungroup-same-console-messages"></a>取消同一控制台消息的组
 
-控制台**控制台中的**组设置现在适用于重复消息。  以前，它只应用于类似的邮件。
+控制台**控制台中的**组相似设置现在适用于重复消息。  以前，它只应用于类似的邮件。
 
 例如，以前，DevTools 未取消对邮件进行分组，即使未取消选中" `hello` **组** 相似"。  现在， `hello` 邮件已取消组合。
 
@@ -266,9 +266,9 @@ Chromium问题[#1082963](https://crbug.com/1082963)
 
 ### <a name="persisting-selected-context-only-settings"></a>持久化"仅选定上下文"设置
 
-控制台**控制台中的"仅**所选上下文设置设置现已保留。  以前，每次关闭并重新打开 DevTools 时，设置都会重置。  更改使设置行为与其他控制台选项设置一。
+控制台**控制台中的"** 所选上下文设置现在保留。  以前，每次关闭并重新打开 DevTools 时，设置都会重置。  更改使设置行为与其他控制台选项设置一。
 
-:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="选定的仅上下文设置" lightbox="../../media/2020/06/selected-context.msft.png":::
+:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="选定的仅上下文设置。" lightbox="../../media/2020/06/selected-context.msft.png":::
    **选定的仅上下文** 设置
 :::image-end:::
 
@@ -280,7 +280,7 @@ Chromium问题[#1055875](https://crbug.com/1055875)
 
 [JavaScript 编译缓存信息](https://v8.dev/blog/code-caching-for-devs) 现在始终显示在"性能 **"工具的** "摘要 **"面板** 中。  以前，如果未发生代码缓存，DevTools 不会显示与代码缓存相关的任何内容。
 
-:::image type="complex" source="../../media/2020/06/js-compilation-cache.msft.png" alt-text="JavaScript 编译缓存信息" lightbox="../../media/2020/06/js-compilation-cache.msft.png":::
+:::image type="complex" source="../../media/2020/06/js-compilation-cache.msft.png" alt-text="JavaScript 编译缓存信息。" lightbox="../../media/2020/06/js-compilation-cache.msft.png":::
    JavaScript 编译缓存信息
 :::image-end:::
 
@@ -290,7 +290,7 @@ Chromium问题[#912581](https://crbug.com/912581)
 
 用于 **根据** 录制开始的时间在标尺中显示时间的性能面板。  用户导航的录制时间现已更改，其中 DevTools 现在显示相对于导航的标尺时间。
 
-:::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="在性能工具中对齐导航计时" lightbox="../../media/2020/06/nav-timing.msft.png":::
+:::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="在性能工具中对齐导航计时。" lightbox="../../media/2020/06/nav-timing.msft.png":::
    在性能工具中 **对齐导航** 计时
 :::image-end:::
 
@@ -300,9 +300,9 @@ Chromium问题[#974550](https://crbug.com/974550)
 
 ### <a name="new-icons-for-breakpoints-conditional-breakpoints-and-logpoints"></a>断点、条件断点和登录点的新图标
 
-" **源** "面板具有针对断点、条件断点和日志的新设计。  断点用红色圆圈表示，就像[](https://visualstudio.microsoft.com/)Visual Studio Code Visual Studio。 [](https://code.visualstudio.com/)  添加图标以区分条件断点和日志点。
+" **源** "面板具有针对断点、条件断点和日志的新设计。  断点用红色圆圈表示，就像Visual Studio Code Visual Studio [](https://code.visualstudio.com/) [。](https://visualstudio.microsoft.com/)  添加图标以区分条件断点和日志点。
 
-:::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="断点" lightbox="../../media/2020/06/breakpoints.msft.png":::
+:::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="断点。" lightbox="../../media/2020/06/breakpoints.msft.png":::
    断点
 :::image-end:::
 
@@ -320,5 +320,6 @@ Chromium 问题 [#1041830](https://crbug.com/1041830)
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-85)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。
 

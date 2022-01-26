@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
-ms.openlocfilehash: 230bf6b1c4c2344984db2da8bc2dd07e903f8805
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 89f2cc5ad5fb478954816ee5572f67e6b80b2e4e
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12317881"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324781"
 ---
 <!-- Copyright Kayce Basques
 
@@ -42,12 +42,12 @@ ms.locfileid: "12317881"
 
 若要停止录制请求：
 
-1.  在" **网络"** 工具上，单击"停止 **记录** 网络日志 (![ 停止记录网络日志 ](../media/record-on-icon.msft.png)) 。  它变为灰色，表示开发人员工具不再记录请求。
-1.  在 (Windows焦点时 (linux) `Control` + `E` `Command` + `E` 或) macOS**** 命令。
+1.  在" **网络"** 工具上，单击"停止 **记录网络日志 ("** ![ 停止录制网络日志 ](../media/record-on-icon.msft.png) "。) 。  它变为灰色，表示开发人员工具不再记录请求。
+1.  在 (Windows焦点时) `Control` + `E` Linux (或 `Command` + `E`) macOS**** 命令。
 
 ### <a name="clear-requests"></a>清除请求
 
-单击"**网络** (上的"清除 ![ ](../media/clear-requests-icon.msft.png)) "按钮以清除"请求****"表中的所有请求。
+单击"**清除** (清除) "工具上的"清除"按钮以清除" ![ ](../media/clear-requests-icon.msft.png) 请求"表中的所有请求。 ****
 
 :::image type="content" source="../media/network-network-clear-button.msft.png" alt-text="&quot;清除&quot;按钮。" lightbox="../media/network-network-clear-button.msft.png":::
 
@@ -121,7 +121,7 @@ ms.locfileid: "12317881"
 
 一种称为“[渐进式 Web 应用](../progressive-web-apps/index.md)”的新 web 应用程序，，可在**服务人员**的帮助下脱机运行。<!-- [service workers](/web/fundamentals/getting-started/primers/service-workers) --> 在构建这种类型的应用程序时，快速模拟没有数据连接的设备可能会很有用。
 
-若要模拟脱机网络体验，请选择"没有**** 限制"下拉菜单 **>"脱机预设**  >  **"。**
+若要模拟脱机网络体验，请选择"没有**** 限制"下拉菜单>**预设**  >  **"。**
 
 " **脱机** "下拉菜单：
 
@@ -150,7 +150,7 @@ ms.locfileid: "12317881"
 
 ### <a name="manually-clear-browser-cookies"></a>手动清除浏览器 Cookie
 
-若要随时手动清除浏览器 Cookie，请将鼠标悬停在"请求"表中的任意位置，打开上下文菜单" (右键单击") "，然后选择"清除浏览器**Cookie"。**
+若要随时手动清除浏览器 Cookie，请将鼠标悬停在"请求"表中的任意位置，打开上下文菜单 (右键单击") "，然后选择"清除浏览器**Cookie"。**
 
 :::image type="content" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="选择&quot;清除浏览器 Cookie&quot;。" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
 
@@ -217,8 +217,8 @@ ms.locfileid: "12317881"
 | `larger-than` | 以字节为单位显示大于指定大小的资源。  将值设置为 `1000` 相当于将值设置为 `1k`。 |
 | `method` | 显示通过指定的 HTTP 方法类型检索的资源。  开发工具用找到的所有 HTTP 方法填充下拉列表。 |
 | `mime-type` | 显示指定 MIME 类型的资源。  开发工具用找到的所有 MIME 类型填充下拉列表。 |
-| `mixed-content` | 显示所有混合内容 () `mixed-content:all` 或只显示当前 `mixed-content:displayed` () 。 |
-| `scheme` | 显示通过未保护的 HTTP () 或受保护的 `scheme:http` HTTPS `scheme:https` () 。 |
+| `mixed-content` | 显示所有混合内容 () `mixed-content:all` 或只显示当前 () 。 `mixed-content:displayed` |
+| `scheme` | 显示通过未保护的 HTTP () 或受保护的 `scheme:http` HTTPS () 。 `scheme:https` |
 | `set-cookie-domain` | 显示具有与指定值匹配的 `Domain` 属性的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 域填充“自动完成”。 |
 | `set-cookie-name` | 显示具有名称与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 名称填充“自动完成”。 |
 | `set-cookie-value` | 显示具有值与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 值填充“自动完成”。 |
@@ -240,7 +240,7 @@ ms.locfileid: "12317881"
 
 如果未显示按钮，则" **筛选器"** 窗格可能处于隐藏状态。  请参阅 [隐藏筛选器窗格](#hide-the-filters-pane)。
 
-若要同时启用多类型筛选器，请长按 `Control` (Windows、Linux) 或 (`Command` macOS) 然后单击筛选器。
+若要同时启用多类型筛选器，请长按 (Windows、Linux) 或 `Control` `Command` (macOS) 然后单击筛选器。
 
 使用类型筛选器显示 JS、CSS 和文档资源：
 
@@ -274,7 +274,7 @@ ms.locfileid: "12317881"
 
 ### <a name="sort-by-activity-phase"></a>按活动阶段排序
 
-若要更改"瀑布"对请求的排序方式，请将鼠标悬停在"请求"表的标题上，打开上下文菜单 (右键单击") "，将鼠标悬**** 停在"瀑布"上，然后选择以下选项之一：
+若要更改"瀑布"对请求的排序方式，请将鼠标悬停在"请求"表的标题上，打开上下文菜单 (右键单击") "，将鼠标**** 悬停在"瀑布"上，然后选择以下选项之一：
 
 *  **开始时间**。  启动的首个请求位于顶部。
 
@@ -479,7 +479,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
   - 浏览器正在磁盘缓存中短暂分配空间。
 - **已停止**。 由于 **Queueing**中所述的任何原因，请求可能会停止。
 - **DNS 查找**。 浏览器正在解析请求的 IP 地址。
-- **初始连接**。 浏览器正在建立连接，包括 TCP 握手，然后重试和协商安全套接字层 (SSL) 。
+- **初始连接**。 浏览器正在建立连接，包括 TCP 握手，然后重试和协商 SSL (层) 。
 - **代理协商**。 浏览器正在与[代理服务器](https://en.wikipedia.org/wiki/Proxy_server)协商请求。
 - **请求已发送**。 正在发送请求。
 - **ServiceWorker Preparation**。 浏览器正在启动服务工作线程。
@@ -635,7 +635,7 @@ init();
 
 ### <a name="hide-the-filters-pane"></a>隐藏“筛选器”窗格
 
-默认情况下，DevTools 显示" **筛选器"** 窗格。  若要隐藏" **筛选器"** 窗格， **请选择"筛选器** (![ 筛选器 ](../media/filter-icon.msft.png)) 。
+默认情况下，DevTools 显示" **筛选器"** 窗格。  若要隐藏" **筛选器"** 窗格， **请选择"** 筛选器 (![ 筛选器 ](../media/filter-icon.msft.png) "。) 。
 
 :::image type="content" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="&quot;隐藏筛选器&quot;按钮。" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
 
@@ -659,4 +659,5 @@ init();
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/network/reference)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。
