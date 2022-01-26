@@ -8,12 +8,12 @@ ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.technology: webview
 ms.date: 11/12/2021
-ms.openlocfilehash: e4e8ab8f43fbb5ab55fd3cc7516da7f038dee413
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 6c0681fdacc2c11dbe0ebe4c4c83254ed89c80db
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320485"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324480"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介
 
@@ -31,7 +31,7 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术(HTML、C
 *  Web 应用的范围可以很广。  作为 Web 开发人员，你可以跨不同平台重用多数代码。
 *  要访问本机平台的所有功能，请使用本机应用。
 
-:::image type="complex" source="./media/WebView2/web-native.png" alt-text="Web 本机" lightbox="./media/WebView2/web-native.png":::
+:::image type="complex" source="./media/WebView2/web-native.png" alt-text="Web 本机。" lightbox="./media/WebView2/web-native.png":::
    Web 本机
 :::image-end:::
 
