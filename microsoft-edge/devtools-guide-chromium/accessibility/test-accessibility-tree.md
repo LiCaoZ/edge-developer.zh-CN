@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: cc847d977f72dc9c2030174ef24c2ff868e4b7c9
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: c420b963535496b59e06dca18cd8c3a815f5328d
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318084"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323206"
 ---
 # <a name="check-the-accessibility-tree-for-keyboard-and-screen-reader-support"></a>检查辅助功能树是否支持键盘和屏幕阅读器
 
@@ -25,7 +25,7 @@ ms.locfileid: "12318084"
 
 1.  打开 [新选项卡中的辅助功能测试](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 演示网页。 然后选择 **F12** 以打开 DevTools。
 
-1.  选择 **DevTools** (左上角的"检查") "检查图标"按钮，以便该按钮以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
+1.  选择" **检查** (检查"图标。) ![ 位于 DevTools 左上角的"检查"按钮，以便按钮以蓝色 (](../media/inspect-icon.msft.png) 突出显示) 。
 
 1.  在呈现的网页的"捐赠 **"部分** ，将鼠标悬停在 **"100"** 按钮上。  将显示 **"检查** "工具覆盖。
 
@@ -33,7 +33,7 @@ ms.locfileid: "12318084"
 
 1.  在" **样式"选项卡** 的右侧，选择 **"辅助功能"** 选项卡。 将显示 **元素的** 辅助功能树，并展开。
 
-:::image type="complex" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="辅助功能树工具中的&quot;资金&quot;表单按钮" lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
+:::image type="complex" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="辅助功能树工具中的&quot;资金&quot;表单按钮。" lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
     辅助功能树工具中的"资金"表单按钮
 :::image-end:::
 

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: ecfc49e9d4cd816098e895d21312f16b7f230172
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 6c59e3c094fec3e865dc827eb0fe31adfaac40f0
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318203"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323906"
 ---
 <!-- Copyright Kayce Basques
 
@@ -33,9 +33,9 @@ ms.locfileid: "12318203"
 若要跟踪 DevTools 中聚焦的元素：
 
 1.  打开“**控制台**”。
-1.  Choose **Create live expression (** Create live expression ![ ](../media/create-live-expression-icon.msft.png)) .
+1.  Choose **Create live expression (** Create live ![ expression. ](../media/create-live-expression-icon.msft.png)) .
 
-    :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="创建动态表达式" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
+    :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="创建 Live Expression。" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        创建动态表达式
     :::image-end:::
 
@@ -60,6 +60,7 @@ ms.locfileid: "12318203"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference)，由技术编写 (、Chrome DevTools & Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors/kaycebasques)
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) ，由技术编写者 [、Chrome](https://developers.google.com/web/resources/contributors/kaycebasques) DevTools & Lighthouse (创作) 。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

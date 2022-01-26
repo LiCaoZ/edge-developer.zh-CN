@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: c1e8b687e0cbb579eb606712b0ede4321ab79ee3
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 61e950e954ec8b23865656e42bbbf75565efd217
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318021"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323808"
 ---
 # <a name="check-for-contrast-issues-with-dark-theme-and-light-theme"></a>检查深色主题和浅主题的对比度问题
 
@@ -21,7 +21,7 @@ ms.locfileid: "12318021"
 
 大多数操作系统都提供深色模式和浅色模式。  您的网页可以使用 CSS 媒体查询对此操作系统设置做出反应。  您可以使用呈现工具中的 CSS 选项测试这些主题并测试 CSS 媒体查询，而无需更改 `prefers-color-scheme` **操作系统** 设置。
 
-例如，辅助功能测试演示页面包括浅色主题和深色主题。  演示页面从操作系统继承深色或浅色主题设置。  如果我们使用 DevTools 模拟将操作系统设置为浅色方案，然后刷新演示网页，问题工具将显示六个**** 色对比度问题，而不是两个。   (您可能会看到不同的数字。) 
+例如，辅助功能测试演示页面包括浅色主题和深色主题。  演示页面从操作系统继承深色或浅色主题设置。  如果我们使用 DevTools 模拟将操作系统设置为浅色方案，然后刷新演示网页，问题工具将显示六个**** 色对比度问题，而不是两个。   (你可能会看到不同的数字。) 
 
 
 若要模拟用户的首选颜色主题选择：：
@@ -33,24 +33,24 @@ ms.locfileid: "12318021"
 1.  在模拟 **CSS 媒体功能 prefers-color-scheme** 下拉列表中，选择 **prefers-color-scheme： light**。      网页使用 重新呈现 `light-theme.css` 。
 
 
-    :::image type="complex" source="../media/a11y-testing-simulating-light-mode.msft.png" alt-text="使用呈现工具模拟光线模式并触发文档的其他主题" lightbox="../media/a11y-testing-simulating-light-mode.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-simulating-light-mode.msft.png" alt-text="使用呈现工具模拟光线模式并触发文档的其他主题。" lightbox="../media/a11y-testing-simulating-light-mode.msft.png":::
         使用呈现工具模拟光线模式并触发文档的其他主题
     :::image-end:::
 
 
 1.  选择 **"问题** "工具，然后展开 **"辅助功能"** 部分。  根据各种因素，你可能会收到 `Insufficient color contrast` 警告。 请注意， **在受影响的资源** 中，有 6 个元素的颜色对比度不足。
 
-    :::image type="complex" source="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png" alt-text="由于浅色主题更改而检测到的新对比度问题" lightbox="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png" alt-text="由于浅色主题更改而检测到新的对比度问题。" lightbox="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png":::
         由于浅色主题更改而检测到的新对比度问题
     :::image-end:::
 
     在我们的演示页面上，页面的 **"私人** 状态"部分在浅色模式下不可读，需要更改。
 
-    :::image type="complex" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="在浅色模式下，&quot;接收状态&quot;部分有对比度问题" lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="在浅色模式下，&quot;私人状态&quot;部分有对比度问题。" lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
         在 **浅色模式下** ，"接收状态"部分有对比度问题
     :::image-end:::
 
-1.  在 DevTools 中，选择 **"元素**"工具，然后选择 macOS 上的 Windows/Linux 或 Command+F 上的**Ctrl+F。** ****  将显示 **"** 查找"文本框，以在 HTML DOM 树中搜索。
+1.  在 DevTools 中，选择 **"元素**"工具，然后在 Windows/Linux 或 macOS 上的 Command+F 上选择**Ctrl+F。** ****  将显示 **"** 查找"文本框，以在 HTML DOM 树中搜索。
 
 1.  输入 `scheme` 。  找到以下 CSS 媒体查询，现在可更新相应的 CSS 文件。
 

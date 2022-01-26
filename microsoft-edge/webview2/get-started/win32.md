@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 12/13/2021
-ms.openlocfilehash: 9bd3195bb53daecc3ceacad72377121d8a04f2c2
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 75f94ce5766b80a110dd4401098ddfba6407c14a
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318966"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323311"
 ---
 # <a name="get-started-with-webview2-in-win32-apps"></a>Win32 应用中的 WebView2 入门
 
@@ -42,7 +42,7 @@ ms.locfileid: "12318966"
 1.  在Visual Studio中，打开 `WebView2GettingStarted.sln` 。
     如果使用早期版本的 Visual Studio，请在"解决方案资源管理器"中右键**** 单击 **"WebView2GettingStarted"，** 然后选择"属性 **"。** 单击 **"配置属性**  >  **常规**"，Windows **SDK**版本和**平台工具**集，以使用 Win10 SDK 和 Visual Studio工具集。
 
-:::image type="complex" source="../media/tool-version.png" alt-text="工具版本" lightbox="../media/tool-version.png":::
+:::image type="complex" source="../media/tool-version.png" alt-text="工具版本。" lightbox="../media/tool-version.png":::
    工具版本
 :::image-end:::
 
@@ -55,7 +55,7 @@ Visual Studio显示错误，因为项目缺少 WebView2 头文件。 完成第 2
 
 1.  在 **"解决方案资源管理器**"中，右键单击项目名称，然后选择"管理NuGet**包"。**
 
-    :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="管理 NuGet 程序包" lightbox="../media/manage-nuget-packages.png":::
+    :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="管理NuGet包。" lightbox="../media/manage-nuget-packages.png":::
        管理 NuGet 程序包
     :::image-end:::
 
@@ -70,7 +70,7 @@ Visual Studio显示错误，因为项目缺少 WebView2 头文件。 完成第 2
         > [!NOTE]
         > 实现[Windows库](https://github.com/Microsoft/wil)和[Windows 运行时 C++ 模板](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true)库是可选的，并且使使用 COM 更容易作为示例。
 
-        :::image type="complex" source="../media/wil.png" alt-text="Windows实现库" lightbox="../media/wil.png":::
+        :::image type="complex" source="../media/wil.png" alt-text="Windows实现库。" lightbox="../media/wil.png":::
            Windows实现库
         :::image-end:::
 
@@ -79,7 +79,7 @@ Visual Studio显示错误，因为项目缺少 WebView2 头文件。 完成第 2
     1.  在搜索栏中，键入 `Microsoft.Web.WebView2` 并选择 **"Microsoft.Web.WebView2"。**
     1.  在右侧窗口中，单击"安装 **"。**  NuGet将 SDK 下载到计算机。
 
-        :::image type="complex" source="../media/nuget.png" alt-text="NuGet 程序包管理器" lightbox="../media/nuget.png":::
+        :::image type="complex" source="../media/nuget.png" alt-text="NuGet 程序包管理器。" lightbox="../media/nuget.png":::
            NuGet 程序包管理器
         :::image-end:::
 
@@ -106,7 +106,7 @@ Visual Studio显示错误，因为项目缺少 WebView2 头文件。 完成第 2
 
 ### <a name="build-your-empty-sample-app"></a>生成空示例应用
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -173,13 +173,13 @@ Visual Studio显示错误，因为项目缺少 WebView2 头文件。 完成第 2
 
 ### <a name="build-your-bing-sample-app"></a>生成必应示例应用
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
     现在，你有一个 WebView2 窗口，必应页面。
 
-:::image type="content" source="../media/bing-window.png" alt-text="必应窗口" lightbox="../media/bing-window.png":::
+:::image type="content" source="../media/bing-window.png" alt-text="必应窗口。" lightbox="../media/bing-window.png":::
 
 
 <!-- ====================================================================== -->
@@ -195,7 +195,7 @@ WebView2 团队已在上一步中介绍了使用 `ICoreWebView2::Navigate` 方�
 
 有关详细信息，请参阅 [WebView2 的导航事件](../concepts/navigation-events.md)。
 
-:::image type="content" source="../media/navigation-events.png" alt-text="导航事件" lightbox="../media/navigation-events.png":::
+:::image type="content" source="../media/navigation-events.png" alt-text="导航事件。" lightbox="../media/navigation-events.png":::
 
 在错误情况下，可能会发生以下一个或多个事件，具体取决于导航是否继续错误网页。
 
@@ -267,7 +267,7 @@ WebView2 团队已在上一步中介绍了使用 `ICoreWebView2::Navigate` 方�
 1.  主机注册处理程序以将收到的消息返回给 Web 内容。
 1.  主机将脚本注入 Web 内容，Web 内容注册处理程序以从主机打印消息。
 1.  主机将脚本注入到将 URL 张贴到主机的 Web 内容。
-1.  将触发主机处理程序，并返回消息 (Web) URL。
+1.  将触发主机的处理程序，并返回 (Web) URL 的消息。
 1.  将触发 Web 内容的处理程序，并输出来自主机的消息 (URL) 。
 
 复制以下代码段并粘贴到 `HelloWebView.cpp` 中。
@@ -293,7 +293,7 @@ webviewWindow->AddScriptToExecuteOnDocumentCreated(
 nullptr);
 ```
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **以保存项目。
+1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
 
 1.  按 **F5** 生成并运行项目。
 

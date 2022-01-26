@@ -8,12 +8,12 @@ ms.prod: microsoft-edge
 no-loc:
 - Enable new font editor tool within the Styles pane
 ms.date: 03/11/2021
-ms.openlocfilehash: c4f57065a82c6d4df0be2d5b4dfe20fbafad9f7d
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 370c2362118b413391f114d516496e0d3f13b169
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319547"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323731"
 ---
 # <a name="edit-css-font-styles-and-settings-in-the-styles-pane"></a>在“样式”窗格中编辑 CSS 字体样式和设置
 
@@ -29,11 +29,11 @@ ms.locfileid: "12319547"
 
 " **样式"窗格中** 的任何 CSS（字体定义或内联样式）都有"字体 **编辑器"** 图标。  若要打开可视字体 **编辑器，** 请单击" **字体编辑器"** 图标。
 
-:::image type="content" source="../media/font-editor-icon.msft.png" alt-text="“样式”窗格中用于编辑字体设置的图标" lightbox="../media/font-editor-icon.msft.png":::
+:::image type="content" source="../media/font-editor-icon.msft.png" alt-text="&quot;样式&quot;窗格中用于编辑字体设置的图标。" lightbox="../media/font-editor-icon.msft.png":::
 
 字体 **编辑器在** "样式"窗格 **顶部** 打开：
 
-:::image type="content" source="../media/font-editor-open.msft.png" alt-text="“字体编辑器”在“样式”窗格顶部打开" lightbox="../media/font-editor-open.msft.png":::
+:::image type="content" source="../media/font-editor-open.msft.png" alt-text="&quot;字体编辑器&quot;在&quot;样式&quot;窗格顶部打开。" lightbox="../media/font-editor-open.msft.png":::
 
 可视“**字体编辑器**”中的所有字段都是根据“**样式**”窗格中的 CSS 值填充的。  例如，`line-height` 定义在“**样式**”窗格中设置为 `160%`，因此线条高度文本字段显示 `160`，而单位下拉列表显示 `%`。  此外，滑块会自动设置为与文本字段的值匹配。
 
@@ -47,7 +47,7 @@ ms.locfileid: "12319547"
 
 字体 **编辑器在** "样式" **窗格顶部打开** ，其中突出显示了 **"字体系列** "选择器：
 
-:::image type="content" source="../media/font-editor-font-family.msft.png" alt-text="“字体编辑器”在“样式”窗格顶部打开，突出显示“字体系列”选择器" lightbox="../media/font-editor-font-family.msft.png":::
+:::image type="content" source="../media/font-editor-font-family.msft.png" alt-text="字体编辑器在&quot;样式&quot;窗格顶部打开，其中突出显示了&quot;字体系列&quot;选择器。" lightbox="../media/font-editor-font-family.msft.png":::
 
 使用“**字体系列**”下拉列表从字体列表中进行选择。  字体分为四组。
 
@@ -58,11 +58,11 @@ ms.locfileid: "12319547"
 
 字体 **编辑器在** "样式" **窗格顶部打开** ，其中突出显示了 **"字体系列** "选择器：
 
-:::image type="content" source="../media/font-editor-font-family-list.msft.png" alt-text="“字体编辑器”在“样式”窗格顶部打开，突出显示“字体系列”选择器" lightbox="../media/font-editor-font-family-list.msft.png":::
+:::image type="content" source="../media/font-editor-font-family-list.msft.png" alt-text="字体编辑器在&quot;样式&quot;窗格顶部打开，其中突出显示了&quot;字体系列&quot;选择器。" lightbox="../media/font-editor-font-family-list.msft.png":::
 
 选择字体后，将显示另一个下拉菜单，供你选择回退字体。  你最多可以选择八种回退字体。  若要删除字体，请单击"删除 **字体系列"** 图标。
 
-<!--:::image type="content" source="../media/font-editor-defining-fonts.msft.png" alt-text="The font editor with a defined list of fonts and fallback fonts" lightbox="../media/font-editor-defining-fonts.msft.png":::
+<!--:::image type="content" source="../media/font-editor-defining-fonts.msft.png" alt-text="The font editor with a defined list of fonts and fallback fonts." lightbox="../media/font-editor-defining-fonts.msft.png":::
    The **Font Editor** with a defined list of fonts and fallback fonts highlighted
 :::image-end:::  -->
 
@@ -77,17 +77,17 @@ ms.locfileid: "12319547"
 
 字体 **编辑器在** "样式" **窗格顶部打开** ，其中突出显示了 CSS 属性：
 
-:::image type="content" source="../media/font-editor-css-properties.msft.png" alt-text="“字体编辑器”在“样式”窗格顶部打开，突出显示 CSS 属性" lightbox="../media/font-editor-css-properties.msft.png":::
+:::image type="content" source="../media/font-editor-css-properties.msft.png" alt-text="字体编辑器在&quot;样式&quot;窗格顶部打开，其中突出显示了 CSS 属性。" lightbox="../media/font-editor-css-properties.msft.png":::
 
 您还可以使用可视字体编辑器转换 CSS **单位**。  例如，可以在 CSS 规则（其中字体大小滑块最初设置为****）上使用此工具 `16 pixels` 。  现在，使用单位下拉列表并选择值 `em` 。  显示的 `1 em` 等于 `16 pixels`。
 
 将字体大小更改为 `16 pixels` ：
 
-:::image type="content" source="../media/font-editor-setting-to-16px.msft.png" alt-text="将字号更改为 16 像素" lightbox="../media/font-editor-setting-to-16px.msft.png":::
+:::image type="content" source="../media/font-editor-setting-to-16px.msft.png" alt-text="将字体大小更改为 16 像素。" lightbox="../media/font-editor-setting-to-16px.msft.png":::
 
 打开"单位"下拉列表以转换为 `em` ：
 
-:::image type="content" source="../media/font-editor-converted-to-em.msft.png" alt-text="打开单位下拉列表以转换为 em" lightbox="../media/font-editor-converted-to-em.msft.png":::
+:::image type="content" source="../media/font-editor-converted-to-em.msft.png" alt-text="打开单位下拉列表以转换为 em。" lightbox="../media/font-editor-converted-to-em.msft.png":::
 
 单位下拉列表提供所有可用的数值 CSS 单位。  字体大小、线条高度、字体粗细和间距都使用不同的单位。  当文本框具有焦点时，可以按 和 `arrow up` `arrow down` 键来微调设置。  若要将滑块与键盘一同使用，请按 `arrow left` 和 `arrow down` 键。
 
@@ -95,4 +95,4 @@ ms.locfileid: "12319547"
 
 打开预设关键字界面：
 
-:::image type="content" source="../media/font-editor-preset-font-sizes.msft.png" alt-text="打开预设关键字界面" lightbox="../media/font-editor-preset-font-sizes.msft.png":::
+:::image type="content" source="../media/font-editor-preset-font-sizes.msft.png" alt-text="打开预设关键字界面。" lightbox="../media/font-editor-preset-font-sizes.msft.png":::

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 66061f587b0013dafc64c66a44d699a17b72d1a5
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: b1fa04d7ff554d912bf78f418e7c5ed760240a7f
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318483"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12322989"
 ---
 <!-- Copyright Kayce Basques
 
@@ -34,7 +34,7 @@ ms.locfileid: "12318483"
 1.  在 **"设置"** 下，选择"**忽略列表"。**  将显示 **"框架**库代码 **"设置**部分。
 1.  打开" **将内容脚本标记为库代码"** 复选框。
 
-    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="启用&quot;将内容脚本标记为库代码&quot;复选框" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
+    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="启用&quot;将内容脚本标记为库代码&quot;复选框。" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
        启用" **将内容脚本标记为库代码"** 复选框
     :::image-end:::
 
@@ -44,4 +44,5 @@ ms.locfileid: "12318483"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/javascript/ignore-chrome-extension-scripts/)，由技术编写 (、Chrome DevTools & Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

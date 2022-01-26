@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: fa50b7a3db274b63df7d5928df206bb815450701
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 9171f65f9ca18bdde7a915fe4134f244aca13a42
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320506"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12322982"
 ---
 <!-- Copyright Kayce Basques
 
@@ -38,7 +38,7 @@ ms.locfileid: "12320506"
 
 运行代码段之前的网页：
 
-:::image type="content" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="运行代码片段之前的网页" lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
+:::image type="content" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="运行代码段之前的网页。" lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
 
 运行代码段之前网页的代码段源代码：
 
@@ -52,7 +52,7 @@ document.body.appendChild(p);
 
 下图所示为运行代码片段后出现的网页。  将弹出**控制台抽屉式选项卡**显示代码片段记录的 `Hello, Snippets!` 消息，并且网页的内容全部更改。
 
-:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="运行代码片段后的网页" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="运行代码段后的网页。" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
    运行代码片段后的网页
 :::image-end:::
 
@@ -62,7 +62,7 @@ document.body.appendChild(p);
 
 左侧**导航**器窗格中的"代码**** 段"选项卡列出了您的代码段。  当您要编辑代码段时，您需要从"代码段"选项卡 **中打开** 它。
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="&quot;代码段&quot;选项卡" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="&quot;代码段&quot;选项卡。" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
    " **代码段"** 选项卡
 :::image-end:::
 
@@ -70,19 +70,19 @@ document.body.appendChild(p);
 
 1.  选择" **源"** 选项卡。 将显示 **"源** "工具。
 
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="在左侧打开&quot;页面&quot;选项卡的&quot;源&quot;工具" lightbox="../media/javascript-sources-page-pane.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="左侧打开&quot;页面&quot;选项卡的&quot;源&quot;工具。" lightbox="../media/javascript-sources-page-pane.msft.png":::
        在 **左侧** 打开" **页面"** 选项卡的"源"工具
     :::image-end:::
 
-1.  在左侧**导航器** (窗格中，) 代码**段"** 选项卡。 若要访问 **"代码段**"选项，可能需要选择"更多**** 选项卡 (![ 更多选项卡 ](../media/more-tabs-icon.msft.png)) 。
+1.  在左侧**导航器** (窗格中，) 代码**段"** 选项卡。 若要访问 **"代码段**"选项，可能需要选择"更多**** 选项卡 (![ 更多选项卡 ](../media/more-tabs-icon.msft.png) 。) 。
 
 ### <a name="open-the-snippets-tab-with-the-command-menu"></a>使用命令菜单打开"代码段"选项卡
 
 1.  在 DevTools 中选择任何内容，以便 DevTools 具有焦点。
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令菜单。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令菜单。
 1.  键入 `Snippets` ，选择 **"显示代码**段"，然后选择 `Enter` 运行命令。
 
-    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="显示代码片段命令" lightbox="../media/javascript-search-show-snippets.msft.png":::
+    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="&quot;显示代码段&quot;命令。" lightbox="../media/javascript-search-show-snippets.msft.png":::
        **显示代码片段**命令
     :::image-end:::
 
@@ -96,17 +96,17 @@ document.body.appendChild(p);
 1.  选择 **"新建代码段"。**
 1.  输入代码段的名称，然后选择 `Enter` 。
 
-    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="为代码片段命名" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="命名代码段。" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
        为代码片段命名
     :::image-end:::
 
 ### <a name="create-a-snippet-through-the-command-menu"></a>通过命令菜单创建代码片段
 
 1.  将光标停在 DevTools 中的任一位置。
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令菜单。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令菜单。
 1.  键入 `Snippet` ，选择 **创建新代码段**，然后选择 `Enter` 运行命令。
 
-    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="用于新建代码片段的命令" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
+    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="用于创建新代码段的命令。" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
        用于新建代码片段的命令
     :::image-end:::
 
@@ -119,14 +119,14 @@ document.body.appendChild(p);
 1.  [打开"代码段"选项卡](#open-the-snippets-tab)。
 1.  在 **"代码段** "选项卡中，选择要编辑的代码段的名称。  它将在**代码编辑器**中打开。
 
-    :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="代码编辑器" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="代码编辑器。" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
        代码**编辑器**
     :::image-end:::
 
 1.  使用**代码编辑器**将 JavaScript 添加到代码片段。
-1.  当代码片段名称旁边出现星号时，表示有代码未保存。  选择要 `Control` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存。
+1.  当代码片段名称旁边出现星号时，表示有代码未保存。  选择 `Control` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存。
 
-    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="代码片段名称旁边显示星号表示代码未保存" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="代码段名称旁边的星号表示未保存的代码。" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
        代码片段名称旁边显示星号表示代码未保存
     :::image-end:::
 
@@ -138,15 +138,15 @@ document.body.appendChild(p);
 
 1.  [打开"代码段"选项卡](#open-the-snippets-tab)。
 1.  选择要运行的代码片段的名称。  代码片段将在**代码编辑器**中打开。
-1.  选择 **运行代码段** (![ 运行代码 ](../media/run-snippet-icon.msft.png) 段) 。
+1.  选择 **运行代码段** (![ 运行代码段 ](../media/run-snippet-icon.msft.png) 。) 。
 
 ### <a name="run-a-snippet-with-the-command-menu"></a>使用命令菜单运行代码片段
 
 1.  将光标停在 DevTools 中的任一位置。
-1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令菜单。
+1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) 打开命令菜单。
 1.  删除 `>` 字符并在要运行的代码片段名称后键入 `!` 字符。
 
-    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="使用命令菜单运行代码片段" lightbox="../media/javascript-search-run-command.msft.png":::
+    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="从命令菜单运行代码段。" lightbox="../media/javascript-search-run-command.msft.png":::
        使用命令菜单运行**代码片段**
     :::image-end:::
 
@@ -157,7 +157,7 @@ document.body.appendChild(p);
 ## <a name="rename-snippets"></a>重命名代码片段
 
 1.  [打开"代码段"选项卡](#open-the-snippets-tab)。
-1.  将鼠标悬停在代码段名称上，打开上下文菜单 (右键单击") "重命名 **"。**
+1.  将鼠标悬停在代码段名称上，打开上下文菜单 (右键单击") "，然后选择"重命名 **"。**
 
 
 <!-- ====================================================================== -->
@@ -182,4 +182,5 @@ document.body.appendChild(p);
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

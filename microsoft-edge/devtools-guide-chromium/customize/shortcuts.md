@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/10/2021
-ms.openlocfilehash: 5a4c25560b8447a42344992a4db2fd5a532e54b9
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 24f5eb9063bfa6994f56cb787460f1b1d72e1786
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320345"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323773"
 ---
 # <a name="customize-keyboard-shortcuts"></a>自定义键盘快捷方式
 
@@ -30,7 +30,7 @@ ms.locfileid: "12320345"
 1.  选择 **"快捷方式设置** "页。
 1.  在右上角的"从预设匹配**** 快捷方式"**下拉列表**中，选择"Visual Studio Code"而不是"默认 (**DevTools) "。 **
 
-    :::image type="complex" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="将 DevTools 中的键盘快捷方式与Visual Studio Code" lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
+    :::image type="complex" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="将 DevTools 中的键盘快捷方式与Visual Studio Code。" lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
        将 DevTools 中的键盘快捷方式与Visual Studio Code
     :::image-end:::
 
@@ -49,22 +49,22 @@ ms.locfileid: "12320345"
 1.  打开[设置，](./index.md#settings)例如，选择主工具栏中的齿轮图标，或选择 `Shift` + `?` 。
 1.  选择 **"快捷方式设置** "页。
 1.  选择要自定义的操作。  例如，在" **调试器** "部分，选择 **"暂停脚本执行"** 操作。
-1.  Select the **Edit** (![ EditKeyboardShortcut ](../media/edit-keyboard-shortcut-icon.msft.png)) icon.
+1.  选择" **编辑 (** ![ EditKeyboardShortcut"。) ](../media/edit-keyboard-shortcut-icon.msft.png) 图标。
 
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Select the action to customize from the Shortcuts page in 设置" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Select the action to customize from the Shortcuts page in 设置." lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        Select the action to customize from the **Shortcuts** page in**设置**
     :::image-end:::
 
 1.  若要将快捷键绑定到操作，请确保操作旁边的文本框具有焦点，然后使用键盘选择快捷键。
 1.  若要将多个快捷方式组合绑定到某个操作，请选择"添加**** 快捷方式"，确保操作旁边的文本框具有焦点，然后使用键盘选择快捷键。
 
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="选择要分配给该操作的密钥" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="选择要分配给该操作的键。" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
        选择要分配给该操作的密钥
     :::image-end:::
 
-1.  若要保存新的键盘快捷方式，请选择选中标记 (![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)) 图标。
+1.  若要保存新的键盘快捷方式，请选择选中标记 (![CheckmarkKeyboardShortcut。](../media/checkmark-keyboard-shortcut-icon.msft.png)) 图标。
 
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="选择选中标记图标以保存新的键盘快捷方式" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="选择选中标记图标以保存新的键盘快捷方式。" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
        选择选中标记图标以保存新的键盘快捷方式
     :::image-end:::
 
@@ -75,15 +75,15 @@ ms.locfileid: "12320345"
 
 <!-- keep in same order as screenshot: -->
 
-*  如果" **自定义键盘快捷方式** " (![ 旁边显示的"CustomKeyboardShortcut") "图标，则表明已自定义 ](../media/custom-keyboard-shortcut-icon.msft.png) 键盘快捷方式。
+*  如果有自定义键盘快捷方式 (**** CustomKeyboardShortcut。) 旁边显示的图标，它表示你已自定义 ![ ](../media/custom-keyboard-shortcut-icon.msft.png) 键盘快捷方式。
 
-*  若要在编辑某个动作的键盘快捷方式时删除某个动作的键盘快捷方式，请选择**** ![ DeleteKeyboardShortcut (DeleteKeyboardShortcut) ](../media/delete-keyboard-shortcut-icon.msft.png) 图标。
+*  若要在编辑某个动作的键盘快捷方式时删除某个动作的键盘快捷方式，请选择"删除 (**** ![ DeleteKeyboardShortcut"。) ](../media/delete-keyboard-shortcut-icon.msft.png) 图标。
 
-*  若要在编辑某个操作键盘快捷方式时为某个操作添加其他键盘快捷方式，请选择"添加快捷方式"链接，或**** 选择"自定义键盘快捷方式" (**** ![ CustomKeyboardShortcut) ](../media/custom-keyboard-shortcut-icon.msft.png) 图标。
+*  若要在编辑某个操作键盘快捷方式时为某个操作添加其他键盘快捷方式，请选择"添加快捷方式"链接，或**** 选择"自定义键盘快捷方式 **" (** ![ CustomKeyboardShortcut。) ](../media/custom-keyboard-shortcut-icon.msft.png) 图标。
 
-*  若要在编辑某个动作的键盘快捷方式时保存已修改或添加的键盘快捷方式，请选择选中 (![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)) 图标。
+*  若要在编辑某个动作的键盘快捷方式时保存已修改或添加的键盘快捷方式，请选择选中 (![CheckmarkKeyboardShortcut。](../media/checkmark-keyboard-shortcut-icon.msft.png)) 图标。
 
-*  若要在编辑某个操作键盘快捷方式时放弃所做的更改，请选择"X" (![XKeyboardShortcut](../media/discard-changes-keyboard-shortcut-icon.msft.png)) 图标。
+*  若要在编辑某个操作键盘快捷方式时放弃所做的更改，请选择"X" (![XKeyboardShortcut。](../media/discard-changes-keyboard-shortcut-icon.msft.png)) 图标。
 
 *  若要重置所有快捷方式，请选择" **还原默认快捷方式"** 按钮。
 

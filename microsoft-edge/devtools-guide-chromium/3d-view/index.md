@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/03/2020
-ms.openlocfilehash: a70e7a9ed52e4489ac2796b3a45269033486e013
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: f31d62f5813da6ca6f228050b802e102708fddfd
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318245"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323605"
 ---
 # <a name="3d-view"></a>3D 视图
 
@@ -35,7 +35,7 @@ ms.locfileid: "12318245"
 <!-- ====================================================================== -->
 ## <a name="navigating-the-canvas"></a>在画布上导航
 
-:::image type="complex" source="../media/3d-view-canvas.msft.png" alt-text="3D 视图画布" lightbox="../media/3d-view-canvas.msft.png":::
+:::image type="complex" source="../media/3d-view-canvas.msft.png" alt-text="3D 视图画布。" lightbox="../media/3d-view-canvas.msft.png":::
    3D 视图画布
 :::image-end:::
 
@@ -55,7 +55,7 @@ ms.locfileid: "12318245"
 
 ### <a name="on-screen-controls"></a>屏幕控件
 
-:::image type="complex" source="../media/3d-view-controls-small.msft.png" alt-text="屏幕控件" lightbox="../media/3d-view-controls-small.msft.png":::
+:::image type="complex" source="../media/3d-view-controls-small.msft.png" alt-text="屏幕控件。" lightbox="../media/3d-view-controls-small.msft.png":::
    屏幕控件
 :::image-end:::
 
@@ -67,7 +67,7 @@ ms.locfileid: "12318245"
 <!-- ====================================================================== -->
 ## <a name="z-index"></a>Z 索引
 
-:::image type="complex" source="../media/3d-view-z-index-view-box.msft.png" alt-text="Z 索引视图" lightbox="../media/3d-view-z-index-view-box.msft.png":::
+:::image type="complex" source="../media/3d-view-z-index-view-box.msft.png" alt-text="Z 索引视图。" lightbox="../media/3d-view-z-index-view-box.msft.png":::
    Z 索引视图
 :::image-end:::
 
@@ -105,7 +105,7 @@ ms.locfileid: "12318245"
 <!-- ====================================================================== -->
 ## <a name="3d-dom"></a>3D DOM
 
-:::image type="complex" source="../media/3d-view-dom-purple-box.msft.png" alt-text="DOM 视图" lightbox="../media/3d-view-dom-purple-box.msft.png":::
+:::image type="complex" source="../media/3d-view-dom-purple-box.msft.png" alt-text="DOM 视图。" lightbox="../media/3d-view-dom-purple-box.msft.png":::
    DOM 视图
 :::image-end:::
 
@@ -137,7 +137,7 @@ ms.locfileid: "12318245"
 <!-- ====================================================================== -->
 ## <a name="composited-layers"></a>复合层
 
-:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="复合层窗格" lightbox="../media/experiments-layers.msft.png":::
+:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="复合层窗格。" lightbox="../media/experiments-layers.msft.png":::
    **复合层**窗格
 :::image-end:::
 

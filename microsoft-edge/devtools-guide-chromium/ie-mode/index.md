@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 09/10/2021
-ms.openlocfilehash: b8e332545617dd60be374135cba3ead2d61859d6
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: c3e36678f1c7ad0df95a600e47f4a409af910a48
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320002"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324250"
 ---
 # <a name="use-devtools-in-internet-explorer-mode"></a>在"开发工具"模式下Internet Explorer DevTools
 
@@ -25,7 +25,7 @@ IE 模式中包含对以下技术的支持：
 
 在 IE 模式下，呈现过程基于 Internet Explorer 11。  Microsoft Edge进程管理器处理呈现过程的生命周期。  呈现过程被限制到特定网站集或应用选项卡 (生命周期) 。  当选项卡以 IE 模式呈现时，IE 模式指示器图标将显示在特定选项卡的地址栏中。
 
-:::image type="complex" source="../media/ie-mode-badge.msft.png" alt-text="地址栏中的 IE 模式指示器图标" lightbox="../media/ie-mode-badge.msft.png":::
+:::image type="complex" source="../media/ie-mode-badge.msft.png" alt-text="地址栏中的 IE 模式指示器图标。" lightbox="../media/ie-mode-badge.msft.png":::
    地址栏中的 IE 模式指示器图标
 :::image-end:::
 
@@ -37,7 +37,7 @@ IE 模式在 2019 年 5 Windows 10 1903 (Update) 上可用，并且适用于所�
 
 如果管理员已配置网站以在 IE 模式下Enterprise，则地址栏中会显示 IE 模式指示器图标。  若要在 IE 模式下查看网站的文档模式，请选择地址栏中的 IE 模式指示器图标。
 
-:::image type="complex" source="../media/ie-mode-badge-doc-mode.msft.png" alt-text="使用 IE 模式指示器图标查看文档模式" lightbox="../media/ie-mode-badge-doc-mode.msft.png":::
+:::image type="complex" source="../media/ie-mode-badge-doc-mode.msft.png" alt-text="使用 IE 模式指示器图标查看文档模式。" lightbox="../media/ie-mode-badge-doc-mode.msft.png":::
    使用 IE 模式指示器图标查看文档模式
 :::image-end:::
 
@@ -48,7 +48,7 @@ IE 模式在 2019 年 5 Windows 10 1903 (Update) 上可用，并且适用于所�
 *  打开上下文菜单 (右键单击) 并选择"**查看**源启动"记事本。
 *  选择 `F12` 或 `Ctrl` + `Shift` + `I` 打开开发人员工具Microsoft Edge空白实例，并显示以下消息：开发人员工具在Internet Explorer**不可用。 若要调试页面，请从 11 Internet Explorer页面。**
 
-:::image type="complex" source="../media/ie-mode-devtools.msft.png" alt-text="在 IE 模式下启动的 DevTools" lightbox="../media/ie-mode-devtools.msft.png":::
+:::image type="complex" source="../media/ie-mode-devtools.msft.png" alt-text="在 IE 模式下启动的 DevTools。" lightbox="../media/ie-mode-devtools.msft.png":::
    在 IE 模式下启动的 DevTools
 :::image-end:::
 
@@ -76,13 +76,13 @@ start msedge --remote-debugging-port=9222
 <!-- ====================================================================== -->
 ## <a name="replace-internet-explorer-automation"></a>替换Internet Explorer自动化
 
-如果您有一个使用 [InternetExplorer](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)) 对象自动执行 Internet Explorer 11 的现有应用程序，但 Internet Explorer 11 桌面应用程序不可用，则您的应用程序将不起作用。  Internet Explorer 11 将于 2022 年 6 月 15 日停用。  有关详细信息，请导航到"Internet Explorer[上的Windows 10"Microsoft Edge"。](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/)
+如果现有应用程序使用 [InternetExplorer](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)) 对象自动执行 Internet Explorer 11，但 Internet Explorer 11 桌面应用程序不可用，则应用程序将不起作用。  Internet Explorer 11 将于 2022 年 6 月 15 日停用。  有关详细信息，请导航到"Internet Explorer[上的Windows 10"Microsoft Edge"](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/)。
 
-Microsoft Edge不支持通过 对象自动执行 IE 模式，因此，需要更新依赖此对象的应用程序，使用下面建议的备选方法 `InternetExplorer` 之一。  使用 [WebBrowser](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752040(v=vs.85)) 控件的应用程序将继续工作，并且不受 11 Internet Explorer的影响。
+Microsoft Edge不支持通过 对象自动执行 IE 模式，因此，将需要使用下面建议的备选方法之一更新依赖于此对象 `InternetExplorer` 的应用程序。  使用 [WebBrowser](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752040(v=vs.85)) 控件的应用程序将继续工作，并且不受 11 Internet Explorer的影响。
 
-如果自动化应用程序不需要 IE 模式，网站 (或应用) 内容正常运行，我们建议更新应用程序以使用 Microsoft Edge 而不是 Internet Explorer 11。  许多可用的自动化工具都Microsoft Edge，包括 WebDriver 和 Playwright。  若要详细了解如何使用 WebDriver 自动Microsoft Edge，请导航到"使用[WebDriver 自动Microsoft Edge"。](../../webdriver-chromium/index.md)  若要了解有关使用 Playwright 的更多信息，请导航到使用[Playwright 自动执行和测试Microsoft Edge。](../../playwright/index.md)
+如果自动化应用程序不需要 IE 模式，网站 (或应用) 内容正常运行，我们建议将应用程序更新为使用 Microsoft Edge 而不是 Internet Explorer 11。  许多可用的自动化工具都Microsoft Edge，包括 WebDriver 和 Playwright。  若要详细了解如何使用 WebDriver 自动Microsoft Edge，请导航到"使用[WebDriver 自动Microsoft Edge"。](../../webdriver-chromium/index.md)  若要详细了解如何使用 Playwright，请导航到"使用[Playwright 自动执行和测试Microsoft Edge"。](../../playwright/index.md)
 
-需要 IE 模式的网站或应用 (内容) 的应用程序应使用此 `WebBrowser` 控件。  该控件使用 Internet Explorer 平台 (MSHTML/Trident) 来呈现 Web 内容，即使 Internet Explorer 11 桌面应用程序不可用，该控件也将正常工作。 `WebBrowser`
+需要 IE 模式的网站或应用 (内容) 的应用程序应使用此 `WebBrowser` 控件。  该控件使用 Internet Explorer 平台 (MSHTML/Trident) 来呈现 Web 内容，即使 Internet Explorer 11 桌面应用程序不可用，该控件也将 `WebBrowser` 正常工作。
 
 
 <!-- ====================================================================== -->

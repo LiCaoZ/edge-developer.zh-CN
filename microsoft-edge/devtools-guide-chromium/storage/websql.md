@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 7a43eb630abe1786c03d87bdc7c98ce2d705ed89
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: c88a6610b7b93ef8f62b08959005c044f64555e9
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320086"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324536"
 ---
 <!-- Copyright Kayce Basques
 
@@ -39,19 +39,19 @@ ms.locfileid: "12320086"
 
 1.  选择 **源**工具以打开**源**工具。  通常默认**清单**窗格打开。
 
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-manifest.msft.png":::
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="&quot;清单&quot;窗格。" lightbox="../media/storage-application-manifest.msft.png":::
        **清单**窗格
     :::image-end:::
 
 1.  展开 **Web SQL** 部分以查看数据库和表。  在下图中，**html5meetup** 下方是数据库，**子表**是表。
 
-    :::image type="complex" source="../media/storage-application-storage-web-sql.msft.png" alt-text="Web SQL 窗格" lightbox="../media/storage-application-storage-web-sql.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-web-sql.msft.png" alt-text="Web SQL窗格。" lightbox="../media/storage-application-storage-web-sql.msft.png":::
        **Web SQL** 窗格
     :::image-end:::
 
 1.  选择一个表以查看该表的数据。
 
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png" alt-text="查看 Web SQL 表的数据" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png" alt-text="查看 Web 数据表SQL数据。" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png":::
        查看 Web SQL 表的数据
     :::image-end:::
 
@@ -68,7 +68,7 @@ ms.locfileid: "12320086"
 1.  选择数据库以打开该数据库的控制台。
 1.  键入 Web SQL 语句，然后选择 `Enter` 进行运行。
 
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="使用 Web SQL 控制台删除表中的行" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="使用 Web SQL控制台从表中删除行。" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
        使用 Web SQL 控制台删除表中的行
     :::image-end:::
 
@@ -79,7 +79,7 @@ ms.locfileid: "12320086"
 DevTools 不会实时更新表。  若要更新表中的数据，请完成以下操作。
 
 1.  [查看 Web SQL 表中的数据](#view-web-sql-data)。
-1.  Choose **Refresh (** Refresh ![ ](../media/refresh-icon.msft.png)) .
+1.  选择 **"刷新** (![ 刷新 ](../media/refresh-icon.msft.png) "。) 。
 
 
 <!-- ====================================================================== -->
@@ -88,7 +88,7 @@ DevTools 不会实时更新表。  若要更新表中的数据，请完成以下
 1.  [查看 Web SQL 表中的数据](#view-web-sql-data)。
 1.  使用**可见列**文本框指定要显示的列。  使用 CSV 列表提供列的名称。
 
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="使用可见列文本框减少显示的列数" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="使用&quot;可见列&quot;文本框可以减少显示的列数。" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
        使用 **可见列**文本框减少显示的列数
     :::image-end:::
 
@@ -99,13 +99,13 @@ DevTools 不会实时更新表。  若要更新表中的数据，请完成以下
 1.  打开**清除存储**窗格。
 1.  确保 **Web SQL** 复选框已打开。
 
-    :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="Web SQL 复选框" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
+    :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="&quot;Web SQL复选框。" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
        **Web SQL** 复选框
     :::image-end:::
 
 1.  选择**清除网站数据**。
 
-    :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="清除网站数据按钮" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
+    :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="&quot;清除网站数据&quot;按钮。" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
        **清除网站数据**按钮
     :::image-end:::
 
@@ -115,4 +115,5 @@ DevTools 不会实时更新表。  若要更新表中的数据，请完成以下
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/websql)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

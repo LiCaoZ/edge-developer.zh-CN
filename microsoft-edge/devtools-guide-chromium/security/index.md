@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: b3e8f9e79072d04e0fd8664004a7a57c0bafdde2
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 2612537bda6468b556e6a73eaac745ae3ea9d4ba
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320828"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324550"
 ---
 <!-- Copyright Kayce Basques
 
@@ -41,7 +41,7 @@ ms.locfileid: "12320828"
 1.  [打开 DevTools](../open/index.md)。
 1.  选择" **安全"** 选项卡以打开 **"安全"** 工具。
 
-    :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="安全面板" lightbox="../media/security-security-overview-secure.msft.png":::
+    :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="安全面板。" lightbox="../media/security-security-overview-secure.msft.png":::
        安全**面板**
     :::image-end:::
 
@@ -53,7 +53,7 @@ ms.locfileid: "12320828"
 
 当页面的主源不安全时，安全**概述指出****此页面不安全**。
 
-:::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="非安全页面" lightbox="../media/security-security-overview-non-secure.msft.png":::
+:::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="非安全页面。" lightbox="../media/security-security-overview-non-secure.msft.png":::
    非安全页面
 :::image-end:::
 
@@ -70,13 +70,13 @@ ms.locfileid: "12320828"
 
 **混合内容**<!--[mixed content](/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)--> 表示页面的主源是安全的，但页面从非安全源请求资源。  混合内容页仅部分受保护，因为探查器可以访问 HTTP 内容，并且易受中间人攻击。
 
-:::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="混合内容" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
+:::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="混合内容。" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
    混合内容
 :::image-end:::
 
 在上图中，选择"网络"面板中的"**查看 1**请求"以打开 **"** 网络"工具并应用筛选器，以便"网络日志"只显示 `mixed-content:displayed` 非安全资源。 ****
 
-:::image type="complex" source="../media/security-network-filter.msft.png" alt-text="网络日志中的混合资源" lightbox="../media/security-network-filter.msft.png":::
+:::image type="complex" source="../media/security-network-filter.msft.png" alt-text="网络日志中的混合资源。" lightbox="../media/security-network-filter.msft.png":::
    网络日志中的 **混合资源**
 :::image-end:::
 
@@ -88,7 +88,7 @@ ms.locfileid: "12320828"
 
 从" **安全概述"** 中， **选择"查看** 证书"以快速检查证书的主来源。
 
-:::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="主源证书" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
+:::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="主源证书。" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
    主源证书
 :::image-end:::
 
@@ -96,7 +96,7 @@ ms.locfileid: "12320828"
 
 选择左侧导航中的条目之一以查看源的详细信息。  在详细信息页中，可以查看连接和证书信息。  证书透明度信息还会在可用时显示。
 
-:::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="主源详细信息" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
+:::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="主源详细信息。" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
    主源详细信息
 :::image-end:::
 
@@ -106,4 +106,5 @@ ms.locfileid: "12320828"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/security/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

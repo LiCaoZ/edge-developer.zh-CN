@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 05/06/2021
-ms.openlocfilehash: bb54c939d927f9809bc8a0dc43cd120817cd9ef3
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: c03a2465932915ac66751efd4891915115b22757
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319456"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324340"
 ---
 # <a name="use-the-chrome-devtools-protocol-in-webview2"></a>在 WebView2 中使用 Chrome DevTools 协议
 
-[Chrome DevTools 协议](https://chromedevtools.github.io/devtools-protocol)提供用于检测、检查、调试和配置文件的 API Chromium基于浏览器。  Chrome DevTools 协议是开发工具Microsoft Edge的基础。  对 WebView2 平台中未实现的功能使用 Chrome DevTools 协议。
+[Chrome DevTools 协议](https://chromedevtools.github.io/devtools-protocol)提供用于检测、检查、调试和配置文件Chromium浏览器的 API。  Chrome DevTools 协议是开发工具Microsoft Edge的基础。  对 WebView2 平台中未实现的功能使用 Chrome DevTools 协议。
 
 若要在 WebView2 应用中使用 Chrome DevTools 协议 API，请执行下列任一操作：
 
@@ -80,7 +80,7 @@ ms.locfileid: "12319456"
 1.  打开 `geolocation.html` 文件。
 1.  若要显示纬度和经度坐标，请选择"显示 **位置"** 按钮。  若要验证和比较地理位置，请将坐标复制并粘贴到 中 [https://www.bing.com/maps](https://www.bing.com/maps) 。
 
-    :::image type="complex" source="./media/geolocater-browser.png" alt-text="在用户位置中显示用户的地理位置Microsoft Edge" lightbox="./media/geolocater-browser.png":::
+    :::image type="complex" source="./media/geolocater-browser.png" alt-text="在用户位置中显示用户的地理位置Microsoft Edge。" lightbox="./media/geolocater-browser.png":::
        在用户位置中显示用户的地理位置Microsoft Edge
     :::image-end:::
 
@@ -100,7 +100,7 @@ ms.locfileid: "12319456"
 
 1.  确保 `geolocation.html` 文件显示在 WebView2 控件应用中。
 
-    :::image type="complex" source="./media/initial-geolocate.png" alt-text="在 WebView2 geolocater.html应用中显示文件" lightbox="./media/initial-geolocate.png":::
+    :::image type="complex" source="./media/initial-geolocate.png" alt-text="在 WebView2 geolocater.html显示文件。" lightbox="./media/initial-geolocate.png":::
        在 `geolocation.html` WebView2 控件应用中显示文件
     :::image-end:::
 
@@ -113,7 +113,7 @@ ms.locfileid: "12319456"
 1.  选择**Project**  >  **管理NuGet程序包**  >  **浏览"。**
 1.  键入 `Microsoft.Web.WebView2.DevToolsProtocolExtension` 并选择 **"Microsoft.Web.WebView2.DevToolsProtocolExtension**  >  **安装"。**
 
-:::image type="complex" source="./media/cdp-nuget.png" alt-text="确保 Microsoft.Web.WebView2.DevToolsProtocolExtension 显示在Visual Studio NuGet 程序包管理器" lightbox="./media/cdp-nuget.png":::
+:::image type="complex" source="./media/cdp-nuget.png" alt-text="确保 Microsoft.Web.WebView2.DevToolsProtocolExtension 显示在Visual Studio NuGet 程序包管理器。" lightbox="./media/cdp-nuget.png":::
    确保**Microsoft.Web.WebView2.DevToolsProtocolExtension**显示在Visual Studio NuGet 程序包管理器
 :::image-end:::
 
@@ -162,7 +162,7 @@ ms.locfileid: "12319456"
 1.  运行应用。
 1.  若要显示法国巴黎的坐标，请选择" **显示位置"** 按钮。
 
-    :::image type="complex" source="./media/final-location-cdp.png" alt-text="在 .html 2 控件中显示文件，并包含巴黎的坐标" lightbox="./media/final-location-cdp.png":::
+    :::image type="complex" source="./media/final-location-cdp.png" alt-text="在 WebView2 .html显示坐标为 Paris 的 WebView2 文件。" lightbox="./media/final-location-cdp.png":::
        在 `.html` WebView2 控件中显示文件以及巴黎的坐标
     :::image-end:::
 
@@ -172,7 +172,7 @@ ms.locfileid: "12319456"
 
 若要请求 WebView2 平台功能，请在 [WebView2Feedback](https://github.com/MicrosoftEdge/WebView2Feedback)存储库输入新问题。
 
-若要提交有关 Chrome DevTools 协议的 bug，在错误数据库中Chromium [Bug 报告](https://bugs.chromium.org/p/chromium/issues/entry?components=Platform%3EDevTools%3EPlatform)。
+若要提交有关 Chrome DevTools 协议的 bug，请提交错误报告Chromium [Bug 数据库](https://bugs.chromium.org/p/chromium/issues/entry?components=Platform%3EDevTools%3EPlatform)。
 
 Chrome DevTools 协议由开放源代码Chromium维护，而不是由 Microsoft Edge WebView2 团队维护。
 

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/07/2021
-ms.openlocfilehash: 0c42aef743e359f9ab395f728c75e55333029438
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: a52034846aa6de338fd013119a6b903211dacf0f
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318623"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323633"
 ---
 # <a name="supported-apis-for-microsoft-edge-extensions"></a>支持用于扩展Microsoft Edge API
 
@@ -25,7 +25,7 @@ ms.locfileid: "12318623"
 | [browsingData](https://developer.chrome.com/extensions/browsingData) | 从用户的本地配置文件中删除浏览数据。 |
 | [命令](https://developer.chrome.com/extensions/commands) | 添加在扩展中触发操作键盘快捷方式。 例如，打开浏览器或向扩展发送命令的操作。 |
 | [contentSettings](https://developer.chrome.com/extensions/contentSettings) | 通常，内容设置允许您在每个网站上（而不是全局Microsoft Edge自定义网站集的行为。 更改控制网站是否可以使用 Cookie、JavaScript 和插件等功能的设置。 |
-| [contextMenus](https://developer.chrome.com/extensions/contextMenus) | 将项目添加到上下文菜单中的 Microsoft Edge。 菜单项可能适用于不同的对象，如图像、超链接和页面。 |
+| [contextMenus](https://developer.chrome.com/extensions/contextMenus) | 将项目添加到上下文菜单中的Microsoft Edge。 菜单项可能适用于不同的对象，如图像、超链接和页面。 |
 | [Cookie](https://developer.chrome.com/extensions/cookies) | 查询和修改 Cookie，在 Cookie 更改时接收通知。 |
 | [调试器](https://developer.chrome.com/extensions/debugger) | 附加到一个或多个选项卡以检测网络交互、调试 JavaScript、更改 DOM、更改 CSS 等。 使用调试器 tabId 通过 sendCommand 定向选项卡，并按 tabId 从 onEvent 回调路由事件。 |
 | [declarativeContent](https://developer.chrome.com/extensions/declarativeContent) | 根据页面内容采取操作，而无需读取页面内容的权限。 |
@@ -51,8 +51,8 @@ ms.locfileid: "12318623"
 | [permissions](https://developer.chrome.com/extensions/permissions) | 在运行时检索声明的可选权限，而不是在安装时检索。 可以使用此 API 向用户显示所需的和已批准的权限。 |
 | [电源](https://developer.chrome.com/extensions/power) | 覆盖系统的电源管理功能。 |
 | [printerProvider](https://developer.chrome.com/extensions/printerProvider) | 使用事件查询打印机及其功能，并提交打印作业。 |
-| [隐私](https://developer.chrome.com/extensions/privacy) | 控制Microsoft Edge用户隐私的控件功能。 此 API 取决于 `EdgeSetting` 的原型 `types` ，用于获取和设置 Microsoft Edge。 |
-| [代理](https://developer.chrome.com/extensions/proxy) | 管理客户端的代理Microsoft Edge。 此 API 依赖于 `EdgeSetting` API 的原型 `types` ，用于获取和设置 Microsoft Edge。 |
+| [隐私](https://developer.chrome.com/extensions/privacy) | 控制Microsoft Edge用户隐私的控件功能。 此 API 依赖于 `EdgeSetting` 的原型 `types` ，用于获取和设置 Microsoft Edge。 |
+| [代理](https://developer.chrome.com/extensions/proxy) | 管理客户端的代理Microsoft Edge。 此 API 取决于 `EdgeSetting` API 的原型 `types` ，用于获取和设置 Microsoft Edge。 |
 | [运行时](https://developer.chrome.com/extensions/runtime) | 检索后台页面，返回有关清单的详细信息，并侦听和响应应用或扩展生命周期中的事件。 还可以将 URL 的相对路径转换为完全限定的 URL。 |
 | [会话](https://developer.chrome.com/extensions/sessions) | 从浏览会话查询和还原选项卡和窗口。 |
 | [存储](https://developer.chrome.com/extensions/storage) | 存储、检索和跟踪用户数据更改。 |
@@ -61,8 +61,8 @@ ms.locfileid: "12318623"
 | [tabCapture](https://developer.chrome.com/extensions/tabCapture) | 与选项卡媒体流交互。 |
 | [选项卡](https://developer.chrome.com/extensions/tabs) | 与浏览器的选项卡系统交互以创建、修改和重新排列选项卡。 |
 | [topSites](https://developer.chrome.com/extensions/topSites) | 访问显示在新选项卡页上的热门网站（也称为访问最多的网站）。 这些网站不包括用户自定义的快捷方式。 |
-| [tts](https://developer.chrome.com/extensions/tts) | 在 TTS 中播放合成 (语音) 。 |
-| [ttsEngine](https://developer.chrome.com/extensions/ttsEngine) | 使用扩展在 TTS (实现) 到语音的语音到语音。 注册为此 API 的扩展接收包含要说出的语音和其他参数的事件。 然后，扩展可以使用任何可用的 Web 技术来合成和输出语音，并将事件发送回调用函数以报告状态。 |
+| [tts](https://developer.chrome.com/extensions/tts) | 在 TTS 中播放合成的文本 (语音) 。 |
+| [ttsEngine](https://developer.chrome.com/extensions/ttsEngine) | 使用扩展实现 TTS (文本) 语音到语音语音。 注册为此 API 的扩展接收包含要说出的语音和其他参数的事件。 然后，扩展可以使用任何可用的 Web 技术来合成和输出语音，并将事件发送回调用函数以报告状态。 |
 | [类型](https://developer.chrome.com/extensions/types) | 属性的类型Microsoft Edge。 |
 | [webNavigation](https://developer.chrome.com/extensions/webNavigation) | 接收有关导航请求状态的通知。 |
 | [webRequest](https://developer.chrome.com/extensions/webRequest) | 观察和分析流量。 截获、阻止或修改请求。 |
@@ -84,9 +84,9 @@ Microsoft Edge不支持以下扩展 API：
 <!-- ====================================================================== -->
 ## <a name="additional-considerations-for-supported-apis"></a>受支持的 API 的其他注意事项
 
-*  用户必须使用 MICROSOFT 帐户Microsoft Edge MSA 帐户 (或) 帐户Azure Active Directory登录。 `chrome.identity.getProfileUserInfo` 如果用户使用本地 Active Directory Microsoft Edge登录，API 将返回电子邮件和 `null` ID 值。
+*  用户必须使用 MSA 帐户Microsoft Edge Microsoft 帐户 (或) Azure Active Directory帐户登录。 `chrome.identity.getProfileUserInfo` 如果用户使用本地 Active Directory Microsoft Edge登录，API 将返回电子邮件和 `null` ID 值。
 
-   MSA 帐户 (MSA) 是 Outlook.com、Live.com 或 Hotmail.com 帐户。
+   MSA (Microsoft) 是 Outlook.com、Live.com 或 Hotmail.com 帐户。
 
 *  Microsoft Edge不支持使用Chrome Web Store付款的扩展，因为它用于为 `identity.getAuthtoken` 登录用户请求令牌。  这些令牌将发送到基于 REST 的许可 API。
 
@@ -97,4 +97,5 @@ Microsoft Edge不支持以下扩展 API：
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/apps/external_extensions)。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

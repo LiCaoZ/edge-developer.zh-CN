@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: efcc340ec814c379b18aeada8feb44f69cc389cc
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 64c8d1284b58129db69e6a4dec8998b4e1956dde
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318049"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323171"
 ---
 # <a name="verify-that-a-page-is-usable-with-blurred-vision"></a>验证页面是否在视觉模糊时可用
 
@@ -27,7 +27,7 @@ ms.locfileid: "12318049"
 
 1.  在"**模拟视觉缺陷**"下拉列表中，选择"**模糊的视觉"。**
 
-    :::image type="complex" source="../media/a11y-testing-simulating-blur.msft.png" alt-text="模拟模糊的页面" lightbox="../media/a11y-testing-simulating-blur.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-simulating-blur.msft.png" alt-text="模拟模糊的页面。" lightbox="../media/a11y-testing-simulating-blur.msft.png":::
         模拟模糊的页面
     :::image-end:::
 

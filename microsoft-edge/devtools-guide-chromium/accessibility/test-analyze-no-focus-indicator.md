@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 17d6570c8c281a4287712a2fdeb762d1faca494f
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 2e04620fbebd04a19d1855c500dbe980091b8377
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318077"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323836"
 ---
 # <a name="analyze-the-lack-of-indication-of-keyboard-focus-in-a-sidebar-menu"></a>分析边栏菜单中键盘焦点的缺失
 
@@ -27,7 +27,7 @@ ms.locfileid: "12318077"
 
 1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  选择**** DevTools (左上角的"检查") "检查图标"按钮，以便该按钮以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
+1.  选择" **检查** (检查"图标。) ![ 位于 DevTools 左上角的"检查"按钮，以便该按钮以蓝色 (](../media/inspect-icon.msft.png) 突出显示) 。
 
 1.  将鼠标悬停在边栏导航菜单中的蓝色 **"猫** "链接上。  将显示 Inspect 覆盖层，显示 `a` 元素是可键盘聚焦的。  但是覆盖层不会显示当链接具有焦点时没有视觉指示。
 
@@ -37,13 +37,13 @@ ms.locfileid: "12318077"
 
 1.  选择" **样式"** 选项卡。 将显示 CSS `#sidebar nav li a` 规则，以及指向 中行号的链接 `styles.css` 。
 
-    :::image type="complex" source="../media/a11y-testing-menu-link.msft.png" alt-text="检查菜单中的链接的源代码和应用样式" lightbox="../media/a11y-testing-menu-link.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-menu-link.msft.png" alt-text="检查菜单中的链接的源代码和应用样式。" lightbox="../media/a11y-testing-menu-link.msft.png":::
         检查菜单中的链接的源代码和应用样式
     :::image-end:::
 
 1.  选择 CSS 文件的链接。  CSS 文件在"源" **工具中** 打开。
 
-    :::image type="complex" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="应用于&quot;源&quot;工具中链接的样式" lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="应用于&quot;源&quot;工具中链接的样式。" lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
         应用于"源"工具中链接的样式
     :::image-end:::
 

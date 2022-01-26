@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/07/2021
-ms.openlocfilehash: bf4c4bdf07714d5c3e316b80bfecedd2b0401cfa
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: b4c1af19a20975df639cdec15bbec4754a4dd83d
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318489"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324466"
 ---
 # <a name="create-an-extension-tutorial---part-1"></a>创建扩展教程 - 第 1 部分
 
@@ -54,7 +54,7 @@ ms.locfileid: "12318489"
 
 首先在 `icons` 项目中创建目录以存储图标图像文件。  图标用于用户选择启动扩展的按钮的背景图像。
 
-:::image type="complex" source="./media/part1-badge1.png" alt-text="用于打开扩展的工具栏上的图标":::
+:::image type="complex" source="./media/part1-badge1.png" alt-text="用于打开扩展的工具栏上的图标。":::
    用于打开扩展的工具栏上的图标
 :::image-end:::
 

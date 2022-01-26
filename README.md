@@ -10,7 +10,7 @@
 <!-- ====================================================================== -->
 ## <a name="legal-notices"></a>法律声明
 
-Microsoft 和任何参与者根据 [Creative Commons Attribution 4.0 国际](https://creativecommons.org/licenses/by/4.0/legalcode) 公共许可证 (授予你 Microsoft 文档和此存储库中其他内容的许可证 (请参阅 [LICENSE](./LICENSE)) ，并授予你对 [MIT](https://opensource.org/licenses/MIT) 许可证 (下存储库中的任何代码的许可证 (请参阅 [LICENSE-CODE](./LICENSE-CODE)) 。
+Microsoft 和任何参与者根据[Creative Commons Attribution 4.0 国际](https://creativecommons.org/licenses/by/4.0/legalcode)公共许可证 (授予你 Microsoft 文档和该存储库中其他内容的许可证 (请参阅[LICENSE](./LICENSE)) ，并授予你 MIT 许可证 (下存储库中任何代码[](https://opensource.org/licenses/MIT)的许可证 (请参阅[LICENSE-CODE](./LICENSE-CODE)) 。
 
 本文档中引用的 Microsoft、Windows、Microsoft Azure 和/或其他 Microsoft 产品和服务是 Microsoft 在美国和/或其他国际/地区的商标或注册商标。  此项目的许可证并未授予你使用任何 Microsoft 名称、徽标或商标的权利。  可以在 上找到 Microsoft 一般商标准则 [https://go.microsoft.com/fwlink/?LinkID=254653](https://go.microsoft.com/fwlink/?LinkID=254653) 。
 
@@ -22,7 +22,7 @@ Microsoft 及任何创作人保留所有其他权利（无论是其各自的版�
 <!-- ====================================================================== -->
 ## <a name="contributing"></a>参与
 
-此存储库是开发人员 `edge-developer` 文档的源 Markdown Microsoft Edge存储库。  生成的呈现文档托管在文档[Microsoft Edge中](https://docs.microsoft.com/microsoft-edge/developer/)。  此存储库还包括开发人员文档和开发人员Microsoft Edge Enterprise中心Microsoft Edge页面。  文档文档的源文件Microsoft Edge Enterprise此存储库，但位于[Edge-Enterprise](https://github.com/MicrosoftDocs/Edge-Enterprise)文件中。
+此存储库是开发人员 `edge-developer` 文档的源 Markdown 文件的Microsoft Edge存储库。  生成的呈现文档托管在文档[Microsoft Edge中](https://docs.microsoft.com/microsoft-edge/developer/)。  此存储库还包括开发人员文档和开发人员Microsoft Edge Enterprise中心Microsoft Edge页面。  文档文档的源文件Microsoft Edge Enterprise此存储库，但位于[Edge-Enterprise](https://github.com/MicrosoftDocs/Edge-Enterprise)文件中。
 
 如果你想要包含新的覆盖范围或提供反馈，请考虑 [提供](CONTRIBUTING.md)。  您可以编辑现有内容、添加新内容或报告新 [问题](https://github.com/MicrosoftDocs/edge-developer/issues)。  工作组Microsoft Edge查看您的建议，并努力将这些建议纳入文档。
 
@@ -136,9 +136,9 @@ body {
 > Dangerous certain consequences of an action.
 ```
 
-![笔记模式](./media/notes.png)
+![注意模式。](./media/notes.png)
 
-对于多行 blockquote 笔记，在每个注释行前面 () 一个大于 10 `>` 个字符的字符：
+对于多行 blockquote 笔记，在每个注释行前面 () 一个大于或大于 100 `>` 个字符的字符：
 
 ```md
 > This is a line in a blockquote.  It's ok for it to be very long; it will wrap.
@@ -148,7 +148,7 @@ body {
 > This is another line in a blockquote.
 ```
 
-请参阅 [文档 (指南 ](https://docs.microsoft.com/en-us/contribute/markdown-reference#alerts-note-tip-important-caution-warning) 中的警报) 注意、提示、重要、警告、 _警告和警告_。
+请参阅[文档 (](https://docs.microsoft.com/en-us/contribute/markdown-reference#alerts-note-tip-important-caution-warning)指南中的警报、注释、提示、重要、) _警告和警告。_
 
 
 ### <a name="images"></a>图片

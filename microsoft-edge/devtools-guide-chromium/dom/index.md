@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/29/2021
-ms.openlocfilehash: a9ec12d5eff8ef8c965ea5475a19e11b25824087
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: f68ddae0f4ff7d9d08bc65ec2807e2269f7a77ec
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320772"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323766"
 ---
 <!-- Copyright Kayce Basques
 
@@ -58,7 +58,7 @@ ms.locfileid: "12320772"
 
         :::image type="content" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="突出显示&quot;一文&quot;节点。" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
 
-        1.  单击**** ![ ](../media/inspect-icon.msft.png) DevTools (左上角) 检查项目"图标。
+        1.  单击" **检查** (![ 检查 ](../media/inspect-icon.msft.png) "。) 工具"左上角的"检查"图标。
 
             :::image type="content" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="&quot;检查&quot;图标。" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
 
@@ -230,7 +230,7 @@ ms.locfileid: "12320772"
 
     1.  选择 `Delete` 键。  节点将被删除。
 
-    1.  选择 `Control` + `Z` (Windows、Linux) 或 `Command` + `Z` (macOS) 。  最后一个操作将被撤消，节点将重新出现。
+    1.  选择 `Control` + `Z` (Windows、Linux) 或 (`Command` + `Z` macOS) 。  最后一个操作将被撤消，节点将重新出现。
 
 
 <!-- ====================================================================== -->
@@ -311,13 +311,13 @@ ms.locfileid: "12320772"
            **中断属性修改**
         :::image-end:::
 
-    1.  下一步，将指导您单击暂停页面代码的按钮。  暂停页面后，无法再滚动页面。  若要使页面再次可滚动，请选择 Resume **Script** (![ Resume Script ](../media/resume-script-icon.msft.png)) 。
+    1.  下一步，将指导您单击暂停页面代码的按钮。  暂停页面后，无法再滚动页面。  若要使页面再次可滚动，请选择 Resume **Script** (![ Resume ](../media/resume-script-icon.msft.png) Script。) 。
 
         :::image type="content" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="在何处继续运行脚本。" lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
 
     1.  单击上面的 **"设置背景** "按钮。  这会将节点的 `style` 属性设置为 `background-color:thistle`。  开发人员工具将暂停页面并突出显示导致属性发生更改的代码。
 
-    1.  选择 **"恢复 (** ![ 脚本 ](../media/resume-script-icon.msft.png)) ，如前面所述。
+    1.  选择 **"恢复 (** ![ 脚本 ](../media/resume-script-icon.msft.png) "。) ，如前面所述。
 
 ### <a name="break-on-node-removal"></a>中断节点删除
 
@@ -327,11 +327,11 @@ ms.locfileid: "12320772"
 
 1.  在"**删除节点时中断"下**，右键单击 **"管理程序**"，然后选择"检查 **"。**
 
-    1.  在 DOM 树中，将鼠标悬停在 上，打开上下文菜单 (`<li id="target">Neuromancer</li>` 右键单击") "，然后选择"删除**节点时**  >  **中断"。**  如果 [选项未显示，](#appendix-missing-options) 请参阅附录：缺少选项。
+    1.  在 DOM 树中，将鼠标悬停在 上，打开上下文菜单 (右键单击") "，然后选择"删除 `<li id="target">Neuromancer</li>` **节点时**  >  **中断"。**  如果 [选项未显示，](#appendix-missing-options) 请参阅附录：缺少选项。
 
     1.  单击上面的 **"删除** "按钮。  开发人员工具将暂停页面并突出显示导致节点被删除的代码。
 
-    1.  选择 **"恢复脚本** (![ 恢复脚本 ](../media/resume-script-icon.msft.png)) 。
+    1.  选择 **"恢复脚本** (![ 恢复脚本 ](../media/resume-script-icon.msft.png) "。) 。
 
 ### <a name="break-on-subtree-modifications"></a>中断子树修改
 
@@ -345,7 +345,7 @@ ms.locfileid: "12320772"
 
     1.  单击"**添加子级"。**  由于向列表中添加了 `<li>` 节点，因此代码将暂停。
 
-    1.  选择 **"恢复脚本** (![ 恢复脚本 ](../media/resume-script-icon.msft.png)) 。
+    1.  选择 **"恢复脚本** (![ 恢复脚本 ](../media/resume-script-icon.msft.png) "。) 。
 
 
 <!-- ====================================================================== -->
@@ -443,4 +443,5 @@ html
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/dom/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

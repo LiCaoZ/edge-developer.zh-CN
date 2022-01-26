@@ -1,23 +1,23 @@
 ---
 title: 验证页面是否在关闭 UI 动画时可用
-description: 使用呈现工具中的模拟 CSS 媒体功能首选 (减少运动下拉列表) 关闭 UI 动画，检查网页是否可用。
+description: 使用呈现工具中的模拟 CSS 媒体功能首选 (减少运动下拉列表) UI 动画关闭网页是否可用。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 70390e78dcf262e553d6ea82a11e84b78db33f09
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 5c625ebb2ac425fad2d9b1350b1f17f3fa13bb0e
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12317923"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323780"
 ---
 # <a name="verify-that-a-page-is-usable-with-ui-animation-turned-off"></a>验证页面是否在关闭 UI 动画时可用
 
 网页不应向在操作系统中关闭动画的用户显示动画。  动画可以帮助产品的可用性，但它们也会导致干扰、混淆或混乱。
 
-若要检查网页是否可使用关闭 UI 动画 (减少运动) ，请在"呈现"工具中，使用"模拟**** CSS 媒体"功能**首选**"减少运动"下拉列表。
+若要检查网页是否可使用关闭 UI 动画 (减少运动) ，请在"呈现"工具中，使用"模拟 CSS**** 媒体"功能**首选**"减少运动"下拉列表。
 
 在辅助功能测试演示网页中，关闭操作系统中的动画或使用 DevTools 模拟该设置时，当您选择边栏导航菜单的链接时，网页不会使用平滑滚动。  这是通过以下方法实现的：在媒体查询中将平滑滚动设置包装在 CSS 中，然后使用 **呈现** 工具模拟操作系统设置，以减小动画效果。
 
@@ -27,7 +27,7 @@ ms.locfileid: "12317923"
 
 1.  在 DevTools 顶部，选择"**** 源"工具，然后在左侧的****"导航"窗格中，选择 `styles.css` 。  CSS 文件显示在"编辑器 **"** 窗格中。
 
-1.  选择 macOS 上的 Windows/Linux 或**Command+F**上的**Ctrl+F，** 然后输入 `@media` 。  将显示以下 CSS 媒体查询，用于确认它在网页上使用。
+1.  选择 macOS 上的 Windows/Linux 或**Command+F 上的 Ctrl+F，** 然后输入**** `@media` 。  将显示以下 CSS 媒体查询，用于确认它在网页上使用。
 
     ```css
     @media (prefers-reduced-motion: no-preference) {
@@ -43,7 +43,7 @@ ms.locfileid: "12317923"
 
 1.  在"**模拟 CSS 媒体功能首选-减少运动**"下拉列表中，选择 **"首选-减少运动：减少"。**
 
-    :::image type="complex" source="../media/a11y-testing-simulating-reduced-motion.msft.png" alt-text="模拟减少运动和 CSS，以确保仅在用户需要时发生平滑滚动" lightbox="../media/a11y-testing-simulating-reduced-motion.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-simulating-reduced-motion.msft.png" alt-text="模拟减少的动作和 CSS，以确保仅在用户需要时发生平滑滚动。" lightbox="../media/a11y-testing-simulating-reduced-motion.msft.png":::
         模拟减少运动和 CSS，以确保仅在用户需要时发生平滑滚动
     :::image-end:::
 

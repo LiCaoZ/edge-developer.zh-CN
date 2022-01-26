@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/06/2021
-ms.openlocfilehash: 2d27720b15f8987938127210ba8c6d85ad98207f
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 573d1f1fa23741b967dcb87f847853bae8a57e89
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318582"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323115"
 ---
 <!-- Copyright Katherine Jackson
 
@@ -38,7 +38,7 @@ ms.locfileid: "12318582"
 
 你将通过构建网站来学习 Web 开发。  完成 **DevTools for Beginners** 系列中的所有教程后，完成的网站将如下图所示。
 
-:::image type="complex" source="media/beginners-html-finished.msft.png" alt-text="完成的网站" lightbox="media/beginners-html-finished.msft.png":::
+:::image type="complex" source="media/beginners-html-finished.msft.png" alt-text="已完成的网站。" lightbox="media/beginners-html-finished.msft.png":::
    完成的站点
 :::image-end:::
 
@@ -67,19 +67,19 @@ ms.locfileid: "12318582"
 
 1.  打开[源代码](https://glitch.com/edit/#!/alluring-shock?path=index.html)。 在本教程中，此选项卡称为" **编辑器"** 选项卡。
 
-    :::image type="complex" source="media/beginners-html-setup1.msft.png" alt-text="编辑器选项卡" lightbox="media/beginners-html-setup1.msft.png":::
+    :::image type="complex" source="media/beginners-html-setup1.msft.png" alt-text="编辑器选项卡。" lightbox="media/beginners-html-setup1.msft.png":::
        编辑器选项卡
     :::image-end:::
 
 1.  选择 **"诱人-休克**"。 “**项目选项**”菜单将打开。
 
-    :::image type="complex" source="media/beginners-html-setup2.msft.png" alt-text="项目选项菜单" lightbox="media/beginners-html-setup2.msft.png":::
+    :::image type="complex" source="media/beginners-html-setup2.msft.png" alt-text="&quot;Project 选项&quot;菜单。" lightbox="media/beginners-html-setup2.msft.png":::
        项目选项菜单
     :::image-end:::
 
 1.  选择**Remix Project**。 Glitch 创建项目的副本，你可以编辑该项目并随机生成项目的新名称。 内容与之前相同。
 
-    :::image type="complex" source="media/beginners-html-setup3.msft.png" alt-text="重新混合的项目" lightbox="media/beginners-html-setup3.msft.png":::
+    :::image type="complex" source="media/beginners-html-setup3.msft.png" alt-text="重新混合的项目。" lightbox="media/beginners-html-setup3.msft.png":::
        重新混合的项目
     :::image-end:::
 
@@ -87,7 +87,7 @@ ms.locfileid: "12318582"
 
 1.   > **在新建窗口中**选择**显示**。  将打开一个新选项卡，显示实时页面。 在本教程中，此选项卡称为实时**选项卡**。
 
-    :::image type="complex" source="media/beginners-html-setup4.msft.png" alt-text="实时选项卡" lightbox="media/beginners-html-setup4.msft.png":::
+    :::image type="complex" source="media/beginners-html-setup4.msft.png" alt-text="动态选项卡。" lightbox="media/beginners-html-setup4.msft.png":::
        实时选项卡
     :::image-end:::
 
@@ -109,12 +109,12 @@ ms.locfileid: "12318582"
         ...
     ```
 
-    :::image type="complex" source="media/beginners-html-add1.msft.png" alt-text="新代码在编辑器选项卡中突出显示" lightbox="media/beginners-html-add1.msft.png":::
+    :::image type="complex" source="media/beginners-html-add1.msft.png" alt-text="新代码在编辑器选项卡中突出显示。" lightbox="media/beginners-html-add1.msft.png":::
         新代码在编辑器选项卡中突出显示 :::image-end:::
 
 1. 在**实时选项**卡中查看更改。文本`About Me`在页面上可见。 文本大于周围文本，因为`<h1>`元素表示“标题 1”。  Web 浏览器自动为标题设置更大字体的样式。
 
-    :::image type="complex" source="media/beginners-html-add2.msft.png" alt-text="新标题显示在活动选项卡中" lightbox="media/beginners-html-add2.msft.png":::
+    :::image type="complex" source="media/beginners-html-add2.msft.png" alt-text="新标题显示在活动选项卡中。" lightbox="media/beginners-html-add2.msft.png":::
        新标题显示在活动选项卡中 :::image-end:::
 
 1. 返回到**编辑器选项卡中**，在`<h1>About Me</h1>`下面的行插入`<p>I am learning web development. Recent accomplishments:</p>`。
@@ -130,7 +130,7 @@ ms.locfileid: "12318582"
     ...
     ```
 
-    :::image type="complex" source="media/beginners-html-add3.msft.png" alt-text="更新后的代码在编辑器选项卡中突出显示" lightbox="media/beginners-html-add3.msft.png":::
+    :::image type="complex" source="media/beginners-html-add3.msft.png" alt-text="更新后的代码在编辑器选项卡中突出显示。" lightbox="media/beginners-html-add3.msft.png":::
         更新后的代码在编辑器选项卡中突出显示 :::image-end:::
 
 1. 在**实时选项卡**中查看更改。
@@ -149,12 +149,12 @@ ms.locfileid: "12318582"
     ...
     ```
 
-    :::image type="complex" source="media/beginners-html-add4.msft.png" alt-text="更新后的代码还会在编辑器选项卡中突出显示" lightbox="media/beginners-html-add4.msft.png":::
+    :::image type="complex" source="media/beginners-html-add4.msft.png" alt-text="更新后的代码还会在编辑器选项卡中突出显示。" lightbox="media/beginners-html-add4.msft.png":::
         更新后的代码还会在编辑器选项卡中突出显示 :::image-end:::
 
 1. 查看**实时选项卡**以确保正确显示新内容。
 
-    :::image type="complex" source="media/beginners-html-add5.msft.png" alt-text="新列表在活动选项卡中可见" lightbox="media/beginners-html-add5.msft.png":::
+    :::image type="complex" source="media/beginners-html-add5.msft.png" alt-text="新列表在活动选项卡中可见。" lightbox="media/beginners-html-add5.msft.png":::
        新列表在活动选项卡中可见 :::image-end:::
 
 
@@ -185,12 +185,12 @@ ms.locfileid: "12318582"
 
 1. 打开 **实时选项卡**，将鼠标悬停在 `A new element!?!`上，打开上下文菜单（右键单击），然后选择 **"检查**"。
 
-    :::image type="complex" source="media/beginners-html-dom3.msft.png" alt-text="检查某些文本" lightbox="media/beginners-html-dom3.msft.png":::
+    :::image type="complex" source="media/beginners-html-dom3.msft.png" alt-text="检查一些文本。" lightbox="media/beginners-html-dom3.msft.png":::
        检查某些文本 :::image-end:::
 
     开发人员工具将在页面旁边打开。 `<div>A new element!?!</div>` 突出显示。 尽管 DevTools 中的此结构类似于 HTML，但它是 **DOM 树**。
 
-    :::image type="complex" source="media/beginners-html-dom4.msft.png" alt-text="DevTools 与页面一起打开" lightbox="media/beginners-html-dom4.msft.png":::
+    :::image type="complex" source="media/beginners-html-dom4.msft.png" alt-text="DevTools 与页面一起打开。" lightbox="media/beginners-html-dom4.msft.png":::
        DevTools 与页面一起打开 :::image-end:::
 
 加载页面时，浏览器使用 HTML 创建页面的初始内容。 DOM 表示页面的当前内容，该内容可能会随时间而变化。
@@ -216,12 +216,12 @@ ms.locfileid: "12318582"
     ...
 ```
 
-:::image type="complex" source="media/beginners-html-edit2.msft.png" alt-text="将节点更新为 HTML" lightbox="media/beginners-html-edit2.msft.png":::
+:::image type="complex" source="media/beginners-html-edit2.msft.png" alt-text="将节点更新为 HTML。" lightbox="media/beginners-html-edit2.msft.png":::
     将节点更新为 HTML ：：image-end：：：
 
 1.  选择`Control`+`Enter`（Windows、Linux）或`Command`+`Enter` （macOS） 保存更改，或在框外选择。 更改将自动显示在页面实时视图中。 文本 `Your site!` 已替换为新内容。
 
-    :::image type="complex" source="media/beginners-html-edit3.msft.png" alt-text="新内容会立即显示在页面上" lightbox="media/beginners-html-edit3.msft.png":::
+    :::image type="complex" source="media/beginners-html-edit3.msft.png" alt-text="新内容会立即显示在页面上。" lightbox="media/beginners-html-edit3.msft.png":::
        新内容会立即显示在页面上
     :::image-end:::
 
@@ -235,13 +235,13 @@ ms.locfileid: "12318582"
 
 1.  在 DevTools 的** DOM 树**中查找`<nav>`节点。
 
-    :::image type="complex" source="media/beginners-html-reorder1.msft.png" alt-text="导航节点在 DevTools 中突出显示" lightbox="media/beginners-html-reorder1.msft.png":::
+    :::image type="complex" source="media/beginners-html-reorder1.msft.png" alt-text="导航节点在 DevTools 中突出显示。" lightbox="media/beginners-html-reorder1.msft.png":::
        导航节点在 DevTools 中突出显示
     :::image-end:::
 
 1.  将`<nav>`节点拖动到顶部，以便该节点是`<body>`节点后的第一个子节点。
 
-    :::image type="complex" source="media/beginners-html-reorder3.msft.png" alt-text="导航节点位于页面顶部" lightbox="media/beginners-html-reorder3.msft.png":::
+    :::image type="complex" source="media/beginners-html-reorder3.msft.png" alt-text="导航节点位于页面顶部。" lightbox="media/beginners-html-reorder3.msft.png":::
         导航节点位于页面顶部
     :::image-end:::
 
@@ -253,7 +253,7 @@ ms.locfileid: "12318582"
 
 1.  选择键盘上的`Delete`键。  将从 DOM 树中删除`<div>A new element!?!</div>`节点。
 
-    :::image type="complex" source="media/beginners-html-delete2.msft.png" alt-text="节点已删除" lightbox="media/beginners-html-delete2.msft.png":::
+    :::image type="complex" source="media/beginners-html-delete2.msft.png" alt-text="节点已删除。" lightbox="media/beginners-html-delete2.msft.png":::
        节点已删除
     :::image-end:::
 
@@ -265,7 +265,7 @@ ms.locfileid: "12318582"
 
 1.  刷新**实时选项卡**。在 DOM 树中所做的更改将消失。 具体而言，文本 `Your site!` 返回页首，文本 `A new element!?!` 返回页面底部。
 
-    :::image type="complex" source="media/beginners-html-copy1.msft.png" alt-text="你所做的更改已消失" lightbox="media/beginners-html-copy1.msft.png":::
+    :::image type="complex" source="media/beginners-html-copy1.msft.png" alt-text="你所做的更改已消失。" lightbox="media/beginners-html-copy1.msft.png":::
        你所做的更改已消失
     :::image-end:::
 
@@ -305,7 +305,7 @@ ms.locfileid: "12318582"
 
 1.  返回到**编辑器选项卡** ，将`index.html`文件内容替换为复制的代码。
 
-    :::image type="complex" source="media/beginners-html-copy2.msft.png" alt-text="index.html 文件的外观" lightbox="media/beginners-html-copy2.msft.png":::
+    :::image type="complex" source="media/beginners-html-copy2.msft.png" alt-text="您的index.html文件的外观。" lightbox="media/beginners-html-copy2.msft.png":::
        文件 `index.html` 的外观
     :::image-end:::
 
@@ -323,4 +323,5 @@ ms.locfileid: "12318582"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 在https://developers.google.com/web/tools/chrome-devtools/beginners/html找到原始页面 <!-- 404 now --> 由 [Katherine 并](https://developers.google.com/web/resources/contributors#katherine-jackson) 创作（技术编写员，Chrome DevTools）。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

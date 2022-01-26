@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 176af0d8f06e7f75f5db2adf2d787c8ee8bbd781
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: e810a99c5ff04588486ccb6b75b7971850cc658e
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318070"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323213"
 ---
 # <a name="analyze-keyboard-support-on-forms"></a>分析窗体上的键盘支持
 
@@ -25,7 +25,7 @@ ms.locfileid: "12318070"
 
 1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  选择**** DevTools (左上角的"检查") "检查图标"按钮，以便该按钮以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
+1.  选择" **检查** (检查"图标。) ![ 位于 DevTools 左上角的"检查"按钮，以便该按钮以蓝色 (](../media/inspect-icon.msft.png) 突出显示) 。
 
 1.  将鼠标悬停在 **50**个 **、100**个和 **200 个"支持** "按钮上。  The Inspect tool appears on the webpage， as an overlay.  " **检查"覆盖** 层的可键盘聚焦行显示，没有一个"支持"金额按钮可通过键盘访问，如带对角线的灰色圆圈所示。  按钮没有名称，并且具有 其角色，因为它们是元素，这意味着辅助技术无法访问 `generic` `div` 按钮。
 
@@ -58,7 +58,7 @@ ms.locfileid: "12318070"
 
 1.  在 DOM 树中仍选择 元素后，选择"样式"选项卡右边的"事件侦听器"选项卡，然后 `<input id="freedonation" class="smallinput">` 展开******** `click` 事件侦听器。
 
-    :::image type="complex" source="../media/a11y-testing-event-handlers-on-button.msft.png" alt-text="显示使表单正常工作的 JavaScript 位置的 Event 侦听器工具" lightbox="../media/a11y-testing-event-handlers-on-button.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-event-handlers-on-button.msft.png" alt-text="显示使表单正常工作的 JavaScript 的&quot;事件侦听器&quot;工具。" lightbox="../media/a11y-testing-event-handlers-on-button.msft.png":::
         显示使表单正常工作的 JavaScript 位置的 Event 侦听器工具
     :::image-end:::
 

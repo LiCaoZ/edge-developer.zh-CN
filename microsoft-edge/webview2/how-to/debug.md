@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 09/15/2021
-ms.openlocfilehash: 54746f13bf9b017699115c98e4367f96ac0067f5
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 64083eda51cd4905a370d030ff775a3fc100f47e
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320947"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12322919"
 ---
 # <a name="get-started-debugging-webview2-apps"></a>开始调试 WebView2 应用
 
@@ -31,7 +31,7 @@ WebView2 Microsoft Edge的目标是将 Web 和本机应用开发功能和工具�
 
 有关详细信息，请导航到["DevTools 概述"。](../index.md)
 
-:::image type="complex" source="./media/f12.png" alt-text="DevTools 调试" lightbox="./media/f12.png":::
+:::image type="complex" source="./media/f12.png" alt-text="DevTools 调试。" lightbox="./media/f12.png":::
    DevTools 调试
 :::image-end:::
 
@@ -59,7 +59,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
     1.  In the Visual Studio 安装程序， on the installed version， choose the **More** button， and then choose **Modify**.
     1.  In Visual Studio， under **Workloads，** choose the **Desktop Development in C++** setting.
 
-        :::image type="complex" source="./media/workloads.png" alt-text="Visual Studio修改工作负载屏幕" lightbox="./media/workloads.png":::
+        :::image type="complex" source="./media/workloads.png" alt-text="Visual Studio修改工作负载屏幕。" lightbox="./media/workloads.png":::
             Visual Studio修改工作负载屏幕
         :::image-end:::
 
@@ -68,7 +68,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
     1.  选择 **"JavaScript 诊断"** 设置。
     1.  选择 **"修改"。**
 
-        :::image type="complex" source="./media/indiv-comp.png" alt-text="Visual Studio&quot;修改单个组件&quot;选项卡" lightbox="./media/indiv-comp.png":::
+        :::image type="complex" source="./media/indiv-comp.png" alt-text="Visual Studio&quot;修改单个组件&quot;选项卡。" lightbox="./media/indiv-comp.png":::
            Visual Studio"修改单个组件"选项卡
         :::image-end:::
 
@@ -77,7 +77,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
     1.  在"**配置属性"下**，选择 **"调试"。**
     1.  在调试**器类型下**，选择 **"JavaScript (WebView2) "。 **
 
-        :::image type="complex" source="./media/enb-js.png" alt-text="Visual Studio调试配置属性" lightbox="./media/enb-js.png":::
+        :::image type="complex" source="./media/enb-js.png" alt-text="Visual Studio调试配置属性。" lightbox="./media/enb-js.png":::
            Visual Studio**调试**配置属性
         :::image-end:::
 
@@ -85,7 +85,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
 
 1.  若要在源代码中设置断点，请将鼠标悬停在行号的左侧，然后选择设置断点。  JS/TS 调试适配器不执行源路径映射。  必须打开与 WebView2 关联的完全相同的路径。
 
-    :::image type="complex" source="./media/breakpoint.png" alt-text="Visual Studio添加断点" lightbox="./media/breakpoint.png":::
+    :::image type="complex" source="./media/breakpoint.png" alt-text="Visual Studio添加断点。" lightbox="./media/breakpoint.png":::
        Visual Studio添加断点
     :::image-end:::
 
@@ -97,7 +97,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
 
 1.  在 **调试控制台中**，查找调试器的输出。
 
-    :::image type="complex" source="./media/console.png" alt-text=" Visual Studio调试控制台" lightbox="./media/console.png":::
+    :::image type="complex" source="./media/console.png" alt-text=" Visual Studio调试控制台。" lightbox="./media/console.png":::
        Visual Studio**调试控制台**
     :::image-end:::
 
@@ -136,7 +136,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
 
 1.  若要在源代码中设置断点，请将鼠标悬停在行上，然后选择 `F9`
 
-    :::image type="complex" source="./media/breakpoint-vs.png" alt-text="断点在Visual Studio Code" lightbox="./media/breakpoint-vs.png":::
+    :::image type="complex" source="./media/breakpoint-vs.png" alt-text="断点在Visual Studio Code。" lightbox="./media/breakpoint-vs.png":::
        断点在Visual Studio Code
     :::image-end:::
 
@@ -144,13 +144,13 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
     1.  在" **运行** "选项卡上，从下拉菜单中选择启动配置。
     1.  若要开始调试你的应用，请选择"开始调试"，这是启动配置下拉列表旁边的绿色三角形。
 
-        :::image type="complex" source="./media/run-vs.png" alt-text=" Visual Studio Code&quot;运行&quot;选项卡" lightbox="./media/run-vs.png":::
+        :::image type="complex" source="./media/run-vs.png" alt-text=" Visual Studio Code&quot;运行&quot;选项卡。" lightbox="./media/run-vs.png":::
            Visual Studio Code"运行"选项卡
         :::image-end:::
 
 1.  打开 **调试控制台** 以查看调试输出和错误。
 
-    :::image type="complex" source="./media/results-vs.png" alt-text=" Visual Studio Code调试控制台" lightbox="./media/results-vs.png":::
+    :::image type="complex" source="./media/results-vs.png" alt-text=" Visual Studio Code调试控制台。" lightbox="./media/results-vs.png":::
        Visual Studio Code调试控制台
     :::image-end:::
 
@@ -228,11 +228,11 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
 
         Visual Studio Code详细跟踪打开后调试输出：
 
-        :::image type="content" source="./media/verbose.png" alt-text="Visual Studio Code详细跟踪打开后调试输出" lightbox="./media/verbose.png":::
+        :::image type="content" source="./media/verbose.png" alt-text="Visual Studio Code调试输出，并打开详细跟踪。" lightbox="./media/verbose.png":::
 
 *   调试Office加载项。
 
-    如果要调试加载项Office，请打开加载项源代码，在加载项的单独实例中Visual Studio Code。  在 WebView2 应用中打开 launch.json，并添加以下代码段以将调试器附加到Office加载项。
+    如果要调试加载项Office，请打开加载项源代码，在加载项的单独实例中Visual Studio Code。  在 WebView2 应用中打开 launch.json，并添加以下代码段以将调试器Office加载项。
 
     ```json
     ,"debugServer": 4711

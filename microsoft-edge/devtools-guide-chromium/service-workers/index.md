@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/19/2021
-ms.openlocfilehash: 5aa81652847bf57fa9c5a4c9fa1b2da3ba9ead9b
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 5ea3305d23172add6f88ee0111a2d9a4d9b73f9f
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320786"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12322842"
 ---
 # <a name="service-worker-improvements"></a>服务工作者改进
 
@@ -35,7 +35,7 @@ ms.locfileid: "12320786"
 <!-- ====================================================================== -->
 ## <a name="network"></a>网络
 
-:::image type="complex" source="../media/sw-network-timeline.msft.png" alt-text="网络工具中的服务工作线程时间线" lightbox="../media/sw-network-timeline.msft.png":::
+:::image type="complex" source="../media/sw-network-timeline.msft.png" alt-text="网络工具中的服务工作线程时间线。" lightbox="../media/sw-network-timeline.msft.png":::
    网络视图
 :::image-end:::
 
@@ -59,7 +59,7 @@ ms.locfileid: "12320786"
 <!-- ====================================================================== -->
 ## <a name="application"></a>应用程序
 
-:::image type="complex" source="../media/sw-application-timeline.msft.png" alt-text="应用程序视图" lightbox="../media/sw-application-timeline.msft.png":::
+:::image type="complex" source="../media/sw-application-timeline.msft.png" alt-text="应用程序视图。" lightbox="../media/sw-application-timeline.msft.png":::
    应用程序视图
 :::image-end:::
 
@@ -81,7 +81,7 @@ ms.locfileid: "12320786"
 <!-- ====================================================================== -->
 ## <a name="sources"></a>源
 
-:::image type="complex" source="../media/sw-sources.msft.png" alt-text="DOM 树" lightbox="../media/sw-sources.msft.png":::
+:::image type="complex" source="../media/sw-sources.msft.png" alt-text="DOM 树。" lightbox="../media/sw-sources.msft.png":::
    DOM 树
 :::image-end:::
 

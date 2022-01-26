@@ -6,18 +6,18 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: e8d0f0ee77289822e146902c26e506492f478d22
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 593e64560a2a35f5cf07a0c7fb884d7eee599e01
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318000"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323815"
 ---
 # <a name="verify-accessibility-of-all-states-of-elements"></a>验证所有元素状态可访问性
 
 <!-- 5. STYLES: TOGGLE STATE -->
 
-检查元素的所有状态（如状态期间的文本颜色对比度）的 `hover` 辅助功能。  检查 **工具** 一次报告一个状态辅助功能问题。  若要检查元素的各种状态是否可访问，请在"样式"选项卡**** 中，选择 **"\：hov** (**Toggle 元素状态**) "，如本文所述。 我们首先显示为什么使用 **Inspect** 工具需要状态模拟，然后展示如何使用状态模拟。
+检查元素的所有状态（如状态期间的文本颜色对比度）的 `hover` 辅助功能。  检查 **工具** 一次报告一个状态辅助功能问题。  若要检查元素的各种状态辅助功能，请在"样式"选项卡中****，选择 **"\：hov** (Toggle**元素**状态) "，如本文所述。 我们首先显示为什么使用 **Inspect** 工具需要状态模拟，然后展示如何使用状态模拟。
 
 
 <!-- ====================================================================== -->
@@ -51,7 +51,7 @@ ms.locfileid: "12318000"
 
 若要确认动画不运行，请执行以下步骤。
 
-1.  选择**** DevTools (左上角的"检查") "检查"按钮，使图标以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
+1.  选择 **"** 检查 (检查"按钮。) ![ 位于 DevTools 左上角的"检查"按钮，以便图标以蓝色 (](../media/inspect-icon.msft.png) 突出显示) 。
 
 1.  将鼠标悬停在边栏导航菜单上的蓝色链接上。  菜单项的动画不会运行。 相反，菜单项使用弹性框覆盖的颜色和突出显示来显示。
 
@@ -63,13 +63,13 @@ ms.locfileid: "12318000"
 
 <!-- Elements tool: Styles pane: Toggle Element State -->
 
-当 **Inspect** 工具处于活动状态时，你需要模拟菜单项的状态，而不是将鼠标悬停在动画元素上。  若要模拟菜单项的状态，请使用"样式" **窗格中的状态模拟** 。  The **Styles** pane has a **\：hov** (**Toggle Element State**) button， which displays a group of checkboxes labeled Force element **state**.
+当 **Inspect** 工具处于活动状态时，你需要模拟菜单项的状态，而不是将鼠标悬停在动画元素上。  若要模拟菜单项的状态，请使用"样式" **窗格中的状态模拟** 。  " **样式** "窗格有 **一个 \：hov** (**Toggle Element State**) 按钮，该按钮显示一组标记为 **"Force 元素状态"的复选框**。
 
 若要在使用 Inspect 工具时打开悬停状态：
 
 1.  如果尚未打开，请打开新选项卡 [中的](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 辅助功能测试演示网页。 然后选择 **F12** 以打开 DevTools。
 
-1.  选择**** DevTools (左上角的"检查) 检查工具按钮"按钮，使图标以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
+1.  选择" **检查** (检查"工具按钮。) 工具左上角的"检查"按钮，使图标以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
 
 1.  在呈现的网页中，选择边栏导航菜单中的蓝色 **"猫** "链接。  将 **打开"** 元素"工具，并选中 `<a href="#cats">Cats</a>` 元素。
 
@@ -79,7 +79,7 @@ ms.locfileid: "12318000"
 
 1.  在 **样式** 窗格中的样式规则右侧， `#sidebar nav li a` 选择 `styles.css` 链接。  将 **打开"** 源"工具。  然后查找 CSS 伪类规则 `#sidebar nav li a:hover` 。  当 Inspect 工具处于活动状态时， **此规则** 不运行。  我们将在下一步中模拟运行此状态规则。
 
-1.  选择" **元素"** 工具。  然后在"**样式"** 窗格中，选择"：hov (**切换元素状态) **按钮。 ****  显示 **复选框的 Force** 元素状态组。
+1.  选择" **元素"** 工具。  然后在"**样式"** 窗格中，选择"：hov (**切换元素状态**) 按钮。 ****  显示 **复选框的 Force** 元素状态组。
 
     :::image type="content" source="../media/a11y-testing-state-simulation.msft.png" alt-text="显示所有选项的状态模拟工具。" lightbox="../media/a11y-testing-state-simulation.msft.png":::
 
@@ -89,7 +89,7 @@ ms.locfileid: "12318000"
 
     应用模拟状态后，可以再次使用 **Inspect** 工具在用户将鼠标悬停在元素上时检查元素的对比度，如下所示。
 
-1.  选择 **DevTools** (左上角的"检查检查器) 图标按钮，以便该图标在蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
+1.  选择" **检查** (检查器"图标。) ![ 位于 DevTools 左上角的"检查检查器"按钮，以便该图标以蓝色 (](../media/inspect-icon.msft.png) 突出显示) 。
 
 1.  将鼠标悬停在边栏导航菜单中的蓝色 **"猫** "链接上。  由于模拟悬停动画，链接现在为浅蓝色。  将显示**Inspect**工具的信息覆盖层，在"对比度"行中显示橙色感叹**** 号，指示对比度不够高。
 

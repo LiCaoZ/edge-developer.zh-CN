@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/11/2021
-ms.openlocfilehash: 52ff8365e2c60845614711dba98aa24bddac395c
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 41b649c53f41eb21d0853342f56afea093905e0c
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319561"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323752"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,7 +30,7 @@ ms.locfileid: "12319561"
 
 使用 Microsoft Edge DevTools 动画检查器检查和修改动画。
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png" alt-text="动画检查器" lightbox="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png":::
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png" alt-text="动画检查器。" lightbox="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png":::
    动画检查器
 :::image-end:::
 
@@ -66,7 +66,7 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
     1.  导航到“**更多工具**”子菜单。
     1.  选择“**动画**”：
 
-        :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="使用主菜单的动画" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
+        :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="使用主菜单的动画。" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
            使用主菜单的**动画**
         :::image-end:::
 
@@ -75,7 +75,7 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
 
 动画检查器将在控制台工具旁**打开**。  由于动画检查器是一个箱工具，因此你可以从任何 DevTools 面板使用动画检查器。
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="空动画检查器" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="空动画检查器。" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
    空动画检查器
 :::image-end:::
 
@@ -88,7 +88,7 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
 | 3 | **时间线** | 从此处暂停并启动动画，或跳转到动画中的特定点。 |
 | 4 | **详细信息** | 检查和修改当前选定的动画组。 |
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png" alt-text="批注动画检查器" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png":::
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png" alt-text="批注动画检查器。" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png":::
    批注动画检查器
 :::image-end:::
 
@@ -107,32 +107,32 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
 捕获动画后，有多种方式可以重播它：
 
 *   将鼠标悬停在“**概述**”窗格中的缩略图上，查看缩略图的预览。
-*   从"概述"窗格中选择****"动画组 (以便它显示在"详细信息"窗格中) **** 并选择"重播 (**** ![ 图标) ](../media/replay-button-icon.msft.png) 图标。  动画会在视区中重播。  选择动画 **速度 (** ![ 动画) 图标来更改当前选定的 ](../media/animation-speed-buttons-icon.msft.png) 动画组的预览速度。  可以使用红色竖线更改当前位置。
+*   从"概述"窗格中选择****"动画组 (以便它显示在"详细信息"窗格中) **** 并选择重播 (图标。) **** ![ ](../media/replay-button-icon.msft.png) 图标。  动画会在视区中重播。  选择动画 **速度 (** 动画速度图标。) 图标可更改当前选定的 ![ ](../media/animation-speed-buttons-icon.msft.png) 动画组的预览速度。  可以使用红色竖线更改当前位置。
 *   选择并拖动红色竖线以清理视区动画。
 
 ### <a name="view-animation-details"></a>查看动画详细信息
 
 捕获动画组后，从“**概述**”窗格中选择它以查看详细信息。  在“**详细信息**”窗格中，将为每个单独的动画分配一行。
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="动画组详细信息" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png":::
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="动画组详细信息。" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png":::
    动画组详细信息
 :::image-end:::
 
 将鼠标悬停在动画上以在视区中突出显示它。  选择动画以在“**元素**”工具中选择它。
 
-:::image type="complex" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="将鼠标悬停在动画上以在视区中突出显示它" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
+:::image type="complex" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="将鼠标悬停在动画上以在视口中突出显示它。" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
    将鼠标悬停在动画上以在视区中突出显示它
 :::image-end:::
 
 动画最左侧较暗的部分就是定义。  右侧更淡出的部分表示迭代。  例如，在下图中，第二节和第三节表示第一节的迭代。
 
-:::image type="complex" source="../media/inspect-styles-glitch-display-animations-highlight.msft.png" alt-text="动画迭代关系图" lightbox="../media/inspect-styles-glitch-display-animations-highlight.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-display-animations-highlight.msft.png" alt-text="动画迭代关系图。" lightbox="../media/inspect-styles-glitch-display-animations-highlight.msft.png":::
    动画迭代关系图
 :::image-end:::
 
 如果两个元素应用了相同的动画，则动画检查器会向这些元素分配相同的颜色。  颜色是随机的，没有意义。  例如，在下图中，这两个元素应用了相同的 () 动画，与 `div.cwccw.earlier` `div.cwccw.later` 和 `spinrightleft` 元素一 `div.ccwcw.earlier` `div.ccwcw.later` 样。
 
-:::image type="complex" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="颜色编码动画" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="颜色编码的动画。" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
    颜色编码动画
 :::image-end:::
 
@@ -148,25 +148,25 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
 
 下图中显示了原始动画。
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png" alt-text="修改前的原始动画" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png" alt-text="修改前的原始动画。" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png":::
    修改前的原始动画
 :::image-end:::
 
 若要更改动画的持续时间，请选择并拖动第一个或最后一个圆。
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png" alt-text="修改持续时间" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png" alt-text="修改的持续时间。" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png":::
    修改持续时间
 :::image-end:::
 
 如果动画定义任何关键帧规则，则这些规则表示为白色内部圆。  选择并拖动其中一个以更改关键帧的计时。
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="修改后的关键帧" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="修改后的关键帧。" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
    修改后的关键帧
 :::image-end:::
 
 若要向动画添加延迟，请选择并将其拖动到除圆形之外的任何位置。
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png" alt-text="修改后的延迟" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png" alt-text="修改后的延迟。" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png":::
    修改后的延迟
 :::image-end:::
 
@@ -176,4 +176,5 @@ Microsoft Edge DevTools 动画检查器有两个主要用途。
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

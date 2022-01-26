@@ -1,6 +1,6 @@
 ---
 title: 实验性功能
-description: DevTools 中的最新Microsoft Edge功能。
+description: Microsoft Edge Tools 中的最新实验功能。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -21,12 +21,12 @@ no-loc:
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
 ms.date: 11/30/2021
-ms.openlocfilehash: 20894a79818a0fd05b350e2fd7ee8cfea4714d77
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 298c35dd76017005821bf31c5648b294a958f68a
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12317818"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12322996"
 ---
 # <a name="experimental-features"></a>试验功能
 
@@ -40,9 +40,9 @@ If no info is an an h2 section, comment out the h2 heading & section.
 When a checkbox is removed from all the preview channels, move its section down to "Previously Experimental features which are now regular features" and comment it out.
 -->
 
-Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限。  本文列出并介绍了最新版本的 Canary 预览频道中的大多数实验Microsoft Edge。
+Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限。  本文列出并介绍了大多数实验性功能，这些功能在最新版本的 Canary preview channel of Microsoft Edge。
 
-组织[的所有频道Microsoft Edge](/deployedge/microsoft-edge-channels)实验性功能。 可以使用以下方法获取最新的实验[Microsoft Edge Canary 渠道。](https://www.microsoftedgeinsider.com/welcome?channel=canary) 若要查看最新版本中提供的完整列表Microsoft Edge，请参阅****  >  DevTools 设置**实验**"页面。
+组织[的所有频道Microsoft Edge](/deployedge/microsoft-edge-channels)实验性功能。 可以通过使用 Microsoft Edge Canary 渠道 获取最新的[实验Microsoft Edge Canary 渠道。](https://www.microsoftedgeinsider.com/welcome?channel=canary) 若要查看最新版本中提供的完整列表Microsoft Edge，请参阅****  >  DevTools 设置**实验**"页面。
 
 <!-- no Warning formatting, because UI already contains red "WARNING" at top -->
 这些实验可能不稳定或不可靠，可能需要重启 DevTools。
@@ -87,15 +87,15 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 
 1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 (`Command` + `Option` + `I` 按) 。
 
-1.  单击 **"设置 (** 齿轮) 图标打开 DevTools 设置窗格。 [](../customize/index.md#settings)
+1.  单击**设置 (** 齿轮) 图标以打开 DevTools[设置窗格。](../customize/index.md#settings)
 
 1.  在"实验"窗格**设置，** 单击"实验 **"** 部分。
 
-    :::image type="content" source="../media/experiments-devtools.msft.png" alt-text="设置中的试验页面" lightbox="../media/experiments-devtools.msft.png":::
+    :::image type="content" source="../media/experiments-devtools.msft.png" alt-text="设置 中的实验设置。" lightbox="../media/experiments-devtools.msft.png":::
 
 1.  在实验 **页面上** ，选中或清除实验的复选框。 默认情况下，某些实验 (选中) 打开。
 
-1.  单击 **"** 关闭 ("中的"关闭"图标。> 设置) 右上方的"关闭"图标以关闭 ![ ](../media/settings-close-icon-light-theme.png) "DevTools**设置"。**
+1.  单击 **"** 关闭 (DevTools > 设置 中的"关闭"图标。) 右上方的"关闭"以关闭 ![ ](../media/settings-close-icon-light-theme.png) DevTools**设置。**
 
 1.  单击" **重新加载 DevTools"** 按钮。
 
@@ -107,7 +107,7 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 
 1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 (`Command` + `Option` + `I` 按) 。
 
-1.  选择**设置 (** ![ 开发人员设置中的") >" ](../media/settings-gear-icon-light-mode.png) **图标。**
+1.  选择**设置 (** ![ 开发人员设置中的") >" ](../media/settings-gear-icon-light-mode.png) **图标**。
 
 1.  单击"**还原默认值并刷新**"按钮，然后单击"关闭**** (DevTools > 设置 中的"关闭 ![ "图标 ](../media/settings-close-icon-light-theme.png) 。) 。
 
@@ -121,7 +121,7 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 
 1.  [打开 DevTools](../open/index.md)。  例如，在 `Ctrl` + `Shift` + `I` macOS (上的 Windows/Linux) 或 (`Command` + `Option` + `I` 按) 。
 
-1.  选择**设置 (** 开发设置中的 ![ ") >" ](../media/settings-gear-icon-light-mode.png) **图标**。
+1.  选择**设置 (** ![ 开发设置中的") >" ](../media/settings-gear-icon-light-mode.png) **图标**。
 
 1.  在"筛选器 **"文本框** 中单击并输入文本，如 **时间线**。  键入时，只有匹配的复选框显示在实验 **页面中** 。
 
@@ -137,7 +137,7 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 
 * [联系开发人员Microsoft Edge团队](../contact.md)。
 
-* 打开焦点**模式**实验后，在活动栏底部，选择"帮助****" (焦点模式**** 的活动栏中的"帮助"图标) >反馈"，以显示"发送反馈 ![ ](../media/help-icon-of-focus-mode.png) "窗口。 **** ****
+* 打开焦点**模式**实验后，在活动栏底部，选择"帮助******" (焦点**模式下活动栏中的帮助图标。) >反馈"显示"发送反馈" ![ ](../media/help-icon-of-focus-mode.png) 窗口。 **** ****
 
 
 <!-- ====================================================================== -->
@@ -184,7 +184,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 1.  在 DevTools 中，选择 **"设置**  >  **实验"。**
 
-1.  选中"**协议监视器**"复选框，然后单击"**** 关闭 (DevTools > 设置 中的"关闭"图标。) 关闭 ![ ](../media/settings-close-icon-light-theme.png) 设置。 ****
+1.  选中"**协议监视器**"复选框，然后单击"**** 关闭 (DevTools > 设置 中的"关闭"图标。) ![ ](../media/settings-close-icon-light-theme.png) 关闭设置。 ****
 
 1.  打开命令**菜单** `Control` + `Shift` + `P` () ，然后在文本框中键入协议。 ****
 
@@ -234,7 +234,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 1.  突出显示任何 HTML 元素以显示网页源中订单的覆盖。
 
-:::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::no-loc (源订单查看器) ：：： 在辅助功能窗格中" lightbox="。。/media/experiments-source-order-viewer.msft.png"：：：
+:::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::no-loc (辅助功能窗格中) ：：：" lightbox="../media/experiments-source-order-viewer.msft.png"：：：
 
 此实验默认打开。
 
@@ -302,7 +302,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 有关新的可视字体编辑器 **的详细信息，** 请参阅在样式窗格中编辑 [CSS 字体样式和设置](../inspect-styles/edit-fonts.md)。
 
-:::image type="complex" source="../media/font-editor-open.msft.png" alt-text="突出显示可视内容字体编辑器窗格" lightbox="../media/font-editor-open.msft.png":::
+:::image type="complex" source="../media/font-editor-open.msft.png" alt-text="突出显示可视的&quot;字体编辑器&quot;窗格。" lightbox="../media/font-editor-open.msft.png":::
    突出显示可视内容**字体编辑器**窗格
 :::image-end:::
 
@@ -351,7 +351,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 [Webhint](https://webhint.io) 试验在“[问题](../issues/index.md)”面板中显示 webhint 反馈。  选择一个问题，在网站上显示有关解决方案的文档和受影响资源的列表。  选择资源链接以在 DevTools******中**打开**** 相关的"网络、源"或"元素"窗格。
 
-:::image type="content" source="../media/experiments-webhint.msft.png" alt-text="问题面板中的 webhint 反馈" lightbox="../media/experiments-webhint.msft.png":::
+:::image type="content" source="../media/experiments-webhint.msft.png" alt-text="问题面板中的 webhint 反馈。" lightbox="../media/experiments-webhint.msft.png":::
 
 此实验默认打开。
 
@@ -383,7 +383,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 1.  此时将显示应用的所有绘制层。  使用你自己的 Web 应用试用此功能。
 
-:::image type="content" source="../media/experiments-layers.msft.png" alt-text="复合层窗格" lightbox="../media/experiments-layers.msft.png":::
+:::image type="content" source="../media/experiments-layers.msft.png" alt-text="复合层窗格。" lightbox="../media/experiments-layers.msft.png":::
 
 此实验默认打开。
 
@@ -406,7 +406,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 1.  单击**发送**。
 
-:::image type="content" source="../media/network-network-console.msft.png" alt-text="控制台工具箱中的网络控制台" lightbox="../media/network-network-console.msft.png":::
+:::image type="content" source="../media/network-network-console.msft.png" alt-text="控制台箱中的网络控制台。" lightbox="../media/network-network-console.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -434,7 +434,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 Web 应用程序中的内存泄漏可能难以查找和修复。
 
-DevTools Microsoft Edge分离的元素面板可帮助调查和解决内存泄漏的常见源。 ****
+DevTools 中新的分离Microsoft Edge面板可帮助调查和解决常见内存泄漏源。 ****
 
 当应用程序的 JavaScript 代码在内存中保留数量不断增加的对象时，会发生内存泄漏。 JavaScript 代码应释放这些对象，以便浏览器可以重用内存空间。
 
@@ -446,7 +446,7 @@ DevTools Microsoft Edge分离的元素面板可帮助调查和解决内存泄漏
 <!-- present in 96, 98 -->
 <!-- preserve literal UI string, including "VS" & "the" -->
 
-若要在 devTools Visual Studio主题，请VS Code**开发工具实验的主题**。 有关详细信息，请参阅向 [DevTools 应用颜色主题](../customize/theme.md)。
+若要在 devTools Visual Studio主题，请VS Code**开发工具实验的开发人员**主题。 有关详细信息，请参阅向 [DevTools 应用颜色主题](../customize/theme.md)。
 
 
 <!-- ====================================================================== -->
@@ -455,11 +455,11 @@ DevTools Microsoft Edge分离的元素面板可帮助调查和解决内存泄漏
 
 实验**中的开放源文件**Visual Studio Code源工具的代码编辑器替换为用于编辑Visual Studio Code文件的代码编辑器。 打开此实验时，开发人员工具会检测何时编辑本地文件，并提示你选择一个用作工作区的文件夹。
 
-选择要用作工作区的文件夹时，在 DevTools 中选择指向文件的任何链接将在 Visual Studio Code。  在早期版本的 Microsoft Edge 中，此操作在 DevTools 中的源工具的代码编辑器中打开文件。
+选择要用作工作区的文件夹时，在 DevTools 中选择指向文件的任何链接将在 Visual Studio Code。  在早期版本的 Microsoft Edge 中，此操作在 DevTools 中的"源"工具的代码编辑器中打开文件。
 
-:::image type="content" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="在&quot;样式&quot;工具中选择文件链接将打开Visual Studio Code" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
+:::image type="content" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="在&quot;样式&quot;工具中选择文件链接将打开Visual Studio Code。" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
 
-现在，你在 DevTools 中执行的任何编辑都更改硬盘上的文件，并实时与Visual Studio Code。 可以在打开数据源中的源文件中阅读有关[Visual Studio Code。](../sources/opening-sources-in-vscode.md)
+现在，你在 DevTools 中执行的任何编辑都更改硬盘上的文件，并实时与Visual Studio Code。 有关设置工作区的内容，请参阅在文件打开[Visual Studio Code。](../sources/opening-sources-in-vscode.md)
 
 
 <!-- ====================================================================== -->
@@ -546,7 +546,7 @@ This experiment replaces the **What's New** tool with the new **Welcome** tool. 
 
 The **Welcome** tool opens automatically after each update to Microsoft Edge.  To prevent the display of the **Welcome** tool after each update, clear the checkbox next to **Open tab after each update** under the **Welcome** tool title.
 
-:::image type="content" source="../media/experiments-welcome.msft.png" alt-text="Welcome tool" lightbox="../media/experiments-welcome.msft.png":::
+:::image type="content" source="../media/experiments-welcome.msft.png" alt-text="Welcome tool." lightbox="../media/experiments-welcome.msft.png":::
 
 ### Enable new CSS Flexbox debugging features
 
@@ -556,9 +556,9 @@ This feature provides many new visualizations to help you debug CSS Flexbox layo
 
 #### Displaying persistent overlays on Flexbox layouts with the Inspect tool
 
-The **Inspect** tool provides a quick way to identify and visualize CSS Flexbox layouts in a website by hovering on them with the mouse.  Select the **Inspect** (![Inspect](../media/inspect-icon.msft.png)) icon in the top-left corner of DevTools.  Then, while debugging the website, hover on a flex container to display outlines around the flex container.
+The **Inspect** tool provides a quick way to identify and visualize CSS Flexbox layouts in a website by hovering on them with the mouse.  Select the **Inspect** (![Inspect.](../media/inspect-icon.msft.png)) icon in the top-left corner of DevTools.  Then, while debugging the website, hover on a flex container to display outlines around the flex container.
 
-:::image type="content" source="../media/flexbox-hover.msft.png" alt-text="Display Flexbox containers with the Inspect tool" lightbox="../media/flexbox-hover.msft.png":::
+:::image type="content" source="../media/flexbox-hover.msft.png" alt-text="Display Flexbox containers with the Inspect tool." lightbox="../media/flexbox-hover.msft.png":::
 
 #### Displaying persistent overlays on Flexbox layouts
 
@@ -571,11 +571,11 @@ To toggle persistent overlays on Flexbox layout, do either of the following:
 *   Select the **Flexbox** oval icon next to any Flexbox container displayed in the DOM tree of the **Elements** tool.
 *   Open the new **Layout** panel located in the **Elements** tool, and select the checkbox next to each Flexbox container you want to highlight.
 
-:::image type="content" source="../media/flexbox-overlay.msft.png" alt-text="Flex icons and Layout panel in DevTools" lightbox="../media/flexbox-overlay.msft.png":::
+:::image type="content" source="../media/flexbox-overlay.msft.png" alt-text="Flex icons and Layout panel in DevTools." lightbox="../media/flexbox-overlay.msft.png":::
 
 #### Configuring persistent overlays
 
 To configure options for persistent overlays for CSS grids or Flexbox layouts, use the **Layout** pane.  The **Layout** pane is located in the **Elements** tool next to the **Styles** and **Computed** panes.
 
-:::image type="content" source="../media/flexbox-layout.msft.png" alt-text="Layout panel" lightbox="../media/flexbox-layout.msft.png":::
+:::image type="content" source="../media/flexbox-layout.msft.png" alt-text="Layout panel." lightbox="../media/flexbox-layout.msft.png":::
 -->

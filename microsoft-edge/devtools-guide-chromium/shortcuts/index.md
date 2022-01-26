@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: bff1f1b61ccabc17468057d03d4ec4dc08d7ec24
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 13f82384398a40fe0068be407070422954ca1b2f
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320779"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323290"
 ---
 <!-- Copyright Kayce Basques
 
@@ -170,7 +170,7 @@ ms.locfileid: "12320779"
 | 清除“**控制台**” | `Control`+`L` | `Command`+`K` 或 `Option`+`L` |
 | 强制多行输入。  该快捷方式通常是不需要的，因为默认情况下，开发工具应该检测多行方案 | `Shift`+`Enter` | `Command`+`Return` |
 | 运行 | `Enter` | `Return` |
-| 展开记录到控制台的对象的所有子属性 | 保留 `Alt` ，然后单击"**** 展开 (![ 展开 ](../media/expand-icon.msft.png))  | 保留 `Alt` ，然后单击展开**** (![ 展开 ](../media/expand-icon.msft.png)) 。 |
+| 展开记录到控制台的对象的所有子属性 | 保留 `Alt` ，然后单击"**** 展开 (![ 展开 ](../media/expand-icon.msft.png) "。)  | 按住 `Alt` ，然后单击**** 展开 (![ 展开 ](../media/expand-icon.msft.png) 。) 。 |
 
 
 <!-- ====================================================================== -->
@@ -178,4 +178,5 @@ ms.locfileid: "12320779"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/shortcuts)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

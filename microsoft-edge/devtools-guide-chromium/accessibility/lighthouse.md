@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: cd8640060a450d7b4fdd88a3d3b6154ca9deaee3
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: b73cddf563941f61fc9136d7b2b9033f89379084
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318182"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323248"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques
@@ -42,7 +42,7 @@ ms.locfileid: "12318182"
 1.  导航到要审核的 URL。
 1.  在 DevTools 中，选择 **"Lighthouse"** 工具。  将显示配置选项。
 
-    :::image type="complex" source="../media/accessibility-lighthouse.msft.png" alt-text="浅色配置选项" lightbox="../media/accessibility-lighthouse.msft.png":::
+    :::image type="complex" source="../media/accessibility-lighthouse.msft.png" alt-text="浅色配置选项。" lightbox="../media/accessibility-lighthouse.msft.png":::
        浅色配置选项
     :::image-end:::
 
@@ -50,23 +50,23 @@ ms.locfileid: "12318182"
 1.  在"**类别"** 部分，选择 **"辅助功能"。**
 1.  选择 **"生成报告"。** 10 到 30 秒后，DevTools 将显示一个报告。  该报告提供了有关如何提高页面辅助功能的提示。
 
-    :::image type="complex" source="../media/accessibility-lighthouse-result.msft.png" alt-text="辅助功能类别的 Lighthouse 报告" lightbox="../media/accessibility-lighthouse-result.msft.png":::
+    :::image type="complex" source="../media/accessibility-lighthouse-result.msft.png" alt-text="辅助功能类别的&quot;浅色&quot;报表。" lightbox="../media/accessibility-lighthouse-result.msft.png":::
        辅助功能类别的 Lighthouse**报告**
     :::image-end:::
 
 1.  选择报告中的某个项目以了解有关它的详细信息。
 
-    :::image type="complex" source="../media/accessibility-lighthouse-result-issue-expanded.msft.png" alt-text="Lighthouse 报告中的扩展问题" lightbox="../media/accessibility-lighthouse-result-issue-expanded.msft.png":::
+    :::image type="complex" source="../media/accessibility-lighthouse-result-issue-expanded.msft.png" alt-text="Lighthouse 报告中的一个扩展问题。" lightbox="../media/accessibility-lighthouse-result-issue-expanded.msft.png":::
        Lighthouse 报告中的扩展问题
     :::image-end:::
 
 1.  选择 **"了解更多** "链接以查看问题的文档。
 
-    :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="查看问题的文档" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
+    :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="查看问题的文档。" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
        查看问题的文档
     :::image-end:::
 
-1.  若要返回到配置选项，请在 DevTools 中选择"**** 执行审核 `+` () 。
+1.  若要返回到配置选项，请在 DevTools 中选择"**** 执行审核 `+` () "。
 
 
 <!-- ====================================================================== -->
@@ -74,4 +74,5 @@ ms.locfileid: "12318182"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

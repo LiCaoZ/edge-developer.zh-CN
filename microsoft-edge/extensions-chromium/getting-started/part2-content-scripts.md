@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/07/2021
-ms.openlocfilehash: 4f97e568bc534140c013f1a452fb73bedf8e580b
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 3d32c96b576ce55ef2736b19a0e3530a50670060
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318658"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324473"
 ---
 # <a name="create-an-extension-tutorial-part-2"></a>创建扩展教程第 2 部分
 
@@ -62,7 +62,7 @@ ms.locfileid: "12318658"
 
 更新并打开扩展后，将打开一个弹出窗口，并显示一个显示按钮。
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html扩展图标后显示":::
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html扩展图标后显示。":::
    popup.html扩展图标后显示
 :::image-end:::
 
@@ -130,7 +130,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 
 原因是你使用 元素的 属性将图像 `src` `img` 注入内容页面。  内容页在运行扩展的线程不同的唯一线程上运行。  必须将静态图像文件公开为 Web 资产，它必须能够正常工作。
 
-在文件中添加另 `manifest.json` 一项以声明该图像可供所有浏览器选项卡使用。  在添加即将 (的内容脚本声明时，应在下面的完整文件中看到该条目 `manifest.json`) 。
+在文件中添加另 `manifest.json` 一项以声明该图像可供所有浏览器选项卡使用。  添加内容脚本声明 (应在下面的完整文件中看到该条目，如下所示 `manifest.json`) 。
 
 ```json
 "web_accessible_resources": [
@@ -220,7 +220,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 现在，当您浏览到任何页面 **并选择扩展图标** 时，弹出菜单将显示如下。
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html扩展图标后显示":::
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html扩展图标后显示。":::
    popup.html扩展图标后显示
 :::image-end:::
 
@@ -228,7 +228,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 选择该按钮 `Display` 时，将获取下面的内容。  如果在图像上的任意位置选择，该图像元素将被删除，选项卡页折叠 `stars.jpeg` 回最初显示的内容。
 
-:::image type="complex" source="./media/part2-showingimage.png" alt-text="在浏览器中显示的图像":::
+:::image type="complex" source="./media/part2-showingimage.png" alt-text="在浏览器中显示的图像。":::
    在浏览器中显示的图像
 :::image-end:::
 

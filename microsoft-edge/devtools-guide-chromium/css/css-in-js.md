@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/25/2021
-ms.openlocfilehash: 0fb85caa29ed59ac47ae696c11880cd7d3c57114
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: c19d7139363526103ef147202929ac57ffa07d63
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318924"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324109"
 ---
 <!-- Copyright Alex Rudenko
 
@@ -36,7 +36,7 @@ ms.locfileid: "12318924"
 
 从 **"样式** "窗格中，您可以复制样式规则的声明，其格式为 JavaScript 并准备粘贴到 JavaScript 文件中。
 
-使用 CSS-in-JS 库时，可以将 CSS 声明 (CSS 属性和值) 以便它们会自动格式化为 JavaScript。  不必手动编辑复制的 CSS 以匹配 JavaScript 的语法。  可以在样式规则中复制单个 CSS 声明或所有声明，然后将其直接粘贴到 JavaScript 文件中，而不会遇到语法问题。
+使用 CSS-in-JS 库时，可以将 CSS 声明 (CSS 属性和值) ，以便它们会自动为 JavaScript 设置格式。  不必手动编辑复制的 CSS 以匹配 JavaScript 的语法。  可以在样式规则中复制单个 CSS 声明或所有声明，然后将其直接粘贴到 JavaScript 文件中，而不会遇到语法问题。
 
 将样式规则复制为 JavaScript：
 
@@ -58,7 +58,7 @@ ms.locfileid: "12318924"
 
 <!-- from https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#style-editing-for-css-in-js-frameworks -->
 
-" **样式** "窗格支持使用 CSS 对象模型和 [CSSOM ](https://drafts.csswg.org/cssom) (API 创建的) 样式。  许多 CSS-in-JS 框架和库在构建样式的底层使用 CSS 对象模型 API。
+" **样式** "窗格支持使用 CSS 对象模型和 [CSSOM (创建的) ](https://drafts.csswg.org/cssom) 样式。  许多 CSS-in-JS 框架和库在构建样式的底层使用 CSS 对象模型 API。
 
 您可以使用可构造样式表编辑在 JavaScript [中添加的样式](https://wicg.github.io/construct-stylesheets/)。  可构造的样式表是使用 Shadow DOM 时创建和分发可重用样式 [的一种方法](https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM)。
 
@@ -81,7 +81,7 @@ function addStyle() {
 
 此示例演示如何更改由 CSS 对象模型函数 `background` `h1` 添加的样式的属性 `insertRule()` 。  颜色最初通过调用 CSS 对象模型函数进行设置，然后可以使用"样式"窗格从 更改为 `background` `pink` `lightblue` 。 ****
 
-:::image type="complex" source="../media/css-in-js.msft.png" alt-text="将随 CSSStyleSheet 一起添加的 h1 样式的背景属性从粉色更改为浅色" lightbox="../media/css-in-js.msft.png":::
+:::image type="complex" source="../media/css-in-js.msft.png" alt-text="将随 CSSStyleSheet 一起添加的 h1 样式的背景属性从粉色更改为浅色。" lightbox="../media/css-in-js.msft.png":::
    将 `background` 随 一起 `h1` 添加的样式 `CSSStyleSheet` 的属性从 更改 `pink` 到 `lightblue` 。
 :::image-end:::
 
@@ -95,9 +95,9 @@ function addStyle() {
 
 下面是 _CSS-in-JS_的含义，以及它不同于常规 CSS 的方式。  _CSS-in-JS_的定义有点模糊。  从广泛的意义上说，这是一种使用 JavaScript 管理 CSS 代码的方法。  例如，这可能意味着 CSS 内容是使用 JavaScript 定义的，而最终的 CSS 输出由应用进行生成。
 
-在 DevTools 上下文中 _，CSS-in-JS_ 意味着 CSS 内容通过 CSS 对象模型 API 注入页面。  常规 CSS 使用 或 元素进行注入，并且具有静态源 (如 DOM 节点或网络 `<style>` `<link>` 资源) 。  相比之下，CSS-in-JS 通常没有静态源。  此处的一个特例是，可以使用 CSS 对象模型 API 更新元素的内容，从而导致源与实际的 `<style>` CSS 样式表不同步。
+在 DevTools 上下文中 _，CSS-in-JS_ 意味着 CSS 内容通过 CSS 对象模型 API 注入页面。  使用 或 元素注入常规 CSS，并且具有静态源 (如 DOM 节点或 `<style>` `<link>` 网络资源) 。  相比之下，CSS-in-JS 通常没有静态源。  此处的一个特例是，可以使用 CSS 对象模型 API 更新元素的内容，从而导致源与实际的 `<style>` CSS 样式表不同步。
 
-如果使用任何 CSS-in-JS 库 (如样式组件、百年计划或 JSS) ，该库可能会使用 CSS 对象模型 API 在底层注入样式，具体取决于开发模式和浏览器。
+如果你使用任何 CSS-in-JS 库 (如样式组件、因此或 JSS) ，该库可能会使用 CSS 对象模型 API 在底层注入样式，具体取决于开发模式和浏览器。
 
 我们来看看如何使用 CSS 对象模型 API 注入样式表的一些示例，类似于某些 CSS-in-JS 库使用的方法。
 
@@ -135,6 +135,7 @@ document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处](https://developer.chrome.com/blog/css-in-js/) ，由 [Alex 以](https://developers.google.com/web/resources/contributors#alex-rudenko) 技术编写 (Chrome DevTools \& Lighthouse) 。
+> 原始页面位于 [此处](https://developer.chrome.com/blog/css-in-js/) ，由 [Alex 则](https://developers.google.com/web/resources/contributors#alex-rudenko) (技术撰稿人 Chrome DevTools \& Lighthouse) 。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

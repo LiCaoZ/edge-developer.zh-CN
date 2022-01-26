@@ -1,17 +1,17 @@
 ---
 title: 'DevTools (Microsoft Edge 86) '
-description: 将键盘快捷方式与Visual Studio Code、模拟 Surface Duo 和 Samsung Foldy Fold、CSS 网格覆盖改进等匹配。
+description: 将键盘快捷方式与Visual Studio Code、模拟 Surface Duo 和 Samsung 则折叠、CSS 网格覆盖改进等匹配。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 9fc3a06ea84b0062bf4484ffac63e3a7d99ac0a4
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 2a9a5aca37ba6bd91632f6680390ae56eaa15e99
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320359"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323479"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -36,25 +36,25 @@ ms.locfileid: "12320359"
 
 ### <a name="match-keyboard-shortcuts-in-devtools-to-visual-studio-code"></a>将 DevTools 中的键盘快捷方式与Visual Studio Code
 
-在 Microsoft Edge 86 中，你可以将 DevTools 中的键盘快捷方式与代码中的Microsoft Visual Studio[匹配](https://code.visualstudio.com)。
+在 Microsoft Edge 86 中，你可以将 DevTools 中的键盘快捷方式与代码 中的Microsoft Visual Studio[匹配](https://code.visualstudio.com)。
 
-:::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="将 DevTools 中的键盘快捷方式与Visual Studio Code" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
+:::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="将 DevTools 中的键盘快捷方式与Visual Studio Code。" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
    将 DevTools 中的键盘快捷方式与Visual Studio Code
 :::image-end:::
 
 若要激活此功能，请导航到在 [DevTools 中自定义键盘快捷方式](../../../customize/shortcuts.md)。
 
-例如，用于暂停或继续运行脚本的键盘快捷方式在 Visual Studio Code[为](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) `F5` 。  使用**DevTools (** Default) 预设，DevTools 中的同一快捷方式是 ，但在选择 Visual Studio Code 预设时，该快捷方式现在也是 `F8` **** `F5` 。
+例如，用于暂停或继续运行脚本的键盘快捷方式在 Visual Studio Code[为](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) `F5` 。  使用**DevTools (** Default) 预设，DevTools 中的同一快捷方式是 ，但是当你选择 Visual Studio Code 预设时，该快捷方式现在也是 `F8` **** `F5` 。
 
 Chromium问题[#174309](https://crbug.com/174309)
 
 ### <a name="emulate-surface-duo-and-samsung-galaxy-fold"></a>模拟 Surface Duo 和 Samsung Galaxy Fold
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="试验功能":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能。":::
    试验功能
 :::image-end:::
 
-现在，你能够在两台新设备上测试网站或应用的外观[：Surface Duo](https://www.microsoft.com/surface/devices/surface-duo)和[Samsung 在](https://www.samsung.com/us/mobile/galaxy-fold)Microsoft Edge。
+现在，你能够在两台新设备上测试网站或应用的外观[：Surface Duo](https://www.microsoft.com/surface/devices/surface-duo)和[Samsung 用户](https://www.samsung.com/us/mobile/galaxy-fold)折叠Microsoft Edge。
 
 为帮助增强用于双屏幕和可折叠设备的网站或应用，请在[模拟设备](../../../device-mode/index.md)时使用以下功能。
 
@@ -62,13 +62,13 @@ Chromium问题[#174309](https://crbug.com/174309)
 *   [呈现接缝](/dual-screen/introduction#how-to-work-with-the-seam)，即两个屏幕之间的空间。
 *   启用实验性 Web 平台 API 以访问新的[CSS 媒体](/dual-screen/web/css-media-spanning)屏幕跨越功能以及[JavaScript getWindowSegments API。](/dual-screen/web/javascript-getwindowsegments)
 
-:::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Surface Duo 的设备模拟" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
+:::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Surface Duo 的设备仿真。" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
    Surface Duo 的设备模拟
 :::image-end:::
 
 若要打开此实验功能，请 [导航到打开](../../../experimental-features/index.md#turning-an-experiment-on-or-off) 或关闭实验，然后选择模拟 **：支持双屏**模式旁边的复选框。
 
-有关此功能详细信息，请导航到在[DevTools 中](../../../device-mode/dual-screen-and-foldables.md)模拟双屏幕和可折叠Microsoft Edge设备。
+有关此功能详细信息，请导航到在[DevTools 中模拟双屏幕和可折叠Microsoft Edge设备](../../../device-mode/dual-screen-and-foldables.md)。
 
 Chromium问题： [#1054281](https://crbug.com/1054281)
 
@@ -76,18 +76,18 @@ Chromium问题： [#1054281](https://crbug.com/1054281)
 
 感谢你提供有关改进的 CSS 网格覆盖的正面反馈。  CSS 网格覆盖现在默认启用，不需要你启用实验。
 
-:::image type="complex" source="../../media/2020/08/css-grid-overlay-article.msft.png" alt-text="article 元素的 CSS 网格覆盖" lightbox="../../media/2020/08/css-grid-overlay-article.msft.png":::
+:::image type="complex" source="../../media/2020/08/css-grid-overlay-article.msft.png" alt-text="article 元素的 CSS 网格覆盖。" lightbox="../../media/2020/08/css-grid-overlay-article.msft.png":::
    元素的 CSS 网格 `article` 覆盖
 :::image-end:::
 
 > [!NOTE]
 > 有关网格覆盖层详细信息，请导航到 [CSS 网格调试功能](../06/devtools.md#css-grid-debugging-features)。
 
-开发人员Microsoft Edge团队和 Chrome DevTools 团队协作处理其他功能。  新功能包括多个覆盖，这些覆盖是永久性的，并且通过"元素"**** 工具上的新"布局"窗格**可配置**。
+开发人员Microsoft Edge团队和 Chrome DevTools 团队共同协作开发其他功能。  新功能包括多个覆盖，这些覆盖是永久性的，并且通过"元素"**** 工具上的新"布局"窗格**可配置**。
 
-若要启用此实验功能，请导航到[](../../../experimental-features/index.md#turning-an-experiment-on-or-off)打开或关闭实验，并选中"重启后元素"中的"布局侧栏"窗格中"启用新的 CSS 网格调试功能 **" (配置选项"旁边的复选框**。) 。
+若要启用此实验功能，请导航到[](../../../experimental-features/index.md#turning-an-experiment-on-or-off)打开或关闭实验，并选中"重启后元素"中的"布局侧栏"窗格中"启用新的 CSS 网格调试功能** (配置**选项"旁边的复选框) 。
 
-有关此功能详细信息，请导航到"检查开发人员工具Microsoft Edge [CSS 网格"。](../../../css/grid.md)
+有关此功能详细信息，请导航到"检查[开发人员](../../../css/grid.md)工具Microsoft Edge CSS 网格。
 
 Chromium问题： [#1047356](https://crbug.com/1047356)
 
@@ -97,33 +97,33 @@ Chromium问题： [#1047356](https://crbug.com/1047356)
 
 `table` Microsoft Edge 85 或更早版本中的控制台 API 输出：
 
-:::image type="content" source="../../media/2020/08/console-table-beta.msft.png" alt-text="表 85 或Microsoft Edge控制台 API 输出" lightbox="../../media/2020/08/console-table-beta.msft.png":::
+:::image type="content" source="../../media/2020/08/console-table-beta.msft.png" alt-text="表 85 或Microsoft Edge控制台 API 输出。" lightbox="../../media/2020/08/console-table-beta.msft.png":::
 
-`table` 从粘贴到 Microsoft Edge 85 或更早版本中的控制台 API Visual Studio Code：
+`table` 85 或更早版本Microsoft Edge的控制台 API 输出粘贴到Visual Studio Code：
 
-:::image type="content" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="表 85 或更早版本Microsoft Edge的控制台 API 输出粘贴到 Visual Studio Code" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
+:::image type="content" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="表 85 或更早版本Microsoft Edge控制台 API 输出粘贴到 Visual Studio Code。" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
 
 在 Microsoft Edge 86 或更高版本中，从**控制台**复制表时，格式设置现已保留。
 
 `table` Microsoft Edge 86 或更高版本中的控制台 API 输出：
 
-:::image type="content" source="../../media/2020/08/console-table-canary.msft.png" alt-text="表 86 或更高版本Microsoft Edge控制台 API 输出" lightbox="../../media/2020/08/console-table-canary.msft.png":::
+:::image type="content" source="../../media/2020/08/console-table-canary.msft.png" alt-text="表 86 或Microsoft Edge控制台 API 输出。" lightbox="../../media/2020/08/console-table-canary.msft.png":::
 
-`table` 将 86 Microsoft Edge更高版本的控制台 API 输出粘贴到Visual Studio Code：
+`table` 将 86 Microsoft Edge更高版本中的控制台 API 输出粘贴到Visual Studio Code：
 
-:::image type="content" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="表 86 Microsoft Edge更高版本的控制台 API 输出粘贴到 Visual Studio Code" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
+:::image type="content" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="表 86 Microsoft Edge更高版本的控制台 API 输出粘贴到 Visual Studio Code。" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
 
 Chromium问题： [#1115011](https://crbug.com/1115011)
 
 ### <a name="source-order-viewer-for-easier-accessibility-testing"></a>源订单查看器，便于辅助功能测试
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="试验功能":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能。":::
    试验功能
 :::image-end:::
 
 新的辅助功能帮助程序显示源中元素的顺序。
 
-:::image type="complex" source="../../media/2020/08/source-order-viewer.msft.png" alt-text="激活 显示源顺序" lightbox="../../media/2020/08/source-order-viewer.msft.png":::
+:::image type="complex" source="../../media/2020/08/source-order-viewer.msft.png" alt-text="激活 显示源顺序。" lightbox="../../media/2020/08/source-order-viewer.msft.png":::
    激活 **显示源顺序**
 :::image-end:::
 
@@ -142,11 +142,11 @@ Your feedback and internal discoveries uncovered which text strings used in the 
 
 Microsoft Edge DevTools 85 and earlier in Traditional Chinese:
 
-:::image type="content" source="../../media/2020/08/localization-improvements-chinese-complex-stable.msft.png" alt-text="Microsoft Edge DevTools in Traditional Chinese" lightbox="localization-improvements-chinese-complex-stable.msft.png":::
+:::image type="content" source="../../media/2020/08/localization-improvements-chinese-complex-stable.msft.png" alt-text="Microsoft Edge DevTools in Traditional Chinese." lightbox="localization-improvements-chinese-complex-stable.msft.png":::
 
 Microsoft Edge DevTools 86 or later in Traditional Chinese:
 
-:::image type="content" source="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png" alt-text="Microsoft Edge DevTools in Japanese" lightbox="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png":::
+:::image type="content" source="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png" alt-text="Microsoft Edge DevTools in Japanese." lightbox="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png":::
 
 To meet your translation needs, the Microsoft Edge DevTools team is focused on improving translation quality.
 
@@ -155,12 +155,12 @@ The current effort to improve translation quality enables easier support for mor
 
 ### <a name="highlight-all-search-results-in-elements-tool"></a>在"元素"工具中突出显示所有搜索结果
 
-在 Microsoft Edge 84 和 85 中，"元素"**** 工具的第一个搜索结果未突出显示。  其余搜索结果已正确突出显示。
+在 Microsoft Edge 84 和 85 中，"元素****"工具的第一个搜索结果未突出显示。  其余搜索结果已正确突出显示。
 
-感谢你发送反馈并帮助改进Chromium。  您的反馈发现了开放1103316[](https://crbug.com/1103316)中的问题Chromium问题。
+感谢你发送反馈并帮助改进Chromium。  您的反馈发现了开源[1103316](https://crbug.com/1103316)中的问题Chromium问题。
 
-:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="在 84 或更高版本的&quot;元素&quot;Microsoft Edge突出显示第一个搜索结果" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
-   突出显示 84 或更高版本中 **"** 元素"Microsoft Edge的第一个搜索结果
+:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="在 84 或更高版本的&quot;元素&quot;Microsoft Edge突出显示第一个搜索结果。" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
+   在 84 或更高版本中的 **"** 元素"Microsoft Edge突出显示第一个搜索结果
 :::image-end:::
 
 此问题现已在所有版本的 Microsoft Edge 中Microsoft Edge。
@@ -179,9 +179,9 @@ DevTools 现在在媒体工具中显示媒体 [播放器](../../../media-panel/i
 
 若要打开新的 **媒体工具** ，请完成以下步骤。
 
-1.  选择 **"自定义和控制开发人员工具 () >** `...` **更多工具**  >  **媒体"。**
+1.  选择 **"自定义和控制开发人员工具 () >** `...` **更多工具**  >  **""媒体"。**
 
-    :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="新媒体工具" lightbox="../../media/2020/08/media-panel.msft.png":::
+    :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="新媒体工具。" lightbox="../../media/2020/08/media-panel.msft.png":::
        新 **媒体** 工具
     :::image-end:::
 
@@ -198,7 +198,7 @@ DevTools 现在在媒体工具中显示媒体 [播放器](../../../media-panel/i
 
 例如，若要获取目录的屏幕截图，请将鼠标悬停在 元素上，打开上下文菜单 (右键单击") "，然后选择"捕获节点屏幕截图 **"。**
 
-:::image type="complex" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="捕获节点屏幕截图" lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
+:::image type="complex" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="捕获节点屏幕截图。" lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
    捕获节点屏幕截图
 :::image-end:::
 
@@ -210,13 +210,13 @@ Chromium问题： [#1100253](https://crbug.com/1100253)
 
 <!--todo: this figure need to be updated  -->
 
-:::image type="complex" source="../../media/2020/08/issue-console-msg.msft.png" alt-text="控制台消息中的问题" lightbox="../../media/2020/08/issue-console-msg.msft.png":::
+:::image type="complex" source="../../media/2020/08/issue-console-msg.msft.png" alt-text="控制台消息中的问题。" lightbox="../../media/2020/08/issue-console-msg.msft.png":::
    控制台消息中的问题
 :::image-end:::
 
 默认情况下，第三方 Cookie 问题在"问题"工具中 **处于隐藏** 状态。  启用新的 **"包含第三方 Cookie 问题** "复选框以查看问题。
 
-:::image type="complex" source="../../media/2020/08/third-party-cookies.msft.png" alt-text="第三方 Cookie 问题复选框" lightbox="../../media/2020/08/third-party-cookies.msft.png":::
+:::image type="complex" source="../../media/2020/08/third-party-cookies.msft.png" alt-text="第三方 Cookie 问题复选框。" lightbox="../../media/2020/08/third-party-cookies.msft.png":::
    第三方 Cookie 问题复选框
 :::image-end:::
 
@@ -230,7 +230,7 @@ Chromium问题[：1096481、1068116、1080589](https://crbug.com/1096481) [](htt
 
 启用 **"禁用** 本地字体"后，DevTools 将忽略 `local()` 字体，并提取网络的每个字体。
 
-:::image type="complex" source="../../media/2020/08/disable-font.msft.png" alt-text="模拟缺少的本地字体" lightbox="../../media/2020/08/disable-font.msft.png":::
+:::image type="complex" source="../../media/2020/08/disable-font.msft.png" alt-text="模拟缺少的本地字体。" lightbox="../../media/2020/08/disable-font.msft.png":::
    模拟缺少的本地字体
 :::image-end:::
 
@@ -251,7 +251,7 @@ Chromium问题： [#384968](https://crbug.com/384968)
 
 空闲 [检测 API](https://web.dev/idle-detection) 允许开发人员检测非活动用户，并响应空闲状态更改。  你现在可以使用 DevTools 在 **传感器** 工具中模拟用户状态和屏幕状态中的空闲状态更改，而不是等待实际空闲状态更改。  You may open the **Sensors** tool from the [Drawer](../../../customize/index.md#drawer).
 
-:::image type="complex" source="../../media/2020/08/emulate-idle.msft.png" alt-text="模拟非活动用户" lightbox="../../media/2020/08/emulate-idle.msft.png":::
+:::image type="complex" source="../../media/2020/08/emulate-idle.msft.png" alt-text="模拟非活动用户。" lightbox="../../media/2020/08/emulate-idle.msft.png":::
    模拟非活动用户
 :::image-end:::
 
@@ -260,13 +260,13 @@ Chromium问题： [#1090802](https://crbug.com/1090802)
 ### <a name="emulate-prefers-reduced-data"></a>模拟 prefers-reduced-data
 
 > [!NOTE]
-> 在 Microsoft Edge 86 中，若要启用此功能，请导航到"实验 `edge://flags#enable-experimental-web-platform-features` 性 Web 平台功能"标志**并打开**。  模拟选项仅在启用标志时显示。
+> 在 Microsoft Edge 86 中，若要启用此功能，请导航到"实验 `edge://flags#enable-experimental-web-platform-features` **性 Web 平台功能"标志并打开**。  模拟选项仅在启用标志时显示。
 
 首选 [的缩减数据](https://drafts.csswg.org/mediaqueries-5#descdef-media-prefers-reduced-data) 媒体查询可检测减少数据的用户内容首选项。  如果选中，用户将接收使用较少数据的备用页面内容。
 
 你现在可以使用 DevTools 模拟 `prefers-reduced-data` 媒体查询。
 
-:::image type="complex" source="../../media/2020/08/emulate-prefers-reduced-data.msft.png" alt-text="模拟 prefers-reduced-data" lightbox="../../media/2020/08/emulate-prefers-reduced-data.msft.png":::
+:::image type="complex" source="../../media/2020/08/emulate-prefers-reduced-data.msft.png" alt-text="模拟首选的缩减数据。" lightbox="../../media/2020/08/emulate-prefers-reduced-data.msft.png":::
    模拟 prefers-reduced-data
 :::image-end:::
 
@@ -291,11 +291,11 @@ Chromium问题： [#772558](https://crbug.com/772558)
 
 ### <a name="deprecation-of-other-origins-listing-in-the-service-workers-pane"></a>在"服务工作者"窗格中弃用其他源列表
 
-DevTools 现在从服务工作者窗格**** (**应用程序**工具 >**服务**工作者窗格) 提供了一个链接，用于查看来自其他来源的服务工作者的完整列表。  若要在不打开 DevTools 的情况下访问列表，请导航到 `edge://service-worker-internals/?devtools` 。
+DevTools 现在提供来自服务工作者**** 窗格 (应用程序工具>**服务**工作者窗格) 的链接，以查看来自其他来源的服务工作者的完整列表。 ****  若要在不打开 DevTools 的情况下访问列表，请导航到 `edge://service-worker-internals/?devtools` 。
 
 以前，DevTools 显示一个嵌套在****"应用程序工具""服务>**窗格下**的列表。
 
-:::image type="complex" source="../../media/2020/08/sw-other-origins.msft.png" alt-text="链接到其他来源" lightbox="../../media/2020/08/sw-other-origins.msft.png":::
+:::image type="complex" source="../../media/2020/08/sw-other-origins.msft.png" alt-text="链接到其他源。" lightbox="../../media/2020/08/sw-other-origins.msft.png":::
    链接到其他来源
 :::image-end:::
 
@@ -309,11 +309,11 @@ DevTools 现在动态重新计算并显示覆盖信息的摘要。  在覆盖工
 
 覆盖摘要：
 
-:::image type="content" source="../../media/2020/08/coverage-compare.msft.png" alt-text="覆盖摘要" lightbox="../../media/2020/08/coverage-compare.msft.png":::
+:::image type="content" source="../../media/2020/08/coverage-compare.msft.png" alt-text="覆盖摘要。" lightbox="../../media/2020/08/coverage-compare.msft.png":::
 
 已筛选项目的范围摘要：
 
-:::image type="content" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="已筛选项目的范围摘要" lightbox="../../media/2020/08/coverage-compare-css-filter.msft.png":::
+:::image type="content" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="已筛选项目的范围摘要。" lightbox="../../media/2020/08/coverage-compare-css-filter.msft.png":::
 
 Chromium问题： [#1061385](https://crbug.com/1090802)
 
@@ -321,7 +321,7 @@ Chromium问题： [#1061385](https://crbug.com/1090802)
 
 DevTools 现在显示每个帧的详细视图。  若要访问它，请选择"应用程序"工具中" **框架** "菜单下的 **图** 文框。
 
-:::image type="complex" source="../../media/2020/08/frame-details.msft.png" alt-text="应用程序面板中框架的新详细视图" lightbox="../../media/2020/08/frame-details.msft.png":::
+:::image type="complex" source="../../media/2020/08/frame-details.msft.png" alt-text="应用程序面板中框架的新详细视图。" lightbox="../../media/2020/08/frame-details.msft.png":::
    应用程序工具中帧的新 **详细** 视图
 :::image-end:::
 
@@ -331,7 +331,7 @@ Chromium问题： [#1093247](https://crbug.com/1093247)
 
 打开窗口，弹出窗口现在也显示在框架树下。  打开的窗口的详细视图包括其他安全信息。
 
-:::image type="complex" source="../../media/2020/08/window-opener.msft.png" alt-text="打开的窗口的新框架详细视图" lightbox="../../media/2020/08/window-opener.msft.png":::
+:::image type="complex" source="../../media/2020/08/window-opener.msft.png" alt-text="打开的窗口的新框架详细视图。" lightbox="../../media/2020/08/window-opener.msft.png":::
    打开的窗口的新框架详细视图
 :::image-end:::
 
@@ -341,7 +341,7 @@ Chromium问题： [#1107766](https://crbug.com/1107766)
 
 安全上下文 [、Cross-Origin-Embedder-Policy (COEP) ](https://web.dev/coop-coep)和 [Cross-Origin-Opener-Policy (COOP) ](https://web.dev/coop-coep) 现在显示在帧详细信息中。
 
-:::image type="complex" source="../../media/2020/08/coep-coop.msft.png" alt-text="安全和隔离信息" lightbox="../../media/2020/08/coep-coop.msft.png":::
+:::image type="complex" source="../../media/2020/08/coep-coop.msft.png" alt-text="安全和隔离信息。" lightbox="../../media/2020/08/coep-coop.msft.png":::
    安全和隔离信息
 :::image-end:::
 
@@ -357,7 +357,7 @@ DevTools 现在为低颜色对比度文本提供颜色建议。
 
 在下面的示例中， `h1` 具有低对比度文本。  若要修复此问题，请打开"样式"窗格中 `color` 属性 **的颜色选取** 器。  展开"对比率 **"部分** 后，DevTools 将提供 AA 和 AAA 颜色建议。  选择建议的颜色以应用该颜色。
 
-:::image type="complex" source="../../media/2020/08/contrast-color-suggestion.msft.png" alt-text="颜色选取器建议 AA 和 AAA 颜色建议" lightbox="../../media/2020/08/contrast-color-suggestion.msft.png":::
+:::image type="complex" source="../../media/2020/08/contrast-color-suggestion.msft.png" alt-text="颜色选取器建议 AA 和 AAA 颜色建议。" lightbox="../../media/2020/08/contrast-color-suggestion.msft.png":::
    颜色选取器建议 AA 和 AAA 颜色建议
 :::image-end:::
 
@@ -367,7 +367,7 @@ Chromium问题： [#1093227](https://crbug.com/1093227)
 
 " **属性** "窗格已返回。  在[84 年 8 月Microsoft Edge弃用](../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel)。  开发人员Microsoft Edge团队和 Chrome DevTools 团队正在计划针对检查元素属性的改进。
 
-:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="&quot;元素&quot;面板中的&quot;属性&quot;窗格" lightbox="../../media/2020/08/properties-pane.msft.png":::
+:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="&quot;元素&quot;面板中的&quot;属性&quot;窗格。" lightbox="../../media/2020/08/properties-pane.msft.png":::
    **"** 元素"工具 **中的"属性"** 窗格
 :::image-end:::
 
@@ -393,7 +393,7 @@ Chromium issue: [#1103854](https://crbug.com/1103854)
 
 例如，如果 `monospace` 是本地计算机上安装的自定义字体，则它显示在 CSS 完成列表中。  在早期版本的 Microsoft Edge 中，不显示字体。
 
-:::image type="complex" source="../../media/2020/08/font-auto-complete.msft.png" alt-text="自动完成自定义字体" lightbox="../../media/2020/08/font-auto-complete.msft.png":::
+:::image type="complex" source="../../media/2020/08/font-auto-complete.msft.png" alt-text="自动完成自定义字体。" lightbox="../../media/2020/08/font-auto-complete.msft.png":::
    自动完成自定义字体
 :::image-end:::
 
@@ -401,11 +401,11 @@ Chromium问题： [#1106221](https://crbug.com/1106221)
 
 #### <a name="consistently-display-resource-type-in-network-panel"></a>在网络面板中一致地显示资源类型
 
-DevTools 现在一致地显示与原始网络请求相同的资源类型，当重定向 HTTP 状态代码 302 时 (附加到 Type `/ Redirect` 列) 值。 ****
+DevTools 现在一致地显示与原始网络请求相同的资源类型，并且当重定向 HTTP 状态代码 `/ Redirect` 为 302 时 (附加到 Type 列) 值。 ****
 
 以前，DevTools 有时将类型 `Other` 更改为 。
 
-:::image type="complex" source="../../media/2020/08/network-redirect.msft.png" alt-text="显示重定向资源类型" lightbox="../../media/2020/08/network-redirect.msft.png":::
+:::image type="complex" source="../../media/2020/08/network-redirect.msft.png" alt-text="显示重定向资源类型。" lightbox="../../media/2020/08/network-redirect.msft.png":::
    显示重定向资源类型
 :::image-end:::
 
@@ -422,11 +422,11 @@ Chromium问题： [#997694](https://crbug.com/997694)
 
 **"** 元素"工具中的 **"清除"** 按钮：
 
-:::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="&quot;元素&quot;面板中的&quot;清除&quot;按钮" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
+:::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="清除&quot;元素&quot;面板中的按钮。" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
 
 **清除** 网络工具  **中的** 按钮：
 
-:::image type="complex" source="../../media/2020/08/clear-button-network.msft.png" alt-text="清除网络面板中的按钮" lightbox="../../media/2020/08/clear-button-network.msft.png":::
+:::image type="complex" source="../../media/2020/08/clear-button-network.msft.png" alt-text="清除网络面板中的按钮。" lightbox="../../media/2020/08/clear-button-network.msft.png":::
 
 Chromium问题： [#1067184](https://crbug.com/1067184)
 
@@ -442,4 +442,5 @@ Chromium问题： [#1067184](https://crbug.com/1067184)
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-86)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

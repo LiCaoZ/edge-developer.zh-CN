@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/29/2021
-ms.openlocfilehash: 393a90aa68587faad6111c14d634add8fa96538e
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 63a93391a2739025f1ea069a828b8264eb3d8970
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320639"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12322793"
 ---
 # <a name="customize-the-password-reveal-button"></a>自定义“密码显示”按钮
 
@@ -19,11 +19,11 @@ ms.locfileid: "12320639"
 
 带 **点** 隐藏用户输入的字符的密码字段。  密码 **显示** 按钮显示在密码 **字段的右侧** 。  目视图标显示在隐藏密码文本的点旁边：
 
-:::image type="complex" source="./media/mdn-demo-password-reveal-off.msft.png" alt-text="目视图标显示在隐藏密码文本的点旁边" lightbox="./media/mdn-demo-password-reveal-off.msft.png":::
+:::image type="complex" source="./media/mdn-demo-password-reveal-off.msft.png" alt-text="目视图标显示在隐藏密码文本的点旁边。" lightbox="./media/mdn-demo-password-reveal-off.msft.png":::
 
 切换 **密码显示** 按钮，将眼睛图标更改为带斜杠的目视图标，并显示原始密码文本。  目视图标有一个斜杠，并且显示原始密码文本：
 
-:::image type="complex" source="./media/mdn-demo-password-reveal-on.msft.png" alt-text="目视图标上有一个斜杠，并且显示原始密码文本" lightbox="./media/mdn-demo-password-reveal-on.msft.png":::
+:::image type="complex" source="./media/mdn-demo-password-reveal-on.msft.png" alt-text="目视图标上有一个斜杠，并且显示原始密码文本。" lightbox="./media/mdn-demo-password-reveal-on.msft.png":::
 
 默认情况下，密码 **显示** 按钮插入到所有 HTML 元素的 Shadow DOM 中，并将 `input` 设置为 `type` `"password"` 。  从版本 87 Microsoft Edge，用户或[企业](/deployedge/microsoft-edge-policies#passwordrevealenabled)可能会全局禁用此功能。  您（Web 设计人员和开发人员）应该希望大多数Microsoft Edge用户拥有默认体验。
 

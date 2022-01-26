@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/17/2021
-ms.openlocfilehash: 9af471c51b370986f5af96b9535bdb6420ba0778
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: ebdea6de99432f36157019dfcdf3dd212a43b778
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318385"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12322898"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -28,7 +28,7 @@ ms.locfileid: "12318385"
    limitations under the License.  -->
 # <a name="match-patterns"></a>匹配模式
 
-主机权限和内容脚本匹配基于匹配模式定义的一组 URL。  匹配模式实质上是一个 URL，它以允许的方案开头， (、、 或 `http` `https` `file` `ftp` ，并且可以包含 `*` ' ' 字符。  特殊模式 `<all_urls>` 与以允许方案开头的任何 URL 匹配。  每个匹配模式有 3 个部分：
+主机权限和内容脚本匹配基于匹配模式定义的一组 URL。  匹配模式实质上是一个 URL，它以允许的方案开头， (、、 或 `http` ，并且可以包含 ' ' `https` `file` `ftp` `*` 字符。  特殊模式 `<all_urls>` 与以允许方案开头的任何 URL 匹配。  每个匹配模式有 3 个部分：
 
 *   _方案_ — 例如 `http` ， `file` 或 或 `*`
 
@@ -79,7 +79,7 @@ ms.locfileid: "12318385"
 | `http://www.foo.com` | 否 `_path_` |
 | `http://*foo/bar` | ' `*` ' in the host can be followed only by a ' ' or ' `.` `/` ' |
 | `http://foo.*.bar/baz` | 如果 ' `*` ' 位于 `_host_` 中，则它必须是第一个字符 |
-| `http:/bar` | 缺少 `_scheme_` 分隔 (' ' `/` 应为 `//` "")  |
+| `http:/bar` | 缺少 `_scheme_` 分隔 (' `/` ' 应为 `//` "")  |
 | `foo://*` | 无效 `_scheme_` |
 
 某些方案并非在所有上下文中都受支持。
@@ -88,4 +88,5 @@ ms.locfileid: "12318385"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/extensions/match_patterns)。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

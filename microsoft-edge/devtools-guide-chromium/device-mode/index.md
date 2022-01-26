@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
-ms.openlocfilehash: a07827e514345b52ad1eb91c655624ce6c41bc02
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: e0013d4d84765d3184903c62af17a541be62e076
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320940"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323570"
 ---
 <!-- Copyright Kayce Basques
 
@@ -52,7 +52,7 @@ ms.locfileid: "12320940"
 <!-- ====================================================================== -->
 ## <a name="simulate-a-mobile-viewport"></a>模拟移动视区
 
-选择"切换 **设备仿真 (**  切换设备工具栏) 或选择"自定义和控制 ![ ](../media/toggle-device-toolbar-dark-icon.msft.png) **DevTools** (`...`) > **设备模拟** "以打开使您能够模拟移动视口的 UI。
+选择****"切换设备仿真 (切换设备工具栏"。) 或选择"自定义和控制 ![ ](../media/toggle-device-toolbar-dark-icon.msft.png) **DevTools** (`...`) >**设备模拟**"以打开使您能够模拟移动视口的 UI。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="设备工具栏。" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
 
@@ -102,7 +102,7 @@ ms.locfileid: "12320940"
 
 横向测试你的网页。
 
-*   若要将视口旋转到横向，请选择旋转 ** (** ![ 旋转 ](../media/rotate-dark-icon.msft.png)) 。
+*   若要将视口旋转到横向，请选择旋转 ** (** ![ 旋转 ](../media/rotate-dark-icon.msft.png) 。) 。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="页面以横向显示。" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
 
@@ -179,7 +179,7 @@ ms.locfileid: "12320940"
 
 仅限制 CPU 而不是网络：
 
-1.  选择"**性能"** 面板，然后选择"捕获**设置 (** ![ 捕获设置) 。 ](../media/capture-settings-icon.msft.png)
+1.  选择"**性能"** 面板，然后选择"捕获**设置 (** ![ 捕获设置。) 。 ](../media/capture-settings-icon.msft.png)
 1.  选择**CPU**  >  **速度减慢 4 倍或****速度减慢 6 倍**。
 
 :::image type="content" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="&quot;性能&quot;面板中的 CPU 列表。" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
@@ -198,7 +198,7 @@ ms.locfileid: "12320940"
 
 您还可以从"性能"面板设置 **网络** 限制：
 
-1.  选择 **"捕获设置 (** 捕获设置) 并选择"网络"列表，将预设更改为 ![ ](../media/capture-settings-icon.msft.png) **"快速 3G"** 或"**慢速 3G"。** ****
+1.  选择**捕获设置 (** 捕获设置。) 并选择网络列表，将预设更改为 ![ ](../media/capture-settings-icon.msft.png) 快速**3G**或慢速**** **3G**。
 
     :::image type="content" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="从&quot;性能&quot;面板设置网络限制。" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
 
@@ -208,7 +208,7 @@ ms.locfileid: "12320940"
 
  如果页面依赖移动设备中的地理位置信息正确呈现，则使用替代地理位置的 UI 提供不同的地理位置。
 
-1.  选择 **"自定义和控制开发人员工具 () >** `...` **更多工具**  >  **传感器"。**
+1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **传感器"。**
 
     :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="用于地理位置的传感器。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
@@ -226,7 +226,7 @@ ms.locfileid: "12320940"
 
 如果页面依赖来自移动设备的方向信息来正确呈现，请打开方向 UI。
 
-1.  选择 **"自定义和控制开发人员工具 () >** `...` **更多工具**  >  **传感器"。**
+1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **传感器"。**
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="&quot;更多工具&quot;菜单上的&quot;传感器&quot;命令。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
@@ -246,7 +246,7 @@ ms.locfileid: "12320940"
 
 如果页面依赖移动设备中的用户代理字符串来正确呈现，请使用“**网络条件**”面板提供不同的用户代理字符串。
 
-1.  选择 **"自定义和控制开发工具 () >** `...` **工具网络**  >  **条件"。**
+1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **网络条件"。**
 
     :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="&quot;更多工具&quot;菜单中的网络条件条目。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
 
@@ -292,4 +292,5 @@ ms.locfileid: "12320940"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/device-mode/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

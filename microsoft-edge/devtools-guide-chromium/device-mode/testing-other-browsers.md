@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: f5b52e14918596df4a33cbcf83f7747d69d42d51
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: f5b9e59fb917bd3e45339e825b7fddd810eedc2c
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12317776"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323745"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -61,12 +61,12 @@ Firefox 具有[](https://developer.mozilla.org/docs/Tools/Responsive_Design_View
 ### <a name="android-emulator"></a>Android 仿真器
 
 <!--
-:::image type="complex" source="../media/device-mode-android-emulator-stock-browser.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-android-emulator-stock-browser.msft.png":::
+:::image type="complex" source="../media/device-mode-android-emulator-stock-browser.msft.png" alt-text="Stock Browser in Android Emulator." lightbox="../media/device-mode-android-emulator-stock-browser.msft.png":::
    Stock Browser in Android Emulator
 :::image-end:::
 -->
 
-目前，无法将 Microsoft Edge Android 仿真器上。  但是，您可以使用 Android 浏览器、Chromium Shell 和 Firefox for Android，我们将在本文的稍后部分介绍这些内容。  Chromium内容命令行管理程序在Chromium引擎中运行Microsoft Edge，但不带特定于浏览器的功能。
+目前，无法将 Microsoft Edge Android 仿真器上。  但是，您可以使用 Android 浏览器、Chromium命令行管理程序以及适用于 Android 的 Firefox，我们将在本文的稍后部分介绍这些内容。  Chromium内容命令行管理程序在Chromium引擎中运行Microsoft Edge，但不带特定于浏览器的功能。
 
 Android 仿真器附带 Android SDK，你需要下载为 Android [Studio](https://developer.android.com/sdk/installing/studio.html)的一部分。  然后按照说明[设置虚拟设备并](https://developer.android.com/tools/devices/managing-avds.html)[启动仿真器](https://developer.android.com/tools/devices/emulator.html)。
 启动仿真器后，选择 **浏览器图标，** 在适用于 Android 的旧股票浏览器上测试你的网站。
@@ -74,7 +74,7 @@ Android 仿真器附带 Android SDK，你需要下载为 Android [Studio](https:
 #### <a name="chromium-content-shell-on-android"></a>Chromium Android 上的内容 shell
 
 <!--
-:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
+:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell." lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
    Android Emulator Content Shell
 :::image-end:::
 -->
@@ -92,7 +92,7 @@ chmod u+x ./chromium-android-installer/*.sh
 #### <a name="firefox-on-android"></a>Android 上的 Firefox
 
 <!--
-:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Firefox Icon on Android Emulator" lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
+:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Firefox Icon on Android Emulator." lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
    Firefox Icon on Android Emulator
 :::image-end:::
 -->
@@ -118,11 +118,11 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 
 ### <a name="microsoft-edge-edgehtml"></a>Microsoft Edge (EdgeHTML) 
 
-:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="新式 IE VM" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
+:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="新式 IE VM。" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
    新式 IE VM
 :::image-end:::
 
-Microsoft Edge (EdgeHTML) 虚拟机 (VM) 使你可以通过 VirtualBox (或 VMWare) 访问计算机上不同版本的 EdgeHTML 和 Internet Explorer。  在下载 [页面上选择虚拟机](https://developer.microsoft.com/microsoft-edge/tools/vms)。
+Microsoft Edge (使用 EdgeHTML) 虚拟机 (VM) ，可以通过 VirtualBox (或 VMWare) 访问计算机上不同版本的 EdgeHTML 和 Internet Explorer。  在下载 [页面上选择虚拟机](https://developer.microsoft.com/microsoft-edge/tools/vms)。
 
 
 <!-- ====================================================================== -->
@@ -150,4 +150,5 @@ Microsoft Edge (EdgeHTML) 虚拟机 (VM) 使你可以通过 VirtualBox (或 VMWa
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)由[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和[Paul Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Google |工具、性能、动画、UX) 。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

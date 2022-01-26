@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/24/2021
-ms.openlocfilehash: 89c29fbb0745075bc146d821adc1f64ea740cdc8
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 1bd1d54cbe10dc34a81caa8f83ac1b3f8f76d963
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320051"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12322905"
 ---
 # <a name="the-webhint-extension-for-visual-studio-code"></a>webhint 扩展Visual Studio Code
 
@@ -19,7 +19,7 @@ ms.locfileid: "12320051"
 
 通过添加 webhint 扩展以识别并修复 HTML、CSS、JavaScript、TypeScript 等中的问题Visual Studio Code。  提示显示为内联下划线，并汇总在"问题 **"** 窗格中。
 
-:::image type="complex" source="./media/webhint-extension.png" alt-text="webhint 扩展Visual Studio Code":::
+:::image type="complex" source="./media/webhint-extension.png" alt-text="webhint 扩展Visual Studio Code。":::
    webhint 扩展Visual Studio Code
 :::image-end:::
 

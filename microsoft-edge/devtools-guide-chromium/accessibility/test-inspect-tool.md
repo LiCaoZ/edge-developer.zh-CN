@@ -6,19 +6,19 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 617fa6b284b73e9cfdf4e8f951c0fbb404e5776c
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: a8402b5fb493ed2361aa2036015754349896fc85
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12317944"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323794"
 ---
 # <a name="use-the-inspect-tool-to-detect-accessibility-issues-by-hovering-over-the-webpage"></a>使用"检查"工具将鼠标悬停在网页上以检测辅助功能问题
 
 当您 **将** 鼠标悬停在呈现的网页上时，Inspect 工具将显示有关各个元素的信息，包括辅助功能信息。
 相比之下，" **问题"** 工具会自动报告整个网页的问题。
 
-检查 **工具** 按钮 (检查) 位于 ![ ](../media/inspect-icon.msft.png) DevTools 的左上角。  选择" **检查工具"** 按钮时，该按钮将变为蓝色，指示 **"检查** "工具处于活动状态。
+检查 **工具** 按钮 (![ 检查。) 位于 ](../media/inspect-icon.msft.png) DevTools 的左上角。  选择" **检查工具"** 按钮时，该按钮将变为蓝色，指示 **"检查** "工具处于活动状态。
 
 当 **Inspect 工具** 处于活动状态时，将鼠标悬停在呈现网页上的任何元素上将显示 **Inspect** 覆盖。 此覆盖层显示有关该元素的常规信息和辅助功能信息。  "**检查"覆盖****层的**"辅助功能"部分显示有关文本颜色对比度、屏幕阅读器文本和键盘支持的信息。
 
@@ -36,7 +36,7 @@ ms.locfileid: "12317944"
 
 1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  选择 **DevTools** (左上角的"检查) 检查图标"按钮，使图标以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
+1.  选择 **"** 检查 (检查"。) 工具左上角的"检查"按钮，使图标以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
 
     :::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="若要打开&quot;检查&quot;工具，请选择&quot;检查&quot;按钮" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
         若要打开"检查 **"** 工具，请选择" **检查"** 按钮
@@ -68,10 +68,10 @@ ms.locfileid: "12317944"
 
 "检查"覆盖**的顶部**（位于"辅助功能"部分上方****）列出了元素的以下详细信息。
 
-*   布局类型。 如果元素是使用弹性框或网格放置的，则会显示 (![网格布局图标](../media/grid-icon.msft.png)) 显示。
+*   布局类型。 如果元素是使用弹性框或网格定位的，则 (![网格布局图标。](../media/grid-icon.msft.png)) 显示。
 *   元素的名称，如 、 `h1` `h2` 或 `div` 。
 *   元素的尺寸（以像素为单位）。
-*   颜色样本颜色颜色 (或较小的彩色正方形) 和字符串形式 (如 `#336699`) 。
+*   作为颜色样本的颜色颜色 (或较小的、彩色) 和字符串形式 (如 `#336699`) 。
 *   字体信息，如大小和字体系列。
 *   边距和填充（以像素为单位）。
 
@@ -85,11 +85,11 @@ ms.locfileid: "12317944"
 
 1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  选择**** DevTools (左上角的"检查"按钮) 检查工具图标"，以便按钮突出显示为 (![ ](../media/inspect-icon.msft.png) 蓝色) 。
+1.  选择" **检查** (检查工具"图标。) ![ 位于 DevTools 的左上角，以便按钮突出显示为 (](../media/inspect-icon.msft.png) 蓝色) 。
 
 1.  将鼠标悬停在呈现的演示网页的不同部分上。  网页中的每个元素现在都显示一个多色覆盖层。 此多色覆盖层可以显示元素内部的嵌套区域。 例如，将鼠标悬停在"猫"的 **左边距上**。  Inspect **工具** 使用不同颜色突出显示 **"猫** "部分的几个矩形部分，显示来自网页上 CSS 弹性框定义的布局。
 
-:::image type="complex" source="../media/inspect-tool-flexbox-overlay.msft.png" alt-text="使用 Inspect 工具时的多色弹性框覆盖和信息覆盖" lightbox="../media/inspect-tool-flexbox-overlay.msft.png":::
+:::image type="complex" source="../media/inspect-tool-flexbox-overlay.msft.png" alt-text="使用 Inspect 工具时，多色弹性框覆盖和信息覆盖。" lightbox="../media/inspect-tool-flexbox-overlay.msft.png":::
     使用 Inspect 工具时的多色弹性框覆盖 **和信息** 覆盖
 :::image-end:::
 
@@ -103,7 +103,7 @@ ms.locfileid: "12317944"
 
 1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
-1.  选择**** DevTools (左上角的"检查") "检查"工具按钮，以便该按钮以蓝色 (![ ](../media/inspect-icon.msft.png) 突出显示) 。
+1.  选择"**** 检查 (检查"工具中的"检查"按钮。) ![ 位于 DevTools 的左上角，以便按钮以蓝色 (](../media/inspect-icon.msft.png) 突出显示) 。
 
 1.  选择" **元素"** 工具。
 
@@ -111,7 +111,7 @@ ms.locfileid: "12317944"
 
 1.  现在，选择呈现的网页中的任意元素。  Elements **** 工具会自动打开并显示 DOM 树中元素的 HTML。 该工具还会在"样式"窗格中的 **元素上显示** 应用的 CSS。  选择呈现网页上的元素将关闭 **"检查"** 工具。
 
-:::image type="complex" source="../media/a11y-testing-basics-inspector-selected-element.msft.png" alt-text="有关所选元素的详细信息将显示在&quot;元素&quot;工具中" lightbox="../media/a11y-testing-basics-inspector-selected-element.msft.png":::
+:::image type="complex" source="../media/a11y-testing-basics-inspector-selected-element.msft.png" alt-text="有关所选元素的详细信息将显示在&quot;元素&quot;工具中。" lightbox="../media/a11y-testing-basics-inspector-selected-element.msft.png":::
     有关所选元素的详细信息将显示在 **"** 元素"工具中
 :::image-end:::
 

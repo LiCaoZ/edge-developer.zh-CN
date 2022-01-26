@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/24/2021
-ms.openlocfilehash: 2f47c985379c92f1c0fa59b842ba6f4b41d5d28a
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 70e3a6054c5c4ee107d899cd2ba8854bb47239c3
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319351"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12322968"
 ---
 <!-- Copyright Sam Dutton
 
@@ -29,7 +29,7 @@ ms.locfileid: "12319351"
 
 # <a name="find-and-fix-problems-using-the-issues-tool"></a>使用问题工具查找和修复问题
 
-在 Microsoft Edge工具中，问题工具自动分析**** 当前网页，报告按类型分组的问题，并提供文档以帮助解释和解决问题。
+在 Microsoft Edge工具中，问题工具会自动分析**** 当前网页，报告按类型分组的问题，并提供文档以帮助解释和解决问题。
 
 问题 **工具** 提供以下类别的反馈：
 *  辅助功能。
@@ -50,13 +50,13 @@ ms.locfileid: "12319351"
 
 1.  导航到包含要修复的问题的网页。  例如，在一 [个新选项卡或窗口中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示页。
 
-1.  打开 DevTools。  几秒钟后，"问题" (**** ![ 问题) 显示在 ](../media/issues-counter-icon.msft.png) DevTools 的右上角。
+1.  打开 DevTools。  几秒钟后，"问题" ("问题"计数器****。) ![ 显示在 ](../media/issues-counter-icon.msft.png) DevTools 的右上角。
 
 1.  刷新页面，因为根据网络请求报告某些问题。  请注意问题计数器中 **更新的计数**。
 
 1.  选择" **问题"计数器**。  " **问题** "工具将打开，并分组为不同类别的问题。
 
-    :::image type="complex" source="../media/issues-tool-categories.msft.png" alt-text="演示页上的&quot;问题&quot;工具中的问题类别" lightbox="../media/issues-tool-categories.msft.png":::
+    :::image type="complex" source="../media/issues-tool-categories.msft.png" alt-text="演示页上的&quot;问题&quot;工具中的问题类别。" lightbox="../media/issues-tool-categories.msft.png":::
        演示页上的"问题"工具中的问题类别
     :::image-end:::
 
@@ -71,7 +71,7 @@ ms.locfileid: "12319351"
 
 在每个问题类别中，首先列出错误，然后列出警告，然后列出提示。
 
-:::image type="complex" source="../media/issues-ordered-by-severity.msft.png" alt-text="&quot;问题&quot;工具显示按严重性排序的性能问题" lightbox="../media/issues-ordered-by-severity.msft.png":::
+:::image type="complex" source="../media/issues-ordered-by-severity.msft.png" alt-text="&quot;问题&quot;工具显示按严重性排序的性能问题。" lightbox="../media/issues-ordered-by-severity.msft.png":::
    " **问题** "工具显示按严重性排序的性能问题
 :::image-end:::
 
@@ -87,11 +87,11 @@ ms.locfileid: "12319351"
 
 1.  打开新 [窗口或](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 选项卡中的演示页面，然后打开 DevTools。
 
-1.  打开" **问题"** 工具，选择"问题 **" (""** ![ 问题 ](../media/issues-counter-icon.msft.png) ") 。
+1.  打开" **问题"** 工具，选择"问题 **" ("** ![ 计数器 ](../media/issues-counter-icon.msft.png) 。) 。
 
 1.  选择问题以展开问题。
 
-    :::image type="complex" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text="&quot;问题&quot;工具显示有关如何修复该问题的其他信息" lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
+    :::image type="complex" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text="&quot;问题&quot;工具显示有关如何修复该问题的其他信息。" lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
        " **问题** "工具显示有关如何修复该问题的其他信息
     :::image-end:::
 
@@ -111,13 +111,13 @@ ms.locfileid: "12319351"
 
 1.  在 **"受影响的资源**  >  **打开"中**，选择工具名称。  受影响的资源将显示在所选工具中。
 
-    :::image type="complex" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="从&quot;问题&quot;工具中选择打开受影响资源的工具" lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
+    :::image type="complex" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="Select a tool to open an affected resource from within the Issues tool." lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
        从"问题"工具中选择打开受影响资源的工具
     :::image-end:::
 
     展开的问题可能有"网络 **"** 链接，以在"网络"工具中 **显示受影响的** 资源。
 
-    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="选择网络资源链接时，将打开&quot;网络&quot;工具" lightbox="../media/issues-tab-view-issue.msft.png":::
+    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="选择网络资源链接时，将打开&quot;网络&quot;工具。" lightbox="../media/issues-tab-view-issue.msft.png":::
     选择 **网络** 资源链接时， **将打开"网络"** 工具
     :::image-end:::
 
@@ -125,7 +125,7 @@ ms.locfileid: "12319351"
 <!-- ====================================================================== -->
 ## <a name="open-issues-from-the-dom-tree"></a>打开 DOM 树中的问题
 
-如果元素具有关联问题，则 **"** 元素"工具中的 DOM 树在元素名称下显示波浪下划线。  可以打开上下文菜单 (右键单击) ，然后选择"查看问题"，或者选择并左键单击带**** 波浪下划线 `Shift` 的元素。
+如果元素具有关联问题，则 **"** 元素"工具中的 DOM 树在元素名称下显示波浪下划线。  你可以打开上下文菜单 (右键单击) ，然后选择查看问题，或者选择并左键单击带波浪**** 下划线 `Shift` 的元素。
 
 若要对 DOM 树中带波浪下划线的元素显示问题，请执行以下步骤。
 
@@ -135,7 +135,7 @@ ms.locfileid: "12319351"
 
 1.  在 DOM 树中，展开 `<body>`  >  `<header>`  >  `<form>` 。  请注意， `<input>` 元素具有波浪下划线。
 
-    :::image type="complex" source="../media/issues-wavy-underlines-dom-tree.msft.png" alt-text="元素工具中 DOM 树中带波浪下划线的问题" lightbox="../media/issues-wavy-underlines-dom-tree.msft.png":::
+    :::image type="complex" source="../media/issues-wavy-underlines-dom-tree.msft.png" alt-text="&quot;元素&quot;工具中 DOM 树中带波浪下划线的问题。" lightbox="../media/issues-wavy-underlines-dom-tree.msft.png":::
        元素工具中 **DOM 树中带** 波浪 **下划线** 的问题
     :::image-end:::
 
@@ -143,7 +143,7 @@ ms.locfileid: "12319351"
 
 1.  打开带波浪下划线的元素上的上下文菜单，然后选择"**查看问题"。**  " **问题** "工具将打开并显示与该元素关联的问题。
 
-    :::image type="complex" source="../media/issues-opened-from-dom-tree-wavy-underline.msft.png" alt-text="有关 DOM 树中带波浪线下划线的元素的问题的详细信息" lightbox="../media/issues-opened-from-dom-tree-wavy-underline.msft.png":::
+    :::image type="complex" source="../media/issues-opened-from-dom-tree-wavy-underline.msft.png" alt-text="有关 DOM 树中带波浪线下划线的元素的问题的详细信息。" lightbox="../media/issues-opened-from-dom-tree-wavy-underline.msft.png":::
        有关**DOM**树中带波浪线下划线的元素的问题的详细信息
     :::image-end:::
 
@@ -158,4 +158,5 @@ ms.locfileid: "12319351"
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/issues/index) 由 [Sam Dutton](https://developers.google.com/web/resources/contributors#sam-dutton) (Developer Advocate) 。
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: e33276d40cc9726f3e050cc51622841715ab4cbb
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: eaeac3d0fdd118ad6befe1501cb88f46e945775e
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12317832"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324557"
 ---
 <!-- Copyright Kayce Basques
 
@@ -37,13 +37,13 @@ ms.locfileid: "12317832"
 1.  [打开 DevTools](/microsoft-edge/devtools-guide-chromium/open)。
 1.  选择“**应用程序**”选项卡以打开“**应用程序**”面板。  “**清单**”窗格应打开。
 
-    :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="清单窗格" lightbox="../media/storage-application-manifest-empty.msft.png":::
+    :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="&quot;清单&quot;窗格。" lightbox="../media/storage-application-manifest-empty.msft.png":::
        图 1：清单窗格
     :::image-end:::
 
 1.  在“**存储**“下，展开 “**Cookie**”，然后选择一个源。
 
-    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="“Cookie”窗格" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="&quot;Cookie&quot;窗格。" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
        图 2：“Cookie” 窗格
     :::image-end:::
 
@@ -62,7 +62,7 @@ ms.locfileid: "12317832"
 *   **HTTP**。  如果为 true，则此字段指示应仅通过 HTTP 使用 Cookie，不允许 JavaScript 修改。  导航到 [HttpOnly Cookie](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies)。
 *   **安全**。  如果为 true，则此字段指示必须通过安全的 HTTPS 连接将 Cookie 发送到服务器。  导航到“[安全 Cookie](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies)”。
 *   **SameSite**。  包含 `strict`，当 Cookie 使用实验性 [Samesite](https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies) 属性时包含 `lax`。
-*   **优先级**。  包含 `low` `medium` 、 (默认) ，或者 Cookie 是否使用已弃 `high` 用 [Cookie Priority](https://bugs.chromium.org/p/chromium/issues/detail?id=232693) 属性。
+*   **优先级**。  包含 `low` 、 (默认) ，或者 Cookie 是否使用已弃 `medium` `high` 用的 [Cookie Priority](https://bugs.chromium.org/p/chromium/issues/detail?id=232693) 属性。
 
 
 <!-- ====================================================================== -->
@@ -70,7 +70,7 @@ ms.locfileid: "12317832"
 
 使用“**筛选器**”文本框按**名称**或**值**筛选 Cookie。  不支持按其他字段筛选。
 
-:::image type="complex" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="筛选出任何不包含文本 ID 的 Cookie" lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
+:::image type="complex" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="筛选掉任何不包含文本 ID 的 Cookie。" lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
    图 3：筛选出任何不包含文本的 Cookie `ID`
 :::image-end:::
 
@@ -89,15 +89,15 @@ ms.locfileid: "12317832"
 <!-- ====================================================================== -->
 ## <a name="delete-cookies"></a>删除 Cookie
 
-Choose a cookie and choose **Delete Selected (** Delete Selected) to delete the specific ![ ](../media/delete-icon.msft.png) cookie.
+Choose a cookie and choose **Delete Selected (** Delete ![ Selected.) to delete the specific ](../media/delete-icon.msft.png) cookie.
 
-:::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="删除特定 Cookie" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
+:::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="删除特定 Cookie。" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
    图 5：删除特定 Cookie
 :::image-end:::
 
-Choose **Clear All (** Clear All) to delete all ![ ](../media/clear-icon.msft.png) cookies.
+Choose **Clear All** (Clear ![ All.) to delete all ](../media/clear-icon.msft.png) cookies.
 
-:::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="清除所有 Cookie" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
+:::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="清除所有 Cookie。" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
    图 6：清除所有 Cookie
 :::image-end:::
 
@@ -107,4 +107,5 @@ Choose **Clear All (** Clear All) to delete all ![ ](../media/clear-icon.msft.pn
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/cookies)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

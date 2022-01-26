@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/17/2021
-ms.openlocfilehash: e9a8edce996483964b46d97ecefe9d6faf851df6
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 04c5cef3fd7ecee8a838a289c2222b7ba740530f
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320366"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324200"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -50,7 +50,7 @@ ms.locfileid: "12320366"
 |:--- |:--- |
 | `activeTab` | 请求根据规范向扩展授予 `activeTab` 权限。 |
 | `alarms` | 授予对 API 的扩展 `chrome.alarms` 访问权限。 |
-| `background` | 使Microsoft Edge提前启动并延迟关闭，以便扩展的生命周期更长。  如果任何安装的扩展具有权限，Microsoft Edge在用户登录到用户计算机时，以及用户启动 Microsoft Edge 之前，该扩展将 `background` Microsoft Edge。  权限还使Microsoft Edge继续运行，即使其最后一个窗口已关闭，直到用户显式退出 `background` Microsoft Edge。  此权限不会影响浏览器中关闭的扩展。  `background`该权限通常在背景页上使用。 |
+| `background` | 使Microsoft Edge提前启动并延迟关闭，以便扩展的生命周期更长。  当任何安装的扩展具有权限时，Microsoft Edge在用户登录到用户计算机后，以及用户启动 Microsoft Edge 之前，将以不明显方式 `background` Microsoft Edge。  该权限还使Microsoft Edge继续运行，即使其最后一个窗口关闭，直到用户显式退出 `background` Microsoft Edge。  此权限不会影响浏览器中关闭的扩展。  `background`该权限通常在背景页上使用。 |
 | `bookmarks` | 授予对 API 的扩展 `chrome.bookmarks` 访问权限。 |
 | `browsingData` | 授予对 API 的扩展 `chrome.browsingData` 访问权限。 |
 | `certificateProvider` | 授予对 API 的扩展 `chrome.certificateProvider` 访问权限。 |
@@ -120,4 +120,5 @@ ms.locfileid: "12320366"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/)。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

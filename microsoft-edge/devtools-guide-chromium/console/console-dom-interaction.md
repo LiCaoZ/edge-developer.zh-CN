@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
-ms.openlocfilehash: 6713dc2f65d106ac624a08ade6606d8b57a3c839
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 68e81080094755b0be664eded131f6d6a18c8344
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318931"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323626"
 ---
 # <a name="use-the-console-to-interact-with-the-dom"></a>使用控制台与 DOM 交互
 
@@ -37,7 +37,7 @@ ms.locfileid: "12318931"
 
 如果选择鼠标 `Shift` + `Tab` 光标或将鼠标光标移到 HTML 结果上，DevTools 会突出显示标头。
 
-:::image type="complex" source="../media/console-dom-highlight-element.msft.png" alt-text="DevTools 突出显示你在控制台中选择的部分" lightbox="../media/console-dom-highlight-element.msft.png":::
+:::image type="complex" source="../media/console-dom-highlight-element.msft.png" alt-text="DevTools 突出显示你在控制台中选择的部分。" lightbox="../media/console-dom-highlight-element.msft.png":::
     DevTools 突出显示你在控制台中选择 **的部分**
 :::image-end:::
 
@@ -57,7 +57,7 @@ document.querySelector('header').style.border = '2em solid green'
 
 根据网页的复杂性，可能很难找到正确的要操作的元素。  但可以使用 **Inspect** 工具帮助你。  假设你想要操作页 `Documentation` 眉中的部分。
 
-:::image type="complex" source="../media/console-dom-highlight-documentation.msft.png" alt-text="显示你在屏幕上检查的元素" lightbox="../media/console-dom-highlight-documentation.msft.png":::
+:::image type="complex" source="../media/console-dom-highlight-documentation.msft.png" alt-text="显示您在屏幕上检查的元素。" lightbox="../media/console-dom-highlight-documentation.msft.png":::
     显示你在屏幕上检查的元素
 :::image-end:::
 
@@ -78,7 +78,7 @@ document.querySelector('header').style.border = '2em solid green'
 
 1.  打开上下文菜单并选择 `Copy`  >  `Copy JS Path` 。
 
-    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="从&quot;元素&quot;工具的 DOM 树中的元素复制 JavaScript 路径" lightbox="../media/console-dom-copy-JS-path.msft.png":::
+    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="从&quot;元素&quot;工具的 DOM 树中的元素复制 JavaScript 路径。" lightbox="../media/console-dom-copy-JS-path.msft.png":::
         从"元素"工具的 DOM 树中的 **元素** 复制 JavaScript 路径
     :::image-end:::
 
@@ -86,7 +86,7 @@ document.querySelector('header').style.border = '2em solid green'
 
 若要将链接文本更改为 `My Playground` ，请 `.textContent = "My Playground"` 添加到之前粘贴的命令中。
 
-:::image type="complex" source="../media/console-dom-change-content.msft.png" alt-text="使用控制台更改元素的内容" lightbox="../media/console-dom-change-content.msft.png":::
+:::image type="complex" source="../media/console-dom-change-content.msft.png" alt-text="使用控制台更改元素的内容。" lightbox="../media/console-dom-change-content.msft.png":::
     使用 **控制台** 更改元素的内容
 :::image-end:::
 
@@ -113,7 +113,7 @@ document.querySelector('header').style.border = '2em solid green'
 console.table($$('a'),['href','text']);
 ```
 
-:::image type="complex" source="../media/console-dom-get-all-links.msft.png" alt-text="获取网页中的所有链接，将结果显示为表格" lightbox="../media/console-dom-get-all-links.msft.png":::
+:::image type="complex" source="../media/console-dom-get-all-links.msft.png" alt-text="获取网页中所有的链接，将结果显示为表格。" lightbox="../media/console-dom-get-all-links.msft.png":::
     获取网页中的所有链接，将结果显示为表格
 :::image-end:::
 
@@ -199,7 +199,7 @@ console.log(out);
 
 结果是包含每个标题的内容的文本，后跟指向该标题的完整 URL。
 
-:::image type="complex" source="../media/console-dom-get-generated-headings.msft.png" alt-text="从网页获取所有标题和生成的 URL" lightbox="../media/console-dom-get-generated-headings.msft.png":::
+:::image type="complex" source="../media/console-dom-get-generated-headings.msft.png" alt-text="从网页获取所有标题和生成的 URL。" lightbox="../media/console-dom-get-generated-headings.msft.png":::
     从网页获取所有标题和生成的 URL
 :::image-end:::
 
@@ -226,7 +226,7 @@ Console 的另外两种有趣的 **实用程序方法处理** 事件处理。
     getEventListeners($('form'));
     ```
 
-:::image type="complex" source="../media/console-dom-get-form-events.msft.png" alt-text="获取网页中第一个表单的所有事件侦听器" lightbox="../media/console-dom-get-form-events.msft.png":::
+:::image type="complex" source="../media/console-dom-get-form-events.msft.png" alt-text="获取网页中第一个表单的所有事件侦听器。" lightbox="../media/console-dom-get-form-events.msft.png":::
     获取网页中第一个表单的所有事件侦听器
 :::image-end:::
 
@@ -242,13 +242,13 @@ Console 的另外两种有趣的 **实用程序方法处理** 事件处理。
     monitorEvents($0, 'keyup');
     ```
 
-:::image type="complex" source="../media/console-dom-monitor-events.msft.png" alt-text="控制台显示窗口上发生的每个滚动事件" lightbox="../media/console-dom-monitor-events.msft.png":::
+:::image type="complex" source="../media/console-dom-monitor-events.msft.png" alt-text="控制台显示 Window 上发生的每个滚动事件。" lightbox="../media/console-dom-monitor-events.msft.png":::
     **控制台** 显示窗口上发生的每个滚动事件
 :::image-end:::
 
 若要记录当前选择的元素上的任何键操作，请专注于标题中的搜索表单并选择一些键。
 
-:::image type="complex" source="../media/console-dom-monitor-key-events.msft.png" alt-text="控制台显示窗体上发生的键更新事件" lightbox="../media/console-dom-monitor-key-events.msft.png":::
+:::image type="complex" source="../media/console-dom-monitor-key-events.msft.png" alt-text="控制台显示窗体上发生的键更新事件。" lightbox="../media/console-dom-monitor-key-events.msft.png":::
     **控制台** `keyup` 显示窗体上发生的事件
 :::image-end:::
 

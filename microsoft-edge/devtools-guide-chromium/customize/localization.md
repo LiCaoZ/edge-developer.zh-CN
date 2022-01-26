@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/30/2021
-ms.openlocfilehash: 61119f945ef78f3dc5fd2d82e0044df467295945
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: f44958ceb7ddbb6abdb2ef5204b12dd5f1f8a9fd
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318756"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323955"
 ---
 # <a name="change-devtools-language-settings"></a>更改 DevTools 语言设置
 
@@ -30,6 +30,6 @@ ms.locfileid: "12318756"
 
 使用中文的 DevTools：
 
-:::image type="content" source="../media/localization-zh.msft.png" alt-text="使用中文的 DevTools" lightbox="../media/localization-zh.msft.png":::
+:::image type="content" source="../media/localization-zh.msft.png" alt-text="使用中文的 DevTools。" lightbox="../media/localization-zh.msft.png":::
 
 如果你想要将 DevTools 还原为英语，请导航到[DevTools 设置](./index.md#settings)或选择，选择首选项，然后关闭 `F1` "**匹配浏览器**语言"复选框。 ****

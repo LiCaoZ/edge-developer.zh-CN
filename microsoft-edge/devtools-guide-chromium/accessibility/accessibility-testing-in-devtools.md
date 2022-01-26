@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: d0a13f69fd406bc3881f3df1dfe930f7c98175d4
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 30ca5baf34a65ad140368f276b6464b7bc03e680
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318308"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323668"
 ---
 # <a name="overview-of-accessibility-testing-using-devtools"></a>使用 DevTools 的辅助功能测试概述
 
@@ -23,7 +23,7 @@ ms.locfileid: "12318308"
 <!-- ====================================================================== -->
 ## <a name="automated-testing-by-using-the-issues-tool"></a>使用问题工具自动测试
 
-When you open the demo page in the browser and open DevTools， notice that some issues are automatically detected in the **Issues counter**.  单击问题 **计数器** (问题) 打开 ![ ](../media/issues-counter-icon.msft.png) [问题工具][DevToolsIssuesTool]以查看问题和详细信息。
+When you open the demo page in the browser and open DevTools， notice that some issues are automatically detected in the **Issues counter**.  单击" **问题" ("** 问题"计数器。) 打开 ![ ](../media/issues-counter-icon.msft.png) [问题工具][DevToolsIssuesTool]以查看问题和详细信息。
 
 :::image type="content" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="&quot;问题&quot;计数器显示当前网页中有多少问题，并打开&quot;问题&quot;工具。" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
 
@@ -96,7 +96,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 *  通过模拟不同的设备、缩放级别和像素比率执行视觉测试。
 *  测试产品在不可靠连接或用户脱机时的行为方式。  在低速连接上向用户显示最重要的交互也是辅助功能注意事项。
 
-若要了解有关设备仿真**工具**的信息，请参阅在 Microsoft Edge [DevTools 中模拟移动设备](../device-mode/index.md)。
+若要了解有关设备仿真**工具**的信息，请参阅在[DevTools](../device-mode/index.md)中模拟Microsoft Edge移动设备。
 
 
 ### <a name="wavy-underlines-in-the-dom-tree-indicate-automatically-detected-issues"></a>DOM 树中的波浪下划线指示自动检测到的问题
@@ -111,7 +111,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 <!-- ====================================================================== -->
 ## <a name="limits-of-automated-testing"></a>自动测试的限制
 
-问题[工具](../issues/index.md)[、辅助功能 Insights](https://accessibilityinsights.io)和[Lighthouse](https://developers.google.com/web/tools/lighthouse/)是自动生成网页的辅助功能报告的工具。  从此类工具获取自动报告只是辅助功能测试之旅的开始。
+问题[工具](../issues/index.md)、辅助功能[Insights](https://accessibilityinsights.io)和[Lighthouse](https://developers.google.com/web/tools/lighthouse/)是自动生成网页的辅助功能报告的工具。  从此类工具获取自动报告只是辅助功能测试之旅的开始。
 
 辅助功能与人员交互有关，即在不同的技术环境中使用产品时具有不同的需求的人。  此测试无法完全自动化，但需要用户对产品进行验证。  在最佳方案中，你可以访问具有不同辅助功能需求的测试人员和使用各种环境的测试人员。  但是，通过使用键盘进行导航并检查页面的不同部分，你已可以自己执行很多操作。
 
@@ -128,7 +128,7 @@ When you open the demo page in the browser and open DevTools， notice that some
 <!-- ====================================================================== -->
 ## <a name="using-the-inspect-tool-to-detect-accessibility-issues"></a>使用检查工具检测辅助功能问题
 
-使用 **"检查** "工具通过将鼠标悬停在网页的某些部分来检测辅助功能问题。  检查 ** (** ![ 检查 ](../media/inspect-icon.msft.png)) 工具位于 DevTools 的左上角。  通过单击"检查工具"按钮 **打开"检查"** 工具。
+使用 **"检查** "工具通过将鼠标悬停在网页的某些部分来检测辅助功能问题。  检查 ** (** ![ 检查 ](../media/inspect-icon.msft.png) 。) 工具位于 DevTools 的左上角。  通过单击"检查工具"按钮 **打开"检查"** 工具。
 
 :::image type="content" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="通过单击&quot;检查工具&quot;按钮打开&quot;检查&quot;工具。" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
 
@@ -144,10 +144,10 @@ When you open the demo page in the browser and open DevTools， notice that some
 
 检查工具的信息覆盖的**** 上半部分显示以下信息：
 
-* 布局类型;如果元素是使用弹性框或网格定位的，则会看到相应的 (![网格布局图标](../media/grid-icon.msft.png)).
+* 布局类型;如果元素是使用弹性框或网格定位的，则会看到相应的 (![网格布局图标。](../media/grid-icon.msft.png)).
 * 元素的名称，如 、 **h1**或**div**。 ****
 * 元素的尺寸（以像素为单位）。
-* 颜色作为颜色样本， (较小的彩色方形) 和格式化值 (如 `#336699`) 。
+* 颜色作为颜色样本， (一个小的彩色) 和格式化值 (如 `#336699`) 。
 * 字体信息 (大小和字体系列) 。
 * 边距和填充（以像素为单位）。
 
@@ -341,7 +341,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 :::image type="content" source="../media/a11y-testing-inspecting-link-to-hover.msft.png" alt-text="检查元素工具中具有悬停状态的元素。" lightbox="../media/a11y-testing-inspecting-link-to-hover.msft.png":::
 
-在" **样式"** 选项卡上，单击 **"\：hov (切换元素状态) ** 按钮。  然后使用 **Force 元素状态** 复选框选择要模拟的状态。
+在" **样式"** 选项卡上，单击 **"\：hov (Toggle 元素状态) ** 按钮。  然后使用 **Force 元素状态** 复选框选择要模拟的状态。
 
 :::image type="content" source="../media/a11y-testing-state-simulation.msft.png" alt-text="显示所有选项的状态模拟功能。" lightbox="../media/a11y-testing-state-simulation.msft.png":::
 
@@ -380,7 +380,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 ### <a name="verify-that-the-webpage-is-usable-by-people-with-color-blindness"></a>验证网页是否对色盲者可用
 
-不同的接收状态使用红色 (绿色、黄色) 颜色作为区分资金状态的唯一方式。  但是，你无法预期所有用户都体验这些颜色。  如果你使用 DevTools 的视觉缺陷模拟功能，则可以通过模拟不同视觉用户对设计的看法来发现这不够好。 [](./emulate-vision-deficiencies.md)  有关详细演练步骤，请参阅验证页面是否对色盲 [者可用](test-color-blindness.md)。
+不同的接收状态使用红色 (、绿色、黄色) 颜色作为区分资金状态的唯一方式。  但是，你无法预期所有用户都体验这些颜色。  如果你使用 DevTools 的视觉缺陷模拟功能，则可以通过模拟不同视觉用户对设计的看法来发现这不够好。 [](./emulate-vision-deficiencies.md)  有关详细演练步骤，请参阅验证页面是否对色盲 [者可用](test-color-blindness.md)。
 
 :::image type="content" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="将页面显示为具有亚特色 (色盲) 可以看到它。" lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
 
@@ -393,7 +393,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 :::image type="content" source="../media/a11y-testing-simulating-blur.msft.png" alt-text="模拟模糊的页面可能会发现辅助功能问题。" lightbox="../media/a11y-testing-simulating-blur.msft.png":::
 
 
-### <a name="verify-that-the-page-is-usable-with-ui-animation-turned-off-reduced-motion"></a>验证页面是否可用，并关闭 UI 动画， (运动效果) 
+### <a name="verify-that-the-page-is-usable-with-ui-animation-turned-off-reduced-motion"></a>验证页面是否可用，并关闭 UI 动画， (运动) 
 
 这些天操作系统提供的另一个设置是关闭动画的方法。  动画可以帮助产品的可用性，但它们也会导致许多问题，包括混淆和混乱。 这就是产品不应向在操作系统中关闭动画的用户显示动画的原因。  通过使用 CSS 媒体查询，您可以检查用户是否希望查看动画，并相应地将其关闭。  而且，与深色和浅色模式很类似，有一种方法可以模拟使用 [DevTools 的减少运动](./reduced-motion-simulation.md)。
 
@@ -419,7 +419,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 我们介绍了许多可用于确保捕获产品中的辅助功能问题的工具。  这些工具的范围从自动检查和手动详细检查到不同状态和环境的模拟。  这些工具汇总在 [DevTools 中的辅助功能测试功能中](reference.md)。  自动化工具无法找到产品的所有问题，因为许多辅助功能障碍仅在交互式使用期间出现。
 
-这些工具均无法将正确的一轮产品测试替换为使用辅助技术并遵循检查所有所需测试的计划。 此外，您还可以使用辅助功能[评估](https://accessibilityinsights.io/docs/en/web/getstarted/assessment/)Insights。 [](https://accessibilityinsights.io)  您可能需要执行其他检查，例如：
+这些工具均无法将正确的一轮产品测试替换为使用辅助技术并遵循检查所有所需测试的计划。 此外，您还可以使用[辅助功能](https://accessibilityinsights.io/docs/en/web/getstarted/assessment/)评估[Insights。](https://accessibilityinsights.io)  您可能需要执行其他检查，例如：
 
 * 放大时进行测试。
 * 使用屏幕阅读器进行测试。

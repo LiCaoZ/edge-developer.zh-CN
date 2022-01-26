@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 05/06/2021
-ms.openlocfilehash: 6b1520b045395d0548fe2a77d3cfa8c081e1ec2c
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: db67428141474e33a1d00fba3a7242e4482fd0d7
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12317783"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323612"
 ---
 # <a name="statically-link-the-webview2-loader-library"></a>静态链接 WebView2 加载程序库
 
@@ -27,7 +27,7 @@ ms.locfileid: "12317783"
 
 1.  在包含 WebView2 程序包目标文件的代码中找到NuGet部分。  代码中的位置在下图中突出显示。
 
-    :::image type="complex" source="./media/insert-here.png" alt-text="Project文件代码段" lightbox="./media/insert-here.png":::
+    :::image type="complex" source="./media/insert-here.png" alt-text="Project文件代码段。" lightbox="./media/insert-here.png":::
        Project文件代码段
     :::image-end:::
 
@@ -39,7 +39,7 @@ ms.locfileid: "12317783"
     </PropertyGroup>
     ```
 
-    :::image type="complex" source="./media/static-lib.png" alt-text="插入的代码段" lightbox="./media/static-lib.png":::
+    :::image type="complex" source="./media/static-lib.png" alt-text="插入的代码段。" lightbox="./media/static-lib.png":::
        插入的代码段
     :::image-end:::
 

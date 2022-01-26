@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 6a8c0f4036c3018c1f392aeead7c0fb41ec0da7c
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: bff32bb2f1120c225335808b6a8de0ba32b8d46f
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318630"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12322947"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -71,7 +71,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 若要开始调试，在你要调试的 Android WebView 下，选择"检查 **"。**  使用 DevTools 的方式与执行远程浏览器选项卡的方式相同。
 
 <!--
-:::image type="complex" source=".images/webview-debugging.msft.png" alt-text="Inspecting elements in an Android WebView" lightbox=".images/webview-debugging.msft.png":::
+:::image type="complex" source=".images/webview-debugging.msft.png" alt-text="Inspecting elements in an Android WebView." lightbox=".images/webview-debugging.msft.png":::
    Inspecting elements in an Android WebView
 :::image-end:::
 
@@ -93,4 +93,5 @@ The gray graphics listed with the Android WebView represent its size and positio
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](http://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) 由技术撰稿人 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (创作) 。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](http://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](http://creativecommons.org/licenses/by/4.0)获得许可。

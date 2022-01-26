@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/28/2021
-ms.openlocfilehash: c12bdace3d8f14cff109cd3b4183b8a396f2f3cb
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 31a842083c2566da98ec8332119ca5be795aa7af
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12317804"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323339"
 ---
 # <a name="the-search-panel"></a>搜索面板
 
@@ -99,10 +99,10 @@ The **Search** tool appears in the **Drawer**， and shows the search toolbar：
 
 若要更新搜索结果，请执行下列任一操作：
 *  再次搜索，在搜索输入字段中键入术语。
-*  单击工具栏 **中的"** 刷新 ![ (刷新搜索 ](../media/search-tool/search-tool-refresh.png)) 按钮。
+*  单击" **刷新 ("** ![ 搜索按钮 ](../media/search-tool/search-tool-refresh.png) 。) 中的"刷新"按钮。
 
 
 <!-- ====================================================================== -->
 ## <a name="clear-a-search"></a>清除搜索
 
-若要清除搜索结果，请单击工具栏 **中的"清除** (![ 清除 ](../media/search-tool/search-tool-clear.png)) "按钮。
+若要清除搜索结果，请单击"清除**** ![ ("搜索按钮。) ](../media/search-tool/search-tool-clear.png) 工具栏中的"清除"按钮。

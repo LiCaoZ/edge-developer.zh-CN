@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 97a156073944bda73f4014c387d7bad0735b0e7f
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: d1b297be4341f55b7a71eb29859eb13c4e7cd833
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319498"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323465"
 ---
 <!-- Copyright Kayce Basques
 
@@ -65,15 +65,15 @@ ms.locfileid: "12319498"
 
 使用 Microsoft Edge 浏览器任务管理器作为内存问题调查的起点。  浏览器Microsoft Edge管理器是实时监视器，可告诉你页面当前使用的内存量。
 
-1.  选择 `Shift` + `Esc` 或导航到"Microsoft Edge"主菜单，然后选择"更多**工具**""浏览器任务管理器"以Microsoft Edge  >  **** 浏览器任务管理器"。
+1.  选择 `Shift` + `Esc` 或导航到****"Microsoft Edge"主菜单，然后选择"更多工具""浏览器任务管理器"以Microsoft Edge  >  **** 浏览器任务管理器"。
 
-    :::image type="complex" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="打开Microsoft Edge浏览器任务管理器" lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
+    :::image type="complex" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="打开 Microsoft Edge 浏览器任务管理器。" lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
        图 1：打开Microsoft Edge浏览器任务管理器
     :::image-end:::
 
-1.  将鼠标悬停在浏览器任务管理器Microsoft Edge表标题上，右键单击 (上下文菜单，) **JavaScript 内存**。
+1.  将鼠标悬停在浏览器任务管理器Microsoft Edge表标题上，右键单击 (上下文菜单，然后) **JavaScript 内存**。
 
-    :::image type="complex" source="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png" alt-text="启用 JavaScript 内存" lightbox="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png":::
+    :::image type="complex" source="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png" alt-text="启用 JavaScript 内存。" lightbox="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png":::
        图 2：启用 JavaScript 内存
     :::image-end:::
 
@@ -95,7 +95,7 @@ ms.locfileid: "12319498"
 1.  [录制](../evaluate-performance/reference.md#record-performance)。
 
 > [!TIP]
-> 最佳做法是使用强制垃圾回收开始和结束录制。  若要强制进行垃圾回收，请选择记录时 **收集垃圾回收** ![ ](../media/collect-garbage-icon.msft.png) 强制垃圾回收按钮。
+> 最佳做法是使用强制垃圾回收开始和结束录制。  若要强制进行垃圾回收，请选择 **收集垃圾回收强制** ![ 垃圾回收。](../media/collect-garbage-icon.msft.png) 按钮。
 
 若要演示内存录制，请考虑以下代码：
 
@@ -112,13 +112,13 @@ document.getElementById('grow').addEventListener('click', grow);
 
 每次选择代码中引用的按钮时，都会将一万个节点追加到文档正文，并且一个包含一百万个字符的字符串 `div` `x` 被推送到 `x` 数组。  运行上一个代码示例将生成性能 **面板中的** 录制，如下图所示。
 
-:::image type="complex" source="../media/memory-problems-glitch-example-1-performance-memory.msft.png" alt-text="简单增长" lightbox="../media/memory-problems-glitch-example-1-performance-memory.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-1-performance-memory.msft.png" alt-text="简单增长。" lightbox="../media/memory-problems-glitch-example-1-performance-memory.msft.png":::
    图 3：简单增长
 :::image-end:::
 
 首先，用户界面的说明。  "**概述**"窗格中的**** HEAP (**NET**) 表示 JS 堆。  "概述 **"窗格** 下方是" **计数器"** 窗格。  内存使用率由 JS 堆 (，与概述窗格中的**HEAP**图) **** 文档、DOM 节点、侦听器和 GPU 内存相同。  关闭复选框以在图形中隐藏它。
 
-现在，代码分析与上图比较。  如果查看绿色图形 (节点) ，它将与代码完全匹配。  节点计数在离散步骤中增加。  您可能认为每次增加的节点数都是对 的调用 `grow()` 。  使用蓝色图形 (JS 堆图) 并不简单。  为了与最佳实践保持一样，第一个下降实际上是强制垃圾回收 (选择"收集  **垃圾回收** ![ "按钮 ](../media/collect-garbage-icon.msft.png)) 。  在记录进行时，将显示 JS 堆大小峰值。  这是自然且预期的：JavaScript 代码将在你选择的每一个按钮上创建 DOM 节点，并创建一百万个字符的字符串时执行大量工作。  关键一点是 JS 堆结束时间高于它 (开始"，即强制垃圾回收之后) 。  在现实世界中，如果你看到这种增加 JS 堆大小或节点大小的模式，它可能会定义内存泄漏。
+现在，代码分析与上图比较。  如果查看绿色图形 (节点) ，它将与代码完全匹配。  节点计数在离散步骤中增加。  您可能认为每次增加的节点数都是对 的调用 `grow()` 。  使用蓝色图形 (JS 堆图) 并不简单。  为了与最佳实践保持一样，第一个下降实际上是一个强制垃圾回收 (选择  **收集垃圾回收** ![ 力垃圾回收。](../media/collect-garbage-icon.msft.png) 。  在记录进行时，将显示 JS 堆大小峰值。  这是自然且预期的：JavaScript 代码将在你选择的每一个按钮上创建 DOM 节点，并创建一百万个字符的字符串时执行大量工作。  关键一点是 JS 堆结束时间高于它 (开始"，即强制垃圾回收之后) 。  在现实世界中，如果你看到这种增加 JS 堆大小或节点大小的模式，它可能会定义内存泄漏。
 
 <!--todo: the Heap snapshots and Profiles panel are not found in Edge  -->
 
@@ -150,7 +150,7 @@ document.getElementById('create').addEventListener('click', create);
 
 若要创建快照，请打开 DevTools 并导航**** 到内存面板，选择**** 堆快照单选按钮>**拍摄快照**按钮。
 
-:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png" alt-text="拍摄堆快照" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png" alt-text="拍摄堆快照。" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png":::
    图 4：拍摄堆快照
 :::image-end:::
 
@@ -158,13 +158,13 @@ document.getElementById('create').addEventListener('click', create);
 
 在 `Detached` 类 **筛选器文本框中** 键入以搜索分离的 DOM 树。
 
-:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png" alt-text="筛选分离的节点" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png" alt-text="筛选分离的节点。" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png":::
    图 5：筛选分离的节点
 :::image-end:::
 
 展开树状以调查分离的树。
 
-:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png" alt-text="调查分离的树" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png" alt-text="调查分离的树。" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png":::
    图 6：调查分离的树
 :::image-end:::
 
@@ -172,7 +172,7 @@ document.getElementById('create').addEventListener('click', create);
 
 选择一个节点以进一步调查它。  在 **"对象** "窗格中，您可以查看有关引用它的代码的详细信息。  例如，在下图中， `detachedTree` 变量引用节点。  若要修复特定内存泄漏，应研究使用 变量的代码，并确保在不再需要节点时删除 `detachedTree` 对节点的引用。
 
-:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png" alt-text="调查节点" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png" alt-text="正在调查节点。" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png":::
    图 7：调查节点
 :::image-end:::
 
@@ -196,23 +196,23 @@ document.getElementById('grow').addEventListener('click', grow);
 
 每次推送代码中引用的按钮时，都会向数组中添加一个包含一百万个字符 `x` 的字符串。
 
-若要在时间线上记录分配检测，请打开 DevTools，导航到内存面板，选择**** 时间线上的分配检测单选按钮，选择**** 开始按钮，执行你认为导致内存泄漏的操作，然后在完成后选择停止**录制**堆配置文件录制**** ![ ](../media/stop-recording-icon.msft.png) 按钮。
+若要在时间线上记录分配检测，请打开 DevTools，导航到内存面板，选择**** 时间线上的分配检测单选按钮，选择**** 开始按钮，执行你认为导致内存泄漏的操作，然后选择停止**录制**堆配置文件**** ![ 停止录制。](../media/stop-recording-icon.msft.png) 按钮。
 
 在录制时，请注意时间线上的 Allocation instrumentation 上是否显示任何蓝色条，如下图所示。
 
-:::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-all.msft.png" alt-text="新分配" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-all.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-all.msft.png" alt-text="新分配。" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-all.msft.png":::
    图 8：新分配
 :::image-end:::
 
 这些蓝色条代表新的内存分配。  这些新的内存分配是内存泄漏的候选项。  可以缩放栏以筛选"构造函数"窗格，以**** 只显示指定时间范围内分配的对象。
 
-:::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused.msft.png" alt-text="已缩放的分配时间线" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused.msft.png" alt-text="已缩放的分配时间线。" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused.msft.png":::
    图 9：已缩放的分配时间线
 :::image-end:::
 
 展开对象并选择值以查看"对象"窗格中的 **更多详细信息** 。  例如，下图中新分配的对象的详细信息指示已分配给范围 `x` 中的 `Window` 变量。
 
-:::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png" alt-text="对象详细信息" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png" alt-text="对象详细信息。" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png":::
    图 10：对象详细信息
 :::image-end:::
 
@@ -222,7 +222,7 @@ document.getElementById('grow').addEventListener('click', grow);
 
 使用 **分配采样** 分析类型查看 JavaScript 函数的内存分配。
 
-:::image type="complex" source="../media/memory-problems-glitch-example-05-memory-allocation-sampling.msft.png" alt-text="记录分配采样" lightbox="../media/memory-problems-glitch-example-05-memory-allocation-sampling.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-05-memory-allocation-sampling.msft.png" alt-text="记录分配采样。" lightbox="../media/memory-problems-glitch-example-05-memory-allocation-sampling.msft.png":::
    图 11：记录分配采样
 :::image-end:::
 
@@ -231,9 +231,9 @@ document.getElementById('grow').addEventListener('click', grow);
 1.  完成要调查的网页上的操作。
 1.  完成 **所有操作** 后，选择"停止"按钮。
 
-DevTools 显示按功能细分的内存分配。  默认视图为 **"高 (从 **下向上) "视图，该视图在顶部显示分配了最多内存的函数。
+DevTools 显示按功能细分的内存分配。  默认视图为 **"高 (从 **下) "，它显示在顶部分配了最大内存的函数。
 
-:::image type="complex" source="../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png" alt-text="分配采样" lightbox="../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png":::
+:::image type="complex" source="../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png" alt-text="分配采样。" lightbox="../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png":::
    图 12：分配采样
 :::image-end:::
 
@@ -243,7 +243,7 @@ DevTools 显示按功能细分的内存分配。  默认视图为 **"高 (从 **
 
 如果页面似乎频繁暂停，则可能有垃圾回收问题。
 
-您可以使用浏览器任务管理器Microsoft Edge性能内存记录来发现频繁垃圾回收。  在浏览器Microsoft Edge管理器中，经常出现和下降**的内存**或**JavaScript 内存**值表示频繁的垃圾回收。  在性能记录中， (JS 堆或节点) 的频繁更改指示频繁进行垃圾回收。
+您可以使用浏览器任务管理器或Microsoft Edge记录来发现频繁垃圾回收。  在浏览器Microsoft Edge管理器中，经常出现和下降**的内存**或**JavaScript 内存**值表示频繁的垃圾回收。  在性能记录中，频繁更改 (JS 堆) 或节点计数图的频繁更改指示频繁进行垃圾回收。
 
 确定问题后，可以在时间线记录上使用 **Allocation instrumentation** 来查明内存的分配位置以及导致分配的函数。
 
@@ -253,7 +253,8 @@ DevTools 显示按功能细分的内存分配。  默认视图为 **"高 (从 **
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/memory-problems/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。
 
 <!-- [recording](/profile/evaluate-performance/timeline-tool#make-a-recording) -->
 <!-- [hngd](https://jsfiddle.net/kaycebasques/tmtbw8ef/) -->

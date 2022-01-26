@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: a087882c3e23b596c142d18a42202e0fb9f01745
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 1532b44956da0210ff7ad3228e01551322c8ca53
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318042"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323143"
 ---
 # <a name="verify-that-a-page-is-usable-by-people-with-color-blindness"></a>验证页面是否对色盲者可用
 
@@ -35,7 +35,7 @@ ms.locfileid: "12318042"
 
 1.  在"**模拟视力**障碍"下拉列表中，选择 **"Protanopia"。**  _Protanopia_ 对红色光的敏感度降低，使得难以区分绿色、红色和黄色。
 
-    :::image type="complex" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="将文档作为具有 protanopia 的人显示将会看到它" lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="将文档作为具有特大尼西亚的人显示将会看到它。" lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
         将文档作为具有 protanopia 的人显示将会看到它
     :::image-end:::
 

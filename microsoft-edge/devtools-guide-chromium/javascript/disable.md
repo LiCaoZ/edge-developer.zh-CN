@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: f9fa89e121b18fd01c4aeed6a2dcbf1c3ae6ef00
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: a1712c3cee4b4972d9d03c6bbbae6d164bdf83b8
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319736"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12322954"
 ---
 <!-- Copyright Kayce Basques
 
@@ -35,19 +35,19 @@ ms.locfileid: "12319736"
 1.  [打开 Microsoft Edge DevTools](../open/index.md)。
 1.  选择 `Control`+`Shift`+`P` (Windows、Linux)或 `Command`+`Shift`+`P` (macOS)以打开 **命令菜单**。
 
-    :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="命令菜单" lightbox="../media/javascript-console-command.msft.png":::
+    :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="命令菜单。" lightbox="../media/javascript-console-command.msft.png":::
        **命令菜单**
     :::image-end:::
 
 1.  开始键入 ， `javascript` 选择 **"禁用 JavaScript"，** 然后选择 `Enter` 运行命令。  JavaScript 现已禁用。
 
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="在命令菜单中选择&quot;禁用 JavaScript&quot;" lightbox="../media/javascript-console-command-javascript.msft.png":::
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="在&quot;命令&quot;菜单中选择&quot;禁用 JavaScript&quot;。" lightbox="../media/javascript-console-command-javascript.msft.png":::
        在 **命令菜单中选择** "禁用 **JavaScript"**
     :::image-end:::
 
     源旁边的黄色 **警告图标提醒** 你 JavaScript 已禁用。
 
-    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="&quot;源&quot;旁边的警告图标" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="&quot;源&quot;旁边的警告图标。" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
        "源"旁边的警告 **图标**
     :::image-end:::
 
@@ -66,4 +66,5 @@ ms.locfileid: "12319736"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/disable)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
-ms.openlocfilehash: 683292ef363fb9b489a1946ec73d3c00a91d5034
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 7140a61b186184958df10e8b842b8782e3d40d2b
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320492"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323787"
 ---
 # <a name="monitor-changes-in-javascript-using-live-expressions"></a>使用 Live Expressions 监视 JavaScript 中的更改
 
@@ -23,7 +23,7 @@ ms.locfileid: "12320492"
 
 To start， choose the **Create live expression (** eye) button next to the **Filter** textbox.  选择它后，将显示一个文本框，供您在文本框中输入新表达式。
 
-:::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="选择&quot;新建实时表达式&quot;按钮以打开文本框以键入表达式" lightbox="../media/console-live-expressions-new.msft.png":::
+:::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="选择&quot;新建实时表达式&quot;按钮以打开文本框以键入表达式。" lightbox="../media/console-live-expressions-new.msft.png":::
     选择 `New live expression` 按钮以打开文本框以键入表达式
 :::image-end:::
 
@@ -37,7 +37,7 @@ To start， choose the **Create live expression (** eye) button next to the **Fi
 
 表达式现在为活动表达式， `body` 并显示为结果。
 
-:::image type="complex" source="../media/console-live-expressions-document-active-element.msft.png" alt-text="document.activeElement 实时表达式将正文显示为结果" lightbox="../media/console-live-expressions-document-active-element.msft.png":::
+:::image type="complex" source="../media/console-live-expressions-document-active-element.msft.png" alt-text="document.activeElement 实时表达式将正文显示为结果。" lightbox="../media/console-live-expressions-document-active-element.msft.png":::
     结果中 `document.activeElement` 显示正文的 Live 表达式
 :::image-end:::
 
@@ -49,7 +49,7 @@ To start， choose the **Create live expression (** eye) button next to the **Fi
 
 若要再次更改该值，请打开并选择网页上的"搜索"文本框。
 
-:::image type="complex" source="../media/console-live-expressions-document-active-element-search.msft.png" alt-text="导航到网页中的不同元素以更新 Live Expression" lightbox="../media/console-live-expressions-document-active-element-search.msft.png":::
+:::image type="complex" source="../media/console-live-expressions-document-active-element-search.msft.png" alt-text="导航到网页中的不同元素以更新 Live Expression。" lightbox="../media/console-live-expressions-document-active-element-search.msft.png":::
     导航到网页中的不同元素以更新 Live **Expression**
 :::image-end:::
 
@@ -71,7 +71,7 @@ To start， choose the **Create live expression (** eye) button next to the **Fi
 
 例如，您希望监视当前网页中的鼠标移动。  导航到 ["记录鼠标移动](https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html)"演示，打开 **控制台**，并四处移动鼠标以显示包含大量信息的日志。
 
-:::image type="complex" source="../media/console-live-expression-mouse-logging.msft.png" alt-text="控制台显示有关鼠标位置的很多信息" lightbox="../media/console-live-expression-mouse-logging.msft.png":::
+:::image type="complex" source="../media/console-live-expression-mouse-logging.msft.png" alt-text="控制台显示有关鼠标位置的很多信息。" lightbox="../media/console-live-expression-mouse-logging.msft.png":::
     **控制台** 显示有关鼠标位置的很多信息
 :::image-end:::
 
@@ -84,7 +84,7 @@ To start， choose the **Create live expression (** eye) button next to the **Fi
 
 使用**Live Expressions 时**，始终在屏幕的相同部分获取信息，并保留控制台**** 日志，以获得不会更改太多的值。
 
-:::image type="complex" source="../media/console-live-expressions-x-and-y.msft.png" alt-text="将鼠标的 x 和 y 位置显示为 Live Expressions" lightbox="../media/console-live-expressions-x-and-y.msft.png":::
+:::image type="complex" source="../media/console-live-expressions-x-and-y.msft.png" alt-text="将鼠标的 x 和 y 位置显示为 Live Expressions。" lightbox="../media/console-live-expressions-x-and-y.msft.png":::
     将 `x` 鼠标 `y` 的 和 位置显示为 Live **Expressions**
 :::image-end:::
 

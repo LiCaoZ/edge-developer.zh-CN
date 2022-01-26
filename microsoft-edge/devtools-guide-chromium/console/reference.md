@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: b5d0b9c03ec846d4512068d9c624a77d64dc0ea6
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 271fbddc1e94499d2a032e2f2e26996249757fd4
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320065"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323101"
 ---
 <!-- Copyright Kayce Basques
 
@@ -42,13 +42,13 @@ ms.locfileid: "12320065"
 
 选择 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS)。
 
-:::image type="complex" source="../media/console-hello-console.msft.png" alt-text="控制台工具" lightbox="../media/console-hello-console.msft.png":::
+:::image type="complex" source="../media/console-hello-console.msft.png" alt-text="控制台工具。" lightbox="../media/console-hello-console.msft.png":::
    **控制台**工具
 :::image-end:::
 
 若要从命令**菜单**打开控制台工具[](../command-menu/index.md)，请键入 ，然后运行旁边有 `Console` **面板**锁屏提醒的显示控制台命令。 ****
 
-:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="运行命令以显示控制台工具" lightbox="../media/console-command-menu-show-console.msft.png":::
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="运行命令以显示控制台工具。" lightbox="../media/console-command-menu-show-console.msft.png":::
    运行命令以显示 **控制台** 工具
 :::image-end:::
 
@@ -56,13 +56,13 @@ ms.locfileid: "12320065"
 
 选择 `Esc` 或选择 **"自定义和控制 DevTools** `...` () "，然后选择"显示控制台**箱"。**
 
-:::image type="complex" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="显示控制台工具箱" lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
+:::image type="complex" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="显示控制台箱。" lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
    **显示控制台工具箱**
 :::image-end:::
 
 在**控制台**工具打开的情况下，工具箱将在 DevTools 窗口的底部弹出。
 
-:::image type="complex" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="工具箱中的控制台工具" lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
+:::image type="complex" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="&quot;箱&quot;中的控制台工具。" lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
    **“抽屉”** 中的 **控制台** 工具
 :::image-end:::
 
@@ -74,9 +74,9 @@ ms.locfileid: "12320065"
 
 ### <a name="open-console-settings"></a>打开控制台设置
 
-Choose the **Console 设置** (Console 设置 icon ![) ](../media/settings-button-icon.msft.png) button.
+Choose the **Console 设置** (Console ![ 设置 icon.) ](../media/settings-button-icon.msft.png) button.
 
-:::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="控制台设置" lightbox="../media/console-settings-group-similar-empty.msft.png":::
+:::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="控制台设置。" lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **控制台设置**
 :::image-end:::
 
@@ -93,9 +93,9 @@ Choose the **Console 设置** (Console 设置 icon ![) ](../media/settings-butto
 
 ### <a name="open-the-console-sidebar"></a>打开控制台边栏
 
-若要显示 **边栏**，请选择"显示 **控制台边** 栏 (![ 显示控制台边栏 ](../media/show-console-sidebar-icon.msft.png)) 。  **边栏**可帮助你进行筛选。
+To display the **Sidebar**， choose **Show console sidebar** (![ Show console sidebar. ](../media/show-console-sidebar-icon.msft.png)) .  **边栏**可帮助你进行筛选。
 
-:::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="控制台边栏" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
+:::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="控制台边栏。" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
    **控制台边栏**
 :::image-end:::
 
@@ -107,13 +107,13 @@ Choose the **Console 设置** (Console 设置 icon ![) ](../media/settings-butto
 
 ### <a name="turn-off-message-grouping"></a>关闭邮件分组
 
-若要关闭控制台的默认邮件分组行为，请打开控制台**** 设置并选中"类似组["](#open-console-settings)**旁边的复选框**。  例如，导航到“[记录 XHR 和 Fetch 请求](#log-xhr-and-fetch-requests)”。
+若要关闭控制台的默认邮件分组**行为**，请打开控制台[设置并选中](#open-console-settings)类似组**旁边的复选框**。  例如，导航到“[记录 XHR 和 Fetch 请求](#log-xhr-and-fetch-requests)”。
 
 ### <a name="log-xhr-and-fetch-requests"></a>记录 XHR 和 Fetch 请求
 
-若要在每次发生时将所有和请求记录到控制台，请打开控制台 `XMLHttpRequest` `Fetch` 设置，然后选择**Log XMLHttpRequests**[旁边的](#open-console-settings)复选框。 ****
+To log all `XMLHttpRequest` and `Fetch` requests to the **Console** as each happens， [open Console 设置](#open-console-settings)and choose the checkbox next to Log **XMLHttpRequests**.
 
-:::image type="complex" source="../media/console-xhr-fetch.msft.png" alt-text="记录 XMLHttpRequest 和 Fetch 请求" lightbox="../media/console-xhr-fetch.msft.png":::
+:::image type="complex" source="../media/console-xhr-fetch.msft.png" alt-text="Log XMLHttpRequest 和 Fetch 请求。" lightbox="../media/console-xhr-fetch.msft.png":::
    记录 `XMLHttpRequest` 和 `Fetch` 请求
 :::image-end:::
 
@@ -122,7 +122,7 @@ Choose the **Console 设置** (Console 设置 icon ![) ](../media/settings-butto
 <!--
 > ##### Old Figure 9
 > How the logged `XMLHttpRequest` and `Fetch` requests look after ungrouping
-> :::image type="complex" source="../media/console-xhr-fetch-all.msft.png" alt-text="How the logged XMLHttpRequest and Fetch requests look after ungrouping" lightbox="../media/console-xhr-fetch-all.msft.png":::
+> :::image type="complex" source="../media/console-xhr-fetch-all.msft.png" alt-text="How the logged XMLHttpRequest and Fetch requests look after ungrouping." lightbox="../media/console-xhr-fetch-all.msft.png":::
 >    How the logged XMLHttpRequest and Fetch requests look after ungrouping
 > :::image-end:::
 -->
@@ -131,13 +131,13 @@ Choose the **Console 设置** (Console 设置 icon ![) ](../media/settings-butto
 
 ### <a name="persist-messages-across-page-loads"></a>跨页面加载保留消息
 
-加载新网页时，默认操作会清除 **控制台**。  若要在页面加载时保留消息，请[打开](#open-console-settings)"控制台设置并选中"保留日志 **"旁边的复选框**。
+加载新网页时，默认操作会清除 **控制台**。  若要跨页面加载保留消息，请[打开控制台设置](#open-console-settings)并选中"保留日志"旁边的**复选框**。
 
 ### <a name="hide-network-messages"></a>隐藏网络消息
 
 用户的默认操作Microsoft Edge将网络消息记录到**控制台**。  在下图中，选择的消息表示 的 HTTP 状态代码 `429` 。
 
-:::image type="complex" source="../media/console-show-network.msft.png" alt-text="控制台中的 429 消息" lightbox="../media/console-show-network.msft.png":::
+:::image type="complex" source="../media/console-show-network.msft.png" alt-text="控制台中的 429 消息。" lightbox="../media/console-show-network.msft.png":::
    **控制台**中的 `429` 消息
 :::image-end:::
 
@@ -156,7 +156,7 @@ Choose the **Console 设置** (Console 设置 icon ![) ](../media/settings-butto
 
 [打开控制台边栏](#open-the-console-sidebar) 并选择" **# 用户消息** "，以仅显示来自网页的 JavaScript 的消息。
 
-:::image type="complex" source="../media/console-sidebar-drawer-user-messages.msft.png" alt-text="显示用户消息" lightbox="../media/console-sidebar-drawer-user-messages.msft.png":::
+:::image type="complex" source="../media/console-sidebar-drawer-user-messages.msft.png" alt-text="显示用户消息。" lightbox="../media/console-sidebar-drawer-user-messages.msft.png":::
    显示用户消息
 :::image-end:::
 
@@ -173,13 +173,13 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 
 若要筛选邮件，请选择" **日志级别** "下拉列表，然后选择 `Verbose` `Info` 、、 `Warning` 或 `Error` 。
 
-:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="“日志级别”下拉列表" lightbox="../media/console-log-level-default-levels.msft.png":::
+:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="&quot;日志级别&quot;下拉列表。" lightbox="../media/console-log-level-default-levels.msft.png":::
    “**日志级别**”下拉列表
 :::image-end:::
 
 若要使用日志级别进行筛选，请打开[控制台边](#open-the-console-sidebar)栏，**然后选择错误、** 警告、******信息**或**详细**。
 
-:::image type="complex" source="../media/console-sidebar-warnings.msft.png" alt-text="使用边栏查看警告" lightbox="../media/console-sidebar-warnings.msft.png":::
+:::image type="complex" source="../media/console-sidebar-warnings.msft.png" alt-text="使用边栏查看警告。" lightbox="../media/console-sidebar-warnings.msft.png":::
    使用边栏查看警告
 :::image-end:::
 
@@ -187,7 +187,7 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 
 键入 `url:` 后跟 URL，以便仅查看来自该 URL 的邮件。  键入 后 `url:` ，DevTools 将显示所有相关 URL。  也可以使用域。  例如，如果 `https://example.com/a.js` 和 `https://example.com/b.js` 正在记录消息，则你可以专注于 `url:https://example.com` 这两个脚本中的消息。
 
-:::image type="complex" source="../media/console-filter-text.msft.png" alt-text="URL 筛选器" lightbox="../media/console-filter-text.msft.png":::
+:::image type="complex" source="../media/console-filter-text.msft.png" alt-text="URL 筛选器。" lightbox="../media/console-filter-text.msft.png":::
    URL 筛选器
 :::image-end:::
 
@@ -203,7 +203,7 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 1.  展开 **" # 用户消息"** 部分。
 1.  选择包含要关注的消息的脚本的 URL。
 
-:::image type="complex" source="../media/console-filter-text-specified.msft.png" alt-text="显示来自邮件wp-ad.min.js" lightbox="../media/console-filter-text-specified.msft.png":::
+:::image type="complex" source="../media/console-filter-text-specified.msft.png" alt-text="显示来自邮件wp-ad.min.js。" lightbox="../media/console-filter-text-specified.msft.png":::
    显示来自的邮件 `wp-ad.min.js`
 :::image-end:::
 
@@ -247,7 +247,7 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 > [!NOTE]
 > 在下图中，`document.querySelector('a')` 和 `document.querySelector('img')` 是之前评估的表达式。
 
-:::image type="complex" source="../media/console-filter-text-autofilter-history.msft.png" alt-text="自动完成弹出菜单显示历史记录中的表达式" lightbox="../media/console-filter-text-autofilter-history.msft.png":::
+:::image type="complex" source="../media/console-filter-text-autofilter-history.msft.png" alt-text="自动完成弹出菜单显示历史记录中的表达式。" lightbox="../media/console-filter-text-autofilter-history.msft.png":::
    自动完成弹出菜单显示历史记录中的表达式
 :::image-end:::
 
@@ -255,13 +255,13 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 
 **"JavaScript**上下文"下拉列表的默认选项位于**顶部**，它表示主[网页的浏览](https://developer.mozilla.org/docs/Glossary/Browsing_context)上下文。
 
-:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="“JavaScript 上下文”下拉列表" lightbox="../media/console-dom-level-top.msft.png":::
+:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="&quot;JavaScript 上下文&quot;下拉列表。" lightbox="../media/console-dom-level-top.msft.png":::
    “**JavaScript 上下文**”下拉列表
 :::image-end:::
 
 假设您的网页中嵌入了一个广告 `<iframe>` 。  你想要运行 JavaScript 来调整广告的 DOM。  首先，从"JavaScript 上下文"下拉列表中选择 **广告的浏览** 上下文。
 
-:::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="选择其他 JavaScript 上下文" lightbox="../media/console-dom-level-multiple.msft.png":::
+:::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="选择其他 JavaScript 上下文。" lightbox="../media/console-dom-level-multiple.msft.png":::
    选择其他 JavaScript 上下文
 :::image-end:::
 
@@ -271,7 +271,7 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 
 若要清除 **控制台**，请完成以下任何工作流。
 
-*   选择" **清除控制台 (** ![ 清除控制台 ](../media/clear-console-button-icon.msft.png)) 按钮。
+*   Choose the **Clear Console (** Clear ![ Console.) ](../media/clear-console-button-icon.msft.png) button.
 *   将鼠标悬停在消息上，打开上下文菜单 (右键单击") "，然后选择"清除控制台 **"。**
 *   在**控制台**中输入 `clear()`，然后选择 `Enter`。
 *   从 JavaScript 中为你的网页运行 `console.clear()`。
@@ -283,4 +283,5 @@ DevTools 为每个方法 `console.*` 分配四个严重性级别之一。
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/console/reference)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

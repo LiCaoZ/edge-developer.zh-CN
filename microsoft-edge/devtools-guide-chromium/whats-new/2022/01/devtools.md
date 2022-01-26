@@ -6,18 +6,18 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/14/2022
-ms.openlocfilehash: 7f616430f059707ee14f4e769aa483cff4b3ffc5
-ms.sourcegitcommit: 397717e6a3d19933703d0fc31baa57edab6d7702
+ms.openlocfilehash: 92a3bf8959d2c0a7b4727f2163c53ce32b7f119d
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "12293909"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324487"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-97"></a>DevTools (Microsoft Edge 97 中的新增) 
 
-以下部分列出了 Microsoft Edge 开发人员工具团队的公告。  若要试用 DevTools 的最新功能和适用于 Microsoft Edge 的 DevTools Visual Studio Code，请阅读这些通知。  若要随时了解有关开发人员工具的最新和最强大功能，请下载 [Microsoft Edge 预览频道](https://www.microsoftedgeinsider.com/download) 并 [在 Twitter 上关注 Microsoft Edge 开发人员工具团队](https://twitter.com/EdgeDevTools)。
+以下部分列出了 Microsoft Edge 开发人员工具团队的公告。  要尝试 DevTools 的最新功能以及适用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展，请阅读以下公告。  若要随时了解有关开发人员工具的最新和最强大功能，请下载 [Microsoft Edge 预览频道](https://www.microsoftedgeinsider.com/download) 并 [在 Twitter 上关注 Microsoft Edge 开发人员工具团队](https://twitter.com/EdgeDevTools)。
 
-如果你使用的是 Windows、Linux 或 macOS，请考虑将 Microsoft Edge Canary 预览通道用作默认开发浏览器。  预览频道使你可以访问开发人员工具Microsoft Edge功能。
+如果你使用的是 Windows、Linux 或 macOS，请考虑将 Microsoft Edge Canary 预览渠道用作默认开发浏览器。  通过预览渠道，可以访问 Microsoft Edge DevTools 的最新功能。
 
 
 <!-- ====================================================================== -->
@@ -36,15 +36,15 @@ ms.locfileid: "12293909"
 
 另请参阅：
 * [使用分离的元素工具调试 DOM 内存泄漏](../../../memory-problems/dom-leaks.md)
-* [使用分离的元素工具Microsoft Edge内存泄漏 - YouTube](https://www.youtube.com/watch?v=v2iy17ptmBk&ab_channel=MicrosoftEdge)
+* [使用"分离的元素"Microsoft Edge调试内存泄漏 - YouTube](https://www.youtube.com/watch?v=v2iy17ptmBk&ab_channel=MicrosoftEdge)
 
 
 <!-- ====================================================================== -->
 ## <a name="microsoft-edge-devtools-extension-for-visual-studio-code"></a>用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展
 
-有关此扩展的常规信息，请参阅[Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)。
+有关此扩展的常规信息，请参阅 [适用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)。
 
-### <a name="screencast-enhancements-deprecation-warnings-and-new-launch-options-for-microsoft-edge"></a>屏幕广播增强功能、弃用警告和适用于 Microsoft Edge
+### <a name="screencast-enhancements-deprecation-warnings-and-new-launch-options-for-microsoft-edge"></a>屏幕广播增强功能、弃用警告和适用于Microsoft Edge
 
 <!-- Title: Screeencast improvements and launch options for Microsoft Edge in the Visual Studio Code extension -->
 <!-- Subtitle: The correct list of emulated devices is shown for the screeencast, the correct device emulation is displayed, and there are now launch arguments for the browser. -->
@@ -70,7 +70,7 @@ ms.locfileid: "12293909"
 
 由于早期反馈，我们一直在针对开发人员工具的新焦点模式接口进行改进Microsoft Edge Bug 修复。  焦点模式是一个新的 UI 选项，允许你将工具停靠在 DevTools 窗口的顶部或一侧，并从工具栏中删除混乱邮件。
 
-使用焦点模式时，所有相同的工具和 [自定义主题](../../../customize/theme.md) 都可用，就像在现有的 DevTools UI 中一样。  了解有关焦点模式[UI 的更多信息](../../../experimental-features/index.md#focus-mode)，或者通过启用 DevTools 设置实验来******尝试**  >  **它**。
+使用焦点模式时，所有相同的工具和 [自定义主题](../../../customize/theme.md) 都可用，就像在现有的 DevTools UI 中一样。  了解有关焦点模式[UI 的更多信息](../../../experimental-features/index.md#focus-mode)，或者通过启用 DevTools 设置试验来******尝试**  >  **它**。
 
 ![焦点模式 UI。](../../media/2022/01/focus-mode.png)
 
@@ -81,7 +81,7 @@ ms.locfileid: "12293909"
 <!-- Title: 3D View better integrates with different themes in DevTools -->
 <!-- Subtitle: The 3D View tool now works when you select a different color theme in DevTools. -->
 
-在早期版本的 Microsoft Edge，在 DevTools 中更改主题，然后打开 3D 视图工具会导致面板空白。  This issue has now been fixed， in Microsoft Edge 97.  若要了解更多信息，请参阅 [向 DevTools](../../../customize/theme.md) 和 [3D 视图应用颜色主题](../../../3d-view/index.md)。
+在早期版本的 Microsoft Edge中，更改 DevTools 中的主题，然后打开 3D 视图工具会导致面板为空。  This issue has now been fixed， in Microsoft Edge 97.  若要了解更多信息，请参阅 [向 DevTools](../../../customize/theme.md) 和 [3D 视图应用颜色主题](../../../3d-view/index.md)。
 
 ![3D 视图工具现在支持更改颜色主题。](../../media/2022/01/3d-view-with-color-theme.png)
 
@@ -100,5 +100,5 @@ Microsoft Edge版本 97 还包括来自 Chromium 项目的以下更新：
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page for announcements from the Chromium project is [What's New In DevTools (Chrome 97)](https://developer.chrome.com/blog/new-in-devtools-97) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->

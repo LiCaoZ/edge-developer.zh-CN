@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/26/2021
-ms.openlocfilehash: 89ea7c89c10bad1ac646d29df17ec9b0ecd0b3ab
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 7c1800d76d7f8e7bd67f1e8454c1b66e37df0387
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318616"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323185"
 ---
 <!-- Copyright Katherine Jackson
 
@@ -246,7 +246,7 @@ li a {
 
 向现有规则集添加声明
 
-1.  将鼠标悬停在 **"主页"** 链接上，打开上下文菜单 (右键单击") "检查 **"。**
+1.  将鼠标悬停在 **"主页"** 链接上，打开上下文菜单 (右键单击") "，然后选择"检查 **"。**
 
     :::image type="content" source="../media/beginners-css-add1.msft.png" alt-text="检查&quot;主页&quot;链接。" lightbox="../media/beginners-css-add1.msft.png":::
 
@@ -288,7 +288,7 @@ li a {
 
 在 DevTools 中添加新规则集
 
-1.  Select **New Style Rule** (New Style Rule) which is next to ![ ](../media/new-style-rule-icon.msft.png) **.cls**.  空的规则集将显示为 `a` 选择器。
+1.  Select **New Style Rule** (New Style ![ Rule.) which is next to ](../media/new-style-rule-icon.msft.png) **.cls**.  空的规则集将显示为 `a` 选择器。
 
     :::image type="content" source="../media/beginners-css-rule1.msft.png" alt-text="添加新规则。" lightbox="../media/beginners-css-rule1.msft.png":::
 
@@ -508,12 +508,13 @@ li a {
 
 *   更好地进行 Web 开发的最好办法就是构建更多网站。  不要担心中断工作。  请一直玩得有趣，并尽可能学习。
 *   若要了解有关设置网页样式的信息，请导航到 CSS [简介](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS)。
-*   若要详细了解如何在 DevTools 中试验 CSS，请导航入门[查看和更改 CSS。](../css/index.md)
+*   若要详细了解如何在 DevTools 中试验 CSS，请导航到入门[查看和更改 CSS。](../css/index.md)
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，由 [来自](https://developers.google.com/web/resources/contributors#katherine-jackson) 技术编写器 (，Chrome DevTools) 。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，由位于 Chrome DevTools 技术编写器 (的 [Katherine Writer](https://developers.google.com/web/resources/contributors#katherine-jackson)) 。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

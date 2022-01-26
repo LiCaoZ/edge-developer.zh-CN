@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
-ms.openlocfilehash: 05a47948377983178cff5d968546bb8a10f8688d
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 6f290f73c79bce7475e1392ab9894406ed2633f7
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318525"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323080"
 ---
 # <a name="filter-console-messages"></a>筛选控制台消息
 
@@ -25,19 +25,19 @@ ms.locfileid: "12318525"
 
 若要在控制台中 **筛选消息**，请使用" **日志级别"** 下拉菜单。  你可以切换每个级别的状态。  若要关闭每个级别，请删除每个级别旁边的选中标记。
 
-:::image type="complex" source="../media/console-filter-dropdown.msft.png" alt-text="下拉菜单使用日志级别筛选控制台消息" lightbox="../media/console-filter-dropdown.msft.png":::
+:::image type="complex" source="../media/console-filter-dropdown.msft.png" alt-text="下拉菜单使用日志级别筛选控制台消息。" lightbox="../media/console-filter-dropdown.msft.png":::
     下拉菜单使用日志 **级别** 筛选控制台消息
 :::image-end:::
 
 由于未应用筛选器，下图显示数十条消息。  接下来，减少和管理邮件数量。
 
-:::image type="complex" source="../media/console-filter-displays-all.msft.png" alt-text="没有筛选器集意味着你可能会显示许多控制台消息" lightbox="../media/console-filter-displays-all.msft.png":::
+:::image type="complex" source="../media/console-filter-displays-all.msft.png" alt-text="没有筛选器集意味着你可能会显示许多控制台消息。" lightbox="../media/console-filter-displays-all.msft.png":::
     没有筛选器集意味着你可能会显示许多控制台消息
 :::image-end:::
 
 选择隐藏所有警告级别的消息，以减少噪音。  导航到" **日志级别** "下拉列表并取消选中 `Warnings` 该级别。
 
-:::image type="complex" source="../media/console-filter-hide-warning.msft.png" alt-text="在控制台中隐藏所有警告级别消息以筛选大部分噪音" lightbox="../media/console-filter-hide-warning.msft.png":::
+:::image type="complex" source="../media/console-filter-hide-warning.msft.png" alt-text="隐藏控制台中所有警告级别的消息，以筛选大部分噪音。" lightbox="../media/console-filter-hide-warning.msft.png":::
     在控制台中隐藏所有警告级别 **消息** 以筛选大部分噪音
 :::image-end:::
 
@@ -47,7 +47,7 @@ ms.locfileid: "12318525"
 
 如果要查看更多详细信息，若要使用文本筛选邮件，在"筛选器"文本框 **中** 键入字符串。  例如，在框中键入 以仅显示有关浏览器阻止 `block` 资源加载的消息。
 
-:::image type="complex" source="../media/console-filter-text.msft.png" alt-text="显示包含单词块的邮件" lightbox="../media/console-filter-text.msft.png":::
+:::image type="complex" source="../media/console-filter-text.msft.png" alt-text="显示包含单词块的邮件。" lightbox="../media/console-filter-text.msft.png":::
     显示包含单词的消息 `block`
 :::image-end:::
 
@@ -57,7 +57,7 @@ ms.locfileid: "12318525"
 
 [正则表达式是](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions) 筛选邮件的一种强大方法。  例如，在 `/^Tracking/` **筛选器文本框中** 键入以仅显示以术语 开始的邮件 `Tracking` 。  如果你不熟悉正则表达式 [，RegExr](https://regexr.com) 是了解使用正则表达式的一个很好的资源。
 
-:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="使用&quot;筛选器&quot;文本框中的正则表达式显示以单词筛选器开始的邮件" lightbox="../media/console-filter-regex.msft.png":::
+:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="使用&quot;筛选器&quot;文本框中的正则表达式显示以单词筛选器开始的邮件。" lightbox="../media/console-filter-regex.msft.png":::
     使用"筛选器"文本框 `filter` 中的正则表达式显示以 **单词开始** 的邮件
 :::image-end:::
 
@@ -73,22 +73,22 @@ ms.locfileid: "12318525"
 
 当 **边栏** 打开时，你可以显示消息的个数以及每个消息的来源。  选项包括 `All messages` `User Messages` `Errors` 、、、、 `Warnings` 和 `Info` `Verbose` 。
 
-:::image type="complex" source="../media/console-filter-sidebar-open.msft.png" alt-text="控制台边栏显示源自于的不同源消息" lightbox="../media/console-filter-sidebar-open.msft.png":::
+:::image type="complex" source="../media/console-filter-sidebar-open.msft.png" alt-text="控制台边栏显示源自于不同的源消息。" lightbox="../media/console-filter-sidebar-open.msft.png":::
     控制台 **边栏** 显示源自于的不同源消息
 :::image-end:::
 
 选择任意选项以仅显示该类型的消息。  例如，若要显示用户消息，请选择用户消息选项来显示更少的噪音。
 
-:::image type="complex" source="../media/console-filter-select-user-messages.msft.png" alt-text="选择使用边栏中的筛选器在控制台中仅显示用户消息" lightbox="../media/console-filter-select-user-messages.msft.png":::
+:::image type="complex" source="../media/console-filter-select-user-messages.msft.png" alt-text="选择使用边栏中的筛选器在控制台中仅显示用户消息。" lightbox="../media/console-filter-select-user-messages.msft.png":::
     选择使用边栏中的筛选器在 **控制台** 中仅显示 **用户消息**
 :::image-end:::
 
 若要筛选更多内容并展开选择，请选择它旁边的三角形图标。  这样，你将获得更多选择来仅显示来自特定源的邮件。
 
-:::image type="complex" source="../media/console-filter-sidebar-open-arrow.msft.png" alt-text="选择箭头图标可展开每个部分" lightbox="../media/console-filter-sidebar-open-arrow.msft.png":::
+:::image type="complex" source="../media/console-filter-sidebar-open-arrow.msft.png" alt-text="选择箭头图标可展开每个部分。" lightbox="../media/console-filter-sidebar-open-arrow.msft.png":::
     选择箭头图标可展开每个部分
 :::image-end:::
 
-:::image type="complex" source="../media/console-filter-user-message-by-source.msft.png" alt-text="选择任何使用类型和源进行筛选的新选项" lightbox="../media/console-filter-user-message-by-source.msft.png":::
+:::image type="complex" source="../media/console-filter-user-message-by-source.msft.png" alt-text="选择任何使用类型和源进行筛选的新选项。" lightbox="../media/console-filter-user-message-by-source.msft.png":::
     选择任何使用类型和源进行筛选的新选项
 :::image-end:::

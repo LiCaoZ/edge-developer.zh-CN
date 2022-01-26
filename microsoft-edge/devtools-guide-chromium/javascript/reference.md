@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 2a8899e221bee9ec9ef81cc8a4e3aaafbf0d4b4d
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: bf212075b78cc7a2062e13adcf2e420eda326923
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320975"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324284"
 ---
 <!-- Copyright Kayce Basques
 
@@ -43,9 +43,9 @@ ms.locfileid: "12320975"
 1.  导航到 **"源"** 工具。
 1.  在 **"导航器"** 窗格中，选择文件，以在"编辑器"窗格中 **打开** 它。
 1.  在" **编辑器"** 窗格中，编辑文件。
-1.  选择要 `Ctrl` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存。  然后，DevTools 将 JavaScript 文件加载至 Microsoft Edge 的 JavaScript 引擎。
+1.  选择 `Ctrl` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存。  然后，DevTools 将 JavaScript 文件加载至 Microsoft Edge 的 JavaScript 引擎。
 
-    :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="编辑器窗格" lightbox="../media/javascript-sources-html-minified.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="&quot;编辑器&quot;窗格。" lightbox="../media/javascript-sources-html-minified.msft.png":::
        “**编辑器**”窗格
     :::image-end:::
 
@@ -53,9 +53,9 @@ ms.locfileid: "12320975"
 <!-- ====================================================================== -->
 ## <a name="reformat-a-minified-javascript-file-with-pretty-print"></a>使用非常打印重新设置缩小的 JavaScript 文件
 
-若要使缩小的文件可读，请选择"编辑器"窗格 () "设置格式**** ![ ](../media/format-icon.msft.png) "**按钮**。
+若要使缩小的文件可读，请选择"设置 (格式"。) "窗格底部的"设置**** ![ ](../media/format-icon.msft.png) **格式"** 按钮。
 
-:::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="格式按钮" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
+:::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="&quot;格式&quot;按钮。" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
    “**格式**”按钮
 :::image-end:::
 
@@ -73,7 +73,7 @@ ms.locfileid: "12320975"
 1.  打开包含代码行的文件。
 1.  选择代码行的行号左侧的区域。  或者，右键单击行号，然后选择"**添加断点"。**  然后，行号旁边会出现一个红色圆圈，指示断点。
 
-    :::image type="complex" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="代码行断点" lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="代码行断点。" lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
        代码行断点
     :::image-end:::
 
@@ -87,9 +87,9 @@ ms.locfileid: "12320975"
 
 ### <a name="step-over-line-of-code"></a>逐步执行代码
 
-当暂停包含与正在调试的问题不相关的函数的代码行时，选择"单步执行 ** (**) "按钮以运行函数，而无需单 ![ ](../media/step-over-icon.msft.png) 步执行。
+当暂停包含与正在调试的问题不相关的函数的代码行时，请选择"单步执行 ** (** 单步执行"。) 按钮可运行函数，而无需单步 ![ ](../media/step-over-icon.msft.png) 执行。
 
-:::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="选择逐步执行" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
+:::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="选择&quot;逐步执行&quot;。" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
    选择“**逐步执行**”
 :::image-end:::
 
@@ -111,9 +111,9 @@ function getName() {
 
 ### <a name="step-into-line-of-code"></a>逐行执行代码
 
-当暂停包含与正在调试的问题相关的函数调用的代码行时，选择"单步执行 (单步执行****) "按钮以进一步调查该 ![ ](../media/step-into-icon.msft.png) 函数。
+当暂停包含与正在调试的问题相关的函数调用的代码行时，请选择"单步执行 (单步执行**** ![ ](../media/step-into-icon.msft.png) 。) "按钮以进一步调查该函数。
 
-:::image type="complex" source="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png" alt-text="选择逐行执行" lightbox="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png":::
+:::image type="complex" source="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png" alt-text="选择&quot;进入&quot;。" lightbox="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png":::
    选择“**逐行执行**”
 :::image-end:::
 
@@ -135,9 +135,9 @@ function getName() {
 
 ### <a name="step-out-of-line-of-code"></a>执行剩余代码
 
-当暂停在与正在调试的问题不相关的函数内时，选择"步骤 ** (** 步骤) "按钮以运行函数的其余 ![ ](../media/step-out-icon.msft.png) 代码。
+当暂停在与正在调试的问题不相关的函数内时，选择"步骤 (步骤"。) 按钮以运行函数的其余**** ![ ](../media/step-out-icon.msft.png) 代码。
 
-:::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="选择执行剩余" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
+:::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="选择&quot;退出&quot;。" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
    选择 **“执行剩余”**
 :::image-end:::
 
@@ -161,17 +161,17 @@ function getName() {
 
 调试长函数时，可能有许多代码与正在调试的问题不相关。
 
-你可以选择逐行执行，但这很繁琐。  您可以选择在感兴趣的行上设置代码行断点，然后选择"Resume **script execution** (Resume script ![ execution) "按钮，但有一种更快的方法 ](../media/resume-script-run-icon.msft.png) 。
+你可以选择逐行执行，但这很繁琐。  您可以选择在感兴趣的行上设置代码行断点，然后选择 Resume **脚本** 执行 (Resume 脚本执行。) 按钮，但有一种更快的方法 ![ ](../media/resume-script-run-icon.msft.png) 。
 
-将鼠标悬停在感兴趣的代码行上，打开上下文菜单 (右键单击") "，然后选择"继续**到此处"。**  DevTools 会运行所有代码，一直运行到该处，然后暂停到该行。
+将鼠标悬停在感兴趣的代码行上，打开上下文菜单 (右键单击") "，然后选择"继续**在此处"。**  DevTools 会运行所有代码，一直运行到该处，然后暂停到该行。
 
-:::image type="complex" source="../media/javascript-source-page-continue-to-here.msft.png" alt-text="选择继续至此处" lightbox="../media/javascript-source-page-continue-to-here.msft.png":::
+:::image type="complex" source="../media/javascript-source-page-continue-to-here.msft.png" alt-text="选择&quot;继续&quot;至此处。" lightbox="../media/javascript-source-page-continue-to-here.msft.png":::
    选择“**继续至此处**”
 :::image-end:::
 
 ### <a name="restart-the-top-function-of-the-call-stack"></a>重新启动调用的顶部函数
 
-若要暂停调用堆栈中顶部函数的第一行，而暂停在代码行上，请将鼠标悬停在"调用堆栈"窗格中的任意位置****，打开上下文菜单 (右键单击") "，然后选择"**重新启动**帧"。  top 函数是最后一个运行的函数。
+若要暂停调用堆栈中顶部函数的第一行，而暂停在代码行上，请将鼠标悬停在"调用堆栈"窗格中的任意位置****，打开上下文菜单 (右键单击) ，然后选择"**重新启动**帧"。  top 函数是最后一个运行的函数。
 
 下面的代码段是一个分步执行示例。
 
@@ -187,23 +187,23 @@ function factorial(n) {
 
 你已在 `A` 上暂停。  选择"**重新启动帧**"后，应暂停在 上，而不会设置断 `B` 点或选择 **"恢复脚本执行"。**
 
-:::image type="complex" source="../media/javascript-source-page-debugger-restart-frame.msft.png" alt-text="选择重启帧" lightbox="../media/javascript-source-page-debugger-restart-frame.msft.png":::
+:::image type="complex" source="../media/javascript-source-page-debugger-restart-frame.msft.png" alt-text="选择&quot;重启帧&quot;。" lightbox="../media/javascript-source-page-debugger-restart-frame.msft.png":::
    选择 **重启帧**
 :::image-end:::
 
 ### <a name="resume-script-runtime"></a>恢复脚本运行时
 
-若要在脚本暂停后继续运行时，请选择"恢复脚本执行**** ![ " ("恢复脚本) ](../media/resume-script-run-icon.msft.png) 按钮。  DevTools 将一直运行脚本，直到下一个断点（如果有）。
+若要在脚本暂停后继续运行时，请选择"恢复脚本执行 **" (** Resume 脚本执行"。) ![ ](../media/resume-script-run-icon.msft.png) 按钮。  DevTools 将一直运行脚本，直到下一个断点（如果有）。
 
-:::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="选择恢复脚本执行" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
+:::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="选择&quot;恢复脚本执行&quot;。" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
    选择“**恢复脚本执行**”
 :::image-end:::
 
 #### <a name="force-script-runtime"></a>强制脚本运行时
 
-若要忽略所有断点并强制脚本继续运行，请选择并按住 Resume script **execution** (Resume script execution) 按钮，然后选择"强制脚本执行 ![ (强制脚本执行 ](../media/resume-script-run-icon.msft.png) **** ![ ](../media/force-script-run-icon.msft.png)) "按钮。
+若要忽略所有断点并强制脚本继续运行，请选择并按住**Resume 脚本**执行 (Resume 脚本执行。) 按钮，然后选择"强制脚本执行 (![ ](../media/resume-script-run-icon.msft.png) 强制脚本执行****"。) ![ 按钮。 ](../media/force-script-run-icon.msft.png)
 
-:::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="选择强制脚本执行" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
+:::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="选择&quot;强制脚本执行&quot;。" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
    选择“**强制脚本执行**”
 :::image-end:::
 
@@ -211,7 +211,7 @@ function factorial(n) {
 
 使用 Web 工作进程或服务工作进程时，选择“**线程**”窗格中列出的上下文以切换到该上下文。  蓝色箭头图标表示当前选定的上下文。
 
-:::image type="complex" source="../media/javascript-sources-main-min-js-threads.msft.png" alt-text="线程窗格" lightbox="../media/javascript-sources-main-min-js-threads.msft.png":::
+:::image type="complex" source="../media/javascript-sources-main-min-js-threads.msft.png" alt-text="&quot;线程&quot;窗格。" lightbox="../media/javascript-sources-main-min-js-threads.msft.png":::
    “**线程**”窗格
 :::image-end:::
 
@@ -226,7 +226,7 @@ function factorial(n) {
 *   双击某个属性值以更改该值。
 *   不可枚举的属性显示为灰色。
 
-:::image type="complex" source="../media/javascript-sources-get-started-js-scope.msft.png" alt-text="范围窗格" lightbox="../media/javascript-sources-get-started-js-scope.msft.png":::
+:::image type="complex" source="../media/javascript-sources-get-started-js-scope.msft.png" alt-text="&quot;范围&quot;窗格。" lightbox="../media/javascript-sources-get-started-js-scope.msft.png":::
    “**范围**”窗格
 :::image-end:::
 
@@ -236,13 +236,13 @@ function factorial(n) {
 
 使用“**监视**”窗格观察自定义表达式的值。  你可以观看任何有效的 JavaScript 表达式。
 
-:::image type="complex" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="监视窗格" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
+:::image type="complex" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="&quot;监视&quot;窗格。" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
    “**监视**”窗格
 :::image-end:::
 
-*   若要创建新的监视表达式，请选择"添加 **监视** 表达式 (![ 添加监视表达式 ](../media/add-expression-icon.msft.png)) 按钮。
-*   若要刷新所有现有表达式的值，请选择"刷新 (**** ![ 刷新) ](../media/refresh-icon.msft.png) 按钮。  逐步执行代码时，值将自动刷新。
-*   若要删除监视表达式，请右键单击该表达式，然后选择"**** 删除监视表达式 (![ 删除监视表达式 ](../media/delete-expression-icon.msft.png)) 。
+*   若要创建新的监视表达式，请选择"添加监视**** 表达式 (![ 添加监视表达式) ](../media/add-expression-icon.msft.png) 按钮。
+*   若要刷新所有现有表达式的值，请选择"刷新" ("刷新) **** ![ ](../media/refresh-icon.msft.png) 按钮。  逐步执行代码时，值将自动刷新。
+*   若要删除监视表达式，请右键单击该表达式，然后选择"**** 删除监视表达式 (![ 删除监视表达式 ](../media/delete-expression-icon.msft.png) 。) 。
 
 
 <!-- ====================================================================== -->
@@ -254,7 +254,7 @@ function factorial(n) {
 
 选择一个项以跳转到调用该函数的代码行。  蓝色箭头图标表示 DevTools 当前突出显示的函数。
 
-:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png" alt-text="调用堆叠窗格" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png":::
+:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png" alt-text="&quot;调用堆栈&quot;窗格。" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png":::
    “**调用堆叠**”窗格
 :::image-end:::
 
@@ -267,9 +267,9 @@ function factorial(n) {
 This should be moved to an "Export debug data" H2 section when there is enough content for that, but there is not right now, so it is here.
 -->
 
-若要将当前调用堆栈复制到剪贴板，请将鼠标悬停在"调用**** 堆栈"窗格中的任意位置，打开上下文菜单 (右键单击") "，然后选择"复制堆栈跟踪 **"。**
+若要将当前调用堆栈复制到剪贴板，请将鼠标悬停在"调用**** 堆栈"窗格中的任意位置，打开上下文菜单 (右键单击") "，然后选择"复制**堆栈跟踪"。**
 
-:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png" alt-text="选择复制堆叠跟踪" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png":::
+:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png" alt-text="选择&quot;复制堆栈跟踪&quot;。" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png":::
    选择“**复制堆叠跟踪**”
 :::image-end:::
 
@@ -302,10 +302,10 @@ function animate() {
 若要从编辑器窗格中**将脚本标记为****库代码：**
 
 1.  打开文件。
-1.  将鼠标悬停在任意位置并打开上下文菜单 (右键单击") "。
+1.  将鼠标悬停在任意位置并打开上下文菜单 (右键单击) 。
 1.  选择 **"添加脚本"忽略之前** (标记为**库代码的列表) 。**
 
-    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png" alt-text="在编辑器窗格中将脚本标记为库代码" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png":::
+    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png" alt-text="从编辑器窗格中将脚本标记为库代码。" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png":::
        从“**编辑器**”窗格中将脚本标记为**库代码**
     :::image-end:::
 
@@ -316,7 +316,7 @@ function animate() {
 1.  将鼠标悬停在脚本的函数上，然后打开上下文菜单 (右键单击) 。
 1.  选择 **"添加脚本"忽略之前** (标记为**库代码的列表) 。**
 
-    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="从调用堆叠窗格中将脚本标记为库代码" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
+    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="从&quot;调用堆栈&quot;窗格中将脚本标记为库代码。" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
        从**调用堆叠**窗格中将脚本标记为**库代码**
     :::image-end:::
 
@@ -330,7 +330,7 @@ function animate() {
 1.  输入脚本名称或脚本名称的正则表达式模式，以标记为**库代码**。
 1.  选择“**添加**”。
 
-    :::image type="complex" source="../media/javascript-framework-library-code.msft.png" alt-text="在设置中将脚本标记为库代码" lightbox="../media/javascript-framework-library-code.msft.png":::
+    :::image type="complex" source="../media/javascript-framework-library-code.msft.png" alt-text="将脚本标记为库中的库设置。" lightbox="../media/javascript-framework-library-code.msft.png":::
        在“**设置**”中将脚本标记为**库代码**
     :::image-end:::
 
@@ -356,4 +356,5 @@ function animate() {
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/reference)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

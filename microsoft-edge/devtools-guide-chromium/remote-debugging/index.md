@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: c0a76fde7c2574871bc06bea5946adfa677687ab
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: e2a5664b8d4ce50149571aeb6dd4c44c5c79c6ff
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320849"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323395"
 ---
 <!-- Copyright Kayce Basques
 
@@ -76,7 +76,7 @@ ms.locfileid: "12320849"
 使用以下提示可帮助你验证软件是否正确设置。
 
 *   如果你的开发计算机运行的是 Windows，请尝试手动为 Android 设备安装 USB 驱动程序。  有关详细信息，请参阅安装 [OEM USB 驱动程序](https://developer.android.com/tools/extras/oem-usb.html)。
-*   Windows Android (（特别是 Samsung) 设备）的一些组合需要其他设置。  有关详细信息，请参阅 [DevTools 设备在](https://stackoverflow.com/questions/21925992)插入 时检测设备。
+*   Windows Android 设备 (特别是 Samsung) 需要其他设置。  有关详细信息，请参阅 [DevTools 设备在](https://stackoverflow.com/questions/21925992)插入 时检测设备。
 
 如果 **Android 设备上** 未显示"允许 USB 调试"提示，请尝试：
 
@@ -113,14 +113,14 @@ The version of Microsoft Edge running on your Android device determines the vers
 
 转到 DevTools 实例的 **"** 元素"工具，将鼠标悬停在某个元素上以在 Android 设备的视口中突出显示它。
 
-还可以点击 Android 设备屏幕上的某个元素，以在"元素"工具 **中选择** 它。  单击 **"** 选择 (选择元素) ![ DevTools 实例上的"选择元素"图标，然后在 Android 设备屏幕上 ](../media/select-element-icon.msft.png) 选择元素。
+还可以点击 Android 设备屏幕上的某个元素，以在"元素"工具 **中选择** 它。  单击 **Select Element** (Select ![ Element。) 你的 DevTools 实例上的图标，然后选择 Android ](../media/select-element-icon.msft.png) 设备屏幕上的元素。
 
 > [!NOTE]
 > **Select Element** is disabled after the first selection， so you need to re-enable it every time you want to use this feature.
 
 ### <a name="screencast-your-android-screen-to-your-development-machine"></a>将 Android 屏幕截屏到开发计算机
 
-单击 **切换屏幕 (** 切换) 图标，在 DevTools 实例中查看 ![ ](../media/toggle-screencast-icon.msft.png) Android 设备的内容。
+单击 **切换屏幕 (** 切换屏幕) 图标，在 DevTools 实例中查看 ![ ](../media/toggle-screencast-icon.msft.png) Android 设备的内容。
 
 可以通过多种方式与屏幕广播交互：
 
@@ -142,4 +142,5 @@ The version of Microsoft Edge running on your Android device determines the vers
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

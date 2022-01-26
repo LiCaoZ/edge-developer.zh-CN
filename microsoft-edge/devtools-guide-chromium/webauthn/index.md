@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 99b862347df57dd84e0d07d327876f6d77c9dd85
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 0b320bdc1ae4869e50f42c6cfa8acfebadd16145
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320632"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323458"
 ---
 # <a name="emulate-authenticators-and-debug-webauthn"></a>模拟验证器并调试 WebAuthn
 
@@ -37,14 +37,14 @@ Web 身份验证 API 规范是开始使用 [Web 身份验证的一个很好的�
 1.  [打开 DevTools](../open/index.md)。
 1.  若要打开**WebAuthn**工具，请选择"自定义和控制**开发**工具" () "图标> `...` **更多工具**  >  **WebAuthn"。**
 
-    :::image type="complex" source="../media/webauthn-webauthn-tab.msft.png" alt-text="WebAuthn 工具" lightbox="../media/webauthn-webauthn-tab.msft.png":::
+    :::image type="complex" source="../media/webauthn-webauthn-tab.msft.png" alt-text="WebAuthn 工具。" lightbox="../media/webauthn-webauthn-tab.msft.png":::
        **WebAuthn** 工具
     :::image-end:::
 
 1.  在 **WebAuthn 工具** 中，打开" **启用虚拟验证器环境"** 复选框。
 1.  启用后，将显示名为 **"新建验证器"** 的新节。
 
-    :::image type="complex" source="../media/webauthn-enable-virtual-auth.msft.png" alt-text="启用虚拟验证器环境" lightbox="../media/webauthn-enable-virtual-auth.msft.png":::
+    :::image type="complex" source="../media/webauthn-enable-virtual-auth.msft.png" alt-text="启用虚拟验证器环境。" lightbox="../media/webauthn-enable-virtual-auth.msft.png":::
         **启用虚拟验证器环境**
     :::image-end:::
 
@@ -53,20 +53,20 @@ Web 身份验证 API 规范是开始使用 [Web 身份验证的一个很好的�
     | 选项 | Value | 详细信息 |
     |:--- |:--- |:--- |
     | `Protocol` | [ctap2](https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html) 或 [u2f](https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-u2f-overview-v1.2-ps-20170411.html) | 虚拟验证器用于编码和解码的协议 |
-    | `Transport` |   `usb``nfc` `ble` 、、、 或 `internal` | 虚拟验证器模拟所选传输以便与客户端通信，以获取特定凭据的断言。  有关详细信息，请导航到Authenticator[枚举](https://w3c.github.io/webauthn#enum-transport) |
-    |  `Supports resident keys` | 使用复选框 (或) 或关闭" | 如果 Web 应用依赖常驻密钥或 (客户端可发现凭据，请) 。  有关详细信息，请导航到 [Resident Key Requirement 枚举](https://w3c.github.io/webauthn#enum-residentKeyRequirement)。 |
+    | `Transport` |   `usb``nfc` `ble` 、、、 或 `internal` | 虚拟验证器模拟所选传输以便与客户端通信，以获取特定凭据的断言。  有关详细信息，请导航到["Authenticator枚举"](https://w3c.github.io/webauthn#enum-transport) |
+    |  `Supports resident keys` | 使用复选框 (或) 或关闭" | 如果 Web 应用依赖于常驻密钥， (也称为客户端可发现凭据) 。  有关详细信息，请导航到 [Resident Key Requirement 枚举](https://w3c.github.io/webauthn#enum-residentKeyRequirement)。 |
     | `Supports user verification` | 使用复选框 (或) 或关闭" | 如果 Web 应用依赖使用手势形式（如触摸和引脚代码、密码输入或生物识别识别）的本地授权，则打开。  有关详细信息，请导航到" [用户验证"](https://w3c.github.io/webauthn#user-verification) |
 
 1.  选择“添加”按钮****。
 1.  将显示新创建的验证器的新部分。
 
-    :::image type="complex" source="../media/webauthn-authenticator.msft.png" alt-text="Authenticator" lightbox="../media/webauthn-authenticator.msft.png":::
+    :::image type="complex" source="../media/webauthn-authenticator.msft.png" alt-text="Authenticator。" lightbox="../media/webauthn-authenticator.msft.png":::
        Authenticator
     :::image-end:::
 
 The **Authenticator** section includes a **Credentials** table.  在将凭据注册到验证器之前，该表为空。
 
-:::image type="complex" source="../media/webauthn-no-cred.msft.png" alt-text="无凭据" lightbox="../media/webauthn-no-cred.msft.png":::
+:::image type="complex" source="../media/webauthn-no-cred.msft.png" alt-text="无凭据。" lightbox="../media/webauthn-no-cred.msft.png":::
    无凭据
 :::image-end:::
 
@@ -79,7 +79,7 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
 1.  在演示网站上，选择"**注册新凭据"。**
 1.  此时，新的凭据将添加到 WebAuthn 工具中的 **Credentials** 表中。
 
-    :::image type="complex" source="../media/webauthn-view-cred.msft.png" alt-text="查看凭据" lightbox="../media/webauthn-view-cred.msft.png":::
+    :::image type="complex" source="../media/webauthn-view-cred.msft.png" alt-text="查看凭据。" lightbox="../media/webauthn-view-cred.msft.png":::
        查看凭据
     :::image-end:::
 
@@ -91,7 +91,7 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
 
 若要导出或删除凭据，请选择"导出 **"** 或" **删除"** 按钮。
 
-:::image type="complex" source="../media/webauthn-export-remove.msft.png" alt-text="导出或删除凭据" lightbox="../media/webauthn-export-remove.msft.png":::
+:::image type="complex" source="../media/webauthn-export-remove.msft.png" alt-text="导出或删除凭据。" lightbox="../media/webauthn-export-remove.msft.png":::
    导出或删除凭据
 :::image-end:::
 
@@ -104,7 +104,7 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
 1.  在验证器名称旁边，选择"编辑 **"** 按钮。
 1.  编辑名称，然后选择 **Enter** 以保存更改。
 
-:::image type="complex" source="../media/webauthn-rename.msft.png" alt-text="重命名验证器" lightbox="../media/webauthn-rename.msft.png":::
+:::image type="complex" source="../media/webauthn-rename.msft.png" alt-text="重命名验证器。" lightbox="../media/webauthn-rename.msft.png":::
    重命名验证器
 :::image-end:::
 
@@ -117,7 +117,7 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
 > [!NOTE]
 > DevTools 在任意时间点仅支持一个活动的虚拟验证器。  如果删除活动验证器，则不会自动激活另一个验证器。
 
-:::image type="complex" source="../media/webauthn-set-active.msft.png" alt-text="设置活动验证器" lightbox="../media/webauthn-set-active.msft.png":::
+:::image type="complex" source="../media/webauthn-set-active.msft.png" alt-text="设置活动验证器。" lightbox="../media/webauthn-set-active.msft.png":::
    设置活动验证器
 :::image-end:::
 
@@ -127,7 +127,7 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
 
 若要删除虚拟验证器，请选择验证器旁边的"删除 **"** 按钮。
 
-:::image type="complex" source="../media/webauthn-remove-authenticator.msft.png" alt-text="删除验证器" lightbox="../media/webauthn-remove-authenticator.msft.png":::
+:::image type="complex" source="../media/webauthn-remove-authenticator.msft.png" alt-text="删除验证器。" lightbox="../media/webauthn-remove-authenticator.msft.png":::
    删除验证器
 :::image-end:::
 
@@ -139,4 +139,5 @@ The **Authenticator** section includes a **Credentials** table.  在将凭据注
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/webauthn/index)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

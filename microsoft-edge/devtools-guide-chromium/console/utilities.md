@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: a8eaa42af2963f0402094f4ec22f1fb756400971
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: eb7348885cbdba09b40dc3509f33d95dbe1321b6
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319484"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324207"
 ---
 <!-- Copyright Kayce Basques
 
@@ -173,7 +173,7 @@ for (each in images) {
 
 用于 `$$()` 选择网页中指定元素之后显示的所有图像 `<div>` 并显示源：
 
-:::image type="content" source="../media/console-element-selector-image-filter-all.msft.png" alt-text="使用 $$ () 选择显示在网页中的 <div> 元素之后显示的所有图像，并显示源。" lightbox="../media/console-element-selector-image-filter-all.msft.png":::
+:::image type="content" source="../media/console-element-selector-image-filter-all.msft.png" alt-text="使用 $$ () 选择在网页中的 <div> 元素后显示的所有图像并显示源。" lightbox="../media/console-element-selector-image-filter-all.msft.png":::
 
 > [!NOTE]
 > 在 `Shift` + `Enter` 控制台**中选择，** 在不运行脚本的情况下启动新行。
@@ -742,4 +742,5 @@ values(object);
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/console/utilities)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

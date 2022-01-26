@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/30/2021
-ms.openlocfilehash: 6fb92b648dc35cf8969f4567ec2039c4733ff153
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 73c5c934551c5666be4aa5b30eafbdeaa0550f6c
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319694"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324390"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-93"></a>DevTools 中的新增功能（Microsoft Edge 93）
 
@@ -26,7 +26,7 @@ ms.locfileid: "12319694"
 
 除了现有的浅色和深色主题，Microsoft Edge DevTools 现在还支持Visual Studio Code中一些最常用的颜色主题。  若要选择颜色主题，请导航到 **"设置"，** 然后从"主题"下拉列表中选择 **一** 个主题。
 
-:::image type="complex" source="../../media/2021/07/all-devtools-themes.msft.png" alt-text="DevTools 的颜色主题" lightbox="../../media/2021/07/all-devtools-themes.msft.png":::
+:::image type="complex" source="../../media/2021/07/all-devtools-themes.msft.png" alt-text="DevTools 的颜色主题。" lightbox="../../media/2021/07/all-devtools-themes.msft.png":::
    DevTools 的颜色主题
 :::image-end:::
 
@@ -60,7 +60,7 @@ DOM 节点被视为"已分离">当不再附加到 DOM 的任何元素，但仍�
 
 新的 **分离元素** 工具在页面上查找所有分离的元素并显示它们。 可以展开和折叠分离的元素，以查看同时保留的父节点和子节点。 可以通过选择**收集垃圾**来触发浏览器的垃圾回收，并验证在无法对分离的元素进行垃圾回收时是否存在内存泄漏。 最后，可以通过使用  **Analyze** 按钮拍摄堆快照，跳转到引用分离元素的 JavaScript。
 
-:::image type="complex" source="../../media/2021/07/detached-elements-tool.msft.png" alt-text="分离的元素工具" lightbox="../../media/2021/07/detached-elements-tool.msft.png":::
+:::image type="complex" source="../../media/2021/07/detached-elements-tool.msft.png" alt-text="分离的元素工具。" lightbox="../../media/2021/07/detached-elements-tool.msft.png":::
 
    **分离的元素**工具
 :::image-end:::
@@ -79,7 +79,7 @@ DOM 节点被视为"已分离">当不再附加到 DOM 的任何元素，但仍�
 
 如果你在 Visual Studio Code 中使用 JavaScript 调试，你现在可以通过选择 **“检查”** 按钮来启动 **Visual Studio Code 扩展的 Microsoft Edge 开发人员工具**。
 
-:::image type="complex" source="../../media/2021/07/inspect-button.msft.png" alt-text="Visual Studio Code中的&quot;检查&quot;按钮以启动 DevTools 扩展" lightbox="../../media/2021/07/inspect-button.msft.png":::
+:::image type="complex" source="../../media/2021/07/inspect-button.msft.png" alt-text="&quot;检查&quot;按钮Visual Studio Code启动 DevTools 扩展。" lightbox="../../media/2021/07/inspect-button.msft.png":::
    Visual Studio Code中的" **检查** "按钮以启动 DevTools 扩展
 :::image-end:::
 
@@ -92,7 +92,7 @@ DOM 节点被视为"已分离">当不再附加到 DOM 的任何元素，但仍�
 
 有关改进和修复的更多详细信息，请检查`vscode-edge-devtools`存储库中的[更改日志文件](https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md)。
 
-:::image type="complex" source="../../media/2021/07/extension-integrated-debugger.msft.png" alt-text="与 Visual Studio Code 调试器工作流集成的 DevTools 扩展" lightbox="../../media/2021/07/extension-integrated-debugger.msft.png":::
+:::image type="complex" source="../../media/2021/07/extension-integrated-debugger.msft.png" alt-text="DevTools 扩展与调试Visual Studio Code集成。" lightbox="../../media/2021/07/extension-integrated-debugger.msft.png":::
    与 Visual Studio Code 调试器工作流集成的 DevTools 扩展
 :::image-end:::
 
@@ -107,7 +107,7 @@ DOM 节点被视为"已分离">当不再附加到 DOM 的任何元素，但仍�
 
 Microsoft Edge DevTools 采用了[Fluent UI](https://developer.microsoft.com/en-us/fluentui#/), 为按钮和菜单提供更现代的外观，从而更好地与Microsoft Edge浏览器的其余部分保持一致。
 
-:::image type="complex" source="../../media/2021/07/fluent-ui.msft.png" alt-text="使用 Fluent UI 设计实现的 DevTools" lightbox="../../media/2021/07/fluent-ui.msft.png":::
+:::image type="complex" source="../../media/2021/07/fluent-ui.msft.png" alt-text="使用自定义 UI 设计Fluent的 DevTools。" lightbox="../../media/2021/07/fluent-ui.msft.png":::
    使用 Fluent UI 设计实现的 DevTools
 :::image-end:::
 
@@ -158,7 +158,7 @@ Microsoft Edge DevTools 采用了[Fluent UI](https://developer.microsoft.com/en-
 
 在此版本中，我们重新设计了调试体验，以便你可以通过包含多个单独字段和控件的 UI 轻松修改用户代理客户端提示。  此外，现在可以同时测试自定义用户代理客户端提示和用户代理字符串。  现在可以在 **设置** 或 **网络条件**工具中为自定义设备定义用户代理客户端提示。
 
-:::image type="complex" source="../../media/2021/07/ua-client-hints-in-settings.msft.png" alt-text="在&quot;设置&quot;中定义自定义设备的用户代理客户端提示" lightbox="../../media/2021/07/ua-client-hints-in-settings.msft.png":::
+:::image type="complex" source="../../media/2021/07/ua-client-hints-in-settings.msft.png" alt-text="在User-Agent中定义自定义设备的客户端设置。" lightbox="../../media/2021/07/ua-client-hints-in-settings.msft.png":::
    在**设置**中定义自定义设备的用户代理客户端提示
 :::image-end:::
 
@@ -166,7 +166,7 @@ Microsoft Edge DevTools 采用了[Fluent UI](https://developer.microsoft.com/en-
 
 还可以使用 **网络条件** 工具替代当前页面的用户代理客户端提示。
 
-:::image type="complex" source="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png" alt-text="在网络条件工具中为自定义设备定义用户代理客户端提示" lightbox="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png":::
+:::image type="complex" source="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png" alt-text="在User-Agent条件工具中定义自定义设备的客户端提示。" lightbox="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png":::
    在 **网络条件** 工具中为自定义设备定义用户代理客户端提示
 :::image-end:::
 
@@ -202,7 +202,7 @@ Microsoft Edge DevTools 采用了[Fluent UI](https://developer.microsoft.com/en-
 
 现在，在 Microsoft Edge 版本 93 中，" **复制为 PowerShell"** 上下文菜单选项正确设置 DevTools 观察到的 User-Agent 字符串和 Cookie。  生成的 PowerShell 命令现在可以成功发出由 DevTools 观察到的相同网络请求，甚至可以向依赖于 Cookie 的服务器发出。
 
-:::image type="complex" source="../../media/2021/07/copy-as-powershell.msft.png" alt-text="&quot;复制为 PowerShell&quot;命令" lightbox="../../media/2021/07/copy-as-powershell.msft.png":::
+:::image type="complex" source="../../media/2021/07/copy-as-powershell.msft.png" alt-text="&quot;复制为 PowerShell&quot;命令。" lightbox="../../media/2021/07/copy-as-powershell.msft.png":::
    **"复制为 PowerShell"** 命令
 :::image-end:::
 
@@ -220,4 +220,5 @@ Microsoft Edge DevTools 采用了[Fluent UI](https://developer.microsoft.com/en-
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-93)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: d7eeac5c2bd52fd9c5e926d517769e45cb460dc6
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: a6bc22a510fa2d306ffc9fe524ef994d123f8771
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318763"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324606"
 ---
 <!-- Copyright Kayce Basques
 
@@ -50,7 +50,7 @@ DevTools 可以撤消停靠到单独的窗口，你可以移动到单独的监�
 <!-- ====================================================================== -->
 ## <a name="change-placement-from-the-main-menu"></a>从主菜单更改位置
 
-1.  单击"自定义和控制**DevTools** () "，然后选择"撤消停靠到单独的窗口" ("撤消停靠) "，选择"停靠到底部 (扩展坞到底部) "，或选择"扩展坞向左 (扩展坞向左 `...` **** ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png)) "。
+1.  单击"自定义和控制**DevTools** () "，然后选择"撤消停靠到单独的窗口" (""撤消停靠"。) ，从"扩展坞"到底部 (扩展坞到底部。) 或"扩展坞"向左移动 (扩展坞向左 `...` **** ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png) 。) 。
 
 :::image type="content" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="选择&quot;撤消停靠到单独的窗口&quot;。" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
 
@@ -77,4 +77,5 @@ DevTools 可以撤消停靠到单独的窗口，你可以移动到单独的监�
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/placement)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

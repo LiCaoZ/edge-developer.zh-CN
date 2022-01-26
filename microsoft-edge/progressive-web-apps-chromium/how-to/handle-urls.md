@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 ms.date: 01/12/2022
-ms.openlocfilehash: 500b2eeca1abf4ef4b59694d1d2b8fceeef32223
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: ffdecc7c809b1336b77e37c297a00124a41e53d2
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318651"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323297"
 ---
 # <a name="handle-urls-in-progressive-web-apps"></a>处理渐进式 Web 应用中的 URL
 
@@ -151,7 +151,7 @@ Microsoft Edge验证渐进式 Web 应用对已处理 URL 的所有权，以成�
 Windows你的应用可以处理 URL，但由于可能有其他应用可以处理 URL，Windows询问要使用哪个应用。 选择**DevTools 使用技巧**应用。 如果希望避免每次看到此对话框，请选择"**记住我的选择"。**
 
 > [!div class="mx-imgBorder"]
-> ![选择要在应用程序上处理 URL Windows。](../media/devtools-tips-url-handling-app-selection.png)
+> ![选择要处理 URL 的应用程序Windows。](../media/devtools-tips-url-handling-app-selection.png)
 
 DevTools 使用技巧启动并显示使用技巧页面。
 

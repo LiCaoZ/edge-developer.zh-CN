@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/03/2021
-ms.openlocfilehash: 6ab27735e8a6d3d53e3dce371debcb2b123d4ef5
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 4f0c7b5177b02c86ebe88ccb5e7f0f250c81ca13
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318112"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323885"
 ---
 # <a name="emulate-dark-or-light-schemes-in-the-rendered-page"></a>模拟呈现页面中的深色或浅色方案
 
@@ -29,13 +29,13 @@ ms.locfileid: "12318112"
 <!-- ====================================================================== -->
 ## <a name="emulating-dark-or-light-mode-using-the-rendering-tool"></a>使用呈现工具模拟深色或浅色模式
 
-1.  在 DevTools 中，打开呈现工具。  为此，请单击主工具栏或****" (") "更多工具"图标，然后选择"呈现 **"。**
+1.  在 DevTools 中，打开呈现工具。  为此，请单击主工具栏或**** (的"更多工具" () + 文件图标，然后选择"呈现 **"。**
     
     或者，如果呈现工具已打开，但已被隐藏，请单击工具栏上的"**** 更多选项卡 (>>) "图标，然后选择"呈现 **"。**
 
 1.  在模拟 **CSS 媒体功能 prefers-color-scheme** 下拉列表中，选择 **prefers-color-scheme： dark** or **prefers-color-scheme： light**。
 
-    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="使用呈现工具模拟深色或浅色模式" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="使用呈现工具模拟深色或浅色模式。" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
        使用呈现工具模拟深色或 **浅色** 模式
     :::image-end:::
 

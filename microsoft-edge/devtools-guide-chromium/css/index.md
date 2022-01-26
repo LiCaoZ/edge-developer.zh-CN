@@ -1,17 +1,17 @@
 ---
 title: 查看和更改 CSS 入门
-description: 了解如何使用 Microsoft Edge Tools 查看和更改页面的 CSS。
+description: 了解如何使用 Microsoft Edge工具查看和更改页面的 CSS。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 73f75e6d5a764826093aa0890b581312e8b7d5da
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: ae562dfe42ff98aaed05e6aaa4eba81dd9cf4b37
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320156"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323059"
 ---
 <!-- Copyright Kayce Basques
 
@@ -34,7 +34,7 @@ ms.locfileid: "12320156"
 <!-- ====================================================================== -->
 ## <a name="open-css-examples"></a>Open CSS 示例
 
-1.  按住 `Control` (Windows、Linux) 或 (`Command` macOS) ，然后单击 **"CSS**示例"以在一个新窗口中打开。
+1.  按住 `Control` (Windows、Linux) 或 `Command` (macOS) ，然后单击 **"CSS**示例"以在一个新窗口中打开。
 
     [CSS 示例](https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html)
 
@@ -179,7 +179,7 @@ ms.locfileid: "12320156"
 
 如果要调试或测试在 CSS 中定义的媒体查询，请使用以下步骤。
 
-1.  打开开发人员工具，然后选择第二**** 个位于左上方的"切换设备"工具栏图标，或选择 `Ctrl` + `Shift` + `M` `Cmd` + `Shift` + `M` " (macOS) "。
+1.  打开开发人员工具，选择左上方**** 第二个"切换设备"工具栏图标，或选择 `Ctrl` + `Shift` + `M` `Cmd` + `Shift` + `M` " (macOS) "。
 
     打开设备工具栏：
 
@@ -203,4 +203,5 @@ ms.locfileid: "12320156"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/css/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

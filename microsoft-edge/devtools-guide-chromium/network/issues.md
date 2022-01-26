@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 1ca6475765230d54dc2decc67e0dc56eda24df45
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: e83d192f683347b33438f7d886cc5667a289aca6
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319057"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12322849"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -42,7 +42,7 @@ ms.locfileid: "12319057"
 
 在下图的**瀑布图**中，`edge-iconx1024.msft.png` 资产的前六个请求同时开始。  后续请求将保持暂停，直到原来的六个请求中的一个完成。
 
-:::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="网络面板中排队或暂停系列的示例" lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
+:::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="网络面板中排队或停止的系列的示例。" lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
    **Network** 工具中排队或暂停系列的示例
 :::image-end:::
 
@@ -66,14 +66,14 @@ ms.locfileid: "12319057"
 
 下图中，**瀑布图**中的绿色条形图表示请求等待了很长时间。  这是使用限制网速并添加延迟的配置文件进行的模拟。
 
-:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="第一字节时间缓慢的请求示例" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
+:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="第一个字节时间较慢的请求示例。" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
    第一字节时间缓慢的请求示例
 :::image-end:::
 
 **原因**
 
 *   客户端和服务器之间的连接速度很慢。
-*   服务器响应缓慢。  在本地托管服务器，以确定是连接速度慢还是服务器速度慢。  如果访问本地服务器时 (到第一字节) TTFB，则服务器速度很慢。
+*   服务器响应缓慢。  在本地托管服务器，以确定是连接速度慢还是服务器速度慢。  如果在访问本地服务器时仍 (到第一字节) TTFB，则服务器速度很慢。
 
 **修补程序**
 
@@ -90,7 +90,7 @@ ms.locfileid: "12319057"
 
 下图中，png 旁**瀑布图**的蓝色条形图表示下载花费了很长时间。
 
-:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="下载耗时较长的请求示例" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
+:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="需要很长时间下载的请求示例。" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
    下载耗时较长的请求示例
 :::image-end:::
 
@@ -109,13 +109,14 @@ ms.locfileid: "12319057"
 Do you have a network issue that should be added to this guide?
 
 *   Send a tweet to [@EdgeDevTools](https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]).
-*   Choose **Send Feedback** (![Send Feedback](../media/smile-icon.msft.png)) in the DevTools or select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS) to provide feedback or feature requests.
+*   Choose **Send Feedback** (![Send Feedback.](../media/smile-icon.msft.png)) in the DevTools or select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS) to provide feedback or feature requests.
 *   [Open an issue](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D) on the docs repo.  -->
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/network/issues)由 (技术撰稿人[、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse) 和[House Garbee](https://developers.google.com/web/resources/contributors#jonathan-garbee) (Google Developer Expert for Web Technology) 创作。
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/network/issues)由 (技术编写者[、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse) 和[House Garbee](https://developers.google.com/web/resources/contributors#jonathan-garbee) (Google Developer Expert for Web Technology) 创作。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

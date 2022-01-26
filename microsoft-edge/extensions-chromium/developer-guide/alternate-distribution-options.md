@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/17/2021
-ms.openlocfilehash: bbe82f275bbe8c6753d32ecf994ea66c58f43cf1
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 00ecc80eb0e24bd9c18f7bc8e3404f771f3bdc20
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318833"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324074"
 ---
 # <a name="alternative-ways-to-distribute-extensions"></a>分发扩展的替代方法
 
@@ -22,8 +22,8 @@ ms.locfileid: "12318833"
 
 未从边缘加载项存储加载的扩展称为外部安装的扩展。 以下列表提供了分发外部安装的扩展的替代方法。
 
-*   请Windows注册表 (Windows注册表) 。
-*   在 macOS 和 Linux (使用首选项 JSON) 。
+*   请使用Windows注册表 (Windows注册表) 。
+*   将首选项 JSON 文件 (macOS 和 Linux) 。
 
 
 <!-- ====================================================================== -->
@@ -35,14 +35,14 @@ ms.locfileid: "12318833"
 
 1.  文件的文件 `.crx` 路径或扩展 `update_URL` 名的 。
 1.  扩展的版本。  版本信息在清单文件中提供，或在加载打包扩展Microsoft Edge在 中 `edge://extensions` 提供。
-1.  扩展的 ID。  在加载打包扩展后，Microsoft Edge ID `edge://extensions` 信息位于 以下版本。
+1.  扩展的 ID。  ID 信息在加载打包扩展Microsoft Edge在 的 Microsoft Edge `edge://extensions` 中可用。
 
 > [!NOTE]
 > 以下示例使用 `1.0` 作为 版本 和 `aaaaaaaaaabbbbbbbbbbcccccccccc` 作为 ID。
 
 
 <!-- ====================================================================== -->
-## <a name="use-the-windows-registry-windows-only"></a>使用Windows注册表 (Windows注册表) 
+## <a name="use-the-windows-registry-windows-only"></a>仅Windows注册表 (Windows注册表) 
 
 若要使用注册表Windows扩展，请执行以下步骤。
 
@@ -65,7 +65,7 @@ ms.locfileid: "12318833"
 
 
 <!-- ====================================================================== -->
-## <a name="use-a-preferences-json-file-macos-and-linux"></a>在 macOS 和 Linux (使用首选项 JSON) 
+## <a name="use-a-preferences-json-file-macos-and-linux"></a>将首选项 JSON 文件 (macOS 和 Linux) 
 
 若要使用首选项 JSON 文件分发扩展名，请执行以下步骤。
 
@@ -123,7 +123,7 @@ ms.locfileid: "12318833"
     }
     ```
 
-1.  导航到 ，验证扩展Microsoft Edge安装于 中 `edge://extensions` 。
+1.  通过导航到 ，验证扩展Microsoft Edge安装于 中 `edge://extensions` 。
 
 
 <!-- ====================================================================== -->
@@ -140,4 +140,5 @@ Microsoft Edge浏览器每次启动时扫描注册表中的元数据条目，并
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。  原始页面位于 [此处](https://developer.chrome.com/apps/external_extensions)。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

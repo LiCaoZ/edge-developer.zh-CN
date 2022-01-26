@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 6f0715bd358c31d48cceac30139e3dd33c3819d7
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 2f895763317e05571cfd238103c56c589f6ce7d2
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12317916"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323675"
 ---
 <!-- Copyright Kayce Basques
 
@@ -93,9 +93,9 @@ ms.locfileid: "12317916"
    python -m http.server # Python 3
    ```
 
-1.  在网站中Microsoft Edge一个选项卡，然后导航到本地托管的网站版本。  你应该能够使用 URL（如 或 ） `localhost:8080` 访问 `http://0.0.0.0:8080` 它。  确切的 [端口号](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) 可能不同。
+1.  打开网站Microsoft Edge并导航到本地托管的网站版本。  你应该能够使用 URL（如 或 ） `localhost:8080` 访问 `http://0.0.0.0:8080` 它。  确切的 [端口号](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) 可能不同。
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="演示" lightbox="../media/workspaces-workspaces-demo.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="演示。" lightbox="../media/workspaces-workspaces-demo.msft.png":::
        演示
     :::image-end:::
 
@@ -103,14 +103,14 @@ ms.locfileid: "12317916"
 
 1.  选择 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS) 打开 DevTools**** 的控制台面板。
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="控制台面板" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="控制台面板。" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        控制台**面板**
     :::image-end:::
 
 1.  导航到 **"源"** 工具。
 1.  在左侧 **导航器** (窗格中 **，) "文件系统"** 选项卡。
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="&quot;文件系统&quot;选项卡" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="&quot;文件系统&quot;选项卡。" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
        " **文件系统"** 选项卡
     :::image-end:::
 
@@ -119,7 +119,7 @@ ms.locfileid: "12317916"
 1.  选择 **"** 允许"以授予 DevTools 读取和写入目录的权限。
     在" **文件系统"** 选项卡中，现在，、 和 旁边将出现 `index.html` `script.js` 一个绿色点 `styles.css` 。  绿色点表示 DevTools 已建立页面的网络资源与 中的文件之间的映射 `~/Desktop/app` 。
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="&quot;文件系统&quot;选项卡现在指示本地文件和网络文件之间的映射" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="&quot;文件系统&quot;选项卡现在指示本地文件和网络文件之间的映射。" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
        " **文件系统** "选项卡现在指示本地文件和网络文件之间的映射
     :::image-end:::
 
@@ -132,7 +132,7 @@ ms.locfileid: "12317916"
     > [!NOTE]
     > `color`元素的 `h1` 属性设置为 `fuchsia` 。
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="在文本编辑器中查看 styles.css" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="在文本编辑器中查看 styles.css。" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
        在 `styles.css` 文本编辑器中查看
     :::image-end:::
 
@@ -140,7 +140,7 @@ ms.locfileid: "12317916"
 1.  将 元素的 `color` 属性值 `<h1>` 更改为你最喜爱的颜色。
     请记住，您需要选择 DOM 树中的 元素，才能在"样式"窗格中显示应用于它的 `<h1>` CSS**** 规则。 ****  旁边是绿色 `styles.css:1` 点，表示你进行的任何更改都映射到 `~/Desktop/app/styles.css` 。
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="文件链接的绿色指示器" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="文件链接的绿色指示器。" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
        文件链接的绿色指示器
     :::image-end:::
 
@@ -165,7 +165,7 @@ DOM 树不是 html。
 1.  Choose the **Elements** tool.
 1.  Choose and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempt to change html from the DOM Tree of the Elements panel" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempt to change html from the DOM Tree of the Elements panel." lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
        Attempt to change html from the DOM Tree of the **Elements** tool
     :::image-end:::
 
@@ -195,10 +195,10 @@ In short, the **DOM Tree** `!==` HTML.
 1.  在左侧 **导航器** (窗格中，) " **页面"** 选项卡。
 1.  选择** (索引) 。 **  将打开页面的 HTML。
 1.  将`<h1>Workspaces Demo</h1>`替换为`<h1>I ❤️  Cake</h1>`。  查看下图。
-1.  选择 `Control` + `S` (Windows、Linux) 或 (`Command` + `S` macOS) 保存更改。
+1.  选择 `Control` + `S` (Windows、Linux) 或 `Command` + `S` (macOS) 保存更改。
 1.  刷新页面。  `<h1>`刷新页面后，元素将继续显示新文本。
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从&quot;源&quot;工具更改 HTML" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从&quot;源&quot;工具更改 HTML。" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
        从"源"工具 **更改** HTML
     :::image-end:::
 
@@ -216,14 +216,14 @@ In short, the **DOM Tree** `!==` HTML.
 1.  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS)。  命令 **菜单将** 打开。
 1.  键入 `Quick Source` ，然后选择"显示**快速源"。**  在"DevTools"窗口底部，将显示"**** 快速源"工具，其中显示 的内容，这是你在"源"工具中编辑的最后 `index.html` **一**个文件。
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="使用命令菜单打开快速源工具" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="使用命令菜单打开快速源工具。" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
        使用 **命令菜单** 打开快速 **源工具**
     :::image-end:::
 
 1.  选择 `Control` + `P` (Windows、Linux) 或 `Command` + `P` (macOS) 以打开“**打开文件**”对话框。  查看下图。
 1.  键入 `script` ，然后选择 **"app/script.js"。 **
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件&quot;对话框打开文件" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件&quot;对话框打开文件。" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
        使用 `script.js` "打开 **文件"对话框** 打开
     :::image-end:::
 
@@ -243,7 +243,7 @@ In short, the **DOM Tree** `!==` HTML.
     > [!NOTE]
     > 页面上的链接现在为 italicized。
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="页面上的链接现在为 italicized" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="页面上的链接现在为 italicized。" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
        页面上的链接现在为 italicized
     :::image-end:::
 
@@ -259,4 +259,5 @@ In short, the **DOM Tree** `!==` HTML.
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/workspaces/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

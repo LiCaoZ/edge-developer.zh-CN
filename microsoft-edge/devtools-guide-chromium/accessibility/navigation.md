@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 5c31562fd5fcde4deef0b0757a13bd25458fc9c0
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 8b3f4301b48803d9991d92d4ca927556db81eadd
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318126"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323899"
 ---
 <!-- Copyright Rob Dodson
 
@@ -34,7 +34,7 @@ ms.locfileid: "12318126"
 
 本指南将指导你完成最可访问的工具和选项卡，并突出显示你可能会遇到的问题。
 
-DevTools 分为一系列工具。   (在命令 **菜单中**，工具称为面板 _。) _工具组织到主工具栏和箱工具栏上的 [ARIA](https://www.w3.org/TR/wai-aria-1.1/#tablist) 选项卡列表中。
+DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为面板 _。) _工具组织到主工具栏和箱工具栏上的[ARIA](https://www.w3.org/TR/wai-aria-1.1/#tablist)选项卡列表中。
 
 以下是工具示例：
 *   元素**工具**允许你[查看和更改 DOM 节点](../dom/index.md#navigate-the-dom-tree-with-a-keyboard)或[CSS。](../css/index.md)
@@ -102,7 +102,7 @@ To get started， navigate to [Open Microsoft Edge DevTools](../open/index.md). 
 
 ### <a name="copy-the-code-for-an-element-in-the-dom-tree"></a>复制 DOM 树中元素的代码
 
-1.  焦点在 **DOM**树中的节点上时，将鼠标悬停在节点上并打开上下文菜单 (右键单击") "。
+1.  焦点在 **DOM**树中的节点上时，将鼠标悬停在节点上，然后打开上下文菜单 (右键单击") "。
 1.  展开“**复制**”选项。
 1.  选择“**复制 outerHTML**”。
 
@@ -124,7 +124,7 @@ To get started， navigate to [Open Microsoft Edge DevTools](../open/index.md). 
 
 *   将焦点放在“**DOM 树**”中的节点上时，选择 `Enter` 以使其可以编辑。
 *   选择 `Tab` 以在属性值之间移动。  当听到该元素的名称（例如，`h2`）时，你会位于文本输入内，并且可以更改元素的类型。
-*   选择 `Control` + `Enter` (Windows、Linux) 或 (`Command` + `Enter` macOS) 接受更改。
+*   选择 `Control` + `Enter` (Windows、Linux) 或 `Command` + `Enter` (macOS) 接受更改。
 
 例如，当你键入并选择 (Windows、Linux) 或 (macOS) 时，元素的起始标记和结束标记 `h3` `Control` + `Enter` `Command` + `Enter` `h3` 会更改。
 
@@ -147,7 +147,7 @@ DOM **断点** 和 **属性** 选项卡不可通过键盘访问。
 
 在 **"样式** "窗格中查找用于筛选样式的控件，切换元素 (如 [：active](https://developer.mozilla.org/docs/Web/CSS/:active) 和 [：focus](https://developer.mozilla.org/docs/Web/CSS/:focus)) 、切换类和添加新类。  还有一个功能强大的样式检查工具，用于浏览和修改当前应用于“**DOM 树**”中处于焦点的元素的样式。
 
-了解“**样式**”窗格的关键概念是它只显示“**DOM 树**”窗格中当前选中节点的样式。  例如，假设已完成对 `<header>` 节点样式的检查，并且现在希望查看 `<footer>` 节点的样式。  若要执行该操作，首先需要在“**DOM 树**”中选择 `<footer>` 节点。  您可能会发现使用"检查"工作流检查[](#inspect-an-element-on-the-page)位于节点 (（例如页脚) 中的链接）的节点会更快，这样会侧重于 `footer` **DOM 树**，然后使用键盘导航到您感兴趣的精确节点。
+了解“**样式**”窗格的关键概念是它只显示“**DOM 树**”窗格中当前选中节点的样式。  例如，假设已完成对 `<header>` 节点样式的检查，并且现在希望查看 `<footer>` 节点的样式。  若要执行该操作，首先需要在“**DOM 树**”中选择 `<footer>` 节点。  您可能会发现使用"检查"工作流检查[](#inspect-an-element-on-the-page)位于节点 (常规附近的节点会更快，例如页脚) 内的链接（它聚焦 `footer` **DOM 树**）中，然后使用键盘导航到您感兴趣的精确节点。
 
 #### <a name="navigate-the-styles-pane"></a>导航“样式”窗格
 
@@ -221,7 +221,7 @@ DOM **断点** 和 **属性** 选项卡不可通过键盘访问。
 
 **已知问题**
 
-*   对于 MacOS 屏幕阅读器（如**** VoiceOver）来说，"辅助功能"选项卡Microsoft Edge ARIA 树的类型可能未正确公开。 [](https://www.w3.org/TR/wai-aria-1.1/#tree)  订阅 [Chromium 问题 #868480](https://bugs.chromium.org/p/chromium/issues/detail?id=868480) 以获取有关此问题进展的通知。
+*   对于 macOS 屏幕阅读器（如**** VoiceOver）来说，"辅助功能"选项卡Microsoft Edge [ARIA](https://www.w3.org/TR/wai-aria-1.1/#tree)树的类型可能未正确公开。  订阅 [Chromium 问题 #868480](https://bugs.chromium.org/p/chromium/issues/detail?id=868480) 以获取有关此问题进展的通知。
 *   每个 **ARIA 属性** 和 **已计算属性** 部分都标记为 [ARIA 树](https://www.w3.org/TR/wai-aria-1.1/#tree)，但当前每个部分都不具有焦点管理且不可通过键盘操作。
 
 
@@ -252,6 +252,7 @@ Lighthouse 报告分为与每个审核类别对应的部分。  报告打开时�
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) 由 [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (Contributor、Google WebFundamentals) 。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) ，由 [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (Contributor、Google WebFundamentals 和) 。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

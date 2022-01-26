@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 19ba1d9a139f86ea4dbf62eb779ffd48bfda9d5c
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: fffe3771dd7677be6ce6b8de7e5066a268515998
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320380"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324347"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,7 +30,7 @@ ms.locfileid: "12320380"
 
 Microsoft Edge DevTools 中的“**覆盖范围**”面板可帮助你查找未使用的 JavaScript 和 CSS 代码。  删除未使用的代码可能会加快页面加载速度并保存移动用户的手机网络数据。
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="正在分析代码覆盖范围" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="分析代码范围。" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
    正在分析代码覆盖范围
 :::image-end:::
 
@@ -65,7 +65,7 @@ Microsoft Edge DevTools 中的“**覆盖范围**”面板可帮助你查找未�
 1.  [打开“命令”菜单](../command-menu/index.md)。
 1.  开始键入`coverage`，选择“**显示覆盖范围**”命令，然后选择`Enter`以运行该命令。  在“**工具箱**”中打开“**覆盖范围**”面板。
 
-    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="“覆盖范围”面板" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="覆盖面板。" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
        “**覆盖范围**”面板
     :::image-end:::
 
@@ -74,9 +74,9 @@ Microsoft Edge DevTools 中的“**覆盖范围**”面板可帮助你查找未�
 ## <a name="record-code-coverage"></a>记录代码覆盖范围
 
 1.  在“**覆盖范围**”面板中选择以下按钮之一。
-    *   如果你想要 **查看加载** 页面所需的代码， (开始检测覆盖和重新加载页面) 选择"开始检测覆盖范围和重新加载 ![ ](../media/reload-icon.msft.png) 页面"页面。
-    *   如果你想要 **查看** 与 (后使用的代码，请选择"检测范围) 检测 ![ ](../media/record-icon.msft.png) 范围"选项。
-1.  选择 **"停止检测** 覆盖范围"， ("停止检测覆盖"，) 记录代码覆盖范围时显示 ![ ](../media/stop-icon.msft.png) 结果"。
+    *   Choose **Start Instrumenting Coverage and Reload Page** (Start ![ Instrumenting Coverage and Reload Page. ](../media/reload-icon.msft.png)) if you want to review what code needed to load the page.
+    *   Choose **Instrument Coverage** (Instrument ![ Coverage.) if you want to review ](../media/record-icon.msft.png) what code is used after interacting with the page.
+1.  选择 **停止检测覆盖和** 显示结果 (停止检测覆盖和显示结果。) 停止记录代码 ![ ](../media/stop-icon.msft.png) 覆盖范围时显示。
 
 
 <!-- ====================================================================== -->
@@ -84,7 +84,7 @@ Microsoft Edge DevTools 中的“**覆盖范围**”面板可帮助你查找未�
 
 “**覆盖范围**”面板中的表显示已分析的资源，以及每个资源中使用的代码数。  选择一行以在"源"工具**** 中打开该资源，并查看已用代码和未使用代码的行细分。
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="代码覆盖范围报告" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="代码覆盖报告。" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
    代码覆盖范围报告
 :::image-end:::
 
@@ -100,4 +100,5 @@ Microsoft Edge DevTools 中的“**覆盖范围**”面板可帮助你查找未�
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/coverage/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
-ms.openlocfilehash: fa43e095ef01e6cc4d180d5885c3c7ce2e49c25f
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 52710e66680759ce74a5219cfec7010a5932857a
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318903"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323528"
 ---
 # <a name="run-javascript-in-the-console"></a>在控制台中运行 JavaScript
 
@@ -31,7 +31,7 @@ ms.locfileid: "12318903"
 
 如果按 `Enter` ， **控制台** 将运行 JavaScript 命令，为你提供结果，并允许你编写下一个命令。
 
-:::image type="complex" source="../media/console-javascript-several-expressions.msft.png" alt-text="连续运行多个 JavaScript 表达式" lightbox="../media/console-javascript-several-expressions.msft.png":::
+:::image type="complex" source="../media/console-javascript-several-expressions.msft.png" alt-text="连续运行多个 JavaScript 表达式。" lightbox="../media/console-javascript-several-expressions.msft.png":::
    连续运行多个 JavaScript 表达式
 :::image-end:::
 
@@ -50,7 +50,7 @@ ms.locfileid: "12318903"
 1.  按 `Tab` 以输入 `document.body` 。
 1.  键入另 `.` 一个，获取当前网页正文中可用的可能属性和方法的大型列表。
 
-:::image type="complex" source="../media/console-javascript-autocomplete.msft.png" alt-text="JavaScript 表达式的控制台自动完成" lightbox="../media/console-javascript-autocomplete.msft.png":::
+:::image type="complex" source="../media/console-javascript-autocomplete.msft.png" alt-text="JavaScript 表达式的控制台自动完成。" lightbox="../media/console-javascript-autocomplete.msft.png":::
    **** JavaScript 表达式的控制台自动完成
 :::image-end:::
 
@@ -76,7 +76,7 @@ ms.locfileid: "12318903"
 
 如果在控制台中启动多行 **语句，它**将自动识别并缩进。  例如，如果启动带大括号的块语句。
 
-:::image type="complex" source="../media/console-javascript-automatic-lineindent.msft.png" alt-text="控制台已使用大括号和缩进来识别多行表达式" lightbox="../media/console-javascript-automatic-lineindent.msft.png":::
+:::image type="complex" source="../media/console-javascript-automatic-lineindent.msft.png" alt-text="控制台已使用大括号和缩进来识别多行表达式。" lightbox="../media/console-javascript-automatic-lineindent.msft.png":::
     **控制台** 已使用大括号和缩进来识别多行表达式
 :::image-end:::
 
@@ -97,13 +97,13 @@ ms.locfileid: "12318903"
     )).json();
     ```
 
-:::image type="complex" source="../media/console-javascript-top-level-await.msft.png" alt-text="控制台显示顶级异步提取请求的结果" lightbox="../media/console-javascript-top-level-await.msft.png":::
+:::image type="complex" source="../media/console-javascript-top-level-await.msft.png" alt-text="控制台显示顶级异步提取请求的结果。" lightbox="../media/console-javascript-top-level-await.msft.png":::
     **控制台** 显示顶级异步请求 `fetch` 的结果
 :::image-end:::
 
 这 10 个条目很难识别，因为会显示大量信息。  可以使用 log `console.table()` 方法仅接收您感兴趣的信息。
 
-:::image type="complex" source="../media/console-javascript-filtered-with-table.msft.png" alt-text="使用 console.table 以人工可读格式显示最后的结果" lightbox="../media/console-javascript-filtered-with-table.msft.png":::
+:::image type="complex" source="../media/console-javascript-filtered-with-table.msft.png" alt-text="使用 console.table 以人工可读格式显示最后的结果。" lightbox="../media/console-javascript-filtered-with-table.msft.png":::
     使用 可读格式显示最后的结果 `console.table`
 :::image-end:::
 

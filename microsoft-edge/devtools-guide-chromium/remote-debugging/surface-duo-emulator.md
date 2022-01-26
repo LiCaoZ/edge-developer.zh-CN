@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/25/2021
-ms.openlocfilehash: c5bb757f09ceda25e77ebbfe6c13c0eef1c9c937
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 5f031894e5249ddbd9f4fc61c76da48804fe1cae
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320478"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12323332"
 ---
 # <a name="get-started-with-remote-debugging-surface-duo-emulators"></a>远程调试 Surface Duo 仿真器入门
 
@@ -42,7 +42,7 @@ ms.locfileid: "12320478"
 
 启动 [Surface Duo 仿真程序](/dual-screen/android/use-emulator)。  请注意，仿真程序显示 2 个在仿真程序上运行的不同屏幕。
 
-:::image type="complex" source="../media/remote-debugging-surface-duo-emulator.msft.png" alt-text="Surface Duo 仿真程序" lightbox="../media/remote-debugging-surface-duo-emulator.msft.png":::
+:::image type="complex" source="../media/remote-debugging-surface-duo-emulator.msft.png" alt-text="Surface Duo 仿真器。" lightbox="../media/remote-debugging-surface-duo-emulator.msft.png":::
    Surface Duo 仿真程序
 :::image-end:::
 
@@ -52,7 +52,7 @@ ms.locfileid: "12320478"
 
 在任一屏幕上，将 [Surface Duo 仿真程序](/dual-screen/android/use-emulator)的“收藏夹托盘”上向上轻扫，以显示“应用抽屉”。  选择 **Edge** 以启动 [Microsoft Edge 应用程序](https://play.google.com/store/apps/details?id=com.microsoft.emmx)。
 
-:::image type="complex" source="../media/remote-debugging-surface-duo-emulator-edge.msft.png" alt-text="Surface Duo 仿真程序上的 Microsoft Edge 应用" lightbox="../media/remote-debugging-surface-duo-emulator-edge.msft.png":::
+:::image type="complex" source="../media/remote-debugging-surface-duo-emulator-edge.msft.png" alt-text="Surface duo Microsoft Edge上的应用。" lightbox="../media/remote-debugging-surface-duo-emulator-edge.msft.png":::
    Surface Duo 仿真程序上的 Microsoft Edge 应用
 :::image-end:::
 
@@ -71,9 +71,9 @@ ms.locfileid: "12320478"
 > [!NOTE]
 > 如果在 `edge://inspect` 页上未显示 **SurfaceDuoEmulator**，请尝试在 [Surface Duo 仿真程序](/dual-screen/android/use-emulator)上的 [Microsoft Edge应用程序](https://play.google.com/store/apps/details?id=com.microsoft.emmx)中打开或关闭选项卡。  有关其他疑难解答步骤，请导航到 [Android 设备的疑难解答部分](./index.md#troubleshooting-devtools-is-not-detecting-the-android-device)。
 
-从模拟器上运行的打开的选项卡列表中，在具有要调试的 Web 内容的选项卡上选择“**检查**”。  [Microsoft Edge 开发工具](../index.md)将在新窗口中打开。  选择**切换屏幕 (** 切换) 切换屏幕视频"，在"开发工具"窗口中从 Surface Duo 模拟器查看 ![ ](../media/toggle-screencast-icon.msft.png) Web 内容。 [](/dual-screen/android/use-emulator)  现在可以使用 Microsoft Edge 开发工具在 [Surface Duo 仿真程序](/dual-screen/android/use-emulator)上调试 Web 内容。
+从模拟器上运行的打开的选项卡列表中，在具有要调试的 Web 内容的选项卡上选择“**检查**”。  [Microsoft Edge 开发工具](../index.md)将在新窗口中打开。  选择 **切换屏幕** (切换屏幕) 在 ![ ](../media/toggle-screencast-icon.msft.png) DevTools 窗口中查看 Surface [Duo](/dual-screen/android/use-emulator) 模拟器中的 Web 内容。  现在可以使用 Microsoft Edge 开发工具在 [Surface Duo 仿真程序](/dual-screen/android/use-emulator)上调试 Web 内容。
 
-:::image type="complex" source="../media/remote-debugging-surface-duo-devtools.msft.png" alt-text="使用 Microsoft Edge 开发工具在 Surface Duo 仿真程序的 Microsoft Edge 应用程序中调试 Bing" lightbox="../media/remote-debugging-surface-duo-devtools.msft.png":::
+:::image type="complex" source="../media/remote-debugging-surface-duo-devtools.msft.png" alt-text="使用 Microsoft Edge DevTools 在 Surface Duo 必应上的 Microsoft Edge 应用中调试应用。" lightbox="../media/remote-debugging-surface-duo-devtools.msft.png":::
    使用 Microsoft Edge 开发工具在 Surface Duo 仿真程序的 Microsoft Edge 应用程序中调试 Bing
 :::image-end:::
 
