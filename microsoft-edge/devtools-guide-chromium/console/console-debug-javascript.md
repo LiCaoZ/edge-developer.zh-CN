@@ -6,14 +6,14 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
-ms.openlocfilehash: 8b446cf14aeb78eaaa067d89d17a9f456631cce3
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 4cf315f186ea28a0a17226d48ebad512a7378084
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318532"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325464"
 ---
-# <a name="fixing-javascript-errors-that-are-reported-in-the-console"></a>修复控制台中报告的 JavaScript 错误
+# <a name="fix-javascript-errors-that-are-reported-in-the-console"></a>修复控制台中报告的 JavaScript 错误
 
 本文介绍解决控制台中报告的 JavaScript 错误。  有关用于 **显示和解决** 错误消息的控制台的常规用途，请参阅 [控制台概述](index.md)。
 
@@ -73,7 +73,7 @@ ms.locfileid: "12318532"
 
 :::image type="content" source="../media/console-debug-network-error-network-detail.msft.png" alt-text="检查&quot;网络&quot;工具中的标头可能会提供更多信息。" lightbox="../media/console-debug-network-error-network-detail.msft.png":::
 
-问题是什么？  在请求的 URI () 两个斜杠 `//` 字符 `repos` 。  打开" **源"** 工具并检查第 26 行。  尾部斜杠 () URI 的末尾 `/` 出现。
+问题是什么？  在请求的 `//` URI () 两个斜杠字符 `repos` 。  打开" **源"** 工具并检查第 26 行。  尾部斜杠 () URI 的末尾 `/` 出现。
 
 " **源** "工具显示包含错误的代码行：
 

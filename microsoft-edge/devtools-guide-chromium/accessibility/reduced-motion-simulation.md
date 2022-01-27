@@ -1,19 +1,19 @@
 ---
-title: 减少运动模拟
+title: 模拟运动减少
 description: 使用开发人员工具模拟运动减少。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: bcf42a90371c8f08ecd88bab1194700015098360
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: d7fc84261fa8fa43f040857a2da15d5fa46f3d73
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323241"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325261"
 ---
-# <a name="reduced-motion-simulation"></a>减少运动模拟
+# <a name="simulate-reduced-motion"></a>模拟运动减少
 
 Web 产品中的动画可能是一个辅助功能问题。  操作系统通过包括关闭动画的选项来解决此问题，以避免用户混淆和潜在的健康相关问题，例如触发癫痫。
 

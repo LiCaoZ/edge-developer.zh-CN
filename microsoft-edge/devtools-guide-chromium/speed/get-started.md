@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: f71b226d050363af8f2766d8678b047b222f1880
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 1081543b67bd78d3e8ba7385aa87c05b03070fd6
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323353"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325548"
 ---
 <!-- Copyright Kayce Basques
 
@@ -86,7 +86,7 @@ ms.locfileid: "12323353"
        开发人员工具和演示
     :::image-end:::
 
-对于本教程中的其余屏幕截图，开发人员工具显示在单独窗口中。  选择 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) `Undock` **** 打开"命令菜单"，键入 ，然后选择"在单独的窗口中取消停靠"。
+对于本教程中的其余屏幕截图，开发人员工具显示在单独窗口中。  选择 `Control` (Windows、Linux) 或 (macOS) 打开"命令菜单"，键入 ，然后选择 + `Shift` + `P` `Command` + `Shift` + `P` `Undock` "取消停靠到**单独的窗口中"。**
 
 :::image type="complex" source="../media/speed-console.msft.png" alt-text="取消停靠的 DevTools。" lightbox="../media/speed-console.msft.png":::
    移除的开发人员工具
@@ -96,7 +96,7 @@ ms.locfileid: "12323353"
 
 基线是指在改进性能之前有关站点执行情况的记录。
 
-1.  选择**审核**工具。  它可能隐藏在"更多面板**** ![ " (""更多面板") ](../media/more-panels-icon.msft.png) 按钮。  此面板包含"灯塔"，因为支持“审核”面板的项目名为**灯塔**。
+1.  选择**审核**工具。  它可能隐藏在" **更多面板** ![ " (""更多面板") ](../media/more-panels-icon.msft.png) 按钮。  此面板包含"灯塔"，因为支持“审核”面板的项目名为**灯塔**。
 
     [!INCLUDE [audits-panel-note](../includes/audits-panel-note.md)]
 
@@ -282,7 +282,7 @@ ms.locfileid: "12323353"
 再次审核页面，测量文本压缩对页面加载性能的影响类型：
 
 1.  选择**审核**工具。
-1.  选择 **"执行审核 (** ![ 执行审核 ](../media/perform-icon.msft.png) "。) 。
+1.  Choose **Perform an audit (** Perform an ![ audit. ](../media/perform-icon.msft.png)) .
 1.  保留设置与之前相同。
 1.  选择**运行审核**。
 
@@ -493,12 +493,11 @@ ms.locfileid: "12323353"
 
 最后更改似乎大幅提升了性能！
 
-> [!NOTE]
-> 此部分简要介绍了“性能”面板。  若要详细了解如何分析页面性能，请参阅 [性能功能参考](../evaluate-performance/reference.md)。
+本节简要介绍了性能工具。  若要详细了解如何分析页面性能，请参阅性能[功能参考) 。 ](../evaluate-performance/reference.md)
 
 #### <a name="doing-less-main-thread-work-in-the-real-world"></a>在现实世界中减少主线程工作
 
-通常， **性能**工具作为最常用的方法，可以了解站点在加载时执行哪些活动，以及找到删除不必要活动的方法。
+性能 **工具** 是了解您的网站在加载时执行哪些活动以及查找删除不必要活动的方法的最常见方法。
 
 如果你倾向于更像`console.log()`的方法，则[用户计时 API](https://developer.mozilla.org/docs/Web/API/User_Timing_API)将允许你任意标记应用生命周期的某些阶段，从而跟踪每个阶段花费的时间。
 
@@ -524,5 +523,5 @@ ms.locfileid: "12323353"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/speed/get-started)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

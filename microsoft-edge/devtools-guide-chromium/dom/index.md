@@ -1,17 +1,17 @@
 ---
-title: 查看和更改 DOM 入门
+title: 开始查看和更改 DOM
 description: 如何查看节点、搜索节点、编辑节点、引用控制台中的节点、中断节点更改等。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/29/2021
-ms.openlocfilehash: f68ddae0f4ff7d9d08bc65ec2807e2269f7a77ec
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 69a47e3058e7f6cecfa81c820f5e6a5b44590703
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323766"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325919"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,9 +26,9 @@ ms.locfileid: "12323766"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="get-started-with-viewing-and-changing-the-dom"></a>查看和更改 DOM 入门
+# <a name="get-started-viewing-and-changing-the-dom"></a>开始查看和更改 DOM
 
-按照这些交互式教程了解使用 DevTools 查看和更改页面的文档 ([模型) ](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) DOM Microsoft Edge基础知识。
+按照这些交互式教程了解使用 DevTools 查看和更改[](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)页面的文档 (模型) DOM Microsoft Edge基础知识。
 
 本教程假定你知道 DOM 和 HTML 之间的区别。 有关[说明，请参阅附录：HTML 与 DOM。](#appendix-html-versus-the-dom)
 
@@ -36,7 +36,7 @@ ms.locfileid: "12323766"
 <!-- ====================================================================== -->
 ## <a name="open-dom-examples"></a>打开 DOM 示例
 
-1.  按住 `Control` (Windows、Linux) 或 (`Command` macOS) ，然后单击["DOM 示例](https://microsoft-edge-chromium-devtools.glitch.me/static/dom)"以打开新选项卡中的页面。
+1.  按住 `Control` (Windows、Linux) 或 `Command` (macOS) 然后单击["DOM 示例](https://microsoft-edge-chromium-devtools.glitch.me/static/dom)"以在新选项卡中打开该页面。
 
 
 <!-- ====================================================================== -->
@@ -58,13 +58,13 @@ ms.locfileid: "12323766"
 
         :::image type="content" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="突出显示&quot;一文&quot;节点。" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
 
-        1.  单击" **检查** (![ 检查 ](../media/inspect-icon.msft.png) "。) 工具"左上角的"检查"图标。
+        1.  单击" **检查** (![ 检查 ](../media/inspect-icon.msft.png) "。) 工具左上角的"检查"图标。
 
             :::image type="content" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="&quot;检查&quot;图标。" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
 
 1.  在 **"检查节点"下**，单击 **"东京** "文本。  现在，`<li>Tokyo</li>` 在 DOM 树中突出显示。
 
-检查节点也是查看和更改节点样式的第一步。  请参阅[入门和更改 CSS。](../css/index.md)
+检查节点也是查看和更改节点样式的第一步。  请参阅[开始查看和更改 CSS。](../css/index.md)
 
 ### <a name="navigate-the-dom-tree-with-a-keyboard"></a>使用键盘浏览 DOM 树
 
@@ -110,7 +110,7 @@ ms.locfileid: "12323766"
 
 1.  将光标焦点放在“**元素**”工具上。
 
-1.  按 `Control` + `F` (Windows、Linux) 或 (`Command` + `F` macOS) 。  搜索栏在 DOM 树的底部打开。
+1.  按 `Control` + `F` (Windows、Linux) 或 `Command` + `F` (macOS) 。  搜索栏在 DOM 树的底部打开。
 
 1.  键入 `The Moon is a Harsh Mistress`。  最后一句在 DOM 树中突出显示。
 
@@ -230,7 +230,7 @@ ms.locfileid: "12323766"
 
     1.  选择 `Delete` 键。  节点将被删除。
 
-    1.  选择 `Control` + `Z` (Windows、Linux) 或 (`Command` + `Z` macOS) 。  最后一个操作将被撤消，节点将重新出现。
+    1.  选择 `Control` + `Z` (Windows、Linux) 或 `Command` + `Z` (macOS) 。  最后一个操作将被撤消，节点将重新出现。
 
 
 <!-- ====================================================================== -->
@@ -327,11 +327,11 @@ ms.locfileid: "12323766"
 
 1.  在"**删除节点时中断"下**，右键单击 **"管理程序**"，然后选择"检查 **"。**
 
-    1.  在 DOM 树中，将鼠标悬停在 上，打开上下文菜单 (右键单击") "，然后选择"删除 `<li id="target">Neuromancer</li>` **节点时**  >  **中断"。**  如果 [选项未显示，](#appendix-missing-options) 请参阅附录：缺少选项。
+    1.  在 DOM 树中，将鼠标悬停在 上，打开上下文菜单 (右键单击") "，然后选择"删除 `<li id="target">Neuromancer</li>` **节点时**中断  >  **"。**  如果 [选项未显示，](#appendix-missing-options) 请参阅附录：缺少选项。
 
     1.  单击上面的 **"删除** "按钮。  开发人员工具将暂停页面并突出显示导致节点被删除的代码。
 
-    1.  选择 **"恢复脚本** (![ 恢复脚本 ](../media/resume-script-icon.msft.png) "。) 。
+    1.  选择 **"Resume Script** (![ Resume Script"。) 。 ](../media/resume-script-icon.msft.png)
 
 ### <a name="break-on-subtree-modifications"></a>中断子树修改
 
@@ -443,5 +443,5 @@ html
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/dom/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -1,19 +1,19 @@
 ---
-title: 性能监视器
+title: 使用性能监视器工具测量页面的运行时性能
 description: DevTools 中的性能监视器工具提供实时性能指标，以帮助调查性能问题。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/28/2021
-ms.openlocfilehash: 10394a60c60002cd83203b83a4817a5035ed46d0
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: be3b2bdc160e633a8acc5e0c2fb80acecc611be1
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319470"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325436"
 ---
-# <a name="performance-monitor"></a>性能监视器
+# <a name="measure-runtime-performance-of-a-page-using-the-performance-monitor-tool"></a>使用性能监视器工具测量页面的运行时性能
 
 在**DevTools** Microsoft Edge性能监视器工具获取网页的运行时性能实时视图。
 
@@ -48,7 +48,7 @@ ms.locfileid: "12319470"
 |---|---|
 | **CPU 使用率** | 网页使用的 CPU 百分比。  默认情况下显示。 |
 | **JS 堆大小** | 页面上 JavaScript 程序使用的内存量。  默认情况下显示。 |
-| **DOM 节点** | 浏览器中跨选项卡的 DOM 节点 (个) 。  默认情况下显示。 |
+| **DOM 节点** | 浏览器上的 DOM 节点数 (选项卡) 。  默认情况下显示。 |
 | **JS 事件侦听器** | 浏览器中跨选项卡的 JavaScript 事件侦听器 (数) 。 |
 | **文档** | 浏览器上的文档对象数 (选项卡) 。 |
 | **文档框架** | 浏览器上的文档框架数 (选项卡) 。 |

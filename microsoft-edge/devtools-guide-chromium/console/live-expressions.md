@@ -6,22 +6,25 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
-ms.openlocfilehash: 7140a61b186184958df10e8b842b8782e3d40d2b
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 8254aa2ebff5524a8a1f8e72607a8d9d4140f23b
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323787"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12326066"
 ---
 # <a name="monitor-changes-in-javascript-using-live-expressions"></a>使用 Live Expressions 监视 JavaScript 中的更改
 
-**实时表达式** 是监视进行大量更改的 JavaScript 表达式的一种很好的方法。    你可以将特定 JavaScript 表达式固定到控制台的顶部，而不是让许多控制台消息阅读和 **导航**。
+<!-- very short article in other repo:
+Watch JavaScript values in real-time with Live Expressions -->
+
+**实时表达式** 是监视进行大量更改的 JavaScript 表达式的一种很好的方法。    你可以将特定 JavaScript 表达式固定到控制台的顶部，而不是让许多控制台消息进行 **读取和导航**。
 
 
 <!-- ====================================================================== -->
 ## <a name="add-a-new-live-expression"></a>添加新实时表达式
 
-To start， choose the **Create live expression (** eye) button next to the **Filter** textbox.  选择它后，将显示一个文本框，供您在文本框中输入新表达式。
+To start， click the **Create live expression (** eye) icon next to the **Filter** textbox.  单击它后，将显示一个文本框，以在文本框中输入新的表达式。
 
 :::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="选择&quot;新建实时表达式&quot;按钮以打开文本框以键入表达式。" lightbox="../media/console-live-expressions-new.msft.png":::
     选择 `New live expression` 按钮以打开文本框以键入表达式
@@ -32,7 +35,7 @@ To start， choose the **Create live expression (** eye) button next to the **Fi
 1.  打开 **Live Expression** 文本框。
 1.  键入 `document.activeElement`。
 1.  若要保存表达式，请完成以下操作之一。
-    *   选择 `Control` + `Enter` (Windows、Linux) 或 `Command` + `Enter` (macOS) 。
+    *   选择 `Control` + `Enter` (Windows、Linux) 或 (`Command` + `Enter` macOS) 。
     *   在 **"Live Expression"文本框之外** 选择。
 
 表达式现在为活动表达式， `body` 并显示为结果。

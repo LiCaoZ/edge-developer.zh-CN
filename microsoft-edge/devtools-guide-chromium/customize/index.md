@@ -1,17 +1,17 @@
 ---
-title: 自定义 Microsoft Edge DevTools
+title: 自定义 DevTools
 description: 自定义开发人员工具Microsoft Edge列表。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: f1e953b27626cb9373452b3da64fed14ddd9fffc
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 15fd3515eafcb39aa273afcee5cd446208c437dc
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12324130"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325891"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,7 +26,7 @@ ms.locfileid: "12324130"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="customize-microsoft-edge-devtools"></a>自定义 Microsoft Edge DevTools
+# <a name="customize-devtools"></a>自定义 DevTools
 
 此页面列出了自定义 DevTools Microsoft Edge的方法。
 
@@ -65,7 +65,7 @@ The **Drawer** is a second panel where you can choose which tools to display.
        将工具从 **"箱"** 移到主面板
     :::image-end:::
 
-*   若要将工具从主面板移动到箱中，请将鼠标悬停在工具上，打开上下文菜单 (右键单击") 然后选择"移动到**底部"。**
+*   若要将工具从主面板移动到箱中，请将鼠标悬停在工具上，打开上下文菜单 (右键单击") "移动到**底部"。**
 
     :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="将工具从主面板移动到&quot;箱&quot;。" lightbox="../media/move-to-drawer.msft.png":::
        将工具从主面板移动到"箱 **"**
@@ -88,10 +88,10 @@ The **Drawer** is a second panel where you can choose which tools to display.
 <!-- ====================================================================== -->
 ## <a name="open-and-close-tools"></a>打开和关闭工具
 
-若要简化 DevTools 接口，默认情况下不会打开许多工具。 若要在主面板或"箱"中打开**** 工具，请选择"**** 更多工具 (更多工具"。) 选项卡右侧单击按钮，然后从列表中选择 ![ ](../media/open-tab-icon.png) 工具。
+若要简化 DevTools 接口，默认情况下不会打开许多工具。 若要在主面板或"箱"中打开**** 工具，请选择"**** 更多工具" ("更多工具"。) 选项卡右侧单击按钮，然后从列表中选择 ![ ](../media/open-tab-icon.png) 工具。
 
-:::image type="complex" source="../media/open-tool-in-main-panel-or-drawer.png" alt-text="&quot;更多工具 (+) &quot;按钮打开新工具" lightbox="../media/open-tool-in-main-panel-or-drawer.png":::
-   " **更多工具** `+` () 按钮打开新工具
+:::image type="complex" source="../media/open-tool-in-main-panel-or-drawer.png" alt-text="&quot;更多工具 (+) &quot;按钮以打开新工具" lightbox="../media/open-tool-in-main-panel-or-drawer.png":::
+   " **更多工具** `+` () "按钮打开新工具
 :::image-end:::
 
 若要关闭工具，请选择"关闭**** (![ 工具 ](../media/close-tab-icon.png) "。) "选项卡中的"关闭工具"按钮。
@@ -114,7 +114,7 @@ The **Drawer** is a second panel where you can choose which tools to display.
 <!-- ====================================================================== -->
 ## <a name="color-themes"></a>颜色主题
 
-导航到 [将颜色主题应用到 DevTools](./theme.md)。
+请参阅 [向 DevTools 应用颜色主题](./theme.md)。
 
 :::image type="complex" source="./media/customize-theme-setting.png" alt-text="选择其他颜色主题。" lightbox="./media/customize-theme-setting.png":::
    选择其他颜色主题
@@ -136,5 +136,5 @@ The **Drawer** is a second panel where you can choose which tools to display.
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

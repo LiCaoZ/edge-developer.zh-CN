@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 512856ca405d831d5f451be8f05ad2e8a8d1b62c
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: d4251ba81d5d17a23ecb593b7ce4152cb7b3cc1d
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12324081"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325576"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -126,7 +126,7 @@ ms.locfileid: "12324081"
 | 布局无效 | 对于布局记录，是导致布局失效的代码堆栈跟踪。 |
 | 需要布局的节点 | 对于布局记录，表示在启动中继之前标记为需要布局的节点数。  这些节点通常是开发人员代码无效的节点，以及中继根的向上路径。 |
 | 布局树大小 | 对于布局记录，中继根节点下的节点总数 (启动中继Microsoft Edge节点) 。 |
-| 布局范围 | 可能的值 `Partial` (重新布局边界是 DOM 或 的一 `Whole document`) 。 |
+| 布局范围 | 可能的值 (重版边界是 DOM 或 `Partial`) 的一部分 `Whole document` 。 |
 | 受影响的元素 | 对于"重新计算样式记录"，为受样式重新计算影响的元素数。 |
 | 样式无效 | 对于"重新计算样式"记录，提供导致样式无效的代码的堆栈跟踪。 |
 
@@ -148,13 +148,13 @@ ms.locfileid: "12324081"
 | 属性 | 说明 |
 |:--- |:--- |
 | 位置 | 对于画图，绘制矩形的 x 和 y 坐标。 |
-| 维度 | 对于画图事件，绘制区域的高度和宽度。 |
+| 维度 | 对于画图事件，为绘制区域的高度和宽度。 |
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference)由[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) and [Flavio 一](https://developers.google.com/web/resources/contributors#flavio-copes) (Full Stack Developer) 创作。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference) ，由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和 [Flavio Stack Developer](https://developers.google.com/web/resources/contributors#flavio-copes) (创作) 。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

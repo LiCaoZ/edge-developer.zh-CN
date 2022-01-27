@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/29/2021
-ms.openlocfilehash: 1faeccc8084b9b3bdd50e8a1ad80336ab047d50e
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 63abd2f29a8a56d33f76a5b1af03f72a7ef259a4
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323591"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12326052"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,7 +30,7 @@ ms.locfileid: "12323591"
 
 在以下与查看和更改 CSS 相关的 Microsoft Edge DevTools 功能综合参考中发现新的工作流。
 
-若要了解基础知识，请参阅查看和 [更改 CSS 入门](../css/index.md)。
+若要了解基础知识，请参阅[开始查看和更改 CSS。](../css/index.md)
 
 
 <!-- ====================================================================== -->
@@ -154,7 +154,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 **“覆盖”** 工具显示页面实际使用 CSS。
 
-1.  打开命令[菜单](../command-menu/index.md)，按 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) ，而 DevTools 具有焦点。
+1.  打开命令[菜单](../command-menu/index.md)，按 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS) ，而 DevTools 具有焦点。
 1.  开始键入 `coverage` 并选择 **“显示范围”**。  出现 **“覆盖”** 工具。
 
     从命令菜单打开"覆盖"选项卡：
@@ -165,7 +165,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
     :::image type="content" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="&quot;覆盖&quot;选项卡。" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
 
-1.  单击 **开始检测覆盖范围并刷新页面 (** ![ 开始检测范围并刷新页面 ](../media/refresh-icon.msft.png) 。) 。  页面刷新和"范围"**** 选项卡概述了浏览器加载的每个 (使用的 CSS 和 JavaScript) 。  绿色表示已使用的 CSS。  红色表示未使用的 CSS。
+1.  单击 **开始检测覆盖范围并刷新页面 (** ![ 开始检测范围并刷新页面 ](../media/refresh-icon.msft.png) 。) 。  页面刷新和"范围"**** 选项卡概述了从浏览器加载 (JavaScript) 使用多少 CSS 和 JavaScript。  绿色表示已使用的 CSS。  红色表示未使用的 CSS。
 
     使用和未使用 CSS (JavaScript) 概述：
 
@@ -243,7 +243,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 | `Alt`+`Up` (Windows、Linux) 或 `Option` + `Up` (macOS)  | 0.1 |
 | `Up` | 1 (0.1，如果当前值介于 -1 和 1 之间)  |
 | `Shift`+`Up` | 10 |
-| `Shift`+`Page Up` (Windows、Linux) 或 `Shift` + `Command` + `Up` (macOS)  | 100 |
+| `Shift`+`Page Up` (Windows、Linux) 或 (`Shift` + `Command` + `Up` macOS)  | 100 |
 
 若要缩小，请按 `Down` 键而不是 `Up` 键。
 
@@ -285,7 +285,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 ### <a name="choose-which-stylesheet-to-add-a-rule-to"></a>选择要添加规则的样式表
 
-添加新 [样式规则](#add-a-style-rule)时，单击并按住 New **Style Rule** (New Style Rule。) 选择要向哪个样式 ![ ](../media/new-style-rule-icon.msft.png) 表添加样式规则。
+添加新 [样式规则](#add-a-style-rule)时，单击并按住 New **Style Rule** (![ New Style Rule。) 选择要向哪个 ](../media/new-style-rule-icon.msft.png) 样式表添加样式规则。
 
 :::image type="content" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="选择样式表。" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
 
@@ -297,7 +297,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 1.  [显示 **“更多操作”** 工具栏](#reveal-the-more-actions-toolbar)。
 
-1.  Select **Insert Style Rule below (** Insert Style Rule below ![ icon. ](../media/new-style-rule-icon.msft.png)) .
+1.  在 **"插入样式规则 (** ![ 图标下选择"插入样式规则 ](../media/new-style-rule-icon.msft.png) "。) 。
 
 :::image type="content" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="在下方插入样式规则。" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
 
@@ -371,7 +371,7 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 
 1.  将鼠标悬停在要添加 `text-shadow` 声明的样式规则上。
 1.  [显示 **“更多操作”** 工具栏](#reveal-the-more-actions-toolbar)。
-1.  单击 **添加文本阴影** (![ 添加文本阴影图标 ](../media/add-text-shadow-icon.msft.png) 。) 。
+1.  单击 **"添加文本阴影** (![ 添加文本阴影图标 ](../media/add-text-shadow-icon.msft.png) 。) 。
 
 :::image type="content" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="添加文本阴影。" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
 
@@ -445,10 +445,6 @@ DevTools **元素** 工具可用于一次查看或更改一个元素的 CSS。  
 <!-- ====================================================================== -->
 ## <a name="change-angle-value-with-the-angle-clock"></a>使用角度时钟更改角度值
 
-<!--todo: finish formatting this section on the Angle clock.  Add 2 captures.  See What's New 88:
-https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools#new-css-angle-visualization-tools
--->
-
 Angle **Clock** 提供了一个 GUI，用于更改 CSS 属性值中的角度量。
 
 打开角度 **时钟**：
@@ -474,5 +470,5 @@ Angle **Clock** 提供了一个 GUI，用于更改 CSS 属性值中的角度量�
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/css/reference)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

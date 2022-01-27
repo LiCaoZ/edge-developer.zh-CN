@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/19/2021
-ms.openlocfilehash: 3d66883985b2df0f2ba96c542454b5e536f8ee45
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 7acd546c453652439fcc6ccb9804076a9a8ba048
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318147"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325247"
 ---
 # <a name="verify-that-the-webpage-layout-is-usable-when-narrow"></a>验证网页布局在缩小时是否可用
 
@@ -22,8 +22,11 @@ ms.locfileid: "12318147"
 可以通过调整浏览器窗口的大小来模拟较窄的视区，但测试设计响应性更好的方法就是使用 **设备仿真** 工具。  以下是设备仿真 **工具的一** 些功能，可帮助你查找任何网站的辅助功能问题：
 
 *  无需调整浏览器窗口的大小，即可调整页面大小并测试 CSS [媒体](../device-mode/index.md#show-media-queries) 查询是否触发布局更改。
-*  检查是否使用鼠标的依赖项。 默认情况下，设备仿真假定为触摸设备。 这意味着产品依赖于悬停交互的任何功能将不起作用。
+
+*  检查是否使用鼠标的依赖项。 默认情况下， **设备仿真** 假定为触摸设备。 这意味着产品依赖于悬停交互的任何功能将不起作用。
+
 *  通过模拟不同的设备、缩放级别和像素比率执行视觉测试。
+
 *  测试产品在不可靠连接或用户脱机时的行为方式。  在低速连接上向用户显示最重要的交互也是辅助功能注意事项。
 
-若要了解有关设备仿真**工具**的信息，请参阅在 Microsoft Edge [DevTools 中模拟移动设备](../device-mode/index.md)。
+若要了解有关设备仿真**工具**的信息，请参阅模拟移动设备[ (设备仿真) 。 ](../device-mode/index.md)

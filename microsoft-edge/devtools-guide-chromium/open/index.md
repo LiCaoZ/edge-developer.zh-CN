@@ -1,17 +1,17 @@
 ---
-title: 打开 Microsoft Edge DevTools
+title: 打开开发工具
 description: 在 DevTools 中打开Microsoft Edge所有方法。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/01/2021
-ms.openlocfilehash: 361c67ab4a0dd612e01e7b78d3056a019ffc89d0
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 1865a4725280314bfb839397a3ef1128aee0bb6a
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323381"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325555"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,27 +26,19 @@ ms.locfileid: "12323381"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
-# <a name="open-microsoft-edge-devtools"></a>打开 Microsoft Edge DevTools
+# <a name="open-devtools"></a>打开开发工具
 
-有许多方法可以打开 Microsoft Edge Tools，帮助你快速访问 DevTools UI 的不同部分。
-
-
-<!-- ====================================================================== -->
-## <a name="open-microsoft-edge-devtools"></a>打开 Microsoft Edge DevTools
-
-若要打开 DevTools，请使用以下任一选项。
+有几种方法可以打开 Microsoft Edge Tools，以快速访问 DevTools UI 的不同部分：
 
 *   使用 Microsoft Edge UI。
-    *  选择设置**工具开发人员工具**" () ">"图标和 `...` ****  >   **更多选项**。
+    *  在Microsoft Edge"中，**选择"设置""更多 () >"** `...` **工具**  >   **开发人员工具"。**
 
 *   使用键盘。
     *   按 `F12` 或 `Control` + `Shift` + `I` (Windows、Linux) 或 `Command` + `Option` + `I` (macOS) 。
 
-请参阅 [键盘快捷方式](../shortcuts/index.md)。
+另请参阅 [键盘快捷方式](../shortcuts/index.md)。
 
-:::image type="complex" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="从主菜单中打开&quot;Microsoft Edge工具&quot;。" lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
-   从主菜单中打开 devTools Microsoft Edge开发人员工具
-:::image-end:::
+:::image type="content" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="从主菜单打开 Microsoft Edge DevTools。" lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -110,7 +102,7 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 
 若要更改 `F12` 打开 DevTools 的键盘快捷方式设置，请完成以下操作：
 
-1.  导航到 `edge://settings/system`。
+1.  转到 `edge://settings/system` 。
 1.  In `Developer Tools` ， choose Open the **DevTools when the F12 key is pressed** to toggle the setting to off or on. 将设置切换为关闭以停止 `F12` 键盘快捷方式打开 DevTools。
 1.  将开关设置为关闭后，验证 `F12` 是否不再打开 DevTools。
 
@@ -123,5 +115,5 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/open)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

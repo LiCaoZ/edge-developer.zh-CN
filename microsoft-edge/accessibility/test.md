@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.assetid: 737ac54c-ad89-4b3f-bbe2-4e4169d3f364
 ms.date: 01/07/2021
-ms.openlocfilehash: 7742e93d935129355aa8c377a9ced38ee02c0424
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 6d6b6454ea3ff364be1e109a66f0801d7f7bc2ca
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318266"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325422"
 ---
 # <a name="resources-for-accessibility-testing"></a>辅助功能测试的资源
 
@@ -24,7 +24,7 @@ ms.locfileid: "12318266"
 <!-- ====================================================================== -->
 ## <a name="accessibility-testing-in-devtools"></a>DevTools 中的辅助功能测试
 
-*   [DevTools 中的](../devtools-guide-chromium/accessibility/reference.md) 辅助功能测试功能 - 要测试的辅助功能方面的列表，以及用于每个测试的 DevTools 功能。
+*   [辅助功能测试功能](../devtools-guide-chromium/accessibility/reference.md) - 要测试的辅助功能方面的列表，以及用于每个测试的 DevTools 功能。
 
 *   [使用 DevTools 的](../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md) 辅助功能测试概述 - 使用各种 DevTools 功能测试辅助功能问题的演练。
 
@@ -50,4 +50,4 @@ ms.locfileid: "12318266"
 
 *  [轻松检查 – Web 辅助功能](https://www.w3.org/WAI/eval/preliminary.html) 的首次评审 - 快速检查，可帮助您评估网页的辅助功能。
 
-*  [如何满足 WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref) - 快速参考 Web 内容辅助功能指南 (WCAG) 、要求、成功标准和技术。
+*  [如何满足 WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref) - 快速参考 Web 内容辅助功能指南 (WCAG) 、要求、成功条件和技术。

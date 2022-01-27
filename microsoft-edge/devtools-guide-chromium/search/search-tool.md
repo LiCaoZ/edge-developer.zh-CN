@@ -1,19 +1,19 @@
 ---
-title: 搜索面板
+title: 使用搜索工具查找页面的源文件
 description: DevTools Microsoft Edge中的搜索工具可帮助查找源文件。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/28/2021
-ms.openlocfilehash: 31a842083c2566da98ec8332119ca5be795aa7af
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 57a3e24d691d7bbab8570e05b0de1f6e0682a085
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323339"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325450"
 ---
-# <a name="the-search-panel"></a>搜索面板
+# <a name="find-source-files-for-a-page-using-the-search-tool"></a>使用搜索工具查找页面的源文件
 
 使用 **搜索** 工具查找网页的特定源文件。
 
@@ -29,7 +29,7 @@ ms.locfileid: "12323339"
 
 1.  [打开 DevTools](../open/index.md) (`F12`) 。
 
-1.  按 `Control` + `Shift` + `F` (Windows/Linux) 或 `Command` + `Option` + `F` (macOS) 。
+1.  按 `Control` + `Shift` + `F` (Windows/Linux) 或 (`Command` + `Option` + `F` macOS) 。
 
 The **Search** tool appears in the **Drawer**， and shows the search toolbar：
 
@@ -45,7 +45,7 @@ The **Search** tool appears in the **Drawer**， and shows the search toolbar：
 
 1.  [打开 DevTools](../open/index.md) (`F12`) 。
 
-1.  打开命令[菜单](../command-menu/index.md)，按 `Control` + `Shift` + `P` (Windows/Linux) 或 (`Command` + `Shift` + `P` macOS) 。
+1.  打开命令[菜单](../command-menu/index.md)，按 `Control` + `Shift` + `P` (Windows/Linux) 或 `Command` + `Shift` + `P` (macOS) 。
 
 1.  键入 `search` ，然后按 `Enter` 。
 
@@ -73,7 +73,7 @@ The **Search** tool appears in the **Drawer**， and shows the search toolbar：
 
 默认情况下， **搜索** 工具不区分大小写。  搜索词匹配该词的出现次数，无论小写还是大写字符。
 
-若要仅查找与特定大小写匹配的结果 (小写或大写) ，请单击搜索工具栏中的"区分大小写****" () " `Aa` 按钮。
+若要仅查找与特定大小写匹配的结果 (小写或大写) ，请单击搜索工具栏中的"区分大小写 () "**** `Aa` 按钮。
 
 
 <!-- ====================================================================== -->

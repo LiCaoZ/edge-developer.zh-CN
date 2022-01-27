@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 09/03/2021
-ms.openlocfilehash: c4b7e9bbfa99dbda1a65c6e73a1b389d1eba83a8
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 67835d908471c773c761bc536c2924bf47e9f0ee
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323941"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325569"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-94"></a>DevTools 中的新增功能 (Microsoft Edge 94)
 
@@ -71,7 +71,7 @@ ms.locfileid: "12323941"
 
 若要了解有关使用断点调试 JavaScript 代码的详细信息，请导航到“[使用断点暂停代码](../../../javascript/breakpoints.md)”。
 
-:::image type="complex" source="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png" alt-text="使用主题时，现在将显示断Visual Studio Code图标。" lightbox="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png":::
+:::image type="complex" source="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png" alt-text="断点图标现在在使用主题时Visual Studio Code显示。" lightbox="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png":::
    现在，使用 Visual Studio Code 主题时将显示断点图标
 :::image-end:::
 
@@ -86,7 +86,7 @@ ms.locfileid: "12323941"
 
 从 Microsoft Edge 版本 93 开始，当焦点位于工具栏上时，可以使用箭头键选择“**更多选项卡**”(`>>`) 按钮和“**更多工具**”按钮。
 
-若要了解有关如何使用键盘导航 DevTools 的详细信息，请参阅[键盘快捷方式](../../../shortcuts/index.md)。
+若要详细了解如何使用键盘导航 DevTools，请参阅 [键盘快捷方式](../../../shortcuts/index.md)。
 
 :::image type="complex" source="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png" alt-text="使用箭头键将焦点放在**更多选项卡**或**更多工具**按钮上" lightbox="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png":::
    使用箭头键将焦点放在“**更多选项卡**”或“**更多工具**”按钮上
@@ -104,5 +104,5 @@ ms.locfileid: "12323941"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-94)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

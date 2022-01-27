@@ -1,19 +1,19 @@
 ---
-title: 使用本地副本替代网页资源
+title: '使用本地副本替代网页资源 ("选项卡) '
 description: 替代功能是 DevTools Microsoft Edge源工具中的一项功能，允许你将网页资源复制到硬盘驱动器。  刷新网页时，DevTools 不会加载资源，而是将其替换为本地副本。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/11/2020
-ms.openlocfilehash: 0ac77cf97cfe913b04af08ab0a9e7c25999f7759
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: abeac016cc71ea584665f1df6e6f23a2f97add6b
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319463"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325114"
 ---
-# <a name="override-webpage-resources-with-local-copies"></a>使用本地副本替代网页资源
+# <a name="override-webpage-resources-with-local-copies-overrides-tab"></a>使用本地副本替代网页资源 ("选项卡) 
 
 有时你需要尝试一些可能的网页修补程序，但你无法访问源文件，或者更改页面需要一个缓慢而复杂的生成过程。  可以在 DevTools 中调试和修复所有类型的问题。  但更改不会保留;刷新本地文件后，所有工作都消失。  源 [工具中的替代](../sources/index.md) 功能可帮助你解决此问题。
 

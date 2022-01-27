@@ -1,17 +1,17 @@
 ---
 title: 模拟和测试其他浏览器
-description: 你的作业不会以确保你的网站在 Android 和 Microsoft Edge运行结束。  尽管设备模式可以模拟一系列其他设备（如智能手机），但我们鼓励你查看由其他浏览器提供的模拟解决方案。
+description: 你的作业不会以确保你的网站在 Android 和 Microsoft Edge运行结束。  即使设备仿真 (设备模式) 模拟一系列其他设备（如智能手机），我们也鼓励你查看由其他浏览器提供的模拟解决方案。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: f5b9e59fb917bd3e45339e825b7fddd810eedc2c
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 65ace21ec220c2cc945fc3b6ad61b6274904aab1
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323745"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325219"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -28,12 +28,14 @@ ms.locfileid: "12323745"
    limitations under the License.  -->
 # <a name="emulate-and-test-other-browsers"></a>模拟和测试其他浏览器
 
-你的作业不会以确保你的网站在 Android 和 Microsoft Edge运行结束。  尽管 **设备模式** 可以模拟一系列其他设备（如智能手机），但我们鼓励你查看由其他浏览器提供的模拟解决方案。
+你的作业不会以确保你的网站在 Android 和 Microsoft Edge运行结束。  尽管 [设备仿真](index.md) 可以模拟一系列其他设备（如智能手机），但我们鼓励你查看由其他浏览器提供的模拟解决方案。
 
 ### <a name="summary"></a>摘要
 
 *   当你没有特定设备，或者想要对某些内容进行专线检查时，最好选择在浏览器内模拟该设备。
+
 *   通过设备仿真器和模拟器，你可以从工作站模拟各种设备上的开发网站。
+
 *   基于云的仿真器使你可以跨不同平台自动执行网站单元测试。
 
 
@@ -136,7 +138,7 @@ Microsoft Edge (使用 EdgeHTML) 虚拟机 (VM) ，可以通过 VirtualBox (或 
 
 *   [设备 Anywhere](https://www.sigos.com/app-experience/) 不使用仿真器，而是能够远程控制的真实设备。  当你需要在特定的设备上重现问题，并且某些报告中可能不会显示问题时，这非常有用。
 
-*   [LambdaTest](https://www.lambdatest.com/) 可帮助你在各种浏览器和操作系统的组合上执行手动跨浏览器测试。  你可以录制复杂 Bug 的视频，并通过集成（如 Microsoft Teams、Slack 等）共享它们。  可以通过并行运行测试来加快测试速度。
+*   [LambdaTest](https://www.lambdatest.com/) 可帮助你在各种浏览器和操作系统的组合上执行手动跨浏览器测试。  你可以录制复杂 Bug 的视频并通过集成（如 Microsoft Teams、Slack 等）共享它们。  可以通过并行运行测试来加快测试速度。
 
 *   [使用操作](https://saucelabs.com) 标签，可以在仿真器内运行单元测试，这可用于编写通过网站的流脚本，并随后在各种设备上观看此内容的视频录制。  您还可以对网站执行手动测试。
 
@@ -148,7 +150,7 @@ Microsoft Edge (使用 EdgeHTML) 虚拟机 (VM) ，可以通过 VirtualBox (或 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)由[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和[Paul Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Google |工具、性能、动画、UX) 。
+> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)由[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和 Paul [Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Google |工具、性能、动画、UX) 。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

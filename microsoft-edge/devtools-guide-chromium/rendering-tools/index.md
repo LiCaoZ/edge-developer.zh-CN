@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 4566661dc213cc516837144f7c9f23316d67c27a
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 72763c6fa69924dc741c9bd2eec98252556ab3a3
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12324851"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325842"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -27,6 +27,8 @@ ms.locfileid: "12324851"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # <a name="analyze-runtime-performance"></a>分析运行时性能
+
+<!-- not able to find this article or its strings in other repo; the link redirects.  "todo" items might not be actionable -->
 
 用户期望交互式和流畅的页面。  像素管道中的每个阶段都有机会引入 jank (呈现中断) 。  了解用于识别和修复降低运行时性能的常见问题的工具和策略。
 
@@ -63,7 +65,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 | 影响响应的长时间运行的 JavaScript。  | [DOMContentLoaded 事件](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers)因使用 JS 工作而停止。  | 将纯计算工作移动到 [Web 工作人员](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers)。  如果需要 DOM 访问权限，请使用 `requestAnimationFrame` 。  <!--See [Optimize JavaScript Execution](/web/fundamentals/performance/rendering/optimize-javascript-execution).  -->  |
 | 影响响应或动画的垃圾脚本。  | 垃圾收集可能在任意位置发生。  | 编写更少的垃圾脚本。  请参阅 [Paul 的运行时性能清单中的动画中的](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/)垃圾回收。  |
 
-<!--todo: add Optimize JavaScript runtime section when available  -->
+<!--todo: add "Optimize JavaScript runtime" section when available  -->
 
 
 <!-- ====================================================================== -->
@@ -195,7 +197,7 @@ The Timeline Tool page is deprecated.
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)由 (技术撰稿人、Chrome DevTools \& Lighthouse) 和[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)<!-- redirects to https://developer.chrome.com/docs/devtools/evaluate-performance/ --> 由技术撰稿人 [， (，Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse) 和 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

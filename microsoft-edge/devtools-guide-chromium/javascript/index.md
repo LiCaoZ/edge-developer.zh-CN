@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 8bf6dfe41a610c404bfb6e79fec4f31c088b17f4
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: ba9c94949479454224ae87d26d1ba89ebd4cfb12
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12324753"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325135"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,7 +26,7 @@ ms.locfileid: "12324753"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="get-started-with-debugging-javascript"></a>调试 JavaScript 入门
+# <a name="get-started-debugging-javascript"></a>调试 JavaScript 入门
 
 本文指导你如何在开发工具中调试 JavaScript 问题的基本工作流程。
 
@@ -117,7 +117,7 @@ function updateLabel() {
     if (inputsAreEmpty()) {
     ```
 
-    If you pause on a different line of code， choose **Resume Script Execution** (Resume Script ![ Execution.) until you pause on ](../media/resume-script-run-icon.msft.png) the correct line.
+    如果您在其他代码行上暂停，请选择"恢复脚本**** 执行" ("恢复脚本执行"。) ，直到 ![ ](../media/resume-script-run-icon.msft.png) 您暂停到正确的行。
 
     > [!NOTE]
     > 如果在另一行暂停，则将拥有一个浏览器扩展，此扩展会在你访问的每个网页上注册一个 `click` 事件侦听器。  你已在扩展的 `click` 侦听器中暂停。  如果使用 InPrivate 模式以**在专用模式中浏览**，这会禁用所有扩展，可能会看到每次在指定的代码行上暂停。
@@ -141,7 +141,7 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
     > [!NOTE]
     > 开发工具跳过几行代码。  这是因为 `inputsAreEmpty()` 的计算结果为 false，因此 `if` 语句的代码块不会运行。
 
-1.  在**** DevTools 的"源"工具上，选择"单步执行下一个函数调用** (** 单步执行下一个函数调用"。) 可单步执行函数的运行时，一次一行 ![ ](../media/step-into-icon.msft.png) `updateLabel()` 。
+1.  在**** DevTools 的"源"工具上，选择"单步执行下一个函数**调用**" (""单步执行下一个函数调用 ![ ](../media/step-into-icon.msft.png) "。) 可单步执行函数的运行时，一次一行 `updateLabel()` 。
 
 一次查看一行是单步执行代码的基本概念。  如果查看 `get-started.js` 中的代码，则该错误可能在 `updateLabel()` 函数中。  可以使用另一种类型的断点来将代码暂停在错误的可能位置附近，而不是单步执行代码的每一行。
 
@@ -235,15 +235,15 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 *   已捕获或未捕获异常的断点。
 *   请求的 URL 与提供的子字符串匹配时触发的 XHR 断点。
 
-有关何时以及如何使用每种类型的信息，请导航到"使用断点[暂停代码"。](./breakpoints.md)
+有关何时以及如何使用每种类型的信息，请参阅 [使用断点暂停代码](./breakpoints.md)。
 
-本文不介绍几个代码单步执行控件。  有关详细信息，请导航到"使用 [调试器](./reference.md#step-through-code) 功能"文章中的逐行代码。
+本文不介绍几个代码单步执行控件。  有关详细信息，请参阅"JavaScript [调试](./reference.md#step-through-code) 功能"中的逐行代码。
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [使用调试器功能](./reference.md) - 使用"源"工具中的调试器 UI。
+*  [JavaScript 调试功能](./reference.md) - 使用源工具中的调试器 UI。
 *  [源工具概述](../sources/index.md) - 介绍 JavaScript 调试工具和代码编辑器。
 
 
@@ -252,5 +252,5 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -7,18 +7,18 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 ms.date: 09/13/2021
-ms.openlocfilehash: b08033dadb97aa40845f30577d6ca2ba82efa135
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 21edb89e28867126ac5a3192aaf4623e93c71820
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319043"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325737"
 ---
 # <a name="define-app-shortcuts"></a>定义应用快捷方式
 
 应用快捷方式使用户能够更快、更轻松地完成常见任务，并可以提升他们对应用的参与度。
 
-在移动设备上，快捷方式通常可以通过长按应用图标来访问。  在Windows，快捷方式作为 Jumplist 集成。  Jumplists define popup menus that appear when you right-click a tile in the "开始"菜单， or right-click an icon in the taskbar.
+在移动设备上，快捷方式通常可以通过长按应用图标来访问。  在Windows，快捷方式作为 Jumplist 集成。  Jumplists 定义在右键单击磁贴或右键单击任务栏中的"开始"菜单时出现的弹出菜单。
 
 下图显示了 iOS 上Microsoft Edge快捷方式：
 
@@ -28,7 +28,7 @@ ms.locfileid: "12319043"
 
 :::image type="content" source="../media/pwa-shortcuts-in-taskbar.png" alt-text="Webboard 应用上的跳转列表Windows。":::
 
-渐进式 Web (PBA) 还可以在 Web 应用清单中将常见任务定义为 [快捷方式](./web-app-manifests.md)。
+渐进式 Web (PBA) 还可以在 [Web 应用](./web-app-manifests.md)清单中将常见任务定义为快捷方式。
 
 
 <!-- ====================================================================== -->
@@ -84,4 +84,4 @@ ms.locfileid: "12319043"
 
 :::image type="content" source="../media/devtools-debug-shortcuts.png" alt-text="快捷方式在应用程序面板中列出。":::
 
-若要了解有关使用应用程序面板调试 PWA 的信息，请参阅调试 [渐进 Web 应用](../../devtools-guide-chromium/progressive-web-apps/index.md)。
+若要了解有关使用应用程序面板调试 PWA 的信息，请参阅 Debug [Progressive Web Apps (PWA) ](../../devtools-guide-chromium/progressive-web-apps/index.md)。

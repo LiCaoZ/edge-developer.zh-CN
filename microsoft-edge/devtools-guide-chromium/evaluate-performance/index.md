@@ -1,17 +1,17 @@
 ---
-title: 即可体验分析运行时性能
-description: 如何在 DevTools 中Microsoft Edge运行时性能。
+title: 分析运行时性能入门
+description: 介绍如何在 DevTools 中评估运行时Microsoft Edge教程。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 09e07aa5bf9c36fc40c323c7a4706daaae5c4512
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 66305f62ab5927bc5644c2b114bc8006c9ce7700
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12324767"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325156"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,7 +26,7 @@ ms.locfileid: "12324767"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="get-started-with-analyzing-runtime-performance"></a>即可体验分析运行时性能
+# <a name="get-started-analyzing-runtime-performance"></a>分析运行时性能入门
 
 > [!NOTE]
 > 若要了解如何加快页面加载速度，请参阅优化 [网站速度](../speed/get-started.md)。
@@ -253,5 +253,5 @@ To learn more, navigate to [Measure Performance With The RAIL Model](https://dev
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

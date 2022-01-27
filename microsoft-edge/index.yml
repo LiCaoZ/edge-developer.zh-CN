@@ -24,7 +24,7 @@ highlightedContent:
       url: 'https://www.microsoftedgeinsider.com/whats-new'
     - title: 获取支持
       itemType: reference
-      url: /microsoft-edge/index#additional-content
+      url: /microsoft-edge/index#help-and-support
     - title: 如何使用 Microsoft Edge
       itemType: learn
       url: 'https://support.microsoft.com/microsoft-edge?ocid=DMC-End-User-Support'
@@ -234,7 +234,7 @@ conceptualContent:
           links:
             - url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
               itemType: overview
-              text: DevTools 中的辅助功能测试功能
+              text: 辅助功能测试功能
             - url: /microsoft-edge/accessibility/
               itemType: overview
               text: 辅助功能概述

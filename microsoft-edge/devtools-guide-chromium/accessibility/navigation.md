@@ -1,17 +1,17 @@
 ---
-title: 使用辅助技术导航 Microsoft Edge 开发工具
+title: 使用辅助技术导航开发工具
 description: 有关使用辅助技术（如屏幕阅读器）导航 Microsoft Edge 开发工具的指南。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 8b3f4301b48803d9991d92d4ca927556db81eadd
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: c24118546505df78952e5f005f2ce623611e310e
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323899"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325233"
 ---
 <!-- Copyright Rob Dodson
 
@@ -26,11 +26,11 @@ ms.locfileid: "12323899"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="navigate-microsoft-edge-devtools-with-assistive-technology"></a>使用辅助技术导航 Microsoft Edge 开发工具
+# <a name="navigate-devtools-with-assistive-technology"></a>使用辅助技术导航开发工具
 
 本文可帮助主要依赖辅助技术的用户（如屏幕阅读器）使用[Microsoft Edge DevTools。](../../devtools-guide-chromium/index.md)  DevTools 是内置于 Web 浏览器的一Microsoft Edge工具。
 
-有关改善网页辅助功能的 DevTools 功能，请参阅 [DevTools](reference.md) 中的辅助功能测试和使用 [DevTools](accessibility-testing-in-devtools.md)的辅助功能测试概述。
+有关改善网页辅助功能的 DevTools 功能，请参阅辅助功能测试功能和使用[](reference.md) [DevTools](accessibility-testing-in-devtools.md)的辅助功能测试概述。
 
 本指南将指导你完成最可访问的工具和选项卡，并突出显示你可能会遇到的问题。
 
@@ -52,7 +52,7 @@ DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为面�
 <!-- ====================================================================== -->
 ## <a name="open-devtools"></a>打开开发工具
 
-To get started， navigate to [Open Microsoft Edge DevTools](../open/index.md).  开发工具有多种打开方式，可以通过键盘快捷方式，也可通过菜单项将其打开。
+To get started， navigate to [Open DevTools](../open/index.md).  开发工具有多种打开方式，可以通过键盘快捷方式，也可通过菜单项将其打开。
 
 
 <!-- ====================================================================== -->
@@ -221,7 +221,7 @@ DOM **断点** 和 **属性** 选项卡不可通过键盘访问。
 
 **已知问题**
 
-*   对于 macOS 屏幕阅读器（如**** VoiceOver）来说，"辅助功能"选项卡Microsoft Edge [ARIA](https://www.w3.org/TR/wai-aria-1.1/#tree)树的类型可能未正确公开。  订阅 [Chromium 问题 #868480](https://bugs.chromium.org/p/chromium/issues/detail?id=868480) 以获取有关此问题进展的通知。
+*   对于 MacOS 屏幕阅读器（如**** VoiceOver）来说，"辅助功能"选项卡Microsoft Edge ARIA 树的类型可能未正确公开。 [](https://www.w3.org/TR/wai-aria-1.1/#tree)  订阅 [Chromium 问题 #868480](https://bugs.chromium.org/p/chromium/issues/detail?id=868480) 以获取有关此问题进展的通知。
 *   每个 **ARIA 属性** 和 **已计算属性** 部分都标记为 [ARIA 树](https://www.w3.org/TR/wai-aria-1.1/#tree)，但当前每个部分都不具有焦点管理且不可通过键盘操作。
 
 
@@ -252,7 +252,7 @@ Lighthouse 报告分为与每个审核类别对应的部分。  报告打开时�
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) ，由 [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (Contributor、Google WebFundamentals 和) 。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) 由 [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (Contributor、Google WebFundamentals) 。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

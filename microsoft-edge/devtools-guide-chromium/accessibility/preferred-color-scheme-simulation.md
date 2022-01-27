@@ -6,18 +6,18 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/03/2021
-ms.openlocfilehash: 4f0c7b5177b02c86ebe88ccb5e7f0f250c81ca13
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: c07f6d0d9ae1902bb41fad8150080df6f203bb37
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323885"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325254"
 ---
 # <a name="emulate-dark-or-light-schemes-in-the-rendered-page"></a>模拟呈现页面中的深色或浅色方案
 
 许多操作系统都有一种方法以较暗或更浅的颜色显示任何应用程序。  在深色操作系统中具有浅色方案的网页产品可能难以阅读，并且对于一些用户可能是一个辅助功能问题。
 
-若要测试当用户选择深色或浅色模式时网页的呈现方式，而不是更改你自己的计算机深色模式或浅色模式设置，可以在 Microsoft Edge DevTools 中选择模拟**CSS 首选**配色方案：深色或**** 浅色。  可以从命令菜单或呈现工具**** 执行此操作，如下所述****。
+若要测试当用户选择深色或浅色模式时网页的呈现方式，而不是更改你自己的计算机深色模式或浅色模式设置，可以在 Microsoft Edge DevTools 中选择模拟**CSS 首选**配色方案：深色或**** 浅色。  可以从呈现工具或命令菜单**** 进行**此操作**，如下所述。
 
 或者，也可以使网页根据计算机上自己的首选设置自动选择深色或浅色模式，选择"无 **模拟**"，这是默认设置。
 
@@ -29,7 +29,7 @@ ms.locfileid: "12323885"
 <!-- ====================================================================== -->
 ## <a name="emulating-dark-or-light-mode-using-the-rendering-tool"></a>使用呈现工具模拟深色或浅色模式
 
-1.  在 DevTools 中，打开呈现工具。  为此，请单击主工具栏或**** (的"更多工具" () + 文件图标，然后选择"呈现 **"。**
+1.  在 DevTools 中，打开呈现工具。  为此，请单击主工具栏或****" (") "更多工具"图标，然后选择"呈现 **"。**
     
     或者，如果呈现工具已打开，但已被隐藏，请单击工具栏上的"**** 更多选项卡 (>>) "图标，然后选择"呈现 **"。**
 
@@ -64,3 +64,18 @@ ms.locfileid: "12323885"
     现在，您可以修改 CSS，并像查看任何其他网页一样查看呈现的结果。  有关详细信息，请导航到开始[查看和更改 CSS。](../css/index.md)
 
 1.  若要还原该设置，请在"命令菜单"中键入"模拟"或"方案"，然后选择"呈现 **：不模拟 CSS 首选颜色方案"。**  刷新页面时，将应用你自己的用于浅色或深色模式首选项的操作系统或浏览器设置。
+
+
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
+
+* [使用性能功能参考中的呈现工具](../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool)_分析呈现性能_
+
+呈现工具还用于以下内容：
+
+* [检查深色主题和浅主题的对比度问题](test-dark-mode.md)
+* [验证页面是否对色盲者可用](test-color-blindness.md)
+* [验证页面是否在视觉模糊时可用](test-blurred-vision.md)
+* [验证页面是否在关闭 UI 动画时可用](test-reduced-ui-motion.md)
+* [模仿视觉缺陷](emulate-vision-deficiencies.md)
+* [模拟运动减少](reduced-motion-simulation.md)

@@ -7,12 +7,12 @@ metadata:
   author: MSEdgeTeam
   ms.author: msedgedevrel
   ms.date: 09/02/2021
-  ms.openlocfilehash: 7358ec27c8f989d0f1e07443d5f85499879cc74e
-  ms.sourcegitcommit: f1fc8a18f6a7754c9c7f0171bfa5e12fbeecccee
+  ms.openlocfilehash: 4fce01ec1e66a4387e6d301f6676b39aae13a8bf
+  ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2021
-  ms.locfileid: "12157961"
+  ms.lasthandoff: 01/27/2022
+  ms.locfileid: "12325415"
 landingContent:
 - title: Microsoft Edge 开发工具
   linkLists:
@@ -64,7 +64,7 @@ landingContent:
       url: /microsoft-edge/progressive-web-apps-chromium/how-to/index
     - text: 调试渐进式 Web 应用
       url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
-    - text: 渐进式 Web 应用程序中的新增功能
+    - text: 渐进式 Web 应用中的新增功能
       url: /microsoft-edge/progressive-web-apps-chromium/whats-new/pwa
   - linkListType: concept
     links:
@@ -82,13 +82,13 @@ landingContent:
       url: /microsoft-edge/webview2/index
   - linkListType: get-started
     links:
-    - text: 在 Win32 应用中开始使用 WebView2
+    - text: Win32 应用中的 WebView2 入门
       url: /microsoft-edge/webview2/get-started/win32
     - text: WinForms 应用中的 WebView2 入门
       url: /microsoft-edge/webview2/get-started/winforms
     - text: WinUI 2 应用中的 WebView2 入门
       url: /microsoft-edge/webview2/get-started/winui2
-    - text: 在 WinUI 3 应用中开始使用 WebView2
+    - text: WinUI 3 应用中的 WebView2 入门
       url: /microsoft-edge/webview2/get-started/winui
     - text: WPF 应用中的 WebView2 入门
       url: /microsoft-edge/webview2/get-started/wpf
@@ -116,7 +116,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 检测Microsoft Edge网站中的内容
+    - text: 从网站检测 Microsoft Edge
       url: /microsoft-edge/web-platform/user-agent-guidance
     - text: 影响网站兼容性的更改
       url: /microsoft-edge/web-platform/site-impacting-changes
@@ -136,7 +136,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: DevTools 中的辅助功能测试功能
+    - text: 辅助功能测试功能
       url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
     - text: 辅助功能概述
       url: /microsoft-edge/accessibility/

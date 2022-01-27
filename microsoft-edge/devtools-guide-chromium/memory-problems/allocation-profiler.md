@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 002ef5b41afe6de66a67bfb05c4d076c28c0c03b
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 199f627bd0f03fb0608d90ae8c98cb5714ce1e6c
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12322863"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325562"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -28,18 +28,21 @@ ms.locfileid: "12322863"
    limitations under the License. -->
 # <a name="use-allocation-instrumentation-on-timeline"></a>在日程表上使用分配检测
 
-在 **日程表上使用分配** 检测来查找未正确进行垃圾回收的对象，并继续保留内存。
+<!-- title in other repo:
+How to Use the Allocation Profiler Tool -->
+
+在 **"内存** "工具中，使用"时间线上的 **分配** 检测"单选按钮查找未正确垃圾回收的对象，并继续保留内存。
 
 
 <!-- ====================================================================== -->
 ## <a name="how-allocation-instrumentation-on-timeline-works"></a>时间线上的分配检测的工作原理
 
-**时间线上的分配检测**将堆探查器的详细快照信息与[](heap-snapshots.md)性能面板的增量更新和**跟踪**相结合。  同样，跟踪对象的堆分配涉及启动记录、执行一系列操作以及停止记录进行分析。
+**时间线上的分配检测**将堆探查器的详细快照信息与[](heap-snapshots.md)性能工具的增量更新和**跟踪**相结合。  同样，跟踪对象的堆分配涉及启动记录、执行一系列操作以及停止记录进行分析。
 
 <!--todo: add profile memory problems (heap profiler) section when available  -->
-<!--todo: add profile evaluate performance (Performance panel) section when available  -->
+<!--todo: add profile evaluate performance (Performance tool) section when available  -->
 
-**时间线上的分配检测** 在整个记录过程中定期获取堆快照 (频率与记录结束时每 50 毫秒) 一次最终快照的频率一样。
+**时间线上的分配检测** 在整个记录过程中定期获取堆快照 (频率与记录结束时每 50 毫秒) 一个最终快照的频率一样。
 
 :::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="日程表上的分配检测。" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
    **日程表上的分配检测**
@@ -52,15 +55,16 @@ ms.locfileid: "12322863"
 <!-- ====================================================================== -->
 ## <a name="enable-allocation-instrumentation-on-timeline"></a>在时间线上启用分配检测
 
-完成以下操作以开始在时间线**上使用 Allocation instrumentation。**
+若要在时间线**上开始使用 Allocation instrumentation：**
 
-1.  [打开 DevTools](../open/index.md)。
-1.  打开内存 **面板** ，选择时间线 **上的分配检测单** 选按钮。
-1.  开始录制。
+1. [打开 DevTools](../open/index.md)。
+1. 打开 **内存** 工具。
+1. 选择" **日程表上的分配检测"** 单选按钮。
+1. 开始录制。
 
-    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="记录堆分配探查器。" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
-       记录堆分配探查器
-    :::image-end:::
+记录堆分配探查器：
+
+:::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="记录堆分配探查器。  使用&quot;内存&quot;工具中的&quot;时间线上的分配检测&quot;单选按钮。" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -95,7 +99,7 @@ ms.locfileid: "12322863"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) 由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) 由技术撰稿人 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (创作) 。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

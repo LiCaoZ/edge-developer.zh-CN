@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 3aa29d8f6c82a6b7dab0e3521a168c087640f889
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 5241af3ab4dce84419c17e13ea4ad8e2cfd66428
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323920"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325303"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques
@@ -33,7 +33,7 @@ ms.locfileid: "12323920"
 
 对比率测量文本的前景和背景的亮度差。  如果文本的对比度比率较低，则低视力用户可能会将网站体验为空白屏幕。
 
-在 DevTools 中，查看文本元素的对比率的一个方法就是从"样式"选项卡使用 **颜色选取** 器。 颜色选取器可帮助你验证文本是否满足建议的对比率级别。
+在 DevTools 中，查看文本元素的对比率的一个方法就是从"元素"工具的"**** 样式"选项卡使用**颜色选取**器。  颜色选取器可帮助你验证文本是否满足建议的对比率级别。
 
 **若要使用颜色选取器检查文本颜色对比度：**
 
@@ -70,5 +70,5 @@ ms.locfileid: "12323920"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

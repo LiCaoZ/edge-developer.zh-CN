@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: a6bc22a510fa2d306ffc9fe524ef994d123f8771
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: bb8e59cad7667bfad263630435ee8e7b778510b6
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12324606"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12326017"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,13 +30,19 @@ ms.locfileid: "12324606"
 
 默认情况下，Microsoft Edge DevTools 固定在视口窗口 (右侧) 。  还可以将 DevTools 停靠在窗口底部或左侧，或者将 DevTools 停靠到单独的窗口。
 
-DevTools 固定到窗口左侧：
+
+<!-- ====================================================================== -->
+## <a name="examples-of-the-various-placements-of-devtools"></a>DevTools 的各种放置示例
+
+### <a name="dock-to-left"></a>扩展坞向左
 
 :::image type="content" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="DevTools 固定到窗口的左侧。" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
 
-DevTools 固定到窗口底部：
+### <a name="dock-to-bottom"></a>扩展坞到底部
 
 :::image type="content" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="DevTools 固定到窗口底部。" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+
+### <a name="undock-into-separate-window"></a>撤消停靠到单独的窗口中
 
 DevTools 可以撤消停靠到单独的窗口，你可以移动到单独的监视器。  浏览器随后具有自己的专用窗口，没有 DevTools，已取消停靠：
 
@@ -50,7 +56,7 @@ DevTools 可以撤消停靠到单独的窗口，你可以移动到单独的监�
 <!-- ====================================================================== -->
 ## <a name="change-placement-from-the-main-menu"></a>从主菜单更改位置
 
-1.  单击"自定义和控制**DevTools** () "，然后选择"撤消停靠到单独的窗口" (""撤消停靠"。) ，从"扩展坞"到底部 (扩展坞到底部。) 或"扩展坞"向左移动 (扩展坞向左 `...` **** ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png) 。) 。
+1.  单击"自定义和控制**DevTools** () "，然后选择"撤消停靠到单独的窗口" (""撤消停靠"。) ，从"扩展坞"到底部的 (扩展坞到底部。) 或"扩展坞"向左移动 (扩展坞向左 `...` **** ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png) 。) 。
 
 :::image type="content" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="选择&quot;撤消停靠到单独的窗口&quot;。" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
 
@@ -77,5 +83,5 @@ DevTools 可以撤消停靠到单独的窗口，你可以移动到单独的监�
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/placement)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

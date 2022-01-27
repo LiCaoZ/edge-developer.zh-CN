@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 33d95617af6f1bc949e33841b48cb7e1b1a4549b
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 521dc582264b5adea64c2a8b625429d94145e557
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323535"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325443"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,11 +26,11 @@ ms.locfileid: "12323535"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="pause-your-code-with-breakpoints"></a>使用断点暂停代码
+# <a name="pause-code-with-breakpoints"></a>使用断点暂停代码
 
 使用断点暂停 JavaScript 代码。  本文介绍了 DevTools 中提供的每种断点类型，以及何时使用以及如何设置每种类型。
 
-有关使用现有网页的介绍性教程，请导航到调试 [JavaScript 入门](index.md)。
+有关使用现有网页的介绍性教程，请参阅[开始调试 JavaScript。](index.md)
 
 
 <!-- ====================================================================== -->
@@ -85,7 +85,7 @@ console.log('c');
 1.  选择“**源**”工具。
 1.  打开包含要中断的代码行的文件。
 1.  转到代码行。
-1.  代码行的左侧是行号列。  将鼠标悬停在行号上并打开上下文菜单 (右键单击) 。
+1.  代码行的左侧是行号列。  将鼠标悬停在行号上并打开上下文菜单 (右键单击") "。
 1.  选择“**添加条件断点**”。  代码行下方将显示一个对话框。
 1.  在对话框中输入条件。
 1.  选择 `Enter` 以激活断点。  行号列旁边的图标。
@@ -103,8 +103,8 @@ console.log('c');
 :::image-end:::
 
 *   选中条目旁边的复选框以禁用该断点。
-*   将鼠标悬停在某个条目上并打开上下文菜单 (右键单击) 删除该断点。
-*   将鼠标悬停在"**** 断点"窗格中的任意位置并打开上下文菜单 (右键单击") "以停用所有断点、禁用所有断点或删除所有断点。  禁用所有断点等效于取消选中每个断点。  取消激活所有断点将指示开发工具忽略所有代码行断点，但也要保持启用状态，以使每个断点都与重新激活每个断点时的状态相同。
+*   将鼠标悬停在某个项上并打开上下文菜单 (右键单击) 删除该断点。
+*   将鼠标悬停在"**** 断点"窗格中的任意位置，然后打开上下文菜单 (右键单击") "以停用所有断点、禁用所有断点或删除所有断点。  禁用所有断点等效于取消选中每个断点。  取消激活所有断点将指示开发工具忽略所有代码行断点，但也要保持启用状态，以使每个断点都与重新激活每个断点时的状态相同。
 
     :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="&quot;断点&quot;窗格中的已停用断点。" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
        “**断点**”窗格中的已停用断点
@@ -232,8 +232,8 @@ debug(hey); // This does not work.  hey() is out of scope.
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [使用调试器功能](./reference.md) - 使用"源"工具 **中的调试器** UI。
-*  [调试 JavaScript](index.md) 入门 - 使用现有网页的介绍性教程。
+*  [JavaScript 调试功能](./reference.md) - 使用源工具中的 **调试器** UI。
+*  [开始调试 JavaScript](index.md) - 使用现有网页的介绍性教程。
 *  [源工具概述](../sources/index.md) - 调试器是 **源** 工具的一部分，其中包括 JavaScript 编辑器。
 
 
@@ -242,5 +242,5 @@ debug(hey); // This does not work.  hey() is out of scope.
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

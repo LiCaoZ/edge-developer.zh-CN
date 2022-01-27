@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 2e04620fbebd04a19d1855c500dbe980091b8377
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: cc44e51224c21227c251609f821f47bc7879e185
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323836"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325597"
 ---
 # <a name="analyze-the-lack-of-indication-of-keyboard-focus-in-a-sidebar-menu"></a>分析边栏菜单中键盘焦点的缺失
 
@@ -19,17 +19,17 @@ ms.locfileid: "12323836"
 
 在辅助功能测试演示页面中，使用键盘时，包含蓝色链接的边栏导航菜单不会直观地指示哪个链接具有焦点。  为了找出为什么边栏菜单使键盘用户感到困惑，我们将查找适用于 和 状态的 CSS 伪类规则，以及链接大纲的 `hover` `focus` CSS 属性。
 
-此分析发现边栏导航菜单的链接中缺少键盘焦点指示的原因是：
+此分析发现页面的边栏导航菜单的链接中缺少键盘焦点指示的原因是：
 *  链接 `a` 的 CSS 属性设置为 `outline: none` 。
 *  这些 `a` 链接缺少状态 CSS 伪类 `:focus` 规则。
 
-若要导航到 CSS，我们将使用 **Inspect** 工具突出显示边栏导航菜单上的蓝色链接，然后查看定义该链接的元素的 DOM 树和 `a` CSS。
+若要导航到 CSS，我们将使用 **Inspect** 工具突出显示页面边栏导航菜单上的蓝色链接，然后查看定义该链接的元素的 DOM 树和 `a` CSS。
 
 1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
 1.  选择" **检查** (检查"图标。) ![ 位于 DevTools 左上角的"检查"按钮，以便该按钮以蓝色 (](../media/inspect-icon.msft.png) 突出显示) 。
 
-1.  将鼠标悬停在边栏导航菜单中的蓝色 **"猫** "链接上。  将显示 Inspect 覆盖层，显示 `a` 元素是可键盘聚焦的。  但是覆盖层不会显示当链接具有焦点时没有视觉指示。
+1.  将鼠标悬停在页面边栏导航菜单中的蓝色 **"猫** "链接上。  将显示 Inspect 覆盖层，显示 `a` 元素是可键盘聚焦的。  但是覆盖层不会显示当链接具有焦点时没有视觉指示。
 
     接下来，我们将检查此链接的 CSS 样式。
 

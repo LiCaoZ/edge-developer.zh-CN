@@ -6,13 +6,14 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: e83d192f683347b33438f7d886cc5667a289aca6
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 8c1209c7821de6d5fc1276b9626b55ebcb51bbe2
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12322849"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325856"
 ---
+<!-- delete this notice and at bottom of file? search other repo to try to confirm that this article is based on a copy -->
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -73,7 +74,7 @@ ms.locfileid: "12322849"
 **原因**
 
 *   客户端和服务器之间的连接速度很慢。
-*   服务器响应缓慢。  在本地托管服务器，以确定是连接速度慢还是服务器速度慢。  如果在访问本地服务器时仍 (到第一字节) TTFB，则服务器速度很慢。
+*   服务器响应缓慢。  在本地托管服务器，以确定是连接速度慢还是服务器速度慢。  如果您在访问本地服务器时仍 (到第一字节) TTFB，则服务器速度很慢。
 
 **修补程序**
 
@@ -114,9 +115,10 @@ Do you have a network issue that should be added to this guide?
 
 
 <!-- ====================================================================== -->
+<!-- delete this notice? search other repo to try to confirm that this article is a copy -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/network/issues)由 (技术编写者[、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse) 和[House Garbee](https://developers.google.com/web/resources/contributors#jonathan-garbee) (Google Developer Expert for Web Technology) 创作。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/network/issues)<!-- redirects to https://developer.chrome.com/docs/devtools/network/ --> 由技术撰稿人[、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTool (s \& Lighthouse)  (Google Developer Expert for [](https://developers.google.com/web/resources/contributors#jonathan-garbee) Web Technology) 创作。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

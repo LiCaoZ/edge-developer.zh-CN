@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: eb8c1a2d6aa21e5b80dbf34eb4c613fe314012f7
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: d0cb846f96d37bb0af84a14e58e197336a9fcae6
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323913"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325709"
 ---
 # <a name="emulate-vision-deficiencies"></a>模仿视觉缺陷
 
@@ -24,6 +24,8 @@ ms.locfileid: "12323913"
 | 绿色盲 | 用户无法感知任何绿色光。 |
 | 黄蓝色盲 | 用户无法感知任何蓝色光。 |
 | 全色盲 | 用户无法感知任何颜色，这会降低所有颜色为灰色底纹。 |
+
+" **模拟视觉缺陷"** 工具模拟每个缺陷人士可能如何查看你的产品的近似值。  每个人是不同的，因此视觉缺陷的严重性因人而异。  为了更好地满足用户的需求，请避免任何可能导致问题的颜色组合。  模拟 **视觉缺陷** 工具不是产品的完整辅助功能评估。  相反 **，"模拟视觉缺陷"** 工具应为您提供良好的第一步以避免出现问题。
 
 
 <!-- ====================================================================== -->
@@ -47,6 +49,7 @@ ms.locfileid: "12323913"
     > [!div class="mx-imgBorder"]
     > ![浏览器窗口，网页中已修改颜色，用于模拟选定颜色视觉缺陷。](../media/accessibility-blurred-vision-emulation.msft.png)
 
+
 <!-- ====================================================================== -->
 ## <a name="use-the-command-menu"></a>使用命令菜单
 
@@ -58,9 +61,6 @@ ms.locfileid: "12323913"
 
     > [!div class="mx-imgBorder"]
     > ![显示不同类型的视觉缺陷的命令菜单。](../media/accessibility-emulation-command-menu-results.msft.png)
-
-> [!IMPORTANT]
-> " **模拟视觉缺陷"** 工具模拟每个缺陷人士可能如何查看你的产品的近似值。  每个人是不同的，因此视觉缺陷的严重性因人而异。  为了更好地满足用户的需求，请避免任何可能导致问题的颜色组合。  模拟 **视觉缺陷** 工具不是产品的完整辅助功能评估。  相反 **，"模拟视觉缺陷"** 工具应为您提供良好的第一步以避免出现问题。
 
 
 <!-- ====================================================================== -->

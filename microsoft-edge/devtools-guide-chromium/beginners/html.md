@@ -1,17 +1,17 @@
 ---
-title: 面向初学者的开发工具：HTML 和 DOM 入门
+title: HTML 和 DOM 入门
 description: HTML 和 DOM 入门。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/06/2021
-ms.openlocfilehash: 573d1f1fa23741b967dcb87f847853bae8a57e89
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: add6b2839d9ecfc23993adfa164acc577ec3f87a
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323115"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325296"
 ---
 <!-- Copyright Katherine Jackson
 
@@ -26,7 +26,7 @@ ms.locfileid: "12323115"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="devtools-for-beginners-get-started-with-html-and-the-dom"></a>面向初学者的开发工具：HTML 和 DOM 入门
+# <a name="get-started-with-html-and-the-dom"></a>HTML 和 DOM 入门
 
 这是一系列教程中第一个介绍 Web 开发基础知识的教程。 了解一组名为 Microsoft Edge DevTools 的 Web 开发人员工具，这些工具将提高工作效率。
 
@@ -323,5 +323,5 @@ ms.locfileid: "12323115"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 在https://developers.google.com/web/tools/chrome-devtools/beginners/html找到原始页面 <!-- 404 now --> 由 [Katherine 并](https://developers.google.com/web/resources/contributors#katherine-jackson) 创作（技术编写员，Chrome DevTools）。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -1,17 +1,17 @@
 ---
-title: 调试渐进式 Web 应用
+title: '调试渐进式 Web (PA) '
 description: 使用应用程序面板检查、修改和调试 Web 应用清单、服务工作者和服务工作者缓存。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 5f5c9028cd8669d2560a77c37bc638fd18562747
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 9836c75a574dde145ce0d51b2a934b9a7e43c6f4
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12324382"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325863"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,25 +26,22 @@ ms.locfileid: "12324382"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="debug-progressive-web-apps"></a>调试渐进式 Web 应用
+# <a name="debug-progressive-web-apps-pwas"></a>调试渐进式 Web (PA) 
 
 使用 **应用程序** 面板检查、修改和调试 Web 应用清单、服务工作者和服务工作者缓存。
 
-<!--Related Guides:
+本文仅讨论应用程序面板的渐进 Web **应用** 功能。  有关应用程序面板中其他窗格**的帮助，请参阅**查看[页面资源和](../resources/index.md)[查看和编辑本地存储](../storage/localstorage.md)。
 
-*   [Progressive Web Apps](/web/progressive-web-apps)  -->
-
-<!--TODO:  Link web "Progressive Web Apps" section when available. -->
-
-本指南仅讨论应用程序面板的渐进式 Web **应用** 功能。  <!--If you're looking for help on the other panes, check out the last section of this guide, [Other Application panel guides](#other-application-panel-guides).  -->
-
-<!--TODO:  Link to sections when available. -->
+另请参阅 [Overview of Progressive Web Apps (PWA) ](../../progressive-web-apps-chromium/index.md)。
 
 ### <a name="summary"></a>摘要
 
 *   使用清单 **窗格** 检查 Web 应用清单并触发"添加到主屏幕"事件。
+
 *   使用"**** 服务工作线程"窗格执行与服务工作者相关的所有任务，例如注销或更新服务、模拟推送事件、脱机或停止服务工作线程。
+
 *   从"缓存"窗格查看服务**存储**缓存。
+
 *   从"清除存储"窗格中选择一个按钮，注销服务工作器并清除所有 **存储和** 缓存。
 
 
@@ -68,7 +65,9 @@ ms.locfileid: "12324382"
 
 *   To look at the manifest source， choose the link below **App Manifest** label (`https://airhorner.com/manifest.json` in the previous figure) .
 <!-- *   Choose the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->
+
 *   " **标识"** 和" **演示文稿** "部分仅以更用户友好的显示方式显示清单源中的字段。
+
 *   " **图标** "部分显示你指定的每个图标。
 
 <!--### Simulate Add to Homescreen events  -->
@@ -88,7 +87,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 > [!Tip]
 > Keep the **Console** drawer open while simulating Add to Homescreen events.  The Console tells you if your manifest has any issues and logs other information about the Add to Homescreen lifecycle.  -->
 
-<!--The **Add to Homescreen** feature may not yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode.  However, if you may successfully add your app to your desktop shelf, then it works for mobile, too.  -->
+<!--The **Add to Homescreen** feature may not yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode (Device Emulation).  However, if you may successfully add your app to your desktop shelf, then it works for mobile, too.  -->
 
 <!-- TODO: Rework content after sample app is created. -->
 
@@ -118,15 +117,25 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 :::image-end:::
 
 *   如果将服务工作器安装到当前打开的页面，则它将在此窗格中列出。  例如，在上图中，为 作用域安装了一个服务工作器 `https://weather-pwa-sample.firebaseapp.com` 。
+
 *   " **脱机** "复选框将 DevTools 置于脱机模式。  这等效于"网络"工具中提供的脱机**** 模式，或命令 `Go offline` 菜单中[的选项](../command-menu/index.md)。
+
 *   " **重新加载时更新** "复选框强制服务工作者每次加载页面时进行更新。
+
 *   " **绕过网络"** 复选框将绕过服务工作线程，并强制浏览器转到所请求资源的网络。
+
 *   " **更新** "按钮将执行指定服务工作者的一次更新。
+
 *   " **推送** "按钮模拟不带有效负载的推送通知 (**也称为滴答**) 。
+
 *   " **同步** "按钮模拟后台同步事件。
+
 *   " **注销"** 按钮将取消注册指定的服务工作器。  请查看清除 [存储](#clear-storage) ，了解通过单个按钮选择取消注册服务工作器以及擦除存储和缓存的方法。
+
 *   Source **** 行将告知您当前正在运行的服务工作线程的安装时间。  链接是服务工作者的源文件的名称。  选择链接将你发送到服务工作者的源。
+
 *   " **状态** "行将告知您服务工作者的状态。  上图中绿色状态指示器旁边的 ID (`#36` 表示) 当前处于活动状态的服务工作线程。  在状态旁边，如果服务**** 工作 (停止，将显示一个) ，如果服务工作进程正在运行 (则显示**** 一个停止) 按钮。  服务工作者设计为随时由浏览器停止和启动。  使用停止按钮显式停止服务 **工作器** 可能会模拟这一点。  停止服务工作进程是测试服务工作线程再次启动备份时代码行为方式的一种好方法。  它经常显示错误，因为对永久性全局状态的错误假设。
+
 *   **"客户端**"行将告知您服务工作线程的作用域。  当 **启用** "全部显示"复选框时，焦点 **按钮最** 有用。  启用该复选框后，将列出所有注册的服务工作者。  如果选择其他选项卡中运行**** 的服务工作线程旁边的焦点按钮，Microsoft Edge焦点位于该选项卡上。
 
 如果服务工作线程导致任何错误，将显示名为 **"错误"** 的新标签。
@@ -209,5 +218,5 @@ Related Guides:
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

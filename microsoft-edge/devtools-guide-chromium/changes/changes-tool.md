@@ -1,19 +1,19 @@
 ---
-title: 更改工具
+title: 使用"更改"工具跟踪对文件所做的更改
 description: The Changes tool tracks any changes you have made to CSS or JavaScript in DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/28/2021
-ms.openlocfilehash: c356260741a7ff907e431c78ec4c02bf9ad9627d
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: d6428b7704cbd080f010dc54becc25b648f390ce
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318560"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325583"
 ---
-# <a name="changes-tool"></a>更改工具
+# <a name="track-changes-to-files-using-the-changes-tool"></a>使用"更改"工具跟踪对文件所做的更改
 
 The **Changes tool** tracks any changes you have made to CSS or JavaScript in DevTools.  使用 **"更改** "工具可快速显示所有更改，以便将这些更改重新应用到集成开发环境中编辑器 (源文件;IDE) 。  The **Changes** tool shows you what changes to make to your actual source files after you've successfully used DevTools to investigate and fix a problem.
 

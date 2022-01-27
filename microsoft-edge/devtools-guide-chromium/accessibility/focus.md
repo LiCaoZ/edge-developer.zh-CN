@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 6c59e3c094fec3e865dc827eb0fe31adfaac40f0
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 0be319af338e66437e56b3350db73223a43bb6f5
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323906"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325604"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,27 +28,29 @@ ms.locfileid: "12323906"
    limitations under the License.  -->
 # <a name="track-which-element-has-focus"></a>跟踪哪些元素有焦点
 
-假设正在测试页面的键盘导航辅助功能。  使用`Tab`键浏览页面时，聚焦环有时会消失，因为具有焦点的元素被隐藏。
+假设您正在测试页面的键盘导航辅助功能。  使用`Tab`键浏览页面时，聚焦环有时会消失，因为具有焦点的元素被隐藏。
 
 若要跟踪 DevTools 中聚焦的元素：
 
 1.  打开“**控制台**”。
-1.  Choose **Create live expression (** Create live ![ expression. ](../media/create-live-expression-icon.msft.png)) .
 
-    :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="创建 Live Expression。" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
-       创建动态表达式
-    :::image-end:::
+1.  单击 **"创建实时表达式 (** ![ 创建实时表达式 ](../media/create-live-expression-icon.msft.png) "。) 。
+
+    :::image type="content" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="创建 Live Expression。" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
 
 1.  键入 `document.activeElement`。
-1.  若要保存表达式，请选择活动表达式之外。
+
+1.  单击 Live **Expression** UI 外部以保存。
 
 `document.activeElement` 下面显示的值是表达式的结果。
 
 由于该表达式始终代表着焦点的元素，因此现在可以始终跟踪哪个元素具有焦点。
 
-*   将鼠标悬停在结果上，以在视区中突出显示焦点元素。
-*   将鼠标悬停在结果上，右键单击 () 上下文菜单，然后选择"元素"面板中的"**** 展示"，在"元素"工具上的"DOM 树"中**显示元素。**
-*   将鼠标悬停在结果上，右键单击" (") "，然后选择"存储"作为全局变量****，以创建对可以在控制台中使用的节点的变量**引用**。
+* 将鼠标悬停在结果上，以在视区中突出显示焦点元素。
+
+* 右键单击结果，然后选择"元素 **"面板中的**"展示"，以显示"元素"面板上的**DOM 树****中的**元素。
+
+* 右键单击结果并选择"存储 **"作为** 全局变量，以创建对可在控制台中使用的节点的变量 **引用**。
 
 
 <!-- ====================================================================== -->
@@ -60,7 +62,7 @@ ms.locfileid: "12323906"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) ，由技术编写者 [、Chrome](https://developers.google.com/web/resources/contributors/kaycebasques) DevTools & Lighthouse (创作) 。
+> 原始页面位于[此处](https://developer.chrome.com/docs/devtools/accessibility/focus/)，由技术编写 (、Chrome DevTools & Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors/kaycebasques)
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

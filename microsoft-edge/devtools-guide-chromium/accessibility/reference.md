@@ -1,19 +1,19 @@
 ---
-title: DevTools 中的辅助功能测试功能
+title: 辅助功能测试功能
 description: 要测试的网页辅助功能方面，以及 Microsoft DevTools 中的相应功能。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 26e632b46efdf0e293c349e2ac2b607baf624a58
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 3e266d36ba9871d7fc74cd1fe89fb1241e23f5c3
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318091"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325240"
 ---
-# <a name="accessibility-testing-features-in-devtools"></a>DevTools 中的辅助功能测试功能
+# <a name="accessibility-testing-features"></a>辅助功能测试功能
 
 若要测试网页的辅助功能，请首先制作要测试的辅助功能方面的清单，然后使用相关的 DevTools 功能检查每个方面。
 
@@ -75,14 +75,14 @@ ms.locfileid: "12318091"
 
 | 要检查的辅助功能方面 | DevTools 的功能 | 文章或副标题 |
 |---|---|---|
-| 验证网页布局在缩小时是否可用 | **设备仿真** 工具 | [验证网页布局在开发人员工具中的窄](accessibility-testing-in-devtools.md#verify-that-the-webpage-layout-is-usable-when-narrow)和模拟移动设备Microsoft Edge[可用](../device-mode/index.md) |
+| 验证网页布局在缩小时是否可用 | **设备仿真** 工具 | [验证网页布局在缩小时是否可用](accessibility-testing-in-devtools.md#verify-that-the-webpage-layout-is-usable-when-narrow)，并模拟移动设备 ([设备仿真) ](../device-mode/index.md) |
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)
-*  [使用辅助技术导航 Microsoft Edge 开发工具](navigation.md)
+*  [使用辅助技术导航开发工具](navigation.md)
 *  [辅助功能测试](../../accessibility/test.md)
 *  [辅助功能原则和最佳做法](https://developer.mozilla.org/docs/Web/Accessibility)
 *  [屏幕阅读器](https://developer.mozilla.org/docs/Glossary/Screen_reader)

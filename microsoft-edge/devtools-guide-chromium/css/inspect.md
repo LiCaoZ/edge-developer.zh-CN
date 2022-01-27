@@ -1,19 +1,19 @@
 ---
-title: 使用 Inspect 工具分析 HTML 页面
+title: 使用 Inspect 工具分析页面
 description: 如何使用 DevTools 中的"检查"工具Microsoft Edge HTML 页面。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/16/2021
-ms.openlocfilehash: 10961a01eed441bc34dd554d970cb3145f2b2efc
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: e72d0d33f0c996e190c699c99897fe44c9778ea4
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320912"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325898"
 ---
-# <a name="analyze-html-pages-using-the-inspect-tool"></a>使用 Inspect 工具分析 HTML 页面
+# <a name="analyze-pages-using-the-inspect-tool"></a>使用 Inspect 工具分析页面
 
 本文演示如何使用 **Inspect** 工具预览有关元素的信息，以及如何在当前文档中选择元素。  若要立即试用**Inspect**工具，请在阅读[](https://microsoftedge.github.io/DevToolsSamples/inspector/inspector-demo.html)本文时，打开其他选项卡或窗口中的"检查演示"页。
 

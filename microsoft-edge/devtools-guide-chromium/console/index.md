@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
-ms.openlocfilehash: 47b2dc378e1746e3a97ab9ceda308c006af424f7
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 5e05e50e60e52553a7697f74431011820c52807d
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320611"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325884"
 ---
 # <a name="console-overview"></a>控制台概述
 
@@ -33,13 +33,13 @@ DevTools 的控制台工具可帮助你完成多项任务： ****
 
 :::image type="content" source="../media/console-intro-console-panel.msft.png" alt-text="下面板中的&quot;控制台&quot;和&quot;元素&quot;工具在它上方打开。" lightbox="../media/console-intro-console-panel.msft.png":::
 
-直接打开控制台的最快方法为选择**** (Windows、Linux) `Control` + `Shift` + `J` 或 `Command` + `Option` + `J` (macOS) 。
+直接打开控制台的最快方法为选择**** (Windows、Linux) 或 `Control` + `Shift` + `J` `Command` + `Option` + `J` (macOS) 。
 
 
 <!-- ====================================================================== -->
 ## <a name="error-reports-and-the-console"></a>错误报告和控制台
 
-控制台 **是** 报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，"**** 问题"计数器将显示在 DevTools 中提供错误和警告**数量的**设置 图标旁边。  选择 **"问题"** 计数器以打开 **"问题** "工具并显示问题。  有关详细信息，请参阅修复控制台中 [报告的 JavaScript 错误](console-debug-javascript.md)。
+控制台 **是** 报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，"**** 问题"计数器将显示在 DevTools**设置**图标旁边，该图标提供错误和警告的数量。  选择 **"问题"** 计数器以打开 **"问题** "工具并显示问题。  有关详细信息，请参阅修复控制台中 [报告的 JavaScript 错误](console-debug-javascript.md)。
 
 DevTools 提供有关控制台中错误 **的详细信息**：
 
@@ -61,7 +61,7 @@ DevTools 提供有关控制台中错误 **的详细信息**：
 
 :::image type="content" source="../media/search-console-new-tab.msft.png" alt-text="从搜索控制台错误功能打开的新选项卡。" lightbox="../media/search-console-new-tab.msft.png":::
 
-此功能是在版本 94 Microsoft Edge引入的。
+此功能是在 94 Microsoft Edge引入的。
 
 
 <!-- ====================================================================== -->
@@ -81,7 +81,7 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
 
 控制台最常见的用例是使用 方法**** 或其他类似方法从脚本 `console.log()` 中记录信息。  若要试用，请进行以下尝试：
 
-1.  若要打开控制台 **，请选择** `Control` + `Shift` + `J` (Windows、Linux) 或 (`Command` + `Option` + `J` macOS) 。
+1.  若要打开控制台 **，** 请选择 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS) 。
 1.  请参阅 [控制台消息示例：日志、信息、错误和警告](https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html)，或在控制台中复制并运行以下 **代码**。
 
     ```javascript
@@ -197,7 +197,7 @@ When you open DevTools on a webpage， there may be the overwhelming amount of i
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [使用控制台与 DOM 交互](console-dom-interaction.md)。
+*  [使用控制台 与 DOM 交互](console-dom-interaction.md)。
 *  [控制台功能参考](reference.md)
 *  [控制台实用工具 API 参考](utilities.md)
 *  [控制台 API 参考](api.md)

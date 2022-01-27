@@ -1,17 +1,17 @@
 ---
-title: 适用于初学者的 DevTools：CSS 入门
+title: CSS 入门
 description: 开始使用 CSS 的 DevTools 教程。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/26/2021
-ms.openlocfilehash: 7c1800d76d7f8e7bd67f1e8454c1b66e37df0387
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: fdb04d178269c68986d300848d7b2de7a027c8bd
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323185"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325310"
 ---
 <!-- Copyright Katherine Jackson
 
@@ -26,14 +26,14 @@ ms.locfileid: "12323185"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="devtools-for-beginners-get-started-with-css"></a>适用于初学者的 DevTools：CSS 入门
+# <a name="get-started-with-css"></a>CSS 入门
 
 本教程介绍如何使用 CSS 设置网页样式。  此外，还了解如何使用 Microsoft Edge DevTools 试验 CSS 更改。
 
 本文是一系列教程的一部分，这些教程将指导你 Web 开发和开发工具Microsoft Edge基础知识。  通过实际构建自己的网站，可以获得实践体验。  在执行此操作之前，你不必完成前面的教程。  [设置代码将](#set-up-your-code) 演示如何进行设置。
 
 > [!NOTE]
-> 本教程专为绝对初学者设计，专注于 Web 开发 **的** 基础知识和使用 DevTools 进行 CSS 测试的基础知识。  如果你需要一个仅侧重于 DevTools 的教程，请导航到查看和 [更改 CSS 入门](../css/index.md)。
+> 本教程专为绝对初学者设计，专注于 Web 开发 **的** 基础知识和使用 DevTools 进行 CSS 测试的基础知识。  如果你需要一个仅侧重于 DevTools 的教程，请参阅开始[查看和更改 CSS。](../css/index.md)
 
 在本教程的开头，您的网站应如下图所示。
 
@@ -61,7 +61,7 @@ ms.locfileid: "12323185"
 
 完成以下先决条件，然后再执行本教程。
 
-*   使用[入门完成 HTML](./html.md)和 DOM 的填写操作，或确保您已了解 HTML 和 DOM。
+*   使用[入门 DOM](./html.md)完成 HTML 和 DOM 的填写，或确保您已了解 HTML 和 DOM。
 *   下载 [Microsoft Edge](https://www.microsoftedgeinsider.com) Web 浏览器。  以下教程使用一组内置于 Microsoft Edge 中的 Web 开发工具（称为 Microsoft Edge DevTools）。
 
 
@@ -508,13 +508,13 @@ li a {
 
 *   更好地进行 Web 开发的最好办法就是构建更多网站。  不要担心中断工作。  请一直玩得有趣，并尽可能学习。
 *   若要了解有关设置网页样式的信息，请导航到 CSS [简介](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS)。
-*   若要详细了解如何在 DevTools 中试验 CSS，请导航到入门[查看和更改 CSS。](../css/index.md)
+*   若要详细了解如何在 DevTools 中试验 CSS，请参阅开始[查看和更改 CSS。](../css/index.md)
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css) ，由位于 Chrome DevTools 技术编写器 (的 [Katherine Writer](https://developers.google.com/web/resources/contributors#katherine-jackson)) 。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css)<!-- redirects to https://developer.chrome.com/docs/devtools/css/ by Kayce Basques --> 由来自技术编写器 [ (，Chrome](https://developers.google.com/web/resources/contributors#katherine-jackson) DevTools) 。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

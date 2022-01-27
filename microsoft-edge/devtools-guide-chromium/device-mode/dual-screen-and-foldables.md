@@ -1,19 +1,19 @@
 ---
-title: 在 DevTools 中模拟双屏幕和可折叠Microsoft Edge设备
+title: 模拟双屏幕和可折叠设备
 description: 使用 Microsoft Edge 中的虚拟设备增强双屏幕和可折叠设备的网站。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 2ff8e25b2be1114062fc4b5b3796dd10edbd5d71
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 88b4d1908f06cf6e217274d557b188903c8547ca
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323024"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12326010"
 ---
-# <a name="emulate-dual-screen-and-foldable-devices-in-microsoft-edge-devtools"></a>在 DevTools 中模拟双屏幕和可折叠Microsoft Edge设备
+# <a name="emulate-dual-screen-and-foldable-devices"></a>模拟双屏幕和可折叠设备
 
 你可以模拟 DevTools 中的以下双屏幕和可折叠Microsoft Edge设备。
 
@@ -75,7 +75,7 @@ ExperimentalApis ** (** Web 平台功能。) ![ 图标显示"实验性 Web ](../
 <!-- ====================================================================== -->
 ## <a name="additional-resources"></a>其他资源
 
-下面是可帮助你增强用于双屏幕设备 (应用) 应用的其他资源。
+下面是可以帮助你增强用于双屏幕设备的 (或) 应用的其他资源。
 
 *   有关在双屏设备上进行 Web 开发的信息，请导航到 [双屏幕 Web 体验](/dual-screen/web/index)。
-*   安装 [Surface Duo 仿真器](/dual-screen/android/use-emulator)。  Surface Duo 仿真器不同于 Microsoft Edge 中的仿真器，运行 Android，并且与[Android Studio 集成](https://developer.android.com/studio/)。  有关详细信息，请导航到[获取 Surface Duo SDK](/dual-screen/android/get-duo-sdk)。
+*   安装 [Surface Duo 仿真器](/dual-screen/android/use-emulator)。  Surface Duo 模拟器不同于 Microsoft Edge 中的仿真器，运行 Android，并且与[Android Studio 集成](https://developer.android.com/studio/)。  有关详细信息，请导航到[获取 Surface Duo SDK](/dual-screen/android/get-duo-sdk)。

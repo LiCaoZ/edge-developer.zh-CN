@@ -1,17 +1,17 @@
 ---
-title: 使用调试程序功能
+title: JavaScript 调试功能
 description: 在此 Microsoft Edge DevTools 调试功能的全面参考中发现新的调试工作流。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: bf212075b78cc7a2062e13adcf2e420eda326923
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: fd43a946d15e4ce9d017bab4afd251fc5a1ad9d4
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12324284"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325611"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,11 +26,11 @@ ms.locfileid: "12324284"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="use-the-debugger-features"></a>使用调试程序功能
+# <a name="javascript-debugging-features"></a>JavaScript 调试功能
 
 本文介绍了如何在 DevTools Microsoft Edge调试器，包括如何设置代码行断点。  若要设置其他类型的断点，请参阅 [使用断点暂停代码](./breakpoints.md)。
 
-若要了解调试的基础知识，请参阅调试 [JavaScript](./index.md)入门，这是一个使用基于表单的现有网页的教程。  本教程具有屏幕捕获，因此你可以浏览它。  您可以使用演示网页轻松试用调试器功能。
+若要了解调试的基础知识，请参阅开始调试 [JavaScript，](./index.md)这是一个使用基于表单的现有网页的教程。  本教程具有屏幕捕获，因此你可以浏览它。  您可以使用演示网页轻松试用调试器功能。
 
 
 <!-- ====================================================================== -->
@@ -346,7 +346,7 @@ function animate() {
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [入门调试 JavaScript](./index.md) - 使用现有代码的简单简短教程，包含屏幕捕获。
+*  [JavaScript 调试入门](./index.md) - 使用现有代码的简单简短教程，包含屏幕捕获。
 *  [源工具概述](../sources/index.md) - **源工具** 包括 JavaScript 调试程序和编辑程序。
 *  [禁用 JavaScript](./disable.md)。
 
@@ -356,5 +356,5 @@ function animate() {
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/reference)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

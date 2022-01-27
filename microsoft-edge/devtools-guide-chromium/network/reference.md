@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
-ms.openlocfilehash: 89f2cc5ad5fb478954816ee5572f67e6b80b2e4e
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: bc0ff63f0e50b9e49f7eafb14c003b9bff232c36
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12324781"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325541"
 ---
 <!-- Copyright Kayce Basques
 
@@ -42,8 +42,9 @@ ms.locfileid: "12324781"
 
 若要停止录制请求：
 
-1.  在" **网络"** 工具上，单击"停止 **记录网络日志 ("** ![ 停止录制网络日志 ](../media/record-on-icon.msft.png) "。) 。  它变为灰色，表示开发人员工具不再记录请求。
-1.  在 (Windows焦点时) `Control` + `E` Linux (或 `Command` + `E`) macOS**** 命令。
+1. 在" **网络"** 工具上，单击"停止 **记录网络** 日志 ![ ("停止录制网络日志 ](../media/record-on-icon.msft.png) "。) 。  它变为灰色，表示开发人员工具不再记录请求。
+
+1. 在 (Windows焦点时) Linux (`Control` + `E` `Command` + `E` 或) macOS**** 命令。
 
 ### <a name="clear-requests"></a>清除请求
 
@@ -72,8 +73,11 @@ ms.locfileid: "12324781"
 若要捕获屏幕截图，在网络工具 **聚焦时刷新** 页面。
 
 捕获屏幕截图后，可以按照以下方式与其交互：
+
 *   将鼠标悬停在屏幕截图上以显示截图的位置。  “**概述**”格上将显示一条黄线。
+
 *   单击屏幕的缩略图以筛选出屏幕截图捕获后发生的任何请求。
+
 *   双击缩略图可将其放大。
 
 将鼠标悬停在屏幕截图上：
@@ -102,10 +106,10 @@ ms.locfileid: "12324781"
 
 #### <a name="disable-the-browser-cache-from-the-network-conditions-drawer"></a>从“网络条件”抽屉中禁用浏览器缓存
 
-如果要在其他开发工具面板中工作时禁用缓存，请使用“网络条件”抽屉。
+如果要在其他 DevTools 面板中操作时禁用缓存，请使用网络条件箱：
 
-1.  打开“**网络条件**”抽屉。
-1.  打开或 (禁用 **) "复选框** 。
+1. 打开“**网络条件**”抽屉。
+1. 选中或清除" **禁用缓存"** 复选框。
 
 <!--todo: add network condition section when available -->
 
@@ -159,7 +163,9 @@ ms.locfileid: "12324781"
 要手动替代用户代理，请使用以下步骤。
 
 1.  打开“**网络条件**”抽屉。
+
 1.  清除" **自动选择"** 复选框。
+
 1.  从菜单中选择用户代理选项，或在文本框中输入自定义用户代理。
 
 
@@ -169,12 +175,15 @@ ms.locfileid: "12324781"
 如果你的网站使用用户 [代理客户端提示，](../../web-platform/user-agent-guidance.md)请使用网络 **条件** 面板提供不同的用户代理客户端提示。
 
 1. 右键单击网页，然后选择"检查 **"。**
+
 1. 选择 **"**  >  **网络网络条件"。**
+
 1. 在"用户代理"面板中，清除 **"使用浏览器默认"** 复选框，然后选择"**用户代理客户端提示"。**
 
     :::image type="content" source="images/network-conditions-user-agent-client-hints.msft.png" alt-text="设置用户代理客户端提示。" lightbox="images/network-conditions-user-agent-client-hints.msft.png":::
 
 1. 接受"自定义 **..."** 默认值，或者从下拉列表中选择预定义的浏览器和设备。
+
 1. 对于任一选项，按如下方式设置用户代理客户端提示。
     * **品牌**和**版本**，如*Edge*和*92。*  单击 **" + 添加品牌** "以添加多个品牌和版本对。
     * **完整浏览器版本**，例如*92.0.1111.0。*
@@ -186,13 +195,16 @@ ms.locfileid: "12324781"
     > 设置或更改任何用户代理客户端提示。 没有所需的值。
 
 1. 选择**更新**。
+
 1. 若要验证更改，请单击" **控制台** "并键入 `navigator.userAgentData` 。 根据需要展开结果以查看用户代理数据更改。
 
-还可以在"模拟移动设备"的 Microsoft Edge[中设置用户代理客户端Microsoft Edge。](../device-mode/index.md)
+还可以在模拟移动设备和设备仿真中设置 ([客户端) 。 ](../device-mode/index.md)
 
 
 <!-- ====================================================================== -->
 ## <a name="filter-requests"></a>筛选请求
+
+可以按属性、类型或时间筛选请求，也可以隐藏数据 URL。
 
 ### <a name="filter-requests-by-properties"></a>按属性筛选请求
 
@@ -218,7 +230,7 @@ ms.locfileid: "12324781"
 | `method` | 显示通过指定的 HTTP 方法类型检索的资源。  开发工具用找到的所有 HTTP 方法填充下拉列表。 |
 | `mime-type` | 显示指定 MIME 类型的资源。  开发工具用找到的所有 MIME 类型填充下拉列表。 |
 | `mixed-content` | 显示所有混合内容 () `mixed-content:all` 或只显示当前 () 。 `mixed-content:displayed` |
-| `scheme` | 显示通过未保护的 HTTP () 或受保护的 `scheme:http` HTTPS () 。 `scheme:https` |
+| `scheme` | 显示通过未受保护的 HTTP () 或受保护的 `scheme:http` HTTPS `scheme:https` () 。 |
 | `set-cookie-domain` | 显示具有与指定值匹配的 `Domain` 属性的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 域填充“自动完成”。 |
 | `set-cookie-name` | 显示具有名称与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 名称填充“自动完成”。 |
 | `set-cookie-value` | 显示具有值与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 值填充“自动完成”。 |
@@ -240,7 +252,7 @@ ms.locfileid: "12324781"
 
 如果未显示按钮，则" **筛选器"** 窗格可能处于隐藏状态。  请参阅 [隐藏筛选器窗格](#hide-the-filters-pane)。
 
-若要同时启用多类型筛选器，请长按 (Windows、Linux) 或 `Control` `Command` (macOS) 然后单击筛选器。
+若要同时启用多类型筛选器，请长按 `Control` (Windows、Linux) 或 (`Command` macOS) ，然后单击筛选器。
 
 使用类型筛选器显示 JS、CSS 和文档资源：
 
@@ -479,7 +491,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
   - 浏览器正在磁盘缓存中短暂分配空间。
 - **已停止**。 由于 **Queueing**中所述的任何原因，请求可能会停止。
 - **DNS 查找**。 浏览器正在解析请求的 IP 地址。
-- **初始连接**。 浏览器正在建立连接，包括 TCP 握手，然后重试和协商 SSL (层) 。
+- **初始连接**。 浏览器正在建立连接，包括 TCP 握手，然后重试和协商安全套接字层 (SSL) 。
 - **代理协商**。 浏览器正在与[代理服务器](https://en.wikipedia.org/wiki/Proxy_server)协商请求。
 - **请求已发送**。 正在发送请求。
 - **ServiceWorker Preparation**。 浏览器正在启动服务工作线程。
@@ -659,5 +671,5 @@ init();
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/network/reference)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

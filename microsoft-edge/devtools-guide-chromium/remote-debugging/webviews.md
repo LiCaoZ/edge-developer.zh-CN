@@ -1,17 +1,17 @@
 ---
-title: Android WebViews 远程调试入门
+title: 远程调试 Android WebView
 description: 使用开发人员工具在本机 Android 应用中远程调试 WebView Microsoft Edge入门。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: bff32bb2f1120c225335808b6a8de0ba32b8d46f
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: b8899766c298bcc00d821005bee7accbd473cfe2
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12322947"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325849"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -26,7 +26,7 @@ ms.locfileid: "12322947"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="get-started-with-remote-debugging-android-webviews"></a>Android WebViews 远程调试入门
+# <a name="remotely-debug-android-webviews"></a>远程调试 Android WebView
 
 使用开发人员工具在本机 Android 应用中Microsoft Edge Android WebView。
 
@@ -93,5 +93,5 @@ The gray graphics listed with the Android WebView represent its size and positio
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](http://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) 由技术撰稿人 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (创作) 。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](http://creativecommons.org/licenses/by/4.0)获得许可。

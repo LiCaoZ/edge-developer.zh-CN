@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
-ms.openlocfilehash: 52710e66680759ce74a5219cfec7010a5932857a
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 4ffb6afd8f67bd58b52dbc5470893fd8cb81f9d6
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323528"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325744"
 ---
 # <a name="run-javascript-in-the-console"></a>在控制台中运行 JavaScript
 
@@ -115,4 +115,4 @@ copy(await (await fetch(
 )).json())
 ```
 
-使用 **控制台** 作为实践 JavaScript 和进行一些快速计算的一种好方法。  真正的功能是，您有权访问 [window](https://developer.mozilla.org/docs/Web/API/Window) 对象。  可以使用 [控制台与 DOM 进行交互](console-dom-interaction.md)。
+使用 **控制台** 作为实践 JavaScript 和进行一些快速计算的一种好方法。  真正的功能是，您有权访问 [window](https://developer.mozilla.org/docs/Web/API/Window) 对象。  可以使用 [控制台 与 DOM 进行交互](console-dom-interaction.md)。

@@ -6,14 +6,14 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
-ms.openlocfilehash: 68e81080094755b0be664eded131f6d6a18c8344
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: fb0f5d7adaa68bf4c416ace18170d69406da9559
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323626"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325751"
 ---
-# <a name="use-the-console-to-interact-with-the-dom"></a>使用控制台与 DOM 交互
+# <a name="interact-with-the-dom-using-the-console"></a>使用控制台与 DOM 交互
 
 控制台 **工具** 并不仅仅是用于 [日志记录信息](console-log.md) 或 [运行任意 JavaScript](console-javascript.md)。  这也是在浏览器中与网页交互的一种很好的方法。  请考虑它是 Inspect 工具的 **脚本环境版本** 。
 

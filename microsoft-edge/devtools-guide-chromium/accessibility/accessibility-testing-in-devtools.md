@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 30ca5baf34a65ad140368f276b6464b7bc03e680
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: f3cc841ab030063b8507ad660409e88067533d59
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323668"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325821"
 ---
 # <a name="overview-of-accessibility-testing-using-devtools"></a>使用 DevTools 的辅助功能测试概述
 
@@ -23,7 +23,7 @@ ms.locfileid: "12323668"
 <!-- ====================================================================== -->
 ## <a name="automated-testing-by-using-the-issues-tool"></a>使用问题工具自动测试
 
-When you open the demo page in the browser and open DevTools， notice that some issues are automatically detected in the **Issues counter**.  单击" **问题" ("** 问题"计数器。) 打开 ![ ](../media/issues-counter-icon.msft.png) [问题工具][DevToolsIssuesTool]以查看问题和详细信息。
+When you open the demo page in the browser and open DevTools， notice that some issues are automatically detected in the **Issues counter**.  单击问题 **计数器** (问题"计数器 ![ 。) 打开 ](../media/issues-counter-icon.msft.png) [问题工具][DevToolsIssuesTool]以查看问题和详细信息。
 
 :::image type="content" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="&quot;问题&quot;计数器显示当前网页中有多少问题，并打开&quot;问题&quot;工具。" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
 
@@ -92,11 +92,14 @@ When you open the demo page in the browser and open DevTools， notice that some
 可以通过调整浏览器窗口的大小来模拟较窄的视区，但测试设计响应性更好的方法就是使用 **设备仿真** 工具。  以下是设备仿真 **工具的一** 些功能，可帮助你查找任何网站的辅助功能问题：
 
 *  无需调整浏览器窗口的大小，即可调整页面大小并测试 CSS [媒体](../device-mode/index.md#show-media-queries) 查询是否触发布局更改。
-*  检查是否使用鼠标的依赖项。 默认情况下，设备仿真假定为触摸设备。 这意味着产品依赖于悬停交互的任何功能将不起作用。
+
+*  检查是否使用鼠标的依赖项。 默认情况下， **设备仿真** 假定为触摸设备。 这意味着产品依赖于悬停交互的任何功能将不起作用。
+
 *  通过模拟不同的设备、缩放级别和像素比率执行视觉测试。
+
 *  测试产品在不可靠连接或用户脱机时的行为方式。  在低速连接上向用户显示最重要的交互也是辅助功能注意事项。
 
-若要了解有关设备仿真**工具**的信息，请参阅在[DevTools](../device-mode/index.md)中模拟Microsoft Edge移动设备。
+若要了解有关设备仿真**工具**的信息，请参阅模拟移动设备[ (设备仿真) 。 ](../device-mode/index.md)
 
 
 ### <a name="wavy-underlines-in-the-dom-tree-indicate-automatically-detected-issues"></a>DOM 树中的波浪下划线指示自动检测到的问题
@@ -244,7 +247,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 使用 元素实现"支持"表单上的按钮，而自动测试工具无法将元素识别 `div` 为表单上的控件。
 
-若要调查这一点，可以使用 **"检查** "工具将鼠标悬停在"捐赠"表单的按钮上。  结果是它们都不是键盘可访问的，如信息覆盖的 **键盘** 可聚焦行上的灰色圈所指示。  如信息覆盖的****"名称****"和"角色"行所示，"捐赠"表单的按钮也没有任何名称，它们的角色为 (表示或元素 `generic` `div` `span`) ，这意味着它们不能通过辅助技术访问。
+若要调查这一点，可以使用 **"检查** "工具将鼠标悬停在"捐赠"表单的按钮上。  结果是它们都不是键盘可访问的，如信息覆盖的 **键盘** 可聚焦行上的灰色圈所指示。  如信息覆盖的****"名称****"和"角色"行所示，"捐赠"表单的按钮也没有任何名称，其角色为 (表示或元素 `generic` `div` `span`) ，这意味着它们不能通过辅助技术访问。
 
 :::image type="content" source="../media/a11y-testing-donation-button-info.msft.png" alt-text="检查窗体的按钮时发现它们不能通过键盘访问。" lightbox="../media/a11y-testing-donation-button-info.msft.png":::
 
@@ -341,7 +344,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 :::image type="content" source="../media/a11y-testing-inspecting-link-to-hover.msft.png" alt-text="检查元素工具中具有悬停状态的元素。" lightbox="../media/a11y-testing-inspecting-link-to-hover.msft.png":::
 
-在" **样式"** 选项卡上，单击 **"\：hov (Toggle 元素状态) ** 按钮。  然后使用 **Force 元素状态** 复选框选择要模拟的状态。
+在" **样式"** 选项卡上，单击 **"\：hov (切换元素状态) ** 按钮。  然后使用 **Force 元素状态** 复选框选择要模拟的状态。
 
 :::image type="content" source="../media/a11y-testing-state-simulation.msft.png" alt-text="显示所有选项的状态模拟功能。" lightbox="../media/a11y-testing-state-simulation.msft.png":::
 
@@ -393,7 +396,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 :::image type="content" source="../media/a11y-testing-simulating-blur.msft.png" alt-text="模拟模糊的页面可能会发现辅助功能问题。" lightbox="../media/a11y-testing-simulating-blur.msft.png":::
 
 
-### <a name="verify-that-the-page-is-usable-with-ui-animation-turned-off-reduced-motion"></a>验证页面是否可用，并关闭 UI 动画， (运动) 
+### <a name="verify-that-the-page-is-usable-with-ui-animation-turned-off-reduced-motion"></a>验证页面是否可用，并关闭 UI 动画 (减少运动) 
 
 这些天操作系统提供的另一个设置是关闭动画的方法。  动画可以帮助产品的可用性，但它们也会导致许多问题，包括混淆和混乱。 这就是产品不应向在操作系统中关闭动画的用户显示动画的原因。  通过使用 CSS 媒体查询，您可以检查用户是否希望查看动画，并相应地将其关闭。  而且，与深色和浅色模式很类似，有一种方法可以模拟使用 [DevTools 的减少运动](./reduced-motion-simulation.md)。
 
@@ -417,7 +420,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 <!-- ====================================================================== -->
 ## <a name="what-to-do-next"></a>下一步该怎么办？
 
-我们介绍了许多可用于确保捕获产品中的辅助功能问题的工具。  这些工具的范围从自动检查和手动详细检查到不同状态和环境的模拟。  这些工具汇总在 [DevTools 中的辅助功能测试功能中](reference.md)。  自动化工具无法找到产品的所有问题，因为许多辅助功能障碍仅在交互式使用期间出现。
+我们介绍了许多可用于确保捕获产品中的辅助功能问题的工具。  这些工具的范围从自动检查和手动详细检查到不同状态和环境的模拟。  辅助功能测试功能 中 [总结了这些工具](reference.md)。  自动化工具无法找到产品的所有问题，因为许多辅助功能障碍仅在交互式使用期间出现。
 
 这些工具均无法将正确的一轮产品测试替换为使用辅助技术并遵循检查所有所需测试的计划。 此外，您还可以使用[辅助功能](https://accessibilityinsights.io/docs/en/web/getstarted/assessment/)评估[Insights。](https://accessibilityinsights.io)  您可能需要执行其他检查，例如：
 

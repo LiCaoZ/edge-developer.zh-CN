@@ -1,17 +1,17 @@
 ---
 title: 加速 JavaScript 运行时
-description: 使用 DevTools 的内存面板识别高成本、低效率Microsoft Edge函数。
+description: 使用 DevTools 的内存面板识别成本昂贵、效率低下Microsoft Edge函数。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 4a857e53e28eac34c1237592e49d1cceafeaeb20
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: e117c47a31d90d0dbe5928fa759d5d24171dabd0
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12324872"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325100"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -28,7 +28,7 @@ ms.locfileid: "12324872"
    limitations under the License. -->
 # <a name="speed-up-javascript-runtime"></a>加速 JavaScript 运行时
 
-使用**内存**工具识别内存占用大的函数。
+若要识别昂贵的函数，请使用 **内存** 工具。
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="示例配置文件。" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
    示例配置文件
@@ -60,7 +60,7 @@ ms.locfileid: "12324872"
 
 记录完成后，DevTools 会使用记录的数据自动填充**采样配置文件**下的**内存**面板。
 
-默认视图为"粗** (从下向上) "。 **  使用该视图允可以查看哪些函数对性能影响最大，并检查每个函数的请求路径。
+默认视图为"粗** (向上) "。 **  使用该视图允可以查看哪些函数对性能影响最大，并检查每个函数的请求路径。
 
 ### <a name="change-sort-order"></a>更改排序顺序
 
@@ -86,7 +86,7 @@ ms.locfileid: "12324872"
 
 ### <a name="exclude-functions"></a>排除函数
 
-若要从采样配置文件中排除函数，请选择该函数，然后选择排除所选函数 ** (** ![ 排除所选函数。) ](../media/exclude-icon.msft.png) 按钮。  请求函数 (的) 的父 (子) 由分配给已排除函数的 (分配的内存) 。
+若要从采样配置文件中排除函数，请选择该函数，然后选择排除所选函数 ** (** ![ 排除所选函数。) ](../media/exclude-icon.msft.png) 按钮。  请求函数 (的) 的父 (子) 由分配给已排除函数 (子元素的已分配内存) 。
 
 选择" **还原所有函数 (** ![ 还原所有函数。) 按钮将所有排除的函数 ](../media/restore-icon.msft.png) 还原回录制中。
 
@@ -149,7 +149,7 @@ ms.locfileid: "12324872"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution)由 (技术撰稿人、Chrome DevTools \& Lighthouse) 和[Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution)<!-- redirects to https://developer.chrome.com/docs/devtools/evaluate-performance/ --> 由技术撰稿人 [， (，Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse) 和 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

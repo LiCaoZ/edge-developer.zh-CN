@@ -1,17 +1,17 @@
 ---
-title: 模拟设备方向
+title: 使用传感器工具模拟设备方向
 description: 使用传感器工具的"方向"部分模拟设备方向。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 3e4ce1467b20ee5211446e920bf4c249dba5a63f
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: fe656e205cc98dd2782bf343e2cc2c120d78481b
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323521"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325590"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,9 +26,9 @@ ms.locfileid: "12323521"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="simulate-device-orientation"></a>模拟设备方向
+# <a name="simulate-device-orientation-with-the-sensors-tool"></a>使用传感器工具模拟设备方向
 
-从 DevTools 中模拟Microsoft Edge方向。
+模拟来自 DevTools 中的不同设备方向。
 
 <!--todo: update device orientation section when available -->
 
@@ -36,7 +36,7 @@ ms.locfileid: "12323521"
 
     :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单。" lightbox="../media/device-mode-console-command-menu.msft.png":::
 
-1.  键入 `sensors` ，选择 **显示传感器**，然后选择 `Enter` 。  传感器 **工具** 将在 DevTools 窗口底部打开。
+1.  键入 `sensors` ，选择 **显示传感器**，然后选择 `Enter` 。  传感器 **工具** 在 DevTools 窗口底部打开。
 
 1.  从 **"方向**"列表中，选择预设方向之一（如 ）或选择"自定义方向" `Portrait upside down` 来提供你自己的精确方向。 ****
 
@@ -55,5 +55,5 @@ ms.locfileid: "12323521"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/device-mode/orientation)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
-ms.openlocfilehash: 839572b5c0ee57cd49b4634fb4389376edc97742
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: a7fb535449341a55625de87d2d9c3e4dca246dde
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12324858"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325128"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -229,7 +229,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 ### <a name="new-css-angle-visualization-tools"></a>全新 CSS 角度可视化工具
 
-现在，DevTools 可以更好地支持 CSS 角度调试。  如果页面上 HTML 元素应用 CSS 角度，**样式** 工具中该角度旁边会显示一个时钟图标。  若要切换时钟覆盖层，请点击时钟图标。  若要更改角度，请点击时钟中的任何位置或拖动指针。  若要更改角度值，还可使用鼠标和键盘快捷方式。  若要了解更多信息，请参阅[使用角度时钟更改角度值](../../../css/reference.md#change-angle-value-with-the-angle-clock)。  若要在 Chromium 开源项目中查看此功能的实时更新，请参阅问题 [1126178](https://crbug.com/1126178) 和 [1138633](https://crbug.com/1138633)。
+DevTools 现在更好地支持 CSS 角度调试。  如果页面上 HTML 元素应用 CSS 角度，**样式** 工具中该角度旁边会显示一个时钟图标。  若要切换时钟覆盖层，请点击时钟图标。  若要更改角度，请单击时钟中的任意位置、拖动针或使用鼠标和键盘快捷方式。  若要了解更多信息，请参阅[使用角度时钟更改角度值](../../../css/reference.md#change-angle-value-with-the-angle-clock)。  若要在 Chromium 开源项目中查看此功能的实时更新，请参阅问题 [1126178](https://crbug.com/1126178) 和 [1138633](https://crbug.com/1138633)。
 
 以下 CSS 角度用于示例：
 
@@ -249,7 +249,7 @@ background: linear-gradient(100deg, lightblue, pink);
 1.  打开 **模拟自定义存储配额** 复选框。
 1.  输入有效号码。
 
-若要了解如何在 DevTools 中模拟移动设备和其他功能的详细信息，请导航至 [在 Microsoft Edge DevTools 中模拟移动设备移动设备](../../../device-mode/index.md)。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [945786](https://crbug.com/945786) 和 [1146985](https://crbug.com/1146985)。
+有关如何模拟 DevTools 中的移动设备和其他功能的详细信息，请参阅[模拟移动设备（设备仿真）](../../../device-mode/index.md)。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [945786](https://crbug.com/945786) 和 [1146985](https://crbug.com/1146985)。
 
 :::image type="complex" source="../../media/2020/11/storage-quota.msft.png" alt-text="模拟存储配额大小。" lightbox="../../media/2020/11/storage-quota.msft.png":::
    模拟存储配额大小

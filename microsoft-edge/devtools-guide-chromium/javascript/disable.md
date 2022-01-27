@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: a1712c3cee4b4972d9d03c6bbbae6d164bdf83b8
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 76aa0327a857d982b8b06b0253d4db22e3becb1f
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12322954"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325282"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,12 +28,13 @@ ms.locfileid: "12322954"
    limitations under the License.  -->
 # <a name="disable-javascript"></a>禁用 JavaScript
 
-若要在浏览器不支持 JavaScript 时查看网页的呈现效果，请暂时关闭 JavaScript。
+若要了解网页在浏览器不支持 JavaScript 时如何呈现和行为，请暂时关闭 JavaScript。
 
-完成以下操作以检查网页在关闭 JavaScript 时如何显示和行为。
+若要关闭 JavaScript：
 
-1.  [打开 Microsoft Edge DevTools](../open/index.md)。
-1.  选择 `Control`+`Shift`+`P` (Windows、Linux)或 `Command`+`Shift`+`P` (macOS)以打开 **命令菜单**。
+1.  [打开 DevTools](../open/index.md)。
+
+1.  按 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
 
     :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="命令菜单。" lightbox="../media/javascript-console-command.msft.png":::
        **命令菜单**
@@ -53,12 +54,11 @@ ms.locfileid: "12322954"
 
 只要打开 DevTools，JavaScript 在选项卡中就保持禁用状态。
 
-你可能想要刷新页面，以检查网页在加载时是否以及如何依赖于 JavaScript。
+若要在加载时查看页面是否依赖于 JavaScript，请刷新页面。
 
-若要重新启用 JavaScript，请完成以下操作。
-
-*   再次 **打开命令菜单** 并运行 `Enable JavaScript` 命令。
-*   关闭 DevTools。
+若要重新启用 JavaScript：
+1. 按 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
+1. 选择" **启用 JavaScript"** 命令。
 
 
 <!-- ====================================================================== -->
@@ -66,5 +66,5 @@ ms.locfileid: "12322954"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/javascript/disable)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

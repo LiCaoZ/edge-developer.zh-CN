@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/03/2021
-ms.openlocfilehash: 3972b79634e9bad30cfbeb36af4b5d6e84ac2138
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: c90a87eca179a6505d5b9ad95e6b8b450a41e0b8
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12324088"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12326003"
 ---
 <!-- Copyright Kayce Basques
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ ms.locfileid: "12324088"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="apply-color-themes-to-devtools"></a>将颜色主题应用到 DevTools
+# <a name="apply-a-color-theme-to-devtools"></a>将颜色主题应用到 DevTools
 
 你可以将各种颜色主题应用到 Microsoft Edge Tools，包括多个来自 Visual Studio Code 的主题，[例如](https://code.visualstudio.com)Monokai 和大光深色。  主题影响窗格、按钮和代码语法突出显示的颜色。
 
@@ -92,5 +92,6 @@ ms.locfileid: "12324088"
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

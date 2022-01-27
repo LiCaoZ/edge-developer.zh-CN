@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.assetid: 1e5c42a7-4604-46ac-ad7b-a65390e5b36a
 ms.date: 04/16/2020
-ms.openlocfilehash: f9b8fedd22e704ab6ec06369f75c0bdb65c1bfc6
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 2a68bf6ab1a69f7678f7d21f3289b19818302c0a
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323402"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325702"
 ---
 # <a name="accessibility-overview"></a>辅助功能概述
 
@@ -46,7 +46,7 @@ Microsoft Edge团队持续与 W3C 和其他浏览器供应商合作，以确保�
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [DevTools 中的](../devtools-guide-chromium/accessibility/reference.md) 辅助功能测试功能 - 要测试的辅助功能方面列表和相应的 DevTools 功能。
+*  [辅助功能测试功能](../devtools-guide-chromium/accessibility/reference.md) - 要测试的辅助功能方面列表和相应的 DevTools 功能。
 *  [使用 DevTools](../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md) 的辅助功能测试概述 - 使用 DevTools 功能测试辅助功能演示页面的演练。
 
 W3C 文章：

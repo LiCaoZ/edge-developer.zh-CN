@@ -1,17 +1,17 @@
 ---
-title: 模拟移动设备
+title: '模拟移动设备 (设备仿真) '
 description: 使用 Microsoft Edge 中的虚拟设备构建移动优先的网站。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
-ms.openlocfilehash: e0013d4d84765d3184903c62af17a541be62e076
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 3b86fe20603d8dd82f14b5f4a16c36c2e0ba7116
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323570"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325765"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,10 +26,9 @@ ms.locfileid: "12323570"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="emulate-mobile-devices"></a>模拟移动设备
+# <a name="emulate-mobile-devices-device-emulation"></a>模拟移动设备 (设备仿真) 
 
-使用“**设备仿真**”来大致了解你的页面在移动设备上的外观和响应方式。  Microsoft Edge DevTools 提供了一系列功能，可帮助你模拟移动设备。  该集合包括以下功能：
-
+使用 **"设备仿真** "大致了解页面在移动设备上的外观和响应方式。  DevTools 提供了一组功能，可帮助你模拟移动设备：
 *   [模拟移动视区](#simulate-a-mobile-viewport)
 *   [限制网络](#throttle-the-network-only)
 *   [限制 CPU](#throttle-the-cpu-only)
@@ -42,7 +41,7 @@ ms.locfileid: "12323570"
 <!-- ====================================================================== -->
 ## <a name="limitations"></a>限制
 
-**设备仿真**是移动设备中的页面外观的[一级近似值](https://en.wikipedia.org/wiki/Order_of_approximation#First-order)。  **设备仿真** 实际上不会在移动设备上运行你的代码。  相反，你可以模拟笔记本电脑或台式机的移动用户体验。
+**设备仿真** 是 [移动设备中](https://en.wikipedia.org/wiki/Order_of_approximation#First-order) 页面外观的一级近似值。  **设备仿真** 实际上不会在移动设备上运行你的代码。  相反，你可以模拟笔记本电脑或台式机的移动用户体验。
 
 移动设备的某些方面从不在 DevTools 中模拟。  例如，移动 CPU 的体系结构与笔记本电脑或台式机 CPU 的体系结构不同。  如有疑问，最佳选择是在移动设备上实际运行页面。
 
@@ -52,7 +51,7 @@ ms.locfileid: "12323570"
 <!-- ====================================================================== -->
 ## <a name="simulate-a-mobile-viewport"></a>模拟移动视区
 
-选择****"切换设备仿真 (切换设备工具栏"。) 或选择"自定义和控制 ![ ](../media/toggle-device-toolbar-dark-icon.msft.png) **DevTools** (`...`) >**设备模拟**"以打开使您能够模拟移动视口的 UI。
+选择****"切换设备仿真 ("切换设备工具栏"。) 或选择"自定义和控制 ![ ](../media/toggle-device-toolbar-dark-icon.msft.png) **DevTools** () > `...` **设备仿真**"以打开使您能够模拟移动视口的 UI。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="设备工具栏。" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
 
@@ -258,6 +257,10 @@ ms.locfileid: "12323570"
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="将用户代理字符串设置为Microsoft Edge macOS 上。" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
 
+### <a name="see-also"></a>另请参阅
+
+* [替代用户代理字符串](override-user-agent.md)
+
 
 <!-- ====================================================================== -->
 ## <a name="set-user-agent-client-hints"></a>设置用户代理客户端提示
@@ -292,5 +295,5 @@ ms.locfileid: "12323570"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/device-mode/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -6,18 +6,18 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/30/2021
-ms.openlocfilehash: f44958ceb7ddbb6abdb2ef5204b12dd5f1f8a9fd
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 79a7e8b7e1e3be0009b59f32c602df96bf437a4b
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323955"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325429"
 ---
 # <a name="change-devtools-language-settings"></a>更改 DevTools 语言设置
 
 默认情况下，如果开发人员工具是当前支持的十种语言之一，则你的开发人员工具与浏览器语言匹配 (英语语言) ：
 
-* 简 (简体中文) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
+* 简 (简体) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
 * 繁体 (中文) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
 * 法语 –&#231;语
 * 德语 - 德语
@@ -32,4 +32,12 @@ ms.locfileid: "12323955"
 
 :::image type="content" source="../media/localization-zh.msft.png" alt-text="使用中文的 DevTools。" lightbox="../media/localization-zh.msft.png":::
 
-如果你想要将 DevTools 还原为英语，请导航到[DevTools 设置](./index.md#settings)或选择，选择首选项，然后关闭 `F1` "**匹配浏览器**语言"复选框。 ****
+
+<!-- ====================================================================== -->
+## <a name="reverting-devtools-to-english"></a>将 DevTools 还原为英语
+
+若要将 DevTools 还原为英语：
+
+1. 在 DevTools 中，**单击设置 (** 齿轮) 图标，或按 `F1` 。
+
+1. 在首选项 **页中** ，清除" **匹配浏览器语言"** 复选框。

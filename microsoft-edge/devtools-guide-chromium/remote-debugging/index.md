@@ -1,17 +1,17 @@
 ---
-title: Android 设备远程调试入门
+title: 远程调试 Android 设备
 description: 从 Windows 或 macOS 计算机在 Android 设备上远程调试实时内容。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: e2a5664b8d4ce50149571aeb6dd4c44c5c79c6ff
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: ff5b65eac9173117e10fe66ae2021469ac12488f
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323395"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325870"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,7 +26,7 @@ ms.locfileid: "12323395"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="get-started-with-remote-debugging-android-devices"></a>Android 设备远程调试入门
+# <a name="remotely-debug-android-devices"></a>远程调试 Android 设备
 
 从你的 Windows 或 macOS 计算机在 Android 设备上远程调试实时内容。  下面的教程页面指导你如何完成以下操作。
 
@@ -142,5 +142,5 @@ The version of Microsoft Edge running on your Android device determines the vers
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

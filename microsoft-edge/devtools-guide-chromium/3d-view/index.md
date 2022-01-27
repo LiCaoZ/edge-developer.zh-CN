@@ -1,19 +1,19 @@
 ---
-title: 3D 视图
+title: 使用 3D 视图工具导航 z-index、DOM 和图层
 description: 如何使用 3D 视图，包括导航画布、Z 索引、3D DOM 和复合层。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/03/2020
-ms.openlocfilehash: f31d62f5813da6ca6f228050b802e102708fddfd
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: c350463e81309abbc4dae55be2417a2b369d8a95
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323605"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325730"
 ---
-# <a name="3d-view"></a>3D 视图
+# <a name="navigate-z-index-dom-and-layers-using-the-3d-view-tool"></a>使用 3D 视图工具导航 z-index、DOM 和图层
 
 使用 **3D 视图** 通过浏览文档对象模型和 [DOM ](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) (或 [z 索引](https://developer.mozilla.org/docs/Web/CSS/z-index)) 上下文来调试 Web 应用。  使用 **3D 视图** 执行以下操作：
 *   [浏览翻译为 3D 视角的网页](#3d-dom)。
@@ -22,7 +22,7 @@ ms.locfileid: "12323605"
 *   [清除 DOM 窗格或](#changing-your-view) [z-index 窗格中的一些待筛选邮件](#change-the-scope-of-your-exploration)。
 *   [选取配色方案以最好地调试 DOM 问题](#dom-color-type) 或 [z-index 问题](#z-index-color-type)。
 
-若要探索 3D 视图项目的早期原型并自己运行代码，请导航到["3D 视图示例"。](https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView)
+若要探索 3D 视图项目的早期原型并自己运行代码，请转到 [3D 视图示例](https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView)。
 
 在左侧，有三个窗格可用于调试体验：
 *   Z [索引](#z-index) 窗格。  在 Web 应用中的不同元素中导航，并注意 z-index 上下文。  Z **索引窗格** 是默认窗格。
@@ -30,6 +30,16 @@ ms.locfileid: "12323605"
 *   复合 [层窗格](#composited-layers)。  添加另一个 3D 元素以从层角度创建更全面的体验。  若要访问窗格，请选择 **"DOM"** 窗格旁边的"复合层"窗格。 ****
 
 在右侧，画布显示来自[Z 索引](#z-index)[、3D DOM](#3d-dom)或[复合层的选择](#composited-layers)。
+
+
+<!-- ====================================================================== -->
+## <a name="opening-the-3d-view-panel"></a>打开 3D 视图面板
+
+若要打开 **3D 视图** 面板，在 DevTools 中，执行下列任一操作：
+
+* 单击**主工具栏** (+) 工具"，然后选择 **"3D 视图"。**
+
+* 或者，按 `Shift` + `Ctrl` + `P` 打开命令菜单，键入"3d"，然后选择**3D 视图 [箱]**。
 
 
 <!-- ====================================================================== -->
@@ -59,7 +69,7 @@ ms.locfileid: "12323605"
    屏幕控件
 :::image-end:::
 
-若要将画布视图重置为原始视图，请选择"重置**** 相机"按钮，或选择"**** 重置视图中的元素"和"将相机重新居中 (旁刷新图标) 按钮。
+若要将画布视图重置为原始视图，请选择"重置**** 相机"按钮，或选择视图中**** 的"重置元素"和"将相机重新居中 (侧向刷新图标) 按钮。
 
 若要刷新画布，例如浏览器发生更改或切换到设备仿真器视图时，请选择"重新拍摄快照"按钮或****"获取新的快照"按钮**** (刷新图标) 。
 
@@ -141,4 +151,4 @@ ms.locfileid: "12323605"
    **复合层**窗格
 :::image-end:::
 
-**复合层**窗格打开**层**工具的元素，而不更改上下文。  你仍然可以访问每个图层的详细信息，并拥有慢速**滚动****画图。**
+**复合层**窗格打开**层**工具的元素，而不更改上下文。  你仍然可以访问每个层的详细信息，并拥有慢滚动通道和**画图。** ****

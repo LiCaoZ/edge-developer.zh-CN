@@ -1,19 +1,19 @@
 ---
-title: 远程调试 Surface Duo 仿真器入门
+title: 远程调试 Surface Duo 仿真器
 description: Surface Duo 仿真器远程调试入门。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/25/2021
-ms.openlocfilehash: 5f031894e5249ddbd9f4fc61c76da48804fe1cae
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: dc2db29552c23eaa9c90a9d730d75909e3241701
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323332"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325877"
 ---
-# <a name="get-started-with-remote-debugging-surface-duo-emulators"></a>远程调试 Surface Duo 仿真器入门
+# <a name="remotely-debug-surface-duo-emulators"></a>远程调试 Surface Duo 仿真器
 
 本文将介绍从 [Microsoft Edge](https://www.microsoft.com/edge) 的桌面版实例远程调试 [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) 仿真程序上 [Microsoft Edge 应用](https://play.google.com/store/apps/details?id=com.microsoft.emmx)的 web 内容。  有关在 Surface Duo 设备上进行调试的信息，请遵循[远程调试 Android 设备](./index.md)的指南。
 

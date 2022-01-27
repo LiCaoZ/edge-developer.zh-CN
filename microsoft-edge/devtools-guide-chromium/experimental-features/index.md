@@ -21,12 +21,12 @@ no-loc:
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
 ms.date: 11/30/2021
-ms.openlocfilehash: 298c35dd76017005821bf31c5648b294a958f68a
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: b1a112163bf7d5e7ec52008f09e8caf745ed55ff
+ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12322996"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "12325107"
 ---
 # <a name="experimental-features"></a>试验功能
 
@@ -344,7 +344,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 *   辅助功能
 *   跨浏览器兼容性
-*   安全
+*   安全性
 *   性能
 *   渐进式 Web 应用 (PWA)
 *   其他常见的 Web 开发问题
@@ -386,6 +386,8 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 :::image type="content" source="../media/experiments-layers.msft.png" alt-text="复合层窗格。" lightbox="../media/experiments-layers.msft.png":::
 
 此实验默认打开。
+
+另请参阅 [使用工具导航 z-index、DOM 和 3D View 图层](../3d-view/index.md)。
 
 
 <!-- ====================================================================== -->
@@ -434,7 +436,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 Web 应用程序中的内存泄漏可能难以查找和修复。
 
-DevTools 中新的分离Microsoft Edge面板可帮助调查和解决常见内存泄漏源。 ****
+DevTools Microsoft Edge分离的元素面板可帮助调查和解决内存泄漏的常见源。 ****
 
 当应用程序的 JavaScript 代码在内存中保留数量不断增加的对象时，会发生内存泄漏。 JavaScript 代码应释放这些对象，以便浏览器可以重用内存空间。
 
@@ -446,7 +448,7 @@ DevTools 中新的分离Microsoft Edge面板可帮助调查和解决常见内存
 <!-- present in 96, 98 -->
 <!-- preserve literal UI string, including "VS" & "the" -->
 
-若要在 devTools Visual Studio主题，请VS Code**开发工具实验的开发人员**主题。 有关详细信息，请参阅向 [DevTools 应用颜色主题](../customize/theme.md)。
+若要在 devTools Visual Studio主题，请VS Code**开发工具实验的主题**。 有关详细信息，请参阅向 [DevTools 应用颜色主题](../customize/theme.md)。
 
 
 <!-- ====================================================================== -->
@@ -455,11 +457,11 @@ DevTools 中新的分离Microsoft Edge面板可帮助调查和解决常见内存
 
 实验**中的开放源文件**Visual Studio Code源工具的代码编辑器替换为用于编辑Visual Studio Code文件的代码编辑器。 打开此实验时，开发人员工具会检测何时编辑本地文件，并提示你选择一个用作工作区的文件夹。
 
-选择要用作工作区的文件夹时，在 DevTools 中选择指向文件的任何链接将在 Visual Studio Code。  在早期版本的 Microsoft Edge 中，此操作在 DevTools 中的"源"工具的代码编辑器中打开文件。
+选择要用作工作区的文件夹时，选择指向 DevTools 中的文件的任何链接将在 Visual Studio Code。  在早期版本的 Microsoft Edge 中，此操作在 DevTools 中的"源"工具的代码编辑器中打开文件。
 
 :::image type="content" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="在&quot;样式&quot;工具中选择文件链接将打开Visual Studio Code。" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
 
-现在，你在 DevTools 中执行的任何编辑都更改硬盘上的文件，并实时与Visual Studio Code。 有关设置工作区的内容，请参阅在文件打开[Visual Studio Code。](../sources/opening-sources-in-vscode.md)
+现在，你在 DevTools 中执行的任何编辑都更改硬盘上的文件，并实时与Visual Studio Code。 可以在打开数据源中的源文件中阅读有关设置[工作区Visual Studio Code。](../sources/opening-sources-in-vscode.md)
 
 
 <!-- ====================================================================== -->
@@ -521,7 +523,7 @@ These features have been promoted from experimental to regular features, and hav
 
 *  [Turn on support to move tabs between panels](../customize/index.md) - removed from experimental status starting with Microsoft Edge 85.
 
-*  [3D View](../3d-view/index.md) - removed from experimental status starting with Microsoft Edge 83.
+*  [Navigate z-index, DOM, and layers using the 3D View tool](../3d-view/index.md) - removed from experimental status starting with Microsoft Edge 83.
 
 *  The items in the following subsections.
 
