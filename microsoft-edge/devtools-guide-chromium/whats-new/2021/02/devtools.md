@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
-ms.openlocfilehash: caf1f343443dd1060eea1c1842da4ea50ad1df99
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: d580eaf1adc6a7d190bf15629e39cc3f8ba86487
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320464"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324830"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -42,7 +42,7 @@ ms.locfileid: "12320464"
 
 若要启用试验，请导航至“启用或禁用试验[](../../../experimental-features/index.md#turning-an-experiment-on-or-off)”，然后选择“焦点模式和 DevTools 工具提示****”和“启用 + 按钮选项卡菜单以打开更多工具****”旁边的复选框。  有关此功能的详细信息，或者要用问题和想法进行评论，请导航到 [DevTools: 焦点模式 UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md)。
 
-:::image type="complex" source="../../media/2021/02/focus-mode.msft.png" alt-text="显示“活动栏”" lightbox="../../media/2021/02/focus-mode.msft.png":::
+:::image type="complex" source="../../media/2021/02/focus-mode.msft.png" alt-text="显示“活动栏”。" lightbox="../../media/2021/02/focus-mode.msft.png":::
    显示“**活动栏**”
 :::image-end:::
 
@@ -71,13 +71,13 @@ DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  
 
 1.  打开 DevTools，然后选择“**设置**” > “**快捷方式**”。
 1.  选择要自定义的操作。
-1.  选择“编辑”（![“编辑键盘快捷方式”图标](../../media/2021/02/edit-keyboard-shortcut-icon.msft.png)) 图标。
+1.  选择“编辑”（![“编辑键盘快捷方式”图标。](../../media/2021/02/edit-keyboard-shortcut-icon.msft.png)) 图标。
 1.  选择要绑定到操作的按键。
-1.  选中复选标记（![复选标记键盘快捷方式图标](../../media/2021/02/checkmark-keyboard-shortcut-icon.msft.png)) 图标。
+1.  选中复选标记（![复选标记键盘快捷方式图标。](../../media/2021/02/checkmark-keyboard-shortcut-icon.msft.png)) 图标。
 
 有关自定义和编辑快捷方式的详细信息，请导航到[在开发人员工具中自定义键盘快捷方式](../../../customize/shortcuts.md)。  若要在 Chromium 开源项目中查看此功能的实时更新，请导航至问题 [174309](https://crbug.com/174309)。
 
-:::image type="complex" source="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png" alt-text="在编辑模式下使用快捷方式在“DevTools 设置”的“快捷方式”上自定义键盘快捷方式" lightbox="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png":::
+:::image type="complex" source="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png" alt-text="在编辑模式下使用快捷方式在“DevTools 设置”的“快捷方式”上自定义键盘快捷方式。" lightbox="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png":::
    在编辑模式下使用快捷方式在“[DevTools 设置](../../../customize/index.md#settings)”的“快捷方式”上自定义键盘快捷方式
 :::image-end:::
 
@@ -92,11 +92,11 @@ DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  
 
 下图显示了来自 Microsoft Edge“**控制台**”工具中记录的示例网页的消息：
 
-:::image type="content" source="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png" alt-text="在 Microsoft Edge DevTools 的控制台中显示消息" lightbox="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png":::
+:::image type="content" source="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png" alt-text="在 Microsoft Edge DevTools 的控制台中显示消息。" lightbox="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png":::
 
 下图显示了来自 Microsoft Visual Studio Code“**输出**”下“**DevTools 控制台**”中记录的示例网页的相同消息：
 
-:::image type="content" source="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png" alt-text="在 Microsoft Visual Studio Code“输出”下的“DevTools 控制台”中显示相同消息" lightbox="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png":::
+:::image type="content" source="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png" alt-text="在 Microsoft Visual Studio Code“输出”下的“DevTools 控制台”中显示相同消息。" lightbox="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -109,11 +109,11 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 若要打开**弹性框**编辑器，请导航至“**样式**”窗格，然后选择 `display: flex` 或 `display: inline-flex` 样式旁边的新图标。  **弹性框**编辑器提供了一种快速编辑弹性框属性的方法。
 
-:::image type="content" source="../../media/2021/02/elements-styles-display-flex-window.msft.png" alt-text="CSS 弹性框调试工具" lightbox="../../media/2021/02/elements-styles-display-flex-window.msft.png":::
+:::image type="content" source="../../media/2021/02/elements-styles-display-flex-window.msft.png" alt-text="CSS 弹性框调试工具。" lightbox="../../media/2021/02/elements-styles-display-flex-window.msft.png":::
 
 此外，“**布局**”窗格中的“**弹性框**”部分将显示网页上的所有弹性框元素。  你可以切换每个元素的覆盖。
 
-:::image type="content" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="“布局”窗格中的“弹性框”部分" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
+:::image type="content" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="“布局”窗格中的弹性框部分。" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -128,11 +128,11 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 选择一个网络请求，然后选择“**发起程序**”窗格：
 
-:::image type="content" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="选择一个网络请求，然后选择“发起程序”窗格" lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
+:::image type="content" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="选择一个网络请求，然后选择“发起程序”窗格。" lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
 
 展开或折叠请求发起程序链并执行突出显示的行：
 
-:::image type="content" source="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png" alt-text="展开或折叠请求发起程序链并遵循突出显示的行" lightbox="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png":::
+:::image type="content" source="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png" alt-text="展开或折叠请求发起程序链并执行突出显示的行。" lightbox="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -178,7 +178,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 若要了解有关 `color-gamut` 功能的更多信息，请导航到“[颜色显示质量：‘色域’功能](https://drafts.csswg.org/mediaqueries-4#color-gamut)”。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1073887](https://crbug.com/1073887)。
 
-:::image type="complex" source="../../media/2021/02/rendering-css-color-gamut.msft.png" alt-text="模拟 CSS 色域媒体功能" lightbox="../../media/2021/02/rendering-css-color-gamut.msft.png":::
+:::image type="complex" source="../../media/2021/02/rendering-css-color-gamut.msft.png" alt-text="模拟 CSS 色域媒体功能。" lightbox="../../media/2021/02/rendering-css-color-gamut.msft.png":::
    模拟 CSS 色域媒体功能
 :::image-end:::
 
@@ -188,7 +188,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 现在，“**控制台**”现在将显示更详细的[渐进式 Web 应用 (PWA)](../../../../progressive-web-apps-chromium/index.md) 可安装性警告消息，其中包含指向“[改进渐进式 Web 应用脱机支持检测](https://developer.chrome.com/blog/improved-pwa-offline-detection)”的链接。
 
-:::image type="complex" source="../../media/2021/02/console-pwa-installability.msft.png" alt-text="“控制台”工具中的 PWA 可安装性警告" lightbox="../../media/2021/02/console-pwa-installability.msft.png":::
+:::image type="complex" source="../../media/2021/02/console-pwa-installability.msft.png" alt-text="控制台工具中的 PWA 可安装性警告。" lightbox="../../media/2021/02/console-pwa-installability.msft.png":::
    “**控制台**”工具中的 PWA 可安装性警告
 :::image-end:::
 
@@ -196,7 +196,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 如果清单说明超过了 324 个字符，“**清单**”窗格现在将显示一条警告消息。
 
-:::image type="complex" source="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png" alt-text="PWA 说明截断警告" lightbox="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png":::
+:::image type="complex" source="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png" alt-text="PWA 说明截断警告。" lightbox="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png":::
    PWA 说明截断警告
 :::image-end:::
 
@@ -219,13 +219,13 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 现在，“请求”表显示“**远程地址空间**”列：
 
-:::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="“请求”表现在显示“远程地址空间”列" lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
+:::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="“请求”表现在显示“远程地址空间”列。" lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
 
 ### <a name="display-allowed-and-disallowed-features-in-the-frame-details-view"></a>在“框架详细信息”视图中显示允许和禁止的功能
 
 “框架详细信息”视图现在显示受“[权限策略](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md)”控制的允许和禁止的浏览器功能列表。  “权限策略”是一种 Web 平台 API，它允许（或阻止）网页在单个框架或其嵌入的 iframe 中使用浏览器功能。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1158827](https://crbug.com/1158827)。
 
-:::image type="complex" source="../../media/2021/02/application-frames-permissions-policy.msft.png" alt-text="基于权限策略允许和禁止的功能" lightbox="../../media/2021/02/application-frames-permissions-policy.msft.png":::
+:::image type="complex" source="../../media/2021/02/application-frames-permissions-policy.msft.png" alt-text="基于权限策略允许和禁止的功能。" lightbox="../../media/2021/02/application-frames-permissions-policy.msft.png":::
    基于权限策略允许和禁止的功能
 :::image-end:::
 
@@ -233,7 +233,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 “**应用程序**”工具中的“**Cookie**”窗格现在显示每个 Cookie 的 `SameParty` 属性。  `SameParty` 属性是一个新的布尔属性，用于指示在对相同[第一方集](https://github.com/privacycg/first-party-sets)的起源的请求中是否包含 cookie。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1161427](https://crbug.com/1161427)。
 
-:::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="“Cookie”窗格中的“SameParty”列" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
+:::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="“Cookie”窗格中的“SameParty”列。" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
    “**Cookie**”窗格中的“**SameParty**”列
 :::image-end:::
 
@@ -241,7 +241,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 以前，`fn.displayName` 属性允许你控制要在 `error.stack` 和 DevTools 堆栈跟踪中显示的函数的调试名称。  从 Microsoft Edge 版本 90 开始，`fn.displayName` 属性现已弃用，并替换为 `fn.name` 属性。  使用标准 `Object.defineProperty` 方法定义 `fn.name` 属性。  若要了解有关 `fn.name` 的更多信息，请导航至 [Function.name](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/name)。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1177685](https://crbug.com/1177685)。
 
-:::image type="complex" source="../../media/2021/02/console-display-name-name.msft.png" alt-text="用于控制函数的调试名称的 fn.name 属性示例" lightbox="../../media/2021/02/console-display-name-name.msft.png":::
+:::image type="complex" source="../../media/2021/02/console-display-name-name.msft.png" alt-text="用于控制函数的调试名称的 fn.name 属性示例。" lightbox="../../media/2021/02/console-display-name-name.msft.png":::
    用于控制函数的调试名称的 `fn.name` 属性示例
 :::image-end:::
 
@@ -259,11 +259,11 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 显示 **DOM 树视图**：
 
-:::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="显示 DOM 树视图" lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
+:::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="显示 DOM 树视图。" lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
 
 显示**完整的辅助功能树视图**：
 
-:::image type="complex" source="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png" alt-text="显示完整的辅助功能树视图" lightbox="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png":::
+:::image type="complex" source="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png" alt-text="显示完整的辅助功能树视图。" lightbox="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -277,4 +277,5 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-90)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

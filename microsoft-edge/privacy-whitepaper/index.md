@@ -10,12 +10,12 @@ no-loc:
 - Cast
 - Google Cast
 ms.date: 12/10/2021
-ms.openlocfilehash: f3db0f826d4cbebe14ed206b0e5c81a17f87fa9d
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: fa7cf616deb7dcbaaf57dba5e681857a994fda0c
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320961"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12322814"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书
 
@@ -31,7 +31,7 @@ ms.locfileid: "12320961"
 
 通过地址栏，可输入网站 URL 并搜索 Web。  默认情况下，地址栏使用输入的字符提供搜索和网站建议。  建议来自收藏夹、浏览历史记录、以前的搜索和默认搜索提供程序。
 
-:::image type="complex" source="./media/address-bar.png" alt-text="地址栏" lightbox="./media/address-bar.png":::
+:::image type="complex" source="./media/address-bar.png" alt-text="地址栏。" lightbox="./media/address-bar.png":::
    地址栏
 :::image-end:::
 
@@ -119,7 +119,7 @@ Google 可能会收集一些与媒体路由器扩展相关联的数据。 若要
 
 如果启用了可选诊断数据（包括崩溃报告），则在意外崩溃或关闭Microsoft Edge时收集诊断数据。 诊断数据用于诊断和修复Microsoft Edge和其他 Microsoft 产品和服务的问题。
 
-:::image type="complex" source="./media/crashes2.png" alt-text="故障" lightbox="./media/crashes2.png":::
+:::image type="complex" source="./media/crashes2.png" alt-text="故障。" lightbox="./media/crashes2.png":::
    故障
 :::image-end:::
 
@@ -147,7 +147,7 @@ Microsoft 使用诊断数据来改进产品和服务。 诊断数据还用于确
 
 Microsoft Edge收集一组必需的诊断数据，以确保产品安全、更新和正常运行。 所需的诊断数据包括设备连接、配置信息、软件设置和清单。 Microsoft 使用此诊断数据来解决问题，并使 Microsoft 产品和服务可靠、安全且正常运行。 如需详细了解所管理设备的诊断数据，请导航到[在组织中配置 Windows 诊断数据](/windows/privacy/configure-windows-diagnostic-data-in-your-organization)和 [Microsoft Edge 诊断数据组策略](/deployedge/microsoft-edge-enterprise-privacy-settings)。
 
-:::image type="complex" source="./media/diagnostic-data2.png" alt-text="诊断数据" lightbox="./media/diagnostic-data2.png":::
+:::image type="complex" source="./media/diagnostic-data2.png" alt-text="诊断数据。" lightbox="./media/diagnostic-data2.png":::
    诊断数据
 :::image-end:::
 
@@ -260,7 +260,7 @@ Microsoft Edge支持[地理位置 API](https://w3.org/TR/geolocation-api)，允�
 
 Microsoft Edge 指示何时在地址栏右侧共享精确位置。 
 
-:::image type="complex" source="./media/geolocation2.png" alt-text="位置" lightbox="./media/geolocation2.png":::
+:::image type="complex" source="./media/geolocation2.png" alt-text="位置。" lightbox="./media/geolocation2.png":::
    位置
 :::image-end:::
 
@@ -289,7 +289,7 @@ Microsoft Edge 不存储地理位置坐标。 向 Microsoft 定位服务请求�
 
 更新Microsoft Edge时，会自动导入旧版Microsoft Edge中的浏览数据。  确认后，Microsoft Edge从其他浏览器（如 Google Chrome、Mozilla Firefox 或 Internet Explorer）导入浏览器数据。 Microsoft Edge从操作系统定义的最常用浏览器导入数据。  在设备上本地完成数据导入，并存储在本地，除非你同意同步浏览数据，否则不会发送给 Microsoft。
 
-:::image type="complex" source="./media/migration.png" alt-text="Import" lightbox="./media/migration.png":::
+:::image type="complex" source="./media/migration.png" alt-text="导入。" lightbox="./media/migration.png":::
    Import
 :::image-end:::
 
@@ -315,7 +315,7 @@ Microsoft Edge 就安装和更新进度对 Microsoft Edge 更新服务执行 pin
 
 Microsoft Edge 通过 Internet Explorer (IE) 集成简化了体验。  Microsoft Edge 仅支持 IE 11，而 IE 模式仅在 Windows 上可用。  通过组策略，组织可以使用 IE 模式功能。  管理员选择在 Microsoft Edge 的 IE 模式下打开特定网站。
 
-:::image type="complex" source="./media/ie-mode.png" alt-text="IE 模式" lightbox="./media/ie-mode.png":::
+:::image type="complex" source="./media/ie-mode.png" alt-text="IE 模式。" lightbox="./media/ie-mode.png":::
    IE 模式
 :::image-end:::
 
@@ -347,7 +347,7 @@ Internet Explorer 浏览数据本地存储在 Microsoft Edge 和 Internet Explor
 
 儿童模式是专为 Microsoft Edge 中的儿童设计的便捷浏览模式。  有了儿童友好功能和安全护栏，“儿童模式”是儿童安全浏览网络的理想之地。  儿童模式包括自定义浏览器主题、儿童友好内容、基于允许列表进行浏览、必应安全搜索设置为严格以及退出密码要求等功能。  儿童模式不需要子帐户或个人资料，因此你无法登录儿童模式。
 
-:::image type="complex" source="./media/kids-mode.png" alt-text="儿童模式" lightbox="./media/kids-mode.png":::
+:::image type="complex" source="./media/kids-mode.png" alt-text="儿童模式。" lightbox="./media/kids-mode.png":::
    儿童模式
 :::image-end:::
 
@@ -380,7 +380,7 @@ Microsoft Edge提供了一个以用户为中心的新选项卡页面，其中的
 
 为了加快 Microsoft Edge 新选项卡页的加载时间，可以在后台加载该页面。 如果允许 Cookie，加载的内容可能包含 Cookie。 可以关闭 Microsoft 新选项卡页面的后台加载。 导航到 `edge://settings/newTabPage` 并关闭 **"预加载新选项卡"页，以获得更快的体验** 设置。
 
-:::image type="complex" source="./media/n-t-p1.png" alt-text="“新建选项卡”页面" lightbox="./media/n-t-p1.png":::
+:::image type="complex" source="./media/n-t-p1.png" alt-text="“新建选项卡”页面。" lightbox="./media/n-t-p1.png":::
    “新建选项卡”页面
 :::image-end:::
 
@@ -575,7 +575,7 @@ Microsoft Edge 购物功能要求与必应共享 Cookie 信息。  例如，Cook
 
 发送到 Microsoft 购物服务的数据通过 HTTPS 发送，其中包含随机生成的标识符，该标识符会更改每个优惠券查找。 Microsoft Edge 与必应购物合作，提供与用户查询相关的优惠券。 在某些情况下，Microsoft 可能会获得使用优惠券的收入。 是否可以接收收入份额付款不会纳入向用户显示的优惠券排名。
 
-:::image type="complex" source="./media/shopping.png" alt-text="购物和优惠券" lightbox="./media/shopping.png":::
+:::image type="complex" source="./media/shopping.png" alt-text="购物和优惠券。" lightbox="./media/shopping.png":::
    购物和优惠券
 :::image-end:::
 
@@ -615,7 +615,7 @@ macOS 上 Microsoft Edge 中的标识在 Microsoft 应用间共享。 共享标�
 
 SmartScreen 旨在帮助你安全浏览 Web。  访问网站或下载文件时，SmartScreen 会检查 URL 或文件的信誉。  如果 SmartScreen 确定网站或文件有恶意，则会阻止你访问网站或下载文件。
 
-:::image type="complex" source="./media/smart-screen.png" alt-text="SmartScreen" lightbox="./media/smart-screen.png":::
+:::image type="complex" source="./media/smart-screen.png" alt-text="SmartScreen。" lightbox="./media/smart-screen.png":::
    SmartScreen
 :::image-end:::
 
@@ -665,7 +665,7 @@ SmartScreen 服务存储有关信誉检查的数据，并生成已知恶意 URL 
 
 收藏夹包括之前在早期版本的Microsoft Edge中预留的任何选项卡，这些选项卡与收藏夹的其余部分同步。 从 Microsoft Edge 的一个已登录版本中删除或修改收藏夹或其他数据，将同步到已启用同步的 Microsoft Edge 的所有其他已登录版本。  若要管理同步配置，请导航到 `edge://settings/profiles/sync`。  你的同步设置可能由组织进行管理。
 
-:::image type="complex" source="./media/sync.png" alt-text="将同步设置设为开启的图像" lightbox="./media/sync.png":::
+:::image type="complex" source="./media/sync.png" alt-text="将同步设置设为开启的图像。" lightbox="./media/sync.png":::
    同步设置已开启
 :::image-end:::
 
@@ -691,7 +691,7 @@ Microsoft Edge 旨在检测和阻止已知跟踪器。  用户可以从三个跟
 
 可使用以下组策略“[启用 Microsoft Edge 中的组件更新](/deployedge/microsoft-edge-policies#componentupdatesenabled)”禁用列表更新。
 
-:::image type="complex" source="./media/tracking-prevention.png" alt-text="跟踪防护" lightbox="./media/tracking-prevention.png":::
+:::image type="complex" source="./media/tracking-prevention.png" alt-text="跟踪防护。" lightbox="./media/tracking-prevention.png":::
    跟踪防护
 :::image-end:::
 
@@ -752,7 +752,7 @@ Windows Defender 应用程序防护 (WDAG) 是一项适用于组织的功能。 
 
 Windows 信息保护 (WIP) 有助于防止意外泄漏公司信息。 它仅适用于组织通过组织管理的组策略。 为标识为公司资产的站点启用 WIP。 通过地址栏中的“管理”图标标识属于企业资产的网站。 WIP 可防止从浏览器复制和粘贴，或将某些文件上传到组织外部的站点。
 
-:::image type="complex" source="./media/w-i-p.png" alt-text="Windows 信息保护" lightbox="./media/w-i-p.png":::
+:::image type="complex" source="./media/w-i-p.png" alt-text="Windows 信息保护。" lightbox="./media/w-i-p.png":::
    Windows 信息保护
 :::image-end:::
 

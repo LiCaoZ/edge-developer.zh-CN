@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 06/02/2021
-ms.openlocfilehash: 4b13b2322888ea659a8e9db170f9882c2b38b568
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: baf7fb86605813b9165af185175e847e430bcb77
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318714"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324823"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-92"></a>DevTools 中的新增功能 (Microsoft Edge 92)
 
@@ -30,7 +30,7 @@ ms.locfileid: "12318714"
 
 在 Microsoft Edge 版本 91 或更早版本中，当 DevTools 视区较窄时，不会显示用于关闭 DevTools 的**关闭**按钮。  在 Microsoft Edge 版本 92 中，无论 DevTools 视区宽度如何，DevTools 中的**关闭**按钮始终存在。
 
-:::image type="complex" source="../../media/2021/05/close-devtools-button-always-displayed.msft.png" alt-text="即使视区较窄，现在也存在“关闭”DevTools 按钮" lightbox="../../media/2021/05/close-devtools-button-always-displayed.msft.png":::
+:::image type="complex" source="../../media/2021/05/close-devtools-button-always-displayed.msft.png" alt-text="即使视区较窄，现在也存在“关闭 DevTools”按钮。" lightbox="../../media/2021/05/close-devtools-button-always-displayed.msft.png":::
    即使视区较窄， 现在也存在**关闭** DevTools 按钮
 :::image-end:::
 
@@ -47,11 +47,11 @@ ms.locfileid: "12318714"
 
 **更多工具**菜单在 Microsoft Edge 版本 89 中作为试验提供，始终存在。
 
-:::image type="complex" source="../../media/2021/05/more-tools-button.msft.png" alt-text="上部工具栏和抽屉工具栏中的“更多工具”按钮" lightbox="../../media/2021/05/more-tools-button.msft.png":::
+:::image type="complex" source="../../media/2021/05/more-tools-button.msft.png" alt-text="上部工具栏和抽屉工具栏中的“更多工具”按钮。" lightbox="../../media/2021/05/more-tools-button.msft.png":::
    上部工具栏和抽屉工具栏中的“**更多工具**”按钮
 :::image-end:::
 
-:::image type="complex" source="../../media/2021/05/more-tools-menu.msft.png" alt-text="“更多工具”菜单" lightbox="../../media/2021/05/more-tools-menu.msft.png":::
+:::image type="complex" source="../../media/2021/05/more-tools-menu.msft.png" alt-text="“更多工具”菜单。" lightbox="../../media/2021/05/more-tools-menu.msft.png":::
    “**更多工具**”菜单
 :::image-end:::
 
@@ -73,15 +73,15 @@ ms.locfileid: "12318714"
 
 重新格式化之前的选项卡:
 
-:::image type="content" source="../../media/2021/05/hovering-on-tool-tab-before.msft.png" alt-text="重新格式化之前的选项卡" lightbox="../../media/2021/05/hovering-on-tool-tab-before.msft.png":::
+:::image type="content" source="../../media/2021/05/hovering-on-tool-tab-before.msft.png" alt-text="重新格式化之前的选项卡。" lightbox="../../media/2021/05/hovering-on-tool-tab-before.msft.png":::
 
 重新格式化后的选项卡:
 
-:::image type="content" source="../../media/2021/05/hovering-on-tool-tab-after.msft.png" alt-text="重新格式化后的选项卡" lightbox="../../media/2021/05/hovering-on-tool-tab-after.msft.png":::
+:::image type="content" source="../../media/2021/05/hovering-on-tool-tab-after.msft.png" alt-text="重新格式化后的选项卡。" lightbox="../../media/2021/05/hovering-on-tool-tab-after.msft.png":::
 
 这些改进尤其适用于本地化 DevTools 的用户，在这些用户中，选项卡可能更窄且更易于意外关闭。
 
-:::image type="complex" source="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png" alt-text="具有窄选项卡的本地化 DevTools" lightbox="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png":::
+:::image type="complex" source="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png" alt-text="具有窄选项卡的本地化 DevTools。" lightbox="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png":::
    具有窄选项卡的本地化 DevTools
 :::image-end:::
 
@@ -115,7 +115,7 @@ ms.locfileid: "12318714"
 
 HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要。  CSS 允许开发人员创建其屏幕顺序与 HTML 源文档中的顺序不同的内容。  这是一个辅助功能问题，因为屏幕阅读器用户可能会有困惑的体验。
 
-:::image type="complex" source="../../media/2021/05/source-order-viewer.msft.png" alt-text="激活源订单查看器将源中的元素顺序显示为页面上的覆盖层" lightbox="../../media/2021/05/source-order-viewer.msft.png":::
+:::image type="complex" source="../../media/2021/05/source-order-viewer.msft.png" alt-text="激活源订单查看器会将源中的元素顺序显示为页面上的覆盖层。" lightbox="../../media/2021/05/source-order-viewer.msft.png":::
    激活**源订单查看器** 将源中的元素顺序显示为页面上的覆盖层
 :::image-end:::
 
@@ -132,7 +132,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 用户代理客户端提示现在应用于**网络条件**工具的**用户代理**字段中的设备。  用户代理客户端提示是客户端提示 API 的新扩展，使你能够以保留隐私的人体工学方式访问有关用户浏览器的信息。
 
-:::image type="complex" source="../../media/2021/05/user-agent.msft.png" alt-text="用户代理" lightbox="../../media/2021/05/user-agent.msft.png":::
+:::image type="complex" source="../../media/2021/05/user-agent.msft.png" alt-text="用户代理。" lightbox="../../media/2021/05/user-agent.msft.png":::
    用户代理
 :::image-end:::
 
@@ -176,7 +176,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 当页面上的 HTML 元素 `display: grid` 或 `display: inline-grid` 应用到该元素时，**样式**选项卡中会显示其旁边的网格图标。单击网格图标以显示或隐藏 CSS 网格编辑器。 在 CSS 网格编辑器中，选择任何图标（如 `justify-content: space-around`）以预览呈现页面中的布局。  弹性布局的工作方式类似。
 
-:::image type="complex" source="../../media/2021/05/css-grid-editor.msft.png" alt-text="CSS 网格编辑器" lightbox="../../media/2021/05/css-grid-editor.msft.png":::
+:::image type="complex" source="../../media/2021/05/css-grid-editor.msft.png" alt-text="CSS 网格编辑器。" lightbox="../../media/2021/05/css-grid-editor.msft.png":::
    CSS 网格编辑器
 :::image-end:::
 
@@ -194,7 +194,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 *  `const` REPL 脚本中不允许重新声明页脚本。
 *  `const` 不允许在同一 REPL 脚本中重新声明（请参阅变量 `b`）。
 
-:::image type="complex" source="../../media/2021/05/support-for-const-redeclaration.msft.png" alt-text="控制台中允许重新声明常量变量" lightbox="../../media/2021/05/support-for-const-redeclaration.msft.png":::
+:::image type="complex" source="../../media/2021/05/support-for-const-redeclaration.msft.png" alt-text="控制台中允许重新声明常量变量。" lightbox="../../media/2021/05/support-for-const-redeclaration.msft.png":::
    控制台中允许重新声明常量变量
 :::image-end:::
 
@@ -207,13 +207,13 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 若要快速查看`iframe`详细信息，现在可以在**元素**工具中右键单击`iframe`元素，然后选择**显示 iframe 详细信息**。
 
-:::image type="complex" source="../../media/2021/05/show-iframe-details.msft.png" alt-text="iframe 详细信息视图" lightbox="../../media/2021/05/show-iframe-details.msft.png":::
+:::image type="complex" source="../../media/2021/05/show-iframe-details.msft.png" alt-text="iframe 详细信息视图。" lightbox="../../media/2021/05/show-iframe-details.msft.png":::
    iframe 详细信息视图
 :::image-end:::
 
 这将显示**应用程序**工具中有关`iframe`的详细信息。  在**应用程序**工具中，可以检查文档详细信息、安全和隔离状态、权限策略等，以调试潜在问题。
 
-:::image type="complex" source="../../media/2021/05/show-iframe-details-application-tool.msft.png" alt-text="应用程序工具中的帧详细信息" lightbox="../../media/2021/05/show-iframe-details-application-tool.msft.png":::
+:::image type="complex" source="../../media/2021/05/show-iframe-details-application-tool.msft.png" alt-text="应用程序工具中的帧详细信息。" lightbox="../../media/2021/05/show-iframe-details-application-tool.msft.png":::
    **应用程序**工具中的帧详细信息
 :::image-end:::
 
@@ -226,7 +226,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 跨源资源共享(CORS)错误现在显示在**问题**选项卡中。 CORS 错误有多种潜在原因。  单击以展开每个问题以了解潜在原因和解决方案。
 
-:::image type="complex" source="../../media/2021/05/cors-debugging-support.msft.png" alt-text="“问题”选项卡中的 CORS 问题" lightbox="../../media/2021/05/cors-debugging-support.msft.png":::
+:::image type="complex" source="../../media/2021/05/cors-debugging-support.msft.png" alt-text="“问题”选项卡中的 CORS 问题。" lightbox="../../media/2021/05/cors-debugging-support.msft.png":::
    “问题”选项卡中的 CORS 问题
 :::image-end:::
 
@@ -239,7 +239,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 在**网络**工具中，**XHR**筛选器现已重命名为 **Fetch/XHR**。 此更改更清楚地表明，此筛选器同时包含 `XMLHttpRequest` 和 `Fetch` API 网络请求。
 
-:::image type="complex" source="../../media/2021/05/fetch-xhr.msft.png" alt-text="网络工具现在显示 Fetch/XHR 而不是 XHR" lightbox="../../media/2021/05/fetch-xhr.msft.png":::
+:::image type="complex" source="../../media/2021/05/fetch-xhr.msft.png" alt-text="网络工具现在显示 Fetch/XHR 而不是 XHR。" lightbox="../../media/2021/05/fetch-xhr.msft.png":::
    **网络**工具现在显示 **Fetch/XHR**，而不是 **XHR**
 :::image-end:::
 
@@ -254,7 +254,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 在**网络**工具中，现在可以选择新的 **Wasm** 筛选器来筛选 WebAssembly 网络请求。
 
-:::image type="complex" source="../../media/2021/05/wasm-network-requests.msft.png" alt-text="按 Wasm 筛选" lightbox="../../media/2021/05/wasm-network-requests.msft.png":::
+:::image type="complex" source="../../media/2021/05/wasm-network-requests.msft.png" alt-text="按 Wasm 筛选。" lightbox="../../media/2021/05/wasm-network-requests.msft.png":::
    按 Wasm 筛选
 :::image-end:::
 
@@ -267,7 +267,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 在**性能**工具中，DevTools 现在在火形图中显示**计算交集**。 这些更改有助于识别交集观察程序事件并调试交集观察程序的潜在性能开销。
 
-:::image type="complex" source="../../media/2021/05/compute-intersections-in-perf-tool.msft.png" alt-text="性能工具中的计算交集" lightbox="../../media/2021/05/compute-intersections-in-perf-tool.msft.png":::
+:::image type="complex" source="../../media/2021/05/compute-intersections-in-perf-tool.msft.png" alt-text="性能工具中的计算交集。" lightbox="../../media/2021/05/compute-intersections-in-perf-tool.msft.png":::
    **性能**工具中的计算交集
 :::image-end:::
 
@@ -287,4 +287,5 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-92)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

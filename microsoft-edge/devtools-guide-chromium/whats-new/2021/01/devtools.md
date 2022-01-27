@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
-ms.openlocfilehash: 4e9e3567333dec5de9fa5edaeb475cd00df3bd91
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 1267892f9ae3b00a7f9f1d5ebea385ca35e1b454
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320744"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324837"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -42,7 +42,7 @@ ms.locfileid: "12320744"
 
 Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外观和新名称：“**欢迎**”。  “**欢迎**”工具仍会显示最新的 DevTools 新闻和更新。  它现在还包括指向 Microsoft Edge DevTools 文档的链接、提交反馈的方式等。  若要在每次更新 Microsoft Edge 后显示“**欢迎**”工具，请选中标题下的“**每次更新后打开选项卡**”旁边的复选框。  若要关闭“**欢迎**”工具，请选择选项卡标题右侧的 **X**。  如果你更喜欢原来的“**新增功能**”工具，请导航至“[设置](../../../customize/index.md#settings)” > “**试验**”，并取消选中“**启用‘欢迎’选项卡**”旁边的复选框。
 
-:::image type="complex" source="../../media/2021/01/welcome-tool-whats-new-88.msft.png" alt-text="突出显示“欢迎”工具" lightbox="../../media/2021/01/welcome-tool-whats-new-88.msft.png":::
+:::image type="complex" source="../../media/2021/01/welcome-tool-whats-new-88.msft.png" alt-text="突出显示“欢迎”工具。" lightbox="../../media/2021/01/welcome-tool-whats-new-88.msft.png":::
    突出显示“**欢迎**”工具
 :::image-end:::
 
@@ -64,7 +64,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 若要启用此试验，请导航至“[设置](../../../customize/index.md#settings)” > “**试验**”，然后选中“**在‘样式’窗格中启用新的字体编辑器工具**”旁边的复选框。  有关详细信息，请导航至“[在 DevTools 的‘样式’窗格中编辑 CSS 字体样式和设置](../../../inspect-styles/edit-fonts.md)”。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1093229](https://crbug.com/1093229)。
 
-:::image type="complex" source="../../media/2021/01/visual-font-editor.msft.png" alt-text="可视字体编辑器在“样式”窗格中突出显示" lightbox="../../media/2021/01/visual-font-editor.msft.png":::
+:::image type="complex" source="../../media/2021/01/visual-font-editor.msft.png" alt-text="可视字体编辑器在“样式”窗格中突出显示。" lightbox="../../media/2021/01/visual-font-editor.msft.png":::
    可视**字体编辑器**在“**样式**”窗格中突出显示
 :::image-end:::
 
@@ -93,7 +93,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 “**布局**”窗格中突出显示的 **弹性框覆盖**：
 
-:::image type="content" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text="“布局”窗格中突出显示的弹性框覆盖" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
+:::image type="content" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text="“布局”窗格中突出显示的弹性框覆盖。" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
 
 ### <a name="display-alignment-icons-and-visual-guides-when-flexbox-layouts-change-using-css-properties"></a>使用 CSS 属性更改弹性框布局时显示对齐图标和可视化向导
 
@@ -110,11 +110,11 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 突出显示的以 `align-` 开头的 CSS 属性“自动完成”菜单：
 
-:::image type="content" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="突出显示以 align- 开头的 CSS 属性的“自动完成”菜单" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
+:::image type="content" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="突出显示以 align- 开头的 CSS 属性的“自动完成”菜单。" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
 
 突出显示的 CSS 属性和网页中的弹性框 `gap`：
 
-:::image type="content" source="../../media/2021/01/elements-flex-container-align-items-center-gap-12px.msft.png" alt-text="CSS 属性和网页中的弹性框间隙突出显示" lightbox="../../media/2021/01/elements-flex-container-align-items-center-gap-12px.msft.png":::
+:::image type="content" source="../../media/2021/01/elements-flex-container-align-items-center-gap-12px.msft.png" alt-text="CSS 属性和网页中的弹性框间隙突出显示。" lightbox="../../media/2021/01/elements-flex-container-align-items-center-gap-12px.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -127,7 +127,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 现在，你有了一种在 Microsoft Edge DevTools 中打开更多工具的新方法。  在打开此试验后，“**更多工具**”图标将在主面板右侧显示为加号 (`+`)。  若要显示要添加到主面板的其他工具的列表，请选择"**更多工具**" (`+`)图标。  若要启用此试验，请导航至“[设置](../../../customize/index.md#settings)” > “**试验**”，然后选中“**启用 + 按钮选项卡菜单以打开更多工具**”旁边的复选框。
 
-:::image type="complex" source="../../media/2021/01/more-tools.msft.png" alt-text="DevTools 中突出显示“更多工具”" lightbox="../../media/2021/01/more-tools.msft.png":::
+:::image type="complex" source="../../media/2021/01/more-tools.msft.png" alt-text="DevTools 中突出显示“更多工具”。" lightbox="../../media/2021/01/more-tools.msft.png":::
    DevTools 中突出显示“**更多工具**”
 :::image-end:::
 
@@ -142,7 +142,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 若要在启用此试验的情况下查看显示和朗读多条建议的视频，请导航至 YouTube 上的“[Voiceover 公布 devtools 选项](https://youtu.be/9TcUpleEwwA)”。
 
-:::image type="complex" source="../../media/2021/01/announce-css-suggestion.msft.png" alt-text="“样式”窗格中突出显示建议" lightbox="../../media/2021/01/announce-css-suggestion.msft.png":::
+:::image type="complex" source="../../media/2021/01/announce-css-suggestion.msft.png" alt-text="“样式”窗格中突出显示建议。" lightbox="../../media/2021/01/announce-css-suggestion.msft.png":::
    “**样式**”窗格中突出显示 `suggestion` 列表
 :::image-end:::
 
@@ -165,7 +165,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1054281](https://crbug.com/1054281)。
 
-:::image type="complex" source="../../media/2021/01/emulate-surface-device-surface-duo.msft.png" alt-text="模拟双屏幕" lightbox="../../media/2021/01/emulate-surface-device-surface-duo.msft.png":::
+:::image type="complex" source="../../media/2021/01/emulate-surface-device-surface-duo.msft.png" alt-text="模拟双屏幕。" lightbox="../../media/2021/01/emulate-surface-device-surface-duo.msft.png":::
    模拟双屏幕
 :::image-end:::
 
@@ -192,7 +192,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 在 Microsoft Edge 版本 89 中，节点屏幕截图更为准确，即使节点中的内容在视区中不可见，也能捕获完整节点。  在“**元素**”工具中，将鼠标悬停在某个元素上，打开上下文菜单（右键单击），然后选择“**捕获节点屏幕**”。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1003629](https://crbug.com/1003629)。
 
-:::image type="complex" source="../../media/2021/01/capture-node-screenshot.msft.png" alt-text="“元素”工具中的上下文菜单上突出显示“捕获节点屏幕截图”" lightbox="../../media/2021/01/capture-node-screenshot.msft.png":::
+:::image type="complex" source="../../media/2021/01/capture-node-screenshot.msft.png" alt-text="“元素”工具中的上下文菜单上突出显示“捕获节点屏幕截图”。" lightbox="../../media/2021/01/capture-node-screenshot.msft.png":::
    “**元素**”工具中的上下文菜单上突出显示“**捕获节点屏幕截图**”
 :::image-end:::
 
@@ -204,7 +204,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 突出显示网页，未强制 CSS：
 
-:::image type="content" source="../../media/2021/01/elements-styles-none-forced.msft.png" alt-text="突出显示网页，未强制 CSS" lightbox="../../media/2021/01/elements-styles-none-forced.msft.png":::
+:::image type="content" source="../../media/2021/01/elements-styles-none-forced.msft.png" alt-text="突出显示网页，未强制 CSS。" lightbox="../../media/2021/01/elements-styles-none-forced.msft.png":::
 
 `:target` 已强制 CSS 且突出显示网页：
 
@@ -214,7 +214,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 使用新的“**复制元素**”快捷方式克隆元素。  在“**元素**”工具中，将鼠标悬停在某个元素上，打开上下文菜单（右键单击），然后选择“**复制元素**”。  将在选定元素下创建一个新元素。  若要使用键盘快捷方式复制元素，请选择“`Shift`+`Alt`+`Down Arrow`”(Windows/Linux) 或“`Shift`+`Option`+`Down Arrow`”(macOS)。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1150797](https://crbug.com/1150797)。
 
-:::image type="complex" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="“复制元素”在“元素”工具中某个元素的上下文菜单中突出显示" lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
+:::image type="complex" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="“复制元素”在“元素”工具中某个元素的上下文菜单中突出显示。" lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
    “**复制元素**”在“**元素**”工具中某个元素的上下文菜单中突出显示
 :::image-end:::
 
@@ -222,7 +222,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 “**样式**”窗格现在显示自定义 CSS 属性的颜色选取器。  若要循环浏览颜色值的 RGBA、HSLA 和 Hex 格式，请按住 `Shift` 并选择颜色选取器。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1147016](https://crbug.com/1147016)。
 
-:::image type="complex" source="../../media/2021/01/elements-styles-change-color-format.msft.png" alt-text="自定义 CSS 属性的颜色选取器" lightbox="../../media/2021/01/elements-styles-change-color-format.msft.png":::
+:::image type="complex" source="../../media/2021/01/elements-styles-change-color-format.msft.png" alt-text="自定义 CSS 属性的颜色选取器。" lightbox="../../media/2021/01/elements-styles-change-color-format.msft.png":::
    自定义 CSS 属性的颜色选取器
 :::image-end:::
 
@@ -238,7 +238,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 | **复制规则** | 复制当前选择器的规则。 |
 | **复制所有声明** | 复制当前规则下的所有声明，包括无效和有前缀的属性。 |
 
-:::image type="content" source="../../media/2021/01/copy-css-class.msft.png" alt-text="右键单击菜单中 CSS 类的复制选项" lightbox="../../media/2021/01/copy-css-class.msft.png":::
+:::image type="content" source="../../media/2021/01/copy-css-class.msft.png" alt-text="右键单击菜单中 CSS 类的复制选项。" lightbox="../../media/2021/01/copy-css-class.msft.png":::
 
 右键单击菜单中 CSS 属性的复制选项：
 
@@ -248,7 +248,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 | **复制属性** | 复制当前行的属性。 |
 | **复制值** | 复制当前行的值。 |
 
-:::image type="content" source="../../media/2021/01/copy-css-property-cropped.msft.png" alt-text="右键单击菜单中 CSS 属性的复制选项" lightbox="../../media/2021/01/copy-css-property.msft.png":::
+:::image type="content" source="../../media/2021/01/copy-css-property-cropped.msft.png" alt-text="右键单击菜单中 CSS 属性的复制选项。" lightbox="../../media/2021/01/copy-css-property.msft.png":::
 
 若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1152391](https://crbug.com/1152391)。
 
@@ -258,7 +258,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 现在，你可以选择在“**Cookie**”窗格中显示 URL 解码的 Cookie 值。  若要显示解码的 Cookie，请导航至“**应用程序**” > “**Cookie**”窗格，选择列表中的任何 Cookie，然后选中“**显示解码的 URL**”旁边的复选框。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [997625](https://crbug.com/997625)。
 
-:::image type="complex" source="../../media/2021/01/application-cookies-show-url-decoded.msft.png" alt-text="用于显示 URL 解码的 Cookie 的选项" lightbox="../../media/2021/01/application-cookies-show-url-decoded.msft.png":::
+:::image type="complex" source="../../media/2021/01/application-cookies-show-url-decoded.msft.png" alt-text="用于显示 URL 解码的 Cookie 的选项。" lightbox="../../media/2021/01/application-cookies-show-url-decoded.msft.png":::
    用于显示 URL 解码的 Cookie 的选项
 :::image-end:::
 
@@ -266,7 +266,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 在 Microsoft Edge 版本 88 或更早版本中，“**应用程序**”工具只提供了一种使用“**清除所有 Cookie**”按钮清除所有 Cookie 的方法。  在 Microsoft Edge 版本 89 中，现在可以选择“**清除筛选的 Cookie**”以便仅删除筛选的 Cookie。  若要筛选 Cookie，请导航至“**应用程序**” > “**Cookie**”，然后在“**筛选器**”文本框中键入。  若要删除显示的 Cookie，请选择“**清除筛选的 Cookie**”按钮。  若要显示所有其他 Cookie，请清除筛选器文本。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [978059](https://crbug.com/978059)。
 
-:::image type="complex" source="../../media/2021/01/application-cookies-clear-filtered-cookies.msft.png" alt-text="仅清除可见的 Cookie" lightbox="../../media/2021/01/application-cookies-clear-filtered-cookies.msft.png":::
+:::image type="complex" source="../../media/2021/01/application-cookies-clear-filtered-cookies.msft.png" alt-text="仅清除可见的 Cookie。" lightbox="../../media/2021/01/application-cookies-clear-filtered-cookies.msft.png":::
    仅清除可见的 Cookie
 :::image-end:::
 
@@ -278,7 +278,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1012337](https://crbug.com/1012337)。
 
-:::image type="complex" source="../../media/2021/01/application-storage-clear-site-data-including-third-party-cookies.msft.png" alt-text="用于清除第三方 Cookie 的选项" lightbox="../../media/2021/01/application-storage-clear-site-data-including-third-party-cookies.msft.png":::
+:::image type="complex" source="../../media/2021/01/application-storage-clear-site-data-including-third-party-cookies.msft.png" alt-text="用于清除第三方 Cookie 的选项。" lightbox="../../media/2021/01/application-storage-clear-site-data-including-third-party-cookies.msft.png":::
    用于清除第三方 Cookie 的选项
 :::image-end:::
 
@@ -288,7 +288,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 在 Microsoft Edge 版本 88 或更早版本中，当网页刷新时，DevTools 将重置“**记录网络日志**”设置。  在 Microsoft Edge 版本 89 中，DevTools 现在将保留“**记录网络日志**”设置。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1122580](https://crbug.com/1122580)。
 
-:::image type="complex" source="../../media/2021/01/network-log.msft.png" alt-text="记录网络日志" lightbox="../../media/2021/01/network-log.msft.png":::
+:::image type="complex" source="../../media/2021/01/network-log.msft.png" alt-text="记录网络日志。" lightbox="../../media/2021/01/network-log.msft.png":::
    记录网络日志
 :::image-end:::
 
@@ -296,7 +296,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 网络模拟选项“**联机**”现已重命名为“**无限制**”。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1028078](https://crbug.com/1028078)。
 
-:::image type="complex" source="../../media/2021/01/network-no-throttling.msft.png" alt-text="“无限制”选项" lightbox="../../media/2021/01/network-no-throttling.msft.png":::
+:::image type="complex" source="../../media/2021/01/network-no-throttling.msft.png" alt-text="“无限制”选项。" lightbox="../../media/2021/01/network-no-throttling.msft.png":::
    “**无限制**”选项
 :::image-end:::
 
@@ -308,11 +308,11 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 在“**控制台**”工具中，将鼠标悬停在某个对象上，打开上下文菜单（右键单击），然后选择“**复制对象**”。
 
-:::image type="content" source="../../media/2021/01/console-copy-object.msft.png" alt-text="在“控制台”中复制对象" lightbox="../../media/2021/01/console-copy-object.msft.png":::
+:::image type="content" source="../../media/2021/01/console-copy-object.msft.png" alt-text="在控制台中复制对象。" lightbox="../../media/2021/01/console-copy-object.msft.png":::
 
 在“**源**”工具中，在断点处，将鼠标悬停在某个对象上，在“**对象**”弹出窗口中突出显示某个对象，打开上下文菜单（右键单击），然后选择“**复制对象**”。
 
-:::image type="content" source="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png" alt-text="在“源”中复制对象" lightbox="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png":::
+:::image type="content" source="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png" alt-text="在“源”中复制对象。" lightbox="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png":::
 
 #### <a name="copy-file-name-in-the-sources-tool-and-styles-pane"></a>在“源”工具和“样式”窗格中复制文件名
 
@@ -320,11 +320,11 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 在“**源**”工具中，将鼠标悬停在某个文件名上，打开上下文菜单（右键单击），然后选择“**复制文件名**”。
 
-:::image type="content" source="../../media/2021/01/sources-copy-file-name.msft.png" alt-text="在“源”中复制文件名" lightbox="../../media/2021/01/sources-copy-file-name.msft.png":::
+:::image type="content" source="../../media/2021/01/sources-copy-file-name.msft.png" alt-text="在“源”中复制文件名。" lightbox="../../media/2021/01/sources-copy-file-name.msft.png":::
 
 在“**元素**”工具 >“**样式**”窗格中，将鼠标悬停在某个文件名上，打开上下文菜单（右键单击），然后选择“**复制文件名**”。
 
-:::image type="content" source="../../media/2021/01/elements-styles-copy-file-name.msft.png" alt-text="在“样式”窗格中复制文件名" lightbox="../../media/2021/01/elements-styles-copy-file-name.msft.png":::
+:::image type="content" source="../../media/2021/01/elements-styles-copy-file-name.msft.png" alt-text="在“样式”窗格中复制文件名。" lightbox="../../media/2021/01/elements-styles-copy-file-name.msft.png":::
 
 ### <a name="updates-to-frame-details"></a>帧详细信息更新
 
@@ -332,7 +332,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 DevTools 现在在父帧下列出一个专用的服务工作进程。  下图显示了服务工作进程的详细信息。  若要显示服务工作进程详细信息，请导航至“**应用程序**” > “**帧**” > `top` > “**服务工作进程**”，然后选择一个服务工作进程。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1122507](https://crbug.com/1122507)。
 
-:::image type="complex" source="../../media/2021/01/application-frames-service-workers-details.msft.png" alt-text="帧详细信息中的服务工作进程信息" lightbox="../../media/2021/01/application-frames-service-workers-details.msft.png":::
+:::image type="complex" source="../../media/2021/01/application-frames-service-workers-details.msft.png" alt-text="帧详细信息中的服务工作进程信息。" lightbox="../../media/2021/01/application-frames-service-workers-details.msft.png":::
    **帧**详细信息中的**服务工作进程**信息
 :::image-end:::
 
@@ -340,7 +340,7 @@ DevTools 现在在父帧下列出一个专用的服务工作进程。  下图显
 
 `performance.measureMemory()` API 状态现在显示在“**API 可用性**”部分下。  新的 `performance.measureMemory()` API 估计整个网页的内存使用情况。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1139899](https://crbug.com/1139899)。
 
-:::image type="complex" source="../../media/2021/01/application-frames-measure-memory.msft.png" alt-text="测量内存" lightbox="../../media/2021/01/application-frames-measure-memory.msft.png":::
+:::image type="complex" source="../../media/2021/01/application-frames-measure-memory.msft.png" alt-text="测量内存。" lightbox="../../media/2021/01/application-frames-measure-memory.msft.png":::
    测量内存
 :::image-end:::
 
@@ -348,7 +348,7 @@ DevTools 现在在父帧下列出一个专用的服务工作进程。  下图显
 
 当你[在“性能”工具中分析负载性能](../../../evaluate-performance/reference.md#record-load-performance)时，“**帧**”部分现在会将丢弃的帧标记为红色。  若要显示帧速率，请将鼠标悬停在丢弃的帧上。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1075865](https://crbug.com/1075865)。
 
-:::image type="complex" source="../../media/2021/01/performance-frames-dropped-frames-red.msft.png" alt-text="丢弃的帧" lightbox="../../media/2021/01/performance-frames-dropped-frames-red.msft.png":::
+:::image type="complex" source="../../media/2021/01/performance-frames-dropped-frames-red.msft.png" alt-text="丢弃的帧。" lightbox="../../media/2021/01/performance-frames-dropped-frames-red.msft.png":::
    丢弃的帧
 :::image-end:::
 
@@ -364,7 +364,7 @@ DevTools 现在在父帧下列出一个专用的服务工作进程。  下图显
 
 若要启用此试验，请导航至“[设置](../../../customize/index.md#settings)” > “**试验**”，然后选中“**启用新的高级感知对比度算法 (APCA) 以替换以前的对比率和 AA/AAA 准则**”旁边的复选框。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1121900](https://crbug.com/1121900)。
 
-:::image type="complex" source="../../media/2021/01/advanced-perceptual-contrast-algorithm.msft.png" alt-text="颜色选取器中的 APCA" lightbox="../../media/2021/01/advanced-perceptual-contrast-algorithm.msft.png":::
+:::image type="complex" source="../../media/2021/01/advanced-perceptual-contrast-algorithm.msft.png" alt-text="颜色选取器中的 APCA。" lightbox="../../media/2021/01/advanced-perceptual-contrast-algorithm.msft.png":::
    颜色选取器中的 APCA
 :::image-end:::
 
@@ -380,4 +380,5 @@ DevTools 现在在父帧下列出一个专用的服务工作进程。  下图显
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-89)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

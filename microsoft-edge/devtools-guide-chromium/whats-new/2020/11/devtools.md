@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
-ms.openlocfilehash: 343d1e3ed1bb97d4acfd5e4c4fee342eb3721d12
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 839572b5c0ee57cd49b4634fb4389376edc97742
+ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319722"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "12324858"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -42,7 +42,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 如果你在连续集成和交付 CI/CD 解决方案中使用 Linux 环境，Microsoft Edge 驱动程序也可在 Linux 上使用。  若要开始使用 Microsoft Edge 驱动程序自动执行 Microsoft Edge Dev，请导航至 [Microsoft Edge 驱动程序下载页](https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads)。  有关自动执行 Microsoft Edge Dev 以及 Microsoft Edge 驱动程序的帮助，请导航到 [使用 WebDriver 测试自动化](../../../../webdriver-chromium/index.md)。
 
-:::image type="complex" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="Microsoft Edge Linux 版中的 DevTools" lightbox="../../media/2020/11/edge-on-linux.msft.png":::
+:::image type="complex" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="Microsoft Edge Linux 版中的 DevTools。" lightbox="../../media/2020/11/edge-on-linux.msft.png":::
    Microsoft Edge Linux 版中的 DevTools
 :::image-end:::
 
@@ -70,7 +70,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 *   指向其他相关面板的链接。
 *   指向文档的链接，可帮助你修复网站中的问题。
 
-:::image type="complex" source="../../media/2020/11/issues-webhints.msft.png" alt-text="问题工具" lightbox="../../media/2020/11/issues-webhints.msft.png":::
+:::image type="complex" source="../../media/2020/11/issues-webhints.msft.png" alt-text="问题工具。" lightbox="../../media/2020/11/issues-webhints.msft.png":::
    **问题** 工具
 :::image-end:::
 
@@ -85,7 +85,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 现在，你可以将 **Layers** 内容、z-index 值以及文档对象模型 (DOM) 模型一起可视化。  此功能可帮助你进行调试，无需在 [3D 视图](../../../3d-view/index.md) 和 **图层工具** 之间切换。  为获得全面的视觉调试体验， [已将3D 视图和复合层组合到一起](../../../3d-view/index.md)。
 
-:::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="复合层窗格" lightbox="../../media/2020/11/experiments-layers.msft.png":::
+:::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="复合层窗格。" lightbox="../../media/2020/11/experiments-layers.msft.png":::
    **复合层** 窗格
 :::image-end:::
 
@@ -103,11 +103,11 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 链接到样式的 CSS 变量：
 
-:::image type="content" source="../../media/2020/11/css-variable-support.msft.png" alt-text="链接到样式的 CSS 变量" lightbox="../../media/2020/11/css-variable-support.msft.png":::
+:::image type="content" source="../../media/2020/11/css-variable-support.msft.png" alt-text="链接到样式的 CSS 变量。" lightbox="../../media/2020/11/css-variable-support.msft.png":::
 
 链接到样式目标的 CSS 变量：
 
-:::image type="content" source="../../media/2020/11/css-variable-support-target.msft.png" alt-text="链接到样式目标的 CSS 变量" lightbox="../../media/2020/11/css-variable-support-target.msft.png":::
+:::image type="content" source="../../media/2020/11/css-variable-support-target.msft.png" alt-text="链接到样式目标的 CSS 变量。" lightbox="../../media/2020/11/css-variable-support-target.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -130,19 +130,19 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 1.  导航到 **应用程序**  >  **服务工作线程**。
 1.  选择 **网络请求**。
 
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="从“服务工作线程”窗格中打开“网络”工具" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="从服务工作线程窗格中打开网络工具。" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
        从 **服务工作线程** 窗格中打开 **网络** 工具
     :::image-end:::
 
 1.  **网络** 工具在 **工具箱** 中打开，并显示所有与服务工作线程相关的网络请求。  使用 `is:service-worker-intercepted` 筛选网络请求。
 
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-drawer.msft.png" alt-text="工具箱中的网络工具" lightbox="../../media/2020/11/service-worker-application-network-drawer.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-drawer.msft.png" alt-text="工具箱中的网络工具。" lightbox="../../media/2020/11/service-worker-application-network-drawer.msft.png":::
        **工具箱** 中的 **网络** 工具
     :::image-end:::
 
 1. 若要将 **网络** 工具恢复到顶部面板，请关闭 **工具箱**。
 
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-return.msft.png" alt-text="关闭工具箱以返回网络工具" lightbox="../../media/2020/11/service-worker-application-network-return.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-return.msft.png" alt-text="关闭工具箱以返回网络工具。" lightbox="../../media/2020/11/service-worker-application-network-return.msft.png":::
        关闭 **工具箱** 以返回 **网络** 工具 :::image-end:::
 
 ### <a name="network-tool"></a>网络工具
@@ -154,7 +154,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 *   `fetch` 事件处理器的运行时。
 *   用于加载客户端的所有 `fetch` 事件的运行时。
 
-:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="计时窗格" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
+:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="计时窗格。" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
    **计时** 窗格
 :::image-end:::
 
@@ -188,11 +188,11 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 在 DevTools 中复制属性值：
 
-:::image type="content" source="../../media/2020/11/copy-property-value.msft.png" alt-text="在 DevTools 中复制属性值" lightbox="../../media/2020/11/copy-property-value.msft.png":::
+:::image type="content" source="../../media/2020/11/copy-property-value.msft.png" alt-text="在 DevTools 中复制属性值。" lightbox="../../media/2020/11/copy-property-value.msft.png":::
 
 在 Microsoft Visual Studio Code 中粘贴属性值：
 
-:::image type="content" source="../../media/2020/11/paste-property-value.msft.png" alt-text="在 Microsoft Visual Studio Code 中粘贴属性值" lightbox="../../media/2020/11/paste-property-value.msft.png":::
+:::image type="content" source="../../media/2020/11/paste-property-value.msft.png" alt-text="在 Microsoft Visual Studio Code 中粘贴属性值。" lightbox="../../media/2020/11/paste-property-value.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -207,7 +207,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 例如，红色高亮显示的是为 **开始录制事件** 操作而自定义的多键连发键盘快捷方式。  若要在 Chromium 开源项目中查看此功能实时更新，请导航至 [问题 #174309](https://crbug.com/174309)。
 
-:::image type="complex" source="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png" alt-text="和弦键盘快捷方式" lightbox="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png":::
+:::image type="complex" source="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png" alt-text="和弦键盘快捷方式。" lightbox="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png":::
    多键连发键盘快捷方式
 :::image-end:::
 
@@ -217,7 +217,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 在 Microsoft Edge 版本 87 中，如果在 [DevTools 设置](../../../customize/index.md#settings) 中打开 **匹配浏览器语言** 设置，则 DevTools 不会匹配浏览器语言。  在 Microsoft Edge 版本 88 中，如果打开 **匹配浏览器语言** 设置，则 DevTools 现在与浏览器语言匹配。  有关 **Match 浏览器语言** DevTools 设置的详细信息，请导航至 [更改 DevTools 语言设置](../../../customize/localization.md)。
 
-:::image type="complex" source="../../media/2020/11/startpage-devtools-settings-japanese.msft.png" alt-text="匹配浏览器语言 DevTools 设置（日语）" lightbox="../../media/2020/11/startpage-devtools-settings-japanese.msft.png":::
+:::image type="complex" source="../../media/2020/11/startpage-devtools-settings-japanese.msft.png" alt-text="匹配浏览器语言 DevTools 设置 (日语)。" lightbox="../../media/2020/11/startpage-devtools-settings-japanese.msft.png":::
    **匹配浏览器语言** DevTools 设置（日语）
 :::image-end:::
 
@@ -237,7 +237,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 background: linear-gradient(100deg, lightblue, pink);
 ```
 
-:::image type="complex" source="../../media/2020/11/css-angle.msft.png" alt-text="CSS 角度" lightbox="../../media/2020/11/css-angle.msft.png":::
+:::image type="complex" source="../../media/2020/11/css-angle.msft.png" alt-text="CSS 角度。" lightbox="../../media/2020/11/css-angle.msft.png":::
    CSS 角度
 :::image-end:::
 
@@ -251,7 +251,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 若要了解如何在 DevTools 中模拟移动设备和其他功能的详细信息，请导航至 [在 Microsoft Edge DevTools 中模拟移动设备移动设备](../../../device-mode/index.md)。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [945786](https://crbug.com/945786) 和 [1146985](https://crbug.com/1146985)。
 
-:::image type="complex" source="../../media/2020/11/storage-quota.msft.png" alt-text="模拟存储配额大小" lightbox="../../media/2020/11/storage-quota.msft.png":::
+:::image type="complex" source="../../media/2020/11/storage-quota.msft.png" alt-text="模拟存储配额大小。" lightbox="../../media/2020/11/storage-quota.msft.png":::
    模拟存储配额大小
 :::image-end:::
 
@@ -259,7 +259,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 通过导航至 [CORS 错误演示](https://cors-errors.glitch.me) 尝试此功能。  打开 **网络** 工具，刷新页面，并观察失败的 CORS 网络请求。  状态列显示 **CORS 错误**。  将鼠标悬停在错误上时，工具提示现在将显示错误代码。  在 Microsoft Edge 版本 87 及更早版本中，DevTools 只显示CORS 错误的一般 **（失败）** 状态。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至问题[1141824](https://crbug.com/1141824)。
 
-:::image type="complex" source="../../media/2020/11/cors-err.msft.png" alt-text="CORS 错误" lightbox="../../media/2020/11/cors-err.msft.png":::
+:::image type="complex" source="../../media/2020/11/cors-err.msft.png" alt-text="CORS 错误。" lightbox="../../media/2020/11/cors-err.msft.png":::
    CORS 错误
 :::image-end:::
 
@@ -269,7 +269,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 现在，跨域隔离状态在 **安全性和隔离** 区域下显示。  新的 **API 可用性** 部分显示 `SharedArrayBuffer` (SAB) 的可用性，以及是否可以使用 `postMessage()` 共享缓冲区。  弃用警告显示 SAB 和 `postMessage()` 当前是否可用，但上下文并非跨域隔离。  有关跨域隔离以及为何需要如 `SharedArrayBuffers` 一样的功能的详细信息 ，请导航至 [WindowOrWorkerGlobalScope.crossOriginIsolated](https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated)。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [1139899](https://crbug.com/1139899)。
 
-:::image type="complex" source="../../media/2020/11/frame-cross-origin-isolated-api.msft.png" alt-text="跨域信息" lightbox="../../media/2020/11/frame-cross-origin-isolated-api.msft.png":::
+:::image type="complex" source="../../media/2020/11/frame-cross-origin-isolated-api.msft.png" alt-text="跨域信息。" lightbox="../../media/2020/11/frame-cross-origin-isolated-api.msft.png":::
    跨域信息
 :::image-end:::
 
@@ -284,7 +284,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [1122507](https://crbug.com/1122507) 和 [1051466](https://crbug.com/1051466)。
 
-:::image type="complex" source="../../media/2020/11/application-frames-service-workers.msft.png" alt-text="Web 工作线程信息" lightbox="../../media/2020/11/application-frames-service-workers.msft.png":::
+:::image type="complex" source="../../media/2020/11/application-frames-service-workers.msft.png" alt-text="Web 工作线程信息。" lightbox="../../media/2020/11/application-frames-service-workers.msft.png":::
    Web 工作线程信息
 :::image-end:::
 
@@ -306,7 +306,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 若要查看 Chromium 开源项目中此功能的历史记录，请导航到问题 [1107766](https://crbug.com/1107766)。
 
-:::image type="complex" source="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png" alt-text="已打开框架的详细信息" lightbox="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png":::
+:::image type="complex" source="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png" alt-text="已打开框架的详细信息。" lightbox="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png":::
    已打开框架的详细信息
 :::image-end:::
 
@@ -319,7 +319,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 若要查看 Chromium 开源项目中此功能的历史记录，请导航至问题 [1139615](https://crbug.com/1139615)。
 
-:::image type="complex" source="../../media/2020/11/copy-stacktrace.msft.png" alt-text="复制堆栈跟踪" lightbox="../../media/2020/11/copy-stacktrace.msft.png":::
+:::image type="complex" source="../../media/2020/11/copy-stacktrace.msft.png" alt-text="复制堆栈跟踪。" lightbox="../../media/2020/11/copy-stacktrace.msft.png":::
    复制堆栈跟踪
 :::image-end:::
 
@@ -327,7 +327,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 代码暂停时，使用此功能检查 WebAssembly (Wasm) 变量的值。  若要显示变量的当前值，请将鼠标悬停在变量上。  若要审阅 Chromium 开源项目中此功能的实时更新，请导航至“问题” [1058836](https://crbug.com/1058836) 和 [1071432](https://crbug.com/1071432)。
 
-:::image type="complex" source="../../media/2020/11/wasm-mouseover.msft.png" alt-text="鼠标悬停时预览 Wasm 变量" lightbox="../../media/2020/11/wasm-mouseover.msft.png":::
+:::image type="complex" source="../../media/2020/11/wasm-mouseover.msft.png" alt-text="鼠标悬停时预览 Wasm 变量。" lightbox="../../media/2020/11/wasm-mouseover.msft.png":::
    鼠标悬停时预览 Wasm 变量
 :::image-end:::
 
@@ -352,4 +352,5 @@ background: linear-gradient(100deg, lightblue, pink);
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-88)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0) 本作品根据[知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0)获得许可。
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。
