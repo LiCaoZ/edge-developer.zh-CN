@@ -1,91 +1,26 @@
 ---
-title: 'Microsoft Edge开发中 (加载项 API) '
+title: 'Microsoft Edge预览版中 (加载项 API 参考) '
 description: 加载项 API 参考，适用于 REST 终结点，用于自动发布提交到加载项网站的加载项Microsoft Edge更新。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/19/2021
-ms.openlocfilehash: 3529f3648c5999d2cc5ecc155f5b6efa6a14005e
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 5d29dfd59d0c63a4aa9c257607416b3ba4a3b686
+ms.sourcegitcommit: ef262a21efa34e4d447cf561a130a2cf8656388e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319232"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "12326738"
 ---
-# <a name="microsoft-edge-add-ons-api-reference-under-development"></a>Microsoft Edge开发中 (加载项 API) 
+# <a name="microsoft-edge-add-ons-api-reference-in-private-preview"></a>Microsoft Edge预览版中 (加载项 API 参考) 
 
 > [!NOTE]
-> 本文是一个请求注释。  Microsoft Edge加载项 API 尚未可用于测试，并且合作伙伴中心尚未提供"发布 API"页。  加载项MICROSOFT EDGE API 正在积极开发中，路线图根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
+> 加载项Microsoft Edge API 目前处于个人预览阶段。  " **发布 API** "页仅对私人预览版的参与者在合作伙伴中心显示。  加载项MICROSOFT EDGE API 正在积极开发中，路线图根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
 
-这是加载项 API 的 REST Microsoft Edge引用。  此 API 可自动发布已提交到加载项网站的加载项Microsoft Edge更新。
+这是加载项 API 的 REST Microsoft Edge引用。  此 API 可自动发布已提交到加载项网站的Microsoft Edge更新。
 
-有关概述，请参阅[使用Microsoft Edge加载项 API。](using-addons-api.md)
-
-
-<!-- ====================================================================== -->
-## <a name="get-the-list-of-products"></a>获取产品列表
-
-获取属于该帐户的所有产品的列表。
-
-### <a name="request"></a>请求
-
-| 方法 | 请求 URI |
-|---|---|
-| `GET` | `/products` |
-
-#### <a name="uri-parameters"></a>URI 参数
-
-无。
-
-#### <a name="request-headers"></a>请求标头
-
-* 必需。  `Authorization: Bearer <auth token>`
-
-#### <a name="request-body"></a>请求正文
-
-无。
-
-### <a name="response"></a>响应
-
-该响应包括一个产品列表，其中包含每个产品的详细信息。  此响应的模板如下所示。
-
-```json
-[
-    {
-        "id": "<productID1>",
-        "name": "<Name of Product 1>",
-        "status": "In review",
-        "lastUpdatedDate": "7/19/2021"
-    },
-    {
-        "id": "<productID2>",
-        "name": "<Name of Product 2>",
-        "status": "In the store",
-        "lastUpdatedDate": "5/21/2021"
-    }
-]
-```
-
-对于产品的第一个版本，状态字段具有以下值：
-*  在草稿中
-*  正在审阅
-*  在应用商店中，或失败
-
-对于后续提交，你将收到以下任一值：
-*  正在审阅
-*  在应用商店中，或失败
-
-#### <a name="status-codes"></a>状态代码
-
-此 API 具有以下预期状态代码。
-
-| HTTP 状态代码 | 说明 |
-|---|---|
-| 200 | 请求正常 |
-| 4XX | 有关更多详细信息，请参阅 [错误代码](#error-codes)。 |
-| 5XX | 有关更多详细信息，请参阅 [错误代码](#error-codes)。 |
-
+有关概述，请参阅在个人预览Microsoft Edge使用 ([加载项 API) ](using-addons-api.md)。
 
 <!-- ====================================================================== -->
 ## <a name="upload-a-package-to-update-an-existing-submission"></a>Upload程序包以更新现有提交
@@ -96,7 +31,7 @@ ms.locfileid: "12319232"
 
 | 方法 | 请求 URI |
 |---|---|
-| `PUT` | `/products/{productID}/submissions/draft/package` |
+| `POST` | `/products/{productID}/submissions/draft/package` |
 
 #### <a name="uri-parameters"></a>URI 参数
 
@@ -118,7 +53,7 @@ ms.locfileid: "12319232"
 
 #### <a name="response-headers"></a>响应头
 
-*  地点： `/products/{productID}/submissions/draft/package/operations/{operationID}`
+*  地点： `{operationID}`
 
 #### <a name="status-codes"></a>状态代码
 
@@ -129,6 +64,10 @@ ms.locfileid: "12319232"
 | 202 | 请求已接受处理，但处理未完成。 |
 | 4XX | 请参阅 [错误代码](#error-codes)。 |
 | 5XX | 请参阅 [错误代码](#error-codes)。 |
+
+### <a name="see-also"></a>另请参阅
+
+*  简介 [：上载程序包以更新现有提交](using-addons-api.md#uploading-a-package-to-update-an-existing-submission)
 
 
 <!-- ====================================================================== -->
@@ -165,8 +104,12 @@ ms.locfileid: "12319232"
 ```json
 {
     "id": "{operationID}",
-    "status": "IN-PROGRESS",
-    "message": "The package upload is in progress. Please check the status after some time."
+    "createdTime": "Date Time",
+    "lastUpdatedTime": "Date Time",
+    "status": "InProgress",
+    "message": null,
+    "errorCode": null,
+    "errors": null
 }
 ```
 
@@ -175,28 +118,26 @@ ms.locfileid: "12319232"
 ```json
 {
     "id": "{operationID}",
-    "status": "SUCCESS",
-    "message": "Package upload successfully completed. Please proceed with publishing."
+    "createdTime": "Date Time",
+    "lastUpdatedTime": "Date Time",
+    "status": "Succeeded",
+    "message": "Successfully updated package to {fileName}.zip",
+    "errorCode": "",
+    "errors": null
 }
 ```
 
 #### <a name="response-when-the-operation-fails-with-errors"></a>操作失败但出现错误时的响应
 
 ```json
-{
+ {
     "id": "{operationID}",
-    "status": "FAILED",
-    "message": "The package upload failed. Please fix the errors and make the request again.",
-    "errors": [
-       {
-           "id": "MANIFEST_FILE_MISSING",
-           "message": "Zip file must contain a manifest.json file."
-       },
-       {
-           "id": "SIZE_LIMIT_EXCEEDED",
-           "message": "Zip file size must not exceed 500MB."
-       }
-    ]
+    "createdTime": "Date Time",
+    "lastUpdatedTime": "Date Time",
+    "status": "Failed",
+    "message": "Error Message.",
+    "errorCode": "Error Code",
+    "errors": ["list of errors"]
 }
 ```
 
@@ -213,6 +154,10 @@ ms.locfileid: "12319232"
 | 200 | 请求正常。 |
 | 4XX | 请参阅 [错误代码](#error-codes)。 |
 | 5XX | 请参阅 [错误代码](#error-codes)。 |
+
+### <a name="see-also"></a>另请参阅
+
+*  简介 [：检查程序包上载的状态](using-addons-api.md#checking-the-status-of-a-package-upload)
 
 
 <!-- ====================================================================== -->
@@ -245,7 +190,7 @@ ms.locfileid: "12319232"
 
 #### <a name="response-headers"></a>响应头
 
-* 地点： `/products/{productID}/submissions/operations/{operationID}`
+* 地点： `{operationID}`
 
 #### <a name="status-codes"></a>状态代码
 
@@ -256,6 +201,10 @@ ms.locfileid: "12319232"
 | 202 | 请求已接受处理，但处理未完成。 |
 | 4XX | 请参阅 [错误代码](#error-codes)。 |
 | 5XX | 请参阅 [错误代码](#error-codes)。 |
+
+### <a name="see-also"></a>另请参阅
+
+*  简介 [：发布提交](using-addons-api.md#publishing-the-submission)
 
 
 <!-- ====================================================================== -->
@@ -283,15 +232,33 @@ ms.locfileid: "12319232"
 
 ### <a name="response"></a>响应
 
-可以在 `GET` 以下方案中调用操作状态 API。  在所有有效的方案中， `200 OK` 将返回 ，并返回不同的状态消息。
+可以在 `GET` 以下方案中调用操作状态 API。  在所有有效的方案中，将 `200 OK` 返回 ，并返回不同的状态消息。
+
+#### <a name="response-when-a-new-product-is-published"></a>新产品发布时的响应
+
+```json
+{
+    "id": "{operationID}",
+    "createdTime": "Date Time",
+    "lastUpdatedTime": " Date Time ",
+    "status": "Failed",
+    "message": "Can't create new extension.",
+    "errorCode": "CreateNotAllowed",
+    "errors": null
+}
+```
 
 #### <a name="response-when-there-is-nothing-new-to-be-published"></a>没有要发布的新增功能时的响应
 
 ```json
 {
     "id": "{operationID}",
-    "status": "NOTHING-TO-PUBLISH",
-    "message": "There is no draft available to publish. Please update the draft before publishing."
+    "createdTime": "Date Time",
+    "lastUpdatedTime": " Date Time ",
+    "status": "Failed",
+    "message": "Can't publish extension since there are no updates, please try again after updating the package.",
+    "errorCode": "NoModulesUpdated",
+    "errors": null
 }
 ```
 
@@ -300,8 +267,58 @@ ms.locfileid: "12319232"
 ```json
 {
     "id": "{operationID}",
-    "status": "CONFLICT",
-    "message": "There is another in-review submission for this product. Please wait for that submission to be completed before triggering a new publish."
+    "createdTime": "Date Time",
+    "lastUpdatedTime": " Date Time ",
+    "status": "Failed",
+    "message": "Can't publish extension as your extension submission is in progress. Please try again later.",
+    "errorCode": "InProgressSubmission",
+    "errors": null    
+}
+```
+
+#### <a name="response-when-there-is-an-ongoing-unpublished-submission-for-the-same-product"></a>同一产品正在进行的未发布提交时的响应
+
+```json
+{
+    "id": "{operationID}",
+    "createdTime": "Date Time",
+    "lastUpdatedTime": " Date Time ",
+    "status": "Failed",
+    "message": "Can't publish extension as your extension is being unpublished. Please try after you've unpublished.",
+    "errorCode": "UnpublishInProgress",
+    "errors": null    
+}
+```
+
+#### <a name="response-where-any-of-the-modules-are-invalid"></a>任何模块无效的响应
+
+```json
+{
+    "id": "{operationID}",
+    "createdTime": "Date Time",
+    "lastUpdatedTime": " Date Time ",
+    "status": "Failed",
+    "message": "Can't publish extension as your extension has modules that are not valid. Fix the modules with errors and try to publish again.",
+    "errorCode": "ModuleStateUnPublishable",
+    "errors": [
+        {
+            "message": "Invalid module : <Modules>"
+        }
+    ]
+}
+```
+
+#### <a name="response-when-there-are-validation-errors-in-submission"></a>提交中出现验证错误时的响应
+
+```json
+{
+    "id": "{operationID}",
+    "createdTime": "Date Time",
+    "lastUpdatedTime": " Date Time ",
+    "status": "Failed",
+    "message": "Extension can't be published as there are submission validation failures. Fix these errors and try again later.",
+    "errorCode": "SubmissionValidationError",
+    "errors": ["{list of errors}"]
 }
 ```
 
@@ -310,8 +327,12 @@ ms.locfileid: "12319232"
 ```json
 {
     "id": "{operationID}",
-    "status": "IN-REVIEW",
-    "message": "The draft has been successfully submitted and is in review. The review may take up to 7 business days."
+    "createdTime": "Date Time",
+    "lastUpdatedTime": "Date Time",
+    "status": "Succeeded",
+    "message": "Successfully created submission with ID {submission.Id}",
+    "errorCode": "",
+    "errors": null
 }
 ```
 
@@ -320,8 +341,12 @@ ms.locfileid: "12319232"
 ```json
 {
     "id": "{operationID}",
-    "status": "FAILED",
-    "message": "The operation failed due to an unknown error. Please re-trigger the publish call."
+    "createdTime": "Date Time",
+    "lastUpdatedTime": " Date Time ",
+    "status": "Failed",
+    "message": "An error occurred while performing the operation",
+    "errorCode": null,
+    "errors": null
 }
 ```
 
@@ -339,6 +364,10 @@ ms.locfileid: "12319232"
 | 4XX | 请参阅 [错误代码](#error-codes)。 |
 | 5XX | 请参阅 [错误代码](#error-codes)。 |
 
+### <a name="see-also"></a>另请参阅
+
+*  简介 [：检查发布状态](using-addons-api.md#checking-the-publishing-status)
+
 
 <!-- ====================================================================== -->
 ## <a name="error-codes"></a>错误代码
@@ -349,9 +378,9 @@ ms.locfileid: "12319232"
 
 | 消息 | 描述 | 示例方案 |
 |---|---|---|
-| 400 错误的请求 | 服务器无法理解该请求。 | 正文中没有 (zip) 包。  或者 `Content-Type` ，标头缺失或其值不正确。 |
+| 400 错误的请求 | 服务器无法理解该请求。 | 正文中没有 (zip 文件) 包。  或者， `Content-Type` 标头缺失或其值不正确。 |
 | 401 未经授权 | 请求页面需要授权。 | 身份验证令牌缺失、过期或无效。 |
-| 404 未找到 | 服务器找不到请求的页面。 | 指定 `productID` `operationID` 或无效，或不属于正在提出请求的开发人员。 |
+| 404 未找到 | 服务器找不到请求的页面。 | 指定 `productID` 或 `operationID` 无效，或不属于正在提出请求的开发人员。 |
 | 408 请求超时 | 请求所等待的时间比服务器准备等待的时间长。 | 上传程序包时存在超时。 |
 | 429 请求过多 | 用户发送的请求过多。 | 发送的请求过多且受到限制。 |
 
@@ -365,4 +394,4 @@ ms.locfileid: "12319232"
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [使用Microsoft Edge加载项 API](using-addons-api.md)
+*  [在Microsoft Edge预览版中 (加载项 API) ](using-addons-api.md)
