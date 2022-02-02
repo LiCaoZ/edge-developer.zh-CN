@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: a03f67c3adcea318dfbbbd15d8a585170e67a6f6
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
+ms.openlocfilehash: 8c20352398119cbf499674cf208966ca9d45c9f1
+ms.sourcegitcommit: c63325d520191ce4b4e707fb680c84afce4eab54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12326073"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "12338848"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,7 +30,7 @@ ms.locfileid: "12326073"
 
 本页是与分析性能相关 Microsoft Edge DevTools 功能的综合参考。
 
-有关如何使用 DevTools 分析页面性能的指南教程，请参阅 入门 With [Analyzeing](./index.md) Runtime Performance。
+有关如何使用 DevTools 分析页面性能的指南教程，请参阅 入门 With [Analyzeing Runtime](./index.md) Performance。
 
 
 <!-- ====================================================================== -->
@@ -42,9 +42,9 @@ ms.locfileid: "12326073"
 
 1. 转到要分析的页面。
 
-1. 单击**** DevTools 中的"性能"工具。
+1. 单击 DevTools 中的"性能"工具。****
 
-1. 单击" **记录 (** ![ 图标。单击 ](../media/record-icon.msft.png)) 按钮。
+1. 单击"**录制 (**!["图标。) ](../media/record-icon.msft.png)按钮。
 
    :::image type="content" source="../media/evaluate-performance-performance-record-highlight.msft.png" alt-text="记录。" lightbox="../media/evaluate-performance-performance-record-highlight.msft.png":::
 
@@ -60,7 +60,7 @@ ms.locfileid: "12326073"
 
 1. 在 DevTools 中，打开 **性能** 工具。
 
-1. 单击" **刷新"页** ![ ("刷新页面 ](../media/refresh-page-icon.msft.png) "。) "按钮。  DevTools 在页面刷新时记录性能指标，然后在加载完成后几秒钟自动停止记录。
+1. 单击"**刷新"页 (**!["刷新](../media/refresh-page-icon.msft.png)页面"。) "按钮。  DevTools 在页面刷新时记录性能指标，然后在加载完成后几秒钟自动停止记录。
 
 :::image type="content" source="../media/evaluate-performance-performance-refresh-button.msft.png" alt-text="刷新页面。" lightbox="../media/evaluate-performance-performance-refresh-button.msft.png":::
 
@@ -78,13 +78,13 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 ### <a name="force-garbage-collection-while-recording"></a>录制时强制收集垃圾
 
-在记录页面时，单击"收集**** 垃圾回收 (垃圾图标。) 强制 ![ ](../media/collect-garbage-icon.msft.png) 进行垃圾回收。
+在记录页面时，单击****!["收集垃圾 (收集垃圾图标](../media/collect-garbage-icon.msft.png)。) 强制进行垃圾回收。
 
 :::image type="content" source="../media/evaluate-performance-performance-collect-garbage-button.msft.png" alt-text="收集垃圾。" lightbox="../media/evaluate-performance-performance-collect-garbage-button.msft.png":::
 
 ### <a name="show-recording-settings"></a>显示录制设置
 
-单击 **捕获 (** ![ 捕获设置 ](../media/capture-settings-icon.msft.png) 。) 公开与 DevTools 如何捕获性能记录相关的更多设置。
+单击**捕获 (**![捕获](../media/capture-settings-icon.msft.png)设置。) 公开与 DevTools 如何捕获性能记录相关的更多设置。
 
 :::image type="content" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="&quot;捕获设置部分。" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
 
@@ -134,13 +134,13 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 1. 选中 **“启用画图检测工具 (慢速)”** 复选框。
 
-若要了解如何与画图信息进行交互，请参阅查看 [图层](#view-layers-information) 和 [查看画图探查器](#view-paint-profiler)。
+若要了解如何与绘制信息进行交互，请参阅查看 [图层](#view-layers-information) 和 [查看画图探查器](#view-paint-profiler)。
 
 
 <!-- ====================================================================== -->
 ## <a name="save-a-recording"></a>保存录制内容
 
-若要保存录制，请打开上下文菜单 (右键单击") "，然后单击"保存**配置文件"。**
+若要保存录制，请打开上下文菜单 (右键单击") "，然后单击"保存 **配置文件"**。
 
 :::image type="content" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png" alt-text="保存配置文件。" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png":::
 
@@ -148,7 +148,7 @@ DevTools 会自动放大大部分活动发生的记录部分。
 <!-- ====================================================================== -->
 ## <a name="load-a-recording"></a>加载录制
 
-若要加载录制，请打开上下文菜单 (右键单击") "，然后单击"加载**配置文件"。**
+若要加载录制，请打开上下文菜单 (右键单击") "，然后单击"加载 **配置文件"**。
 
 :::image type="content" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png" alt-text="加载配置文件。" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png":::
 
@@ -156,7 +156,7 @@ DevTools 会自动放大大部分活动发生的记录部分。
 <!-- ====================================================================== -->
 ## <a name="clear-the-previous-recording"></a>清除上一记录
 
-录制后，单击"清除 **录制 (** ![ 清除录制"图标。) "性能"工具清除 ](../media/clear-recording-icon.msft.png) **该** 录制。
+录制后，单击 **"清除录制** (![清除录制"](../media/clear-recording-icon.msft.png) 图标。) "性能"工具清除 **该** 录制。
 
 :::image type="content" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png" alt-text="清除录制。" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png":::
 
@@ -174,7 +174,7 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 若要使用键盘选择一部分:
 
-1. 选择**主节或**它旁边的任何部分的背景，如**交互**、**网络**或**GPU。**  此键盘工作流仅在其中一个分区为焦点时有效。
+1. 选择"**主"部分**的背景或它旁边的任何部分，如"**交互**"、网络或 **GPU**。 ****  此键盘工作流仅在其中一个分区为焦点时有效。
 
 1. 使用 `W`、`A`、`S`、`D` 键分别进行放大、向左移动、缩小和向右移动。
 
@@ -188,23 +188,23 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 ### <a name="search-activities"></a>搜索活动
 
-选择 `Control` + `F` (Windows、Linux) 或 (macOS) 打开"性能"面板底部的 `Command` + `F` **搜索**框。
+选择`Control`+`F` (Windows、Linux) 或`F` `Command`+ (macOS) 打开"性能"面板底部的**搜索**框。
 
 :::image type="content" source="../media/evaluate-performance-performance-search-regex.msft.png" alt-text="搜索框。" lightbox="../media/evaluate-performance-performance-search-regex.msft.png":::
 
 导航与查询匹配的活动:
 
-*  单击"上**一 (** ![ 一步 ](../media/previous-icon.msft.png) ") "下一**** ![ ("下一) ](../media/next-icon.msft.png) 按钮。
+*  单击"上**一 (**!["。](../media/previous-icon.msft.png)**) "下**一 (!["下](../media/next-icon.msft.png)一) 按钮。
 
-*  若要选择下一个活动，请按 `Enter` 。  若要选择上一个活动，请按 `Shift` + `Enter` 。
+*  若要选择下一个活动，请按 `Enter`。  若要选择上一个活动，请按 `Shift`+`Enter`。
 
 修改查询设置:
 
-*  若要使查询区分大小写，请单击"区分**** 大小写 (区分大小写。) ![ ](../media/search-case-icon.msft.png) 按钮。
+*  若要使查询区分大小写，请单击****!["区分大小写 (区分大小写](../media/search-case-icon.msft.png)。) 按钮。
 
-*  若要在查询中使用正则表达式，请单击"正则表达式 (**** ![ Regex.) ](../media/search-regex-icon.msft.png) 按钮。
+*  若要在查询中使用正则表达式，请单击****!["正则表达式 (Regex.](../media/search-regex-icon.msft.png)) 按钮。
 
-若要隐藏搜索框，请单击"取消 **"。**
+若要隐藏搜索框，请单击"取消 **"**。
 
 ### <a name="view-main-thread-activity"></a>查看主线程活动
 
@@ -226,7 +226,7 @@ DevTools 为脚本随机分配颜色。  在上图中，请求来自脚本的函
 
 如果要 [隐藏 JavaScript](#disable-javascript-samples) 请求的详细图表，请参阅禁用 JavaScript 示例。
 <!--When JS samples are disabled, you only see high-level events such as `Event (click)` and `Function Call` (script_foot_closure.js:53) from Figure 16.-->
-禁用 JS 示例后，仅处理上图中的和 `Event: click` `Function Call` 等高级事件 <!--`str` (?)--> 显示。
+禁用 JS 示例后`Event: click``Function Call`，仅处理上图中的和等高级事件 <!--`str` (?)--> 显示。
 
 ### <a name="view-activities-in-a-table"></a>查看表格中的活动
 
@@ -239,13 +239,13 @@ DevTools 为脚本随机分配颜色。  在上图中，请求来自脚本的函
 *   当您想要按记录期间活动发生的顺序查看活动时，请使用"事件日志["选项卡。](#the-event-log-panel)
 
 > [!NOTE]
-> 接下来的三个部分均指向相同的演示。  You can run the demo yourself at [Activity Tabs Demo](https://microsoft-edge-chromium-devtools.glitch.me/perf/activitytabs.html).
+> 接下来的三个部分均指向相同的演示。  You can run the demo yourself at [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/).  <!-- You can view the source files for the "Activity Tabs Demo" page at the [MicrosoftEdge/Demos > devtools-performance-activitytabs](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-activitytabs) repo folder. -->
 
 #### <a name="root-activities"></a>根活动
 
-下面是"呼叫树"面板、"底部向上"面板和"事件**** 日志"面板中**** 提及的根活动**概念**的说明。 ****
+下面是"呼叫树"面板、****"底部向上"面板和"事件**** 日志"面板中**** 提及的根活动**概念**的说明。
 
-根活动是指那些导致浏览器执行的一些操作。  例如，当您单击某个网页时，浏览器将运行一个 `Event` 活动作为根活动。  `Event` 可能会导致处理程序运行等。
+根活动是指那些导致浏览器执行的一些操作。  例如，当您单击某个网页时，浏览器将运行一 `Event` 个活动作为根活动。  `Event` 可能会导致处理程序运行等。
 
 在 **主** 部分的火焰图中，根活动位于图表顶部。  在 **“调用树”** 和 **“活动日志”** 面板中，根活动是顶级项目。
 
@@ -263,13 +263,13 @@ DevTools 为脚本随机分配颜色。  在上图中，请求来自脚本的函
 
 **“自我时间”** 表示直接用于该活动的时间。  **“总时间”** 表示花在该活动或任何子项上的时间。
 
-单击 **"自时间****"、"总**时间 **"或"活动**"按该列对表进行排序。
+单击 **"自时间****、总**时间"或 **"活动**"按该列对表进行排序。
 
 使用 **“筛选器”** 文本框按活动名称筛选事件。
 
 默认情况下，**“分组”** 菜单设置为 **“无分组”**。  使用 **“分组”** 菜单，根据各种条件对活动表进行排序。
 
-单击 **"显示最** (堆栈") 显示"活动"表右侧 ![ 的另一 ](../media/show-heaviest-stack-icon.msft.png) 个表。 ****  单击活动以填充 **"最富堆栈"** 表。  **“最重堆栈”** 表显示所选活动的子项需要最长的运行时间。
+单击 **"显示最**![ (堆栈") 显示"](../media/show-heaviest-stack-icon.msft.png)活动"表**右侧的另一**个表。  单击活动以填充 **"最富堆栈"** 表。  **“最重堆栈”** 表显示所选活动的子项需要最长的运行时间。
 
 #### <a name="the-bottom-up-panel"></a>自下而上面板
 
@@ -279,7 +279,7 @@ DevTools 为脚本随机分配颜色。  在上图中，请求来自脚本的函
 
 :::image type="content" source="../media/evaluate-performance-performance-bottoms-up.msft.png" alt-text="&quot;Bottom-Up面板。" lightbox="../media/evaluate-performance-performance-bottoms-up.msft.png":::
 
-在上 **图** 的主节绘制图中，可以看到几乎所有的时间都用于运行 `Parse HTML` 。  前图中 **“自下而上”** 面板中最上面的活动是 `Parse HTML`。  <!-- in orig article: In the flame chart of the previous figure, the yellow below the calls to `wait` are actually thousands of `Minor GC` calls.  -->  In the **Bottom-Up** tab， the next most expensive activity is `Layout` .
+在上 **图** 的主节绘制图中，可以看到几乎所有的时间都用于运行 `Parse HTML`。  前图中 **“自下而上”** 面板中最上面的活动是 `Parse HTML`。  <!-- in orig article: In the flame chart of the previous figure, the yellow below the calls to `wait` are actually thousands of `Minor GC` calls.  -->  In the **Bottom-Up** tab， the next most expensive activity is `Layout`.
 
 **“自我时间”** 列表示跨越发生的所有直接用于该活动的聚合时间。
 
@@ -299,7 +299,7 @@ DevTools 为脚本随机分配颜色。  在上图中，请求来自脚本的函
 
 **“总时间”** 列表示直接用于该活动或任何子项中的时间。
 
-单击 **"开始时间****"、"开始时间**"**或"** 总时间"按该列对表进行排序。
+单击 **"开始时间****"、**"开始时间"**或"总**时间"按该列对表进行排序。
 
 使用 **“筛选”** 文本框按名称筛选活动。
 
@@ -373,11 +373,11 @@ DevTools 提供了许多方法，以分析每秒帧数:
 
 在请求的左上方有一个深蓝色的方块，意味着它是一个优先级较高的请求。  浅蓝色的方块表示优先级较低。  比如上图中，蓝色所选的请求是优先级较高的，而下方绿色的请求为优先级较低的。
 
-在下面的第一个图中，对 的请求表示为左侧的一行、中间有深色部分的条形和浅色部分，以及右边的 `www.bing.com` 一条线。  下图显示了网络工具的"计时"选项卡中相同请求的相应**表示**形式。 ****
+在下面的第一个 `www.bing.com` 图中，对 的请求表示为左侧的一行、中间有深色部分的条形和浅色部分，以及右边的一条线。  下图显示了网络工具的"计时"选项卡中相同请求的相应**表示**形式。****
 
 下面将说明这两种表示形式如何相互映射：
 
-*   左行是到事件的 `Connection Start` 组的所有内容 (包括)。  换句话说，它是之前的所有内容，不包括 `Request Sent` 。
+*   左行是到事件的 `Connection Start` 组的所有内容 (包括)。  换句话说，它是之前的所有内容，不包括 `Request Sent`。
 
 *   条形图的浅部分为 `Request Sent` 和 `Waiting (TTFB)`。
 
@@ -385,11 +385,11 @@ DevTools 提供了许多方法，以分析每秒帧数:
 
 *   右行基本上是等待主线程所花的时间。  This is not represented in the **Timing** tab.
 
-请求的线栏 `www.bing.com` 表示形式：
+请求的线栏表示 `www.bing.com` 形式：
 
 :::image type="content" source="../media/evaluate-performance-bing-performance-network.msft.png" alt-text="请求的线 www.bing.com 表示。" lightbox="../media/evaluate-performance-bing-performance-network.msft.png":::
 
-网络 **工具** ：
+**网络工具**：
 
 :::image type="content" source="../media/evaluate-performance-bing-network-timing.msft.png" alt-text="网络工具。" lightbox="../media/evaluate-performance-bing-network-timing.msft.png":::
 
@@ -409,7 +409,7 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
 
 ### <a name="view-the-duration-of-a-portion-of-a-recording"></a>查看部分录制的持续时间
 
-当分析像 **网络** 或者 **主** 这样的部分时，有时你需要更精确地估计某些事件花了多长时间。  按住 `Shift` 、单击并按住，然后向左或向右拖动以选择录制的一部分。  在所选内容底部，DevTools 显示该部分所话费的时间。
+当分析像 **网络** 或者 **主** 这样的部分时，有时你需要更精确地估计某些事件花了多长时间。  按住 `Shift`、单击并按住，然后向左或向右拖动以选择录制的一部分。  在所选内容底部，DevTools 显示该部分所话费的时间。
 
 :::image type="content" source="../media/evaluate-performance-performance-main-duration.msft.png" alt-text="查看录制的一部分的持续时间。" lightbox="../media/evaluate-performance-performance-main-duration.msft.png":::
 
@@ -445,11 +445,11 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
 
 若要移动图表:
 
-*   选择 **"** 平移 (![ 平移模式 ](../media/pan-mode-icon.msft.png) 。) 沿 X 和 Y 轴移动。
+*   选择 **"**![平移 (平移模式](../media/pan-mode-icon.msft.png)"。) 沿 X 和 Y 轴移动。
 
-*   选择 **旋转模式** (![ 旋转模式 ](../media/rotate-mode-icon.msft.png) 。) 沿 Z 轴旋转。
+*   选择**旋转模式**![ (旋转模式](../media/rotate-mode-icon.msft.png)。) 沿 Z 轴旋转。
 
-*   选择 **"重置 (** ![ 重置转换 ](../media/reset-transform-icon.msft.png) "。) 将图表重置为原始位置。
+*   选择 **"** 重置 ![ (重置转换](../media/reset-transform-icon.msft.png) "。) 将图表重置为原始位置。
 
 ### <a name="view-paint-profiler"></a>查看绘图探查器
 
@@ -457,9 +457,9 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
 
 1. [打开](#turn-on-advanced-paint-instrumentation)。
 
-1. 在 **"画图****选择一**个事件。
+1. Select a **画图** event in the **Main** section.
 
-**"画图配置文件器"** 面板：
+"**画图配置文件器"** 面板：
 
 :::image type="content" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="&quot;画图配置文件器&quot;面板。" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
 
@@ -495,7 +495,7 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
 
 1. 打开 **渲染** 工具。  请参阅 [使用呈现工具分析呈现性能](#analyze-rendering-performance-with-the-rendering-tool)。
 
-1. 选中 **"画图闪烁"** 复选框。
+1. 选中"**画图闪烁"** 复选框。
 
    :::image type="content" source="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png" alt-text="画图闪烁。" lightbox="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png":::
 
