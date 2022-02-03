@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: c420b963535496b59e06dca18cd8c3a815f5328d
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 03bef810bac0f624b3fb1f631c395f56492cb24e
+ms.sourcegitcommit: 392c0c34ca43bb2b14f93ff4e24b3713ac505013
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323206"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "12339150"
 ---
 # <a name="check-the-accessibility-tree-for-keyboard-and-screen-reader-support"></a>检查辅助功能树是否支持键盘和屏幕阅读器
 
@@ -19,13 +19,13 @@ ms.locfileid: "12323206"
 
 多个 DevTools 功能检查键盘和屏幕阅读器支持。  使用 **Inspect** 工具单独检查每个页面元素的辅助功能可能会相当耗时。  检查网页的另一种方式是使用 **辅助功能树**。  辅助功能 **树** 指示页面向辅助技术（如屏幕阅读器）提供哪些信息。
 
-辅助功能 **树** 是 DOM 树的子集，其中包含 DOM 树中的元素，这些元素对于在屏幕阅读器中显示页面内容非常有用。  辅助功能**树位于**"元素"工具**** 的"辅助功能"选项卡**** ("**样式**"选项卡) 。
+辅助功能 **树** 是 DOM 树的子集，其中包含 DOM 树中的元素，这些元素对于在屏幕阅读器中显示页面内容非常有用。  辅助功能**树位于**"样式"选项卡**** 附近的"元素" (**** **"** 辅助功能") 。
 
 若要浏览将辅助功能树与演示页面一同使用：
 
-1.  打开 [新选项卡中的辅助功能测试](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 演示网页。 然后选择 **F12** 以打开 DevTools。
+1.  打开 [新选项卡中的辅助功能测试](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 演示网页。 然后选择 **F12** 以打开 DevTools。
 
-1.  选择" **检查** (检查"图标。) ![ 位于 DevTools 左上角的"检查"按钮，以便按钮以蓝色 (](../media/inspect-icon.msft.png) 突出显示) 。
+1.  选择 **"检查** ![](../media/inspect-icon.msft.png) (检查"图标。) 位于 DevTools 左上角的"检查"按钮，以便按钮以蓝色 (突出显示) 。
 
 1.  在呈现的网页的"捐赠 **"部分** ，将鼠标悬停在 **"100"** 按钮上。  将显示 **"检查** "工具覆盖。
 
@@ -37,7 +37,7 @@ ms.locfileid: "12323206"
     辅助功能树工具中的"资金"表单按钮
 :::image-end:::
 
-树中没有名称或具有 (角色的任何元素（如 `generic` 元素) ）都存在问题，因为该元素对键盘用户或正在使用辅助技术的用户不可用。 `div`
+树中 `generic` 没有名称或具有 (`div` 角色的任何元素（如元素) ）都存在问题，因为该元素对键盘用户或使用辅助技术的用户不可用。
 
 
 <!-- ====================================================================== -->

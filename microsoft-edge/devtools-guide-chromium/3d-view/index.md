@@ -1,33 +1,31 @@
 ---
-title: 使用 3D 视图工具导航 z-index、DOM 和图层
+title: 使用 3D 视图工具导航 z 索引、DOM 和层
 description: 如何使用 3D 视图，包括导航画布、Z 索引、3D DOM 和复合层。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/03/2020
-ms.openlocfilehash: c350463e81309abbc4dae55be2417a2b369d8a95
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
+ms.openlocfilehash: 4ec4699c56343d6ddf1f4b35b9b5e551085f03da
+ms.sourcegitcommit: 392c0c34ca43bb2b14f93ff4e24b3713ac505013
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325730"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "12339164"
 ---
-# <a name="navigate-z-index-dom-and-layers-using-the-3d-view-tool"></a>使用 3D 视图工具导航 z-index、DOM 和图层
+# <a name="navigate-z-index-dom-and-layers-using-the-3d-view-tool"></a>使用 3D 视图工具导航 z 索引、DOM 和层
 
 使用 **3D 视图** 通过浏览文档对象模型和 [DOM ](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) (或 [z 索引](https://developer.mozilla.org/docs/Web/CSS/z-index)) 上下文来调试 Web 应用。  使用 **3D 视图** 执行以下操作：
 *   [浏览翻译为 3D 视角的网页](#3d-dom)。
-*   [基于 z-index 堆叠上下文进行调试](#z-index)。
+*   [基于 z 索引堆栈上下文进行调试](#z-index)。
 *   [通过复合层从 3D 视图访问图层工具功能](#composited-layers)。
-*   [清除 DOM 窗格或](#changing-your-view) [z-index 窗格中的一些待筛选邮件](#change-the-scope-of-your-exploration)。
-*   [选取配色方案以最好地调试 DOM 问题](#dom-color-type) 或 [z-index 问题](#z-index-color-type)。
-
-若要探索 3D 视图项目的早期原型并自己运行代码，请转到 [3D 视图示例](https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView)。
+*   [清除 DOM 窗格](#changing-your-view) 或 z 索引窗格中的一 [些待筛选邮件](#change-the-scope-of-your-exploration)。
+*   [选取配色方案以最好地调试 DOM 问题](#dom-color-type) 或 [z 索引问题](#z-index-color-type)。
 
 在左侧，有三个窗格可用于调试体验：
 *   Z [索引](#z-index) 窗格。  在 Web 应用中的不同元素中导航，并注意 z-index 上下文。  Z **索引窗格** 是默认窗格。
-*   [3D DOM](#3d-dom)窗格。  通过可轻松访问的所有元素，作为一个整体探索 DOM。  若要访问该窗格，请选择"Z 索引"窗格**旁边的"DOM"** 窗格。 ****
-*   复合 [层窗格](#composited-layers)。  添加另一个 3D 元素以从层角度创建更全面的体验。  若要访问窗格，请选择 **"DOM"** 窗格旁边的"复合层"窗格。 ****
+*   [3D DOM](#3d-dom)窗格。  通过可轻松访问的所有元素，作为一个整体探索 DOM。  若要访问该窗格，请选择 **"Z 索引** "窗格 **旁边的"DOM"** 窗格。
+*   复合 [层窗格](#composited-layers)。  添加另一个 3D 元素以从层角度创建更全面的体验。  若要访问窗格，请选择"DOM"窗格旁边的"复合**层"** 窗格。****
 
 在右侧，画布显示来自[Z 索引](#z-index)[、3D DOM](#3d-dom)或[复合层的选择](#composited-layers)。
 
@@ -37,9 +35,9 @@ ms.locfileid: "12325730"
 
 若要打开 **3D 视图** 面板，在 DevTools 中，执行下列任一操作：
 
-* 单击**主工具栏** (+) 工具"，然后选择 **"3D 视图"。**
+* 单击 **主工具栏** 上的 (+) "按钮，然后选择 **"3D 视图"**。
 
-* 或者，按 `Shift` + `Ctrl` + `P` 打开命令菜单，键入"3d"，然后选择**3D 视图 [箱]**。
+* 或者，按`Shift`+`P`+`Ctrl`以打开"命令菜单"，键入"3d"，然后选择 **"3D 视图 [箱]"**。
 
 
 <!-- ====================================================================== -->
@@ -51,7 +49,7 @@ ms.locfileid: "12325730"
 
 ### <a name="keyboard-shortcuts"></a>键盘快捷方式
 
-若要水平旋转 DOM，请选择 `left-arrow` 和 `right-arrow` 键。  若要垂直旋转，请选择 `up-arrow` 和 `down-arrow` 键。
+若要水平旋转 DOM，请选择 和 `left-arrow` `right-arrow` 键。  若要垂直旋转，请选择 `up-arrow` 和 `down-arrow` 键。
 
 若要导航 DOM 以在相邻元素中移动，请选择一个元素，然后使用 `up-arrow` 和 `down-arrow` 键。
 
@@ -69,7 +67,7 @@ ms.locfileid: "12325730"
    屏幕控件
 :::image-end:::
 
-若要将画布视图重置为原始视图，请选择"重置**** 相机"按钮，或选择视图中**** 的"重置元素"和"将相机重新居中 (侧向刷新图标) 按钮。
+若要将画布视图重置为原始视图，请选择"重置**** 相机"按钮，或选择视图中**** 的"重置元素"和"将相机重新居中 (旁刷新图标) 按钮。
 
 若要刷新画布，例如浏览器发生更改或切换到设备仿真器视图时，请选择"重新拍摄快照"按钮或****"获取新的快照"按钮**** (刷新图标) 。
 
@@ -133,7 +131,7 @@ ms.locfileid: "12325730"
 
 ### <a name="dom-color-type"></a>DOM 颜色类型
 
-**3D DOM**窗格具有以下选项：
+**3D DOM** 窗格具有以下选项：
 *   三种不同的颜色线：
     *   **热度图 - 紫色到白色**
     *   **热度图 - 蓝色到黄色**
@@ -151,4 +149,4 @@ ms.locfileid: "12325730"
    **复合层**窗格
 :::image-end:::
 
-**复合层**窗格打开**层**工具的元素，而不更改上下文。  你仍然可以访问每个层的详细信息，并拥有慢滚动通道和**画图。** ****
+**复合层**窗格打开**层**工具的元素，而不更改上下文。  你仍然可以访问每个图层的详细信息，并拥有慢速**滚动****画图。**

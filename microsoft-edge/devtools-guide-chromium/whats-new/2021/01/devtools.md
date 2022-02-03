@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
-ms.openlocfilehash: 1267892f9ae3b00a7f9f1d5ebea385ca35e1b454
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: cd44d952c9af581f5d23b26c8ee7ddccc5c136aa
+ms.sourcegitcommit: 392c0c34ca43bb2b14f93ff4e24b3713ac505013
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12324837"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "12339220"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -200,7 +200,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 
 #### <a name="support-forcing-the-target-css-state"></a>支持强制 :target CSS 状态
 
-现在可使用 DevTools 强制 [:target](https://developer.mozilla.org/docs/web/css/:target) CSS 伪类。  当唯一元素（目标元素）具有与 URL 片段匹配的 `id` 时，将触发 `:target` 伪类。  例如，`http://www.example.com/index.html#section1` URL 在带有 `id="section1"` 的 HTML 元素上触发 `:target` 伪类。  若要尝试突出显示了第 1 部分的演示，请导航至“[CSS :target 演示](https://microsoftedge.github.io/DevToolsSamples/whats-new/89/target-css-demo.html#section-1)”。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1156628](https://crbug.com/1156628)。
+现在可使用 DevTools 强制 [:target](https://developer.mozilla.org/docs/web/css/:target) CSS 伪类。  当唯一元素（目标元素）具有与 URL 片段匹配的 `id` 时，将触发 `:target` 伪类。  例如，`http://www.example.com/index.html#section1` URL 在带有 `id="section1"` 的 HTML 元素上触发 `:target` 伪类。  若要尝试突出显示了第 1 部分的演示，请导航至“[CSS :target 演示](https://microsoftedge.github.io/Demos/devtools-target-pseudo/#section-1)”。  若要在 Chromium 开源项目中查看此功能的历史记录，请导航至问题 [1156628](https://crbug.com/1156628)。
 
 突出显示网页，未强制 CSS：
 

@@ -1,17 +1,17 @@
 ---
 title: 检查深色主题和浅主题的对比度问题
-description: 使用呈现工具中的"模拟 CSS 媒体功能首选-配色方案\"下拉列表) 检查深色主题和浅色主题 (的对比度问题。
+description: 使用呈现工具中的"模拟 CSS 媒体功能首选-配色方案\"下拉列表 (深色模式和浅色模式) 检查深色主题和浅色主题控件的对比度问题。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 61e950e954ec8b23865656e42bbbf75565efd217
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 6858c09ab742c26904d7be3fbad04bb83cbf5984
+ms.sourcegitcommit: 392c0c34ca43bb2b14f93ff4e24b3713ac505013
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323808"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "12339108"
 ---
 # <a name="check-for-contrast-issues-with-dark-theme-and-light-theme"></a>检查深色主题和浅主题的对比度问题
 
@@ -19,18 +19,18 @@ ms.locfileid: "12323808"
 
 测试颜色辅助功能时，可能需要测试不同的显示颜色主题，以测试对比度问题。
 
-大多数操作系统都提供深色模式和浅色模式。  您的网页可以使用 CSS 媒体查询对此操作系统设置做出反应。  您可以使用呈现工具中的 CSS 选项测试这些主题并测试 CSS 媒体查询，而无需更改 `prefers-color-scheme` **操作系统** 设置。
+大多数操作系统都提供深色模式和浅色模式。  您的网页可以使用 CSS 媒体查询对此操作系统设置做出反应。  您可以使用呈现工具中的 CSS 选项测试这些主题并测试 CSS `prefers-color-scheme` 媒体查询，而无需更改 **操作系统** 设置。
 
-例如，辅助功能测试演示页面包括浅色主题和深色主题。  演示页面从操作系统继承深色或浅色主题设置。  如果我们使用 DevTools 模拟将操作系统设置为浅色方案，然后刷新演示网页，问题工具将显示六个**** 色对比度问题，而不是两个。   (你可能会看到不同的数字。) 
+例如，辅助功能测试演示页面包括浅色主题和深色主题。  演示页面从操作系统继承深色或浅色主题设置。  如果我们使用 DevTools 模拟将操作系统设置为浅色方案，然后刷新演示网页，问题工具将显示六个色对比度**** 问题，而不是两个。   (您可能会看到不同的数字。) 
 
 
 若要模拟用户的首选颜色主题选择：：
 
-1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
+1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
 1.  选择 **Esc** 打开 DevTools 底部的"箱"。  Select the **+** icon at the top of the Drawer to see the list of tools， and then select **Rendering**.  将显示呈现工具。
 
-1.  在模拟 **CSS 媒体功能 prefers-color-scheme** 下拉列表中，选择 **prefers-color-scheme： light**。      网页使用 重新呈现 `light-theme.css` 。
+1.  在模拟 **CSS 媒体功能 prefers-color-scheme** 下拉列表中，选择 **prefers-color-scheme： light**。      网页使用 重新呈现 `light-theme.css`。
 
 
     :::image type="complex" source="../media/a11y-testing-simulating-light-mode.msft.png" alt-text="使用呈现工具模拟光线模式并触发文档的其他主题。" lightbox="../media/a11y-testing-simulating-light-mode.msft.png":::
@@ -50,9 +50,9 @@ ms.locfileid: "12323808"
         在 **浅色模式下** ，"接收状态"部分有对比度问题
     :::image-end:::
 
-1.  在 DevTools 中，选择 **"元素**"工具，然后在 Windows/Linux 或 macOS 上的 Command+F 上选择**Ctrl+F。** ****  将显示 **"** 查找"文本框，以在 HTML DOM 树中搜索。
+1.  在 DevTools 中，选择 **"元素**"工具，然后选择 macOS 上的 Windows/Linux 或 **Command+F** 上的 **Ctrl**+F。  将显示 **"** 查找"文本框，以在 HTML DOM 树中搜索。
 
-1.  输入 `scheme` 。  找到以下 CSS 媒体查询，现在可更新相应的 CSS 文件。
+1.  输入 `scheme`。  找到以下 CSS 媒体查询，现在可更新相应的 CSS 文件。
 
     ```html
     <link rel="stylesheet" href="css/light-theme.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
@@ -63,5 +63,5 @@ ms.locfileid: "12323808"
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [模拟呈现页面中的深色或浅色方案](./preferred-color-scheme-simulation.md)
+*  [在呈现的页面中模拟深色或浅色方案](./preferred-color-scheme-simulation.md)
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)

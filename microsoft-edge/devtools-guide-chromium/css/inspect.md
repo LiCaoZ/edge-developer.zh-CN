@@ -1,21 +1,21 @@
 ---
-title: 使用 Inspect 工具分析页面
+title: 使用检查工具分析页面
 description: 如何使用 DevTools 中的"检查"工具Microsoft Edge HTML 页面。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/16/2021
-ms.openlocfilehash: e72d0d33f0c996e190c699c99897fe44c9778ea4
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
+ms.openlocfilehash: 6abe78e34c838a1a5a141beb8d63f7cc8611cdf9
+ms.sourcegitcommit: 392c0c34ca43bb2b14f93ff4e24b3713ac505013
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325898"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "12339178"
 ---
-# <a name="analyze-pages-using-the-inspect-tool"></a>使用 Inspect 工具分析页面
+# <a name="analyze-pages-using-the-inspect-tool"></a>使用检查工具分析页面
 
-本文演示如何使用 **Inspect** 工具预览有关元素的信息，以及如何在当前文档中选择元素。  若要立即试用**Inspect**工具，请在阅读[](https://microsoftedge.github.io/DevToolsSamples/inspector/inspector-demo.html)本文时，打开其他选项卡或窗口中的"检查演示"页。
+本文演示如何使用 **Inspect** 工具预览有关元素的信息，以及如何在当前文档中选择元素。  若要立即试用 **Inspect** 工具，请在阅读本文时[](https://microsoftedge.github.io/Demos/devtools-inspect)，打开其他选项卡或窗口中的"检查演示"页。
 
 
 <!-- ====================================================================== -->
@@ -25,7 +25,7 @@ ms.locfileid: "12325898"
 
 ![DevTools 左上角的"检查工具"按钮。](images/inspect-tool-button.msft.png)
 
-或者， `Control` + `Shift` + `C` 按 (Windows、Linux) `Command` + `Shift` + `C` 或 (macOS) ，以激活**Inspect**工具。
+或者，按 `Control``C``Shift`++ (Windows、Linux) 或 `Command``Shift`++`C` (macOS) ，以激活 **Inspect** 工具。
 
 
 <!-- ====================================================================== -->
@@ -37,7 +37,7 @@ ms.locfileid: "12325898"
 
 当您将鼠标悬停在呈现的页面上的页面元素上时，DOM 树会自动扩展以突出显示您悬停在的元素上。
 
-Inspect **** 覆盖层显示有关元素的以下信息：
+**Inspect 覆盖**层显示有关元素的以下信息：
 
 * 元素的名称。
 * 元素的维度（以像素为单位）。
@@ -55,7 +55,7 @@ Inspect **** 覆盖层显示有关元素的以下信息：
 * 报告给辅助技术的元素的名称和角色。
 * 元素是否可聚焦键盘。
 
-例如，在"[检查演示](https://microsoftedge.github.io/DevToolsSamples/inspector/inspector-demo.html)"页中，对于按钮，"检查"覆盖层在对比度值 `Bad Contrast` 1.77 旁边有一个警告图标。 ****  " **检查** "覆盖层还显示按钮无法通过键盘对焦。  无法通过键盘导航到该按钮，因为该按钮实现为类为 的元素，而不是作为 元素 `<div>` `button` `<button>` 实现。
+例如，在"[检查演示](https://microsoftedge.github.io/Demos/devtools-inspect)`Bad Contrast`"页中，对于按钮，**"检查**"覆盖层在对比度值 1.77 旁边有一个警告图标。  " **检查** "覆盖层还显示按钮无法通过键盘对焦。  无法通过`<div>``button`键盘导航到该按钮，因为该按钮实现为类为 的元素，而不是作为 元素实现`<button>`。
 
 ![缺乏足够对比度的元素具有警告图标。](images/inspect-tool-bad-contrast.msft.png)
 
@@ -63,11 +63,11 @@ Inspect **** 覆盖层显示有关元素的以下信息：
 <!-- ====================================================================== -->
 ## <a name="inspecting-non-accessible-elements"></a>检查不可访问的元素
 
-CSS 属性为 的元素 `pointer-events: none` 不适用于 **Inspect** 工具。  在" [检查演示](https://microsoftedge.github.io/DevToolsSamples/inspector/inspector-demo.html) "页中，将鼠标悬停在 上，你将看到父元素 () `Overlay Button` `div.wrapper` 显示而不是 `Overlay Button` 。
+CSS 属性为 的元素 `pointer-events: none` 不适用于 **Inspect** 工具。  在" [检查演示](https://microsoftedge.github.io/Demos/devtools-inspect) "页中，将 `Overlay Button` `div.wrapper` 鼠标悬停在 上，你将看到父元素 () 显示而不是 `Overlay Button`。
 
 ![无法选择 CSS 属性为"pointer events： none"的元素。](images/inspect-tool-element-element-without-pointer-events.msft.png)
 
-若要检查 CSS 属性为 的元素， `pointer-events: none` 请将鼠标悬停在 元素上 `Shift` 时按 。  页面布局区域上还有颜色覆盖，指示你位于高级选择模式。
+若要检查 CSS 属性为 `pointer-events: none`的元素，请将鼠标 `Shift` 悬停在 元素上时按 。  页面布局区域上还有颜色覆盖，指示你位于高级选择模式。
 
 ![在页面上选择元素时按 Shift 键，可以选择 CSS 样式属性为"pointer-events： none"的元素。](images/inspect-tool-with-shift.msft.png)
 
@@ -79,7 +79,7 @@ CSS 属性为 的元素 `pointer-events: none` 不适用于 **Inspect** 工具�
 
 *  " **检查** "工具已停用。
 *  突出显示相应的 DOM 节点。
-*  样式 **工具** 显示应用于 元素的 CSS。
+*  **样式工具**显示应用于 元素的 CSS。
 
 ![在呈现的页面中单击某个元素时，"样式"工具将显示应用于该元素的样式。](images/inspect-tool-highlighted-styles.msft.png)
 

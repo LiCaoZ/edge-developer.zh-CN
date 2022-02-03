@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 64c8d1284b58129db69e6a4dec8998b4e1956dde
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 15b3c6d4cccf1e6079ebde2664b465f959a20ff4
+ms.sourcegitcommit: 392c0c34ca43bb2b14f93ff4e24b3713ac505013
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323171"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "12339115"
 ---
 # <a name="verify-that-a-page-is-usable-with-blurred-vision"></a>验证页面是否在视觉模糊时可用
 
@@ -21,19 +21,19 @@ ms.locfileid: "12323171"
 
 若要检查网页是否具有模糊的视觉，请进行查看：
 
-1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
+1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
 
 1.  选择 **Esc** 打开 DevTools 底部的"箱"。  Select the **+** icon at the top of the Drawer to display the list of tools， and then select **Rendering**.
 
-1.  在"**模拟视觉缺陷**"下拉列表中，选择"**模糊的视觉"。**
+1.  在" **模拟视觉缺陷** "下拉列表中，选择" **模糊的视觉"**。
 
     :::image type="complex" source="../media/a11y-testing-simulating-blur.msft.png" alt-text="模拟模糊的页面。" lightbox="../media/a11y-testing-simulating-blur.msft.png":::
         模拟模糊的页面
     :::image-end:::
 
-    请注意，CSS 属性使上方菜单上的菜单项文本难以 `text-shadow` 阅读。 例如，查看 **"主页"、"****采用动物**"和其他菜单项。
+    请注意， `text-shadow` CSS 属性使上方菜单上的菜单项文本难以阅读。 例如，查看" **主页"**、 **"采用一只猫**"和其他菜单项。
 
-1.  在 **呈现工具** 的" **模拟视觉缺陷"** 中，选择"无 **模拟** "以删除模糊的视觉模拟。
+1.  在 **呈现工具的** " **模拟视觉缺陷"** 中，选择"无 **模拟** "以删除模糊的视觉模拟。
 
 
 <!-- ====================================================================== -->

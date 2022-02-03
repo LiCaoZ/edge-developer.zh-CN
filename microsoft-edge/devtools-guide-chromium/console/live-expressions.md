@@ -1,24 +1,24 @@
 ---
-title: 使用 Live Expressions 监视 JavaScript 中的更改
+title: 使用实时表达式监视 JavaScript 中的更改
 description: 使用 Live Expressions 实时观看 JavaScript 表达式值。  如果发现自己在控制台中重复键入相同的JavaScript表达式，请尝试使用动态表达式。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
-ms.openlocfilehash: 8254aa2ebff5524a8a1f8e72607a8d9d4140f23b
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
+ms.openlocfilehash: 828821694182ce67df1a1c0f58e6e6cd315d6b2d
+ms.sourcegitcommit: 392c0c34ca43bb2b14f93ff4e24b3713ac505013
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12326066"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "12339017"
 ---
-# <a name="monitor-changes-in-javascript-using-live-expressions"></a>使用 Live Expressions 监视 JavaScript 中的更改
+# <a name="monitor-changes-in-javascript-using-live-expressions"></a>使用实时表达式监视 JavaScript 中的更改
 
 <!-- very short article in other repo:
 Watch JavaScript values in real-time with Live Expressions -->
 
-**实时表达式** 是监视进行大量更改的 JavaScript 表达式的一种很好的方法。    你可以将特定 JavaScript 表达式固定到控制台的顶部，而不是让许多控制台消息进行 **读取和导航**。
+**实时表达式** 是监视进行大量更改的 JavaScript 表达式的一种很好的方法。    你可以将特定 JavaScript 表达式固定到控制台顶部，而不是让许多控制台消息进行 **读取和导航**。
 
 
 <!-- ====================================================================== -->
@@ -27,7 +27,7 @@ Watch JavaScript values in real-time with Live Expressions -->
 To start， click the **Create live expression (** eye) icon next to the **Filter** textbox.  单击它后，将显示一个文本框，以在文本框中输入新的表达式。
 
 :::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="选择&quot;新建实时表达式&quot;按钮以打开文本框以键入表达式。" lightbox="../media/console-live-expressions-new.msft.png":::
-    选择 `New live expression` 按钮以打开文本框以键入表达式
+    选择按钮 `New live expression` 以打开文本框以键入表达式
 :::image-end:::
 
 **Live Expressions** 可能是任何有效的 JavaScript 表达式。  若要尝试，请完成以下操作。
@@ -35,16 +35,16 @@ To start， click the **Create live expression (** eye) icon next to the **Filte
 1.  打开 **Live Expression** 文本框。
 1.  键入 `document.activeElement`。
 1.  若要保存表达式，请完成以下操作之一。
-    *   选择 `Control` + `Enter` (Windows、Linux) 或 (`Command` + `Enter` macOS) 。
-    *   在 **"Live Expression"文本框之外** 选择。
+    *   选择`Control`+`Enter` (Windows、Linux) 或 (`Command`+`Enter` macOS) 。
+    *   在" **Live Expression"文本框之外** 选择。
 
-表达式现在为活动表达式， `body` 并显示为结果。
+表达式现在为活动表达式，并显示 `body` 为结果。
 
 :::image type="complex" source="../media/console-live-expressions-document-active-element.msft.png" alt-text="document.activeElement 实时表达式将正文显示为结果。" lightbox="../media/console-live-expressions-document-active-element.msft.png":::
     结果中 `document.activeElement` 显示正文的 Live 表达式
 :::image-end:::
 
-如果在网页中导航，值将发生更改。  例如，在下图中，在网页中打开搜索菜单，表达式现在 `button.nav-bar-button.focus-visible` 显示为值。
+如果在网页中导航，值将发生更改。  例如，在下图中，在网页中打开搜索菜单，表达式现在显示为 `button.nav-bar-button.focus-visible` 值。
 
 :::image type="complex" source="../media/console-live-expressions-document-active-element-nav-button.msft.png" alt-text="若要更改 Live Expression 的值，请与网页上的不同元素交互" lightbox="../media/console-live-expressions-document-active-element-nav-button.msft.png":::
     若要更改 **Live Expression 的值，** 请与网页上的不同元素交互
@@ -53,7 +53,7 @@ To start， click the **Create live expression (** eye) icon next to the **Filte
 若要再次更改该值，请打开并选择网页上的"搜索"文本框。
 
 :::image type="complex" source="../media/console-live-expressions-document-active-element-search.msft.png" alt-text="导航到网页中的不同元素以更新 Live Expression。" lightbox="../media/console-live-expressions-document-active-element-search.msft.png":::
-    导航到网页中的不同元素以更新 Live **Expression**
+    导航到网页中的不同元素以更新 **Live Expression**
 :::image-end:::
 
 
@@ -63,7 +63,7 @@ To start， click the **Create live expression (** eye) icon next to the **Filte
 只要 **使 Live Expression** 保持活动状态，它就可用。  若要删除 Live **Expression，** 请选择它的 `x` 旁边。
 
 :::image type="complex" source="../media/console-live-expressions-remove.msft.png" alt-text="若要删除 Live Expressions，请选择其旁边的 x" lightbox="../media/console-live-expressions-remove.msft.png":::
-    若要删除 **Live Expressions，** 请选择 `x` 其旁边的
+    若要删除 **Live Expressions**，请选择其 `x` 旁边的
 :::image-end:::
 
 
@@ -72,7 +72,7 @@ To start， click the **Create live expression (** eye) icon next to the **Filte
 
 您可以创建多个表达式，并跨浏览器会话和窗口保留每个表达式。  **实时** 表达式是一种减少调试工作流中的噪音的方法。
 
-例如，您希望监视当前网页中的鼠标移动。  导航到 ["记录鼠标移动](https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html)"演示，打开 **控制台**，并四处移动鼠标以显示包含大量信息的日志。
+例如，您希望监视当前网页中的鼠标移动。  导航到 ["记录鼠标移动](https://microsoftedge.github.io/Demos/devtools-console/mousemove.html)"演示，打开 **控制台**，然后四处移动鼠标以显示包含大量信息的日志。
 
 :::image type="complex" source="../media/console-live-expression-mouse-logging.msft.png" alt-text="控制台显示有关鼠标位置的很多信息。" lightbox="../media/console-live-expression-mouse-logging.msft.png":::
     **控制台** 显示有关鼠标位置的很多信息
@@ -82,13 +82,13 @@ To start， click the **Create live expression (** eye) icon next to the **Filte
 
 若要尝试 **Live Expressions** 作为替代方法，请完成以下操作。
 
-1.  导航到鼠标 [移动而不记录演示](https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html)。
-1.  为 和 创建 **Live** `x` `y` Expressions。
+1.  导航到"鼠标 [移动"而不记录演示](https://microsoftedge.github.io/Demos/devtools-console/mousemove-no-log.html)。
+1.  为 和 创建 `x` `y`**Live Expressions**。
 
-使用**Live Expressions 时**，始终在屏幕的相同部分获取信息，并保留控制台**** 日志，以获得不会更改太多的值。
+使用 **Live Expressions 时**，始终在屏幕的同一部分获取信息，并保留控制台日志，**** 以获得不会更改太多的值。
 
 :::image type="complex" source="../media/console-live-expressions-x-and-y.msft.png" alt-text="将鼠标的 x 和 y 位置显示为 Live Expressions。" lightbox="../media/console-live-expressions-x-and-y.msft.png":::
-    将 `x` 鼠标 `y` 的 和 位置显示为 Live **Expressions**
+    将鼠标 `x` 的 `y` 和 位置显示为 **Live Expressions**
 :::image-end:::
 
 **Live Expressions** 以独占方式在计算机上运行，无需更改代码中要显示任何内容。  **实时** 表达式是确保只显示要调试的信息的一种很好的方法。  此外 **，Live Expressions** 还可帮助您限制用户计算机上的噪音。
