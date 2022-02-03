@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 66305f62ab5927bc5644c2b114bc8006c9ce7700
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
+ms.openlocfilehash: 5cb3e42bc90c4c361d8d73884aa1358f06e957b6
+ms.sourcegitcommit: c63325d520191ce4b4e707fb680c84afce4eab54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325156"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "12338820"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,7 +29,7 @@ ms.locfileid: "12325156"
 # <a name="get-started-analyzing-runtime-performance"></a>分析运行时性能入门
 
 > [!NOTE]
-> 若要了解如何加快页面加载速度，请参阅优化 [网站速度](../speed/get-started.md)。
+> 若要了解如何加快页面加载速度，请参阅 [优化网站速度](../speed/get-started.md)。
 
 运行时性能是页面运行（而不是加载）时的性能。  下面的教程文章教导如何使用Microsoft Edge DevTools性能面板来分析运行时性能。  在 **RAIL** 模型方面，你在本教程中学习的技能对于分析页面的响应、动画和空闲阶段很有用。
 
@@ -48,10 +48,12 @@ ms.locfileid: "12325156"
 1.  在 InPrivate 窗口中加载以下页面。  这个页面就是所要介绍的演示。  该页面显示了一堆上下移动的小图标。
 
     ```https
-    https://microsoft-edge-chromium-devtools.glitch.me/sluggish/
+    https://microsoftedge.github.io/Demos/devtools-performance-get-started/
     ```
 
-1.  选择 `Control` + `Shift` + `I` (Windows、Linux) 或 (`Command` + `Option` + `I` macOS) 打开 DevTools。
+    <!-- You can view the source files for the "Sluggish Animation" demo page at the [MicrosoftEdge/Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started) repo folder. -->
+
+1.  选择`Control`++`Shift``I` (Windows、Linux) 或`I` `Command`+`Option`+ (macOS) 打开 DevTools。
 
     :::image type="complex" source="../media/evaluate-performance-get-started-side-by-side.msft.png" alt-text="左侧为演示，右侧为 DevTools" lightbox="../media/evaluate-performance-get-started-side-by-side.msft.png":::
        左侧为演示，右侧为 DevTools
@@ -66,7 +68,7 @@ ms.locfileid: "12325156"
 
 1.  在 DevTools 中，选择“**性能**”工具。
 1.  确保你选择“**屏幕截图**”旁边的复选框。
-1.  选择 **"捕获设置 (** ![ 捕获 ](../media/capture-settings-icon.msft.png) 设置。) 。  DevTools 显示了与捕获效果指标有关的设置。
+1.  选择 **"捕获设置 (**![捕获设置。) ](../media/capture-settings-icon.msft.png)。  DevTools 显示了与捕获效果指标有关的设置。
 1.  对于**CPU**，请选择**4倍减速**。  DevTools 将 CPU 限制为比平时慢 4 倍。
 
     :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="CPU 限制。" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
@@ -93,7 +95,7 @@ ms.locfileid: "12325156"
 
 运行优化版本的页面时，蓝色图标会移动得更快。  为什么？  两种版本都应该在相同的时间内将图标移动相同的空间。  在 "性能" 面板中进行录制，了解如何检测未优化版本中的性能瓶颈。
 
-1.  在 DevTools 中 **，选择"** 记录 (![ 记录 ](../media/record-icon.msft.png) "。) 。  页面运行时，DevTools 将捕获效果指标。
+1.  在 DevTools 中 **，选择"** 记录 (![记录"。) ](../media/record-icon.msft.png) 。  页面运行时，DevTools 将捕获效果指标。
 
     :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="配置文件页面。" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
        配置文件页面
@@ -228,7 +230,7 @@ ms.locfileid: "12325156"
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.
 To learn more, navigate to [Measure Performance With The RAIL Model](https://developers.google.com/web/fundamentals/performance/rail). -->
 
-为了更加熟悉**性能**工具，需要多加练习。  试着对页面进行剖析并分析结果。  如果你对结果有任何疑问，请使用发送反馈图标，选择**** `Alt` + `Shift` + `I` (Windows、Linux) 、选择 (macOS) 或 `Option` + `Shift` + `I` [DevTools](https://twitter.com/intent/tweet?text=@EdgeDevTools)团队的推文。  如果可能，请包括屏幕截图或指向可重现页面的链接。
+为了更加熟悉**性能**工具，需要多加练习。  试着对页面进行剖析并分析结果。  如果你**** 对结果`Alt`+`I`+`Shift`有任何疑问，请使用"发送反馈"图标，选择 (Windows、Linux) `Option``Shift`++`I` 、选择 (macOS) 或 [DevTools](https://twitter.com/intent/tweet?text=@EdgeDevTools) 团队的推文。  如果可能，请包括屏幕截图或指向可重现页面的链接。
 
 :::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="Microsoft Edge 开发人员工具中的**反馈**图标" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
    Microsoft Edge DevTools 中的**发送反馈**图标

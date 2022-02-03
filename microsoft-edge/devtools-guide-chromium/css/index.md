@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 4940d0d7ff2f40e75e5fb263423b9454809f2ac5
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
+ms.openlocfilehash: 9617023fbdea8224c0551814e68c8956c9e53dde
+ms.sourcegitcommit: c63325d520191ce4b4e707fb680c84afce4eab54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12326024"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "12338778"
 ---
 <!-- Copyright Kayce Basques
 
@@ -34,12 +34,14 @@ ms.locfileid: "12326024"
 <!-- ====================================================================== -->
 ## <a name="open-css-examples"></a>Open CSS 示例
 
-1.  按住 `Control` (Windows、Linux) 或 `Command` (macOS) ，然后单击 **"CSS**示例"以在一个新窗口中打开。
+1.  按住 `Control` (Windows、Linux) 或 `Command` (macOS) ，然后单击 **"CSS 示例**"以在一个新窗口中打开。
 
-    [CSS 示例](https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html)
+    [CSS 示例](https://microsoftedge.github.io/Demos/devtools-css-get-started/)
 
     > [!NOTE]
-    > 如果你想要将[DevTools](/microsoft-edge/devtools-guide-chromium/customize/placement)窗口停靠在视口窗口的右侧 (下图) ，请单击"自定义和控制**DevTools"。** `...`  在"**自定义和控制 DevTools"** 下拉菜单上的"扩展**坞侧**"部分中，选择"扩展坞 **"以向右。**
+    > 如果你想要将 [DevTools](/microsoft-edge/devtools-guide-chromium/customize/placement) 窗口停靠在视口窗口的右侧 (下图) ，请单击"自定义和控制 **DevTools"**`...`。  在" **自定义和控制 DevTools** "下拉菜单上的"扩展坞 **侧** "部分，选择"扩展坞 **向右"**。
+
+<!-- You can view the source files for the CSS Examples demo page at the [MicrosoftEdge/Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) repo folder. -->
 
 
 <!-- ====================================================================== -->
@@ -47,32 +49,32 @@ ms.locfileid: "12326024"
 
 1.  [打开 CSS 示例](#open-css-examples)。
 
-1.  右键单击 `Inspect Me!` 文本，然后单击"检查 **"。**
+1.  右键单击文本 `Inspect Me!` ，然后单击"检查 **"**。
 
-    1.  在 DevTools 中，在 **"元素** "工具的 **"DOM 树** "面板中， `Inspect Me!` 元素突出显示。
+    1.  在 DevTools 中，在 **"元素**"工具的 **"DOM 树**`Inspect Me!`"面板中，元素突出显示。
 
         :::image type="content" source="../media/css-elements-inspect-me.msft.png" alt-text="检查的元素在 DOM 树中突出显示。" lightbox="../media/css-elements-inspect-me.msft.png":::
 
-    1.  在 `Inspect Me!` 元素中，找到 属性的值 `data-message` 并复制它。
+    1.  `Inspect Me!`在 元素中，找到 属性的值并`data-message`复制它。
 
-1.  在页面上的" **值"文本框 `data-message` ** 中，输入值。
+1.  在页面上的" **值"`data-message`** 文本框中，输入值。
 
-1.  右键单击 `Inspect Me!` 文本，然后单击"检查 **"。**
+1.  右键单击文本 `Inspect Me!` ，然后单击"检查 **"**。
 
     1.  在 DevTools 中的" **元素"** 工具上，选择 **"样式"** 面板。
 
     1.  在 **"样式"** 面板中， `Inspect Me!` 元素突出显示。
 
-    1.  在 `Inspect Me!` 元素中，查找 `aloha` 类规则。
+    1.  在 元素 `Inspect Me!` 中，查找类 `aloha` 规则。
 
         > [!NOTE]
         > 显示此规则，因为它将应用于 `Inspect Me!` 元素。
 
-    1.  在 `aloha` 类中，查找样式 `padding` 的值并复制它。
+    1.  `aloha`在 类中，查找样式的值`padding`并复制它。
 
         :::image type="content" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="CSS 类应用于检查的元素在&quot;样式&quot;面板中突出显示。" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
 
-1.  在页面上的" **值"文本框 `padding` ** 中，输入值。
+1.  在页面上的" **值"`padding`** 文本框中，输入值。
 
 
 <!-- ====================================================================== -->
@@ -85,15 +87,15 @@ ms.locfileid: "12326024"
 
 1.  [打开 CSS 示例](#open-css-examples)。
 
-1.  右键单击 `Add A Background Color To Me!` 文本，然后单击"检查 **"。**
+1.  右键单击文本 `Add A Background Color To Me!` ，然后单击"检查 **"**。
 
 1.  选择 `element.style` "样式"面板 **顶部** 附近的选项。
 
 1.  键入 `background-color` 并选择 `Enter`。
 
-1.  键入 `honeydew` 并选择 `Enter`。  在 **DOM 树中**，将显示应用于元素的内联样式声明。
+1.  键入 `honeydew` 并选择 `Enter`。  在 **DOM 树**中，将显示应用于元素的内联样式声明。
 
-    使用 `background-color:honeydew` "样式"面板的 部分将 `element.style` 声明应用于**** 元素：
+    使用`background-color:honeydew`"样式"面板的 部分`element.style`将声明**应用于 元素：**
 
     :::image type="content" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="使用&quot;样式&quot;面板向 元素添加 CSS 声明。" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
 
@@ -108,13 +110,13 @@ ms.locfileid: "12326024"
 
 1.  [打开 CSS 示例](#open-css-examples)。
 
-1.  右键单击 `Add A Class To Me!` 文本，然后单击"检查 **"。**
+1.  右键单击文本 `Add A Class To Me!` ，然后单击"检查 **"**。
 
-1.  单击 **".cls"。**  DevTools 显示一个文本框，可在其中向所选元素添加类。
+1.  单击 **".cls"**。  DevTools 显示一个文本框，可在其中向所选元素添加类。
 
-1.  在 `color_me` "添加新 **类"** 文本框中键入 ，然后选择 `Enter` 。  "添加新 **类"文本框** 下方将出现一个复选框，可在其中打开和关闭该类。  如果 `Add A Class To Me!` 元素应用了任何其他类，则还可以在此处切换每个类。
+1.  在 `color_me` "添加新 **类"** 文本框中键入 ，然后选择 `Enter`。  "添加新 **类"文本框** 下方将出现一个复选框，可在其中打开和关闭该类。  `Add A Class To Me!`如果元素应用了任何其他类，则还可以在此处切换每个类。
 
-类 `color_me` 使用"样式"面板的 **.cls**部分应用到**** 元素：
+类`color_me`使用"样式"面板的 **.cls** 部分**应用到 元素：**
 
 :::image type="content" source="../media/css-elements-add-a-class-to-me-styles-cls.msft.png" alt-text="将 color_me 类应用到 元素。" lightbox="../media/css-elements-add-a-class-to-me-styles-cls.msft.png":::
 
@@ -122,20 +124,20 @@ ms.locfileid: "12326024"
 <!-- ====================================================================== -->
 ## <a name="add-a-pseudostate-to-a-class"></a>向类添加伪状态
 
-使用 **"样式** "面板将 CSS 伪状态永久应用到元素。  DevTools `:active` 支持 、 `:focus` 、 和 `:hover` `:visited` 。
+使用 **"样式** "面板将 CSS 伪状态永久应用到元素。  DevTools 支持 `:active`、 `:focus`、 `:hover`和 `:visited`。
 
 > [!NOTE]
 > 完成 [查看元素的 CSS](#view-the-css-for-an-element) 教程，然后再执行此操作。
 
 1.  [打开 CSS 示例](#open-css-examples)。
 
-1.  将鼠标悬停在 `Hover Over Me!` 文本上。  背景色更改。
+1.  将鼠标悬停在文本 `Hover Over Me!` 上。  背景色更改。
 
-1.  右键单击 `Hover Over Me!` 文本，然后单击"检查 **"。**
+1.  右键单击文本 `Hover Over Me!` ，然后单击"检查 **"**。
 
-1.  在"**样式"** 面板中，单击 **"：hov"。**
+1.  在" **样式"** 面板中，单击 **"：hov"**。
 
-1.  选中 **"：hover"** 复选框。  背景颜色会像以前一样更改，即使你实际上没有将鼠标悬停在元素上。
+1.  选中" **：hover** "复选框。  背景颜色会像以前一样更改，即使你实际上没有将鼠标悬停在元素上。
 
 切换元素 `:hover` 上的伪状态：
 
@@ -152,16 +154,16 @@ ms.locfileid: "12326024"
 
 1.  [打开 CSS 示例](#open-css-examples)。
 
-1.  右键单击 `Change My Margin!` 文本，然后单击"检查 **"。**
+1.  右键单击文本 `Change My Margin!` ，然后单击"检查 **"**。
 
-1.  在" **样式"** 面板的"方框模型 **"** 图表中，将鼠标悬停在 **填充上**。  元素的填充在视口中突出显示。
+1.  在" **样式"面板** 的"方框模型 **"** 图表中，将鼠标悬停在 **填充上**。  元素的填充在视口中突出显示。
 
     > [!NOTE]
-    > 根据 DevTools 窗口的大小，可能需要滚动到"样式"面板的底部以显示 **"方框模型"。** ****
+    > 根据 DevTools 窗口的大小，可能需要滚动到"样式"面板底部才能显示 **"框模型"**。****
 
-1.  双击"方框模型"中的左边距****，当前具有表示元素 `-` 没有 的值 `margin-left` 。
+1.  双击"方框模型****`-`"中的左边距，当前具有表示元素没有 的值。`margin-left`
 
-1.  键入 `100px` 并选择 `Enter`。  方框 **模型** 默认为像素，但它也接受其他值，如 `25%` 或 `10vw` 。
+1.  键入 `100px` 并选择 `Enter`。  方框 **模型** 默认为像素，但它也接受其他值，如 `25%`或 `10vw`。
 
     将鼠标悬停在元素的填充上：
 
@@ -179,13 +181,13 @@ ms.locfileid: "12326024"
 
 如果要调试或测试在 CSS 中定义的媒体查询，请使用以下步骤。
 
-1.  打开开发人员工具，选择左上方**** 第二个"切换设备"工具栏图标，或选择 `Ctrl` + `Shift` + `M` `Cmd` + `Shift` + `M` " (macOS) "。
+1.  **** 打开开发人员工具，选择`Ctrl``M``Shift`++左上方第二个"切换设备"工具栏图标，或`M``Cmd`+`Shift`+选择 macOS (上的) 。
 
     打开设备工具栏：
 
     :::image type="content" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="打开设备工具栏。" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
 
-1.  打开设备工具栏后，选择右上方的 `...` 菜单，然后单击"**查看媒体查询"。**  网页上方显示的彩色条代表不同的媒体查询。
+1.  打开设备工具栏后，选择 `...` 右上方的菜单，然后单击" **查看媒体查询"**。  网页上方显示的彩色条代表不同的媒体查询。
 
     :::image type="content" source="../media/css-elements-media-queries-showing-mq.msft.png" alt-text="在设备工具栏中显示媒体查询。" lightbox="../media/css-elements-media-queries-showing-mq.msft.png":::
        
@@ -193,7 +195,7 @@ ms.locfileid: "12326024"
 
     :::image type="content" source="../media/css-elements-media-queries-select-bar.msft.png" alt-text="从预览栏中选择&quot;媒体查询&quot;。" lightbox="../media/css-elements-media-queries-select-bar.msft.png":::
 
-1.  若要调试媒体查询，然后在编辑器中打开 CSS 文件，请 `Sources` 右键单击条段，然后单击 `reveal in source code` 。
+1.  若要调试媒体查询，然后在编辑器中打开 CSS `Sources` 文件，请右键单击条段，然后单击 `reveal in source code`。
 
     :::image type="content" source="../media/css-elements-media-queries-reveal-in-sources.msft.png" alt-text="在源编辑器中显示媒体查询。" lightbox="../media/css-elements-media-queries-reveal-in-sources.msft.png":::
 

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/20/2021
-ms.openlocfilehash: 0b3b3d7803fc2473f0505774887fc55b41ca1239
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
+ms.openlocfilehash: 6f9e17d7eff8616421883f3bd28ababcee01096d
+ms.sourcegitcommit: c63325d520191ce4b4e707fb680c84afce4eab54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12326031"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "12338834"
 ---
 <!-- Copyright Kayce Basques
 
@@ -62,7 +62,7 @@ ms.locfileid: "12326031"
    导航 **器** 窗格
 :::image-end:::
 
-若要访问导航器窗格的任何隐藏选项卡，请选择"更多 ![ 选项卡"。](../media/more-tabs-icon.msft.png)  (**更多选项卡**) 。
+若要访问导航器窗格的任何隐藏选项卡，请选择"更多 ![选项卡"。](../media/more-tabs-icon.msft.png)  (**更多选项卡) ** 。
 
 以下子部分涵盖导航器窗格：
 *   [使用"页面"选项卡浏览构建当前网页的资源](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
@@ -119,7 +119,7 @@ Workspace 中的文件在整个 DevTools 中由文件名旁边的绿色点指示
 
 如果服务器返回的 JavaScript 代码与本地 JavaScript 源代码相同，工作区可正常工作。  当工作流涉及源代码转换（如缩小或 [TypeScript](https://www.typescriptlang.org) 编译）时，工作区不能正常工作。
 
-有关详细信息，请参阅教程使用工作区编辑[文件 (文件系统选项卡) 。 ](../workspaces/index.md)
+有关详细信息，请参阅教程使用工作区编辑文件 [ (文件系统选项卡) ](../workspaces/index.md)。
 
 ### <a name="using-the-overrides-tab-to-override-server-files-with-local-files"></a>使用"覆盖"选项卡覆盖包含本地文件的服务器文件
 
@@ -137,7 +137,7 @@ Workspace 中的文件在整个 DevTools 中由文件名旁边的绿色点指示
 
 #### <a name="see-also"></a>另请参阅
 
-*  [使用本地副本替代网页资源 ("选项卡) ](../javascript/overrides.md)
+*  [使用本地副本替代网页资源（“替代”选项卡）](../javascript/overrides.md)
 *  [将预处理的代码映射到源代码](../javascript/source-maps.md)
 
 ### <a name="using-the-content-scripts-tab-for-microsoft-edge-extensions"></a>将"内容脚本"选项卡用于Microsoft Edge扩展
@@ -176,7 +176,7 @@ document.head.appendChild(script);
 相反，您可以将此代码保存在 **代码** 段中，然后随时轻松地运行它。  当你选择 `Ctrl` + `S` (Windows/Linux) 或 `Command` + `S` (macOS) 时，DevTools 会将**代码段**保存到文件系统。
 
 有多种方法可以运行代码段：
-*   在 **导航器窗格中** ，选择" **代码** 段"选项卡，然后选择代码段文件将其打开。  然后在"编辑器"窗格底部，选择"运行**** ![ ("运行"按钮 ](../media/run-snippet-icon.msft.png) 。) 。
+*   在 **导航器窗格中** ，选择" **代码** 段"选项卡，然后选择代码段文件将其打开。  然后在"编辑器"窗格底部，选择"****![运行 ("运行](../media/run-snippet-icon.msft.png)"按钮。) 。
 *   当 DevTools 具有焦点时，选择 `Ctrl` + `P` (Windows/Linux) 或 `Command` + `P` (macOS) 以打开“[命令菜单](../command-menu/index.md)”，然后键入 `!`。
 
 代码段 类似于小书签。
@@ -251,7 +251,7 @@ document.head.appendChild(script);
 *   若要保存更改，请在 `Ctrl` + `S` Windows/Linux 或 `Command` + `S` macOS 上选择。
 *   若要撤消更改，请在 `Ctrl` + `Z` Windows/Linux 或 `Command` + `Z` macOS 上选择。
 
-默认情况下，刷新网页时将放弃您的编辑。  若要详细了解如何在本地文件系统中保存更改，请参阅使用 Workspaces ([Filesystem 选项卡编辑 ](../workspaces/index.md)) 。
+默认情况下，刷新网页时将放弃您的编辑。  若要详细了解如何在本地文件系统中保存更改，请参阅使用 [Workspaces (Filesystem 选项卡编辑 ](../workspaces/index.md)) 。
 
 #### <a name="find-and-replace"></a>查找和替换
 
@@ -288,7 +288,7 @@ DevTools 不会重新运行脚本，因此唯一生效的 JavaScript 更改是�
 
 ### <a name="reformatting-a-minified-javascript-file-with-pretty-print"></a>使用非常打印重新格式化缩小的 JavaScript 文件
 
-若要使用"花式打印"重新设置文件的格式使其可读，请在"编辑器"**** 窗格底部选择"花式打印"按钮" (![ 格式"。) 显示为大括号。 ](../media/format-icon.msft.png)  或者，如果 **"编辑器"** 窗格顶部显示"非常打印"按钮，您可以选择该按钮。
+若要使用"花式打印"重新设置文件的格式使其可读，请在"编辑器"**** 窗格底部选择"花式打印"按钮" (![格式](../media/format-icon.msft.png)"。) 显示为大括号。  或者，如果 **"编辑器"** 窗格顶部显示"非常打印"按钮，您可以选择该按钮。
 
 :::image type="complex" source="../media/minified.msft.png" alt-text="&quot;非常不错&quot;的打印按钮。" lightbox="../media/minified.msft.png":::
    " **彩色打印"** 按钮
@@ -331,7 +331,7 @@ DevTools 不会重新运行脚本，因此唯一生效的 JavaScript 更改是�
 *   在 **"元素** "工具中，通过用户界面控件一次处理一个 CSS 设置。  在大多数情况下，建议使用此方法。  有关详细信息，请参阅"样式"窗格中[的"编辑 CSS 字体样式和设置"。](../inspect-styles/edit-fonts.md)
 *   在 **"源** "工具中，使用文本编辑器。
 
-源工具支持直接编辑 CSS 文件。  例如，如果编辑教程使用 [Workspaces (Filesystem 选项卡) ](../workspaces/index.md) 编辑 CSS 文件以匹配下面的样式规则，则呈现的网页左上角的元素将更改 `H1` 为绿色：
+源工具支持直接编辑 CSS 文件。  例如，如果编辑教程使用 [Workspaces (Filesystem 选项卡) ](../workspaces/index.md) 编辑 CSS 文件以 `H1` 匹配下面的样式规则，则呈现的网页左上角的元素将更改为绿色：
 
 ```css
 h1 {
@@ -391,7 +391,7 @@ CSS 更改会立即生效;无需手动保存更改。
 
 ### <a name="displaying-source-files-when-using-a-different-tool"></a>使用不同的工具时显示源文件
 
-在 DevTools 中查看源文件的主要位置是源**工具。**  但有时需要在查看或编辑源文件时访问其他工具，例如 **元素** 或 **控制台**。  You use the **Quick source** tool in the [Drawer](../customize/index.md#drawer), which appears at the bottom of DevTools.
+在 DevTools 中查看源文件的主要位置是源**工具。**  但有时需要在查看或编辑源文件时访问其他工具，例如 **元素** 或 **控制台**。  使用" **箱"中的** 快速源 [工具，该工具](../customize/index.md#drawer)显示在 DevTools 的底部。
 
 若要使用 **快速源工具** ，请执行以下操作：
 
@@ -399,11 +399,11 @@ CSS 更改会立即生效;无需手动保存更改。
 
 1.  按`Ctrl`+`Shift`+`P`（Windows、Linux）或 `Command`+`Shift`+`P` （macOS）。  命令菜单将打开。
 
-1.  键入 `quick` ，然后选择"显示**快速源"。**
+1.  键入 `quick`，然后选择" **显示快速源"**。
 
     在"DevTools"窗口底部，将显示"箱"，并选中 **"快速源"** 工具。  快速**源**工具包含你在源工具中编辑的最后一个文件，**** 该文件位于 DevTools 代码编辑器的精简版本中。
 
-1.  按 `Ctrl` + `P` (Windows、Linux) 或 (`Command` + `P` macOS) 打开 **"打开文件"** 对话框。
+1.  按 `Ctrl`+`P` (Windows、Linux) 或+`Command``P` (macOS) 打开 **"打开文件"** 对话框。
 
 
 <!-- ====================================================================== -->
@@ -439,9 +439,13 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
 若要在网页上使用调试器，通常设置断点，然后从网页发送表单，如下所示：
 
-1.  在浏览器的新选项卡中打开网页。  例如，在一个新选项卡中打开此表单网页: [演示: 使用 JavaScript 配合 Microsoft Edge DevTools 进行调试入门](https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html)。
+1.  在浏览器的新选项卡中打开网页。  例如，在一个新选项卡中打开此表单网页: [演示: 使用 JavaScript 配合 Microsoft Edge DevTools 进行调试入门](https://microsoftedge.github.io/Demos/devtools-js-get-started/)。
 
-1.  选择 `F12` 以打开 **"DevTools"** 窗口，然后选择"源 **"** 选项卡。
+   <!-- You can view the source code for the demo page at the [MicrosoftEdge/Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) repo folder. -->
+
+1.  右键单击网页中的任意位置，然后选择"检查 **"**。  或者，按 `F12`。  将在 **演示网页旁边打开 DevTools** 窗口。
+
+1.  在 DevTools 中，选择" **源"** 选项卡。
 
 1.  在 **导航器** 窗格（左侧）中，选择 **页** 选项卡，然后选择 JavaScript 文件，例如 `get-started.js`。
 
@@ -457,9 +461,31 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
     在上图中，我们添加了 Watch 表达式和 ，并跨 `sum` `typeof sum` 断点添加了两行。
 
-1.  检查"范围"窗格中 **的值，** 其中显示当前断点范围内的所有变量或属性及其值。  或者，在"监视"窗格中 **添加** 表达式。  这些表达式与在语句中编写以调试代码 `console.log` 的表达式相同。  若要运行 JavaScript 命令以操作当前上下文中的数据，请使用 **控制台**。  若要打开控制台，请选择 `Esc`。
+1.  检查"范围"窗格中 **的值，** 其中显示当前断点范围内的所有变量或属性及其值。
+
+    此时，您可以在"监视" **窗格中添加表达式** 。  这些表达式与在语句中编写以调试代码 `console.log` 的表达式相同。
+
+    若要运行 JavaScript 命令以在当前上下文中操作数据，请使用 **控制台**。  如果要在 DevTools 底部的"箱"中打开控制台，请按 `Esc`。
 
 1.  使用 **调试器** 窗格顶部的控件逐步执行代码，例如 **步骤** （`F9`）。
+
+    此演示中的 Bug 是你需要首先将输入数据从字符串转换为数字。
+
+1.  若要修复 Bug，请刷新页面以重置网页表单，然后更改行：
+
+    ```javascript
+    var sum = addend1 + addend2;
+    ```
+
+    自：
+
+    ```javascript
+    var sum = parseInt(addend1) + parseInt(addend2);
+    ```
+
+1.  按 `Ctrl`+`S` (Windows、Linux) 或 `Command`+`S` (macOS) 将更改保存到本地缓存文件中。
+
+1.  在 `5` 网页 `1` 中输入 和 ，然后单击"添加 **"** 按钮。  现在 **ScopeLocalsum** > **** > **：** 是数字 6，而不是字符串"51"。
 
 #### <a name="see-also"></a>另请参阅
 
