@@ -458,6 +458,9 @@
                 - name: 验证网页布局在缩小时是否可用
                   href: devtools-guide-chromium/accessibility/narrow.md
                   displayName: 'Device Emulation, Device Emulator'
+        - name: DevTools 的示例代码
+          href: devtools-guide-chromium/sample-code/sample-code.md
+          displayName: 'sample code, demo'
         - name: 键盘快捷方式
           href: devtools-guide-chromium/shortcuts/index.md
           displayName: Keyboard shortcuts
