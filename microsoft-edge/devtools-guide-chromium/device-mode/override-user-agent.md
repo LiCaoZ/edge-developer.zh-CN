@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
-ms.openlocfilehash: 742e26a3d29491f2a9e035fed3b7d64399201f47
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325716"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,13 +22,13 @@ ms.locfileid: "12325716"
    limitations under the License.  -->
 # <a name="override-the-user-agent-string"></a>替代用户代理字符串
 
-若要覆盖[开发人员工具中的](https://developer.mozilla.org/docs/Glossary/User_agent)用户Microsoft Edge字符串：
+若要替代 [DevTools 中的](https://developer.mozilla.org/docs/Glossary/User_agent)用户Microsoft Edge字符串：
 
-1. 按 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
+1. 按 `Control``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
 
    :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单。":::
     
-1. 键入 `network conditions` ，选择 **"显示网络条件**"，然后按 `Enter` 以打开 **"网络条件"** 工具。
+1. 键入 `network conditions`，选择 **"显示网络**条件"，然后按 `Enter` 以打开 **"网络条件"** 工具。
 
 1. 在" **用户代理"** 部分，清除" **使用浏览器默认"** 复选框。
 

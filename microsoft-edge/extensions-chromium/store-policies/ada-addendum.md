@@ -6,30 +6,24 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/17/2021
-ms.openlocfilehash: 35842896df111370ee0b041dc0b85489168700ee
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319365"
 ---
 # <a name="app-developer-agreement-addendum-for-microsoft-edge-program-users"></a>应用程序开发人员协议附录（适用于Microsoft Edge用户）
 
 
 <!-- ====================================================================== -->
-## <a name="exhibit-g-terms-and-conditions-for-microsoft-edge-extensions"></a>附件 G：扩展Microsoft Edge条款和条件
+## <a name="exhibit-g-terms-and-conditions-for-microsoft-edge-extensions"></a>附件 G：扩展的Microsoft Edge条件
 
-Microsoft Edge 扩展 ("扩展附录") 的这些条款和条件是应用开发人员协议的条款和条件的补充，当前版本可在 上找到 [https://go.microsoft.com/fwlink/p/?LinkID=221922](./developer-policies.md) 。  如果已提交或提供每个Microsoft Edge扩展 (，则此 Addendum 适用于) 加载项Microsoft Edge扩展。  除非此扩展附录明确修改，否则此处参考包含的应用开发人员协议的所有条款和条件均适用于 Microsoft Edge 扩展的提供和分发。  除非此附录明确修改，否则应用开发人员协议下适用于"应用程序"或"应用"的条款和条件将适用于本附录中定义的扩展，并且应用开发人员协议下对"应用商店"或"Microsoft Store"的所有引用均适用于本附录中定义的 Microsoft Edge 加载项。
+Microsoft Edge Extensions ("Addendum") [https://go.microsoft.com/fwlink/p/?LinkID=221922](./developer-policies.md)的这些条款和条件是应用开发人员协议的条款和条件的补充，其当前版本可在 上找到。  如果已提交或提供每个 Microsoft Edge Extensions (，则此 Addendum 适用于) 加载项Microsoft Edge扩展。  除非此扩展附录明确修改，否则此处参考包含的应用开发人员协议的所有条款和条件均适用于 Microsoft Edge 扩展的提供和分发。  除非此附录明确修改，否则应用开发人员协议下适用于"应用程序"或"应用"的条款和条件将适用于本附录中定义的扩展，并且应用开发人员协议下对"应用商店"或"Microsoft Store"的所有引用均适用于本附录中定义的 Microsoft Edge 加载项。
 
 1.  定义。  此处未定义的大写条款将具有应用开发人员协议中提供的含义。
 
-    1.  "认证要求"是指 Microsoft (在 或 Microsoft) for Extensions 通过 Microsoft Edge 加载项提供的扩展指定的其他位置 () 提供的技术、功能、内容和其他策略要求。 [https://go.microsoft.com/fwlink/?linkid=2104222](./developer-policies.md)
+    1.  "认证要求"是指 Microsoft ([https://go.microsoft.com/fwlink/?linkid=2104222](./developer-policies.md)在 或 Microsoft) for Extensions 通过 Microsoft Edge 加载项提供的扩展指定的其他位置 () 或其他位置提供的技术、功能、内容和其他策略要求。
 
-    1.  "Microsoft Edge加载项"是指 Microsoft 拥有或运营的平台，但已命名，但客户可以通过该平台Microsoft Edge或获取其扩展。
+    1.  "Microsoft Edge加载项"是指 Microsoft 拥有或运营的平台（但已命名，但通过该平台Microsoft Edge客户或获取其扩展）。
 
 1.  应用的提交、认证和分发。  应用开发人员协议的第 3 部分已删除，并替换为以下内容：
 
-    1.  提交。  你必须向 Microsoft 提交你希望通过加载项Microsoft Edge每个扩展，包括每个扩展的任何更新。  你仅对提交的扩展负责。  你负责支持你的扩展。  Microsoft 将 (或销毁) 你提交的扩展和其他材料的所有副本。  Microsoft 不会将这些项目返还给你，因此，你必须自己保留备份副本。
+    1.  提交。  你必须向 Microsoft 提交你希望通过加载项Microsoft Edge的扩展，包括每个扩展的任何更新。  你仅对提交的扩展负责。  你负责支持你的扩展。  Microsoft 将 (或销毁) 你提交的扩展和其他材料的所有副本。  Microsoft 不会将这些项目返还给你，因此，你必须自己保留备份副本。
 
     1.  对扩展的更新。  你可以向扩展提交更新，以通过加载项Microsoft Edge分发。  这些更新必须遵守本协议的所有要求。  您了解最终用户可能会自动接收更新。  你不得通过更新向扩展添加任何新功能，更新需要客户书面同意，而无需首先通知客户并获取你选择分发扩展的市场中法律可能要求的任何许可。
 

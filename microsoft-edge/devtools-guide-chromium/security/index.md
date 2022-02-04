@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 449c2ae1df319c32a391d0f0c3da6ed76b952f37
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325093"
 ---
 <!-- Copyright Kayce Basques
 
@@ -36,14 +30,13 @@ ms.locfileid: "12325093"
 <!-- ====================================================================== -->
 ## <a name="open-the-security-panel"></a>打开"安全"面板
 
-安全 **面板** 是 DevTools 中用于检查页面安全性的主要位置。
+**安全面板**是 DevTools 中用于检查页面安全性的主要位置。
 
-1.  [打开 DevTools](../open/index.md)。
-1.  选择" **安全"** 选项卡以打开 **"安全"** 工具。
+1. [打开 DevTools](../open/index.md)。
 
-    :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="安全面板。" lightbox="../media/security-security-overview-secure.msft.png":::
-       安全**面板**
-    :::image-end:::
+1. 单击" **安全"** 选项卡以打开 **"安全"** 工具。
+
+:::image type="content" source="../media/security-security-overview-secure.msft.png" alt-text="安全面板。" lightbox="../media/security-security-overview-secure.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -51,34 +44,28 @@ ms.locfileid: "12325093"
 
 ### <a name="non-secure-main-origins"></a>非安全主源
 
-当页面的主源不安全时，安全**概述指出****此页面不安全**。
+当页面的主源不安全时，安全概述显示**此页面不安全**。****
 
-:::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="非安全页面。" lightbox="../media/security-security-overview-non-secure.msft.png":::
-   非安全页面
-:::image-end:::
+:::image type="content" source="../media/security-security-overview-non-secure.msft.png" alt-text="非安全页面。" lightbox="../media/security-security-overview-non-secure.msft.png":::
 
-当您访问的 URL 通过 HTTP 请求时，会出现此问题。  若要确保安全，您需要通过 HTTPS 请求它。  例如，如果您查看地址栏中的 URL，它可能类似于 `http://example.com` 。  若要确保 URL 安全，URL 应为 `https://example.com` 。
+当您访问的 URL 通过 HTTP 请求时，会出现此问题。  若要确保安全，您需要通过 HTTPS 请求它。  例如，如果您查看地址栏中的 URL，它可能类似于 `http://example.com`。  若要确保 URL 安全，URL 应为 `https://example.com`。
 
 如果已在服务器上设置 HTTPS，则解决此问题只需将服务器配置为将所有 HTTP 请求重定向到 HTTPS。
 
-如果您尚未在服务器上设置 HTTPS，Let's [Encrypt](https://letsencrypt.org) 提供了一种免费且相对简单的启动过程的方法。  或者，你可以考虑将网站托管在CDN。  默认情况下，HTTPS 上的大多数主要 CDN 都承载网站。
+如果您尚未在服务器上设置 HTTPS， [Let's Encrypt](https://letsencrypt.org) 提供了一种免费且相对简单的启动过程的方法。  或者，您可以考虑将网站托管在CDN。  默认情况下，HTTPS 上的大多数主要 CDN 都承载网站。
 
 > [!TIP]
-> [Webhint](https://webhint.io)中的"使用[HTTPS"](https://webhint.io/docs/user-guide/hints/hint-https-only)提示可帮助自动执行确保所有 HTTP 请求都定向到 HTTPS 的过程。
+> [Webhint](https://webhint.io) 中的"使用 [HTTPS](https://webhint.io/docs/user-guide/hints/hint-https-only)"提示可帮助自动执行确保所有 HTTP 请求都定向到 HTTPS 的过程。
 
 ### <a name="mixed-content"></a>混合内容
 
 **混合内容**<!--[mixed content](/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)--> 表示页面的主源是安全的，但页面从非安全源请求资源。  混合内容页仅部分受保护，因为探查器可以访问 HTTP 内容，并且易受中间人攻击。
 
-:::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="混合内容。" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
-   混合内容
-:::image-end:::
+:::image type="content" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="混合内容。" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
 
-在上图中，选择"网络"面板中的"**查看 1**请求"以打开 **"** 网络"工具并应用筛选器，以便"网络日志"只显示 `mixed-content:displayed` 非安全资源。 ****
+在上图中，选择"网络"面板中的"**查看 1** 请求"以打开 **"**`mixed-content:displayed`网络"工具并应用筛选器，以便"**网络**日志"只显示非安全资源。
 
-:::image type="complex" source="../media/security-network-filter.msft.png" alt-text="网络日志中的混合资源。" lightbox="../media/security-network-filter.msft.png":::
-   网络日志中的 **混合资源**
-:::image-end:::
+:::image type="content" source="../media/security-network-filter.msft.png" alt-text="网络日志中的混合资源。" lightbox="../media/security-network-filter.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -86,19 +73,15 @@ ms.locfileid: "12325093"
 
 ### <a name="view-main-origin-certificate"></a>查看主源证书
 
-从" **安全概述"** 中， **选择"查看** 证书"以快速检查证书的主来源。
+从" **安全概述"** 中，单击 **"查看** 证书"以快速检查证书的主来源。
 
-:::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="主源证书。" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
-   主源证书
-:::image-end:::
+:::image type="content" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="主源证书。" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
 
 ### <a name="view-origin-details"></a>查看源详细信息
 
-选择左侧导航中的条目之一以查看源的详细信息。  在详细信息页中，可以查看连接和证书信息。  证书透明度信息还会在可用时显示。
+单击左侧导航中的某个条目以查看源的详细信息。  在详细信息页中，可以查看连接和证书信息。  证书透明度信息还会在可用时显示。
 
-:::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="主源详细信息。" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
-   主源详细信息
-:::image-end:::
+:::image type="content" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="主源详细信息。" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
 
 
 <!-- ====================================================================== -->

@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/25/2021
-ms.openlocfilehash: a419aadfb5f9b251030da4f9aaa3ee3079fabd9e
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12324326"
 ---
 # <a name="overview-of-microsoft-edge-extensions"></a>Microsoft Edge 扩展概述
 
@@ -47,7 +41,7 @@ Microsoft Edge *扩展* 是开发人员用于添加或修改 Microsoft Edge 功�
 | Microsoft Edge | 是 | [developer.microsoft.com/microsoft-edge/extensions](https://developer.microsoft.com/microsoft-edge/extensions) |
 
 > [!IMPORTANT]
-> 许多网站教程使用的浏览器特定的 API 可能与为其开发的浏览器不匹配。  在大多数情况下，Chromium 扩展在不同 Chromium 浏览器中工作，且 API 按预期工作。  某些不太常见的 API 可能特定于浏览器。  有关教程的链接，请导航至“[另请参见](#see-also)”。
+> 许多网站教程使用的浏览器特定的 API 可能与为其开发的浏览器不匹配。  在大多数情况下，Chromium 扩展在不同 Chromium 浏览器中工作，且 API 按预期工作。  某些不太常见的 API 可能特定于浏览器。  指向教程的链接在下面的" [另请参阅"](#see-also) 部分。
 
 
 <!-- ====================================================================== -->
@@ -84,7 +78,7 @@ Microsoft Edge *扩展* 是开发人员用于添加或修改 Microsoft Edge 功�
 *   [Opera加载项](https://addons.opera.com/extensions)
 *   [Microsoft Edge 加载项](https://microsoftedge.microsoft.com/addons/category/Edge-Extensions)
 
-某些商店允许你从其他浏览器下载列出的扩展。  但是，浏览器商店无法保证跨浏览器访问。  为了确保你的用户可在不同的浏览器中找到扩展，应该在每个浏览器扩展商店上维护一个列表。
+某些商店允许你从其他浏览器下载列出的扩展。  但是，浏览器存储无法保证跨浏览器访问。  为了确保你的用户可在不同的浏览器中找到扩展，应该在每个浏览器扩展商店上维护一个列表。
 
 用户可能需要在不同的浏览器中安装扩展。 在这种情况下，可以将现有的 Chromium 扩展从一个浏览器迁移到另一个浏览器。
 
@@ -92,7 +86,7 @@ Microsoft Edge *扩展* 是开发人员用于添加或修改 Microsoft Edge 功�
 
 如果已经为其他基于 Chrome 浏览器开发了扩展，则可以将其提交到 Microsoft Edge 加载项商店。 不需要重写扩展，并且必须验证它在 MicrosoftEdge 中是否工作。  将现有的 Chromium 扩展迁移到其他 Chromium 浏览器时，请确保相同的 API 或替代方案可用于该目标浏览器。
 
-有关将 Chrome 扩展移植到 Microsoft Edge 的更多信息，请导航到[将 Chrome 扩展移植到 Microsoft Edge](./developer-guide/port-chrome-extension.md)。 将扩展移植到目标浏览器后，下一步是发布它。
+有关将 Chrome 扩展移植到 Microsoft Edge，请参阅将 Chrome 扩展移植到 [Microsoft Edge](./developer-guide/port-chrome-extension.md)。 将扩展移植到目标浏览器后，下一步是发布它。
 
 ### <a name="publish-to-the-microsoft-edge-add-ons-website"></a>发布到 Microsoft Edge 外接程序网站
 
@@ -108,7 +102,7 @@ Microsoft Edge *扩展* 是开发人员用于添加或修改 Microsoft Edge 功�
 > [!NOTE]
 > 不同的应用商店可能具有不同的提交要求。  上面的列表总结了发布 [Microsoft Edge](./publish/publish-extension.md) 扩展的要求。
 
-成功提交扩展后，扩展将经历审核过程，它将通过或不通过认证过程。  向所有者通知结果，并按需要提供下一步步骤。  如果向应用商店提交扩展更新，则会启动新的审阅过程。
+成功提交扩展后，扩展将经历审核过程，它将通过或不通过认证过程。  所有者不对结果进行认证，并按需要提供下一步步骤。  如果向应用商店提交扩展更新，则会启动新的审阅过程。
 
 
 <!-- ====================================================================== -->

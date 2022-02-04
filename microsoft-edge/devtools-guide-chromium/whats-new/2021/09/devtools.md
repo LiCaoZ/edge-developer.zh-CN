@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 09/03/2021
-ms.openlocfilehash: 67835d908471c773c761bc536c2924bf47e9f0ee
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325569"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-94"></a>DevTools 中的新增功能 (Microsoft Edge 94)
 
@@ -26,11 +20,9 @@ ms.locfileid: "12325569"
 
 从 DevTools 中搜索 Web 上的**主机**错误。  在**主机**中，许多错误现在都有一个“**在 Web 上搜索此消息**”按钮，显示为放大镜。  选择“**在 Web 上搜索此消息**”按钮时，浏览器中会打开一个新选项卡，并显示此错误的搜索结果。
 
-有关详细信息，请导航到“[从主机查找 Web 上的错误消息](../../../console/index.md#look-up-error-messages-on-the-web-from-the-console)”。
+请参阅 [从控制台查找 Web 上的错误消息](../../../console/index.md#look-up-error-messages-on-the-web-from-the-console)。
 
-:::image type="complex" source="../../media/2021/09/search-console-icon.msft.png" alt-text="**主机**中出现错误时的“在 Web 上搜索此消息”按钮" lightbox="../../media/2021/09/search-console-icon.msft.png":::
-   **主机**中出现错误时的“**在 Web 上搜索此消息**”按钮
-:::image-end:::
+:::image type="content" source="../../media/2021/09/search-console-icon.msft.png" alt-text="**主机**中出现错误时的“在 Web 上搜索此消息”按钮" lightbox="../../media/2021/09/search-console-icon.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -46,17 +38,13 @@ ms.locfileid: "12325569"
 *  在“**Microsoft Edge 工具**” > “**目标**”窗格中添加“**关闭实例**”(`X`) 按钮，以关闭扩展打开的浏览器。
 *  添加对 JavaScript 调试器连接到远程工作区的支持。
 
-有关详细信息，请导航到[适用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)。
+请参阅[Microsoft Edge开发人员工具扩展了解Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)。
 
-:::image type="complex" source="../../media/2021/09/devtools-extension-dark-theme.msft.png" alt-text="在 Visual Studio Code 中运行的扩展，与 Visual Studio Code 的深色主题，以及一个新的“有用链接”边栏相匹配" lightbox="../../media/2021/09/devtools-extension-dark-theme.msft.png":::
-   在 Visual Studio Code 中运行的扩展，与 Visual Studio Code 的深色主题，以及一个新的“**有用链接**”边栏相匹配
-:::image-end:::
+:::image type="content" source="../../media/2021/09/devtools-extension-dark-theme.msft.png" alt-text="在 Visual Studio Code 中运行的扩展，与 Visual Studio Code 的深色主题，以及一个新的“有用链接”边栏相匹配" lightbox="../../media/2021/09/devtools-extension-dark-theme.msft.png":::
 
 还支持来自 Visual Studio Code 的浅色主题。
 
-:::image type="complex" source="../../media/2021/09/devtools-extension-light-theme.msft.png" alt-text="在 Visual Studio Code 中运行的扩展，与 Visual Studio Code 的浅色主题，以及一个新的“有用链接”边栏相匹配" lightbox="../../media/2021/09/devtools-extension-light-theme.msft.png":::
-   在 Visual Studio Code 中运行的扩展，与 Visual Studio Code 的浅色主题，以及一个新的“**有用链接**”边栏相匹配
-:::image-end:::
+:::image type="content" source="../../media/2021/09/devtools-extension-light-theme.msft.png" alt-text="在 Visual Studio Code 中运行的扩展，与 Visual Studio Code 的浅色主题，以及一个新的“有用链接”边栏相匹配" lightbox="../../media/2021/09/devtools-extension-light-theme.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -65,15 +53,13 @@ ms.locfileid: "12325569"
 <!-- Title: Breakpoint icons are now displayed when using themes from Visual Studio Code -->
 <!-- Subtitle: Setting, removing, and viewing breakpoints is now easier in Microsoft Edge. -->
 
-在 Microsoft Edge 版本 93 中，可以将 Visual Studio Code 中使用的主题应用到 DevTools 扩展。  有关此功能详细信息，请导航至[将颜色主题应用到 DevTools](../../../customize/theme.md)。
+在 Microsoft Edge 版本 93 中，可以将 Visual Studio Code 中使用的主题应用到 DevTools 扩展。  有关此功能详细信息，请参阅 [向 DevTools 应用颜色主题](../../../customize/theme.md)。
 
 以前，在 DevTools 中使用 Visual Studio Code 中的主题时，不会显示“**源**”工具中代码左边距上的断点图标。  从 Microsoft Edge 94 开始，断点图标现在按预期显示。
 
-若要了解有关使用断点调试 JavaScript 代码的详细信息，请导航到“[使用断点暂停代码](../../../javascript/breakpoints.md)”。
+若要了解有关使用断点调试 JavaScript 代码的信息，请参阅 [使用断点暂停代码](../../../javascript/breakpoints.md)。
 
-:::image type="complex" source="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png" alt-text="断点图标现在在使用主题时Visual Studio Code显示。" lightbox="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png":::
-   现在，使用 Visual Studio Code 主题时将显示断点图标
-:::image-end:::
+:::image type="content" source="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png" alt-text="断点图标现在在使用主题时Visual Studio Code显示。" lightbox="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -88,9 +74,7 @@ ms.locfileid: "12325569"
 
 若要详细了解如何使用键盘导航 DevTools，请参阅 [键盘快捷方式](../../../shortcuts/index.md)。
 
-:::image type="complex" source="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png" alt-text="使用箭头键将焦点放在**更多选项卡**或**更多工具**按钮上" lightbox="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png":::
-   使用箭头键将焦点放在“**更多选项卡**”或“**更多工具**”按钮上
-:::image-end:::
+:::image type="content" source="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png" alt-text="使用箭头键将焦点放在**更多选项卡**或**更多工具**按钮上" lightbox="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png":::
 
 
 <!-- ====================================================================== -->

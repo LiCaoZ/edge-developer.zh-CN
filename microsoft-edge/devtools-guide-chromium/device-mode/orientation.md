@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: fe656e205cc98dd2782bf343e2cc2c120d78481b
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325590"
 ---
 <!-- Copyright Kayce Basques
 
@@ -32,20 +26,20 @@ ms.locfileid: "12325590"
 
 <!--todo: update device orientation section when available -->
 
-1.  按 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
+1. 按 `Control``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
 
-    :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单。" lightbox="../media/device-mode-console-command-menu.msft.png":::
+   :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单。" lightbox="../media/device-mode-console-command-menu.msft.png":::
 
-1.  键入 `sensors` ，选择 **显示传感器**，然后选择 `Enter` 。  传感器 **工具** 在 DevTools 窗口底部打开。
+1. 键入 `sensors`，选择 **显示传感器**，然后按 `Enter`。  " **传感器"** 工具将在"DevTools"窗口底部打开。
 
-1.  从 **"方向**"列表中，选择预设方向之一（如 ）或选择"自定义方向" `Portrait upside down` 来提供你自己的精确方向。 ****
+1. 从 **"方向**"列表中，选择预设`Portrait upside down`方向之一（如 ）或选择"自定义**** 方向"来提供你自己的精确方向。
 
-:::image type="content" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="从&quot;方向&quot;列表中选择&quot;纵向&quot;向下。" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
+:::image type="content" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="从&quot;方向&quot;列表中选择&quot;纵向上下&quot;。" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
 
-如果选择" **自定义方向"，** 则启用 、 和 `alpha` `beta` `gamma` 旋转轴字段。
+如果选择"**自定义方向"**，则`alpha`启用 、 `beta``gamma` 和 旋转轴字段。
 <!--To understand how each axis works, see [Device Orientation & Motion - Rotation data](https://developers.google.com/web/fundamentals/native-hardware/device-orientation#rotation_data). -->
 <!-- todo: link to a local copy of that article section when available; see "original page" below -->
-您还可以通过拖动方向模型来设置 **自定义方向**。  例如，若要沿轴 `alpha` 旋转，请按住 `Shift` ，然后再拖动：
+您还可以通过拖动方向模型来设置 **自定义方向**。  例如，若要沿轴旋转 `alpha` ，在拖动前 `Shift` 长按：
 
 :::image type="content" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="方向模型。" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
 
