@@ -7,15 +7,9 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc:
-- Cast
-- Google Cast
+  - 'Cast'
+  - 'Google Cast'
 ms.date: 12/10/2021
-ms.openlocfilehash: fa7cf616deb7dcbaaf57dba5e681857a994fda0c
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12322814"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书
 
@@ -85,7 +79,7 @@ ms.locfileid: "12322814"
 
 访问网页并提交表单时，Microsoft Edge向 Microsoft 表单填充服务发送有关表单的信息。 此信息包括主机名和自动填充条目的哈希。 例如，文本框 1 需要电子邮件地址，文本框 2 需要密码，等等。  不会向服务发送用户输入的信息或用户标识符。  这些信息有助于Microsoft Edge正确标识不同网页的表单。  数据用于帮助将已保存的自动填充数据与表单匹配。
 
-使用**来宾**模式时，自动填充不可用，并且不会添加新的自动填充项。  对于 **InPrivate** 模式，Microsoft Edge提供自动填充条目，但不会添加新的自动填充条目。
+在 **来宾** 模式下，自动填充不可用，并且不会添加新的自动填充条目。  对于 **InPrivate** 模式，Microsoft Edge 提供自动填充条目，但不会添加新的自动填充条目。
 
 
 <!-- ====================================================================== -->
@@ -111,7 +105,7 @@ Google 可能会收集一些与媒体路由器扩展相关联的数据。 若要
 
 
 在 Microsoft 必应中搜索时，可以使用集合的标题查找相关的 Pinterest 主题页面。 导航到 `edge://settings/privacy`。 在 Collections 中打开**显示来自 Pinterest 的建议**设置。 Microsoft Edge 不会向 Pinterest 发送有关集锦的数据。 可以删除建议并停止搜索 Pinterest 主题页面。 导航到 `edge://settings/privacy` 并关闭 **“在收藏夹中显示来自 Pinterest 的建议”** 设置。
-使用 **InPrivate** 或 **Guest** 模式时，集合不可用。
+使用 **InPrivate** 或 **来宾** 模式时，集合不可用。
 
 
 <!-- ====================================================================== -->
@@ -198,7 +192,7 @@ Microsoft Edge 支持 Adobe 的 Flash Access DRM，由某些网站使用，而�
 <!-- ====================================================================== -->
 ## <a name="do-not-track"></a>禁止跟踪
 
-可以在Microsoft Edge上启用**禁止跟踪**。 导航到 `edge://settings/privacy`。 打开 **"发送"禁止跟踪"请求** 设置。  如果启用**禁止跟踪**功能，Microsoft Edge使用传出的 `DNT:1 HTTP` HTTP、HTTPS 和 SPDY 浏览流量请求发送头。 此功能告知你访问的网站不要使用跟踪器。 但是，启用“**发送‘禁止跟踪’请求**”设置并不能保证网站无法跟踪你。 某些网站可能会通过向你显示非以前浏览过的广告来接受请求。 Microsoft Edge不控制是否接受请求。 可帮助防止网站跟踪你。 导航到 `edge://settings/privacy`。 将**跟踪防护**设置更改为**Balanced** 或**Strict**。
+可以在Microsoft Edge上启用**禁止跟踪**。 导航到 `edge://settings/privacy`。 打开 **"发送"禁止跟踪"请求** 设置。  如果启用**禁止跟踪**功能，Microsoft Edge使用传出的 `DNT:1 HTTP` HTTP、HTTPS 和 SPDY 浏览流量请求发送头。 此功能告知你访问的网站不要使用跟踪器。 但是，启用**发送“禁止跟踪”请求**设置并不能保证网站无法跟踪你。 某些网站可能会通过向你显示非以前浏览过的广告来接受请求。 Microsoft Edge不控制是否接受请求。 可帮助防止网站跟踪你。 导航到 `edge://settings/privacy`。 将**跟踪防护**设置更改为**Balanced** 或**Strict**。
 
 使用 **来宾** 模式时，Microsoft Edge不会发送 **禁止跟踪** 请求。  使用 **InPrivate** 浏览时，Microsoft Edge仅 **在** 为正在使用的配置文件启用 **"发送""禁止跟踪"请求** 设置时发送禁止跟踪请求。
 
@@ -246,7 +240,7 @@ Web 筛选可防止家庭组中的孩子转到家庭组织者阻止的成熟网�
 
 收集孩子浏览数据并与家庭组组织者共享数据需要两项操作。 1.\） 必须使用Microsoft 帐户登录到Windows 10及更高版本。 2.\） 活动报告设置必须由家庭组织者打开。 无需登录子级即可Microsoft Edge收集浏览数据。 如果你的 Windows 版本上没有家庭安全功能，请更新到最新版本的 Windows。
 
-如果 Web 筛选或活动报告处于打开状态，则**来宾**模式和**InPrivate**浏览不可用。
+如果已打开 Web 筛选或活动报告，则**来宾**模式和 **InPrivate** 浏览不可用。
 
 家庭组组织者可能会停止从家庭安全门户中收集数据。  有关 Microsoft 家庭安全功能的详细信息，请导航到[什么是 Microsoft 家庭组？](https://support.microsoft.com/help/12413)
 
@@ -412,7 +406,7 @@ Microsoft Edge 收集有关如何使用新选项卡页的诊断数据，如与�
 
 你还可以设置 Microsoft Edge，以便在启动时打开特定页面。 你指定的页面本地存储在设备上，并特定于配置文件。  如果启用了设置同步，指定的页面将同步到你登录的所有 Microsoft Edge 版本。  若要启用同步设置，请导航到`edge://settings/profiles/sync`并打开 **"设置"。**
 
-启动时不会还原**InPrivate**和**来宾**模式选项卡。
+启动时不会还原 **InPrivate** 和**来宾**模式选项卡。
 
 
 <!-- ====================================================================== -->
@@ -508,7 +502,7 @@ Microsoft Edge 提供大声朗读功能，它向用户朗读网页内容。  若
 
 组织可以使用更多控件和配置。  有关组织的其他控制和配置的详细信息，请导航到 [Microsoft Edge 配置和试验](/deployedge/edge-configuration-and-experiments)。
 
-作为用户，你无法禁用由组织控制或配置的浏览器更新，但若要控制是否将产品使用情况数据发送到 Microsoft，请导航到 ，在“可选诊断数据”下更改设置。 你可以控制是否将产品使用情况数据发送给 Microsoft。 导航到 `edge://settings/privacy` ，并更改 **可选诊断数据** 设置。
+作为用户，你无法关闭组织控制或配置的浏览器更新。 你可以控制是否将产品使用情况数据发送给 Microsoft。 导航到 `edge://settings/privacy` ，并更改 **可选诊断数据** 设置。
 
 Microsoft 开发人员需要了解新函数对Microsoft Edge Microsoft 服务。 Microsoft Edge发送浏览器唯一的可重置标识符和一个函数标记，该标记对哪些新函数进行了编码Microsoft Edge和Microsoft 服务。 新功能有助于为每个用户构建最佳体验和最佳的浏览器。
 
@@ -606,9 +600,9 @@ InPrivate 浏览使用启动 InPrivate 会话的配置文件的购物设置。
 
 若要阻止任何标识与 Microsoft Edge 关联，请删除 Microsoft Edge 配置文件或注销 Microsoft Edge。 若要从设备中删除与 Microsoft Edge 配置文件关联的所有数据，必须删除 Microsoft Edge 配置文件。 删除所有数据不会删除以前同步的与该标识相关联的数据。
 
-macOS 上 Microsoft Edge 中的标识在 Microsoft 应用间共享。 共享标识允许你登录到 Microsoft 应用，而无需单独输入凭据（如果你已登录到设备上的另一个 Microsoft 应用）。 在 macOS 上，不会根据你在另一个 Microsoft 应用中的身份验证状态自动登录到Microsoft Edge。 尝试登录到 Microsoft Edge 时，可使用设备上来自其他 Microsoft 应用的凭据无缝登录到 Microsoft Edge。  同样，当你登录到帐户以Microsoft Edge时，如果尝试登录其他 Microsoft 应用，则可以使用Microsoft Edge凭据来帮助你在设备上登录到其他 Microsoft 应用，而无需再次输入凭据。
+macOS 上 Microsoft Edge 中的标识在 Microsoft 应用间共享。 共享标识允许你登录到 Microsoft 应用，而无需单独输入凭据（如果你已登录到设备上的另一个 Microsoft 应用）。 在 macOS 上，不会根据你在另一个 Microsoft 应用中的身份验证状态自动登录到 Microsoft Edge。 尝试登录到 Microsoft Edge 时，可使用设备上来自其他 Microsoft 应用的凭据无缝登录到 Microsoft Edge。  同样，当你登录到帐户以Microsoft Edge时，如果尝试登录其他 Microsoft 应用，则可以使用Microsoft Edge凭据来帮助你在设备上登录到其他 Microsoft 应用，而无需再次输入凭据。
 
-使用来 **来宾** 模式或 **InPrivate**时，无法登录Microsoft Edge。
+使用 **来宾** 模式或 **InPrivate**时，无法登录 Microsoft Edge。
 
 <!-- ====================================================================== -->
 ## <a name="smartscreen"></a>SmartScreen
@@ -706,7 +700,7 @@ Microsoft Edge 不会在未经你允许的情况下翻译网页。 如果确实�
 要停止 Microsoft Edge 提供翻译网页服务，请完成以下步骤。
 
 1. 导航到  `edge://settings/languages`。
-1. 关闭“ **询问是否翻译非您所用语言的网页**”  切换开关并关闭网页。
+1. 关闭“ **询问是否翻译非你所用语言的网页**”  切换开关并关闭网页。
 
 
 <!-- ====================================================================== -->
@@ -756,7 +750,7 @@ Windows 信息保护 (WIP) 有助于防止意外泄漏公司信息。 它仅适�
    Windows 信息保护
 :::image-end:::
 
-如果你的 Microsoft Edge 版本启用了 WIP，该浏览器将收集事件日志，并将其发送给你的组织。  如果启用了 WIP，则不能选择退出数据收集。  WIP 只适用于 2016 年 8 月或更高版本的 Windows 10 版本。  有关由 WIP 捕获的事件日志的详细信息，请导航到[如何收集 Windows 信息保护 (WIP) 审核事件日志](/windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs)。
+如果你的 Microsoft Edge 版本启用了 WIP，该浏览器将收集事件日志，并将其发送给你的组织。  如果 WIP 已打开，则无法选择退出数据收集。  WIP 只适用于 2016 年 8 月或更高版本的 Windows 10 版本。  有关由 WIP 捕获的事件日志的详细信息，请导航到[如何收集 Windows 信息保护 (WIP) 审核事件日志](/windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs)。
 
 
 <!-- ====================================================================== -->
