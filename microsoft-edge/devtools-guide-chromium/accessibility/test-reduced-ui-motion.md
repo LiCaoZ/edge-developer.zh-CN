@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: da947b7217e1c33696e65648d9cb5bfd7c859200
-ms.sourcegitcommit: 392c0c34ca43bb2b14f93ff4e24b3713ac505013
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "12339073"
 ---
 # <a name="verify-that-a-page-is-usable-with-ui-animation-turned-off"></a>验证页面是否在关闭 UI 动画时可用
 
@@ -23,11 +17,13 @@ ms.locfileid: "12339073"
 
 若要检查页面是否可用，请关闭动画：
 
-1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
+1. 打开 [新窗口或选项卡中的](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 辅助功能测试演示网页。
 
-1.  在 DevTools 顶部，选择"源"**** 工具，然后在左侧的"导航****"窗格中，选择 `styles.css`。  CSS 文件显示在"编辑器 **"** 窗格中。
+1. 右键单击网页中的任意位置，然后选择"检查 **"**。  或者，按 `F12`。  将在网页旁边打开 DevTools。
 
-1.  选择 **macOS 上的** Windows/Linux 或 **Command+F** 上的 Ctrl+F，然后输入 `@media`。  将显示以下 CSS 媒体查询，用于确认它在网页上使用。
+1. 在 DevTools 顶部，选择"源"**** 工具，然后在左侧的"导航****"窗格中，选择 `styles.css`。  CSS 文件显示在"编辑器 **"** 窗格中。
+
+1. 按 `Ctrl`+`F` Windows/Linux 或`F` `Command`+macOS，然后输入 。`@media`  将显示以下 CSS 媒体查询，用于确认它在网页上使用。
 
     ```css
     @media (prefers-reduced-motion: no-preference) {
@@ -39,19 +35,17 @@ ms.locfileid: "12339073"
 
     接下来，模拟操作系统设置以减少动画，如下所示。
 
-1.  选择 **Esc** 打开 DevTools 底部的"箱"。  Select the **More tools** () **+** button at the top of the Drawer to see the list of tools， and then select **Rendering**.
+1. 按 `Esc` 打开 DevTools 底部的"箱"。  Click the **More tools** () **+** button at the top of the Drawer to see the list of tools， and then select **Rendering**.
 
-1.  在" **模拟 CSS 媒体功能首选-减少** 运动"下拉列表中，选择 **"首选减少运动：减少"**。
+1. 在" **模拟 CSS 媒体功能首选-减少** 运动"下拉列表中，选择 **"首选减少运动：减少"**。
 
-    :::image type="complex" source="../media/a11y-testing-simulating-reduced-motion.msft.png" alt-text="模拟减少的动作和 CSS，以确保仅在用户需要时发生平滑滚动。" lightbox="../media/a11y-testing-simulating-reduced-motion.msft.png":::
-        模拟减少运动和 CSS，以确保仅在用户需要时发生平滑滚动
-    :::image-end:::
+   :::image type="content" source="../media/a11y-testing-simulating-reduced-motion.msft.png" alt-text="模拟减少的动作和 CSS，以确保仅在用户需要时发生平滑滚动。" lightbox="../media/a11y-testing-simulating-reduced-motion.msft.png":::
 
-1.  在网页中，选择蓝色菜单项，如 **"云** "或" **Alpacas"**。  现在，网页立即滚动到选定部分，而不是使用平滑滚动动画。
+1. 在网页中，单击蓝色菜单项，如 **"云** "或" **Alpacas"**。  现在，网页立即滚动到选定部分，而不是使用平滑滚动动画。
 
-1.  在 **呈现工具** 中，在" **模拟 CSS 媒体功能首选减少运动**"下，选择"无 **模拟** "以删除此设置。
+1. 在 **呈现工具** 中，在" **模拟 CSS 媒体功能首选减少运动**"下，选择"无 **模拟** "以删除此设置。
 
-请注意，即使使用上述媒体查询和模拟设置，演示网页仍运行以下动画。 生成 Web 产品时，请确保修复所有类似的动画。
+请注意，即使使用上述媒体查询和模拟设置，演示网页仍运行以下动画。 生成 Web 产品时，请确保修复所有类似的动画：
 *  将鼠标悬停在蓝色菜单项上的动画。
 *  将鼠标悬停在"更多"**** 链接上的圆圈的动画。
 

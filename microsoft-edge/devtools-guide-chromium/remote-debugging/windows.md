@@ -1,77 +1,79 @@
 ---
-title: 远程调试Windows设备
+title: 远程调试 Windows 设备
 description: 开始远程调试Windows设备。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/23/2021
-ms.openlocfilehash: 9de0083d475f0a5d2d6d1ffb216340d0823301e5
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325989"
 ---
-# <a name="remotely-debug-windows-devices"></a>远程调试Windows设备
+# <a name="remotely-debug-windows-devices"></a>远程调试 Windows 设备
 
-远程调试设备上或Windows 10 macOS 计算机上实时Windows内容。  本教程指导你完成以下任务：
+远程调试 Windows 10 或 macOS 计算机上或更高版本Windows实时内容。
 
-*   将 Windows 设备设置为远程调试，然后从开发计算机连接到该设备。
-*   检查和调试开发Windows设备上实时内容。
-*   将来自你的Windows内容的屏幕广播到开发计算机上 DevTools 实例上。
+本教程指导你完成以下任务：
+
+*  将 Windows 设备设置为远程调试，然后从开发计算机连接到该设备。
+
+*  检查和调试开发Windows设备上实时内容。
+
+*  将来自你的 Windows的内容屏幕广播到开发计算机上 DevTools 实例。
 
 
 <!-- ====================================================================== -->
 ## <a name="step-1-set-up-the-host-debuggee-machine"></a>步骤 1：设置 (调试程序计算机) 
 
-主机或调试程序计算机是Windows 10调试的设备或更高版本的设备。  这可能是你很难从物理上访问的远程设备，或者可能没有键盘和鼠标外设，导致难以与该设备上的 Microsoft Edge DevTools 交互。  若要在调试 () 主机，需要完成以下操作。
+主机或调试程序计算机是Windows 10调试的设备或更高版本的设备。  这可能是一个远程设备，你很难从物理上访问，或者可能没有键盘和鼠标外设，导致难以与该设备上的 Microsoft Edge DevTools 交互。
 
-*   安装和配置[Microsoft Edge](https://www.microsoft.com/edge)
-*   从 Microsoft Edge ([安装) Beta](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) Microsoft Store [](https://www.microsoft.com/store/apps/windows)
-*   激活 [开发人员模式](/windows/apps/get-started/enable-your-device-for-development) 并启用 [Device Portal](/windows/uwp/debug-test-perf/device-portal)
+若要在调试 (计算机) 主机：
+
+1. 安装和配置[Microsoft Edge](https://www.microsoft.com/edge)
+
+1. 从 Microsoft Store [安装 Microsoft Edge (Beta) ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) 远程[Microsoft Store](https://www.microsoft.com/store/apps/windows)
+
+1. 激活 [开发人员模式](/windows/apps/get-started/enable-your-device-for-development) 并启用 [Device Portal](/windows/uwp/debug-test-perf/device-portal)
 
 ### <a name="install-and-configure-microsoft-edge"></a>安装和配置Microsoft Edge
 
-1.  如果尚未在要调试的 Windows 10 或更高版本设备上，从Microsoft Edge[安装此程序](https://www.microsoft.com/edge)。
+1. 如果尚未在要调试的 Windows 10 或更高版本设备上，从Microsoft Edge[安装此程序](https://www.microsoft.com/edge)。
 
-1.  如果在调试程序 () 计算机上使用预安装的 Microsoft Edge 版本，请确认Microsoft Edge (Chromium) 没有Microsoft Edge (EdgeHTML) 。  检查的一种快速方法就是在浏览器中加载 `edge://settings/help` 并确认版本号是否为 75 或更高。
+1. 如果在调试程序 () 计算机上使用预安装的 Microsoft Edge 版本，请确认Microsoft Edge (Chromium) 没有Microsoft Edge (EdgeHTML) 。  检查的一种快速方法就是在 `edge://settings/help` 浏览器中加载并确认版本号是否为 75 或更高。
 
-1.  转到 `edge://flags` Microsoft Edge。 
+1. 转到"`edge://flags`Microsoft Edge"。 
 
-1.  在 **"搜索标志"** 中，键入"通过设备门户Windows**远程调试"。** 将标志设置为 **已启用**。 然后，单击 **"重启**"按钮以重新启动Microsoft Edge。
+1. 在 **"搜索标志**"中，键入"通过设备门户启用Windows**调试"**。 将标志设置为 **已启用**。 然后，单击 **"重启**"按钮以重新启动Microsoft Edge。
 
-:::image type="content" source="../media/remote-debugging-windows-media-edge-flags-on-host.msft.png" alt-text="设置&quot;通过设备门户标志Windows远程调试&quot;。" lightbox="../media/remote-debugging-windows-media-edge-flags-on-host.msft.png":::
+:::image type="content" source="../media/remote-debugging-windows-media-edge-flags-on-host.msft.png" alt-text="设置&quot;通过设备门户Windows启用远程调试&quot;。" lightbox="../media/remote-debugging-windows-media-edge-flags-on-host.msft.png":::
 
-### <a name="install-the-remote-tools-for-microsoft-edge-beta"></a>安装适用于 Beta Microsoft Edge (的远程) 
+### <a name="install-the-remote-tools-for-microsoft-edge-beta"></a>安装 Beta Microsoft Edge (远程) 
 
-从 Microsoft Store 安装[Microsoft Edge (Beta) ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) [的远程Microsoft Store。](https://www.microsoft.com/store/apps/windows)
+从 [) 安装 Microsoft Edge (Beta ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) [Microsoft Store。](https://www.microsoft.com/store/apps/windows)
 
 > [!NOTE]
-> 如果你**使用** [Microsoft Edge (](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)版本 1809 或) 版本 1809 或更早版本，Windows 10 Beta 版远程工具的"获取"按钮可能处于禁用状态。  若要在调试 () 主机，它必须在 Windows 10版本 1903 或更高版本上运行。  更新调试 (调试) 以获取 Beta Microsoft Edge (远程工具[) 。 ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)
+> **如果你使用** [Microsoft Edge (Windows 10 ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) 或更高版本 1809 或更早版本) Beta 版远程工具的"获取"按钮可能处于禁用状态。  若要在调试 (中) 主机，必须运行 Windows 10版本 1903 或更高版本。  更新调试 () 的主机以获取 Beta Microsoft Edge ([) ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)。
 
-:::image type="content" source="../media/remote-debugging-windows-media-remote-tools-in-store.msft.png" alt-text="Microsoft Store中的 Microsoft Edge (Beta) 工具。" lightbox="../media/remote-debugging-windows-media-remote-tools-in-store.msft.png":::
+:::image type="content" source="../media/remote-debugging-windows-media-remote-tools-in-store.msft.png" alt-text="Microsoft Store中Microsoft Edge (Beta) 远程Microsoft Store。" lightbox="../media/remote-debugging-windows-media-remote-tools-in-store.msft.png":::
 
-启动[Beta Microsoft Edge (](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)远程) ，如果系统提示，接受应用中的权限对话框。  现在，你可以关闭[Microsoft Edge (Beta](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)) ，无需为将来的远程调试会话打开它。
+启动 [Microsoft Edge (Beta ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)) 远程工具，如果系统提示，接受应用程序中的权限对话框。  现在，你可以关闭 [Microsoft Edge (Beta ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)) ，无需为将来的远程调试会话打开它。
 
 ### <a name="activate-developer-mode-and-enable-device-portal"></a>激活开发人员模式并启用 Device Portal
 
-如果你使用 WiFi 网络，请确保该网络标记为"域"或 **"专用****"。**  可以通过打开应用验证状态，Windows 安全中心防火墙****&**网络**保护并检查网络是否列为"域网络"或"**专用**网络"。 ****
+如果你使用 WiFi 网络，请确保该网络标记为"域"或"**专用"**。****  可以通过打开应用验证状态，Windows 安全中心防火墙****&**网络**保护并检查你的网络是否列为"域网络"或"**专用网络**"。****
 
-如果你的网络列为公用，请转到**** 设置网络& ****  >  **Internet**  >  **WI-Fi，** 单击你的网络，将**网络配置文件**按钮切换为**专用**。
+如果网络列为**** > "公用"****，请转到 设置**Network &** **InternetWi-Fi** > ，单击网络，将"**网络配置文件**"按钮切换为 **"专用"**。
 
-现在，打开**设置**应用。  在 **"查找设置"** 中， `Developer settings` 输入并选择它。  在开发人员 **模式下切换**。  现在，可以通过将"打开通过本地网络连接的远程诊断"设置为"打开"**来打开****Device** **Portal。**  然后可以选择 **打开身份验证，** 以便 (调试) 设备必须提供正确的凭据才能连接到此设备。
+现在，打开**设置**应用。  在 **"查找设置"** 中，输入 `Developer settings` 并选择它。  打开开发人员**模式。**  现在，可以通过将"通过本地网络连接打开远程诊断"设置为"打开"来**打开** **Device** **Portal**。  然后可以选择 **打开身份验证，** 以便客户端 (调试) 设备必须提供正确的凭据才能连接到此设备。
 
 > [!NOTE]
-> 如果 **通过本地网络连接打开远程诊断。** 之前已打开，必须将其关闭并再次打开 **，Device Portal**可以使用适用于[Microsoft Edge (Beta ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)) 。  如果"**适用于开发人员**"部分未设置，Device **** **Portal**可能已经打开，因此请尝试重新启动 Windows 10或更高版本的设备。
+> 如果 **通过本地网络连接打开远程诊断。** 之前已打开，必须将其关闭并再次打开，**Device Portal** 可以使用 Microsoft Edge ([Beta ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)) 。  如果 **"适用于开发人员**"部分未设置，**Device Portal** 可能已经打开，因此请尝试重新启动 Windows 10或更高版本的设备。****
 
 :::image type="content" source="../media/remote-debugging-windows-media-host-settings.msft.png" alt-text="已设置开发人员模式和设备门户的开发人员应用。" lightbox="../media/remote-debugging-windows-media-host-settings.msft.png":::
 
-请注意显示在以下位置下使用连接 IP**地址和连接端口：**。  下图中的 IP 地址为 `192.168.86.78` ，连接端口为 `50080` ：
+请注意以下位置下显示连接 **IP 地址和连接端口：**。  下图中的 IP 地址为 ， `192.168.86.78` 连接端口为 `50080`：
 
-:::image type="content" source="../media/remote-debugging-windows-media-host-settings-ip-address.msft.png" alt-text="请注意 ip 地址和连接端口在设置。" lightbox="../media/remote-debugging-windows-media-host-settings-ip-address.msft.png":::
+:::image type="content" source="../media/remote-debugging-windows-media-host-settings-ip-address.msft.png" alt-text="请注意 ip 地址和连接端口设置。" lightbox="../media/remote-debugging-windows-media-host-settings-ip-address.msft.png":::
 
-你将在下面部分中的客户端 (调试) 设备上 [输入信息](#step-2-set-up-the-client-debugger-machine)。  在主机 Microsoft Edge 调试程序[) ) ](../progressive-web-apps/index.md)计算机上打开要从客户端 (调试器) 调试的主机 (调试程序 (PBA) 中的选项卡。
+你将在客户端调试器 (下一) 设备上 [输入信息](#step-2-set-up-the-client-debugger-machine)。  在主机 (调试程序) 计算机上打开要从客户端 (调试器) 计算机调试的 Microsoft Edge 和渐进[式 Web 应用 (PWA ](../progressive-web-apps/index.md)) 中的选项卡。
 
 
 <!-- ====================================================================== -->
@@ -79,52 +81,52 @@ ms.locfileid: "12325989"
 
 客户端或调试程序计算机是你想要调试的设备。  此设备可能是你的日常开发计算机，也可能只是在家工作时的电脑或 MacBook。
 
-1.  若要在计算机 (调试) ，请[Microsoft Edge此页面安装](https://www.microsoft.com/edge)客户端调试器。
+1. 若要在计算机 (调试) ，请[Microsoft Edge从此页面](https://www.microsoft.com/edge)安装客户端。如果尚未安装。
 
-1.  如果在调试程序 () 计算机上使用预安装的 Microsoft Edge 版本，请确认Microsoft Edge (Chromium) 没有Microsoft Edge (EdgeHTML) 。  检查的一种快速方法就是在浏览器中加载 `edge://settings/help` 并确认版本号是否为 75 或更高。
+1. 如果在调试程序 () 计算机上使用预安装的 Microsoft Edge 版本，请确认Microsoft Edge (Chromium) 没有Microsoft Edge (EdgeHTML) 。  检查的一种快速方法就是在 `edge://settings/help` 浏览器中加载并确认版本号是否为 75 或更高。
 
-1.  转到 Microsoft Edge `edge://inspect` 中的页面。  默认情况下，你应该位于" **设备"** 部分。
+1. 转到 Microsoft Edge `edge://inspect` 中的页面。  默认情况下，你应该位于" **设备"** 部分。
 
-1.  under**连接 to a remote Windows device，** enter the IP address and the connection port of the host (debuggee) machine in the textbox following this pattern： http:// ： `IP address` `connection port` .
+1. under **连接 to a remote Windows device**， enter the IP address and the connection port of the host (debuggee) machine following this pattern： http://`IP address`：`connection port`.
 
-1.  单击**连接设备"。**
+1. 单击**连接设备"**。
 
-    :::image type="content" source="../media/remote-debugging-windows-media-edge-inspect.msft.png" alt-text="客户端 edge://inspect 页。" lightbox="../media/remote-debugging-windows-media-edge-inspect.msft.png":::
+   :::image type="content" source="../media/remote-debugging-windows-media-edge-inspect.msft.png" alt-text="客户端 edge://inspect 页。" lightbox="../media/remote-debugging-windows-media-edge-inspect.msft.png":::
 
-1.  如果为调试 (调试) 主机设置身份验证，系统将提示输入用户名和密码，以便客户端 (调试) 计算机成功连接。 **** ****
+1. 如果为受调试 (的) 计算机设置身份验证，系统将提示你输入用户名和密码，以便客户端 (调试) 计算机成功连接。**** ****
 
 ### <a name="using-https-instead-of-http"></a>使用 https 而不是 http
 
-如果你希望连接到调试 (而不是) 连接到 `https` 调试者 `http` 计算机：
+如果你希望连接到调试 (使用) 连接到调试 `https` 程序 `http`计算机：
 
-1.  转到 `http://IP address:50080/config/rootcertificate` 客户端Microsoft Edge调试器 (上的) 中。  这会自动下载名为 的安全证书 `rootcertificate.cer` 。
+1. 转到客户端`http://IP address:50080/config/rootcertificate`Microsoft Edge调试器 (上的) 中。  这会自动下载名为 的安全证书 `rootcertificate.cer`。
 
-1.  选择 `rootcertificate.cer`。  这将打开Windows[管理器工具](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in#view-certificates-with-the-certificate-manager-tool)。
+1. 选择 `rootcertificate.cer`。  这将打开Windows[管理器工具](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in#view-certificates-with-the-certificate-manager-tool)。
 
-1.  单击 **"安装证书..."，** 确保"**当前**用户"已打开，然后单击"下一步 **"。**
+1. 单击 **"安装证书...**"，确保" **当前** 用户"已打开，然后单击"下一步 **"**。
 
-1.  单击 **"将所有证书放在以下存储中"，** 然后单击"浏览 **..."。**
+1. 单击 **"将所有证书放在以下存储中"，** 然后单击" **浏览..."**。
 
-1.  选择"**受信任的根证书颁发机构"** 存储，然后单击"确定 **"。**
+1. 选择" **受信任的根证书颁发机构"** 存储，然后单击"确定 **"**。
 
-1.  单击**下一步**，然后单击**完成**。
+1. 单击**下一步**，然后单击**完成**。
 
-1.  如果系统提示，请确认要安装此证书到受信任的根 **证书颁发机构** 存储。
+1. 如果系统提示，请确认要安装此证书到受信任的根 **证书颁发机构** 存储。
 
-1.  现在，在使用页面 () 客户端 (调试器) 调试程序计算机连接到受调试者计算机时，必须使用 `edge://inspect` 其他 `connection port` 值。  默认情况下，对于桌面Windows，Device Portal 使用 作为 `50080` 的 `connection port` `http` 。  对于 `https` ，Device Portal 使用 `50043` ，因此请遵循以下模式：https:// `IP address` `50043` `edge://inspect` ：。  [阅读有关 Device Portal 使用的默认端口的更多信息](/windows/uwp/debug-test-perf/device-portal#setup)。
+1. 现在，在使用页面 () 客户端 (调试器) 调试程序) 主机 `edge://inspect` 时，必须使用其他 `connection port` 值。  默认情况下，对于桌面Windows，Device Portal 使用 `50080` 作为 `connection port` `http`的 。  对于 `https`，Device Portal 使用 ， `50043` 因此请遵循以下模式：https://`IP address`：`50043` 在 `edge://inspect` 页面上。  [详细了解 Device Portal 使用的默认端口](/windows/uwp/debug-test-perf/device-portal#setup)。
 
 > [!NOTE]
-> 的默认端口为 ，默认端口为 ，但并不总是这样，因为桌面版 Device Portal 声明临时范围 `http` `50080` `https` `50043` (\>50，000) 中的端口，以防止与设备上现有端口声明发生冲突。  若要了解更多信息，请参阅适用于桌面[设置](/windows/uwp/debug-test-perf/device-portal-desktop#registry-based-configuration-for-device-portal)Device Portal 的移植Windows部分。
+> `http` `50043``https` `50080`的默认端口为 ，默认端口为 ，但并非始终如此，因为桌面版 Device Portal 声明临时范围 (\>50，000) 中的端口，以防止与设备上现有的端口声明发生冲突。  若要了解更多信息，请参阅适用于桌面[设置](/windows/uwp/debug-test-perf/device-portal-desktop#registry-based-configuration-for-device-portal) Device Portal 的端口Windows部分。
 
 
 <!-- ====================================================================== -->
 ## <a name="step-3-debug-content-on-the-host-from-the-client"></a>步骤 3：从客户端调试主机上的内容
 
-如果客户端 (调试器) 计算机成功连接到主机 (debuggee) 计算机，则客户端上的页面现在会显示 Microsoft Edge 中的选项卡列表和主机上任何打开的 `edge://inspect` PWA。
+如果客户端 (调试器) 计算机成功连接到主机 (debuggee) 计算机`edge://inspect`，则客户端上的页面现在会显示 Microsoft Edge 中的选项卡列表和主机上任何打开的 PWA。
 
-:::image type="content" source="../media/remote-debugging-windows-media-edge-inspect-connected.msft.png" alt-text="客户端 edge://inspect 页在主机上显示 Microsoft Edge 和 PWA 中的选项卡。" lightbox="../media/remote-debugging-windows-media-edge-inspect-connected.msft.png":::
+:::image type="content" source="../media/remote-debugging-windows-media-edge-inspect-connected.msft.png" alt-text="客户端 edge://inspect 页在主机上的 Microsoft Edge 和 PWA 中显示选项卡。" lightbox="../media/remote-debugging-windows-media-edge-inspect-connected.msft.png":::
 
-确定要调试的内容，然后单击"检查 **"。**  开发人员Microsoft Edge将在新选项卡中打开，并屏幕将内容从主机 (调试程序) 计算机屏幕广播到客户端 (调试) 计算机。  现在，你可以对主机上运行Microsoft Edge使用客户端上的 DevTools 的完整功能。  在此处了解有关如何使用开发人员工具Microsoft Edge开发人员[工具。](../index.md)
+确定要调试的内容，然后单击"检查 **"**。  开发人员Microsoft Edge将在新选项卡中打开，并屏幕将内容从主机 (调试程序) 计算机屏蔽到客户端 (调试) 计算机。  现在，你可以对主机上运行Microsoft Edge使用客户端上的 DevTools 的完整功能。  在此处了解有关如何使用开发人员工具Microsoft Edge开发人员[工具。](../index.md)
 
 :::image type="content" source="../media/remote-debugging-windows-media-devtools-client.msft.png" alt-text="客户端Microsoft Edge调试主机上的选项卡上的 Microsoft Edge DevTools。" lightbox="../media/remote-debugging-windows-media-devtools-client.msft.png":::
 
@@ -138,7 +140,7 @@ ms.locfileid: "12325989"
 > **Select Element** is disabled after the first touch， so you need to turn it on again time you want to use this feature.
 
 > [!IMPORTANT]
-> "**元素"工具****中的"** 事件侦听器"窗格在版本 1903 Windows 10为空。  这是一个已知问题，团队计划在版本 1903 的服务更新中修复Windows 10侦听器"窗格。 ****
+> "**元素"工具**中的"事件侦听器"**窗格在版本** 1903 Windows 10为空。  这是一个已知问题，团队计划在版本 1903 的服务更新中修复Windows 10侦听器"窗格。****
 
 
 <!-- ====================================================================== -->
@@ -149,24 +151,24 @@ ms.locfileid: "12325989"
 :::image type="content" source="../media/remote-debugging-windows-media-toggle-screencast.msft.png" alt-text="客户端上的开发人员工具Microsoft Edge切换屏幕广播按钮。" lightbox="../media/remote-debugging-windows-media-toggle-screencast.msft.png":::
 
 可以通过多种方式与屏幕广播交互：
-*   单击将转换为点击，在设备上触发正确的触摸事件。
-*   计算机上的击键会发送到设备。
-*   若要模拟收缩手势，拖动时按住 `Shift`。
-*   如果要滚动，请使用触控板或鼠标滚轮，或使用鼠标指针拖动。
+*  单击将转换为点击，在设备上触发正确的触摸事件。
+*  计算机上的击键会发送到设备。
+*  若要模拟收缩手势，拖动时按住 `Shift`。
+*  如果要滚动，请使用触控板或鼠标滚轮，或使用鼠标指针拖动。
 
 屏幕广播上的一些注释：
-*   截屏视频仅显示页面内容。  屏幕广播的透明部分表示设备接口，如 Microsoft Edge 地址栏、Windows 10 或更高版本的任务栏以及 Windows 10 或更高版本的键盘。
-*   截屏视频会对帧速率产生负面影响。  在测量滚动或动画时禁用截屏视频，以更准确地了解页面性能。
-*   如果主机设备屏幕锁定，屏幕视频的内容将消失。  解锁主机设备屏幕以自动恢复屏幕视频。
+*  截屏视频仅显示页面内容。  屏幕广播的透明部分表示设备接口，如 Microsoft Edge 地址栏、Windows 10 或更高版本的任务栏以及 Windows 10 或更高版本的键盘。
+*  截屏视频会对帧速率产生负面影响。  在测量滚动或动画时禁用截屏视频，以更准确地了解页面性能。
+*  如果主机设备屏幕锁定，屏幕视频的内容将消失。  解锁主机设备屏幕以自动恢复屏幕视频。
 
 
 <!-- ====================================================================== -->
 ## <a name="known-issues"></a>已知问题
 
-"**元素"工具****中的"** 事件侦听器"窗格在版本 1903 Windows 10为空。  该团队计划修复版本**** 1903 的服务更新中的Windows 10侦听器"窗格。
+"**元素"工具**中的"事件侦听器"**窗格在版本** 1903 Windows 10为空。  该团队计划在服务更新中**** 修复事件侦听器窗格，以Windows 10版本 1903。
 
-应用程序**面板**中的 Cookie**窗格在**1903 Windows 10为空。  该团队计划在服务更新中修复 **"Cookie"** 窗格，以Windows 10版本 1903。
+在**版本** 1903 上 **，**"应用程序"面板Windows 10为空。  该团队计划将服务更新中的 **"Cookie"** 窗格Windows 10版本 1903。
 
-审核**工具****、3D 视图**工具 **、设置**中的"模拟设备"部分以及"元素"工具中的"辅助功能****"树窗格当前未按**** 预期工作。 ****  该团队计划在未来更新中修复列出的Microsoft Edge。
+审核**工具**、**3D 视图**工具、设置 中的"模拟设备******"** 部分以及"元素"工具中的"辅助功能"树窗格**** 当前未按预期工作。****  该团队计划在未来更新中修复列出的Microsoft Edge。
 
-当你远程调试时，文件资源管理器不会从源工具中的 DevTools 或**安全**面板中启动。 ****  该团队计划在未来更新中修复Microsoft Edge。
+当你远程调试时，文件资源管理器不会从源工具中的 DevTools 或**安全**面板中启动。****  该团队计划在未来更新中修复Microsoft Edge。

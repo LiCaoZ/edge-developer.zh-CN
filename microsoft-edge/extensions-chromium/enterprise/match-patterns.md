@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/17/2021
-ms.openlocfilehash: ebdea6de99432f36157019dfcdf3dd212a43b778
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12322898"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -28,15 +22,15 @@ ms.locfileid: "12322898"
    limitations under the License.  -->
 # <a name="match-patterns"></a>匹配模式
 
-主机权限和内容脚本匹配基于匹配模式定义的一组 URL。  匹配模式实质上是一个 URL，它以允许的方案开头， (、、 或 `http` ，并且可以包含 ' ' `https` `file` `ftp` `*` 字符。  特殊模式 `<all_urls>` 与以允许方案开头的任何 URL 匹配。  每个匹配模式有 3 个部分：
+主机权限和内容脚本匹配基于匹配模式定义的一组 URL。  匹配模式实质上是一个 URL`http`，它以允许的方案开头， (、`ftp``https``file`、 或 ，并且可以包含"`*`"字符。  特殊模式 `<all_urls>` 与以允许方案开头的任何 URL 匹配。  每个匹配模式有 3 个部分：
 
-*   _方案_ — 例如 `http` ， `file` 或 或 `*`
+*   _方案_ — 例如， `http` 或 `file` 或 `*`
 
 > [!NOTE]
-> 对 `file` URL 的访问不是自动的。  用户必须访问"扩展管理"页，并针对请求它的 `file` 每个扩展选择访问。
+> `file`对 URL 的访问不是自动的。  用户必须访问"扩展管理"页，并 `file` 针对请求它的每个扩展选择访问。
 
-*   `_host_` — 例如， `www.google.com` `*.google.com` 或 `*` ;如果方案是文件，则没有主机部件。
-*   `_path_` 例如， `/*` 、 `/foo*` 或 `/foo/bar` 。  路径必须存在于主机权限中，但始终被视为 `/*` 。
+*   `_host_` — 例如， `www.google.com` 或 `*.google.com` ; `*`如果方案是文件，则没有主机部件。
+*   `_path_` 例如， `/*`、 `/foo*`或 `/foo/bar`。  路径必须存在于主机权限中，但始终被视为 `/*`。
 
 
 <!-- ====================================================================== -->
@@ -51,7 +45,7 @@ ms.locfileid: "12322898"
 <path> := '/' <any chars>
 ```
 
-的含义 `*` 取决于它是位于方案、主机还是路径部分。  如果方案为 `*` ，则它匹配 `http` 或 `https` ，而不是 `file` 或 `ftp` 。  如果主机只是 `*` ，它将匹配任何主机。 如果主机为 `*.hostname` ，则其与指定的主机或任何子域匹配。  在路径部分中，每个 `*` 匹配都匹配 0 个或多个字符。  下表显示了一些有效的模式。
+的含义 `*` 取决于它是位于方案、主机还是路径部分。  如果方案为 `*`，则它匹配 `http` 或 `https`，而不是 `file`或 `ftp`。  如果主机只是 `*`，它将匹配任何主机。 如果主机为 `*.hostname`，则其与指定的主机或任何子域匹配。  在路径部分中，每个匹配 `*` 都匹配 0 个或多个字符。  下表显示了一些有效的模式。
 
 
 <!-- ====================================================================== -->
@@ -61,11 +55,11 @@ ms.locfileid: "12322898"
 |:--- |:--- |:--- |
 | `http://*/*` | 匹配使用 http 方案的任何 URL | `http://www.google.com` `http://example.org/foo/bar.html` |
 | `http://*/foo*` | 匹配在任何主机上使用 http 方案的任何 URL，只要路径以 `/foo` | `http://example.com/foo/bar.html` `http://www.google.com/foo` |
-| `https://*.google.com/foo*bar` | 匹配使用 https 方案的任何 URL，位于主机 (如 、 或 `google.com` `www.google.com` `docs.google.com` `google.com`) ，只要路径以 开头和 `/foo` 结尾 `bar` | `https://www.google.com/foo/baz/bar` `https://docs.google.com/foobar` |
+| `https://*.google.com/foo*bar` | 匹配使用 https `google.com` `google.com` `www.google.com``docs.google.com`方案的任何 URL，位于主机 (如 、 或) `/foo`，只要路径以 开头和结尾 `bar` | `https://www.google.com/foo/baz/bar` `https://docs.google.com/foobar` |
 | `http://example.org/foo/bar.html` | 匹配指定的 URL | `http://example.org/foo/bar.html` |
 |`file:///foo*` | 匹配其路径以 开头的任何本地文件 `/foo` | `file:///foo/bar.html` `file:///foo` |
-| `http://127.0.0.1/*` | 匹配使用方案且位于 `http` 主机上的任何 URL `127.0.0.1` | `http://127.0.0.1` `http://127.0.0.1/foo/bar.html` |
-| `*://mail.google.com/*` | 匹配以 或 开头的任何 `http://mail.google.com` `https://mail.google.com` URL。 | `http://mail.google.com/foo/baz/bar` `https://mail.google.com/foobar` |
+| `http://127.0.0.1/*` | 匹配使用方案且 `http` 位于主机上的任何 URL `127.0.0.1` | `http://127.0.0.1` `http://127.0.0.1/foo/bar.html` |
+| `*://mail.google.com/*` | 匹配以 或 开头的任何 `http://mail.google.com` URL `https://mail.google.com`。 | `http://mail.google.com/foo/baz/bar` `https://mail.google.com/foobar` |
 | `<all_urls>` | 匹配使用允许方案的任何 URL。  (请参阅本部分的开头，查看允许的方案列表。)  | `http://example.org/foo/bar.html` `file:///bar/baz.html` |
 
 
@@ -77,9 +71,9 @@ ms.locfileid: "12322898"
 | 错误模式 | 错误的原因 |
 |:--- |:--- |
 | `http://www.foo.com` | 否 `_path_` |
-| `http://*foo/bar` | ' `*` ' in the host can be followed only by a ' ' or ' `.` `/` ' |
-| `http://foo.*.bar/baz` | 如果 ' `*` ' 位于 `_host_` 中，则它必须是第一个字符 |
-| `http:/bar` | 缺少 `_scheme_` 分隔 (' `/` ' 应为 `//` "")  |
+| `http://*foo/bar` | 主机`*`中的""只能后跟`.`""或"`/`" |
+| `http://foo.*.bar/baz` | 如果 "`*`" 位于 `_host_`中，则它必须是 第一个字符 |
+| `http:/bar` | 缺少 `_scheme_` 分隔 ('`/`'应为"`//`")  |
 | `foo://*` | 无效 `_scheme_` |
 
 某些方案并非在所有上下文中都受支持。
@@ -88,5 +82,5 @@ ms.locfileid: "12322898"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/extensions/match_patterns)。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

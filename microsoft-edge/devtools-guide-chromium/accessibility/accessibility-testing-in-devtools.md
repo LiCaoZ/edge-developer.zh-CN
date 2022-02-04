@@ -6,24 +6,22 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 4fe748dfc0e7ead17ddce3b791e339a3c88abc8f
-ms.sourcegitcommit: 392c0c34ca43bb2b14f93ff4e24b3713ac505013
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "12339192"
 ---
 # <a name="overview-of-accessibility-testing-using-devtools"></a>使用 DevTools 的辅助功能测试概述
 
-本文介绍可在 DevTools 中用于测试辅助功能问题的一些功能。  我们将使用 DevTools 的不同功能检测演示页面中的辅助功能问题，并讨论如何解决这些问题。  打开 [新选项卡](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 中的演示页面，以尝试一下自己，你可以一起测试。
+本文介绍可在 DevTools 中用于测试辅助功能问题的一些功能。  我们将使用 DevTools 的不同功能检测演示页面中的辅助功能问题，并讨论如何解决这些问题。
 
-:::image type="content" source="../media/a11y-testing-basics-demopage.msft.png" alt-text="本文中使用的演示页面具有一些辅助功能问题。" lightbox="../media/a11y-testing-basics-demopage.msft.png":::
+1. 打开 [新窗口或选项卡](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 中的辅助功能测试演示页面。
+
+   :::image type="content" source="../media/a11y-testing-basics-demopage.msft.png" alt-text="本文中使用的演示页面具有一些辅助功能问题。" lightbox="../media/a11y-testing-basics-demopage.msft.png":::
+
+1. 右键单击演示网页中的任意位置，然后选择"检查 **"**。  将在网页旁边打开 DevTools。
 
 
 <!-- ====================================================================== -->
 ## <a name="automated-testing-by-using-the-issues-tool"></a>使用问题工具自动测试
 
-在浏览器中打开演示页面并打开 DevTools 时，请注意，问题计数器中会自动检测到 **一些问题**。  单击问题**计数器** (![](../media/issues-counter-icon.msft.png) 问题"计数器。) 打开 [问题工具][DevToolsIssuesTool]以查看问题和详细信息。
+在浏览器中打开演示页面并打开 DevTools 时，请注意，问题计数器中会自动检测到 **一些问题**。  单击"**问题" (** ![](../media/issues-counter-icon.msft.png) "问题"计数器。) 打开"问题"工具以查看问题和**** 详细信息。
 
 :::image type="content" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="&quot;问题&quot;计数器显示当前网页中有多少问题，并打开&quot;问题&quot;工具。" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
 
@@ -85,7 +83,7 @@ ms.locfileid: "12339192"
 
 <!-- corresponding how-to article: narrow.md -->
 
-辅助功能的一个重要部分是确保 Web 产品在较窄的视口上良好工作。 许多用户需要缩放页面才能使用它，这意味着没有太多空间。 当空间不足时，多列布局应转换为单列布局，内容按可理解的顺序放置。 这意味着将最重要的内容放置在页面顶部，将其他内容放置在页面的更下一层。
+辅助功能的一个重要部分是确保 Web 产品在较窄的视口上良好工作。 许多用户需要缩放页面才能使用它，这意味着没有太多空间。  当空间不足时，多列布局应转换为单列布局，内容按可理解的顺序放置。 这意味着将最重要的内容放置在页面顶部，将其他内容放置在页面的更下一层。
 
 通过缩小浏览器窗口范围，使用箭头键滚动页面，可以看到演示页面的顶部导航栏具有一些辅助功能问题。  顶部导航栏与 **"** 搜索"窗体重叠，如上图所示，需要修复该问题。
 
@@ -114,7 +112,7 @@ ms.locfileid: "12339192"
 <!-- ====================================================================== -->
 ## <a name="limits-of-automated-testing"></a>自动测试的限制
 
-问题[工具](../issues/index.md)、辅助功能[Insights](https://accessibilityinsights.io) 和 [Lighthouse](https://developers.google.com/web/tools/lighthouse/) 是自动生成网页的辅助功能报告的工具。  从此类工具获取自动报告只是辅助功能测试之旅的开始。
+问题[工具](../issues/index.md)、辅助功能[Insights](https://accessibilityinsights.io)和[灯](https://developers.google.com/web/tools/lighthouse/)楼是自动生成网页的辅助功能报告的工具。  从此类工具获取自动报告只是辅助功能测试之旅的开始。
 
 辅助功能与人员交互有关，即在不同的技术环境中使用产品时具有不同的需求的人。  此测试无法完全自动化，但需要用户对产品进行验证。  在最佳方案中，你可以访问具有不同辅助功能需求的测试人员和使用各种环境的测试人员。  但是，通过使用键盘进行导航并检查页面的不同部分，你已可以自己执行很多操作。
 
@@ -131,7 +129,7 @@ ms.locfileid: "12339192"
 <!-- ====================================================================== -->
 ## <a name="using-the-inspect-tool-to-detect-accessibility-issues"></a>使用检查工具检测辅助功能问题
 
-使用 **"检查** "工具通过将鼠标悬停在网页的某些部分来检测辅助功能问题。  **检查 (**![检查](../media/inspect-icon.msft.png)。) 工具位于 DevTools 的左上角。  通过单击"检查工具"按钮 **打开"检查"** 工具。
+使用 **"检查** "工具通过将鼠标悬停在网页的某些部分来检测辅助功能问题。  **检查 (**![检查](../media/inspect-tool-icon-light-theme.png)。) 工具位于 DevTools 的左上角。  通过单击"检查工具"按钮 **打开"检查"** 工具。
 
 :::image type="content" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="通过单击&quot;检查工具&quot;按钮打开&quot;检查&quot;工具。" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
 
@@ -161,16 +159,16 @@ ms.locfileid: "12339192"
 
 Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
-*   **对比度** 定义低视力用户能否理解元素。
-    *   [WCAG](https://www.w3.org/TR/WCAG21/) 准则定义的对比率指示文本和背景颜色之间的对比度是否足够。[](https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio)  绿色选中标记图标表示没有足够的对比度，橙色感叹号图标表示对比度不足。
+*  **对比度** 定义低视力用户能否理解元素。
+    *  [WCAG](https://www.w3.org/TR/WCAG21/) 准则定义的对比率指示文本和背景颜色之间的对比度是否足够。[](https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio)  绿色选中标记图标表示没有足够的对比度，橙色感叹号图标表示对比度不足。
 
-*   **名称和****角色**指示哪些信息辅助技术（如屏幕阅读器）将报告有关元素的信息。
-    *   **Name** 是元素的文本`a`内容。  对于 元素 `<a href="/">About Us</a>`，Inspect 工具中显示的 **Name** 为"关于我们"。
-    *   **元素**的角色。  **Role** 通常是元素名称，如 `article``img` 、 、 `link`或 `heading`。  和 `div` `span` 元素表示为 `generic`。
+*  **名称和****角色**指示哪些信息辅助技术（如屏幕阅读器）将报告有关元素的信息。
+    *  **Name** 是元素的文本`a`内容。  对于 元素 `<a href="/">About Us</a>`，Inspect 工具中显示的 **Name** 为"关于我们"。
+    *  **元素**的角色。  **Role** 通常是元素名称，如 `article``img` 、 、 `link`或 `heading`。  和 `div` `span` 元素表示为 `generic`。
 
-*   **键盘可聚焦** 指示用户是否可以使用除鼠标外的其他输入设备访问元素。
-    *   绿色选中标记图标指示元素是键盘可聚焦的。
-    *   带对角线的灰色圆圈表示元素不可通过键盘聚焦。
+*  **键盘可聚焦** 指示用户是否可以使用除鼠标外的其他输入设备访问元素。
+    *  绿色选中标记图标指示元素是键盘可聚焦的。
+    *  带对角线的灰色圆圈表示元素不可通过键盘聚焦。
 
 有关详细演练步骤，请参阅检查各个元素的文本 [对比度、屏幕阅读器文本和键盘支持](test-inspect-tool.md#check-individual-elements-for-text-contrast-screen-reader-text-and-keyboard-support)。
 
@@ -245,7 +243,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 ### <a name="analyzing-the-lack-of-keyboard-support-in-the-donation-form"></a>分析在资金表单中缺少键盘支持
 
-使用 元素实现 `div` "支持"表单上的按钮，而自动测试工具无法将元素识别为表单上的控件。
+"向金子" `div` 表单上的按钮是使用 元素实现的，而自动测试工具无法将元素识别为表单上的控件。
 
 若要调查这一点，可以使用 **"检查** "工具将鼠标悬停在"捐赠"表单的按钮上。  结果是它们都不是键盘可访问的，如信息覆盖的 **键盘** 可聚焦行上的灰色圈所指示。  如信息**** `generic` 覆盖的****"名称"和"角色"行所示，"捐赠"表单的按钮也没有任何名称，其角色为 (`div` `span` 表示或元素) ，这意味着它们不能通过辅助技术访问。
 
@@ -383,7 +381,7 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 
 ### <a name="verify-that-the-webpage-is-usable-by-people-with-color-blindness"></a>验证网页是否对色盲者可用
 
-不同的接收状态使用红色 (绿色、黄色) 颜色作为区分资金状态的唯一方式。  但是，你无法预期所有用户都体验这些颜色。  如果你使用 DevTools 的视觉缺陷模拟功能，则可以通过模拟不同视觉用户对设计的看法来发现这不够好。[](./emulate-vision-deficiencies.md)  有关详细演练步骤，请参阅验证页面是否适用于色 [盲人士](test-color-blindness.md)。
+不同的接收状态使用红色 (绿色、黄色) 颜色作为区分资金状态的唯一方式。  但是，你无法预期所有用户都体验这些颜色。  如果你使用 DevTools 的视觉缺陷模拟功能，则通过模拟不同视觉的人如何理解你的设计，你会发现这不够好。[](./emulate-vision-deficiencies.md)  有关详细演练步骤，请参阅验证页面是否适用于色 [盲人士](test-color-blindness.md)。
 
 :::image type="content" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="将页面显示为具有亚特色 (色盲) 可以看到它。" lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
 

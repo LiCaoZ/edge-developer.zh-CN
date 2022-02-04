@@ -6,19 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/19/2021
-ms.openlocfilehash: 4de29046c7bf834f184c75d36b662eecf4540d2a
-ms.sourcegitcommit: c63325d520191ce4b4e707fb680c84afce4eab54
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338806"
 ---
 # <a name="using-the-microsoft-edge-add-ons-api-in-private-preview"></a>使用 Microsoft Edge 外接程序 API (在个人预览版中)
 
 > [!NOTE]
 > 加载项Microsoft Edge API 目前处于个人预览阶段。  " **发布 API** "页仅对私人预览版的参与者在合作伙伴中心显示。  加载项MICROSOFT EDGE API 正在积极开发中，路线图根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
 
-<!-- shortened title ok in mid-sentence link -->
 本文与 Microsoft Edge [加载项 API](addons-api-reference.md) 参考一起概述了建议Microsoft Edge加载项 API。  我们期待就建议的 API 合同提供建议和反馈。  请将你的反馈作为有关 [加载项 API 的问题提交](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API])。
 
 Microsoft Edge加载项 API 提供了一组 REST 终结点，用于以编程方式发布提交到 Microsoft Edge 加载项网站的加载项更新。  可以使用这些 REST 终结点自动执行将加载项上载和发布到加载项Microsoft Edge的过程。
@@ -34,7 +27,7 @@ Microsoft Edge加载项 API 提供了一组 REST 终结点，用于以编程方�
 | _package_ | 包含`.zip`加载项Microsoft Edge包。 |
 | _product_ | 一Microsoft Edge扩展或主题。  也称为加载项Microsoft Edge_加载项_。 |
 | _产品 ID_ | 需要发布其草稿的产品的产品 ID。  产品 ID 是一个 128 位 GUID，与合作伙伴中心的产品相关联。  例如：`d34f98f5-f9b7-42b1-bebb-98707202b21d`。 |
-| _提交_ | 要提交到合作伙伴中心的现有产品的更新。  产品每次更新都是`In Draft``In Review``In the Store`提交，无论状态是 、还是 (已发布) 。 |
+| _提交_ | 要提交到合作伙伴中心的现有产品的更新。  产品每次更新都是提交，`In Draft``In Review``In the Store`无论状态是 、还是 (已发布) 。 |
 
 
 <!-- ====================================================================== -->
@@ -53,23 +46,19 @@ Microsoft Edge加载项 API 提供了一组 REST 终结点，用于以编程方�
 
    :::image type="content" source="../../media/create-api-credentials-button.png" alt-text="单击&quot;创建 API 凭据&quot;后合作伙伴中心的&quot;发布 API&quot;页面，现在显示客户端 ID、客户端密码和身份验证令牌 URL。" lightbox="../../media/create-api-credentials-button.png":::
 
-   <!-- make window smaller before capture.  make fresh capture.  save .png in present repo as ../media/create-api-credentials-button.png, replacing path in parens -->
-
    API 凭据现已创建;你已启用或续订了 API。  客户端 **ID**、**客户端密码**、到期日期**** 和**访问令牌 URL** 现在显示在"发布 API"页上。
-
-   <!-- possibly add a screenshot here, with fake data with the correct number of characters, or value strings blurred out or erased -->
 
 1. 记下客户端 **ID**、 **客户端密码** 和 **访问令牌 URL**。  你将在下一步使用这些值，获取访问令牌。
 
 > [!IMPORTANT]
-> 请务必立即写下客户端密码，因为它仅在启用或续订 API 密码后（即 (API 凭据后立即) 。
+> 请务必立即记下客户端密码，因为它仅在启用或续订 API 密码后（即 (API 凭据后立即) 。
 
 
 <!-- ====================================================================== -->
 ## <a name="retrieving-the-access-token"></a>检索访问令牌
 
 > [!NOTE]
-> 当前Microsoft Edge预览版的参与者可以使用加载项 API。
+> 当前Microsoft Edge预览版参与者可以使用加载项 API。
 
 
 获取应用程序的必要授权后，获取 API 的访问令牌。  若要使用客户端凭据授予获取令牌，请将 POST 请求发送到 OAuth 令牌 (访问令牌 URL) 。  租户信息在以上开始步骤之前收到的 **URL 中提供** 。
@@ -104,7 +93,7 @@ https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v2
 }
 ```
 
-有关详细信息，请导航到 [OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token) 客户端凭据流Microsoft 标识平台。
+有关详细信息，请参阅 [OAuth 2.0 客户端凭据流Microsoft 标识平台](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token)。
 
 
 <!-- ====================================================================== -->
@@ -140,7 +129,7 @@ Body content: the package file to upload
 
 1. 选择想要其产品 ID 的扩展。
 
-   将 **打开"扩展概述** "页。  产品 ID 显示在页面中。   (产品 ID 在地址栏中的 URL `microsoftedge/` `/packages`中也显示为 GUID，介于 和 .) 
+   将 **打开"扩展概述** "页。  产品 ID 显示在页面中。   (产品 ID 还会在地址栏中的 URL `microsoftedge/` `/packages`中显示为 GUID，介于 和 .) 
  
 1. 在" **扩展标识** "部分 (地址栏) ，选择并复制 **产品 ID**。
 
@@ -192,7 +181,7 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 <!-- ====================================================================== -->
 ## <a name="publishing-the-submission"></a>发布提交
 
-使用此 API 将产品的当前草稿发布到Microsoft Edge加载项网站。
+使用此 API 将产品的当前草稿发布到 Microsoft Edge 加载项网站。
 
 ```rest
 Endpoint: /v1/products/$productID/submissions

@@ -1,17 +1,11 @@
 ---
-title: '模拟移动设备 (设备仿真) '
+title: 模拟移动设备（设备仿真）
 description: 使用 Microsoft Edge 中的虚拟设备构建移动优先的网站。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
-ms.openlocfilehash: 3b86fe20603d8dd82f14b5f4a16c36c2e0ba7116
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325765"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,16 +20,17 @@ ms.locfileid: "12325765"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="emulate-mobile-devices-device-emulation"></a>模拟移动设备 (设备仿真) 
+# <a name="emulate-mobile-devices-device-emulation"></a>模拟移动设备（设备仿真）
 
-使用 **"设备仿真** "大致了解页面在移动设备上的外观和响应方式。  DevTools 提供了一组功能，可帮助你模拟移动设备：
-*   [模拟移动视区](#simulate-a-mobile-viewport)
-*   [限制网络](#throttle-the-network-only)
-*   [限制 CPU](#throttle-the-cpu-only)
-*   [替代地理位置](#override-geolocation)
-*   [设置方向](#set-orientation)
-*   [设置用户代理字符串](#set-the-user-agent-string)
-*   [设置用户代理客户端提示](#set-user-agent-client-hints)
+使用 **设备模拟** <!--aka "Device Mode"--> 以近似于页面在移动设备上的外观和响应方式。  DevTools 提供以下移动设备模拟功能：
+
+* [模拟移动视区](#simulate-a-mobile-viewport)
+* [限制网络](#throttle-the-network-only)
+* [限制 CPU](#throttle-the-cpu-only)
+* [替代地理位置](#override-geolocation)
+* [设置方向](#set-orientation)
+* [设置用户代理字符串](#set-the-user-agent-string)
+* [设置用户代理客户端提示](#set-user-agent-client-hints)
 
 
 <!-- ====================================================================== -->
@@ -51,7 +46,7 @@ ms.locfileid: "12325765"
 <!-- ====================================================================== -->
 ## <a name="simulate-a-mobile-viewport"></a>模拟移动视区
 
-选择****"切换设备仿真 ("切换设备工具栏"。) 或选择"自定义和控制 ![ ](../media/toggle-device-toolbar-dark-icon.msft.png) **DevTools** () > `...` **设备仿真**"以打开使您能够模拟移动视口的 UI。
+**** ![](../media/toggle-device-toolbar-dark-icon.msft.png) 选择"切换设备仿真 (切换设备工具栏"。) 或选择"自定义和控制 **DevTools** (`...`) > **设备模拟**"以打开使您能够模拟移动视口的 UI。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="设备工具栏。" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
 
@@ -65,7 +60,7 @@ ms.locfileid: "12325765"
 
 #### <a name="show-media-queries"></a>显示媒体查询
 
-如果已在页面上定义了媒体查询，请通过在视区上方显示媒体查询断点，跳至视区维度，使这些媒体查询生效。  选择 **"更多选项**  >  **""显示媒体查询"。**
+如果已在页面上定义了媒体查询，请通过在视区上方显示媒体查询断点，跳至视区维度，使这些媒体查询生效。  选择 **"更多选项** > **"显示媒体查询**。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png" alt-text="显示媒体查询。" lightbox="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png":::
 
@@ -84,12 +79,12 @@ ms.locfileid: "12325765"
 | 选项 | 渲染方法 | 光标图标 | 触发事件 |
 |:--- |:--- |:--- |:--- |
 | 移动设备 | 移动设备 | 圆形 | `touch` |
-| 移动 (触摸)  | 移动设备 | 正常 | `click` |
+| 移动设备 (触摸)  | 移动设备 | 正常 | `click` |
 | 桌面 | 桌面 | 正常 | `click` |
 | 桌面 (触摸)  | 桌面 | 圆形 | `touch` |
 
 > [!NOTE]
-> 如果未显示 **"设备类型**"列表，请选择"更多**选项**  >  **""添加设备类型"。**
+> 如果未 **显示"设备** 类型"列表，请选择" **更多选项** > **""设备类型"**。
 
 ### <a name="mobile-device-viewport-mode"></a>移动设备视区模式
 
@@ -101,12 +96,12 @@ ms.locfileid: "12325765"
 
 横向测试你的网页。
 
-*   若要将视口旋转到横向，请选择旋转 ** (** ![ 旋转 ](../media/rotate-dark-icon.msft.png) 。) 。
+*  若要将视口旋转到横向，请选择**旋转 (**![旋转](../media/rotate-dark-icon.msft.png)。) 。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="页面以横向显示。" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
 
 > [!NOTE]
-> 如果“**设备**”工具栏较窄，将不显示“**旋转**”按钮。 若要访问 **旋转按钮** ，请增加设备工具栏 **的宽度**。
+> 如果“**设备**”工具栏较窄，将不显示“**旋转**”按钮。 若要访问 **"旋转"** 按钮，请增加设备工具栏 **的宽度**。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="设备工具栏。" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
 
@@ -114,7 +109,7 @@ ms.locfileid: "12325765"
 
 #### <a name="show-device-frame"></a>显示设备框架
 
-若要模拟特定移动设备的尺寸，请打开"更多选项"，然后选择"显示设备**** 框架"以在视口周围显示物理设备框。 ****
+若要模拟特定移动设备的尺寸，请打开"更多选项"****，然后选择"显示设备**** 框架"以在视口周围显示物理设备框。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="&quot;显示设备框架&quot;菜单项。" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
 
@@ -129,19 +124,19 @@ ms.locfileid: "12325765"
 
 如果默认列表中未包含所需的移动设备选项，可以添加自定义设备。  添加自定义设备：
 
-1.  Select the **Device** list > **Edit**.
+1. Select the **Device** list > **Edit**.
 
-    :::image type="content" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="从&quot;设备&quot;列表中选择&quot;编辑&quot;。" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="从&quot;设备&quot;列表中选择&quot;编辑&quot;。" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
 
-1.  选择 **"添加自定义设备"。**
+1. 选择 **"添加自定义设备"**。
 
-1.  在“**仿真设备**”上，输入自定义设备的设备名称、屏幕宽度和屏幕高度。  “[设备像素比](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio)”、“[用户代理字符串](https://developer.mozilla.org/docs/Glossary/User_agent)”和“[设备类型](#set-the-device-type)”为可选字段。  设备类型字段默认为“**移动设备**”。
+1. 在“**仿真设备**”上，输入自定义设备的设备名称、屏幕宽度和屏幕高度。  “[设备像素比](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio)”、“[用户代理字符串](https://developer.mozilla.org/docs/Glossary/User_agent)”和“[设备类型](#set-the-device-type)”为可选字段。  设备类型字段默认为“**移动设备**”。
 
-    :::image type="content" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="添加自定义设备。" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="添加自定义设备。" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
 
 ### <a name="show-rulers"></a>显示标尺
 
-如果你需要测量屏幕尺寸，可以使用标尺测量屏幕大小（以像素为单位）。  选择 **"更多**  >  **选项"显示**标尺以显示视口上方和左侧的标尺。
+如果你需要测量屏幕尺寸，可以使用标尺测量屏幕大小（以像素为单位）。  选择 **"更多** > **选项"显示标** 尺以显示视口上方和左侧的标尺。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="&quot;显示标尺&quot;菜单项。":::
 
@@ -161,9 +156,9 @@ ms.locfileid: "12325765"
 
 移动设备通常具有网络和 CPU 限制。  测试页面加载的速度，以及页面如何以不同的 Internet 和 CPU 速度响应。
 
-1.  选择 **限制** 列表，将预设更改为 **中层移动** 或 **低端移动**。
-    *   “**中层移动设备**”将模拟 `fast 3G` 并限制你的 CPU。  它是正常速度的 1/4。
-    *   “**低端移动设备**”将模拟 `slow 3G` 并限制你的 CPU。  它是正常速度的 1/6。
+1. 选择 **限制** 列表，将预设更改为 **中层移动** 或 **低端移动**。
+    *  “**中层移动设备**”将模拟 `fast 3G` 并限制你的 CPU。  它是正常速度的 1/4。
+    *  “**低端移动设备**”将模拟 `slow 3G` 并限制你的 CPU。  它是正常速度的 1/6。
 
 所有限制都基于笔记本电脑或桌面设备的正常功能。
 
@@ -178,8 +173,8 @@ ms.locfileid: "12325765"
 
 仅限制 CPU 而不是网络：
 
-1.  选择"**性能"** 面板，然后选择"捕获**设置 (** ![ 捕获设置。) 。 ](../media/capture-settings-icon.msft.png)
-1.  选择**CPU**  >  **速度减慢 4 倍或****速度减慢 6 倍**。
+1. 选择"**性能"** 面板，然后选择"捕获设置** (**![捕获设置。](../media/capture-settings-icon.msft.png)) 。
+1. 选择 **CPU4x** >  **减速或****速度减慢 6 倍**。
 
 :::image type="content" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="&quot;性能&quot;面板中的 CPU 列表。" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
 
@@ -187,19 +182,19 @@ ms.locfileid: "12325765"
 
 仅限制网络而不是 CPU：
 
-1.  选择"**网络"** 工具，然后选择"**联机**  >  **快速 3G"** 或"**慢速 3G"。**
+1. 选择"**网络"** 工具，然后选择 **"OnlineFast** >  **3G**"或"**慢速 3G"**。
 
-    :::image type="content" source="../media/device-mode-network-throttle.msft.png" alt-text="网络面板中的限制列表。" lightbox="../media/device-mode-network-throttle.msft.png":::
+   :::image type="content" source="../media/device-mode-network-throttle.msft.png" alt-text="网络面板中的限制列表。" lightbox="../media/device-mode-network-throttle.msft.png":::
 
-    或者 `Control` + `Shift` + `P` ， (Windows、Linux) 或 `Command` (macOS + `Shift` + `P`) **** `3G` ******** 打开"命令菜单"，键入 ，然后选择"启用快速 3G 限制"或"启用慢速 3G 限制"。
+    `Ctrl`****`Shift``P`++或者，按 (Windows、Linux) `Shift`+`P` `Command`+或 (macOS) `3g`打开"命令菜单"，开始键入 ，然后选择"启用**快速 3G** 限制"或"启用慢速 **3G 限制"**。
 
-    :::image type="content" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="从&quot;命令菜单&quot;中选择&quot;启用快速或缓慢的 3G 限制&quot;。" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
+   :::image type="content" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="从&quot;命令菜单&quot;中选择&quot;启用快速或缓慢的 3G 限制&quot;。" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
 
 您还可以从"性能"面板设置 **网络** 限制：
 
-1.  选择**捕获设置 (** 捕获设置。) 并选择网络列表，将预设更改为 ![ ](../media/capture-settings-icon.msft.png) 快速**3G**或慢速**** **3G**。
+1. **** 选择 **"捕获设置** (![](../media/capture-settings-icon.msft.png) 捕获设置。) 选择"网络"列表，将预设更改为 **"快速 3G**"或"**慢速 3G"**。
 
-    :::image type="content" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="从&quot;性能&quot;面板设置网络限制。" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
+   :::image type="content" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="从&quot;性能&quot;面板设置网络限制。" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -207,15 +202,15 @@ ms.locfileid: "12325765"
 
  如果页面依赖移动设备中的地理位置信息正确呈现，则使用替代地理位置的 UI 提供不同的地理位置。
 
-1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **传感器"。**
+1. 选择 **自定义和控制 DevTools (** `...`) > **更多工具** > **Sensors"**。
 
-    :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="用于地理位置的传感器。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="用于地理位置的传感器。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
-    或者，通过选择"命令菜单" (Windows、Linux) `Control` + `Shift` + `P` 或 (`Command` + `Shift` + `P` macOS) 。  键入 `Sensors` ，然后选择显示 **传感器**。
+    或者，通过选择"命令菜单" (Windows `Control`++`Shift``P` 、Linux) 或 (`P` `Command`+`Shift`+macOS) 。  键入 `Sensors` ，然后选择" **显示传感器"**。
 
-    :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="显示命令菜单中的地理位置传感器。" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="显示命令菜单中的地理位置传感器。" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
 
-在 **"传感器"** 面板上，若要选择预设位置之一，请使用" **位置** "下拉菜单。  若要输入自定义位置，请选择 **"其他"** 并输入自定义位置的坐标。  若要测试页面在位置信息不可用时的行为方式，请选择"**位置不可用"。**
+在 **"传感器"** 面板上，若要选择预设位置之一，请使用" **位置** "下拉菜单。  若要输入自定义位置，请选择 **"其他"** 并输入自定义位置的坐标。  若要测试页面在位置信息不可用时的行为方式，请选择" **位置不可用"**。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="已选择预设位置的“传感器”面板。" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
 
@@ -225,17 +220,15 @@ ms.locfileid: "12325765"
 
 如果页面依赖来自移动设备的方向信息来正确呈现，请打开方向 UI。
 
-1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **传感器"。**
+1. 选择 **自定义和控制 DevTools (** `...`) > **更多工具** > **Sensors"**。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="&quot;更多工具&quot;菜单上的&quot;传感器&quot;命令。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
-1.  或者，通过选择"命令菜单" (Windows、Linux) `Control` + `Shift` + `P` 或 (`Command` + `Shift` + `P` macOS) 。  键入 `Sensors` ，然后选择"**显示传感器"。**
+1. 或者，通过选择"命令菜单" (Windows `Control`++`Shift``P` 、Linux) 或 (`P` `Command`+`Shift`+macOS) 。  键入 `Sensors`，然后选择" **显示传感器"**。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="显示方向传感器。" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
-   针对方向**显示传感器**
-:::image-end:::
 
-在 **"传感器"** 面板上，可以从"方向"下拉菜单中选择预设**** 方向。  若要输入你自己的方向，请选择"**自定义方向**"，然后输入你自己的[alpha、beta](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha)和[](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta)[gamma](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma)值。
+在 **"传感器"** 面板上，可以从"方向"下拉菜单中选择预设**** 方向。  若要输入你自己的方向，请选择" **自定义方向**"，然后输入你自己的 [alpha](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha)、 [beta](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta) 和 [gamma](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma) 值。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="&quot;传感器&quot;面板上的方向选项。" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
 
@@ -245,13 +238,13 @@ ms.locfileid: "12325765"
 
 如果页面依赖移动设备中的用户代理字符串来正确呈现，请使用“**网络条件**”面板提供不同的用户代理字符串。
 
-1.  选择 **"自定义和控制开发工具 () >** `...` **更多工具**  >  **网络条件"。**
+1. 选择 **"自定义和控制开发工具 (**) > `...` **工具** > **网络条件"**。
 
-    :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="&quot;更多工具&quot;菜单中的网络条件条目。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="&quot;更多工具&quot;菜单中的网络条件条目。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
 
-1.  或者，通过选择"命令菜单" (Windows、Linux) `Control` + `Shift` + `P` 或 (`Command` + `Shift` + `P` macOS) 。键入 `Network conditions` ，然后选择"**显示网络条件"。**
+1. 或者，通过选择"命令菜单" (Windows `Control`++`Shift``P` 、Linux) 或 (`P` `Command`+`Shift`+macOS) 。键入 `Network conditions`，然后选择"**显示网络条件"**。
 
-    :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="显示网络条件。" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="显示网络条件。" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
 
 在" **用户代理"旁边**，清除" **使用浏览器默认"** 复选框。  然后， **选择"自定义** "以从预定义的用户代理字符串列表中选择。  若要输入你自己的用户代理字符串，请在“**输入自定义用户代理**”中输入字符串。
 
@@ -265,27 +258,30 @@ ms.locfileid: "12325765"
 <!-- ====================================================================== -->
 ## <a name="set-user-agent-client-hints"></a>设置用户代理客户端提示
 
-如果你的网站使用 [用户代理客户端提示](../../web-platform/user-agent-guidance.md)，请使用 **模拟设备** 面板添加设备和设置用户代理客户端提示。
+如果你的网站使用 [用户代理客户端提示](../../web-platform/user-agent-guidance.md)，请使用 **模拟** 设备面板添加设备和设置用户代理客户端提示。
 
-1.  打开上下文**菜单 (** 右键单击") "，然后选择"检查 **"。**
-1.  选择**设置**  >  **设备"。**
-1.  在"模拟设备"面板中，选择 **"添加自定义设备**"，然后展开 **"用户代理客户端提示"。**
+1. 在网页中右键单击，然后选择"检查 **"**。
 
-    :::image type="content" source="images/emulated-devices-user-agent-client-hints.msft.png" alt-text="设置用户代理客户端提示。" lightbox="images/emulated-devices-user-agent-client-hints.msft.png":::
+1. 选择 **设置** > **Devices**。
 
-1.  在"设备名称"文本框 **中键入** 唯一的名称，例如 `Test101` 。
-1.  接受默认值或根据需要更改**Width、Height**和设备**像素**比率。 ****
-1.  按如下所示设置用户代理客户端提示。
-    *  **品牌**和**版本**，如*Edge*和*92。*  选择 **+ 添加品牌** 以添加多个品牌和版本对。
-    *  **完整浏览器版本**，例如*92.0.1111.0。*
-    *  **平台**和**版本**，如*Windows*和*10.0。*
+1. 在仿真设备面板中，选择 **添加自定义设备** 并展开 **用户代理客户端提示**。
+
+   :::image type="content" source="images/emulated-devices-user-agent-client-hints.msft.png" alt-text="设置用户代理客户端提示。" lightbox="images/emulated-devices-user-agent-client-hints.msft.png":::
+
+1. 在"设备名称"文本框 **中键入** 唯一的名称，例如 `Test101`。
+
+1. 接受默认值或根据需要更改 **Width**、 **Height** 和设备 **像素** 比率。
+
+1. 设置用户代理客户端提示，如下所示：
+    *  **品牌** 和 **版本**，如 *Edge* 和 *92*。  选择 **+ 添加品牌** 以添加多个品牌和版本对。
+    *  **完整浏览器版本** ，例如 *92.0.1111.0*。
+    *  **平台**和**版本**，如 *Windows* *和 10.0*。
     *  **体系结构** ，如 *x86*。
     *  **设备型号** ，例如 *，一些设备型号*。
 
-    > [!NOTE]
-    > 设置或更改任何用户代理客户端提示。 没有所需的值。
+   你可以设置或更改任何用户代理客户端提示。  没有所需的值。
 
-1. 选择**添加**。 新设备以选定状态显示在" **模拟设备** "列表顶部。
+1. 单击**添加**。  新设备显示在"模拟设备"列表顶部的**选定状态。**
 
 还可以在网络工具中设置用户代理 **客户端** 提示;请参阅 [网络功能参考](../network/reference.md)。
 

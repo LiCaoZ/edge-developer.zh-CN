@@ -7,12 +7,6 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 09/15/2021
-ms.openlocfilehash: 64083eda51cd4905a370d030ff775a3fc100f47e
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12322919"
 ---
 # <a name="get-started-debugging-webview2-apps"></a>开始调试 WebView2 应用
 
@@ -23,13 +17,13 @@ WebView2 Microsoft Edge的目标是将 Web 和本机应用开发功能和工具�
 
 ## [<a name="microsoft-edge-devtools"></a>Microsoft Edge 开发工具](#tab/devtools)
 
-使用[Microsoft Edge工具](../index.md)调试 WebView2 控件中显示的 Web 内容，方法与针对 WebView2 控件中显示的另一网页进行调试Microsoft Edge。  若要打开 DevTools，请设置 WebView 控件的焦点，然后使用以下操作之一。
+使用Microsoft Edge工具调试 WebView2 控件中显示的 Web 内容，方式与调试 WebView2 控件中显示的网页Microsoft Edge。  若要打开 DevTools，将焦点放在 WebView 控件上，然后执行下列任一操作：
 
-*   选择 `F12`。
-*   选择 `Ctrl` + `Shift` + `I` 。
-*   打开上下文菜单 (右键单击") 并选择 `Inspect` ""。
+* 按 `F12`。
+* 按 `Ctrl`++`Shift``I`。
+* 右键单击呈现的网页中的项目，然后选择"检查 **"**。
 
-有关详细信息，请导航到["DevTools 概述"。](../index.md)
+有关详细信息，请参阅 [DevTools 概述](../../devtools-guide-chromium/index.md)。
 
 :::image type="complex" source="./media/f12.png" alt-text="DevTools 调试。" lightbox="./media/f12.png":::
    DevTools 调试
@@ -40,42 +34,42 @@ WebView2 Microsoft Edge的目标是将 Web 和本机应用开发功能和工具�
 
 ## [<a name="visual-studio"></a>Visual Studio](#tab/visualstudio)
 
-Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具。  在Visual Studio部分中，主要焦点是调试 WebView 控件，但其他调试方法Visual Studio一样可用。  使用以下过程调试 Win32 应用中的 Web 和本机代码Office外接程序。
+Visual Studio WebView2 应用中的 Web 和本机代码提供各种调试工具。  在Visual Studio部分中，主要焦点是调试 WebView 控件，但其他调试方法Visual Studio一样可用。  使用以下过程调试 Win32 应用中的 Web 和本机代码，Office外接程序。
 
 > [!IMPORTANT]
-> 当你在附加了本机调试Visual Studio中调试应用时，选择可能会触发本机调试器 `F12` ，而不是开发人员工具。  选择 `Ctrl` + `Shift` + `I` ，或使用上下文菜单 (右键) ，以避免这种情况。
+> 当你在附加了本机调试Visual Studio`F12`中调试应用时，按可能会触发本机调试器，而不是开发人员工具。  若要避免这种情况，请按 或`Ctrl`++`Shift``I`右键单击。
 
 开始之前，请确保满足以下要求。
 
-*   若要调试脚本，必须从 Visual Studio 中启动应用。
+*   若要调试脚本，必须从应用程序内启动Visual Studio。
 *   无法将调试器附加到正在运行的 WebView2 进程。
 *   安装 Visual Studio 2019 版本 16.4 预览版 2 或更高版本。
 
 安装并设置脚本调试器工具Visual Studio。
 
 1.  完成以下操作以使用 C++ 在桌面开发中安装 **JavaScript** **诊断组件**。
-    1.  在"Windows资源管理器"栏中，键入 `Visual Studio Installer` 。
+    1.  在"Windows资源管理器"栏中，键入 `Visual Studio Installer`。
     1.  选择**Visual Studio 安装程序**打开它。
     1.  In the Visual Studio 安装程序， on the installed version， choose the **More** button， and then choose **Modify**.
-    1.  In Visual Studio， under **Workloads，** choose the **Desktop Development in C++** setting.
+    1.  In Visual Studio， under **Workloads**， choose the **Desktop Development in C++** setting.
 
         :::image type="complex" source="./media/workloads.png" alt-text="Visual Studio修改工作负载屏幕。" lightbox="./media/workloads.png":::
             Visual Studio修改工作负载屏幕
         :::image-end:::
 
-    1.  选择 **"单个组件"。**
-    1.  在搜索框中，输入 `JavaScript diagnostics` 。
+    1.  选择 **"单个组件"**。
+    1.  在搜索框中，输入 `JavaScript diagnostics`。
     1.  选择 **"JavaScript 诊断"** 设置。
-    1.  选择 **"修改"。**
+    1.  选择 **"修改"**。
 
         :::image type="complex" source="./media/indiv-comp.png" alt-text="Visual Studio&quot;修改单个组件&quot;选项卡。" lightbox="./media/indiv-comp.png":::
            Visual Studio"修改单个组件"选项卡
         :::image-end:::
 
 1.  为 WebView2 应用启用脚本调试。
-    1.  在 WebView2 项目中，打开上下文菜单 (右键单击") "，然后选择"属性 **"。**
-    1.  在"**配置属性"下**，选择 **"调试"。**
-    1.  在调试**器类型下**，选择 **"JavaScript (WebView2) "。 **
+    1.  在 WebView2 项目中，打开上下文菜单 (右键单击") "属性 **"**。
+    1.  在" **配置属性"下**，选择 **"调试"**。
+    1.  在调试 **器类型下**，选择 **"JavaScript (WebView2) " **。
 
         :::image type="complex" source="./media/enb-js.png" alt-text="Visual Studio调试配置属性。" lightbox="./media/enb-js.png":::
            Visual Studio**调试**配置属性
@@ -89,7 +83,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
        Visual Studio添加断点
     :::image-end:::
 
-1.  若要运行调试器，请选择平台的位大小，然后选择"本地和调试器"旁边的绿色播放**Windows按钮**。  应用运行，调试程序连接到创建的第一个 WebView2 进程。
+1.  若要运行调试器，请选择平台的位大小，然后选择"本地调试器"旁边的绿色播放Windows**按钮**。  应用运行，调试程序连接到创建的第一个 WebView2 进程。
 
     :::image type="complex" source="./media/run.png" alt-text=" Visual Studio本地Windows调试器" lightbox="./media/run.png":::
        Visual Studio**本地Windows调试器**
@@ -102,7 +96,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
     :::image-end:::
 
 > [!NOTE]
-> 如果使用 WebView2 [SetVirtualHostNameToFolderMapping](/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping)方法，Visual Studio 2019 中的调试程序将不能理解虚拟源路径映射，因此断点无法正常工作。  此源路径映射在运行调试器时Visual Studio Code。
+> 如果使用 WebView2 [SetVirtualHostNameToFolderMapping](/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping) 方法，Visual Studio 2019 中的调试器将不能理解虚拟源路径映射，因此断点无法正常工作。  此源路径映射在运行调试器时Visual Studio Code。
 
 
 <!-- ====================================================================== -->
@@ -113,7 +107,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
 
 在Visual Studio Code中，完成以下操作以调试代码。
 
-1.  您的项目需要具有 `launch.json` 文件。  如果您的项目没有文件，请复制以下代码段 `launch.json` 并创建一个新 `launch.json` 文件。
+1.  您的项目需要具有文件 `launch.json` 。  如果您的项目没有文件，请 `launch.json` 复制以下代码段并创建一个新 `launch.json` 文件。
 
     ```json
         "name": "Hello debug world",
@@ -132,9 +126,9 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
     ```
 
     > [!NOTE]
-    > Visual Studio Code源路径映射现在需要 URL，因此你的应用现在在启动时接收命令行参数。  如果需要，可以 `url` 安全地忽略参数。
+    > Visual Studio Code源路径映射现在需要 URL，因此你的应用现在在启动时会收到命令行参数。  如果需要，可以安全地 `url` 忽略参数。
 
-1.  若要在源代码中设置断点，请将鼠标悬停在行上，然后选择 `F9`
+1.  若要在源代码中设置断点，请将鼠标悬停在行上，然后选择 `F9`：
 
     :::image type="complex" source="./media/breakpoint-vs.png" alt-text="断点在Visual Studio Code。" lightbox="./media/breakpoint-vs.png":::
        断点在Visual Studio Code
@@ -142,7 +136,7 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
 
 1.  运行代码。
     1.  在" **运行** "选项卡上，从下拉菜单中选择启动配置。
-    1.  若要开始调试你的应用，请选择"开始调试"，这是启动配置下拉列表旁边的绿色三角形。
+    1.  若要开始调试你的应用，请单击启动配置**** 下拉列表旁边的绿色三角形"开始调试"。
 
         :::image type="complex" source="./media/run-vs.png" alt-text=" Visual Studio Code&quot;运行&quot;选项卡。" lightbox="./media/run-vs.png":::
            Visual Studio Code"运行"选项卡
@@ -154,16 +148,16 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
        Visual Studio Code调试控制台
     :::image-end:::
 
-**高级设置：**
+**高级设置**：
 
 *   目标 Web 视图调试。
 
-    在某些 WebView2 应用中，可以使用多个 WebView2 控件。 若要选取 WebView2 控件以在这种情况下进行调试，可以使用目标 Webview2 调试
+    在某些 WebView2 应用中，您可能会使用多个 WebView2 控件。  若要选择在这种情况下要调试的 WebView2 控件，可以使用目标 WebView2 调试。
 
     打开 `launch.json` 并完成以下操作以使用目标 Webview 调试。
 
-    1.  确认参数 `useWebview` 设置为 `true` 。
-    1.  添加 `urlFilter` 参数。  当 WebView2 控件导航到 URL 时，参数值用于比较 URL `urlFilter` 中出现的字符串。
+    1.  确认参数 `useWebview` 设置为 `true`。
+    1.  添加 参数 `urlFilter` 。  当 WebView2 控件导航到 URL `urlFilter` 时，参数值用于比较 URL 中出现的字符串。
 
     ```json
     "useWebview": "true",
@@ -176,14 +170,14 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
     urlFilter="file://C:/path/to/my/index.ts," // To match explicit file called index.ts.
     ```
 
-    调试应用时，可能需要从呈现过程开始逐步执行代码。 如果您在网站上呈现网页，但无法访问源代码，可以使用 选项，因为网页将忽略无法 `?=value`  识别的参数。
+    在调试应用时，你可能需要从呈现过程开始逐步调试代码。 如果您在网站上呈现 `?=value` 网页，但无法访问源代码，可以使用 选项，因为网页将忽略无法识别的参数。
 
     > [!IMPORTANT]
     > 在 URL 中发现第一个匹配项后，调试程序将停止。  无法同时调试两个 WebView2 控件，因为 CDP 端口由所有 WebView2 控件共享，并且使用单个端口号。
 
 *   调试正在运行的进程
 
-    你可能需要将调试器附加到运行 WebView2 进程。 为此，在 `launch.json` 中，将 `request` 参数更新为 `attach` 。
+    你可能需要将调试器附加到运行 WebView2 进程。  为此，在 `launch.json`中更新 参数 `request` ，将参数的值更改为 `attach`：
 
     ```json
         "name": "Hello debugging world",
@@ -197,11 +191,11 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
         "useWebView": true
     ```
 
-    WebView2 控件必须打开 CDP 端口以允许调试 WebView2 控件。  必须先生成代码，以确保只有一个 WebView2 控件在启动调试程序之前，在 CDP (打开 Chrome 开发人员) 协议。
+    WebView2 控件必须打开 CDP 端口以允许调试 WebView2 控件。  必须先构建代码，以确保在启动调试程序之前，只有一个 WebView2 控件在 CDP (CDP) 打开 Chrome 开发人员协议。
 
 *   调试跟踪选项
 
-    添加 `trace` launch.json 参数以启用调试跟踪。
+    添加 launch.json `trace` 参数以启用调试跟踪。
 
     1.  添加 `trace` 参数。
 
@@ -226,13 +220,13 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
         ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
         ```
 
-        Visual Studio Code详细跟踪打开后调试输出：
+        Visual Studio Code详细跟踪功能启用调试输出：
 
-        :::image type="content" source="./media/verbose.png" alt-text="Visual Studio Code调试输出，并打开详细跟踪。" lightbox="./media/verbose.png":::
+        :::image type="content" source="./media/verbose.png" alt-text="Visual Studio Code&quot;调试输出&quot;，并打开详细跟踪。" lightbox="./media/verbose.png":::
 
 *   调试Office加载项。
 
-    如果要调试加载项Office，请打开加载项源代码，在加载项的单独实例中Visual Studio Code。  在 WebView2 应用中打开 launch.json，并添加以下代码段以将调试器Office加载项。
+    如果要调试加载项Office，请打开加载项源代码，在加载项的单独实例中Visual Studio Code。  在 WebView2 应用中打开 launch.json，并添加以下代码段以将调试器附加到Office加载项。
 
     ```json
     ,"debugServer": 4711
@@ -240,10 +234,11 @@ Visual Studio WebView2 应用中为 Web 和本机代码提供各种调试工具�
 
 *   调试器疑难解答
 
-    使用调试器时可能会遇到以下情形。
+    使用调试器时可能会遇到以下情形：
 
     *   调试程序不会在断点停止，并且你有调试输出。  若要解决此问题，请确认断点为的文件与 WebView2 控件所使用的文件相同。  调试程序不执行源路径映射。
-    *   无法附加到正在运行的进程，并且收到超时错误。  若要解决此问题，请确认 WebView2 控件打开了 CDP 端口。  请确保  `additionalBrowserArguments`  注册表中的值正确，或者选项正确。  有关详细信息，请导航到[dotnet 的 additionalBrowserArguments](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments)和[Win32 的 additionalBrowserArguments。](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions)
+
+    *   无法附加到正在运行的进程，并且收到超时错误。  若要解决此问题，请确认 WebView2 控件打开了 CDP 端口。   `additionalBrowserArguments` 请确保注册表中的值正确，或者选项正确。  有关详细信息，请参阅 [dotnet 的 additionalBrowserArguments](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments) 和 [Win32 的 additionalBrowserArguments](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions)。
 
 
 * * *

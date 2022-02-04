@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 8aa057c4030984e4c69f664d8c927512433c531e
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323598"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques
@@ -33,13 +27,15 @@ ms.locfileid: "12323598"
 
 若要打开 **"辅助功能"选项卡** ：
 
-1.  选择" **元素"** 工具。
-1.  在 **DOM 树**中，选择要检查的元素。
-1.  选择 **"辅助功能"** 选项卡。 可能需要先选择"更多选项卡" ("更多选项卡"按钮) "样式"选项卡右边的**** ![ ](../media/more-tabs-icon.msft.png) **"更多选项卡"** 按钮。
+1. 在呈现的网页中，右键单击某个元素，然后选择"检查 **"**。
 
-:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="检查&quot;辅助功能&quot;选项卡中 DevTools 主页的 h1 元素。" lightbox="../media/accessibility-elements-accessibility.msft.png":::
-   检查 `h1` "辅助功能"选项卡中的 DevTools **主页** 元素
-:::image-end:::
+   DevTools 随即打开，其中选择了 **元素**工具。  DOM 树将打开以显示您右键单击的元素。
+
+1. 在 **DOM 树**中，单击要检查的元素。  可以使用箭头键在 DOM 树中移动。
+
+1. 单击 **"样式"** 选项卡右边的"辅助功能 **"** 选项卡。 可能需要先单击"更多选项卡"****![ ("](../media/more-tabs-icon.msft.png)更多选项卡"按钮) "样式"选项卡右边的 **"更多选项卡**"按钮。
+
+:::image type="content" source="../media/accessibility-elements-accessibility.msft.png" alt-text="检查&quot;辅助功能&quot;选项卡中 DevTools 主页的 h1 元素。" lightbox="../media/accessibility-elements-accessibility.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -49,9 +45,7 @@ ms.locfileid: "12323598"
 
 从"辅助功能"选项卡检查元素在辅助功能 **树中** 的位置。
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="&quot;辅助功能树&quot;部分。" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
-   **辅助功能树**部分
-:::image-end:::
+:::image type="content" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="&quot;辅助功能树&quot;部分。" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -61,9 +55,7 @@ ARIA 属性确保辅助技术（如屏幕阅读器）具有为了正确表示页
 
 在"辅助功能"选项卡中查看元素 **的** ARIA 属性。
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="ARIA 属性部分。" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
-   **ARIA 属性**部分
-:::image-end:::
+:::image type="content" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="ARIA 属性部分。" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -76,9 +68,7 @@ ARIA 属性确保辅助技术（如屏幕阅读器）具有为了正确表示页
 > [!NOTE]
 > 对于计算 CSS 属性，请使用" [计算"](../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) 选项卡。
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="&quot;辅助功能&quot;选项卡的&quot;计算属性&quot;部分。" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
-   " **辅助功能"选项卡** 的" **计算属性"** 部分
-:::image-end:::
+:::image type="content" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="&quot;辅助功能&quot;选项卡的&quot;计算属性&quot;部分。" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -86,5 +76,5 @@ ARIA 属性确保辅助技术（如屏幕阅读器）具有为了正确表示页
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

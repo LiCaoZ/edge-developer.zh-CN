@@ -1,17 +1,11 @@
 ---
 title: 打开开发工具
-description: 在 DevTools 中打开Microsoft Edge所有方法。
+description: 在 DevTools 中可以打开Microsoft Edge所有方法。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/01/2021
-ms.openlocfilehash: 1865a4725280314bfb839397a3ef1128aee0bb6a
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325555"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,23 +24,23 @@ ms.locfileid: "12325555"
 
 有几种方法可以打开 Microsoft Edge Tools，以快速访问 DevTools UI 的不同部分：
 
-*   使用 Microsoft Edge UI。
-    *  在Microsoft Edge"中，**选择"设置""更多 () >"** `...` **工具**  >   **开发人员工具"。**
+*  使用 Microsoft Edge UI。
+    *  在Microsoft Edge工具开发人员设置**中，** 选择 () > `...` **工具** >  **"和"更多工具"**。
 
-*   使用键盘。
-    *   按 `F12` 或 `Control` + `Shift` + `I` (Windows、Linux) 或 `Command` + `Option` + `I` (macOS) 。
+*  使用键盘。
+    *  按`F12`或 (Windows`Shift``I`+`Control`+、Linux) 或 (`I` `Command`+`Option`+macOS) 。
 
 另请参阅 [键盘快捷方式](../shortcuts/index.md)。
 
-:::image type="content" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="从主菜单打开 Microsoft Edge DevTools。" lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
+:::image type="content" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="从主菜单中打开Microsoft Edge工具。" lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## <a name="open-the-elements-panel-to-inspect-the-dom-or-css"></a>打开"元素"面板以检查 DOM 或 CSS
 
-在浏览器中查看呈现的网页时，若要检查文档对象模型 [ (](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) DOM) 节点的样式或属性，请执行下列任一操作：
-*   右键单击呈现的网页中的 元素，然后选择"检查 **"。**
-*   按`Control`+`Shift`+`C`（Windows、Linux）或 `Command`+`Option`+`C` （macOS）。  请参阅 [键盘快捷方式](../shortcuts/index.md)。
+在浏览器中查看呈现的网页时，若要检查文档对象 [模型 (](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) DOM) 节点的样式或属性，请执行下列任一操作：
+*  右键单击呈现的网页中的 元素，然后选择"检查 **"**。
+*  按`Control`+`Shift`+`C`（Windows、Linux）或 `Command`+`Option`+`C` （macOS）。  请参阅 [键盘快捷方式](../shortcuts/index.md)。
 
 请参阅 [适用于初学者的 DevTools：CSS 入门](../beginners/css.md)。
 
@@ -56,19 +50,19 @@ ms.locfileid: "12325555"
 <!-- ====================================================================== -->
 ## <a name="open-the-console-panel"></a>打开控制台面板
 
-若要打开控制台[面板](../console/index.md)以查看记录的消息或运行 JavaScript，请按 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS) 。  请参阅 [键盘快捷方式](../shortcuts/index.md)。
+若要打开控制台[面板](../console/index.md)以查看记录的消息或运行 JavaScript `Control`++`Shift``J` ，请按 (Windows、Linux) 或`J` `Command`+`Option`+ (macOS) 。  请参阅 [键盘快捷方式](../shortcuts/index.md)。
 
 
 <!-- ====================================================================== -->
 ## <a name="open-the-previous-panel"></a>打开上一个面板
 
-若要跳转到之前打开的面板，请按 `Control` + `Shift` + `I` (Windows、Linux) 或 (`Command` + `Option` + `I` macOS) 。  请参阅 [键盘快捷方式](../shortcuts/index.md)。
+若要跳转到之前打开的面板`Control`++`Shift``I`，请按 (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  请参阅 [键盘快捷方式](../shortcuts/index.md)。
 
 
 <!-- ====================================================================== -->
 ## <a name="auto-open-devtools-on-every-new-tab"></a>自动打开每个新选项卡上的 DevTools
 
-若要自动打开每个新选项卡上的 DevTools，Microsoft Edge命令行中打开"开发工具"并传递 `--auto-open-devtools-for-tabs` 标志。
+若要自动打开每个新选项卡上的 DevTools，请从Microsoft Edge打开"开发工具"并传递 `--auto-open-devtools-for-tabs` 标志。
 
 ### [<a name="cmd-windows"></a>CMD (Windows) ](#tab/cmd-Windows/)
 
@@ -100,14 +94,16 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 <!-- ====================================================================== -->
 ## <a name="toggle-the-f12-keyboard-shortcut-on-or-off"></a>打开或关闭 F12 键盘快捷方式
 
-若要更改 `F12` 打开 DevTools 的键盘快捷方式设置，请完成以下操作：
+若要更改打开 `F12` DevTools 的键盘快捷方式设置，请执行以下操作：
 
-1.  转到 `edge://settings/system` 。
-1.  In `Developer Tools` ， choose Open the **DevTools when the F12 key is pressed** to toggle the setting to off or on. 将设置切换为关闭以停止 `F12` 键盘快捷方式打开 DevTools。
-1.  将开关设置为关闭后，验证 `F12` 是否不再打开 DevTools。
+1. `edge://settings/system`转到 。
 
-    > [!NOTE]
-    > 在关闭"按 F12 键时打开 **DevTools"** 后，再次打开"DevTools"。  例如，按 `Ctrl` + `Shift` + `I` 或右键单击网页，然后选择"检查 **"。**
+1. 在 `Developer Tools`中 **，单击按 F12 键时打开 DevTools** 以将设置切换为关闭或打开。 将设置切换为关闭以停止 `F12` 键盘快捷方式打开 DevTools。
+
+1. 将开关设置为关闭后，验证 `F12` 是否不再打开 DevTools。
+
+   > [!NOTE]
+   > 在关闭" **按 F12 键时打开 DevTools**"后，再次打开"DevTools"。  例如，按 或`Ctrl`++`Shift``I`右键单击网页，然后选择"检查 **"**。
 
 
 <!-- ====================================================================== -->

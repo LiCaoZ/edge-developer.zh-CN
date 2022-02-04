@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
-ms.openlocfilehash: bc0ff63f0e50b9e49f7eafb14c003b9bff232c36
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325541"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,13 +22,15 @@ ms.locfileid: "12325541"
    limitations under the License.  -->
 # <a name="network-features-reference"></a>网络功能参考
 
-在此 Microsoft Edge 开发工具网络分析功能的全面参考中，探索分析页面加载方式的新方法。
+本文概述了网络工具的各种功能，这些功能用于分析网页**** 的网络和检查网络活动。
+
+另 [请参阅检查网络活动](index.md)，这是网络工具的分步 **教程** 演练。
 
 
 <!-- ====================================================================== -->
 ## <a name="record-network-requests"></a>记录网络请求
 
-默认情况下，只要 DevTools 是打开的，DevTools 就将记录网络工具中所有的网络请求。 ****
+默认情况下，只要 DevTools 是打开的，DevTools 就将记录网络工具中所有的网络请求。****
 
 :::image type="content" source="../media/network-network-panel.msft.png" alt-text="网络面板。" lightbox="../media/network-network-panel.msft.png":::
 
@@ -42,51 +38,57 @@ ms.locfileid: "12325541"
 
 若要停止录制请求：
 
-1. 在" **网络"** 工具上，单击"停止 **记录网络** 日志 ![ ("停止录制网络日志 ](../media/record-on-icon.msft.png) "。) 。  它变为灰色，表示开发人员工具不再记录请求。
+1. 在" **网络"** 工具上，单击"停止 **记录** 网络日志 (!["停止录制网络](../media/record-on-icon.msft.png) 日志"。) 。  它变为灰色，表示开发人员工具不再记录请求。
 
-1. 在 (Windows焦点时) Linux (`Control` + `E` `Command` + `E` 或) macOS**** 命令。
+1. 在`Control``E`****+ (Windows焦点时 (Windows Linux `Command`+`E`) 或 (macOS) 。。
 
 ### <a name="clear-requests"></a>清除请求
 
-单击"**清除** (清除) "工具上的"清除"按钮以清除" ![ ](../media/clear-requests-icon.msft.png) 请求"表中的所有请求。 ****
+单击" **清除** (![清除](../media/clear-requests-icon.msft.png)) **"工具** 上的"清除"按钮以清除"请求"表中的所有请求。
 
 :::image type="content" source="../media/network-network-clear-button.msft.png" alt-text="&quot;清除&quot;按钮。" lightbox="../media/network-network-clear-button.msft.png":::
 
 ### <a name="save-requests-across-page-loads"></a>跨页面加载保存请求
 
-若要跨页面加载保存请求，请在“**网络**”工具上启用“**保留日志**”复选框。  开发人员工具将保存所有请求，直到禁用“**保留日志**”。
-
-" **保留日志"** 复选框：
+若要跨页面加载保存请求，请在 **"** 网络"工具上选中" **保留日志"** 复选框：
 
 :::image type="content" source="../media/network-network-preserve-log.msft.png" alt-text="&quot;保留日志&quot;复选框。" lightbox="../media/network-network-preserve-log.msft.png":::
 
+开发人员工具将保存所有请求，直到禁用“**保留日志**”。
+
 ### <a name="capture-screenshots-during-page-load"></a>在页面加载期间捕获屏幕截图
 
-捕获屏幕截图以分析在等待页面加载时为用户显示的内容。
+你可以捕获屏幕截图，以分析在等待页面加载时为用户显示的内容。
 
-若要启用屏幕截图，请单击"**网络设置"，****在"网络**"工具上，打开"**捕获屏幕截图"** 复选框。
+若要启用屏幕截图：
 
-启用 **捕获屏幕截图**：
+1. 在 DevTools 中，打开 **网络** 工具。
+
+1. 在"网络" **工具的右上角** ，单击"网络设置 **" (齿轮**) 图标。  将出现一行复选框。
+
+1. 选中" **捕获屏幕截图"** 复选框：
 
 :::image type="content" source="../media/network-network-screenshot-box.msft.png" alt-text="启用&quot;捕获屏幕截图&quot;。" lightbox="../media/network-network-screenshot-box.msft.png":::
 
-若要捕获屏幕截图，在网络工具 **聚焦时刷新** 页面。
+若要捕获屏幕截图：
 
-捕获屏幕截图后，可以按照以下方式与其交互：
+1. 当 **网络工具** 具有焦点时，按 `Ctrl`+`F5` 刷新页面。  屏幕截图已捕获，缩略图显示在复选框行下方。
 
-*   将鼠标悬停在屏幕截图上以显示截图的位置。  “**概述**”格上将显示一条黄线。
+   你可以与屏幕截图进行交互，如下所示。
 
-*   单击屏幕的缩略图以筛选出屏幕截图捕获后发生的任何请求。
+1. 将鼠标悬停在屏幕截图上可显示捕获该屏幕截图的点。  在"概述"图表窗格中显示 **一条黄色** 竖线。
 
-*   双击缩略图可将其放大。
+   :::image type="content" source="../media/network-network-screenshot-hover.msft.png" alt-text="将鼠标悬停在屏幕截图上。" lightbox="../media/network-network-screenshot-hover.msft.png":::
 
-将鼠标悬停在屏幕截图上：
+1. 单击屏幕截图的缩略图以筛选出捕获屏幕截图后发生的任何请求。
 
-:::image type="content" source="../media/network-network-screenshot-hover.msft.png" alt-text="将鼠标悬停在屏幕截图上。" lightbox="../media/network-network-screenshot-hover.msft.png":::
+1. 双击屏幕截图缩略图以放大和查看屏幕截图。
+ 
+1. 按 `Esc` 以关闭屏幕截图查看器。
 
 <!--  ### Replay XHR request  -->
 
-<!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu (right-click), and click **Replay XHR**.  -->
+<!--  To replay an XHR request, right-click the request in the Requests table, and then click **Replay XHR**.  -->
 
 <!--
 :::image type="content" source="../media/network-replay-xhr.msft.png" alt-text="Click Replay XHR." lightbox="../media/network-replay-xhr.msft.png":::
@@ -109,23 +111,24 @@ ms.locfileid: "12325541"
 如果要在其他 DevTools 面板中操作时禁用缓存，请使用网络条件箱：
 
 1. 打开“**网络条件**”抽屉。
+
 1. 选中或清除" **禁用缓存"** 复选框。
 
 <!--todo: add network condition section when available -->
 
 ### <a name="manually-clear-the-browser-cache"></a>手动清除浏览器缓存
 
-若要随时手动清除浏览器缓存，请打开上下文菜单 (右键单击") "表中的任意位置，然后单击"清除浏览器缓存 **"。**
+若要随时手动清除浏览器缓存，请右键单击"请求"表中的任意位置，然后单击" **清除浏览器缓存"**。
 
-选择 **"清除浏览器缓存"：**
+选择 **"清除浏览器缓存"**：
 
 :::image type="content" source="../media/network-network-clear-browser-cache.msft.png" alt-text="选择&quot;清除浏览器缓存&quot;。" lightbox="../media/network-network-clear-browser-cache.msft.png":::
 
 ### <a name="emulate-offline"></a>模拟脱机
 
-一种称为“[渐进式 Web 应用](../progressive-web-apps/index.md)”的新 web 应用程序，，可在**服务人员**的帮助下脱机运行。<!-- [service workers](/web/fundamentals/getting-started/primers/service-workers) --> 在构建这种类型的应用程序时，快速模拟没有数据连接的设备可能会很有用。
+一种称为“[渐进式 Web 应用](../progressive-web-apps/index.md)”的新 web 应用程序，，可在**服务人员**的帮助下脱机运行。<!-- [service workers](/web/fundamentals/getting-started/primers/service-workers) --> 你可能会发现，在生成此类应用时，快速模拟没有数据连接的设备会很有用。
 
-若要模拟脱机网络体验，请选择"没有**** 限制"下拉菜单>**预设**  >  **"。**
+若要模拟脱机网络体验，请选择"不**** 限制"下拉菜单> **PresetsOffline** > **"** 。
 
 " **脱机** "下拉菜单：
 
@@ -139,55 +142,56 @@ ms.locfileid: "12325541"
 
 :::image type="content" source="../media/network-network-throttling-menu.msft.png" alt-text="&quot;限制&quot;下拉菜单。" lightbox="../media/network-network-throttling-menu.msft.png":::
 
-你可以从不同的预设中进行选择，如慢速 3G 或快速 3G。  若要添加自己的自定义预设，请打开"限制"菜单，然后选择"**自定义添加**  >  **"。**
+你可以从不同的预设中进行选择，如慢速 3G 或快速 3G。  若要添加你自己的自定义预设，请打开限制菜单，然后选择 **CustomAdd****** > 。
 
 开发人员工具会在“**网络**”工具旁边显示一个警告图标，提醒已启用限制。
 
 #### <a name="emulate-slow-network-connections-from-the-network-conditions-drawer"></a>从“网络条件”抽屉模拟慢速网络连接
 
-如果要在其他开发工具面板中工作时限制网络连接，请使用“网络条件”抽屉。
+如果要在其他 DevTools 面板中操作时限制网络连接，请使用网络 **条件** 箱工具：
 
-1.  打开“**网络条件**”抽屉。
-1.  从"限制"菜单中 **选择连接** 速度。
+1. 打开“**网络条件**”抽屉。
+
+1. 从"限制"菜单中 **选择连接** 速度。
 
 <!--todo: add network condition section when available -->
 
 ### <a name="manually-clear-browser-cookies"></a>手动清除浏览器 Cookie
 
-若要随时手动清除浏览器 Cookie，请将鼠标悬停在"请求"表中的任意位置，打开上下文菜单 (右键单击") "，然后选择"清除浏览器**Cookie"。**
+若要随时手动清除浏览器 Cookie，请右键单击"请求"表中的任意位置，然后选择" **清除浏览器 Cookie"**。
 
 :::image type="content" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="选择&quot;清除浏览器 Cookie&quot;。" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
 
 ### <a name="override-the-user-agent"></a>替代用户代理
 
-要手动替代用户代理，请使用以下步骤。
+若要手动覆盖用户代理：
 
-1.  打开“**网络条件**”抽屉。
+1. 打开" **网络条件"** "箱"工具。
 
-1.  清除" **自动选择"** 复选框。
+1. 清除" **自动选择"** 复选框。
 
-1.  从菜单中选择用户代理选项，或在文本框中输入自定义用户代理。
+1. 从菜单中选择用户代理选项，或在文本框中输入自定义用户代理。
 
 
 <!-- ====================================================================== -->
 ## <a name="set-user-agent-client-hints"></a>设置用户代理客户端提示
 
-如果你的网站使用用户 [代理客户端提示，](../../web-platform/user-agent-guidance.md)请使用网络 **条件** 面板提供不同的用户代理客户端提示。
+如果你的网站使用用户[代理客户端提示，](../../web-platform/user-agent-guidance.md)**请使用网络条件**面板提供不同的用户代理客户端提示。
 
-1. 右键单击网页，然后选择"检查 **"。**
+1. 右键单击该网页，然后选择"检查 **"**。
 
-1. 选择 **"**  >  **网络网络条件"。**
+1. 选择 **"网络** > **网络条件"**。
 
-1. 在"用户代理"面板中，清除 **"使用浏览器默认"** 复选框，然后选择"**用户代理客户端提示"。**
+1. 在"用户代理"面板中，清除" **使用浏览器默认"** 复选框，然后选择" **用户代理客户端提示"**。
 
-    :::image type="content" source="images/network-conditions-user-agent-client-hints.msft.png" alt-text="设置用户代理客户端提示。" lightbox="images/network-conditions-user-agent-client-hints.msft.png":::
+   :::image type="content" source="images/network-conditions-user-agent-client-hints.msft.png" alt-text="设置用户代理客户端提示。" lightbox="images/network-conditions-user-agent-client-hints.msft.png":::
 
-1. 接受"自定义 **..."** 默认值，或者从下拉列表中选择预定义的浏览器和设备。
+1. 接受 Custom **...** 的默认值，或者从下拉列表中选择预定义的浏览器和设备。
 
 1. 对于任一选项，按如下方式设置用户代理客户端提示。
-    * **品牌**和**版本**，如*Edge*和*92。*  单击 **" + 添加品牌** "以添加多个品牌和版本对。
-    * **完整浏览器版本**，例如*92.0.1111.0。*
-    * **平台**和**版本**，如*Windows*和*10.0。*
+    * **品牌** 和 **版本** ，如 *Edge* 和 *92*。  单击 **" + 添加品牌** "以添加多个品牌和版本对。
+    * **完整浏览器版本** ，例如 *92.0.1111.0*。
+    * **平台**和**版本**，如 *Windows* *和 10.0*。
     * **体系结构** ，如 *x86*。
     * **设备型号** ，例如 *，一些设备型号*。
 
@@ -196,9 +200,9 @@ ms.locfileid: "12325541"
 
 1. 选择**更新**。
 
-1. 若要验证更改，请单击" **控制台** "并键入 `navigator.userAgentData` 。 根据需要展开结果以查看用户代理数据更改。
+1. 若要验证更改，请单击" **控制台** "并键入 `navigator.userAgentData`。 根据需要展开结果以查看用户代理数据更改。
 
-还可以在模拟移动设备和设备仿真中设置 ([客户端) 。 ](../device-mode/index.md)
+还可以在模拟移动设备和设备仿真中设置 ([客户端) ](../device-mode/index.md)。
 
 
 <!-- ====================================================================== -->
@@ -210,8 +214,8 @@ ms.locfileid: "12325541"
 
 使用“**筛选器**”本框按属性（如请求的域或大小）筛选请求。
 
-如果未显示文本框，则“**筛选器**”窗格可能已隐藏。
-有关详细信息，请参阅隐藏 [筛选器窗格](#hide-the-filters-pane)。
+如果未显示文本框，则 **"筛选器"** 窗格可能处于隐藏状态。
+有关详细信息，请参阅 [隐藏筛选器窗格](#hide-the-filters-pane)。
 
 " **筛选器** "文本框：
 
@@ -229,8 +233,8 @@ ms.locfileid: "12325541"
 | `larger-than` | 以字节为单位显示大于指定大小的资源。  将值设置为 `1000` 相当于将值设置为 `1k`。 |
 | `method` | 显示通过指定的 HTTP 方法类型检索的资源。  开发工具用找到的所有 HTTP 方法填充下拉列表。 |
 | `mime-type` | 显示指定 MIME 类型的资源。  开发工具用找到的所有 MIME 类型填充下拉列表。 |
-| `mixed-content` | 显示所有混合内容 () `mixed-content:all` 或只显示当前 () 。 `mixed-content:displayed` |
-| `scheme` | 显示通过未受保护的 HTTP () 或受保护的 `scheme:http` HTTPS `scheme:https` () 。 |
+| `mixed-content` | 显示所有混合内容 (`mixed-content:all`) 或只显示当前 () `mixed-content:displayed` 。 |
+| `scheme` | 显示通过未保护的 HTTP () `scheme:http` 或受保护的 HTTPS `scheme:https` () 。 |
 | `set-cookie-domain` | 显示具有与指定值匹配的 `Domain` 属性的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 域填充“自动完成”。 |
 | `set-cookie-name` | 显示具有名称与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 名称填充“自动完成”。 |
 | `set-cookie-value` | 显示具有值与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 值填充“自动完成”。 |
@@ -246,15 +250,15 @@ ms.locfileid: "12325541"
 *  **Media**
 *  **字体**
 *  **Doc**
-*  **WS** (WebSocket) 
+*  **WS** - WebSocket。
 *  **Manifest**
-*  **其他** (此处未列出的其他任何类型) 。
+*  **Other** - 此处未列出的其他任何类型。
 
 如果未显示按钮，则" **筛选器"** 窗格可能处于隐藏状态。  请参阅 [隐藏筛选器窗格](#hide-the-filters-pane)。
 
-若要同时启用多类型筛选器，请长按 `Control` (Windows、Linux) 或 (`Command` macOS) ，然后单击筛选器。
+若要同时启用多类型`Control`筛选器，请长按 (Windows、Linux) `Command` 或 (macOS) 然后单击筛选器。
 
-使用类型筛选器显示 JS、CSS 和文档资源：
+使用 **类型筛选器** 显示 JS、CSS 和文档资源：
 
 :::image type="content" source="../media/network-network-type-filters.msft.png" alt-text="使用类型筛选器显示 JS、CSS 和文档资源。" lightbox="../media/network-network-type-filters.msft.png":::
 
@@ -270,7 +274,7 @@ ms.locfileid: "12325541"
 
 [数据 URL](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) 是嵌入到其他文档中的小文件。  任何显示在“请求”表中以 `data:` 开头的请求都是数据 URL。
 
-若要隐藏请求，请关闭“**隐藏数据 URL**”复选框。
+若要隐藏请求，请关闭"隐藏 **数据 URL"** 复选框：
 
 :::image type="content" source="../media/network-network-hide-data-urls.msft.png" alt-text="&quot;隐藏数据 URL&quot;复选框。" lightbox="../media/network-network-hide-data-urls.msft.png":::
 
@@ -286,18 +290,20 @@ ms.locfileid: "12325541"
 
 ### <a name="sort-by-activity-phase"></a>按活动阶段排序
 
-若要更改"瀑布"对请求的排序方式，请将鼠标悬停在"请求"表的标题上，打开上下文菜单 (右键单击") "，将鼠标**** 悬停在"瀑布"上，然后选择以下选项之一：
+若要更改"瀑布"对请求的排序方式，请进行以下更改：
 
-*  **开始时间**。  启动的首个请求位于顶部。
+* 右键单击"请求"表的标题，将鼠标悬停在 **"瀑布**"上，然后选择以下选项之一：
 
-*  **响应时间**。  开始下载的首个请求位于顶部。
-
-*  **结束时间**。  完成的首个请求在顶部。
-
-* **总持续时间**。  具有最短连接设置和请求或响应的请求位于顶部。
-
-*  **延迟**。  等待响应时间最短的请求位于顶部。
-
+   * **开始时间** - 启动的第一个请求放置在顶部。
+   
+   * **响应时间** - 开始下载的第一个请求位于顶部。
+   
+   * **结束时间** - 完成的第一个请求放置在顶部。
+   
+   * **Total Duration** - 连接设置最短的请求和请求或响应位于顶部。
+   
+   * **延迟** - 等待响应最短时间的请求位于顶部。
+      
 这些描述假设每个选项按最短到最长进行排列。  单击"瀑布" **列** 的标题以颠倒顺序。
 
 下面显示了按总持续时间对瀑布进行排序。  每个栏的较浅部分是花费等待的时间，较暗的部分是下载字节所花的时间：
@@ -315,8 +321,6 @@ ms.locfileid: "12325541"
 使用 **Requests** 表可显示打开 DevTools 时所提出所有请求的日志。  若要显示有关每个项目的详细信息，请单击或将鼠标悬停在请求上。
 
 :::image type="content" source="../media/network-network-requests-table.msft.png" alt-text="请求表。" lightbox="../media/network-network-requests-table.msft.png":::
-   “请求”表
-:::image-end:::
 
 默认情况下，"请求"表显示以下列：
 
@@ -340,7 +344,7 @@ ms.locfileid: "12325541"
 
 #### <a name="add-custom-columns"></a>添加自定义列
 
-若要向"请求"表添加自定义列，请右键单击"请求"表的标题，然后选择"响应头****  >  **管理标题列"。**
+若要向"请求"表添加自定义列，请右键单击"请求"表的标题，然后选择"响应标头 **""** > **管理标题列"**。
 
 :::image type="content" source="../media/network-network-requests-add-custom.msft.png" alt-text="向 Requests 表添加自定义列。" lightbox="../media/network-network-requests-add-custom.msft.png":::
 
@@ -348,7 +352,7 @@ ms.locfileid: "12325541"
 
 使用瀑布显示请求的计时关系。  默认情况下，瀑布是按请求的开始时间进行组织的。  因此，最左边的请求比最右边的请求更早开始。
 
-To see the different ways that you can sort the Waterfall， go to [Sort by activity phase](#sort-by-activity-phase).
+若要了解对瀑布进行排序的不同方法，请转到按 [活动阶段排序](#sort-by-activity-phase)。
 
 "请求"窗格的"瀑布 **"** 列：
 
@@ -358,36 +362,34 @@ To see the different ways that you can sort the Waterfall， go to [Sort by acti
 
 <!--To view the frames of a WebSocket connection:
 
-1.  Click the URL of the WebSocket connection, under the **Name** column of the Requests table.
-1.  Click the **Frames** panel.  The table shows the last 100 frames.
+1. Click the URL of the WebSocket connection, under the **Name** column of the Requests table.
+1. Click the **Frames** panel.  The table shows the last 100 frames.
 
 To refresh the table, re-select the name of the WebSocket connection under the **Name** column of the Requests table.  -->
 
 <!--
 :::image type="content" source="../media/network-frames.msft.png" alt-text="The Frames panel." lightbox="../media/network-frames.msft.png":::
-   The **Frames** panel
-:::image-end:::
 -->
 
 <!--The table contains the following three columns.
 
-*   **Data**.  The message payload.  If the message is plain text, it is displayed here.  For binary opcodes, this column displays the name and code of the opcode.  The following opcodes are supported: Continuation Frame, Binary Frame, Connection Close Frame, Ping Frame, and Pong Frame.
-*   **Length**.  The length of the message payload, in bytes.
-*   **Time**.  The time when the message was received or sent.  -->
+*  **Data**.  The message payload.  If the message is plain text, it is displayed here.  For binary opcodes, this column displays the name and code of the opcode.  The following opcodes are supported: Continuation Frame, Binary Frame, Connection Close Frame, Ping Frame, and Pong Frame.
+*  **Length**.  The length of the message payload, in bytes.
+*  **Time**.  The time when the message was received or sent.  -->
 
 <!--Messages are color-coded according to each type.
 
-*   Outgoing text messages are light-green.
-*   Incoming text messages are white.
-*   WebSocket opcodes are light-yellow.
-*   Errors are light-red.  -->
+*  Outgoing text messages are light-green.
+*  Incoming text messages are white.
+*  WebSocket opcodes are light-yellow.
+*  Errors are light-red.  -->
 
 ### <a name="display-a-preview-of-a-response-body"></a>显示响应正文的预览
 
 若要显示响应正文的预览，请使用以下步骤。
 
-1.  在"请求"表的" **名称** "列下，单击请求的 URL。
-1.  选择" **预览"** 选项卡。
+1. 在"请求"表的" **名称** "列下，单击请求的 URL。
+1. 选择" **预览"** 选项卡。
 
 “预览”选项卡在显示图像时最有用。
 
@@ -397,8 +399,8 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 要显示请求的响应主体，请使用以下步骤。
 
-1.  在"请求"表的" **名称** "列下，单击请求的 URL。
-1.  单击" **响应"** 选项卡。
+1. 在"请求"表的" **名称** "列下，单击请求的 URL。
+1. 单击" **响应"** 选项卡。
 
 :::image type="content" source="../media/network-network-resources-response.msft.png" alt-text="响应面板。" lightbox="../media/network-network-resources-response.msft.png":::
 
@@ -406,8 +408,9 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 要显示有关请求的 HTTP 标头数据，请使用以下步骤。
 
-1.  在"请求"表的" **名称** "列下，单击请求的 URL。
-1.  单击" **标题"** 选项卡。
+1. 在"请求"表的" **名称** "列下，单击请求的 URL。
+
+1. 单击" **标题"** 选项卡。
 
 :::image type="content" source="../media/network-resources-headers.msft.png" alt-text="&quot;标题&quot;面板。" lightbox="../media/network-resources-headers.msft.png":::
 
@@ -415,15 +418,17 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 默认情况下，“**标头**”面板按字母顺序显示标头名称。  若要按接收的顺序显示 HTTP 标头名称，请使用以下步骤。
 
-1.  打开感兴趣的请求的“**标头**”面板。  有关详细信息，请参阅显示 [HTTP 标头](#display-http-headers)。
-1.  单击 **"请求**头或响应头" **部分旁边的"** 查看 **源** "。
+1. 打开感兴趣的请求的“**标头**”面板。  有关详细信息，请参阅显示 [HTTP 标头](#display-http-headers)。
+
+1. 单击 **"请求**头或响应头" **部分旁边的"** 查看 **源** "。
 
 ### <a name="display-query-string-parameters"></a>显示查询字符串参数
 
 若要以可读格式显示 URL 的查询字符串参数，请使用以下步骤。
 
-1.  打开感兴趣的请求的“**标头**”面板。  有关详细信息，请参阅显示 [HTTP 标头](#display-http-headers)。
-1.  导航到“**查询字符串参数**”部分。
+1. 打开感兴趣的请求的“**标头**”面板。  有关详细信息，请参阅显示 [HTTP 标头](#display-http-headers)。
+
+1. 导航到“**查询字符串参数**”部分。
 
 :::image type="content" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="&quot;查询字符串参数&quot;部分。" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
 
@@ -431,22 +436,24 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 若要显示请求的查询字符串参数源，请使用以下步骤。
 
-1.  导航到“**查询字符串参数**”部分。  有关详细信息，请参阅显示 [查询字符串参数](#display-query-string-parameters)。
-1.  选择 **"视图源"。**
+1. 导航到“**查询字符串参数**”部分。  有关详细信息，请参阅显示 [查询字符串参数](#display-query-string-parameters)。
+
+1. 选择 **视图源**。
 
 #### <a name="display-url-encoded-query-string-parameters"></a>显示 URL 编码的查询字符串参数
 
 若要以可读格式显示查询字符串参数，但保留编码，请使用以下步骤。
 
-1.  导航到“**查询字符串参数**”部分。  有关详细信息，请参阅显示 [查询字符串参数](#display-query-string-parameters)。
-1.  单击 **"编码的视图 URL"。**
+1. 导航到“**查询字符串参数**”部分。  有关详细信息，请参阅显示 [查询字符串参数](#display-query-string-parameters)。
+
+1. 单击 **"编码的视图 URL"**。
 
 ### <a name="display-cookies"></a>显示 Cookie
 
 若要显示请求的 HTTP 标头中发送的 Cookie，请使用以下步骤。
 
-1.  在"请求"表的" **名称** "列下，单击请求的 URL。
-1.  单击 **"Cookie"** 选项卡。
+1. 在"请求"表的" **名称** "列下，单击请求的 URL。
+1. 单击 **"Cookie"** 选项卡。
 
 <!--For more information about each of the columns, see [Fields](manage-data/cookies#fields).  TODO: add link when section is available -->
 
@@ -456,12 +463,12 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 若要显示请求的计时细分，请使用以下步骤。
 
-1.  在"请求"表的" **名称** "列下，单击请求的 URL。
-1.  单击" **计时"** 选项卡。
+1. 在"请求"表的" **名称** "列下，单击请求的 URL。
+1. 单击" **计时"** 选项卡。
 
 若要更快地访问数据，请参阅预览 [计时细目](#preview-a-timing-breakdown)。
 
-有关"计时"面板中可能显示的每个阶段详细信息，请参阅"计时****[细分阶段"所介绍](#timing-breakdown-phases-explained)。
+有关"计时"面板中可能显示的每个阶段详细信息，请参阅计时[细分阶段说明](#timing-breakdown-phases-explained)。****
 
 " **计时"** 面板：
 
@@ -469,7 +476,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 有关各阶段的更多信息。
 
-有关访问屏幕详细信息，请参阅 [显示计时细分](#display-the-timing-breakdown-of-a-request)。
+有关访问屏幕的信息，请参阅显示 [计时细分](#display-the-timing-breakdown-of-a-request)。
 
 #### <a name="preview-a-timing-breakdown"></a>预览计时细分
 
@@ -479,7 +486,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 预览请求的时间细分：
 
-:::image type="content" source="../media/network-network-resources-waterfall-hover.msft.png" alt-text=">预览请求的时间细分。" lightbox="../media/network-network-resources-waterfall-hover.msft.png":::
+:::image type="content" source="../media/network-network-resources-waterfall-hover.msft.png" alt-text="预览请求的时间细分。" lightbox="../media/network-network-resources-waterfall-hover.msft.png":::
 
 #### <a name="timing-breakdown-phases-explained"></a>计时细分阶段说明
 
@@ -489,21 +496,32 @@ To refresh the table, re-select the name of the WebSocket connection under the *
   - 优先级较高的请求。
   - 已为此源打开了六个 TCP 连接，这是限制。 仅适用于 HTTP/1.0 和 HTTP/1.1。
   - 浏览器正在磁盘缓存中短暂分配空间。
-- **已停止**。 由于 **Queueing**中所述的任何原因，请求可能会停止。
+
+- **已停止**。 由于 **Queueing** 中所述的任何原因，请求可能会停止。
+
 - **DNS 查找**。 浏览器正在解析请求的 IP 地址。
-- **初始连接**。 浏览器正在建立连接，包括 TCP 握手，然后重试和协商安全套接字层 (SSL) 。
+
+- **初始连接**。 浏览器正在建立连接，包括 TCP 握手，然后重试和协商 SSL (层) 。
+
 - **代理协商**。 浏览器正在与[代理服务器](https://en.wikipedia.org/wiki/Proxy_server)协商请求。
-- **请求已发送**。 正在发送请求。
-- **ServiceWorker Preparation**。 浏览器正在启动服务工作线程。
+
+- **已发送请求**。 正在发送请求。
+
+- **ServiceWorker 准备**。 浏览器正在启动服务工作线程。
+
 - **对 ServiceWorker 的请求**。 请求正在发送到服务工作进程。
-- **等待 (TTFB) **。 浏览器正在等待响应的首个字节。 TTFB 代表 _"第一个字节的时间"。_ 此计时包括一次往返延迟和服务器准备响应所用的时间。
+
+- **等待 (TTFB) **。 浏览器正在等待响应的首个字节。 TTFB 代表 _"第一个字节的时间"_。 此计时包括一次往返延迟和服务器准备响应所用的时间。
+
 - **内容下载**。 浏览器正在接收响应。
+
 - **接收推送**。 浏览器正在通过 HTTP/2 服务器推送接收此响应的数据。
+
 - **读取推送**。 浏览器正在读取之前收到的本地数据。
 
 ### <a name="display-initiators-and-dependencies"></a>显示发起程序和依赖项
 
-若要显示请求的发起程序和依赖项，请按住 `Shift` 并将鼠标悬停在“请求”表中的请求上。
+若要显示请求的发起方和依赖项，请按住并 `Shift` 悬停在 **"请求** "表中的请求上。
 
 DevTools 颜色： 
 *  发起人显示为绿色。
@@ -519,7 +537,7 @@ DevTools 颜色：
 
 开发人员工具在“**网络**”工具的多个位置显示 `DOMContentLoaded` 和 `load` 事件的计时。  `DOMContentLoaded` 事件颜色为蓝色，`load` 事件颜色为红色。
 
-网络工具 `DOMContentLoaded` 上的 和 `load` 事件的位置： ****
+网络工具 `DOMContentLoaded` 上的 和 `load` **事件的位置** ：
 
 :::image type="content" source="../media/network-network-requests-load-events.msft.png" alt-text="DOMContentLoaded 的位置，并加载网络面板上的事件。" lightbox="../media/network-network-requests-load-events.msft.png":::
 
@@ -528,7 +546,7 @@ DevTools 颜色：
 请求总数列在“**网络**”工具底部的“**摘要**”窗格中。
 
 > [!CAUTION]
-> 此数字仅跟踪自打开开发人员工具以来记录的请求。  如果在打开开发工具之前发生了其他请求，则不计算这些请求。
+> 此数字仅跟踪自打开开发人员工具以来记录的请求。  如果在打开 DevTools 之前发生了其他请求，则这些请求不计入在内。
 
 自打开开发工具以来的请求总数
 
@@ -539,13 +557,13 @@ DevTools 颜色：
 请求的总下载大小列在“**网络**”工具底部的“**摘要**”窗格中。
 
 > [!CAUTION]
-> 此数字仅跟踪自打开开发人员工具以来记录的请求。  如果在打开开发工具之前发生了其他请求，则不计算以前的请求。
+> 此数字仅跟踪自打开开发人员工具以来记录的请求。  如果在打开 DevTools 之前发生了其他请求，则以前的请求不会计算在内。
 
 请求的总下载大小：
 
 :::image type="content" source="../media/network-network-total-download-size.msft.png" alt-text="请求的总下载大小。" lightbox="../media/network-network-total-download-size.msft.png":::
 
-若要验证浏览器解压缩每个项目后的资源大小，请参阅 [显示资源的](#display-the-uncompressed-size-of-a-resource)未压缩大小。
+若要验证浏览器解压缩每个项目后的资源大小，请参阅显示资源的未压缩 [大小](#display-the-uncompressed-size-of-a-resource)。
 
 ### <a name="display-the-stack-trace-that-caused-a-request"></a>显示导致请求的堆栈跟踪
 
@@ -575,7 +593,7 @@ init();
 
 打开" **使用大型请求行** "复选框，然后检查"大小"列 **的底部** 值。
 
-下面是未压缩资源的示例。  通过网络发送的文件的压缩大小为 `jquery-3.3.1.min.js` `29.9 KB` ，未压缩的大小为 `84.9 KB` ：
+下面是未压缩资源的示例。  通过网络发送 `jquery-3.3.1.min.js` 的文件的 `29.9 KB`压缩大小为 ，未压缩的大小为 `84.9 KB`：
 
 :::image type="content" source="../media/network-network-requests-uncompressed-compare.msft.png" alt-text="未压缩资源的示例。" lightbox="../media/network-network-requests-uncompressed-compare.msft.png":::
 
@@ -587,12 +605,12 @@ init();
 
 若要将所有网络请求保存到 HAR 文件，
 
-1.  在"**请求"表中**，右键单击某个请求，然后选择"另存**为具有内容的 HAR"。**  开发工具将自打开开发工具以来发生的所有请求保存到 HAR 文件中。  无法筛选请求，并且无法保存单个请求。
+1. 在" **请求"表中** ，右键单击某个请求，然后选择"另 **存为 HAR with Content"**。  开发工具将自打开开发工具以来发生的所有请求保存到 HAR 文件中。  无法筛选请求，并且无法保存单个请求。
 
 保存 HAR 文件后，你可以将其导入回 DevTools 进行分析。  将 HAR 文件拖放到 **"请求"** 表中。
 <!--For more information, see also [HAR Analyzer](https://toolbox.alphabetapps.com/apps/har_analyzer)  Todo: add section link when content is available  -->
 
-选择 **"另存为 HAR 并包含内容"：**
+选择 **"另存为 HAR 并包含内容"**：
 
 :::image type="content" source="../media/network-network-requests-save-har-content.msft.png" alt-text="选择&quot;将内容另存为 HAR&quot;。" lightbox="../media/network-network-requests-save-har-content.msft.png":::
 
@@ -610,44 +628,44 @@ init();
 | **全部复制为 cURL** | 将所有请求复制为一系列 cURL 命令。 |
 | **全部复制为 HAR** | 将所有请求复制为 HAR 数据。 |
 
-选择 **"复制响应"：**
+选择 **复制响应**：
 
 :::image type="content" source="../media/network-network-requests-copy-response.msft.png" alt-text="选择&quot;复制响应&quot;。" lightbox="../media/network-network-requests-copy-response.msft.png":::
 
 ### <a name="copy-formatted-response-json-to-the-clipboard"></a>将格式化响应 JSON 复制到剪贴板
 
-选择一个网络请求，然后导航到 **"标题"** 窗格。  若要复制响应的 JSON 值，请导航**** 到"请求有效负载"，右键单击 JSON 响应内容，然后选择"**复制值"。**
+选择一个网络请求，然后导航到 **"标题"** 窗格。  若要复制响应的 JSON 值，请导航到"**** 请求有效负载"，右键单击 JSON 响应内容，然后选择"**复制值"**。
 
 :::image type="content" source="../media/network-header-copy-property-value.msft.png" alt-text="右键单击&quot;复制值&quot;命令。" lightbox="../media/network-header-copy-property-value.msft.png":::
 
 将格式化的响应 JSON 粘贴到Microsoft Visual Studio代码：
 
-:::image type="content" source="../media/network-header-paste-property-value.msft.png" alt-text="Microsoft Visual Studio JSON 格式响应的代码。" lightbox="../media/network-header-paste-property-value.msft.png":::
+:::image type="content" source="../media/network-header-paste-property-value.msft.png" alt-text="Microsoft Visual Studio格式响应 JSON 的代码。" lightbox="../media/network-header-paste-property-value.msft.png":::
 
 ### <a name="copy-property-values-from-network-requests-to-your-clipboard"></a>将属性值从网络请求复制到剪贴板
 
 若要将属性值从网络请求复制到剪贴板：
 
-1.  打开“**标头**”窗格。
+1. 打开“**标头**”窗格。
 
-1.  打开以下其中一个标头部分。
-    *   JSON (请求有效负载) 
-    *   窗体数据
-    *   查询字符串参数
-    *   请求标头
-    *   响应标头
+1. 打开以下其中一个标头部分。
+    *  JSON (请求有效负载) 
+    *  窗体数据
+    *  查询字符串参数
+    *  请求标头
+    *  响应标头
 
-1.  右键单击某个值，然后选择"**复制值"。**  现在可以将该值粘贴到任何编辑器中以查看它。
+1. 右键单击某个值，然后选择" **复制值"**。  现在可以将该值粘贴到任何编辑器中以查看它。
 
 
 <!-- ====================================================================== -->
 ## <a name="change-the-layout-of-the-network-panel"></a>更改“网络”面板的布局
 
-可以展开或折叠“**网络**”工具用户界面的各部分，以集中重要信息。
+你可以展开或折叠 **网络工具 UI** 的各个部分，以重点关注重要信息。
 
 ### <a name="hide-the-filters-pane"></a>隐藏“筛选器”窗格
 
-默认情况下，DevTools 显示" **筛选器"** 窗格。  若要隐藏" **筛选器"** 窗格， **请选择"** 筛选器 (![ 筛选器 ](../media/filter-icon.msft.png) "。) 。
+默认情况下，DevTools 显示" **筛选器"** 窗格。  若要隐藏" **筛选器"** 窗格 **，请选择"** 筛选器 (![筛选器](../media/filter-icon.msft.png) "。) 。
 
 :::image type="content" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="&quot;隐藏筛选器&quot;按钮。" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
 

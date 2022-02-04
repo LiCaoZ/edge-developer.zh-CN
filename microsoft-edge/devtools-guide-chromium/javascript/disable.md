@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 76aa0327a857d982b8b06b0253d4db22e3becb1f
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325282"
 ---
 <!-- Copyright Kayce Basques
 
@@ -32,32 +26,28 @@ ms.locfileid: "12325282"
 
 若要关闭 JavaScript：
 
-1.  [打开 DevTools](../open/index.md)。
+1. [打开 DevTools](../open/index.md)。
 
-1.  按 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
+1. 按 `Control``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
 
-    :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="命令菜单。" lightbox="../media/javascript-console-command.msft.png":::
-       **命令菜单**
-    :::image-end:::
+   :::image type="content" source="../media/javascript-console-command.msft.png" alt-text="命令菜单。" lightbox="../media/javascript-console-command.msft.png":::
 
-1.  开始键入 ， `javascript` 选择 **"禁用 JavaScript"，** 然后选择 `Enter` 运行命令。  JavaScript 现已禁用。
+1. 开始键入 ， `javascript`选择 **"禁用 JavaScript**"，然后按 `Enter` 以运行命令。  JavaScript 现已禁用。
 
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="在&quot;命令&quot;菜单中选择&quot;禁用 JavaScript&quot;。" lightbox="../media/javascript-console-command-javascript.msft.png":::
-       在 **命令菜单中选择** "禁用 **JavaScript"**
-    :::image-end:::
+   :::image type="content" source="../media/javascript-console-command-javascript.msft.png" alt-text="在命令菜单中选择&quot;禁用 JavaScript&quot;。" lightbox="../media/javascript-console-command-javascript.msft.png":::
 
     源旁边的黄色 **警告图标提醒** 你 JavaScript 已禁用。
 
-    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="&quot;源&quot;旁边的警告图标。" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
-       "源"旁边的警告 **图标**
-    :::image-end:::
+   :::image type="content" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="&quot;源&quot;旁边的警告图标。" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
 
 只要打开 DevTools，JavaScript 在选项卡中就保持禁用状态。
 
 若要在加载时查看页面是否依赖于 JavaScript，请刷新页面。
 
 若要重新启用 JavaScript：
-1. 按 `Control` + `Shift` + `P` (Windows、Linux) 或 (`Command` + `Shift` + `P` macOS) 打开命令**菜单**。
+
+1. 按 `Control``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
+
 1. 选择" **启用 JavaScript"** 命令。
 
 

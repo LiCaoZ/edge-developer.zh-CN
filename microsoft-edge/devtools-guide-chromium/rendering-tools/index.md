@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 72763c6fa69924dc741c9bd2eec98252556ab3a3
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325842"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -34,10 +28,13 @@ ms.locfileid: "12325842"
 
 ### <a name="summary"></a>摘要
 
-*   不要编写强制浏览器重新计算布局的 JavaScript。  分离读取和写入函数，并首先执行读取。
-*   请勿使 CSS 过于复杂。  使用更少的 CSS 并保持 CSS 选择器简单。
-*   尽可能避免布局。  选择完全不触发布局的 CSS。
-*   绘制所花的时间可能多于任何其他呈现活动。  注意画图瓶颈。
+*  不要编写强制浏览器重新计算布局的 JavaScript。  分离读取和写入函数，并首先执行读取。
+
+*  请勿使 CSS 过于复杂。  使用更少的 CSS 并保持 CSS 选择器简单。
+
+*  尽可能避免布局。  选择不触发布局的 CSS。
+
+*  绘制所花的时间可能多于任何其他呈现活动。  注意画图瓶颈。
 
 
 <!-- ====================================================================== -->
@@ -47,12 +44,12 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 
 ### <a name="javascript-tools"></a>JavaScript：工具
 
-在性能工具 **中录制** 并查找可疑的 `Evaluate Script` 长事件。  <!--If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->
+在性能工具 **中录制** 并查找可疑的长 `Evaluate Script` 事件。  <!--If you find any, you can enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->
 
 <!--todo: add Recording section when available  -->
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->
 
-如果你注意到 JavaScript 中 (出现大量 jank) 呈现中断，你可能需要将分析下一个级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面函数中的使用位置。  了解如何在"加快 [JavaScript 运行时速度"中创建 CPU 配置文件](./js-runtime.md)。
+如果你注意到在 JavaScript 中 (呈现) 时出现大量 jank 和中断，你可能需要将分析介绍到下一级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面函数中的使用位置。  了解如何在"加快 [JavaScript 运行时速度"中创建 CPU 配置文件](./js-runtime.md)。
 
 ### <a name="javascript-problems"></a>JavaScript：问题
 
@@ -61,9 +58,9 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 | 问题 | 示例 | 解决方案 |
 |:--- |:--- |:--- |
 | 影响响应或动画的昂贵输入处理程序。  | 触摸，视差滚动。  | 让浏览器处理触摸和滚动，或尽可能晚地绑定侦听器。  请参阅 [Paul 的运行时性能清单中的高成本输入处理程序](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/)。  |
-| 影响响应、动画、加载的时间过长的 JavaScript。  | 用户在页面加载后向右滚动 setTimeout / setInterval。  | 优化 JavaScript 运行时：使用 `requestAnimationFrame` ，在帧上分布 DOM 操作，使用 [Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers)。  |
-| 影响响应的长时间运行的 JavaScript。  | [DOMContentLoaded 事件](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers)因使用 JS 工作而停止。  | 将纯计算工作移动到 [Web 工作人员](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers)。  如果需要 DOM 访问权限，请使用 `requestAnimationFrame` 。  <!--See [Optimize JavaScript Execution](/web/fundamentals/performance/rendering/optimize-javascript-execution).  -->  |
-| 影响响应或动画的垃圾脚本。  | 垃圾收集可能在任意位置发生。  | 编写更少的垃圾脚本。  请参阅 [Paul 的运行时性能清单中的动画中的](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/)垃圾回收。  |
+| 影响响应、动画、加载的时间过长的 JavaScript。  | 用户在页面加载后向右滚动 setTimeout / setInterval。  | 优化 JavaScript 运行时：使用 `requestAnimationFrame`、在帧上分布 DOM 操作、使用 [Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers)。  |
+| 影响响应的长时间运行的 JavaScript。  | [DOMContentLoaded 事件](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers)因使用 JS 工作而停止。  | 将纯计算工作移动到 [Web 工作人员](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers)。  如果需要 DOM 访问权限，请使用 `requestAnimationFrame`。  <!--See [Optimize JavaScript Execution](/web/fundamentals/performance/rendering/optimize-javascript-execution).  -->  |
+| 影响响应或动画的垃圾脚本。  | 垃圾收集可能在任意位置发生。  | 编写更少的垃圾脚本。  请参阅 [Paul 的运行时性能清单中的动画中的垃圾回收](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/)。  |
 
 <!--todo: add "Optimize JavaScript runtime" section when available  -->
 
@@ -75,27 +72,25 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 
 <!--Related Guides:
 
-*   [Reduce the Scope and Complexity of Styles Calculations](/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)
+* [Reduce the Scope and Complexity of Styles Calculations](/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)
 -->
 
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations section when available -->
 
 ### <a name="style-tools"></a>样式：工具
 
-在"性能"工具 **中录制** 。  检查录制是否 `Recalculate Style` 显示紫色 (大) 。
+在"性能"工具 **中录制** 。  检查录制中是否显示 `Recalculate Style` 紫色 (大) 。
 
 <!--todo: add Recording section when available  -->
 
-在 `Recalculate Style` "详细信息"窗格中选择一个事件以查看其 **详细信息** 。  如果样式更改需要很长时间，则性能下降。  如果样式计算影响大量元素，则这是另一个有改进空间的区域。
+在" `Recalculate Style` 详细信息"窗格中选择一个事件以查看其 **详细信息** 。  如果样式更改需要很长时间，则性能下降。  如果样式计算影响大量元素，则这是另一个有改进空间的区域。
 
-:::image type="complex" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="长重新计算样式。" lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
-   长重新计算样式
-:::image-end:::
+:::image type="content" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="长重新计算样式。" lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
 
 若要降低事件 `Recalculate Style` 的影响，请：
 
-*   使用 [CSS 触发器了解](https://csstriggers.com) 哪些 CSS 属性触发器布局、绘制和复合。  这些属性对呈现性能的影响最大。
-*   切换到影响较少的属性。  <!--For more guidance, See [Stick to compositor-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->
+*  使用 [CSS 触发器了解](https://csstriggers.com) 哪些 CSS 属性触发器布局、绘制和复合。  这些属性对呈现性能的影响最大。
+*  切换到影响较少的属性。  <!--For more guidance, See [Stick to compositor-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available -->
 
@@ -113,7 +108,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 
 <!--Related Guides:
 
-*   [Reduce the Scope and Complexity of Styles Calculations](/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)  -->
+* [Reduce the Scope and Complexity of Styles Calculations](/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)  -->
 
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations section when available -->
 
@@ -121,25 +116,23 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 <!-- ====================================================================== -->
 ## <a name="layout"></a>布局
 
-Firefox (或重排) 是浏览器计算页面上所有元素的位置和大小的过程。  Web 的布局模型意味着一个元素可能会影响其他元素;例如，元素的宽度通常会影响任何子元素的宽度，等等，一直向上和向下影响 `<body>` 树。  浏览器可能涉及此过程。
+Firefox (或重排) 是浏览器计算页面上所有元素的位置和大小的过程。  Web 的布局模型意味着一个元素可能会影响其他元素;例如，元素的宽度 `<body>` 通常会影响任何子元素的宽度，等等，一直向上和向下影响树。  浏览器可能涉及此过程。
 
 作为经验法则，如果你在帧完成之前要求从 DOM 返回几何值，你将发现自己具有"强制同步布局"，如果频繁重复或对大型 DOM 树执行，这可能是一个较大的性能瓶颈。
 
 <!--Related Guides:
 
-*   [Avoid Layout Thrashing](/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing)
-*   [Diagnose Forced Synchronous Layouts](rendering-tools/forced-synchronous-layouts.md)  -->
+* [Avoid Layout Thrashing](/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing)
+* [Diagnose Forced Synchronous Layouts](rendering-tools/forced-synchronous-layouts.md)  -->
 
 <!--todo: add Avoid CSS that triggers layouts (Avoid Layout Thrashing) section when available -->
 <!--todo: add Diagnose Forced Synchronous Layouts section when available  -->
 
 ### <a name="layout-tools"></a>布局：工具
 
-" **性能** "窗格标识页面何时导致强制同步布局。  `Layout`这些事件用红色条标记。
+" **性能** "窗格标识页面何时导致强制同步布局。  这些事件 `Layout` 用红色条标记。
 
-:::image type="complex" source="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png" alt-text="强制同步布局。" lightbox="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png":::
-   强制同步布局
-:::image-end:::
+:::image type="content" source="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png" alt-text="强制同步布局。" lightbox="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png":::
 
 "布局分隔"是强制同步布局条件的重复。  当 JavaScript 重复写入和读取 DOM 时，会出现此情况，这会强制浏览器重新计算一次又一次布局。  若要标识布局限制，请查找多个强制同步布局警告的模式。  查看上图。
 
@@ -169,13 +162,11 @@ Firefox (或重排) 是浏览器计算页面上所有元素的位置和大小的
 想知道绘制需要多久或多久发生一次画？  选中" [性能"面板](../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation) 中的" **启用高级画** 图检测"设置，然后录制。  如果大多数呈现时间都用于绘制，则存在绘制问题。
 
 <!--
-:::image type="complex" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Long paint times in timeline recording." lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
-   Long paint times in timeline recording
-:::image-end:::
+:::image type="content" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Long paint times in timeline recording." lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
 -->
 
 <!--
-Check out the **Rendering** panel for further configurations that are able to help you diagnose paint problems.
+Check out the **Rendering** panel for further configurations that can help you diagnose paint problems.
 todo: link Rendering panel in ../evaluate-performance/timeline-tool  sub-section when live.
 The Timeline Tool page is deprecated.
 -->
@@ -188,7 +179,7 @@ The Timeline Tool page is deprecated.
 | 问题 | 示例 | 解决方案 |
 |:--- |:--- |:--- |
 | 画图响应或动画的风暴。  | 影响响应或动画的大画区或昂贵的画图。  | 避免绘制、升级要移动到其自己的图层的元素、使用转换和不透明度。  <!--See [Simplify paint complexity and reduce paint areas](/web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas).  -->  |
-| 影响动画的层爆炸。  | 过多元素的过度提示会 `translateZ(0)` 大大影响动画性能。  | 尽量少地提升至层，并且仅在你知道它提供切实改进时。  <!--See [Stick to composite-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->  |
+| 影响动画的层爆炸。  | 过多元素的过度提示会大大 `translateZ(0)` 影响动画性能。  | 尽量少地提升至层，并且仅在你知道它提供切实改进时。  <!--See [Stick to composite-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->  |
 
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->
@@ -197,7 +188,7 @@ The Timeline Tool page is deprecated.
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)<!-- redirects to https://developer.chrome.com/docs/devtools/evaluate-performance/ --> 由技术撰稿人 [， (，Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTools \& Lighthouse) 和 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)<!-- redirects to https://developer.chrome.com/docs/devtools/evaluate-performance/ --> 由技术编写 ([、](https://developers.google.com/web/resources/contributors#kayce-basques) Chrome DevTools \& Lighthouse) 和 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

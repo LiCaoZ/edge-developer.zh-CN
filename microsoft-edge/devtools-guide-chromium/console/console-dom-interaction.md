@@ -1,269 +1,294 @@
 ---
 title: 使用控制台与 DOM 交互
-description: 如何使用控制台工具在浏览器中与当前网页交互。
+description: 如何使用控制台工具与浏览器中的当前网页进行交互。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
-ms.openlocfilehash: fb0f5d7adaa68bf4c416ace18170d69406da9559
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325751"
 ---
 # <a name="interact-with-the-dom-using-the-console"></a>使用控制台与 DOM 交互
 
-控制台 **工具** 并不仅仅是用于 [日志记录信息](console-log.md) 或 [运行任意 JavaScript](console-javascript.md)。  这也是在浏览器中与网页交互的一种很好的方法。  请考虑它是 Inspect 工具的 **脚本环境版本** 。
+**控制台**工具是在浏览器中与网页交互的一种很好的方法。<!-- todo: add intro explanation -->  控制台 **与** Inspect 工具的脚本环境 [版本类似](../css/inspect.md)。<!-- todo: add intro explanation -->
 
 
 <!-- ====================================================================== -->
 ## <a name="read-from-the-dom"></a>从 DOM 读取
 
-若要引用网页的标题，请完成以下操作。
+引用网页的标题：
 
-1.  打开“**控制台**”。
-    *   选择 `Control` + `Shift` + `J` (Windows、Linux) 或 `Command` + `Option` + `J` (macOS)。
-1.  在控制台中键入或复制并粘贴以下 **代码段**。
+1. 打开 DevTools **控制台**。  若要从网页中执行此操作，可以按 `Control`++`Shift``J` (Windows、Linux) 或`J` `Command`+`Option`+ (macOS) 。
 
-    ```javascript
-    document.querySelector('header')
-    ```
+1. 在控制台中键入或粘贴以下 **代码**，然后按 `Enter`：
 
-:::image type="complex" source="../media/console-dom-get-reference.msft.png" alt-text="若要在控制台中获取对标头的引用，请使用 document.querySelector" lightbox="../media/console-dom-get-reference.msft.png":::
-    若要在控制台中获取对标头的引用，请使用 `document.querySelector`
-:::image-end:::
+   ```javascript
+   document.querySelector('header')
+   ```
 
-如果选择鼠标 `Shift` + `Tab` 光标或将鼠标光标移到 HTML 结果上，DevTools 会突出显示标头。
+   :::image type="content" source="../media/console-dom-get-reference.msft.png" alt-text="若要在控制台中获取对标头的引用，请使用&quot;document.querySelector&quot;。" lightbox="../media/console-dom-get-reference.msft.png":::
 
-:::image type="complex" source="../media/console-dom-highlight-element.msft.png" alt-text="DevTools 突出显示你在控制台中选择的部分。" lightbox="../media/console-dom-highlight-element.msft.png":::
-    DevTools 突出显示你在控制台中选择 **的部分**
-:::image-end:::
+1. 在控制台 **中**，将鼠标悬停在生成的 HTML `<header>` 元素上，或按 `Shift`+`Tab`。  在呈现的网页中，DevTools 突出显示标题：
+
+   :::image type="content" source="../media/console-dom-highlight-element.msft.png" alt-text="DevTools 突出显示你在控制台中选择的部分。" lightbox="../media/console-dom-highlight-element.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## <a name="manipulate-the-dom"></a>操作 DOM
 
-您也可以操作网页。  例如，如果复制并粘贴或在控制台中键入以下内容，标题周围**** 将显示绿色边框。
+可以从控制台操作 **网页，如下所示**。  本示例使用控制台在 DOM 中设置一个值，以影响网页样式：在页眉周围添加绿色边框。
 
-```javascript
-document.querySelector('header').style.border = '2em solid green'
-```
+1. 按`Control`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  控制台将在 DevTools 中的当前网页旁边打开。
 
-:::image type="complex" source="../media/console-dom-add-border.msft.png" alt-text="若要向元素添加边框，请使用控制台" lightbox="../media/console-dom-add-border.msft.png":::
-    若要向元素添加边框，请使用 **控制台**
-:::image-end:::
+1. 将以下代码粘贴到**控制台：**
 
-根据网页的复杂性，可能很难找到正确的要操作的元素。  但可以使用 **Inspect** 工具帮助你。  假设你想要操作页 `Documentation` 眉中的部分。
+   ```javascript
+   document.querySelector('header').style.border = '2em solid green'
+   ```
 
-:::image type="complex" source="../media/console-dom-highlight-documentation.msft.png" alt-text="显示您在屏幕上检查的元素。" lightbox="../media/console-dom-highlight-documentation.msft.png":::
-    显示你在屏幕上检查的元素
-:::image-end:::
+   标题周围会出现绿色边框：
 
-若要获取对要操作的元素的直接引用，请完成以下操作。
+   :::image type="content" source="../media/console-dom-add-border.msft.png" alt-text="使用控制台向元素添加边框。" lightbox="../media/console-dom-add-border.msft.png":::
 
-1.  使用 **Inspect** 工具选择元素。
 
-    :::image type="complex" source="../media/console-dom-use-inspector-to-get-element.msft.png" alt-text="若要选择元素，请使用 Inspect 工具" lightbox="../media/console-dom-use-inspector-to-get-element.msft.png":::
-        若要选择元素，请使用 **Inspect** 工具
-    :::image-end:::
+### <a name="get-a-direct-reference-an-element"></a>获取元素的直接引用
 
-1.  选择它，DevTools 跳转到 **"元素"** 工具。
-1.  选择 `...` DOM 树中的 元素旁边的菜单。
+根据网页的复杂性，可能很难找到正确的要操作的元素。  但是，您可以使用 **Inspect** 工具来帮助你。  假设您要处理呈现的页面标题中的 **Documentation** 区域：
 
-    :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="所选元素显示在&quot;元素&quot;工具的 DOM 树中，选择溢出菜单以获取更多功能" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
-        所选元素显示在"元素"工具的 DOM **树中，** 选择溢出菜单以获取更多功能
-    :::image-end:::
+:::image type="content" source="../media/console-dom-highlight-documentation.msft.png" alt-text="显示您在屏幕上检查的元素。" lightbox="../media/console-dom-highlight-documentation.msft.png":::
 
-1.  打开上下文菜单并选择 `Copy`  >  `Copy JS Path` 。
 
-    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="从&quot;元素&quot;工具的 DOM 树中的元素复制 JavaScript 路径。" lightbox="../media/console-dom-copy-JS-path.msft.png":::
-        从"元素"工具的 DOM 树中的 **元素** 复制 JavaScript 路径
-    :::image-end:::
+若要获取对要操作的元素的直接引用，请进行以下操作：
 
-1.  返回到 **控制台并粘贴** 命令。
+1. 在 DevTools 中，单击 **"检查** "工具，然后在呈现的网页中，将鼠标悬停在 元素上：
 
-若要将链接文本更改为 `My Playground` ，请 `.textContent = "My Playground"` 添加到之前粘贴的命令中。
+   :::image type="content" source="../media/console-dom-use-inspector-to-get-element.msft.png" alt-text="若要选择元素，请使用 Inspect 工具" lightbox="../media/console-dom-use-inspector-to-get-element.msft.png":::
 
-:::image type="complex" source="../media/console-dom-change-content.msft.png" alt-text="使用控制台更改元素的内容。" lightbox="../media/console-dom-change-content.msft.png":::
-    使用 **控制台** 更改元素的内容
-:::image-end:::
+1. 单击页面上的元素，DevTools 将跳转到 **"元素"** 工具。
 
-使用你想要在控制台中执行的任何 JavaScript DOM **操作**。  为了更方便， **控制台** 提供了一些帮助程序方法。
+1. `...`单击 DOM 树中元素旁边的菜单：
+
+   :::image type="content" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="单击的元素将显示在&quot;元素&quot;工具的 DOM 树中。  单击溢出菜单，获取更多功能。" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
+
+1. 右键单击 DOM 树中的 元素，然后选择 **CopyCopy** >  **JS 路径**。
+
+   :::image type="content" source="../media/console-dom-copy-JS-path.msft.png" alt-text="从&quot;元素&quot;工具的 DOM 树中的元素复制 JavaScript 路径。" lightbox="../media/console-dom-copy-JS-path.msft.png":::
+
+   <!-- could be useful to have code listings.  test this:
+   Here's the JS path you copied:
+
+   ```javascript
+   document.querySelector("#headerAreaHolder > header > div:nth-child(1) > div.nav-bar-item.is-hidden-tablet > div > button > span")
+   ```
+
+   Here's the result after you add text content:
+
+   ```javascript
+   document.querySelector("#headerAreaHolder > header > div:nth-child(1) > div.nav-bar-item.is-hidden-tablet > div > button > span").textContent = "My Playground"
+   ``` -->
+
+1. 在 **控制台中**，粘贴已复制但尚未按下 `Enter` 的 JavaScript 路径。
+
+1. 将链接的文本更改为 `My Playground`。  为此，请添加到 `.textContent = "My Playground"` 之前粘贴的 JavaScript 路径：
+
+   :::image type="content" source="../media/console-dom-change-content.msft.png" alt-text="使用控制台更改元素的内容。" lightbox="../media/console-dom-change-content.msft.png":::
+
+在控制台中，使用你需要的任何 JavaScript DOM **操作**。  为了更方便， **控制台** 附带了一些帮助程序实用程序方法。
 
 
 <!-- ====================================================================== -->
 ## <a name="helpful-console-utility-methods"></a>有用的控制台实用程序方法
 
-许多便利的方法和快捷方式都作为控制台 [实用程序提供](utilities.md)给你。  其中一些方法非常强大，也是您可能作为过去一系列语句撰写 `console.log()` 的一些内容。
+控制台实用程序提供了许多便利的方法和 [快捷方式](utilities.md)。  有些方法非常强大，比 using 语句更有效 `console.log()` 。
 
-### <a name="the-power-to-the-"></a>$ 的电源
 
-`$`控制台中具有特殊**功能**，你可能从 jQuery 中记住这一点。
+### <a name="the-power-of-the--functions"></a>$ 函数的功能
 
-*   `$_` 存储最后一个命令的结果。  因此，如果你键入 `2 + 2` 并选择 `Enter` ，然后键入 ，控制台 `$_` 将显示**** `4` 你 。
-*   `$0` `$4`是最后检查的元素的堆栈， `$0` 始终为最新元素。  因此，在上一示例中，你只需在 **Inspect** 工具中选择 元素并键入 `$0.textContent = "My Playground"` ，以获得相同的效果。
-*   `$x()` 允许您使用 XPATH 选择 DOM 元素。
-*   `$()` `$$()`和 是 和 的 `document.querySelector()` 较短版本 `document.querySelectorAll()` 。
+控制台 `$` 中具有特殊 **功能**，你可能从 jQuery 中记住这一点。
 
-例如，以下代码段检索网页 (中所有的链接，就像) 的简短内容一样，将链接显示为可排序的表格，以复制和粘贴到 Excel 中 `$$('a')` `document.querySelectorAll('a')` 。
+*  `$_` 存储最后一个命令的结果。  因此，如果你键入 并 `2 + 2` 按 `Enter`，然后键入 ， `$_`控制台 **将显示** `4`。
 
-```javascript
-console.table($$('a'),['href','text']);
-```
+*  `$0` 是 `$4` 最后检查的元素的堆栈。  `$0` 始终是最新的。  因此，在上一示例中，只需选择 **Inspect** `$0.textContent = "My Playground"` 工具中的 元素并键入 ，以获得相同的效果。
 
-:::image type="complex" source="../media/console-dom-get-all-links.msft.png" alt-text="获取网页中所有的链接，将结果显示为表格。" lightbox="../media/console-dom-get-all-links.msft.png":::
-    获取网页中的所有链接，将结果显示为表格
-:::image-end:::
+*  `$x()` 允许您使用 XPATH 选择 DOM 元素。
 
-但是，如果你不希望显示信息，但希望获取它作为数据。  快捷方式 `$$('a')` 提供定位链接以及每个链接的所有属性。  问题是您只需要链接和相关文本。
+*  `$()` 和 `$$()` 是 和 的较短 `document.querySelector()` 版本 `document.querySelectorAll()`。
 
-:::image type="complex" source="../media/console-dom-too-much-link-information.msft.png" alt-text="$$ 快捷方式返回的信息过多" lightbox="../media/console-dom-too-much-link-information.msft.png":::
-    快捷方式 `$$` 返回的信息过多
-:::image-end:::
 
-快捷方式 `$$` 具有一项有趣的额外功能。  快捷方式为你提供所有方法，而不是返回纯 `NodeList` `document.querySelectorAll()` like `$$` `Array` 。  使用 `map()` 方法将信息减少为你需要的信息。
+### <a name="example-extracting-all-links-from-a-page-as-a-sortable-table"></a>示例：从页面中提取所有链接，作为可排序表
 
-```javascript
-$$('a').map(a => {
-    return {url: a.href, text: a.innerText}
-})
-```
+1. 输入以下代码，该代码检索网页中的所有链接，然后将这些链接显示为可排序表，以复制并粘贴 (例如，粘贴到Excel) ：
 
-代码段将返回所有链接的 Array，作为具有 `url` 和 `text` 属性的对象。
+   ```javascript
+   console.table($$('a'),['href','text']);
+   ```
+   
+   `$$('a')` 是 的短。`document.querySelectorAll('a')`
 
-:::image type="complex" source="../media/console-dom-filter-link-data.msft.png" alt-text="使用 $$ 上的映射将信息筛选到最低" lightbox="../media/console-dom-filter-link-data.msft.png":::
-    使用 map on `$$` 将信息筛选到最低
-:::image-end:::
+   :::image type="content" source="../media/console-dom-get-all-links.msft.png" alt-text="获取网页中所有的链接，将结果显示为表格。" lightbox="../media/console-dom-get-all-links.msft.png":::
 
-您尚未完成，多个链接是网页的内部链接或具有空文本。  使用 filter 方法可删除内部链接。
+   但是，假设您不希望显示所有信息，但希望将其作为数据获取，然后仅选择部分数据。
 
-```javascript
-$$('a').map(a => {
-    return {text: a.innerText, url: a.href}
-}).filter(a => {
-    return a.text !== '' && !a.url.match('docs.microsoft.com')
-})
-```
+   快捷方式 `$$('a')` 可帮助实现此要求：它选择定位链接和每个定位链接的所有属性。  但问题是您只需要定位链接和相关文本，而不是定位链接的所有属性。
 
-:::image type="complex" source="../media/console-dom-filter-out-empty-links.msft.png" alt-text="获取不为空且为外部的链接" lightbox="../media/console-dom-filter-out-empty-links.msft.png":::
-    获取不为空且为外部的链接
-:::image-end:::
+   :::image type="content" source="../media/console-dom-too-much-link-information.msft.png" alt-text="$$ 快捷方式返回的信息过多。" lightbox="../media/console-dom-too-much-link-information.msft.png":::
 
-如网页开始部分显示，您还可以更改这些元素。  例如，以下代码段在所有外部链接周围创建绿色边框：
+   为解决此问题，快捷方式`$$`具有一`NodeList` `$$` `document.querySelectorAll()``Array`项有趣的额外功能：快捷方式提供了所有方法，包括 ，而不是返回纯 like 。`map()`
 
-```javascript
-$$('a[href^="https://"]').forEach(
-  a => a.style.border = '1px solid green'
-)
-```
+1. `map()`使用 对象的 方法`Array`将信息减少为你需要的信息：
 
-:::image type="complex" source="../media/console-dom-highlight-links.msft.png" alt-text="若要突出显示所有外部链接，请在每个链接周围添加绿色边框" lightbox="../media/console-dom-highlight-links.msft.png":::
-    若要突出显示所有外部链接，请在每个链接周围添加绿色边框
-:::image-end:::
+   ```javascript
+   $$('a').map(a => {
+      return {url: a.href, text: a.innerText}
+   })
+   ```
+
+   上面的代码返回所有 `Array` 链接的 ，作为 对象和 `url` `text` 属性。
+
+   :::image type="content" source="../media/console-dom-filter-link-data.msft.png" alt-text="使用 $$ 上的映射将信息筛选到最低值。" lightbox="../media/console-dom-filter-link-data.msft.png":::
+
+   你尚未完成;多个链接是网页的内部链接或具有空文本。
+
+1. `filter`使用 方法删除内部链接：
+
+   ```javascript
+   $$('a').map(a => {
+      return {text: a.innerText, url: a.href}
+   }).filter(a => {
+      return a.text !== '' && !a.url.match('docs.microsoft.com')
+   })
+   ```
+
+   :::image type="content" source="../media/console-dom-filter-out-empty-links.msft.png" alt-text="获取不为空且外部的链接。" lightbox="../media/console-dom-filter-out-empty-links.msft.png":::
+
+   通过控制台中的发出语句操作 DOM，可以在呈现的网页**** 中更改这些元素。
+
+1. 例如，输入以下代码，该代码在所有外部链接周围添加绿色边框：
+
+   ```javascript
+   $$('a[href^="https://"]').forEach(
+      a => a.style.border = '1px solid green'
+   )
+   ```
+
+   :::image type="content" source="../media/console-dom-highlight-links.msft.png" alt-text="若要突出显示所有外部链接，请在每个链接周围添加绿色边框。" lightbox="../media/console-dom-highlight-links.msft.png":::
 
 使用 CSS 选择器功能，而不是编写复杂的 JavaScript 来筛选结果。
 
-若要为网页上不是内嵌图像的所有图像创建 和 信息的表， `src` `alt` 请完成以下操作。
 
-1.  打开“**控制台**”。
-1.  键入或复制并粘贴以下代码段。
+### <a name="creating-a-table"></a>创建表
 
-```javascript
-console.table($$('img:not([src^=data])'), ['src','alt'])
-```
+若要为网页上不是`src``alt`内嵌图像的所有图像创建 和 信息的表，请：
 
-:::image type="complex" source="../media/console-dom-complex-CSS-selector.msft.png" alt-text="若要选择元素，请使用复杂的 CSS 选择器" lightbox="../media/console-dom-complex-CSS-selector.msft.png":::
-    若要选择元素，请使用复杂的 CSS 选择器
-:::image-end:::
+1. 打开“**控制台**”。
 
-准备好进行更复杂的示例了吗？  通过 markdown 生成的 HTML 网页（如本文）具有每个标题的自动 ID 值，以允许您深层链接到该部分。  例如，对 `# New features` 进行更改 `<h1 id="new-features">New features</h1>` 。
+1. 将以下代码粘贴到 **控制台中**，然后按 `Enter`：
 
-若要列出要复制和粘贴的所有自动标题，请完成以下操作。
+   ```javascript
+   console.table($$('img:not([src^=data])'), ['src','alt'])
+   ```
 
-1.  打开“**控制台**”。
-1.  键入或复制并粘贴以下代码段。
+   :::image type="content" source="../media/console-dom-complex-css-selector.msft.png" alt-text="若要以编程方式选择一组元素，请使用复杂的 CSS 选择器。" lightbox="../media/console-dom-complex-css-selector.msft.png":::
 
-```javascript
-let out = '';
-$$('#main [id]').filter(
-    elm => {return elm.nodeName.startsWith('H')}
-).forEach(elm => {
-   out += elm.innerText + "\n" +
-          document.location.href + '#' +
-          elm.id + "\n";
-});
-console.log(out);
-```
+<!-- mystery wiggly line preventer -->
 
-结果是包含每个标题的内容的文本，后跟指向该标题的完整 URL。
 
-:::image type="complex" source="../media/console-dom-get-generated-headings.msft.png" alt-text="从网页获取所有标题和生成的 URL。" lightbox="../media/console-dom-get-generated-headings.msft.png":::
-    从网页获取所有标题和生成的 URL
-:::image-end:::
+### <a name="example-getting-all-page-headings-and-anchor-urls"></a>示例：获取所有页面标题和定位 URL
+
+准备好进行更复杂的示例了吗？  与本文一样，通过 Markdown 标记生成的 HTML 网页具有每个标题的自动 ID 值，以允许您直接深层链接到该网页的该部分。  例如，Markdown `# New features` 源文件中的 h1 标题在 `<h1 id="new-features">New features</h1>` HTML 文件中变为。
+
+列出要复制和粘贴的所有自动标题：
+
+1. 打开“**控制台**”。
+
+1. 复制并粘贴以下代码：
+
+   ```javascript
+   let out = '';
+   $$('#main [id]').filter(
+      elm => {return elm.nodeName.startsWith('H')}
+   ).forEach(elm => {
+      out += elm.innerText + "\n" +
+            document.location.href + '#' +
+            elm.id + "\n";
+   });
+   console.log(out);
+   ```
+    
+   结果是包含每个标题的内容的文本，后跟指向该标题的完整 URL。
+
+   :::image type="content" source="../media/console-dom-get-generated-headings.msft.png" alt-text="从网页获取所有标题和生成的 URL。" lightbox="../media/console-dom-get-generated-headings.msft.png":::
+
 
 ### <a name="clean-up-with-clear-and-copy"></a>清除并复制
 
-在控制台中 **开发时**，情况可能会变得混乱。  你可能会觉得在复制和粘贴时尝试选择结果感到沮丧。  以下两种实用程序方法可帮助您。
+在控制台中 **开发时**，情况可能会变得混乱。  可能很难选择要复制和粘贴的结果。  以下两种实用程序方法可帮助您：
 
-*   `copy()` 将你提供的任何内容复制到剪贴板。  `copy()`在将该方法与复制最后的结果混合使用时， `$_` 该方法尤其有用。
-*   `clear()` 清除 **控制台**。
+* `copy()` 将你提供的任何内容复制到剪贴板。  将 `copy()` 方法与 混合使用时 `$_`尤其有用，这将复制最后的结果。
+
+* `clear()` 清除 **控制台**。
+
 
 ### <a name="read-and-monitor-events"></a>读取和监视事件
 
-Console 的另外两种有趣的 **实用程序方法处理** 事件处理。
+**Console** 的另外两种有趣的实用程序方法处理事件处理：
 
-*   `getEventListeners(node)` 列出节点的所有事件侦听器。
-*   `monitorEvents(node, events)` 监视并记录节点上发生的事件。
+* `getEventListeners(node)` 列出节点的所有事件侦听器。
 
-若要列出分配给网页中第一个表单的所有事件侦听器，请完成以下操作。
+* `monitorEvents(node, events)` 监视并记录节点上发生的事件。
 
-1.  打开“**控制台**”。
-1.  键入或复制并粘贴以下代码段。
 
-    ```javascript
-    getEventListeners($('form'));
-    ```
+列出分配给网页中第一个表单的所有事件侦听器：
 
-:::image type="complex" source="../media/console-dom-get-form-events.msft.png" alt-text="获取网页中第一个表单的所有事件侦听器。" lightbox="../media/console-dom-get-form-events.msft.png":::
-    获取网页中第一个表单的所有事件侦听器
-:::image-end:::
+1. 在 DevTools 中，打开 **控制台**。
+
+1. 将以下代码键入或粘贴到 **控制台中**：
+
+   ```javascript
+   getEventListeners($('form'));
+   ```
+
+   :::image type="content" source="../media/console-dom-get-form-events.msft.png" alt-text="获取网页中第一个表单的所有事件侦听器。" lightbox="../media/console-dom-get-form-events.msft.png":::
 
 监视时，每次对指定元素进行更改时，都会**** 在控制台中收到通知。  将要侦听的事件定义为第二个参数。  定义要监视的事件非常重要，否则将报告元素发生的任何事件。
 
-若要每次滚动时在 **控制台** 中获取通知，请调整窗口大小，或在用户在搜索表单中类型时完成以下操作。
 
-1.  打开“**控制台**”。
-1.  键入或复制并粘贴以下代码段。
+若要每次滚动时在 **控制台** 中获取通知，请调整窗口大小，或在用户在搜索表单中类型时：
 
-    ```javascript
-    monitorEvents(window, ['resize', 'scroll']);
-    monitorEvents($0, 'keyup');
-    ```
+1. 在 DevTools 中，打开 **控制台**。
 
-:::image type="complex" source="../media/console-dom-monitor-events.msft.png" alt-text="控制台显示 Window 上发生的每个滚动事件。" lightbox="../media/console-dom-monitor-events.msft.png":::
-    **控制台** 显示窗口上发生的每个滚动事件
-:::image-end:::
+1. 将以下代码粘贴到**控制台：**
 
-若要记录当前选择的元素上的任何键操作，请专注于标题中的搜索表单并选择一些键。
+   ```javascript
+   monitorEvents(window, ['resize', 'scroll']);
+   monitorEvents($0, 'keyup');
+   ```
 
-:::image type="complex" source="../media/console-dom-monitor-key-events.msft.png" alt-text="控制台显示窗体上发生的键更新事件。" lightbox="../media/console-dom-monitor-key-events.msft.png":::
-    **控制台** `keyup` 显示窗体上发生的事件
-:::image-end:::
+   :::image type="content" source="../media/console-dom-monitor-events.msft.png" alt-text="控制台显示 Window 上发生的每个滚动事件。" lightbox="../media/console-dom-monitor-events.msft.png":::
 
-若要停止它，请删除通过以下代码段设置的监视。
+1. 若要记录当前所选元素上的任何键操作，请专注于标题中的搜索表单并按一些键。
 
-```javascript
-unmonitorEvents(window, ['resize', 'scroll']);
-unmonitorEvents($0, 'key');
-```
+   :::image type="content" source="../media/console-dom-monitor-key-events.msft.png" alt-text="控制台显示窗体上发生的&quot;键更新&quot;事件。" lightbox="../media/console-dom-monitor-key-events.msft.png":::
 
+1. 若要停止日志记录，请删除设置的监视，请在控制台中输入以下 **代码**：
+
+   ```javascript
+   unmonitorEvents(window, ['resize', 'scroll']);
+   unmonitorEvents($0, 'key');
+   ```
+   
 
 <!-- ====================================================================== -->
 ## <a name="reuse-dom-manipulation-scripts"></a>重用 DOM 操作脚本
 
-你可能会发现从控制台操作 DOM **非常有用**。  你很快就会遇到控制台作为开发 **平台** 的限制。  好消息是，DevTools [中的"](../sources/index.md) 源"工具提供了功能齐全的开发环境。  在 **"源** "工具中，可以完成以下操作。
+您可能会发现从控制台操作 DOM **非常有用**。  你可能很快遇到控制台作为开发 **平台** 的限制。  好消息是，DevTools [中的"](../sources/index.md) 源"工具提供了功能齐全的开发环境。  在 **"源** "工具中，您可以：
 
-*   将控制台脚本**存储为**[代码段](../javascript/snippets.md)。
-*   使用键盘快捷方式或编辑器在网页中运行脚本。
+*  将控制台脚本 **存储** 为代码段;请参阅 [在任何网页上运行 JavaScript 代码段](../javascript/snippets.md)。
+
+*  使用键盘快捷方式或编辑器在网页中运行脚本。
+
+
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
+
+* [在控制台工具中记录消息](console-log.md)
+* [在控制台中运行 JavaScript](console-javascript.md)

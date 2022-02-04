@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/17/2021
-ms.openlocfilehash: 04c5cef3fd7ecee8a838a289c2222b7ba740530f
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12324200"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -28,11 +22,11 @@ ms.locfileid: "12324200"
    limitations under the License.  -->
 # <a name="declare-api-permissions-in-extension-manifests"></a>在扩展清单中声明 API 权限
 
-若要使用大部分 `chrome.*` API，扩展必须在清单 `permissions` 中声明 。  您可以使用下表中的权限字符串声明权限，或使用模式来匹配类似的字符串。  如果扩展受到恶意软件的攻击，权限有助于限制扩展。  在安装使用权限警告的扩展之前，可能会向用户显示某些权限。
+若要使用大部分 `chrome.*` API，扩展必须在 `permissions` 清单的字段中声明其意图。  扩展可以使用下表中的权限字符串声明权限，或使用模式来匹配类似的字符串。  如果扩展受到恶意软件的攻击，权限有助于限制扩展。  在安装扩展之前或运行时，会根据需要向用户显示一些权限，以征得他们的同意;这些是权限警告。
 
-如果 API 要求你在清单中声明权限，请查看该 API 的文档以了解所需的权限。  例如，存储 API 页面介绍了如何声明 `storage` 权限。
+如果 API 要求你在清单中声明权限，请参阅该 API 的文档以了解所需的权限。  例如，存储 API 页面介绍了如何声明`storage`权限。
 
-以下代码段概述了如何在清单文件中声明权限。
+以下代码概述了如何在清单文件中声明权限：
 
 ```json
 "permissions": [
@@ -48,21 +42,21 @@ ms.locfileid: "12324200"
 
 | 权限字符串 | 详细信息 |
 |:--- |:--- |
-| `activeTab` | 请求根据规范向扩展授予 `activeTab` 权限。 |
+| `activeTab` | 请求根据规范向扩展授予权限 `activeTab` 。 |
 | `alarms` | 授予对 API 的扩展 `chrome.alarms` 访问权限。 |
-| `background` | 使Microsoft Edge提前启动并延迟关闭，以便扩展的生命周期更长。  当任何安装的扩展具有权限时，Microsoft Edge在用户登录到用户计算机后，以及用户启动 Microsoft Edge 之前，将以不明显方式 `background` Microsoft Edge。  该权限还使Microsoft Edge继续运行，即使其最后一个窗口关闭，直到用户显式退出 `background` Microsoft Edge。  此权限不会影响浏览器中关闭的扩展。  `background`该权限通常在背景页上使用。 |
+| `background` | 使Microsoft Edge提前启动并延迟关闭，以便扩展的生命周期更长。  当任何安装的`background`扩展具有权限时，Microsoft Edge在用户登录到用户计算机时，以及用户启动 Microsoft Edge 之前，以不明显方式Microsoft Edge。  权限`background`还使Microsoft Edge继续运行，即使其最后一个窗口已关闭，直到用户显式退出Microsoft Edge。  此权限不会影响浏览器中关闭的扩展。  该 `background` 权限通常在背景页上使用。 |
 | `bookmarks` | 授予对 API 的扩展 `chrome.bookmarks` 访问权限。 |
 | `browsingData` | 授予对 API 的扩展 `chrome.browsingData` 访问权限。 |
 | `certificateProvider` | 授予对 API 的扩展 `chrome.certificateProvider` 访问权限。 |
-| `clipboardRead` | 如果扩展使用 ，则必需 `document.execCommand('paste')` 。 |
-| `clipboardWrite` | 指示扩展使用 `document.execCommand('copy')` 或 `document.execCommand('cut')` 。 |
+| `clipboardRead` | 如果扩展使用 ，则必需 `document.execCommand('paste')`。 |
+| `clipboardWrite` | 指示扩展使用 或 `document.execCommand('copy')` `document.execCommand('cut')`。 |
 | `contentSettings` | 授予对 API 的扩展 `chrome.contentSettings` 访问权限。 |
 | `contextMenus` | 授予对 API 的扩展 `chrome.contextMenus` 访问权限。 |
 | `cookies` | 授予对 API 的扩展 `chrome.cookies` 访问权限。 |
 | `debugger` | 授予对 API 的扩展 `chrome.debugger` 访问权限。 |
 | `declarativeContent` | 授予对 API 的扩展 `chrome.declarativeContent` 访问权限。 |
 | `declarativeNetRequest` | 授予对 API 的扩展 `chrome.declarativeNetRequest` 访问权限。 |
-| `declarativeNetRequestFeedback` | 授予对 API 内事件和方法的扩展访问权限， `chrome.declarativeNetRequest` 这将返回有关匹配的声明性规则的信息。 |
+| `declarativeNetRequestFeedback` | 授予对 API 内事件 `chrome.declarativeNetRequest` 和方法的扩展访问权限，这将返回有关匹配的声明性规则的信息。 |
 | `declarativeWebRequest` | 授予对 API 的扩展 `chrome.declarativeWebRequest` 访问权限。 |
 | `desktopCapture` | 授予对 API 的扩展 `chrome.desktopCapture` 访问权限。 |
 | `documentScan` | 授予对 API 的扩展 `chrome.documentScan` 访问权限。 |
@@ -71,7 +65,7 @@ ms.locfileid: "12324200"
 | `enterprise.hardwarePlatform` | 授予对 API 的扩展 `chrome.enterprise.hardwarePlatform` 访问权限。 |
 | `enterprise.networkingAttributes` | 授予对 API 的扩展 `chrome.enterprise.networkingAttributes` 访问权限。 |
 | `enterprise.platformKeys` | 授予对 API 的扩展 `chrome.enterprise.platformKeys` 访问权限。 |
-| `experimental` | 如果扩展使用任意 `chrome.experimental.*` API，则必需。 |
+| `experimental` | 如果扩展使用任意 API，则必需 `chrome.experimental.*` 。 |
 | `fileBrowserHandler` | 授予对 API 的扩展 `chrome.fileBrowserHandler` 访问权限。 |
 | `fileSystemProvider` | 授予对 API 的扩展 `chrome.fileSystemProvider` 访问权限。 |
 | `fontSettings` | 授予对 API 的扩展 `chrome.fontSettings` 访问权限。 |
@@ -103,7 +97,7 @@ ms.locfileid: "12324200"
 | `system.storage` | 授予对 API 的扩展 `chrome.system.storage` 访问权限。 |
 | `tabCapture` | 授予对 API 的扩展 `chrome.tabCapture` 访问权限。 |
 | `tabGroups` | 授予对 API 的扩展 `chrome.tabGroups` 访问权限。 |
-| `tabs` | 向扩展授予对可能由多个 API（包括 和 ）使用的对象的特权 `Tab` 字段 `chrome.tabs` 的访问权限 `chrome.windows` 。  在许多情况下，扩展无需声明使用这些 `tabs` API 的权限。 |
+| `tabs` | 向扩展授予对对象（ `Tab` 包括 和 ）可以使用的对象的特权字段 `chrome.tabs` 的访问权限 `chrome.windows`。  在许多情况下，扩展无需 `tabs` 声明权限，即使用这些 API。 |
 | `topSites` | 授予对 API 的扩展 `chrome.topSites` 访问权限。 |
 | `tts` | 授予对 API 的扩展 `chrome.tts` 访问权限。 |
 | `ttsEngine` | 授予对 API 的扩展 `chrome.ttsEngine` 访问权限。 |
@@ -120,5 +114,5 @@ ms.locfileid: "12324200"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/)。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

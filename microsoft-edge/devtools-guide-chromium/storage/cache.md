@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 2083886d304239f9dcf770a2e5fc945d0290475a
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12324844"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,95 +24,78 @@ ms.locfileid: "12324844"
 
 本指南将演示如何使用 [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) 检查[缓存](https://developer.mozilla.org/docs/Web/API/Cache)数据。
 
-如果要尝试检查 http [缓存](https://developer.mozilla.org/docs/Web/HTTP/Caching) 数据，则这不是你想要的指南。  在"网络日志"字段的 **大小** 列中 **信息**。  导航到 [记录网络](../network/index.md#log-network-activity)。
+如果您尝试检查 [HTTP 缓存](https://developer.mozilla.org/docs/Web/HTTP/Caching) 数据，则这不是您需要的指南。  在网络日志的 **"大小"** 列中 **查找信息**;请参阅 [记录网络活动](../network/index.md#log-network-activity)。
 
 
 <!-- ====================================================================== -->
 ## <a name="view-cache-data"></a>查看缓存数据
 
-1.  选择**应用程序**选项卡打开**应用程序**工具。  通常默认**清单**窗格打开。
+1. 单击" **应用程序"** 选项卡以打开" **应用程序"** 面板。  通常默认**清单**窗格打开。
 
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="&quot;清单&quot;窗格。" lightbox="../media/storage-application-manifest.msft.png":::
-       **清单**窗格
-    :::image-end:::
+   :::image type="content" source="../media/storage-application-manifest.msft.png" alt-text="&quot;清单&quot;窗格。" lightbox="../media/storage-application-manifest.msft.png":::
 
-1.  展开 **缓存存储** 部分以查看可用的缓存。
+1. 展开 **缓存存储** 部分以查看可用的缓存。
 
-    :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="可用缓存。" lightbox="../media/storage-application-cache-storage.msft.png":::
-       可用缓存
-    :::image-end:::
+   :::image type="content" source="../media/storage-application-cache-storage.msft.png" alt-text="可用缓存。" lightbox="../media/storage-application-cache-storage.msft.png":::
 
-1.  选择缓存以查看内容。
+1. 单击缓存以查看内容。
 
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-root-headers.msft.png" alt-text="查看缓存的内容。" lightbox="../media/storage-application-cache-storage-domain-root-headers.msft.png":::
-       查看缓存的内容
-    :::image-end:::
+   :::image type="content" source="../media/storage-application-cache-storage-domain-root-headers.msft.png" alt-text="查看缓存的内容。" lightbox="../media/storage-application-cache-storage-domain-root-headers.msft.png":::
 
-1.  选择资源以查看表下部分中的 HTTP 标题。
+1. 单击资源以查看表下方部分中的 HTTP 标头。
 
-    :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="查看资源的 HTTP 标头。" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
-       查看资源的 HTTP 标题
-    :::image-end:::
+   :::image type="content" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="查看资源的 HTTP 标头。" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
 
-1.  选择 **预览** 以查看资源的内容。
+1. 单击 **"** 预览"以查看资源的内容。
 
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="查看资源的内容。" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
-       查看资源的内容
-    :::image-end:::
+   :::image type="content" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="查看资源的内容。" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## <a name="refresh-a-resource"></a>刷新资源
 
-1.  [查看缓存](#view-cache-data)。
-1.  选择要刷新的资源。  DevTools 会突出显示它以表明已选中。
+1. [查看缓存](#view-cache-data)。
+1. 单击要刷新的资源。  DevTools 会突出显示它以表明已选中。
 
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="选择要刷新的资源。" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
-       选择要刷新的资源
-    :::image-end:::
+   :::image type="content" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="选择要刷新的资源。" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
 
-1.  选择 **"刷新** (![ 刷新 ](../media/refresh-icon.msft.png) "。) 。
+1. 单击 **"刷新**![ (刷新"。](../media/refresh-icon.msft.png)) 。
 
 
 <!-- ====================================================================== -->
 ## <a name="filter-resources"></a>筛选资源
 
-1.  [查看缓存](#view-cache-data)。
-1.  使用 **路径筛选"** 文本框来筛选与提供的路径不匹配的资源。
+1. [查看缓存](#view-cache-data)。
 
-    :::image type="complex" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="筛选出与指定路径不匹配的资源。" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
-       筛选与指定路径不匹配的资源
-    :::image-end:::
+1. 使用 **"按路径筛选** "文本框筛选掉与提供的路径不匹配的任何资源。
+
+   :::image type="content" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="筛选出与指定路径不匹配的资源。" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## <a name="delete-a-resource"></a>删除资源
 
-1.  [查看缓存](#view-cache-data)。
-1.  选择要删除的资源。  DevTools 会突出显示它以表明已选中。
+1. [查看缓存](#view-cache-data)。
 
-    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="选择要删除的资源。" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
-       选择要删除的资源
-    :::image-end:::
+1. 单击要删除的资源。  DevTools 会突出显示它以表明已选中。
 
-1.  选择 **"删除所选** ![ ("，然后选择" ](../media/delete-icon.msft.png) 删除) "。
+   :::image type="content" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="选择要删除的资源。" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
+
+1. 单击 **"删除所选 (**!["，然后单击"删除所选) ](../media/delete-icon.msft.png)"。
 
 
 <!-- ====================================================================== -->
 ## <a name="delete-all-cache-data"></a>删除所有缓存数据
 
-1.  打开**应用程序** > **存储空间**。
-1.  确保已启用" **缓存存储** 复选框。
+1. 打开 **ApplicationClear****** >  存储。
 
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="&quot;缓存存储复选框。" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
-       **缓存存储** 复选框
-    :::image-end:::
+1. 确保选中 **"缓存存储** "复选框。
 
-1.  选择**清除网站数据**。
+   :::image type="content" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="&quot;缓存存储复选框。" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
 
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="&quot;清除网站数据&quot;按钮。" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
-       **清除网站数据**按钮
-    :::image-end:::
+1. 单击" **清除网站数据"** 按钮。
+
+   :::image type="content" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="&quot;清除网站数据&quot;按钮。" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -126,5 +103,5 @@ ms.locfileid: "12324844"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/storage/cache)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: a3b889310bb7c3ddd36702f780c53091bec9f233
-ms.sourcegitcommit: 392c0c34ca43bb2b14f93ff4e24b3713ac505013
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "12339025"
 ---
 # <a name="test-keyboard-support-using-the-source-order-viewer"></a>使用源订单查看器测试键盘支持
 
@@ -26,47 +20,56 @@ ms.locfileid: "12339025"
 辅助功能 [测试演示网页](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 有一个反直观的 Tab 键顺序，在此顺序中，键盘用户只有在按 Tab 键浏览所有"更多"链接后才能访问边栏 **导航** 菜单。  边栏导航菜单是进入页面内容深度的快捷方式。  但是，因为你需要在到达边栏导航菜单之前浏览整个页面，所以该导航菜单对键盘用户无效。
 
 演示 `Tab` 页面上的关键顺序为：
+
 1. " **搜索** "字段，然后是"搜索 **"** 字段的 **"开始"** 按钮。
-1. "**猫****"部分中的**"更多"按钮，用于导航到"猫"网页。  然后是其他 **更多** 按钮，用于"动物"、"动物"、"木马"和"Alpacas"。
+
+1. "**猫****"部分中的**"更多"按钮，转到"猫"网页。  然后是其他 **更多** 按钮，用于"动物"、"动物"、"木马"和"Alpacas"。
+
 1. 侧边栏导航菜单的蓝色链接："**动物**、动物****"和****"**Alpacas"**。 ****
+
 1. 在"捐赠"表单中的"支持"文本框中。
+
 1. 顶部导航栏中的按钮："主页"、******"采用动物**"、**"完成**时间"、**"作业**"和"关于**我们"**。
+
 1. 浏览器的窗口顶部界面。
 
 导致键顺序混乱 `Tab` 的原因是，使用键盘时遇到的顺序由文档的源顺序决定。  使用键盘遇到的顺序可以使用 `tabindex` 元素上的 属性进行修改，这将使该元素从源顺序中退出。
 
 在文档的源代码中，边栏导航菜单显示在网页的主要内容之后。  CSS 用于将边栏导航菜单定位到网页大部分主要内容的上方。
 
-可以使用"辅助功能"选项卡中的"源 **顺序** 查看器"测试 **页面元素** 的顺序。 源 **订单查看器是** 一项实验性功能。 有关详细信息，请导航到" [源订单查看器"](../experimental-features/index.md#source-order-viewer)。
+可以使用"辅助功能"选项卡中的"源 **顺序** 查看器"测试 **页面元素** 的顺序。 源 **订单查看器是** 一项实验性功能。 请参阅 [源订单查看器](../experimental-features/index.md#source-order-viewer)。
 
+
+### <a name="turning-on-the-source-order-viewer"></a>打开源订单查看器
 
 若要打开源订单查看器，请执行以下命令：
 
-1.  在 DevTools 的右上角，选择"设置 (设置****![按钮](../media/settings-button-icon.msft.png)。) 按钮。
+1. 在 DevTools 的右上角，选择"设置 (设置****![按钮](../media/settings-button-icon.msft.png)。) 按钮。
 
-1.  **在设置****，选择实验**。
+1. **在设置****，选择实验**。
 
-1.  选中" **源订单查看器"** 复选框。
+1. 选中" **源订单查看器"** 复选框。
 
-1.  在页面的右上角，设置 **X** 以**** 关闭设置页。  在 DevTools 顶部，消息 **一个或多个设置已更改，要求重新加载生效。** 显示。  选择" **重新加载 DevTools"** 按钮。
+1. 在页面右上角的"**设置"，** 单击 **"X**"关闭设置页。  在 DevTools 顶部，消息 **一个或多个设置已更改，要求重新加载生效。** 显示。  单击" **重新加载 DevTools"** 按钮。
 
 
+### <a name="activating-and-using-the-source-order-viewer"></a>激活和使用源订单查看器
 
 若要激活源订单查看器并使用演示页面，请执行以下命令：
 
-1.  打开 [新选项卡中的辅助功能测试](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 演示网页。 然后选择 **F12** 以打开 DevTools。
+1. 打开 [新窗口或选项卡中的](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 辅助功能测试演示网页。
 
-1.  在" **元素"** 工具中的"样式" **选项卡的右侧** ，选择 **"辅助功能"** 选项卡。
+1. 右键单击网页中的任意位置，然后选择"检查 **"**。  或者，按 `F12`。  将在网页旁边打开 DevTools。
 
-1.  在" **源订单查看器** "部分，选中" **显示源订单"** 复选框。  在呈现的网页中 `Tab` ，将显示数字，指示由源文件中的代码行顺序控制的顺序。
+1. 在" **元素"** 工具中的"样式" **选项卡的右侧** ，选择 **"辅助功能"** 选项卡。
 
-1.  在"元素"工具的 DOM **树中，** 选择主要布局元素，如 `header` 元素。  数字覆盖现在显示在呈现的页面的各个部分，指示不同元素的源顺序。
+1. 在" **源订单查看器** "部分，选中" **显示源订单"** 复选框。  在呈现的网页中 `Tab` ，将显示数字，指示由源文件中的代码行顺序控制的顺序。
 
-    :::image type="complex" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="激活源订单查看器会将源中的元素顺序显示为页面上的覆盖层。" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
-        激活**源订单查看器** 将源中的元素顺序显示为页面上的覆盖层
-    :::image-end:::
+1. 在"元素"工具的 DOM **树中，** 选择主要布局元素，如 `header` 元素。  数字覆盖现在显示在呈现的页面的各个部分，指示不同元素的源顺序。
 
-1.  滚动页面以查看所有数字覆盖，包括页面页脚部分。
+   :::image type="content" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="激活源订单查看器会将源中的元素顺序显示为页面上的覆盖层。" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
+
+1. 滚动页面以查看所有数字覆盖，包括页面页脚部分。
 
 
 <!-- ====================================================================== -->

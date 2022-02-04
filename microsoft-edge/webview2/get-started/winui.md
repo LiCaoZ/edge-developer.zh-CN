@@ -7,12 +7,6 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 11/05/2021
-ms.openlocfilehash: c7e6e07049d89afc92df3b4e4009546d76fadf4d
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318945"
 ---
 # <a name="get-started-with-webview2-in-winui-3-windows-app-sdk"></a>WinUI 3 应用 SDK (Windows中的 WebView2) 
 
@@ -21,59 +15,59 @@ ms.locfileid: "12318945"
 
 ## <a name="step-0---set-up-development-environment"></a>步骤 0 - 设置开发环境
 
-1. 按照设置开发环境的步骤 1-4 安装 Visual Studio、配置 NuGet 程序包源并安装 Windows App SDK Extension for Visual Studio。 [](/windows/apps/project-reunion/set-up-your-development-environment)
+1. 按照设置开发环境的步骤 1-4 [](/windows/apps/project-reunion/set-up-your-development-environment) 安装 Visual Studio、配置 NuGet 程序包源并安装 Windows App SDK Extension for Visual Studio。
 
-1. 安装安装在 Windows 10 版本 1803 (版本 17134 或更高版本Microsoft Edge [WebView2](https://developer.microsoft.com/microsoft-edge/webview2)运行时或任何非) 渠道。 [](https://www.microsoftedgeinsider.com/download)  有关更新Windows 10或更高版本，请参阅 Windows [Update： FAQ](https://support.microsoft.com/help/12373)。
+1. 安装安装在 Windows 10 版本 1803 [](https://www.microsoftedgeinsider.com/download) (版本 17134 或更高版本Microsoft Edge [WebView2](https://developer.microsoft.com/microsoft-edge/webview2) 运行时或任何) 渠道。  有关更新或Windows 10，请参阅Windows[更新：常见问题](https://support.microsoft.com/help/12373)。
 
-1.  若要访问所有特定于开发人员Visual Studio功能，请打开开发人员[模式](/windows/uwp/get-started/enable-your-device-for-development)。
+1.  若要访问开发人员特定的所有Visual Studio功能，请打开[开发人员模式](/windows/uwp/get-started/enable-your-device-for-development)。
 
 
 ## <a name="step-1---create-project"></a>步骤 1 - 创建Project
 
 从包含单个主窗口的基本桌面项目开始。
 
-1.  在Visual Studio中，单击 **"新建项目"。**
-1.  在项目筛选器菜单中，选择 **"C#"。** **Windows**、 和**WinUI**。
+1.  在Visual Studio中，单击 **"新建项目"**。
+1.  在项目筛选器菜单中，选择"C# **"**。 **Windows** 和 **WinUI**。
 
     :::image type="complex" source="./media/winui-getting-started-selections.png" alt-text="使用项目创建一个新的 WinUI Visual Studio。" lightbox="./media/winui-getting-started-selections.png":::
         使用项目创建一个新的 WinUI Visual Studio
     :::image-end:::
 
-1.  单击 **"空白应用，打包 (桌面设备中的 WinUI) **  >  **下一步"。**
+1.  Click **Blank App， Packaged (WinUI in Desktop) ** > **Next**.
 1.  输入项目名称。
 1.  根据需要**更改****位置**和解决方案名称默认值。
 1.  单击“创建”****。
 1.  在 **"新建通用Windows平台Project**中，选择以下值。
-    *   **目标版本****：Windows 10版本 1903 (版本 18362**) 或更高版本
-    *   **最低版本****：Windows 10版本 1803 (版本 17134) **
+    *   **目标版本**：**Windows 10版本 1903 (版本 18362 **) 或更高版本
+    *   **最低版本**：**Windows 10版本 1803 (版本 17134) **
 
 1. 单击“确定”****。
 
-    :::image type="complex" source="./media/winui-getting-started-project-type.png" alt-text="&quot;新建通用Windows平台Project对话框，包含&quot;目标版本&quot;和&quot;最低版本&quot;的选定值。" lightbox="./media/winui-getting-started-project-type.png":::
-       "新建通用Windows平台Project对话框，包含"目标版本"和"最低版本"的选定值。
+    :::image type="complex" source="./media/winui-getting-started-project-type.png" alt-text="&quot;新建通用Windows平台Project&quot;对话框，包含&quot;目标版本&quot;和&quot;最低版本&quot;的选定值。" lightbox="./media/winui-getting-started-project-type.png":::
+       "新建通用Windows平台Project"对话框，包含"目标版本"和"最低版本"的选定值。
     :::image-end:::
 
     解决方案资源管理器显示生成的两个新项目：
-    *   **你的项目名称 (桌面) 。 **  桌面项目包含你的应用的代码。  `App.xaml.cs`该文件定义一个 `Application` 表示应用实例的类。 `MainWindow.xaml.cs`该文件定义一个 `MainWindow` 类，该类表示应用实例显示的主窗口。  这些类派生自 `Microsoft.UI.Xaml` WinUI 命名空间中的类型。
-    *   **你的项目名称 (包) 。 **  包项目是一Windows应用程序打包Project，配置为将应用构建到 MSIX 包中进行部署。 该项目包含应用的程序包清单，并且默认情况下是解决方案的启动项目。 有关详细信息，请参阅在 Visual Studio 中为[MSIX](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net)打包设置桌面应用程序和程序包[清单架构Windows 10。](/uwp/schemas/appxpackage/uapmanifestschema/schema-root)
+    *   **你的项目名称 (桌面) **。  桌面项目包含你的应用的代码。  该文件 `App.xaml.cs` 定义一个 `Application` 表示应用实例的类。 该文件 `MainWindow.xaml.cs` 定义一个 `MainWindow` 类，该类表示应用实例显示的主窗口。  这些类派生自 `Microsoft.UI.Xaml` WinUI 命名空间中的类型。
+    *   **你的项目名称 (包) **。  包项目是一Windows应用程序打包Project，配置为将应用构建到 MSIX 包中进行部署。 该项目包含应用的程序包清单，并且默认情况下是解决方案的启动项目。 有关详细信息，请参阅在 Visual Studio 中为 [MSIX](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net) 打包设置桌面应用程序[Windows 10。](/uwp/schemas/appxpackage/uapmanifestschema/schema-root)
 
-1.  在"解决方案资源管理器"中， `MainWindow.xaml` 打开 文件以显示代码。
+1.  在"解决方案资源管理器"中，打开 `MainWindow.xaml` 文件以显示代码。
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
+1.  单击 **"文件** > **""保存 (Ctrl+Shift+S) ** 保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
 ## <a name="step-2---add-a-webview2-control-to-your-project"></a>步骤 2 - 将 WebView2 控件添加到项目中
 
-将 `MainWindow.xaml` 和 `MainWindow.xaml.cs` 文件编辑到示例应用的 WebView2 控件。
+将 和 `MainWindow.xaml` `MainWindow.xaml.cs` 文件编辑到示例应用的 WebView2 控件。
 
-1.  在 `MainWindow.xaml` 文件中，若要添加 WebView2 XAML 命名空间，在 标记内插入以下 `<Window/>` 行。
+1.  在 文件中 `MainWindow.xaml` ，若要添加 WebView2 XAML 命名空间，在 标记内插入以下 `<Window/>` 行。
 
     ```xml
     xmlns:controls="using:Microsoft.UI.Xaml.Controls"
     ```
 
-    确保 中的 `MainWindow.xaml` 代码类似于以下代码段。
+    确保 中的代码 `MainWindow.xaml` 类似于以下代码段。
 
     ```xml
     <Window
@@ -114,27 +108,27 @@ ms.locfileid: "12318945"
     </Grid>
     ```
 
-1.  在 `MainWindow.xaml.cs` 文件中，注释掉以下行。
+1.  在 文件中 `MainWindow.xaml.cs` ，注释掉以下行。
 
     ```xml
         // myButton.Content = "Clicked";
     ```
 
-1.  单击 **"**  >  **文件""保存 (Ctrl+Shift+S) ，** 以保存项目。
+1.  单击 **"文件** > **""保存 (Ctrl+Shift+S) **，以保存项目。
 
-1.  按 **F5**生成并运行项目。
+1.  按 **F5** 生成并运行项目。
 
-1.  确保 WebView2 控件显示 [https://www.microsoft.com](https://www.microsoft.com) 。
+1.  确保 WebView2 控件显示 [https://www.microsoft.com](https://www.microsoft.com)。
 
     :::image type="complex" source="./media/winui-getting-started-part-3.png" alt-text="示例应用显示 Microsoft 网站。" lightbox="./media/winui-getting-started-part-3.png":::
-       具有 WebView2 控件的示例应用程序将显示 Microsoft 网站 https://www.microsoft.com 。
+       具有 WebView2 控件的示例应用程序将显示 Microsoft 网站 。 https://www.microsoft.com
     :::image-end:::
 
 ## <a name="step-3---add-navigation-controls"></a>步骤 3 - 添加导航控件
 
 若要允许用户控制 WebView2 控件中显示的网页，请向示例应用添加地址栏，如下所示。
 
-1.  在文件中，将以下代码段复制并粘贴 `MainWindow.xaml` 到包含 `<Grid>` 元素的元素 `WebView2` 中。
+1.  在文件中 `MainWindow.xaml` ，将以下代码段复制并粘贴到 `<Grid>` 包含 元素的元素 `WebView2` 中。
 
     ```xml
         <TextBox Name="addressBar" Grid.Column="0"/>
@@ -164,7 +158,7 @@ ms.locfileid: "12318945"
     </Grid>
     ```
 
-1.  在 `MainWindow.xaml.cs` 文件中，将以下代码段复制到 `myButton_Click` 中。 此代码将 WebView2 控件导航到地址栏中输入的 URL。
+1.  在 文件中 `MainWindow.xaml.cs` ，将以下代码段复制到 `myButton_Click`中。 此代码将 WebView2 控件导航到地址栏中输入的 URL。
 
     ```csharp
     private void myButton_Click(object sender, RoutedEventArgs e)
@@ -181,24 +175,24 @@ ms.locfileid: "12318945"
     }
     ```
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
+1.  单击 **"文件** > **""保存 (Ctrl+Shift+S) ** 保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
-1.  在地址栏中输入新 URL，然后选择"转到 **"。**  例如，输入 `https://www.bing.com` 。
+1.  在地址栏中输入新 URL，然后选择"转到 **"**。  例如，输入 `https://www.bing.com`。
 
     > [!NOTE]
-    > 请确保在地址栏中输入完整 URL。  `ArgumentException` 如果 URL 不以 或 为起始，则会引发 `http://` 异常 `https://` 。
+    > 请确保在地址栏中输入完整 URL。  `ArgumentException` 如果 URL 不以 或 开始，则会引发 `http://` 异常 `https://`。
 
     :::image type="complex" source="./media/winui-getting-started-bing.png" alt-text="示例应用显示必应网站。" lightbox="./media/winui-getting-started-bing.png":::
-       示例应用显示必应网站。 地址栏显示 URL https://www.bing.com 。
+       示例应用显示必应网站。 地址栏显示 URL https://www.bing.com。
     :::image-end:::
 
 ## <a name="step-4---navigation-events"></a>步骤 4 - 导航事件
 
 在此部分中，您将添加用于导入 WebView2 核心库的代码。
 
-1.  将以下行添加到 的顶部 `MainWindow.xaml.cs` ：
+1.  将以下行添加到 的顶部 `MainWindow.xaml.cs`：
 
     ```csharp
     using Microsoft.Web.WebView2.Core;
@@ -213,7 +207,7 @@ ms.locfileid: "12318945"
     *   `NavigationCompleted`
     
     > [!NOTE]
-    > 如果发生 HTTP 重定向，则一行 `NavigationStarting` 中有多个事件。
+    > 如果发生 HTTP 重定向，则一行中 `NavigationStarting` 有多个事件。
     
     有关详细信息，请参阅 [WebView2 的导航事件](../concepts/navigation-events.md)。
     
@@ -223,9 +217,9 @@ ms.locfileid: "12318945"
     *   `ContentLoading`
     *   `HistoryChanged`
 
-    作为如何使用事件的示例，请注册用于取消任何非 `NavigationStarting` HTTPS 请求的处理程序。
+    作为如何使用事件的示例 `NavigationStarting` ，请注册用于取消任何非 HTTPS 请求的处理程序。
 
-1.  在 `MainWindow.xaml.cs` 中，修改构造函数以注册 `EnsureHttps` ，并添加 `EnsureHttps` 函数，以便与以下代码段匹配。
+1.  在 `MainWindow.xaml.cs`中，修改构造函数以注册 `EnsureHttps`，并添加 `EnsureHttps` 函数，以便与以下代码段匹配。
 
     ```csharp
     public MainWindow()
@@ -248,7 +242,7 @@ ms.locfileid: "12318945"
     }
     ```
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
+1.  单击 **"文件** > **""保存 (Ctrl+Shift+S) ** 保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
@@ -267,7 +261,7 @@ ms.locfileid: "12318945"
 
 例如，添加在用户尝试打开非 HTTPS 网站时发送通知的脚本，如下所示：
 
-1.  修改 `EnsureHttps` 函数以将脚本注入到使用 [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync)的 Web 内容中。
+1.  修改 函数 `EnsureHttps` 以将脚本注入到使用 [ExecuteScriptAsync 的 Web 内容中](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync)。
 
     ```csharp
     private void EnsureHttps(WebView2 sender, CoreWebView2NavigationStartingEventArgs args)
@@ -285,11 +279,11 @@ ms.locfileid: "12318945"
     }
     ```
 
-1.  单击 **"**  >  **文件全部保存 (Ctrl+Shift+S) **保存项目。
+1.  单击 **"文件** > **""保存 (Ctrl+Shift+S) ** 保存项目。
 
 1.  按 **F5** 生成并运行项目。
 
-1. 尝试打开非 HTTPS 网站，如 `http://www.bing.com` 。 确保应用在您尝试打开非 HTTPS 网站时显示警告。
+1. 尝试打开非 HTTPS 网站，如 `http://www.bing.com`。 确保应用在您尝试打开非 HTTPS 网站时显示警告。
 
 :::image type="complex" source="./media/winui-getting-started-script.png" alt-text="示例应用 WebView2 控件显示非 HTTPS 网站的警报对话框。" lightbox="./media/winui-getting-started-script.png":::
    示例应用 WebView2 控件显示非 HTTPS 网站的警报对话框。 警报对话框显示文本，指出非 https 站点不安全，请尝试 https 链接。

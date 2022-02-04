@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 521dc582264b5adea64c2a8b625429d94145e557
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325443"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,13 +24,13 @@ ms.locfileid: "12325443"
 
 使用断点暂停 JavaScript 代码。  本文介绍了 DevTools 中提供的每种断点类型，以及何时使用以及如何设置每种类型。
 
-有关使用现有网页的介绍性教程，请参阅[开始调试 JavaScript。](index.md)
+有关使用现有网页的介绍性教程，请参阅 [开始调试 JavaScript](index.md)。
 
 
 <!-- ====================================================================== -->
 ## <a name="overview-of-when-to-use-each-breakpoint-type"></a>何时使用各断点类型的概述
 
-最著名的断点类型是代码行。  但代码行断点设置效率可能较低，尤其是在不知道具体查找位置，或者正使用大型代码库时。  通过了解如何以及何时使用其他类型的断点，可在调试时节省自己的时间。
+最著名的断点类型是代码行。  但代码行断点设置效率可能很低，尤其是在您不知道确切查找位置，或者您正使用大型代码库时。  通过了解如何以及何时使用其他类型的断点，在调试时可以节省自己的时间。
 
 | 断点类型 | 使用此类型，如果希望暂停... |
 |:--- |:--- |
@@ -56,14 +50,15 @@ ms.locfileid: "12325443"
 
 在开发工具中设置代码行断点：
 
-1.  选择“**源**”工具。
-1.  打开包含要中断的代码行的文件。
-1.  转到代码行。
-1.  代码行的左侧是行号列。  选择。  行号列旁边出现红色图标。
+1. 选择 **"源"** 工具。
 
-    :::image type="complex" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="代码行断点。" lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
-       代码行断点
-    :::image-end:::
+1. 打开包含要中断的代码行的文件。
+
+1. 转到代码行。
+
+1. 代码行的左侧是行号列。  单击它。  红色图标 (或最近，行号) 旁边将显示一个蓝色矩形箭头：
+
+   :::image type="content" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="代码行断点。" lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
 
 ### <a name="line-of-code-breakpoints-in-your-code"></a>代码中的代码行断点
 
@@ -82,33 +77,35 @@ console.log('c');
 
 设置条件代码行断点：
 
-1.  选择“**源**”工具。
-1.  打开包含要中断的代码行的文件。
-1.  转到代码行。
-1.  代码行的左侧是行号列。  将鼠标悬停在行号上并打开上下文菜单 (右键单击") "。
-1.  选择“**添加条件断点**”。  代码行下方将显示一个对话框。
-1.  在对话框中输入条件。
-1.  选择 `Enter` 以激活断点。  行号列旁边的图标。
+1. 选择 **"源"** 工具。
 
-    :::image type="complex" source="../media/javascript-sources-page-js-conditional-breakpoint.msft.png" alt-text="条件代码行断点。" lightbox="../media/javascript-sources-page-js-conditional-breakpoint.msft.png":::
-       条件代码行断点
-    :::image-end:::
+1. 打开包含要中断的代码行的文件。
+
+1. 转到代码行。
+
+1. 代码行的左侧是行号列。  右键单击它。
+
+1. 选择 **"添加条件断点"**。  代码行下方将显示一个对话框。
+
+1. 在对话框中输入条件。
+
+1. 按 `Enter` 以激活断点。  红色菱形 (或最近，) 号列顶部显示橙色图标：
+
+   :::image type="content" source="../media/javascript-sources-page-js-conditional-breakpoint.msft.png" alt-text="条件代码行断点。" lightbox="../media/javascript-sources-page-js-conditional-breakpoint.msft.png":::
 
 ### <a name="manage-line-of-code-breakpoints"></a>管理代码行断点
 
 使用“**断点**”窗格可禁用或删除单个位置中的代码行断点。
 
-:::image type="complex" source="../media/javascript-sources-page-js-breakpoints-16-33.msft.png" alt-text="断点面板。" lightbox="../media/javascript-sources-page-js-breakpoints-16-33.msft.png":::
-   **断点**窗格
-:::image-end:::
+:::image type="content" source="../media/javascript-sources-page-js-breakpoints-16-33.msft.png" alt-text="断点面板。" lightbox="../media/javascript-sources-page-js-breakpoints-16-33.msft.png":::
 
-*   选中条目旁边的复选框以禁用该断点。
-*   将鼠标悬停在某个项上并打开上下文菜单 (右键单击) 删除该断点。
-*   将鼠标悬停在"**** 断点"窗格中的任意位置，然后打开上下文菜单 (右键单击") "以停用所有断点、禁用所有断点或删除所有断点。  禁用所有断点等效于取消选中每个断点。  取消激活所有断点将指示开发工具忽略所有代码行断点，但也要保持启用状态，以使每个断点都与重新激活每个断点时的状态相同。
+*  选中某个条目旁边的复选框以禁用该断点。
 
-    :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="&quot;断点&quot;窗格中的已停用断点。" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
-       “**断点**”窗格中的已停用断点
-    :::image-end:::
+*  右键单击某个条目以删除该断点。
+
+*  右键单击"断点"**** 窗格中的任意位置以停用所有断点、禁用所有断点或删除所有断点。  禁用所有断点等效于取消选中每个断点。  取消激活所有断点将指示开发工具忽略所有代码行断点，但也要保持启用状态，以使每个断点都与重新激活每个断点时的状态相同。
+
+:::image type="content" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="&quot;断点&quot;窗格中的已停用断点。" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -118,20 +115,21 @@ console.log('c');
 
 设置 DOM 更改断点类型：
 
-1.  选择“**元素**”工具。
-1.  转到要设置断点的元素。
-1.  将鼠标悬停在 元素上并打开上下文菜单 (右键单击") "。
-1.  将鼠标悬停在“**中断**”上，然后选择“**子树修改**”，“**属性修改**”或“**节点删除**”。
+1. 选择" **元素"** 工具。
 
-    :::image type="complex" source="../media/javascript-elements-break-on-subtree-modifications.msft.png" alt-text="用于创建 DOM 更改断点的上下文菜单。" lightbox="../media/javascript-elements-break-on-subtree-modifications.msft.png":::
-       用于创建 DOM 更改断点的上下文菜单
-    :::image-end:::
+1. 转到要设置断点的元素。
+
+1. 右键单击元素，指向 **"中断"，** 然后选择" **子树修改**"、属性 **修改**或 **"节点删除"**。
+
+   :::image type="content" source="../media/javascript-elements-break-on-subtree-modifications.msft.png" alt-text="用于创建 DOM 更改断点的上下文菜单。" lightbox="../media/javascript-elements-break-on-subtree-modifications.msft.png":::
 
 ### <a name="types-of-dom-change-breakpoints"></a>DOM 更改断点类型
 
-*   **子树修改**。  删除或添加当前选定的节点的子节点，或者更改子节点的内容时触发。  子节点属性更改时，或对当前选定的节点进行任何更改时不触发。
-*   **属性修改**：在当前选定的节点上添加或删除属性时触发，或当属性值更改时触发。
-*   **节点删除**：删除当前选定的节点时触发。
+*  **子树修改**。  删除或添加当前选定的节点的子节点，或者更改子节点的内容时触发。  子节点属性更改时，或对当前选定的节点进行任何更改时不触发。
+
+*  **属性修改**：在当前选定的节点上添加或删除属性时触发，或当属性值更改时触发。
+
+*  **节点删除**：删除当前选定的节点时触发。
 
 
 <!-- ====================================================================== -->
@@ -146,29 +144,31 @@ console.log('c');
 
 设置 XHR 断点：
 
-1.  选择“**源**”工具。
-1.  展开“**XHR 断点**”窗格。
-1.  选择“**添加断点**”。
-1.  输入要中断的字符串。  当此字符串存在于 XHR 请求 URL 中的任何位置时，开发工具将暂停。
-1.  选择 `Enter` 以确认。
+1. 选择 **"源"** 工具。
 
-    :::image type="complex" source="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png" alt-text="创建 XHR 断点。" lightbox="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png":::
-       创建 XHR 断点
-    :::image-end:::
+1. 展开“**XHR 断点**”窗格。
+
+1. 单击 **"添加断点"**。
+
+1. 输入要中断的字符串。  当此字符串存在于 XHR 请求 URL 中的任何位置时，开发工具将暂停。
+
+1. 按 `Enter` 以确认。
+
+:::image type="content" source="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png" alt-text="创建 XHR 断点。" lightbox="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## <a name="event-listener-breakpoints"></a>事件侦听器断点
 
-如果想在事件触发后运行的事件侦听器代码上暂停时，请使用事件侦听器断点。  可以选择特定事件，如 `click`，或事件类别，如所有鼠标事件。
+如果想在事件触发后运行的事件侦听器代码上暂停时，请使用事件侦听器断点。  可以选择特定事件（如 ） `click`或事件类别，如所有鼠标事件。
 
-1.  选择“**源**”工具。
-1.  展开“**事件侦听器断点**”窗格。  开发工具显示事件类别的列表，如 **动画**。
-1.  检查这些类别之一可在触发该类别的任何事件时暂停，或展开该类别并检查特定事件。
+1. 选择 **"源"** 工具。
 
-    :::image type="complex" source="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png" alt-text="创建事件侦听器断点。" lightbox="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png":::
-       创建事件侦听器断点
-    :::image-end:::
+1. 展开“**事件侦听器断点**”窗格。  开发工具显示事件类别的列表，如 **动画**。
+
+1. 检查这些类别之一可在触发该类别的任何事件时暂停，或展开该类别并检查特定事件。
+
+:::image type="content" source="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png" alt-text="创建事件侦听器断点。" lightbox="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -176,24 +176,23 @@ console.log('c');
 
 想要暂停引发已捕获或未捕获异常的代码行时，请使用异常断点。
 
-1.  选择“**源**”工具。
-1.  选择 **"在异常时暂停 (** ![ 异常时暂停 ](../media/pause-on-exceptions-icon.msft.png) "。) 。  图标在启用时变为蓝色。
+1. 选择 **"源"** 工具。
 
-    :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="&quot;在异常时暂停&quot;按钮。" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
-       “**因异常暂停**”按钮
-    :::image-end:::
+1. 单击 **"在异常时暂停"** (![异常时单击"](../media/pause-on-exceptions-icon.msft.png) 暂停"。) 。  图标在启用时变为蓝色。
 
-1.  **可选**。  如果还想捕获异常时暂停，请选中“**捕获异常时暂停**”复选框。
+   :::image type="content" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="&quot;在异常时暂停&quot;按钮。" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
 
-    :::image type="complex" source="../media/javascript-sources-page-js-paused-on-exception.msft.png" alt-text="在未捕获的异常上暂停。" lightbox="../media/javascript-sources-page-js-paused-on-exception.msft.png":::
-       因未捕获异常暂停
-    :::image-end:::
+1. **可选：** 如果 **除了未** 捕获的异常之外，还想要在捕获的异常上暂停，请选中"暂停捕获的异常"复选框。
+
+   :::image type="content" source="../media/javascript-sources-page-js-paused-on-exception.msft.png" alt-text="在未捕获的异常上暂停。" lightbox="../media/javascript-sources-page-js-paused-on-exception.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## <a name="function-breakpoints"></a>函数断点
 
-如果要在运行特定功能时暂停，请运行 `debug(method)` 方法，其中 `method` 是要调试的命令、函数或方法。  可以在代码中插入 `debug()`（如`console.log()`语句）或从开发工具控制台运行方法。  `debug()` 等效于在函数第一行上“[代码行断点](#line-of-code-breakpoints)”设置。
+如果要在运行特定功能时暂停，请运行 `debug(method)` 方法，其中 `method` 是要调试的命令、函数或方法。  你可以插入 `debug()` 代码库 (如 `console.log()` 语句) ，或者从 DevTools 控制台运行 方法。
+
+`debug()` 等效于在函数第一行上“[代码行断点](#line-of-code-breakpoints)”设置。
 
 ```javascript
 function sum(a, b) {
@@ -206,7 +205,7 @@ sum();
 
 ### <a name="make-sure-the-target-function-is-in-scope"></a>确保目标函数在作用域内
 
-如果要调试的函数不在作用域内，开发工具将引发 `ReferenceError`。
+如果你要调试的函数 `ReferenceError` 不在范围内，DevTools 将引发 。
 
 ```javascript
 (function () {
@@ -219,20 +218,22 @@ sum();
     debug(yo); // This works.
     yo();
 })();
-debug(hey); // This does not work.  hey() is out of scope.
+debug(hey); // This doesn't work.  hey() is out of scope.
 ```
 
-如果要从开发工具控制台运行 `debug()` 方法，确保目标函数位于作用域内则比较困难。  下面是一个策略：
+当你从 `debug()` DevTools 控制台调用时，下面是一种确保目标函数在作用域内的技术：
 
-1.  在函数作用域内的某个位置设置[代码行断点](#line-of-code-breakpoints)。
-1.  触发断点。
-1.  代码仍在代码行断点处暂停时，在开发工具控制台中运行 `debug()` 方法。
+1. 在函数作用域内的某个位置设置[代码行断点](#line-of-code-breakpoints)。
+
+1. 触发断点。  您的代码在断点处暂停，并且当前函数的变量位于范围内。
+
+1. 在 `debug()` DevTools 控制台中调用，同时代码仍暂停在代码行断点。
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [JavaScript 调试功能](./reference.md) - 使用源工具中的 **调试器** UI。
+*  [JavaScript 调试功能](./reference.md) - 使用源工具中的 **调试器 UI** 。
 *  [开始调试 JavaScript](index.md) - 使用现有网页的介绍性教程。
 *  [源工具概述](../sources/index.md) - 调试器是 **源** 工具的一部分，其中包括 JavaScript 编辑器。
 

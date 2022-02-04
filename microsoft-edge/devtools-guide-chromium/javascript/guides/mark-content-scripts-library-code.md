@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: b1fa04d7ff554d912bf78f418e7c5ed760240a7f
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12322989"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,21 +22,27 @@ ms.locfileid: "12322989"
    limitations under the License.  -->
 # <a name="mark-content-scripts-as-library-code"></a>将内容脚本标记为库代码
 
-使用 **"源"** 工具逐步执行 [代码时](../index.md#step-4-step-through-the-code)，有时会对无法识别的代码暂停。  你可能已经暂停了已安装的 Microsoft Edge 扩展的代码。  若要不在扩展代码上暂停，请完成以下操作。
+使用 **"源"** 工具逐步执行代码时，有时会暂停你无法识别的代码。  你可能已经暂停了已安装的一个 Microsoft Edge 扩展的代码。  为避免暂停扩展代码：
 
-1.  在 DevTools 的右上角，选择齿轮图标** (设置) 。**  此时将出现**设置**页面。
-1.  在 **"设置"** 下，选择"**忽略列表"。**  将显示 **"框架**库代码 **"设置**部分。
-1.  打开" **将内容脚本标记为库代码"** 复选框。
+1. 在 DevTools 的右上角，单击设置** (** 设置![图标](../../media/settings-gear-icon-light-theme.png)。) 按钮。
 
-    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="启用&quot;将内容脚本标记为库代码&quot;复选框。" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
-       启用" **将内容脚本标记为库代码"** 复选框
-    :::image-end:::
+1. 在"**设置** > **库代码**"页中，选中"**将内容脚本标记为库代码"** 复选框。
+
+   :::image type="content" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="启用&quot;将内容脚本标记为库代码&quot;复选框。" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
+
+1. 单击 **关闭** DevTools (![关闭 DevTools 图标](../../media/close-devtools-icon-light-theme.png) 。) 按钮。
+
+
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
+
+* [步骤 4：逐步完成](../index.md#step-4-step-through-the-code)_开始调试 JavaScript 中的代码_
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developer.chrome.com/docs/devtools/javascript/ignore-chrome-extension-scripts/)，由技术编写 (、Chrome DevTools & Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors#kayce-basques)
+> 原始页面位于[此处](https://developer.chrome.com/docs/devtools/javascript/ignore-chrome-extension-scripts/)，由技术编写 (Chrome DevTools & Lighthouse) 创作。[](https://developers.google.com/web/resources/contributors#kayce-basques)
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

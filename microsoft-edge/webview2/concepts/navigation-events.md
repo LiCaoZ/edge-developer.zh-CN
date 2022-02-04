@@ -7,12 +7,6 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 10/28/2021
-ms.openlocfilehash: c363da5b0bc31214bfa009ede640162f72be8d6f
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319092"
 ---
 # <a name="navigation-events-for-webview2"></a>WebView2 的导航事件
 
@@ -37,15 +31,15 @@ ms.locfileid: "12319092"
 | Sequence | 事件名称 | 详细信息 |
 | --- | --- | --- |
 | 1 | `NavigationStarting` |  WebView2 开始导航，导航结果为网络请求。  在事件期间，主机可能会禁止该请求。 |
-| 2 | `SourceChanged` |  WebView2 的源将更改到新的 URL。  该事件可能由不会导致网络请求（如片段导航）的导航操作导致。 |
+| 2 | `SourceChanged` |  WebView2 的源将更改到新的 URL。  该事件可能是由不会导致网络请求（如片段导航）的导航操作导致。 |
 | 3 | `ContentLoading` |  WebView2 开始加载新页面的内容。 |
 | 4 | `HistoryChanged` |  导航导致 WebView2 的历史记录更新。 |
 | 5 | `DOMContentLoaded` |  WebView2 已完成对 DOM 内容进行分析，但尚未在页面上加载所有图像、脚本和其他内容。 |
 | 6 | `NavigationCompleted` |  WebView2 完成新页面上的内容加载。 |
 
-上图显示了在各自的事件参数上具有相同的 `NavigationId` 属性的导航事件。
+上图显示了在各自的事件 `NavigationId` 参数上具有相同的属性的导航事件。
 
-使用事件记录中提供的导航 ID (跟踪每个新文档的 `NavigationId` 导航) 。  `NavigationId`每次成功导航到新文档时，WebView2 的事件都会更改。
+使用事件记录中提供的导航 ID `NavigationId` (跟踪每个新文档的导航) 。  每次 `NavigationId` 成功导航到新文档时，WebView2 的事件都会更改。
 
 具有不同事件实例的 `NavigationId` 导航事件可能会重叠。  例如，启动导航事件时，必须等待相关 `NavigationStarting` 事件。  如果随后启动另一个导航，你将看到以下序列：
 1. 第 `NavigationStarting` 一个导航的事件。
@@ -53,13 +47,13 @@ ms.locfileid: "12319092"
 1. 第 `NavigationCompleted` 一个导航的事件。
 1. 第二个导航的所有其他相应导航事件。
 
-在错误情况下，可能（也可能没有）事件， `ContentLoading` 具体取决于导航是否继续导航到错误页面。
+在错误情况下，可能（也可能没有 `ContentLoading` ）事件，具体取决于导航是否继续导航到错误页面。
 
-如果发生 HTTP 重定向，则一行中有多个事件，其中更高版本的事件参数设置了属性;但是， `NavigationStarting` `IsRedirect` `NavigationId` 该事件保持不变。
+如果发生 HTTP 重定向`NavigationStarting`，则一行中有多个事件，其中更高版本的事件`IsRedirect``NavigationId`参数设置了属性;但是，该事件保持不变。
 
-同文档导航事件（如导航到同一文档中的片段）不会导致事件，并且 `NavigationStarting` 不会增加 `NavigationId` 事件。
+同文档导航事件 `NavigationStarting` （如导航到同一文档中的片段）不会导致事件，并且不会增加 `NavigationId` 事件。
 
-若要监视或取消 WebView2 实例中的子框架内的导航事件，请使用 和 `FrameNavigationStarting` `FrameNavigationCompleted` 事件。  这些事件与等效的非帧对应事件类似。
+若要监视或取消 WebView2 实例中的子框架内的导航事件，请使用 `FrameNavigationStarting` 和 `FrameNavigationCompleted` 事件。  这些事件与等效的非帧对应事件类似。
 
 
 <!-- ====================================================================== -->

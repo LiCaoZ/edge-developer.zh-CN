@@ -6,20 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 19e30d3e9bd89822d10a9af6666446248a289b7f
-ms.sourcegitcommit: 392c0c34ca43bb2b14f93ff4e24b3713ac505013
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "12339004"
 ---
 # <a name="check-text-color-contrast-in-the-default-state-using-the-inspect-tool"></a>使用 Inspect 工具检查默认状态下的文本颜色对比度
 
 <!-- Inspect tool: information overlay: Accessibility section: Contrast row -->
 
 使用 Inspect 工具检查默认状态下的文本**颜色对比度。**  " **检查** "工具在网页上的信息覆盖具有一个 **"** 辅助功能"部分，其中包含 **"对比度"** 信息。
-
-若要使用 Inspect 工具的信息覆盖层检查默认状态下的文本颜色对比度，请执行以下步骤。
 
 <!-- Inspect tool -->
 对于具有文本的元素， **Inspect** 工具的信息覆盖层显示以下内容：
@@ -31,21 +23,19 @@ ms.locfileid: "12339004"
 
 例如，在演示页面上，边栏导航菜单的蓝色链接具有足够的对比度，但"发送状态"部分中的绿色****"动物"链接**** 没有足够的对比度。  使用 Inspect 工具查看 **这些** 元素，如下所示：
 
-1.  打开 [新选项卡中的辅助功能测试](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 演示网页。 然后选择 **F12** 以打开 DevTools。
+1. 打开 [新窗口或选项卡中的](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 辅助功能测试演示网页。
 
-1.  选择 **"** 检查 (![](../media/inspect-icon.msft.png) 检查"按钮。) 工具左上角的"检查"按钮，使图标以蓝色 (突出显示) 。
+1. 右键单击网页中的任意位置，然后选择"检查 **"**。  或者，按 `F12`。  将在网页旁边打开 DevTools。
 
-1.  在呈现的网页中，将鼠标悬停在边栏导航菜单的蓝色 **"猫** "链接上。  将显示 **Inspect** 工具的信息覆盖层。  在信息**覆盖的**"辅助功能"部分，"对比度"行上会显示一个**** 绿色选中标记，指示此元素具有足够的文本颜色与背景色对比度。
+1. 单击 **"** 检查 (![](../media/inspect-tool-icon-light-theme.png) 检查"按钮。) 工具左上角的"检查"按钮，使图标以蓝色 (突出显示) 。
 
-    :::image type="complex" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="菜单项具有足够的对比度，如 Inspect 工具中所示" lightbox="../media/a11y-testing-enough-contrast.msft.png":::
-        菜单项具有足够的对比度，如 Inspect 工具中所示
-    :::image-end:::
+1. 在呈现的网页中，将鼠标悬停在边栏导航菜单的蓝色 **"猫** "链接上。  将显示 **Inspect** 工具的信息覆盖层。  在信息**覆盖的**"辅助功能"部分，"对比度"行上会显示一个**** 绿色选中标记，指示此元素具有足够的文本颜色与背景色对比度。
 
-1.  在呈现的网页的"私人 **状态"** 部分，将鼠标悬停在 **"动物"** 链接上。  **Inspect 工具**的信息覆盖层在"对比度"行上显示橙色感叹号，**** 指示此元素没有足够的文本与背景颜色的对比度。
+   :::image type="content" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="菜单项具有足够的对比度，如 Inspect 工具中所示。" lightbox="../media/a11y-testing-enough-contrast.msft.png":::
 
-    :::image type="complex" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="对比度不足的元素，如 Inspect 工具中的警告所示" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
-        对比度不足的元素，如 Inspect 工具中的警告所示
-    :::image-end:::
+1. 在呈现的网页的"私人 **状态"** 部分，将鼠标悬停在 **"动物"** 链接上。  **Inspect 工具**的信息覆盖层在"对比度"行上显示橙色感叹号，**** 指示此元素没有足够的文本与背景颜色的对比度。
+
+   :::image type="content" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="对比度不足的元素，如 Inspect 工具中的警告所示。" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
 
 
 <!-- ====================================================================== -->

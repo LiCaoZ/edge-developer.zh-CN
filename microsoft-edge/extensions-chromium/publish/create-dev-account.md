@@ -1,23 +1,17 @@
 ---
 title: 注册为 Microsoft Edge 扩展开发人员
-description: 了解如何注册合作伙伴中心开发人员帐户以将扩展发布到 Microsoft Edge 加载项网站。
+description: 了解如何注册合作伙伴中心开发人员帐户，以将扩展Microsoft Edge加载项网站。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/27/2021
-ms.openlocfilehash: b385ea24bc1c5e3c137b689e8c9ecebeca8863f3
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318805"
 ---
 # <a name="register-as-a-microsoft-edge-extension-developer"></a>注册为 Microsoft Edge 扩展开发人员
 
-如果你是合作伙伴中心的新用户，本文将帮助你创建合作伙伴中心帐户，通过该帐户可以将 Microsoft Edge 扩展提交到 Microsoft Edge[加载项网站](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home)。
+如果你是合作伙伴中心的新用户，本文将帮助你创建合作伙伴中心帐户，通过该帐户可以将 Microsoft Edge 扩展提交到 Microsoft Edge [加载项网站](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home)。
 
-如果你有合作伙伴中心帐户，但该帐户的主要所有者不是 MICROSOFT 帐户 (MSA) ，本文将帮助你创建和链接合适的帐户。  本文将帮助您创建一个 Microsoft 帐户 (MSA) （如果您没有该帐户）并且将帮助您将 Microsoft 帐户 (MSA) 链接到合作伙伴中心帐户。
+如果你有合作伙伴中心帐户，但该帐户的主要所有者不是 Microsoft 帐户 (MSA) ，本文将帮助你创建和链接合适的帐户。  本文将帮助你创建一个 Microsoft 帐户 (MSA) （如果你没有帐户的话）并帮助你将 Microsoft 帐户 (MSA) 链接到你的合作伙伴中心帐户。
 
 若要在 Microsoft Edge 计划中添加和管理用户以管理扩展，可以将合作伙伴中心帐户与组织的 Azure Active Directory (Azure AD) 租户关联。
 
@@ -28,32 +22,32 @@ ms.locfileid: "12318805"
 | 帐户类型 | 描述 |
 |---|---|
 | _Microsoft 帐户 (MSA)_ | Outlook.com、Live.com 或 Hotmail.com 帐户。 |
-| _GitHub帐户_ | 位于 GitHub.com 的用户帐户。  可以使用你的个人GitHub帐户登录到合作伙伴中心-将 (MSA) Microsoft 帐户。 |
-| _合作伙伴中心帐户_、 _合作伙伴中心开发人员帐户_ | 合作伙伴 _中心帐户_ 是合作伙伴中心 partner.microsoft.com。  若要提交Microsoft Edge，你需要一个合作伙伴中心开发人员帐户，__ 该帐户是一个合作伙伴中心帐户，该帐户将 Microsoft 帐户 (MSA) 作为主要所有者。 |
+| _GitHub帐户_ | 位于 GitHub.com 的用户帐户。  可以使用你的个人 GitHub 帐户登录到合作伙伴中心-将 (MSA) Microsoft 帐户。 |
+| _合作伙伴中心帐户_、 _合作伙伴中心开发人员帐户_ | 合作伙伴 _中心帐户_ 是合作伙伴中心 partner.microsoft.com。  若要Microsoft Edge扩展，你需要合作伙伴中心开发人员帐户，这是一__ 个合作伙伴中心帐户，该帐户将 Microsoft 帐户 (MSA) 作为主要所有者。 |
 | _Microsoft Edge计划帐户_ | 允许多个用户在合作伙伴中心Microsoft Edge扩展。 |
-| __ _Azure Active Directory、AD 帐户__、Azure AD_ | 一Azure Active Directory帐户。 |
-| _Azure Active Directory 租户_ _，AAD 租户_ | 租户 _表示_ 组织。  租户是组织或Azure AD开发人员在与 Microsoft 建立关系开始时收到的专用租户实例。 |
+| _Azure Active Directory_、_AD 帐户、__Azure AD_ | 一Azure Active Directory帐户。 |
+| _Azure Active Directory租户_、_AAD租户_ | _租户表示_组织。  租户是组织或Azure AD开发人员在与 Microsoft 建立关系开始时收到的专用租户实例。 |
 
 
 <!-- ====================================================================== -->
 ## <a name="before-you-begin"></a>在开始之前
 
-若要将扩展提交到 Microsoft Edge 加载项网站，你必须在加载项计划中注册为Microsoft Edge开发人员。  在合作伙伴中心注册Microsoft Edge计划。  若要注册 Microsoft Edge 计划，你需要一个 Microsoft 帐户 (MSA) 。  如果你的 MSA 帐户没有 (，) 一个。  使用 MSA () 创建 Microsoft 帐户的一种方式是使用现有 GitHub 帐户登录到合作伙伴中心 - 对话框可帮助你自动创建 Microsoft 帐户 (MSA) 。
+若要将扩展提交到 Microsoft Edge 加载项网站，你必须在加载项计划中注册为Microsoft Edge。  在合作伙伴中心注册Microsoft Edge计划。  若要注册 Microsoft Edge 计划，你需要一个 Microsoft 帐户 (MSA) 。  如果你的 MSA 帐户没有 (，) 一个。  使用 MSA () 创建 Microsoft 帐户的一种方式是使用现有 GitHub 帐户登录到合作伙伴中心 - 对话框可帮助你自动创建 Microsoft 帐户 (MSA) 。
 
 > [!NOTE]
 > 向应用计划提交扩展无需Microsoft Edge费用。
 
-如果你没有合作伙伴中心帐户，或者你有合作伙伴中心帐户，但其主要所有者不是 MSA (Microsoft 帐户) ，则必须：
+如果你没有合作伙伴中心帐户，或者你有合作伙伴中心帐户，但其主要所有者不是 MSA (Microsoft 帐户，) ：
 *  使用 MSA () ) 的现有 Microsoft 帐户注册Microsoft Edge计划。
 *  使用 MSA 帐户 (Microsoft) 。  MSA 帐户 (MSA) 是 Outlook.com、Live.com 或 Hotmail.com 帐户。
 
-若要创建 MSA 帐户 (Microsoft) ：
+若要使用 MSA 帐户 (Microsoft) ：
 
-1. 决定是否要使用现有帐户GitHub MSA 帐户 (Microsoft) 。  请参阅[Publish Microsoft Edge extensions by using a GitHub account](github.md)。
+1. 决定是否要使用现有帐户GitHub MSA 帐户 (Microsoft) 。  请参阅[使用 Microsoft Edge 帐户发布GitHub扩展](github.md)。
 
-1. 如果你未使用你的 GitHub 帐户创建 MSA (Microsoft) ，请导航[account.microsoft.com。](https://account.microsoft.com/account)
+1. 如果你未使用你的 GitHub 帐户创建 MSA (Microsoft) [，请参阅 account.microsoft.com](https://account.microsoft.com/account)。
 
-1. 选择 **"创建 Microsoft 帐户"。**
+1. 选择 **"创建 Microsoft 帐户"**。
 
 1. 完成注册步骤。
 
@@ -68,17 +62,17 @@ ms.locfileid: "12318805"
 
 <!-- 1.  Navigate to the [webpage about Partner Center](https://partner.microsoft.com).  You might see a "Join the Microsoft Partner Network" page with a **Become a partner** button, or a "Welcome back" page with a **Visit Partner Center** button.  Select the **Become a partner** button or the **Visit Partner Center** button. -->
 
-1.  导航到合作伙伴 [中心开发人员登录页](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)，然后选择合作伙伴 **中心**。
+1.  导航到合作伙伴 [中心开发人员登录页，](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)然后选择合作伙伴 **中心**。
 
 1.  如果你拥有 MSA (Microsoft) ，请使用它登录到合作伙伴中心。  MSA 帐户 (MSA) 是 Outlook.com、Live.com 或 Hotmail.com 帐户。  然后，使用Microsoft Edge填写计划注册表单。
 
-1.  如果你没有 Microsoft 帐户 (MSA) ，请直接创建新的 Microsoft 帐户 (MSA) ，或者使用下一步使用 GitHub 帐户登录合作伙伴中心。  合作伙伴中心帐户必须具有作为 MICROSOFT 帐户的主要所有者 (MSA) 。  如果你想要使用现有的个人 GitHub 帐户登录到合作伙伴中心，请打开文章使用 GitHub 帐户在新选项卡或窗口中发布[Microsoft Edge](github.md)扩展，然后按照步骤操作。  你的GitHub帐户将链接到自动创建的 Microsoft 帐户 (MSA) 该帐户的凭据可用于注册 Microsoft Edge 程序。
+1.  如果你没有 Microsoft 帐户 (MSA) ，请直接创建新的 Microsoft 帐户 (MSA) ，或者使用下一步使用 GitHub 帐户登录合作伙伴中心。  合作伙伴中心帐户必须具有作为 MSA (Microsoft 帐户) 。  如果你想要使用现有的个人 GitHub 帐户登录到合作伙伴中心，请打开文章使用 GitHub 帐户在新选项卡或窗口中发布 [Microsoft Edge](github.md) 扩展，然后按照步骤操作。  你的GitHub帐户将链接到自动创建的 Microsoft 帐户 (MSA) 该帐户的凭据可用于注册 Microsoft Edge 程序。
 
 1.  登录后，将显示注册表单，以注册Microsoft Edge计划。  若要帮助您填写注册表单，请参阅下一节。
 
 1.  在提交注册表单之前，请阅读并接受《开发人员Microsoft Edge[条款和条件](/legal/windows/agreements/app-developer-agreement)。
 
-1.  若要完成注册，请选择"完成 **"。**
+1.  若要完成注册，请选择"完成 **"**。
 
 
 <!-- ====================================================================== -->
@@ -95,7 +89,7 @@ ms.locfileid: "12318805"
 
 ### <a name="account-type"></a>帐户类型
 
-合作伙伴Microsoft Edge[计划提供](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)个人和公司帐户。  以下各节详细介绍了这些帐户。  这两种帐户类型都使您能够将扩展Microsoft Edge加载项网站。
+合作伙伴Microsoft Edge[计划提供](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)个人和公司帐户。  以下各节详细介绍了这些帐户。  这两种帐户类型都使您能够将扩展发布到Microsoft Edge加载项网站。
 
 > [!IMPORTANT]
 > 注册后，你将无法更改此字段的值。
@@ -126,13 +120,13 @@ ms.locfileid: "12318805"
 <!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 
-若要显示你的验证状态，请导航到 [合作伙伴中心](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) ，然后选择帐户 **设置**。  等待验证过程完成时，继续生成、测试和准备提交。
+若要显示你的验证状态，请转到合作伙伴 [中心](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) ，然后选择帐户 **设置**。  等待验证过程完成时，继续生成、测试和准备提交。
 
 *  [发布扩展](./publish-extension.md)
 
 *  [扩展概念和体系结构](../getting-started/index.md)
 
-*  [将用户添加到 Microsoft Edge](./aad-account.md)计划 - 将其他用户添加到你的 Microsoft Edge 计划以及你的合作伙伴中心开发人员帐户。  若要启用添加用户，你可以将组织的 Azure Active Directory 帐户与合作伙伴中心上的 MICROSOFT (MSA) 关联。
+*  [将用户添加到 Microsoft Edge](./aad-account.md) 计划 - 将其他用户添加到你的 Microsoft Edge 计划以及你的合作伙伴中心开发人员帐户。  若要启用添加用户，你可以将组织的 Azure Active Directory 帐户与合作伙伴中心上的 MSA (Microsoft) 关联。
 
 
 <!-- ====================================================================== -->

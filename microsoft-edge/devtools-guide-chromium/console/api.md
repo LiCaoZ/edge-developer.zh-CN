@@ -1,17 +1,11 @@
 ---
-title: 控制台 API 参考
+title: 控制台对象 API 参考
 description: 使用控制台 API 将消息写入控制台。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 896367a3cb5e450e39e8ae97c9f1c413fbb63926
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323094"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,17 +20,29 @@ ms.locfileid: "12323094"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="console-api-reference"></a>控制台 API 参考
+# <a name="console-object-api-reference"></a>控制台对象 API 参考
+<!-- orig:
+# Console API reference
+-->
 
-当你 **在** DevTools 中完成多个任务时，控制台工具非常有用。  API 可以包括在脚本中。 便利方法仅在控制台工具 **（** 如 和 方法） `debug()` `monitorEvents()` 中可用。  有关控制台入门的信息，请参阅开始将**** 消息[记录到控制台](console-log.md)。  有关控制台中便利方法详细信息 **，** 请参阅 [控制台实用程序 API 参考](utilities.md)。
+`console`使用对象的方法从 JavaScript 将**消息写入控制台**。
+
+还可以在控制台中输入 **这些方法**。  例如，在 **控制台中**，输入一个 `console` 接受变量的方法：
+
+1. 在 **"源** "工具中的调试器中，在 JavaScript 代码中设置断点。
+
+1. 在调试器中，逐步调试代码。
+
+1. 如果位于有效上下文中， `console` 以便所需变量位于范围内，请在控制台工具中输入 **对象的一** 个方法。  结果将显示在控制台 **中**。
+
+<br/><br/>
 
 ---
-
 
 <!-- ====================================================================== -->
 ## <a name="assert"></a>assert
 
-当 [计算结果](#error) 为 **时，** `expression` 将错误写入控制台 `false` 。
+当[计算结果](#error)**为 时，** 将错误写入`expression`控制台`false`。
 
 ```javascript
 console.assert(expression, object)
@@ -57,6 +63,8 @@ console.assert(x < y, {x, y, reason});
 
 :::image type="content" source="../media/console-demo-assert-button.msft.png" alt-text="console.assert () 示例的结果" lightbox="../media/console-demo-assert-button.msft.png":::
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
@@ -72,14 +80,16 @@ console.clear()
 
 ### <a name="see-also"></a>另请参阅
 
-*   [清除控制台](reference.md#clear-the-console)
+* [清除控制台](reference.md#clear-the-console)
+
+<br/><br/>
 
 ---
 
 <!-- ====================================================================== -->
 ## <a name="count"></a>count
 
-写入在同一行和同一行中调用 [count](#count) 方法次数 `label` 。  使用 [countReset](#countreset) 方法可重置计数。
+写入在同一行和同一行中调用 [count](#count) 方法次数 `label`。  使用 [countReset](#countreset) 方法可重置计数。
 
 ```javascript
 console.count([label])
@@ -100,6 +110,8 @@ console.count();
 
 :::image type="content" source="../media/console-demo-count-button.msft.png" alt-text="console.count () 示例的结果" lightbox="../media/console-demo-count-button.msft.png":::
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
@@ -117,6 +129,8 @@ console.countReset([label])
 console.countReset();
 console.countReset('coffee');
 ```
+
+<br/><br/>
 
 ---
 
@@ -141,6 +155,8 @@ console.debug('debug');
 
 :::image type="content" source="../media/console-demo-debug-button.msft.png" alt-text="console.debug () 示例的结果" lightbox="../media/console-demo-debug-button.msft.png":::
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
@@ -164,12 +180,14 @@ console.dir(document.head);
 
 :::image type="content" source="../media/console-demo-dir-button.msft.png" alt-text="console.dir () 示例的结果" lightbox="../media/console-demo-dir-button.msft.png":::
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
 ## <a name="dirxml"></a>dirxml
 
-打印 后代的 XML 表示形式 `node` 。
+打印 后代的 XML 表示形式 `node`。
 
 ```javascript
 console.dirxml(node)
@@ -187,12 +205,14 @@ console.dirxml(document);
 
 :::image type="content" source="../media/console-demo-dirxml-button.msft.png" alt-text="console.dirxml () 示例的结果" lightbox="../media/console-demo-dirxml-button.msft.png":::
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
 ## <a name="error"></a>错误
 
-将 打印 `object` 到 **控制台**，将格式设置为错误，并包括堆栈跟踪。
+将 打印 `object` 到 **控制台，** 将 它格式化为错误，并包括堆栈跟踪。
 
 ```javascript
 console.error(object [, object, ...])
@@ -209,6 +229,8 @@ console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 #### <a name="output"></a>输出
 
 :::image type="content" source="../media/console-demo-error-button.msft.png" alt-text="console.error () 示例的结果" lightbox="../media/console-demo-error-button.msft.png":::
+
+<br/><br/>
 
 ---
 
@@ -237,16 +259,20 @@ console.groupEnd(label);
 
 :::image type="content" source="../media/console-demo-group-button.msft.png" alt-text="console.group () 示例的结果" lightbox="../media/console-demo-group-button.msft.png":::
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
 ## <a name="groupcollapsed"></a>groupCollapsed
 
-与 log 方法[相同](#log)，但组最初在记录到控制台**时折叠。**
+与 log 方法[相同](#log)，但组最初在记录到控制台时**折叠。**
 
 ```javascript
 console.groupCollapsed(label)
 ```
+
+<br/><br/>
 
 ---
 
@@ -258,6 +284,8 @@ console.groupCollapsed(label)
 ```javascript
 console.groupEnd(label)
 ```
+
+<br/><br/>
 
 ---
 
@@ -280,7 +308,9 @@ console.info('info');
 
 #### <a name="output"></a>输出
 
-:::image type="content" source="../media/console-demo-info-button.msft.png" alt-text="示例 console.info () 的结果" lightbox="../media/console-demo-info-button.msft.png":::
+:::image type="content" source="../media/console-demo-info-button.msft.png" alt-text="console.info () 示例的结果" lightbox="../media/console-demo-info-button.msft.png":::
+
+<br/><br/>
 
 ---
 
@@ -304,6 +334,8 @@ console.log('log');
 #### <a name="output"></a>输出
 
 :::image type="content" source="../media/console-demo-log-button.msft.png" alt-text="console.log () 示例的结果" lightbox="../media/console-demo-log-button.msft.png":::
+
+<br/><br/>
 
 ---
 
@@ -342,6 +374,8 @@ console.table([
 
 :::image type="content" source="../media/console-demo-table-button.msft.png" alt-text="console.table () 示例的结果" lightbox="../media/console-demo-table-button.msft.png":::
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
@@ -367,6 +401,8 @@ console.timeEnd();
 
 :::image type="content" source="../media/console-demo-time-button.msft.png" alt-text="console.time () 示例的结果" lightbox="../media/console-demo-time-button.msft.png":::
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
@@ -379,6 +415,8 @@ console.timeEnd([label])
 ```
 
 [日志级别](reference.md#persist-messages-across-page-loads)： `Info`
+
+<br/><br/>
 
 ---
 
@@ -407,6 +445,8 @@ first();
 
 :::image type="content" source="../media/console-demo-trace-button.msft.png" alt-text="console.trace () 示例的结果" lightbox="../media/console-demo-trace-button.msft.png":::
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
@@ -430,13 +470,23 @@ console.warn('warn');
 
 :::image type="content" source="../media/console-demo-warn-button.msft.png" alt-text="console.warn () 示例的结果" lightbox="../media/console-demo-warn-button.msft.png":::
 
+<br/><br/>
+
 ---
+
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
+
+<!-- if an article's title is adequately descriptive, and the article is in the same TOC bucket as the present article, don't much need a link here: -->
+* [MDN Web 文档> `console`](https://developer.mozilla.org/en-US/docs/Web/API/Console) 对象参考 - 具有方法的摘要概述，每个方法有一个页面，并包含其他语法详细信息。
+* [在控制台工具中记录消息](console-log.md) - 交互式简介。
+* [控制台工具实用程序函数和选择器](utilities.md) - **仅**控制台实用程序方法，如 和 `debug()` `monitorEvents()`。
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/console/api) ，由技术编写者 [、Chrome](https://developers.google.com/web/resources/contributors/kaycebasques) DevTools & Lighthouse (创作) 。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/console/api)，由技术编写 (Chrome DevTools & Lighthouse) 创作。[](https://developers.google.com/web/resources/contributors/kaycebasques)
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

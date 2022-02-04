@@ -7,12 +7,6 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.assetid: 1e5c42a7-4604-46ac-ad7b-a65390e5b36a
 ms.date: 04/16/2020
-ms.openlocfilehash: 2a68bf6ab1a69f7678f7d21f3289b19818302c0a
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325702"
 ---
 # <a name="accessibility-overview"></a>辅助功能概述
 
@@ -22,15 +16,15 @@ ms.locfileid: "12325702"
 
 设计网站和其他包含技术可打造每个人都享受的体验。  非独占设计和 Web 辅助功能使每个人都能够使用 Web。
 
-下面是一些最佳实践、代码示例和更多资源，可让你了解有关在 Microsoft Edge 中设计、生成[](./build/index.md)和测试可访问的网站[](test.md)。 [](design.md)
+下面是一些最佳做法、代码示例和更多资源，可便于你了解有关在网站中设计[](design.md)、构建和测试[](./build/index.md)可访问Microsoft Edge。[](test.md)
 
 
 <!-- ====================================================================== -->
 ## <a name="accessibility-in-microsoft-edge"></a>Microsoft Edge 中的辅助功能
 
-在 Microsoft Edge 中，我们引入了[UI 自动化 API](/windows/win32/winauto/entry-uiauto-win32) (UIA API) 。  对 UI 自动化的这一更改是浏览器辅助功能的主要投资。  UI 自动化 API 为在应用或更高版本中依赖于辅助技术的用户提供更具包容性的 web Windows 10基础。
+在Microsoft Edge中，我们引入了 [UI 自动化 API](/windows/win32/winauto/entry-uiauto-win32) (UIA API) 。  对 UI 自动化的这一更改是浏览器辅助功能的主要投资。  UI 自动化 API 为在应用或更高版本中依赖于辅助技术的用户提供更具包容性的 web Windows 10基础。
 
-Microsoft UI 自动化 API 是一个辅助功能框架，Windows应用程序提供和使用有关 UI (编程) 。  它提供对桌面上大多数 UI 元素的编程访问。  它使辅助技术产品（如屏幕阅读器）能够向最终用户提供有关 UI 的信息，以及通过标准输入外的其他方式操作 UI。  UI 自动化还允许自动测试脚本与 UI 交互。
+Microsoft UI 自动化 API 是一个辅助功能框架，Windows应用程序提供有关用户界面和 UI (编程) 。  它提供对桌面上大多数 UI 元素的编程访问。  它使辅助技术产品（如屏幕阅读器）能够向最终用户提供有关 UI 的信息，以及通过标准输入外的其他方式操作 UI。  UI 自动化还允许自动测试脚本与 UI 交互。
 
 [Microsoft Windows UI 自动化博客](/archive/blogs/winuiautomation/)有关于 Windows 自动化 API 的文章。
 
@@ -40,7 +34,7 @@ Microsoft UI 自动化 API 是一个辅助功能框架，Windows应用程序提�
 
 Microsoft Edge团队持续与 W3C 和其他浏览器供应商合作，以确保新的 Web 平台功能具有足够的内置辅助功能。
 
-有关哪些新 HTML 功能可供用户访问Microsoft Edge，请导航到[HTML5Accessibility](https://html5accessibility.com)。
+有关哪些新 HTML 功能可供用户访问的信息Microsoft Edge，请参阅 [HTML5Accessibility](https://html5accessibility.com)。
 
 
 <!-- ====================================================================== -->

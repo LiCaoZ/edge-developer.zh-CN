@@ -7,23 +7,17 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 05/06/2021
-ms.openlocfilehash: db67428141474e33a1d00fba3a7242e4482fd0d7
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323612"
 ---
 # <a name="statically-link-the-webview2-loader-library"></a>静态链接 WebView2 加载程序库
 
-你可能希望使用单个可执行文件（而不是许多文件的包）来分发应用程序。 若要创建单个可执行文件或减小程序包的大小，应静态链接 WebView2Loader 文件。 WebView2 SDK 包含头文件 、 `WebView2Loader.dll` 和 `IDL` 文件。 `WebView2Loader.dll` 是一个小组件，可帮助应用在设备上找到 WebView2 运行时Microsoft Edge预览通道。
+你可能希望使用单个可执行文件（而不是许多文件的包）来分发应用程序。  若要创建单个可执行文件或减小程序包的大小，应静态链接 WebView2Loader 文件。  WebView2 SDK 包含头文件 `WebView2Loader.dll`、和 `IDL` 文件。 `WebView2Loader.dll` 是一个小型组件，可帮助应用在设备上找到 WebView2 运行时Microsoft Edge预览通道。
 
-对于不希望提供 的应用， `WebView2Loader.dll` 请完成以下步骤。
+对于不希望提供 的应用， `WebView2Loader.dll`请完成以下步骤。
 
-1.  在文本编辑器（如文本编辑器）中打开应用 `.vcxproj` Visual Studio Code。
+1.  `.vcxproj`在文本编辑器（如文本编辑器）中打开应用Visual Studio Code。
 
     > [!NOTE]
-    > 项目 `.vcproj` 文件可能是隐藏文件，这意味着它不会显示在Visual Studio。  使用命令行查找隐藏文件。
+    > 项目`.vcproj`文件可能是一个隐藏文件，这意味着该文件不会显示在Visual Studio。  使用命令行查找隐藏文件。
 
 1.  在包含 WebView2 程序包目标文件的代码中找到NuGet部分。  代码中的位置在下图中突出显示。
 

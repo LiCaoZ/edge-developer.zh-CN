@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/28/2021
-ms.openlocfilehash: 57a3e24d691d7bbab8570e05b0de1f6e0682a085
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325450"
 ---
 # <a name="find-source-files-for-a-page-using-the-search-tool"></a>使用搜索工具查找页面的源文件
 
@@ -27,9 +21,9 @@ ms.locfileid: "12325450"
 
 若要快速打开 **搜索工具** ，请执行以下操作：
 
-1.  [打开 DevTools](../open/index.md) (`F12`) 。
+1. [打开 DevTools](../open/index.md) (`F12`) 。
 
-1.  按 `Control` + `Shift` + `F` (Windows/Linux) 或 (`Command` + `Option` + `F` macOS) 。
+1. 按 `Control`++`Shift``F` (Windows/Linux) 或 (`F` `Command`+`Option`+macOS) 。
 
 The **Search** tool appears in the **Drawer**， and shows the search toolbar：
 
@@ -41,13 +35,13 @@ The **Search** tool appears in the **Drawer**， and shows the search toolbar：
 <!-- ====================================================================== -->
 ## <a name="open-the-search-tool-by-using-the-command-menu"></a>使用命令菜单打开搜索工具
 
-若要从 **命令菜单** 打开搜索 **工具**：
+从命令 **菜单中** 打开搜索 **工具**：
 
-1.  [打开 DevTools](../open/index.md) (`F12`) 。
+1. [打开 DevTools](../open/index.md) (`F12`) 。
 
-1.  打开命令[菜单](../command-menu/index.md)，按 `Control` + `Shift` + `P` (Windows/Linux) 或 `Command` + `Shift` + `P` (macOS) 。
+1. 按"命令[菜单"](../command-menu/index.md)，`Control`++`Shift``P` (Windows/Linux) 或 (`P` `Command`+`Shift`+macOS) 。
 
-1.  键入 `search` ，然后按 `Enter` 。
+1. 键入 `search`，然后按 `Enter`。
 
 :::image type="content" source="../media/search-tool/open-search-tool.png" alt-text="选择了&quot;显示搜索&quot;项的命令菜单。":::
 
@@ -57,11 +51,10 @@ The **Search** tool appears in the **Drawer**， and shows the search toolbar：
 
 若要搜索当前网页中的文本及其资源文件，
 
-1. 焦点搜索输入字段。
-1. 键入要搜索的文本。
-1. 按 `Enter` 。
+1. 将焦点放在搜索输入字段。
+1. 输入要搜索的文本，然后按 `Enter`。
 
-搜索 **工具** 显示匹配资源的列表，并突出显示相应的文本行。  匹配文件和行的数量也指示在工具底部。
+**搜索工具**显示匹配资源的列表，并突出显示相应的文本行。  匹配文件和行的数量也指示在工具底部。
 
 :::image type="content" source="../media/search-tool/search-tool-search-results.png" alt-text="搜索结果显示在搜索工具中，匹配文本以黄色突出显示。":::
 
@@ -69,17 +62,17 @@ The **Search** tool appears in the **Drawer**， and shows the search toolbar：
 
 
 <!-- ====================================================================== -->
-## <a name="match-case-lowercase-or-uppercase-characters"></a>匹配大小写 (小写或大写) 
+## <a name="match-case-lowercase-or-uppercase-characters"></a>大小写 (小写或大写字符) 
 
 默认情况下， **搜索** 工具不区分大小写。  搜索词匹配该词的出现次数，无论小写还是大写字符。
 
-若要仅查找与特定大小写匹配的结果 (小写或大写) ，请单击搜索工具栏中的"区分大小写 () "**** `Aa` 按钮。
+若要仅查找与特定大小写匹配的结果 (小写或大写) ，**** `Aa` 请单击搜索工具栏中的"区分大小写 () "按钮。
 
 
 <!-- ====================================================================== -->
 ## <a name="search-for-regular-expressions"></a>搜索正则表达式
 
-可以使用正则表达式（包括 [JavaScript 正则表达式](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)）查找匹配结果。  若要使用正则表达式，请单击工具栏中的"**** 使用正则表达式 () "按钮，在搜索输入字段中输入有效的 `.*` 正则表达式。
+可以使用正则表达式（包括 [JavaScript 正则表达式](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)）查找匹配结果。  若要使用正则表达式，**** `.*` 请单击工具栏中的"使用正则表达式 () "按钮，在搜索输入字段中输入有效的正则表达式。
 
 :::image type="content" source="../media/search-tool/search-tool-regexp.png" alt-text="搜索正则表达式。":::
 
@@ -87,7 +80,7 @@ The **Search** tool appears in the **Drawer**， and shows the search toolbar：
 <!-- ====================================================================== -->
 ## <a name="open-a-found-file-in-the-sources-tool"></a>在"源"工具中打开找到的文件
 
-执行搜索后，单击结果行以打开相应的文件。  源 **工具** 在主面板中打开并加载资源文件，滚动到匹配行。
+执行搜索后，单击结果行以打开相应的文件。  **源工具**在主面板中打开并加载资源文件，滚动到匹配行。
 
 :::image type="content" source="../media/search-tool/search-tool-open-in-sources.png" alt-text="单击搜索行将打开&quot;源&quot;工具并加载相应的资源。" lightbox="../media/search-tool/search-tool-open-in-sources.png":::
 
@@ -99,10 +92,10 @@ The **Search** tool appears in the **Drawer**， and shows the search toolbar：
 
 若要更新搜索结果，请执行下列任一操作：
 *  再次搜索，在搜索输入字段中键入术语。
-*  单击" **刷新 ("** ![ 搜索按钮 ](../media/search-tool/search-tool-refresh.png) 。) 中的"刷新"按钮。
+*  单击"**刷新 (**!["搜索按钮。) ](../media/search-tool/search-tool-refresh.png)中的"刷新"按钮。
 
 
 <!-- ====================================================================== -->
 ## <a name="clear-a-search"></a>清除搜索
 
-若要清除搜索结果，请单击"清除**** ![ ("搜索按钮。) ](../media/search-tool/search-tool-clear.png) 工具栏中的"清除"按钮。
+若要清除搜索结果，请单击"清除 (**** !["搜索按钮](../media/search-tool/search-tool-clear.png)。) "按钮。

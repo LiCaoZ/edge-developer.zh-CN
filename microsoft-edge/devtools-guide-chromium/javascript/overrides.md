@@ -1,21 +1,15 @@
 ---
-title: '使用本地副本替代网页资源 ("选项卡) '
+title: 使用本地副本替代网页资源（“替代”选项卡）
 description: 替代功能是 DevTools Microsoft Edge源工具中的一项功能，允许你将网页资源复制到硬盘驱动器。  刷新网页时，DevTools 不会加载资源，而是将其替换为本地副本。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/11/2020
-ms.openlocfilehash: abeac016cc71ea584665f1df6e6f23a2f97add6b
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325114"
 ---
-# <a name="override-webpage-resources-with-local-copies-overrides-tab"></a>使用本地副本替代网页资源 ("选项卡) 
+# <a name="override-webpage-resources-with-local-copies-overrides-tab"></a>使用本地副本替代网页资源（“替代”选项卡）
 
-有时你需要尝试一些可能的网页修补程序，但你无法访问源文件，或者更改页面需要一个缓慢而复杂的生成过程。  可以在 DevTools 中调试和修复所有类型的问题。  但更改不会保留;刷新本地文件后，所有工作都消失。  源 [工具中的替代](../sources/index.md) 功能可帮助你解决此问题。
+有时你需要尝试一些可能的网页修补程序，但你无法访问源文件，或者更改页面需要一个缓慢而复杂的生成过程。  可以在 DevTools 中调试和修复所有类型的问题。  但更改不会保留;而是刷新本地文件后，所有工作都消失。  源 [工具中的替代](../sources/index.md) 功能可帮助你解决此问题。
 
 现在，您可以利用当前网页的资源，并在本地存储该资源。  刷新网页时，浏览器不会从服务器加载资源。  相反，浏览器会用你的本地资源副本替换服务器资源。
 
@@ -23,28 +17,28 @@ ms.locfileid: "12325114"
 <!-- ====================================================================== -->
 ## <a name="setting-up-your-local-folder-to-store-overrides"></a>将本地文件夹设置为存储替代
 
-1.  导航到 **"源"** 工具。
-1.  在左侧 **导航器** (窗格中，) " **替代"** 选项卡。 如果未 **显示"替代** "选项卡，请单击 <code>&#x0226B;</code><!--`≫`--> 图标。
+1. 导航到 **"源"** 工具。
+1. 在左侧 **导航器** (窗格中，) " **替代"** 选项卡。 如果未 **显示"替代** "选项卡，请单击 <code>&#x0226B;</code><!--`≫`--> 图标。
 
     " **源** "工具没有足够的空间来显示 **"替代"** 选项卡：
 
-    :::image type="content" source="../media/javascript-overrides-overflow-menu.msft.png" alt-text="显示替代选项的空间不足的源工具。" lightbox="../media/javascript-overrides-overflow-menu.msft.png":::
+   :::image type="content" source="../media/javascript-overrides-overflow-menu.msft.png" alt-text="显示替代选项的空间不足的源工具。" lightbox="../media/javascript-overrides-overflow-menu.msft.png":::
 
     选择 **"替代"** 选项卡：
 
-    :::image type="content" source="../media/javascript-overrides-menu.msft.png" alt-text="选择&quot;替代&quot;选项卡。" lightbox="../media/javascript-overrides-menu.msft.png":::
+   :::image type="content" source="../media/javascript-overrides-menu.msft.png" alt-text="选择&quot;替代&quot;选项卡。" lightbox="../media/javascript-overrides-menu.msft.png":::
 
-1.  在本地计算机上选择一个文件夹，以存储要替换的资源文件。  若要搜索文件夹，请单击" **+ 选择文件夹"进行替代**。
+1. 在本地计算机上选择一个文件夹，以存储要替换的资源文件。  若要搜索文件夹，请单击 **" + 选择文件夹"进行替代**。
 
-    :::image type="content" source="../media/javascript-overrides-select-folder.msft.png" alt-text="选择要用于替代的文件夹。" lightbox="../media/javascript-overrides-select-folder.msft.png":::
+   :::image type="content" source="../media/javascript-overrides-select-folder.msft.png" alt-text="选择要用于替代的文件夹。" lightbox="../media/javascript-overrides-select-folder.msft.png":::
 
-1.  DevTools 警告你必须具有对文件夹的完全访问权限，并且不应显示任何敏感信息。  选择 **"允许** "以授予访问权限。
+1. DevTools 警告你必须具有对文件夹的完全访问权限，并且不应显示任何敏感信息。  选择 **"允许** "以授予访问权限。
 
-    :::image type="content" source="../media/javascript-overrides-give-access-to-folder.msft.png" alt-text="授予 DevTools 对文件夹的访问权限。" lightbox="../media/javascript-overrides-give-access-to-folder.msft.png":::
+   :::image type="content" source="../media/javascript-overrides-give-access-to-folder.msft.png" alt-text="授予 DevTools 对文件夹的访问权限。" lightbox="../media/javascript-overrides-give-access-to-folder.msft.png":::
 
-1.  在 **"覆盖"** 选项卡中，"启用本地覆盖"旁边 **会显示一个复选框**。  "启用本地覆盖 **"右侧****是"清除**配置"图标，可用于删除本地覆盖设置。  现在，你已完成文件夹设置，并且已准备好将实时资源替换为本地资源。
+1. 在 **"覆盖"** 选项卡中，"启用本地覆盖"旁边 **会显示一个复选框**。  "启用本地覆盖 **"右侧****是"清除**配置"图标，可用于删除本地覆盖设置。  现在，你已完成文件夹设置，并且已准备好将实时资源替换为本地资源。
 
-    :::image type="content" source="../media/javascript-overrides-folder-setup-complete.msft.png" alt-text="成功设置替代文件夹。" lightbox="../media/javascript-overrides-folder-setup-complete.msft.png":::
+   :::image type="content" source="../media/javascript-overrides-folder-setup-complete.msft.png" alt-text="成功设置替代文件夹。" lightbox="../media/javascript-overrides-folder-setup-complete.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -56,13 +50,13 @@ ms.locfileid: "12325114"
 
 :::image type="content" source="../media/javascript-overrides-select-css-file.msft.png" alt-text="在样式检查器中选择文件。" lightbox="../media/javascript-overrides-select-css-file.msft.png":::
 
-在"**源**"编辑器中，右键单击所选文件的文件名，然后单击"保存**替代"。**
+在 **"源** "编辑器中，右键单击所选文件的文件名，然后单击"保存 **替代"**。
 
 在"源"编辑器中，将文件的名称添加到替代列表中：
 
 :::image type="content" source="../media/javascript-overrides-file-name.msft.png" alt-text="在&quot;源&quot;编辑器中，将文件的名称添加到替代列表。" lightbox="../media/javascript-overrides-file-name.msft.png":::
 
-右键单击文件名，然后选择"**保存替代"：**
+右键单击文件名，然后选择" **保存替代"**：
 
 :::image type="content" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="右键单击文件名，然后选择&quot;保存替代&quot;。" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
 

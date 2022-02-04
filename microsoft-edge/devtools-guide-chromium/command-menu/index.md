@@ -1,17 +1,11 @@
 ---
-title: 在命令菜单中运行命令
+title: 在“命令”菜单中运行命令
 description: 如何打开命令菜单、运行命令、查看其他操作等的指南。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: d75084b48971aaf3064f6e86bf69de140b6dd0df
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12324025"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,45 +20,37 @@ ms.locfileid: "12324025"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="run-commands-in-the-command-menu"></a>在命令菜单中运行命令
+# <a name="run-commands-in-the-command-menu"></a>在“命令”菜单中运行命令
 
-命令菜单提供了一种在 DevTools UI Microsoft Edge导航和完成常见任务（如[禁用 JavaScript）的快速方法](../javascript/disable.md)。  你可能熟悉命令Microsoft Visual Studio代码中的类似功能，这是命令菜单的原始灵感。 [](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette)
+命令菜单提供了一种快速的方式，Microsoft Edge开发人员工具 UI 和完成常见任务，例如[禁用 JavaScript](../javascript/disable.md)。  你可能熟悉命令调色板Microsoft Visual Studio代码中的类似功能，这是命令菜单的原始灵感[](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette)。
 
-:::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="使用命令菜单禁用 JavaScript。" lightbox="../media/command-menu-run-command-java.msft.png":::
-   使用命令菜单禁用 JavaScript
-:::image-end:::
+:::image type="content" source="../media/command-menu-run-command-java.msft.png" alt-text="使用命令菜单禁用 JavaScript。" lightbox="../media/command-menu-run-command-java.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## <a name="open-the-command-menu"></a>打开命令菜单
 
-选择 `Control` + `Shift` + `P` (Windows、Linux) 或 `Command` + `Shift` + `P` (macOS)。 或选择 **"自定义和控制开发工具 () >** `...` **运行命令"。**
+按`Control`+`Shift`+`P`（Windows、Linux）或 `Command`+`Shift`+`P` （macOS）。  或者，选择 **"自定义和控制开发工具 (**) > `...` **运行命令"**。
 
-:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="运行 Command。" lightbox="../media/command-menu-options-run-command.msft.png":::
-   运行命令
-:::image-end:::
+:::image type="content" source="../media/command-menu-options-run-command.msft.png" alt-text="运行命令。" lightbox="../media/command-menu-options-run-command.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## <a name="display-other-available-actions"></a>显示其他可用操作
 
-如果使用"打开命令菜单"中概述[](#open-the-command-menu)的工作流，"命令菜单"将打开，并预先将字符绘制到"命令菜单 `>` "文本框中。
+如果使用"打开命令菜单[](#open-the-command-menu)`>`"中概述的工作流，则"命令菜单"将打开，并预先将字符绘制到"命令菜单"文本框中。
 
-:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="命令字符。" lightbox="../media/command-menu-run-command.msft.png":::
-   命令字符
-:::image-end:::
+:::image type="content" source="../media/command-menu-run-command.msft.png" alt-text="命令字符。" lightbox="../media/command-menu-run-command.msft.png":::
 
-删除 `>` 字符和类型 `?` 以显示"命令菜单"中提供的其他操作。
+`>`删除字符和类型`?`以显示"命令菜单"中提供的其他操作。
 
-:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="其他可用操作。" lightbox="../media/command-menu-help.msft.png":::
-   其他可用操作
-:::image-end:::
+:::image type="content" source="../media/command-menu-help.msft.png" alt-text="其他可用操作。" lightbox="../media/command-menu-help.msft.png":::
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) ，由技术编写者 [、Chrome](https://developers.google.com/web/resources/contributors/kaycebasques) DevTools & Lighthouse (创作) 。
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/command-menu/index)，由技术编写 (、Chrome DevTools & Lighthouse) 创作。[](https://developers.google.com/web/resources/contributors/kaycebasques)
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

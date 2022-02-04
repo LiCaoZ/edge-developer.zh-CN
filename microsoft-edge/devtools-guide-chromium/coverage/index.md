@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 5bd1197bc1b46714562ce00c2f3630aea988f15c
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325268"
 ---
 <!-- Copyright Kayce Basques
 
@@ -32,7 +26,7 @@ ms.locfileid: "12325268"
 
 :::image type="content" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="分析代码范围。" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
 
-警告：查找未使用的代码相对容易。  但重构代码库以便每个页面仅提供所需的 JavaScript 和 CSS 可能非常困难。  本指南未涵盖如何重构基本代码以避免未使用的代码，因为此重构取决于您的技术堆栈。
+查找未使用的代码相对容易。  但重构代码库以便每个页面仅提供所需的 JavaScript 和 CSS 可能非常困难。  本指南未涵盖如何重构基本代码以避免未使用的代码，因为此重构取决于您的技术堆栈。
 
 
 <!-- ====================================================================== -->
@@ -48,31 +42,35 @@ ms.locfileid: "12325268"
 </head>
 ```
 
-此样式表并不只是包含按钮组件的代码。  它包含_所有_Bootstrap 组件的 CSS。  但是，你未使用任何其他 Bootstrap 组件。  因此，你的页面正在下载一组不需要的 CSS。  此额外的 CSS 是一个问题，原因如下：
+此样式表并不只是包含按钮组件的代码。  它包含_所有_Bootstrap 组件的 CSS。  但是，你未使用任何其他 Bootstrap 组件。  因此，你的页面正在下载一组不需要的 CSS。
 
-*   额外的代码会降低页面加载速度。  <!-- See [Render-Blocking CSS](/web/fundamentals/performance/critical-rendering-path/render-blocking-css). -->
-*   如果用户在移动设备上访问页面，则额外的代码会使用其手机网络数据。
+此额外的 CSS 是一个问题，原因如下：
+
+*  额外的代码会降低页面加载速度。  <!-- See [Render-Blocking CSS](/web/fundamentals/performance/critical-rendering-path/render-blocking-css). -->
+
+*  如果用户在移动设备上访问页面，则额外的代码会使用其手机网络数据。
 
 
 <!-- ====================================================================== -->
 ## <a name="open-the-coverage-tool"></a>打开"覆盖"工具
 
-1.  [打开“命令”菜单](../command-menu/index.md)。
-1.  开始键入 ， `coverage` 选择显示 **覆盖命令** ，然后按 `Enter` 。  " **覆盖** "工具在"箱" **中打开**。
+1. [打开“命令”菜单](../command-menu/index.md)。
 
-:::image type="content" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="覆盖工具。" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+1. 开始键入 ， `coverage`选择显示 **覆盖命令** ，然后按 `Enter`。  " **覆盖** "工具将在"箱" **中打开**。
+
+   :::image type="content" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="覆盖工具。" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## <a name="record-code-coverage"></a>记录代码覆盖范围
 
-1.  单击"覆盖"工具中的以下 **按钮之** 一：
+1. 单击"覆盖"工具中的以下 **按钮之** 一：
 
-    *  单击**开始检测覆盖范围和重新加载页面 (** ![ 检测覆盖范围和重新加载页面。) ](../media/reload-icon.msft.png)<!--todo: check UI string--> 如果您想要查看加载页面所需的代码。
+   *  单击**开始检测覆盖范围和重新加载页面 (**![检测覆盖范围和重新加载页面。) ](../media/reload-icon.msft.png)<!--todo: check UI string--> 如果您想要查看加载页面所需的代码。
 
-    *  如果你 **希望** 查看与 (后使用的代码，请单击检测) 检测范围和检测 ![ ](../media/record-icon.msft.png) 覆盖范围"。
+   *  如果要**在** (![](../media/record-icon.msft.png) 页面) 使用哪些代码，请单击检测覆盖范围和检测覆盖。
 
-1.  单击**停止检测覆盖，然后 (** ![ 检测范围和显示结果) ](../media/stop-icon.msft.png)<!--todo: check UI string--> 当你希望停止记录代码覆盖范围时。
+1. 单击**停止检测覆盖，然后 (**![检测范围和](../media/stop-icon.msft.png)显示结果) <!--todo: check UI string--> 当你希望停止记录代码覆盖范围时。
 
 
 <!-- ====================================================================== -->

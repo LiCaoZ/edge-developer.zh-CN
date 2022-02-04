@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 7df3c94b45cd0dec551bcb06a9055ce40919c2d6
-ms.sourcegitcommit: 392c0c34ca43bb2b14f93ff4e24b3713ac505013
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "12339005"
 ---
 # <a name="analyze-the-lack-of-indication-of-keyboard-focus-in-a-sidebar-menu"></a>分析边栏菜单中键盘焦点的缺失
 
@@ -25,31 +19,29 @@ ms.locfileid: "12339005"
 
 若要导航到 CSS，我们将使用 **Inspect** 工具突出显示页面边栏导航菜单上的蓝色链接，然后查看定义该链接的元素的 DOM 树和 CSS `a` 。
 
-1.  在 [浏览器的新选项卡中](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 打开辅助功能测试演示网页，然后选择 **F12** 以打开 DevTools。
+1. 打开 [新窗口或选项卡中的](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 辅助功能测试演示网页。
 
-1.  选择 **"** ![](../media/inspect-icon.msft.png) 检查 (检查"图标。) 位于 DevTools 左上角的"检查"按钮，以便按钮以蓝色 (突出显示) 。
+1. 右键单击网页中的任意位置，然后选择"检查 **"**。  或者，按 `F12`。  将在网页旁边打开 DevTools。
 
-1.  将鼠标悬停在页面边栏导航菜单中的蓝色 **"猫** "链接上。  将显示 Inspect 覆盖层，显示 `a` 元素是可键盘聚焦的。  但是覆盖层不会显示当链接具有焦点时没有视觉指示。
+1. 单击 **"检查** ![](../media/inspect-tool-icon-light-theme.png) (检查"图标。) 位于 DevTools 左上角的"检查"按钮，使按钮以蓝色 (突出显示) 。
 
-    接下来，我们将检查此链接的 CSS 样式。
+1. 将鼠标悬停在页面边栏导航菜单中的蓝色 **"猫** "链接上。  将显示 Inspect 覆盖层，显示 `a` 元素是可键盘聚焦的。  但是覆盖层不会显示当链接具有焦点时没有视觉指示。
 
-1.  选择边栏导航菜单中的 **"猫** "链接。  检查 **工具** 将关闭， **并且元素** 工具将打开，突出显示 `a` DOM 树中的节点。
+   接下来，我们将检查此链接的 CSS 样式。
 
-1.  选择" **样式"** 选项卡。 将显示 CSS 规则 `#sidebar nav li a` ，以及指向 中行号的链接 `styles.css`。
+1. 单击边栏导航菜单中的 **"猫** "链接。  检查 **工具** 将关闭， **并且元素** 工具将打开，突出显示 `a` DOM 树中的节点。
 
-    :::image type="complex" source="../media/a11y-testing-menu-link.msft.png" alt-text="检查菜单中的链接的源代码和应用样式。" lightbox="../media/a11y-testing-menu-link.msft.png":::
-        检查菜单中的链接的源代码和应用样式
-    :::image-end:::
+1. 在 DevTools 中，选择 **"样式"** 选项卡。 将显示 CSS 规则 `#sidebar nav li a` ，以及指向 中行号的链接 `styles.css`。
 
-1.  选择 CSS 文件的链接。  CSS 文件在"源" **工具中** 打开。
+   :::image type="content" source="../media/a11y-testing-menu-link.msft.png" alt-text="检查菜单中的链接的源代码和应用样式。" lightbox="../media/a11y-testing-menu-link.msft.png":::
 
-    :::image type="complex" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="应用于&quot;源&quot;工具中链接的样式。" lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
-        应用于"源"工具中链接的样式
-    :::image-end:::
+1. 单击链接 `styles.css` 。  CSS 文件在"源" **工具中** 打开。
 
-页面样式具有 CSS 伪类 `hover` 规则，用于指示在使用鼠标时位于哪个菜单项上 `#sidebar nav li a:hover`：。  但是，没有 CSS 伪类 `focus` 规则，该状态在使用键盘时直观地指示您位于哪个菜单项上，例如 `#sidebar nav li a:focus`。
+   :::image type="content" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="应用于&quot;源&quot;工具中链接的样式。" lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
 
-此外，请注意链接的 CSS 属性设置为 `outline: none`。  这是一种常见做法，当你使用键盘关注元素时，删除浏览器自动添加到元素的大纲。  不使用 `focus` 样式设置会导致用户混淆。
+   页面样式具有 CSS 伪类 `hover` 规则，用于指示在使用鼠标时位于哪个菜单项上 `#sidebar nav li a:hover`：。  但是，没有 CSS 伪类 `focus` 规则，当使用键盘时，状态会直观地指示您位于哪个菜单项上，例如 `#sidebar nav li a:focus`。
+
+   此外，请注意链接的 CSS 属性设置为 `outline: none`。  这是一种常见做法，当你使用键盘关注元素时，删除浏览器自动添加到元素的大纲。  不使用 `focus` 样式设置会导致用户混淆。
 
 
 <!-- ====================================================================== -->

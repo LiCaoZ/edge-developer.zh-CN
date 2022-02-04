@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 0be319af338e66437e56b3350db73223a43bb6f5
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325604"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,29 +22,60 @@ ms.locfileid: "12325604"
    limitations under the License.  -->
 # <a name="track-which-element-has-focus"></a>跟踪哪些元素有焦点
 
-假设您正在测试页面的键盘导航辅助功能。  使用`Tab`键浏览页面时，聚焦环有时会消失，因为具有焦点的元素被隐藏。
+假设您正在测试页面的键盘导航辅助功能。  通过按 `Tab` `Shift`+`Tab`和 导航呈现的网页时，网页中的焦点圈指示器有时会消失，因为具有焦点的元素已被隐藏。  解决方案是在 DevTools **控制台**中创建一个 Live Expression，然后观察该动态表达式，然后右键单击它以展开 **"元素** "工具中的 DOM 树。
 
-若要跟踪 DevTools 中聚焦的元素：
+这就是确定已 `Tab` 使用该键导航到页面中的哪个项的方式，即使具有焦点的元素已被隐藏且未显示在呈现的页面上。
 
-1.  打开“**控制台**”。
+在浏览 `Tab` 页面时，DOM 树不会自动更新为选择相应的 DOM 树节点。  但 Live Expression 输出会发生更改，至少当您从一种页面元素转到另一种页面元素时。  若要查看键具有哪个确切元素已聚焦 (而不只是聚焦哪种类型的元素 __) ，请右键单击 Live Expression) 下面的 Live Expression (的结果，以转到 **"** 元素"工具中的 DOM 树的特定节点。`Tab`
 
-1.  单击 **"创建实时表达式 (** ![ 创建实时表达式 ](../media/create-live-expression-icon.msft.png) "。) 。
 
-    :::image type="content" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="创建 Live Expression。" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
+## <a name="defining-a-live-expression-to-be-able-to-determine-which-dom-node-has-focus"></a>定义 Live Expression 以能够确定哪个 DOM 节点具有焦点
 
-1.  键入 `document.activeElement`。
+若要使用 `Tab`Live 表达式跟踪 DevTools 中控制台中的 -focused 元素：****
 
-1.  单击 Live **Expression** UI 外部以保存。
+1. 打开 [新窗口或选项卡中的](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 辅助功能测试演示网页。
 
-`document.activeElement` 下面显示的值是表达式的结果。
+1. 右键单击网页中的任意位置，然后选择"检查 **"**。  或者，按 `F12`。  将在网页旁边打开 DevTools。
 
-由于该表达式始终代表着焦点的元素，因此现在可以始终跟踪哪个元素具有焦点。
+1. 在 DevTools 中，打开 **控制台**。
 
-* 将鼠标悬停在结果上，以在视区中突出显示焦点元素。
+1. 单击 **"创建实时表达式 (**![创建实时表达式"](../media/create-live-expression-icon.msft.png)。) 。
 
-* 右键单击结果，然后选择"元素 **"面板中的**"展示"，以显示"元素"面板上的**DOM 树****中的**元素。
+   :::image type="content" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="创建 Live Expression。" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
 
-* 右键单击结果并选择"存储 **"作为** 全局变量，以创建对可在控制台中使用的节点的变量 **引用**。
+1. 键入 `document.activeElement`。
+
+1. 单击 Live Expression UI **外部** 以保存 Live Expression。
+
+1. 单击呈现的网页以将焦点 `Tab` 放在该网页上，然后按 或 `Shift`+`Tab` 在呈现的网页中四处移动焦点。
+
+   下面显示的值 `document.activeElement` 是表达式的结果。  它不会每次在网页 `Tab` 中新 UI 项时明显更改;当您移动到新类型的页面元素时，它会明显更改。
+
+   由于该表达式 `document.activeElement` 实时更新，因此其输出结果始终表示当前聚焦的元素，因此你现在有一种方法可以始终在 DevTools **控制台**中跟踪哪个元素具有焦点。  需要右键单击 Live Expression 输出，如下所示：
+
+1. 在 DevTools **控制台中**，将鼠标悬停在 Live Expression `document.activeElement` (下方的 Live Expression) 。
+
+   焦点元素在视口中突出显示 (，即，在呈现的网页中) 。
+
+1. 在 DevTools **控制台**中，右键单击 Live Expression (下方的 Live Expression `document.activeElement`) ，然后选择"元素"面板中的" **展示"**。 
+
+   在" **元素** "工具中，DOM 树会自动展开并选择活动元素 (DOM 树节点) 。  _活动元素_是您通过按 和 导航到的网页项的 DOM 树表示`Tab``Shift`+`Tab`形式。
+
+   <!-- Another right-click command on the Live Expression result is **Store outerHTML as global variable**, which is different than the command discussed below.  If you select that command, an expandable element such as `<input id="freedonation" class="smallinput">` is output in the **Console**. -->
+
+1. 创建变量引用<!--why do we call it a "variable reference"? is that wording correct? --> 右键单击 Live Expression 结果，然后选择将 ******outerHTML 存储为全局变量**。<!--upstream doc (click "here" below) omits "outerHTML".  which is correct?-->
+
+   在 **控制台中**，将生成新输出，例如 `<a href="#alpacas">Alpacas</a>`。
+
+1. 右键单击新输出，然后选择 **CopyCopy****** >  元素。<!--correct; do these steps make sense?-->
+
+<!--
+how is it "outer HTML"?
+what are we supposed to do w/ this "global variable"?
+what are we supposed to use this "global variable" for?
+why is it called a "global variable"?
+what's the name of the global variable?
+-->
 
 
 <!-- ====================================================================== -->
@@ -62,7 +87,7 @@ ms.locfileid: "12325604"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developer.chrome.com/docs/devtools/accessibility/focus/)，由技术编写 (、Chrome DevTools & Lighthouse) 创作。 [](https://developers.google.com/web/resources/contributors/kaycebasques)
+> 原始页面位于[此处](https://developer.chrome.com/docs/devtools/accessibility/focus/)，由技术编写 (Chrome DevTools & Lighthouse) 创作。[](https://developers.google.com/web/resources/contributors/kaycebasques)
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

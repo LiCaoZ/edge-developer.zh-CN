@@ -7,12 +7,6 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 08/03/2021
-ms.openlocfilehash: 5918e7a68369d1cc95df502cea66277e49efee28
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318364"
 ---
 # <a name="webview2-development-best-practices"></a>WebView2 开发的最佳做法
 
@@ -24,15 +18,15 @@ ms.locfileid: "12318364"
 
 我们通常建议使用 Evergreen WebView2 运行时。  固定版本运行时分发仅建议用于具有严格兼容性要求的应用。  Evergreen 运行时在客户端上自动更新，以便你的 WebView2 应用可以使用最新的功能和安全修补程序。  与固定版本运行时相比，Evergreen 运行时还需要更少的磁盘上的存储空间。
 
-如果使用 Evergreen 运行时，在运行 WebView2 应用之前，测试是否已在客户端上安装 Evergreen WebView2 运行时。  有关详细信息，请导航到 [部署 Evergreen WebView2 运行时](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime)。
+如果使用 Evergreen 运行时，在运行 WebView2 应用之前，测试是否已在客户端上安装 Evergreen WebView2 运行时。  有关详细信息，请参阅 [部署 Evergreen WebView2 运行时](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime)。
 
 
 <!-- ====================================================================== -->
 ## <a name="run-compatibility-tests-regularly-when-using-the-evergreen-runtime"></a>使用 Evergreen 运行时时定期运行兼容性测试
 
-使用 Evergreen WebView2 运行时时，运行时会自动更新，因此必须定期运行兼容性测试。  若要确保 WebView2 应用继续正常工作，请针对[Microsoft Edge Insider (preview) Channels (](https://www.microsoftedgeinsider.com/download) Beta、Dev 或 Canary) 测试 WebView2 控件中的 Web 内容。
+使用 Evergreen WebView2 运行时时，运行时会自动更新，因此必须定期运行兼容性测试。  若要确保 WebView2 应用继续正常工作，请针对 [Microsoft Edge Insider (preview) Channels (](https://www.microsoftedgeinsider.com/download) Beta、Dev 或 Canary) 在 WebView2 控件中测试 Web 内容。
 
-本指南类似于我们向 Web 开发人员提供的指导。  有关详细信息，请导航到["测试你的应用是否向前兼容"。](../concepts/distribution.md#test-your-app-for-forward-compatibility)
+本指南类似于我们向 Web 开发人员提供的指导。  有关详细信息，请参阅 [测试应用是否向前兼容](../concepts/distribution.md#test-your-app-for-forward-compatibility)。
 
 
 <!-- ====================================================================== -->
@@ -47,15 +41,15 @@ ms.locfileid: "12318364"
 若要解决此问题，在代码调用最近添加的 WebView2 API 之前，测试该 API 在客户端的安装运行时中是否可用。  此较新功能测试与其他 Web 开发最佳实践类似，这些最佳实践在使用新的 Web API 之前检测支持的功能。  若要测试已安装运行时中的 API 可用性，请使用：
 
 *   `QueryInterface` 在 C/C++ 中。
-*   `try/catch`.NET 或 WinUI 中的块。
+*   . `try/catch` NET 或 WinUI 中的块。
 
-有关详细信息，请导航到功能[检测以测试安装的运行时是否支持最近添加的 API。](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis)
+有关详细信息，请参阅 [功能检测以测试安装的运行时是否支持最近添加的 API](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis)。
 
 
 <!-- ====================================================================== -->
 ## <a name="update-the-fixed-version-runtime"></a>更新固定版本运行时
 
-如果使用固定版本的 WebView2 运行时，请确保定期更新与应用打包的 WebView2 运行时，以减少安全风险。  在 Webview2 应用中使用第三方内容时，始终考虑不受信任的内容。  有关详细信息，请导航到"[固定版本分发模式"。](../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode)
+如果使用固定版本的 WebView2 运行时，请确保定期更新与应用打包的 WebView2 运行时，以减少安全风险。  在 Webview2 应用中使用第三方内容时，始终考虑不受信任的内容。  有关详细信息，请参阅固定 [版本分发模式](../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode)。
 
 
 <!-- ====================================================================== -->
@@ -71,13 +65,13 @@ ms.locfileid: "12318364"
 <!-- ====================================================================== -->
 ## <a name="manage-the-lifetime-of-the-user-data-folder"></a>管理用户数据文件夹的生命周期
 
-WebView2 应用创建用户数据文件夹来存储 Cookie、凭据和权限等数据。  创建文件夹后，应用负责管理用户数据文件夹的生命周期。  例如，卸载应用时，你的应用必须执行清理操作。  有关详细信息，请导航到["管理用户数据文件夹"。](../concepts/user-data-folder.md)
+WebView2 应用创建用户数据文件夹来存储 Cookie、凭据和权限等数据。  创建文件夹后，应用负责管理用户数据文件夹的生命周期。  例如，卸载应用时，你的应用必须执行清理操作。  有关详细信息，请参阅 [管理用户数据文件夹](../concepts/user-data-folder.md)。
 
 
 <!-- ====================================================================== -->
 ## <a name="handle-runtime-process-failures"></a>处理运行时进程故障
 
-WebView2 应用应侦听和处理事件，以便该应用可以从支持 WebView2 应用进程的运行时进程故障 `ProcessFailed` 中恢复。
+WebView2 应用应 `ProcessFailed` 侦听和处理事件，以便该应用可以从支持 WebView2 应用进程的运行时进程故障中恢复。
 
 与应用进程一起运行的运行时进程集合支持 WebView2 应用。  这些支持运行时进程可能由于各种原因（如内存不足或用户终止）而失败。  当支持运行时进程失败时，WebView2 将通过引发 [ProcessFailed 事件通知应用](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs)。
 
@@ -91,11 +85,11 @@ WebView2 应用应侦听和处理事件，以便该应用可以从支持 WebView
 
 为了防止此类内存泄露：
 *  对于任何添加的事件处理程序，在释放环境对象之前删除事件处理程序。
-*  避免在事件处理程序中持有对环境对象的引用。  相反，事件处理程序可以从"已完成事件"回调的参数访问 `sender` 环境对象。
+*  避免在事件处理程序中持有对环境对象的引用。  相反，事件处理程序可以从 `sender` "已完成事件"回调的参数访问环境对象。
 *  如果希望应用保留对 WebView2 对象的引用，请尽可能使用弱引用。
 
 
 <!-- ====================================================================== -->
 ## <a name="follow-recommended-webview2-security-best-practices"></a>遵循建议的 WebView2 安全性最佳做法
 
-对于任何 WebView2 应用，请确保遵循我们建议的 WebView2 安全性最佳做法。  有关详细信息，请导航到 [Best practices for developing secure WebView2 applications](../concepts/security.md)。
+对于任何 WebView2 应用，请确保遵循我们建议的 WebView2 安全性最佳做法。  有关详细信息，请参阅 [Best practices for developing secure WebView2 applications](../concepts/security.md)。

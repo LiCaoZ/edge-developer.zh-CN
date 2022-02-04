@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/06/2022
-ms.openlocfilehash: 02cb20f306b979d629b472598a0c2a5db14d80af
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12326082"
 ---
 # <a name="network-conditions-tool"></a>网络条件工具
 
@@ -27,7 +21,7 @@ ms.locfileid: "12326082"
 <!-- ====================================================================== -->
 ## <a name="disable-the-browser-cache"></a>禁用浏览器缓存
 
-请参阅 [网络功能参考中的从网络条件箱](../network/reference.md#disable-the-browser-cache-from-the-network-conditions-drawer) 禁用 _浏览器缓存_。
+请参阅[网络功能参考中的从网络条件箱禁用](../network/reference.md#disable-the-browser-cache-from-the-network-conditions-drawer)_浏览器缓存_。
 
 
 <!-- ====================================================================== -->
@@ -40,15 +34,15 @@ ms.locfileid: "12326082"
 ## <a name="set-the-user-agent-string"></a>设置用户代理字符串
 
 请参阅：
-* [在模拟移动设备和](../device-mode/index.md#set-the-user-agent-string)设备仿真_ (设置用户) 。 _
+* [在模拟移动设备和](../device-mode/index.md#set-the-user-agent-string) 设备仿真 (_中设置用户) _。
 * [替代用户代理字符串](../device-mode/override-user-agent.md)。
-* [在网络功能参考 中设置](../network/reference.md#set-user-agent-client-hints)_用户代理客户端提示_。
+* [在网络功能参考中设置](../network/reference.md#set-user-agent-client-hints)_用户代理客户端提示_。
 
 
 <!-- ====================================================================== -->
 ## <a name="set-content-encodings-such-as-deflate-gzip-and-br"></a>设置 Content-Encodings，如 deflate、gzip 和 br
 
-请参阅[优化网站速度中的](../speed/get-started.md#enable-text-compression)_启用文本压缩_。
+请参阅 [使用 Lighthouse](../speed/get-started.md#enable-text-compression) _优化网站速度中的启用文本压缩_。
 
 
 <!-- ====================================================================== -->
@@ -56,7 +50,7 @@ ms.locfileid: "12326082"
 
 以下"新增功能"条目提供了其他信息：
 
-* [在 93 User-Agent](../whats-new/2021/07/devtools.md#easier-customization-of-user-agent-client-hints)的新增功能中更轻松地自定义 (Microsoft Edge_客户端) 。 _
+* [更轻松地自定义 User-Agent](../whats-new/2021/07/devtools.md#easier-customization-of-user-agent-client-hints) _93 (Microsoft Edge中的_新增功能中的客户端) 。
 * [User-Agent Client Hints for devices in the Network conditions tab](../whats-new/2021/05/devtools.md#user-agent-client-hints-for-devices-in-the-network-conditions-tab) in _What's New In DevTools (Microsoft Edge 92) _.
-* [在 What's New](../whats-new/2021/04/devtools.md#new-options-to-configure-content-encodings-in-the-network-conditions-tool) _In DevTools (Microsoft Edge 91 _) 中的网络条件工具中配置内容编码的新选项。
-* [更新User-Agent](../whats-new/2019/12/devtools.md#updated-user-agent-strings) _DevTools (Microsoft Edge 80_中的新增功能中的) 。
+* [在](../whats-new/2021/04/devtools.md#new-options-to-configure-content-encodings-in-the-network-conditions-tool) 91 年 9 月 1 日，在"开发工具中的新增功能"中的"网络条件"工具中配置 (Microsoft Edge_编码) _。
+* [更新User-Agent](../whats-new/2019/12/devtools.md#updated-user-agent-strings) _DevTools (Microsoft Edge 80 中的_新增功能中的) 。

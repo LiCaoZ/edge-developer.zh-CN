@@ -6,30 +6,25 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 4e3ef05aa7eaa06e975a47fd0822dfe44756ad1c
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12322826"
 ---
+
 # <a name="manifest-file-format-for-extensions"></a>扩展名的清单文件格式
 
-每个扩展Microsoft Edge JSON 格式的清单文件，名为 `manifest.json` 。  清单文件是扩展的蓝图。  清单文件包含以下信息：
+每个扩展Microsoft Edge JSON 格式的清单文件，名为 `manifest.json`。  清单文件是扩展的蓝图。  清单文件包含以下信息：
 
 *  扩展的版本号。
 *  扩展的标题。
 *  运行扩展所需的权限。
 
-扩展的格式 `manifest.json` 正在从清单 V2 移动到清单 V3。  此处显示了这两种格式。  若要将清单 V2 扩展迁移到清单 V3，请参阅准备将扩展从[清单 V2 更新到 V3。](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md)
+扩展的格式 `manifest.json` 正在从清单 V2 移动到清单 V3。  此处显示了这两种格式。  若要将清单 V2 扩展迁移到清单 V3，请参阅准备将扩展从 [清单 V2 更新到 V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md)。
 
 
 <!-- ====================================================================== -->
 ## <a name="format-of-manifestjson-for-extensions-using-manifest-v3"></a>使用清单 V3 的扩展的 manifest\.json 格式
 
-以下代码显示了清单 V3 程序包中扩展支持的 `manifest.json` 字段。
+以下代码显示了清单 `manifest.json` V3 程序包中扩展支持的字段。
 
-有关每个字段的参考信息，请导航到 ["V3 (") "清单文件格式"， ](https://developer.chrome.com/docs/extensions/mv3/manifest) 然后选择这些字段上的链接。
+有关每个字段的参考信息，请参阅 Manifest [file format (V3) ](https://developer.chrome.com/docs/extensions/mv3/manifest) ，然后选择这些字段上的链接。
 
 ```json
 {
@@ -114,9 +109,9 @@ ms.locfileid: "12322826"
 <!-- ====================================================================== -->
 ## <a name="format-of-manifestjson-for-extensions-using-manifest-v2"></a>使用清单 V2 的扩展的 manifest\.json 格式
 
-以下代码显示了清单 V2 包中支持的扩展字段 `manifest.json` 。
+以下代码显示了清单 `manifest.json` V2 包中支持的扩展字段。
 
-有关每个字段的参考信息，请导航 [到"V2 ](https://developer.chrome.com/docs/extensions/mv2/manifest) (") "清单文件格式"，然后选择这些字段上的链接。
+有关每个字段的参考信息，请参阅 Manifest [file format (V2) ](https://developer.chrome.com/docs/extensions/mv2/manifest) and then select the links on the fields。
 
 ```json
 {
@@ -206,5 +201,5 @@ ms.locfileid: "12322826"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/docs/extensions/mv3/manifest/)。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。
