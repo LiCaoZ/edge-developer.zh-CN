@@ -107,12 +107,12 @@
                 - name: 在控制台中运行 JavaScript
                   href: devtools-guide-chromium/console/console-javascript.md
                   displayName: Console tool
-                - name: 控制台 API 参考
+                - name: 控制台对象 API 参考
                   href: devtools-guide-chromium/console/api.md
-                  displayName: Console tool
-                - name: 控制台实用工具 API 参考
+                  displayName: 'Console tool, API Reference'
+                - name: 控制台工具实用功能和选择器
                   href: devtools-guide-chromium/console/utilities.md
-                  displayName: Console tool
+                  displayName: 'Console tool, API Reference, DOM selectors'
                 - name: 使用实时表达式监视 JavaScript 中的更改
                   href: devtools-guide-chromium/console/live-expressions.md
                   displayName: Console tool
@@ -247,7 +247,7 @@
                 - name: 内存术语
                   href: devtools-guide-chromium/memory-problems/memory-101.md
                   displayName: Memory tool
-                - name: 记录堆快照
+                - name: 使用内存工具记录堆快照
                   href: devtools-guide-chromium/memory-problems/heap-snapshots.md
                   displayName: Memory tool
                 - name: 在时间线上使用分配检测
@@ -289,7 +289,7 @@
                 - name: 分析运行时性能
                   href: devtools-guide-chromium/rendering-tools/index.md
                   displayName: Performance tool
-                - name: 优化网站速度
+                - name: 使用 Lighthouse 优化网站速度
                   href: devtools-guide-chromium/speed/get-started.md
                   displayName: 'Performance tool, Lighthouse tool, Network tool'
                 - name: 性能功能参考
@@ -422,6 +422,9 @@
                 - name: 使用颜色选取器测试文本颜色对比度
                   href: devtools-guide-chromium/accessibility/color-picker.md
                   displayName: 'Elements tool, Styles tab, Color Picker'
+                - name: 使用检查工具检查默认状态下的文本颜色对比度
+                  href: devtools-guide-chromium/accessibility/test-inspect-text-contrast.md
+                  displayName: Inspect tool
                 - name: 验证所有元素状态可访问性
                   href: devtools-guide-chromium/accessibility/test-inspect-states.md
                   displayName: 'Elements tool, Styles tab, hov Toggle Element State'
@@ -485,13 +488,13 @@
               href: extensions-chromium/whats-new/roadmap.md
         - name: 入门
           items:
-            - name: 扩展体系结构
+            - name: 扩展概念和体系结构
               href: extensions-chromium/getting-started/index.md
-            - name: 创建扩展教程第 1 部分
+            - name: 创建扩展教程，第 1 部分
               href: extensions-chromium/getting-started/part1-simple-extension.md
-            - name: 创建扩展教程第 2 部分
+            - name: 创建扩展教程，第 2 部分
               href: extensions-chromium/getting-started/part2-content-scripts.md
-            - name: 清单文件格式
+            - name: 扩展名的清单文件格式
               href: extensions-chromium/getting-started/manifest-format.md
             - name: 旁加载扩展
               href: extensions-chromium/getting-started/extension-sideloading.md
@@ -678,21 +681,21 @@
       items:
         - name: 开发工具协议
           href: test-and-automation/devtools-protocol.md
-        - name: 源试验
+        - name: 在 Microsoft Edge 中使用原始试用版
           href: origin-trials/index.md
-        - name: 编剧
+        - name: 在 Microsoft Edge 中使用 Playwright 自动执行和测试
           href: playwright/index.md
-        - name: Puppeteer
+        - name: Puppeteer 概述
           href: puppeteer/index.md
         - name: WebDriver
           items:
-            - name: WebDriver 概述
+            - name: 使用 WebDriver 自动执行 Microsoft Edge
               href: webdriver-chromium/index.md
-            - name: 自动化 IE 模式
+            - name: 使用 Internet Explorer 驱动程序在 Microsoft Edge 中自动执行 IE 模式
               href: webdriver-chromium/ie-mode.md
             - name: 功能和 EdgeOptions
               href: webdriver-chromium/capabilities-edge-options.md
-        - name: webhint
+        - name: 适用于Visual Studio Code的 webhint 扩展
           href: test-and-automation/webhint.md
     - name: Web 平台
       items:
