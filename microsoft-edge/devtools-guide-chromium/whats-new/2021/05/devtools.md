@@ -7,12 +7,6 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 06/02/2021
-ms.openlocfilehash: baf7fb86605813b9165af185175e847e430bcb77
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12324823"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-92"></a>DevTools 中的新增功能 (Microsoft Edge 92)
 
@@ -30,9 +24,7 @@ ms.locfileid: "12324823"
 
 在 Microsoft Edge 版本 91 或更早版本中，当 DevTools 视区较窄时，不会显示用于关闭 DevTools 的**关闭**按钮。  在 Microsoft Edge 版本 92 中，无论 DevTools 视区宽度如何，DevTools 中的**关闭**按钮始终存在。
 
-:::image type="complex" source="../../media/2021/05/close-devtools-button-always-displayed.msft.png" alt-text="即使视区较窄，现在也存在“关闭 DevTools”按钮。" lightbox="../../media/2021/05/close-devtools-button-always-displayed.msft.png":::
-   即使视区较窄， 现在也存在**关闭** DevTools 按钮
-:::image-end:::
+:::image type="content" source="../../media/2021/05/close-devtools-button-always-displayed.msft.png" alt-text="即使视区较窄，现在也存在“关闭 DevTools”按钮。" lightbox="../../media/2021/05/close-devtools-button-always-displayed.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -47,13 +39,9 @@ ms.locfileid: "12324823"
 
 **更多工具**菜单在 Microsoft Edge 版本 89 中作为试验提供，始终存在。
 
-:::image type="complex" source="../../media/2021/05/more-tools-button.msft.png" alt-text="上部工具栏和抽屉工具栏中的“更多工具”按钮。" lightbox="../../media/2021/05/more-tools-button.msft.png":::
-   上部工具栏和抽屉工具栏中的“**更多工具**”按钮
-:::image-end:::
+:::image type="content" source="../../media/2021/05/more-tools-button.msft.png" alt-text="上部工具栏和抽屉工具栏中的“更多工具”按钮。" lightbox="../../media/2021/05/more-tools-button.msft.png":::
 
-:::image type="complex" source="../../media/2021/05/more-tools-menu.msft.png" alt-text="“更多工具”菜单。" lightbox="../../media/2021/05/more-tools-menu.msft.png":::
-   “**更多工具**”菜单
-:::image-end:::
+:::image type="content" source="../../media/2021/05/more-tools-menu.msft.png" alt-text="“更多工具”菜单。" lightbox="../../media/2021/05/more-tools-menu.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -81,9 +69,7 @@ ms.locfileid: "12324823"
 
 这些改进尤其适用于本地化 DevTools 的用户，在这些用户中，选项卡可能更窄且更易于意外关闭。
 
-:::image type="complex" source="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png" alt-text="具有窄选项卡的本地化 DevTools。" lightbox="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png":::
-   具有窄选项卡的本地化 DevTools
-:::image-end:::
+:::image type="content" source="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png" alt-text="具有窄选项卡的本地化 DevTools。" lightbox="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png":::
 
 我们还通过向主工具栏和抽屉工具栏添加“[更多工具菜单](#add-tools-quickly-with-the-new-more-tools-button)”，简化了重新添加已关闭的工具的操作。
 
@@ -115,13 +101,11 @@ ms.locfileid: "12324823"
 
 HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要。  CSS 允许开发人员创建其屏幕顺序与 HTML 源文档中的顺序不同的内容。  这是一个辅助功能问题，因为屏幕阅读器用户可能会有困惑的体验。
 
-:::image type="complex" source="../../media/2021/05/source-order-viewer.msft.png" alt-text="激活源订单查看器会将源中的元素顺序显示为页面上的覆盖层。" lightbox="../../media/2021/05/source-order-viewer.msft.png":::
-   激活**源订单查看器** 将源中的元素顺序显示为页面上的覆盖层
-:::image-end:::
+:::image type="content" source="../../media/2021/05/source-order-viewer.msft.png" alt-text="激活源订单查看器会将源中的元素顺序显示为页面上的覆盖层。" lightbox="../../media/2021/05/source-order-viewer.msft.png":::
 
-有关详细信息，请导航到[使用源订单查看器测试键盘支持](../../../accessibility/test-tab-key-source-order-viewer.md)。
+请参阅[使用源订单查看器测试键盘支持](../../../accessibility/test-tab-key-source-order-viewer.md)。
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1094406](https://crbug.com/1094406)。
+要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1094406](https://crbug.com/1094406)。
 
 
 <!-- ====================================================================== -->
@@ -132,19 +116,17 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 用户代理客户端提示现在应用于**网络条件**工具的**用户代理**字段中的设备。  用户代理客户端提示是客户端提示 API 的新扩展，使你能够以保留隐私的人体工学方式访问有关用户浏览器的信息。
 
-:::image type="complex" source="../../media/2021/05/user-agent.msft.png" alt-text="用户代理。" lightbox="../../media/2021/05/user-agent.msft.png":::
-   用户代理
-:::image-end:::
+:::image type="content" source="../../media/2021/05/user-agent.msft.png" alt-text="用户代理。" lightbox="../../media/2021/05/user-agent.msft.png":::
 
-有关详细信息，请导航到[用户代理客户端提示](../../../../web-platform/user-agent-guidance.md#user-agent-client-hints)。
+请参阅[用户代理客户端提示](../../../../web-platform/user-agent-guidance.md#user-agent-client-hints)。
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1174299](https://crbug.com/1174299)。
+要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1174299](https://crbug.com/1174299)。
 
 
 <!-- ====================================================================== -->
 ## <a name="microsoft-edge-developer-tools-for-visual-studio-code-version-118"></a>适用于 Visual Studio Code 版本 1.1.8 的 Microsoft Edge 开发人员工具
 
-[适用于 Visual Studio Code 的 Microsoft Edge 开发人员工具](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)针对 Microsoft Visual Studio Code 的扩展版本 1.1.8 自上一个版本以来有以下更改。  Microsoft Visual Studio Code 会自动更新扩展。  要手动更新到版本 1.1.8，请导航至“[手动更新扩展](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually)”。
+[适用于 Visual Studio Code 的 Microsoft Edge 开发人员工具](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)针对 Microsoft Visual Studio Code 的扩展版本 1.1.8 自上一个版本以来有以下更改。  Microsoft Visual Studio Code 会自动更新扩展。  若要手动更新到版本 1.1.8，请查看“[手动更新扩展](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually)”。
 
 你可以在 [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools) 上提交问题并参与扩展的改进。
 
@@ -161,7 +143,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 *  **Microsoft Edge 工具：目标**面板现在具有**生成 launch.json**按钮和说明，以帮助启动项目以在 Microsoft Edge 中进行调试。
 
-有关详细信息，请导航至[使用工具](https://microsoft.github.io/vscode-edge-devtools/using.html)。
+请参阅[使用工具](https://microsoft.github.io/vscode-edge-devtools/using.html)。
 
 
 <!-- ====================================================================== -->
@@ -176,13 +158,11 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 当页面上的 HTML 元素 `display: grid` 或 `display: inline-grid` 应用到该元素时，**样式**选项卡中会显示其旁边的网格图标。单击网格图标以显示或隐藏 CSS 网格编辑器。 在 CSS 网格编辑器中，选择任何图标（如 `justify-content: space-around`）以预览呈现页面中的布局。  弹性布局的工作方式类似。
 
-:::image type="complex" source="../../media/2021/05/css-grid-editor.msft.png" alt-text="CSS 网格编辑器。" lightbox="../../media/2021/05/css-grid-editor.msft.png":::
-   CSS 网格编辑器
-:::image-end:::
+:::image type="content" source="../../media/2021/05/css-grid-editor.msft.png" alt-text="CSS 网格编辑器。" lightbox="../../media/2021/05/css-grid-editor.msft.png":::
 
 <!-- screenshot uses https://jec.fyi -->
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1203241](https://crbug.com/1203241)。
+要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1203241](https://crbug.com/1203241)。
 
 
 ### <a name="support-for-const-redeclarations-in-the-console"></a>在控制台中支持常量重新声明
@@ -194,86 +174,72 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 *  `const` REPL 脚本中不允许重新声明页脚本。
 *  `const` 不允许在同一 REPL 脚本中重新声明（请参阅变量 `b`）。
 
-:::image type="complex" source="../../media/2021/05/support-for-const-redeclaration.msft.png" alt-text="控制台中允许重新声明常量变量。" lightbox="../../media/2021/05/support-for-const-redeclaration.msft.png":::
-   控制台中允许重新声明常量变量
-:::image-end:::
+:::image type="content" source="../../media/2021/05/support-for-const-redeclaration.msft.png" alt-text="控制台中允许重新声明常量变量。" lightbox="../../media/2021/05/support-for-const-redeclaration.msft.png":::
 
-若要了解如何运行单个 REPL 脚本或多行 REPL 脚本，请导航到[在控制台中运行JavaScript](../../../console/console-javascript.md)。
+若要了解如何运行单个 REPL 脚本或多行 REPL 脚本，请参阅[在控制台中运行 JavaScript](../../../console/console-javascript.md)。
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1076427](https://crbug.com/1076427)。
+要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1076427](https://crbug.com/1076427)。
 
 
 ### <a name="new-shortcut-to-view-iframe-details"></a>查看 iframe 详细信息的新快捷方式
 
 若要快速查看`iframe`详细信息，现在可以在**元素**工具中右键单击`iframe`元素，然后选择**显示 iframe 详细信息**。
 
-:::image type="complex" source="../../media/2021/05/show-iframe-details.msft.png" alt-text="iframe 详细信息视图。" lightbox="../../media/2021/05/show-iframe-details.msft.png":::
-   iframe 详细信息视图
-:::image-end:::
+:::image type="content" source="../../media/2021/05/show-iframe-details.msft.png" alt-text="iframe 详细信息视图。" lightbox="../../media/2021/05/show-iframe-details.msft.png":::
 
 这将显示**应用程序**工具中有关`iframe`的详细信息。  在**应用程序**工具中，可以检查文档详细信息、安全和隔离状态、权限策略等，以调试潜在问题。
 
-:::image type="complex" source="../../media/2021/05/show-iframe-details-application-tool.msft.png" alt-text="应用程序工具中的帧详细信息。" lightbox="../../media/2021/05/show-iframe-details-application-tool.msft.png":::
-   **应用程序**工具中的帧详细信息
-:::image-end:::
+:::image type="content" source="../../media/2021/05/show-iframe-details-application-tool.msft.png" alt-text="应用程序工具中的帧详细信息。" lightbox="../../media/2021/05/show-iframe-details-application-tool.msft.png":::
 
 <!-- demo page: https://wolfib.github.io/web-demos/ esp https://wolfib.github.io/web-demos/jsIframe.html -->
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1192084](https://crbug.com/1192084)。
+要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1192084](https://crbug.com/1192084)。
 
 
 ### <a name="enhanced-cors-debugging-support"></a>增强的 CORS 调试支持
 
 跨源资源共享(CORS)错误现在显示在**问题**选项卡中。 CORS 错误有多种潜在原因。  单击以展开每个问题以了解潜在原因和解决方案。
 
-:::image type="complex" source="../../media/2021/05/cors-debugging-support.msft.png" alt-text="“问题”选项卡中的 CORS 问题。" lightbox="../../media/2021/05/cors-debugging-support.msft.png":::
-   “问题”选项卡中的 CORS 问题
-:::image-end:::
+:::image type="content" source="../../media/2021/05/cors-debugging-support.msft.png" alt-text="“问题”选项卡中的 CORS 问题。" lightbox="../../media/2021/05/cors-debugging-support.msft.png":::
 
 <!-- screenshot uses http://cors-errors.glitch.me -->
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1141824](https://crbug.com/1141824)。
+要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1141824](https://crbug.com/1141824)。
 
 
 ### <a name="renamed-xhr-filter-to-fetchxhr"></a>已将 XHR 筛选器重命名为 Fetch\/XHR
 
 在**网络**工具中，**XHR**筛选器现已重命名为 **Fetch/XHR**。 此更改更清楚地表明，此筛选器同时包含 `XMLHttpRequest` 和 `Fetch` API 网络请求。
 
-:::image type="complex" source="../../media/2021/05/fetch-xhr.msft.png" alt-text="网络工具现在显示 Fetch/XHR 而不是 XHR。" lightbox="../../media/2021/05/fetch-xhr.msft.png":::
-   **网络**工具现在显示 **Fetch/XHR**，而不是 **XHR**
-:::image-end:::
+:::image type="content" source="../../media/2021/05/fetch-xhr.msft.png" alt-text="网络工具现在显示 Fetch/XHR 而不是 XHR。" lightbox="../../media/2021/05/fetch-xhr.msft.png":::
 
-有关详细信息，请导航至：
+请参阅：
 *  [XMLHttpRequest spec](https://xhr.spec.whatwg.org)
 *  [提取规范](https://fetch.spec.whatwg.org)
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1201398](https://crbug.com/1201398)。
+要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1201398](https://crbug.com/1201398)。
 
 
 ### <a name="filter-wasm-resource-type-in-the-network-tool"></a>在网络工具中筛选 Wasm 资源类型
 
 在**网络**工具中，现在可以选择新的 **Wasm** 筛选器来筛选 WebAssembly 网络请求。
 
-:::image type="complex" source="../../media/2021/05/wasm-network-requests.msft.png" alt-text="按 Wasm 筛选。" lightbox="../../media/2021/05/wasm-network-requests.msft.png":::
-   按 Wasm 筛选
-:::image-end:::
+:::image type="content" source="../../media/2021/05/wasm-network-requests.msft.png" alt-text="按 Wasm 筛选。" lightbox="../../media/2021/05/wasm-network-requests.msft.png":::
 
 <!-- screenshot uses http://memory-inspector.glitch.me/demo-wasm.html -->
 
-要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1103638](https://crbug.com/1103638)。
+要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1103638](https://crbug.com/1103638)。
 
 
 ### <a name="compute-intersections-are-now-included-in-the-performance-tool"></a>计算交集现在包含在性能工具中
 
 在**性能**工具中，DevTools 现在在火形图中显示**计算交集**。 这些更改有助于识别交集观察程序事件并调试交集观察程序的潜在性能开销。
 
-:::image type="complex" source="../../media/2021/05/compute-intersections-in-perf-tool.msft.png" alt-text="性能工具中的计算交集。" lightbox="../../media/2021/05/compute-intersections-in-perf-tool.msft.png":::
-   **性能**工具中的计算交集
-:::image-end:::
+:::image type="content" source="../../media/2021/05/compute-intersections-in-perf-tool.msft.png" alt-text="性能工具中的计算交集。" lightbox="../../media/2021/05/compute-intersections-in-perf-tool.msft.png":::
 
 <!-- screenshot uses https://googlechrome.github.io/samples/intersectionobserver -->
 
-有关交集观察程序的详细信息，请导航至[信任良好，观察效果更好：交集观察程序 v2](https://web.dev/intersectionobserver-v2)。  有关使用火形图的信息，请导航到[分析性能记录](../../../evaluate-performance/reference.md#analyze-a-performance-recording)。  要在 Chromium 开源项目中查看此功能的历史记录，请导航到问题 [1199137](https://crbug.com/1199137)。
+有关交集观察程序的详细信息，请参阅[信任良好，观察效果更好：交集观察程序 v2](https://web.dev/intersectionobserver-v2)。  有关使用火形图的信息，请参阅[分析性能记录](../../../evaluate-performance/reference.md#analyze-a-performance-recording)。  要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1199137](https://crbug.com/1199137)。
 
 
 <!-- ====================================================================== -->
