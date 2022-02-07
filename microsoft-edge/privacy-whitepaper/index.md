@@ -75,7 +75,7 @@ ms.date: 12/10/2021
 
 可以阻止Microsoft Edge提示你保存密码。 导航到 `edge://settings/passwords`。 关闭**Offer 以保存密码**设置。  可以阻止Microsoft Edge对保存的密码使用自动填充并删除保存的密码。 导航到`edge://settings/passwords`，然后选择 **"已保存的密码"。**  若要删除所有自动填充数据，请导航到 `edge://settings/clearBrowserData`，选择“自动填充表单数据”****，选择所需的时间范围，然后选择“立即清除”****。
 
-如果配置文件的同步已启用，则自动填充数据会在使用相同凭据登录的所有Microsoft Edge版本中同步。  启用同步时，所有自动填充数据都存储在加密的 Microsoft 服务器上。  存储在 Microsoft 服务器上的自动填充数据仅用于同步目的。  可以关闭自动填充数据的同步。 导航到 `edge://settings/profiles/sync`。 选择**关闭同步**按钮。 如果启用了自动填充同步，则在登录到Microsoft Edge时从设备中删除自动填充数据会从使用相同凭据登录的所有其他设备中删除数据。
+如果已登录并同步，则自动填充数据将同步到使用相同凭据登录的所有Microsoft Edge版本。  同步时，所有自动填充数据都存储在加密的 Microsoft 服务器上。  存储在 Microsoft 服务器上的自动填充数据仅用于同步目的。  可以关闭自动填充数据的同步。 导航到 `edge://settings/profiles/sync` 并关闭 **"基本信息** "切换。 如果同步已启用以进行自动填充，则在登录到Microsoft Edge时从设备中删除自动填充数据会从使用相同凭据登录的所有其他设备中删除数据。
 
 访问网页并提交表单时，Microsoft Edge向 Microsoft 表单填充服务发送有关表单的信息。 此信息包括主机名和自动填充条目的哈希。 例如，文本框 1 需要电子邮件地址，文本框 2 需要密码，等等。  不会向服务发送用户输入的信息或用户标识符。  这些信息有助于Microsoft Edge正确标识不同网页的表单。  数据用于帮助将已保存的自动填充数据与表单匹配。
 
@@ -212,7 +212,7 @@ Microsoft Edge 支持 Adobe 的 Flash Access DRM，由某些网站使用，而�
 
 来自用户的评论和意见在加载项网站上是公开的，并且也会与开发人员共享。 如果你已登录到 Microsoft Edge，则Microsoft Edge加载项网站中安装的扩展将与你的帐户相关联，以提供扩展建议。 该数据用于汇总以了解扩展的普及程度。
 
-可以跨所有已登录同步版本的Microsoft Edge同步扩展和首选项。 导航到 `edge://settings/profiles/sync`，然后选择 **"打开同步"** 按钮。
+可以跨所有已登录同步版本的Microsoft Edge同步扩展和首选项。 导航到 `edge://settings/profiles/sync`，然后选择 **"登录以同步数据"** 按钮。
 
 安装扩展是可选的。 若要随时卸载任何扩展，请导航到 `edge://extensions`。 安装扩展时，它指定需要访问哪些用户数据。 Microsoft Edge在安装扩展之前请求你的权限。 在安装扩展之前，请确保其安全可靠。 查看开发人员针对特定扩展的隐私策略。
 
@@ -281,7 +281,7 @@ Microsoft Edge 不存储地理位置坐标。 向 Microsoft 定位服务请求�
 
 第一次启动浏览器时，Microsoft Edge 将提供交互式无缝体验。  可以将浏览器数据导入到其他浏览器Microsoft Edge。  在导入期间，可以保留现有数据，也可以将其删除并重新启动。  数据包括收藏夹、浏览历史记录、自动填充数据、扩展、设置以及其他浏览数据。
 
-更新Microsoft Edge时，会自动导入旧版Microsoft Edge中的浏览数据。  确认后，Microsoft Edge从其他浏览器（如 Google Chrome、Mozilla Firefox 或 Internet Explorer）导入浏览器数据。 Microsoft Edge从操作系统定义的最常用浏览器导入数据。  在设备上本地完成数据导入，并存储在本地，除非你同意同步浏览数据，否则不会发送给 Microsoft。
+更新Microsoft Edge时，会自动导入旧版Microsoft Edge中的浏览数据。  确认后，Microsoft Edge从其他浏览器（如 Google Chrome、Mozilla Firefox 或 Internet Explorer）导入浏览器数据。 Microsoft Edge从操作系统定义的最常用浏览器导入数据。  在设备上本地完成数据导入，并存储在本地，并且不会发送到 Microsoft，除非你登录并同步浏览数据。
 
 :::image type="complex" source="./media/migration.png" alt-text="导入。" lightbox="./media/migration.png":::
    Import
@@ -345,7 +345,7 @@ Internet Explorer 浏览数据本地存储在 Microsoft Edge 和 Internet Explor
    儿童模式
 :::image-end:::
 
-在儿童模式下浏览仅限于儿童友好网站的默认列表。  导航时，网站会与允许的网站的本地列表进行比较。  在儿童模式下访问的网站不能在 [family.microsoft.com](https://account.microsoft.com/family) 查看，因为在儿童模式下浏览不会与任何帐户相关联。  可以通过启动儿童模式的个人资料添加允许的网站例外。  如果同步已打开，这些例外会同步到启动儿童模式的配置文件。
+在儿童模式下浏览仅限于儿童友好网站的默认列表。  导航时，网站会与允许的网站的本地列表进行比较。  在儿童模式下访问的网站不能在 [family.microsoft.com](https://account.microsoft.com/family) 查看，因为在儿童模式下浏览不会与任何帐户相关联。  可以通过启动儿童模式的个人资料添加允许的网站例外。  如果用户已登录，则这些异常将同步到启动儿童模式的配置文件。
 
 为了增强儿童模式体验，Microsoft Edge 向 Microsoft 必应和 Microsoft 新闻的标题请求添加了一个安全关键字。  安全关键字有助于筛选掉不适当的搜索结果和新闻。  儿童模式设置 Microsoft Edge 设置的首选项，例如将跟踪防护设置为严格以阻止网站上大多数跟踪器。  关闭时清除浏览数据也已被打开，这将在儿童模式关闭时清除 Cookie 和其他网站数据等内容。  若要在儿童模式下随时清除浏览数据，请完成以下操作。
 
@@ -592,8 +592,6 @@ InPrivate 浏览使用启动 InPrivate 会话的配置文件的购物设置。
 
 如果向操作系统添加了新的标识，而你的 Microsoft Edge 配置文件当前尚无标识，则 Microsoft Edge 会将特定标识添加到你的配置文件。 如果你使用Microsoft 帐户或工作或学校帐户登录Microsoft Edge，并且你的 Windows 配置文件上没有标识，则该帐户将添加到 Windows 配置文件中，除非你选择在登录时不将其添加到 Windows。
 
-如果向操作系统添加了新的标识，而你的 Microsoft Edge 配置文件当前尚无标识，则 Microsoft Edge 会将特定标识添加到你的配置文件。  如果你使用 Microsoft 帐户或工作或学校帐户登录 Microsoft Edge，并且在 Windows 10 配置文件上没有标识，则会将特定帐户添加到 Windows 10 配置文件，除非你在登录时明确选择不将其添加到 Windows 10。
-
 登录到Microsoft Edge启用单一登录。 你将自动登录到某些网站 (如必应) 和其他标识支持的体验 (如同步)。如果要将自动登录限制为 Microsoft 站点 (如 [必应](https://bing.com))，则可以退出登录浏览器。
 
 若要使用用户名和密码再次登录到特定网站或清除 cookie ，请导航到 `edge://settings/privacy`。 有关清除浏览数据的详细信息，请导航到[查看和删除 Microsoft Edge 中的浏览器历史记录](https://support.microsoft.com/help/10607)。
@@ -655,7 +653,7 @@ SmartScreen 服务存储有关信誉检查的数据，并生成已知恶意 URL 
 <!-- ====================================================================== -->
 ## <a name="sync"></a>同步
 
-使用Microsoft 帐户登录Microsoft Edge，可以跨所有已登录版本的Microsoft Edge同步浏览数据。 可以同步浏览历史记录、收藏夹、设置、表单填充数据（包括地址等）、密码、扩展、打开选项卡和集合。 可以选择是否在Microsoft Edge中运行同步。 可以单独控制每个同步的数据类型。
+使用Microsoft 帐户登录Microsoft Edge可跨所有已登录版本的Microsoft Edge同步浏览数据。 可以同步浏览历史记录、收藏夹、设置、表单填充数据（包括地址等）、密码、扩展、打开选项卡和集合。 可以单独打开或关闭每个同步的数据类型。
 
 收藏夹包括之前在早期版本的Microsoft Edge中预留的任何选项卡，这些选项卡与收藏夹的其余部分同步。 从 Microsoft Edge 的一个已登录版本中删除或修改收藏夹或其他数据，将同步到已启用同步的 Microsoft Edge 的所有其他已登录版本。  若要管理同步配置，请导航到 `edge://settings/profiles/sync`。  你的同步设置可能由组织进行管理。
 
@@ -665,9 +663,11 @@ SmartScreen 服务存储有关信誉检查的数据，并生成已知恶意 URL 
 
 为了使同步正常工作，提供同步体验所需的所有设备连接和配置数据将发送到 Microsoft。 同步数据包括设备的名称、制作和型号。 若要删除同步数据，请导航到 [Microsoft 设备仪表板](https://account.microsoft.com/devices)。 若要管理同步收藏夹，请导航到 `edge://favorites`。 若要管理所有其他数据类型，请导航到 `edge://settings/profiles`。
 
+使用Microsoft 帐户或工作或学校帐户登录Microsoft Edge时，Microsoft Edge将在 Microsoft 服务器中存储数据隐私设置的首选项。 Microsoft Edge将仅使用存储的设置，以便在开始在其他设备上使用Microsoft Edge或登录到Microsoft Edge时更轻松地迁移体验。
+
 在浏览器和 Microsoft 服务器之间传输时，将通过 HTTPS 加密传输所有同步数据。  同步的数据同样以加密状态存储在 Microsoft 服务器中。  敏感数据类型（如地址和密码）将在同步前在设备上进一步加密。  如果使用工作或学校帐户，所有数据类型在同步之前都会使用 Microsoft 信息保护进一步加密。  将存储所有其他同步数据类型，直至你删除数据、删除帐户或者帐户处于非活动状态。  帐户 ID 附加到所有同步数据，因为需要使用 ID 才能跨多个设备执行同步。
 
-InPrivate 和来宾模式浏览数据不会同步到你的 Microsoft 帐户。  但是，在 InPrivate 会话过程中创建的收藏夹将同步到已启用同步的 Microsoft Edge 已登录版本。
+InPrivate 和来宾模式浏览数据不会同步到你的 Microsoft 帐户。  但是，在 InPrivate 会话期间创建的收藏夹跨已登录版本的 Microsoft Edge 同步。
 
 
 <!-- ====================================================================== -->
