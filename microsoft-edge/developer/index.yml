@@ -1,18 +1,18 @@
 ### YamlMime:Landing
 title: Microsoft Edge 开发人员文档
-summary: 使用开发Microsoft Edge、Microsoft Edge扩展、渐进式 Web 应用、WebDriver 自动化、WebView2 等进行开发。
+summary: 使用开发Microsoft Edge开发工具、Microsoft Edge扩展、渐进式 Web 应用、WebDriver 自动化、WebView2 等。
 metadata:
   ms.service: websites
   ms.topic: landing-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
   ms.date: 09/02/2021
-  ms.openlocfilehash: 4fce01ec1e66a4387e6d301f6676b39aae13a8bf
-  ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
+  ms.openlocfilehash: f2e6c6e3654d48bfb5e9895a4b414980dd1cc413
+  ms.sourcegitcommit: ae41e2c0ca42fb7eac73824c828305c7b13b4203
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/27/2022
-  ms.locfileid: "12325415"
+  ms.lasthandoff: 02/09/2022
+  ms.locfileid: "12345644"
 landingContent:
 - title: Microsoft Edge 开发工具
   linkLists:
@@ -78,20 +78,26 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: WebView2 概述
+    - text: Microsoft Edge WebView2 简介
       url: /microsoft-edge/webview2/index
+  - linkListType: concept
+    links:
+    - text: Microsoft Edge 和 WebView2 之间的功能差异
+      url: /microsoft-edge/webview2/concepts/browser-features
+    - text: WebView2 开发的最佳做法
+      url: /microsoft-edge/webview2/concepts/developer-guide
   - linkListType: get-started
     links:
-    - text: Win32 应用中的 WebView2 入门
-      url: /microsoft-edge/webview2/get-started/win32
-    - text: WinForms 应用中的 WebView2 入门
-      url: /microsoft-edge/webview2/get-started/winforms
-    - text: WinUI 2 应用中的 WebView2 入门
-      url: /microsoft-edge/webview2/get-started/winui2
-    - text: WinUI 3 应用中的 WebView2 入门
-      url: /microsoft-edge/webview2/get-started/winui
-    - text: WPF 应用中的 WebView2 入门
-      url: /microsoft-edge/webview2/get-started/wpf
+    - text: WebView2 入门
+      url: /microsoft-edge/webview2/get-started/get-started
+  - linkListType: download
+    links:
+    - text: WebView2 示例代码
+      url: /microsoft-edge/webview2/code-samples-links
+  - linkListType: whats-new
+    links:
+    - text: WebView2 SDK 发行说明
+      url: /microsoft-edge/webview2/release-notes
   - linkListType: reference
     links:
     - text: Microsoft Edge WebView2 API 参考

@@ -598,68 +598,71 @@
           href: progressive-web-apps-chromium/demo-pwas.md
     - name: WebView2
       items:
-        - name: WebView2 概述
+        - name: Microsoft Edge WebView2 简介
           href: webview2/index.md
         - name: 入门
           items:
-            - name: Win32
+            - name: WebView2 入门
+              href: webview2/get-started/get-started.md
+            - name: Win32 应用中的 WebView2 入门
               href: webview2/get-started/win32.md
-            - name: WinForms
+            - name: WinForms 应用中的 WebView2 入门
               href: webview2/get-started/winforms.md
-            - name: WinUI 2
+            - name: WinUI 2 (UWP) 应用中的 WebView2 入门（公共预览版）
               href: webview2/get-started/winui2.md
-            - name: WinUI 3
+            - name: WinUI 3 (UWP) 应用中的 WebView2 入门（公共预览版）
               href: webview2/get-started/winui.md
-            - name: WPF
+            - name: WPF 应用中的 WebView2 入门
               href: webview2/get-started/wpf.md
-        - name: 示例代码
+        - name: WebView2 示例代码
           href: webview2/code-samples-links.md
         - name: 概念和操作方法
           items:
-            - name: 使用 Edge 驱动程序实现自动化
+            - name: 使用 Microsoft Edge 驱动程序自动执行和测试 WebView2 应用
               href: webview2/how-to/webdriver.md
-            - name: 调试 WebView2
+            - name: 开始调试 WebView2 应用
               href: webview2/how-to/debug.md
-            - name: 开发的最佳做法
+            - name: WebView2 开发的最佳做法
               href: webview2/concepts/developer-guide.md
-            - name: Microsoft Edge 与 WebView2 之间的区别
+            - name: Microsoft Edge 和 WebView2 之间的功能差异
               href: webview2/concepts/browser-features.md
-            - name: 分发 WebView2 应用和运行时
+            - name: 分发 WebView2 应用和 WebView2 运行时
               href: webview2/concepts/distribution.md
             - name: 将 Web 内容嵌入本机应用程序中
               href: webview2/how-to/communicate-btwn-web-native.md
-            - name: WebView2 中的扩展 JavaScript 方案
+            - name: 在 WebView 中对扩展方案使用 JavaScript
               href: webview2/how-to/javascript.md
             - name: 管理用户数据文件夹
               href: webview2/concepts/user-data-folder.md
             - name: 管理 WebView2 应用程序
               href: webview2/concepts/enterprise.md
-            - name: 导航事件
+            - name: WebView2 导航事件
               href: webview2/concepts/navigation-events.md
-            - name: 进程模型
+            - name: WebView2 进程模型
               href: webview2/concepts/process-model.md
-            - name: 安全性最佳方案
+            - name: 开发安全 WebView2 应用程序的最佳方案
               href: webview2/concepts/security.md
-            - name: 静态链接加载器
+            - name: 静态链接 WebView2 加载程序库
               href: webview2/how-to/static.md
-            - name: 切换到预览频道
+            - name: 切换到预览频道，以测试即将推出的 API 和功能
               href: webview2/how-to/set-preview-channel.md
-            - name: 线程模型
+            - name: WebView2 线程模型
               href: webview2/concepts/threading-model.md
-            - name: 在 WebView2 中使用 Chromium 开发工具协议
+            - name: 在 WebView2 中使用 Chrome DevTools 协议
               href: webview2/how-to/chromium-devtools-protocol.md
-            - name: 版本控制
+            - name: 了解 WebView2 SDK 版本
               href: webview2/concepts/versioning.md
-            - name: Win32 API 约定
+            - name: Win32 C++ WebView2 API 约定
               href: webview2/concepts/win32-api-conventions.md
-        - name: 发行说明
+        - name: WebView2 SDK 发行说明
           href: webview2/release-notes.md
-        - name: 路线图
+        - name: WebView2 路线图
           href: webview2/roadmap.md
-        - name: 参考
-          href: webview2/webview2-api-reference.md
+        - name: WebView2 参考
           items:
-            - name: Win32 C++
+            - name: Microsoft Edge WebView2 API 参考
+              href: webview2/webview2-api-reference.md
+            - name: 参考(WebView2 Win32 C++)
               href: /microsoft-edge/webview2/reference/win32/index
             - name: .NET
               items:

@@ -7,14 +7,20 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 10/28/2021
+ms.openlocfilehash: ff496834191a2ea547dd2b0e3cb21ebf3453c640
+ms.sourcegitcommit: ae41e2c0ca42fb7eac73824c828305c7b13b4203
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "12345763"
 ---
 # <a name="navigation-events-for-webview2"></a>WebView2 的导航事件
 
 支持的平台：Win32、Windows Forms、WinUi、WPF。
 
-导航事件在 WebView2 实例中显示的内容发生特定异步操作时运行。  例如，当 WebView2 用户导航到新网站时，本机内容通过侦听事件来侦听 `NavigationStarting` 更改。  导航操作完成后，运行 `NavigationCompleted` 。  有关导航事件的示例，请参阅特定于平台 [的入门](../index.md#get-started) 文章。
+导航事件在 WebView2 实例中显示的内容发生特定异步操作时运行。  例如，当 WebView2 用户导航到新网站时，本机内容通过侦听事件来侦听 `NavigationStarting` 更改。  导航操作完成后，运行 `NavigationCompleted` 。  有关导航事件的示例，请参阅 [WebView2 入门](../get-started/get-started.md)。
 
-<!--todo:  Move the relevant information out of the get started guide to better focus the content and leave the most concise elements in the get started guide.  -->
+<!--todo: Move the relevant information out of the get started guide to better focus the content and leave the most concise elements in the get started guide. -->
 
 导航事件的正常顺序为：
 1. `NavigationStarting`
@@ -59,7 +65,7 @@ ms.date: 10/28/2021
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [WebView2 入门指南](../index.md#get-started)
-*  [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。
-*  [WebView2 API 参考](/dotnet/api/microsoft.web.webview2.wpf.webview2)
-*  [另请参阅](../index.md#see-also) _WebView2 Microsoft Edge简介_。
+* [WebView2 入门](../get-started/get-started.md)
+* [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。
+* [WebView2 API 参考](/dotnet/api/microsoft.web.webview2.wpf.webview2)
+* [另请参阅](../index.md#see-also) _WebView2 Microsoft Edge简介_。

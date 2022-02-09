@@ -167,27 +167,27 @@ conceptualContent:
               text: Web 应用清单
         - title: WebView2
           links:
-            - url: /microsoft-edge/webview2/index
+            - text: Microsoft Edge WebView2 简介
+              url: /microsoft-edge/webview2/index
               itemType: overview
-              text: WebView2 概述
-            - url: /microsoft-edge/webview2/get-started/win32
+            - text: Microsoft Edge 和 WebView2 之间的功能差异
+              url: /microsoft-edge/webview2/concepts/browser-features
+              itemType: concept
+            - text: WebView2 开发的最佳做法
+              url: /microsoft-edge/webview2/concepts/developer-guide
+              itemType: concept
+            - text: WebView2 入门
+              url: /microsoft-edge/webview2/get-started/get-started
               itemType: get-started
-              text: Win32 应用中的 WebView2 入门
-            - url: /microsoft-edge/webview2/get-started/winforms
-              itemType: get-started
-              text: WinForms 应用中的 WebView2 入门
-            - url: /microsoft-edge/webview2/get-started/winui2
-              itemType: get-started
-              text: WinUI 2 应用中的 WebView2 入门
-            - url: /microsoft-edge/webview2/get-started/winui
-              itemType: get-started
-              text: WinUI 3 应用中的 WebView2 入门
-            - url: /microsoft-edge/webview2/get-started/wpf
-              itemType: get-started
-              text: WPF 应用中的 WebView2 入门
-            - url: /microsoft-edge/webview2/webview2-api-reference
+            - text: WebView2 示例代码
+              url: /microsoft-edge/webview2/code-samples-links
+              itemType: download
+            - text: WebView2 SDK 发行说明
+              url: /microsoft-edge/webview2/release-notes
+              itemType: whats-new
+            - text: Microsoft Edge WebView2 API 参考
+              url: /microsoft-edge/webview2/webview2-api-reference
               itemType: reference
-              text: Microsoft Edge WebView2 API 参考
         - title: 测试和自动化
           links:
             - url: /microsoft-edge/devtools-protocol-chromium

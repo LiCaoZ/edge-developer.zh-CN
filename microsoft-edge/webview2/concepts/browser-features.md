@@ -26,31 +26,35 @@ author： MSEdgeTeam ms.author： msedgedevrel ms.topic： conceptual ms.prod：
 - "edge:// URLs" ms.date： 09/21/2021
 
 ---
-# <a name="feature-differences-between-microsoft-edge-and-webview2"></a>Microsoft Edge和 WebView2 之间的功能差异
+# <a name="feature-differences-between-microsoft-edge-and-webview2"></a>Microsoft Edge 和 WebView2 之间的功能差异
 
-WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏览器扩展到基于 WebView2 的应用，这很有用。  但是，由于 WebView2 不限于类似浏览器的应用，因此需要修改或删除一些浏览器功能。  本文提供以下信息。
+WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏览器扩展到基于 WebView2 的应用，这很有用。  但是，由于 WebView2 不限于类似浏览器的应用，因此需要修改或删除一些浏览器功能。
 
-*   修改后的浏览器功能和支持信息。
-*   启用或关闭功能的功能。
-*   有关键盘快捷方式的指南。
+本文介绍了：
+
+*  修改后的浏览器功能和支持信息。
+*  启用或关闭功能的功能。
+*  有关键盘快捷方式的指南。
 
 
 <!-- ====================================================================== -->
 ## <a name="design-guidelines"></a>设计指南
 
-在 WebView2 上下文中，浏览器功能遵循以下设计准则。
+在 WebView2 的上下文中，浏览器功能遵循以下设计准则：
 
-*   大多数功能在 WebView2 和 webView2 Microsoft Edge。  如果功能在 WebView2 上下文中不起作用或出于其他原因，则功能会修改或关闭。
-*   WebView2 功能不包括Microsoft Edge品牌。
+*  大多数功能在 WebView2 和 webView2 Microsoft Edge。  如果功能在 WebView2 上下文中不起作用或出于其他原因，则功能会修改或关闭。
+
+*  WebView2 功能不包括Microsoft Edge品牌。
 
 
 <!-- ====================================================================== -->
 ## <a name="browser-features"></a>浏览器功能
 
-下表显示了与浏览器浏览器不同的 WebView2 Microsoft Edge功能。
+下表显示了与浏览器浏览器不同的 WebView2 Microsoft Edge功能：
 
-*   **默认** 状态指示功能是新 WebView2 实例上默认体验的一部分。
-*   **可** 配置指示可以使用 WebView2 API 或命令行开关打开或关闭该功能。
+*  **默认** 状态指示功能是新 WebView2 实例上默认体验的一部分。
+
+*  **可** 配置指示可以使用 WebView2 API 或命令行开关打开或关闭该功能。
 
 > [!NOTE]
 > 本文不介绍使用命令行开关修改功能。  有关使用命令行开关打开和关闭功能的信息，请参阅命令行Chromium[列表](https://peter.sh/experiments/chromium-command-line-switches)。
@@ -68,7 +72,7 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 | Edge Shopping | 关闭 | 否 | 此功能已关闭。 |
 | Family Safety | 关闭 | 否 | 此功能已关闭。 |
 | Favorites | 关闭 | 否 | 此功能已关闭。 |
-| IE Mode | 关闭 | 否 | 此功能已关闭。 与 IE 模式相比，WebView2 不支持 IE 模式，并且行为 (如 MHT 或 BIN 支持) 。 |
+| IE Mode | 关闭 | 否 | 此功能已关闭。 与 IE 模式相比，WebView2 不支持 IE 模式，并且行为 (如 MHT 或 BIN) 。 |
 | Immersive Reader | 关闭 | 否 | 此功能取决于用于交互的浏览器 UI。  此功能已关闭。 |
 | Intrusive Ads | 关闭 | 否 | 此功能已关闭。 |
 | 键盘快捷方式 | 查看详细信息 | 查看详细信息 | 默认情况下关闭的键盘快捷方式在 WebView2 中没有意义或导致问题。  不能关闭或打开这些快捷方式。  相反，您可以使用 事件侦听组合 `AcceleratorKeyPressed` 键，并根据需要创建自定义响应。  有关详细信息，请参阅其他 [键盘快捷方式信息](#additional-keyboard-shortcuts-information)。 |
@@ -85,7 +89,7 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 <!-- ====================================================================== -->
 ## <a name="web-platform-features"></a>Web 平台功能
 
-下表显示了当前不可用的 WebView2 平台功能。
+以下 WebView2 平台功能当前不可用：
 
 | 功能 | 详细信息 |
 |:--- | :--- |
@@ -96,29 +100,31 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 <!-- ====================================================================== -->
 ## <a name="blocked-internal-urls"></a>阻止的内部 URL
 
-以下Microsoft Edge和 Google Chrome 设置网页在 WebView2 中不可用。
+以下Microsoft Edge和 Google Chrome 设置网页在 WebView2 中不可用：
 
-*   `chrome-search://local-ntp/local-ntp.html`
-*   `edge://application-guard-internals`
-*   `edge://apps`
-*   `edge://compat`
-*   `edge://extensions`
-*   `edge://favorites`
-*   `edge://help`
-*   `edge://management`
-*   `edge://network-error`
-*   `edge://new-tab-page`
-*   `edge://newtab`
-*   `edge://omnibox`
-*   `edge://settings`
-*   `edge://supervised-user-internals`
-*   `edge://version`
+*  `chrome-search://local-ntp/local-ntp.html`
+*  `edge://application-guard-internals`
+*  `edge://apps`
+*  `edge://compat`
+*  `edge://extensions`
+*  `edge://favorites`
+*  `edge://help`
+*  `edge://management`
+*  `edge://network-error`
+*  `edge://new-tab-page`
+*  `edge://newtab`
+*  `edge://omnibox`
+*  `edge://settings`
+*  `edge://supervised-user-internals`
+*  `edge://version`
 
 
 <!-- ====================================================================== -->
 ## <a name="additional-keyboard-shortcuts-information"></a>其他键盘快捷方式信息
 
-键盘快捷方式或键绑定在 Microsoft Edge 和 WebView2 中受支持。  更新Microsoft Edge时，默认键绑定可能会更改。  此外，如果 WebView2 现在支持此功能，则默认情况下关闭的键盘快捷方式可能会改为打开。  若要避免对`AreBrowserAcceleratorKeysEnabled``FALSE`键盘快捷方式进行此类更改，可以设置为 ，这将关闭访问浏览器功能的所有键，但会启用所有基本的文本编辑和移动快捷方式。
+键盘快捷方式或键绑定在 Microsoft Edge 和 WebView2 中受支持。  更新Microsoft Edge时，默认键绑定可能会更改。  此外，如果 WebView2 现在支持此功能，则默认情况下关闭的键盘快捷方式可能会改为打开。
+
+若要避免对`AreBrowserAcceleratorKeysEnabled``FALSE`键盘快捷方式进行此类更改，可以设置为 ，这将关闭访问浏览器功能的所有键，但会启用所有基本的文本编辑和移动快捷方式。
 
 在 WebView2 中，始终关闭以下快捷方式。  星号 (`*`) 表示快捷方式未关闭，但它访问的功能已关闭，或者该功能不适用于 WebView2。
 
@@ -164,7 +170,7 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 | 显示阅读模式栏 `*` | `Shift`+`Alt`+`R` |
 | 显示 Collections `*` | `Ctrl`+`Shift`+`Y` |
 
-以下键盘快捷方式始终关闭， `NewWindowRequested` 在未处理事件时显示的窗口中除外。
+除非在未 `NewWindowRequested` 处理事件时显示的窗口，否则始终关闭以下键盘快捷方式：
 
 | 操作 | Windows |
 |:--- |:--- |
@@ -172,7 +178,7 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 | 关闭窗口 | `Ctrl`+`Shift`+`W` |
 | 全屏 | `F11` |
 
-如果设置为 `AreBrowserAcceleratorKeysEnabled` `FALSE`，则以下其他键盘快捷方式将关闭。
+如果设置为 `AreBrowserAcceleratorKeysEnabled` `FALSE`，则以下其他键盘快捷方式将关闭：
 
 | 操作 | Windows |
 |:--- |:--- |
