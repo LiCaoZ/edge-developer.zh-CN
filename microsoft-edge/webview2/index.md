@@ -8,28 +8,44 @@ ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.technology: webview
 ms.date: 11/12/2021
+ms.openlocfilehash: 0ccc38b74320f8dac0244cb39858eac8742e4a27
+ms.sourcegitcommit: ae41e2c0ca42fb7eac73824c828305c7b13b4203
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "12345630"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介
 
-Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术(HTML、CSS 以及 JavaScript)。  WebView2 控件使用 [Microsoft Edge](https://www.microsoftedgeinsider.com) 作为绘制引擎，以在本机应用中显示 web 内容。  使用 WebView2 可以在本机应用的不同部分嵌入 Web 代码，或在单个 WebView 实例中生成所有本机应用。  有关如何开始构建 WebView2 应用的信息，请参阅“[入门](#get-started)”。
+Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术(HTML、CSS 以及 JavaScript)。  WebView2 控件使用 [Microsoft Edge](https://www.microsoftedgeinsider.com) 作为绘制引擎，以在本机应用中显示 web 内容。
 
-:::image type="complex" source="./media/WebView2/what-webview.png" alt-text="什么是 WebView?" lightbox="./media/WebView2/what-webview.png":::
-   什么是 WebView?
-:::image-end:::
+使用 WebView2 可以在本机应用的不同部分嵌入 Web 代码，或在单个 WebView 实例中生成所有本机应用。
+
+![应用示意图，其中本机 UI 区域位于左上角，WebView2 UI 区域位于右上角底部。](media/webview2/what-webview.png)
+
+若要开始生成 WebView2 应用，请参阅 [WebView2 入门](get-started/get-started.md)。
 
 
 <!-- ====================================================================== -->
 ## <a name="hybrid-app-approach"></a>混合应用方法
 
 开发人员通常必须决定是生成 web 应用还是本机应用。  此决定取决于范围和力量之间的权衡。
+
 *  Web 应用的范围可以很广。  作为 Web 开发人员，你可以跨不同平台重用多数代码。
+
 *  要访问本机平台的所有功能，请使用本机应用。
 
-:::image type="complex" source="./media/WebView2/web-native.png" alt-text="Web 本机。" lightbox="./media/WebView2/web-native.png":::
-   Web 本机
-:::image-end:::
+下图显示了从最大覆盖范围到最大功率的应用范围：
 
-混合应用使开发人员能够享受两方面的优点：Web 平台的通用性和强大性，以及本机平台的强大功能和全部功能。
+![应用的范围，从最大覆盖范围但更少的功率，到最佳混合，最大功率但较少覆盖范围。](media/webview2/web-native.png)
+
+*  广泛的**范围**包括网站和渐进式 Web 应用。
+
+*  中间是混合应用，如 WebViews 和Electron。
+
+*  最大**功率** 是本机应用。
+
+位于范围中间的混合应用使开发人员能够体验两种优势：Web 平台的通用性和强大性，以及本机平台的强大功能和全部功能。
 
 
 <!-- ====================================================================== -->
@@ -39,7 +55,7 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术(HTML、C
 
 *  **快速创新**。  Web 开发允许快速部署和迭代。
 
-*  **Windows 7、8 以及 10 支持**。  支持跨 Windows 7、Windows 8 以及 Windows 10 的一致用户体验。
+*  **Windows 7、8、10 和 11 支持**。  支持跨 Windows 7、Windows 8、Windows 10 和 Windows 11 实现一致的用户体验。
 
 *  **本机功能**。  访问完整的本机 API 集。
 
@@ -55,57 +71,45 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术(HTML、C
 
 
 <!-- ====================================================================== -->
-## <a name="get-started"></a>入门
-
-要使用 WebView2 控件生成并测试应用，需要 <!--both Microsoft Edge and -->安装 [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2)。  选择以下其中一个选项以开始使用。
-
-*   [Win32 应用中的 WebView2 入门](./get-started/win32.md)
-*   [WPF 应用中的 WebView2 入门](./get-started/wpf.md)
-*   [WinForms 应用中的 WebView2 入门](./get-started/winforms.md)
-*   [WinUI 2 应用中的 WebView2 入门（预览版）](./get-started/winui2.md)
-*   [WinUI 3 应用中的 WebView2 入门（预览版）](./get-started/winui.md)
-
-[WebView2 示例](https://github.com/MicrosoftEdge/WebView2Samples) 存储库包含演示所有 WebView2 SDK 功能和 API 使用模式的示例。  随着更多功能添加到 WebView2 SDK 中，示例应用将相应更新。
-
-
-<!-- ====================================================================== -->
 ## <a name="supported-platforms"></a>受支持的平台
 
-WebView2 的正式发布版 (GA) 或预览版适用于以下编程环境。
+WebView2 的正式发布版 (GA) 或预览版适用于以下编程环境：
 
-*   Win32 C/C++ (GA)
-*   .NET Framework 4.5 或更高版本
-*   .NET Core 3.1 或更高版本
-*   .NET 5
-*   .NET 6
-*   WinUI 2.0（预览版）
-*   [WinUI 3.0](/uwp/toolkits/winui3/index)
+*  Win32 C/C++ (GA)
+*  .NET Framework 4.5 或更高版本
+*  .NET Core 3.1 或更高版本
+*  .NET 5
+*  .NET 6
+*  WinUI 2.0（预览版）
+*  [WinUI 3.0](/uwp/toolkits/winui3/index)
 
-WebView2 应用可以在以下版本的 Windows 上运行。
+WebView2 应用可以在以下版本的 Windows 上运行：
 
-*   Windows 11
-*   Windows 10
-*   Windows 10 IoT 企业版 LTSC x32 2019
-*   Windows 10 IoT 企业版 LTSC x64 2019
-*   Windows 10 IoT 企业版 21h1 x64
-*   Windows 8.1
-*   Windows 7 \*\*
-*   Windows Server 2019
-*   Windows Server 2016
-*   Windows Server 2012
-*   Windows Server 2012 R2
-*   Windows Server 2008 R2 \*\*
+*  Windows 11
+*  Windows 10
+*  Windows 10 IoT 企业版 LTSC x32 2019
+*  Windows 10 IoT 企业版 LTSC x64 2019
+*  Windows 10 IoT 企业版 21h1 x64
+*  Windows 8.1
+*  Windows 7 \*\*
+*  Windows Server 2019
+*  Windows Server 2016
+*  Windows Server 2012
+*  Windows Server 2012 R2
+*  Windows Server 2008 R2 \*\*
 
-> [!IMPORTANT]
-> 对 Windows 7 和 Windows Server 2008 R2 的 WebView2 支持将与 Microsoft Edge 的支持时间线相同。  有关详细信息，请参阅 [Microsoft Edge 支持的操作系统](/deployedge/microsoft-edge-supported-operating-systems)。
+对 Windows 7 和 Windows Server 2008 R2 的 \*\*WebView2 支持将与 Microsoft Edge 的支持时间线相同。  请参阅[Microsoft Edge 支持的操作系统](/deployedge/microsoft-edge-supported-operating-systems)。
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
+<!-- possibly remove some of these and rely on TOC instead -->
+
 *  [了解 WebView2 SDK 版本](./concepts/versioning.md)
 *  [分发 WebView2 应用和 WebView2 运行时](./concepts/distribution.md)
 *  [开发安全的 WebView2 应用的最佳做法](./concepts/security.md)
-*  [在 WebView2 应用中管理用户数据文件夹](./concepts/user-data-folder.md)
+*  [管理用户数据文件夹](./concepts/user-data-folder.md)
 *  [如何使用 WebView2 进行调试](./how-to/debug.md)
 *  [使用 Microsoft Edge 驱动程序自动执行并测试 WebView2](./how-to/webdriver.md)
+*  [WebView2 示例](https://github.com/MicrosoftEdge/WebView2Samples) - 此存储库包含演示所有 WebView2 SDK 功能和 API 使用模式的示例。  随着更多功能添加到 WebView2 SDK 中，示例应用将相应更新。<!-- make sure this statement is in the repo readme, then possibly remove it from here -->
