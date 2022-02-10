@@ -6,8 +6,14 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 no-loc:
-  - 'Enable new font editor tool within the Styles pane'
+- Enable new font editor tool within the Styles pane
 ms.date: 03/11/2021
+ms.openlocfilehash: db30c2a7880cc9a0df0a389493a2cad085673296
+ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "12346286"
 ---
 # <a name="edit-css-font-styles-and-settings-in-the-styles-pane"></a>在“样式”窗格中编辑 CSS 字体样式和设置
 
@@ -32,7 +38,7 @@ ms.date: 03/11/2021
 
 :::image type="content" source="../media/font-editor-open.msft.png" alt-text="&quot;字体编辑器&quot;将在&quot;样式&quot;窗格顶部打开。" lightbox="../media/font-editor-open.msft.png":::
 
-可视“**字体编辑器**”中的所有字段都是根据“**样式**”窗格中的 CSS 值填充的。  例如，`line-height` 定义在“**样式**”窗格中设置为 `160%`，因此线条高度文本字段显示 `160`，而单位下拉列表显示 `%`。  此外，滑块会自动设置为与文本字段的值匹配。
+可视“**字体编辑器**”中的所有字段都是根据“**样式**”窗格中的 CSS 值填充的。  例如，在`line-height`"**** 样式"窗格中`160%`，定义设置为 ，因此行高文本字段将显示 `160`，而单位下拉列表显示 。`%`  此外，滑块会自动设置为与文本字段的值匹配。
 
 
 <!-- ====================================================================== -->
@@ -60,7 +66,7 @@ ms.date: 03/11/2021
 <!--:::image type="content" source="../media/font-editor-defining-fonts.msft.png" alt-text="The font editor with a defined list of fonts and fallback fonts." lightbox="../media/font-editor-defining-fonts.msft.png":::-->
 
 > [!NOTE]
-> 如果选择字体系列全局值，则不会获得另一个下拉列表，因为 CSS 中没有回退。
+> 如果选择字体系列全局值，则不会获得另一个下拉菜单，因为 CSS 中没有回退。
 
 
 <!-- ====================================================================== -->
@@ -82,9 +88,9 @@ ms.date: 03/11/2021
 
 :::image type="content" source="../media/font-editor-converted-to-em.msft.png" alt-text="打开单位下拉列表以转换为 em。" lightbox="../media/font-editor-converted-to-em.msft.png":::
 
-单位下拉列表提供所有可用的数值 CSS 单位。  字体大小、线条高度、字体粗细和间距都使用不同的单位。  当文本框具有焦点时，可以按 `arrow up` 和 `arrow down` 键来微调设置。  若要将滑块与键盘一同使用，请按 `arrow left` 和 `arrow down` 键。
+"单位"下拉列表提供所有可用的数值 CSS 单位。  字体大小、线条高度、字体粗细和间距都使用不同的单位。  当文本框具有焦点时，可以按 `arrow up` 和 `arrow down` 键来微调设置。  若要将滑块与键盘一同使用，请按 `arrow left` 和 `arrow down` 键。
 
-“CSS 属性”编辑器还包括预设关键字。  若要使用预设关键字，请在右侧单击图标 `Toggle Input Type` 。  用户界面将发生变化，并显示预设关键字的下拉列表。  若要使用滑块和其他 UI 控件返回到 UI，请再次单击 `Toggle Input Type` 该图标。
+“CSS 属性”编辑器还包括预设关键字。  若要使用预设关键字，请在右侧单击图标 `Toggle Input Type` 。  UI 发生更改，并显示预设关键字的下拉列表。  若要使用滑块和其他 UI 控件返回到 UI，请再次单击 `Toggle Input Type` 该图标。
 
 打开预设关键字界面：
 

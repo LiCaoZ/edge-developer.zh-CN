@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 91c70ca2c7bf51cc66b2ed92d877e39bab9636bd
+ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "12346531"
 ---
 # <a name="inspect-css-grid"></a>检查 CSS 网格
 
@@ -50,7 +56,7 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
 
 在" **布局** "选项卡的" **可展开网格** "部分，" **覆盖显示设置"** 部分包含以下 UI。
 
-### <a name="drop-down-list"></a>下拉列表
+### <a name="dropdown-list"></a>下拉列表
 
 从下拉列表中选择以下选项之一：
 
@@ -95,8 +101,8 @@ CSS 网格是一种强大的 Web 布局范例。  可通过 MDN 上的 [CSS 网�
 | 选项 | 详细信息 |
 |:--- |:--- |
 | **显示轨道大小**  | 显示 (或) 轨的大小。 |
-| **显示区域名称** | 在 (时) 区域的名称或隐藏区域名称。 |
-| **延伸网格线** | 显示 (或隐藏) 沿每个轴的网格尺寸的扩展。  默认情况下，网格线仅在设置了 `display: grid` 或 `display: inline-grid` CSS 的元素内显示。 |
+| **显示区域名称** | 当 (时，) 区域的名称或隐藏区域名称。 |
+| **延伸网格线** | 显示 (或隐藏) 轴上网格尺寸的扩展。  默认情况下，网格线仅在设置了 `display: grid` 或 `display: inline-grid` CSS 的元素内显示。 |
 
 以下各节介绍了这些复选框。
 

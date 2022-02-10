@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 11/30/2021
+ms.openlocfilehash: 10d2a43eba4a065565715b760ee86348fd38b00f
+ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "12346433"
 ---
 # <a name="debug-dom-memory-leaks-with-the-detached-elements-tool"></a>使用分离的元素工具调试 DOM 内存泄漏
 
@@ -19,7 +25,7 @@ ms.date: 11/30/2021
 <!-- ====================================================================== -->
 ## <a name="open-the-detached-elements-tool"></a>打开分离的元素工具
 
-默认情况下 **，分离的元素**工具在 Microsoft Edge 97 及更高版本中可用。 通过进入 Microsoft Edge检查你的版本`edge://version`。 如果你的版本小于 97，请阅读打开或关闭实验[](../experimental-features/index.md#turning-an-experiment-on-or-off)，了解打开分离**元素实验**的说明。
+分离**的元素工具**默认在 Microsoft Edge 97 及更高版本中可用。 通过进入 Microsoft Edge检查你的版本`edge://version`。 如果你的版本小于 97，请阅读打开或关闭实验[](../experimental-features/index.md#turning-an-experiment-on-or-off)，了解打开分离**元素实验**的说明。
 
 若要打开 **分离的元素** 工具并加载演示页面：
 
@@ -39,7 +45,7 @@ ms.date: 11/30/2021
 <!-- ====================================================================== -->
 ## <a name="get-detached-elements"></a>获取分离的元素
 
-"**获取**分离元素 (![](images/get-detached-elements-icon-light-mode.png) "获取分离的元素"图标。"分离元素"工具中的") "按钮在**** 网页上查找并显示所有分离的元素。
+"**获取**分离的元素 (![](images/get-detached-elements-icon-light-mode.png) "获取分离的元素"图标。"分离的元素"工具中的") "按钮**** 在网页上查找并显示所有分离的元素。
 
 若要查找分离的元素：
 
@@ -53,7 +59,7 @@ ms.date: 11/30/2021
 
 1. 单击 **"会议室 2"** 按钮。
 
-1. 在"**分离的元素"** 工具中，单击"获取分离的元素 **" (**!["分离的元素"图标](images/get-detached-elements-icon-light-mode.png)。) 图标。
+1. 在"**分离的元素"** 工具中，****![单击"获取分离的元素 (""分离的元素"图标](images/get-detached-elements-icon-light-mode.png)。) 图标。
 
 :::image type="content" source="./images/get-detached-elements.msft.png" alt-text="使用分离的元素工具获取分离的元素。" lightbox="./images/get-detached-elements.msft.png":::
 
@@ -65,9 +71,9 @@ ms.date: 11/30/2021
 
 接下来，在浏览器中 (GC) 垃圾回收：
 
-1. 在"**分离的元素"** 工具中，单击****!["收集垃圾 ("收集垃圾"图标](images/collect-garbage-icon-light-mode.png)。) 图标。
+1. 在 **"分离的元素"** 工具中，单击****!["收集 (垃圾回收"图标](images/collect-garbage-icon-light-mode.png)。) 图标。
 
-1. 单击" **获取分离的元素** (!["分离的元素"图标](images/get-detached-elements-icon-light-mode.png) 。单击) 图标。
+1. 单击" **获取分离的元素** (!["分离的元素"图标](images/get-detached-elements-icon-light-mode.png) 。) 图标。
 
 选择" **收集垃圾"** 时，浏览器将运行垃圾回收。 选择"**获取分离的元素**"时，"**** 分离的元素"工具将显示无法进行垃圾回收的所有已分离元素。 如果应用程序不会重复使用这些分离的元素，则这些分离的元素可能是内存泄漏。
 
@@ -81,7 +87,7 @@ ms.date: 11/30/2021
 
 若要标识引用已分离元素的 JavaScript 代码，请执行以下操作：
 
-1. 在分离**的元素工具**中，**单击分析 (**![分析图标](images/analyze-icon-light-mode.png)。) 图标。
+1. 在分离**的元素工具**中，**单击分析**![ (分析图标](images/analyze-icon-light-mode.png)。) 图标。
 
    内存 **工具** 将在 DevTools 的底部面板中打开。
 
@@ -109,11 +115,11 @@ ms.date: 11/30/2021
 
 若要标识导致保留整个树的已分离树中的原因节点：
 
-1. 单击" **分离** 元素 (!["分离元素"图标](images/detach-elements-icon-light-mode.png) 。单击) "图标可破坏分离树内的父子链接。
+1. 单击"**分离** ![](images/detach-elements-icon-light-mode.png) (元素"图标。单击) "图标可破坏分离树内的父子链接。
 
    :::image type="content" source="./images/detached-elements-remove-links.msft.png" alt-text="分离的元素工具中的分离元素按钮。" lightbox="./images/detached-elements-remove-links.msft.png":::
 
-1. 单击收集**垃圾 (**!["收集垃圾"图标](images/collect-garbage-icon-light-mode.png)。) 图标。
+1. 单击**收集垃圾 (**!["收集垃圾"图标](images/collect-garbage-icon-light-mode.png)。) 图标。
 
 父子链接在分离的树内删除。
 
@@ -121,9 +127,9 @@ ms.date: 11/30/2021
 <!-- ====================================================================== -->
 ## <a name="change-the-selected-target-to-a-different-origin"></a>将所选目标更改为其他源
 
-可以使用"选定目标"下拉列表检查不同源或不同帧的 **分离** 元素。 
+可以使用"选定目标"下拉列表检查不同源或帧中的分离元素。**** 
 
-1. 单击" **选定的目标** "下拉列表。
+1. 单击 **"选定的目标** "下拉列表。
 
    :::image type="content" source="./images/detached-elements-target-dropdown.msft.png" alt-text="&quot;选择的目标&quot;下拉列表允许你选择不同的来源。" lightbox="./images/detached-elements-target-dropdown.msft.png":::
 
@@ -143,6 +149,6 @@ ms.date: 11/30/2021
 
 同样，当用户滚动过去时，社交媒体中的源可能会分离元素，当用户向后滚动时，再将它们重新附加到 DOM。 分离的元素并不总是表示内存泄漏，内存泄漏并不总是由分离的元素导致。
 
-对于长时间运行的应用，仅泄露几千字节的小内存可能会随着时间的推移显著降低性能。 使用虚拟框架的 web React知道React维护 DOM 的虚拟化副本。 无法正确卸载组件可能会导致应用程序泄露虚拟 DOM 的较大部分。
+对于长时间运行的应用，仅泄露几千字节的小内存可能会随着时间的推移显著降低性能。 使用虚拟框架React知道React维护 DOM 的虚拟化副本。 无法正确卸载组件可能会导致应用程序泄露虚拟 DOM 的较大部分。
 
-此演示应用及其泄漏是人为的。 在生产网站或应用上测试分离的元素工具。 如果发现分离元素工具的潜在问题，请联系 Microsoft Edge [DevTools](../contact.md) 团队，以发送有关分离元素工具和内存泄漏调试的反馈。****
+此演示应用及其泄漏是人为的。 在生产网站或应用上测试分离的元素工具。 如果发现分离元素工具的潜在问题，请与 [Microsoft Edge DevTools](../contact.md) 团队联系，以发送有关分离元素工具和内存泄漏调试的反馈。****

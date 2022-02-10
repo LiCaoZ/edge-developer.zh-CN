@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/19/2021
+ms.openlocfilehash: 52fdf88609bfe53636135e9fd45d608742c8a8a8
+ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "12346545"
 ---
 # <a name="service-worker-improvements"></a>服务工作进程改进
 
@@ -67,9 +73,9 @@ ms.date: 02/19/2021
 
 1. 打开正在调试的服务工作线程。
 
-1. 单击 **"网络** "按钮以打开 [请求路由体验](#network)。
+1. 单击" **网络** "按钮以打开 [请求路由体验](#network)。
 
-1. 使用 **respondWith** 下拉列表获取事件请求和响应信息。
+1. 使用 **respondWith** 下拉箭头获取事件请求和响应信息。
 
 **"网络**"工具显示通过正在调试的服务工作者发送的网络请求。  自动筛选器是缩小探索范围的方法。
 
@@ -85,4 +91,4 @@ ms.date: 02/19/2021
 
 ### <a name="future-work"></a>未来工作
 
-开发人员Microsoft Edge DevTools 团队计划进一步开发缓存详细信息，并研究更多方法为渐进式 Web 应用程序开发人员改进服务[工作 (PWA) ](https://developer.mozilla.org/docs/Web/Progressive_web_apps)体验。
+开发人员Microsoft Edge DevTools 团队计划进一步开发缓存详细信息，并研究更多方法为渐进[式 Web ](https://developer.mozilla.org/docs/Web/Progressive_web_apps) 应用程序开发人员改进服务工作 (PWA) 体验。

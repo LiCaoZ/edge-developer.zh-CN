@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
+ms.openlocfilehash: 2bd25e0850b8a1843be9f29090e015daccdf6a99
+ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "12346566"
 ---
 <!-- Copyright Kayce Basques
 
@@ -40,11 +46,11 @@ ms.date: 07/19/2021
 
 1. 在" **网络"** 工具上，单击"停止 **记录** 网络日志 (!["停止录制网络](../media/record-on-icon.msft.png) 日志"。) 。  它变为灰色，表示开发人员工具不再记录请求。
 
-1. 在`Control``E`****+ (Windows焦点时 (Windows Linux `Command`+`E`) 或 (macOS) 。。
+1. 在`Control``E`****+ (Windows焦点时) Linux `Command`+`E` (或) macOS) 。
 
 ### <a name="clear-requests"></a>清除请求
 
-单击" **清除** (![清除](../media/clear-requests-icon.msft.png)) **"工具** 上的"清除"按钮以清除"请求"表中的所有请求。
+单击"**清除** (![](../media/clear-requests-icon.msft.png) 清除) **"工具**上的"清除"按钮以清除"请求"表中的所有请求。
 
 :::image type="content" source="../media/network-network-clear-button.msft.png" alt-text="&quot;清除&quot;按钮。" lightbox="../media/network-network-clear-button.msft.png":::
 
@@ -62,9 +68,9 @@ ms.date: 07/19/2021
 
 若要启用屏幕截图：
 
-1. 在 DevTools 中，打开 **网络** 工具。
+1. 在 DevTools 中，打开**网络**工具。
 
-1. 在"网络" **工具的右上角** ，单击"网络设置 **" (齿轮**) 图标。  将出现一行复选框。
+1. 在"网络"工具的 **右上角，单击** "网络设置 **" (齿轮**) 图标。  将出现一行复选框。
 
 1. 选中" **捕获屏幕截图"** 复选框：
 
@@ -128,7 +134,7 @@ ms.date: 07/19/2021
 
 一种称为“[渐进式 Web 应用](../progressive-web-apps/index.md)”的新 web 应用程序，，可在**服务人员**的帮助下脱机运行。<!-- [service workers](/web/fundamentals/getting-started/primers/service-workers) --> 你可能会发现，在生成此类应用时，快速模拟没有数据连接的设备会很有用。
 
-若要模拟脱机网络体验，请选择"不**** 限制"下拉菜单> **PresetsOffline** > **"** 。
+若要模拟脱机网络体验，请选择"不**** 限制"下拉菜单> **PresetsOffline** > 。****
 
 " **脱机** "下拉菜单：
 
@@ -188,7 +194,7 @@ ms.date: 07/19/2021
 
 1. 接受 Custom **...** 的默认值，或者从下拉列表中选择预定义的浏览器和设备。
 
-1. 对于任一选项，按如下方式设置用户代理客户端提示。
+1. 对于任一选项，设置用户代理客户端提示，如下所示：
     * **品牌** 和 **版本** ，如 *Edge* 和 *92*。  单击 **" + 添加品牌** "以添加多个品牌和版本对。
     * **完整浏览器版本** ，例如 *92.0.1111.0*。
     * **平台**和**版本**，如 *Windows* *和 10.0*。
@@ -227,14 +233,14 @@ ms.date: 07/19/2021
 
 | 属性 | 详细信息 |
 |:--- | :--- |
-| `domain` | 仅显示指定域中的资源。  可以使用通配符 () `*` 多个域。  例如，`*.com` 显示以 `.com` 结尾的所有域名中的资源。  开发工具在自动完成下拉菜单中填充找到的所有域。 |
-| `has-response-header` | 显示包含指定 HTTP 响应头的资源。  开发工具用找到的所有响应头填充“自动完成”下拉列表。 |
+| `domain` | 仅显示指定域中的资源。  可以使用通配符 () `*` 多个域。  例如，`*.com` 显示以 `.com` 结尾的所有域名中的资源。  DevTools 使用找到的所有域填充自动完成下拉菜单。 |
+| `has-response-header` | 显示包含指定 HTTP 响应头的资源。  DevTools 使用找到的所有响应标头填充自动完成下拉菜单。 |
 | `is` | 用 `is:running` 查找 `WebSocket` 资源。 |
 | `larger-than` | 以字节为单位显示大于指定大小的资源。  将值设置为 `1000` 相当于将值设置为 `1k`。 |
-| `method` | 显示通过指定的 HTTP 方法类型检索的资源。  开发工具用找到的所有 HTTP 方法填充下拉列表。 |
-| `mime-type` | 显示指定 MIME 类型的资源。  开发工具用找到的所有 MIME 类型填充下拉列表。 |
+| `method` | 显示通过指定的 HTTP 方法类型检索的资源。  DevTools 使用找到的所有 HTTP 方法填充下拉菜单。 |
+| `mime-type` | 显示指定 MIME 类型的资源。  DevTools 使用找到的所有 MIME 类型填充下拉菜单。 |
 | `mixed-content` | 显示所有混合内容 (`mixed-content:all`) 或只显示当前 () `mixed-content:displayed` 。 |
-| `scheme` | 显示通过未保护的 HTTP () `scheme:http` 或受保护的 HTTPS `scheme:https` () 。 |
+| `scheme` | 显示通过未保护的 HTTP `scheme:http` () 或受保护的 HTTPS `scheme:https` () 。 |
 | `set-cookie-domain` | 显示具有与指定值匹配的 `Domain` 属性的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 域填充“自动完成”。 |
 | `set-cookie-name` | 显示具有名称与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 名称填充“自动完成”。 |
 | `set-cookie-value` | 显示具有值与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 值填充“自动完成”。 |
@@ -256,7 +262,7 @@ ms.date: 07/19/2021
 
 如果未显示按钮，则" **筛选器"** 窗格可能处于隐藏状态。  请参阅 [隐藏筛选器窗格](#hide-the-filters-pane)。
 
-若要同时启用多类型`Control`筛选器，请长按 (Windows、Linux) `Command` 或 (macOS) 然后单击筛选器。
+若要同时启用多类型`Control`筛选器，请长按 (Windows、Linux `Command`) 或 (macOS) 然后单击筛选器。
 
 使用 **类型筛选器** 显示 JS、CSS 和文档资源：
 
@@ -501,7 +507,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 - **DNS 查找**。 浏览器正在解析请求的 IP 地址。
 
-- **初始连接**。 浏览器正在建立连接，包括 TCP 握手，然后重试和协商 SSL (层) 。
+- **初始连接**。 浏览器正在建立连接，包括 TCP 握手，然后重试和协商安全套接字层 (SSL) 。
 
 - **代理协商**。 浏览器正在与[代理服务器](https://en.wikipedia.org/wiki/Proxy_server)协商请求。
 

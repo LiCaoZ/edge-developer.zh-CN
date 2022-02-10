@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: e5e22224e4a5258646f5d8cbab27a398b755c774
+ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "12346594"
 ---
 <!-- Copyright Kayce Basques
 
@@ -108,21 +114,23 @@ document.getElementById('grow').addEventListener('click', grow);
 
 :::image type="content" source="../media/memory-problems-glitch-example-1-performance-memory.msft.png" alt-text="简单增长。" lightbox="../media/memory-problems-glitch-example-1-performance-memory.msft.png":::
 
-首先，用户界面的说明。  "**概述**"窗格中的 **** HEAP 图 (**NET**) JS 堆。  "概述 **"窗格** 下方是" **计数器"** 窗格。  内存使用量由 JS 堆 (，与概述窗格中的 **HEAP** 图) 、文档、DOM **** 节点、侦听器和 GPU 内存相同。  清除复选框以将其从图形中隐藏。
+首先，用户界面的说明。  "**概述**"窗格中的 **** HEAP 图 (**NET**) JS 堆。  "概述 **"窗格** 下方是" **计数器"** 窗格。  内存使用率由 JS 堆 (概述窗格中的 **HEAP** 图) 、文档、DOM 节点、**** 侦听器和 GPU 内存相同。  清除复选框以将其从图形中隐藏。
 
 现在，代码分析与上图比较。  如果查看绿色图形 (节点) ，它将与代码完全匹配。  节点计数在离散步骤中增加。  可以认为节点计数的每次增加都是对 的调用 `grow()`。
 
-使用蓝色图形 (JS 堆图) 并不简单。  为了与最佳做法保持一样，第一个下降实际上是强制垃圾回收 (**单击收集垃圾回收**![力垃圾回收。](../media/collect-garbage-icon.msft.png) 。
+JS 堆图 (蓝色图形) 不太简单。  为了与最佳做法保持一样，第一个下降实际上是强制垃圾回收 (单击**收集垃圾回收**![力垃圾回收。](../media/collect-garbage-icon.msft.png) 。
 
 在记录进行时，将显示 JS 堆大小峰值。  这是自然且预期的：JavaScript 代码将在您单击的每一个按钮上创建 DOM 节点，并且创建包含一百万个字符的字符串时将执行大量工作。
 
-此处的关键点是 JS 堆结束时间高于它 (开始"，即强制垃圾回收之后) 。  在现实世界中，如果你看到这种增加 JS 堆大小或节点大小的模式，它可能会指示内存泄漏。
+关键一点是 JS 堆结束时间比它从 (开始"开始"的时间要高，此时是强制垃圾回收之后) 。  在现实世界中，如果你看到这种增加 JS 堆大小或节点大小的模式，它可能会指示内存泄漏。
 
 <!--todo: the Heap snapshots and Profiles panel aren't found in Edge  -->
 
 
 <!-- ====================================================================== -->
 ## <a name="discover-detached-dom-tree-memory-leaks-with-heap-snapshots"></a>使用堆快照发现分离的 DOM 树内存泄漏
+
+<!-- do not change the heading wording; that would break the link from the DevTools > Memory tool > Help-mode tooltip to this section; would default to top of article instead of this section anchor -->
 
 DOM 节点仅在没有从页面上运行的 DOM 树或 JavaScript 代码引用该节点时进行垃圾回收。  当从 DOM 树中删除节点时，该节点将"分离"，但某些 JavaScript 仍引用它。  分离的 DOM 节点是内存泄漏的常见原因。
 
@@ -244,7 +252,7 @@ document.getElementById('grow').addEventListener('click', grow);
 
 1. 完成 **所有操作** 后，单击"停止"按钮。
 
-DevTools 显示按功能细分的内存分配。  默认视图为 **"高 (从 **下向上) "视图，该视图在顶部显示分配了大部分内存的函数。
+DevTools 显示按功能细分的内存分配。  默认视图为 **"重 (从 **下) "，它显示在顶部分配了大部分内存的函数。
 
 :::image type="content" source="../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png" alt-text="分配采样。" lightbox="../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png":::
 
@@ -258,7 +266,7 @@ DevTools 显示按功能细分的内存分配。  默认视图为 **"高 (从 **
 
 *  在浏览器Microsoft Edge管理器中，经常出现和下降**的内存**或 **JavaScript 内存**值表示频繁的垃圾回收。
 
-*  在性能记录中， (JS 堆) 或节点计数图的频繁更改指示频繁进行垃圾回收。
+*  在性能记录中， (JS 堆或节点计数) 频繁进行垃圾回收。
 
 确定问题后，可以在时间线记录上使用 **Allocation instrumentation** 来查明内存的分配位置以及导致分配的函数。
 

@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/13/2021
+ms.openlocfilehash: 8e8250bea91a0629cbcd7494dc5cd41a1164abfa
+ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "12346538"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,11 +32,11 @@ ms.date: 12/13/2021
 <!-- ====================================================================== -->
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告
 
-以下各节列出了你可能从 DevTools 团队中错过Microsoft Edge通知。  查看通知以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道](https://aka.ms/microsoftedge)并[在 Twitter 上关注我们](https://aka.ms/twitter/edgedevtools)。
+以下各节列出了你可能错过的来自 DevTools Microsoft Edge通知。  请查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道](https://aka.ms/microsoftedge)并[在 Twitter 上关注我们](https://aka.ms/twitter/edgedevtools)。
 
 ### <a name="use-the-devtools-in-windows-high-contrast-mode"></a>在高对比度模式下Windows DevTools
 
-现在Microsoft Edge开发人员工具在高对比度模式下显示Windows高对比度模式。
+当 Microsoft Edge DevTools 在高对比度模式下时，Windows以高对比度模式显示。
 
 :::image type="content" source="../../media/2020/05/high-contrast.msft.png" alt-text="The Microsoft Edge DevTools in high-contrast mode." lightbox="../../media/2020/05/high-contrast.msft.png":::
 
@@ -43,13 +49,13 @@ Chromium问题 [#1048378](https://crbug.com/1048378)
 
 ### <a name="match-keyboard-shortcuts-in-the-devtools-to-visual-studio-code"></a>将 DevTools 中的键盘快捷方式与Visual Studio Code
 
-从[反馈和](../../../contact.md)Chromium[问题](https://bugs.chromium.org/p/chromium/issues/list)跟踪器中，Microsoft Edge DevTools 团队了解到你需要在 DevTools 中自定义键盘快捷方式的能力。  在 Microsoft Edge 84 中，你现在能够将 DevTools 中的键盘快捷方式与 [Visual Studio Code](https://code.visualstudio.com/) 匹配，这只是团队为快捷方式自定义所处理的功能之一。
+从[你的反馈](../../../contact.md)和Chromium[](https://bugs.chromium.org/p/chromium/issues/list)问题跟踪器中，Microsoft Edge DevTools 团队了解到你需要在 DevTools 中自定义键盘快捷方式的能力。  在 Microsoft Edge 84 中，你现在能够将 DevTools 中的键盘快捷方式与 [Visual Studio Code](https://code.visualstudio.com/) 相匹配，这只是团队为快捷方式自定义所处理的功能之一。
 
 :::image type="content" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="将 DevTools 中的键盘快捷方式与Visual Studio Code。" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
 
 若要尝试实验：
 
-1. 在 DevTools 中，**设置**`?`选择"Devtools"设置![打开"开发工具"。](../../../media/settings-icon.msft.png) icon in the top-right corner of DevTools.
+1. 在 DevTools 中，**设置**`?`选择!["Devtools"设置打开"开发工具"。](../../../media/settings-icon.msft.png) icon in the top-right corner of DevTools.
 
 1. 在实验 **部分中** ，选中复选框启用 **自定义键盘快捷方式设置选项卡 (重新加载) **。
 
@@ -57,45 +63,45 @@ Chromium问题 [#1048378](https://crbug.com/1048378)
 
 1. 再次**设置**"，然后选择 **"快捷方式"** 部分。
 
-1. Click the **Match shortcuts from preset** dropdown， select **DevTools (Default) **， and then select **Visual Studio Code**.  
+1. 单击**预设下拉列表中的**"匹配快捷方式"，选择"**DevTools (默认**) "，然后选择"Visual Studio Code **"**。  
 
 DevTools 中的键盘快捷方式现在与开发人员工具中的等效操作Visual Studio Code。
 
-例如，用于暂停或继续运行脚本的键盘快捷方式在 [Visual Studio Code 为](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) `F5`。  使用 **DevTools (Default) **预设，DevTools `F8` 中的同一快捷方式是 ，**但**具有 Visual Studio Code 预设，该快捷方式现在`F5`也是 。
+例如，用于暂停或继续运行脚本的键盘快捷方式在 [Visual Studio Code 为](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) `F5`。  使用 **DevTools (Default) **预设，DevTools `F8` 中的同一快捷方式是 ，但具有 **Visual Studio Code 预设，** 该快捷方式现在`F5`也是 。
 
-此功能目前作为实验在 Microsoft Edge 84 中可用，因此请与[团队分享你的](../../../contact.md)反馈！
+此功能目前作为实验Microsoft Edge 84 中提供，因此请与[团队分享你的](../../../contact.md)反馈！
 
 Chromium问题 [#174309](https://crbug.com/174309)
 
 ### <a name="remote-debug-surface-duo-emulators"></a>远程调试 Surface Duo 仿真器
 
-现在，你能够使用开发工具的完整功能远程调试[在 Surface Duo](/dual-screen/android/use-emulator) 仿真器中Microsoft Edge [Web 内容](../../../index.md)。
+现在，你能够使用开发人员工具的完整功能远程调试[在 Surface Duo](/dual-screen/android/use-emulator) 仿真器中Microsoft Edge [Web 内容](../../../index.md)。
 
-使用 [Surface Duo 仿真](/dual-screen/android/use-emulator)器，可以测试 Web 内容在可折叠和双屏幕设备的新类上呈现方式。  仿真器运行 Android 操作系统并提供Microsoft Edge [Android 应用](https://play.google.com/store/apps/details?id=com.microsoft.emmx)。  在开发人员应用中加载[Microsoft Edge内容，然后](https://play.google.com/store/apps/details?id=com.microsoft.emmx)使用开发人员工具Microsoft Edge[调试它](../../../index.md)。
+使用 [Surface Duo 仿真](/dual-screen/android/use-emulator)器，可以测试 Web 内容在可折叠和双屏幕设备的新类上呈现方式。  仿真器运行 Android 操作系统，并提供[Microsoft Edge Android 应用](https://play.google.com/store/apps/details?id=com.microsoft.emmx)。  在开发人员应用中加载[Microsoft Edge内容，](https://play.google.com/store/apps/details?id=com.microsoft.emmx)然后使用开发人员工具Microsoft Edge[调试它](../../../index.md)。
 
-:::image type="content" source="../../media/2020/05/surface-duo-emulator.msft.png" alt-text="运行Microsoft Edge Surface Duo 模拟器上的应用。" lightbox="../../media/2020/05/surface-duo-emulator.msft.png":::
+:::image type="content" source="../../media/2020/05/surface-duo-emulator.msft.png" alt-text="Surface duo Microsoft Edge上运行的 Windows 应用。" lightbox="../../media/2020/05/surface-duo-emulator.msft.png":::
 
-桌面`edge://inspect`实例中的页面Microsoft Edge SurfaceD[](https://www.microsoft.com/edge/)一个或多个在 Surface Duo 仿真器上运行的已打开选项卡或 [PWA](../../../../progressive-web-apps-chromium/index.md) 的列表显示 **SurfaceDatorEmulator**。[](/dual-screen/android/use-emulator)
+桌面`edge://inspect`实例中的页面Microsoft Edge**显示 SurfaceD一个Emulator**，其中列出了[在 Surface Duo](/dual-screen/android/use-emulator) 仿真器上运行的已打开选项卡或 [PWA](../../../../progressive-web-apps-chromium/index.md)。[](https://www.microsoft.com/edge/)
 
 :::image type="content" source="../../media/2020/05/edge-inspect.msft.png" alt-text="edge://inspect 页面在模拟器上运行的 Microsoft Edge 应用程序中显示打开选项卡的列表" lightbox="../../media/2020/05/edge-inspect.msft.png":::
 
-单击 **"** 检查"PWA要调试的选项卡或选项卡，以打开Microsoft Edge[工具](../../../index.md)。  [按照分步指南在 Surface Duo](../../../remote-debugging/surface-duo-emulator.md) 仿真器上远程调试 Web 内容。
+单击 **"** 检查"以检查PWA要调试的选项卡或选项卡，以Microsoft Edge[开发人员工具](../../../index.md)。  [按照分步指南在 Surface Duo](../../../remote-debugging/surface-duo-emulator.md) 仿真器上远程调试 Web 内容。
 
 ### <a name="resize-the-devtools-drawer-more-easily"></a>更轻松地调整 DevTools 箱的大小
 
-在 Microsoft Edge 83 或更早版本中，通过将鼠标悬停在箱的工具栏内来调整 [Devtools"](../../../customize/index.md#drawer)箱"的大小。 在 DevTools 中，将鼠标悬停在窗格边框上以调整其大小时，该箱的行为不同于窗格的其他调整大小控件的行为。 下图显示了调整箱大小在版本 83 Microsoft Edge中如何工作：
+在 Microsoft Edge 83 或更早版本中，通过将鼠标悬停在箱的工具栏内来调整 [Devtools"](../../../customize/index.md#drawer)箱"的大小。 在 DevTools 中，将鼠标悬停在窗格边框上以调整其大小时，该箱的行为不同于窗格的其他调整大小控件的行为。 下图显示了在版本 83 或Microsoft Edge调整箱大小是如何工作的：
 
 ![调整 83 中 DevTools Microsoft Edge。](../../media/2020/05/drawer-83.msft.png)
 
 从 Microsoft Edge 84 开始，可以通过将鼠标悬停在边框上来调整箱的大小。 此更改将调整 DevTools 箱大小的行为与 DevTools 中的其他窗格保持一致。 下图显示了在 84 或更高版本中调整Microsoft Edge的工作方式：
 
-![调整 84 中的 DevTools Microsoft Edge。](../../media/2020/05/drawer-84.msft.png)
+![调整 84 中 DevTools Microsoft Edge。](../../media/2020/05/drawer-84.msft.png)
 
 Chromium问题 [#1076112](https://crbug.com/1076112)
 
 ### <a name="screencasting-navigation-buttons-display-focus"></a>屏幕广播导航按钮显示焦点
 
-远程调试 [Android 设备](../../../remote-debugging/index.md)、Windows 10或更高版本设备[](../../../remote-debugging/windows.md)或 [Surface Duo](../../../remote-debugging/surface-duo-emulator.md)![ 仿真器时，可以使用切换屏幕广播切换屏幕视频。](../../../media/toggle-screencast-icon.msft.png) 图标。  启用屏幕广播后，你可以从 DevTools Microsoft Edge在远程设备上导航选项卡。  在 Microsoft Edge 84 中，这些导航按钮现在也可供键盘访问。
+远程调试 [Android 设备](../../../remote-debugging/index.md)、Windows 10或更高版本设备[](../../../remote-debugging/windows.md)或 [Surface Duo](../../../remote-debugging/surface-duo-emulator.md)![ 仿真器时，可以使用切换屏幕视频切换屏幕视频。](../../../media/toggle-screencast-icon.msft.png) 图标。  启用屏幕广播后，你可以从 DevTools 窗口Microsoft Edge远程设备上导航远程设备中的选项卡。  在 Microsoft Edge 84 中，这些导航按钮现在也可供键盘访问。
 
 :::image type="content" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="通过屏幕广播的 URL 栏按 Shift+Tab 会将焦点放在&quot;刷新&quot;按钮上。" lightbox="../../media/2020/05/screencasting-nav.msft.png":::
 
@@ -117,9 +123,9 @@ Chromium 问题 [#963183](https://crbug.com/963183)
 
 ### <a name="fix-site-issues-with-the-new-issues-tool-in-the-devtools-drawer"></a>修复开发人员工具箱中新问题工具的网站问题
 
-DevTools"箱"中新增的"问题"工具可帮助减少控制台的通知疲劳和**混乱。******  目前，**控制台**是网站开发人员、库、框架和网站Microsoft Edge记录消息、警告和错误的中心位置。  "**问题**"工具以结构化、聚合且可操作的方式聚合来自浏览器的警告、指向 Microsoft Edge DevTools 中受影响资源的链接，并提供有关如何修复问题的指南。
+DevTools"箱"中新增的"问题"工具可帮助减少控制台的通知疲劳和**混乱。******  目前，**控制台**是网站开发人员、库、框架和网站Microsoft Edge记录消息、警告和错误的中心位置。  "**问题**"工具以结构化、聚合且可操作的方式聚合来自浏览器的警告、指向 Microsoft Edge DevTools 中受影响的资源的链接，并提供有关如何修复问题的指南。
 
-随着时间的推移，"问题"工具Microsoft Edge控制台中显示越来越多的警告，这应该有助于减少控制台**** 中的混乱 **。******
+随着时间的推移，问题工具Microsoft Edge控制台中显示越来越多的警告，这有助于减少控制台中的混乱 **。****** ****
 
 若要开始，请参阅 [使用问题工具查找和修复问题](../../../issues/index.md)。
 
@@ -143,7 +149,7 @@ Chromium问题 [#1040025](https://crbug.com/1040025)
 
 #### <a name="view-total-blocking-time-information-in-the-footer"></a>查看页脚中的总阻止时间信息
 
-记录负载性能后，性能面板**** 现在在页脚 (TBT) 总阻止时间。  TBT 是一种负载性能指标，有助于量化页面使用所花的时间。  TBT 实质上测量页面看起来只能使用 (__ 因为内容呈现到屏幕布局中) ;但页面实际上并不可用，因为 JavaScript 会阻止主线程，因此页面不响应用户输入。  TBT 是估计第一次输入延迟的主要指标。
+记录负载性能后，"性能****"面板现在在页脚 (TBT) 总阻止时间。  TBT 是一种负载性能指标，有助于量化页面使用所花的时间。  TBT 实质上测量页面看起来只能使用 (__ 内容呈现在屏幕上的) ;但页面实际上并不可用，因为 JavaScript 会阻止主线程，因此页面不响应用户输入。  TBT 是估计第一次输入延迟的主要指标。
 
 <!--todo:  add link Total Blocking Time (TBT) (WebdevTbt) when section is live  -->
 <!--todo:  add link lab metric (WebdevMeasureSpeedLabField) when section is live  -->
@@ -161,7 +167,7 @@ Chromium问题 [#1054381](https://crbug.com/1054381)
 
 #### <a name="layout-shift-events-in-the-new-experience-section"></a>新"体验"部分中的布局 Shift 事件
 
-"**性能"****面板的新"** 体验"部分可帮助你检测布局变化。  累积布局 shift (CLS) 是一项指标，可帮助您量化不需要的视觉不稳定。
+"**性能"****面板的新"** 体验"部分可帮助你检测布局变化。  累积布局 (CLS) 是一项指标，可帮助你量化不需要的视觉不稳定。
 
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->
 <!--todo:  add link layout shifts (WebdevCls) when section is live  -->

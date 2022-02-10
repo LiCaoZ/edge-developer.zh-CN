@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 7d55290ed3c6faa03ad56d013e298ac338f6b707
+ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "12346293"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,7 +32,7 @@ ms.date: 05/04/2021
 
 本文仅讨论应用程序面板的渐进 Web **应用** 功能。  有关应用程序面板中其他窗格**的帮助，请参阅**查看[页面资源和](../resources/index.md)[查看和编辑本地存储](../storage/localstorage.md)。
 
-另请参阅 [Overview of Progressive Web Apps (PWA) ](../../progressive-web-apps-chromium/index.md)。
+另请参阅 [渐进式 Web 应用概述 (PA) ](../../progressive-web-apps-chromium/index.md)。
 
 ### <a name="summary"></a>摘要
 
@@ -122,7 +128,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 *  **Source 行**将告知您当前正在运行的服务工作线程的安装时间。  链接是服务工作者的源文件的名称。  选择链接将你发送到服务工作者的源。
 
-*  " **状态** "行将告知您服务工作者的状态。  上图中绿色状态指示器旁边的 ID (`#36`) 当前处于活动状态的服务工作线程的 ID 号。  在状态旁边，如果服务**** 工作 (停止) 将显示一个"开始"按钮 (如果服务工作进程正在运行，**** 则会显示一个) 按钮。  服务工作者设计为随时由浏览器停止和启动。  使用停止按钮显式停止服务 **工作器** 可能会模拟这一点。  停止服务工作进程是测试服务工作线程再次启动备份时代码行为方式的一种好方法。  它经常显示错误，因为对永久性全局状态的错误假设。
+*  " **状态** "行将告知您服务工作者的状态。  上图中绿色状态指示器旁边的 ID (`#36` 表示) 当前活动的服务工作线程。  在状态旁边，如果服务**** 工作 (停止，则启动按钮) 如果服务工作进程正在运行 (将显示一个停止****) 按钮。  服务工作者设计为随时由浏览器停止和启动。  使用停止按钮显式停止服务 **工作器** 可能会模拟这一点。  停止服务工作进程是测试服务工作线程再次启动备份时代码行为方式的一种好方法。  它经常显示错误，因为对永久性全局状态的错误假设。
 
 *  **"客户端**"行将告知您服务工作线程的作用域。  当 **启用** "全部显示"复选框时，焦点 **按钮最** 有用。  启用该复选框后，将列出所有注册的服务工作者。  如果单击在不同**选项卡**中运行的服务工作线程旁边的焦点按钮，Microsoft Edge焦点位于该选项卡上。
 
@@ -139,14 +145,14 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!-- ====================================================================== -->
 ## <a name="service-worker-caches"></a>服务工作线程缓存
 
-"**缓存存储**窗格提供已使用缓存 API 的缓存服务工作 (缓存) [列表](https://developer.mozilla.org/docs/Web/API/Cache)。
+"**缓存存储**窗格提供已使用缓存 API 的缓存服务工作 (的) [列表](https://developer.mozilla.org/docs/Web/API/Cache)。
 
-:::image type="content" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="&quot;缓存存储窗格。" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
+:::image type="content" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="缓存存储窗格。" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
 
 > [!NOTE]
 > 首次打开缓存并添加资源时，DevTools 可能无法检测到更改。  刷新页面并显示缓存。
 
-如果您打开了两个或多个缓存，则缓存会显示在下面的"缓存缓存存储下。****
+如果您打开了两个或多个缓存，则缓存将显示在"缓存**存储下拉列表下**，如以下屏幕截图中所示。
 
 :::image type="content" source="../media/cache-pane-cache-storage.msft.png" alt-text="&quot;缓存存储下拉列表。" lightbox="../media/cache-pane-cache-storage.msft.png":::
 

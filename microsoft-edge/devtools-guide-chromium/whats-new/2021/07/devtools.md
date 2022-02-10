@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/30/2021
+ms.openlocfilehash: 0fefc05dc2c3a0a683c9c93036d8269b26cea750
+ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "12346405"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-93"></a>DevTools 中的新增功能（Microsoft Edge 93）
 
@@ -68,7 +74,7 @@ DOM 节点被视为"已分离">当不再附加到 DOM 的任何元素，但仍�
 
 如果你在 Visual Studio Code 中使用 JavaScript 调试，你现在可以通过选择 **“检查”** 按钮来启动 **Visual Studio Code 扩展的 Microsoft Edge 开发人员工具**。
 
-:::image type="content" source="../../media/2021/07/inspect-button.msft.png" alt-text="启动 DevTools Visual Studio Code中的&quot;检查&quot;按钮。" lightbox="../../media/2021/07/inspect-button.msft.png":::
+:::image type="content" source="../../media/2021/07/inspect-button.msft.png" alt-text="&quot;检查&quot;按钮Visual Studio Code启动 DevTools 扩展。" lightbox="../../media/2021/07/inspect-button.msft.png":::
 
 此功能将 DOM 和 CSS 调试与 Visual Studio Code 中的 JavaScript 调试集成。 如果未安装 DevTools 扩展，则在选择**Inspect**按钮时，Visual Studio Code提示你安装扩展。
 
@@ -103,11 +109,11 @@ Microsoft Edge DevTools 采用了[Fluent UI](https://developer.microsoft.com/en-
 <!-- Title: DevTools Settings now includes display language -->
 <!-- Subtitle: You can now skip the browser settings and change the DevTools display language directly within DevTools Settings. -->
 
-以前，若要更改 DevTools 中的显示语言，必须更改浏览器语言。  现在，你可以在 DevTools **设置**中轻松切换显示语言，而无需更改浏览器设置。  为此，请打开 **"设置"，** 然后在 **"首选项**"中，从"语言"下拉列表中选择一种 **语言** 。
+以前，若要更改 DevTools 中的显示语言，必须更改浏览器语言。  现在，你可以在 DevTools **设置**中轻松切换显示语言，而无需更改浏览器设置。  为此，**请打开"** 设置 **"，** 然后在"首选项"中，从"语言"下拉列表**中选择**一种语言。
 
 :::image type="content" source="../../media/2021/07/settings-browser-ui-language.msft.png" alt-text="直接从 DevTools **设置** 更改 DevTools 显示语言" lightbox="../../media/2021/07/settings-browser-ui-language.msft.png":::
 
-默认情况下，DevTools 与浏览器的显示语言匹配。  请参阅 [更改 DevTools 语言设置](../../../customize/localization.md)。  若要在开放源代码项目中查看Chromium历史记录，请参阅 Issue [2882756](https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756)。
+默认情况下，DevTools 与浏览器的显示语言匹配。  请参阅 [更改 DevTools 语言设置](../../../customize/localization.md)。  若要查看开放源代码项目中此功能的历史记录Chromium，请参阅 Issue [2882756](https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756)。
 
 
 <!-- ====================================================================== -->
@@ -149,7 +155,7 @@ Microsoft Edge DevTools 采用了[Fluent UI](https://developer.microsoft.com/en-
 
 :::image type="content" source="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png" alt-text="在User-Agent条件工具中定义自定义设备的客户端提示。" lightbox="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png":::
 
-有关在网络条件工具中定义 **提示的信息，** 请参阅 [设置用户代理客户端提示](../../../network/reference.md#set-user-agent-client-hints)。  若要查看开放源代码项目中此功能的Chromium，请参阅问题[1174299。](https://bugs.chromium.org/p/chromium/issues/detail?id=1174299)
+有关在网络条件工具中定义 **提示的信息，** 请参阅 [设置用户代理客户端提示](../../../network/reference.md#set-user-agent-client-hints)。  要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1174299](https://bugs.chromium.org/p/chromium/issues/detail?id=1174299)。
 
 
 <!-- ====================================================================== -->
@@ -166,7 +172,7 @@ Microsoft Edge DevTools 采用了[Fluent UI](https://developer.microsoft.com/en-
 
 <!-- It'd be good to have a video of this a11y fix where the text that the screen reader announces is displayed -->
 
-有关调试控制台错误的信息，请参阅修复控制台 [中报告的 JavaScript 错误](../../../console/console-debug-javascript.md)。  有关 DevTools 发现的问题以及你可以对网页进行改进的信息，请参阅使用问题工具 [查找和修复问题](../../../issues/index.md)。  若要查看开放源代码项目中此功能Chromium历史记录，请参阅 Issue [1223208](https://bugs.chromium.org/p/chromium/issues/detail?id=1223208)。
+有关调试控制台错误的信息，请参阅修复控制台 [中报告的 JavaScript 错误](../../../console/console-debug-javascript.md)。  有关 DevTools 发现的问题以及你可以对网页进行改进的信息，请参阅使用问题工具 [查找和修复问题](../../../issues/index.md)。  若要查看开放源代码项目中此功能的Chromium，请参阅 Issue [1223208](https://bugs.chromium.org/p/chromium/issues/detail?id=1223208)。
 
 
 <!-- ====================================================================== -->

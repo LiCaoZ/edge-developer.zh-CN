@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 1bf5415e999cbef603af445d338183343c53de4c
+ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "12346601"
 ---
 <!-- Copyright Kayce Basques
 
@@ -58,7 +64,7 @@ ms.date: 05/04/2021
    :::image type="content" source="../media/network-tutorial/windows.msft.png" alt-text="The demo in one window and this tutorial in a different window." lightbox="../media/network-tutorial/windows.msft.png":::
    -->
 
-1. 若要[打开 DevTools](../open/index.md)，`Control`++`Shift``J`请按 (Windows、Linux) 或`J` `Command`+`Option`+ (macOS) 。  将 **打开控制台** 工具。
+1. 若要[打开 DevTools](../open/index.md)，`Control`++`Shift``J`请按 (Windows、Linux) 或 (`J` `Command`+`Option`+macOS) 。  将 **打开控制台** 工具。
 
    :::image type="content" source="../media/network-glitch-console.msft.png" alt-text="控制台。" lightbox="../media/network-glitch-console.msft.png":::
 
@@ -127,7 +133,7 @@ ms.date: 05/04/2021
 
 用于构建站点的计算机的网络连接可能比用户的移动设备的网络连接速度快。  通过限制页面，可以更好地了解页面在移动设备上加载所花的时间。
 
-1. 选择 **限制** 下拉列表，该下拉列表默认设置为 **无限制**。
+1. 选择 **"限制"** 下拉列表，该列表默认设置为" **无** 限制"。
 
 1. 选择 **慢速 3G。**
 
@@ -192,7 +198,7 @@ ms.date: 05/04/2021
 
    :::image type="content" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="&quot;计时&quot;面板。" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
 
-1. 单击 **"** (![关闭](../media/close-icon.msft.png) "。) 再次查看网络日志。
+1. 单击 **"** 关闭 (![关闭](../media/close-icon.msft.png) "。) 再次查看网络日志。
 
    :::image type="content" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="&quot;关闭&quot;按钮。" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
 
@@ -206,7 +212,7 @@ ms.date: 05/04/2021
 
 <!--TODO: add cache policies section when available  -->
 
-1. 选择 **"搜索**![ (搜索"。](../media/search-icon.msft.png)) 。  搜索窗格将打开到网络日志的左侧。
+1. 选择 **"搜索**![ (搜索"](../media/search-icon.msft.png)。) 。  搜索窗格将打开到网络日志的左侧。
 
    :::image type="content" source="../media/network-glitch-network-search-empty.msft.png" alt-text="&quot;搜索&quot;窗格。" lightbox="../media/network-glitch-network-search-empty.msft.png":::
 
@@ -262,7 +268,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 
    :::image type="content" source="../media/network-glitch-network-filter-file-type-css.msft.png" alt-text="只显示 CSS 文件。" lightbox="../media/network-glitch-network-filter-file-type-css.msft.png":::
 
-1. 若要同时显示脚本，`Control`请长按 (Windows、Linux) 或 `Command` (macOS) ，然后单击 **"JS"**。
+1. 若要同时显示脚本，请长按 `Control` (Windows、Linux) 或 `Command` (macOS) ，然后单击 **"JS"**。
 
    :::image type="content" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="只显示 CSS 和 JS 文件。" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
 

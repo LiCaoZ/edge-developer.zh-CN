@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 11/16/2021
+ms.openlocfilehash: af87ba12385bfa95c1884a434259d1e920550179
+ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "12346455"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-96"></a>DevTools 中的最近更新 (Microsoft Edge 96)
 
@@ -22,11 +28,11 @@ ms.date: 11/16/2021
 
 Microsoft Edge DevTools 团队正在试验新的 DevTools UI：**焦点模式**。  通过更现代和简化的布局，焦点模式可减少干扰和混乱。  使用新的活动栏，可以将你喜欢的工具固定在水平或垂直工具栏中，以便更高效地使用屏幕空间。
 
-若要在 Microsoft Edge 版本 96 中试用此新 UI，请选择 **设置** ![ (DevTools](../../../media/settings-gear-icon-light-mode.png) 中的 设置 齿轮图标。) >**实验** > 焦点**模式**。
+若要在 Microsoft Edge 版本 **** 96 ![中试用此新 UI，设置 (DevTools](../../../media/settings-gear-icon-light-mode.png) 中的 设置 齿轮图标。) >**实验** > 焦点**模式**。
 
 从 Microsoft Edge 版本 96 开始，试验的复选框标记为“**焦点模式**”，而不是“**焦点模式和 DevTools 工具提示**”。
 
-此 UI 仍处于开发状态，并且在将来版本的 Microsoft Edge 中可能发生更改。  我们期待收到你关于此新 DevTools UI 的反馈。  请通过发布推文 [@EdgeDevTools](https://twitter.com/edgedevtools) 向我们发送反馈。  ![或者，打开焦点**** 模式实验后，在活动栏底部，选择"帮助****" ("活动**** 栏中的"帮助"图标。) >**反馈**"，以显示"发送反馈 **"窗口。**](../../../media/help-icon-of-focus-mode.png)
+此 UI 仍处于开发状态，并且在将来版本的 Microsoft Edge 中可能发生更改。  我们期待收到你关于此新 DevTools UI 的反馈。  请通过发布推文 [@EdgeDevTools](https://twitter.com/edgedevtools) 向我们发送反馈。  或者，打开焦点**** 模式实验后，在活动栏底部，选择"帮助******" (**!["焦点模式活动栏中的帮助图标"。) >**反馈**"，以显示"发送反馈"窗口。****](../../../media/help-icon-of-focus-mode.png)
 
 :::image type="content" source="../../media/2021/11/focus-mode.png" alt-text="焦点模式，包括活动栏。":::
 
@@ -129,11 +135,11 @@ Microsoft Edge DevTools for Visual Studio Code 扩展现在具有可停靠的截
 
 在早期版本的 Microsoft Edge DevTools 中，选择下拉菜单旁边的三角形图标不会显示下拉菜单。  要打开下拉菜单，必须单击三角形图标左侧当前选择的菜单项，例如“**无限制**”：
 
-:::image type="content" source="../../media/2021/11/clicking-triangle-didnt-open-dropdown.png" alt-text="单击下拉菜单的三角形图标不会打开下拉菜单。":::
+:::image type="content" source="../../media/2021/11/clicking-triangle-didnt-open-dropdown.png" alt-text="单击下拉菜单的三角形图标未打开下拉菜单。":::
 
 在 Microsoft Edge 版本 96 中，此问题已得到修复。  现在，选择 DevTools 中任何下拉菜单的三角形图标都将打开下拉菜单：
 
-:::image type="content" source="../../media/2021/11/clicking-triangle-opens-dropdown.png" alt-text="现在，单击三角形图标将打开下拉菜单。":::
+:::image type="content" source="../../media/2021/11/clicking-triangle-opens-dropdown.png" alt-text="单击三角形图标现在将打开下拉菜单。":::
 
 <!-- This fix applies to various tools, including:
 * Performance

@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 3ec1368da77507a42f88dc1903d151dbb5b43436
+ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "12346342"
 ---
 <!-- Copyright Kayce Basques
 
@@ -70,7 +76,7 @@ ms.date: 05/04/2021
 
 ### <a name="open-the-console-tool-in-the-drawer"></a>打开工具箱中的控制台工具
 
-按 `Esc`。  或者，单击 **"自定义和控制 DevTools** (`...`) "，然后选择"显示控制台 **箱"**。
+按 `Esc`。  或者，单击 **"自定义和控制 DevTools** `...` () "，然后选择"显示控制台 **箱"**。
 
 :::image type="content" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="显示控制台箱。" lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
 
@@ -85,14 +91,14 @@ The Drawer pops up in the bottom of the DevTools window， with the **Console** 
 
 ### <a name="open-console-settings"></a>打开控制台设置
 
-单击控制台**设置** (![控制台设置图标](../media/settings-button-icon.msft.png)。) 按钮。
+单击控制台**设置 (**![控制台设置图标](../media/settings-button-icon.msft.png)。) 按钮。
 
 :::image type="content" source="../media/console-settings-group-similar-empty.msft.png" alt-text="控制台设置。" lightbox="../media/console-settings-group-similar-empty.msft.png":::
 
 
 ### <a name="open-the-console-sidebar"></a>打开控制台边栏
 
-若要显示边**栏，请单击**"显示**控制台边**![栏 (显示控制台边](../media/show-console-sidebar-icon.msft.png)栏。) 。  **边栏**可帮助你进行筛选。
+若要显示 **边栏**，请单击显示 **控制台边** 栏 (![显示控制台边](../media/show-console-sidebar-icon.msft.png) 栏。) 。  **边栏**可帮助你进行筛选。
 
 :::image type="content" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="控制台边栏。" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
 
@@ -110,7 +116,7 @@ The Drawer pops up in the bottom of the DevTools window， with the **Console** 
 
 ### <a name="log-xhr-and-fetch-requests"></a>记录 XHR 和 Fetch 请求
 
-To log all `XMLHttpRequest` and `Fetch` requests to the **Console** as each happens， click the **Console 设置** (![Console 设置 icon.](../media/settings-button-icon.msft.png)) button and then select the checkbox next to **Log XMLHttpRequests**.
+`XMLHttpRequest` `Fetch`若要在每次发生时将全部和请求**** 记录到控制台，请单击控制台 **设置** (![控制台 设置 图标](../media/settings-button-icon.msft.png)。) 按钮，然后选中 **Log XMLHttpRequests** 旁边的复选框。
 
 :::image type="content" source="../media/console-xhr-fetch.msft.png" alt-text="记录 XMLHttpRequest 和 Fetch 请求。" lightbox="../media/console-xhr-fetch.msft.png":::
 
@@ -127,7 +133,7 @@ To log all `XMLHttpRequest` and `Fetch` requests to the **Console** as each happ
 
 ### <a name="persist-messages-across-page-loads"></a>跨页面加载保留消息
 
-加载新网页时，默认操作会清除 **控制台**。  若要在页面加载时**** 保留![消息，请单击"控制台设置 (控制台设置图标](../media/settings-button-icon.msft.png)。) 按钮，然后选中"保留日志"旁边的**复选框**。
+加载新网页时，默认操作会清除 **控制台**。  若要在页面加载时**** 保留![消息，请单击"控制台"设置 (控制台设置图标](../media/settings-button-icon.msft.png)。) 按钮，然后选中"保留日志"旁边的**复选框**。
 
 
 ### <a name="hide-network-messages"></a>隐藏网络消息
@@ -138,7 +144,7 @@ To log all `XMLHttpRequest` and `Fetch` requests to the **Console** as each happ
 
 隐藏网络消息：
 
-1. 单击控制台**设置** (![控制台设置图标](../media/settings-button-icon.msft.png)。) 按钮。
+1. 单击控制台**设置 (**![控制台设置图标](../media/settings-button-icon.msft.png)。) 按钮。
 
 1. 选中隐藏网络 **旁边的复选框**。
 
@@ -169,7 +175,7 @@ DevTools 为每个方法分配 `console.*` 四个严重性级别之一：
 
 你可以隐藏你不感兴趣的任何级别的邮件。  例如，如果只对邮件感兴趣 `Error` ，可以隐藏其他三个组。
 
-若要筛选消息，请单击"**日志级别**"下拉列表，然后选择、`Verbose``Info`、或 `Warning``Error`。
+若要筛选消息，请单击" **日志级别** "下拉列表，然后选择 `Verbose`、 `Info`、 `Warning`或 `Error`。
 
 :::image type="content" source="../media/console-log-level-default-levels.msft.png" alt-text="&quot;日志级别&quot;下拉列表。" lightbox="../media/console-log-level-default-levels.msft.png":::
 
@@ -260,7 +266,7 @@ DevTools 为每个方法分配 `console.*` 四个严重性级别之一：
 
 若要清除控制台，请使用以下任一方法：
 
-*  单击 **"清除控制台 (**![清除控制台](../media/clear-console-button-icon.msft.png)"。) 。
+*  单击 **"清除控制台** (![清除控制台](../media/clear-console-button-icon.msft.png) "。) 。
 
 *  右键单击消息，然后选择" **清除控制台"**。
 

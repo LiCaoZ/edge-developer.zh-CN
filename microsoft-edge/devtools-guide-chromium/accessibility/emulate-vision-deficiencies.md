@@ -6,10 +6,16 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
+ms.openlocfilehash: 2e8b35376e7a7a9171e04ed0898b8390b341a081
+ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "12346321"
 ---
 # <a name="emulate-vision-deficiencies"></a>模仿视觉缺陷
 
-为了更好地满足色盲用户 (色盲[](https://www.colourblindawareness.org)) 或模糊视觉Microsoft Edge[开发人员工具](../index.md)允许你模拟模糊的视觉和特定的颜色视觉缺陷。  模拟 **视觉缺陷工具** 可模拟以下类别：
+为了更好地满足色盲用户 (色盲[](https://www.colourblindawareness.org)) 或模糊视觉的需求，[Microsoft Edge DevTools](../index.md) 允许你模拟模糊的视觉和特定的色盲。  模拟 **视觉缺陷工具** 可模拟以下类别：
 
 | 色盲 | 详细信息 |
 |:--- |:--- |
@@ -27,14 +33,14 @@ ms.date: 06/07/2021
 
 若要模拟有视力缺陷的人看到你的网页，请打开 [呈现工具](../rendering-tools/index.md)。
 
-1. 单击 **"自定义"，并控制** () `...` 的 DevTools 控件。
+1. 单击 **"自定义和控制开发人员工具** () `...` 工具栏中的控件。
 
 1. 转到 **"更多工具** > **""** 呈现"以在箱 **中** 打开"呈现"面板。
 
    > [!div class="mx-imgBorder"]
    > ![从"更多工具"菜单打开"呈现"面板。](../media/getting-to-the-rendering-tools.msft.png)
 
-1. 向下滚动到" **模拟视觉缺陷"** 部分，单击"无 **模拟** "下拉列表并选择一个选项。
+1. 向下滚动到" **模拟视觉缺陷** "部分，单击"无 **模拟** "下拉列表，然后选择一个选项。
 
    > [!div class="mx-imgBorder"]
    > !["呈现"面板中的"模拟视觉缺陷"部分。](../media/accessibility-emulate-vision-menu-options.msft.png)

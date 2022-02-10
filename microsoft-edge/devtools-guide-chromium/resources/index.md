@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 3818402aad2965783197b2e5fd6f70a4d5e6c048
+ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "12346398"
 ---
 <!-- Copyright Kayce Basques
 
@@ -42,7 +48,7 @@ ms.date: 05/04/2021
 
    :::image type="content" source="../media/resources-command-menu-empty.msft.png" alt-text="&quot;打开文件&quot;对话框。" lightbox="../media/resources-command-menu-empty.msft.png":::
 
-1. Select the file from the dropdown， or start typing the filename and press `Enter` once the correct file is highlighted in the autocomplete box.
+1. 从下拉列表中选择文件，或开始键入文件名 `Enter` ，在自动完成框中突出显示正确的文件后按。
 
    :::image type="content" source="../media/resources-command-menu-file-search.msft.png" alt-text="在&quot;打开文件&quot;对话框中键入文件名。" lightbox="../media/resources-command-menu-file-search.msft.png":::
 
@@ -99,7 +105,7 @@ ms.date: 05/04/2021
     | 页面项 | 描述 |
     |:--- |:--- |
     | `top` | 主文档 [浏览上下文](https://developer.mozilla.org/docs/Web/HTML/Element/iframe)。 |
-    | `airhorner.com` | 域。  嵌套在它下的所有资源都来自该域。  例如，文件的完整 `comlink.global.j` URL 可能是 `https://airhorner.com/scripts/comlink.global.js`。 |
+    | `airhorner.com` | 域。  嵌套在它下的所有资源都来自该域。  例如，文件的完整 `comlink.global.js` URL 可能是 `https://airhorner.com/scripts/comlink.global.js`。 |
     | `scripts` | 目录。 |
     | `(index)` | 主 HTML 文档。 |
     | `sw.js` | 服务工作线程运行时上下文。 |

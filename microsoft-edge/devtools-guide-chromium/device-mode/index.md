@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
+ms.openlocfilehash: ead58b7a9709af2bd52d2486647db55cf74fb2db
+ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "12346587"
 ---
 <!-- Copyright Kayce Basques
 
@@ -46,7 +52,7 @@ ms.date: 07/19/2021
 <!-- ====================================================================== -->
 ## <a name="simulate-a-mobile-viewport"></a>模拟移动视区
 
-**** ![](../media/toggle-device-toolbar-dark-icon.msft.png) 选择"切换设备仿真 (切换设备工具栏"。) 或选择"自定义和控制 **DevTools** (`...`) > **设备模拟**"以打开使您能够模拟移动视口的 UI。
+**** ![](../media/toggle-device-toolbar-dark-icon.msft.png) 选择"切换设备仿真 (切换设备工具栏"。) 或选择"自定义和控制 **DevTools** (`...`) > **设备**模拟"以打开使您能够模拟移动视口的 UI。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="设备工具栏。" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
 
@@ -173,7 +179,7 @@ ms.date: 07/19/2021
 
 仅限制 CPU 而不是网络：
 
-1. 选择"**性能"** 面板，然后选择"捕获设置** (**![捕获设置。](../media/capture-settings-icon.msft.png)) 。
+1. 选择"**性能"** 面板，然后选择"捕获设置** (**![捕获设置。) ](../media/capture-settings-icon.msft.png)。
 1. 选择 **CPU4x** >  **减速或****速度减慢 6 倍**。
 
 :::image type="content" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="&quot;性能&quot;面板中的 CPU 列表。" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
@@ -192,7 +198,7 @@ ms.date: 07/19/2021
 
 您还可以从"性能"面板设置 **网络** 限制：
 
-1. **** 选择 **"捕获设置** (![](../media/capture-settings-icon.msft.png) 捕获设置。) 选择"网络"列表，将预设更改为 **"快速 3G**"或"**慢速 3G"**。
+1. 选择 **"捕获设置** (![**** 捕获设置。](../media/capture-settings-icon.msft.png)) 并选择"网络"列表，将预设更改为 **"快速 3G**"或"**慢速 3G"**。
 
    :::image type="content" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="从&quot;性能&quot;面板设置网络限制。" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
 
@@ -202,7 +208,7 @@ ms.date: 07/19/2021
 
  如果页面依赖移动设备中的地理位置信息正确呈现，则使用替代地理位置的 UI 提供不同的地理位置。
 
-1. 选择 **自定义和控制 DevTools (** `...`) > **更多工具** > **Sensors"**。
+1. 选择**自定义和控制 DevTools** () > `...` **更多工具** > **Sensors。**
 
    :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="用于地理位置的传感器。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
@@ -210,7 +216,7 @@ ms.date: 07/19/2021
 
    :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="显示命令菜单中的地理位置传感器。" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
 
-在 **"传感器"** 面板上，若要选择预设位置之一，请使用" **位置** "下拉菜单。  若要输入自定义位置，请选择 **"其他"** 并输入自定义位置的坐标。  若要测试页面在位置信息不可用时的行为方式，请选择" **位置不可用"**。
+在 **"传感器"** 面板上，若要选择其中一个预设位置，请使用" **位置"下拉菜单** 。  若要输入自定义位置，请选择 **"其他"** 并输入自定义位置的坐标。  若要测试页面在位置信息不可用时的行为方式，请选择" **位置不可用"**。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="已选择预设位置的“传感器”面板。" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
 
@@ -220,7 +226,7 @@ ms.date: 07/19/2021
 
 如果页面依赖来自移动设备的方向信息来正确呈现，请打开方向 UI。
 
-1. 选择 **自定义和控制 DevTools (** `...`) > **更多工具** > **Sensors"**。
+1. 选择**自定义和控制 DevTools** () > `...` **更多工具** > **Sensors。**
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="&quot;更多工具&quot;菜单上的&quot;传感器&quot;命令。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
@@ -228,7 +234,7 @@ ms.date: 07/19/2021
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="显示方向传感器。" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
 
-在 **"传感器"** 面板上，可以从"方向"下拉菜单中选择预设**** 方向。  若要输入你自己的方向，请选择" **自定义方向**"，然后输入你自己的 [alpha](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha)、 [beta](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta) 和 [gamma](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma) 值。
+在 **"传感器"** 面板上，可以从"方向"下拉菜单 **中选择预设方向** 。  若要输入你自己的方向，请选择" **自定义方向**"，然后输入你自己的 [alpha](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha)、 [beta](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta) 和 [gamma](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma) 值。
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="&quot;传感器&quot;面板上的方向选项。" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
 
@@ -238,7 +244,7 @@ ms.date: 07/19/2021
 
 如果页面依赖移动设备中的用户代理字符串来正确呈现，请使用“**网络条件**”面板提供不同的用户代理字符串。
 
-1. 选择 **"自定义和控制开发工具 (**) > `...` **工具** > **网络条件"**。
+1. 选择 **"自定义和控制开发工具 (**) > `...` **工具** > **""网络条件"**。
 
    :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="&quot;更多工具&quot;菜单中的网络条件条目。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
 
@@ -262,7 +268,7 @@ ms.date: 07/19/2021
 
 1. 在网页中右键单击，然后选择"检查 **"**。
 
-1. 选择 **设置** > **Devices**。
+1. 选择**设置** > **设备**"。
 
 1. 在仿真设备面板中，选择 **添加自定义设备** 并展开 **用户代理客户端提示**。
 
