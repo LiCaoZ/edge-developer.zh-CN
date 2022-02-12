@@ -7,9 +7,15 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 no-loc:
-  - 'Cast'
-  - 'Google Cast'
+- Cast
+- Google Cast
 ms.date: 12/10/2021
+ms.openlocfilehash: b0832b8ada5b7c4d4a15b7df0528a6868708b9d4
+ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "12346482"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书
 
@@ -59,7 +65,7 @@ ms.date: 12/10/2021
 
 <!-- The Search settings seem different from what is described here -->
 
-可以更改默认搜索引擎。 导航到 `edge://settings/search`。 选择地址栏下拉菜单 **中使用的搜索引擎**。  如果在使用 **InPrivate** 或 **来宾** 模式时进行浏览，则会关闭自动建议。  **InPrivate**显示来自本地浏览的建议，例如浏览历史记录和过去的搜索。 不会将任何类型化字符发送到默认搜索引擎。  **来宾**模式不会显示任何建议，或将输入的字符发送到默认搜索引擎。
+可以更改默认搜索引擎。 导航到 `edge://settings/search`。  选择“**地址栏中使用的搜索引擎**”下拉菜单。  如果在使用 **InPrivate** 或 **来宾** 模式时进行浏览，则会关闭自动建议。  **InPrivate**显示来自本地浏览的建议，例如浏览历史记录和过去的搜索。 不会将任何类型化字符发送到默认搜索引擎。  **来宾**模式不会显示任何建议，或将输入的字符发送到默认搜索引擎。
 
 其他搜索提供程序收集的数据遵循公司的隐私策略。
 

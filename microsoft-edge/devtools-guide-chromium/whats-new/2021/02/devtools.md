@@ -7,6 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
+ms.openlocfilehash: 6c6d486d939c7b106981ce7177e27df67543c4c2
+ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "12346356"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -135,7 +141,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 ## <a name="filtering-in-the-console-is-more-consistent"></a>控制台中的筛选更加一致
 
 <!-- Title: Console improvements make filtering more consistent  -->
-<!-- Subtitle: The Log Levels dropdown is more clearly disabled when using filters in the Console sidebar.  -->
+<!-- Subtitle: The Log Levels dropdown list is more clearly disabled when using filters in the Console sidebar.  -->
 
 当使用[控制台边栏](../../../console/reference.md#open-the-console-sidebar)进行筛选时，“[日志级别](../../../console/reference.md#filter-by-log-level)”下拉列表中的筛选器不可用。  以前，“**日志级别**”下拉列表在你悬停时会突出显示，即使从**控制台边栏**中选择了筛选器也是如此。  在 Microsoft Edge 版本 90 中，当你从**控制台边栏**中选择筛选器后将鼠标悬停在“**日志级别**”下拉列表上时，它不再突出显示。  若要了解有关**控制台**中的筛选的更多信息，请查看“[筛选消息](../../../console/reference.md#filter-messages)”。
 
@@ -161,7 +167,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 ### <a name="emulate-the-css-color-gamut-media-feature"></a>模拟 CSS 色域媒体功能
 
-[色域](https://www.chromestatus.com/feature/5354410980933632)媒体查询会模拟浏览器和你正在测试的设备支持的大致颜色范围。  “**模拟 CSS 媒体功能色域**”下的下拉列表包含 DevTools 可能模拟的颜色空间。  例如，若要触发 `color-gamut: p3` 媒体查询，请从下拉列表中选择“**色域：p3**”。
+[色域](https://www.chromestatus.com/feature/5354410980933632)媒体查询会模拟浏览器和你正在测试的设备支持的大致颜色范围。  “**模拟 CSS 媒体功能色域**”下的下拉列表包含 DevTools 可以模拟的颜色空间。  例如，若要触发 `color-gamut: p3` 媒体查询，请从下拉列表中选择“**色域：p3**”。
 
 模拟 CSS 色域媒体功能：
 

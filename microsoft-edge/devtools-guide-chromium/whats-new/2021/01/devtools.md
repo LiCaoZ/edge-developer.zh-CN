@@ -7,6 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
+ms.openlocfilehash: 20bbc05b391022062c52e19d0e36af024b102d69
+ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "12346370"
 ---
 <!-- Copyright Jecelyn Yeen
 
