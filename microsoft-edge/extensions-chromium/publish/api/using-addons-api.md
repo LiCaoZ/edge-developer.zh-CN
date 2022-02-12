@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/19/2021
+ms.openlocfilehash: f7d223048b2adf4b47b913260b7dff393a1aa460
+ms.sourcegitcommit: 992cdaff8073121ea8e9b4d3e1eeab7340b4ec1f
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "12346955"
 ---
 # <a name="using-the-microsoft-edge-add-ons-api-in-private-preview"></a>使用 Microsoft Edge 外接程序 API (在个人预览版中)
 
@@ -14,7 +20,7 @@ ms.date: 08/19/2021
 
 本文与 Microsoft Edge [加载项 API](addons-api-reference.md) 参考一起概述了建议Microsoft Edge加载项 API。  我们期待就建议的 API 合同提供建议和反馈。  请将你的反馈作为有关 [加载项 API 的问题提交](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API])。
 
-Microsoft Edge加载项 API 提供了一组 REST 终结点，用于以编程方式发布提交到 Microsoft Edge 加载项网站的加载项更新。  可以使用这些 REST 终结点自动执行将加载项上载和发布到加载项Microsoft Edge的过程。
+加载项MICROSOFT EDGE API 提供了一组 REST 终结点，用于以编程方式发布提交到 Microsoft Edge 加载项网站的加载项更新。  可以使用这些 REST 终结点自动执行将加载项上载和发布到加载项Microsoft Edge的过程。
 
 
 <!-- ====================================================================== -->
@@ -51,7 +57,7 @@ Microsoft Edge加载项 API 提供了一组 REST 终结点，用于以编程方�
 1. 记下客户端 **ID**、 **客户端密码** 和 **访问令牌 URL**。  你将在下一步使用这些值，获取访问令牌。
 
 > [!IMPORTANT]
-> 请务必立即记下客户端密码，因为它仅在启用或续订 API 密码后（即 (API 凭据后立即) 。
+> 请务必立即记下客户端密码，因为它仅在启用或续订 API 密码（即 (API 凭据之后）立即) 。
 
 
 <!-- ====================================================================== -->
@@ -76,7 +82,7 @@ Header Parameters: Content-Type: application/x-www-form-urlencoded
 -X POST \
 -H "Content-Type: application/x-www-form-urlencoded" \
 -d "client_id={$Client_ID}" \
--d "scope=https://addons.edge.microsoft.com/.default" \
+-d "scope=https://api.addons.microsoftedge.microsoft.com/.default" \
 -d "client_secret={$Client_Secret}" \
 -d "grant_type=client_credentials" \
 -v \
@@ -114,7 +120,7 @@ API 在终结点上可用 https://api.addons.microsoftedge.microsoft.com
 
 ```rest
 Endpoint: /v1/products/$productID/submissions/draft/package
-Type: PUT
+Type: POST
 Header Parameters: Authorization: Bearer $TOKEN; Content-Type: application/zip
 Body content: the package file to upload
 ```
@@ -129,7 +135,7 @@ Body content: the package file to upload
 
 1. 选择想要其产品 ID 的扩展。
 
-   将 **打开"扩展概述** "页。  产品 ID 显示在页面中。   (产品 ID 还会在地址栏中的 URL `microsoftedge/` `/packages`中显示为 GUID，介于 和 .) 
+   将 **打开"扩展概述** "页。  产品 ID 显示在页面中。   (产品 ID 在地址栏中的 URL `microsoftedge/` `/packages`中也显示为 GUID，介于 和 .) 
  
 1. 在" **扩展标识** "部分 (地址栏) ，选择并复制 **产品 ID**。
 
@@ -187,7 +193,7 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 Endpoint: /v1/products/$productID/submissions
 Type: POST
 Header Parameters: Authorization: Bearer $TOKEN
-Body content: Notes for certification, in plain text format
+Body content: Notes for certification, in JSON format
 ```
 
 ### <a name="sample-request"></a>示例请求
@@ -196,7 +202,7 @@ Body content: Notes for certification, in plain text format
 > curl \
 -H "Authorization: Bearer $TOKEN" \
 -X POST \
--d "certificationNotes=text value" \
+-d { notes=\"text value\" } \
 -v \
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions
 ```
