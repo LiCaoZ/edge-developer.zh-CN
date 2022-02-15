@@ -6,24 +6,24 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/10/2021
-ms.openlocfilehash: fb5863705d2775848da7e7d18d8ebdedbbe6d728
-ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.openlocfilehash: 30453c497c8c848835da7009fb073909ea587f99
+ms.sourcegitcommit: 2e0ec25e3cfc01b58fdddd5f4ac270632cb9b962
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "12346426"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "12348268"
 ---
 # <a name="customize-keyboard-shortcuts"></a>自定义键盘快捷方式
 
 在 设置 **** 的"快捷方式"**** 页中，可以查看 Microsoft Edge DevTools 定义的快捷方式、为特定操作定义你自己的快捷方式或使用预设来匹配 Microsoft Visual Studio Code 中的默认快捷方式。
 
-有关默认键盘快捷方式，请参阅 [键盘快捷方式](../shortcuts/index.md)。  另请参阅 [自定义 DevTools](./index.md#settings)。
+有关默认键盘快捷方式，请参阅 [键盘快捷方式](../shortcuts/index.md)。
 
 
 <!-- ====================================================================== -->
 ## <a name="match-keyboard-shortcuts-from-visual-studio-code"></a>匹配键盘快捷方式Visual Studio Code
 
-若要将开发人员工具中的键盘快捷方式Microsoft Edge开发人员工具中的等效操作Visual Studio Code：
+若要将开发人员工具中的键盘快捷方式Microsoft Edge中的等效操作，Visual Studio Code：
 
 1. [打开 DevTools](../open/index.md)，例如按 `F12`。
 
@@ -35,7 +35,7 @@ ms.locfileid: "12346426"
 
    :::image type="content" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="将 DevTools 中的键盘快捷方式与Visual Studio Code。" lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
 
-例如，若要暂停或继续运行脚本Visual Studio Code，请选择 `F5`。  但是，使用 **DevTools (Default) ** 预设，若要暂停或继续运行脚本，请按 `F8`。  当你将预设**更改为Visual Studio Code**`F5`时，你现在也在 DevTools 中按下，就像在 Visual Studio Code 中一样。
+例如，若要暂停或继续运行脚本Visual Studio Code，请选择 `F5`。  但是，使用 **DevTools (Default) ** 预设，若要暂停或继续运行脚本，请按 `F8`。  当你将预设**更改为**`F5`Visual Studio Code时，你现在也在 DevTools 中按下，就像在Visual Studio Code。
 
 ### <a name="see-also"></a>另请参阅
 
@@ -75,11 +75,11 @@ ms.locfileid: "12346426"
 
 <!-- keep in same order as screenshot: -->
 
-*  如果 CustomKeyboardShortcut **** ![](../media/custom-keyboard-shortcut-icon.msft.png) (有自定义键盘快捷方式。) 旁边显示的图标表示已自定义键盘快捷方式。
+*  如果有自定义键盘****![快捷方式 (CustomKeyboardShortcut](../media/custom-keyboard-shortcut-icon.msft.png)。) 旁边显示的图标，它表示你已自定义键盘快捷方式。
 
 *  若要在编辑某个动作的键盘快捷方式时删除某个****![动作的键盘快捷方式，请单击"删除 (DeleteKeyboardShortcut](../media/delete-keyboard-shortcut-icon.msft.png)"。) 图标。
 
-*  若要在编辑某个操作**** 键盘![快捷方式时为某个操作添加其他键盘快捷方式，请单击"添加快捷方式"链接，或**** 单击"自定义键盘快捷方式" (CustomKeyboardShortcut](../media/custom-keyboard-shortcut-icon.msft.png)。) 图标。
+*  若要在编辑某个操作键盘快捷方式时为某个操作添加其他键盘快捷方式，请单击"添加快捷方式"链接，或**** 单击"自定义键盘快捷方式 **" (** ![CustomKeyboardShortcut](../media/custom-keyboard-shortcut-icon.msft.png)。) 图标。
 
 *  若要在编辑某个动作的键盘快捷方式时保存已修改或添加的键盘快捷方式，请单击选中 (![CheckmarkKeyboardShortcut。](../media/checkmark-keyboard-shortcut-icon.msft.png)) 图标。
 
@@ -87,5 +87,13 @@ ms.locfileid: "12346426"
 
 *  若要重置所有快捷方式，请单击"还原 **默认快捷方式"** 按钮。
 
-> [!NOTE]
-> 如果当前为一个操作分配了键盘快捷方式，则阻止你将其保存为另一个操作。  请改为从上一操作中删除键盘快捷方式，然后将其添加到新操作。
+如果键盘快捷方式当前已分配给一个操作，则不能将其分配给另一个操作。  请从上一操作中删除键盘快捷方式，然后将该键盘快捷方式添加到新操作。
+
+
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
+
+* [键盘快捷方式](../shortcuts/index.md)
+* [使用辅助技术导航开发工具](../accessibility/navigation.md)
+* [在“命令”菜单中运行命令](../command-menu/index.md)
+* [自定义 DevTools](index.md#settings)

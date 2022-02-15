@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: e60dfc472f652a40a19aab6de487582225c05031
+ms.sourcegitcommit: 2e0ec25e3cfc01b58fdddd5f4ac270632cb9b962
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "12348261"
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,7 +28,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # <a name="run-commands-in-the-command-menu"></a>在“命令”菜单中运行命令
 
-命令菜单提供了一种快速的方式，Microsoft Edge开发人员工具 UI 和完成常见任务，例如[禁用 JavaScript](../javascript/disable.md)。  你可能熟悉命令调色板Microsoft Visual Studio代码中的类似功能，这是命令菜单的原始灵感[](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette)。
+命令菜单提供了一种快速的方式，Microsoft Edge开发人员工具 UI 和完成常见任务。  命令菜单类似于命令[面板中的命令Visual Studio Code](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette)。
 
 :::image type="content" source="../media/command-menu-run-command-java.msft.png" alt-text="使用命令菜单禁用 JavaScript。" lightbox="../media/command-menu-run-command-java.msft.png":::
 
@@ -30,7 +36,7 @@ ms.date: 05/04/2021
 <!-- ====================================================================== -->
 ## <a name="open-the-command-menu"></a>打开命令菜单
 
-按`Control`+`Shift`+`P`（Windows、Linux）或 `Command`+`Shift`+`P` （macOS）。  或者，选择 **"自定义和控制开发工具 (**) > `...` **运行命令"**。
+按`Control`+`Shift`+`P`（Windows、Linux）或 `Command`+`Shift`+`P` （macOS）。  或者，选择" **自定义和控制开发工具 (**) > `...` **运行命令"**。
 
 :::image type="content" source="../media/command-menu-options-run-command.msft.png" alt-text="运行命令。" lightbox="../media/command-menu-options-run-command.msft.png":::
 
@@ -48,9 +54,17 @@ ms.date: 05/04/2021
 
 
 <!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
+
+* [键盘快捷方式](../shortcuts/index.md)
+* [使用辅助技术导航开发工具](../accessibility/navigation.md)
+* [自定义键盘快捷方式](../customize/shortcuts.md)
+
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/command-menu/index)，由技术编写 (、Chrome DevTools & Lighthouse) 创作。[](https://developers.google.com/web/resources/contributors/kaycebasques)
+> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/command-menu/index)，由技术编写 (Chrome DevTools & Lighthouse) 创作。[](https://developers.google.com/web/resources/contributors/kaycebasques)
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

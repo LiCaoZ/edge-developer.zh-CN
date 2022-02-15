@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 13f82384398a40fe0068be407070422954ca1b2f
-ms.sourcegitcommit: aec518f7d415ebee7a7d9cc177f987b8a86f9483
+ms.openlocfilehash: 37e05971c06d4a279203b44b198eccc8d189409a
+ms.sourcegitcommit: 2e0ec25e3cfc01b58fdddd5f4ac270632cb9b962
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "12323290"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "12348247"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,9 +30,9 @@ ms.locfileid: "12323290"
 
 这些是开发人员工具的默认Microsoft Edge快捷方式。
 
-工具提示通常显示键盘快捷方式。  将鼠标悬停在开发工具的 UI 元素上，以显示工具提示。  如果元素具有快捷方式，则工具提示中将包含快捷方式。
+在 DevTools 中，将鼠标悬停在图标上时，工具提示通常显示键盘快捷方式。
 
-另请参阅 [自定义键盘快捷方式](../customize/shortcuts.md)。
+另请参阅[使用辅助技术导航 DevTools 和](../accessibility/navigation.md)[自定义键盘快捷方式](../customize/shortcuts.md)。
 
 
 <!-- ====================================================================== -->
@@ -70,7 +70,7 @@ ms.locfileid: "12323290"
 | 放大 | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |
 | 缩小 | `Control`+`-` | `Command`+`-` |
 | 还原默认缩放级别 | `Control`+`0` | `Command`+`0` |
-| 运行代码片段 | 按 `Control` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `!` 后跟脚本名称，然后按 `Enter` | 按 `Command` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `!` 后跟脚本名称，然后按 `Enter` |
+| 运行代码片段 | 按 `Control`+`O` 以打开 ["命令菜单](../command-menu/index.md)"， `!` 键入后跟脚本的名称，然后按 `Enter` | 按 `Command`+`O` 以打开 ["命令菜单](../command-menu/index.md)"， `!` 键入后跟脚本的名称，然后按 `Enter` |
 
 <!-- TODO: make a bug about this UIPlacement link being ambiguous.  -->
 <!-- TODO: Link "Inspect Element Mode" when a good section exists.  -->
@@ -86,7 +86,7 @@ ms.locfileid: "12323290"
 | 选择当前所选元素上方/下方元素 | `Up Arrow` / `Down Arrow` | `Up Arrow` / `Down Arrow` |
 | 展开当前选定的节点。  如果节点已展开，则此快捷方式将选择下方的元素 | `Right Arrow` | `Right Arrow` |
 | 折叠当前选定的节点。  如果节点已折叠，则此快捷方式将选择上方的元素 | `Left Arrow` | `Left Arrow` |
-| 展开或折叠当前选定的节点及所有子节点 | 保留 `Control` + `Alt` ，然后单击**元素**名称旁边的箭头图标 | 保留 `Option` ，然后单击 **元素** 名称旁边的箭头图标 |
+| 展开或折叠当前选定的节点及所有子节点 | 保留 `Control`+`Alt`，然后单击 **元素** 名称旁边的箭头图标 | 保留 `Option`，然后单击 **元素** 名称旁边的箭头图标 |
 | 在当前选定的元素上切换“**编辑属性**”模式 | `Enter` | `Enter` |
 | 进入“**编辑属性**”模式后，选择下一个/上一个属性 | `Tab` / `Shift`+`Tab` | `Tab` / `Shift`+`Tab` |
 | 隐藏当前所选元素 | `H` | `H` |
@@ -96,17 +96,17 @@ ms.locfileid: "12323290"
 
 | 操作 | Windows/Linux | macOS |
 |---|---|---|
-| 转到声明属性值的行 | 保留 `Control` ，然后单击属性值 | 保留 `Command` ，然后单击属性值 |
-| 循环显示颜色值的 RBGA、HSLA 和 Hex 表示形式 | 保留 `Shift` ，然后单击值 **旁边的"颜色** 预览"框 | 保留 `Shift` ，然后单击值 **旁边的"颜色** 预览"框 |
+| 转到声明属性值的行 | 保留 `Control`，然后单击属性值 | 保留 `Command`，然后单击属性值 |
+| 循环显示颜色值的 RBGA、HSLA 和 Hex 表示形式 | 保留 `Shift`，然后单击值 **旁边的"颜色** 预览"框 | 保留 `Shift`，然后单击值 **旁边的"颜色** 预览"框 |
 | 选择下一个/上一个属性或值 | 单击属性名称或值，然后按 `Tab` / `Shift`+`Tab` | 单击属性名称或值，然后按 `Tab` / `Shift`+`Tab` |
-| 将属性值递增/减 0.1 | 单击某个值，然后按 `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | 单击某个值，然后按 `Option` + `Up Arrow` /Option+向下箭头 |
+| 将属性值递增/减 0.1 | 单击某个值，然后按 `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | 单击某个值，然后按 `Option`+`Up Arrow` /Option+向下箭头 |
 | 将属性值递增/减 1 | 单击某个值，然后按 `Up Arrow` / `Down Arrow` | 单击某个值，然后按 `Up Arrow` / `Down Arrow` |
 | 将属性值递增/减 10 | 单击某个值，然后按 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | 单击某个值，然后按 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |
 | 将属性值递增/减 100 | 单击某个值，然后按 `Control`+`Up Arrow` / `Control`+`Down Arrow` | 单击某个值，然后按 `Command`+`Up Arrow` / `Command`+`Down Arrow` |
-| 循环角度值的 (度) 、 (grad) 、弧度 (弧) 并旋转角度值的 () 表示形式 | 保留 `Shift` ，然后单击 **值旁边的"角度** 预览"框 | 保留 `Shift` ，然后单击 **值旁边的"角度** 预览"框 |
+| 循环浏览角度值的 (度) 、 ( (grad) 、弧度 (rad) 并旋转角度值的 () 表示形式 | 保留 `Shift` ，然后单击 **值旁边的"角度** 预览"框 | 保留 `Shift` ，然后单击 **值旁边的"角度** 预览"框 |
 | 将角度值递增/减 1 | 单击 **值旁边的"角度** 预览"框，然后按 `Up Arrow` / `Down Arrow` | 单击 **值旁边的"角度** 预览"框，然后按 `Up Arrow` / `Down Arrow` |
 | 将角度值递增/减 10 | 单击 **值旁边的"角度** 预览"框，然后按 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | 单击 **值旁边的"角度** 预览"框，然后按 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |
-| 将角度值递增/减 15 | Click the **Angle Preview** box next to the value then press ， click / mouse slide on the Angle `Shift` Clock **Overlay** | Click the **Angle Preview** box next to the value then press ， click / mouse slide on the Angle `Shift` Clock **Overlay** |
+| 将角度值递增/减 15 | Click the **Angle Preview** box next to the value then press `Shift`， click / mouse slide on the **Angle Clock Overlay** | Click the **Angle Preview** box next to the value then press `Shift`， click / mouse slide on the **Angle Clock Overlay** |
 
 
 <!-- ====================================================================== -->
@@ -118,14 +118,14 @@ ms.locfileid: "12323290"
 | 单步跳过下一函数调用 | `F10` 或 `Control`+`'` | `F10` 或 `Command`+`'` |
 | 单步执行下一函数调用 | `F11` 或 `Control`+`;` | `F11` 或 `Command`+`;` |
 | 跳出当前函数 | `Shift`+`F11` 或 `Control`+`Shift`+`;` | `Shift`+`F11` 或 `Command`+`Shift`+`;` |
-| 暂停时继续至指定的代码行[](../javascript/breakpoints.md#line-of-code-breakpoints) | 保留 `Control` ，然后单击代码行 | 保留 `Command` ，然后单击代码行 |
+| 暂停时继续至指定的代码行[](../javascript/breakpoints.md#line-of-code-breakpoints) | 保留 `Control`，然后单击代码行 | 保留 `Command`，然后单击代码行 |
 | 选择当前所选帧下方/上方的调用帧 | `Control`+`.` / `Control`+`,` | `Control`+`.` / `Control`+`,` |
 | 保存对本地修改的更改 | `Control`+`S` | `Command`+`S` |
 | 保存所有更改 | `Control`+`Alt`+`S` | `Command`+`Option`+`S` |
 | 导航到行 | `Control`+`G` | `Control`+`G` |
-| 跳转到当前打开的文件的行号 | 按 `Control` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` 后跟行号，然后按 `Enter` | 按 `Command` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` 后跟行号，然后按 `Enter` |
-| 跳转到当前打开的文件列， (第 5 行，第 9 列)  | 按 `Control` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` ，然后键入行号，然后键入另一个 `:` ，然后按列号 `Enter` | 按 `Command` + `O` 打开命令[菜单](../command-menu/index.md)，键入 `:` ，然后键入行号，然后键入另一个 `:` ，然后按列号 `Enter` |
-| 如果当前文件为 HTML 或脚本，则导航到函数声明。  <br />  如果当前文件是样式表，请导航到规则集。  | 按 `Control` + `Shift` + `O` ，然后键入声明/规则集的名称，或者从选项列表中选择它 | press `Command` + `Shift` + `O` ，然后键入声明 /规则集的名称，或者从选项列表中选择它 |
+| 跳转到当前打开的文件的行号 | 按 `Control`+`O` 打开命令 [菜单](../command-menu/index.md)，键入 `:` 后跟行号，然后按 `Enter` | 按 `Command`+`O` 打开命令 [菜单](../command-menu/index.md)，键入 `:` 后跟行号，然后按 `Enter` |
+| 跳转到当前打开的文件列， (第 5 行，第 9 列)  | 按`Control`+`O`打开命令[菜单](../command-menu/index.md)`:`，键入 ，然后键入行号，然后`:`键入另一个 ，然后按列号 `Enter` | 按`Command`+`O`打开命令[菜单](../command-menu/index.md)`:`，键入 ，然后键入行号，然后`:`键入另一个 ，然后按列号 `Enter` |
+| 如果当前文件为 HTML 或脚本，则导航到函数声明。  <br />  如果当前文件是样式表，请导航到规则集。  | 按 `Control`++`Shift``O`，然后键入声明/规则集名称，或者从选项列表中选择它 | press `Command`++`Shift``O`，然后键入声明/规则集的名称，或者从选项列表中选择它 |
 | 关闭活动的选项卡 | `Alt`+`W` | `Option`+`W` |
 
 ### <a name="code-editor-keyboard-shortcuts"></a>代码编辑器键盘快捷方式
@@ -170,7 +170,15 @@ ms.locfileid: "12323290"
 | 清除“**控制台**” | `Control`+`L` | `Command`+`K` 或 `Option`+`L` |
 | 强制多行输入。  该快捷方式通常是不需要的，因为默认情况下，开发工具应该检测多行方案 | `Shift`+`Enter` | `Command`+`Return` |
 | 运行 | `Enter` | `Return` |
-| 展开记录到控制台的对象的所有子属性 | 保留 `Alt` ，然后单击"**** 展开 (![ 展开 ](../media/expand-icon.msft.png) "。)  | 按住 `Alt` ，然后单击**** 展开 (![ 展开 ](../media/expand-icon.msft.png) 。) 。 |
+| 展开记录到控制台的对象的所有子属性 | 保留 `Alt`， **然后单击"展开** (![展开"。](../media/expand-icon.msft.png))  | 按住 `Alt`，**然后单击展开 (**![展开。](../media/expand-icon.msft.png)) 。 |
+
+
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
+
+* [使用辅助技术导航开发工具](../accessibility/navigation.md)
+* [自定义键盘快捷方式](../customize/shortcuts.md)
+* [在“命令”菜单中运行命令](../command-menu/index.md)
 
 
 <!-- ====================================================================== -->
@@ -178,5 +186,5 @@ ms.locfileid: "12323290"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/shortcuts)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![Creative Commons License。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

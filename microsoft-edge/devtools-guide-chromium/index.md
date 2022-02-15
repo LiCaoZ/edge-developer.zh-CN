@@ -7,6 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 09/23/2021
+ms.openlocfilehash: b24d92ed200df253728e0058bebb52fe97d04326
+ms.sourcegitcommit: 2e0ec25e3cfc01b58fdddd5f4ac270632cb9b962
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "12348303"
 ---
 # <a name="overview-of-devtools"></a>开发工具概述
 
@@ -30,25 +36,26 @@ Microsoft Edge DevTools 是一组 Web 开发工具，显示在"Web 浏览器"中
 
 安装Microsoft Edge时，不仅会获得浏览器，还会获得开发人员工具，这提供了一种用于检查、调试甚至创建 Web 项目的强大方法。  这些开发人员工具部分基于开放源代码Chromium中的工具。  Microsoft Edge 开发人员工具也称为_Microsoft Edge DevTools，_ 或只是_DevTools。_
 
+
 使用 DevTools 可以执行以下操作：
 
-*  检查并更改浏览器中的当前 网页。
+*  检查并更改当前网页，在浏览器中活动。
 
 *  模拟产品在不同设备上的行为方式，并模拟具有不同网络条件的移动环境。
 
 *  使用具有可视界面的 实时工具检查、调整和更改网页中元素的样式。
 
-*  使用断点调试和实时控制台 调试JavaScript。
+*  使用断点调试和实时控制台调试 JavaScript，该控制台在键入时评估 JavaScript 表达式。
 
-*  在 产品中查找 辅助功能、性能、兼容性和安全问题，并了解如何使用 DevTools 修复每个问题。
+*  在产品中查找辅助功能、性能、兼容性和安全问题，并了解如何使用 DevTools 修复发现的辅助功能问题。
 
-*  检查网络流量 并查看问题的位置。
+*  检查网络流量，并查看网络延迟的位置。
 
-*  检查浏览器以不同格式存储 内容的位置。
+*  检查浏览器以各种格式存储内容的位置，这些内容是当前网页的一部分。
 
 *  评估产品的性能，以查找内存问题和呈现问题。
 
-*  使用开发环境将 DevTools 中的更改与文件系统和 Web 同步。
+*  使用开发环境同步 DevTools 中的文件更改，在本地文件系统和 Web 中的文件之间同步更改。
 
 
 <!-- ====================================================================== -->
@@ -85,7 +92,7 @@ DevTools 随即打开，在"元素"工具中突出显示右 **键单击** 的元
 
 ![DevTools 中"扩展坞"菜单的屏幕截图。](media/devtools-intro-docking-menu.msft.png)
 
-**扩展坞**向左或**** 向右，使 DevTools 与 Web 产品并排运行，并且当你通过设备仿真功能模拟移动设备时 ([是) ](device-mode/index.md)。  **停靠到左侧**，**停靠到右侧**选项与高分辨率显示效果最佳。
+**扩展坞**向左或**** 向右，使 DevTools 与 Web 产品并排运行，在模拟移动设备和设备仿真 (时[) ](device-mode/index.md)。  **停靠到左侧**，**停靠到右侧**选项与高分辨率显示效果最佳。
 
 **停靠到右侧** 是 DevTools 的默认位置：
 
@@ -136,7 +143,7 @@ DevTools 为你提供了令人惊叹的功能，可以检查、调试和更改�
    *  **更多选项卡 (**![更多选项卡图标。](media/more-tabs-icon-light-theme.png)) 按钮。
    *  **更多工具** (![更多工具"图标](media/more-tools-icon-light-theme.png) 。) 按钮。
    *  **JavaScript 错误计数器 (** ![JavaScript 错误计数器图标](media/javascript-counter-icon-light-theme.png) 。) 按钮。
-   *  **问题计数器** (![问题计数器图标。](media/issues-counter-icon-light-theme.png)) 按钮。
+   *  **问题计数器 (**![问题计数器图标。](media/issues-counter-icon-light-theme.png)) 按钮。
    *  **设置** (设置![图标。) ](media/settings-gear-icon-light-theme.png)按钮。
    *  **发送反馈** (![发送反馈图标。](media/send-feedback-icon-light-theme.png)) 按钮。
    *  **自定义和控制 DevTools (**![自定义](media/customize-devtools-icon-light-theme.png)图标。) 菜单按钮。
@@ -148,7 +155,7 @@ DevTools 为你提供了令人惊叹的功能，可以检查、调试和更改�
 
 ### <a name="inspect-tool"></a>检查工具
 
-单击"检查工具** (**![检查工具图标](media/inspect-tool-icon-light-theme.png)) "按钮时，可以选择当前网页上的某个元素。  当 **Inspect** 工具处于活动状态时，您可以将鼠标移动到网页的不同部分，获取有关页面元素的详细信息，以及显示页面元素的布局尺寸、填充和边距的多色覆盖层。
+单击" **检查工具"** (![检查工具图标](media/inspect-tool-icon-light-theme.png) 。) 按钮时，可以选择当前网页上的某个元素。  当 **Inspect** 工具处于活动状态时，您可以将鼠标移动到网页的不同部分，获取有关页面元素的详细信息，以及显示页面元素的布局尺寸、填充和边距的多色覆盖层。
 
 ![将鼠标悬停在上方时显示本文的第一个标题的"检查"工具。](media/devtools-intro-inspect-tool.msft.png)
 
@@ -224,12 +231,12 @@ DevTools 为你提供了令人惊叹的功能，可以检查、调试和更改�
 
 ### <a name="more-tabs-button"></a>"更多选项卡"按钮
 
-若要显示由于窗口过****![窄而打开但隐藏的工具，请单击"更多选项卡" (选项卡"](media/more-tabs-icon-light-theme.png)图标。) 按钮。
+若要显示由于窗口过****![窄而打开但隐藏的工具，请单击"更多选项卡" (选项卡](media/more-tabs-icon-light-theme.png)"图标。) 按钮。
 
 
 ### <a name="more-tools-button"></a>"更多工具"按钮
 
-若要向工具栏添加工具，请单击"更多**工具" (**!["工具"图标](media/more-tools-icon-light-theme.png)。) 按钮。
+若要向工具栏中添加工具，请单击"更多工具 **" (**!["工具"图标](media/more-tools-icon-light-theme.png)。) 按钮。
 
 ### <a name="javascript-errors-counter"></a>JavaScript 错误计数器
 
@@ -255,7 +262,7 @@ JavaScript 计数器按钮的工具提示**** 是 **"打开控制台"以查看 #
 
 ### <a name="settings-button"></a>设置按钮
 
-若要打开 DevTools **设置**网页，请单击"设置** (** 设置![图标](media/settings-gear-icon-light-theme.png)。) 按钮。  the **设置** page contains the following sub-pages：
+若要打开 DevTools **设置**网页，请单击"设置** (** 设置![图标](media/settings-gear-icon-light-theme.png)。) 按钮。  "**设置**"页包含以下子页面：
 
 *  首选项
 *  Workspace
@@ -274,7 +281,7 @@ JavaScript 计数器按钮的工具提示**** 是 **"打开控制台"以查看 #
 
 若要打开 **"发送反馈**"对话框，**请单击"**![发送反馈 (发送反馈"图标](media/send-feedback-icon-light-theme.png)。) 按钮。  将 **打开"发送反馈** "对话框。  输入描述所发生情况的信息，并自动包含屏幕截图。  使用 **"发送反馈** "与 DevTools 团队联系，报告问题、问题或提出建议。
 
-请参阅[联系开发人员Microsoft Edge团队](contact.md)。
+请参阅[联系 Microsoft Edge DevTools 团队](contact.md)。
 
 
 ### <a name="customize-and-control-devtools-menu"></a>自定义和控制 DevTools 菜单
@@ -285,7 +292,7 @@ JavaScript 计数器按钮的工具提示**** 是 **"打开控制台"以查看 #
 ### <a name="close-devtools-button"></a>关闭 DevTools 按钮
 
 <!-- todo: add icon -->
-单击" **关闭** DevTools ![ (关闭 DevTools"图标](media/close-devtools-icon-light-theme.png) 。单击 DevTools 右上角的) 按钮以关闭 DevTools 并使用整个窗口显示当前网页。
+单击" **关闭** DevTools ![ (关闭 DevTools](media/close-devtools-icon-light-theme.png) "图标。单击 DevTools 右上角的") "按钮以关闭 DevTools 并使用整个窗口显示当前网页。
 
 
 <!-- ====================================================================== -->
@@ -321,7 +328,6 @@ DevTools 包括以下工具。
 | **性能** 工具 | [分析运行时性能入门](evaluate-performance/index.md) |
 | **性能监视器** 工具 | [使用性能监视器工具度量页面的运行时性能](performance-monitor/performance-monitor-tool.md) |
 | **快速源** 工具 | [使用快速源工具显示或编辑源文件](quick-source/quick-source-tool.md) |
-| **录制** 器工具 | 记录、重播和衡量用户流。 <!-- (recorder/recorder-tool.md) --> |
 | **呈现** 工具 | [在呈现的页面中模拟深色或浅色方案](accessibility/preferred-color-scheme-simulation.md) |
 | **搜索** 工具 | [使用搜索工具查找页面的源文件](search/search-tool.md) |
 | **安全** 工具 | [使用安全工具了解安全问题](security/index.md) |
@@ -331,11 +337,13 @@ DevTools 包括以下工具。
 | **WebAuthn** 工具 | [模拟身份验证器并调试 WebAuthn](webauthn/index.md) |
 | **欢迎**工具 |  |
 
+<!-- | **Recorder** tool | Record, replay and measure user flows. | (recorder/recorder-tool.md) | -->
+
 
 <!-- ====================================================================== -->
 ## <a name="tool-tab-or-panel"></a>工具、选项卡或面板
 
-通常，"tool"、"tab"或"panel"可以互换使用。  在"命令菜单"中，这些工具称为 _"面板"_;例如 **，Elements 工具** 称为" **元素"** 面板。  若要切换到"**元素"** 工具，请选择"**元素"** 选项卡。 工具栏上提供了"**** 更多工具" () "按钮和"更多选项卡"按钮，这两个按钮均**** 用于选择工具（也称为_面板）。_**+**
+通常，"tool"、"tab"或"panel"可以互换使用。  在"命令菜单"中，这些工具称为 _"面板"_;例如 **，Elements 工具** 称为" **元素"** 面板。  若要切换到"**元素"** 工具，请选择"**元素"** 选项卡。 "更多工具"**** () 按钮和列表，工具栏上还有"更多选项卡"按钮，这两个按钮**** 均用于选择工具（也称为_面板）。_**+**
 
 可以自定义每个工具，并且工具的内容可以根据上下文进行更改。       
 
@@ -343,30 +351,34 @@ DevTools 包括以下工具。
 <!-- ====================================================================== -->
 ## <a name="about-panel-and-drawer-tools"></a>关于面板和工具箱工具
 
-"更多工具" () 中列出的**** 工具可以显示为主工具栏 (上的"面板"工具) 或" ("工具栏) 。**+**  在 **"命令菜单**"中，每个工具都标记为"面板 **"工具或** "箱 **式工具** "。  但是，您可以将它们添加到主工具栏或"箱"工具栏中，您可以使用以下任一方法打开它们或在两个工具栏之间移动它们。
+"更多工具" () 中列出的**** 工具可以显示为主工具栏 (上的"面板"工具) 或" ("工具栏上的") "。**+**  在 **"命令菜单**"中，每个工具都标记为"面板 **"工具或** "箱 **式工具** "。  但是，您可以将它们添加到主工具栏或"箱"工具栏中，您可以使用以下任一方法打开它们或在两个工具栏之间移动它们。
 
-使用 **"更多工具** () **+** "菜单选择任何"面板"工具或"箱"工具。  " **更多工具"** 菜单将显示在多个位置：
+使用 **"更多工具** (**+**) "菜单选择任何面板工具或"箱"工具。  " **更多工具"** 菜单将显示在多个位置：
 
 *  在 DevTools 右上角的主工具栏上，单击"自定义和控制 **DevTools** (![自定义和控制 DevTools ****](media/customize-and-control-devtools-icon-light-mode.png)) "按钮，将鼠标悬停在"更多工具"命令上，然后选择工具。
 
 *  在 DevTools 菜单顶部的主工具栏上 (_面板_ 工具通常) 。
 
-*  在" **箱** "工具栏 (_通常位于"_ 箱"工具) 。
+*  在" ** (** "工具栏上，通常显示 _"_) "。
 
 | 任务 | 步骤 |
 | --- | --- |
-| 在 DevTools 顶部的主工具栏上打开工具 | 在 DevTools 顶部的主工具栏上，单击"更多工具 **" (** **+**) 然后选择一个工具。 |
+| 在 DevTools 顶部的主工具栏上打开工具 | 在 DevTools 顶部的主工具栏上，单击"更多工具 **" () ** **+** 然后选择一个工具。 |
 | 打开"箱"工具栏上的工具 | 当 DevTools 具有焦点时，按 **Esc** 显示"箱"。  在"箱"工具栏上，单击"其他 **工具** (**+**) "工具"，然后选择工具。 |
 | 将工具从"箱"工具栏移动到主工具栏 | 当 DevTools 具有焦点时，按 **Esc** 显示"箱"。  在"箱"工具栏上，右键单击工具的选项卡，然后选择" **移动到顶部"**。 |
 | 将工具从主工具栏移动到工具箱工具栏 | 在主工具栏上，右键单击工具的选项卡，然后选择" **移动到底部"**。 |
 | 在其默认工具栏中打开工具 | **** 当 DevTools 具有`Control``P``Shift`++焦点时，按 (Windows、Linux`P` `Command`+`Shift`+) 或 (macOS 命令) 。  键入工具的名称，然后选择该工具。 |
 
-有关面板工具、箱式工具以及一些其他工具（如检查工具和设备Emulator的概述，请参阅 [DevTools 概述](index.md)。
+有关面板工具、箱式工具和其他一些工具（如检查工具和设备Emulator的概述，请参阅 [DevTools 概述](index.md)。
 
 除面板工具和箱工具外，DevTools 还包括以下工具：
 *  **Inspect 工具**。  请参阅 [将鼠标悬停在网页上方，使用检查工具检测辅助功能问题](accessibility/test-inspect-tool.md)。
 *  设备**Emulator**。  请参阅 [模拟移动设备 (设备仿真) ](device-mode/index.md)。
-*  命令 **菜单**。  请参阅[使用开发人员工具Microsoft Edge菜单运行命令](command-menu/index.md)。
+*  命令 **菜单**。  请参阅 [Run commands with the Microsoft Edge DevTools Command Menu](command-menu/index.md)。
+
+### <a name="see-also"></a>另请参阅
+
+* [关于工具列表](about-tools.md)
 
 
 <!-- ====================================================================== -->
@@ -387,7 +399,7 @@ DevTools 提供了许多要用于 Web 产品的特性和功能。  可以通过�
 
 命令菜单允许你键入命令以在 DevTools 中显示、隐藏或运行功能。  打开命令菜单后，输入单词 **changes**，然后选择" **箱： 显示更改"**。
 
-**更改**工具随即打开，这在编辑 CSS 时非常有用。  在这种情况下，"命令菜单"提供了一种快速替代方法，选择"更多**工具" (**...) 然后选择"****`.js`更改"，或在"源"工具中编辑文件，然后右**** 键单击并选择"本地修改 **"**。
+**更改**工具随即打开，这在编辑 CSS 时非常有用。  在这种情况下，命令菜单提供了一种快速替代方法，选择"更多**工具" (**...) 然后选择"****`.js`更改"，或在"源"工具中编辑文件，然后右键单击**** 并选择"本地修改 **"**。
 
 键入 后 `changes`，命令菜单将显示选项：
 
@@ -404,9 +416,9 @@ DevTools 提供了许多要用于 Web 产品的特性和功能。  可以通过�
 ## <a name="customizing-devtools"></a>自定义 DevTools
 
 <!-- todo: add icon -->
-可以自定义 DevTools 以满足工作方式的需求。  若要更改设置，请单击**设置 (右上角**的齿轮图标) ，或按 `F1`。
+可以自定义 DevTools 以满足工作方式的需求。  若要更改设置，请单击**设置** (右上角的齿轮图标，) 按 `F1`。
 
-在 **设置** > **Preferences** 页面中，可以更改 DevTools 的几个部分。  例如，可以使用 **"匹配浏览器语言** "设置在 DevTools 中使用浏览器中使用的相同语言。  有关另一个示例，请使用 **Theme** 设置更改 DevTools 的主题。
+在 **设置** > **Preferences** 页面中，你可以更改 DevTools 的几个部分。  例如，可以使用 **"匹配浏览器语言** "设置在 DevTools 中使用浏览器中使用的相同语言。  有关另一个示例，请使用 **Theme** 设置更改 DevTools 的主题。
 
 ![DevTools 中所有设置的屏幕截图。](media/devtools-intro-all-settings.msft.png)
 
@@ -432,18 +444,19 @@ DevTools 团队在 DevTools 中提供新功能作为_实验_。  可以打开或
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [HTML 和 DOM 入门](beginners/html.md)
-*  [检查并更改当前网页](dom/index.md)
-*  [模拟产品在不同设备上的行为方式](device-mode/index.md)
-*  [检查、调整和更改元素的样式](./inspect-styles/edit-fonts.md)
-*  [调试 JavaScript](./javascript/index.md)
-*  [实时主机](console/index.md)
-*  [辅助功能、性能、兼容性和安全问题](./issues/index.md)
-*  [检查网络流量](./network/index.md)
-*  [检查浏览器存储内容的位置](./storage/sessionstorage.md)
-*  [评估性能](evaluate-performance/index.md)
-*  [内存问题](memory-problems/index.md)
-*  [呈现问题](./rendering-tools/index.md)
-*  [使用开发环境](./sources/index.md)
-*  [将 DevTools 中的更改与文件系统同步](./workspaces/index.md)
-*  [从 Web 覆盖文件](./javascript/overrides.md)
+* [关于工具列表](about-tools.md)
+* [HTML 和 DOM 入门](beginners/html.md)
+* [检查并更改当前网页](dom/index.md)
+* [模拟产品在不同设备上的行为方式](device-mode/index.md)
+* [检查、调整和更改元素的样式](./inspect-styles/edit-fonts.md)
+* [调试 JavaScript](./javascript/index.md)
+* [实时主机](console/index.md)
+* [辅助功能、性能、兼容性和安全问题](./issues/index.md)
+* [检查网络流量](./network/index.md)
+* [检查浏览器存储内容的位置](./storage/sessionstorage.md)
+* [评估性能](evaluate-performance/index.md)
+* [内存问题](memory-problems/index.md)
+* [呈现问题](./rendering-tools/index.md)
+* [使用开发环境](./sources/index.md)
+* [将 DevTools 中的更改与文件系统同步](./workspaces/index.md)
+* [从 Web 覆盖文件](./javascript/overrides.md)

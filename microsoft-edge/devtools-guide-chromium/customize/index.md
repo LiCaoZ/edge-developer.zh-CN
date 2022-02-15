@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 32c15252d5b492cfa3a8971be4300dec11994eac
+ms.sourcegitcommit: 2e0ec25e3cfc01b58fdddd5f4ac270632cb9b962
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "12348254"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,7 +36,7 @@ ms.date: 05/04/2021
 
 **** > 设置**Preferences** 包含许多用于自定义 DevTools 的选项。
 
-若要打开设置，请在 DevTools 中单击**设置图标**![ (设置图标](../media/settings-icon-dark.msft.png)。) 。  或者，当 DevTools 具有焦点时，按 `F1`。
+若要打开设置，请在 DevTools 中单击**设置图标 (** 设置![图标](../media/settings-icon-dark.msft.png)。) 。  或者，当 DevTools 具有焦点时，按 `F1`。
 
 :::image type="content" source="../media/customize-settings-preferences.msft.png" alt-text="“设置”。" lightbox="../media/customize-settings-preferences.msft.png":::
 
@@ -40,7 +46,7 @@ ms.date: 05/04/2021
 
 在 **DevTools** 底部的"箱"工具栏中，可以选择要显示的工具。
 
-若要打开 (或关闭) **收银机，** 请按 `Escape`。
+若要打开 (或关闭) **，** 请按 `Escape`。
 
 :::image type="content" source="../media/customize-drawer-open.msft.png" alt-text="The Drawer." lightbox="../media/customize-drawer-open.msft.png":::
 
@@ -68,11 +74,11 @@ ms.date: 05/04/2021
 <!-- ====================================================================== -->
 ## <a name="open-and-close-tools"></a>打开和关闭工具
 
-若要简化 DevTools 接口，默认情况下不会打开许多工具。  若要在主面板或"箱"中打开**** 工具，请单击"**** 更多工具" ("更多工具"![](../media/open-tab-icon.png)。) 选项卡右侧单击按钮，然后从列表中选择一个工具。
+若要简化 DevTools 接口，默认情况下不会打开许多工具。  若要在主******** ![](../media/open-tab-icon.png) 面板或"箱"中打开工具，请单击"更多工具" ("更多工具"。) 选项卡右边的") "按钮，然后从列表中选择一个工具。
 
 :::image type="content" source="../media/open-tool-in-main-panel-or-drawer.png" alt-text="&quot;更多工具 (+) &quot;按钮打开新工具" lightbox="../media/open-tool-in-main-panel-or-drawer.png":::
 
-若要关闭工具，请选择"****![关闭 (工具](../media/close-tab-icon.png)"。) "选项卡中的"关闭工具"按钮。
+若要关闭工具，**请选择"**![关闭 (工具](../media/close-tab-icon.png)"。) "选项卡中的"关闭工具"按钮。
 
 :::image type="content" source="../media/close-tool-in-main-panel-or-drawer.png" alt-text="选项卡的&quot;关闭&quot;按钮" lightbox="../media/close-tool-in-main-panel-or-drawer.png":::
 
@@ -96,9 +102,15 @@ ms.date: 05/04/2021
 <!-- ====================================================================== -->
 ## <a name="restore-default-settings"></a>还原默认设置
 
-若要还原默认主题、位置、工具**** > 顺序和任何其他自定义设置，请选择"设置**默认值** > 并**刷新"**。
+若要还原默认主题、放置位置、工具**** > 顺序和任何其他自定义设置，请选择"设置**默认值** > 和**刷新"**。
 
 :::image type="content" source="../media/restore-default-settings.png" alt-text="还原默认设置。" lightbox="../media/restore-default-settings.png":::
+
+
+<!-- ====================================================================== -->
+## <a name="customize-keyboard-shortcuts"></a>自定义键盘快捷方式
+
+请参阅 [自定义键盘快捷方式](../customize/shortcuts.md)。
 
 
 <!-- ====================================================================== -->

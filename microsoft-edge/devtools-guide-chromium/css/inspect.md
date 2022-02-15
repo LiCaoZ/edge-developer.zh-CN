@@ -6,26 +6,42 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/16/2021
-ms.openlocfilehash: 6abe78e34c838a1a5a141beb8d63f7cc8611cdf9
-ms.sourcegitcommit: 392c0c34ca43bb2b14f93ff4e24b3713ac505013
+ms.openlocfilehash: c0c129d224d60897b650e24a7a638ccbc9967b21
+ms.sourcegitcommit: 2e0ec25e3cfc01b58fdddd5f4ac270632cb9b962
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "12339178"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "12348279"
 ---
 # <a name="analyze-pages-using-the-inspect-tool"></a>使用检查工具分析页面
 
-本文演示如何使用 **Inspect** 工具预览有关元素的信息，以及如何在当前文档中选择元素。  若要立即试用 **Inspect** 工具，请在阅读本文时[](https://microsoftedge.github.io/Demos/devtools-inspect)，打开其他选项卡或窗口中的"检查演示"页。
+使用 **Inspect** 工具查看有关已呈现网页中的项目的信息。
+
+* 当 **Inspect 工具** 处于活动状态时， _将鼠标_ 悬停在网页中的项目上，DevTools 在网页上添加信息覆盖信息和网格突出显示。
+
+* 当您单击__ 网页中的项目时，"元素"工具中的 DOM 树**** 将自动更新为显示与所呈现网页中单击的项目对应的 DOM 元素，以及"样式"选项卡中的 CSS 样式。****
 
 
 <!-- ====================================================================== -->
 ## <a name="activating-the-inspect-tool"></a>激活 Inspect 工具
 
-" **检查** 工具"按钮位于 DevTools 的左上角。  选择" **检查工具"** 按钮时，该按钮将变为蓝色，指示 **"检查** "工具处于活动状态。
+若要试用 **Inspect 工具** ：
 
-![DevTools 左上角的"检查工具"按钮。](images/inspect-tool-button.msft.png)
+1. 打开新 [窗口或](https://microsoftedge.github.io/Demos/devtools-inspect) 选项卡中的"检查演示"页。
 
-或者，按 `Control``C``Shift`++ (Windows、Linux) 或 `Command``Shift`++`C` (macOS) ，以激活 **Inspect** 工具。
+1. 右键单击演示网页中的任意位置， **然后选择"检查**"以打开 DevTools。
+
+1. 在 DevTools 的左上角，单击****!["检查工具 (检查工具图标](../media/inspect-tool-icon-light-theme.png)。) 按钮。  或者，当 DevTools `Control`++`Shift``C` 具有焦点时，按 (Windows、Linux) 或`C` `Command`+`Shift`+ (macOS) 。
+
+   ![DevTools 左上角的"检查工具"按钮。](images/inspect-tool-button.msft.png)
+
+   按钮图标将蓝色![](../media/inspect-tool-icon-blue-light-theme.png) ("检查"图标。) ，指示 **"** 检查"工具处于活动状态。
+
+1. 在呈现的网页中，将鼠标悬停在项目上方并观看信息覆盖和网格突出显示。
+
+1. 单击呈现的网页中的项目。
+
+   "元素"工具中的 DOM 树会自动更新，以显示与呈现网页中单击的项目相对应的 DOM 元素，以及"样式"选项卡中的 **CSS 样式。** **** 在网页中单击还会在网页**中**关闭"检查"模式。
 
 
 <!-- ====================================================================== -->

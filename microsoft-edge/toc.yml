@@ -69,7 +69,25 @@
               displayName: what's new
         - name: 工具
           items:
-            - name: 元素工具
+            - name: 关于工具列表
+              href: devtools-guide-chromium/about-tools.md
+            - name: 检查工具
+              items:
+                - name: 使用检查工具分析页面
+                  href: devtools-guide-chromium/css/inspect.md
+                  displayName: Inspect tool
+            - name: 设备仿真
+              items:
+                - name: 模拟移动设备（设备仿真）
+                  href: devtools-guide-chromium/device-mode/index.md
+                  displayName: 'Device Emulation, Device Emulator, Device Mode'
+                - name: 模拟双屏幕和可折叠设备
+                  href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
+                  displayName: 'Device Emulation, Device Emulator, Device Mode'
+                - name: 模拟和测试其他浏览器
+                  href: devtools-guide-chromium/device-mode/testing-other-browsers.md
+                  displayName: 'Device Emulation, Device Emulator, Device Mode'
+            - name: 适用于 CSS、HTML 和 DOM 的元素工具
               items:
                 - name: CSS 功能参考
                   href: devtools-guide-chromium/css/reference.md
@@ -127,7 +145,7 @@
                 - name: 筛选控制台消息
                   href: devtools-guide-chromium/console/console-filters.md
                   displayName: Console tool
-            - name: 源工具
+            - name: 源工具，用于 JavaScript 调试
               items:
                 - name: 源工具概述
                   href: devtools-guide-chromium/sources/index.md
@@ -159,22 +177,6 @@
                 - name: 将预处理的代码映射到源代码
                   href: devtools-guide-chromium/javascript/source-maps.md
                   displayName: Sources tool
-            - name: 检查工具
-              items:
-                - name: 使用检查工具分析页面
-                  href: devtools-guide-chromium/css/inspect.md
-                  displayName: Inspect tool
-            - name: 设备仿真
-              items:
-                - name: 模拟移动设备（设备仿真）
-                  href: devtools-guide-chromium/device-mode/index.md
-                  displayName: 'Device Emulation, Device Emulator, Device Mode'
-                - name: 模拟双屏幕和可折叠设备
-                  href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
-                  displayName: 'Device Emulation, Device Emulator, Device Mode'
-                - name: 模拟和测试其他浏览器
-                  href: devtools-guide-chromium/device-mode/testing-other-browsers.md
-                  displayName: 'Device Emulation, Device Emulator, Device Mode'
             - name: 3D 视图工具
               items:
                 - name: 使用 3D 视图工具导航 z 索引、DOM 和层
@@ -185,7 +187,7 @@
                 - name: 检查动画
                   href: devtools-guide-chromium/inspect-styles/animations.md
                   displayName: Animations tool
-            - name: 应用程序工具
+            - name: 用于存储的应用程序工具
               items:
                 - name: 查看、编辑和删除 Cookie
                   href: devtools-guide-chromium/storage/cookies.md
@@ -341,11 +343,14 @@
                 - name: 模拟身份验证器并调试 WebAuthn
                   href: devtools-guide-chromium/webauthn/index.md
                   displayName: WebAuthn tool
-        - name: 命令菜单
+        - name: 命令菜单和键盘快捷方式
           items:
             - name: 在“命令”菜单中运行命令
               href: devtools-guide-chromium/command-menu/index.md
               displayName: Command Menu
+            - name: 键盘快捷方式
+              href: devtools-guide-chromium/shortcuts/index.md
+              displayName: Keyboard shortcuts
         - name: 设置和自定义 UI
           items:
             - name: 自定义 DevTools
@@ -466,9 +471,6 @@
         - name: DevTools 的示例代码
           href: devtools-guide-chromium/sample-code/sample-code.md
           displayName: 'sample code, demo'
-        - name: 键盘快捷方式
-          href: devtools-guide-chromium/shortcuts/index.md
-          displayName: Keyboard shortcuts
         - name: 在 Internet Explorer 模式（IE 模式）中使用开发工具
           href: devtools-guide-chromium/ie-mode/index.md
           displayName: IE mode
