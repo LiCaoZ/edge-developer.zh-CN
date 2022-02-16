@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 1bf5415e999cbef603af445d338183343c53de4c
-ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.openlocfilehash: 0cf133975ca2c480281603d466e9c0f3e5da4e1a
+ms.sourcegitcommit: f1676f5c435e7272af5b552190e4641c771351b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "12346601"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "12350627"
 ---
 <!-- Copyright Kayce Basques
 
@@ -64,7 +64,7 @@ ms.locfileid: "12346601"
    :::image type="content" source="../media/network-tutorial/windows.msft.png" alt-text="The demo in one window and this tutorial in a different window." lightbox="../media/network-tutorial/windows.msft.png":::
    -->
 
-1. 若要[打开 DevTools](../open/index.md)，`Control`++`Shift``J`请按 (Windows、Linux) 或 (`J` `Command`+`Option`+macOS) 。  将 **打开控制台** 工具。
+1. 若要[打开 DevTools](../open/index.md)，请按 `Control`++`Shift``J` (Windows、Linux) 或`J` `Command`+`Option`+ (macOS) 。  将 **打开控制台** 工具。
 
    :::image type="content" source="../media/network-glitch-console.msft.png" alt-text="控制台。" lightbox="../media/network-glitch-console.msft.png":::
 
@@ -84,7 +84,7 @@ ms.locfileid: "12346601"
 
 查看页面导致的网络活动：
 
-1. 刷新网页。  网络面板在**网络日志**中记录所有网络活动。
+1. 刷新网页。  网络 **面板** 在网络日志中记录所有 **网络活动**。
 
    :::image type="content" source="../media/network-glitch-network.msft.png" alt-text="网络日志。" lightbox="../media/network-glitch-network.msft.png":::
 
@@ -96,16 +96,16 @@ ms.locfileid: "12346601"
 
     *  **类型**。  资源类型。
 
-    *  **发起程序**。  资源请求的原因。  CHoosing a link in the Initiator column takes you to the source code thatcaused the request.
+    *  **发起程序**。  资源请求的原因。  单击"发起者"列中 **的链接** 将进入导致请求的源代码。
 
     *  **时间**。  请求的持续时间。
 
-    *  **粘滞键**。  请求的不同阶段的图形表示形式。  若要显示细目，请将鼠标悬停在瀑布上。
+    *  **粘滞键**。  请求的不同阶段的图形表示形式。  若要显示细目，请将鼠标悬停在瀑布 **上**。
 
     > [!NOTE]
-    > 网络日志上方的图形称为“概述”。  本教程不会使用“概述”图，因此可以将其隐藏。  请参阅 [隐藏概述窗格](./reference.md#hide-the-overview-pane)。
+    > 网络日志**上方的图形****称为概述。**  本教程中不会使用 **"** 概述"图，因此可以隐藏它。  请参阅 [隐藏概述窗格](./reference.md#hide-the-overview-pane)。
 
-   打开 DevTools 后，它会在网络日志中记录网络活动。
+   打开 DevTools 后，它会在网络日志中记录 **网络活动**。
 
 1. 若要演示这一点，请首先查看**网络日志** 的底部，并记下上一次活动。
 
@@ -139,7 +139,7 @@ ms.locfileid: "12346601"
 
    :::image type="content" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="选择&quot;慢速 3G&quot;。" lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
 
-1. 长按" **重新加载** (![重新加载](../media/refresh-icon.msft.png) "。) 选择"空缓存"和" **硬重新加载"**。
+1. 长按 **"重新加载**![ (重新加载](../media/refresh-icon.msft.png)"。) 选择"空缓存"和"**硬重新加载"**。
 
 :::image type="content" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="空缓存和硬重新加载。" lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
 
@@ -167,7 +167,7 @@ ms.locfileid: "12346601"
 
    :::image type="content" source="../media/network-glitch-network-screenshots-first.msft.png" alt-text="第一张屏幕截图期间发生的网络活动。" lightbox="../media/network-glitch-network-screenshots-first.msft.png":::
 
-1. 单击 (![网络设置](../media/settings-icon.msft.png) "。) 并关闭" **捕获** 屏幕截图"复选框以关闭 **"屏幕截图"** 窗格。
+1. 单击 (![网络设置](../media/settings-icon.msft.png) "。) 并关闭"捕获屏幕截图 **"复选框以** 关闭 **"屏幕截图"** 窗格。
 
 1. 再次刷新页面。
 
@@ -192,13 +192,13 @@ ms.locfileid: "12346601"
    :::image type="content" source="../media/network-glitch-network-resources-response.msft.png" alt-text="响应面板。" lightbox="../media/network-glitch-network-resources-response.msft.png":::
 
     > [!TIP]
-    > **** 缩小文件时![](../media/format-icon.msft.png)，选择"设置 (格式"。) "响应"面板底部的"设置格式"按钮，以重新设置文件**** 内容的格式，提高可读性。
+    > **** 缩小文件时![](../media/format-icon.msft.png)，选择"设置 (格式"。) 面板底部的"设置格式"按钮以重新设置文件内容的格式，实现**** 可读性。
 
 1. 选择 **计时** 面板。  将显示资源的网络活动的细分。
 
    :::image type="content" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="&quot;计时&quot;面板。" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
 
-1. 单击 **"** 关闭 (![关闭](../media/close-icon.msft.png) "。) 再次查看网络日志。
+1. 单击 **"** (![关闭](../media/close-icon.msft.png) "。) 再次查看网络日志。
 
    :::image type="content" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="&quot;关闭&quot;按钮。" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
 
@@ -212,7 +212,7 @@ ms.locfileid: "12346601"
 
 <!--TODO: add cache policies section when available  -->
 
-1. 选择 **"搜索**![ (搜索"](../media/search-icon.msft.png)。) 。  搜索窗格将打开到网络日志的左侧。
+1. 选择 **"搜索**![ (搜索"。](../media/search-icon.msft.png)) 。  搜索窗格将打开到网络日志的左侧。
 
    :::image type="content" source="../media/network-glitch-network-search-empty.msft.png" alt-text="&quot;搜索&quot;窗格。" lightbox="../media/network-glitch-network-search-empty.msft.png":::
 
@@ -268,7 +268,7 @@ DevTools 提供了许多工作流，用于筛选出与当前任务不相关的�
 
    :::image type="content" source="../media/network-glitch-network-filter-file-type-css.msft.png" alt-text="只显示 CSS 文件。" lightbox="../media/network-glitch-network-filter-file-type-css.msft.png":::
 
-1. 若要同时显示脚本，请长按 `Control` (Windows、Linux) 或 `Command` (macOS) ，然后单击 **"JS"**。
+1. 若要同时显示脚本，`Control`请长按 (Windows、Linux) 或 `Command` (macOS) ，然后单击 **JS**。
 
    :::image type="content" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="只显示 CSS 和 JS 文件。" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
 
