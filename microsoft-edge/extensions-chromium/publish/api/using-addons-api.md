@@ -6,17 +6,17 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/19/2021
-ms.openlocfilehash: f7d223048b2adf4b47b913260b7dff393a1aa460
-ms.sourcegitcommit: 992cdaff8073121ea8e9b4d3e1eeab7340b4ec1f
+ms.openlocfilehash: 4603e40aa8736caf94f5542b9b9757d32b157bd6
+ms.sourcegitcommit: 9196a557626d92bd22cec4a604e9107ec2bfe709
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "12346955"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "12351054"
 ---
 # <a name="using-the-microsoft-edge-add-ons-api-in-private-preview"></a>使用 Microsoft Edge 外接程序 API (在个人预览版中)
 
 > [!NOTE]
-> 加载项Microsoft Edge API 目前处于个人预览阶段。  " **发布 API** "页仅对私人预览版的参与者在合作伙伴中心显示。  加载项MICROSOFT EDGE API 正在积极开发中，路线图根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
+> Microsoft Edge加载项 API 目前处于个人预览阶段。  " **发布 API** "页仅对私人预览版的参与者在合作伙伴中心显示。  加载项MICROSOFT EDGE API 正在积极开发中，路线图根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
 
 本文与 Microsoft Edge [加载项 API](addons-api-reference.md) 参考一起概述了建议Microsoft Edge加载项 API。  我们期待就建议的 API 合同提供建议和反馈。  请将你的反馈作为有关 [加载项 API 的问题提交](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API])。
 
@@ -33,7 +33,7 @@ ms.locfileid: "12346955"
 | _package_ | 包含`.zip`加载项Microsoft Edge包。 |
 | _product_ | 一Microsoft Edge扩展或主题。  也称为加载项Microsoft Edge_加载项_。 |
 | _产品 ID_ | 需要发布其草稿的产品的产品 ID。  产品 ID 是一个 128 位 GUID，与合作伙伴中心的产品相关联。  例如：`d34f98f5-f9b7-42b1-bebb-98707202b21d`。 |
-| _提交_ | 要提交到合作伙伴中心的现有产品的更新。  产品每次更新都是提交，`In Draft``In Review``In the Store`无论状态是 、还是 (已发布) 。 |
+| _提交_ | 要提交到合作伙伴中心的现有产品的更新。  产品每次更新都是提交`In Draft``In Review``In the Store`，无论状态是 、还是 (已发布) 。 |
 
 
 <!-- ====================================================================== -->
@@ -57,7 +57,7 @@ ms.locfileid: "12346955"
 1. 记下客户端 **ID**、 **客户端密码** 和 **访问令牌 URL**。  你将在下一步使用这些值，获取访问令牌。
 
 > [!IMPORTANT]
-> 请务必立即记下客户端密码，因为它仅在启用或续订 API 密码（即 (API 凭据之后）立即) 。
+> 请务必立即记下客户端密码，因为它仅在启用或续订 API 密码后（即 (API 凭据后立即) 。
 
 
 <!-- ====================================================================== -->
@@ -135,7 +135,7 @@ Body content: the package file to upload
 
 1. 选择想要其产品 ID 的扩展。
 
-   将 **打开"扩展概述** "页。  产品 ID 显示在页面中。   (产品 ID 在地址栏中的 URL `microsoftedge/` `/packages`中也显示为 GUID，介于 和 .) 
+   将 **打开"扩展概述** "页。  产品 ID 显示在页面中。   (产品 ID 还会在地址栏中的 URL `microsoftedge/` `/packages`中显示为 GUID，介于 和 .) 
  
 1. 在" **扩展标识** "部分 (地址栏) ，选择并复制 **产品 ID**。
 
@@ -187,7 +187,7 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 <!-- ====================================================================== -->
 ## <a name="publishing-the-submission"></a>发布提交
 
-使用此 API 将产品的当前草稿发布到 Microsoft Edge 加载项网站。
+使用此 API 将产品的当前草稿发布到Microsoft Edge加载项网站。
 
 ```rest
 Endpoint: /v1/products/$productID/submissions
@@ -202,7 +202,7 @@ Body content: Notes for certification, in JSON format
 > curl \
 -H "Authorization: Bearer $TOKEN" \
 -X POST \
--d { notes=\"text value\" } \
+-d '{ "notes"="text value" }' \
 -v \
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions
 ```
@@ -231,7 +231,8 @@ Header Parameters: Authorization: Bearer $TOKEN
 > curl \
 -H "Authorization: Bearer $TOKEN" \
 -X GET \
--v \ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/operations/{operationID}
+-v \
+https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/operations/{operationID}
 ```
 
 ### <a name="see-also"></a>另请参阅
