@@ -1,20 +1,20 @@
 ---
-title: 了解 WebView2 SDK 版本
-description: 用于 WebView2 Microsoft Edge模型。
+title: 了解不同的 WebView2 SDK 版本
+description: 了解用于 WebView2 的不同 WebView2 SDK Microsoft Edge模型。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 08/03/2021
-ms.openlocfilehash: 03d015cd770a5c1bfb76ad32d5929f26700da073
-ms.sourcegitcommit: ae41e2c0ca42fb7eac73824c828305c7b13b4203
+ms.openlocfilehash: 87426bb927c3919763e932ad974da5f03b335a8d
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "12345623"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432563"
 ---
-# <a name="understand-webview2-sdk-versions"></a>了解 WebView2 SDK 版本
+# <a name="understand-the-different-webview2-sdk-versions"></a>了解不同的 WebView2 SDK 版本
 
 WebView2 SDK NuGet包同时包含发布包和预发行版包。  将预发行版 SDK 与预览频道一Microsoft Edge，或将发布 SDK 与 WebView2 运行时一同使用。
 
@@ -38,13 +38,13 @@ _发布_ SDK 包仅包含稳定的 API，而不包含实验性 API。  在开发
 
 SDK _预发布包_ 是 SDK 发布包的超集，具有更多实验性 [API 的方法签名](#experimental-apis)。  预览频道提供实验性 WebView2 API 的实现。  实验性 API 可能会根据你的反馈发生变化。  避免使用 SDK 预发布包生成生产应用。
 
-有关将应用临时指向预览频道（而不是默认指向 WebView2 运行时）的信息，请参阅切换到预览频道以测试即将推出的 [API 和功能](../how-to/set-preview-channel.md)。
+有关将应用临时指向预览频道而不是默认指向 WebView2 运行时的信息，请参阅测试 [即将推出的 API 和功能](../how-to/set-preview-channel.md)。
 
 
 <!-- ====================================================================== -->
 ## <a name="use-a-release-version-of-the-sdk-along-with-the-runtime"></a>将 SDK 的发行版与运行时一同使用
 
-当你使用 WebView2 _SDK 发布_包时，请使用开发客户端上的 WebView2 Evergreen _Runtime_，而不是使用Microsoft Edge预览通道。  默认情况下，WebView2 应用面向运行时，而不是Microsoft Edge。  根据设计，Microsoft Edge Stable 渠道不支持 WebView2。
+使用 WebView2 _SDK 发布_包时，请使用开发客户端上的 WebView2 Evergreen _Runtime_，而不是使用 Microsoft Edge 预览频道。  默认情况下，WebView2 应用面向运行时，而不是Microsoft Edge。  根据设计，Microsoft Edge Stable 渠道不支持 WebView2。
 
 SDK _发布_ 包包含所有稳定的 Win32 C/C++ 和 .NET API，并且不包括实验性 API 的方法签名。  在 WebView2 运行时的相同或更高的内部版本号中，SDK 发布包中所有 API 都完全受支持。
 
@@ -52,13 +52,13 @@ SDK 发布包包含以下组件：
 *  [Win32 C/C++ API](/microsoft-edge/webview2/reference/win32)。
 *  .NET API：  [WPF](/dotnet/api/microsoft.web.webview2.wpf)、 [WinForms](/dotnet/api/microsoft.web.webview2.winforms) 和 [Core](/dotnet/api/microsoft.web.webview2.core)。
 
-有关自动更新 Evergreen Runtime 的信息，请参阅分发 [WebView2 应用和 WebView2 运行时](./distribution.md)。
+有关自动更新 Evergreen Runtime 的信息，请参阅分发 [应用和 WebView2 运行时](distribution.md)。
 
 
 <!-- ====================================================================== -->
 ## <a name="release-cadence"></a>版本节奏
 
-新版本的 WebView2 SDK 的发布与 Microsoft Edge 浏览器的一般节奏相同，大约每四周发布一次。
+新版本的 WebView2 SDK 的发布常规节奏与 Microsoft Edge 相同，大约每四周发布一次。
 
 
 <!-- ====================================================================== -->
@@ -72,7 +72,7 @@ SDK 发布包包含以下组件：
 <!-- ====================================================================== -->
 ## <a name="forward-compatibility-of-apis"></a>API 的向前兼容性
 
-WebView2 _版本_ SDK 自版本 1 以来一直 (，即 SDK [版本 1.0.622.22](../release-notes.md#1062222)) 。
+WebView2 _版本_ SDK 自版本 1（即 SDK 版本 [1.0.622.22](../release-notes.md#1062222) (以来一直) 。
 你可以更新 WebView2 应用以使用 SDK 最新版本的最新 API。  你的应用将继续在客户端上运行，因为客户端自动具有最新的 WebView2 Evergreen Runtime。
 
 _SDK 发布_包中的 WebView2 API 稳定且向前兼容。  使用与引入 API 的 SDK 内部版本号相同或更高的内部版本号的 WebView2 运行时时，WebView2 API 可正常工作。  内部版本号是 Webview2 SDK 的四部分版本号的第三部分，以及 Microsoft Edge 和 WebView2 运行时的四部分版本号。
@@ -109,7 +109,7 @@ WebView2 团队正在寻求有关实验性 WebView2 API 的反馈，这些 API �
 
 在 Evergreen 分发方法中，客户端的 WebView2 运行时将自动更新到最新版本。  但是，用户或 IT 管理员可能会选择阻止自动更新 WebView2 运行时。  在客户端上生成的过期运行时可能会导致使用最新 SDK 中的新 API 的更新的 WebView2 应用出现兼容性问题。
 
-如果客户端上阻止更新 WebView2 运行时，请确保你知道应用所需的 [WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) 运行时的最低内部版本号。  支持 SDK 版本 616 版本 616 (版本所需的最低运行时版本) 低于最新运行时版本。
+如果客户端上阻止更新 WebView2 运行时，请确保你知道应用所需的 [WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) 运行时的最低内部版本号。  支持 SDK 版本 616 版本 616 (版本所需的最低运行时版本) 比最新运行时版本较早。
 最新运行时支持最新 SDK 版本内的所有 API。  
 
 若要检查 SDK 的特定内部版本号与运行时或预览Microsoft Edge之间的兼容性，请参阅 [WebView2 SDK 发行说明](../release-notes.md)。

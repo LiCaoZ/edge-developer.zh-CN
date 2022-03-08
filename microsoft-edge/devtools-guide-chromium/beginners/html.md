@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/06/2021
+ms.openlocfilehash: 5d929c8cb5905d4eb775a908370c50d7093b2152
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430897"
 ---
 <!-- Copyright Katherine Jackson
 
@@ -184,7 +190,7 @@ ms.date: 08/06/2021
 
    :::image type="content" source="media/beginners-html-edit2.msft.png" alt-text="将节点更新为 HTML。" lightbox="media/beginners-html-edit2.msft.png":::
 
-1. 按`Control`+`Enter` (Windows、Linux) 或 `Command`+`Enter` (macOS) 保存更改，或在框外选择。 更改将自动显示在页面实时视图中。 文本 `Your site!` 已替换为新内容。
+1. 按 `Ctrl`+`Enter` (Windows、Linux) 或 `Command`+`Enter` (macOS) 保存更改，或在框外选择。 更改将自动显示在页面实时视图中。 文本 `Your site!` 已替换为新内容。
 
    :::image type="content" source="media/beginners-html-edit3.msft.png" alt-text="新内容会立即显示在页面上。" lightbox="media/beginners-html-edit3.msft.png":::
 
@@ -268,7 +274,7 @@ ms.date: 08/06/2021
 <!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 
-*  完成此系列中的下一教程 [CSS](css.md) 入门，了解如何设置页面样式，以及如何在 DevTools 中试验样式Microsoft Edge更改。
+*  完成本系列中的下一教程 [CSS](css.md) 入门，了解如何设置页面样式，以及如何在 DevTools 中试验样式Microsoft Edge更改。
 
 *  阅读[ DOM 简介](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction)，详细了解 DOM。
 

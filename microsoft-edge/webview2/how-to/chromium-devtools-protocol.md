@@ -1,5 +1,5 @@
 ---
-title: 在 WebView2 中使用 Chrome DevTools 协议
+title: 在 WebView2 应用中使用 Chrome DevTools 协议
 description: 如何使用 Microsoft Edge WebView2 Chrome DevTools 协议包在 WebView2 应用中使用 Chrome NuGet协议。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 05/06/2021
-ms.openlocfilehash: 8b6e9f51715f1effaff0bf181b13eb12d6ab286b
-ms.sourcegitcommit: ae41e2c0ca42fb7eac73824c828305c7b13b4203
+ms.openlocfilehash: 1188a83350c4a8a4d5af18ddfb143be0b22fb4a7
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "12345875"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432206"
 ---
-# <a name="use-the-chrome-devtools-protocol-in-webview2"></a>在 WebView2 中使用 Chrome DevTools 协议
+# <a name="use-the-chrome-devtools-protocol-in-webview2-apps"></a>在 WebView2 应用中使用 Chrome DevTools 协议
 
-[Chrome DevTools 协议](https://chromedevtools.github.io/devtools-protocol)提供用于检测、检查、调试和配置文件Chromium浏览器的 API。  Chrome DevTools 协议是开发工具Microsoft Edge的基础。  对 WebView2 平台中未实现的功能使用 Chrome DevTools 协议。
+Chrome [DevTools 协议](https://chromedevtools.github.io/devtools-protocol)提供用于检测、检查、调试和配置文件的 API Chromium基于浏览器。  Chrome DevTools 协议是开发工具Microsoft Edge的基础。  对 WebView2 平台中未实现的功能使用 Chrome DevTools 协议。
 
 若要在 WebView2 应用中使用 Chrome DevTools 协议 API，请执行下列任一操作：
 
@@ -32,10 +32,11 @@ ms.locfileid: "12345875"
 <!-- ====================================================================== -->
 ## <a name="use-devtoolsprotocolhelper"></a>使用 DevToolsProtocolHelper
 
-> [!NOTE]
-> [Microsoft.Web.WebView2.DevToolsProtocolExtension](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) NuGet目前处于技术预览阶段。  在预览版中，请勿在生产应用中使用程序包。
-
 [Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview) ](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) 是 WebView2 团队创建的 NuGet 程序包，可轻松访问 Chrome DevTools 协议功能。  以下示例介绍如何在 WebView2 控件的 Chrome DevTools 协议中使用地理位置功能。  若要使用其他 Chrome DevTools 协议功能，你可以遵循类似的模式。
+
+### <a name="dont-use-the-preview-package-in-production-apps"></a>不要在生产应用中使用预览包
+
+[Microsoft.Web.WebView2.DevToolsProtocolExtension](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) NuGet目前处于技术预览阶段。  在预览版中，请勿在生产NuGet使用此程序包。
 
 
 <!-- ====================================================================== -->
@@ -88,7 +89,7 @@ ms.locfileid: "12345875"
 
 1. 若要显示纬度和经度坐标，请单击"显示 **位置"** 按钮。  若要验证和比较地理位置，请将坐标复制并粘贴到 中 [https://www.bing.com/maps](https://www.bing.com/maps)。
 
-   :::image type="content" source="./media/geolocater-browser.png" alt-text="在资源位置中显示用户的地理位置Microsoft Edge。" lightbox="./media/geolocater-browser.png":::
+   :::image type="content" source="./media/geolocater-browser.png" alt-text="在资源位置中显示用户的Microsoft Edge。" lightbox="./media/geolocater-browser.png":::
 
 
 <!-- ====================================================================== -->
@@ -98,7 +99,7 @@ ms.locfileid: "12345875"
 
    * [WebView2 入门](../get-started/get-started.md)
 
-   * [WebView2 示例](https://github.com/MicrosoftEdge/WebView2Samples)
+   * [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples)
 
 1. 将 WebView2 控件的初始导航设置为 `geolocation.html`：
 
@@ -118,7 +119,7 @@ ms.locfileid: "12345875"
 
 若要安装程序包，请运行以下设置：
 
-1. 选择 **Project** >  **Manage NuGet** **PackagesBrowse** > 。
+1. 选择**Project** >  **Manage NuGet** **PackagesBrowse** > "。
 
 1. 键入 `Microsoft.Web.WebView2.DevToolsProtocolExtension` ，然后选择 **"Microsoft.Web.WebView2.DevToolsProtocolExtensionInstall** > **"**。
 
@@ -181,11 +182,11 @@ ms.locfileid: "12345875"
 
 若要提交有关 Chrome DevTools 协议的 bug，在错误数据库中Chromium [Bug 报告](https://bugs.chromium.org/p/chromium/issues/entry?components=Platform%3EDevTools%3EPlatform)。
 
-Chrome DevTools 协议由开放源代码Chromium维护，而不是由 Microsoft Edge WebView2 团队维护。
+Chrome DevTools 协议由开源开发人员项目Chromium，而不是由 Microsoft Edge WebView2 团队维护。
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
 * [Microsoft Edge DevTools 协议概述](../../devtools-protocol-chromium/index.md)
-* [WebView2 示例](https://github.com/MicrosoftEdge/WebView2Samples)
+* [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples)

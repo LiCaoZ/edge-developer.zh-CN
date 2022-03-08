@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/19/2021
+ms.openlocfilehash: a44cbb2f0bd5a308ca57e6c1014b5e82e1f4424f
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430988"
 ---
 # <a name="verify-that-the-webpage-layout-is-usable-when-narrow"></a>验证网页布局在缩小时是否可用
 
@@ -23,7 +29,11 @@ ms.date: 10/19/2021
 
    网页的顶部导航栏有一些辅助功能问题。  顶部导航栏与 **搜索表单** 重叠，需要修复该问题：
 
-   :::image type="content" source="../media/a11y-testing-element-with-contrast-issues.msft.png" alt-text="单击指向该页面的链接后突出显示的页面中的元素。" lightbox="../media/a11y-testing-element-with-contrast-issues.msft.png":::
+   ![单击指向该页面的链接后突出显示的页面中的元素。](../media/a11y-testing-element-with-contrast-issues.msft.png)
+
+
+<!-- ====================================================================== -->
+## <a name="device-emulation-tool-to-test-narrow-viewports"></a>用于测试窄视口的设备仿真工具
 
 可以通过调整浏览器窗口的大小来模拟较窄的视区，但测试设计响应性更好的方法就是使用 **设备仿真** 工具。  以下是设备仿真 **工具的一** 些功能，可帮助你查找任何网站的辅助功能问题：
 

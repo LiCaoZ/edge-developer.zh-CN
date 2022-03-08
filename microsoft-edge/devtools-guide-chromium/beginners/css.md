@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/26/2021
+ms.openlocfilehash: 7870df977dcb4d4a6313f4a13ed32fc8d660bddf
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430967"
 ---
 <!-- Copyright Katherine Jackson
 
@@ -50,11 +56,11 @@ ms.date: 07/26/2021
 
 
 <!-- ====================================================================== -->
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>系统必备
 
 执行本教程之前：
 
-*  演练 HTML [和 DOM](./html.md) 入门教程，或确保您已了解 HTML 和 DOM。
+*  演练 HTML [和 DOM](html.md) 入门教程，或确保您已了解 HTML 和 DOM。
 *  下载 [Microsoft Edge](https://www.microsoftedgeinsider.com) Web 浏览器。  以下教程使用一组内置于 Microsoft Edge 中的 Web 开发工具（称为 Microsoft Edge DevTools）。
 
 
@@ -64,7 +70,7 @@ ms.date: 07/26/2021
 若要创建网站，请首先执行以下步骤来设置代码。
 
 > [!NOTE]
-> 如果已完成系列的第一个教程，请跳到下一部分。  继续使用上一教程 HTML 和 [DOM 入门中的代码](./html.md)。
+> 如果已完成系列的第一个教程，请跳到下一部分。  继续使用上一教程 HTML 和 [DOM 入门中的代码](html.md)。
 
 1. 打开[源代码](https://glitch.com/edit/#!/cooked-amphibian?path=index.html)。  当前选择的浏览器选项卡称为" **编辑"选项卡**。
 
@@ -96,7 +102,7 @@ ms.date: 07/26/2021
 </p>
 ```
 
-HTML 属性 `style="border: 1px dashed red; padding: 5px;"` 可能看起来是全新的。  其余部分看起来应该很熟悉。  如果没有，则 [先完成 HTML 和 DOM](./html.md) 入门，然后再尝试以下部分。
+HTML 属性 `style="border: 1px dashed red; padding: 5px;"` 可能看起来是全新的。  其余部分看起来应该很熟悉。  如果没有，则 [先完成 HTML 和 DOM](html.md) 入门，然后再尝试以下部分。
 
 
 <!-- ====================================================================== -->
@@ -192,7 +198,7 @@ HTML 属性 `style="border: 1px dashed red; padding: 5px;"` 可能看起来是�
 
 `font-family: 'Courier New', Courier, serif` 是**声明**。  声明由以下两部分组成：
 
-| 部分 | 示例 | 描述 |
+| 部分 | 示例 | 说明 |
 | --- | --- | --- |
 | **属性** | `font-family` | 属性描述应更改元素的样式。 |
 | **value** | `'Courier New', Courier, serif` | 该值准确描述了元素的样式应该如何更改。 |
@@ -245,7 +251,7 @@ li a {
 
    :::image type="content" source="../media/beginners-css-add1.msft.png" alt-text="检查&quot;主页&quot;链接。" lightbox="../media/beginners-css-add1.msft.png":::
 
-   DevTools 将在页面旁边打开。  代表"主页"链接的代码在 DOM 树中突出显示 `<a href="/">Home</a>` 为蓝色。  从 HTML 和 DOM 入门教程中应熟悉代码 [段和预览](./html.md)。
+   DevTools 将在页面旁边打开。  代表"主页"链接的代码在 DOM 树中突出显示 `<a href="/">Home</a>` 为蓝色。  从 HTML 和 DOM 入门教程中应熟悉代码 [段和预览](html.md)。
 
    在下图中，`font-family: 'Courier New', Courier, serif``contact.html`您之前添加到的声明显示在 DOM 树下方的 **"样式**"选项卡中：
 
@@ -255,15 +261,15 @@ li a {
 
    :::image type="content" source="../media/beginners-css-add3.msft.png" alt-text="&quot;样式&quot;选项卡位于 DOM 树的右侧。" lightbox="../media/beginners-css-add3.msft.png":::
 
-1. 选择下面的空行 `font-family: 'Courier New', Courier, Serif` 以添加新声明。
+1. 选择下面的空行 `font-family: 'Courier New', Courier, Serif` 以添加新声明：
 
    :::image type="content" source="../media/beginners-css-add4.msft.png" alt-text="添加新声明。" lightbox="../media/beginners-css-add4.msft.png":::
 
-1. 键入 `color` ，然后按 `Enter`。  键入时，自动完成 UI 会推荐选项。
+1. 键入 **color** ，然后按 `Enter`。  键入时，自动完成 UI 会提供建议的选项：
 
    :::image type="content" source="../media/beginners-css-add5.msft.png" alt-text="键入&quot;color&quot;。" lightbox="../media/beginners-css-add5.msft.png":::
 
-1. 键入 并 `magenta` 按 `Enter`。  联系人页面上的所有文本现在都为洋红色。
+1. 键入 **洋红色，** 然后按 `Enter`。  联系人页面上的所有文本现在都为洋红色：
 
    :::image type="content" source="../media/beginners-css-add6.msft.png" alt-text="键入&quot;洋红色&quot;。" lightbox="../media/beginners-css-add6.msft.png":::
 
@@ -271,11 +277,11 @@ li a {
 
 在 DevTools 中编辑现有声明：
 
-1. 选择 旁边的洋红色正方形 `magenta`。  将弹出一个颜色选取器。
+1. 选择 旁边的洋红色正方形 `magenta`。  将弹出颜色选取器：
 
    :::image type="content" source="../media/beginners-css-edit1.msft.png" alt-text="颜色选取器。" lightbox="../media/beginners-css-edit1.msft.png":::
 
-1. 使用颜色选取器将字体文本更改为您喜欢的颜色。
+1. 使用颜色选取器将字体文本更改为您喜欢的颜色：
 
    :::image type="content" source="../media/beginners-css-edit2.msft.png" alt-text="使用颜色选取器将字体颜色更改为紫色。" lightbox="../media/beginners-css-edit2.msft.png":::
 
@@ -283,7 +289,7 @@ li a {
 
 若要在 DevTools 中添加新规则集：
 
-1. 选择 **"新建样式** 规则 (!["新建样式](../media/new-style-rule-icon.msft.png) 规则"。) **.cls 旁边的"新建样式规则"**。  空的规则集将显示为 `a` 选择器。
+1. Select **New Style Rule** (![New Style Rule.](../media/new-style-rule-icon.msft.png)) which is next to **.cls**.  空的规则集将显示为 `a` 选择器。
 
    :::image type="content" source="../media/beginners-css-rule1.msft.png" alt-text="添加新规则。" lightbox="../media/beginners-css-rule1.msft.png":::
 
@@ -295,11 +301,11 @@ li a {
 
 1. 单击括号之间的空白区域以添加新声明。
 
-1. 键入 `background-color` 声明名称，然后按 `Enter`。
+1. 键入 **声明名称** 的背景色，然后按 `Enter`。
 
    :::image type="content" source="../media/beginners-css-rule3.msft.png" alt-text="键入&quot;background-color&quot;。" lightbox="../media/beginners-css-rule3.msft.png":::
 
-1. 键入 `green` 声明值并按 `Enter`。
+1. 为 **声明** 值键入绿色，然后按 `Enter`。
 
    :::image type="content" source="../media/beginners-css-rule4.msft.png" alt-text="键入&quot;green&quot;。" lightbox="../media/beginners-css-rule4.msft.png":::
 
@@ -429,11 +435,11 @@ li a {
 
 1. 在 `index.html`中，将上一代码添加到 标记 `<header>` 。
 
-   :::image type="content" source="../media/beginners-css-jumbotron1.msft.png" alt-text="在类中添加index.html。" lightbox="../media/beginners-css-jumbotron1.msft.png":::
+   :::image type="content" source="../media/beginners-css-jumbotron1.msft.png" alt-text="在 index.html 中添加类。" lightbox="../media/beginners-css-jumbotron1.msft.png":::
 
 1. 在 `contact.html`中，将上一代码添加到 标记 `<header>` 。
 
-   :::image type="content" source="../media/beginners-css-jumbotron2.msft.png" alt-text="在类中添加contact.html。" lightbox="../media/beginners-css-jumbotron2.msft.png":::
+   :::image type="content" source="../media/beginners-css-jumbotron2.msft.png" alt-text="在 contact.html 中添加类。" lightbox="../media/beginners-css-jumbotron2.msft.png":::
 
 1. 在实时选项卡中查看更改。 标题周围有一个大的灰色框。
 
@@ -507,7 +513,7 @@ li a {
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css)<!-- redirects to https://developer.chrome.com/docs/devtools/css/ by Kayce Basques --> 由来自技术编写器 [ (](https://developers.google.com/web/resources/contributors#katherine-jackson) ，Chrome DevTools) 。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/beginners/css)<!-- redirects to https://developer.chrome.com/docs/devtools/css/ by Kayce Basques --> 由来自技术编写器 [ (](https://developers.google.com/web/resources/contributors#katherine-jackson) 、Chrome DevTools) 。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

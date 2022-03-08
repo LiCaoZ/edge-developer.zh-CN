@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 3c3d4064c7817b40cdfa66c37d2d72b9b1c1684f
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432808"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -49,9 +55,9 @@ How to Use the Allocation Profiler Tool -->
 
 若要在时间线 **上开始使用 Allocation instrumentation**：
 
-1. [打开 DevTools](../open/index.md)。
+1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
 
-1. 打开 **内存** 工具。
+1. 在 DevTools 中，在主工具栏上，选择"**内存"** 选项卡。 如果该选项卡不可见，请单击"更多选项卡" (**** 更多选项卡"图标](../media/more-tabs-icon-light-theme.png)。****) 按钮![，或单击"更多工具 (更多工具"图标。) 按钮。](../media/more-tools-icon-light-theme.png) ![
 
 1. 选择" **日程表上的分配检测"** 单选按钮。
 
@@ -84,7 +90,7 @@ How to Use the Allocation Profiler Tool -->
 <!-- ====================================================================== -->
 ## <a name="view-memory-allocation-by-function"></a>按功能查看内存分配
 
-可以通过 JavaScript 函数查看内存分配。  请参阅 [按功能调查内存分配](./index.md#investigate-memory-allocation-by-function)。
+可以通过 JavaScript 函数查看内存分配。  请参阅 [按功能调查内存分配](index.md#investigate-memory-allocation-by-function)。
 
 
 <!-- ====================================================================== -->

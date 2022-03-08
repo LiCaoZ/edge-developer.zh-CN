@@ -6,12 +6,18 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 422ccffcca1ad11d7008764ea13b83b955b9ef38
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432731"
 ---
 # <a name="emulate-authenticators-and-debug-webauthn"></a>模拟身份验证器并调试 WebAuthn
 
 <!--todo: remove notice at bottom, or add notice here?-->
 
-使用 Microsoft Edge **DevTools 中的 WebAuthn** 工具创建基于软件的虚拟验证器并与之交互，而不是使用物理验证器在网站或应用中调试 Web 身份验证。
+使用 **WebAuthn** 工具创建基于软件的虚拟验证器并与之交互，而不是使用物理验证器在网站或应用中调试 Web 身份验证。
 
 
 <!-- ====================================================================== -->
@@ -23,13 +29,15 @@ Web 身份验证 API 规范是开始使用 [Web 身份验证的一个很好的�
 <!-- ====================================================================== -->
 ## <a name="set-up-the-webauthn-tool"></a>设置 WebAuthn 工具
 
-1. 转到使用 WebAuthn 的网页。  例如，在新的浏览器窗口或选项卡中打开以下演示 [webauthndemo.appspot.com](https://webauthndemo.appspot.com)。
+1. 转到使用 WebAuthn 的网页。  例如，在新的浏览器窗口或选项卡中打开以下演示 [webauthndemo.appspot.com。](https://webauthndemo.appspot.com)
 
 1. 登录到网站。
 
-1. [打开 DevTools](../open/index.md)。
+1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
 
-1. 若要打开 **WebAuthn** 工具，请选择"自定义和控制 **DevTools** `...` 工具" () **">工具** > **""WebAuthn"**。
+1. 在 DevTools 中，在主工具栏上，选择 **"WebAuthn"** 选项卡。 如果该选项卡不可见，请单击"更多选项卡" (**** 更多选项卡"图标](../media/more-tabs-icon-light-theme.png)。****) 按钮![，或单击"更多工具 (更多工具"图标。) 按钮。](../media/more-tools-icon-light-theme.png) ![
+
+   **WebAuthn** 工具将打开：
 
    :::image type="content" source="../media/webauthn-webauthn-tab.msft.png" alt-text="WebAuthn 工具。" lightbox="../media/webauthn-webauthn-tab.msft.png":::
 
@@ -43,8 +51,8 @@ Web 身份验证 API 规范是开始使用 [Web 身份验证的一个很好的�
     |:--- |:--- |:--- |
     | `Protocol` | [ctap2](https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html) 或 [u2f](https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-u2f-overview-v1.2-ps-20170411.html) | 虚拟验证器用于编码和解码的协议 |
     | `Transport` |   `usb`、 `nfc`、 `ble`、 或 `internal` | 虚拟验证器模拟所选传输以便与客户端通信，以获取特定凭据的断言。  请参阅[Authenticator传输枚举](https://w3c.github.io/webauthn#enum-transport) |
-    |  `Supports resident keys` | 使用复选框 (或) 或关闭复选框 | 如果 Web 应用依赖常驻密钥或 (客户端可发现凭据，请) 。  请参阅 [Resident Key Requirement 枚举](https://w3c.github.io/webauthn#enum-residentKeyRequirement)。 |
-    | `Supports user verification` | 使用复选框 (或) 或关闭复选框 | 如果 Web 应用依赖使用手势形式（如触摸和引脚代码、密码输入或生物识别识别）的本地授权，则打开。  请参阅 [用户验证](https://w3c.github.io/webauthn#user-verification) |
+    |  `Supports resident keys` | 使用复选框 (或) 或关闭" | 如果 Web 应用依赖于常驻密钥， (也称为客户端可发现凭据) 。  请参阅 [Resident Key Requirement 枚举](https://w3c.github.io/webauthn#enum-residentKeyRequirement)。 |
+    | `Supports user verification` | 使用复选框 (或) 或关闭" | 如果 Web 应用依赖使用手势形式（如触摸和引脚代码、密码输入或生物识别识别）的本地授权，则打开。  请参阅 [用户验证](https://w3c.github.io/webauthn#user-verification) |
 
 1. 单击“添加”**** 按钮。
 

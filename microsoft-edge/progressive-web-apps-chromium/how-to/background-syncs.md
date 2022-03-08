@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 ms.date: 09/14/2021
-ms.openlocfilehash: ccba6c0c7c39ed84478f1b3d70f4d6f7f3386e5f
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 3fc0f3f0cfbfe16cebe524dd26e5558b921bebc4
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12319778"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432220"
 ---
 # <a name="synchronize-and-update-a-pwa-in-the-background"></a>在后台同步PWA更新服务器
 
@@ -45,7 +45,7 @@ ms.locfileid: "12319778"
 
 ### <a name="check-for-support"></a>检查支持
 
-后台同步 API 在 Microsoft Edge 中可用，但你应确保在运行应用的其他浏览器和设备中支持后台同步 API。  若要确保支持后台同步 API，请测试 `ServiceWorkerRegistration` 对象是否具有 `sync` 属性：
+后台同步 API 在 Microsoft Edge 中可用，但应确保在运行应用的其他浏览器和设备中支持后台同步 API。  若要确保支持后台同步 API，请测试 `ServiceWorkerRegistration` 对象是否具有 属性 `sync` ：
 
 ```javascript
 navigator.serviceWorker.ready.then(registration => {
@@ -57,7 +57,7 @@ navigator.serviceWorker.ready.then(registration => {
 });
 ```
 
-若要了解有关接口的 `ServiceWorkerRegistration` 更多信息，请参阅 MDN 的[ServiceWorkerRegistration。](https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration)
+若要了解有关接口的更多信息 `ServiceWorkerRegistration` ，请参阅 [MDN 的 ServiceWorkerRegistration](https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration) 。
 
 ### <a name="request-a-sync"></a>请求同步
 
@@ -87,7 +87,7 @@ async function requestBackgroundSync() {
 
 ### <a name="react-to-the-sync-event"></a>React同步事件
 
-只要可以使用连接并且服务工作器正在运行，就会向服务工作器发送一个事件，该服务工作器可以使用它同步 `sync` 必要的数据。 `sync`可以使用以下代码侦听事件：
+只要可以使用连接并且 `sync` 服务工作器正在运行，就会向服务工作器发送一个事件，该服务工作器可以使用它同步必要的数据。 可以使用 `sync` 以下代码侦听事件：
 
 ```javascript
 self.addEventListener('sync', event => {
@@ -97,15 +97,15 @@ self.addEventListener('sync', event => {
 });
 ```
 
-在以上示例代码中， `sync` 事件侦听器将添加到服务工作器中。 调用侦听器时，代码会检查标记在前端中是否注册，然后调用 `doTheWork` 。 此函数应返回 Promise。
+在以上示例代码中，事件 `sync` 侦听器将添加到服务工作器中。 调用侦听器时，代码会检查标记在前端中是否注册，然后调用 `doTheWork`。 此函数应返回 Promise。
 
-通常，函数会向用户处于脱机状态时无法发送 `doTheWork` 的服务器发送信息。 将此信息存储在前端的 [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) 存储中可能会很有用，以便以后在执行时可以从服务工作 `doTheWork` 器中检索该信息。
+通常， `doTheWork` 函数会向用户处于脱机状态时无法发送的服务器发送信息。 将此信息存储在前端的 [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) `doTheWork` 存储中可能会很有用，以便以后在执行时可以从服务工作器中检索该信息。
 
-有关 事件、、 和 接口详细信息， `Sync` `ServiceWorkerRegistration` `SyncManager` 请参阅后台[同步草稿规范和](https://wicg.github.io/background-sync/spec/)[后台同步 API 文档](https://developer.mozilla.org/docs/Web/API/Background_Synchronization_API)。
+有关 事件、、 `Sync` `ServiceWorkerRegistration``SyncManager` 和 接口详细信息，请参阅后台[同步草稿规范和](https://wicg.github.io/background-sync/spec/)[后台同步 API 文档](https://developer.mozilla.org/docs/Web/API/Background_Synchronization_API)。
 
 ### <a name="demo-app"></a>演示应用
 
-[我的电影PWA](https://quirky-rosalind-ac1e65.netlify.app/)是一个演示应用，如果用户处于脱机状态，则使用后台同步 API 稍后获取电影信息。
+[My Movie List PWA](https://quirky-rosalind-ac1e65.netlify.app/)是一个演示应用，如果用户处于脱机状态，则使用后台同步 API 稍后获取电影信息。
 
 :::image type="content" source="../media/my-movie-list-pwa-demo.png" alt-text="我的电影列表PWA演示应用。":::
 
@@ -115,7 +115,7 @@ self.addEventListener('sync', event => {
 
 1.  使用搜索输入字段搜索电影。
 
-1.  脱机。  为此，请打开"DevTools (**F12**) "，然后选中"脱机应用程序****  >  **服务工作者**  >  **"** 复选框。
+1.  脱机。  为此，请打开"DevTools (**F12**) "，然后选中 **"ApplicationService** >  **WorkersOffline****** > "复选框。
 
     :::image type="content" source="../media/devtools-go-offline.png" alt-text="使用 DevTools 模拟脱机。":::
 
@@ -125,7 +125,7 @@ self.addEventListener('sync', event => {
 
     :::image type="content" source="../media/my-movie-list-pwa-demo-offline.png" alt-text="脱机消息。":::
 
-1.  联机。  为此，在 DevTools 中，清除"**应用程序**  >  **服务工作者**  >  **脱机"** 复选框。
+1.  联机。  为此，在 DevTools 中，清除 **ApplicationService** >  **WorkersOffline****** >  复选框。
 
 1.  重新加载应用。 现在将显示影片详细信息。
 
@@ -133,12 +133,12 @@ self.addEventListener('sync', event => {
 
 ### <a name="debug-background-syncs-with-devtools"></a>使用 DevTools 调试后台同步
 
-若要测试后台同步代码，你不必脱机，然后联机，然后等待Microsoft Edge触发 `sync` 事件。  相反，DevTools 允许你模拟后台同步事件。
+若要测试后台同步代码，你不必脱机，然后联机，然后等待Microsoft Edge触发`sync`事件。  相反，DevTools 允许你模拟后台同步事件。
 
 模拟事件 `sync` ：
 
 1. 打开 DevTools (**F12**) 。
-1. 选择 **"应用程序**  >  **服务工作人员"。**
+1. 选择 **"ApplicationService** >  **Workers"**。
 1. 在"同步"输入字段中键入注册同步 **时所使用的标记** 名称。
 1. 选择" **同步"** 按钮。
 
@@ -147,8 +147,8 @@ self.addEventListener('sync', event => {
 还可以在 DevTools 中记录你的应用生成的后台同步活动，如下所示：
 
 1. 打开 DevTools (**F12**) 。
-1. 选择 **"应用程序**  >  **后台同步"。**
-1. 选择 **"开始录制事件"。**
+1. 选择 **ApplicationBackground****** >  Sync。
+1. 选择 **"开始录制事件"**。
 
 同步注册和调度显示在事件日志表中：
 
@@ -163,11 +163,11 @@ self.addEventListener('sync', event => {
 使用定期后台同步 API，PBA 不必下载新内容 (例如用户) 应用时发布的新文章。  下载内容可能会减慢体验速度，因此，改为在更方便的时间检索内容。
 
 > [!NOTE]
-> 定期同步仅在设备位于已知网络 (，即设备在运行前已连接到的网络时) 。  Microsoft Edge限制同步频率，以匹配用户使用该应用的频率。
+> 定期同步仅在设备位于已知网络 (，即设备在运行前已连接到的网络时) 。  Microsoft Edge限制同步频率，以匹配用户使用应用的频率。
 
 ### <a name="check-for-support"></a>检查支持
 
-若要检查此 API 在运行你的应用的浏览器和设备中是否受支持，请测试 `ServiceWorkerRegistration` 对象是否具有 `periodicSync` 属性：
+若要检查此 API 在运行你的应用的浏览器和设备中是否受支持 `ServiceWorkerRegistration` ，请测试对象是否具有 属性 `periodicSync` ：
 
 ```javascript
 navigator.serviceWorker.ready.then(registration => {
@@ -208,11 +208,11 @@ async function registerPeriodicSync() {
 }
 ```
 
-以上 `minInterval` 代码中使用的 对应于 1 天（以毫秒为单位）。 此时间间隔仅为最小间隔，Microsoft Edge在定期同步事件（如网络连接以及用户是否定期使用应用）向服务工作者发出警报之前，会考虑其他因素。
+以上 `minInterval` 代码中使用的 对应于 1 天（以毫秒为单位）。 此时间间隔仅为最小间隔，Microsoft Edge定期同步事件（如网络连接以及用户是否定期使用应用）向服务工作者发出警报之前，会考虑其他因素。
 
 ### <a name="react-to-periodic-sync-events"></a>React定期同步事件
 
-当Microsoft Edge确定是运行定期同步的一个好时间时，Microsoft Edge向 `periodicsync` 服务工作者发送事件。 可以使用注册 `periodicsync` 同步时指定的相同标记名称来处理此事件。
+当Microsoft Edge确定是运行定期同步的一个好时间时，Microsoft Edge向`periodicsync`服务工作者发送事件。 可以使用注册同步 `periodicsync` 时指定的相同标记名称来处理此事件。
 
 ```javascript
 self.addEventListener('periodicsync', event => {
@@ -222,20 +222,20 @@ self.addEventListener('periodicsync', event => {
 });
 ```
 
-`getDailyNewsInCache`在 函数中，服务工作者可以从服务器获取新内容，并存储到缓存中。 此函数应返回一个 Promise，指示同步是成功还是失败。
+在 `getDailyNewsInCache` 函数中，服务工作者可以从服务器获取新内容，并存储到缓存中。 此函数应返回一个 Promise，指示同步是成功还是失败。
 
-有关 事件 `PeriodicSync` 、、 和 `ServiceWorkerRegistration` 接口 `PeriodicSyncManager` 详细信息，请参阅：
+有关 事件、 `PeriodicSync` 、 `ServiceWorkerRegistration`和 接口详细信息 `PeriodicSyncManager` ，请参阅：
 
 * [Web 定期后台同步](https://wicg.github.io/periodic-background-sync/) - 草稿规范。
 * [Web 定期后台同步 API](https://developer.mozilla.org/docs/Web/API/Web_Periodic_Background_Synchronization_API)。
 
 ### <a name="demo-app"></a>演示应用
 
-[DevTools 使用技巧](https://devtoolstips.org/)是一PWA定期后台同步 API 的开发人员。  [DevTools 使用技巧] PWA每天提取新的开发人员工具提示，将它们存储在缓存中，以便用户可以在下次打开应用时访问它们，无论他们是否联机。
+[DevTools 使用技巧](https://devtoolstips.org/)是一PWA定期后台同步 API 的开发人员。  [DevTools 使用技巧] PWA每天提取新的开发人员工具提示，并存储在缓存中，以便用户可以在下次打开应用时访问它们，无论他们是否联机。
 
 :::image type="content" source="../media/devtools-tips-demo.png" alt-text="DevTools 使用技巧应用。":::
 
-转到上的[源代码GitHub。](https://github.com/captainbrosset/devtools-tips/) 特别是，应用在 [registerPeriodicSync](https://github.com/captainbrosset/devtools-tips/blob/a4a5277ee6b67e5cc61eee642bf3d9c68130094f/src/layouts/home.njk#L72) 函数中注册定期同步。  [服务工作器](https://github.com/captainbrosset/devtools-tips/blob/ebfb2c7631464149ce3cc7700d77564656971ff4/src/sw.js#L115)代码是应用侦听事件 `periodicsync` 的地方。
+转到上[一个GitHub](https://github.com/captainbrosset/devtools-tips/)。 特别是，应用在 [registerPeriodicSync](https://github.com/captainbrosset/devtools-tips/blob/a4a5277ee6b67e5cc61eee642bf3d9c68130094f/src/layouts/home.njk#L72) 函数中注册定期同步。  [服务工作器](https://github.com/captainbrosset/devtools-tips/blob/ebfb2c7631464149ce3cc7700d77564656971ff4/src/sw.js#L115)代码是应用侦听事件`periodicsync`的地方。
 
 ### <a name="debug-periodic-background-syncs-with-devtools"></a>使用 DevTools 调试定期后台同步
 
@@ -244,7 +244,7 @@ self.addEventListener('periodicsync', event => {
 模拟事件：
 
 1. 打开 DevTools (**F12**) 。
-1. 选择 **"应用程序**  >  **服务工作人员"。**
+1. 选择 **"ApplicationService** >  **Workers"**。
 1. 在"定期同步"输入字段中键入注册定期同步 **时所使用的标记** 名称。
 1. 选择 **"定期同步"** 按钮。
 
@@ -253,8 +253,8 @@ self.addEventListener('periodicsync', event => {
 还可以在 DevTools 中记录你的应用生成的定期后台同步活动：
 
 1. 打开 DevTools (**F12**) 。
-1. 选择**应用程序**  >  **定期后台同步**。
-1. 选择 **"开始录制事件"。**
+1. 选择 **"ApplicationPeriodic** >  **后台同步"**。
+1. 选择 **"开始录制事件"**。
 
 定期同步注册和调度显示在事件日志表中。
 
@@ -291,9 +291,9 @@ navigator.serviceWorker.ready.then(async registration => {
 });
 ```
 
-上述 `my-download-id` 应为此后台提取的唯一字符串标识符。 `fileUrls` 是要下载的文件的列表，这将是字符串 URL 数组。 `options`和 是可用于自定义浏览器中下载活动的外观的对象。
+上述 应为 `my-download-id` 此后台提取的唯一字符串标识符。 `fileUrls` 是要下载的文件的列表，这将是字符串 URL 数组。 和 `options` 是可用于自定义浏览器中下载活动的外观的对象。
 
-有关函数详细信息，请参阅 `fetch` [BackgroundFetchManager.fetch () ](https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/fetch) 和 [介绍后台提取](https://developers.google.com/web/updates/2018/12/background-fetch)。
+有关函数详细信息， `fetch` 请参阅 [BackgroundFetchManager.fetch () ](https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/fetch) 和 [后台提取介绍](https://developers.google.com/web/updates/2018/12/background-fetch)。
 
 
 <!-- ====================================================================== -->
@@ -303,4 +303,4 @@ navigator.serviceWorker.ready.then(async registration => {
 
 使用 Microsoft Edge，锁屏提醒会显示在任务栏的应用图标上，并且通知会与系统通知中心集成。
 
-若要了解如何使用这些 API，请参阅使用锁屏提醒、通知和推送通知重新吸引 [用户](./notifications-badges.md)。
+若要了解如何使用这些 API，请参阅使用锁屏提醒、通知和推送通知重新吸引 [用户](notifications-badges.md)。

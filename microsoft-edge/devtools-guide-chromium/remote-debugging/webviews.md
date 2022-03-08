@@ -1,11 +1,17 @@
 ---
 title: 远程调试 Android WebViews
-description: 使用 DevTools 在本机 Android 应用中远程调试 WebView Microsoft Edge入门。
+description: 使用开发人员工具在本机 Android 应用中远程调试 WebView Microsoft Edge入门。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: c23c7cdd148b2b1bd9f6d56e5dd239b7b1a8b9ed
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431471"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -30,7 +36,7 @@ ms.date: 05/04/2021
 
 *  在本机 Android 应用中打开 Android WebView 调试;在 DevTools Microsoft Edge Android WebViews。
 *  若要显示启用调试的 Android WebView 列表，请转到 `edge://inspect`。
-*  使用通过远程调试调试网页的相同方式调试 Android [WebView。](./index.md)
+*  使用通过远程调试调试网页的相同方式调试 Android [WebView。](index.md)
 
 
 <!-- ====================================================================== -->

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: e60dfc472f652a40a19aab6de487582225c05031
-ms.sourcegitcommit: 2e0ec25e3cfc01b58fdddd5f4ac270632cb9b962
+ms.openlocfilehash: f0e68532237f2250834595398bb20bf1b36a10eb
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "12348261"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431359"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,29 +28,34 @@ ms.locfileid: "12348261"
    limitations under the License.  -->
 # <a name="run-commands-in-the-command-menu"></a>在“命令”菜单中运行命令
 
-命令菜单提供了一种快速的方式，Microsoft Edge开发人员工具 UI 和完成常见任务。  命令菜单类似于命令[面板中的命令Visual Studio Code](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette)。
+命令菜单提供了一种快速的方式，Microsoft Edge开发人员工具 UI 和完成常见任务。  命令菜单类似于命令[面板中的Visual Studio Code](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette)：
 
-:::image type="content" source="../media/command-menu-run-command-java.msft.png" alt-text="使用命令菜单禁用 JavaScript。" lightbox="../media/command-menu-run-command-java.msft.png":::
+![使用命令菜单禁用 JavaScript。](../media/command-menu-run-command-java.msft.png)
 
 
 <!-- ====================================================================== -->
 ## <a name="open-the-command-menu"></a>打开命令菜单
 
-按`Control`+`Shift`+`P`（Windows、Linux）或 `Command`+`Shift`+`P` （macOS）。  或者，选择" **自定义和控制开发工具 (**) > `...` **运行命令"**。
+打开命令菜单：
 
-:::image type="content" source="../media/command-menu-options-run-command.msft.png" alt-text="运行命令。" lightbox="../media/command-menu-options-run-command.msft.png":::
+*  单击" **自定义和控制 DevTools** ![ (自定义"图标](../media/customize-devtools-icon-light-theme.png) 。) 菜单按钮，然后选择" **运行命令"**：
+
+   ![运行命令。](../media/command-menu-options-run-command.msft.png)
+
+   或者，按 `Ctrl`++`Shift``P` (Windows、Linux) 或 (`P` `Command`+`Shift`+macOS) 。
+
 
 
 <!-- ====================================================================== -->
 ## <a name="display-other-available-actions"></a>显示其他可用操作
 
-如果使用"打开命令菜单[](#open-the-command-menu)`>`"中概述的工作流，则"命令菜单"将打开，并预先将字符绘制到"命令菜单"文本框中。
+"命令菜单"最初打开时，其 `>` 文本框中会预置一个字符：
 
-:::image type="content" source="../media/command-menu-run-command.msft.png" alt-text="命令字符。" lightbox="../media/command-menu-run-command.msft.png":::
+![命令字符。](../media/command-menu-run-command.msft.png)
 
-`>`删除字符和类型`?`以显示"命令菜单"中提供的其他操作。
+若要显示"命令菜单"中提供 `>` 的其他操作，请删除该字符，然后键入 **？**：
 
-:::image type="content" source="../media/command-menu-help.msft.png" alt-text="其他可用操作。" lightbox="../media/command-menu-help.msft.png":::
+![其他可用操作。](../media/command-menu-help.msft.png)
 
 
 <!-- ====================================================================== -->

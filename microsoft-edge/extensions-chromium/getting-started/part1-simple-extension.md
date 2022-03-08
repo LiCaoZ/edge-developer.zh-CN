@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/07/2021
+ms.openlocfilehash: b326ba28e199f6e3be262a2d313a015b12969ef9
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430442"
 ---
 # <a name="create-an-extension-tutorial-part-1"></a>创建扩展教程，第 1 部分
 
@@ -147,4 +153,4 @@ ms.date: 01/07/2021
 <!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 
-这是开发工作扩展所需的一切。  现在，继续旁加载和测试扩展。  有关详细信息，请参阅 [旁加载扩展](./extension-sideloading.md)。
+这是开发工作扩展所需的一切。  现在，继续旁加载和测试扩展。  有关详细信息，请参阅 [旁加载扩展](extension-sideloading.md)。

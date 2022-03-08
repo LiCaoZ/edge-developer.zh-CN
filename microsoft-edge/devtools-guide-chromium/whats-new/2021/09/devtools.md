@@ -6,8 +6,14 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 09/03/2021
+ms.openlocfilehash: 2b028fe8b90788af5ebe57b24285a86fb0bd8e9a
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432913"
 ---
-# <a name="whats-new-in-devtools-microsoft-edge-94"></a>DevTools 中的新增功能 (Microsoft Edge 94)
+# <a name="whats-new-in-devtools-microsoft-edge-94"></a>DevTools (Microsoft Edge 94) 
 
 [!INCLUDE [note about What's New announcements from the Microsoft Edge DevTools team](../../includes/edge-whats-new-note.md)]
 
@@ -38,7 +44,7 @@ ms.date: 09/03/2021
 *  在“**Microsoft Edge 工具**” > “**目标**”窗格中添加“**关闭实例**”(`X`) 按钮，以关闭扩展打开的浏览器。
 *  添加对 JavaScript 调试器连接到远程工作区的支持。
 
-请参阅[Microsoft Edge开发人员工具扩展了解Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)。
+请参阅[Microsoft Edge DevTools 扩展了解Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)。
 
 :::image type="content" source="../../media/2021/09/devtools-extension-dark-theme.msft.png" alt-text="在 Visual Studio Code 中运行的扩展，与 Visual Studio Code 的深色主题，以及一个新的“有用链接”边栏相匹配" lightbox="../../media/2021/09/devtools-extension-dark-theme.msft.png":::
 

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/16/2021
-ms.openlocfilehash: c0c129d224d60897b650e24a7a638ccbc9967b21
-ms.sourcegitcommit: 2e0ec25e3cfc01b58fdddd5f4ac270632cb9b962
+ms.openlocfilehash: cddfee32e2c1fc40cc71d3da1aaede44a7da9317
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "12348279"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430484"
 ---
 # <a name="analyze-pages-using-the-inspect-tool"></a>使用检查工具分析页面
 
@@ -31,11 +31,11 @@ ms.locfileid: "12348279"
 
 1. 右键单击演示网页中的任意位置， **然后选择"检查**"以打开 DevTools。
 
-1. 在 DevTools 的左上角，单击****!["检查工具 (检查工具图标](../media/inspect-tool-icon-light-theme.png)。) 按钮。  或者，当 DevTools `Control`++`Shift``C` 具有焦点时，按 (Windows、Linux) 或`C` `Command`+`Shift`+ (macOS) 。
+1. 在 DevTools 的左上角，单击****!["检查工具 (检查工具图标](../media/inspect-tool-icon-light-theme.png)。) 按钮。  或者，当 DevTools `Ctrl`++`Shift``C` 具有焦点时，按 (Windows、Linux) 或`C` `Command`+`Shift`+ (macOS) 。
 
    ![DevTools 左上角的"检查工具"按钮。](images/inspect-tool-button.msft.png)
 
-   按钮图标将蓝色![](../media/inspect-tool-icon-blue-light-theme.png) ("检查"图标。) ，指示 **"** 检查"工具处于活动状态。
+   按钮图标将蓝色 ![ ("](../media/inspect-tool-icon-blue-light-theme.png) 检查"图标) ，指示 **"** 检查"工具处于活动状态。
 
 1. 在呈现的网页中，将鼠标悬停在项目上方并观看信息覆盖和网格突出显示。
 

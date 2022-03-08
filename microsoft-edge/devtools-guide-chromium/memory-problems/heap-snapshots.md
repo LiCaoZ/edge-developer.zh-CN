@@ -1,11 +1,17 @@
 ---
 title: 使用内存工具记录堆快照
-description: 如何使用 DevTools 堆Microsoft Edge器记录堆快照，以及使用内存工具查找内存泄漏。
+description: 如何使用 DevTools 堆Microsoft Edge分析器记录堆快照，以及使用内存工具查找内存泄漏。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 5b8463a01abc58a9e460116602134f22fbb1b4d4
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430456"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -23,12 +29,12 @@ ms.date: 05/04/2021
 # <a name="record-heap-snapshots-using-the-memory-tool"></a>使用内存工具记录堆快照
 
 使用内存 **工具中的堆** 探查器执行以下操作：
-*  记录 JAVAScript 堆 (JS 堆) 快照。
+*  记录 JS (JavaScript 堆) 快照。
 *  分析内存图。
 *  比较快照。
 *  查找内存泄漏。
 
-DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用的内存分布。  另请参阅[内存术语中的](./memory-101.md#objects-retaining-tree)) _保留树的对象。_
+DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用的内存分布。  另请参阅[内存术语中的](memory-101.md#objects-retaining-tree)) _保留树的对象。_
 
 <!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 <!-- 21 hits on "devtools-memory-heap-snapshot" in this article -->
@@ -51,7 +57,7 @@ DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用
 
 **快照** 最初存储在呈现器进程内存中。  单击快照图标进行查看时，快照会按需传输到 DevTools。
 
-将快照加载到 DevTools 并进行分析后，将显示快照标题下方的数字，并显示可到达 [的 JavaScript 对象的总大小](./memory-101.md#object-sizes)。
+将快照加载到 DevTools 并进行分析后，将显示快照标题下方的数字，并显示可到达 [的 JavaScript 对象的总大小](memory-101.md#object-sizes)。
 
 :::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png" alt-text="可到达对象的总大小。" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png":::
 
@@ -62,7 +68,7 @@ DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用
 <!-- ====================================================================== -->
 ## <a name="clear-snapshots"></a>清除快照
 
-单击" **清除所有配置文件** "图标，从 DevTools (与呈现器进程关联的任何内存中删除快照) 。
+单击 **"清除所有配置文件** "图标，从 DevTools (与呈现器进程关联的任何内存中删除快照) 。
 
 :::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="删除快照。" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
 
@@ -83,9 +89,9 @@ DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用
 
 <!--todo: add profile memory problems memory diagnosis (tracking down DOM leaks) section when available  -->
 
-**比较视图**。  显示两个快照之间的差值。  使用它来比较两 (操作) 和之后的内存快照。  通过检查释放的内存和引用计数中的增量，你可以确认内存泄漏的存在和原因。
+**比较视图**。  显示两个快照之间的差值。  使用它来比较操作 (和) 两个或多个内存快照。  通过检查释放的内存和引用计数中的增量，你可以确认内存泄漏的存在和原因。
 
-**包含视图**。  允许浏览堆内容。  **包含视图** 提供了更好的对象结构视图，帮助分析全局命名空间窗口中 (引用) 以找出对象周围的内容。  使用它来分析关闭，并深入到较低级别的对象中。
+**包含视图**。  允许浏览堆内容。  **包含视图** 提供了更好的对象结构视图，帮助分析全局命名空间 (窗口中) 对象，以找出对象周围的内容。  使用它来分析关闭，并深入到较低级别的对象中。
 
 若要在视图之间切换，请使用视图顶部的选择器。
 
@@ -102,12 +108,12 @@ DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用
 
 顶级条目是"total"行。
 
-| 顶级条目 | 描述 |
+| 顶级条目 | 说明 |
 |:--- |:--- |
 | **构造函数** | 表示使用此构造函数创建的所有对象。  |
 | **距离** | 使用节点的最短简单路径显示到根之间的距离。  |
-| **浅表大小** | 显示由特定构造函数函数创建的所有对象的浅表大小的总和。  浅表大小是由对象存储的内存大小 (，数组和字符串具有较大的浅表) 。  请参阅 [对象大小](./memory-101.md#object-sizes)。  |
-| **保留大小** | 显示同一组对象中保留的最大大小。  在删除对象后可以释放的内存大小 (使从属对象不再) 称为保留大小。  请参阅 [对象大小](./memory-101.md#object-sizes)。  |
+| **浅表大小** | 显示由特定构造函数函数创建的所有对象的浅表大小的总和。  浅表大小是由对象存储的内存大小 (，数组和字符串具有较大的浅表) 。  请参阅 [对象大小](memory-101.md#object-sizes)。  |
+| **保留大小** | 显示同一组对象中保留的最大大小。  在删除对象后可以释放的内存大小 (使从属对象不再可用) 称为保留大小。  请参阅 [对象大小](memory-101.md#object-sizes)。  |
 
 <!--| **Number of object instances** | Displayed in the # column.  |  -->
 
@@ -116,11 +122,11 @@ DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用
 * 黄色对象具有 JavaScript 引用。
 * 红色对象是分离的节点。  从具有黄色背景的节点引用分离的节点。
 
-**堆配置文件器中的 (器) 条目对应的不同构造函数是什么？**
+**堆探查器中的 (器) 条目对应的不同构造函数是什么？**
 
 :::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="构造函数组。" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
 
-| 构造函数 (组) 条目 | 描述 |
+| 构造函数 (组) 条目 | 说明 |
 |:--- |:--- |
 | ** (全局属性) ** | 全局对象之间的中间对象 (， `window`) 对象和它引用的对象。  如果对象是使用构造函数创建的 `Person` ，并且由全局对象保留，则保留路径将表示为 `[global] > (global property) > Person`。  这与标准相反，其中对象直接相互引用。  存在中间对象以提高性能。  会定期修改全局设置，并且属性访问优化对非全局对象很适用，而不适用于全局对象。  |
 | ** (根) ** | 保留树视图中的根条目是引用所选对象的实体。  这些引用还可以是引擎出于自身目的创建的引用。  引擎具有缓存哪些引用对象，但所有此类引用都是弱引用，并且不会阻止收集对象，因为不存在真正的强引用。  |
@@ -153,13 +159,13 @@ DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用
 
 ### <a name="containment-view"></a>包含视图
 
-" **包含** "视图实质上是应用程序的对象结构的"鸟眼视图"。  它使你可以速览函数关闭，观察虚拟机 (VM) 共同组合 JavaScript 对象的内部对象，并了解应用程序在非常低的级别使用的内存量。
+" **包含** "视图实质上是应用程序的对象结构的"鸟眼视图"。  它使你可以速览函数关闭，观察虚拟机 (VM) 内部对象，这些内部对象共同组合 JavaScript 对象，并了解应用程序在非常低的级别使用的内存量。
 
-| 包含视图入口点 | 描述 |
+| 包含视图入口点 | 说明 |
 |:--- |:--- |
 | **DOMWindow 对象** | JavaScript 代码的全局对象。  |
 | **GC 根** | VM 的垃圾回收使用的实际 GC 根。  GC 根由内置对象映射、符号表、VM 线程堆栈、编译缓存、处理范围和全局句柄组成。  |
-| **本机对象** | JavaScript VM (JavaScript 虚拟机中的浏览器对象) 推送"，以允许自动化，例如 DOM 节点、CSS 规则。  |
+| **本机对象** | JavaScript VM (JavaScript 虚拟机中的浏览器) 推送"，以允许自动化，例如 DOM 节点、CSS 规则。  |
 
 :::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png" alt-text="包含视图。" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png":::
 
@@ -213,10 +219,10 @@ function createLargeClosure() {
 
 对象的属性和属性值具有不同的类型，并相应地进行着色。  每个属性有四种类型之一：
 
-| 属性类型 | 描述 |
+| 属性类型 | 说明 |
 |:--- |:--- |
-| **a： property** | 具有名称的常规`.` `[` `]` 属性，可通过点 (运算符) 或用 (括号) 访问，例如 。`["foo bar"]`  |
-| **0：元素** | 具有数字索引的常规属性， `[` `]` 可通过 (括号) 表示法。  |
+| **a： property** | 具有名称的 `.` 常规属性，可通过 (点) `[` `]` 运算符访问，或通过 (方括号) 表示法访问，例如 `["foo bar"]`。  |
+| **0：元素** | 具有数值索引的常规属性， `[` `]` 可通过 (括号) 表示法。  |
 | **a： context var** |  函数上下文中的变量，可通过函数关闭内部的变量名称访问。  |
 | **a： system prop** | JavaScript VM 添加的属性，无法通过 JavaScript 代码访问。  |
 
@@ -253,7 +259,7 @@ leafRef = null;
 //#NOW can be #tree GC
 ```
 
-`#leaf`保留对相关的父 (parentNode) `#tree`并递归到 ，`leafRef`因此仅在为 nullified `#tree` 时，整个树才位于垃圾回收 (GC) 。
+`#leaf`保留对相关的父 (parentNode) `#tree`并递归到 的引用`leafRef`，因此只有当为 nullified `#tree` 时，作为垃圾回收 (GC) 的候选项下的整个树。
 
 :::image type="content" source="../media/memory-problems-tree-gc.msft.png" alt-text="DOM 子树。" lightbox="../media/memory-problems-tree-gc.msft.png":::
 
@@ -272,7 +278,7 @@ leafRef = null;
 <!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 
-若要了解有关 DOM 泄漏和内存分析基础的更多信息，请参阅查找和调试 gonzalo Ruiz de 则使用 [Microsoft Edge DevTools](https://slid.es/gruizdevilla/memory) 调试内存泄漏。
+若要了解有关 DOM 泄漏和内存分析基础的更多信息，请参阅通过 Gonzalo Ruiz de 则使用 [Microsoft Edge DevTools 查找和](https://slid.es/gruizdevilla/memory)调试内存泄漏。
 
 <!-- Example: Try this **demo** to play with detached DOM trees. -->
 
@@ -290,7 +296,7 @@ leafRef = null;
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots) 由技术撰稿人 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (创作) 。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots) 由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

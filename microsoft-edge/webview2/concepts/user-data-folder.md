@@ -7,14 +7,15 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 05/06/2021
-ms.openlocfilehash: 4879e5d0595e4e421a789661651d71d940aa45a0
-ms.sourcegitcommit: ae41e2c0ca42fb7eac73824c828305c7b13b4203
+ms.openlocfilehash: e61e619a8a545ba212794e0003c2b1f0852e3944
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "12345735"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430743"
 ---
-# <a name="manage-the-user-data-folder"></a>管理用户数据文件夹
+# <a name="manage-user-data-folders"></a>管理用户数据文件夹
+<!-- # old title: Manage the user data folder -->
 
 WebView2 应用程序与用户数据文件夹交互，以存储浏览器数据，如 Cookie、权限和缓存的资源。  WebView2 控件的每个实例都与一个用户数据文件夹关联。  每个用户数据文件夹对于用户都是唯一的。
 
@@ -30,11 +31,13 @@ WebView2 应用程序与用户数据文件夹交互，以存储浏览器数据�
 
 *  如果应用程序没有重复用户，请为每个用户创建一个新的用户数据文件夹，并删除以前的用户数据文件夹。
 
+*  清除用户数据文件夹中的浏览数据，而不是删除用户数据文件夹。  例如，当用户退出时清除用户数据和历史记录。 请参阅 [清除用户数据文件夹中的浏览数据](clear-browsing-data.md)。
+
 
 <!-- ====================================================================== -->
 ## <a name="create-user-data-folders"></a>创建用户数据文件夹
 
-`userDataFolder`若要指定用户数据文件夹的位置，在调用 [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) (Win32) 或 [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) (.NET) 时包括 参数。  创建后，WebView2 控件中的浏览器数据存储在 的子文件夹内 `userDataFolder`。
+若要指定用户 `userDataFolder` 数据文件夹的位置，在调用 [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) (Win32) 或 [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) (.NET) 时包括 参数。  创建后，WebView2 控件中的浏览器数据存储在 的子文件夹内 `userDataFolder`。
 
 未指定 `userDataFolder` 时，WebView2 在默认位置创建用户数据文件夹，如下所示：
 
@@ -64,14 +67,14 @@ WebView2 应用程序与用户数据文件夹交互，以存储浏览器数据�
 
 WebView2 控件可以共享相同的用户数据文件夹，以执行以下操作：
 
-*  通过运行在一个浏览器进程中优化系统资源。  请参阅 [WebView2 进程模型](../concepts/process-model.md)。
+*  通过运行在一个浏览器进程中优化系统资源。  请参阅 [WebView2 应用的进程模型](../concepts/process-model.md)。
 
 *  共享浏览器历史记录和缓存的资源。
 
 
 共享用户数据文件夹时，请考虑以下事项：
 
-*  当使用 [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) (Win32) 或 [NewBrowserVersionAvailable](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) (.NET) 事件重新创建 WebView2 控件以更新浏览器版本时，请确保浏览器进程退出并关闭共享相同用户数据文件夹的 WebView2 控件。  若要检索浏览器进程的进程 ID，请使用 `BrowserProcessId` WebView2 控件的 属性。
+*  当重新创建 WebView2 控件以使用 [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) (Win32) 或 [NewBrowserVersionAvailable](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) (.NET) 事件更新浏览器版本时，请确保浏览器进程退出并关闭共享相同用户数据文件夹的 WebView2 控件。  若要检索浏览器进程的进程 ID，请使用 `BrowserProcessId` WebView2 控件的 属性。
 
 *  共享相同用户数据文件夹的 WebView2 控件必须对 [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) (Win32) 或 [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) (.NET) 使用相同的选项。  如果没有，WebView2 的创建将失败 `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)`。
 
@@ -81,3 +84,9 @@ WebView2 控件可以共享相同的用户数据文件夹，以执行以下操�
 若要隔离应用程序的不同部分，或者不需要在 WebView2 控件之间共享数据，可以使用不同的用户数据文件夹。  例如，应用程序可以包含两个 WebView2 控件，一个控件用于显示广告，另一个控件用于显示应用程序内容。  可以针对每个 WebView2 控件使用不同的用户数据文件夹。
 
 每个 WebView2 浏览器进程会占用额外的内存和磁盘空间。  因此，请避免同时运行具有过多不同用户数据文件夹的 WebView2 控件。
+
+
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
+
+* [清除用户数据文件夹中的浏览数据](clear-browsing-data.md)

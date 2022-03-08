@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/06/2022
+ms.openlocfilehash: 911e0f4c8f4e1a4e9551e0854d1f46e99885a2d6
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430148"
 ---
 # <a name="network-conditions-tool"></a>网络条件工具
 
@@ -34,7 +40,7 @@ ms.date: 01/06/2022
 ## <a name="set-the-user-agent-string"></a>设置用户代理字符串
 
 请参阅：
-* [在模拟移动设备和](../device-mode/index.md#set-the-user-agent-string) 设备仿真 (_中设置用户) _。
+* [在模拟移动设备和](../device-mode/index.md#set-the-user-agent-string) 设备仿真 _ (中设置用户) _。
 * [替代用户代理字符串](../device-mode/override-user-agent.md)。
 * [在网络功能参考中设置](../network/reference.md#set-user-agent-client-hints)_用户代理客户端提示_。
 
@@ -50,7 +56,7 @@ ms.date: 01/06/2022
 
 以下"新增功能"条目提供了其他信息：
 
-* [更轻松地自定义 User-Agent](../whats-new/2021/07/devtools.md#easier-customization-of-user-agent-client-hints) _93 (Microsoft Edge中的_新增功能中的客户端) 。
-* [User-Agent Client Hints for devices in the Network conditions tab](../whats-new/2021/05/devtools.md#user-agent-client-hints-for-devices-in-the-network-conditions-tab) in _What's New In DevTools (Microsoft Edge 92) _.
-* [在](../whats-new/2021/04/devtools.md#new-options-to-configure-content-encodings-in-the-network-conditions-tool) 91 年 9 月 1 日，在"开发工具中的新增功能"中的"网络条件"工具中配置 (Microsoft Edge_编码) _。
+* [更轻松地自定义 User-Agent](../whats-new/2021/07/devtools.md#easier-customization-of-user-agent-client-hints) _93) DevTools 中的新增功能中的客户端 (Microsoft Edge提示_。
+* [User-Agent Client Hints for devices in the Network conditions tab](../whats-new/2021/05/devtools.md#user-agent-client-hints-for-devices-in-the-network-conditions-tab) in _What's New in DevTools (Microsoft Edge 92) _.
+* [在 DevTools](../whats-new/2021/04/devtools.md#new-options-to-configure-content-encodings-in-the-network-conditions-tool) (Microsoft Edge 91) 中的网络条件工具中配置内容编码_的新选项_。
 * [更新User-Agent](../whats-new/2019/12/devtools.md#updated-user-agent-strings) _DevTools (Microsoft Edge 80 中的_新增功能中的) 。

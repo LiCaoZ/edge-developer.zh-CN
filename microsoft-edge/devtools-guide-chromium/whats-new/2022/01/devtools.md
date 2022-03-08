@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/14/2022
-ms.openlocfilehash: a37a41b9027553cb2c8a624591ab2f210d5ad2e9
-ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.openlocfilehash: 6e2ee1eab1c49c22fa6e98f8b0e3d0a87a3bca88
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "12346413"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431835"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-97"></a>DevTools (Microsoft Edge 97 中的新增) 
 
@@ -30,7 +30,7 @@ ms.locfileid: "12346413"
 
 新的 **分离元素** 工具在页面上查找所有分离的元素并显示它们。  可以展开和折叠分离的元素，以查看同时保留的父节点和子节点。  可以通过单击"收集垃圾"图标来触发浏览器的垃圾回收****，然后确认当无法对分离的元素进行垃圾回收时出现内存泄漏。  若要跳转到引用已分离元素的 JavaScript 代码，请单击"分析"按钮以拍摄**** 堆快照。
 
-分离**的元素工具**最初在版本 93 中作为实验[Microsoft Edge提供](../../2021/07/devtools.md#debug-dom-node-memory-leaks-with-the-new-detached-elements-tool)。  该工具现在默认在版本 97 Microsoft Edge可用。
+分离**的元素工具**最初在版本 [93](../../2021/07/devtools.md#debug-dom-node-memory-leaks-with-the-new-detached-elements-tool) 中Microsoft Edge实验。  该工具现在默认在版本 97 Microsoft Edge可用。
 
 <!-- ![The Detached Elements tool.](../../media/2022/01/detached-elements-tool.png) -->
 <!-- image too wide to be crisp inline; solution would be undock devtools then 1 or 2 images in series (DevTools then browser).  right-click works, but reverting to lightbox for now -->
@@ -47,12 +47,12 @@ ms.locfileid: "12346413"
 
 有关此扩展的常规信息，请参阅 [适用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)。
 
-### <a name="screencast-enhancements-deprecation-warnings-and-new-launch-options-for-microsoft-edge"></a>屏幕广播增强功能、弃用警告以及适用于 Microsoft Edge
+### <a name="screencast-enhancements-deprecation-warnings-and-new-launch-options-for-microsoft-edge"></a>屏幕广播增强功能、弃用警告和适用于Microsoft Edge
 
 <!-- Title: Screeencast improvements and launch options for Microsoft Edge in the Visual Studio Code extension -->
 <!-- Subtitle: The correct list of emulated devices is shown for the screeencast, the correct device emulation is displayed, and there are now launch arguments for the browser. -->
 
-当前版本的 Microsoft Edge DevTools Visual Studio Code修复了社区报告的一些问题：
+当前版本的 Microsoft Edge DevTools 扩展Visual Studio Code修复了社区报告的一些问题：
 
 *  屏幕广播中的仿真设备列表现在与浏览器中的仿真设备列表相同。
 
@@ -71,7 +71,7 @@ ms.locfileid: "12346413"
 <!-- Title: Have you tried Focus Mode? -->
 <!-- Subtitle: To de-clutter and simplify the DevTools interface to focus on debugging web apps, enable Focus Mode in DevTools settings. -->
 
-由于早期反馈，我们一直在针对开发人员工具的新焦点模式接口Microsoft Edge Bug 修复。  焦点模式是一个新的 UI 选项，允许你将工具停靠在 DevTools 窗口的顶部或一侧，并从工具栏中删除混乱邮件。
+由于早期反馈，我们一直在针对开发人员工具的新焦点模式接口进行改进Microsoft Edge Bug 修复。  焦点模式是一个新的 UI 选项，允许你将工具停靠在 DevTools 窗口的顶部或一侧，并从工具栏中删除混乱邮件。
 
 使用焦点模式时，所有相同的工具和 [自定义主题](../../../customize/theme.md) 都可用，就像在现有的 DevTools UI 中一样。  了解有关焦点模式 [UI 的更多信息](../../../experimental-features/index.md#focus-mode)，或者通过启用 DevTools 设置**Experiments** 中的对焦模式实验来**尝试** > 它。****
 
@@ -84,7 +84,7 @@ ms.locfileid: "12346413"
 <!-- Title: 3D View better integrates with different themes in DevTools -->
 <!-- Subtitle: The 3D View tool now works when you select a different color theme in DevTools. -->
 
-在早期版本的 Microsoft Edge中，更改 DevTools 中的主题，然后打开 3D 视图工具会导致面板为空。  This issue has now been fixed， in Microsoft Edge 97.  若要了解更多信息，请参阅 [向 DevTools](../../../customize/theme.md) 和 [3D 视图应用颜色主题](../../../3d-view/index.md)。
+在早期版本的 Microsoft Edge，在 DevTools 中更改主题，然后打开 3D 视图工具会导致面板空白。  This issue has now been fixed， in Microsoft Edge 97.  若要了解更多信息，请参阅 [向 DevTools](../../../customize/theme.md) 和 [3D 视图应用颜色主题](../../../3d-view/index.md)。
 
 ![3D 视图工具现在支持更改颜色主题。](../../media/2022/01/3d-view-with-color-theme.png)
 
@@ -101,7 +101,7 @@ Microsoft Edge版本 97 还包括来自 Chromium 项目的以下更新：
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New In DevTools (Chrome 97)](https://developer.chrome.com/blog/new-in-devtools-97) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 97)](https://developer.chrome.com/blog/new-in-devtools-97) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
 
 [![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->

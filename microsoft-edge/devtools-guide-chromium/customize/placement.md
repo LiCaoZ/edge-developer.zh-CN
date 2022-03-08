@@ -1,81 +1,83 @@
 ---
 title: 更改开发工具放置位置（取消停靠，停靠到底部，停靠到左侧）
-description: 如何将 Microsoft Edge DevTools 移动到视区底部或左侧或单独的窗口。
+description: 如何将开发人员Microsoft Edge工具移动到浏览器窗口的底部或左侧，或者将 DevTools 撤消到单独的窗口中。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 02/13/2022
+ms.openlocfilehash: 43f07c5f8295daa374cb56beb09fb8f0030dfe12
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431215"
 ---
-<!-- Copyright Kayce Basques
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       https://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.  -->
 # <a name="change-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>更改开发工具放置位置（取消停靠，停靠到底部，停靠到左侧）
 
-默认情况下，Microsoft Edge DevTools 固定在视口窗口 (右侧) 。  还可以将 DevTools 停靠在窗口底部或左侧，或者将 DevTools 停靠到单独的窗口。
+你可以更改 DevTools 在浏览器中的停靠位置。  默认情况下，Microsoft Edge工具固定在浏览器窗口的右侧。  还可以将 DevTools 停靠在窗口底部或左侧，或者将 DevTools 停靠到单独的窗口。
+
+若要更改 DevTools 放置在浏览器窗口中的位置，请执行以下操作：
+
+*  单击"自定义**和控制 DevTools** ![ (自定义和控制 DevTools"图标****](../media/customize-devtools-icon-light-theme.png)。) 菜单按钮，然后在"扩展坞"部分，选择布局选项：
+   *  **使用"撤消** 停靠到 ![ (窗口中](../media/undock-into-separate-window-icon.png) "图标取消停靠到单独的窗口。) 
+   *  **停靠到左侧** (!["扩展坞向左"](../media/dock-to-left-icon.png) 图标。) 
+   *  **"扩展坞 (**![底部](../media/dock-to-bottom-icon.png)"图标。) 
+   *  **扩展坞向右 (**!["扩展坞向右](../media/dock-to-right-icon.png)"图标。) 
+
+![DevTools 中的扩展坞端菜单。](../media/devtools-intro-docking-menu.msft.png)
+
+**扩展坞**向左或**** 向右，使 DevTools 与 Web 产品并排运行，并且当你使用设备仿真功能模拟移动设备时 ([出色) ](../device-mode/index.md)。  **停靠到左侧**，**停靠到右侧**选项与高分辨率显示效果最佳。
 
 
 <!-- ====================================================================== -->
-## <a name="examples-of-the-various-placements-of-devtools"></a>DevTools 的各种放置示例
+## <a name="undock-devtools-into-a-separate-window"></a>将 DevTools 撤消到单独的窗口中
 
-### <a name="dock-to-left"></a>扩展坞向左
+当你想要使用多个监视器时，或者如果你需要在全屏应用上工作，并且需要为 DevTools UI 提供大量空间时，将 DevTools 撤消到其自己的独立窗口中。  下图显示了 DevTools 已撤消插入其自己的专用窗口：
 
-:::image type="content" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="DevTools 固定到窗口的左侧。" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+![DevTools 已取消停靠到单独的窗口中。](../media/devtools-intro-docking-own-window.msft.png)
 
-### <a name="dock-to-bottom"></a>扩展坞到底部
+由于 WebTools 现在具有自己的专用窗口，正在设计的 WebPage 现在占据整个浏览器窗口：
 
-:::image type="content" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="DevTools 固定到窗口底部。" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+![正在设计下的 WebPage 现在独立于 DevTools 窗口，该窗口从浏览器的网页窗口中取消停靠。](../media/browser-webpage-window-devtools-undocked.png)
 
-### <a name="undock-into-separate-window"></a>撤消停靠到单独的窗口中
 
-DevTools 可以撤消停靠到单独的窗口，你可以移动到单独的监视器。  浏览器随后具有自己的专用窗口，没有 DevTools，已取消停靠：
-
-:::image type="content" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="没有 DevTools 的其自己的专用窗口中的浏览器，已取消停靠。" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
-
-然后，DevTools 将撤消停靠到其自己的单独专用窗口中：
-
-:::image type="content" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="DevTools 已取消停靠到其自己的单独专用窗口中。" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
+请参阅[更改 DevTools 放置位置（取消停靠，停靠到底部，停靠到左侧）](placement.md)。
 
 
 <!-- ====================================================================== -->
-## <a name="change-placement-from-the-main-menu"></a>从主菜单更改位置
+## <a name="dock-devtools-in-the-left-side-of-the-browser"></a>浏览器左侧的扩展坞 DevTools
 
-1. 单击"自定义`...`和控制 **DevTools** () "，然后选择"撤消停靠到单独的**窗口"**![ ("](../media/undock-icon.msft.png)"撤消停靠"。) ，从底部**到 (** ![](../media/bottom-icon.msft.png) 扩展坞底部。) 或 **Dock** 向左移动 (![](../media/left-icon.msft.png) 扩展坞向左。) 。
+下图显示了停靠在浏览器窗口左侧的 DevTools：
 
-:::image type="content" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="选择&quot;撤消停靠到单独的窗口&quot;。" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
+![DevTools 固定在左侧。](../media/devtools-intro-docking-left.msft.png)
 
 
 <!-- ====================================================================== -->
-## <a name="change-placement-from-the-command-menu"></a>从命令菜单更改位置
+## <a name="dock-devtools-in-the-bottom-of-the-browser"></a>浏览器底部的扩展坞 DevTools
 
-1. [打开“命令”菜单](../command-menu/index.md)。  为此，你可以按 `Shift`++`Ctrl``P` Windows/Linux`P` `Command`+`Shift`+或 macOS。
-1. 在 字符 `>` 后输入 `dock`，然后选择以下命令之一：
+**当你没有足够的** 水平显示空间，或者你想要在 DOM 或控制台中调试长文本时，停靠到底部会 **有所帮助**。  下图显示了浏览器窗口底部的 DevTools：
+
+![DevTools 固定到底部。](../media/devtools-intro-docking-bottom.msft.png)
+
+
+<!-- ====================================================================== -->
+## <a name="dock-devtools-in-the-right-side-of-the-browser"></a>浏览器右侧扩展坞 DevTools
+
+下图显示了浏览器窗口右侧是默认位置的 DevTools：
+
+![DevTools 固定到右侧。](../media/devtools-intro-docking-right.msft.png)
+
+
+<!-- ====================================================================== -->
+## <a name="change-where-devtools-is-docked-by-using-the-command-menu"></a>使用命令菜单更改 DevTools 的停靠位置
+
+1. 打开命令菜单。  为此，请单击"自定义和控制 **DevTools** ![ (自定义和控制 DevTools](../media/customize-devtools-icon-light-theme.png) "图标。单击") "菜单按钮，然后单击"运行 **命令"**。  或者，按 `Shift`++`Ctrl``P` Windows/Linux 或`P` `Command`+`Shift`+macOS。
+
+1. 键入 **dock**，然后选择扩展坞命令：
 
     *  **扩展坞到底部**
     *  **扩展坞向左**
     *  **扩展坞向右**
     *  **还原最后一个扩展坞位置**
     *  **撤消停靠到单独的窗口中**
-
-    您还可以从主菜单访问 [这些命令](#change-placement-from-the-main-menu)。
-
-   :::image type="content" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Undock 命令。" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
-
-
-<!-- ====================================================================== -->
-> [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/customize/placement)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
-
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
-本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

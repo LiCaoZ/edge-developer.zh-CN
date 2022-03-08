@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: a8b1cdcdfa2638a9a3b4315e6d2a946309c7c910
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431849"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -22,7 +28,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # <a name="view-and-debug-media-players-information"></a>查看和调试媒体播放器信息
 
-使用 **DevTools** Microsoft Edge中的媒体工具查看信息并按浏览器选项卡调试媒体播放器。
+使用 **媒体工具** 查看信息并按浏览器选项卡调试媒体播放器。
 
 
 <!-- ====================================================================== -->
@@ -30,9 +36,9 @@ ms.date: 05/04/2021
 
 **媒体工具**是 DevTools 中用于检查网页的媒体播放器的主要位置。
 
-1. [打开 DevTools](../open/index.md)。
+1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
 
-1. 若要打开 **媒体面板** ，请选择自定义和控制 **DevTools** `...` > **更多工具** > **Media**。
+1. 在 DevTools 中，在主工具栏上，选择"**媒体"** 选项卡。 如果该选项卡不可见，请单击"更多选项卡" (**** 更多选项卡"图标](../media/more-tabs-icon-light-theme.png)。****) 按钮![，或单击"更多工具 (更多工具"图标。) 按钮。](../media/more-tools-icon-light-theme.png) ![
 
    :::image type="content" source="../media/media-panel-empty.msft.png" alt-text="媒体面板。" lightbox="../media/media-panel-empty.msft.png":::
 

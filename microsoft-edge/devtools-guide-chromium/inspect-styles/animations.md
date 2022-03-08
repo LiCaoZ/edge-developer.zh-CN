@@ -1,11 +1,17 @@
 ---
-title: 检查动画
-description: 使用 DevTools 中的动画工具检查Microsoft Edge动画。
+title: 检查和修改 CSS 动画效果
+description: 使用动画工具中的动画检查器检查和修改 CSS 动画效果。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/11/2021
+ms.openlocfilehash: a937f5d957c4d827857cb3008f07eb53a158e489
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431709"
 ---
 <!-- Copyright Kayce Basques
 
@@ -20,9 +26,10 @@ ms.date: 05/11/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="inspect-animations"></a>检查动画
+# <a name="inspect-and-modify-css-animation-effects"></a>检查和修改 CSS 动画效果
+<!-- orig title: # Inspect animations -->
 
-使用 DevTools 中的**动画**工具检查Microsoft Edge动画。  动画 **工具** 包含动画 _检查器_;它们同义。
+使用动画工具中的动画检查器检查和**** 修改 CSS **动画**效果。
 
 :::image type="content" source="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png" alt-text="动画工具。" lightbox="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png":::
 
@@ -58,11 +65,11 @@ ms.date: 05/11/2021
 
 若要打开动画检查器，请使用以下任一方法，在 DevTools 中：
 
-*  从主**工具栏或**"箱"**** 上：单击****!["更多工具" ("更多工具"图标](../media/more-tools-icon-light-theme.png)。) 按钮，然后选择"**动画"**。
+*  从主**工具栏或**"箱"**** 上：单击"****![更多工具 (更多工具"图标](../media/more-tools-icon-light-theme.png)。) 按钮，然后选择"**动画"**。
 
    :::image type="content" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="使用主菜单的动画。" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
 
-*  从"**自定义**"菜单中：单击"自定义**** 和控制 **DevTools** ![ (自定义"图标](../media/customize-devtools-icon-light-theme.png)。) 菜单按钮，指向"更多工具"子菜单，然后选择"**动画"**。
+*  从"**自定义"** 菜单中：单击"自定义和控制 **DevTools** ![ (自定义"图标****](../media/customize-devtools-icon-light-theme.png)。) 菜单按钮，指向"更多工具"子菜单，然后选择"**动画"**。
 
 *  **** 从命令**菜单中：当** DevTools `Shift``P`+`Ctrl`+具有焦点时，按 Windows/Linux`P``Shift`++`Command` 或 macOS 打开命令菜单，开始键入 `animations`，然后选择"箱： 显示**动画"**。
 
@@ -96,7 +103,7 @@ ms.date: 05/11/2021
 捕获动画后，有多种方式可以重播它：
 
 *  将鼠标悬停在“**概述**”窗格中的缩略图上，查看缩略图的预览。
-*  Select the Animation Group from the **Overview** pane (so that it is displayed in the **Details** pane) ， and then click the **replay** (![replay icon.](../media/replay-button-icon.msft.png)) icon.  动画会在视区中重播。  单击动画**速度 (**![动画速度](../media/animation-speed-buttons-icon.msft.png)图标。) 图标可更改当前选定的动画组的预览速度。  可以使用红色竖线更改当前位置。
+*  Select the Animation Group from the **Overview** pane (so that it is displayed in the **Details** pane) ， and then click the **replay** (![replay icon.](../media/replay-button-icon.msft.png)) icon.  动画会在视区中重播。  单击动画**速度 (**![动画速度图标](../media/animation-speed-buttons-icon.msft.png)。) 图标可更改当前选定的动画组的预览速度。  可以使用红色竖线更改当前位置。
 *  单击并拖动红色竖线以清理视区动画。
 
 ### <a name="view-animation-details"></a>查看动画详细信息
@@ -113,7 +120,7 @@ ms.date: 05/11/2021
 
 :::image type="content" source="../media/inspect-styles-glitch-display-animations-highlight.msft.png" alt-text="动画迭代关系图。" lightbox="../media/inspect-styles-glitch-display-animations-highlight.msft.png":::
 
-如果两个元素应用了相同的动画，则动画检查器会为元素分配相同的颜色。  颜色是随机的，没有意义。  例如，在下图中`div.cwccw.earlier``div.cwccw.later`，这两个元素应用了相同的动画 () `spinrightleft` `div.ccwcw.earlier` `div.ccwcw.later`和 元素一样。
+如果两个元素应用了相同的动画，则动画检查器会为元素分配相同的颜色。  颜色是随机的，没有意义。  例如，在下图中`div.cwccw.earlier` `div.ccwcw.earlier` `div.cwccw.later` `spinrightleft` `div.ccwcw.later`，这两个元素应用了相同的动画 () 和 元素一样。
 
 :::image type="content" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="颜色编码的动画。" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
 

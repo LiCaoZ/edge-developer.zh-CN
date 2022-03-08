@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
+ms.openlocfilehash: 82ba672c3d5f0d18f0a80031bac08e1d45ef4df6
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430540"
 ---
 # <a name="verify-that-a-page-is-usable-by-people-with-color-blindness"></a>验证页面是否对色盲者可用
 
@@ -39,5 +45,5 @@ ms.date: 06/07/2021
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [模拟视觉](./emulate-vision-deficiencies.md)缺陷 - 定义"模拟视觉缺陷"下拉列表**** 中的项目，包括 Protanopia、Deuteranopia、Tritanopia 和 Achromatopia。
+*  [模拟视觉](emulate-vision-deficiencies.md)缺陷 - 定义"模拟视觉缺陷"下拉列表**** 中的项目，包括 Protanopia、Deuteranopia、Tritanopia 和 Achromatopia。
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)

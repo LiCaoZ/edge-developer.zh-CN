@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 573cba8bd439b975845f2999bb3be9ee14cfefb2
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432997"
 ---
 <!-- Copyright Kayce Basques
 
@@ -64,7 +70,7 @@ ms.date: 05/04/2021
 
 *  **编辑器窗格** (右上角显示) 。  在导航器窗格中选择 **文件后，** 此窗格将显示该文件的内容。
 
-*  调试 **器** 窗格 (位于底部) 。  此窗格提供用于检查网页的 JavaScript 的工具。  如果 DevTools 窗口很宽，则此窗格显示在"编辑器" **窗格的右侧** 。
+*  调试 **器** 窗格 (位于底部的) 。  此窗格提供用于检查网页的 JavaScript 的工具。  如果 DevTools 窗口很宽，则此窗格显示在"编辑器" **窗格的右侧** 。
 
 
 <!-- ====================================================================== -->
@@ -99,7 +105,7 @@ function updateLabel() {
 
 1. 在调试 **器窗格中** ，单击 **"事件侦听器断点"** 以展开部分。  开发工具显示可展开事件类别的列表，如**动画**和**剪贴板**。
 
-1. 在" **鼠标事件"** 类别旁边， **单击"展开** (![展开"图标。) ](../media/expand-icon.msft.png) 。  开发工具显示鼠标事件的列表，如**单击**和**鼠标按下**。  每个事件旁边都有一个复选框。
+1. 在"**鼠标事件"** 类别旁边，**单击"展开**![ (展开"图标](../media/expand-icon.msft.png)。) 。  开发工具显示鼠标事件的列表，如**单击**和**鼠标按下**。  每个事件旁边都有一个复选框。
 
 1. 选中单击旁边的 **复选框**。  现在开发工具设置为在运行任何 `click` 事件侦听器时自动暂停。
 
@@ -111,7 +117,7 @@ function updateLabel() {
     if (inputsAreEmpty()) {
     ```
 
-    如果暂停另一行代码，请单击****!["恢复脚本执行" ("恢复](../media/resume-script-run-icon.msft.png)脚本执行"。) ，直到您暂停到正确的行。
+    如果您在其他代码行上****![暂停，请单击"恢复脚本执行" ("恢复](../media/resume-script-run-icon.msft.png)脚本执行"。) ，直到您暂停到正确的行。
 
     > [!NOTE]
     > 如果在另一行暂停，则将拥有一个浏览器扩展，此扩展会在你访问的每个网页上注册一个 `click` 事件侦听器。  你已在扩展的 `click` 侦听器中暂停。  如果使用 InPrivate 模式在专用模式下**** 浏览（这将禁用所有扩展名）时，您可能会看到每次在所需的代码行上暂停。
@@ -126,7 +132,7 @@ function updateLabel() {
 
 Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代码允许你演练代码的运行时。  一次浏览一行，以准确确定代码的位置以与不同的顺序运行。  立即尝试：
 
-1. 单击 **"Step over next function call (** ![Step over next function call"](../media/step-over-icon.msft.png) 。) 。  DevTools 无需步入即可运行以下代码。
+1. 单击 **"Step over next function call"** (![Step over next function call。](../media/step-over-icon.msft.png)) 。  DevTools 无需步入即可运行以下代码。
 
     ```javascript
     if (inputsAreEmpty()) {
@@ -135,9 +141,9 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
     > [!NOTE]
     > 开发工具跳过几行代码。  这是因为计算 `inputsAreEmpty()` 结果为 false，因此语句的代码 `if` 块不会运行。
 
-1. 在 DevTools 的"源"工具上，单击"单步执行下一个**** 函数**调用 (** ![](../media/step-into-icon.msft.png) ""单步执行下一个函数调用"。) `updateLabel()` 可单步执行函数的运行时，一次一行。
+1. 在 DevTools 的"源"工具上，单击"单步执行下一个**** 函数**调用 (** ![](../media/step-into-icon.msft.png) 单步执行下一个函数调用"。) `updateLabel()` 可单步执行函数的运行时，一次一行。
 
-这是逐步执行代码的一个基本概念。  如果查看 中的代码 `get-started.js`，可以看到 bug 可能位于 函数中的某一 `updateLabel()` 位置。  与其单步执行每行代码，不如使用另一种类型的断点 (代码行断 _点) 将_ 代码暂停到离错误可能的位置更近的位置。
+这是逐步执行代码的一个基本概念。  如果查看 中的代码 `get-started.js`，可以看到 bug 可能位于 函数中的某一 `updateLabel()` 位置。  与其单步执行每行代码，不如使用另一种类型的断点 (代码行断 _点) 将_ 代码暂停到更接近 bug 的可能位置的位置。
 
 
 <!-- ====================================================================== -->
@@ -153,7 +159,7 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 
 1. 在左侧，此特定代码行的编号显示为 **34**。  单击第 **34 行**。  开发工具在 **34** 的左侧显示一个红色图标。  红色图标表示代码行断点位于此行上。  开发工具始终在运行此代码行之前暂停。
 
-1. 单击 **"恢复脚本执行** (![Resume 脚本执行"](../media/resume-script-run-icon.msft.png) 。) 。  脚本将继续运行，直到到达第 34 行。  在第 31、32 和 33 行上，开发工具在每行的分号右边打印`addend1`、`addend2` 和 `sum` 的值。
+1. 单击 **"恢复脚本执行** (![Resume 脚本执行](../media/resume-script-run-icon.msft.png) "。) 。  脚本将继续运行，直到到达第 34 行。  在第 31、32 和 33 行上，开发工具在每行的分号右边打印`addend1`、`addend2` 和 `sum` 的值。
 
    :::image type="content" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="DevTools 暂停第 34 行的代码行断点。" lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
 
@@ -171,11 +177,11 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 
 ### <a name="method-2-watch-expressions"></a>方法 2：监视表达式
 
-**监视窗格**允许您监视`sum`变量的值，例如 (或) 表达式 (如) `typeof sum` 。  可以在监视表达式中存储任何有效的 JavaScript 表达式。
+**监视窗格**允许您`sum`监视变量的值，例如 (或) 表达式 (如) `typeof sum` 。  可以在监视表达式中存储任何有效的 JavaScript 表达式。
 
 1. 选择" **监视"** 选项卡。
 
-1. 单击 **"添加监视表达式** (![添加监视表达式](../media/add-expression-icon.msft.png) "。) 。
+1. 单击 **"添加监视表达式 (**![添加监视表达式](../media/add-expression-icon.msft.png)"。) 。
 
 1. 键入 `typeof sum`。
 
@@ -206,13 +212,13 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 
 我们已确定针对 Bug 的可能修复方法。  接下来，直接在 DevTools UI 中编辑 JavaScript 代码，然后重新运行演示以测试修复，如下所示。
 
-1. 单击 **"恢复脚本执行** (![Resume 脚本执行"](../media/resume-script-run-icon.msft.png) 。) 。
+1. 单击 **"恢复脚本执行** (![Resume 脚本执行](../media/resume-script-run-icon.msft.png) "。) 。
 
 1. 在" **编辑器"** 窗格中，将行替换为 `var sum = addend1 + addend2` `var sum = parseInt(addend1) + parseInt(addend2)`。
 
-1. 按 `Control`+`S` (Windows、Linux) 或 `Command`+`S` (macOS) 保存更改。
+1. 按 `Ctrl`+`S` (Windows、Linux) 或 `Command`+`S` (macOS) 保存更改。
 
-1. 单击**停用断点 (**![停用断点](../media/deactivate-breakpoints-button-icon.msft.png)。) 。  它将更改蓝色，以指示选项处于活动状态。  设置“**停用断点**”时，开发工具会忽略你设置的任何断点。
+1. 单击**停用断点**![ (停用断点](../media/deactivate-breakpoints-button-icon.msft.png)。) 。  它将更改蓝色，以指示选项处于活动状态。  设置“**停用断点**”时，开发工具会忽略你设置的任何断点。
 
 1. 尝试使用具有不同值的演示。  演示现在计算正确。
 
@@ -231,15 +237,15 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 *  已捕获或未捕获异常的断点。
 *  请求的 URL 与提供的子字符串匹配时触发的 XHR 断点。
 
-有关何时以及如何使用每种类型的信息，请参阅 [使用断点暂停代码](./breakpoints.md)。
+有关何时以及如何使用每种类型的信息，请参阅 [使用断点暂停代码](breakpoints.md)。
 
-本文不介绍几个代码单步执行控件。  有关详细信息，请参阅"JavaScript [调试](./reference.md#step-through-code) 功能"中的逐行代码。
+本文不介绍几个代码单步执行控件。  有关详细信息，请参阅"JavaScript [调试](reference.md#step-through-code) 功能"中的逐行代码。
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [JavaScript 调试功能](./reference.md) - 使用源工具中的调试器 UI。
+*  [JavaScript 调试功能](reference.md) - 使用源工具中的调试器 UI。
 *  [源工具概述](../sources/index.md) - 介绍 JavaScript 调试工具和代码编辑器。
 
 

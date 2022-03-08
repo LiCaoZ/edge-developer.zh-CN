@@ -1,5 +1,5 @@
 ---
-title: WebView2 的导航事件
+title: WebView2 应用的导航事件
 description: WebView2 的导航事件：NavigationStarting、SourceChanged、ContentLoading、HistoryChanged、DOMContentLoaded 和 NavigationCompleted。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,20 +7,33 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 10/28/2021
-ms.openlocfilehash: ff496834191a2ea547dd2b0e3cb21ebf3453c640
-ms.sourcegitcommit: ae41e2c0ca42fb7eac73824c828305c7b13b4203
+ms.openlocfilehash: 14d31a0aafc396a48f9f4ab620aa025b891994ff
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "12345763"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431828"
 ---
-# <a name="navigation-events-for-webview2"></a>WebView2 的导航事件
+# <a name="navigation-events-for-webview2-apps"></a>WebView2 应用的导航事件
+<!-- old title: # Navigation events for WebView2 -->
+
+<!--
+maintenance links (keep)
+This, main page:
+* [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
+Derivative copies of this page's content, or links to this page:
+* [Get started with WebView2 in Win32 apps](../get-started/win32.md#step-12---navigation-events)
+* [Get started with WebView2 in WinForms apps](../get-started/winforms.md#step-7---navigation-events)
+* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md#step-7---navigation-events)
+* [Get started with WebView2 in WinUI 3 (Windows App SDK) apps](../get-started/winui.md#step-7---navigation-events)
+* [Get started with WebView2 in WPF apps](../get-started/wpf.md#step-6---navigation-events)
+-->
 
 支持的平台：Win32、Windows Forms、WinUi、WPF。
 
-导航事件在 WebView2 实例中显示的内容发生特定异步操作时运行。  例如，当 WebView2 用户导航到新网站时，本机内容通过侦听事件来侦听 `NavigationStarting` 更改。  导航操作完成后，运行 `NavigationCompleted` 。  有关导航事件的示例，请参阅 [WebView2 入门](../get-started/get-started.md)。
+本文介绍了 WebView2 应用的导航事件。  导航事件在 WebView2 实例中显示的内容发生特定异步操作时运行。  例如，当 WebView2 用户导航到新网站时，本机内容通过侦听事件来侦听 `NavigationStarting` 更改。  导航操作完成后，运行 `NavigationCompleted` 。
 
-<!--todo: Move the relevant information out of the get started guide to better focus the content and leave the most concise elements in the get started guide. -->
+有关导航事件的示例，请参阅 [WebView2 入门](../get-started/get-started.md)。
 
 导航事件的正常顺序为：
 1. `NavigationStarting`
@@ -32,7 +45,7 @@ ms.locfileid: "12345763"
 
 以下事件描述每次导航操作期间 WebView2 的状态：
 
-:::image type="content" source="../media/navigation-graph.png" alt-text="WebView2 导航事件。" lightbox="../media/navigation-graph.png":::
+![WebView2 导航事件。](../media/navigation-graph.png)
 
 | Sequence | 事件名称 | 详细信息 |
 | --- | --- | --- |

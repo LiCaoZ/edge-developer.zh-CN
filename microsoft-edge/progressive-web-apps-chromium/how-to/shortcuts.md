@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 ms.date: 09/13/2021
-ms.openlocfilehash: 21edb89e28867126ac5a3192aaf4623e93c71820
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
+ms.openlocfilehash: 4b0de2bfc042d8a227b628b6c7091f832356c641
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325737"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12433088"
 ---
 # <a name="define-app-shortcuts"></a>定义应用快捷方式
 
@@ -22,13 +22,13 @@ ms.locfileid: "12325737"
 
 下图显示了 iOS 上Microsoft Edge快捷方式：
 
-:::image type="content" source="../media/edge-ios-shortcuts.png" alt-text="iOS 上Microsoft Edge快捷方式。":::
+![iOS 上Microsoft Edge快捷方式。](../media/edge-ios-shortcuts.png)
 
-下图显示了 Webboard 应用上的跳转列表，位于Windows：
+下图显示了 Webboard 应用上的 Jumplist，位于Windows：
 
-:::image type="content" source="../media/pwa-shortcuts-in-taskbar.png" alt-text="Webboard 应用上的跳转列表Windows。":::
+![Webboard 应用上的 Jumplist Windows。](../media/pwa-shortcuts-in-taskbar.png)
 
-渐进式 Web (PBA) 还可以在 [Web 应用](./web-app-manifests.md)清单中将常见任务定义为快捷方式。
+渐进式 Web (PBA) 还可以在 Web 应用清单中将常见任务定义为 [快捷方式](web-app-manifests.md)。
 
 
 <!-- ====================================================================== -->
@@ -72,16 +72,21 @@ ms.locfileid: "12325737"
 <!-- ====================================================================== -->
 ## <a name="debug-shortcuts"></a>调试快捷方式
 
-通过使用 DevTools 的应用程序面板，可以测试快捷方式是否正确**** 配置。
+通过使用 DevTools 的应用程序面板，可以测试快捷方式是否正确配置。****
 
 若要测试是否正确配置了快捷方式：
 
-1.   在Microsoft Edge中，转到你的应用。
-1.   [打开 DevTools，](../../devtools-guide-chromium/open/index.md)例如按 (/Linux Windows 上的) 或 `Ctrl` + `Shift` + `I` `Command` + `Option` + `I` (macOS) 。
-1.   在主工具栏中，选择 **"应用程序"** 工具。  如有必要，请单击"**更多工具** (+) "，然后选择"应用程序 **"。**
-1.   在应用程序**工具中****，选择清单**。
-1.   向下滚动以显示快捷方式列表。
+1. 在Microsoft Edge中，转到你的应用。
 
-:::image type="content" source="../media/devtools-debug-shortcuts.png" alt-text="快捷方式在应用程序面板中列出。":::
+1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
+
+1. 在 DevTools 中，在主工具栏上，选择"**应用程序"** 选项卡。 如果该选项卡不可见，请单击"更多选项卡" (**** 更多选项卡"图标](../../devtools-guide-chromium/media/more-tabs-icon-light-theme.png)。****) 按钮![，或单击"更多工具 (更多工具"图标。) 按钮。](../../devtools-guide-chromium/media/more-tools-icon-light-theme.png) ![
+
+1. 在" **应用程序"** 工具中，选择" **清单"**。
+
+1. 向下滚动以显示快捷方式列表。
+
+   > [!div class="mx-imgBorder"]
+   > ![快捷方式在应用程序面板中列出。](../media/devtools-debug-shortcuts.png)
 
 若要了解有关使用应用程序面板调试 PWA 的信息，请参阅 Debug [Progressive Web Apps (PWA) ](../../devtools-guide-chromium/progressive-web-apps/index.md)。

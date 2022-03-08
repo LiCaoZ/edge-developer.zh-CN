@@ -1,5 +1,5 @@
 ---
-title: WebView2 进程模型
+title: WebView2 应用的进程模型
 description: WebView2 运行时进程模型，以及它如何使用用户数据文件夹和网站隔离。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,18 +7,19 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 09/21/2021
-ms.openlocfilehash: ccc9dd0ea22a21aa19e5f53db3b1ebb80f9d9cf1
-ms.sourcegitcommit: ae41e2c0ca42fb7eac73824c828305c7b13b4203
+ms.openlocfilehash: b6b9be1411df3495368a35f28b32d312a954ac66
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "12345749"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432402"
 ---
-# <a name="the-webview2-process-model"></a>WebView2 进程模型
+# <a name="process-model-for-webview2-apps"></a>WebView2 应用的进程模型
+<!-- old title: # The WebView2 process model -->
 
 支持的平台：Win32、Windows Forms、WinUI、WPF。
 
-WebView2 运行时使用与浏览器相同的Microsoft Edge模型。  此浏览器过程模型在内部 [查看新式 Web 浏览器 (第 1 部分 ](https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture)) 。
+WebView2 运行时使用与浏览器相同的Microsoft Edge模型。  此浏览器过程模型在内部查看[](https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture)新式 Web 浏览器中的浏览器体系结构_ (第 1 _部分) 。
 
 
 <!-- ====================================================================== -->
@@ -47,7 +48,7 @@ _WebView2 进程组_是 WebView2 运行时进程的集合。  WebView2 进程组
 
 WebView2 运行时进程集合中所有进程都绑定到浏览器进程，而浏览器进程又与单个用户数据文件夹关联。  如果应用程序使用多个用户数据文件夹，将针对每个用户数据文件夹创建一个 WebView2 运行时进程集合。
 
-用户数据文件夹可以由多个应用程序共享，但请务必考虑对性能和管理的影响，如管理用户 [数据文件夹中所述](./user-data-folder.md)。
+用户数据文件夹可以由多个应用程序共享，但请务必考虑对性能和管理的影响，如管理用户 [数据文件夹中所述](user-data-folder.md)。
 
 :::image type="content" source="../media/process-model-2.png" alt-text="进程 2." lightbox="../media/process-model-2.png":::
 

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 3818402aad2965783197b2e5fd6f70a4d5e6c048
-ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.openlocfilehash: 386f12ffeb884f807a7b6d1db3f7db926022a5fd
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "12346398"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432388"
 ---
 <!-- Copyright Kayce Basques
 
@@ -36,7 +36,7 @@ ms.locfileid: "12346398"
 
 可以从多个工具或面板中查看包含网页的资源。
 
-本指南假定你熟悉 Web 开发和开发工具Microsoft Edge[基础知识](../../devtools-guide-chromium/index.md)。[](https://developer.mozilla.org/docs/Learn)
+本指南假定你熟悉 Web 开发和开发工具Microsoft Edge[基础知识](../../devtools-guide-chromium/overview.md)。[](https://developer.mozilla.org/docs/Learn)
 
 
 <!-- ====================================================================== -->
@@ -75,7 +75,7 @@ ms.locfileid: "12346398"
 
 <!-- to do x, -->
 
-1. 打开[检查新](../network/index.md#log-network-activity) (窗口中的网络活动) 记录网络活动__ 日志。
+1. 打开 [检查新](../network/index.md#log-network-activity) ( _窗口中的网络) _ 记录网络活动记录。
 
 <!-- 1. Do the steps in that section, and then continue below. -->
 
@@ -102,7 +102,7 @@ ms.locfileid: "12346398"
 
     下面细目了上图中的不明显项。
 
-    | 页面项 | 描述 |
+    | 页面项 | 说明 |
     |:--- |:--- |
     | `top` | 主文档 [浏览上下文](https://developer.mozilla.org/docs/Web/HTML/Element/iframe)。 |
     | `airhorner.com` | 域。  嵌套在它下的所有资源都来自该域。  例如，文件的完整 `comlink.global.js` URL 可能是 `https://airhorner.com/scripts/comlink.global.js`。 |

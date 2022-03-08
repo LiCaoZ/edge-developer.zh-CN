@@ -1,11 +1,17 @@
 ---
-title: 控制台工具实用程序函数和选择器
-description: 在开发人员工具的控制台工具中提供的便利实用程序函数、命令和 DOM Microsoft Edge，而不是通过 JavaScript 源文件。
+title: 控制台工具实用功能和选择器
+description: 在开发人员工具的控制台工具中提供的便利实用程序函数、命令和 DOM Microsoft Edge，但不能通过 JavaScript 源文件使用。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 1a23d1e4909c1099e3e7bfe3b7255f2d2dbf2adf
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431814"
 ---
 <!-- Copyright Kayce Basques
 
@@ -20,7 +26,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="console-tool-utility-functions-and-selectors"></a>控制台工具实用程序函数和选择器
+# <a name="console-tool-utility-functions-and-selectors"></a>控制台工具实用功能和选择器
 <!-- orig:
 # Console Utilities API reference
 -->
@@ -37,7 +43,7 @@ ms.date: 05/04/2021
 <!-- ====================================================================== -->
 ## <a name="summary"></a>摘要
 
-| 函数 | 描述 |
+| 函数 | 说明 |
 |---|---|
 | [$_](#recently-evaluated-expression) | 返回最近计算表达式的值。 |
 | [$0 - $4](#recently-selected-element-or-javascript-object) | 返回最近选定的元素或 JavaScript 对象。 |
@@ -53,13 +59,13 @@ ms.date: 05/04/2021
 | [getEventListeners (对象) ](#geteventlisteners) | 返回在指定对象上注册的事件侦听器。 |
 | [键 (对象) ](#keys) | 返回一个数组，其中包含属于指定对象的属性的名称。 |
 | [monitor (function) ](#monitor) | 向控制台记录一条消息，指示函数名称，以及作为请求的一部分传递给函数的参数。 |
-| [monitorEvents (object[， events]) ](#monitorevents) | 当指定对象上发生指定事件之一时，该事件对象将记录到控制台。 |
+| [monitorEvents (对象[， events]) ](#monitorevents) | 当指定对象上发生指定事件之一时，该事件对象将记录到控制台。 |
 | [配置文件 ([name]) ](#profile) | 使用可选名称启动 JavaScript CPU 分析会话。 |
 | [profileEnd ([name]) ](#profileend) | 完成 JavaScript CPU 分析会话，并显示内存工具 **中** 的结果。 |
 | [queryObjects (构造函数) ](#queryobjects) | 返回由指定构造函数创建的对象的数组。 |
 | [table (data[， columns]) ](#table) | 记录指定数据对象的对象数据（格式化为带列标题的表）。 |
-| [undebug (函数) ](#undebug) | 停止对指定函数的调试，以便请求该函数时，不再调用调试程序。 |
-| [unmonitor (函数) ](#unmonitor) | 停止对指定函数的监视。 |
+| [undebug (function) ](#undebug) | 停止对指定函数的调试，以便请求该函数时，不再调用调试程序。 |
+| [unmonitor (function) ](#unmonitor) | 停止对指定函数的监视。 |
 | [unmonitorEvents (object[， events]) ](#unmonitorevents) | 停止监视指定对象和事件的事件。 |
 | [值 (对象) ](#values) | 返回一个数组，其中包含属于指定对象的所有属性的值。 |
 
@@ -83,7 +89,7 @@ $_
 
 ### <a name="example"></a>示例
 
-在下图中，将计算 () `2 + 2` 表达式。  然后 `$_` 计算属性，其中包含相同的值：
+在下图中，计算一个 () `2+2` 表达式。  然后 `$_` 计算属性，其中包含相同的值：
 
 :::image type="content" source="../media/console-arithmatic.msft.png" alt-text="$_ 是最近评估的表达式。" lightbox="../media/console-arithmatic.msft.png":::
 
@@ -147,7 +153,7 @@ $(selector, [startNode])
 
 在下图中， `$('img')` 返回对网页中第一 `<img>` 个元素的引用：
 
-:::image type="content" source="../media/console-element-selector-image.msft.png" alt-text="$ ('img') 返回对网页中第一<img> 元素的引用。" lightbox="../media/console-element-selector-image.msft.png":::
+:::image type="content" source="../media/console-element-selector-image.msft.png" alt-text="$ ( img') 返回对网页中第一<img> 元素的引用。" lightbox="../media/console-element-selector-image.msft.png":::
 
 右键单击返回的结果，然后选择"元素面板 **中的** 展示"以在 DOM 中查找它，或滚动到 **视图** 以显示在页面上。
 
@@ -474,7 +480,7 @@ inspect(document.body);
 返回在指定对象上注册的事件侦听器。
 
 <!-- add'l info -->
-返回值是包含每个已注册事件类型的数组的对象， (或 `click`) `keydown` 。  每个数组的成员是描述为每种类型注册的侦听器的对象。
+返回值是包含每个已注册事件类型（如 或) ） (`click` 数组 `keydown` 的对象。  每个数组的成员是描述为每种类型注册的侦听器的对象。
 
 ### <a name="syntax"></a>语法
 
@@ -492,7 +498,7 @@ getEventListeners(document);
 
 结果：
 
-:::image type="content" source="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png" alt-text="使用 getEventListeners 文档库 (输出) 。" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png":::
+:::image type="content" source="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png" alt-text="使用 getEventListeners 文档 (输出) 。" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png":::
 
 如果指定对象上注册了多个侦听器，则数组将包含每个侦听器的成员。  在下图中，在 事件的 `document` 元素上注册了两个事件 `click` 侦听器：
 
@@ -530,7 +536,7 @@ keys(object)
 var player1 = {"name": "Ted", "level": 42}
 ```
 
-在下面的代码中，`player1`为了简单起见， (在键入和在控制台中) 在`keys(player1)``values(player1)`全局命名空间代码中定义结果：
+在下面的代码中，`player1`为了简单起见， (在键入和在控制台) 全局`keys(player1)``values(player1)`命名空间中定义结果：
 
 ```javascript
 keys(player1)

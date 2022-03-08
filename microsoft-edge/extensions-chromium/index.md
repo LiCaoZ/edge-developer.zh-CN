@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/25/2021
+ms.openlocfilehash: 4d23b39a825d18caf413dded61e8104cf95fbb8f
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430848"
 ---
 # <a name="overview-of-microsoft-edge-extensions"></a>Microsoft Edge 扩展概述
 
@@ -61,7 +67,7 @@ Microsoft Edge *扩展* 是开发人员用于添加或修改 Microsoft Edge 功�
 
 *   [Chrome API](https://developer.chrome.com/extensions/api_index)
 *   [Opera 支持的扩展 API](https://dev.opera.com/extensions/apis)
-*   [将 Chrome 扩展移植到 Microsoft Edge](./developer-guide/port-chrome-extension.md)
+*   [将 Chrome 扩展移植到 Microsoft Edge](developer-guide/port-chrome-extension.md)
 
 所需 API 定义了为解决各浏览器之间差异而必须进行的更改。  你可能需要为每个应用商店创建略有差异的不同代码包。
 
@@ -86,7 +92,7 @@ Microsoft Edge *扩展* 是开发人员用于添加或修改 Microsoft Edge 功�
 
 如果已经为其他基于 Chrome 浏览器开发了扩展，则可以将其提交到 Microsoft Edge 加载项商店。 不需要重写扩展，并且必须验证它在 MicrosoftEdge 中是否工作。  将现有的 Chromium 扩展迁移到其他 Chromium 浏览器时，请确保相同的 API 或替代方案可用于该目标浏览器。
 
-有关将 Chrome 扩展移植到 Microsoft Edge，请参阅将 Chrome 扩展移植到 [Microsoft Edge](./developer-guide/port-chrome-extension.md)。 将扩展移植到目标浏览器后，下一步是发布它。
+有关将 Chrome 扩展移植到 Microsoft Edge，请参阅将 Chrome 扩展移植到 [Microsoft Edge](developer-guide/port-chrome-extension.md)。 将扩展移植到目标浏览器后，下一步是发布它。
 
 ### <a name="publish-to-the-microsoft-edge-add-ons-website"></a>发布到 Microsoft Edge 外接程序网站
 
@@ -100,7 +106,7 @@ Microsoft Edge *扩展* 是开发人员用于添加或修改 Microsoft Edge 功�
 *   描述扩展名的信息，如名称、简短描述和隐私策略链接。
 
 > [!NOTE]
-> 不同的应用商店可能具有不同的提交要求。  上面的列表总结了发布 [Microsoft Edge](./publish/publish-extension.md) 扩展的要求。
+> 不同的应用商店可能具有不同的提交要求。  上面的列表总结了发布 [Microsoft Edge](publish/publish-extension.md) 扩展的要求。
 
 成功提交扩展后，扩展将经历审核过程，它将通过或不通过认证过程。  所有者不对结果进行认证，并按需要提供下一步步骤。  如果向应用商店提交扩展更新，则会启动新的审阅过程。
 
@@ -108,7 +114,7 @@ Microsoft Edge *扩展* 是开发人员用于添加或修改 Microsoft Edge 功�
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [扩展概念和体系结构](./getting-started/index.md)
+*  [扩展概念和体系结构](getting-started/index.md)
 *  [在企业中管理 Microsoft Edge 扩展](/deployedge/microsoft-edge-manage-extensions)
 
 外部链接:

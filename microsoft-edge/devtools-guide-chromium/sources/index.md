@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/20/2021
+ms.openlocfilehash: 1aa0dc2d608d526f2bbeb83ef034125394279edc
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432150"
 ---
 <!-- Copyright Kayce Basques
 
@@ -60,6 +66,7 @@ ms.date: 04/20/2021
 * [使用"代码段"选项卡在任何页面上运行 JavaScript 代码段](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage)
 * [使用命令菜单打开文件](#using-the-command-menu-to-open-files)
 
+
 ### <a name="using-the-page-tab-to-explore-resources-that-construct-the-current-webpage"></a>使用"页面"选项卡浏览构建当前网页的资源
 
 使用**导航器**窗格的"**页**"选项卡浏览从服务器返回的文件系统以构造当前网页。  选择要查看、编辑和调试的 JavaScript 文件。  " **页面** "选项卡列出了页面已加载的所有资源。
@@ -72,6 +79,7 @@ ms.date: 04/20/2021
 
 若要将文件加载到浏览器的新选项卡中，或显示其他操作，请右键单击文件名。
 
+
 #### <a name="icons-in-the-page-tab"></a>"页面"选项卡中的图标
 
 " **页面** "选项卡使用下列图标：
@@ -79,6 +87,7 @@ ms.date: 04/20/2021
 *  云 **图标** 表示原 [点](https://html.spec.whatwg.org/multipage/origin.html#origin)。
 *  文件夹 **图标** 表示目录。
 *  页面 **图标** 表示资源。
+
 
 #### <a name="group-files-by-folder-or-as-a-flat-list"></a>按文件夹或文件夹对文件进行分组简单列表
 
@@ -88,6 +97,7 @@ ms.date: 04/20/2021
 
 1. 在导航器窗格（左侧）选项卡旁边，选择 **...** （**更多选项**）"按钮。  将显示菜单。
 1. 选择或清除" **按文件夹分组"** 选项。
+
 
 ### <a name="using-the-filesystem-tab-to-define-a-local-workspace"></a>使用"文件系统"选项卡定义本地 Workspace
 
@@ -103,7 +113,8 @@ Workspace 中的文件在整个 DevTools 中由文件名旁边的绿色点指示
 
 如果服务器返回的 JavaScript 代码与本地 JavaScript 源代码相同，工作区可正常工作。  当工作流涉及源代码转换（如缩小或 [TypeScript](https://www.typescriptlang.org) 编译）时，工作区不能正常工作。
 
-有关详细信息，请参阅教程使用工作区编辑文件 [ (文件系统选项卡) ](../workspaces/index.md)。
+有关详细信息，请参阅使用 [Workspaces 和 Filesystem 选项卡 (编辑) ](../workspaces/index.md)。
+
 
 ### <a name="using-the-overrides-tab-to-override-server-files-with-local-files"></a>使用"覆盖"选项卡覆盖包含本地文件的服务器文件
 
@@ -117,10 +128,12 @@ Workspace 中的文件在整个 DevTools 中由文件名旁边的绿色点指示
 
 覆盖服务器返回的文件的文件在整个 DevTools 中由文件名旁边的紫色点指示。
 
+
 #### <a name="see-also"></a>另请参阅
 
 *  [使用本地副本替代网页资源（“替代”选项卡）](../javascript/overrides.md)
-*  [将预处理的代码映射到源代码](../javascript/source-maps.md)
+*  [将处理的代码映射到原始源代码，以便进行调试](../javascript/source-maps.md)
+
 
 ### <a name="using-the-content-scripts-tab-for-microsoft-edge-extensions"></a>将"内容脚本"选项卡用于Microsoft Edge扩展
 
@@ -130,10 +143,12 @@ Workspace 中的文件在整个 DevTools 中由文件名旁边的绿色点指示
 
 当调试程序进入你无法识别的代码时，你可能希望将代码标记为库代码，以避免单步执行该代码。  请参阅 [将内容脚本标记为库代码](../javascript/guides/mark-content-scripts-library-code.md)。
 
+
 #### <a name="see-also"></a>另请参阅
 
 * [内容脚本](https://developer.mozilla.org/Add-ons/WebExtensions/Content_scripts)
 * [创建扩展教程，第 2 部分](../../extensions-chromium/getting-started/part2-content-scripts.md)
+
 
 ### <a name="using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage"></a>使用"代码段"选项卡在任何网页上运行 JavaScript 代码段
 
@@ -151,17 +166,19 @@ script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
 document.head.appendChild(script);
 ```
 
-相反，您可以将此代码保存在 **代码** 段中，然后随时轻松地运行它。  按 (Windows `Ctrl`+`S` /Linux) +`Command``S` 或 (macOS) 时，DevTools 会将代码**段**保存到文件系统。
+相反，您可以将此代码保存在 **代码** 段中，然后随时轻松地运行它。  按 (Windows `Ctrl`+`S` /Linux) +`Command``S` 或 (macOS) 时，DevTools 会将**代码段**保存到文件系统。
 
 有多种方法可以运行代码段：
-*  在 **导航器窗格中** ，选择" **代码** 段"选项卡，然后选择代码段文件将其打开。  然后在"编辑器"窗格底部，选择"****![运行 ("运行](../media/run-snippet-icon.msft.png)"按钮。) 。
+*  在 **导航器窗格中** ，选择" **代码** 段"选项卡，然后选择代码段文件将其打开。  然后在"编辑器"窗格底部，选择****!["运行 ("运行](../media/run-snippet-icon.msft.png)"按钮。) 。
 *  当 DevTools `Ctrl``P`+具有焦点时，按 (Windows/Linux) 或`P`+`Command` (macOS) 打开命令[菜单](../command-menu/index.md)，然后键入 。`!`
 
 代码段 类似于小书签。
 
+
 #### <a name="see-also"></a>另请参阅
 
 * [在任何网页上运行 JavaScript 的代码片段](../javascript/snippets.md)
+
 
 ### <a name="using-the-command-menu-to-open-files"></a>使用命令菜单打开文件
 
@@ -207,6 +224,7 @@ document.head.appendChild(script);
 * [访问行号或函数](#going-to-a-line-number-or-function)
 * [使用不同的工具时显示源文件](#displaying-source-files-when-using-a-different-tool)
 
+
 ### <a name="editing-a-javascript-file"></a>编辑 JavaScript 文件
 
 若要在 DevTools 中编辑 JavaScript 文件，请在**源**工具中使用**编辑器**窗格。
@@ -215,9 +233,10 @@ document.head.appendChild(script);
 
 若要将文件加载到"编辑器"窗格中，请使用**导航器**窗格（左侧）中的"**页**"选项卡。  或使用“**命令菜单**”，如下所示: 在 DevTools 的右上角，选择“**自定义和控制 DevTools**”(`...`)，然后选择“**打开文件**”。
 
+
 #### <a name="save-and-undo"></a>保存和撤消
 
-若要使 JavaScript 更改`Ctrl`+`S`生效，请按 (Windows、Linux) 或 `Command`+`S` (macOS) 。
+若要使 JavaScript 更改`Ctrl`+`S`生效，请按 (Windows、Linux) 或 (`Command`+`S` macOS) 。
 
 如果更改文件，文件名旁边将出现一个星号。
 *  若要保存更改，请按 `Ctrl`+`S` Windows/Linux 或 `Command`+`S` macOS。
@@ -225,13 +244,15 @@ document.head.appendChild(script);
 
 默认情况下，刷新网页时将放弃您的编辑。  若要详细了解如何在本地文件系统中保存更改，请参阅使用 [Workspaces (Filesystem 选项卡编辑) ](../workspaces/index.md)。
 
+
 #### <a name="find-and-replace"></a>查找和替换
 
 **** 若要在当前文件中查找文本`Ctrl`+`F`，请选择"编辑器"窗格赋予其焦点，然后按 Windows/Linux `Command`+`F` 或 macOS。
 
 :::image type="content" source="../media/find-replace.msft.png" alt-text="在&quot;源&quot;工具的&quot;编辑器&quot;窗格中查找和替换" lightbox="../media/find-replace.msft.png":::
 
-若要查找和替换文本，请选择 **"查找**"文本框左侧的**替换**（**A-\>B**）"按钮。 查看 **可** (**文件时) "A-\>B"** 按钮。
+若要查找和替换文本，请选择"**** 查找"文本框 (**A-\>B) "** 按钮。**** 查看 **可** (**文件时) "A-\>B"** 按钮。
+
 
 #### <a name="showing-the-changes-you-made"></a>显示所做的更改
 
@@ -240,6 +261,7 @@ To review the changes you made to a file， right-click in the **Editor** pane a
 The **Drawer** opens at the bottom of DevTools， showing your changes within the **Changes** tab.
 
 :::image type="content" source="../media/local-modifications.msft.png" alt-text="在&quot;箱&quot;的&quot;更改&quot;选项卡中显示本地修改" lightbox="../media/local-modifications.msft.png":::
+
 
 #### <a name="changes-inside-a-function-take-effect"></a>函数中的更改生效
 
@@ -252,9 +274,10 @@ DevTools 不会重新运行脚本，因此唯一生效的 JavaScript 更改是�
 
 :::image type="content" source="../media/edit-js.msft.png" alt-text="全局范围的 JavaScript 不会重新运行。" lightbox="../media/edit-js.msft.png":::
 
+
 ### <a name="reformatting-a-minified-javascript-file-with-pretty-print"></a>使用非常打印重新格式化缩小的 JavaScript 文件
 
-若要使用"花式打印"重新设置文件的格式使其可读，请在"编辑器"**** 窗格底部选择"花式打印"按钮" (![格式](../media/format-icon.msft.png)"。) 显示为大括号。  或者，如果 **"编辑器"** 窗格顶部显示"非常打印"按钮，您可以选择该按钮。
+若要使用"花式打印"重新设置文件的格式，使其可读，请在"编辑器****"窗格底部选择"花式打印"按钮" (![格式](../media/format-icon.msft.png)"。) 显示为大括号。  或者，如果 **"编辑器"** 窗格顶部显示"非常打印"按钮，您可以选择该按钮。
 
 :::image type="content" source="../media/minified.msft.png" alt-text="&quot;非常不错&quot;的打印按钮。" lightbox="../media/minified.msft.png":::
 
@@ -270,14 +293,16 @@ DevTools 不会重新运行脚本，因此唯一生效的 JavaScript 更改是�
 
 有关详细信息，请参阅使用非常打印 [重新设置缩小的 JavaScript 文件](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print)。
 
+
 ### <a name="mapping-minified-code-to-your-source-code-to-show-readable-code"></a>将缩小代码映射到源代码以显示可读代码
 
 来自预处理器的源映射会导致 DevTools 加载原始 JavaScript 源文件以及服务器返回的缩小的转换后的 JavaScript 文件。  然后，在设置断点并逐步执行代码时查看原始源文件。  同时，Microsoft Edge运行缩小代码。
 
-在"**编辑器**"窗格中，如果右键单击 JavaScript 文件，然后选择"**添加源映射**"，将显示一个弹出框，其中包含**源地图 URL**文本框和 **"添加**"按钮。
+在 **"编辑器**"窗格中，如果右键单击 JavaScript 文件，然后选择"添加**** 源映射"，将出现一个弹出框，包含"源**映射 URL**"文本框和"添加 **"** 按钮。
 
 即使组合、缩小或编译前端代码，源映射方法也保持其可读和可调试性。
-有关详细信息，请参阅 [将预处理的代码映射到源代码](../javascript/source-maps.md)。
+有关详细信息，请参阅 [将处理的代码映射到原始源代码，以便进行调试](../javascript/source-maps.md)。
+
 
 ### <a name="transformations-from-source-code-to-compiled-front-end-code"></a>从源代码转换到编译的前端代码
 
@@ -286,6 +311,7 @@ DevTools 不会重新运行脚本，因此唯一生效的 JavaScript 更改是�
 在开发环境中，服务器可能包括源地图和原始或 `.ts` `.jsx` 用于React。  源 **工具** 显示这些文件，但不允许编辑这些文件。  当你设置断点并使用调试器时，DevTools 将显示原始或文件，但实际上是分步调试 `.ts` `.jsx` JavaScript 文件缩小版本。
 
 在此方案中， **源** 工具可用于检查和逐步执行从服务器返回的转换的前端 JavaScript。  使用调试器定义 Watch 表达式，并使用控制台输入 JavaScript 表达式以操作范围内的数据。
+
 
 ### <a name="editing-a-css-file"></a>编辑 CSS 文件
 
@@ -305,11 +331,13 @@ h1 {
 
 CSS 更改会立即生效;无需手动保存更改。
 
+
 #### <a name="see-also"></a>另请参阅
 
 * [在“样式”窗格中编辑 CSS 字体样式和设置](../inspect-styles/edit-fonts.md)
 
 * [适用于初学者的 DevTools：CSS 入门](../beginners/css.md) - 教程
+
 
 ### <a name="editing-an-html-file"></a>编辑 HTML 文件
 
@@ -333,6 +361,7 @@ CSS 更改会立即生效;无需手动保存更改。
 
 您还可以使用 HTML 编辑器（而不是 DevTools）编辑 HTML。  例如，文章 [DevTools for beginners： Get started with HTML and the DOM](../beginners/html.md) uses a website that enables HTML editing within the webpage.
 
+
 ### <a name="going-to-a-line-number-or-function"></a>访问行号或函数
 
 若要转到行号或符号 (如编辑器窗格中打开的文件中的函数名称) ，可以使用命令菜单，而不是滚动整个文件。
@@ -346,6 +375,7 @@ CSS 更改会立即生效;无需手动保存更改。
 | \@ | **转到符号** | 转到函数。  键入 时，命令菜单会列出在"编辑器"窗格中打开的 `@` JavaScript 文件中找到的函数。 |
 
 有关详细信息，请参阅 Run [commands with the Microsoft Edge DevTools Command Menu](../command-menu/index.md)。
+
 
 ### <a name="displaying-source-files-when-using-a-different-tool"></a>使用不同的工具时显示源文件
 
@@ -361,7 +391,7 @@ CSS 更改会立即生效;无需手动保存更改。
 
     在"DevTools"窗口底部，将显示"箱"，并选中 **"快速源"** 工具。  快速**源**工具包含你在源工具中编辑的最后一个文件，**** 该文件位于 DevTools 代码编辑器的精简版本中。
 
-1. 按 `Ctrl`+`P` (Windows、Linux) 或+`Command``P` (macOS) 打开 **"打开文件"** 对话框。
+1. 按`Ctrl`+`P` (Windows、Linux) 或+`Command``P` (macOS) 打开 **"打开文件"** 对话框。
 
 
 <!-- ====================================================================== -->
@@ -389,13 +419,14 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 * [直接从Visual Studio Code调试](#debug-from-visual-studio-code-directly)
 * [有关调试的文章](#articles-about-debugging)
 
+
 ### <a name="the-basic-approach-to-using-a-debugger"></a>使用调试器的基本方法
 
 若要对 JavaScript 代码进行故障排除，可以在" `console.log()` 编辑器"窗格中 **插入** 语句。  另一种更强大的方法是使用 DevTools Microsoft Edge调试器。  熟悉调试器方法后，使用调试器实际上可以比 `console.log()` 更简单。
 
 若要在网页上使用调试器，通常设置断点，然后从网页发送表单，如下所示：
 
-1. 打开"[演示：入门窗口](https://microsoftedge.github.io/Demos/devtools-js-get-started/)或选项卡Microsoft Edge开发人员工具"网页调试 JavaScript。
+1. 打开"[演示：入门](https://microsoftedge.github.io/Demos/devtools-js-get-started/)窗口或选项卡Microsoft Edge开发人员工具"网页调试 JavaScript。
 
    <!-- You can view the source code for the demo page at the [MicrosoftEdge/Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) repo folder. -->
 
@@ -441,6 +472,7 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
 1.  在 `5` 网页 `1` 中输入 和 ，然后单击"添加 **"** 按钮。  现在 **ScopeLocalsum** > **** > **：** 是数字 6，而不是字符串"51"。
 
+
 #### <a name="see-also"></a>另请参阅
 
 * [JavaScript 调试入门](../javascript/index.md) - 使用包含一些表单控件的现有简单网页的教程。
@@ -471,7 +503,7 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
 此扩展提供从 Microsoft Visual Studio Code 中访问 Microsoft Edge DevTools 的 **Elements** 和 **网络** 工具。
 
-有关详细信息，请参阅 Visual Studio Code[概述](../../visual-studio-code/index.md)和 GitHub 自述Microsoft Edge开发人员[工具Visual Studio Code。](https://github.com/microsoft/vscode-edge-devtools)
+有关详细信息，请参阅 [Visual Studio Code Web](../../visual-studio-code/index.md) 开发和 GitHub 自述Microsoft Edge开发人员工具[Visual Studio Code](https://github.com/microsoft/vscode-edge-devtools)。
 
 
 ### <a name="articles-about-debugging"></a>有关调试的文章

@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
+ms.openlocfilehash: 4da629d3bedff467f7dc2cb7be9f8eea163ffdd8
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431513"
 ---
 # <a name="console-overview"></a>控制台概述
 
@@ -23,17 +29,17 @@ ms.date: 04/13/2021
 
 :::image type="content" source="../media/console-intro-console-main.msft.png" alt-text="控制台工具在上方面板中打开。" lightbox="../media/console-intro-console-main.msft.png":::
 
-控制台**在此处**的 DevTools (下半部分) **，** 其上方打开"元素"工具：****
+**控制台在此处**的 DevTools (下半部分) **，** 其上方打开"元素"工具：****
 
 :::image type="content" source="../media/console-intro-console-panel.msft.png" alt-text="下面板中的&quot;控制台&quot;和&quot;元素&quot;工具在它上方打开。" lightbox="../media/console-intro-console-panel.msft.png":::
 
-直接打开**** 控制台的`Control``J``Shift`++最快方法就是按 (Windows、Linux`J` `Command`+`Option`+) 或 (macOS) 。
+直接打开**** 控制台的`Ctrl``J``Shift`++最快方法就是按 (Windows、Linux`J` `Command`+`Option`+) 或 (macOS) 。
 
 
 <!-- ====================================================================== -->
 ## <a name="error-reports-and-the-console"></a>错误报告和控制台
 
-**控制台是**报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，"**** 问题"计数器将显示在 DevTools **设置**图标旁边，该图标提供错误和警告的数量。  单击 **"问题"** 计数器以打开 **"问题** "工具并显示问题。  有关详细信息，请参阅修复控制台中 [报告的 JavaScript 错误](console-debug-javascript.md)。
+**控制台是**报告 JavaScript 和连接错误的默认位置。  如果发生任何错误，则**** 问题计数器显示在 DevTools 中提供错误和**警告数量的** 设置 图标旁边。  单击 **"问题"** 计数器以打开 **"问题** "工具并显示问题。  有关详细信息，请参阅修复控制台中 [报告的 JavaScript 错误](console-debug-javascript.md)。
 
 DevTools 提供有关控制台中错误 **的详细信息**：
 
@@ -55,7 +61,7 @@ DevTools 提供有关控制台中错误 **的详细信息**：
 
 :::image type="content" source="../media/search-console-new-tab.msft.png" alt-text="从搜索控制台错误功能打开的新选项卡。" lightbox="../media/search-console-new-tab.msft.png":::
 
-此功能是在 94 Microsoft Edge引入的。
+此功能是在版本 94 Microsoft Edge引入的。
 
 
 <!-- ====================================================================== -->
@@ -111,7 +117,7 @@ console.groupEnd('Technolgies');
 
 1. 打开演示网页 [控制台消息示例：日志、信息、](https://microsoftedge.github.io/Demos/devtools-console/logging-demo.html) 错误和新窗口或选项卡中的警告。
 
-1. 若要打开控制台 **，**`Control`++`Shift``J`请按 (Windows、Linux) 或 (`J` `Command`+`Option`+macOS) 。
+1. 若要打开控制台 **，**`Ctrl`++`Shift``J`请按 (Windows、Linux) 或 (`J` `Command`+`Option`+macOS) 。
 
    **控制台**显示由演示代码导致的结果消息：
 
@@ -124,7 +130,7 @@ console.groupEnd('Technolgies');
 
 1. 打开一个新选项卡或窗口。
 
-1. 若要打开控制台 **，**`Control`++`Shift``J`请按 (Windows、Linux) 或 (`J` `Command`+`Option`+macOS) 。
+1. 若要打开控制台 **，**`Ctrl`++`Shift``J`请按 (Windows、Linux) 或 (`J` `Command`+`Option`+macOS) 。
 
 1. 将上述代码粘贴到 **控制台中**，然后按 `Enter`。
 
@@ -140,11 +146,11 @@ console.groupEnd('Technolgies');
 
 1. 打开“**控制台**”。
 
-1. 键入 `2 + 2`。
+1. 键入 `2+2`。
 
-**控制台**会在您键入`2 + 2`实时内容时显示结果，`4`在下面的行中显示结果：
+**控制台**会在您键入`2+2`实时内容时显示结果，`4`在下面的行中显示结果：
 
-:::image type="content" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="在键入时，控制台将显示 2 + 2 实时的结果。" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
+:::image type="content" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="键入时，控制台将显示 2+2 实时的结果。" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
 
 此 **"期待** "评估功能可用于调试和验证代码中没有出错。
 
@@ -249,4 +255,4 @@ console.groupEnd('Technolgies');
 * [使用控制台与 DOM 交互](console-dom-interaction.md)。
 * [控制台功能参考](reference.md)
 * [控制台对象 API 参考](api.md)
-* [控制台工具实用程序函数和选择器](utilities.md)
+* [控制台工具实用功能和选择器](utilities.md)

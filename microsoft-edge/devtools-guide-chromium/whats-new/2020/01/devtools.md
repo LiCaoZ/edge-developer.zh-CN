@@ -1,11 +1,17 @@
 ---
 title: 'DevTools (Microsoft Edge 81) '
-description: 3D 视图Visual Studio与Microsoft Edge集成等。
+description: 3D 视图、Visual Studio与 Microsoft Edge 集成等。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 6dda630071d67431ecfbf3040492eea23cce2c36
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432143"
 ---
 <!-- Copyright Kayce Basques
 
@@ -20,13 +26,13 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="whats-new-in-devtools-microsoft-edge-81"></a>DevTools （Microsoft Edge 81）中的新增功能
+# <a name="whats-new-in-devtools-microsoft-edge-81"></a>DevTools 81 (Microsoft Edge中的新增) 
 
 
 <!-- ====================================================================== -->
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告
 
-以下各节列出了你可能从 DevTools 团队中错过Microsoft Edge通知。  查看通知以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道](https://www.microsoftedgeinsider.com/download)并[在 Twitter 上关注我们](https://twitter.com/EdgeDevTools)。
+以下各节列出了你可能从 DevTools 团队中错过Microsoft Edge通知。  查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道](https://www.microsoftedgeinsider.com/download)并[在 Twitter 上关注我们](https://twitter.com/EdgeDevTools)。
 
 ### <a name="accessibility-improvements-to-the-devtools"></a>对 DevTools 的辅助功能改进
 
@@ -34,7 +40,7 @@ DevTools 团队已对 Chromium 进行 170 次更改，以解决 DevTools 中的�
 
 :::image type="content" source="../../images/2020/01/a11y-performance-tool.msft.gif" alt-text="DevTools 中的性能工具，具有键盘导航和屏幕阅读器改进。" lightbox="../../images/2020/01/a11y-performance-tool.msft.gif":::
 
-想要了解如何使网页可供所有用户访问？  下载[辅助功能Insights](https://accessibilityinsights.io)和 [Webhint](https://webhint.io/docs/user-guide/extensions/extension-browser) 扩展Microsoft Edge开始操作。
+想要了解如何使网页可供所有用户访问？  下载[辅助功能Insights](https://accessibilityinsights.io) [Webhint](https://webhint.io/docs/user-guide/extensions/extension-browser) 扩展，Microsoft Edge开始操作。
 
 如果你使用屏幕阅读器或键盘浏览 DevTools，请通过[发推](https://twitter.com/intent/tweet?text=@EdgeDevTools)或单击**反馈**图标向我们发送你的反馈！
 
@@ -45,8 +51,8 @@ Chromium 问题 [#963183](https://crbug.com/963183)
 许多开发人员使用其他开发人员工具（如 StackOverflow 和 Visual Studio Code，使用其本地语言，而不只是使用英语。  我们很高兴宣布 DevTools 的本地化，你现在可以使用英语之外 10 种语言之一：
 
 * 简 (中文) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
-* 繁 (中文) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
-* 法语 – 法属&#231;语
+* 繁体 (中文) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
+* 法语 –&#231;英语
 * 德语 - 德语
 * 意大利语 - 意大利语
 * 日语 - &#26085;&#26412;&#35486;
@@ -65,7 +71,7 @@ Chromium 问题 [#963183](https://crbug.com/963183)
 | Russian – русский | Spanish - español |
 -->
 
-DevTools 会自动匹配在 中用于Microsoft Edge的语言`edge://settings/languages`。
+DevTools 会自动匹配你在 中用于Microsoft Edge的语言`edge://settings/languages`。
 
 如果你希望Microsoft Edge一种语言，并且你的 DevTools `F1` 保持为英语，请在 DevTools 中选择以打开[设置并禁用](../../../customize/index.md#settings)**匹配浏览器语言**。
 
@@ -79,41 +85,41 @@ Chromium问题 [#941561](https://crbug.com/941561)
 
 ### <a name="webhint-microsoft-edge-extension"></a>webhint Microsoft Edge扩展
 
-Webhint Microsoft Edge扩展允许你在 DevTools 中轻松扫描网页并获取有关辅助功能、浏览器兼容性、安全性、性能等的反馈。  有关详细信息，请参阅 [https://webhint.io](https://webhint.io)。
+Webhint Microsoft Edge扩展允许你轻松扫描网页，并获取有关辅助功能、浏览器兼容性、安全性、性能等在 DevTools 中的反馈。  有关详细信息，请参阅 [https://webhint.io](https://webhint.io)。
 
 :::image type="content" source="../../images/2020/01/webhint-browser-extension.msft.png" alt-text="安装 Webhint 浏览器扩展时 DevTools 中的 Hints 工具。" lightbox="../../images/2020/01/webhint-browser-extension.msft.png":::
 
-[尝试 webhint 浏览器扩展Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/webhint/mlgfbihcfnkaenjpdcngdnhcpkdmcdee)。  安装扩展后，打开 DevTools 并选择 **提示** 工具。  从此处运行可自定义的网站扫描。  请 [前往 webhint.io](https://webhint.io/docs/user-guide/extensions/extension-browser) 了解更多信息。
+[请尝试 webhint 浏览器扩展Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/webhint/mlgfbihcfnkaenjpdcngdnhcpkdmcdee)。  安装扩展后，打开 DevTools 并选择 **提示** 工具。  从此处运行可自定义的网站扫描。  请 [前往 webhint.io](https://webhint.io/docs/user-guide/extensions/extension-browser) 了解更多信息。
 
 ### <a name="3d-view"></a>3D 视图
 
-使用 **3D 视图** 通过浏览文档对象模型或 [DOM (或 ](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) [z 索引](https://developer.mozilla.org/docs/Web/CSS/z-index)) 调试 Web 应用程序。
+使用 **3D 视图** 通过浏览 [DOM ](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) 文档对象模型或 [z](https://developer.mozilla.org/docs/Web/CSS/z-index) 索引 (上下文) 调试 Web 应用程序。
 
 :::image type="content" source="../../images/2020/01/3dview.msft.png" alt-text="DevTools 中的 3D 视图。" lightbox="../../images/2020/01/3dview.msft.png":::
 
 若要访问 3D 视图，请按`Ctrl`+`Shift``P`+以打开`3d view`"命令菜单"，开始键入 ，然后选择"显示 **3D 视图"**。
 
-Microsoft Edge团队正在与 UI 上的 Chromium 团队合作，并将更多功能添加到 3D 视图，因此请使用"发送反馈 **"** 图标！
+该Microsoft Edge团队正在与 UI 上的 Chromium 团队合作，并将更多功能添加到 3D 视图，因此请使用"发送**反馈"** 图标！
 
 Chromium问题 [#987787](https://crbug.com/987787)
 
 ### <a name="visual-studio-code-extensions"></a>Visual Studio Code扩展
 
-DevTools 团队还发布了一些适用于 Visual Studio Code的扩展[](https://code.visualstudio.com)，让你可以直接从文本编辑器使用 DevTools 功能！ 请查看以下扩展：
+DevTools 团队还发布了一些 Visual Studio Code，让你可以直接[](https://code.visualstudio.com)从文本编辑器使用 DevTools 功能！ 请查看以下扩展：
 
 #### <a name="elements-for-microsoft-edge"></a>用于Microsoft Edge
 
-通过添加元素的 Visual Studio Code 扩展，从 Microsoft Edge [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) 元素工具。
+通过添加元素来Visual Studio Code[元素Microsoft Edge Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)元素。
 
-:::image type="content" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="中的 Elements Visual Studio Code使用 Elements for Microsoft Edge 扩展。" lightbox="../../images/2020/01/elements-for-edge.msft.png":::
+:::image type="content" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="中的 Elements 工具Visual Studio Code元素扩展Microsoft Edge元素。" lightbox="../../images/2020/01/elements-for-edge.msft.png":::
 
 有关详细信息，请查看适用于扩展[Microsoft Edge Visual Studio Code元素](../../../../visual-studio-code/elements-for-edge.md)。
 
 #### <a name="debugger-for-microsoft-edge"></a>调试程序Microsoft Edge
 
-使用[调试器Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) Visual Studio Code，直接从 Visual Studio Code 调试在 Microsoft Edge 中运行的 JavaScript。
+使用[调试器 for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) Visual Studio Code 扩展，直接从 Visual Studio Code 调试在 Microsoft Edge 中运行的 JavaScript。
 
-:::image type="content" source="../../images/2020/01/vscode-debugger.msft.png" alt-text="用于 Microsoft Edge Extension 的调试Visual Studio Code。" lightbox="../../images/2020/01/vscode-debugger.msft.png":::
+:::image type="content" source="../../images/2020/01/vscode-debugger.msft.png" alt-text="Microsoft Edge Extension 的调试Visual Studio Code。" lightbox="../../images/2020/01/vscode-debugger.msft.png":::
 
 有关详细信息，请查看[如何从Microsoft Edge调试Visual Studio Code](../../../../visual-studio-code/debugger-for-edge.md)。
 
@@ -123,7 +129,7 @@ DevTools 团队还发布了一些适用于 Visual Studio Code的扩展[](https:/
 
 :::image type="content" source="../../images/2020/01/webhint-vscode-extension.msft.png" alt-text="Webhint Visual Studio Code扩展，用于分析 Visual Studio Code 中的 .tsx 文件。" lightbox="../../images/2020/01/webhint-vscode-extension.msft.png":::
 
-[详细了解 webhint Visual Studio Code扩展](https://webhint.io/docs/user-guide/extensions/vscode-webhint)。
+[详细了解 Web Visual Studio Code扩展](https://webhint.io/docs/user-guide/extensions/vscode-webhint)。
 
 ### <a name="visual-studio-integration"></a>Visual Studio集成
 
@@ -159,7 +165,7 @@ DevTools 团队还发布了一些适用于 Visual Studio Code的扩展[](https:/
 
 相关功能：
 
-*  打开 [命令菜单](../../../command-menu/index.md) 并运行命令 `Capture screenshot` ，在启用"显示设备框架"菜单后，为包含 Moto G4 硬件 (**的** 视口拍摄) 。
+*  打开命令[菜单](../../../command-menu/index.md)并运行命令`Capture screenshot`，在启用"显示设备框架"菜单后，为包含 Moto G4 硬件 (的视口**拍摄) 。**
 * [限制网络和 CPU](../../../device-mode/index.md#throttle-the-network-and-cpu) 以更精确地模拟移动用户的 Web 浏览条件。
 
 Chromium问题 [#924693](https://crbug.com/924693)

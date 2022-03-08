@@ -1,21 +1,21 @@
 ---
-title: 使用性能监视器工具测量页面的运行时性能
+title: 使用性能监视器工具度量页面的运行时性能
 description: DevTools 中的性能监视器工具提供实时性能指标，以帮助调查性能问题。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/28/2021
-ms.openlocfilehash: be3b2bdc160e633a8acc5e0c2fb80acecc611be1
-ms.sourcegitcommit: 9caa4aac0a339a76e7f1e0f0f5d6d85a2492ea8c
+ms.openlocfilehash: 10a98ef6a9173312f161f08aa6650a5193c0292e
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "12325436"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12433109"
 ---
-# <a name="measure-runtime-performance-of-a-page-using-the-performance-monitor-tool"></a>使用性能监视器工具测量页面的运行时性能
+# <a name="measure-runtime-performance-of-a-page-using-the-performance-monitor-tool"></a>使用性能监视器工具度量页面的运行时性能
 
-在**DevTools** Microsoft Edge性能监视器工具获取网页的运行时性能实时视图。
+使用 **性能监视器** 工具可实时查看网页的运行时性能。
 
 性能 **监视器** 工具可帮助确定性能问题来自何处。  网站运行缓慢的原因有多种。  此工具提供了一些线索，用于了解这些问题是否与原因相关，例如：
 *  高内存或 CPU 使用率。
@@ -28,9 +28,9 @@ ms.locfileid: "12325436"
 
 打开性能监视器：
 
-1. [打开 DevTools，](../open/index.md)例如按 `F12` 。
+1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
 
-1. 单击 **"其他** `+` () "，然后选择"性能**监视器"。**
+1. 在 DevTools 中，在主工具栏上，选择"**性能监视器"** 选项卡。 如果该选项卡不可见，请单击"更多选项卡" (**** 更多选项卡"图标](../media/more-tabs-icon-light-theme.png)。****) 按钮![，或单击"更多工具 (更多工具"图标。) 按钮。](../media/more-tools-icon-light-theme.png) ![
 
 :::image type="content" source="../media/performance-monitor-tool/open-performance-monitor.png" alt-text="&quot;更多工具&quot;菜单，显示&quot;性能监视器&quot;菜单命令。":::
 
@@ -44,13 +44,13 @@ ms.locfileid: "12325436"
 
 默认情况下 **，性能** 监视器工具显示三个性能指标，并且提供了其他指标。
 
-| 性能指标 | 描述 |
+| 性能指标 | 说明 |
 |---|---|
 | **CPU 使用率** | 网页使用的 CPU 百分比。  默认情况下显示。 |
 | **JS 堆大小** | 页面上 JavaScript 程序使用的内存量。  默认情况下显示。 |
-| **DOM 节点** | 浏览器上的 DOM 节点数 (选项卡) 。  默认情况下显示。 |
+| **DOM 节点** | 浏览器中跨选项卡的 DOM 节点 (个) 。  默认情况下显示。 |
 | **JS 事件侦听器** | 浏览器中跨选项卡的 JavaScript 事件侦听器 (数) 。 |
-| **文档** | 浏览器上的文档对象数 (选项卡) 。 |
+| **文档** | 浏览器中跨选项卡显示的文档 (数) 。 |
 | **文档框架** | 浏览器上的文档框架数 (选项卡) 。 |
 | **布局/秒** | 浏览器引擎每秒构造页面布局次数。 |
 | **样式重新计算/秒** | 浏览器引擎每秒计算页面的 CSS 样式次数。 |

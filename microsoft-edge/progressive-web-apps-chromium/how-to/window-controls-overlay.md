@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 ms.date: 09/02/2021
-ms.openlocfilehash: 0676f1d013093ad85ba5fb383de4ec9076c74990
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: a4451d53de4e60353c18ca1db5110256dfe22d36
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12320758"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432437"
 ---
 # <a name="display-content-in-the-title-bar"></a>在标题栏中显示内容
 
-一PWA应用程序清单文件中使用[display](https://developer.mozilla.org/docs/Web/Manifest/display)属性，定义它在移动平台上的显示方式。  但是，若要创建类似本机的沉浸式体验， _桌面_ PBA 无法采用这种方法。
+一PWA应用程序清单文件中显示属性，定义它在移动平台上的显示方式。[](https://developer.mozilla.org/docs/Web/Manifest/display)  但是，若要创建类似本机的沉浸式体验， _桌面_ PBA 无法采用这种方法。
 
 默认情况下，应用区域紧接在保留的标题栏区域下方开始：
 
@@ -39,21 +39,21 @@ ms.locfileid: "12320758"
 
 若要启用窗口控件覆盖 API：
 
-1.  在Microsoft Edge中，转到 `edge://flags` 。
+1.  在Microsoft Edge中，转到 `edge://flags`。
 1.  选择 **"搜索标志** "，然后键入"窗口控件覆盖"。
-1.  选择 **"默认**  >  **启用重启**  >  **"。**
+1.  选择 ******DefaultEnabledRestart** > **** > 。
 
     :::image type="content" source="../media/enable-window-controls-overlay-experiment.png" alt-text="启用窗口控件覆盖 API 实验。":::
 
 窗口控件覆盖 API 也作为源试用功能提供。  若要使应用的用户从窗口控件覆盖中获益，而无需在 Microsoft Edge 中启用它，可以使用源试用版。
 
-有关源试用版详细信息，请转到Microsoft Edge[源试用版开发人员控制台。](https://developer.microsoft.com/microsoft-edge/origin-trials)
+有关源试用版详细信息，请转到Microsoft Edge[源试用版开发人员控制台](https://developer.microsoft.com/microsoft-edge/origin-trials)。
 
 
 <!-- ====================================================================== -->
 ## <a name="enable-the-window-controls-overlay-in-your-app"></a>在应用中启用窗口控件覆盖
 
-首先要在应用的 Web 应用清单文件中启用窗口控件 [覆盖功能](./web-app-manifests.md)。  为此，在清单文件中，设置 `display_override` 属性：
+首先要在应用的 Web 应用清单文件中启用窗口控件 [覆盖功能](web-app-manifests.md)。  为此，在清单文件中，设置 `display_override` 属性：
 
 ```json
 {
@@ -79,14 +79,14 @@ ms.locfileid: "12320758"
 <!-- ====================================================================== -->
 ## <a name="use-css-environment-variables-to-stay-clear-of-the-overlay"></a>使用 CSS 环境变量保持覆盖清晰
 
-[`env()`](https://developer.mozilla.org/docs/Web/CSS/env)CSS 函数可用于访问用户代理定义的环境变量。
+[`env()`](https://developer.mozilla.org/docs/Web/CSS/env) CSS 函数可用于访问用户代理定义的环境变量。
 
 窗口控件覆盖功能添加了四个环境变量：
 
 | 变量 | 说明 |
 |:--- |:---
-| `titlebar-area-x` | 覆盖层 `px` 与窗口左侧的距离（在 中） |
-| `titlebar-area-y` | 覆盖层与窗口顶边的距离（在 `px` 中） |
+| `titlebar-area-x` | 覆盖层 `px`与窗口左侧的距离（在 中） |
+| `titlebar-area-y` | 覆盖层 `px`与窗口顶边的距离（在 中） |
 | `titlebar-area-width` | 覆盖的宽度，以 `px` |
 | `titlebar-area-height` | 覆盖的高度，以 `px` |
 
@@ -108,9 +108,9 @@ ms.locfileid: "12320758"
 <!-- ====================================================================== -->
 ## <a name="make-regions-of-your-app-drag-handlers-for-the-window"></a>为窗口创建应用拖动处理程序的区域
 
-隐藏标题栏时，只有系统关键窗口控件 (最大化、最小化、关闭以及应用信息图标) 。 **** **** **** ****  这意味着用户很少能四处移动应用。
+隐藏标题栏时，只有系统关键窗口控件在"最大化" (最小化、关闭"和"应用**** 信息"**** 图标) 。**** ****  这意味着用户很少能四处移动应用。
 
-您可以使用 CSS `-webkit-app-region` 属性为用户提供更多拖动应用程序的方法。  例如，如果你的应用有自己的标题栏，你可以将其标题栏转换为窗口拖动处理程序：
+您可以使用 CSS 属性 `-webkit-app-region` 为用户提供更多拖动应用程序的方法。  例如，如果你的应用有自己的标题栏，你可以将其标题栏转换为窗口拖动处理程序：
 
 ```css
 #title-bar {
@@ -132,7 +132,7 @@ ms.locfileid: "12320758"
 若要侦听更改，请使用 `geometrychange` 事件。  若要检测标题栏是否可见，请使用 `visible` 对象上的 `navigator.windowControlsOverlay` 属性。
 
 > [!NOTE]
-> 当用户 `geometrychange` 调整窗口大小时，会非常频繁地触发 。  若要避免过于频繁运行更改布局的代码，并且导致应用中出现性能问题，请使用 函数来限制 `debounce` 处理事件的时间。  请参阅 [限制和取消跳到的区别](https://css-tricks.com/the-difference-between-throttling-and-debouncing/)。
+> 当用户 `geometrychange` 调整窗口大小时，会非常频繁地触发 。  若要避免过于频繁运行 `debounce` 更改布局的代码，并且导致应用中出现性能问题，请使用 函数来限制处理事件的时间。  请参阅 [限制和取消跳到的区别](https://css-tricks.com/the-difference-between-throttling-and-debouncing/)。
 
 ```javascript
 const debounce = (func, wait) => {
@@ -163,9 +163,9 @@ if ('windowControlsOverlay' in navigator) {
 <!-- ====================================================================== -->
 ## <a name="demo-app"></a>演示应用
 
-My Tracks 是一PWA窗口控件覆盖功能的应用演示应用。
+My Tracks 是PWA窗口控件覆盖功能的应用演示应用。
 
-1. 在Microsoft Edge中，[启用窗口控件覆盖。](#enable-the-window-controls-overlay-in-your-app)
+1. 在Microsoft Edge中[，启用窗口控件覆盖](#enable-the-window-controls-overlay-in-your-app)。
 
 2. 转到 ["我的跟踪"](https://captainbrosset.github.io/mytracks/) 并安装应用。
 
@@ -177,16 +177,16 @@ My Tracks 是一PWA窗口控件覆盖功能的应用演示应用。
 
 此应用程序的源代码位于"我的轨 ["](https://github.com/captainbrosset/mytracks) 存储库。
 
-* [manifest.json](https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json)源文件声明应用使用窗口控件覆盖功能。
+* [manifest.json](https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json) 源文件声明应用使用窗口控件覆盖功能。
 
 * 文件 [overlay.js](https://github.com/captainbrosset/mytracks/blob/main/src/overlay.js) 使用 `navigator.windowControlsOverlay` 对象。
 
-* [style.css](https://github.com/captainbrosset/mytracks/blob/main/mytracks/style.css)源文件使用 `titlebar-area-height` CSS 环境变量。
+* [style.css](https://github.com/captainbrosset/mytracks/blob/main/mytracks/style.css) 源文件使用 `titlebar-area-height` CSS 环境变量。
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
 *   [窗口控件覆盖视频教程](https://www.youtube.com/watch?v=NvClp35dFVI)
-*   [自定义用户标题PWA窗口控件覆盖层](https://web.dev/window-controls-overlay/)
+*   [自定义窗口控件覆盖PWA标题栏](https://web.dev/window-controls-overlay/)
 *   [开箱而出](https://alistapart.com/article/breaking-out-of-the-box/)

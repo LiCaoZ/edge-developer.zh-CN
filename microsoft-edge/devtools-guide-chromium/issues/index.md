@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/24/2021
+ms.openlocfilehash: 990a59d5f5603158526dc6834edf4530f7c8fca2
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431688"
 ---
 <!-- Copyright Sam Dutton
 
@@ -22,7 +28,7 @@ ms.date: 06/24/2021
    limitations under the License.  -->
 # <a name="find-and-fix-problems-using-the-issues-tool"></a>使用问题工具查找和修复问题
 
-在 Microsoft Edge工具中，问题工具自动分析当前网页****，报告按类型分组的问题，并提供文档以帮助解释和解决问题。
+问题 **工具** 将自动分析当前网页，报告按类型分组的问题，并提供文档以帮助解释和解决问题。
 
 问题 **工具** 提供以下类别的反馈：
 *  辅助功能。
@@ -43,7 +49,7 @@ ms.date: 06/24/2021
 
 1. 转到包含要修复的问题的网页。  例如，在一 [个新选项卡或窗口中](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 打开辅助功能测试演示页。
 
-1. 打开 DevTools。  几秒钟后，"问题"**** ![](../media/issues-counter-icon.msft.png) ("问题"计数器。) 显示在 DevTools 的右上角。
+1. 打开 DevTools。  几秒钟后，"**** ![](../media/issues-counter-icon.msft.png) 问题" ("问题"计数器。) 显示在 DevTools 的右上角。
 
 1. 刷新页面，因为根据网络请求报告某些问题。  请注意"问题"计数器中的 **更新计数**。
 
@@ -55,7 +61,7 @@ ms.date: 06/24/2021
 ### <a name="other-ways-to-open-the-issues-tool"></a>打开问题工具的其他方法
 
 有几种其他方法可以打开 **问题** 工具：
-*  单击主**面板**或 (**+**) "菜单中的"更多工具"菜单，然后选择"问题******"**。
+*  单击主**面板或** (**+**) "菜单中的"更多工具"菜单，然后选择"问题 **"**。****
 *  选择**自定义和控制 DevTools** >  **更多工具** > **Issues**。
 *  在"元素"工具的 DOM **树中**`Shift`，按下并单击带波浪下划线的元素名称。  或者，在带波浪下划线的元素上打开上下文菜单，然后选择" **查看问题"**。
 
@@ -78,7 +84,7 @@ ms.date: 06/24/2021
 
 1. 打开新 [窗口或选项卡中的](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 辅助功能测试演示页面，然后打开 DevTools。
 
-1. 打开"**问题"** 工具，选择"问题 **"**![ ("计数器](../media/issues-counter-icon.msft.png)。) 。
+1. 打开" **问题"** 工具，选择"问题 **"** (!["计数器](../media/issues-counter-icon.msft.png) 。) 。
 
 1. 选择问题，以展开问题。
 

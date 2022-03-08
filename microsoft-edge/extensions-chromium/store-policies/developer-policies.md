@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/17/2021
+ms.openlocfilehash: 75eec375188385dc22467d4f8a39d9a1d438671c
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430820"
 ---
 # <a name="microsoft-edge-add-ons-store-developer-policies"></a>Microsoft Edge 加载项商店开发人员策略
 
@@ -15,7 +21,7 @@ ms.date: 02/17/2021
 
 感谢你有兴趣开发适用于加载项应用商店Microsoft Edge扩展。  Microsoft Edge 加载项应用商店开发人员策略 (加载项应用商店开发人员策略) 适用于你的扩展，包括通过合作伙伴中心提交扩展，以及通过 Microsoft Edge 加载项提供此类扩展。[](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
 
-加载项_Microsoft Edge_也称为加载项Microsoft Edge_加载项网站_。  加载项_Microsoft Edge开发人员_策略也称为加载项Microsoft Edge_开发人员策略_。
+加载项_Microsoft Edge也称为_加载项Microsoft Edge_加载项网站_。  加载项_Microsoft Edge开发人员_策略也称为加载项Microsoft Edge_开发人员策略_。
 
 
 <!-- ====================================================================== -->
@@ -23,9 +29,9 @@ ms.date: 02/17/2021
 
 下面是一些入门准则：
 
-*   你应该在扩展中为用户提供独特且Microsoft Edge。  提供一个令人信服的理由，从加载项Microsoft Edge加载项应用商店 (Microsoft Edge扩展) 。
+*   你应该在扩展中提供独特且独特的价值，以用于Microsoft Edge。  提供一个令人信服的理由，从加载项Microsoft Edge加载项应用商店 (Microsoft Edge扩展) 。
 *   你不得误导我们的联合用户有关你的扩展功能、谁提供它等。
-*   不得试图欺骗用户、系统或生态系统。  我们的加载项中Microsoft Edge任何类型的欺诈;无论它是评分和审查操作、信用卡欺诈或其他欺诈活动。
+*   不得试图欺骗用户、系统或生态系统。  我们的加载项中Microsoft Edge任何类型的欺诈;无论它是评分和审核操作、信用卡欺诈或其他欺诈活动。
 
 遵循加载项Microsoft Edge开发人员策略有助于你做出选择，以增强扩展的吸引力和受众。
 
@@ -57,7 +63,7 @@ ms.date: 02/17/2021
 
 #### <a name="115-provide-appropriate-details"></a>1.1.5 提供相应详细信息
 
-您必须提供有关扩展以及针对扩展列出元数据 (功能) 详细信息。  扩展必须提供有价值且高质量的用户体验。  你的扩展还必须在加载项Microsoft Edge活动状态。
+您必须提供有关扩展以及针对扩展的元数据类型列表 (功能) 信息详细信息。  扩展必须提供有价值且高质量的用户体验。  你的扩展还必须在加载项Microsoft Edge状态。
 
 #### <a name="116-stability-and-performance"></a>1.1.6 稳定性和性能
 
@@ -82,7 +88,7 @@ ms.date: 02/17/2021
 #### <a name="121-content-security-policies"></a>1.2.1 内容安全策略
 
 > [!NOTE]
-> 如果对扩展进行了超出所述功能的任何更改，则对代码的任何更改都必须符合Microsoft Edge[安全策略](./csp.md#relaxing-the-default-policy)。  例如，扩展不应下载远程脚本，随后以与描述的功能不一致的方式运行该脚本。
+> 如果对扩展进行除上述功能之外的任何更改，则对代码的任何更改都必须符合Microsoft Edge[安全策略](csp.md#relaxing-the-default-policy)。  例如，扩展不应下载远程脚本，随后以与描述的功能不一致的方式运行该脚本。
 
 #### <a name="122-unwanted-and-malicious-software"></a>1.2.2 不需要和恶意软件
 
@@ -90,7 +96,7 @@ ms.date: 02/17/2021
 
 #### <a name="123-dependency-on-other-software"></a>1.2.3 依赖其他软件
 
-扩展可能依赖于非集成软件 (如其他产品、模块或服务) ，以提供主要功能，但您必须在描述中披露依赖项
+扩展可能依赖于非集成软件 (如其他产品、模块或) 交付主要功能，但您必须在描述中披露依赖项
 
 #### <a name="124-extensions-update"></a>1.2.4 扩展更新
 
@@ -110,7 +116,7 @@ ms.date: 02/17/2021
 
 ### <a name="14-usability"></a>1.4 可用性
 
-你的扩展必须符合Microsoft Edge加载项存储可用性标准，包括但不限于以下子部分中列出的标准。
+你的扩展必须符合Microsoft Edge加载项应用商店的可用性标准，包括但不限于以下子部分中列出的标准。
 
 #### <a name="141-compatibility-across-platforms"></a>1.4.1 跨平台的兼容性
 
@@ -262,7 +268,7 @@ ms.date: 02/17/2021
 
 #### <a name="231-requirements"></a>2.3.1 要求
 
-您的扩展不得包含任何促进或宣传以下实际活动的内容： (极端) 无端暴力; (b) 违反; (制造) 武器的行为;或 () 对个人、动物、真实或个人属性使用武器。
+您的扩展不得包含任何促进或宣传以下实际活动的内容： (极端) 无端暴力; (b) 违反者; (制造) 武器的行为;或 () 对个人、动物、真实或个人属性使用武器。
 
 #### <a name="232-responsibility"></a>2.3.2 责任
 

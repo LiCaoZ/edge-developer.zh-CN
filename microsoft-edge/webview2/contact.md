@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 09/29/2021
-ms.openlocfilehash: 0ea4dca0e497e8bba701143943cfb5228a1542fe
-ms.sourcegitcommit: ae41e2c0ca42fb7eac73824c828305c7b13b4203
+ms.openlocfilehash: 0ba86a8f71d7dd37f7cd65ba3c361dfe96e9b10e
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "12345637"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430358"
 ---
 # <a name="contact-the-webview2-team"></a>联系 WebView2 团队
 

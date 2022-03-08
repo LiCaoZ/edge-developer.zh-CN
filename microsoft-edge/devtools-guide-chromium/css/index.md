@@ -1,11 +1,17 @@
 ---
 title: 查看和更改 CSS 入门
-description: 了解如何使用 Microsoft Edge工具查看和更改页面的 CSS。
+description: 了解如何使用 Microsoft Edge Tools 查看和更改页面的 CSS。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: ca61d74fd2e500f9cf0968bfe87f55cfda4cfc19
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431870"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,7 +34,7 @@ ms.date: 05/04/2021
 <!-- ====================================================================== -->
 ## <a name="view-the-css-for-an-element"></a>查看元素的 CSS
 
-1. 打开新窗口或选项卡中的["CSS](https://microsoftedge.github.io/Demos/devtools-css-get-started/) 示例"演示页。 为此，请右键单击`Control`该链接，或长按 (Windows、Linux) `Command` 或 (macOS) 然后单击该链接。
+1. 打开新窗口或选项卡中的["CSS](https://microsoftedge.github.io/Demos/devtools-css-get-started/) 示例"演示页。 为此，请右`Control`键单击该链接，或长按 (Windows、Linux) `Command` 或 (macOS) 然后单击该链接。
 
    <!-- You can view the source files for the CSS Examples demo page at the [MicrosoftEdge/Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) repo folder. -->
 
@@ -40,7 +46,7 @@ ms.date: 05/04/2021
 
 1. `Inspect Me!`在 元素中，找到 属性的值并`data-message`复制它。
 
-1. 在页面上的" **值"`data-message`** 文本框中，输入值。
+1. 在页面上的" **值`data-message`**"文本框中，输入值。
 
 1. 右键单击文本 `Inspect Me!` ，然后选择"检查 **"**。
 
@@ -52,7 +58,7 @@ ms.date: 05/04/2021
 
    :::image type="content" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="CSS 类应用于检查的元素在&quot;样式&quot;面板中突出显示。" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
 
-1. 在页面上的" **值"`padding`** 文本框中，输入值。
+1. 在页面上的" **值`padding`**"文本框中，输入值。
 
 
 <!-- ====================================================================== -->
@@ -158,7 +164,7 @@ ms.date: 05/04/2021
 
 1. 打开 DevTools。  为此，可以在网页中右键单击，然后选择"检查 **"**。
 
-1. 单击"**切换设备仿真 (**!["设备仿真"图标](../media/device-emulation-icon-light-theme.png)。) 按钮。  或者，当 DevTools 具有焦点时，`Ctrl``Shift`++`M``M`+`Cmd`+`Shift`在 macOS (按) 。
+1. 单击" **切换设备仿真** " (!["设备仿真"图标](../media/device-emulation-icon-light-theme.png) 。) 按钮。  或者，当 DevTools 具有焦点时，`Ctrl``Shift`++`M``M`+`Cmd`+`Shift` (macOS) 。
 
    <!-- todo: update to show new tooltip: -->
 

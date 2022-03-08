@@ -1,16 +1,22 @@
 ---
 title: 联系 Microsoft Edge 开发工具团队
-description: 与开发人员Microsoft Edge联系以提交有关针对开发人员进行开发的功能请求或 bug Microsoft Edge。
+description: 与开发人员Microsoft Edge联系，以提交有关针对开发人员进行开发的功能请求或 bug Microsoft Edge。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 09/29/2021
+ms.openlocfilehash: 8b4c61fdcaf53c84059e87fbbbc9c123da4d790d
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431485"
 ---
 # <a name="contact-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队
 
-发送反馈以帮助改进Microsoft Edge开发人员工具。  请与 Microsoft Edge 开发人员工具团队联系，以提交有关针对开发人员进行开发的功能请求或Microsoft Edge。
+发送反馈以帮助改进Microsoft Edge工具。  请与 Microsoft Edge 开发人员工具团队联系，以提交有关针对开发人员进行开发的功能请求或Microsoft Edge。
 
 有几种方法可以与开发人员工具团队Microsoft Edge联系。
 
@@ -18,7 +24,7 @@ ms.date: 09/29/2021
 <!-- ====================================================================== -->
 ## <a name="use-the-send-feedback-window"></a>使用"发送反馈"窗口
 
-若要报告 DevTools 中的 Bug 或请求新功能，请打开 [DevTools](index.md#opening-devtools) ，然后选择" **发送反馈"** 图标。  或者，在 DevTools `Alt`++`Shift``I` 中，按 (Windows、Linux) 或`I` `Option`+`Shift`+ (macOS) 。  此方法为开发小组创建Microsoft Edge问题。
+若要报告 DevTools 中的 Bug 或请求新功能，请打开 [DevTools](index.md#open-devtools) ，然后选择" **发送反馈"** 图标。  或者，在 DevTools `Alt`++`Shift``I` 中，按 (Windows、Linux) 或`I` `Option`+`Shift`+ (macOS) 。  此方法为开发小组Microsoft Edge跟踪问题。
 
 :::image type="content" source="../media/devtools-send-feedback.msft.png" alt-text="DevTools 中的&quot;发送Microsoft Edge图标。" lightbox="../media/devtools-send-feedback.msft.png":::
 

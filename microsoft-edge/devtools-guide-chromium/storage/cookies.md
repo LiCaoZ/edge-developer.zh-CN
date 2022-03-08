@@ -1,11 +1,17 @@
 ---
 title: 查看、编辑和删除 Cookie
-description: 如何使用 DevTools 查看、编辑和删除页面的 HTTP Microsoft Edge Cookie。
+description: 在 Microsoft Edge开发工具中，使用应用程序工具的"Cookie"窗格查看、编辑和删除网页的 HTTP Cookie。  HTTP Cookie 用于管理用户会话、存储用户个性化首选项和跟踪用户行为。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: b8031069f0a175a804c6441b6e6e1724373097b7
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431415"
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,9 +28,9 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # <a name="view-edit-and-delete-cookies"></a>查看、编辑和删除 Cookie
 
-[HTTP Cookie](https://developer.mozilla.org/docs/Web/HTTP/Cookies) 主要用于管理用户会话、存储用户个性化首选项和跟踪用户行为。  Cookie 也是导致各种网页上出现麻烦的 **此页面使用 Cookie** 许可表单的源头。
+_HTTP Cookie_ 用于管理用户会话、存储用户个性化首选项和跟踪用户行为。  使用**应用程序工具**的"Cookie"**** 窗格查看、编辑和删除网页的 HTTP Cookie。
 
-本文指导你如何使用 DevTools 查看、编辑和删除网页的 HTTP Cookie。
+请参阅 [使用 HTTP Cookie](https://developer.mozilla.org/docs/Web/HTTP/Cookies)。
 
 
 <!-- ====================================================================== -->
@@ -32,11 +38,11 @@ ms.date: 05/04/2021
 
 1. [打开 DevTools](/microsoft-edge/devtools-guide-chromium/open)。
 
-1. 单击" **应用程序"** 选项卡以打开" **应用程序"** 面板。  将 **打开"清单** "窗格。
+1. 单击" **应用程序"** 选项卡以打开" **应用程序"** 面板。  " **清单"** 窗格将打开：
 
    :::image type="content" source="../media/storage-application-manifest-empty.msft.png" alt-text="&quot;清单&quot;窗格。" lightbox="../media/storage-application-manifest-empty.msft.png":::
 
-1. 在**存储**"下，展开 **"Cookie"**，然后选择一个源。
+1. 在**存储**"下，展开 **"Cookie"**，然后选择一个源：
 
    :::image type="content" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="&quot;Cookie&quot;窗格。" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
 
@@ -70,16 +76,17 @@ ms.date: 05/04/2021
 <!-- ====================================================================== -->
 ## <a name="filter-cookies"></a>筛选 Cookie
 
-使用“**筛选器**”文本框按**名称**或**值**筛选 Cookie。  不支持按其他字段筛选。
+若要按**名称或****值**筛选 Cookie，请使用 **"筛选器"** 文本框：
 
 :::image type="content" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="筛选掉任何不包含文本 ID 的 Cookie。" lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
+
+不支持按其他字段筛选。
 
 
 <!-- ====================================================================== -->
 ## <a name="edit-a-cookie"></a>编辑 Cookie
 
-**名称**、**值**、**域**、**路径**和**过期日期/最长期限**字段是可编辑的。
-双击某个字段进行编辑。
+**名称**、**值**、**域**、**路径**和**过期日期/最长期限**字段是可编辑的。  双击某个字段进行编辑：
 
 :::image type="content" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="将 Cookie 的名称设置为&quot;DEVTOOLS！&quot;。" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
 
@@ -87,11 +94,11 @@ ms.date: 05/04/2021
 <!-- ====================================================================== -->
 ## <a name="delete-cookies"></a>删除 Cookie
 
-单击 Cookie， **然后单击"删除** 所选 ![ ("。](../media/delete-icon.msft.png)) 删除特定 Cookie。
+若要删除特定 Cookie，请单击 Cookie，**然后单击"删除**![所选 ("。](../media/delete-icon.msft.png)) ：
 
 :::image type="content" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="删除特定 Cookie。" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
 
-单击 **"全部清除** (![全部](../media/clear-icon.msft.png) 清除"。) 删除所有 Cookie。
+若要删除所有 Cookie， **请单击"全部** 清除 (![全部清除"。) ](../media/clear-icon.msft.png) ：
 
 :::image type="content" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="清除所有 Cookie。" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
 

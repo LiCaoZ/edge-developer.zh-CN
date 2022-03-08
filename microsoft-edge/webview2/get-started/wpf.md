@@ -7,32 +7,44 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 11/05/2021
-ms.openlocfilehash: 861c23da72e9d0ddb11b425a0e54578d49b0b34e
-ms.sourcegitcommit: 992cdaff8073121ea8e9b4d3e1eeab7340b4ec1f
+ms.openlocfilehash: bcca560e8a4f3cceb2caa1db650da63066045fc8
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "12346967"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432096"
 ---
 # <a name="get-started-with-webview2-in-wpf-apps"></a>WPF 应用中的 WebView2 入门
 
-本文将开始在 WPF Windows Presentation Foundation (WPF) 创建第一个 [WebView2 应用，并了解 WebView2 的主要功能](https://developer.microsoft.com/microsoft-edge/webview2)。 有关各个 API 详细信息，请参阅 [API 参考](/dotnet/api/microsoft.web.webview2.wpf)。
+本文介绍了如何设置开发工具并创建适用于 Windows Presentation Foundation (WPF) 的初始 WebView2 应用，并一起了解 WebView2 概念。
+
+* 有关入门示例，GitHub：[WPF (WPF_GettingStarted/WPFSample.sln ](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WPF_GettingStarted#readme)) 
 
 
 <!-- ====================================================================== -->
-## <a name="step-0---prerequisites"></a>步骤 0 - 先决条件
+## <a name="step-1---install-visual-studio"></a>步骤 1 - 安装Visual Studio
 
-安装以下必备组件列表，然后再继续。
+本教程要求Microsoft Visual Studio代码，Microsoft Visual Studio代码。
 
-1. [Visual Studio](https://visualstudio.microsoft.com) 2017 或更高版本。
-
-1. [WebView2](https://developer.microsoft.com/microsoft-edge/webview2) 运行时，或安装在[](https://www.microsoftedgeinsider.com/download)Microsoft Edge操作系统 (操作系统) 支持的操作系统 (Beta、Dev 或 Canary) 预览版 (预览版) 。 当前支持的操作系统列表是 Windows 11、Windows 10、Windows 8.1 和 Windows 7。
-
-   WebView2 团队建议使用 Canary 频道Microsoft Edge。  最低要求版本为 82.0.488.0。
+1. 安装 [Visual Studio](https://visualstudio.microsoft.com) 2017 或更高版本。  可以接受默认值。
 
 
 <!-- ====================================================================== -->
-## <a name="step-1---create-a-single-window-app"></a>步骤 1 - 创建单窗口应用
+## <a name="step-2---install-a-preview-channel-of-microsoft-edge"></a>步骤 2 - 安装预览频道Microsoft Edge
+
+1. 在受支持的[Microsoft Edge](https://www.microsoftedgeinsider.com/download)操作系统 (操作系统) Beta (、Dev 或 Canary) 下载预览体验成员 (预览) ：
+   *  Windows 7
+   *  Windows 8.1
+   *  Windows 10
+   *  Windows 11
+
+   我们建议使用 Canary 通道的 Microsoft Edge。  最低要求版本为 82.0.488.0。
+
+<!-- Or, download the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section), or  -->
+
+
+<!-- ====================================================================== -->
+## <a name="step-3---create-a-single-window-webview2-app"></a>步骤 3 - 创建单窗口 WebView2 应用
 
 从包含单个主窗口的基本桌面项目开始。
 
@@ -52,13 +64,13 @@ ms.locfileid: "12346967"
 
    或者，下图中突出显示的卡片是 **WPF 应用 (.NET Framework) ：Windows Presentation Foundation客户端应用程序**：
 
-   !["创建新项目"面板（卡片已选中，"WPF 应用 (.NET Framework) ：Windows Presentation Foundation客户端应用程序"。](media/wpf-getting-started-wpf-fw.png)
+   !["创建新项目"面板，选择卡片"WPF 应用 (.NET Framework) ：Windows Presentation Foundation客户端应用程序"。](media/wpf-getting-started-wpf-fw.png)
 
    将显示 **"配置新项目** WPF 应用程序"对话框。
 
    !["配置新项目"WPF 应用程序对话框。](media/wpf-getting-started-create-core.png)
 
-1. 输入"Project **"和****"位置**"的值，然后单击"下一步 **"**。
+1. 输入**名称Project****位置的值**，然后单击"下一步 **"**。
 
    将显示 **"其他** 信息"对话框，并包含" **目标框架** "下拉列表：
 
@@ -79,20 +91,26 @@ ms.locfileid: "12346967"
    Visual Studio创建项目。
 
 
+<!-- maintenance link; keep: main copy:
+[Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
+-->
 <!-- ====================================================================== -->
-## <a name="step-2---install-webview2-sdk"></a>步骤 2 - 安装 WebView2 SDK
+## <a name="step-4---install-the-webview2-sdk"></a>步骤 4 - 安装 WebView2 SDK
 
-使用 NuGet 将 WebView2 SDK 添加到项目中。
+使用 NuGet将 WebView2 SDK 添加到项目中。
 
 1. 在 **"解决方案资源管理器**"中，右键单击项目名称，然后选择"管理NuGet**包：**
 
-   :::image type="content" source="./media/wpf-getting-started-mng-nuget-reduced.png" alt-text="右键单击NuGet&quot;管理程序包&quot;命令。":::
+   ![右键单击NuGet"管理程序包"命令。](media/wpf-getting-started-mng-nuget.png)
+
+   <!-- todo: The above image is supposed to show the WPF project instead of the WinForms project.  generally, avoid sharing images across multiple .md files -->
+   _ (上面的图像应显示 WPF 项目，而不是 WinForms 项目。) _
 
 1. 在左上角，单击"浏览 **"** 选项卡。 在搜索栏中，键入 `Microsoft.Web.WebView2`，然后单击 **Microsoft.Web.WebView2** 卡。
 
    The NuGet package manager dialog box displays search results， including a **Microsoft.Web.WebView2** card.  该对话框具有版本号和"安装 **"** 按钮。
    
-   :::image type="content" source="./media/install-nuget.png" alt-text="NuGet包管理器&quot;对话框显示 Microsoft.Web.WebView2 卡。" lightbox="./media/install-nuget.png":::
+   ![NuGet程序包管理器"对话框显示 Microsoft.Web.WebView2 卡。](media/install-nuget.png)
 
 1. 接受默认版本，然后单击"安装 **"** 按钮。
 
@@ -104,11 +122,11 @@ ms.locfileid: "12346967"
 
    项目运行并显示一个空窗口。  这将验证 WebView2 已安装并正常工作，尽管 WebView2 尚未显示任何内容：
 
-   :::image type="content" source="./media/winforms-empty-app.png" alt-text="空应用窗口。" lightbox="./media/winforms-empty-app.png":::
+   ![空应用窗口。](media/winforms-empty-app.png)
 
 
 <!-- ====================================================================== -->
-## <a name="step-3---create-a-single-webview"></a>步骤 3 - 创建单个 WebView
+## <a name="step-5---create-a-single-webview"></a>步骤 5 - 创建单个 WebView
 
 将 WebView2 控件添加到你的应用。
 
@@ -155,11 +173,11 @@ ms.locfileid: "12346967"
 
 1. 确保 WebView2 控件显示 [https://www.microsoft.com](https://www.microsoft.com)：
 
-   :::image type="content" source="./media/wpf-getting-started-microsoft.png" alt-text="WebView2 控件，显示 Microsoft.com。":::
+   ![WebView2 控件，用于显示网页 microsoft.com。](media/wpf-getting-started-microsoft.png)
 
 
 <!-- ====================================================================== -->
-## <a name="step-4---navigation"></a>步骤 4 - 导航
+## <a name="step-6---navigation"></a>步骤 6 - 导航
 
 允许用户通过向应用添加地址栏来更改 WebView2 控件显示的 URL。
 
@@ -245,11 +263,15 @@ ms.locfileid: "12346967"
 
    示例应用程序在地址必应 URL `https://www.bing.com` 显示网站：
 
-   :::image type="content" source="./media/wpf-getting-started-bing.png" alt-text="应用显示必应网站。":::
+   ![应用显示必应网站。](media/wpf-getting-started-bing.png)
 
 
+<!--
+maintenance link (keep)
+* [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
+-->
 <!-- ====================================================================== -->
-## <a name="step-5---navigation-events"></a>步骤 5 - 导航事件
+## <a name="step-7---navigation-events"></a>步骤 7 - 导航事件
 
 在网页导航期间，WebView2 控件将引发事件。 承载 WebView2 控件的应用侦听以下事件：
 
@@ -272,7 +294,7 @@ ms.locfileid: "12346967"
 1. 历史记录更改。
 1. 导航已完成。
 
-有关详细信息，请参阅 [WebView2 的导航事件](../concepts/navigation-events.md)。
+有关详细信息，请参阅 [WebView2 应用的导航事件](../concepts/navigation-events.md)。
 
 
 ### <a name="failure-path"></a>失败路径
@@ -326,7 +348,7 @@ ms.locfileid: "12346967"
 
 
 <!-- ====================================================================== -->
-## <a name="step-6---scripting"></a>步骤 6 - 脚本
+## <a name="step-8---scripting"></a>步骤 8 - 脚本
 
 在运行时，可以使用主机应用将 JavaScript 代码注入 WebView2 控件。  你可以任务 WebView2 运行任意 JavaScript 或添加初始化脚本。  在删除 JavaScript 之前，注入的 JavaScript 适用于所有新的顶级文档和任何子框架。
 
@@ -357,11 +379,11 @@ ms.locfileid: "12346967"
 
 1. 当你导航到不使用 HTTPS 的网站时，请确保应用显示一个警报。
 
-:::image type="content" source="./media/wpf-getting-started-https.png" alt-text="显示 http： URL 不安全的消息，建议改为尝试 https： URL。":::
+   ![显示 http： URL 不安全的消息，建议改为尝试 https： URL。](media/wpf-getting-started-https.png)
 
 
 <!-- ====================================================================== -->
-## <a name="step-7---communication-between-host-and-web-content"></a>步骤 7 - 主机和 Web 内容之间的通信
+## <a name="step-9---communication-between-host-and-web-content"></a>步骤 9 - 主机和 Web 内容之间的通信
 
 主机和 Web 内容可以使用以下方式进行通信 `postMessage`：
 
@@ -431,7 +453,7 @@ ms.locfileid: "12346967"
 
    示例应用在地址栏和 Microsoft 网站中显示 URI， https://www.microsoft.com:
 
-   :::image type="content" source="./media/wpf-getting-started-searchbar.png" alt-text="示例应用在地址栏和 Microsoft 网站中显示 URI。":::
+   ![示例应用在地址栏和 Microsoft 网站中显示 URI。](media/wpf-getting-started-searchbar.png)
 
 恭喜！你生成了第一个 WebView2 应用！
 
@@ -439,13 +461,18 @@ ms.locfileid: "12346967"
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - 有关 WebView2 功能的初始 developer.microsoft.com。
+
+本地页面：
+* [WebView2 示例：WPF .NET 浏览器应用](../samples/webview2wpfbrowser.md)
 * [管理用户数据文件夹](../concepts/user-data-folder.md)
-
-
-<!-- ====================================================================== -->
-## <a name="next-steps"></a>后续步骤
-
-* [WebView2 开发的最佳做法](../concepts/developer-guide.md)
-* [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。
-* [WebView2 API 参考](/dotnet/api/microsoft.web.webview2.wpf.webview2)
+* [WebView2 的示例代码](../code-samples-links.md) - 存储库 `WebView2Samples` 指南。
+* [WebView2 应用的开发最佳做法](../concepts/developer-guide.md)
 * [另请参阅](../index.md#see-also) _WebView2 Microsoft Edge简介_。
+
+API 参考：
+* [API 参考：WebView2.Wpf 命名空间中的 WebView2 类](/dotnet/api/microsoft.web.webview2.wpf.webview2)
+* [API 参考：WebView2.Wpf 命名空间](/dotnet/api/microsoft.web.webview2.wpf)
+
+GitHub：
+* [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。

@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: f6f4768acab0e6181922f836e178f78d1d43caf1
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432906"
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,13 +28,13 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # <a name="view-and-edit-session-storage"></a>查看和编辑会话存储
 
-本指南将演示如何使用 [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) 查看、编辑和删除 [sessionStorage](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage) 键值对。
+若要查看、编辑和删除 [sessionStorage 键](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage) 值对，请使用 **应用程序** 工具。
 
 
 <!-- ====================================================================== -->
 ## <a name="view-sessionstorage-keys-and-values"></a>查看 sessionStorage 的键和值
 
-1. 单击" **应用程序"** 选项卡以打开 **"应用程序"** 工具。  默认显示**清单**面板。
+1. 在 DevTools 中，单击 **"应用程序"** 选项卡以打开 **"应用程序"** 工具。  默认显示**清单**面板。
 
    :::image type="content" source="../media/storage-application-manifest.msft.png" alt-text="&quot;清单&quot;窗格。" lightbox="../media/storage-application-manifest.msft.png":::
 
@@ -42,7 +48,7 @@ ms.date: 05/04/2021
 
 1. 单击表格的一行以查看表格下方的查看器中的值。
 
-:::image type="content" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="查看 x-sid 键的值。" lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
+   :::image type="content" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="查看 x-sid 键的值。" lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -52,7 +58,7 @@ ms.date: 05/04/2021
 
 1. 双击表的空白部分。  DevTools 将新建行，并将光标停留在**键**列。
 
-:::image type="content" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="要双击以创建新的键值对的表的空部分。" lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
+   :::image type="content" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="要双击以创建新的键值对的表的空部分。" lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -62,7 +68,7 @@ ms.date: 05/04/2021
 
 1. 双击**键**或**值**列以编辑该键或值。
 
-:::image type="content" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="编辑 sessionStorage 密钥。" lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
+   :::image type="content" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="编辑 sessionStorage 密钥。" lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -72,7 +78,7 @@ ms.date: 05/04/2021
 
 1. 单击要删除的键值对。  DevTools 会以蓝色将其突出显示以表示其已选中。
 
-1. 按`Delete`或单击"**删除所选 (**![删除所选](../media/delete-icon.msft.png)内容。) 。
+1. 按`Delete`或单击"**删除所选 (**!["。) ](../media/delete-icon.msft.png)。
 
 
 <!-- ====================================================================== -->
@@ -94,7 +100,7 @@ ms.date: 05/04/2021
 
 1. 使用**控制台**运行 `sessionStorage` 表达式，与 JavaScript 一样。
 
-:::image type="content" source="../media/storage-console-session-storage-keys.msft.png" alt-text="从控制台与 sessionStorage 交互。" lightbox="../media/storage-console-session-storage-keys.msft.png":::
+   :::image type="content" source="../media/storage-console-session-storage-keys.msft.png" alt-text="从控制台与 sessionStorage 交互。" lightbox="../media/storage-console-session-storage-keys.msft.png":::
 
 
 <!-- ====================================================================== -->

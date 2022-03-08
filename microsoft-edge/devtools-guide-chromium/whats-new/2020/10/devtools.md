@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 416d08915d3eaf5d66897d47b8f9cf3eee4891e3
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431037"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -20,7 +26,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="whats-new-in-devtools-microsoft-edge-87"></a>DevTools 87 (Microsoft Edge中的新增) 
+# <a name="whats-new-in-devtools-microsoft-edge-87"></a>DevTools (Microsoft Edge 87 中的新增) 
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
@@ -43,7 +49,7 @@ ms.date: 05/04/2021
 <!-- ====================================================================== -->
 ## <a name="move-tools-between-top-and-bottom-panels"></a>在顶部和底部面板之间移动工具
 
-DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时查看两个工具的任意组合来自定义 DevTools 并提高工作效率。  例如，将 **"源"** 工具移动到****"源" (查看"元素"和"源") ****。  有关开放源代码项目中此功能的Chromium，请参阅 Issue [#1075732](https://crbug.com/1075732)。
+DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时查看两个工具的任意组合来自定义 DevTools 并提高工作效率。  例如，将"源"工具移动到****"源" (查看"元素"和"源") ****。****  有关开放源代码项目中此功能的Chromium，请参阅 Issue [#1075732](https://crbug.com/1075732)。
 
 若要将任何顶部工具移动到底部，请右键单击某个选项卡，然后选择" **移动到底部"**。
 
@@ -82,7 +88,7 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
 
 :::image type="content" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能。":::
 
-开发人员Microsoft Edge工具现在支持以下功能来检查、查看和调试 CSS 网格。
+现在Microsoft Edge开发人员工具支持以下功能来检查、查看和调试 CSS 网格。
 
 *  使用 Inspect 工具显示简化的网格 **覆盖，或** 获取有关永久性覆盖的更多详细信息。
 
@@ -92,7 +98,7 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
 
 *  新的 **布局** 工具允许你轻松切换网格覆盖，并为每个覆盖层配置外观和内容。
 
-默认情况下，这些功能为打开状态。  有关功能详细信息，请参阅 [CSS 网格](../../../css/grid.md)。  有关开放源代码项目中此功能的Chromium，请参阅问题 [#1047356](https://crbug.com/1047356)。  此外，Microsoft Edge开发人员工具团队正在与 Chrome DevTools 团队和 Chromium 社区协作，向 DevTools 添加新的弹性框工具功能。  有关开放源代码项目中弹性Chromium的更新，请参阅 Issue [#1136394](https://crbug.com/1136394)。
+默认情况下，这些功能为打开状态。  有关功能详细信息，请参阅 [CSS 网格](../../../css/grid.md)。  有关开放源代码项目中此功能的Chromium，请参阅 Issue [#1047356](https://crbug.com/1047356)。  此外，Microsoft Edge DevTools 团队正在与 Chrome DevTools 团队和 Chromium 社区协作，向 DevTools 添加新的弹性框工具功能。  有关开放源代码项目中 flexbox Chromium的更新，请参阅 Issue [#1136394](https://crbug.com/1136394)。
 
 :::image type="content" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="具有网格的布局工具。" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
 
@@ -102,9 +108,9 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
 
 :::image type="content" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能。":::
 
-现在，你可以为 DevTools 中任何操作自定义键盘快捷方式。  自Microsoft Edge版本 84 起，你可以选择在 Visual Studio Code 和 **DevTools (键盘**) [预设。](../../../customize/shortcuts.md)****  从 Microsoft Edge版本 87 开始，你可以打开启用**键盘快捷方式编辑器**实验以进一[步自定义键盘快捷方式](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action)。
+现在，你可以为 DevTools 中任何操作自定义键盘快捷方式。  自Microsoft Edge版本 84 起，你可以选择在 Visual Studio Code 和 **DevTools (键盘**) [预设](../../../customize/shortcuts.md)。****  从 Microsoft Edge版本 87 开始，你可以打开启用**键盘快捷方式编辑器**实验以进一[步自定义键盘快捷方式](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action)。
 
-若要启用实验 [，请参阅打开](../../../experimental-features/index.md#turning-an-experiment-on-or-off) 或关闭实验，并选中启用键盘快捷方式 **编辑器旁边的复选框**。  有关自定义和编辑快捷方式的信息，请参阅编辑 [DevTools](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) 中任何操作键盘快捷方式。  有关开放源代码项目中此功能Chromium，请参阅问题 [#174309](https://crbug.com/174309)。
+若要启用实验 [，请参阅打开](../../../experimental-features/index.md#turning-an-experiment-on-or-off) 或关闭实验，并选中启用键盘快捷方式 **编辑器旁边的复选框**。  有关自定义和编辑快捷方式的详细信息，请参阅“[编辑 DevTools 中任何操作的键盘快捷方式](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action)”。  有关开放源代码项目中此功能Chromium，请参阅问题 [#174309](https://crbug.com/174309)。
 
 :::image type="content" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="用于暂停脚本的自定义快捷方式。" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
 
@@ -112,9 +118,9 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
 
 
 <!-- ====================================================================== -->
-## <a name="introducing-the-microsoft-edge-tools-for-visual-studio-code-extension"></a>Microsoft Edge工具扩展Visual Studio Code介绍
+## <a name="introducing-the-microsoft-edge-tools-for-visual-studio-code-extension"></a>Microsoft Edge Tools for Visual Studio Code 扩展
 
-现在 **，Visual Studio Code**和 **Network for Visual Studio Code** 的 Elements 将合并到新的 Microsoft Edge [Developer Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) 扩展中。  将 Microsoft Edge DevTools 用于以下活动，而无需保留Microsoft Visual Studio代码。
+适用于 **Visual Studio Code** 和 **Network for Visual Studio Code** 的 Elements 现在合并到新的 Microsoft Edge [开发人员工具 for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) 扩展中。  将 Microsoft Edge DevTools 用于以下活动，而无需保留Microsoft Visual Studio代码。
 
 *  调试 DOM
 *  编辑 CSS
@@ -146,7 +152,7 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
 
 有关 **WebAuthn 功能详细信息** ，请参阅 [模拟验证器和调试 WebAuthn](../../../webauthn/index.md)。
 
-您可以使用新的 [WebAuthn](../../../webauthn/index.md) 工具模拟验证器[并](https://w3c.github.io/webauthn)调试 Web 身份验证 API。  若要打开 **WebAuthn** 工具，请单击"自定义和控制 **DevTools** `...` " () "图标>**更多** **toolsWebAuthn** > "。  有关开放源代码项目中此功能Chromium，请参阅问题 [#1034663](https://crbug.com/1034663)。
+您可以使用新的 [WebAuthn](../../../webauthn/index.md) 工具模拟验证器[并](https://w3c.github.io/webauthn)调试 Web 身份验证 API。  若要打开 **WebAuthn** 工具，请单击"自定义和控制 **DevTools** `...` 工具" () "> **ToolsWebAuthn****** > "图标。  有关开放源代码项目中此功能Chromium，请参阅问题 [#1034663](https://crbug.com/1034663)。
 
 打开 **WebAuthn** 工具：
 
@@ -202,7 +208,7 @@ performance.mark('end');
 
 :::image type="content" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="资源类型筛选器。" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
 
-若要发现更多特殊关键字（如 `resource-type` 和 `url`），请参阅 [按属性筛选请求](../../../network/reference.md#filter-requests-by-properties)。  有关开放源代码项目中此功能Chromium更新，请参阅问题 [#1121141](https://crbug.com/1121141) 和 [#1104188](https://crbug.com/1104188)。
+若要发现更多特殊关键字（如 `resource-type` 和 `url`），请参阅 [按属性筛选请求](../../../network/reference.md#filter-requests-by-properties)。  有关开放源代码项目中此功能Chromium，请参阅问题 [#1121141](https://crbug.com/1121141) 和 [#1104188](https://crbug.com/1104188)。
 
 ### <a name="frame-details-view-updates"></a>框架详细信息视图更新
 
@@ -224,7 +230,7 @@ DevTools 现在显示 `report-only` 设置为模式的 COEP 和 COOP `report-onl
 
 CSS **概述** 工具现在显示页面上具有颜色对比度问题的元素列表。  CSS [概述可访问颜色演示](https://css-overview-accessible-colors-demo.glitch.me) 页面包含颜色对比度问题的示例。
 
-若要启用此实验，**请在** > "设置 **"下**选中 **"CSS 概述"** 复选框。  若要查看具有颜色对比度问题的元素的列表，请在"对比度问题" **上单击"** 文本 **"**。  若要在"元素"工具 **中打开元素** ，请单击列表中的元素。  为了帮助修复对比度问题，Microsoft Edge开发人员工具[自动提供颜色建议](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane)。  有关开放源代码项目中此功能Chromium，请参阅问题 [#1120316](https://crbug.com/1120316)。
+若要启用此实验，**请在** >  设置**Experiments 下**，选中 **"CSS 概述"** 复选框。  若要查看具有颜色对比度问题的元素的列表，请在"对比度问题" **上单击"** 文本 **"**。  若要在"元素"工具 **中打开元素** ，请单击列表中的元素。  为了帮助解决对比度问题，Microsoft Edge开发人员工具[自动提供颜色建议](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane)。  有关开放源代码项目中此功能Chromium，请参阅问题 [#1120316](https://crbug.com/1120316)。
 
 :::image type="content" source="../../media/2020/10/css-overview.msft.png" alt-text="低色对比度问题。" lightbox="../../media/2020/10/css-overview.msft.png":::
 

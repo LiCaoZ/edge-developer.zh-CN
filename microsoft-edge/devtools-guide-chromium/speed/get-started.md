@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: a052a19e459020e5fd5bedcf99ee1de97722a7ef
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432052"
 ---
 <!-- Copyright Kayce Basques
 
@@ -81,7 +87,7 @@ lighthouse: 9 -->
 
    :::image type="content" source="../media/speed-glitch-tony-show-live-console.msft.png" alt-text="DevTools 和演示。" lightbox="../media/speed-glitch-tony-show-live-console.msft.png":::
 
-对于本教程中的其余屏幕截图，开发人员工具显示在单独窗口中。  按 `Control`+`Shift``P`+ (Windows、Linux) 或`P``Shift`++`Command` (macOS `Undock`) 打开"命令菜单"，键入 ，然后选择"取消停靠到**单独的窗口中"**。
+对于本教程中的其余屏幕截图，开发人员工具显示在单独窗口中。  按 `Ctrl``P`+`Shift`+ (Windows、Linux) `P``Shift`++`Command` 或 (macOS) `Undock`打开"命令菜单"，键入 ，然后选择"取消停靠到**单独的窗口中"**。
 
 :::image type="content" source="../media/speed-console.msft.png" alt-text="DevTools 已取消停靠到单独的窗口中。" lightbox="../media/speed-console.msft.png":::
 
@@ -89,7 +95,7 @@ lighthouse: 9 -->
 
 基线是指在改进性能之前有关站点执行情况的记录。
 
-1. 选择 **"灯楼"** 工具。  它可能隐藏在"更多工具 **" (**!["按钮) ](../media/more-panels-icon.msft.png)按钮。
+1. 选择 **"灯楼"** 工具。  它可能隐藏在"更多工具 **" (**!["按钮) ](../media/more-panels-icon.msft.png)隐藏。
 
    :::image type="content" source="../media/speed-audits-performance.msft.png" alt-text="Lighthouse 工具。" lightbox="../media/speed-audits-performance.msft.png":::
 
@@ -236,9 +242,9 @@ lighthouse: 9 -->
 
 再次审核页面，测量文本压缩对页面加载性能的影响类型：
 
-1. Select the **Lighthouse** tool (formerly called the Audits tool) .
+1. Select the **Lighthouse** tool (formerlyhouse tool) .
 
-1. 单击 **"执行审核 (**![执行审核"](../media/perform-icon.msft.png)。) 。
+1. 单击 **"执行审核 (**![执行审核"。](../media/perform-icon.msft.png)) 。
 
 1. 保持设置与以前相同。
 
@@ -298,7 +304,7 @@ lighthouse: 9 -->
 
    :::image type="content" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png" alt-text="有关消除呈现阻止资源机会详细信息。" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png":::
 
-1. 按 `Control`+`Shift``P`+ (Windows、Linux) 或`P``Shift`++`Command` (macOS) 打开"命令菜单"，开始键入 `Coverage`，然后选择"显示**覆盖"**。
+1. 按 `Ctrl`+`Shift``P`+ (Windows、Linux) 或`P``Shift`++`Command` (macOS) 打开"命令菜单"，开始键入 `Coverage`，然后选择"显示**覆盖"**。
 
    :::image type="content" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png" alt-text="从&quot;审核&quot;面板中打开&quot;命令菜单&quot;。" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png":::
 
@@ -320,7 +326,7 @@ lighthouse: 9 -->
 
 1. 选择 **"网络"** 工具。
 
-1. 按 `Control`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 再次打开命令菜单。
+1. 按 `Ctrl`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 再次打开命令菜单。
 
 1. 开始键入 ， `blocking`然后选择"显示 **请求阻止"**。
 
@@ -334,7 +340,7 @@ lighthouse: 9 -->
 
    :::image type="content" source="../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png" alt-text="&quot;网络&quot;面板显示请求已被阻止。" lightbox="../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png":::
 
-1. 单击 **"删除所有模式** (![删除所有模式](../media/remove-icon.msft.png) 。) 删除阻止 `/libs/*` 模式。
+1. 单击 **"删除所有模式** (![删除所有](../media/remove-icon.msft.png) 模式。) 删除阻止 `/libs/*` 模式。
 
 通常， **请求阻止** 工具可用于模拟在任何给定资源不可用时页面的行为方式。
 
@@ -374,7 +380,7 @@ lighthouse: 9 -->
 
 1. 将**网络**设置为**慢速 3G**，**CPU**设置为**6x 减速**。  移动设备的硬件约束通常比笔记本电脑或台式机多，因此这些设置可以让你就像使用不那么强大的设备一样体验页面加载。
 
-1. 单击 **"刷新**![ (刷新"。](../media/reload-icon.msft.png)) 。  开发人员工具会刷新页面，然后生成加载页面所执行的所有工作的可视化效果。  此可视化效果称为**跟踪**。
+1. 单击 **"刷新** (![刷新"。](../media/reload-icon.msft.png)) 。  开发人员工具会刷新页面，然后生成加载页面所执行的所有工作的可视化效果。  此可视化效果称为**跟踪**。
 
    :::image type="content" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="页面加载的性能工具跟踪。" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
 
@@ -384,7 +390,7 @@ lighthouse: 9 -->
 
 调查跟踪，查找减少 JavaScript 工作的方法：
 
-1. 单击" **计时"** 部分以展开它。  根据这一事实，可能会存在一组来自 React [](https://developer.mozilla.org/docs/Web/API/User_Timing_API) 的计时度量，看起来 Tony 的应用正在使用 React。  切换到 React 的生产模式可能会产生一些简单的性能优势。
+1. 单击" **计时"** 部分以展开它。  根据这一事实，可能有一组来自 React 的[](https://developer.mozilla.org/docs/Web/API/User_Timing_API)计时度量，看起来 Tony 的应用正在使用 React。  切换到 React 的生产模式可能会产生一些简单的性能优势。
 
    :::image type="content" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png" alt-text="&quot;计时&quot;部分。" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png":::
 

@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/13/2021
+ms.openlocfilehash: 60c95cea9fc396f001fd705a796a5af0245e18e9
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431506"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -24,7 +30,7 @@ ms.date: 12/13/2021
 
 本文介绍内存分析中使用的常见术语，适用于不同语言的各种内存分析工具。
 
-此处介绍的术语和概念是指内存 [面板](./heap-snapshots.md)。  如果你曾经使用过 Java、.NET 或其他一些内存探查器，那么本文可能是一个刷新程序。
+此处介绍的术语和概念是指内存 [面板](heap-snapshots.md)。  如果你曾经使用过 Java、.NET 或其他一些内存探查器，那么本文可能是一个刷新的文章。
 
 
 <!-- ====================================================================== -->
@@ -38,9 +44,9 @@ ms.date: 12/13/2021
 
 *  直接;内存由对象本身持有。
 
-*  隐式，通过保留对其他对象的引用。  保留对其他对象的引用的对象可防止垃圾回收器在 GC 记录器中 (这些) 。
+*  隐式，通过保留对其他对象的引用。  保留对其他对象的引用的对象可防止垃圾回收器在 GC (自动释放) 。
 
-DevTools 中的内存面板是调查内存问题的工具。[](./heap-snapshots.md)
+DevTools 中的内存面板是调查内存问题的工具。[](heap-snapshots.md)
 
 使用"内存"面板时，可能会发现自己正在查看一些不同的信息列。  两个突出的列是 **"浅表大小****"和"保留大小"**：
 
@@ -60,9 +66,9 @@ _呈现器内存_ = _本机内存_ + _页面的 JS 堆内存_ + _由页面启动
 
 ### <a name="retained-size"></a>保留大小
 
-保留__ 大小是对象删除后释放的内存大小，以及因垃圾回收根目录和 GC 根目录 (无法访问的依赖) 。
+保留__ 大小是对象删除后释放的内存大小，以及从垃圾回收根目录和 GC 根目录 (无法访问) 。
 
-_垃圾回收根_由从本机代码到 V8 VM 外部的 JavaScript 对象进行引用时 (创建为本地或全局) 的句柄。__  可以在 GC 根下的**** > 堆快照中找到所有此类句柄**处理范围**和 **GC 根** > **Global 句柄**。  在本文档中介绍句柄而不深入介绍浏览器实现的详细信息可能会令人困惑。  垃圾回收根和句柄都不需要担心。
+_垃圾回收_根由从本机代码到 V8 VM 外部的 JavaScript 对象进行引用时 (创建为本地或全局) 的句柄。__  可以在 GC 根下的**** > 堆快照中找到所有此类句柄**处理范围**和 **GC 根** > **Global 句柄**。  在本文档中介绍句柄而不深入介绍浏览器实现的详细信息可能会令人困惑。  垃圾回收根和句柄都不需要担心。
 
 有许多内部 GC 根，其中大多数根对用户不感兴趣。  从应用程序的角度来看，有以下类型的根：
 
@@ -73,7 +79,7 @@ _垃圾回收根_由从本机代码到 V8 VM 外部的 JavaScript 对象进行�
 *  有时，对象由"源"工具和控制台中的调试**** 上下文保留，例如****，在控制台评估之后。  使用清除的控制台工具 **创建** 堆快照，在"源"工具的调试器中没有活动的 **断** 点。
 
 >[!TIP]
-> 在"内存"工具中拍摄堆 [快照之前，](./heap-snapshots.md) 请清除 **"** 控制台"工具，并停用"源"工具中的 **断** 点。  若要清除 **控制台工具** ，请运行 `clear()` 方法。
+> 在"内存"工具中拍摄堆 [快照之前，](heap-snapshots.md) 请清除 **"** 控制台"工具，并停用"源"工具中的 **断** 点。  若要清除 **控制台工具** ，请运行 `clear()` 方法。
 
 内存图以根开头，`window``Global`该根可能是浏览器的对象或Node.js对象。  你无法控制如何对根对象进行垃圾回收。
 
@@ -92,11 +98,11 @@ _垃圾回收根_由从本机代码到 V8 VM 外部的 JavaScript 对象进行�
 
 为图形中的节点和边缘提供标签，如下所示：
 
-*  _节点_ (_或_) 对象标有用于生成节点的构造函数函数的名称。__
+*  _节点_ (_或_) 对象使用用于构建节点或对象的构造函数函数的名称进行标记。__
 
 *  _边缘_ 使用属性名称进行 _标记_。
 
-了解如何 [使用堆探查器记录配置文件](./heap-snapshots.md)。  在下图中，内存工具中堆快照记录中的一些值得注意的事项包括 **Distance**，即与垃圾回收根之间的距离。[](./heap-snapshots.md)  如果几乎同一类型的所有对象都位于同一距离，而其中一些对象距离较大，那么这很值得调查。
+了解如何 [使用堆探查器记录配置文件](heap-snapshots.md)。  在下图中，内存工具中堆快照记录中的一些值得注意的事项包括 **Distance**，即与垃圾回收根之间的距离。[](heap-snapshots.md)  如果几乎同一类型的所有对象都位于同一距离，而其中一些对象距离较大，那么这很值得调查。
 
 与根之间的距离：
 
@@ -148,7 +154,7 @@ Dominator 对象由树结构组成，因为每个对象只有一个管理程序�
 <!-- ====================================================================== -->
 ## <a name="v8-specifics"></a>V8 特定内容
 
-分析内存时，了解堆快照为何以特定方式显示非常有用。  本节介绍一些与内存相关的主题，这些主题专门与 _V8 JavaScript_ 虚拟机相对应 (此处缩写为 _V8 VM_，或仅 _VM_) 。
+分析内存时，了解堆快照为何以特定方式显示非常有用。  本部分介绍一些与内存相关的主题，这些主题专门与 _V8 JavaScript_ 虚拟机相对应 (此处缩写为 _V8 VM_，或仅 _VM_) 。
 
 ### <a name="javascript-object-representation"></a>JavaScript 对象表示形式
 
@@ -162,7 +168,7 @@ Dominator 对象由树结构组成，因为每个对象只有一个管理程序�
 
 **可以将** 数字存储为：
 
-*  SMIS 中称为小整数的直接 31 **位整数** (_SMIS_) 。
+*  SMIS 中称为小整数的直接 31 **位 (**_整数_) 。
 
 *  堆对象，称为 **堆数**。  堆编号用于存储不适合 SMI 表单的值（如双精度数）或需要对值进行装箱**** 时（例如设置其属性）。****
 
@@ -172,7 +178,7 @@ Dominator 对象由树结构组成，因为每个对象只有一个管理程序�
 
 *  呈现器**内存中的外部。**  创建 _包装_ 对象并用于访问外部存储，例如，存储从 Web 接收的脚本源和其他内容，而不是复制到 VM 堆。
 
-新 JavaScript 对象的内存从专用 JavaScript 堆或 VM 堆 (_分配_) 。  这些对象由 VM V8 的垃圾回收器管理，因此，只要至少有一个强引用，这些对象就会保持活动状态<!-- undefined term --> 。
+新 JavaScript 对象的内存从专用 JavaScript 堆或 VM 堆 (_分配) _ 。  这些对象由 VM V8 的垃圾回收器管理，因此，只要至少有一个强引用，这些对象就会保持活动状态<!-- undefined term --> 。
 
 **本机对象** - 任何不在 JavaScript 堆中的对象都称为 _本机对象_。  与堆对象相反，本机对象在其整个生命周期内不由 V8 垃圾回收器管理，并且只能使用 JavaScript 包装对象从 JavaScript 访问。
 
@@ -205,7 +211,7 @@ cons **string** (concatenation string) is an object that consists of pairs of st
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) 由技术撰稿人 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (创作) 。
+> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) 由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

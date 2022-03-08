@@ -1,5 +1,5 @@
 ---
-title: 管理 WebView2 应用程序
+title: Enterprise WebView2 运行时的管理
 description: IT 管理员如何管理 WebView2 应用程序和 WebView2 运行时。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,14 +7,15 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 11/12/2021
-ms.openlocfilehash: c91cc4f159a89cbba8e2a143d6899fd99defc208
-ms.sourcegitcommit: ae41e2c0ca42fb7eac73824c828305c7b13b4203
+ms.openlocfilehash: a917060ace92d209b126a91d5720bc1bc0f55ee7
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "12345952"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431877"
 ---
-# <a name="manage-webview2-applications"></a>管理 WebView2 应用程序
+# <a name="enterprise-management-of-webview2-runtimes"></a>Enterprise WebView2 运行时的管理
+<!-- old title: # Manage WebView2 applications -->
 
 [WebView2](../index.md) 是开发人员用于构建其应用程序的一个组件，开发人员可以将自更新的 Evergreen WebView2 运行时部署到用户设备上，以支持其应用程序。  本文讨论 IT 管理员如何管理 WebView2 应用程序和 WebView2 运行时。  
 
@@ -36,7 +37,7 @@ IT 管理员可以按照Microsoft Edge[指南配置](/deployedge/configure-micro
 
 ### <a name="browser-policies"></a>浏览器策略
 
-[Microsoft Edge - 浏览器](/deployedge/microsoft-edge-policies)策略不适用于 WebView2 应用程序。  这是设计使的，因为应用和浏览器具有不同的用例，并且 IT 管理员可能不知道哪些应用程序使用 WebView2。  
+[Microsoft Edge -](/deployedge/microsoft-edge-policies) 浏览器策略不适用于 WebView2 应用程序。  这是设计使的，因为应用和浏览器具有不同的用例，并且 IT 管理员可能不知道哪些应用程序使用 WebView2。  
 
 在 WebView2 上应用浏览器策略会产生意外结果。  例如，IT 管理员可以在浏览器中阻止 JavaScript，这将破坏使用 JavaScript 的 WebView2 应用。  为了防止出现此问题，浏览器策略独立于 WebView2 策略。
 
@@ -58,6 +59,7 @@ IT 管理员可以按照Microsoft Edge[指南配置](/deployedge/configure-micro
 Configuration Manager 中的 WebView2 选项存在于"Microsoft Edge"节点下。 有关详细信息，请访问 Update [Microsoft Edge](/mem/configmgr/apps/deploy-use/deploy-edge)。
 
 
+<!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [分发 WebView2 应用和 WebView2 运行时](./distribution.md) - 关于常青、自更新的 WebView2 运行时。
+* [分发应用和 WebView2 运行时](distribution.md) - 关于常青、自更新 WebView2 运行时。

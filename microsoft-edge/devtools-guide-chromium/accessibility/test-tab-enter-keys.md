@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
+ms.openlocfilehash: 1014679309da87666d12a338ea72eebc2c109b46
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430946"
 ---
 # <a name="check-for-keyboard-support-by-using-the-tab-and-enter-keys"></a>使用 Tab 和 Enter 键检查键盘支持
 
@@ -32,11 +38,11 @@ ms.date: 06/07/2021
 
 1. 按 `Tab` 多次，直到传递最后一个 **"更多"** 链接。  页面向上滚动，你似乎位于页面的某个元素上，但无法判断它是哪个元素。
 
-1. 请注意左下角的 URL。  如果你查看屏幕左侧的左下角 (或者如果你使用屏幕阅读器) ，你意识到你位于带蓝色链接的边栏导航菜单上，因为浏览器显示"猫"链接指向 () 的 URL。**** `#cats`
+1. 请注意左下角的 URL。  如果你查看屏幕左下角 (或者如果你使用屏幕阅读器) ，你意识到你位于带蓝色链接的边栏导航菜单上，因为浏览器显示"猫"链接指向 () 的 URL。**** `#cats`
 
    :::image type="content" source="../media/a11y-testing-lack-of-focus-style.msft.png" alt-text="缺少焦点样式使无法知道您当前在文档中的什么位置。 唯一的提示是在屏幕左下角显示链接目标。" lightbox="../media/a11y-testing-lack-of-focus-style.msft.png":::
 
-1. 再次 `Tab` 按 ，以到达"捐赠"窗体中的条目字段。  但是，无法通过选择 到达文本框上方的按钮 `Tab`。 你不能使用键盘将焦点放在 **50**、 **100** 或 **200** 按钮上，然后选择它们。  此外，选择 `Enter` 时不会提交该捐赠表单。
+1. 再次 `Tab` 按 ，以到达"捐赠"窗体中的条目字段。  但是，无法通过选择 来到达文本框上方的按钮 `Tab`。 你不能使用键盘将焦点放在 **50**、 **100** 或 **200** 按钮上，然后选择它们。  此外，选择 `Enter` 时不会提交该捐赠表单。
 
    :::image type="content" source="../media/a11y-testing-form-field-with-outline.msft.png" alt-text="在资金表单中，唯一一个可通过键盘访问的元素是文本输入字段。" lightbox="../media/a11y-testing-form-field-with-outline.msft.png":::
 

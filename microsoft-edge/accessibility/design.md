@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.assetid: 8468f8e1-9f4a-426c-a969-76eab9419137
 ms.date: 10/27/2020
-ms.openlocfilehash: 46dc3121d89006d22ad9c9c60ddf78dabbcb5b6c
-ms.sourcegitcommit: e12d7e7d8b182b79cc8ce96b9889073aeaabac30
+ms.openlocfilehash: 4a2375bfb2ce08bf30569128f25ada0c088cd117
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "12318315"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430701"
 ---
 # <a name="designing-accessible-websites"></a>设计易于访问的网站
 
@@ -34,7 +34,7 @@ ms.locfileid: "12318315"
 
 *  使用箭头键在列表、网格、树状视图等容器元素间导航。
 
-*  通过按键或 `Enter` 空格键调用操作。
+*  通过按键或空格 `Enter` 键调用操作。
 
 *  使用快捷键高效访问其他应用功能。
 
@@ -44,7 +44,7 @@ ms.locfileid: "12318315"
 
 低视力用户需要足够的文本对比率来表示文本内容，并且需要具有整体高对比度主题的良好视觉体验。  对于色盲用户，需要通过色彩以外的途径传递信息。
 
-通过良好的编码实践，可以解决 Web 上的许多常见辅助功能问题。  [WCAG (2.0](https://www.w3.org/TR/WCAG20)) Web 内容辅助功能指南文档提供了可帮助您设计更易于访问的动态 Web 应用程序的技术和最佳实践。  有关详细信息，请转到有关构建 [可访问的网站的资源](./build/index.md)。
+通过良好的编码实践，可以解决 Web 上的许多常见辅助功能问题。  [WCAG (2.0) Web](https://www.w3.org/TR/WCAG20) 内容辅助功能指南文档提供了可帮助您设计更易于访问的动态 Web 应用程序的技术和最佳实践。  有关详细信息，请转到有关构建 [可访问的网站的资源](build/index.md)。
 
 
 <!-- ====================================================================== -->
@@ -52,8 +52,8 @@ ms.locfileid: "12318315"
 
 *  [针对包含进行](https://w3.org/WAI/users/Overview.html) 设计 - 针对包含进行设计由 W3C Web 辅助功能计划提供的资源可帮助你更好地了解残障用户以及如何在设计网站时牢记他们。
 
-*  [设计非独占软件](https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software)- 设计非独占软件讨论适用于通用 Windows Platform (UWP) 的 Microsoft 设计原则和) 。
+*  [设计非独占软件](https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software) - 设计非独占软件讨论适用于通用 Windows Platform (UWP) 的 Microsoft 设计原则和) 。
 
-*  [残障人士](https://www.w3.org/WAI/intro/people-use-web/Overview.html) 如何使用 Web - W3C 提供的此资源介绍了残障人士（包括与年龄相关的残障人士）如何使用 Web。
+*  [残障人士如何使用 Web](https://www.w3.org/WAI/intro/people-use-web/Overview.html) - W3C 提供的此资源介绍了残障人士（包括与年龄相关的残障人士）如何使用 Web。
 
-*  [非独占设计Toolkit](https://www.microsoft.com/design/practice#howwemake-section) - Microsoft 开发了非独占设计Toolkit，以展示人类多样性如何创建更好的设计约束以及如何将看似简单的解决方案连接到更广泛的市场。
+*  [非独占Toolkit](https://www.microsoft.com/design/practice#howwemake-section) - Microsoft 开发了非独占设计Toolkit，以展示人类多样性如何创建更好的设计约束以及如何将看似简单的解决方案连接到更广泛的市场。

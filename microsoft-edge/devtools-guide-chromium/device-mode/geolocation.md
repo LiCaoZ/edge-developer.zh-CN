@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 41d5949602f10701a7e4a291f341514987407b8b
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431051"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,9 +32,9 @@ ms.date: 05/04/2021
 
 <!--todo: add link to user location section when available -->
 
-如果您要构建的 UI 根据用户所在的位置而更改，您可能需要确保网站在世界各地的不同位置正常运行。  若要在 DevTools 中Microsoft Edge地理位置：
+如果您要构建的 UI 根据用户所在的位置而更改，您可能需要确保网站在世界各地的不同位置正常运行。  若要在 DevTools 中覆盖Microsoft Edge地理位置：
 
-1. 按 `Control``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
+1. 按 `Ctrl``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
 
    :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单的屏幕截图。":::
 

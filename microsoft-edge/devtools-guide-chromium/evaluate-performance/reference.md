@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 1f1bb4867655a30561e69f196f6b2784ae87197a
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12433291"
 ---
 <!-- Copyright Kayce Basques
 
@@ -24,7 +30,7 @@ ms.date: 05/04/2021
 
 此页面全面引用了与分析性能相关的 DevTools 功能。
 
-有关如何使用性能工具分析页面性能的分步教程，请参阅开始[分析运行时性能](./index.md)。****
+有关如何使用性能工具分析页面性能的分步教程，请参阅开始[分析运行时性能](index.md)。****
 
 
 <!-- ====================================================================== -->
@@ -38,7 +44,7 @@ ms.date: 05/04/2021
 
 1. 单击 DevTools 中的"性能"工具。****
 
-1. 单击"**录制 (**!["图标。) ](../media/record-icon.msft.png)按钮。
+1. 单击"**记录 (**![图标。) ](../media/record-icon.msft.png)按钮。
 
    :::image type="content" source="../media/evaluate-performance-performance-record-highlight.msft.png" alt-text="记录。" lightbox="../media/evaluate-performance-performance-record-highlight.msft.png":::
 
@@ -54,7 +60,7 @@ ms.date: 05/04/2021
 
 1. 在 DevTools 中，打开 **性能** 工具。
 
-1. 单击"**刷新"页 (**!["刷新](../media/refresh-page-icon.msft.png)页面"。) "按钮。  DevTools 在页面刷新时记录性能指标，然后在加载完成后几秒钟自动停止记录。
+1. 单击"**刷新"页 (**!["刷新页面](../media/refresh-page-icon.msft.png)"。) "按钮。  DevTools 在页面刷新时记录性能指标，然后在加载完成后几秒钟自动停止记录。
 
 :::image type="content" source="../media/evaluate-performance-performance-refresh-button.msft.png" alt-text="刷新页面。" lightbox="../media/evaluate-performance-performance-refresh-button.msft.png":::
 
@@ -72,7 +78,7 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 ### <a name="force-garbage-collection-while-recording"></a>录制时强制收集垃圾
 
-在记录页面时，单击****!["收集垃圾 (收集垃圾图标](../media/collect-garbage-icon.msft.png)。) 强制进行垃圾回收。
+在记录页面时，单击****!["收集垃圾回收 (垃圾图标](../media/collect-garbage-icon.msft.png)。) 强制进行垃圾回收。
 
 :::image type="content" source="../media/evaluate-performance-performance-collect-garbage-button.msft.png" alt-text="收集垃圾。" lightbox="../media/evaluate-performance-performance-collect-garbage-button.msft.png":::
 
@@ -150,7 +156,7 @@ DevTools 会自动放大大部分活动发生的记录部分。
 <!-- ====================================================================== -->
 ## <a name="clear-the-previous-recording"></a>清除上一记录
 
-录制后，单击 **"清除录制** (![清除录制"](../media/clear-recording-icon.msft.png) 图标。) "性能"工具清除 **该** 录制。
+录制后，单击 **"清除**![录制 (清除录制"](../media/clear-recording-icon.msft.png)图标。) "性能"工具清除**该**录制。
 
 :::image type="content" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png" alt-text="清除录制。" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png":::
 
@@ -178,7 +184,7 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 1. 使用两根手指，向上轻扫进行缩小，向左轻扫向左移动，向下轻扫进行放大，向右轻扫向右移动。
 
-若要在"主"部分或任何元素**** 中滚动长图表，请在向上和向下拖动时单击并按住。  向左和向右拖动，移动录音中所选的部分。
+若要在"主"部分或任何元素**** 中滚动长图表，请在向上和向下拖动时单击并按住。  向左和向右拖动以移动所选录制的哪一部分。
 
 ### <a name="search-activities"></a>搜索活动
 
@@ -188,7 +194,7 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 导航与查询匹配的活动:
 
-1. 单击"上**一 (**!["。](../media/previous-icon.msft.png)**) "下**一 (!["下](../media/next-icon.msft.png)一) 按钮。
+1. 单击"上**一 (**!["。](../media/previous-icon.msft.png)**) "下**![一 ("下](../media/next-icon.msft.png)一) 按钮。
 
 1. 若要选择下一个活动，请按 `Enter`。  若要选择上一个活动，请按 `Shift`+`Enter`。
 
@@ -196,7 +202,7 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 *  若要使查询区分大小写，请单击****!["区分大小写 (区分大小写](../media/search-case-icon.msft.png)。) 按钮。
 
-*  若要在查询中使用正则表达式，请单击****!["正则表达式 (正则表达式](../media/search-regex-icon.msft.png)") 按钮。
+*  若要在查询中使用正则表达式，请单击****!["正则表达式 (正则表达式](../media/search-regex-icon.msft.png)) 按钮。
 
 若要隐藏搜索框，请单击"取消 **"**。
 
@@ -268,7 +274,7 @@ _根_ 活动是导致浏览器执行某些工作的活动。  例如，当您单
 
 默认情况下，**“分组”** 菜单设置为 **“无分组”**。  使用 **“分组”** 菜单，根据各种条件对活动表进行排序。
 
-单击 **"显示最**![ (堆栈") 显示"](../media/show-heaviest-stack-icon.msft.png)活动"表**右侧的另一**个表。  单击活动以填充 **"最富堆栈"** 表。  **“最重堆栈”** 表显示所选活动的子项需要最长的运行时间。
+单击 **"显示最** ![](../media/show-heaviest-stack-icon.msft.png) (堆栈"。) "活动"表右侧**显示另一**个表。  单击活动以填充 **"最富堆栈"** 表。  **“最重堆栈”** 表显示所选活动的子项需要最长的运行时间。
 
 #### <a name="the-bottom-up-panel"></a>自下而上面板
 
@@ -372,7 +378,7 @@ DevTools 提供了许多方法，以分析每秒帧数:
 
 单击请求以查看"摘要"选项卡中**有关它**的信息。 例如，在上图中，"摘要"**** 选项卡显示有关在"网络"部分选择的蓝色**请求详细信息。**
 
-在请求的左上方有一个深蓝色的方块，意味着它是一个优先级较高的请求。  浅蓝色的方块表示优先级较低。  比如上图中，蓝色所选的请求是优先级较高的，而下方绿色的请求为优先级较低的。
+请求左上方的深蓝色正方形表示它是优先级较高的请求。  浅蓝色的方块表示优先级较低。  比如上图中，蓝色所选的请求是优先级较高的，而下方绿色的请求为优先级较低的。
 
 在下面的第一个 `www.bing.com` 图中，对 的请求表示为左侧的一行、中间有深色部分的条形和浅色部分，以及右边的一条线。  下图显示了网络工具的"计时"选项卡中相同请求的相应**表示**形式。****
 
@@ -446,11 +452,11 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
 
 若要移动图表:
 
-*  选择 **"平移** (![平移模式](../media/pan-mode-icon.msft.png) "。) 沿 X 和 Y 轴移动。
+*  选择 **"** 平移 (![平移](../media/pan-mode-icon.msft.png) 模式。) 沿 X 和 Y 轴移动。
 
-*  选择**旋转模式**![ (旋转模式](../media/rotate-mode-icon.msft.png)。) 沿 Z 轴旋转。
+*  选择 **旋转模式** (![旋转](../media/rotate-mode-icon.msft.png) 模式。) 沿 Z 轴旋转。
 
-*  选择 **"重置转换** (![重置转换](../media/reset-transform-icon.msft.png)) 将图表重置为原始位置。
+*  选择 **"重置 (**![重置转换](../media/reset-transform-icon.msft.png)"。) 将图表重置为原始位置。
 
 ### <a name="view-paint-profiler"></a>查看绘图探查器
 
@@ -458,7 +464,7 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
 
 1. [打开](#turn-on-advanced-paint-instrumentation)。
 
-1. Select a **画图** event in the **Main** section.
+1. 在"**画图****部分选择**一个事件。
 
 "**画图配置文件器"** 面板：
 

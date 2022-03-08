@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/03/2020
+ms.openlocfilehash: 2017ac1d40baa717b4e71d879dab8802b23c81e4
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430638"
 ---
 # <a name="navigate-z-index-dom-and-layers-using-the-3d-view-tool"></a>使用 3D 视图工具导航 z 索引、DOM 和层
 
@@ -31,13 +37,15 @@ ms.date: 12/03/2020
 
 * 单击 **主工具栏** 上的 (+) "按钮，然后选择 **"3D 视图"**。
 
-* 或者，按`Shift`+`P`+`Ctrl`以打开"命令菜单"，键入"3d"，然后选择 **"3D 视图 [箱]"**。
+* 或者，按`Shift`+`Ctrl``P`+打开命令菜单，键入 **3d**，然后选择 **3D 视图 [箱]**。
 
 
 <!-- ====================================================================== -->
 ## <a name="navigating-the-canvas"></a>在画布上导航
 
-:::image type="content" source="../media/3d-view-canvas.msft.png" alt-text="3D 视图画布。" lightbox="../media/3d-view-canvas.msft.png":::
+> [!div class="mx-imgBorder"]
+> ![3D 视图画布。](../media/3d-view-canvas.msft.png)
+
 
 ### <a name="keyboard-shortcuts"></a>键盘快捷方式
 
@@ -55,17 +63,21 @@ ms.date: 12/03/2020
 
 ### <a name="on-screen-controls"></a>屏幕控件
 
-:::image type="content" source="../media/3d-view-controls-small.msft.png" alt-text="屏幕控件。" lightbox="../media/3d-view-controls-small.msft.png":::
+> [!div class="mx-imgBorder"]
+> ![屏幕控件。](../media/3d-view-controls-small.msft.png)
 
-若要将画布视图重置为原始视图，请选择"重置**** 相机"按钮，或选择"**** 重置视图中的元素"和"将相机重新居中 (刷新图标") 按钮。
+若要将画布视图重置为原始视图，请选择"重置**** 相机"按钮，或选择视图中**** 的"重置元素"和"将相机重新居中 (侧刷新图标) 按钮。
 
-若要刷新画布，例如浏览器发生更改或切换到设备仿真器视图时，请选择"重新拍摄快照"按钮或****"获取新的快照"按钮**** (刷新图标) 。
+刷新画布，例如浏览器更改或切换到设备 [仿真](../device-mode/index.md) 视图时：
+
+*  单击 **"重新获取快照"** 按钮，或**** 单击"刷新"图标 ("新建快照") 。
 
 
 <!-- ====================================================================== -->
 ## <a name="z-index"></a>Z 索引
 
-:::image type="content" source="../media/3d-view-z-index-view-box.msft.png" alt-text="Z 索引视图。" lightbox="../media/3d-view-z-index-view-box.msft.png":::
+> [!div class="mx-imgBorder"]
+> ![Z 索引视图。](../media/3d-view-z-index-view-box.msft.png)
 
 虽然 **Z 索引** 窗格具有与 **3D DOM** 窗格的共享功能，但窗格仍具有该窗格特有的元素。
 
@@ -93,7 +105,7 @@ ms.date: 12/03/2020
 
 ### <a name="z-index-color-type"></a>Z 索引颜色类型
 
-是可用于画布中 DOM 的不同可视化效果。  无论是为了有趣还是因为可视化效果有助于更好地可视化 DOM，DevTools 都有不同的颜色通道和" **使用背景色"** 选项。  **Z索引**窗格与**3D DOM**窗格共享**紫色到白色**和**背景色**。   考虑到添加了 z 索引标签的可视元素，你的反馈导致颜色选项的数量减少。
+是可用于画布中 DOM 的不同可视化效果。  无论是为了有趣还是因为可视化效果有助于更好地可视化 DOM，DevTools 都提供不同的颜色通道和" **使用背景色"** 选项。  **Z索引**窗格与**3D DOM**窗格共享**紫色到白色**和**背景色**。   考虑到添加了 z 索引标签的可视元素，你的反馈导致颜色选项的数量减少。
 
 此方法改进了 z-index 调试体验。  单选按钮允许你切换选项并选取颜色类型。  颜色类型最适用于你的项目，或最喜欢的颜色类型。
 
@@ -101,7 +113,8 @@ ms.date: 12/03/2020
 <!-- ====================================================================== -->
 ## <a name="3d-dom"></a>3D DOM
 
-:::image type="content" source="../media/3d-view-dom-purple-box.msft.png" alt-text="DOM 视图。" lightbox="../media/3d-view-dom-purple-box.msft.png":::
+> [!div class="mx-imgBorder"]
+> ![DOM 视图。](../media/3d-view-dom-purple-box.msft.png)
 
 如果你想要获得更多常规调试视图，而不是 z 索引体验 **，3D DOM** 会提供 DOM 的整体外观。  由于删除了 z-index 上下文，因此 DOM 的堆叠更为紧密和干净。  **3D DOM**窗格具有类似的功能，但存在一些细微差别。
 
@@ -131,6 +144,7 @@ ms.date: 12/03/2020
 <!-- ====================================================================== -->
 ## <a name="composited-layers"></a>复合层
 
-:::image type="content" source="../media/experiments-layers.msft.png" alt-text="复合层窗格。" lightbox="../media/experiments-layers.msft.png":::
+> [!div class="mx-imgBorder"]
+> ![复合层窗格。](../media/experiments-layers.msft.png)
 
-**复合层**窗格打开**层**工具的元素，而不更改上下文。  你仍然可以访问每个图层的详细信息，并拥有慢速**滚动**通道**画图。**
+**复合层**窗格打开**层**工具的元素，而不更改上下文。  你仍然可以访问每个图层的详细信息，并拥有慢速**滚动****画图。**

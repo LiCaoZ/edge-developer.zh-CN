@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
-ms.openlocfilehash: bc4a7cbe2701bb4540c37e2649ee5df601074b96
-ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.openlocfilehash: bf05aea57d00a1fa9615e5baafb2d1615888ef06
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "12346391"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432663"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,7 +30,7 @@ ms.locfileid: "12346391"
 
 若要替代 [DevTools 中的](https://developer.mozilla.org/docs/Glossary/User_agent)用户Microsoft Edge字符串：
 
-1. 按 `Control``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
+1. 按 `Ctrl``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
 
    :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单。":::
     
@@ -48,7 +48,7 @@ ms.locfileid: "12346391"
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-* [在"模拟移动设备](index.md#set-the-user-agent-string) 和设备仿真" (设置用户代理 _) _
+* [在模拟移动设备和](index.md#set-the-user-agent-string)设备仿真_ (设置_用户代理) 
 
 
 <!-- ====================================================================== -->

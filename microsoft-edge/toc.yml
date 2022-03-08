@@ -1,21 +1,28 @@
 - name: Microsoft Edge 开发人员文档
   href: developer/index.yml
   items:
+    - name: 使用 Microsoft Edge 开发网页版
+      href: develop-web-microsoft-edge.md
+      displayName: null
     - name: Microsoft Edge 开发工具
       items:
-        - name: 开发工具概述
-          href: devtools-guide-chromium/index.md
+        - name: Microsoft Edge DevTools 文档
+          href: devtools-guide-chromium/landing/index.yml
           displayName: DevTools
-        - name: 打开开发工具
-          href: devtools-guide-chromium/open/index.md
+        - name: 开发工具概述
+          href: devtools-guide-chromium/overview.md
           displayName: DevTools
         - name: 新增功能
           items:
+            - name: Microsoft Edge DevTools 中的新增功能
+              href: devtools-guide-chromium/whats-new/whats-new.md
+              displayName: null
             - name: 实验性功能
               href: devtools-guide-chromium/experimental-features/index.md
               displayName: 'Experimental features, settings'
             - name: Microsoft Edge 98
               href: devtools-guide-chromium/whats-new/2022/02/devtools.md
+              displayName: what's new
             - name: Microsoft Edge 97
               href: devtools-guide-chromium/whats-new/2022/01/devtools.md
               displayName: what's new
@@ -89,6 +96,9 @@
                   displayName: 'Device Emulation, Device Emulator, Device Mode'
             - name: 适用于 CSS、HTML 和 DOM 的元素工具
               items:
+                - name: 使用 Elements 工具检查、编辑和调试 HTML 和 CSS
+                  href: devtools-guide-chromium/elements-tool/elements-tool.md
+                  displayName: Elements tool
                 - name: CSS 功能参考
                   href: devtools-guide-chromium/css/reference.md
                   displayName: Elements tool
@@ -145,7 +155,7 @@
                 - name: 筛选控制台消息
                   href: devtools-guide-chromium/console/console-filters.md
                   displayName: Console tool
-            - name: 源工具，用于 JavaScript 调试
+            - name: 源工具，用于编辑文件和调试 JavaScript
               items:
                 - name: 源工具概述
                   href: devtools-guide-chromium/sources/index.md
@@ -174,9 +184,15 @@
                 - name: 禁用 JavaScript
                   href: devtools-guide-chromium/javascript/disable.md
                   displayName: Sources tool
-                - name: 将预处理的代码映射到源代码
+                - name: 将已处理的代码映射到原始源代码，以便进行调试
                   href: devtools-guide-chromium/javascript/source-maps.md
-                  displayName: Sources tool
+                  displayName: 'Sources tool, source maps'
+                - name: 通过将源映射发布到Azure Artifacts符号服务器来安全地调试原始代码
+                  href: devtools-guide-chromium/javascript/publish-source-maps-to-azure.md
+                  displayName: 'Sources tool, source maps, Azure Artifacts symbol server'
+                - name: 使用Azure Artifacts符号服务器源映射安全地调试原始代码
+                  href: devtools-guide-chromium/javascript/consume-source-maps-from-azure.md
+                  displayName: 'Sources tool, source maps, Azure Artifacts symbol server'
             - name: 3D 视图工具
               items:
                 - name: 使用 3D 视图工具导航 z 索引、DOM 和层
@@ -184,7 +200,7 @@
                   displayName: '3D View tool, Layers tool'
             - name: 动画工具
               items:
-                - name: 检查动画
+                - name: 检查和修改 CSS 动画效果
                   href: devtools-guide-chromium/inspect-styles/animations.md
                   displayName: Animations tool
             - name: 用于存储的应用程序工具
@@ -223,16 +239,36 @@
                 - name: 使用覆盖工具查找未使用的 JavaScript 和 CSS 代码
                   href: devtools-guide-chromium/coverage/index.md
                   displayName: Coverage tool
+            - name: CSS 概述工具
+              items:
+                - name: 确定可进行的 CSS 改进
+                  href: devtools-guide-chromium/css/css-overview-tool.md
+                  displayName: CSS Overview tool
             - name: 分离的元素工具
               items:
                 - name: 使用分离的元素工具调试 DOM 内存泄漏
                   href: devtools-guide-chromium/memory-problems/dom-leaks.md
                   displayName: Detached Elements tool
+            - name: 开发人员资源工具
+              items:
+                - name: 开发人员资源工具
+                  href: devtools-guide-chromium/developer-resources/developer-resources.md
+                  displayName: Developer Resources tool
             - name: 问题工具
               items:
                 - name: 使用问题工具查找和修复问题
                   href: devtools-guide-chromium/issues/index.md
                   displayName: Issues tool
+            - name: JavaScript 探查器工具
+              items:
+                - name: JavaScript 探查器工具
+                  href: devtools-guide-chromium/javascript-profiler/javascript-profiler-tool.md
+                  displayName: JavaScript Profiler tool
+            - name: 层工具
+              items:
+                - name: 层工具
+                  href: devtools-guide-chromium/layers/layers-tool.md
+                  displayName: Layers tool
             - name: Lighthouse 工具
               items:
                 - name: Lighthouse 工具
@@ -260,6 +296,11 @@
                 - name: 加速 JavaScript 运行时
                   href: devtools-guide-chromium/rendering-tools/js-runtime.md
                   displayName: Memory tool
+            - name: 内存检查器工具
+              items:
+                - name: 使用内存检查器工具检查 JavaScript ArrayBuffer
+                  href: devtools-guide-chromium/memory-inspector/memory-inspector-tool.md
+                  displayName: Memory Inspector tool
             - name: 网络工具
               items:
                 - name: 检查网络活动
@@ -285,6 +326,16 @@
                 - name: 替代用户代理字符串
                   href: devtools-guide-chromium/device-mode/override-user-agent.md
                   displayName: 'Network Conditions tool, Device Emulation, Device Emulator'
+            - name: 网络控制台工具
+              items:
+                - name: 使用网络控制台工具撰写和发送 Web API 请求
+                  href: devtools-guide-chromium/network-console/network-console-tool.md
+                  displayName: null
+            - name: 网络请求阻止工具
+              items:
+                - name: 阻止网络请求
+                  href: devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md
+                  displayName: Network request blocking tool
             - name: 性能工具
               items:
                 - name: 分析运行时性能入门
@@ -338,11 +389,26 @@
                 - name: 使用传感器工具模拟设备方向
                   href: devtools-guide-chromium/device-mode/orientation.md
                   displayName: 'Sensors tool, Device Emulation'
+            - name: 源地图监视器工具
+              items:
+                - name: 源地图监视器工具
+                  href: devtools-guide-chromium/source-maps-monitor/source-maps-monitor-tool.md
+                  displayName: Source maps monitor tool
+            - name: WebAudio 工具
+              items:
+                - name: WebAudio 工具
+                  href: devtools-guide-chromium/webaudio/webaudio-tool.md
+                  displayName: WebAudio tool
             - name: WebAuthn 工具
               items:
                 - name: 模拟身份验证器并调试 WebAuthn
                   href: devtools-guide-chromium/webauthn/index.md
                   displayName: WebAuthn tool
+            - name: 欢迎工具
+              items:
+                - name: 欢迎工具
+                  href: devtools-guide-chromium/welcome/welcome-tool.md
+                  displayName: Welcome tool
         - name: 命令菜单和键盘快捷方式
           items:
             - name: 在“命令”菜单中运行命令
@@ -479,7 +545,7 @@
           displayName: DevTools Protocol
         - name: 联系 Microsoft Edge 开发工具团队
           href: devtools-guide-chromium/contact.md
-          displayName: contact
+          displayName: 'feedback, log issues, enter issues, report issues, reporting issues, support'
     - name: Microsoft Edge 扩展
       items:
         - name: Microsoft Edge 扩展概述
@@ -534,6 +600,7 @@
               href: extensions-chromium/publish/manage-settings.md
             - name: 联系人扩展支持
               href: extensions-chromium/publish/contact-extensions-team.md
+              displayName: 'feedback, log issues, enter issues, report issues, reporting issues'
             - name: Microsoft Edge加载项的策略
               items:
                 - name: 内容安全策略
@@ -604,96 +671,207 @@
       items:
         - name: Microsoft Edge WebView2 简介
           href: webview2/index.md
-        - name: 入门
+          displayName: null
+        - name: 设置和示例代码
+          items:
+            - name: 设置开发环境
+              href: webview2/how-to/machine-setup.md
+              displayName: Sample Code for WebView2
+            - name: 示例代码
+              href: webview2/code-samples-links.md
+              displayName: Sample Code for WebView2
+            - name: WebView2 控件和 API 示例
+              items:
+                - name: UWP WinUI 2 浏览器应用
+                  href: webview2/samples/webview2_sample_uwp.md
+                  displayName: webview2_sample_uwp
+                - name: Win32 C++ 应用
+                  href: webview2/samples/webview2apissample.md
+                  displayName: 'WebView2APISample, SampleApps'
+                - name: 使用 Visual Composition 的 Win32 C++ 应用
+                  href: webview2/samples/webview2samplewincomp.md
+                  displayName: WebView2SampleWinComp
+                - name: WinForms 浏览器应用
+                  href: webview2/samples/webview2windowsformsbrowser.md
+                  displayName: WebView2WindowsFormsBrowser
+                - name: WPF .NET 浏览器应用
+                  href: webview2/samples/webview2wpfbrowser.md
+                  displayName: WebView2WpfBrowser
+                - name: WPF 应用中的 Chrome DevTools 协议扩展
+                  href: webview2/samples/wv2cdpextensionwpfsample.md
+                  displayName: WV2CDPExtensionWPFSample
+            - name: 部署示例
+              items:
+                - name: WebView2 部署Visual Studio安装程序
+                  href: webview2/samples/wv2deploymentvsinstallersample.md
+                  displayName: WV2DeploymentVSInstallerSample
+                - name: 用于部署运行时的 WiX 刻录捆绑包
+                  href: webview2/samples/wv2deploymentwixburnbundlesample.md
+                  displayName: WV2DeploymentWiXBurnBundleSample
+                - name: 用于部署运行时的 WiX 自定义操作
+                  href: webview2/samples/wv2deploymentwixcustomactionsample.md
+                  displayName: WV2DeploymentWiXCustomActionSample
+        - name: 教程：创建 WebView2 应用
           items:
             - name: WebView2 入门
               href: webview2/get-started/get-started.md
-            - name: Win32 应用中的 WebView2 入门
+              displayName: GettingStartedGuides
+            - name: Win32
               href: webview2/get-started/win32.md
-            - name: WinForms 应用中的 WebView2 入门
+              displayName: 'Win32_GettingStarted, Get started with WebView2 in Win32 apps'
+            - name: WinForms
               href: webview2/get-started/winforms.md
-            - name: WinUI 2 (UWP) 应用中的 WebView2 入门（公共预览版）
+              displayName: 'WinForms_GettingStarted, Get started with WebView2 in WinForms apps'
+            - name: WinUI 2（UWP、公共预览版）
               href: webview2/get-started/winui2.md
-            - name: WinUI 3 (UWP) 应用中的 WebView2 入门（公共预览版）
+              displayName: Get started with WebView2 in WinUI 2 (UWP) apps (public preview)
+            - name: WinUI 3 （Windows 应用 SDK）
               href: webview2/get-started/winui.md
-            - name: WPF 应用中的 WebView2 入门
+              displayName: 'WinUI3_GettingStarted, Get started with WebView2 in WinUI 3 (Windows App SDK) apps'
+            - name: WPF
               href: webview2/get-started/wpf.md
-        - name: WebView2 示例代码
-          href: webview2/code-samples-links.md
-        - name: 概念和操作方法
+              displayName: 'WPF_GettingStarted, Get started with WebView2 in WPF apps'
+        - name: 基础
           items:
-            - name: 使用 Microsoft Edge 驱动程序自动执行和测试 WebView2 应用
-              href: webview2/how-to/webdriver.md
-            - name: 开始调试 WebView2 应用
-              href: webview2/how-to/debug.md
-            - name: WebView2 开发的最佳做法
-              href: webview2/concepts/developer-guide.md
-            - name: Microsoft Edge 和 WebView2 之间的功能差异
+            - name: Microsoft Edge 与 WebView2 之间的区别
               href: webview2/concepts/browser-features.md
-            - name: 分发 WebView2 应用和 WebView2 运行时
+              displayName: null
+            - name: 导航事件
+              href: webview2/concepts/navigation-events.md
+              displayName: Navigation events for WebView2 apps
+            - name: Web 和本机互操作
+              items:
+                - name: 本机和 Web 端代码的互操作
+                  href: webview2/how-to/communicate-btwn-web-native.md
+                  displayName: 'JavaScript interop, Embed web content into native applications (JavaScript interop)'
+                - name: 从本机代码调用 Web 端代码
+                  href: webview2/how-to/javascript.md
+                  displayName: 'ExecuteScriptAsync API, Use JavaScript in WebView for extended scenarios'
+                - name: 从 Web 端代码调用本机代码
+                  href: webview2/how-to/hostobject.md
+                  displayName: 'AddHostObjectToScript, host objects'
+            - name: 了解不同的 WebView2 SDK 版本
+              href: webview2/concepts/versioning.md
+              displayName: Understand WebView2 SDK versions
+            - name: 测试即将推出的 API 和功能
+              href: webview2/how-to/set-preview-channel.md
+              displayName: null
+            - name: 分发应用和 WebView2 运行时
               href: webview2/concepts/distribution.md
-            - name: 将 Web 内容嵌入本机应用程序中
-              href: webview2/how-to/communicate-btwn-web-native.md
-            - name: 在 WebView 中对扩展方案使用 JavaScript
-              href: webview2/how-to/javascript.md
+              displayName: null
+        - name: 调试 WebView2 应用
+          items:
+            - name: 调试 WebView2 应用
+              href: webview2/how-to/debug.md
+              displayName: null
+            - name: Microsoft Edge 开发工具
+              href: webview2/how-to/debug-devtools.md
+              displayName: Debug WebView2 apps with Microsoft Edge DevTools
+            - name: Microsoft Visual Studio代码
+              href: webview2/how-to/debug-visual-studio-code.md
+              displayName: Debug WebView2 apps with Visual Studio Code
+            - name: Microsoft Visual Studio
+              href: webview2/how-to/debug-visual-studio.md
+              displayName: Debug WebView2 apps with Visual Studio
+        - name: 体系结构
+          items:
+            - name: 进程模型
+              href: webview2/concepts/process-model.md
+              displayName: Process model for WebView2 apps
+            - name: 线程模型
+              href: webview2/concepts/threading-model.md
+              displayName: Threading model for WebView2 apps
+        - name: 用户数据和历史记录
+          items:
             - name: 管理用户数据文件夹
               href: webview2/concepts/user-data-folder.md
-            - name: 管理 WebView2 应用程序
-              href: webview2/concepts/enterprise.md
-            - name: WebView2 导航事件
-              href: webview2/concepts/navigation-events.md
-            - name: WebView2 进程模型
-              href: webview2/concepts/process-model.md
-            - name: 开发安全 WebView2 应用程序的最佳方案
+              displayName: Manage the user data folder
+            - name: 从用户数据文件夹中清除浏览数据
+              href: webview2/concepts/clear-browsing-data.md
+              displayName: null
+        - name: 高级主题和最佳做法
+          items:
+            - name: 开发的最佳做法
+              href: webview2/concepts/developer-guide.md
+              displayName: Development best practices for WebView2 apps
+            - name: 开发安全的 WebView2 应用
               href: webview2/concepts/security.md
-            - name: 静态链接 WebView2 加载程序库
-              href: webview2/how-to/static.md
-            - name: 切换到预览频道，以测试即将推出的 API 和功能
-              href: webview2/how-to/set-preview-channel.md
-            - name: WebView2 线程模型
-              href: webview2/concepts/threading-model.md
-            - name: 在 WebView2 中使用 Chrome DevTools 协议
+              displayName: null
+            - name: 使用 Chrome DevTools 协议
               href: webview2/how-to/chromium-devtools-protocol.md
-            - name: 了解 WebView2 SDK 版本
-              href: webview2/concepts/versioning.md
-            - name: Win32 C++ WebView2 API 约定
-              href: webview2/concepts/win32-api-conventions.md
+              displayName: Use the Chrome DevTools Protocol in WebView2
+            - name: 使用 Microsoft Edge 驱动程序自动执行和测试
+              href: webview2/how-to/webdriver.md
+              displayName: Automate and test WebView2 apps with Microsoft Edge Driver
+        - name: 部署和分发
+          items:
+            - name: 部署和分发
+              href: webview2/concepts/deployment-distribution.md
+              displayName: Manage WebView2 applications
+            - name: WebView2 运行时的企业管理
+              href: webview2/concepts/enterprise.md
+              displayName: Manage WebView2 applications
+            - name: 将应用分发为单个可执行文件
+              href: webview2/how-to/static.md
+              displayName: 'Statically link the WebView2 loader library, single-file app'
         - name: WebView2 SDK 发行说明
           href: webview2/release-notes.md
+          displayName: null
         - name: WebView2 路线图
           href: webview2/roadmap.md
+          displayName: null
         - name: WebView2 参考
           items:
-            - name: Microsoft Edge WebView2 API 参考
+            - name: WebView2 API 参考
               href: webview2/webview2-api-reference.md
-            - name: 参考(WebView2 Win32 C++)
-              href: /microsoft-edge/webview2/reference/win32/index
+              displayName: 'functions, methods'
+            - name: Win32 C++
+              items:
+                - name: Win32 C++ WebView2 API 约定
+                  href: webview2/concepts/win32-api-conventions.md
+                  displayName: null
+                - name: Win32 C++ API 参考
+                  href: /microsoft-edge/webview2/reference/win32/index
+                  displayName: 'functions, methods'
             - name: .NET
               items:
                 - name: Microsoft.Web.WebView2.Core
                   href: /dotnet/api/microsoft.web.webview2.core
+                  displayName: 'functions, methods'
                 - name: Microsoft.Web.WebView2.Wpf
                   href: /dotnet/api/microsoft.web.webview2.wpf
+                  displayName: 'functions, methods'
                 - name: Microsoft.Web.WebView2.WinForms
                   href: /dotnet/api/microsoft.web.webview2.winforms
+                  displayName: 'functions, methods'
             - name: WinRT
               items:
                 - name: Microsoft.Web.WebView2.Core
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
+                  displayName: 'functions, methods'
                 - name: COM 互操作
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
+                  displayName: 'functions, methods'
         - name: 联系 WebView2 团队
           href: webview2/contact.md
+          displayName: 'feedback, log issues, enter issues, report issues, reporting issues, support'
     - name: 测试和自动化
       items:
+        - name: Microsoft Edge中的测试和自动化
+          href: test-and-automation/test-and-automation.md
+          displayName: null
         - name: 开发工具协议
           href: test-and-automation/devtools-protocol.md
+          displayName: null
         - name: 在 Microsoft Edge 中使用原始试用版
           href: origin-trials/index.md
+          displayName: null
         - name: 在 Microsoft Edge 中使用 Playwright 自动执行和测试
           href: playwright/index.md
+          displayName: null
         - name: Puppeteer 概述
           href: puppeteer/index.md
+          displayName: null
         - name: WebDriver
           items:
             - name: 使用 WebDriver 自动执行 Microsoft Edge
@@ -704,49 +882,75 @@
               href: webdriver-chromium/capabilities-edge-options.md
         - name: 适用于Visual Studio Code的 webhint 扩展
           href: test-and-automation/webhint.md
+          displayName: null
     - name: Web 平台
       items:
+        - name: Web 平台概述
+          href: web-platform/web-platform.md
+          displayName: null
         - name: Microsoft Edge 中影响网站兼容性的更改
           href: web-platform/site-impacting-changes.md
-        - name: 将用户从 IE 转到 Microsoft Edge
+          displayName: null
+        - name: 将用户从Internet Explorer移动到Microsoft Edge
           href: web-platform/ie-to-microsoft-edge-redirection.md
+          displayName: null
         - name: Microsoft Edge 中的跟踪防护
           href: web-platform/tracking-prevention.md
+          displayName: null
         - name: 从网站检测 Microsoft Edge
           href: web-platform/user-agent-guidance.md
-        - name: 自定义“密码显示”按钮
-          href: web-platform/password-reveal.md
+          displayName: null
         - name: 使用用户代理客户端提示检测 Windows 11
           href: web-platform/how-to-detect-win11.md
+          displayName: null
+        - name: 自定义“密码显示”按钮
+          href: web-platform/password-reveal.md
+          displayName: null
     - name: Microsoft Edge IDE 集成
       items:
-        - name: Visual Studio 概述
-          href: visual-studio/index.md
+        - name: Microsoft Edge IDE 集成
+          href: visual-studio-code/ide-integration.md
+          displayName: null
         - name: Visual Studio Code
           items:
-            - name: Visual Studio Code 概述
+            - name: 用于 Web 开发的Visual Studio Code
               href: visual-studio-code/index.md
+              displayName: null
             - name: 在 Visual Studio Code 中的打开源文件
               href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
+              displayName: null
             - name: Edge 调试程序
               href: visual-studio-code/debugger-for-edge.md
+              displayName: null
             - name: Microsoft Edge 开发人员工具扩展
               href: visual-studio-code/microsoft-edge-devtools-extension.md
+              displayName: null
             - name: webhint
               href: visual-studio-code/webhint.md
+              displayName: null
+        - name: 用于 Web 开发的Visual Studio
+          href: visual-studio/index.md
+          displayName: null
     - name: Microsoft Edge 中的辅助功能
       items:
-        - name: 辅助功能概述
+        - name: Microsoft Edge 中的辅助功能
           href: accessibility/index.md
+          displayName: null
         - name: 设计可访问的网站
           href: accessibility/design.md
+          displayName: null
         - name: 构建可访问的网站
           href: accessibility/build/index.md
+          displayName: null
         - name: ARIA 和 UI 自动化
           href: accessibility/build/ARIA-and-UI-Automation.md
+          displayName: null
         - name: 辅助功能测试
           href: accessibility/test.md
+          displayName: null
     - name: 隐私白皮书
       href: privacy-whitepaper/index.md
+      displayName: null
     - name: 我们需要的 Web 计划
       href: web-we-want/index.md
+      displayName: null

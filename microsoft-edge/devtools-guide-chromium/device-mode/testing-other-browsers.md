@@ -1,11 +1,17 @@
 ---
 title: 模拟和测试其他浏览器
-description: 你的作业不会以确保你的网站在 android 和 Microsoft Edge运行结束。  尽管设备仿真 (模式) 模拟一系列其他设备（如智能手机），但我们鼓励你查看由其他浏览器提供的模拟解决方案。
+description: 你的作业不会以确保你的网站在 Android 和 Microsoft Edge运行结束。  即使设备仿真 (设备模式) 模拟一系列其他设备（如智能手机），我们也鼓励你查看由其他浏览器提供的模拟解决方案。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: df1bc26440468d57ec457f579002d32a3a0077ad
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431289"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -22,7 +28,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # <a name="emulate-and-test-other-browsers"></a>模拟和测试其他浏览器
 
-你的作业不会以确保你的网站在 android 和 Microsoft Edge运行结束。  尽管 [设备仿真](index.md) 可以模拟一系列其他设备（如智能手机），但我们鼓励你查看由其他浏览器提供的模拟解决方案。
+你的作业不会以确保你的网站在 Android 和 Microsoft Edge运行结束。  即使 [设备仿真](index.md) 工具可以模拟一系列其他设备（如智能手机），我们也鼓励你查看由其他浏览器提供的模拟解决方案。
 
 ### <a name="summary"></a>摘要
 
@@ -44,9 +50,9 @@ Firefox 具有响应[](https://developer.mozilla.org/docs/Tools/Responsive_Desig
 
 ### <a name="edgehtml-emulation"></a>EdgeHTML 模拟
 
-若要模拟Windows Phones，请使用 Microsoft Edge (EdgeHTML) [内置模拟](/archive/microsoft-edge/legacy/developer/devtools-guide/emulation)。
+若要模拟 Windows Phones，请使用 Microsoft Edge (EdgeHTML) [内置模拟](/archive/microsoft-edge/legacy/developer/devtools-guide/emulation)。
 
-使用 [IE 11 模拟](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85)) 模拟页面在早期版本的 Internet Explorer。
+使用 [IE 11 仿真](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85)) 模拟你的页面在早期版本的 Internet Explorer。
 
 
 <!-- ====================================================================== -->
@@ -110,7 +116,7 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 
 :::image type="content" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="新式。IE VM。" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
 
-Microsoft Edge (EdgeHTML) 虚拟机 (VM) 使你可以通过 VirtualBox (或 VMWare) 访问计算机上不同版本的 EdgeHTML 和 Internet Explorer。  在 [下载页面上选择虚拟机](https://developer.microsoft.com/microsoft-edge/tools/vms)。
+Microsoft Edge (使用 EdgeHTML) 虚拟机 (VM) ，可以通过 VirtualBox (或 VMWare) 访问计算机上不同版本的 EdgeHTML 和 Internet Explorer。  在 [下载页面上选择虚拟机](https://developer.microsoft.com/microsoft-edge/tools/vms)。
 
 
 <!-- ====================================================================== -->
@@ -118,19 +124,19 @@ Microsoft Edge (EdgeHTML) 虚拟机 (VM) 使你可以通过 VirtualBox (或 VMWa
 
 如果你无法使用仿真器，并且无法访问真实设备，则基于云的仿真器是下一个最佳选择。  与实际设备和本地仿真器不同，基于云的模拟器的一大优势是，可以跨不同平台自动执行网站单元测试。
 
-以下产品是基于云的仿真器和相关产品的示例。  这些说明来自产品的信息网站，并用作要考虑的特性或功能的示例。
+以下列表是基于云的仿真器和测试站点的示例。 查看有关在选择测试网站时要考虑的特性或功能的说明。 执行你自己的搜索，以查找最适合你需求的基于云的仿真器。
 
 * [BrowserStack](https://www.browserstack.com/automate) 可帮助你执行手动测试。  选择操作系统、浏览器版本、设备类型和要浏览的 URL，然后 BrowserStack 将旋转可与之交互的托管虚拟机。  你可以在同一个屏幕中运行多个仿真器，以同时跨多个设备测试你的应用的外观。
 
-* [设备位置](https://www.sigos.com/app-experience/) 不使用仿真器，而是可以远程控制的真实设备。  当你需要在特定的设备上重现问题，并且某些报告中可能不会显示问题时，这非常有用。
+* [Mobileum](https://www.sigos.com/app-experience/) 不使用仿真器，而是可以远程控制的真实设备。  当你需要在特定的设备上重现问题，并且某些报告中可能不会显示问题时，这非常有用。
+
+* [HeadSpin](https://www.headspin.io/) 可帮助你在成千上万个真实设备、浏览器和操作系统上执行手动跨浏览器测试。  你可以录制复杂 Bug 的视频并通过集成（如 Slack、JIRA 等）共享它们。  通过并行测试快速推出市场。
 
 * [LambdaTest](https://www.lambdatest.com/) 可帮助你在各种浏览器和操作系统的组合上执行手动跨浏览器测试。  你可以录制复杂 Bug 的视频，并通过集成（如 Microsoft Teams、Slack 等）共享它们。  可以通过并行运行测试来加快测试速度。
 
 * [使用操作](https://saucelabs.com) 标签，可以在仿真器内运行单元测试，这可用于编写通过网站的流脚本，并随后在各种设备上观看此内容的视频录制。  您还可以对网站执行手动测试。
 
 * [TestingBot](https://testingbot.com/) 可帮助你在各种浏览器和操作系统组合上执行手动测试和自动测试。  在 TestingBot 的仿真器和物理设备上测试你的网站和移动应用。
-
- (此列表因添加而关闭。) 
 
 
 <!-- ====================================================================== -->

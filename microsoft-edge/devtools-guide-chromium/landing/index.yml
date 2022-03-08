@@ -1,0 +1,136 @@
+### YamlMime:Landing
+title: Microsoft Edge DevTools 文档
+summary: 使用 Microsoft Edge 开发工具进行开发。
+metadata:
+  ms.service: websites
+  ms.topic: landing-page
+  author: MSEdgeTeam
+  ms.author: msedgedevrel
+  ms.date: 01/07/2022
+  ms.openlocfilehash: 7ee7d04693cc88beafb099db991b3939de4f2693
+  ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "12433693"
+landingContent:
+- title: DevTools 入门
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: 开发工具概述
+      url: /microsoft-edge/devtools-guide-chromium/overview
+    - text: 更改开发工具放置位置（取消停靠，停靠到底部，停靠到左侧）
+      url: /microsoft-edge/devtools-guide-chromium/customize/placement
+    - text: 在“命令”菜单中运行命令
+      url: /microsoft-edge/devtools-guide-chromium/command-menu/index
+    - text: 控制台概述
+      url: /microsoft-edge/devtools-guide-chromium/console/index
+  - linkListType: whats-new
+    links:
+    - text: DevTools Microsoft Edge的新增功能
+      url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
+    - text: 联系 Microsoft Edge 开发工具团队
+      url: /microsoft-edge/devtools-guide-chromium/contact
+- title: 自定义 DevTools
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: 自定义 DevTools
+      url: /microsoft-edge/devtools-guide-chromium/customize/index
+    - text: 将颜色主题应用于开发工具
+      url: /microsoft-edge/devtools-guide-chromium/customize/theme
+  - linkListType: whats-new
+    links:
+    - text: 实验性功能
+      url: /microsoft-edge/devtools-guide-chromium/experimental-features/index
+  - linkListType: how-to-guide
+    links:
+    - text: 更改开发工具语言设置
+      url: /microsoft-edge/devtools-guide-chromium/customize/localization
+    - text: 自定义键盘快捷方式
+      url: /microsoft-edge/devtools-guide-chromium/customize/shortcuts
+- title: 调试 Web 项目
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: 使用检查工具分析页面
+      url: /microsoft-edge/devtools-guide-chromium/css/inspect
+  - linkListType: tutorial
+    links:
+    - text: 查看和更改 CSS 入门
+      url: /microsoft-edge/devtools-guide-chromium/css/index
+    - text: 开始查看和更改 DOM
+      url: /microsoft-edge/devtools-guide-chromium/dom/index
+  - linkListType: how-to-guide
+    links:
+    - text: 使用问题工具查找和修复问题
+      url: /microsoft-edge/devtools-guide-chromium/issues/index
+    - text: 使用 3D 视图工具导航 z 索引、DOM 和层
+      url: /microsoft-edge/devtools-guide-chromium/3d-view/index
+    - text: 检查动画
+      url: /microsoft-edge/devtools-guide-chromium/inspect-styles/animations
+    - text: 调试渐进式 Web 应用 (PWA)
+      url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps/index
+    - text: 检查网络活动
+      url: /microsoft-edge/devtools-guide-chromium/network/index
+- title: 模拟和测试
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 模拟移动设备（设备仿真）
+      url: /microsoft-edge/devtools-guide-chromium/device-mode/index
+    - text: 辅助功能测试功能
+      url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
+    - text: 在呈现的页面中模拟深色或浅色方案
+      url: /microsoft-edge/devtools-guide-chromium/accessibility/preferred-color-scheme-simulation
+    - text: 使用源订单查看器测试键盘支持
+      url: /microsoft-edge/devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer
+    - text: 强制打印预览模式
+      url: /microsoft-edge/devtools-guide-chromium/css/print-preview
+    - text: 模仿视觉缺陷
+      url: /microsoft-edge/devtools-guide-chromium/accessibility/emulate-vision-deficiencies
+    - text: 模拟运动减少
+      url: /microsoft-edge/devtools-guide-chromium/accessibility/reduced-motion-simulation
+- title: JavaScript 和性能
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 在控制台中运行 JavaScript
+      url: /microsoft-edge/devtools-guide-chromium/console/console-javascript
+    - text: 修复控制台中报告的 JavaScript 错误
+      url: /microsoft-edge/devtools-guide-chromium/console/console-debug-javascript
+    - text: 源工具概述
+      url: /microsoft-edge/devtools-guide-chromium/sources/index
+    - text: JavaScript 调试功能
+      url: /microsoft-edge/devtools-guide-chromium/javascript/reference
+    - text: 使用覆盖工具查找未使用的 JavaScript 和 CSS 代码
+      url: /microsoft-edge/devtools-guide-chromium/coverage/index
+    - text: 修复内存问题
+      url: /microsoft-edge/devtools-guide-chromium/memory-problems/index
+    - text: 使用分离的元素工具调试 DOM 内存泄漏
+      url: /microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks
+    - text: 使用安全工具了解安全问题
+      url: /microsoft-edge/devtools-guide-chromium/security/index
+    - text: 分析运行时性能
+      url: /microsoft-edge/devtools-guide-chromium/rendering-tools/index
+- title: 参考
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: 键盘快捷方式
+      url: /microsoft-edge/devtools-guide-chromium/shortcuts/index
+    - text: CSS 功能参考
+      url: /microsoft-edge/devtools-guide-chromium/css/reference
+    - text: 控制台功能参考
+      url: /microsoft-edge/devtools-guide-chromium/console/reference
+    - text: 控制台对象 API 参考
+      url: /microsoft-edge/devtools-guide-chromium/console/api
+  - linkListType: how-to-guide
+    links:
+    - text: 性能功能参考
+      url: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference
+  - linkListType: sample
+    links:
+    - text: DevTools 的示例代码
+      url: /microsoft-edge/devtools-guide-chromium/sample-code/sample-code

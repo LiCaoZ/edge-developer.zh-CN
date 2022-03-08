@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/11/2020
+ms.openlocfilehash: 24e591b5f7da5edf299011906b57aaa967299905
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430498"
 ---
 # <a name="override-webpage-resources-with-local-copies-overrides-tab"></a>使用本地副本替代网页资源（“替代”选项卡）
 
@@ -50,7 +56,7 @@ ms.date: 12/11/2020
 
 :::image type="content" source="../media/javascript-overrides-select-css-file.msft.png" alt-text="在样式检查器中选择文件。" lightbox="../media/javascript-overrides-select-css-file.msft.png":::
 
-在 **"源** "编辑器中，右键单击所选文件的文件名，然后单击"保存 **替代"**。
+在" **源** "编辑器中，右键单击文件名，然后单击"保存 **替代"**。
 
 在"源"编辑器中，将文件的名称添加到替代列表中：
 

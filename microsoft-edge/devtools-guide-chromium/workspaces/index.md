@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 92a101ba2adcde6472ecb3cbf8c0922807f73042
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430722"
 ---
 <!-- Copyright Kayce Basques
 
@@ -87,13 +93,13 @@ ms.date: 05/04/2021
    python -m http.server # Python 3
    ```
 
-1. 在网站中Microsoft Edge一个选项卡，然后导航到本地托管的网站版本。  你应该能够使用 URL（如 或 ）访问 `localhost:8080` 它 `http://0.0.0.0:8080`。  确切的 [端口号](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) 可能不同。
+1. 在网站Microsoft Edge一个选项卡，然后导航到本地托管的网站版本。  你应该能够使用 URL（如 或 ）访问 `localhost:8080` 它 `http://0.0.0.0:8080`。  确切的 [端口号](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) 可能不同。
 
    :::image type="content" source="../media/workspaces-workspaces-demo.msft.png" alt-text="演示。" lightbox="../media/workspaces-workspaces-demo.msft.png":::
 
 ### <a name="set-up-devtools"></a>设置 DevTools
 
-1. 按 `Control``J` ****`Shift`++ (Windows、Linux) 或`J` `Command`+`Option`+ (macOS) 打开 DevTools 的控制台面板。
+1. 按 `Ctrl``J` ****`Shift`++ (Windows、Linux) 或`J` `Command`+`Option`+ (macOS) 打开 DevTools 的控制台面板。
 
    :::image type="content" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="控制台面板。" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
 
@@ -188,7 +194,7 @@ In short, the **DOM Tree** `!==` HTML.
 
 1. 将`<h1>Workspaces Demo</h1>`替换为`<h1>I ❤️  Cake</h1>`。  查看下图。
 
-1. 按 `Control`+`S` (Windows、Linux) 或 `Command`+`S` (macOS) 保存更改。
+1. 按 `Ctrl`+`S` (Windows、Linux) 或 `Command`+`S` (macOS) 保存更改。
 
 1. 刷新页面。  刷新 `<h1>` 页面后，元素将继续显示新文本。
 
@@ -206,13 +212,13 @@ In short, the **DOM Tree** `!==` HTML.
 
 1. 导航到 **"元素"** 工具。
 
-1. 按`Control`+`Shift`+`P`（Windows、Linux）或 `Command`+`Shift`+`P` （macOS）。  命令 **菜单将** 打开。
+1. 按`Ctrl`+`Shift`+`P`（Windows、Linux）或 `Command`+`Shift`+`P` （macOS）。  命令 **菜单将** 打开。
 
 1. 键入 `quick`，然后选择" **显示快速源"**。  在"DevTools **** `index.html`"窗口的底部，将显示"快速源"工具，其中显示 的内容，这是你在"源"工具中编辑的最后**一**个文件。
 
    :::image type="content" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="使用命令菜单打开&quot;快速源&quot;工具。" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
 
-1. 按 `Control``P` ****+ (Windows、Linux) 或 `Command`+`P` (macOS) 打开"打开文件"对话框，如下所示。
+1. 按 `Ctrl`+`P` (Windows、Linux) 或`P` `Command`+ (macOS) 打开"打开**文件**"对话框，如下所示。
 
 1. 键入 `script`，然后选择 **"app/script.js" **。
 
@@ -221,14 +227,14 @@ In short, the **DOM Tree** `!==` HTML.
    > [!NOTE]
    > 该 `Save Changes To Disk With Workspaces` 演示中的链接会定期设置样式。
 
-1. 使用快速源工具将以下 ** 代码script.js** **库的底部** 。
+1. 使用快速源工具将 **script.js代码添加到 ** **页面** 底部。
 
     ```javascript
     console.log('greetings from script.js');
     document.querySelector('a').style = 'font-style:italic';
     ```
 
-1. 按 `Control`+`S` (Windows、Linux) 或 `Command`+`S` (macOS) 保存更改。
+1. 按 `Ctrl`+`S` (Windows、Linux) 或 `Command`+`S` (macOS) 保存更改。
 
 1. 刷新页面。  页面上的链接现在为 italicized。
 

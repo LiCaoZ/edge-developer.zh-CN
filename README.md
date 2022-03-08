@@ -10,7 +10,7 @@
 <!-- ====================================================================== -->
 ## <a name="legal-notices"></a>法律声明
 
-Microsoft 和任何参与者在 [Creative Commons Attribution 4.0 国际](https://creativecommons.org/licenses/by/4.0/legalcode)公共许可证 (下授予你 Microsoft 文档和该存储库中其他内容的许可证 (请参阅 [LICENSE](./LICENSE)) ，并授予你 MIT 许可证 (下存储库中任何代码的许可证 (请参阅 [LICENSE-CODE](./LICENSE-CODE)) 。[](https://opensource.org/licenses/MIT)
+Microsoft 和任何参与者根据 [Creative Commons Attribution 4.0 国际](https://creativecommons.org/licenses/by/4.0/legalcode) 公共许可证 (授予你 Microsoft 文档和该存储库中其他内容的许可证 (请参阅 [LICENSE](LICENSE)) ，并授予你对 [MIT](https://opensource.org/licenses/MIT) 许可证 (下存储库中任何代码的许可证 (请参阅 [LICENSE-CODE](LICENSE-CODE)) 。
 
 本文档中引用的 Microsoft、Windows、Microsoft Azure 和/或其他 Microsoft 产品和服务是 Microsoft 在美国和/或其他国际/地区的商标或注册商标。  此项目的许可证并未授予你使用任何 Microsoft 名称、徽标或商标的权利。  可以在 Microsoft 商标和品牌指南 [中找到 Microsoft 一般商标准则](https://go.microsoft.com/fwlink/?LinkID=254653)。
 
@@ -22,15 +22,15 @@ Microsoft 及任何创作人保留所有其他权利（无论是其各自的版�
 <!-- ====================================================================== -->
 ## <a name="contributing"></a>参与
 
-此存储库`edge-developer`是开发人员文档的源 Markdown Microsoft Edge存储库。  生成的呈现文档托管在Microsoft Edge[文档](https://docs.microsoft.com/microsoft-edge/developer/)。  此存储库还包括开发人员文档和开发人员Microsoft Edge Enterprise中心Microsoft Edge页面。  文档文档的源文件Microsoft Edge Enterprise此存储库，但位于 [Edge-Enterprise](https://github.com/MicrosoftDocs/Edge-Enterprise)文件中。
+此存储库`edge-developer`是开发人员文档的源 Markdown Microsoft Edge存储库。  生成的呈现文档托管在文档Microsoft Edge[上](https://docs.microsoft.com/microsoft-edge/developer/)。  此存储库还包括开发人员文档和开发人员Microsoft Edge Enterprise中心Microsoft Edge页面。  文档文档的源文件Microsoft Edge Enterprise此存储库，但位于 [Edge-Enterprise](https://github.com/MicrosoftDocs/Edge-Enterprise)文件中。
 
-如果你想要包含新的覆盖范围或提供反馈，请考虑 [提供反馈](CONTRIBUTING.md)。  您可以编辑现有内容、添加新内容或报告新 [问题](https://github.com/MicrosoftDocs/edge-developer/issues)。  工作组Microsoft Edge查看你的建议，并努力将建议合并到文档。
+如果你想要包含新的覆盖范围或提供反馈，请考虑 [提供反馈](CONTRIBUTING.md)。  您可以编辑现有内容、添加新内容或报告新 [问题](https://github.com/MicrosoftDocs/edge-developer/issues)。  工作组Microsoft Edge查看您的建议，并努力将这些建议纳入文档。
 
 查找"状态"网页 [的数据](https://developer.microsoft.com/microsoft-edge/status) ，位置为： [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status)。  网页`Status`提供了 Web 平台功能的最新实现状态和未来Microsoft Edge。
 
 ### <a name="file-names-and-directories"></a>文件名和目录
 
-*  在添加网页 (作为 .md 文件) 实现的文章时，必须在 [toc.yml](./microsoft-edge/toc.yml) 中添加新网页的条目，文章必须显示在目录下。
+*  在添加网页 (作为 .md 文件) 实现的文章时，必须在 [toc.yml](microsoft-edge/toc.yml) 中添加新网页的条目，文章必须显示在目录下。
 
 *  目录可以包含更多目录或 `readme.md` 文件。
 
@@ -43,7 +43,7 @@ Microsoft 及任何创作人保留所有其他权利（无论是其各自的版�
 此存储库使用简单的 Markdown 标记，根据文档参与者指南 docs.microsoft.com _标准标记_。
 
 * [Docs Markdown 参考](https://docs.microsoft.com/contribute/markdown-reference) - _在文档参与者指南中_。
-* [在文档GitHub](https://docs.github.com/en/github/writing-on-github) - GitHub的 Markdown GitHub_上编写_。
+* [在文档GitHub](https://docs.github.com/en/github/writing-on-github) - GitHub的 Markdown 上GitHub_编写_。
 
 
 ### <a name="lists"></a>列表
@@ -107,7 +107,7 @@ body {
 请参阅 [文档](https://docs.microsoft.com/en-us/contribute/markdown-reference#tables) 参与者 _指南中的表_。
 
 
-### <a name="notes-alerts"></a>警报 (注释) 
+### <a name="notes-alerts"></a>警报 (注意事项) 
 
 请谨慎使用警报，如"便笺"。  这些块旨在突出显示"不要错过"信息。
 
@@ -138,9 +138,9 @@ body {
 > Dangerous certain consequences of an action.
 ```
 
-![注意模式。](./media/notes.png)
+![注意模式。](media/notes.png)
 
-对于多行 blockquote `>` 笔记，在每个注释行前面 () 一个大于 1000 个字符的字符：
+对于多行 blockquote `>` 笔记，在每个注释行的前面 () 一个字符：
 
 ```md
 > This is a line in a blockquote.  It's ok for it to be very long; it will wrap.

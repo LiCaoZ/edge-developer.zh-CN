@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
+ms.openlocfilehash: f89aaa1e83f657783e4ea846385ff328b5c43a13
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430582"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,7 +32,7 @@ ms.date: 06/07/2021
 
 这就是确定已 `Tab` 使用该键导航到页面中的哪个项的方式，即使具有焦点的元素已被隐藏且未显示在呈现的页面上。
 
-在浏览 `Tab` 页面时，DOM 树不会自动更新为选择相应的 DOM 树节点。  但 Live Expression 输出会发生更改，至少当您从一种页面元素转到另一种页面元素时。  若要查看键具有哪个确切元素已聚焦 (而不只是聚焦哪种类型的元素 __) ，请右键单击 Live Expression) 下面的 Live Expression (的结果，以转到 **"** 元素"工具中的 DOM 树的特定节点。`Tab`
+在浏览 `Tab` 页面时，DOM 树不会自动更新为选择相应的 DOM 树节点。  但 Live Expression 输出会发生更改，至少当您从一种页面元素转到另一种页面元素时。  若要了解`Tab`键具有哪个确切元素已聚焦 (而不只是聚焦哪种类型的元素 __) ，请右键单击 Live Expression) 下面的 Live Expression (的结果，以转到 **"** 元素"工具中的 DOM 树的特定节点。
 
 
 ## <a name="defining-a-live-expression-to-be-able-to-determine-which-dom-node-has-focus"></a>定义 Live Expression 以能够确定哪个 DOM 节点具有焦点
@@ -41,9 +47,9 @@ ms.date: 06/07/2021
 
 1. 单击 **"创建实时表达式 (**![创建实时表达式"](../media/create-live-expression-icon.msft.png)。) 。
 
-   :::image type="content" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="创建 Live Expression。" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
+   ![创建 Live Expression。](../media/accessibility-console-create-live-expression-empty.msft.png)
 
-1. 键入 `document.activeElement`。
+1. 键入以下内容： **document.activeElement**
 
 1. 单击 Live Expression UI **外部** 以保存 Live Expression。
 
@@ -53,11 +59,11 @@ ms.date: 06/07/2021
 
    由于该表达式 `document.activeElement` 实时更新，因此其输出结果始终表示当前聚焦的元素，因此你现在有一种方法可以始终在 DevTools **控制台**中跟踪哪个元素具有焦点。  需要右键单击 Live Expression 输出，如下所示：
 
-1. 在 DevTools **控制台中**，将鼠标悬停在 Live Expression `document.activeElement` (下方的 Live Expression) 。
+1. 在 DevTools **控制台中**，将鼠标悬停在 Live Expression `document.activeElement` (下 Live Expression) 。
 
-   焦点元素在视口中突出显示 (，即，在呈现的网页中) 。
+   焦点元素在视口中突出显示 (，即，在呈现的网页集中) 。
 
-1. 在 DevTools **控制台**中，右键单击 Live Expression (下方的 Live Expression `document.activeElement`) ，然后选择"元素"面板中的" **展示"**。 
+1. 在 DevTools **控制台**中，右键单击 Live Expression (下 Live Expression `document.activeElement`) ，然后选择"元素"面板中的" **展示"**。 
 
    在" **元素** "工具中，DOM 树会自动展开并选择活动元素 (DOM 树节点) 。  _活动元素_是您通过按 和 导航到的网页项的 DOM 树表示`Tab``Shift`+`Tab`形式。
 

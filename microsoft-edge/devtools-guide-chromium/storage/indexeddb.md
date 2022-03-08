@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: b8967909870ce7d14daf1896c4099cce6f367f9f
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430379"
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,18 +28,13 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # <a name="view-and-change-indexeddb-data"></a>查看和更改 IndexedDB 数据
 
-本指南演示如何使用 [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) 查看和更改 [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) 数据。
-
-本文假定你熟悉：
-
-*  DevTools。
-*  IndexedDB。  请参阅 [使用 IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB)。
+若要查看和更改 [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) 数据，请使用 **应用程序** 工具。
 
 
 <!-- ====================================================================== -->
 ## <a name="view-indexeddb-data"></a>查看 IndexedDB 数据
 
-1. 单击" **应用程序"** 选项卡以打开 **"应用程序"** 工具。  通常默认**清单**窗格打开。
+1. 在 DevTools 中，单击 **"应用程序"** 选项卡以打开 **"应用程序"** 工具。  通常默认**清单**窗格打开。
 
    :::image type="content" source="../media/storage-application-manifest-empty.msft.png" alt-text="&quot;清单&quot;窗格。" lightbox="../media/storage-application-manifest-empty.msft.png":::
 
@@ -43,7 +44,7 @@ ms.date: 05/04/2021
 
    * ![ ("`notes`](../media/database-icon.msft.png) `notes - https://mdn.github.io` `https://mdn.github.io`数据库"图标。) 表示一个数据库，其中 是数据库的名称，也是访问数据库的来源。
 
-   * ![ (对象存储"图标](../media/object-store-icon.msft.png)。`notes`) 对象存储。
+   * ![ (对象存储"图标](../media/object-store-icon.msft.png)。) `notes`对象存储。
 
    *  **标题**和 **正文**是[索引](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Using_an_index)。
 
@@ -108,7 +109,7 @@ ms.date: 05/04/2021
 
    :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="单击键值对以将其删除。" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
 
-1. 按`Delete`或单击"**删除所选 (**![删除所选](../media/delete-icon.msft.png)内容。) 。
+1. 按`Delete`或单击"**删除所选 (**!["。) ](../media/delete-icon.msft.png)。
 
    :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="对象存储在键值对被删除后的外观。" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
 

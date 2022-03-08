@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 424a5d755b9ca1632d9548d0a94f334ae4971665
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431436"
 ---
 <!-- Copyright Kayce Basques
 
@@ -24,7 +30,7 @@ ms.date: 05/04/2021
 
 打印 [媒体查询](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) 控制页面在打印时的外观。  若要强制页面进入打印预览模式：
 
-1. 按 `Control``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
+1. 按 `Ctrl``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
 
    > [!div class="mx-imgBorder"]
    > ![打开命令菜单](../media/print-preview-open-command-menu.png)
@@ -38,7 +44,7 @@ ms.date: 05/04/2021
    > [!div class="mx-imgBorder"]
    > ![已选择打印 CSS 媒体类型的呈现面板。](../media/print-preview-css-media-type.png)
 
-可以在此处显示和更改 CSS，就像任何其他网页一样。  请参阅 [开始查看和更改 CSS](./index.md)。
+可以在此处显示和更改 CSS，就像任何其他网页一样。  请参阅 [开始查看和更改 CSS](index.md)。
 
 
 <!-- ====================================================================== -->

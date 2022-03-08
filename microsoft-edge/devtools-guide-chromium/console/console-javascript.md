@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
+ms.openlocfilehash: 6213ab9ba28c11cba61631b41c8b7b5c5e7d7566
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431345"
 ---
 # <a name="run-javascript-in-the-console"></a>在控制台中运行 JavaScript
 
@@ -18,9 +24,9 @@ ms.date: 04/13/2021
 1. 循环回第一步。
 
 
-若要在控制台中以交互方式输入 JavaScript 语句和表达式：
+若要在控制台中以交互方式输入 JavaScript 语句和 **表达式**：
 
-1. 在网页中右键单击，然后选择"检查 **"**。  将打开 DevTools。  或者，按 `Control`++`Shift``J` \ (Windows、Linux\) 或`J` `Command`+`Option`+\ (macOS\) 直接打开 DevTools 控制台。
+1. 在网页中右键单击，然后选择"检查 **"**。  将打开 DevTools。  或者，按 `Ctrl`++`Shift``J` \ (Windows、Linux\) 或`J` `Command`+`Option`+\ (macOS\) 直接打开 DevTools 控制台。
 
 1. 如有必要，请在 DevTools 中单击以赋予其焦点，然后按 `Esc` 以打开 **控制台**。
 
@@ -28,7 +34,7 @@ ms.date: 04/13/2021
 
    键入 **时** ，控制台会立即在 `4` 下一行上显示结果。  该功能 `Eager evaluation` 可帮助你编写有效的 JavaScript。  **无论** JavaScript 是否正确以及是否存在有效结果，控制台都会在键入时显示结果。
 
-   :::image type="content" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="控制台将在您键入表达式&quot;2 + 2&quot;时以交互方式显示该表达式的结果。" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
+   :::image type="content" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="控制台将在您键入表达式&quot;2+2&quot;时以交互方式显示该表达式的结果。" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
 
 1. 按 时`Enter`，控制台将**** 运行 JavaScript 命令 (表达式或语句) ，显示结果，然后向下移动光标以允许您输入下一个 JavaScript 命令。
 

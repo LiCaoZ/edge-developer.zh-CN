@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/06/2021
+ms.openlocfilehash: 3e53029e5b441eb33a9677ea1f869e87e320c60e
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431373"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -20,7 +26,7 @@ ms.date: 05/06/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="whats-new-in-devtools-microsoft-edge-91"></a>DevTools 中的新增功能 (Microsoft Edge 91)
+# <a name="whats-new-in-devtools-microsoft-edge-91"></a>DevTools 91 (Microsoft Edge中的新增) 
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
@@ -60,9 +66,9 @@ DevTools 工具提示功能可帮助你了解 DevTools 中所有不同的工具�
 
 *  按 `Ctrl`++`Shift``H` (Windows/Linux) 或 (`H` `Cmd`+`Shift`+macOS) 。
 *  [打开命令菜单](../../../command-menu/index.md#open-the-command-menu)，然后键入 `tooltips`。
-*  选择 **"自定义和控制 DevTools 工具** () > `...` **帮助** > **""工具提示"**。
+*  选择 **"自定义和控制 DevTools** 工具 () > `...` **帮助** > **""工具提示"**。
 
-此外，如果你打开焦点模式和 [DevTools 工具提示](../02/devtools.md#group-tools-together-in-focus-mode) 实验，还可以单击活动栏底部的切换 **DevTools** 工具提示 (`?`) **按钮**。
+此外，如果你打开焦点模式和 [DevTools](../02/devtools.md#group-tools-together-in-focus-mode) 工具提示实验，还可以单击活动栏底部的"切换 **开发** `?` 工具提示 () " **按钮**。
 
 要显示有关如何使用 DevTools 的详细信息，请打开工具提示，然后将鼠标悬停在 DevTools 的每个轮廓区域上。
 
@@ -100,9 +106,9 @@ DevTools 工具提示功能可帮助你了解 DevTools 中所有不同的工具�
 Most operating systems require square icons.  Please include at least one square icon in the array.
 ```
 
-在 Microsoft Edge 版本 90 或更早版本中，每个非方形图标都将显示错误：
+在Microsoft Edge版本 90 或更早版本中，将针对非正方形的每个图标显示错误：
 
-:::image type="content" source="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png" alt-text="在 Microsoft Edge 版本 90 或更早版本中，对于非正方形的每个图标都显示错误" lightbox="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png":::
+:::image type="content" source="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png" alt-text="在Microsoft Edge版本 90 或更早版本中，每个非正方形图标都将显示错误" lightbox="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png":::
 
 在Microsoft Edge版本 91 或更高版本中，提供至少一个方形图标时不会显示错误：
 
@@ -128,7 +134,7 @@ Most operating systems require square icons.  Please include at least one square
 <!--  Title: Navigate to CSS variables with the arrow keys  -->
 <!--  Subtitle: In the Styles pane, use the arrow keys to select CSS variables.  Press `Enter` to see the variable definition.  -->
 
-从 [Microsoft Edge 版本 88](../../2020/11/devtools.md#css-variable-definitions-in-styles-pane) 开始，**样式** 窗格显示 CSS 变量，并直接提供指向每个变量定义的链接。  在Microsoft Edge版本 91 或更高版本中，您可以使用箭头键轻松导航到 CSS 变量。  若要在"样式 **"窗格中打开** 定义，请将鼠标悬停在变量上，然后按 `Enter`。  有关 CSS 变量详细信息，请参阅 Using [CSS custom properties (variables) ](https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties)。  有关开放源代码项目中此功能Chromium，请参阅问题[1187735。](https://crbug.com/1187735)
+从 [Microsoft Edge 版本 88](../../2020/11/devtools.md#css-variable-definitions-in-styles-pane) 开始，**样式** 窗格显示 CSS 变量，并直接提供指向每个变量定义的链接。  在 Microsoft Edge 版本 91 或更高版本中，可以使用箭头键轻松导航到 CSS 变量。  若要在"样式 **"窗格中打开** 定义，请将鼠标悬停在变量上，然后按 `Enter`。  有关 CSS 变量详细信息，请参阅 Using [CSS custom properties (variables) ](https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties)。  有关开放源代码项目中此功能Chromium，请参阅问题[1187735。](https://crbug.com/1187735)
 
 :::image type="content" source="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png" alt-text="--theme-body-background CSS 变量在&quot;样式&quot;窗格中突出显示。" lightbox="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png":::
 
@@ -170,7 +176,7 @@ Most operating systems require square icons.  Please include at least one square
 
 ### <a name="visualize-css-scroll-snap"></a>可视化 CSS 滚动贴靠
 
-现在，可以在"元素"`scroll-snap`工具中**** 切换锁屏提醒，以检查 CSS 滚动对齐方式。  当网页上的 HTML 元素应用于 `scroll-snap-type` 该元素时，" `scroll-snap` 元素"工具的旁边会显示 **锁** 屏提醒。  单击锁屏提醒 (或) 网页上滚动贴贴的显示。
+现在，可以在"元素"`scroll-snap`工具中**** 切换锁屏提醒，以检查 CSS 滚动对齐方式。  当网页上的 HTML 元素应用于 `scroll-snap-type` 该元素时，" `scroll-snap` 元素"工具的旁边会显示 **锁** 屏提醒。  单击锁屏提醒以 (或) 网页上滚动贴贴的显示。
 
 有关示例网页，请参阅 [滚动贴靠演示](https://mathiasbynens.github.io/css-dbg-stories/css-scroll-snap.html)。  在示例中，点出现在对齐边缘上。  滚动端口具有纯色轮廓，而贴靠项具有虚线边框。  滚动填充填充为绿色，而滚动边距填充为橙色。
 
@@ -182,9 +188,9 @@ Most operating systems require square icons.  Please include at least one square
 
 ### <a name="new-memory-inspector-tool"></a>新建内存检查器工具
 
-使用新的 **内存检查器** 工具检查 JavaScript 和 Wasm 内存中的 `ArrayBuffer`。  打开 [JS 中内存](https://memory-inspector.glitch.me/demo-js.html) 演示网页。  在 **源** 工具中，打开 `memory-write-wasm` 文件，并在行 `0x03c` 处设置断点。  刷新网页。  展开调试程序窗格中的“**范围**”部分。  新图标显示在 **缓冲区** 值 的旁边。  单击它以打开新的 **内存检查器** 工具。
+使用新的 **内存检查器** 工具检查 JavaScript 和 Wasm 内存中的 `ArrayBuffer`。  打开 [JS 中内存](https://memory-inspector.glitch.me/demo-js.html) 演示网页。 该网页提供类似于以下内容的说明。  在" **源** "工具中， `memory-write-wasm` 打开文件，并设置第 18 行的断 () `0x03c` 。  刷新网页。  展开调试程序窗格中的“**范围**”部分。  新图标显示在 **缓冲区** 值 的旁边。  单击它以打开新的 **内存检查器** 工具。  请参阅 [使用内存检查器工具检查 JavaScript ArrayBuffer](../../../memory-inspector/memory-inspector-tool.md)。
 
-若要了解有关"源"工具中的调试 **的详细信息** ，请参阅使用 [调试器窗格调试 JavaScript 代码](../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code)。  若要查看开放源代码项目中此功能Chromium历史记录，请参阅 Issue [1166577](https://crbug.com/1166577)。
+若要了解有关"源"工具中的调试 **的详细信息** ，请参阅使用 [调试器窗格调试 JavaScript 代码](../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code)。  有关开放源代码项目中此功能的Chromium，请参阅 Issue [1166577](https://crbug.com/1166577)。
 
 :::image type="content" source="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png" alt-text="内存检查器工具。" lightbox="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png":::
 
@@ -194,9 +200,9 @@ Most operating systems require square icons.  Please include at least one square
 
 1. 右键单击某个元素，然后单击" **锁屏提醒设置"**。
 
-1. 若要显示 (或隐藏) 锁屏提醒， (或清除) 锁屏提醒名称旁边的复选框。
+1. 若要显示 (或隐藏) 锁屏提醒， (或) 锁屏提醒名称旁边的复选框。
 
-<!--  To review the history of this feature in the Chromium open-source project, see Issue [1066772](https://crbug.com/1066772).  -->
+<!--  For the history of this feature in the Chromium open-source project, see Issue [1066772](https://crbug.com/1066772).  -->
 
 :::image type="content" source="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png" alt-text="&quot;元素&quot;工具中的锁屏提醒设置窗格。" lightbox="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png":::
 
@@ -220,7 +226,7 @@ DevTools 中的图像预览已增强，可显示更多信息，包括以下详�
 
 :::image type="content" source="../../media/2021/04/network-img-name-filters-preview.msft.png" alt-text="网络工具中的图像纵横比信息。" lightbox="../../media/2021/04/network-img-name-filters-preview.msft.png":::
 
-若要在开放源代码项目中查看此功能Chromium历史记录，请参阅问题[1149832](https://crbug.com/1149832)[和1170656](https://crbug.com/1170656)。
+有关开放源代码项目中此功能的Chromium，请参阅 Issues [1149832](https://crbug.com/1149832) and [1170656](https://crbug.com/1170656)。
 
 ### <a name="new-options-to-configure-content-encodings-in-the-network-conditions-tool"></a>用于在网络条件工具中配置 Content-Encoding 的新选项
 
@@ -232,7 +238,7 @@ DevTools 中的图像预览已增强，可显示更多信息，包括以下详�
 
 1. 清除要测试的 `Content-Encoding` 旁边的复选框。
 
-若要查看开放源代码项目中此功能Chromium历史记录，请参阅 Issue [1162042](https://crbug.com/1162042)。
+有关开放源代码项目中此功能的Chromium，请参阅 Issue [1162042](https://crbug.com/1162042)。
 
 :::image type="content" source="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png" alt-text="&quot;更多网络条件&quot;按钮将打开&quot;网络条件&quot;工具以配置&quot;Content-Encoding&quot;。" lightbox="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png":::
 
@@ -250,7 +256,7 @@ DevTools 中的图像预览已增强，可显示更多信息，包括以下详�
 
 #### <a name="support-for-the-accent-color-keyword"></a>支持强调色关键字
 
-**样式** 窗格的自动完成 UI 现在检测 `accent-color` CSS 关键字，这允许你为元素生成的 UI 控件指定强调色。  元素生成的 UI 控件示例包括复选框或单选按钮。 有关实现实现状态Chromium，请参阅[功能：强调文字颜色 CSS 属性](https://chromestatus.com/feature/4752739957473280)。  若要启用此功能，请转到 ， `edge://flags#enable-experimental-web-platform-features` 将复选框设置为 **已启用**。  若要查看开放源代码项目中此功能Chromium历史记录，请参阅 Issue [1092093](https://crbug.com/1092093)。
+**样式** 窗格的自动完成 UI 现在检测 `accent-color` CSS 关键字，这允许你为元素生成的 UI 控件指定强调色。  元素生成的 UI 控件示例包括复选框或单选按钮。 有关实现实现状态Chromium，请参阅[功能：强调文字颜色 CSS 属性](https://chromestatus.com/feature/4752739957473280)。  若要启用此功能，请转到 ， `edge://flags#enable-experimental-web-platform-features` 将复选框设置为 **已启用**。  有关开放源代码项目中此功能的Chromium，请参阅 Issue [1092093](https://crbug.com/1092093)。
 
 :::image type="content" source="../../media/2021/04/elements-styles-accent-color.msft.png" alt-text="强调文字颜色 CSS 关键字。" lightbox="../../media/2021/04/elements-styles-accent-color.msft.png":::
 
@@ -275,14 +281,14 @@ DevTools 中的图像预览已增强，可显示更多信息，包括以下详�
 
 使用新的试验筛选器更快地查找试验。  例如，若要打开针对代码问题的新实验：''
 
-1. 选择 **"设置** > **Experiments"**。
+1. 选择**设置** > **Experiments"**。
 1. 在" **筛选器"** 文本框中，键入 `issues`。
 
 :::image type="content" source="../../media/2021/04/settings-experiments-filter-by-issues.msft.png" alt-text="在实验设置中筛选实验。" lightbox="../../media/2021/04/settings-experiments-filter-by-issues.msft.png":::
 
 ### <a name="new-vary-header-column-in-the-cache-storage-pane"></a>缓存存储窗格中的新的变化标头列
 
-使用 **缓存存储** 窗格中的新 `Vary Header` 列显示 [变化](https://httpwg.org/specs/rfc7231.html#header.vary) HTTP 响应标头值。  若要查看开放源代码项目中此功能Chromium历史记录，请参阅 Issue [1186049](https://crbug.com/1186049)。
+使用 **缓存存储** 窗格中的新 `Vary Header` 列显示 [变化](https://httpwg.org/specs/rfc7231.html#header.vary) HTTP 响应标头值。  有关开放源代码项目中此功能的Chromium，请参阅 Issue [1186049](https://crbug.com/1186049)。
 
 :::image type="content" source="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png" alt-text="Vary Header 列。" lightbox="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png":::
 
@@ -295,23 +301,23 @@ DevTools 现在支持新的 [专用品牌检查 obj 中的 a.k.a. #foo](https://
 1. 导航到 **调试程序** 窗格。
 1. 导航到 **范围** 部分。
 
-若要查看开放源代码项目中此功能Chromium历史记录，请参阅问题 [11374](https://crbug.com/v8/11374)。
+有关开放源代码项目中此功能Chromium，请参阅问题 [11374](https://crbug.com/v8/11374)。
 
 :::image type="content" source="../../media/2021/04/sources-page-pen-js-breakpoint-scope-script-dog.msft.png" alt-text="JavaScript 专用品牌检查。" lightbox="../../media/2021/04/sources-page-pen-js-breakpoint-scope-script-dog.msft.png":::
 
 #### <a name="enhanced-support-for-breakpoints-debugging"></a>对断点调试的增强支持
 
-新式 JavaScript 捆绑程序（如 [Webpack](https://webpack.js.org)）和 [汇总](https://rollupjs.org) 支持代码拆分。  若要详细了解代码拆分，请参阅代码 [拆分](https://webpack.js.org/guides/code-splitting/#:~:text=There%20are%20three%20general%20approaches%20to%20code%20splitting,Split%20code%20via%20inline%20function%20calls%20within%20modules.)。  在 Microsoft Edge 版本 90 或更早版本中，DevTools 仅在单个捆绑包中设置断点。  在 Microsoft Edge 版本 91 或更高版本中，在调试共享组件时，DevTools 会在多个捆绑包中正确设置断点。  若要查看开放源代码项目中此功能的历史记录Chromium，请参阅问题 [1142705](https://crbug.com/1142705)[、979000](https://crbug.com/979000) 和 [1180794](https://crbug.com/1180794)。
+新式 JavaScript 捆绑程序（如 [Webpack](https://webpack.js.org)）和 [汇总](https://rollupjs.org) 支持代码拆分。  若要详细了解代码拆分，请参阅代码 [拆分](https://webpack.js.org/guides/code-splitting/#:~:text=There%20are%20three%20general%20approaches%20to%20code%20splitting,Split%20code%20via%20inline%20function%20calls%20within%20modules.)。  在 Microsoft Edge 版本 90 或更早版本中，DevTools 仅在单个捆绑包中设置断点。  在 Microsoft Edge 版本 91 或更高版本中，在调试共享组件时，DevTools 会在多个捆绑包中正确设置断点。  有关开放源代码项目中此功能的历史记录Chromium，请参阅问题 [1142705](https://crbug.com/1142705)[、979000](https://crbug.com/979000) 和 [1180794](https://crbug.com/1180794)。
 
 #### <a name="support-hover-preview-with-bracket-notation"></a>支持使用括号表示法的悬停预览
 
-DevTools 现在支持在 **源** 工具中使用 `[]` 表示法的 JavaScript 成员表达式上进行悬停预览。  若要查看开放源代码项目中此功能Chromium历史记录，请参阅 Issue [1178305](https://crbug.com/1178305)。
+DevTools 现在支持在 **源** 工具中使用 `[]` 表示法的 JavaScript 成员表达式上进行悬停预览。  有关开放源代码项目中此功能的Chromium，请参阅 Issue [1178305](https://crbug.com/1178305)。
 
 :::image type="content" source="../../media/2021/04/sources-page-pen.js-breakpoint-arr-i-a.msft.png" alt-text="支持使用 [] 表示法的悬停预览" lightbox="../../media/2021/04/sources-page-pen.js-breakpoint-arr-i-a.msft.png":::
 
 #### <a name="improved-outline-of-html-files"></a>改进的 HTML 文件大纲
 
-DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工具中，打开 `.html` 文件。  若要打开或 (代码) ，`Ctrl`++`Shift``O`请按 Windows/Linux`O` `Cmd`+`Shift`+或 macOS。  在下图中，DevTools 现在正确列出了大纲中的所有函数。  以前，DevTools 仅显示一些函数。  若要查看开放源代码项目中此功能的历史记录Chromium，请参阅问题[761019](https://crbug.com/761019)[和1191465](https://crbug.com/1191465)。
+DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工具中，打开 `.html` 文件。  若要打开或 (代码) ，`Ctrl`++`Shift``O`请按 Windows/Linux`O` `Cmd`+`Shift`+或 macOS。  在下图中，DevTools 现在正确列出了大纲中的所有函数。  以前，DevTools 仅显示一些函数。  有关开放源代码项目中此功能的Chromium，请参阅 Issues [761019](https://crbug.com/761019) and [1191465](https://crbug.com/1191465)。
 
 :::image type="content" source="../../media/2021/04/sources-page-jobobbx-at.msft.png" alt-text=" 改进了 HTML 文件的大纲。" lightbox="../../media/2021/04/sources-page-jobobbx-at.msft.png":::
 
@@ -329,7 +335,7 @@ DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工
 
 :::image type="content" source="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png" alt-text="Wasm 调试的正确错误堆栈跟踪。" lightbox="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png":::
 
-若要查看开放源代码项目中此功能Chromium历史记录，请参阅 Issue [1189161](https://crbug.com/1189161)。
+有关开放源代码项目中此功能的Chromium，请参阅 Issue [1189161](https://crbug.com/1189161)。
 
 
 <!-- ====================================================================== -->

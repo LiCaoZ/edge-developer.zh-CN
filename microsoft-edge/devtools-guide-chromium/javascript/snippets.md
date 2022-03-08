@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 72714404b973c5e87121034e796b851493ee9f35
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432690"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,13 +32,13 @@ ms.date: 05/04/2021
 
 代码段是 [bookmarklet](https://en.wikipedia.org/wiki/Bookmarklet) 的替代方法，区别在于代码段仅在 DevTools 中运行，并且不限于 URL 的允许长度。
 
-使用代码片段在第三方网页进行少许内容更改的绝佳方法。  将代码片段中的代码更改添加到当前网页，并在同一上下文中运行。  有关更改网页的现有代码的信息，请参阅 [替代](./overrides.md)。
+使用代码片段在第三方网页进行少许内容更改的绝佳方法。  将代码片段中的代码更改添加到当前网页，并在同一上下文中运行。  有关更改网页的现有代码的信息，请参阅 [替代](overrides.md)。
 
 下图显示了左侧的 DevTools 主页和右侧一些代码段源代码。
 
 运行代码段之前的网页：
 
-:::image type="content" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="运行代码段之前的网页。" lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
+![运行代码段之前的网页。](../media/javascript-sources-snippets-split-screen.msft.png)
 
 运行代码段之前网页的代码段源代码：
 
@@ -44,35 +50,35 @@ p.textContent = 'Hello, Snippets!';
 document.body.appendChild(p);
 ```
 
-下图所示为运行代码片段后出现的网页。  将弹出**控制台抽屉式选项卡**显示代码片段记录的 `Hello, Snippets!` 消息，并且网页的内容全部更改。
+下图所示为运行代码片段后出现的网页。  控制台 **箱** 弹出以显示 `Hello, Snippets!` 代码段记录的消息，网页内容完全更改：
 
-:::image type="content" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="运行代码段后的网页。" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
+![运行代码段后的网页。](../media/javascript-sources-snippets-split-screen-after.msft.png)
 
 
 <!-- ====================================================================== -->
 ## <a name="open-the-snippets-tab"></a>打开"代码段"选项卡
 
-左侧**导航**器窗格中的"代码**** 段"选项卡列出了您的代码段。  当您要编辑代码段时，您需要从"代码段"选项卡 **中打开** 它。
+左侧**导航**器窗格中的"代码**** 段"选项卡列出了您的代码段。  当您要编辑代码段时，您需要从"代码段"选项卡 **中打开** 它：
 
-:::image type="content" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="&quot;代码段&quot;选项卡。" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+!["代码段"选项卡。](../media/javascript-sources-snippets-pane.msft.png)
 
 ### <a name="open-the-snippets-tab-with-a-mouse"></a>用鼠标打开"代码段"选项卡
 
-1. 选择" **源"** 选项卡。 将显示 **"源** "工具。
+1. 选择" **源"** 选项卡。 将显示 **"源** "工具：
 
-   :::image type="content" source="../media/javascript-sources-page-pane.msft.png" alt-text="左侧打开&quot;页面&quot;选项卡的&quot;源&quot;工具。" lightbox="../media/javascript-sources-page-pane.msft.png":::
+   ![左侧打开"页面"选项卡的"源"工具。](../media/javascript-sources-page-pane.msft.png)
 
-1. 在左侧**导航器** (窗格中，) 代码**段"** 选项卡。 若要访问 **"代码段**"选项，您可能需要****![单击"更多选项卡" (更多选项卡](../media/more-tabs-icon.msft.png)) 按钮。
+1. 在左侧**导航器** (窗格中，) 代码**段"** 选项卡。 若要访问 **"代码段**"选项，您可能需要****![单击"更多选项卡" (更多选项卡](../media/more-tabs-icon.msft.png)。) 按钮。
 
 ### <a name="open-the-snippets-tab-with-the-command-menu"></a>使用命令菜单打开"代码段"选项卡
 
 1. 在 DevTools 中选择任何内容，以便 DevTools 具有焦点。
 
-1. 按 `Control`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 打开命令菜单。
+1. 按 `Ctrl`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 打开命令菜单。
 
-1. 键入 `Snippets`，选择 **"显示代码**段"，然后按 `Enter` 以运行命令。
+1. 键入 `Snippets`，选择 **"显示代码**段"，然后按 `Enter` 以运行命令：
 
-   :::image type="content" source="../media/javascript-search-show-snippets.msft.png" alt-text="&quot;显示代码段&quot;命令。" lightbox="../media/javascript-search-show-snippets.msft.png":::
+   !["显示代码段"命令。](../media/javascript-search-show-snippets.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -84,19 +90,19 @@ document.body.appendChild(p);
 
 1. 单击 **"新建代码段"**。
 
-1. 输入代码段的名称，然后按 `Enter`。
+1. 输入代码段的名称，然后按 `Enter`：
 
-   :::image type="content" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="命名代码段。" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
+   ![命名代码段。](../media/javascript-sources-snippets-naming.msft.png)
 
 ### <a name="create-a-snippet-through-the-command-menu"></a>通过命令菜单创建代码片段
 
 1. 将光标停在 DevTools 中的任一位置。
 
-1. 按 `Control`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 打开命令菜单。
+1. 按 `Ctrl`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 打开命令菜单。
 
-1. 开始键入 ，选择`snippet`**创建新代码段**，然后按 `Enter`。
+1. 开始键入 ，选择`snippet`**创建新代码段**，然后按 `Enter`：
 
-   :::image type="content" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="用于创建新代码段的命令。" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
+   ![用于创建新代码段的命令。](../media/javascript-search-create-new-snippet.msft.png)
 
 若要使用自定义名称重命名新代码段，请参阅 [重命名代码段](#rename-snippets)。
 
@@ -106,15 +112,15 @@ document.body.appendChild(p);
 
 1. [打开"代码段"选项卡](#open-the-snippets-tab)。
 
-1. 在 **"代码段** "选项卡中，选择要编辑的代码段的名称。  代码片段将在**代码编辑器**中打开。
+1. 在 **"代码段** "选项卡中，选择要编辑的代码段的名称。  代码段将在代码 **编辑器中打开**：
 
-   :::image type="content" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="代码编辑器。" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
+   ![代码编辑器。](../media/javascript-sources-snippets-editor-saved.msft.png)
 
 1. 使用**代码编辑器**将 JavaScript 添加到代码片段。
 
-1. 当代码片段名称旁边出现星号时，表示有代码未保存。  按 `Control`+`S` (Windows、Linux) 或 `Command`+`S` (macOS) 保存。
+1. 当代码片段名称旁边出现星号时，表示有代码未保存。  按 `Ctrl`+`S` (Windows、Linux) 或 `Command`+`S` (macOS) 保存：
 
-   :::image type="content" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="代码段名称旁边的星号表示未保存的代码。" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
+   ![代码段名称旁边的星号表示未保存的代码。](../media/javascript-sources-snippets-editor-unsaved.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -124,7 +130,7 @@ document.body.appendChild(p);
 
 1. [打开"代码段"选项卡](#open-the-snippets-tab)。
 
-1. 单击要运行的代码段的名称。  代码片段将在**代码编辑器**中打开。
+1. 单击要运行的代码段的名称。  代码段将在代码 **编辑器中打开**：
 
 1. 单击 **"运行代码段** (![运行代码段](../media/run-snippet-icon.msft.png) "。) 。
 
@@ -132,11 +138,11 @@ document.body.appendChild(p);
 
 1. 将光标停在 DevTools 中的任一位置。
 
-1. 按 `Control`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 打开命令菜单。
+1. 按 `Ctrl`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 打开命令菜单。
 
-1. 删除 `>` 字符并在要运行的代码片段名称后键入 `!` 字符。
+1. `>`删除 字符，键入`!`字符后跟要运行的代码段的名称：
 
-   :::image type="content" source="../media/javascript-search-run-command.msft.png" alt-text="从命令菜单运行代码段。" lightbox="../media/javascript-search-run-command.msft.png":::
+   ![从命令菜单运行代码段。](../media/javascript-search-run-command.msft.png)
 
 1. 按 `Enter` 以运行代码段。
 

@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 8315285d79bac0e9972f253f7291cd591bc56ad7
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430155"
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,9 +28,9 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # <a name="view-cache-data"></a>查看缓存数据
 
-本指南将演示如何使用 [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) 检查[缓存](https://developer.mozilla.org/docs/Web/API/Cache)数据。
+本指南演示如何使用 DevTools 检查 [缓存](https://developer.mozilla.org/docs/Web/API/Cache) 数据。
 
-如果您尝试检查 [HTTP 缓存](https://developer.mozilla.org/docs/Web/HTTP/Caching) 数据，则这不是您需要的指南。  在网络日志的 **"大小"** 列中 **查找信息**;请参阅 [记录网络活动](../network/index.md#log-network-activity)。
+若要检查 [HTTP 缓存](https://developer.mozilla.org/docs/Web/HTTP/Caching) 数据，在 **"网络** "工具中，使用"网络日志"的 **"** 大小 **"列**。  请参阅[检查网络活动中的](../network/index.md#log-network-activity)_记录网络活动_。
 
 
 <!-- ====================================================================== -->
@@ -59,7 +65,7 @@ ms.date: 05/04/2021
 
    :::image type="content" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="选择要刷新的资源。" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
 
-1. 单击 **"刷新**![ (刷新"。](../media/refresh-icon.msft.png)) 。
+1. 单击 **"刷新** (![刷新"。](../media/refresh-icon.msft.png)) 。
 
 
 <!-- ====================================================================== -->
@@ -81,7 +87,7 @@ ms.date: 05/04/2021
 
    :::image type="content" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="选择要删除的资源。" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
 
-1. 单击 **"删除所选 (**!["，然后单击"删除所选) ](../media/delete-icon.msft.png)"。
+1. 单击 **"删除所选 (**!["，然后单击"删除所选](../media/delete-icon.msft.png)) "。
 
 
 <!-- ====================================================================== -->

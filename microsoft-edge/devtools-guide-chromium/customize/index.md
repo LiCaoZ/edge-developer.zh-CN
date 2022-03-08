@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 32c15252d5b492cfa3a8971be4300dec11994eac
-ms.sourcegitcommit: 2e0ec25e3cfc01b58fdddd5f4ac270632cb9b962
+ms.openlocfilehash: 1c5ea9792bebce194b10e7fef2498001d0a42561
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "12348254"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430344"
 ---
 <!-- Copyright Kayce Basques
 
@@ -46,7 +46,7 @@ ms.locfileid: "12348254"
 
 在 **DevTools** 底部的"箱"工具栏中，可以选择要显示的工具。
 
-若要打开 (或关闭) **，** 请按 `Escape`。
+若要打开 (或关闭) **收银机，** 请按 `Escape`。
 
 :::image type="content" source="../media/customize-drawer-open.msft.png" alt-text="The Drawer." lightbox="../media/customize-drawer-open.msft.png":::
 
@@ -74,11 +74,11 @@ ms.locfileid: "12348254"
 <!-- ====================================================================== -->
 ## <a name="open-and-close-tools"></a>打开和关闭工具
 
-若要简化 DevTools 接口，默认情况下不会打开许多工具。  若要在主******** ![](../media/open-tab-icon.png) 面板或"箱"中打开工具，请单击"更多工具" ("更多工具"。) 选项卡右边的") "按钮，然后从列表中选择一个工具。
+若要简化 DevTools 接口，默认情况下不会打开许多工具。  若要在主面板或******** ![](../media/open-tab-icon.png) "箱"中打开工具，请单击"更多工具" (更多工具"。) 选项卡右侧单击""按钮，然后从列表中选择工具。
 
 :::image type="content" source="../media/open-tool-in-main-panel-or-drawer.png" alt-text="&quot;更多工具 (+) &quot;按钮打开新工具" lightbox="../media/open-tool-in-main-panel-or-drawer.png":::
 
-若要关闭工具，**请选择"**![关闭 (工具](../media/close-tab-icon.png)"。) "选项卡中的"关闭工具"按钮。
+若要关闭工具，请选择"****![关闭 (工具](../media/close-tab-icon.png)"。) "选项卡中的"关闭工具"按钮。
 
 :::image type="content" source="../media/close-tool-in-main-panel-or-drawer.png" alt-text="选项卡的&quot;关闭&quot;按钮" lightbox="../media/close-tool-in-main-panel-or-drawer.png":::
 
@@ -86,7 +86,7 @@ ms.locfileid: "12348254"
 <!-- ====================================================================== -->
 ## <a name="change-devtools-placement"></a>更改 DevTools 放置
 
-请参阅[更改 DevTools 放置位置（取消停靠，停靠到底部，停靠到左侧）](./placement.md)。
+请参阅[更改 DevTools 放置位置（取消停靠，停靠到底部，停靠到左侧）](placement.md)。
 
 :::image type="content" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="取消停靠的 DevTools。" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
 
@@ -94,7 +94,7 @@ ms.locfileid: "12348254"
 <!-- ====================================================================== -->
 ## <a name="color-themes"></a>颜色主题
 
-请参阅 [将颜色主题应用到 DevTools](./theme.md)。
+请参阅 [将颜色主题应用到 DevTools](theme.md)。
 
 :::image type="content" source="./media/customize-theme-setting.png" alt-text="选择其他颜色主题。" lightbox="./media/customize-theme-setting.png":::
 
@@ -102,7 +102,7 @@ ms.locfileid: "12348254"
 <!-- ====================================================================== -->
 ## <a name="restore-default-settings"></a>还原默认设置
 
-若要还原默认主题、放置位置、工具**** > 顺序和任何其他自定义设置，请选择"设置**默认值** > 和**刷新"**。
+若要还原默认主题、位置、工具**** > 顺序和任何其他自定义设置，请选择"设置**默认值** > 和**刷新"**。
 
 :::image type="content" source="../media/restore-default-settings.png" alt-text="还原默认设置。" lightbox="../media/restore-default-settings.png":::
 

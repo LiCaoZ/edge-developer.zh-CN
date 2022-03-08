@@ -1,15 +1,21 @@
 ---
 title: 扩展概念和体系结构
-description: 构建扩展Microsoft Edge和核心概念的体系结构。
+description: 扩展Microsoft Edge和构建扩展的核心概念。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/07/2021
+ms.openlocfilehash: 48b2d460bcd95b51d69c18c20aae53a583ad1d0a
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430225"
 ---
 # <a name="extension-concepts-and-architecture"></a>扩展概念和体系结构
 
-本文介绍有关构建扩展Microsoft Edge的概念。  请继续操作，了解多选项卡浏览器如何工作。
+本文介绍有关生成扩展Microsoft Edge的概念。  请继续操作，了解多选项卡浏览器如何工作。
 
 扩展Microsoft Edge*是*一个小程序，可添加或修改 Microsoft Edge。  有关简介，请参阅[扩展Microsoft Edge概述](../index.md)。
 
@@ -47,7 +53,7 @@ ms.date: 01/07/2021
 
 ### <a name="extension-web-server-bundle"></a>扩展 Web 服务器捆绑包
 
-扩展是 Web 资源的捆绑包。  Web 资源类似于你向 Web 开发人员 (Web) 其他资源。  生成扩展时，将 Web 资源捆绑到 zip 文件中。
+扩展是 Web 资源的捆绑包。  Web 资源类似于你向 Web 服务器 (Web 开发人员) 其他资源。  生成扩展时，将 Web 资源捆绑到 zip 文件中。
 
 zip 文件包括 HTML、CSS、JavaScript 和图像文件。  zip 文件的根中需要另外一个文件。  另一个文件是名为 的清单文件 `manifest.json`。  清单文件是扩展的蓝图，包括扩展版本、标题、运行扩展所需的权限等。
 
@@ -71,4 +77,4 @@ Web 服务器包含 Web 捆绑包。  浏览器导航到服务器上 URL，并�
 <!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 
-有关扩展入门的信息，请参阅创建 [扩展教程第 1 部分](./part1-simple-extension.md)。
+有关扩展入门的信息，请参阅创建 [扩展教程第 1 部分](part1-simple-extension.md)。

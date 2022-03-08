@@ -8,12 +8,12 @@ ms.prod: microsoft-edge
 no-loc:
 - Enable new font editor tool within the Styles pane
 ms.date: 03/11/2021
-ms.openlocfilehash: db30c2a7880cc9a0df0a389493a2cad085673296
-ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.openlocfilehash: b10331f836f8784081d862104644531c5242b200
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "12346286"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431744"
 ---
 # <a name="edit-css-font-styles-and-settings-in-the-styles-pane"></a>在“样式”窗格中编辑 CSS 字体样式和设置
 
@@ -24,11 +24,13 @@ ms.locfileid: "12346286"
 *  字体 **系列** 选择器。
 *  **CSS 属性**编辑器。
 
-网页版式是用户体验的重要组成部分。  希望确保字体遵循公司品牌准则，并确保内容在各种设备上按预期方式显示。  必须使用大小和线条高度让文本更易于阅读。  用户可以调整字体大小以满足个人需求。  对于特定字体在用户设备上不可用的情况，你应该提供回退字体选项。
+网页版式是用户体验的重要组成部分。  希望确保字体遵循公司品牌准则，并确保内容在各种设备上按预期方式显示。  必须使用大小和线条高度让文本更易于阅读。  用户可以调整字体大小以满足个人需求。
+
+对于特定字体在用户设备上不可用的情况，你应该提供回退字体选项。
 
 近年来，CSS 为版式提供了更好的支持。  有数十种不同的 CSS 单位可用于定义文本大小。  有几个 CSS 属性可用于控制字体大小、间距、行高和其他排版功能。
 
-目前，["样式"](../experimental-features/index.md#enable-new-font-editor-tool-within-the-styles-pane)窗格功能中的"启用新字体编辑器"工具是实验性的，你需要为开发人员工具Microsoft Edge[该工具](../experimental-features/index.md#turning-an-experiment-on-or-off)。
+目前，["样式"](../experimental-features/index.md#enable-the-font-editor-tool-within-the-styles-pane)窗格功能中的"启用新字体编辑器"工具是实验性的，你需要为开发人员工具Microsoft Edge[该工具](../experimental-features/index.md#turning-an-experiment-on-or-off)。
 
 " **样式"窗格中** 的任何 CSS（字体定义或内联样式）都有"字体 **编辑器"** 图标。  若要打开可视字体 **编辑器，** 请单击" **字体编辑器"** 图标。
 

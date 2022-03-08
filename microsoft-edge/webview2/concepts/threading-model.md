@@ -1,5 +1,5 @@
 ---
-title: WebView2 的线程模型
+title: WebView2 应用的线程模型
 description: 在 WebView2 线程模型中，必须在具有消息等待的 UI 线程上创建 WebView2。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,18 +7,18 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 09/21/2021
-ms.openlocfilehash: 5f5e3c5013bd711ee2d4f796af1f4a14aee1356c
-ms.sourcegitcommit: ae41e2c0ca42fb7eac73824c828305c7b13b4203
+ms.openlocfilehash: 95b2205028ac97e717bf3a371ddac13c3b44018b
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "12345777"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430113"
 ---
-# <a name="threading-model-for-webview2"></a>WebView2 的线程模型
+# <a name="threading-model-for-webview2-apps"></a>WebView2 应用的线程模型
 
 支持的平台：Win32、Windows Forms、WinUI、WPF。
 
-WebView2 控件基于组件对象模型 [ (COM) ](/windows/win32/com/the-component-object-model) 并且必须在单个线程的 Thread ([STA) ](/windows/win32/com/single-threaded-apartments) 上运行。
+WebView2 控件基于组件对象模型 [ (COM) ](/windows/win32/com/the-component-object-model) 并且必须在单个线程的 Sta ([STA) ](/windows/win32/com/single-threaded-apartments) 上运行。
 
 
 <!-- ====================================================================== -->
@@ -92,7 +92,7 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 
 ### <a name="deferrals-in-c"></a>C 中的延迟#
 
-在 C# `Deferral` 中时，最佳做法是使用 块 `using` 。 即使 `using` 块 `Deferral` 中间抛出异常，块也可确保 完成 `using` 。 `Complete`如果相反，你有代码可显式调用 ，`Complete`但在调用发生前会引发异常，延迟将等到垃圾回收器最终收集和处理延迟后一段时间才会完成。 在这期间，WebView2 将等待应用代码处理事件。
+在应用程序 `Deferral` C#时，最佳做法是使用它和 块 `using` 。 即使 `using` 块 `Deferral` 中间抛出异常，块也可确保 完成 `using` 。 `Complete`如果相反，你有代码可显式调用 ，`Complete`但在调用发生前会引发异常，延迟将等到垃圾回收器最终收集和处理延迟后一段时间才会完成。 在这期间，WebView2 将等待应用代码处理事件。
 
 例如，不要`Complete``WebResourceRequested`执行以下操作，因为如果在调用 前出现异常，该事件不会被视为"handled"，并阻止 WebView2 呈现该 Web 内容。
 

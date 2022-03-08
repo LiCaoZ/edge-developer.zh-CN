@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
+ms.openlocfilehash: b0938e693e18e840df1720a7346be9cf6bf26d02
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431380"
 ---
 # <a name="interact-with-the-dom-using-the-console"></a>使用控制台与 DOM 交互
 
@@ -17,7 +23,7 @@ ms.date: 04/13/2021
 
 引用网页的标题：
 
-1. 打开 DevTools **控制台**。  若要从网页中执行此操作，可以按 `Control`++`Shift``J` (Windows、Linux) 或`J` `Command`+`Option`+ (macOS) 。
+1. 打开 DevTools **控制台**。  若要从网页中执行此操作，可以按 `Ctrl`++`Shift``J` (Windows、Linux) 或`J` `Command`+`Option`+ (macOS) 。
 
 1. 在控制台中键入或粘贴以下 **代码**，然后按 `Enter`：
 
@@ -37,7 +43,7 @@ ms.date: 04/13/2021
 
 可以从控制台操作 **网页，如下所示**。  本示例使用控制台在 DOM 中设置一个值，以影响网页样式：在页眉周围添加绿色边框。
 
-1. 按`Control`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  控制台将在 DevTools 中的当前网页旁边打开。
+1. 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  控制台将在 DevTools 中的当前网页旁边打开。
 
 1. 将以下代码粘贴到**控制台：**
 
@@ -105,7 +111,7 @@ ms.date: 04/13/2021
 
 控制台 `$` 中具有特殊 **功能**，你可能从 jQuery 中记住这一点。
 
-*  `$_` 存储最后一个命令的结果。  因此，如果你键入 并 `2 + 2` 按 `Enter`，然后键入 ， `$_`控制台 **将显示** `4`。
+*  `$_` 存储最后一个命令的结果。  因此，如果你键入 并 `2+2` 按 `Enter`，然后键入 ， `$_`控制台 **将显示** `4`。
 
 *  `$0` 是 `$4` 最后检查的元素的堆栈。  `$0` 始终是最新的。  因此，在上一示例中，只需选择 **Inspect** `$0.textContent = "My Playground"` 工具中的 元素并键入 ，以获得相同的效果。
 
@@ -116,7 +122,7 @@ ms.date: 04/13/2021
 
 ### <a name="example-extracting-all-links-from-a-page-as-a-sortable-table"></a>示例：从页面中提取所有链接，作为可排序表
 
-1. 输入以下代码，该代码检索网页中的所有链接，然后将这些链接显示为可排序表，以复制并粘贴 (例如，粘贴到Excel) ：
+1. 输入以下代码，该代码检索网页中的所有链接，然后将链接显示为可排序表，以将 (复制并粘贴到Excel) ：
 
    ```javascript
    console.table($$('a'),['href','text']);

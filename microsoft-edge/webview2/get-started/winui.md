@@ -1,5 +1,5 @@
 ---
-title: 'WinUI 3 中的 WebView2 (Windows App SDK) '
+title: WinUI 3 中的 WebView2 入门 (Windows App SDK) 应用
 description: 适用于 WinUI 3 的 WebView2 (Windows App SDK) 指南。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,38 +7,67 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 11/05/2021
-ms.openlocfilehash: 841dc43c6ce98e4e3bd47f943d6f3e702eaf3798
-ms.sourcegitcommit: ae41e2c0ca42fb7eac73824c828305c7b13b4203
+ms.openlocfilehash: 4ea27866af6b7f613a85c25e5dd7e8ab1b0eb031
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "12345903"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432501"
 ---
-# <a name="get-started-with-webview2-in-winui-3-windows-app-sdk"></a>WinUI 3 中的 WebView2 (Windows App SDK) 
+# <a name="get-started-with-webview2-in-winui-3-windows-app-sdk-apps"></a>WinUI 3 中的 WebView2 入门 (Windows App SDK) 应用
 
-本文将开始在 WinUI 3 和 App SDK (Windows创建第一个 WebView2) 。 了解 [WebView2 的主要功能](../index.md)。 有关各个 API 详细信息，请参阅 [API 参考](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)。
+本文介绍了如何设置开发工具并创建适用于 WinUI 3 (Windows App SDK) 的初始 WebView2 应用，并一直了解 WebView2 概念。
 
 
-<!-- ====================================================================== -->
-## <a name="step-0---set-up-the-development-environment"></a>步骤 0 - 设置开发环境
-
-1. 按照设置开发环境的步骤 1-4 [](/windows/apps/project-reunion/set-up-your-development-environment) 安装 Visual Studio、配置 NuGet 程序包源并安装 Windows App SDK Extension for Visual Studio。
-
-1. 安装安装在 Windows 10 版本 1803 [](https://www.microsoftedgeinsider.com/download) (版本 17134 或更高版本Microsoft Edge [WebView2](https://developer.microsoft.com/microsoft-edge/webview2) 运行时或任何) 渠道。  有关更新或Windows 10，请参阅 Windows [Update： FAQ](https://support.microsoft.com/help/12373)。
-
-1. 若要访问开发人员特定的所有Visual Studio功能，请打开[开发人员模式](/windows/uwp/get-started/enable-your-device-for-development)。
+* 有关入门示例，GitHub：[WinUI3 (WinUI3_GettingStarted/WinUI_Sample.sln 中的 WebView2) ](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/GettingStartedGuides/WinUI3_GettingStarted/README.md)
 
 
 <!-- ====================================================================== -->
-## <a name="step-1---create-the-project"></a>步骤 1 - 创建项目
+## <a name="step-1---install-visual-studio-and-the-windows-app-sdk"></a>步骤 1 - 安装 Visual Studio 和 Windows App SDK
 
-从包含单个主窗口的基本桌面项目开始。
+即使已安装Visual Studio，请阅读以下页面，并可能更新软件。
+
+1. 在新的窗口或选项卡中，打开 [Windows App SDK](/windows/apps/windows-app-sdk/set-up-your-development-environment) 的"安装工具"页面，然后按照该页上的步骤安装 Microsoft Visual Studio，如 Visual Studio 2022。
+<!-- clickable: https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/set-up-your-development-environment -->
+
+1. 如果需要，请参阅设置 _WebView2_ 的开发人员Visual Studio中的[](../how-to/machine-setup.md#install-visual-studio)安装工具。
+
+从该页面返回并继续以下步骤。
+
+
+**打开开发人员模式：**
+
+1. 当Visual Studio在本文的步骤中的某些时间点打开时，系统可能会提示你为计算机打开开发人员模式。  有关详细信息，请参阅为设备启用开发，[](/windows/apps/get-started/enable-your-device-for-development)请参阅生成桌面应用以_开发Windows_。
+
+
+<!-- ====================================================================== -->
+## <a name="step-2---install-a-preview-channel-of-microsoft-edge"></a>步骤 2 - 安装预览频道Microsoft Edge
+
+1. 安装 [WebView2](https://developer.microsoft.com/microsoft-edge/webview2) 运行时或任何 [Microsoft Edge 预览](https://www.microsoftedgeinsider.com/download)频道 (Beta、Dev 或 Canary) ，安装在 Windows 10 版本 1803 (版本 17134) 或更高版本上。
+
+从该页面返回并继续以下步骤。
+
+<!--
+Or, install the WebView2 Runtime, as follows:
+
+1. In a new window or tab, see [Install the WebView2 Runtime](../how-to/machine-setup.md#install-the-webview2-runtime) in _Set up your Dev environment for WebView2_.
+
+Return here and continue with the steps below.
+-->
+
+
+<!-- ====================================================================== -->
+## <a name="step-3---create-the-project-in-visual-studio"></a>步骤 3 - 在 Visual Studio
+
+若要创建 WebView2 应用，请首先创建一个基本桌面项目，以创建包含单个主窗口的桌面应用：
+
+1. 打开Visual Studio (，Visual Studio Code) 。
 
 1. 在Visual Studio中，单击 **"新建项目"**。
 
 1. 在项目筛选器菜单中，选择"C# **"**。 **Windows** 和 **WinUI**。
 
-   :::image type="content" source="./media/winui-getting-started-selections.png" alt-text="使用项目创建一个新的 WinUI Visual Studio。" lightbox="./media/winui-getting-started-selections.png":::
+   ![使用项目创建一个新的 WinUI Visual Studio。](media/winui-getting-started-selections.png)
 
 1. Click **Blank App， Packaged (WinUI in Desktop) ** > **Next**.
 
@@ -50,41 +79,58 @@ ms.locfileid: "12345903"
 
 1. 在 **"新建通用Windows平台Project**中，选择以下值：
 
-   *  **目标版本**：**Windows 10版本 1903 (版本 18362 **) 或更高版本
+   *  **目标版本**：**Windows 10版本 1903 (版本 18362 **) 或更高版本。
 
-   *  **最低版本**：**Windows 10版本 1803 (版本 17134) **
+   *  **最低版本**：**Windows 10版本 1803 (版本 17134) **。
 
 1. 单击“确定”****。
 
    "新建通用Windows平台Project"对话框，包含"目标版本"和"最低版本"的选定值：
 
-   :::image type="content" source="./media/winui-getting-started-project-type.png" alt-text="&quot;新建通用Windows平台Project&quot;对话框，包含&quot;目标版本&quot;和&quot;最低版本&quot;的选定值。" lightbox="./media/winui-getting-started-project-type.png":::
+   !["新建通用Windows平台Project"对话框，包含"目标版本"和"最低版本"的选定值。](media/winui-getting-started-project-type.png)
        
    解决方案资源管理器显示生成的两个新项目：
 
    *  **你的项目名称 (桌面) **。  桌面项目包含你的应用的代码。  该文件 `App.xaml.cs` 定义一个 `Application` 表示应用实例的类。 该文件 `MainWindow.xaml.cs` 定义一个 `MainWindow` 类，该类表示应用实例显示的主窗口。  这些类派生自 `Microsoft.UI.Xaml` WinUI 命名空间中的类型。
 
-   *  **你的项目名称 (包) **。  包项目是一Windows应用程序打包Project，配置为将应用构建到 MSIX 包中进行部署。 该项目包含应用的程序包清单，并且默认情况下是解决方案的启动项目。  有关详细信息，请参阅在 windows 中为 [MSIX](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net) 打包设置桌面Visual Studio和程序包清单[架构参考Windows 10](/uwp/schemas/appxpackage/uapmanifestschema/schema-root)。
+   *  **你的项目名称 (包) **。  包项目是一Windows应用程序打包Project，配置为将应用构建到 MSIX 包中进行部署。 该项目包含应用的程序包清单，并且默认情况下是解决方案的启动项目。  有关详细信息，请参阅在 Visual Studio 中为 [MSIX](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net) 打包设置桌面应用程序和 [Windows 10。](/uwp/schemas/appxpackage/uapmanifestschema/schema-root)
 
 1. 在解决方案资源管理器中，打开 `MainWindow.xaml`。
 
-1. Select **FileSave** >  **All (Ctrl+Shift+S) ** to save the project.
+1. Select **FileSave** **** >  All () `S` `Ctrl`+`Shift`+to save the project.
 
 1. 按 **F5** 生成并运行项目。
 
 
+<!-- maintenance link; keep: main copy:
+[Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
+-->
 <!-- ====================================================================== -->
-## <a name="step-2---add-a-webview2-control-to-your-project"></a>步骤 2 - 将 WebView2 控件添加到项目中
+## <a name="step-4---install-the-webview2-sdk"></a>步骤 4 - 安装 WebView2 SDK
+
+WebView2 SDK 在以上步骤中自动安装，因为它作为所安装的 WinUI 程序包的依赖项。  确认为项目安装了 WebView2 SDK，如下所示：
+
+1. 在**NuGet 程序包管理器**步骤中打开的"添加"复选框中，确保选中"包括**预发布"** 复选框。  搜索 **Microsoft.Web.WebView2** (预发布) 然后单击搜索框下方的卡片。  如果需要，请在右侧单击"安装 ("**** 或 **"** 更新) 按钮。
+
+如果需要，请参阅设置 WebView2 的开发人员环境中的安装 [WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) ，然后按照步骤操作。如果需要，请参阅安装 _WebView2_ SDK。  从该页面返回并继续以下步骤。
+
+
+<!-- ====================================================================== -->
+## <a name="step-5---add-a-webview2-control-to-your-project"></a>步骤 5 - 将 WebView2 控件添加到项目中
 
 将 和 `MainWindow.xaml` `MainWindow.xaml.cs` 文件编辑到示例应用的 WebView2 控件，如下所示。
 
-1. 在 文件中 `MainWindow.xaml` ，若要添加 WebView2 XAML 命名空间，在 标记内插入以下 `<Window/>` 行：
+1. 在Visual Studio"资源管理器"中`MainWindow.xaml`，选择在代码编辑器中打开它。
+
+   添加 WebView2 XAML 命名空间，如下所示：
+
+1. 在 文件中 `MainWindow.xaml` ，在 标记内插入以下 `<Window/>` 行：
 
    ```xml
    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
    ```
 
-   请确保 中的代码 `MainWindow.xaml` 类似于以下代码：
+   请确保 中的代码 `MainWindow.xaml` 类似于以下内容：
 
    ```xml
    <Window
@@ -105,22 +151,22 @@ ms.locfileid: "12345903"
    </Window>
    ```
 
-1. 若要添加 WebView2 控件，请将 `<StackPanel>` 标记替换为以下代码。  属性 `Source` 设置 WebView2 控件中显示的初始 URI。
+1. 若要添加 WebView2 控件，请将 `<StackPanel>` 标记替换为以下代码。  属性 `Source` 设置在 WebView2 控件中显示的初始 URI。
 
    ```xml
    <Grid>
 
       <Grid.RowDefinitions>
-         <RowDefinition Height="Auto" />
-         <RowDefinition Height="*" />
+         <RowDefinition Height="Auto"/>
+         <RowDefinition Height="*"/>
       </Grid.RowDefinitions>
       <Grid.ColumnDefinitions>
-         <ColumnDefinition Width="*" />
-         <ColumnDefinition Width="Auto" />
+         <ColumnDefinition Width="*"/>
+         <ColumnDefinition Width="Auto"/>
       </Grid.ColumnDefinitions>
 
       <controls:WebView2 x:Name="MyWebView"  Grid.Row="1" Grid.ColumnSpan="2"
-         Source="https://www.microsoft.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+         Source="https://www.microsoft.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 
    </Grid>
    ```
@@ -139,13 +185,13 @@ ms.locfileid: "12345903"
 
 具有 WebView2 控件的示例应用程序将显示 Microsoft 网站， https://www.microsoft.com:
 
-:::image type="content" source="./media/winui-getting-started-part-3.png" alt-text="示例应用显示 Microsoft 网站。" lightbox="./media/winui-getting-started-part-3.png":::
+![示例应用显示 Microsoft 网站。](media/winui-getting-started-part-3.png)
 
 
 <!-- ====================================================================== -->
-## <a name="step-3---add-navigation-controls"></a>步骤 3 - 添加导航控件
+## <a name="step-6---add-navigation-controls"></a>步骤 6 - 添加导航控件
 
-若要允许用户控制 WebView2 控件中显示的网页，请向示例应用添加地址栏，如下所示。
+若要允许用户控制 WebView2 控件中显示的网页，请向示例应用添加地址栏，如下所示：
 
 1. 在 `MainWindow.xaml`中，将以下代码粘贴 `<Grid>` 到包含 元素的元素 `WebView2` 中：
 
@@ -154,25 +200,25 @@ ms.locfileid: "12345903"
       <Button x:Name="myButton" Grid.Column="1" Click="myButton_Click">Go</Button>
    ```
 
-   请确保文件中 `<Grid>` 元素 `MainWindow.xaml` 与以下代码匹配：
+   请确保文件中 `<Grid>` 元素 `MainWindow.xaml` 与以下内容匹配：
 
    ```xml
    <Grid>
 
       <Grid.RowDefinitions>
-         <RowDefinition Height="Auto" />
-         <RowDefinition Height="*" />
+         <RowDefinition Height="Auto"/>
+         <RowDefinition Height="*"/>
       </Grid.RowDefinitions>
       <Grid.ColumnDefinitions>
-         <ColumnDefinition Width="*" />
-         <ColumnDefinition Width="Auto" />
+         <ColumnDefinition Width="*"/>
+         <ColumnDefinition Width="Auto"/>
       </Grid.ColumnDefinitions>
 
       <TextBox Name="addressBar" Grid.Column="0"/>
       <Button x:Name="myButton" Grid.Column="1" Click="myButton_Click">Go</Button>
 
       <WebView2 x:Name="MyWebView"  Grid.Row="1" Grid.ColumnSpan="2"
-         Source="https://www.microsoft.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+         Source="https://www.microsoft.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 
    </Grid>
    ```
@@ -194,21 +240,29 @@ ms.locfileid: "12345903"
    }
    ```
 
-1. Select **FileSave** >  **All (Ctrl+Shift+S) ** to save the project.
+1. Select **FileSave** **** >  All () `S` `Ctrl`+`Shift`+to save the project.
 
 1. 按 **F5** 生成并运行项目。
 
 1. 在地址栏中输入新 URL，然后选择"转到 **"**。  例如，输入 `https://www.bing.com`。
 
-   请确保在地址栏中输入完整 URL。  `ArgumentException` 如果 URL 不以 或 开始，则会引发 `http://` 异常 `https://`。
-
    示例应用显示必应网站。 地址栏显示 URL https://www.bing.com:
 
-   :::image type="content" source="./media/winui-getting-started-bing.png" alt-text="示例应用显示必应网站。" lightbox="./media/winui-getting-started-bing.png":::
+   ![示例应用显示必应网站。](media/winui-getting-started-bing.png)
+
+1. 在地址栏中输入不完整的 URL，例如 `bing.com`。
+
+   引发`ArgumentException`异常，因为 URL 不以 或 `http://` 作为起始。`https://`
+
+1. 关闭应用。
 
 
+<!--
+maintenance link (keep)
+* [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
+-->
 <!-- ====================================================================== -->
-## <a name="step-4---navigation-events"></a>步骤 4 - 导航事件
+## <a name="step-7---navigation-events"></a>步骤 7 - 导航事件
 
 在此部分中，您将添加用于导入 WebView2 核心库的代码。
 
@@ -229,7 +283,7 @@ ms.locfileid: "12345903"
    > [!NOTE]
    > 如果发生 HTTP 重定向，则一行中 `NavigationStarting` 有多个事件。
     
-   有关详细信息，请参阅 [WebView2 的导航事件](../concepts/navigation-events.md)。
+   有关详细信息，请参阅 [WebView2 应用的导航事件](../concepts/navigation-events.md)。
     
    发生错误时，将引发以下事件，并显示错误网页：
 
@@ -237,9 +291,9 @@ ms.locfileid: "12345903"
    * `ContentLoading`
    * `HistoryChanged`
 
-   作为如何使用事件的示例 `NavigationStarting` ，请注册用于取消任何非 HTTPS 请求的处理程序。
+   作为如何使用事件的示例 `NavigationStarting` ，请注册用于取消任何非 HTTPS 请求的处理程序，如下所示：
 
-1. 在 `MainWindow.xaml.cs`中，修改构造函数以注册 `EnsureHttps`，并添加 `EnsureHttps` 函数，以便它匹配以下代码：
+1. 在 `MainWindow.xaml.cs`中，修改构造函数以注册 `EnsureHttps`，并添加 `EnsureHttps` 函数，以便其与以下内容匹配：
 
    ```csharp
    public MainWindow()
@@ -262,27 +316,36 @@ ms.locfileid: "12345903"
    }
    ```
 
-1. Select **FileSave** >  **All (Ctrl+Shift+S) ** to save the project.
+1. Select **FileSave** **** >  All () `S` `Ctrl`+`Shift`+to save the project.
 
 1. 按 **F5** 生成并运行项目。
 
-1. 确保阻止导航到 HTTP 网站，并且允许 HTTPS 网站导航。
+1. 输入 HTTP URL，例如 `http://microsoft.com`。
 
-> [!NOTE]
-> WinRT `CoreWebView2` 对象可能不适用于 WebView2 API 版本。  [WebView2 规范](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)列出了哪些 API 可用于 WebView2。
+   导航被阻止到 HTTP 网站。
+
+1. 输入 HTTPS URL，例如 `https://microsoft.com`。
+
+   HTTPS 网站允许导航。
+
+
+### <a name="winrt-corewebview2-object-availability"></a>WinRT CoreWebView2 对象可用性
+
+WinRT `CoreWebView2` 对象可能不适用于 WebView2 API 版本。  [WebView2 规范](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)列出了哪些 API 可用于 WebView2。
 
 
 <!-- ====================================================================== -->
-## <a name="step-5---scripting"></a>步骤 5 - 脚本
+## <a name="step-8---scripting"></a>步骤 8 - 脚本
 
 在运行时，可以使用主机应用将 JavaScript 代码注入 WebView2 控件。 你可以任务 WebView2 运行任意 JavaScript 或添加初始化脚本。 在删除 JavaScript 之前，注入的 JavaScript 适用于所有新的顶级文档和任何子框架。 注入的 JavaScript 以特定计时运行，以：
 
 *  创建全局对象后运行注入的 JavaScript。
+
 *  运行注入的 JavaScript，然后再运行 HTML 文档中包含的任何其他脚本。
 
-例如，添加在用户尝试打开非 HTTPS 网站时发送通知的脚本，如下所示：
+例如，接下来，添加在用户尝试打开非 HTTPS 网站时发送通知的脚本。  为此，需要将脚本注入到使用 [ExecuteScriptAsync 的 Web 内容中](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync)。
 
-1. 修改 函数 `EnsureHttps` 以将脚本注入到使用 [ExecuteScriptAsync 的 Web 内容中](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync)。
+1. 按如下所示 `EnsureHttps` 修改 函数：
 
    ```csharp
    private void EnsureHttps(WebView2 sender, CoreWebView2NavigationStartingEventArgs args)
@@ -300,15 +363,15 @@ ms.locfileid: "12345903"
    }
    ```
 
-1. Select **FileSave** >  **All (Ctrl+Shift+S) ** to save the project.
+1. Select **FileSave** **** >  All () `S` `Ctrl`+`Shift`+to save the project.
 
 1. 按 **F5** 生成并运行项目。
 
-1. 尝试打开非 HTTPS 网站，如 `http://www.bing.com`。 确保应用在您尝试打开非 HTTPS 网站时显示警告。
+1. 尝试打开非 HTTPS URL，例如 `http://www.bing.com`。
 
-示例应用 WebView2 控件显示非 HTTPS 网站的警报对话框。  警报对话框显示文本，指出非 HTTPS 站点不安全，请尝试 HTTPS 链接。
+   应用的 WebView2 控件显示非 HTTPS 网站的警报对话框，指出非 HTTPS `uri` 不安全：
 
-:::image type="content" source="./media/winui-getting-started-script.png" alt-text="示例应用 WebView2 控件显示非 HTTPS 网站的警报对话框。" lightbox="./media/winui-getting-started-script.png":::
+   ![示例应用 WebView2 控件显示非 HTTPS 网站的警报对话框。](media/winui-getting-started-script.png)
 
 恭喜！你生成了第一个 WebView2 应用！
 
@@ -316,13 +379,21 @@ ms.locfileid: "12345903"
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-* [管理用户数据文件夹](../concepts/user-data-folder.md)
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - 有关 WebView2 功能的初始 developer.microsoft.com。
 
-
-<!-- ====================================================================== -->
-## <a name="next-steps"></a>后续步骤
-
-* [WebView2 开发的最佳做法](../concepts/developer-guide.md)
-* [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。
+本地页面：
+* [WebView2 Microsoft Edge](../index.md)简介 - 功能概述。
 * [另请参阅](../index.md#see-also) _WebView2 Microsoft Edge简介_。
-* [问题 - microsoft-ui-xaml 存储库](https://github.com/microsoft/microsoft-ui-xaml/issues) - 输入特定于 WinUI 的功能请求或 Bug。
+* [管理用户数据文件夹](../concepts/user-data-folder.md)
+* [WebView2 的示例代码](../code-samples-links.md) - 存储库 `WebView2Samples` 指南。
+* [WebView2 应用的开发最佳做法 开发最佳做法](../concepts/developer-guide.md)
+
+GitHub：
+* [WinUI3 中的 WebView2 入门](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinUI3_GettingStarted#readme)
+* [Spec：WebView2 Xaml 控件](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md) - WebView 控件的 WinUI 3.0 版本。
+* [microsoft-ui-xaml 存储库>](https://github.com/microsoft/microsoft-ui-xaml/issues) 问题 - 输入特定于 WinUI 的功能请求或 Bug。
+
+<!--
+state why this link is in this tutorial page and what its relevance is, or else delete:
+* [Windows Update: FAQ](https://support.microsoft.com/help/12373).
+-->

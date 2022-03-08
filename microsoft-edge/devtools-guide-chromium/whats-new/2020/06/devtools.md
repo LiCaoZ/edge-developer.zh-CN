@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: d2b2b75a17a63379c7005bb499bc2ae5c60fea35
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432381"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -20,13 +26,13 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="whats-new-in-devtools-microsoft-edge-85"></a>DevTools (Microsoft Edge 85 中的新增) 
+# <a name="whats-new-in-devtools-microsoft-edge-85"></a>DevTools 85 (Microsoft Edge中的新增) 
 
 
 <!-- ====================================================================== -->
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告
 
-以下各节列出了你可能从 DevTools 团队中错过Microsoft Edge通知。  查看通知以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要随时了解开发人员工具中所有最新且最最好的功能，请下载 [Microsoft Edge](https://www.microsoftedgeinsider.com/download/) 预览频道，并按照 [Twitter 上的 Microsoft Edge DevTools 团队执行](https://twitter.com/EdgeDevTools)。
+以下各节列出了你可能从 DevTools 团队中错过Microsoft Edge通知。  查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要随时了解开发人员工具中所有最新且最重要的功能，请下载 [Microsoft Edge 预览](https://www.microsoftedgeinsider.com/download/)频道，并按照 [Twitter 上的 Microsoft Edge DevTools 团队进行跟踪](https://twitter.com/EdgeDevTools)。
 
 ### <a name="css-grid-debugging-features"></a>CSS 网格调试功能
 
@@ -58,7 +64,7 @@ Chromium问题 [#1047356](https://crbug.com/1047356)
 :::image type="content" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="网络控制台面板。" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
 
 > [!TIP]
-> 若要在 **顶部** 设备面板 (显示网络) [而不是 DevTools 箱](../../../customize/index.md#drawer)，请参阅在面板之间 [移动工具](#move-tools-between-panels)。
+> 若要在**顶部**和顶部 (面板) 网络控制台，请参阅在面板之间移动[工具](#move-tools-between-panels)。[](../../../customize/index.md#drawer)
 
 > [!NOTE]
 > 若要启用实验，请参阅打开或关闭 [实验](../../../experimental-features/index.md#turning-an-experiment-on-or-off) ，并选中"启用网络控制台 **"旁边的复选框**。
@@ -98,7 +104,7 @@ Chromium问题 [#1070378](https://crbug.com/1070378)
 
 :::image type="content" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能。":::
 
-通常，仅在 DevTools 的顶部**** (打开元素) 网络等工具。****  同样，工具（如 **3D 视图**和问题****）可能只能在 DevTools (底部的) 箱中打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。
+通常，只能在 DevTools 的顶部**** (打开元素和网络) 等工具。****  同样，**3D 视图**和问题等工具可能**** 只能在 DevTools (底部的) 箱中打开。  现在，你能够通过在顶部和底部面板之间移动工具来自定义 DevTools 布局。
 
 :::image type="content" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="在面板之间移动工具。" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
 
@@ -109,7 +115,7 @@ Chromium问题 [#897944](https://crbug.com/897944)
 
 ### <a name="improved-initiator-tooltip-in-the-network-panel"></a>网络面板中改进的发起人工具提示
 
-在 Microsoft Edge 83 和 84 中，"发起者"列的工具提示显示在使用水平滚动条显示的"网络日志"中，显示资源请求的原因。[](../../../network/index.md#log-network-activity)  你仅能够在工具提示中水平滚动来显示发起请求的调用堆栈。
+在 Microsoft Edge 83 和 84 中，"发起者"列的工具提示显示在使用水平滚动条显示的"网络日志"中，显示资源请求的原因[](../../../network/index.md#log-network-activity)。  你仅能够在工具提示中水平滚动来显示发起请求的调用堆栈。
 
 :::image type="content" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="84 中的发起Microsoft Edge提示。" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
 
@@ -127,11 +133,11 @@ Chromium问题 [#1069404](https://crbug.com/1069404)
 
 ### <a name="style-editing-for-css-in-js-frameworks"></a>CSS-in-JS 框架的样式编辑
 
-现在 **，"** 样式"窗格可以更好地支持使用 [CSS 对象模型和 CSSOM (API 创建的) ](https://drafts.csswg.org/cssom) 样式。  许多 CSS-in-JS 框架和库在构建样式的底层使用 CSSOM API。
+现在 **，"** 样式"窗格对使用 [CSS 对象模型和 CSSOM ](https://drafts.csswg.org/cssom) api 创建的 (具有) 支持。  许多 CSS-in-JS 框架和库在构建样式的底层使用 CSSOM API。
 
 现在，您可以使用可构造样式表编辑在 JavaScript [中添加的样式](https://wicg.github.io/construct-stylesheets/)。  可构造的样式表是使用 Shadow DOM 时创建和分发可重用样式 [的一种新方式](https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM)。
 
-例如，使用 `h1` CSSOM API (`CSSStyleSheet` 的) 以前不可编辑。  样式现在在"样式"面板中 **可** 编辑。
+例如，使用 `h1` CSSOM API `CSSStyleSheet` (样式) 以前不可编辑。  样式现在在"样式"面板中 **可** 编辑。
 
 :::image type="content" source="../../media/2020/06/css-in-js.msft.png" alt-text="将随 CSSStyleSheet 一起添加的 h1 样式的背景属性从粉色更改为浅色。" lightbox="../../media/2020/06/css-in-js.msft.png":::
 
@@ -149,7 +155,7 @@ Lighthouse 6.0 向报告引入了三个新指标：最大内容量 画图 (LCP) 
 
 Chromium问题 [#772558](https://crbug.com/772558)
 
-#### <a name="first-meaningful-paint-deprecation"></a>第一画图弃用
+#### <a name="first-meaningful-paint-deprecation"></a>First Meaningful 画图弃用
 
 First Meaningful 画图 (FMP) is deprecated in Lighthouse 6.0.  FMP 也从"性能" **面板中删除** 。  **最大的 Contentful 画图** FMP 的建议替代项。  <!--For an explanation of why it was deprecated, see [First Meaningful Paint](https://web.dev/first-meaningful-paint).  -->
 
@@ -168,7 +174,7 @@ DevTools 现在更好地支持一些最新的 JavaScript 语言功能：
 
 *  Nullish 并 [集运算符的语法突出显示](https://v8.dev/features/nullish-coalescing)。  DevTools 现在可以在"源"面板中正确打印空的"并 **排"运算符** 。
 
-Chromium[问题1073903](https://crbug.com/1073903)、[#1083214](https://crbug.com/1083214)、[#1083797](https://crbug.com/1083797)
+Chromium[问题1073903](https://crbug.com/1073903)、#[1083214](https://crbug.com/1083214)、[#1083797](https://crbug.com/1083797)
 
 ### <a name="new-app-shortcut-warnings-in-the-manifest-pane"></a>清单窗格中的新应用快捷方式警告
 
@@ -179,7 +185,7 @@ Chromium[问题1073903](https://crbug.com/1073903)、[#1083214](https://crbug.co
 " **清单** "窗格现在显示针对以下条件的警告。
 
 *  当应用快捷方式图标小于 96x96 像素时。
-*  当应用快捷方式图标和清单图标不 (，因为图标将被忽略) 。
+*  当应用快捷方式图标和清单图标不 (，因为图标在应用中) 。
 
 :::image type="content" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="应用快捷方式警告。" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
 
@@ -211,7 +217,7 @@ Chromium问题 [#800028](https://crbug.com/800028)
 
 #### <a name="ungroup-same-console-messages"></a>取消同一控制台消息的组
 
-控制台**控制台中的**组相似设置现在适用于重复消息。  以前，它只应用于类似的邮件。
+控制台**控制台中的**组设置现在适用于重复消息。  以前，它只应用于类似的邮件。
 
 例如，以前，DevTools `hello` 未取消对邮件进行分组，即使未取消选中" **组** 相似"。  现在， `hello` 邮件已取消组合。
 
@@ -245,7 +251,7 @@ Chromium问题 [#912581](https://crbug.com/912581)
 
 :::image type="content" source="../../media/2020/06/nav-timing.msft.png" alt-text="在性能工具中对齐导航计时。" lightbox="../../media/2020/06/nav-timing.msft.png":::
 
-`DOMContentLoaded`First 画图、First Contentful 画图 和 Largest Contentful 画图 事件更新为相对于导航的开始，这意味着计时与 报告的时间匹配`PerformanceObserver`。
+`DOMContentLoaded`First 画图、First Contentful 画图 和 Largest Contentful 画图 事件更新为相对于导航开始的时间，这意味着计时与 报告的时间匹配`PerformanceObserver`。
 
 Chromium问题 [#974550](https://crbug.com/974550)
 

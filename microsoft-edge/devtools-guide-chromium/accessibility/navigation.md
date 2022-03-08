@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 1cf2070f24c7733647edba0cbeb9d4b1bd181f18
-ms.sourcegitcommit: 2e0ec25e3cfc01b58fdddd5f4ac270632cb9b962
+ms.openlocfilehash: b3c278b0a59e74a8702e54d184e0900c0b0002af
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "12348234"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430563"
 ---
 <!-- Copyright Rob Dodson
 
@@ -28,21 +28,25 @@ ms.locfileid: "12348234"
    limitations under the License.  -->
 # <a name="navigate-devtools-with-assistive-technology"></a>使用辅助技术导航开发工具
 
-本文可帮助主要依赖辅助技术的用户（如屏幕阅读器）使用 [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md)。  DevTools 是内置于 Web 浏览器的一Microsoft Edge工具。
+本文通过键盘和屏幕阅读器等辅助技术帮助你使用 DevTools。  本指南将指导你完成最可访问的工具和选项卡，并突出显示你可能会遇到的问题。
+
+<!-- DevTools is a suite of web developer tools built into the Microsoft Edge browser. -->
 
 有关改善网页辅助功能的 DevTools 功能，请参阅辅助功能测试功能和使用 [DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)。[](reference.md)
 
-本指南将指导你完成最可访问的工具和选项卡，并突出显示你可能会遇到的问题。
 
-DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为 _panels_。) 工具组织到主工具栏和箱工具栏上的 [ARIA](https://www.w3.org/TR/wai-aria-1.1/#tablist) 选项卡列表中。
+### <a name="tabbed-tool-panels-containing-tabs-and-pages"></a>包含选项卡和页面的选项卡式工具面板
 
-以下是工具示例：
+有关选项卡、工具和面板的术语，请参阅 _DevTools_ 概述[](../overview.md#tabbed-tool-panels-containing-tabs-and-pages)中的包含选项卡和页面的选项卡式工具面板。
 
-*  元素 **工具** 允许你 [查看和更改 DOM 节点](../dom/index.md#navigate-the-dom-tree-with-a-keyboard) 或 [CSS](../css/index.md)。
+从技术上说，选项卡是 [ARIA 选项卡列表](https://www.w3.org/TR/wai-aria-1.1/#tablist)。
 
-*  控制台 **工具** 允许你读取 JavaScript 日志和实时编辑对象。  有关详细信息，请参阅控制台 [概述](../console/index.md)。
 
-在每个工具中，都有一组或多组选项卡。  例如， **Elements** 工具包含一组选项卡，包括 **Styles**、 **Event Listeners** 和 **Accessibility**。
+<!-- The following are examples of tools:
+
+*  The **Elements** tool lets you [view and change DOM nodes](../dom/index.md#navigate-the-dom-tree-with-a-keyboard) or [CSS](../css/index.md).
+
+*  The **Console** tool lets you read JavaScript logs and live-edit objects.  For more information, see [Console overview](../console/index.md). -->
 
 
 <!-- ====================================================================== -->
@@ -53,8 +57,32 @@ DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为 _pan
 
 <!-- ====================================================================== -->
 ## <a name="open-devtools"></a>打开开发工具
+<!-- keep sync'd:
+[Open DevTools](../overview.md#open-devtools) in _Overview of DevTools_
+[Open DevTools](accessibility/navigation.md#open-devtools) in _Navigate DevTools with assistive technology_
+-->
 
-若要开始，请参阅 [Open DevTools](../open/index.md)。  开发工具有多种打开方式，可以通过键盘快捷方式，也可通过菜单项将其打开。
+在Microsoft Edge中，可以使用鼠标或键盘以下列任一方式打开 DevTools。  打开哪个工具取决于打开 DevTools 的方式。
+
+**主要方法：**
+
+| 操作 | 生成工具 |
+|---|---|
+| 右键单击网页上的任何项目，然后选择"检查 **"**。 | 元素 **工具** ，扩展 DOM 树以显示右键单击的页面元素。 |
+| 按 `Ctrl`++`Shift``I` (Windows/Linux) 或 (`I` `Command`+`Option`+macOS) 。| 以前使用的工具或 **欢迎工具** 。 |
+| 按 `F12`。 | 以前使用的工具或 **欢迎工具** 。 |
+
+**其他方法：**
+
+| 操作 | 生成工具 |
+|---|---|
+| 在"Microsoft Edge"工具栏****![上，选择"设置" ("设置"更多](media/edge-settings-and-more-icon.png)工具"图标。) >**更多** >  工具""开发人员**工具"**。 | 以前使用的工具或 **欢迎工具** 。 |
+| 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。 | **控制台工具**。 |
+| 按`Ctrl`+`Shift`+`C`（Windows、Linux）或 `Command`+`Option`+`C` （macOS）。 | **元素工具**，扩展 DOM 树以显示`<body>`元素。 |
+| 按 `Shift`+`F10` 以打开右键单击菜单。  若要选择" **检查"** 命令，请按 `Up Arrow` ，然后按 `Enter`。 | **元素工具**，扩展 DOM 树以显示`<html>`元素。 |
+| 按 `Tab` 和 `Shift`+`Tab` 将焦点放在页面元素上。  然后按 `Shift`+`F10` 以打开右键单击菜单。  若要选择" **检查"** 命令，请按 `Up Arrow` ，然后按 `Enter`。 | 元素 **工具** ，扩展 DOM 树以显示聚焦的页面元素。 |
+
+<!-- /keep sync'd -->
 
 
 <!-- ====================================================================== -->
@@ -64,8 +92,8 @@ DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为 _pan
 
 ### <a name="navigate-by-keyboard"></a>使用键盘导航
 
-*  打开 DevTools 后，按 (Windows、Linux) +`]` `Command`或 (macOS) 将焦点移到主工具栏上的下一个工具。`Control`+`]`
-*  按 `Control`+`[` (Windows、Linux) 或 `Command`+`[` (macOS) 将焦点移到主工具栏上的上一个工具。
+*  打开 DevTools 后，按 (Windows、Linux) +`]` `Command`或 (macOS) 将焦点移到主工具栏上的下一个工具。`Ctrl`+`]`
+*  按 `Ctrl`+`[` (Windows、Linux) 或 `Command`+`[` (macOS) 将焦点移到主工具栏上的上一个工具。
 *  按 `Tab` 或 `Shift`+`Tab` 重复按，直到焦点移到主工具栏或箱工具栏的选项卡，然后使用箭头键在工具之间移动。
 
 #### <a name="known-issues"></a>已知问题
@@ -78,7 +106,7 @@ DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为 _pan
 
 若要选择特定工具，请使用命令 [菜单](../command-menu/index.md)。  在命令菜单中，工具称为面板_或__箱_项目。
 
-1. 打开 DevTools `Control``Shift``P`++后，按 (Windows、Linux) `Command``Shift`++`P` 或 (macOS) 打开**命令菜单**。
+1. 打开 DevTools `Ctrl``P``Shift`++后，按 (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开**命令菜单**。
 
    命令 **菜单** 是一个模糊搜索自动完成组合框。
 
@@ -91,7 +119,7 @@ DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为 _pan
 
 1. 打开“**命令菜单**”。
 
-1. 开始键入 ， `elements`选择"显示 **>"命令，** 然后按 `Enter`。
+1. 开始键入 ， `elements`选择"> **显示元素"** 命令，然后按 `Enter`。
 
 这样打开工具会将焦点放在工具的内容区域中。  对于 Elements **工具，焦点** 将移动到 **DOM 树中**。
 
@@ -125,7 +153,7 @@ DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为 _pan
 
 *  按 `Tab` 键在属性值之间移动。  当你听到"空格"时，你将位于空文本输入内，可以键入新的属性值。
 
-*  按 `Control`+`Enter` (Windows、Linux) 或 `Command`+`Enter` (macOS) 接受更改并听到元素的全部内容。
+*  按 `Ctrl`+`Enter` (Windows、Linux) 或 `Command`+`Enter` (macOS) 接受更改并听到元素的全部内容。
 
 #### <a name="known-issues"></a>已知问题
 
@@ -137,9 +165,9 @@ DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为 _pan
 
 *  按 `Tab` 键在属性值之间移动。  当你听到 元素的名称 `h2`时，例如 ，你位于文本输入内部，并且可以更改 元素的类型。
 
-*  按 `Control`+`Enter` (Windows、Linux) 或 `Command`+`Enter` (macOS) 接受更改。
+*  按 `Ctrl`+`Enter` (Windows、Linux) 或 `Command`+`Enter` (macOS) 接受更改。
 
-例如，当你`h3`+`Control``Enter`键入然后按 (Windows、Linux) +`Command``Enter` 或 (macOS) `h3` 时，元素的起始标记和结束标记会更改。
+例如，当你键入 **h3** `Ctrl`+`Enter` 然后按 (Windows、Linux) `Enter` `Command`+或 (macOS) `h3` 时，元素的开始标记和结束标记会更改。
 
 
 <!-- ====================================================================== -->
@@ -160,11 +188,11 @@ DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为 _pan
 
 ### <a name="styles-pane"></a>样式窗格
 
-" **样式** "窗格包含用于筛选样式、切换元素 (如 [：active](https://developer.mozilla.org/docs/Web/CSS/:active) 和 [：focus](https://developer.mozilla.org/docs/Web/CSS/:focus)) 、切换类以及添加新类的控件。  此外，还有一个强大的样式检查工具，可用于浏览和修改当前应用于 DOM 树中具有焦点的元素 **的样式**。
+" **样式** "窗格具有用于筛选样式、切换元素 (如 [：active](https://developer.mozilla.org/docs/Web/CSS/:active) 和 [：focus](https://developer.mozilla.org/docs/Web/CSS/:focus)) 、切换类以及添加新类的控件。  此外，还有一个强大的样式检查工具，可用于浏览和修改当前应用于 DOM 树中具有焦点的元素 **的样式**。
 
 了解“**样式**”窗格的关键概念是它只显示“**DOM 树**”窗格中当前选中节点的样式。  例如，假设您已完成对节点 `<header>` 样式的检查，现在您想要查看节点的样式 `<footer>` 。  若要执行该操作，首先需要在“**DOM 树**”中选择 `<footer>` 节点。
 
-您可能会发现，使用"检查"工作流[](#inspect-an-element-on-the-page)检查节点 (（例如页脚) 中用于聚焦 **DOM** 树）内的链接，然后使用键盘导航到您感兴趣的精确节点会更快。`footer`
+您可能会发现，使用"检查"工作流[](#inspect-an-element-on-the-page)检查位于节点 (（例如页脚) 中的链接）的节点（聚焦 **DOM** 树）的节点会更快，然后使用键盘导航到您感兴趣的精确节点。`footer`
 
 #### <a name="navigate-the-styles-pane"></a>导航“样式”窗格
 
@@ -252,7 +280,7 @@ DevTools 分为一系列工具。   (在命令菜单中，工具**** 称为 _pan
 
 **已知问题**
 
-*  对于 macOS 屏幕阅读器（如 VoiceOver****）来说，"辅助功能"选项卡Microsoft Edge [ARIA](https://www.w3.org/TR/wai-aria-1.1/#tree) 树的类型可能未正确公开。  订阅 [Chromium 问题 #868480](https://bugs.chromium.org/p/chromium/issues/detail?id=868480) 以获取有关此问题进展的通知。
+*  对于 MacOS [](https://www.w3.org/TR/wai-aria-1.1/#tree) 屏幕阅读器（如 VoiceOver****）来说，"辅助功能"选项卡Microsoft Edge ARIA 树的类型可能未正确公开。  订阅 [Chromium 问题 #868480](https://bugs.chromium.org/p/chromium/issues/detail?id=868480) 以获取有关此问题进展的通知。
 *  每个 **ARIA 属性** 和 **计算属性** 部分都标记为 [ARIA](https://www.w3.org/TR/wai-aria-1.1/#tree) 树，但每个部分当前没有焦点管理，并且不能通过键盘操作。
 
 
@@ -294,7 +322,7 @@ Lighthouse 报告分为与每个审核类别对应的部分。  报告打开时�
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) 由 [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (Contributor、Google WebFundamentals) 。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) ，由 [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (Contributor、Google WebFundamentals) 。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

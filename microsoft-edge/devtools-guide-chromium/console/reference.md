@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 3ec1368da77507a42f88dc1903d151dbb5b43436
-ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.openlocfilehash: c7e0870c0f2b32d4d8d820d58e0cec29edd153d5
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "12346342"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431954"
 ---
 <!-- Copyright Kayce Basques
 
@@ -65,7 +65,7 @@ ms.locfileid: "12346342"
 
 ### <a name="open-the-console-tool"></a>打开控制台工具
 
-按`Control`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。
+按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。
 
 :::image type="content" source="../media/console-hello-console.msft.png" alt-text="控制台工具。" lightbox="../media/console-hello-console.msft.png":::
 
@@ -84,21 +84,21 @@ The Drawer pops up in the bottom of the DevTools window， with the **Console** 
 
 :::image type="content" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="&quot;箱&quot;中的控制台工具。" lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
 
-若要从命令**菜单中**打开控制台工具[](../command-menu/index.md)，请键入 `Console` ，然后运行旁边有****"箱"**锁屏提醒**的"显示控制台"命令。
+若要从命令**菜单**打开控制台工具[](../command-menu/index.md)，请键入**控制台**，然后运行旁边有****"箱"**锁屏提醒**的"显示控制台"命令。
 
 :::image type="content" source="../media/console-command-menu-show-console.msft.png" alt-text="运行命令以在&quot;箱&quot;中显示 **Console** 工具。" lightbox="../media/console-command-menu-show-console.msft.png":::
 
 
 ### <a name="open-console-settings"></a>打开控制台设置
 
-单击控制台**设置 (**![控制台设置图标](../media/settings-button-icon.msft.png)。) 按钮。
+单击"**控制台设置 (**![控制台设置图标](../media/settings-button-icon.msft.png)。) 按钮。
 
 :::image type="content" source="../media/console-settings-group-similar-empty.msft.png" alt-text="控制台设置。" lightbox="../media/console-settings-group-similar-empty.msft.png":::
 
 
 ### <a name="open-the-console-sidebar"></a>打开控制台边栏
 
-若要显示 **边栏**，请单击显示 **控制台边** 栏 (![显示控制台边](../media/show-console-sidebar-icon.msft.png) 栏。) 。  **边栏**可帮助你进行筛选。
+若要显示**边栏**，请单击显示**控制台**![边栏 (显示控制台边](../media/show-console-sidebar-icon.msft.png)栏。) 。  **边栏**可帮助你进行筛选。
 
 :::image type="content" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="控制台边栏。" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
 
@@ -111,12 +111,12 @@ The Drawer pops up in the bottom of the DevTools window， with the **Console** 
 
 ### <a name="turn-off-message-grouping"></a>关闭邮件分组
 
-若要关闭控制台的默认邮件分组行为，请单击控制台 **设置** (![控制台 设置 图标****](../media/settings-button-icon.msft.png)。) 按钮，然后选中"类似组"旁边的**复选框。**  有关示例，请参阅 [Log XHR and Fetch requests](#log-xhr-and-fetch-requests)。
+若要关闭控制台的默认邮件分组行为，请单击控制台 **设置** (![控制台 设置 图标****](../media/settings-button-icon.msft.png)。) 按钮，然后选中"类似组"旁边的**复选框**。  有关示例，请参阅 [Log XHR and Fetch requests](#log-xhr-and-fetch-requests)。
 
 
 ### <a name="log-xhr-and-fetch-requests"></a>记录 XHR 和 Fetch 请求
 
-`XMLHttpRequest` `Fetch`若要在每次发生时将全部和请求**** 记录到控制台，请单击控制台 **设置** (![控制台 设置 图标](../media/settings-button-icon.msft.png)。) 按钮，然后选中 **Log XMLHttpRequests** 旁边的复选框。
+To log all `XMLHttpRequest` and `Fetch` requests to the **Console** as each happens， click the **Console 设置** (![Console 设置 icon.](../media/settings-button-icon.msft.png)) button and then select the checkbox next to **Log XMLHttpRequests**.
 
 :::image type="content" source="../media/console-xhr-fetch.msft.png" alt-text="记录 XMLHttpRequest 和 Fetch 请求。" lightbox="../media/console-xhr-fetch.msft.png":::
 
@@ -133,7 +133,7 @@ The Drawer pops up in the bottom of the DevTools window， with the **Console** 
 
 ### <a name="persist-messages-across-page-loads"></a>跨页面加载保留消息
 
-加载新网页时，默认操作会清除 **控制台**。  若要在页面加载时**** 保留![消息，请单击"控制台"设置 (控制台设置图标](../media/settings-button-icon.msft.png)。) 按钮，然后选中"保留日志"旁边的**复选框**。
+加载新网页时，默认操作会清除 **控制台**。  若要在页面加载时**** 保留![消息，请单击"控制台设置 (控制台设置图标](../media/settings-button-icon.msft.png)。) "按钮，然后选中"保留日志"旁边的**复选框**。
 
 
 ### <a name="hide-network-messages"></a>隐藏网络消息
@@ -144,7 +144,7 @@ The Drawer pops up in the bottom of the DevTools window， with the **Console** 
 
 隐藏网络消息：
 
-1. 单击控制台**设置 (**![控制台设置图标](../media/settings-button-icon.msft.png)。) 按钮。
+1. 单击"**控制台设置 (**![控制台设置图标](../media/settings-button-icon.msft.png)。) 按钮。
 
 1. 选中隐藏网络 **旁边的复选框**。
 
@@ -212,7 +212,7 @@ DevTools 为每个方法分配 `console.*` 四个严重性级别之一：
 
 ### <a name="filter-out-messages-that-dont-match-a-regular-expression-pattern"></a>筛选出与正则表达式模式不匹配的邮件
 
-在"筛选器"文本框`/[gm][ta][mi]/`中键入正则表达式****，以筛选出任何与模式不匹配的邮件。  DevTools 检查是在消息文本中还是导致记录消息的脚本中发现了模式。
+键入正则表达式（如 `/[gm][ta][mi]/` 在" **筛选器** "文本框中）以筛选出任何不匹配该模式的邮件。  DevTools 检查是在消息文本中还是导致记录消息的脚本中发现了模式。
 
 :::image type="content" source="../media/console-filter-regex.msft.png" alt-text="筛选出与正则表达式不匹配的任何邮件。" lightbox="../media/console-filter-regex.msft.png":::
 
@@ -230,14 +230,14 @@ DevTools 为每个方法分配 `console.*` 四个严重性级别之一：
 
 ### <a name="watch-the-value-of-an-expression-in-real-time-with-live-expressions"></a>使用 Live Expressions 实时监视表达式的值
 
-如果你发现自己在控制台中重复键入相同的 JavaScript 表达式，你可能会**** 发现创建 Live **表达式更容易**。  使用 **Live Expressions**，键入表达式一次，然后将其固定到控制台 **顶部**。  表达式的值几乎可以实时更新。  请参阅 [使用实时表达式Real-Time JavaScript 表达式值](live-expressions.md)。
+如果你发现自己在控制台中重复键入相同的 JavaScript 表达式，你可能会**** 发现创建 Live **表达式更容易**。  使用 **Live Expressions**，键入表达式一次，然后将其固定到控制台 **顶部**。  表达式的值几乎可以实时更新。  请参阅 [Watch JavaScript Expression values in Real-Time with Live Expressions](live-expressions.md)。
 
 
 ### <a name="turn-off-eager-evaluation"></a>关闭"期待评估"
 
 **当您在** 控制台中键入 JavaScript 表达式时，"期待评估"将显示返回值的 **预览**。  若要关闭返回值预览，
 
-1. 单击控制台**设置 (**![控制台设置图标](../media/settings-button-icon.msft.png)。) 按钮。
+1. 单击"**控制台设置 (**![控制台设置图标](../media/settings-button-icon.msft.png)。) 按钮。
 1. 清除"期望评估" **旁边的复选框**。
 
 
@@ -266,7 +266,7 @@ DevTools 为每个方法分配 `console.*` 四个严重性级别之一：
 
 若要清除控制台，请使用以下任一方法：
 
-*  单击 **"清除控制台** (![清除控制台](../media/clear-console-button-icon.msft.png) "。) 。
+*  单击 **"清除控制台 (**![清除控制台](../media/clear-console-button-icon.msft.png)"。) 。
 
 *  右键单击消息，然后选择" **清除控制台"**。
 
@@ -274,7 +274,7 @@ DevTools 为每个方法分配 `console.*` 四个严重性级别之一：
 
 *  从 `console.clear()` 网页的 JavaScript 中调用。
 
-*  在 `Control`+`L` 控制台聚焦时按。
+*  在 `Ctrl`+`L` 控制台聚焦时按。
 
 
 <!-- ====================================================================== -->

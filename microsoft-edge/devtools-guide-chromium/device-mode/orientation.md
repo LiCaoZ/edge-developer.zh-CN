@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 3ec597bf4444dd4f5f536d0068cca8582c59c6bc
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432717"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,7 +32,7 @@ ms.date: 05/04/2021
 
 <!--todo: update device orientation section when available -->
 
-1. 按 `Control``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
+1. 按 `Ctrl``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
 
    :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单。" lightbox="../media/device-mode-console-command-menu.msft.png":::
 

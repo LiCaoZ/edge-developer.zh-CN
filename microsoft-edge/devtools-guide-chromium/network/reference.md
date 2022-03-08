@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
-ms.openlocfilehash: 2bd25e0850b8a1843be9f29090e015daccdf6a99
-ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.openlocfilehash: e52c1f7f494977a36aca62562a1b0057d627a857
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "12346566"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12433004"
 ---
 <!-- Copyright Kayce Basques
 
@@ -46,7 +46,7 @@ ms.locfileid: "12346566"
 
 1. 在" **网络"** 工具上，单击"停止 **记录** 网络日志 (!["停止录制网络](../media/record-on-icon.msft.png) 日志"。) 。  它变为灰色，表示开发人员工具不再记录请求。
 
-1. 在`Control``E`****+ (Windows焦点时) Linux `Command`+`E` (或) macOS) 。
+1. 在`Ctrl``E`****+ (Windows焦点时) Linux `Command`+`E` (或) macOS 命令。
 
 ### <a name="clear-requests"></a>清除请求
 
@@ -134,7 +134,7 @@ ms.locfileid: "12346566"
 
 一种称为“[渐进式 Web 应用](../progressive-web-apps/index.md)”的新 web 应用程序，，可在**服务人员**的帮助下脱机运行。<!-- [service workers](/web/fundamentals/getting-started/primers/service-workers) --> 你可能会发现，在生成此类应用时，快速模拟没有数据连接的设备会很有用。
 
-若要模拟脱机网络体验，请选择"不**** 限制"下拉菜单> **PresetsOffline** > 。****
+若要模拟脱机网络体验，请选择"不**** 限制"下拉菜单> **PresetsOffline** > **"**。
 
 " **脱机** "下拉菜单：
 
@@ -197,7 +197,7 @@ ms.locfileid: "12346566"
 1. 对于任一选项，设置用户代理客户端提示，如下所示：
     * **品牌** 和 **版本** ，如 *Edge* 和 *92*。  单击 **" + 添加品牌** "以添加多个品牌和版本对。
     * **完整浏览器版本** ，例如 *92.0.1111.0*。
-    * **平台**和**版本**，如 *Windows* *和 10.0*。
+    * **平台**和**版本**，如 *Windows* *10.0*。
     * **体系结构** ，如 *x86*。
     * **设备型号** ，例如 *，一些设备型号*。
 
@@ -239,8 +239,8 @@ ms.locfileid: "12346566"
 | `larger-than` | 以字节为单位显示大于指定大小的资源。  将值设置为 `1000` 相当于将值设置为 `1k`。 |
 | `method` | 显示通过指定的 HTTP 方法类型检索的资源。  DevTools 使用找到的所有 HTTP 方法填充下拉菜单。 |
 | `mime-type` | 显示指定 MIME 类型的资源。  DevTools 使用找到的所有 MIME 类型填充下拉菜单。 |
-| `mixed-content` | 显示所有混合内容 (`mixed-content:all`) 或只显示当前 () `mixed-content:displayed` 。 |
-| `scheme` | 显示通过未保护的 HTTP `scheme:http` () 或受保护的 HTTPS `scheme:https` () 。 |
+| `mixed-content` | 显示所有混合内容 (`mixed-content:all`) 或只 `mixed-content:displayed` 显示当前 () 。 |
+| `scheme` | 显示通过未保护的 HTTP () `scheme:http` 或受保护的 HTTPS `scheme:https` () 。 |
 | `set-cookie-domain` | 显示具有与指定值匹配的 `Domain` 属性的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 域填充“自动完成”。 |
 | `set-cookie-name` | 显示具有名称与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 名称填充“自动完成”。 |
 | `set-cookie-value` | 显示具有值与指定值匹配的 `Set-Cookie` 标头的资源。  开发工具用找到的所有 Cookie 值填充“自动完成”。 |
@@ -262,7 +262,7 @@ ms.locfileid: "12346566"
 
 如果未显示按钮，则" **筛选器"** 窗格可能处于隐藏状态。  请参阅 [隐藏筛选器窗格](#hide-the-filters-pane)。
 
-若要同时启用多类型`Control`筛选器，请长按 (Windows、Linux `Command`) 或 (macOS) 然后单击筛选器。
+若要同时启用多`Control`类型筛选器，请长按 (Windows、Linux) `Command` 或 (macOS) 然后单击筛选器。
 
 使用 **类型筛选器** 显示 JS、CSS 和文档资源：
 
@@ -644,9 +644,9 @@ init();
 
 :::image type="content" source="../media/network-header-copy-property-value.msft.png" alt-text="右键单击&quot;复制值&quot;命令。" lightbox="../media/network-header-copy-property-value.msft.png":::
 
-将格式化的响应 JSON 粘贴到Microsoft Visual Studio代码：
+将格式化的响应 JSON 粘贴Microsoft Visual Studio代码：
 
-:::image type="content" source="../media/network-header-paste-property-value.msft.png" alt-text="Microsoft Visual Studio格式响应 JSON 的代码。" lightbox="../media/network-header-paste-property-value.msft.png":::
+:::image type="content" source="../media/network-header-paste-property-value.msft.png" alt-text="Microsoft Visual Studio JSON 格式响应的代码。" lightbox="../media/network-header-paste-property-value.msft.png":::
 
 ### <a name="copy-property-values-from-network-requests-to-your-clipboard"></a>将属性值从网络请求复制到剪贴板
 
@@ -671,7 +671,7 @@ init();
 
 ### <a name="hide-the-filters-pane"></a>隐藏“筛选器”窗格
 
-默认情况下，DevTools 显示" **筛选器"** 窗格。  若要隐藏" **筛选器"** 窗格 **，请选择"** 筛选器 (![筛选器](../media/filter-icon.msft.png) "。) 。
+默认情况下，DevTools 显示" **筛选器"** 窗格。  若要隐藏" **筛选器"** 窗格 **，请选择"** 筛选器 ![ (筛选器](../media/filter-icon.msft.png) "。) 。
 
 :::image type="content" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="&quot;隐藏筛选器&quot;按钮。" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
 

@@ -7,20 +7,20 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 01/25/2022
-ms.openlocfilehash: 49b5a1c7f755242bbf41344a4ec87509fb54d29c
-ms.sourcegitcommit: ae41e2c0ca42fb7eac73824c828305c7b13b4203
+ms.openlocfilehash: c29b6bea7cd07d12530065c3a6e9ece677f4a2f9
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "12345966"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431947"
 ---
 # <a name="webview2-api-reference"></a>WebView2 API 参考
 
-利用 Microsoft Edge WebView2 控件，您可以使用基于 web Chromium 的 web Microsoft Edge作为呈现引擎来托管 Web 内容。
+利用 Microsoft Edge WebView2 控件，您可以使用基于 web 的 Chromium 作为呈现引擎Microsoft Edge Web 内容。
 
-若要下载 Beta、Microsoft Edge (和 Canary) 预览频道，请转到预览Microsoft Edge[预览体验成员](https://www.microsoftedgeinsider.com)。
+若要下载 Microsoft Edge (Beta、Dev 和 Canary) 预览频道，请转到预览Microsoft Edge[预览体验成员](https://www.microsoftedgeinsider.com)。
 
-有关详细信息，请参阅 [WebView2 Microsoft Edge概述和](./index.md) [WebView2 入门](get-started/get-started.md)。
+有关详细信息，请参阅 [WebView2 Microsoft Edge概述和](index.md) [WebView2 入门](get-started/get-started.md)。
 
 
 <!-- ====================================================================== -->
@@ -41,11 +41,10 @@ WebView2 可用于以下语言和框架：
 
 * WinUI 3 (Windows App SDK) 
    * [API 参考](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)
-<!-- added this WinUI 3 section b/c this link is listed at top of [Get started with WebView2 in WinUI 3 (Windows App SDK)](get-started/winui.md) -->
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-* [WebView2 Microsoft Edge概述](./index.md)
-* [WebView2 入门](./get-started/get-started.md)
+* [WebView2 Microsoft Edge概述](index.md)
+* [WebView2 入门](get-started/get-started.md)

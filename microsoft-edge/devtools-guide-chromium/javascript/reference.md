@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 66df4125bd5515618ce7922bf0ff011885a585c4
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432416"
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,9 +28,9 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # <a name="javascript-debugging-features"></a>JavaScript 调试功能
 
-本文介绍了如何在 DevTools Microsoft Edge调试器，包括如何设置代码行断点。  若要设置其他类型的断点，请参阅 [使用断点暂停代码](./breakpoints.md)。
+本文介绍了如何在 DevTools Microsoft Edge调试器，包括如何设置代码行断点。  若要设置其他类型的断点，请参阅 [使用断点暂停代码](breakpoints.md)。
 
-若要了解调试的基础知识，请参阅开始调试 [JavaScript](./index.md)，这是一个使用基于表单的现有网页的教程。  本教程具有屏幕捕获，因此你可以浏览它。  您可以使用演示网页轻松试用调试器功能。
+若要了解调试的基础知识，请参阅开始调试 [JavaScript](index.md)，这是一个使用基于表单的现有网页的教程。  本教程具有屏幕捕获，因此你可以浏览它。  您可以使用演示网页轻松试用调试器功能。
 
 
 <!-- ====================================================================== -->
@@ -40,7 +46,7 @@ ms.date: 05/04/2021
 
 1. 在" **编辑器"** 窗格中，编辑文件。
 
-1. 按 `Ctrl`+`S` (Windows、Linux) 或 `Command`+`S` (macOS) 保存。  然后，DevTools 将 JavaScript 文件加载至 Microsoft Edge 的 JavaScript 引擎。
+1. 按 `Ctrl`+`S` (Windows、Linux) 或 `Command`+`S` (macOS) 保存。  然后，DevTools 将 JavaScript 文件加载至 Microsoft Edge。
 
    :::image type="content" source="../media/javascript-sources-html-minified.msft.png" alt-text="&quot;编辑器&quot;窗格。" lightbox="../media/javascript-sources-html-minified.msft.png":::
 
@@ -48,7 +54,7 @@ ms.date: 05/04/2021
 <!-- ====================================================================== -->
 ## <a name="reformat-a-minified-javascript-file-with-pretty-print"></a>使用非常打印重新设置缩小的 JavaScript 文件
 
-**** 若要使缩小的文件可读，请单击![](../media/format-icon.msft.png)"设置 (格式。) "窗格底部的"设置**格式"** 按钮。
+**** 若要使缩小的文件可读，请单击![](../media/format-icon.msft.png)"设置 (格式"。) "窗格底部的"设置格式 **"** 按钮。
 
 :::image type="content" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="&quot;格式&quot;按钮。" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
 
@@ -70,7 +76,7 @@ ms.date: 05/04/2021
 
    :::image type="content" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="代码行断点。" lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
 
-代码行断点设置效率可能很低，尤其是在您不知道具体查找位置或代码库较大时。  若要在调试时节省时间，请了解如何以及何时使用其他类型的断点。  请参阅 [使用断点暂停代码](./breakpoints.md)。
+代码行断点设置效率可能很低，尤其是在您不知道具体查找位置或代码库较大时。  若要在调试时节省时间，请了解如何以及何时使用其他类型的断点。  请参阅 [使用断点暂停代码](breakpoints.md)。
 
 
 <!-- ====================================================================== -->
@@ -80,7 +86,7 @@ ms.date: 05/04/2021
 
 ### <a name="step-over-line-of-code"></a>逐步执行代码
 
-当暂停包含与正在调试的问题不相关的函数的代码行时，请单击"单步**执行 (** ![](../media/step-over-icon.msft.png) 单步执行"。单击) 按钮，无需单步执行即可运行函数。
+在包含与正在调试的问题不相关的函数的一行代码上暂停时，单击"单步**执行 (** ![](../media/step-over-icon.msft.png) 单步执行"。单击) 按钮，无需单步执行即可运行函数。
 
 :::image type="content" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="单击&quot;逐步执行&quot;。" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
 
@@ -102,7 +108,7 @@ function getName() {
 
 ### <a name="step-into-line-of-code"></a>逐行执行代码
 
-当暂停****![包含与正在调试的问题相关的函数调用的代码行时，请单击"单步执行 (单](../media/step-into-icon.msft.png)步执行") 按钮以进一步调查该函数。
+当暂停**** ![](../media/step-into-icon.msft.png) 包含与正在调试的问题相关的函数调用的代码行时，请单击"单步执行 (单步执行") 按钮以进一步调查该函数。
 
 :::image type="content" source="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png" alt-text="单击&quot;进入&quot;。" lightbox="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png":::
 
@@ -184,7 +190,7 @@ function factorial(n) {
 
 #### <a name="force-script-runtime"></a>强制脚本运行时
 
-若要****![忽略所有断点并强制脚本继续运行，请单击并按住 **Resume 脚本**执行 (![Resume 脚本](../media/resume-script-run-icon.msft.png)执行。) 按钮，然后单击"强制脚本执行 (强制脚本](../media/force-script-run-icon.msft.png)执行"。) 按钮。
+若要忽略所有断点**** 并强制脚本继续运行，请单击并按住 Resume **脚本**执行 (![Resume 脚本执行](../media/resume-script-run-icon.msft.png)。) ![按钮，然后单击"强制脚本执行 (强制脚本](../media/force-script-run-icon.msft.png)执行"。) 按钮。
 
 :::image type="content" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="单击&quot;强制脚本执行&quot;按钮。" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
 
@@ -215,11 +221,11 @@ function factorial(n) {
 
 :::image type="content" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="&quot;监视&quot;窗格。" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
 
-*  若要创建新的监视表达式，请单击"添加**监视**![表达式 (添加监视](../media/add-expression-icon.msft.png)表达式) 按钮。
+*  若要创建新的监视表达式，请单击"****![添加监视表达式 (添加监视](../media/add-expression-icon.msft.png)表达式) 按钮。
 
 *  若要刷新所有现有表达式的值，请单击****!["刷新" ("](../media/refresh-icon.msft.png)刷新) 按钮。  逐步执行代码时，值将自动刷新。
 
-*  若要删除监视表达式，请右键单击****![该表达式，然后选择"删除监视表达式 (删除监视](../media/delete-expression-icon.msft.png)表达式。) 。
+*  若要删除监视表达式，请右键单击该表达式****![，然后选择"删除监视表达式 (删除监视](../media/delete-expression-icon.msft.png)表达式。) 。
 
 
 <!-- ====================================================================== -->
@@ -276,7 +282,7 @@ function animate() {
 
 1. 打开文件。
 
-1. 右键单击文件中的任何位置，然后选择"添加脚本****"以忽略 (之前显示为"标记为库**代码") **。
+1. 右键单击文件中的任何位置，然后选择"添加脚本****"以忽略之前 (标记为库**代码) **。
 
    :::image type="content" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png" alt-text="从编辑器窗格中将脚本标记为库代码。" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png":::
 
@@ -310,15 +316,15 @@ function animate() {
 
 如果你的控制台一次又一次地运行相同的调试代码，请考虑使用代码段。  代码段是你在 DevTools 中创作、存储和运行的运行时脚本。
 
-请参阅 [在任何网页上运行 JavaScript 代码段](./snippets.md)。
+请参阅 [在任何网页上运行 JavaScript 代码段](snippets.md)。
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [JavaScript 调试入门](./index.md) - 使用现有代码的简单简短教程，包含屏幕捕获。
+*  [JavaScript 调试入门](index.md) - 使用现有代码的简单简短教程，包含屏幕捕获。
 *  [源工具概述](../sources/index.md) - **源工具** 包括 JavaScript 调试程序和编辑程序。
-*  [禁用 JavaScript](./disable.md)。
+*  [禁用 JavaScript](disable.md)。
 
 
 <!-- ====================================================================== -->

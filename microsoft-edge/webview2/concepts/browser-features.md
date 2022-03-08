@@ -1,5 +1,5 @@
 ---
-title： feature differences between Microsoft Edge and WebView2 description： Feature differences between Microsoft Edge and WebView2.
+title： Differences between Microsoft Edge and WebView2 description： Feature differences between Microsoft Edge and WebView2.
 author： MSEdgeTeam ms.author： msedgedevrel ms.topic： conceptual ms.prod： microsoft-edge ms.technology： webview no-loc：
 - "Autofill for Addresses"
 - "Autofill for Passwords"
@@ -26,7 +26,8 @@ author： MSEdgeTeam ms.author： msedgedevrel ms.topic： conceptual ms.prod：
 - "edge:// URLs" ms.date： 09/21/2021
 
 ---
-# <a name="feature-differences-between-microsoft-edge-and-webview2"></a>Microsoft Edge 和 WebView2 之间的功能差异
+# <a name="differences-between-microsoft-edge-and-webview2"></a>Microsoft Edge 与 WebView2 之间的区别
+<!-- old title: # Differences between Microsoft Edge and WebView2 -->
 
 WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏览器扩展到基于 WebView2 的应用，这很有用。  但是，由于 WebView2 不限于类似浏览器的应用，因此需要修改或删除一些浏览器功能。
 
@@ -72,7 +73,7 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 | Edge Shopping | 关闭 | 否 | 此功能已关闭。 |
 | Family Safety | 关闭 | 否 | 此功能已关闭。 |
 | Favorites | 关闭 | 否 | 此功能已关闭。 |
-| IE Mode | 关闭 | 否 | 此功能已关闭。 与 IE 模式相比，WebView2 不支持 IE 模式，并且行为 (如 MHT 或 BIN) 。 |
+| IE Mode | 关闭 | 否 | 此功能已关闭。 与 IE 模式相比，WebView2 不支持 IE 模式，并且行为 (如 MHT 或 BIN 支持) 。 |
 | Immersive Reader | 关闭 | 否 | 此功能取决于用于交互的浏览器 UI。  此功能已关闭。 |
 | Intrusive Ads | 关闭 | 否 | 此功能已关闭。 |
 | 键盘快捷方式 | 查看详细信息 | 查看详细信息 | 默认情况下关闭的键盘快捷方式在 WebView2 中没有意义或导致问题。  不能关闭或打开这些快捷方式。  相反，您可以使用 事件侦听组合 `AcceleratorKeyPressed` 键，并根据需要创建自定义响应。  有关详细信息，请参阅其他 [键盘快捷方式信息](#additional-keyboard-shortcuts-information)。 |
@@ -100,7 +101,7 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 <!-- ====================================================================== -->
 ## <a name="blocked-internal-urls"></a>阻止的内部 URL
 
-以下Microsoft Edge和 Google Chrome 设置网页在 WebView2 中不可用：
+以下 Microsoft Edge 和 Google Chrome 设置网页在 WebView2 中不可用：
 
 *  `chrome-search://local-ntp/local-ntp.html`
 *  `edge://application-guard-internals`
@@ -126,7 +127,7 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 
 若要避免对`AreBrowserAcceleratorKeysEnabled``FALSE`键盘快捷方式进行此类更改，可以设置为 ，这将关闭访问浏览器功能的所有键，但会启用所有基本的文本编辑和移动快捷方式。
 
-在 WebView2 中，始终关闭以下快捷方式。  星号 (`*`) 表示快捷方式未关闭，但它访问的功能已关闭，或者该功能不适用于 WebView2。
+在 WebView2 中，始终关闭以下快捷方式。  `*` 星号 () 表示快捷方式未关闭，但它访问的功能已关闭，或者该功能不适用于 WebView2。
 
 | 操作 | Windows |
 |:--- |:--- |

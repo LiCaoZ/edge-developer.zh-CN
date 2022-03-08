@@ -1,11 +1,17 @@
 ---
 title: 查看和编辑本地存储
-description: 如何使用"本地模式"窗格和控制台查看和编辑 localStorage 键值对存储操作。
+description: 如何使用"本地管理"窗格和控制台查看和编辑 localStorage 键值对存储值对。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: d5c85422f4ef3fc2f1414c637bd5dfd2e74a7102
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430127"
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,7 +28,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # <a name="view-and-edit-local-storage"></a>查看和编辑本地存储
 
-本指南演示如何使用 [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) 查看、编辑和删除 [localStorage](https://developer.mozilla.org/docs/Web/API/Window/localStorage) 键值对。
+若要查看、编辑和删除 [localStorage 键](https://developer.mozilla.org/docs/Web/API/Window/localStorage) 值对，请使用 **Application** 工具。
 
 
 <!-- ====================================================================== -->
@@ -72,7 +78,7 @@ ms.date: 05/04/2021
 
 1. 单击要删除的键值对。  DevTools 会以蓝色将其突出显示以表示其已选中。
 
-1. 按 `Delete`，或单击 **"删除所选 (**![删除所选](../media/delete-icon.msft.png)内容。) 。
+1. 按 `Delete`，或单击 **"删除所选** (![删除所选内容](../media/delete-icon.msft.png) 。) 。
 
 
 <!-- ====================================================================== -->

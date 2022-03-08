@@ -6,22 +6,46 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/24/2021
+ms.openlocfilehash: 7510a252c0e63f9f6d03e05b8a895413fa8076cb
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430997"
 ---
 # <a name="the-webhint-extension-for-visual-studio-code"></a>webhint 扩展Visual Studio Code
 
-使用 [Webhint](https://webhint.io)（一种可自定义的 Lint 工具）可改进网站的辅助功能、性能、跨浏览器PWA兼容性和安全性。  它会检查代码的最佳实践和常见错误。 此开放源代码项目最初由 Microsoft Edge 开发，现在是 [OpenJS Foundation 的一部分](https://openjsf.org)。  Microsoft Edge团队将继续与社区中的 Web 开发人员一起为 webhint 做贡献。
+使用 Webhint（一种可自定义的 Lint 工具）可改进网站的功能，包括：
 
-通过添加 webhint 扩展以识别并修复 HTML、CSS、JavaScript、TypeScript 等Visual Studio Code。  提示显示为内联下划线，并汇总在"问题 **"** 窗格中。
+*   辅助功能。
+*   性能。
+*   跨浏览器兼容性。
+*   PWA兼容性。
+*   安全性。
 
-:::image type="complex" source="./media/webhint-extension.png" alt-text="webhint 扩展Visual Studio Code。":::
-   webhint 扩展Visual Studio Code
-:::image-end:::
+webhint 检查代码的最佳实践和常见错误。  识别并修复文件（包括 HTML、CSS、JavaScript 和 TypeScript）中的问题。  提示在文本编辑器中显示为波浪下划线，并汇总在"问题 **"** 窗格中：
+
+![webhint 扩展Visual Studio Code。](media/webhint-extension.png)
+
+webhint 是一个开源项目。  它最初由 Microsoft Edge 开发，现在是 [OpenJS Foundation 的一部分](https://openjsf.org)。  Microsoft Edge团队将继续与社区中的 Web 开发人员一起为 webhint 做贡献。
+
+有关详细信息，请参阅 [Webhint](https://webhint.io) 网站。
 
 
 <!-- ====================================================================== -->
 ## <a name="installing-webhint"></a>安装 Webhint
 
-若要从 webhint 安装 webhint Visual Studio Code，请参阅 [webhint extension for Visual Studio Code](index.md#the-webhint-extension-for-visual-studio-code)。 <!-- in the article _Visual Studio Code overview_. -->  或者，你可以从 Visual Studio Code [Marketplace 安装 webhint](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint) Visual Studio扩展。
+通过添加 [webhint](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint) 扩展来检查并修复网站中Visual Studio Code。
+
+若要从网站安装 webhint 扩展，Visual Studio Code：
+
+1. 在Visual Studio Code中，导航到 **"扩展"**。  为此，你可以按 `Ctrl`++`Shift``X` Windows/Linux`X` `Command`+`Shift`+或 macOS。
+
+1. 在 Marketplace 中搜索 **Webhint 扩展** ，选择该扩展，然后选择"安装 **"**。
+
+   ![Webhint Visual Studio Code扩展。](media/visual-studio-code-extension-webhint.msft.png)
+
+或者，你可以安装 [Webhint 扩展，Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint)应用商店Visual Studio Webhint。
 
 
 <!-- ====================================================================== -->
@@ -93,5 +117,5 @@ ms.date: 08/24/2021
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [辅助功能](/microsoft-edge/accessibility)
 *  [Visual Studio Code](/microsoft-edge/visual-studio-code/index)
+*  [辅助功能](/microsoft-edge/accessibility)

@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/29/2021
+ms.openlocfilehash: fe1f541ab22654b4371f5b556a567c3a1bb8578d
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431296"
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,7 +28,7 @@ ms.date: 06/29/2021
    limitations under the License.  -->
 # <a name="get-started-viewing-and-changing-the-dom"></a>开始查看和更改 DOM
 
-按照这些交互式教程部分了解使用 DevTools 查看和更改页面[](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) 的Microsoft Edge基础知识。
+按照这些交互式教程部分，了解使用 DevTools 查看和更改[](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) 文档对象模型Microsoft Edge基础知识。
 
 若要了解 DOM 和 HTML 的区别，请参阅下面的 [附录：HTML 与 DOM](#appendix-html-versus-the-dom)。
 
@@ -37,7 +43,7 @@ ms.date: 06/29/2021
 
 当你对特定 DOM 节点感兴趣时，可通过“**检查**”快速打开开发人员工具并调查该节点。
 
-1. 打开新[窗口或选项卡中的 DOM](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) 示例演示页面。 为此，请右键单击`Control`该链接，或长按 (Windows、Linux) `Command` 或 (macOS) 然后单击该链接。
+1. 打开新[窗口或选项卡中的 DOM](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) 示例演示页面。 为此，请右`Control`键单击该链接，或长按 (Windows、Linux) `Command` 或 (macOS) 然后单击该链接。
 
 <!-- You can view the source files for the DOM Examples demo in the [MicrosoftEdge/Demos > devtools-dom-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) repo folder. -->
 
@@ -49,7 +55,7 @@ ms.date: 06/29/2021
 
    :::image type="content" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="突出显示&quot;一文&quot;节点。" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
 
-1. 单击 **"检查** (![检查](../media/inspect-tool-icon-light-theme.png) "。) 工具"左上角的"检查"图标。
+1. 单击 **"检查** (![检查](../media/inspect-tool-icon-light-theme.png) "。) 工具左上角的"检查"图标。
 
    :::image type="content" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="&quot;检查&quot;图标。" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
 
@@ -103,7 +109,7 @@ ms.date: 06/29/2021
 
 1. 将光标焦点放在“**元素**”工具上。
 
-1. 按 `Control`+`F` (Windows、Linux) 或 (`Command`+`F` macOS) 。  搜索栏在 DOM 树的底部打开。
+1. 按 `Ctrl`+`F` (Windows、Linux) 或 (`Command`+`F` macOS) 。  搜索栏在 DOM 树的底部打开。
 
 1. 键入 `The Moon is a Harsh Mistress`。  最后一句在 DOM 树中突出显示。
 
@@ -212,7 +218,7 @@ ms.date: 06/29/2021
 
 1. 选择 `Delete` 键。  节点将被删除。
 
-1. 按 `Control`+`Z` (Windows、Linux) 或 `Command`+`Z` (macOS) 。  最后一个操作将被撤消，节点将重新出现。
+1. 按 `Ctrl`+`Z` (Windows、Linux) 或 (`Command`+`Z` macOS) 。  最后一个操作将被撤消，节点将重新出现。
 
 
 <!-- ====================================================================== -->
@@ -264,7 +270,7 @@ ms.date: 06/29/2021
 
 1. 在 DOM `<li>The Brothers Karamazov</li>` 树中右键单击，然后选择 **CopyCopy** >  **JS 路径**。  解析为节点的 `document.querySelector()` 表达式已复制到剪贴板。
 
-1. 按 `Control`+`V` (Windows、Linux) 或 `Command`+`V` (macOS) 将表达式粘贴到控制台中。
+1. 按 `Ctrl`+`V` (Windows、Linux) 或 `Command`+`V` (macOS) 将表达式粘贴到控制台中。
 
 1. 按 `Enter` 计算表达式。
 
@@ -296,7 +302,7 @@ ms.date: 06/29/2021
 
 1. 单击上面的 **"设置背景** "按钮。  这会将节点的 `style` 属性设置为 `background-color:thistle`。  开发人员工具将暂停页面并突出显示导致属性发生更改的代码。
 
-1. 选择 **"恢复 (**![脚本"](../media/resume-script-icon.msft.png)。) ，如前面所述。
+1. 选择 **"恢复脚本** (![恢复脚本](../media/resume-script-icon.msft.png) "。) ，如前面所述。
 
 ### <a name="break-on-node-removal"></a>中断节点删除
 
@@ -310,7 +316,7 @@ ms.date: 06/29/2021
 
 1. 单击上面的 **"删除** "按钮。  开发人员工具将暂停页面并突出显示导致节点被删除的代码。
 
-1. 选择 **"恢复脚本** (![恢复脚本"。) ](../media/resume-script-icon.msft.png) 。
+1. 选择 **"恢复脚本** (![恢复脚本](../media/resume-script-icon.msft.png) "。) 。
 
 ### <a name="break-on-subtree-modifications"></a>中断子树修改
 
@@ -324,7 +330,7 @@ ms.date: 06/29/2021
 
 1. 单击 **"添加子级"**。  由于向列表中添加了 `<li>` 节点，因此代码将暂停。
 
-1. 选择 **"恢复脚本** (![恢复脚本"。) ](../media/resume-script-icon.msft.png) 。
+1. 选择 **"恢复脚本** (![恢复脚本](../media/resume-script-icon.msft.png) "。) 。
 
 
 <!-- ====================================================================== -->
@@ -332,7 +338,7 @@ ms.date: 06/29/2021
 
 它涵盖了开发人员工具中与 DOM 相关的大部分功能。  你可以右键单击 DOM 树中的节点，并尝试本教程未涵盖的其他选项，以发现其余功能。  请参阅 [元素面板键盘快捷方式](../shortcuts/index.md#elements-tool-keyboard-shortcuts)。
 
-请查看开发人员[Microsoft Edge](../../devtools-guide-chromium/index.md)主页，了解使用 DevTools 可以执行的所有其他功能。
+请查看 [DevTools 概述](../../devtools-guide-chromium/overview.md) ，了解使用 DevTools 可以执行的所有其他功能。
 
 <!--See [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->
 

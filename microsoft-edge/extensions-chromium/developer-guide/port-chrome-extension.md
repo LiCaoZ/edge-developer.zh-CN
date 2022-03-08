@@ -6,14 +6,20 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/17/2021
+ms.openlocfilehash: 8db869d5571899c0989aa1cd60a2b0197886c445
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432624"
 ---
 # <a name="port-a-chrome-extension-to-microsoft-edge"></a>将 Chrome 扩展移植到Microsoft Edge
 
-只需进行很少的更改，Microsoft Edge 便可支持你将 Chrome 扩展移植到 Microsoft Edge。  Chrome 支持的扩展 API 和清单密钥与 Microsoft Edge。  有关受 API 支持Microsoft Edge，请参阅 [API 支持](./api-support.md)。
+只需进行很少的更改，Microsoft Edge 便可支持你将 Chrome 扩展移植到 Microsoft Edge。  Chrome 支持的扩展 API 和清单密钥与 Microsoft Edge。  有关受 API 支持Microsoft Edge，请参阅 [API 支持](api-support.md)。
 
 移植 Chrome 扩展：
 
-1. 查看扩展中使用的 Chrome 扩展 API 和Microsoft Edge支持[扩展的 API](./api-support.md) 列表。
+1. 查看扩展中使用的 Chrome 扩展 API 和Microsoft Edge支持[扩展的 API](api-support.md) 列表。
 
    > [!NOTE]
    > 如果你的扩展使用的 API 不受 Microsoft Edge，它可能不会直接移植。
@@ -38,4 +44,4 @@ ms.date: 02/17/2021
 <!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 
-准备好在加载项网站中发布扩展Microsoft Edge，创建[开发人员](../publish/create-dev-account.md)帐户并[发布扩展](../publish/publish-extension.md)。
+准备好在加载项网站中发布扩展Microsoft Edge，创建开发者帐户并[发布扩展](../publish/publish-extension.md)。 [](../publish/create-dev-account.md)

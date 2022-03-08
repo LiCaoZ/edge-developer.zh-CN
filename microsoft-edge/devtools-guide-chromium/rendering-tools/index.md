@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 4df82c4d7f041a08327b66d93de24cd84dfd1a78
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431667"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -49,7 +55,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 <!--todo: add Recording section when available  -->
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->
 
-如果你注意到在 JavaScript 中 (呈现) 时出现大量 jank 和中断，你可能需要将分析介绍到下一级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面函数中的使用位置。  了解如何在"加快 [JavaScript 运行时速度"中创建 CPU 配置文件](./js-runtime.md)。
+如果你注意到 JavaScript 中 (呈现) 出现大量 jank 和中断，你可能需要将你的分析下一个级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面函数中的使用位置。  了解如何在"加快 [JavaScript 运行时速度"中创建 CPU 配置文件](js-runtime.md)。
 
 ### <a name="javascript-problems"></a>JavaScript：问题
 
@@ -79,7 +85,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 
 ### <a name="style-tools"></a>样式：工具
 
-在"性能"工具 **中录制** 。  检查录制中是否显示 `Recalculate Style` 紫色 (大) 。
+在"性能"工具 **中录制** 。  检查录制是否显示 `Recalculate Style` 紫色 (大) 。
 
 <!--todo: add Recording section when available  -->
 
@@ -188,7 +194,7 @@ The Timeline Tool page is deprecated.
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)<!-- redirects to https://developer.chrome.com/docs/devtools/evaluate-performance/ --> 由技术编写 ([、](https://developers.google.com/web/resources/contributors#kayce-basques) Chrome DevTools \& Lighthouse) 和 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。
+> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)<!-- redirects to https://developer.chrome.com/docs/devtools/evaluate-performance/ --> 由技术撰稿人 [、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTool (s \& Lighthouse) 和 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

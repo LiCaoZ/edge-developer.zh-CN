@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 12fdead10c397da207c325445c51dfad86605b10
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432248"
 ---
 <!-- Copyright Kayce Basques
 
@@ -20,7 +26,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="whats-new-in-devtools-microsoft-edge-83"></a>DevTools （Microsoft Edge 83）中的新增功能
+# <a name="whats-new-in-devtools-microsoft-edge-83"></a>DevTools 83 (Microsoft Edge中的新增) 
 
 按照更新的 Chromium 计划，我们将调整即将推出的 Microsoft Edge 版本的计划，并取消 Microsoft Edge 82 版本。 有关详细信息，请查看我们的 [博客文章](https://blogs.windows.com/msedgedev/2020/03/20)。
 
@@ -30,11 +36,11 @@ ms.date: 05/04/2021
 <!-- ====================================================================== -->
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>来自 Microsoft Edge 开发人员工具团队公告
 
-以下各节列出了你可能从 DevTools 团队中错过Microsoft Edge通知。  查看通知以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道](https://www.microsoftedgeinsider.com/download)并[在 Twitter 上关注我们](https://twitter.com/EdgeDevTools)。
+以下各节列出了你可能从 DevTools 团队中错过Microsoft Edge通知。  查看公告以试用 DevTools、Microsoft Visual Studio代码扩展等中的新功能。  若要了解有关开发人员工具中的所有最新功能和最强大功能的最新动态，请下载 [Microsoft Edge 预览频道](https://www.microsoftedgeinsider.com/download)并[在 Twitter 上关注我们](https://twitter.com/EdgeDevTools)。
 
 ### <a name="remotely-debug-microsoft-edge-on-windows-10-or-later-devices"></a>远程调试Microsoft Edge或Windows 10或更高版本的设备上的客户端
 
-Microsoft Edge ([Beta) ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) 远程工具应用现已在 Microsoft Store 中[提供](https://www.microsoft.com/store/apps/windows)。 此应用扩展 [Windows Device Portal](/windows/uwp/debug-test-perf/device-portal)。 你可以从在开发Microsoft Edge运行的设备连接到远程Windows 10或更高版本设备，并显示目标列表。 此目标列表包括设备上打开Microsoft Edge [PBA](../../../../progressive-web-apps-chromium/index.md) 中Windows选项卡。 针对在远程开发设备上运行的目标，在开发计算机上Windows工具。
+Microsoft Edge ([Beta) ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) 远程工具应用现已在 Microsoft Store 中[提供](https://www.microsoft.com/store/apps/windows)。 此应用扩展 [Windows Device Portal](/windows/uwp/debug-test-perf/device-portal)。 你可以从在开发Microsoft Edge运行的设备连接到远程Windows 10或更高版本设备，并显示目标列表。 目标列表包括设备上打开的 Microsoft Edge 和 [PA](../../../../progressive-web-apps-chromium/index.md) Windows选项卡。 针对在远程开发设备上运行的目标，在开发计算机上Windows DevTools。
 
 :::image type="content" source="../../media/2020/03/remote-tools.msft.png" alt-text="现在，Microsoft Store 中提供 Microsoft Edge 远程工具 (Beta) 应用" lightbox="../../media/2020/03/remote-tools.msft.png":::
 
@@ -115,9 +121,9 @@ DevTools 可以模拟模糊的视觉和 [以下类型的颜色视觉缺陷](http
 | 红色盲 | 无法感觉任何红色的光线。 |
 | 绿色盲 | 无法感觉任何绿色的光线。 |
 | 黄蓝色盲 | 无法感觉任何蓝色的光线。 |
-| 全色盲 | 无法感知任何颜色，灰色底纹除外 (极少) 。 |
+| 全色盲 | 无法感知任何颜色，灰色底纹除外 (非常少见) 。 |
 
-存在这些色觉缺陷的不太极端的版本，实际上它们更为常见。  例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。 但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人都是不同的，并且他们看到 (能够感知更多或更少的相关颜色) 。
+存在这些色觉缺陷的不太极端的版本，实际上它们更为常见。  例如，红色弱降低了对红光的敏感性（与红色盲相对，后者完全无法感知红光）。 但是，这些 **-omaly** 视觉缺陷没有明确定义：每个有这种视觉缺陷的人是不同的，并且可以看到不同 (能够感知更多或更少的相关颜色) 。
 
 通过针对 DevTools 中更极端的模拟进行设计，你的 Web 应用保证也可供有视觉缺陷的人访问。
 
@@ -167,7 +173,7 @@ Chromium 问题 [#1051466](https://crbug.com/1051466)
 *  条件断点 (![条件断点。](../../media/2020/03/conditional.msft.png)) 用半红半白圆表示。
 *  Logpoints (![Logpoint。](../../media/2020/03/logpoint.msft.png)) 用带控制台图标的红色圆圈表示。
 
-新图标的动机是使 UI 与其他 GUI 调试工具 (这通常将断点着色为红色) 并便于一目了然地区分这 3 个功能。
+新图标的动机是使 UI 与其他 GUI 调试工具 (通常将断点着色为红色) 并便于一目了然地区分这 3 个功能。
 
 Chromium 问题 [#1041830](https://crbug.com/1041830)
 
@@ -184,7 +190,7 @@ Chromium 问题 [#1041830](https://crbug.com/1041830)
 :::image type="content" source="../../media/2020/03/dock-to-left.msft.png" alt-text="DevTools 固定在视口左侧。" lightbox="../../media/2020/03/dock-to-left.msft.png":::
 
 > [!NOTE]
-> 自 Microsoft Edge 75 以来，**停靠到左侧**功能已可用，但以前只能从[主菜单](../../../customize/placement.md#change-placement-from-the-main-menu)中进行访问。  83 中的Microsoft Edge功能是，你现在可以从命令菜单访问此功能。
+> 自 Microsoft Edge 75 以来，**停靠到左侧**功能已可用，但以前只能从[主菜单](../../../customize/placement.md)中进行访问。  83 中的Microsoft Edge功能是，你现在可以从命令菜单访问此功能。
 
 通过推文 [或](https://twitter.com/intent/tweet?text=@EdgeDevTools) 选择"发送反馈 ["图标发送反馈](../../../contact.md) ！
 
@@ -232,7 +238,7 @@ Android Oreo 引入了自适应图标，可在不同的设备模型之间显示�
 :::image type="content" source="../../media/2020/03/maskable-icons.msft.png" alt-text="仅显示可屏蔽图标的最小安全区域复选框。" lightbox="../../media/2020/03/maskable-icons.msft.png":::
 
 > [!NOTE]
-> 此功能在 Microsoft Edge 81 中发布。 ["DevTools （Microsoft Edge 81）"](../01/devtools.md)中的新增功能未涵盖 Microsoft Edge 83 中介绍的更新。
+> 此功能在 Microsoft Edge 81 中发布。 Microsoft Edge 83 中此处介绍的更新未在 [DevTools (Microsoft Edge 81) 中](../01/devtools.md)介绍。
 
 
 <!-- ====================================================================== -->

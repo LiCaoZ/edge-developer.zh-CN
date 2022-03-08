@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 238639f1fd04c58d045ef449923ec3cb8830d8b8
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432227"
 ---
 <!-- Copyright Kayce Basques
 
@@ -48,7 +54,7 @@ _运行时_ 性能是页面运行时（而不是加载）运行时的执行方�
 
     <!-- You can view the source files for the "Sluggish Animation" demo page at the [MicrosoftEdge/Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started) repo folder. -->
 
-1. 按 `Control`++`Shift``I` (Windows、Linux) 或`I` `Command`+`Option`+ (macOS) 打开 DevTools。
+1. 按 `Ctrl`++`Shift``I` (Windows、Linux) 或`I` `Command`+`Option`+ (macOS) 打开 DevTools。
 
    :::image type="content" source="../media/evaluate-performance-get-started-side-by-side.msft.png" alt-text="左侧为演示，右侧为 DevTools" lightbox="../media/evaluate-performance-get-started-side-by-side.msft.png":::
 
@@ -135,7 +141,7 @@ _运行时_ 性能是页面运行时（而不是加载）运行时的执行方�
 
 另一个非常方便的工具是 FPS 计数，可在页面运行时提供对 FPS 的实时估计。
 
-1. 按 `Control``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
+1. 按 `Ctrl``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
 
 1. 开始在"命令 `Rendering` 菜单" **中键入内容，** 然后单击" **显示呈现"**。
 
@@ -150,7 +156,7 @@ _运行时_ 性能是页面运行时（而不是加载）运行时的执行方�
 
 测量并验证动画运行不佳后，下一步是回答"为什么？"这一问题。
 
-1. 未选择任何事件时，“**摘要**”面板将显示活动的细目。  页面大部分时间都在渲染。  由于性能是减少工作量的艺术，因此你的目标是减少花费在进行绘制工作上的时间。
+1. 未选择任何事件时， **"摘要"** 面板将显示活动的细目。  页面大部分时间都在渲染。  由于性能是减少工作量的艺术，因此你的目标是减少花费在进行绘制工作上的时间。
 
    :::image type="content" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text="摘要面板。" lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
 
@@ -178,7 +184,7 @@ _运行时_ 性能是页面运行时（而不是加载）运行时的执行方�
 
 1. 单击紫色的 **Layout 事件** 之一。  DevTools 在**摘要**面板中提供了有关事件详细信息。  实际上，存在一条有关强制重排的 (另一个单词的 _布局) _ 。
 
-1. 在摘要 **面板中** ，单击布局强制下的app.js ** ：71** **链接**。  DevTools 将转到强制布局的代码行。
+1. 在摘要 **面板中** ，单击布局 ** 强制app.js：71** **链接**。  DevTools 将转到强制布局的代码行。
 
    :::image type="content" source="../media/evaluate-performance-sources-app-update.msft.png" alt-text="导致强制布局的代码行。" lightbox="../media/evaluate-performance-sources-app-update.msft.png":::
 

@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
+ms.openlocfilehash: 4c0838678faf99d4ea3f83e7afc5af4d721c93a3
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431310"
 ---
 # <a name="log-messages-in-the-console-tool"></a>在控制台工具中记录消息
 
@@ -49,7 +55,7 @@ console.warn('This is a warning')
 
 1. 打开演示网页 [控制台消息示例：日志、信息、](https://microsoftedge.github.io/Demos/devtools-console/logging-examples.html) 错误和新窗口或选项卡中的警告。
 
-1. 按`Control`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 将打开， **主机在主** 工具栏中打开。
+1. 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 将打开， **主机在主** 工具栏中打开。
 
    演示页面已经将上述日志消息发送到 **控制台**：
 
@@ -101,7 +107,7 @@ console.log(w3techs);
 
 1. 打开演示网页 [控制台消息示例：记录](https://microsoftedge.github.io/Demos/devtools-console/logging-types.html) 新窗口或选项卡中的不同类型。
 
-1. 按`Control`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 将打开， **主机在主** 工具栏中打开。
+1. 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 将打开， **主机在主** 工具栏中打开。
 
    每种类型的结果以不同方式显示。
 
@@ -125,7 +131,7 @@ console.log(w3techs);
 <!-- ====================================================================== -->
 ## <a name="format-and-convert-values-with-specifiers"></a>使用说明符设置值的格式和转换值
 
-所有日志方法的一个特殊功能是，您可以在日志语句的消息中使用说明符。  说明符是日志消息的一部分，以百分比符号 () `%` 字符开始。  使用说明符，可以记录不同格式的某些值，甚至可以在两种格式之间转换。
+所有日志方法的一个特殊功能是，您可以在日志语句的消息中使用说明符。  说明符是日志消息的一部分，以百分比符号 () `%` 字符。  使用说明符，可以记录不同格式的某些值，甚至可以在两种格式之间转换。
 
 *  `%s` 记录为"字符串"。
 *  `%i` 或 `%d` 作为 Integers 记录。
@@ -163,7 +169,7 @@ console.log('%cImportant message follows','color:red;font-size:40px')
 
 1. 打开演示页面 [控制台消息示例：使用说明符](https://microsoftedge.github.io/Demos/devtools-console/logging-with-specifiers.html) 记录新选项卡或窗口中的内容。
 
-1. 按`Control`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 将打开， **主机在主** 工具栏中打开。
+1. 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 将打开， **主机在主** 工具栏中打开。
 
    该网页已经使用输出 **填充了** 控制台。
 
@@ -233,7 +239,7 @@ for (tech in technologies) {
 
 1. 打开演示页面 [控制台消息示例：将日志分组](https://microsoftedge.github.io/Demos/devtools-console/logging-with-groups.html) 到新选项卡或窗口中。
 
-1. 按`Control`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 将打开， **主机在主** 工具栏中打开。
+1. 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 将打开， **主机在主** 工具栏中打开。
 
    该网页已经使用输出 **填充了** 控制台。
 
@@ -287,7 +293,7 @@ console.table(bodyDimensions);
 
 1. 打开演示页面 [控制台消息示例：使用新](https://microsoftedge.github.io/Demos/devtools-console/logging-with-table.html) 窗口或选项卡中的表。
 
-1. 按`Control`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 将打开， **主机在主** 工具栏中打开。
+1. 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 将打开， **主机在主** 工具栏中打开。
 
    该网页已经使用输出 **填充了** 控制台。
 

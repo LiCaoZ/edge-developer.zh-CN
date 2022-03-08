@@ -1,20 +1,21 @@
 ---
-title: 在 WebView 中对扩展方案使用 JavaScript
-description: 了解如何在 WebView2 应用中的复杂方案中使用 JavaScript
+title: 从本机代码调用 Web 端代码
+description: 了解如何在 WebView2 应用中的复杂方案中使用 JavaScript。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 1/5/2022
-ms.openlocfilehash: 5da8ec9cf5d447827cf0f7e2b631d251ebd75630
-ms.sourcegitcommit: ae41e2c0ca42fb7eac73824c828305c7b13b4203
+ms.openlocfilehash: 244d2830c404572d9d2775980e9e923f86aa5756
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "12345896"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12433018"
 ---
-# <a name="use-javascript-in-webview-for-extended-scenarios"></a>在 WebView 中对扩展方案使用 JavaScript
+# <a name="call-web-side-code-from-native-side-code"></a>从本机代码调用 Web 端代码
+<!-- old title: Use JavaScript in WebView for extended scenarios -->
 
 使用 WebView2 控件中的 JavaScript，可以自定义本机应用以满足你的要求。 本文探讨如何在 WebView2 中使用 JavaScript，并回顾如何使用高级 WebView2 特性和功能进行开发。
 
@@ -30,7 +31,7 @@ ms.locfileid: "12345896"
 
 使用以下函数开始在 WebView 应用中嵌入 JavaScript。
 
-| API | 描述 |
+| API | 说明 |
 | --- | --- |
 | [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | 在 WebView 控件中运行 JavaScript。  请参阅 [WebView2 入门](../get-started/get-started.md)。 |
 | [OnDocumentCreatedAsync](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated) | 创建文档对象模型或 DOM (时) 运行。 |

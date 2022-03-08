@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
+ms.openlocfilehash: 8c0421ca11f3eda6abafe0be1a4e01df81327bdd
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431317"
 ---
 # <a name="filter-console-messages"></a>筛选控制台消息
 
@@ -41,7 +47,7 @@ ms.date: 04/13/2021
 <!-- ====================================================================== -->
 ## <a name="filter-by-text"></a>按文本筛选
 
-若要查看更多详细信息，若要使用文本筛选邮件，在"筛选器"文本框 **中键入** 字符串。  例如，在 `block` 框中键入 以仅显示有关浏览器阻止资源加载的消息。
+若要查看更多详细信息，若要使用文本筛选邮件，在"筛选器"文本框 **中键入** 字符串。  例如，在框中 **键入 block** ，以仅显示有关浏览器阻止资源加载的消息。
 
 :::image type="content" source="../media/console-filter-text.msft.png" alt-text="显示包含单词&quot;block&quot;的邮件。" lightbox="../media/console-filter-text.msft.png":::
 
@@ -49,7 +55,7 @@ ms.date: 04/13/2021
 <!-- ====================================================================== -->
 ## <a name="filter-by-regular-expression"></a>按正则表达式筛选
 
-[正则表达式是](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions) 筛选邮件的一种强大方法。  例如，在`/^Tracking/`**筛选器文本框中**键入以仅显示以术语 开始的邮件`Tracking`。  如果你不熟悉正则表达式，RegExr.com 了解使用正则表达式的[](https://regexr.com)一个很好的资源。
+[正则表达式是](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions) 筛选邮件的一种强大方法。  例如，在"`/^Tracking/`**筛选器"文本框中**键入 ，以仅显示以术语 开始的邮件`Tracking`。  如果你不熟悉正则表达式，那么 RegExr.com 正则表达式是一[](https://regexr.com)个很好的资源。
 
 :::image type="content" source="../media/console-filter-regex.msft.png" alt-text="使用&quot;筛选器&quot;文本框中的正则表达式显示以单词&quot;filter&quot;开始的邮件。" lightbox="../media/console-filter-regex.msft.png":::
 

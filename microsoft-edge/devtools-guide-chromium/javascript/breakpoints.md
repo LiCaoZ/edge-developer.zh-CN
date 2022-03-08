@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 423c2232c6f25715772b9ec0ec870204036a5690
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430120"
 ---
 <!-- Copyright Kayce Basques
 
@@ -56,7 +62,7 @@ ms.date: 05/04/2021
 
 1. 转到代码行。
 
-1. 代码行的左侧是行号列。  单击它。  红色图标 (或最近，行号) 旁边将显示一个蓝色矩形箭头：
+1. 代码行的左侧是行号列。  单击它。  一个红色 (或最近，行号) 旁边将显示一个蓝色矩形箭头：
 
    :::image type="content" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="代码行断点。" lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
 
@@ -89,7 +95,7 @@ console.log('c');
 
 1. 在对话框中输入条件。
 
-1. 按 `Enter` 以激活断点。  红色菱形 (或最近，) 号列顶部显示橙色图标：
+1. 按 `Enter` 以激活断点。  红色菱形 (或最近，一个橙色) 显示在行号列的顶部：
 
    :::image type="content" source="../media/javascript-sources-page-js-conditional-breakpoint.msft.png" alt-text="条件代码行断点。" lightbox="../media/javascript-sources-page-js-conditional-breakpoint.msft.png":::
 
@@ -178,7 +184,7 @@ console.log('c');
 
 1. 选择 **"源"** 工具。
 
-1. 单击 **"在异常时暂停"** (![异常时单击"](../media/pause-on-exceptions-icon.msft.png) 暂停"。) 。  图标在启用时变为蓝色。
+1. 单击 **"在异常时暂停 (**![异常时单击](../media/pause-on-exceptions-icon.msft.png)"暂停"。) 。  图标在启用时变为蓝色。
 
    :::image type="content" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="&quot;在异常时暂停&quot;按钮。" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
 
@@ -233,7 +239,7 @@ debug(hey); // This doesn't work.  hey() is out of scope.
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [JavaScript 调试功能](./reference.md) - 使用源工具中的 **调试器 UI** 。
+*  [JavaScript 调试功能](reference.md) - 使用源工具中的 **调试器 UI** 。
 *  [开始调试 JavaScript](index.md) - 使用现有网页的介绍性教程。
 *  [源工具概述](../sources/index.md) - 调试器是 **源** 工具的一部分，其中包括 JavaScript 编辑器。
 

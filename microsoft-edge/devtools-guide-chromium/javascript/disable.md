@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 2125df30afdf006b96fbb4c4c2cea47f5f1d73e2
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432234"
 ---
 <!-- Copyright Kayce Basques
 
@@ -26,9 +32,9 @@ ms.date: 05/04/2021
 
 若要关闭 JavaScript：
 
-1. [打开 DevTools](../open/index.md)。
+1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
 
-1. 按 `Control``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
+1. 按 `Ctrl``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
 
    :::image type="content" source="../media/javascript-console-command.msft.png" alt-text="命令菜单。" lightbox="../media/javascript-console-command.msft.png":::
 
@@ -46,7 +52,7 @@ ms.date: 05/04/2021
 
 若要重新启用 JavaScript：
 
-1. 按 `Control``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
+1. 按 `Ctrl``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
 
 1. 选择" **启用 JavaScript"** 命令。
 

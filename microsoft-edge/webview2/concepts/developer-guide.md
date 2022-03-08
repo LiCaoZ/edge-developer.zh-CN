@@ -1,5 +1,5 @@
 ---
-title: WebView2 开发的最佳做法
+title: WebView2 应用的开发最佳做法
 description: 了解在开发 WebView2 应用程序时要使用的开发最佳做法。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 08/03/2021
-ms.openlocfilehash: 953d9e38f221ed923b4adc438f37641a97141e73
-ms.sourcegitcommit: ae41e2c0ca42fb7eac73824c828305c7b13b4203
+ms.openlocfilehash: 818d5dc4c5adf9ad398259359100589e7d6c6540
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "12345602"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430106"
 ---
-# <a name="webview2-development-best-practices"></a>WebView2 开发的最佳做法
+# <a name="development-best-practices-for-webview2-apps"></a>WebView2 应用的开发最佳做法
 
 每个开发团队在构建其应用程序时都遵循不同的做法。  生成 WebView2 生产应用时，建议遵循这些建议和最佳做法。
 
@@ -32,7 +32,7 @@ ms.locfileid: "12345602"
 <!-- ====================================================================== -->
 ## <a name="run-compatibility-tests-regularly-when-using-the-evergreen-runtime"></a>使用 Evergreen 运行时时定期运行兼容性测试
 
-使用 Evergreen WebView2 运行时时，运行时会自动更新，因此必须定期运行兼容性测试。  若要确保 WebView2 应用继续正常工作，请针对 [Microsoft Edge Insider (preview) Channels (](https://www.microsoftedgeinsider.com/download) Beta、Dev 或 Canary) 在 WebView2 控件中测试 Web 内容。
+使用 Evergreen WebView2 运行时时，运行时会自动更新，因此必须定期运行兼容性测试。  若要确保 WebView2 应用继续正常工作，请针对 [Microsoft Edge Insider (preview) Channels (](https://www.microsoftedgeinsider.com/download) Beta、Dev 或 Canary) 测试 WebView2 控件中的 Web 内容。
 
 本指南类似于我们向 Web 开发人员提供的指导。  请参阅 [测试应用是否向前兼容](../concepts/distribution.md#test-your-app-for-forward-compatibility)。
 
@@ -105,4 +105,4 @@ WebView2 应用应 `ProcessFailed` 侦听和处理事件，以便该应用可以
 <!-- ====================================================================== -->
 ## <a name="follow-recommended-webview2-security-best-practices"></a>遵循建议的 WebView2 安全性最佳做法
 
-对于任何 WebView2 应用，请确保遵循我们建议的 WebView2 安全性最佳做法。  请参阅 [开发安全 WebView2 应用程序的最佳方案](../concepts/security.md)。
+对于任何 WebView2 应用，请务必遵循我们在开发安全 [WebView2 应用中的建议](../concepts/security.md)。

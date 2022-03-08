@@ -6,18 +6,30 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/07/2021
+ms.openlocfilehash: 31c4cb76f4c74e513b90cd603dd7ab3902e55b11
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430421"
 ---
 # <a name="tracking-prevention-in-microsoft-edge"></a>Microsoft Edge 中的跟踪防护
 
-跟踪防护功能Microsoft Edge跟踪器访问基于浏览器的存储和网络的功能，从而防止用户进行联机跟踪。  它构建于实现Microsoft Edge浏览器隐私承诺，[](https://microsoftedgewelcome.microsoft.com/privacy)同时还确保默认情况下对网站兼容性或 Web 经济适用性没有影响。
+跟踪防护功能Microsoft Edge跟踪器访问基于浏览器的存储和网络的功能，从而防止用户进行联机跟踪。
+
+跟踪防护功能专为实现浏览器Microsoft Edge承诺而构建，同时还确保[](https://microsoftedgewelcome.microsoft.com/privacy)默认情况下对网站兼容性或 Web 经济适用性没有影响。
+
+
+<!-- ====================================================================== -->
+## <a name="levels-of-tracking-prevention"></a>跟踪防护级别
 
 Microsoft Edge目前为用户提供三个级别的跟踪防护，这三个级别通过导航到 来选择`edge://settings/privacy`。
 
-![跟踪防护的三个设置。](./media/tracking-prevention-settings.png)
+![跟踪防护的三个设置。](media/tracking-prevention-settings.png)
 
 1. **基本** - 针对喜欢个性化广告的用户和不想在 Web 上跟踪的用户设计的限制性最低级别的跟踪防护。  基本仅保护用户免受恶意跟踪器（如指纹和加密器）的攻击。
 
-1. **平衡 (默认) ** - 针对希望查看个性化程度较低广告的用户而设计的默认跟踪防护级别，同时最大限度地减少在浏览 Web 时兼容性问题的风险。  平衡旨在阻止来自用户从未接触过的网站的跟踪器。
+1. **平衡 (默认 **) - 针对希望查看个性化程度较低广告的用户而设计的默认跟踪防护级别，同时最大限度地减少在浏览 Web 时兼容性问题的风险。  平衡旨在阻止来自用户从未接触过的网站的跟踪器。
 
 1. **严格** - 最严格的跟踪防护级别，专为允许交易网站兼容性以最大隐私的用户设计。
 
@@ -65,7 +77,7 @@ Microsoft Edge中的跟踪防护功能由三个主要组件组成，这三个组
 
 用户可以选择地址栏左侧的页面信息飞出图标，以找出特定页面上阻止的跟踪器：
 
-![页面信息飞出控件中阻止的跟踪器。](./media/page-info-flyout.png)
+![页面信息飞出控件中阻止的跟踪器。](media/page-info-flyout.png)
 
 如何应用强制取决于用户选择的跟踪防护级别以及可能应用的缓解。
 
@@ -75,15 +87,15 @@ Microsoft Edge中的跟踪防护功能由三个主要组件组成，这三个组
 
 为了确保尽可能保持 Web 兼容性，Microsoft Edge三种缓解措施，以帮助平衡特定情况下的强制。  这些是组织[关系缓解、](#org-relationship-mitigation)[组织参与缓解](#org-engagement-mitigation)和 [CompatExceptions 列表](#the-compatexceptions-list)。
 
-在深入分析缓解之前，需要先定义"组织"或"组织"这一概念。  [Disconnect](https://disconnect.me) 还维护一个称为 [entities.json](https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json) 的列表，该列表定义由同一父组织/公司拥有的 URL 组。  Microsoft Edge中的跟踪防护功能在组织关系缓解和[组织](#org-engagement-mitigation)参与缓解中都[](#org-relationship-mitigation)使用此列表，以最大程度地减少因跟踪防护（影响跨组织请求）导致的兼容性问题的发生。
+在深入分析缓解之前，需要先定义"组织"或"组织"这一概念。  [Disconnect](https://disconnect.me) 还维护一个称为 [entities.json](https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json) 的列表，该列表定义由同一父组织/公司拥有的 URL 组。  组织中的跟踪防护功能Microsoft Edge组织关系缓解和组织参与缓解中使用此列表[](#org-relationship-mitigation)，以最大程度地减少因[](#org-engagement-mitigation)跟踪防护（影响跨组织请求）导致的兼容性问题的发生。
 
 ### <a name="org-relationship-mitigation"></a>组织关系缓解
 
-多个热门网站同时维护网站和内容交付网络 (CDN) 为这些网站提供静态资源和内容。  为了确保这些类型的方案不受跟踪防护的影响，Microsoft Edge 在网站向同一父组织拥有的其他网站提出第三方请求时 (如 [Disconnect entities.json](https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json) 列表) 中的定义，使网站免于跟踪防护。  这一点最好通过一个示例来说明。
+多个热门网站同时维护网站和内容交付网络 (CDN) 为这些网站提供静态资源和内容。  为了确保这些类型的方案不受跟踪防护的影响，Microsoft Edge 当网站向同一父组织 (拥有的其他网站提出第三方请求时，Microsoft Edge 会免除网站跟踪防护，如 [Disconnect entities.json](https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json) 列表) 中的定义。  这一点最好通过一个示例来说明。
 
 > **示例：**
 >
-> 名为 Org1 的组织拥有域 `org1.test` `org1-cdn.test`和 ，如 [Disconnect entities.json 列表中的定义](https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json)。  Imagine分类`org1-cdn.test`为跟踪器，并且通常会应用跟踪防护强制。  如果用户访问`https://org1.test``https://org1-cdn.test``org1-cdn.test`网站尝试从 加载资源，Microsoft Edge不会对请求执行任何强制操作，即使它不是第一方 URL。  但是，如果另一个不是 Org1 组织的一部分的 URL 尝试加载同一资源，则请求将受强制执行，因为它不是同一组织的一部分。
+> 名为 Org1 的组织拥有域 `org1.test` `org1-cdn.test`和 ，如 [Disconnect entities.json 列表中的定义](https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json)。  Imagine分类`org1-cdn.test`为跟踪器，并且通常会应用跟踪防护强制。  如果用户访问`https://org1.test``https://org1-cdn.test``org1-cdn.test`网站并尝试从 加载资源，Microsoft Edge不会对请求执行任何强制操作，即使它不是第一方 URL。  但是，如果另一个不是 Org1 组织的一部分的 URL 尝试加载同一资源，则请求将受强制执行，因为它不是同一组织的一部分。
 >
 > 尽管这可放宽对属于同一组织的网站的跟踪防护措施，但不太可能带来很高的隐私风险，因为此类组织能够确定您访问过的网站/`https://org1.test``https://org1-cdn.test`资源以及使用内部后端数据。
 
@@ -97,7 +109,7 @@ Microsoft Edge中的跟踪防护功能由三个主要组件组成，这三个组
 >
 > 如果用户与 Social Org 拥有的任何一个域建立了 4.1 或更高的网站参与度分数，则认为他们与 Social Org 有关系。
 >
-> `https://content-embedder.example`如果另一个网站包含第三方内容 (`social-videos.example` 则表明来自) 的嵌入视频来自 Social Org 拥有的任何域，该视频通常会通过跟踪预防强制执行进行限制，则只要 Social Org 拥有域的用户网站参与度分数维持在阈值之上，该网站就免于跟踪防护实施。
+> `https://content-embedder.example`如果另一个网站 包含第三方内容 (`social-videos.example` 则表明来自) 的嵌入视频来自 Social Org 拥有的任何域，该视频通常会通过跟踪预防强制执行进行限制，则只要 Social Org 拥有域的用户网站参与度分数维持在阈值之上，该网站就免于跟踪防护实施。
 >
 > 如果网站不属于组织，用户必须直接使用网站参与度分数 4.1 或更高，然后才能放宽跟踪防护施加的任何存储访问/资源负载阻止。
 
@@ -105,11 +117,11 @@ Microsoft Edge中的跟踪防护功能由三个主要组件组成，这三个组
 
 ### <a name="the-compatexceptions-list"></a>CompatExceptions 列表
 
-根据 Microsoft 收到的最新用户反馈，Microsoft Edge 维护了一小部分网站 (其中大多数网站位于断开连接内容类别) 尽管已执行上述两项缓解措施，但由于跟踪防护，这些网站已中断。 此列表上的网站免于跟踪防护实施。  可以在磁盘上的以下位置 [找到](#determining-whetherhow-a-particular-url-is-classified) 该列表。  用户可以使用 中的"阻止" **选项覆盖其** 上的条目 `edge://settings/content/cookies`。
+根据 Microsoft 收到的最新用户反馈，Microsoft Edge 维护了一小部分网站列表 (其中大多数网站位于断开连接内容类别) 尽管已执行上述两项缓解措施，但由于跟踪防护，这些网站仍发生中断。 此列表上的网站免于跟踪防护实施。  可以在磁盘上的以下位置 [找到](#determining-whetherhow-a-particular-url-is-classified) 该列表。  用户可以使用 中的"阻止" **选项覆盖其** 上的条目 `edge://settings/content/cookies`。
 
-为了避免继续维护此列表，Microsoft 目前正在开发开放源代码存储 [Access API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md)。  [存储 Access API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md) 为网站开发人员提供了一种直接从用户请求存储访问权限的方法，为用户提供了有关其隐私设置如何影响其浏览体验的透明度，并给予网站开发人员控件快速直观地取消阻止。
+为了避免继续维护此列表，Microsoft 目前正在开发开放源代码存储 [Access API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md)。  [存储 Access API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md) 为网站开发人员提供了直接从用户请求存储访问权限的方法，为用户提供了有关其隐私设置如何影响其浏览体验的透明度，并给予网站开发人员控件快速直观地取消阻止。
 
-实施 [存储 Access API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md) 后，Microsoft 将弃用 CompatExceptions 列表并联系受影响的站点，使其了解问题，并请求他们使用 [存储 Access API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md)。
+实施 [存储 Access API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md) 后，Microsoft 将弃用 CompatExceptions 列表并联系受影响的站点，以让他们了解问题，并请求他们今后使用 [存储 Access API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md)。
 
 
 <!-- ====================================================================== -->
@@ -120,12 +132,12 @@ Microsoft Edge中的跟踪防护功能由三个主要组件组成，这三个组
 *  顶部是断开连接跟踪保护列表类别定义的跟踪 [程序类别](https://github.com/disconnectme/disconnect-tracking-protection/blob/master/services.json)。
 *  左侧是 Microsoft Edge (Basic、Balanced 和 Strict) 中的三个级别的跟踪) 。
 *  该 `S` 字母指示阻止存储访问。
-*  该字母 `B` 指示存储访问和资源负载 (如网络请求) 阻止。
+*  该 `B` 字母指示存储访问和资源负载 (如网络请求) 阻止。
 *  连字符 (`-`) 指示存储访问或资源负载没有应用块。
 
 | | 放大 | 分析 | 内容 | 加密 | 指纹 | 社交 | Other | 同一组织缓解 | 组织参与缓解 |
 | - | - | - | - | - | - | - | - | - | - | - |
-| **基本** | - | - | - | B | B | - | - | 已启用 | 不适用 |
+| **基本** | - | - | - | B | B | - | - | 启用 | 不适用 |
 | **平衡** | S | - | S | B | B | S | S | 已启用 | 已启用 |
 | **“严格”** | B | B | S | B | B | B | B | 已启用 | 禁用 |
 

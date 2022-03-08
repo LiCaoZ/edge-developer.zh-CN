@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: b6a4b5ae1c0f9ea72be3ec7e8f27843932ca287a
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432066"
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,7 +28,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # <a name="debug-background-services"></a>调试后台服务
 
-Microsoft Edge **** DevTools 的"后台服务"部分是 JavaScript API 的工具集合，使你的网站能够在用户未打开网站时发送和接收更新。  后台服务在功能上类似于 [后台进程](https://en.wikipedia.org/wiki/Background_process)。
+Microsoft Edge **** DevTools 的后台服务部分是 JavaScript API 的工具集合，使你的网站能够在用户未打开网站时发送和接收更新。  后台服务在功能上类似于 [后台进程](https://en.wikipedia.org/wiki/Background_process)。
 
 Microsoft Edge DevTools 将以下每个 API 都作为后台服务：
 
@@ -31,7 +37,7 @@ Microsoft Edge DevTools 将以下每个 API 都作为后台服务：
 *  [通知](#notifications)
 *  [推送消息](#push-messages)
 
-Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTools 未打开。  后台服务事件日志可帮助你确保事件已根据预期发送和接收。  您还可以检查每个事件的详细信息。
+Microsoft Edge DevTools 可能会将后台服务事件记录 3 天，即使 DevTools 未打开。  后台服务事件日志可帮助你确保事件已根据预期发送和接收。  您还可以检查每个事件的详细信息。
 
 :::image type="content" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="&quot;推送消息&quot;窗格。" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
 
@@ -43,11 +49,11 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 
 <!--Todo: add background fetch api section when available -->
 
-1. [打开 DevTools](../open/index.md)。
+1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
 
-1. 打开“**应用程序**”工具。
+1. 在 DevTools 中，在主工具栏上，选择"**应用程序"** 选项卡。 如果该选项卡不可见，请单击"更多选项卡" (**** 更多选项卡"图标](../media/more-tabs-icon-light-theme.png)。****) 按钮![，或单击"更多工具 (更多工具"图标。) 按钮。](../media/more-tools-icon-light-theme.png) ![
 
-1. 打开“**后台提取**”面板。
+1. 在左侧的"后台服务 **"部分** ，选择" **后台提取"**。  将 **打开"后台提取** "页。
 
    :::image type="content" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="&quot;后台提取&quot;面板。" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
 
@@ -68,9 +74,11 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 
 <!--Todo: add background sync api section when available -->
 
-1. [打开 DevTools](../open/index.md)。
+1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
 
-1. 打开 **应用程序工具** ，然后在左侧的 **"后台** 服务"部分，选择" **后台同步"**。
+1. 在 DevTools 中，在主工具栏上，选择"**应用程序"** 选项卡。 如果该选项卡不可见，请单击"更多选项卡" (**** 更多选项卡"图标](../media/more-tabs-icon-light-theme.png)。****) 按钮![，或单击"更多工具 (更多工具"图标。) 按钮。](../media/more-tools-icon-light-theme.png) ![
+
+1. 在左侧的"后台服务 **"部分** ，选择" **后台同步"**。 将 **打开"后台同步** "页。
 
    :::image type="content" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="&quot;后台同步&quot;窗格。" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
 
@@ -88,9 +96,11 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 
 **服务工作进程**从服务器接收一条[推送消息](https://developer.mozilla.org/docs/Web/API/Push_API)后，服务工作进程使用[通知 API](https://developer.mozilla.org/docs/Web/API/Notifications_API)向用户显示数据。  若要将通知记录 3 天，即使 DevTools 未打开：
 
-1. [打开 DevTools](../open/index.md)。
+1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
 
-1. 打开 **应用程序工具** ，然后在左侧的 **"后台** 服务"部分，选择"通知 **"**。
+1. 在 DevTools 中，在主工具栏上，选择"**应用程序"** 选项卡。 如果该选项卡不可见，请单击"更多选项卡" (**** 更多选项卡"图标](../media/more-tabs-icon-light-theme.png)。****) 按钮![，或单击"更多工具 (更多工具"图标。) 按钮。](../media/more-tools-icon-light-theme.png) ![
+
+1. 在左侧的"后台服务 **"部分，** 选择" **通知"**。  将 **打开"通知** "页。
 
    :::image type="content" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="&quot;通知&quot;窗格。" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
 
@@ -108,9 +118,11 @@ Microsoft Edge DevTools 可能会记录后台服务事件 3 天，即使 DevTool
 
 若要向用户显示推送通知，**服务工作进程**必须先使用[推送消息 API](https://developer.mozilla.org/docs/Web/API/Push_API)从服务器接收数据。  当服务工作进程准备好显示通知时，它将使用[通知 API](https://developer.mozilla.org/docs/Web/API/Notifications_API)。  若要将推送通知记录 3 天，即使 DevTools 未打开：
 
-1. [打开 DevTools](../open/index.md)。
+1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
 
-1. 打开 **应用程序工具** ，然后在左侧的 **"后台** 服务"部分，选择" **推送消息"**。
+1. 在 DevTools 中，在主工具栏上，选择"**应用程序"** 选项卡。 如果该选项卡不可见，请单击"更多选项卡" (**** 更多选项卡"图标](../media/more-tabs-icon-light-theme.png)。****) 按钮![，或单击"更多工具 (更多工具"图标。) 按钮。](../media/more-tools-icon-light-theme.png) ![
+
+1. 在左侧的"后台服务 **"** 部分，选择" **推送消息"**。  将 **打开"推送消息"** 页。
 
    :::image type="content" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="打开&quot;推送消息&quot;窗格。" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
 

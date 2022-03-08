@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/11/2021
+ms.openlocfilehash: 6650e6c7c9a36888fb6a6456d9ca6f2650e8ad61
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432633"
 ---
 <!-- Copyright Kayce Basques
 
@@ -42,7 +48,7 @@ ms.date: 05/11/2021
 
 启用端口转发：
 
-1. 在 [开发计算机和](./index.md) Android 设备之间设置远程调试。  完成后，Android 设备应显示在"检查设备"对话框和"已连接状态"指示器**的左侧菜单中**。****
+1. 在 [开发计算机和](index.md) Android 设备之间设置远程调试。  完成后，Android 设备应显示在"检查设备"对话框和"已连接状态"指示器**的左侧菜单中**。****
 
 1. 在 DevTools **中的** "检查设备"对话框中，启用 **端口转发**。
 
@@ -50,9 +56,9 @@ ms.date: 05/11/2021
 
    :::image type="content" source="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png" alt-text="添加端口转发规则。" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png":::
 
-1. 在 **左侧的设备端口** 文本框 `localhost` 中，输入你想要从该端口号访问 Android 设备上的站点。  例如，如果要从 输入 访问网站`localhost:5000``5000`。
+1. 在 **左侧的"** 设备 `localhost` 端口"文本框中，输入你想要从该端口号访问 Android 设备上的站点。  例如，如果要从 输入 访问网站`localhost:5000``5000`。
 
-1. 在右侧 **"** 本地地址"文本框中，输入您的网站托管在开发计算机中运行的 Web 服务器的 IP 地址或主机名，后跟端口号。  例如，如果您的网站在 中运行，请输入 `localhost:7331` `localhost:7331`。
+1. 在 **右侧"** 本地地址"文本框中，输入您的网站托管在开发计算机中运行的 Web 服务器的 IP 地址或主机名，后跟端口号。  例如，如果您的网站在 中运行，请输入 `localhost:7331` `localhost:7331`。
 
 1. 单击**添加**。
 

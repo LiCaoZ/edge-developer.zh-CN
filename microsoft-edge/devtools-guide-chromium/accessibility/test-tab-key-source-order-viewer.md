@@ -6,12 +6,18 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
+ms.openlocfilehash: fe42cefc5fbc15a2055d5ddb59fbfcb765bf0946
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430904"
 ---
 # <a name="test-keyboard-support-using-the-source-order-viewer"></a>使用源订单查看器测试键盘支持
 
 文档的源顺序对于辅助技术非常重要，并且可能不同于元素在呈现页面上的显示顺序。  使用 CSS，您可以直观地对页面元素进行重新排序，但这并不意味着屏幕阅读器等辅助技术将按相同的顺序表示页面元素。
 
-为了确保文档具有逻辑顺序，可以使用源顺序查看器用指定文档源代码**** 中顺序的数字标记不同的页面元素。  源**顺序查看器**位于"样式"**** 选项卡 (**"按钮附近的**"辅助功能") 。
+为了确保文档具有逻辑顺序，可以使用源顺序查看器用指定文档源代码**** 中顺序的数字标记不同的页面元素。  "**源订单查看器**"位于"**** 样式"选项卡 (附近的"辅助功能"选项卡****) 。
 
 
 <!-- ====================================================================== -->
@@ -27,7 +33,7 @@ ms.date: 06/07/2021
 
 1. 侧边栏导航菜单的蓝色链接："**动物**、动物****"和****"**Alpacas"**。 ****
 
-1. 在"捐赠"表单中的"支持"文本框中。
+1. "捐赠"表单中的"捐赠"文本框。
 
 1. 顶部导航栏中的按钮："主页"、******"采用动物**"、**"完成**时间"、**"作业**"和"关于**我们"**。
 
@@ -50,7 +56,7 @@ ms.date: 06/07/2021
 
 1. 选中" **源订单查看器"** 复选框。
 
-1. 在页面右上角的"**设置"，** 单击 **"X**"关闭设置页。  在 DevTools 顶部，消息 **一个或多个设置已更改，要求重新加载生效。** 显示。  单击" **重新加载 DevTools"** 按钮。
+1. 在页面右上角，单击设置 **X** 关闭**** 设置页。  在 DevTools 顶部，消息 **一个或多个设置已更改，要求重新加载生效。** 显示。  单击" **重新加载 DevTools"** 按钮。
 
 
 ### <a name="activating-and-using-the-source-order-viewer"></a>激活和使用源订单查看器
@@ -67,7 +73,7 @@ ms.date: 06/07/2021
 
 1. 在"元素"工具的 DOM **树中，** 选择主要布局元素，如 `header` 元素。  数字覆盖现在显示在呈现的页面的各个部分，指示不同元素的源顺序。
 
-   :::image type="content" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="激活源订单查看器会将源中的元素顺序显示为页面上的覆盖层。" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
+   ![激活源订单查看器会将源中的元素顺序显示为页面上的覆盖层。](../media/a11y-testing-source-order-viewer.msft.png)
 
 1. 滚动页面以查看所有数字覆盖，包括页面页脚部分。
 

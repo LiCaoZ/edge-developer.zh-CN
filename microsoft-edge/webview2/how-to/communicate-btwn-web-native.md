@@ -1,20 +1,20 @@
 ---
-title: 将 Web 内容嵌入本机应用程序中
+title: 本机代码和 Web 端代码的互操作
 description: 使用 WebView2 将 Web 内容嵌入本机应用程序中。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 10/15/2021
-ms.openlocfilehash: 9858f276afc2637382497fa7b826a8ecd0f2eb29
-ms.sourcegitcommit: ae41e2c0ca42fb7eac73824c828305c7b13b4203
+ms.date: 2/24/2022
+ms.openlocfilehash: ac09a18d1a7df489fc16175c5690b7ecf9951f5d
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "12345868"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432073"
 ---
-# <a name="embed-web-content-into-native-applications"></a>将 Web 内容嵌入本机应用程序中
+# <a name="interop-of-native-side-and-web-side-code"></a>本机代码和 Web 端代码的互操作
 
 使用 Microsoft Edge WebView2 控件，可以将 Web 内容嵌入本机应用程序中。  您可以根据需要完成的任务以不同方式使用 WebView2。  本文介绍如何使用简单消息、JavaScript 代码和本机对象进行通信。
 
@@ -27,7 +27,9 @@ ms.locfileid: "12345868"
 <!-- ====================================================================== -->
 ## <a name="before-you-begin"></a>在开始之前
 
-本教程将分步演示示例应用代码，以演示 WebView2 中的一些通信功能。  克隆 [WebView2 示例应用](https://github.com/MicrosoftEdge/WebView2Samples)、生成并运行以继续操作。
+本教程将分步演示示例应用代码，以演示 WebView2 中的一些通信功能。  克隆 [WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples)`.sln` 存储库、在 Visual Studio 中打开文件、生成项目并运行 (debug) 以执行本文中的步骤。
+
+有关克隆存储库的详细步骤，请参阅 [WebView2 示例](../code-samples-links.md)。
 
 
 <!-- ====================================================================== -->
@@ -53,7 +55,7 @@ WebView2 控件让你在应用程序的 Web 和本机之间交换简单消息。
 
    我们如何更改文本颜色？  示例首先在本机创建按钮。  然后，该示例添加以下代码，以在单击按钮时发布 Web 消息。  此代码将 Web 文本的颜色更改为蓝色。
 
-   该示例包括 C++ 代码，用于创建单击Windows调用`SendJsonWebMessage()`的按钮。
+   该示例包括 C++ 代码，用于创建Windows时调用`SendJsonWebMessage()`的按钮。
 
    有关使用 C++ 创建按钮的信息，请参阅 [如何创建按钮](/windows/win32/controls/create-a-button)。
 
@@ -77,7 +79,7 @@ WebView2 控件让你在应用程序的 Web 和本机之间交换简单消息。
     ```
 
    > [!NOTE]
-   > 本教程的其余部分使用 `ScenarioWebMessage.html` WebView2 示例中的文件。  在工作时比较自己的 HTML 文件，或复制并粘贴[内容ScenarioWebMessage.html。 ](https://github.com/MicrosoftEdge/WebView2Samples/blob/a12bfcc2bc8a1155529c35c7bd4645036f492ca0/SampleApps/WebView2APISample/assets/ScenarioWebMessage.html)
+   > 本教程的其余部分使用 `ScenarioWebMessage.html` WebView2 示例中的文件。  在您工作时比较您自己的 HTML 文件，或复制并粘贴来自ScenarioWebMessage.html[ 的内容 ](https://github.com/MicrosoftEdge/WebView2Samples/blob/a12bfcc2bc8a1155529c35c7bd4645036f492ca0/SampleApps/WebView2APISample/assets/ScenarioWebMessage.html)。
 
    此示例使用 Web 上的 JavaScript 事件侦听器。
 
@@ -86,7 +88,8 @@ WebView2 控件让你在应用程序的 Web 和本机之间交换简单消息。
    ```JavaScript
    window.chrome.webview.addEventListener('message', arg => {
       if ("SetColor" in arg.data) {
-         document.getElementById("colorable").style.color = arg.data.SetColor;
+         document.getElementById("colorable").style.color = 
+         arg.data.SetColor;
       }
    });
    ```
@@ -97,18 +100,20 @@ WebView2 控件让你在应用程序的 Web 和本机之间交换简单消息。
 
    ```html
    <h1>WebMessage sample page</h1>
-   <p>This page demonstrates basic interaction between the host app and the webview by
-   means of Web Messages.</p>
+   <p>This page demonstrates basic interaction between the host app 
+   and the webview by means of Web Messages.</p>
 
    <h2>Posting Messages</h2>
-   <p id="colorable">Messages can be posted from the host app to the webview using the
-   functions <code>ICoreWebView2::PostWebMessageAsJson</code> and
-   <code>ICoreWebView2::PostWebMessageAsString</code>. Try selecting the menu item
-   "Script > Post Message JSON" to send the message <code>{"SetColor":"blue"}</code>.
+   <p id="colorable">Messages can be posted from the host app to the 
+   webview using the functions
+   <code>ICoreWebView2::PostWebMessageAsJson</code> and
+   <code>ICoreWebView2::PostWebMessageAsString</code>. Try selecting 
+   the menu item "Script > Post Message JSON" to send the message 
+   <code>{"SetColor":"blue"}</code>.
    It should change the text color of this paragraph.</p>
    ```
 
-1. 该`Post Message JSON`菜单项位于生成的Microsoft Visual C++文件 [WebView2APISample.rc 中](https://github.com/MicrosoftEdge/WebView2Samples/blob/c7d7c75184dec0c46634f27a8f4beba320b04618/SampleApps/WebView2APISample/WebView2APISample.rc)。
+1. 该`Post Message JSON`菜单项位于已生成Microsoft Visual C++文件 [WebView2APISample.rc 中](https://github.com/MicrosoftEdge/WebView2Samples/blob/c7d7c75184dec0c46634f27a8f4beba320b04618/SampleApps/WebView2APISample/WebView2APISample.rc)。
 
    ```xml
    MENUITEM "Post Message JSON",           IDM_POST_WEB_MESSAGE_JSON
@@ -144,10 +149,10 @@ C++ 文件处理标题文本，并作为字符串将文本传达给主机应用�
 
    ```html
    <h2>Receiving Messages</h2>
-   <p>The host app can receive messages by registering an event handler with
-   <code>ICoreWebView2::add_WebMessageReceived</code>. If you enter text and click
-   "Send", this page will send a message to the host app which will change the text of
-   the title bar.</p>
+   <p>The host app can receive messages by registering an event handler 
+   with <code>ICoreWebView2::add_WebMessageReceived</code>. If you 
+   enter text and click "Send", this page will send a message to the 
+   host app which will change the text of the title bar.</p>
    <input type="text" id="title-text"/>
    <button onclick="SetTitleText()">Send</button>
    ```
@@ -198,21 +203,24 @@ C++ 文件处理标题文本，并作为字符串将文本传达给主机应用�
 
 当主机应用请求时，C++ 文件获取窗口边界，并将数据作为 JSON Web 消息发送到 WebView2。
 
+1. HTML 文件包含一个按钮，用于从主机应用获取窗口边界：
+
+   ```html
+   <h2>Round trip</h2>
+   <p>The host app can send messages back in response to received 
+   messages. If you click the <b>Get window bounds</b> button, the 
+   host app reports back the bounds of its window, which are 
+   displayed in the text box.</p>
+   <button onclick="GetWindowBounds()">Get window bounds</button><br>
+   <textarea id="window-bounds" rows="4" readonly></textarea>
+   ```
+
 1. 当用户单击该按钮时，WebView2 使用 将消息从网页传输到本机应用程序 `window.chrome.webview.postMessage`。
 
    ```html
    function GetWindowBounds() {
       window.chrome.webview.postMessage("GetWindowBounds");
    }
-   ```
-
-1. HTML 文件包含一个按钮，用于从主机应用获取窗口边界：
-
-   ```html
-   <h2>Round trip</h2>
-   <p>The host app can send messages back in response to received messages. If you click the <b>Get window bounds</b> button, the host app reports back the bounds of its window, which are displayed in the text box.</p>
-   <button onclick="GetWindowBounds()">Get window bounds</button><br>
-   <textarea id="window-bounds" rows="4" readonly></textarea>
    ```
 
 1. [ScenarioWebMessage.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/a12bfcc2bc8a1155529c35c7bd4645036f492ca0/SampleApps/WebView2APISample/ScenarioWebMessage.cpp) 中的事件处理程序获取窗口边界，然后使用 将数据发送到主机应用`TryGetWebMessageAsString`：
@@ -255,20 +263,6 @@ C++ 文件处理标题文本，并作为字符串将文本传达给主机应用�
    }).Get(), &m_webMessageReceivedToken));
    ```
 
-1. 主机应用使用已生成`Inject Script`资源脚本Microsoft Visual C++ [WebView2APISample.rc](https://github.com/MicrosoftEdge/WebView2Samples/blob/c7d7c75184dec0c46634f27a8f4beba320b04618/SampleApps/WebView2APISample/WebView2APISample.rc) 中的菜单项将窗口边界发送回网页。
-
-   ```xml
-      MENUITEM "Inject Script",               IDM_INJECT_SCRIPT
-   ```
-
-1. 脚本文件反过来调用 `IDM_INJECT_SCRIPT` [ScriptComponent.cpp 中的大小写](https://github.com/MicrosoftEdge/WebView2Samples/blob/c7d7c75184dec0c46634f27a8f4beba320b04618/SampleApps/WebView2APISample/ScriptComponent.cpp)：
-
-   ```cpp
-      case IDM_INJECT_SCRIPT:
-         InjectScript();
-         return true;
-   ```
-
    窗口边界显示在网页上。
 
 
@@ -277,7 +271,7 @@ C++ 文件处理标题文本，并作为字符串将文本传达给主机应用�
 
 此方案演示如何在 Web 端运行 JavaScript。  在此方法中，主机应用指定要运行的 JavaScript 代码，并通过 将代码传递给 Web `ExecuteScriptAsync`。  函数 `ExecuteScriptAsync` 将 JavaScript 结果返回给调用方 `ExecuteScript` 。
 
-有关详细信息，请参阅在 [WebView2 应用中使用 JavaScript](javascript.md)。
+有关详细信息，请参阅在 [WebView2 中使用 JavaScript (从本机代码库运行 JavaScript) ](javascript.md)。
 
 
 <!-- ====================================================================== -->

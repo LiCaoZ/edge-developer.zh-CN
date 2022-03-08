@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
+ms.openlocfilehash: f2ab7528dd824955474647b11f16cc53c7bceeb1
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430554"
 ---
 # <a name="simulate-reduced-motion"></a>模拟运动减少
 
@@ -26,12 +32,12 @@ Web 产品中的动画可能是一个辅助功能问题。  操作系统通过�
 
 若要模拟操作系统的缩减运动设置，而无需更改操作系统设置：
 
-1. 在 `Control``P``Shift`++Windows/Linux 或 `Command``Shift`++`P` macOS 上键入以打开**命令菜单**。
+1. 按 `Ctrl``P``Shift`++Windows/Linux 或 `Command``Shift`++`P` macOS 打开**命令菜单**。
     
     > [!div class="mx-imgBorder"]
     > ![打开命令菜单。](../media/reduced-motion-open-command-menu.png)
 
-1. 键入 `reduced`，以打开和关闭模拟。  选择 **模拟 CSS prefers-reduced-motion** 选项并按 `Enter`。
+1. 键入 **reduced**，以打开和关闭模拟。  选择 **"模拟 CSS 首选-减少运动"** 选项，然后按 `Enter`。
 
     > [!div class="mx-imgBorder"]
     > !["命令"菜单中的"模拟 CSS 首选减少运动"选项。](../media/reduced-motion-command-menu-entry.png)

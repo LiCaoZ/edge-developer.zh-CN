@@ -7,14 +7,24 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 11/17/2021
+ms.openlocfilehash: 8b08afeed9e7b2aac7cf5585ccbc045a29b64645
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431128"
 ---
 # <a name="puppeteer-overview"></a>Puppeteer 概述
 
-[部署程序](https://pptr.dev)是一[个节点](https://nodejs.org)库，它提供高级 API 以使用 [DevTools Microsoft Edge控制应用程序。](https://chromedevtools.github.io/devtools-protocol)  默认情况下，安装 [者启动无](https://en.wikipedia.org/wiki/Headless_browser) 头浏览器。  无头浏览器不会在 UI (用户界面) ，因此必须使用命令行。  还可以将"部署器"配置为在无 (运行完整) Microsoft Edge。
+[通过](https://pptr.dev) [DevTools](https://chromedevtools.github.io/devtools-protocol) 协议，Chromium基于浏览器（包括 Microsoft Edge）的浏览器提供高级 API。
 
-默认情况下，当你安装一个安装安装工具时，安装程序会下载最新版本的 [Chromium](https://www.chromium.org/Home)，该浏览器也是Microsoft Edge[构建的开放源代码浏览器](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration)。
+默认情况下，安装 [者启动无](https://en.wikipedia.org/wiki/Headless_browser) 头浏览器。  无头浏览器不会在 UI (用户界面) ，因此必须使用命令行。  还可以将安装程序配置为在无 (运行完整) Microsoft Edge。
+
+默认情况下，当你安装一个安装安装工具时，安装程序会下载最新版本的 [Chromium](https://www.chromium.org/Home)，该浏览器也是Microsoft Edge构建[的开放源代码浏览器](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration)。
 
 如果已安装Microsoft Edge，可以使用[用户核心](https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core)。  `puppeteer-core` 是启动现有浏览器安装的一个轻型版本的一个（如 Microsoft Edge）。  若要下载Microsoft Edge，请转到下载[Microsoft Edge预览体验成员频道。](https://www.microsoftedgeinsider.com/download)
+
+部署程序是一 [个节点](https://nodejs.org) 库。
 
 
 <!-- ====================================================================== -->
@@ -57,7 +67,7 @@ yarn add puppeteer-core
     })();
     ```
     
-1.  按照后续步骤查找可执行路径，然后更改为`executablePath`指向安装Microsoft Edge。  例如，在 macOS 上，`executablePath`Microsoft Edge Canary 应设置为 `/Applications/Microsoft\ Edge\ Canary.app/`。
+1.  按照后续步骤查找可执行路径，然后更改为`executablePath`指向安装的 Microsoft Edge。  例如，在 macOS 上，`executablePath`Microsoft Edge Canary 应设置为 `/Applications/Microsoft\ Edge\ Canary.app/`。
 
 1.  若要查找 `executablePath`，一个简单的手动方法是 `edge://version` 转到 并复制该 **页面上的可执行** 文件路径。
 
@@ -71,7 +81,7 @@ yarn add puppeteer-core
     yarn add edge-paths
     ```
     
-1.  然后，如果使用 查找 `edge-paths` 可执行路径，请运行类似以下示例的代码。 它使用[边缘路径](https://www.npmjs.com/package/edge-paths)包以编程方式在操作系统上查找Microsoft Edge路径：
+1.  然后，如果使用 查找 `edge-paths` 可执行路径，请运行类似以下示例的代码。 它使用[边缘路径](https://www.npmjs.com/package/edge-paths)包以编程方式查找在操作系统上安装Microsoft Edge路径：
 
     ```javascript
     const edgePaths = require("edge-paths");
@@ -79,7 +89,7 @@ yarn add puppeteer-core
     const EDGE_PATH = edgePaths.getEdgePath();
     ```
     
-1.  现在，你已经找到可执行路径 (或以编程方式) ，在 `example.js`中设置 `executablePath: EDGE_PATH`。  保存更改。
+1.  现在，你已经找到可执行路径 (以手动或编程方式) ，在 中设置 `example.js``executablePath: EDGE_PATH`。  保存更改。
 
 1.  从 `example.js` 命令行运行：
 
@@ -101,7 +111,7 @@ yarn add puppeteer-core
 
 *  [WebDriver](../webdriver-chromium/index.md)
 *  [WebDriver (EdgeHTML)](/archive/microsoft-edge/legacy/developer/webdriver/index)
-*  [Chrome 开发人员工具协议查看器GitHub](https://chromedevtools.github.io/devtools-protocol)
+*  [Chrome DevTools 协议查看器GitHub](https://chromedevtools.github.io/devtools-protocol)
 *  [Microsoft Edge：通过 Microsoft 体验博客上的更多开放源代码协作改善 Web](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration)
 *  [下载 Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download)
 *  [Chromium项目Chromium](https://www.chromium.org/Home)
@@ -110,4 +120,4 @@ yarn add puppeteer-core
 *  [一对多核](https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core)
 *  [Page.setViewport () on 一台（位于百利场上）](https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-pagesetviewportviewport)
 *  [维基百科上的无头浏览器](https://en.wikipedia.org/wiki/Headless_browser)
-*  [请与 Microsoft Edge DevTools](../devtools-guide-chromium/contact.md) 团队联系，发送有关使用 Feedbackeer、用户核心和 Microsoft Edge。
+*  [请联系 Microsoft Edge DevTools](../devtools-guide-chromium/contact.md) 团队，发送有关使用开发工具、处理器核心和Microsoft Edge。

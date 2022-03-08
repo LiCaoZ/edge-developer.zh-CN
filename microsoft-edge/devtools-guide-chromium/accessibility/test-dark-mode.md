@@ -1,11 +1,17 @@
 ---
 title: 检查深色主题和浅主题的对比度问题
-description: 使用呈现工具中的"模拟 CSS 媒体功能首选-配色方案\"下拉列表) 检查深色主题和浅色主题 (的对比度问题。
+description: 使用呈现工具中的"模拟 CSS 媒体功能首选-配色方案\"下拉列表) 查看深色主题和浅色主题 (深色模式和浅色主题控件的对比度问题。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
+ms.openlocfilehash: b665c9461bf3ba0d7df5f7dc0493862e0bb72a16
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430955"
 ---
 # <a name="check-for-contrast-issues-with-dark-theme-and-light-theme"></a>检查深色主题和浅主题的对比度问题
 
@@ -15,7 +21,7 @@ ms.date: 06/07/2021
 
 大多数操作系统都提供深色模式和浅色模式。  您的网页可以使用 CSS 媒体查询对此操作系统设置做出反应。  您可以使用呈现工具中的 CSS 选项测试这些主题并测试 CSS `prefers-color-scheme` 媒体查询，而无需更改 **操作系统** 设置。
 
-例如，辅助功能测试演示页面包括浅色主题和深色主题。  演示页面从操作系统继承深色或浅色主题设置。  如果我们使用 DevTools 模拟将操作系统设置为浅色方案，然后刷新演示网页，问题工具将显示六个色对比度**** 问题，而不是两个。   (你可能会看到不同的数字。) 
+例如，辅助功能测试演示页面包括浅色主题和深色主题。  演示页面从操作系统继承深色或浅色主题设置。  如果我们使用 DevTools 模拟将操作系统设置为浅色方案，然后刷新演示网页，问题工具将显示六个色对比度**** 问题，而不是两个。   (您可能会看到不同的数字。) 
 
 若要模拟用户的首选颜色主题选择：：
 
@@ -33,11 +39,13 @@ ms.date: 06/07/2021
 
    :::image type="content" source="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png" alt-text="由于浅色主题更改而检测到新的对比度问题。" lightbox="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png":::
 
-    在我们的演示页面上，页面的 **"私人** 状态"部分在浅色模式下不可读，需要更改。
+    在我们的演示页面上，页面的 **"私人** 状态"部分在浅色模式下不可读，需要更改：
 
    :::image type="content" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="在浅色模式下，&quot;私人状态&quot;部分有对比度问题。" lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
 
 1. 在 DevTools 中，选择 **"元素**`Ctrl`+`F`"工具，然后按 Windows/Linux `Command`+`F` 或 macOS。  将显示 **"** 查找"文本框，以在 HTML DOM 树中搜索。
+
+   !["元素"工具中 DOM 树的"查找"文本框。](../media/find-in-dom-tree.png)
 
 1. 输入 `scheme`。  找到以下 CSS 媒体查询，现在可更新相应的 CSS 文件。
 
@@ -50,5 +58,5 @@ ms.date: 06/07/2021
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [在呈现的页面中模拟深色或浅色方案](./preferred-color-scheme-simulation.md)
+*  [在呈现的页面中模拟深色或浅色方案](preferred-color-scheme-simulation.md)
 *  [使用 DevTools 的辅助功能测试概述](accessibility-testing-in-devtools.md)

@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/06/2021
+ms.openlocfilehash: fe90a426a62cae90d751ca0cfdcc3c7b5a6518fb
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432892"
 ---
 # <a name="microsoft-edge-devtools-protocol"></a>Microsoft Edge 开发工具协议
 
@@ -14,7 +20,7 @@ ms.date: 04/06/2021
 > [!NOTE]
 > 随着 Microsoft Edge 的基础 Web 平台Chromium，Microsoft Edge ([EdgeHTML) DevTools 协议](/archive/microsoft-edge/legacy/developer/devtools-protocol/index)将不会收到任何进一步的更新。  今后，Microsoft Edge开发工具协议将匹配 Chrome DevTools 协议的 API。
 >
-> `ms` Microsoft Edge ([DevTools](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) 协议不再) EdgeHTML Microsoft Edge中前缀的任何方法。
+> Microsoft Edge (DevTools `ms` 协议不再) [EdgeHTML Microsoft Edge DevTools](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) 协议中前缀的任何方法。
 
 
 <!-- ====================================================================== -->
@@ -24,13 +30,13 @@ ms.date: 04/06/2021
 
 1.  关闭所有 Microsoft Edge。
 
-1.  使用Microsoft Edge调试端口启动远程调试端口。
+1.  使用Microsoft Edge调试端口启动客户端。
 
     ```shell
     msedge.exe --remote-debugging-port=9222
     ```
 
-1.  （可选）可以使用不同的用户配置文件启动Microsoft Edge单独的应用程序实例。
+1.  （可选）可以使用不同的用户配置文件Microsoft Edge单独的应用程序实例。
 
     ```shell
     msedge.exe --user-data-dir=<some directory>
@@ -58,7 +64,7 @@ Microsoft Edge DevTools 协议支持以下 HTTP 终结点。
 
 **参数**
 
-**无**
+无。
 
 **Return 对象**
 
@@ -81,7 +87,7 @@ Microsoft Edge DevTools 协议支持以下 HTTP 终结点。
 
 **参数**
 
-**无**
+无。
 
 **Return 对象**
 
@@ -95,7 +101,7 @@ Microsoft Edge DevTools 协议支持以下 HTTP 终结点。
 
 **参数**
 
-**无**
+无。
 
 **Return 对象**
 
@@ -131,13 +137,13 @@ String("Target is closing")
 <!-- ====================================================================== -->
 ## <a name="remote-tools-for-microsoft-edge-beta"></a>Microsoft Edge 适用的远程工具 (Beta)
 
-现在，你可以从) 安装 [Microsoft Edge (Beta ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) [Microsoft Store。](https://www.microsoft.com/store/apps/windows)  此应用使你能够远程调试Microsoft Edge计算机Windows 10或更高版本设备上运行的应用。
+现在，你可以从 Microsoft Store 安装 [Microsoft Edge (Beta ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)) [远程Microsoft Store](https://www.microsoft.com/store/apps/windows)。  此应用使你能够远程调试Microsoft Edge计算机Windows 10或更高版本设备上运行的应用。
 
 若要了解如何设置你的 Windows 设备，以及如何从你的开发计算机连接到该设备，请参阅开始使用远程调试[Windows设备](../devtools-guide-chromium/remote-debugging/windows.md)。
 
-[Microsoft Edge (Beta) ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) 的远程工具使用与开发人员工具相同的 Microsoft Edge DevTools 协议与在要调试的 Windows 10 或更高版本设备上运行的 [](../devtools-guide-chromium/index.md) Microsoft Edge 进行通信。  每次调用协议 `/msedge/` 之前，此应用程序只是预先 () `pid` 进程 ID。  它支持以下 HTTP 终结点。
+[Microsoft Edge (Beta) ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) 的远程工具使用与 [DevTools 相同的 Microsoft Edge DevTools](../devtools-guide-chromium/overview.md) 协议与在要调试的 Windows 10 或更高版本设备上运行的 Microsoft Edge 进行通信。  每次调用协议之前， `/msedge/` 此应用程序只是预先 () `pid` 进程 ID。  它支持以下 HTTP 终结点。
 
-以下参考部分适用于远程工具Microsoft Edge。
+以下参考部分适用于远程工具 for Microsoft Edge。
 
 
 <!-- ====================================================================== -->
@@ -147,7 +153,7 @@ String("Target is closing")
 
 **参数**
 
-**无**
+无。
 
 **Return 对象**
 
@@ -175,11 +181,11 @@ String("Target is closing")
 <!-- ====================================================================== -->
 ## <a name="msedgepidjsonlist"></a>/msedge/[pid]/json/list
 
-提供与提供的调试匹配的 Microsoft Edge 实例的候选页面`[pid]`目标列表。
+提供与提供的用于调试的 Microsoft Edge 匹配的候选页面目标`[pid]`列表。
 
 **参数**
 
-**无**
+无。
 
 **Return 对象**
 
@@ -200,11 +206,11 @@ String("Target is closing")
 <!-- ====================================================================== -->
 ## <a name="msedgepidjsonversion"></a>/msedge/[pid]/json/version
 
-提供有关与提供的Microsoft Edge`[pid]`版本匹配的开发人员工具实例及其支持的 DevTools 协议版本的信息。
+提供有关与提供的Microsoft Edge`[pid]`版本匹配的应用程序实例及其支持的 DevTools 协议版本的信息。
 
 **参数**
 
-**无**
+无。
 
 **Return 对象**
 
@@ -227,14 +233,14 @@ String("Target is closing")
 
 **参数**
 
-**无**
+无。
 
 **Return 对象**
 
-JSON 对象，表示与所提供的实例Microsoft Edge使用`[pid]`的协议版本的可用 API 图面。
+JSON 对象，表示与所提供的实例Microsoft Edge使用的协议版本的可用 `[pid]` API 图面。
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [在 WebView2 中使用 Chrome DevTools 协议](../webview2/how-to/chromium-devtools-protocol.md)
+* [在 WebView2 应用中使用 Chrome DevTools 协议](../webview2/how-to/chromium-devtools-protocol.md)

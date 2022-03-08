@@ -6,10 +6,16 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/28/2021
+ms.openlocfilehash: e644203067c4ad8f98ac6466dc0abb888c9c4f9c
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432941"
 ---
 # <a name="find-source-files-for-a-page-using-the-search-tool"></a>使用搜索工具查找页面的源文件
 
-使用 **搜索** 工具查找网页的特定源文件。
+使用 **搜索** 工具查找网页的特定源文件，包括 HTML、CSS、JavaScript 和图像文件。
 
 网页主要是浏览器用来显示内容的 HTML 文件。  但网页通常需要 HTML 文件（如 CSS、JavaScript 或图像文件）之外的其他资源，以提供更丰富的内容。
 
@@ -21,11 +27,13 @@ ms.date: 10/28/2021
 
 若要快速打开 **搜索工具** ，请执行以下操作：
 
-1. [打开 DevTools](../open/index.md) (`F12`) 。
+1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
 
-1. 按 `Control`++`Shift``F` (Windows/Linux) 或 (`F` `Command`+`Option`+macOS) 。
+1. 在 DevTools 中，按`Esc`打开"箱"，然后在"箱"工具栏上，选择"搜索 **"** 选项卡。 如果该**** 选项卡不可见![****，请单击"更多选项卡" (更多选项卡"图标](../media/more-tabs-icon-light-theme.png)。) 按钮![，或者单击"更多工具 (更多工具](../media/more-tools-icon-light-theme.png)"图标。) 按钮。
 
-The **Search** tool appears in the **Drawer**， and shows the search toolbar：
+   或者，按 `Ctrl`++`Shift``F` (Windows/Linux) 或 (`F` `Command`+`Option`+macOS) 。
+
+The **Search** tool appears in the **Drawer**， with a search toolbar：
 
 :::image type="content" source="../media/search-tool/search-tool-first-open-reduced.png" alt-text="搜索工具，包含搜索工具栏。" lightbox="../media/search-tool/search-tool-first-open.png":::
 
@@ -37,9 +45,9 @@ The **Search** tool appears in the **Drawer**， and shows the search toolbar：
 
 从命令 **菜单中** 打开搜索 **工具**：
 
-1. [打开 DevTools](../open/index.md) (`F12`) 。
+1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
 
-1. 按"命令[菜单"](../command-menu/index.md)，`Control`++`Shift``P` (Windows/Linux) 或 (`P` `Command`+`Shift`+macOS) 。
+1. 按"命令[菜单"](../command-menu/index.md)，`Ctrl`++`Shift``P` (Windows/Linux) 或 (`P` `Command`+`Shift`+macOS) 。
 
 1. 键入 `search`，然后按 `Enter`。
 
@@ -62,11 +70,11 @@ The **Search** tool appears in the **Drawer**， and shows the search toolbar：
 
 
 <!-- ====================================================================== -->
-## <a name="match-case-lowercase-or-uppercase-characters"></a>大小写 (小写或大写字符) 
+## <a name="match-case-lowercase-or-uppercase-characters"></a>匹配大小写 (小写或大写) 
 
 默认情况下， **搜索** 工具不区分大小写。  搜索词匹配该词的出现次数，无论小写还是大写字符。
 
-若要仅查找与特定大小写匹配的结果 (小写或大写) ，**** `Aa` 请单击搜索工具栏中的"区分大小写 () "按钮。
+若要仅查找与特定大小写匹配的结果 (小写或大写) ，**** `Aa` 请单击搜索工具栏中的"区分大小写" () "按钮。
 
 
 <!-- ====================================================================== -->
@@ -98,4 +106,4 @@ The **Search** tool appears in the **Drawer**， and shows the search toolbar：
 <!-- ====================================================================== -->
 ## <a name="clear-a-search"></a>清除搜索
 
-若要清除搜索结果，请单击"清除 (**** !["搜索按钮](../media/search-tool/search-tool-clear.png)。) "按钮。
+若要清除搜索结果，请单击"清除 (**** !["搜索按钮](../media/search-tool/search-tool-clear.png)。) 中的"清除"按钮。

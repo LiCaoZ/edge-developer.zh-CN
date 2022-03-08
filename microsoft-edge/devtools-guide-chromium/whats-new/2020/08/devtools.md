@@ -1,11 +1,17 @@
 ---
 title: 'DevTools (Microsoft Edge 86) '
-description: 将键盘快捷方式与Visual Studio Code、模拟 Surface Duo 和 Samsung 则折叠、CSS 网格覆盖改进等匹配。
+description: 将键盘快捷方式与键盘Visual Studio Code、模拟 Surface Duo 和 Samsung 一起折叠、CSS 网格覆盖改进等。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: bf5df7cc85d75239dfc2e48fcb204461caa3bb37
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431058"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -20,7 +26,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="whats-new-in-devtools-microsoft-edge-86"></a>DevTools 86 (Microsoft Edge中的新增) 
+# <a name="whats-new-in-devtools-microsoft-edge-86"></a>DevTools (Microsoft Edge 86) 
 
 
 <!-- ====================================================================== -->
@@ -30,13 +36,13 @@ ms.date: 05/04/2021
 
 ### <a name="match-keyboard-shortcuts-in-devtools-to-visual-studio-code"></a>将 DevTools 中的键盘快捷方式与Visual Studio Code
 
-在 Microsoft Edge 86 中，你可以将 DevTools 中的键盘快捷方式与"代码"中的Microsoft Visual Studio[匹配](https://code.visualstudio.com)。
+在 Microsoft Edge 86 中，可以将 DevTools 中的键盘快捷方式与 Microsoft Visual Studio [代码中的快捷方式相匹配](https://code.visualstudio.com)。
 
 :::image type="content" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="将 DevTools 中的键盘快捷方式与Visual Studio Code。" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
 
 若要激活此功能，请参阅在 [DevTools 中自定义键盘快捷方式](../../../customize/shortcuts.md)。
 
-例如，用于暂停或继续运行脚本的键盘快捷方式在 [Visual Studio Code 为](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) `F5`。  使用 **DevTools (Default) ** 预设，DevTools `F8`中的同一快捷方式是 ，但在选择 **Visual Studio Code** 预设`F5`时，该快捷方式现在也是 。
+例如，用于暂停或继续运行脚本的键盘快捷方式[Visual Studio Code 。](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) `F5`  使用 **DevTools ** (Default) 预设，DevTools `F8`中的同一快捷方式是 ，但在选择 **Visual Studio Code** `F5`预设时，该快捷方式现在也是 。
 
 Chromium问题 [#174309](https://crbug.com/174309)
 
@@ -44,7 +50,7 @@ Chromium问题 [#174309](https://crbug.com/174309)
 
 :::image type="content" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能。":::
 
-现在，你能够在两台新设备上测试网站或应用的外观：[Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) 和 [Samsung 一](https://www.samsung.com/us/mobile/galaxy-fold)Microsoft Edge。
+现在，你能够在两台新设备上测试网站或应用的外观：[Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) 和 [Samsung 用户](https://www.samsung.com/us/mobile/galaxy-fold)折叠Microsoft Edge。
 
 为了帮助增强用于双屏和可折叠设备的网站或应用，在模拟设备时使用以下 [功能](../../../device-mode/index.md)：
 
@@ -73,7 +79,7 @@ Chromium问题： [#1054281](https://crbug.com/1054281)
 
 开发人员Microsoft Edge团队和 Chrome DevTools 团队共同协作开发其他功能。  新功能包括多个覆盖，这些覆盖是永久性的，并且通过"元素"**** 工具上的新"布局"窗格**可配置**。
 
-若要启用此实验功能，请参阅打开[](../../../experimental-features/index.md#turning-an-experiment-on-or-off)或关闭实验，并选中"重启后元素"中的"布局边栏"窗格中"启用新的 **CSS 网格调试功能 (配置**选项"旁边的复选框) 。
+若要启用此实验功能，请参阅打开[](../../../experimental-features/index.md#turning-an-experiment-on-or-off)或关闭实验并选中"重启后元素"中的"布局边栏"窗格中"启用新的 **CSS 网格调试功能 (配置**选项"旁边的复选框) 。
 
 有关此功能详细信息，请参阅检查开发人员工具Microsoft Edge [CSS 网格](../../../css/grid.md)。
 
@@ -89,7 +95,7 @@ Chromium问题： [#1047356](https://crbug.com/1047356)
 
 `table` 粘贴到 Microsoft Edge 85 或更早版本中的控制台 API Visual Studio Code：
 
-:::image type="content" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="表 粘贴到 Microsoft Edge 85 或更早版本中的控制台 API Visual Studio Code。" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
+:::image type="content" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="表 85 或更早版本Microsoft Edge控制台 API 输出粘贴到 Visual Studio Code。" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
 
 在 Microsoft Edge 86 或更高版本中，从**控制台**复制表时，格式设置现已保留。
 
@@ -97,9 +103,9 @@ Chromium问题： [#1047356](https://crbug.com/1047356)
 
 :::image type="content" source="../../media/2020/08/console-table-canary.msft.png" alt-text="表 86 或Microsoft Edge控制台 API 输出。" lightbox="../../media/2020/08/console-table-canary.msft.png":::
 
-`table` 86 或更高版本Microsoft Edge的控制台 API 输出粘贴到Visual Studio Code：
+`table` 来自 86 Microsoft Edge更高版本的控制台 API 输出粘贴到Visual Studio Code：
 
-:::image type="content" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="表 86 或更高版本Microsoft Edge控制台 API 输出粘贴到 Visual Studio Code。" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
+:::image type="content" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="表 86 Microsoft Edge更高版本的控制台 API 输出粘贴到 Visual Studio Code。" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
 
 Chromium问题： [#1115011](https://crbug.com/1115011)
 
@@ -139,9 +145,9 @@ The current effort to improve translation quality enables easier support for mor
 
 ### <a name="highlight-all-search-results-in-elements-tool"></a>在"元素"工具中突出显示所有搜索结果
 
-在 Microsoft Edge 84 和 85 中，"元素"工具的第一个搜索结果未突出显示****。  其余搜索结果已正确突出显示。
+在 Microsoft Edge 84 和 85 中，"元素"工具的第一个搜索结果未**** 突出显示。  其余搜索结果已正确突出显示。
 
-感谢你发送反馈并帮助改进Chromium。  您的反馈发现了开源[1103316](https://crbug.com/1103316)中的问题Chromium问题。
+感谢你发送反馈并帮助改进Chromium。  您的反馈发现了开放[1103316](https://crbug.com/1103316)中的问题Chromium问题。
 
 :::image type="content" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="在 84 或更高版本的&quot;元素&quot;Microsoft Edge突出显示第一个搜索结果。" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
 
@@ -198,7 +204,7 @@ Chromium问题：[1096481](https://crbug.com/1096481)、[1068116](https://crbug.
 
 打开 ["呈现"工具](../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) 并使用新的 **"禁用本地字体"功能** 模拟规则中 `local()` 缺少的 `@font-face` 源。
 
-例如，当`Rubik`字体安装在`@font-face src``local()`设备上且规则使用它作为字体时，Microsoft Edge使用设备中的本地字体文件。
+例如，当`Rubik`字体安装在`@font-face src``local()`你的设备上并且该规则使用它作为字体时，Microsoft Edge使用设备中的本地字体文件。
 
 启用 **"禁用** 本地字体"后，DevTools `local()` 将忽略字体，并提取网络的每个字体。
 
@@ -228,7 +234,7 @@ Chromium问题： [#1090802](https://crbug.com/1090802)
 ### <a name="emulate-prefers-reduced-data"></a>模拟 prefers-reduced-data
 
 > [!NOTE]
-> 在 Microsoft Edge 86 `edge://flags#enable-experimental-web-platform-features` 中，若要启用此功能，请转到 并打开"实验**性 Web 平台功能"** 标志。  模拟选项仅在启用标志时显示。
+> 在 Microsoft Edge 86 中，若要启用此功能`edge://flags#enable-experimental-web-platform-features`，请转到并打开"实验**性 Web 平台功能"** 标志。  模拟选项仅在启用标志时显示。
 
 首选 [的缩减数据](https://drafts.csswg.org/mediaqueries-5#descdef-media-prefers-reduced-data) 媒体查询可检测减少数据的用户内容首选项。  如果选中，用户将接收使用较少数据的备用页面内容。
 
@@ -257,7 +263,7 @@ Chromium问题： [#772558](https://crbug.com/772558)
 
 ### <a name="deprecation-of-other-origins-listing-in-the-service-workers-pane"></a>在"服务工作者"窗格中弃用其他源列表
 
-DevTools 现在从服务工作者窗格 (**** 应用程序工具>**服务**工作者窗格 ****) 提供了一个链接，用于查看来自其他来源的服务工作者的完整列表。  若要在不打开 DevTools 的情况下访问列表，请转到 `edge://service-worker-internals/?devtools`。
+DevTools 现在从服务工作者窗格 (**** **应用程序**工具 > **服务**工作者窗格) 提供了一个链接，用于查看来自其他来源的服务工作者的完整列表。  若要在不打开 DevTools 的情况下访问列表，请转到 `edge://service-worker-internals/?devtools`。
 
 以前，DevTools 显示一个嵌套在"**** 应用程序工具""服务>**窗格下**的列表。
 
@@ -303,7 +309,7 @@ Chromium问题： [#1107766](https://crbug.com/1107766)
 
 :::image type="content" source="../../media/2020/08/coep-coop.msft.png" alt-text="安全和隔离信息。" lightbox="../../media/2020/08/coep-coop.msft.png":::
 
-将来，Microsoft Edge开发工具团队和 Chrome DevTools 团队计划向框架详细信息添加更多安全信息。
+将来，Microsoft Edge开发人员工具团队和 Chrome DevTools 团队计划向框架详细信息添加更多安全信息。
 
 Chromium问题： [#1051466](https://crbug.com/1051466)
 
@@ -321,7 +327,7 @@ Chromium问题： [#1093227](https://crbug.com/1093227)
 
 #### <a name="reinstate-properties-pane-in-the-elements-panel"></a>恢复"元素"面板中的"属性"窗格
 
-" **属性** "窗格已返回。  [84 年 8 月Microsoft Edge弃用](../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel)。  开发人员Microsoft Edge团队和 Chrome DevTools 团队正在计划改进以检查元素的属性。
+" **属性** "窗格已返回。  [84 年 8 月Microsoft Edge弃用](../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel)。  开发人员Microsoft Edge团队和 Chrome DevTools 团队正在计划对检查元素属性的改进。
 
 :::image type="content" source="../../media/2020/08/properties-pane.msft.png" alt-text="&quot;元素&quot;面板中的&quot;属性&quot;窗格。" lightbox="../../media/2020/08/properties-pane.msft.png":::
 
@@ -351,7 +357,7 @@ Chromium问题： [#1106221](https://crbug.com/1106221)
 
 #### <a name="consistently-display-resource-type-in-network-panel"></a>在网络面板中一致地显示资源类型
 
-DevTools 现在一`/ Redirect`致地显示与原始网络请求相同的资源类型，当重定向 HTTP 状态代码**** 为 302 时 (附加到 Type 列) 值。
+DevTools 现在一`/ Redirect`致地显示与原始网络请求相同的资源类型，当重定向 HTTP 状态代码 **** 302 时 (附加到 Type 列) 值。
 
 以前，DevTools 有时将类型更改为 `Other` 。
 
@@ -382,7 +388,7 @@ Chromium问题： [#1067184](https://crbug.com/1067184)
 <!-- ====================================================================== -->
 ## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道
 
-If you're on Windows or macOS， consider using the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) as your default development browser.  预览频道使你能够访问最新的 DevTools 功能。
+如果你使用的是 Windows macOS，请考虑使用 Microsoft Edge [预览](https://www.microsoftedgeinsider.com/download)频道作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
 
 
 <!-- ====================================================================== -->

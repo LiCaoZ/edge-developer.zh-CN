@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
+ms.openlocfilehash: a56b66679eac43e3d402f93169b02240b7de21a1
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430939"
 ---
 # <a name="verify-that-a-page-is-usable-with-blurred-vision"></a>验证页面是否在视觉模糊时可用
 
@@ -23,7 +29,7 @@ ms.date: 06/07/2021
 
 1. 在" **模拟视觉缺陷** "下拉列表中，选择" **模糊的视觉"**。
 
-   :::image type="content" source="../media/a11y-testing-simulating-blur.msft.png" alt-text="模拟模糊的页面。" lightbox="../media/a11y-testing-simulating-blur.msft.png":::
+   ![模拟模糊的页面。](../media/a11y-testing-simulating-blur.msft.png)
 
     请注意， `text-shadow` CSS 属性使上方菜单上的菜单项文本难以阅读。 例如，请参阅 **Home、****Adopt a Pb** 和其他菜单项。
 

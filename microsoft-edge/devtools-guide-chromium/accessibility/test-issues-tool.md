@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
+ms.openlocfilehash: 46507ee90259a7bd1aac74e468643a27c5ef9428
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12430428"
 ---
 # <a name="automatically-test-a-webpage-for-accessibility-issues"></a>自动测试网页中的辅助功能问题
 
@@ -13,11 +19,11 @@ ms.date: 06/07/2021
 
 有几种打开问题 **工具的方法** ，例如：
 
-*  单击"**问题" (**!["问题"计数器](../media/issues-counter-icon.msft.png)。) 位于 DevTools 右上角。
+*  单击"**问题" (**![问题"计数器](../media/issues-counter-icon.msft.png)。) 位于 DevTools 右上角。
 
-*  在" **元素** "工具的 DOM 树中， **Shift+单击** 元素上的波浪下划线。
+*  在" **元素** "工具的 DOM 树中 `Shift` ，在单击元素上的波浪下划线的同时按。
 
-*  在命令**菜单中，** 键入 ，选择`issues`**显示问题**，然后按 `Enter`。
+*  在命令 **菜单中，** 键入 **问题，** 选择 **显示问题**，然后按 `Enter`。
 
 
 <!-- ====================================================================== -->
@@ -27,7 +33,7 @@ ms.date: 06/07/2021
 
 1. 右键单击网页中的任意位置，然后选择"检查 **"**。  或者，按 `F12`。  将在网页旁边打开 DevTools。
 
-   在右上角，"问题 **"** (!["](../media/issues-counter-icon.msft.png) 计数器。) 显示。  问题 **计数器** 是语音气泡图标以及自动检测到的问题数。
+   在右上角，"问题 **" (**!["](../media/issues-counter-icon.msft.png)计数器。) 显示。  问题 **计数器** 是语音气泡图标以及自动检测到的问题数。
 
    :::image type="content" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="DevTools 中的&quot;问题&quot;计数器，指示当前文档中的问题数。" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
 
@@ -49,7 +55,7 @@ ms.date: 06/07/2021
 
 1. 右键单击网页中的任意位置，然后选择"检查 **"**。  或者，按 `F12`。  将在网页旁边打开 DevTools。
 
-1. 在右上角，单击"问题 **" (**!["计数器](../media/issues-counter-icon.msft.png)。) 。  问题**工具**将在 DevTools **** 底部的"箱"中打开。
+1. 在右上角，单击"问题 **" (**!["问题"计数器](../media/issues-counter-icon.msft.png)。) 。  问题**工具**将在 DevTools **** 底部的"箱"中打开。
 
 1. 在" **问题"** 选项卡上，展开 **"辅助功能"** 部分。
 
@@ -79,13 +85,13 @@ ms.date: 06/07/2021
 
 1. 在" **元素"** 工具中，选择 `<label>Search</label>` DOM 树中的元素。
 
-   在网页上，请注意，焦点只出现在 **搜索** 标签上，而不是输入文本框上。  正确的实现将焦点放在输入 `search` 文本框和 **搜索标签** 上。
+   在网页上，请注意，焦点只 **出现在搜索标签** 上，而不是输入文本框上。  正确的实现将焦点放在输入 `search` 文本框和搜索 **标签** 上。
 
 1. 作为正确连接的示例，选择"捐赠 **"表单** 上的"其他"标签。
 
    焦点指示器框正确显示在"其他"标签旁边的输入文本框上，因为**** 存在匹配值`for`和`id`属性值。
 
-1. 在" **问题"工具**中，单击" **进一步阅读** "以了解有关问题有关详细信息。  若要在新选项卡中打开该链接，请按 **Ctrlclick**+ Windows/Linux 或**** **Commandclick** ****+ the link on macOS。
+1. 在" **问题"工具**中，单击" **进一步阅读** "以了解有关问题有关详细信息。  若要打开新选项卡中`Ctrl`的链接，请按 (Windows/Linux) 或 `Command` (macOS) 单击该链接。
 
    :::image type="content" source="../media/a11y-testing-more-information-links.msft.png" alt-text="指向有关问题的更深入信息的&quot;问题&quot;选项卡上的链接。" lightbox="../media/a11y-testing-more-information-links.msft.png":::
 
@@ -134,9 +140,9 @@ ms.date: 06/07/2021
 
 ### <a name="wavy-underlines-in-the-dom-tree-indicate-automatically-detected-issues"></a>DOM 树中的波浪下划线指示自动检测到的问题
 
-元素工具中的 DOM **树直接** 在 HTML 中用波浪下划线标记问题。  这些问题由问题**工具报告。**  当 Shift **+单击** 带波浪下划线的任何元素时，将显示 **"问题"** 工具。
+元素工具中的 DOM **树直接** 在 HTML 中用波浪下划线标记问题。  这些问题由问题**工具报告。**  在单击带 `Shift` 波浪下划线的任何元素时，将 **打开"问题"** 工具。
 
-1. 在" **元素** "工具的 DOM 树中， **Shift+单击** `<input type="search">`元素，其下有一条波浪线 `input`。  将显示 **"** 问题"工具，并显示该元素的问题。
+1. 在"**元素**"工具的 DOM 树中`Shift``<input type="search">`，在单击 元素时按 ，该元素在 下有一条波浪线`input`。  将显示 **"** 问题"工具，并显示该元素的问题。
 
    :::image type="content" source="../media/a11y-testing-wavy-underlines.msft.png" alt-text="DOM 视图中具有波浪下划线的元素有一个问题。" lightbox="../media/a11y-testing-wavy-underlines.msft.png":::
 

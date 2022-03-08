@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Microsoft Edge 文档
-summary: 浏览Microsoft Edge文档。  通过浏览面向开发人员、管理员和用户的文档、教程和示例，了解如何使用Microsoft Edge。
+summary: 了解如何通过Microsoft Edge文档、教程和示例来使用工具。  包括用户、开发人员和管理员的信息。
 brand: m365
 metadata:
   title: Microsoft Edge 文档
@@ -101,24 +101,33 @@ conceptualContent:
       items:
         - title: Microsoft Edge 开发工具
           links:
-            - url: /microsoft-edge/devtools-guide-chromium
+            - text: Microsoft Edge 开发人员文档
+              url: /microsoft-edge/developer/index
               itemType: overview
-              text: 开发工具概述
-            - url: /microsoft-edge/devtools-guide-chromium/beginners/html
+            - text: 使用 Web 开发Microsoft Edge
+              url: /microsoft-edge/develop-web-microsoft-edge
               itemType: overview
-              text: 面向初学者的开发工具
-            - url: /microsoft-edge/devtools-guide-chromium/command-menu/index
+            - text: Microsoft Edge DevTools 文档
+              url: /microsoft-edge/devtools-guide-chromium/landing/index
+              itemType: overview
+            - text: 开发工具概述
+              url: /microsoft-edge/devtools-guide-chromium/overview
+              itemType: overview
+            - text: DevTools Microsoft Edge的新增功能
+              url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
+              itemType: whats-new
+            - text: 面向初学者的开发工具
+              url: /microsoft-edge/devtools-guide-chromium/beginners/html
+              itemType: overview
+            - text: 命令菜单
+              url: /microsoft-edge/devtools-guide-chromium/command-menu/index
               itemType: how-to-guide
-              text: 命令菜单
-            - url: /microsoft-edge/devtools-guide-chromium/open
+            - text: 查看和更改 CSS
+              url: /microsoft-edge/devtools-guide-chromium/css/index
               itemType: how-to-guide
-              text: 打开开发工具
-            - url: /microsoft-edge/devtools-guide-chromium/css/index
-              itemType: how-to-guide
-              text: 查看和更改 CSS
-            - url: /microsoft-edge/devtools-guide-chromium/shortcuts
+            - text: 键盘快捷方式
+              url: /microsoft-edge/devtools-guide-chromium/shortcuts
               itemType: reference
-              text: 键盘快捷方式
         - title: Microsoft Edge 扩展
           links:
             - url: /microsoft-edge/extensions-chromium/index
@@ -154,7 +163,7 @@ conceptualContent:
               itemType: overview
               text: 调试渐进式 Web 应用
             - url: /microsoft-edge/progressive-web-apps-chromium/whats-new/pwa
-              itemType: overview
+              itemType: whats-new
               text: 渐进式 Web 应用中的新增功能
             - url: /microsoft-edge/progressive-web-apps-chromium/how-to/offline
               itemType: concept
@@ -170,26 +179,29 @@ conceptualContent:
             - text: Microsoft Edge WebView2 简介
               url: /microsoft-edge/webview2/index
               itemType: overview
-            - text: Microsoft Edge 和 WebView2 之间的功能差异
+            - text: Microsoft Edge 与 WebView2 之间的区别
               url: /microsoft-edge/webview2/concepts/browser-features
               itemType: concept
-            - text: WebView2 开发的最佳做法
+            - text: 开发的最佳做法
               url: /microsoft-edge/webview2/concepts/developer-guide
               itemType: concept
             - text: WebView2 入门
               url: /microsoft-edge/webview2/get-started/get-started
               itemType: get-started
-            - text: WebView2 示例代码
+            - text: 示例代码
               url: /microsoft-edge/webview2/code-samples-links
               itemType: download
             - text: WebView2 SDK 发行说明
               url: /microsoft-edge/webview2/release-notes
               itemType: whats-new
-            - text: Microsoft Edge WebView2 API 参考
+            - text: WebView2 API 参考
               url: /microsoft-edge/webview2/webview2-api-reference
               itemType: reference
         - title: 测试和自动化
           links:
+            - url: /microsoft-edge/test-and-automation/test-and-automation
+              itemType: overview
+              text: 测试并自动化Microsoft Edge
             - url: /microsoft-edge/devtools-protocol-chromium
               itemType: how-to-guide
               text: 开发工具协议
@@ -210,14 +222,23 @@ conceptualContent:
               text: 适用于Visual Studio Code的 webhint 扩展
         - title: Web 平台
           links:
-            - url: /microsoft-edge/web-platform/user-agent-guidance
+            - text: Web 平台概述
+              url: /microsoft-edge/web-platform/web-platform
+              itemType: overview
+            - text: 影响网站兼容性的更改
+              url: /microsoft-edge/web-platform/site-impacting-changes
               itemType: how-to-guide
-              text: 正在从网站检测 Microsoft Edge
-            - url: /microsoft-edge/web-platform/site-impacting-changes
+            - text: 从网站检测 Microsoft Edge
+              url: /microsoft-edge/web-platform/user-agent-guidance
               itemType: how-to-guide
-              text: 影响网站兼容性的更改
+            - text: 使用用户代理客户端提示检测 Windows 11
+              url: /microsoft-edge/web-platform/how-to-detect-win11
+              itemType: how-to-guide
         - title: Microsoft Edge IDE 集成
           links:
+            - url: /microsoft-edge/visual-studio-code/ide-integration
+              text: Microsoft Edge IDE 集成
+              itemType: overview
             - url: /microsoft-edge/visual-studio/
               itemType: overview
               text: Visual Studio
@@ -248,7 +269,7 @@ additionalContent:
   sections:
     - title: 帮助和支持
       items:
-        - summary: 从社区专家处获取有关Microsoft Q&A的建议和答案
+        - summary: 从社区专家获取建议和答案。
           title: Microsoft Q&A上的社区支持
           url: /answers/topics/ms-edge.html
         - summary: Microsoft 致力于确保应用在Microsoft Edge上正常工作。  如果在最新版本的 Edge 上遇到业务应用或网站问题，Microsoft 将帮助你免费修复应用和网站。  有关资格要求，请参阅产品/服务详细信息。
