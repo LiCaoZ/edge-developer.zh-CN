@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 11/24/2020
-ms.openlocfilehash: 87654704c796da78cb687850aeaa53b99ebbce85
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: f162fddaad4226882d9a96b6cb43144dfa4795f1
+ms.sourcegitcommit: efab65fe5ac5a42707fe6b7e80875b0e9ad5e965
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12432801"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "12436338"
 ---
 # <a name="use-playwright-to-automate-and-test-in-microsoft-edge"></a>在 Microsoft Edge 中使用 Playwright 自动执行和测试
 
@@ -72,7 +72,7 @@ npx playwright test
 <!-- ====================================================================== -->
 ## <a name="run-tests-in-microsoft-edge"></a>在 Microsoft Edge
 
-若要在 Microsoft Edge 中运行测试，需要为 Playwright 配置文件创建一个测试，例如 `playwright.config.ts`。  在配置文件内，使用 Microsoft Edge Beta 渠道创建一个项目。  (目前，没有适用于 Linux.Microsoft Edge Stable 渠道) 
+若要在 Microsoft Edge 中运行测试，需要为 Playwright 配置文件创建一个测试，例如 `playwright.config.ts`。  在配置文件内，使用"项目"Microsoft Edge。
 
 ```typescript
 // playwright.config.ts
@@ -84,7 +84,7 @@ const config: PlaywrightTestConfig = {
       name: 'Microsoft Edge',
       use: {
         // Supported Microsoft Edge channels are: msedge, msedge-beta, msedge-dev, msedge-canary
-        channel: 'msedge-beta',
+        channel: 'msedge',
       },
     },
   ],
@@ -93,10 +93,10 @@ const config: PlaywrightTestConfig = {
 export default config
 ```
 
-如果Microsoft Edge Beta尚未在系统中安装，请通过 Playwright 进行安装，如下所示：
+如果Microsoft Edge尚未在系统中安装，请通过 Playwright 进行安装，如下所示：
 
 ```console
-npx playwright install msedge-beta
+npx playwright install msedge
 ```
 
 使用上述文件时，`playwright.config.ts`Playwright Test Microsoft Edge运行测试，如下所示：
@@ -117,7 +117,7 @@ const playwright = require('playwright');
 
 (async () => {
   const browser = await playwright.chromium.launch({
-    channel: 'msedge-beta',
+    channel: 'msedge',
   });
   const context = await browser.newContext();
   const page = await context.newPage();
