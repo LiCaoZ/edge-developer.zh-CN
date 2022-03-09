@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 01/20/2022
-ms.openlocfilehash: 66a1ebf54d0bef72d0c1840577fb0f287b2f8793
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 2b9c1fe8a2c82e0a6d65c91205f4b04084961a2a
+ms.sourcegitcommit: 964868e9ca0dc512c2c4ba3f130796f5a303c713
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12432304"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "12436414"
 ---
 # <a name="use-webdriver-to-automate-microsoft-edge"></a>使用 WebDriver 自动执行 Microsoft Edge
 
@@ -424,4 +424,4 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 ## <a name="see-also"></a>另请参阅
 
 *  [Selenium 文档](https://www.selenium.dev/documentation) - 有关 Selenium 上下文中的 WebDriver 以及如何使用 Selenium 编写自动 WebDriver 测试的信息。
-*  联系 [Microsoft Edge DevTools](../devtools-guide-chromium/contact.md) 团队，发送有关使用 WebDriver、WebDriver 测试框架 (如 Selenium) 和 Microsoft Edge。
+*  [联系 Microsoft Edge WebDriver](contact.md) 团队，发送有关使用 WebDriver、WebDriver 测试框架 (如 Selenium) 和 Microsoft Edge。

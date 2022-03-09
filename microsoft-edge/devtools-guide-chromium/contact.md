@@ -6,45 +6,46 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 09/29/2021
-ms.openlocfilehash: 8b4c61fdcaf53c84059e87fbbbc9c123da4d790d
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.date: 03/07/2022
+ms.openlocfilehash: 75a0345c88385d6605a2cc6d5cc64b3e75f0f81d
+ms.sourcegitcommit: 964868e9ca0dc512c2c4ba3f130796f5a303c713
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431485"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "12436387"
 ---
 # <a name="contact-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队
 
-发送反馈以帮助改进Microsoft Edge工具。  请与 Microsoft Edge 开发人员工具团队联系，以提交有关针对开发人员进行开发的功能请求或Microsoft Edge。
+发送反馈以帮助改进Microsoft Edge工具。  请与开发人员Microsoft Edge联系以提交功能请求或 bug 报告，或向开发人员Microsoft Edge问题。
 
-有几种方法可以与开发人员工具团队Microsoft Edge联系。
+有几种方法可以与开发人员工具团队Microsoft Edge联系：
+
+* 若要快速报告 DevTools 中的 Bug，请使用" **发送反馈"** 窗口。
+* 若要提交功能请求、问题以及与团队进行较长的对话，请使用 **DevTools** 存储库。
+* 若要提交跨浏览器建议，请使用 **Web Web Want** 计划。
+* 若要提交文档问题，请使用 **边缘开发人员** 存储库。
 
 
 <!-- ====================================================================== -->
 ## <a name="use-the-send-feedback-window"></a>使用"发送反馈"窗口
 
-若要报告 DevTools 中的 Bug 或请求新功能，请打开 [DevTools](index.md#open-devtools) ，然后选择" **发送反馈"** 图标。  或者，在 DevTools `Alt`++`Shift``I` 中，按 (Windows、Linux) 或`I` `Option`+`Shift`+ (macOS) 。  此方法为开发小组Microsoft Edge跟踪问题。
+若要在使用 DevTools 时报告 Bug 或请求功能：
 
-:::image type="content" source="../media/devtools-send-feedback.msft.png" alt-text="DevTools 中的&quot;发送Microsoft Edge图标。" lightbox="../media/devtools-send-feedback.msft.png":::
+1. 单击"**发送反馈**" (`Alt``I``Shift`++或按 Windows Linux `Option``Shift`++`I` 或 macOS) 打开"发送**反馈"** 窗口。
+1. 在" **发送反馈"** 窗口中，描述 Bug 或功能请求。 您还可以附加屏幕截图以帮助团队更好地了解问题，并添加您的电子邮件地址，以便我们可以跟进你。
+1. 按 **"** 发送"为项目开发团队创建Microsoft Edge问题。
 
-选择" **发送反馈"** 图标将打开 **"发送反馈"** 窗口。
-
-:::image type="content" source="../media/send-feedback-dbox.msft.png" alt-text="&quot;发送反馈&quot;窗口。" lightbox="../media/send-feedback-dbox.msft.png":::
-
-
-<!-- ====================================================================== -->
-## <a name="file-a-documentation-issue"></a>提出文档问题
-
-若要在GitHub中输入问题，请在文章底部的"反馈"部分，选择****"**此页面"** 按钮。
-
-或者，[您可以直接](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback])在存储库Microsoft Edge开发人员文档提交`edge-developer`问题。
+![Microsoft Edge中的"发送反馈"按钮和"发送反馈"窗口的屏幕截图](media/devtools-send-feedback-window.png)
 
 
 <!-- ====================================================================== -->
-## <a name="send-a-tweet-to-edgedevtools"></a>向 EdgeDevTools 发送推文
+## <a name="use-the-devtools-repo"></a>使用 DevTools 存储库
 
-Microsoft Edge DevTools 有一个 [EdgeDevTools Twitter 帐户，该帐户](https://twitter.com/EdgeDevTools)具有新闻。  有关使用开发人员工具在 Microsoft Edge 开发，你可以向 [@EdgeDevTools](https://twitter.com/intent/tweet?text=@EdgeDevTools) 。
+若要与 DevTools 团队和社区就 Bug 或功能展开较长的讨论，请使用开发人员工具存储库GitHub。
+
+可以在 [存储库上创建新](https://github.com/MicrosoftEdge/DevTools/issues/new/choose) 问题，或 [搜索现有问题](https://github.com/MicrosoftEdge/DevTools/issues) 并加入对话。
+
+使用 DevTools 存储库可以有较长的对话，尤其是当你需要执行更多工作来报告 Bug 时。 在存储库，您可以与其他人共享想法和提示，与团队详细解释您的工作流和用例，并且通常与社区进行更有意义的交互。
 
 
 <!-- ====================================================================== -->
@@ -60,3 +61,11 @@ The Web We Want is a cross-browser initiative to identify missing features for w
 *  使用指向资源的链接。
 
 你可以遵循 Twitter 或 LinkedIn 上的"我们需要的 Web"计划，并参与调查，确定提交的"需要"的优先级。
+
+
+<!-- ====================================================================== -->
+## <a name="file-a-documentation-issue"></a>提出文档问题
+
+若要在GitHub中输入问题，请在文章底部的"反馈"部分，选择****"**此页面"** 按钮。
+
+或者，[您可以直接](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback])在存储库Microsoft Edge开发人员文档提交`edge-developer`问题。
