@@ -1,26 +1,26 @@
 ---
-title: 'Microsoft Edge预览版中 (加载项 API 参考) '
+title: Microsoft Edge 外接程序 API 参考 (在个人预览版中)
 description: 加载项 API 参考，适用于 REST 终结点，用于自动发布提交到加载项网站的加载项Microsoft Edge更新。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/19/2021
-ms.openlocfilehash: 5d29dfd59d0c63a4aa9c257607416b3ba4a3b686
-ms.sourcegitcommit: ef262a21efa34e4d447cf561a130a2cf8656388e
+ms.openlocfilehash: 9ec2739b87db49359b1a3e36de0f21d88629ac6c
+ms.sourcegitcommit: 650850feb90fa62f0b1c02f47fb0727c780dfb03
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "12326738"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "12436322"
 ---
-# <a name="microsoft-edge-add-ons-api-reference-in-private-preview"></a>Microsoft Edge预览版中 (加载项 API 参考) 
+# <a name="microsoft-edge-add-ons-api-reference-in-private-preview"></a>Microsoft Edge 外接程序 API 参考 (在个人预览版中)
 
 > [!NOTE]
 > 加载项Microsoft Edge API 目前处于个人预览阶段。  " **发布 API** "页仅对私人预览版的参与者在合作伙伴中心显示。  加载项MICROSOFT EDGE API 正在积极开发中，路线图根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
 
 这是加载项 API 的 REST Microsoft Edge引用。  此 API 可自动发布已提交到加载项网站的Microsoft Edge更新。
 
-有关概述，请参阅在个人预览Microsoft Edge使用 ([加载项 API) ](using-addons-api.md)。
+有关概述，请参阅[使用Microsoft Edge预览版中的 (加载项 API) ](using-addons-api.md)。
 
 <!-- ====================================================================== -->
 ## <a name="upload-a-package-to-update-an-existing-submission"></a>Upload程序包以更新现有提交
@@ -35,7 +35,7 @@ ms.locfileid: "12326738"
 
 #### <a name="uri-parameters"></a>URI 参数
 
-| URI 参数 | 描述 |
+| URI 参数 | 说明 |
 |---|---|
 | `productID` | 必需。  必须将程序包上载到的产品的产品 ID。 |
 
@@ -83,7 +83,7 @@ ms.locfileid: "12326738"
 
 #### <a name="uri-parameters"></a>URI 参数
 
-| URI 参数 | 描述 |
+| URI 参数 | 说明 |
 |---|---|
 | `operationID` | 必需。  上一步中提交的上传请求的操作 ID。  此信息在响应标头中提供。
 
@@ -174,7 +174,7 @@ ms.locfileid: "12326738"
 #### <a name="uri-parameters"></a>URI 参数
 
 
-| URI 参数 | 描述 |
+| URI 参数 | 说明 |
 |---|---|
 | `productID` | 必需。  必须发布其草稿的产品的产品 ID。 |
 
@@ -350,6 +350,15 @@ ms.locfileid: "12326738"
 }
 ```
 
+#### <a name="response-when-the-publish-call-fails-with-an-unexpected-failure"></a>发布调用失败但意外失败时的响应
+
+```json
+{
+    "id": "{operationID}",
+    "message": "An error occurred while processing the request. Please contact support Correlation ID: {operationID} Timestamp: {timeStamp}",
+}
+```
+
 #### <a name="response-headers"></a>响应头
 
 无。
@@ -378,9 +387,9 @@ ms.locfileid: "12326738"
 
 | 消息 | 描述 | 示例方案 |
 |---|---|---|
-| 400 错误的请求 | 服务器无法理解该请求。 | 正文中没有 (zip 文件) 包。  或者， `Content-Type` 标头缺失或其值不正确。 |
+| 400 错误的请求 | 服务器无法理解该请求。 | 正文中没有 (zip) 包。  或者， `Content-Type` 标头缺失或其值不正确。 |
 | 401 未经授权 | 请求页面需要授权。 | 身份验证令牌缺失、过期或无效。 |
-| 404 未找到 | 服务器找不到请求的页面。 | 指定 `productID` 或 `operationID` 无效，或不属于正在提出请求的开发人员。 |
+| 404 未找到 | 服务器找不到请求的页面。 | 指定的 `productID` 或 `operationID` 没有有效 GUID、无效或不属于正在提出请求的开发人员。 |
 | 408 请求超时 | 请求所等待的时间比服务器准备等待的时间长。 | 上传程序包时存在超时。 |
 | 429 请求过多 | 用户发送的请求过多。 | 发送的请求过多且受到限制。 |
 
@@ -394,4 +403,4 @@ ms.locfileid: "12326738"
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [在Microsoft Edge预览版中 (加载项 API) ](using-addons-api.md)
+*  [使用 Microsoft Edge 外接程序 API (在个人预览版中)](using-addons-api.md)
