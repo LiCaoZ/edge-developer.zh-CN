@@ -353,6 +353,9 @@
                 - name: 时间线事件参考
                   href: devtools-guide-chromium/evaluate-performance/performance-reference.md
                   displayName: Performance tool
+                - name: 在性能配置文件中显示原始函数名称
+                  href: devtools-guide-chromium/evaluate-performance/unminify.md
+                  displayName: Performance tool
             - name: 性能监视器工具
               items:
                 - name: 使用性能监视器工具度量页面的运行时性能
@@ -857,7 +860,7 @@
           displayName: 'feedback, log issues, enter issues, report issues, reporting issues, support'
     - name: 测试和自动化
       items:
-        - name: Microsoft Edge中的测试和自动化
+        - name: 测试并自动化Microsoft Edge
           href: test-and-automation/test-and-automation.md
           displayName: null
         - name: 开发工具协议
@@ -880,6 +883,8 @@
               href: webdriver-chromium/ie-mode.md
             - name: 功能和 EdgeOptions
               href: webdriver-chromium/capabilities-edge-options.md
+            - name: 联系 Microsoft Edge 驱动程序团队
+              href: webdriver-chromium/contact.md
         - name: 适用于Visual Studio Code的 webhint 扩展
           href: test-and-automation/webhint.md
           displayName: null
