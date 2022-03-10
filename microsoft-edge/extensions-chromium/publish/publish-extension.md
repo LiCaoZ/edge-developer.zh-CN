@@ -6,18 +6,18 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/25/2021
-ms.openlocfilehash: e3a8f7aaef6b95e5a13e3d7d61dc3301aa9c667c
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 8bee33d5f8bc482b03c5f9dbcbe6d0cc6d682990
+ms.sourcegitcommit: fa1b0662af7c59a37f96260e5aba1922343d1ae7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431478"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "12437475"
 ---
 # <a name="publish-a-microsoft-edge-extension"></a>发布Microsoft Edge扩展
 
 开发和测试你的 Microsoft Edge 扩展后，你已准备好分发你的扩展。 使用Microsoft Edge加载项网站分发扩展。  若要为用户Chromium现有 Microsoft Edge 扩展，请参阅移植[现有 Chromium 扩展](../developer-guide/port-chrome-extension.md)。
 
-将扩展发布到 Microsoft Edge 加载项网站，以增加其范围，使其可供其他用户Microsoft Edge使用。  本文提供将扩展提交到 Microsoft Edge 加载项网站的过程。
+将扩展发布到 [Microsoft Edge 加载项](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home)网站，以增加其范围，使其可供其他用户Microsoft Edge使用。  本文提供将扩展提交到 Microsoft Edge 加载项网站的过程。
 
 
 <!-- ========================================================================== -->
@@ -65,7 +65,7 @@ ms.locfileid: "12431478"
 
 1. 完成提交。
 
-下面详细介绍了这些步骤。
+本文的其余部分提供有关这些步骤的详细信息。
 
 
 <!-- ========================================================================== -->
@@ -77,9 +77,15 @@ ms.locfileid: "12431478"
 <!-- ========================================================================== -->
 ## <a name="step-2--upload-the-extension-package"></a>步骤 2：Upload扩展包
 
-使用 **程序包** 网页上传扩展包的 zip 文件。  一次只能上载一个程序包。  如果程序包上传在程序包网页上未成功，你的 **提交将被** 阻止。
+1. 转到程序包 **网页** 以上传扩展包的 zip 文件。
 
-若要上传程序包，请选择并将程序包拖到上传字段。  此外，还可以选择" **浏览文件"**。  上传程序包后，将验证程序包。  验证成功后，查看扩展详细信息，然后选择"下一 **步** "继续。  如果存在验证错误，请解决问题，然后再次尝试上载。
+   一次只能上载一个程序包。 如果程序包上传在程序包网页上未成功，你的 **提交将被** 阻止。
+
+1. 若要上传程序包，请将 zip 文件拖放到网页的"将程序包拖动到 **此处 (.zip **) "部分。 也可以选择" **浏览文件** "打开对话框，选择要上载的程序包。
+
+   上传程序包后，将进行验证。 如果存在验证错误，请解决该问题，然后再次尝试上传程序包。
+
+1. 验证成功后，查看扩展详细信息，然后选择" **继续** "继续。  
 
 
 <!-- ========================================================================== -->
@@ -89,7 +95,7 @@ ms.locfileid: "12431478"
 
 ### <a name="visibility"></a>可见性
 
-选择以下可见性选项之一，定义你的扩展在加载项Microsoft Edge中是否可发现。
+选择以下可见性选项之一，定义你的扩展在加载项Microsoft Edge[中是否可发现](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home)。
 
 *  `Public`  (默认) - 允许所有人通过搜索、浏览 Microsoft Edge 加载项网站或使用 Microsoft Edge 加载项网站中的扩展列表 URL 来发现扩展。  合作伙伴中心仪表板上的扩展概述网页中提供了**列表 URL。**
 
@@ -99,28 +105,32 @@ ms.locfileid: "12431478"
 
 ### <a name="markets"></a>市场
 
-定义计划提供扩展的特定市场。  市场默认设置是所有市场，包括以后添加的任何未来市场。  若要选择特定市场，请选择" **更改市场"**。  切换个别市场以排除每个市场，或选择" **取消全** 选"，然后添加你选择的个别市场。
+定义计划提供扩展的特定市场。  市场默认设置是所有市场，包括以后添加的任何未来市场。
 
-你可以更改提供扩展的市场。  在用户市场中提供扩展时安装扩展的用户将保留对扩展的访问权限。  但是，用户不能访问提交到加载项网站的任何Microsoft Edge更新。
+1. 若要选择特定市场，请选择" **更改市场"**。
 
-单击 **"保存**"，继续" **属性"** 部分。
+1. 切换个别市场以排除每个市场，或选择 **"取消全** 选"，然后添加你选择的个别市场。
+
+   你可以更改提供扩展的市场。 在用户市场中提供扩展时安装扩展的用户将保留对扩展的访问权限。 但是，用户不能访问提交到加载项网站的任何Microsoft Edge更新。
+
+1. 单击 **"&"** 继续"以继续"属性 **"** 部分。
 
 
 <!-- ========================================================================== -->
 ## <a name="step-4-select-properties-for-your-extension"></a>步骤 4：选择扩展的属性
 
-在 **"属性** "网页上，输入以下信息以指定扩展的属性。  这些属性会显示在加载项网站Microsoft Edge用户。
+在 **"属性** "网页上，输入以下信息以指定扩展的属性。  这些属性在加载项网站上Microsoft Edge用户。
 
 | 扩展属性名称 | 说明 |
 |:--- |:--- |
 | 需要 (类别)  | 最能描述扩展的类别。  在正确的类别中列出扩展可帮助用户轻松找到扩展并了解有关它的更多信息。  |
 | 隐私策略要求 (要求)  | 指示您的扩展是否访问、收集或传输任何个人信息。  如果选择是，并且未提供 ，你的扩展可能无法**** 通过认证步骤`Privacy policy URL`。 |
 | 隐私策略 URL | 用于传达扩展如何遵循隐私法律和法规的有效隐私策略 URL。  你负责确保你的扩展遵循隐私法律和法规。  如果你的扩展正在访问、传输或收集任何个人信息，你还负责提供隐私策略 URL。  若要确定扩展是否要求隐私策略，请参阅Microsoft Edge[开发人员](/legal/windows/agreements/app-developer-agreement)协议和Microsoft Edge[加载项网站开发人员策略](../store-policies/developer-policies.md)。 |
-| 网站 URL | 提供有关扩展的其他信息的网页。  必须`Website URL`指向自己网站上的网页，而不是加载项网站中扩展Microsoft Edge Web 列表。  帮助 `Website URL` 用户了解有关扩展、扩展功能以及任何其他相关信息的更多信息。 |
+| 网站 URL | 提供有关扩展的其他信息的网页。  必须`Website URL`指向自己网站上的网页，而不是加载项网站中扩展Microsoft Edge [Web 列表](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home)。  帮助 `Website URL` 用户了解有关扩展、扩展功能以及任何其他相关信息的更多信息。 |
 | 支持联系人详细信息 | 支持网页的 URL 或用于联系支持团队的电子邮件地址。 |
 | 成熟内容 | 用于指定扩展是否包含成熟内容的复选框。  扩展分级可帮助确定扩展的目标受众的适当年龄组。  若要帮助确定扩展内容是否成熟，请参阅Microsoft Edge加载项[网站开发人员策略](../store-policies/developer-policies.md)。 |
 
-选择 **"保存** "以继续浏览 **应用商店一览** 部分。
+选择 **"&** "继续"以继续浏览 **应用商店一览** 部分。
 
 > [!Important]
 > 你的开发人员/组织名称、网站 URL 和支持你在注册期间提交的联系人详细信息将显示在加载项Microsoft Edge用户。
@@ -199,7 +209,7 @@ ms.locfileid: "12431478"
 
 *   测试人员必须了解的有关你的提交的其他信息。
 
-提供相关信息后，**选择"发布**"以将扩展Microsoft Edge加载项网站。  你的提交将继续执行认证步骤。  提交后，认证过程最多可能需要 7 个工作日。
+在提供该信息后，**选择"发布**"以将扩展Microsoft Edge[加载项网站](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home)。  你的提交将继续执行认证步骤。  提交后，认证过程最多可能需要 7 个工作日。
 
 提交通过认证后，你的扩展Microsoft Edge加载项网站中发布。  合作伙伴中心仪表板中扩展的状态将更改为 `In the Store`。
 
