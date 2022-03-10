@@ -7,8 +7,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 06/02/2021
+ms.openlocfilehash: 2e6dfacad291e01ac4297ba6d18b0c8cd0d53bdd
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432486"
 ---
-# <a name="whats-new-in-devtools-microsoft-edge-92"></a>DevTools 中的新增功能 (Microsoft Edge 92)
+# <a name="whats-new-in-devtools-microsoft-edge-92"></a>DevTools (Microsoft Edge 92)中的新增功能
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
@@ -105,7 +111,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 请参阅[使用源订单查看器测试键盘支持](../../../accessibility/test-tab-key-source-order-viewer.md)。
 
-要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1094406](https://crbug.com/1094406)。
+有关 Chromium 开源项目中此功能的历史记录，请参阅问题 [1094406](https://crbug.com/1094406)。
 
 
 <!-- ====================================================================== -->
@@ -120,7 +126,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 请参阅[用户代理客户端提示](../../../../web-platform/user-agent-guidance.md#user-agent-client-hints)。
 
-要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1174299](https://crbug.com/1174299)。
+有关 Chromium 开源项目中此功能的历史记录，请参阅问题 [1174299](https://crbug.com/1174299)。
 
 
 <!-- ====================================================================== -->
@@ -162,7 +168,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 <!-- screenshot uses https://jec.fyi -->
 
-要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1203241](https://crbug.com/1203241)。
+有关 Chromium 开源项目中此功能的历史记录，请参阅问题 [1203241](https://crbug.com/1203241)。
 
 
 ### <a name="support-for-const-redeclarations-in-the-console"></a>在控制台中支持常量重新声明
@@ -178,7 +184,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 若要了解如何运行单个 REPL 脚本或多行 REPL 脚本，请参阅[在控制台中运行 JavaScript](../../../console/console-javascript.md)。
 
-要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1076427](https://crbug.com/1076427)。
+有关 Chromium 开源项目中此功能的历史记录，请参阅问题 [1076427](https://crbug.com/1076427)。
 
 
 ### <a name="new-shortcut-to-view-iframe-details"></a>查看 iframe 详细信息的新快捷方式
@@ -193,7 +199,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 <!-- demo page: https://wolfib.github.io/web-demos/ esp https://wolfib.github.io/web-demos/jsIframe.html -->
 
-要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1192084](https://crbug.com/1192084)。
+有关 Chromium 开源项目中此功能的历史记录，请参阅问题 [1192084](https://crbug.com/1192084)。
 
 
 ### <a name="enhanced-cors-debugging-support"></a>增强的 CORS 调试支持
@@ -204,7 +210,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 <!-- screenshot uses http://cors-errors.glitch.me -->
 
-要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1141824](https://crbug.com/1141824)。
+有关 Chromium 开源项目中此功能的历史记录，请参阅问题 [1141824](https://crbug.com/1141824)。
 
 
 ### <a name="renamed-xhr-filter-to-fetchxhr"></a>已将 XHR 筛选器重命名为 Fetch\/XHR
@@ -217,7 +223,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 *  [XMLHttpRequest spec](https://xhr.spec.whatwg.org)
 *  [提取规范](https://fetch.spec.whatwg.org)
 
-要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1201398](https://crbug.com/1201398)。
+有关 Chromium 开源项目中此功能的历史记录，请参阅问题 [1201398](https://crbug.com/1201398)。
 
 
 ### <a name="filter-wasm-resource-type-in-the-network-tool"></a>在网络工具中筛选 Wasm 资源类型
@@ -228,7 +234,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 <!-- screenshot uses http://memory-inspector.glitch.me/demo-wasm.html -->
 
-要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1103638](https://crbug.com/1103638)。
+有关 Chromium 开源项目中此功能的历史记录，请参阅问题 [1103638](https://crbug.com/1103638)。
 
 
 ### <a name="compute-intersections-are-now-included-in-the-performance-tool"></a>计算交集现在包含在性能工具中
@@ -239,7 +245,7 @@ HTML 文档中的内容顺序对于搜索引擎优化和辅助功能非常重要
 
 <!-- screenshot uses https://googlechrome.github.io/samples/intersectionobserver -->
 
-有关交集观察程序的详细信息，请参阅[信任良好，观察效果更好：交集观察程序 v2](https://web.dev/intersectionobserver-v2)。  有关使用火形图的信息，请参阅[分析性能记录](../../../evaluate-performance/reference.md#analyze-a-performance-recording)。  要在 Chromium 开源代码项目中查看此功能的历史记录，请参阅问题 [1199137](https://crbug.com/1199137)。
+有关交集观察程序的详细信息，请参阅[信任良好，观察效果更好：交集观察程序 v2](https://web.dev/intersectionobserver-v2)。  有关使用火形图的信息，请参阅[分析性能记录](../../../evaluate-performance/reference.md#analyze-a-performance-recording)。  有关 Chromium 开源项目中此功能的历史记录，请参阅问题 [1199137](https://crbug.com/1199137)。
 
 
 <!-- ====================================================================== -->

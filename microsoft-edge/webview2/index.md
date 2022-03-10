@@ -8,12 +8,12 @@ ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.technology: webview
 ms.date: 11/12/2021
-ms.openlocfilehash: 0ccc38b74320f8dac0244cb39858eac8742e4a27
-ms.sourcegitcommit: ae41e2c0ca42fb7eac73824c828305c7b13b4203
+ms.openlocfilehash: 49e07927c3daf7e43b7c24a7cd14599965984ae0
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "12345630"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12431450"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介
 
@@ -106,10 +106,10 @@ WebView2 应用可以在以下版本的 Windows 上运行：
 
 <!-- possibly remove some of these and rely on TOC instead -->
 
-*  [了解 WebView2 SDK 版本](./concepts/versioning.md)
-*  [分发 WebView2 应用和 WebView2 运行时](./concepts/distribution.md)
-*  [开发安全的 WebView2 应用的最佳做法](./concepts/security.md)
-*  [管理用户数据文件夹](./concepts/user-data-folder.md)
-*  [如何使用 WebView2 进行调试](./how-to/debug.md)
-*  [使用 Microsoft Edge 驱动程序自动执行并测试 WebView2](./how-to/webdriver.md)
-*  [WebView2 示例](https://github.com/MicrosoftEdge/WebView2Samples) - 此存储库包含演示所有 WebView2 SDK 功能和 API 使用模式的示例。  随着更多功能添加到 WebView2 SDK 中，示例应用将相应更新。<!-- make sure this statement is in the repo readme, then possibly remove it from here -->
+* [了解不同的 WebView2 SDK 版本](concepts/versioning.md)
+* [分发应用和 WebView2 运行时](concepts/distribution.md)
+* [开发安全的 WebView2 应用的最佳做法](concepts/security.md)
+* [管理用户数据文件夹](concepts/user-data-folder.md)
+* [如何使用 WebView2 进行调试](how-to/debug.md)
+* [使用 Microsoft Edge 驱动程序自动执行并测试 WebView2](how-to/webdriver.md)
+* [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - 演示 WebView2 SDK 功能和 API 使用模式的示例，包括最近添加的 WebView2 功能。

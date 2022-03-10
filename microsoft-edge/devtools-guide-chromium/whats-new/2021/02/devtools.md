@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
-ms.openlocfilehash: 6c6d486d939c7b106981ce7177e27df67543c4c2
-ms.sourcegitcommit: 82de2fa19bf9c925ff5faafe8be6b24d21767e03
+ms.openlocfilehash: 2616a1df790b79ab2ef622ec36051eb00de29e54
+ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "12346356"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "12432948"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -27,7 +27,7 @@ ms.locfileid: "12346356"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="whats-new-in-devtools-microsoft-edge-90"></a>DevTools 中的新增功能 (Microsoft Edge 90)
+# <a name="whats-new-in-devtools-microsoft-edge-90"></a>DevTools 中的新增功能（Microsoft Edge 90）
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
@@ -107,7 +107,7 @@ DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  
 <!-- Title: Try different CSS flexbox layouts with the visual flexbox editor  -->
 <!-- Subtitle: In the Styles pane, click the icon that appears next to display: flex to try different layout properties for flex containers.  -->
 
-DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display: flex` 或 `display: inline-flex` CSS 样式应用于 HTML 元素，则“**元素**”工具中该元素旁边将显示 `flex` 图标。  若要在网页上显示（或隐藏）弹性覆盖，请单击 `flex` 图标。  要在 Chromium 开放源代码项目中查看此功能的历史记录，请参阅问题 [1166710](https://crbug.com/1166710) 和 [1175699](https://crbug.com/1175699)。
+DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display: flex` 或 `display: inline-flex` CSS 样式应用于 HTML 元素，则“**元素**”工具中该元素旁边将显示 `flex` 图标。  若要在网页上显示（或隐藏）弹性覆盖，请单击 `flex` 图标。  有关 Chromium 开源项目中此功能的历史记录，请参阅问题 [1166710](https://crbug.com/1166710) 和 [1175699](https://crbug.com/1175699)。
 
 若要打开**弹性框**编辑器，请转到“**样式**”窗格，然后单击 `display: flex` 或 `display: inline-flex` 样式旁边的新图标。  **弹性框**编辑器提供了一种快速编辑弹性框属性的方法。
 
@@ -126,7 +126,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 以前，在“**发起程序**”窗格中，你无法使用键盘上的箭头键展开或折叠请求链，这与“**元素**”工具中的 DOM 不同。  当在“**网络**”工具中选择网络请求时，“**发起程序**”窗格将显示发起当前选定请求的请求链。
 
-在 Microsoft Edge 版本 90 中，在“**发起程序**”窗格中，你可以使用键盘上的箭头键展开或折叠请求链。  链中的焦点网络请求现在也会突出显示。  若要在“**网络**”工具中了解有关发起程序的更多信息，请查看“[显示发起程序和依赖项](../../../network/reference.md#display-initiators-and-dependencies)”。  要在 Chromium 开放源代码项目中查看此功能的历史记录，请参阅问题 [1158276](https://crbug.com/1158276) 和 [1160637](https://crbug.com/1160637)。
+在 Microsoft Edge 版本 90 中，在“**发起程序**”窗格中，你可以使用键盘上的箭头键展开或折叠请求链。  链中的焦点网络请求现在也会突出显示。  若要在“**网络**”工具中了解有关发起程序的更多信息，请查看“[显示发起程序和依赖项](../../../network/reference.md#display-initiators-and-dependencies)”。  有关 Chromium 开源项目中此功能的历史记录，请参阅问题[1158276](https://crbug.com/1158276) 和 [1160637](https://crbug.com/1160637)。
 
 单击“网络请求”，然后单击“**发起程序**”窗格：
 
@@ -143,7 +143,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 <!-- Title: Console improvements make filtering more consistent  -->
 <!-- Subtitle: The Log Levels dropdown list is more clearly disabled when using filters in the Console sidebar.  -->
 
-当使用[控制台边栏](../../../console/reference.md#open-the-console-sidebar)进行筛选时，“[日志级别](../../../console/reference.md#filter-by-log-level)”下拉列表中的筛选器不可用。  以前，“**日志级别**”下拉列表在你悬停时会突出显示，即使从**控制台边栏**中选择了筛选器也是如此。  在 Microsoft Edge 版本 90 中，当你从**控制台边栏**中选择筛选器后将鼠标悬停在“**日志级别**”下拉列表上时，它不再突出显示。  若要了解有关**控制台**中的筛选的更多信息，请查看“[筛选消息](../../../console/reference.md#filter-messages)”。
+当使用[控制台边栏](../../../console/reference.md#open-the-console-sidebar)进行筛选时，“[日志级别](../../../console/reference.md#filter-by-log-level)”下拉列表中的筛选器不可用。  以前，“**日志级别**”下拉列表在你悬停时会突出显示，即使从**控制台边栏**中选择了筛选器也是如此。  在 Microsoft Edge 版本 90 中，当选择**控制台边栏**中的筛选器时，将鼠标悬停在**日志级别**下拉列表上时，将不再突出显示该列表。  若要了解有关**控制台**中的筛选的更多信息，请查看“[筛选消息](../../../console/reference.md#filter-messages)”。
 
 以前，如果打开“**控制台边栏**”并将鼠标悬停在“**默认级别**”上，它会突出显示：
 
@@ -161,7 +161,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 ### <a name="the-console-now-escapes-double-quote-characters"></a>控制台现在可对双引号字符进行转义
 
-以前，**控制台**不在 JavaScript 字符串中输出有效的双引号 (`"`) 字符。  从 Microsoft Edge 版本 90 开始，**控制台**将使用转义的双引号 (`"`) 字符输出 JavaScript 字符串。  要在 Chromium 开放源代码项目中查看此功能的历史记录，请参阅问题 [1178530](https://crbug.com/1178530)。
+以前，**控制台**不在 JavaScript 字符串中输出有效的双引号 (`"`) 字符。  从 Microsoft Edge 版本 90 开始，**控制台**将使用转义的双引号 (`"`) 字符输出 JavaScript 字符串。  有关 Chromium 开源项目中此功能的历史记录，请参阅问题 [1178530](https://crbug.com/1178530)。
 
 :::image type="content" source="../../media/2021/02/console-string-formatted-double-quotes.msft.png" alt-text="控制台将使用转义的双引号 (&#0022;) 字符输出 JavaScript 字符串。" lightbox="../../media/2021/02/console-string-formatted-double-quotes.msft.png":::
 
@@ -176,7 +176,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 1. 运行“**显示呈现**”命令。
 1. 转到模**拟 CSS 媒体功能色域**，然后单击选项。
 
-若要了解有关 `color-gamut` 功能的更多信息，请查看“[颜色显示质量：‘色域’功能](https://drafts.csswg.org/mediaqueries-4#color-gamut)”。  要在 Chromium 开放源代码项目中查看此功能的历史记录，请参阅问题 [1073887](https://crbug.com/1073887)。
+若要了解有关 `color-gamut` 功能的更多信息，请查看“[颜色显示质量：‘色域’功能](https://drafts.csswg.org/mediaqueries-4#color-gamut)”。  有关 Chromium 开源项目中此功能的历史记录，请参阅问题 [1073887](https://crbug.com/1073887)。
 
 :::image type="content" source="../../media/2021/02/rendering-css-color-gamut.msft.png" alt-text="模拟 CSS 色域媒体功能。" lightbox="../../media/2021/02/rendering-css-color-gamut.msft.png":::
 
@@ -194,7 +194,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 :::image type="content" source="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png" alt-text="PWA 说明截断警告。" lightbox="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png":::
 
-要在 Chromium 开放源代码项目中查看此功能的历史记录，请参阅问题 [965802](https://crbug.com/965802)、[1146450](https://crbug.com/1146450) 和 [1169689](https://crbug.com/1169689)。
+有关 Chromium 开源项目中此功能的历史记录，请参阅问题 [965802](https://crbug.com/965802)、 [1146450](https://crbug.com/1146450)和 [1169689](https://crbug.com/1169689)。
 
 ### <a name="new-remote-address-space-column-in-the-network-tool"></a>“网络”工具中新的“远程地址空间”列
 
@@ -219,19 +219,19 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 ### <a name="display-allowed-and-disallowed-features-in-the-frame-details-view"></a>在“框架详细信息”视图中显示允许和禁止的功能
 
-“框架详细信息”视图现在显示受“[权限策略](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md)”控制的允许和禁止的浏览器功能列表。  “权限策略”是一种 Web 平台 API，它允许（或阻止）网页在单个框架或其嵌入的 iframe 中使用浏览器功能。  要在 Chromium 开放源代码项目中查看此功能的历史记录，请参阅问题 [1158827](https://crbug.com/1158827)。
+“框架详细信息”视图现在显示受“[权限策略](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md)”控制的允许和禁止的浏览器功能列表。  “权限策略”是一种 Web 平台 API，它允许（或阻止）网页在单个框架或其嵌入的 iframe 中使用浏览器功能。  有关 Chromium 开源项目中此功能的历史记录，请参阅问题 [1158827](https://crbug.com/1158827)。
 
 :::image type="content" source="../../media/2021/02/application-frames-permissions-policy.msft.png" alt-text="基于权限策略允许和禁止的功能。" lightbox="../../media/2021/02/application-frames-permissions-policy.msft.png":::
 
 ### <a name="new-sameparty-column-in-the-cookies-pane"></a>“Cookie”窗格中新的“SameParty”列
 
-“**应用程序**”工具中的“**Cookie**”窗格现在显示每个 Cookie 的 `SameParty` 属性。  `SameParty` 属性是一个新的布尔属性，用于指示在对相同[第一方集](https://github.com/privacycg/first-party-sets)的起源的请求中是否包含 cookie。  要在 Chromium 开放源代码项目中查看此功能的历史记录，请参阅问题 [1161427](https://crbug.com/1161427)。
+“**应用程序**”工具中的“**Cookie**”窗格现在显示每个 Cookie 的 `SameParty` 属性。  `SameParty` 属性是一个新的布尔属性，用于指示在对相同[第一方集](https://github.com/privacycg/first-party-sets)的起源的请求中是否包含 cookie。  有关 Chromium 开源项目中此功能的历史记录，请参阅问题 [1161427](https://crbug.com/1161427)。
 
 :::image type="content" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="“Cookie”窗格中的“SameParty”列。" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
 
 ### <a name="fndisplayname-property-in-the-console-tool-is-now-deprecated"></a>“控制台”工具中的 fn.displayName 属性现已弃用
 
-以前，`fn.displayName` 属性允许你控制要在 `error.stack` 和 DevTools 堆栈跟踪中显示的函数的调试名称。  从 Microsoft Edge 版本 90 开始，`fn.displayName` 属性现已弃用，并替换为 `fn.name` 属性。  使用标准 `Object.defineProperty` 方法定义 `fn.name` 属性。  若要详细了解`fn.name`，请参阅 [Function.name](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/name)。  要在 Chromium 开放源代码项目中查看此功能的历史记录，请参阅问题 [1177685](https://crbug.com/1177685)。
+以前，`fn.displayName` 属性允许你控制要在 `error.stack` 和 DevTools 堆栈跟踪中显示的函数的调试名称。  从 Microsoft Edge 版本 90 开始，`fn.displayName` 属性现已弃用，并替换为 `fn.name` 属性。  使用标准 `Object.defineProperty` 方法定义 `fn.name` 属性。  若要详细了解`fn.name`，请参阅 [Function.name](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/name)。  有关 Chromium 开源项目中此功能的历史记录，请参阅问题 [1177685](https://crbug.com/1177685)。
 
 :::image type="content" source="../../media/2021/02/console-display-name-name.msft.png" alt-text="用于控制函数的调试名称的 fn.name 属性示例。" lightbox="../../media/2021/02/console-display-name-name.msft.png":::
 
