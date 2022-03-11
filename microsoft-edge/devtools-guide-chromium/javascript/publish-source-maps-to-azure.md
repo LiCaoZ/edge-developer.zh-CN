@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/02/2022
-ms.openlocfilehash: ef2cf7e097140aec92343eb879348bd870c008a1
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: afbbb03d33fd0f8ee8489a923a66ffa926183272
+ms.sourcegitcommit: 2631c3835d23d9adaa28c19198319588baf9d8c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12433472"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "12439640"
 ---
 # <a name="securely-debug-original-code-by-publishing-source-maps-to-the-azure-artifacts-symbol-server"></a>通过将源映射发布到Azure Artifacts符号服务器来安全地调试原始代码
 
@@ -53,7 +53,7 @@ ms.locfileid: "12433472"
 
    !["创建新的个人访问令牌"对话框，选中符号的"&写入"作用域。](images/ado-pat-config-write.png)
 
-1. 在 **"名称** "文本框中，输入 PAT 的名称，如 **DevTools 源映射**。
+1. 在 **"名称** "文本框中，输入 PAT 的名称，例如"发布源地图"。
 
 1. 在" **到期** "部分，输入 PAT 的到期日期。
 

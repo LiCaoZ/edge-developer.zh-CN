@@ -1,19 +1,19 @@
 ---
-title: Visual Studio Web 开发
+title: 用于 Web 开发的Visual Studio
 description: Microsoft Edge和Visual Studio Web 开发。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/27/2021
-ms.openlocfilehash: b24c40986f2f799f18921bc6065fa7cfd1fbf749
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: a9ac6d5fafbcc58ade61eec3d0caf4a000dd3779
+ms.sourcegitcommit: 2631c3835d23d9adaa28c19198319588baf9d8c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12430855"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "12439709"
 ---
-# <a name="visual-studio-for-web-development"></a>Visual Studio Web 开发
+# <a name="visual-studio-for-web-development"></a>用于 Web 开发的Visual Studio
 
 Microsoft [Visual Studio](https://visualstudio.microsoft.com/vs)是一个集成开发环境， (IDE) 。  使用它来编辑、调试、生成和发布 Web 应用。  Visual Studio是一个功能丰富的程序，可用于 Web 开发的许多方面。
 
@@ -138,6 +138,48 @@ Microsoft [Visual Studio](https://visualstudio.microsoft.com/vs)是一个集成�
 1. 在"**选择代码类型**"对话框中，选择 **"JavaScript (Microsoft Edge - Chromium) **"确定 **"**。
 
 现在Visual Studio调试器附加到Microsoft Edge。  您可以暂停 JavaScript 的运行，设置`console.log()`断点，并直接在"调试输出"窗口中查看**** Visual Studio。
+
+
+<!-- ====================================================================== -->
+## <a name="edge-devtools-extension-for-visual-studio"></a>适用于开发人员的边缘开发人员工具Visual Studio
+
+使用 ASP.NET 工具Visual Studio中调试项目。  可以在开发人员Microsoft Edge中嵌入Microsoft Visual Studio，以 ASP.NET 实时调试项目。  下载[Microsoft Edge开发人员工具Visual Studio](https://aka.ms/edgetools-for-vs)。 
+
+若要使用扩展，请：
+
+1. 确保Visual Studio 2022 和 ASP.NET 工作负载。
+
+1. 将 Web Live Preview 设置为默认Web Forms设计器，如上页所述。
+
+1. 打开一 ASP.NET 项目。
+
+1. 在设计窗口中打开项目 **的网页** 。
+
+1. 在"设计"窗口的**** 左上角，单击"打开**边缘开发**![工具" ("打开边缘开发人员](media/open-edge-dev-tools-v-s-icon.png)工具"图标。) 按钮：
+
+![一 ASP.NET 打开 Edge DevTools 的项目。](media/devtools-extension-v-s-web-forms-designer.png)
+
+将打开用于Visual Studio开发人员工具，并选中 **"元素**"工具：
+
+![Microsoft Edge开发人员工具Visual Studio：DevTools 的元素工具。](media/devtools-extension-visual-studio-elements.png)
+
+默认情况下 **，** 网络工具也打开：
+
+![Microsoft Edge开发人员工具Visual Studio：DevTools 的网络工具。](media/devtools-extension-visual-studio-network.png)
+
+[](../devtools-guide-chromium/issues/index.md)检查**工具** (![[](../devtools-guide-chromium/network-conditions/network-conditions-tool.md)](media/v-s-edge-devtools-inspect-tool-icon.png) 检查工具图标。) 和切换屏幕**视频 (** ![切换屏幕](media/v-s-edge-devtools-toggle-screencast-icon.png)视频图标。) 可用，"更多**工具 (** ![更多](media/more-tools-v-s-icon.png)工具"图标。) 菜单提供"问题"、网络条件和网络请求[阻止工具：](../devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md)
+
+![已取消停靠的 Visual Studio 开发人员工具窗口。](media/edge-devtools-v-s-window-undocked.png)
+
+
+**另请参阅：**
+
+<!-- todo: update url from preview to release: -->
+* [适用于开发人员的边缘开发人员Visual Studio](https://devblogs.microsoft.com/visualstudio/?p=237066&preview=1&_ppp=7aa7aef54f)，Visual Studio DevBlogs。
+
+<!--
+* [Microsoft Edge DevTools extension for Visual Studio](../devtools-guide-chromium/whats-new/2022/03/devtools.md#microsoft-edge-devtools-extension-for-visual-studio) in _What's New in DevTools (Microsoft Edge 99)_.
+-->
 
 
 <!-- ====================================================================== -->

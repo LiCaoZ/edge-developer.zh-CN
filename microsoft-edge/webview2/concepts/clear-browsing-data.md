@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 02/09/2022
-ms.openlocfilehash: 9cfde870bef656fede7f5e16b457bc7440af3940
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: edde57c078752519a6f5d7e76840c32219b68ed1
+ms.sourcegitcommit: 2631c3835d23d9adaa28c19198319588baf9d8c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12433688"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "12439664"
 ---
 # <a name="clear-browsing-data-from-the-user-data-folder"></a>从用户数据文件夹中清除浏览数据
 
@@ -33,17 +33,21 @@ ms.locfileid: "12433688"
 
 
 <!-- ------------------------------ -->
-# [<a name="c"></a>C++](#tab/cpp)
 
-[ICoreWebView2ExperimentalProfile4：：ClearBrowsingDataAll () 方法](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataall)
-
-
-<!-- ------------------------------ -->
 # [<a name="c"></a>C#](#tab/csharp)
 
 [CoreWebView2Profile.ClearBrowsingDataAsync () 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync)
 
+
+<!-- ------------------------------ -->
+
+# [<a name="c"></a>C++](#tab/cpp)
+
+[ICoreWebView2Profile：：ClearBrowsingDataAll () 方法](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataall)
+
+
 ---
+
 <!-- end of tab-set -->
 
 
@@ -54,21 +58,24 @@ ms.locfileid: "12433688"
 
 
 <!-- ------------------------------ -->
-# [<a name="c"></a>C++](#tab/cpp)
 
-[ICoreWebView2Profile：：ClearBrowsingData (dataKinds) 方法](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdata)
-
-[COREWEBVIEW2_BROWSING_DATA_KINDS枚举](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_browsing_data_kinds)
-
-
-<!-- ------------------------------ -->
 # [<a name="c"></a>C#](#tab/csharp)
 
 [CoreWebView2Profile.ClearBrowsingDataAsync (dataKinds) 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds))
 
 [CoreWebView2BrowsingDataKinds 枚举](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
 
+
+<!-- ------------------------------ -->
+
+# [<a name="c"></a>C++](#tab/cpp)
+
+[ICoreWebView2Profile：：ClearBrowsingData (dataKinds) 方法](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdata)
+
+[COREWEBVIEW2_BROWSING_DATA_KINDS枚举](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_browsing_data_kinds)
+
 ---
+
 <!-- end of tab-set -->
 
 
@@ -79,21 +86,24 @@ ms.locfileid: "12433688"
 
 
 <!-- ------------------------------ -->
-# [<a name="c"></a>C++](#tab/cpp)
 
-[ICoreWebView2Profile：：ClearBrowsingDataInTimeRange (dataKinds、startTime、endTime) 方法](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataintimerange)
-
-[COREWEBVIEW2_BROWSING_DATA_KINDS枚举](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_browsing_data_kinds)
-
-
-<!-- ------------------------------ -->
 # [<a name="c"></a>C#](#tab/csharp)
 
 [CoreWebView2Profile.ClearBrowsingDataAsync (dataKinds， startTime， endTime) 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds-system-datetime-system-datetime))
 
 [CoreWebView2BrowsingDataKinds 枚举](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
 
+
+<!-- ------------------------------ -->
+
+# [<a name="c"></a>C++](#tab/cpp)
+
+[ICoreWebView2Profile：：ClearBrowsingDataInTimeRange (dataKinds、startTime、endTime) 方法](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataintimerange)
+
+[COREWEBVIEW2_BROWSING_DATA_KINDS枚举](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_browsing_data_kinds)
+
 ---
+
 <!-- end of tab-set -->
 
 
@@ -110,6 +120,39 @@ ms.locfileid: "12433688"
 
 
 <!-- ------------------------------ -->
+
+# [<a name="c"></a>C#](#tab/csharp)
+
+```csharp
+// Clears autofill data.
+private void ClearAutofillData()
+{
+    CoreWebView2Profile profile;
+    if (webView.CoreWebView2 != null)
+    {
+        profile = webView.CoreWebView2.Profile;
+        // Get the current time, the time in which the browsing data will be cleared
+        // until.
+        System.DateTime endTime = DateTime.Now;
+        System.DateTime startTime = DateTime.Now.AddHours(-1);
+        // Offset the current time by one hour to clear the browsing data from the
+        // last hour.
+        CoreWebView2BrowsingDataKinds dataKinds = (CoreWebView2BrowsingDataKinds)
+                                 (CoreWebView2BrowsingDataKinds.GeneralAutofill | 
+                                  CoreWebView2BrowsingDataKinds.PasswordAutosave);
+        await profile.ClearBrowsingDataAsync(dataKinds, startTime, endTime);
+    }
+}
+```
+
+**API：**
+
+* [CoreWebView2Profile.ClearBrowsingDataAsync (dataKinds， startTime， endTime) 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds-system-datetime-system-datetime))
+* [CoreWebView2BrowsingDataKinds 枚举](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
+
+
+<!-- ------------------------------ -->
+
 # [<a name="c"></a>C++](#tab/cpp)
 
 ```cpp
@@ -152,38 +195,8 @@ void ClearAutofillData()
 * [COREWEBVIEW2_BROWSING_DATA_KINDS枚举](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_browsing_data_kinds)
 * [ICoreWebView2ClearBrowsingDataCompletedHandler 接口](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclearbrowsingdatacompletedhandler)
 
-
-<!-- ------------------------------ -->
-# [<a name="c"></a>C#](#tab/csharp)
-
-```csharp
-// Clears autofill data.
-private void ClearAutofillData()
-{
-    CoreWebView2Profile profile;
-    if (webView.CoreWebView2 != null)
-    {
-        profile = webView.CoreWebView2.Profile;
-        // Get the current time, the time in which the browsing data will be cleared
-        // until.
-        System.DateTime endTime = DateTime.Now;
-        System.DateTime startTime = DateTime.Now.AddHours(-1);
-        // Offset the current time by one hour to clear the browsing data from the
-        // last hour.
-        CoreWebView2BrowsingDataKinds dataKinds = (CoreWebView2BrowsingDataKinds)
-                                 (CoreWebView2BrowsingDataKinds.GeneralAutofill | 
-                                  CoreWebView2BrowsingDataKinds.PasswordAutosave);
-        await profile.ClearBrowsingDataAsync(dataKinds, startTime, endTime);
-    }
-}
-```
-
-**API：**
-
-* [CoreWebView2Profile.ClearBrowsingDataAsync (dataKinds， startTime， endTime) 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds-system-datetime-system-datetime))
-* [CoreWebView2BrowsingDataKinds 枚举](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
-
 ---
+
 <!-- end of tab-set -->
 
 
@@ -192,16 +205,7 @@ private void ClearAutofillData()
 
 
 <!-- ------------------------------ -->
-# [<a name="c"></a>C++](#tab/cpp)
 
-* [ICoreWebView2Profile：：ClearBrowsingDataAll () 方法](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataall)
-* [ICoreWebView2Profile：：ClearBrowsingData (dataKinds) 方法](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdata)
-* [ICoreWebView2Profile：：ClearBrowsingDataInTimeRange (dataKinds、startTime、endTime) 方法](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataintimerange)
-* [COREWEBVIEW2_BROWSING_DATA_KINDS枚举](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_browsing_data_kinds)
-* [ICoreWebView2ClearBrowsingDataCompletedHandler 接口](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclearbrowsingdatacompletedhandler)
-
-
-<!-- ------------------------------ -->
 # [<a name="c"></a>C#](#tab/csharp)
 
 * [CoreWebView2.Profile 属性](/dotnet/api/microsoft.web.webview2.core.corewebview2.profile)
@@ -211,7 +215,19 @@ private void ClearAutofillData()
 * [CoreWebView2Profile.ClearBrowsingDataAsync (dataKinds， startTime， endTime) 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds-system-datetime-system-datetime))
 * [CoreWebView2BrowsingDataKinds 枚举](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
 
+
+<!-- ------------------------------ -->
+
+# [<a name="c"></a>C++](#tab/cpp)
+
+* [ICoreWebView2Profile：：ClearBrowsingDataAll () 方法](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataall)
+* [ICoreWebView2Profile：：ClearBrowsingData (dataKinds) 方法](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdata)
+* [ICoreWebView2Profile：：ClearBrowsingDataInTimeRange (dataKinds、startTime、endTime) 方法](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataintimerange)
+* [COREWEBVIEW2_BROWSING_DATA_KINDS枚举](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_browsing_data_kinds)
+* [ICoreWebView2ClearBrowsingDataCompletedHandler 接口](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclearbrowsingdatacompletedhandler)
+
 ---
+
 <!-- end of tab-set -->
 
 

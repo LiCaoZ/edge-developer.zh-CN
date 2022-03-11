@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/02/2022
-ms.openlocfilehash: a9ed028c7dded5baf985dbbf3e23050b9e1ba20f
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 7f27ccdf40e0ed811513511a8c9b63f68a043e25
+ms.sourcegitcommit: 2631c3835d23d9adaa28c19198319588baf9d8c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12433737"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "12439692"
 ---
 # <a name="securely-debug-original-code-by-using-azure-artifacts-symbol-server-source-maps"></a>使用Azure Artifacts符号服务器源映射安全地调试原始代码
 
@@ -35,6 +35,8 @@ ms.locfileid: "12433737"
 
 为了从 Azure Artifacts 符号服务器获取源映射，DevTools 使用提取协议与 Azure DevOps 通信，这需要有效的个人访问令牌 (PAT) 。
 
+即使已经生成一个 PAT，在通过向符号服务器发布源映射来安全调试原始代码时，你也需要生成一个 PAT，以将源Azure Artifacts[服务器](publish-source-maps-to-azure.md)。
+
 若要生成一个 PAT，Azure DevOps：
 
 1. 通过进入 Azure DevOps登录到组织`https://dev.azure.com/{yourorganization}`。
@@ -51,7 +53,7 @@ ms.locfileid: "12433737"
 
    !["创建新的个人访问令牌"对话框，选中符号的"读取"范围。](images/ado-pat-config-read.png)
 
-1. 在 **"名称** "文本框中，输入 PAT 的名称，如 **DevTools 源映射**。
+1. 在 **"名称** "文本框中，输入 PAT 的名称，例如"devtool source maps"。
 
 1. 在" **到期** "部分，输入 PAT 的到期日期。
 
