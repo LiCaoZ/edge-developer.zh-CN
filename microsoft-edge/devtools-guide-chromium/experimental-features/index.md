@@ -21,12 +21,12 @@ no-loc:
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
 ms.date: 03/01/2022
-ms.openlocfilehash: 391c8993fb58df80cca2a9a99fcad911d38698f6
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: f932288599e5c7c8c6135395014db08513571638
+ms.sourcegitcommit: 60abf78b0266a64b99ca7d79038c012c644b7c9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12432424"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "12445263"
 ---
 # <a name="experimental-features"></a>试验功能
 
@@ -148,11 +148,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 <!-- ====================================================================== -->
 ## <a name="providing-feedback-about-the-experiments"></a>提供有关实验的反馈
 
-我们期待收到有关实验功能的反馈。
-
-* 请通过发布推文 [@EdgeDevTools](https://twitter.com/edgedevtools) 向我们发送反馈。
-
-* [请与开发人员Microsoft Edge联系](../contact.md)。
+我们期待收到有关实验功能的反馈。 [联系我们Microsoft Edge开发人员工具团队](../contact.md)，与我们分享反馈。
 
 * 打开焦点**模式**实验后，在活动栏底部，选择"帮助******" (** ![](../media/help-icon-of-focus-mode.png) 焦点模式下的活动栏中的"帮助"图标。) >**反馈**"，以显示"发送反馈 **"窗口。**
 
