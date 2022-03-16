@@ -570,8 +570,6 @@
               href: extensions-chromium/getting-started/part1-simple-extension.md
             - name: 创建扩展教程，第 2 部分
               href: extensions-chromium/getting-started/part2-content-scripts.md
-            - name: 扩展名的清单文件格式
-              href: extensions-chromium/getting-started/manifest-format.md
             - name: 旁加载扩展
               href: extensions-chromium/getting-started/extension-sideloading.md
         - name: 开发人员指南
@@ -582,12 +580,21 @@
               href: extensions-chromium/enterprise/declare-permissions.md
             - name: 将 Chrome 扩展移植到Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
-            - name: 将扩展从清单 V2 迁移到 V3
-              href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
             - name: 分发扩展的备用方法
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
             - name: 本机消息传递
               href: extensions-chromium/developer-guide/native-messaging.md
+        - name: Manifest
+          items:
+            - name: 清单 V3 概述
+              href: extensions-chromium/developer-guide/manifest-v3.md
+              displayName: null
+            - name: 将扩展从清单 V2 迁移到 V3
+              href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
+              displayName: null
+            - name: 扩展名的清单文件格式
+              href: extensions-chromium/getting-started/manifest-format.md
+              displayName: null
         - name: 发布到加载项网站
           items:
             - name: 注册为扩展开发人员
