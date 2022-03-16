@@ -23,11 +23,10 @@ author： MSEdgeTeam ms.author： msedgedevrel ms.topic： conceptual ms.prod：
 - "Profile and Identity"
 - "Web Payment API"
 - "Windows Defender Application Guard"
-- "edge:// URLs" ms.date： 09/21/2021
+- "edge:// URLs" ms.date： 03/14/2022
 
 ---
 # <a name="differences-between-microsoft-edge-and-webview2"></a>Microsoft Edge 与 WebView2 之间的区别
-<!-- old title: # Differences between Microsoft Edge and WebView2 -->
 
 WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏览器扩展到基于 WebView2 的应用，这很有用。  但是，由于 WebView2 不限于类似浏览器的应用，因此需要修改或删除一些浏览器功能。
 
@@ -123,13 +122,21 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 <!-- ====================================================================== -->
 ## <a name="additional-keyboard-shortcuts-information"></a>其他键盘快捷方式信息
 
-键盘快捷方式或键绑定在 Microsoft Edge 和 WebView2 中受支持。  更新Microsoft Edge时，默认键绑定可能会更改。  此外，如果 WebView2 现在支持此功能，则默认情况下关闭的键盘快捷方式可能会改为打开。
+键盘快捷方式或键绑定在 Microsoft Edge 和 WebView2 中受支持。
+
+
+### <a name="preventing-shortcuts-from-changing-during-update"></a>防止快捷方式在更新期间更改
+
+更新Microsoft Edge时，默认键绑定可能会更改。  此外，如果 WebView2 现在支持此功能，则默认情况下关闭的键盘快捷方式可能会改为打开。
 
 若要避免对`AreBrowserAcceleratorKeysEnabled``FALSE`键盘快捷方式进行此类更改，可以设置为 ，这将关闭访问浏览器功能的所有键，但会启用所有基本的文本编辑和移动快捷方式。
 
-在 WebView2 中，始终关闭以下快捷方式。  `*` 星号 () 表示快捷方式未关闭，但它访问的功能已关闭，或者该功能不适用于 WebView2。
 
-| 操作 | Windows |
+### <a name="shortcuts-that-are-turned-off"></a>关闭的快捷方式
+
+以下快捷方式在 WebView2 中始终为关闭状态，或有效关闭。  `*` 星号 () 表示快捷方式未关闭，但它访问的功能已关闭，或者该功能不适用于 WebView2。
+
+| 操作 | 快捷方式 |
 |:--- |:--- |
 | 添加到 Favorites | `Ctrl`+`D` |
 | 将所有选项卡添加到 Favorites | `Ctrl`+`Shift`+`D` |
@@ -146,8 +153,8 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 | 选择选项卡 (1 - 8)  | `Ctrl`+`(1-8)` |
 | 显示 Favorites 栏 `*` | `Ctrl`+`Shift`+`B` |
 | 帮助 | `F1` |
-| 焦点下一个窗格 `*` | `F6` |
-| 焦点上一个窗格 `*` | `Shift`+`F6` |
+| 焦点下一个窗格 `*` | `F6`.  在窗口托管模式下受支持，但在视觉托管模式下不受支持。  可视托管模式用于 [WinUI 2 (UWP) 应用](../samples/webview2_sample_uwp.md)，以及 [使用 Visual Composition 的 Win32 C++ 应用](../samples/webview2samplewincomp.md)。 |
+| 焦点上一个窗格 `*` | `Shift`+`F6`.  与上述支持 `F6` 相同。 |
 | 阅读视图 `*` | `F9` |
 | 焦点菜单栏 | `F10` |
 | 显示标识菜单 `*` | `Ctrl`+`Shift`+`M` |
@@ -171,17 +178,23 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 | 显示阅读模式栏 `*` | `Shift`+`Alt`+`R` |
 | 显示 Collections `*` | `Ctrl`+`Shift`+`Y` |
 
+
+### <a name="shortcuts-turned-off-except-when-event-not-handled"></a>关闭快捷方式（事件未处理时除外）
+
 除非在未 `NewWindowRequested` 处理事件时显示的窗口，否则始终关闭以下键盘快捷方式：
 
-| 操作 | Windows |
+| 操作 | 快捷方式 |
 |:--- |:--- |
 | 关闭选项卡 | `Ctrl`+`W, Ctrl`+`F4` |
 | 关闭窗口 | `Ctrl`+`Shift`+`W` |
 | 全屏 | `F11` |
 
+
+### <a name="shortcuts-turned-off-if-acceleratorenabled-is-false"></a>如果 AcceleratorEnabled 为 False，则关闭快捷方式
+
 如果设置为 `AreBrowserAcceleratorKeysEnabled` `FALSE`，则以下其他键盘快捷方式将关闭：
 
-| 操作 | Windows |
+| 操作 | 快捷方式 |
 |:--- |:--- |
 | 停止 | `Escape` |
 | 在页面上查找 | `Ctrl`+`F` |
@@ -202,5 +215,7 @@ WebView2 基于浏览器Microsoft Edge浏览器。  你有机会将功能从浏�
 | 打开 DevTools 控制台 | `Ctrl`+`Shift`+`J` |
 | 打开 DevTools Inspect | `Ctrl`+`Shift`+`C` |
 
-> [!Note]
-> 若要单独自定义任何键，请使用 [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true) 事件。
+
+### <a name="customizing-an-individual-key"></a>自定义单个密钥
+
+若要单独自定义任何键，请使用 [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true) 事件。
