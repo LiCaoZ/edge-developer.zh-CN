@@ -752,6 +752,9 @@
             - name: 导航事件
               href: webview2/concepts/navigation-events.md
               displayName: Navigation events for WebView2 apps
+            - name: 基本身份验证
+              href: webview2/concepts/basic-authentication.md
+              displayName: 'auth, Basic authentication for WebView2 apps'
             - name: Web 和本机互操作
               items:
                 - name: 本机和 Web 端代码的互操作

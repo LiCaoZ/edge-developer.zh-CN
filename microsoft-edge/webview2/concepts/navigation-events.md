@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 10/28/2021
-ms.openlocfilehash: 14d31a0aafc396a48f9f4ab620aa025b891994ff
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 78d5fdfc2338db69b8af0038d1ca90f914b15711
+ms.sourcegitcommit: 2279b72d937688a2e22d6ff73998f6c777bdc451
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431828"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449898"
 ---
 # <a name="navigation-events-for-webview2-apps"></a>WebView2 应用的导航事件
 <!-- old title: # Navigation events for WebView2 -->
@@ -40,8 +40,10 @@ Derivative copies of this page's content, or links to this page:
 1. `SourceChanged`
 1. `ContentLoading`
 1. `HistoryChanged`
+1. `BasicAuthenticationRequested`
 1. `DOMContentLoaded`
 1. `NavigationCompleted`
+
 
 以下事件描述每次导航操作期间 WebView2 的状态：
 
