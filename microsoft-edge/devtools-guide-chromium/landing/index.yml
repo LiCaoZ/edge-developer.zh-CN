@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft Edge DevTools 文档
-summary: 使用 Microsoft Edge 开发工具进行开发。
+summary: 使用 Microsoft Edge DevTools 进行开发。
 metadata:
   ms.service: websites
   ms.topic: landing-page
@@ -9,7 +9,7 @@ metadata:
   ms.date: 01/07/2022
   ms.openlocfilehash: 7ee7d04693cc88beafb099db991b3939de4f2693
   ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 03/08/2022
   ms.locfileid: "12433693"
@@ -28,7 +28,7 @@ landingContent:
       url: /microsoft-edge/devtools-guide-chromium/console/index
   - linkListType: whats-new
     links:
-    - text: DevTools Microsoft Edge的新增功能
+    - text: Microsoft Edge DevTools 中的新增功能
       url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
     - text: 联系 Microsoft Edge 开发工具团队
       url: /microsoft-edge/devtools-guide-chromium/contact
@@ -74,7 +74,7 @@ landingContent:
       url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps/index
     - text: 检查网络活动
       url: /microsoft-edge/devtools-guide-chromium/network/index
-- title: 模拟和测试
+- title: 仿真和测试
   linkLists:
   - linkListType: how-to-guide
     links:
