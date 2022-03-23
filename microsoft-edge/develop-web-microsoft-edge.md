@@ -1,5 +1,5 @@
 ---
-title: 使用 Web 开发Microsoft Edge
+title: 使用 Microsoft Edge 开发网页版
 description: 使用 Microsoft Edge、Microsoft Edge扩展、渐进式 Web 应用、WebDriver 自动化、WebView2 等Microsoft Edge开发 Web。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 02/14/2022
-ms.openlocfilehash: 9c27bc033d24bcd00d65b935f2a6697680f6833d
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 7065559f3d5428d37f7d3111b91bcade1ed5e666
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12433442"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459628"
 ---
-# <a name="develop-for-the-web-with-microsoft-edge"></a>使用 Web 开发Microsoft Edge
+# <a name="develop-for-the-web-with-microsoft-edge"></a>使用 Microsoft Edge 开发网页版
 
 使用 Microsoft Edge、Microsoft Edge扩展、渐进式 Web 应用、WebDriver 自动化、WebView2 等Microsoft Edge开发 Web。
 
@@ -33,7 +33,7 @@ ms.locfileid: "12433442"
 
 *  使用具有可视界面的 实时工具检查、调整和更改网页中元素的样式。  检查浏览器存储内容以构建网页的位置，包括 `.html`、 `.css`、 `.js``.png` 和 文件格式。
 
-*  模拟 Web 产品在不同的设备上的行为方式，并模拟移动环境，并使用不同的网络条件。  检查网络流量并查看问题的位置。
+*  模拟网页在不同设备上的行为方式，并模拟移动环境，并使用不同的网络条件。  检查网络流量并查看问题的位置。
 
 *  使用断点调试和实时控制台 调试JavaScript。  查找 Web 应用的内存问题和呈现问题。
 

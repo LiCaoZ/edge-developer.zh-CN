@@ -624,9 +624,9 @@
                   href: extensions-chromium/store-policies/developer-policies.md
             - name: Microsoft Edge 加载项 API
               items:
-                - name: 使用 Microsoft Edge 外接程序 API (在个人预览版中)
+                - name: 使用Microsoft Edge加载项 API （Beta）
                   href: extensions-chromium/publish/api/using-addons-api.md
-                - name: Microsoft Edge 外接程序 API 参考 (在个人预览版中)
+                - name: Microsoft Edge加载项 API 参考 （Beta）
                   href: extensions-chromium/publish/api/addons-api-reference.md
         - name: 适用于企业的扩展
           items:
@@ -695,7 +695,7 @@
               displayName: Sample Code for WebView2
             - name: WebView2 控件和 API 示例
               items:
-                - name: UWP WinUI 2 浏览器应用
+                - name: WinUI 2 （UWP） 浏览器应用
                   href: webview2/samples/webview2_sample_uwp.md
                   displayName: webview2_sample_uwp
                 - name: Win32 C++ 应用
@@ -819,9 +819,9 @@
             - name: 使用 Chrome DevTools 协议
               href: webview2/how-to/chromium-devtools-protocol.md
               displayName: Use the Chrome DevTools Protocol in WebView2
-            - name: 使用 Microsoft Edge 驱动程序自动执行和测试
+            - name: 使用 Microsoft Edge WebDriver 自动执行和测试
               href: webview2/how-to/webdriver.md
-              displayName: Automate and test WebView2 apps with Microsoft Edge Driver
+              displayName: Automate and test WebView2 apps with Microsoft Edge WebDriver
         - name: 部署和分发
           items:
             - name: 部署和分发
@@ -899,7 +899,7 @@
               href: webdriver-chromium/ie-mode.md
             - name: 功能和 EdgeOptions
               href: webdriver-chromium/capabilities-edge-options.md
-            - name: 联系 Microsoft Edge 驱动程序团队
+            - name: 联系 Microsoft Edge WebDriver 团队
               href: webdriver-chromium/contact.md
         - name: 适用于Visual Studio Code的 webhint 扩展
           href: test-and-automation/webhint.md

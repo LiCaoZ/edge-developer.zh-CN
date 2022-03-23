@@ -5,13 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 04/20/2021
-ms.openlocfilehash: 1aa0dc2d608d526f2bbeb83ef034125394279edc
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
-ms.translationtype: HT
+ms.date: 03/18/2022
+ms.openlocfilehash: 594efc984ea497be8b75011242ec7ab47c238120
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12432150"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459663"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,7 +28,47 @@ ms.locfileid: "12432150"
    limitations under the License.  -->
 # <a name="sources-tool-overview"></a>源工具概述
 
-使用 **"** 源"工具查看、修改和调试前端 JavaScript 代码，并检查包含当前网页的资源。  " **源** "工具具有三个窗格：
+使用 **"** 源"工具查看、修改和调试前端 JavaScript 代码，并检查包含当前网页的资源。
+
+
+**详细内容：**
+
+* [导航器、编辑器和调试器窗格](#the-navigator-editor-and-debugger-panes)
+* [使用导航器窗格选择文件](#using-the-navigator-pane-to-select-files)
+   * [使用"页面"选项卡浏览构建当前网页的资源](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
+   * [使用"文件系统"选项卡定义本地 Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
+   * [使用"覆盖"选项卡覆盖包含本地文件的服务器文件](#using-the-overrides-tab-to-override-server-files-with-local-files)
+   * [将"内容脚本"选项卡用于Microsoft Edge扩展](#using-the-content-scripts-tab-for-microsoft-edge-extensions)
+   * [使用"代码段"选项卡在任何网页上运行 JavaScript 代码段](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage)
+   * [使用命令菜单打开文件](#using-the-command-menu-to-open-files)
+* [使用编辑器窗格查看或编辑文件](#using-the-editor-pane-to-view-or-edit-files)
+   * [编辑 JavaScript 文件](#editing-a-javascript-file)
+   * [使用非常打印重新格式化缩小的 JavaScript 文件](#reformatting-a-minified-javascript-file-with-pretty-print)
+   * [将缩小代码映射到源代码以显示可读代码](#mapping-minified-code-to-your-source-code-to-show-readable-code)
+   * [从源代码转换到编译的前端代码](#transformations-from-source-code-to-compiled-front-end-code)
+   * [编辑 CSS 文件](#editing-a-css-file)
+   * [编辑 HTML 文件](#editing-an-html-file)
+   * [访问行号或函数](#going-to-a-line-number-or-function)
+   * [使用不同的工具时显示源文件](#displaying-source-files-when-using-a-different-tool)
+* [使用调试器窗格调试 JavaScript 代码](#using-the-debugger-pane-to-debug-javascript-code)
+   * [使用调试器的基本方法](#the-basic-approach-to-using-a-debugger)
+   * [调试器监视和作用域比 console.log 的优点](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
+   * [直接从Visual Studio Code调试](#debug-from-visual-studio-code-directly)
+   * [有关调试的文章](#articles-about-debugging)
+
+<!-- omit h4s
+      * [Icons in the Page tab](#icons-in-the-page-tab)
+      * [Group files by folder or as a flat list](#group-files-by-folder-or-as-a-flat-list)
+
+      * [Save and Undo](#save-and-undo)
+      * [Find and Replace](#find-and-replace)
+      * [Showing the changes you made](#showing-the-changes-you-made)
+      * [Changes inside a function take effect](#changes-inside-a-function-take-effect) -->
+
+
+## <a name="the-navigator-editor-and-debugger-panes"></a>导航器、编辑器和调试器窗格
+
+" **源** "工具具有三个窗格：
 
 | 窗格 | 操作 |
 |---|---|

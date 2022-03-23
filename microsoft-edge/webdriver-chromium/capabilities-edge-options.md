@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 02/10/2021
-ms.openlocfilehash: 00fa3ca72399a53b651e9f60c7bf759ef899f53c
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: aa77c7c47ed957c877b71a74eb54bef1600aebc4
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431394"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459705"
 ---
 # <a name="capabilities-and-edgeoptions"></a>功能和 EdgeOptions
 
@@ -94,7 +94,7 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 | 项 | 类型 | 默认值 | 详细信息 |
 |:--- |:--- |:--- |:--- |
 | `browserExecutableFolder` | 字符串 |  (空)  | 包含要使用的固定版本的 WebView2 运行时的文件夹的路径。 有关将固定版本运行时分发与 WebView2 一同使用的信息，请参阅分发 [WebView2 应用和 WebView2 运行时](../webview2/concepts/distribution.md#the-fixed-version-runtime-distribution-mode)。 |
-| `userDataFolder` | 字符串 |  (空)  | WebView2 将使用的用户数据文件夹的路径。 如果`userDataFolder`未指定，则Microsoft Edge驱动程序将创建一个临时用户数据文件夹。 有关使用 WebView2 管理用户数据文件夹的信息，请参阅 [管理用户数据文件夹](../webview2/concepts/user-data-folder.md)。 |
+| `userDataFolder` | 字符串 |  (空)  | WebView2 将使用的用户数据文件夹的路径。 如果`userDataFolder`未指定，Microsoft Edge WebDriver 将创建一个临时用户数据文件夹。 有关使用 WebView2 管理用户数据文件夹的信息，请参阅 [管理用户数据文件夹](../webview2/concepts/user-data-folder.md)。 |
 | `additionalBrowserArguments` | 字符串列表 |  | WebView2 将在启动时传递到浏览器进程的命令行参数列表。 具有关联值的参数应用 `=` 符号分隔 (例如，) `['start-maximized', 'log-level=0']` 。 |
 | `releaseChannelPreference` | 字符串 |  | 首选的 WebView2 常青运行时分发使用。 可以是 或 `"stable"` `"canary"`。 |
 

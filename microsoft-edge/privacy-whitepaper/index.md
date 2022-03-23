@@ -10,12 +10,12 @@ no-loc:
 - Cast
 - Google Cast
 ms.date: 12/10/2021
-ms.openlocfilehash: 3908803344622c96df4239bec8471cd806ad9663
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 35a5df223bfd17e1f6719e5c45f5cb08e128e7aa
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12432472"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459565"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书
 
@@ -393,7 +393,7 @@ Internet Explorer 浏览数据本地存储在 Microsoft Edge 和 Internet Explor
 
 
 <!-- ====================================================================== -->
-## <a name="microsoft-edge-driver"></a>Microsoft Edge 驱动程序
+## <a name="microsoft-edge-webdriver"></a>Microsoft Edge WebDriver
 
 Microsoft Edge 驱动程序允许开发人员使用 [WebDriver 协议](https://www.w3.org/TR/webdriver2/)驱动 Microsoft Edge 浏览器。  Microsoft Edge驱动程序是可执行文件 `msedgedriver.exe` 与Microsoft Edge进行分隔。 开发人员可以从客户端代码（例如测试脚本）调用驱动程序。  默认情况下，Microsoft Edge 驱动程序会向 Microsoft 发送诊断数据，如[新建会话 WebDriver 命令](https://www.w3.org/TR/webdriver2/#new-session)的状态。  若要关闭 Microsoft Edge 驱动程序的诊断数据收集，请将 `MSEDGEDRIVER_TELEMETRY_OPTOUT` 环境变量设置为 `1`。  有关Microsoft Edge驱动程序的详细信息，请参阅 [使用 WebDriver 自动执行Microsoft Edge自动化](/microsoft-edge/webdriver-chromium)。
 

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 11/05/2021
-ms.openlocfilehash: 20665d5b26a32de56cfe235c638ab1d822455cb2
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 69fae4423cfb5da9631963b838089b625010f275
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431543"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459544"
 ---
 # <a name="get-started-with-webview2-in-winui-2-uwp-apps-public-preview"></a>WinUI 2 (UWP) 应用中的 WebView2 入门（公共预览版）
 
@@ -154,9 +154,9 @@ Visual Studio本教程要求安装 2019 版本 16.9 或更高版本。  Visual S
 
    Visual Studio显示新创建的解决方案和项目：
 
-   ![Visual Studio，包含新创建的 UWP 项目。](media/winui2-vs-after-new-project-created.png)
+   ![Visual Studio，包含新创建的 WinUI 2 (UWP) 项目。](media/winui2-vs-after-new-project-created.png)
 
-接下来，将这个新 UWP 项目设置为进行 WinUI 2 和 WebView2 开发。
+接下来，将这个新 WinUI 2 (UWP) 项目，以承载 WebView2 控件并使用 WebView2 API。
 
 
 <!-- maintenance link; keep: main copy:
@@ -312,7 +312,7 @@ maintenance link (keep)
 <!-- ====================================================================== -->
 ## <a name="status-of-webview2-functionality-on-winui-2-uwp"></a>WinUI 2 上的 WebView2 功能状态 (UWP) 
 
-WebView2 WinUI 2 控件正在开发中。  尚未实现以下功能，或者有问题：
+WebView2 WinUI 2 (UWP) 控件正在开发中。  尚未实现以下功能，或者有问题：
 
 *  下载 UI。
    *  虽然下载 UI 功能当前不起作用，但修复问题后，此功能可能会自动显示在应用的 UI 中。  若要保持兼容性，应手动通过截获下载开始事件来禁用 [下载 UI 功能](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2downloadstartingeventargs)。
@@ -333,7 +333,7 @@ WebView2 WinUI 2 控件正在开发中。  尚未实现以下功能，或者有�
 ## <a name="see-also"></a>另请参阅
 
 本地页面：
-* [WebView2 示例：UWP WinUI 2 浏览器应用](../samples/webview2_sample_uwp.md)
+* [WebView2 示例：WinUI 2 (UWP) 浏览器应用](../samples/webview2_sample_uwp.md)
 * [管理用户数据文件夹](../concepts/user-data-folder.md)
 * [WebView2 的示例代码](../code-samples-links.md) - 存储库 `WebView2Samples` 指南。
 * [WebView2 应用的开发最佳做法](../concepts/developer-guide.md)
@@ -344,8 +344,7 @@ GitHub：
 * [WebView2 UWP 示例应用](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp) - WebView2 功能的综合示例。
 * [问题 - microsoft-ui-xaml 存储库](https://github.com/microsoft/microsoft-ui-xaml/issues) - 输入特定于 WinUI 的功能请求或 Bug。
 
-API 参考：
-* WinUI 2/UWP 的 WinRT API 参考
+适用于 UWP 开发人员的 WinUI 2 (WinRT API) ：
 * [核心版](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
 * [COM 互操作](/microsoft-edge/webview2/reference/winrt/interop/index)
 * [WebView2 API 参考](../webview2-api-reference.md) - 每个平台的 API 参考

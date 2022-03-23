@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/09/2021
-ms.openlocfilehash: ebbd7f23d80be3137a1cc5cc1fd284f4dc3c6654
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: a6151fc13ca0db3445fefe4c0a8df3703b9d23a6
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12430435"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459754"
 ---
 # <a name="detecting-microsoft-edge-from-your-website"></a>正在从网站检测 Microsoft Edge
 
@@ -219,6 +219,7 @@ EdgA/90.0.818.46
 | iPhone/iPad | `EdgiOS` |
 | Android (Mobile/tablet)  | `EdgA`|
 
+Microsoft Edge 旧版不再支持。 有关详细信息[，Microsoft Edge 旧版](#microsoft-edge-legacy)部分。
 
 <!-- ====================================================================== -->
 ## <a name="map-the-user-agent-string-to-an-expanded-browser-name"></a>将User-Agent字符串映射到扩展的浏览器名称
@@ -237,7 +238,7 @@ EdgA/90.0.818.46
 
 1. 打开 Microsoft Edge Beta 或 Stable 渠道。
 
-1. `edge://compat/useragent`转到 。
+1. 转到 `edge://compat/useragent`。
 
 Canary Microsoft Edge开发人员频道当前不会接收用户代理覆盖。 Canary Microsoft Edge开发人员频道提供的环境使用默认模式Microsoft Edge代理。 使用 Microsoft Edge Canary 和 Dev 渠道重现由默认用户代理导致Microsoft Edge问题。
 
@@ -256,3 +257,25 @@ Canary Microsoft Edge开发人员频道当前不会接收用户代理覆盖。 C
     ```shell
     {path/to/microsoft/edge.ext} --disable-domain-action-user-agent-override
     ```
+
+
+<!-- ====================================================================== -->
+## <a name="microsoft-edge-legacy"></a>Microsoft Edge 旧版
+
+旧版浏览器注意事项：
+
+*  不再Microsoft Edge 旧版浏览器。 请参阅博客文章新[Microsoft Edge替换Microsoft Edge 旧版](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-microsoft-edge-to-replace-microsoft-edge-legacy-with-april-s/ba-p/2114224)。
+
+*  Microsoft Edge 旧版仅在 Windows 10 上可用。
+
+*  在本文User-Agent的所有浏览器机制中，唯一支持的特定于浏览器的机制是Microsoft Edge 旧版字符串User-Agent机制。
+
+*  User-Agent的字符串Microsoft Edge 旧版令牌`Edge`。
+
+    字符串字符串的Microsoft Edge 旧版 User-Agent示例： `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.19582`
+
+
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
+
+[使用用户代理客户端提示检测 Windows 11](/microsoft-edge/web-platform/how-to-detect-win11)

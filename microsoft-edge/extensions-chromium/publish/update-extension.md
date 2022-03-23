@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/17/2021
-ms.openlocfilehash: 86b914e328948b7efd31c95ad3fdf3bf61496d43
-ms.sourcegitcommit: fa1b0662af7c59a37f96260e5aba1922343d1ae7
+ms.openlocfilehash: 22699a877e5605f55b79c81f5c2a9913a4915195
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "12437482"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459607"
 ---
 # <a name="update-a-microsoft-edge-extension"></a>更新Microsoft Edge扩展
 
@@ -34,9 +34,8 @@ ms.locfileid: "12437482"
 
 3.  `Status`列显示后`In the store`，你的扩展更新将在Microsoft Edge加载项网站上提供。
 
-<!-- todo: uncomment after the API is available for use.
-After your extension has been initially created, you will be able to update it programmatically by [Using the Microsoft Edge Add-ons API (in private preview)](api/using-addons-api.md).
--->
+最初创建扩展后，你将能够使用 [Microsoft Edge 加载项 API (Beta ](api/using-addons-api.md)) 以编程方式更新它。
+
 
 
 <!-- ====================================================================== -->

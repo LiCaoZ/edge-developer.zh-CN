@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 54e009f8b460c22d1b18d17abc116bee74f77ce0
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 29cd87128298738647524aa7b164373d2810e95c
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12430793"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459684"
 ---
 # <a name="overview-of-accessibility-testing-using-devtools"></a>使用 DevTools 的辅助功能测试概述
 
@@ -89,7 +89,7 @@ ms.locfileid: "12430793"
 
 <!-- corresponding how-to article: narrow.md -->
 
-辅助功能的一个重要部分是确保 Web 产品在较窄的视口上良好工作。 许多用户需要缩放页面才能使用它，这意味着没有太多空间。  当空间不足时，多列布局应转换为单列布局，内容按可理解的顺序放置。 这意味着将最重要的内容放置在页面顶部，将其他内容放置在页面的更下一层。
+辅助功能的一个重要部分是确保你的网站在较窄的视口中运行良好。 许多用户需要缩放页面才能使用它，这意味着没有太多空间。  当空间不足时，多列布局应转换为单列布局，内容按可理解的顺序放置。 这意味着将最重要的内容放置在页面顶部，将其他内容放置在页面的更下一层。
 
 通过缩小浏览器窗口范围，使用箭头键滚动页面，可以看到演示页面的顶部导航栏具有一些辅助功能问题。  顶部导航栏与 **"** 搜索"窗体重叠，如上图所示，需要修复该问题。
 
@@ -438,6 +438,6 @@ Inspect **覆盖** 的"辅助功能 **"** 部分包含以下行：
 * 使用语音识别进行测试。
 * 在高对比度模式下进行测试。
 
-了解改进 Web 产品的方法的另一种方式是使用 [webhint 扩展Visual Studio Code](https://aka.ms/webhint4code)。  此扩展标记源代码中易于检测到的辅助功能问题，并提供了如何修复这些问题的见解：
+若要了解改进网页的方法，另一个方法为使用 [webhint 扩展Visual Studio Code](https://aka.ms/webhint4code)。  此扩展标记源代码中易于检测到的辅助功能问题，并提供了如何修复这些问题的见解：
 
 ![Webhint in Visual Studio Code， showing an accessibility issue by underlining the HTML element and showing an explanation of the problem.](../media/a11y-testing-webhint-in-vs-code.msft.png)

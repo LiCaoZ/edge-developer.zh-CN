@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/08/2022
-ms.openlocfilehash: 61ca3dfca586a2035513e345541f878fd925a96d
-ms.sourcegitcommit: 964868e9ca0dc512c2c4ba3f130796f5a303c713
+ms.openlocfilehash: a0ad53b68408c0ba938e19223ddee3f438c8e4cb
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "12436428"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459831"
 ---
 # <a name="display-original-function-names-in-performance-profiles"></a>在性能配置文件中显示原始函数名称
 
@@ -88,8 +88,6 @@ To see your original function names in the performance tool， use **** the **Un
 
 
    某些函数名称现在未缩小。  "性能"工具中未缩小的**** 饼图现在显示那些使用从源地图中取自的更有意义的名称标记的函数， 例如 **useObserver (d) **、**useQueuedForceUpdateBlock (o) **、**trackDerivedFunction (an) **、**initializeIconColorMap (c) **、**getExtraToolControls (co) **和 **isToggleEnabled (a) **。
-
-   例如，比较下图中记录的绩效配置文件的缩小的柱形图和未缩小的柱形图。  某些生产函数名称已被替换为 (映射的函数名称) 之前的名称：
 
    ![性能配置文件中的未缩小的饼图。](images/unminified-perf-profile.msft.png)
 

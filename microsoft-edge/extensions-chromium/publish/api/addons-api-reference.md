@@ -1,26 +1,26 @@
 ---
-title: Microsoft Edge 外接程序 API 参考 (在个人预览版中)
+title: 'Microsoft Edge Beta 版加载项 API () '
 description: 加载项 API 参考，适用于 REST 终结点，用于自动发布提交到加载项网站的加载项Microsoft Edge更新。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 08/19/2021
-ms.openlocfilehash: 9ec2739b87db49359b1a3e36de0f21d88629ac6c
-ms.sourcegitcommit: 650850feb90fa62f0b1c02f47fb0727c780dfb03
+ms.date: 03/17/2022
+ms.openlocfilehash: b6bd6e8d308ef058cfee717b8877b623362bda02
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "12436322"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459698"
 ---
-# <a name="microsoft-edge-add-ons-api-reference-in-private-preview"></a>Microsoft Edge 外接程序 API 参考 (在个人预览版中)
+# <a name="microsoft-edge-add-ons-api-reference-beta"></a>Microsoft Edge Beta 版加载项 API () 
 
 > [!NOTE]
-> 加载项Microsoft Edge API 目前处于个人预览阶段。  " **发布 API** "页仅对私人预览版的参与者在合作伙伴中心显示。  加载项MICROSOFT EDGE API 正在积极开发中，路线图根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
+> Microsoft Edge加载项 API 目前处于 beta 版本。  加载项MICROSOFT EDGE API 正在积极开发中，路线图根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
 
 这是加载项 API 的 REST Microsoft Edge引用。  此 API 可自动发布已提交到加载项网站的Microsoft Edge更新。
 
-有关概述，请参阅[使用Microsoft Edge预览版中的 (加载项 API) ](using-addons-api.md)。
+有关概述，请参阅[使用 Microsoft Edge 加载项 API (Beta) ](using-addons-api.md)。
 
 <!-- ====================================================================== -->
 ## <a name="upload-a-package-to-update-an-existing-submission"></a>Upload程序包以更新现有提交
@@ -403,4 +403,4 @@ ms.locfileid: "12436322"
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [使用 Microsoft Edge 外接程序 API (在个人预览版中)](using-addons-api.md)
+*  [使用 Microsoft Edge 加载项 API (Beta) ](using-addons-api.md)

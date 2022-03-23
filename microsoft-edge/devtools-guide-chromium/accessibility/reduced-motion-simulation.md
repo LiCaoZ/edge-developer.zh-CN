@@ -6,16 +6,16 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: f2ab7528dd824955474647b11f16cc53c7bceeb1
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: b22ab9e944eaa123257d57a8297141aae4d37507
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12430554"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459586"
 ---
 # <a name="simulate-reduced-motion"></a>模拟运动减少
 
-Web 产品中的动画可能是一个辅助功能问题。  操作系统通过包括关闭动画的选项来解决此问题，以避免用户混淆和潜在的健康相关问题，例如触发癫痫。
+CSS 动画可能是一个辅助功能问题。  操作系统通过包括关闭动画的选项来解决此问题，以避免用户混淆和潜在的健康相关问题，例如触发癫痫。
 
 在网页上，您可以使用 [首选的减少](https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion) 运动 CSS 媒体查询来检测用户是否喜欢显示任何动画。  然后在测试中包装动画代码，以有条件地运行动画。
 

@@ -6,18 +6,18 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/03/2021
-ms.openlocfilehash: dc89bafec1cb121b7d6bc00eb1b3d8f59e38fff2
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 8bced36b36e9ab9cd597df0653edacc4113fb7a4
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12430981"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459838"
 ---
 # <a name="emulate-dark-or-light-schemes-in-the-rendered-page"></a>在呈现的页面中模拟深色或浅色方案
 
 使用 **呈现** 工具通过不同的显示选项或视觉缺陷查看网页的外观。
 
-许多操作系统都有一种方法以较暗或更浅的颜色显示任何应用程序。  在深色操作系统中具有浅色方案的网页产品可能难以阅读，并且对于一些用户可能是一个辅助功能问题。
+许多操作系统都有一种方法以较暗或更浅的颜色显示任何应用程序。  在深色模式操作系统中具有浅色方案的网站可能难以阅读，并且对于一些用户可能是一个辅助功能问题。
 
 若要测试当用户选择深色或浅色模式时网页的呈现方式，而不是更改你自己的计算机深色模式或浅色模式设置，可以在 Microsoft Edge DevTools 中选择模拟 **CSS 首选**配色方案：深色或浅色。****  可以从呈现工具或命令菜单**** 执行此操作，如下所述****。
 

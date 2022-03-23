@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: ca61d74fd2e500f9cf0968bfe87f55cfda4cfc19
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 67a69785e1642b5a90f761d6eb6a059bc87c3f40
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431870"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459852"
 ---
 <!-- Copyright Kayce Basques
 
@@ -156,7 +156,7 @@ ms.locfileid: "12431870"
 <!-- ====================================================================== -->
 ## <a name="debugging-media-queries"></a>调试媒体查询
 
-[媒体查询](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) 是一种使 Web 产品对每个用户的配置设置更改做出反应的方法。  最重要的用例是，根据视口尺寸为产品提供不同的 CSS 布局。
+[媒体查询](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) 是使您的网站对每个用户的配置设置更改做出反应的一种方法。  最重要的用例是，根据视口尺寸为产品提供不同的 CSS 布局。
 
 当有更多的屏幕空间可用时，使用单独的布局允许移动设备使用单列布局和多列布局。
 

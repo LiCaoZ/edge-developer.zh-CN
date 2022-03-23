@@ -6,22 +6,22 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/19/2021
-ms.openlocfilehash: a44cbb2f0bd5a308ca57e6c1014b5e82e1f4424f
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 012d507a9878b6404ce84d99ba84d96a6f817ccb
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12430988"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459845"
 ---
 # <a name="verify-that-the-webpage-layout-is-usable-when-narrow"></a>验证网页布局在缩小时是否可用
 
-辅助功能的一个重要部分是确保 Web 产品在较窄的视口上良好工作。 许多用户需要缩放页面才能使用它，这意味着没有太多空间。
+辅助功能的一个重要部分是确保你的网站在较窄的视口中运行良好。 许多用户需要缩放页面才能使用它，这意味着没有太多空间。
 
 当空间不足时，多列布局应转换为单列布局，内容按可理解的顺序放置。 这意味着将最重要的内容放置在页面顶部，将其他内容放置在页面的更下一层。
 
 1. 打开 [新窗口或选项卡中的](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 辅助功能测试演示网页。
 
-1. 右键单击网页中的任意位置，然后选择"检查 **"**。  或者，按 `F12`。  将在网页旁边打开 DevTools。
+1. 右键单击网页中的任意位置，然后选择"检查 **"**。  或者按 `F12`。  将在网页旁边打开 DevTools。
 
 1. 缩小浏览器窗口范围。
 

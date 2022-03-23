@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 09/23/2021
-ms.openlocfilehash: 4e60c980f73bdbb2ffe5f832da03da771ed432dd
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: b460bd73cf6a17f4e387339a11fe4cc69eae4188
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12433760"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459796"
 ---
 # <a name="overview-of-devtools"></a>开发工具概述
 
@@ -30,7 +30,7 @@ ms.locfileid: "12433760"
 
 *  使用具有可视界面的 实时工具检查、调整和更改网页中元素的样式。  检查浏览器存储内容以构建网页的位置，包括 `.html`、 `.css`、 `.js``.png` 和 文件格式。
 
-*  模拟 Web 产品在不同的设备上的行为方式，并模拟移动环境，并使用不同的网络条件。  检查网络流量并查看问题的位置。
+*  模拟你的网站在不同的设备上的行为方式并模拟移动环境，并使用不同的网络条件。  检查网络流量并查看问题的位置。
 
 *  使用断点调试和实时控制台 调试JavaScript。  查找 Web 应用的内存问题和呈现问题。
 
@@ -164,7 +164,7 @@ DevTools 随即打开，在"元素"工具的 **DOM** 树中突出显示右 **键
 <!-- ====================================================================== -->
 ## <a name="features-of-the-main-toolbar"></a>主工具栏的功能
 
-DevTools 为你提供了令人惊叹的功能，可以检查、调试和更改浏览器中当前显示的 Web 产品。  大多数工具实时显示更改。  实时更新使工具非常有用，无需刷新或生成即可优化 Web 项目的外观和导航或功能。
+DevTools 为你提供了令人惊叹的功能，可以检查、调试和更改浏览器中当前显示的网站。  大多数工具实时显示更改。  实时更新使工具非常有用，无需刷新或生成即可优化 Web 项目的外观和导航或功能。
 
 
 ### <a name="tabbed-tool-panels-containing-tabs-and-pages"></a>包含选项卡和页面的选项卡式工具面板
@@ -229,7 +229,7 @@ DevTools 为你提供了令人惊叹的功能，可以检查、调试和更改�
 
 ### <a name="device-emulation"></a>设备仿真
 
-单击" **设备仿真** (![仿真"图标](media/device-emulation-icon-light-theme.png) 。) 按钮以在仿真设备模式下显示当前 Web 产品。  **设备仿真工具**允许你在调整浏览器大小时运行和测试产品的反应。  它还为你提供移动设备上的布局和行为估计。
+单击" **设备仿真** (![仿真"图标](media/device-emulation-icon-light-theme.png) 。) 按钮以在仿真设备模式下显示当前网站。  **设备仿真工具**允许你在调整浏览器大小时运行和测试产品的反应。  它还为你提供移动设备上的布局和行为估计。
 
 ![在仿真移动电话中显示本文的 DevTools。](media/devtools-intro-device-emulation.msft.png)
 
@@ -418,7 +418,7 @@ JavaScript 计数器按钮的工具提示**** 是 **"打开控制台"以查看 #
 <!-- ====================================================================== -->
 ## <a name="power-tip-use-the-command-menu"></a>电源提示：使用命令菜单
 
-DevTools 提供了许多要用于 Web 产品的特性和功能。  可以通过多种方式访问 DevTools 的不同部分，但通常是使用命令菜单的快速方法。
+DevTools 提供许多要用于你的网站的特性和功能。  可以通过多种方式访问 DevTools 的不同部分，但通常是使用命令菜单的快速方法。
 
 ![DevTools 中的命令菜单。](media/devtools-intro-command-menu.msft.png)
 

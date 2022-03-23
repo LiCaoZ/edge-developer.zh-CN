@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/13/2022
-ms.openlocfilehash: 43f07c5f8295daa374cb56beb09fb8f0030dfe12
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: fef42a4263c3a12112c91e770f6bdcd61a08ffb7
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431215"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459803"
 ---
 # <a name="change-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>更改开发工具放置位置（取消停靠，停靠到底部，停靠到左侧）
 
@@ -27,7 +27,7 @@ ms.locfileid: "12431215"
 
 ![DevTools 中的扩展坞端菜单。](../media/devtools-intro-docking-menu.msft.png)
 
-**扩展坞**向左或**** 向右，使 DevTools 与 Web 产品并排运行，并且当你使用设备仿真功能模拟移动设备时 ([出色) ](../device-mode/index.md)。  **停靠到左侧**，**停靠到右侧**选项与高分辨率显示效果最佳。
+**扩展坞**向左或**** 向右，使 DevTools 与网页并排显示，并且当你模拟移动设备 ([设备](../device-mode/index.md)仿真) 。  **停靠到左侧**，**停靠到右侧**选项与高分辨率显示效果最佳。
 
 
 <!-- ====================================================================== -->

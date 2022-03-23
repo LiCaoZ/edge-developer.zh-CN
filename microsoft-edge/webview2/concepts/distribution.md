@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 1/20/2022
-ms.openlocfilehash: c75d30b59bd3d46f609a988174facd72f1f7ba62
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: b03dec2666f9eb483ae8c5c904cab9b304fd2145
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12432346"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459537"
 ---
 # <a name="distribute-your-app-and-the-webview2-runtime"></a>分发应用和 WebView2 运行时
 
@@ -257,7 +257,7 @@ Microsoft Edge Beta、Dev 和 Canary (预览频道) 快速了解 WebView2 运行
 
 若要帮助你确定哪个频道是正确的，请参阅Microsoft Edge[概述](/deployedge/microsoft-edge-channels)。  可以在[测试Microsoft Edge](https://www.microsoftedgeinsider.com/download)下载预览体验成员频道，`regkey`并使用或环境变量指示测试应用的通道首选项。
 
-请参阅 [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions)。  您还可以使用 WebDriver 自动执行 WebView2 测试，如自动执行和使用驱动程序测试 [WebView2 Microsoft Edge中所述](../how-to/webdriver.md)。
+请参阅 [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions)。  您还可以使用 WebDriver 自动执行 WebView2 测试，如自动执行和使用 [WebDriver 测试 WebView2 Microsoft Edge中所述](../how-to/webdriver.md)。
 
 
 ### <a name="feature-detect-when-using-recent-apis"></a>使用最新 API 时的功能检测

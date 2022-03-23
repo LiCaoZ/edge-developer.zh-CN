@@ -1,5 +1,5 @@
 ---
-title: WebView2 示例：UWP WinUI 2 浏览器应用
+title: WebView2 示例：WinUI 2 (UWP) 浏览器应用
 description: 此 WebView2 示例演示如何使用 WebView2 控件和 WebView2 API 在 UWP WinUI 2 应用中实现 Web 浏览器。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,16 +7,19 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 02/18/2022
-ms.openlocfilehash: 1abb79f70eb0b2914345edef322aa06f9dfdd29a
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 977838c0e9cc5ca8f1aff92c6aaad3746d1d57d3
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12433764"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459810"
 ---
-# <a name="webview2-sample-uwp-winui-2-browser-app"></a>WebView2 示例：UWP WinUI 2 浏览器应用
+# <a name="webview2-sample-winui-2-uwp-browser-app"></a>WebView2 示例：WinUI 2 (UWP) 浏览器应用
+<!-- old title:
+# WebView2 sample: UWP WinUI 2 browser app
+-->
 
-此 WebView2 示例演示如何使用 WebView2 控件和 WebView2 API 在 UWP WinUI 2 应用中实现 Web 浏览器。
+此 WebView2 示例演示如何使用 WebView2 控件和 WebView2 API 在 WinUI 2 (和 UWP) 应用中实现 Web 浏览器。
 
 &amp; 目录 .sln：**webview2_sample_uwp/webview2_sample_uwp.sln**。
 

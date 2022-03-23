@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 03/14/2022
-ms.openlocfilehash: 7f57e0fc87b4b4e7c1ba5b4d9b8b071ba6d19715
-ms.sourcegitcommit: 5f33ac40a1fff83b1f409efa3a9ab2b709c183dd
+ms.openlocfilehash: e262150439f9b68af9ddbfea82bdcf9764cc3c99
+ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "12445240"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "12459740"
 ---
 # <a name="release-notes-for-the-webview2-sdk"></a>WebView2 SDK 发行说明
 
@@ -82,13 +82,12 @@ WebView2 Bug 修复（如下面列出的修复程序）特定于运行时或特�
 
 *    支持 CDP 方法调用的 sessionId 的 [CallDevToolsProtocolMethodForSession API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease&preserve-view=true#calldevtoolsprotocolmethodforsession) 。
 *   [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1189-prerelease&preserve-view=true)：
-   *    add_StatusBarTextChanged
-   *  get_StatusBarText
-   *  remove_StatusBarTextChanged
+    *  `add_StatusBarTextChanged`
+    *  `get_StatusBarText`
+    *  `remove_StatusBarTextChanged`
 *   支持 [启用/禁用外部拖放的 AllowExternalDrop API](/microsoft-edge/webview2/reference/win32/icorewebview2controller4?view=webview2-1.0.1189-prerelease&preserve-view=true) 。
 *    [HiddenPdfToolbarItems API](/microsoft-edge/webview2/reference/win32/icorewebview2settings7?view=webview2-1.0.1189-prerelease&preserve-view=true) 可用于自定义 PDF 工具栏项。
-*  提供 [其他进程控制可用性的 ExclusiveUserDataFolderAccess API](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2?view=webview2-1.0.1189-prerelease&preserve-view=true) 可以创建具有相同用户数据文件夹的 WebView2。
-  
+*  [ExclusiveUserDataFolderAccess API](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2?view=webview2-1.0.1189-prerelease&preserve-view=true) 允许控制其他进程是否可以使用相同的用户数据文件夹创建 WebView2。
 
 #### <a name="bug-fixes"></a>Bug 修复
   
@@ -1148,9 +1147,9 @@ WebView2 SDK 是官方 Win32 C++ Beta 版本，它包含了来自反馈的多项
 <!-- ====================================================================== -->
 ## <a name="08355"></a>0.8.355
 
-[WebView2 SDK 0.8.355 的 NuGet 包](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.355)
+[NuGet WebView2 SDK 0.8.355 的程序包](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.355)
 
-此版本的 WebView2 SDK 需要 Microsoft Edge 版本 80.0.355.0 或更高版本。
+此版本的 WebView2 SDK 要求Microsoft Edge版本 80.0.355.0 或更高版本。
 
 *  发布的 WebView2API 示例，WebView2 SDK 的全面指南。  请参阅 [API 示例](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample)。
 *  添加了对除英语 # [30 (之外](https://github.com/MicrosoftEdge/WebViewFeedback/issues/30) 的所有语言的 IME) 。
@@ -1162,14 +1161,14 @@ WebView2 SDK 是官方 Win32 C++ Beta 版本，它包含了来自反馈的多项
 <!-- ====================================================================== -->
 ## <a name="08314"></a>0.8.314
 
-[WebView2 SDK 0.8.314 的 NuGet 包](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.314)
+[NuGet WebView2 SDK 0.8.314 的程序包](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.314)
 
-此版本的 WebView2 SDK 需要 Microsoft Edge 版本 80.0.314.0 或更高版本。
+此版本的 WebView2 SDK 要求Microsoft Edge版本 80.0.314.0 或更高版本。
 
 ### <a name="changes"></a>更改
 
 *  添加了对 Windows 7、Windows 8 和 Windows 8.1 的支持。
-*  添加了 Visual Studio 和 Visual Studio 对 WebView2 的代码调试支持。  现在，从 IDE 在 WebView2 中调试脚本。  请参阅 [如何使用 WebView2 控件进行开发时调试](how-to/debug.md)。
+*  添加了Visual Studio和Visual Studio Code对 WebView2 的调试支持。  现在，从 IDE 在 WebView2 中调试脚本。  请参阅 [如何使用 WebView2 控件进行开发时调试](how-to/debug.md)。
 *  为 `Native Object Injection` WebView2 中正在运行的脚本添加了 ，用于从应用的 Win32 组件访问 IDispatch 对象并访问 IDispatch 对象的属性。  请参阅 [AddRemoteObject](/microsoft-edge/webview2/reference/win32/iwebview2webview4?view=webview2-0.8.355&preserve-view=true#addremoteobject) ([#17](https://github.com/MicrosoftEdge/WebViewFeedback/issues/17)) 。
 *  添加了 `AcceleratorKeyPressed` event。  请参阅 [add_AcceleratorKeyPressed](/microsoft-edge/webview2/reference/win32/iwebview2webview4?view=webview2-0.8.355&preserve-view=true#add_acceleratorkeypressed) ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)) 。
 *  `Context Menus`已关闭 。  请参阅 [put_AreDefaultContextMenusEnabled](/microsoft-edge/webview2/reference/win32/iwebview2settings2?view=webview2-0.8.355&preserve-view=true#put_aredefaultcontextmenusenabled) ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)) 。
@@ -1184,9 +1183,9 @@ WebView2 SDK 是官方 Win32 C++ Beta 版本，它包含了来自反馈的多项
 <!-- ====================================================================== -->
 ## <a name="08270"></a>0.8.270
 
-[WebView2 SDK 0.8.270 的 NuGet 包](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.270)
+[NuGet WebView2 SDK 0.8.270 的程序包](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.270)
 
-此版本的 WebView2 SDK 需要 Microsoft Edge 版本 78.0.270.0 或更高版本。
+此版本的 WebView2 SDK 要求Microsoft Edge版本 78.0.270.0 或更高版本。
 
 ### <a name="changes"></a>更改
 
@@ -1208,23 +1207,23 @@ WebView2 SDK 是官方 Win32 C++ Beta 版本，它包含了来自反馈的多项
 <!-- ====================================================================== -->
 ## <a name="08230"></a>0.8.230
 
-[WebView2 SDK 0.8.230 的 NuGet 包](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.230)
+[NuGet WebView2 SDK 0.8.230 的程序包](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.230)
 
-此版本的 WebView2 SDK 需要 Microsoft Edge 版本 77.0.230.0 或更高版本。
+此版本的 WebView2 SDK 要求Microsoft Edge版本 77.0.230.0 或更高版本。
 
 ### <a name="changes"></a>更改
 
 *  添加了 `Stop` API 以停止所有导航和挂起的资源提取 ([问题 28](https://github.com/MicrosoftEdge/WebViewFeedback/issues/28)) 。
-*  向 `.tlb` NuGet 程序包添加了文件 ([Issue #22](https://github.com/MicrosoftEdge/WebViewFeedback/issues/22)) 。
-*  向 NuGet 程序包的安装程序列表添加了 .NET ([Issue #32](https://github.com/MicrosoftEdge/WebViewFeedback/issues/32)) 。
+*  向`.tlb`文件包NuGet问题 ([#22](https://github.com/MicrosoftEdge/WebViewFeedback/issues/22)) 。
+*  向 NuGet Issue [#32](https://github.com/MicrosoftEdge/WebViewFeedback/issues/32) (中的安装程序列表添加了 .NET) 。
 
 
 <!-- ====================================================================== -->
 ## <a name="08190"></a>0.8.190
 
-[WebView2 SDK 0.8.190 的 NuGet 包](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.190)
+[NuGet WebView2 SDK 0.8.190 的程序包](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.190)
 
-此版本的 WebView2 SDK 需要 Microsoft Edge 版本 77.0.190.0 或更高版本。
+此版本的 WebView2 SDK 要求Microsoft Edge版本 77.0.190.0 或更高版本。
 
 *  已 `get_AreDevToolsEnabled`/`put_AreDevToolsEnabled` 添加到控制用户能否打开 DevTools ([问题 #16) ](https://github.com/MicrosoftEdge/WebViewFeedback/issues/16) 。
 *  已 `get_IsStatusBarEnabled`/`put_IsStatusBarEnabled` 添加到控件中，以控制状态栏是否 ([问题 #19) ](https://github.com/MicrosoftEdge/WebViewFeedback/issues/19) 。
@@ -1233,7 +1232,7 @@ WebView2 SDK 是官方 Win32 C++ Beta 版本，它包含了来自反馈的多项
 *  在 64 位计算机上添加了 32 位 WebView ([Issue #13](https://github.com/MicrosoftEdge/WebViewFeedback/issues/13)) 。
 *  向 SDK ([Issue #14) 添加了](https://github.com/MicrosoftEdge/WebViewFeedback/issues/14) WebView IDL。
 *  添加了 lib 以支持接口 `IID\_\*` ID 对象 ([Issue #12](https://github.com/MicrosoftEdge/WebViewFeedback/issues/12)) 。
-*  在 SDK 中添加了 DLL 文件的路径、链接和自动复制到 NuGet `TARGET` 文件。
+*  在 SDK 中添加了 `TARGET` DLL 文件的路径、链接和自动NuGet文件。
 *  在脚本中打开 `window.open()` 请求。
 
 
