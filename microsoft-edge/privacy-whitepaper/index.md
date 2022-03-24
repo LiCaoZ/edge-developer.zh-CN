@@ -10,12 +10,12 @@ no-loc:
 - Cast
 - Google Cast
 ms.date: 12/10/2021
-ms.openlocfilehash: 35a5df223bfd17e1f6719e5c45f5cb08e128e7aa
-ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
+ms.openlocfilehash: d87be71b674ee1a478ba3addcf6d04066f620dd2
+ms.sourcegitcommit: 96de07aaefa724b2b348264fc8e11d500dc56e47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "12459565"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "12463543"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书
 
@@ -618,8 +618,6 @@ Microsoft Edge 购物功能要求与必应共享 Cookie 信息。  例如，Cook
 1.  关闭" **在 Microsoft Edge 中购物节省时间和资金"** 设置。
 
 **InPrivate** 浏览使用启动 **InPrivate** 会话的配置文件的购物设置。
-
-InPrivate 浏览使用启动 InPrivate 会话的配置文件的购物设置。
 
 
 <!-- ====================================================================== -->

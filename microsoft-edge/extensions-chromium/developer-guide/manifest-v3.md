@@ -1,20 +1,20 @@
 ---
-title: 清单 V3 概述
-description: 从清单 V2 迁移到 V3 有助于减少开发人员的 Web 碎片，并增强最终用户的隐私、安全性和性能。
+title: 迁移到清单 V3 的概述和日程表
+description: 从清单 V2 迁移到 V3 有助于减少开发人员的 Web 碎片，并增强最终用户的隐私、安全性和性能。 本文介绍了从清单 V2 迁移到 V3 的概述和日程表。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: extensions
 ms.date: 3/11/2022
-ms.openlocfilehash: 35834beb461c56d3995e7ab5fab195de49fbd884
-ms.sourcegitcommit: 72fb4ea4d713014c46be792b53c8fd73902608f3
+ms.openlocfilehash: 078d3d7923f542d37431654409ad73aa501c5bc0
+ms.sourcegitcommit: 84f082d551d165ad46811e7d761a474ed6c1dd6f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "12445996"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "12463498"
 ---
-# <a name="overview-of-manifest-v3"></a>清单 V3 概述
+# <a name="overview-and-timelines-for-migrating-to-manifest-v3"></a>迁移到清单 V3 的概述和日程表
 
 清单文件是扩展的蓝图。 其中包括诸如扩展的版本号、扩展标题以及运行扩展所需的权限等信息。 从清单 V2 迁移到 V3 将给浏览器处理扩展的方式带来一些结构性更改。
 
