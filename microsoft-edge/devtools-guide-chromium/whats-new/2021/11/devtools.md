@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.date: 11/16/2021
 ms.openlocfilehash: af7698fce942356845c6a729d82ade121de6f57b
 ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/08/2022
 ms.locfileid: "12431254"
@@ -28,11 +28,11 @@ ms.locfileid: "12431254"
 
 Microsoft Edge DevTools 团队正在试验新的 DevTools UI：**焦点模式**。  通过更现代和简化的布局，焦点模式可减少干扰和混乱。  使用新的活动栏，可以将你喜欢的工具固定在水平或垂直工具栏中，以便更高效地使用屏幕空间。
 
-若要在 Microsoft Edge 版本 96 中试用此新 UI，请选择 **设置** ![ (DevTools](../../../media/settings-gear-icon-light-mode.png) 中的 设置 齿轮图标。) >**实验** > 焦点**模式**。
+要在 Microsoft Edge 版本 96 中试用此新 UI，请选择“**设置**”（![DevTools 中的“设置”齿轮图标](../../../media/settings-gear-icon-light-mode.png)）>“**试验**” > “**焦点模式**”。
 
 从 Microsoft Edge 版本 96 开始，试验的复选框标记为“**焦点模式**”，而不是“**焦点模式和 DevTools 工具提示**”。
 
-此 UI 仍处于开发状态，并且在将来版本的 Microsoft Edge 中可能发生更改。  我们期待收到你关于此新 DevTools UI 的反馈。  请通过发布推文 [@EdgeDevTools](https://twitter.com/edgedevtools) 向我们发送反馈。  ![或者，打开焦点**** 模式实验后，在活动栏底部，选择"帮助****" ("活动**** 栏中的"帮助"图标。) >**反馈**"，以显示"发送反馈 **"窗口。**](../../../media/help-icon-of-focus-mode.png)
+此 UI 仍处于开发状态，并且在将来版本的 Microsoft Edge 中可能发生更改。  我们期待收到你关于此新 DevTools UI 的反馈。  请通过发布推文 [@EdgeDevTools](https://twitter.com/edgedevtools) 向我们发送反馈。  或者在启用“**焦点模式**”试验的情况下，在“**活动栏**”底部选择“**帮助**”（![焦点模式下活动栏中的“帮助”图标。](../../../media/help-icon-of-focus-mode.png)）>“**反馈**”，可显示“**发送反馈**”窗口。
 
 :::image type="content" source="../../media/2021/11/focus-mode.png" alt-text="焦点模式，包括活动栏。":::
 
@@ -51,7 +51,7 @@ Microsoft Edge DevTools 团队正在试验新的 DevTools UI：**焦点模式**�
 
 在打开其他工具的同时，可以在底部面板（“**抽屉**”）中打开“**控制台**”：
 
-:::image type="content" source="../../media/2021/11/console-displayed-when-elements-tab-selected.png" alt-text="When a tool other than the Console is selected in the main toolbar， the Drawer opens and shows the Console.":::
+:::image type="content" source="../../media/2021/11/console-displayed-when-elements-tab-selected.png" alt-text="在主工具栏中选择控制台以外的工具时，抽屉将打开并显示控制台。":::
 
 在顶部面板中选择“**控制台**”时，如果底部面板显示“**控制台**”，则将自动最小化底部面板：
 
@@ -99,13 +99,13 @@ Microsoft Edge DevTools for Visual Studio Code 扩展现在具有可停靠的截
 
 选择带有警告图标的文件将在“源”工具中打开文件，其中包含一个信息栏，指示 DevTools 无法从服务器正确提取源映射或无法正确分析源映射：
 
-:::image type="content" source="../../media/2021/11/source-map-not-found-buttons.png" alt-text="显示&quot;DevTools 无法加载源映射&quot;的问题的&quot;源&quot;工具屏幕截图。":::
+:::image type="content" source="../../media/2021/11/source-map-not-found-buttons.png" alt-text="源工具的屏幕截图，其中显示“DevTools 加载源映射失败”问题。":::
 
 在信息栏中，可以通过选择“**在问题中打开**”按钮来了解有关问题的详细信息。  然后，将在“**抽屉**”中打开“**问题**”工具，并提供有关如何解决该问题以及如何在 DevTools 中正确加载源映射的信息：
 
-:::image type="content" source="../../media/2021/11/source-map-not-found.png" alt-text="Screenshot of the Issues tool in the Drawer， displaying the issue as 'Source map not found'， along with information on how to resolve this issue.":::
+:::image type="content" source="../../media/2021/11/source-map-not-found.png" alt-text="抽屉中问题工具的屏幕截图，其中将问题显示为“找不到源映射”，以及有关如何解决此问题的信息。":::
 
-要防止有关源映射的信息栏干扰“**源**”工具，请选择“**不再显示**”按钮。  要防止与源映射相关的问题干扰“**问题**”工具，请清除“**问题**”工具中的“**包括第三方问题**”复选框。  若要详细了解 DevTools 如何提取和分析源图，请参阅将处理的代码映射到原始 [源代码，以便进行调试](../../../javascript/source-maps.md)。
+要防止有关源映射的信息栏干扰“**源**”工具，请选择“**不再显示**”按钮。  要防止与源映射相关的问题干扰“**问题**”工具，请清除“**问题**”工具中的“**包括第三方问题**”复选框。  要详细了解 DevTools 如何提取和分析源映射，请参阅 [将处理过的代码映射到原始源代码，以便进行调试](../../../javascript/source-maps.md)。
 
 
 <!-- ====================================================================== -->
@@ -135,11 +135,11 @@ Microsoft Edge DevTools for Visual Studio Code 扩展现在具有可停靠的截
 
 在早期版本的 Microsoft Edge DevTools 中，选择下拉菜单旁边的三角形图标不会显示下拉菜单。  要打开下拉菜单，必须单击三角形图标左侧当前选择的菜单项，例如“**无限制**”：
 
-:::image type="content" source="../../media/2021/11/clicking-triangle-didnt-open-dropdown.png" alt-text="单击下拉菜单的三角形图标未打开下拉菜单。":::
+:::image type="content" source="../../media/2021/11/clicking-triangle-didnt-open-dropdown.png" alt-text="单击下拉菜单的三角形图标不会打开下拉菜单。":::
 
 在 Microsoft Edge 版本 96 中，此问题已得到修复。  现在，选择 DevTools 中任何下拉菜单的三角形图标都将打开下拉菜单：
 
-:::image type="content" source="../../media/2021/11/clicking-triangle-opens-dropdown.png" alt-text="单击三角形图标现在将打开下拉菜单。":::
+:::image type="content" source="../../media/2021/11/clicking-triangle-opens-dropdown.png" alt-text="现在，单击三角形图标将打开下拉菜单。":::
 
 <!-- This fix applies to various tools, including:
 * Performance
@@ -152,7 +152,7 @@ Microsoft Edge DevTools for Visual Studio Code 扩展现在具有可停靠的截
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> Chromium 项目中通知的原始页面是 [DevTools (Chrome 96) ](https://developer.chrome.com/blog/new-in-devtools-96) 中的新增功能，由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer 支持者在 Google) 上处理 Chrome DevTools 创作。
+> 来自 Chromium 项目公告的原始页面为“[DevTools 中的最近更新 (Chrome 96)](https://developer.chrome.com/blog/new-in-devtools-96)”，作者为 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen)（Google 负责 Chrome DevTools 工作的开发人员大使）。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。
