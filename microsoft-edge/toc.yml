@@ -586,7 +586,7 @@
               href: extensions-chromium/developer-guide/native-messaging.md
         - name: Manifest
           items:
-            - name: 清单 V3 概述
+            - name: 迁移到清单 V3 的概述和日程表
               href: extensions-chromium/developer-guide/manifest-v3.md
               displayName: null
             - name: 将扩展从清单 V2 迁移到 V3
