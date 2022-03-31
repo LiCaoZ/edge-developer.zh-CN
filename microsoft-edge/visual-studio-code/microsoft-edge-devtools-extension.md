@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/26/2021
-ms.openlocfilehash: 969e35a79d4caef42852040d3ff71b0b70b6ec11
-ms.sourcegitcommit: 353824f42bf4e798641c18abdbb7763bb4f37cf0
+ms.openlocfilehash: c7ddadd7d4dcd3e13192c168a146115c29370072
+ms.sourcegitcommit: ccb3555dd66d7cb51b9e5647fd057fb7a65e4a09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "12463783"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "12463825"
 ---
 # <a name="microsoft-edge-devtools-extension-for-visual-studio-code"></a>用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展
 
@@ -361,7 +361,7 @@ JavaScript 调试内置于Visual Studio Code。  可以在 Chrome、Microsoft Ed
 
 ![扩展内的 DevTools 控制台以及元素工具。](media/edge-devtools-for-vscode-console-in-elements.png)
 
-如果从"运行和调试"工作流启动扩展，[Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging) 的调试控制台会为你提供"DevTools 控制台"中的大多数功能，但没有筛选选项，并且[](/microsoft-edge/devtools-guide-chromium/console/)将显示更基本的结果：
+如果从"运行和调试"工作流启动扩展，[Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging) 的调试控制台会为你提供 Visual Studio Code 内的 DevTools [控制台](/microsoft-edge/devtools-guide-chromium/console/)大部分功能，但没有筛选选项和更基本的结果显示：
 
 ![当从运行和调试工作流启动扩展时，DevTools 控制台可用。](media/edge-devtools-for-vscode-console-integration.png)
 

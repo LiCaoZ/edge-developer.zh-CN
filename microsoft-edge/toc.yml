@@ -17,9 +17,6 @@
             - name: Microsoft Edge DevTools 中的新增功能
               href: devtools-guide-chromium/whats-new/whats-new.md
               displayName: null
-            - name: 实验性功能
-              href: devtools-guide-chromium/experimental-features/index.md
-              displayName: 'Experimental features, settings'
             - name: Microsoft Edge 99
               href: devtools-guide-chromium/whats-new/2022/03/devtools.md
               displayName: 'what''s new, announcements, release notes'
@@ -77,6 +74,14 @@
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
               displayName: 'what''s new, announcements'
+        - name: 实验功能
+          items:
+            - name: 实验性功能概述
+              href: devtools-guide-chromium/experimental-features/index.md
+              displayName: 'Experimental features, settings'
+            - name: 使用专注模式简化开发工具
+              href: devtools-guide-chromium/experimental-features/focus-mode.md
+              displayName: 'Experimental features, Focus Mode'
         - name: 工具
           items:
             - name: 关于工具列表

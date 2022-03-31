@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/09/2022
-ms.openlocfilehash: 7731f1bebe020598f7b693d0a65180db1513427f
-ms.sourcegitcommit: 2631c3835d23d9adaa28c19198319588baf9d8c5
+ms.openlocfilehash: 9b08a8842c9fec16443e2e705c5f5b981d95ed85
+ms.sourcegitcommit: 979efa73483f3aa8fb298f785c60d0068dad70a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2022
-ms.locfileid: "12439804"
+ms.lasthandoff: 03/30/2022
+ms.locfileid: "12466648"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-99"></a>DevTools (Microsoft Edge 99 中的新增) 
 
@@ -41,7 +41,7 @@ Azure Artifacts符号服务器现在支持存储编译、缩小和捆绑代码�
 另请参阅：
 *  [将已处理的代码映射到原始源代码，以便进行调试](../../../javascript/source-maps.md)
 *  [通过将源映射发布到Azure Artifacts符号服务器来安全地调试原始代码](../../../javascript/publish-source-maps-to-azure.md)
-*  [使用Azure Artifacts符号服务器源映射安全地调试原始代码](/javascript/consume-source-maps-from-azure.md)
+*  [使用Azure Artifacts符号服务器源映射安全地调试原始代码](../../../javascript/consume-source-maps-from-azure.md)
 
 
 <!-- ====================================================================== -->

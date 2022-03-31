@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
-ms.openlocfilehash: 2616a1df790b79ab2ef622ec36051eb00de29e54
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: e7a68448a090fe956fd7243b0fb086341900ab29
+ms.sourcegitcommit: d753bc98ca50acdcdb7a8bf911af3465d3228058
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12432948"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "12465161"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -40,9 +40,11 @@ ms.locfileid: "12432948"
 
 焦点模式是一个试验界面，允许你根据自己的调试方案将不同工具组合在一起。  左侧显示的新“**活动栏**”包括预定义的工具组，如“**布局**”和“**调试**”。  若要自定义每个工具组，请使用“**关闭**”(`X`) 图标关闭工具，或使用“**更多工具**”(`+`) 图标添加新工具。
 
-若要启用试验，请查看“[启用或禁用试验](../../../experimental-features/index.md#turning-an-experiment-on-or-off)”，然后选择“**焦点模式和 DevTools 工具提示**”和“**启用 + 按钮选项卡菜单以打开更多工具**”旁边的复选框。  有关此功能的详细信息，或者要用问题和想法进行评论，请查看 [DevTools：焦点模式 UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md)。
+若要启用试验，请查看“[启用或禁用试验](../../../experimental-features/index.md#turning-an-experiment-on-or-off)”，然后选择“**焦点模式和 DevTools 工具提示**”和“**启用 + 按钮选项卡菜单以打开更多工具**”旁边的复选框。  有关此功能的详细信息，或者要用问题和想法进行评论，请查看 [DevTools：焦点模式 UI](https://github.com/MicrosoftEdge/DevTools/blob/main/explainers/FocusMode/explainer.md)。
 
 :::image type="content" source="../../media/2021/02/focus-mode.msft.png" alt-text="显示“活动栏”。" lightbox="../../media/2021/02/focus-mode.msft.png":::
+
+请参阅[使用焦点模式简化开发工具](../../../experimental-features/focus-mode.md)。
 
 
 <!-- ====================================================================== -->
@@ -53,7 +55,7 @@ ms.locfileid: "12432948"
 
 DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  单击“**活动栏**”底部的“帮助”(`?`) 图标，以便在 DevTools 中切换工具提示。  当工具提示打开时，请将鼠标悬停在 DevTools 的每个概述区域上，以了解有关如何使用工具的更多信息。  若要启用试验，请查看“[启用或禁用试验](../../../experimental-features/index.md#turning-an-experiment-on-or-off)”，然后选择“**焦点模式和 DevTools 工具提示**”和“**启用 + 按钮选项卡菜单以打开更多工具**”旁边的复选框。
 
-有关此功能的详细信息，或者要用问题和想法进行评论，请查看 [DevTools：焦点模式 UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md)。
+有关此功能的详细信息，或者要用问题和想法进行评论，请查看 [DevTools：焦点模式 UI](https://github.com/MicrosoftEdge/DevTools/blob/main/explainers/FocusMode/explainer.md)。
 
 :::image type="content" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="单机活动栏中的“帮助”(?) 图标以显示工具提示" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
 

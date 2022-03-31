@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 ms.date: 09/02/2021
-ms.openlocfilehash: a4451d53de4e60353c18ca1db5110256dfe22d36
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 715a70caac07a05384da9f195080bacbd87cdbdb
+ms.sourcegitcommit: accae5bfd503ec9b17fd69ddcf373bf6ba707928
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12432437"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "12463986"
 ---
 # <a name="display-content-in-the-title-bar"></a>在标题栏中显示内容
 
@@ -94,13 +94,15 @@ ms.locfileid: "12432437"
 
 ```css
 #title-bar {
-    position: absolute;
+    position: fixed;
     left: env(titlebar-area-x);
     top: env(titlebar-area-y);
     height: env(titlebar-area-height);
     width: env(titlebar-area-width);
 }
 ```
+
+使用 `position: fixed;` 确保标题栏不会随内容的其余部分一起滚动，而是与窗口控件覆盖保持一致。
 
 了解覆盖的位置以及它的重要位置。  覆盖可能并不总是位于窗口的同一侧;在 macOS 上，覆盖位于左侧，但在Windows，覆盖位于右侧。  此外，覆盖可能并不总是相同大小。
 

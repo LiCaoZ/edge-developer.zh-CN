@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 11/16/2021
-ms.openlocfilehash: af7698fce942356845c6a729d82ade121de6f57b
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
-ms.translationtype: HT
+ms.openlocfilehash: 56252933078aa9483bec0f2ee5649187da5a7690
+ms.sourcegitcommit: d753bc98ca50acdcdb7a8bf911af3465d3228058
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431254"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "12465154"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-96"></a>DevTools 中的最近更新 (Microsoft Edge 96)
 
@@ -37,8 +37,8 @@ Microsoft Edge DevTools 团队正在试验新的 DevTools UI：**焦点模式**�
 :::image type="content" source="../../media/2021/11/focus-mode.png" alt-text="焦点模式，包括活动栏。":::
 
 另请参阅：
-*  “_试验功能_”中的“[焦点模式](../../../experimental-features/index.md#focus-mode)”。
-*  `MSEdgeExplainers` 存储库中的 [DevTools：焦点模式 UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md)。
+*  [使用焦点模式简化 DevTools](../../../experimental-features/focus-mode.md)。
+*  `MSEdgeExplainers` 存储库中的 [DevTools：焦点模式 UI](https://github.com/MicrosoftEdge/DevTools/blob/main/explainers/FocusMode/explainer.md)。
 
 
 <!-- ====================================================================== -->

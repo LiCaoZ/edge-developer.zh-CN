@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/09/2021
-ms.openlocfilehash: a6151fc13ca0db3445fefe4c0a8df3703b9d23a6
-ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
+ms.openlocfilehash: c5aa13fc0eacedf389907ed0814b320fd381cf4a
+ms.sourcegitcommit: accae5bfd503ec9b17fd69ddcf373bf6ba707928
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "12459754"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "12463979"
 ---
 # <a name="detecting-microsoft-edge-from-your-website"></a>正在从网站检测 Microsoft Edge
 
@@ -206,6 +206,10 @@ EdgA/90.0.818.46
 ```
 
 平台标识符根据操作系统发生变化，并且版本号会随着时间的推移而递增。 格式与用户代理Chromium`Edg`，末尾添加新令牌。 Microsoft 选择令牌`Edg`以避免`Edge`由字符串引起的兼容性问题，字符串以前用于基于 EdgeHTML Microsoft Edge旧版浏览器。 令牌 `Edg` 还 [与用于](https://blogs.windows.com/msedgedev/2017/10/05/microsoft-edge-ios-android-developer) iOS 和 Android 的现有令牌一致。
+
+### <a name="microsoft-edge-version-increment-change"></a>Microsoft Edge版本增量更改
+
+Microsoft Edge的主要版本号即将`Edg/99`从两位数字（如 ）递增到三位数字（如 ）。`Edg/100` 网站所有者应确保其User-Agent逻辑可靠且能够正常工作。
 
 
 <!-- ====================================================================== -->

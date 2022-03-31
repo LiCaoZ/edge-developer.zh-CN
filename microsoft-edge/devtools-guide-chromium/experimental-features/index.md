@@ -21,12 +21,12 @@ no-loc:
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
 ms.date: 03/01/2022
-ms.openlocfilehash: f932288599e5c7c8c6135395014db08513571638
-ms.sourcegitcommit: 60abf78b0266a64b99ca7d79038c012c644b7c9d
+ms.openlocfilehash: 5b23b5e9f80bf1fa22635260e05db1a2152e2b7f
+ms.sourcegitcommit: d753bc98ca50acdcdb7a8bf911af3465d3228058
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "12445263"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "12465147"
 ---
 # <a name="experimental-features"></a>试验功能
 
@@ -100,7 +100,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 若要打开或关闭实验，请Microsoft Edge：
 
-1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
+1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
 
 1. 在 DevTools 中的主工具栏上，单击设置** (** 设置![图标](../media/settings-gear-icon-light-theme.png)。) 按钮。  或者，按 `Shift`+`?`。
 
@@ -120,7 +120,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 若要还原打开实验功能的默认设置，请：
 
-1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
+1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
 
 1. 在 DevTools 中的主工具栏上，单击设置** (** 设置![图标](../media/settings-gear-icon-light-theme.png)。) 按钮。  或者，按 `Shift`+`?`。  The **设置** panel opens， with the **Preferences** page selected.
 
@@ -134,7 +134,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 你可以按标题中包含的文本筛选实验性功能。
 
-1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
+1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
 
 1. 在 DevTools 中的主工具栏上，单击设置** (** 设置![图标](../media/settings-gear-icon-light-theme.png)。) 按钮。  或者，按 `Shift`+`?`。  The **设置** panel opens， with the **Preferences** page selected.
 
@@ -184,7 +184,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 若要监视 DevTools 发送和接收的消息以调试检查的页面：
 
-1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
+1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
 
 1. 在 DevTools 中的主工具栏上，单击设置** (** 设置![图标](../media/settings-gear-icon-light-theme.png)。) 按钮。  或者，按 `Shift`+`?`。  The **设置** panel opens， with the **Preferences** page selected.
 
@@ -253,7 +253,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 若要使用 **Source Order Viewer**：
 
-1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
+1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
 
 1. 在 DevTools 中，在主工具栏上，选择" **元素"** 选项卡。 If the **Elements** tab isn't visible， click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button， or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
@@ -342,7 +342,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 若要使用可视 **字体编辑器**：
 
-1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
+1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
 
 1. 在 DevTools 中，在主工具栏上，选择" **元素"** 选项卡。 If the **Elements** tab isn't visible， click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button， or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
@@ -464,7 +464,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 若要使用 **复合层**：
 
-1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
+1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
 
 1. 按 `Esc` 以显示 **"箱"**。
 
@@ -489,7 +489,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 若要使用 **网络控制台**：
 
-1. 若要打开 DevTools，请右键单击该网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
+1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
 
 1. 在 DevTools 中，在主工具栏上，选择"网络 **"** 选项卡。 如果该选项卡不可见，请单击"更多选项卡" (**** 更多选项卡"图标](../media/more-tabs-icon-light-theme.png)。****) 按钮![，或单击"更多工具 (更多工具"图标。) 按钮。](../media/more-tools-icon-light-theme.png) ![
 
@@ -510,40 +510,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 <!-- ====================================================================== -->
 ## <a name="focus-mode"></a>焦点模式
 
-焦点模式实验提供了一 **个活动栏**，它是一个在较小窗口中运行良好的紧凑水平或垂直工具栏。  活动栏包含小图标，而不是带文本标签的选项卡，它将替换主工具栏。
-
-*  活动 **栏** 是主工具栏的精简替换。
-*  快速 **视图** 列表是"箱"工具栏上选项卡的替换。
-
-![焦点模式，包括活动栏。](../media/experimental-features/focus-mode.png)
-
-若要将工具添加到活动栏，请打开该工具。
-
-若要从活动栏中删除工具，请执行以下操作：
-
-*  右键单击其图标，然后选择" **从活动栏中删除"**。
-
-活动栏上始终存在 **以下工具，** 并且无法删除：
-
-*  检查 **工具和** 设备仿真。
-*  **元素、****控制台**和**源**工具。
-
-若要切换到焦点模式以显示活动栏而不是主工具栏：
-
-1. 在 DevTools 中，**设置** (设置![图标](../media/settings-gear-icon-light-theme.png)。) >**实验"**。
-
-1. 选中焦点 **模式** 复选框。
-
-1. 单击 **右上角 (** **X**) "按钮，然后单击" **重新加载 DevTools"** 按钮。
-
-   活动栏显示在左侧。  主工具栏消失。
-
-   The Drawer toolbar is replaced by a **Quick View** list of the tools， instead of tabs.  所有选项卡工具均在快速视图列表中可用****， (**元素**、控制台和**源) 。** ****  向上拖动"箱"将其展开。
-
-另请参阅：
-
-* [关于工具列表](../about-tools.md)。
-* [DevTools：焦点模式 UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md) - 解释器存储库中此实验性功能草稿文档。
+请参阅 [使用焦点模式降低 DevTools 的复杂性](focus-mode.md)。
 
 *  Stable v98 Microsoft Edge此复选框。
 *  Canary v100 Microsoft Edge此复选框。

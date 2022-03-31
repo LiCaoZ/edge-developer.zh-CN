@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/14/2022
-ms.openlocfilehash: 6e2ee1eab1c49c22fa6e98f8b0e3d0a87a3bca88
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
-ms.translationtype: HT
+ms.openlocfilehash: ed4baf19e5a6fc11d08c276b72f26b580fa94dc4
+ms.sourcegitcommit: d753bc98ca50acdcdb7a8bf911af3465d3228058
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431835"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "12465119"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-97"></a>DevTools (Microsoft Edge 97) 中的新增功能
 
@@ -76,6 +76,8 @@ ms.locfileid: "12431835"
 使用专注模式时，所有相同的工具和[自定义主题](../../../customize/theme.md)与在现有 DevTools UI 中一样可用。  详细了解[专注模式 UI](../../../experimental-features/index.md#focus-mode)，或在 DevTools **设置** > **试验**中启用**专注模式**试验，自行试用。
 
 ![专注模式 UI。](../../media/2022/01/focus-mode.png)
+
+请参阅 [使用焦点模式简化 DevTools](../../../experimental-features/focus-mode.md)。
 
 
 <!-- ====================================================================== -->
