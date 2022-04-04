@@ -6,18 +6,18 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 09/21/2021
-ms.openlocfilehash: b6b9be1411df3495368a35f28b32d312a954ac66
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.date: 04/01/2022
+ms.openlocfilehash: 0bbfccc0f65e5c887607ef653db8fb2816a59d72
+ms.sourcegitcommit: aaac3b52a2ed68d2cb1b4047b7066be3cf163356
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12432402"
+ms.lasthandoff: 04/02/2022
+ms.locfileid: "12468668"
 ---
 # <a name="process-model-for-webview2-apps"></a>WebView2 应用的进程模型
 <!-- old title: # The WebView2 process model -->
 
-支持的平台：Win32、Windows Forms、WinUI、WPF。
+支持的平台：Win32、Windows 窗体、WinUI、WPF。
 
 WebView2 运行时使用与浏览器相同的Microsoft Edge模型。  此浏览器过程模型在内部查看[](https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture)新式 Web 浏览器中的浏览器体系结构_ (第 1 _部分) 。
 
@@ -69,7 +69,25 @@ WebView2 运行时进程集合中所有进程都绑定到浏览器进程，而�
 
 若要安全关闭关联的浏览器和呈现器进程，请使用 `Close` 的 方法 `CoreWebView2Controller`。
 
-若要从 WebView2 实例的 **DevTools** 窗口打开浏览器任务管理器窗口，请右键单击 DevTools 窗口标题栏，然后选择 `Browser task manager`。****  或者，按 `Shift`+`Escape`。
+若要打开 **浏览器任务管理器，** 请调用 `OpenTaskManagerWindow` 方法。
+
+<!-- ------------------------------ -->
+
+# [<a name="c"></a>C#](#tab/csharp)
+
+[OpenTaskManagerWindow](/dotnet/api/microsoft.web.webview2.core.corewebview2.opentaskmanagerwindow#microsoft-web-webview2-core-corewebview2-opentaskmanagerwindow)
+
+
+<!-- ------------------------------ -->
+
+# [<a name="c"></a>C++](#tab/cpp)
+
+[OpenTaskManagerWindow](/microsoft-edge/webview2/reference/win32/icorewebview2_6#opentaskmanagerwindow)
+
+
+---
+
+<!-- end of tab-set -->
 
 将显示与 WebView2 的浏览器进程关联的所有进程，包括其关联目的。
 

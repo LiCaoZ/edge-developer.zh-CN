@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/17/2021
-ms.openlocfilehash: 8db869d5571899c0989aa1cd60a2b0197886c445
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: a4e7563322865eb74bc8454a42404fb5da0b2bfc
+ms.sourcegitcommit: ff4eb05a7d6726c9c58746c225f80d85e496478e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12432624"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "12468418"
 ---
 # <a name="port-a-chrome-extension-to-microsoft-edge"></a>将 Chrome 扩展移植到Microsoft Edge
 
@@ -38,7 +38,7 @@ ms.locfileid: "12432624"
 <!-- ====================================================================== -->
 ## <a name="setting-allowed_origins-for-a-native-app"></a>为allowed_origins应用设置应用
 
-如果扩展使用 与本机应用交换邮件`chrome.runtime.connectNative`，请确保在`allowed_origins``extension://[Microsoft-Catalog-extensionID]`本机消息传递主机清单文件中设置为 。  该设置允许应用标识你的扩展。
+如果扩展使用 与本机应用交换邮件`chrome.runtime.connectNative`，请确保在`allowed_origins``chrome-extension://[Microsoft-Catalog-extensionID]`本机消息传递主机清单文件中设置为 。  该设置允许应用标识你的扩展。
 
 
 <!-- ====================================================================== -->

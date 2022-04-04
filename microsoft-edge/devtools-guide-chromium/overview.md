@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 09/23/2021
-ms.openlocfilehash: b460bd73cf6a17f4e387339a11fe4cc69eae4188
-ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
+ms.openlocfilehash: bd43b1659fcb4b6ad2e74ccd23a20ff8cb272c38
+ms.sourcegitcommit: 7264a26c08b6b60d29b8bd3b105820a849030506
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "12459796"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "12467711"
 ---
 # <a name="overview-of-devtools"></a>开发工具概述
 
@@ -65,7 +65,7 @@ ms.locfileid: "12459796"
 
 | 操作 | 生成工具 |
 |---|---|
-| 在"Microsoft Edge"工具栏****![上，选择"设置" ("设置"更多](media/edge-settings-and-more-icon.png)工具"图标。) >**更多** >  工具""开发人员**工具"**。 | 以前使用的工具或 **欢迎工具** 。 |
+| 在"Microsoft Edge"****![工具栏上，设置更多 ("设置"](media/edge-settings-and-more-icon.png)图标。) >**更多工具** >  **开发人员工具**。 | 以前使用的工具或 **欢迎工具** 。 |
 | 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。 | **控制台工具**。 |
 | 按`Ctrl`+`Shift`+`C`（Windows、Linux）或 `Command`+`Option`+`C` （macOS）。 | **元素工具**，扩展 DOM 树以显示`<body>`元素。 |
 | 按 `Shift`+`F10` 以打开右键单击菜单。  若要选择" **检查"** 命令，请按 `Up Arrow` ，然后按 `Enter`。 | **元素工具**，扩展 DOM 树以显示`<html>`元素。 |
@@ -100,9 +100,9 @@ DevTools 随即打开，在"元素"工具的 **DOM** 树中突出显示右 **键
 
 ### <a name="open-devtools-by-using-the-microsoft-edge-toolbar"></a>使用"开发工具"工具栏打开Microsoft Edge工具
 
-在"Microsoft Edge"工具栏上，可以选择"工具设置**更多**工具 () > `...` **更多** >  **工具**：
+在"Microsoft Edge"工具栏上，可以选择设置**更多** () > `...` **更多工具** >  **开发人员工具**：
 
-![在"Microsoft Edge工具栏上，选择"设置工具">"开发人员工具">"更多工具"。](media/edge-settings-and-more-tools-developer-tools.png)
+![在"Microsoft Edge"工具栏上，选择"设置更多">"更多工具">"开发人员工具"。](media/edge-settings-and-more-tools-developer-tools.png)
 
 
 ### <a name="have-devtools-automatically-open-when-you-open-a-new-tab"></a>打开新选项卡时自动打开 DevTools
@@ -159,6 +159,34 @@ DevTools 随即打开，在"元素"工具的 **DOM** 树中突出显示右 **键
 ## <a name="change-where-devtools-is-docked-in-the-browser"></a>更改 DevTools 在浏览器中的停靠位置
 
 你可以将 DevTools 停靠在浏览器的右侧、左侧或底部，或者将其取消停靠到单独的窗口中。  请参阅[更改 DevTools 放置位置（取消停靠，停靠到底部，停靠到左侧）](customize/placement.md)。
+
+
+<!-- ====================================================================== -->
+## <a name="zoom-devtools-in-or-out"></a>放大或缩小 DevTools
+
+使用 HTML 和 CSS（如网页）实现 DevTools UI，因此可以使用标准键盘快捷方式进行放大和缩小。  DevTools 和呈现的页面的缩放级别是独立的。
+
+**若要缩放浏览器的 DevTools 部分：**
+
+1. 如果开发人员工具上尚未提供焦点，请单击 DevTools 中的某个位置。
+1. 按`Ctrl`+`+`或 (Windows `Ctrl`+`-` Linux) 。  或者，按 `Command`+`+` 或 (`Command`+`-` macOS) 。
+
+![DevTools 缩小。](overview-images/zoom-devtools.png)
+
+<!-- ![DevTools zoomed in.](overview-images/zoom-rendered-page.png) -->
+
+若要缩放呈现的页面，请单击该页面，然后使用与上面相同的键盘快捷方式。
+
+**若要将缩放还原到 100%：**
+
+1. 确保焦点在浏览器的所需部分（DevTools 或呈现的页面）。
+1. 按 `Ctrl`+`0` (Windows 或 Linux) 或 (`Command`+`0` macOS) 。
+
+**若要缩放 DevTools 设置：**
+
+1. 在 DevTools **设置**，**单击右上角 (****关闭) x**。
+1. 更改 DevTools 的缩放级别，如上所述。
+1. 单击"**设置 (** 设置![图标。](media/settings-gear-icon-light-theme.png)) 按钮。
 
 
 <!-- ====================================================================== -->
@@ -274,7 +302,7 @@ DevTools 为你提供了令人惊叹的功能，可以检查、调试和更改�
 
 ### <a name="performance-tool"></a>性能工具
 
-请参阅 [开始分析运行时性能](evaluate-performance/index.md)。
+请参阅[开始运行时性能](evaluate-performance/index.md)。
 
 
 ### <a name="memory-tool"></a>内存工具

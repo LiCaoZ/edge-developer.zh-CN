@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/25/2021
-ms.openlocfilehash: 4d23b39a825d18caf413dded61e8104cf95fbb8f
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 7d59de3168537688293cf3325129b5d27bcc9592
+ms.sourcegitcommit: ff4eb05a7d6726c9c58746c225f80d85e496478e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12430848"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "12468438"
 ---
 # <a name="overview-of-microsoft-edge-extensions"></a>Microsoft Edge 扩展概述
 
@@ -35,7 +35,7 @@ Microsoft Edge *扩展* 是开发人员用于添加或修改 Microsoft Edge 功�
 <!-- ====================================================================== -->
 ## <a name="basic-guidance"></a>基本指南
 
-为一些最受欢迎的浏览器包括 Safari、Firefox、Chrome、Opera、Cookie 和 Microsoft Edge 构建扩展。  浏览器组织托管的网站是开始扩展开发教程和文档研究很好的位置。  下表不是明确的，只是一个起点。
+为一些最受欢迎的浏览器包括 Safari、Firefox、Chrome、Opera、Cookie 和 Microsoft Edge 构建扩展。  浏览器组织托管的网站是开始扩展开发教程和文档研究很好的位置。  下表并不详尽或明确。 这只是研究的起点。
 
 | Web 浏览器 | 基于 Chromium？ | 扩展开发网页 |
 |:--- |:--- |:--- |
@@ -53,9 +53,9 @@ Microsoft Edge *扩展* 是开发人员用于添加或修改 Microsoft Edge 功�
 <!-- ====================================================================== -->
 ## <a name="why-chromium"></a>为什么使用 Chromium？
 
-如果目标是在每个浏览器扩展应用商店中发布扩展，则扩展必须为每个版本对其进行修改，以便在不同浏览器环境中运行。  例如，[Safari 扩展](https://developer.apple.com/documentation/safariservices/safari_app_extensions) 可以同时使用 web 和本机代码与对应的本机应用通信。  上表中的最后四个浏览器使用相同的代码包，并将维护并行版本的要求降到最低。  这些浏览器基于 [Chromium 开源项目](https://www.chromium.org/Home)。
+如果目标是在每个浏览器扩展应用商店中发布扩展，则扩展必须为每个版本对其进行修改，以便在不同浏览器环境中运行。  例如，[Safari 扩展](https://developer.apple.com/documentation/safariservices/safari_app_extensions) 可以同时使用 web 和本机代码与对应的本机应用通信。  上表中的最后四个浏览器使用相同的代码包，并最大程度减少维护并行版本需求。  这些浏览器基于 [Chromium 开源项目](https://www.chromium.org/Home)。
 
-创建 Chromium 扩展以编写最少的代码。  它还以扩展应用商店的最大数量以及最终以找到和获取扩展的最大用户数为目标。
+创建一个Chromium扩展的好处包括编写最短的代码行。  它还面向最大扩展存储数，并最终面向可查找和获取扩展的最大用户数。
 
 以下内容主要侧重于 Chromium 扩展。
 
@@ -90,7 +90,7 @@ Microsoft Edge *扩展* 是开发人员用于添加或修改 Microsoft Edge 功�
 
 ### <a name="migrate-an-existing-extension-to-microsoft-edge"></a>将现有扩展迁移到 Microsoft Edge
 
-如果已经为其他基于 Chrome 浏览器开发了扩展，则可以将其提交到 Microsoft Edge 加载项商店。 不需要重写扩展，并且必须验证它在 MicrosoftEdge 中是否工作。  将现有的 Chromium 扩展迁移到其他 Chromium 浏览器时，请确保相同的 API 或替代方案可用于该目标浏览器。
+如果你已针对另一个基于 Chromium 的浏览器开发扩展，你可以将其提交到 Microsoft Edge [加载项网站](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home)。 无需重写扩展或验证其是否适用于Microsoft Edge。  将现有的 Chromium 扩展迁移到其他 Chromium 浏览器时，请确保相同的 API 或替代方案可用于该目标浏览器。
 
 有关将 Chrome 扩展移植到 Microsoft Edge，请参阅将 Chrome 扩展移植到 [Microsoft Edge](developer-guide/port-chrome-extension.md)。 将扩展移植到目标浏览器后，下一步是发布它。
 
@@ -108,7 +108,7 @@ Microsoft Edge *扩展* 是开发人员用于添加或修改 Microsoft Edge 功�
 > [!NOTE]
 > 不同的应用商店可能具有不同的提交要求。  上面的列表总结了发布 [Microsoft Edge](publish/publish-extension.md) 扩展的要求。
 
-成功提交扩展后，扩展将经历审核过程，它将通过或不通过认证过程。  所有者不对结果进行认证，并按需要提供下一步步骤。  如果向应用商店提交扩展更新，则会启动新的审阅过程。
+成功提交扩展后，扩展将经历审核过程，它将通过或不通过认证过程。  向所有者通知结果，并按需要提供下一步步骤。  如果你将扩展更新提交到应用商店，它将开始新的审阅过程。
 
 
 <!-- ====================================================================== -->

@@ -6,28 +6,31 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/30/2021
-ms.openlocfilehash: a70bedec6a3d03211f2d5b3dcdb68014be95a566
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 1c6655c2558a3bd421941518a74146c0f5dc5486
+ms.sourcegitcommit: 7264a26c08b6b60d29b8bd3b105820a849030506
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12432746"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "12467670"
 ---
 # <a name="change-devtools-language-settings"></a>更改开发工具语言设置
 
-默认情况下，如果开发人员工具是当前支持的十种语言之一，则你的开发人员工具与浏览器语言匹配 (英语语言) ：
+默认情况下，您的开发人员工具与浏览器语言匹配（如果它是受支持的语言之一）：
 
-* 简 (中文) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
-* 繁体 (中文) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
-* 法语 –&#231;英语
+<!-- same order as UI, for ease of maint and matching what user sees: -->
+* 捷克语 - 捷克语
 * 德语 - 德语
+* 英语 - 英语
+* 西班牙语 - 电子邮件&#241;ol
+* 法语 –&#231;英语
 * 意大利语 - 意大利语
 * 日语 - &#26085;&#26412;&#35486;
 * 朝鲜语 - &#54620;&#44397;&#50612;
 * 葡萄牙语 - 图卢&#234;语
 * 俄语 – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
-* 西班牙语 - 电子邮件&#241;ol
-
+* 越南语 - Tiếng Việt
+* 简 (中文) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
+* 繁体 (中文) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
 
 使用中文的 DevTools UI：
 

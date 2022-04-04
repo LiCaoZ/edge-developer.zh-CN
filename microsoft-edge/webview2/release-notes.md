@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 03/14/2022
-ms.openlocfilehash: e262150439f9b68af9ddbfea82bdcf9764cc3c99
-ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
+ms.openlocfilehash: b386e204217d94a4a9bc487dfa9d5fcc69e7b3bd
+ms.sourcegitcommit: ff4eb05a7d6726c9c58746c225f80d85e496478e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "12459740"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "12468429"
 ---
 # <a name="release-notes-for-the-webview2-sdk"></a>WebView2 SDK 发行说明
 
@@ -66,7 +66,7 @@ WebView2 Bug 修复（如下面列出的修复程序）特定于运行时或特�
 
 [NuGet WebView2 SDK 1.0.1189 的程序包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1189-prerelease)  
   
-为了完全实现 API 兼容性，此版本的 WebView2 SDK Microsoft Edge版本 101.0.1189.0 或更高版本。 
+为了完全实现 API 兼容性，此版本的 WebView2 SDK Microsoft Edge版本 100.0.1189.0 或更高版本。  
 
 ### <a name="general"></a>概要
 
@@ -234,7 +234,7 @@ WebView2 Bug 修复（如下面列出的修复程序）特定于运行时或特�
 
 为了完全兼容 API，此版本的 WebView2 SDK Microsoft Edge版本 97.0.1083.0 或更高版本。
 
-### <a name="experimental-features"></a>实验性功能
+### <a name="experimental-features"></a>实验功能
 
 * 在 WebView2 [中添加了以下适用于 iframe](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe2?view=webview2-1.0.1083-prerelease&preserve-view=true) 的 API：
    *  `PostWebMessageAsJson`
@@ -298,7 +298,7 @@ WebView2 Bug 修复（如下面列出的修复程序）特定于运行时或特�
 
 *  常规可靠性改进。
 
-#### <a name="experimental-features"></a>实验性功能
+#### <a name="experimental-features"></a>实验功能
 
 *  下载 [定位和定位 API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental11?view=webview2-1.0.1056-prerelease&preserve-view=true)。  此 API 支持：
    *  更改下载对话框相对于 WebView2 边界的位置。  您可以将下载对话框定位到"下载"**** 按钮，而不是位于右上角的默认位置。
@@ -370,7 +370,7 @@ WebView2 Bug 修复（如下面列出的修复程序）特定于运行时或特�
 
 ### <a name="general"></a>概要
 
-#### <a name="experimental-features"></a>实验性功能
+#### <a name="experimental-features"></a>实验功能
 
 *  添加了 [媒体 API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental9?view=webview2-1.0.1018-prerelease&preserve-view=true#summary) ，使开发人员能够将 WebView2 中的媒体静音/取消静音。
 *  添加了对使用 WebView2 [的多个](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment8?view=webview2-1.0.1018-prerelease&preserve-view=true) 用户配置文件的支持。
@@ -396,7 +396,7 @@ WebView2 Bug 修复（如下面列出的修复程序）特定于运行时或特�
 *  可靠性修补程序。  ([问题 #1605](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1605) 和 [问题 #1678](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1678)) 
 *  在启动期间和主机应用位于前台时添加了性能改进。
 
-#### <a name="experimental-features"></a>实验性功能
+#### <a name="experimental-features"></a>实验功能
 
 *  使用 删除无提示失败 `EnsureCoreWebView2Async`，当 `ArgumentException` 调用时，将引发 具有不兼容参数的多个错误。
 *  更改了环境 [对象中 UserDataFolder](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment5?view=webview2-1.0.1010-prerelease&preserve-view=true#get_userdatafolder) 属性的默认处理。
@@ -472,7 +472,7 @@ WebView2 Bug 修复（如下面列出的修复程序）特定于运行时或特�
 *  从 中删除了 Microsoft 品牌 `edge://history`。
 *  新的默认下载 UI。
 
-#### <a name="experimental-features"></a>实验性功能
+#### <a name="experimental-features"></a>实验功能
 
 *  添加了 [OpenTaskManagerWindow](/microsoft-edge/webview2/reference/win32/icorewebview2experimental4?view=webview2-1.0.955-prerelease&preserve-view=true#opentaskmanagerwindow) 以启动 WebView2 浏览器任务管理器。
 *  添加了 [NewWindowRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnewwindowrequestedeventargs?view=webview2-1.0.955-prerelease&preserve-view=true#get_name)。
@@ -545,7 +545,7 @@ WebView2 Bug 修复（如下面列出的修复程序）特定于运行时或特�
 
 *  改进了 WebView2 启动性能和磁盘占用。
 
-#### <a name="experimental-features"></a>实验性功能
+#### <a name="experimental-features"></a>实验功能
 
 *  添加了 [IsSwipeNavigationEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings5?view=webview2-1.0.902-prerelease&preserve-view=true#get_isswipenavigationenabled) 属性以启用或禁用最终用户在启用了触控输入的设备上使用轻扫手势在 WebView2 中导航的能力。
 *  添加了 [BrowserProcessExited](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment4?view=webview2-1.0.902-prerelease&preserve-view=true#add_browserprocessexited) 事件。
@@ -625,7 +625,7 @@ WebView2 Bug 修复（如下面列出的修复程序）特定于运行时或特�
 
 ### <a name="general"></a>概要
 
-#### <a name="experimental-features"></a>实验性功能
+#### <a name="experimental-features"></a>实验功能
 
 *  添加了 [IsPinchZoomEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings4?view=webview2-1.0.865-prerelease&preserve-view=true#ispinchzoomenabled) 设置。 它允许你在设置中打开或关闭页面缩放缩放控件。
 *  添加了自定义 [add_DownloadStarting](/microsoft-edge/webview2/reference/win32/icorewebview2experimental2?view=webview2-1.0.865-prerelease&preserve-view=true#add_downloadstarting) API。  它允许你阻止下载、保存到其他路径，并访问所需的元数据以生成自定义下载 UI。
@@ -644,7 +644,7 @@ WebView2 Bug 修复（如下面列出的修复程序）特定于运行时或特�
 
 ### <a name="net"></a>.NET
 
-#### <a name="experimental-features"></a>实验性功能
+#### <a name="experimental-features"></a>实验功能
 
 *  向 WPF 工具箱添加了 WebView2 设计器工具。   ([问题 210](https://github.com/MicrosoftEdge/WebViewFeedback/issues/210)) 。
 *  在 .NET Designer 模式下添加了 WebView2 UI 元素。
@@ -1049,10 +1049,10 @@ WebView2 Bug 修复（如下面列出的修复程序）特定于运行时或特�
 此预发布版本的 WebView2 SDK 要求Microsoft Edge版本 84.0.515.0 或更高版本。
 
 *  > [!IMPORTANT]
-   > 通知 **：** WebView2 现在支持 .NET Framework 4.6.2 或更高版本上的 Windows Forms 和 WPF，以及预发布包中的 .NET Core 3.0 或**更高版本。**
+   > 通知 **：** WebView2 现在支持 Windows 窗体 4.6.2 或更高版本上的 .NET Framework 和 WPF，以及预发行程序包中的 .NET Core 3.0 或**更高版本。**
 
-*  有关生成 WPF 应用的信息，请参阅 [WPF 应用中的 WebView2](get-started/wpf.md) 入门和 WPF 特定 API 的 WebView2 [WPF](/dotnet/api/microsoft.web.webview2.wpf) 参考。
-*  有关生成 Windows Forms 应用的信息，请参阅 [WinForms 应用中的 WebView2](get-started/winforms.md) 入门和适用于 Windows Forms 特定 API 的 WebView2 Windows [Forms](/dotnet/api/microsoft.web.webview2.winforms) 参考。
+*  有关生成 WPF 应用的信息，请参阅[开始 WPF 应用中的 WebView2](get-started/wpf.md) 和 WPF 特定 API 的 WebView2 [WPF](/dotnet/api/microsoft.web.webview2.wpf) 参考。
+*  有关生成应用Windows 窗体，请参阅 [WinForms 开始中的 WebView2](get-started/winforms.md) 和 WebView2 [Windows 窗体](/dotnet/api/microsoft.web.webview2.winforms)参考，Windows 窗体特定 API。
 *  有关 CoreWebView2 API 详细信息，请参阅 [.NET 参考](/dotnet/api/microsoft.web.webview2.core)。
 *  > [!CAUTION]
    > **已知问题**：WebView2 团队了解预发行版中在将来版本中要解决的一些问题。

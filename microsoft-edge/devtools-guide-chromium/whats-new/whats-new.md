@@ -6,17 +6,18 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/04/2022
-ms.openlocfilehash: 19190613ae93af050f2a461e23595555c545592f
-ms.sourcegitcommit: d753bc98ca50acdcdb7a8bf911af3465d3228058
+ms.openlocfilehash: 2f50f511c1a96b85544faa15939cc55724ae10c8
+ms.sourcegitcommit: 7264a26c08b6b60d29b8bd3b105820a849030506
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "12465134"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "12467682"
 ---
 # <a name="whats-new-in-microsoft-edge-devtools"></a>Microsoft Edge DevTools 中的新增功能
 
 请查看这些文章，了解有关 Microsoft Edge DevTools 中实验功能的最新公告、功能、修补程序和更新。
 
+* [DevTools (Microsoft Edge 100) ](2022/03/devtools-100.md)
 * [DevTools (Microsoft Edge 99 中的新增) ](2022/03/devtools.md)
 * [DevTools (Microsoft Edge 98) ](2022/02/devtools.md)
 * [DevTools (Microsoft Edge 97) 中的新增功能](2022/01/devtools.md)

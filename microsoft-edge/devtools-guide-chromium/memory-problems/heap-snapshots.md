@@ -5,13 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
-ms.openlocfilehash: 5b8463a01abc58a9e460116602134f22fbb1b4d4
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.date: 03/24/2022
+ms.openlocfilehash: fdaa416ab28f291e7b851344778c3f1b75736e3c
+ms.sourcegitcommit: 7264a26c08b6b60d29b8bd3b105820a849030506
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12430456"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "12467697"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -212,6 +212,16 @@ function createLargeClosure() {
 <!--
 :::image type="content" source="../media/memory-problems-domleaks.msft.png" alt-text="Name functions to distinguish between closures." lightbox="../media/memory-problems-domleaks.msft.png":::
 -->
+
+
+<!-- ====================================================================== -->
+## <a name="filter-a-heap-snapshot-by-node-type"></a>按节点类型筛选堆快照
+
+使用筛选器专注于堆快照的特定部分。  例如，如果你只对堆栈中的字符串或数组感兴趣，你可以按节点类型进行筛选。
+
+在内存工具中查看堆快照中所有对象时，**** 可能很难专注于特定对象或保留路径。  查看 **堆** 快照时，请使用节点类型筛选器，只关注特定类型的节点。  例如，若要仅查看堆中的数组和字符串对象，请选择"节点类型"筛选器中的 **"数组**"**** 和"字符串 **"** 条目。
+
+![内存工具中堆快照中的节点类型。](heap-snapshots-images/node-types-heap-snapshot.png)
 
 
 <!-- ====================================================================== -->

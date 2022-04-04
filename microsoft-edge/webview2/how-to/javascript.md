@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 1/5/2022
-ms.openlocfilehash: 244d2830c404572d9d2775980e9e923f86aa5756
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.date: 4/1/2022
+ms.openlocfilehash: 06d974222db7e92dac2c9f5d4238a6f2e03b6950
+ms.sourcegitcommit: 23dea7be6af8cdbd7dd42f649b26e784223356ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12433018"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "12468288"
 ---
 # <a name="call-web-side-code-from-native-side-code"></a>从本机代码调用 Web 端代码
 <!-- old title: Use JavaScript in WebView for extended scenarios -->
@@ -23,7 +23,7 @@ ms.locfileid: "12433018"
 <!-- ====================================================================== -->
 ## <a name="before-you-begin"></a>在开始之前
 
-本文假定您已有一个工作项目。 如果你没有项目，并且想要继续，请参阅 [WebView2 入门](../get-started/get-started.md)。
+本文假定您已有一个工作项目。 如果你没有项目，并且想要继续，请参阅使用 [WebView2 开始网站](../get-started/get-started.md)。
 
 
 <!-- ====================================================================== -->
@@ -33,8 +33,8 @@ ms.locfileid: "12433018"
 
 | API | 说明 |
 | --- | --- |
-| [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | 在 WebView 控件中运行 JavaScript。  请参阅 [WebView2 入门](../get-started/get-started.md)。 |
-| [OnDocumentCreatedAsync](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated) | 创建文档对象模型或 DOM (时) 运行。 |
+| [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | 在 WebView 控件中运行 JavaScript。 在页面文档对象模型或 [DOM (加载](/dotnet/api/microsoft.web.webview2.core.corewebview2.domcontentloaded)) 或导航完成之后，调用 [此方法](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigationcompleted)。 请参阅[开始 WebView2。](../get-started/get-started.md) |
+| [AddScriptToExecuteOnDocumentCreatedAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2.addscripttoexecuteondocumentcreatedasync) | 创建 DOM 时，在页面上运行。 初始化 CoreWebView2 后调用此方法。 |
 
 
 <!-- ====================================================================== -->
@@ -81,7 +81,7 @@ Debug.Assert(result == "\"example\"");
 
 1. `.js`在项目中创建文件，并添加要运行的 JavaScript 代码。  例如，创建一个称为 的文件 `script.js`。
 
-1. 将以下代码粘贴到 中 `ExecuteScriptAsync`，将 JavaScript 文件转换为传递给 的字符串 `MainWindow.xaml.cs`：
+1. 在页面完成导航 `ExecuteScriptAsync`后粘贴以下代码，将 JavaScript 文件转换为传递给 的字符串：
 
    ```csharp
    string text = System.IO.File.ReadAllText(@"C:\PATH_TO_YOUR_FILE\script.js");
@@ -103,27 +103,27 @@ Debug.Assert(result == "\"example\"");
 
 1. `.txt`创建文件以拖放。  例如，创建一个名为 的文件 `contoso.txt` ，并添加文本。
 
-1. 运行项目。
+1. 按 **F5** 生成并运行项目。
 
-1. 将文件拖放到 `contoso.txt` WebView 控件上。  将打开一个新窗口，这是示例项目中代码的结果：
+1. 将文件拖放到 `contoso.txt` WebView 控件中。  将打开一个新窗口，这是示例项目中代码的结果：
 
    :::image type="content" source="./media/drag-text.png" alt-text="拖放操作的结果contoso.txt。" lightbox="./media/drag-text.png":::
 
-1. 接下来，添加代码以从 WebView2 控件中删除拖放功能。  将以下代码粘贴到 `InitializeAsync()` 中 `MainWindow.xaml.cs`：
+1. 接下来，添加代码以从 WebView2 控件中删除拖放功能。  在代码中初始化 CoreWebView2 对象后粘贴以下代码：
 
    ```csharp
-   await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('dragover',function(e){e.preventDefault();},false);");
-
-   await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('drop',function(e){" +
-   "e.preventDefault();" +
-   "console.log(e.dataTransfer);" +
-   "console.log(e.dataTransfer.files[0])" +
-   "}, false);");
+   await webView.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync(
+      "window.addEventListener('dragover',function(e){e.preventDefault();},false);" +
+      "window.addEventListener('drop',function(e){" +
+         "e.preventDefault();" +
+         "console.log(e.dataTransfer);" +
+         "console.log(e.dataTransfer.files[0])" +
+      "}, false);");
    ```
 
-1. 运行项目。
+1. 按 **F5** 生成并运行项目。
 
-1. 尝试拖放 `contoso.txt`。  确认无法拖放。
+1. 尝试拖放到 `contoso.txt` WebView 控件。  确认无法拖放。
 
 
 <!-- ====================================================================== -->
@@ -133,7 +133,7 @@ Debug.Assert(result == "\"example\"");
 
 若要开始，请浏览右键单击菜单的当前功能：
 
-1. 运行项目。
+1. 按 **F5** 生成并运行项目。
 
 1. 右键单击 WebView2 控件上的任意位置。  上下文菜单显示默认的右键单击菜单命令：
 
@@ -141,13 +141,13 @@ Debug.Assert(result == "\"example\"");
 
    接下来，添加代码以从 WebView2 控件中删除右键单击菜单功能。
 
-1. 将以下代码粘贴到 `InitializeAsync()` 中 `MainWindow.xaml.cs`：
+1. 在代码中初始化 CoreWebView2 对象后粘贴以下代码：
 
    ```csharp
    await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
    ```
 
-1. 再次运行代码。  确认无法打开右键单击菜单。
+1. 按 **F5** 生成并运行项目。  确认无法打开右键单击菜单。
 
 
 <!-- ====================================================================== -->

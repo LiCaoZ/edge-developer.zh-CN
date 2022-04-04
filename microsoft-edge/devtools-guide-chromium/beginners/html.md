@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/06/2021
-ms.openlocfilehash: 5d929c8cb5905d4eb775a908370c50d7093b2152
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
-ms.translationtype: HT
+ms.openlocfilehash: 3aa3863f1efd0b938d27b375ae8e716391ebe1dd
+ms.sourcegitcommit: aaac3b52a2ed68d2cb1b4047b7066be3cf163356
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12430897"
+ms.lasthandoff: 04/02/2022
+ms.locfileid: "12468675"
 ---
 <!-- Copyright Katherine Jackson
 
@@ -284,7 +284,7 @@ ms.locfileid: "12430897"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 在https://developers.google.com/web/tools/chrome-devtools/beginners/html找到原始页面 <!-- 404 now --> 由 [Katherine 并](https://developers.google.com/web/resources/contributors#katherine-jackson) 创作（技术编写员，Chrome DevTools）。
+> 在找到原始页面 `https://developers.google.com/web/tools/chrome-devtools/beginners/html` <!-- 404 now --> 由 [Katherine 并](https://developers.google.com/web/resources/contributors#katherine-jackson) 创作（技术编写员，Chrome DevTools）。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。
