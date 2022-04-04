@@ -617,6 +617,8 @@
               href: extensions-chromium/publish/update-extension.md
             - name: 提交状态
               href: extensions-chromium/publish/submission-states.md
+            - name: 查看扩展分析仪表板
+              href: extensions-chromium/publish/extensions-analytics.md
             - name: 管理帐户设置
               href: extensions-chromium/publish/manage-settings.md
             - name: 联系人扩展支持
