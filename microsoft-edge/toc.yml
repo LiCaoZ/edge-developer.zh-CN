@@ -634,9 +634,9 @@
                   href: extensions-chromium/store-policies/developer-policies.md
             - name: Microsoft Edge 加载项 API
               items:
-                - name: 使用Microsoft Edge加载项 API （Beta）
+                - name: 使用 Microsoft Edge 加载项 API
                   href: extensions-chromium/publish/api/using-addons-api.md
-                - name: Microsoft Edge加载项 API 参考 （Beta）
+                - name: Microsoft Edge 加载项 API 参考
                   href: extensions-chromium/publish/api/addons-api-reference.md
         - name: 适用于企业的扩展
           items:
