@@ -6,12 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/24/2021
-ms.openlocfilehash: 990a59d5f5603158526dc6834edf4530f7c8fca2
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431688"
 ---
 <!-- Copyright Sam Dutton
 
@@ -34,7 +28,7 @@ ms.locfileid: "12431688"
 *  辅助功能。
 *  跨浏览器的兼容性。
 *  性能。
-*  渐进式 Web 应用。
+*  渐进式Web 应用。
 *  安全性。
 *  其他。
 
@@ -55,7 +49,7 @@ ms.locfileid: "12431688"
 
 1. 选择" **问题"计数器**。  " **问题** "工具将打开，并分组为不同类别的问题。
 
-   :::image type="content" source="../media/issues-tool-categories.msft.png" alt-text="演示页上的&quot;问题&quot;工具中的问题类别。" lightbox="../media/issues-tool-categories.msft.png":::
+   ![演示页上的"问题"工具中的问题类别](media/categories.png)
 
 
 ### <a name="other-ways-to-open-the-issues-tool"></a>打开问题工具的其他方法
@@ -70,11 +64,7 @@ ms.locfileid: "12431688"
 
 在每个问题类别中，首先列出错误，然后列出警告，然后列出提示。
 
-:::image type="content" source="../media/issues-ordered-by-severity.msft.png" alt-text="&quot;问题&quot;工具显示按严重性排序的性能问题。" lightbox="../media/issues-ordered-by-severity.msft.png":::
-
-### <a name="include-third-party-issues"></a>包括第三方问题
-
-若要包含由第三方网站导致的问题，请在"问题"工具顶部，选中****"包括第三方问题 **"** 复选框。
+!["问题"工具显示按严重性排序的性能问题](media/ordered-by-severity.png)
 
 
 <!-- ====================================================================== -->
@@ -88,7 +78,7 @@ ms.locfileid: "12431688"
 
 1. 选择问题，以展开问题。
 
-   :::image type="content" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text="问题工具，显示有关如何修复该问题的其他信息。" lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
+   ![问题工具，显示如何修复该问题的其他信息](media/initial-view-accessibility-page.png)
 
 每个显示的问题都具有以下组件：
 
@@ -112,11 +102,11 @@ ms.locfileid: "12431688"
 
 1. 在 **"受影响的资源** > **打开"中**，选择工具名称。  受影响的资源显示在所选工具中：
 
-   :::image type="content" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="选择一个工具，从&quot;问题&quot;工具中打开受影响的资源。" lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
+   ![选择一个工具，从"问题"工具中打开受影响的资源](media/affected-resource-opens-elements-tool.png)
 
     展开的问题可能有"网络 **"** 链接，以在"网络"工具中 **显示受影响的** 资源：
 
-   :::image type="content" source="../media/issues-tab-view-issue.msft.png" alt-text="选择网络资源链接时，将打开&quot;网络&quot;工具。" lightbox="../media/issues-tab-view-issue.msft.png":::
+   ![选择网络资源链接时，将打开"网络"工具](media/view-issue-in-network.png)
 
 
 <!-- ====================================================================== -->
@@ -128,19 +118,62 @@ ms.locfileid: "12431688"
 
 1. 打开 [新窗口或选项卡中的](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 辅助功能测试演示网页。
 
-1. 右键单击网页中的任意位置，然后选择"检查 **"**。  或者，按 `F12`。  将在网页旁边打开 DevTools。
+1. 右键单击网页中的任意位置，然后选择"检查 **"**。  或者按 `F12`。  将在网页旁边打开 DevTools。
 
 1. 在 DevTools 中，选择" **元素"** 选项卡。
 
-1. 在 DOM 树中，展开 `<body>` >  > `<header>``<form>`。  请注意，元素 `<input>` 具有波浪下划线。
+1. 在 DOM 树中，展开 `<body>``<article id="cats">` >  > `<section>` > `<main>`。  请注意，元素 `<img>` 具有波浪下划线。
 
-   :::image type="content" source="../media/issues-wavy-underlines-dom-tree.msft.png" alt-text="&quot;元素&quot;工具中 DOM 树中带波浪下划线的问题。" lightbox="../media/issues-wavy-underlines-dom-tree.msft.png":::
+   ![元素工具中 DOM 树中带波浪下划线的问题](media/wavy-underlines-dom-tree.png)
 
-1. 将鼠标悬停在 元素 `<input>` 上。  工具提示显示有关该问题的信息。
+1. 将鼠标悬停在 元素 `<img>` 上。  工具提示显示有关该问题的信息。
 
 1. 打开带波浪下划线的元素上的上下文菜单，然后选择" **查看问题"**。  " **问题** "工具将打开并显示与该元素关联的问题。
 
-   :::image type="content" source="../media/issues-opened-from-dom-tree-wavy-underline.msft.png" alt-text="有关 DOM 树中带波浪线下划线的元素的问题的详细信息。" lightbox="../media/issues-opened-from-dom-tree-wavy-underline.msft.png":::
+   ![有关 DOM 树中带波浪线下划线的元素的问题的详细信息](media/opened-from-dom-tree-wavy-underline.png)
+
+
+<!-- ====================================================================== -->
+## <a name="filter-issues"></a>筛选问题
+
+若要减少问题工具中显示的 **问题数，** 可以按严重性、浏览器和来源筛选列表。
+
+### <a name="filter-by-severity"></a>按严重性筛选
+
+默认情况下，只显示错误和警告。 若要显示与其他严重性级别有关的问题：
+
+* 单击 **"默认级别"**。
+* 选择任意数量的严重性级别：**使用技巧**、**信息**、**警告、****错误**。
+* 选择 **"默认** "以恢复为仅警告和错误。
+
+![Screenshot of the Issues panel with the Severity drop-down expanding， showing the different levels that can be selected](media/severity-filter.png)
+
+### <a name="filter-by-browser"></a>按浏览器筛选
+
+还可以 **按浏览器筛选** 属于"兼容性"类别的问题。 默认情况下，将测试以下浏览器：
+
+* Edge
+* Chrome
+* Firefox
+* Safari
+* Safari iOS
+* Chrome for Android
+* 适用于 Android 的 Firefox
+
+若要更改已针对兼容性问题进行测试的浏览器列表，请执行以下操作：
+
+* 单击 **"热门浏览器"**。
+* 选择任何浏览器类别集：**顶部浏览器**、**桌面浏览器****、移动浏览器**。
+* 或者从列表中选择任意数目的单个浏览器。
+* 单击 **"重新生成问题** "以基于所选浏览器更新兼容性问题。
+
+![Screenshot of the Issues panel with the Browser drop-down expanding， showing the different browsers that can be selected](media/browser-filter.png)
+
+### <a name="filter-by-origin"></a>按源筛选
+
+默认情况下， **"问题** "工具仅列出与当前网页代码相关的问题。 若要包含由网页加载的第三方库或框架导致的问题，请选中"包括第 **三方问题"** 复选框。
+
+![具有"包括第三方问题"复选框的"问题"面板的屏幕截图](media/third-party-checkbox.png)
 
 
 <!-- ====================================================================== -->
