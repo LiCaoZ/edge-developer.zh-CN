@@ -1,31 +1,28 @@
 ---
-title: 'Microsoft Edge Beta 版加载项 API () '
-description: 加载项 API 参考，适用于 REST 终结点，用于自动发布提交到加载项网站的加载项Microsoft Edge更新。
+title: Microsoft Edge加载项 API 参考
+description: 加载项 API 参考，用于 REST 终结点自动将更新发布到提交到 Microsoft Edge 加载项网站的加载项。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/17/2022
-ms.openlocfilehash: b6bd6e8d308ef058cfee717b8877b623362bda02
-ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
+ms.openlocfilehash: c023a26f4657eb2064f27f638cfb50345e0bbcfa
+ms.sourcegitcommit: dca640f34032dcedbd89215056526be0a3b52c96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "12459698"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "12470648"
 ---
-# <a name="microsoft-edge-add-ons-api-reference-beta"></a>Microsoft Edge Beta 版加载项 API () 
+# <a name="microsoft-edge-add-ons-api-reference"></a>Microsoft Edge加载项 API 参考
 
-> [!NOTE]
-> Microsoft Edge加载项 API 目前处于 beta 版本。  加载项MICROSOFT EDGE API 正在积极开发中，路线图根据市场变化和客户反馈不断发展。  此处列出的计划并不详尽，可能会发生变化。
+这是Microsoft Edge加载项 API 的 REST 终结点引用。  此 API 自动将更新发布到已提交到 Microsoft Edge 加载项网站的加载项。
 
-这是加载项 API 的 REST Microsoft Edge引用。  此 API 可自动发布已提交到加载项网站的Microsoft Edge更新。
-
-有关概述，请参阅[使用 Microsoft Edge 加载项 API (Beta) ](using-addons-api.md)。
+有关概述，请参阅[使用Microsoft Edge加载项 API](using-addons-api.md)。
 
 <!-- ====================================================================== -->
 ## <a name="upload-a-package-to-update-an-existing-submission"></a>Upload程序包以更新现有提交
 
-上载程序包以更新加载项产品的现有草稿提交。
+上传包以更新加载项产品的现有草稿提交。
 
 ### <a name="request"></a>请求
 
@@ -35,9 +32,9 @@ ms.locfileid: "12459698"
 
 #### <a name="uri-parameters"></a>URI 参数
 
-| URI 参数 | 说明 |
+| URI 参数 | 描述 |
 |---|---|
-| `productID` | 必需。  必须将程序包上载到的产品的产品 ID。 |
+| `productID` | 必需。  必须将包上传到的产品的产品 ID。 |
 
 #### <a name="request-headers"></a>请求标头
 
@@ -51,7 +48,7 @@ ms.locfileid: "12459698"
 
 ### <a name="response"></a>响应
 
-#### <a name="response-headers"></a>响应头
+#### <a name="response-headers"></a>响应标头
 
 *  地点： `{operationID}`
 
@@ -61,19 +58,19 @@ ms.locfileid: "12459698"
 
 | HTTP 状态代码 | 说明 |
 |---|---|
-| 202 | 请求已接受处理，但处理未完成。 |
+| 202 | 请求被接受进行处理，但处理尚未完成。 |
 | 4XX | 请参阅 [错误代码](#error-codes)。 |
 | 5XX | 请参阅 [错误代码](#error-codes)。 |
 
 ### <a name="see-also"></a>另请参阅
 
-*  简介 [：上载程序包以更新现有提交](using-addons-api.md#uploading-a-package-to-update-an-existing-submission)
+*  简介： [上传包以更新现有提交](using-addons-api.md#uploading-a-package-to-update-an-existing-submission)
 
 
 <!-- ====================================================================== -->
-## <a name="check-the-status-of-a-package-upload"></a>检查程序包上载的状态
+## <a name="check-the-status-of-a-package-upload"></a>检查包上传的状态
 
-获取程序包上载的状态。
+获取包上传的状态。
 
 ### <a name="request"></a>请求
 
@@ -83,9 +80,9 @@ ms.locfileid: "12459698"
 
 #### <a name="uri-parameters"></a>URI 参数
 
-| URI 参数 | 说明 |
+| URI 参数 | 描述 |
 |---|---|
-| `operationID` | 必需。  上一步中提交的上传请求的操作 ID。  此信息在响应标头中提供。
+| `operationID` | 必需。  上一步中提交的上传请求的操作 ID。  响应标头中提供了此信息。
 
 #### <a name="request-headers"></a>请求标头
 
@@ -99,7 +96,7 @@ ms.locfileid: "12459698"
 
 对于不同的方案，有几个响应。
 
-#### <a name="response-when-the-operation-is-still-in-progress"></a>操作正在进行时的响应
+#### <a name="response-when-the-operation-is-still-in-progress"></a>操作仍在进行时响应
 
 ```json
 {
@@ -127,7 +124,7 @@ ms.locfileid: "12459698"
 }
 ```
 
-#### <a name="response-when-the-operation-fails-with-errors"></a>操作失败但出现错误时的响应
+#### <a name="response-when-the-operation-fails-with-errors"></a>操作失败并出现错误时的响应
 
 ```json
  {
@@ -141,7 +138,7 @@ ms.locfileid: "12459698"
 }
 ```
 
-#### <a name="response-headers"></a>响应头
+#### <a name="response-headers"></a>响应标头
 
 无。
 
@@ -157,13 +154,13 @@ ms.locfileid: "12459698"
 
 ### <a name="see-also"></a>另请参阅
 
-*  简介 [：检查程序包上载的状态](using-addons-api.md#checking-the-status-of-a-package-upload)
+*  简介： [检查包上传的状态](using-addons-api.md#checking-the-status-of-a-package-upload)
 
 
 <!-- ====================================================================== -->
 ## <a name="publish-the-product-draft-submission"></a>发布产品草稿提交
 
-将产品的当前草稿发布到Microsoft Edge加载项。
+将产品当前草稿发布到Microsoft Edge加载项。
 
 ### <a name="request"></a>请求
 
@@ -174,7 +171,7 @@ ms.locfileid: "12459698"
 #### <a name="uri-parameters"></a>URI 参数
 
 
-| URI 参数 | 说明 |
+| URI 参数 | 描述 |
 |---|---|
 | `productID` | 必需。  必须发布其草稿的产品的产品 ID。 |
 
@@ -188,7 +185,7 @@ ms.locfileid: "12459698"
 
 ### <a name="response"></a>响应
 
-#### <a name="response-headers"></a>响应头
+#### <a name="response-headers"></a>响应标头
 
 * 地点： `{operationID}`
 
@@ -198,13 +195,13 @@ ms.locfileid: "12459698"
 
 | HTTP 状态代码 | 说明 |
 |---|---|
-| 202 | 请求已接受处理，但处理未完成。 |
+| 202 | 请求被接受进行处理，但处理尚未完成。 |
 | 4XX | 请参阅 [错误代码](#error-codes)。 |
 | 5XX | 请参阅 [错误代码](#error-codes)。 |
 
 ### <a name="see-also"></a>另请参阅
 
-*  简介 [：发布提交](using-addons-api.md#publishing-the-submission)
+*  简介： [发布提交](using-addons-api.md#publishing-the-submission)
 
 
 <!-- ====================================================================== -->
@@ -232,9 +229,9 @@ ms.locfileid: "12459698"
 
 ### <a name="response"></a>响应
 
-可以在 `GET` 以下方案中调用操作状态 API。  在所有有效的方案中，将 `200 OK` 返回 ，并返回不同的状态消息。
+`GET`可在以下方案中调用操作状态 API。  在所有有效方案中， `200 OK` 返回状态消息不同。
 
-#### <a name="response-when-a-new-product-is-published"></a>新产品发布时的响应
+#### <a name="response-when-a-new-product-is-published"></a>发布新产品时的响应
 
 ```json
 {
@@ -248,7 +245,7 @@ ms.locfileid: "12459698"
 }
 ```
 
-#### <a name="response-when-there-is-nothing-new-to-be-published"></a>没有要发布的新增功能时的响应
+#### <a name="response-when-there-is-nothing-new-to-be-published"></a>没有新内容可发布时响应
 
 ```json
 {
@@ -262,7 +259,7 @@ ms.locfileid: "12459698"
 }
 ```
 
-#### <a name="response-when-there-is-an-in-review-submission-for-the-same-product"></a>当同一产品有评价中提交时的响应
+#### <a name="response-when-there-is-an-in-review-submission-for-the-same-product"></a>同一产品的审阅中提交时响应
 
 ```json
 {
@@ -276,7 +273,7 @@ ms.locfileid: "12459698"
 }
 ```
 
-#### <a name="response-when-there-is-an-ongoing-unpublished-submission-for-the-same-product"></a>同一产品正在进行的未发布提交时的响应
+#### <a name="response-when-there-is-an-ongoing-unpublished-submission-for-the-same-product"></a>对同一产品进行持续未发布的提交时进行响应
 
 ```json
 {
@@ -336,7 +333,7 @@ ms.locfileid: "12459698"
 }
 ```
 
-#### <a name="response-when-the-publish-call-fails-with-an-irrecoverable-failure"></a>发布调用失败且无法恢复失败时的响应
+#### <a name="response-when-the-publish-call-fails-with-an-irrecoverable-failure"></a>发布调用失败并出现不可恢复故障时的响应
 
 ```json
 {
@@ -350,7 +347,7 @@ ms.locfileid: "12459698"
 }
 ```
 
-#### <a name="response-when-the-publish-call-fails-with-an-unexpected-failure"></a>发布调用失败但意外失败时的响应
+#### <a name="response-when-the-publish-call-fails-with-an-unexpected-failure"></a>发布调用失败并出现意外故障时的响应
 
 ```json
 {
@@ -359,7 +356,7 @@ ms.locfileid: "12459698"
 }
 ```
 
-#### <a name="response-headers"></a>响应头
+#### <a name="response-headers"></a>响应标头
 
 无。
 
@@ -375,7 +372,7 @@ ms.locfileid: "12459698"
 
 ### <a name="see-also"></a>另请参阅
 
-*  简介 [：检查发布状态](using-addons-api.md#checking-the-publishing-status)
+*  简介： [检查发布状态](using-addons-api.md#checking-the-publishing-status)
 
 
 <!-- ====================================================================== -->
@@ -387,11 +384,11 @@ ms.locfileid: "12459698"
 
 | 消息 | 描述 | 示例方案 |
 |---|---|---|
-| 400 错误的请求 | 服务器无法理解该请求。 | 正文中没有 (zip) 包。  或者， `Content-Type` 标头缺失或其值不正确。 |
-| 401 未经授权 | 请求页面需要授权。 | 身份验证令牌缺失、过期或无效。 |
-| 404 未找到 | 服务器找不到请求的页面。 | 指定的 `productID` 或 `operationID` 没有有效 GUID、无效或不属于正在提出请求的开发人员。 |
-| 408 请求超时 | 请求所等待的时间比服务器准备等待的时间长。 | 上传程序包时存在超时。 |
-| 429 请求过多 | 用户发送的请求过多。 | 发送的请求过多且受到限制。 |
+| 400 错误的请求 | 服务器不了解请求。 | 正文中没有 (zip 文件) 包。  或者， `Content-Type` 标头缺失或其值不正确。 |
+| 401 未经授权 | 请求页需要授权。 | 身份验证令牌缺失、过期或无效。 |
+| 404 未找到 | 服务器找不到请求的页面。 | 指定 `productID` 或 `operationID` 没有有效的 GUID、无效或不属于发出请求的开发人员。 |
+| 408 请求超时 | 请求花费的时间比服务器准备等待的时间长。 | 上传包时超时。 |
+| 429 请求过多 | 用户发送的请求太多。 | 发送的请求太多，并且受到限制。 |
 
 ### <a name="5xx-server-error"></a>5xx：服务器错误
 
@@ -403,4 +400,4 @@ ms.locfileid: "12459698"
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-*  [使用 Microsoft Edge 加载项 API (Beta) ](using-addons-api.md)
+*  [使用Microsoft Edge加载项 API](using-addons-api.md)
