@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 01/20/2022
-ms.openlocfilehash: fbdf6008c68109ab1e9006f7705db4e399d0082f
-ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
+ms.openlocfilehash: 06180cdca319f688765f886dadc8c9a128df1043
+ms.sourcegitcommit: c264a31a0809cacec22a42214f7949bba85e6b51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "12459677"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "12472931"
 ---
 # <a name="use-webdriver-to-automate-microsoft-edge"></a>使用 WebDriver 自动执行 Microsoft Edge
 
@@ -41,9 +41,10 @@ WebDriver 允许你通过模拟用户交互来自动执行 Microsoft Edge。  �
 | 技术 | 角色 |
 |---|---|
 | WebDriver | 平台和非特定语言网络协议的 W3C 标准。  此协议允许进程外程序远程指示 Web 浏览器的行为。 |
-| Microsoft Edge WebDriver | Microsoft 专门用于 Microsoft Edge 的 WebDriver 协议的实现。  测试作者编写使用 WebDriver 命令的测试，Microsoft Edge WebDriver 接收的命令。  然后，Edge WebDriver 负责将该命令与浏览器通信。 |
-| WebDriver 测试框架 | 测试作者使用测试框架编写端到端测试并自动执行浏览器。  提供特定语言的接口，该接口将代码转换为发送到 Edge WebDriver 的命令。  WebDriver 测试框架适用于所有主要平台和语言。  其中一个框架是 Selenium。 |
+| Microsoft Edge WebDriver | Microsoft 专门用于 Microsoft Edge 的 WebDriver 协议的实现。  测试作者编写使用 WebDriver 命令Microsoft Edge WebDriver 接收的测试。  然后，Edge WebDriver 负责将该命令传达给浏览器。 |
+| WebDriver 测试框架 | 测试作者使用测试框架编写端到端测试并自动执行浏览器。  提供特定于语言的接口，将代码转换为发送到 Edge WebDriver 的命令。  WebDriver 测试框架适用于所有主要平台和语言。  其中一个框架是 Selenium。 |
 | Internet Explorer 驱动程序 | 专门用于 Internet Explorer 的 WebDriver 协议的开源实现。  若要针对 Internet Explorer 模式运行旧的端到端测试，建议使用 Internet Explorer 驱动程序。 |
+| Microsoft WebDriver | 上一个特定于浏览器的 Microsoft Edge (EdgeHTML) 驱动程序，也称为Microsoft Edge 旧版。  请参阅 [WebDriver (EdgeHTML) ](/archive/microsoft-edge/legacy/developer/webdriver/)。 |
 
 以下部分介绍如何开始使用 WebDriver for Microsoft Edge。
 
@@ -51,17 +52,17 @@ WebDriver 允许你通过模拟用户交互来自动执行 Microsoft Edge。  �
 <!-- ====================================================================== -->
 ## <a name="download-microsoft-edge-webdriver"></a>下载 Microsoft Edge WebDriver
 
-若要开始编写自动测试，请确保安装的边缘 WebDriver 版本与浏览器版本匹配，如下所示：
+若要开始编写自动测试，请确保安装的 Edge WebDriver 版本与浏览器版本匹配，如下所示：
 
 1.  转到 `edge://settings/help` 并记下你的 Microsoft Edge 版本。
 
     :::image type="content" source="./media/microsoft-edge-version.msft.png" alt-text="2021 年 4 月 15 日 Microsoft Edge 的内部版本号。" lightbox="./media/microsoft-edge-version.msft.png":::
 
-1.  转到 Microsoft Edge [WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver)。
+1.  转到 [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver)。
 
 1.  在**获取页面的最新版本**部分，在频道中选择与 Microsoft Edge 版本号匹配的平台。
 
-    :::image type="content" source="./media/microsoft-edge-driver-install.msft.png" alt-text="WebDriver 网页的&quot;获取Microsoft Edge部分。" lightbox="./media/microsoft-edge-driver-install.msft.png":::
+    :::image type="content" source="./media/microsoft-edge-driver-install.msft.png" alt-text="Microsoft Edge WebDriver 网页的&quot;获取最新版本&quot;部分。" lightbox="./media/microsoft-edge-driver-install.msft.png":::
 
 1.  下载完成后，将 `msedgedriver` 可执行文件提取到首选位置。 将可执行文件所在的文件夹添加到你的 `PATH` 环境变量。
 
@@ -69,7 +70,7 @@ WebDriver 允许你通过模拟用户交互来自动执行 Microsoft Edge。  �
 <!-- ====================================================================== -->
 ## <a name="choose-a-webdriver-testing-framework"></a>选择 WebDriver 测试框架
 
-下载 Edge WebDriver 后，必须下载的最后一个组件是 WebDriver 测试框架。  测试作者使用 WebDriver 测试框架编写端到端测试并自动执行浏览器。  WebDriver 测试框架提供特定语言的接口，该接口将代码转换为 Edge WebDriver 在 Microsoft Edge 中运行的命令。  WebDriver 测试框架适用于所有主要平台和语言，例如 Python、Java、C#、Ruby、JavaScript。
+下载 Edge WebDriver 后，必须下载的最后一个组件是 WebDriver 测试框架。  测试作者使用 WebDriver 测试框架编写端到端测试并自动执行浏览器。  WebDriver 测试框架提供特定于语言的接口，用于将代码转换为 Edge WebDriver 在 Microsoft Edge 中运行的命令。  WebDriver 测试框架适用于所有主要平台和语言，例如 Python、Java、C#、Ruby、JavaScript。
 
 本文提供了有关使用 Selenium 框架的说明，但你可以使用任何支持 WebDriver 的库、框架、编程语言。  若要使用除 Selenium 以外的 WebDriver 测试框架完成相同的任务，请参阅官方文档了解所选框架。
 
@@ -220,11 +221,11 @@ const { Builder, By } = require('selenium-webdriver');
 
 ### <a name="manage-and-configure-the-edge-webdriver-service"></a>管理和配置 Edge WebDriver 服务
 
-当你创建新对象以`EdgeDriver`启动Microsoft Edge会话时，Selenium 将启动该对象通信的新边缘 WebDriver `EdgeDriver` 进程。  调用对象的方法时， `EdgeDriver` 将关闭 Edge `Quit` WebDriver 进程。  如果有多个测试，让每个 `EdgeDriver` 对象管理自己的驱动程序进程可能效率低下，因为每个测试都必须等待新的驱动程序进程启动。  相反，您可以创建单个边缘 WebDriver 进程，然后重复使用它进行多个测试。
+创建新`EdgeDriver`对象以启动Microsoft Edge会话时，Selenium 会启动该对象与之通信的新 Edge WebDriver 进程`EdgeDriver`。  调用对象`Quit`的方法时，`EdgeDriver`Edge WebDriver 进程将关闭。  如果有多个测试，让每个 `EdgeDriver` 对象管理自己的驱动程序进程可能效率低下，因为每个测试都必须等待新的驱动程序进程启动。  相反，可以创建单个 Edge WebDriver 进程，然后将其重复用于多个测试。
 
-Selenium 使用 `EdgeDriverService` 类管理 Edge WebDriver 进程。  可以在运行测试之前创建 `EdgeDriverService` 一次， 然后，在创建新的 `EdgeDriver` 对象时，将此 `EdgeDriverService` 对象传递给 `EdgeDriver` 构造函数。  将 `EdgeDriverService` 传递到 `EdgeDriver` 构造函数时，`EdgeDriver` 对象将使用此 `EdgeDriverService`，而不是创建新类。
+Selenium 使用该 `EdgeDriverService` 类来管理 Edge WebDriver 进程。  可以在运行测试之前创建 `EdgeDriverService` 一次， 然后，在创建新的 `EdgeDriver` 对象时，将此 `EdgeDriverService` 对象传递给 `EdgeDriver` 构造函数。  将 `EdgeDriverService` 传递到 `EdgeDriver` 构造函数时，`EdgeDriver` 对象将使用此 `EdgeDriverService`，而不是创建新类。
 
-您还可以使用 为 `EdgeDriverService` 边缘 WebDriver 进程配置命令行选项，如下所示。
+还可以使用 `EdgeDriverService` 它来配置 Edge WebDriver 进程的命令行选项，如下所示。
 
 以下代码片段会创建新的 `EdgeDriverService` 并启用详细日志输出：
 
@@ -374,7 +375,7 @@ let driver = edge.Driver.createSession(options);
 
 ### <a name="docker"></a>Docker
 
-如果使用 [Docker，](https://hub.docker.com)请运行以下命令以下载预配置Microsoft Edge和 [Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver) 预安装的图像。
+如果使用 [Docker](https://hub.docker.com)，请运行以下命令下载预配置的图像，该映像已预安装Microsoft Edge和 [Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver)。
 
 ```console
 docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
@@ -386,11 +387,11 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 <!-- ====================================================================== -->
 ## <a name="application-guard"></a>应用程序防护
 
-可使用边缘 WebDriver 自动Microsoft Defender 应用程序防护 WebDriver 的受信任网站。  简而言之，Microsoft Defender 应用程序防护也称为_应用程序防护_。
+使用Microsoft Defender 应用程序防护的受信任站点可以使用 Edge WebDriver 自动化。  简而言之，Microsoft Defender 应用程序防护也称为_应用程序防护_。
 
-使用应用程序防护的不受信任的站点无法使用 Edge WebDriver 自动操作。  应用程序防护在容器中启动不受信任的站点，此容器不会公开边缘 WebDriver 与站点通信所需的远程调试端口。
+使用 Application Guard 的不受信任的站点不能使用 Edge WebDriver 进行自动化或操作。  Application Guard 在容器中启动不受信任的站点，并且此容器不会公开 Edge WebDriver 与站点通信所需的远程调试端口。
 
-你的企业管理员定义什么是受信任的站点，包括云资源和内部网络。  不在受信任站点列表中的网站被视为_不受信任_。  Edge WebDriver 可以自动执行 InPrivate 窗口和受信任站点列表中的网站。
+你的企业管理员定义什么是受信任的站点，包括云资源和内部网络。  不在受信任站点列表中的网站被视为_不受信任_。  Edge WebDriver 可以自动执行 InPrivate 窗口和受信任网站列表中的站点。
 
 有关应用程序防护的详细信息，请参阅：
 
@@ -401,7 +402,7 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 <!-- ====================================================================== -->
 ## <a name="opt-out-of-diagnostic-data-collection"></a>选择退出诊断数据收集
 
-默认情况下，Edge WebDriver 将诊断数据（如"新建会话 [WebDriver](https://www.w3.org/TR/webdriver2/#new-session) "命令的状态）发送给 Microsoft。  若要关闭 Edge WebDriver 的诊断数据收集，将 `MSEDGEDRIVER_TELEMETRY_OPTOUT` 环境变量设置为 `1`。  有关 Edge WebDriver 收集的数据详细信息，请参阅隐私Microsoft Edge[白皮书](/microsoft-edge/privacy-whitepaper#microsoft-edge-webdriver)。
+默认情况下，Edge WebDriver 会将诊断数据（例如 ["新建会话 WebDriver"命令](https://www.w3.org/TR/webdriver2/#new-session) 的状态）发送到 Microsoft。  若要关闭 Edge WebDriver 的诊断数据收集，请将 `MSEDGEDRIVER_TELEMETRY_OPTOUT` 环境变量设置为 `1`。  有关 Edge WebDriver 收集的数据的详细信息，请参阅[Microsoft Edge隐私白皮书](/microsoft-edge/privacy-whitepaper#microsoft-edge-webdriver)。
 
 
 <!-- ====================================================================== -->
@@ -411,7 +412,7 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 
 ### <a name="developer-tools-availability-policy"></a>开发人员工具可用性策略
 
-如果你的 IT 管理员将 [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) `2`策略设置为 ，则阻止 [Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver) Microsoft Edge，因为驱动程序使用 Microsoft Edge [DevTools](../devtools-guide-chromium/overview.md)。  若要自动执行 Microsoft Edge，请确保将 [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) 策略设置为 `0` 或 `1`。
+如果 IT 管理员已将 [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) 策略设置为`2`"[Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver)"，则会阻止其Microsoft Edge，因为驱动程序使用 [Microsoft Edge DevTools](../devtools-guide-chromium/overview.md)。  若要自动执行 Microsoft Edge，请确保将 [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) 策略设置为 `0` 或 `1`。
 
 ### <a name="upgrading-from-selenium-3-to-selenium-4"></a>从 Selenium 3 升级到 Selenium 4
 
