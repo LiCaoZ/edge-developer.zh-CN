@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/08/2022
-ms.openlocfilehash: 554b982e4e4fad98454665e787522f0f26c76ab0
-ms.sourcegitcommit: 4925b0353233fa5388eb5b080f469b7a61886410
+ms.openlocfilehash: 680c51a872c539f4f2a40104b7c3341b5cd5a34a
+ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "12473329"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "12473911"
 ---
 # <a name="get-started-with-webview2-in-winforms-apps"></a>WinForms 应用中的 WebView2 入门
 
@@ -179,11 +179,11 @@ Microsoft Visual Studio是必需的。  本教程不支持Microsoft Visual Studi
 
 1. 关闭 **Form1** 窗口。
 
-你已将 WebView2 SDK 添加到项目，但尚未向项目添加任何 WebView 代码。
+你已将 WebView2 SDK 添加到项目，但尚未向项目添加任何 WebView2 代码。
 
 
 <!-- ====================================================================== -->
-## <a name="step-7---create-a-single-webview"></a>步骤 7 - 创建单个 WebView
+## <a name="step-7---create-a-single-webview2-control"></a>步骤 7 - 创建单个 WebView2 控件
 
 为 WinForms 项目安装 WebView2 SDK 后，请将 WebView2 控件添加到应用，如下所示：
 
@@ -205,7 +205,7 @@ Microsoft Visual Studio是必需的。  本教程不支持Microsoft Visual Studi
 
 1. 选择 **ViewToolbox****** > 。
 
-   下面是将特定于 WebView 的内容添加到应用的位置：
+   下面是将特定于 WebView2 的内容添加到应用的位置：
 
 1. 在**工具箱**中，单击 **WebView2 Windows 窗体控件**以展开选项。
 

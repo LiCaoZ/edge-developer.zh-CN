@@ -1,93 +1,93 @@
 ---
 title: 从本机代码调用 Web 端代码
-description: 了解如何在 WebView2 应用中的复杂方案中使用 JavaScript。
+description: 了解如何在 WebView2 应用的复杂方案中使用 JavaScript。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 4/1/2022
-ms.openlocfilehash: 06d974222db7e92dac2c9f5d4238a6f2e03b6950
-ms.sourcegitcommit: 23dea7be6af8cdbd7dd42f649b26e784223356ad
+ms.openlocfilehash: 0cd5a7a8199c0f0ad35dc931d566deaa65c01c70
+ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "12468288"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "12473817"
 ---
 # <a name="call-web-side-code-from-native-side-code"></a>从本机代码调用 Web 端代码
 <!-- old title: Use JavaScript in WebView for extended scenarios -->
 
-使用 WebView2 控件中的 JavaScript，可以自定义本机应用以满足你的要求。 本文探讨如何在 WebView2 中使用 JavaScript，并回顾如何使用高级 WebView2 特性和功能进行开发。
+使用 WebView2 控件中的 JavaScript 可以自定义本机应用以满足你的要求。 本文介绍如何在 WebView2 中使用 JavaScript，并探讨如何使用高级 WebView2 功能和函数进行开发。
 
 
 <!-- ====================================================================== -->
 ## <a name="before-you-begin"></a>在开始之前
 
-本文假定您已有一个工作项目。 如果你没有项目，并且想要继续，请参阅使用 [WebView2 开始网站](../get-started/get-started.md)。
+本文假定你已有一个工作项目。 如果没有项目，并且想要跟进，请参阅 [WebView2 的开始](../get-started/get-started.md)。
 
 
 <!-- ====================================================================== -->
 ## <a name="basic-webview2-functions"></a>基本 WebView2 函数
 
-使用以下函数开始在 WebView 应用中嵌入 JavaScript。
+使用以下函数开始在 WebView2 应用中嵌入 JavaScript。
 
-| API | 说明 |
+| API | 描述 |
 | --- | --- |
-| [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | 在 WebView 控件中运行 JavaScript。 在页面文档对象模型或 [DOM (加载](/dotnet/api/microsoft.web.webview2.core.corewebview2.domcontentloaded)) 或导航完成之后，调用 [此方法](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigationcompleted)。 请参阅[开始 WebView2。](../get-started/get-started.md) |
-| [AddScriptToExecuteOnDocumentCreatedAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2.addscripttoexecuteondocumentcreatedasync) | 创建 DOM 时，在页面上运行。 初始化 CoreWebView2 后调用此方法。 |
+| [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | 在 WebView2 控件中运行 JavaScript。 加载内容或[导航完成](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigationcompleted)后[，在页面文档对象模型 (DOM) ](/dotnet/api/microsoft.web.webview2.core.corewebview2.domcontentloaded)调用此方法。 请参阅 [WebView2 的开始](../get-started/get-started.md)。 |
+| [AddScriptToExecuteOnDocumentCreatedAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2.addscripttoexecuteondocumentcreatedasync) | 创建 DOM 时，在每个页面上运行。 初始化 CoreWebView2 后调用此方法。 |
 
 
 <!-- ====================================================================== -->
-## <a name="scenario-executescript-json-encoded-results"></a>应用场景：ExecuteScript JSON 编码的结果
+## <a name="scenario-executescript-json-encoded-results"></a>方案：ExecuteScript JSON 编码的结果
 
-由于 的结果 `ExecuteScriptAsync` 为 JSON 编码，因此，如果 JavaScript 的求值结果是字符串，您将收到 JSON 编码的字符串，而不是字符串的值。
+由于结果 `ExecuteScriptAsync` 是 JSON 编码的，因此，如果计算 JavaScript 的结果是字符串，则会收到 JSON 编码的字符串，而不是字符串的值。
 
-例如，以下代码执行生成字符串的脚本。  生成的字符串包括开头的引号、结尾的引号和转义斜杠：
+例如，以下代码执行导致字符串的脚本。  生成的字符串包括开头的引号、末尾的引号和转义斜杠：
 
 ```csharp
 string result = await coreWebView2.ExecuteScriptAsync(@"'example'");
 Debug.Assert(result == "\"example\"");
 ```
 
-该脚本返回一个字符串， `ExecuteScript` 该字符串由 JSON 编码。  如果从 `JSON.stringify` 脚本调用 ，则结果将双双编码为 JSON 字符串，其值为 JSON 字符串。
+该脚本返回 JSON 编码的字符串 `ExecuteScript` 。  如果从脚本调用 `JSON.stringify` ，则结果将作为 JSON 字符串进行双重编码，其值为 JSON 字符串。
 
-只有直接位于结果中的属性包含在 JSON 编码的对象中;继承的属性不包括在 JSON 编码的对象中。  大多数 DOM 对象继承所有属性，因此需要将其值显式复制到另一个对象中以返回。  例如：
+只有直接在结果中的属性包含在 JSON 编码的对象中;继承的属性不包括在 JSON 编码的对象中。  大多数 DOM 对象继承所有属性，因此需要将它们的值显式复制到另一个对象中才能返回。  例如：
 
 脚本              | 结果
 ---                 | ---
 `performance.memory`  | `{}`
 `(() => { const {totalJSHeapSize, usedJSHeapSize} = performance.memory; return {totalJSHeapSize, usedJSHeapSize}; })();` |  `{"totalJSHeapSize":4434368,"usedJSHeapSize":2832912}`
 
-当我们返回时 `performance.memory` ，在结果中看不到其任何属性，因为所有属性都是继承的。  如果相反，我们会将特定属性值从 `performance.memory` 复制到自己的新对象中以返回，那么我们将在结果中看到这些属性。
+当我们返回时， `performance.memory` 由于所有属性都是继承的，因此在结果中看不到其任何属性。  如果改为将特定属性值从 `performance.memory` 复制到自己的新对象中返回，则会在结果中看到这些属性。
 
-通过该脚本执行 `ExecuteScriptAsync` 脚本时，在全局上下文中运行。  让脚本使用匿名函数，这样你定义的任何变量就不会使全局上下文化。
+通过 `ExecuteScriptAsync` 该脚本执行脚本时，会在全局上下文中运行。  将脚本置于匿名函数中有助于使定义的任何变量不会污染全局上下文。
 
 例如：
 
-*  如果多次运行 `const example = 10;` 脚本， `example` 则后续运行该脚本时将引发异常，因为是在首次运行脚本时定义的。 
+*  如果多次运行脚本，则运行脚本 `const example = 10;` 的后续时间将引发异常，因为 `example` 第一次运行脚本时已定义。 
 
-*  如果您改为运行脚本， `(() => { const example = 10; })();` 则 `example` 变量将定义在匿名函数的上下文中。  这样一来，它不会使全局上下文受到任何影响，并且可以多次运行。
+*  如果改为运行脚本 `(() => { const example = 10; })();` ， `example` 则变量会在该匿名函数的上下文中定义。  这样，它不会污染全局上下文，而且可以多次运行。
 
 
 <!-- ====================================================================== -->
 ## <a name="scenario-running-a-dedicated-script-file"></a>方案：运行专用脚本文件
 
-在此部分中，你将从 WebView2 控件访问专用的 JavaScript 文件。
+在本部分中，将从 WebView2 控件访问专用 JavaScript 文件。
 
 > [!NOTE]
-> 虽然内联编写 JavaScript 对于快速 JavaScript 命令可能非常高效，但会丢失 JavaScript 颜色主题和行格式，这使得在 JavaScript 中编写大量代码Visual Studio。
+> 尽管在快速 JavaScript 命令中内联编写 JavaScript 可能很有效，但会丢失 JavaScript 颜色主题和行格式，因此很难在Visual Studio中编写大量代码。
 
-若要解决此问题，请用代码创建单独的 JavaScript 文件，然后使用 参数传递 `ExecuteScriptAsync` 对该文件的引用。
+若要解决此问题，请使用代码创建单独的 JavaScript 文件，然后使用参数传递对该文件的 `ExecuteScriptAsync` 引用。
 
-1. `.js`在项目中创建文件，并添加要运行的 JavaScript 代码。  例如，创建一个称为 的文件 `script.js`。
+1. `.js`在项目中创建文件，并添加要运行的 JavaScript 代码。  For example, create a file called `script.js`.
 
-1. 在页面完成导航 `ExecuteScriptAsync`后粘贴以下代码，将 JavaScript 文件转换为传递给 的字符串：
+1. 将 JavaScript 文件转换为传递到 `ExecuteScriptAsync`的字符串，方法是在页面导航完成后粘贴以下代码：
 
    ```csharp
    string text = System.IO.File.ReadAllText(@"C:\PATH_TO_YOUR_FILE\script.js");
    ```
 
-1. 使用 传递文本变量 `ExecuteScriptAsync`：
+1. 使用以下方法 `ExecuteScriptAsync`传递文本变量：
 
    ```csharp
    await webView.CoreWebView2.ExecuteScriptAsync(text);
@@ -97,17 +97,17 @@ Debug.Assert(result == "\"example\"");
 <!-- ====================================================================== -->
 ## <a name="scenario-removing-drag-and-drop-functionality"></a>方案：删除拖放功能
 
-在此部分中，使用 JavaScript 从 WebView2 控件中删除拖放功能。
+在本部分中，将使用 JavaScript 从 WebView2 控件中删除拖放功能。
 
-首先，了解当前的拖放功能：
+若要开始，请浏览当前的拖放功能：
 
-1. `.txt`创建文件以拖放。  例如，创建一个名为 的文件 `contoso.txt` ，并添加文本。
+1. 创建文件 `.txt` 以拖放。  例如，创建一个已命名 `contoso.txt` 的文件并向其添加文本。
 
 1. 按 **F5** 生成并运行项目。
 
-1. 将文件拖放到 `contoso.txt` WebView 控件中。  将打开一个新窗口，这是示例项目中代码的结果：
+1. 将文件拖放 `contoso.txt` 到 WebView2 控件中。  将打开一个新窗口，这是示例项目中代码的结果：
 
-   :::image type="content" source="./media/drag-text.png" alt-text="拖放操作的结果contoso.txt。" lightbox="./media/drag-text.png":::
+   :::image type="content" source="./media/drag-text.png" alt-text="拖放contoso.txt的结果。" lightbox="./media/drag-text.png":::
 
 1. 接下来，添加代码以从 WebView2 控件中删除拖放功能。  在代码中初始化 CoreWebView2 对象后粘贴以下代码：
 
@@ -123,19 +123,19 @@ Debug.Assert(result == "\"example\"");
 
 1. 按 **F5** 生成并运行项目。
 
-1. 尝试拖放到 `contoso.txt` WebView 控件。  确认无法拖放。
+1. 尝试拖放 `contoso.txt` 到 WebView2 控件中。  确认无法拖放。
 
 
 <!-- ====================================================================== -->
 ## <a name="scenario-removing-the-context-menu"></a>方案：删除上下文菜单
 
-在此部分中，从 WebView2 控件中删除右键单击菜单。
+在本部分中，将从 WebView2 控件中删除右键单击菜单。
 
-若要开始，请浏览右键单击菜单的当前功能：
+首先，浏览右键单击菜单的当前功能：
 
 1. 按 **F5** 生成并运行项目。
 
-1. 右键单击 WebView2 控件上的任意位置。  上下文菜单显示默认的右键单击菜单命令：
+1. 右键单击 WebView2 控件上的任意位置。  上下文菜单显示默认右键单击菜单命令：
 
    :::image type="content" source="./media/context-menu.png" alt-text="右键单击菜单，显示默认命令。" lightbox="./media/context-menu.png":::
 
@@ -156,4 +156,4 @@ Debug.Assert(result == "\"example\"");
 * [WebView2 入门](../get-started/get-started.md)
 * [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。
 * [WebView2 API 参考](../webview2-api-reference.md)
-* [另请参阅](../index.md#see-also) _WebView2 Microsoft Edge简介_。
+* [另请参阅](../index.md#see-also)_Microsoft Edge WebView2 简介_。

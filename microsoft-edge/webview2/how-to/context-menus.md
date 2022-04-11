@@ -1,22 +1,22 @@
 ---
 title: 自定义 WebView2 中的上下文菜单
-description: 如何向 WebView2 应用添加右键 (菜单) 菜单。  添加和删除默认 WebView2 上下文菜单中的项。  通过使用从 WebView2 控件传递到应用的数据创建自己的上下文菜单 UI。
+description: 如何向 WebView2 应用添加右键单击菜单 (上下文菜单) 。  添加和删除默认 WebView2 上下文菜单中的项。  使用从 WebView2 控件传递到应用的数据创建自己的上下文菜单 UI。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 03/10/2022
-ms.openlocfilehash: 95eb7032924f37c53e560f5d9e9df56e76b3ab4d
-ms.sourcegitcommit: 2631c3835d23d9adaa28c19198319588baf9d8c5
+ms.openlocfilehash: 7638f51a9adc255d22d743e1bfad5f7d233a93cb
+ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2022
-ms.locfileid: "12439775"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "12473803"
 ---
 # <a name="customize-context-menus-in-webview2"></a>自定义 WebView2 中的上下文菜单
 
-使用 **ContextMenuRequested** API 自定义 WebView2 (右键单击菜单) 菜单。
+使用 **ContextMenuRequested** API (WebView2 应用的右键单击菜单) 自定义上下文菜单。
 
 WebView2 控件提供默认上下文菜单。
 
@@ -25,28 +25,28 @@ WebView2 控件提供默认上下文菜单。
 
 | 术语 | 定义 |
 |---|---|
-| _菜单项_ | 一个宽泛的术语。  包括复选框、命令、单选按钮、分隔符和子菜单。 |
+| _菜单项_ | 一个广泛的术语。  包括复选框、命令、单选按钮、分隔符和子菜单。 |
 | _命令_ | 一个较窄的术语。  五种类型的菜单项之一。 |
-| _上下文菜单_ | 默认上下文菜单 (单击菜单) WebView2 控件，或自定义上下文菜单 (右键单击菜单) 属于你的主机应用。 |
+| _上下文菜单_ | 属于 WebView2 控件的默认上下文菜单 (右键单击菜单) 或自定义上下文菜单 (右键单击菜单) 属于主机应用。 |
 
 
 <!-- ====================================================================== -->
 ## <a name="adding-a-custom-context-menu"></a>添加自定义上下文菜单
 
-主机应用可以使用从 WebView2 上下文菜单发送的信息绘制自己的上下文菜单，而不是使用默认上下文菜单。  你的应用处理事件 `ContextMenuRequested` 。  可以使用 Event 参数中提供的数据 `ContextMenuRequested` 来显示包含您所选择的条目的自定义上下文菜单。  在这种情况下，你处理事件并请求延迟。
+主机应用可以使用从 WebView2 上下文菜单发送的信息来绘制自己的上下文菜单，而不是使用默认上下文菜单。  应用处理事件 `ContextMenuRequested` 。  可以使用事件参数 `ContextMenuRequested` 中提供的数据来显示包含所选条目的自定义上下文菜单。  对于这种情况，你将处理该事件并请求延迟。
 
-当用户从自定义上下文菜单中选择命令时，你的应用需要通过使用 属性告诉 WebView2 控件用户选择了哪个 `SelectedCommandId` 命令。
+当用户从自定义上下文菜单中选择命令时，应用需要使用 `SelectedCommandId` 该属性告知 WebView2 控件用户选择了哪个命令。
 
-您可以将默认菜单项和/或自定义菜单项添加到自定义上下文菜单中。
+可以将默认菜单项和/或自定义菜单项添加到自定义上下文菜单。
 
 
 # [<a name="c"></a>C#](#tab/csharp)
 
-若要显示包含所需菜单项的自定义上下文菜单，请使用 `CoreWebView2ContextMenuRequestedEventArgs` `CoreWebView2` [ContextMenuRequested 事件的 中提供的数据](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested)。  对于这种情况，你指定 `Handled` 为 `true`，并请求延迟。 
+若要显示包含所需菜单项的`CoreWebView2`自定义上下文菜单，请使用 [ContextMenuRequested 事件](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested)中`CoreWebView2ContextMenuRequestedEventArgs`提供的数据。  对于这种情况，请指定 `Handled` 为 `true`，并请求延期。 
 
-在事件 `CoreWebView2.ContextMenuRequested` 上，添加具有 的事件侦听器 `CoreWebView2ContextMenuRequestedEventArgs`。
+在事件 `CoreWebView2.ContextMenuRequested` 上，添加具有 `CoreWebView2ContextMenuRequestedEventArgs`. .
 
-的 `MenuItems` 属性 `CoreWebView2ContextMenuRequestedEventArgs` 为右键单击的上下文提供 WebView2 的上下文菜单项的树。  若要在应用的上下文菜单中`IList<CoreWebView2ContextMenuItem>``CoreWebView2ContextMenuItem`包括 WebView2 上下文菜单项，请通过 ，添加每个菜单项的 。  测试每个 `.Kind` 菜单项的 ，如 `Command` 或 `Separator`。
+为 `MenuItems` 右键单击上下 `CoreWebView2ContextMenuRequestedEventArgs` 文提供 WebView2 上下文菜单项的树的属性。  若要在应用的上下文菜单中包含 WebView2 上下文菜单项，请循环访问， `IList<CoreWebView2ContextMenuItem>`为每个菜单项添加一个 `CoreWebView2ContextMenuItem` 。  `.Kind`测试每个菜单项，例如`Command`或 `Separator`。
 
 * **[CoreWebView2 类](/dotnet/api/microsoft.web.webview2.core.corewebview2)**
    * [ContextMenuRequested 事件](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested)
@@ -85,17 +85,17 @@ WebView2 控件提供默认上下文菜单。
 
 # [<a name="c"></a>C++](#tab/cpp)
 
-若要显示包含所需菜单项的自定义上下文菜单，请使用 [ICoreWebView2ContextMenuRequestedEventArgs 中提供的数据](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)。  对于这种情况，你指定 `Handled` 为 `true`，并请求延迟。 
+若要显示包含所需菜单项的自定义上下文菜单，请使用 [ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs) 中提供的数据。  对于这种情况，请指定 `Handled` 为 `true`，并请求延期。 
 
-在事件 `ContextMenuRequested` 上，添加具有 的事件侦听器 `ICoreWebView2ContextMenuRequestedEventArgs`。
+`ContextMenuRequested`在事件上，添加具有 `ICoreWebView2ContextMenuRequestedEventArgs`. .
 
-在项目列表中进行浏览 `ICoreWebView2ContextMenuItem` ，并添加每个 `ICoreWebView2ContextMenuItem` 菜单项的 。  测试每个 `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND` 菜单项的 ，如 `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SEPARATOR` 或 `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND`。
+循环访问项列表 `ICoreWebView2ContextMenuItem` ，为每个菜单项添加一个 `ICoreWebView2ContextMenuItem` 。  `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND`测试每个菜单项，例如`COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SEPARATOR`或 `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND`。
 
 * **[ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6)** (ICoreWebView2Experimental6) 
    * [add_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested)
    * [remove_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#remove_contextmenurequested)
 
-* **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)** () `ICoreWebView2ExperimentalContextMenuItem`
+* **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)** (`ICoreWebView2ExperimentalContextMenuItem`) 
    * [get_Children](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_children)
    * [get_CommandId](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_commandid)
    * [get_IsChecked](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_ischecked)
@@ -104,18 +104,18 @@ WebView2 控件提供默认上下文菜单。
    * [get_Label](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_label)
    * [get_ShortcutKeyDescription](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_shortcutkeydescription)
 
-* **[ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)** () `ICoreWebView2ExperimentalContextMenuItemCollection`
+* **[ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)** (`ICoreWebView2ExperimentalContextMenuItemCollection`) 
    * [get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#get_count)
    * [GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#getvalueatindex)
 
-* **[ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)** () `ICoreWebView2ExperimentalContextMenuRequestedEventArgs`
+* **[ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)** (`ICoreWebView2ExperimentalContextMenuRequestedEventArgs`) 
    * [put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#put_handled)
    * [put_SelectedCommandId](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#put_selectedcommandid)
    * [get_MenuItems](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_menuitems)
    * [get_Location](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_location)
    * [GetDeferral](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#getdeferral)
 
-* **[ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)** () `ICoreWebView2ExperimentalContextMenuRequestedEventHandler`
+* **[ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)** (`ICoreWebView2ExperimentalContextMenuRequestedEventHandler`) 
 
 * **[ICoreWebView2Deferral](/microsoft-edge/webview2/reference/win32/icorewebview2deferral)**
 
@@ -131,7 +131,7 @@ WebView2 控件提供默认上下文菜单。
 <!-- ====================================================================== -->
 ## <a name="example-adding-a-custom-context-menu"></a>示例：添加自定义上下文菜单
 
-以下示例以 Win32/WPF 上下文菜单格式呈现 WebView2 上下文菜单。
+下面的示例以 Win32/WPF 上下文菜单格式显示 WebView2 上下文菜单。
 
 
 # [<a name="c"></a>C#](#tab/csharp)
@@ -358,13 +358,13 @@ void ContextMenu::AddMenuItems(
 
 
 <!-- ====================================================================== -->
-## <a name="adding-menu-items-to-a-context-menu"></a>向上下文菜单添加菜单项
+## <a name="adding-menu-items-to-a-context-menu"></a>将菜单项添加到上下文菜单
 
 您可以：
 
-*  将默认菜单项添加到自定义上下文菜单，如上面"添加自定义上下文菜单"中所示。
+*  将默认菜单项添加到自定义上下文菜单，如上文“添加自定义上下文菜单”中所示。
 
-*  将自定义菜单项添加到默认上下文菜单，如"向默认上下文菜单添加自定义菜单项"中所示。
+*  将自定义菜单项添加到默认上下文菜单，如下面的“将自定义菜单项添加到默认上下文菜单”中所示。
 
 
 ### <a name="adding-custom-menu-items-to-a-default-context-menu"></a>将自定义菜单项添加到默认上下文菜单
@@ -399,15 +399,15 @@ void ContextMenu::AddMenuItems(
 * **[ICoreWebView2Experimental6](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6)**
    * [add_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested)
 
-* **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)** () `ICoreWebView2ExperimentalContextMenuItem`
+* **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)** (`ICoreWebView2ExperimentalContextMenuItem`) 
    * [add_CustomItemSelected](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#add_customitemselected)
 
-* **[ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)** () `ICoreWebView2ExperimentalContextMenuItemCollection`
+* **[ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)** (`ICoreWebView2ExperimentalContextMenuItemCollection`) 
 
-* **[ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)** () `ICoreWebView2ExperimentalContextMenuRequestedEventArgs`
+* **[ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)** (`ICoreWebView2ExperimentalContextMenuRequestedEventArgs`) 
    * [get_MenuItems](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_menuitems)
 
-* **[ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)** () `ICoreWebView2ExperimentalContextMenuRequestedEventHandler`
+* **[ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)** (`ICoreWebView2ExperimentalContextMenuRequestedEventHandler`) 
 
 * **[ICoreWebView2CustomItemSelectedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcustomitemselectedeventhandler)** (`ICoreWebView2ExperimentalCustomItemSelectedEventHandler`) 
 
@@ -422,7 +422,7 @@ void ContextMenu::AddMenuItems(
 <!-- ====================================================================== -->
 ## <a name="example-adding-custom-menu-items-to-a-default-context-menu"></a>示例：将自定义菜单项添加到默认上下文菜单
 
-以下示例向 WebView2 上下文菜单添加"显示页面 **Uri** "命令。
+以下示例将 **显示页 Uri** 命令添加到 WebView2 上下文菜单。
 
 
 # [<a name="c"></a>C#](#tab/csharp)
@@ -528,21 +528,21 @@ webview2_4->add_ContextMenuRequested(
 
 * **[ICoreWebView2_4](/microsoft-edge/webview2/reference/win32/icorewebview2_4)**
 
-* **[ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)** () `ICoreWebView2ExperimentalContextMenuRequestedEventHandler`
+* **[ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)** (`ICoreWebView2ExperimentalContextMenuRequestedEventHandler`) 
 
-* **[ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)** () `ICoreWebView2ExperimentalContextMenuRequestedEventArgs`
+* **[ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)** (`ICoreWebView2ExperimentalContextMenuRequestedEventArgs`) 
    * [get_MenuItems](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_menuitems)
    * [get_ContextMenuTarget](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_contextmenutarget)
 
-* **[ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)** () `ICoreWebView2ExperimentalContextMenuItemCollection`
+* **[ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)** (`ICoreWebView2ExperimentalContextMenuItemCollection`) 
    * [get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#get_count)
    * [GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#getvalueatindex)
    * [RemoveValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#removevalueatindex)
 
-* **[ICoreWebView2ContextMenuTarget](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget)** () `ICoreWebView2ExperimentalContextMenuTarget`
+* **[ICoreWebView2ContextMenuTarget](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget)** (`ICoreWebView2ExperimentalContextMenuTarget`) 
    * [get_kind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget#get_kind)
 
-* **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)** () `ICoreWebView2ExperimentalContextMenuItem`
+* **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)** (`ICoreWebView2ExperimentalContextMenuItem`) 
    * [get_Name](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_name)
 
 ---
@@ -550,7 +550,7 @@ webview2_4->add_ContextMenuRequested(
 <!-- ====================================================================== -->
 ## <a name="example-removing-menu-items-from-a-default-context-menu"></a>示例：从默认上下文菜单中删除菜单项
 
-以下示例从 WebView2 上下文 **菜单中删除"** 将图像另存为"命令。
+以下示例从 WebView2 上下文菜单中删除 **“保存映像”作为** 命令。
 
 
 # [<a name="c"></a>C#](#tab/csharp)
@@ -620,37 +620,37 @@ webview2_4->add_ContextMenuRequested(
 <!-- ====================================================================== -->
 ## <a name="detecting-when-the-user-requests-a-context-menu"></a>检测用户何时请求上下文菜单
 
-本节介绍如何检测用户何时请求打开上下文菜单。  自定义或默认上下文菜单是相同的。
+本部分介绍如何检测用户何时请求打开上下文菜单。  自定义或默认上下文菜单也是如此。
 
-当用户请求打开上下文菜单 (例如右键单击) ，你的应用需要侦听 `ContextMenuRequested` 事件。
+当用户请求打开上下文菜单 (（例如右键单击) ）时，应用需要侦听 `ContextMenuRequested` 事件。
 
-当你的应用检测到此事件时，你的应用应执行以下某种组合：
-*  将自定义菜单项添加到默认上下文菜单中。
+当应用检测到此事件时，应用应执行以下操作的一些组合：
+*  将自定义菜单项添加到默认上下文菜单。
 *  从默认上下文菜单中删除自定义菜单项。
 *  打开自定义上下文菜单。
 
-该事件 `ContextMenuRequested` 指示用户请求打开上下文菜单。
+该 `ContextMenuRequested` 事件指示用户请求打开上下文菜单。
 
-WebView2 控件引发此事件以指示用户请求在 WebView2 控件中打开上下文菜单，例如通过右键单击。
+WebView2 控件引发此事件，指示用户请求在 WebView2 控件中打开上下文菜单，例如右键单击。
 
-WebView2 控件仅在 `ContextMenuRequested` 当前网页允许显示上下文菜单时引发事件;即，如果 `AreDefaultContextMenusEnabled` 属性为 `true`。
+仅当当前网页允许显示上下文菜单时，WebView2 控件才会引发 `ContextMenuRequested` 事件;也就是说，如果 `AreDefaultContextMenusEnabled` 属性为 `true`该属性，则引发该事件。
 
 [CoreWebView2ContextMenuRequestedEventArgs](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs) 包含以下信息： 
 
-*  用于填充自定义上下文 `ContextMenuItem` 菜单的对象的有序列表。  已排序列表包括以下内容：
+*  要填充自定义上下文菜单的 `ContextMenuItem` 对象的有序列表。  已排序列表包括以下内容：
    *  菜单项的内部名称。
-   *  在 UI 中向用户显示的菜单项的 UI 标签。
-   *  菜单项类型。
-   *  键盘快捷方式 Description（如果有）例如 `Alt+C`。
-   *  自定义菜单项的其他任何属性。
+   *  菜单项的 UI 标签，显示给 UI 中的用户。
+   *  菜单项的类型。
+   *  键盘快捷方式说明（如有 `Alt+C`）。
+   *  自定义菜单项的任何其他属性。
 
-*  请求上下文菜单的坐标，以便你的应用可以检测用户右键单击的 UI 项。  坐标相对于 WebView2 控件的左上角进行定义。
+*  请求上下文菜单的坐标，以便应用可以检测用户右键单击的 UI 项。  坐标是根据 WebView2 控件的左上角定义的。
 
-*  将包含所选上下文类型的选择对象<!--such as?--> 和相应的上下文菜单参数数据。<!--what sort of param data - which piece of info that's sent, tells which menu item, from the ordered list of menu items, the user selected?-->
+*  包含所选上下文类型的选择对象<!--such as?--> 和相应的上下文菜单参数数据。<!--what sort of param data - which piece of info that's sent, tells which menu item, from the ordered list of menu items, the user selected?-->
 
 当用户在上下文菜单上选择自定义菜单项时，WebView2 控件将触发事件 `CustomItemSelected` 。
 
-当主机应用向 WebView2 指示用户选择了上下文菜单上的菜单项时，WebView2 将运行选定的命令。
+当主机应用向 WebView2 指示用户在上下文菜单上选择了菜单项时，WebView2 将运行所选命令。
 
 
 # [<a name="c"></a>C#](#tab/csharp)
@@ -678,21 +678,21 @@ WebView2 控件仅在 `ContextMenuRequested` 当前网页允许显示上下文�
 <!-- ====================================================================== -->
 ## <a name="detecting-when-the-user-selects-a-custom-menu-item"></a>检测用户何时选择自定义菜单项
 
-主机应用可以处理用户选择的菜单项，或者你的应用可以将该菜单项返回到 WebView2 控件以处理用户选择的菜单项。
+主机应用可以处理用户选择的菜单项，或者你的应用可以将菜单项返回到 WebView2 控件，以处理用户选择的菜单项。
 
-主机应用应侦听事件 `CustomItemSelected` ，该事件在用户选择默认或自定义上下文菜单上的自定义菜单项时引发。
+主机应用应侦听 `CustomItemSelected` 事件，当用户在默认或自定义上下文菜单上选择自定义菜单项时，会引发该事件。
 
-WebView2 控件引发此事件以指示用户选择了你的应用添加到上下文菜单中的自定义菜单项。
+WebView2 控件引发此事件，指示用户选择了应用添加到上下文菜单中的自定义菜单项。
 
-如果用户选择自定义 `CustomMenuItemSelected` 菜单项，则事件在选择的上下文菜单项对象上引发，在这些情况下：
+如果用户选择自定义菜单项， `CustomMenuItemSelected` 则会在所选上下文菜单项对象上引发事件，在以下情况下：
 
-*  应用添加自定义菜单项，但将上下文菜单 UI 延迟到 WebView 平台。
+*  应用添加自定义菜单项，但将上下文菜单 UI 延迟到 WebView2 平台。
 
-*  应用添加自定义菜单项，显示自定义 UI `SelectedCommandId` ，并将属性设置为自定义菜单项的 ID。
+*  应用添加自定义菜单项，显示自定义 UI，并将属性设置 `SelectedCommandId` 为自定义菜单项的 ID。
 
 
 <!-- ====================================================================== -->
-## <a name="reporting-a-selected-command-menu-item-to-webview2"></a>向 WebView2 报告选定的命令菜单项
+## <a name="reporting-a-selected-command-menu-item-to-webview2"></a>向 WebView2 报告所选命令菜单项
 
 当用户选择 WebView2 上下文菜单命令 (自定义上下文菜单) 中的默认菜单项时，主机应用可以选择向 WebView2 报告该选择，以便 WebView2 将调用该命令。
 
@@ -721,13 +721,13 @@ WebView2 控件引发此事件以指示用户选择了你的应用添加到上�
 <!-- -------------------------------------------------- -->
 ### <a name="custom-menu-items"></a>自定义菜单项
 
-如果主机应用将自定义菜单项报告 `CustomMenuItemSelected` 为选定菜单项，将为自定义菜单项触发该事件。
+如果主机应用将自定义菜单项报告为所选菜单项，则 `CustomMenuItemSelected` 会为自定义菜单项触发该事件。
 
 
 <!-- ====================================================================== -->
 ## <a name="disabling-context-menus"></a>禁用上下文菜单
 
-属性 `AreDefaultContextMenusEnabled` 控制是否可以打开任何上下文菜单。  如果将 WebView2 `AreDefaultContextMenusEnabled` 设置为 `False`， `ContextMenuRequested` 则禁用上下文菜单，并且不会引发事件，例如当用户右键单击时。
+该 `AreDefaultContextMenusEnabled` 属性控制是否可以打开任何上下文菜单。  如果 WebView2 `AreDefaultContextMenusEnabled` 设置设置为 `False`禁用上下文菜单，并且 `ContextMenuRequested` 不会引发事件，例如用户右键单击时。
 
 
 # [<a name="c"></a>C#](#tab/csharp)
@@ -818,7 +818,7 @@ WebView2 控件引发此事件以指示用户选择了你的应用添加到上�
    * [add_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested)
    * [remove_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#remove_contextmenurequested)
 
-* **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)** () `ICoreWebView2ExperimentalContextMenuItem`
+* **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)** (`ICoreWebView2ExperimentalContextMenuItem`) 
    * [add_CustomItemSelected](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#add_customitemselected)
    * [get_Children](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_children)
    * [get_CommandId](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_commandid)
@@ -833,13 +833,13 @@ WebView2 控件引发此事件以指示用户选择了你的应用添加到上�
    * [put_IsEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#put_isenabled)
    * [remove_CustomItemSelected](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#remove_customitemselected)
    
-* **[ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)** () `ICoreWebView2ExperimentalContextMenuItemCollection`
+* **[ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)** (`ICoreWebView2ExperimentalContextMenuItemCollection`) 
    * [get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#get_count)
    * [GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#getvalueatindex)
    * [InsertValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#insertvalueatindex)
    * [RemoveValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#removevalueatindex)
 
-* **[ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)** () `ICoreWebView2ExperimentalContextMenuRequestedEventArgs`
+* **[ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)** (`ICoreWebView2ExperimentalContextMenuRequestedEventArgs`) 
    * [get_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_handled)
    * [get_Location](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_location)
    * [get_MenuItems](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_menuitems)
@@ -849,10 +849,10 @@ WebView2 控件引发此事件以指示用户选择了你的应用添加到上�
    * [put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#put_handled)
    * [put_SelectedCommandId](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#put_selectedcommandid)
 
-* **[ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)** () `ICoreWebView2ExperimentalContextMenuRequestedEventHandler`
+* **[ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)** (`ICoreWebView2ExperimentalContextMenuRequestedEventHandler`) 
    * [调用](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler#invoke)
 
-* **[ICoreWebView2ContextMenuTarget](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget)** () `ICoreWebView2ExperimentalContextMenuTarget`
+* **[ICoreWebView2ContextMenuTarget](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget)** (`ICoreWebView2ExperimentalContextMenuTarget`) 
    * [get_kind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget#get_kind)
 
 * **[ICoreWebView2CustomItemSelectedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcustomitemselectedeventhandler)** (`ICoreWebView2ExperimentalCustomItemSelectedEventHandler`) 

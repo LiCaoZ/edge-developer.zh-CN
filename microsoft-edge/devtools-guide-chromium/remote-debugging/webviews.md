@@ -1,17 +1,17 @@
 ---
 title: 远程调试 Android WebViews
-description: 使用开发人员工具在本机 Android 应用中远程调试 WebView Microsoft Edge入门。
+description: 开始使用 Microsoft Edge DevTools 在本机 Android 应用中使用远程调试 WebView。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: c23c7cdd148b2b1bd9f6d56e5dd239b7b1a8b9ed
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 34cdefa96050edb2d2dbce13126536f8d6eb592e
+ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431471"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "12473923"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -28,21 +28,24 @@ ms.locfileid: "12431471"
    limitations under the License.  -->
 # <a name="remotely-debug-android-webviews"></a>远程调试 Android WebViews
 
-使用开发人员工具在本机 Android 应用中Microsoft Edge Android WebView。
+使用 Microsoft Edge 开发人员工具在本机 Android 应用中调试 Android WebViews。
 
 在 Android 4.4 (KitKat) 或更高版本上，使用 DevTools 调试本机 Android 应用中的 WebView 内容。
 
+Android WebView 与 [Microsoft Edge WebView2](../../webview2/index.md) 无关。
+
+
 ### <a name="summary"></a>摘要
 
-*  在本机 Android 应用中打开 Android WebView 调试;在 DevTools Microsoft Edge Android WebViews。
-*  若要显示启用调试的 Android WebView 列表，请转到 `edge://inspect`。
-*  使用通过远程调试调试网页的相同方式调试 Android [WebView。](index.md)
+*  在本机 Android 应用中启用 Android WebView 调试;在 Microsoft Edge DevTools 中调试 Android WebViews。
+*  若要显示启用调试的 Android WebViews 列表，请转到 `edge://inspect`。
+*  调试 Android WebView 的方式与通过 [远程调试调试](index.md)网页的方式相同。
 
 
 <!-- ====================================================================== -->
-## <a name="configure-android-webviews-to-debug"></a>将 Android WebViews 配置为调试
+## <a name="configure-android-webviews-to-debug"></a>将 Android WebView 配置为调试
 
-必须在你的应用中打开 Android WebView 调试。  若要启用 Android WebView 调试，请对类运行 [setWebContentsDebuggingEnabled](https://developer.android.com/reference/android/webkit/WebView.html#setWebContentsDebuggingEnabled(boolean)) 静态 `WebView` 方法。
+必须在应用中启用 Android WebView 调试。  若要启用 Android WebView 调试，请在类上`WebView`运行 [setWebContentsDebuggingEnabled](https://developer.android.com/reference/android/webkit/WebView.html#setWebContentsDebuggingEnabled(boolean)) 静态方法。
 
 ```java
 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -50,10 +53,10 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 }
 ```
 
-该设置适用于应用的所有 Android WebView。
+此设置适用于应用的所有 Android WebView。
 
 > [!TIP]
-> Android WebView 调试不受应用 `debuggable` 清单中标志状态的影响。  如果你希望仅在标志为 时启用 Android WebView `debuggable` 调试 `true`，请在运行时测试标志。
+> Android WebView 调试不受应用清单中标志状态 `debuggable` 的影响。  如果只想在标志`true`为标志时`debuggable`启用 Android WebView 调试，请在运行时测试该标志。
 >
 > ```java
 > if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -66,9 +69,9 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 <!-- ====================================================================== -->
 ## <a name="open-an-android-webview-in-devtools"></a>在 DevTools 中打开 Android WebView
 
-若要显示 Android WebView 列表，并打开在设备上运行的调试功能，请转到 `edge://inspect`。
+若要在设备上显示启用调试的 Android WebViews 列表，请转到 `edge://inspect`。
 
-若要开始调试，请在要调试的 Android WebView 下，单击"检查 **"**。  使用 DevTools 的方式与使用远程浏览器选项卡的方式相同。
+若要开始调试，请在要调试的 Android WebView 下单击 **“检查**”。  使用 DevTools 的方式与使用远程浏览器选项卡的方式相同。
 
 <!--
 :::image type="content" source=".images/webview-debugging.msft.png" alt-text="Inspecting elements in an Android WebView." lightbox=".images/webview-debugging.msft.png":::
@@ -80,17 +83,17 @@ The gray graphics listed with the Android WebView represent its size and positio
 <!-- ====================================================================== -->
 ## <a name="troubleshoot"></a>疑难解答
 
-如果你的 Android WebView 未显示在页面上 `edge://inspect` ：
+如果 Android WebView 未显示在页面上 `edge://inspect` ：
 
-*  验证已针对你的应用打开 Android WebView 调试。
+*  验证应用是否已启用 Android WebView 调试。
 
-*  在你的设备上，使用你想要调试的 Android WebView 打开应用。  然后，刷新 `edge://inspect`。
+*  在设备上，使用要调试的 Android WebView 打开应用。  然后，刷新 `edge://inspect`。
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](http://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) 由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。
+> 原始页面 [在此](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) 处找到，由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](http://creativecommons.org/licenses/by/4.0)获得许可。
