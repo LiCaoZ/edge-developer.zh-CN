@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/12/2022
-ms.openlocfilehash: 8977d3677301ffa1ce8bcb489bac4652052c8f16
-ms.sourcegitcommit: 0eecea351c5b4a3886a05d635765d6b28c122c2f
+ms.openlocfilehash: 71d776dc0a5aa262a3fdef7877f9b2f8577d4f28
+ms.sourcegitcommit: aa5e29ae5ef40c430f660fbf26ef9ced36a87866
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/13/2022
-ms.locfileid: "12477119"
+ms.locfileid: "12477600"
 ---
 # <a name="release-notes-for-the-webview2-sdk"></a>WebView2 SDK 发行说明
 
@@ -90,7 +90,7 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 #### <a name="experimental-features"></a>实验功能
 
-* 添加了 [服务器证书 API，该 API](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcertificate?view=webview2-1.0.1222-prerelease&preserve-view=true) 提供了一个选项，用于信任应用程序级别的服务器的 TLS 证书并呈现页面，而无需提示用户了解 TLS 或提供取消 Web 请求的能力。
+* 添加了 [服务器证书 API，该 API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental15?view=webview2-1.0.1222-prerelease&preserve-view=true) 提供了一个选项，用于信任应用程序级别的服务器的 TLS 证书并呈现页面，而无需提示用户了解 TLS 或提供取消 Web 请求的能力。
 
 * 添加了 [Favicon API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental12?view=webview2-1.0.1222-prerelease&preserve-view=true) ，它提供了一种在更改或设置网站时获取 favicon 的方法。
 
@@ -110,15 +110,15 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 * 修复了在具有不同缩放的监视器之间移动时 WebView2 内容可能变得模糊的问题。
 
-* 修复了在视觉托管模式下始终为 **0** 的 bug `MouseEvent.movementX` `MouseEvent.movementY`。
+* 修复了在视觉托管模式下始终为 **0** 的 bug `MouseEvent.movementX` `MouseEvent.movementY`。  ([问题 #2220](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2220)) 
 
-* 修复了 WebView2 中密码回归导致的登录问题。
+* 修复了 WebView2 中密码回归导致的登录问题。  ([问题 #2291](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2291)) 
 
 * 修复了当用户打开新应用窗口且网页未分配导航条目时导致的故障。
 
 * 对 WinUI 2 (UWP) 中未显示拥有的窗口的 bug 进行了运行时更改。
  
-* 修复 `ICoreWebView2Frame::PostWebMessage` 了源更新后的功能。
+* 修复 `ICoreWebView2Frame::PostWebMessage` 了源更新后的功能。  ([问题 #2267](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2267)) 
 
 
 <!-- ====================================================================== -->
