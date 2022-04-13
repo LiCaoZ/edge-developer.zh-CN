@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 03/14/2022
-ms.openlocfilehash: 2d73b0abc0f6896b920ae3a9412825f891e68b6f
-ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
+ms.date: 04/12/2022
+ms.openlocfilehash: 8977d3677301ffa1ce8bcb489bac4652052c8f16
+ms.sourcegitcommit: 0eecea351c5b4a3886a05d635765d6b28c122c2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "12473807"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "12477119"
 ---
 # <a name="release-notes-for-the-webview2-sdk"></a>WebView2 SDK 发行说明
 
@@ -42,6 +42,87 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 
 <!-- ====================================================================== -->
+
+## <a name="10118539"></a>1.0.1185.39
+  
+发布日期：2022 年 4 月 12 日  
+  
+[NuGet WebView2 SDK 1.0.1185.39 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1185.39)  
+  
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 WebView2 运行时版本 100.0.1185.39 或更高版本。  
+
+### <a name="general"></a>概要
+
+* 已重 `ICoreWebView2Certificate` 命名为 `ICoreWebview2ClientCertificate`.
+
+#### <a name="promotions"></a>促销
+
+以下项现在稳定：
+
+* 支持 `sessionId` CDP 方法调用[的 CallDevToolsProtocolMethodForSession API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1185.39&preserve-view=true#calldevtoolsprotocolmethodforsession)。
+
+* [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1185.39&preserve-view=true)：
+    *  `add_StatusBarTextChanged`
+    *  `get_StatusBarText`
+    *  `remove_StatusBarTextChanged`
+
+* 支持启用/禁用外部删除操作的 [AllowExternalDrop API](/microsoft-edge/webview2/reference/win32/icorewebview2controller4?view=webview2-1.0.1185.39&preserve-view=true) 。
+
+* [HiddenPdfToolbarItems API](/microsoft-edge/webview2/reference/win32/icorewebview2settings7?view=webview2-1.0.1185.39&preserve-view=true) 可用于自定义 PDF 工具栏项。
+
+* [ExclusiveUserDataFolderAccess API](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2?view=webview2-1.0.1185.39&preserve-view=true) 允许控制其他进程是否可以使用同一用户数据文件夹创建 `WebView2Environment` WebView2，从而共享同一 WebView 浏览器进程实例。
+
+* 请求 [对 iframe 的支持的权限](/microsoft-edge/webview2/reference/win32/icorewebview2frame3?view=webview2-1.0.1185.39&preserve-view=true)： 
+    * `add_PermissionRequested`
+    * `remove_PermissionRequested`
+
+<!-- ====================================================================== -->
+
+## <a name="101222-prerelease"></a>1.0.1222-prerelease
+  
+发布日期：2022 年 4 月 12 日  
+  
+[NuGet WebView2 SDK 1.0.1222-prerelease 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1222-prerelease)  
+  
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要Microsoft Edge版本 102.0.1222.0 或更高版本。  
+
+### <a name="general"></a>概要
+
+#### <a name="experimental-features"></a>实验功能
+
+* 添加了 [服务器证书 API，该 API](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcertificate?view=webview2-1.0.1222-prerelease&preserve-view=true) 提供了一个选项，用于信任应用程序级别的服务器的 TLS 证书并呈现页面，而无需提示用户了解 TLS 或提供取消 Web 请求的能力。
+
+* 添加了 [Favicon API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental12?view=webview2-1.0.1222-prerelease&preserve-view=true) ，它提供了一种在更改或设置网站时获取 favicon 的方法。
+
+#### <a name="promotions"></a>促销
+
+以下 API 在此预发行版 SDK 中提升为稳定：  
+
+* 支持 WebView2 中的 [多个用户配置文件](/microsoft-edge/webview2/reference/win32/icorewebview2environment10?view=webview2-1.0.1222-prerelease&preserve-view=true) 。
+
+* [主题 API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1222-prerelease&viewFallbackFrom=webview2-1.0.1185.39&preserve-view=true) 提供一种自定义 WebView2 颜色主题的方式，例如`light``dark`，或 `system`。
+
+* [默认下载 API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1222-prerelease&viewFallbackFrom=webview2-1.0.1185.39&preserve-view=true) 提供自定义默认下载位置的方法。
+
+#### <a name="bug-fixes"></a>Bug 修复
+  
+* 修复 `ZoomFactor` 了在值超出边界时错误地将值设置 `ZoomFactor` 为最大值的问题。
+
+* 修复了在具有不同缩放的监视器之间移动时 WebView2 内容可能变得模糊的问题。
+
+* 修复了在视觉托管模式下始终为 **0** 的 bug `MouseEvent.movementX` `MouseEvent.movementY`。
+
+* 修复了 WebView2 中密码回归导致的登录问题。
+
+* 修复了当用户打开新应用窗口且网页未分配导航条目时导致的故障。
+
+* 对 WinUI 2 (UWP) 中未显示拥有的窗口的 bug 进行了运行时更改。
+ 
+* 修复 `ICoreWebView2Frame::PostWebMessage` 了源更新后的功能。
+
+
+<!-- ====================================================================== -->
+
 ## <a name="10115038"></a>1.0.1150.38
   
 发布日期：2022 年 3 月 10 日  
@@ -64,7 +145,7 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
   
 发布日期：2022 年 3 月 10 日  
 
-[NuGet WebView2 SDK 1.0.1189 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1189-prerelease)  
+[NuGet WebView2 SDK 1.0.1189-prerelease 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1189-prerelease)  
   
 为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要Microsoft Edge版本 100.0.1189.0 或更高版本。  
 
