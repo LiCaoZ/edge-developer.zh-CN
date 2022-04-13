@@ -8,18 +8,18 @@ ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.technology: webview
 ms.date: 11/12/2021
-ms.openlocfilehash: 9525462982f76111e83989b7818b968cc22f6991
-ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
+ms.openlocfilehash: 48aeedcd760621e1e191c6685bf13a64c446ace5
+ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "12459712"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "12473938"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介
 
 Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术(HTML、CSS 以及 JavaScript)。  WebView2 控件使用 [Microsoft Edge](https://www.microsoftedgeinsider.com) 作为绘制引擎，以在本机应用中显示 web 内容。
 
-使用 WebView2 可以在本机应用的不同部分嵌入 Web 代码，或在单个 WebView 实例中生成所有本机应用。
+使用 WebView2 可以在本机应用的不同部分嵌入 Web 代码，或在单个 WebView2 实例中生成所有本机应用。
 
 ![应用示意图，其中本机 UI 区域位于左上角，WebView2 UI 区域位于右上角底部。](media/webview2/what-webview.png)
 
