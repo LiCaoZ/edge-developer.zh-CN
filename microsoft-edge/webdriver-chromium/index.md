@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 01/20/2022
-ms.openlocfilehash: 06180cdca319f688765f886dadc8c9a128df1043
-ms.sourcegitcommit: c264a31a0809cacec22a42214f7949bba85e6b51
+ms.openlocfilehash: 0ff2e099c1fbb22b3fe209cd77dc7d6364719b99
+ms.sourcegitcommit: 722cef4ac26d133d73474bae4ad57c51628b30db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "12472931"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "12477707"
 ---
 # <a name="use-webdriver-to-automate-microsoft-edge"></a>使用 WebDriver 自动执行 Microsoft Edge
 
@@ -44,7 +44,7 @@ WebDriver 允许你通过模拟用户交互来自动执行 Microsoft Edge。  �
 | Microsoft Edge WebDriver | Microsoft 专门用于 Microsoft Edge 的 WebDriver 协议的实现。  测试作者编写使用 WebDriver 命令Microsoft Edge WebDriver 接收的测试。  然后，Edge WebDriver 负责将该命令传达给浏览器。 |
 | WebDriver 测试框架 | 测试作者使用测试框架编写端到端测试并自动执行浏览器。  提供特定于语言的接口，将代码转换为发送到 Edge WebDriver 的命令。  WebDriver 测试框架适用于所有主要平台和语言。  其中一个框架是 Selenium。 |
 | Internet Explorer 驱动程序 | 专门用于 Internet Explorer 的 WebDriver 协议的开源实现。  若要针对 Internet Explorer 模式运行旧的端到端测试，建议使用 Internet Explorer 驱动程序。 |
-| Microsoft WebDriver | 上一个特定于浏览器的 Microsoft Edge (EdgeHTML) 驱动程序，也称为Microsoft Edge 旧版。  请参阅 [WebDriver (EdgeHTML) ](/archive/microsoft-edge/legacy/developer/webdriver/)。 |
+| Microsoft WebDriver (旧版)  | 上一个特定于浏览器的 Microsoft Edge (EdgeHTML) 驱动程序，也称为Microsoft Edge 旧版。 |
 
 以下部分介绍如何开始使用 WebDriver for Microsoft Edge。
 
@@ -62,7 +62,7 @@ WebDriver 允许你通过模拟用户交互来自动执行 Microsoft Edge。  �
 
 1.  在**获取页面的最新版本**部分，在频道中选择与 Microsoft Edge 版本号匹配的平台。
 
-    :::image type="content" source="./media/microsoft-edge-driver-install.msft.png" alt-text="Microsoft Edge WebDriver 网页的&quot;获取最新版本&quot;部分。" lightbox="./media/microsoft-edge-driver-install.msft.png":::
+    :::image type="content" source="./media/microsoft-edge-driver-install.msft.png" alt-text="Microsoft Edge WebDriver 网页的“获取最新版本”部分。" lightbox="./media/microsoft-edge-driver-install.msft.png":::
 
 1.  下载完成后，将 `msedgedriver` 可执行文件提取到首选位置。 将可执行文件所在的文件夹添加到你的 `PATH` 环境变量。
 
@@ -402,7 +402,15 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 <!-- ====================================================================== -->
 ## <a name="opt-out-of-diagnostic-data-collection"></a>选择退出诊断数据收集
 
-默认情况下，Edge WebDriver 会将诊断数据（例如 ["新建会话 WebDriver"命令](https://www.w3.org/TR/webdriver2/#new-session) 的状态）发送到 Microsoft。  若要关闭 Edge WebDriver 的诊断数据收集，请将 `MSEDGEDRIVER_TELEMETRY_OPTOUT` 环境变量设置为 `1`。  有关 Edge WebDriver 收集的数据的详细信息，请参阅[Microsoft Edge隐私白皮书](/microsoft-edge/privacy-whitepaper#microsoft-edge-webdriver)。
+默认情况下，Edge WebDriver 会将诊断数据（例如 [“新建会话 WebDriver”命令](https://www.w3.org/TR/webdriver2/#new-session) 的状态）发送到 Microsoft。  若要关闭 Edge WebDriver 的诊断数据收集，请将 `MSEDGEDRIVER_TELEMETRY_OPTOUT` 环境变量设置为 `1`。  有关 Edge WebDriver 收集的数据的详细信息，请参阅[Microsoft Edge隐私白皮书](/microsoft-edge/privacy-whitepaper#microsoft-edge-webdriver)。
+
+
+<!-- ====================================================================== -->
+## <a name="legacy-microsoft-webdriver-for-edgehtml"></a>旧版 Microsoft WebDriver for EdgeHTML
+
+Microsoft WebDriver 是基于 EdgeHTML 的旧版 WebDriver 实现Microsoft Edge。  Microsoft WebDriver 作为可选Windows组件分发，因为旧版 Microsoft Edge (EdgeHTML) 已使用 OS 进行更新。  Microsoft WebDriver 与基于Chromium的最新版本的Microsoft Edge不兼容。  Microsoft WebDriver 仍适用于为 UWP 应用编写基于 WebDriver 的测试的开发人员，因为这些测试依赖于 EdgeHTML，但不再建议使用 Microsoft WebDriver。
+
+请参阅 [WebDriver (EdgeHTML) ](/archive/microsoft-edge/legacy/developer/webdriver/)。
 
 
 <!-- ====================================================================== -->
@@ -412,7 +420,7 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 
 ### <a name="developer-tools-availability-policy"></a>开发人员工具可用性策略
 
-如果 IT 管理员已将 [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) 策略设置为`2`"[Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver)"，则会阻止其Microsoft Edge，因为驱动程序使用 [Microsoft Edge DevTools](../devtools-guide-chromium/overview.md)。  若要自动执行 Microsoft Edge，请确保将 [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) 策略设置为 `0` 或 `1`。
+如果 IT 管理员已将 [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) 策略设置为`2`“[Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver)”，则会阻止其Microsoft Edge，因为驱动程序使用 [Microsoft Edge DevTools](../devtools-guide-chromium/overview.md)。  若要自动执行 Microsoft Edge，请确保将 [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) 策略设置为 `0` 或 `1`。
 
 ### <a name="upgrading-from-selenium-3-to-selenium-4"></a>从 Selenium 3 升级到 Selenium 4
 
