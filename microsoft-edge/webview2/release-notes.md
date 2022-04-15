@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/12/2022
-ms.openlocfilehash: 71d776dc0a5aa262a3fdef7877f9b2f8577d4f28
-ms.sourcegitcommit: aa5e29ae5ef40c430f660fbf26ef9ced36a87866
+ms.openlocfilehash: 59f6bce45ff3ff26d0f85547263557d02cdef0d1
+ms.sourcegitcommit: f3b9330df0179658909c2131ed3a4d2fcd067b8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "12477600"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "12478375"
 ---
 # <a name="release-notes-for-the-webview2-sdk"></a>WebView2 SDK 发行说明
 
@@ -53,7 +53,7 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 ### <a name="general"></a>概要
 
-* 已重 `ICoreWebView2Certificate` 命名为 `ICoreWebview2ClientCertificate`.
+* 已重 `ICoreWebView2Certificate` 命名为 `ICoreWebView2ClientCertificate`.
 
 #### <a name="promotions"></a>促销
 
@@ -1130,10 +1130,10 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 此预发行版的 WebView2 SDK 需要Microsoft Edge版本 84.0.515.0 或更高版本。
 
 *  > [!IMPORTANT]
-   > **公告**：WebView2 现在支持 .NET Framework 4.6.2 或更高版本的 Windows 窗体 和 WPF，**在预发行包**中支持 .NET Core 3.0 或更高版本。
+   > **公告**：WebView2 现在支持 .NET Framework 4.6.2 或更高版本的 Windows Forms 和 WPF，**在预发行包**中支持 .NET Core 3.0 或更高版本。
 
-*  有关生成 WPF 应用的详细信息，请参阅 [WPF 应用中的 WebView2 开始](get-started/wpf.md)和特定于 WPF 的 API 的 WebView2 [WPF 参考](/dotnet/api/microsoft.web.webview2.wpf)。
-*  有关构建Windows 窗体应用的详细信息，请参阅 [WinForms 应用中 WebView2 的开始](get-started/winforms.md)，以及适用于Windows 窗体特定 API 的 WebView2 [Windows 窗体参考](/dotnet/api/microsoft.web.webview2.winforms)。
+*  有关生成 WPF 应用的详细信息，请参阅 [WPF 应用中的 WebView2 Első lépések](get-started/wpf.md)和特定于 WPF 的 API 的 WebView2 [WPF 参考](/dotnet/api/microsoft.web.webview2.wpf)。
+*  有关构建Windows Forms应用的详细信息，请参阅 [WinForms 应用中的 WebView2 Első lépések](get-started/winforms.md)，[以及适用于特定 API 的](/dotnet/api/microsoft.web.webview2.winforms) WebView2 Windows Forms Windows Forms参考。
 *  有关 CoreWebView2 API 的详细信息，请参 [阅 .NET 参考](/dotnet/api/microsoft.web.webview2.core)。
 *  > [!CAUTION]
    > **已知问题**：WebView2 团队知道预发行版中的一些问题，这些问题将在未来版本中得到解决。
