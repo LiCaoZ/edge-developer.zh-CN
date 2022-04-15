@@ -1,17 +1,17 @@
 ---
 title: 将已处理的代码映射到原始源代码，以便进行调试
-description: 即使组合、缩小或编译客户端代码，也保持其可读和可调试。
+description: 即使在合并、缩小或编译客户端代码之后，仍可读和调试客户端代码。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/02/2022
-ms.openlocfilehash: 8ad56cbe92e32a6b4fc623da4df526e67080554c
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 68828429815f7771b78b42215994eed1c7a19628
+ms.sourcegitcommit: c70c631c51743aac430832e39737baf9679b3ffb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12432867"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "12478422"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -28,12 +28,11 @@ ms.locfileid: "12432867"
    limitations under the License.  -->
 # <a name="map-the-processed-code-to-your-original-source-code-for-debugging"></a>将已处理的代码映射到原始源代码，以便进行调试
 
-若要在 DevTools 中调试 JavaScript 时查看和使用原始源代码，而不是必须处理 Web 服务器返回的代码的已编译和缩小版本，请使用源映射。
+若要在 DevTools 中调试 JavaScript 时查看和使用原始源代码，而不必使用 Web 服务器返回的代码的编译和细化版本，请使用源映射。
 
-源映射使客户端代码保持可读和可调试，即使在生成过程编译代码并生成代码并合并到单个文件中之后。  源映射将编译的缩小代码映射到原始源代码文件。  在 DevTools 中，你可以读取和调试熟悉的原始源代码，而不是无法识别的已转换和已编译代码。
+源映射使客户端代码可读且可调试，即使在生成过程编译和细化代码并将其合并到单个文件中之后也可调试。  源映射将已编译的细化代码映射到原始源代码文件。  然后，在 DevTools 中，可以读取和调试熟悉的原始源代码，而不是无法识别的转换和编译的代码。
 
-若要使用此源映射技术，必须使用可生成源映射的预处理器。  确保 Web 服务器可以提供源地图服务。
-
+若要使用此源映射技术，必须使用可生成源映射的预处理器。  确保 Web 服务器可以提供源映射。
 
 <!--
 no longer in original file:
@@ -43,9 +42,9 @@ todo: add link to preprocessors capable of producing source maps when section is
 
 
 <!-- ====================================================================== -->
-## <a name="get-started-with-preprocessors"></a>预处理器入门
+## <a name="get-started-with-preprocessors"></a>使用预处理器Első lépések
 
-本文介绍了如何在"源"工具中与 JavaScript 源 **映射** 进行交互。  <!--For a first overview of what preprocessors are, how each may help, and how source maps work; see Set Up CSS & JS Preprocessors.  -->
+本文介绍如何在 **“源** ”工具中与 JavaScript 源映射交互。  <!--For a first overview of what preprocessors are, how each may help, and how source maps work; see Set Up CSS & JS Preprocessors.  -->
 
 <!--
 no longer in original file:
@@ -55,9 +54,9 @@ todo: add link to Set Up CSS & JS Preprocessors when section is available
 
 
 <!-- ====================================================================== -->
-## <a name="use-a-supported-preprocessor"></a>使用受支持的预处理器
+## <a name="use-a-supported-preprocessor"></a>使用支持的预处理器
 
-使用能够创建源地图的微型程序。  <!--For the most popular options, see the preprocessor support section.  -->  有关扩展视图，请参阅源 [地图：语言、工具和其他信息](https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info) Wiki 页面。
+使用能够创建源映射的缩小器。  <!--For the most popular options, see the preprocessor support section.  -->  有关扩展视图，请参阅 [源地图：语言、工具和其他信息](https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info) Wiki 页面。
 
 <!--
 no longer in original file:
@@ -65,57 +64,57 @@ todo: add link to display the preprocessor support section when section is avail
 /web/tools/setup/setup-preprocessors?#supported_preprocessors
 -->
 
-通常将以下类型的预处理器与源映射结合使用：
+以下类型的预处理器通常与源映射结合使用：
 
-*  Transpilers ([，Traceur](https://babeljs.io)) 。 [](https://github.com/google/traceur-compiler/wiki/Getting-Started)
-*  编译器 ([关闭编译器](https://github.com/google/closure-compiler)、 [TypeScript](https://www.typescriptlang.org)、 [CoffeeScript](https://coffeescript.org)、 [) ](https://www.dartlang.org) 。
-*  [UglifyJS (小型](https://github.com/mishoo/UglifyJS)) 。
+*  转译器 ([巴贝尔](https://babeljs.io)， [特雷瑟](https://github.com/google/traceur-compiler/wiki/Getting-Started)) 。
+*  编译器 ([关闭编译器](https://github.com/google/closure-compiler)、 [TypeScript](https://www.typescriptlang.org)、 [CoffeeScript](https://coffeescript.org)、 [Dart](https://www.dartlang.org)) 。
+*  [UglifyJS](https://github.com/mishoo/UglifyJS))  (明细化器。
 
 
 <!-- ====================================================================== -->
 ## <a name="source-maps-in-the-sources-tool"></a>源工具中的源映射
 
-来自预处理器的源映射会导致 DevTools 加载原始文件以及缩小的文件。  然后，使用原始文件设置断点并逐步执行代码。  同时，Microsoft Edge运行缩小代码。  通过运行代码，你可以错觉运行生产中的开发网站。
+来自预处理器的源映射会导致 DevTools 加载原始文件以及缩小的文件。  然后，使用原始设置断点并逐步执行代码。  同时，Microsoft Edge运行缩小代码。  代码的运行使你在生产环境中运行开发站点的错觉。
 
-在 DevTools 中运行源地图时，应该会注意到 JavaScript 未编译，并且它引用的所有单个 JavaScript 文件都显示出来。  DevTools 中的源映射使用源映射，但基础功能实际上运行已编译的代码。
+在 DevTools 中运行源映射时，应注意到 JavaScript 未编译，并且会显示它引用的所有单个 JavaScript 文件。  DevTools 中的源映射使用源映射，但基础功能实际上运行已编译的代码。
 
-任何错误、日志和断点都映射到原始源代码，以便于调试。
+任何错误、日志和断点都映射到原始源代码，以便更轻松地进行调试。
 
 
-### <a name="enable-source-maps-in-settings"></a>启用源映射设置
+### <a name="enable-source-maps-in-settings"></a>在设置中启用源映射
 
 默认情况下启用源映射。
 
-若要确保启用源映射，请运行：
+若要确保已启用源映射，请执行以下操作：
 
-1. 若要打开 DevTools，请在Microsoft Edge中右键单击网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。
+1. 若要打开 DevTools，请在Microsoft Edge中右键单击网页，然后选择 **“检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。
 
-1. 在 DevTools 中，**单击**设置 (设置![图标](../media/settings-gear-icon-light-theme.png)。) >**首选项"**。
+1. 在 DevTools 中，单击**设置** (设置![图标。](../media/settings-gear-icon-light-theme.png)) >**首选项**。
 
-1. 在**首选项页**的"源"部分****，确保选中"启用 **JavaScript 源**映射"复选框和"**启用 CSS 源映射**"复选框：
+1. 在 **“首选项”** 页的 **“源** ”部分中，确保选中 **“启用 JavaScript 源映射** ”复选框和 **“启用 CSS 源映射** ”复选框：
 
-!["首选项"页面的"源"部分，选中了"启用源地图"复选框。](../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png)
+   ![“首选项”页的“源”部分，其中选择了“启用源映射”复选框。](../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png)
 
-1. 在屏幕**右上角，设置**"**关闭 (** **x) ** 按钮。
+1. 在**设置**右上角，单击“**关闭** (**x**) ”按钮。
 
 
-### <a name="debugging-with-source-maps"></a>使用源地图调试
+### <a name="debugging-with-source-maps"></a>使用源映射进行调试
 
-启用 [代码和源](index.md#step-4-step-through-the-code) 映射的调试时，在若干位置使用源映射：
+启用 [调试代码](index.md#step-4-step-through-the-code) 和源映射时，源映射会在多个位置使用：
 
-*  在 **控制台工具** 中，从日志消息到源文件的链接将转到原始文件，而不是已编译的文件。
+*  在 **控制台** 工具中，从日志消息到源文件的链接将转到原始文件，而不是编译的文件。
 
-*  单步执行"源"**** 工具中的代码时，原始文件将显示在左侧的****"导航器"窗格中。
+*  单步执行 **“源** ”工具中的代码时，原始文件将显示在左侧的 **“导航器** ”窗格中。
 
-*  在 **"源**"工具中，指向显示在"调试器"窗格**** 的"调用堆栈"中的**源文件的链接将**打开原始源文件。
+*  在 **“源**”工具中，显示在**调试器**“**调用堆栈**”窗格中的源文件的链接打开原始源文件。
 
 
 <!-- ====================================================================== -->
-## <a name="use--sourceurl-to-name-evaluated-files-in-the-sources-tool"></a>用于 `//# sourceURL` 命名"源"工具中的评估文件
+## <a name="use--sourceurl-to-name-evaluated-files-in-the-sources-tool"></a>用于 `//# sourceURL` 在“源”工具中命名已评估的文件
 
-pragma `//# sourceURL` （如 `// # sourceURL=myFileName`）是一种约定，允许您在使用已评估的 JavaScript 文件时更轻松地进行开发。  之前或之后可以有空格字符 `#`。
+`//# sourceURL`杂注（例如`// # sourceURL=myFileName`）是一种约定，可让你在使用评估的 JavaScript 文件时更轻松地进行开发。  可以有空格字符之前或之后 `#`。
 
-当加载 JavaScript 文件，`eval()`然后使用 函数评估它们时，源**** 工具没有在导航器窗格中显示**这些文件的**文件名。 通过在你的代码中包括以下特殊注释，你可以命名评估文件、内联脚本和样式，以便每个文件在"源"工具中显示为 **可识别的文件名** 。  例如：
+加载 JavaScript 文件并使用 `eval()` 函数评估这些文件时，“ **源** ”工具没有文件名在 **导航器** 窗格中显示这些文件。 通过在代码中包含以下特殊注释，可以命名已评估的文件、内联脚本和样式，以便每个文件在 **“源** ”工具中显示为可识别的文件名。  例如：
 
 ```javascript
 //# sourceURL=source.coffee
@@ -135,7 +134,7 @@ pragma `//# sourceURL` （如 `// # sourceURL=myFileName`）是一种约定，�
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和 [Paul Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Open Web Developer Advocate、Google：Tools、Performance、Animation 和 UX) 创作。
+> 原始页面 [在此](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) 处找到，由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和 [Paul Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Open Web Developer Advocate， Google： Tools， Performance， Animation， and UX) 创作。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。
