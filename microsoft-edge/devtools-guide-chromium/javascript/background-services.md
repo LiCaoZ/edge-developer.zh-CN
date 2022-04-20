@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/06/2022
-ms.openlocfilehash: 7249e810ae523b6111d679b5d225661955c9a6e2
-ms.sourcegitcommit: 2b163929a14037984dacb0f3924ab9e6a8614c12
+ms.openlocfilehash: 381b044421b75b430ba8d8e9427bc862a3ec2a5a
+ms.sourcegitcommit: 0b577d05632b35e45479b12aecc3f2df90ca90e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "12473124"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "12486617"
 ---
 <!-- Copyright Kayce Basques
 
@@ -35,6 +35,7 @@ Microsoft Edge DevTools 将以下每个 API 都作为后台服务：
 *  [后台提取](#background-fetch)
 *  [后台同步](#background-sync)
 *  [通知](#notifications)
+*  [付款处理程序](#payment-handler)
 *  [定期后台同步](#periodic-background-sync)
 *  [推送消息](#push-messages)
 *  [报告 API](#reporting-api)
@@ -108,6 +109,28 @@ Microsoft Edge DevTools 将以下每个 API 都作为后台服务：
 1. 单击事件可在表下方的空格中查看其详细信息。
 
    ![在“通知”窗格中查看事件的详细信息。](./images/application-notifications-details.png)
+
+
+<!-- ====================================================================== -->
+## <a name="payment-handler"></a>付款处理程序
+
+[支付处理程序 API](https://web.dev/web-based-payment-apps-overview/) 允许 Web 应用程序代表用户处理付款请求。 若要记录付款请求和响应事件 3 天，即使 DevTools 未打开，
+
+1. 通过右键单击网页并选择 **“检查**”打开 DevTools。  或者按 `Ctrl`++`Shift``I` (Windows、Linux) 或`I` `Command`+`Option`+ (macOS) 。
+
+1. 在 DevTools 的主工具栏上，选择“ **应用程序** ”选项卡。 如果该选项卡不可见，请单击“ **更多”选项卡** (![“更多”选项卡图标。](../media/more-tabs-icon-light-theme.png)) 按钮，或者“ **更多工具** (![更多工具”图标。](../media/more-tools-icon-light-theme.png)) 按钮。
+
+1. 在左侧的 **“后台服务”** 部分中，选择 **“付款处理程序**”。  “ **付款处理程序** ”页随即打开。
+
+   ![“付款处理程序”窗格。](./images/application-payment-handler-empty.png)
+
+1. 单击 **“记录** (![记录。](../media/record-icon.msft.png)) 。  触发某些付款请求后，DevTools 会将事件记录到表。
+
+   ![付款处理程序窗格中的事件日志。](./images/application-payment-handler-events.png)
+
+1. 单击事件可在表下方的空格中查看其详细信息。
+
+   ![在“付款处理程序”窗格中查看事件的详细信息。](./images/application-payment-handler-details.png)
 
 
 <!-- ====================================================================== -->
