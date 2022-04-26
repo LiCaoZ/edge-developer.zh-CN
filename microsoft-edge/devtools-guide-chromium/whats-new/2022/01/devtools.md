@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.date: 01/14/2022
 ms.openlocfilehash: ed4baf19e5a6fc11d08c276b72f26b580fa94dc4
 ms.sourcegitcommit: d753bc98ca50acdcdb7a8bf911af3465d3228058
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/29/2022
 ms.locfileid: "12465119"
@@ -77,7 +77,7 @@ ms.locfileid: "12465119"
 
 ![专注模式 UI。](../../media/2022/01/focus-mode.png)
 
-请参阅 [使用焦点模式简化 DevTools](../../../experimental-features/focus-mode.md)。
+请参阅[使用焦点模式简化开发工具](../../../experimental-features/focus-mode.md)。
 
 
 <!-- ====================================================================== -->
