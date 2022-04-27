@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.date: 11/16/2021
 ms.openlocfilehash: 56252933078aa9483bec0f2ee5649187da5a7690
 ms.sourcegitcommit: d753bc98ca50acdcdb7a8bf911af3465d3228058
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/29/2022
 ms.locfileid: "12465154"
@@ -37,7 +37,7 @@ Microsoft Edge DevTools 团队正在试验新的 DevTools UI：**焦点模式**�
 :::image type="content" source="../../media/2021/11/focus-mode.png" alt-text="焦点模式，包括活动栏。":::
 
 另请参阅：
-*  [使用焦点模式简化 DevTools](../../../experimental-features/focus-mode.md)。
+*  [使用专注模式简化开发工具](../../../experimental-features/focus-mode.md)。
 *  `MSEdgeExplainers` 存储库中的 [DevTools：焦点模式 UI](https://github.com/MicrosoftEdge/DevTools/blob/main/explainers/FocusMode/explainer.md)。
 
 

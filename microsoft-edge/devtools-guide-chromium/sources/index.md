@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.date: 03/18/2022
 ms.openlocfilehash: 594efc984ea497be8b75011242ec7ab47c238120
 ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/22/2022
 ms.locfileid: "12459663"
@@ -33,7 +33,7 @@ ms.locfileid: "12459663"
 
 **详细内容：**
 
-* [导航器、编辑器和调试器窗格](#the-navigator-editor-and-debugger-panes)
+* [导航器、编辑器和调试程序窗格](#the-navigator-editor-and-debugger-panes)
 * [使用导航器窗格选择文件](#using-the-navigator-pane-to-select-files)
    * [使用"页面"选项卡浏览构建当前网页的资源](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
    * [使用"文件系统"选项卡定义本地 Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
@@ -66,7 +66,7 @@ ms.locfileid: "12459663"
       * [Changes inside a function take effect](#changes-inside-a-function-take-effect) -->
 
 
-## <a name="the-navigator-editor-and-debugger-panes"></a>导航器、编辑器和调试器窗格
+## <a name="the-navigator-editor-and-debugger-panes"></a>导航器、编辑器和调试程序窗格
 
 " **源** "工具具有三个窗格：
 
