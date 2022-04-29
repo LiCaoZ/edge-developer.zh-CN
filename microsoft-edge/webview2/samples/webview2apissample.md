@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/18/2022
-ms.openlocfilehash: 649e2d44f2ee18d66c09b558acfc73be954b2828
-ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
+ms.date: 04/27/2022
+ms.openlocfilehash: 05cf6baa9f5ab1360e4c716436792ad24550f9b8
+ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "12473913"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12497021"
 ---
 # <a name="webview2-sample-win32-c-app"></a>WebView2 示例：Win32 C++ 应用
 
@@ -30,11 +30,11 @@ API 示例展示了一系列 WebView2 的事件处理程序和 API 方法，这�
 
 当前页面上的步骤是通用的。  请参阅 README 部分中特定于示例的步骤，这些步骤可能会覆盖当前页面。
 
-1. 在单独的窗口或选项卡中，阅读此项目的呈现 README.md 文件GitHub：[WebView2APISample 的自述文件](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme)。  然后返回到此页面，并继续执行以下步骤。
+1. 在单独的窗口或选项卡中，阅读此项目的呈现 README.md 文件GitHub：[WebView2APISample 的自述文件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme)。  然后返回到此页面，并继续执行以下步骤。
 
-   * [自述文件>先决条件](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#prerequisites)
+   * [自述文件>先决条件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#prerequisites)
 
-   * [自述文件>生成 WebView2 API 示例](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#build-the-webview2-api-sample)
+   * [自述文件>生成 WebView2 API 示例](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#build-the-webview2-api-sample)
 
    还可以查看Visual Studio中未呈现)  (README.md 源文件。  在**文件管理器**或Visual Studio > 解决方案资源管理器中，打开该文件：<!-- todo: is there a .md preview capability locally? -->
 
@@ -164,7 +164,7 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 
    _若要缩放，请右键单击> **在新选项卡中打开图像**。_
 
-1. 使用示例应用。  请参阅 [WebView2 API 示例的自述文件](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme)
+1. 使用示例应用。  请参阅 [WebView2 API 示例的自述文件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme)
 
 1. 在Visual Studio中，选择 **“调试** > **Stop调试**”。  Visual Studio关闭应用。
 
@@ -176,7 +176,7 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 
 
 <!--
-Note: The `.sln` file is not in the sample repo directory that contains this sample's [README.md file](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme), or the equivalent local filesystem directory.  Instead, the `.sln` file for this sample is in the parent directory that corresponds to the [SampleApps](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps) repo directory.
+Note: The `.sln` file is not in the sample repo directory that contains this sample's [README.md file](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme), or the equivalent local filesystem directory.  Instead, the `.sln` file for this sample is in the parent directory that corresponds to the [SampleApps](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps) repo directory.
 -->
 
 

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 03/10/2022
-ms.openlocfilehash: 7638f51a9adc255d22d743e1bfad5f7d233a93cb
-ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
+ms.date: 04/27/2022
+ms.openlocfilehash: f0ebc94f8ef9b29754cc854b95355e1e7f9eefec
+ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "12473803"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12496707"
 ---
 # <a name="customize-context-menus-in-webview2"></a>自定义 WebView2 中的上下文菜单
 
@@ -889,4 +889,4 @@ WebView2 控件引发此事件，指示用户选择了应用添加到上下文�
 
 * [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples)
 
-<!-- spec: https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/ContextMenuRequested.md -->
+<!-- spec: https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/ContextMenuRequested.md -->

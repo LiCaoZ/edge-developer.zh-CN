@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/12/2022
-ms.openlocfilehash: 59f6bce45ff3ff26d0f85547263557d02cdef0d1
-ms.sourcegitcommit: f3b9330df0179658909c2131ed3a4d2fcd067b8e
+ms.date: 04/27/2022
+ms.openlocfilehash: cc646a118d8d9c1a9d342935e9ecbee5f5a83979
+ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "12478375"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12496727"
 ---
 # <a name="release-notes-for-the-webview2-sdk"></a>WebView2 SDK 发行说明
 
@@ -711,7 +711,7 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 *  添加了 [IsPinchZoomEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings4?view=webview2-1.0.865-prerelease&preserve-view=true#ispinchzoomenabled) 设置。 它允许在设置中打开或关闭页面缩放控件。
 *  添加了自定义 [add_DownloadStarting](/microsoft-edge/webview2/reference/win32/icorewebview2experimental2?view=webview2-1.0.865-prerelease&preserve-view=true#add_downloadstarting) API。  它允许阻止下载、保存到其他路径，并访问所需的元数据以生成自定义下载 UI。
 *  添加了`iframe`[来自 AddHostObjectToScriptWithOrigins 的](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe?view=webview2-1.0.865-prerelease&preserve-view=true#addhostobjecttoscriptwithorigins)元素支持。
-*  为 [WPF 示例应用](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser) 添加了示例代码，用于使用 API 关闭浏览器函数密钥。
+*  为 [WPF 示例应用](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser) 添加了示例代码，用于使用 API 关闭浏览器函数密钥。
 *  添加了 [UpdateRuntime](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment3?view=webview2-1.0.865-prerelease&preserve-view=true#updateruntime) API，以便轻松更新 WebView2 运行时。
 
 #### <a name="bug-fixes"></a>Bug 修复
@@ -1130,10 +1130,10 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 此预发行版的 WebView2 SDK 需要Microsoft Edge版本 84.0.515.0 或更高版本。
 
 *  > [!IMPORTANT]
-   > **公告**：WebView2 现在支持 .NET Framework 4.6.2 或更高版本的 Windows Forms 和 WPF，**在预发行包**中支持 .NET Core 3.0 或更高版本。
+   > **公告**：WebView2 现在支持 .NET Framework 4.6.2 或更高版本的 Windows 窗体 和 WPF，**在预发行包**中支持 .NET Core 3.0 或更高版本。
 
-*  有关生成 WPF 应用的详细信息，请参阅 [WPF 应用中的 WebView2 Első lépések](get-started/wpf.md)和特定于 WPF 的 API 的 WebView2 [WPF 参考](/dotnet/api/microsoft.web.webview2.wpf)。
-*  有关构建Windows Forms应用的详细信息，请参阅 [WinForms 应用中的 WebView2 Első lépések](get-started/winforms.md)，[以及适用于特定 API 的](/dotnet/api/microsoft.web.webview2.winforms) WebView2 Windows Forms Windows Forms参考。
+*  有关生成 WPF 应用的详细信息，请参阅 [WPF 应用中的 WebView2 开始](get-started/wpf.md)和特定于 WPF 的 API 的 WebView2 [WPF 参考](/dotnet/api/microsoft.web.webview2.wpf)。
+*  有关构建Windows 窗体应用的详细信息，请参阅 [WinForms 应用中 WebView2 的开始](get-started/winforms.md)，以及适用于Windows 窗体特定 API 的 WebView2 [Windows 窗体参考](/dotnet/api/microsoft.web.webview2.winforms)。
 *  有关 CoreWebView2 API 的详细信息，请参 [阅 .NET 参考](/dotnet/api/microsoft.web.webview2.core)。
 *  > [!CAUTION]
    > **已知问题**：WebView2 团队知道预发行版中的一些问题，这些问题将在未来版本中得到解决。
@@ -1232,7 +1232,7 @@ WebView2 SDK 是官方 Win32 C++ Beta 版本，它包含来自反馈的多个功
 
 此版本的 WebView2 SDK 需要Microsoft Edge版本 80.0.355.0 或更高版本。
 
-*  发布了 WebView2API 示例，这是 WebView2 SDK 的综合指南。  请参阅 [API 示例](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample)。
+*  发布了 WebView2API 示例，这是 WebView2 SDK 的综合指南。  请参阅 [API 示例](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample)。
 *  添加了对除英语 ([#30](https://github.com/MicrosoftEdge/WebViewFeedback/issues/30)) 之外的所有语言的 IME 支持。
 *  更新了事件的 `WebResourceRequested` API 图面以响应 bug 报告。  同时指定筛选器和创建时的事件现已弃用。  若要创建 Web 资源请求的事件，请使用 [add_WebResourceRequested](/microsoft-edge/webview2/reference/win32/iwebview2webview5?view=webview2-0.8.355&preserve-view=true#add_webresourcerequested) 添加事件， [并使用 AddWebResourceRequestedFilter](/microsoft-edge/webview2/reference/win32/iwebview2webview5?view=webview2-0.8.355&preserve-view=true#addwebresourcerequestedfilter) 添加筛选器。  [RemoveWebResourceRequestedFilter](/microsoft-edge/webview2/reference/win32/iwebview2webview5?view=webview2-0.8.355&preserve-view=true#removewebresourcerequestedfilter) 删除筛选器 ([#36](https://github.com/MicrosoftEdge/WebViewFeedback/issues/36))  ([#74](https://github.com/MicrosoftEdge/WebViewFeedback/issues/74)) 。
 *  > [!IMPORTANT]

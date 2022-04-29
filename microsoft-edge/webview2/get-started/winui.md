@@ -6,20 +6,20 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 11/05/2021
-ms.openlocfilehash: 2497457352bafbabbcfec6e9d6d264b91c233554
-ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
+ms.date: 04/27/2022
+ms.openlocfilehash: 4a3295c9642b3bb84f0589fe77b92ed6eddb4942
+ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "12473941"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12496804"
 ---
 # <a name="get-started-with-webview2-in-winui-3-windows-app-sdk-apps"></a>在 WinUI 3 (Windows 应用 SDK) 应用中使用 WebView2 开始
 
 本文介绍如何为 WinUI 3 (Windows 应用 SDK) 设置开发工具和创建初始 WebView2 应用，并在此过程中了解 WebView2 概念。
 
 
-* GitHub的相应入门示例：[在 WinUI3 (WinUI3_GettingStarted/WinUI_Sample.sln) 中使用 WebView2 入门 ](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/GettingStartedGuides/WinUI3_GettingStarted/README.md)
+* GitHub的相应入门示例：[在 WinUI3 (WinUI3_GettingStarted/WinUI_Sample.sln) 中使用 WebView2 入门 ](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/GettingStartedGuides/WinUI3_GettingStarted/README.md)
 
 
 <!-- ====================================================================== -->
@@ -389,7 +389,7 @@ WinRT `CoreWebView2` 对象可能无法与 WebView2 API 的版本一起使用。
 * [WebView2 appsDevelopment 最佳做法的开发最佳做法](../concepts/developer-guide.md)
 
 GitHub：
-* [在 WinUI3 中使用 WebView2 入门](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinUI3_GettingStarted#readme)
+* [在 WinUI3 中使用 WebView2 入门](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted#readme)
 * [规范：WebView2 Xaml 控件 - WebView2](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md) 控件的 WinUI 3.0 版本。
 * [microsoft-ui-xaml 存储库>问题](https://github.com/microsoft/microsoft-ui-xaml/issues) - 输入特定于 WinUI 的功能请求或 bug。
 

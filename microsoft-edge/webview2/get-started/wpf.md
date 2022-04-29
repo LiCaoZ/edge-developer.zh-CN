@@ -6,19 +6,19 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 11/05/2021
-ms.openlocfilehash: 3cc42ded35cb75fbba2d10c3e7eefbabf12f433c
-ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
+ms.date: 04/27/2022
+ms.openlocfilehash: 4fbd1abed5709040086bd0d583a1d1e16ef4dddd
+ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "12473839"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12496741"
 ---
 # <a name="get-started-with-webview2-in-wpf-apps"></a>WPF 应用中的 WebView2 入门
 
 本文介绍如何设置开发工具并为Windows Presentation Foundation (WPF) 创建初始 WebView2 应用，并了解 WebView2 概念。
 
-* GitHub的相应入门示例：[在 WPF (WPF_GettingStarted/WPFSample.sln) 中使用 WebView2 入门 ](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WPF_GettingStarted#readme)
+* GitHub的相应入门示例：[在 WPF (WPF_GettingStarted/WPFSample.sln) 中使用 WebView2 入门 ](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted#readme)
 
 
 <!-- ====================================================================== -->

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/02/2022
-ms.openlocfilehash: f2bef8837cc0963edd9803c709baf17457747c8d
-ms.sourcegitcommit: 3e6de1ad86f44a667c0fcf1f40013f11f70e78e4
+ms.openlocfilehash: f02003d0bcd785243c9ae2ea1aad3babc3f41a2c
+ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "12478241"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12496818"
 ---
 # <a name="about-the-list-of-tools"></a>关于工具列表
 
@@ -41,7 +41,7 @@ Microsoft Edge DevTools 包括以下工具。
 
 | 工具 | 用途 | 文章 |
 | --- | --- | --- |
-| **3D 视图** 工具 | 浏览已转换为 3D 透视的网页。  通过浏览 DOM 或 z 索引堆栈上下文来调试网页。 | [使用 3D 视图工具导航 z 索引、DOM 和层](3d-view/index.md) |
+| **3D 视图** 工具 | 浏览已转换为 3D 透视的网页。  通过浏览 DOM 或 z 索引堆栈上下文来调试网页。 | [使用 3D 视图工具导航网页层、z 索引和 DOM](3d-view/index.md) |
 | **动画** 工具 | 使用动画工具中的 **动画检查器** 检查和修改 CSS **动画** 效果。 | [检查和修改 CSS 动画效果](inspect-styles/animations.md) |
 | **应用程序** 工具 | _HTTP Cookie_ 主要用于管理用户会话、存储用户个性化首选项和跟踪用户行为。  使用**应用程序**工具的 **Cookie** 窗格查看、编辑和删除网页的 HTTP cookie。 | [查看、编辑和删除 Cookie](storage/cookies.md) |
 | **更改** 工具 | 跟踪在 DevTools 中对 CSS 或 JavaScript 所做的任何更改。  显示在使用 DevTools 修改从服务器发送的网页文件后对实际源文件所做的更改。 | [使用更改工具跟踪对文件的更改](changes/changes-tool.md) |

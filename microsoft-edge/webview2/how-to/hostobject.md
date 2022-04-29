@@ -6,37 +6,37 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 2/28/2022
-ms.openlocfilehash: 1c8e7c71ec6f4773d3293b993f0eb333c7f16950
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.date: 04/27/2022
+ms.openlocfilehash: 71e1598cc40b98e1191b88429871b4621f5086e3
+ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12433507"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12496986"
 ---
 # <a name="call-native-side-code-from-web-side-code"></a>从 Web 端代码调用本机代码
 
-WebView2 使应用程序能够将对象传递到 Web，从而缩小应用程序的 Web 和本机面之间的间隙。 此类对象在本机代码中定义，通常称为 *host 对象*。 它们可以使用 WebView2 `AddHostObjectToScript` API 计划到 JavaScript 中，如本文档中所述。
+WebView2 使应用程序能够通过启用要传递到 Web 的对象来弥合应用程序的 Web 和本机端之间的差距。 此类对象在本机代码中定义，通常称为 *主机对象*。 可以使用 WebView2 `AddHostObjectToScript` API 将它们投影到 JavaScript 中，如本文档中所述。
 
-为什么使用 `AddHostObjectToScript`？
+为什么要使用 `AddHostObjectToScript`？
 
-  * 开发 WebView2 应用时，你可能会遇到一个本机对象，该对象的方法或属性非常有用。 你可能想要从 Web 端代码触发这些本机对象方法，或者由于应用 Web 端上的用户交互而触发。 此外，您可能不希望在 Web 端代码中重新实现本机对象的方法。  API `AddHostObjectToScript` 支持通过 Web 端代码重新使用本机代码。 
+  * 开发 WebView2 应用时，可能会遇到一个本机对象，该对象的方法或属性非常有用。 你可能想要从 Web 端代码触发这些本机对象方法，或者是应用 Web 端的用户交互的结果。 此外，你可能不想在 Web 端代码中重新实现本机对象的方法。  API `AddHostObjectToScript` 允许通过 Web 端代码重新使用本机端代码。 
 
-  * 例如，可能有本机网络摄像机 API，这需要在 Web 端重新编写大量代码。 能够调用本机对象的方法比在应用的 Web 端重新编码对象的方法更快速、更高效。 在这种情况下，本机代码可以将对象传递到应用的 Web 端 JavaScript 代码，以便 JavaScript 代码可以重复使用本机 API 的方法。
+  * 例如，可能有一个本机网络摄像头 API，需要在 Web 端重新编写大量代码。 能够调用本机对象的方法比在应用的 Web 端重新编码对象的方法更快、更高效。 在这种情况下，本机代码可以将对象传递到应用的 Web 端 JavaScript 代码，以便 JavaScript 代码可以重复使用本机 API 的方法。
 
-可能受益于在脚本中使用主机对象的方案：
+在脚本中使用主机对象可能受益的方案：
 
-  * 存在键盘 API，并且你想要从 Web `keyboardObject.showKeyboard` 端调用 函数。
+  * 有一个键盘 API，你想要从 Web 端调用该 `keyboardObject.showKeyboard` 函数。
 
-  * JavaScript 是沙盒，限制了其本机功能。 例如，如果需要访问本机上的文件，则必须使用本机文件系统。 如果你有通过 公开给 JavaScript `AddHostObjectToScript`的本机对象，可以使用它操作本机文件系统上的文件。
+  * JavaScript 是沙盒的，限制了其在本机端的功能。 例如，如果需要访问本机端的文件，则必须使用本机文件系统。 如果你有一个通过 `AddHostObjectToScript`JavaScript 公开的本机对象，则可以使用它来操作本机文件系统上的文件。
 
-本文使用 [WebView2 Win32 示例应用](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample) 演示 的一些实际应用程序 `AddHostObjectToScript`。 若要详细了解如何将 Web 内容嵌入本机应用程序中，请参阅 [将 Web 内容嵌入本机应用程序](/microsoft-edge/webview2/how-to/communicate-btwn-web-native)。
+本文使用 [WebView2 Win32 示例应用](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample) 演示一些实际应用 `AddHostObjectToScript`。 有关如何将 Web 内容嵌入本机应用程序的详细信息，请参阅 [将 Web 内容嵌入本机应用程序](/microsoft-edge/webview2/how-to/communicate-btwn-web-native)。
 
-**预览本文中的主要步骤：**
+**本文中主要步骤的预览：**
 
-1. 安装Visual Studio、安装 git、克隆 [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample)，然后打开解决方案。
+1. 安装Visual Studio、安装 git、克隆 [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample)并打开解决方案。
 
-1. 定义主机对象并实现 `IDispatch` ，以便 WebView2 可以将其项目/添加到 Web 端。
+1. 定义主机对象并实现 `IDispatch` ，以便 WebView2 可以投影/将其添加到 Web 端。
 
 1. 用于 `AddHostObjectToScript` 将对象传递到 Web。
 
@@ -44,39 +44,39 @@ WebView2 使应用程序能够将对象传递到 Web，从而缩小应用程序�
 
 
 <!-- ====================================================================== -->
-## <a name="step-1-install-visual-studio-install-git-clone-the-webview2samples-repo-and-open-the-solution"></a>步骤 1：Visual Studio、安装 git、克隆 WebView2Samples 存储库并打开解决方案
+## <a name="step-1-install-visual-studio-install-git-clone-the-webview2samples-repo-and-open-the-solution"></a>步骤 1：安装Visual Studio、安装 git、克隆 WebView2Samples 存储库并打开解决方案
 
-1. 下载并安装 [Microsoft Visual Studio](https://visualstudio.microsoft.com/) 2019 (版本 16.11.10) 或更高版本，以及 [Win32 应用中的 WebView2](/microsoft-edge/webview2/get-started/win32) 入门中所述的其他先决条件。
+1. 下载并安装 [Microsoft Visual Studio](https://visualstudio.microsoft.com/) 2019 (版本 16.11.10) 或更高版本，以及 [Win32 应用中 WebView2 开始中](/microsoft-edge/webview2/get-started/win32)所述的其他先决条件。
 
-1. 克隆 [WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) 存储库，其中包括特定于 Win32 的 WebView2 示例应用。  有关说明，在新建窗口或选项卡中，打开  [Win32 应用中的 WebView2 入门](/microsoft-edge/webview2/get-started/win32)。
+1. 克隆 [WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) 存储库，其中包括特定于 Win32 的 WebView2 示例应用。  有关说明，在新窗口或选项卡中，使用 [Win32 应用中的 WebView2 打开开始](/microsoft-edge/webview2/get-started/win32)。
 
 1. 打开 Microsoft Visual Studio。
 
-1. 在克隆存储库的本地副本中 `WebView2Samples` ，打开 `GettingStartedGuides > Win32_GettingStarted > WebView2GettingStarted.sln`。 保持示例应用解决方案为打开状态，以遵循本文的其余部分。
+1. 在克隆 `WebView2Samples` 存储库的本地副本中，打开 `GettingStartedGuides > Win32_GettingStarted > WebView2GettingStarted.sln`。 使示例应用解决方案保持打开状态，以配合本文的其余部分。
 
 
 <!-- ====================================================================== -->
-## <a name="step-2-define-the-host-object-and-implement-idispatch"></a>步骤 2：定义主机对象和实现 IDispatch
+## <a name="step-2-define-the-host-object-and-implement-idispatch"></a>步骤 2：定义主机对象并实现 IDispatch
 
-若要使用此 `AddHostObjectToScript` API，首先需要定义实现 的主机对象 `IDispatch`。 如果已经有一个实现 的主机 `IDispatch`对象，请跳到步骤 [3：调用 AddHostObjectToScript API](#step-3-call-the-addhostobjecttoscript-api)。 实现 `IDispatch` 对设置主机对象的格式至关重要，以便可以传递给 Web 端代码。
+若要使用此 `AddHostObjectToScript` API，首先需要定义实现的 `IDispatch`主机对象。 如果已有实现的 `IDispatch`主机对象，请跳到 [步骤 3：调用 AddHostObjectToScript API](#step-3-call-the-addhostobjecttoscript-api)。 实现 `IDispatch` 对于设置主机对象的格式，以便将其传递到 Web 端代码至关重要。
 
-下面的示例从头创建一个主机对象。
+以下示例从头开始创建主机对象。
 
-**第 2A 部分：** 使用接口定义语言和 IDL (COM) 。 这一点在 文件中 `HostObjectSample.idl` 演示。 
+**第 2A 部分：** 使用接口定义语言 (IDL) 创建 COM 接口。 此操作在文件中 `HostObjectSample.idl` 演示。 
 
-**第 2B 部分：** 创建 C++ 对象。 这一点在 文件中 `HostObjectSampleImpl.cpp` 演示。
+**第 2B 部分：** 创建 C++ 对象。 此操作在文件中 `HostObjectSampleImpl.cpp` 演示。
 
-**重要提示：** IDL (`.idl`) 定义接口，C**++ `.cpp` (*) 文件实现*定义的接口，并且还实现 。`IDispatch`
+**重要：** IDL (`.idl`) 文件 *定义* 接口，C++ () `.cpp` 文件 *实现定义的* 接口，并实现 `IDispatch`。
 
 ### <a name="part-2a-create-the-com-interface"></a>第 2A 部分：创建 COM 接口
 
-在 WebView2 示例代码中，该文件 `HostObjectSample.idl` 将创建一个 COM 对象。 此步骤介绍如何在 IDL 文件中创建自己的对象。
+在 WebView2 示例代码中，该文件 `HostObjectSample.idl` 创建一个 COM 对象。 此步骤介绍如何在 IDL 文件中创建自己的对象。
 
-1. 在Visual Studio**资源管理器**"中，打开 **WebView2APISampleSource** >  **FilesHostObjectSample.idl****** > 。
+1. 在Visual Studio**解决方案资源管理器**中，打开 **WebView2APISampleSource** >  **FilesHostObjectSample.idl****** > 。
 
-    以下代码示例分为两个部分。 第一个接口 `IHostObjectSample`是从第 9 行开始，它继承该 `IUnknown` 接口。 `IHostObjectSample`使用此定义作为模板来定义对象的方法、属性、回调函数等。
+    以下代码示例分为两个部分。 第一个接口是 `IHostObjectSample`从继承 `IUnknown` 接口的第 9 行开始。 使用此 `IHostObjectSample` 定义作为模板来定义对象的方法、属性、回调函数等。
     
-    第二部分是组件 `HostObjectSample` 对象类 [coclass](/windows/win32/midl/coclass)，从第 35 行开始，其中包括 `IDispatch` 和  `IHostObjectSample` 接口。
+    第二部分是 `HostObjectSample` 组件对象类 [coclass](/windows/win32/midl/coclass)，从第 35 行（包括 `IDispatch` ）和  `IHostObjectSample` 接口开始。
 
     ```csharp
      1    import "oaidl.idl";
@@ -120,37 +120,37 @@ WebView2 使应用程序能够将对象传递到 Web，从而缩小应用程序�
     40    }
     ```
 
-1. 在行 38 中， `interface IDispatch`我们包括了 ，主机对象需要此代码才能使用 `AddHostObjectToScript`。
+1. 第38行，我们包括 `interface IDispatch`，这是需要我们的主机对象使用 `AddHostObjectToScript`。
 
     **关于 IDispatch**：
 
-    `IDispatch` 允许你动态调用方法和属性。 通常，调用对象需要静态调用，但可以使用 JavaScript 动态创建对象调用。 有关继承和方法的信息 `IDispatch` ，请参阅 [IDispatch interface (oaidl.h) ](/windows/win32/api/oaidl/nn-oaidl-idispatch)。 
+    `IDispatch` 允许你动态调用方法和属性。 通常，调用对象需要静态调用，但可以使用 JavaScript 动态创建对象调用。 有关 `IDispatch` 继承和方法的详细信息，请 [参阅 IDispatch 接口 (oaidl.h) ](/windows/win32/api/oaidl/nn-oaidl-idispatch)。 
     
-    如 `IDispatch` 类型库 [和对象描述语言中所述实现](/previous-versions/windows/desktop/automat/type-libraries-and-the-object-description-language)。
+    如`IDispatch`[类型库和对象描述语言](/previous-versions/windows/desktop/automat/type-libraries-and-the-object-description-language)中所述实现。
     
-    如果要添加到 JavaScript `IDispatch``IDispatch` 的对象还没有实现 ，则需要为要公开的对象编写类包装。
+    如果要添加到 JavaScript 的对象尚未实现 `IDispatch`，则需要为要公开的对象编写 `IDispatch` 类包装器。
 
-    可能有一些库可以自动执行这一操作。  若要了解有关为要公开 `IDispatch` 的对象编写类包装器所需的步骤，请参阅 [自动化](/previous-versions/windows/desktop/automat/automation-programming-reference)。
+    可能有库可以自动执行此操作。  若要详细了解为要公开的对象编写 `IDispatch` 类包装所需的步骤，请参阅 [自动化](/previous-versions/windows/desktop/automat/automation-programming-reference)。
     
-1. 在 IDL 中定义接口后，在 Visual Studio 中保存并编译示例项目，以在 TLB (创建) 缓冲区。 你需要从 C++ 源代码引用 TLB 文件，如以下部分所示。
+1. 在 IDL 中定义接口后，保存并编译Visual Studio中的示例项目，以创建转换外观缓冲区 (TLB) 文件。 需要从以下部分中所示的 C++ 源代码引用 TLB 文件。
 
 ### <a name="part-2b-create-the-c-object"></a>第 2B 部分：创建 C++ 对象
 
-在 WebView2 示例代码中 `HostObjectSampleImpl.cpp` ，文件采用在 COM IDL 文件中创建框架并生成 C++ 对象。
+在 WebView2 示例代码中， `HostObjectSampleImpl.cpp` 该文件采用 COM IDL 文件中创建的框架并生成 C++ 对象。
 
-实现在对象接口中定义的所有函数，如 IDL 文件所述。 请务必实现 所需的函数 `IDispatch`。  如果未定义这些函数，编译器将引发错误。
+实现对象界面中定义的所有函数，如 IDL 文件中所述。 请务必实现所需的函数 `IDispatch`。  如果未定义这些函数，编译器将引发错误。
 
-接下来，我们检查在 IDL 中定义的两个特定属性，以显示 IDL 与文件是如何相关的 `.cpp` 。
+接下来，我们检查 IDL 中定义的两个特定属性，以显示 IDL 与文件的相关 `.cpp` 性。
 
-1. 在Visual Studio**资源管理器**"中，打开 **WebView2APISampleSource** >  **FilesHostObjectSampleImpl.cpp****** > 。
+1. 在Visual Studio**解决方案资源管理器**中，打开 **WebView2APISampleSource** >  **FilesHostObjectSampleImpl.cpp****** > 。
 
-1. 比较 ... *中的*属性声明`HostObjectSample.idl`
+1. 比较属性 *声明*，在 `HostObjectSample.idl` ...
  
     ```csharp
     [propget] HRESULT Property([out, retval] BSTR* stringResult);
     [propput] HRESULT Property([in] BSTR stringValue);
     ```
-    ...到 *对象* 属性的实现，在 `HostObjectSampleImpl.cpp`中：
+    ...若要 *实现* 对象的属性，请执行以下操作 `HostObjectSampleImpl.cpp`：
 
     ```cpp
     STDMETHODIMP HostObjectSample::get_Property(BSTR* stringResult)
@@ -170,11 +170,11 @@ WebView2 使应用程序能够将对象传递到 Web，从而缩小应用程序�
 <!-- ====================================================================== -->
 ## <a name="step-3-call-the-addhostobjecttoscript-api"></a>步骤 3：调用 AddHostObjectToScript API
 
-到目前为止，我们已经构建了接口并实现了我们的主机对象。 现在我们可以使用 API 将 `AddHostObjectToScript` 主机对象传递到应用的 Web 端 JavaScript 代码。
+到目前为止，我们已经构建了接口并实现了主机对象。 现在，我们已准备好使用 `AddHostObjectToScript` API 将主机对象传递到应用的 Web 端 JavaScript 代码。
 
-1. 在Visual Studio**资源管理器**"中，打开 **Web在 2APISampleSource** >  **文件** > **ScenarioHostObject.cpp**。
+1. 在Visual Studio**解决方案资源管理器**中，打开 **WebVie2APISampleSource** >  **FilesScenarioHostObject.cpp****** > 。
 
-1. 转到第 28 行，其中 `ScenarioAddHostObject` 类开始。
+1. 转到课程开始的第 `ScenarioAddHostObject` 28 行。
 
     ```cpp
     28    ScenarioAddHostObject::ScenarioAddHostObject(AppWindow* appWindow)
@@ -214,39 +214,39 @@ WebView2 使应用程序能够将对象传递到 Web，从而缩小应用程序�
     62            }
     ```
 
-    第 31 至 46 行显示特定于此示例应用的代码，我们在此显示 HTML。 你的应用可能对此代码具有不同的实现。  
+    第 31 行到第 46 行显示特定于此示例应用的代码，我们在其中显示 HTML。 你的应用可能具有此代码的不同实现。  
 
-1. 查看第 33 行，其中显示了如何实例化 IDL 文件中刚定义的 COM 对象。 这是我们稍后在调用 时将使用的对象 `AddHostObjectToScript`。 这将获取指向 中接口的指针 `HostObjectSampleImpl.cpp`。
+1. 查看第 33 行，显示如何实例化 IDL 文件中刚定义的 COM 对象。 这是我们稍后在调用 `AddHostObjectToScript`时使用的对象。 这会给我们一个指向接口的 `HostObjectSampleImpl.cpp`指针。
 
-1. 查看第 51 行，该行将新创建的 COM `IDispatch` 对象转换为类型，然后将该对象转换为 `VARIANT`。 `VARIANT` types 允许您使用数据结构（如整数和数组）以及更复杂的类型（如 `IDispatch`）。 
+1. 查看第 51 行，该行将新创建的 COM 对象转换为类型 `IDispatch` ，然后将该对象转换为一个 `VARIANT`类型。 `VARIANT` 类型允许你使用数据结构，如整数和数组，以及更复杂的类型，如 `IDispatch`。 
 
-    有关受支持的数据类型的完整列表，请参阅 [VARIANT structure (oaidl.h) - Win32 apps |Microsoft Docs](/windows/win32/api/oaidl/ns-oaidl-variant)。但是，请注意，并非所有联合类型 `VARIANT` 都受 支持 `AddHostObjectToScript`。 请参阅 [WebView2 Win32 C++ ICoreWebView2 |有关更多详细信息，请参阅 Microsoft Docs](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript) 。
+    有关受支持数据类型的完整列表，请[参阅 VARIANT 结构 (oaidl.h) - Win32 应用|Microsoft Docs](/windows/win32/api/oaidl/ns-oaidl-variant)。但是，请注意，联盟中`VARIANT`并非所有类型都受`AddHostObjectToScript`支持。 请参阅 [WebView2 Win32 C++ ICoreWebView2 |Microsoft Docs](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript)了解更多详细信息。
     
-    现在我们具有 C++ 代码友好的对象的变体，我们的应用的本机代码已准备好将主机对象传递到应用的 Web 端代码。
+    现在，我们的对象变体对 C++ 代码友好，应用的本机端代码已准备好将主机对象传递到应用的 Web 端代码。
 
-1. 查看第 52 行，将远程对象变量类型设置为 `IDispatch`。 
+1. 查看第 52 行，该行将远程对象变体类型设置为 `IDispatch`。 
 
-1. 查看第 59 行`VARIANT` `VARIANT` `AddHostObjectToScript``sample``&remoteObjectAsVariant` ，其中我们将 传递到 ，将它命名，并启用远程对象作为 () 。
+1. 查看第 59 行，在其中传递 `VARIANT` 给 `AddHostObjectToScript`远程对象，将其 `sample`命名，并启用远程对象作为 `VARIANT` () `&remoteObjectAsVariant` 。
 
-现在，WebView2 应用的本机代码已成功创建实现 的主机对象 `IDispatch`。 此本机代码还调用 WebView2 API `AddHostObjectToScript` ，并且通过 将对象传递给应用的 Web 端代码 `AddHostObjectToScript`。 继续执行下一步，查看通过将主机对象从应用的本机代码传递到应用的 Web 端代码启用的内容。
+现在，WebView2 应用的本机端代码已成功创建实现的 `IDispatch`主机对象。 此本机代码还会调用 WebView2 API `AddHostObjectToScript` ，并通过将对象传递给应用的 Web 端代码 `AddHostObjectToScript`。 继续执行下一步，了解通过将主机对象从应用的本机端代码传递到应用的 Web 端代码来启用的内容。
 
 
 <!-- ====================================================================== -->
 ## <a name="step-4-use-addhostobjecttoscript-to-pass-a-method-to-the-web"></a>步骤 4：使用 AddHostObjectToScript 将方法传递到 Web
 
-为了继续操作，我们使用 WebView2 示例应用。  
+若要继续操作，我们使用 WebView2 示例应用。  
 
-1. In Microsoft Visual Studio， select **FileSave All (Ctrl+Shift+S) ** to save the project.**** > 
+1. 在Microsoft Visual Studio中，选择 **“文件** > **保存所有 (Ctrl+Shift+S) **以保存项目。
 
 1. 按 **F5** 生成并运行项目。
 
 1. 打开 `ScenarioAddHostObject.html`。
 
-1. 单击 **"ScenarioHost** >  **对象"**。
+1. 单击 **ScenarioHost****** >  对象。
 
-1. 通过单击"属性"、**"方法**"和"回调"**** 等按钮来浏览属性，以查看示例代码的行为方式。****
+1. 通过单击**属性、****方法**和**回调**等按钮来浏览属性，以查看示例代码的行为方式。
 
-    现在，你已观察到从应用的 Web 端代码使用的主机对象的功能。 若要深入了解 JavaScript 中发生了什么，让我们看一下以下代码： 
+    至此，你已观察到从应用的 Web 端代码中使用的主机对象的功能。 若要深入了解 JavaScript 中发生的情况，我们来检查以下代码： 
 
     ```html
     150    // Date property 
@@ -261,8 +261,8 @@ WebView2 使应用程序能够将对象传递到 Web，从而缩小应用程序�
     159    });
     ```
 
-    第 154 行引用 `chrome.webview.hostObjects.sync.sample.dateProperty`。 此代码行获取 `dateProperty` 本机 host 对象的 。
+    第 154 行引用 `chrome.webview.hostObjects.sync.sample.dateProperty`。 此代码行获取本 `dateProperty` 机主机对象。
 
-祝贺你！ 你已成功在应用的本机代码中创建主机对象，将主机对象传递到应用的 Web 端代码，然后从应用的 Web 端代码使用 host 对象。
+祝贺你！ 你已在应用的本机代码中成功创建了主机对象，将主机对象传递给应用的 Web 端代码，然后使用应用的 Web 端代码中的主机对象。
 
-现在，让我们了解主机对象生态系统中还有哪些其他 API。 有关主机对象详细信息，请参阅 [WebView2 Win32 C++ ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1054.31#addhostobjecttoscript&preserve-view=true)。
+现在，让我们看看主机对象生态系统中还有哪些其他 API。 有关主机对象的详细信息，请参阅 [WebView2 Win32 C++ ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1054.31#addhostobjecttoscript&preserve-view=true)。

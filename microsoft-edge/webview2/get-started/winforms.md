@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/08/2022
-ms.openlocfilehash: 680c51a872c539f4f2a40104b7c3341b5cd5a34a
-ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
+ms.date: 04/27/2022
+ms.openlocfilehash: 5056c6b23310d7f6b1d66342fd65e198e3ef0dd0
+ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "12473911"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12496965"
 ---
 # <a name="get-started-with-webview2-in-winforms-apps"></a>WinForms 应用中的 WebView2 入门
 
@@ -29,11 +29,11 @@ todo: errors experienced with vs2022 by following these instructions:
 
 执行以下任一操作：
 
-*  使用以下步骤在Visual Studio中创建新项目。  若要查看已完成的项目，可以在存储库中`WebView2Samples`看到[WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinForms_GettingStarted)目录。
+*  使用以下步骤在Visual Studio中创建新项目。  若要查看已完成的项目，可以在存储库中`WebView2Samples`看到[WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted)目录。
 
 *  下载或克隆`WebView2Samples`存储库，在Visual Studio中打开已完成的项目，并按照本文中的步骤了解创建 WinForms 项目并了解添加的 WebView2 代码。
 
-GitHub的相应入门示例：[WinForms_GettingStarted/WinForms_GettingStarted.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinForms_GettingStarted) (没有自述文件) 。
+GitHub的相应入门示例：[WinForms_GettingStarted/WinForms_GettingStarted.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted) (没有自述文件) 。
 
 
 <!-- ====================================================================== -->
@@ -103,7 +103,7 @@ Microsoft Visual Studio是必需的。  本教程不支持Microsoft Visual Studi
 
    ![在“创建新项目”面板中，选择“C# > Windows 窗体应用 (.NET Framework) ”。](media/winforms-new-project.png)
 
-1. 在**Project名称**文本框中，输入项目名称。  本教程文章使用名称 **WinForms_GettingStarted**，如已完成项目的 [存储库目录名称](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinForms_GettingStarted) 。
+1. 在**Project名称**文本框中，输入项目名称。  本教程文章使用名称 **WinForms_GettingStarted**，如已完成项目的 [存储库目录名称](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted) 。
 
 1. 在 **“位置** ”文本框中，输入一个路径，例如“C：\Users\username\Documents\MyWebView2Projects\”。
 

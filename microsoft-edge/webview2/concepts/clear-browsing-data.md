@@ -6,30 +6,30 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/09/2022
-ms.openlocfilehash: edde57c078752519a6f5d7e76840c32219b68ed1
-ms.sourcegitcommit: 2631c3835d23d9adaa28c19198319588baf9d8c5
+ms.date: 04/27/2022
+ms.openlocfilehash: 1b7e20c6920fda8f92414061a2ad4b172ed32a66
+ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2022
-ms.locfileid: "12439664"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12496685"
 ---
 # <a name="clear-browsing-data-from-the-user-data-folder"></a>从用户数据文件夹中清除浏览数据
 
-若要清除 WebView2 应用的用户数据文件夹中的浏览数据并释放空间，请调用清除浏览数据 API 的方法。
+若要清除 WebView2 应用的用户数据文件夹中的浏览数据并释放空间，请调用 Clear Browsing Data API 的方法。
 
-"清除浏览数据"API 允许你以编程方式擦除与 WebView2 用户配置文件关联的用户数据文件夹中的数据。[](user-data-folder.md)  例如，使用此 API 在用户退出时清除用户数据和历史记录。
+使用 Clear Browsing Data API，可以以编程方式清除与 WebView2 用户配置文件关联的 [用户数据文件夹](user-data-folder.md) 中的数据。  例如，使用此 API 在用户注销时清除用户数据和历史记录。
 
 您可以：
 *  清除所有浏览数据。
-*  清除所选的浏览数据类型。
-*  清除指定时间范围内选定的浏览数据类型。
+*  清除所选类型的浏览数据。
+*  清除指定时间范围内的选定类型的浏览数据。
 
 
 <!-- ====================================================================== -->
 ## <a name="clear-all-browsing-data"></a>清除所有浏览数据
 
-此方法清除在数据类型枚举中列出的所有类型的浏览数据，而不管数据是何时创建的。  它清除调用方法的用户配置文件的用户数据文件夹中的数据。
+无论何时创建数据，此方法都会清除数据类型枚举中列出的所有类型的浏览数据。  它从调用该方法的用户配置文件的用户数据文件夹中清除数据。
 
 
 <!-- ------------------------------ -->
@@ -52,9 +52,9 @@ ms.locfileid: "12439664"
 
 
 <!-- ====================================================================== -->
-## <a name="clear-selected-kinds-of-browsing-data"></a>清除所选浏览数据类型
+## <a name="clear-selected-kinds-of-browsing-data"></a>清除所选类型的浏览数据
 
-此方法清除指定的浏览数据类型，无论数据创建时间如何。  它清除调用方法的用户配置文件的用户数据文件夹中的数据。
+无论何时创建数据，此方法都会清除指定类型的浏览数据。  它从调用该方法的用户配置文件的用户数据文件夹中清除数据。
 
 
 <!-- ------------------------------ -->
@@ -80,16 +80,16 @@ ms.locfileid: "12439664"
 
 
 <!-- ====================================================================== -->
-## <a name="clear-selected-kinds-of-browsing-data-in-a-time-range"></a>清除一个时间范围内选定的浏览数据类型
+## <a name="clear-selected-kinds-of-browsing-data-in-a-time-range"></a>清除时间范围内选定类型的浏览数据
 
-此方法清除在指定的开始时间和结束时间之间创建的指定类型的浏览数据。  它清除调用方法的用户配置文件的用户数据文件夹中的数据。
+此方法清除在指定的开始时间和结束时间之间创建的指定类型的浏览数据。  它从调用该方法的用户配置文件的用户数据文件夹中清除数据。
 
 
 <!-- ------------------------------ -->
 
 # [<a name="c"></a>C#](#tab/csharp)
 
-[CoreWebView2Profile.ClearBrowsingDataAsync (dataKinds， startTime， endTime) 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds-system-datetime-system-datetime))
+[CoreWebView2Profile.ClearBrowsingDataAsync (dataKinds、startTime、endTime) 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds-system-datetime-system-datetime))
 
 [CoreWebView2BrowsingDataKinds 枚举](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
 
@@ -108,11 +108,11 @@ ms.locfileid: "12439664"
 
 
 <!-- ====================================================================== -->
-## <a name="example-clearing-selected-kinds-of-browsing-data-in-a-time-range"></a>示例：清除一个时间范围内选定的浏览数据类型
+## <a name="example-clearing-selected-kinds-of-browsing-data-in-a-time-range"></a>示例：清除时间范围内选定类型的浏览数据
 
-本示例清除上一小时内的自动填充数据和密码自动保存数据。
+本示例清除过去一小时内的自动填充数据和密码自动保存数据。
 
-以下参数值将传递给"清除浏览数据 API"方法：
+以下参数值将传递给 Clear Browsing Data API 方法：
 
 *  所选类型的浏览器数据 = 自动填充数据和密码自动保存数据。
 
@@ -145,9 +145,9 @@ private void ClearAutofillData()
 }
 ```
 
-**API：**
+**Api：**
 
-* [CoreWebView2Profile.ClearBrowsingDataAsync (dataKinds， startTime， endTime) 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds-system-datetime-system-datetime))
+* [CoreWebView2Profile.ClearBrowsingDataAsync (dataKinds、startTime、endTime) 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds-system-datetime-system-datetime))
 * [CoreWebView2BrowsingDataKinds 枚举](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
 
 
@@ -189,7 +189,7 @@ void ClearAutofillData()
 }
 ```
 
-**API：**
+**Api：**
 
 * [ICoreWebView2Profile：：ClearBrowsingDataInTimeRange (dataKinds、startTime、endTime) 方法](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataintimerange)
 * [COREWEBVIEW2_BROWSING_DATA_KINDS枚举](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_browsing_data_kinds)
@@ -212,7 +212,7 @@ void ClearAutofillData()
 * [CoreWebView2Profile 类](/dotnet/api/microsoft.web.webview2.core.corewebview2profile)
 * [CoreWebView2Profile.ClearBrowsingDataAsync () 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync)
 * [CoreWebView2Profile.ClearBrowsingDataAsync (dataKinds) 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds))
-* [CoreWebView2Profile.ClearBrowsingDataAsync (dataKinds， startTime， endTime) 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds-system-datetime-system-datetime))
+* [CoreWebView2Profile.ClearBrowsingDataAsync (dataKinds、startTime、endTime) 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds-system-datetime-system-datetime))
 * [CoreWebView2BrowsingDataKinds 枚举](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
 
 
@@ -235,4 +235,4 @@ void ClearAutofillData()
 ## <a name="see-also"></a>另请参阅
 
 * [管理用户数据文件夹](user-data-folder.md)
-* [清除浏览数据 API 规范](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/ClearBrowsingData.md)
+* [指定清除浏览数据 API](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/ClearBrowsingData.md)

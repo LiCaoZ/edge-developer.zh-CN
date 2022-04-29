@@ -6,26 +6,26 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/12/2022
-ms.openlocfilehash: a46e6251a4687c02594508c897d26463b17ede7f
-ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
+ms.date: 04/27/2022
+ms.openlocfilehash: d422eebb98764da40c36ff6d1ca11f85a98a909e
+ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "12473846"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12497007"
 ---
 # <a name="get-started-with-webview2-in-win32-apps"></a>Win32 应用中的 WebView2 入门
 
 本文将设置开发工具 (（如果尚未完成）) 、将 WebView2 代码添加到 Win32 应用，并了解 WebView2 概念。
 
-该项目使用存储库的 [Win32_GettingStarted/WebView2GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted) 目录 `WebView2Samples` 。  若要使用本文，请执行以下操作：
+该项目使用存储库的 [Win32_GettingStarted/WebView2GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) 目录 `WebView2Samples` 。  若要使用本文，请执行以下操作：
 1. 将存储库下载或克隆 `WebView2Samples` 到本地驱动器。
 1. 运行已完成的项目。
 1. （可选）从 `HelloWebView.cpp`中删除 WebView2 代码。
 1. 按照本文中有关添加和理解 WebView2 代码的剩余步骤操作。
 
 
-* GitHub对应的、已完成的、可运行的入门示例：[入门 WebView2 for Win32 应用 (Win32_GettingStarted/WebView2GettingStarted.sln) ](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted#readme)。
+* GitHub对应的、已完成的、可运行的入门示例：[入门 WebView2 for Win32 应用 (Win32_GettingStarted/WebView2GettingStarted.sln) ](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted#readme)。
 
 
 <!-- ====================================================================== -->
@@ -118,7 +118,7 @@ Visual Studio 安装程序可能会打开并提示你安装工作负载：
 
 上面的屏幕截图显示了一些 WebView2 代码 (`#include "WebView2.h"`) ，这些代码在克隆 (下载) 存储库后立即存在于文件中。
 
-<!-- To confirm that the header lines are already already present in the repo: in a different window or tab, see [WebView2Samples/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp). -->
+<!-- To confirm that the header lines are already already present in the repo: in a different window or tab, see [WebView2Samples/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp). -->
 
 
 ### <a name="set-the-solution-to-use-the-win10-sdk-and-visual-studio-toolset"></a>将解决方案设置为使用 Win10 SDK 和Visual Studio工具集
@@ -707,8 +707,8 @@ Developer.microsoft.com：
 
 WebView2Samples 存储库：
 * [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples)
-* [Win32 示例代码](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted) - 本教程中使用的代码。
-* [WebView2 API 示例](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md) - WebView2 功能的综合示例。
+* [Win32 示例代码](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) - 本教程中使用的代码。
+* [WebView2 API 示例](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/README.md) - WebView2 功能的综合示例。
 * [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) - WebView2 示例应用。
 
 API 参考：
