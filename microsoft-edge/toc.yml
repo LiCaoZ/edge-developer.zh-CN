@@ -17,6 +17,9 @@
             - name: Microsoft Edge DevTools 中的新增功能
               href: devtools-guide-chromium/whats-new/whats-new.md
               displayName: null
+            - name: Microsoft Edge 101
+              href: devtools-guide-chromium/whats-new/2022/04/devtools-101.md
+              displayName: 'what''s new, announcements, release notes'
             - name: Microsoft Edge 100
               href: devtools-guide-chromium/whats-new/2022/03/devtools-100.md
               displayName: 'what''s new, announcements, release notes'
@@ -206,9 +209,9 @@
                   displayName: 'Sources tool, source maps, Azure Artifacts symbol server'
             - name: 3D 视图工具
               items:
-                - name: 使用 3D 视图工具导航 z 索引、DOM 和层
+                - name: 使用 3D 视图工具导航网页层、z 索引和 DOM
                   href: devtools-guide-chromium/3d-view/index.md
-                  displayName: '3D View tool, Layers tool'
+                  displayName: '3D View tool, Layers tool, composited layers'
             - name: 动画工具
               items:
                 - name: 检查和修改 CSS 动画效果
@@ -843,6 +846,9 @@
             - name: 将应用分发为单个可执行文件
               href: webview2/how-to/static.md
               displayName: 'Statically link the WebView2 loader library, single-file app'
+            - name: 将 UWP WebView2 应用发布到 Microsoft Store
+              href: webview2/how-to/publish-uwp-app-store.md
+              displayName: 'Partner Center, Microsoft Store'
         - name: WebView2 SDK 发行说明
           href: webview2/release-notes.md
           displayName: null
@@ -947,17 +953,14 @@
             - name: 用于 Web 开发的Visual Studio Code
               href: visual-studio-code/index.md
               displayName: null
+            - name: Microsoft Edge 开发人员工具扩展
+              href: visual-studio-code/microsoft-edge-devtools-extension.md
+              displayName: null
             - name: 在 Visual Studio Code 中的打开源文件
               href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
               displayName: null
             - name: Edge 调试程序
               href: visual-studio-code/debugger-for-edge.md
-              displayName: null
-            - name: Microsoft Edge 开发人员工具扩展
-              href: visual-studio-code/microsoft-edge-devtools-extension.md
-              displayName: null
-            - name: webhint
-              href: visual-studio-code/webhint.md
               displayName: null
         - name: 用于 Web 开发的Visual Studio
           href: visual-studio/index.md
