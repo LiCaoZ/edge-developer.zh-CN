@@ -768,6 +768,9 @@
             - name: 基本身份验证
               href: webview2/concepts/basic-authentication.md
               displayName: 'auth, Basic authentication for WebView2 apps'
+            - name: 网络请求的自定义管理
+              href: webview2/how-to/webresourcerequested.md
+              displayName: 'WebResourceRequested, WebResourceResponseReceived'
             - name: Web 和本机互操作
               items:
                 - name: 本机和 Web 端代码的互操作
