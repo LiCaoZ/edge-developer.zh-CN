@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/29/2022
-ms.openlocfilehash: ffe480e15b4ee3099657f12b2f09f950eb5c422a
-ms.sourcegitcommit: c4f72c6dd63e4f742ba34f3c8d25d2f8876a48c8
+ms.openlocfilehash: ac2fc72a1ec788d8f40c6cd1be01d0ebbc7ccaf0
+ms.sourcegitcommit: 4162845a683535958a67f3d4a7e26ec2cac47a08
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/05/2022
-ms.locfileid: "12506647"
+ms.locfileid: "12506669"
 ---
 # <a name="microsoft-edge-devtools-extension-for-visual-studio-code"></a>用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展
 
@@ -229,7 +229,7 @@ Microsoft Visual Studio Code 会自动更新扩展。  若要手动更新扩展�
 
 Microsoft Edge DevTools 中的 Styles 工具非常适合调试和调整 CSS 属性样式。  一个问题是，尽管这些更改在浏览器中实时显示，但它们不会反映在源文件中。  这意味着，在 CSS 调试会话结束时，需要将更改的内容复制并粘贴回源文件中。
 
-CSS 镜像编辑是解决该问题的Microsoft Edge DevTools 扩展的实验性功能。  打开镜像编辑时，DevTools 的 Styles 工具中所做的任何更改也会更改工作区中的文件。
+CSS 镜像编辑是解决此问题的Microsoft Edge DevTools 扩展的一项功能。  打开镜像编辑时，DevTools 的 Styles 工具中所做的任何更改也会更改工作区中的文件。
 
 在以下示例中，我们当前已`index.html`在 Visual Studio Code 中打开，并且 Microsoft Edge DevTools 扩展处于打开状态。  在 CSS 选择器中`.searchbar`选择弹性框图标并将其更改`flex-direction`为`column`时，我们不仅会在浏览器和 DevTools 中看到更改，而且Visual Studio Code还会自动导航到正确的样式表文件和相应的行号，并插入 `flex-direction: column` CSS 代码：
 
@@ -241,9 +241,9 @@ CSS 镜像编辑是解决该问题的Microsoft Edge DevTools 扩展的实验性�
 
 可以在 Styles 工具中编辑任何选择器或创建新选择器，所有更改都会在正确的 CSS 源文件中进行镜像。 扩展仅更改文件，不会自动将更改保存回硬盘驱动器。 这是一种安全措施，可确保不会意外覆盖任何代码。
 
-可以通过单击扩展 **目标窗格** 中的按钮，或者使用命令菜单并查找 `mirror`：
+可以通过在 **“元素**”工具的 **“样式**”面板中选中和取消选中框，或者使用命令菜单并搜索`mirror`：启用和禁用 CSS 镜像编辑：
 
-![在扩展面板中，可以找到 CSS 镜像编辑的快速说明、打开和关闭功能的按钮以及提供反馈的链接。](media/css-mirror-editing-button.msft.png)
+![可以在“元素”工具的“样式”面板中选中或取消选中一个框，以启用或禁用 CSS 镜像](media/css-mirror-editing-checkbox.msft.png)
 
 使用命令菜单打开或关闭 CSS 镜像编辑：
 
