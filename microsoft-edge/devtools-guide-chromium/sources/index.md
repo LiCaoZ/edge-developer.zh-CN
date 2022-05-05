@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/18/2022
-ms.openlocfilehash: 594efc984ea497be8b75011242ec7ab47c238120
-ms.sourcegitcommit: fad2471fb5d304c36ad4b52c57c9fb791356d097
-ms.translationtype: HT
+ms.openlocfilehash: d5a330e984b9b2ba649c49870a14753e4db3e8c7
+ms.sourcegitcommit: 3e459a5f58112a17748a0563934fa236b0131461
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "12459663"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "12505873"
 ---
 <!-- Copyright Kayce Basques
 
@@ -560,7 +560,7 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/sources)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
+> 原始页面位于[此处](https://developer.chrome.com/docs/devtools/javascript/sources/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。
