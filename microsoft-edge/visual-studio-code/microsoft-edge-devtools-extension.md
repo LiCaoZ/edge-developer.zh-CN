@@ -5,13 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 10/26/2021
-ms.openlocfilehash: a044d48c3d8fe7ed5984e191c95cf1dc2c4b3216
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.date: 04/29/2022
+ms.openlocfilehash: ffe480e15b4ee3099657f12b2f09f950eb5c422a
+ms.sourcegitcommit: c4f72c6dd63e4f742ba34f3c8d25d2f8876a48c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12497098"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "12506647"
 ---
 # <a name="microsoft-edge-devtools-extension-for-visual-studio-code"></a>用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展
 
@@ -253,20 +253,27 @@ CSS 镜像编辑是解决该问题的Microsoft Edge DevTools 扩展的实验性�
 
 
 <!-- ====================================================================== -->
-## <a name="device-emulation-in-the-screencast"></a>屏幕广播中的设备仿真
+## <a name="device-and-state-emulation"></a>设备和状态仿真
 
-设备仿真是编辑器中屏幕广播浏览器的一项功能。  这样便可以模拟手机或平板电脑等设备。  这对于在不同设备上测试网站布局非常有用：
+浏览器预览选项卡底部有一个模拟工具栏，可用于模拟不同的环境。 可以从不同设备的下拉列表中进行选择。 可以使用窗体更改维度并轮换视区。
 
-![“Edge DevTools：Screencast”选项卡中的“设备”下拉列表。](media/edge-devtools-for-vscode-device-dropdown.msft.png)
+仿真工具栏还包含右下角的两个按钮。 单击 ICON 以模拟 CSS 媒体查询和其他查询，以尝试具有不同视觉缺陷的当前 Web 项目的体验。
 
-你可以从不同设备的列表中进行选择，以便在地址栏旁边的屏幕广播中进行模拟：
+<!-- Need light themed images for the CSS media query and visual deficiencies buttons and the precise UI names -->
 
-![可在扩展的屏幕广播中模拟的设备列表。](media/edge-devtools-for-vscode-device-list.msft.png)
+![扩展中的浏览器预览，其中显示模拟工具栏](media/edge-for-code-screencast-v2.msft.png)
 
-默认设备是桌面计算机。  如果选择模拟的设备是触摸设备，则屏幕广播会自动切换到触摸屏模式。 可以通过单击列表旁边的按钮来旋转模拟设备的方向：
+可以从许多不同的设备中进行选择。 选中时，视区将调整为正确的度量值，并模拟触摸界面。 例如，iPhone。
 
-![屏幕截图显示模拟iPhone 5 中当前文档的正确大小和模拟的触摸界面。](media/edge-devtools-for-vscode-simulated-iphone.msft.png)
+![扩展中的浏览器预览，显示模拟手机布局中的 Web 产品](media/edge-for-code-screencast-v2-emulating.msft.png)
 
+使用 CSS 媒体功能仿真按钮可以测试产品在打印模式下的外观。 可以在深色和浅色模式之间切换，并模拟强制颜色。
+
+![扩展中的浏览器预览，显示处于强制颜色模式下的 Web 产品](media/edge-for-code-forced-colours.msft.png)
+
+通过视觉缺陷仿真按钮，可在模糊模式或不同颜色缺陷中测试产品。
+
+![扩展中的浏览器预览，显示模糊仿真中的 Web 产品](media/edge-for-code-blurred.msft.png)
 
 <!-- ====================================================================== -->
 ## <a name="inline-and-live-issue-analysis"></a>内联和实时问题分析

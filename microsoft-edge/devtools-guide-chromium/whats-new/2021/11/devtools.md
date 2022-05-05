@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 11/16/2021
-ms.openlocfilehash: 56252933078aa9483bec0f2ee5649187da5a7690
-ms.sourcegitcommit: d753bc98ca50acdcdb7a8bf911af3465d3228058
-ms.translationtype: HT
+ms.openlocfilehash: 5880b471284e51164823dcf0589a282df39e0044
+ms.sourcegitcommit: c4f72c6dd63e4f742ba34f3c8d25d2f8876a48c8
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "12465154"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "12506612"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-96"></a>DevTools 中的最近更新 (Microsoft Edge 96)
 
@@ -78,7 +78,7 @@ Microsoft Edge DevTools for Visual Studio Code 扩展现在具有可停靠的截
 
 :::image type="content" source="../../media/2021/11/edge-devtools-for-vscode-simulated-iphone-red-boxes.png" alt-text="显示仿真 iPhone 5 中当前文档的截屏视频，其大小正确且带有仿真的触摸屏界面。":::
 
-有关设备仿真的详细信息，请参阅[截屏视频中的设备仿真](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#device-emulation-in-the-screencast)。
+有关设备仿真的详细信息，请参阅 [设备和状态仿真](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#device-and-state-emulation)。
 
 ### <a name="live-inline-issue-reporting"></a>实时内联问题报告
 
