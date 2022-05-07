@@ -985,6 +985,9 @@
         - name: 辅助功能测试
           href: accessibility/test.md
           displayName: null
+    - name: 有关使用 Microsoft Edge 进行 Web 开发的视频
+      href: dev-videos/index.md
+      displayName: youtube
     - name: 隐私白皮书
       href: privacy-whitepaper/index.md
       displayName: null
