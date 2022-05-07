@@ -1,22 +1,22 @@
 ---
-title: 使用Microsoft Edge加载项 API
+title: 使用 Microsoft Edge 加载项 API
 description: REST 终结点，用于自动将更新发布到提交到 Microsoft Edge 加载项网站的加载项。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/17/2022
-ms.openlocfilehash: 26c12d3be57d9722a96e330121414144c59b568d
-ms.sourcegitcommit: dca640f34032dcedbd89215056526be0a3b52c96
+ms.openlocfilehash: 31f089213c22446f33ed5e6584ea1d7fc361b30e
+ms.sourcegitcommit: 3c588824bd8c7484fa31acae4857405a7eec5e36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "12470642"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "12506984"
 ---
-# <a name="using-the-microsoft-edge-add-ons-api"></a>使用Microsoft Edge加载项 API 
+# <a name="using-the-microsoft-edge-add-ons-api"></a>使用 Microsoft Edge 加载项 API 
 
 > [!NOTE]
-> 合作伙伴中心存在 **"发布 API** "页。 
+> 合作伙伴中心存在 **“发布 API** ”页。 
 
 本文与[Microsoft Edge加载项 API 参考](addons-api-reference.md)一起概述了建议的Microsoft Edge加载项 API。  请提交有关建议的 API 合同的建议和反馈，作为 [有关加载项 API 的问题](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API])。
 
@@ -44,13 +44,13 @@ Microsoft Edge加载项 API 提供了一组 REST 终结点，用于以编程方�
 
 1. 访问 Microsoft 合作伙伴中心并登录到已从中发布加载项的帐户。
 
-1. 在**Microsoft Edge**程序下，选择 **"发布 API**"。
+1. 在**Microsoft Edge**程序下，选择 **“发布 API**”。
 
-1. 在 **"发布 API** "页中，单击 **"创建 API 凭据** "按钮。  此步骤可能需要几分钟时间。
+1. 在 **“发布 API** ”页中，单击 **“创建 API 凭据** ”按钮。  此步骤可能需要几分钟时间。
 
-   :::image type="content" source="../../media/create-api-credentials-button.png" alt-text="单击&quot;创建 API 凭据&quot;后合作伙伴中心的&quot;发布 API&quot;页，现在显示客户端 ID、客户端机密和身份验证令牌 URL。" lightbox="../../media/create-api-credentials-button.png":::
+   :::image type="content" source="../../media/create-api-credentials-button.png" alt-text="单击“创建 API 凭据”后合作伙伴中心的“发布 API”页，现在显示客户端 ID、客户端机密和身份验证令牌 URL。" lightbox="../../media/create-api-credentials-button.png":::
 
-   现已创建 API 凭据;已启用或续订 API。  **客户端 ID**、**客户端机密**、**到期日期**和**访问令牌 URL** 现在显示在"发布 API"页上。
+   现已创建 API 凭据;已启用或续订 API。  **客户端 ID**、**客户端机密**、**到期日期**和**访问令牌 URL** 现在显示在“发布 API”页上。
 
 1. 记下 **客户端 ID**、 **客户端机密** 和 **访问令牌 URL**。  下一步将使用这些值来获取访问令牌。
 
@@ -106,7 +106,7 @@ https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v2
 > [!NOTE]
 > 没有用于创建新产品或更新产品的元数据的 API，例如说明。  必须在 Microsoft 合作伙伴中心手动完成这些任务。
 
-API 在终结点可用 https://api.addons.microsoftedge.microsoft.com
+API 在终结点可用 `https://api.addons.microsoftedge.microsoft.com`
 
 
 <!-- ====================================================================== -->
@@ -131,9 +131,9 @@ Body content: the package file to upload
 
 1. 选择要为其提供产品 ID 的扩展。
 
-   **"扩展概述**"页随即打开。  产品 ID 显示在页面中。   (产品 ID 在地址栏`microsoftedge/``/packages`和 .) 之间的 URL 中也显示为 GUID
+   **“扩展概述**”页随即打开。  产品 ID 显示在页面中。   (产品 ID 在地址栏`microsoftedge/``/packages`和 .) 之间的 URL 中也显示为 GUID
  
-1. 在 **"扩展标识** "部分 (或从地址栏) 中，选择并复制 **产品 ID**。
+1. 在 **“扩展标识** ”部分 (或从地址栏) 中，选择并复制 **产品 ID**。
 
 ### <a name="sample-request"></a>示例请求
 
