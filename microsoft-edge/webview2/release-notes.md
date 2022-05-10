@@ -6,17 +6,17 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2022
-ms.openlocfilehash: cc646a118d8d9c1a9d342935e9ecbee5f5a83979
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.date: 05/09/2022
+ms.openlocfilehash: ded82a47113181a3838840fd322841e3963a4af6
+ms.sourcegitcommit: a71bd7bca08f5468b8be32187f0a8ff44c158db2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12496727"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "12508541"
 ---
 # <a name="release-notes-for-the-webview2-sdk"></a>WebView2 SDK 发行说明
 
-WebView2 团队以四周的节奏更新 [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) 。  本文包含有关 API 的产品公告、添加、修改和重大更改的最新信息。
+WebView2 团队以四周的节奏更新 [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) 。 本文包含有关 API 的产品公告、添加、修改和重大更改的最新信息。
 
 WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特定于 SDK。
 
@@ -26,9 +26,9 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 更新 WebView2 SDK NuGet 包后，请务必重新编译 WebView2 应用。  WebView2 团队建议执行以下操作：
 
-*  使用 WebView2 SDK 包的预发行版本进行开发时，请使用Microsoft Edge的 Canary 预览频道。  Canary 是建议的预览频道，因为它以最快的节奏提供，并且具有最新的 API。
+* 使用 WebView2 SDK 包的预发行版本进行开发时，请使用Microsoft Edge的 Canary 预览频道。  Canary 是建议的预览频道，因为它以最快的节奏提供，并且具有最新的 API。
 
-*  使用 WebView2 SDK 包的发布版本时，请使用 Evergreen WebView2 运行时。
+* 使用 WebView2 SDK 包的发布版本时，请使用 Evergreen WebView2 运行时。
 
 有关详细信息，请参阅 [将运行时版本与 SDK 版本匹配](concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version)。
 
@@ -39,6 +39,64 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 若要加载 WebView2，Microsoft Edge或 WebView2 运行时的最小版本为 86.0.616.0。  仅当 Web 平台中发生重大更改时，要加载 WebView2 的最小版本才会更改。
 
 若要使用预发行版 SDK 以及Microsoft Edge预览频道，请参阅[测试即将推出的 API 和功能](how-to/set-preview-channel.md)。
+
+<!-- ====================================================================== -->
+
+## <a name="10121039"></a>1.0.1210.39
+  
+发布日期：2022 年 5 月 9 日  
+  
+[NuGet WebView2 SDK 1.0.1210.39 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1210.39)  
+  
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 WebView2 运行时版本 101.1210.39 或更高版本。
+
+### <a name="general"></a>概要
+
+#### <a name="promotions"></a>促销
+
+以下项现在稳定：
+
+* 支持 WebView2 中的 [多个用户配置文件](/microsoft-edge/webview2/reference/win32/icorewebview2environment10?view=webview2-1.0.1210.39&preserve-view=true) 。
+
+* [主题 API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1210.39&preserve-view=true) 提供一种自定义 WebView2 颜色主题的方式，例如`light``dark`，或 `system`。
+
+* [默认下载 API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1210.39&preserve-view=true) 提供自定义默认下载位置的方法。
+
+<!-- ====================================================================== -->
+## <a name="101248-prerelease"></a>1.0.1248-prerelease
+  
+发布日期：2022 年 5 月 9 日  
+  
+[webView2 SDK 1.0.1248-prelease 的NuGet包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1248-prerelease)  
+  
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要Microsoft Edge版本 102.0.1248.0 或更高版本。  
+
+### <a name="general"></a>概要
+
+* 通过在 NuGet 包中添加 WinRT JS 投影工具 (**wv2winrt**) ，向 JavaScript 添加了对 WinRT 对象投影的支持。 有关使用 WinRT JS 投影工具的说明，请 [参阅从 Web 端代码调用本机 WinRT 代码](/microsoft-edge/webview2/how-to/winrt-from-js)。
+#### <a name="promotions"></a>促销
+
+以下 API 在此预发行版 SDK 中提升为稳定：
+
+* [服务器证书 API](/microsoft-edge/webview2/reference/win32/icorewebview2_14?view=webview2-1.0.1248-prerelease&preserve-view=true) 提供一个选项，用于在应用程序级别信任服务器的 TLS 证书，并在不提示用户了解 TLS 或提供取消 Web 请求的功能的情况下呈现页面。
+
+* [ClearBrowsingData API](/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1248-prerelease&preserve-view=true) 允许开发人员以编程方式清除持续时间内的特定数据类型：
+    * `clearBrowsingDataInTimeRange`
+    * `clearBrowsingDataAll`
+
+#### <a name="bug-fixes"></a>Bug 修复
+  
+* 修复了 WPF 控 `OnWindowPositionChanged` 件事件中发生的不可避免的崩溃。  ([问题 #1531](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1531)) 
+
+* 修复了 .NET SDK 中无法正常工作的问题 `CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess` 。  ([问题 #2363](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2363)) 
+
+* 修复了导致某些Office加载项的运行时回归，这些加载项使用主机对象在以前运行的操作期间崩溃。  ([问题 #2337](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2337)) 
+
+* 修复了在具有不同缩放的监视器之间移动时 WebView2 内容可能变得模糊的问题。
+ 
+* 修复了回归，以确保 WebView2 创建快速 `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` 失败，而不是超时。
+ 
+* 修复了Chromium的更改打破了 WebView2 背景色的错误。
 
 
 <!-- ====================================================================== -->
