@@ -1,19 +1,19 @@
 ---
-title: 有关使用Microsoft Edge进行 Web 开发的视频
+title: 有关使用 Microsoft Edge 进行 Web 开发的视频
 description: 观看有关 Microsoft Edge Web 开发技术（如 DevTools、渐进式 Web 应用、Web 平台功能、WebView2 等）的公告和演示视频。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/05/2022
-ms.openlocfilehash: 14cd3fc29d356db965cf5caeb755b278b4f4d033
-ms.sourcegitcommit: 511fffcc6b4f70233de27db63966f9c27a22a772
+ms.openlocfilehash: 8689f669083aadd233ff6c11212668e00d496c0f
+ms.sourcegitcommit: b09c00d9771f2bd004b8c66c11ea6566c9f0c1ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "12506832"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "12508755"
 ---
-# <a name="videos-about-web-development-with-microsoft-edge"></a>有关使用Microsoft Edge进行 Web 开发的视频
+# <a name="videos-about-web-development-with-microsoft-edge"></a>有关使用 Microsoft Edge 进行 Web 开发的视频
 
 发现并了解新的Microsoft Edge Web 开发技术和产品，包括 DevTools、Web 平台 API 和功能、渐进式Web 应用和 WebView2。
 
@@ -33,6 +33,18 @@ To add a new video:
 - Add a markdown image below the date, with the thumbnail you added before, and link this image tag to the YouTube video.
 - Place the description below that, fixing any links that came from YouTube and that might have been shortened.
 -->
+
+
+<!-- ====================================================================== -->
+## <a name="devtools---customizing-microsoft-edge-developer-tools-and-quick-feature-access"></a>DevTools - 自定义Microsoft Edge开发人员工具和快速功能访问
+
+_发布于 2022 年 5 月 5 日。_
+
+[![TDevtools 自定义视频的 humbnail 图像](./images/customize-devtools.png)](https://www.youtube.com/watch?v=ypRzEBYNptQ)
+
+了解如何根据需要自定义 DevTools。
+
+此视频介绍如何停靠或撤换 DevTools、打开新工具以及关闭不需要的工具。 它介绍如何在底部抽屉中移动工具并自定义文本大小和主题。 该视频还介绍了如何使用命令菜单键盘快捷方式快速自定义 DevTools。
 
 
 <!-- ====================================================================== -->
