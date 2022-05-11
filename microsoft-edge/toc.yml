@@ -782,6 +782,9 @@
                 - name: 从 Web 端代码调用本机代码
                   href: webview2/how-to/hostobject.md
                   displayName: 'AddHostObjectToScript, host objects'
+                - name: 从 Web 端代码调用本机端 WinRT 代码
+                  href: webview2/how-to/winrt-from-js.md
+                  displayName: 'AddHostObjectToScript, host objects'
             - name: 了解不同的 WebView2 SDK 版本
               href: webview2/concepts/versioning.md
               displayName: Understand WebView2 SDK versions
