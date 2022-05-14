@@ -1,17 +1,17 @@
 ---
 title: 分析运行时性能
-description: 像素管道中的每个阶段都有机会引入 jank (呈现中断) 。  了解用于识别和修复降低运行时性能的常见问题的工具和策略，以便实现交互式和流畅的页面。
+description: 像素管道中的每个阶段都表示有机会引入 jank (呈现) 中断。  了解用于识别和解决导致运行时性能降低的常见问题的工具和策略，以及交互式和平滑页面。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 4df82c4d7f041a08327b66d93de24cd84dfd1a78
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 74488596faa01dab0e9e07c53c8c640f816e4142
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431667"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514095"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -30,32 +30,32 @@ ms.locfileid: "12431667"
 
 <!-- not able to find this article or its strings in other repo; the link redirects.  "todo" items might not be actionable -->
 
-用户期望交互式和流畅的页面。  像素管道中的每个阶段都有机会引入 jank (呈现中断) 。  了解用于识别和修复降低运行时性能的常见问题的工具和策略。
+用户需要交互式和平滑页面。  像素管道中的每个阶段都表示有机会引入 jank (呈现) 中断。  了解用于识别和解决降低运行时性能的常见问题的工具和策略。
 
 ### <a name="summary"></a>摘要
 
-*  不要编写强制浏览器重新计算布局的 JavaScript。  分离读取和写入函数，并首先执行读取。
+*  请勿编写强制浏览器重新计算布局的 JavaScript。  分离读取和写入函数，并首先执行读取。
 
-*  请勿使 CSS 过于复杂。  使用更少的 CSS 并保持 CSS 选择器简单。
+*  不要使 CSS 过于复杂。  少使用 CSS，使 CSS 选择器保持简单。
 
-*  尽可能避免布局。  选择不触发布局的 CSS。
+*  尽量避免布局。  选择根本不触发布局的 CSS。
 
-*  绘制所花的时间可能多于任何其他呈现活动。  注意画图瓶颈。
+*  绘画花费的时间可能比任何其他呈现活动都多。  注意油漆瓶颈。
 
 
 <!-- ====================================================================== -->
 ## <a name="javascript"></a>JavaScript
 
-JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低应用程序性能。  不要让时间不当时或长时间运行的 JavaScript 干扰用户交互。
+JavaScript 计算（尤其是触发大量视觉更改的计算）可能会使应用程序性能停止。  不要让超时或长时间运行的 JavaScript 干扰用户交互。
 
 ### <a name="javascript-tools"></a>JavaScript：工具
 
-在性能工具 **中录制** 并查找可疑的长 `Evaluate Script` 事件。  <!--If you find any, you can enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->
+在 **“性能** ”工具中进行录制，并查找可疑的长 `Evaluate Script` 事件。  <!--If you find any, you can enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->
 
 <!--todo: add Recording section when available  -->
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->
 
-如果你注意到 JavaScript 中 (呈现) 出现大量 jank 和中断，你可能需要将你的分析下一个级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示运行时在页面函数中的使用位置。  了解如何在"加快 [JavaScript 运行时速度"中创建 CPU 配置文件](js-runtime.md)。
+如果注意到 JavaScript 中 (呈现) 中断，则可能需要将分析提升到一个新的级别并收集 JavaScript CPU 配置文件。  CPU 配置文件显示在页面的函数中使用运行时的位置。  了解如何在 [加速 JavaScript 运行时](js-runtime.md)中创建 CPU 配置文件。
 
 ### <a name="javascript-problems"></a>JavaScript：问题
 
@@ -63,10 +63,10 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 
 | 问题 | 示例 | 解决方案 |
 |:--- |:--- |:--- |
-| 影响响应或动画的昂贵输入处理程序。  | 触摸，视差滚动。  | 让浏览器处理触摸和滚动，或尽可能晚地绑定侦听器。  请参阅 [Paul 的运行时性能清单中的高成本输入处理程序](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/)。  |
-| 影响响应、动画、加载的时间过长的 JavaScript。  | 用户在页面加载后向右滚动 setTimeout / setInterval。  | 优化 JavaScript 运行时：使用 `requestAnimationFrame`、在帧上分布 DOM 操作、使用 [Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers)。  |
-| 影响响应的长时间运行的 JavaScript。  | [DOMContentLoaded 事件](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers)因使用 JS 工作而停止。  | 将纯计算工作移动到 [Web 工作人员](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers)。  如果需要 DOM 访问权限，请使用 `requestAnimationFrame`。  <!--See [Optimize JavaScript Execution](/web/fundamentals/performance/rendering/optimize-javascript-execution).  -->  |
-| 影响响应或动画的垃圾脚本。  | 垃圾收集可能在任意位置发生。  | 编写更少的垃圾脚本。  请参阅 [Paul 的运行时性能清单中的动画中的垃圾回收](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/)。  |
+| 影响响应或动画的昂贵输入处理程序。  | 触摸，视差滚动。  | 让浏览器处理触摸和滚动，或尽可能晚地绑定侦听器。  请参阅 [Paul Lewis 运行时性能清单中的昂贵输入处理程序](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/)。  |
+| 时间错误的 JavaScript 会影响响应、动画和负载。  | 用户在页面加载后直接滚动，setTimeout/setInterval。  | 优化 JavaScript 运行时：使用 `requestAnimationFrame`、将 DOM 操作分散到帧上、使用 [Web 辅助角色](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers)。  |
+| 长时间运行的 JavaScript 会影响响应。  | [DOMContentLoaded 事件](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers)因 JS 工作被淹没而停止。  | 将纯计算工作移到 [Web 辅助角色](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers)。  如果需要 DOM 访问权限，请使用 `requestAnimationFrame`。  <!--See [Optimize JavaScript Execution](/web/fundamentals/performance/rendering/optimize-javascript-execution).  -->  |
+| 影响响应或动画的垃圾 y 脚本。  | 垃圾回收可能发生在任何位置。  | 编写更少的垃圾 y 脚本。  请参阅 [Paul Lewis 运行时性能清单中的动画中的垃圾回收](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/)。  |
 
 <!--todo: add "Optimize JavaScript runtime" section when available  -->
 
@@ -74,7 +74,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 <!-- ====================================================================== -->
 ## <a name="style"></a>样式
 
-样式更改会非常昂贵，尤其是在这些更改影响 DOM 中的多个元素时。  每次向元素应用样式时，浏览器都会指出对所有相关元素的影响、重新计算布局和重画。
+样式更改成本高昂，尤其是在这些更改影响 DOM 中的多个元素时。  每当将样式应用到元素时，浏览器都会计算出对所有相关元素的影响、重新计算布局和重排。
 
 <!--Related Guides:
 
@@ -85,18 +85,18 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 
 ### <a name="style-tools"></a>样式：工具
 
-在"性能"工具 **中录制** 。  检查录制是否显示 `Recalculate Style` 紫色 (大) 。
+在 **“性能** ”工具中进行录制。  检查 (以紫色) 显示的大型 `Recalculate Style` 事件的录制。
 
 <!--todo: add Recording section when available  -->
 
-在" `Recalculate Style` 详细信息"窗格中选择一个事件以查看其 **详细信息** 。  如果样式更改需要很长时间，则性能下降。  如果样式计算影响大量元素，则这是另一个有改进空间的区域。
+选择事件 `Recalculate Style` 可在“ **详细** 信息”窗格中查看有关该事件的详细信息。  如果样式更改需要很长时间，则会影响性能。  如果样式计算影响大量元素，则这是另一个有改进空间的区域。
 
 :::image type="content" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="长重新计算样式。" lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
 
-若要降低事件 `Recalculate Style` 的影响，请：
+若要减少事件的影响 `Recalculate Style` ，
 
-*  使用 [CSS 触发器了解](https://csstriggers.com) 哪些 CSS 属性触发器布局、绘制和复合。  这些属性对呈现性能的影响最大。
-*  切换到影响较少的属性。  <!--For more guidance, See [Stick to compositor-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->
+*  使用 [CSS 触发器](https://csstriggers.com) 了解哪些 CSS 属性触发布局、绘制和复合。  这些属性对呈现性能的影响最为严重。
+*  切换到影响较小的属性。  <!--For more guidance, See [Stick to compositor-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available -->
 
@@ -106,8 +106,8 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 
 | 问题 | 示例 | 解决方案 |
 |:--- |:--- |:--- |
-| 影响响应或动画的昂贵样式计算。  | 更改元素几何图形（如宽度、高度或位置）的任何 CSS 属性;浏览器检查所有其他元素并重新计算布局。  | 避免触发布局的 CSS |
-| 影响响应或动画的复杂选择器。  | 嵌套选择器强制浏览器了解所有其他元素（包括父元素和子元素）的所有信息。  | 只需一个类引用 CSS 中的元素。  |
+| 影响响应或动画的昂贵样式计算。  | 任何更改元素几何图形的 CSS 属性，如宽度、高度或位置;浏览器检查所有其他元素并重新计算布局。  | 避免触发布局的 CSS |
+| 影响响应或动画的复杂选择器。  | 嵌套选择器强制浏览器了解所有其他元素（包括家长和孩子）的一切信息。  | 仅使用类引用 CSS 中的元素。  |
 
 <!--todo: add Avoid CSS that triggers layouts section when available -->
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations (Reference an element in your CSS with just a class) section when available -->
@@ -122,9 +122,9 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会降低
 <!-- ====================================================================== -->
 ## <a name="layout"></a>布局
 
-Firefox (或重排) 是浏览器计算页面上所有元素的位置和大小的过程。  Web 的布局模型意味着一个元素可能会影响其他元素;例如，元素的宽度 `<body>` 通常会影响任何子元素的宽度，等等，一直向上和向下影响树。  浏览器可能涉及此过程。
+在 Firefox) 中，布局 (或重新流是浏览器计算页面上所有元素的位置和大小的过程。  Web 的布局模型意味着一个元素可能会影响其他元素;例如，元素的 `<body>` 宽度通常会影响任何子元素的宽度，等等，一直上下树。  浏览器可能涉及到此过程。
 
-作为经验法则，如果你在帧完成之前要求从 DOM 返回几何值，你将发现自己具有"强制同步布局"，如果频繁重复或对大型 DOM 树执行，这可能是一个较大的性能瓶颈。
+作为一般经验法则，如果在帧完成之前要求从 DOM 返回几何值，你会发现自己有“强制同步布局”，如果频繁重复或为大型 DOM 树执行，这可能是一个很大的性能瓶颈。
 
 <!--Related Guides:
 
@@ -136,11 +136,11 @@ Firefox (或重排) 是浏览器计算页面上所有元素的位置和大小的
 
 ### <a name="layout-tools"></a>布局：工具
 
-" **性能** "窗格标识页面何时导致强制同步布局。  这些事件 `Layout` 用红色条标记。
+**“性能**”窗格标识页面何时导致强制同步布局。  这些 `Layout` 事件标记为红色条形图。
 
 :::image type="content" source="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png" alt-text="强制同步布局。" lightbox="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png":::
 
-"布局分隔"是强制同步布局条件的重复。  当 JavaScript 重复写入和读取 DOM 时，会出现此情况，这会强制浏览器重新计算一次又一次布局。  若要标识布局限制，请查找多个强制同步布局警告的模式。  查看上图。
+“布局打击”是强制同步布局条件的重复。  当 JavaScript 反复写入和读取 DOM 时，会发生这种情况，这会强制浏览器一遍又一遍地重新计算布局。  若要标识布局重排，请查找多个强制同步布局警告的模式。  查看上一个数字。
 
 ### <a name="layout-problems"></a>布局：问题
 
@@ -148,8 +148,8 @@ Firefox (或重排) 是浏览器计算页面上所有元素的位置和大小的
 
 | 问题 | 示例 | 解决方案 |
 |:--- |:--- |:--- |
-| 影响响应或动画的强制同步布局。  | 强制浏览器在像素管道中更早地执行布局，从而在呈现过程中重复步骤。  | 首先批量读取样式，然后执行任何写入操作。  <!--See [Avoid large, complex layouts and layout thrashing](/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing).  -->  |
-| 影响响应或动画的布局长线。  | 使浏览器进入读写循环的循环，强制浏览器一次又一次地重新计算布局。  | 使用 FastDom 库自动批处理 [读写操作](https://github.com/wilsonpage/fastdom)。  |
+| 影响响应或动画的强制同步布局。  | 强制浏览器在像素管道中更早执行布局，从而导致呈现过程中的重复步骤。  | 先批处理样式读取，然后执行任何写入操作。  <!--See [Avoid large, complex layouts and layout thrashing](/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing).  -->  |
+| 影响响应或动画的布局缩放。  | 将浏览器置于读写-读写周期中的循环，迫使浏览器一遍又一遍地重新计算布局。  | 使用 [FastDom 库](https://github.com/wilsonpage/fastdom)自动批处理读写操作。  |
 
 <!--todo: add Avoid CSS that triggers layouts (Avoid large, complex layouts and layout thrashing) section when available -->
 
@@ -157,15 +157,15 @@ Firefox (或重排) 是浏览器计算页面上所有元素的位置和大小的
 <!-- ====================================================================== -->
 ## <a name="paint-and-composite"></a>画图和复合
 
-画图是填充像素的过程。  它通常是呈现过程成本最大的部分。  如果你注意到你的页面未以任何设计方式工作，很可能是有绘制问题。
+画图是填充像素的过程。  它通常是呈现过程中成本最高的部分。  如果注意到页面未按任何方式按设计工作，则可能会出现油漆问题。
 
-合成是页面的绘制部分组合在一起以在屏幕上显示的地方。  在大多数情况下，如果你坚持使用仅合成器属性，并且完全避免绘制，你应该注意到性能有显著改进，但需要留意层数过多。  <!--See [Stick to compositor-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->
+组合是将页面的绘图部分放在一起以在屏幕上显示的位置。  在大多数情况下，如果坚持仅限撰写器的属性并完全避免绘制，则应注意到性能有重大改进，但需要注意层计数过多。  <!--See [Stick to compositor-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->
 
 ### <a name="paint-and-composite-tools"></a>画图和复合：工具
 
-想知道绘制需要多久或多久发生一次画？  选中" [性能"面板](../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation) 中的" **启用高级画** 图检测"设置，然后录制。  如果大多数呈现时间都用于绘制，则存在绘制问题。
+想知道绘画需要多长时间或画画的频率？  在 **“性能**”面板中检查[“启用高级油漆检测](../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation)”设置，然后进行录制。  如果大部分渲染时间都花在了绘画上，则会出现油漆问题。
 
 <!--
 :::image type="content" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Long paint times in timeline recording." lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
@@ -180,12 +180,12 @@ The Timeline Tool page is deprecated.
 
 ### <a name="paint-and-composite-problems"></a>画图和复合：问题
 
-下表介绍了一些常见的绘制和复合问题以及潜在的解决方案。
+下表介绍了一些常见的油漆和复合问题以及潜在的解决方案。
 
 | 问题 | 示例 | 解决方案 |
 |:--- |:--- |:--- |
-| 画图响应或动画的风暴。  | 影响响应或动画的大画区或昂贵的画图。  | 避免绘制、升级要移动到其自己的图层的元素、使用转换和不透明度。  <!--See [Simplify paint complexity and reduce paint areas](/web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas).  -->  |
-| 影响动画的层爆炸。  | 过多元素的过度提示会大大 `translateZ(0)` 影响动画性能。  | 尽量少地提升至层，并且仅在你知道它提供切实改进时。  <!--See [Stick to composite-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->  |
+| 画图影响响应或动画的风暴。  | 影响响应或动画的大油漆区域或昂贵的油漆。  | 避免绘制、提升移动到自身层的元素、使用转换和不透明度。  <!--See [Simplify paint complexity and reduce paint areas](/web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas).  -->  |
+| 影响动画的层爆炸。  | 过度提升过多的元素会 `translateZ(0)` 极大地影响动画性能。  | 请谨慎地升级到层，并且仅当你知道它提供切实的改进时。  <!--See [Stick to composite-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->  |
 
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->
@@ -194,7 +194,7 @@ The Timeline Tool page is deprecated.
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)<!-- redirects to https://developer.chrome.com/docs/devtools/evaluate-performance/ --> 由技术撰稿人 [、Chrome](https://developers.google.com/web/resources/contributors#kayce-basques) DevTool (s \& Lighthouse) 和 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。
+> 此[处找到原始](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)页面<!-- redirects to https://developer.chrome.com/docs/devtools/evaluate-performance/ --> 由 [凯斯·巴斯克斯](https://developers.google.com/web/resources/contributors#kayce-basques) (技术作家，Chrome DevTools \& Lighthouse) 和 [梅金·科尔尼](https://developers.google.com/web/resources/contributors#meggin-kearney) (技术作家) 创作。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

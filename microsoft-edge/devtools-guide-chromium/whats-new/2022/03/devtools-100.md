@@ -6,20 +6,16 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/31/2022
-ms.openlocfilehash: 8c73e3c3ce86eaefb75155c41b184e55913d2c4e
-ms.sourcegitcommit: b13579028375cfad13f2fb496358e4807d0d12b3
+ms.openlocfilehash: 1e94dc47a9f43a173205b58553106d4922a9f599
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "12470597"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514732"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-100"></a>DevTools 中的新增功能 (Microsoft Edge 100) 
 
-以下部分列出了 Microsoft Edge 开发人员工具团队的公告。  若要尝试 Microsoft Edge DevTools 的最新功能以及用于Microsoft Visual Studio和Visual Studio Code的 Edge DevTools 扩展，请参阅这些公告。  若要随时了解有关开发人员工具的最新和最强大功能，请下载 [Microsoft Edge 预览频道](https://www.microsoftedgeinsider.com/download) 并 [在 Twitter 上关注 Microsoft Edge 开发人员工具团队](https://twitter.com/EdgeDevTools)。
-
-如果使用的是 Windows、Linux 或 macOS，请考虑使用 Microsoft Edge 的 Canary 预览频道作为默认开发浏览器。  Microsoft Edge (Beta、Dev 和 Canary) 的预览频道可让你访问 Microsoft Edge DevTools 的最新功能。
-
-若要报告 DevTools 的问题或请求新功能，请查看新的 [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) 存储库。
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
 <!-- ====================================================================== -->
@@ -41,11 +37,12 @@ ms.locfileid: "12470597"
 <!-- Title: Use new filters to focus on specific parts of a heap snapshot -->
 <!-- Subtitle: You can now filter by node type if, for example, you're only interested in the arrays or strings from the heap. -->
 
-在内 **存** 工具中查看堆快照中的所有对象时，可能很难专注于特定对象或保留路径。  现在，在 Microsoft Edge 100 中，可以在查看堆快照时使用新的**节点类型**筛选器，只关注特定类型的节点。  例如，若要仅查看堆中的数组和字符串对象，请在 **"节点类型**"筛选器中选择 **"数组**"和 **"字符串**"条目。
+在内 **存** 工具中查看堆快照中的所有对象时，可能很难专注于特定对象或保留路径。  现在，在 Microsoft Edge 100 中，可以在查看堆快照时使用新的**节点类型**筛选器，只关注特定类型的节点。  例如，若要仅查看堆中的数组和字符串对象，请在 **“节点类型**”筛选器中选择 **“数组**”和 **“字符串**”条目：
 
 ![内存工具中堆快照中的节点类型。](devtools-100-images/node-types-heap-snapshot.png)
 
-若要详细了解如何创建堆快照和分析 DevTools 中的堆，请参阅 [使用内存工具的记录堆快照](../../../memory-problems/heap-snapshots.md)。
+另请参阅：
+* [使用内存工具记录堆快照](../../../memory-problems/heap-snapshots.md) - 创建堆快照并分析堆。
 
 
 <!-- ====================================================================== -->
@@ -58,7 +55,8 @@ ms.locfileid: "12470597"
 
 ![捷克语和越南语中的 DevTools。](devtools-100-images/czech-vietnamese.png)
 
-有关详细信息，请参阅 [更改 DevTools 语言设置](../../../customize/localization.md)。
+另请参阅：
+* [更改开发工具语言设置](../../../customize/localization.md)
 
 
 <!-- ====================================================================== -->
@@ -67,27 +65,29 @@ ms.locfileid: "12470597"
 <!-- Title: You no longer have to wonder if a request was fulfilled by your service worker or cache -->
 <!-- Subtitle: The "Fulfilled by" column in the Network tool tells you how a request was fulfilled. -->
 
-在 Microsoft Edge 100 中，**网络**工具支持请求日志中的新 **"已完成"** 列。  如果服务辅助角色或缓存满足了请求，则该信息现在会在" **已完成"** 列中进行跟踪。  将请求日志导出或导入为 `HAR` 文件时，还会包含" **已完成"** 列中的信息。
+在 Microsoft Edge 100 中，**网络**工具支持请求日志中的新 **“已完成”** 列。  如果服务辅助角色或缓存满足了请求，则该信息现在会在“ **已完成”** 列中进行跟踪。  将请求日志导出或导入为 `HAR` 文件时，还会包含“ **已完成”** 列中的信息。
 
-![网络工具的请求日志中的"已完成者"列。](devtools-100-images/fulfilled-by-request-log.png)
+![网络工具的请求日志中的“已完成者”列。](devtools-100-images/fulfilled-by-request-log.png)
 <!--
 If you don't have the **Fulfilled by** column, right-click the table headers in the request log and make sure **Fulfilled by** is checked.
 -->
 
-若要详细了解网络工具中的请求日志，请参阅_网络功能参考_中的[按属性筛选请求](../../../network/reference.md#display-a-log-of-requests)。  有关服务工作者的详细信息，请参阅 [Service Worker 改进](../../../service-workers/index.md)。
+另请参阅：
+* 按_网络功能引用_中的[属性筛选请求](../../../network/reference.md#display-a-log-of-requests)。
+* [服务辅助角色改进](../../../service-workers/index.md)。
 
 有关此功能的历史记录，请 [参阅问题 #16](https://github.com/MicrosoftEdge/DevTools/issues/16)。
 
 
 <!-- ====================================================================== -->
-## <a name="filter-messages-in-the-issues-tool-by-severity-and-browser-target"></a>按严重性和浏览器目标筛选"问题"工具中的消息
+## <a name="filter-messages-in-the-issues-tool-by-severity-and-browser-target"></a>按严重性和浏览器目标筛选“问题”工具中的消息
 
 <!-- Title: Filter issues in the Issues tool -->
 <!-- Subtitle: New controls in the Issues tool allow you to filter messages by severity and browser target to help you focus on the most relevant feedback. -->
 
-在 **"问题**"工具中，新的**严重性和****浏览器**下拉列表允许按严重性和浏览器目标筛选消息，以帮助你关注最相关的反馈。  可以选择或清除每个下拉列表中的选项。
+在 **“问题**”工具中，新的**严重性和****浏览器**下拉列表允许按严重性和浏览器目标筛选消息，以帮助你关注最相关的反馈。  可以选择或清除每个下拉列表中的选项。
 
-若要查看所有相关消息，可能需要刷新页面。  如果出现提示，请在 **"问题** "工具中单击" **重新生成问题** "按钮。
+若要查看所有相关消息，可能需要刷新页面。  如果出现提示，请在 **“问题** ”工具中单击“ **重新生成问题** ”按钮。
 <!--
 The top-of-panel message after you change checkmarks on the drop down lists:
 "One or more settings have changed which require a panel reload to take effect.  [Regenerate issues]"
@@ -97,15 +97,16 @@ The top-of-panel message after you change checkmarks on the drop down lists:
 
 ![严重性筛选器。](devtools-100-images/severity-filter.png)
 
-**浏览器**筛选器仅适用于浏览器兼容性反馈，如 **"问题**"列表的 **"兼容性**"部分所示。  默认情况下， **浏览器** 筛选器会显示浏览器列表 [定义的顶级](https://github.com/browserslist/browserslist#queries)浏览器的消息：
+**浏览器**筛选器仅适用于浏览器兼容性反馈，如 **“问题**”列表的 **“兼容性**”部分所示。  默认情况下， **浏览器** 筛选器会显示浏览器列表 [定义的顶级](https://github.com/browserslist/browserslist#queries)浏览器的消息：
 
-![浏览器下拉列表，其中选择了"顶部浏览器"。](devtools-100-images/browser-filters-not-filtered.png)
+![“浏览器”下拉列表，其中选择了“顶部浏览器”。](devtools-100-images/browser-filters-not-filtered.png)
 
-在以下示例中，筛选出有关 Android Firefox 和 Firefox 的消息：
+在以下示例中，筛选出有关 firefox 和 Firefox for Android 的消息：
 
 ![已筛选出有关 Firefox 浏览器的消息 (已删除) 。](devtools-100-images/browser-filters-filtered-out.png)
 
-有关详细信息，请参阅_使用"问题"工具查找和解决问题的_[筛选器问题](../../../issues/index.md#filter-issues)。
+另请参阅：
+* [](../../../issues/index.md#filter-issues) _使用“问题”工具筛选“查找”中的问题并解决问题_。
 
 
 <!-- ====================================================================== -->
@@ -120,11 +121,10 @@ The top-of-panel message after you change checkmarks on the drop down lists:
 
 ![导入的性能配置文件中的链接使用源映射转到熟悉的原始源代码。](devtools-100-images/links-perf-profile-orig-source-code.png)
 
-若要详细了解如何在 DevTools 中使用源映射，请参阅 [将已处理的代码映射到原始源代码，以便进行调试](../../../javascript/source-maps.md)。
-
-若要开始将源映射存储在Azure Artifacts符号服务器中并从 DevTools 连接到它们，请参阅：
-*  [通过将源映射发布到Azure Artifacts符号服务器来安全调试原始代码](../../../javascript/publish-source-maps-to-azure.md)。
-*  [使用Azure Artifacts符号服务器源映射安全调试原始代码](../../../javascript/consume-source-maps-from-azure.md)。
+另请参阅：
+* [将已处理的代码映射到原始源代码，以便进行调试](../../../javascript/source-maps.md)
+* [通过将源映射发布到Azure Artifacts符号服务器来安全地调试原始代码](../../../javascript/publish-source-maps-to-azure.md)
+* [使用Azure Artifacts符号服务器源映射安全地调试原始代码](../../../javascript/consume-source-maps-from-azure.md)
 
 
 <!-- ====================================================================== -->
@@ -143,7 +143,9 @@ The top-of-panel message after you change checkmarks on the drop down lists:
 
 ![所选主题现在应用于网络工具中请求的瀑布视图。](devtools-100-images/waterfall-view-requests-network.png)
 
-有关在 DevTools 中使用Visual Studio Code主题的详细信息，[请参阅向 DevTools 应用颜色主题](../../../customize/theme.md)。  有关网络工具中请求的瀑布视图的详细信息，请参 [阅网络功能参考](../../../network/reference.md#display-the-timing-relationship-of-requests)。
+另请参阅：
+* [将颜色主题应用到 DevTools](../../../customize/theme.md) - 使用 DevTools 中Visual Studio Code的主题。
+* 在_网络功能参考_中[显示请求的计时关系](../../../network/reference.md#display-the-timing-relationship-of-requests) - 网络工具中请求的瀑布视图。
 
 
 <!-- ====================================================================== -->
@@ -151,7 +153,7 @@ The top-of-panel message after you change checkmarks on the drop down lists:
 
 Microsoft Edge版本 100 还包括Chromium项目的以下更新：
 
-* [在"样式"窗格中的规则中查看和编辑@supports](https://developer.chrome.com/blog/new-in-devtools-100/#supports)
+* [在“样式”窗格中的规则中查看和编辑@supports](https://developer.chrome.com/blog/new-in-devtools-100/#supports)
 * [悬停时的预览类/函数属性](https://developer.chrome.com/blog/new-in-devtools-100/#properties)
 * [性能面板中部分显示的帧](https://developer.chrome.com/blog/new-in-devtools-100/#perf)
 

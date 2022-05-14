@@ -5,13 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/04/2022
-ms.openlocfilehash: 7125e904b0fc23af751f89450ffbc90cb5ebd7ca
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.date: 05/10/2022
+ms.openlocfilehash: 3c0006bff8d6ecda7594661601e575646e67af39
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12497042"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514711"
 ---
 # <a name="whats-new-in-microsoft-edge-devtools"></a>Microsoft Edge DevTools 中的新增功能
 

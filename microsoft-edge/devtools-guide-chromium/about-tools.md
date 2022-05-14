@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/02/2022
-ms.openlocfilehash: f02003d0bcd785243c9ae2ea1aad3babc3f41a2c
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: 0966afd881ac141df23eaa05c026f9937470e83d
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12496818"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514242"
 ---
 # <a name="about-the-list-of-tools"></a>关于工具列表
 
@@ -43,7 +43,7 @@ Microsoft Edge DevTools 包括以下工具。
 | --- | --- | --- |
 | **3D 视图** 工具 | 浏览已转换为 3D 透视的网页。  通过浏览 DOM 或 z 索引堆栈上下文来调试网页。 | [使用 3D 视图工具导航网页层、z 索引和 DOM](3d-view/index.md) |
 | **动画** 工具 | 使用动画工具中的 **动画检查器** 检查和修改 CSS **动画** 效果。 | [检查和修改 CSS 动画效果](inspect-styles/animations.md) |
-| **应用程序** 工具 | _HTTP Cookie_ 主要用于管理用户会话、存储用户个性化首选项和跟踪用户行为。  使用**应用程序**工具的 **Cookie** 窗格查看、编辑和删除网页的 HTTP cookie。 | [查看、编辑和删除 Cookie](storage/cookies.md) |
+| **应用程序** 工具 | 使用 **应用程序工具** 管理 Web 应用页面的存储，包括清单、服务工作者、本地存储、Cookie、缓存存储和后台服务。 | [用于管理存储的应用程序工具](storage/application-tool.md) |
 | **更改** 工具 | 跟踪在 DevTools 中对 CSS 或 JavaScript 所做的任何更改。  显示在使用 DevTools 修改从服务器发送的网页文件后对实际源文件所做的更改。 | [使用更改工具跟踪对文件的更改](changes/changes-tool.md) |
 | **控制台** 工具 | DevTools 中的智能、丰富的命令行。  用于其他工具的绝佳配套工具。  提供一种强大的脚本功能、检查当前网页以及使用 JavaScript 操作当前网页的强大方法。 | [控制台概述](console/index.md) |
 | **覆盖** 工具 | 帮助查找未使用的 JavaScript 和 CSS 代码，以加快页面加载并保存移动用户手机网络数据。 | [使用覆盖工具查找未使用的 JavaScript 和 CSS 代码](coverage/index.md) |
@@ -67,7 +67,7 @@ Microsoft Edge DevTools 包括以下工具。
 | **性能** 工具 | 分析运行时性能，这是页面在运行时的表现，而不是加载。 | [分析运行时性能入门](evaluate-performance/index.md) |
 | **性能监视器** 工具 | 提供网页运行时性能的实时视图，以确定性能问题来自何处，使网站运行缓慢。  查找问题是来自高内存或 CPU 使用率、过于频繁的布局和样式计算，还是 DOM 节点和事件侦听器过多。 | [使用性能监视器工具度量页面的运行时性能](performance-monitor/performance-monitor-tool.md) |
 | **快速源** 工具 | 使用“源”工具以外的工具时，使用 **快速源** 工具显示或编辑 **源** 文件。 | [使用快速源工具显示或编辑源文件](quick-source/quick-source-tool.md) |
-| **呈现** 工具 | 使用 **渲染** 工具查看网页的外观，并显示不同的显示选项或视觉缺陷。 | [在呈现的页面中模拟深色或浅色方案](accessibility/preferred-color-scheme-simulation.md) |
+| **呈现** 工具 | 使用 **渲染** 工具查看网页的外观，并显示不同的显示选项或视觉缺陷。 | [呈现工具，查看具有不同显示选项或视觉缺陷的网页外观](rendering-tools/rendering-tool.md) |
 | **搜索** 工具 | 使用 **搜索** 工具查找网页的特定源文件，包括 HTML、CSS、JavaScript 和映像文件。 | [使用搜索工具查找页面的源文件](search/search-tool.md) |
 | **安全** 工具 | 检查页面的安全性。 | [使用安全工具了解安全问题](security/index.md) |
 | **传感器** 工具 | 模拟不同的设备方向。 | [使用传感器工具模拟设备方向](device-mode/orientation.md) |
@@ -79,7 +79,7 @@ Microsoft Edge DevTools 包括以下工具。
 
 <!-- when no longer experimental, move into table:
 | **CSP Violations** tool | Displays any Content Security Policy (CSP) violations that are detected on the inspected webpage. | [CSP Violations tool](csp-violations/csp-violations-tool.md) |
-https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
+https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
 -->
 
 

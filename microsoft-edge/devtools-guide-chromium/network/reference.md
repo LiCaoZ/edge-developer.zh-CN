@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
-ms.openlocfilehash: e52c1f7f494977a36aca62562a1b0057d627a857
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
-ms.translationtype: HT
+ms.openlocfilehash: c8918d01fdace6e8cd4e7e6fe796c81e11c59deb
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12433004"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514508"
 ---
 <!-- Copyright Kayce Basques
 
@@ -38,7 +38,7 @@ ms.locfileid: "12433004"
 
 默认情况下，只要开发人员工具处于打开状态，它就会在“**网络**”工具中记录所有网络请求。
 
-:::image type="content" source="../media/network-network-panel.msft.png" alt-text="网络面板。" lightbox="../media/network-network-panel.msft.png":::
+![网络面板。](../media/network-network-panel.msft.png)
 
 ### <a name="stop-recording-network-requests"></a>停止记录网络请求
 
@@ -52,13 +52,13 @@ ms.locfileid: "12433004"
 
 在“**网络**”工具上单击“**清除**”（“![清除](../media/clear-requests-icon.msft.png)”）按钮，从“请求”表中清除所有请求。
 
-:::image type="content" source="../media/network-network-clear-button.msft.png" alt-text="“清除”按钮。" lightbox="../media/network-network-clear-button.msft.png":::
+![“清除”按钮。](../media/network-network-clear-button.msft.png)
 
 ### <a name="save-requests-across-page-loads"></a>跨页面加载保存请求
 
 若要跨页面加载保存请求，请在“**网络**”工具上选择“**保留日志**”复选框：
 
-:::image type="content" source="../media/network-network-preserve-log.msft.png" alt-text="“保留日志”复选框。" lightbox="../media/network-network-preserve-log.msft.png":::
+![“保留日志”复选框。](../media/network-network-preserve-log.msft.png)
 
 开发人员工具将保存所有请求，直到禁用“**保留日志**”。
 
@@ -74,7 +74,7 @@ ms.locfileid: "12433004"
 
 1. 选中**捕获屏幕截图**复选框：
 
-:::image type="content" source="../media/network-network-screenshot-box.msft.png" alt-text="正在启用“捕获屏幕截图”。" lightbox="../media/network-network-screenshot-box.msft.png":::
+![正在启用“捕获屏幕截图”。](../media/network-network-screenshot-box.msft.png)
 
 要捕获屏幕截图：
 
@@ -84,7 +84,7 @@ ms.locfileid: "12433004"
 
 1. 将鼠标悬停在屏幕截图上以显示截图的位置。  **视图**图表窗格上显示黄色垂直线。
 
-   :::image type="content" source="../media/network-network-screenshot-hover.msft.png" alt-text="将鼠标悬停在屏幕截图上。" lightbox="../media/network-network-screenshot-hover.msft.png":::
+   ![将鼠标悬停在屏幕截图上。](../media/network-network-screenshot-hover.msft.png)
 
 1. 单击截图的缩略图以过滤截图后发生的任何请求。
 
@@ -97,7 +97,7 @@ ms.locfileid: "12433004"
 <!--  To replay an XHR request, right-click the request in the Requests table, and then click **Replay XHR**.  -->
 
 <!--
-:::image type="content" source="../media/network-replay-xhr.msft.png" alt-text="Click Replay XHR." lightbox="../media/network-replay-xhr.msft.png":::
+![Click Replay XHR.](../media/network-replay-xhr.msft.png)
 -->
 
 
@@ -110,7 +110,7 @@ ms.locfileid: "12433004"
 
 “**禁用缓存**”复选框：
 
-:::image type="content" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="“禁用缓存”复选框。" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
+![“禁用缓存”复选框。](../media/network-network-disable-cache-checkbox.msft.png)
 
 #### <a name="disable-the-browser-cache-from-the-network-conditions-drawer"></a>从“网络条件”抽屉中禁用浏览器缓存
 
@@ -128,7 +128,8 @@ ms.locfileid: "12433004"
 
 选择“**清除浏览器缓存**：
 
-:::image type="content" source="../media/network-network-clear-browser-cache.msft.png" alt-text="选择“清除浏览器缓存”。" lightbox="../media/network-network-clear-browser-cache.msft.png":::
+![选择“清除浏览器缓存”。](../media/network-network-clear-browser-cache.msft.png)
+
 
 ### <a name="emulate-offline"></a>模拟脱机
 
@@ -138,7 +139,8 @@ ms.locfileid: "12433004"
 
 “**脱机**”下拉菜单：
 
-:::image type="content" source="../media/network-network-offline-dropdown.msft.png" alt-text="“脱机”下拉菜单。" lightbox="../media/network-network-offline-dropdown.msft.png":::
+![“脱机”下拉菜单。](../media/network-network-offline-dropdown.msft.png)
+
 
 ### <a name="emulate-slow-network-connections"></a>模拟慢速网络连接
 
@@ -146,11 +148,14 @@ ms.locfileid: "12433004"
 
 “**限制**”下拉菜单：
 
-:::image type="content" source="../media/network-network-throttling-menu.msft.png" alt-text="“限制”下拉菜单。" lightbox="../media/network-network-throttling-menu.msft.png":::
+![“限制”下拉菜单。](../media/network-network-throttling-menu.msft.png)
 
 可以选择不同的预设，如慢速 3G 或快速 3G。  若要添加自定义预设，请打开“限制”菜单，然后选择“**自定义**” > “**添加**”。
 
 开发人员工具会在“**网络**”工具旁边显示一个警告图标，提醒已启用限制。
+
+另请参阅在_检查网络活动中_[模拟较慢的网络连接](../network/index.md#simulate-a-slower-network-connection)。
+
 
 #### <a name="emulate-slow-network-connections-from-the-network-conditions-drawer"></a>从“网络条件”抽屉模拟慢速网络连接
 
@@ -162,11 +167,12 @@ ms.locfileid: "12433004"
 
 <!--todo: add network condition section when available -->
 
+
 ### <a name="manually-clear-browser-cookies"></a>手动清除浏览器 Cookie
 
 若要随时手动清除浏览器 Cookie，请右键单击“请求”表中的任意位置，然后选择“**清除浏览器 Cookie**”。
 
-:::image type="content" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="选择“清除浏览器 Cookie”。" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
+![选择“清除浏览器 Cookie”。](../media/network-network-clear-browser-cookies.msft.png)
 
 ### <a name="override-the-user-agent"></a>替代用户代理
 
@@ -190,7 +196,7 @@ ms.locfileid: "12433004"
 
 1. 在“用户代理”面板中，清除**使用浏览器默认值**复选框，然后选择**用户代理客户端提示**。
 
-   :::image type="content" source="images/network-conditions-user-agent-client-hints.msft.png" alt-text="设置用户代理客户端提示。" lightbox="images/network-conditions-user-agent-client-hints.msft.png":::
+   ![设置用户代理客户端提示。](images/network-conditions-user-agent-client-hints.msft.png)
 
 1. 接受**自定义...** 的默认值，或从下拉列表中选择预定义的浏览器和设备。
 
@@ -225,7 +231,7 @@ ms.locfileid: "12433004"
 
 “**筛选器**”文本框：
 
-:::image type="content" source="../media/network-network-filters-textbox.msft.png" alt-text="“筛选器”文本框。" lightbox="../media/network-network-filters-textbox.msft.png":::
+![“筛选器”文本框。](../media/network-network-filters-textbox.msft.png)
 
 用空格分隔每个属性，可以同时使用多个属性。  例如，`mime-type:image/png larger-than:1K` 显示大于 1 KB 的所有 PNG。  多属性筛选器相当于 `AND` 操作。  `OR` 当前不支持操作。
 
@@ -266,7 +272,7 @@ ms.locfileid: "12433004"
 
 使用**类型**筛选器来显示 JS、CSS、文档资源：
 
-:::image type="content" source="../media/network-network-type-filters.msft.png" alt-text="使用类型筛选器来显示 JS、CSS、文档资源。" lightbox="../media/network-network-type-filters.msft.png":::
+![使用类型筛选器来显示 JS、CSS、文档资源。](../media/network-network-type-filters.msft.png)
 
 ### <a name="filter-requests-by-time"></a>按时间筛选请求
 
@@ -274,7 +280,7 @@ ms.locfileid: "12433004"
 
 筛选出处于非活动状态约 300 毫秒的所有请求：
 
-:::image type="content" source="../media/network-network-overview-filter.msft.png" alt-text="筛选出处于非活动状态约 300 毫秒的所有请求。" lightbox="../media/network-network-overview-filter.msft.png":::
+![筛选出处于非活动状态约 300 毫秒的所有请求。](../media/network-network-overview-filter.msft.png)
 
 ### <a name="hide-data-urls"></a>隐藏数据 URL
 
@@ -282,7 +288,7 @@ ms.locfileid: "12433004"
 
 若要隐藏请求，请关闭“**隐藏数据 URL**”复选框：
 
-:::image type="content" source="../media/network-network-hide-data-urls.msft.png" alt-text="“隐藏数据 URL”复选框。" lightbox="../media/network-network-hide-data-urls.msft.png":::
+![“隐藏数据 URL”复选框。](../media/network-network-hide-data-urls.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -314,7 +320,7 @@ ms.locfileid: "12433004"
 
 下面显示了按总持续时间对瀑布图进行的排序。  每个条形的较浅部分是等待时间，较暗的部分是下载字节所用的时间：
 
-:::image type="content" source="../media/network-network-waterfall-total-duration.msft.png" alt-text="按总持续时间排序“瀑布飞溅”。" lightbox="../media/network-network-waterfall-total-duration.msft.png":::
+![按总持续时间排序“瀑布飞溅”。](../media/network-network-waterfall-total-duration.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -326,7 +332,7 @@ ms.locfileid: "12433004"
 
 使用“**请求**”表可以显示开发工具打开时发出的所有请求的日志。  若要显示有关每个项目的详细信息，请单击或将鼠标悬停在请求上。
 
-:::image type="content" source="../media/network-network-requests-table.msft.png" alt-text="“请求”表。" lightbox="../media/network-network-requests-table.msft.png":::
+![“请求”表。](../media/network-network-requests-table.msft.png)
 
 默认情况下，“请求”表显示以下列：
 
@@ -346,13 +352,13 @@ ms.locfileid: "12433004"
 
 右键单击“请求”表的标题，然后选择要隐藏或显示的选项。  当前显示的选项旁边有复选标记。
 
-:::image type="content" source="../media/network-network-requests-add-column.msft.png" alt-text="向“请求”表中添加列。" lightbox="../media/network-network-requests-add-column.msft.png":::
+![向“请求”表中添加列。](../media/network-network-requests-add-column.msft.png)
 
 #### <a name="add-custom-columns"></a>添加自定义列
 
 若要向“请求”表添加自定义列，请右键单击“请求”表的标题，然后选择**响应标头** > **管理标头列**。
 
-:::image type="content" source="../media/network-network-requests-add-custom.msft.png" alt-text="向“请求”表添加自定义列。" lightbox="../media/network-network-requests-add-custom.msft.png":::
+![向“请求”表添加自定义列。](../media/network-network-requests-add-custom.msft.png)
 
 ### <a name="display-the-timing-relationship-of-requests"></a>显示请求的计时关系
 
@@ -362,7 +368,7 @@ ms.locfileid: "12433004"
 
 “**请求**”窗格的“瀑布飞溅”列：
 
-:::image type="content" source="../media/network-network-requests-waterfall.msft.png" alt-text="“请求”窗格的“瀑布飞溅”列。" lightbox="../media/network-network-requests-waterfall.msft.png":::
+![“请求”窗格的“瀑布飞溅”列。](../media/network-network-requests-waterfall.msft.png)
 
 <!-- ### Analyze the frames of a WebSocket Connection  -->
 
@@ -374,7 +380,7 @@ ms.locfileid: "12433004"
 To refresh the table, re-select the name of the WebSocket connection under the **Name** column of the Requests table.  -->
 
 <!--
-:::image type="content" source="../media/network-frames.msft.png" alt-text="The Frames panel." lightbox="../media/network-frames.msft.png":::
+![The Frames panel.](../media/network-frames.msft.png)
 -->
 
 <!--The table contains the following three columns.
@@ -399,7 +405,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 “预览”选项卡在显示图像时最有用。
 
-:::image type="content" source="../media/network-network-resources-preview.msft.png" alt-text="“预览”面板。" lightbox="../media/network-network-resources-preview.msft.png":::
+![“预览”面板。](../media/network-network-resources-preview.msft.png)
 
 ### <a name="display-a-response-body"></a>显示响应正文
 
@@ -408,7 +414,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 1. 在“请求”表的“**名称**”列下，单击请求的 URL。
 1. 单击**响应**选项卡。
 
-:::image type="content" source="../media/network-network-resources-response.msft.png" alt-text="“响应”面板。" lightbox="../media/network-network-resources-response.msft.png":::
+![“响应”面板。](../media/network-network-resources-response.msft.png)
 
 ### <a name="display-http-headers"></a>显示 HTTP 标头
 
@@ -418,7 +424,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 1. 单击**标头**选项卡。
 
-:::image type="content" source="../media/network-resources-headers.msft.png" alt-text="“标头”面板。" lightbox="../media/network-resources-headers.msft.png":::
+![“标头”面板。](../media/network-resources-headers.msft.png)
 
 #### <a name="display-http-header-source"></a>显示 HTTP 标头源
 
@@ -436,7 +442,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 1. 导航到“**查询字符串参数**”部分。
 
-:::image type="content" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="“查询字符串参数”部分。" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
+![“查询字符串参数”部分。](../media/network-network-resources-headers-query-string-parameters.msft.png)
 
 #### <a name="display-query-string-parameters-source"></a>显示查询字符串参数源
 
@@ -463,7 +469,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 <!--For more information about each of the columns, see [Fields](manage-data/cookies#fields).  TODO: add link when section is available -->
 
-:::image type="content" source="../media/network-network-resources-cookies.msft.png" alt-text="“Cookie”面板。" lightbox="../media/network-network-resources-cookies.msft.png":::
+![“Cookie”面板。](../media/network-network-resources-cookies.msft.png)
 
 ### <a name="display-the-timing-breakdown-of-a-request"></a>显示请求的计时细分
 
@@ -472,13 +478,13 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 1. 在“请求”表的“**名称**”列下，单击请求的 URL。
 1. 单击**计时**选项卡。
 
-若要更快地访问数据，请参阅“[预览计时细分](#preview-a-timing-breakdown)”。
+若要更快地访问数据，请参阅本文中的 [预览版计时细分](#preview-a-timing-breakdown)。
 
-有关“**计时**”面板中可能显示的各阶段详细信息，请参阅“[计时细分阶段说明](#timing-breakdown-phases-explained)”。
+有关计 **时** 面板中可能显示的每个阶段的详细信息，请参阅本文中 [介绍的计时细分阶段](#timing-breakdown-phases-explained)。
 
 “**计时**”面板：
 
-:::image type="content" source="../media/network-network-resources-timing.msft.png" alt-text="“计时”面板。" lightbox="../media/network-network-resources-timing.msft.png":::
+![“计时”面板。](../media/network-network-resources-timing.msft.png)
 
 有关各阶段的更多信息。
 
@@ -488,11 +494,11 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 要显示请求的计时细分预览，请在“请求”表的“**瀑布**”列中，将鼠标悬停在请求的条目上。
 
-有关如何在不悬停的情况下访问数据的详细信息，请参阅“[显示请求的计时细分](#display-the-timing-breakdown-of-a-request)”。
-
 预览请求的计时细分：
 
-:::image type="content" source="../media/network-network-resources-waterfall-hover.msft.png" alt-text="预览请求的计时细分。" lightbox="../media/network-network-resources-waterfall-hover.msft.png":::
+![预览请求的计时细分。](../media/network-network-resources-waterfall-hover.msft.png)
+
+若要在不悬停的情况下查看数据，请参阅当前部分的顶部， [显示请求的计时细目](#display-the-timing-breakdown-of-a-request)。
 
 #### <a name="timing-breakdown-phases-explained"></a>计时细分阶段说明
 
@@ -535,7 +541,7 @@ DevTools 颜色：
 
 显示请求的发起程序和依赖项：
 
-:::image type="content" source="../media/network-network-resources-initiators-dependencies.msft.png" alt-text="显示请求的发起程序和依赖项。" lightbox="../media/network-network-resources-initiators-dependencies.msft.png":::
+![显示请求的发起程序和依赖项。](../media/network-network-resources-initiators-dependencies.msft.png)
 
 当“请求”表按时间顺序排列时，如果将鼠标悬停在某一行上，则它前面的行将显示绿色请求。  绿色请求是依赖项的发起程序。  如果在此之上还有另一个绿色请求，则该更高的请求是发起程序的发起程序。  等等。
 
@@ -545,7 +551,7 @@ DevTools 颜色：
 
 “**网络**”工具上 `DOMContentLoaded` 和 `load` 事件的位置：
 
-:::image type="content" source="../media/network-network-requests-load-events.msft.png" alt-text="“网络”面板上 DOMContentLoaded 和加载事件的位置。" lightbox="../media/network-network-requests-load-events.msft.png":::
+![“网络”面板上 DOMContentLoaded 和加载事件的位置。](../media/network-network-requests-load-events.msft.png)
 
 ### <a name="display-the-total-number-of-requests"></a>显示请求总数
 
@@ -556,7 +562,7 @@ DevTools 颜色：
 
 自打开开发工具以来的请求总数
 
-:::image type="content" source="../media/network-network-total-requests.msft.png" alt-text="自打开开发工具以来的请求总数。" lightbox="../media/network-network-total-requests.msft.png":::
+![自打开开发工具以来的请求总数。](../media/network-network-total-requests.msft.png)
 
 ### <a name="display-the-total-download-size"></a>显示总下载大小
 
@@ -567,7 +573,7 @@ DevTools 颜色：
 
 请求的总下载大小：
 
-:::image type="content" source="../media/network-network-total-download-size.msft.png" alt-text="请求的总下载大小。" lightbox="../media/network-network-total-download-size.msft.png":::
+![请求的总下载大小。](../media/network-network-total-download-size.msft.png)
 
 若要在浏览器解压缩每个项目后验证资源的大小，请参阅“[显示资源的未压缩大小](#display-the-uncompressed-size-of-a-resource)”。
 
@@ -593,7 +599,7 @@ init();
 
 导致资源请求的堆栈跟踪：
 
-:::image type="content" source="../media/network-network-requests-initiator-stack.msft.png" alt-text="导致资源请求的堆栈跟踪。" lightbox="../media/network-network-requests-initiator-stack.msft.png":::
+![导致资源请求的堆栈跟踪。](../media/network-network-requests-initiator-stack.msft.png)
 
 ### <a name="display-the-uncompressed-size-of-a-resource"></a>显示资源的未压缩大小
 
@@ -601,7 +607,7 @@ init();
 
 下面是未压缩资源的示例。  通过网络发送的 `jquery-3.3.1.min.js` 文件的压缩大小为 `29.9 KB`，而未压缩的大小为 `84.9 KB`：
 
-:::image type="content" source="../media/network-network-requests-uncompressed-compare.msft.png" alt-text="未压缩资源的示例。" lightbox="../media/network-network-requests-uncompressed-compare.msft.png":::
+![未压缩资源的示例。](../media/network-network-requests-uncompressed-compare.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -618,7 +624,7 @@ init();
 
 选择**与内容另存为 HAR**：
 
-:::image type="content" source="../media/network-network-requests-save-har-content.msft.png" alt-text="选择“与内容另存为 HAR&quot;。" lightbox="../media/network-network-requests-save-har-content.msft.png":::
+![选择“与内容另存为 HAR"。](../media/network-network-requests-save-har-content.msft.png)
 
 ### <a name="copy-one-or-more-requests-to-the-clipboard"></a>将一个或多个请求复制到剪贴板
 
@@ -636,17 +642,17 @@ init();
 
 选择**复制响应**：
 
-:::image type="content" source="../media/network-network-requests-copy-response.msft.png" alt-text="选择“复制响应”。" lightbox="../media/network-network-requests-copy-response.msft.png":::
+![选择“复制响应”。](../media/network-network-requests-copy-response.msft.png)
 
 ### <a name="copy-formatted-response-json-to-the-clipboard"></a>将格式化响应 JSON 复制到剪贴板
 
 选择网络请求然后导航到“**标头**”窗格。  若要复制响应的 JSON 值，请导航到**请求有效负载**，右键单击 JSON 响应内容，然后选择**复制值**。
 
-:::image type="content" source="../media/network-header-copy-property-value.msft.png" alt-text="“复制值”右键单击命令。" lightbox="../media/network-header-copy-property-value.msft.png":::
+![“复制值”右键单击命令。](../media/network-header-copy-property-value.msft.png)
 
 在 Microsoft Visual Studio Code 中粘贴格式化响应 JSON：
 
-:::image type="content" source="../media/network-header-paste-property-value.msft.png" alt-text="具有格式化响应 JSON 的 Microsoft Visual Studio Code。" lightbox="../media/network-header-paste-property-value.msft.png":::
+![具有格式化响应 JSON 的 Microsoft Visual Studio Code。](../media/network-header-paste-property-value.msft.png)
 
 ### <a name="copy-property-values-from-network-requests-to-your-clipboard"></a>将属性值从网络请求复制到剪贴板
 
@@ -673,7 +679,7 @@ init();
 
 默认情况下，开发工具显示“**筛选器**”窗格。  若要隐藏**筛选器**窗格，选择**筛选器**（![筛选器](../media/filter-icon.msft.png)）。
 
-:::image type="content" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="“隐藏筛选器”按钮。" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
+![“隐藏筛选器”按钮。](../media/network-network-resources-hide-filters-button.msft.png)
 
 ### <a name="use-large-request-rows"></a>使用大请求行
 
@@ -681,13 +687,13 @@ init();
 
 要启用大行，请选择“**使用大请求行**”复选框。  “**请求**”窗格中大请求行的示例：
 
-:::image type="content" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="“请求”窗格中大请求行的示例。" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
+![“请求”窗格中大请求行的示例。](../media/network-network-requests-large-request-rows.msft.png)
 
 ### <a name="hide-the-overview-pane"></a>隐藏概述窗格
 
 默认情况下，开发工具显示“**概述**”窗格。  若要隐藏**概述**窗格，请清除**显示概述**复选框。
 
-:::image type="content" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="“显示概述”复选框。" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
+![“显示概述”复选框。](../media/network-network-requests-show-overview-off.msft.png)
 
 
 <!-- ====================================================================== -->

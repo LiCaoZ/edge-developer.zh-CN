@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/06/2021
-ms.openlocfilehash: 3aa3863f1efd0b938d27b375ae8e716391ebe1dd
-ms.sourcegitcommit: aaac3b52a2ed68d2cb1b4047b7066be3cf163356
-ms.translationtype: HT
+ms.openlocfilehash: 2cdeac2f8144608ba7e47da6c8196cc569076446
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "12468675"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514116"
 ---
 <!-- Copyright Katherine Jackson
 
@@ -30,7 +30,7 @@ ms.locfileid: "12468675"
 
 这是一系列教程中第一个介绍 Web 开发基础知识的教程。 了解一组名为 Microsoft Edge DevTools 的 Web 开发人员工具，这些工具将提高工作效率。
 
-本教程介绍 HTML 和 [文档对象模型](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) （DOM）。 HTML 是 Web 开发的核心技术之一。 它是控制网页结构和内容的语言。 DOM 还与网页的结构和内容相关，我们稍后将了解相关内容。
+本教程介绍 HTML 和 [文档对象模型](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) （DOM）。 HTML 是 Web 开发的核心技术之一。 它是控制网页结构和内容的语言。 DOM 还与网页的结构和内容相关，我们稍后将了解相关内容。
 
 
 <!-- ====================================================================== -->

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: d56f23a9996ee03add8d84bdc0c333617ba64d8c
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
-ms.translationtype: HT
+ms.openlocfilehash: 3ca3d1f469deb9580d4d05e2f050396a8fa0f2f1
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431975"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514571"
 ---
 <!-- Copyright Kayce Basques
 
@@ -150,6 +150,8 @@ ms.locfileid: "12431975"
 在重复访问时，浏览器通常会从[缓存](https://developer.mozilla.org/docs/Web/HTTP/Caching)中提供一些文件，从而加快页面加载速度。  **空缓存和硬性刷新** 会强制浏览器转到所有资源的网络。  使用它来显示第一次访问者如何体验页面加载。
 
 **空缓存和硬性刷新** 工作流仅在 DevTools 打开时可用。
+
+另请参阅模拟_网络功能参考_中的[慢速网络连接](../network/reference.md#emulate-slow-network-connections)。
 
 
 <!-- ====================================================================== -->

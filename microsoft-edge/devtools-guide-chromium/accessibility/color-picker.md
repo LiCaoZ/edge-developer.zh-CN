@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
+ms.openlocfilehash: be81a38a926f862212601556aa192151e5f782ce
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12513948"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques
@@ -23,33 +29,39 @@ ms.date: 06/07/2021
    limitations under the License.  -->
 # <a name="test-text-color-contrast-using-the-color-picker"></a>使用颜色选取器测试文本颜色对比度
 
-低视力用户可能无法看到非常亮或非常暗的区域。  所有内容通常以相同的亮度级别显示，这使得难以区分轮廓和边缘。
+视力低下的人可能看不到非常明亮或非常黑暗的区域。  一切往往显示在相同的亮度水平，这使得很难区分轮廓和边缘。
 
-对比率测量文本的前景和背景的亮度差。  如果文本的对比度比率较低，则低视力用户可能会将网站体验为空白屏幕。
+对比率测量文本的前景和背景的亮度差。  如果文本的对比度较低，则视力低下的人可能会将您的网站视为空白屏幕。
 
-在 DevTools 中，查看文本元素的对比率的一个方法就是从"元素"工具的"样式"**** 选项卡使用**颜色选取**器。  颜色选取器可帮助你验证文本是否满足建议的对比率级别。
+在 DevTools 中，查看文本元素的对比度比率的一种方法是使用“**元素**”工具的“**样式**”选项卡中的[颜色选取器](../css/reference.md#change-colors-with-the-color-picker)。  颜色选取器可帮助验证文本是否满足建议的对比度级别。
 
 **若要使用颜色选取器检查文本颜色对比度：**
 
-1. 在 DevTools 中，选择 **"元素"** 工具。
+1. 在 DevTools 中，选择 **“元素”** 工具。
 
 1. 在 **DOM 树**中，选择要检查的文本元素。
 
    :::image type="content" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="检查 DOM 树中的段落。" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
 
-1. 在 **"样式**"选项卡上，**** 找到应用于元素的颜色属性，然后选择颜色属性旁边的**颜色**正方形。
+1. 在“ **样式”** 选项卡上，找到应用于元素的 **颜色** 属性，然后选择颜色属性旁边的 **颜色** 方块。
 
-   :::image type="content" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="元素的&quot;color&quot;属性。" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
+   :::image type="content" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="元素的“color”属性。" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
 
-1. 检查 **颜色选取器** 中的"对比率"部分。  一个选中标记表示元素满足最低 [建议](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)。  两个选中标记表示它符合 [增强的建议](https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced)。
+1. 检查颜色选取器的 **对比度** 部分。  一个复选标记表示元素符合 [最低建议](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)。  两个复选标记表示它符合 [增强的建议](https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced)。
 
-   :::image type="content" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="颜色选取器中的&quot;对比率&quot;部分显示两个选中标记和值 13.97。" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
+   :::image type="content" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="颜色选取器的“对比度”部分显示两个复选标记和一个值 13.97。" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
 
-1. 有关详细信息，请选择"对 **比率"** 部分以展开它。  在颜色选取器顶部的可视选取器中，显示两行，在可视选取器中运行，以及一个圆表示当前颜色。  如果当前颜色符合建议，则该行的同一侧任何内容也符合建议。  如果当前颜色不满足建议，则同一侧的颜色也不满足建议。
+1. 有关详细信息，请选择 **“对比度”** 部分进行扩展。  在颜色选取器顶部的视觉选取器中，将显示两行，在视觉对象选取器上运行，以及当前颜色的圆圈。  如果当前颜色符合建议，则该行的同一侧任何内容也符合建议。  如果当前颜色不符合建议，则同一侧的任何内容也不满足建议。
 
-   :::image type="content" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="可视选取器中的&quot;对比率&quot;行。" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
+   :::image type="content" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="视觉对象选取器中的“对比度”行。" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
 
-1. 若要尝试不同的颜色，请在可视化选取器内单击，或在颜色选取器底部选择颜色样本。
+1. 若要尝试不同的颜色，请单击视觉对象选取器，或选择颜色选取器底部的颜色监视器。
+
+
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
+
+* 使用 _CSS 功能参考_中的[颜色选取器更改颜色](../css/reference.md#change-colors-with-the-color-picker)
 
 
 <!-- ====================================================================== -->

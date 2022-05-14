@@ -6,20 +6,16 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/09/2022
-ms.openlocfilehash: 95cb6bcbd4af63da64bfacf2e24b3d539e7fd6bf
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: c1c1ed2fa54d8e5664c4f531c11866a2c85d76bb
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12497126"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514431"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-99"></a>DevTools (Microsoft Edge 99) 中的新增功能
 
-以下部分列出了 Microsoft Edge 开发人员工具团队的公告。  若要尝试 Microsoft Edge DevTools 的最新功能以及适用于 Microsoft Visual Studio 和 Visual Studio Code 的 Edge DevTools 扩展，请阅读这些公告。  若要随时了解有关开发人员工具的最新和最强大功能，请下载 [Microsoft Edge 预览频道](https://www.microsoftedgeinsider.com/download) 并 [在 Twitter 上关注 Microsoft Edge 开发人员工具团队](https://twitter.com/EdgeDevTools)。
-
-如果你使用的是 Windows、Linux 或 macOS，请考虑将 Microsoft Edge Canary 预览渠道用作默认开发浏览器。  通过预览渠道，可以访问 Microsoft Edge DevTools 的最新功能。
-
-若要报告 DevTools 的问题或请求新功能，请在新[Microsoft Edge DevTools 反馈存储库](https://github.com/MicrosoftEdge/DevTools)中提出问题。
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
 <!-- ====================================================================== -->
@@ -55,7 +51,7 @@ Azure Artifacts符号服务器现在支持存储生成过程在编译、缩小�
 若要尝试此功能，请执行以下操作：
 1. 确保已安装Visual Studio 2022 和 ASP.NET 工作负荷。
 1. 如[Microsoft Edge开发人员](https://aka.ms/edgetools-for-vs)工具Visual Studio中所述，将 Web Live Preview 设置为默认Web Forms设计器。
-1. 在 ASP.NET 项目中，在“**设计**”窗口中打开项目的网页。
+1. 在 ASP.NET 项目中，在“ **设计** ”窗口中打开项目的网页。
 1. 在 **“设计”** 窗口左上角，单击 **“Open Edge DevTools** (![Open Edge DevTools”图标。](../../media/2022/03/open-edge-dev-tools-v-s-icon.png)) 按钮：
 
 ![ASP.NET 项目，打开 Edge DevTools。](../../media/2022/03/devtools-extension-v-s-web-forms-designer.png)
@@ -87,7 +83,8 @@ Azure Artifacts符号服务器现在支持存储生成过程在编译、缩小�
 ![“图层”工具现在链接到 3D 视图工具。](../../media/2022/03/layers-3d-view-tool.png)
 <!-- work item > layersmove.gif -->
 
-[使用 3D 视图工具查看导航网页层、z 索引和 DOM](../../../3d-view/index.md)。
+另请参阅：
+* [使用 3D 视图工具导航网页层、z 索引和 DOM](../../../3d-view/index.md)
 
 
 <!-- ====================================================================== -->
@@ -114,7 +111,6 @@ Azure Artifacts符号服务器现在支持存储生成过程在编译、缩小�
 ![性能工具中火焰图中的非显式函数名称。](../../media/2022/03/unminified-call-stack-performance-tool.png)
 
 另请参阅：
-
 * 在 [Microsoft Edge 博客中取消区分 DevTools 性能配置文件](https://blogs.windows.com/msedgedev/2022/02/03/unminifying-function-names-in-devtools-performance-profiles/)中的函数名称。
 * [在性能配置文件中显示原始函数名称](../../../evaluate-performance/unminify.md)。
 
@@ -133,7 +129,8 @@ Azure Artifacts符号服务器现在支持存储生成过程在编译、缩小�
 
 ![3D 视图工具。](../../media/2022/03/3d-view-tool.png)
 
-若要详细了解如何将辅助技术与 DevTools 配合使用，请阅读 [Navigate DevTools 和辅助技术](../../../accessibility/navigation.md)。
+另请参阅：
+* [使用辅助技术导航开发工具](../../../accessibility/navigation.md)
 
 
 <!-- ====================================================================== -->
@@ -146,6 +143,9 @@ Azure Artifacts符号服务器现在支持存储生成过程在编译、缩小�
 有关Chromium开源项目中此功能的历史记录，[请参阅问题1284737](https://crbug.com/1284737)。
 
 <!-- https://developer.chrome.com/blog/new-in-devtools-99/#source-tree -->
+
+另请参阅：
+* [使用“页面”选项卡浏览]() 在 _“源”工具概述_中构造当前网页的资源。
 
 
 <!-- ====================================================================== -->
@@ -170,7 +170,6 @@ Microsoft Edge版本 99 还包括Chromium项目的以下更新：
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > Chromium项目的公告原始页面是 [DevTools (Chrome 99) 中的新增](https://developer.chrome.com/blog/new-in-devtools-99)功能，由在 Google) 上处理 Chrome DevTools 的开发人员倡导者 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (创作。
-
 
 
 <!-- ====================================================================== -->

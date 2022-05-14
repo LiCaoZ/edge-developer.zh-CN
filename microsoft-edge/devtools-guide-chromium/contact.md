@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 03/07/2022
-ms.openlocfilehash: fb7e4ce1c62c23ad535a41f6a6c05fe2451a5113
-ms.sourcegitcommit: 3e6de1ad86f44a667c0fcf1f40013f11f70e78e4
+ms.openlocfilehash: 6a33f826ff31afab95651ff77ce7e72089aa76ff
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "12478248"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514697"
 ---
 # <a name="contact-the-microsoft-edge-devtools-team"></a>联系 Microsoft Edge 开发工具团队
 
@@ -31,11 +31,11 @@ ms.locfileid: "12478248"
 
 若要在使用 DevTools 时报告 bug 或请求功能：
 
-1. 单击“**发送反馈** (![发送反馈”图标。](media/send-feedback-icon-light-theme.png)) 图标 (或按+`Alt``I``Shift`+Windows和 Linux 或 `Option``Shift`++`I` macOS) 打开“**发送反馈**”窗口。
+1. 单击“**发送反馈** (![”发送反馈“图标。](media/send-feedback-icon-light-theme.png)) 图标 (或按+`Alt``I``Shift`+Windows和 Linux 或`Option``Shift`++`I`macOS) 打开”**发送反馈**“窗口。
 1. 在 **“发送反馈** ”窗口中，描述 bug 或功能请求。 还可以附加屏幕截图，帮助团队更好地了解问题并添加电子邮件地址，以便我们可以跟进你。
 1. 按 **Send** 为Microsoft Edge开发团队创建跟踪问题。
 
-![Microsoft Edge DevTools 中的“发送反馈”按钮和“发送反馈”窗口的屏幕截图](media/devtools-send-feedback-window.png)
+![Microsoft Edge DevTools 中的“发送反馈”按钮和“发送反馈”窗口。](media/devtools-send-feedback-window.png)
 
 
 <!-- ====================================================================== -->

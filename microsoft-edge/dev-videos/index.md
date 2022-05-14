@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/05/2022
-ms.openlocfilehash: 8689f669083aadd233ff6c11212668e00d496c0f
-ms.sourcegitcommit: b09c00d9771f2bd004b8c66c11ea6566c9f0c1ae
+ms.openlocfilehash: 1e39d0d88457aac67f5ee12f063d815c93d8d50f
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "12508755"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514067"
 ---
 # <a name="videos-about-web-development-with-microsoft-edge"></a>有关使用 Microsoft Edge 进行 Web 开发的视频
 
@@ -73,7 +73,7 @@ _发布于 2021 年 12 月 9 日。_
 当应用程序的 JavaScript 代码在内存中保留越来越多的对象，而不是为浏览器释放对象以进行垃圾回收时，会发生内存泄漏。
 我们与Microsoft Teams开发人员一起构建了此工具，它已帮助我们查找并修复了许多自己的网站和应用的内存泄漏。
 
-有关详细信息，请参阅使用[分离元素工具调试 DOM 内存泄漏](../devtools-guide-chromium/memory-problems/dom-leaks.md)，并使用[Microsoft Edge分离元素工具阅读相应的博客文章“调试内存泄漏](https://blogs.windows.com/msedgedev/2021/12/09/debug-memory-leaks-detached-elements-tool-devtools/)”。
+有关详细信息，请参阅使用[分离元素工具调试 DOM 内存泄漏](../devtools-guide-chromium/memory-problems/dom-leaks.md)，并阅读相应的博客帖子使用[Microsoft Edge分离元素工具调试内存泄漏](https://blogs.windows.com/msedgedev/2021/12/09/debug-memory-leaks-detached-elements-tool-devtools/)。
 
 
 <!-- ====================================================================== -->
@@ -87,4 +87,4 @@ Microsoft Edge团队与Chromium开源项目合作指定并实施了新的 EyeDro
 
 许多创造性的应用程序使用户能够从应用窗口的各个部分，甚至从整个屏幕中选择颜色，通常使用眼球隐喻。 通过 EyeDropper API，作者可以在 Web 上构建自定义颜色选取器时使用浏览器提供的眼滴。
 
-有关详细信息，请参阅使用 [EyeDropper API | web.dev 和 EyeDropper API 选取屏幕上任何像素的颜色](https://web.dev/eyedropper/) [- Web API |MDN developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API)。
+有关详细信息，请参阅使用 [EyeDropper API | web.dev 和 EyeDropper API 选取屏幕上任何像素的颜色](https://web.dev/eyedropper/) [- Web API |MDN developer.mozilla.org](https://developer.mozilla.org/docs/Web/API/EyeDropper_API)。

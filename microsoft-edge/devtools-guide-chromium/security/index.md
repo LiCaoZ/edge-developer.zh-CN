@@ -1,17 +1,17 @@
 ---
 title: 使用安全工具了解安全问题
-description: 如何使用 DevTools 中的安全面板确保页面受到 HTTPS 的完全保护。
+description: 如何使用 DevTools 中的安全面板确保页面完全受 HTTPS 保护。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: edafe99b7199bee3757be2dd52e2c589ce9dc0cf
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: a0ddd606b1b93e53342b0f079e2a922f9e981f3a
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431926"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514438"
 ---
 <!-- Copyright Kayce Basques
 
@@ -34,11 +34,11 @@ ms.locfileid: "12431926"
 
 使用 **安全** 面板检查页面的安全性。
 
-1. 若要打开 DevTools，请右键单击网页，然后选择"检查 **"**。  或者，按 `Ctrl`++`Shift``I` (Windows、Linux) 或 (`I` `Command`+`Option`+macOS) 。  将打开 DevTools。
+1. 若要打开 DevTools，请右键单击网页，然后选择 **“检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
 
-1. 在 DevTools 中的主工具栏上，单击"安全 **"** 选项卡。 如果该选项卡不可见，请单击"更多选项卡" (**** 更多选项卡"图标](../media/more-tabs-icon-light-theme.png)。****) 按钮![，或单击"更多工具 (更多工具"图标。) 按钮。](../media/more-tools-icon-light-theme.png) ![
+1. 在 DevTools 的主工具栏上，单击 **“安全”** 选项卡。 如果该选项卡不可见，请单击“ **更多”选项卡** (![“更多”选项卡图标。](../media/more-tabs-icon-light-theme.png)) 按钮，或者“ **更多工具** (![更多工具”图标。](../media/more-tools-icon-light-theme.png)) 按钮。
 
-   安全 **工具** (_或面板_) 打开：
+   **将打开安全**工具 (或_面板_) ：
 
 :::image type="content" source="../media/security-security-overview-secure.msft.png" alt-text="安全面板。" lightbox="../media/security-security-overview-secure.msft.png":::
 
@@ -46,28 +46,28 @@ ms.locfileid: "12431926"
 <!-- ====================================================================== -->
 ## <a name="common-problems"></a>常见问题
 
-### <a name="non-secure-main-origins"></a>非安全主源
+### <a name="non-secure-main-origins"></a>不安全的主源
 
-当页面的主源不安全时，安全概述显示**此页面不安全**。****
+当页面的主要来源不安全时， **安全概述** 会显示 **此页面不安全**。
 
-:::image type="content" source="../media/security-security-overview-non-secure.msft.png" alt-text="非安全页面。" lightbox="../media/security-security-overview-non-secure.msft.png":::
+:::image type="content" source="../media/security-security-overview-non-secure.msft.png" alt-text="不安全的页面。" lightbox="../media/security-security-overview-non-secure.msft.png":::
 
-当您访问的 URL 通过 HTTP 请求时，会出现此问题。  若要确保安全，您需要通过 HTTPS 请求它。  例如，如果您查看地址栏中的 URL，它可能类似于 `http://example.com`。  若要确保 URL 安全，URL 应为 `https://example.com`。
+当通过 HTTP 请求你访问的 URL 时，会出现此问题。  若要使其安全，需要通过 HTTPS 请求它。  例如，如果查看地址栏中的 URL，它可能类似于 `http://example.com`。  为了使其安全，URL 应该是 `https://example.com`.
 
-如果已在服务器上设置 HTTPS，则解决此问题只需将服务器配置为将所有 HTTP 请求重定向到 HTTPS。
+如果已在服务器上设置 HTTPS，则要解决此问题，只需将服务器配置为将所有 HTTP 请求重定向到 HTTPS。
 
-如果您尚未在服务器上设置 HTTPS， [Let's Encrypt](https://letsencrypt.org) 提供了一种免费且相对简单的启动过程的方法。  或者，你可以考虑将网站托管在CDN。  默认情况下，HTTPS 上的大多数主要 CDN 都承载网站。
+如果尚未在服务器上设置 HTTPS， [让我们加密](https://letsencrypt.org) 可以提供一种免费且相对简单的方法来启动该过程。  或者，可以考虑在CDN上托管网站。  默认情况下，HTTPS 上的大多数主要 CDN 主机站点现在。
 
 > [!TIP]
-> [Webhint](https://webhint.io) 中的"使用 [HTTPS](https://webhint.io/docs/user-guide/hints/hint-https-only)"提示可帮助自动执行确保所有 HTTP 请求都定向到 HTTPS 的过程。
+> [Webhint](https://webhint.io) 中的[使用 HTTPS](https://webhint.io/docs/user-guide/hints/hint-https-only) 提示可以帮助自动完成确保所有 HTTP 请求都定向到 HTTPS 的过程。
 
 ### <a name="mixed-content"></a>混合内容
 
-**混合内容**<!--[mixed content](/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)--> 表示页面的主源是安全的，但页面从非安全源请求资源。  混合内容页仅部分受保护，因为探查器可以访问 HTTP 内容，并且易受中间人攻击。
+**混合内容**<!--[mixed content](/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)--> 表示页面的主要来源是安全的，但页面请求来自非安全源的资源。  混合内容页面仅受到部分保护，因为 HTTP 内容可供嗅探器访问，并且容易受到中间人攻击。
 
 :::image type="content" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="混合内容。" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
 
-在上图中，选择"网络"面板中的"**查看 1** 请求"以打开 **"**`mixed-content:displayed`网络"工具并应用筛选器，以便"**网络**日志"只显示非安全资源。
+在上图 **中，在“网络”面板中选择“视图 1”请求** 以打开 **网络** 工具并应用 `mixed-content:displayed` 筛选器，以便 **网络日志** 仅显示不安全的资源。
 
 :::image type="content" source="../media/security-network-filter.msft.png" alt-text="网络日志中的混合资源。" lightbox="../media/security-network-filter.msft.png":::
 
@@ -77,13 +77,13 @@ ms.locfileid: "12431926"
 
 ### <a name="view-main-origin-certificate"></a>查看主源证书
 
-从" **安全概述"** 中，单击 **"查看** 证书"以快速检查证书的主来源。
+在 **“安全概述**”中，单击 **“查看证书** ”以快速检查主源的证书。
 
 :::image type="content" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="主源证书。" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
 
 ### <a name="view-origin-details"></a>查看源详细信息
 
-单击左侧导航中的某个条目以查看源的详细信息。  在详细信息页中，可以查看连接和证书信息。  证书透明度信息还会在可用时显示。
+单击左侧导航栏中的一个条目，查看源的详细信息。  可以在详细信息页中查看连接和证书信息。  证书透明度信息在可用时也会显示。
 
 :::image type="content" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="主源详细信息。" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
 

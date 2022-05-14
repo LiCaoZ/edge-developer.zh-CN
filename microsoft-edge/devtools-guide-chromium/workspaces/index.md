@@ -1,17 +1,17 @@
 ---
 title: 使用工作区编辑文件（“文件系统”选项卡）
-description: 如何将在 DevTools 中所做的更改保存到磁盘。
+description: 如何将 DevTools 中所做的更改保存到磁盘。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 92a101ba2adcde6472ecb3cbf8c0922807f73042
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 08b26a390694ad74fa42c15d50eb9b86ccfc3caf
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12430722"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514725"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,10 +28,10 @@ ms.locfileid: "12430722"
    limitations under the License.  -->
 # <a name="edit-files-with-workspaces-filesystem-tab"></a>使用工作区编辑文件（“文件系统”选项卡）
 
-本教程提供设置和使用 Workspace 的动手实践。  将文件添加到 Workspace 后，在 DevTools 中的源代码中所做的更改将保存在本地计算机上，并且在您刷新网页后将保留。
+本教程提供有关设置和使用工作区的实践。  将文件添加到工作区后，在 DevTools 中的源代码中所做的更改将保存在本地计算机上，并在刷新网页后保留。
 
-在开始本教程之前，你应知道如何执行以下操作：
-* [使用 html、CSS 和 JavaScript 构建网页](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web)
+在开始本教程之前，你应该知道如何执行以下操作：
+* [使用 html、CSS 和 JavaScript 生成网页](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web)
 * [使用 DevTools 对 CSS 进行基本更改](../css/index.md)
 * [运行本地 HTTP Web 服务器](https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server)
 
@@ -39,33 +39,33 @@ ms.locfileid: "12430722"
 <!-- ====================================================================== -->
 ## <a name="overview"></a>概述
 
-工作区使你可以将你在 Devtools 中更改的内容保存到计算机上同一文件的本地副本中。  对于本教程，计算机上应具有以下设置。
+通过工作区，可以将 Devtools 中所做的更改保存到计算机上同一文件的本地副本。  在本教程中，应在计算机上设置以下设置。
 
-* 桌面上具有网站的源代码。
+* 桌面上有站点的源代码。
 
-* 您从源代码目录运行本地 Web 服务器，以便可从 访问网站 `localhost:8080`。
+* 你正在从源代码目录运行本地 Web 服务器，以便可访问 `localhost:8080`站点。
 
-* `localhost:8080`在 Microsoft Edge 中打开，并且使用 DevTools 更改网站的 CSS。
+* 在Microsoft Edge中打开`localhost:8080`，并且使用 DevTools 更改站点的 CSS。
 
-启用工作区后，在 DevTools 中所做的更改 CSS 将保存到桌面上的源代码中。
+启用工作区后，在 DevTools 中所做的 CSS 更改将保存到桌面上的源代码。
 
 
 <!-- ====================================================================== -->
 ## <a name="limitations"></a>限制
 
-如果你使用的是新式框架，它可能会将源代码从易于维护的格式转换为经过优化以尽快运行的格式。
+如果使用的是新式框架，它可能会将源代码从易于维护的格式转换为优化为尽快运行的格式。
 
-工作区通常能够在源映射的帮助下将优化的代码映射回原始 [源代码](https://blog.teamtreehouse.com/introduction-source-maps)。  但在每个框架使用源映射方面，框架之间有很多差异。  Devtools 不支持所有变体。
+工作区通常可以在 [源映射](https://blog.teamtreehouse.com/introduction-source-maps)的帮助下将优化的代码映射回原始源代码。  但是，对于每个框架如何使用源映射，框架之间有很多差异。  Devtools 不支持所有变体。
 
-"工作区"功能不能与"创建应用React一起使用。
+工作区功能不适用于创建React应用框架。
 
 <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to share your knowledge with the rest of the DevTools community.  -->
 
 
 <!-- ====================================================================== -->
-## <a name="related-feature-local-overrides"></a>相关功能：本地覆盖
+## <a name="related-feature-local-overrides"></a>相关功能：本地替代
 
-**本地覆盖** 是另一项类似于 Workspaces 的 DevTools 功能。  当您想要尝试对网页所做的更改，并且需要跨网页加载显示更改，但您不关心将更改映射到网页的源代码时，请使用本地替代。
+**本地替代** 是另一个类似于工作区的 DevTools 功能。  若要尝试对网页进行更改，并且需要在网页加载之间显示更改，请使用本地替代，但不考虑将更改映射到网页的源代码。
 
 <!--Todo: add section when content is ready  -->
 
@@ -79,9 +79,9 @@ ms.locfileid: "12430722"
 
 1. [打开演示源代码](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces)。
 
-1. `app`在桌面上创建目录。  将 、 `index.html`和 `styles.css``script.js` 文件的副本从演示源代码保存到 `app` 目录中。  在本教程的其余部分中，目录称为 `~/Desktop/app`。
+1. 在 `app` 桌面上创建目录。  将演示源代码中的副本`index.html``styles.css`和`script.js`文件保存到`app`目录。  在本教程的其余部分中，该目录称为 `~/Desktop/app`目录。
 
-1. 在 中启动本地 Web 服务器 `~/Desktop/app`。  下面是一些用于启动的示例代码 `SimpleHTTPServer`，但您可以使用您喜欢的任何服务器。
+1. "开始"菜单本地 Web 服务器。`~/Desktop/app`  下面是一些用于启动 `SimpleHTTPServer`的示例代码，但你可以使用任何你喜欢的服务器。
 
    ```bash
    cd ~/Desktop/app
@@ -93,64 +93,64 @@ ms.locfileid: "12430722"
    python -m http.server # Python 3
    ```
 
-1. 在网站Microsoft Edge一个选项卡，然后导航到本地托管的网站版本。  你应该能够使用 URL（如 或 ）访问 `localhost:8080` 它 `http://0.0.0.0:8080`。  确切的 [端口号](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) 可能不同。
+1. 在Microsoft Edge中打开一个选项卡，并导航到站点的本地托管版本。  应该能够使用 URL（如`localhost:8080``http://0.0.0.0:8080`或 ）访问它。  确切 [的端口号](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) 可能不同。
 
    :::image type="content" source="../media/workspaces-workspaces-demo.msft.png" alt-text="演示。" lightbox="../media/workspaces-workspaces-demo.msft.png":::
 
 ### <a name="set-up-devtools"></a>设置 DevTools
 
-1. 按 `Ctrl``J` ****`Shift`++ (Windows、Linux) 或`J` `Command`+`Option`+ (macOS) 打开 DevTools 的控制台面板。
+1. 按 `Ctrl``Shift``J`++ (Windows、Linux) 或`Command``Option`++`J` (macOS) 打开 DevTools 的**控制台**面板。
 
    :::image type="content" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="控制台面板。" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
 
-1. 导航到 **"源"** 工具。
+1. 导航到 **“源** ”工具。
 
-1. 在左侧 **导航器** (窗格中，) " **文件系统"** 选项卡。
+1. 在左)  (导航 **器** 窗格中，单击“ **文件系统** ”选项卡。
 
-   :::image type="content" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="&quot;文件系统&quot;选项卡。" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+   :::image type="content" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="“文件系统”选项卡。" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
 
-1. 单击 **"将文件夹添加到工作区"**。
+1. 单击 **“将文件夹添加到工作区**”。
 
 1. 键入 `~/Desktop/app`。
 
-1. 单击 **"** 允许"以授予 DevTools 读取和写入目录的权限。
+1. 单击 **“允许** ”以授予 DevTools 读取和写入目录的权限。
 
-在" **文件系统"** 选项卡中，现在，、 和 旁边 `index.html`将出现一个绿色 `script.js`点 `styles.css`。  绿色点表示 DevTools 已建立页面的网络资源与 中的文件之间的映射 `~/Desktop/app`。
+在 **“文件系统**”选项卡中，现在旁边`index.html`会显示一个绿点，`styles.css``script.js`  绿色点指示 DevTools 已在页面的网络资源与文件之间 `~/Desktop/app`建立映射。
 
-:::image type="content" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="&quot;文件系统&quot;选项卡现在指示本地文件和网络文件之间的映射。" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+:::image type="content" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="“文件系统”选项卡现在指示本地文件与网络文件之间的映射。" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## <a name="step-2-save-a-css-change-to-disk"></a>步骤 2：将 CSS 更改保存到磁盘
 
-1. 打开 `styles.css`。  元素 `color` 的 属性 `h1` 设置为 `fuchsia`。
+1. 打开 `styles.css`。  元素 `color` 的 `h1` 属性设置为 `fuchsia`。
 
    :::image type="content" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="在文本编辑器中查看 styles.css。" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
 
-1. 选择" **元素"** 工具。
+1. 选择 **“元素”** 工具。
 
-1. 将 元素的 属性值`color``<h1>`更改为你最喜爱的颜色。  为此，请选择 `<h1>` **DOM 树中的 元素**。
+1. 将元素属性 `color` 的值更改为你喜欢的 `<h1>` 颜色。  为此，请选择 `<h1>` **DOM 树**中的元素。
 
-   应用于 元素的 CSS 规则 `<h1>` 显示在" **样式"窗格中** 。  旁边是绿色点 `styles.css:1` ，表示你进行的任何更改都映射到 `~/Desktop/app/styles.css`。
+   应用于元素的 `<h1>` CSS 规则显示在“ **样式** ”窗格中。  旁边的 `styles.css:1` 绿点意味着你所做的任何更改都映射到 `~/Desktop/app/styles.css`。
 
    :::image type="content" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="文件链接的绿色指示器。" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
 
-1. 再次 `styles.css` 在文本编辑器中打开。  属性 `color` 现在设置为你最喜爱的颜色。
+1. 在文本编辑器中再次打开 `styles.css` 。  该 `color` 属性现在设置为你喜欢的颜色。
 
 1. 刷新页面。
 
-元素的颜色 `<h1>` 仍设置为你最喜爱的颜色。  更改将在整个刷新中保留，因为进行更改时 DevTools 将更改保存到磁盘。  然后，在刷新页面时，本地服务器从磁盘提供文件的修改副本。
+元素的 `<h1>` 颜色仍设置为你喜欢的颜色。  更改将保留在刷新中，因为在进行更改时，DevTools 会将更改保存到磁盘。  然后，刷新页面时，本地服务器会从磁盘中提供文件的修改副本。
 
 
 <!-- ====================================================================== -->
 ## <a name="step-3-save-an-html-change-to-disk"></a>步骤 3：将 HTML 更改保存到磁盘
 
-可以使用"元素"工具更改 HTML 标记，但为了能够保存编辑，我们将使用"源"工具。
+可以使用 Elements 工具更改 HTML 标记，但为了能够保存编辑，我们将使用“源”工具。
 
 
 ### <a name="change-html-from-the-elements-panel"></a>从元素面板更改 HTML
 
-可以在 Element 工具中更改 HTML 内容，但是对 DOM 树的更改不会保存到磁盘，并且只影响当前浏览器会话。
+可以在元素工具中对 HTML 内容进行更改，但对 DOM 树所做的更改不会保存到磁盘，只会影响当前浏览器会话。
 
 DOM 树不是 HTML 源标记。
 
@@ -182,69 +182,69 @@ DOM 树不是 HTML 源标记。
 In short, the **DOM Tree** `!==` HTML.
 -->
 
-### <a name="change-html-from-the-sources-tool"></a>从"源"工具更改 HTML
+### <a name="change-html-from-the-sources-tool"></a>从源工具更改 HTML
 
-如果要保存对网页的 HTML 更改， **请使用"源** "工具。
+如果要保存对网页 HTML 的更改，请使用 **“源** ”工具。
 
-1. 导航到 **"源"** 工具。
+1. 导航到 **“源** ”工具。
 
-1. 在左侧 **导航器** (窗格中，) "页面 **"** 选项卡。
+1. 在左侧)  (**导航器** 窗格中，单击 **“页面** ”选项卡。
 
-1. 单击 ** (索引) **。  将打开页面的 HTML。
+1. 单击 ** (索引) **。  页面的 HTML 随即打开。
 
 1. 将`<h1>Workspaces Demo</h1>`替换为`<h1>I ❤️  Cake</h1>`。  查看下图。
 
-1. 按 `Ctrl`+`S` (Windows、Linux) 或 `Command`+`S` (macOS) 保存更改。
+1. 按`Ctrl`+`S` (Windows、Linux) 或`Command`+`S` (macOS) 保存更改。
 
-1. 刷新页面。  刷新 `<h1>` 页面后，元素将继续显示新文本。
+1. 刷新页面。  刷新页面后，该 `<h1>` 元素将继续显示新文本。
 
-   :::image type="content" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从&quot;源&quot;工具更改 HTML。" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+   :::image type="content" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从“源”工具更改 HTML。" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
 
-1. 打开 `~/Desktop/app/index.html`。  元素 `<h1>` 包含新文本。
+1. 打开 `~/Desktop/app/index.html`。  该 `<h1>` 元素包含新文本。
 
 
 <!-- ====================================================================== -->
 ## <a name="step-4-save-a-javascript-change-to-disk"></a>步骤 4：将 JavaScript 更改保存到磁盘
 
-使用 DevTools 的代码编辑器的主要位置是 **源** 工具。  但有时你需要在编辑文件时访问其他工具，如**元素**工具或控制台面板。****  当 **任何** 工具打开时，快速源工具仅为你提供 **源** 工具中的编辑器。
+使用 DevTools 代码编辑器的主要位置是 **“源** ”工具。  但有时需要在编辑文件时访问其他工具，例如 **“元素”** 工具或 **控制台** 面板。  **快速源**工具仅提供**源**工具中的编辑器，而任何工具都是打开的。
 
-若要与其他工具一起打开 DevTools 代码编辑器：
+若要与其他工具一起打开 DevTools 代码编辑器，
 
-1. 导航到 **"元素"** 工具。
+1. 导航到 **“元素”** 工具。
 
-1. 按`Ctrl`+`Shift`+`P`（Windows、Linux）或 `Command`+`Shift`+`P` （macOS）。  命令 **菜单将** 打开。
+1. 按`Ctrl`+`Shift`+`P`（Windows、Linux）或 `Command`+`Shift`+`P` （macOS）。  **命令菜单**随即打开。
 
-1. 键入 `quick`，然后选择" **显示快速源"**。  在"DevTools **** `index.html`"窗口的底部，将显示"快速源"工具，其中显示 的内容，这是你在"源"工具中编辑的最后**一**个文件。
+1. 键入 `quick` ，然后选择“**显示快速源**”。  在 DevTools 窗口底部，将显示 **“快速源** ”工具，其中显示内容 `index.html`，这是你在 **“源** ”工具中编辑的最后一个文件。
 
-   :::image type="content" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="使用命令菜单打开&quot;快速源&quot;工具。" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+   :::image type="content" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="使用命令菜单打开“快速源”工具。" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
 
-1. 按 `Ctrl`+`P` (Windows、Linux) 或`P` `Command`+ (macOS) 打开"打开**文件**"对话框，如下所示。
+1. 按`Ctrl`+`P` (Windows、Linux) 或+`Command``P` (macOS) 打开 **“打开文件”** 对话框，如下所示。
 
-1. 键入 `script`，然后选择 **"app/script.js" **。
+1. 键入 `script`，然后选择 **应用/script.js**。
 
-   :::image type="content" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用script.js文件&quot;对话框打开文件。" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+   :::image type="content" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用“打开文件”对话框打开script.js。" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
 
    > [!NOTE]
-   > 该 `Save Changes To Disk With Workspaces` 演示中的链接会定期设置样式。
+   > 演示 `Save Changes To Disk With Workspaces` 中的链接会定期设置样式。
 
-1. 使用快速源工具将 **script.js代码添加到 ** **页面** 底部。
+1. 使用**快速源**工具将以下代码添加到**script.js**底部。
 
     ```javascript
     console.log('greetings from script.js');
     document.querySelector('a').style = 'font-style:italic';
     ```
 
-1. 按 `Ctrl`+`S` (Windows、Linux) 或 `Command`+`S` (macOS) 保存更改。
+1. 按`Ctrl`+`S` (Windows、Linux) 或`Command`+`S` (macOS) 保存更改。
 
-1. 刷新页面。  页面上的链接现在为 italicized。
+1. 刷新页面。  页面上的链接现在已斜体化。
 
-:::image type="content" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="页面上的链接现在为 italicized。" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
+:::image type="content" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="页面上的链接现在已斜体化。" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 
-使用本教程中学到的内容在你自己的项目中设置工作区。
+使用本教程中所学到的内容在自己的项目中设置工作区。
 
 
 <!-- ====================================================================== -->

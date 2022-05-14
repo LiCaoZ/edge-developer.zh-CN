@@ -6,18 +6,16 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/20/2021
-ms.openlocfilehash: 47d16d6dc516fd182256754987e64680f94d4d8c
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
-ms.translationtype: HT
+ms.openlocfilehash: 108152ee996050c8d3420917ac69fbe91f0895fe
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12430834"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514767"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-95"></a>DevTools (Microsoft Edge 95)中的新增功能
 
-此页顶部列出了来自 Microsoft Edge DevTools 团队的公告，底部介绍了 Chromium 项目中的所选功能。  要试用 Microsoft Edge DevTools 和适用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展中的新增功能，请阅读这些公告。
-
-若要随时了解有关开发人员工具的最新和最强大功能，请下载 [Microsoft Edge 预览频道](https://www.microsoftedgeinsider.com/download) 并 [在 Twitter 上关注 Microsoft Edge 开发人员工具团队](https://twitter.com/EdgeDevTools)。  如果你使用的是 Windows、Linux 或 macOS，请考虑将 Microsoft Edge Canary 预览频道之一用作默认开发浏览器。
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
 <!-- ====================================================================== -->
@@ -32,7 +30,7 @@ ms.locfileid: "12430834"
 
 要提供反馈，请在 Visual Studio Code 的“**活动栏**”中，单击“**Microsoft Edge 工具**”，然后在“**CSS 镜像编辑**”部分中，单击“**在此处留下反馈**”链接。
 
-:::image type="content" source="../../media/2021/10/css-mirror-editing-button.msft.png" alt-text="现在，CSS 样式编辑器中的更改显示在 Visual Studio Code 内的 CSS 文件中。" lightbox="../../media/2021/10/css-mirror-editing-button.msft.png":::
+![现在，CSS 样式编辑器中的更改显示在 Visual Studio Code 内的 CSS 文件中。](../../media/2021/10/css-mirror-editing-button.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -44,8 +42,12 @@ ms.locfileid: "12430834"
 现在，**在 Web 上搜索此消息**图标可用于**控制台**中的所有错误和警告。  以前，此图标仅针对一些常见错误和警告出现。  现在，图标已添加到其他错误和警告上。  单击“**在 Web 上搜索此消息**”图标以使用相关错误或警告字符串搜索 Web。
 
 有关详细信息，请参阅[在 Web 上搜索控制台错误](../09/devtools.md#search-for-console-errors-on-the-web)。
+<!-- todo: cover in regular doc -->
 
-:::image type="content" source="../../media/2021/10/console-message-search-web-button.png" alt-text="现在，所有控制台中的错误和警告消息现在都具有搜索 Web 图标。" lightbox="../../media/2021/10/console-message-search-web-button.png":::
+![现在，所有控制台中的错误和警告消息现在都具有搜索 Web 图标。](../../media/2021/10/console-message-search-web-button.png)
+
+另请参阅：
+* [在控制台中从控制台在 Web 上查找错误消息](../../../console/index.md#look-up-error-messages-on-the-web-from-the-console)_概述_。
 
 
 <!-- ====================================================================== -->
@@ -65,7 +67,7 @@ ms.locfileid: "12430834"
 
 要了解有关用户代理客户端提示的详细信息，请参阅[从网站检测 Microsoft Edge](../../../../web-platform/user-agent-guidance.md#user-agent-client-hints)。
 
-:::image type="content" source="../../media/2021/10/keyboard-define-ua-client-hints.png" alt-text="描述。" lightbox="../../media/2021/10/keyboard-define-ua-client-hints.png":::
+![设置 >设备>设置User-Agent客户端提示。](../../media/2021/10/keyboard-define-ua-client-hints.png)
 
 要在 Chromium 开放源代码项目中查看此功能的历史记录，请参阅[问题 1243827：用户代理客户端提示窗体辅助功能](https://bugs.chromium.org/p/chromium/issues/detail?id=1243827)。
 
@@ -80,15 +82,16 @@ ms.locfileid: "12430834"
 
 在 Microsoft Edge 版本 95 中，这些问题已得到修复。  现在，筛选到标签将显示组标签和组内的单个消息。  当筛选器与组标签不匹配时，将隐藏整个组。
 
-要详细了解 DevTools 中控制台的 `group()` API，请参阅_控制台对象 API 参考_中的[组](../../../../devtools-guide-chromium/console/api.md#group)。
-
 当筛选器字符串与组标签匹配时，将显示该组及其成员：
 
-:::image type="content" source="../../media/2021/10/filter-matches-group-label.png" alt-text="当筛选器字符串与组标签匹配时，将显示该组及其成员。" lightbox="../../media/2021/10/filter-matches-group-label.png":::
+![当筛选器字符串与组标签匹配时，将显示该组及其成员。](../../media/2021/10/filter-matches-group-label.png)
 
 当筛选器字符串与组标签不匹配时，不会显示该组及其成员：
 
-:::image type="content" source="../../media/2021/10/filter-matches-group-label-asdf.png" alt-text="当筛选器字符串与组标签不匹配时，不会显示该组及其成员。" lightbox="../../media/2021/10/filter-matches-group-label-asdf.png":::
+![当筛选器字符串与组标签不匹配时，不会显示该组及其成员。](../../media/2021/10/filter-matches-group-label-asdf.png)
+
+另请参阅：
+* _控制台对象 API 参考_中的[组](../../../../devtools-guide-chromium/console/api.md#group)。
 
 要在 Chromium 开放源代码项目中查看此功能的历史记录，请参阅[问题 363796： ☂ 控制台筛选器不适当地隐藏分组内容，并且不隐藏组标题](https://bugs.chromium.org/p/chromium/issues/detail?id=363796)。
 
@@ -105,10 +108,10 @@ ms.locfileid: "12430834"
 <!-- Chromium What's New entry: [Improved the display of properties](https://developer.chrome.com/blog/new-in-devtools-95/#properties) at _What's New in DevTools (Chrome 95)_. -->
 
 DevTools 通过以下方式改进了属性的显示：
-*  在“**控制台**”、“**源**”面板和“**属性**”窗格中，始终首先加粗自己的属性，并将这些属性排在前面。  （_自己的属性_是直接在对象上定义的属性。）
+*  在**控制台**、**“源**”工具和 **“元素**”工具的“**属性**”选项卡中，始终先加粗和排序自己的属性。  （_自己的属性_是直接在对象上定义的属性。）
 *  在“**属性**”窗格中平展属性显示。
 
-例如，下面的代码片段创建了具有两个自己的属性的 [URL](https://developer.mozilla.org/docs/Web/API/URL) 对象 `link`：`user` 和 `access`，然后更新继承属性的值，`search`。
+例如，下面的代码片段创建具有两个自身属性的 [URL](https://developer.mozilla.org/docs/Web/API/URL) 对象`link`： `user` `access`然后更新继承属性的值： `search`
 
 ```javascript
 const link = new URL('https://blogs.windows.com/msedgedev/');
@@ -117,13 +120,17 @@ link.access = 'admin';
 link.search = `?access=${link.access}`;
 ```
 
-在“**控制台**”中输入上述代码后，尝试记录 `link`。  现在，自己的属性是粗体的，并且在排序顺序中处于第一位。  通过这些更改，可以更轻松地发现自定义属性，尤其是对于具有许多继承属性的 [Web API](https://developer.mozilla.org/en-US/docs/Web/API)（例如 `URL`）。
+在“**控制台**”中输入上述代码后，尝试记录 `link`。  现在，自己的属性是粗体的，并且在排序顺序中处于第一位。  通过这些更改，可以更轻松地发现自定义属性，尤其是对于 [Web API](https://developer.mozilla.org/docs/Web/API) (，例如 `URL` 具有许多继承属性的) ：
 
-:::image type="content" source="../../media/2021/10/improved-display-properties.png" alt-text="自己的属性是粗体的，并且首先排序。":::
+![自己的属性是粗体的，并且首先排序。](../../media/2021/10/improved-display-properties.png)
 
-在“**属性**”窗格中，属性列表现已平展显示，以便在调试 DOM 属性（尤其是 [Web 组件](https://www.webcomponents.org/introduction)的 DOM 属性）时获得更好的体验。
+在 **“元素**”工具的“**属性**”窗格中，属性列表现在已平展，以便在调试 DOM 属性（尤其是 Web [组件](https://www.webcomponents.org/introduction)）时获得更好的体验：
 
-:::image type="content" source="../../media/2021/10/flattened-list-of-properties.png" alt-text="已平展的属性列表。":::
+![已平展的属性列表。](../../media/2021/10/flattened-list-of-properties.png)
+
+另请参阅：
+* [使用 Elements 工具检查、编辑和调试 HTML 和 CSS](../../../elements-tool/elements-tool.md)
+<!-- todo: link to an Elements > Properties ui doc'n?  try FTS repo **Properties** - not really found -->
 
 有关此功能的历史记录，请参阅 Chromium 问题 [1076820](https://crbug.com/1076820) 和 [1119900](https://crbug.com/1119900)。
 
@@ -133,11 +140,15 @@ link.search = `?access=${link.access}`;
 
 <!-- Chromium What's New entry: [Sort snippets in the Sources panel](https://developer.chrome.com/blog/new-in-devtools-95/#snippets) at _What's New in DevTools (Chrome 95)_. -->
 
-现在，“**源**”面板中“**代码片段**”窗格中的代码片段按字母顺序排序。  以前，代码片段是不进行排序的。
+以前，在 **“源**”工具的“代码**段**”选项卡中，代码段未排序。  代码片段现在按字母顺序排序：
 
-:::image type="content" source="../../media/2021/10/snippets-sorted-alphbetically.png" alt-text="“源”面板中的已排序代码段。":::
+![“源”面板中的已排序代码段。](../../media/2021/10/snippets-sorted-alphbetically.png)
 
-有关代码片段的详细信息，请参阅[在任何网页上运行 JavaScript 的代码片段](../../../javascript/snippets.md)并观看视频 [Chrome 85 - DevTools 中的新增功能](https://youtu.be/NOal2gTzftI?t=176)。  有关此功能的历史记录，请参阅 Chromium 问题：[1243976](https://crbug.com/1243976)。
+另请参阅：
+* [在任何网页上运行 JavaScript 的代码片段](../../../javascript/snippets.md)
+* [Chrome 85 - DevTools 中的新增功能](https://youtu.be/NOal2gTzftI?t=176) - 视频。
+
+有关此功能的历史记录，请参阅 Chromium 问题：[1243976](https://crbug.com/1243976)。
 
 
 <!-- ====================================================================== -->
@@ -145,9 +156,12 @@ link.search = `?access=${link.access}`;
 
 <!-- Chromium What's New entry: [Improved UI for DevTools command menu](https://developer.chrome.com/blog/new-in-devtools-95/#command-menu) at _What's New in DevTools (Chrome 95)_. -->
 
-已增强[命令菜单](../../../command-menu/index.md)，以便更轻松地搜索文件。  现在，如果在 Windows 和 Linux 中按 `Ctrl`+`P`，或在 macOS 中按 `Command+P`，**命令菜单**将以粗体显示文件名，并显示指示文件类型的图标。
+已增强**命令菜单**，以便更轻松地搜索文件。  按Windows和 Linux 或`Command+P`macOS时，**命令菜单**现在会以粗体显示文件名，以及指示文件类型的图标：`Ctrl`+`P`
 
-:::image type="content" source="../../media/2021/10/command-menu-filenames-bold-icons.png" alt-text="命令菜单以粗体显示文件名，并显示指示文件类型的图标。":::
+![命令菜单以粗体显示文件名，并显示指示文件类型的图标。](../../media/2021/10/command-menu-filenames-bold-icons.png)
+
+另请参阅：
+* [命令菜单](../../../command-menu/index.md)
 
 有关此功能的历史记录，请参阅 Chromium 问题 [1201997](https://crbug.com/1201997)。 
 

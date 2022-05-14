@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 5a7c450273edcde22a5b4ebe6b5338bff2207b23
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: 69dedeb7b0706d4938a371ba3c172a2210836a8b
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12496734"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514424"
 ---
 # <a name="webview2-sample-winui-2-uwp-browser-app"></a>WebView2 示例：WinUI 2 (UWP) 浏览器应用
 <!-- old title:
@@ -211,7 +211,7 @@ _若要缩放，请右键单击> **在新选项卡中打开图像**。_
 <!-- ====================================================================== -->
 ## <a name="step-11---run-debug-the-project"></a>步骤 11 -) 项目运行 (调试
 
-1. 选择 **“调试** > **开始调** 试” () `F5` 。
+1. 选择 **“调试** > **"开始"菜单**调试 () `F5` 。
 
    最初会显示一个空网格窗口：
 

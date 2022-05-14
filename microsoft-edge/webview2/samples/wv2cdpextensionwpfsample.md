@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 30c66b120c16ef4c468debc343b1bff3eafd1d79
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: 9597ef6884a53fd62f60cf2b84d902874ecd2a5d
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12496937"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514389"
 ---
 # <a name="webview2-sample-chrome-devtools-protocol-extension-in-a-wpf-app"></a>WebView2 示例：WPF 应用中的 Chrome DevTools 协议扩展
 
@@ -106,7 +106,7 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 <!-- ====================================================================== -->
 ## <a name="step-9---run-debug-the-project"></a>步骤 9 -) 项目运行 (调试
 
-1. 在Visual Studio中，选择 **“调试** > **开始调试**” () `F5` 。
+1. 在Visual Studio中，选择“**调试** > **"开始"菜单调试** () `F5` 。
 
    随即打开示例应用窗口：
 

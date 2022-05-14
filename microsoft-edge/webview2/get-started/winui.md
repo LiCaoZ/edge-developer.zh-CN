@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 4a3295c9642b3bb84f0589fe77b92ed6eddb4942
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: e6a0d23e369e4c60993ccefc3dbaa6b54a9218fb
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12496804"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514221"
 ---
 # <a name="get-started-with-webview2-in-winui-3-windows-app-sdk-apps"></a>在 WinUI 3 (Windows 应用 SDK) 应用中使用 WebView2 开始
 
@@ -28,7 +28,7 @@ ms.locfileid: "12496804"
 即使已安装Visual Studio，请阅读以下页面，并可能更新软件。
 
 1. 在新窗口或选项卡中，打开[Windows 应用 SDK的“安装工具](/windows/apps/windows-app-sdk/set-up-your-development-environment)”页，然后按照该页上的步骤安装Microsoft Visual Studio，例如 Visual Studio 2022。
-<!-- clickable: https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/set-up-your-development-environment -->
+<!-- clickable: https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment -->
 
 1. 如果需要，请参阅新窗口或选项卡中的“_为 WebView2 设置开发人员环境_”中的[“安装Visual Studio](../how-to/machine-setup.md#install-visual-studio)”。
 

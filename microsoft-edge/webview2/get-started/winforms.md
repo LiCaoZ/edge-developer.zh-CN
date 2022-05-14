@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 5056c6b23310d7f6b1d66342fd65e198e3ef0dd0
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: 32453733a8a867a5afb321fc705d3289d3b5dd83
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12496965"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514298"
 ---
 # <a name="get-started-with-webview2-in-winforms-apps"></a>WinForms 应用中的 WebView2 入门
 
@@ -75,7 +75,7 @@ Microsoft Visual Studio是必需的。  本教程不支持Microsoft Visual Studi
 <!-- ====================================================================== -->
 ## <a name="step-5---create-a-single-window-app"></a>步骤 5 - 创建单窗口应用
 
-从包含单个主窗口的基本桌面项目开始。
+"开始"菜单包含单个主窗口的基本桌面项目。
 
 1. 打开 Visual Studio。
 
@@ -119,7 +119,7 @@ Microsoft Visual Studio是必需的。  本教程不支持Microsoft Visual Studi
 
 1. 选择 **“文件** > **保存所有** (`Ctrl`++`Shift``S`) 。
 
-1. 选择 **“调试** > **开始调** 试” () `F5` 。
+1. 选择 **“调试** > **"开始"菜单**调试 () `F5` 。
 
    从新的 WinForms 项目打开一个空的 **Form1** 窗口：
    
@@ -167,7 +167,7 @@ Microsoft Visual Studio是必需的。  本教程不支持Microsoft Visual Studi
 
 1. 关闭NuGet 程序包管理器窗口。
 
-1. 选择 **“调试** > **开始调试** ” () `F5` 生成并运行项目。
+1. 选择 **“调试** > **"开始"菜单调**试 (`F5`) 来生成和运行项目。
 
    正在运行的项目显示与之前相同的空窗口：
 
@@ -500,9 +500,9 @@ maintenance link (keep)
 
 主机和 Web 内容可用于 `postMessage` 相互通信，如下所示：
 
-*  WebView2 控件中的 Web 内容可用于 `window.chrome.webview.postMessage` 向主机发布消息。  主机使用在主机上注册 `WebMessageReceived` 的任何消息来处理消息。
+*  WebView2 控件中的 Web 内容可用于`window.chrome.webview.postMessage`向主机帖子消息。  主机使用在主机上注册 `WebMessageReceived` 的任何消息来处理消息。
 
-*  主机使用或`CoreWebView2.PostWebMessageAsJSON`将消息发布到 WebView2 控件`CoreWebView2.PostWebMessageAsString`中的 Web 内容。  这些消息是由添加到的处理程序捕获的 `window.chrome.webview.addEventListener`。
+*  在 WebView2 控件中使用或`CoreWebView2.PostWebMessageAsJSON`将`CoreWebView2.PostWebMessageAsString`消息帖子到 Web 内容。  这些消息是由添加到的处理程序捕获的 `window.chrome.webview.addEventListener`。
 
 通信机制使用本机功能将消息从 Web 内容传递到主机。
 
@@ -581,7 +581,7 @@ maintenance link (keep)
 
    ![应用程序在地址栏中显示 URL。](media/winforms-final-app.png)
 
-   * 当应用启动时，默认 URL 为 `https://www.microsoft.com`，生成的显示地址会显示区域设置，例如 `https://www.microsoft.com/en-us/`。
+   * 当应用启动时，默认 URL 为 `https://www.microsoft.com`，生成的显示地址会显示区域设置，例如 `https://www.microsoft.com/en-us/`。<!--keep /en-us here-->
 
    * 如果输入 `https://www.bing.com`，则生成的地址为变体，例如 `https://www4.bing.com/?form=DCDN`。
 

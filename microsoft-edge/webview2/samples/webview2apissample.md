@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 05cf6baa9f5ab1360e4c716436792ad24550f9b8
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: ef78f610c35ca14568ffa85b57ce43aa21311d5d
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12497021"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514235"
 ---
 # <a name="webview2-sample-win32-c-app"></a>WebView2 示例：Win32 C++ 应用
 
@@ -150,9 +150,9 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 <!-- ====================================================================== -->
 ## <a name="step-10---run-debug-the-project"></a>步骤 10 -) 项目运行 (调试
 
-1. 选择 **“调试** > **开始调** 试” () `F5` 。  
+1. 选择 **“调试** > **"开始"菜单**调试 () `F5` 。  
 
-   疑难解答：如果跳过生成步骤并立即选择 **“调试** > **启动** 调试” () `F5` ，则可能会出现“无法启动程序：找不到指定的路径”对话框：
+   故障排除：如果跳过生成步骤，并立即选择“**调试** > **"开始"菜单调试** () `F5` ，可能会显示一个对话框”无法启动程序：找不到指定的路径“：
 
    ![对话框：无法启动程序：找不到指定的路径。](media/webview2apisample-unable-to-start-program-cannot-find-path.png)
 

@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 388a4809bbac406c2e71fd7d2951ef3023765d56
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12513969"
 ---
 <!-- Copyright Kayce Basques
 
@@ -25,24 +31,24 @@ ms.date: 05/04/2021
 # Console API reference
 -->
 
-`console`使用对象的方法从 JavaScript 将**消息写入控制台**。
+使用对象 `console` 的方法从 JavaScript 将消息写入 **控制台** 。
 
-还可以在控制台中输入 **这些方法**。  例如，在 **控制台中**，输入一个 `console` 接受变量的方法：
+还可以在 **控制台**中输入这些方法。  例如，在 **控制台**中，输入 `console` 采用变量的方法：
 
-1. 在 **"源** "工具中的调试器中，在 JavaScript 代码中设置断点。
+1. 在 **“源** ”工具的调试器中，在 JavaScript 代码中设置断点。
 
-1. 在调试器中，逐步调试代码。
+1. 在调试器中，逐步执行代码。
 
-1. 如果位于有效上下文中， `console` 以便所需变量位于范围内，请在控制台工具中输入 **对象的一** 个方法。  结果将显示在控制台 **中**。
+1. 在有效上下文中，使所需变量在范围内时，请在**控制台**工具中输入对象的方法`console`。  结果显示在 **控制台**中。
 
 <br/><br/>
 
 ---
 
 <!-- ====================================================================== -->
-## <a name="assert"></a>assert
+## <a name="assert"></a>断言
 
-当[计算结果](#error)**为 时，** 将错误写入`expression`控制台`false`。
+计算结果为时`expression`，将[错误](#error)写入`false`**控制台**。
 
 ```javascript
 console.assert(expression, object)
@@ -68,11 +74,11 @@ console.assert(x < y, {x, y, reason});
 ---
 
 <!-- ====================================================================== -->
-## <a name="clear"></a>clear
+## <a name="clear"></a>清楚
 
 清除 **控制台**。
 
-如果 [打开](reference.md#filter-by-log-level) "保留日志"，则 [清除](#clear) 方法将关闭。
+如果已启用 [保留日志](reference.md#filter-by-log-level) ，则 [清除](#clear) 方法将关闭。
 
 ```javascript
 console.clear()
@@ -87,9 +93,9 @@ console.clear()
 ---
 
 <!-- ====================================================================== -->
-## <a name="count"></a>count
+## <a name="count"></a>计数
 
-写入在同一行和同一行中调用 [count](#count) 方法次数 `label`。  使用 [countReset](#countreset) 方法可重置计数。
+写入 [计数方法在同](#count) 一行中调用的次数，并使用相同的 `label`次数。  使用 [countReset](#countreset) 方法重置计数。
 
 ```javascript
 console.count([label])
@@ -137,7 +143,7 @@ console.countReset('coffee');
 <!-- ====================================================================== -->
 ## <a name="debug"></a>调试
 
-与日志方法 [相同](#log) ，不同日志级别除外。
+与 [日志](#log) 方法相同，但不同的日志级别除外。
 
 ```javascript
 console.debug(object [, object, ...])
@@ -187,7 +193,7 @@ console.dir(document.head);
 <!-- ====================================================================== -->
 ## <a name="dirxml"></a>dirxml
 
-打印 后代的 XML 表示形式 `node`。
+打印后代 `node`的 XML 表示形式。
 
 ```javascript
 console.dirxml(node)
@@ -212,7 +218,7 @@ console.dirxml(document);
 <!-- ====================================================================== -->
 ## <a name="error"></a>错误
 
-将 打印 `object` 到 **控制台，** 将 它格式化为错误，并包括堆栈跟踪。
+打印 `object` 到 **控制台**，将其格式化为错误，并包含堆栈跟踪。
 
 ```javascript
 console.error(object [, object, ...])
@@ -237,7 +243,7 @@ console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 <!-- ====================================================================== -->
 ## <a name="group"></a>组
 
-直观地将邮件分组在一起，直到 [使用 groupEnd](#groupend) 方法。  使用 [groupCollapsed](#groupcollapsed) 方法可折叠最初记录到控制台的 **组**。
+直观地将消息分组到一起，直到使用 [groupEnd](#groupend) 方法。  使用 [groupCollapsed](#groupcollapsed) 方法在组最初登录到 **控制台**时将其折叠。
 
 ```javascript
 console.group(label)
@@ -266,7 +272,7 @@ console.groupEnd(label);
 <!-- ====================================================================== -->
 ## <a name="groupcollapsed"></a>groupCollapsed
 
-与 log 方法[相同](#log)，但组最初在记录到控制台时**折叠。**
+与 [日志](#log) 方法相同，但组在登录到 **控制台**时最初折叠除外。
 
 ```javascript
 console.groupCollapsed(label)
@@ -279,7 +285,7 @@ console.groupCollapsed(label)
 <!-- ====================================================================== -->
 ## <a name="groupend"></a>groupEnd
 
-停止对邮件进行视觉分组。  请参阅 [group](#group) 方法。
+停止以视觉方式对消息进行分组。  请参阅 [组](#group) 方法。
 
 ```javascript
 console.groupEnd(label)
@@ -292,7 +298,7 @@ console.groupEnd(label)
 <!-- ====================================================================== -->
 ## <a name="info"></a>信息
 
-与 [log 方法](#log) 相同。
+与 [日志](#log) 方法相同。
 
 ```javascript
 console.info(object [, object, ...])
@@ -340,7 +346,7 @@ console.log('log');
 ---
 
 <!-- ====================================================================== -->
-## <a name="table"></a>table
+## <a name="table"></a>表
 
 将对象数组记录为表。
 
@@ -381,7 +387,7 @@ console.table([
 <!-- ====================================================================== -->
 ## <a name="time"></a>time
 
-启动新计时器。  使用 [timeEnd](#timeend) 方法停止计时器，将已用时间打印到 **控制台**。
+启动新的计时器。  使用 [timeEnd](#timeend) 方法停止计时器并将已用时间打印到 **控制台**。
 
 ```javascript
 console.time([label])
@@ -408,7 +414,7 @@ console.timeEnd();
 <!-- ====================================================================== -->
 ## <a name="timeend"></a>timeEnd
 
-停止计时器。  有关详细信息，请参阅 [time](#time) 方法。
+停止计时器。  有关详细信息，请参阅 [时间](#time) 方法。
 
 ```javascript
 console.timeEnd([label])
@@ -421,7 +427,7 @@ console.timeEnd([label])
 ---
 
 <!-- ====================================================================== -->
-## <a name="trace"></a>trace
+## <a name="trace"></a>跟踪
 
 将堆栈跟踪打印到 **控制台**。
 
@@ -450,9 +456,9 @@ first();
 ---
 
 <!-- ====================================================================== -->
-## <a name="warn"></a>warn
+## <a name="warn"></a>警告
 
-将警告打印到 **控制台**。
+将警告输出到 **控制台**。
 
 ```javascript
 console.warn(object [, object, ...])
@@ -478,15 +484,15 @@ console.warn('warn');
 ## <a name="see-also"></a>另请参阅
 
 <!-- if an article's title is adequately descriptive, and the article is in the same TOC bucket as the present article, don't much need a link here: -->
-* [MDN Web 文档> `console`](https://developer.mozilla.org/en-US/docs/Web/API/Console) 对象参考 - 具有方法的摘要概述，每个方法有一个页面，并包含其他语法详细信息。
-* [在控制台工具中记录消息](console-log.md) - 交互式简介。
-* [控制台工具实用程序函数和选择器](utilities.md) - **仅**控制台实用程序方法，如 和 `debug()` `monitorEvents()`。
+* [MDN Web 文档> `console` 对象引用](https://developer.mozilla.org/docs/Web/API/Console) - 具有方法的摘要概述，每个方法有一页，并提供其他语法详细信息。
+* [在控制台工具中记录消息](console-log.md) - 交互式介绍。
+* [控制台工具实用工具函数和选择器](utilities.md) - 仅**限控制台**的实用工具方法，例如`debug()`和 `monitorEvents()`。
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/console/api)，由技术编写 (Chrome DevTools & Lighthouse) 创作。[](https://developers.google.com/web/resources/contributors/kaycebasques)
+> 原始页面 [在此](https://developers.google.com/web/tools/chrome-devtools/console/api) 处找到，由 [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer、Chrome DevTools & Lighthouse) 创作。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

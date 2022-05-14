@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: de4f7ee4a59029fde9e30df8ebbcea703387fa3c
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: b90b6e91a93209b08ef81250ecd5d7258e37b05a
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12496923"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514228"
 ---
 # <a name="webview2-sample-winforms-browser-app"></a>WebView2 示例：WinForms 浏览器应用
 
@@ -123,7 +123,7 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 
    如果收到有关缺少 .NET Framework 4.6.2 开发人员包的错误消息，请执行以下步骤。  否则，请跳到下面的下一个主要部分。
 
-1. 转到https://dotnet.microsoft.com/en-us/download/dotnet-framework/，选择 v4.6.2，然后单击 **“下载.NET Framework 4.6.2 开发人员包**”按钮：
+1. 转到[“下载.NET Framework](https://dotnet.microsoft.com/download/dotnet-framework/)”，选择 v4.6.2，然后单击“**下载.NET Framework 4.6.2 开发人员包**”按钮：
 
    ![下载 .NET Framework 4.6.2 开发人员包](media/webview2windowsformsbrowser-dl-net-fwk.png)
 
@@ -179,7 +179,7 @@ Microsoft .NET Framework 4.6.2 开发人员工具包现已安装在计算机上�
 <!-- ====================================================================== -->
 ## <a name="step-11---run-debug-the-project"></a>步骤 11 -) 项目运行 (调试
 
-1. 在Visual Studio中，选择 **“调试** > **开始调试**” () `F5` 。
+1. 在Visual Studio中，选择“**调试** > **"开始"菜单调试** () `F5` 。
 
    随即打开示例应用窗口：
 

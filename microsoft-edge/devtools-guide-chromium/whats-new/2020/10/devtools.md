@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: d2427e0f47c76e4e66230b695c38d735761628ad
-ms.sourcegitcommit: 3e6de1ad86f44a667c0fcf1f40013f11f70e78e4
+ms.openlocfilehash: 790e61d072409580de00f6916f0f68d173b84338
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "12478276"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514327"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -28,7 +28,7 @@ ms.locfileid: "12478276"
    limitations under the License.  -->
 # <a name="whats-new-in-devtools-microsoft-edge-87"></a>DevTools (Microsoft Edge 87) 中的新增功能
 
-[!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
 <!-- ====================================================================== -->
@@ -43,52 +43,61 @@ ms.locfileid: "12478276"
 
 [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object) 现可在 [控制台](../../../console/index.md) 中提供给 DevTools 本地化版本的用户。   感谢全球开发人员社区帮助改进 Microsoft Edge DevTools 的本地化。  继续 [发送有关本地化质量的反馈](../../../contact.md) ，以改进对所有区域设置中的 DevTools 的支持。  有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1136655](https://crbug.com/1136655)。
 
-:::image type="content" source="../../media/2020/10/bing-network-japanese.msft.png" alt-text="具有非本地化筛选器的网络工具。" lightbox="../../media/2020/10/bing-network-japanese.msft.png":::
+![具有非本地化筛选器的网络工具。](../../media/2020/10/bing-network-japanese.msft.png)
+
+另请参阅：
+* [更改开发工具语言设置](../../../customize/localization.md)
 
 
 <!-- ====================================================================== -->
 ## <a name="move-tools-between-top-and-bottom-panels"></a>在顶部和底部面板之间移动工具
 
-DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时查看两个工具的任何组合，自定义 DevTools 并提高工作效率。  例如，通过将“**源**”工具移到底部) ，同时查看 **“元素**”和“**源**”工具 (。  有关Chromium开源项目中此功能的历史记录，请参阅问题 [#1075732](https://crbug.com/1075732)。
+DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时查看两个工具的任何组合，自定义 DevTools 并提高工作效率。  例如，通过将“**源**”工具移到底部) ，同时查看 **“元素**”和“**源**”工具 (。
 
-若要将任何顶部工具移到底部，请右键单击选项卡，然后选择 **“移到底部**”。
+若要将任何顶部工具移到底部，请右键单击选项卡，然后选择 **“移到底部**”
 
-:::image type="content" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="移到底部。" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
+![移到底部。](../../media/2020/10/move-to-bottom.msft.png)
 
-若要将任何底部工具移到顶部，请右键单击选项卡，然后选择 **“移动到顶部**”。
+若要将任何底部工具移到顶部，请右键单击选项卡，然后选择 **“移动到顶部**”
 
-:::image type="content" source="../../media/2020/10/move-to-top.msft.png" alt-text="移动到顶部。" lightbox="../../media/2020/10/move-to-top.msft.png":::
+![移动到顶部。](../../media/2020/10/move-to-top.msft.png)
+
+有关Chromium开源项目中此功能的历史记录，请参阅问题 [#1075732](https://crbug.com/1075732)。
+
+另请参阅：
+* _“关于工具列表_”中的[面板工具与抽屉工具](../../../about-tools.md#panel-tools-vs-drawer-tools)
 
 
 <!-- ====================================================================== -->
 ## <a name="save-and-export-using-the-network-console"></a>使用网络控制台保存和导出
 
-:::image type="content" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能。":::
+<!-- copied section to linked article -->
 
-**网络控制台**工具现在改进了与 [Postman v2.1](https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html) 和 [OpenAPI v2](https://swagger.io/specification/v2) 架构的兼容性。  若要启用试验，请参阅 [打开或关闭试验](../../../experimental-features/index.md#turning-an-experiment-on-or-off) ，然后选中 **“启用网络控制台”** 旁边的复选框。
+**网络控制台**工具现在改进了与 [Postman v2.1](https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html) 和 [OpenAPI v2](https://swagger.io/specification/v2) 架构的兼容性。
 
-有关 **网络控制台**的详细信息，请参阅 [使用网络控制台工具撰写和发送 Web API 请求](../../../network-console/network-console-tool.md)。
-
-此试验现在支持以下操作：
+**网络控制台**工具现在支持以下操作：
 
 *  保存和导出集合和环境。
 *  在 **网络控制台** 工具中编辑和导出环境变量集。
 
-有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1093687](https://crbug.com/1093687)。
-
 输入新环境的名称：
 
-:::image type="content" source="../../media/2020/10/network-console-environments-new-name.msft.png" alt-text="输入新环境的名称。" lightbox="../../media/2020/10/network-console-environments-new-name.msft.png":::
+![输入新环境的名称。](../../media/2020/10/network-console-environments-new-name.msft.png)
 
 选择新环境的格式：
 
-:::image type="content" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="选择新环境的格式。" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
+![选择新环境的格式。](../../media/2020/10/network-console-environments-new-format.msft.png)
+
+更新：此功能已发布，不再具有实验性。<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Network Console**. -->
+
+另请参阅：
+* 在 Compose [中保存和导出集合、环境和环境变量，](../../../network-console/network-console-tool.md#save-and-export-collections-environments-and-environment-variables)_并使用网络控制台工具发送 Web API 请求_。
+
+有关历史记录，请参阅Chromium开源项目中的问题 [#1093687](https://crbug.com/1093687)。
 
 
 <!-- ====================================================================== -->
 ## <a name="improved-css-grid-tooling"></a>改进了 CSS 网格工具
-
-:::image type="content" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能。":::
 
 Microsoft Edge DevTools 现在支持以下功能来检查、查看和调试 CSS 网格。
 
@@ -100,23 +109,33 @@ Microsoft Edge DevTools 现在支持以下功能来检查、查看和调试 CSS 
 
 *  使用新的 **布局** 工具，可以轻松切换网格覆盖并配置每个布局的外观和内容。
 
-默认情况下，这些功能处于打开状态。  有关这些功能的详细信息，请参阅 [CSS 网格](../../../css/grid.md)。  有关Chromium开源项目中此功能的历史记录，请参阅问题 [#1047356](https://crbug.com/1047356)。  此外，Microsoft Edge DevTools 团队正在与 Chrome DevTools 团队和Chromium社区合作，为 DevTools 添加新的弹性盒工具功能。  有关Chromium开源项目中弹性框工具的更新，请参阅问题 [#1136394](https://crbug.com/1136394)。
+默认情况下，这些功能处于打开状态。
 
-:::image type="content" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="包含网格的布局工具。" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
+![包含网格的布局工具。](../../media/2020/10/grid-layout-pane.msft.png)
+
+更新：此功能已发布，不再具有实验性。<!-- valid. -->
+
+另请参阅：
+* [CSS 网格](../../../css/grid.md)
+
+有关历史记录，请参阅Chromium开源项目[中的问题 #1047356](https://crbug.com/1047356)。
+
+Microsoft Edge DevTools 团队正在与 Chrome DevTools 团队和Chromium社区合作，为 DevTools 添加新的弹性盒工具功能。  有关Chromium开源项目中弹性框工具的更新，请参阅问题 [#1136394](https://crbug.com/1136394)。
 
 
 <!-- ====================================================================== -->
 ## <a name="customize-keyboard-shortcuts-in-settings"></a>在“设置”中自定义键盘快捷方式
 
-:::image type="content" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能。":::
+现在，你可以为 DevTools 中的任何操作自定义键盘快捷方式。  自 Microsoft Edge 版本 84 起，你可以在**Visual Studio Code**和 **DevTools (** 键盘快捷方式的默认) 预设之间进行选择。  从Microsoft Edge版本 87 开始，可以进一步自定义键盘快捷方式。
 
-现在，可以自定义 DevTools 中任何操作的键盘快捷方式。  自 Microsoft Edge 版本 84 起，你可以在**Visual Studio Code**和 **DevTools (** [键盘快捷方式](../../../customize/shortcuts.md)的默认) 预设之间进行选择。  从Microsoft Edge版本 87 开始，可以打开 **“启用键盘快捷方式编辑器**”试验，以进一步[自定义键盘快捷方式](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action)。
+![用于暂停脚本的自定义快捷方式。](../../media/2020/10/custom-shortcut-pause-script.msft.png)
 
-若要启用试验，请参阅 [打开或关闭试验](../../../experimental-features/index.md#turning-an-experiment-on-or-off) ，然后选中 **“启用键盘快捷方式编辑**器”旁边的复选框。  有关自定义和编辑快捷方式的详细信息，请参阅“[编辑 DevTools 中任何操作的键盘快捷方式](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action)”。  有关Chromium开源项目中此功能的实时更新，请参阅问题 [#174309](https://crbug.com/174309)。
+更新：此功能已发布，不再具有实验性。<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable keyboard shortcut editor**. -->
 
-:::image type="content" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="用于暂停脚本的自定义快捷方式。" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
+另请参阅：
+* [在自定义键盘快捷方式中编辑 DevTools 操作](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action)_的键盘快捷方式_。
 
-<!-- [enable the keyboard shortcut editor](../../../experimental-features/index.md#enable-keyboard-shortcut-editor) -->
+有关历史记录，请参阅Chromium开源项目[中的问题 #174309](https://crbug.com/174309)。
 
 
 <!-- ====================================================================== -->
@@ -132,18 +151,22 @@ Visual Studio Code和**网络Visual Studio Code**扩展的**元素**现在合并
 
 在完整浏览器模式下使用扩展：
 
-:::image type="content" source="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png" alt-text="在完整浏览器模式下使用扩展。" lightbox="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png":::
+![在完整浏览器模式下使用扩展。](../../media/2020/10/microsoft-edge-tools-full-browser.msft.png)
 
 在无头模式下使用扩展：
 
-:::image type="content" source="../../media/2020/10/microsoft-edge-tools-headless.msft.png" alt-text="在无头模式下使用扩展。" lightbox="../../media/2020/10/microsoft-edge-tools-headless.msft.png":::
+![在无头模式下使用扩展。](../../media/2020/10/microsoft-edge-tools-headless.msft.png)
+
+有关详细信息，请参阅 [Microsoft Edge Visual Studio Code 的 DevTools 扩展](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)。
 
 
 <!-- ====================================================================== -->
 ## <a name="announcements-from-the-chromium-project"></a>来自 Chromium 项目的公告
 
-[!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
+以下部分将公布 Microsoft Edge 中已组成开源 Chromium 项目的其他可用功能。
 
+
+<!-- ====================================================================== -->
 ### <a name="new-webauthn-tool"></a>新建 WebAuthn 工具
 
 在早期版本的Microsoft Edge中，没有本机 WebAuthn 调试支持。  需要物理身份验证器才能使用 [Web 身份验证 API 测试 Web](https://w3c.github.io/webauthn) 应用程序。  使用新的 **WebAuthn** 工具，无需使用任何物理身份验证器即可执行以下操作：
@@ -152,45 +175,75 @@ Visual Studio Code和**网络Visual Studio Code**扩展的**元素**现在合并
 *  自定义身份验证器的属性。
 *  检查身份验证器的状态。
 
-有关 **WebAuthn** 功能的详细信息，请参阅 [模拟身份验证器并调试 WebAuthn](../../../webauthn/index.md)。
-
-可以使用新的 [WebAuthn](../../../webauthn/index.md) 工具模拟身份验证器并调试 [Web 身份验证 API](https://w3c.github.io/webauthn)。  若要打开 **WebAuthn** 工具，请单击“**自定义”并控制 DevTools** (`...`) 图标> **More** **toolsWebAuthn** > 。  有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1034663](https://crbug.com/1034663)。
+可以使用新的 **WebAuthn** 工具模拟身份验证器并调试 [Web 身份验证 API](https://w3c.github.io/webauthn)。  若要打开 **WebAuthn** 工具，请单击“**自定义”并控制 DevTools** (`...`) 图标> **More** **toolsWebAuthn** > 。  有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1034663](https://crbug.com/1034663)。
 
 打开 **WebAuthn** 工具：
 
-:::image type="content" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="打开 WebAuthn 工具。" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
+![打开 WebAuthn 工具。](../../media/2020/10/more-tools-webauthn.msft.png)
 
 **WebAuthn** 工具：
 
-:::image type="content" source="../../media/2020/10/webauthn-enable-virtual-auth.msft.png" alt-text="WebAuthn 工具。" lightbox="../../media/2020/10/webauthn-enable-virtual-auth.msft.png":::
+![WebAuthn 工具。](../../media/2020/10/webauthn-enable-virtual-auth.msft.png)
 
+有关详细信息，请参阅 [模拟身份验证器并调试 WebAuthn](../../../webauthn/index.md)。
+
+
+<!-- ====================================================================== -->
 ### <a name="elements-tool-updates"></a>“元素”工具更新
 
+另请参阅：
+* [使用 Elements 工具检查、编辑和调试 HTML 和 CSS](../../../elements-tool/elements-tool.md)
+
+
+<!-- ====================================================================== -->
 #### <a name="view-the-computed-sidebar-pane-in-the-styles-pane"></a>在“样式”窗格中查看计算边栏窗格
 
-在“样**式**”窗格中切换 **“计算**”窗格。  默认情况下，“**样式**”窗格中的 **“计算**”窗格会折叠。  若要切换它，请单击该按钮。  有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1073899](https://crbug.com/1073899)。
+在“样**式**”窗格中切换 **“计算**”窗格。  默认情况下，“**样式**”窗格中的 **“计算**”窗格会折叠。  若要在“样**式**”窗格中显示或隐藏 **“计算**”窗格，请单击“**显示计算样式”边栏** (![“显示计算样式边栏”图标。](../../media/2020/10/show-computed-styles-sidebar-icon.png)) 图标/按钮。
 
 打开 **计算边栏** 窗格：
 
-:::image type="content" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="打开“计算”边栏窗格。" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+![打开“计算”边栏窗格。](../../media/2020/10/computed-sidebar-pane.msft.png)
 
 **计算边栏**窗格：
 
-:::image type="content" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="计算边栏窗格。" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
+![计算边栏窗格。](../../media/2020/10/computed-sidebar-pane-open.msft.png)
 
-#### <a name="grouping-css-properties-in-the-computed-panel"></a>对计算面板中的 CSS 属性进行分组
+有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1073899](https://crbug.com/1073899)。
 
-若要查看滚动较少的已应用 CSS，请按 **计算** 窗格中的类别对 CSS 属性进行分组。  在检查 CSS 时，还可以有选择地专注于一组相关属性。  从 **“元素”** 工具中，选择一个元素。  若要将 (或取消组合) CSS 属性，请切换 **“组** ”复选框。  有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1096230](https://crbug.com/1096230)、[#1084673](https://crbug.com/1084673) 和 [#1106251](https://crbug.com/1106251)。
+<!-- lacks the new feature: -->
+另请参阅：
+* [仅查看实际应用于 CSS](../../../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) _功能引用中的元素的 CSS_
 
-:::image type="content" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="对 CSS 属性进行分组。" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
 
+<!-- ====================================================================== -->
+#### <a name="grouping-css-properties-in-the-computed-pane"></a>在“计算”窗格中对 CSS 属性进行分组
+
+若要查看滚动较少的已应用 CSS，请按 **计算** 窗格中的类别对 CSS 属性进行分组。  在检查 CSS 时，还可以有选择地专注于一组相关属性。  从 **“元素”** 工具中，选择一个元素。  若要将 (或取消组合) CSS 属性，请切换 **“组** ”复选框。
+
+![对 CSS 属性进行分组。](../../media/2020/10/grouping-css-prop.msft.png)
+
+有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1096230](https://crbug.com/1096230)、[#1084673](https://crbug.com/1084673) 和 [#1106251](https://crbug.com/1106251)。
+
+<!-- probably lacks the new feature: -->
+另请参阅：
+* [仅查看实际应用于 CSS](../../../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) _功能引用中的元素的 CSS_
+
+
+<!-- ====================================================================== -->
 ### <a name="lighthouse-64-in-the-lighthouse-tool"></a>灯塔工具中的 Lighthouse 6.4
 
 **Lighthouse** 工具现在运行 Lighthouse 6.4。  有关更改的完整列表，请参阅 [Lighthouse 发行说明](https://github.com/GoogleChrome/lighthouse/releases/v6.4.1)。  有关Chromium开源项目中此功能的实时更新，请参阅问题 [#772558](https://crbug.com/772558)。
 
+另请参阅：
+* [Lighthouse 工具](../../../lighthouse/lighthouse-tool.md)
+
+
+<!-- ====================================================================== -->
 ### <a name="performancemark-events-in-the-timings-section"></a>计时部分中的 performance.mark () 事件
 
-[“性能](../../../evaluate-performance/reference.md)”工具中录制的 **“计时”部分**现在标记 `performance.mark()` <!--[performance mark](https://jec.fyi/demo/perf-mark) -->事件。  若要尝试此功能并测量 JavaScript 代码的性能，请将事件添加 `performance.mark()` 到代码中。  例如，以下代码片段在循环之前和之后 `for` 添加标记，该循环使用增量 7 从 0 循环到 1000。
+[“性能](../../../evaluate-performance/reference.md)”工具中录制的 **“计时”部分**现在标记 `performance.mark()` <!--[performance mark](https://jec.fyi/demo/perf-mark) -->事件。  若要尝试此功能并测量 JavaScript 代码的性能，请将事件添加 `performance.mark()` 到代码中。
+
+以下代码在循环之前和`end`之后`for`添加`start`性能标记：
 
 ```javascript
 performance.mark('start');
@@ -202,45 +255,74 @@ performance.mark('end');
 
 然后，打开 [“性能](../../../evaluate-performance/reference.md) ”工具并查看 **“计时”部分** 以记录 JavaScript 代码。  `performance.mark()`添加的事件现在显示在录制中。
 
-:::image type="content" source="../../media/2020/10/perf-mark.msft.png" alt-text="Performance.mark 事件。" lightbox="../../media/2020/10/perf-mark.msft.png":::
-
-### <a name="new-resource-type-and-url-filters-in-the-network-tool"></a>网络工具中的新资源类型和 URL 筛选器
-
-使用**网络**工具中的新`resource-type`字和`url`关键字来筛选网络请求。  例如，用于 `resource-type:image` 专注于图像的网络请求。
-
-:::image type="content" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="资源类型筛选器。" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
-
-若要发现更多特殊关键字，例如`resource-type`，请`url`[参阅按属性筛选请求](../../../network/reference.md#filter-requests-by-properties)。  有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1121141](https://crbug.com/1121141) 和 [#1104188](https://crbug.com/1104188)。
-
-### <a name="frame-details-view-updates"></a>框架详细信息视图更新
-
-#### <a name="display-coep-and-coop-reporting-to-endpoint"></a>向终结点显示 COEP 和 COOP 报告
-
-在 **“安全&隔离**”部分下查看跨源嵌入器策略 (COEP) 和跨源开机策略 (COOP) `reporting to`终结点。  [Reporting API](https://developer.mozilla.org/docs/Web/API/Reporting_API) 定义了`Report-To`一个新的 HTTP 标头，用于指定浏览器发送警告和错误的服务器终结点。  有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1051466](https://crbug.com/1051466)。
-
-:::image type="content" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="向终结点报告。" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
-
-#### <a name="display-coep-and-coop-report-only-mode"></a>显示仅 COEP 和 COOP 报表模式
-
-DevTools 现在显示设置`report-only`为模式的 `report-only` COEP 和 COOP 的标签。  有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1051466](https://crbug.com/1051466)。
-
-:::image type="content" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="仅报表模式标签。" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
-
-### <a name="view-and-fix-color-contrast-issues-in-the-css-overview-tool"></a>在 CSS 概述工具中查看和修复颜色对比度问题
-
-:::image type="content" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="实验性功能。":::
-
-**CSS 概述**工具现在显示页面上存在颜色对比度问题的元素列表。  [CSS“概述”辅助颜色演示](https://css-overview-accessible-colors-demo.glitch.me)页包含颜色对比度问题的示例。
-
-若要启用此试验，**请在“设置** > **体验**”下，选中 **“CSS 概述”复**选框。  若要查看具有颜色对比度问题的元素列表，请在 **“对比度”问题上**单击 **“文本**”。  若要打开 **Elements** 工具中的元素，请单击列表中的元素。  为了帮助解决对比度问题，Microsoft Edge DevTools [会自动提供颜色建议](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane)。  有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1120316](https://crbug.com/1120316)。
-
-:::image type="content" source="../../media/2020/10/css-overview.msft.png" alt-text="低颜色对比度问题。" lightbox="../../media/2020/10/css-overview.msft.png":::
+![performance.mark 事件。](../../media/2020/10/perf-mark.msft.png)
 
 
 <!-- ====================================================================== -->
-## <a name="download-the-microsoft-edge-preview-channels"></a>下载 Microsoft Edge 预览频道
+### <a name="new-resource-type-and-url-filters-in-the-network-tool"></a>网络工具中的新资源类型和 URL 筛选器
 
-如果你使用的是 Windows 或 macOS，请考虑使用 [ Microsoft Edge 预览频道](https://www.microsoftedgeinsider.com/download) 作为默认开发浏览器。  预览频道使你能够访问最新的 DevTools 功能。
+使用**网络**工具中的新`resource-type`字和`url`关键字来筛选网络请求。  例如，用于 `resource-type:image` 专注于映像的网络请求：
+
+![筛选器设置为“resource-type：image”，以专注于图像的网络请求。](../../media/2020/10/network-resource-type-filter.msft.png)
+
+若要发现更多特殊关键字，例如`resource-type`，请`url`[参阅按属性筛选请求](../../../network/reference.md#filter-requests-by-properties)。
+
+有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1121141](https://crbug.com/1121141) 和 [#1104188](https://crbug.com/1104188)。
+
+
+<!-- ====================================================================== -->
+### <a name="frame-details-view-updates"></a>框架详细信息视图更新
+
+在“ **应用程序** ”工具的左侧页面列表中，底部页是 **“框架**”，通常会列出名为 **顶部**的帧。
+
+
+<!-- ====================================================================== -->
+#### <a name="display-coep-and-coop-reporting-to-endpoint"></a>向终结点显示 COEP 和 COOP 报告
+
+在“ **应用程序** ”工具的左侧页面列表中，底部页是 **“框架**”，通常会列出名为 **顶部**的帧。  选择框架以查看帧详细信息视图，其中包括 **“安全&隔离”** 部分。
+
+在框架详细信息页 **的安全&隔离** 部分中，查看 COEP) 和跨源开机策略 (跨源嵌入器策略 (COOP) `reporting to` 终结点。  [报表 API](https://developer.mozilla.org/docs/Web/API/Reporting_API) 定义`Report-To`，这是一个新的 HTTP 标头，可用于指定浏览器发送警告和错误的服务器终结点。
+
+![“报告到”终结点。](../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png)
+
+有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1051466](https://crbug.com/1051466)。
+
+另请参阅：
+* 在 _DevTools (Microsoft Edge 88) 中 _ [显示打开窗口的开机帧详细信息](../11/devtools.md#display-opener-frame-details-for-opened-windows)
+* [用于管理存储的应用程序工具](../../../storage/application-tool.md)
+
+
+<!-- ====================================================================== -->
+#### <a name="display-coep-and-coop-report-only-mode"></a>显示仅 COEP 和 COOP 报表模式
+
+在“ **应用程序** ”工具的左侧页面列表中，底部页是 **“框架**”，通常会列出名为 **顶部**的帧。  选择框架以查看帧详细信息视图，其中包括 **“安全&隔离”** 部分。
+
+框架详细信息页 **的安全&隔离** 部分现在显示 `report-only` 设置 `report-only` 为模式的 COEP 和 COOP 的标签。
+
+![“仅报表”模式标签。](../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png)
+
+有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1051466](https://crbug.com/1051466)。
+
+另请参阅：
+* 在 _DevTools (Microsoft Edge 88) 中 _ [显示打开窗口的开机帧详细信息](../11/devtools.md#display-opener-frame-details-for-opened-windows)
+* [用于管理存储的应用程序工具](../../../storage/application-tool.md)
+
+
+<!-- ====================================================================== -->
+### <a name="view-and-fix-color-contrast-issues-in-the-css-overview-tool"></a>在 CSS 概述工具中查看和修复颜色对比度问题
+
+**CSS 概述**工具现在显示页面上存在颜色对比度问题的元素列表。  [CSS“概述”辅助颜色演示](https://css-overview-accessible-colors-demo.glitch.me)页包含颜色对比度问题的示例。
+
+若要查看具有颜色对比度问题的元素列表，请在 **“对比度”问题上**单击 **“文本**”。  若要打开 **Elements** 工具中的元素，请单击列表中的元素。  为了帮助解决对比度问题，Microsoft Edge DevTools [会自动提供颜色建议](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane)。
+
+![颜色对比度问题。](../../media/2020/10/css-overview.msft.png)
+
+更新：此功能已发布，不再具有实验性。<!-- To enable this experiment, under **Settings** > **Experiments**, select the **CSS Overview** checkbox. -->
+
+另请参阅：
+* [CSS 概述工具](../../../css/css-overview-tool.md)
+
+有关历史记录，请参阅Chromium开源项目[中的问题 #1120316](https://crbug.com/1120316)。
 
 
 <!-- ====================================================================== -->

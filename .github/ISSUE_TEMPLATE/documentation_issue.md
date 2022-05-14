@@ -4,24 +4,24 @@ about: Report issues with the Microsoft Edge documentation.
 title: ''
 labels: ''
 assignees: ''
-ms.openlocfilehash: 7c4984a290fa79200266246483a9c083f76819ff
-ms.sourcegitcommit: fd82fddb567614daec21d33997f9f6b4826476a1
+ms.openlocfilehash: 9d58eb6bd8683af72e8c0307de432c32300253e1
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "12233271"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12513808"
 ---
 <!--
 ⚠ If your feedback isn't about the Microsoft Edge developer documentation, consider submitting it here instead:
 
-* For DevTools: https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/contact
+* For DevTools: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/contact
 * For WebView2: https://github.com/MicrosoftEdge/WebView2Feedback/issues
 -->
 
-**链接到文档页面**： 页面的 URL。
+**指向文档页的链接**：页面的 URL。
 
-**问题说明**：问题的简洁明了的说明。
+**问题说明**：对问题内容的清晰简明的说明。
 
-**Screenshots**： If applicable， add screenshots to help explain the issue.
+**屏幕截图**：如果适用，请添加屏幕截图以帮助解释问题。
 
-**Microsoft Edge版本**：如果问题出现在特定版本的 Microsoft Edge。
+**Microsoft Edge版本**：如果特定版本的Microsoft Edge出现问题。

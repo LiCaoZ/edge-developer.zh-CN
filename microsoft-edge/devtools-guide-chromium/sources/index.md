@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/18/2022
-ms.openlocfilehash: d5a330e984b9b2ba649c49870a14753e4db3e8c7
-ms.sourcegitcommit: 3e459a5f58112a17748a0563934fa236b0131461
+ms.openlocfilehash: 2b07c93aab69392c984703c9e1a553e45dd98ba1
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "12505873"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514396"
 ---
 <!-- Copyright Kayce Basques
 
@@ -171,9 +171,9 @@ Workspace 中的文件在整个 DevTools 中由文件名旁边的绿色点指示
 
 #### <a name="see-also"></a>另请参阅
 
-*  [使用本地副本替代网页资源（“替代”选项卡）](../javascript/overrides.md)
-*  [将已处理的代码映射到原始源代码，以便进行调试](../javascript/source-maps.md)
-
+* [使用本地副本替代网页资源（“替代”选项卡）](../javascript/overrides.md)
+* [将已处理的代码映射到原始源代码，以便进行调试](../javascript/source-maps.md)
+* _键盘快捷方式_中的[源工具键盘快捷方式](../shortcuts/index.md#sources-tool-keyboard-shortcuts)
 
 ### <a name="using-the-content-scripts-tab-for-microsoft-edge-extensions"></a>将"内容脚本"选项卡用于Microsoft Edge扩展
 
@@ -375,8 +375,8 @@ CSS 更改会立即生效;无需手动保存更改。
 #### <a name="see-also"></a>另请参阅
 
 * [在“样式”窗格中编辑 CSS 字体样式和设置](../inspect-styles/edit-fonts.md)
-
 * [适用于初学者的 DevTools：CSS 入门](../beginners/css.md) - 教程
+* _键盘快捷方式_中的[源工具键盘快捷方式](../shortcuts/index.md#sources-tool-keyboard-shortcuts)
 
 
 ### <a name="editing-an-html-file"></a>编辑 HTML 文件
@@ -476,7 +476,7 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
 1. 在 **导航器** 窗格（左侧）中，选择 **页** 选项卡，然后选择 JavaScript 文件，例如 `get-started.js`。
 
-1. 在 **"编辑器** "窗格中，选择可疑代码行附近的行号，以在该行上设置断点。  在下图中，在 行 上设置了断点 `var sum = addend1 + addend2;`。
+1. 在 **"编辑器** "窗格中，选择可疑代码行附近的行号，以在该行上设置断点。  在下图中，在 行 上设置了断点 `var sum = addend1 + addend2;`。   (更新：从 2022 年起，断点现在由蓝色矩形（而不是红色圆圈）指示。) 
 
 1. 在网页中，输入值并提交表单。  例如，输入数字，如 `5` 和 `1` ，然后选择按钮添加数字 **1 和数字 2**。
 
@@ -515,6 +515,7 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
 #### <a name="see-also"></a>另请参阅
 
+* _键盘快捷方式_中的[源工具键盘快捷方式](../shortcuts/index.md#sources-tool-keyboard-shortcuts)
 * [JavaScript 调试入门](../javascript/index.md) - 使用包含一些表单控件的现有简单网页的教程。
 
 
@@ -555,6 +556,12 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 * [JavaScript 调试功能](../javascript/reference.md) - 如何使用调试器设置断点、逐步调试代码、查看和修改变量值、观看 JavaScript 表达式以及查看调用堆栈。
 
 * [使用断点暂停代码](../javascript/breakpoints.md) - 如何在调试器中设置基本和专用断点。
+
+
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
+
+* _键盘快捷方式_中的[源工具键盘快捷方式](../shortcuts/index.md#sources-tool-keyboard-shortcuts)
 
 
 <!-- ====================================================================== -->
