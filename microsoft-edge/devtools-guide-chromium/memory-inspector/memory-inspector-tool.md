@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 05/04/2022
-ms.openlocfilehash: 0d471d233900cbcd2ccc177ff793ab1233c7bc7d
-ms.sourcegitcommit: 70d17e15230a709cd3c8cafcbc99fd4aee7ce039
+ms.openlocfilehash: cc2db178bd2feab02b3ef2328c8933f8dc9ed248
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "12505095"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514522"
 ---
 <!-- Copyright Kim-Anh Tran
 
@@ -45,15 +45,19 @@ ms.locfileid: "12505095"
 
 ![源工具范围面板提供检查内存的有限功能](../media/memory-inspector-sources-scope-limited-ability.png)
 
+<!-- this page's initial content was from
+https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2021/04/devtools#new-memory-inspector-tool
+-->
+
 
 <!-- ====================================================================== -->
 ## <a name="open-memory-inspector-while-debugging"></a>调试时打开内存检查器
 
-1. 开始Microsoft Edge。
+1. "开始"菜单 Microsoft Edge。
 
 1. 打开 [JS (JS) 内存中的测试站点“检查 ArrayBuffers ](http://memory-inspector.glitch.me/demo-js.html)”。 <!-- To do item: copy to Microsoft Repo and reference there -->
 
-1. 按`F12`或`Shift``I`+`Ctrl`+ (Windows、Linux) 或`I` `Command`+`Option`+ (macOS) 打开 DevTools。
+1. 按`F12`或`Shift``I`+`Ctrl`+ (Windows、Linux) 或`I``Command`+`Option`+ (macOS) 打开 DevTools。
 
 1. 单击 **“源** ”并打开文件 `demo-js.js` 。
 
@@ -174,7 +178,7 @@ Enter **地址** 文本框以十六进制格式显示当前字节地址。 可�
 
 1. 在 [Wasm) 中打开 Wasm 测试站点检查 Wasm 记忆 (内存 ](http://memory-inspector.glitch.me/demo-wasm.html)。 <!-- To do item: copy to Microsoft Repo and reference there -->
 
-1. 按`F12`或`Shift``I`+`Ctrl`+ (Windows、Linux) 或`I` `Command`+`Option`+ (macOS) 打开 DevTools。
+1. 按`F12`或`Shift``I`+`Ctrl`+ (Windows、Linux) 或`I``Command`+`Option`+ (macOS) 打开 DevTools。
 
 1. 单击 **“源** ”并打开文件 `memory-write.wasm` 。
 

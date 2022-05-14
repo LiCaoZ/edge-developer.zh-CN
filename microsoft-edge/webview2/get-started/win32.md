@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: d422eebb98764da40c36ff6d1ca11f85a98a909e
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: 80472473460e1c7d2e66367f7470b5972581710f
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12497007"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514837"
 ---
 # <a name="get-started-with-webview2-in-win32-apps"></a>Win32 应用中的 WebView2 入门
 
@@ -246,7 +246,7 @@ Windows现在安装了 (WIL) 的实现库，以及 WINDOWS 运行时 C++ 模板�
 
 若要确认系统已设置为 WebView2 编码，请在调试模式下运行项目，如下所示：
 
-1. 选择 **“调试** > **开始”调试** () `F5` 生成并运行项目。
+1. 选择 **“调试** > **"开始"菜单调试** (`F5`) 生成并运行项目。
 
    示例应用首先打开一个弹出窗口，其中显示将加载的 URL 以及“ **确定”** 按钮：
 
@@ -412,7 +412,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 <!-- ====================================================================== -->
 ## <a name="step-12---build-your-empty-sample-app"></a>步骤 12 - 生成空示例应用
 
-1. 选择 **“调试** > **开始”调试** () `F5` 生成并运行项目。
+1. 选择 **“调试** > **"开始"菜单调试** (`F5`) 生成并运行项目。
 
    示例应用将打开并显示一个空窗口：
 
@@ -628,7 +628,7 @@ maintenance link (keep)
 <!-- ====================================================================== -->
 ## <a name="step-16---communication-between-host-and-web-content"></a>步骤 16 - 主机和 Web 内容之间的通信
 
-主机和 Web 内容也可以通过 `postMessage` 该方法相互通信。  在 WebView2 控件中运行的 Web 内容可以通过该方法发布到主机 `window.chrome.webview.postMessage` ，并且消息由主机上任何已注册 `ICoreWebView2WebMessageReceivedEventHandler` 的事件处理程序处理。
+主机和 Web 内容也可以通过 `postMessage` 该方法相互通信。  WebView2 控件中运行的 Web 内容可以通过该方法帖子到主机`window.chrome.webview.postMessage`，并且消息由主机上任何已注册`ICoreWebView2WebMessageReceivedEventHandler`的事件处理程序处理。
 
 同样，主机可以通过该或`ICoreWebView2::PostWebMessageAsJSON`方法向 Web 内容`ICoreWebView2::PostWebMessageAsString`发送消息，并且消息由从侦听器添加的`window.chrome.webview.addEventListener`处理程序捕获。  此通信机制允许 Web 内容通过传递消息来要求主机运行本机 API 来使用本机功能。
 
@@ -720,5 +720,5 @@ API 参考：
 * [Windows实施库 (WIL) GitHub ](https://github.com/Microsoft/wil) 存储库。
 
 <!--clickable full link:
-https://docs.microsoft.com/en-us/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=msvc-170&preserve-view=true&viewFallbackFrom=vs-2019
+https://docs.microsoft.com/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=msvc-170&preserve-view=true&viewFallbackFrom=vs-2019
 -->

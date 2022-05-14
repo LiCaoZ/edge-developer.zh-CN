@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 09/23/2021
-ms.openlocfilehash: abc0ff7844956c34adc4f547a1ad3d7dc55a09b6
-ms.sourcegitcommit: c264a31a0809cacec22a42214f7949bba85e6b51
+ms.openlocfilehash: 700b4fcad2cedd3e548d0ca5e4ad3456a284cc6b
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "12472938"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514817"
 ---
 # <a name="overview-of-devtools"></a>开发工具概述
 
@@ -57,19 +57,19 @@ Microsoft Edge浏览器附带内置 Web 开发工具，称为 Microsoft Edge Dev
 
 | 操作 | 生成的工具 |
 |---|---|
-| 右键单击网页上的任何项，然后选择 **"检查**"。 | **"元素**"工具，其中扩展了 DOM 树以显示右键单击的页面元素。 |
-| 按 `Ctrl`++`Shift``I` (Windows/Linux) 或`I` `Command`+`Option`+ (macOS) 。| 以前使用的工具或 **欢迎** 工具。 |
+| 右键单击网页上的任何项，然后选择 **“检查**”。 | **“元素**”工具，其中扩展了 DOM 树以显示右键单击的页面元素。 |
+| 按 `Ctrl`++`Shift``I` (Windows/Linux) 或`I``Command`+`Option`+ (macOS) 。| 以前使用的工具或 **欢迎** 工具。 |
 | 按 `F12`。 | 以前使用的工具或 **欢迎** 工具。 |
 
 **其他方法：**
 
 | 操作 | 生成的工具 |
 |---|---|
-| 在Microsoft Edge工具栏上，**选择设置和更多** (!["设置和更多"图标。](media/edge-settings-and-more-icon.png)) >**更多工具** >  **开发人员工具**。 | 以前使用的工具或 **欢迎** 工具。 |
+| 在Microsoft Edge工具栏上，**选择设置和更多** (![“设置和更多”图标。](media/edge-settings-and-more-icon.png)) >**更多工具** >  **开发人员工具**。 | 以前使用的工具或 **欢迎** 工具。 |
 | 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。 | **控制台**工具。 |
-| 按`Ctrl`+`Shift`+`C`（Windows、Linux）或 `Command`+`Option`+`C` （macOS）。 | **"元素**"工具，其中扩展了 DOM 树以显示元素`<body>`。 |
-| 按 `Shift`+`F10` 下以打开右键单击菜单。  若要选择 **"检查**"命令，请按下，然后`Enter`按`Up Arrow`。 | **"元素**"工具，其中扩展了 DOM 树以显示元素`<html>`。 |
-| 按 `Tab` 下并 `Shift`+`Tab` 将焦点放在页面元素上。  然后按 `Shift`+`F10` 下以打开右键单击菜单。  若要选择 **"检查**"命令，请按下，然后`Enter`按`Up Arrow`。 | **"元素**"工具，其中扩展了 DOM 树以显示重点页面元素。 |
+| 按`Ctrl`+`Shift`+`C`（Windows、Linux）或 `Command`+`Option`+`C` （macOS）。 | **“元素**”工具，其中扩展了 DOM 树以显示元素`<body>`。 |
+| 按 `Shift`+`F10` 下以打开右键单击菜单。  若要选择 **“检查**”命令，请按下，然后`Enter`按`Up Arrow`。 | **“元素**”工具，其中扩展了 DOM 树以显示元素`<html>`。 |
+| 按 `Tab` 下并 `Shift`+`Tab` 将焦点放在页面元素上。  然后按 `Shift`+`F10` 下以打开右键单击菜单。  若要选择 **“检查**”命令，请按下，然后`Enter`按`Up Arrow`。 | **“元素**”工具，其中扩展了 DOM 树以显示重点页面元素。 |
 
 <!-- /keep sync'd -->
 
@@ -89,9 +89,9 @@ hit counts:
 
 ### <a name="open-devtools-by-right-clicking-an-item-in-a-webpage"></a>通过右键单击网页中的项打开 DevTools
 
-打开 DevTools 的一个好方法是右键单击网页上的项，然后选择 **"检查**"
+打开 DevTools 的一个好方法是右键单击网页上的项，然后选择 **“检查**”
 
-![若要打开 DevTools，请右键单击网页上的任何项目，然后选择"检查"。](media/devtools-intro-inspect.msft.png)
+![若要打开 DevTools，请右键单击网页上的任何项目，然后选择“检查”。](media/devtools-intro-inspect.msft.png)
 
 DevTools 随即打开，**在 Elements** 工具的 **DOM 树**中突出显示了右键单击的元素：
 
@@ -102,7 +102,7 @@ DevTools 随即打开，**在 Elements** 工具的 **DOM 树**中突出显示了
 
 在Microsoft Edge工具栏上，可以选择**设置和更多** () > `...` **更多工具** >  **开发人员工具**：
 
-![在Microsoft Edge工具栏上，选择"设置和更多">"更多工具">"开发人员工具"。](media/edge-settings-and-more-tools-developer-tools.png)
+![在Microsoft Edge工具栏上，选择“设置和更多”>“更多工具”>“开发人员工具”。](media/edge-settings-and-more-tools-developer-tools.png)
 
 
 ### <a name="have-devtools-automatically-open-when-you-open-a-new-tab"></a>打开新选项卡时，让 DevTools 自动打开
@@ -123,7 +123,7 @@ DevTools 随即打开，**在 Elements** 工具的 **DOM 树**中突出显示了
    Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
    ```
    
-   macOS 上的 bash shell：
+   bash shell on macOS：
    
    ```bash
    /Applications/Microsoft\ Edge\ Beta.app/Contents/MacOS/Microsoft\ Edge\ Beta --auto-open-devtools-for-tabs
@@ -142,7 +142,7 @@ DevTools 随即打开，**在 Elements** 工具的 **DOM 树**中突出显示了
 
 1. 在Microsoft Edge，去`edge://settings/system`。
 
-1. 在" **开发人员工具** "部分中，在 **按下 F12 键切换时关闭"打开 DevTools** "。
+1. 在“ **开发人员工具** ”部分中，在 **按下 F12 键切换时关闭“打开 DevTools** ”。
 
    ![在 Edge 设置中，禁用用于打开 DevTools 的 F12 密钥。](media/disable-f12.png)
 
@@ -169,7 +169,7 @@ DevTools UI 是使用 HTML 和 CSS（如网页）实现的，因此可以使用�
 **若要缩放浏览器的 DevTools 部分，请执行以下操作：**
 
 1. 如果焦点尚未放在 DevTools 上，请单击 DevTools 中的某个位置。
-1. 按`Ctrl`+`+`或`Ctrl`+`-` (Windows或 Linux) 。  或者，按 `Command`+`+` 或 `Command`+`-` (macOS) 。
+1. 按`Ctrl`+`+`或`Ctrl`+`-` (Windows或 Linux) 。  或者，按`Command`+`+`或`Command`+`-` (macOS) 。
 
 ![DevTools 缩小。](overview-images/zoom-devtools.png)
 
@@ -180,21 +180,37 @@ DevTools UI 是使用 HTML 和 CSS（如网页）实现的，因此可以使用�
 **将缩放还原到 100%：**
 
 1. 请确保焦点位于浏览器的所需部分（DevTools 或呈现的页面）上。
-1. 按 `Ctrl`+`0` (Windows 或 Linux) 或 `Command`+`0` (macOS) 。
+1. 按`Ctrl`+`0` (Windows或 Linux) 或`Command`+`0` (macOS) 。
 
 **若要缩放 DevTools 设置：**
 
-1. 在 DevTools **设置**中，单击右上角的 **"关闭** (**x**) "。
+1. 在 DevTools **设置**中，单击右上角的 **“关闭** (**x**) ”。
 1. 更改 DevTools 的缩放级别，如上所述。
 1. 单击**设置 (** 设置![图标。](media/settings-gear-icon-light-theme.png)) 按钮。
 
 **若要使用命令菜单缩放 DevTools：**
 
-1. 单击 **"自定义并控制 DevTools** (![自定义"图标。](media/customize-devtools-icon-light-theme.png)) 菜单按钮，然后选择 **"运行"命令**。
+1. 单击 **“自定义并控制 DevTools** (![自定义”图标。](media/customize-devtools-icon-light-theme.png)) 菜单按钮，然后选择 **“运行”命令**。
 1. 在 **命令菜单**中，开始键入 **缩放**，然后选择缩放命令：
    *  **重置缩放级别**
    *  **放大**
    *  **缩小**
+
+
+<!-- ====================================================================== -->
+## <a name="display-devtools-tooltips"></a>显示 DevTools 工具提示
+
+DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  将鼠标悬停在 DevTools 的每个概述区域上，详细了解如何使用该工具。  若要打开工具提示，请执行以下操作之一： 
+
+*  选择 **“自定义”并控制 DevTools** (`...`) > **帮助** > **切换 DevTools 工具提示**。
+*  按 `Ctrl`++`Shift``H` (Windows/Linux) 或`H``Cmd`+`Shift`+ (macOS) 。
+*  [打开命令菜单](command-menu/index.md#open-the-command-menu)，然后键入 `tooltips`。
+
+然后将鼠标悬停在 DevTools 的每个概述区域上：
+
+![DevTools 工具提示。](overview-images/tooltips.png)
+
+若要关闭工具提示，请按 `Esc`。  
 
 
 <!-- ====================================================================== -->
@@ -213,7 +229,7 @@ DevTools 为你提供了极大的功能来检查、调试和更改当前显示�
 
 **下层选项卡：**
 
-在某些工具的面板中，有一个或多个选项卡集 (选项卡窗格) 。  例如，" **元素"** 工具包含一组选项卡，其中包括 **样式**、 **事件侦听器**和 **辅助功能** 选项卡。  对于其他工具，该工具的面板沿左侧列出了页面。
+在某些工具的面板中，有一个或多个选项卡集 (选项卡窗格) 。  例如，“ **元素”** 工具包含一组选项卡，其中包括 **样式**、 **事件侦听器**和 **辅助功能** 选项卡。  对于其他工具，该工具的面板沿左侧列出了页面。
 
 
 ### <a name="the-main-toolbar-and-the-drawer-toolbar"></a>主工具栏和抽屉工具栏
@@ -242,14 +258,14 @@ DevTools 为你提供了极大的功能来检查、调试和更改当前显示�
    *  **CSS 概述** 工具。
 
 * 图标：
-   *  **更多选项卡** (!["更多"选项卡图标。](media/more-tabs-icon-light-theme.png)) 按钮。
-   *  **"更多工具** (!["更多工具"图标。](media/more-tools-icon-light-theme.png)) 按钮。
+   *  **更多选项卡** (![“更多”选项卡图标。](media/more-tabs-icon-light-theme.png)) 按钮。
+   *  **“更多工具** (![”更多工具“图标。](media/more-tools-icon-light-theme.png)) 按钮。
    *  **JavaScript 错误计数器** (![JavaScript 错误计数器图标。](media/javascript-counter-icon-light-theme.png)) 按钮。
    *  **问题计数器** (![问题计数器图标。](media/issues-counter-icon-light-theme.png)) 按钮。
    *  **设置** (![设置图标。](media/settings-gear-icon-light-theme.png)) 按钮。
-   *  **发送反馈** (!["发送反馈"图标。](media/send-feedback-icon-light-theme.png)) 按钮。
+   *  **发送反馈** (![“发送反馈”图标。](media/send-feedback-icon-light-theme.png)) 按钮。
    *  **自定义和控制 DevTools** (![自定义图标。](media/customize-devtools-icon-light-theme.png)) 菜单按钮。
-   *  **关闭** DevTools (!["关闭 DevTools"图标。](media/close-devtools-icon-light-theme.png)) 按钮。
+   *  **关闭** DevTools (![“关闭 DevTools”图标。](media/close-devtools-icon-light-theme.png)) 按钮。
 
 ![主工具栏，带有标识其功能的标签。](media/devtools-intro-menu-bar.msft.png)
 
@@ -258,7 +274,7 @@ DevTools 为你提供了极大的功能来检查、调试和更改当前显示�
 
 ### <a name="inspect-tool"></a>检查工具
 
-单击" **检查"工具** (!["检查"工具图标。](media/inspect-tool-icon-light-theme.png)) 按钮，可以选择当前网页上的元素。  当 **检查** 工具处于活动状态时，可以将鼠标移动到网页的不同部分，以获取有关页面元素的详细信息，以及显示页面元素的布局尺寸、填充和边距的多色覆盖。
+单击“ **检查”工具** (![“检查”工具图标。](media/inspect-tool-icon-light-theme.png)) 按钮，可以选择当前网页上的元素。  当 **检查** 工具处于活动状态时，可以将鼠标移动到网页的不同部分，以获取有关页面元素的详细信息，以及显示页面元素的布局尺寸、填充和边距的多色覆盖。
 
 ![将鼠标悬停在上方时显示本文的第一个标题的"检查"工具。](media/devtools-intro-inspect-tool.msft.png)
 
@@ -297,7 +313,7 @@ DevTools 为你提供了极大的功能来检查、调试和更改当前显示�
 
 ### <a name="sources-tool"></a>源工具
 
-["源](sources/index.md)"工具是代码编辑器和 JavaScript 调试器。  可以编辑项目、维护代码段和调试当前项目。
+[“源](sources/index.md)”工具是代码编辑器和 JavaScript 调试器。  可以编辑项目、维护代码段和调试当前项目。
 
 **源**工具始终存在于主工具栏上。
 
@@ -306,7 +322,7 @@ DevTools 为你提供了极大的功能来检查、调试和更改当前显示�
 
 使用 **网络** 工具可以监视和检查来自网络和浏览器缓存的请求或响应。  可以筛选请求和响应，以满足你的需求并模拟不同的网络条件。
 
-请参阅 ["检查网络活动](network/index.md)"。
+请参阅 [“检查网络活动](network/index.md)”。
 
 ### <a name="performance-tool"></a>性能工具
 
@@ -315,7 +331,7 @@ DevTools 为你提供了极大的功能来检查、调试和更改当前显示�
 
 ### <a name="memory-tool"></a>内存工具
 
-请参阅 ["修复内存问题](memory-problems/index.md)"。
+请参阅 [“修复内存问题](memory-problems/index.md)”。
 
 
 ### <a name="application-tool"></a>应用程序工具
@@ -340,14 +356,14 @@ DevTools 为你提供了极大的功能来检查、调试和更改当前显示�
 请参阅 [CSS 概述工具](css/css-overview-tool.md)。
 
 
-### <a name="more-tabs-button"></a>"更多选项卡"按钮
+### <a name="more-tabs-button"></a>“更多选项卡”按钮
 
-若要显示因窗口太窄而打开但隐藏的工具，请单击" **更多"选项卡** (!["更多"选项卡图标。](media/more-tabs-icon-light-theme.png)) 按钮。
+若要显示因窗口太窄而打开但隐藏的工具，请单击“ **更多”选项卡** (![“更多”选项卡图标。](media/more-tabs-icon-light-theme.png)) 按钮。
 
 
-### <a name="more-tools-button"></a>"更多工具"按钮
+### <a name="more-tools-button"></a>“更多工具”按钮
 
-若要将工具添加到工具栏，请单击" **更多工具** (!["更多工具"图标。](media/more-tools-icon-light-theme.png)) 按钮。
+若要将工具添加到工具栏，请单击“ **更多工具** (![”更多工具“图标。](media/more-tools-icon-light-theme.png)) 按钮。
 
 ### <a name="javascript-errors-counter"></a>JavaScript 错误计数器
 
@@ -366,9 +382,9 @@ DevTools 为你提供了极大的功能来检查、调试和更改当前显示�
 
 问题 **计数器** (![问题计数器图标。](media/issues-counter-icon-light-theme.png)) 按钮显示当前网页上自动找到的 HTML 或 CSS 问题数。
 
-**"问题"计数器**的工具提示是 **"打开的问题"以查看 # 问题**。  按钮的图标是蓝色语音气泡图标，后跟 HTML 或 CSS 问题的数量。
+**“问题”计数器**的工具提示是 **“打开的问题”以查看 # 问题**。  按钮的图标是蓝色语音气泡图标，后跟 HTML 或 CSS 问题的数量。
 
-单击 **"问题"计数器** 打开 ["问题](issues/index.md) "工具。
+单击 **“问题”计数器** 打开 [“问题](issues/index.md) ”工具。
 
 
 ### <a name="settings-button"></a>设置按钮
@@ -388,9 +404,9 @@ DevTools 为你提供了极大的功能来检查、调试和更改当前显示�
 请参阅自_定义 DevTools_ 中的[设置](customize/index.md#settings)。
 
 
-### <a name="send-feedback-button"></a>"发送反馈"按钮
+### <a name="send-feedback-button"></a>“发送反馈”按钮
 
-若要打开" **发送反馈** "对话框，请单击" **发送反馈** (!["发送反馈"图标。](media/send-feedback-icon-light-theme.png)) 按钮。  随即打开" **发送反馈** "对话框。  输入信息以描述所发生的情况，并自动包含屏幕截图。  使用 **"发送反馈** "与 DevTools 团队联系，报告问题、问题或提出建议。
+若要打开“ **发送反馈** ”对话框，请单击“ **发送反馈** (![”发送反馈“图标。](media/send-feedback-icon-light-theme.png)) 按钮。  随即打开“ **发送反馈** ”对话框。  输入信息以描述所发生的情况，并自动包含屏幕截图。  使用 **"发送反馈** "与 DevTools 团队联系，报告问题、问题或提出建议。
 
 请参阅[联系 Microsoft Edge DevTools 团队](contact.md)。
 
@@ -403,19 +419,19 @@ DevTools 为你提供了极大的功能来检查、调试和更改当前显示�
 ### <a name="close-devtools-button"></a>关闭 DevTools 按钮
 
 <!-- todo: add icon -->
-单击 **"关闭** DevTools (!["关闭 DevTools"图标。](media/close-devtools-icon-light-theme.png)) DevTools 右上角的按钮关闭 DevTools，并使用整个窗口显示当前网页。
+单击 **“关闭** DevTools (![”关闭 DevTools“图标。](media/close-devtools-icon-light-theme.png)) DevTools 右上角的按钮关闭 DevTools，并使用整个窗口显示当前网页。
 
 
 <!-- ====================================================================== -->
 ## <a name="overview-of-all-tools"></a>所有工具概述
 
-有关每个工具的摘要，请参阅 _"关于工具"列表_中[所有工具的概述](about-tools.md#overview-of-all-tools)。
+有关每个工具的摘要，请参阅 _“关于工具”列表_中[所有工具的概述](about-tools.md#overview-of-all-tools)。
 
 
 <!-- ====================================================================== -->
 ## <a name="tool-tab-or-panel"></a>工具、选项卡或面板
 
-通常可互换使用"tool"、"tab"或"panel"一词。  在命令菜单中，这些工具称为 _面板_;例如，" **元素** "工具称为 **"元素** "面板。  若要切换到 **"元素"** 工具，请选择 **"元素"** 选项卡。 有一个 **"更多工具** " (**+**) 按钮和列表，工具栏上有一个 **"更多"选项卡** 按钮，这两个选项卡都用于选择工具（也称为 _面板_）。
+通常可互换使用“tool”、“tab”或“panel”一词。  在命令菜单中，这些工具称为 _面板_;例如，“ **元素** ”工具称为 **“元素** ”面板。  若要切换到 **“元素”** 工具，请选择 **“元素”** 选项卡。 有一个 **“更多工具** ” (**+**) 按钮和列表，工具栏上有一个 **“更多”选项卡** 按钮，这两个选项卡都用于选择工具（也称为 _面板_）。
 
 可以自定义每个工具，并且工具的内容可以根据上下文进行更改。       
 
@@ -423,11 +439,11 @@ DevTools 为你提供了极大的功能来检查、调试和更改当前显示�
 <!-- ====================================================================== -->
 ## <a name="about-panel-and-drawer-tools"></a>关于面板和工具箱工具
 
-**"更多工具**" () **+** 中列出的工具可以显示为主工具栏) 上的面板工具 (，也可以在抽屉工具栏) 上 (抽屉工具。  在 **命令菜单**中，每个工具都标记为 **面板** 工具或 **抽屉** 工具。  但是，可以将它们添加到主工具栏或抽屉工具栏，并且可以使用以下任一方法来打开它们或在两个工具栏之间移动它们。
+**“更多工具**” () **+** 中列出的工具可以显示为主工具栏) 上的面板工具 (，也可以在抽屉工具栏) 上 (抽屉工具。  在 **命令菜单**中，每个工具都标记为 **面板** 工具或 **抽屉** 工具。  但是，可以将它们添加到主工具栏或抽屉工具栏，并且可以使用以下任一方法来打开它们或在两个工具栏之间移动它们。
 
-使用 **"更多工具** " (**+**) 菜单选择任何面板工具或抽屉工具。  **"更多工具"** 菜单显示在多个位置：
+使用 **“更多工具** ” (**+**) 菜单选择任何面板工具或抽屉工具。  **“更多工具”** 菜单显示在多个位置：
 
-*  在 DevTools 右上角的主工具栏上，单击 **"自定义和控制 DevTools** " (![自定义和控制 DevTools](media/customize-and-control-devtools-icon-light-mode.png)) 按钮，将鼠标悬停在 **"更多工具** "命令上，然后选择一个工具。
+*  在 DevTools 右上角的主工具栏上，单击 **“自定义和控制 DevTools** ” (![自定义和控制 DevTools](media/customize-and-control-devtools-icon-light-mode.png)) 按钮，将鼠标悬停在 **“更多工具** ”命令上，然后选择一个工具。
 
 *  在 DevTools (顶部的主工具栏上， _面板_ 工具通常) 。
 
@@ -435,16 +451,16 @@ DevTools 为你提供了极大的功能来检查、调试和更改当前显示�
 
 | 任务 | 步骤 |
 | --- | --- |
-| 在 DevTools 顶部的主工具栏上打开工具 | 在 DevTools 顶部的主工具栏上，单击" **更多工具** " () **+** ，然后选择一个工具。 |
-| 在抽屉工具栏上打开工具 | 当 DevTools 具有焦点时，按 **Esc** 显示抽屉。  在抽屉工具栏上，单击" **更多工具** " () **+** ，然后选择一个工具。 |
-| 将工具从抽屉工具栏移动到主工具栏 | 当 DevTools 具有焦点时，按 **Esc** 显示抽屉。  在抽屉工具栏上，右键单击工具的选项卡，然后选择 **"移动到顶部**"。 |
-| 将工具从主工具栏移动到抽屉工具栏 | 在主工具栏上，右键单击工具的选项卡，然后选择 **"移到底部**"。 |
-| 在其默认工具栏中打开工具 | 当 DevTools 具有焦点时，按++`Ctrl``P``Shift` (Windows、Linux) 或 `Command``P`++`Shift` (macOS) 打开**命令菜单**。  键入工具的名称，然后选择该工具。 |
+| 在 DevTools 顶部的主工具栏上打开工具 | 在 DevTools 顶部的主工具栏上，单击“ **更多工具** ” () **+** ，然后选择一个工具。 |
+| 在抽屉工具栏上打开工具 | 当 DevTools 具有焦点时，按 **Esc** 显示抽屉。  在抽屉工具栏上，单击“ **更多工具** ” () **+** ，然后选择一个工具。 |
+| 将工具从抽屉工具栏移动到主工具栏 | 当 DevTools 具有焦点时，按 **Esc** 显示抽屉。  在抽屉工具栏上，右键单击工具的选项卡，然后选择 **“移动到顶部**”。 |
+| 将工具从主工具栏移动到抽屉工具栏 | 在主工具栏上，右键单击工具的选项卡，然后选择 **“移到底部**”。 |
+| 在其默认工具栏中打开工具 | 当 DevTools 具有焦点时，按++`Ctrl``P``Shift` (Windows、Linux) 或`Command``P`++`Shift` (macOS) 打开**命令菜单**。  键入工具的名称，然后选择该工具。 |
 
 除了面板工具和抽屉工具，DevTools 还包括以下工具：
-*  **"检查**"工具。  请参阅 [使用"检查"工具通过将鼠标悬停在网页上来检测辅助功能问题](accessibility/test-inspect-tool.md)。
+*  **“检查**”工具。  请参阅 [使用“检查”工具通过将鼠标悬停在网页上来检测辅助功能问题](accessibility/test-inspect-tool.md)。
 *  **设备仿真**工具。  请参阅 [模拟移动设备 (设备仿真) ](device-mode/index.md)。
-*  **命令菜单**。  请参阅[包含 Microsoft Edge DevTools 命令菜单的"运行"命令](command-menu/index.md)。
+*  **命令菜单**。  请参阅[包含 Microsoft Edge DevTools 命令菜单的“运行”命令](command-menu/index.md)。
 
 ### <a name="see-also"></a>另请参阅
 
@@ -458,24 +474,24 @@ DevTools 提供了许多可用于网站的功能和功能。  可以通过多种
 
 ![DevTools 中的命令菜单。](media/devtools-intro-command-menu.msft.png)
 
-在命令菜单中，这些工具称为"面板";例如，" **元素** "工具称为 **"元素** "面板。  若要切换到 **"元素** "工具，请选择" **元素"** 选项卡。
+在命令菜单中，这些工具称为“面板”;例如，“ **元素** ”工具称为 **“元素** ”面板。  若要切换到 **"元素** "工具，请选择" **元素"** 选项卡。
 
 若要打开命令菜单，请执行以下任一操作：
 
-*  单击 **"自定义并控制 DevTools** (![自定义和控制 DevTools](media/customize-and-control-devtools-icon-light-mode.png)) "按钮，然后选择 **"运行"命令**。
+*  单击 **“自定义并控制 DevTools** (![自定义和控制 DevTools](media/customize-and-control-devtools-icon-light-mode.png)) ”按钮，然后选择 **“运行”命令**。
 
 *  按`Ctrl`+`Shift`+`P`（Windows、Linux）或 `Command`+`Shift`+`P` （macOS）。
 
 
-命令菜单允许键入命令以在 DevTools 中显示、隐藏或运行功能。  打开命令菜单后，输入" **更改**"一词，然后选择 **"抽屉：显示更改**"。
+命令菜单允许键入命令以在 DevTools 中显示、隐藏或运行功能。  打开命令菜单后，输入“ **更改**”一词，然后选择 **“抽屉：显示更改**”。
 
-**更改**工具随即打开，这在编辑 CSS 时非常有用。  在这种情况下，命令菜单提供了一个快速的替代方法，即选择 **"更多工具** (...) ，然后选择 **"更改**"，或在 **"源**"工具中编辑`.js`文件，然后右键单击并选择 **"本地修改**"。
+**更改**工具随即打开，这在编辑 CSS 时非常有用。  在这种情况下，命令菜单提供了一个快速的替代方法，即选择 **“更多工具** (...) ，然后选择 **”更改**“，或在 **”源**“工具中编辑`.js`文件，然后右键单击并选择 **”本地修改**”。
 
 键入 **cha** 后，命令菜单将显示以下选项：
 
-![命令菜单显示键入"cha"后的选项，包括"在抽屉中显示更改工具"。](media/devtools-intro-command-menu-show-changes.msft.png)
+![命令菜单显示键入“cha”后的选项，包括“在抽屉中显示更改工具”。](media/devtools-intro-command-menu-show-changes.msft.png)
 
-按 `Enter`下，然后打开 **"更改** "工具：
+按 `Enter`下，然后打开 **“更改** ”工具：
 
 ![打开"更改"工具的 DevTools。](media/devtools-intro-showing-changes.msft.png)
 
@@ -488,7 +504,7 @@ DevTools 提供了许多可用于网站的功能和功能。  可以通过多种
 <!-- todo: add icon -->
 可以自定义 DevTools 以满足工作方式的需求。  若要更改设置，请单击**设置** (右上角的齿轮图标) ，或按。`F1`
 
-在 **"设置** > **参考**"页中，可以更改 DevTools 的多个部分。  例如，可以使用 **"匹配浏览器语言** "设置在 DevTools 中使用浏览器中使用的相同语言。  有关另一个示例，请使用 **Theme** 设置更改 DevTools 的主题。
+在 **“设置** > **参考**”页中，可以更改 DevTools 的多个部分。  例如，可以使用 **"匹配浏览器语言** "设置在 DevTools 中使用浏览器中使用的相同语言。  有关另一个示例，请使用 **Theme** 设置更改 DevTools 的主题。
 
 ![DevTools 中的所有设置。](media/devtools-intro-all-settings.msft.png)
 

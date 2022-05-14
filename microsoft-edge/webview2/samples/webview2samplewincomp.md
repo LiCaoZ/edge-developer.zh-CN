@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: c89bde0caacb9ae84ca19d0f7c6873c357fea9bb
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: b4d39399fb11ede484d904a43d595255f7fec805
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12497014"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514515"
 ---
 # <a name="webview2-sample-win32-c-app-with-visual-composition"></a>WebView2 示例：使用 Visual Composition 的 Win32 C++ 应用
 
@@ -214,7 +214,7 @@ Microsoft。Windows。CppWinRT 包现已安装或更新。  继续执行以下�
 
 <!-- retest: -->
 
-1. 在Visual Studio中，选择 **“调试** > **开始调试**” () `F5` 。
+1. 在Visual Studio中，选择“**调试** > **"开始"菜单调试** () `F5` 。
 
    故障排除：如果在生成项目之前尝试调试，可能会显示一个对话框：“存在生成错误”：
 

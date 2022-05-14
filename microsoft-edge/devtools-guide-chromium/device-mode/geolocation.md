@@ -1,17 +1,17 @@
 ---
 title: 使用传感器工具替代地理位置
-description: 在 DevTools 中打开传感器工具，然后从"地理位置"列表中选择坐标。
+description: 在 DevTools 中打开传感器工具，并从地理位置列表中选择坐标。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 41d5949602f10701a7e4a291f341514987407b8b
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 44caa06d1f8c3fcbcd41e05f83bc5377d0acd914
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431051"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514564"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,24 +28,24 @@ ms.locfileid: "12431051"
    limitations under the License.  -->
 # <a name="override-geolocation-with-the-sensors-tool"></a>使用传感器工具替代地理位置
 
-许多网站利用用户位置来为用户提供更相关的体验。  例如，在用户授予网站访问当前用户位置的权限后，天气网站可能会显示用户区域中的本地天气预报。
+许多网站利用用户位置，为用户提供更相关的体验。  例如，在用户授予网站访问当前用户位置的权限后，天气网站可能会在用户区域中显示本地预测。
 
 <!--todo: add link to user location section when available -->
 
-如果您要构建的 UI 根据用户所在的位置而更改，您可能需要确保网站在世界各地的不同位置正常运行。  若要在 DevTools 中覆盖Microsoft Edge地理位置：
+如果要生成根据用户所在位置而更改的 UI，可能需要确保站点在世界各地的不同位置正常运行。  若要在 Microsoft Edge DevTools 中替代地理位置：
 
-1. 按 `Ctrl``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
+1. 按“`Ctrl`+`Shift`+`P`”(Windows、Linux)或“`Command`+`Shift`+`P`”(macOS)以打开“**命令菜单**”。
 
-   :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单的屏幕截图。":::
+   ![命令菜单。](../media/device-mode-console-command-menu.msft.png)
 
-1. 键入 `sensors`，选择 **面板：显示传感器**，然后按 `Enter`。  传感器 **工具** 在 DevTools 窗口底部打开。
+1. 键 `sensors`入，选择 **“面板：显示传感器**”，然后按下 `Enter`。  **传感器**工具在 DevTools 窗口底部打开。
 
-1. 单击 **"地理位置"** 列表，然后：
-   *  选择城市，例如 `Tokyo`。
-   *  单击 **"其他** "输入自定义经度和纬度坐标。
-   *  单击 **"** 位置不可用"以查看当用户的位置不可用时网站的行为方式。
+1. 单击 **“位置”** 下拉列表，然后：
+   *  选择一个城市，例如 `Tokyo`。
+   *  单击 **“其他** ”以输入自定义经度和纬度坐标。
+   *  单击 **“位置不可用** ”以查看当用户位置不可用时网站的行为。
 
-   :::image type="content" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="从地理位置列表中选择东京的屏幕截图。":::
+   ![从“位置”列表中选择“东京”。](../media/device-mode-console-sensors-geolocation-tokyo.msft.png)
 
 <!-- /web/fundamentals/native-hardware/user-location/index -->
 

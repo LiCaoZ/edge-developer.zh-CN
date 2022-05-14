@@ -7,26 +7,13 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 no-loc:
 - Enable webhint
-- Enable Network Console
-- Source Order Viewer
-- Enable Composited Layers in 3D View
-- Enable new Font Editor tool within the Styles pane
-- Enable new CSS Flexbox debugging features
-- Enable + button tab menus to open more tools
-- Enable Welcome tab
-- 3D View
-- Turn on support to move tabs between panels
-- Match keyboard shortcuts in DevTools to Microsoft Visual Studio Code
-- Edit keyboard shortcuts for any action in DevTools
-- Turn on new CSS grid debugging features
-- 'Emulation: Support dual screen mode'
-ms.date: 04/12/2022
-ms.openlocfilehash: 1cdf7c7300d4b53f6141fe9afc76af4880cf43a5
-ms.sourcegitcommit: 3e6de1ad86f44a667c0fcf1f40013f11f70e78e4
+ms.date: 04/15/2022
+ms.openlocfilehash: c07b6109821119b67c0a557f5c53e140f880eae2
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "12478257"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514550"
 ---
 # <a name="experimental-features"></a>试验功能
 
@@ -216,11 +203,11 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 
 <!-- ====================================================================== -->
-## <a name="show-csp-violations-view"></a>显示 CSP 冲突视图
+## <a name="show-csp-violations-view"></a>显示云解决方案提供商冲突视图
 
-添加 **CSP 冲突** 工具，该工具显示在检查的网页上检测到的任何内容安全策略 (CSP) 冲突。
+添加**云解决方案提供商冲突**工具，该工具显示在检查的网页上检测到的任何内容安全策略 (云解决方案提供商) 冲突。
 
-![CSP 冲突工具。](index-images/csp-violations-tool.png)
+![云解决方案提供商冲突工具。](index-images/csp-violations-tool.png)
 
 *  此复选框位于“稳定”v100 Microsoft Edge中。
 *  此复选框位于 canary v102 Microsoft Edge中。
@@ -300,11 +287,21 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 <!-- ====================================================================== -->
 ## <a name="enable-new-advanced-perceptual-contrast-algorithm-apca-replacing-previous-contrast-ratio-and-aaaaa-guidelines"></a>启用新的高级感知对比度算法 (APCA) 替换以前的对比度和 AA/AAA 准则
 
-启用新的高级感知对比度算法 (APCA) ，替换以前的对比度和 AA/AAA 准则。
-<!-- Needs content. -->
+[高级感知对比度算法 (APCA) ](https://w3c.github.io/silver/guidelines/methods/Method-font-characteristic-contrast.html)替换颜色选取器中的 [AAAAA](https://www.w3.org/WAI/WCAG21/quickref#contrast-enhanced) [](https://www.w3.org/WAI/WCAG21/quickref#contrast-minimum)/ 指南对比度。  颜色选取器在 **“元素**”工具的“**样式**”选项卡中使用。
+
+APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式研究。  与 AA/AAA 准则相比，APCA 更依赖于上下文。  对比度是根据文本、颜色和上下文的以下空间属性计算的。
+
+*  文本的空间属性，包括字体粗细和大小。
+*  颜色的空间属性，包括文本和背景之间的感知对比度。
+*  上下文的空间属性，包括环境光线、周围环境和预期用途。
 
 *  此复选框位于“稳定”v100 Microsoft Edge中。
 *  此复选框位于 canary v102 Microsoft Edge中。
+
+另请参阅：
+* [新的颜色对比度计算 - 高级感知对比度算法 (APCA) ](../whats-new/2021/01/devtools.md#new-color-contrast-calculation---advanced-perceptual-contrast-algorithm-apca) _在 DevTools 中的新增功能 (Microsoft Edge 89) _。
+* 使用 _CSS 功能引用_中的[颜色选取器更改颜色](../css/reference.md#change-colors-with-the-color-picker)。
+* [使用颜色选取器测试文本颜色对比度](../accessibility/color-picker.md)
 
 
 <!-- ====================================================================== -->

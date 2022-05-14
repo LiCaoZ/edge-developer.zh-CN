@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/17/2021
-ms.openlocfilehash: 5b558315c0388f9f9a73433504f7bc3c04573744
-ms.sourcegitcommit: 2f70d4c811e9099ca34eabfb172fd237c3884d53
+ms.openlocfilehash: d80713bba5977567155b501dc74957ad72e03917
+ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "12510939"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "12514852"
 ---
 # <a name="microsoft-edge-add-ons-store-developer-policies"></a>Microsoft Edge 加载项商店开发人员策略
 
