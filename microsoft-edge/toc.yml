@@ -82,7 +82,7 @@
               displayName: 'what''s new, announcements'
         - name: 实验功能
           items:
-            - name: 实验性功能概述
+            - name: 实验功能
               href: devtools-guide-chromium/experimental-features/index.md
               displayName: 'Experimental features, settings'
             - name: 使用专注模式简化开发工具
@@ -219,6 +219,9 @@
                   displayName: Animations tool
             - name: 用于存储的应用程序工具
               items:
+                - name: 用于管理存储的应用程序工具
+                  href: devtools-guide-chromium/storage/application-tool.md
+                  displayName: Application tool
                 - name: 查看、编辑和删除 Cookie
                   href: devtools-guide-chromium/storage/cookies.md
                   displayName: Application tool
@@ -382,6 +385,9 @@
                   displayName: Quick source tool
             - name: 呈现工具
               items:
+                - name: 呈现工具，查看具有不同显示选项或视觉缺陷的网页外观
+                  href: devtools-guide-chromium/rendering-tools/rendering-tool.md
+                  displayName: Rendering tool
                 - name: 在呈现的页面中模拟深色或浅色方案
                   href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
                   displayName: Rendering tool
@@ -517,7 +523,7 @@
                   displayName: Inspect tool
                 - name: 验证所有元素状态可访问性
                   href: devtools-guide-chromium/accessibility/test-inspect-states.md
-                  displayName: 'Elements tool, Styles tab, hov Toggle Element State'
+                  displayName: 'Elements tool, Styles tab, hov, Toggle Element State, Force element state'
                 - name: 检查深色主题和浅主题的对比度问题
                   href: devtools-guide-chromium/accessibility/test-dark-mode.md
                   displayName: 'Rendering tool, dark mode, light mode, dark scheme, light scheme'
