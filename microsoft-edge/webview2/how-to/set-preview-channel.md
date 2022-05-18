@@ -7,15 +7,17 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 7d4fee6d9588bad84b87a0e687aaf8cc9941edf3
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: e754c28b9015e0c4d3ac5ad502e6bdac259f403f
+ms.sourcegitcommit: cec099622d1f9885178915d0b9cb664d71d923e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12497105"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "12520159"
 ---
 # <a name="test-upcoming-apis-and-features"></a>测试即将推出的 API 和功能
 <!-- old title: # Switch to a preview channel to test upcoming APIs and features -->
+
+<!-- todo: update behavior description -->
 
 若要测试即将推出的 API 和功能，请切换到预览频道，如下所示。
 

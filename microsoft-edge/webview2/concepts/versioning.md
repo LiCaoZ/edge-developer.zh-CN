@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 08/03/2021
-ms.openlocfilehash: d3314c3cdb116a25aead31227099ed82a5ea275d
-ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
+ms.openlocfilehash: c2738d84229051346844e02e0acaaadb9ba36073
+ms.sourcegitcommit: cec099622d1f9885178915d0b9cb664d71d923e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "12473790"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "12520131"
 ---
 # <a name="understand-the-different-webview2-sdk-versions"></a>了解不同的 WebView2 SDK 版本
 
@@ -93,15 +93,31 @@ SDK _发布_ 包中的 WebView2 API 是稳定且向前兼容的。  使用生成
 <!-- ====================================================================== -->
 ## <a name="experimental-apis"></a>实验性 API
 
+若要试用即将开发的新功能，请使用实验性 API。  实验性 API 包含在 WebView2 SDK 的预发行版本中，但不包含在 WebView2 SDK 的发布版本中。
+
+
+### <a name="developing-with-experimental-apis-and-providing-feedback"></a>使用实验性 API 进行开发并提供反馈
+
 WebView2 SDK _预发行_ 包中的实验性 API 不能保证是向前兼容的，并且可能会在将来的运行时更新中删除。  当 WebView2 SDK 的_预发行_版本最初可用时，该 SDK 仅适用于Microsoft Edge Canary。  不久之后，预发行版 SDK 也适用于 Beta 和 Dev 通道。  使用预发行版 SDK 尽早试用新的 API，并在提升新 API 成为稳定且向前兼容的 API 之前提供反馈。
 
-若要完全支持实验性 API，请使用Microsoft Edge预览频道，而不是 WebView2 常青运行时。  预发行版 SDK 中的任何实验性 API 都不能保证是向前兼容的。  SDK _版本_ 中的 API 是向前兼容的。  有关详细信息，请参阅上述 [API 的向前兼容性](#forward-compatibility-of-apis) 。
+若要完全支持实验性 API，请使用Microsoft Edge预览频道，而不是 WebView2 常青运行时。  预发行版 SDK 中的任何实验性 API 都不能保证是向前兼容的。  SDK _版本_ 中的 API 是向前兼容的。  有关详细信息，请参阅上述 [API 的转发兼容性](#forward-compatibility-of-apis)。
 
 WebView2 团队正在寻求有关实验性 WebView2 API 的反馈，这些 API 可能会在将来的版本中升级到“稳定”。  在 WebView2 SDK 参考文档中，实验性 API 指示为“实验性”。
 
 若要帮助你评估实验性 API 并共享反馈，请使用 [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) 存储库。
 
-避免在生产应用中使用实验性 API。  在 SDK 的后续版本中，可能会修改、删除或添加实验性 API。  将 API 发布为稳定且公开后，在已弃用状态下的两个版本支持该 API 的实验版本。
+
+### <a name="moving-from-experimental-apis-to-stable-apis"></a>从实验性 API 移动到稳定 API
+
+将 API 从试验性 API 移动到稳定 API 后，需要将应用的代码移动到稳定的 API。  不建议对生产应用使用实验性 API。  将应用从使用实验性 API 移到使用稳定 API 时，请遵循以下做法：
+
+*  在Visual Studio的项目中，更新 WebView2 SDK 包版本。  请参阅在_为 WebView2 设置开发环境_时[安装 WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk)。
+
+*  更新应用的代码以使用稳定的 API，而不是针对 COM)  (实验性 API。  稳定 API 将支持 bug 修复，但实验性 API 将被弃用，并且在较新的 SDK 中不可用。  将 API 发布为稳定后，在已弃用状态下的两个版本支持该 API 的实验版本。  在 SDK 的后续版本中，可能会修改、删除或添加实验性 API。
+
+*  始终使用功能检测，以确保稳定 API 在用户版本的 WebView2 运行时中实现。  请参阅 [功能检测，以测试安装的运行时是否支持最近添加的 API](#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis)，如下所示。
+
+*  仅适用于 .NET 的说明：在预发行版 WebView2 SDK 中，如果用户的 WebView2 运行时只有实验性 API 实现且没有稳定的 API 实现，则 .NET 稳定 API 将回退到相应的实验性 API。
 
 
 <!-- ====================================================================== -->
