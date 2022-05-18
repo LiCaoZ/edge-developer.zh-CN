@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/05/2022
-ms.openlocfilehash: 1e39d0d88457aac67f5ee12f063d815c93d8d50f
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 4dfd3586991f941c824d9e4bc560f0b4c7460a8e
+ms.sourcegitcommit: d25284aa8d34a4120011637e76a6ad72c5de0da0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514067"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "12519983"
 ---
 # <a name="videos-about-web-development-with-microsoft-edge"></a>有关使用 Microsoft Edge 进行 Web 开发的视频
 
@@ -33,6 +33,22 @@ To add a new video:
 - Add a markdown image below the date, with the thumbnail you added before, and link this image tag to the YouTube video.
 - Place the description below that, fixing any links that came from YouTube and that might have been shortened.
 -->
+
+
+<!-- ====================================================================== -->
+## <a name="web-platform---create-a-scroll-linked-animation-without-javascript"></a>Web 平台 - 创建没有 JavaScript 的滚动链接动画
+
+_发布于 2022 年 5 月 12 日。_
+
+[![T滚动链接动画 API 视频的 humbnail 图像](./images/scroll-linked-animations.png)](https://www.youtube.com/watch?v=Q0nhiHVVnvI)
+
+了解即将推出的 CSS 滚动链接动画功能，以及如何在不使用 JavaScript 的情况下在网页上创建读取进度指示器。
+
+CSS 滚动链接动画是Microsoft Edge中的一项实验性功能。  若要尝试此功能，请转到 `edge://flags` 并启用 **实验性 Web 平台功能** 设置。
+
+若要播放视频中显示的演示应用程序，请参阅呈现的 [阅读器演示](https://microsoftedge.github.io/Demos/reader/) 及其 [源代码](https://github.com/MicrosoftEdge/Demos/tree/main/reader)。
+
+若要详细了解 CSS 滚动链接动画功能，请参阅 MDN [中的@scroll时间线](https://developer.mozilla.org/en-US/docs/Web/CSS/@scroll-timeline) 。
 
 
 <!-- ====================================================================== -->
