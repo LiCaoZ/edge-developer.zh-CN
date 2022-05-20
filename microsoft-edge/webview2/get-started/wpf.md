@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 4fbd1abed5709040086bd0d583a1d1e16ef4dddd
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: 71ce99e582393b872b59af993a1098ecdb0570c5
+ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12496741"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "12520904"
 ---
 # <a name="get-started-with-webview2-in-wpf-apps"></a>WPF 应用中的 WebView2 入门
 
@@ -40,13 +40,14 @@ ms.locfileid: "12496741"
 
    建议使用Microsoft Edge的 Canary 通道。  所需的最低版本为 82.0.488.0。
 
-<!-- Or, download the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section), or  -->
+<!-- Or, download the [WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section), or  -->
+<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->
 
 
 <!-- ====================================================================== -->
 ## <a name="step-3---create-a-single-window-webview2-app"></a>步骤 3 - 创建单窗口 WebView2 应用
 
-从包含单个主窗口的基本桌面项目开始。
+"开始"菜单包含单个主窗口的基本桌面项目。
 
 1. 打开 Microsoft Visual Studio。 
 
@@ -387,9 +388,9 @@ maintenance link (keep)
 
 主机和 Web 内容可以使用以下方式进行 `postMessage`通信：
 
-*  WebView2 控件中的 Web 内容可以使用 `window.chrome.webview.postMessage`以下方式将消息发布到主机。  主机使用在主机上注册 `WebMessageReceived` 的任何消息来处理消息。
+*  WebView2 控件中的 Web 内容可以使用 `window.chrome.webview.postMessage`>a0>帖子消息发送给主机。  主机使用在主机上注册 `WebMessageReceived` 的任何消息来处理消息。
 
-*  主机使用或`CoreWebView2.PostWebMessageAsJSON`将消息发布到 WebView2 控件`CoreWebView2.PostWebMessageAsString`中的 Web 内容。 邮件由添加到 `window.chrome.webview.addEventListener`的处理程序捕获。
+*  在 WebView2 控件中使用或`CoreWebView2.PostWebMessageAsJSON`将`CoreWebView2.PostWebMessageAsString`消息帖子到 Web 内容。 邮件由添加到 `window.chrome.webview.addEventListener`的处理程序捕获。
 
 通信机制使用本机功能将消息从 Web 内容传递到主机。
 
@@ -461,7 +462,8 @@ maintenance link (keep)
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - developer.microsoft.com 的 WebView2 功能的初始简介。
+developer.microsoft.com：
+* [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2)<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> - developer.microsoft.com 的 WebView2 功能的初始简介。
 
 本地页面：
 * [WebView2 示例：WPF .NET 浏览器应用](../samples/webview2wpfbrowser.md)

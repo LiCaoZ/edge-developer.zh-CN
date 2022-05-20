@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
-ms.openlocfilehash: 031dcc393fccb601bcdb753c5b4dbf00630fac3e
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 4673cd3927b40090a61c8e9f08658ebe759e6130
+ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514886"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "12521086"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -40,7 +40,7 @@ ms.locfileid: "12514886"
 
 Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上受到支持。  直接从 [Microsoft Edge 预览体验成员网站](https://www.microsoftedgeinsider.com/download?platform=linux) 下载并安装 Microsoft Edge Dev `.deb` 或 `.rpm` 程序包，或使用 Linux 发行版的标准程序包管理工具。
 
-如果在持续集成和交付 （CI/CD） 解决方案中使用 Linux 环境，则 Linux 上也提供 Microsoft Edge WebDriver。  若要开始使用 Microsoft Edge WebDriver 自动执行Microsoft Edge，请 [参阅 Microsoft Edge WebDriver 下载页面](https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads)。  有关使用 Microsoft Edge WebDriver 自动Microsoft Edge的帮助，请参 [阅使用 WebDriver 进行测试自动化](../../../../webdriver-chromium/index.md)。
+如果在持续集成和交付 （CI/CD） 解决方案中使用 Linux 环境，则 Linux 上也提供 Microsoft Edge WebDriver。  若要开始使用 Microsoft Edge WebDriver 自动执行Microsoft Edge，请 [参阅 Microsoft Edge WebDriver 下载页面](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver#downloads)。<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->  有关使用 Microsoft Edge WebDriver 自动Microsoft Edge的帮助，请参 [阅使用 WebDriver 进行测试自动化](../../../../webdriver-chromium/index.md)。
 
 ![Microsoft Edge Linux 版中的 DevTools。](../../media/2020/11/edge-on-linux.msft.png)
 

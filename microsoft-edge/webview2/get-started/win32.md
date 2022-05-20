@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 80472473460e1c7d2e66367f7470b5972581710f
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 9e1cec666ceb61828b1cabd98d7beb2ca74df04b
+ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514837"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "12521107"
 ---
 # <a name="get-started-with-webview2-in-win32-apps"></a>Win32 应用中的 WebView2 入门
 
@@ -696,8 +696,8 @@ maintenance link (keep)
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-Developer.microsoft.com：
-* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - developer.microsoft.com 的 WebView2 功能的初始简介。
+developer.microsoft.com：
+* [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2)<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> - developer.microsoft.com 的 WebView2 功能的初始简介。
 
 本地页面：
 * [WebView2 示例：Win32 C++ 应用](../samples/webview2apissample.md)

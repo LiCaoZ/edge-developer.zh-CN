@@ -26,7 +26,8 @@ Microsoft 及任何创作人保留所有其他权利（无论是其各自的版�
 
 如果想要包括新的覆盖范围或提供反馈，请考虑 [参与](CONTRIBUTING.md)。  可以编辑现有内容、添加新内容或报告新 [问题](https://github.com/MicrosoftDocs/edge-developer/issues)。  Microsoft Edge团队会查看建议，并努力将建议合并到文档中。
 
-在以下位置查找[“状态”](https://developer.microsoft.com/microsoft-edge/status)网页的数据。 [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status)  该`Status`网页提供Microsoft Edge中 Web 平台功能的最新实现状态和未来计划。
+有关Microsoft Edge中 Web 平台功能的最新实现状态和未来计划，[请参阅Microsoft Edge平台状态](https://developer.microsoft.com/en-us/microsoft-edge/status)。<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> 有关用于填充上述状态站点的数据，请参阅 [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status)。
+
 
 ### <a name="file-names-and-directories"></a>文件名和目录
 

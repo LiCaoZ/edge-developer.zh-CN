@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/07/2021
-ms.openlocfilehash: e95f91c14c65e754079d0e9f23a96e27b68594ae
-ms.sourcegitcommit: c264a31a0809cacec22a42214f7949bba85e6b51
+ms.openlocfilehash: 6a54ebe5b380c585ef8aa1123ffbd722951eed79
+ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "12472912"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "12521093"
 ---
 # <a name="microsoft-edge-add-ons-released-features"></a>Microsoft Edge 加载项已发布功能
 
@@ -34,7 +34,7 @@ ms.locfileid: "12472912"
 <!-- ====================================================================== -->
 ## <a name="microsoft-edge-extensions-developer-portal"></a>Microsoft Edge扩展开发人员门户
 
-开发人员门户的新版本包含有关Microsoft Edge扩展的相关资源和文档。 有关详细信息，请参阅[Microsoft Edge加载项开发人员](https://developer.microsoft.com/microsoft-edge/extensions/)。
+开发人员门户的新版本包含有关Microsoft Edge扩展的相关资源和文档。 有关详细信息，请参阅[Microsoft Edge加载项开发人员](https://developer.microsoft.com/en-us/microsoft-edge/extensions/)。<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->
 
 *发布日期：2022 年 1 月*
 
@@ -82,7 +82,7 @@ Microsoft Edge加载项现在支持使用清单 V3 的扩展。 有关详细信�
 <!-- ====================================================================== -->
 ## <a name="request-to-get-your-extension-featured"></a>请求以获得扩展功能
 
-开发人员可以请求集合，其中的扩展应在Microsoft Edge加载项存储中提供。 可以在"提交"请求处提交[请求，以便将扩展添加到Microsoft Edge加载项主页上的集合](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u)。
+开发人员可以请求集合，其中的扩展应在Microsoft Edge加载项存储中提供。 可以在“提交”请求处提交[请求，以便将扩展添加到Microsoft Edge加载项主页上的集合](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u)。
 
 *发布日期：2021 年 4 月*
 

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: ed4540fe0cbfadb515b192b9acf04419b643c58d
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: 0847c577dabb0eacfef823336953e62c0b98ddd0
+ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12497112"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "12521058"
 ---
 # <a name="set-up-your-dev-environment-for-webview2"></a>为 WebView2 设置开发环境
 
@@ -44,7 +44,7 @@ ms.locfileid: "12497112"
 <!-- ====================================================================== -->
 ## <a name="install-the-webview2-runtime"></a>安装 WebView2 运行时
 
-1. （可选）安装 [WebView2 运行时](https://developer.microsoft.com/microsoft-edge/webview2)。
+1. （可选）安装 [WebView2 运行时](https://developer.microsoft.com/en-us/microsoft-edge/webview2)。<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->
 
 如果不确定，请跳过此步骤;可以改用上一步中的Microsoft Edge预览频道。
 

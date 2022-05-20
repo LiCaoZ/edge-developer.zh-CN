@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 08/03/2021
-ms.openlocfilehash: c2738d84229051346844e02e0acaaadb9ba36073
-ms.sourcegitcommit: cec099622d1f9885178915d0b9cb664d71d923e9
+ms.openlocfilehash: 6fe805d89aaaac75c846d0abefbc7cc2c6ca48fa
+ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "12520131"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "12521002"
 ---
 # <a name="understand-the-different-webview2-sdk-versions"></a>了解不同的 WebView2 SDK 版本
 
@@ -125,8 +125,7 @@ WebView2 团队正在寻求有关实验性 WebView2 API 的反馈，这些 API �
 
 在 Evergreen 分发方法中，客户端的 WebView2 运行时会自动更新到可用的最新版本。  但是，用户或 IT 管理员可能会选择阻止自动更新 WebView2 运行时。  客户端上生成的过时的运行时可能会导致与使用最近 SDK 中的新 API 的更新 WebView2 应用的兼容性问题。
 
-如果在客户端上阻止更新 WebView2 运行时，请确保知道应用所需的 [WebView2 运行时](https://developer.microsoft.com/microsoft-edge/webview2/) 的最小内部版本号。  支持 SDK 正式发布所需的最低运行时版本 (内部版本 616) 早于最新运行时。
-最新的运行时支持最新 SDK 版本中的所有 API。  
+如果在客户端上阻止更新 WebView2 运行时，请确保知道 [WebView2 运行时](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)的最小生成号<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> 这是应用所必需的。  支持 SDK 正式发布所需的最低运行时版本 (内部版本 616) 早于最新运行时。  最新的运行时支持最新 SDK 版本中的所有 API。
 
 若要检查 SDK 的特定内部版本号与运行时或Microsoft Edge预览频道之间的兼容性，请参阅 [WebView2 SDK 的发行说明](../release-notes.md)。
 

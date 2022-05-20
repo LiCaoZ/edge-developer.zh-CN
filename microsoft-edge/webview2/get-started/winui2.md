@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 884320f3d695102c51f8a3ff5b4ea79aca895e57
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: 100d4dfc804b518af946ddb156187027503549f3
+ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12496811"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "12520918"
 ---
 # <a name="get-started-with-webview2-in-winui-2-uwp-apps-public-preview"></a>WinUI 2 (UWP) 应用中的 WebView2 入门（公共预览版）
 
@@ -106,7 +106,7 @@ WinUI 2 仅支持 UWP。  这些控件是向后兼容的。
 
    ![Visual Studio 安装程序工作。](media/winui2-vs-installer-working.png)
 
-   这可能需要几分钟时间。  在新窗口或选项卡中，可以在 [Microsoft Edge WebView2 上](https://developer.microsoft.com/microsoft-edge/webview2)查看顶级概述 - developer.microsoft.com 的 WebView2 功能的初始简介。
+   这可能需要几分钟时间。  在新窗口或选项卡中，可以在 [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2) 中查看顶级概述<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> - developer.microsoft.com 的 WebView2 功能的初始简介。
 
    完成Visual Studio 安装程序后，返回到此页面并继续执行以下步骤。
 
@@ -278,7 +278,7 @@ WinUI 2 仅支持 UWP。  这些控件是向后兼容的。
 
 ### <a name="build-and-test-the-webview2-project"></a>生成并测试 WebView2 项目
 
-1. 单击 **“调试** > **开始调试**”。  应用窗口随即打开，简要显示 WebView2 WebUI 网格：
+1. 单击 **“调试** > **"开始"菜单调试**。  应用窗口随即打开，简要显示 WebView2 WebUI 网格：
 
    ![在调试期间，WebView2 WebUI 网格会短暂显示。](media/winui2-getting-started-webview2-grid.png)
 

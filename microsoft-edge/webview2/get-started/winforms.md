@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 32453733a8a867a5afb321fc705d3289d3b5dd83
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 112bb0f2004ea843af203805b06ad15a7c2577e9
+ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514298"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "12520981"
 ---
 # <a name="get-started-with-webview2-in-winforms-apps"></a>WinForms 应用中的 WebView2 入门
 
@@ -61,7 +61,7 @@ Microsoft Visual Studio是必需的。  本教程不支持Microsoft Visual Studi
 <!-- ====================================================================== -->
 ## <a name="step-4---install-the-webview2-runtime-optional"></a>步骤 4 - 安装 WebView2 运行时 (可选) 
 
-1. （可选）安装 [WebView2 运行时](https://developer.microsoft.com/microsoft-edge/webview2)。
+1. （可选）安装 [WebView2 运行时](https://developer.microsoft.com/en-us/microsoft-edge/webview2)。<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->
 
    如果不确定，请跳过此步骤;可以改用上一步中的Microsoft Edge预览频道。
   
@@ -591,7 +591,8 @@ maintenance link (keep)
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - developer.microsoft.com 的 WebView2 功能的初始简介。
+developer.microsoft.com：
+* [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2)<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> - developer.microsoft.com 的 WebView2 功能的初始简介。
 
 本地页面：
 * [WebView2 示例：WinForms 浏览器应用](../samples/webview2windowsformsbrowser.md) - 演示的 WebView2 API 比本教程多。

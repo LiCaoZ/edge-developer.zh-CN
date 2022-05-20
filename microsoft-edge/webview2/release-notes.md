@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 05/09/2022
-ms.openlocfilehash: ded82a47113181a3838840fd322841e3963a4af6
-ms.sourcegitcommit: a71bd7bca08f5468b8be32187f0a8ff44c158db2
+ms.openlocfilehash: bcd71c3b016b2c400efe73c55bfd68d1317c41d2
+ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "12508541"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "12520911"
 ---
 # <a name="release-notes-for-the-webview2-sdk"></a>WebView2 SDK 发行说明
 
@@ -81,8 +81,8 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 * [服务器证书 API](/microsoft-edge/webview2/reference/win32/icorewebview2_14?view=webview2-1.0.1248-prerelease&preserve-view=true) 提供一个选项，用于在应用程序级别信任服务器的 TLS 证书，并在不提示用户了解 TLS 或提供取消 Web 请求的功能的情况下呈现页面。
 
 * [ClearBrowsingData API](/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1248-prerelease&preserve-view=true) 允许开发人员以编程方式清除持续时间内的特定数据类型：
-    * `clearBrowsingDataInTimeRange`
-    * `clearBrowsingDataAll`
+   * `clearBrowsingDataInTimeRange`
+   * `clearBrowsingDataAll`
 
 #### <a name="bug-fixes"></a>Bug 修复
   
@@ -1018,7 +1018,7 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 ### <a name="general"></a>概要
 
 > [!IMPORTANT]
-> **公告**：.NET WPF/WinForms WebView2 SDK 现已正式发布 (GA) 。  从此版本开始，发布 SDK 是向前兼容的。  有关详细信息，请参阅 [GA 公告博客文章](https://devblogs.microsoft.com/dotnet/announcing-general-availability-for-microsoft-edge-webview2-for-net-and-fixed-distribution-method)。
+> **公告**：.NET WPF/WinForms WebView2 SDK 现已正式发布 (GA) 。  从此版本开始，发布 SDK 是向前兼容的。  有关详细信息，请参阅 [GA 公告博客帖子](https://devblogs.microsoft.com/dotnet/announcing-general-availability-for-microsoft-edge-webview2-for-net-and-fixed-distribution-method)。
 
 #### <a name="features"></a>功能
 
@@ -1043,7 +1043,7 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 ### <a name="general"></a>概要
 
-*  添加 [了 NavigateWithWebResourceRequest](/microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-1.0.674-prerelease&preserve-view=true#navigatewithwebresourcerequest) 方法，用于在导航过程中提供发布数据或其他请求标头。
+*  添加[了 NavigateWithWebResourceRequest](/microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-1.0.674-prerelease&preserve-view=true#navigatewithwebresourcerequest) 方法，用于在导航过程中提供帖子数据或其他请求标头。
 *  添加了在加载和分析初始 HTML 文档时运行的 [DOMContentLoaded](/microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-1.0.674-prerelease&preserve-view=true#add_domcontentloaded) 事件。
 *  在 WebView2 上添加了 [Environment](/microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-1.0.674-prerelease&preserve-view=true#get_environment) 属性。  此属性公开创建 WebView2 实例的 WebView2 环境。
 *  添加了 [Cookie 管理](/microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-1.0.674-prerelease&preserve-view=true#get_cookiemanager) API，使开发人员能够对 WebView2 会话进行身份验证，或从 WebView2 检索 Cookie 以对其他工具进行身份验证。  WebView2 团队计划进行特定于语言或框架的改进。  请参阅 [API 审阅：Cookie 管理](https://github.com/MicrosoftEdge/WebView2Announcement/issues/2)。
@@ -1078,9 +1078,9 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 ### <a name="general"></a>概要
 
 > [!IMPORTANT]
-> **公告**：Win32 C/C++ WebView2 现已正式发布 (GA) 。  从此版本开始，发布 SDK 是向前兼容的。  请参阅 [GA 公告博客文章](https://blogs.windows.com/msedgedev/edge-webview2-general-availability)。
+> **公告**：Win32 C/C++ WebView2 现已正式发布 (GA) 。  从此版本开始，发布 SDK 是向前兼容的。  请参阅 [GA 公告博客帖子](https://blogs.windows.com/msedgedev/edge-webview2-general-availability)。
 
-*  Evergreen WebView2 运行时和安装程序为 GA。  Microsoft Edge [WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) 上提供了启动程序、Bootstrapper 的下行链接以及 Evergreen WebView2 运行时的独立安装程序。  [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples)中也提供了安装工作流的示例代码。
+*  Evergreen WebView2 运行时和安装程序为 GA。  Microsoft Edge [WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) 上提供了启动程序、Bootstrapper 的下行链接以及 Evergreen WebView2 运行时的独立安装程序。<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->  [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples)中也提供了安装工作流的示例代码。
 
 有关运行时、常青版分发和固定版本分发的详细信息，请参 [阅分发应用和 WebView2 运行时](concepts/distribution.md)。
 
