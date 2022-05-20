@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 14679efb0ec2976a8b1461a080d67815de911ec5
-ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
+ms.openlocfilehash: e5c8000c17f92966e8ee289d8474b1f9d8a75b86
+ms.sourcegitcommit: 62f55a8303644d4d3f2ea29e624efcc54f465aa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/20/2022
-ms.locfileid: "12520897"
+ms.locfileid: "12521855"
 ---
 # <a name="get-started-with-webview2-in-winui-3-windows-app-sdk-apps"></a>在 WinUI 3 (Windows 应用 SDK) 应用中使用 WebView2 开始
 
@@ -43,7 +43,7 @@ ms.locfileid: "12520897"
 <!-- ====================================================================== -->
 ## <a name="step-2---install-a-preview-channel-of-microsoft-edge"></a>步骤 2 - 安装预览频道Microsoft Edge
 
-1. 安装 [WebView2 运行时](https://developer.microsoft.com/en-us/microsoft-edge/webview2)<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> 或安装在 Windows 10 版本 1803 (内部版本 17134) 或更高版本 (Beta、Dev 或 Canary) 的任何Microsoft Edge[预览频道](https://www.microsoftedgeinsider.com/download)。
+1. 在版本 1803 (内部版本 17134) 或更高版本 Windows 10上安装 [WebView2 运行时](https://developer.microsoft.com/microsoft-edge/webview2)或任何Microsoft Edge[预览频道](https://www.microsoftedgeinsider.com/download) (Beta、Dev 或 Canary) 。
 
 从该页返回并继续以下步骤。
 
@@ -380,7 +380,7 @@ WinRT `CoreWebView2` 对象可能无法与 WebView2 API 的版本一起使用。
 ## <a name="see-also"></a>另请参阅
 
 developer.microsoft.com：
-* [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2)<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> - developer.microsoft.com 的 WebView2 功能的初始简介。
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - developer.microsoft.com 的 WebView2 功能的初始简介。
 
 本地页面：
 * [Microsoft Edge WebView2 简介](../index.md) - 功能概述。

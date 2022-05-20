@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 11/19/2021
-ms.openlocfilehash: c32ba4e260f5fa0777a6509268473172927981cf
-ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
+ms.openlocfilehash: a99670f345668d0a5c0d3dba40d2e57381b2f801
+ms.sourcegitcommit: 62f55a8303644d4d3f2ea29e624efcc54f465aa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/20/2022
-ms.locfileid: "12521037"
+ms.locfileid: "12521862"
 ---
 # <a name="get-started-with-progressive-web-apps"></a>渐进式 Web 应用入门
 
@@ -189,7 +189,7 @@ Web 应用现在有一个使用缓存优先策略的服务辅助角色。  新�
 
 ### <a name="cross-browser-compatibility"></a>跨浏览器兼容性
 
-测试应用是否具有 [跨浏览器兼容性](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing)。  通过在不同的浏览器和环境中对其进行测试，确保PWA有效。  查看 [工具](https://developer.microsoft.com/en-us/microsoft-edge/tools/)<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> Microsoft Edge_开发人员_处。
+测试应用是否具有 [跨浏览器兼容性](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing)。  通过在不同的浏览器和环境中对其进行测试，确保PWA有效。  请参阅_Microsoft Edge开发人员处的_[工具](https://developer.microsoft.com/microsoft-edge/tools/)。
 
 ### <a name="responsive-design"></a>响应式设计
 

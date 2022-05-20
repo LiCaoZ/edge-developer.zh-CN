@@ -6,24 +6,24 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/07/2021
-ms.openlocfilehash: 5ad44a94e715faeaf5f6ec38b96d95c999aae662
-ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
+ms.openlocfilehash: cb974007b55bda6c028ad2e857c9d1b4e4f622a5
+ms.sourcegitcommit: 62f55a8303644d4d3f2ea29e624efcc54f465aa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/20/2022
-ms.locfileid: "12521044"
+ms.locfileid: "12521757"
 ---
 # <a name="use-origin-trials-in-microsoft-edge"></a>在 Microsoft Edge 中使用原始试用版
 
 可以使用源试验在有限的时间内在实时网站上试用实验性 API。  使用源试用版时，访问站点的Microsoft Edge用户可以运行使用实验性 API 的代码。  若要访问每个用户计算机上的实验性 API，无需转到 `edge://flags` 并打开功能标志。
 
-有关详细信息，请参阅 [实验性 API](https://developer.microsoft.com/en-us/microsoft-edge/origin-trials)。<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->  还可以提供有关 API 设计、用例或使用 API 浏览器工程师和 Web 标准社区的经验的反馈。
+有关详细信息，请参阅[Microsoft Edge源试用版开发人员控制台](https://developer.microsoft.com/microsoft-edge/origin-trials)。  还可以提供有关 API 设计、用例或使用 API 浏览器工程师和 Web 标准社区的经验的反馈。
 
 
 <!-- ====================================================================== -->
 ## <a name="get-started-using-origin-trials"></a>使用源试用开始
 
-有关Microsoft Edge中提供的实验性 API 的详细信息，请[参阅Microsoft Edge源试验开发人员控制台](https://developer.microsoft.com/en-us/microsoft-edge/origin-trials)。<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->  请务必查看Microsoft Edge的最低版本要求和试用结束日期，以评估在网站上使用实验性 API 的适用性。
+有关Microsoft Edge中提供的实验性 API 的详细信息，请[参阅Microsoft Edge源试验开发人员控制台](https://developer.microsoft.com/microsoft-edge/origin-trials)。  请务必查看Microsoft Edge的最低版本要求和试用结束日期，以评估在网站上使用实验性 API 的适用性。
 
 > [!NOTE]
 > 如果发生以下任何情况，则试验可能提前结束：
@@ -35,7 +35,7 @@ ms.locfileid: "12521044"
 
 若要注册试验性 API 的试用版，请执行以下操作：
 
-1. 转到[Microsoft Edge源试用版开发人员控制台](https://developer.microsoft.com/en-us/microsoft-edge/origin-trials)。<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->
+1. 转到[Microsoft Edge源试用版开发人员控制台](https://developer.microsoft.com/microsoft-edge/origin-trials)。
 
 1. 单击任何可用试验上的 **“注册** ”按钮。
 
@@ -58,7 +58,7 @@ ms.locfileid: "12521044"
 
 ### <a name="apply-your-token"></a>应用令牌
 
-令牌会立即生成并显示在[Microsoft Edge源试用版开发人员控制台](https://developer.microsoft.com/en-us/microsoft-edge/origin-trials)上<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> 页。  若要开始在网站上使用试用版，请使用以下任一方法将令牌应用到页面：
+令牌会立即生成并在[Microsoft Edge源试用版开发人员控制台](https://developer.microsoft.com/microsoft-edge/origin-trials)上显示。  若要开始在网站上使用试用版，请使用以下任一方法将令牌应用到页面：
 
 *  将 `origin-trial` 属性值和令牌添加到 `meta` 每个使用实验性 API 的页面上的标记。
 

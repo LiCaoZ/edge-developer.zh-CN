@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/25/2021
-ms.openlocfilehash: b65cf05f11d8d8fa57c36a3ae07cdd05528f2df9
-ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
+ms.openlocfilehash: ca07df84c9df3662a42a211cfd0e53498aa3369a
+ms.sourcegitcommit: 62f55a8303644d4d3f2ea29e624efcc54f465aa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/20/2022
-ms.locfileid: "12521023"
+ms.locfileid: "12521848"
 ---
 # <a name="overview-of-microsoft-edge-extensions"></a>Microsoft Edge 扩展概述
 
@@ -39,12 +39,12 @@ Microsoft Edge *扩展* 是开发人员用于添加或修改 Microsoft Edge 功�
 
 | Web 浏览器 | 基于 Chromium？ | 扩展开发网页 |
 |:--- |:--- |:--- |
-| Safari | 否 | [developer.apple.com/documentation/safariservices/safari_app_extensions](https://developer.apple.com/documentation/safariservices/safari_app_extensions) |
-| Firefox | 否 | [developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions) |
-| Chrome | 是 | [developer.chrome.com/extensions](https://developer.chrome.com/extensions) |
-| Opera | 是 | [dev.opera.com/extensions](https://dev.opera.com/extensions) |
+| Safari | 否 | [Safari 应用扩展](https://developer.apple.com/documentation/safariservices/safari_app_extensions) |
+| Firefox | 否 | [浏览器扩展](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions) |
+| Chrome | 是 | [API 参考](https://developer.chrome.com/extensions) |
+| Opera | 是 | [扩展文档](https://dev.opera.com/extensions) |
 | 勇敢 | 是 | 使用 [Chrome Web Store](https://chrome.google.com/webstore/category/extensions) |
-| Microsoft Edge | 是 | [developer.microsoft.com/microsoft-edge/extensions](https://developer.microsoft.com/en-us/microsoft-edge/extensions)<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> |
+| Microsoft Edge | 是 | [Microsoft Edge加载项开发人员](https://developer.microsoft.com/microsoft-edge/extensions) |
 
 > [!IMPORTANT]
 > 许多网站教程使用的浏览器特定的 API 可能与为其开发的浏览器不匹配。  在大多数情况下，Chromium 扩展在不同 Chromium 浏览器中工作，且 API 按预期工作。  某些不太常见的 API 可能特定于浏览器。  本教程的链接位于下面的 [“另请参阅](#see-also) ”部分中。

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 01/24/2022
-ms.openlocfilehash: 8a5d4b90a015382189dc4672464aa85ece48333e
-ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
+ms.openlocfilehash: a506269a07d39a3cd58df71f9514a2b9161ef168
+ms.sourcegitcommit: 62f55a8303644d4d3f2ea29e624efcc54f465aa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/20/2022
-ms.locfileid: "12521009"
+ms.locfileid: "12521778"
 ---
 # <a name="get-started-with-webview2"></a>WebView2 入门
 
@@ -28,5 +28,5 @@ ms.locfileid: "12521009"
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-* [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2)<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> - WebView2 的初始简介，在 `developer.microsoft.com`.
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - WebView2 的初始简介， at `developer.microsoft.com`.
 * [WebView2 示例代码](../code-samples-links.md) - 存储库指南 `WebView2Samples` 。

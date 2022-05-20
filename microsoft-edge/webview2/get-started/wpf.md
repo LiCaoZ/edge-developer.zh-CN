@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 71ce99e582393b872b59af993a1098ecdb0570c5
-ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
+ms.openlocfilehash: 842c996356866b4eb888d8d199a5a62cca9fc5aa
+ms.sourcegitcommit: 62f55a8303644d4d3f2ea29e624efcc54f465aa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/20/2022
-ms.locfileid: "12520904"
+ms.locfileid: "12521841"
 ---
 # <a name="get-started-with-webview2-in-wpf-apps"></a>WPF 应用中的 WebView2 入门
 
@@ -39,9 +39,6 @@ ms.locfileid: "12520904"
    *  Windows 11
 
    建议使用Microsoft Edge的 Canary 通道。  所需的最低版本为 82.0.488.0。
-
-<!-- Or, download the [WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section), or  -->
-<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->
 
 
 <!-- ====================================================================== -->
@@ -463,7 +460,7 @@ maintenance link (keep)
 ## <a name="see-also"></a>另请参阅
 
 developer.microsoft.com：
-* [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2)<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> - developer.microsoft.com 的 WebView2 功能的初始简介。
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - developer.microsoft.com 的 WebView2 功能的初始简介。
 
 本地页面：
 * [WebView2 示例：WPF .NET 浏览器应用](../samples/webview2wpfbrowser.md)

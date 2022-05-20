@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 05/17/2022
-ms.openlocfilehash: a9a21f44c289e45fd4fae4df9cf9f176238f47d8
-ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
+ms.openlocfilehash: ede3875a83675bd9ca46acc263fff8da692fec6e
+ms.sourcegitcommit: 62f55a8303644d4d3f2ea29e624efcc54f465aa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/20/2022
-ms.locfileid: "12520862"
+ms.locfileid: "12521743"
 ---
 # <a name="use-webdriver-to-automate-microsoft-edge"></a>使用 WebDriver 自动执行 Microsoft Edge
 
@@ -58,7 +58,7 @@ WebDriver 允许你通过模拟用户交互来自动执行 Microsoft Edge。  �
 
     ![2021 年 4 月 15 日 Microsoft Edge 的内部版本号。](media/microsoft-edge-version.msft.png)
 
-1.  转到 [Microsoft Edge WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver)。<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->
+1.  转到 [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver)。
 
 1.  在**获取页面的最新版本**部分，在频道中选择与 Microsoft Edge 版本号匹配的平台。
 

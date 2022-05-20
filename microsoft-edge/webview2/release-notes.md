@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 05/09/2022
-ms.openlocfilehash: bcd71c3b016b2c400efe73c55bfd68d1317c41d2
-ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
+ms.openlocfilehash: 2ae9515c37c535489b62ba80b539e651334088cb
+ms.sourcegitcommit: 62f55a8303644d4d3f2ea29e624efcc54f465aa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/20/2022
-ms.locfileid: "12520911"
+ms.locfileid: "12521764"
 ---
 # <a name="release-notes-for-the-webview2-sdk"></a>WebView2 SDK 发行说明
 
@@ -1080,7 +1080,7 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 > [!IMPORTANT]
 > **公告**：Win32 C/C++ WebView2 现已正式发布 (GA) 。  从此版本开始，发布 SDK 是向前兼容的。  请参阅 [GA 公告博客帖子](https://blogs.windows.com/msedgedev/edge-webview2-general-availability)。
 
-*  Evergreen WebView2 运行时和安装程序为 GA。  Microsoft Edge [WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) 上提供了启动程序、Bootstrapper 的下行链接以及 Evergreen WebView2 运行时的独立安装程序。<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->  [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples)中也提供了安装工作流的示例代码。
+*  Evergreen WebView2 运行时和安装程序为 GA。  Microsoft Edge [WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) 上提供了启动程序、Bootstrapper 的下行链接以及 Evergreen WebView2 运行时的独立安装程序。  [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples)中也提供了安装工作流的示例代码。
 
 有关运行时、常青版分发和固定版本分发的详细信息，请参 [阅分发应用和 WebView2 运行时](concepts/distribution.md)。
 
