@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 2cd22cde465f8bdb07e76fb82d78dbb02c4a04a3
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: f91e44ba6e04604b4f159af95a45c92694533d60
+ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514214"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "12522341"
 ---
 # <a name="webview2-sample-wpf-net-browser-app"></a>WebView2 示例：WPF .NET 浏览器应用
 
@@ -38,7 +38,7 @@ Directory &amp; .sln： **WebView2WpfBrowser/WebView2WpfBrowser.sln**。
 
    或者：
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2WpfBrowser/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WpfBrowser/README.md`
 
 
 <!-- ====================================================================== -->
@@ -70,7 +70,7 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 
    或者：
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2WpfBrowser/WebView2WpfBrowser.sln`
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WpfBrowser/WebView2WpfBrowser.sln`
 
 
 <!-- ====================================================================== -->

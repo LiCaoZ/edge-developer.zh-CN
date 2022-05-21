@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: e5c8000c17f92966e8ee289d8474b1f9d8a75b86
-ms.sourcegitcommit: 62f55a8303644d4d3f2ea29e624efcc54f465aa1
+ms.openlocfilehash: a097ac54079aa8f4bd7b91eea6bf79936a32c0eb
+ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "12521855"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "12522187"
 ---
 # <a name="get-started-with-webview2-in-winui-3-windows-app-sdk-apps"></a>在 WinUI 3 (Windows 应用 SDK) 应用中使用 WebView2 开始
 
@@ -331,7 +331,7 @@ maintenance link (keep)
 
 ### <a name="winrt-corewebview2-object-availability"></a>WinRT CoreWebView2 对象可用性
 
-WinRT `CoreWebView2` 对象可能无法与 WebView2 API 的版本一起使用。  [WebView2 规范](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)列出了哪些 API 可用于 WebView2。
+WinRT `CoreWebView2` 对象可能无法与 WebView2 API 的版本一起使用。  [WebView2 规范](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)<!-- changing master to main doesn't work 5/19/2022 --> 列出哪些 API 可用于 WebView2。
 
 
 <!-- ====================================================================== -->

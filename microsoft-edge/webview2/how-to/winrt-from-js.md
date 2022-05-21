@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 05/09/2022
-ms.openlocfilehash: c0fc0489842cebbc17205955e06870c80d5f6a0a
-ms.sourcegitcommit: a71bd7bca08f5468b8be32187f0a8ff44c158db2
+ms.openlocfilehash: ef73d51c804cad3bfb68f21ce6274380c830c8c5
+ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "12508585"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "12522376"
 ---
 # <a name="call-native-side-winrt-code-from-web-side-code"></a>从 Web 端代码调用本机端 WinRT 代码
 
@@ -99,7 +99,7 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 
    ![为 wv2winrt 工具添加新项目。](winrt-from-js-images/add-new-project-for-tool.png)
 
-1. 在Visual Studio中，选择 **“调试** > **开始调试**”。  这将生成 **webview2_sample_uwp** 项目，然后运行项目的基线版本。  **WebView2 WinUI 2 UWP 示例**窗口随即打开：
+1. 在Visual Studio中，选择“**调试** > **"开始"菜单调试**。  这将生成 **webview2_sample_uwp** 项目，然后运行项目的基线版本。  **WebView2 WinUI 2 UWP 示例**窗口随即打开：
 
    ![WebView2 WinUI 2 UWP 示例窗口。](winrt-from-js-images/webview2-winui-2-uwp-sample-app-window.png)
 
@@ -108,7 +108,7 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 如果需要更多信息，请参阅这些页面中的详细步骤，然后继续以下操作：
 * [WebView2 示例：WinUI 2 (UWP) 浏览器应用](../samples/webview2_sample_uwp.md) - 打开、编译和运行示例应用的步骤。
 * [开始 WinUI 2 中的 WebView2 (UWP) 应用 (公共预览) ](../get-started/winui2.md) - 设置基本 WebView2 应用。
-* [GitHub > WebView2Samples 存储库> webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp)
+* [GitHub > WebView2Samples 存储库> webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp)
 * [为 WebView2 设置开发环境](machine-setup.md) - 有关设置先决条件的详细信息。
 
 
@@ -409,7 +409,7 @@ webView->CoreWebView2->AddScriptToExecuteOnDocumentCreatedAsync(
 
 命令行帮助包含有关参数的 `wv2winrt.exe`类似信息。  例如：
 
-| 参数 | 说明 |
+| 参数 | 描述 |
 |---|---|
 | `verbose` | 列出一些要标准的内容，包括已创建的文件以及有关包含和排除规则的信息。 |
 | `include` | 如上所示，默认情况下，除列出的命名空间和运行时类外，将排除命名空间和运行时类。 包含声明可以是包含该命名空间中所有内容的命名空间，也可以是运行时类名称，仅包含该运行时类。 |

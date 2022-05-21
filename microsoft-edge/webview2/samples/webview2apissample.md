@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: ef78f610c35ca14568ffa85b57ce43aa21311d5d
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 396ab1373f11f3d3c05f3b0f95dddb7ed11c987a
+ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514235"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "12522397"
 ---
 # <a name="webview2-sample-win32-c-app"></a>WebView2 示例：Win32 C++ 应用
 
@@ -42,7 +42,7 @@ API 示例展示了一系列 WebView2 的事件处理程序和 API 方法，这�
 
    或者：
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/README.md`
 
 
 <!-- ====================================================================== -->
@@ -74,7 +74,7 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 
    或者：
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2Samples.sln`
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2Samples.sln`
 
 
 <!-- ====================================================================== -->

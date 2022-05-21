@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: b4d39399fb11ede484d904a43d595255f7fec805
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 90acc9d7273e50e0cae6d0d46d50b04076b6e34e
+ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514515"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "12522362"
 ---
 # <a name="webview2-sample-win32-c-app-with-visual-composition"></a>WebView2 示例：使用 Visual Composition 的 Win32 C++ 应用
 
@@ -45,7 +45,7 @@ Directory &amp; .sln： **WebView2SampleWinComp/WebView2SampleWinComp.sln**。
 
    或者：
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2SampleWinComp/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2SampleWinComp/README.md`
 
 
 <!-- ====================================================================== -->
@@ -77,7 +77,7 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 
    或者：
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
 
    可能会显示“ **查看解决方案操作”** 对话框：
 

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 629d23fcd51dc10e914257110a55b6639ff660fa
-ms.sourcegitcommit: 62f55a8303644d4d3f2ea29e624efcc54f465aa1
+ms.openlocfilehash: ab6e097c2356598f55fd2a89c5926e7558cce45f
+ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "12521869"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "12522481"
 ---
 # <a name="set-up-your-dev-environment-for-webview2"></a>为 WebView2 设置开发环境
 
@@ -76,21 +76,21 @@ ms.locfileid: "12521869"
 
    在Microsoft Edge中，如果 **“下载**”弹出窗口不可见，请单击**设置和更多** (...) ，然后单击 **“下载**”。
 
-1. 在 **“下载** ”弹出窗口中，将鼠标悬停在右侧 `WebView2Samples-master.zip` ，然后单击文件夹 (文件夹) 图标 **中的“显示** ”。
+1. 在 **“下载** ”弹出窗口中，将鼠标悬停在右侧 `WebView2Samples-main.zip` ，然后单击文件夹 (文件夹) 图标 **中的“显示** ”。
 
    建议不要单击 **“打开文件** ”链接，因为这会立即解压缩下载区域中的文件，这会使 (更加困难，) 移动到所需位置的速度会变慢。
 
-1. 将文件从下载目录复制或剪切 `WebView2Samples-master.zip` 到常规目录，例如 `Documents`。
+1. 将文件从下载目录复制或剪切 `WebView2Samples-main.zip` 到常规目录，例如 `Documents`。
 
-1. 解压缩 .`WebView2Samples-master.zip` 文件并记下解压缩文件的位置。
+1. 解压缩 .`WebView2Samples-main.zip` 文件并记下解压缩文件的位置。
 
    ![下载的、解压缩的 WebView2Samples 存储库。](../media/downloaded-samples-repo-unzipped.png)
 
 1. 研究主要目录的突破。
 
-   `-master` 是此下载的目录快照表示的存储库分支的名称。  可以在GitHub切换到其他分支，然后下载，`WebView2Samples-smoketest-1.0.1054.27-prerelease-testing.zip`例如。  在这种情况下，下载 `.zip` 的文件是存储库分支的快照 `smoketest-1.0.1054.27-prerelease-testing` 。  本文档假定你下载了 `master` 存储库的分支。
+   `-main` 是此下载的目录快照表示的存储库分支的名称。  可以在GitHub切换到其他分支，然后下载，`WebView2Samples-smoketest-1.0.1054.27-prerelease-testing.zip`例如。  在这种情况下，下载 `.zip` 的文件是存储库分支的快照 `smoketest-1.0.1054.27-prerelease-testing` 。  本文档假定你下载了 `main` 存储库的分支。
 
-1. 建议：从`WebView2Samples-master``WebView2Samples`中重命名根目录，以匹配存储库名称和路径。
+1. 建议：从`WebView2Samples-main``WebView2Samples`中重命名根目录，以匹配存储库名称和路径。
 
 
 <!-- The h3 section [Download or clone the WebView2Samples repo](../get-started/win32.md#download-or-clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->
@@ -189,7 +189,7 @@ ms.locfileid: "12521869"
 
 1. `.sln`在Visual Studio中打开文件。  例如，打开 [WebView2Samples.sln 的](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2Samples.sln)本地副本。  此存储库的解决方案文件需要Visual Studio，而不是Visual Studio Code。
 
-1. 打开其中 `.sln` 一个文件。  例如，打开主 Win32 解决方案文件 [WebView2Samples/SampleApps/WebView2Samples.sln (](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2Samples.sln)下载为Microsoft Visual Studio中的路径`WebView2Samples-master/SampleApps/WebView2Samples.sln`) 的本地副本。  在 Visual Studio 中打开该解决方案文件时，**解决方案资源管理器**包含以下项目：
+1. 打开其中 `.sln` 一个文件。  例如，打开主 Win32 解决方案文件 [WebView2Samples/SampleApps/WebView2Samples.sln (](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2Samples.sln)下载为Microsoft Visual Studio中的路径`WebView2Samples-main/SampleApps/WebView2Samples.sln`) 的本地副本。  在 Visual Studio 中打开该解决方案文件时，**解决方案资源管理器**包含以下项目：
 
    ![解决方案资源管理器 WebView2Samples 存储库，将 WebView2 示例显示为项目。](media/machine-setup-solution-file-webview2samples.png)
 
@@ -220,13 +220,13 @@ ms.locfileid: "12521869"
 
    ![Visual Studio安装程序，安装 .NET 桌面开发工作负荷。](../media/visual-studio-installer-for-platform-workload.png).
 
-   迁移报表日志文件页可能会打开，例如 `file:///C:/Users/username/Documents/WebView2Samples-master/WebView2Samples-master/SampleApps/UpgradeLog.htm`：
+   迁移报表日志文件页可能会打开，例如 `file:///C:/Users/username/Documents/WebView2Samples-main/WebView2Samples-main/SampleApps/UpgradeLog.htm`：
 
    ![Visual Studio多平台综合 API 示例的 2022 工作负荷安装程序迁移报告。](../media/migration-report-while-installing-workload.png)
 
    _若要缩放，请右键单击> **在新选项卡中打开图像**。_
 
-   上面是 `-master` 存储库下载 `.zip` 的文件的目录后缀，而不是克隆存储库时。
+   上面是 `-main` 存储库下载 `.zip` 的文件的目录后缀，而不是克隆存储库时。
 
    Visual Studio在解决方案资源管理器中打开所选`.sln`文件：
 

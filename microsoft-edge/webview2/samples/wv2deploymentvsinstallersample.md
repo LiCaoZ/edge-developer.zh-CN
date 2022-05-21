@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 8b3cb3e5ab596dcc3fa60ad302ecd14f98846f0f
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: cfd4805259d7e262443e8cffe8da62d0d53c6504
+ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12496678"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "12522215"
 ---
 # <a name="webview2-sample-webview2-deployment-visual-studio-installer"></a>WebView2 示例：WebView2 部署Visual Studio安装程序
 
@@ -38,7 +38,7 @@ ms.locfileid: "12496678"
 
    或者：
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/WV2DeploymentVSInstallerSample/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2DeploymentVSInstallerSample/README.md`
 
 
 <!-- ====================================================================== -->
@@ -70,7 +70,7 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WV2DeploymentVSInstallerSample/WV2DeploymentVSInstallerSample.sln` -->
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2DeploymentVSInstallerSample/WV2DeploymentVSInstallerSample.sln` -->
 
 
 <!-- ====================================================================== -->

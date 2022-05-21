@@ -1,5 +1,5 @@
 ---
-title: 自定义网络请求管理
+title: 网络请求的自定义管理
 description: 在 WebView2 应用中使用 WebResourceRequested 事件和 WebResourceResponseReceived 事件。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/29/2022
-ms.openlocfilehash: 7e06a3e7b4085d49b1b26f1f4395fb5040938973
-ms.sourcegitcommit: 8dcb3adc1d207971f08fa28fbafd450c6d72c339
+ms.openlocfilehash: 267ea95472e5c4fd64576a62a81f131f50ed7c21
+ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "12500663"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "12522264"
 ---
-# <a name="custom-management-of-network-requests"></a>自定义网络请求管理
+# <a name="custom-management-of-network-requests"></a>网络请求的自定义管理
 <!--
 # Custom management of network requests and responses in WebView2
 # Managing network requests in WebView2
@@ -307,7 +307,7 @@ m_webView->add_WebResourceRequested(
 <!-- CreateWebResourceRequest and NavigateWithWebResourceRequest -->
 
 <!-- the code listings below were not copied from the sample app; they were copied from the spec.  ok?
-from https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/NavigateWithWebResourceRequest.md#examples -->
+from https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/NavigateWithWebResourceRequest.md#examples -->
 
 
 <!-- -------------------------------------------------- -->
@@ -377,7 +377,7 @@ webview->NavigateWithWebResourceRequest(webResourceRequest.get());
 此示例演示如何通过 `WebResourceResponseReceived` 事件监视请求和响应来读取授权标头值。
 
 以下代码演示如何使用事件 `WebResourceResponseReceived` 。
-<!-- from https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/WebResourceResponseReceived.md#examples -->
+<!-- from https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/WebResourceResponseReceived.md#examples -->
 
 
 <!-- -------------------------------------------------- -->
@@ -584,5 +584,5 @@ m_webView->add_WebResourceResponseReceived(
 
 * [从 Web 端代码调用本机代码](hostobject.md)
 <!-- 
-* [NavigateWithWebResourceRequest spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/NavigateWithWebResourceRequest.md)
-* [WebResourceResponseReceived event spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/WebResourceResponseReceived.md) -->
+* [NavigateWithWebResourceRequest spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/NavigateWithWebResourceRequest.md)
+* [WebResourceResponseReceived event spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/WebResourceResponseReceived.md) -->

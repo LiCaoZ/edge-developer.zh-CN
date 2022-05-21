@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/11/2021
-ms.openlocfilehash: 7318aec723f2ac663dcdac359f76718eecfd9794
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: de65438a53d19b9b4ba341c08d92827e4f76f8a4
+ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514704"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "12522292"
 ---
 <!-- Copyright Kayce Basques
 
@@ -92,7 +92,7 @@ _动画组_是一组可能彼此相关的动画。  目前，Web 没有组动画
 
 <!--  old link: <video src="animations/capture-animations.mp4" autoplay loop muted controls></video>  -->
 
-<!--  import the video to ACOM using https://review.docs.microsoft.com/help/contribute/contribute-video-publish?branch=master  -->
+<!--  import the video to ACOM using https://review.docs.microsoft.com/help/contribute/contribute-video-publish  -->
 
 <!--  > [!VIDEO animations/capture-animations.mp4]  -->
 

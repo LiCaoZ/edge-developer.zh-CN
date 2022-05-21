@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 49bf65d433323d7108557ff040d9df3e158a9041
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: 818925d3bbcbe2891d3e840560be67a4bec74a6a
+ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12496839"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "12522278"
 ---
 # <a name="webview2-sample-wix-custom-action-to-deploy-the-webview2-runtime"></a>WebView2 示例：用于部署 WebView2 运行时的 WiX 自定义操作
 
@@ -38,7 +38,7 @@ Directory &amp; .proj： **WV2DeploymentWiXCustomActionSample/WV2DeploymentWiXCu
 
    或者：
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/WV2DeploymentWiXCustomActionSample/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2DeploymentWiXCustomActionSample/README.md`
 
 
 <!-- ====================================================================== -->
@@ -70,7 +70,7 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WV2DeploymentWiXCustomActionSample/WV2DeploymentWiXCustomActionSample.sln` -->
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2DeploymentWiXCustomActionSample/WV2DeploymentWiXCustomActionSample.sln` -->
 
 
 <!-- ====================================================================== -->

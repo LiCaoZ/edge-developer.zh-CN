@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: b91722aeaf1c111ce0dc1853cb0870d791502ec9
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: 061fe65b9c133c36639cb03fc1fdf4f552d42b43
+ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12496846"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "12522453"
 ---
 # <a name="manage-user-data-folders"></a>管理用户数据文件夹
 <!-- # old title: Manage the user data folder -->
@@ -92,7 +92,7 @@ WebView2 控件的每个实例都与用户数据文件夹 (UDF) 相关联。
 
 1. 关闭所有 WebView2 会话。
 
-1. 启动新的 WebView2 主机应用会话，指定新的自定义 UDF 位置。
+1. "开始"菜单新的 WebView2 主机应用会话，指定新的自定义 UDF 位置。
 
 
 <!-- ====================================================================== -->
@@ -270,7 +270,7 @@ WinUI 3 是一个“打包”平台;它在沙盒中运行，并打包在沙盒�
 
 ```cpp
 std::wstring m_userDataFolder;
-m_userDataFolder = L"C:\MyAppUserDataFolder"
+m_userDataFolder = L"C:\\MyAppUserDataFolder"
 auto options = Microsoft::WRL::Make<CoreWebView2ExperimentalEnvironmentOptions>();
 
 HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
@@ -319,7 +319,7 @@ HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
 
 ```csharp
 string UserDataFolder;
-UserDataFolder = "C:\MyAppUserDataFolder";
+UserDataFolder = "C:\\MyAppUserDataFolder";
 _task = CoreWebView2Environment.CreateAsync(BrowserExecutableFolder, 
                                             UserDataFolder, 
                                             new CoreWebView2EnvironmentOptions(null, Language, null));
@@ -363,7 +363,7 @@ WebView2 将引发错误，让主机应用知道无法在该位置创建 UDF。
 
 ```csharp
 string UserDataFolder;
-UserDataFolder = "C:\MyAppUserDataFolder";
+UserDataFolder = "C:\\MyAppUserDataFolder";
 _task = CoreWebView2Environment.CreateAsync(BrowserExecutableFolder, 
                                             UserDataFolder, 
                                             new CoreWebView2EnvironmentOptions(null, Language, null));
@@ -628,7 +628,7 @@ WebView2 控件为每个新用户创建一个新的 UDF。  WebView2 控件为�
 
 主机应用或卸载程序可以删除用户数据文件夹 (UDF) 。  出于以下任何原因，可能需要删除 UDF：
 
-*  如果要卸载打包Windows应用商店应用。  在这种情况下，Windows自动删除 UDF。
+*  如果要卸载打包的Windows Microsoft Store应用。  在这种情况下，Windows自动删除 UDF。
 
 *  如果要清理所有浏览数据历史记录。  但是，请首先将 _清晰的浏览数据_ 方法视为更简单、更灵活的方法。
 

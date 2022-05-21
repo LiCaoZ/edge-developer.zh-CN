@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/13/2021
-ms.openlocfilehash: cec9fe6c5ecd39108a9b94137b226f2c1191b8d6
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 6d7c78d76b6146247e9ad774f1034ae5ef307346
+ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514032"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "12522411"
 ---
 <!-- Copyright Kayce Basques
 
@@ -227,7 +227,7 @@ Chromium问题 [#1054381](https://crbug.com/1054381)
 
 ![使用旧解析术语的控制台示例。](../../media/2020/05/resolved.msft.png)
 
-**控制台**现在使用与规范一致的`Promise`术语`fulfilled`。  有关规范的`Promise`详细信息，请参阅[GitHub上的状态和命运](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md)。
+**控制台**现在使用与规范一致的`Promise`术语`fulfilled`。  有关规范的`Promise`详细信息，请参阅[GitHub上的状态和命运](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md)。<!-- changing master to main doesn't work 5/19/2022 -->
 
 ![使用新的已完成术语的控制台示例。](../../media/2020/05/fulfilled.msft.png)
 

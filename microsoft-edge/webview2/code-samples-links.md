@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 40b5ee34328dd4256426e960ecc8a6718ed2d762
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: 3bd37cee35072955b2348072fe2ab357650aeeb6
+ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12496699"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "12522446"
 ---
 # <a name="sample-code-for-webview2"></a>WebView2 示例代码
 
@@ -44,7 +44,7 @@ WebView2 入门指南可帮助你创建与存储库中`WebView2Samples`相同的
 
 1. 在生成的存储库目录结构的本地副本中，查找 `*.sln` 文件。
 
-1. 打开其中 `.sln` 一个文件。  例如，打开多平台解决方案文件 [WebView2Samples/SampleApps/WebView2Samples.sln 的](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2Samples.sln)本地副本 (下载为Microsoft Visual Studio中的路径`WebView2Samples-master/SampleApps/WebView2Samples.sln`) 。  在 Visual Studio 中打开该解决方案文件时，**解决方案资源管理器**包含以下 WebView2 示例，作为项目：
+1. 打开其中 `.sln` 一个文件。  例如，打开多平台解决方案文件 [WebView2Samples/SampleApps/WebView2Samples.sln 的](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2Samples.sln)本地副本 (下载为Microsoft Visual Studio中的路径`WebView2Samples-main/SampleApps/WebView2Samples.sln`) 。  在 Visual Studio 中打开该解决方案文件时，**解决方案资源管理器**包含以下 WebView2 示例，作为项目：
 
    ![解决方案资源管理器 WebView2Samples 存储库，将 WebView2 示例显示为项目。](media/solution-file-webview2samples.png)
 
@@ -60,7 +60,7 @@ WebView2 入门指南可帮助你创建与存储库中`WebView2Samples`相同的
 | WinForms | [WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser) | 在Windows 窗体应用程序中嵌入 WebView2 控件。<br/><br/>  Visual Studio 2019 年作为Windows 窗体项目生成。  在 WebView2 环境中使用 C# 和 HTML/CSS/JavaScript。 |
 | Windows Presentation Foundation (WPF) .NET | [WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser) | 在 WPF 应用程序中嵌入 WebView2 控件。<br/><br/>  在 2019 Visual Studio构建为 WPF 项目。  在 WebView2 环境中使用 C# 和 HTML/CSS/JavaScript。 |
 | WPF 中的 Chrome DevTools 协议 (CDP)  | [WV2CDPExtensionWPFSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample) | 使用 `DevToolsProtocolHelper` WebView2 中的对象使用 Chrome [DevTools 协议](../devtools-protocol-chromium/index.md)函数。  演示 WPF 中 WebView2 CDP 扩展的使用模式。  此应用程序是使用 [WebView2 CDP 扩展](https://aka.ms/webviewcdp) 构建的，该扩展定义所有 CDP 方法、事件和类型。<br/><br/>  在 2019 Visual Studio构建为 WPF 项目。  在 WebView2 环境中使用 C#。 |
-| 用于部署运行时的 WiX 燃烧捆绑包 | [WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WV2DeploymentWiXBurnBundleSample/README.md) | 为 [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/README.md) 创建 [WiX](https://wixtoolset.org/) 安装程序，并使用 [WiX Burn 捆绑包](https://wixtoolset.org/documentation/manual/v3/bundle/)链接安装 Evergreen WebView2 运行时。<br/><br/>  使用应用部署 [Evergreen WebView2 运行时](concepts/distribution.md) 时使用。 |
+| 用于部署运行时的 WiX Burn捆绑包 | [WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WV2DeploymentWiXBurnBundleSample/README.md) | 为 [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/README.md) 创建 [WiX](https://wixtoolset.org/) 安装程序，并使用 [WiX Burn捆绑包](https://wixtoolset.org/documentation/manual/v3/bundle/)链接安装 Evergreen WebView2 运行时。<br/><br/>  使用应用部署 [Evergreen WebView2 运行时](concepts/distribution.md) 时使用。 |
 | 用于部署运行时的 WiX 自定义操作 | [WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WV2DeploymentWiXCustomActionSample/README.md) | 为 `WebView2APISample` WiX 安装程序创建 WiX 安装程序，并使用 [WiX 自定义操作](https://wixtoolset.org/documentation/manual/v3/wixdev/extensions/authoring_custom_actions.html) 链接安装 Evergreen WebView2 运行时。<br/><br/>  使用应用部署 Evergreen WebView2 运行时时使用。 |
 
 
@@ -117,7 +117,7 @@ WebView2 入门指南可帮助你创建与存储库中`WebView2Samples`相同的
 
 存储 `WebView2Samples` 库包含多个 `README.md` 文件和 `.sln` 文件，如下所示。  下载或克隆存储库时，可以在Visual Studio中查看这些`README.md`文件中的任何一个。  或者，在GitHub存储库中联机查看它们。
 
-在下载 `.zip` 的文件中，根目录是命名 `WebView2Samples-master` 的，而不是 `WebView2Samples`表示 `master` 存储库的分支。
+在下载 `.zip` 的文件中，根目录是命名 `WebView2Samples-main` 的，而不是 `WebView2Samples`表示 `main` 存储库的分支。
 
 在下面的链接中，将显示 .sln 或 README.md 的本地目录路径。  链接将转到GitHub存储库的目录级别，可在其中查看`.sln`目录列表中的或`README.md`文件。  在GitHub时，自述文件会自动追加到包含自述文件的目录的网页。
 <!--
@@ -187,13 +187,13 @@ URL for README = dir that visibly contains the README.md file (visible if you sc
 
 **下载的存储库具有较长的根目录名称**
 
-如果将存储库 (下载为 `.zip` 文件) ，则已追加根目录名称 `-master` 。  若要匹配存储库 () `WebView2Samples` 的名称，可以重命名根目录。
+如果将存储库 (下载为 `.zip` 文件) ，则已追加根目录名称 `-main` 。  若要匹配存储库 () `WebView2Samples` 的名称，可以重命名根目录。
 
 
 目录中特定于 Win32 的 `GettingStartedGuides` 解决方案具有以下路径：
 
 *  如果下载了存储库： 
-   * `WebView2Samples-master/GettingStartedGuides/Win32_GettingStarted/WebView2GettingStarted.sln`
+   * `WebView2Samples-main/GettingStartedGuides/Win32_GettingStarted/WebView2GettingStarted.sln`
 
 *  如果克隆了存储库： 
    * `WebView2Samples/GettingStartedGuides/Win32_GettingStarted/WebView2GettingStarted.sln`
@@ -202,7 +202,7 @@ URL for README = dir that visibly contains the README.md file (visible if you sc
 目录中 `SampleApps` 的主要多项目 Win32 解决方案具有以下路径：
 
 *  如果下载了存储库： 
-   * `WebView2Samples-master/SampleApps/WebView2Samples.sln`
+   * `WebView2Samples-main/SampleApps/WebView2Samples.sln`
 
 *  如果克隆了存储库： 
    * `WebView2Samples/SampleApps/WebView2Samples.sln`

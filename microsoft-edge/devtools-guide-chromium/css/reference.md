@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/29/2021
-ms.openlocfilehash: 06ff78402a61a7e5b9acee2a00105c69462e08dd
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: a95feec15d17d3506423e6be127cc48f828244d7
+ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514473"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "12522250"
 ---
 <!-- Copyright Kayce Basques
 
@@ -61,7 +61,8 @@ DevTools 中的 **元素** 工具允许你一次查看或更改一个元素的 C
 如果对样式表进行了细化，请单击“ **格式** (![格式。](../media/format-icon.msft.png)) 按钮，位于 **”编辑器** “窗格底部。  有关详细信息，请参阅使用非常打印 [重新设置缩小的 JavaScript 文件](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print)。
 
 <!-- todo: delete /en-us ? 2x -->
-在下图中，单击 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` 后，你将转到第 2 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`行，其中定义了 `.content h1:first-of-type` CSS 规则。
+在下图中，单击后
+`https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2`<!-- :2 at end causes not to work. --> 你将转到第 2 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`行，其中定义了 `.content h1:first-of-type` CSS 规则。<!-- master kind of works but all lines are concated.  changing master to main doesn't work -->
 
 :::image type="content" source="../media/css-elements-styles-h1-highlight.msft.png" alt-text="查看定义规则的样式表。" lightbox="../media/css-elements-styles-h1-highlight.msft.png":::
 

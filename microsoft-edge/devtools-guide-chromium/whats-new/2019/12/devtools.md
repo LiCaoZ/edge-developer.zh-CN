@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/13/2021
-ms.openlocfilehash: 6b9e0bea7debbd2b00ff8038d95bac2fad299d89
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: de580d3b7ff0816bc8140571f992f2de065507f8
+ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514025"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "12522488"
 ---
 <!-- Copyright Kayce Basques
 
@@ -325,7 +325,7 @@ Chromium问题 [#1029031](https://crbug.com/1029031)
 
 #### <a name="new-configuration-ui"></a>新配置 UI
 
-配置 UI 具有新的响应式设计，并且限制配置选项已简化。  有关限制 UI 更改的详细信息， [请参阅审核面板限制](https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling)。
+配置 UI 具有新的响应式设计，并且限制配置选项已简化。  有关限制 UI 更改的详细信息， [请参阅审核面板限制](https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling)。<!-- changing master to main doesn't work 5/19/2022 -->
 
 ![新的配置 UI。](../../images/2019/12/start.msft.png)
 

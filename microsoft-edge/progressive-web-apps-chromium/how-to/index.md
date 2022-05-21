@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 11/19/2021
-ms.openlocfilehash: a99670f345668d0a5c0d3dba40d2e57381b2f801
-ms.sourcegitcommit: 62f55a8303644d4d3f2ea29e624efcc54f465aa1
+ms.openlocfilehash: fc82414c6699790bac4c0324ed575596e6c115e1
+ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "12521862"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "12522180"
 ---
 # <a name="get-started-with-progressive-web-apps"></a>渐进式 Web 应用入门
 
@@ -139,7 +139,7 @@ npm start
 
 若要在项目中生成服务辅助角色，请使用来自 PWA Builder **的缓存优先网络**服务辅助角色配方，如下所示。
 
-1. 将源文件 [pwabuilder-sw-register.js](https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw-register.js) 并 [pwabuilder-sw.js](https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw.js) 到 `public` Web 应用项目中的文件夹。
+1. 复制源文件 [pwabuilder-sw-register.js](https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw-register.js)<!-- changing master to main doesn't work 5/19/2022 --> 和 [pwabuilder-sw.js](https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw.js)<!-- changing master to main doesn't work 5/19/2022 --> `public`到 Web 应用项目中的文件夹。
 
 1.  在Visual Studio Code中，打开`/public/index.html`。
 
