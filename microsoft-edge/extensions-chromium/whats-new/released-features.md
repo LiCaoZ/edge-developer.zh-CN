@@ -5,13 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 04/07/2021
-ms.openlocfilehash: 6a54ebe5b380c585ef8aa1123ffbd722951eed79
-ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
+ms.date: 05/20/2021
+ms.openlocfilehash: b8e1cc03fde00c87a865e12a074e5e0c7de03e52
+ms.sourcegitcommit: 56d88962483dab8374f3dccb67f546df1c26ec17
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/20/2022
-ms.locfileid: "12521093"
+ms.locfileid: "12522088"
 ---
 # <a name="microsoft-edge-add-ons-released-features"></a>Microsoft Edge 加载项已发布功能
 
@@ -21,6 +21,15 @@ ms.locfileid: "12521093"
 > Microsoft [合作伙伴中心](https://partner.microsoft.com/dashboard/microsoftedge/) 发布的功能经常更改。  合作伙伴中心根据市场变化和客户反馈继续发展。 本文中所述的功能也可能会发生更改。
 
 有关即将发布的更新和功能版本的详细信息，请[参阅Microsoft Edge加载项路线图](roadmap.md)。
+
+
+
+<!-- ====================================================================== -->
+### <a name="developers-can-respond-to-user-reviews-about-their-microsoft-edge-add-on"></a>开发人员可以响应有关其Microsoft Edge加载项的用户评论
+
+开发人员可以通过合作伙伴中心回复有关其扩展在Microsoft Edge加载项产品页上收到的评论和反馈。 
+
+*发布日期：2022 年 5 月*
 
 
 <!-- ====================================================================== -->
@@ -34,7 +43,7 @@ ms.locfileid: "12521093"
 <!-- ====================================================================== -->
 ## <a name="microsoft-edge-extensions-developer-portal"></a>Microsoft Edge扩展开发人员门户
 
-开发人员门户的新版本包含有关Microsoft Edge扩展的相关资源和文档。 有关详细信息，请参阅[Microsoft Edge加载项开发人员](https://developer.microsoft.com/en-us/microsoft-edge/extensions/)。<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->
+开发人员门户的新版本包含有关Microsoft Edge扩展的相关资源和文档。 有关详细信息，请参阅[Microsoft Edge加载项开发人员](https://developer.microsoft.com/microsoft-edge/extensions/)。
 
 *发布日期：2022 年 1 月*
 
