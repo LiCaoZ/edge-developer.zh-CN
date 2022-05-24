@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/07/2021
-ms.openlocfilehash: b4ae6642e30fdb8d6924f41d72c8e979eae45204
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.openlocfilehash: de18758d8be69d6555d7ef1a7481d4563b2e3442
+ms.sourcegitcommit: 70d9b67fe1ab1cda42577ae37f71644f8d95eb3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522327"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "12548708"
 ---
 # <a name="create-an-extension-tutorial-part-2"></a>创建扩展教程，第 2 部分
 
@@ -173,7 +173,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 }
 ```
 
-你添加的部分是 `content_scripts`。  该 `matches` 属性设置为 `<all_urls>`，这意味着在 `content_scripts` 加载每个选项卡时，所有文件都注入到所有浏览器选项卡页中。  可以注入的允许文件类型是 JavaScript 和 CSS。  你还添加了 `libjquery.min.js`。  可以从节顶部提到的下载中包含该内容。
+你添加的部分是 `content_scripts`。  该 `matches` 属性设置为 `<all_urls>`，这意味着在 `content_scripts` 加载每个选项卡时，所有文件都注入到所有浏览器选项卡页中。  可以注入的允许文件类型是 JavaScript 和 CSS。  你还添加了 `lib\jquery.min.js`。  可以从节顶部提到的下载中包含该内容。
 
 6. 添加 jQuery 并了解关联的线程
 
@@ -212,8 +212,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 侦听器处理事件时，将运行第一个参数的函数。  该函数的第一个参数是具有分配的属性的 `sendMessage`对象。  该函数只处理三个 jQuery 脚本行。
 
-*   第一个脚本行动态插入到 DOM 标头中， **\<style\>** 必须将该节分配为元素的 `slide-image` 类 `img` 。
-*   第二个脚本行在浏览器选项卡下方`body`追加一个`img`元素，该元素分配了`slide-image`类以及`imageDivId`该映像元素的 ID。
+*   第一个脚本行在浏览器选项卡下方`body`追加一个`img`元素，该元素分配了`slide-image`类以及`imageDivId`该映像元素的 ID。
+*   第二个脚本行动态插入到 DOM 标头中， **\<style\>** 该节必须将其分配为元素的 `slide-image` 类 `img` 。
 *   第三个脚本行添加了一个 `click` 事件，该事件涵盖整个图像，允许用户在图像的任意位置进行选择，并且该图像从页面 (以及事件侦听器) 中删除。
 
 8. 添加功能以在选择时删除显示的图像

@@ -5,13 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/05/2022
-ms.openlocfilehash: 4dfd3586991f941c824d9e4bc560f0b4c7460a8e
-ms.sourcegitcommit: d25284aa8d34a4120011637e76a6ad72c5de0da0
+ms.date: 05/24/2022
+ms.openlocfilehash: 20f081dcc55b1a6ec52f574e0fb9fdebcd6f913d
+ms.sourcegitcommit: 70d9b67fe1ab1cda42577ae37f71644f8d95eb3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "12519983"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "12548701"
 ---
 # <a name="videos-about-web-development-with-microsoft-edge"></a>有关使用 Microsoft Edge 进行 Web 开发的视频
 
@@ -33,6 +33,24 @@ To add a new video:
 - Add a markdown image below the date, with the thumbnail you added before, and link this image tag to the YouTube video.
 - Place the description below that, fixing any links that came from YouTube and that might have been shortened.
 -->
+
+
+<!-- ====================================================================== -->
+## <a name="devtools---advanced-issues-filtering-in-edge-devtools-and-vscode"></a>DevTools - Edge DevTools 和 VSCode 中的高级问题筛选
+
+_发布于 2022 年 5 月 20 日。_
+
+[![TDevTools 问题筛选视频的 humbnail 图像](./images/advanced-issues-filtering.png)](https://www.youtube.com/watch?v=_dePgo89bq0)
+
+每个 Web 产品都有问题。 Microsoft Edge DevTools **问题**工具按类型（包括辅助功能、兼容性、性能等）分析当前网页和报告问题。
+
+如果已VS Code，则VS Code的 Microsoft Edge DevTools 扩展会直接在源代码中提供问题。
+
+发布的产品也可能有很多问题。 根据你的反馈，我们添加了有用的方法来筛选问题。 例如，可以禁用来自第三方库的问题，并选择要查看相关问题的浏览器。
+
+若要详细了解“问题”工具，请 [参阅使用“问题”工具查找和解决问题](../devtools-guide-chromium/issues/index.md)。
+
+若要详细了解VS Code的 Microsoft Edge DevTools 扩展，请[参阅 Microsoft Edge Visual Studio Code 的 DevTools 扩展](../visual-studio-code/microsoft-edge-devtools-extension.md)。
 
 
 <!-- ====================================================================== -->
