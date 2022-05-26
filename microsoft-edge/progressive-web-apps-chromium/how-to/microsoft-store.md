@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 ms.date: 12/03/2021
-ms.openlocfilehash: 721b1b0d371bf3f0b5638d6a70b6f8aec8d20b10
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.openlocfilehash: 8d5ffec27ccb50a242c40134df1542d3db6029b2
+ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522439"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "12550698"
 ---
 # <a name="publish-a-progressive-web-app-to-the-microsoft-store"></a>将渐进式 Web 应用发布到Microsoft Store
 
@@ -41,7 +41,7 @@ ms.locfileid: "12522439"
         *   如果显示**Windows & Xbox**，则应用已注册。
         *   如果未显示**Windows & Xbox**，请选择 **“添加程序**”。
 
-    :::image type="content" source="../media/windows-partner-center-add-program.msft.png" alt-text="在Windows合作伙伴中心仪表板中添加程序。":::
+    ![在Windows合作伙伴中心仪表板中添加程序。](../media/windows-partner-center-add-program.msft.png)
 
 1.  若要注册开发人员计划，请执行以下操作：
     1.  导航到**Windows & Xbox**。
@@ -53,9 +53,9 @@ ms.locfileid: "12522439"
     1.  在提示中键入应用的名称。
     1.  选择 `Reserve product name`。
 
-    :::image type="content" source="../media/windows-partner-center-create-app.msft.png" alt-text="在合作伙伴中心Windows创建应用预留。":::
+    ![在合作伙伴中心Windows创建应用预留。](../media/windows-partner-center-create-app.msft.png)
 
-1.  若要显示发布者详细信息，以便在[“打包PWA](#package-your-pwa-for-the-store)”部分中使用，请选择 **“产品管理** > **产品标识**”。
+1.  若要显示发布者详细信息，以便在[“打包”PWA](#package-your-pwa-for-the-store)部分中使用，请选择 **“产品管理** > **产品标识**”。
 
     :::image type="content" source="../media/windows-partner-center-publisher-info.msft.png" alt-text="从合作伙伴中心Windows复制发布者信息。" lightbox="../media/windows-partner-center-publisher-info.msft.png":::
     <!-- lightbox justified because large detailed image -->
@@ -82,7 +82,7 @@ ms.locfileid: "12522439"
     *   **发布者 ID**
     *   **Publisher显示名称**
 
-    :::image type="content" source="../media/pwabuilder-windows-package-options.png" alt-text="将发布者信息粘贴到 PWABuilder 中。":::
+    ![将发布者信息粘贴到 PWABuilder 中。](../media/pwabuilder-windows-package-options.png)
 
 1.  选择 **“生成**”。
 1.  若要下载Windows应用包，请选择 **“下载**”。
@@ -98,7 +98,7 @@ ms.locfileid: "12522439"
 1.  选择应用。
 1.  **选择提交"开始"菜单**。
 
-    :::image type="content" source="../media/windows-partner-center-start-submission.msft.png" alt-text="&quot;开始&quot;菜单合作伙伴中心Windows新应用提交。":::
+    !["开始"菜单合作伙伴中心Windows新应用提交。](../media/windows-partner-center-start-submission.msft.png)
 
 1.  系统提示时，请提供有关应用的信息，例如定价和年龄分级。
 
@@ -128,7 +128,7 @@ Microsoft Edge版本 91 中首次引入了此功能，DOM API 是在版本 93 Mi
 
 下图显示了当用户移出PWA范围时引入的 UI。 
 
-:::image type="content" source="../media/locale-redirection-additional-ui.png" alt-text="当应用重定向到另一个域时，具有 URL 和页面标题的其他 UI。":::
+![当应用重定向到另一个域时，具有 URL 和页面标题的其他 UI。](../media/locale-redirection-additional-ui.png)
 
 ### <a name="domain-redirection-with-browser-installed-pwas"></a>使用浏览器安装的 PVA 进行域重定向
 

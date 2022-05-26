@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/20/2021
-ms.openlocfilehash: 108152ee996050c8d3420917ac69fbe91f0895fe
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: ffbfa39002f878749aa3bb1bbeac733ebaa1749e
+ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514767"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "12550575"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-95"></a>DevTools (Microsoft Edge 95)中的新增功能
 
@@ -47,7 +47,7 @@ ms.locfileid: "12514767"
 ![现在，所有控制台中的错误和警告消息现在都具有搜索 Web 图标。](../../media/2021/10/console-message-search-web-button.png)
 
 另请参阅：
-* [在控制台中从控制台在 Web 上查找错误消息](../../../console/index.md#look-up-error-messages-on-the-web-from-the-console)_概述_。
+* [在 Web 中搜索控制台错误消息字符串](../../../console/index.md#search-the-web-for-a-console-error-message-string) （ _在控制台概述_中）。
 
 
 <!-- ====================================================================== -->

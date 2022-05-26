@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/25/2021
-ms.openlocfilehash: ca07df84c9df3662a42a211cfd0e53498aa3369a
-ms.sourcegitcommit: 62f55a8303644d4d3f2ea29e624efcc54f465aa1
+ms.openlocfilehash: 1f77976296900f3e3b510f147a7d7a023041f30c
+ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "12521848"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "12550810"
 ---
 # <a name="overview-of-microsoft-edge-extensions"></a>Microsoft Edge 扩展概述
 
@@ -27,9 +27,7 @@ Microsoft Edge *扩展* 是开发人员用于添加或修改 Microsoft Edge 功�
 
 若要直接使用部分浏览器 (如窗口或选项卡)，必须发送 API 请求并通常按名称引用浏览器。
 
-:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="Microsoft Edge扩展。" lightbox="./media/example-extension-screenshot.png":::
-  Microsoft Edge 扩展
-:::image-end:::
+:::image type="content" source="./media/example-extension-screenshot.png" alt-text="Microsoft Edge扩展。" lightbox="./media/example-extension-screenshot.png":::
 
 
 <!-- ====================================================================== -->

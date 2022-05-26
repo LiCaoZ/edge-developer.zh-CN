@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 ms.date: 09/15/2021
-ms.openlocfilehash: d620270efd9cb8ac8504b59f215ab6a4c00d51ea
-ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
+ms.openlocfilehash: 9b0a4b59fbc1efa72e20c787390091ac8d361280
+ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "12521100"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "12550826"
 ---
 # <a name="experimental-features-and-origin-trials"></a>实验性功能和源试用版
 
@@ -32,7 +32,7 @@ Microsoft Edge中的一些PWA功能仍是实验性的。 可通过两种方式�
 1.  导航到相关试验。
 1.  选择实验说明旁边的下拉菜单，然后选择 **“启用** 以打开功能”或“ **禁用** ”将其关闭。
 
-    :::image type="content" source="../media/turn-on-experimental-flag.png" alt-text="选择“启用”以启用试验。":::
+    ![选择“启用”以启用试验。](../media/turn-on-experimental-flag.png)
 
 
 <!-- ====================================================================== -->
@@ -40,7 +40,7 @@ Microsoft Edge中的一些PWA功能仍是实验性的。 可通过两种方式�
 
 Microsoft Edge有时使用源试验来测试特定域或网站的功能。 你可能希望使用网站的源试用版来应用特定功能。 如果你是网站所有者，则可以注册源试用版。 源试用版为访问网站的Microsoft Edge用户的百分比提供功能。
 
-有关源试用版的详细信息，请参阅[Microsoft Edge源试用版开发人员控制台](https://developer.microsoft.com/en-us/microsoft-edge/origin-trials)。<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->
+有关源试用版的详细信息，请参阅[Microsoft Edge源试用版开发人员控制台](https://developer.microsoft.com/microsoft-edge/origin-trials)。
 
 
 <!-- ====================================================================== -->

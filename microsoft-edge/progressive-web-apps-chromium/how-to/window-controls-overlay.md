@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 ms.date: 09/02/2021
-ms.openlocfilehash: 83cb7cf18b298f9627d6124162023c9084d9dd57
-ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
+ms.openlocfilehash: f6f674d52bd6fffeed191d8c5e5a84b1c9231f83
+ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "12520890"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "12550667"
 ---
 # <a name="display-content-in-the-title-bar"></a>在标题栏中显示内容
 
@@ -20,11 +20,11 @@ PWA可以使用应用清单文件中的[显示](https://developer.mozilla.org/do
 
 默认情况下，应用区域立即在保留标题栏区域下方启动：
 
-:::image type="content" source="../media/my-tracks-titlebar.png" alt-text="“我的轨道”演示应用上显示的默认Windows应用标题栏。":::
+![“我的轨道”演示应用上显示的默认Windows应用标题栏。](../media/my-tracks-titlebar.png)
 
 显示标题栏通常位于其中的内容可帮助 PVA 感觉更本机。  许多桌面应用程序（如Visual Studio Code、Microsoft Teams和Microsoft Edge已执行此操作：
 
-:::image type="content" source="../media/vscode-titlebar.png" alt-text="Visual Studio Code在标题栏区域中显示内容。":::
+![Visual Studio Code在标题栏区域中显示内容。](../media/vscode-titlebar.png)
 
 窗口控件覆盖 API 执行以下操作：
 *  允许在应用的整个外围显示 Web 内容。
@@ -41,13 +41,13 @@ PWA可以使用应用清单文件中的[显示](https://developer.mozilla.org/do
 
 1.  在Microsoft Edge，去`edge://flags`。
 1.  选择 **“搜索标志** ”，然后键入“窗口控件覆盖”。
-1.  选择 ******DefaultEnabledRestart** > **** > 。
+1.  选择 **“已启用** > **默认** > **重启**”。
 
-    :::image type="content" source="../media/enable-window-controls-overlay-experiment.png" alt-text="启用窗口控件覆盖 API 试验。":::
+    ![启用窗口控件覆盖 API 试验。](../media/enable-window-controls-overlay-experiment.png)
 
 窗口控件覆盖 API 也作为源试用功能提供。  若要使应用的用户从窗口控件覆盖中受益，而无需在Microsoft Edge中启用它，则可以使用源试用版。
 
-有关源试用版的详细信息，请转到[Microsoft Edge源试用版开发人员控制台](https://developer.microsoft.com/en-us/microsoft-edge/origin-trials)。<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->
+有关源试用版的详细信息，请转到[Microsoft Edge源试用版开发人员控制台](https://developer.microsoft.com/microsoft-edge/origin-trials)。
 
 
 <!-- ====================================================================== -->
@@ -67,7 +67,7 @@ PWA可以使用应用清单文件中的[显示](https://developer.mozilla.org/do
 
 启用窗口控件覆盖功能后，用户可以通过单击标题栏切换按钮来选择标题栏：
 
-:::image type="content" source="../media/my-tracks-titlebar-toggle.png" alt-text="选择标题栏切换按钮。":::
+![选择标题栏切换按钮。](../media/my-tracks-titlebar-toggle.png)
 
 代码不能假定显示窗口控件覆盖，因为：
 *  用户可以选择是否显示标题栏。
@@ -175,7 +175,7 @@ if ('windowControlsOverlay' in navigator) {
 
    应用现在一直显示内容到窗口框架的顶部，其中的标题栏曾经是。  地图的顶部区域是一个拖动处理程序，让用户移动窗口。
 
-   :::image type="content" source="../media/my-tracks-draggable-titlebar.png" alt-text="地图的顶部区域可用于移动窗口。":::
+   ![地图的顶部区域可用于移动窗口。](../media/my-tracks-draggable-titlebar.png)
 
 此应用的源代码位于 [“我的跟踪](https://github.com/captainbrosset/mytracks) ”存储库中。
 

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/29/2021
-ms.openlocfilehash: a95feec15d17d3506423e6be127cc48f828244d7
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.openlocfilehash: 66e0cde66617ab0af5856e5871a05eef0964d40e
+ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522250"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "12550601"
 ---
 <!-- Copyright Kayce Basques
 
@@ -500,11 +500,11 @@ DevTools 中的 **元素** 工具允许你一次查看或更改一个元素的 C
 1. 在“ **样式”** 选项卡中 `transform` ，找到要更改的或 `background` 声明。  单击角度值旁边的 **“角度预览** ”框。
 
    在下图中，左侧 `100deg` 的小时钟是角度的预览。
-   <!-- :::image type="content" source="../media/__.png" alt-text="The Angle Clock."::: -->
+   <!-- ![The Angle Clock.](../media/__.png) -->
 
 1. 单击预览以打开 **角度时钟**：
 
-   :::image type="content" source="images/css-angle.msft.png" alt-text="角度预览。":::
+   ![角度预览。](images/css-angle.msft.png)
 
 1. 通过单击 **“角度时钟”** 圆来更改角度值，或滚动鼠标以增加或减少角度值 1。
 

@@ -8,92 +8,92 @@ ms.prod: microsoft-edge
 no-loc:
 - Enable new font editor tool within the Styles pane
 ms.date: 03/11/2021
-ms.openlocfilehash: b10331f836f8784081d862104644531c5242b200
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: cd89e55b708fd729fb8514e0421970c99594c9d2
+ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431744"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "12550587"
 ---
 # <a name="edit-css-font-styles-and-settings-in-the-styles-pane"></a>在“样式”窗格中编辑 CSS 字体样式和设置
 
-:::image type="icon" source="../media/experimental-tag-14px.msft.png":::
+![此功能是实验性的](../media/experimental-tag-14px.msft.png)
 
-为了在使用版式时更加轻松，现在"样式"**** 窗格中提供了**可视字体编辑器**。  使用 **字体编辑器**，可以更改字体设置，更改会立即呈现在浏览器中，所有这些更改都无需深入了解 CSS。  The **Elements** tool > **Styles** tab > **Font Editor** icon opens the **Font Editor**， which consists of two parts：
+为了在使用版式时更轻松地使用，现在“**样式**”窗格中提供了可视**字体编辑**器。  使用 **字体编辑器**，可以更改字体设置，并且更改会立即在浏览器中呈现 - 所有更改都不深入了解 CSS。  “ **元素** ”工具> **“样式** ”选项卡> **“字体编辑器** ”图标打开 **字体编辑**器，其中包含两个部分：
 
-*  字体 **系列** 选择器。
+*  **字体系列**选择器。
 *  **CSS 属性**编辑器。
 
-网页版式是用户体验的重要组成部分。  希望确保字体遵循公司品牌准则，并确保内容在各种设备上按预期方式显示。  必须使用大小和线条高度让文本更易于阅读。  用户可以调整字体大小以满足个人需求。
+网页版式是用户体验的重要组成部分。  你希望确保字体遵循公司品牌准则，并且内容按预期显示在各种设备上。  必须使用大小和线条高度让文本更易于阅读。  用户可以调整字体大小以满足单个需求。
 
-对于特定字体在用户设备上不可用的情况，你应该提供回退字体选项。
+对于特定字体在用户设备上不可用的情况，应提供回退字体选项。
 
-近年来，CSS 为版式提供了更好的支持。  有数十种不同的 CSS 单位可用于定义文本大小。  有几个 CSS 属性可用于控制字体大小、间距、行高和其他排版功能。
+近年来，CSS 为版式提供了更好的支持。  有数十种不同的 CSS 单位可用于定义文本大小。  可使用多个 CSS 属性来控制字号、间距、行高和其他版式功能。
 
-目前，["样式"](../experimental-features/index.md#enable-the-font-editor-tool-within-the-styles-pane)窗格功能中的"启用新字体编辑器"工具是实验性的，你需要为开发人员工具Microsoft Edge[该工具](../experimental-features/index.md#turning-an-experiment-on-or-off)。
+目前，“[样式”窗格功能中的“启用新字体编辑器”工具](../experimental-features/index.md#enable-the-font-editor-tool-within-the-styles-pane)是实验性的，你需要[将其用于Microsoft Edge开发人员工具](../experimental-features/index.md#turning-an-experiment-on-or-off)。
 
-" **样式"窗格中** 的任何 CSS（字体定义或内联样式）都有"字体 **编辑器"** 图标。  若要打开可视字体 **编辑器，** 请单击" **字体编辑器"** 图标。
+**样式**窗格中的任何 CSS（字体定义或内联样式）都具有**字体编辑器**图标。  若要打开视觉 **对象字体编辑器**，请单击 **“字体编辑器** ”图标。
 
-:::image type="content" source="../media/font-editor-icon.msft.png" alt-text="&quot;样式&quot;窗格中用于编辑字体设置的图标。" lightbox="../media/font-editor-icon.msft.png":::
+:::image type="content" source="../media/font-editor-icon.msft.png" alt-text="“样式”窗格中的图标，用于编辑字体设置。" lightbox="../media/font-editor-icon.msft.png":::
 
-" **字体编辑器** "将在"样式"窗格 **顶部** 打开：
+**字体编辑器**在“**样式**”窗格顶部打开：
 
-:::image type="content" source="../media/font-editor-open.msft.png" alt-text="&quot;字体编辑器&quot;将在&quot;样式&quot;窗格顶部打开。" lightbox="../media/font-editor-open.msft.png":::
+:::image type="content" source="../media/font-editor-open.msft.png" alt-text="字体编辑器在“样式”窗格顶部打开。" lightbox="../media/font-editor-open.msft.png":::
 
-可视“**字体编辑器**”中的所有字段都是根据“**样式**”窗格中的 CSS 值填充的。  例如，在`line-height`"**** 样式"窗格中`160%`，定义设置为 ，因此行高文本字段将显示 `160`，而单位下拉列表显示 。`%`  此外，滑块会自动设置为与文本字段的值匹配。
+可视“**字体编辑器**”中的所有字段都是根据“**样式**”窗格中的 CSS 值填充的。  例如， `line-height` 定义设置为 `160%` “ **样式** ”窗格中，因此显示行高文本字段 `160`，并显示 `%`单元下拉列表。  此外，滑块会自动设置为与文本字段的值匹配。
 
 
 <!-- ====================================================================== -->
 ## <a name="the-font-family-selector"></a>“字体系列”选择器
 
-“字体系列”选择器位于可视“**字体编辑器**”的上部。  若要选择 CSS 规则的字体，请在 CSS 编辑器中，使用 **"** 字体系列"选择器。  可以针对每个 CSS 规则选择主字体和回退字体。
+“字体系列”选择器位于可视“**字体编辑器**”的上部。  若要选择 CSS 规则的字体，请在 CSS 编辑器中使用 **字体系列** 选择器。  可以为每个 CSS 规则选择主字体和回退字体。
 
-字体 **编辑器在** "样式" **窗格顶部打开** ，其中突出显示了 **"字体系列** "选择器：
+“样**式**”窗格顶部打开的**字体编辑**器，其中突出显示了 **“字体系列**”选择器：
 
-:::image type="content" source="../media/font-editor-font-family.msft.png" alt-text="字体编辑器在&quot;样式&quot;窗格顶部打开，其中突出显示了&quot;字体系列&quot;选择器。" lightbox="../media/font-editor-font-family.msft.png":::
+:::image type="content" source="../media/font-editor-font-family.msft.png" alt-text="“字体编辑器”在“样式”窗格顶部打开，其中突出显示了“字体系列”选择器。" lightbox="../media/font-editor-font-family.msft.png":::
 
-使用 **"字体系列** "下拉列表选择字体。  字体分为四组：
+使用 **字体系列** 下拉列表选择字体。  字体分为四个组：
 
-*  **计算字体**，即样式窗格中样式表**提供的字体。**
-*  **系统**字体，即当前操作系统上提供的字体。
-*  **常规字体系列，** 如 `serif` 或 `sans-serif`。
-*  **全局值**，如 `inherit`、 `initial`和 `unset`。
+*  **计算字体**，这些字体是样式窗格中样式表中可用 **的** 字体。
+*  **系统字体**，这些字体是当前操作系统上可用的字体。
+*  **泛型字体系列**，例如 `serif` 或 `sans-serif`。
+*  **全局值**，例如 `inherit`， `initial`和 `unset`。
 
-字体 **编辑器在** "样式" **窗格顶部打开** ，其中突出显示了 **"字体系列** "选择器：
+“样**式**”窗格顶部打开的**字体编辑**器，其中突出显示了 **“字体系列**”选择器：
 
-:::image type="content" source="../media/font-editor-font-family-list.msft.png" alt-text="字体编辑器在&quot;样式&quot;窗格顶部打开，其中突出显示了&quot;字体系列&quot;选择器。" lightbox="../media/font-editor-font-family-list.msft.png":::
+:::image type="content" source="../media/font-editor-font-family-list.msft.png" alt-text="字体编辑器在“样式”窗格顶部打开，其中突出显示了“字体系列”选择器。" lightbox="../media/font-editor-font-family-list.msft.png":::
 
-选择字体后，将显示另一个下拉菜单，供你选择回退字体。  你最多可以选择八种回退字体。  若要删除字体，请单击"删除 **字体系列"** 图标。
+选择字体后，将显示另一个下拉菜单，以便选择回退字体。  最多可以选择 8 个回退字体。  若要删除字体，请单击 **“删除字体系列** ”图标。
 
 <!--:::image type="content" source="../media/font-editor-defining-fonts.msft.png" alt-text="The font editor with a defined list of fonts and fallback fonts." lightbox="../media/font-editor-defining-fonts.msft.png":::-->
 
 > [!NOTE]
-> 如果选择字体系列全局值，则不会获得另一个下拉菜单，因为 CSS 中没有回退。
+> 如果为字体系列选择全局值，则不会获得另一个下拉菜单，因为 CSS 中没有回退。
 
 
 <!-- ====================================================================== -->
 ## <a name="the-css-properties-editor"></a>“CSS 属性”编辑器
 
-您可以在可视字体编辑器的下半部分更改 CSS **字体属性**。  可以使用任何 UI 控件更改字号、行高、字体粗细和字母间距。  所做的更改将立即在浏览器中应用。
+可以在视觉对象字体编辑器的下半部分更改 CSS **字**体属性。  可以使用任何 UI 控件更改字号、行高、字体粗细和字母间距。  所做的更改将立即在浏览器中应用。
 
-" **字体编辑器** "在"样式" **窗格顶部打开** ，其中突出显示了 CSS 属性：
+**字体编辑器**在“**样式**”窗格顶部打开，其中突出显示了 CSS 属性：
 
-:::image type="content" source="../media/font-editor-css-properties.msft.png" alt-text="&quot;字体编辑器&quot;在&quot;样式&quot;窗格顶部打开，其中突出显示了 CSS 属性。" lightbox="../media/font-editor-css-properties.msft.png":::
+:::image type="content" source="../media/font-editor-css-properties.msft.png" alt-text="字体编辑器在“样式”窗格顶部打开，其中突出显示了 CSS 属性。" lightbox="../media/font-editor-css-properties.msft.png":::
 
-您还可以使用可视字体编辑器转换 CSS **单位**。  例如，可以在 CSS 规则（其中字体大小滑块最初设置为 ）上**** 使用此工具`16 pixels`。  现在，使用单位下拉列表并选择值 `em`。  显示的 `1 em` 等于 `16 pixels`。
+还可以使用视觉字 **体编辑**器转换 CSS 单元。  例如，可以在 CSS 规则上使用该工具，其中字 **体大小** 滑块最初设置为 `16 pixels`。  现在，使用单元下拉列表并选择值 `em`。  显示的 `1 em` 等于 `16 pixels`。
 
 将字体大小更改为 `16 pixels`：
 
 :::image type="content" source="../media/font-editor-setting-to-16px.msft.png" alt-text="将字体大小更改为 16 像素。" lightbox="../media/font-editor-setting-to-16px.msft.png":::
 
-打开"单位"下拉列表以转换为 `em`：
+打开要转换为 `em`以下内容的单元下拉列表：
 
-:::image type="content" source="../media/font-editor-converted-to-em.msft.png" alt-text="打开单位下拉列表以转换为 em。" lightbox="../media/font-editor-converted-to-em.msft.png":::
+:::image type="content" source="../media/font-editor-converted-to-em.msft.png" alt-text="打开要转换为其的单元下拉列表。" lightbox="../media/font-editor-converted-to-em.msft.png":::
 
-"单位"下拉列表提供所有可用的数值 CSS 单位。  字体大小、线条高度、字体粗细和间距都使用不同的单位。  当文本框具有焦点时，可以按 `arrow up` 和 `arrow down` 键来微调设置。  若要将滑块与键盘一同使用，请按 `arrow left` 和 `arrow down` 键。
+单元下拉列表提供所有可用的数值 CSS 单元。  字体大小、线条高度、字体粗细和间距都使用不同的单位。  当文本框具有焦点时，可以按下 `arrow up` 和 `arrow down` 键来微调设置。  若要将滑块与键盘配合使用，请按下 `arrow left` 和 `arrow down` 键。
 
-“CSS 属性”编辑器还包括预设关键字。  若要使用预设关键字，请在右侧单击图标 `Toggle Input Type` 。  UI 发生更改，并显示预设关键字的下拉列表。  若要使用滑块和其他 UI 控件返回到 UI，请再次单击 `Toggle Input Type` 该图标。
+“CSS 属性”编辑器还包括预设关键字。  若要使用预设关键字，请在右侧单击图 `Toggle Input Type` 标。  UI 更改，并显示预设关键字的下拉列表。  若要使用滑块和其他 UI 控件返回到 UI，请再次单击该 `Toggle Input Type` 图标。
 
-打开预设关键字界面：
+打开预设关键字接口：
 
-:::image type="content" source="../media/font-editor-preset-font-sizes.msft.png" alt-text="打开预设关键字界面。" lightbox="../media/font-editor-preset-font-sizes.msft.png":::
+:::image type="content" source="../media/font-editor-preset-font-sizes.msft.png" alt-text="打开预设关键字接口。" lightbox="../media/font-editor-preset-font-sizes.msft.png":::

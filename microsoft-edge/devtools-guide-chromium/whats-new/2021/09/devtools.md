@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 09/03/2021
-ms.openlocfilehash: 0eda8e27889bb4823cdeb7f3d9f93fb52123976b
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 29e195ef941bd7186ca1174473fcf8cafd5b1f78
+ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12513955"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "12550674"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-94"></a>DevTools (Microsoft Edge 94) 中的新增功能
 
@@ -28,7 +28,7 @@ ms.locfileid: "12513955"
 
 ![控制台中错误的“在 Web 上搜索此消息”按钮。](../../media/2021/09/search-console-icon.msft.png)
 
-请参阅[主机在 Web 上的查找错误消息](../../../console/index.md#look-up-error-messages-on-the-web-from-the-console)。
+请参阅 [在 Web 上搜索控制台错误消息字符串](../../../console/index.md#search-the-web-for-a-console-error-message-string)。
 
 
 <!-- ====================================================================== -->

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 ms.date: 09/27/2021
-ms.openlocfilehash: b78b6e1afe486f66cbbcf73f991186b8790e8ba3
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 810729d255c73ccf43f5502bd4bc3f9827efd9e8
+ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514865"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "12550711"
 ---
 # <a name="share-content-with-other-apps"></a>与其他应用共享内容
 
@@ -78,7 +78,7 @@ async function shareSomeContent(title, text, url) {
 
 Windows时，上述代码将触发共享对话框，允许用户选取应用以接收共享内容。  共享对话框如下所示：
 
-:::image type="content" source="../media/windows-share-dialog.png" alt-text="Windows上的“共享”对话框。":::
+![Windows上的“共享”对话框。](../media/windows-share-dialog.png)
 
 用户选择一个应用以接收共享内容后，由此应用以它选择的任何方式处理它。  例如，电子邮件应用可能使用 `title` 电子邮件主题，并使用电子邮件 `text` 正文。
 
@@ -133,7 +133,7 @@ async function getImageFileFromURL(imageURL, title) {
 
 将显示“Windows**共享**”对话框。  用户选择要在其中共享内容的应用：
 
-:::image type="content" source="../media/devtools-tips-share.png" alt-text="“Windows共享”对话框允许用户选择应接收共享内容的应用。":::
+![“Windows共享”对话框允许用户选择应接收共享内容的应用。](../media/devtools-tips-share.png)
 
 可以在[GitHub上找到源代码](https://github.com/captainbrosset/devtools-tips/)。  应用在 [share.js](https://github.com/captainbrosset/devtools-tips/blob/main/src/assets/share.js#L38) 源文件中使用 Web 共享 API。
 

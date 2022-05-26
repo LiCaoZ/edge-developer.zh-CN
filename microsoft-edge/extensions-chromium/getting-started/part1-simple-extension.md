@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/07/2021
-ms.openlocfilehash: 8285fe5cabf2828a65d7b2b6bac7bc5110446ef0
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.openlocfilehash: f8442d590894da594c64432a000d907b83874337
+ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522222"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "12550680"
 ---
 # <a name="create-an-extension-tutorial-part-1"></a>创建扩展教程，第 1 部分
 
@@ -54,9 +54,7 @@ ms.locfileid: "12522222"
 
 通过在项目中创建`icons`目录来存储图标图像文件来"开始"菜单。  这些图标用于用户选择启动扩展的按钮的背景图像。
 
-:::image type="complex" source="./media/part1-badge1.png" alt-text="用于打开扩展的工具栏上的图标。":::
-   用于打开扩展的工具栏上的图标
-:::image-end:::
+![用于打开扩展的工具栏上的图标。](./media/part1-badge1.png)
 
 对于图标：
 *  建议使用`PNG`格式，但也可以使用 `ICO` `BMP``GIF`或`JPEG`使用格式。

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 11/19/2021
-ms.openlocfilehash: fc82414c6699790bac4c0324ed575596e6c115e1
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.openlocfilehash: e48522e071a02e040ca9201d7cd60b9679b16ece
+ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522180"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "12550806"
 ---
 # <a name="get-started-with-progressive-web-apps"></a>渐进式 Web 应用入门
 
@@ -57,7 +57,7 @@ npm start
 
 现在浏览以 `http://localhost:3000` 查看新的 Web 应用。
 
-:::image type="content" source="../media/visual-studio-nodejs-express-index.png" alt-text="在 localhost 上运行新PWA。":::
+![在 localhost 上运行新PWA。](../media/visual-studio-nodejs-express-index.png)
 
 
 <!-- ====================================================================== -->
@@ -87,7 +87,7 @@ npm start
 
 若要将应用清单添加到 Web 应用，请执行以下操作：
 
-1.  在Visual Studio Code中，选择 **FileOpen** >  **文件夹**，然后选择`MySamplePwa`之前创建的目录。
+1.  在Visual Studio Code中，选择 **“文件** > **打开文件夹**”，然后选择`MySamplePwa`之前创建的目录。
 1.  按 `Ctrl`+`N` 下以创建新文件。
 1.  将以下代码复制并粘贴到新文件中：
 
@@ -176,7 +176,7 @@ Web 应用现在有一个使用缓存优先策略的服务辅助角色。  新�
 
 1.  刷新应用。  它应显示脱机机制，以便从缓存中为应用的资源提供服务。
 
-    :::image type="content" source="../media/visual-studio-nodejs-express-index.png" alt-text="脱机运行的PWA。":::
+    ![脱机运行的PWA。](../media/visual-studio-nodejs-express-index.png)
 
 现在可以安装应用。
 <!-- todo: Expand the ending of the article or section.  Show a breakdown of what the service worker does. -->

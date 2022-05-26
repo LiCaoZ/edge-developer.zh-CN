@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
-ms.openlocfilehash: e555e3621a6f2bf4b7e2dcae5f076ac28c702332
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: e7d46b270f018cd1b0326607a83cb860557c5009
+ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514543"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "12550653"
 ---
 <!-- Copyright Kayce Basques
 
@@ -92,7 +92,7 @@ DevTools 提供以下移动设备仿真功能：
 | 桌面 (触摸)  | 桌面 | 圆形 | `touch` |
 
 > [!NOTE]
-> 如果未显示 **设备类型** 列表，请选择 **“更多选项** > **”设备类型**。
+> 如果未显示 **“设备类型** ”列表，请选择 **“更多选项** > **添加设备类型**”。
 
 ### <a name="mobile-device-viewport-mode"></a>移动设备视区模式
 
@@ -146,13 +146,13 @@ iPhone 6 的设备帧：
 
 ### <a name="show-rulers"></a>显示标尺
 
-如果需要测量屏幕尺寸，可以使用标尺以像素度量屏幕大小。  选择 **“更多选项** > **”显示标尺** ，以显示视区上方和左侧的标尺。
+如果需要测量屏幕尺寸，可以使用标尺以像素度量屏幕大小。  选择 **“更多选项** > **显示标尺** ”以显示视区上方和左侧的标尺。
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="显示标尺菜单项。":::
+![显示标尺菜单项。](../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png)
 
 标尺显示在视区上方和左侧：
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-rulers.msft.png" alt-text="视区上方和左侧的标尺。":::
+![视区上方和左侧的标尺。](../media/device-mode-toggle-device-toolbar-rulers.msft.png)
 
 ### <a name="zoom-the-viewport"></a>缩放视区
 
@@ -187,7 +187,7 @@ iPhone 6 的设备帧：
 
 1. 选择 **“性能”** 面板，然后选择“**捕获设置 (**![捕获设置。](../media/capture-settings-icon.msft.png)) 。
 
-1. 选择 **CPU4x** >  **减速**或 **6 倍减速**。
+1. 选择 **CPU** > **4 倍减速** 或 **6 倍减速**。
 
    :::image type="content" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="性能面板中的 CPU 列表。" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
 
@@ -196,7 +196,7 @@ iPhone 6 的设备帧：
 
 仅限制网络而不限制 CPU：
 
-1. 选择**网络**工具，然后选择 **OnlineFast** >  **3G** 或**慢速 3G**。
+1. 选择 **网络** 工具，然后选择 **联机** > **快速 3G** 或 **慢速 3G**。
 
    :::image type="content" source="../media/device-mode-network-throttle.msft.png" alt-text="网络面板中的“限制”列表。" lightbox="../media/device-mode-network-throttle.msft.png":::
 
@@ -216,7 +216,7 @@ iPhone 6 的设备帧：
 
  如果页面依赖于移动设备的地理位置信息来正确呈现，请使用地理位置替代 UI 提供不同的地理位置。
 
-1. 选择 **“自定义并控制 DevTools**” (`...`) >**更多工具** > **。**
+1. 选择 **“自定义并控制 DevTools** ” (`...`) > **“更多工具** > **传感器**”。
 
    :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="用于地理位置的传感器。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
@@ -234,7 +234,7 @@ iPhone 6 的设备帧：
 
 如果页面依赖来自移动设备的方向信息来正确呈现，请打开方向 UI。
 
-1. 选择 **“自定义并控制 DevTools**” (`...`) >**更多工具** > **。**
+1. 选择 **“自定义并控制 DevTools** ” (`...`) > **“更多工具** > **传感器**”。
 
    :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="“更多工具”菜单上的“传感器”命令。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
@@ -254,7 +254,7 @@ iPhone 6 的设备帧：
 
 如果页面依赖移动设备中的用户代理字符串来正确呈现，请使用“**网络条件**”面板提供不同的用户代理字符串。
 
-1. 选择 **“自定义”并控制 DevTools** (`...`) >**更多** **toolsNetwork** >  条件。
+1. 选择 **“自定义并控制 DevTools** ” (`...`) > **更多工具** > **网络条件**。
 
    :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="“更多工具”菜单中的“网络条件”条目。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
 

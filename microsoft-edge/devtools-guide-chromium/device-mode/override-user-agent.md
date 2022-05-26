@@ -1,17 +1,17 @@
 ---
 title: 替代用户代理字符串
-description: 打开"网络条件"工具，禁用"自动选择"，然后从列表中选择或输入自定义字符串。
+description: 打开“网络条件”工具，禁用“自动选择”，然后从列表中选择或输入自定义字符串。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
-ms.openlocfilehash: bf05aea57d00a1fa9615e5baafb2d1615888ef06
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 3fbed2859b77d02fe661fdf550433fc91970d2e3
+ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12432663"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "12550546"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,27 +28,27 @@ ms.locfileid: "12432663"
    limitations under the License.  -->
 # <a name="override-the-user-agent-string"></a>替代用户代理字符串
 
-若要替代 [DevTools 中的](https://developer.mozilla.org/docs/Glossary/User_agent)用户Microsoft Edge字符串：
+若要从 Microsoft Edge DevTools 重写[用户代理](https://developer.mozilla.org/docs/Glossary/User_agent)字符串：
 
-1. 按 `Ctrl``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开命令**菜单**。
+1. 按“`Ctrl`+`Shift`+`P`”(Windows、Linux)或“`Command`+`Shift`+`P`”(macOS)以打开“**命令菜单**”。
 
-   :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="命令菜单。":::
+   ![命令菜单。](../media/device-mode-console-command-menu.msft.png)
     
-1. 键入 `network conditions`，选择 **"显示网络**条件"，然后按 `Enter` 以打开 **"网络条件"** 工具。
+1. 键入 `network conditions`，选择 **“显示网络条件**”，然后按 `Enter` 下以打开 **“网络条件”** 工具。
 
-1. 在" **用户代理"** 部分，清除" **使用浏览器默认"** 复选框。
+1. 在 **“用户代理** ”部分中，清除 **“使用浏览器”默认** 复选框。
 
-   :::image type="content" source="../media/clear-use-browser-default-checkbox.png" alt-text="清除&quot;使用浏览器默认值&quot;复选框。":::
+   ![清除“使用浏览器默认值”复选框。](../media/clear-use-browser-default-checkbox.png)
 
 1. 从下拉列表中选择用户代理，或输入自定义用户代理。
 
-1. 单击 **"用户代理客户端提示** "查看和更改这些值，如网络功能 [参考中所述](../network/reference.md)。
+1. 单击 **“用户代理客户端提示** ”以查看和更改这些值，如 [网络功能参考](../network/reference.md)中所述。
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-* [在模拟移动设备和](index.md#set-the-user-agent-string)设备仿真_ (设置_用户代理) 
+* 在_模拟移动设备 (设备仿真) _中[设置用户代理字符串](index.md#set-the-user-agent-string)
 
 
 <!-- ====================================================================== -->

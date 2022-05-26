@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 ms.date: 09/17/2021
-ms.openlocfilehash: 52cccb1d8d11a2355ec1b2e0e672c1e39f69d807
-ms.sourcegitcommit: 3c588824bd8c7484fa31acae4857405a7eec5e36
+ms.openlocfilehash: 82d8b821205f7d7b5d726504022d1b6c39593c2c
+ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "12506977"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "12550709"
 ---
 # <a name="re-engage-users-with-badges-notifications-and-push-messages"></a>使用锁屏提醒、通知和推送通知重新吸引用户
 
@@ -60,7 +60,7 @@ navigator.setAppBadge();
 navigator.setAppBadge(42);
 ```
 
-:::image type="content" source="../media/app-badge-in-taskbar.png" alt-text="Windows任务栏中的PWA图标，其中有一个显示数字 42 的徽章。":::
+![Windows任务栏中的PWA图标，其中有一个显示数字 42 的徽章。](../media/app-badge-in-taskbar.png)
 
 该 `setAppBadge` 函数返回一个 Promise，可用于知道何时添加锁屏提醒，并捕获潜在错误，如下所示：
 
@@ -136,7 +136,7 @@ if (Notification.permission === "granted") {
 const notification = new Notification("Hello World!");
 ```
 
-:::image type="content" source="../media/notification-text-only.png" alt-text="仅限文本的通知。":::
+![仅限文本的通知。](../media/notification-text-only.png)
 
 上面的代码显示一条仅限文本的通知消息，但你也可以通过包括其他 `body` 和 `icon` 属性来自定义消息：
 
@@ -147,7 +147,7 @@ const notification = new Notification("Hello World!", {
 });
 ```
 
-:::image type="content" source="../media/notification-with-image.png" alt-text="包含一些文本和图像的通知。":::
+![包含一些文本和图像的通知。](../media/notification-with-image.png)
 
 还可以显示来自应用服务辅助角色的通知。 这很有用，因为服务辅助角色可能会在应用未运行时执行工作。 若要从服务辅助角色发送通知，请使用该 `ServiceWorkerRegistration.showNotification` 函数：
 
@@ -178,7 +178,7 @@ self.registration.showNotification("Your content is ready", {
 });
 ```
 
-:::image type="content" source="../media/notification-with-actions.png" alt-text="包含一些文本、图像和两个操作的通知。":::
+![包含一些文本、图像和两个操作的通知。](../media/notification-with-actions.png)
 
 当用户单击其中一个操作按钮时，PWA可以通过侦听事件来`notificationclick`处理单击。  `notificationclick`收到事件后，关闭通知并执行一些代码：
 
@@ -329,17 +329,17 @@ self.addEventListener('notificationclick', function (event) {
 
 1.  转到你的PWA。`http://localhost:3000`  当服务工作者激活并尝试订阅PWA推送通知时，Microsoft Edge会提示你允许PWA显示通知。  选择 **“允许**”。
 
-    :::image type="content" source="../media/notification-permission.png" alt-text="用于启用通知的权限对话框。":::
+    ![用于启用通知的权限对话框。](../media/notification-permission.png)
 
-1.  模拟服务器端推送通知，如下所示。  在浏览器中打开`http://localhost:3000`PWA后，选择`F12`打开 DevTools。  选择 **ApplicationService****** >  **WorkerPush** >  以向PWA发送测试推送通知。
+1.  模拟服务器端推送通知，如下所示。  在浏览器中打开`http://localhost:3000`PWA后，选择`F12`打开 DevTools。  选择 **“应用程序** > **服务辅助角色** > **推送**”，向PWA发送测试推送通知。
 
     推送通知显示在任务栏附近。
 
-    :::image type="content" source="../media/devtools-push.png" alt-text="从 DevTools 推送通知。":::
+    ![从 DevTools 推送通知。](../media/devtools-push.png)
 
     如果未选择 (或_激活_ toast 通知) ，系统会在几秒钟后自动将其关闭，并在Windows操作中心中对其进行排队。
 
-    :::image type="content" source="../media/windows-action-center.png" alt-text="操作中心Windows通知。":::
+    ![操作中心Windows通知。](../media/windows-action-center.png)
 
 
 <!-- ====================================================================== -->

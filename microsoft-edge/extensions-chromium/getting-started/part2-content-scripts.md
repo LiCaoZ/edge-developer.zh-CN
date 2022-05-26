@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/07/2021
-ms.openlocfilehash: de18758d8be69d6555d7ef1a7481d4563b2e3442
-ms.sourcegitcommit: 70d9b67fe1ab1cda42577ae37f71644f8d95eb3f
+ms.openlocfilehash: efbe0bf2a57e7da6ccc0340eb304850ca1993620
+ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "12548708"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "12550686"
 ---
 # <a name="create-an-extension-tutorial-part-2"></a>创建扩展教程，第 2 部分
 
@@ -62,9 +62,7 @@ ms.locfileid: "12548708"
 
 更新并打开扩展后，将打开带有显示按钮的弹出窗口。
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html选择“扩展”图标后显示。":::
-   选择“扩展”图标后popup.html显示
-:::image-end:::
+![popup.html选择“扩展”图标后显示。](./media/part2-popupdialog.png)
 
 <!--![popup.html display after selecting the Extension icon] -->
 
@@ -220,16 +218,10 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 现在，浏览到任何页面并选择 **“扩展** ”图标时，弹出菜单将按如下所示显示。
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html选择“扩展”图标后显示。":::
-   选择“扩展”图标后popup.html显示
-:::image-end:::
-
-<!-- ![popup.html display after selecting the Extension icon] -->
+![popup.html选择“扩展”图标后显示。](./media/part2-popupdialog.png)
 
 选择按 `Display` 钮时，将获得以下内容。  如果选择图像上的 `stars.jpeg` 任意位置，则会删除该图像元素，并且选项卡页会折叠回最初显示的内容。
 
-:::image type="complex" source="./media/part2-showingimage.png" alt-text="显示在浏览器中的图像。":::
-   浏览器中显示的图像
-:::image-end:::
+![显示在浏览器中的图像。](./media/part2-showingimage.png)
 
 你已创建一个扩展，该扩展已成功从扩展图标弹出窗口发送消息，并在浏览器选项卡上动态插入作为内容运行的 JavaScript。 注入的内容设置图像元素以显示静态星 `.jpeg` 形文件。

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: e754c28b9015e0c4d3ac5ad502e6bdac259f403f
-ms.sourcegitcommit: cec099622d1f9885178915d0b9cb664d71d923e9
+ms.openlocfilehash: 65b2fd516421c9c113af20e5b9f3a622ffc183cd
+ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "12520159"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "12550731"
 ---
 # <a name="test-upcoming-apis-and-features"></a>测试即将推出的 API 和功能
 <!-- old title: # Switch to a preview channel to test upcoming APIs and features -->
@@ -166,17 +166,17 @@ WPF 使用类似于上述 Win32/C++ 方法的方法。
 
 1. 展开 **本地计算机策略**，然后展开 **计算机配置** 或 **用户配置**。  然后展开**管理模板** > **Microsoft Edge WebView2**。
 
-   :::image type="content" source="media/local-group-policy-editor.png" alt-text="本地组策略编辑器对话框。":::
+   ![本地组策略编辑器对话框。](media/local-group-policy-editor.png)
 
 1. 选择 **“浏览器可执行文件夹**”。  以下屏幕截图适用于设置 **浏览器可执行文件夹**。  或者，选择使用类似对话框的 **“发布通道首选**项”。
 
-   :::image type="content" source="media/browser-executable-folder.png" alt-text="设置浏览器可执行文件夹。":::
+   ![设置浏览器可执行文件夹。](media/browser-executable-folder.png)
 
 1. 选择 **“显示** ”按钮。
 
 1. 填写“ **显示内容** ”对话框。  在 **“值名称** ”列中，输入一个星号以应用于所有 WebView2 应用，或 `.exe` 输入仅影响指定 WebView2 应用的文件名。  在 **“值** ”列中，输入 WebView2 应用的可执行文件的路径。
 
-   :::image type="content" source="media/show-contents.png" alt-text="“显示内容”对话框。":::
+   ![“显示内容”对话框。](media/show-contents.png)
 
 1. 选择 **“确定** ”以关闭对话框。
 
@@ -238,11 +238,11 @@ WPF 使用类似于上述 Win32/C++ 方法的方法。
 
 1. 在Windows搜索栏中，输入“环境”，然后选择 **“编辑系统环境变量**”。
 
-   :::image type="content" source="media/search-bar-edit-sys-env-vars.png" alt-text="使用Windows搜索栏查找编辑环境变量的位置。":::
+   ![使用Windows搜索栏查找编辑环境变量的位置。](media/search-bar-edit-sys-env-vars.png)
 
 1. 在 **“系统属性** ”对话框中，选择 **“高级** ”选项卡，然后选择 **“环境变量** ”按钮。
 
-   :::image type="content" source="media/system-properties-env-vars.png" alt-text="“系统属性”对话框中的“环境变量”按钮。":::
+   ![“系统属性”对话框中的“环境变量”按钮。](media/system-properties-env-vars.png)
 
 1. 在 **“环境变**量”对话框的“**用户变量**”部分中，选择 **“新建**”。
 
@@ -252,7 +252,7 @@ WPF 使用类似于上述 Win32/C++ 方法的方法。
 
 1. 单击 **“确定** ”关闭对话框。
 
-   :::image type="content" source="media/env-vars-new-user-variable.png" alt-text="将新环境变量添加为用户变量。":::
+   ![将新环境变量添加为用户变量。](media/env-vars-new-user-variable.png)
 
 ### <a name="which-app-is-affected"></a>哪个应用受到影响
 

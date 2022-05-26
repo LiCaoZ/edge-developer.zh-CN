@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/28/2021
-ms.openlocfilehash: 0aaf1be2fdf3f4a189b07cd6fadc319cc6d400aa
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 167225e9c46865dce582f83c674d96e38dd36a13
+ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514109"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "12550558"
 ---
 # <a name="find-source-files-for-a-page-using-the-search-tool"></a>使用搜索工具查找页面的源文件
 
@@ -51,7 +51,7 @@ ms.locfileid: "12514109"
 
 1. 键 `search`入，然后按 `Enter`。
 
-:::image type="content" source="../media/search-tool/open-search-tool.png" alt-text="“命令”菜单，其中选择了“显示搜索”项。":::
+![“命令”菜单，其中选择了“显示搜索”项。](../media/search-tool/open-search-tool.png)
 
 
 <!-- ====================================================================== -->
@@ -64,7 +64,7 @@ ms.locfileid: "12514109"
 
 **搜索**工具显示匹配资源的列表，并突出显示相应的文本行。  匹配文件和行的数量也指示在工具的底部。
 
-:::image type="content" source="../media/search-tool/search-tool-search-results.png" alt-text="搜索工具中显示的搜索结果，匹配文本以黄色突出显示。":::
+![搜索工具中显示的搜索结果，匹配文本以黄色突出显示。](../media/search-tool/search-tool-search-results.png)
 
 <!-- The search results are pretty-printed. -->
 
@@ -82,7 +82,7 @@ ms.locfileid: "12514109"
 
 可以使用正则表达式（包括 [JavaScript 正则表达式）](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions)来查找匹配的结果。  若要使用正则表达式，请单击工具栏中的“ **使用正则表达式** (`.*`) 按钮，并在搜索输入字段中输入有效的正则表达式。
 
-:::image type="content" source="../media/search-tool/search-tool-regexp.png" alt-text="搜索正则表达式。":::
+![搜索正则表达式。](../media/search-tool/search-tool-regexp.png)
 
 
 <!-- ====================================================================== -->
