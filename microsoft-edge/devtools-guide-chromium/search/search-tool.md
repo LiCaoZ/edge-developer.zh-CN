@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/28/2021
-ms.openlocfilehash: 167225e9c46865dce582f83c674d96e38dd36a13
-ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
+ms.openlocfilehash: f0af5288f605cc768762e0c35ea1642123454b13
+ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "12550558"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "12551572"
 ---
 # <a name="find-source-files-for-a-page-using-the-search-tool"></a>使用搜索工具查找页面的源文件
 
@@ -31,7 +31,7 @@ ms.locfileid: "12550558"
 
 1. 在 DevTools 中，按 `Esc` 下以打开抽屉，然后在抽屉工具栏上选择 **“搜索** ”选项卡。 如果该选项卡不可见，请单击“ **更多”选项卡** (![“更多”选项卡图标。](../media/more-tabs-icon-light-theme.png)) 按钮，或者“ **更多工具** (![更多工具”图标。](../media/more-tools-icon-light-theme.png)) 按钮。
 
-   或者，按 `Ctrl`++`Shift``F` (Windows/Linux) 或`F``Command`+`Option`+ (macOS) 。
+   或者，按“`Ctrl`+`Shift`+`F`”(Windows、Linux)或“`Command`+`Option`+`F`”(macOS)。
 
 **搜索**工具显示在**抽屉**中，其中包含搜索工具栏：
 
@@ -47,7 +47,7 @@ ms.locfileid: "12550558"
 
 1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
 
-1. 按++`Ctrl``P``Shift` (Windows/Linux) 或`Command``P`++`Shift` (macOS) 打开[命令菜单](../command-menu/index.md)。
+1. 按++`Ctrl``P``Shift` (Windows、Linux) 或`Command``P`++`Shift` (macOS) 打开[命令菜单](../command-menu/index.md)。
 
 1. 键 `search`入，然后按 `Enter`。
 

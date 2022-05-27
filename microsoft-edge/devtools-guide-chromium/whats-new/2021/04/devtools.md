@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/06/2021
-ms.openlocfilehash: 9a5b0cafb9acc96099e22254d626f51d76c0d4f0
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 157dea62fef68b5be82949a60d39b65e3b16ba15
+ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514624"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "12551622"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -63,26 +63,26 @@ ms.locfileid: "12514624"
 <!--  Title: Learn more about DevTools with DevTools Tooltips  -->
 <!--  Subtitle: Informative overlays are now available in the default DevTools interface.  -->
 
-DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  将鼠标悬停在 DevTools 的每个概述区域上，详细了解如何使用该工具。  若要打开工具提示，请执行以下任一操作： 
+DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  请将鼠标悬停在开发人员工具的每个概述区域上，以了解有关如何使用工具的更多信息。  若要打开工具提示，请执行以下任一操作： 
 
-*  选择 **“自定义”并控制 DevTools** (`...`) > **帮助** > **切换 DevTools 工具提示**。
-*  按 `Ctrl`++`Shift``H` (Windows/Linux) 或`H``Cmd`+`Shift`+ (macOS) 。
+*  选择“**自定义和控制 DevTools** (`...`)”>“**帮助**” > “**切换 DevTools 工具提示**”。
+*  按`Ctrl`+`Shift`+`H`（Windows、Linux）或 `Cmd`+`Shift`+`H` （macOS）。
 *  [打开命令菜单](../../../command-menu/index.md#open-the-command-menu)，然后键入 `tooltips`。
 
-然后将鼠标悬停在 DevTools 的每个概述区域上：
+然后将鼠标悬停在开发人员工具的每个概述区域上：
 
-![DevTools 工具提示模式。](../../media/2021/04/tooltips.png)
+![开发人员工具提示模式。](../../media/2021/04/tooltips.png)
 
-若要关闭工具提示，请按 `Esc`。
+要关闭工具提示，请按“`Esc`”。
 
-更新：此功能已发布，不再具有实验性。<!-- valid. -->
+更新：此功能已发布，不再处于实验性状态。<!-- valid. -->
 
-注意：自 2022 年 5 月起， **活动栏**不支持工具提示;也就是说，在 [焦点模式下](../../../experimental-features/focus-mode.md)。
+注意：自 2022 年 5 月起，**活动栏**不支持工具提示；即，在[焦点模式](../../../experimental-features/focus-mode.md)下不支持工具提示。
 <!-- Also, if you turn on the [Focus Mode and DevTools Tooltips](../02/devtools.md#group-tools-together-in-focus-mode) experiment, you can also click the **Toggle the DevTools Tooltips** (`?`) button at the bottom of the **Activity Bar**. -->
 <!-- ![Hover on anywhere in the highlighted region of the Issues tool to display more details.](../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png) -->
 
 另请参阅：
-* 在 _DevTools 概述_中[显示 DevTools 工具提示](../../../overview.md#display-devtools-tooltips)。
+* 在 _开发人员工具概述_中[显示开发人员工具提示](../../../overview.md#display-devtools-tooltips)。
 
 <!--
 * [Learn about DevTools with informative tooltips](../02/devtools.md#learn-about-devtools-with-informative-tooltips) in _What's new in DevTools (Microsoft Edge 90)_.
@@ -151,7 +151,7 @@ Most operating systems require square icons.  Please include at least one square
 
 ![Microsoft Edge浏览器和 DevTools 设置为日语。](../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png)
 
-请参阅 [更改 DevTools 语言设置](../../../customize/localization.md)。
+请参见 [更改开发工具语言设置](../../../customize/localization.md)。
 
 有关Chromium开源项目中此功能的协作的详细信息，请参阅问题[1136655](https://crbug.com/1136655)。
 
@@ -370,7 +370,7 @@ For the history of this feature in the Chromium open-source project, see Issue [
 ![框架详细信息视图中阻止的功能。](../../media/2021/04/application-frames-top-permission-policy-disabled-features-show-details-highlight.msft.png)
 
 另请参阅：
-* [权限策略说明器](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md)
+* [权限策略解释器](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md)
 * [用于管理存储的应用程序工具](../../../storage/application-tool.md)
 <!-- todo: doc in Application tool > Frame (bottom left) docs, link to that instead of Application tool page -->
 

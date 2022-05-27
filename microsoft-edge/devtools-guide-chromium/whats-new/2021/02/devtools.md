@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
-ms.openlocfilehash: 5844e38e7f35ceead83d3d8dc3909398e887d7ae
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: c9fd90dfc4e36fd53315c0c9d665189c9f46780a
+ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514873"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "12551581"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -56,7 +56,7 @@ ms.locfileid: "12514873"
 DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  请将鼠标悬停在开发人员工具的每个概述区域上，以了解有关如何使用工具的更多信息。  若要打开工具提示，请执行以下操作之一： 
 
 *  选择“**自定义和控制 DevTools** (`...`)”>“**帮助**” > “**切换 DevTools 工具提示**”。
-*  按`Ctrl`+`Shift`+`H`（Windows/Linux）或 `Cmd`+`Shift`+`H` （macOS）。
+*  按`Ctrl`+`Shift`+`H`（Windows、Linux）或 `Cmd`+`Shift`+`H` （macOS）。
 *  [打开命令菜单](../../../command-menu/index.md#open-the-command-menu)，然后键入 `tooltips`。
 
 然后将鼠标悬停在开发人员工具的每个概述区域上：

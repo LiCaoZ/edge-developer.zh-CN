@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
-ms.openlocfilehash: bf1944161aaf1d681a75c95a4dd1f8f3d571d4bb
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 957384fca150ec1d220dc6d7032a0210ec118292
+ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514159"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "12551578"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -287,7 +287,7 @@ MDN：
 <!-- ====================================================================== -->
 #### <a name="use-duplicate-elements-to-copy-elements"></a>使用“复制元素”复制元素
 
-使用新的“**复制元素**”快捷方式克隆元素。  在**元素**工具中，右键单击某个元素，然后选择**重复元素**。  将在选定元素下创建一个新元素。  若要使用键盘复制元素，请按 `Shift`++`Alt``Down Arrow` (Windows/Linux) 或 `Shift`+`Option`+`Down Arrow` (macOS)。
+使用新的“**复制元素**”快捷方式克隆元素。  在**元素**工具中，右键单击某个元素，然后选择**重复元素**。  将在选定元素下创建一个新元素。  要通过使用键盘复制元素，请按 `Shift`++`Alt``Down Arrow` (Windows/Linux) 或 `Shift`+`Option`+`Down Arrow` (macOS)。
 
 ![“复制元素”在“元素”工具中某个元素的上下文菜单中突出显示。](../../media/2021/01/elements-duplicate-element.msft.png)
 

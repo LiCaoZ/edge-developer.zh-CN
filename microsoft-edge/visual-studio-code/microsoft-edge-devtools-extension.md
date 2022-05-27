@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/19/2022
-ms.openlocfilehash: eb168ecd240c931f835adc26fc5d58ef1fd72ed8
-ms.sourcegitcommit: 56d88962483dab8374f3dccb67f546df1c26ec17
+ms.openlocfilehash: 3dc297745a2fc4e5aec4dd7e5842ca99e0a1ed08
+ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "12522109"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "12551322"
 ---
 # <a name="microsoft-edge-devtools-extension-for-visual-studio-code"></a>用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展
 
@@ -122,7 +122,7 @@ Microsoft Visual Studio Code 会自动更新扩展。  若要手动更新扩展�
 
 若要调试项目，可能需要更改在Visual Studio Code Microsoft Edge中打开的默认页面。  若要将默认页面更改为项目的网站，请执行以下操作：
 
-1. 在Visual Studio Code中，选择 **“****FileNew** >  窗口”。  请注意，未打开任何文件夹。
+1. 在Visual Studio Code中，选择 **“文件** > **新建”窗口**。  请注意，未打开任何文件夹。
 
 1. 在**活动栏**上，选择**Microsoft Edge工具**。
 
@@ -158,7 +158,7 @@ Microsoft Visual Studio Code 会自动更新扩展。  若要手动更新扩展�
 
 1. 在Visual Studio Code中，在**活动栏**上，选择**Microsoft Edge工具**。
 
-1. 在**Microsoft Edge** **ToolsTargets** >  中，选择“目标 **”一**词右侧的“**更多操作** (...) ”，然后选择 **“打开设置**”。
+1. 在**Microsoft Edge工具** > **目标**中，选择“**目标”一**词右侧的“**更多操作** (...) ”，然后选择 **“打开设置**”。
 
    如果使用鼠标，若要访问 **“更多操作** ” (...) ，请选择 **“目标** ”窗格或将其悬停在上面：
 
@@ -169,9 +169,9 @@ Microsoft Visual Studio Code 会自动更新扩展。  若要手动更新扩展�
 
 某些设置具有一个说明，用于读 ** 取更改) 后所需的 (重载 **。  若要使此类设置生效：
 
-1. 关闭由扩展打开的浏览器，或在 **“Microsoft Edge** **ToolsTargets** > ”窗格中，选择 **“关闭**”实例 (`X`) 。  此操作也会自动关闭 **Edge DevTools** 选项卡。
+1. 关闭扩展打开的浏览器，或在 **“Microsoft Edge工具** > **目标**”窗格中，选择“**关闭**”实例 (`X`) 。  此操作也会自动关闭 **Edge DevTools** 选项卡。
 
-1. 在 **“Microsoft Edge** **ToolsTargets** > ”窗格中，选择 **“启动实例**”按钮。  Microsoft Edge打开，并显示 **“Edge DevTools”** 选项卡。
+1. 在 **“Microsoft Edge工具** > **目标**”窗格中，选择 **“启动实例**”按钮。  Microsoft Edge打开，并显示 **“Edge DevTools”** 选项卡。
 
 
 <!-- ====================================================================== -->
@@ -183,7 +183,7 @@ Microsoft Visual Studio Code 会自动更新扩展。  若要手动更新扩展�
 
 1. 在Visual Studio Code中，在**活动栏**上，选择**Microsoft Edge工具**。
 
-1. 在 **Microsoft Edge** **ToolsTargets** >  中，选择“目标 **”一**词右侧的“**更多操作** (...) ”，然后选择 **“查看更改日志**”：
+1. 在**Microsoft Edge工具** > **目标**中，选择“目标 **”一**词右侧的“**更多操作** (...) ”，然后选择 **“查看更改日志**”：
 
    ![“视图更改日志”菜单项，用于查看已对扩展所做的更改。](media/view-changelog-menuitem.msft.png)
 
@@ -274,23 +274,29 @@ CSS 镜像编辑是解决此问题的Microsoft Edge DevTools 扩展的一项功�
 <!-- ====================================================================== -->
 ## <a name="device-and-state-emulation"></a>设备和状态仿真
 
-浏览器预览选项卡底部有一个模拟工具栏，可用于模拟不同的环境。 可以从不同设备的下拉列表中进行选择。 可以使用窗体更改维度并轮换视区。
-
-仿真工具栏还包含右下角的两个按钮。 单击 ICON 以模拟 CSS 媒体查询和其他查询，以尝试具有不同视觉缺陷的当前 Web 项目的体验。
-
-<!-- Need light themed images for the CSS media query and visual deficiencies buttons and the precise UI names -->
+在“Edge DevTools：浏览器预览”选项卡中，底部的仿真工具栏使你能够模拟不同的环境：
 
 ![扩展中的浏览器预览，其中显示模拟工具栏](media/edge-for-code-screencast-v2.msft.png)
 
-可以从许多不同的设备中进行选择。 选中时，视区将调整为正确的度量值，并模拟触摸界面。 例如，iPhone。
+<!-- Toolbar item 1. Emulate devices: -->
+在 **“模拟设备”** 下拉菜单中，你可以从许多不同的设备中进行选择。  选择设备时，视区将调整为正确的度量值，并模拟触摸界面。  例如，iPhone：
 
 ![扩展中的浏览器预览，显示模拟手机布局中的 Web 产品](media/edge-for-code-screencast-v2-emulating.msft.png)
 
-使用 CSS 媒体功能仿真按钮可以测试产品在打印模式下的外观。 可以在深色和浅色模式之间切换，并模拟强制颜色。
+<!-- Toolbar item 2. Width: -->
+<!-- Toolbar item 3. Height: -->
+单击 **“宽度** ”和 **“高度** ”下拉菜单可更改视区维度： ![宽度和高度下拉菜单。](media/width-height.png)
+
+<!-- Toolbar item 4. Rotate: -->
+单击“ **旋转** ”按钮 (![“旋转”按钮。](media/rotate-button.png)) 旋转视区。
+
+<!-- Toolbar item 5. Emulate CSS media features: -->
+若要模拟 CSS 媒体查询，请单击 **模拟 CSS 媒体功能** (![模拟 CSS 媒体功能。](media/emulate-css-media-features-button.png)) 按钮。  使用此按钮可以测试产品在打印模式下的外观。  可以在深色和浅色模式之间切换，并模拟强制颜色：
 
 ![扩展中的浏览器预览，显示处于强制颜色模式下的 Web 产品](media/edge-for-code-forced-colours.msft.png)
 
-通过视觉缺陷仿真按钮，可在模糊模式或不同颜色缺陷中测试产品。
+<!-- Toolbar item 6. Emulate vision deficiencies: -->
+单击“模拟视觉缺陷”按钮 (![**模拟视觉**缺陷。](media/emulate-vision-deficiencies-button.png)) 按钮，尝试体验具有不同视觉缺陷的当前 Web 项目。  使用此按钮，可在模糊模式或不同颜色缺陷下测试产品：
 
 ![扩展中的浏览器预览，显示模糊仿真中的 Web 产品](media/edge-for-code-blurred.msft.png)
 

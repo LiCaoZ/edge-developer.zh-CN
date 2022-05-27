@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 0d7fe078e6e447311dfc5bf09b953f67e952c1c0
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: c2c8d0a0abe26c1347277c52a967c412b8155caf
+ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12513801"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "12551465"
 ---
 # <a name="check-text-color-contrast-in-the-default-state-using-the-inspect-tool"></a>使用检查工具检查默认状态下的文本颜色对比度
 
@@ -53,7 +53,7 @@ ms.locfileid: "12513801"
 
 *  当文本和背景颜色的对比度不够时，“ **问题** ”工具会自动报告整个网页的任何颜色对比度问题。  验证 [文本颜色是否具有足够的对比度](test-issues-tool.md#verify-that-text-colors-have-enough-contrast)时介绍了此方法。
 
-*  模拟非默认状态，例如 `hover` 状态。  为此，请单击“**样式**”窗格中的“**切换元素状态**”图标/按钮，其中显示 **“Force 元素状态**”复选框部分。  验证 [所有元素状态的可访问性](test-inspect-states.md)中介绍了此功能。
+*  模拟非默认状态，例如 `hover` 状态。  为此，请单击“**样式**”窗格中的“**切换元素状态**”按钮，其中显示 **“Force 元素状态**”复选框部分。  验证 [所有元素状态的可访问性](test-inspect-states.md)中介绍了此功能。
 
 
 <!-- ====================================================================== -->

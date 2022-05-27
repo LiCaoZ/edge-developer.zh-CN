@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/18/2022
-ms.openlocfilehash: 2b07c93aab69392c984703c9e1a553e45dd98ba1
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 35e651f27fa093f64a998fcf18816233a55d078b
+ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514396"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "12551507"
 ---
 <!-- Copyright Kayce Basques
 
@@ -206,11 +206,11 @@ script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
 document.head.appendChild(script);
 ```
 
-相反，您可以将此代码保存在 **代码** 段中，然后随时轻松地运行它。  当你按下 `Ctrl` + `S` (Windows/Linux) 或 `Command` + `S` (macOS) 时，DevTools 会将**代码段**保存到文件系统。
+相反，您可以将此代码保存在 **代码** 段中，然后随时轻松地运行它。  按`Ctrl`+`S` (Windows、Linux) 或+`Command``S` (macOS) 时，DevTools 会将**代码片段**保存到文件系统。
 
 有多种方法可以运行代码段：
 *  在 **导航器窗格中** ，选择" **代码** 段"选项卡，然后选择代码段文件将其打开。  然后在“编辑器”窗格底部，选择“**运行**”(![“运行”按钮](../media/run-snippet-icon.msft.png))。
-*  当 DevTools 具有焦点时，按下 `Ctrl` + `P` (Windows/Linux) 或 `Command` + `P` (macOS) 以打开“[命令菜单](../command-menu/index.md)”，然后键入 `!`。
+*  当 DevTools 具有焦点时，按 `Ctrl``P`+ (Windows、Linux) 或`P`+`Command` (macOS) 打开[命令菜单](../command-menu/index.md)，然后键入。`!`
 
 代码段 类似于小书签。
 

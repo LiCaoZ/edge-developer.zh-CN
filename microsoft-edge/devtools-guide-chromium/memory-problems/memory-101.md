@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/13/2021
-ms.openlocfilehash: 60c95cea9fc396f001fd705a796a5af0245e18e9
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 0985160704d5a710e3a5b5759fa078a21d4d88ae
+ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431506"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "12551596"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -30,165 +30,165 @@ ms.locfileid: "12431506"
 
 本文介绍内存分析中使用的常见术语，适用于不同语言的各种内存分析工具。
 
-此处介绍的术语和概念是指内存 [面板](heap-snapshots.md)。  如果你曾经使用过 Java、.NET 或其他一些内存探查器，那么本文可能是一个刷新的文章。
+此处所述的术语和概念指的是 [“内存”面板](heap-snapshots.md)。  如果你曾经使用过 Java、.NET 或其他一些内存探查器，则本文可能是一个刷新器。
 
 
 <!-- ====================================================================== -->
 ## <a name="object-sizes"></a>对象大小
 
-将内存视为包含基元类型的图形 (数字和字符串) 关联数组 (对象) 。  内存可以直观地表示为具有多个互连点的图形，如下所示：
+将内存视为具有基元类型的图形 (如数字和字符串) 和对象 (关联数组) 。  内存可直观地表示为具有多个互连点的图形，如下所示：
 
 :::image type="content" source="../media/memory-problems-thinkgraph.msft.png" alt-text="内存的视觉表示形式。" lightbox="../media/memory-problems-thinkgraph.msft.png":::
 
-对象可以通过两种方式保留内存：
+对象可以通过两种方式保存内存：
 
-*  直接;内存由对象本身持有。
+*  直接;内存由对象本身保存。
 
-*  隐式，通过保留对其他对象的引用。  保留对其他对象的引用的对象可防止垃圾回收器在 GC (自动释放) 。
+*  隐式保存对其他对象的引用。  保存对其他对象的引用的对象可防止垃圾回收器 (GC) 自动释放这些对象。
 
-DevTools 中的内存面板是调查内存问题的工具。[](heap-snapshots.md)
+DevTools 中的 [内存](heap-snapshots.md) 面板是用于调查内存问题的工具。
 
-使用"内存"面板时，可能会发现自己正在查看一些不同的信息列。  两个突出的列是 **"浅表大小****"和"保留大小"**：
+使用“内存”面板时，你可能会发现自己正在查看几列不同的信息。  突出显示的两列是 **浅层大小** 和 **保留大小**：
 
-:::image type="content" source="../media/memory-problems-shallow-retained.msft.png" alt-text="浅表和保留大小。" lightbox="../media/memory-problems-shallow-retained.msft.png":::
+:::image type="content" source="../media/memory-problems-shallow-retained.msft.png" alt-text="浅层和保留大小。" lightbox="../media/memory-problems-shallow-retained.msft.png":::
 
-### <a name="shallow-size"></a>浅表大小
+### <a name="shallow-size"></a>浅层大小
 
-_浅表_大小是对象所持有的内存大小。
+_浅层大小_是对象保存的内存大小。
 
-典型的 JavaScript 对象会保留一些内存以供其说明和存储即时值。  通常，只有数组和字符串可以具有明显的浅表大小。  但是，字符串和外部数组通常具有呈现器内存中的主存储，从而在 JavaScript 堆上只公开一个小包装对象。
+典型的 JavaScript 对象为其说明和存储即时值保留一些内存。  通常，只有数组和字符串可以具有显著的浅浅大小。  但是，字符串和外部数组通常在呈现器内存中具有主存储，在 JavaScript 堆上只公开一个小包装器对象。
 
 _呈现器内存_ 是呈现已检查页面的过程的所有内存：
 
-_呈现器内存_ = _本机内存_ + _页面的 JS 堆内存_ + _由页面启动的所有专用工作者的 JS 堆内存_
+_呈现器内存_ = _本机内存_ + 页面 + _的 JS 堆内存__页面启动的所有专用辅助角色的 JS 堆内存_
 
-但是，即使一个小对象，也可以通过防止自动垃圾回收过程释放其他对象来间接地保留大量内存。
+然而，即使一个小对象也可以通过防止自动垃圾回收过程释放其他对象来间接保存大量的内存。
 
 ### <a name="retained-size"></a>保留大小
 
-保留__ 大小是对象删除后释放的内存大小，以及从垃圾回收根目录和 GC 根目录 (无法访问) 。
+_保留大小_是删除对象后释放的内存大小，以及从垃圾回收根 (GC 根) 无法访问的依赖对象。
 
-_垃圾回收_根由从本机代码到 V8 VM 外部的 JavaScript 对象进行引用时 (创建为本地或全局) 的句柄。__  可以在 GC 根下的**** > 堆快照中找到所有此类句柄**处理范围**和 **GC 根** > **Global 句柄**。  在本文档中介绍句柄而不深入介绍浏览器实现的详细信息可能会令人困惑。  垃圾回收根和句柄都不需要担心。
+_垃圾回收根由_ 在从本机代码引用到 V8 VM 外部的 JavaScript 对象时 (作为本地或全局) 创建的 _句柄_ 组成。  可以在 **GC 根****句柄范围**和 **GC 根** >  > **全局句柄**下的堆快照中找到所有这些句柄。  描述本文档中的句柄而不深入了解浏览器实现的详细信息可能会令人困惑。  垃圾回收根和句柄都不是你需要担心的。
 
-有许多内部 GC 根，其中大多数根对用户不感兴趣。  从应用程序的角度来看，有以下类型的根：
+有许多内部 GC 根，其中大多数对用户来说并不有趣。  从应用程序的角度来看，有以下类型的根：
 
-*  窗口全局对象 (iframe 对象) 。  在堆快照中 `distance` ，字段指示窗口最短保留路径上的属性引用数。
+*  每个 iframe) 中的窗口全局对象 (。  在堆快照中，字 `distance` 段指示窗口的最短保留路径上的属性引用数。
 
-*  文档 DOM 树，由通过遍历文档可到达的所有本机 DOM 节点组成。  并非所有节点都有 JavaScript 包装器，但如果节点有包装器，则节点在文档处于活动状态时处于活动状态。
+*  文档 DOM 树，由通过遍历文档可访问的所有本机 DOM 节点组成。  并非所有节点都有 JavaScript 包装器，但如果节点具有包装器，则该节点在文档处于活动状态时处于活动状态。
 
-*  有时，对象由"源"工具和控制台中的调试**** 上下文保留，例如****，在控制台评估之后。  使用清除的控制台工具 **创建** 堆快照，在"源"工具的调试器中没有活动的 **断** 点。
+*  有时，**源工具和****控制台**中的调试上下文会保留对象，例如在控制台评估之后。  在 **“源**”工具的调试器中，使用已清除的**控制台**工具和没有活动断点创建堆快照。
 
 >[!TIP]
-> 在"内存"工具中拍摄堆 [快照之前，](heap-snapshots.md) 请清除 **"** 控制台"工具，并停用"源"工具中的 **断** 点。  若要清除 **控制台工具** ，请运行 `clear()` 方法。
+> 在 [内存](heap-snapshots.md) 工具中创建堆快照之前，请清除 **控制台** 工具并停用 **“源** ”工具中的断点。  若要清除 **控制台** 工具，请运行该 `clear()` 方法。
 
-内存图以根开头，`window``Global`该根可能是浏览器的对象或Node.js对象。  你无法控制如何对根对象进行垃圾回收。
+内存图以根开头，根可能是 `window` 浏览器的对象或 `Global` Node.js模块的对象。  你无法控制根对象的垃圾回收方式。
 
-:::image type="content" source="../media/memory-problems-dontcontrol.msft.png" alt-text="你无法控制如何对根对象进行垃圾回收。" lightbox="../media/memory-problems-dontcontrol.msft.png":::
+:::image type="content" source="../media/memory-problems-dontcontrol.msft.png" alt-text="无法控制根对象的垃圾回收方式。" lightbox="../media/memory-problems-dontcontrol.msft.png":::
 
-从根目录无法到达的任何对象都会进行垃圾回收。
+任何无法从根目录访问的东西都会被垃圾回收。
 
 > [!NOTE]
-> "浅表大小"和"保留[](#shallow-size)大小"列中[显示的数量是](#retained-size)字节数。
+> 浅 [层大小](#shallow-size) 和 [保留大小](#retained-size) 列中显示的数字是字节数。
 
 
 <!-- ====================================================================== -->
 ## <a name="objects-retaining-tree"></a>保留树的对象
 
-堆是互连对象的网络。  在数学世界，此结构称为_图形或__内存图_。  图形从 _通过边缘连接的_ 节点 _构造_。
+堆是互连对象的网络。  在数学世界中，此结构称为 _图形_ 或 _内存图_。  图形是从由边缘连接的 _节点_ 构造 _的_。
 
 为图形中的节点和边缘提供标签，如下所示：
 
-*  _节点_ (_或_) 对象使用用于构建节点或对象的构造函数函数的名称进行标记。__
+*  _节点_ (或 _对象_) 使用用于生成它们的 _构造函_ 数的名称进行标记。
 
-*  _边缘_ 使用属性名称进行 _标记_。
+*  _边缘_ 使用 _属性_名称进行标记。
 
-了解如何 [使用堆探查器记录配置文件](heap-snapshots.md)。  在下图中，内存工具中堆快照记录中的一些值得注意的事项包括 **Distance**，即与垃圾回收根之间的距离。[](heap-snapshots.md)  如果几乎同一类型的所有对象都位于同一距离，而其中一些对象距离较大，那么这很值得调查。
+了解 [如何使用堆探查器记录配置文件](heap-snapshots.md)。  在下图中， [内存](heap-snapshots.md) 工具中的堆快照录制中的一些值得注意的内容包括 **距离**垃圾回收根目录的距离距离。  如果几乎所有相同类型的对象都位于相同的距离，并且少数对象位于更大的距离，则值得调查。
 
-与根之间的距离：
+与根的距离：
 
-:::image type="content" source="../media/memory-problems-root.msft.png" alt-text="与根之间的距离。" lightbox="../media/memory-problems-root.msft.png":::
-
-
-<!-- ====================================================================== -->
-## <a name="dominators"></a>Dominators
-
-Dominator 对象由树结构组成，因为每个对象只有一个管理程序。  对象的管理者可能缺少对它所控制的对象的直接引用。  也就是说，管理器的树不是图形的跨越树。
-
-下图中：
-
-*  节点 1 控制节点 2。
-*  节点 2 控制节点 3、4 和 6。
-*  节点 3 将控制节点 5。
-*  节点 5 将控制节点 8。
-*  节点 6 将控制节点 7。
-
-:::image type="content" source="../media/memory-problems-dominatorsspanning.msft.png" alt-text="管理器树结构。" lightbox="../media/memory-problems-dominatorsspanning.msft.png":::
-
-在下图中，node `#3` 是节点 的管理者 `#10`。  但节点 `#7` 也存在于从垃圾回收根 GC 到节点 的 **每个** 简单路径中 `#10`。 因此，如果对象`B`存在于`A``B`从根到对象的每个简单路径中，则对象是对象的管理程序`A`。
-
-节点`GC`将节点 、 `#1``#3`和 `#11`：
-
-![节点 GC 表示节点 #1、#3 和 #11。](../media/memory-problems-dominators-00.msft.png)
- 
-节点 `#3` 由节点和 `GC` 优势节点控制 `#7`：
-
-![节点 #3 由节点 GC 和优势节点 #7 控制。](../media/memory-problems-dominators-01.msft.png)
- 
-节点 `#7` 由节点和 `#3` 位置节点 `#8`、 和 `#9`控制 `#10`：
-
-![节点 #7 由节点 3 控制，而节点 8、#9 和 #10 控制节点。](../media/memory-problems-dominators-02.msft.png)
- 
-节点 `#8` 由节点控制 `#7` ，不会控制任何节点：
-
-![节点 #8 由节点 #7 控制，不会控制任何节点。](../media/memory-problems-dominators-03.msft.png)
- 
-节点 `#10` 由节点控制 `#7` ，不会控制任何节点：
-
-![节点 #10 由节点 #7 控制，不会控制任何节点。](../media/memory-problems-dominators-04.msft.png)
- 
-节点 `#11` 由节点控制 `#1` ，不会控制任何节点：
-
-![节点 #11 由节点 #1 控制，不会控制任何节点。](../media/memory-problems-dominators-05.msft.png)
+:::image type="content" source="../media/memory-problems-root.msft.png" alt-text="与根的距离。" lightbox="../media/memory-problems-root.msft.png":::
 
 
 <!-- ====================================================================== -->
-## <a name="v8-specifics"></a>V8 特定内容
+## <a name="dominators"></a>控制器
 
-分析内存时，了解堆快照为何以特定方式显示非常有用。  本部分介绍一些与内存相关的主题，这些主题专门与 _V8 JavaScript_ 虚拟机相对应 (此处缩写为 _V8 VM_，或仅 _VM_) 。
+控制器对象由树结构组成，因为每个对象只有一个控制器。  对象的统治者可能缺乏对其主导的对象的直接引用。  也就是说，统治者的树不是图形的跨行树。
+
+下图：
+
+*  节点 1 主导节点 2。
+*  节点 2 主导节点 3、4 和 6。
+*  节点 3 主导节点 5。
+*  节点 5 主导节点 8。
+*  节点 6 主导节点 7。
+
+:::image type="content" source="../media/memory-problems-dominatorsspanning.msft.png" alt-text="控制器树结构。" lightbox="../media/memory-problems-dominatorsspanning.msft.png":::
+
+在下图中，节点 `#3` 是节 `#10`点的控制者。  但是，从垃圾回收根 **GC** 到节点的每个简单路径中也都存在节`#7`点。`#10` 因此， `B` 如果对象存在于从根到对象 `A` 的每个简单路径中，则对象 `B` 是对象的控制者 `A`。
+
+节点 `GC` 主导节点 `#1`， `#3`并且 `#11`：
+
+![节点 GC 主导节点 #1、#3 和 #11。](../media/memory-problems-dominators-00.msft.png)
+ 
+节点 `#3` 以节点 `GC` 为主，并主导节点 `#7`：
+
+![节点 #3 由节点 GC 主导，并主导节点 #7。](../media/memory-problems-dominators-01.msft.png)
+ 
+节点 `#7` 以节点 `#3` 为主，并主导节点 `#8`， `#9`并且 `#10`：
+
+![节点 #7 由节点 #3 主导，并主导节点 #8、#9 和 #10。](../media/memory-problems-dominators-02.msft.png)
+ 
+`#8`节点以节点`#7`为主，不主导任何节点：
+
+![节点 #8 由节点 #7 主导，不主导任何节点。](../media/memory-problems-dominators-03.msft.png)
+ 
+`#10`节点以节点`#7`为主，不主导任何节点：
+
+![节点 #10 由节点 #7 主导，不主导任何节点。](../media/memory-problems-dominators-04.msft.png)
+ 
+`#11`节点以节点`#1`为主，不主导任何节点：
+
+![节点 #11 由节点 #1 主导，不主导任何节点。](../media/memory-problems-dominators-05.msft.png)
+
+
+<!-- ====================================================================== -->
+## <a name="v8-specifics"></a>V8 细节
+
+分析内存时，了解堆快照以某种方式显示的原因很有帮助。  本部分介绍一些与内存相关的主题，这些主题专门与 _V8 JavaScript 虚拟机_ 相对应， (在此处缩写为 _V8 VM_，或者只是 _VM_) 。
 
 ### <a name="javascript-object-representation"></a>JavaScript 对象表示形式
 
 在 JavaScript 中，有三种基元类型：
 
-*  数字 (，如 `3.14159...`) 。
-*  布尔值 (`true` 或) `false` 。
-*  字符串 (，如 `"Werner Heisenberg"`) 。
+*  数字 (如 `3.14159...`) 。
+*  布尔 (`true` 或 `false`) 。
+*  字符串 (，例如 `"Werner Heisenberg"`) 。
 
-基元无法引用其他值，并且始终是叶节点 (也称为终止 _节点) _ 。
+基元不能引用其他值，并且始终是叶节点 (也称为 _终止节点_) 。
 
-**可以将** 数字存储为：
+**数字** 可以存储为以下任一：
 
-*  SMIS 中称为小整数的直接 31 **位 (**_整数_) 。
+*  称为 **小型整数** 的即时 31 位整数值 (_SMIs_) 。
 
-*  堆对象，称为 **堆数**。  堆编号用于存储不适合 SMI 表单的值（如双精度数）或需要对值进行装箱**** 时（例如设置其属性）。****
+*  堆对象，称为 **堆号**。  堆数用于存储不适应 SMI 窗体的值，例如 **双倍**值或需要 **装箱**值时，例如在该窗体上设置属性。
 
-**字符串** 可以存储在两者之一：
+**字符串** 可以存储在以下任一项中：
 
 *  **VM 堆**。
 
-*  呈现器**内存中的外部。**  创建 _包装_ 对象并用于访问外部存储，例如，存储从 Web 接收的脚本源和其他内容，而不是复制到 VM 堆。
+*  **呈现器内存**的外部。  创建 _包装器对象_ 并用于访问外部存储，例如，脚本源和从 Web 接收的其他内容存储在 VM 堆中，而不是复制到 VM 堆中。
 
-新 JavaScript 对象的内存从专用 JavaScript 堆或 VM 堆 (_分配) _ 。  这些对象由 VM V8 的垃圾回收器管理，因此，只要至少有一个强引用，这些对象就会保持活动状态<!-- undefined term --> 。
+新的 JavaScript 对象的内存是从专用 JavaScript 堆 (或 _VM 堆_) 分配的。  这些对象由 VM V8 的垃圾回收器管理，因此，只要至少有一个强引用，这些对象就会保持活动状态<!-- undefined term --> 对他们。
 
-**本机对象** - 任何不在 JavaScript 堆中的对象都称为 _本机对象_。  与堆对象相反，本机对象在其整个生命周期内不由 V8 垃圾回收器管理，并且只能使用 JavaScript 包装对象从 JavaScript 访问。
+**本机对象** - 任何不在 JavaScript 堆中的东西都称为 _本机对象_。  与堆对象相反，本机对象在其整个生存期内不由 V8 垃圾回收器管理，只能使用 JavaScript 包装器对象从 JavaScript 访问。
 
-cons **string** (concatenation string) is an object that consists of pairs of strings that are stored and then joined， and is a result of concatenation.  仅根据需要 **联接 cons 字符串** 内容。  例如，需要构造联接字符串的子字符串时。
+ (串联字符串) 的 **cons 字符串** 是一个对象，该对象由存储后联接的字符串对组成，并且是串联的结果。  **缺点字符串**内容的联接仅根据需要进行。  例如，当需要构造联接字符串的子字符串时。
 
-例如，如果连接 `a` `b`和 ， `(a, b)` 则得到一个表示连接结果的字符串，并且 是一个 cons 字符串。  如果稍后连接了 `d` 该结果，则得到另一个 cons 字符串： `((a, b, d)`。
+例如，如果连接 `a` ， `b`则会获得一个字符串，该字符串 `(a, b)` 表示串联的结果，并且是一个缺点字符串。  如果后来与该结果串联 `d` ，则会获得另一个缺点字符串： `((a, b, d)`。
 
-**Arrays** - _数组_ 是一个包含数字键的对象。  数组在 V8 VM 中广泛使用，用于存储大量数据。  像字典一样使用的键值对集作为数组 **实现**。
+**数组** - 数 _组_ 是具有数值键的对象。  在 V8 VM 中广泛使用数组来存储大量数据。  像字典一样使用的键值对集作为 **数组**实现。
 
-典型的 JavaScript 对象仅存储为两种数组类型 **之** 一：
+典型的 JavaScript 对象仅存储为两种 **数** 组类型之一：
 
 典型的 JavaScript 对象可以是两种数组类型之一：
 
@@ -197,21 +197,53 @@ cons **string** (concatenation string) is an object that consists of pairs of st
 
 当有少量属性时，这些属性将内部存储在 JavaScript 对象中。
 
-**Map** 是描述对象种类和布局的对象。  例如，映射用于描述隐式对象层次结构，用于 [快速访问属性](https://v8.dev/blog/fast-properties)。
+**Map** 是一个对象，用于描述它的对象类型和布局。  例如，地图用于描述用于 [快速访问属性](https://v8.dev/blog/fast-properties)的隐式对象层次结构。
 
 ### <a name="object-groups"></a>对象组
 
-每个 _本机对象组_ 由相互引用的对象所共同决定。  例如，考虑一个 DOM 子树，其中每个节点都有一个指向相对父级的链接和指向下一个子级和下一个同级元素的链接，从而形成一个连接的图形。
+每个 _本机对象组_ 由相互引用的对象组成。  例如，请考虑一个 DOM 子树，其中每个节点都有指向相对父级的链接，并链接到下一个子级和下一个同级，从而形成连接的图形。
 
-请注意，本机对象不会在 JavaScript 堆中表示。  缺少表示是本机对象的大小为零的原因。  相反，会创建包装对象。
+请注意，本机对象未在 JavaScript 堆中表示。  缺少表示形式是本机对象大小为零的原因。  而是创建包装器对象。
 
-每个包装对象保存对相应本机对象的引用，用于将命令重定向到该对象。  反过来，对象组会保留包装对象。  这不会创建一个不可存储的循环，因为垃圾回收足够智能，可以释放不再引用其包装器的对象组。  但忘记释放单个包装器将保留对整个组和任何关联包装器的引用。
+每个包装器对象都包含对相应本机对象的引用，以便将命令重定向到该对象。  反过来，对象组会保留包装器对象。  这不会创建一个无法收集的周期，因为垃圾回收足够智能，可以释放不再引用其包装器的对象组。  但是，忘记释放单个包装器会包含对整个组和任何关联包装器的引用。
+
+
+<!-- ====================================================================== -->
+## <a name="cycles"></a>周期
+
+_周期_ 是至少在保留器路径中显示两次的节点。
+节点的一个外观早于保留器路径，该节点的其他外观稍后会出现在保留器路径中。
+
+若要释放内存，最重要的是删除首先出现在保留器路径中的节点的出现。
+节的第二个和可能的后续显示仍显示在 **“保留器** ”部分中。
+
+
+### <a name="using-filters-to-hide-cycles"></a>使用筛选器隐藏周期
+
+循环显示在堆快照的 **“保留器** ”部分中。
+为了帮助简化保留器路径，**内存**工具中的 **“保留器**”部分具有用于隐藏周期的筛选器。
+
+在 **“保留器** ”部分中，循环节点通过灰显来指示。
+
+在下图中，在 **“筛选器边缘** ”下拉菜单中，未选择 **“隐藏周期** ”，因此会显示)  (灰显的循环节点：
+
+![在“筛选边缘”下拉菜单中，未选择“隐藏循环”。](memory-101-images/filters-retainers-memory-tool-no-hide-cycled.png)
+
+在 **“筛选器边缘** ”下拉菜单中，选择了 **“隐藏循环** ”，因此不显示循环节点：
+
+![在“筛选边缘”下拉菜单中，选择了“隐藏循环”。](memory-101-images/filters-retainers-memory-tool-hide-cycled.png)
+
+
+### <a name="using-filters-to-hide-internal-nodes"></a>使用筛选器隐藏内部节点
+
+若要筛选出内部节点的显示，以便它们不会显示在 **“保留器** ”部分中，请在 **“筛选器边缘** ”下拉菜单中选择 **“隐藏内部**”。
+_内部节点_是特定于 V8 (Microsoft Edge) 中的 JavaScript 引擎的对象。
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于 [此处，](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) 由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 。
+> 原始页面 [在此](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) 处找到，由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

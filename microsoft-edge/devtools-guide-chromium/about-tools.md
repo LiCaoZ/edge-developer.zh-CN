@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/02/2022
-ms.openlocfilehash: 0966afd881ac141df23eaa05c026f9937470e83d
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 35ee0509a033b03dbb44991fdd153145a5551999
+ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514242"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "12551523"
 ---
 # <a name="about-the-list-of-tools"></a>关于工具列表
 
@@ -106,7 +106,7 @@ https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-f
 
 若要将工具移动到另一个工具栏，请右键单击工具的选项卡，然后选择 **“移到底部** ”或 **“移到顶部**”。
 
-若要打开**命令菜单**，请按 `Ctrl`++`Shift``P` (Windows/Linux) 或`P``Command`+`Shift`+ (macOS) 。  或者，单击 **“自定义并控制 DevTools** (![自定义图标。](media/customize-devtools-icon-light-theme.png)) 按钮，然后选择 **”运行“命令**。
+若要打开**命令菜单**，请按`Ctrl`++`Shift``P` (Windows、Linux) 或`P``Command`+`Shift`+ (macOS) 。  或者，单击 **“自定义并控制 DevTools** (![自定义图标。](media/customize-devtools-icon-light-theme.png)) 按钮，然后选择 **”运行“命令**。
 
 
 <!-- ====================================================================== -->

@@ -5,13 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/02/2022
-ms.openlocfilehash: cf60d4dbf7edc7e28d51c0d80753aa77f3b2244b
-ms.sourcegitcommit: d79f328b1dd650be153ba9edac99f6a5c371aaeb
+ms.date: 05/26/2022
+ms.openlocfilehash: 45de64b7ee4f733697ff90d33a2b87fa47dab576
+ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "12478453"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "12551555"
 ---
 # <a name="securely-debug-original-code-by-publishing-source-maps-to-the-azure-artifacts-symbol-server"></a>通过将源映射发布到Azure Artifacts符号服务器来安全地调试原始代码
 
@@ -41,7 +41,7 @@ ms.locfileid: "12478453"
 
 1. 通过转到`https://dev.azure.com/{yourorganization}`Azure DevOps组织登录。
 
-1. 在Azure DevOps中，转到 **User settingsPersonal** >  **访问令牌**：
+1. 在Azure DevOps中，转到 **“用户设置** > **个人访问令牌**”：
     
    ![Azure DevOps中的“用户设置”菜单，其中包含“个人访问令牌”命令。](images/ado-pat-settings.png)
 
@@ -169,6 +169,7 @@ module.exports = (env, args) => {
 <!-- ====================================================================== -->
 ## <a name="step-3-publish-source-maps-to-the-azure-artifacts-symbol-server"></a>步骤 3：将源映射发布到Azure Artifacts符号服务器
 
+完成以下任一选项以发布源映射。
 
 ### <a name="publish-source-maps-using-azure-devops-pipelines"></a>使用Azure DevOps Pipelines发布源映射
 

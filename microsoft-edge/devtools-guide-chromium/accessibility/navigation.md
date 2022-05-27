@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 9b418ca7942cf3b475fd94f290225c6c6cf8e34d
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: fc1c8753096d0416254f728fc166956e6fa4d215
+ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12513829"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "12551461"
 ---
 <!-- Copyright Rob Dodson
 
@@ -69,7 +69,7 @@ ms.locfileid: "12513829"
 | 操作 | 生成的工具 |
 |---|---|
 | 右键单击网页上的任何项，然后选择 **“检查**”。 | **“元素**”工具，其中扩展了 DOM 树以显示右键单击的页面元素。 |
-| 按 `Ctrl`++`Shift``I` (Windows/Linux) 或`I``Command`+`Option`+ (macOS) 。| 以前使用的工具或 **欢迎** 工具。 |
+| 按`Ctrl`+`Shift`+`I`（Windows、Linux）或 `Command`+`Option`+`I` （macOS）。| 以前使用的工具或 **欢迎** 工具。 |
 | 按 `F12`。 | 以前使用的工具或 **欢迎** 工具。 |
 
 **其他方法：**
@@ -135,6 +135,7 @@ ms.locfileid: "12513829"
 
 “**DOM 树**”已布局为 [ARIA 树](https://www.w3.org/TR/wai-aria-1.1/#tree)。  有关示例，请参阅[使用键盘导航 **DOM 树**](../dom/index.md#navigate-the-dom-tree-with-a-keyboard)。
 
+
 ### <a name="copy-the-code-for-an-element-in-the-dom-tree"></a>复制 DOM 树中元素的代码
 
 1. 右键单击 **DOM 树**中的节点。
@@ -147,6 +148,7 @@ ms.locfileid: "12513829"
 
 *  **复制 outerHTML** 通常不会选择当前节点，而是选择父节点。  但是，元素的内容仍应在复制 `outerHTML`中。
 
+
 ### <a name="modify-the-attributes-of-an-element-in-the-dom-tree"></a>修改 DOM 树中元素的属性
 
 *  重点关注 **DOM 树**中的节点时，请按 `Enter` 它使其可编辑。
@@ -158,6 +160,7 @@ ms.locfileid: "12513829"
 #### <a name="known-issues"></a>已知问题
 
 *  键入文本输入时，不会收到任何反馈。  如果创建拼写错误并使用箭头键浏览输入，则也不会收到反馈。  检查工作最简单的方法是接受更改，然后收听要播报的整个元素。
+
 
 ### <a name="edit-the-html-of-an-element-in-the-dom-tree"></a>编辑 DOM 树中元素的 HTML
 
@@ -180,6 +183,7 @@ ms.locfileid: "12513829"
 *  按 `Right Arrow` 下以浏览其他可用选项卡。
 
 **DOM 树**将具有`href`属性的元素转换为可聚焦链接，因此可能需要多次按`Tab`下才能访问“**样式**”窗格。
+
 
 ### <a name="known-issues"></a>已知问题
 
@@ -282,6 +286,18 @@ ms.locfileid: "12513829"
 
 *  对于 VoiceOver 等macOS屏幕阅读器，**辅助功能**选项卡使用的 [ARIA 树](https://www.w3.org/TR/wai-aria-1.1/#tree)类型可能无法在Microsoft Edge中正确公开。  订阅 [Chromium 问题 #868480](https://bugs.chromium.org/p/chromium/issues/detail?id=868480) 以获取有关此问题进展的通知。
 *  每个 **ARIA 属性** 和 **计算属性** 部分都标记为 [ARIA 树](https://www.w3.org/TR/wai-aria-1.1/#tree)，但每个节当前没有焦点管理，也不具有键盘操作性。
+
+
+<!-- ====================================================================== -->
+## <a name="persisting-the-inspect-tools-tooltip-and-grid-color-overlay"></a>保留检查工具的工具提示和网格颜色覆盖
+<!-- keep sync'd:
+* [Persisting the Inspect tool's tooltip and grid color overlay](../css/inspect.md#persisting-the-inspect-tools-tooltip-and-grid-color-overlay) in _Analyze pages using the Inspect tool_ -->
+
+单击 **“检查** ”工具按钮并在呈现的网页中四处移动时，“检查”工具提示会更改。  若要保持显示当前工具提示和网格颜色覆盖，请在呈现的网页中四处移动时按住 `Ctrl`+`Alt` (Windows、Linux) 或`Ctrl`+`Option` (macOS) 。
+
+使用屏幕放大镜或其他辅助技术时，此技术很有用。  如果未使“检查”工具的工具提示保持不变，则使用“ **检查”工具** (![“检查”工具按钮时，悬停覆盖层会不断更改。](../media/inspect-tool-icon-light-theme.png)) 。
+
+请 [参阅使用“检查”工具的“分析”页面](../css/inspect.md)。
 
 
 <!-- ====================================================================== -->

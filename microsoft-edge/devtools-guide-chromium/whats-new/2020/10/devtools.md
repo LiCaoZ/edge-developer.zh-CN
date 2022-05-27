@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 790e61d072409580de00f6916f0f68d173b84338
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 48756f1c9d226dd259d3cb5300fd41ec481e45de
+ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514327"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "12551593"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -88,7 +88,7 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
 
 ![选择新环境的格式。](../../media/2020/10/network-console-environments-new-format.msft.png)
 
-更新：此功能已发布，不再具有实验性。<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Network Console**. -->
+更新：此功能已发布，不再处于实验性状态。<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Network Console**. -->
 
 另请参阅：
 * 在 Compose [中保存和导出集合、环境和环境变量，](../../../network-console/network-console-tool.md#save-and-export-collections-environments-and-environment-variables)_并使用网络控制台工具发送 Web API 请求_。
@@ -113,7 +113,7 @@ Microsoft Edge DevTools 现在支持以下功能来检查、查看和调试 CSS 
 
 ![包含网格的布局工具。](../../media/2020/10/grid-layout-pane.msft.png)
 
-更新：此功能已发布，不再具有实验性。<!-- valid. -->
+更新：此功能已发布，不再处于实验性状态。<!-- valid. -->
 
 另请参阅：
 * [CSS 网格](../../../css/grid.md)
@@ -130,10 +130,10 @@ Microsoft Edge DevTools 团队正在与 Chrome DevTools 团队和Chromium社区�
 
 ![用于暂停脚本的自定义快捷方式。](../../media/2020/10/custom-shortcut-pause-script.msft.png)
 
-更新：此功能已发布，不再具有实验性。<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable keyboard shortcut editor**. -->
+更新：此功能已发布，不再处于实验性状态。<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable keyboard shortcut editor**. -->
 
 另请参阅：
-* [在自定义键盘快捷方式中编辑 DevTools 操作](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action)_的键盘快捷方式_。
+* 在“_自定义键盘快捷方式_”中[编辑开发人员工具操作的键盘快捷方式](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action)。
 
 有关历史记录，请参阅Chromium开源项目[中的问题 #174309](https://crbug.com/174309)。
 
@@ -175,7 +175,7 @@ Visual Studio Code和**网络Visual Studio Code**扩展的**元素**现在合并
 *  自定义身份验证器的属性。
 *  检查身份验证器的状态。
 
-可以使用新的 **WebAuthn** 工具模拟身份验证器并调试 [Web 身份验证 API](https://w3c.github.io/webauthn)。  若要打开 **WebAuthn** 工具，请单击“**自定义”并控制 DevTools** (`...`) 图标> **More** **toolsWebAuthn** > 。  有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1034663](https://crbug.com/1034663)。
+可以使用新的 **WebAuthn** 工具模拟身份验证器并调试 [Web 身份验证 API](https://w3c.github.io/webauthn)。  若要打开 **WebAuthn** 工具，请单击“ **自定义并控制 DevTools** ” (`...`) 图标> **更多工具** > **WebAuthn**。  有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1034663](https://crbug.com/1034663)。
 
 打开 **WebAuthn** 工具：
 
@@ -198,7 +198,7 @@ Visual Studio Code和**网络Visual Studio Code**扩展的**元素**现在合并
 <!-- ====================================================================== -->
 #### <a name="view-the-computed-sidebar-pane-in-the-styles-pane"></a>在“样式”窗格中查看计算边栏窗格
 
-在“样**式**”窗格中切换 **“计算**”窗格。  默认情况下，“**样式**”窗格中的 **“计算**”窗格会折叠。  若要在“样**式**”窗格中显示或隐藏 **“计算**”窗格，请单击“**显示计算样式”边栏** (![“显示计算样式边栏”图标。](../../media/2020/10/show-computed-styles-sidebar-icon.png)) 图标/按钮。
+在“样**式**”窗格中切换 **“计算**”窗格。  默认情况下，“**样式**”窗格中的 **“计算**”窗格会折叠。  若要在“样**式**”窗格中显示或隐藏 **“计算**”窗格，请单击“**显示计算样式”边栏** (![“显示计算样式边栏”图标。](../../media/2020/10/show-computed-styles-sidebar-icon.png)) 按钮。
 
 打开 **计算边栏** 窗格：
 
@@ -317,7 +317,7 @@ performance.mark('end');
 
 ![颜色对比度问题。](../../media/2020/10/css-overview.msft.png)
 
-更新：此功能已发布，不再具有实验性。<!-- To enable this experiment, under **Settings** > **Experiments**, select the **CSS Overview** checkbox. -->
+更新：此功能已发布，不再处于实验性状态。<!-- To enable this experiment, under **Settings** > **Experiments**, select the **CSS Overview** checkbox. -->
 
 另请参阅：
 * [CSS 概述工具](../../../css/css-overview-tool.md)
