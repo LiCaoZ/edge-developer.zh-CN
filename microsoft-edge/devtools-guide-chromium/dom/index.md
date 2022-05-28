@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/29/2021
-ms.openlocfilehash: 3da89747faf84f9930a9141ee2b303c9c4a11cd2
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 704f07efb4155a9d57cf54cb12f3c1caf7099474
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12513843"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552455"
 ---
 <!-- Copyright Kayce Basques
 
@@ -49,15 +49,15 @@ ms.locfileid: "12513843"
 
 1. 在 **“检查节点**”下，右键单击 **米开朗基罗** ，然后选择 **“检查**”。
 
-   :::image type="content" source="../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png" alt-text="检查节点。" lightbox="../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png":::
+   ![检查节点。](../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png)
 
    此时将打开开发人员工具的“**元素**”工具。  `<li>Michelangelo</li>` 将在“**DOM 树**”中突出显示。
 
-   :::image type="content" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="突出显示米开朗基罗节点。" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
+   ![突出显示米开朗基罗节点。](../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png)
 
 1. 单击“ **检查** (![检查”。](../media/inspect-tool-icon-light-theme.png) 在 DevTools 的左上角) 图标。
 
-   :::image type="content" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="“检查”图标。" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
+   ![“检查”图标。](../media/dom-elements-highlighted-select-element-page-inspect.msft.png)
 
 1. 在 **“检查节点**”下，单击 **“东京** 文本”。  现在，`<li>Tokyo</li>` 在 DOM 树中突出显示。
 
@@ -72,11 +72,11 @@ ms.locfileid: "12513843"
 
 1. 在 **使用键盘导航 DOM 树**下，右键单击 **Ringo** ，然后选择 **“检查**”。  `<li>Ringo</li>` 在 DOM 树中已选中。
 
-   :::image type="content" source="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png" alt-text="检查“Ringo”节点。" lightbox="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png":::
+   ![检查“Ringo”节点。](../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png)
 
 1. `Up`按箭头键 2 次。  `<ul>` 已选中。
 
-   :::image type="content" source="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png" alt-text="检查“ul”节点。" lightbox="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png":::
+   ![检查“ul”节点。](../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png)
 
 1. `Left`按箭头键。  `<ul>` 列表会折叠。
 
@@ -101,7 +101,7 @@ ms.locfileid: "12513843"
 
 1. 右键单击 `<li>Magritte</li>` 节点，然后单击 **“滚动到视图**”。  视区向上滚动以显示 **Magritte** 节点。  如果未显示 **“滚动到视图**”选项，请参阅[附录：缺少选项](#appendix-missing-options)。
 
-:::image type="content" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="滚动到视图。" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
+![滚动到视图。](../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png)
 
 ### <a name="search-for-nodes"></a>搜索节点
 
@@ -113,7 +113,7 @@ ms.locfileid: "12513843"
 
 1. 键入 `The Moon is a Harsh Mistress`。  最后一句在 DOM 树中突出显示。
 
-:::image type="content" source="../media/dom-elements-highlighted-search-nodes-highlight.msft.png" alt-text="突出显示搜索栏中的查询。" lightbox="../media/dom-elements-highlighted-search-nodes-highlight.msft.png":::
+![突出显示搜索栏中的查询。](../media/dom-elements-highlighted-search-nodes-highlight.msft.png)
 
 搜索栏还支持 CSS 和 XPath 选择器。
 
@@ -133,7 +133,7 @@ ms.locfileid: "12513843"
 
 1. 在 DOM 树中，双击 `Michelle`。  换言之，双击 `<li>` 和 `</li>` 之间的文本。  此时将突出显示文本，表明该文本已被选中。
 
-   :::image type="content" source="../media/dom-elements-highlighted-edit-content.msft.png" alt-text="编辑文本。" lightbox="../media/dom-elements-highlighted-edit-content.msft.png":::
+   ![编辑文本。](../media/dom-elements-highlighted-edit-content.msft.png)
 
 1. 删除 `Michelle`，键入 `Leela`，然后按 `Enter` 以确认更改。  DOM 中的文本从 **Michelle** 更改为 **Leela**。
 
@@ -147,11 +147,11 @@ ms.locfileid: "12513843"
 
 1. 双击 `<li>`。  此时将突出显示文本，表示节点已被选中。
 
-   :::image type="content" source="../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png" alt-text="编辑节点。" lightbox="../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png":::
+   ![编辑节点。](../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png)
 
 1. `Right`选择箭头键，添加空格，键入`style="background-color:gold"`，然后按`Enter`。  节点的背景色将更改为金色。
 
-   :::image type="content" source="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png" alt-text="将样式属性添加到节点。" lightbox="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png":::
+   ![将样式属性添加到节点。](../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png)
 
 ### <a name="edit-node-type"></a>编辑节点类型
 
@@ -165,7 +165,7 @@ ms.locfileid: "12513843"
 
 1. 删除 `li`，键入 `button`，然后按 `Enter`。  节点 `<li>` 将更改为 `<button>` 节点。
 
-   :::image type="content" source="../media/dom-elements-highlighted-edit-node-type-button.msft.png" alt-text="将节点类型更改为按钮。" lightbox="../media/dom-elements-highlighted-edit-node-type-button.msft.png":::
+   ![将节点类型更改为按钮。](../media/dom-elements-highlighted-edit-node-type-button.msft.png)
 
 ### <a name="reorder-dom-nodes"></a>对 DOM 节点重新排序
 
@@ -177,7 +177,7 @@ ms.locfileid: "12513843"
 
 1. 在 DOM 树中，将 `<li>Elvis Presley</li>` 拖动到列表顶部。
 
-:::image type="content" source="../media/dom-elements-reorder-dom-nodes.msft.png" alt-text="将节点拖到列表顶部。" lightbox="../media/dom-elements-reorder-dom-nodes.msft.png":::
+![将节点拖到列表顶部。](../media/dom-elements-reorder-dom-nodes.msft.png)
 
 ### <a name="force-state"></a>强制状态
 
@@ -201,7 +201,7 @@ ms.locfileid: "12513843"
 
 1. 按键 `H` 。  节点处于隐藏状态。
 
-   :::image type="content" source="../media/dom-elements-highlighted-hide-a-node.msft.png" alt-text="隐藏节点后，节点在 DOM 树中的外观。" lightbox="../media/dom-elements-highlighted-hide-a-node.msft.png":::
+   ![隐藏节点后，节点在 DOM 树中的外观。](../media/dom-elements-highlighted-hide-a-node.msft.png)
 
 1. 再次按键 `H` 。  节点将再次显示。
 
@@ -238,13 +238,13 @@ ms.locfileid: "12513843"
 
 1. 键入 `$0` 并选择 `Enter` 键。  表达式的结果显示 `$0` 计算结果为 `<li>The Left Hand of Darkness</li>`：
 
-   :::image type="content" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png" alt-text="控制台中第一个 $0 表达式的结果。" lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png":::
+   ![控制台中第一个 $0 表达式的结果。](../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png)
 
 1. 将鼠标悬停在结果上。  节点在视区中突出显示。
 
 1. 在 DOM 树中单击 `<li>Dune</li>` ，再次键 `$0` 入控制台，然后再次按 `Enter` 下。  现在， `$0` 计算结果为 `<li>Dune</li>`：
 
-:::image type="content" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png" alt-text="控制台中第二个 $0 表达式的结果。" lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png":::
+![控制台中第二个 $0 表达式的结果。](../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png)
 
 ### <a name="store-as-global-variable"></a>存储为全局变量
 
@@ -258,7 +258,7 @@ ms.locfileid: "12513843"
 
 1. 键 `temp1` 入控制台，然后按 `Enter`。  表达式的结果显示变量的计算结果为节点。
 
-:::image type="content" source="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png" alt-text="temp1 表达式的结果。" lightbox="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png":::
+![temp1 表达式的结果。](../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png)
 
 ### <a name="copy-js-path"></a>复制 JS 路径
 
@@ -268,7 +268,7 @@ ms.locfileid: "12513843"
 
 1. 在 **“复制 JS”路径**下，右键单击 **“兄弟卡拉马佐夫**”，然后选择“ **检查**”。
 
-1. 在 DOM 树中右键单击`<li>The Brothers Karamazov</li>`，然后选择 **CopyCopy** >  **JS 路径**。  解析为节点的 `document.querySelector()` 表达式已复制到剪贴板。
+1. 在 DOM 树中右键单击 `<li>The Brothers Karamazov</li>` ，然后选择 **“复制** > **JS 路径**”。  解析为节点的 `document.querySelector()` 表达式已复制到剪贴板。
 
 1. 按`Ctrl`+`V` (Windows、Linux) 或`Command`+`V` (macOS) 将表达式粘贴到控制台中。
 
@@ -276,7 +276,7 @@ ms.locfileid: "12513843"
 
 **复制 JS 路径**表达式的结果：
 
-:::image type="content" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="复制 JS 路径表达式的结果。" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
+![复制 JS 路径表达式的结果。](../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -292,13 +292,13 @@ ms.locfileid: "12513843"
 
 1. **在“断开属性修改**”下，右键单击 **“Sauerkraut**”，然后选择 **“检查**”。
 
-1. 在 DOM 树中，右键单击`<li id="target">Sauerkraut</li>`，然后选择 **“中断** **OnAttribute** >  修改”。  请参阅 [附录：](#appendix-missing-options) 如果未显示该选项，则缺少选项。
+1. 在 DOM 树中，右键单击 `<li id="target">Sauerkraut</li>`，然后选择 **“断开** > **属性修改**”。  请参阅 [附录：](#appendix-missing-options) 如果未显示该选项，则缺少选项。
 
-   :::image type="content" source="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png" alt-text="在属性修改时中断。" lightbox="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png":::
+   ![在属性修改时中断。](../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png)
 
 1. 在下一步中，系统将指示你单击暂停页面代码的按钮。  在页面暂停后，无法再滚动页面。  若要使页面再次可滚动，请选择“ **恢复脚本** (![恢复脚本](../media/resume-script-icon.msft.png)) 。
 
-   :::image type="content" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="在何处恢复脚本运行。" lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
+   ![在何处恢复脚本运行。](../media/dom-break-attribute-modifications-sources-paused-on.msft.png)
 
 1. 单击上面的 **“设置背景”** 按钮。  这会将节点的 `style` 属性设置为 `background-color:thistle`。  开发人员工具将暂停页面并突出显示导致属性发生更改的代码。
 
@@ -312,7 +312,7 @@ ms.locfileid: "12513843"
 
 1. 在 **“断开节点删除**”下，右键单击 **“神经人”** ，然后选择 **“检查**”。
 
-1. 在 DOM 树中，右键单击`<li id="target">Neuromancer</li>`，然后选择 **“断开** **OnNode** >  删除”。  请参阅 [附录：](#appendix-missing-options) 如果未显示该选项，则缺少选项。
+1. 在 DOM 树中，右键单击 `<li id="target">Neuromancer</li>`，然后选择 **“断开** > **节点删除**”。  请参阅 [附录：](#appendix-missing-options) 如果未显示该选项，则缺少选项。
 
 1. 单击上面 **的“删除”** 按钮。  开发人员工具将暂停页面并突出显示导致节点被删除的代码。
 
@@ -326,7 +326,7 @@ ms.locfileid: "12513843"
 
 1. **在“子树修改的中断**”下，右键单击 **“深层上的火”**，然后选择 **“检查**”。
 
-1. 在 DOM 树中，右键单击`<ul id="target">`上面`<li>A Fire Upon the Deep</li>`的节点，然后选择 **“中断** **OnSubtree** >  修改”。  如果 **子树修改** 命令未显示，请参阅 [附录：缺少选项](#appendix-missing-options)。
+1. 在 DOM 树中，右键单击 `<ul id="target">`上面 `<li>A Fire Upon the Deep</li>`的节点，然后选择 **“断开** > **子树修改**”。  如果 **子树修改** 命令未显示，请参阅 [附录：缺少选项](#appendix-missing-options)。
 
 1. 单击 **“添加子级**”。  由于向列表中添加了 `<li>` 节点，因此代码将暂停。
 
@@ -412,7 +412,7 @@ html
 
 1. 右键单击 `<li>Magritte</li>` 节点，然后选择 **“滚动到视图**”。  视区向上滚动，以便显示 **Magritte** 节点。  如果未显示 **“滚动到视图** ”选项，请参阅 [附录：缺少选项](#appendix-missing-options)。
 
-:::image type="content" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="滚动到视图。" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
+![滚动到视图。](../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -420,7 +420,7 @@ html
 
 本教程中的许多说明指示你右键单击 DOM 树中的节点，然后从弹出的上下文菜单中选择一个选项。  如果在上下文菜单中看不到指定的选项，请尝试右键单击节点文本。
 
-:::image type="content" source="../media/dom-elements-highlighted-right-click-right-side.msft.png" alt-text="如果未显示所有选项，则单击何处。" lightbox="../media/dom-elements-highlighted-right-click-right-side.msft.png":::
+![如果未显示所有选项，则单击何处。](../media/dom-elements-highlighted-right-click-right-side.msft.png)
 
 
 <!-- ====================================================================== -->

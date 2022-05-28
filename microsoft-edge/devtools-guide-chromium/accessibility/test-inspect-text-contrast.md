@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: c2c8d0a0abe26c1347277c52a967c412b8155caf
-ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
+ms.openlocfilehash: 5e8dddf228d5a0654b1ecb2db81269bd30bd4712
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "12551465"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553048"
 ---
 # <a name="check-text-color-contrast-in-the-default-state-using-the-inspect-tool"></a>使用检查工具检查默认状态下的文本颜色对比度
 
@@ -37,11 +37,11 @@ ms.locfileid: "12551465"
 
 1. 在呈现的网页中，将鼠标悬停在侧栏导航菜单的蓝色 **猫** 链接上。  将显示 **“检查** ”工具的信息覆盖层。  在信息覆盖的 **“辅助功能** ”部分， **对比度** 行上会显示一个绿色复选标记，指示此元素具有足够的文本颜色与背景颜色的对比度。
 
-   :::image type="content" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="菜单项具有足够的对比度，如“检查”工具中所示。" lightbox="../media/a11y-testing-enough-contrast.msft.png":::
+   ![菜单项具有足够的对比度，如“检查”工具中所示。](../media/a11y-testing-enough-contrast.msft.png)
 
 1. 在呈现的网页中的 **“捐赠状态”** 部分中，将鼠标悬停在 **“狗** ”链接上。  **检查**工具的信息覆盖显示**对比度**行上的橙色感叹号，指示此元素没有足够的文本与背景颜色的对比度。
 
-   :::image type="content" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="一个没有足够对比度的元素，如“检查”工具中的警告所示。" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
+   ![一个没有足够对比度的元素，如“检查”工具中的警告所示。](../media/a11y-testing-not-enough-contrast.msft.png)
 
 
 <!-- ====================================================================== -->

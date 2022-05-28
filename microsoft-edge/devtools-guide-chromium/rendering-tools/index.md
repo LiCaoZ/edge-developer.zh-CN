@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 74488596faa01dab0e9e07c53c8c640f816e4142
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 3e7297ad284c8e12442a5f39f191a1bc18bcd260
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514095"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553027"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -91,7 +91,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会使应
 
 选择事件 `Recalculate Style` 可在“ **详细** 信息”窗格中查看有关该事件的详细信息。  如果样式更改需要很长时间，则会影响性能。  如果样式计算影响大量元素，则这是另一个有改进空间的区域。
 
-:::image type="content" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="长重新计算样式。" lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
+![长重新计算样式。](../media/rendering-tools-performance-recalculate-style-summary.msft.png)
 
 若要减少事件的影响 `Recalculate Style` ，
 
@@ -138,7 +138,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会使应
 
 **“性能**”窗格标识页面何时导致强制同步布局。  这些 `Layout` 事件标记为红色条形图。
 
-:::image type="content" source="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png" alt-text="强制同步布局。" lightbox="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png":::
+![强制同步布局。](../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png)
 
 “布局打击”是强制同步布局条件的重复。  当 JavaScript 反复写入和读取 DOM 时，会发生这种情况，这会强制浏览器一遍又一遍地重新计算布局。  若要标识布局重排，请查找多个强制同步布局警告的模式。  查看上一个数字。
 
@@ -168,7 +168,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会使应
 想知道绘画需要多长时间或画画的频率？  在 **“性能**”面板中检查[“启用高级油漆检测](../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation)”设置，然后进行录制。  如果大部分渲染时间都花在了绘画上，则会出现油漆问题。
 
 <!--
-:::image type="content" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Long paint times in timeline recording." lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
+![Long paint times in timeline recording.](../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png)
 -->
 
 <!--

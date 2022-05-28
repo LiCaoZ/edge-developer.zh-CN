@@ -1,28 +1,28 @@
 ---
 title: 在控制台工具中记录消息
-description: 如何在开发人员工具控制台中记录Microsoft Edge JavaScript。
+description: 如何在 Microsoft Edge DevTools 控制台中记录消息并运行 JavaScript。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
-ms.openlocfilehash: 4c0838678faf99d4ea3f83e7afc5af4d721c93a3
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 8380e54baaab38a25a0244fdf4d57214920eb44e
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431310"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552725"
 ---
 # <a name="log-messages-in-the-console-tool"></a>在控制台工具中记录消息
 
-自浏览器开始**** `print` `log`提供开发人员工具以来，控制台一直很常用，因为在大多数编程课程，你学习输出某种类型或命令，以了解有关代码发生的情况的见解。
+自从浏览器开始提供开发人员工具以来， **控制台** 是收藏夹，因为在大多数编程课程中，你将学习输出某种 `print` 或 `log` 命令，以深入了解代码中发生的情况。
 
-在 DevTools 之前，对于 JavaScript， `alert()` 你只能使用 或 `document.write()` 语句在浏览器中调试。  使用 **** DevTools`Console`，若要在控制台中记录信息，控制台中提供了对象的许多方法，如控制台**** 对象 [API 参考中所列](api.md)。
+在 DevTools 之前，对于 JavaScript，只能使用一个或一个 `alert()` 语 `document.write()` 句在浏览器中进行调试。  使用 DevTools 在**控制台**中记录信息时，**控制台**中提供了许多对象方法`Console`，在[控制台对象 API 参考](api.md)中列出。
 
 
 ## <a name="console-messages-examples-log-info-error-and-warn"></a>控制台消息示例：日志、信息、错误和警告
 
-对象 `Console` 具有多个级别的邮件日志记录方法：
+该 `Console` 对象具有多个级别的消息日志记录方法：
 
 * `console.log` - 将文本作为日志消息打印到控制台。
 * `console.info` - 将文本作为信息性消息打印到控制台。
@@ -49,31 +49,31 @@ console.warn('This is a warning')
 
 ### <a name="demo-webpage-console-messages-examples-log-info-error-and-warn"></a>演示网页：控制台消息示例：日志、信息、错误和警告
 
-若要尝试使用控制台中的日志记录函数：
+尝试在控制台中使用日志记录函数：
 
 <!-- demo 1 of 6 -->
 
-1. 打开演示网页 [控制台消息示例：日志、信息、](https://microsoftedge.github.io/Demos/devtools-console/logging-examples.html) 错误和新窗口或选项卡中的警告。
+1. 在新窗口或选项卡中打开演示网页 [控制台消息示例：日志、信息、错误和警告](https://microsoftedge.github.io/Demos/devtools-console/logging-examples.html) 。
 
-1. 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 将打开， **主机在主** 工具栏中打开。
+1. 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 随即打开，主工具栏中打开 **控制台** 。
 
-   演示页面已经将上述日志消息发送到 **控制台**：
+   演示页已将上述日志消息发送到 **控制台**：
 
-   :::image type="content" source="../media/console-log-examples.msft.png" alt-text="控制台显示来自不同日志 API 的消息。" lightbox="../media/console-log-examples.msft.png":::
+   ![控制台显示来自不同日志 API 的消息。](../media/console-log-examples.msft.png)
 
-   和 `log()` `info()` 方法似乎执行相同的操作。  对`info()`不同的`log()`日志任务使用 和 ，因为这允许您筛选控制台消息[](console-filters.md)，以仅显示日志条目的子集。
+   和`log()``info()`方法似乎也做了同样的事情。  使用 `info()` 和 `log()` 处理不同的日志任务，因为这样可以 [筛选控制台消息](console-filters.md)，只显示一部分日志条目。
   
-   和 `error()` `warn()` 方法在消息旁边显示一个图标，以及检查消息堆栈 [跟踪](https://en.wikipedia.org/wiki/Stack_trace) 的方法。
+   和`error()``warn()`方法显示消息旁边的图标以及检查消息[堆栈跟踪](https://en.wikipedia.org/wiki/Stack_trace)的方法。
 
-1. 将任意示例复制并粘贴到 **控制台中**，然后按 `Enter`。
+1. 将任何示例复制并粘贴到 **控制台**中，然后按下 `Enter`。
 
-   输出将显示在控制台 **中**您输入的代码下方。
+   输出显示在 **控制台**中，位于输入的代码下方。
 
 
 <!-- ====================================================================== -->
 ## <a name="different-types-of-log-entries-and-variables"></a>不同类型的日志条目和变量
 
-您可以将任何有效的 JavaScript 或 DOM 引用发送到控制台，而不是日志 **文本**。  **控制台会**适当地显示从控制台日志消息发送给它的各种类型的 JavaScript 值。  **控制台**显示结果的已筛选和格式化表示形式。
+可以向 **控制台**发送任何有效的 JavaScript 或 DOM 引用，而不是日志文本。  **控制台**适当地显示从控制台日志消息发送到它的各种类型的 JavaScript 值。  **控制台**显示结果的筛选和格式化表示形式。
 
 
 ### <a name="example-code"></a>示例代码
@@ -101,44 +101,44 @@ console.log(w3techs);
 
 ### <a name="demo-webpage-logging-different-variable-types"></a>演示网页：记录不同的变量类型
 
-若要使用 `log` 函数显示不同的变量类型，
+若要使用该 `log` 函数显示不同的变量类型，请执行以下操作：
 
 <!-- demo 2 of 6 -->
 
-1. 打开演示网页 [控制台消息示例：记录](https://microsoftedge.github.io/Demos/devtools-console/logging-types.html) 新窗口或选项卡中的不同类型。
+1. 打开演示网页 [控制台消息示例：](https://microsoftedge.github.io/Demos/devtools-console/logging-types.html) 在新窗口或选项卡中记录不同类型。
 
-1. 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 将打开， **主机在主** 工具栏中打开。
+1. 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 随即打开，主工具栏中打开 **控制台** 。
 
-   每种类型的结果以不同方式显示。
+   每种类型的结果都以不同的方式显示。
 
-1. 单击三角形切换信息并更详细地分析每个结果。
+1. 单击三角形可切换信息并更详细地分析每个结果。
 
-   假设您收到许多仅显示值的日志消息，但不知道该值源自何处。  对于这种情况，我们在 变量`{}``x`周围添加了大括号，以便提供更好的分组。
+   假设你收到许多只显示值的日志消息，但不知道该值的来源。  对于这种情况，我们在变量周围`x`添加了大括号`{}`，以提供更好的分组。
 
-   在控制台中记录不同类型的 **变量**：
+   在 **控制台**中记录不同类型的变量：
 
-   :::image type="content" source="../media/console-log-types.msft.png" alt-text="在控制台中记录不同类型的变量。" lightbox="../media/console-log-types.msft.png":::
+   ![记录控制台中不同类型的变量。](../media/console-log-types.msft.png)
 
-   使用扩展的额外信息在 **控制台中** 记录不同类型的变量：
+   使用扩展的额外信息在 **控制台** 中记录不同类型的变量：
 
-   :::image type="content" source="../media/console-log-types-expanded.msft.png" alt-text="使用扩展的额外信息在控制台中记录不同类型的变量。" lightbox="../media/console-log-types-expanded.msft.png":::
+   ![使用展开的额外信息记录控制台中不同类型的变量。](../media/console-log-types-expanded.msft.png)
 
-1. 将任意示例复制并粘贴到 **控制台中**，然后按 `Enter`。
+1. 将任何示例复制并粘贴到 **控制台**中，然后按下 `Enter`。
 
-   输出将显示在控制台 **中**您输入的代码下方。
+   输出显示在 **控制台**中，位于输入的代码下方。
 
 
 <!-- ====================================================================== -->
-## <a name="format-and-convert-values-with-specifiers"></a>使用说明符设置值的格式和转换值
+## <a name="format-and-convert-values-with-specifiers"></a>使用说明符格式化和转换值
 
-所有日志方法的一个特殊功能是，您可以在日志语句的消息中使用说明符。  说明符是日志消息的一部分，以百分比符号 () `%` 字符。  使用说明符，可以记录不同格式的某些值，甚至可以在两种格式之间转换。
+所有日志方法的一个特殊功能是，可以在日志语句的消息中使用说明符。  说明符是日志消息的一部分，以百分比符号 (`%`) 字符开头。  使用说明符可以记录不同格式的某些值，甚至可以在格式之间进行转换。
 
-*  `%s` 记录为"字符串"。
-*  `%i` 或 `%d` 作为 Integers 记录。
-*  `%f` 记录为浮点值。
-*  `%o` 日志作为可展开的 DOM 元素。
+*  `%s` 以字符串形式记录日志。
+*  `%i` 或 `%d` 以整数身份记录。
+*  `%f` 日志作为浮点值。
+*  `%o` 日志作为可扩展的 DOM 元素。
 *  `%O` 日志作为可展开的 JavaScript 对象。
-*  `%c` 允许您使用 CSS 设置邮件样式。
+*  `%c` 允许使用 CSS 设置消息样式。
 
 ### <a name="example-code"></a>示例代码
 
@@ -163,45 +163,45 @@ console.log('%cImportant message follows','color:red;font-size:40px')
 ```
 
 
-### <a name="demo-webpage-logging-with-specifiers"></a>演示网页：使用说明符记录
+### <a name="demo-webpage-logging-with-specifiers"></a>演示网页：使用说明符进行日志记录
 
 <!-- demo 3 -->
 
-1. 打开演示页面 [控制台消息示例：使用说明符](https://microsoftedge.github.io/Demos/devtools-console/logging-with-specifiers.html) 记录新选项卡或窗口中的内容。
+1. 打开演示页 [控制台消息示例：](https://microsoftedge.github.io/Demos/devtools-console/logging-with-specifiers.html) 在新选项卡或窗口中使用说明符进行日志记录。
 
-1. 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 将打开， **主机在主** 工具栏中打开。
+1. 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 随即打开，主工具栏中打开 **控制台** 。
 
-   该网页已经使用输出 **填充了** 控制台。
+   网页已使用输出填充 **控制台** 。
 
-   第一个示例演示了说明符的替换顺序是字符串后的参数顺序：
+   第一个示例演示了说明符的替换顺序是字符串之后的参数顺序：
 
    ```javascript
    console.log('%ix %s developer', 10, 'console'); // logs "10x console developer"
    ```
    
-1. 单击输出结果中的 `log` 展开器三角形，以展开并查看由网页中的上述语句输出的数据。
+1. 单击输出结果中的扩展器三角形，展开并查看网页中上述 `log` 语句输出的数据。
 
-1. 如有必要，按 `F5` 以重新加载页面并重新填充 **控制台** 输出。
+1. 如有必要，请按 `F5` 下重新加载页面并重新填充 **控制台** 输出。
 
    说明符用于记录、格式化和转换值：
 
-   :::image type="content" source="../media/console-log-specifiers.msft.png" alt-text="使用说明符记录并转换值。" lightbox="../media/console-log-specifiers.msft.png":::
+   ![使用说明符记录和转换值。](../media/console-log-specifiers.msft.png)
 
-1. 在 **控制台中**，单击三角形以展开日志结果，以查看 和 `%o` 说明 `%O` 符之间的差。
+1. 在**控制台**中，单击三角形以展开日志结果，以查看和`%O`说明符之间的`%o`差异。
 
    网页正文显示为可展开的 DOM 节点，或显示为网页正文上所有 JavaScript 属性的完整列表：
 
-   :::image type="content" source="../media/console-log-specifiers-expanded.msft.png" alt-text="Expand 结果显示 %O 和 %o 说明符之间的差值 - 正文显示为可展开的 DOM 节点或网页正文上所有 JavaScript 属性的完整列表。" lightbox="../media/console-log-specifiers-expanded.msft.png":::
+   ![展开结果会显示 %O 和 %o 说明符之间的差异 - 正文要么显示为可展开的 DOM 节点，要么显示为网页正文上所有 JavaScript 属性的完整列表。](../media/console-log-specifiers-expanded.msft.png)
 
-1. 将上述示例代码列表复制并粘贴到 **控制台**中，然后按 `Enter`。
+1. 将上述示例代码列表复制并粘贴到 **控制台**中，然后按下 `Enter`。
 
-   输出将显示在控制台 **中**您输入的代码下方。
+   输出显示在 **控制台**中，位于输入的代码下方。
 
 
 <!-- ====================================================================== -->
-## <a name="group-log-messages"></a>组日志消息
+## <a name="group-log-messages"></a>对日志消息进行分组
 
-如果记录大量信息 `group` ，可以使用 和 `groupCollapsed` 方法在控制台中将日志消息显示为可展开和可折叠 **组**。  可以嵌套和命名组，使数据更易于理解。
+如果记录大量信息，则可以使用 `group` 和 `groupCollapsed` 方法在 **控制台**中将日志消息显示为可展开和可折叠的组。  可以嵌套和命名组，使数据更容易理解。
 
 ### <a name="example-code"></a>示例代码
 
@@ -231,35 +231,35 @@ for (tech in technologies) {
 ```
 
 
-### <a name="demo-webpage-grouping-logs"></a>演示网页：分组日志
+### <a name="demo-webpage-grouping-logs"></a>演示网页：对日志进行分组
 
-本示例中，可以选择生成组名称。
+在此示例中，可以选择性地生成组名称。
 
 <!-- demo 4 -->
 
-1. 打开演示页面 [控制台消息示例：将日志分组](https://microsoftedge.github.io/Demos/devtools-console/logging-with-groups.html) 到新选项卡或窗口中。
+1. 打开演示页 [控制台消息示例：](https://microsoftedge.github.io/Demos/devtools-console/logging-with-groups.html) 在新选项卡或窗口中对日志进行分组。
 
-1. 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 将打开， **主机在主** 工具栏中打开。
+1. 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 随即打开，主工具栏中打开 **控制台** 。
 
-   该网页已经使用输出 **填充了** 控制台。
+   网页已使用输出填充 **控制台** 。
 
    将大量值记录为组：
 
-   :::image type="content" source="../media/console-log-groups.msft.png" alt-text="将大量值记录为组。" lightbox="../media/console-log-groups.msft.png":::
+   ![将大量值记录为组。](../media/console-log-groups.msft.png)
 
-1. 在控制台输出中，展开并折叠每个部分：
+1. 在控制台输出中，展开和折叠每个部分：
 
-   :::image type="content" source="../media/console-log-groups-expanded.msft.png" alt-text="可以展开和折叠每个组。" lightbox="../media/console-log-groups-expanded.msft.png":::
+   ![可以展开和折叠每个组。](../media/console-log-groups-expanded.msft.png)
 
-1. 将上述示例代码列表复制并粘贴到 **控制台**中，然后按 `Enter`。
+1. 将上述示例代码列表复制并粘贴到 **控制台**中，然后按下 `Enter`。
 
-   输出将显示在控制台 **中**您输入的代码下方。
+   输出显示在 **控制台**中，位于输入的代码下方。
 
 
 <!-- ====================================================================== -->
 ## <a name="display-complex-data-as-tables"></a>将复杂数据显示为表
 
-该方法 `console.table()` 不将复杂数据记录为可折叠和可展开的对象，而是记录为可以使用不同标题进行排序的表。  排序表使用户更容易查看信息。
+该 `console.table()` 方法记录的复杂数据不是可折叠和可展开的对象，而是可使用不同标头排序的表。  排序表使用户更轻松地查看信息。
 
 
 ### <a name="example-code"></a>示例代码
@@ -282,42 +282,42 @@ console.log(bodyDimensions);
 console.table(bodyDimensions);
 ```
 
-演示页面的代码列表的第二部分将进一步向下显示。
+演示页中代码列表的第二部分会进一步向下显示。
 
 
-### <a name="demo-webpage-using-table-formatting"></a>演示网页：使用表格格式
+### <a name="demo-webpage-using-table-formatting"></a>演示网页：使用表格式
 
-将复杂数据显示为表：
+若要将复杂数据显示为表，请执行以下操作：
 
 <!-- demo 5 -->
 
-1. 打开演示页面 [控制台消息示例：使用新](https://microsoftedge.github.io/Demos/devtools-console/logging-with-table.html) 窗口或选项卡中的表。
+1. 打开演示页 [控制台消息示例：](https://microsoftedge.github.io/Demos/devtools-console/logging-with-table.html) 在新窗口或选项卡中使用表。
 
-1. 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 将打开， **主机在主** 工具栏中打开。
+1. 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。  DevTools 随即打开，主工具栏中打开 **控制台** 。
 
-   该网页已经使用输出 **填充了** 控制台。
+   网页已使用输出填充 **控制台** 。
 
-1. 在控制台 **中**，单击展开器三角形。
+1. 在 **控制台**中，单击展开器三角形。
 
-1. 单击展开器三角形。  使用 显示数据 `console.table` 可使数据更易于读取：
+1. 单击展开器三角形。  通过显示数据 `console.table` 可以更轻松地读取数据：
 
-   :::image type="content" source="../media/console-log-table.msft.png" alt-text="使用 console.table 显示数据，以便更轻松地阅读。" lightbox="../media/console-log-table.msft.png":::
+   ![使用 console.table 显示数据，使其更易于阅读。](../media/console-log-table.msft.png)
 
-1. 将上述代码列表复制并粘贴到 **控制台中**，然后按 `Enter`。
+1. 将上述代码列表复制并粘贴到 **控制台**中，然后按下 `Enter`。
 
-   输出将显示在控制台 **中**您输入的代码下方。
-
-
-的输出 `console.table` 具有表格格式。  输出不仅具有表格式，不仅当输出显示在控制台中时，而且**** 当您将表复制并粘贴到 Microsoft Excel、Microsoft Word 或其他支持表格数据的产品中时，输出的结构保持不变。
+   输出显示在 **控制台**中，位于输入的代码下方。
 
 
-#### <a name="specify-an-array-of-columns-for-each-property-for-readability"></a>为每个属性指定一个列数组，以用于可读性
+输出具有 `console.table` 表格格式。  输出不仅在**控制台**中显示输出时具有表格式，而且在将表复制并粘贴到Microsoft Excel、Microsoft Word或支持表格数据的任何其他产品中时，输出的结构将保持不变。
 
-如果数据具有命名参数 `console.table()` ，则该方法还允许您为每个属性指定一 `Array` 个列，以作为第二个参数显示。  以下示例演示如何指定一个可读的列数组：
+
+#### <a name="specify-an-array-of-columns-for-each-property-for-readability"></a>为每个属性指定列数组，以实现可读性
+
+如果数据具有命名参数， `console.table()` 该方法还允许为每个属性指定列的列 `Array` 以显示为第二个参数。  以下示例演示如何指定更易读的列数组：
 
 ##### <a name="example-code"></a>示例代码
 
-此代码来自上述同一演示网页。
+此代码来自与上面相同的演示网页。
 
 ```javascript
 // get all the h1, p and script elements
@@ -328,19 +328,19 @@ console.table(contentElements)
 console.table(contentElements,['nodeName', 'innerText', 'offsetHeight'])
 ```
 
-此代码筛选方法显示 `console.table()` 的信息。
+此代码筛选方法显示的信息 `console.table()` 。
 
 该代码提供要显示的属性数组，作为第二个参数：
 
-:::image type="content" source="../media/console-log-table-filtered.msft.png" alt-text="筛选&quot;console.table&quot;显示的信息，并提供要显示的属性数组作为第二个参数。" lightbox="../media/console-log-table-filtered.msft.png":::
+![筛选“console.table”显示的信息，并提供要显示的属性数组作为第二个参数。](../media/console-log-table-filtered.msft.png)
 
-1. 将上述代码列表复制并粘贴到 **控制台中**，然后按 `Enter`。
+1. 将上述代码列表复制并粘贴到 **控制台**中，然后按下 `Enter`。
 
-   输出将显示在控制台 **中**您输入的代码下方。
+   输出显示在 **控制台**中，位于输入的代码下方。
 
 
-### <a name="log-statements-vs-breakpoint-debugging-and-live-expressions"></a>日志语句与断点调试和 Live Expressions
+### <a name="log-statements-vs-breakpoint-debugging-and-live-expressions"></a>日志语句与断点调试和实时表达式
 
-你可能会尝试将这些方法 `log` 用作调试网页的主要方式，因为日志方法易于使用。  请考虑任何请求 `console.log()` 的结果。  已发布的产品不应使用用于 `log` 调试的任何声明，因为它可能会向用户显示内部信息。  控制台中创建的噪音 **非常** 强烈。
+你可能会想使用 `log` 这些方法作为调试网页的主要手段，因为日志方法易于使用。  请考虑任何 `console.log()` 请求的结果。  发布的产品不应使用任何 `log` 用于调试的语句，因为它可能会向人们透露内部信息。  在 **控制台** 中创建的噪音是压倒性的。
 
-请尝试使用`log`断[点调试或实时表达式，而不是](../javascript/breakpoints.md)[语句](live-expressions.md)。  您可能会发现您的工作流更有效，并且您可以获得更好的结果。
+`log`请尝试使用[断点调试](../javascript/breakpoints.md)或[实时表达式](live-expressions.md)，而不是语句。  你可能会发现工作流更有效，并且会获得更好的结果。

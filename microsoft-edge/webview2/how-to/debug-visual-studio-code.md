@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 02/11/2022
-ms.openlocfilehash: 8a455e8f858581c9cd296f257aecb9b0dbbc5e99
-ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
+ms.openlocfilehash: 49f9b9fefea1f3193dd8d92fe7a6fbd4c40b81e9
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "12473822"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552613"
 ---
 # <a name="debug-webview2-apps-with-visual-studio-code"></a>使用Visual Studio Code调试 WebView2 应用
 
@@ -51,17 +51,17 @@ Visual Studio Code源路径映射现在需要一个 URL，因此应用现在在�
 
 1. 若要在源代码中设置断点，请单击一行代码，然后按 `F9`下：
 
-   :::image type="content" source="./media/breakpoint-vs.png" alt-text="在Visual Studio Code中设置的断点。" lightbox="./media/breakpoint-vs.png":::
+   ![在Visual Studio Code中设置的断点。](./media/breakpoint-vs.png)
 
 1. 在 **“运行”** 选项卡上，从下拉菜单中选择启动配置。
 
-1. 单击 **“开始调试**”，这是启动配置下拉列表旁边的绿色三角形。
+1. 单击 **"开始"菜单调试**，这是启动配置下拉列表旁边的绿色三角形。
 
-   :::image type="content" source="./media/run-vs.png" alt-text="Visual Studio Code中的“运行”选项卡。" lightbox="./media/run-vs.png":::
+   ![Visual Studio Code中的“运行”选项卡。](./media/run-vs.png)
 
 1. 若要查看调试输出和错误，请打开 **调试控制台**。
 
-   :::image type="content" source="./media/results-vs.png" alt-text="Visual Studio Code中的调试控制台。" lightbox="./media/results-vs.png":::
+   ![Visual Studio Code中的调试控制台。](./media/results-vs.png)
 
 
 <!-- ====================================================================== -->
@@ -138,7 +138,7 @@ WebView2 控件必须打开 CDP 端口以允许调试 WebView2 控件。  在启
 
 将调试输出保存到日志文件：
 
-:::image type="content" source="./media/trace-log.png" alt-text=" 将调试输出保存到日志文件。" lightbox="./media/trace-log.png":::
+![ 将调试输出保存到日志文件。](./media/trace-log.png)
       
 ```json
 ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
@@ -146,7 +146,7 @@ WebView2 控件必须打开 CDP 端口以允许调试 WebView2 控件。  在启
 
 Visual Studio Code启用详细跟踪的调试输出：
 
-:::image type="content" source="./media/verbose.png" alt-text="Visual Studio Code启用详细跟踪的调试输出。" lightbox="./media/verbose.png":::
+![Visual Studio Code启用详细跟踪的调试输出。](./media/verbose.png)
 
 
 <!-- ====================================================================== -->

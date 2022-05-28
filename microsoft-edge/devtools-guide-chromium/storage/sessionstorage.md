@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: f6f4768acab0e6181922f836e178f78d1d43caf1
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: b3f933f1c8bba375f8a717c48ed55a5d055d0d29
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12432906"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553128"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,27 +28,27 @@ ms.locfileid: "12432906"
    limitations under the License.  -->
 # <a name="view-and-edit-session-storage"></a>查看和编辑会话存储
 
-若要查看、编辑和删除 [sessionStorage 键](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage) 值对，请使用 **应用程序** 工具。
+若要查看、编辑和删除 [sessionStorage](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage) 键值对，请 **使用应用程序工具** 。
 
 
 <!-- ====================================================================== -->
 ## <a name="view-sessionstorage-keys-and-values"></a>查看 sessionStorage 的键和值
 
-1. 在 DevTools 中，单击 **"应用程序"** 选项卡以打开 **"应用程序"** 工具。  默认显示**清单**面板。
+1. 在 DevTools 中，单击“ **应用程序** ”选项卡 **打开应用程序工具** 。  默认显示**清单**面板。
 
-   :::image type="content" source="../media/storage-application-manifest.msft.png" alt-text="&quot;清单&quot;窗格。" lightbox="../media/storage-application-manifest.msft.png":::
+   ![清单窗格。](../media/storage-application-manifest.msft.png)
 
 1. 展开**会话存储**菜单。
 
-   :::image type="content" source="../media/storage-application-storage-session-storage.msft.png" alt-text="&quot;会话存储菜单。" lightbox="../media/storage-application-storage-session-storage.msft.png":::
+   ![会话存储菜单。](../media/storage-application-storage-session-storage.msft.png)
 
-1. 单击域以查看键值对。
+1. 单击域可查看键值对。
 
-   :::image type="content" source="../media/storage-application-storage-session-storage-domain.msft.png" alt-text="sessionStorage 键值对。" lightbox="../media/storage-application-storage-session-storage-domain.msft.png":::
+   ![sessionStorage 键值对。](../media/storage-application-storage-session-storage-domain.msft.png)
 
-1. 单击表格的一行以查看表格下方的查看器中的值。
+1. 单击表的一行可在表下方的查看器中查看值。
 
-   :::image type="content" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="查看 x-sid 键的值。" lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
+   ![查看 x-sid 键的值。](../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -58,7 +58,7 @@ ms.locfileid: "12432906"
 
 1. 双击表的空白部分。  DevTools 将新建行，并将光标停留在**键**列。
 
-   :::image type="content" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="要双击以创建新的键值对的表的空部分。" lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
+   ![要双击表的空部分，以便创建新的键值配对。](../media/storage-application-storage-session-storage-domain-key-value-new.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -68,7 +68,7 @@ ms.locfileid: "12432906"
 
 1. 双击**键**或**值**列以编辑该键或值。
 
-   :::image type="content" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="编辑 sessionStorage 密钥。" lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
+   ![编辑 sessionStorage 密钥。](../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -76,9 +76,9 @@ ms.locfileid: "12432906"
 
 1. [查看域的 `sessionStorage` 键值对](#view-sessionstorage-keys-and-values)。
 
-1. 单击要删除的键值对。  DevTools 会以蓝色将其突出显示以表示其已选中。
+1. 单击要删除的键值配对。  DevTools 会以蓝色将其突出显示以表示其已选中。
 
-1. 按`Delete`或单击"**删除所选 (**!["。) ](../media/delete-icon.msft.png)。
+1. 按 `Delete` 或单击 **“删除选定** (![删除已选中。](../media/delete-icon.msft.png)) 。
 
 
 <!-- ====================================================================== -->
@@ -86,21 +86,21 @@ ms.locfileid: "12432906"
 
 1. [查看域的 `sessionStorage` 键值对](#view-sessionstorage-keys-and-values)。
 
-1. 单击 **"清除所有 (**![全部清除"。](../media/clear-icon.msft.png)) 。
+1. 单击 **“全部清除** (![全部清除。](../media/clear-icon.msft.png)) 。
 
 
 <!-- ====================================================================== -->
 ## <a name="interact-with-sessionstorage-from-the-console"></a>通过控制台与 sessionStorage 交互
 
-由于可以在控制台中运行 JavaScript，**** 并且控制台可以访问页面的 **** JavaScript `sessionStorage` 上下文，因此可以从控制台**进行交互**。
+由于可以在**控制台**中运行 JavaScript，并且由于**控制台**有权访问页面的 JavaScript 上下文，因此可以从**控制台**进行交`sessionStorage`互。
 
 1. 如果要访问除了你所在页面以外域的 `sessionStorage` 键值对，可以使用 **JavaScript 上下文**菜单更改**控制台**的 JavaScript 上下文。
 
-   :::image type="content" source="../media/storage-console-domain-selection.msft.png" alt-text="更改控制台的 JavaScript 上下文。" lightbox="../media/storage-console-domain-selection.msft.png":::
+   ![更改控制台的 JavaScript 上下文。](../media/storage-console-domain-selection.msft.png)
 
 1. 使用**控制台**运行 `sessionStorage` 表达式，与 JavaScript 一样。
 
-   :::image type="content" source="../media/storage-console-session-storage-keys.msft.png" alt-text="从控制台与 sessionStorage 交互。" lightbox="../media/storage-console-session-storage-keys.msft.png":::
+   ![从控制台与 sessionStorage 交互。](../media/storage-console-session-storage-keys.msft.png)
 
 
 <!-- ====================================================================== -->

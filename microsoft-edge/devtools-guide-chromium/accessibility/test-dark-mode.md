@@ -1,53 +1,53 @@
 ---
 title: 检查深色主题和浅主题的对比度问题
-description: 使用呈现工具中的"模拟 CSS 媒体功能首选-配色方案\"下拉列表) 查看深色主题和浅色主题 (深色模式和浅色主题控件的对比度问题。
+description: 使用呈现工具中的\“模拟 CSS 媒体功能 prefer-color-scheme\”下拉列表检查深色主题和浅色主题 (深色模式和浅色模式) 对比度问题。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: b665c9461bf3ba0d7df5f7dc0493862e0bb72a16
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 6c0feeec8d30f81f2da24485b672b4c1d39c53b7
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12430955"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552395"
 ---
 # <a name="check-for-contrast-issues-with-dark-theme-and-light-theme"></a>检查深色主题和浅主题的对比度问题
 
 <!-- Rendering tool: Emulate CSS media feature prefers-color-scheme -->
 
-测试颜色辅助功能时，可能需要测试不同的显示颜色主题，以测试对比度问题。
+测试颜色辅助功能时，可能需要测试不同的显示颜色主题，以解决对比度问题。
 
-大多数操作系统都提供深色模式和浅色模式。  您的网页可以使用 CSS 媒体查询对此操作系统设置做出反应。  您可以使用呈现工具中的 CSS 选项测试这些主题并测试 CSS `prefers-color-scheme` 媒体查询，而无需更改 **操作系统** 设置。
+大多数操作系统都带有深色模式和浅色模式。  网页可以使用 CSS 媒体查询对此操作系统设置做出反应。  可以使用`prefers-color-scheme`**呈现**工具中的 CSS 选项测试这些主题并测试 CSS 媒体查询，而无需更改操作系统设置。
 
-例如，辅助功能测试演示页面包括浅色主题和深色主题。  演示页面从操作系统继承深色或浅色主题设置。  如果我们使用 DevTools 模拟将操作系统设置为浅色方案，然后刷新演示网页，问题工具将显示六个色对比度**** 问题，而不是两个。   (您可能会看到不同的数字。) 
+例如，辅助功能测试演示页包含浅色主题和深色主题。  演示页从操作系统继承深色或浅色主题设置。  如果我们使用 DevTools 模拟设置为浅色方案的操作系统，然后刷新演示网页，“ **问题”** 工具将显示六个颜色对比度问题，而不是两个。   (可能会看到不同的数字。) 
 
-若要模拟用户的首选颜色主题选择：：
+若要模拟用户选择的首选颜色主题，请执行以下操作：
 
-1. 打开 [新窗口或选项卡中的](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 辅助功能测试演示网页。
+1. 在新窗口或选项卡中打开 [辅助功能测试演示网页](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) 。
 
-1. 右键单击网页中的任意位置，然后选择"检查 **"**。  或者，按 `F12`。  将在网页旁边打开 DevTools。
+1. 右键单击网页中的任意位置，然后选择 **“检查**”。  或者按 `F12`。  DevTools 将在网页旁边打开。
 
-1. 按 **Esc** 打开 DevTools 底部的"箱"。  Click the **+** icon at the top of the Drawer to see the list of tools， and then select **Rendering**.  将显示呈现工具。
+1. 按 **Esc** 打开 DevTools 底部的抽屉。  **+** 单击抽屉顶部的图标以查看工具列表，然后选择 **“呈现**”。  将显示呈现工具。
 
-1. 在模拟 **CSS 媒体功能 prefers-color-scheme** 下拉列表中，选择 **prefers-color-scheme： light**。  网页使用 重新呈现 `light-theme.css`。
+1. 在 **模拟 CSS 媒体功能首选配色方案** 下拉列表中，选择 **首选配色方案：浅色**。  使用 >a0>重新呈现 `light-theme.css`网页。
 
-   :::image type="content" source="../media/a11y-testing-simulating-light-mode.msft.png" alt-text="使用呈现工具模拟光线模式并触发文档的其他主题。" lightbox="../media/a11y-testing-simulating-light-mode.msft.png":::
+   ![使用呈现工具模拟光模式并触发文档的另一主题。](../media/a11y-testing-simulating-light-mode.msft.png)
 
-1. 选择 **"问题** "工具，然后展开 **"辅助功能"** 部分。  根据各种因素，你可能会收到 `Insufficient color contrast` 警告。 请注意， **在受影响的资源** 中，有 6 个元素的颜色对比度不足。
+1. 选择 **“问题** ”工具，然后展开 **“辅助功能”** 部分。  根据各种因素，你可能会收到 `Insufficient color contrast` 警告。 请注意， **受影响的资源** 中有 6 个元素的颜色对比度不足。
 
-   :::image type="content" source="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png" alt-text="由于浅色主题更改而检测到新的对比度问题。" lightbox="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png":::
+   ![由于对浅色主题的更改，检测到新的对比度问题。](../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png)
 
-    在我们的演示页面上，页面的 **"私人** 状态"部分在浅色模式下不可读，需要更改：
+    在我们的演示页上，页面的 **“捐赠状态** ”部分在浅色模式下不可读，需要更改：
 
-   :::image type="content" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="在浅色模式下，&quot;私人状态&quot;部分有对比度问题。" lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
+   ![“捐赠状态”部分在浅色模式下存在对比度问题。](../media/a11y-testing-donation-state-light-contrast.msft.png)
 
-1. 在 DevTools 中，选择 **"元素**`Ctrl`+`F`"工具，然后按 Windows/Linux `Command`+`F` 或 macOS。  将显示 **"** 查找"文本框，以在 HTML DOM 树中搜索。
+1. 在 DevTools 中，选择 **“元素”** 工具，然后按`Ctrl`+`F`Windows/Linux 或`Command`+`F`macOS。  将显示 **“查找** ”文本框，以便在 HTML DOM 树中进行搜索。
 
-   !["元素"工具中 DOM 树的"查找"文本框。](../media/find-in-dom-tree.png)
+   ![元素工具中 DOM 树的“查找”文本框。](../media/find-in-dom-tree.png)
 
-1. 输入 `scheme`。  找到以下 CSS 媒体查询，现在可更新相应的 CSS 文件。
+1. 输入 `scheme`。  找到以下 CSS 媒体查询，现在可以更新相应的 CSS 文件。
 
     ```html
     <link rel="stylesheet" href="css/light-theme.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">

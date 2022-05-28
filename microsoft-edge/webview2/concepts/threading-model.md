@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 09/21/2021
-ms.openlocfilehash: d9d8651f4189d927f15b4bdd0950a160d4fbcfa5
-ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
+ms.openlocfilehash: 8327f25f851a358176cc54e3a6d4303ea0b42134
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "12473961"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553060"
 ---
 # <a name="threading-model-for-webview2-apps"></a>WebView2 应用的线程模型
 
@@ -80,7 +80,7 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 > 1. 在**解决方案资源管理器**中，右键单击 WebView2 项目，然后选择 **“属性**”。
 > 1. 选择 **“调试** ”选项卡，然后选中 **“启用本机代码调试** ”复选框，如下所示。
 
-:::image type="content" source="../media/webview-enable-native-debug.png" alt-text="在Visual Studio中启用本机代码调试。" lightbox="../media/webview-enable-native-debug.png":::
+![在Visual Studio中启用本机代码调试。](../media/webview-enable-native-debug.png)
 
 
 <!-- ====================================================================== -->

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 0ae7034c33ee0a9d605b0bbf1a1c7b835328c1eb
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: b692ebc41de8d54025f236fedd87f8df650f7814
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12497049"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552670"
 ---
 # <a name="automate-and-test-webview2-apps-with-microsoft-edge-webdriver"></a>使用 Microsoft Edge WebDriver 自动执行和测试 WebView2 应用
 <!-- old title: # Automate and test WebView2 apps with Microsoft Edge WebDriver -->
@@ -35,7 +35,7 @@ ms.locfileid: "12497049"
 
 克隆存储库后，请在 Visual Studio 中生成项目。  它应如下图所示。
 
-:::image type="content" source="../media/webdriver/sample-app.png" alt-text="WebView2API 示例应用。" lightbox="../media/webdriver/sample-app.png":::
+![WebView2API 示例应用。](../media/webdriver/sample-app.png)
 
 
 <!-- ====================================================================== -->
@@ -55,23 +55,23 @@ ms.locfileid: "12497049"
 
 至此，你已安装 WebView2 运行时、生成 WebView2 项目并安装Microsoft Edge WebDriver。  接下来，开始使用 Selenium，如下所示。
 
-1. 首先在Visual Studio中创建新的 **C# .NET Framework**项目。****  选择右下角的“ **下一步** ”以继续。
+1. 通过在 Visual Studio 中创建新的 **C# .NET Framework** 项目**来"开始"菜单**。  选择右下角的“ **下一步** ”以继续。
 
-   :::image type="content" source="../media/webdriver/new-project.png" alt-text="创建新项目。" lightbox="../media/webdriver/new-project.png":::
+   ![创建新项目。](../media/webdriver/new-project.png)
 
 1. 为项目提供**Project名称**，将其保存到首选**位置**，然后选择 **“创建**”。
 
-   :::image type="content" source="../media/webdriver/app-create.png" alt-text="配置新项目。" lightbox="../media/webdriver/app-create.png":::
+   ![配置新项目。](../media/webdriver/app-create.png)
 
    将创建一个新项目，所有代码都放置在文件中 `Program.cs` 。
 
-   :::image type="content" source="../media/webdriver/start-app.png" alt-text="新项目。" lightbox="../media/webdriver/start-app.png":::
+   ![新项目。](../media/webdriver/start-app.png)
 
 1. 接下来，将 Selenium 添加到项目;使用 Selenium.WebDriver NuGet包安装 Selenium，如下所示。  若要下载 Selenium.WebDriver NuGet 包，**请在Visual Studio**中选择**Project** > **管理NuGet包**。
 
 1. 选择“ **浏览”** 选项卡。 将显示以下屏幕。
 
-   :::image type="content" source="../media/webdriver/download-nuget.png" alt-text="下载NuGet包。" lightbox="../media/webdriver/download-nuget.png":::
+   ![下载NuGet包。](../media/webdriver/download-nuget.png)
 
 1. 在 **包源** 下拉列表中，选择 **nuget.org**。
 
@@ -81,7 +81,7 @@ ms.locfileid: "12497049"
 
 1. 在右侧的详细信息窗口中，确保 **将版本** 设置为 **4.0.0** 或更高版本，然后选择 **“安装**”。  NuGet将 Selenium 下载到计算机。
 
-   :::image type="content" source="../media/webdriver/nuget.png" alt-text="管理NuGet包。" lightbox="../media/webdriver/nuget.png":::
+   ![管理NuGet包。](../media/webdriver/nuget.png)
 
    若要详细了解 Selenium.WebDriver NuGet 包，请参阅 [Selenium.WebDriver](https://www.nuget.org/packages/Selenium.WebDriver)。
 
@@ -181,7 +181,7 @@ Microsoft Edge WebDriver 启动 WebView2 应用，并自动附加到应用创建
    }
    ```
 
-   :::image type="content" source="../media/webdriver/microsoft.png" alt-text="运行 WebView2 的 Selenium。" lightbox="../media/webdriver/microsoft.png":::
+   ![运行 WebView2 的 Selenium。](../media/webdriver/microsoft.png)
 
 祝贺你！  根据“启动”方法，你已使用 Selenium 和 Microsoft Edge WebDriver 成功自动化 WebView2 项目并驱动 WebView2。
 

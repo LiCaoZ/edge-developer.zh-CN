@@ -1,17 +1,17 @@
 ---
 title: 远程调试 Android WebViews
-description: 开始使用 Microsoft Edge DevTools 在本机 Android 应用中使用远程调试 WebView。
+description: 开始使用 Microsoft Edge DevTools 在本机Android应用中使用远程调试 WebView。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 34cdefa96050edb2d2dbce13126536f8d6eb592e
-ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
+ms.openlocfilehash: 5e073fa565d0a5aa439bee9401ebf9726185ac22
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "12473923"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552341"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -28,24 +28,24 @@ ms.locfileid: "12473923"
    limitations under the License.  -->
 # <a name="remotely-debug-android-webviews"></a>远程调试 Android WebViews
 
-使用 Microsoft Edge 开发人员工具在本机 Android 应用中调试 Android WebViews。
+使用Microsoft Edge开发人员工具在本机Android应用中调试Android WebView。
 
-在 Android 4.4 (KitKat) 或更高版本上，使用 DevTools 调试本机 Android 应用中的 WebView 内容。
+在 Android 4.4 (KitKat) 或更高版本上，使用 DevTools 调试本机Android应用中的 WebView 内容。
 
 Android WebView 与 [Microsoft Edge WebView2](../../webview2/index.md) 无关。
 
 
 ### <a name="summary"></a>摘要
 
-*  在本机 Android 应用中启用 Android WebView 调试;在 Microsoft Edge DevTools 中调试 Android WebViews。
-*  若要显示启用调试的 Android WebViews 列表，请转到 `edge://inspect`。
-*  调试 Android WebView 的方式与通过 [远程调试调试](index.md)网页的方式相同。
+*  在本机Android应用中启用Android WebView 调试;在 Microsoft Edge DevTools 中调试Android WebView。
+*  若要显示已启用调试的Android WebView 的列表，请转到`edge://inspect`。
+*  调试Android WebView 的方式与通过[远程调试](index.md)调试网页的方式相同。
 
 
 <!-- ====================================================================== -->
 ## <a name="configure-android-webviews-to-debug"></a>将 Android WebView 配置为调试
 
-必须在应用中启用 Android WebView 调试。  若要启用 Android WebView 调试，请在类上`WebView`运行 [setWebContentsDebuggingEnabled](https://developer.android.com/reference/android/webkit/WebView.html#setWebContentsDebuggingEnabled(boolean)) 静态方法。
+Android必须在应用中启用 WebView 调试。  若要启用Android WebView 调试，请在类上`WebView`运行 [setWebContentsDebuggingEnabled](https://developer.android.com/reference/android/webkit/WebView.html#setWebContentsDebuggingEnabled(boolean)) 静态方法。
 
 ```java
 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -53,10 +53,10 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 }
 ```
 
-此设置适用于应用的所有 Android WebView。
+此设置适用于应用的所有Android WebView。
 
 > [!TIP]
-> Android WebView 调试不受应用清单中标志状态 `debuggable` 的影响。  如果只想在标志`true`为标志时`debuggable`启用 Android WebView 调试，请在运行时测试该标志。
+> Android WebView 调试不受应用清单中标志状态`debuggable`的影响。  如果要仅在标志`true`为标志时`debuggable`启用Android WebView 调试，请在运行时测试该标志。
 >
 > ```java
 > if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -67,14 +67,14 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 
 
 <!-- ====================================================================== -->
-## <a name="open-an-android-webview-in-devtools"></a>在 DevTools 中打开 Android WebView
+## <a name="open-an-android-webview-in-devtools"></a>在 DevTools 中打开Android WebView
 
-若要在设备上显示启用调试的 Android WebViews 列表，请转到 `edge://inspect`。
+若要显示已在设备上运行调试的Android WebView 的列表，请转到`edge://inspect`。
 
 若要开始调试，请在要调试的 Android WebView 下单击 **“检查**”。  使用 DevTools 的方式与使用远程浏览器选项卡的方式相同。
 
 <!--
-:::image type="content" source=".images/webview-debugging.msft.png" alt-text="Inspecting elements in an Android WebView." lightbox=".images/webview-debugging.msft.png":::
+![Inspecting elements in an Android WebView.](.images/webview-debugging.msft.png)
 
 The gray graphics listed with the Android WebView represent its size and position relative to the screen of the device.  If your Android WebViews have titles set, the titles are listed as well.
 -->
@@ -83,9 +83,9 @@ The gray graphics listed with the Android WebView represent its size and positio
 <!-- ====================================================================== -->
 ## <a name="troubleshoot"></a>疑难解答
 
-如果 Android WebView 未显示在页面上 `edge://inspect` ：
+如果页面上`edge://inspect`未显示Android WebView：
 
-*  验证应用是否已启用 Android WebView 调试。
+*  验证是否为应用启用了Android WebView 调试。
 
 *  在设备上，使用要调试的 Android WebView 打开应用。  然后，刷新 `edge://inspect`。
 

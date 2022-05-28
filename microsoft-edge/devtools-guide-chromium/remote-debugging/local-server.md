@@ -1,17 +1,17 @@
 ---
 title: 访问本地服务器
-description: 如何在开发计算机 Web 服务器上承载网站，然后从 Android 设备访问内容。
+description: 如何在开发计算机 Web 服务器上托管站点，然后从Android设备访问内容。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/11/2021
-ms.openlocfilehash: 6650e6c7c9a36888fb6a6456d9ca6f2650e8ad61
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: c2f445d4c2ae037666f7d4e71e552adcd2728657
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12432633"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552772"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,106 +28,106 @@ ms.locfileid: "12432633"
    limitations under the License.  -->
 # <a name="access-local-servers"></a>访问本地服务器
 
-在开发计算机 Web 服务器上承载网站，然后从 Android 设备访问内容。
+在开发计算机 Web 服务器上托管站点，然后从Android设备访问内容。
 
-使用 USB 电缆Microsoft Edge DevTools，从开发计算机运行网站，然后在 Android 设备上查看网站。
+使用 USB 电缆和 Microsoft Edge DevTools，从开发计算机运行站点，然后在Android设备上查看站点。
 
 ### <a name="summary"></a>摘要
 
-*  通过端口转发，您可以查看在 Android 设备上开发计算机上运行的 Web 服务器托管的内容。
+*  通过端口转发，可以查看在Android设备上的开发计算机中运行的 Web 服务器托管的内容。
 
-*  如果 Web 服务器使用的是自定义域，请设置 Android 设备以使用自定义域映射访问该域中的内容。
+*  如果 Web 服务器使用自定义域，请设置Android设备以使用自定义域映射访问该域中的内容。
 
 
 <!-- ====================================================================== -->
 ## <a name="set-up-port-forwarding"></a>设置端口转发
 
-通过端口转发，Android 设备可以访问托管在开发计算机中运行的 Web 服务器上的内容。  端口转发的工作原理是，在 Android 设备上创建一个可映射到开发计算机上 TCP 端口的侦听 TCP 端口。
+端口转发使Android设备能够访问在开发计算机中运行的 Web 服务器上托管的内容。  端口转发的工作原理是，在映射到开发计算机上的 TCP 端口的Android设备上创建侦听 TCP 端口。
 
-端口之间的流量通过 Android 设备和开发计算机之间的 USB 连接，因此连接不依赖于网络配置。
+端口之间的流量通过Android设备和开发计算机之间的 USB 连接传输，因此连接不依赖于网络配置。
 
-启用端口转发：
+若要启用端口转发，请执行以下操作：
 
-1. 在 [开发计算机和](index.md) Android 设备之间设置远程调试。  完成后，Android 设备应显示在"检查设备"对话框和"已连接状态"指示器**的左侧菜单中**。****
+1. 在开发计算机和Android设备之间设置[远程调试](index.md)。  完成后，Android设备应显示在“**检查设备**”对话框的左侧菜单和 **“连接**状态”指示器中。
 
-1. 在 DevTools **中的** "检查设备"对话框中，启用 **端口转发**。
+1. 在 DevTools 中的 **“检查设备** ”对话框中，启用 **端口转发**。
 
 1. 单击**添加规则**。
 
-   :::image type="content" source="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png" alt-text="添加端口转发规则。" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png":::
+   ![添加端口转发规则。](../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png)
 
-1. 在 **左侧的"** 设备 `localhost` 端口"文本框中，输入你想要从该端口号访问 Android 设备上的站点。  例如，如果要从 输入 访问网站`localhost:5000``5000`。
+1. 在左侧的 **“设备端口**”文本框中，输入`localhost`要从中访问Android设备上的站点的端口号。  例如，如果要从 `localhost:5000` Enter `5000`访问站点。
 
-1. 在 **右侧"** 本地地址"文本框中，输入您的网站托管在开发计算机中运行的 Web 服务器的 IP 地址或主机名，后跟端口号。  例如，如果您的网站在 中运行，请输入 `localhost:7331` `localhost:7331`。
+1. 在右侧的 **“本地地址** ”文本框中，输入站点托管在开发计算机中运行的 Web 服务器上的 IP 地址或主机名，后跟端口号。  例如，如果网站在 Enter `localhost:7331`上`localhost:7331`运行。
 
 1. 单击**添加**。
 
-现已设置端口转发。
+端口转发现已设置。
 
-可以在顶部以及设备名称旁边看到端口向前的状态指示器。  端口前进的指示器位于"检查设备"对话框内的设备 **选项卡** 上。
+可以在顶部以及设备名称旁边看到端口向前移动的状态指示器。  在“ **检查设备** ”对话框中，端口转发的指示器位于设备上的选项卡上。
 
-:::image type="content" source="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png" alt-text="端口转发状态。" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png":::
+![端口转发状态。](../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png)
 
-若要查看内容，请打开Microsoft Edge Android 设备上的端口，`localhost`然后转到在"设备端口"字段中**指定的端口**。  例如，如果在 字段中输入， `5000` 请访问 `localhost:5000`。
+若要查看内容，请在Android设备上打开Microsoft Edge，然后转到`localhost`在**设备端口**字段中指定的端口。  例如，如果在字段中输入 `5000` ，请访问 `localhost:5000`。
 
 
 <!-- ====================================================================== -->
 ## <a name="map-to-custom-local-domains"></a>映射到自定义本地域
 
-通过自定义域映射，可以在使用自定义域的开发计算机上通过 Web 服务器查看 Android 设备上的内容。
+通过自定义域映射，可以从使用自定义域的开发计算机上的 Web 服务器查看Android设备上的内容。
 
-例如，假定您的网站使用仅在域 上工作的第三方 JavaScript 库 `microsoft-edge.devtools`。  因此，在开发计算机上在 `hosts` `localhost` 文件中创建一个条目，以将此域 (例如，) `127.0.0.1 microsoft-edge.devtools` 。  在设置自定义域映射和端口转发后，在 Android 设备上通过 URL 查看网站 `microsoft-edge.devtools`。
+例如，假设网站使用仅适用于域 `microsoft-edge.devtools`的第三方 JavaScript 库。  因此，在开发计算机上的文件中 `hosts` 创建一个条目，将此域映射到 `localhost` (，例如) `127.0.0.1 microsoft-edge.devtools` 。  设置自定义域映射和端口转发后，在 URL `microsoft-edge.devtools`上查看Android设备上的站点。
 
-### <a name="set-up-port-forwarding-to-proxy-server"></a>设置到代理服务器的端口转发
+### <a name="set-up-port-forwarding-to-proxy-server"></a>设置端口转发到代理服务器
 
-若要映射自定义域，必须在开发计算机上运行代理服务器。  代理服务器的示例包括[部署、](https://www.charlesproxy.com)[Squid 和](https://wiki.squid-cache.org) [Fiddler](https://www.telerik.com/fiddler)。
+若要映射自定义域，必须在开发计算机上运行代理服务器。  代理服务器的示例包括 [Charles](https://www.charlesproxy.com)、 [Squid](https://wiki.squid-cache.org) 和 [Fiddler](https://www.telerik.com/fiddler)。
 
-设置到代理的端口转发：
+若要设置端口转发到代理，请执行以下操作：
 
-1. 运行代理服务器并记录它使用的端口。
+1. 运行代理服务器并记录正在使用的端口。
 
    > [!NOTE]
    > 代理服务器和 Web 服务器必须在不同的端口上运行。
 
-1. 设置 [到 Android 设备的](#set-up-port-forwarding) 端口转发。  对于 **"本地地址"** 字段，输入 `localhost:` 后跟运行代理服务器的端口。  例如，如果它在端口上运行， `8000`请转到 `localhost:8000`。  在 **设备端口** 字段中，输入你想要 Android 设备侦听的号码，例如 `3333`。
+1. 设置[端口转发](#set-up-port-forwarding)到Android设备。  对于 **本地地址** 字段，输入 `localhost:` 代理服务器正在运行的端口。  例如，如果它在端口 `8000`上运行，请转到 `localhost:8000`。  在**设备端口**字段中输入你希望Android设备侦听的数字，例如`3333`。
 
 ### <a name="configure-proxy-settings-on-your-device"></a>在设备上配置代理设置
 
-接下来，你需要将 Android 设备配置为与代理服务器通信。
+接下来，需要将Android设备配置为与代理服务器通信。
 
-1. 在 Android 设备上，导航到 **设置** > **Wi-Fi**。
+1. 在Android设备上，导航到 **设置** > **Wi-Fi**。
 
-1. 长按当前连接到的网络的名称。
+1. 长时间按当前连接到的网络的名称。
 
     > [!NOTE]
     > 代理设置适用于每个网络。
 
-1. 单击 **"修改网络"**。
+1. 单击 **“修改网络**”。
 
-1. 单击 **"高级选项"**。  将显示代理设置。
+1. 单击 **“高级”选项**。  代理设置显示。
 
-1. 单击" **代理"** 菜单，然后选择" **手动"**。
+1. 单击 **“代理”** 菜单，然后选择 **“手动**”。
 
-1. 对于" **代理主机名"** 字段，输入 `localhost`。
+1. 对于 **“代理主机名”** 字段，请输入 `localhost`。
 
-1. 对于 **"代理端口** "字段，输入在上一部分中为 **设备端口** 输入的端口号。
+1. 对于 **代理端口** 字段，请输入在上一部分中为 **设备端口** 输入的端口号。
 
 1. 单击 **“保存”**。
 
-借助这些设置，你的设备会将它的所有请求转发到开发计算机上代理。  代理代表你的设备提出请求，因此正确解决了对自定义本地域的请求。
+使用这些设置，设备会将其所有请求转发到开发计算机上的代理。  代理代表设备发出请求，以便正确解析对自定义本地域的请求。
 
-现在访问 Android 设备上的自定义域，就像在开发计算机上一样。
+现在，访问Android设备上的自定义域，就像在开发计算机上一样。
 
-如果 Web 服务器在非标准端口上运行，请记住在从 Android 设备请求内容时指定端口。  例如，如果你的 Web 服务器在`microsoft-edge.devtools``7331`端口上使用自定义域，当你从 Android 设备查看网站时，你应该使用 URL `microsoft-edge.devtools:7331`。
+如果 Web 服务器正在从非标准端口中运行，请记得在从Android设备请求内容时指定端口。  例如，如果 Web 服务器在端口`7331`上使用自定义域`microsoft-edge.devtools`，则从Android设备查看站点时，应使用 URL`microsoft-edge.devtools:7331`。
 
 > [!TIP]
-> 若要恢复正常浏览，请记得在断开与开发计算机连接后在 Android 设备上还原代理设置。
+> 若要恢复正常浏览，请记得在断开与开发计算机的连接后，还原Android设备上的代理设置。
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于此处，[](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server)由[由 (](https://developers.google.com/web/resources/contributors#kayce-basques) Technical Writer、Chrome DevTools \& Lighthouse) 和 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。
+> 原始页面 [在这里](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server) 找到，由 [凯斯·巴斯克斯](https://developers.google.com/web/resources/contributors#kayce-basques) (技术作家，Chrome DevTools \& Lighthouse) 和 [梅金·科尔尼](https://developers.google.com/web/resources/contributors#meggin-kearney) (技术作家) 创作。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
-ms.openlocfilehash: e7d46b270f018cd1b0326607a83cb860557c5009
-ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
+ms.openlocfilehash: 7c731e9b87c8b41ded51ae2df81aa17c80994f65
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "12550653"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552356"
 ---
 <!-- Copyright Kayce Basques
 
@@ -56,7 +56,7 @@ DevTools 提供以下移动设备仿真功能：
 
 选择 **切换设备仿真** (![切换设备工具栏。](../media/toggle-device-toolbar-dark-icon.msft.png)) 或选择 **“自定义和控制 DevTools** ” (`...`) > **设备仿真** 以打开可模拟移动视区的 UI。
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="设备工具栏。" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+![设备工具栏。](../media/device-mode-toggle-device-toolbar-highlighted.msft.png)
 
 默认情况下，设备工具栏在响应式视区模式下打开。
 
@@ -64,23 +64,23 @@ DevTools 提供以下移动设备仿真功能：
 
 若要跨多个屏幕大小快速测试页面的外观，请拖动手柄以将视区调整为所需尺寸。  还可以在宽度和高度框中输入特定值。  在下图中，宽度设置为 `626`，高度设置为 `516`。
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="在响应式视区模式下更改视区维度的句柄。" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
+![在响应式视区模式下更改视区维度的句柄。](../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png)
 
 #### <a name="show-media-queries"></a>显示媒体查询
 
 如果已在页面上定义了媒体查询，请通过在视区上方显示媒体查询断点，跳至视区维度，使这些媒体查询生效。  选择 **“更多选项** > **”显示媒体查询**。
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png" alt-text="显示媒体查询。" lightbox="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png":::
+![显示媒体查询。](../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png)
 
 选择断点以更改视区宽度，以便触发媒体查询。
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png" alt-text="选择断点以更改视区宽度。" lightbox="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png":::
+![选择断点以更改视区宽度。](../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png)
 
 #### <a name="set-the-device-type"></a>设置设备类型
 
 使用“**设备类型**”列表模拟移动设备或桌面设备。
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="设备类型列表。" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
+![设备类型列表。](../media/device-mode-toggle-device-toolbar-device-type-list.msft.png)
 
 下表介绍了可用设备类型选项之间的差异。  “渲染方法”列是指 Microsoft Edge 是将页面渲染为移动视区还是桌面视区。  “光标图标”列是指当你将鼠标悬停在页面上时所显示的光标类型。  “触发事件”列是指你与页面交互时页面是触发 `touch` 还是 `click` 事件。
 
@@ -98,7 +98,7 @@ DevTools 提供以下移动设备仿真功能：
 
 若要模拟特定移动设备的尺寸，请从“**设备**”列表中选择该设备。
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-device-list.msft.png" alt-text="设备列表。" lightbox="../media/device-mode-toggle-device-toolbar-device-list.msft.png":::
+![设备列表。](../media/device-mode-toggle-device-toolbar-device-list.msft.png)
 
 
 #### <a name="rotate-the-viewport-to-landscape-orientation"></a>将视区旋转为横向
@@ -107,13 +107,13 @@ DevTools 提供以下移动设备仿真功能：
 
 1. 若要将视区旋转到横向方向，请选择 **“旋转** (![旋转。](../media/rotate-dark-icon.msft.png)) ：
 
-   :::image type="content" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="以横向显示的页面。" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
+   ![以横向显示的页面。](../media/device-mode-toggle-device-toolbar-landscape.msft.png)
 
    如果“**设备**”工具栏较窄，将不显示“**旋转**”按钮。
 
 1. 如果需要，若要访问 **“旋转** ”按钮，请增加 **设备工具栏**的宽度。
 
-   :::image type="content" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="设备工具栏。" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+   ![设备工具栏。](../media/device-mode-toggle-device-toolbar-highlighted.msft.png)
 
 另请参阅 [下面的“设置方向](#set-orientation)”。
 
@@ -122,13 +122,13 @@ DevTools 提供以下移动设备仿真功能：
 
 若要模拟特定移动设备的维度，请打开 **“更多”选项** ，然后选择 **“显示设备框架** ”以显示视区周围的物理设备框架。
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="“显示设备框架”菜单项。" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
+![“显示设备框架”菜单项。](../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png)
 
 如果未显示特定设备的设备帧，则表示 DevTools 没有该设备的艺术。
 
 iPhone 6 的设备帧：
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="iPhone 6 的设备帧。" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
+![iPhone 6 的设备帧。](../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png)
 
 #### <a name="add-a-custom-mobile-device"></a>添加自定义移动设备
 
@@ -136,13 +136,13 @@ iPhone 6 的设备帧：
 
 1. 选择 **“** 设备”列表> **“编辑**”。
 
-   :::image type="content" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="从设备列表中选择“编辑”。" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
+   ![从设备列表中选择“编辑”。](../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png)
 
 1. 选择 **“添加自定义设备**”。
 
 1. 在“**仿真设备**”上，输入自定义设备的设备名称、屏幕宽度和屏幕高度。  “[设备像素比](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio)”、“[用户代理字符串](https://developer.mozilla.org/docs/Glossary/User_agent)”和“[设备类型](#set-the-device-type)”为可选字段。  设备类型字段默认为“**移动设备**”。
 
-   :::image type="content" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="添加自定义设备。" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
+   ![添加自定义设备。](../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png)
 
 ### <a name="show-rulers"></a>显示标尺
 
@@ -158,7 +158,7 @@ iPhone 6 的设备帧：
 
 若要在多个缩放级别测试页面的外观，请使用“**缩放**”列表进行缩放。
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-zoom.msft.png" alt-text="缩放列表。" lightbox="../media/device-mode-toggle-device-toolbar-zoom.msft.png":::
+![缩放列表。](../media/device-mode-toggle-device-toolbar-zoom.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -172,13 +172,13 @@ iPhone 6 的设备帧：
 
    所有限制都基于笔记本电脑或桌面设备的正常功能。
 
-   :::image type="content" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="设备工具栏中的“限制”列表。" lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
+   ![设备工具栏中的“限制”列表。](../media/device-mode-toggle-device-toolbar-throttle.msft.png)
 
    如果 **“限制”列表**处于隐藏状态，则表示**设备工具栏**过窄。
 
 1. 如果需要，若要访问 **限制列表**，请增加 **设备工具栏**的宽度。
 
-   :::image type="content" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="设备工具栏。" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+   ![设备工具栏。](../media/device-mode-toggle-device-toolbar-highlighted.msft.png)
 
 
 ### <a name="throttle-the-cpu-only"></a>仅限制 CPU
@@ -189,7 +189,7 @@ iPhone 6 的设备帧：
 
 1. 选择 **CPU** > **4 倍减速** 或 **6 倍减速**。
 
-   :::image type="content" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="性能面板中的 CPU 列表。" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
+   ![性能面板中的 CPU 列表。](../media/device-mode-performance-cpu-throttle.msft.png)
 
 
 ### <a name="throttle-the-network-only"></a>仅限制网络
@@ -198,17 +198,17 @@ iPhone 6 的设备帧：
 
 1. 选择 **网络** 工具，然后选择 **联机** > **快速 3G** 或 **慢速 3G**。
 
-   :::image type="content" source="../media/device-mode-network-throttle.msft.png" alt-text="网络面板中的“限制”列表。" lightbox="../media/device-mode-network-throttle.msft.png":::
+   ![网络面板中的“限制”列表。](../media/device-mode-network-throttle.msft.png)
 
     或者，按`Ctrl``P`+`Shift`+ (Windows、Linux) 或+`Shift``Command`+`P` (macOS) 打开**命令菜单**，开始键`3g`入，然后选择 **“启用快速 3G 限制**”或 **“启用慢速 3G 限制**”。
 
-   :::image type="content" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="从命令菜单中选择“启用快速或慢速 3G 限制”。" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
+   ![从命令菜单中选择“启用快速或慢速 3G 限制”。](../media/device-mode-command-menu-throttle.msft.png)
 
 还可以从 **“性能** ”面板设置网络限制：
 
 1. 选择 **“捕获设置** (![捕获设置。](../media/capture-settings-icon.msft.png)) 并选择 **”网络**“列表，并将预设更改为 **”快速 3G**“或 **”慢速 3G**”。
 
-   :::image type="content" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="设置性能面板中的网络限制。" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
+   ![设置性能面板中的网络限制。](../media/device-mode-performance-network-throttle.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -218,15 +218,15 @@ iPhone 6 的设备帧：
 
 1. 选择 **“自定义并控制 DevTools** ” (`...`) > **“更多工具** > **传感器**”。
 
-   :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="用于地理位置的传感器。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+   ![用于地理位置的传感器。](../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png)
 
     或者，通过选择`Ctrl`++`Shift``P` (Windows、Linux) 或`P``Command`+`Shift`+ (macOS) 打开命令菜单。  键入 `Sensors` 并选择 **“显示传感器**”。
 
-   :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="从命令菜单显示用于地理位置的传感器。" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+   ![从命令菜单显示用于地理位置的传感器。](../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png)
 
 在 **“传感器”** 面板上，若要选择其中一个预设位置，请使用 **“位置** ”下拉菜单。  若要输入自定义位置，请选择 **“其他** ”并输入自定义位置的坐标。  若要测试页面在位置信息不可用时的行为，请选择 **“位置不可用**”。
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="已选择预设位置的“传感器”面板。" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
+![已选择预设位置的“传感器”面板。](../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -236,17 +236,17 @@ iPhone 6 的设备帧：
 
 1. 选择 **“自定义并控制 DevTools** ” (`...`) > **“更多工具** > **传感器**”。
 
-   :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="“更多工具”菜单上的“传感器”命令。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+   ![“更多工具”菜单上的“传感器”命令。](../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png)
 
    或者，通过选择`Ctrl`++`Shift``P` (Windows、Linux) 或`P``Command`+`Shift`+ (macOS) 打开命令菜单。  键 `Sensors`入，然后选择 **“显示传感器**”。
 
-   :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="显示传感器以获取方向。" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+   ![显示传感器以获取方向。](../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png)
 
    在 **“传感器** ”面板上，可以从“ **方向** ”下拉菜单中选择预设方向。
 
 1. 若要输入自己的方向，请选择 **“自定义方向**”，并输入自己的 [alpha](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/alpha)、 [beta](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/beta) 和 [gamma](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/gamma) 值。
 
-   :::image type="content" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="传感器面板上的方向选项。" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
+   ![传感器面板上的方向选项。](../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -256,11 +256,11 @@ iPhone 6 的设备帧：
 
 1. 选择 **“自定义并控制 DevTools** ” (`...`) > **更多工具** > **网络条件**。
 
-   :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="“更多工具”菜单中的“网络条件”条目。" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
+   ![“更多工具”菜单中的“网络条件”条目。](../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png)
 
    或者，通过选择`Ctrl`++`Shift``P` (Windows、Linux) 或`P``Command`+`Shift`+ (macOS) 打开命令菜单。键入`Network conditions`并选择 **“显示网络条件**”。
 
-   :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="显示网络条件。" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
+   ![显示网络条件。](../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png)
 
 1. 在 **用户代理**旁边，清除 **“使用浏览器”默认** 复选框。
 
@@ -268,7 +268,7 @@ iPhone 6 的设备帧：
 
 1. 若要输入你自己的用户代理字符串，请在“**输入自定义用户代理**”中输入字符串。
 
-   :::image type="content" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="将用户代理字符串设置为在macOS上Microsoft Edge。" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
+   ![将用户代理字符串设置为在macOS上Microsoft Edge。](../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png)
 
 
 ### <a name="see-also"></a>另请参阅
@@ -287,7 +287,7 @@ iPhone 6 的设备帧：
 
 1. 在“模拟设备”面板中，选择 **“添加自定义设备** ”并展开 **用户代理客户端提示**。
 
-   :::image type="content" source="images/emulated-devices-user-agent-client-hints.msft.png" alt-text="设置用户代理客户端提示。" lightbox="images/emulated-devices-user-agent-client-hints.msft.png":::
+   ![设置用户代理客户端提示。](images/emulated-devices-user-agent-client-hints.msft.png)
 
 1. 在 **“设备名称”** 文本框中键入唯一名称，例如 `Test101`。
 

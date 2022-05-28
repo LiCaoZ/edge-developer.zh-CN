@@ -1,11 +1,17 @@
 ---
 title: 使用 Lighthouse 测试辅助功能
-description: 在 DevTools 内使用 Lighthouse 测试辅助功能。
+description: 在 DevTools 中使用 Lighthouse 测试辅助功能。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
+ms.openlocfilehash: 9c92a5b41d777d344fcb57b7e8f838985ec32fb1
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552390"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques
@@ -23,39 +29,39 @@ ms.date: 06/07/2021
    limitations under the License.  -->
 # <a name="test-accessibility-using-lighthouse"></a>使用 Lighthouse 测试辅助功能
 
-可以在 DevTools 内使用 Lighthouse 审核页面的辅助功能并生成报告。 可以使用 Lighthouse 工具确定：
+可以使用 DevTools 中的 Lighthouse 来审核页面的辅助功能并生成报表。 可以使用 Lighthouse 工具来确定：
 
-*  是否已为屏幕阅读器正确标记页面。
+*  是否为屏幕阅读器正确标记页面。
 
-*  页面上的文本元素是否具有足够的对比率（使用颜色选取器）。 请参阅 [使用颜色选取器测试文本颜色对比度](color-picker.md)。
+*  页面上的文本元素是否使用颜色选取器具有足够的对比度。 [使用颜色选取器查看测试文本颜色对比度](color-picker.md)。
 
-**Lighthouse** 工具提供指向第三方网站上承载的内容的链接。  Microsoft 不负责也不控制这些网站的内容，并且可能会收集任何数据。
+**Lighthouse** 工具提供指向第三方网站上托管的内容的链接。  Microsoft 不负责也不控制这些网站的内容，并且可能会收集任何数据。
 
-若要使用 Lighthouse 工具审核页面：
+若要使用 Lighthouse 工具审核页面，请执行以下操作：
 
 1. 转到要审核的 URL。
 
-1. 在 DevTools 中，选择 **"Lighthouse"** 工具。  将显示配置选项：
+1. 在 DevTools 中，选择 **Lighthouse** 工具。  显示配置选项：
 
-   :::image type="content" source="../media/accessibility-lighthouse.msft.png" alt-text="浅色配置选项。" lightbox="../media/accessibility-lighthouse.msft.png":::
+   ![Lighthouse 配置选项。](../media/accessibility-lighthouse.msft.png)
 
-1. 对于 **"** 设备 **"，** 如果要模拟移动设备，请选择"移动"。  此选项将更改用户代理字符串并调整视口的大小。  此选项可能会影响审核结果。
+1. 对于 **设备**，如果要模拟移动设备，请选择 **“移动** ”。  此选项将更改用户代理字符串并调整视口的大小。  此选项可能会影响审核结果。
 
-1. 在" **类别"** 部分， **选择"辅助功能"**。
+1. 在“ **类别** ”部分中，选择 **“辅助功能**”。
 
-1. 单击 **"生成报告"**。 10 到 30 秒后，DevTools 将显示一个报告。  该报告提供了有关如何提高页面辅助功能的提示：
+1. 单击 **“生成报表**”。 10 到 30 秒后，DevTools 会显示一个报表。  该报表提供有关如何改进页面辅助功能的提示：
 
-   :::image type="content" source="../media/accessibility-lighthouse-result.msft.png" alt-text="辅助功能类别的&quot;浅色&quot;报表。" lightbox="../media/accessibility-lighthouse-result.msft.png":::
+   ![辅助功能类别的 Lighthouse 报表。](../media/accessibility-lighthouse-result.msft.png)
 
-1. 选择报告中的某个项目以了解有关它的详细信息。
+1. 在报表中选择一个项目以了解有关它的详细信息。
 
-   :::image type="content" source="../media/accessibility-lighthouse-result-issue-expanded.msft.png" alt-text="Lighthouse 报告中的一个扩展问题。" lightbox="../media/accessibility-lighthouse-result-issue-expanded.msft.png":::
+   ![Lighthouse 报告中的扩展问题。](../media/accessibility-lighthouse-result-issue-expanded.msft.png)
 
-1. 单击 **"了解更多** "链接以查看问题的文档：
+1. 单击 **“了解更多** ”链接以查看问题的文档：
 
-   :::image type="content" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="查看问题的文档。" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
+   ![查看问题的文档。](../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png)
 
-1. 若要返回到配置选项，请在 DevTools **** `+` 中单击"执行审核 () 。
+1. 若要返回到配置选项，请在 DevTools 中单击 **“执行审核** (`+`) 。
 
 
 <!-- ====================================================================== -->

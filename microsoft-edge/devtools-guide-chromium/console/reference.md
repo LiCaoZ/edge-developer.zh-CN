@@ -1,17 +1,17 @@
 ---
 title: 控制台功能参考
-description: 针对开发人员工具中控制台 UI 的每种功能Microsoft Edge全面参考。
+description: 针对 Microsoft Edge DevTools 中控制台 UI 的每个功能和行为的综合参考。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: c7e0870c0f2b32d4d8d820d58e0cec29edd153d5
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 694e633070d1e25428d212f1e929701336fc9873
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431954"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552754"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,7 +28,7 @@ ms.locfileid: "12431954"
    limitations under the License.  -->
 # <a name="console-features-reference"></a>控制台功能参考
 
-本文概述了控制台 **的功能**。
+本文概述了 **控制台**的功能。
 
 **内容：**
 
@@ -38,7 +38,7 @@ ms.locfileid: "12431954"
    * [打开控制台设置](#open-console-settings)
    * [打开控制台边栏](#open-the-console-sidebar)
 * [查看消息](#view-messages)
-   * [关闭邮件分组](#turn-off-message-grouping)
+   * [关闭消息分组](#turn-off-message-grouping)
    * [记录 XHR 和 Fetch 请求](#log-xhr-and-fetch-requests)
    * [跨页面加载保留消息](#persist-messages-across-page-loads)
    * [隐藏网络消息](#hide-network-messages)
@@ -47,12 +47,12 @@ ms.locfileid: "12431954"
    * [按记录级别筛选](#filter-by-log-level)
    * [按 URL 筛选消息](#filter-messages-by-url)
    * [筛选出不同上下文的消息](#filter-out-messages-from-different-contexts)
-   * [筛选出与正则表达式模式不匹配的邮件](#filter-out-messages-that-dont-match-a-regular-expression-pattern)
+   * [筛选出与正则表达式模式不匹配的消息](#filter-out-messages-that-dont-match-a-regular-expression-pattern)
 * [运行 JavaScript](#run-javascript)
    * [从历史记录重新运行表达式](#rerun-expressions-from-history)
-   * [使用 Live Expressions 实时监视表达式的值](#watch-the-value-of-an-expression-in-real-time-with-live-expressions)
-   * [关闭"期待评估"](#turn-off-eager-evaluation)
-   * [从历史记录中关闭自动完成](#turn-off-autocomplete-from-history)
+   * [使用实时表达式实时观看表达式的值](#watch-the-value-of-an-expression-in-real-time-with-live-expressions)
+   * [关闭“急切评估”](#turn-off-eager-evaluation)
+   * [关闭历史记录中的自动完成](#turn-off-autocomplete-from-history)
    * [选择 JavaScript 上下文](#select-javascript-context)
 * [清除控制台](#clear-the-console)
 
@@ -60,72 +60,72 @@ ms.locfileid: "12431954"
 <!-- ====================================================================== -->
 ## <a name="open-the-console"></a>打开控制台
 
-可以将控制台 **作为** 工具 [在上窗格中打开，](#open-the-console-tool) 也可以作为工具在"箱 ["中打开](#open-the-console-tool-in-the-drawer)。
+可以打开 **控制台** 作为 [上窗格中的工具](#open-the-console-tool) 或 [抽屉中的工具](#open-the-console-tool-in-the-drawer)。
 
 
 ### <a name="open-the-console-tool"></a>打开控制台工具
 
 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。
 
-:::image type="content" source="../media/console-hello-console.msft.png" alt-text="控制台工具。" lightbox="../media/console-hello-console.msft.png":::
+![控制台工具。](../media/console-hello-console.msft.png)
 
-若要从命令**菜单**打开控制台工具[](../command-menu/index.md)，请键入 `Console` ，然后运行旁边有******面板**锁屏提醒的显示控制台命令。
+若要从[命令菜单](../command-menu/index.md)打开**控制台**工具，请键入`Console`并运行显示**控制台**命令，该命令旁边有**面板**徽章。
 
-:::image type="content" source="../media/console-command-menu-show-console.msft.png" alt-text="运行命令以显示控制台工具。" lightbox="../media/console-command-menu-show-console.msft.png":::
+![运行命令以显示控制台工具。](../media/console-command-menu-show-console.msft.png)
 
 
 ### <a name="open-the-console-tool-in-the-drawer"></a>打开工具箱中的控制台工具
 
-按 `Esc`。  或者，单击 **"自定义和控制 DevTools** `...` () "，然后选择"显示控制台 **箱"**。
+按 `Esc`。  或者，单击 **“自定义”并控制 DevTools** (`...`) ，然后选择 **“显示控制台抽屉**”。
 
-:::image type="content" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="显示控制台箱。" lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
+![显示控制台抽屉。](../media/console-elements-customize-control-devtools-show-console-drawer.msft.png)
 
-The Drawer pops up in the bottom of the DevTools window， with the **Console** tool open.
+抽屉弹出到 DevTools 窗口的底部， **控制台** 工具处于打开状态。
 
-:::image type="content" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="&quot;箱&quot;中的控制台工具。" lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
+![抽屉中的控制台工具。](../media/console-elements-console-drawer-hello-world.msft.png)
 
-若要从命令**菜单**打开控制台工具[](../command-menu/index.md)，请键入**控制台**，然后运行旁边有****"箱"**锁屏提醒**的"显示控制台"命令。
+若要从[命令菜单](../command-menu/index.md)打开**控制台**工具，请键入**控制台**，然后运行其旁边有**抽屉**徽章的 **“显示控制台**”命令。
 
-:::image type="content" source="../media/console-command-menu-show-console.msft.png" alt-text="运行命令以在&quot;箱&quot;中显示 **Console** 工具。" lightbox="../media/console-command-menu-show-console.msft.png":::
+![运行命令以在抽屉中显示 **Console** 工具。](../media/console-command-menu-show-console.msft.png)
 
 
 ### <a name="open-console-settings"></a>打开控制台设置
 
-单击"**控制台设置 (**![控制台设置图标](../media/settings-button-icon.msft.png)。) 按钮。
+单击**控制台设置** (![控制台设置图标。](../media/settings-button-icon.msft.png)) 按钮。
 
-:::image type="content" source="../media/console-settings-group-similar-empty.msft.png" alt-text="控制台设置。" lightbox="../media/console-settings-group-similar-empty.msft.png":::
+![控制台设置。](../media/console-settings-group-similar-empty.msft.png)
 
 
 ### <a name="open-the-console-sidebar"></a>打开控制台边栏
 
-若要显示**边栏**，请单击显示**控制台**![边栏 (显示控制台边](../media/show-console-sidebar-icon.msft.png)栏。) 。  **边栏**可帮助你进行筛选。
+若要显示 **Sidebar**，请单击 **“显示控制台边栏** (![显示控制台边栏。](../media/show-console-sidebar-icon.msft.png)) 。  **边栏**可帮助你进行筛选。
 
-:::image type="content" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="控制台边栏。" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
+![控制台边栏。](../media/console-sidebar-drawer-empty.msft.png)
 
 
 <!-- ====================================================================== -->
 ## <a name="view-messages"></a>查看消息
 
-此部分包含更改消息在控制台中的显示方式的功能。  有关实际操作演练，请参阅查看 [邮件](index.md#inspect-and-filter-information-on-the-current-webpage)。
+此部分包含更改消息在控制台中的显示方式的功能。  有关动手演练，请参 [阅“查看消息](index.md#inspect-and-filter-information-on-the-current-webpage)”。
 
 
-### <a name="turn-off-message-grouping"></a>关闭邮件分组
+### <a name="turn-off-message-grouping"></a>关闭消息分组
 
-若要关闭控制台的默认邮件分组行为，请单击控制台 **设置** (![控制台 设置 图标****](../media/settings-button-icon.msft.png)。) 按钮，然后选中"类似组"旁边的**复选框**。  有关示例，请参阅 [Log XHR and Fetch requests](#log-xhr-and-fetch-requests)。
+若要关闭**主机**的默认消息分组行为，请单击**主机设置 (**![主机设置图标。](../media/settings-button-icon.msft.png)) 按钮，然后选中 **“类似组**”旁边的复选框。  有关示例，请参阅 [日志 XHR 和提取请求](#log-xhr-and-fetch-requests)。
 
 
 ### <a name="log-xhr-and-fetch-requests"></a>记录 XHR 和 Fetch 请求
 
-To log all `XMLHttpRequest` and `Fetch` requests to the **Console** as each happens， click the **Console 设置** (![Console 设置 icon.](../media/settings-button-icon.msft.png)) button and then select the checkbox next to **Log XMLHttpRequests**.
+若要在每次发生时记录**主机**的所有`XMLHttpRequest`和`Fetch`请求，请单击**主机设置 (**![主机设置图标。](../media/settings-button-icon.msft.png)) 按钮，然后选择 **Log XMLHttpRequests 旁边的**复选框。
 
-:::image type="content" source="../media/console-xhr-fetch.msft.png" alt-text="记录 XMLHttpRequest 和 Fetch 请求。" lightbox="../media/console-xhr-fetch.msft.png":::
+![记录 XMLHttpRequest 和 Fetch 请求。](../media/console-xhr-fetch.msft.png)
 
 上图中的顶部消息显示了**控制台**的默认分组行为。  <!--  In the following figure, the same log is displayed after you [turn off message grouping](#turn-off-message-grouping).  -->
 
 <!--
 > ##### Old Figure 9
 > How the logged `XMLHttpRequest` and `Fetch` requests look after ungrouping
-> :::image type="content" source="../media/console-xhr-fetch-all.msft.png" alt-text="How the logged XMLHttpRequest and Fetch requests look after ungrouping." lightbox="../media/console-xhr-fetch-all.msft.png":::
+> ![How the logged XMLHttpRequest and Fetch requests look after ungrouping.](../media/console-xhr-fetch-all.msft.png)
 -->
 
 <!--todo: add example for ungrouping console items  -->
@@ -133,132 +133,132 @@ To log all `XMLHttpRequest` and `Fetch` requests to the **Console** as each happ
 
 ### <a name="persist-messages-across-page-loads"></a>跨页面加载保留消息
 
-加载新网页时，默认操作会清除 **控制台**。  若要在页面加载时**** 保留![消息，请单击"控制台设置 (控制台设置图标](../media/settings-button-icon.msft.png)。) "按钮，然后选中"保留日志"旁边的**复选框**。
+加载新网页时，默认操作会清除 **控制台**。  若要跨页面加载保存消息，请单击**主机设置 (**![主机设置图标。](../media/settings-button-icon.msft.png)) 按钮，然后选择 **“保留日志**”旁边的复选框。
 
 
 ### <a name="hide-network-messages"></a>隐藏网络消息
 
-用户的默认操作Microsoft Edge将网络消息记录到**控制台**。  在下图中，选定的消息表示 `429` 的 HTTP 状态代码。
+Microsoft Edge的默认操作是将网络消息记录到**控制台**。  在下图中，选定的消息表示 `429` 的 HTTP 状态代码。
 
-:::image type="content" source="../media/console-show-network.msft.png" alt-text="控制台中的&quot;429&quot;消息。" lightbox="../media/console-show-network.msft.png":::
+![控制台中的“429”消息。](../media/console-show-network.msft.png)
 
 隐藏网络消息：
 
-1. 单击"**控制台设置 (**![控制台设置图标](../media/settings-button-icon.msft.png)。) 按钮。
+1. 单击**控制台设置** (![控制台设置图标。](../media/settings-button-icon.msft.png)) 按钮。
 
-1. 选中隐藏网络 **旁边的复选框**。
+1. 选中 **“隐藏网络”** 旁边的复选框。
 
 
 <!-- ====================================================================== -->
 ## <a name="filter-messages"></a>筛选邮件
 
-有多种方法可以筛选出控制台中的 **邮件**。
+可通过多种方式在 **控制台**中筛选出消息。
 
 
 ### <a name="filter-out-browser-messages"></a>筛选出浏览器消息
 
-若要仅显示来自网页的 JavaScript 的消息，请打开 [控制台边](#open-the-console-sidebar) 栏，然后单击 **" # 用户消息"**。
+若要仅显示来自网页 JavaScript 的消息， [请打开控制台边栏](#open-the-console-sidebar) ，然后单击 **#用户消息**。
 
-:::image type="content" source="../media/console-sidebar-drawer-user-messages.msft.png" alt-text="显示用户消息。" lightbox="../media/console-sidebar-drawer-user-messages.msft.png":::
+![显示用户消息。](../media/console-sidebar-drawer-user-messages.msft.png)
 
 
 ### <a name="filter-by-log-level"></a>按记录级别筛选
 
-DevTools 为每个方法分配 `console.*` 四个严重性级别之一：
+DevTools 为每个 `console.*` 方法分配四个严重级别之一：
 
 *  `Error`
 *  `Info`
 *  `Verbose`
 *  `Warning`
 
-例如， `console.log()` 位于 组中 `Info` ，但 `console.error()` 位于 `Error` 组中。  控制台 [对象 API 参考](api.md) 介绍了每个适用方法的严重性级别。  浏览器记录到控制台的每条消息也具有严重性级别。
+例如， `console.log()` 位于组中 `Info` ，但 `console.error()` 位于组中 `Error` 。  [控制台对象 API 参考](api.md)描述了每个适用方法的严重性级别。  浏览器记录到控制台的每条消息也具有严重性级别。
 
-你可以隐藏你不感兴趣的任何级别的邮件。  例如，如果只对邮件感兴趣 `Error` ，可以隐藏其他三个组。
+可以隐藏你不感兴趣的任何级别的消息。  例如，如果你只对消息感兴趣 `Error` ，则可以隐藏其他三个组。
 
-若要筛选消息，请单击" **日志级别** "下拉列表，然后选择 `Verbose`、 `Info`、 `Warning`或 `Error`。
+若要筛选消息，请单击 **“日志级别**”下拉列表，然后选择`Verbose`“，`Info``Warning`或`Error`”
 
-:::image type="content" source="../media/console-log-level-default-levels.msft.png" alt-text="&quot;日志级别&quot;下拉列表。" lightbox="../media/console-log-level-default-levels.msft.png":::
+![日志级别下拉列表。](../media/console-log-level-default-levels.msft.png)
 
-若要使用日志级别进行筛选，请[打开控制台边](#open-the-console-sidebar)栏，然后选择 **"错误**、警告****、**信息**"或"**详细"**。
+若要使用日志级别进行筛选， [请打开控制台边栏](#open-the-console-sidebar) ，然后选择 **“错误**”、“ **警告**”、“ **信息**”或“ **详细信息**”。
 
-:::image type="content" source="../media/console-sidebar-warnings.msft.png" alt-text="使用边栏查看警告。" lightbox="../media/console-sidebar-warnings.msft.png":::
+![使用 Sidebar 查看警告。](../media/console-sidebar-warnings.msft.png)
 
 
 ### <a name="filter-messages-by-url"></a>按 URL 筛选消息
 
-键入 `url:` 后跟 URL，以便仅查看来自该 URL 的邮件。  键入 后， `url:`DevTools 将显示所有相关 URL。  也可以使用域。  例如，如果 和 `https://example.com/a.js` `https://example.com/b.js` 正在记录消息， `url:https://example.com` 则你可以专注于这两个脚本中的消息。
+键入 `url:` 后跟 URL，以便仅查看来自该 URL 的邮件。  键入 `url:`后，DevTools 会显示所有相关的 URL。  也可以使用域。  例如，如果 `https://example.com/a.js` 正在 `https://example.com/b.js` 记录消息， `url:https://example.com` 则可以专注于这两个脚本中的消息。
 
-:::image type="content" source="../media/console-filter-text.msft.png" alt-text="URL 筛选器。" lightbox="../media/console-filter-text.msft.png":::
+![URL 筛选器。](../media/console-filter-text.msft.png)
 
-若要从 URL 隐藏邮件，请键入 `-url:`。  这是一个负 URL 筛选器。
+若要从 URL 中隐藏消息，请键入 `-url:`。  这是一个负 URL 筛选器。
 
-:::image type="content" source="../media/console-negative-filter-text.msft.png" alt-text="隐藏与 URL 匹配的所有邮件的 https://b.wal.co 负 URL 筛选器。" lightbox="../media/console-negative-filter-text.msft.png":::
+![隐藏与 URL 匹配的所有消息的 https://b.wal.co 负 URL 筛选器。](../media/console-negative-filter-text.msft.png)
 
-显示来自单个 URL 的消息：
+若要显示来自单个 URL 的消息，请执行以下操作：
 
 1. [打开控制台边栏](#open-the-console-sidebar)。
 
-1. 展开 **" # 用户消息"** 部分。
+1. 展开 **#user messages** 节。
 
 1. 选择包含要关注的消息的脚本的 URL。
 
-:::image type="content" source="../media/console-filter-text-specified.msft.png" alt-text="显示来自邮件wp-ad.min.js。" lightbox="../media/console-filter-text-specified.msft.png":::
+![显示来自wp-ad.min.js的消息。](../media/console-filter-text-specified.msft.png)
 
 
 ### <a name="filter-out-messages-from-different-contexts"></a>筛选出不同上下文的消息
 
-假设您网页上有一个 (广告) 广告。  广告嵌入在 中 `<iframe>` ，在控制台中生成许多 **消息**。  由于广告在不同的 [JavaScript](#select-javascript-context) 上下文中运行，因此隐藏消息的一个方法就是单击控制台 **设置** (![控制台 设置 图标****](../media/settings-button-icon.msft.png)。) 按钮，然后选中"仅选定上下文"旁边的复选框。
+假设网页上有广告 (广告) 。  广告嵌入到控制`<iframe>`**台**中并生成许多消息。  由于广告在其他 [JavaScript 上下文](#select-javascript-context)中运行，因此隐藏消息的一种方法是单击**主机设置 (**![主机设置图标。](../media/settings-button-icon.msft.png)) 按钮，然后选择 **“仅选定上下文**”旁边的复选框。
 
 
-### <a name="filter-out-messages-that-dont-match-a-regular-expression-pattern"></a>筛选出与正则表达式模式不匹配的邮件
+### <a name="filter-out-messages-that-dont-match-a-regular-expression-pattern"></a>筛选出与正则表达式模式不匹配的消息
 
-键入正则表达式（如 `/[gm][ta][mi]/` 在" **筛选器** "文本框中）以筛选出任何不匹配该模式的邮件。  DevTools 检查是在消息文本中还是导致记录消息的脚本中发现了模式。
+键入正则表达式，例如 `/[gm][ta][mi]/` 在 **“筛选器** ”文本框中筛选出与该模式不匹配的任何消息。  DevTools 检查是在消息文本中还是在导致记录消息的脚本中找到模式。
 
-:::image type="content" source="../media/console-filter-regex.msft.png" alt-text="筛选出与正则表达式不匹配的任何邮件。" lightbox="../media/console-filter-regex.msft.png":::
+![筛选出与正则表达式不匹配的任何消息。](../media/console-filter-regex.msft.png)
 
 
 <!-- ====================================================================== -->
 ## <a name="run-javascript"></a>运行 JavaScript
 
-本部分包含与在控制台中运行 JavaScript **相关的功能**。  有关实际操作演练，请参阅运行 [JavaScript](console-javascript.md)。
+本部分包含与在 **控制台**中运行 JavaScript 相关的功能。  有关动手演练，请参阅 [“运行 JavaScript](console-javascript.md)”。
 
 
 ### <a name="rerun-expressions-from-history"></a>从历史记录重新运行表达式
 
-按 `Up Arrow` 以循环访问之前在控制台中运行 JavaScript 表达式 **的历史记录**。  按 `Enter` 以再次运行该表达式。
+按 `Up Arrow` 下以循环浏览之前在 **控制台**中运行的 JavaScript 表达式的历史记录。  按 `Enter` 下以再次运行该表达式。
 
 
-### <a name="watch-the-value-of-an-expression-in-real-time-with-live-expressions"></a>使用 Live Expressions 实时监视表达式的值
+### <a name="watch-the-value-of-an-expression-in-real-time-with-live-expressions"></a>使用实时表达式实时观看表达式的值
 
-如果你发现自己在控制台中重复键入相同的 JavaScript 表达式，你可能会**** 发现创建 Live **表达式更容易**。  使用 **Live Expressions**，键入表达式一次，然后将其固定到控制台 **顶部**。  表达式的值几乎可以实时更新。  请参阅 [Watch JavaScript Expression values in Real-Time with Live Expressions](live-expressions.md)。
-
-
-### <a name="turn-off-eager-evaluation"></a>关闭"期待评估"
-
-**当您在** 控制台中键入 JavaScript 表达式时，"期待评估"将显示返回值的 **预览**。  若要关闭返回值预览，
-
-1. 单击"**控制台设置 (**![控制台设置图标](../media/settings-button-icon.msft.png)。) 按钮。
-1. 清除"期望评估" **旁边的复选框**。
+如果发现自己在 **控制台** 中反复键入相同的 JavaScript 表达式，可能会发现创建 **实时表达式**更容易。  使用 **实时表达式**，键入一次表达式，然后将其固定到 **控制台**顶部。  表达式的值近乎实时地更新。  请参阅 [使用实时表达式Real-Time中的 Watch JavaScript 表达式值](live-expressions.md)。
 
 
-### <a name="turn-off-autocomplete-from-history"></a>从历史记录中关闭自动完成
+### <a name="turn-off-eager-evaluation"></a>关闭“急切评估”
 
-键入表达式时，控制台的自动完成弹出窗口将显示之前运行表达式。****  表达式使用 字符预先绘制 `>` 。  若要停止显示历史记录中的表达式，请单击控制台 **设置** (![控制台 设置 图标](../media/settings-button-icon.msft.png)。) 按钮，然后清除"从历史记录自动**完成**"复选框旁边的复选框。
+在**控制台**中键入 JavaScript 表达式时，**热切评估**会显示返回值的预览。  若要关闭返回值预览，请执行以下操作：
+
+1. 单击**控制台设置** (![控制台设置图标。](../media/settings-button-icon.msft.png)) 按钮。
+1. 清除 **“急切评估**”旁边的复选框。
+
+
+### <a name="turn-off-autocomplete-from-history"></a>关闭历史记录中的自动完成
+
+键入表达式时， **控制台** 的自动完成弹出窗口将显示之前运行的表达式。  表达式预置了 `>` 字符。  若要停止显示历史记录中的表达式，请单击**主机设置 (**![主机设置图标。](../media/settings-button-icon.msft.png)) 按钮，然后清除 **“自动完成历史记录**”复选框旁边的复选框。
 
 在下图中，`document.querySelector('a')` 和 `document.querySelector('img')` 是之前评估的表达式。
 
-:::image type="content" source="../media/console-filter-text-autofilter-history.msft.png" alt-text="自动完成弹出菜单显示历史记录中的表达式。" lightbox="../media/console-filter-text-autofilter-history.msft.png":::
+![自动完成弹出菜单显示历史记录中的表达式。](../media/console-filter-text-autofilter-history.msft.png)
 
 
 ### <a name="select-javascript-context"></a>选择 JavaScript 上下文
 
-默认情况下，" **JavaScript 上下文** "下拉列表设置为 **顶部**，表示主网页的 [浏览上下文](https://developer.mozilla.org/docs/Glossary/Browsing_context)。
+默认情况下， **JavaScript 上下文** 下拉列表设置为 **顶部**，表示主网页的 [浏览上下文](https://developer.mozilla.org/docs/Glossary/Browsing_context)。
 
-:::image type="content" source="../media/console-dom-level-top.msft.png" alt-text="&quot;JavaScript 上下文&quot;下拉列表。" lightbox="../media/console-dom-level-top.msft.png":::
+![JavaScript 上下文下拉列表。](../media/console-dom-level-top.msft.png)
 
-假设您的网页中嵌入 `<iframe>`了一则广告，并且想要运行 JavaScript 来调整广告的 DOM。  单击 **"JavaScript 上下文** "下拉列表，然后选择广告的浏览上下文：
+假设网页上嵌入了一个 `<iframe>`广告，并且要运行 JavaScript 来调整广告的 DOM。  单击 **JavaScript 上下文** 下拉列表，然后选择广告的浏览上下文：
 
-:::image type="content" source="../media/console-dom-level-multiple.msft.png" alt-text="选择不同的 JavaScript 上下文。" lightbox="../media/console-dom-level-multiple.msft.png":::
+![选择其他 JavaScript 上下文。](../media/console-dom-level-multiple.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -266,25 +266,25 @@ DevTools 为每个方法分配 `console.*` 四个严重性级别之一：
 
 若要清除控制台，请使用以下任一方法：
 
-*  单击 **"清除控制台 (**![清除控制台](../media/clear-console-button-icon.msft.png)"。) 。
+*  单击 **“清除控制台** (![清除控制台。](../media/clear-console-button-icon.msft.png)) 。
 
-*  右键单击消息，然后选择" **清除控制台"**。
+*  右键单击一条消息，然后选择 **“清除控制台**”。
 
-*  在 `clear()` 控制台中键入 ，然后按 `Enter`。
+*  键 `clear()` 入控制台，然后按 `Enter`。
 
-*  从 `console.clear()` 网页的 JavaScript 中调用。
+*  从网页的 JavaScript 调用 `console.clear()` 。
 
-*  在 `Ctrl`+`L` 控制台聚焦时按。
+*  当控制台处于焦点时按 `Ctrl`+`L` 下。
 
 
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
 <!-- if an article's title is adequately descriptive, and the article is in the same TOC bucket as the present article, don't much need a link here: -->
-* [在控制台工具中记录消息](console-log.md) - 如何在控制台中筛选日志消息，如信息、警告和错误。
-* [开始在控制台中运行 JavaScript](console-javascript.md) - 指导你在控制台中发布 JavaScript 语句和表达式的步骤。
-* [控制台对象 API 参考](api.md) - 可以在控制台中输入以将消息写入控制台的函数和表达式，例如 `console.log()`。
-* [控制台工具实用程序函数和选择器](utilities.md) - 可在控制台工具中输入的便利函数，**** 例如`monitorEvents()`。
+* [控制台工具中的日志消息](console-log.md) - 如何筛选控制台中的信息、警告和错误等日志消息。
+* [开始控制台中运行 JavaScript](console-javascript.md) 的步骤 - 逐步讲解如何在控制台中发出 JavaScript 语句和表达式。
+* [控制台对象 API 参考](api.md) - 可在控制台中输入的函数和表达式，以将消息写入控制台，例如 `console.log()`。
+* [控制台工具实用工具函数和选择器](utilities.md) - 可在 **控制台** 工具中输入的便利函数，例如`monitorEvents()`。
 
 
 <!-- ====================================================================== -->

@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 4/1/2022
-ms.openlocfilehash: 0cd5a7a8199c0f0ad35dc931d566deaa65c01c70
-ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
+ms.openlocfilehash: fd4edf9d9892854d9fcaeacbbe3ba6b9f81ebe53
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "12473817"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552928"
 ---
 # <a name="call-web-side-code-from-native-side-code"></a>从本机代码调用 Web 端代码
 <!-- old title: Use JavaScript in WebView for extended scenarios -->
@@ -107,7 +107,7 @@ Debug.Assert(result == "\"example\"");
 
 1. 将文件拖放 `contoso.txt` 到 WebView2 控件中。  将打开一个新窗口，这是示例项目中代码的结果：
 
-   :::image type="content" source="./media/drag-text.png" alt-text="拖放contoso.txt的结果。" lightbox="./media/drag-text.png":::
+   ![拖放contoso.txt的结果。](./media/drag-text.png)
 
 1. 接下来，添加代码以从 WebView2 控件中删除拖放功能。  在代码中初始化 CoreWebView2 对象后粘贴以下代码：
 
@@ -137,7 +137,7 @@ Debug.Assert(result == "\"example\"");
 
 1. 右键单击 WebView2 控件上的任意位置。  上下文菜单显示默认右键单击菜单命令：
 
-   :::image type="content" source="./media/context-menu.png" alt-text="右键单击菜单，显示默认命令。" lightbox="./media/context-menu.png":::
+   ![右键单击菜单，显示默认命令。](./media/context-menu.png)
 
    接下来，添加代码以从 WebView2 控件中删除右键单击菜单功能。
 

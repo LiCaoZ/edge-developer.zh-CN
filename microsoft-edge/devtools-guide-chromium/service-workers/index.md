@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/19/2021
-ms.openlocfilehash: 8aa51aa79e8366911b1b18f500e17cce4adf3b30
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: d104f1de6431bb68a2c39ed13e8e705ac62bffa2
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514361"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553018"
 ---
 # <a name="service-worker-improvements"></a>服务工作进程改进
 
@@ -39,7 +39,7 @@ ms.locfileid: "12514361"
 <!-- ====================================================================== -->
 ## <a name="network"></a>网络
 
-:::image type="content" source="../media/sw-network-timeline.msft.png" alt-text="网络工具中的服务辅助角色时间线。" lightbox="../media/sw-network-timeline.msft.png":::
+![网络工具中的服务辅助角色时间线。](../media/sw-network-timeline.msft.png)
 
 可以通过以下任一方式访问 **网络** 工具中的服务辅助角色调试功能：
 
@@ -61,7 +61,7 @@ ms.locfileid: "12514361"
 <!-- ====================================================================== -->
 ## <a name="application"></a>应用程序
 
-:::image type="content" source="../media/sw-application-timeline.msft.png" alt-text="应用程序视图。" lightbox="../media/sw-application-timeline.msft.png":::
+![应用程序视图。](../media/sw-application-timeline.msft.png)
 
 ### <a name="service-worker-update-timeline"></a>服务工作进程更新日程表
 
@@ -85,7 +85,7 @@ Microsoft Edge DevTools 团队在**应用程序工具中**添加了一个时间�
 <!-- ====================================================================== -->
 ## <a name="sources"></a>源
 
-:::image type="content" source="../media/sw-sources.msft.png" alt-text="DOM 树。" lightbox="../media/sw-sources.msft.png":::
+![DOM 树。](../media/sw-sources.msft.png)
 
 若要查找更多堆栈信息，请在提取处理程序中设置一个断点。  详细信息会导致在页面脚本中请求资源的位置。
 

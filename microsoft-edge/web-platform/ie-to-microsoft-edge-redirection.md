@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 2/8/2022
-ms.openlocfilehash: 5fb5f918167b0652c54dd9998d4b18ba32952a9b
-ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
+ms.openlocfilehash: a39ed26e2e60fefed212409e76dceffd18be4282
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "12550799"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552807"
 ---
 # <a name="move-users-to-microsoft-edge-from-internet-explorer"></a>将用户从Internet Explorer移动到Microsoft Edge
 
@@ -39,13 +39,13 @@ ms.locfileid: "12550799"
 
 浏览通知并提示导入数据和首选项：
 
-:::image type="content" source="../media/neededge-dialog1.msft.png" alt-text="浏览通知并提示导入数据和首选项。" lightbox="../media/neededge-dialog1.msft.png":::
+![浏览通知并提示导入数据和首选项。](../media/neededge-dialog1.msft.png)
 
 如果用户未通过从 Internet Explorer 复选框中选择 **“始终引入我的浏览数据和首选项** ”来表示同意，则用户可以选择 **“继续浏览** ”以继续浏览会话。
 
 最后，每个重定向的地址栏下会显示网站不兼容性横幅。  下图显示了网站不兼容性横幅的示例。
 
-:::image type="content" source="../media/neededge-banner.msft.png" alt-text="有关新式网站的通知，以及将 Microsoft Edge 设置为默认浏览器或浏览 Microsoft Edge 的提示。" lightbox="../media/neededge-banner.msft.png":::
+![有关新式网站的通知，以及将 Microsoft Edge 设置为默认浏览器或浏览 Microsoft Edge 的提示。](../media/neededge-banner.msft.png)
 
 网站不兼容性横幅向用户提供以下详细信息。
 

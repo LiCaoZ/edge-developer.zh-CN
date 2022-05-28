@@ -1,26 +1,26 @@
 ---
 title: 在 WebView2 应用中使用 Chrome DevTools 协议
-description: 如何使用 Microsoft Edge WebView2 Chrome DevTools 协议包在 WebView2 应用中使用 Chrome NuGet协议。
+description: 如何使用 Microsoft Edge WebView2 Chrome DevTools 协议NuGet包在 WebView2 应用中使用 Chrome DevTools 协议。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 05/06/2021
-ms.openlocfilehash: 1188a83350c4a8a4d5af18ddfb143be0b22fb4a7
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: eb9dbe00c81ac5f67680f0dafee44fadfdeaf4c7
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12432206"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552651"
 ---
 # <a name="use-the-chrome-devtools-protocol-in-webview2-apps"></a>在 WebView2 应用中使用 Chrome DevTools 协议
 
-Chrome [DevTools 协议](https://chromedevtools.github.io/devtools-protocol)提供用于检测、检查、调试和配置文件的 API Chromium基于浏览器。  Chrome DevTools 协议是开发工具Microsoft Edge的基础。  对 WebView2 平台中未实现的功能使用 Chrome DevTools 协议。
+[Chrome DevTools 协议](https://chromedevtools.github.io/devtools-protocol)提供用于检测、检查、调试和配置文件Chromium浏览器的 API。  Chrome DevTools 协议是 Microsoft Edge DevTools 的基础。  对于未在 WebView2 平台中实现的功能，请使用 Chrome DevTools 协议。
 
-若要在 WebView2 应用中使用 Chrome DevTools 协议 API，请执行下列任一操作：
+若要在 WebView2 应用中使用 Chrome DevTools 协议 API，请执行以下任一操作：
 
-*  安装并使用 [Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview) NuGet ](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) 包 (.NET) 。
+*  安装并使用 [Microsoft.Web.WebView2.DevToolsProtocolExtension (预览) NuGet ](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) 包 (.NET) 。
 
 *  或者，运行以下方法之一：
 
@@ -32,23 +32,23 @@ Chrome [DevTools 协议](https://chromedevtools.github.io/devtools-protocol)提�
 <!-- ====================================================================== -->
 ## <a name="use-devtoolsprotocolhelper"></a>使用 DevToolsProtocolHelper
 
-[Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview) ](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) 是 WebView2 团队创建的 NuGet 程序包，可轻松访问 Chrome DevTools 协议功能。  以下示例介绍如何在 WebView2 控件的 Chrome DevTools 协议中使用地理位置功能。  若要使用其他 Chrome DevTools 协议功能，你可以遵循类似的模式。
+[Microsoft.Web.WebView2.DevToolsProtocolExtension (预览版) ](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension)是由 WebView2 团队创建的NuGet包，可轻松访问 Chrome DevTools 协议功能。  以下示例介绍如何在 WebView2 控件的 Chrome DevTools 协议中使用地理位置功能。  若要使用其他 Chrome DevTools 协议功能，可以遵循类似的模式。
 
 ### <a name="dont-use-the-preview-package-in-production-apps"></a>不要在生产应用中使用预览包
 
-[Microsoft.Web.WebView2.DevToolsProtocolExtension](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) NuGet目前处于技术预览阶段。  在预览版中，请勿在生产NuGet使用此程序包。
+[Microsoft.Web.WebView2.DevToolsProtocolExtension](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) NuGet包目前处于技术预览状态。  在预览版中，请不要在生产应用中使用此NuGet包。
 
 
 <!-- ====================================================================== -->
 ## <a name="step-1-create-a-webpage-to-find-your-geolocation"></a>步骤 1：创建网页以查找地理位置
 
-若要创建 `HTML file` 以查找地理位置，请完成以下操作。
+若要创建查找 `HTML file` 地理位置的设置，请完成以下操作。
 
-1. 打开Visual Studio Code (选择的任何 IDE 或 IDE) 。
+1. 打开所选Visual Studio Code (或 IDE) 。
 
-1. `.html`创建新文件。
+1. 创建新 `.html` 文件。
 
-1. 将以下代码粘贴到新 `.html` 文件中：
+1. 在新 `.html` 文件中粘贴以下代码：
 
    ```html
    <!DOCTYPE html>
@@ -81,19 +81,19 @@ Chrome [DevTools 协议](https://chromedevtools.github.io/devtools-protocol)提�
    </html>
    ```
 
-1. `.html`使用文件名 保存文件`geolocation.html`。
+1. `.html`使用文件名`geolocation.html`保存文件。
 
 1. 打开 Microsoft Edge。
 
 1. 打开 `geolocation.html`。
 
-1. 若要显示纬度和经度坐标，请单击"显示 **位置"** 按钮。  若要验证和比较地理位置，请将坐标复制并粘贴到 中 [https://www.bing.com/maps](https://www.bing.com/maps)。
+1. 若要显示纬度和经度坐标，请单击 **“显示位置”** 按钮。  若要验证和比较地理位置，请复制并粘贴坐标 [https://www.bing.com/maps](https://www.bing.com/maps)。
 
-   :::image type="content" source="./media/geolocater-browser.png" alt-text="在资源位置中显示用户的Microsoft Edge。" lightbox="./media/geolocater-browser.png":::
+   ![在Microsoft Edge中显示用户的地理位置坐标。](./media/geolocater-browser.png)
 
 
 <!-- ====================================================================== -->
-## <a name="step-2-display-geolocationhtml-in-a-webview2"></a>步骤 2：geolocation.html WebView2 中的视图
+## <a name="step-2-display-geolocationhtml-in-a-webview2"></a>步骤 2：在 WebView2 中显示geolocation.html
 
 1. 若要创建 WebView2 应用，请使用入门指南或 WebView2 示例：
 
@@ -107,38 +107,38 @@ Chrome [DevTools 协议](https://chromedevtools.github.io/devtools-protocol)提�
    webView.CoreWebView2.Navigate(@"C:\{path\to\file}\geolocation.html");
    ```
 
-1. 确保文件 `geolocation.html` 显示在 WebView2 控件应用中：
+1. 确保该 `geolocation.html` 文件显示在 WebView2 控件应用中：
 
-   :::image type="content" source="./media/initial-geolocate.png" alt-text="WebView2 geolocation.html应用程序中显示的列表文件。" lightbox="./media/initial-geolocate.png":::
+   ![WebView2 控件应用中显示的geolocation.html文件。](./media/initial-geolocate.png)
 
 
 <!-- ====================================================================== -->
 ## <a name="step-3-install-the-devtoolsprotocolhelper-nuget-package"></a>步骤 3：安装 DevToolsProtocolHelper NuGet包
 
-使用 NuGet 下载 `Microsoft.Web.WebView2.DevToolsProtocolExtension`。
+使用NuGet下载`Microsoft.Web.WebView2.DevToolsProtocolExtension`。
 
-若要安装程序包，请运行以下设置：
+若要安装包，请执行以下操作：
 
-1. 选择**Project** >  **Manage NuGet** **PackagesBrowse** > "。
+1. 选择**Project** > 包**浏览**NuGet  > **Manage**。
 
-1. 键入 `Microsoft.Web.WebView2.DevToolsProtocolExtension` ，然后选择 **"Microsoft.Web.WebView2.DevToolsProtocolExtensionInstall** > **"**。
+1. 键入 `Microsoft.Web.WebView2.DevToolsProtocolExtension` 并选择 **Microsoft.Web.WebView2.DevToolsProtocolExtension** > **安装**。
 
-1. 确保 **Microsoft.Web.WebView2.DevToolsProtocolExtension** 显示在Visual Studio NuGet 程序包管理器：
+1. 确保 **Microsoft.Web.WebView2.DevToolsProtocolExtension** 显示在Visual Studio NuGet 程序包管理器中：
 
-   :::image type="content" source="./media/cdp-nuget.png" alt-text="确保 Microsoft.Web.WebView2.DevToolsProtocolExtension 显示在Visual Studio NuGet 程序包管理器。" lightbox="./media/cdp-nuget.png":::
+   ![确保 Microsoft.Web.WebView2.DevToolsProtocolExtension 显示在Visual Studio NuGet 程序包管理器中。](./media/cdp-nuget.png)
 
 
 <!-- ====================================================================== -->
 ## <a name="step-4-use-devtools-protocol-helper"></a>步骤 4：使用 DevTools 协议帮助程序
 
-1. 将命名空间 `DevToolsProtocolExtension` 添加到你的项目：
+1. 将 `DevToolsProtocolExtension` 命名空间添加到项目：
 
    ```csharp
    using Microsoft.Web.WebView2.Core;
    using Microsoft.Web.WebView2.Core.DevToolsProtocolExtension;
    ```
 
-1. 实例化对象 `DevToolsProtocolHelper` 并导航到 `geolocation.html`：
+1. 实例化 `DevToolsProtocolHelper` 对象并导航到 `geolocation.html`：
 
    ```csharp
    async void InitializeAsync()
@@ -170,19 +170,19 @@ Chrome [DevTools 协议](https://chromedevtools.github.io/devtools-protocol)提�
 
 1. 运行应用。
 
-1. 若要显示法国巴黎的坐标，请单击" **显示位置"** 按钮：
+1. 若要显示法国巴黎的坐标，请单击“ **显示位置”** 按钮：
 
-   :::image type="content" source="./media/final-location-cdp.png" alt-text="在 WebView2 .html显示坐标为 Paris 的 WebView2 文件。" lightbox="./media/final-location-cdp.png":::
+   ![使用巴黎的坐标在 WebView2 控件中显示.html文件。](./media/final-location-cdp.png)
 
 
 <!-- ====================================================================== -->
-## <a name="file-a-bug-or-feature-request-for-the-chrome-devtools-protocol"></a>提出 Chrome DevTools 协议的 Bug 或功能请求
+## <a name="file-a-bug-or-feature-request-for-the-chrome-devtools-protocol"></a>为 Chrome DevTools 协议提交 bug 或功能请求
 
-若要请求 WebView2 平台功能，请在 [WebView2Feedback 存储库输入新问题](https://github.com/MicrosoftEdge/WebView2Feedback)。
+若要请求 WebView2 平台功能，请在 [WebView2Feedback 存储库](https://github.com/MicrosoftEdge/WebView2Feedback)中输入新问题。
 
-若要提交有关 Chrome DevTools 协议的 bug，在错误数据库中Chromium [Bug 报告](https://bugs.chromium.org/p/chromium/issues/entry?components=Platform%3EDevTools%3EPlatform)。
+若要提交有关 Chrome DevTools 协议的 bug，请在[Chromium bug 数据库](https://bugs.chromium.org/p/chromium/issues/entry?components=Platform%3EDevTools%3EPlatform)中提交 bug 报告。
 
-Chrome DevTools 协议由开源开发人员项目Chromium，而不是由 Microsoft Edge WebView2 团队维护。
+Chrome DevTools 协议由开放源代码 Chromium项目维护，而不是由 Microsoft Edge WebView2 团队维护。
 
 
 <!-- ====================================================================== -->

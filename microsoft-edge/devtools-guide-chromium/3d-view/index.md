@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/27/2022
-ms.openlocfilehash: 2a0df7c2a2ed3d6d01453e79cf7f30f91e2fe978
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: b431ce48bd26f8f40c7f9d0d9c486f7f38ba66ba
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12496860"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552918"
 ---
 # <a name="navigate-webpage-layers-z-index-and-dom-using-the-3d-view-tool"></a>使用 3D 视图工具导航网页层、z 索引和 DOM
 
@@ -77,7 +77,14 @@ To pan around the DOM, right-click and drag in the direction you want the DOM to
 
 ### <a name="slow-scroll-rects-checkbox"></a> (复选框) 缓慢滚动矩形
 
-<!-- need desc -->
+**“慢滚动”复**选框突出显示了导致滚动速度缓慢的页面部分。  此复选框有助于调查性能问题。  某些网页使用 JavaScript 检测某些页面元素上的滚动 (或触摸) ，这可能会使网页的滚动速度比平时慢。
+
+此复选框突出显示 (以粉红色) 呈现的网页框，这可能会导致这些性能问题。
+<!-- To try this checkbox, you can go to [YouTube](https://www.youtube.com). -->
+
+此复选框类似于**呈现**工具中的 **“滚动性能问题**”复选框，该复选框突出显示页面上以黄色) 直接 (缓慢的矩形。  请参阅_性能功能参考_[中的实时查找滚动性能问题](../evaluate-performance/reference.md#find-scroll-performance-issues-in-realtime)。  这两个复选框都基于相同的调试信息，但这两个工具以不同的方式呈现此信息。
+<!-- https://developer.chrome.com/docs/devtools/rendering/performance/#scrolling-performance-issues -->
+
 
 ### <a name="paints-checkbox"></a>绘制 (复选框) 
 

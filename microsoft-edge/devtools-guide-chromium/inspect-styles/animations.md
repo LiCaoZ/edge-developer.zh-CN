@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/11/2021
-ms.openlocfilehash: de65438a53d19b9b4ba341c08d92827e4f76f8a4
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.openlocfilehash: 35b77576d14cb0b3fd9117f72dec83bd27008ab3
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522292"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553348"
 ---
 <!-- Copyright Kayce Basques
 
@@ -31,7 +31,7 @@ ms.locfileid: "12522292"
 
 使用动画工具中的 **动画检查器** 检查和修改 CSS **动画** 效果。
 
-:::image type="content" source="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png" alt-text="动画工具。" lightbox="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png":::
+![动画工具。](../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png)
 
 ### <a name="summary"></a>摘要
 
@@ -67,7 +67,7 @@ _动画组_是一组可能彼此相关的动画。  目前，Web 没有组动画
 
 *  在 **主工具栏** 或 **抽屉**上：单击 **“更多工具** (![更多工具”图标。](../media/more-tools-icon-light-theme.png)) 按钮，然后选择 **“动画**”。
 
-   :::image type="content" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="使用主菜单的动画。" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
+   ![使用主菜单的动画。](../media/inspect-styles-elements-styles-more-tools-animations.msft.png)
 
 *  在 **“自定义”** 菜单中：单击 **“自定义并控制 DevTools** ” (![“自定义”图标。](../media/customize-devtools-icon-light-theme.png)) 菜单按钮，指向 **“更多工具** ”子菜单，然后选择 **“动画**”。
 
@@ -75,7 +75,7 @@ _动画组_是一组可能彼此相关的动画。  目前，Web 没有组动画
 
 默认情况下，“**动画**”工具会在“**控制台**”工具旁边的**抽屉**中打开。  通过在**抽屉**上使用**动画**工具，可以在主工具栏上使用其他工具的同时使用它。
 
-:::image type="content" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="空动画检查器。" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
+![空动画检查器。](../media/inspect-styles-elements-styles-drawer-animations.msft.png)
 
 动画检查器分为四个主要部分 (或窗格) 。  本指南按以下方式指代每个窗格：
 
@@ -86,7 +86,7 @@ _动画组_是一组可能彼此相关的动画。  目前，Web 没有组动画
 | 3 | **时间线** | 从此处暂停并启动动画，或跳转到动画中的特定点。 |
 | 4 | **详细信息** | 检查和修改当前选定的动画组。 |
 
-:::image type="content" source="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png" alt-text="带批注的动画检查器。" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png":::
+![带批注的动画检查器。](../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png)
 
 若要捕获动画，只需执行在动画检查器打开时触发动画的交互。  如果在页面加载时触发了动画，请刷新页面，同时打开动画检查器以检测动画。
 
@@ -110,19 +110,19 @@ _动画组_是一组可能彼此相关的动画。  目前，Web 没有组动画
 
 捕获动画组后，从“ **概述** ”窗格单击它以查看详细信息。  在 **“详细信息”** 窗格中，每个动画都分配给一行。
 
-:::image type="content" source="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="动画组详细信息。" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png":::
+![动画组详细信息。](../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png)
 
 将鼠标悬停在动画上以在视区中突出显示它。  单击动画以在 **“元素** ”工具中选择它。
 
-:::image type="content" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="将鼠标悬停在动画上以在视区中突出显示它。" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
+![将鼠标悬停在动画上以在视区中突出显示它。](../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png)
 
 动画最左侧较深的部分是其定义。  右侧更淡出的部分表示迭代。  例如，在下图中，第二节和第三节表示第一节的迭代：
 
-:::image type="content" source="../media/inspect-styles-glitch-display-animations-highlight.msft.png" alt-text="动画迭代图。" lightbox="../media/inspect-styles-glitch-display-animations-highlight.msft.png":::
+![动画迭代图。](../media/inspect-styles-glitch-display-animations-highlight.msft.png)
 
 如果两个元素应用了相同的动画，动画检查器会为元素分配相同的颜色。  颜色是随机的，没有意义。  例如，在下图中，两个元素`div.cwccw.earlier`的动画 (`spinrightleft` 应用) `div.ccwcw.later` `div.ccwcw.earlier` `div.cwccw.later`和元素相同。
 
-:::image type="content" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="颜色编码动画。" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
+![颜色编码动画。](../media/inspect-styles-glitch-display-animations.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -136,19 +136,19 @@ _动画组_是一组可能彼此相关的动画。  目前，Web 没有组动画
 
 对于本部分，假设以下屏幕截图表示原始动画：
 
-:::image type="content" source="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png" alt-text="修改前的原始动画。" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png":::
+![修改前的原始动画。](../media/inspect-styles-glitch-spin-animations-console-animations.msft.png)
 
 若要更改动画的持续时间，请单击并拖动第一个或最后一个圆圈。
 
-:::image type="content" source="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png" alt-text="修改的持续时间。" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png":::
+![修改的持续时间。](../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png)
 
 如果动画定义了任何关键帧规则，则这些规则表示为填充白色的内圆。  单击并拖动一个填充白色的内圈以更改关键帧的计时：
 
-:::image type="content" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="修改了关键帧。" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
+![修改了关键帧。](../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png)
 
 若要向动画添加延迟，请单击圆圈以外的任意位置的动画，然后将其拖动：
 
-:::image type="content" source="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png" alt-text="修改后的延迟。" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png":::
+![修改后的延迟。](../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png)
 
 
 <!-- ====================================================================== -->

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: a0ddd606b1b93e53342b0f079e2a922f9e981f3a
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: fddb883fb79d1e065b998b974d79a26aad97684a
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514438"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553171"
 ---
 <!-- Copyright Kayce Basques
 
@@ -40,7 +40,7 @@ ms.locfileid: "12514438"
 
    **将打开安全**工具 (或_面板_) ：
 
-:::image type="content" source="../media/security-security-overview-secure.msft.png" alt-text="安全面板。" lightbox="../media/security-security-overview-secure.msft.png":::
+![安全面板。](../media/security-security-overview-secure.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -50,7 +50,7 @@ ms.locfileid: "12514438"
 
 当页面的主要来源不安全时， **安全概述** 会显示 **此页面不安全**。
 
-:::image type="content" source="../media/security-security-overview-non-secure.msft.png" alt-text="不安全的页面。" lightbox="../media/security-security-overview-non-secure.msft.png":::
+![不安全的页面。](../media/security-security-overview-non-secure.msft.png)
 
 当通过 HTTP 请求你访问的 URL 时，会出现此问题。  若要使其安全，需要通过 HTTPS 请求它。  例如，如果查看地址栏中的 URL，它可能类似于 `http://example.com`。  为了使其安全，URL 应该是 `https://example.com`.
 
@@ -65,11 +65,11 @@ ms.locfileid: "12514438"
 
 **混合内容**<!--[mixed content](/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)--> 表示页面的主要来源是安全的，但页面请求来自非安全源的资源。  混合内容页面仅受到部分保护，因为 HTTP 内容可供嗅探器访问，并且容易受到中间人攻击。
 
-:::image type="content" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="混合内容。" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
+![混合内容。](../media/security-security-overview-mixed-secure.msft.png)
 
 在上图 **中，在“网络”面板中选择“视图 1”请求** 以打开 **网络** 工具并应用 `mixed-content:displayed` 筛选器，以便 **网络日志** 仅显示不安全的资源。
 
-:::image type="content" source="../media/security-network-filter.msft.png" alt-text="网络日志中的混合资源。" lightbox="../media/security-network-filter.msft.png":::
+![网络日志中的混合资源。](../media/security-network-filter.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -79,13 +79,13 @@ ms.locfileid: "12514438"
 
 在 **“安全概述**”中，单击 **“查看证书** ”以快速检查主源的证书。
 
-:::image type="content" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="主源证书。" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
+![主源证书。](../media/security-security-overview-secure-view-certificate.msft.png)
 
 ### <a name="view-origin-details"></a>查看源详细信息
 
 单击左侧导航栏中的一个条目，查看源的详细信息。  可以在详细信息页中查看连接和证书信息。  证书透明度信息在可用时也会显示。
 
-:::image type="content" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="主源详细信息。" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
+![主源详细信息。](../media/security-security-overview-mixed-secure-main-origin.msft.png)
 
 
 <!-- ====================================================================== -->

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/13/2021
-ms.openlocfilehash: 0985160704d5a710e3a5b5759fa078a21d4d88ae
-ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
+ms.openlocfilehash: dcb2956e8a09fece740526c925c7a551fbf5cd8b
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "12551596"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552780"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -38,7 +38,7 @@ ms.locfileid: "12551596"
 
 将内存视为具有基元类型的图形 (如数字和字符串) 和对象 (关联数组) 。  内存可直观地表示为具有多个互连点的图形，如下所示：
 
-:::image type="content" source="../media/memory-problems-thinkgraph.msft.png" alt-text="内存的视觉表示形式。" lightbox="../media/memory-problems-thinkgraph.msft.png":::
+![内存的视觉表示形式。](../media/memory-problems-thinkgraph.msft.png)
 
 对象可以通过两种方式保存内存：
 
@@ -50,7 +50,7 @@ DevTools 中的 [内存](heap-snapshots.md) 面板是用于调查内存问题的
 
 使用“内存”面板时，你可能会发现自己正在查看几列不同的信息。  突出显示的两列是 **浅层大小** 和 **保留大小**：
 
-:::image type="content" source="../media/memory-problems-shallow-retained.msft.png" alt-text="浅层和保留大小。" lightbox="../media/memory-problems-shallow-retained.msft.png":::
+![浅层和保留大小。](../media/memory-problems-shallow-retained.msft.png)
 
 ### <a name="shallow-size"></a>浅层大小
 
@@ -83,7 +83,7 @@ _垃圾回收根由_ 在从本机代码引用到 V8 VM 外部的 JavaScript 对�
 
 内存图以根开头，根可能是 `window` 浏览器的对象或 `Global` Node.js模块的对象。  你无法控制根对象的垃圾回收方式。
 
-:::image type="content" source="../media/memory-problems-dontcontrol.msft.png" alt-text="无法控制根对象的垃圾回收方式。" lightbox="../media/memory-problems-dontcontrol.msft.png":::
+![无法控制根对象的垃圾回收方式。](../media/memory-problems-dontcontrol.msft.png)
 
 任何无法从根目录访问的东西都会被垃圾回收。
 
@@ -106,7 +106,7 @@ _垃圾回收根由_ 在从本机代码引用到 V8 VM 外部的 JavaScript 对�
 
 与根的距离：
 
-:::image type="content" source="../media/memory-problems-root.msft.png" alt-text="与根的距离。" lightbox="../media/memory-problems-root.msft.png":::
+![与根的距离。](../media/memory-problems-root.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -122,7 +122,7 @@ _垃圾回收根由_ 在从本机代码引用到 V8 VM 外部的 JavaScript 对�
 *  节点 5 主导节点 8。
 *  节点 6 主导节点 7。
 
-:::image type="content" source="../media/memory-problems-dominatorsspanning.msft.png" alt-text="控制器树结构。" lightbox="../media/memory-problems-dominatorsspanning.msft.png":::
+![控制器树结构。](../media/memory-problems-dominatorsspanning.msft.png)
 
 在下图中，节点 `#3` 是节 `#10`点的控制者。  但是，从垃圾回收根 **GC** 到节点的每个简单路径中也都存在节`#7`点。`#10` 因此， `B` 如果对象存在于从根到对象 `A` 的每个简单路径中，则对象 `B` 是对象的控制者 `A`。
 

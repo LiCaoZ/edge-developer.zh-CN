@@ -6,6 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
+ms.openlocfilehash: 9b851433fb310abb85e77124d13b93917c83eaf8
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552622"
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,17 +28,17 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # <a name="find-unused-javascript-and-css-code-with-the-coverage-tool"></a>使用覆盖工具查找未使用的 JavaScript 和 CSS 代码
 
-覆盖工具可以帮助你找到未使用的 JavaScript 和 CSS 代码。  删除未使用的代码可以加快页面加载速度并保存移动用户的手机网络数据。
+“覆盖范围”工具可帮助查找未使用的 JavaScript 和 CSS 代码。  删除未使用的代码可以加快页面加载速度，并保存移动用户的手机网络数据。
 
-:::image type="content" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="分析代码范围。" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
+![分析代码覆盖率。](../media/coverage-sources-resource-drawer-coverage.msft.png)
 
-查找未使用的代码相对容易。  但重构代码库以便每个页面仅提供所需的 JavaScript 和 CSS 可能非常困难。  本指南未涵盖如何重构基本代码以避免未使用的代码，因为此重构取决于您的技术堆栈。
+查找未使用的代码相对容易。  但是，重构代码库，使每个页面仅随附所需的 JavaScript 和 CSS 可能很困难。  本指南不介绍如何重构代码库以避免未使用的代码，因为此重构依赖于技术堆栈。
 
 
 <!-- ====================================================================== -->
 ## <a name="overview"></a>概述
 
-寄送未使用的 JavaScript 或 CSS 是 web 开发中的一个常见问题。  例如，假设你想要使用页面上 [的 Bootstrap](https://getbootstrap.com/docs/4.3/components/buttons) 按钮组件。  若要使用按钮组件，你需要在 HTML 中添加指向 Bootstrap 样式表的链接，如下所示：
+寄送未使用的 JavaScript 或 CSS 是 web 开发中的一个常见问题。  例如，假设要在页面上使用 [Bootstrap 按钮组件](https://getbootstrap.com/docs/4.3/components/buttons) 。  若要使用按钮组件，需要在 HTML 中添加指向 Bootstrap 样式表的链接，如下所示：
 
 ```html
 <head>
@@ -42,7 +48,7 @@ ms.date: 05/04/2021
 </head>
 ```
 
-此样式表并不只是包含按钮组件的代码。  它包含_所有_Bootstrap 组件的 CSS。  但是，你未使用任何其他 Bootstrap 组件。  因此，你的页面正在下载一组不需要的 CSS。
+此样式表不只包含按钮组件的代码。  它包含_所有_Bootstrap 组件的 CSS。  但未使用任何其他 Bootstrap 组件。  因此，你的页面正在下载一堆不需要的 CSS。
 
 此额外的 CSS 是一个问题，原因如下：
 
@@ -52,45 +58,45 @@ ms.date: 05/04/2021
 
 
 <!-- ====================================================================== -->
-## <a name="open-the-coverage-tool"></a>打开"覆盖"工具
+## <a name="open-the-coverage-tool"></a>打开覆盖工具
 
 1. [打开“命令”菜单](../command-menu/index.md)。
 
-1. 开始键入 ， `coverage`选择显示 **覆盖命令** ，然后按 `Enter`。  " **覆盖** "工具将在"箱" **中打开**。
+1. "开始"菜单键入`coverage`，选择 **“显示覆盖**范围”命令，然后按下`Enter`。  **覆盖**工具在**抽屉**中打开。
 
-   :::image type="content" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="覆盖工具。" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+   ![覆盖工具。](../media/coverage-console-drawer-coverage-empty.msft.png)
 
 
 <!-- ====================================================================== -->
 ## <a name="record-code-coverage"></a>记录代码覆盖范围
 
-1. 单击"覆盖"工具中的以下 **按钮之** 一：
+1. 在 **“覆盖** 范围”工具中单击以下按钮之一：
 
-   *  单击**开始检测覆盖范围和重新加载页面 (**![检测覆盖范围和重新加载页面。) ](../media/reload-icon.msft.png)<!--todo: check UI string--> 如果您想要查看加载页面所需的代码。
+   *  单击 **"开始"菜单检测覆盖率和重载页** ("开始"菜单![检测覆盖率和重载页。](../media/reload-icon.msft.png)) <!--todo: check UI string--> 如果想要查看加载页面所需的代码。
 
-   *  如果要**在** (![](../media/record-icon.msft.png) 页面) 使用哪些代码，请单击检测覆盖范围和检测覆盖。
+   *  如果想要查看与页面交互后使用的代码，请单击**检测覆盖率**![ (检测覆盖率](../media/record-icon.msft.png)) 。
 
-1. 单击**停止检测覆盖，然后 (**![检测范围和](../media/stop-icon.msft.png)显示结果) <!--todo: check UI string--> 当你希望停止记录代码覆盖范围时。
+1. 单击 **“停止检测覆盖范围”并显示结果** (![停止检测覆盖率并显示结果](../media/stop-icon.msft.png)) <!--todo: check UI string--> 如果要停止记录代码覆盖率。
 
 
 <!-- ====================================================================== -->
 ## <a name="analyze-code-coverage"></a>分析代码覆盖范围
 
-覆盖工具 **中的** 表显示已分析的资源，以及每个资源中使用的代码数。  单击一行以在"源"工具**** 中打开该资源，并显示已用代码和未使用代码的行细分。
+**“覆盖范围**”工具中的表显示已分析的资源，以及每个资源中使用的代码量。  单击一行可在 **“源** ”工具中打开该资源，并显示已用代码和未使用的代码的逐行细分。
 
-代码覆盖报告：
+代码覆盖率报告：
 
-:::image type="content" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="代码覆盖报告。" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
+![代码覆盖率报告。](../media/coverage-sources-resource-drawer-coverage-selected.msft.png)
 
-代码覆盖率报告中的列：
+代码覆盖率报表中的列：
 
 | 列 | 描述 |
 | --- | --- |
-| **URL** | 已分析资源的 URL。 |
+| **URL** | 所分析资源的 URL。 |
 | **类型** | 资源是否包含 CSS、JavaScript 或两者。 |
 | **总字节数** | 资源的总大小（以字节为单位）。 |
 | **未使用的字节数** | 未使用的字节数。 |
-| 最后一个未命名列 | 总字节数 **和** 未使用 **字节数列的** 可视化。  条形图的红色部分是未使用字节数。  绿色部分是已使用字节数。 |
+| 最后一个未命名列 | **总字节**数和**未使用的字节列的**可视化效果。  条形图的红色部分是未使用字节数。  绿色部分是已使用字节数。 |
 
 
 <!-- ====================================================================== -->

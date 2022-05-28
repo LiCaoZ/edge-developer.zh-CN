@@ -8,12 +8,12 @@ ms.prod: microsoft-edge
 no-loc:
 - Enable webhint
 ms.date: 05/24/2022
-ms.openlocfilehash: 704462cce6180e25a8df94fa24a0b2f479898cb8
-ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
+ms.openlocfilehash: a4c6de8a5028ed8d2bde3eb322365cd1d88e9dc3
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "12551545"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552789"
 ---
 # <a name="experimental-features"></a>试验功能
 
@@ -605,12 +605,11 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 <!-- ====================================================================== -->
 ## <a name="enable-instrumentation-breakpoints"></a>启用检测断点
 
-是否在测试断点处停止。
+是否在测试断点处停止。  此试验使断点更可靠。
 
 *  稳定 v101 Microsoft Edge中不存在此复选框。
 *  此复选框位于Microsoft Edge Canary v104 中。
 
 另请参阅：
-* [概述何时将暂停代码中的每个断点类型](../javascript/breakpoints.md#overview-of-when-to-use-each-breakpoint-type)_与断点配合_使用。
-* 在_性能功能参考_中[启用高级油漆检测](../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation)。
-* [在时间线上使用分配检测](../memory-problems/allocation-profiler.md)。
+* [在检测断点上启用同步](https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/3470237)
+* [首次加载源文件时，断点可能不会触发](https://bugs.chromium.org/p/chromium/issues/detail?id=1133307&q=%22instrumentation%20breakpoints%22&can=2)

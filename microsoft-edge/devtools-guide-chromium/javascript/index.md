@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 5e67aa9950f3e0e09b4abc174eb9fc60c274d591
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 28c7b933ba1bb7e40227b2dfb78a4db26dab157b
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12513836"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552354"
 ---
 <!-- Copyright Kayce Basques
 
@@ -46,7 +46,7 @@ ms.locfileid: "12513836"
 
 1. 单击 **“添加 1 号”和“数字 2**”。  按钮下方的标签显示 `5 + 1 = 51`。  结果应为 `6`。  接下来，修复作为 bug 的加法错误。
 
-   :::image type="content" source="../media/javascript-js-demo-bad.msft.png" alt-text="5 + 1 的结果为 51，但应为 6" lightbox="../media/javascript-js-demo-bad.msft.png":::
+   ![5 + 1 的结果为 51，但应为 6](../media/javascript-js-demo-bad.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -56,15 +56,15 @@ ms.locfileid: "12513836"
 
 1. 若要在 DevTools 中打开**控制台**工具，请按 `Ctrl`++`Shift``J` (Windows、Linux) 或`J``Command`+`Option`+ (macOS) 。
 
-   :::image type="content" source="../media/javascript-console-empty.msft.png" alt-text="控制台工具。" lightbox="../media/javascript-console-empty.msft.png":::
+   ![控制台工具。](../media/javascript-console-empty.msft.png)
 
 1. 选择 **“源** ”工具。
 
-   :::image type="content" source="../media/javascript-sources-sections.msft.png" alt-text="源工具。" lightbox="../media/javascript-sources-sections.msft.png":::
+   ![源工具。](../media/javascript-sources-sections.msft.png)
 
 **源**工具 UI 有三个部分。
 
-:::image type="content" source="../media/javascript-sources-sections-annotated.msft.png" alt-text="源工具 UI 的 3 个部分。" lightbox="../media/javascript-sources-sections-annotated.msft.png":::
+![源工具 UI 的 3 个部分。](../media/javascript-sources-sections-annotated.msft.png)
 
 *  ) 左上角的 **“导航器** ”窗格 (。  此处列出了网页请求的所有文件。
 
@@ -109,7 +109,7 @@ function updateLabel() {
 
 1. 选择 **单击**旁边的复选框。  现在开发工具设置为在运行任何 `click` 事件侦听器时自动暂停。
 
-   :::image type="content" source="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png" alt-text="选择单击旁边的复选框。" lightbox="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png":::
+   ![选择单击旁边的复选框。](../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png)
 
 1. 返回演示，再次单击 **“添加数字 1”和“数字 2** ”。  开发工具暂停演示并在“**源**”具中突出显示一行代码。  开发工具应该暂停在 `get-started.js` 中的第 16 行。
 
@@ -161,7 +161,7 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 
 1. 单击 **“恢复脚本执行** (![恢复脚本执行。](../media/resume-script-run-icon.msft.png)) 。  脚本继续运行，直到达到第 34 行。  在第 31、32 和 33 行上，开发工具在每行的分号右边打印`addend1`、`addend2` 和 `sum` 的值。
 
-   :::image type="content" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="DevTools 会在第 34 行的代码行断点上暂停。" lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
+   ![DevTools 会在第 34 行的代码行断点上暂停。](../media/javascript-sources-breakpoint-paused.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -173,7 +173,7 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 
 如果在代码行上暂停， **则“范围** ”窗格将显示当前定义的本地变量和全局变量以及每个变量的值。  如果适用，它还会显示关闭变量。  双击变量值进行编辑。  如果不在代码行上暂停，则“ **范围** ”窗格为空。
 
-:::image type="content" source="../media/javascript-sources-breakpoint-paused-scope.msft.png" alt-text="“范围”窗格。" lightbox="../media/javascript-sources-breakpoint-paused-scope.msft.png":::
+![“范围”窗格。](../media/javascript-sources-breakpoint-paused-scope.msft.png)
 
 ### <a name="method-2-watch-expressions"></a>方法 2：监视表达式
 
@@ -190,7 +190,7 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 > [!NOTE]
 > 在下图中 `typeof sum` ，监视表达式显示在 **“监视** ”窗格中。  如果 DevTools 窗口很宽， **则“监视** ”窗格将显示在 **调试器** 窗格中，然后显示在右侧。
 
-:::image type="content" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="“监视”窗格。" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
+![“监视”窗格。](../media/javascript-sources-breakpoint-paused-watch.msft.png)
 
 正如猜想的那样，如果应为数字， `sum` 被评估为字符串。  现在确认值类型是 Bug 的原因。
 
@@ -204,7 +204,7 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 
 1. 按 `Enter`。  开发工具将评估该语句并打印 `6`，这是预期演示生成的结果。
 
-   :::image type="content" source="../media/javascript-sources-breakpoint-paused-console.msft.png" alt-text="评估 parseInt (addend1) + parseInt (addend2) 后的控制台工具" lightbox="../media/javascript-sources-breakpoint-paused-console.msft.png":::
+   ![评估 parseInt (addend1) + parseInt (addend2) 后的控制台工具](../media/javascript-sources-breakpoint-paused-console.msft.png)
 
 
 <!-- ====================================================================== -->

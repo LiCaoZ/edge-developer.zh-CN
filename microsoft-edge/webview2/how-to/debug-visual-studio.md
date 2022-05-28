@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 02/11/2022
-ms.openlocfilehash: e2611dc7f57e203926e889db0ba0e9ecfdc88b57
-ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
+ms.openlocfilehash: f4c544d79e3191c8927c2486342614c4e9c9ef66
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "12473830"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12552817"
 ---
 # <a name="debug-webview2-apps-with-visual-studio"></a>使用Visual Studio调试 WebView2 应用
 
@@ -51,7 +51,7 @@ Microsoft Visual Studio为 WebView2 应用中的 Web 和本机代码提供各种
 
 1. 在Visual Studio中，在 **“工作负荷**”下，选择**具有 C++ 设置的桌面开发**：
 
-   :::image type="content" source="./media/workloads.png" alt-text="Visual Studio修改工作负荷屏幕。" lightbox="./media/workloads.png":::
+   ![Visual Studio修改工作负荷屏幕。](./media/workloads.png)
 
 1. 选择顶部的 **单个组件**。
 
@@ -61,7 +61,7 @@ Microsoft Visual Studio为 WebView2 应用中的 Web 和本机代码提供各种
 
 1. 单击 **“修改**”。
 
-   :::image type="content" source="./media/indiv-comp.png" alt-text="Visual Studio：修改“单个组件”选项卡中的值。" lightbox="./media/indiv-comp.png":::
+   ![Visual Studio：修改“单个组件”选项卡中的值。](./media/indiv-comp.png)
 
 
 <!-- ====================================================================== -->
@@ -75,7 +75,7 @@ Microsoft Visual Studio为 WebView2 应用中的 Web 和本机代码提供各种
 
 1. 在 **“调试器类型**”下，选择 **“WebView2 (JavaScript) **。
 
-   :::image type="content" source="./media/enb-js.png" alt-text="Visual Studio中的“调试”配置属性。" lightbox="./media/enb-js.png":::
+   ![Visual Studio中的“调试”配置属性。](./media/enb-js.png)
 
 
 <!-- ====================================================================== -->
@@ -85,15 +85,15 @@ Microsoft Visual Studio为 WebView2 应用中的 Web 和本机代码提供各种
 
 1. 若要在源代码中设置断点，请将鼠标悬停在行号左侧，然后单击以设置断点。  JS/TS 调试适配器不执行源路径映射。  必须打开与 WebView2 关联的完全相同的路径。
 
-   :::image type="content" source="./media/breakpoint.png" alt-text="在Visual Studio中添加断点。" lightbox="./media/breakpoint.png":::
+   ![在Visual Studio中添加断点。](./media/breakpoint.png)
 
 1. 若要运行调试器，请选择平台的位大小，然后单击 **“本地Windows调试器**”旁边的绿色“播放”按钮。  应用运行，调试器连接到创建的第一个 WebView2 进程。
 
-   :::image type="content" source="./media/run.png" alt-text="Visual Studio中的本地Windows调试器。" lightbox="./media/run.png":::
+   ![Visual Studio中的本地Windows调试器。](./media/run.png)
 
 1. 在 **调试控制台**中，查找调试器的输出。
 
-   :::image type="content" source="./media/console.png" alt-text="调试Visual Studio中的控制台。" lightbox="./media/console.png":::
+   ![调试Visual Studio中的控制台。](./media/console.png)
 
 
 <!-- ====================================================================== -->
