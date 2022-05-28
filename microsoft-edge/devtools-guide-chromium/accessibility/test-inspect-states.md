@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 6dd30e1aba9336df764363765faf90f0991fbe4e
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: c60020263d8501b7aaa4dc79bda6d5dde7b77da4
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12513822"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553419"
 ---
 # <a name="verify-accessibility-of-all-states-of-elements"></a>验证所有元素状态可访问性
 
@@ -31,11 +31,11 @@ ms.locfileid: "12513822"
 
 例如，边栏导航菜单中的链接具有足够的对比度，如 **“检查** ”覆盖层中所示：
 
-:::image type="content" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="边栏导航菜单中的链接具有足够的对比度，如“检查”覆盖层中所示。" lightbox="../media/a11y-testing-enough-contrast.msft.png":::
+![边栏导航菜单中的链接具有足够的对比度，如“检查”覆盖层中所示。](../media/a11y-testing-enough-contrast.msft.png)
 
 **“捐赠状态**”部分中的绿色**狗**列表项没有足够的对比度，因此会在 **“检查**”覆盖层中通过警告进行标记：
 
-:::image type="content" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="检查覆盖层中的警告标记了没有足够的对比度的元素" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
+![检查覆盖层中的警告标记了没有足够的对比度的元素](../media/a11y-testing-not-enough-contrast.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -51,7 +51,7 @@ ms.locfileid: "12513822"
 
 1. 在呈现的网页中，将鼠标悬停在侧栏导航菜单中的蓝色菜单项上。  请注意，每个项都有一个动画。
 
-   :::image type="content" source="../media/a11y-testing-hover.msft.png" alt-text="鼠标指针位于其上时显示不同颜色的菜单项。" lightbox="../media/a11y-testing-hover.msft.png":::
+   ![鼠标指针位于其上时显示不同颜色的菜单项。](../media/a11y-testing-hover.msft.png)
 
 接下来，使用“检查”工具确认动画未运行：
 
@@ -83,7 +83,7 @@ ms.locfileid: "12513822"
 
 1. 在呈现的网页中，选择边栏导航菜单中的蓝色 **猫** 链接。  **“元素**”工具随即打开，其中选择了元素`<a href="#cats">Cats</a>`。
 
-   :::image type="content" source="../media/a11y-testing-inspecting-link-to-hover.msft.png" alt-text="检查元素工具中具有悬停状态的元素。" lightbox="../media/a11y-testing-inspecting-link-to-hover.msft.png":::
+   ![检查元素工具中具有悬停状态的元素。](../media/a11y-testing-inspecting-link-to-hover.msft.png)
 
 1. 选择“ **样式”** 选项卡。 所选 `a` 元素在 CSS 中具有 `hover` 应用于它的状态，但在“ **样式** ”窗格中不可见。
 
@@ -91,11 +91,11 @@ ms.locfileid: "12513822"
 
 1. 选择 **“元素”** 工具。  Then in the **Styles** pane, select the **:hov** (**Toggle Element State**) button.  将显示 **Force 元素状态** 复选框部分。
 
-   :::image type="content" source="../media/a11y-testing-state-simulation.msft.png" alt-text="显示所有选项的状态模拟工具。" lightbox="../media/a11y-testing-state-simulation.msft.png":::
+   ![显示所有选项的状态模拟工具。](../media/a11y-testing-state-simulation.msft.png)
 
 1. 单击 **“悬停”** 复选框。  在元素左侧的 `<a href="#cats">Cats</a>`DOM 中，将显示一个黄色点，指示该元素具有模拟状态。  **“猫”** 菜单项现在显示在网页中，就像指针悬停在它上面一样。  菜单项上的动画可能会运行。
 
-   :::image type="content" source="../media/a11y-testing-hover-simulated.msft.png" alt-text="开发工具模拟悬停状态。" lightbox="../media/a11y-testing-hover-simulated.msft.png":::
+   ![开发工具模拟悬停状态。](../media/a11y-testing-hover-simulated.msft.png)
 
     应用模拟状态后，当用户将鼠标悬停在元素上时，可以再次使用 **“检查** ”工具检查元素的对比度，如下所示。
 
@@ -103,7 +103,7 @@ ms.locfileid: "12513822"
 
 1. 将鼠标悬停在侧栏导航菜单中的蓝色 **猫** 链接上。  由于模拟悬停动画，此链接现在为浅蓝色。  此时会显示 **“检查** ”工具的信息叠加，显示 **对比度** 行中的橙色感叹号，指示对比度不够高。
 
-   :::image type="content" source="../media/a11y-testing-hover-contrast-testing.msft.png" alt-text="测试处于模拟悬停状态的元素的对比度。" lightbox="../media/a11y-testing-hover-contrast-testing.msft.png":::
+   ![测试处于模拟悬停状态的元素的对比度。](../media/a11y-testing-hover-contrast-testing.msft.png)
 
 状态模拟也是检查是否考虑了不同用户需求（如键盘用户的需求）的好方法。  通过使用 **Force 元素状态** 复选框，可以模拟 `:focus` 状态，以发现当 UI 具有焦点时 UI 保持不变。 当元素具有焦点时缺少指示器是个问题。
 

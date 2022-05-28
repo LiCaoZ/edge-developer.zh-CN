@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: b8031069f0a175a804c6441b6e6e1724373097b7
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
-ms.translationtype: HT
+ms.openlocfilehash: e055ab7095933af7b52a4e8bc5e5e40e42ea8103
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431415"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553748"
 ---
 <!-- Copyright Kayce Basques
 
@@ -40,11 +40,11 @@ _HTTP Cookie_ 主要用于管理用户会话、存储用户个性化首选项和
 
 1. 选择“**应用程序**”选项卡以打开“**应用程序**”面板。  **Manifest**窗格随即打开：
 
-   :::image type="content" source="../media/storage-application-manifest-empty.msft.png" alt-text="清单窗格。" lightbox="../media/storage-application-manifest-empty.msft.png":::
+   ![清单窗格。](../media/storage-application-manifest-empty.msft.png)
 
 1. 在“**存储**“下，展开 “**Cookie**”，然后选择一个源:
 
-   :::image type="content" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="Cookie 窗格。" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
+   ![Cookie 窗格。](../media/storage-application-storage-cookies-selected.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -78,7 +78,7 @@ _HTTP Cookie_ 主要用于管理用户会话、存储用户个性化首选项和
 
 使用“**筛选器**”文本框按**名称**或**值**筛选 Cookie:
 
-:::image type="content" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="筛选出不包含文本 ID 的任何 Cookie。" lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
+![筛选出不包含文本 ID 的任何 Cookie。](../media/storage-application-storage-cookies-filter-id.msft.png)
 
 不支持按其他字段进行筛选。
 
@@ -88,7 +88,7 @@ _HTTP Cookie_ 主要用于管理用户会话、存储用户个性化首选项和
 
 **名称**、**值**、**域**、**路径**和**过期日期/最长期限**字段是可编辑的。  双击字段进行编辑：
 
-:::image type="content" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="将 Cookie 的名称设置为&quot;DEVTOOLS！&quot;" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
+![将 Cookie 的名称设置为"DEVTOOLS！"](../media/storage-application-storage-cookies-rename.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -96,11 +96,11 @@ _HTTP Cookie_ 主要用于管理用户会话、存储用户个性化首选项和
 
 若要删除特定 Cookie，请单击 Cookie，然后单击" **删除已选中** "（!["已选中删除"。](../media/delete-icon.msft.png)）：
 
-:::image type="content" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="正在删除特定 Cookie。" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
+![正在删除特定 Cookie。](../media/storage-application-storage-cookies-delete-selected.msft.png)
 
 选择“**清除所有** (![清除所有](../media/clear-icon.msft.png)\)” 来删除所有 Cookie：
 
-:::image type="content" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="正在清除所有 Cookie。" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
+![正在清除所有 Cookie。](../media/storage-application-storage-cookies-clear-all.msft.png)
 
 
 <!-- ====================================================================== -->

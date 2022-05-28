@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 3ca3d1f469deb9580d4d05e2f050396a8fa0f2f1
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 95d8a73135876ceeea2026d9017de5983af410c1
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514571"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553650"
 ---
 <!-- Copyright Kayce Basques
 
@@ -58,27 +58,27 @@ ms.locfileid: "12514571"
 
 1. 在新的选项卡或窗口中打开“[检查网络活动演示](https://microsoftedge.github.io/Demos/network-tutorial/)”:
 
-   :::image type="content" source="../media/network-glitch-inspect-network-activity-demo.msft.png" alt-text="演示。" lightbox="../media/network-glitch-inspect-network-activity-demo.msft.png":::
+   ![演示。](../media/network-glitch-inspect-network-activity-demo.msft.png)
 
    <!-- You can view the source files for this demo in the [MicrosoftEdge/Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial) repo folder: -->
 
    <!--
-   :::image type="content" source="../media/network-tutorial/windows.msft.png" alt-text="The demo in one window and this tutorial in a different window." lightbox="../media/network-tutorial/windows.msft.png":::
+   ![The demo in one window and this tutorial in a different window.](../media/network-tutorial/windows.msft.png)
    -->
 
 1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`J`”(Windows、Linux)或“`Command`+`Option`+`J`”(macOS)。  DevTools 随即打开。
 
 1. 在 DevTools 的主工具栏上，选择“**控制台**”选项卡。 如果该选项卡不可见，请点击“**更多选项卡**”(“![更多选项卡图标。](../media/more-tabs-icon-light-theme.png)”)按钮:
 
-   :::image type="content" source="../media/network-glitch-console.msft.png" alt-text="控制台。" lightbox="../media/network-glitch-console.msft.png":::
+   ![控制台。](../media/network-glitch-console.msft.png)
 
    你可能更愿意 [将 DevTools 停靠到窗口底部](../customize/placement.md):
 
-   :::image type="content" source="../media/network-glitch-console-bottom.msft.png" alt-text="停靠在窗口底部的 DevTools。" lightbox="../media/network-glitch-console-bottom.msft.png":::
+   ![停靠在窗口底部的 DevTools。](../media/network-glitch-console-bottom.msft.png)
 
 1. 打开“**网络**”工具:
 
-   :::image type="content" source="../media/network-glitch-network-bottom.msft.png" alt-text="DevTools 中的网络工具，其中 DevTools 停靠在窗口底部。" lightbox="../media/network-glitch-network-bottom.msft.png":::
+   ![DevTools 中的网络工具，其中 DevTools 停靠在窗口底部。](../media/network-glitch-network-bottom.msft.png)
 
 **网络** 工具最初为空。  DevTools 仅在打开后才记录网络活动，自打开 DevTools 以来未发生任何网络活动。
 
@@ -90,7 +90,7 @@ ms.locfileid: "12514571"
 
 1. 刷新网页。  **网络** 面板会记录 **网络日志** 中的所有网络活动:
 
-   :::image type="content" source="../media/network-glitch-network.msft.png" alt-text="网络日志。" lightbox="../media/network-glitch-network.msft.png":::
+   ![网络日志。](../media/network-glitch-network.msft.png)
 
    **网络日志**的每一行表示一个资源。  默认情况下，按时间顺序列出资源。  顶部资源通常是主 HTML 文档。  底部资源是最后请求的任何资源。
 
@@ -117,7 +117,7 @@ ms.locfileid: "12514571"
 
 1. 再次查看**网络日志** 的底部。  会显示名为 `getstarted.json` 的新资源:
 
-   :::image type="content" source="../media/network-glitch-network-new-resource.msft.png" alt-text="网络日志中的新资源。" lightbox="../media/network-glitch-network-new-resource.msft.png":::
+   ![网络日志中的新资源。](../media/network-glitch-network-new-resource.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -127,7 +127,7 @@ ms.locfileid: "12514571"
 
 1. 右击网络日志表的标题，然后选择“**域**”。  现在会显示每个资源的域:
 
-   :::image type="content" source="../media/network-glitch-network-edit-column.msft.png" alt-text="启用“域”列。" lightbox="../media/network-glitch-network-edit-column.msft.png":::
+   ![启用“域”列。](../media/network-glitch-network-edit-column.msft.png)
 
 1. 要查看资源的完整 URL，请在“**名称**”列中将鼠标悬停该资源的单元格上。
 
@@ -141,11 +141,11 @@ ms.locfileid: "12514571"
 
 1. 选择“**慢速 3G**”:
 
-   :::image type="content" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="选择 慢速 3G。" lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
+   ![选择 慢速 3G。](../media/network-glitch-network-throttling-slow-3g.msft.png)
 
 1. 长按“**重载**”(“![重载。](../media/refresh-icon.msft.png)”)(或右击“**刷新**”)，然后选择“**空缓存和硬性刷新**”:
 
-   :::image type="content" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="空缓存和硬性刷新。" lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
+   ![空缓存和硬性刷新。](../media/network-glitch-empty-cache-and-hard-reset.msft.png)
 
 在重复访问时，浏览器通常会从[缓存](https://developer.mozilla.org/docs/Web/HTTP/Caching)中提供一些文件，从而加快页面加载速度。  **空缓存和硬性刷新** 会强制浏览器转到所有资源的网络。  使用它来显示第一次访问者如何体验页面加载。
 
@@ -161,17 +161,17 @@ ms.locfileid: "12514571"
 
 1. 点击(“![网络设置。](../media/settings-icon.msft.png)”)按钮，然后选择“**捕获屏幕截图**”复选框:
 
-   :::image type="content" source="../media/network-glitch-network-screenshots-setting.msft.png" alt-text="“网络设置”中的“捕获屏幕截图”复选框。" lightbox="../media/network-glitch-network-screenshots-setting.msft.png":::
+   ![“网络设置”中的“捕获屏幕截图”复选框。](../media/network-glitch-network-screenshots-setting.msft.png)
 
 1. 使用 **空缓存和硬性刷新** 工作流再次刷新页面。  如果需要有关如何执行此操作的提醒，请参阅上方的 [模拟慢速连接](#simulate-a-slower-network-connection)。
 
    **屏幕截图** 面板提供页面在加载流程中如何查看各点的缩略图:
 
-   :::image type="content" source="../media/network-glitch-network-screenshots.msft.png" alt-text="页面加载的屏幕截图。" lightbox="../media/network-glitch-network-screenshots.msft.png":::
+   ![页面加载的屏幕截图。](../media/network-glitch-network-screenshots.msft.png)
 
 1. 点击第一个缩略图。  DevTools 会及时显示当时发生的网络活动:
 
-   :::image type="content" source="../media/network-glitch-network-screenshots-first.msft.png" alt-text="在第一个屏幕截图期间发生的网络活动。" lightbox="../media/network-glitch-network-screenshots-first.msft.png":::
+   ![在第一个屏幕截图期间发生的网络活动。](../media/network-glitch-network-screenshots-first.msft.png)
 
 1. 再次点击(“![网络设置。](../media/settings-icon.msft.png)”)并关闭“**捕获屏幕截图**”复选框以关闭“**屏幕截图**”窗格。
 
@@ -185,27 +185,27 @@ ms.locfileid: "12514571"
 
 1. 选择 `network-tutorial/`。  将显示 **"标题** "面板。  使用此面板检查 HTTP 标头:
 
-   :::image type="content" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="“标头”面板。" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
+   ![“标头”面板。](../media/network-glitch-network-resources-headers.msft.png)
 
 1. 选择 **预览** 面板。  会显示 HTML 的基本呈现:
 
-   :::image type="content" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="“预览”面板。" lightbox="../media/network-glitch-network-resources-preview.msft.png":::
+   ![“预览”面板。](../media/network-glitch-network-resources-preview.msft.png)
 
     当 API 以 HTML 格式返回错误代码时，面板非常有用。  你可能会发现，读取呈现的 HTML 比读取 HTML 源代码更容易，或者在检查图像时更容易读取呈现的 HTML。
 
 1. 选择 **响应** 面板。  会显示 HTML 源代码:
 
-   :::image type="content" source="../media/network-glitch-network-resources-response.msft.png" alt-text="“响应”面板。" lightbox="../media/network-glitch-network-resources-response.msft.png":::
+   ![“响应”面板。](../media/network-glitch-network-resources-response.msft.png)
 
    提示: 缩小文件后，选择“**响应**”面板底部的“**格式**”(“![格式。](../media/format-icon.msft.png)”)按钮，从而重新设置文件内容的格式以实现可读性。
 
 1. 选择 **计时** 面板。  会显示资源的网络活动的细目:
 
-   :::image type="content" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="“计时”面板。" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
+   ![“计时”面板。](../media/network-glitch-network-resources-timing.msft.png)
 
 1. 点击“**关闭**”(“![关闭。](../media/close-icon.msft.png)”)以再次查看网络日志:
 
-   :::image type="content" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="“关闭”按钮。" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
+   ![“关闭”按钮。](../media/network-glitch-network-resources-close-tabs.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -219,15 +219,15 @@ ms.locfileid: "12514571"
 
 1. 选择“**搜索**”(“![搜索。](../media/search-icon.msft.png)”)。  “搜索”窗格会在网络日志的左侧打开:
 
-   :::image type="content" source="../media/network-glitch-network-search-empty.msft.png" alt-text="“搜索”窗格。" lightbox="../media/network-glitch-network-search-empty.msft.png":::
+   ![“搜索”窗格。](../media/network-glitch-network-search-empty.msft.png)
 
 1. 键入“`no-cache`”，然后按“`Enter`”。  “搜索”窗格会列出它在资源标头或内容中找到的所有 `no-cache` 实例:
 
-   :::image type="content" source="../media/network-glitch-network-search-cache-control.msft.png" alt-text="无缓存的搜索结果。" lightbox="../media/network-glitch-network-search-cache-control.msft.png":::
+   ![无缓存的搜索结果。](../media/network-glitch-network-search-cache-control.msft.png)
 
 1. 点击结果以查看在其中找到结果的资源。  如果要查看资源的详细信息，请选择直接转到它的结果。  例如，如果在标头中发现查询，则 **标题面板** 将打开。   如果在内容中找到查询，则“**响应**”面板会打开:
 
-   :::image type="content" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="“标头”面板中突出显示的搜索结果。" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
+   ![“标头”面板中突出显示的搜索结果。](../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png)
 
 1. 关闭"搜索"窗格和 **"标题"** 面板。
 
@@ -237,7 +237,7 @@ ms.locfileid: "12514571"
 
 DevTools 提供大量工作流，用于筛选出与手头任务无关的资源:
 
-:::image type="content" source="../media/network-glitch-network-filter-empty.msft.png" alt-text="“筛选器”工具栏。" lightbox="../media/network-glitch-network-filter-empty.msft.png":::
+![“筛选器”工具栏。](../media/network-glitch-network-filter-empty.msft.png)
 
 默认情况下 **应** 打开"筛选器"工具栏。  如果“**筛选器**”工具栏未打开，请点击“**筛选器**”(“![筛选器。](../media/filter-icon.msft.png)”)以显示。
 
@@ -248,19 +248,19 @@ DevTools 提供大量工作流，用于筛选出与手头任务无关的资源:
 
 1. 键入 `png` 到“**筛选器**”文本框。  只显示包含文本 `png` 的文件。  在这种情况下，唯一与筛选器匹配的文件为 PNG 图像:
 
-   :::image type="content" source="../media/network-glitch-network-filter-png.msft.png" alt-text="字符串筛选器。" lightbox="../media/network-glitch-network-filter-png.msft.png":::
+   ![字符串筛选器。](../media/network-glitch-network-filter-png.msft.png)
 
 1. 键入 `/.*\.[cj]s+$/`。  DevTools 会筛选出任何文件名不以 `j` 或 `c` 结尾，且后跟 1 个或多个 `s` 字符的资源:
 
-   :::image type="content" source="../media/network-glitch-network-filter-regex.msft.png" alt-text="正则表达式筛选器。" lightbox="../media/network-glitch-network-filter-regex.msft.png":::
+   ![正则表达式筛选器。](../media/network-glitch-network-filter-regex.msft.png)
 
 1. 键入 `-main.css`。  DevTools 筛选器出 `main.css`。  如果有文件与该模式匹配，则也会被筛选出:
 
-   :::image type="content" source="../media/network-glitch-network-filter-negative-statement.msft.png" alt-text="负筛选器。" lightbox="../media/network-glitch-network-filter-negative-statement.msft.png":::
+   ![负筛选器。](../media/network-glitch-network-filter-negative-statement.msft.png)
 
 1. 键入 `larger-than:1000` 到“**筛选器**”文本框。  DevTools 会筛选出任何响应小于 1000 字节的资源:
 
-   :::image type="content" source="../media/network-glitch-network-filter-property-value.msft.png" alt-text="属性筛选器。" lightbox="../media/network-glitch-network-filter-property-value.msft.png":::
+   ![属性筛选器。](../media/network-glitch-network-filter-property-value.msft.png)
 
    有关可筛选属性的完整列表，请参阅 [按属性筛选请求](reference.md#filter-requests-by-properties)。
 
@@ -273,11 +273,11 @@ DevTools 提供大量工作流，用于筛选出与手头任务无关的资源:
 
 1. 选择 **CSS**。  会筛选出所有其他文件类型:
 
-   :::image type="content" source="../media/network-glitch-network-filter-file-type-css.msft.png" alt-text="只显示 CSS 文件。" lightbox="../media/network-glitch-network-filter-file-type-css.msft.png":::
+   ![只显示 CSS 文件。](../media/network-glitch-network-filter-file-type-css.msft.png)
 
 1. 要显示脚本，请长按“`Control`”(Windows、Linux)或“`Command`”(macOS)，然后点击 “**JS**”:
 
-   :::image type="content" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="只显示 CSS 和 JS 文件。" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
+   ![只显示 CSS 和 JS 文件。](../media/network-glitch-network-filter-file-type-css-js.msft.png)
 
 1. 要删除筛选器并再次显示所有资源，请选择 **全部**。
 
@@ -293,13 +293,13 @@ DevTools 提供大量工作流，用于筛选出与手头任务无关的资源:
 
 1. 键入“`block`”，选择“**显示请求阻止**”，然后按“`Enter`”:
 
-   :::image type="content" source="../media/network-glitch-network-cli-block.msft.png" alt-text="显示请求阻止。" lightbox="../media/network-glitch-network-cli-block.msft.png":::
+   ![显示请求阻止。](../media/network-glitch-network-cli-block.msft.png)
 
 1. 点击“**添加模式**”(“![添加模式。](../media/add-icon.msft.png)”)。
 
 1. 键入“`main.css`”:
 
-   :::image type="content" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="正在阻止 &quot;main.css&quot;。" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
+   ![正在阻止 "main.css"。](../media/network-glitch-network-cli-block-add-pattern.msft.png)
 
 1. 单击**添加**。
 
@@ -307,7 +307,7 @@ DevTools 提供大量工作流，用于筛选出与手头任务无关的资源:
 
    在网络日志的 `main.css` 行中，红色文本表示已阻止资源:
 
-   :::image type="content" source="../media/network-glitch-network-cli-block-main-css.msft.png" alt-text="已阻止 main.css。" lightbox="../media/network-glitch-network-cli-block-main-css.msft.png":::
+   ![已阻止 main.css。](../media/network-glitch-network-cli-block-main-css.msft.png)
 
 1. 清除“**启用请求阻止**”复选框。
 

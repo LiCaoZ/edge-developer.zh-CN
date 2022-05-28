@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 4f0b41162f1ef027e1dbe7388fd09795e92aa6e3
-ms.sourcegitcommit: 1b70a2b8fa6649a1aa423b047c64f3df972150cb
+ms.openlocfilehash: 27e4b3fa2e0fdc6640b06a456e69df0b04f0884e
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "12520883"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553614"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -63,7 +63,7 @@ Firefox 具有 [响应式设计视图](https://developer.mozilla.org/docs/Tools/
 ### <a name="android-emulator"></a>Android模拟器
 
 <!--
-:::image type="content" source="../media/device-mode-android-emulator-stock-browser.msft.png" alt-text="Stock Browser in Android Emulator." lightbox="../media/device-mode-android-emulator-stock-browser.msft.png":::
+![Stock Browser in Android Emulator.](../media/device-mode-android-emulator-stock-browser.msft.png)
 -->
 
 目前，无法在Android模拟器上安装Microsoft Edge。  但是，可以使用 Android 浏览器、Chromium Content Shell 和 Firefox for Android，本文稍后将对此进行回顾。  Chromium Content Shell 运行与Microsoft Edge相同的Chromium呈现引擎，但不使用特定于浏览器的功能。
@@ -74,7 +74,7 @@ Android模拟器随附Android SDK，需要将其作为[Android Studio](https://d
 #### <a name="chromium-content-shell-on-android"></a>Android上Chromium内容 shell
 
 <!--
-:::image type="content" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell." lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
+![Android Emulator Content Shell.](../media/device-mode-android-avd-contentshell.msft.png)
 -->
 
 若要安装用于Android的 Chromium Content Shell，请保持模拟器运行并运行以下命令：
@@ -90,7 +90,7 @@ chmod u+x ./chromium-android-installer/*.sh
 #### <a name="firefox-on-android"></a>Android上的 Firefox
 
 <!--
-:::image type="content" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Firefox Icon on Android Emulator." lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
+![Firefox Icon on Android Emulator.](../media/device-mode-ff-on-android-emulator.msft.png)
 -->
 
 与 Chromium Content Shell 类似，可以获取用于将 Firefox 安装到模拟器上的 APK。
@@ -114,9 +114,9 @@ adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 
 ### <a name="microsoft-edge-edgehtml"></a>Microsoft Edge (EdgeHTML) 
 
-:::image type="content" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="现代。IE VM。" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
+![现代。IE VM。](../media/device-mode-modern-ie-vm.msft.png)
 
-Microsoft Edge (EdgeHTML) 虚拟机 (VM) 使你能够通过 VirtualBox (或 VMWare) 访问计算机上的不同版本的 EdgeHTML 和 Internet Explorer。  在 [下载页上选择虚拟机](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms)。<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->
+Microsoft Edge (EdgeHTML) 虚拟机 (VM) 使你能够通过 VirtualBox (或 VMWare) 访问计算机上的不同版本的 EdgeHTML 和 Internet Explorer。  在 [下载页上选择虚拟机](https://developer.microsoft.com/microsoft-edge/tools/vms)。
 
 
 <!-- ====================================================================== -->

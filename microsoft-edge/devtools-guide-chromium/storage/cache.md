@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 8315285d79bac0e9972f253f7291cd591bc56ad7
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: d5eb4647b86431d3a94f2ff58a6fd7338be6a130
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12430155"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553454"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,33 +28,33 @@ ms.locfileid: "12430155"
    limitations under the License.  -->
 # <a name="view-cache-data"></a>查看缓存数据
 
-本指南演示如何使用 DevTools 检查 [缓存](https://developer.mozilla.org/docs/Web/API/Cache) 数据。
+本指南介绍如何使用 DevTools 检查 [缓存](https://developer.mozilla.org/docs/Web/API/Cache) 数据。
 
-若要检查 [HTTP 缓存](https://developer.mozilla.org/docs/Web/HTTP/Caching) 数据，在 **"网络** "工具中，使用"网络日志"的 **"** 大小 **"列**。  请参阅[检查网络活动中的](../network/index.md#log-network-activity)_记录网络活动_。
+若要检查 [HTTP 缓存](https://developer.mozilla.org/docs/Web/HTTP/Caching)数据，请在**网络**工具中使用 **“网络日志**的**大小**”列。  请参阅 _“检查网络活动_”中的[日志网络](../network/index.md#log-network-activity)活动。
 
 
 <!-- ====================================================================== -->
 ## <a name="view-cache-data"></a>查看缓存数据
 
-1. 单击" **应用程序"** 选项卡以打开" **应用程序"** 面板。  通常默认**清单**窗格打开。
+1. 选择“**应用程序**”选项卡以打开“**应用程序**”面板。  通常默认**清单**窗格打开。
 
-   :::image type="content" source="../media/storage-application-manifest.msft.png" alt-text="&quot;清单&quot;窗格。" lightbox="../media/storage-application-manifest.msft.png":::
+   ![清单窗格。](../media/storage-application-manifest.msft.png)
 
 1. 展开 **缓存存储** 部分以查看可用的缓存。
 
-   :::image type="content" source="../media/storage-application-cache-storage.msft.png" alt-text="可用缓存。" lightbox="../media/storage-application-cache-storage.msft.png":::
+   ![可用缓存。](../media/storage-application-cache-storage.msft.png)
 
-1. 单击缓存以查看内容。
+1. 单击缓存可查看内容。
 
-   :::image type="content" source="../media/storage-application-cache-storage-domain-root-headers.msft.png" alt-text="查看缓存的内容。" lightbox="../media/storage-application-cache-storage-domain-root-headers.msft.png":::
+   ![查看缓存的内容。](../media/storage-application-cache-storage-domain-root-headers.msft.png)
 
-1. 单击资源以查看表下方部分中的 HTTP 标头。
+1. 单击资源可查看表下部分中的 HTTP 标头。
 
-   :::image type="content" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="查看资源的 HTTP 标头。" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
+   ![查看资源的 HTTP 标头。](../media/storage-application-cache-storage-index-headers.msft.png)
 
-1. 单击 **"** 预览"以查看资源的内容。
+1. 单击 **“预览** ”可查看资源的内容。
 
-   :::image type="content" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="查看资源的内容。" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
+   ![查看资源的内容。](../media/storage-application-cache-storage-domain-js-preview.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -63,9 +63,9 @@ ms.locfileid: "12430155"
 1. [查看缓存](#view-cache-data)。
 1. 单击要刷新的资源。  DevTools 会突出显示它以表明已选中。
 
-   :::image type="content" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="选择要刷新的资源。" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
+   ![选择要刷新的资源。](../media/storage-application-cache-storage-domain-refresh.msft.png)
 
-1. 单击 **"刷新** (![刷新"。](../media/refresh-icon.msft.png)) 。
+1. 单击 **“刷新** (![刷新。](../media/refresh-icon.msft.png)) 。
 
 
 <!-- ====================================================================== -->
@@ -73,9 +73,9 @@ ms.locfileid: "12430155"
 
 1. [查看缓存](#view-cache-data)。
 
-1. 使用 **"按路径筛选** "文本框筛选掉与提供的路径不匹配的任何资源。
+1. 使用 **“按路径筛选”** 文本框筛选出与你提供的路径不匹配的任何资源。
 
-   :::image type="content" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="筛选出与指定路径不匹配的资源。" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
+   ![筛选出与指定路径不匹配的资源。](../media/storage-application-cache-storage-filter.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -85,23 +85,23 @@ ms.locfileid: "12430155"
 
 1. 单击要删除的资源。  DevTools 会突出显示它以表明已选中。
 
-   :::image type="content" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="选择要删除的资源。" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
+   ![选择要删除的资源。](../media/storage-application-cache-storage-delete-selected.msft.png)
 
-1. 单击 **"删除所选 (**!["，然后单击"删除所选](../media/delete-icon.msft.png)) "。
+1. 单击 **“删除选定** (![删除已选中。](../media/delete-icon.msft.png)) 。
 
 
 <!-- ====================================================================== -->
 ## <a name="delete-all-cache-data"></a>删除所有缓存数据
 
-1. 打开 **ApplicationClear****** >  存储。
+1. 打开 **应用程序** > **清除存储**。
 
-1. 确保选中 **"缓存存储** "复选框。
+1. 确保选中 **缓存存储** 复选框。
 
-   :::image type="content" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="&quot;缓存存储复选框。" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
+   ![缓存存储复选框。](../media/storage-application-clear-storage-cache-storage-checkbox.msft.png)
 
-1. 单击" **清除网站数据"** 按钮。
+1. 单击 **“清除站点数据** ”按钮。
 
-   :::image type="content" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="&quot;清除网站数据&quot;按钮。" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
+   ![“清除站点数据”按钮。](../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png)
 
 
 <!-- ====================================================================== -->

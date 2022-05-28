@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 388a4809bbac406c2e71fd7d2951ef3023765d56
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: dde7a0db5ebc8812812fe53c28066a27f36a54c8
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12513969"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553616"
 ---
 <!-- Copyright Kayce Basques
 
@@ -67,7 +67,7 @@ console.assert(x < y, {x, y, reason});
 
 #### <a name="output"></a>输出
 
-:::image type="content" source="../media/console-demo-assert-button.msft.png" alt-text="console.assert () 示例的结果" lightbox="../media/console-demo-assert-button.msft.png":::
+![console.assert () 示例的结果](../media/console-demo-assert-button.msft.png)
 
 <br/><br/>
 
@@ -114,7 +114,7 @@ console.count();
 
 #### <a name="output"></a>输出
 
-:::image type="content" source="../media/console-demo-count-button.msft.png" alt-text="console.count () 示例的结果" lightbox="../media/console-demo-count-button.msft.png":::
+![console.count () 示例的结果](../media/console-demo-count-button.msft.png)
 
 <br/><br/>
 
@@ -159,7 +159,7 @@ console.debug('debug');
 
 #### <a name="output"></a>输出
 
-:::image type="content" source="../media/console-demo-debug-button.msft.png" alt-text="console.debug () 示例的结果" lightbox="../media/console-demo-debug-button.msft.png":::
+![console.debug () 示例的结果](../media/console-demo-debug-button.msft.png)
 
 <br/><br/>
 
@@ -184,7 +184,7 @@ console.dir(document.head);
 
 #### <a name="output"></a>输出
 
-:::image type="content" source="../media/console-demo-dir-button.msft.png" alt-text="console.dir () 示例的结果" lightbox="../media/console-demo-dir-button.msft.png":::
+![console.dir () 示例的结果](../media/console-demo-dir-button.msft.png)
 
 <br/><br/>
 
@@ -209,7 +209,7 @@ console.dirxml(document);
 
 #### <a name="output"></a>输出
 
-:::image type="content" source="../media/console-demo-dirxml-button.msft.png" alt-text="console.dirxml () 示例的结果" lightbox="../media/console-demo-dirxml-button.msft.png":::
+![console.dirxml () 示例的结果](../media/console-demo-dirxml-button.msft.png)
 
 <br/><br/>
 
@@ -234,7 +234,7 @@ console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 
 #### <a name="output"></a>输出
 
-:::image type="content" source="../media/console-demo-error-button.msft.png" alt-text="console.error () 示例的结果" lightbox="../media/console-demo-error-button.msft.png":::
+![console.error () 示例的结果](../media/console-demo-error-button.msft.png)
 
 <br/><br/>
 
@@ -263,7 +263,7 @@ console.groupEnd(label);
 
 #### <a name="output"></a>输出
 
-:::image type="content" source="../media/console-demo-group-button.msft.png" alt-text="console.group () 示例的结果" lightbox="../media/console-demo-group-button.msft.png":::
+![console.group () 示例的结果](../media/console-demo-group-button.msft.png)
 
 <br/><br/>
 
@@ -314,7 +314,7 @@ console.info('info');
 
 #### <a name="output"></a>输出
 
-:::image type="content" source="../media/console-demo-info-button.msft.png" alt-text="console.info () 示例的结果" lightbox="../media/console-demo-info-button.msft.png":::
+![console.info () 示例的结果](../media/console-demo-info-button.msft.png)
 
 <br/><br/>
 
@@ -339,7 +339,7 @@ console.log('log');
 
 #### <a name="output"></a>输出
 
-:::image type="content" source="../media/console-demo-log-button.msft.png" alt-text="console.log () 示例的结果" lightbox="../media/console-demo-log-button.msft.png":::
+![console.log () 示例的结果](../media/console-demo-log-button.msft.png)
 
 <br/><br/>
 
@@ -378,7 +378,7 @@ console.table([
 
 #### <a name="output"></a>输出
 
-:::image type="content" source="../media/console-demo-table-button.msft.png" alt-text="console.table () 示例的结果" lightbox="../media/console-demo-table-button.msft.png":::
+![console.table () 示例的结果](../media/console-demo-table-button.msft.png)
 
 <br/><br/>
 
@@ -405,7 +405,7 @@ console.timeEnd();
 
 #### <a name="output"></a>输出
 
-:::image type="content" source="../media/console-demo-time-button.msft.png" alt-text="console.time () 示例的结果" lightbox="../media/console-demo-time-button.msft.png":::
+![console.time () 示例的结果](../media/console-demo-time-button.msft.png)
 
 <br/><br/>
 
@@ -449,7 +449,7 @@ first();
 
 #### <a name="output"></a>输出
 
-:::image type="content" source="../media/console-demo-trace-button.msft.png" alt-text="console.trace () 示例的结果" lightbox="../media/console-demo-trace-button.msft.png":::
+![console.trace () 示例的结果](../media/console-demo-trace-button.msft.png)
 
 <br/><br/>
 
@@ -474,7 +474,7 @@ console.warn('warn');
 
 #### <a name="output"></a>输出
 
-:::image type="content" source="../media/console-demo-warn-button.msft.png" alt-text="console.warn () 示例的结果" lightbox="../media/console-demo-warn-button.msft.png":::
+![console.warn () 示例的结果](../media/console-demo-warn-button.msft.png)
 
 <br/><br/>
 

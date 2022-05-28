@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 08b26a390694ad74fa42c15d50eb9b86ccfc3caf
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: bac96e3a7b949563bd2e3ed75e0cf84cf886b70b
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514725"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553282"
 ---
 <!-- Copyright Kayce Basques
 
@@ -95,19 +95,19 @@ ms.locfileid: "12514725"
 
 1. 在Microsoft Edge中打开一个选项卡，并导航到站点的本地托管版本。  应该能够使用 URL（如`localhost:8080``http://0.0.0.0:8080`或 ）访问它。  确切 [的端口号](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) 可能不同。
 
-   :::image type="content" source="../media/workspaces-workspaces-demo.msft.png" alt-text="演示。" lightbox="../media/workspaces-workspaces-demo.msft.png":::
+   ![演示。](../media/workspaces-workspaces-demo.msft.png)
 
 ### <a name="set-up-devtools"></a>设置 DevTools
 
 1. 按 `Ctrl``Shift``J`++ (Windows、Linux) 或`Command``Option`++`J` (macOS) 打开 DevTools 的**控制台**面板。
 
-   :::image type="content" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="控制台面板。" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
+   ![控制台面板。](../media/workspaces-workspaces-demo-console.msft.png)
 
 1. 导航到 **“源** ”工具。
 
 1. 在左)  (导航 **器** 窗格中，单击“ **文件系统** ”选项卡。
 
-   :::image type="content" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="“文件系统”选项卡。" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+   ![“文件系统”选项卡。](../media/workspaces-workspaces-demo-sources-filesystem.msft.png)
 
 1. 单击 **“将文件夹添加到工作区**”。
 
@@ -117,7 +117,7 @@ ms.locfileid: "12514725"
 
 在 **“文件系统**”选项卡中，现在旁边`index.html`会显示一个绿点，`styles.css``script.js`  绿色点指示 DevTools 已在页面的网络资源与文件之间 `~/Desktop/app`建立映射。
 
-:::image type="content" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="“文件系统”选项卡现在指示本地文件与网络文件之间的映射。" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+![“文件系统”选项卡现在指示本地文件与网络文件之间的映射。](../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -125,7 +125,7 @@ ms.locfileid: "12514725"
 
 1. 打开 `styles.css`。  元素 `color` 的 `h1` 属性设置为 `fuchsia`。
 
-   :::image type="content" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="在文本编辑器中查看 styles.css。" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
+   ![在文本编辑器中查看 styles.css。](../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png)
 
 1. 选择 **“元素”** 工具。
 
@@ -133,7 +133,7 @@ ms.locfileid: "12514725"
 
    应用于元素的 `<h1>` CSS 规则显示在“ **样式** ”窗格中。  旁边的 `styles.css:1` 绿点意味着你所做的任何更改都映射到 `~/Desktop/app/styles.css`。
 
-   :::image type="content" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="文件链接的绿色指示器。" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
+   ![文件链接的绿色指示器。](../media/workspaces-workspaces-demo-elements-styles-css.msft.png)
 
 1. 在文本编辑器中再次打开 `styles.css` 。  该 `color` 属性现在设置为你喜欢的颜色。
 
@@ -162,7 +162,7 @@ DOM 树不是 HTML 源标记。
 1. Select the **Elements** tool.
 1. Select and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.
 
-   :::image type="content" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempt to change html from the DOM Tree of the Elements panel." lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
+   ![Attempt to change html from the DOM Tree of the Elements panel.](../media/workspaces-workspaces-demo-change-h1.msft.png)
 
 1. Open `~/Desktop/app/index.html` in a text editor.  The change that you just made doesn't appear.
 1. Refresh the page.  The page reverts to the original title.
@@ -198,7 +198,7 @@ In short, the **DOM Tree** `!==` HTML.
 
 1. 刷新页面。  刷新页面后，该 `<h1>` 元素将继续显示新文本。
 
-   :::image type="content" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="从“源”工具更改 HTML。" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+   ![从“源”工具更改 HTML。](../media/workspaces-workspaces-demo-sources-page-h1.msft.png)
 
 1. 打开 `~/Desktop/app/index.html`。  该 `<h1>` 元素包含新文本。
 
@@ -216,13 +216,13 @@ In short, the **DOM Tree** `!==` HTML.
 
 1. 键入 `quick` ，然后选择“**显示快速源**”。  在 DevTools 窗口底部，将显示 **“快速源** ”工具，其中显示内容 `index.html`，这是你在 **“源** ”工具中编辑的最后一个文件。
 
-   :::image type="content" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="使用命令菜单打开“快速源”工具。" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+   ![使用命令菜单打开“快速源”工具。](../media/workspaces-workspaces-demo-search-show-quick-source.msft.png)
 
 1. 按`Ctrl`+`P` (Windows、Linux) 或+`Command``P` (macOS) 打开 **“打开文件”** 对话框，如下所示。
 
 1. 键入 `script`，然后选择 **应用/script.js**。
 
-   :::image type="content" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="使用“打开文件”对话框打开script.js。" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+   ![使用“打开文件”对话框打开script.js。](../media/workspaces-workspaces-demo-search-script.msft.png)
 
    > [!NOTE]
    > 演示 `Save Changes To Disk With Workspaces` 中的链接会定期设置样式。
@@ -238,7 +238,7 @@ In short, the **DOM Tree** `!==` HTML.
 
 1. 刷新页面。  页面上的链接现在已斜体化。
 
-:::image type="content" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="页面上的链接现在已斜体化。" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
+![页面上的链接现在已斜体化。](../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png)
 
 
 <!-- ====================================================================== -->

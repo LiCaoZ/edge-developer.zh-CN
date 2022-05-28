@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 846f03d0a96e484f674597dcd964e2b4ea4d1e4c
-ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
+ms.openlocfilehash: 290173d0baa9fcc910ccc2b1a71db2a71a25ee58
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "12551476"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553406"
 ---
 # <a name="automatically-test-a-webpage-for-accessibility-issues"></a>自动测试网页中的辅助功能问题
 
@@ -35,13 +35,13 @@ ms.locfileid: "12551476"
 
    右上角的“ **问题”计数器** (![“问题”计数器。](../media/issues-counter-icon.msft.png)) 显示。  **问题计数器**是语音气泡图标，以及自动检测到的问题数。
 
-   :::image type="content" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="DevTools 中的“问题”计数器，指示当前文档中存在的问题数。" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
+   ![DevTools 中的“问题”计数器，指示当前文档中存在的问题数。](../media/a11y-testing-issues-tracker.msft.png)
 
 1. 刷新页面，因为某些问题是根据网络请求报告的。  请注意问题 **计数器**中的更新计数。
 
 1. 单击 **“问题”计数器**。  **问题**工具将在 DevTools 底部的**抽屉**中打开。
 
-   :::image type="content" source="../media/a11y-testing-accessibility-issues.msft.png" alt-text="问题工具中显示的辅助功能警告。" lightbox="../media/a11y-testing-accessibility-issues.msft.png":::
+   ![问题工具中显示的辅助功能警告。](../media/a11y-testing-accessibility-issues.msft.png)
 
 1. 在 **“问题** ”选项卡上，展开 **“辅助功能”** 部分。
 
@@ -63,7 +63,7 @@ ms.locfileid: "12551476"
 
 1. 单击 **“在元素中打开”** 链接。
 
-   :::image type="content" source="../media/a11y-testing-inspect-problematic-element.msft.png" alt-text="在单击“问题”工具中的链接后显示有问题的 HTML 的元素工具。" lightbox="../media/a11y-testing-inspect-problematic-element.msft.png":::
+   ![在单击“问题”工具中的链接后显示有问题的 HTML 的元素工具。](../media/a11y-testing-inspect-problematic-element.msft.png)
     
    **“元素**”工具随即打开，该元素在 DOM 树中突出显示。  “ **样式** ”窗格显示元素的已应用 CSS 规则。
   
@@ -93,7 +93,7 @@ ms.locfileid: "12551476"
 
 1. 在 **“问题”工具**中，单击 **“进一步阅读** ”以了解有关问题的详细信息。  若要在新选项卡中打开链接，请在单击链接时按`Ctrl` (Windows、Linux) 或`Command` (macOS) 。
 
-   :::image type="content" source="../media/a11y-testing-more-information-links.msft.png" alt-text="指向有关问题的更深入信息的“问题”选项卡上的链接。" lightbox="../media/a11y-testing-more-information-links.msft.png":::
+   ![指向有关问题的更深入信息的“问题”选项卡上的链接。](../media/a11y-testing-more-information-links.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -111,7 +111,7 @@ ms.locfileid: "12551476"
 
 1. 在 **“问题** ”选项卡上，展开警告 `Images must have alternate text: Element has no title attribute`。  有四个缺少替换文字的图像实例：
 
-   :::image type="content" source="../media/a11y-testing-images-without-alt.msft.png" alt-text="“问题”工具报告缺少可选文本的图像。" lightbox="../media/a11y-testing-images-without-alt.msft.png":::
+   ![“问题”工具报告缺少可选文本的图像。](../media/a11y-testing-images-without-alt.msft.png)
 
 查看 [图像必须具有备用文本](https://dequeuniversity.com/rules/axe/4.1/image-alt)。
 
@@ -129,13 +129,13 @@ ms.locfileid: "12551476"
 
    可能会有警告指出演示网页上的两个元素没有足够的对比度。
 
-   :::image type="content" source="../media/a11y-testing-contrast-issues.msft.png" alt-text="对比问题工具中报告的问题。" lightbox="../media/a11y-testing-contrast-issues.msft.png":::
+   ![对比问题工具中报告的问题。](../media/a11y-testing-contrast-issues.msft.png)
 
 1. 根据设置，“ **问题”** 选项卡可能有一条警告，例如 **，由于颜色对比度不足，用户可能难以读取文本内容**。   可以展开该警告，然后展开 **受影响的资源**。  将显示一个元素列表，其中包含的元素列表没有足够的对比度。
 
 1. 单击该 `li.high` 元素。  在呈现的网页中，突出显示了 **“捐赠**”部分中的 **“狗**”链接，其中显示了一个小信息覆盖。  这是将鼠标悬停在 **Elements** 工具的 DOM 树中的元素上时出现的相同覆盖。
 
-   :::image type="content" source="../media/a11y-testing-element-with-contrast-issues.msft.png" alt-text="在“受影响的资源”部分中单击链接后，网页中的元素突出显示。" lightbox="../media/a11y-testing-element-with-contrast-issues.msft.png":::
+   ![在“受影响的资源”部分中单击链接后，网页中的元素突出显示。](../media/a11y-testing-element-with-contrast-issues.msft.png)
 
 
 ### <a name="wavy-underlines-in-the-dom-tree-indicate-automatically-detected-issues"></a>DOM 树中的波浪下划线指示自动检测到的问题
@@ -144,7 +144,7 @@ ms.locfileid: "12551476"
 
 1. 在**元素**工具的 DOM 树中，单击具有波浪线的元素`<input type="search">`时按`Shift`下`input`。  显示 **“问题”工具** ，并显示该元素的问题。
 
-   :::image type="content" source="../media/a11y-testing-wavy-underlines.msft.png" alt-text="在 DOM 视图中具有波浪下划线的元素存在问题。" lightbox="../media/a11y-testing-wavy-underlines.msft.png":::
+   ![在 DOM 视图中具有波浪下划线的元素存在问题。](../media/a11y-testing-wavy-underlines.msft.png)
 
 
 <!-- ====================================================================== -->

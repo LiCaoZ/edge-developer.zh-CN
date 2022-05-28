@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 251e9a3ab648bce781e852659b5df113636399a5
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 4562aaa5d91d9408f6d7138391247e52eb10de49
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514830"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553446"
 ---
 <!-- Copyright Kayce Basques
 
@@ -64,7 +64,7 @@ ms.locfileid: "12514830"
 
 1. 代码行的左侧是行号列。  单击它。  一个红色图标 (或最近，一个蓝色矩形箭头) 显示在行号列旁边：
 
-   :::image type="content" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="代码行断点。" lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
+   ![代码行断点。](../media/javascript-sources-page-js-breakpoint-30.msft.png)
 
 ### <a name="line-of-code-breakpoints-in-your-code"></a>代码中的代码行断点
 
@@ -97,13 +97,13 @@ console.log('c');
 
 1. 按 `Enter` 下以激活断点。  红色钻石 (或最近，一个橙色图标) 显示在行号列的顶部：
 
-   :::image type="content" source="../media/javascript-sources-page-js-conditional-breakpoint.msft.png" alt-text="条件代码行断点。" lightbox="../media/javascript-sources-page-js-conditional-breakpoint.msft.png":::
+   ![条件代码行断点。](../media/javascript-sources-page-js-conditional-breakpoint.msft.png)
 
 ### <a name="manage-line-of-code-breakpoints"></a>管理代码行断点
 
 使用“**断点**”窗格可禁用或删除单个位置中的代码行断点。
 
-:::image type="content" source="../media/javascript-sources-page-js-breakpoints-16-33.msft.png" alt-text="断点面板。" lightbox="../media/javascript-sources-page-js-breakpoints-16-33.msft.png":::
+![断点面板。](../media/javascript-sources-page-js-breakpoints-16-33.msft.png)
 
 *  选中条目旁边的复选框以禁用该断点。
 
@@ -111,7 +111,7 @@ console.log('c');
 
 *  右键单击 **“断点** ”窗格中的任意位置，以停用所有断点、禁用所有断点或删除所有断点。  禁用所有断点等效于取消选中每个断点。  取消激活所有断点将指示开发工具忽略所有代码行断点，但也要保持启用状态，以使每个断点都与重新激活每个断点时的状态相同。
 
-:::image type="content" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="断点窗格中已停用的断点。" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
+![断点窗格中已停用的断点。](../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -127,7 +127,7 @@ console.log('c');
 
 1. 右键单击元素，指向 **“中断”**，然后选择 **“子树修改**”、“ **属性修改**”或 **“删除节点**”。
 
-   :::image type="content" source="../media/javascript-elements-break-on-subtree-modifications.msft.png" alt-text="用于创建 DOM 更改断点的上下文菜单。" lightbox="../media/javascript-elements-break-on-subtree-modifications.msft.png":::
+   ![用于创建 DOM 更改断点的上下文菜单。](../media/javascript-elements-break-on-subtree-modifications.msft.png)
 
 ### <a name="types-of-dom-change-breakpoints"></a>DOM 更改断点类型
 
@@ -160,7 +160,7 @@ console.log('c');
 
 1. 按 `Enter` 下以确认。
 
-:::image type="content" source="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png" alt-text="创建 XHR 断点。" lightbox="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png":::
+![创建 XHR 断点。](../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -174,7 +174,7 @@ console.log('c');
 
 1. 检查这些类别之一可在触发该类别的任何事件时暂停，或展开该类别并检查特定事件。
 
-:::image type="content" source="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png" alt-text="创建事件侦听器断点。" lightbox="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png":::
+![创建事件侦听器断点。](../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -186,11 +186,11 @@ console.log('c');
 
 1. 单击“ **暂停异常** (![在异常时暂停。](../media/pause-on-exceptions-icon.msft.png)) 。  图标在启用时变为蓝色。
 
-   :::image type="content" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="“暂停异常”按钮。" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
+   ![“暂停异常”按钮。](../media/javascript-sources-page-js-pause-on-exceptions.msft.png)
 
 1. **选：** 如果还希望暂停捕获 **的异常** ，以及未捕获的异常，请选中“暂停捕获异常”复选框。
 
-   :::image type="content" source="../media/javascript-sources-page-js-paused-on-exception.msft.png" alt-text="在未捕获异常时暂停。" lightbox="../media/javascript-sources-page-js-paused-on-exception.msft.png":::
+   ![在未捕获异常时暂停。](../media/javascript-sources-page-js-paused-on-exception.msft.png)
 
 
 <!-- ====================================================================== -->

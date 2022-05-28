@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/24/2022
-ms.openlocfilehash: 45f1aad2286b86181230eae63043ee6bc38494d4
-ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
+ms.openlocfilehash: 76e173615bc5417510aaf79ef7a8eda28ce25318
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "12551484"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553430"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -53,13 +53,13 @@ DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用
 
 1. 单击“**拍摄快照**”按钮，然后单击 **"开始"菜单**。  或者，按`Ctrl`+`E` (Windows、Linux) 或`Cmd`+`E` (macOS) 。
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png" alt-text="在内存工具中选择“堆快照”分析类型。" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png":::
+![在内存工具中选择“堆快照”分析类型。](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png)
 
 **快照** 最初存储在呈现器进程内存中。  单击快照图标以查看快照时，快照将按需传输到 DevTools。
 
 将快照加载到 DevTools 并已分析后，快照标题下方的数字将显示并显示 [可访问 JavaScript 对象的总大小](memory-101.md#object-sizes)。
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png" alt-text="可访问对象的总大小。" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png":::
+![可访问对象的总大小。](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png)
 
 > [!NOTE]
 > 快照中仅包含可访问对象。  此外，创建快照始终从垃圾回收开始。
@@ -70,7 +70,7 @@ DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用
 
 单击 **“清除所有配置文件** ”图标可从 DevTools 中删除 (快照，以及与呈现器进程) 关联的任何内存。
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="删除快照。" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
+![删除快照。](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png)
 
 关闭 DevTools 窗口不会从与呈现器进程关联的内存中删除配置文件。  重新打开 DevTools 时，以前拍摄的所有快照都会重新出现在快照列表中。
 
@@ -95,7 +95,7 @@ DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用
 
 若要在视图之间切换，请使用视图顶部的选择器。
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png" alt-text="切换视图选择器。" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png":::
+![切换视图选择器。](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png)
 
 > [!NOTE]
 > 并非所有属性都存储在 JavaScript 堆上。  不会捕获使用运行本机代码的 getters 实现的属性。  此外，不会捕获非字符串值（如数字）。
@@ -104,7 +104,7 @@ DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用
 
 最初，快照将在“摘要”视图中打开，其中显示对象总数，可将其展开以显示实例：
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="摘要视图。" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
+![摘要视图。](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png)
 
 顶级条目是“总计”行。
 
@@ -124,7 +124,7 @@ DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用
 
 **堆探查器中的各个构造函数 (组) 条目对应什么？**
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="构造函数组。" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
+![构造函数组。](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png)
 
 | 构造函数 (组) 条目 | 描述 |
 |:--- |:--- |
@@ -153,7 +153,7 @@ DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用
 
 在 **“比较** ”视图中，将显示两个快照之间的差异。  展开总条目时，会显示添加和删除的对象实例。
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png" alt-text="比较视图。" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png":::
+![比较视图。](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png)
 
 <!--todo: add HeapProfilingComparison section when available  -->
 
@@ -167,7 +167,7 @@ DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用
 | **GC 根** | VM 垃圾使用的实际 GC 根。  GC 根由内置对象映射、符号表、VM 线程堆栈、编译缓存、句柄范围和全局句柄组成。  |
 | **本机对象** | JavaScript 虚拟机内的浏览器对象“推送” (JavaScript VM) 以允许自动化，例如 DOM 节点、CSS 规则。  |
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png" alt-text="包含视图。" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png":::
+![包含视图。](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png)
 
 <!--todo: add heap profiling containment section when available  -->
 
@@ -210,7 +210,7 @@ function createLargeClosure() {
 <!-- You can view the source files for the Heap Snapshots demo pages in the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 <!--
-:::image type="content" source="../media/memory-problems-domleaks.msft.png" alt-text="Name functions to distinguish between closures." lightbox="../media/memory-problems-domleaks.msft.png":::
+![Name functions to distinguish between closures.](../media/memory-problems-domleaks.msft.png)
 -->
 
 
@@ -271,7 +271,7 @@ leafRef = null;
 
 维护 `#leaf` 对相关父 (parentNode) 和递归到 `#tree`的引用，因此只有 `leafRef` 当为 nullified 时，才会在垃圾回收 (GC) 的候选项下 `#tree` 使用 WHOLE 树。
 
-:::image type="content" source="../media/memory-problems-tree-gc.msft.png" alt-text="DOM 子树。" lightbox="../media/memory-problems-tree-gc.msft.png":::
+![DOM 子树。](../media/memory-problems-tree-gc.msft.png)
 
 
 ### <a name="example-leaking-dom-nodes"></a>示例：泄漏 DOM 节点

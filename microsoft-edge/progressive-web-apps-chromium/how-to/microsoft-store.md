@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 ms.date: 12/03/2021
-ms.openlocfilehash: 8d5ffec27ccb50a242c40134df1542d3db6029b2
-ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
+ms.openlocfilehash: 4bef8382b33c6f449f9a05932a489c90c19cfa4a
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "12550698"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553565"
 ---
 # <a name="publish-a-progressive-web-app-to-the-microsoft-store"></a>将渐进式 Web 应用发布到Microsoft Store
 
@@ -57,7 +57,7 @@ ms.locfileid: "12550698"
 
 1.  若要显示发布者详细信息，以便在[“打包”PWA](#package-your-pwa-for-the-store)部分中使用，请选择 **“产品管理** > **产品标识**”。
 
-    :::image type="content" source="../media/windows-partner-center-publisher-info.msft.png" alt-text="从合作伙伴中心Windows复制发布者信息。" lightbox="../media/windows-partner-center-publisher-info.msft.png":::
+    ![从合作伙伴中心Windows复制发布者信息。](../media/windows-partner-center-publisher-info.msft.png)
     <!-- lightbox justified because large detailed image -->
 
 1.  复制并保存以下值。

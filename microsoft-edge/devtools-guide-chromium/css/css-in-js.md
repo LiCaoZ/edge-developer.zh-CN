@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/25/2021
-ms.openlocfilehash: 2c470b3d9b3c478ec321be2ffc65b898f704b674
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: bd8d3bbc457c88741bd6f96fadb6a4969200765e
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12513794"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553685"
 ---
 <!-- Copyright Alex Rudenko
 
@@ -46,7 +46,7 @@ ms.locfileid: "12513794"
 
 1. 将复制的 CSS 粘贴到文本编辑器中的 JavaScript 文件中，例如Visual Studio Code。  例如：`'--more-link': 'lime'`。
 
-   :::image type="content" source="images/copy-declaration-as-js.msft.png" alt-text="样式规则的上下文菜单，包括“将声明复制为 JS”和“将所有声明复制为 JS”命令。" lightbox="images/copy-declaration-as-js.msft.png":::
+   ![样式规则的上下文菜单，包括“将声明复制为 JS”和“将所有声明复制为 JS”命令。](images/copy-declaration-as-js.msft.png)
 
 此功能从Microsoft Edge版本 93 开始提供。 <!-- delete statement sometime after September 2, 2021 --> 要详细了解如何在 DevTools 中编写 CSS，请参阅 [CSS 功能参考](reference.md)。
 
@@ -79,7 +79,7 @@ function addStyle() {
 
 此示例演示如何更改 `background` CSS 对象模型函`insertRule()`数添加的样式的属性`h1`。  颜色`background`最初是通过调用 CSS 对象模型函数来设置的，然后可以使用“**样式**”窗格进行更改`pink``lightblue`。
 
-:::image type="content" source="../media/css-in-js.msft.png" alt-text="将使用“CSSStyleSheet”添加的 h1 样式的背景属性从“粉红色”更改为“浅蓝色”。" lightbox="../media/css-in-js.msft.png":::
+![将使用“CSSStyleSheet”添加的 h1 样式的背景属性从“粉红色”更改为“浅蓝色”。](../media/css-in-js.msft.png)
 
 尝试 [使用 CSS in-JS 的示例](https://codepen.io/zoherghadyali/full/abdGrPZ)，尝试使用此功能。
 

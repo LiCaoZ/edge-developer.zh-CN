@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/28/2021
-ms.openlocfilehash: 0bfb5aeb07920c14535e19eabbb47fc7106e3192
-ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
+ms.openlocfilehash: a7bba6e15fb1c92b4e9c6f8a8ddfe5ff0079ce9f
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "12550787"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553755"
 ---
 # <a name="measure-runtime-performance-of-a-page-using-the-performance-monitor-tool"></a>使用性能监视器工具度量页面的运行时性能
 
@@ -36,7 +36,7 @@ ms.locfileid: "12550787"
 
 性能监视器显示实时更新的各种性能指标的图形。
 
-:::image type="content" source="../media/performance-monitor-tool/performance-monitor-first-open.png" alt-text="首次打开性能监视器工具时的外观。" lightbox="../media/performance-monitor-tool/performance-monitor-first-open.png":::
+![首次打开性能监视器工具时的外观。](../media/performance-monitor-tool/performance-monitor-first-open.png)
 
 
 <!-- ====================================================================== -->
@@ -57,4 +57,4 @@ ms.locfileid: "12550787"
 
 若要启用或禁用任何可用性能指标，请单击侧栏中的标签。
 
-:::image type="content" source="../media/performance-monitor-tool/performance-monitor-metrics.png" alt-text="性能监视器边栏，显示可切换的各种指标。" lightbox="../media/performance-monitor-tool/performance-monitor-metrics.png":::
+![性能监视器边栏，显示可切换的各种指标。](../media/performance-monitor-tool/performance-monitor-metrics.png)

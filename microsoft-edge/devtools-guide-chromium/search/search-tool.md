@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/28/2021
-ms.openlocfilehash: f0af5288f605cc768762e0c35ea1642123454b13
-ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
+ms.openlocfilehash: 8fd9a0f69a9f6675ab5ea9805f8e72fbc0635fdf
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "12551572"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553279"
 ---
 # <a name="find-source-files-for-a-page-using-the-search-tool"></a>使用搜索工具查找页面的源文件
 
@@ -90,7 +90,7 @@ ms.locfileid: "12551572"
 
 执行搜索后，单击结果行以打开相应的文件。  **源**工具在主面板中打开，并加载资源文件，并滚动到匹配的行。
 
-:::image type="content" source="../media/search-tool/search-tool-open-in-sources.png" alt-text="单击搜索行将打开“源”工具并加载相应的资源。" lightbox="../media/search-tool/search-tool-open-in-sources.png":::
+![单击搜索行将打开“源”工具并加载相应的资源。](../media/search-tool/search-tool-open-in-sources.png)
 
 
 <!-- ====================================================================== -->

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 11/19/2021
-ms.openlocfilehash: e48522e071a02e040ca9201d7cd60b9679b16ece
-ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
+ms.openlocfilehash: 98fd78fe9cbfc636f21826c1841e953b81198156
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "12550806"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553570"
 ---
 # <a name="get-started-with-progressive-web-apps"></a>渐进式 Web 应用入门
 
@@ -161,17 +161,17 @@ Web 应用现在有一个使用缓存优先策略的服务辅助角色。  新�
 
 1.  在Microsoft Edge中，选择`F12`打开 DevTools。  选择 **“应用程序**”，然后选择 **“服务辅助角色** ”以查看服务辅助角色。  如果未显示服务辅助角色，请刷新页面。
 
-    :::image type="content" source="../media/devtools-sw-overview.png" alt-text="DevTools 服务辅助角色概述。" lightbox="../media/devtools-sw-overview.png":::
+    ![DevTools 服务辅助角色概述。](../media/devtools-sw-overview.png)
     <!-- lightbox justified because large, detailed image -->
 
 1.  通过展开**缓存存储**并选择 **pwabuilder-precache** 来查看服务辅助角色缓存。  应显示服务辅助角色缓存的所有资源。  服务辅助角色缓存的资源包括应用图标、应用清单、CSS 和 JavaScript 文件。
 
-    :::image type="content" source="../media/devtools-cache.png" alt-text="DevTools 中的服务辅助角色缓存。" lightbox="../media/devtools-cache.png":::
+    ![DevTools 中的服务辅助角色缓存。](../media/devtools-cache.png)
     <!-- lightbox justified because large, detailed image -->
 
 1.  尝试将PWA作为脱机应用，如下所示。  在 DevTools 中，选择 **“网络**”，然后将状态从 **“联机** ”更改为 **“脱机**”。
 
-    :::image type="content" source="../media/devtools-offline.png" alt-text="在 DevTools 中将应用设置为脱机模式。" lightbox="../media/devtools-offline.png":::
+    ![在 DevTools 中将应用设置为脱机模式。](../media/devtools-offline.png)
     <!-- lightbox justified because large, detailed image -->
 
 1.  刷新应用。  它应显示脱机机制，以便从缓存中为应用的资源提供服务。

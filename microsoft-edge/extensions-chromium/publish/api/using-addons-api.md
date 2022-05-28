@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/17/2022
-ms.openlocfilehash: 31f089213c22446f33ed5e6584ea1d7fc361b30e
-ms.sourcegitcommit: 3c588824bd8c7484fa31acae4857405a7eec5e36
+ms.openlocfilehash: 2ff0016991ddbabad8e7a99650d04d024e0b4d39
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "12506984"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553578"
 ---
 # <a name="using-the-microsoft-edge-add-ons-api"></a>使用 Microsoft Edge 加载项 API 
 
@@ -48,7 +48,7 @@ Microsoft Edge加载项 API 提供了一组 REST 终结点，用于以编程方�
 
 1. 在 **“发布 API** ”页中，单击 **“创建 API 凭据** ”按钮。  此步骤可能需要几分钟时间。
 
-   :::image type="content" source="../../media/create-api-credentials-button.png" alt-text="单击“创建 API 凭据”后合作伙伴中心的“发布 API”页，现在显示客户端 ID、客户端机密和身份验证令牌 URL。" lightbox="../../media/create-api-credentials-button.png":::
+   ![单击“创建 API 凭据”后合作伙伴中心的“发布 API”页，现在显示客户端 ID、客户端机密和身份验证令牌 URL。](../../media/create-api-credentials-button.png)
 
    现已创建 API 凭据;已启用或续订 API。  **客户端 ID**、**客户端机密**、**到期日期**和**访问令牌 URL** 现在显示在“发布 API”页上。
 

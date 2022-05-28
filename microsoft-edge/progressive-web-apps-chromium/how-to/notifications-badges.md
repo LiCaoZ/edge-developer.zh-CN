@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 ms.date: 09/17/2021
-ms.openlocfilehash: 82d8b821205f7d7b5d726504022d1b6c39593c2c
-ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
+ms.openlocfilehash: 1c8da56f02b75170a7b9a31af76f6e8c7377010f
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "12550709"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553594"
 ---
 # <a name="re-engage-users-with-badges-notifications-and-push-messages"></a>使用锁屏提醒、通知和推送通知重新吸引用户
 
@@ -112,7 +112,7 @@ if ("Notification" in window) {
 
 ```javascript
 button.addEventListener("click", () => {
-    Notifications.requestPermission().then(permission => {
+    Notification.requestPermission().then(permission => {
         if (permission === "granted") {
             console.log("The user accepted");
         }

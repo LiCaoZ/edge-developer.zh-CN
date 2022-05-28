@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/26/2021
-ms.openlocfilehash: cc18effd31e61bbda78fce00b8c485bfd7ec8526
-ms.sourcegitcommit: 855d6986920b5d231e68a453bc8e5b31180f3026
+ms.openlocfilehash: f5b223d8943ccd606c7f4f46465cbc6901b72eff
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "12506783"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553523"
 ---
 <!-- Copyright Katherine Jackson
 
@@ -36,11 +36,11 @@ ms.locfileid: "12506783"
 
 在教程的开头，网站应如下图所示：
 
-:::image type="content" source="../media/beginners-css-intro1.msft.png" alt-text="网站当前的外观。" lightbox="../media/beginners-css-intro1.msft.png":::
+![网站当前的外观。](../media/beginners-css-intro1.msft.png)
 
 完成本教程后，网站应如下图所示：
 
-:::image type="content" source="../media/beginners-css-intro2.msft.png" alt-text="本教程末尾的网站应如下所示。" lightbox="../media/beginners-css-intro2.msft.png":::
+![本教程末尾的网站应如下所示。](../media/beginners-css-intro2.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -74,17 +74,17 @@ ms.locfileid: "12506783"
 
 1. 打开[源代码](https://glitch.com/edit/#!/cooked-amphibian?path=index.html)。  当前选择的浏览器选项 **卡称为“编辑”选项卡**。
 
-   :::image type="content" source="../media/beginners-css-setup1.msft.png" alt-text="编辑选项卡。" lightbox="../media/beginners-css-setup1.msft.png":::
+   ![编辑选项卡。](../media/beginners-css-setup1.msft.png)
 
 1. 选择 **熟食两栖动物**。  弹出一个菜单。
 
-   :::image type="content" source="../media/beginners-css-setup2.msft.png" alt-text="&quot;项目选项&quot;菜单。" lightbox="../media/beginners-css-setup2.msft.png":::
+   !["项目选项"菜单。](../media/beginners-css-setup2.msft.png)
 
 1. 选择**Remix Project**。  Glitch 创建可编辑的项目副本。  Glitch 会为新项目生成随机名称。
 
 1. 选择 **“显示”** ，然后选择 **“新建窗口**”。  打开另一个选项卡，其中显示网站实时视图。  当前选择的浏览器选项 **卡称为“实时”选项卡**。
 
-   :::image type="content" source="../media/beginners-css-setup3.msft.png" alt-text="实时选项卡。" lightbox="../media/beginners-css-setup3.msft.png":::
+   ![实时选项卡。](../media/beginners-css-setup3.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -92,7 +92,7 @@ ms.locfileid: "12506783"
 
 **CSS** 是一种控制网页布局和样式的计算机语言。  下图是带边框的段落。
 
-:::image type="content" source="../media/beginners-css-red_paragraph.msft.png" alt-text="文本已使用 CSS 设置样式。" lightbox="../media/beginners-css-red_paragraph.msft.png":::
+![文本已使用 CSS 设置样式。](../media/beginners-css-red_paragraph.msft.png)
 
 下面是用于在上图中创建段落的 HTML 和 CSS 代码：
 
@@ -112,7 +112,7 @@ HTML 属性 `style="border: 1px dashed red; padding: 5px;"` 可能看起来很�
 
 1. 返回到编辑选项卡并打开`index.html`。
 
-   :::image type="content" source="../media/beginners-css-inline1.msft.png" alt-text="在编辑选项卡中打开index.html。" lightbox="../media/beginners-css-inline1.msft.png":::
+   ![在编辑选项卡中打开index.html。](../media/beginners-css-inline1.msft.png)
 
 1. 在元素中`<nav>`添加属性`style="background-color: aliceblue;"`。
 
@@ -132,7 +132,7 @@ HTML 属性 `style="border: 1px dashed red; padding: 5px;"` 可能看起来很�
 
 1. 若要显示更改，请导航到活动 **选项卡**。 分区的背景 `<nav>` 现在为蓝色。
 
-   :::image type="content" source="../media/beginners-css-inline2.msft.png" alt-text="“开始”和“联系人”链接后面的背景色现在是蓝色的。" lightbox="../media/beginners-css-inline2.msft.png":::
+   ![“开始”和“联系人”链接后面的背景色现在是蓝色的。](../media/beginners-css-inline2.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -150,7 +150,7 @@ HTML 属性 `style="border: 1px dashed red; padding: 5px;"` 可能看起来很�
 
 1. 在实时选项卡中，单击 **“联系人** ”转到联系人页面。  请注意 **“开始** 和 **联系人”** 链接的字体。
 
-   :::image type="content" source="../media/beginners-css-internal1.msft.png" alt-text="“联系人”页。" lightbox="../media/beginners-css-internal1.msft.png":::
+   ![“联系人”页。](../media/beginners-css-internal1.msft.png)
 
 1. 在编辑器 **选项卡中，** 打开 `contact.html`。
 
@@ -175,7 +175,7 @@ HTML 属性 `style="border: 1px dashed red; padding: 5px;"` 可能看起来很�
 
 1. 单击 **“联系人** ”返回到联系人页面。  请注意，“ **开始** ”和“ **联系人”** 链接的字体已更改：
 
-   :::image type="content" source="../media/beginners-css-internal2.msft.png" alt-text="“开始”和“联系人”链接的字体已更改。" lightbox="../media/beginners-css-internal2.msft.png":::
+   ![“开始”和“联系人”链接的字体已更改。](../media/beginners-css-internal2.msft.png)
 
 ### <a name="understand-internal-stylesheets"></a>了解内部样式表
 
@@ -198,7 +198,7 @@ HTML 属性 `style="border: 1px dashed red; padding: 5px;"` 可能看起来很�
 
 `font-family: 'Courier New', Courier, serif` 是**声明**。  声明由以下两部分组成：
 
-| 部分 | 示例 | 说明 |
+| 部分 | 示例 | 描述 |
 | --- | --- | --- |
 | **属性** | `font-family` | 该属性描述应更改元素的样式。 |
 | **value** | `'Courier New', Courier, serif` | 该值准确描述了元素的样式应该如何更改。 |
@@ -235,7 +235,7 @@ li a {
 
 1. 单击 **“联系人** ”链接可返回到联系人页面。  现在， **联系我！** 具有与导航链接相同的字体：
 
-   :::image type="content" source="../media/beginners-css-multiple1.msft.png" alt-text="文本“与我联系！ 现在具有与“开始”和“联系人”链接相同的字体。" lightbox="../media/beginners-css-multiple1.msft.png":::
+   ![文本“与我联系！ 现在具有与“开始”和“联系人”链接相同的字体。](../media/beginners-css-multiple1.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -249,29 +249,29 @@ li a {
 
 1. 右键单击 **“开始** ”链接，然后选择 **“检查**”。
 
-   :::image type="content" source="../media/beginners-css-add1.msft.png" alt-text="检查“主页”链接。" lightbox="../media/beginners-css-add1.msft.png":::
+   ![检查“主页”链接。](../media/beginners-css-add1.msft.png)
 
    DevTools 将在页面旁边打开。  代表"主页"链接的代码在 DOM 树中突出显示 `<a href="/">Home</a>` 为蓝色。  本教程[开始 HTML 和 DOM](html.md) 时，应熟悉代码片段和预览。
 
    在下图中 `font-family: 'Courier New', Courier, serif` ，之前添加到 `contact.html` 的声明显示在 DOM 树下方 **的“样式”** 选项卡中：
 
-   :::image type="content" source="../media/beginners-css-add2.msft.png" alt-text="“样式”选项卡位于 DOM 树下方。" lightbox="../media/beginners-css-add2.msft.png":::
+   ![“样式”选项卡位于 DOM 树下方。](../media/beginners-css-add2.msft.png)
 
    如果 DevTools 窗口很宽，则“ **样式”** 选项卡位于 DOM 树的右侧：
 
-   :::image type="content" source="../media/beginners-css-add3.msft.png" alt-text="“样式”选项卡位于 DOM 树的右侧。" lightbox="../media/beginners-css-add3.msft.png":::
+   ![“样式”选项卡位于 DOM 树的右侧。](../media/beginners-css-add3.msft.png)
 
 1. 选择下面 `font-family: 'Courier New', Courier, Serif` 的空行以添加新声明：
 
-   :::image type="content" source="../media/beginners-css-add4.msft.png" alt-text="添加新声明。" lightbox="../media/beginners-css-add4.msft.png":::
+   ![添加新声明。](../media/beginners-css-add4.msft.png)
 
 1. 键入 **颜色** ，然后按 `Enter`。  在键入时，自动完成 UI 会建议选项：
 
-   :::image type="content" source="../media/beginners-css-add5.msft.png" alt-text="键入“color”。" lightbox="../media/beginners-css-add5.msft.png":::
+   ![键入“color”。](../media/beginners-css-add5.msft.png)
 
 1. 键入 **洋红色** ，然后按 `Enter`。  联系人页面上的所有文本现在是洋红色：
 
-   :::image type="content" source="../media/beginners-css-add6.msft.png" alt-text="键入“magenta”。" lightbox="../media/beginners-css-add6.msft.png":::
+   ![键入“magenta”。](../media/beginners-css-add6.msft.png)
 
 ### <a name="edit-a-declaration-in-devtools"></a>在 DevTools 中编辑声明
 
@@ -279,11 +279,11 @@ li a {
 
 1. 选择旁边 `magenta`的洋红色正方形。  弹出颜色选取器：
 
-   :::image type="content" source="../media/beginners-css-edit1.msft.png" alt-text="颜色选取器。" lightbox="../media/beginners-css-edit1.msft.png":::
+   ![颜色选取器。](../media/beginners-css-edit1.msft.png)
 
 1. 使用颜色选取器将字体文本更改为你喜欢的颜色：
 
-   :::image type="content" source="../media/beginners-css-edit2.msft.png" alt-text="使用颜色选取器将字体颜色更改为紫色。" lightbox="../media/beginners-css-edit2.msft.png":::
+   ![使用颜色选取器将字体颜色更改为紫色。](../media/beginners-css-edit2.msft.png)
 
 ### <a name="add-a-new-ruleset-in-devtools"></a>在 DevTools 中添加新规则集
 
@@ -291,11 +291,11 @@ li a {
 
 1. 选择 **新样式规则** (![新样式规则。](../media/new-style-rule-icon.msft.png)) **.cls** 旁边。  空的规则集将显示为 `a` 选择器。
 
-   :::image type="content" source="../media/beginners-css-rule1.msft.png" alt-text="添加新规则。" lightbox="../media/beginners-css-rule1.msft.png":::
+   ![添加新规则。](../media/beginners-css-rule1.msft.png)
 
 1. 将`a`替换为`a:hover`。
 
-   :::image type="content" source="../media/beginners-css-rule2.msft.png" alt-text="将“a”替换为“a：hover”。" lightbox="../media/beginners-css-rule2.msft.png":::
+   ![将“a”替换为“a：hover”。](../media/beginners-css-rule2.msft.png)
 
    `:hover` 是 **伪类**。  对可能进入特殊状态的样式元素使用伪类。  例如，仅当 `a:hover` 将鼠标悬停在元素上 `<a>` 时，样式才会生效。
 
@@ -303,15 +303,15 @@ li a {
 
 1. 为声明名称键入 **背景色** 并按下 `Enter`。
 
-   :::image type="content" source="../media/beginners-css-rule3.msft.png" alt-text="键入“background-color”。" lightbox="../media/beginners-css-rule3.msft.png":::
+   ![键入“background-color”。](../media/beginners-css-rule3.msft.png)
 
 1. 为声明值键入**绿色**并按。`Enter`
 
-   :::image type="content" source="../media/beginners-css-rule4.msft.png" alt-text="键入“green”。" lightbox="../media/beginners-css-rule4.msft.png":::
+   ![键入“green”。](../media/beginners-css-rule4.msft.png)
 
 1. 将鼠标悬停在"主页 **"链接** 上。  链接的背景变为绿色。
 
-   :::image type="content" source="../media/beginners-css-rule5.msft.png" alt-text="将鼠标悬停在“主页”链接上以显示其绿色背景。" lightbox="../media/beginners-css-rule5.msft.png":::
+   ![将鼠标悬停在“主页”链接上以显示其绿色背景。](../media/beginners-css-rule5.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -331,27 +331,27 @@ li a {
 
 1. 首先，刷新实时选项卡以删除你在 DevTools 中所做的更改。
 
-   :::image type="content" source="../media/beginners-css-external1.msft.png" alt-text=" 刷新页面后，DevTools 中所做的更改将不复存在。" lightbox="../media/beginners-css-external1.msft.png":::
+   ![ 刷新页面后，DevTools 中所做的更改将不复存在。](../media/beginners-css-external1.msft.png)
 
 1. 返回到编辑器选项卡 **并** 打开 `contact.html`。
 
-   :::image type="content" source="../media/beginners-css-external2.msft.png" alt-text="contact.html。" lightbox="../media/beginners-css-external2.msft.png":::
+   ![contact.html。](../media/beginners-css-external2.msft.png)
 
 1. 删除`<style>`和`</style>` 之间的所有内容，包括`<style>`和`</style>`。
 
-   :::image type="content" source="../media/beginners-css-external3.msft.png" alt-text="已删除样式标记。" lightbox="../media/beginners-css-external3.msft.png":::
+   ![已删除样式标记。](../media/beginners-css-external3.msft.png)
 
 1. 打开 `index.html` 并从 标记 `style="background-color: aliceblue;"` 中删除 `<nav>`。  现在，您已删除之前添加到网站的所有 CSS。
 
-   :::image type="content" source="../media/beginners-css-external4.msft.png" alt-text="内联样式已从导航元素中删除。" lightbox="../media/beginners-css-external4.msft.png":::
+   ![内联样式已从导航元素中删除。](../media/beginners-css-external4.msft.png)
 
 1. 选择 **“新建文件**”。
 
-   :::image type="content" source="../media/beginners-css-external5.msft.png" alt-text="“新建文件”对话框。" lightbox="../media/beginners-css-external5.msft.png":::
+   ![“新建文件”对话框。](../media/beginners-css-external5.msft.png)
 
 1. 替换 `cool-file.js` 为 `style.css` 并选择 **“添加文件**”。
 
-   :::image type="content" source="../media/beginners-css-external6.msft.png" alt-text="类型 style.css。" lightbox="../media/beginners-css-external6.msft.png":::
+   ![类型 style.css。](../media/beginners-css-external6.msft.png)
 
 1. 将以下代码添加到 `style.css` 文件：
 
@@ -367,7 +367,7 @@ li a {
    }
    ```
 
-   :::image type="content" source="../media/beginners-css-external7.msft.png" alt-text="将代码添加到 style.css。" lightbox="../media/beginners-css-external7.msft.png":::
+   ![将代码添加到 style.css。](../media/beginners-css-external7.msft.png)
 
    确保已创建外部样式表。 HTML 不知道它存在。
 
@@ -383,19 +383,19 @@ li a {
    </head>
    ```
 
-   :::image type="content" source="../media/beginners-css-external8.msft.png" alt-text="指向 style.css 的链接。" lightbox="../media/beginners-css-external8.msft.png":::
+   ![指向 style.css 的链接。](../media/beginners-css-external8.msft.png)
 
 1. 打开 `contact.html` 文件，并添加链接。
 
-   :::image type="content" source="../media/beginners-css-external9.msft.png" alt-text="链接到 contact.html 中的 style.css。" lightbox="../media/beginners-css-external9.msft.png":::
+   ![链接到 contact.html 中的 style.css。](../media/beginners-css-external9.msft.png)
 
 1. 导航到实时 **选项卡**。 主页上一节和蓝色导航部分现在具有相同的字体。
 
-   :::image type="content" source="../media/beginners-css-external10.msft.png" alt-text="主页。" lightbox="../media/beginners-css-external10.msft.png":::
+   ![主页。](../media/beginners-css-external10.msft.png)
 
 1. 选择 **“联系人** ”链接以导航到联系人页面。  联系人页面的格式与主页的格式相同。
 
-   :::image type="content" source="../media/beginners-css-external11.msft.png" alt-text="联系人页面。" lightbox="../media/beginners-css-external11.msft.png":::
+   ![联系人页面。](../media/beginners-css-external11.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -413,15 +413,15 @@ li a {
 
 1. 打开编辑选项卡，然后将代码粘贴到 `contact.html` 中。
 
-   :::image type="content" source="../media/beginners-css-framework1.msft.png" alt-text="链接到contact.html中的框架。" lightbox="../media/beginners-css-framework1.msft.png":::
+   ![链接到contact.html中的框架。](../media/beginners-css-framework1.msft.png)
 
 1. 打开 `index.html` 文件，并添加代码。
 
-   :::image type="content" source="../media/beginners-css-framework2.msft.png" alt-text="链接到index.html中的框架。" lightbox="../media/beginners-css-framework2.msft.png":::
+   ![链接到index.html中的框架。](../media/beginners-css-framework2.msft.png)
 
 1. 返回到实时选项卡以查看更改。  虽然 `<nav>` 元素的背景色和 `<li>` 和 `<a>` 的字体相同，但其他元素的字体已更改。
 
-   :::image type="content" source="../media/beginners-css-framework3.msft.png" alt-text="主页上的某些字体因框架而更改。" lightbox="../media/beginners-css-framework3.msft.png":::
+   ![主页上的某些字体因框架而更改。](../media/beginners-css-framework3.msft.png)
 
 ### <a name="use-a-class"></a>使用类
 
@@ -435,15 +435,15 @@ li a {
 
 1. 在 `index.html`其中，将前面的代码添加到 `<header>` 标记。
 
-   :::image type="content" source="../media/beginners-css-jumbotron1.msft.png" alt-text="在index.html中添加类。" lightbox="../media/beginners-css-jumbotron1.msft.png":::
+   ![在index.html中添加类。](../media/beginners-css-jumbotron1.msft.png)
 
 1. 在 `contact.html`其中，将前面的代码添加到 `<header>` 标记。
 
-   :::image type="content" source="../media/beginners-css-jumbotron2.msft.png" alt-text="在contact.html中添加类。" lightbox="../media/beginners-css-jumbotron2.msft.png":::
+   ![在contact.html中添加类。](../media/beginners-css-jumbotron2.msft.png)
 
 1. 在实时选项卡中查看更改。 页眉周围有一个大的灰色框。
 
-   :::image type="content" source="../media/beginners-css-jumbotron3.msft.png" alt-text="标头周围现在有一个大的灰色框。" lightbox="../media/beginners-css-jumbotron3.msft.png":::
+   ![标头周围现在有一个大的灰色框。](../media/beginners-css-jumbotron3.msft.png)
 
 ### <a name="understand-classes"></a>了解类
 
@@ -483,19 +483,19 @@ li a {
 
 1. 添加到 `class="container-fluid"` 标记 `<body>`。
 
-   :::image type="content" source="../media/beginners-css-align1.msft.png" alt-text="添加容器流体类。" lightbox="../media/beginners-css-align1.msft.png":::
+   ![添加容器流体类。](../media/beginners-css-align1.msft.png)
 
 1. 在 `<nav>` 中 `<main>` 包 `<div class="row">`元素。  请确保放置 `</div>` 后 `</main>` 正确关闭新标记。
 
-   :::image type="content" source="../media/beginners-css-align2.msft.png" alt-text="添加行。" lightbox="../media/beginners-css-align2.msft.png":::
+   ![添加行。](../media/beginners-css-align2.msft.png)
 
 1. 向 `class="col-3"` 标记添加 `<nav>` ， `class="col-9"` 添加到 `<main>` 标记。
 
-   :::image type="content" source="../media/beginners-css-align3.msft.png" alt-text="添加 col-3 和 col-9 类。" lightbox="../media/beginners-css-align3.msft.png":::
+   ![添加 col-3 和 col-9 类。](../media/beginners-css-align3.msft.png)
 
 1. 在实时选项卡中查看更改。
 
-   :::image type="content" source="../media/beginners-css-align4.msft.png" alt-text="导航内容现在位于主内容的左侧。" lightbox="../media/beginners-css-align4.msft.png":::
+   ![导航内容现在位于主内容的左侧。](../media/beginners-css-align4.msft.png)
 
 
 <!-- ====================================================================== -->

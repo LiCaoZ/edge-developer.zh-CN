@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: be81a38a926f862212601556aa192151e5f782ce
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: ebcdbae491e8f995e5c226af55e55eec714fa0ce
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12513948"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553146"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques
@@ -41,19 +41,19 @@ ms.locfileid: "12513948"
 
 1. 在 **DOM 树**中，选择要检查的文本元素。
 
-   :::image type="content" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="检查 DOM 树中的段落。" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
+   ![检查 DOM 树中的段落。](../media/accessibility-elements-paragraph-highlight.msft.png)
 
 1. 在“ **样式”** 选项卡上，找到应用于元素的 **颜色** 属性，然后选择颜色属性旁边的 **颜色** 方块。
 
-   :::image type="content" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="元素的“color”属性。" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
+   ![元素的“color”属性。](../media/accessibility-elements-styles-paragraph-highlight-color.msft.png)
 
 1. 检查颜色选取器的 **对比度** 部分。  一个复选标记表示元素符合 [最低建议](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)。  两个复选标记表示它符合 [增强的建议](https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced)。
 
-   :::image type="content" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="颜色选取器的“对比度”部分显示两个复选标记和一个值 13.97。" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
+   ![颜色选取器的“对比度”部分显示两个复选标记和一个值 13.97。](../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png)
 
 1. 有关详细信息，请选择 **“对比度”** 部分进行扩展。  在颜色选取器顶部的视觉选取器中，将显示两行，在视觉对象选取器上运行，以及当前颜色的圆圈。  如果当前颜色符合建议，则该行的同一侧任何内容也符合建议。  如果当前颜色不符合建议，则同一侧的任何内容也不满足建议。
 
-   :::image type="content" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="视觉对象选取器中的“对比度”行。" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
+   ![视觉对象选取器中的“对比度”行。](../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png)
 
 1. 若要尝试不同的颜色，请单击视觉对象选取器，或选择颜色选取器底部的颜色监视器。
 
@@ -61,7 +61,7 @@ ms.locfileid: "12513948"
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-* 使用 _CSS 功能参考_中的[颜色选取器更改颜色](../css/reference.md#change-colors-with-the-color-picker)
+* 使用 _CSS 功能参考_中的[颜色选择器更改颜色](../css/reference.md#change-colors-with-the-color-picker)
 
 
 <!-- ====================================================================== -->

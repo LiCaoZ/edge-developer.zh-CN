@@ -1,17 +1,17 @@
 ---
 title: 控制台工具实用功能和选择器
-description: 在开发人员工具的控制台工具中提供的便利实用程序函数、命令和 DOM Microsoft Edge，但不能通过 JavaScript 源文件使用。
+description: 方便实用工具函数、命令和 DOM 选择器，这些函数和 DOM 选择器在 Microsoft Edge DevTools 的控制台工具中可用，但不能通过 JavaScript 源文件提供。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 1a23d1e4909c1099e3e7bfe3b7255f2d2dbf2adf
-ms.sourcegitcommit: e286d79fbd94666df7596bd2633fb60fe08e86fb
+ms.openlocfilehash: 34eabc181b93875c9469291e26544d158d4074b9
+ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "12431814"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "12553510"
 ---
 <!-- Copyright Kayce Basques
 
@@ -31,41 +31,41 @@ ms.locfileid: "12431814"
 # Console Utilities API reference
 -->
 
-控制台实用程序 API 包含一组用于执行常见任务的便利函数，例如：
+控制台实用工具 API 包含用于执行常见任务的一系列便利函数，例如：
 *  选择并检查 DOM 元素。
 *  以可读格式显示数据。
 *  停止并启动探查器。
 *  监视 DOM 事件。
 
-这些命令仅能直接输入到 DevTools **控制台中**;无法从脚本调用这些命令。
+这些命令仅通过将它们直接输入到 DevTools **控制台**来工作;无法从脚本调用这些命令。
 
 
 <!-- ====================================================================== -->
 ## <a name="summary"></a>摘要
 
-| 函数 | 说明 |
+| 函数 | 描述 |
 |---|---|
-| [$_](#recently-evaluated-expression) | 返回最近计算表达式的值。 |
-| [$0 - $4](#recently-selected-element-or-javascript-object) | 返回最近选定的元素或 JavaScript 对象。 |
-| [$ (选择器) ](#query-selector) | 查询选择器;返回对具有指定 CSS 选择器的第一个 DOM 元素的引用，如 `document.querySelector()`。 |
-| [$$ (选择器 [startNode]) ](#query-selector-all) | 查询选择器全部;返回匹配指定 CSS 选择器的元素数组，如 `document.querySelectorAll()`。 |
-| [$x (路径 [startNode]) ](#xpath) | 返回一个匹配指定 XPath 表达式的 DOM 元素数组。 |
+| [$_](#recently-evaluated-expression) | 返回最近评估的表达式的值。 |
+| [$0 - $4](#recently-selected-element-or-javascript-object) | 返回最近选择的元素或 JavaScript 对象。 |
+| [$ (选择器) ](#query-selector) | 查询选择器;返回对具有指定 CSS 选择器的第一个 DOM 元素的引用，例如 `document.querySelector()`。 |
+| [$$ (选择器，[startNode]) ](#query-selector-all) | 全部查询选择器;返回与指定的 CSS 选择器匹配的元素数组，例如 `document.querySelectorAll()`。 |
+| [$x (路径[startNode]) ](#xpath) | 返回与指定的 XPath 表达式匹配的 DOM 元素数组。 |
 | [clear () ](#clear) | 清除其历史记录的控制台。 |
 | [复制 (对象) ](#copy) | 将指定对象的字符串表示形式复制到剪贴板。 |
-| [调试 (函数) ](#debug) | 调用指定的函数时，将调用调试程序，并中断"源"面板上的函数。 |
-| [dir (对象) ](#dir) | 显示指定对象的所有属性的对象样式列表，如 `console.dir()`。 |
-| [dirxml (对象) ](#dirxml) | 打印指定对象的 XML 表示形式，如 在 **元素** 工具中显示 `console.dirxml()`。 |
-| [检查 (对象/函数) ](#inspect) | 在"元素"工具中打开并选择指定的 DOM **** 元素，或在"内存"工具中打开并选择指定的 JavaScript **堆**对象。 |
+| [调试 (函数) ](#debug) | 调用指定函数时，调用调试器并在“源”面板上的函数内中断。 |
+| [dir (对象) ](#dir) | 显示指定对象的所有属性的对象样式列表，例如 `console.dir()`。 |
+| [dirxml (对象) ](#dirxml) | 打印指定对象的 XML 表示形式，如 **Elements** 工具中所示。`console.dirxml()` |
+| [检查 (对象/函数) ](#inspect) | 打开并选择 **Elements** 工具中的指定 DOM 元素或 **内存** 工具中的指定 JavaScript 堆对象。 |
 | [getEventListeners (对象) ](#geteventlisteners) | 返回在指定对象上注册的事件侦听器。 |
 | [键 (对象) ](#keys) | 返回一个数组，其中包含属于指定对象的属性的名称。 |
-| [monitor (function) ](#monitor) | 向控制台记录一条消息，指示函数名称，以及作为请求的一部分传递给函数的参数。 |
-| [monitorEvents (对象[， events]) ](#monitorevents) | 当指定对象上发生指定事件之一时，该事件对象将记录到控制台。 |
-| [配置文件 ([name]) ](#profile) | 使用可选名称启动 JavaScript CPU 分析会话。 |
-| [profileEnd ([name]) ](#profileend) | 完成 JavaScript CPU 分析会话，并显示内存工具 **中** 的结果。 |
+| [监视 (函数) ](#monitor) | 将消息记录到控制台，该消息指示函数名称，以及作为请求的一部分传递给函数的参数。 |
+| [monitorEvents (对象[， 事件]) ](#monitorevents) | 当指定对象上发生指定事件之一时，事件对象将记录到控制台。 |
+| [配置文件 ([名称]) ](#profile) | 使用可选名称启动 JavaScript CPU 分析会话。 |
+| [profileEnd ([name]) ](#profileend) | 完成 JavaScript CPU 分析会话，并在 **内存** 工具中显示结果。 |
 | [queryObjects (构造函数) ](#queryobjects) | 返回由指定构造函数创建的对象的数组。 |
-| [table (data[， columns]) ](#table) | 记录指定数据对象的对象数据（格式化为带列标题的表）。 |
-| [undebug (function) ](#undebug) | 停止对指定函数的调试，以便请求该函数时，不再调用调试程序。 |
-| [unmonitor (function) ](#unmonitor) | 停止对指定函数的监视。 |
+| [表 (数据[，列]) ](#table) | 为指定的数据对象记录对象数据（格式化为带有列标题的表）。 |
+| [取消调试 (函数) ](#undebug) | 停止指定函数的调试，以便在请求函数时不再调用调试器。 |
+| [unmonitor (函数) ](#unmonitor) | 停止监视指定的函数。 |
 | [unmonitorEvents (object[， events]) ](#unmonitorevents) | 停止监视指定对象和事件的事件。 |
 | [值 (对象) ](#values) | 返回一个数组，其中包含属于指定对象的所有属性的值。 |
 
@@ -74,12 +74,12 @@ ms.locfileid: "12431814"
 ---
 
 <!-- ====================================================================== -->
-## <a name="recently-evaluated-expression"></a>最近计算表达式
+## <a name="recently-evaluated-expression"></a>最近评估的表达式
 <!-- planned new heading to troubleshoot: -->
 <!-- ## $_ (Recent expression value) -->
 
 <!-- summary to bubble up: -->
-返回最近计算表达式的值。
+返回最近评估的表达式的值。
 
 ### <a name="syntax"></a>语法
 
@@ -89,13 +89,13 @@ $_
 
 ### <a name="example"></a>示例
 
-在下图中，计算一个 () `2+2` 表达式。  然后 `$_` 计算属性，其中包含相同的值：
+在下图中，计算 () `2+2` 的简单表达式。  然后计算该 `$_` 属性，其中包含相同的值：
 
-:::image type="content" source="../media/console-arithmatic.msft.png" alt-text="$_ 是最近评估的表达式。" lightbox="../media/console-arithmatic.msft.png":::
+![$_ 是最近评估的表达式。](../media/console-arithmatic.msft.png)
 
-在下图中，计算表达式最初包含一个名称数组。  计算以`$_.length`查找数组的长度`$_`，存储在 中的值现在将成为最新的计算表达式： `4`
+在下图中，评估的表达式最初包含一个名称数组。  评估`$_.length`以查找数组的长度，现在存储在其中`$_`的值将成为最新的评估表达式： `4`
 
-:::image type="content" source="../media/console-array-length.msft.png" alt-text="$_ 在评估新命令时发生更改。" lightbox="../media/console-array-length.msft.png":::
+![$_ 在评估新命令时更改。](../media/console-array-length.msft.png)
 
 <br/><br/>
 
@@ -107,10 +107,10 @@ $_
 <!-- ## $0 - $4 -->
 
 <!-- summary to bubble up: -->
-返回最近选定的元素或 JavaScript 对象。
+返回最近选择的元素或 JavaScript 对象。
 
 <!-- add'l info -->
-`$0` 返回最近选择的元素或 JavaScript 对象 `$1` ，返回第二个最近选择的元素，等等。  `$1`、 `$0`、 `$2`和 `$3``$4` 命令用作对在 **Elements** 工具中检查的最后五个 DOM 元素或内存工具中选定的最后五个 JavaScript 堆对象**的历史引用。**
+`$0` 返回最近选择的元素或 JavaScript 对象， `$1` 返回第二个最近选择的元素，等等。  这些`$0`命令`$1``$2`、命令`$3`和`$4`命令充当对**元素**工具中检查的最后五个 DOM 元素的历史引用，或**内存**工具中选择的最后五个 JavaScript 堆对象的历史引用。
 
 ### <a name="syntax"></a>语法
 
@@ -120,13 +120,13 @@ $0
 
 ### <a name="example"></a>示例
 
-在下图中，在 `img` "元素"工具中 **选择了元素** 。  在 **控制台** 箱中 `$0` ，已进行评估并显示相同的元素：
+在下图中，元素工具中选择了**一**个`img`元素。  在 **控制台** 抽屉中， `$0` 已评估并显示相同的元素：
 
-:::image type="content" source="../media/console-image-highlighted-$0.msft.png" alt-text="$0 命令。" lightbox="../media/console-image-highlighted-$0.msft.png":::
+![$0 命令。](../media/console-image-highlighted-$0.msft.png)
 
-下图显示了在同一网页中选定的不同元素。  现在 `$0` 引用新选择的元素，而 `$1` 返回之前选择的元素：
+下图显示了在同一网页中选择的不同元素。  现在 `$0` 引用新选择的元素，同时 `$1` 返回以前选定的元素：
 
-:::image type="content" source="../media/console-image-highlighted-$1.msft.png" alt-text="$1 命令。" lightbox="../media/console-image-highlighted-$1.msft.png":::
+![$1 命令。](../media/console-image-highlighted-$1.msft.png)
 
 <br/><br/>
 
@@ -138,10 +138,10 @@ $0
 <!-- ## $(selector) -->
 
 <!-- summary to bubble up: -->
-查询选择器;返回对具有指定 CSS 选择器的第一个 DOM 元素的引用，如 `document.querySelector()`。
+查询选择器;返回对具有指定 CSS 选择器的第一个 DOM 元素的引用，例如 `document.querySelector()`。
 
 <!-- add'l info -->
-此函数是 [document.querySelector () 函数的 ](https://developer.mozilla.org/docs/Web/API/Document/querySelector) 别名。
+此函数是 [document.querySelector () ](https://developer.mozilla.org/docs/Web/API/Document/querySelector) 函数的别名。
 
 ### <a name="syntax"></a>语法
 
@@ -153,13 +153,13 @@ $(selector, [startNode])
 
 在下图中， `$('img')` 返回对网页中第一 `<img>` 个元素的引用：
 
-:::image type="content" source="../media/console-element-selector-image.msft.png" alt-text="$ ( img') 返回对网页中第一<img> 元素的引用。" lightbox="../media/console-element-selector-image.msft.png":::
+![$ ('img') 返回对网页中第一个<img> 元素的引用。](../media/console-element-selector-image.msft.png)
 
-右键单击返回的结果，然后选择"元素面板 **中的** 展示"以在 DOM 中查找它，或滚动到 **视图** 以显示在页面上。
+右键单击返回的结果，然后 **选择“元素面板中的显示”** 以在 DOM 中找到它，或 **滚动到视图以** 在页面上显示它。
 
 ### <a name="example"></a>示例
 
-以下示例返回对当前选定元素的引用并显示其 `src` 属性：
+以下示例返回对当前所选元素的引用，并显示其 `src` 属性：
 
 ```javascript
 $('img').src
@@ -167,9 +167,9 @@ $('img').src
 
 结果：
 
-:::image type="content" source="../media/console-element-selector-image-source.msft.png" alt-text="$ ( img') .src 的结果。" lightbox="../media/console-element-selector-image-source.msft.png":::
+![$ ('img') .src 的结果。](../media/console-element-selector-image-source.msft.png)
 
-此函数还支持第二个参数 `startNode`，用于指定要搜索元素的元素或节点。  参数的默认值为 `document`。
+此函数还支持第二个参数， `startNode`该参数指定要从中搜索元素的元素或节点。  参数的默认值为 `document`.
 
 ### <a name="example"></a>示例
 
@@ -177,24 +177,24 @@ $('img').src
 $('img', document.querySelector('title--image')).src
 ```
 
-Result：找到 `img` 元素后的第一 `title--image` 个元素， `src` 并 `img` 返回 元素的 属性：
+结果：找到元素后`title--image`的第一个`img`元素，并`src`返回该元素的`img`属性：
 
-:::image type="content" source="../media/console-element-selector-image-filter-source.msft.png" alt-text="$ ('img'， document.querySelector ('title--image') ) .src 的结果。" lightbox="../media/console-element-selector-image-filter-source.msft.png":::
+![$ ('img'， document.querySelector ('title--image') ) .src 的结果。](../media/console-element-selector-image-filter-source.msft.png)
 
 > [!NOTE]
-> 如果使用的库（如 jQuery `$`）使用 ， `$` 则功能将被覆盖，并且对应于该库中的实现。
+> 如果使用的是 jQuery 等库， `$`则会覆盖该功能，并与 `$` 该库中的实现相对应。
 
 <br/><br/>
 
 ---
 
 <!-- ====================================================================== -->
-## <a name="query-selector-all"></a>查询选择器全部
+## <a name="query-selector-all"></a>全部查询选择器
 <!-- planned new heading to troubleshoot: -->
 <!-- ## \$\$(selector, \[startNode\]) -->
 
 <!-- summary to bubble up: -->
-查询选择器全部;返回匹配指定 CSS 选择器的元素数组，如 `document.querySelectorAll()`。
+全部查询选择器;返回与指定的 CSS 选择器匹配的元素数组，例如 `document.querySelectorAll()`。
 
 <!-- add'l info -->
 此函数等效于 [document.querySelectorAll () ](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll)。
@@ -207,7 +207,7 @@ $$(selector, [startNode])
 
 ### <a name="example"></a>示例
 
-在下面的示例中，创建 `$$()` 当前 `<img>` 网页中所有元素的数组， `src` 并显示每个元素的 属性值：
+在以下示例中， `$$()` 创建当前网页中所有 `<img>` 元素的数组，并显示每个元素的 `src` 属性值：
 
 ```javascript
 var images = $$('img');
@@ -218,13 +218,13 @@ for (each in images) {
 
 结果：
 
-:::image type="content" source="../media/console-element-selector-image-all.msft.png" alt-text="使用 $$ () 选择网页中所有图像并显示源。" lightbox="../media/console-element-selector-image-all.msft.png":::
+![使用 $$ () 选择网页中的所有图像并显示源。](../media/console-element-selector-image-all.msft.png)
 
-此查询选择器函数还支持第二 `startNode`个参数 ，用于指定要搜索的元素或节点。  参数的默认值为 `document`。
+此查询选择器函数还支持第二个参数， `startNode`该参数指定要从中搜索元素的元素或节点。  参数的默认值为 `document`.
 
 ### <a name="example"></a>示例
 
-以下示例的以下`$$()``<img>`修改版本用于创建一个数组，该数组包含当前网页中选定节点之后出现的所有元素：
+以下已修改的上一示例版本用于 `$$()` 创建选定节点后当前网页中显示的所有 `<img>` 元素的数组：
 
 ```javascript
 var images = $$('img', document.querySelector(`title--image`));
@@ -233,24 +233,24 @@ for (each in images) {
 }
 ```
 
-结果如下。  `$$()` 选择网页中指定元素之后 `<div>` 显示的所有图像，并显示源：
+结果如下。  `$$()` 选择网页中指定 `<div>` 元素后显示的所有图像，并显示源：
 
-:::image type="content" source="../media/console-element-selector-image-filter-all.msft.png" alt-text="使用 $$ () 选择在网页中的 <div> 元素后显示的所有图像并显示源。" lightbox="../media/console-element-selector-image-filter-all.msft.png":::
+![使用 $$ () 选择网页中指定的<div> 元素后显示的所有图像，并显示源。](../media/console-element-selector-image-filter-all.msft.png)
 
 > [!NOTE]
-> 在 `Shift`+`Enter` 控制台 **中按** 以启动新行，而不运行脚本。
+> 在**控制台**中按`Shift`+`Enter`下以启动新行，而无需运行脚本。
 
 <br/><br/>
 
 ---
 
 <!-- ====================================================================== -->
-## <a name="xpath"></a>XPath
+## <a name="xpath"></a>Xpath
 <!-- planned new heading to troubleshoot: -->
 <!-- ## \$x(path, \[startNode\]) -->
 
 <!-- summary to bubble up: -->
-返回一个匹配指定 XPath 表达式的 DOM 元素数组。
+返回与指定的 XPath 表达式匹配的 DOM 元素数组。
 
 <!-- add'l info: n/a -->
 
@@ -262,7 +262,7 @@ $x(path, [startNode])
 
 ### <a name="example"></a>示例
 
-在下面的示例中，将返回 `<p>` 网页上的所有元素：
+在以下示例中 `<p>` ，将返回网页上的所有元素：
 
 ```javascript
 $x("//p")
@@ -270,11 +270,11 @@ $x("//p")
 
 结果：
 
-:::image type="content" source="../media/console-array-xpath.msft.png" alt-text="使用 XPath 选择器。" lightbox="../media/console-array-xpath.msft.png":::
+![使用 XPath 选择器。](../media/console-array-xpath.msft.png)
 
 ### <a name="example"></a>示例
 
-在下面的示例中，将返回 `<p>` 包含元素的所有 `<a>` 元素：
+在以下示例中 `<p>` ，返回包含 `<a>` 元素的所有元素：
 
 ```javascript
 $x("//p[a]")
@@ -282,18 +282,18 @@ $x("//p[a]")
 
 结果：
 
-:::image type="content" source="../media/console-array-xpath-sub-element.msft.png" alt-text="使用更复杂的 XPath 选择器。" lightbox="../media/console-array-xpath-sub-element.msft.png":::
+![使用更复杂的 XPath 选择器。](../media/console-array-xpath-sub-element.msft.png)
 
-与其他选择器命令类似 `$x(path)` ，具有 `startNode`可选的第二个参数 ，用于指定要搜索的元素或节点：
+与其他选择器命令类似， `$x(path)` 具有可选的第二个参数， `startNode`该参数指定要从中搜索元素的元素或节点：
 
-:::image type="content" source="../media/console-array-xpath-startnode.msft.png" alt-text="将 XPath 选择器与 startNode 一同使用。" lightbox="../media/console-array-xpath-startnode.msft.png":::
+![将 XPath 选择器与 startNode 配合使用。](../media/console-array-xpath-startnode.msft.png)
 
 <br/><br/>
 
 ---
 
 <!-- ====================================================================== -->
-## <a name="clear"></a>clear
+## <a name="clear"></a>清楚
 <!-- planned new heading to troubleshoot: -->
 <!-- ## clear() -->
 
@@ -348,10 +348,10 @@ copy($0)
 <!-- ## debug(function) -->
 
 <!-- summary to bubble up: -->
-调用指定的函数时，将调用调试程序，并中断"源"面板上的函数。
+调用指定函数时，调用调试器并在“源”面板上的函数内中断。
 
 <!-- add'l info -->
-暂停调试程序后，你可以逐步执行代码并调试它。
+在调试器暂停后，可以逐步执行代码并对其进行调试。
 
 ### <a name="syntax"></a>语法
 
@@ -360,7 +360,7 @@ debug(function)
 ```
 
 >[!NOTE]
-> 错误[Chromium #1050237](https://crbug.com/1050237)跟踪函数的 `debug()` Bug。  如果遇到问题，请尝试改为 [使用断](../javascript/breakpoints.md) 点。
+> [Chromium问题 #1050237](https://crbug.com/1050237)正在跟踪函数的 `debug()` bug。  如果遇到此问题，请尝试改用 [断点](../javascript/breakpoints.md) 。
 
 ### <a name="example"></a>示例
 
@@ -370,11 +370,11 @@ debug("debug");
 
 结果：
 
-:::image type="content" source="../media/console-debug-text.msft.png" alt-text="使用 debug () 在函数内中断。" lightbox="../media/console-debug-text.msft.png":::
+![使用调试 () 中断函数内部。](../media/console-debug-text.msft.png)
 
-用于 `undebug(function)` 停止在 函数上中断，或使用 UI 关闭所有断点。
+用于 `undebug(function)` 停止中断函数，或使用 UI 关闭所有断点。
 
-有关断点详细信息，请参阅 [使用断点暂停代码](../javascript/breakpoints.md)。
+有关断点的详细信息，请参阅 [使用断点暂停代码](../javascript/breakpoints.md)。
 
 <br/><br/>
 
@@ -385,10 +385,10 @@ debug("debug");
 <!-- ## dir(object) -->
 
 <!-- summary to bubble up: -->
-显示指定对象的所有属性的对象样式列表，如 `console.dir()`。
+显示指定对象的所有属性的对象样式列表，例如 `console.dir()`。
 
 <!-- add'l info -->
-此函数是 [console.dir () 的别名 ](https://developer.mozilla.org/docs/Web/API/Console/dir)。
+此函数是 [console.dir () 的 ](https://developer.mozilla.org/docs/Web/API/Console/dir)别名。
 
 ### <a name="syntax"></a>语法
 
@@ -396,11 +396,11 @@ debug("debug");
 dir(object)
 ```
 
-在 `document.head` 控制台 **中进行评估** ，以显示 和 标记之间的 `<head>` `</head>` HTML。
+在**控制台**中进行评估`document.head`，以在标记之间`<head>``</head>`显示 HTML。
 
 ### <a name="example"></a>示例
 
-在下面的示例中，在控制台使用 `console.dir()` 后将显示对象样式 **列表**：
+在以下示例中，在**控制台**中使用`console.dir()`后会显示对象样式列表：
 
 ```javascript
 document.head;
@@ -409,7 +409,7 @@ dir(document.head);
 
 结果：
 
-:::image type="content" source="../media/console-dir-document-head-expanded.msft.png" alt-text="使用&quot;dir () &quot;函数记录&quot;document.head&quot;。" lightbox="../media/console-dir-document-head-expanded.msft.png":::
+![使用“dir () ”函数记录“document.head”。](../media/console-dir-document-head-expanded.msft.png)
 
 有关详细信息，请参阅控制台 API 中的 [console.dir () ](api.md#dir) 。
 
@@ -422,7 +422,7 @@ dir(document.head);
 <!-- ## dirxml(object) -->
 
 <!-- summary to bubble up: -->
-打印指定对象的 XML 表示形式，如 在 **元素** 工具中显示 `console.dirxml()`。
+打印指定对象的 XML 表示形式，如 **Elements** 工具中所示。`console.dirxml()`
 
 <!-- add'l info -->
 此函数等效于 [console.dirxml () ](https://developer.mozilla.org/docs/Web/API/Console/dirxml)。
@@ -438,15 +438,15 @@ dirxml(object)
 ---
 
 <!-- ====================================================================== -->
-## <a name="inspect"></a>inspect
+## <a name="inspect"></a>检查
 <!-- ## inspect(object/function) -->
 
 <!-- summary to bubble up: -->
-在"元素"工具中打开并选择指定的 DOM **** 元素，或在"内存"工具中打开并选择指定的 JavaScript **堆**对象。
+打开并选择 **Elements** 工具中的指定 DOM 元素或 **内存** 工具中的指定 JavaScript 堆对象。
 
 <!-- add'l info -->
-* 对于 DOM 元素，此函数在"元素"工具中打开 **并选择指定的** DOM 元素。
-* 对于 JavaScript 堆对象，此函数在 Memory 工具中打开指定的 JavaScript **堆** 对象。
+* 对于 DOM 元素，此函数将打开并选择 **Elements** 工具中的指定 DOM 元素。
+* 对于 JavaScript 堆对象，此函数将在 **内存** 工具中打开指定的 JavaScript 堆对象。
 
 ### <a name="syntax"></a>语法
 
@@ -456,7 +456,7 @@ inspect(object/function)
 
 ### <a name="example"></a>示例
 
-在下面的示例中，将在 `document.body` "元素"工具 **中** 打开：
+在以下示例中，`document.body`**在 Elements** 工具中打开：
 
 ```javascript
 inspect(document.body);
@@ -464,9 +464,9 @@ inspect(document.body);
 
 结果：
 
-:::image type="content" source="../media/console-inspect-document-body.msft.png" alt-text="使用 inspect () 检查元素。" lightbox="../media/console-inspect-document-body.msft.png":::
+![使用 inspect () 检查元素。](../media/console-inspect-document-body.msft.png)
 
-传递要检查的函数时，该函数将在 **"** 源"工具中打开网页供你检查。
+传递要检查的函数时，函数将在 **“源** ”工具中打开网页供你检查。
 
 <br/><br/>
 
@@ -480,7 +480,7 @@ inspect(document.body);
 返回在指定对象上注册的事件侦听器。
 
 <!-- add'l info -->
-返回值是包含每个已注册事件类型（如 或) ） (`click` 数组 `keydown` 的对象。  每个数组的成员是描述为每种类型注册的侦听器的对象。
+返回值是一个对象，该对象包含每个已注册事件类型的数组 (，例如 `click` 或 `keydown`) 。  每个数组的成员都是描述为每种类型注册的侦听器的对象。
 
 ### <a name="syntax"></a>语法
 
@@ -490,7 +490,7 @@ getEventListeners(object)
 
 ### <a name="example"></a>示例
 
-在下面的示例中，将 `document` 列出在对象上注册的所有事件侦听器：
+在以下示例中，列出了在对象上 `document` 注册的所有事件侦听器：
 
 ```javascript
 getEventListeners(document);
@@ -498,15 +498,15 @@ getEventListeners(document);
 
 结果：
 
-:::image type="content" source="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png" alt-text="使用 getEventListeners 文档 (输出) 。" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png":::
+![使用 getEventListeners (文档) 的输出。](../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png)
 
-如果指定对象上注册了多个侦听器，则数组将包含每个侦听器的成员。  在下图中，在 事件的 `document` 元素上注册了两个事件 `click` 侦听器：
+如果在指定对象上注册了多个侦听器，则该数组包含每个侦听器的成员。  在下图中，事件的元素`click`上注册了`document`两个事件侦听器：
 
-:::image type="content" source="../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png" alt-text="在&quot;document&quot;元素上为&quot;click&quot;事件注册多个事件侦听器。" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png":::
+![在“click”事件的“document”元素上注册了多个事件侦听器。](../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png)
 
-可以进一步展开以下每个对象来浏览其属性。  下面是侦听器对象的扩展视图：
+可以进一步扩大以下每个对象，以浏览其属性。  下面是侦听器对象的展开视图：
 
-:::image type="content" source="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png" alt-text="侦听器对象的扩展视图。" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png":::
+![侦听器对象的展开视图。](../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png)
 
 <br/><br/>
 
@@ -536,7 +536,7 @@ keys(object)
 var player1 = {"name": "Ted", "level": 42}
 ```
 
-在下面的代码中，`player1`为了简单起见， (在键入和在控制台) 全局`keys(player1)``values(player1)`命名空间中定义结果：
+在下面的代码中，结果假定 `player1` 已在全局命名空间 (中定义，以便在键入 `keys(player1)` 和 `values(player1)` 在控制台中进行简单) ：
 
 ```javascript
 keys(player1)
@@ -546,7 +546,7 @@ values(player1)
 
 结果：
 
-:::image type="content" source="../media/console-keys-values.msft.png" alt-text="键 () 和值 () 命令。" lightbox="../media/console-keys-values.msft.png":::
+![密钥 () 和值 () 命令。](../media/console-keys-values.msft.png)
 
 <br/><br/>
 
@@ -557,7 +557,7 @@ values(player1)
 <!-- ## monitor(function) -->
 
 <!-- summary to bubble up: -->
-向控制台记录一条消息，指示函数名称，以及作为请求的一部分传递给函数的参数。
+将消息记录到控制台，该消息指示函数名称，以及作为请求的一部分传递给函数的参数。
 
 <!-- add'l info: n/a -->
 
@@ -578,7 +578,7 @@ monitor(sum);
 
 结果：
 
-:::image type="content" source="../media/console-function-monitor-sum.msft.png" alt-text="监视器 () 函数的结果。" lightbox="../media/console-function-monitor-sum.msft.png":::
+![监视器 () 函数的结果。](../media/console-function-monitor-sum.msft.png)
 
 若要结束监视，请使用 `unmonitor(function)`。
 
@@ -591,10 +591,10 @@ monitor(sum);
 <!-- ## monitorEvents(object\[, events\]) -->
 
 <!-- summary to bubble up: -->
-当指定对象上发生指定事件之一时，该事件对象将记录到控制台。
+当指定对象上发生指定事件之一时，事件对象将记录到控制台。
 
 <!-- add'l info -->
-可以指定要监视的单个事件、事件数组或映射到预定义的事件集合中的一个泛型事件类型。
+可以指定要监视的单个事件、事件数组或映射到预定义事件集合的泛型事件类型之一。
 
 ### <a name="syntax"></a>语法
 
@@ -604,7 +604,7 @@ monitorEvents(object[, events])
 
 ### <a name="example"></a>示例
 
-以下代码监视 window 对象上的所有调整大小事件：
+以下代码监视窗口对象上的所有调整大小的事件：
 
 ```javascript
 monitorEvents(window, "resize");
@@ -612,11 +612,11 @@ monitorEvents(window, "resize");
 
 结果：
 
-:::image type="content" source="../media/console-monitor-events-resize-window.msft.png" alt-text="监视窗口调整大小事件。" lightbox="../media/console-monitor-events-resize-window.msft.png":::
+![监视窗口重设事件的大小。](../media/console-monitor-events-resize-window.msft.png)
 
 ### <a name="example"></a>示例
 
-以下代码定义一个数组，用于`resize``scroll`监视窗口对象上的 和 事件：
+以下代码定义一个数组，用于监视`resize``scroll`窗口对象上的事件：
 
 ```javascript
 monitorEvents(window, ["resize", "scroll"]);
@@ -624,18 +624,18 @@ monitorEvents(window, ["resize", "scroll"]);
 
 ### <a name="specifying-an-event-type"></a>指定事件类型
 
-还可以指定一种可用的事件类型，即映射到预定义的事件集的字符串。  下表显示了可用的事件类型和关联的事件映射：
+还可以指定可用的事件类型之一，即映射到预定义事件集的字符串。  下表显示了可用的事件类型和关联的事件映射：
 
-| 事件类型 | 相应的映射事件 |
+| 事件类型 | 对应的映射事件 |
 |:--- |:--- |
-| `mouse` | "click"、"dblclick"、"mousedown"、"mousemove"、"mouseout"、"mouseover"、"mouseup"、"mousewheel" |
-| `key` | "keydown"、"keypress"、"keyup"、"textInput" |
-| `touch` | "touchcancel"、"touchend"、"touchmove"、"touchstart" |
-| `control` | "blur"、"change"、"focus"、"reset"、"resize"、"scroll"、"select"、"submit"、"zoom" |
+| `mouse` | “click”、“dblclick”、“mousedown”、“mousemove”、“mouseout”、“mouseover”、“mouseup”、“mousewheel” |
+| `key` | “keydown”、“keypress”、“keyup”、“textInput” |
+| `touch` | “touchcancel”、“touchend”、“touchmove”、“touchstart” |
+| `control` | “blur”、“change”、“focus”、“reset”、“resize”、“scroll”、“select”、“submit”、“zoom” |
 
 ### <a name="example"></a>示例
 
-In the following code， the `key` event type corresponding to `key` events on an input text field are currently selected in the **Elements** tool：
+在以下代码中`key`，**元素**工具中当前选择了与输入文本字段上的事件对应`key`的事件类型：
 
 ```javascript
 monitorEvents($0, "key");
@@ -643,7 +643,7 @@ monitorEvents($0, "key");
 
 下面是在文本字段中键入字符后的示例输出：
 
-:::image type="content" source="../media/console-monitor-events-type-t-y.msft.png" alt-text="监视关键事件。" lightbox="../media/console-monitor-events-type-t-y.msft.png":::
+![监视关键事件。](../media/console-monitor-events-type-t-y.msft.png)
 
 <br/><br/>
 
@@ -657,7 +657,7 @@ monitorEvents($0, "key");
 使用可选名称启动 JavaScript CPU 分析会话。
 
 <!-- add'l info -->
-若要完成配置文件并显示内存工具 **中的结果，** 请调用 [profileEnd () ](#profileend)。  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
+若要完成配置文件并在 **内存** 工具中显示结果，请调用 [profileEnd () ](#profileend)。  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
 
 ### <a name="syntax"></a>语法
 
@@ -673,9 +673,9 @@ profile([name])
 profile("My profile")
 ```
 
-若要停止分析和在内存工具中 **显示** 结果，请调用 [profileEnd () ](#profileend)。
+若要停止分析并在 **内存** 工具中显示结果，请调用 [profileEnd () ](#profileend)。
 
-还可以嵌套配置文件：
+也可以嵌套配置文件：
 
 ```javascript
 profile('A');
@@ -684,12 +684,12 @@ profileEnd('A');
 profileEnd('B');
 ```
 
-无论顺序如何，结果都是相同的。  结果在内存工具中显示为堆 **快照，包含** 分组的配置文件：
+无论顺序如何，结果都是相同的。  结果显示为 **内存** 工具中的堆快照，其中包含分组配置文件：
 
-:::image type="content" source="../media/console-memory-multiple-cpu-profiles.msft.png" alt-text="分组配置文件。" lightbox="../media/console-memory-multiple-cpu-profiles.msft.png":::
+![分组配置文件。](../media/console-memory-multiple-cpu-profiles.msft.png)
 
 > [!NOTE]
-> 多个 CPU 配置文件可以同时运行，并且不需要按照创建顺序关闭每个配置文件。
+> 多个 CPU 配置文件可以同时运行，无需按创建顺序关闭每个配置文件。
 
 <br/><br/>
 
@@ -700,10 +700,10 @@ profileEnd('B');
 <!-- ## profileEnd([name]) -->
 
 <!-- summary to bubble up: -->
-完成 JavaScript CPU 分析会话，并显示内存工具 **中** 的结果。
+完成 JavaScript CPU 分析会话，并在 **内存** 工具中显示结果。
 
 <!-- add'l info -->
-若要调用此函数，必须运行 [profile () ](#profile) 函数。  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
+若要调用此函数，必须运行 [配置文件 () ](#profile) 函数。  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
 
 ### <a name="syntax"></a>语法
 
@@ -713,15 +713,15 @@ profileEnd([name])
 
 ### <a name="example"></a>示例
 
-1. 运行 [profile () ](#profile) 函数以开始分析。
+1. 运行 [配置文件 () ](#profile) 函数以开始分析。
 
-1. 运行 函数 `profileEnd()` 以停止分析，在内存工具 **中显示** 结果：
+1. 运行该 `profileEnd()` 函数以停止分析并在 **内存** 工具中显示结果：
 
     ```javascript
     profileEnd("My profile")
     ```
 
-有关详细信息，请参阅 [上面的配置文件](#profile)。
+有关详细信息，请参阅上面 [的配置文件](#profile)。
 
 <br/><br/>
 
@@ -735,7 +735,7 @@ profileEnd([name])
 返回由指定构造函数创建的对象的数组。
 
 <!-- add'l info -->
-的范围 `queryObjects()` 是控制台中当前选择的运行时 **上下文**。
+其范围 `queryObjects()` 是 **控制台**中当前选择的运行时上下文。
 
 ### <a name="syntax"></a>语法
 
@@ -745,25 +745,25 @@ queryObjects(Constructor)
 
 ### <a name="example"></a>示例
 
-* `queryObjects(promise)` 返回 的所有实例 `Promise`。
+* `queryObjects(promise)` 返回所有实例。`Promise`
 
 * `queryObjects(HTMLElement)` 返回所有 HTML 元素。
 
-*  `queryObjects(functionName)` 返回使用 实例化的所有对象 `new functionName()`。
+*  `queryObjects(functionName)` 返回使用 `new functionName()`实例化的所有对象。
 
 <br/><br/>
 
 ---
 
 <!-- ====================================================================== -->
-## <a name="table"></a>table
+## <a name="table"></a>表
 <!-- ## table(data\[, columns\]) -->
 
 <!-- summary to bubble up: -->
-记录指定数据对象的对象数据（格式化为带列标题的表）。
+为指定的数据对象记录对象数据（格式化为带有列标题的表）。
 
 <!-- add'l info: n/a -->
-例如，使用此函数，可以在控制台中将人员姓名列表显示为 **表**。
+例如，使用此函数，可以在 **控制台**中将人员姓名列表显示为表。
 
 ### <a name="syntax"></a>语法
 
@@ -791,7 +791,7 @@ table(names);
 
 结果：
 
-:::image type="content" source="../media/console-table-display.msft.png" alt-text="table () 函数的结果。" lightbox="../media/console-table-display.msft.png":::
+![表 () 函数的结果。](../media/console-table-display.msft.png)
 
 <br/><br/>
 
@@ -802,7 +802,7 @@ table(names);
 <!-- ## undebug(function) -->
 
 <!-- summary to bubble up: -->
-停止对指定函数的调试，以便请求该函数时，不再调用调试程序。
+停止指定函数的调试，以便在请求函数时不再调用调试器。
 
 <!-- add'l info: n/a -->
 
@@ -827,10 +827,10 @@ undebug(getData);
 <!-- ## unmonitor(function) -->
 
 <!-- summary to bubble up: -->
-停止对指定函数的监视。
+停止监视指定的函数。
 
 <!-- add'l info -->
-此函数与 [monitor () 一同使用 ](#monitor)。
+此函数与 [monitor () ](#monitor)一起使用。
 
 ### <a name="syntax"></a>语法
 
@@ -865,13 +865,13 @@ unmonitorEvents(object[, events])
 
 ### <a name="example"></a>示例
 
-以下代码停止对象上的所有事件 `window` 监视：
+以下代码停止对 `window` 对象的所有事件监视：
 
 ```javascript
 unmonitorEvents(window);
 ```
 
-还可以有选择地停止监视对象上的特定事件。  例如，`mouse``mousemove`以下代码开始监视当前选定元素上的所有事件，然后停止监视事件 (以减小控制台输出元素中的) ：
+还可以有选择地停止监视对象上的特定事件。  例如，以下代码开始监视当前所选元素上的所有 `mouse` 事件，然后停止监视 `mousemove` 事件 (也许是为了减少控制台输出) 中的干扰：
 
 ```javascript
 monitorEvents($0, "mouse");
@@ -883,7 +883,7 @@ unmonitorEvents($0, "mousemove");
 ---
 
 <!-- ====================================================================== -->
-## <a name="values"></a>values
+## <a name="values"></a>值
 <!-- ## values(object) -->
 
 <!-- summary to bubble up: -->
@@ -912,7 +912,7 @@ values(object);
 
 <!-- if an article's title is adequately descriptive, and the article is in the same TOC bucket as the present article, don't much need a link here: -->
 * [控制台功能参考](reference.md)
-* [控制台对象 API 参考](api.md) - `console.*` 函数，如 `console.log()` 和 `console.error()`。
+* [控制台对象 API 参考](api.md) - `console.*` 函数，例如 `console.log()` 和 `console.error()`.
 
 
 <!-- ====================================================================== -->
