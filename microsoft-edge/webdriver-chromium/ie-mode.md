@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 11/23/2021
-ms.openlocfilehash: 5e888ff0ae7c2e0029484f4204fbf0f0eb07890a
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.openlocfilehash: eb3f937ed2b0c24402696f13003aea2d3ac7ce6b
+ms.sourcegitcommit: 606856f0f3d38d08ad693ab3cd68b5d7a24e7ead
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522320"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "12563715"
 ---
 # <a name="use-internet-explorer-driver-to-automate-ie-mode-in-microsoft-edge"></a>使用 Internet Explorer 驱动程序在 Microsoft Edge 中自动执行 IE 模式
 
@@ -34,7 +34,7 @@ ms.locfileid: "12522320"
 <!-- ====================================================================== -->
 ## <a name="required-configuration"></a>必需配置
 
-若要正确配置 IEDriver、Windows 和Microsoft Edge，请完成 [Selenium 所需配置](https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver#required-configuration)的要求。  
+若要正确配置 IEDriver、Windows 和Microsoft Edge，请完成 [Selenium 所需配置](https://www.selenium.dev/documentation/ie_driver_server/#required-configuration)的要求。
 
 
 ### <a name="place-the-driver-executable-in-the-path"></a>将驱动程序可执行文件放在 PATH 中
