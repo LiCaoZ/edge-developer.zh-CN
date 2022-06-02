@@ -6,14 +6,18 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/25/2022
-ms.openlocfilehash: 04a894e2194ec6a13fba9ec4f0507231d1e78803
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: c0e925576076a4af0a7e1c13b7c0e492035375f9
+ms.sourcegitcommit: 1b74d09a210bdf65a6031cecad2297c115da0ffb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12497035"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "12568577"
 ---
 # <a name="webhint-extension-for-visual-studio-code"></a>适用于Visual Studio Code的 webhint 扩展
+<!-- keep in sync:
+[webhint extension for Visual Studio Code](../test-and-automation/webhint.md)
+[The webhint extension for Visual Studio Code](../visual-studio-code/index.md#the-webhint-extension-for-visual-studio-code) in _Visual Studio Code for web development_.
+-->
 
 **注意：** 自 2022 年 4 月起，不再维护Visual Studio Code的 webhint 扩展。  参阅[适用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展](../visual-studio-code/microsoft-edge-devtools-extension.md)。
 

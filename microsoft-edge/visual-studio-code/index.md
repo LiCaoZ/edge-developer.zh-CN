@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/19/2022
-ms.openlocfilehash: d760b72e64c77551d539f4669b1f9e7a25eea4a4
-ms.sourcegitcommit: 56d88962483dab8374f3dccb67f546df1c26ec17
+ms.openlocfilehash: 90fb060d2e2e00c78dab6336f76548a049fb6203
+ms.sourcegitcommit: 1b74d09a210bdf65a6031cecad2297c115da0ffb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "12522095"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "12568584"
 ---
 # <a name="visual-studio-code-for-web-development"></a>用于 Web 开发的Visual Studio Code
 
@@ -56,6 +56,10 @@ Visual Studio Code的 Microsoft Edge DevTools 扩展允许你从Visual Studio Co
 <!-- what to do with this section?  present page is supposed to have h2 for each child page of TOC node, where h2 contains only 1 paragraph and link to child page -->
 <!-- ====================================================================== -->
 ## <a name="the-webhint-extension-for-visual-studio-code"></a>Visual Studio Code的 webhint 扩展
+<!-- keep in sync:
+[webhint extension for Visual Studio Code](../test-and-automation/webhint.md)
+[The webhint extension for Visual Studio Code]() in _Visual Studio Code for web development_.
+-->
 
 使用 Webhint（一种可自定义的 Linting 工具）来改进网站的功能，包括：
 
@@ -70,7 +74,7 @@ webhint 检查代码是否存在最佳做法和常见错误。  识别并修复�
 <!-- todo: don't have png files in this nav page.  delete png (only used here) -->
 <!-- ![The webhint extension for Visual Studio Code.](media/webhint-extension.png) -->
 
-请参阅 [Microsoft Edge Visual Studio Code 的 DevTools 扩展](microsoft-edge-devtools-extension.md)，而不是 webhint。
+**注意：** 自 2022 年 4 月起，不再维护Visual Studio Code的 webhint 扩展。  参阅[适用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展](microsoft-edge-devtools-extension.md)。
 
 
 <!-- ====================================================================== -->
