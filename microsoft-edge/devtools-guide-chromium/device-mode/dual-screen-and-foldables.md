@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 99bf210563d7243dd3828bbfdf3c22f492d1068c
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.openlocfilehash: 6a129ead4ef1fd04c0d43a65420a1ed1d21c8481
+ms.sourcegitcommit: a5aa193a2267019251d2447a2bdb088d979c6045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12553677"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "12568626"
 ---
 # <a name="emulate-dual-screen-and-foldable-devices"></a>模拟双屏幕和可折叠设备
 
@@ -20,41 +20,12 @@ ms.locfileid: "12553677"
 * [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo)
 * [Samsung Galaxy Fold](https://www.samsung.com/global/galaxy/galaxy-fold)
 
-模拟设备并在以下姿势之间切换。
+模拟设备并在以下姿势之间切换：
 
-*  单屏或折叠的姿势
-*  双屏或展开的姿势
-
-API 在 Microsoft Edge 97 及更高版本中可用。 如果不使用 Microsoft Edge 97 或更高版本，则需要启用实验性 Web 平台功能来使用 API。
-
-[打开实验性的 Web 平台 API](#turn-on-experimental-apis) ，并使用 [CSS 视区段媒体功能](/dual-screen/web/css-viewport-segments) 和 [JavaScript 视区段](/dual-screen/web/javascript-viewport-segments) 来增强双屏和可折叠设备的网站 (或应用) 。
+*  单屏或折叠的姿势。
+*  双屏或展开的姿势。
 
 ![在 Microsoft Edge 中模拟 Surface Duo。](../media/experiments-surface-duo-emulation.msft.png)
-
-
-<!-- ====================================================================== -->
-## <a name="turn-on-experimental-apis"></a>启用实验性 API
-
-若要使用 [CSS 视区段媒体功能](/dual-screen/web/css-viewport-segments)和 [JavaScript 视区段](/dual-screen/web/javascript-viewport-segments)，请在Microsoft Edge中打开`Experimental Web Platform features`标志，如下所示：
-
-1. 转到 `edge://flags`。
-
-1. 在 **“搜索标志** ”文本框中，输入 `Experimental Web Platform features`并选择 **“实验 Web 平台功能** ”标志，并将 **“禁用** ”更改为 **“已启用**”。
-
-1. 重启 Microsoft Edge。
-
-:::image type="content" source="../media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="打开实验性 Web 平台功能标志。" lightbox="../media/experiments-dual-screen-emulation.msft.png":::
-
-
-### <a name="surface-duo"></a>Surface Duo
-
-如果使用 [CSS 视区段媒体功能](/dual-screen/web/css-viewport-segments)或 [JavaScript 视区段](/dual-screen/web/javascript-viewport-segments)来增强 [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) 的网站或应用，则还必须在 [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) 设备上的[Android Microsoft Edge应用](https://play.google.com/store/apps/details?id=com.microsoft.emmx)中打开**实验性 Web 平台功能**标志。
-
-#### <a name="matching-the-flags-match-across-android-and-desktop-microsoft-edge"></a>在Android和桌面Microsoft Edge中匹配标志
-
-如果**实验性 Web 平台功能**标志在[桌面Microsoft Edge](https://www.microsoft.com/edge)中打开，并在[Android Microsoft Edge应用](https://play.google.com/store/apps/details?id=com.microsoft.emmx)中关闭，则桌面Microsoft Edge Surface Duo 模拟器中的网站或应用的行为与[AndroidSurface](https://play.google.com/store/apps/details?id=com.microsoft.emmx) [Duo](https://www.microsoft.com/surface/devices/surface-duo) 上的Microsoft Edge应用。  
-
-确保标志在Android和桌面Microsoft Edge之间匹配，以便在[桌面Microsoft Edge](https://www.microsoft.com/edge)中成功使用 Surface Duo 模拟器。
 
 
 <!-- ====================================================================== -->
