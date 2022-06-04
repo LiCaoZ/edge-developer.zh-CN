@@ -10,12 +10,12 @@ no-loc:
 - Cast
 - Google Cast
 ms.date: 12/10/2021
-ms.openlocfilehash: ea1e475b8636673eb59577c106edf5f93746ca56
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.openlocfilehash: 2b581887d96c772676a9dbbbbb2277192b0d2298
+ms.sourcegitcommit: 872263458513fee2f2c06a9ab456ddb5cf4c0993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12552523"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "12572916"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书
 
@@ -679,7 +679,7 @@ SmartScreen 服务存储有关信誉检查的数据，并生成已知恶意 URL 
 
 使用Microsoft 帐户或工作或学校帐户登录Microsoft Edge时，Microsoft Edge将在 Microsoft 服务器中存储数据隐私设置的首选项。 Microsoft Edge将仅使用存储的设置，以便在开始在其他设备上使用Microsoft Edge或登录到Microsoft Edge时更轻松地迁移体验。
 
-在浏览器和 Microsoft 服务器之间传输时，将通过 HTTPS 加密传输所有同步数据。  同步的数据同样以加密状态存储在 Microsoft 服务器中。  敏感数据类型（如地址和密码）将在同步前在设备上进一步加密。  如果使用工作或学校帐户，所有数据类型在同步之前都会使用 Microsoft 信息保护进一步加密。  将存储所有其他同步数据类型，直至你删除数据、删除帐户或者帐户处于非活动状态。  帐户 ID 附加到所有同步数据，因为需要使用 ID 才能跨多个设备执行同步。
+在浏览器和 Microsoft 服务器之间传输时，将通过 HTTPS 加密传输所有同步数据。  同步的数据同样以加密状态存储在 Microsoft 服务器中。  敏感数据类型（如地址和密码）将在同步前在设备上进一步加密。  如果使用工作或学校帐户，所有数据类型在同步之前都会使用 Microsoft Purview 信息保护进一步加密。  将存储所有其他同步数据类型，直至你删除数据、删除帐户或者帐户处于非活动状态。  帐户 ID 附加到所有同步数据，因为需要使用 ID 才能跨多个设备执行同步。
 
 InPrivate 和来宾模式浏览数据不会同步到你的 Microsoft 帐户。  但是，在 InPrivate 会话期间创建的收藏夹跨已登录版本的 Microsoft Edge 同步。
 
