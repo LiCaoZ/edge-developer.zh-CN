@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.date: 08/06/2021
 ms.openlocfilehash: 931d6372221d53ddd5dc01b1abd703dc6ac0e558
 ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/28/2022
 ms.locfileid: "12552993"
