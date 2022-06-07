@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.date: 05/04/2021
 ms.openlocfilehash: 95d8a73135876ceeea2026d9017de5983af410c1
 ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/28/2022
 ms.locfileid: "12553650"
@@ -151,7 +151,7 @@ ms.locfileid: "12553650"
 
 **空缓存和硬性刷新** 工作流仅在 DevTools 打开时可用。
 
-另请参阅模拟_网络功能参考_中的[慢速网络连接](../network/reference.md#emulate-slow-network-connections)。
+另请参阅_网络功能参考_中的[模拟慢速网络连接](../network/reference.md#emulate-slow-network-connections)。
 
 
 <!-- ====================================================================== -->
