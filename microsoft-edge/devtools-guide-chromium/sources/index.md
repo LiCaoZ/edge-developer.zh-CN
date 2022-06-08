@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.date: 03/18/2022
 ms.openlocfilehash: 6ae8e7681df4d337bc30f46158e42c92c06f4cd8
 ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/28/2022
 ms.locfileid: "12553233"
@@ -206,11 +206,11 @@ script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
 document.head.appendChild(script);
 ```
 
-相反，您可以将此代码保存在 **代码** 段中，然后随时轻松地运行它。  按`Ctrl`+`S` (Windows、Linux) 或+`Command``S` (macOS) 时，DevTools 会将**代码片段**保存到文件系统。
+相反，您可以将此代码保存在 **代码** 段中，然后随时轻松地运行它。  当你按下 `Ctrl`+`S`（Windows、Linux）或 `Command`+`S` (macOS) 时，DevTools 会将**代码段**保存到文件系统。
 
 有多种方法可以运行代码段：
 *  在 **导航器窗格中** ，选择" **代码** 段"选项卡，然后选择代码段文件将其打开。  然后在“编辑器”窗格底部，选择“**运行**”(![“运行”按钮](../media/run-snippet-icon.msft.png))。
-*  当 DevTools 具有焦点时，按 `Ctrl``P`+ (Windows、Linux) 或`P`+`Command` (macOS) 打开[命令菜单](../command-menu/index.md)，然后键入。`!`
+*  当 DevTools 具有焦点时，按下 `Ctrl`+`P`（Windows、Linux）或 `Command`+`P` (macOS) 以打开“[命令菜单](../command-menu/index.md)”，然后键入 `!`。
 
 代码段 类似于小书签。
 
@@ -476,7 +476,7 @@ DevTools 中的调试器旨在外观、感觉和工作，如[Visual Studio Code]
 
 1. 在 **导航器** 窗格（左侧）中，选择 **页** 选项卡，然后选择 JavaScript 文件，例如 `get-started.js`。
 
-1. 在 **"编辑器** "窗格中，选择可疑代码行附近的行号，以在该行上设置断点。  在下图中，在 行 上设置了断点 `var sum = addend1 + addend2;`。   (更新：从 2022 年起，断点现在由蓝色矩形（而不是红色圆圈）指示。) 
+1. 在 **"编辑器** "窗格中，选择可疑代码行附近的行号，以在该行上设置断点。  在下图中，在 行 上设置了断点 `var sum = addend1 + addend2;`。  （更新：从 2022 年起，断点现在由蓝色矩形而不是红色圆圈指示。）
 
 1. 在网页中，输入值并提交表单。  例如，输入数字，如 `5` 和 `1` ，然后选择按钮添加数字 **1 和数字 2**。
 

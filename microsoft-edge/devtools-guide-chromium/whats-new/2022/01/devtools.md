@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.date: 01/14/2022
 ms.openlocfilehash: 61b7c1ffee2ce35db9b12a15f8f6d864bc5eb6ea
 ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/14/2022
 ms.locfileid: "12514746"
@@ -73,14 +73,14 @@ ms.locfileid: "12514746"
 <!-- Title: Have you tried Focus Mode? -->
 <!-- Subtitle: To de-clutter and simplify the DevTools interface to focus on debugging web apps, enable Focus Mode in DevTools settings. -->
 
-借助你早期的反馈，我们不断改进和修复适用于 Microsoft Edge DevTools 的新的专注模式界面上的 bug。  焦点模式是一个新的 UI 选项，可用于将工具停靠在 DevTools 窗口的顶部或侧面，并从工具栏中删除杂乱无章：
+借助你早期的反馈，我们不断改进和修复适用于 Microsoft Edge DevTools 的新的专注模式界面上的 bug。  专注模式是一个新的 UI 选项，可用于将工具停靠在 DevTools 窗口的顶部或一侧，减少工具栏中的混乱：
 
 ![专注模式 UI。](../../media/2022/01/focus-mode.png)
 
-使用专注模式时，所有相同的工具和自定义主题与在现有 DevTools UI 中一样可用。  通过在 DevTools **设置** > **Experiments** 中启用焦点模式试验，为自己试用**焦点模式**。
+使用专注模式时，所有相同的工具和自定义主题与在现有 DevTools UI 中一样可用。  通过在 DevTool“**设置**” > “**试验**”中启用“**专注模式**”试验，自行试用专注模式。
 
 另请参阅：
-* _实验功能_中[的焦点模式](../../../experimental-features/index.md#focus-mode)
+* _试验功能_中的[专注模式](../../../experimental-features/index.md#focus-mode)
 * [使用专注模式简化开发工具](../../../experimental-features/focus-mode.md)
 * [将颜色主题应用于开发工具](../../../customize/theme.md)
 
@@ -91,7 +91,7 @@ ms.locfileid: "12514746"
 <!-- Title: 3D View better integrates with different themes in DevTools -->
 <!-- Subtitle: The 3D View tool now works when you select a different color theme in DevTools. -->
 
-在早期版本的 Microsoft Edge 中，更改 DevTools 中的主题，然后打开 3D 视图工具会导致空白面板。  此问题现已修复，Microsoft Edge 97：
+在早期版本的 Microsoft Edge 中，更改 DevTools 中的主题，然后打开 3D 视图工具会导致空白面板。  此问题现已在 Microsoft Edge 97 中修复：
 
 ![3D 视图工具现在支持更改颜色主题。](../../media/2022/01/3d-view-with-color-theme.png)
 

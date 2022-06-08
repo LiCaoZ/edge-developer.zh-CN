@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.date: 07/19/2021
 ms.openlocfilehash: c8918d01fdace6e8cd4e7e6fe796c81e11c59deb
 ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/14/2022
 ms.locfileid: "12514508"
@@ -154,7 +154,7 @@ ms.locfileid: "12514508"
 
 开发人员工具会在“**网络**”工具旁边显示一个警告图标，提醒已启用限制。
 
-另请参阅在_检查网络活动中_[模拟较慢的网络连接](../network/index.md#simulate-a-slower-network-connection)。
+另请参阅_检查网络活动_中的[模拟较慢的网络连接](../network/index.md#simulate-a-slower-network-connection)。
 
 
 #### <a name="emulate-slow-network-connections-from-the-network-conditions-drawer"></a>从“网络条件”抽屉模拟慢速网络连接
@@ -478,9 +478,9 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 1. 在“请求”表的“**名称**”列下，单击请求的 URL。
 1. 单击**计时**选项卡。
 
-若要更快地访问数据，请参阅本文中的 [预览版计时细分](#preview-a-timing-breakdown)。
+若要更快地访问数据，请参阅本文中的[预览计时细分](#preview-a-timing-breakdown)。
 
-有关计 **时** 面板中可能显示的每个阶段的详细信息，请参阅本文中 [介绍的计时细分阶段](#timing-breakdown-phases-explained)。
+有关“**计时**”面板中可能显示的各阶段详细信息，请参阅本文中的[计时细分阶段说明](#timing-breakdown-phases-explained)。
 
 “**计时**”面板：
 
@@ -498,7 +498,7 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 ![预览请求的计时细分。](../media/network-network-resources-waterfall-hover.msft.png)
 
-若要在不悬停的情况下查看数据，请参阅当前部分的顶部， [显示请求的计时细目](#display-the-timing-breakdown-of-a-request)。
+若要在不悬停的情况下查看数据，请参阅当前部分的顶部[显示请求的计时细分](#display-the-timing-breakdown-of-a-request)。
 
 #### <a name="timing-breakdown-phases-explained"></a>计时细分阶段说明
 
