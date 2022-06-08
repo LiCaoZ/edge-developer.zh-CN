@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.date: 11/16/2021
 ms.openlocfilehash: aede64c344186e76246d1ec23c7473e077b8dad8
 ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/14/2022
 ms.locfileid: "12514081"
@@ -55,15 +55,15 @@ Microsoft Edge DevTools 团队正在试验新的 DevTools UI：**焦点模式**�
 
 ![在主工具栏中选择“控制台”时，如果抽屉显示“控制台”，则抽屉将自动最小化。](../../media/2021/11/console-hidden-when-console-tab-selected.png)
 
-如果只想允许控制台工具在单个位置打开，可以配置控制台的行为：
+如果只希望允许在一个位置打开控制台工具，则可以配置控制台的行为:
 
 1. 在主工具栏或“**抽屉**”工具栏中，右键单击“**控制台**”选项卡，然后选择“**配置控制台**”。  将显示“**设置**” > “**首选项**”页面。
 
 1. 在“**控制台**”部分中，清除复选框“**在主面板和抽屉中显示控制台选项卡**”，然后单击“**关闭**”（“**x**”）。
 
 另请参阅：
-* _关于工具列表_中的[面板工具与抽屉工具](../../../about-tools.md#panel-tools-vs-drawer-tools)。
-* _在 DevTools 的新增_功能中，在[顶部和底部面板之间移动工具](../../2020/10/devtools.md#move-tools-between-top-and-bottom-panels) (Microsoft Edge 87) 。
+* _关于工具列表_ 中的 [面板工具与抽屉工具](../../../about-tools.md#panel-tools-vs-drawer-tools)。
+* _在 DevTools 中的“新增功能”(Microsoft Edge 87)_ 中 [，在顶部和底部面板之间移动工具](../../2020/10/devtools.md#move-tools-between-top-and-bottom-panels)。
 
 
 <!-- ====================================================================== -->
@@ -107,11 +107,11 @@ Microsoft Edge DevTools for Visual Studio Code 扩展现在具有可停靠的截
 
 选择带有警告图标的文件将在“源”工具中打开文件，其中包含一个信息栏，指示 DevTools 无法从服务器正确提取源映射或无法正确分析源映射：
 
-![显示“DevTools 无法加载源映射”问题的“源”工具。](../../media/2021/11/source-map-not-found-buttons.png)
+![源工具显示内容是“DevTools 未能加载源图”的问题。](../../media/2021/11/source-map-not-found-buttons.png)
 
 在信息栏中，可以通过选择“**在问题中打开**”按钮来了解有关问题的详细信息。  然后，将在“**抽屉**”中打开“**问题**”工具，并提供有关如何解决该问题以及如何在 DevTools 中正确加载源映射的信息：
 
-![抽屉中的问题工具，将问题显示为“找不到源映射”，以及有关如何解决此问题的信息。](../../media/2021/11/source-map-not-found.png)
+![抽屉中的问题工具，显示问题为“找不到源映射”，以及有关如何解决此问题的信息。](../../media/2021/11/source-map-not-found.png)
 
 要防止有关源映射的信息栏干扰“**源**”工具，请选择“**不再显示**”按钮。  要防止与源映射相关的问题干扰“**问题**”工具，请清除“**问题**”工具中的“**包括第三方问题**”复选框。
 
@@ -136,7 +136,7 @@ Microsoft Edge DevTools for Visual Studio Code 扩展现在具有可停靠的截
 *  与早期版本的 Microsoft Edge 一样，如果“**源**”工具未在 DevTools 中打开，并且随后启用了“**在 Visual Studio Code 中打开源文件**”试验，则设置断点或从除“**源**”工具以外的工具中打开文件将在 Visual Studio Code 中打开该文件。
 
 另请参阅：
-* [在 Visual Studio Code 中打开源文件](../../../sources/opening-sources-in-vscode.md) - DevTools 如何与Visual Studio Code集成。
+* [在 Visual Studio Code 中打开源文件](../../../sources/opening-sources-in-vscode.md) - DevTools 如何与 Visual Studio Code 集成。
 
 
 <!-- ====================================================================== -->
