@@ -5,13 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/19/2021
-ms.openlocfilehash: 98fd78fe9cbfc636f21826c1841e953b81198156
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.date: 06/07/2022
+ms.openlocfilehash: e3a290fc309edf8af86bcc10a020b591baa82c16
+ms.sourcegitcommit: 888eebc88e3ee1a4efdfa04f8b9027c066cda332
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12553570"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "12581775"
 ---
 # <a name="get-started-with-progressive-web-apps"></a>渐进式 Web 应用入门
 
@@ -25,6 +25,9 @@ ms.locfileid: "12553570"
 
 > [!TIP]
 > 可以使用 [PWABuilder](https://www.pwabuilder.com) 创建新PWA、增强现有PWA或打包应用商店的PWA。
+
+<!-- link is placed here per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->
+若要在Windows上安装或运行PWA，请参阅在 _PVA 用户体验_中[安装PWA](../ux.md#installing-a-pwa)。
 
 
 <!-- ====================================================================== -->

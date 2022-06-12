@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 90985a2536ee2eaa88fc92822b734187b01812ad
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 8331d848169ab5a05e9c0919aa70fb91d900f550
+ms.sourcegitcommit: 888eebc88e3ee1a4efdfa04f8b9027c066cda332
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514795"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "12581782"
 ---
 # <a name="emulate-authenticators-and-debug-webauthn"></a>模拟身份验证器并调试 WebAuthn
 
@@ -33,7 +33,7 @@ ms.locfileid: "12514795"
 <!-- ====================================================================== -->
 ## <a name="set-up-the-webauthn-tool"></a>设置 WebAuthn 工具
 
-1. 转到使用 WebAuthn 的网页。  例如，在新的浏览器窗口或选项卡中打开以下演示网站： [webauthndemo.appspot.com](https://webauthndemo.appspot.com)。
+1. 转到使用 WebAuthn 的网页。  例如，在新的浏览器窗口或选项卡中打开以下演示网站： [try-webauthn.appspot.com](https://try-webauthn.appspot.com/)。
 
 1. 登录到网站。
 
