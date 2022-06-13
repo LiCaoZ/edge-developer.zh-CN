@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/24/2022
-ms.openlocfilehash: 3352e38a52bca8a2481d1da5c518d98284c786ae
-ms.sourcegitcommit: 6aaf6312d9fb1750fa35435fe5e97869688aa2a8
+ms.openlocfilehash: 1d111bddd20c99299a55e2d7cfc7e3bf31c1ee54
+ms.sourcegitcommit: 8a284be9a060a8b09121275a2491a30eda9156b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "12567105"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "12584605"
 ---
 # <a name="videos-about-web-development-with-microsoft-edge"></a>有关使用 Microsoft Edge 进行 Web 开发的视频
 
@@ -33,6 +33,30 @@ To add a new video:
 - Add a markdown image below the date, with the thumbnail you added before, and link this image tag to the YouTube video.
 - Place the description below that, fixing any links that came from YouTube and that might have been shortened.
 -->
+
+
+<!-- ====================================================================== -->
+## <a name="devtools---use-your-preferred-language-in-devtools"></a>DevTools - 在 DevTools 中使用首选语言
+
+_发布于 2022 年 6 月 9 日。_
+
+[![TDevTools 本地化视频的 humbnail 图像](./images/devtools-localization.png)](https://www.youtube.com/watch?v=AeF0AvWpUO8)
+
+Microsoft Edge DevTools 支持 13 种不同的语言。 在此视频中，团队演示如何选择最适合编码和调试的语言。
+
+若要详细了解如何更改 DevTools 语言设置，请查看 [更改 DevTools 语言设置](../devtools-guide-chromium/customize/localization.md)。
+
+若要报告任何翻译错误，请查看[Microsoft Edge DevTools 团队](../devtools-guide-chromium/contact.md)。
+
+
+<!-- ====================================================================== -->
+## <a name="devtools---whats-new-in-devtools-102"></a>DevTools - DevTools 102 中的新增功能
+
+_发布日期：2022 年 6 月 1 日。_
+
+[![T102 视频中的 DevTools 新增功能的 humbnail 图像](./images/devtools-whatsnew-102.png)](https://www.youtube.com/watch?v=JY6DfhSdr_A)
+
+在 [DevTools 102 中的新增](../devtools-guide-chromium/whats-new/2022/05/devtools-102.md)功能中，从 Microsoft Edge DevTools 团队了解有关我们的最新公告的详细信息。
 
 
 <!-- ====================================================================== -->
