@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/09/2022
-ms.openlocfilehash: c1c1ed2fa54d8e5664c4f531c11866a2c85d76bb
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 5fcd59d920fc5829f5c58bd51bf809597ed6c5f9
+ms.sourcegitcommit: 83d9ab6020896e397154672eae9089dba15f4bda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514431"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "12593601"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-99"></a>DevTools (Microsoft Edge 99) 中的新增功能
 
@@ -51,7 +51,7 @@ Azure Artifacts符号服务器现在支持存储生成过程在编译、缩小�
 若要尝试此功能，请执行以下操作：
 1. 确保已安装Visual Studio 2022 和 ASP.NET 工作负荷。
 1. 如[Microsoft Edge开发人员](https://aka.ms/edgetools-for-vs)工具Visual Studio中所述，将 Web Live Preview 设置为默认Web Forms设计器。
-1. 在 ASP.NET 项目中，在“ **设计** ”窗口中打开项目的网页。
+1. 在 ASP.NET 项目中，在“**设计**”窗口中打开项目的网页。
 1. 在 **“设计”** 窗口左上角，单击 **“Open Edge DevTools** (![Open Edge DevTools”图标。](../../media/2022/03/open-edge-dev-tools-v-s-icon.png)) 按钮：
 
 ![ASP.NET 项目，打开 Edge DevTools。](../../media/2022/03/devtools-extension-v-s-web-forms-designer.png)
@@ -79,6 +79,8 @@ Azure Artifacts符号服务器现在支持存储生成过程在编译、缩小�
 <!-- Subtitle: The Layers tool isn't going away - find it in the 3D View tool today. -->
 
 自 [Microsoft Edge 88](../../2020/11/devtools.md#composited-layers-are-now-in-3d-view) 起，**3D 视图**工具提供了**改进的 Layers** 工具版本。  现在，在 Microsoft Edge 99 中，**层**工具中的功能已被删除，而 **“图层**”工具则包含一个链接，可将你重定向到 **3D 视图**工具中的复合层视图。  可以在 **3D 视图**工具中找到以前在 **“层**”工具中的所有功能，以及更多功能。
+
+更新：图 **层** 工具现已删除。
 
 ![“图层”工具现在链接到 3D 视图工具。](../../media/2022/03/layers-3d-view-tool.png)
 <!-- work item > layersmove.gif -->

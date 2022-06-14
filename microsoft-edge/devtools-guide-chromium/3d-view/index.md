@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/27/2022
-ms.openlocfilehash: b431ce48bd26f8f40c7f9d0d9c486f7f38ba66ba
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.openlocfilehash: df19d4185107c290692dc946f7308116f1c6b5b5
+ms.sourcegitcommit: 83d9ab6020896e397154672eae9089dba15f4bda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12552918"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "12593594"
 ---
 # <a name="navigate-webpage-layers-z-index-and-dom-using-the-3d-view-tool"></a>使用 3D 视图工具导航网页层、z 索引和 DOM
 
@@ -66,7 +66,10 @@ To pan around the DOM, right-click and drag in the direction you want the DOM to
 <!-- ====================================================================== -->
 ## <a name="the-composited-layers-tab"></a>“复合层”选项卡
 
-在复合层视图中，3D 画布显示呈现的网页，包括颜色和图像。
+
+在“复合层”视图中，3D 画布显示浏览器呈现引擎为网页创建的层的列表。
+
+使用复合层视图分析 CSS 代码创建的层数、它们的较大程度以及它们的更改频率。
 
 在右侧的 3D 画布上，选择网页的元素。  在 **“复合层** ”选项卡中，层树自动展开，层树下的 **“详细信息** ”选项卡显示有关所选层的信息。
 
@@ -92,9 +95,9 @@ To pan around the DOM, right-click and drag in the direction you want the DOM to
 
 
 <!-- ===== -->
-### <a name="dom-expander-tree"></a>DOM 扩展器树
+### <a name="layers-expander-tree"></a>层扩展器树
 
-展开此树以显示有关所选 DOM 元素的 DOM 树信息。
+展开此树以显示复合层的列表。 单击某个层可在“详细信息”窗格中查看有关它的详细信息。
 
 
 <!-- ===== -->
@@ -102,19 +105,19 @@ To pan around the DOM, right-click and drag in the direction you want the DOM to
 
 #### <a name="size"></a>大小
 
-所选 DOM 元素的宽度和高度，以及元素左上角相对于页面视区左上角的位置。  例如，“1034 x 28055 (0，0) ”。
+所选复合层的宽度和高度，以及相对于页面视区左上角的图层左上角的位置。  例如，“1034 x 28055 (0，0) ”。
 
 #### <a name="compositing-reasons"></a>组合原因
 
-如果完成任何组合，则为所选 DOM 元素进行层组合的原因。  例如：“辅助层，以容纳可滚动的内容。
+浏览器呈现引擎创建层的原因。  例如：“辅助层，以容纳可滚动的内容。
 
 #### <a name="memory-estimate"></a>内存估计
 
-所选 DOM 元素及其子元素使用的内存。  例如：“116 MB”。
+所选层使用的内存。  例如：“116 MB”。
 
-<!-- #### Paint count -->
+#### <a name="paint-count"></a>画图计数
 
-<!-- need desc -->
+呈现引擎绘制所选层的次数。
 
 <!-- #### Slow scroll regions -->
 

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/02/2022
-ms.openlocfilehash: 35ee0509a033b03dbb44991fdd153145a5551999
-ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
+ms.openlocfilehash: cca1f3d749ed6071be98b8abbee79803e198ee12
+ms.sourcegitcommit: 83d9ab6020896e397154672eae9089dba15f4bda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "12551523"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "12593587"
 ---
 # <a name="about-the-list-of-tools"></a>关于工具列表
 
@@ -55,7 +55,6 @@ Microsoft Edge DevTools 包括以下工具。
 | **检查** 工具 | 使用 **“检查** ”工具查看有关呈现网页中的项的信息。  当 **检查** 工具处于活动状态时，将 _鼠标悬停在_ 网页中的项上，DevTools 会在网页上添加信息覆盖信息和网格突出显示。 | [使用检查工具分析页面](css/inspect.md) |
 | **问题** 工具 | “ **问题** ”工具会自动分析当前网页，按类型分组报告问题，并提供文档来帮助解释和解决问题。 | [使用问题工具查找和修复问题](issues/index.md) |
 | **JavaScript Profiler** 工具 | 此工具已替换为 **性能** 工具和 **内存** 工具。 | [JavaScript 探查器工具](javascript-profiler/javascript-profiler-tool.md) |
-| **层** 工具 | **Layers** 工具表示 3D 空间中的网页。  **“图层**”工具基本上已被 **3D 视图**工具替换。 | [层工具](layers/layers-tool.md) |
 | **Lighthouse** 工具 | 使用 Lighthouse 工具可识别和解决影响网站性能、辅助功能和用户体验的常见问题。 | [Lighthouse 工具](lighthouse/lighthouse-tool.md) |
 | **媒体** 工具 | 使用此工具可以查看信息，并按浏览器选项卡调试媒体播放器。 | [查看和调试媒体播放器信息](media-panel/index.md) |
 | **内存** 工具 | 查找影响页面性能的内存问题，包括内存泄漏、内存膨胀和频繁的垃圾回收。 | [修复内存问题](memory-problems/index.md) |

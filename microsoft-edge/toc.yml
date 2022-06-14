@@ -214,7 +214,7 @@
               items:
                 - name: 使用 3D 视图工具导航网页层、z 索引和 DOM
                   href: devtools-guide-chromium/3d-view/index.md
-                  displayName: '3D View tool, Layers tool, composited layers'
+                  displayName: '3D View tool, composited layers'
             - name: 动画工具
               items:
                 - name: 检查和修改 CSS 动画效果
@@ -284,11 +284,6 @@
                 - name: JavaScript 探查器工具
                   href: devtools-guide-chromium/javascript-profiler/javascript-profiler-tool.md
                   displayName: JavaScript Profiler tool
-            - name: 层工具
-              items:
-                - name: 层工具
-                  href: devtools-guide-chromium/layers/layers-tool.md
-                  displayName: Layers tool
             - name: Lighthouse 工具
               items:
                 - name: Lighthouse 工具
