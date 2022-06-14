@@ -1,33 +1,27 @@
 ---
-title: Microsoft Edge 加载项已发布功能
+title: Microsoft Edge加载项的已发布功能
 description: Microsoft Edge加载项发布的功能提供了有关在合作伙伴中心为扩展开发人员启动的功能的信息。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/20/2021
-ms.openlocfilehash: b8e1cc03fde00c87a865e12a074e5e0c7de03e52
-ms.sourcegitcommit: 56d88962483dab8374f3dccb67f546df1c26ec17
+ms.date: 05/31/2021
+ms.openlocfilehash: 647b7f56a9b2ccd3ffab269f19faa3ffd77d3d79
+ms.sourcegitcommit: 6e391333a3e37bb862ac6124ed154f779dbaf027
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "12522088"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "12589452"
 ---
-# <a name="microsoft-edge-add-ons-released-features"></a>Microsoft Edge 加载项已发布功能
+# <a name="released-features-for-microsoft-edge-add-ons"></a>Microsoft Edge加载项的已发布功能
 
-本文介绍在 [合作伙伴中心](https://partner.microsoft.com/dashboard/microsoftedge/) 为扩展开发人员启动的功能。
-
-> [!NOTE]
-> Microsoft [合作伙伴中心](https://partner.microsoft.com/dashboard/microsoftedge/) 发布的功能经常更改。  合作伙伴中心根据市场变化和客户反馈继续发展。 本文中所述的功能也可能会发生更改。
-
-有关即将发布的更新和功能版本的详细信息，请[参阅Microsoft Edge加载项路线图](roadmap.md)。
-
+合作伙伴[中心](https://partner.microsoft.com/dashboard/microsoftedge/)为Microsoft Edge扩展的开发人员推出了以下功能。
 
 
 <!-- ====================================================================== -->
-### <a name="developers-can-respond-to-user-reviews-about-their-microsoft-edge-add-on"></a>开发人员可以响应有关其Microsoft Edge加载项的用户评论
+## <a name="developers-can-respond-to-user-reviews-about-their-microsoft-edge-add-on"></a>开发人员可以响应有关其Microsoft Edge加载项的用户评论
 
-开发人员可以通过合作伙伴中心回复有关其扩展在Microsoft Edge加载项产品页上收到的评论和反馈。 
+开发人员可以通过合作伙伴中心回复有关其扩展在Microsoft Edge加载项产品页上收到的评论和反馈。 若要共享反馈和评论，请参阅[GitHub讨论主题 - 在Microsoft Edge加载项产品页上回复用户评论](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/18)。 
 
 *发布日期：2022 年 5 月*
 
@@ -36,6 +30,14 @@ ms.locfileid: "12522088"
 ## <a name="publish-and-update-extensions-using-the-microsoft-edge-add-ons-api"></a>使用Microsoft Edge加载项 API 发布和更新扩展
 
 可以直接将 API 集成到持续集成/持续交付 (CI/CD) 管道中。 还可以将扩展包更新发布到Microsoft Edge加载项网站，而无需使用合作伙伴中心。 有关详细信息，请参阅[使用Microsoft Edge加载项 API](/microsoft-edge/extensions-chromium/publish/api/using-addons-api)
+
+*发布日期：2022 年 3 月*
+
+
+<!-- ====================================================================== -->
+## <a name="addition-of-breadcrumbs-to-microsoft-partner-center"></a>向 Microsoft 合作伙伴中心添加痕迹
+
+开发人员可以在使用合作伙伴中心跟踪用户访问的确切合作伙伴中心路径时查看导航栏/树路径。 开发人员可以保持对 Microsoft 合作伙伴中心内位置的感知。
 
 *发布日期：2022 年 3 月*
 
@@ -110,3 +112,9 @@ Microsoft Edge加载项现在支持使用清单 V3 的扩展。 有关详细信�
 通过单击扩展认证报告链接，扩展开发人员可以从合作伙伴 [中心](https://partner.microsoft.com/dashboard/microsoftedge/) 仪表板查看和下载扩展认证报告。  扩展提交评审完成后，将显示扩展认证报告的链接。  认证报告包含扩展评审的结果和相关详细信息。
 
 *发布日期：2021 年 1 月*
+
+
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
+
+有关即将发布的更新和功能版本的详细信息，请[参阅Microsoft Edge加载项路线图](roadmap.md)。

@@ -578,7 +578,7 @@
           href: extensions-chromium/index.md
         - name: 新增功能
           items:
-            - name: Microsoft Edge 加载项已发布功能
+            - name: Microsoft Edge 外接程序的已发布功能
               href: extensions-chromium/whats-new/released-features.md
             - name: Microsoft Edge 加载项路线图
               href: extensions-chromium/whats-new/roadmap.md
@@ -619,6 +619,8 @@
           items:
             - name: 注册为扩展开发人员
               href: extensions-chromium/publish/create-dev-account.md
+            - name: 验证公司帐户信息
+              href: extensions-chromium/publish/verify-microsoft-edge-program.md
             - name: 使用 GitHub 帐户发布扩展
               href: extensions-chromium/publish/github.md
             - name: 将用户添加到Microsoft Edge程序
@@ -631,6 +633,9 @@
               href: extensions-chromium/publish/submission-states.md
             - name: 查看扩展分析仪表板
               href: extensions-chromium/publish/extensions-analytics.md
+            - name: 回复用户评论
+              href: extensions-chromium/publish/reply-user-reviews.md
+              displayName: Respond to user reviews
             - name: 管理帐户设置
               href: extensions-chromium/publish/manage-settings.md
             - name: 联系人扩展支持

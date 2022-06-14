@@ -6,19 +6,16 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/22/2021
-ms.openlocfilehash: 81ac78cefd90e067f5563f9d81c08dccc0818dc4
-ms.sourcegitcommit: 56d88962483dab8374f3dccb67f546df1c26ec17
+ms.openlocfilehash: 7ab8cf1dff1d853fa6730ae204d22547696e3330
+ms.sourcegitcommit: 6e391333a3e37bb862ac6124ed154f779dbaf027
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "12522081"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "12589458"
 ---
 # <a name="microsoft-edge-add-ons-roadmap"></a>Microsoft Edge 加载项路线图
 
 本文介绍有关Microsoft Edge扩展的新合作伙伴中心功能的最新更新。
-
-> [!NOTE]
-> Microsoft [合作伙伴中心](https://partner.microsoft.com/dashboard/microsoftedge/) 发布的功能经常更改。 合作伙伴中心根据市场变化和客户反馈继续发展。  本文中所述的功能也可能会发生更改。
 
 
 <!-- ====================================================================== -->
@@ -28,11 +25,8 @@ ms.locfileid: "12522081"
 
 ### <a name="retirement-of-submitting-new-microsoft-edge-add-ons-with-manifest-v2"></a>停用使用清单 V2 提交新Microsoft Edge加载项
 
-Microsoft 合作伙伴中心将不再接受新的清单 V2 Microsoft Edge扩展提交，可见性设置为“隐藏”或“公共”。
+Microsoft 合作伙伴中心将不再接受新的清单 V2 Microsoft Edge扩展提交，可见性设置为“隐藏”或“公共”。 若要共享反馈和评论，请参阅[GitHub讨论主题 - 将扩展从清单 V2 更新到 V3](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/27)。
 
-### <a name="addition-of-breadcrumbs-to-microsoft-partner-center"></a>向 Microsoft 合作伙伴中心添加痕迹
-
-开发人员可以在使用合作伙伴中心跟踪用户访问的确切合作伙伴中心路径时查看导航栏/树路径。 开发人员可以保持对 Microsoft 合作伙伴中心内位置的感知。
 
 <br/>
 
@@ -56,10 +50,14 @@ Microsoft 合作伙伴中心不会接受对现有清单 V2 Microsoft Edge加载�
 Microsoft Edge Enterprise清单 V2 的加载项在Microsoft Edge上将不起作用。
 
 
+> [!NOTE]
+> Microsoft [合作伙伴中心](https://partner.microsoft.com/dashboard/microsoftedge/) 发布的功能经常更改。 合作伙伴中心根据市场变化和客户反馈继续发展。  本文中所述的功能也可能会发生更改。
+
+
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-有关合作伙伴中心最近发布的功能的详细信息，请[参阅Microsoft Edge加载项发布的功能](released-features.md)。
+有关合作伙伴中心最近发布的功能的详细信息，请参阅 [Microsoft Edge 加载项的发布功能](released-features.md)。
 
 若要查看使用者路线图，请转到[Microsoft Edge预览体验成员路线图](https://www.microsoftedgeinsider.com/whats-next)并向下滚动到**功能路线图**部分。 
 
