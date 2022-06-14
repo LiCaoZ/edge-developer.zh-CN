@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
-ms.openlocfilehash: aa25afeddd9caa8a383db322efde497ada5ae5a7
-ms.sourcegitcommit: 62f55a8303644d4d3f2ea29e624efcc54f465aa1
+ms.openlocfilehash: 76e108aad05e1f652dbb58d3f21099e7fc372ede
+ms.sourcegitcommit: 83d9ab6020896e397154672eae9089dba15f4bda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "12521813"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "12593608"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -88,7 +88,7 @@ Microsoft Edge Dev 现已在 Ubuntu、Debian、Fedora 和 openSUSE 发行版上�
 
 ![复合层窗格。](../../media/2020/11/experiments-layers.msft.png)
 
-更新：此功能已发布，不再处于实验性状态。  “**图层**”工具已替换为**3D 视图**工具。
+更新：此功能已发布，不再处于实验性状态。  **“图层** ”工具已被删除并替换为 **3D 视图** 工具。
 
 另请参阅：
 * [使用 3D 视图工具导航 z 索引、DOM 和层](../../../3d-view/index.md)
