@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 06/14/2022
-ms.openlocfilehash: fea23a48acef92614c9d2a82073e062936d813fb
-ms.sourcegitcommit: 2f490a413cc74d2d8de6bc8c3c8d5cbf6d75b6a0
+ms.date: 06/15/2022
+ms.openlocfilehash: 118cbd9858c6e3808ed32fb90dcae6c7a318ff0c
+ms.sourcegitcommit: bfe5a842d3a17160f62f007b212901df1cc857ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/16/2022
-ms.locfileid: "12595870"
+ms.locfileid: "12595986"
 ---
 # <a name="release-notes-for-the-webview2-sdk"></a>WebView2 SDK 发行说明
 
@@ -42,16 +42,24 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 
 <!-- ====================================================================== -->
+## <a name="platforms-covered"></a>涵盖的平台
+
+通常，发行说明适用于 Win32、.NET 和 WinRT。  平台的 API 大致并行，例如：
+* Win32 [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2) 以及类似命名的接口，例如 [ICoreWebView2_10](/microsoft-edge/webview2/reference/win32/icorewebview2_10)。
+* .NET [CoreWebView2 类](/dotnet/api/microsoft.web.webview2.core.corewebview2)。
+* WinRT [CoreWebView2 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2)。
+
+
+<!-- ====================================================================== -->
 ## <a name="10124522"></a>1.0.1245.22
-  
-发布日期：2022 年 6 月 14 日  
-  
-[NuGet WebView2 SDK 1.0.1245.22 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1245.22)  
-  
+
+发布日期：2022 年 6 月 14 日
+
+[NuGet WebView2 SDK 1.0.1245.22 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1245.22)
+
 为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 WebView2 运行时版本 102.0.1245.22 或更高版本。
 
 没有相应的预发行包。
-
 
 ### <a name="general"></a>概要
 
@@ -68,24 +76,23 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 *  [HttpStatusCode API](/microsoft-edge/webview2/reference/win32/icorewebview2navigationcompletedeventargs2?view=webview2-1.0.1245.22&preserve-view=true)，它为事件中的导航请求`NavigationCompleted`提供 HTTP 状态代码。
 
-
 #### <a name="bug-fixes"></a>Bug 修复
-  
-*   修复了屏幕键盘的问题，即键盘在关闭后不会重新出现，方法是单击 **X** 按钮。 还修复了当用户在 WebView2 中从一个编辑控件切换到另一个编辑控件时键盘被关闭的问题。  ([问题 #460](https://github.com/MicrosoftEdge/WebView2Feedback/issues/460)) 
-*  修复了在脚本中使用代理 `AddHostObjectToScript` 时出现的问题。 如果调用 `setHostProperty` 失败，则可能会收到内部错误消息结构，而不是 JavaScript Error 对象。  
-*   修复了 WebView2 在 WebView2 可见时会从应用中窃取焦点的回归。   ([问题 #862](https://github.com/MicrosoftEdge/WebView2Feedback/issues/862))  
-*   修复了使用大型数据的事件导致内存使用量 `WebResourceRequested` 增加的 bug。  ([问题 #2171](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2171))  
-*   修复 `StatusBarTextChanged` 了回归。 [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1245.22&preserve-view=true) 再次与以前的版本兼容。  ([问题 #2414](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2414))    
-*   更好地支持以管理员身份运行的应用。 ([问题 #2356](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2356))  
+
+*  修复了屏幕键盘的问题，即键盘在关闭后不会重新出现，方法是单击 **X** 按钮。 还修复了当用户在 WebView2 中从一个编辑控件切换到另一个编辑控件时键盘被关闭的问题。  ([问题 #460](https://github.com/MicrosoftEdge/WebView2Feedback/issues/460)) 
+*  修复了在脚本中使用代理 `AddHostObjectToScript` 时出现的问题。  如果调用 `setHostProperty` 失败，则可能会收到内部错误消息结构，而不是 JavaScript Error 对象。
+*  修复了 WebView2 在 WebView2 可见时会从应用中窃取焦点的回归。   ([问题 #862](https://github.com/MicrosoftEdge/WebView2Feedback/issues/862)) 
+*  修复了使用大型数据的事件导致内存使用量 `WebResourceRequested` 增加的 bug。   ([问题 #2171](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2171)) 
+*  修复 `StatusBarTextChanged` 了回归。 [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1245.22&preserve-view=true) 再次与以前的版本兼容。  ([问题 #2414](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2414)) 
+*  更好地支持以管理员身份运行的应用。 ([问题 #2356](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2356)) 
+
 
 <!-- ====================================================================== -->
-
 ## <a name="10121039"></a>1.0.1210.39
-  
-发布日期：2022 年 5 月 9 日  
-  
-[NuGet WebView2 SDK 1.0.1210.39 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1210.39)  
-  
+
+发布日期：2022 年 5 月 9 日
+
+[NuGet WebView2 SDK 1.0.1210.39 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1210.39)
+
 为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 WebView2 运行时版本 101.0.1210.39 或更高版本。
 
 ### <a name="general"></a>概要
@@ -102,16 +109,17 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 <!-- ====================================================================== -->
 ## <a name="101248-prerelease"></a>1.0.1248-prerelease
-  
-发布日期：2022 年 5 月 9 日  
-  
-[webView2 SDK 1.0.1248-prelease 的NuGet包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1248-prerelease)  
-  
-为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要Microsoft Edge版本 102.0.1248.0 或更高版本。  
+
+发布日期：2022 年 5 月 9 日
+
+[webView2 SDK 1.0.1248-prelease 的NuGet包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1248-prerelease)
+
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要Microsoft Edge版本 102.0.1248.0 或更高版本。
 
 ### <a name="general"></a>概要
 
 * 通过在 NuGet 包中添加 WinRT JS 投影工具 (**wv2winrt**) ，向 JavaScript 添加了对 WinRT 对象投影的支持。 有关使用 WinRT JS 投影工具的说明，请 [参阅从 Web 端代码调用本机 WinRT 代码](/microsoft-edge/webview2/how-to/winrt-from-js)。
+
 #### <a name="promotions"></a>促销
 
 以下 API 在此预发行版 SDK 中提升为稳定：
@@ -123,7 +131,7 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
    * `clearBrowsingDataAll`
 
 #### <a name="bug-fixes"></a>Bug 修复
-  
+
 * 修复了 WPF 控 `OnWindowPositionChanged` 件事件中发生的不可避免的崩溃。  ([问题 #1531](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1531)) 
 
 * 修复了 .NET SDK 中无法正常工作的问题 `CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess` 。  ([问题 #2363](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2363)) 
@@ -131,21 +139,20 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 * 修复了导致某些Office加载项的运行时回归，这些加载项使用主机对象在以前运行的操作期间崩溃。  ([问题 #2337](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2337)) 
 
 * 修复了在具有不同缩放的监视器之间移动时 WebView2 内容可能变得模糊的问题。
- 
+
 * 修复了回归，以确保 WebView2 创建快速 `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` 失败，而不是超时。
- 
+
 * 修复了Chromium的更改打破了 WebView2 背景色的错误。
 
 
 <!-- ====================================================================== -->
-
 ## <a name="10118539"></a>1.0.1185.39
-  
-发布日期：2022 年 4 月 12 日  
-  
-[NuGet WebView2 SDK 1.0.1185.39 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1185.39)  
-  
-为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 WebView2 运行时版本 100.0.1185.39 或更高版本。  
+
+发布日期：2022 年 4 月 12 日
+
+[NuGet WebView2 SDK 1.0.1185.39 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1185.39)
+
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 WebView2 运行时版本 100.0.1185.39 或更高版本。
 
 ### <a name="general"></a>概要
 
@@ -168,19 +175,19 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 * [ExclusiveUserDataFolderAccess API](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2?view=webview2-1.0.1185.39&preserve-view=true) 允许控制其他进程是否可以使用同一用户数据文件夹创建 `WebView2Environment` WebView2，从而共享同一 WebView 浏览器进程实例。
 
-* 请求 [对 iframe 的支持的权限](/microsoft-edge/webview2/reference/win32/icorewebview2frame3?view=webview2-1.0.1185.39&preserve-view=true)： 
+* 请求 [对 iframe 的支持的权限](/microsoft-edge/webview2/reference/win32/icorewebview2frame3?view=webview2-1.0.1185.39&preserve-view=true)：
     * `add_PermissionRequested`
     * `remove_PermissionRequested`
 
-<!-- ====================================================================== -->
 
+<!-- ====================================================================== -->
 ## <a name="101222-prerelease"></a>1.0.1222-prerelease
-  
-发布日期：2022 年 4 月 12 日  
-  
-[NuGet WebView2 SDK 1.0.1222-prerelease 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1222-prerelease)  
-  
-为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要Microsoft Edge版本 102.0.1222.0 或更高版本。  
+
+发布日期：2022 年 4 月 12 日
+
+[NuGet WebView2 SDK 1.0.1222-prerelease 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1222-prerelease)
+
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要Microsoft Edge版本 102.0.1222.0 或更高版本。
 
 ### <a name="general"></a>概要
 
@@ -192,7 +199,7 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 #### <a name="promotions"></a>促销
 
-以下 API 在此预发行版 SDK 中提升为稳定：  
+以下 API 在此预发行版 SDK 中提升为稳定：
 
 * 支持 WebView2 中的 [多个用户配置文件](/microsoft-edge/webview2/reference/win32/icorewebview2environment10?view=webview2-1.0.1222-prerelease&preserve-view=true) 。
 
@@ -201,7 +208,7 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 * [默认下载 API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1222-prerelease&viewFallbackFrom=webview2-1.0.1185.39&preserve-view=true) 提供自定义默认下载位置的方法。
 
 #### <a name="bug-fixes"></a>Bug 修复
-  
+
 * 修复 `ZoomFactor` 了在值超出边界时错误地将值设置 `ZoomFactor` 为最大值的问题。
 
 * 修复了在具有不同缩放的监视器之间移动时 WebView2 内容可能变得模糊的问题。
@@ -213,49 +220,46 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 * 修复了当用户打开新应用窗口且网页未分配导航条目时导致的故障。
 
 * 对 WinUI 2 (UWP) 中未显示拥有的窗口的 bug 进行了运行时更改。
- 
+
 * 修复 `ICoreWebView2Frame::PostWebMessage` 了源更新后的功能。  ([问题 #2267](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2267)) 
 
 
 <!-- ====================================================================== -->
-
 ## <a name="10115038"></a>1.0.1150.38
-  
-发布日期：2022 年 3 月 10 日  
-  
-[NuGet WebView2 SDK 1.0.1150.38 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1150.38)  
-  
-为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 WebView2 运行时版本 99.0.1150.38 或更高版本。  
+
+发布日期：2022 年 3 月 10 日
+
+[NuGet WebView2 SDK 1.0.1150.38 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1150.38)
+
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 WebView2 运行时版本 99.0.1150.38 或更高版本。
 
 ### <a name="general"></a>概要
 
 #### <a name="promotions"></a>促销
-  
+
 以下项现在稳定：
 
 *   可让开发人员处理基本 HTTP 身份验证请求和响应的 [BasicAuthentication API](/microsoft-edge/webview2/reference/win32/icorewebview2_10?view=webview2-1.0.1150.38&preserve-view=true) 。
-  
+
 
 <!-- ====================================================================== -->
 ## <a name="101189-prerelease"></a>1.0.1189-prerelease
-  
-发布日期：2022 年 3 月 10 日  
 
-[NuGet WebView2 SDK 1.0.1189-prerelease 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1189-prerelease)  
-  
-为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要Microsoft Edge版本 100.0.1189.0 或更高版本。  
+发布日期：2022 年 3 月 10 日
+
+[NuGet WebView2 SDK 1.0.1189-prerelease 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1189-prerelease)
+
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要Microsoft Edge版本 100.0.1189.0 或更高版本。
 
 ### <a name="general"></a>概要
 
 #### <a name="experimental-features"></a>实验功能
-  
+
 *   添加 [了 ContextMenuRequested API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease&preserve-view=true) ，使主机应用能够创建或修改其自己的上下文菜单。
 
-
 #### <a name="promotions"></a>促销
-  
-  
-以下 API 在此预发行版 SDK 中提升为稳定：  
+
+以下 API 在此预发行版 SDK 中提升为稳定：
 
 *    支持 CDP 方法调用的 sessionId 的 [CallDevToolsProtocolMethodForSession API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease&preserve-view=true#calldevtoolsprotocolmethodforsession) 。
 *   [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1189-prerelease&preserve-view=true)：
@@ -267,12 +271,14 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 *  [ExclusiveUserDataFolderAccess API](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2?view=webview2-1.0.1189-prerelease&preserve-view=true) 允许控制其他进程是否可以使用同一用户数据文件夹创建 WebView2。
 
 #### <a name="bug-fixes"></a>Bug 修复
-  
-*   修复了 WebView2 应用偶尔被 UWP 卡住的 bug。
-*   修复了关闭窗口模式的 **“查找** ”栏后焦点未返回到应用程序的 bug。  
-*   修复了 `DocumentTitleChanged` 未在单页应用中为向后/向前导航引发事件的 bug。  
-*   修复了 `HistoryChanged` 未为 Iframe 导航引发事件的 bug。  
 
+*   修复了 WebView2 应用偶尔被 UWP 卡住的 bug。
+*   修复了关闭窗口模式的 **“查找** ”栏后焦点未返回到应用程序的 bug。
+*   修复了 `DocumentTitleChanged` 未在单页应用中为向后/向前导航引发事件的 bug。
+*   修复了 `HistoryChanged` 未为 Iframe 导航引发事件的 bug。
+
+
+<!-- ====================================================================== -->
 ## <a name="10110844"></a>1.0.1108.44
 
 发布日期：2022 年 2 月 6 日
@@ -512,6 +518,7 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 以下项现在稳定：
 *  [PrintToPdf API](/microsoft-edge/webview2/reference/win32/icorewebview2_7?view=webview2-1.0.1020.30&preserve-view=true#printtopdf)。
 
+
 <!-- ====================================================================== -->
 ## <a name="1099228"></a>1.0.992.28
 
@@ -604,9 +611,9 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 #### <a name="promotions"></a>促销
 
 以下 API 在此预发行版 SDK 中提升为稳定：
-*  `IsSwipeNavigationEnabled`.
-*  `BrowserProcessExited`.
-*  `OpenBrowserTaskManager`.
+*  `IsSwipeNavigationEnabled`
+*  `BrowserProcessExited`
+*  `OpenBrowserTaskManager`
 
 
 <!-- ====================================================================== -->
