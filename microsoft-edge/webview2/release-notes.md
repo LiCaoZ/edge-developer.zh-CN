@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 05/09/2022
-ms.openlocfilehash: 2ae9515c37c535489b62ba80b539e651334088cb
-ms.sourcegitcommit: 62f55a8303644d4d3f2ea29e624efcc54f465aa1
+ms.date: 06/15/2022
+ms.openlocfilehash: bca36f35ef575ebc09ebb506e7b0adfc2c638bd2
+ms.sourcegitcommit: 754a4dda2a30bc64c366f3a62c2e73763b01ce45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "12521764"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "12595360"
 ---
 # <a name="release-notes-for-the-webview2-sdk"></a>WebView2 SDK 发行说明
 
@@ -39,6 +39,43 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 若要加载 WebView2，Microsoft Edge或 WebView2 运行时的最小版本为 86.0.616.0。  仅当 Web 平台中发生重大更改时，要加载 WebView2 的最小版本才会更改。
 
 若要使用预发行版 SDK 以及Microsoft Edge预览频道，请参阅[测试即将推出的 API 和功能](how-to/set-preview-channel.md)。
+
+
+<!-- ====================================================================== -->
+## <a name="10124522"></a>1.0.1245.22
+  
+发布日期：2022 年 6 月 15 日  
+  
+[NuGet WebView2 SDK 1.0.1245.22 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1245.22)  
+  
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 WebView2 运行时版本 102.1245.22 或更高版本。
+
+没有相应的预发行包。
+
+
+### <a name="general"></a>概要
+
+#### <a name="promotions"></a>促销
+
+以下项现在稳定：
+
+* 提供在应用程序级别信任服务器的 TLS 证书的选项的 [服务器证书 API](/microsoft-edge/webview2/reference/win32/icorewebview2_14?view=webview2-1.0.1245.22&preserve-view=true) 。 它会呈现页面，而不提示用户了解 TLS 或提供取消 Web 请求的功能。
+
+*  [ClearBrowsingData API](/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1245.22&preserve-view=true) 允许开发人员以编程方式清除持续时间内的特定数据类型：
+   * `clearBrowsingDataInTimeRange`
+   * `clearBrowsingDataAll`
+
+*  [HttpStatusCode API](/microsoft-edge/webview2/reference/win32/icorewebview2navigationcompletedeventargs2?view=webview2-1.0.1245.22&preserve-view=true)，它为事件中的导航请求`NavigationCompleted`提供 HTTP 状态代码。
+
+
+#### <a name="bug-fixes"></a>Bug 修复
+  
+*   修复了屏幕键盘的问题，即键盘在关闭后不会重新出现，方法是单击 **X** 按钮。 还修复了当用户在 WebView2 中从一个编辑控件切换到另一个编辑控件时键盘被关闭的问题。  ([问题 #460](https://github.com/MicrosoftEdge/WebView2Feedback/issues/460)) 
+*  修复了在脚本中使用代理 `AddHostObjectToScript` 时出现的问题。 如果调用 `setHostProperty` 失败，则可能会收到内部错误消息结构，而不是 JavaScript Error 对象。  
+*   修复了 WebView2 在 WebView2 可见时会从应用中窃取焦点的回归。   ([问题 #862](https://github.com/MicrosoftEdge/WebView2Feedback/issues/862))  
+*   修复了使用大型数据的事件导致内存使用量 `WebResourceRequested` 增加的 bug。  ([问题 #2171](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2171))  
+*   修复 `StatusBarTextChanged` 了回归。 [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1245.22&preserve-view=true) 再次与以前的版本兼容。  ([问题 #2414](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2414))    
+*   更好地支持以管理员身份运行的应用。 ([问题 #2356](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2356))  
 
 <!-- ====================================================================== -->
 
@@ -1274,7 +1311,7 @@ WebView2 SDK 是官方 Win32 C++ Beta 版本，它包含来自反馈的多个功
 *  添加了 `beforeunload` 对 JavaScript 对话框事件的对话类型的支持，并添加 [了CORE_WEBVIEW2_SCRIPT_DIALOG_KIND_BEFOREUNLOAD](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#core_webview2_script_dialog_kind) 枚举条目。
 *  将 [GetHeaders](/microsoft-edge/webview2/reference/win32/icorewebview2httprequestheaders?view=webview2-0.9.430&preserve-view=true#getheaders) 添加到 HttpRequestHeaders、 [GetHeader](/microsoft-edge/webview2/reference/win32/icorewebview2httpresponseheaders?view=webview2-0.9.430&preserve-view=true#getheader) 到 HttpResponseHeaders，并将 [get_HasCurrentHeader](/microsoft-edge/webview2/reference/win32/icorewebview2httpheaderscollectioniterator?view=webview2-0.9.430&preserve-view=true#get_hascurrentheader) 属性添加到 HttpHeadersCollectionIterator。
 *  > [!IMPORTANT]
-   > **中断性变更**：修改 `DevToolsProtocolEventReceived` 的行为。  现在，可以为特定[的 DevTools 协议事件创建 DevToolsProtocolEventReceiver](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-0.9.430&preserve-view=true)，并使用[add_DevToolsProtocolEventReceived](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-0.9.430&preserve-view=true#add_devtoolsprotocoleventreceived)/订阅/取消订阅此类事件[remove_DevToolsProtocolEventReceived](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-0.9.430&preserve-view=true#remove_devtoolsprotocoleventreceived)。
+   > **中断性变更**：修改 `DevToolsProtocolEventReceived` 的行为。  现在，可以为特定[的 DevTools 协议事件创建 DevToolsProtocolEventReceiver](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-0.9.430&preserve-view=true)，并使用[add_DevToolsProtocolEventReceived remove_DevToolsProtocolEventReceived](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-0.9.430&preserve-view=true#add_devtoolsprotocoleventreceived)/订阅/取消订阅此类事件。[](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-0.9.430&preserve-view=true#remove_devtoolsprotocoleventreceived)
 
 *  > [!IMPORTANT]
    > **中断性变更**：[将get_WebMessageAsString](/microsoft-edge/webview2/reference/win32/iwebview2webmessagereceivedeventargs?view=webview2-0.8.355&preserve-view=true#get_webmessageasstring)属性更改`WebMessageReceivedEventArgs`为 [TryGetWebMessageAsString](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs?view=webview2-0.9.430&preserve-view=true#trygetwebmessageasstring) 方法。
