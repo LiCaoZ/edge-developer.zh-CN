@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 06/15/2022
-ms.openlocfilehash: bca36f35ef575ebc09ebb506e7b0adfc2c638bd2
-ms.sourcegitcommit: 754a4dda2a30bc64c366f3a62c2e73763b01ce45
+ms.date: 06/14/2022
+ms.openlocfilehash: fea23a48acef92614c9d2a82073e062936d813fb
+ms.sourcegitcommit: 2f490a413cc74d2d8de6bc8c3c8d5cbf6d75b6a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "12595360"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "12595870"
 ---
 # <a name="release-notes-for-the-webview2-sdk"></a>WebView2 SDK 发行说明
 
@@ -44,11 +44,11 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 <!-- ====================================================================== -->
 ## <a name="10124522"></a>1.0.1245.22
   
-发布日期：2022 年 6 月 15 日  
+发布日期：2022 年 6 月 14 日  
   
 [NuGet WebView2 SDK 1.0.1245.22 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1245.22)  
   
-为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 WebView2 运行时版本 102.1245.22 或更高版本。
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 WebView2 运行时版本 102.0.1245.22 或更高版本。
 
 没有相应的预发行包。
 
@@ -62,8 +62,9 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 * 提供在应用程序级别信任服务器的 TLS 证书的选项的 [服务器证书 API](/microsoft-edge/webview2/reference/win32/icorewebview2_14?view=webview2-1.0.1245.22&preserve-view=true) 。 它会呈现页面，而不提示用户了解 TLS 或提供取消 Web 请求的功能。
 
 *  [ClearBrowsingData API](/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1245.22&preserve-view=true) 允许开发人员以编程方式清除持续时间内的特定数据类型：
-   * `clearBrowsingDataInTimeRange`
-   * `clearBrowsingDataAll`
+   * `ClearBrowsingData`
+   * `ClearBrowsingDataAll`
+   * `ClearBrowsingDataInTimeRange`
 
 *  [HttpStatusCode API](/microsoft-edge/webview2/reference/win32/icorewebview2navigationcompletedeventargs2?view=webview2-1.0.1245.22&preserve-view=true)，它为事件中的导航请求`NavigationCompleted`提供 HTTP 状态代码。
 
@@ -85,7 +86,7 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
   
 [NuGet WebView2 SDK 1.0.1210.39 的包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1210.39)  
   
-为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 WebView2 运行时版本 101.1210.39 或更高版本。
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 WebView2 运行时版本 101.0.1210.39 或更高版本。
 
 ### <a name="general"></a>概要
 
