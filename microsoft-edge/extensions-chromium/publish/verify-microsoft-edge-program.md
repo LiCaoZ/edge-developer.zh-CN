@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/09/2022
-ms.openlocfilehash: a2a1958eb40c93d8ce79a28ea84873eea535d18c
-ms.sourcegitcommit: 6e391333a3e37bb862ac6124ed154f779dbaf027
+ms.openlocfilehash: fc8a261228b9e5015065211d4e06e72bc5972733
+ms.sourcegitcommit: 1ef1d8c7126985a3fed5e2216a7fce159574e037
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "12589478"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "12599111"
 ---
 # <a name="verify-the-company-account-information-associated-with-your-microsoft-partner-center-account"></a>验证与 Microsoft 合作伙伴中心帐户关联的公司帐户信息
 
@@ -33,9 +33,9 @@ ms.locfileid: "12589478"
 
 电子邮件所有权验证主要联系人 (主电子邮件) 地址是否有效。
 
-* 主要联系人电子邮件地址必须是受监视并可发送/接收电子邮件的工作帐户。
-* 避免使用与公司域无关的个人电子邮件地址，例如 abc@gmail.com。
-* 避免使用未与电子邮件关联的租户用户凭据，此类asjsmith@testcompany microsoft.com。
+* 主要联系人电子邮件地址必须是受监视并可以发送和接收电子邮件的工作帐户。
+* 避免使用与公司域无关的个人电子邮件地址，例如 \<alias\>@contoso.com。
+* 避免使用未与电子邮件关联的租户用户凭据，例如 \<alias\>microsoft.com 上的@contoso。
 
 #### <a name="suggestions"></a>建议
 
