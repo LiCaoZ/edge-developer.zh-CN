@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/02/2022
-ms.openlocfilehash: 68828429815f7771b78b42215994eed1c7a19628
-ms.sourcegitcommit: c70c631c51743aac430832e39737baf9679b3ffb
+ms.openlocfilehash: 1007d63e9f727ded2338c8580799fe52222bf1c0
+ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "12478422"
+ms.lasthandoff: 06/23/2022
+ms.locfileid: "12610343"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -42,7 +42,7 @@ todo: add link to preprocessors capable of producing source maps when section is
 
 
 <!-- ====================================================================== -->
-## <a name="get-started-with-preprocessors"></a>使用预处理器Első lépések
+## <a name="get-started-with-preprocessors"></a>使用预处理器开始
 
 本文介绍如何在 **“源** ”工具中与 JavaScript 源映射交互。  <!--For a first overview of what preprocessors are, how each may help, and how source maps work; see Set Up CSS & JS Preprocessors.  -->
 
@@ -134,7 +134,7 @@ todo: add link to display the preprocessor support section when section is avail
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面 [在此](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) 处找到，由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和 [Paul Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Open Web Developer Advocate， Google： Tools， Performance， Animation， and UX) 创作。
+> 原始页面 [在此](https://developer.chrome.com/docs/devtools/javascript/source-maps/) 处找到，由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和 [Paul Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Open Web Developer Advocate， Google： Tools， Performance， Animation， and UX) 创作。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/06/2021
-ms.openlocfilehash: 931d6372221d53ddd5dc01b1abd703dc6ac0e558
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
-ms.translationtype: HT
+ms.openlocfilehash: 284fc3eb6a44b1154a41c32124fb80e84294312a
+ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12552993"
+ms.lasthandoff: 06/23/2022
+ms.locfileid: "12610462"
 ---
 <!-- Copyright Katherine Jackson
 
@@ -284,7 +284,7 @@ ms.locfileid: "12552993"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 在找到原始页面 `https://developers.google.com/web/tools/chrome-devtools/beginners/html` <!-- 404 now --> 由 [Katherine 并](https://developers.google.com/web/resources/contributors#katherine-jackson) 创作（技术编写员，Chrome DevTools）。
+> 原始页面是由[凯瑟琳杰克逊](https://developers.google.com/web/resources/contributors#katherine-jackson) (技术作家实习生，Chrome DevTools) 找到`https://developers.google.com/web/tools/chrome-devtools/beginners/html`和创作。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

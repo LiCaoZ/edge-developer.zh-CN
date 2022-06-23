@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: b50358adca7ee4860b30ec06aac7711e419439cd
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.openlocfilehash: 747d06189b0c8679e3e0aafee6e0613b5a889763
+ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12553334"
+ms.lasthandoff: 06/23/2022
+ms.locfileid: "12610217"
 ---
 <!-- Copyright Kayce Basques
 
@@ -190,7 +190,7 @@ _运行时性能_ 是页面在运行时的表现，而不是加载。  以下教
 
    这段代码的问题在于，在每个动画帧中，它都会改变每个图标的样式，然后查询每个图标在页面上的位置。  由于样式已更改，因此浏览器不知道每个图标位置是否已更改，因此必须重新布局图标才能计算新位置。
    <!--
-   > To learn more, see [Avoid forced synchronous layouts](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing#avoid_forced_synchronous_layouts).
+   > To learn more, see [Avoid forced synchronous layouts](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/#avoid-forced-synchronous-layouts).
    -->
 
 这有许多需要学习。  现在，已经为分析运行时性能的基本工作流程打下了坚实的基础。  太棒了。
@@ -201,37 +201,37 @@ _运行时性能_ 是页面在运行时的表现，而不是加载。  以下教
 使用刚刚学习的工作流和工具，单击演示中的 **“优化** ”以打开优化的代码，进行另一个性能录制，然后分析结果。  从改进的帧速率到“**主**”节中绘制图表事件的减少，应用的优化版本执行的工作要少得多，从而产生更好的性能。
 
 即使是优化的版本也不是很好，因为它会操作 `top` 每个图标的属性。  更好的方法是保留仅影响合成的属性。
-<!--  > For more information, see [Use transform and opacity changes for animations](https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count#use_transform_and_opacity_changes_for_animations). todo: add rendering section when available -->
+<!--  > For more information, see [Use transform and opacity changes for animations](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/#use-transform-and-opacity-changes-for-animations). todo: add rendering section when available -->
 
 
 <!-- ====================================================================== -->
 ## <a name="next-steps"></a>后续步骤
 
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.
-To learn more, see [Measure Performance With The RAIL Model](https://developers.google.com/web/fundamentals/performance/rail). -->
+To learn more, see [Measure Performance With The RAIL Model](https://web.dev/rail/). -->
 
 为了更加熟悉**性能**工具，需要多加练习。  试着对页面进行剖析并分析结果。  如果对结果有任何疑问，请使用 **“发送反馈**”图标、按`Alt``Shift``I`++ (Windows、Linux) 或`Option``Shift`++`I` (macOS) ，或[在 DevTools 团队中发布推文](https://twitter.com/intent/tweet?text=@EdgeDevTools)。  如果可能，请包括屏幕截图或指向可重现页面的链接。
 
 ![Microsoft Edge 开发人员工具中的**反馈**图标](../media/evaluate-performance-feedback-icon.msft.png)
 
-<!-- To really become an expert in runtime performance, you must learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance Overview](https://developers.google.com/web/fundamentals/performance/rendering).  [The Anatomy Of A Frame](https://aerotwist.com/blog/the-anatomy-of-a-frame/) dives into even more detail. -->
+<!-- To really become an expert in runtime performance, you must learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance](https://web.dev/rendering-performance/).  [The Anatomy Of A Frame](https://aerotwist.com/blog/the-anatomy-of-a-frame/) dives into even more detail. -->
 
 最后，可通过多种方法来改善运行时性能。  本文重点介绍一个特定的动画瓶颈，让你重点了解 **性能** 工具，但这只是你可能会遇到的许多瓶颈之一。  <!--  The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:  -->
 
 <!--
-* [Optimizing JS Execution](https://developers.google.com/web/fundamentals/performance/rendering/optimize-javascript-execution)
-* [Reduce The Scope And Complexity Of Style Calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)
-* [Avoid Large, Complex Layouts And Layout Thrashing](/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing)
-* [Simplify Paint Complexity And Reduce Paint Areas](/web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas)
-* [Stick To Compositor-Only Properties And Manage Layer Count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count)
-* [Debounce Your Input Handlers](/web/fundamentals/performance/rendering/debounce-your-input-handlers)
+* [Optimize JavaScript execution](https://web.dev/optimize-javascript-execution/)
+* [Reduce the scope and complexity of style calculations](https://web.dev/reduce-the-scope-and-complexity-of-style-calculations/)
+* [Avoid large, complex layouts and layout thrashing](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/)
+* [Simplify paint complexity and reduce paint areas](https://web.dev/simplify-paint-complexity-and-reduce-paint-areas/)
+* [Stick to Compositor-Only Properties and Manage Layer Count](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/)
+* [Debounce your input handlers](https://web.dev/debounce-your-input-handlers/)
 -->
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
+> 原始页面位于[此处](https://developer.chrome.com/docs/devtools/evaluate-performance/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

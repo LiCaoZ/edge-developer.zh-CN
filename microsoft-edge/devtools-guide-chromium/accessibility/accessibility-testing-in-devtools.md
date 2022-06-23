@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: a9c211d338a4f7b1293222f8af6a3894cde88a5f
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 439c806aa259db0d61e283c4c7cdd216074ba439
+ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514277"
+ms.lasthandoff: 06/23/2022
+ms.locfileid: "12610392"
 ---
 # <a name="overview-of-accessibility-testing-using-devtools"></a>使用 DevTools 的辅助功能测试概述
 
@@ -121,7 +121,7 @@ ms.locfileid: "12514277"
 <!-- ====================================================================== -->
 ## <a name="limits-of-automated-testing"></a>自动测试的限制
 
-[问题工具](../issues/index.md)、[辅助功能Insights](https://accessibilityinsights.io)和 [Lighthouse](https://developers.google.com/web/tools/lighthouse/) 是自动为网页生成辅助功能报告的工具。  从此类工具获取自动报表只是辅助功能测试旅程的开始。
+[问题工具](../issues/index.md)、[辅助功能Insights](https://accessibilityinsights.io)和 [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) 是自动为网页生成辅助功能报告的工具。  从此类工具获取自动报表只是辅助功能测试旅程的开始。
 
 辅助功能是关于人际交互的， 不同需求的人在各种技术环境中使用你的产品。  此测试不能完全自动化，但需要由导航产品的人进行验证。  在最佳方案中，可以访问具有不同辅助功能需求的测试人员和使用各种环境的测试人员。  但是，通过使用键盘导航和检查页面的不同部分，你已可以自行执行很多操作。
 

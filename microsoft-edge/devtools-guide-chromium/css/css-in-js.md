@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/25/2021
-ms.openlocfilehash: bd8d3bbc457c88741bd6f96fadb6a4969200765e
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.openlocfilehash: c0295c786c69fd3c75d36d4eadf716ffef1003c0
+ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12553685"
+ms.lasthandoff: 06/23/2022
+ms.locfileid: "12610833"
 ---
 <!-- Copyright Alex Rudenko
 
@@ -87,7 +87,7 @@ function addStyle() {
 <!-- ====================================================================== -->
 ## <a name="what-is-css-in-js"></a>什么是 CSS in-JS？
 
-本部分摘自博客帖子 [DevTools 中的 CSS in-JS 支持](https://developers.google.com/web/updates/2021/02/css-in-js)。
+本部分摘自博客帖子 [DevTools 中的 CSS in-JS 支持](https://developer.chrome.com/blog/css-in-js/)。
 
 以下是 _CSS in-JS_ 的含义，以及它与常规 CSS 有何不同。  _CSS in-JS_ 的定义有些模糊。  从广义上讲，这是一种使用 JavaScript 管理 CSS 代码的方法。  例如，这可能意味着使用 JavaScript 定义 CSS 内容，并且最终的 CSS 输出由应用即时生成。
 

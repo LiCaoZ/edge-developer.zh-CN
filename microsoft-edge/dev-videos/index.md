@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/24/2022
-ms.openlocfilehash: 1d111bddd20c99299a55e2d7cfc7e3bf31c1ee54
-ms.sourcegitcommit: 8a284be9a060a8b09121275a2491a30eda9156b4
+ms.openlocfilehash: 27853fe587a3a348dcab2a5fd8f267630a3aeba5
+ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "12584605"
+ms.lasthandoff: 06/23/2022
+ms.locfileid: "12610224"
 ---
 # <a name="videos-about-web-development-with-microsoft-edge"></a>有关使用 Microsoft Edge 进行 Web 开发的视频
 
@@ -33,6 +33,24 @@ To add a new video:
 - Add a markdown image below the date, with the thumbnail you added before, and link this image tag to the YouTube video.
 - Place the description below that, fixing any links that came from YouTube and that might have been shortened.
 -->
+
+
+<!-- ====================================================================== -->
+## <a name="devtools---debug-the-web-in-3d"></a>DevTools - 以 3D 调试 Web
+
+_发布于 2022 年 6 月 21 日。_
+
+[![TDevTools 3D 视图工具视频的 humbnail 图像](./images/3d-view-tool.png)](https://www.youtube.com/watch?v=LVb1Xzzd72w)
+
+Microsoft Edge DevTools 中的 **3D 视图**工具提供要检查的网页的三维表示形式。  使用 **3D 视图** 工具调试常见的 Web 开发问题，例如：
+
+* 深嵌 DOM 节点。
+* 文档外元素。
+* 不需要的滚动条。
+* Z 索引堆叠问题。
+* 复合层性能。
+
+若要详细了解 3D 视图工具，请 [使用 3D 视图工具查看导航网页层、z 索引和 DOM](../devtools-guide-chromium/3d-view/index.md)，或 [使用 3D 视图工具调试 3D 中的 Web](https://blogs.windows.com/msedgedev/2022/06/21/debug-the-web-in-3d-with-the-3d-view-tool/)。
 
 
 <!-- ====================================================================== -->

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 08cb2e47a4edd241bb053f015c40d5ae640ea964
-ms.sourcegitcommit: c264a31a0809cacec22a42214f7949bba85e6b51
+ms.openlocfilehash: 86dea53e018c56c49e27974dbceffc684e9e27e9
+ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "12472924"
+ms.lasthandoff: 06/23/2022
+ms.locfileid: "12610945"
 ---
 <!-- Copyright Kayce Basques
 
@@ -66,7 +66,7 @@ ms.locfileid: "12472924"
 | 硬刷新 | `Ctrl`+`F5` 或 `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |
 | 在当前窗格中搜索文本。  **审核**、** 应用程序 **和**安全**工具不支持 | `Ctrl`+`F` | `Command`+`F` |
 | 在“[抽屉](../customize/index.md#drawer)”中打开“**搜索**”选项卡，可以在所有加载的资源中搜索文本 | `Ctrl`+`Shift`+`F` | `Command`+`Option`+`F` |
-| 在 **"源** "工具中打开文件 | `Ctrl`+`O` 或 `Ctrl`+`P` | `Command`+`O` 或 `Command`+`P` |
+| 在 **“源** ”工具中打开文件 | `Ctrl`+`O` 或 `Ctrl`+`P` | `Command`+`O` 或 `Command`+`P` |
 | 放大 | `Ctrl`+`Shift`+`+` | `Command`+`Shift`+`+` |
 | 缩小 | `Ctrl`+`-` | `Command`+`-` |
 | 还原默认缩放级别 | `Ctrl`+`0` | `Command`+`0` |
@@ -97,16 +97,16 @@ ms.locfileid: "12472924"
 | 操作 | Windows/Linux | macOS |
 |---|---|---|
 | 转到声明属性值的行 | 按住 `Control`，然后单击属性值 | 按住 `Command`，然后单击属性值 |
-| 循环显示颜色值的 RBGA、HSLA 和 Hex 表示形式 | 按住 `Shift`，然后单击值旁边的 **"颜色预览** "框 | 按住 `Shift`，然后单击值旁边的 **"颜色预览** "框 |
+| 循环显示颜色值的 RBGA、HSLA 和 Hex 表示形式 | 按住 `Shift`，然后单击值旁边的 **“颜色预览** ”框 | 按住 `Shift`，然后单击值旁边的 **“颜色预览** ”框 |
 | 选择下一个/上一个属性或值 | 单击属性名称或值，然后按 `Tab` / `Shift`+`Tab` | 单击属性名称或值，然后按 `Tab` / `Shift`+`Tab` |
 | 将属性值递增/减 0.1 | 单击某个值，然后按下 `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | 单击一个值，然后按 `Option`+`Up Arrow` /Option+向下键 |
 | 将属性值递增/减 1 | 单击某个值，然后按下 `Up Arrow` / `Down Arrow` | 单击某个值，然后按下 `Up Arrow` / `Down Arrow` |
 | 将属性值递增/减 10 | 单击某个值，然后按下 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | 单击某个值，然后按下 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |
 | 将属性值递增/减 100 | 单击某个值，然后按下 `Ctrl`+`Up Arrow` / `Ctrl`+`Down Arrow` | 单击某个值，然后按下 `Command`+`Up Arrow` / `Command`+`Down Arrow` |
-| 循环浏览)  (度、渐变 (渐变) 、弧度 (半径) ， (转) 角度值的表示形式 | 按住 `Shift` ，然后单击值旁边的 **"角度预览** "框 | 按住 `Shift` ，然后单击值旁边的 **"角度预览** "框 |
-| 将角度值递增/递减 1 | 单击值旁边的 **"角度预览** "框，然后按下 `Up Arrow` / `Down Arrow` | 单击值旁边的 **"角度预览** "框，然后按下 `Up Arrow` / `Down Arrow` |
-| 将角度值递增/递减 10 | 单击值旁边的 **"角度预览** "框，然后按下 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | 单击值旁边的 **"角度预览** "框，然后按下 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |
-| 将角度值递增/递减 15 | 单击值旁边的 **"角度预览**"框，然后在 **"角度时钟覆盖**"上单`Shift`击/鼠标幻灯片 | 单击值旁边的 **"角度预览**"框，然后在 **"角度时钟覆盖**"上单`Shift`击/鼠标幻灯片 |
+| 循环浏览)  (度、渐变 (渐变) 、弧度 (半径) ， (转) 角度值的表示形式 | 按住 `Shift` ，然后单击值旁边的 **“角度预览** ”框 | 按住 `Shift` ，然后单击值旁边的 **“角度预览** ”框 |
+| 将角度值递增/递减 1 | 单击值旁边的 **“角度预览** ”框，然后按下 `Up Arrow` / `Down Arrow` | 单击值旁边的 **“角度预览** ”框，然后按下 `Up Arrow` / `Down Arrow` |
+| 将角度值递增/递减 10 | 单击值旁边的 **“角度预览** ”框，然后按下 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | 单击值旁边的 **“角度预览** ”框，然后按下 `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |
+| 将角度值递增/递减 15 | 单击值旁边的 **“角度预览**”框，然后在 **“角度时钟覆盖**”上单`Shift`击/鼠标幻灯片 | 单击值旁边的 **“角度预览**”框，然后在 **“角度时钟覆盖**”上单`Shift`击/鼠标幻灯片 |
 
 
 <!-- ====================================================================== -->
@@ -170,7 +170,7 @@ ms.locfileid: "12472924"
 | 清除“**控制台**” | `Ctrl`+`L` | `Command`+`K` 或 `Option`+`L` |
 | 强制多行输入。  该快捷方式通常是不需要的，因为默认情况下，开发工具应该检测多行方案 | `Shift`+`Enter` | `Command`+`Return` |
 | 运行 | `Enter` | `Return` |
-| 展开记录到控制台的对象的所有子属性 | 按住 `Alt`，然后单击" **展开** (![。](../media/expand-icon.msft.png))  | 按住 `Alt`，然后单击" **展开** (![。](../media/expand-icon.msft.png)) 。 |
+| 展开记录到控制台的对象的所有子属性 | 按住 `Alt`，然后单击“ **展开** (![。](../media/expand-icon.msft.png))  | 按住 `Alt`，然后单击“ **展开** (![。](../media/expand-icon.msft.png)) 。 |
 
 
 <!-- ====================================================================== -->
@@ -184,7 +184,7 @@ ms.locfileid: "12472924"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/shortcuts)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
+> 原始页面位于[此处](https://developer.chrome.com/docs/devtools/shortcuts/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

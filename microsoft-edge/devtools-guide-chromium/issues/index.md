@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/24/2021
-ms.openlocfilehash: 411aef03bdcd17964aea55a46a2cb2a546487805
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: e69a28f54c8b1e35113ca469bd640176180ab2d0
+ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514683"
+ms.lasthandoff: 06/23/2022
+ms.locfileid: "12610826"
 ---
 <!-- Copyright Sam Dutton
 
@@ -62,7 +62,7 @@ ms.locfileid: "12514683"
 
 有几种其他方法可以打开 **“问题”** 工具：
 *  单击主面板或**抽屉**中的“**更多工具** (**+**) 菜单，然后选择 **”问题**”。
-*  选择 **“自定义”并控制 DevToolsMore** >  **工具** > **Issues**。
+*  选择 **“自定义并控制 DevTools** > **更多工具** > **问题**”。
 *  在 **Elements** 工具的 DOM 树中，按 `Shift` 下并单击波浪下划线元素名称。  或者，打开波浪下划线元素上的上下文菜单，然后选择 **“查看”问题**。
 
 
@@ -106,7 +106,7 @@ ms.locfileid: "12514683"
 
 1. 如上一部分所述，打开演示页，然后在“ **问题** ”工具中展开问题。
 
-1. 在**受影响的** **RESOURCESOpen** >  中，选择工具名称。  受影响的资源显示在所选工具中：
+1. 在 **受影响的资源** > **中打开**，选择工具名称。  受影响的资源显示在所选工具中：
 
    ![选择一个工具，从“问题”工具中打开受影响的资源](media/affected-resource-opens-elements-tool.png)
 
@@ -191,6 +191,6 @@ ms.locfileid: "12514683"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面 [在此](https://developers.google.com/web/tools/chrome-devtools/issues/index) 处找到，由 [Sam Dutton](https://developers.google.com/web/resources/contributors#sam-dutton) (开发大使) 创作。
+> 原始页面 [在此](https://developer.chrome.com/docs/devtools/issues/) 处找到，由 [Sam Dutton](https://developers.google.com/web/resources/contributors#sam-dutton) (开发大使) 创作。
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

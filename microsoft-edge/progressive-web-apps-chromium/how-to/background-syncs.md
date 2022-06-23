@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 ms.date: 09/14/2021
-ms.openlocfilehash: 4e9d88263d54eb4caace328e6bf5947bd625541f
-ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
+ms.openlocfilehash: 609f8c218368d68130682db136df49afde7cdf10
+ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "12550786"
+ms.lasthandoff: 06/23/2022
+ms.locfileid: "12610966"
 ---
 # <a name="synchronize-and-update-a-pwa-in-the-background"></a>在后台同步和更新PWA
 
@@ -293,7 +293,7 @@ navigator.serviceWorker.ready.then(async registration => {
 
 `my-download-id`上图应是此后台提取的唯一字符串标识符。 `fileUrls` 是要下载的文件列表，这将是字符串 URL 的数组。 并且 `options` 是一个对象，可用于自定义浏览器中下载活动的外观。
 
-有关该函数的 `fetch` 详细信息，请参阅 [BackgroundFetchManager.fetch () ](https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/fetch) 和 [Background Fetch 简介](https://developers.google.com/web/updates/2018/12/background-fetch)。
+有关该函数的 `fetch` 详细信息，请参阅 [BackgroundFetchManager.fetch () ](https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/fetch) 和 [Background Fetch 简介](https://developer.chrome.com/blog/background-fetch/)。
 
 
 <!-- ====================================================================== -->

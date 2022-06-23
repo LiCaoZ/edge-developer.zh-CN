@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: fc1c8753096d0416254f728fc166956e6fa4d215
-ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
+ms.openlocfilehash: 7da2e64c48d11dbdc3ce0ef26e1782d290db5930
+ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "12551461"
+ms.lasthandoff: 06/23/2022
+ms.locfileid: "12610273"
 ---
 <!-- Copyright Rob Dodson
 
@@ -338,7 +338,7 @@ Lighthouse 报表分为与每个审核类别对应的部分。  报告打开时�
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面 [在此](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) 处找到，由 [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (参与者、Google WebFundamentals) 创作。
+> 原始页面 [在此](https://developer.chrome.com/docs/devtools/accessibility/navigation/) 处找到，由 [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (参与者、Google WebFundamentals) 创作。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

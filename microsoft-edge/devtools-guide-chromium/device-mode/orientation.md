@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 3777a0a8bd807f2fef6c238535307a1a6710a016
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.openlocfilehash: 77fa873c7b272593ed4d6a5112c3b2c064e1e89b
+ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12553263"
+ms.lasthandoff: 06/23/2022
+ms.locfileid: "12610567"
 ---
 <!-- Copyright Kayce Basques
 
@@ -43,7 +43,7 @@ ms.locfileid: "12553263"
 ![从方向列表中选择“纵向倒置”。](../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png)
 
 如果选择 **“自定义方向**”`alpha``beta`，则启用旋转轴字段和`gamma`旋转轴字段。
-<!--To understand how each axis works, see [Device Orientation & Motion - Rotation data](https://developers.google.com/web/fundamentals/native-hardware/device-orientation#rotation_data). -->
+<!--To understand how each axis works, see [Device Orientation & Motion - Rotation data](https://web.dev/native-hardware-device-orientation/#rotation-data). -->
 <!-- todo: link to a local copy of that article section when available; see "original page" below -->
 还可以通过拖动 **方向模型**来设置自定义方向。  例如，若要沿 `alpha` 轴旋转，请在拖动前按住 `Shift` ：
 
@@ -53,7 +53,7 @@ ms.locfileid: "12553263"
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/device-mode/orientation)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
+> 原始页面位于[此处](https://developer.chrome.com/docs/devtools/device-mode/orientation/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

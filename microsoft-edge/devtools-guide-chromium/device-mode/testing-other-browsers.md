@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 27e4b3fa2e0fdc6640b06a456e69df0b04f0884e
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.openlocfilehash: f348cf973347f47a36ba9b8b565141bfb6316a3d
+ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12553614"
+ms.lasthandoff: 06/23/2022
+ms.locfileid: "12610707"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -142,7 +142,7 @@ Microsoft Edge (EdgeHTML) 虚拟机 (VM) 使你能够通过 VirtualBox (或 VMWa
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面 [在这里](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) 找到，由 [梅金·科尔尼](https://developers.google.com/web/resources/contributors#meggin-kearney) (技术作家) 和 [保罗·巴考斯](https://developers.google.com/web/resources/contributors#paul-bakaus) (开放 Web 开发大使在谷歌|工具、性能、动画、UX) 。
+> 原始页面 [在这里](https://developer.chrome.com/docs/devtools/device-mode/testing-other-browsers/) 找到，由 [梅金·科尔尼](https://developers.google.com/web/resources/contributors#meggin-kearney) (技术作家) 和 [保罗·巴考斯](https://developers.google.com/web/resources/contributors#paul-bakaus) (开放 Web 开发大使在谷歌|工具、性能、动画、UX) 。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

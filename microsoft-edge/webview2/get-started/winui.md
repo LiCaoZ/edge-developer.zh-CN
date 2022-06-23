@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: a097ac54079aa8f4bd7b91eea6bf79936a32c0eb
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.openlocfilehash: 47e07e2e6317df7831cf0758987c7775c0397aa2
+ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522187"
+ms.lasthandoff: 06/23/2022
+ms.locfileid: "12610952"
 ---
 # <a name="get-started-with-webview2-in-winui-3-windows-app-sdk-apps"></a>在 WinUI 3 (Windows 应用 SDK) 应用中使用 WebView2 开始
 
@@ -105,20 +105,11 @@ Return here and continue with the steps below.
 <!-- maintenance link; keep: main copy:
 [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 -->
-<!-- ====================================================================== -->
-## <a name="step-4---install-the-webview2-sdk"></a>步骤 4 - 安装 WebView2 SDK
-
-WebView2 SDK 会在上述步骤中自动安装，因为它是你安装的 WinUI 包的依赖项。  确认已为项目安装 WebView2 SDK，如下所示：
-
-1. 在上一步中打开**的NuGet 程序包管理器**中，确保选中了 **“包括预发行版**”复选框。  搜索 **Microsoft.Web.WebView2** (预发行版) ，然后单击搜索框下方的卡片。  如果需要，请在右侧单击“  **安装** (”或 **“更新**) ”按钮。
-
-如果需要，请在新窗口或选项卡中，参阅“_为 WebView2 设置开发环境_”中的[“安装 WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk)”，然后按照步骤操作。  从该页返回并继续以下步骤。
-
 
 <!-- ====================================================================== -->
-## <a name="step-5---add-a-webview2-control-to-your-project"></a>步骤 5 - 向项目添加 WebView2 控件
+## <a name="step-4---add-a-webview2-control-to-your-project"></a>步骤 4 - 向项目添加 WebView2 控件
 
-`MainWindow.xaml`将 WebView2 控件和`MainWindow.xaml.cs`文件编辑到示例应用，如下所示。
+WindowsAppSDK 包括 WebView2 SDK 和控件，不应单独安装 WebView2 SDK。 `MainWindow.xaml`将 WebView2 控件和`MainWindow.xaml.cs`文件编辑到示例应用，如下所示。
 
 1. 在Visual Studio中，在解决方案资源管理器中选择`MainWindow.xaml`在代码编辑器中打开它。
 
@@ -189,7 +180,7 @@ WebView2 SDK 会在上述步骤中自动安装，因为它是你安装的 WinUI 
 
 
 <!-- ====================================================================== -->
-## <a name="step-6---add-navigation-controls"></a>步骤 6 - 添加导航控件
+## <a name="step-5---add-navigation-controls"></a>步骤 5 - 添加导航控件
 
 若要允许用户控制 WebView2 控件中显示的网页，请将地址栏添加到示例应用，如下所示：
 
@@ -262,7 +253,7 @@ maintenance link (keep)
 * [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
 -->
 <!-- ====================================================================== -->
-## <a name="step-7---navigation-events"></a>步骤 7 - 导航事件
+## <a name="step-6---navigation-events"></a>步骤 6 - 导航事件
 
 在本部分中，将添加用于导入 WebView2 Core 库的代码。
 
@@ -335,7 +326,7 @@ WinRT `CoreWebView2` 对象可能无法与 WebView2 API 的版本一起使用。
 
 
 <!-- ====================================================================== -->
-## <a name="step-8---scripting"></a>步骤 8 - 脚本
+## <a name="step-7---scripting"></a>步骤 7 - 脚本
 
 可以在运行时使用主机应用将 JavaScript 代码注入 WebView2 控件。 可以让 WebView2 运行任意 JavaScript 或添加初始化脚本。 注入的 JavaScript 适用于所有新的顶级文档和任何子帧，直到删除 JavaScript。 注入的 JavaScript 使用特定的计时运行，以执行以下任一操作：
 

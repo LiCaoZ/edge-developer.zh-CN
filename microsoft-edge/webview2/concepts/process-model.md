@@ -7,19 +7,19 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/01/2022
-ms.openlocfilehash: 1a403c33f87f1771662df78d01fd1c27cedb1f9e
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.openlocfilehash: ec503395ff90a812a5d9227d14a9570a4d65ff1f
+ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12553707"
+ms.lasthandoff: 06/23/2022
+ms.locfileid: "12610679"
 ---
 # <a name="process-model-for-webview2-apps"></a>WebView2 应用的处理模型
 <!-- old title: # The WebView2 process model -->
 
 支持的平台：Win32、Windows 窗体、WinUI、WPF。
 
-WebView2 运行时使用与Microsoft Edge浏览器相同的进程模型。  此浏览器进程模型在 [浏览器体系](https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture) 结构中介绍，在内部 _查看新式 Web 浏览器 (第 1 部分) _。
+WebView2 运行时使用与Microsoft Edge浏览器相同的进程模型。  此浏览器进程模型在 [浏览器体系](https://developer.chrome.com/blog/inside-browser-part1/#browser-architecture) 结构中介绍，在内部 _查看新式 Web 浏览器 (第 1 部分) _。
 
 
 <!-- ====================================================================== -->
@@ -36,7 +36,7 @@ _WebView2 进程组_是 WebView2 运行时进程的集合。  WebView2 进程组
 
 呈现器进程的数量可能因以下条件而异：
 
-*  在 WebView2 运行时中使用 _站点隔离_ 功能。  请参阅 [每帧呈现器进程 - 站点隔离](https://developers.google.com/web/updates/2018/09/inside-browser-part1#site-isolation)。
+*  在 WebView2 运行时中使用 _站点隔离_ 功能。  请参阅 [每帧呈现器进程 - 站点隔离](https://developer.chrome.com/blog/inside-browser-part1/#site-isolation)。
 
 *  在使用相同用户数据文件夹的 WebView2 实例中呈现的不同断开连接的源数。
 
@@ -95,7 +95,7 @@ WebView2 运行时进程集合中的所有进程都绑定到浏览器进程，�
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-* [在内部查看新式 Web 浏览器 (第 1 部分) ](https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture) - WebView2 运行时和Microsoft Edge浏览器使用的浏览器进程模型。
+* [在内部查看新式 Web 浏览器 (第 1 部分) ](https://developer.chrome.com/blog/inside-browser-part1/#browser-architecture) - WebView2 运行时和Microsoft Edge浏览器使用的浏览器进程模型。
 * [WebView2 入门](../get-started/get-started.md)
 * [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。
 * [WebView2 API 参考](/dotnet/api/microsoft.web.webview2.wpf.webview2)

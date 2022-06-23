@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 2dcc8e743a0809bf0dd48700c7d2c6a4cd081a9b
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.openlocfilehash: 390140b9c8270b774edeff3fe1ca471d16cc7bb7
+ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12552818"
+ms.lasthandoff: 06/23/2022
+ms.locfileid: "12610910"
 ---
 <!-- Copyright Kayce Basques
 
@@ -284,7 +284,7 @@ lighthouse: 9 -->
 
 *  在编译流程中调整图像大小。
 
-*  在编译流程中创建每个图像的多个大小，然后在`srcset`代码中使用。  在运行时，浏览器会负责选择最适合设备的大小。  <!-- See [Relative-sized images](https://developers.google.com/web/fundamentals/design-and-ux/responsive/images#relative_sized_images). -->
+*  在编译流程中创建每个图像的多个大小，然后在`srcset`代码中使用。  在运行时，浏览器会负责选择最适合设备的大小。  <!-- See [Responsive images](https://web.dev/responsive-images/). -->
 
 *  使用图像 CDN，可以在发出请求时动态调整图像大小。
 
@@ -467,7 +467,7 @@ lighthouse: 9 -->
 <!-- ====================================================================== -->
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developers.google.com/web/tools/chrome-devtools/speed/get-started)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
+> 原始页面位于[此处](https://developer.chrome.com/docs/devtools/speed/get-started/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。
