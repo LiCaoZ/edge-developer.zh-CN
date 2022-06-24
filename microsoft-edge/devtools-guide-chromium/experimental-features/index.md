@@ -7,45 +7,32 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 no-loc:
 - Enable webhint
-ms.date: 05/24/2022
-ms.openlocfilehash: a4c6de8a5028ed8d2bde3eb322365cd1d88e9dc3
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.date: 06/21/2022
+ms.openlocfilehash: 5069022ebe9750d535666222d987dbabf56530c5
+ms.sourcegitcommit: 5438bc89031609ad4045a96476ae29718561bac0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12552789"
+ms.lasthandoff: 06/24/2022
+ms.locfileid: "12612299"
 ---
 # <a name="experimental-features"></a>试验功能
 
 <!-- 
 Policies to keep this page comprehensive and maintainable: 
-
 *  Include a visible h2 section for every checkbox that's in public-facing Microsoft Edge DevTools > Experiments page.  If no info, write a tautology as a starting point.  Add as needed, each month.
-
 *  Keep h2 sections in same order as DevTools > Settings > Experiments.
-
 *  In the heading and UI steps, keep the checkbox label UI string as it appears in the UI; do not revise or "fix" it.
-
 *  Don't change h2 text, that might break a link from UI.
-
 *  When a checkbox is removed from all the channels, delete its section.
 
-
 Steps to maintain this page monthly: For latest Stable, and for latest Canary:
-
 1. Go to edge://settings/help, update if needed.
-
-1. In Settings > Preferences, Restore Defaults.
-
-1. Open Edge Stable > Settings > Experiments.
-
-1. In the "Experiments which are turned on by default" section, update the Edge Stable & Edge Canary list at top.
-   *  Link down to the h2; do not link to some other page, here.
-
+1. In DevTools, select Settings > Preferences > Restore Defaults > Reload DevTools.
+1. In DevTools, go to Settings > Experiments.
+1. In the "Experiments which are turned on by default" section below, update the Edge Stable & Edge Canary list at top.
+   *  In that section, link down to the h2; do not link to a different article.
 1. Make sure the article has an h2 for each checkbox.
-
 1. In each h2 section, update the presence or absence of "not", and update the version #:
-
 This checkbox is|is not present in Microsoft Edge Stable v123.
 This checkbox is|is not present in Microsoft Edge Canary v123.
 -->
@@ -67,15 +54,16 @@ Microsoft Edge的所有[通道](/deployedge/microsoft-edge-channels)都具有实
 
 <!-- listed in order of the Settings > Experiments pane -->
 
-**默认情况下，Microsoft Edge稳定 v101 中启用：**
+**Microsoft Edge稳定 v102 中默认启用：**
 * [在应用程序面板中启用“报告 API”面板](#enable-reporting-api-panel-in-the-application-panel)
 * [在“更改”选项卡中显示更精确的更改](#display-more-precise-changes-in-the-changes-tab)
 * [样式窗格中 CSS 层的工具](#tooling-for-css-layers-in-the-styles-pane)
 * [Enable webhint](#enable-webhint)
 * [在元素中显示问题](#show-issues-in-elements)
+* [焦点模式](#focus-mode)
 * [在 Visual Studio Code 中的打开源文件](#open-source-files-in-visual-studio-code)
 
-**默认情况下，在 canary v104 Microsoft Edge启用：**
+**默认情况下，在 canary v105 Microsoft Edge启用：**
 * [在应用程序面板中启用“报告 API”面板](#enable-reporting-api-panel-in-the-application-panel)
 * [在“更改”选项卡中显示更精确的更改](#display-more-precise-changes-in-the-changes-tab)
 * [将 Lighthouse 面板与时间跨度和快照模式配合使用](#use-lighthouse-panel-with-timespan-and-snapshot-modes)
@@ -84,6 +72,7 @@ Microsoft Edge的所有[通道](/deployedge/microsoft-edge-channels)都具有实
 * [Enable webhint](#enable-webhint)
 * [在元素中显示问题](#show-issues-in-elements)
 * [在 Visual Studio Code 中的打开源文件](#open-source-files-in-visual-studio-code)
+* [启用键盘快捷方式编辑器](#enable-keyboard-shortcut-editor)
 
 <!-- don't place a comment line between list item lines, above; that would create a gap -->
 
@@ -164,8 +153,8 @@ Microsoft Edge的所有[通道](/deployedge/microsoft-edge-channels)都具有实
 
 某些Microsoft Edge加载项可以定义 DevTools 的自定义颜色主题。 如果使用主题安装加载项，则需要启用 **允许扩展来加载自定义样式表** 试验以查看加载项主题。
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -173,8 +162,8 @@ Microsoft Edge的所有[通道](/deployedge/microsoft-edge-channels)都具有实
 
 若要在运行时将 DOM 节点添加到 DOM 时捕获 JavaScript 堆栈跟踪，请启用此试验。 捕获的堆栈跟踪显示在 **“元素**”面板的 **“堆栈跟踪**”窗格中。
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -200,8 +189,8 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 1. **协议监视**器工具显示在 DevTools 底部的**抽屉**中。
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -211,68 +200,125 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 ![云解决方案提供商冲突工具。](index-images/csp-violations-tool.png)
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
 ## <a name="record-coverage-while-performance-tracing"></a>性能跟踪时记录覆盖范围
 
 记录性能跟踪时的覆盖范围。
-<!-- needs content, 0 hits in fts in this repo -->
+<!-- todo: need text -->
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
 ## <a name="show-option-to-take-heap-snapshot-where-globals-are-treated-as-root"></a>显示用于在其中将全局视为根的堆快照的选项
+<!-- older checkbox -->
 
 显示用于在其中将全局视为根的堆快照的选项。
-<!-- needs content -->
+<!-- todo: need text, except going away -->
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  Microsoft Edge Canary v105 中不存在此复选框。
+
+另请参阅：
+* [使用内存工具记录堆快照](../memory-problems/heap-snapshots.md)
 
 
 <!-- ====================================================================== -->
 ## <a name="show-backforward-cache-blocking-reasons-in-the-frame-tree-structure-view"></a>在帧树结构视图中显示后/向缓存阻止原因
+<!-- older checkbox -->
 
 是否在帧树结构视图中显示回/前缓存阻塞原因。
-<!-- needs content -->
+<!-- todo: need text, except going away -->
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  Microsoft Edge Canary v105 中不存在此复选框。
+
+另请参阅：
+* [用于管理存储的应用程序工具](../storage/application-tool.md)
+
+
+<!-- ====================================================================== -->
+## <a name="show-option-to-expose-internals-in-heap-snapshots"></a>显示用于在堆快照中公开内部的选项
+<!-- new in v105 -->
+
+是否显示复选框以在 **内存** 工具的堆快照中公开内部内容。
+<!-- todo: need text -->
+
+*  Microsoft Edge稳定 v102 中不存在此复选框。
+*  此复选框位于Microsoft Edge Canary v105 中。
+
+另请参阅：
+* [使用内存工具记录堆快照](../memory-problems/heap-snapshots.md)
+
+
+<!-- ====================================================================== -->
+## <a name="source-order-viewer"></a>源订单查看器
+<!-- new in v105 (restored; removed around v99) -->
+
+<!-- restored checkbox in v105.  March 1 2022 archive says:
+This checkbox is present in Microsoft Edge Stable v 98.
+This checkbox is not present in Microsoft Edge Canary v 100.
+restored/modified tagging from Feb 14 2022 archive: -->
+
+**源订单查看器** 是一个在网页源中显示元素顺序的试验。  屏幕上的显示顺序可能不同于源的顺序，这会混淆屏幕阅读器和键盘用户。  使用 **“源订单查看器”** 实验可查找屏幕显示顺序与源顺序之间的差异。
+
+若要使用 **源订单查看器，请执行以下操作**：
+
+1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
+
+1. 在 DevTools 的主工具栏上，选择 **“元素”** 选项卡。 如果“ **元素”** 选项卡不可见，请单击“ **更多”选项卡** (![“更多”选项卡图标。](../media/more-tabs-icon-light-theme.png)) 按钮，或者“ **更多工具** (![更多工具”图标。](../media/more-tools-icon-light-theme.png)) 按钮。
+
+1. 在“ **样式”** 选项卡右侧，单击 **“辅助功能”** 选项卡。
+
+1. 在 **“源订单查看器** ”部分下，选中 **“显示源订单** ”复选框。
+
+1. 突出显示任何 HTML 元素，以在网页源中显示顺序的叠加。
+
+! [辅助功能窗格中的源订单查看器。](../media/experiments-source-order-viewer.msft.png)
+<!-- todo: new screenshot? -->
+
+另请参阅：
+* [使用源订单查看器测试键盘支持](../accessibility/test-tab-key-source-order-viewer.md)
+
+<!-- / restored tagging -->
+
+*  Microsoft Edge稳定 v102 中不存在此复选框。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
 ## <a name="timeline-event-initiators"></a>时间线：事件发起程序
 
 是否在时间线中包含事件发起程序。
-<!-- needs content -->
+<!-- todo: need text -->
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
 ## <a name="timeline-webgl-based-flamechart"></a>时间线：基于 WebGL 的火焰图
 
 是否在时间线中使用基于 WebGL 的火焰图。
-<!-- needs content -->
+<!-- todo: need text -->
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
 ## <a name="webassembly-debugging-enable-dwarf-support"></a>WebAssembly 调试：启用 DWARF 支持
 
 启用对 WebAssembly 调试的 DWARF 支持。  请参阅 _DevTools (Microsoft Edge 80) 中的新增功能中改进的 _[WebAssembly 调试](../whats-new/2019/12/devtools.md#improved-webassembly-debugging)。
-<!-- Needs content. -->
+<!-- todo: need text -->
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -282,8 +328,8 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 有关 [调试，请参阅将已处理代码映射到原始源代码](../javascript/source-maps.md)。
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -297,8 +343,8 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 *  颜色的空间属性，包括文本和背景之间的感知对比度。
 *  上下文的空间属性，包括环境光线、周围环境和预期用途。
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 另请参阅：
 * [新的颜色对比度计算 - 高级感知对比度算法 (APCA) ](../whats-new/2021/01/devtools.md#new-color-contrast-calculation---advanced-perceptual-contrast-algorithm-apca) _在 DevTools 中的新增功能 (Microsoft Edge 89) _。
@@ -311,12 +357,14 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 
 在 **Elements** 工具中添加一个按钮，该按钮可在 DOM 树和辅助功能树之间切换。
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
 ## <a name="enable-the-font-editor-tool-within-the-styles-pane"></a>在“样式”窗格中启用字体编辑器工具
+<!-- keep "Enable the" in heading, though check box label says "Enable new".
+omit period, even though checkbox label has period -->
 
 可以使用可视 [字体编辑](../inspect-styles/edit-fonts.md) 器编辑字体。  使用它来定义字体和字体特征。  可视 **字体编辑器** 可帮助你执行以下操作：
 
@@ -339,28 +387,28 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 
 有关详细信息，请参阅"样式"窗格中[的"编辑 CSS 字体样式和设置"。](../inspect-styles/edit-fonts.md)
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
 ## <a name="enable-automatic-contrast-issue-reporting-via-the-issues-panel"></a>通过问题面板启用自动对比度问题报告
 
 在 **“问题** ”工具中启用自动对比度问题报告。
-<!-- Needs content. -->
+<!-- todo: need text -->
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
 ## <a name="enable-experimental-cookie-features"></a>启用实验性 Cookie 功能
 
 启用实验性 Cookie 功能。
-<!-- Needs content. -->
+<!-- todo: need text -->
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -368,8 +416,8 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 
 使用报告 API 捕获某些错误，例如安全违规或已弃用的 API 调用。 当用户访问您的站点并发送到服务器终结点时，会发生这些错误。 启用此试验可在**应用程序面板中**添加 **“报告 API**”部分，其中列出发送到终结点的所有报表。
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -377,28 +425,40 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 
 在 [“更改”选项卡中查看更精确的更改](https://developer.chrome.com/blog/new-in-devtools-98/#changes)。
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
 ## <a name="sync-css-changes-in-the-styles-pane"></a>“样式”窗格中的同步 CSS 更改
 
 是否在 **“元素**”工具的“**样式**”选项卡中同步 CSS 更改。
-<!-- Needs content. -->
+<!-- todo: need text -->
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
 ## <a name="local-overrides-for-response-headers"></a>响应标头的本地替代
 
 是否对响应标头使用本地替代。
-<!-- Needs content. -->
+<!-- todo: need text -->
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
+
+
+<!-- ====================================================================== -->
+## <a name="enable-css-authoring-hints-for-inactive-rules-deprecated-properties-etc"></a>为非活动规则、已弃用的属性等启用 CSS 创作提示。
+<!-- keep "etc." in heading, to match UI label -->
+<!-- new in v105 -->
+
+是否显示非活动规则和已弃用属性的 CSS 创作提示。
+<!-- todo: need text -->
+
+*  Microsoft Edge稳定 v102 中不存在此复选框。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -406,8 +466,8 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 
 将选择器添加到 Lighthouse 工具，以便在不同的报告模式之间切换。  目前支持导航和快照模式。
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 另请参阅：
 * [Lighthouse 工具](../lighthouse/lighthouse-tool.md)
@@ -418,8 +478,8 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 
 在“**样式**”窗格中添加了对 `@layer` CSS 规则的支持。  **样式**窗格中的 CSS 规则按它们所属的层进行分组。  将显示一个层概述小组件，其中显示了当前检查的元素的层树。
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -431,21 +491,32 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 
 <!-- https://developer.chrome.com/blog/new-in-devtools-102/#color-picker -->
 
-*  稳定 v101 Microsoft Edge中不存在此复选框。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 另请参阅：
 * 使用 _CSS 功能参考_中的[颜色选择器更改颜色](../css/reference.md#change-colors-with-the-color-picker)
 
 
 <!-- ====================================================================== -->
+## <a name="group-sources-into-authored-and-deployed-trees"></a>将源分组到“已创作”和“已部署”树中
+<!-- new in v105 -->
+
+控制是否将源分组到 **“已创作”** 和 **“已部署”** 树中。<!-- in the _ tab of the **Sources** tool. -->
+<!-- todo: need text -->
+
+*  Microsoft Edge稳定 v102 中不存在此复选框。
+*  此复选框位于Microsoft Edge Canary v105 中。
+
+
+<!-- ====================================================================== -->
 ## <a name="log-devtools-uncaught-exceptions-to-console"></a>将 DevTools 未捕获异常记录到控制台
 
 控制是否在 **控制台** 工具中记录 DevTools 未捕获异常。
-<!-- Needs content. -->
+<!-- todo: need text -->
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -464,8 +535,8 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 
 ![问题面板中的 webhint 反馈。](../media/experiments-webhint.msft.png)
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -473,8 +544,8 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 
 使此实验能够在 **Elements** 工具的 **DOM** 视图中查看 HTML 下的语法错误。 有关详细信息，请参阅 [Wavy 下划线，突出显示“元素”工具中的代码问题和改进](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool)。
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -488,8 +559,8 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 
 请参阅 [使用焦点模式降低 DevTools 的复杂性](focus-mode.md)。
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -503,8 +574,8 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 
 在 DevTools 中进行的任何编辑现在会更改硬盘上的文件，并使用Visual Studio Code进行实时同步。 可以在打开Visual Studio Code[中的源文件中](../sources/opening-sources-in-vscode.md)了解如何设置工作区。
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -517,8 +588,8 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 *  _已缩小_的文件串联到一条长行中。
 *  相比之下， _漂亮的打印_ 以缩进的、更人性化的可读格式呈现文件的内容。
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ============================================================================================================================================ -->
@@ -530,40 +601,58 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 ## <a name="ignore-list-for-javascript-frames-on-timeline"></a>忽略时间线上 JavaScript 帧的列表
 
 是否在时间线上包含 JavaScript 帧的忽略列表。
-<!-- Needs content. -->
+<!-- todo: need text -->
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
 ## <a name="input-events-on-timeline-overview"></a>时间线上的输入事件概述
 
 控制是否在时间线概述中包含输入事件。
-<!-- Needs content. -->
+<!-- todo: need text -->
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
 ## <a name="live-heap-profile"></a>实时堆配置文件
 
 控制是否实时更新堆配置文件。
-<!-- Needs content. -->
+<!-- todo: need text -->
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
+
+另请参阅：
+* [使用内存工具记录堆快照](../memory-problems/heap-snapshots.md)
 
 
 <!-- ====================================================================== -->
 ## <a name="sampling-heap-profiler-timeline"></a>采样堆探查器时间线
 
 控制是否显示采样堆探查器时间线。
-<!-- Needs content. -->
+<!-- todo: need text -->
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
+
+另请参阅：
+* [使用内存工具记录堆快照](../memory-problems/heap-snapshots.md)
+
+
+<!-- ====================================================================== -->
+## <a name="enable-keyboard-shortcut-editor"></a>启用键盘快捷方式编辑器
+
+是否启用编辑键盘快捷方式。
+
+另请参阅：
+* [自定义键盘快捷方式](../customize/shortcuts.md)
+
+*  Microsoft Edge稳定 v102 中不存在此复选框。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -571,8 +660,8 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 
 控制是否在时间线上显示无效跟踪。
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -580,8 +669,8 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 
 控制是否在时间线上显示所有事件。
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -589,8 +678,8 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 
 控制是否在时间线上显示 v8 运行时调用统计信息。
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -598,8 +687,8 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 
 控制是否在时间线上重播输入事件。
 
-*  此复选框位于Microsoft Edge稳定 v101 中。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  此复选框位于“稳定”v102 Microsoft Edge中。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -607,8 +696,8 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 
 是否在测试断点处停止。  此试验使断点更可靠。
 
-*  稳定 v101 Microsoft Edge中不存在此复选框。
-*  此复选框位于Microsoft Edge Canary v104 中。
+*  Microsoft Edge稳定 v102 中不存在此复选框。
+*  此复选框位于Microsoft Edge Canary v105 中。
 
 另请参阅：
 * [在检测断点上启用同步](https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/3470237)

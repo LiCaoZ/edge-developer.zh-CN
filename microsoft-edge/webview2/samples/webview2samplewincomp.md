@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2022
-ms.openlocfilehash: 90acc9d7273e50e0cae6d0d46d50b04076b6e34e
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.date: 06/14/2022
+ms.openlocfilehash: 20a06ccca51df3631a47133b39e4e31c84124588
+ms.sourcegitcommit: 5438bc89031609ad4045a96476ae29718561bac0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522362"
+ms.lasthandoff: 06/24/2022
+ms.locfileid: "12612201"
 ---
 # <a name="webview2-sample-win32-c-app-with-visual-composition"></a>WebView2 示例：使用 Visual Composition 的 Win32 C++ 应用
 
@@ -20,9 +20,9 @@ ms.locfileid: "12522362"
 
 它构建为 Win32 Visual Studio 2019 项目，在 WebView2 环境中同时使用 C++ 和 HTML/CSS/JavaScript。
 
-它还使用Windows 运行时组合 API (也称为视觉对象层) ，以提升Windows UI 功能，并在 C++ Win32 应用程序中创建更好的外观、感觉和功能。
+它还使用Windows 运行时组合 API (也称为视觉对象层) ，以利用 Windows UI 功能，并在 C++ Win32 应用程序中创建更好的外观、感觉和功能。
 
-Directory &amp; .sln： **WebView2SampleWinComp/WebView2SampleWinComp.sln**。
+&amp; `.sln`目录：**WebView2SampleWinComp/WebView2SampleWinComp.sln**。
 
 
 **若要使用此示例 (常规用途步骤) ：**
@@ -69,56 +69,103 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 
 
 <!-- ====================================================================== -->
-## <a name="step-5---open-sln-in-visual-studio"></a>步骤 5 - 在 Visual Studio 中打开 .sln
+## <a name="step-5---open-the-solution-and-set-the-windows-sdk-target"></a>步骤 5 - 打开解决方案并设置Windows SDK 目标
 
 1. 在本地驱动器上`.sln`，在目录中打开Visual Studio中的文件：
 
-   *  `<your-repos-directory>/WebView2Samples/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
+   * `<your-repos-directory>/WebView2Samples/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
 
    或者：
 
-   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
+   * `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
 
-   可能会显示“ **查看解决方案操作”** 对话框：
+   可能会打开“**查看解决方案操作”** 对话框，提示安装Windows SDK 将项目重定向到：
 
-   ![“查看解决方案操作”对话框。](media/webview2samplewincomp-review-solution-actions.png)
+   ![“查看解决方案操作”对话框。](webview2samplewincomp-images/review-solution-actions.png)
 
-1. 单击 **“确定”** 按钮。
+1. 在**Windows SDK 版本**下拉列表中，选择 **10.0.20348.0** 或更高版本，或 **10.0.18362.0** 或更早版本;不要选择 **10.0.19041.0**。  然后单击 **“确定”** 按钮。  如果这些版本不可用，请执行下面的“安装Windows SDK”部分中的步骤。  否则，请跳到下面的部分。
 
+如果解决方案已打开，可按如下所示更改目标：
 
-<!-- ====================================================================== -->
-## <a name="step-6---install-workloads-if-prompted"></a>步骤 6 - 如果出现提示，请安装工作负载
-
-1. 如果出现提示，请安装请求的任何Visual Studio工作负荷。  在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发人员环境_时[安装Visual Studio工作负荷](../how-to/machine-setup.md#install-visual-studio-workloads)。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
-
-   解决方案资源管理器显示 **WebView2SampleWinComp** 项目。
-
-   <!-- Solution Explorer shows the **WebView2SampleWinComp** project: -->
-
-   <!-- ![The WebView2SampleWinComp sample opened in Visual Studio in Solution Explorer.](media/webview2samplewincomp-in-solution-explorer.png) -->
-   <!--todo: create png-->
+*  在**解决方案资源管理器**中，右键单击 **WebView2SampleWinComp** 项目 (解决方案) ，然后单击 **“重定向项目**”。
 
 
 <!-- ====================================================================== -->
-## <a name="step-7---view-the-opened-project"></a>步骤 7 - 查看打开的项目
+## <a name="step-6---install-the-windows-sdk"></a>步骤 6 - 安装Windows SDK
 
-项目在Visual Studio中打开：
+默认情况下，此示例应用使用已安装的最新 Window 10 SDK 版本。  Windows 10 SDK 版本 2004 (10.0 存在问题。**19041.0**) ，将阻止此示例应用生成。  如果遇到此问题，请安装 (并将此项目重新定向为使用) 更高版本，例如 Windows 10 SDK 版本 2104 (10.0。**20348.0**) 或更早版本，例如 10.0。**18362.1**.  
 
-![Visual Studio中的 WebView2SampleWinComp 项目。](media/webview2samplewincomp-project-in-sln-explorer.png)
+若要安装Windows 10 SDK：
 
-_若要缩放，请右键单击> **在新选项卡中打开图像**。_
+1. 转到[Windows SDK 和仿真器存档](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/)。
+
+1. 在以下行之一中，单击 **“安装 SDK** ”链接：
+   *  Windows 10 SDK 版本 2104 (10.0.20348.0)  (或更高版本) 
+   *  Windows 10 SDK 版本 1903 (10.0.18362.1) 
+
+   特定于版本的 `winsdksetup.exe` 副本将下载到目录 `Downloads` 。
+
+1. `Downloads`在目录中，打开刚下载的`winsdksetup.exe`副本。
+
+1. **Windows SDK 设置窗口随**即打开：
+
+   ![Windows SDK 设置。](webview2samplewincomp-images/windows-sdk-setup.png)
+
+1. 单击“ **下一步** ”按钮，然后按照提示进行操作。  可以接受默认值。  安装结束时，将显示所选版本的Windows SDK 欢迎屏幕：
+
+   ![欢迎使用Windows SDK。](webview2samplewincomp-images/welcome-winsdk.png)
+
+1. 单击**关闭**按钮。
+
+执行上一步“打开解决方案并设置Windows SDK 目标”。  或者，如果解决方案已打开，**请在解决方案资源管理器**中右键单击 **WebView2SampleWinComp** 项目 (不是解决方案) ，然后单击 **“重定向项目**”。
 
 
 <!-- ====================================================================== -->
-## <a name="step-8---install-or-update-the-webview2-sdk"></a>步骤 8 - 安装或更新 WebView2 SDK
+## <a name="step-7---install-workloads-if-prompted"></a>步骤 7 - 如果出现提示，请安装工作负载
 
-<!-- comment on sample says: "Update apps to to 1.0.1056-prerelease (#110)"  Oct 28 2021 -->
-
-1. 在项目节点上安装或更新 WebView2 SDK， (不是解决方案资源管理器中) 的解决方案节点。  在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发环境_时[安装 WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk)。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
+*  如果出现提示，请安装请求的任何Visual Studio工作负荷。  在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发人员环境_时[安装Visual Studio工作负荷](../how-to/machine-setup.md#install-visual-studio-workloads)。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
 
 
 <!-- ====================================================================== -->
-## <a name="step-9---build-the-project"></a>步骤 9 - 生成项目
+## <a name="step-8---view-the-opened-project"></a>步骤 8 - 查看打开的项目
+
+该项目在Visual Studio中打开，在解决方案资源管理器中显示 **WebView2SampleWinComp** 项目：
+
+![Visual Studio中的 WebView2SampleWinComp 项目。](webview2samplewincomp-images/project-in-sln-explorer.png)
+
+_若要缩放屏幕截图，请右键单击> **在新选项卡中打开图像**。_
+
+
+<!-- ====================================================================== -->
+## <a name="step-9---install-or-update-the-webview2-prerelease-sdk"></a>步骤 9 - 安装或更新 WebView2 预发行版 SDK
+
+此步骤可选。  该示例预装了 WebView2 预发行版 SDK 的版本。
+
+1. 在**解决方案资源管理器**中，右键单击 **WebView2SampleWinComp** 项目 (不是解决方案节点) ，然后选择 **“管理NuGet包**”。  “**NuGet 程序包管理器**”选项卡随即打开。
+
+1. 选中 **“包括预发行版** ”复选框。
+
+1. 单击**更新**选项卡。
+
+1. 如果列出了 **较新的 Microsoft.Web.WebView2** SDK 预发行版，请单击 **“更新”** 按钮。  预发行版具有“预发行版”后缀，例如 **1.0.1248 预发行版**。  如果想要在单独的窗口或选项卡中查看有关此步骤的详细信息，请参阅在_为 WebView2 设置开发环境_时[安装 WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk)。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
+
+![最初打开 WebView2SampleWinComp 解决方案后NuGet 程序包管理器的更新选项卡。](webview2samplewincomp-images/updates-tab-initial-state.png)
+
+_若要缩放屏幕截图，请右键单击> **在新选项卡中打开图像**。_
+
+
+<!-- ====================================================================== -->
+## <a name="step-10---install-or-update-the-windows-implementation-libraries-wil"></a>步骤 10 - 安装或更新WINDOWS实现库 (WIL) 
+
+此步骤可选。  该示例预装了WINDOWS实现库的版本 (WIL) 。
+
+1. 在**解决方案资源管理器**中，右键单击 **WebView2SampleWinComp** 项目 (不是解决方案节点) ，然后选择 **“管理NuGet包**”。  “**NuGet 程序包管理器**”选项卡随即打开。
+
+1. 在项目节点上安装或更新Windows实施库 (WIL) ， (解决方案资源管理器中) 解决方案节点。  如果 WebView2 预发行版 SDK 已安装，并且更新后的预发行版已在“更新”选项卡中列出，请更新它。  在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发环境_时[安装 WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk)。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
+
+
+<!-- ====================================================================== -->
+## <a name="step-11---build-the-project"></a>步骤 11 - 生成项目
 
 在Visual Studio顶部设置生成目标，如下所示：
 
@@ -132,124 +179,25 @@ _若要缩放，请右键单击> **在新选项卡中打开图像**。_
 
 
 <!-- ====================================================================== -->
-## <a name="step-10---install-or-update-the-microsoftwindowscppwinrt-package"></a>步骤 10 - 安装或更新 Microsoft。Windows。CppWinRT 包
-
-在上述步骤中，生成可能会失败，如下所示：
-
-   ```
-   Build started...
-   1>------ Build started: Project: WebView2SampleWinComp, Configuration: Debug x64 ------
-   1>AppWindow.cpp
-   1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt\winrt\impl\Windows.Foundation.0.h(983,26):
-   error C2039: 'wait_for': is not a member of 'winrt::impl'
-   1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt\winrt\impl\Windows.Foundation.0.h(103):
-   message : see declaration of 'winrt::impl'
-   1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt\winrt\impl\Windows.Foundation.0.h(985):
-   message : see reference to class template instantiation 'winrt::impl::consume_Windows_Foundation_IAsyncAction<D>' being compiled
-   ...
-   1>Generating Code...
-   1>Done building project "WebView2SampleWinComp.vcxproj" -- FAILED.
-   ========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
-   ```
-
-1. 若要解决此问题：**在解决方案资源管理器**中，右键单击解决方案的项目节点 (不是解决方案节点) ，然后选择 **“管理NuGet包**”。
-
-   **NuGet 程序包管理器**选项卡在Visual Studio中打开。
-
-1. 在**NuGet**窗口中，单击 **“浏览”** 选项卡。
-
-1. 在搜索栏的右侧，清除 **“包括预发行版** ”复选框 (除非你知道需要 SDK) 的预发行版本。
-
-1. 在左上角的搜索栏中，键**入 Microsoft.Windows。CppWinRT**。
-
-1. 在搜索栏下方，单击 **Microsoft.Windows。CppWinRT** 卡。
-
-1. 在右侧窗格中，单击“ **安装** (”或 **“更新**) ”按钮。  NuGet下载 Microsoft。Windows。CppWinRT 包到计算机，供此项目使用。
-
-   ![选择“Microsoft”。Windows。Visual Studio中NuGet 程序包管理器中的 CppWinRT 包。](media/webview2samplewincomp-manage-nuget-cppwinrt.png)
-
-   _若要缩放，请右键单击> **在新选项卡中打开图像**。_
-
-   “ **预览更改** ”对话框随即打开：
-
-   ![“Microsoft”的“预览更改”对话框。Windows。CppWinRT 的包。](media/webview2samplewincomp-preview-changes-cppwinrt.png)
-
-1. 单击 **“确定”** 按钮。
-
-1. 将 `readme.txt` 打开 CppWinRT 包的文件：
-
-   ![CppWinRT 包的readme.txt文件。](media/webview2samplewincomp-cppwinrt-readme.png)
-
-Microsoft。Windows。CppWinRT 包现已安装或更新。  继续执行以下步骤。
-
-### <a name="see-also"></a>另请参阅
-
-* [NuGet.org > Microsoft。Windows。CppWinRT NuGet包](https://www.nuget.org/packages/Microsoft.Windows.CppWinRT/)
-
-* [GitHub > microsoft/cppwinrt 存储库>问题>错误 C2039：“wait_for”：不是“winrt：：impl”#744 的成员](https://github.com/microsoft/cppwinrt/issues/744)
-
-   <!-- > `impl::wait_for` is defined later in `Windows.Foundation.h:2960`, but other foundation headers (via `2.h`, `1.h` and `0.h`) included earlier require it.
-   >
-   > The version of C++/WinRT that ships in the Windows SDK is rather old, and fails to compile with the stricter conformance expectations of more recent compilers. You can get a newer version of C++/WinRT here: https://aka.ms/cppwinrt/nuget
-   >
-   > I ended up running the `cppwinrt.exe` manually, since I couldn't get the `CMake VC_PROJECT_IMPORT` to work.  This works well for me; the headers are all generated in my build folder at generation time. -->
-
-
-<!-- ====================================================================== -->
-## <a name="step-11---build-the-project-again"></a>步骤 11 - 再次生成项目
-
-1. 在**解决方案资源管理器**中，右键单击 **WebView2SampleWinComp** 项目，然后选择 **“生成**”。
-
-   这会生成项目文件 `SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.vcxproj`。
-
-   <!-- The build might fail:
-
-   ![Build fail: after installing the Microsoft.Windows.CppWinRT package.](media/webview2samplewincomp-build-fail-after-cppwinrt-pkg.png)
-
-   _To zoom, right-click > **Open image in new tab**._ -->
-
-
-<!-- ====================================================================== -->
 ## <a name="step-12---run-debug-the-project"></a>步骤 12 - 运行 (调试) 项目
 
-<!-- retest: -->
+1. 在Visual Studio中，生成项目后，选择“**调试** > **"开始"菜单调试 (**) `F5` 。
 
-1. 在Visual Studio中，选择“**调试** > **"开始"菜单调试** () `F5` 。
+   随即打开示例应用窗口：
 
-   故障排除：如果在生成项目之前尝试调试，可能会显示一个对话框：“存在生成错误”：
-
-   ![“生成错误”对话框。](media/webview2samplewincomp-build-errors-dialog-box.png)
-
-   单击**是**按钮。  将出现一个对话框：“无法启动程序：找不到文件”：
-
-   ![“无法启动程序”对话框。](media/webview2samplewincomp-unable-to-start-program.png)
-
-   若要解决此问题，请在调试项目之前生成该项目。
-   <!-- ------------------------------- -->
-
-   解决生成问题，然后进入调试模式后，将打开示例应用窗口。
-
-   <!-- The sample app window opens: -->
-   <!-- ![The WebView2SampleWinComp app window.](media/WebView2SampleWinComp-app-window.png) -->
-   <!-- todo: create png -->
+   ![WebView2SampleWinComp 应用窗口。](webview2samplewincomp-images/app-window.png)
 
 1. 使用示例应用;请参阅 [WebView2SampleWinComp 的 README 文件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2SampleWinComp#readme)。
 
-1. 在Visual Studio中，选择 **“调试** > **Stop调试**”。  Visual Studio关闭应用。
+1. 在Visual Studio中，选择 **“调试** > **停止调试**”。  Visual Studio关闭应用。
 
 
 <!-- ====================================================================== -->
 ## <a name="step-13---inspect-the-code"></a>步骤 13 - 检查代码
 
-1. 在Visual Studio代码编辑器中，检查代码。
+1. 在Visual Studio代码编辑器中，检查代码：
 
-   <!--
-   1. In the Visual Studio code editor, inspect the code:
-
-   ![The WebView2SampleWinComp project in Visual Studio](media/WebView2SampleWinComp-in-visual-studio.png)
-
-   _To zoom, right-click > **Open image in new tab**._
-   -->
+   ![Visual Studio中的 WebView2SampleWinComp 项目](webview2samplewincomp-images/inspect-code-visual-studio.png)
 
 
 <!-- ====================================================================== -->

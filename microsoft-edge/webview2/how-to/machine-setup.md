@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: ab6e097c2356598f55fd2a89c5926e7558cce45f
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.openlocfilehash: 894e0e8dfbf687b42068646363c190bf2b0f90ee
+ms.sourcegitcommit: 5438bc89031609ad4045a96476ae29718561bac0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522481"
+ms.lasthandoff: 06/24/2022
+ms.locfileid: "12612278"
 ---
 # <a name="set-up-your-dev-environment-for-webview2"></a>为 WebView2 设置开发环境
 
@@ -82,7 +82,7 @@ ms.locfileid: "12522481"
 
 1. 将文件从下载目录复制或剪切 `WebView2Samples-main.zip` 到常规目录，例如 `Documents`。
 
-1. 解压缩 .`WebView2Samples-main.zip` 文件并记下解压缩文件的位置。
+1. 解压缩 `WebView2Samples-main.zip` 文件并记下解压缩文件的位置。
 
    ![下载的、解压缩的 WebView2Samples 存储库。](../media/downloaded-samples-repo-unzipped.png)
 
@@ -131,7 +131,7 @@ ms.locfileid: "12522481"
 
 如果要使用Visual Studio将GitHub存储库克隆到本地驱动器：
 
-1. 在Visual Studio中，选择 **FileClone** >  **存储库**。
+1. 在Visual Studio中，选择 **“文件** > **克隆”存储库**。
 
 1. 输入从GitHub存储库复制的 URL。
 
@@ -148,7 +148,7 @@ ms.locfileid: "12522481"
 
 1. 安装[GitHub桌面](https://desktop.github.com)。
 
-1. 在“GitHub桌面”中，选择 **FileClone** >  **存储库**。
+1. 在“GitHub桌面”中，选择 **“文件** > **克隆”存储库**。
 
 1. 在Visual Studio或GitHub桌面中，输入从GitHub存储库复制的 URL。
 
