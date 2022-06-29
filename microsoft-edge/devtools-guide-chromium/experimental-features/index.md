@@ -7,13 +7,13 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 no-loc:
 - Enable webhint
-ms.date: 06/21/2022
-ms.openlocfilehash: 5069022ebe9750d535666222d987dbabf56530c5
-ms.sourcegitcommit: 5438bc89031609ad4045a96476ae29718561bac0
+ms.date: 06/24/2022
+ms.openlocfilehash: c71cf9d6f86aedeae5732cc5d175996b7a98945b
+ms.sourcegitcommit: 05753adf2734d9bd118d2b224883eeb26028000c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2022
-ms.locfileid: "12612299"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630114"
 ---
 # <a name="experimental-features"></a>试验功能
 
@@ -38,10 +38,10 @@ This checkbox is|is not present in Microsoft Edge Canary v123.
 -->
 
 Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限。  本文列出并介绍了以下任一内容中的实验性功能：
-*  Microsoft Edge的 Canary 预览频道的最新版本。
-*  最新版本的“稳定”版本的Microsoft Edge。
+*  Microsoft Edge 的 Canary 预览频道的最新版本。
+*  最新版本的 Microsoft Edge 稳定版本。
 
-Microsoft Edge的所有[通道](/deployedge/microsoft-edge-channels)都具有实验性功能。 可以使用[Microsoft Edge Canary 渠道](https://www.microsoftedgeinsider.com/welcome?channel=canary)获取最新的实验性功能。 若要查看版本Microsoft Edge中可用的完整列表，请参阅 DevTools 中的 **设置** > **Experiments** 页面。
+[Microsoft Edge 的所有频道](/deployedge/microsoft-edge-channels)都有实验性功能。 可以使用[Microsoft Edge Canary 渠道](https://www.microsoftedgeinsider.com/welcome?channel=canary)获取最新的实验性功能。 若要查看 Microsoft Edge 版本中提供的完整列表，请参阅**** DevTools **中的** > “设置试验”页。
 
 <!-- no Warning formatting, because UI already contains red "WARNING" at top -->
 这些试验可能不稳定或不可靠，可能需要重启 DevTools。
@@ -54,7 +54,7 @@ Microsoft Edge的所有[通道](/deployedge/microsoft-edge-channels)都具有实
 
 <!-- listed in order of the Settings > Experiments pane -->
 
-**Microsoft Edge稳定 v102 中默认启用：**
+**默认情况下在 Microsoft Edge Stable v102 中启用：**
 * [在应用程序面板中启用“报告 API”面板](#enable-reporting-api-panel-in-the-application-panel)
 * [在“更改”选项卡中显示更精确的更改](#display-more-precise-changes-in-the-changes-tab)
 * [样式窗格中 CSS 层的工具](#tooling-for-css-layers-in-the-styles-pane)
@@ -63,7 +63,7 @@ Microsoft Edge的所有[通道](/deployedge/microsoft-edge-channels)都具有实
 * [焦点模式](#focus-mode)
 * [在 Visual Studio Code 中的打开源文件](#open-source-files-in-visual-studio-code)
 
-**默认情况下，在 canary v105 Microsoft Edge启用：**
+**在 Microsoft Edge Canary v105 中默认启用：**
 * [在应用程序面板中启用“报告 API”面板](#enable-reporting-api-panel-in-the-application-panel)
 * [在“更改”选项卡中显示更精确的更改](#display-more-precise-changes-in-the-changes-tab)
 * [将 Lighthouse 面板与时间跨度和快照模式配合使用](#use-lighthouse-panel-with-timespan-and-snapshot-modes)
@@ -82,19 +82,19 @@ Microsoft Edge的所有[通道](/deployedge/microsoft-edge-channels)都具有实
 
 实验性功能不断更新，并可能导致性能问题。  这是你可能想要关闭试验的原因之一。
 
-若要在Microsoft Edge中打开或关闭试验：
+若要在 Microsoft Edge 中打开或关闭试验，
 
 1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
 
-1. 在 DevTools 的主工具栏上，单击**设置 (** 设置![图标。](../media/settings-gear-icon-light-theme.png)) 按钮。  或者，按 。`Shift`+`?`
+1. 在 DevTools 的主工具栏上，单击 **“设置** (![”图标。](../media/settings-gear-icon-light-theme.png)) 按钮。  或者，按 。`Shift`+`?`
 
-1. 在**设置**面板的左侧，选择 **“试验**”页。
+1. 在 **“设置”** 面板的左侧，选择 **“试验** ”页。
 
-   ![设置中的“试验”页。](../media/experiments-devtools.msft.png)
+   ![“设置”中的“试验”页。](../media/experiments-devtools.msft.png)
 
 1. 在 **“试验** ”页上，选择或清除试验的复选框。 默认情况下，某些试验 (所选) 打开。
 
-1. 单击“**关闭**” (![DevTools > 设置中的“关闭”图标。](../media/settings-close-icon-light-theme.png)右上角) 关闭 DevTools **设置**。
+1. 单击“ **关闭** (![DevTools >设置中的”关闭“图标。](../media/settings-close-icon-light-theme.png) 右上角) 关闭 DevTools **设置**。
 
 1. 单击 **“重新加载 DevTools** ”按钮。
 
@@ -106,9 +106,9 @@ Microsoft Edge的所有[通道](/deployedge/microsoft-edge-channels)都具有实
 
 1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
 
-1. 在 DevTools 的主工具栏上，单击**设置 (** 设置![图标。](../media/settings-gear-icon-light-theme.png)) 按钮。  或者，按 。`Shift`+`?`  将打开**设置**面板，并选择 **“首选项”** 页。
+1. 在 DevTools 的主工具栏上，单击 **“设置** (![”图标。](../media/settings-gear-icon-light-theme.png)) 按钮。  或者，按 。`Shift`+`?`  **“设置”** 面板随即打开，其中选择了 **“首选项”** 页。
 
-1. 在 **“首选项”** 页面底部，单击“**还原默认值”和“刷新**”按钮，然后单击“**关闭**” (![DevTools > 设置中的“关闭”图标。](../media/settings-close-icon-light-theme.png)) 。
+1. 在 **“首选项”** 页底部，单击“ **还原默认值”和“刷新** ”按钮，然后单击“ **关闭** ” (![DevTools >“设置”中的“关闭”图标。](../media/settings-close-icon-light-theme.png)) 。
 
 <!-- For more information about customizing settings, see [Settings](../customize/index.md#settings) in _Customize Microsoft Edge DevTools_. -->
 
@@ -120,9 +120,9 @@ Microsoft Edge的所有[通道](/deployedge/microsoft-edge-channels)都具有实
 
 1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
 
-1. 在 DevTools 的主工具栏上，单击**设置 (** 设置![图标。](../media/settings-gear-icon-light-theme.png)) 按钮。  或者，按 。`Shift`+`?`  将打开**设置**面板，并选择 **“首选项”** 页。
+1. 在 DevTools 的主工具栏上，单击 **“设置** (![”图标。](../media/settings-gear-icon-light-theme.png)) 按钮。  或者，按 。`Shift`+`?`  **“设置”** 面板随即打开，其中选择了 **“首选项”** 页。
 
-1. 在**设置**面板的左侧，选择 **“试验**”页。
+1. 在 **“设置”** 面板的左侧，选择 **“试验** ”页。
 
 1. 在 **“筛选器** ”文本框中单击并输入文本，如 **时间线**。  键入时，“ **试验** ”页中仅显示匹配的复选框。
 
@@ -132,7 +132,7 @@ Microsoft Edge的所有[通道](/deployedge/microsoft-edge-channels)都具有实
 <!-- ====================================================================== -->
 ## <a name="providing-feedback-about-the-experiments"></a>提供有关试验的反馈
 
-我们渴望听到你关于实验性功能的反馈。  若要与我们共享反馈，[请联系 Microsoft Edge DevTools 团队](../contact.md)。
+我们渴望听到你关于实验性功能的反馈。  若要与我们共享反馈， [请联系 Microsoft Edge DevTools 团队](../contact.md)。
 
 其中一个 UI 试验添加了一种提供反馈的新方法：当 **焦点模式** 试验打开时，在 **活动栏**底部，选择 **“帮助** ” (![焦点模式下活动栏中的“帮助”图标。](../media/help-icon-of-focus-mode.png)) > **反馈**。
 
@@ -140,7 +140,7 @@ Microsoft Edge的所有[通道](/deployedge/microsoft-edge-channels)都具有实
 <!-- ====================================================================== -->
 ## <a name="list-of-experiments"></a>试验列表
 
-下面列出了最新版本的 Canary 预览频道Microsoft Edge中显示的大多数试验。
+下面列出了 Microsoft Edge Canary 预览频道最新版本中显示的大多数试验。
 
 
 <!-- ============================================================================================================================================ -->
@@ -151,10 +151,11 @@ Microsoft Edge的所有[通道](/deployedge/microsoft-edge-channels)都具有实
 <!-- ====================================================================== -->
 ## <a name="allow-extensions-to-load-custom-stylesheets"></a>允许扩展加载自定义样式表
 
-某些Microsoft Edge加载项可以定义 DevTools 的自定义颜色主题。 如果使用主题安装加载项，则需要启用 **允许扩展来加载自定义样式表** 试验以查看加载项主题。
+某些 Microsoft Edge 加载项可以定义 DevTools 的自定义颜色主题。 如果使用主题安装加载项，则需要启用 **允许扩展来加载自定义样式表** 试验以查看加载项主题。
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -162,8 +163,9 @@ Microsoft Edge的所有[通道](/deployedge/microsoft-edge-channels)都具有实
 
 若要在运行时将 DOM 节点添加到 DOM 时捕获 JavaScript 堆栈跟踪，请启用此试验。 捕获的堆栈跟踪显示在 **“元素**”面板的 **“堆栈跟踪**”窗格中。
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -175,11 +177,11 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
 
-1. 在 DevTools 的主工具栏上，单击**设置 (** 设置![图标。](../media/settings-gear-icon-light-theme.png)) 按钮。  或者，按 。`Shift`+`?`  将打开**设置**面板，并选择 **“首选项”** 页。
+1. 在 DevTools 的主工具栏上，单击 **“设置** (![”图标。](../media/settings-gear-icon-light-theme.png)) 按钮。  或者，按 。`Shift`+`?`  **“设置”** 面板随即打开，其中选择了 **“首选项”** 页。
 
-1. 在**设置**面板的左侧，选择 **“试验**”页。
+1. 在 **“设置”** 面板的左侧，选择 **“试验** ”页。
 
-1. 选中 **“协议监视器”** 复选框，然后单击“**关闭**” (![DevTools > 设置中的“关闭”图标。](../media/settings-close-icon-light-theme.png)) 关闭**设置**。
+1. 选中 **协议监视器** 复选框，然后单击“ **关闭** ” (![DevTools >“设置”中的“关闭”图标。](../media/settings-close-icon-light-theme.png)) 关闭 **“设置**”。
 
 1. 打开**命令菜单** (`Ctrl`+`P`+`Shift`) ，然后在文本框中键入**协议**。
 
@@ -189,19 +191,21 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 
 1. **协议监视**器工具显示在 DevTools 底部的**抽屉**中。
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
-## <a name="show-csp-violations-view"></a>显示云解决方案提供商冲突视图
+## <a name="show-csp-violations-view"></a>显示 CSP 冲突视图
 
-添加**云解决方案提供商冲突**工具，该工具显示在检查的网页上检测到的任何内容安全策略 (云解决方案提供商) 冲突。
+添加 **CSP 冲突** 工具，该工具显示在检查的网页上检测到的任何内容安全策略 (CSP) 冲突。
 
-![云解决方案提供商冲突工具。](index-images/csp-violations-tool.png)
+![CSP 冲突工具。](index-images/csp-violations-tool.png)
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -210,8 +214,9 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 记录性能跟踪时的覆盖范围。
 <!-- todo: need text -->
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -221,11 +226,12 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 显示用于在其中将全局视为根的堆快照的选项。
 <!-- todo: need text, except going away -->
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  Microsoft Edge Canary v105 中不存在此复选框。
-
 另请参阅：
 * [使用内存工具记录堆快照](../memory-problems/heap-snapshots.md)
+
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  Microsoft Edge Canary v105 中不存在此复选框。
 
 
 <!-- ====================================================================== -->
@@ -235,11 +241,12 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 是否在帧树结构视图中显示回/前缓存阻塞原因。
 <!-- todo: need text, except going away -->
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  Microsoft Edge Canary v105 中不存在此复选框。
-
 另请参阅：
 * [用于管理存储的应用程序工具](../storage/application-tool.md)
+
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  Microsoft Edge Canary v105 中不存在此复选框。
 
 
 <!-- ====================================================================== -->
@@ -249,46 +256,25 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 是否显示复选框以在 **内存** 工具的堆快照中公开内部内容。
 <!-- todo: need text -->
 
-*  Microsoft Edge稳定 v102 中不存在此复选框。
-*  此复选框位于Microsoft Edge Canary v105 中。
-
 另请参阅：
 * [使用内存工具记录堆快照](../memory-problems/heap-snapshots.md)
+
+状态：
+*  Microsoft Edge Stable v102 中不存在此复选框。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
 ## <a name="source-order-viewer"></a>源订单查看器
-<!-- new in v105 (restored; removed around v99) -->
 
-<!-- restored checkbox in v105.  March 1 2022 archive says:
-This checkbox is present in Microsoft Edge Stable v 98.
-This checkbox is not present in Microsoft Edge Canary v 100.
-restored/modified tagging from Feb 14 2022 archive: -->
-
-**源订单查看器** 是一个在网页源中显示元素顺序的试验。  屏幕上的显示顺序可能不同于源的顺序，这会混淆屏幕阅读器和键盘用户。  使用 **“源订单查看器”** 实验可查找屏幕显示顺序与源顺序之间的差异。
-
-若要使用 **源订单查看器，请执行以下操作**：
-
-1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
-
-1. 在 DevTools 的主工具栏上，选择 **“元素”** 选项卡。 如果“ **元素”** 选项卡不可见，请单击“ **更多”选项卡** (![“更多”选项卡图标。](../media/more-tabs-icon-light-theme.png)) 按钮，或者“ **更多工具** (![更多工具”图标。](../media/more-tools-icon-light-theme.png)) 按钮。
-
-1. 在“ **样式”** 选项卡右侧，单击 **“辅助功能”** 选项卡。
-
-1. 在 **“源订单查看器** ”部分下，选中 **“显示源订单** ”复选框。
-
-1. 突出显示任何 HTML 元素，以在网页源中显示顺序的叠加。
-
-! [辅助功能窗格中的源订单查看器。](../media/experiments-source-order-viewer.msft.png)
-<!-- todo: new screenshot? -->
+此复选框正在删除。  源订单查看器不再是试验了。  选中或取消选中复选框没有区别;无论哪种方式，源订单查看器功能都显示在 DevTools 中。
 
 另请参阅：
 * [使用源订单查看器测试键盘支持](../accessibility/test-tab-key-source-order-viewer.md)
 
-<!-- / restored tagging -->
-
-*  Microsoft Edge稳定 v102 中不存在此复选框。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  Microsoft Edge Stable v102 中不存在此复选框。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -297,8 +283,9 @@ restored/modified tagging from Feb 14 2022 archive: -->
 是否在时间线中包含事件发起程序。
 <!-- todo: need text -->
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -307,8 +294,9 @@ restored/modified tagging from Feb 14 2022 archive: -->
 是否在时间线中使用基于 WebGL 的火焰图。
 <!-- todo: need text -->
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -317,8 +305,9 @@ restored/modified tagging from Feb 14 2022 archive: -->
 启用对 WebAssembly 调试的 DWARF 支持。  请参阅 _DevTools (Microsoft Edge 80) 中的新增功能中改进的 _[WebAssembly 调试](../whats-new/2019/12/devtools.md#improved-webassembly-debugging)。
 <!-- todo: need text -->
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -328,8 +317,9 @@ restored/modified tagging from Feb 14 2022 archive: -->
 
 有关 [调试，请参阅将已处理代码映射到原始源代码](../javascript/source-maps.md)。
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -343,13 +333,14 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 *  颜色的空间属性，包括文本和背景之间的感知对比度。
 *  上下文的空间属性，包括环境光线、周围环境和预期用途。
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
-
 另请参阅：
-* [新的颜色对比度计算 - 高级感知对比度算法 (APCA) ](../whats-new/2021/01/devtools.md#new-color-contrast-calculation---advanced-perceptual-contrast-algorithm-apca) _在 DevTools 中的新增功能 (Microsoft Edge 89) _。
+* [新的颜色对比度计算 - 高级感知对比度算法 (APCA) ](../whats-new/2021/01/devtools.md#new-color-contrast-calculation---advanced-perceptual-contrast-algorithm-apca) _在 DevTools (Microsoft Edge 89) 中的新增 _功能。
 * 使用 _CSS 功能参考_中的[颜色选择器更改颜色](../css/reference.md#change-colors-with-the-color-picker)。
 * [使用颜色选取器测试文本颜色对比度](../accessibility/color-picker.md)
+
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -357,8 +348,9 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 
 在 **Elements** 工具中添加一个按钮，该按钮可在 DOM 树和辅助功能树之间切换。
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -387,8 +379,9 @@ omit period, even though checkbox label has period -->
 
 有关详细信息，请参阅"样式"窗格中[的"编辑 CSS 字体样式和设置"。](../inspect-styles/edit-fonts.md)
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -397,8 +390,9 @@ omit period, even though checkbox label has period -->
 在 **“问题** ”工具中启用自动对比度问题报告。
 <!-- todo: need text -->
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -407,8 +401,9 @@ omit period, even though checkbox label has period -->
 启用实验性 Cookie 功能。
 <!-- todo: need text -->
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -416,8 +411,9 @@ omit period, even though checkbox label has period -->
 
 使用报告 API 捕获某些错误，例如安全违规或已弃用的 API 调用。 当用户访问您的站点并发送到服务器终结点时，会发生这些错误。 启用此试验可在**应用程序面板中**添加 **“报告 API**”部分，其中列出发送到终结点的所有报表。
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -425,8 +421,9 @@ omit period, even though checkbox label has period -->
 
 在 [“更改”选项卡中查看更精确的更改](https://developer.chrome.com/blog/new-in-devtools-98/#changes)。
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -435,8 +432,9 @@ omit period, even though checkbox label has period -->
 是否在 **“元素**”工具的“**样式**”选项卡中同步 CSS 更改。
 <!-- todo: need text -->
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -445,8 +443,9 @@ omit period, even though checkbox label has period -->
 是否对响应标头使用本地替代。
 <!-- todo: need text -->
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -454,11 +453,13 @@ omit period, even though checkbox label has period -->
 <!-- keep "etc." in heading, to match UI label -->
 <!-- new in v105 -->
 
-是否显示非活动规则和已弃用属性的 CSS 创作提示。
-<!-- todo: need text -->
+是要在 **“元素**”工具的“**样式**”面板中启用 CSS 创作提示，以显示非活动属性或已弃用属性旁边的信息工具提示。
 
-*  Microsoft Edge稳定 v102 中不存在此复选框。
-*  此复选框位于Microsoft Edge Canary v105 中。
+在 Canary v105 中，此复选框不起作用。  实现此功能后，此功能将在“ **样式** ”面板中编写或检查 CSS 时提供帮助。  小型信息图标将显示在非活动 (或已弃用) 的 CSS 属性旁边。
+
+状态：
+*  Microsoft Edge Stable v102 中不存在此复选框。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -466,11 +467,12 @@ omit period, even though checkbox label has period -->
 
 将选择器添加到 Lighthouse 工具，以便在不同的报告模式之间切换。  目前支持导航和快照模式。
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
-
 另请参阅：
 * [Lighthouse 工具](../lighthouse/lighthouse-tool.md)
+
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -478,35 +480,39 @@ omit period, even though checkbox label has period -->
 
 在“**样式**”窗格中添加了对 `@layer` CSS 规则的支持。  **样式**窗格中的 CSS 规则按它们所属的层进行分组。  将显示一个层概述小组件，其中显示了当前检查的元素的层树。
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
 ## <a name="enable-color-picking-outside-the-browser-window"></a>在浏览器窗口外启用颜色选取
 
-允许您在鼠标光标是一个眼滴工具时，在屏幕上的任何位置移动鼠标光标，而不仅仅是在Microsoft Edge窗口内。
+允许您在鼠标光标是一个眼滴工具时，在屏幕上的任意位置移动鼠标光标，而不仅仅是在 Microsoft Edge 窗口内。
 
 在 **“元素”** 工具的“ **样式”** 选项卡中，单击任何颜色预览。  “颜色选取器”随即打开。  单击 **“切换颜色选取器** (![”眼滴图标“按钮。](index-images/eyedropper-color-picker-icon.png)) 按钮。  鼠标光标变为眼滴。  单击监视器上的任意位置以选择颜色。
 
 <!-- https://developer.chrome.com/blog/new-in-devtools-102/#color-picker -->
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
-
 另请参阅：
 * 使用 _CSS 功能参考_中的[颜色选择器更改颜色](../css/reference.md#change-colors-with-the-color-picker)
+
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
 ## <a name="group-sources-into-authored-and-deployed-trees"></a>将源分组到“已创作”和“已部署”树中
 <!-- new in v105 -->
 
-控制是否将源分组到 **“已创作”** 和 **“已部署”** 树中。<!-- in the _ tab of the **Sources** tool. -->
-<!-- todo: need text -->
+控制是否在“源 **”工具**的 **“页面**”、“**文件系统**”和“**替代**”选项卡中将源分组到 **“已创作**”和 **“已部署**”树中。  **“源**”工具中的此功能允许将源文件分组到两个文件夹中，具体取决于这些文件夹是否为：
+*  原始源文件 (创作，即具有本地编辑的文件) 。
+*  在编译和捆绑源文件) 后，生产文件 (Web 服务器上已部署的文件。
 
-*  Microsoft Edge稳定 v102 中不存在此复选框。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  Microsoft Edge Stable v102 中不存在此复选框。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -515,8 +521,9 @@ omit period, even though checkbox label has period -->
 控制是否在 **控制台** 工具中记录 DevTools 未捕获异常。
 <!-- todo: need text -->
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -535,8 +542,9 @@ omit period, even though checkbox label has period -->
 
 ![问题面板中的 webhint 反馈。](../media/experiments-webhint.msft.png)
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -544,8 +552,9 @@ omit period, even though checkbox label has period -->
 
 使此实验能够在 **Elements** 工具的 **DOM** 视图中查看 HTML 下的语法错误。 有关详细信息，请参阅 [Wavy 下划线，突出显示“元素”工具中的代码问题和改进](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool)。
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -559,8 +568,9 @@ omit period, even though checkbox label has period -->
 
 请参阅 [使用焦点模式降低 DevTools 的复杂性](focus-mode.md)。
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -568,18 +578,19 @@ omit period, even though checkbox label has period -->
 
 **Visual Studio Code试验中的开源文件**将源工具的代码编辑器替换为Visual Studio Code，用于编辑本地文件。 启用此试验时，开发人员工具会检测编辑本地文件时，并提示选择要用作工作区的文件夹。
 
-选择要用作工作区的文件夹时，选择 DevTools 中文件的任何链接将在Visual Studio Code中打开该文件。  在早期版本的Microsoft Edge中，此操作在 DevTools 中的“源”工具的代码编辑器中打开了该文件。
+选择要用作工作区的文件夹时，选择 DevTools 中文件的任何链接将在Visual Studio Code中打开该文件。  在早期版本的 Microsoft Edge 中，此操作在 DevTools 中的“源”工具的代码编辑器中打开了该文件。
 
 ![选择样式工具中的文件链接将在Visual Studio Code中打开文件。](../media/experiment-sources-in-code-editor-open.msft.png)
 
 在 DevTools 中进行的任何编辑现在会更改硬盘上的文件，并使用Visual Studio Code进行实时同步。 可以在打开Visual Studio Code[中的源文件中](../sources/opening-sources-in-vscode.md)了解如何设置工作区。
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
-## <a name="automatically-pretty-print-in-the-microsoft-edge-sources-panel"></a>自动在Microsoft Edge源面板中进行漂亮的打印
+## <a name="automatically-pretty-print-in-the-microsoft-edge-sources-panel"></a>Microsoft Edge 源面板中的自动漂亮打印
 
 打开此试验时，当在“源”面板中显示一个缩小的文件时，文件会在“源”面板的单个选项卡中打开，打印得非常漂亮。
 
@@ -588,8 +599,9 @@ omit period, even though checkbox label has period -->
 *  _已缩小_的文件串联到一条长行中。
 *  相比之下， _漂亮的打印_ 以缩进的、更人性化的可读格式呈现文件的内容。
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ============================================================================================================================================ -->
@@ -603,8 +615,9 @@ omit period, even though checkbox label has period -->
 是否在时间线上包含 JavaScript 帧的忽略列表。
 <!-- todo: need text -->
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -613,8 +626,9 @@ omit period, even though checkbox label has period -->
 控制是否在时间线概述中包含输入事件。
 <!-- todo: need text -->
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -623,11 +637,12 @@ omit period, even though checkbox label has period -->
 控制是否实时更新堆配置文件。
 <!-- todo: need text -->
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
-
 另请参阅：
 * [使用内存工具记录堆快照](../memory-problems/heap-snapshots.md)
+
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -636,11 +651,12 @@ omit period, even though checkbox label has period -->
 控制是否显示采样堆探查器时间线。
 <!-- todo: need text -->
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
-
 另请参阅：
 * [使用内存工具记录堆快照](../memory-problems/heap-snapshots.md)
+
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -651,8 +667,9 @@ omit period, even though checkbox label has period -->
 另请参阅：
 * [自定义键盘快捷方式](../customize/shortcuts.md)
 
-*  Microsoft Edge稳定 v102 中不存在此复选框。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  Microsoft Edge Stable v102 中不存在此复选框。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -660,8 +677,9 @@ omit period, even though checkbox label has period -->
 
 控制是否在时间线上显示无效跟踪。
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -669,8 +687,9 @@ omit period, even though checkbox label has period -->
 
 控制是否在时间线上显示所有事件。
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -678,8 +697,9 @@ omit period, even though checkbox label has period -->
 
 控制是否在时间线上显示 v8 运行时调用统计信息。
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -687,8 +707,9 @@ omit period, even though checkbox label has period -->
 
 控制是否在时间线上重播输入事件。
 
-*  此复选框位于“稳定”v102 Microsoft Edge中。
-*  此复选框位于Microsoft Edge Canary v105 中。
+状态：
+*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
@@ -696,9 +717,10 @@ omit period, even though checkbox label has period -->
 
 是否在测试断点处停止。  此试验使断点更可靠。
 
-*  Microsoft Edge稳定 v102 中不存在此复选框。
-*  此复选框位于Microsoft Edge Canary v105 中。
-
 另请参阅：
 * [在检测断点上启用同步](https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/3470237)
 * [首次加载源文件时，断点可能不会触发](https://bugs.chromium.org/p/chromium/issues/detail?id=1133307&q=%22instrumentation%20breakpoints%22&can=2)
+
+状态：
+*  Microsoft Edge Stable v102 中不存在此复选框。
+*  此复选框位于 Microsoft Edge Canary v105 中。
