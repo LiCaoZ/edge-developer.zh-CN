@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/24/2022
-ms.openlocfilehash: ea07e012c08a91ef78013d87102c24ada4586d56
-ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
+ms.openlocfilehash: 21e0c02ea7d5d1f881663a28b8c92d42999d2c56
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "12551638"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630342"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-102"></a>DevTools (Microsoft Edge 102) 中的新增功能
 
@@ -19,7 +19,7 @@ ms.locfileid: "12551638"
 
 > [!TIP]
 > **Microsoft Build 2022** 会议于 5 月 24-26 日召开。  在以下视频中详细了解 DevTools 中内存、性能和生产调试的新功能，以及 PVA Web 平台中的新功能：
-> * [用于调试内存、性能、&生产问题的使用技巧](https://www.youtube.com/watch?v=hdrR0QwXpuc)
+> * [有关调试内存、性能、&生产问题的提示](https://www.youtube.com/watch?v=hdrR0QwXpuc)
 > * [Microsoft Edge |内部版本 2022：使用 Web 的功能和影响力丰富桌面体验](https://www.youtube.com/watch?v=ahO5nePl4BQ)
 
 
@@ -29,7 +29,7 @@ ms.locfileid: "12551638"
 <!-- Title: New browser preview and sourcemap support in Visual Studio Code -->
 <!-- Subtitle: Emulate devices and different rendering modes and debug Sass/React. -->
 
-Visual Studio Code的 Microsoft Edge DevTools 扩展现在具有浏览器预览版，可用于模拟不同的设备。  单击新的 **模拟 CSS 媒体功能** (![模拟 CSS 媒体功能。](devtools-102-images/emulate-css-media-features-button.png)) 按钮，以不同模式预览当前项目，如深色、浅色、打印和高对比度：
+适用于Visual Studio Code的 Microsoft Edge DevTools 扩展现在有一个浏览器预览版，可用于模拟不同的设备。  单击新的 **模拟 CSS 媒体功能** (![模拟 CSS 媒体功能。](devtools-102-images/emulate-css-media-features-button.png)) 按钮，以不同模式预览当前项目，如深色、浅色、打印和高对比度：
 
 ![DevTools 扩展：具有设备和模式仿真和源映射支持的新浏览器。](devtools-102-images/devtools-ext-new-browser.png)
 
@@ -38,7 +38,7 @@ Visual Studio Code的 Microsoft Edge DevTools 扩展现在具有浏览器预览�
 其他新功能包括一种更简单的切换 CSS 镜像的方法，该方法现在也支持源地图。  这意味着你可以在浏览器中实时调试和修改由 Sass、React 和其他抽象创建的 CSS，并查看源文件中的更改。
 
 另请参阅：
-* _Visual Studio Code的 Microsoft Edge DevTools 扩展_中的[设备和状态仿真](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#device-and-state-emulation)。
+* _Microsoft Edge DevTools 扩展中用于Visual Studio Code的_[设备和状态仿真](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#device-and-state-emulation)。
 * [将已处理的代码映射到原始源代码，以便进行调试](../../../javascript/source-maps.md)
 * [使用源图进行 CSS 镜像编辑：已知问题和反馈](https://github.com/microsoft/vscode-edge-devtools/issues/965)。
 
@@ -49,7 +49,7 @@ Visual Studio Code的 Microsoft Edge DevTools 扩展现在具有浏览器预览�
 <!-- Title: Export string objects from a heap snapshot -->
 <!-- Subtitle: Use the new "Save all to file" button to save string objects to a JSON file. -->
 
-在 Microsoft Edge 102 中，在**内存**工具中创建堆快照时，现在可以将快照中的所有字符串对象导出到 JSON 文件。  在 **“内存** ”工具的 **“构造函数** ”部分中，单击条目旁边的新 **“全部保存到文件** ” `(string)` 按钮。
+在 Microsoft Edge 102 中，在 **内存** 工具中创建堆快照时，现在可以将快照中的所有字符串对象导出到 JSON 文件。  在 **“内存** ”工具的 **“构造函数** ”部分中，单击条目旁边的新 **“全部保存到文件** ” `(string)` 按钮。
 
 ![将堆快照中的所有字符串保存到 JSON。](devtools-102-images/save-heap-snapshot-strings-json.png)
 
@@ -67,7 +67,7 @@ Visual Studio Code的 Microsoft Edge DevTools 扩展现在具有浏览器预览�
 <!-- Title: Debug retainers more easily in the Memory tool -->
 <!-- Subtitle: Use new filters in the Retainers section of a heap snapshot to simplify retainer paths. -->
 
-在早期版本的Microsoft Edge中，周期和内部节点显示在堆快照的 **“保留器**”部分。
+在早期版本的 Microsoft Edge 中，循环和内部节点显示在堆快照的 **“保留器** ”部分。
 为了帮助简化保留器路径，在 Microsoft Edge 102 中，**内存**工具中的 **“保留器**”部分现在具有新的筛选器，用于隐藏周期和隐藏保留器路径中的内部节点。
 
 在 **“保留器** ”部分中，循环节点通过灰显来指示。
@@ -85,7 +85,7 @@ _周期_ 是至少在保留器路径中显示两次的节点。
 若要释放内存，最重要的是删除首先出现在保留器路径中的节点的出现。
 节的第二个和可能的后续显示仍显示在 **“保留器** ”部分中。
 
-_内部节点_是特定于 V8 (Microsoft Edge) 中的 JavaScript 引擎的对象。  内部节点也显示在 **“保留器** ”部分中。
+_内部节点_ 是特定于 V8 (Microsoft Edge) 中的 JavaScript 引擎的对象。  内部节点也显示在 **“保留器** ”部分中。
 
 另请参阅：
 * _内存术语_中的[周期](../../../memory-problems/memory-101.md#cycles)。
@@ -99,7 +99,7 @@ _内部节点_是特定于 V8 (Microsoft Edge) 中的 JavaScript 引擎的对象
 
 以前，在 **“元素”** 工具中，你选择的节点的覆盖仅在使用“ **检查”工具** (![检查工具图标时显示在悬停状态。](../../../media/inspect-tool-icon-light-theme.png)) 。  以前的设计很难与屏幕放大镜或其他辅助技术配合使用。
 
-在 Microsoft Edge 102 中，使用 **“检查**”工具并在呈现的网页周围移动时，可以保留当前**的“检查**”覆盖层。  在呈现的网页中四处移动时，按住`Ctrl`+`Alt` (Windows、Linux) 或`Ctrl`+`Option` (macOS) 。  将鼠标悬停在呈现网页的不同部分时，将显示 **“检查** ”工具的现有工具提示和网格颜色覆盖：
+在 Microsoft Edge 102 中，使用 **“检查** ”工具并在呈现的网页周围移动时，可以保留当前 **的“检查** ”覆盖层。  在呈现的网页中四处移动时，按住 `Ctrl`+`Alt` (Windows、Linux) 或 `Ctrl`+`Option` (macOS) 。  将鼠标悬停在呈现网页的不同部分时，将显示 **“检查** ”工具的现有工具提示和网格颜色覆盖：
 
 ![检查元素工具提示。](devtools-102-images/inspect-element-tooltip-persists.png)
 
@@ -118,12 +118,12 @@ _内部节点_是特定于 V8 (Microsoft Edge) 中的 JavaScript 引擎的对象
 <!-- Title: Accessibility improvements for high contrast mode -->
 <!-- Subtitle: Dropdown menu in the Issues tool, buttons in the Detached Elements tool, and the activity bar in Focus Mode now display better in high contrast. -->
 
-在早期版本的Microsoft Edge中，以下项未在高对比度模式下正确呈现：
+在早期版本的 Microsoft Edge 中，以下项目在高对比度模式下未正确呈现：
 *  **“问题**”工具中的下拉菜单。
 *  **分离**元素工具中的按钮。
 *  处于焦点模式 **的活动栏** 。
 
-在Microsoft Edge 102 中，这些问题已得到解决。
+在 Microsoft Edge 102 中，这些问题已得到解决。
 
 **问题**工具的菜单在高对比度模式下正确显示：
 
@@ -139,19 +139,19 @@ _内部节点_是特定于 V8 (Microsoft Edge) 中的 JavaScript 引擎的对象
 
 另请参阅：
 * [使用辅助技术导航开发工具](../../../accessibility/navigation.md)
-* [Windows高对比度模式](/fluent-ui/web-components/design-system/high-contrast)
+* [Windows 高对比度模式](/fluent-ui/web-components/design-system/high-contrast)
 * [使用专注模式简化开发工具](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->
-## <a name="learn-about-experiments-in-devtools-from-settings"></a>从设置了解 DevTools 中的试验
+## <a name="learn-about-experiments-in-devtools-from-settings"></a>从“设置”了解 DevTools 中的试验
 
 <!-- Title: Help icons for Experiments checkboxes -->
 <!-- Subtitle: In Settings > Experiments page, each experimental feature's checkbox has a Help (?) icon next to it for more information.. -->
 
-在 **“设置** > 体验”页**中**，每个试验现在都有“**帮助** (![”图标](devtools-102-images/settings-experiments-help-icon.png)) 按钮：
+在 **“设置****试验**” > 页中，每个试验现在都有一个 **“帮助** (![”图标](devtools-102-images/settings-experiments-help-icon.png)) 按钮：
 
-![设置 >试验复选框的帮助图标。](devtools-102-images/settings-experiments-help-icons.png)
+![“设置”的“帮助”图标>“试验”复选框。](devtools-102-images/settings-experiments-help-icons.png)
 
 若要获取有关实验性功能的详细信息，请单击相应的 **“帮助** (![帮助”图标。](devtools-102-images/settings-experiments-help-icon.png)) 按钮。  “ **帮助** ”按钮显示 [实验功能](../../../experimental-features/index.md) 文章的相关部分。
 
@@ -162,7 +162,7 @@ _内部节点_是特定于 V8 (Microsoft Edge) 中的 JavaScript 引擎的对象
 <!-- Title: Better support for the Network tool in narrow layouts -->
 <!-- Subtitle: The settings in the Network tool no longer overlap when the DevTools are narrow. -->
 
-在早期版本的Microsoft Edge中，当 DevTools 非常窄时，使用**网络**工具中的齿轮图标打开**网络设置**会重叠：
+在早期版本的 Microsoft Edge 中，当 DevTools 非常窄时，使用**网络**工具中的齿轮图标打开**网络设置**会重叠：
 
 ![窄时网络设置的重叠。](devtools-102-images/network-settings-narrow-overlap.png)
 
@@ -201,5 +201,5 @@ Microsoft Edge 102 还包括Chromium项目的以下更新：
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
 
-<!-- [![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+<!-- [![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->

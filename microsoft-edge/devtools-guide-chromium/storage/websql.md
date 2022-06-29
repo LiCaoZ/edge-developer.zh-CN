@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: e47b43a6ee7fa8ff4d36273ef53054e998d533d3
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 2fb670ca0ee00bf2d74e6221143cbec3664fee8e
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610938"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631331"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,7 +28,7 @@ ms.locfileid: "12610938"
    limitations under the License.  -->
 # <a name="view-web-sql-data"></a>查看 Web SQL 数据
 
-本文介绍如何使用 DevTools 检查 Web SQL数据。
+本文介绍如何使用 DevTools 检查 Web SQL 数据。
 
 > [!WARNING]
 > Web SQL 规范[未得到维护](https://w3.org/TR/webdatabase/#status-of-this-document)。
@@ -47,13 +47,13 @@ ms.locfileid: "12610938"
 
 1. 单击表可查看该表的数据。
 
-![查看 Web SQL表的数据。](../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png)
+![查看 Web SQL 表的数据。](../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png)
 
 
 <!-- ====================================================================== -->
 ## <a name="edit-web-sql-data"></a>编辑 Web SQL 数据
 
-查看 Web SQL表时无法编辑 Web SQL数据，如上图所示。  但是，可以从 Web SQL控制台运行用于编辑或删除表的语句。  请参阅[“运行 Web SQL查询](#run-web-sql-queries)。
+查看 Web SQL 表时无法编辑 Web SQL 数据，如上图所示。  但是，可以从 Web SQL 控制台运行用于编辑或删除表的语句。  请参阅 [“运行 Web SQL 查询](#run-web-sql-queries)”。
 
 
 <!-- ====================================================================== -->
@@ -61,9 +61,9 @@ ms.locfileid: "12610938"
 
 1. 单击数据库以打开该数据库的控制台。
 
-1. 键入 Web SQL 语句，然后按`Enter`下以运行它。
+1. 键入 Web SQL 语句，然后按 `Enter` 下以运行它。
 
-![使用 Web SQL控制台从表中删除行。](../media/storage-application-storage-web-sql-html5meetup-commands.msft.png)
+![使用 Web SQL 控制台从表中删除行。](../media/storage-application-storage-web-sql-html5meetup-commands.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -93,7 +93,7 @@ DevTools 不会实时更新表。  若要更新表中的数据，请执行以下
 
 1. 确保 **Web SQL** 复选框已打开。
 
-   ![Web SQL复选框。](../media/storage-application-clear-storage-web-sql.msft.png)
+   ![Web SQL 复选框。](../media/storage-application-clear-storage-web-sql.msft.png)
 
 1. 单击 **“清除站点数据**”。
 
@@ -105,5 +105,5 @@ DevTools 不会实时更新表。  若要更新表中的数据，请执行以下
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/storage/websql/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 4e6d536897460d40d75f42d9d6d07f82d45ea3b7
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 9a3f16a3c098ac711f714f4adf502a2799f0e684
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514411"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631503"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -52,7 +52,7 @@ Chromium问题 [#174309](https://crbug.com/174309)
 <!-- ====================================================================== -->
 ### <a name="emulate-surface-duo-and-samsung-galaxy-fold"></a>模拟 Surface Duo 和 Samsung Galaxy Fold
 
-现在，可以在两个新设备上测试网站或应用的外观：[Microsoft Edge中的 Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) 和 [Samsung Galaxy Fold](https://www.samsung.com/us/mobile/galaxy-fold)。
+现在可以在两个新设备上测试网站或应用的外观：Microsoft Edge 中的 [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) 和 [Samsung Galaxy Fold](https://www.samsung.com/us/mobile/galaxy-fold) 。
 
 若要帮助增强双屏和可折叠设备的网站或应用，请 [在模拟设备](../../../device-mode/index.md)时使用以下功能：
 
@@ -64,7 +64,7 @@ Chromium问题 [#174309](https://crbug.com/174309)
 
 ![Surface Duo 的设备仿真。](../../media/2020/08/surface-duo-device-emulation.msft.png)
 
-更新：此功能已发布，不再具有实验性。<!-- To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Emulation: Support dual screen mode**. -->
+更新：此功能已发布，不再处于实验性状态。<!-- To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Emulation: Support dual screen mode**. -->
 
 另请参阅：
 *  [在 Microsoft Edge DevTools 中模拟双屏和可折叠设备](../../../device-mode/dual-screen-and-foldables.md)
@@ -79,10 +79,10 @@ Microsoft Edge DevTools 团队和 Chrome DevTools 团队协作开发其他功能
 
 ![文章元素的 CSS 网格覆盖。](../../media/2020/08/css-grid-overlay-article.msft.png)
 
-更新：此功能已发布，不再具有实验性。<!-- To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**. -->
+更新：此功能已发布，不再处于实验性状态。<!-- To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**. -->
 
 另请参阅：
-* [DevTools 中的新增功能中的 CSS 网格调试功能](../06/devtools.md#css-grid-debugging-features)_ (Microsoft Edge 85) _。
+* _DevTools (Microsoft Edge 85) 中的新增功能中的 _[CSS 网格调试功能](../06/devtools.md#css-grid-debugging-features)。
 * [检查 Microsoft Edge DevTools 中的 CSS 网格](../../../css/grid.md)。
 
 Chromium问题： [#1047356](https://crbug.com/1047356)
@@ -91,17 +91,17 @@ Chromium问题： [#1047356](https://crbug.com/1047356)
 <!-- ====================================================================== -->
 ### <a name="table-copied-from-the-console-preserves-formatting"></a>从控制台复制的表保留格式设置
 
-在 Microsoft Edge 85 或更早版本中，在**控制台**中，复制的格式 `console.table` <!--where, what tool?--> 丢失了  如果从 [表](../../../console/api.md#table) 控制台 API 复制了输出并粘贴了输出，则只保留该表的文本。
+在 Microsoft Edge 85 或更早版本中，在 **控制台**中，复制的格式 `console.table` <!--where, what tool?--> 丢失了  如果从 [表](../../../console/api.md#table) 控制台 API 复制了输出并粘贴了输出，则只保留该表的文本。
 
-`table` Microsoft Edge 85 或更早版本中的控制台 API 输出：
+`table` Microsoft Edge 85 或更低版本中的控制台 API 输出：
 
-![Microsoft Edge 85 或更早版本中的表控制台 API 输出。](../../media/2020/08/console-table-beta.msft.png)
+![Microsoft Edge 85 或更低版本中的表控制台 API 输出。](../../media/2020/08/console-table-beta.msft.png)
 
 `table` Microsoft Edge 85 或更早版本的控制台 API 输出粘贴到Visual Studio Code：
 
-![Microsoft Edge 85 或更早版本的表控制台 API 输出粘贴到Visual Studio Code中。](../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png)
+![Microsoft Edge 85 或更早版本的表控制台 API 输出粘贴到Visual Studio Code。](../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png)
 
-在 Microsoft Edge 86 或更高版本中，从**控制台**复制表时，现在会保留格式。
+在 Microsoft Edge 86 或更高版本中，从 **控制台**复制表时，现在会保留格式。
 
 `table` Microsoft Edge 86 或更高版本中的控制台 API 输出：
 
@@ -126,7 +126,7 @@ Chromium问题： [#1115011](https://crbug.com/1115011)
 
 通过此功能，可以更轻松地测试屏幕阅读器和键盘用户体验网站或应用的方式。  屏幕阅读器和键盘导航取决于在网站或应用的源代码中按特定顺序放置的内容，以便它与呈现的页面匹配。  源订单查看器在呈现的页面和源代码之间按顺序显示潜在的差异。
 
-更新：此功能已发布，不再具有实验性。<!-- To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Source Order Viewer**. -->
+更新：此功能已发布，不再处于实验性状态。<!-- To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Source Order Viewer**. -->
 
 另请参阅：
 * [使用源订单查看器测试键盘支持](../../../accessibility/test-tab-key-source-order-viewer.md)
@@ -160,18 +160,18 @@ See also:
 <!-- ====================================================================== -->
 ### <a name="highlight-all-search-results-in-elements-tool"></a>在“元素”工具中突出显示所有搜索结果
 
-在 Microsoft Edge 84 和 85 中，**Elements** 工具中的第一个搜索结果没有突出显示。  其余搜索结果已正确突出显示。
+在 Microsoft Edge 84 和 85 中， **Elements** 工具中的第一个搜索结果没有突出显示。  其余搜索结果已正确突出显示。
 
 感谢你发送反馈并帮助改进Chromium。  反馈在开源[Chromium](https://crbug.com/1103316)项目中发现了问题 #1103316。
 
-![在元素面板上突出显示了第一个搜索结果，Microsoft Edge 84 或更高版本。](../../media/2020/08/elements-search-highlight-fixed.msft.png)
+![在 Microsoft Edge 84 或更高版本的“元素”面板上突出显示了第一个搜索结果。](../../media/2020/08/elements-search-highlight-fixed.msft.png)
 
-此问题现已在所有版本的Microsoft Edge中修复。
+此问题现已在所有版本的 Microsoft Edge 中得到解决。
 
 Chromium问题： [#1103316](https://crbug.com/1103316)
 
 另请参阅：
-* 在_查看和更改 DOM 开始_中[搜索节点](../../../dom/index.md#search-for-nodes)
+* 在_开始查看和更改 DOM 中_[搜索节点](../../../dom/index.md#search-for-nodes)
 
 
 <!-- ====================================================================== -->
@@ -185,7 +185,7 @@ Chromium问题： [#1103316](https://crbug.com/1103316)
 
 DevTools 现在在媒体工具中显示 [媒体](../../../media-panel/index.md) 播放器信息。
 
-若要打开新的**媒体**工具，请选择 **“自定义”并控制 DevTools** (`...`) > **More** **toolsMedia** > 。
+若要打开新的**媒体**工具，请选择“) >**更多工具** > **媒体**” (`...` **自定义和控制 DevTools**。
 
 ![新媒体工具。](../../media/2020/08/media-panel.msft.png)
 
@@ -241,7 +241,7 @@ Chromium问题：[1096481](https://crbug.com/1096481)、[1068116](https://crbug.
 
 在 **呈现** 工具中，使用新的 **“禁用本地字体** ”复选框来模拟规则中缺少 `local()` 的 `@font-face` 源。
 
-例如，当`Rubik`设备上安装了字体并且`@font-face src`规则将其用作`local()`字体时，Microsoft Edge使用设备中的本地字体文件。
+例如，当 `Rubik` 设备上安装了字体并且 `@font-face src` 规则将其用作 `local()` 字体时，Microsoft Edge 使用设备中的本地字体文件。
 
 选择 **禁用本地字体** 时，DevTools 会忽略 `local()` 字体并从网络中提取每个字体：
 
@@ -280,7 +280,7 @@ Chromium问题： [#1090802](https://crbug.com/1090802)
 ### <a name="emulate-prefers-reduced-data"></a>模拟 prefers-reduced-data
 
 > [!NOTE]
-> 在 Microsoft Edge 86 中，若要启用此功能，请转到`edge://flags#enable-experimental-web-platform-features`并打开**实验 Web 平台功能**标志。  仅当启用标志时，才会显示仿真选项。
+> 在 Microsoft Edge 86 中，若要启用此功能，请转到 `edge://flags#enable-experimental-web-platform-features` 并打开 **实验性 Web 平台功能** 标志。  仅当启用标志时，才会显示仿真选项。
 
 [prefers-reduced-data](https://drafts.csswg.org/mediaqueries-5#descdef-media-prefers-reduced-data) 媒体查询检测用户内容首选项以减少数据。  如果选中，用户将接收使用较少数据的备用页面内容。
 
@@ -415,14 +415,14 @@ DevTools 现在为低颜色对比度文本提供颜色建议。
 Chromium问题： [#1093227](https://crbug.com/1093227)
 
 另请参阅：
-* 使用 _CSS 功能参考_中的[颜色选取器更改颜色](../../../css/reference.md#change-colors-with-the-color-picker)
+* 使用 _CSS 功能参考_中的[颜色选择器更改颜色](../../../css/reference.md#change-colors-with-the-color-picker)
 * [使用颜色选取器测试文本颜色对比度](../../../accessibility/color-picker.md)
 
 
 <!-- ====================================================================== -->
 #### <a name="reinstate-properties-pane-in-the-elements-panel"></a>“元素”面板中的“恢复属性”窗格
 
-在 **“元素** ”工具中，“ **属性** ”窗格将返回。  “**属性**”窗格[在 Microsoft Edge 84 中已弃](../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel)用。  Microsoft Edge DevTools 团队和 Chrome DevTools 团队正在计划改进以检查元素的属性。
+在 **“元素** ”工具中，“ **属性** ”窗格将返回。  [Microsoft Edge 84 中已弃用](../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel)“**属性**”窗格。  Microsoft Edge DevTools 团队和 Chrome DevTools 团队正在计划改进以检查元素的属性。
 
 ![“元素”面板中的“属性”窗格。](../../media/2020/08/properties-pane.msft.png)
 
@@ -454,7 +454,7 @@ See also:
 
 现在，在“**样式**”窗格中编辑`font-family`属性时，导入的字体人脸将添加到 CSS 自动完成列表中。
 
-例如，如果 `monospace` 是本地计算机上安装的自定义字体，则它将显示在 CSS 完成列表中。  在早期版本的Microsoft Edge中，未显示字体。
+例如，如果 `monospace` 是本地计算机上安装的自定义字体，则它将显示在 CSS 完成列表中。  在早期版本的 Microsoft Edge 中，未显示字体。
 
 ![自动完成自定义字体。](../../media/2020/08/font-auto-complete.msft.png)
 
@@ -510,5 +510,5 @@ Chromium问题： [#1067184](https://crbug.com/1067184)
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-86)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

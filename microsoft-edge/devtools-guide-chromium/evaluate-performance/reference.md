@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 58d882ecd1100a708789e986a75ddea2ae6b3487
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 9df257fcf075d37eef13dde38fcc6d8b89b8a920
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610889"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630449"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,7 +30,7 @@ ms.locfileid: "12610889"
 
 本页全面介绍了与分析性能相关的 DevTools 功能。
 
-有关如何使用**性能**工具分析页面性能的分步教程，请[参阅开始分析运行时性能](index.md)。
+有关如何使用 **性能** 工具分析页面性能的分步教程，请 [参阅开始分析运行时性能](index.md)。
 
 
 <!-- ====================================================================== -->
@@ -188,7 +188,7 @@ DevTools 会自动放大大部分活动发生的记录部分。
 
 ### <a name="search-activities"></a>搜索活动
 
-按`Ctrl`+`F` (Windows、Linux) 或+`Command``F` (macOS) 打开 **“性能”** 面板底部的搜索框。
+按 `Ctrl`+`F` (Windows、Linux) 或+`Command``F` (macOS) 打开 **“性能**”面板底部的搜索框。
 
 ![搜索框。](../media/evaluate-performance-performance-search-regex.msft.png)
 
@@ -306,7 +306,7 @@ _根活动_ 是导致浏览器执行某些工作的活动。  例如，单击网
 
 **“总时间”** 列表示直接用于该活动或任何子项中的时间。
 
-单击 **"开始"菜单时间**、**自计时**或**总时间**按该列对表进行排序。
+单击 **“开始时间**”、“ **自定义时间**”或 **“总时间** ”按该列对表进行排序。
 
 使用 **“筛选”** 文本框按名称筛选活动。
 
@@ -464,7 +464,7 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
 
 1. [打开](#turn-on-advanced-paint-instrumentation)。
 
-1. 在 **Main** 部分中选择**画图**事件。
+1. 在 **Main** 部分中选择 **“画图**”事件。
 
 **画图探查器**面板：
 
@@ -498,13 +498,13 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
 
 使用“画图闪烁”可实时查看页面上的所有画图事件。  每当重新绘制页面的一部分时，DevTools 就会用绿色勾勒出该部分的轮廓。
 
-若要打开画图闪烁：
+打开画图闪烁：
 
 1. 打开 **渲染** 工具。  请参阅使用 [呈现工具分析呈现性能](#analyze-rendering-performance-with-the-rendering-tool)。
 
-1. 选中**画图闪烁**复选框。
+1. 选中 **“画图闪烁”** 复选框。
 
-   ![画图闪烁。](../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png)
+   ![油漆闪烁。](../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png)
 
 ### <a name="view-an-overlay-of-layers-with-layer-borders"></a>使用 “图层边框” 查看图层的叠加
 
@@ -541,7 +541,7 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
 
 在 **呈现** 工具中，使用 **“禁用本地字体** ”复选框模拟规则中缺少 `local()` 的 `@font-face` 源。
 
-例如，当`Rubik`设备上安装了字体并且`@font-face src`规则将其用作`local()`字体时，Microsoft Edge使用设备中的本地字体文件。
+例如，当 `Rubik` 设备上安装了字体并且 `@font-face src` 规则将其用作 `local()` 字体时，Microsoft Edge 使用设备中的本地字体文件。
 
 选择 **禁用本地字体** 时，DevTools 会忽略 `local()` 字体并从网络中提取每个字体：
 
@@ -563,5 +563,5 @@ DevTools 在 **“摘要”** 面板上方显示新的 **“内存”** 图表�
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/evaluate-performance/reference/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

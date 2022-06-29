@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 121922e830f619378c8fa57e130029d9f68adce3
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 29a657fe44e7f764324fae7841540bb64ff35f5a
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610980"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630492"
 ---
 <!-- Copyright Kayce Basques
 
@@ -44,7 +44,7 @@ ms.locfileid: "12610980"
 
    * ![ (数据库图标。](../media/database-icon.msft.png)) `notes - https://mdn.github.io`表示数据库，其中`notes`是数据库的名称，`https://mdn.github.io`是访问数据库的源。
 
-   * ![ (对象Microsoft Store图标。](../media/object-store-icon.msft.png)) `notes`是对象存储。
+   * ![ (对象存储图标。](../media/object-store-icon.msft.png)) `notes`是对象存储。
 
    *  **标题**和 **正文**是[索引](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Using_an_index)。
 
@@ -105,13 +105,13 @@ ms.locfileid: "12610980"
 
 1. [查看 IndexedDB 对象存储](#view-indexeddb-data)。
 
-1. 单击要删除的键值配对。  DevTools 会突出显示它以表明已选中。
+1. 单击要删除的键值对。  DevTools 会突出显示它以表明已选中。
 
-   ![单击键值配对以将其删除。](../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png)
+   ![单击键值对以将其删除。](../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png)
 
 1. 按 `Delete` 或单击 **“删除选定** (![删除已选中。](../media/delete-icon.msft.png)) 。
 
-   ![对象存储在密钥值配对删除后的外观。](../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png)
+   ![对象存储在删除键值对后的外观。](../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png)
 
 ### <a name="delete-all-key-value-pairs-in-an-object-store"></a>删除对象存储中所有键值对
 
@@ -145,5 +145,5 @@ ms.locfileid: "12610980"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/storage/indexeddb/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

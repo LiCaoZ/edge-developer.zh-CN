@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: b97523f5d09ba095d1f295ce64515b74a67929c5
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: edb5b7f47e291a5b0434f61abe24816e038478ab
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610721"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631618"
 ---
 <!-- Copyright Kayce Basques
 
@@ -45,7 +45,7 @@ ms.locfileid: "12610721"
 
 * 你正在从源代码目录运行本地 Web 服务器，以便可访问 `localhost:8080`站点。
 
-* 在Microsoft Edge中打开`localhost:8080`，并且使用 DevTools 更改站点的 CSS。
+* 在 Microsoft Edge 中打开 `localhost:8080` ，并且使用 DevTools 更改站点的 CSS。
 
 启用工作区后，在 DevTools 中所做的 CSS 更改将保存到桌面上的源代码。
 
@@ -81,7 +81,7 @@ ms.locfileid: "12610721"
 
 1. 在 `app` 桌面上创建目录。  将演示源代码中的副本`index.html``styles.css`和`script.js`文件保存到`app`目录。  在本教程的其余部分中，该目录称为 `~/Desktop/app`目录。
 
-1. "开始"菜单本地 Web 服务器。`~/Desktop/app`  下面是一些用于启动 `SimpleHTTPServer`的示例代码，但你可以使用任何你喜欢的服务器。
+1. 在其中启动本地 Web 服务器 `~/Desktop/app`。  下面是一些用于启动 `SimpleHTTPServer`的示例代码，但你可以使用任何你喜欢的服务器。
 
    ```bash
    cd ~/Desktop/app
@@ -93,13 +93,13 @@ ms.locfileid: "12610721"
    python -m http.server # Python 3
    ```
 
-1. 在Microsoft Edge中打开一个选项卡，并导航到站点的本地托管版本。  应该能够使用 URL（如`localhost:8080``http://0.0.0.0:8080`或 ）访问它。  确切 [的端口号](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) 可能不同。
+1. 在 Microsoft Edge 中打开一个选项卡并导航到站点的本地托管版本。  应该能够使用 URL（如`localhost:8080``http://0.0.0.0:8080`或 ）访问它。  确切 [的端口号](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) 可能不同。
 
    ![演示。](../media/workspaces-workspaces-demo.msft.png)
 
 ### <a name="set-up-devtools"></a>设置 DevTools
 
-1. 按 `Ctrl``Shift``J`++ (Windows、Linux) 或`Command``Option`++`J` (macOS) 打开 DevTools 的**控制台**面板。
+1. 按 `Ctrl``J``Shift`++ (Windows、Linux) 或 `Command``Option`++`J` (macOS) 打开 DevTools 的**控制台**面板。
 
    ![控制台面板。](../media/workspaces-workspaces-demo-console.msft.png)
 
@@ -194,7 +194,7 @@ In short, the **DOM Tree** `!==` HTML.
 
 1. 将`<h1>Workspaces Demo</h1>`替换为`<h1>I ❤️  Cake</h1>`。  查看下图。
 
-1. 按`Ctrl`+`S` (Windows、Linux) 或`Command`+`S` (macOS) 保存更改。
+1. 按 `Ctrl`+`S` (Windows、Linux) 或 `Command`+`S` (macOS) 保存更改。
 
 1. 刷新页面。  刷新页面后，该 `<h1>` 元素将继续显示新文本。
 
@@ -218,7 +218,7 @@ In short, the **DOM Tree** `!==` HTML.
 
    ![使用命令菜单打开“快速源”工具。](../media/workspaces-workspaces-demo-search-show-quick-source.msft.png)
 
-1. 按`Ctrl`+`P` (Windows、Linux) 或+`Command``P` (macOS) 打开 **“打开文件”** 对话框，如下所示。
+1. 按 `Ctrl`+`P` (Windows、Linux) 或+`Command``P` (macOS) 打开 **“打开文件”** 对话框，如下所示。
 
 1. 键入 `script`，然后选择 **应用/script.js**。
 
@@ -234,7 +234,7 @@ In short, the **DOM Tree** `!==` HTML.
     document.querySelector('a').style = 'font-style:italic';
     ```
 
-1. 按`Ctrl`+`S` (Windows、Linux) 或`Command`+`S` (macOS) 保存更改。
+1. 按 `Ctrl`+`S` (Windows、Linux) 或 `Command`+`S` (macOS) 保存更改。
 
 1. 刷新页面。  页面上的链接现在已斜体化。
 
@@ -252,5 +252,5 @@ In short, the **DOM Tree** `!==` HTML.
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/workspaces/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

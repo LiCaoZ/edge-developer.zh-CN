@@ -1,17 +1,17 @@
 ---
 title: DevTools (Microsoft Edge 84) 中的新增功能
-description: 在高对比度模式下Windows使用 DevTools，将 DevTools 中的键盘快捷方式匹配为Visual Studio Code等。
+description: 在 Windows 高对比度模式下使用 DevTools，将 DevTools 中的键盘快捷方式匹配到Visual Studio Code等。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/13/2021
-ms.openlocfilehash: 6d7c78d76b6146247e9ad774f1034ae5ef307346
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.openlocfilehash: b3e1caf4d95a27d6f1fdc0893ab268be0762da3e
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522411"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631277"
 ---
 <!-- Copyright Kayce Basques
 
@@ -36,15 +36,15 @@ ms.locfileid: "12522411"
 
 
 <!-- ====================================================================== -->
-### <a name="use-the-devtools-in-windows-high-contrast-mode"></a>在高对比度模式下Windows使用 DevTools
+### <a name="use-the-devtools-in-windows-high-contrast-mode"></a>在 Windows 高对比度模式下使用 DevTools
 
-Microsoft Edge当Windows处于高对比度模式时，DevTools 现在以高对比度模式显示。
+当 Windows 处于高对比度模式时，Microsoft Edge DevTools 现在以高对比度模式显示。
 
-![高对比度模式下Microsoft Edge DevTools。](../../media/2020/05/high-contrast.msft.png)
+![处于高对比度模式的 Microsoft Edge DevTools。](../../media/2020/05/high-contrast.msft.png)
 
-[按照说明在Windows中启用高对比度模式](https://support.microsoft.com/help/4026951/windows-10-turn-high-contrast-mode-on-or-off)。  若要在Microsoft Edge中打开 DevTools，请选择`F12`或 `Ctrl``I`+`Shift`+。  DevTools 以高对比度模式显示。
+[按照说明在 Windows 中启用高对比度模式](https://support.microsoft.com/help/4026951/windows-10-turn-high-contrast-mode-on-or-off)。  若要在 Microsoft Edge 中打开 DevTools，请选择`F12`或`I``Ctrl`+`Shift`+选择。  DevTools 以高对比度模式显示。
 
-注意：DevTools 目前支持Windows的高对比度模式，但不支持macOS。
+注意：DevTools 目前支持 Windows 上的高对比度模式，但不支持 macOS。
 
 Chromium问题 [#1048378](https://crbug.com/1048378)
 
@@ -56,19 +56,19 @@ Chromium问题 [#1048378](https://crbug.com/1048378)
 <!-- ====================================================================== -->
 ### <a name="match-keyboard-shortcuts-in-the-devtools-to-visual-studio-code"></a>将 DevTools 中的键盘快捷方式匹配为Visual Studio Code
 
-从[反馈](../../../contact.md)和[Chromium公共问题跟踪器](https://bugs.chromium.org/p/chromium/issues/list)中，Microsoft Edge DevTools 团队了解到你希望能够在 DevTools 中自定义键盘快捷方式。  在 Microsoft Edge 84 中，现在可以将 DevTools 中的键盘快捷方式与[Visual Studio Code](https://code.visualstudio.com/)匹配，这只是团队为快捷自定义而使用的功能之一。
+从[反馈](../../../contact.md)和[Chromium公共问题跟踪器](https://bugs.chromium.org/p/chromium/issues/list)中，Microsoft Edge DevTools 团队了解到你希望能够在 DevTools 中自定义键盘快捷方式。  在 Microsoft Edge 84 中，现在可以将 DevTools 中的键盘快捷方式与[Visual Studio Code](https://code.visualstudio.com/)相匹配，这只是团队为快捷自定义而使用的功能之一。
 
 ![将 DevTools 中的键盘快捷方式与Visual Studio Code匹配。](../../media/2020/05/keyboard-shortcut.msft.png)
 
 若要尝试此试验，请执行以下操作：
 
-1. 在 DevTools 中，通过选择`?`或选择 ![Devtools **设置**图标打开设置。](../../../media/settings-icon.msft.png) DevTools 右上角的图标。
+1. 在 DevTools 中，通过选择`?`或选择![“Devtools 设置”图标打开 **“设置**”。](../../../media/settings-icon.msft.png) DevTools 右上角的图标。
 
 1. 在 **“试验** ”部分中，选择 **“启用自定义键盘快捷方式设置”选项卡 (需要重新加载) **。
 
 1. 重新加载 DevTools。
 
-1. 再次**打开设置**，然后选择 **“快捷方式”** 部分。
+1. 再次打开 **“设置”** ，然后选择 **“快捷方式”** 部分。
 
 1. 单击预设下拉列表**中的“匹配”快捷方式**，选择 **“DevTools (默认) **”，然后选择**Visual Studio Code**。  
 
@@ -76,7 +76,7 @@ DevTools 中的键盘快捷方式现在与Visual Studio Code中等效操作的�
 
 例如，在[Visual Studio Code](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)中暂停或继续运行脚本的键盘快捷方式是`F5`。  使用 **DevTools (默认) **预设，DevTools 中的同一快捷方式是`F8`，但**使用Visual Studio Code**预设时，该快捷方式现在也是`F5`。
 
-此功能当前在 Microsoft Edge 84 中作为试验提供，因此请与团队分享[反馈](../../../contact.md)！
+此功能目前在 Microsoft Edge 84 中作为试验提供，因此请与团队分享 [反馈](../../../contact.md) ！
 
 Chromium问题 [#174309](https://crbug.com/174309)
 
@@ -87,27 +87,27 @@ Chromium问题 [#174309](https://crbug.com/174309)
 <!-- ====================================================================== -->
 ### <a name="remote-debug-surface-duo-emulators"></a>远程调试 Surface Duo 仿真器
 
-现在，可以使用 Microsoft Edge DevTools 的全部功能远程调试 [Surface Duo 模拟器](/dual-screen/android/use-emulator)中运行的 Web 内容。
+现在，可以使用 Microsoft Edge DevTools 的全部功能远程调试 [Surface Duo 模拟器](/dual-screen/android/use-emulator) 中运行的 Web 内容。
 
-使用 Surface Duo 仿真器，可以测试 Web 内容在可折叠和双屏设备的新类上呈现的方式。  模拟器运行Android操作系统，并提供[Microsoft Edge Android应用](https://play.google.com/store/apps/details?id=com.microsoft.emmx)。  在[Microsoft Edge应用](https://play.google.com/store/apps/details?id=com.microsoft.emmx)中加载 Web 内容，并使用 DevTools 对其进行调试：
+使用 Surface Duo 仿真器，可以测试 Web 内容在可折叠和双屏设备的新类上呈现的方式。  仿真器运行 Android 操作系统并提供 [Microsoft Edge Android 应用](https://play.google.com/store/apps/details?id=com.microsoft.emmx)。  在 [Microsoft Edge 应用](https://play.google.com/store/apps/details?id=com.microsoft.emmx) 中加载 Web 内容，并使用 DevTools 对其进行调试：
 
-![在 Surface Duo 模拟器上运行的Microsoft Edge应用。](../../media/2020/05/surface-duo-emulator.msft.png)
+![在 Surface Duo 仿真器上运行的 Microsoft Edge 应用。](../../media/2020/05/surface-duo-emulator.msft.png)
 
-`edge://inspect` Microsoft Edge桌面实例中的页面显示 **SurfaceDuoEmulator**，其中包含在 Surface Duo 模拟器上运行的打开选项卡或 [PVA](../../../../progressive-web-apps-chromium/index.md) 的列表：
+`edge://inspect` Microsoft Edge 桌面实例中的页面显示 **SurfaceDuoEmulator**，其中包含在 Surface Duo 仿真器上运行的打开选项卡或 [PVA](../../../../progressive-web-apps-chromium/index.md) 的列表：
 
-![edge://inspect 页显示模拟器上运行的Microsoft Edge应用中打开的选项卡的列表。](../../media/2020/05/edge-inspect.msft.png)
+![edge://inspect 页显示模拟器上运行的 Microsoft Edge 应用中打开的选项卡的列表。](../../media/2020/05/edge-inspect.msft.png)
 
-单击**检查**要调试的选项卡或PWA，打开 DevTools。  按照分步指南在 Surface Duo 模拟器上远程调试 Web 内容： [远程调试 Surface Duo 仿真器](../../../remote-debugging/surface-duo-emulator.md)。
+单击 **检查** 要调试的选项卡或 PWA，打开 DevTools。  按照分步指南在 Surface Duo 模拟器上远程调试 Web 内容： [远程调试 Surface Duo 仿真器](../../../remote-debugging/surface-duo-emulator.md)。
 
 
 <!-- ====================================================================== -->
 ### <a name="resize-the-devtools-drawer-more-easily"></a>更轻松地调整 DevTools 抽屉的大小
 
-在 Microsoft Edge 83 或更早版本中，通过将鼠标悬停在抽屉的工具栏内来调整 [DevTools 抽屉](../../../customize/index.md#drawer)的大小。  抽屉的行为不同于 DevTools 中窗格的其他调整大小控件，你将鼠标悬停在窗格边框上以调整其大小。  下图显示了在版本 83 或更低版本 Microsoft Edge中调整抽屉大小的工作原理：
+在 Microsoft Edge 83 或更低版本中，通过将鼠标悬停在抽屉的工具栏内来调整 [DevTools 抽屉](../../../customize/index.md#drawer) 的大小。  抽屉的行为不同于 DevTools 中窗格的其他调整大小控件，你将鼠标悬停在窗格边框上以调整其大小。  下图显示了在 Microsoft Edge 版本 83 或更低版本中调整抽屉大小的工作原理：
 
 ![在 Microsoft Edge 83 中调整 DevTools 抽屉的大小。](../../media/2020/05/drawer-83.msft.png)
 
-从 Microsoft Edge 84 开始，可以通过将鼠标悬停在边框上来调整抽屉的大小。  此更改将调整 DevTools 抽屉大小的行为与 DevTools 中的其他窗格保持一致。 下图显示了在 Microsoft Edge 84 或更高版本中调整抽屉大小的工作原理：
+从 Microsoft Edge 84 开始，可以通过将鼠标悬停在边框上来调整抽屉的大小。  此更改将调整 DevTools 抽屉大小的行为与 DevTools 中的其他窗格保持一致。 下图显示了如何在 Microsoft Edge 84 或更高版本中调整抽屉大小：
 
 ![在 Microsoft Edge 84 中调整 DevTools 抽屉的大小。](../../media/2020/05/drawer-84.msft.png)
 
@@ -117,7 +117,7 @@ Chromium问题 [#1076112](https://crbug.com/1076112)
 <!-- ====================================================================== -->
 ### <a name="screencasting-navigation-buttons-display-focus"></a>屏幕广播导航按钮显示焦点
 
-远程调试[Android设备](../../../remote-debugging/index.md)、[Windows 10或更高版本设备或](../../../remote-debugging/windows.md) [Surface Duo 模拟器](../../../remote-debugging/surface-duo-emulator.md)时，可以使用![切换屏幕广播切换屏幕广播。](../../../media/toggle-screencast-icon.msft.png) DevTools 左上角的图标。  启用了屏幕广播后，可以从 DevTools 窗口在远程设备上的Microsoft Edge中导航选项卡。
+远程调试 [Android 设备](../../../remote-debugging/index.md)、[Windows 10或更高版本设备或](../../../remote-debugging/windows.md) [Surface Duo 模拟器](../../../remote-debugging/surface-duo-emulator.md)时，可以使用![切换屏幕广播切换屏幕广播。](../../../media/toggle-screencast-icon.msft.png) DevTools 左上角的图标。  启用屏幕广播后，可以在远程设备上的 Microsoft Edge 中从 DevTools 窗口导航选项卡。
 
 在 Microsoft Edge 84 中，这些导航按钮现在也可使用键盘访问。  例如，从屏幕截图 URL 栏按 `Shift`+`Tab` 下焦点将焦点放在 **“刷新** ”按钮上：
 
@@ -129,7 +129,7 @@ Chromium问题 [#1081486](https://crbug.com/1081486)
 <!-- ====================================================================== -->
 ### <a name="network-panel-details-pane-is-now-accessible"></a>现在可访问“网络面板详细信息”窗格
 
-在 Microsoft Edge 84 中，“**网络**”工具中的[“详细信息”窗格](../../../network/index.md#inspect-the-details-of-the-resource)现在会在为[网络日志](../../../network/index.md#log-network-activity)中的资源打开它时占据焦点。  此更改允许屏幕阅读器读出内容并与“ **详细信息** ”窗格的内容进行交互。
+在 Microsoft Edge 84 中，“**网络**”工具中的[“详细信息”窗格](../../../network/index.md#inspect-the-details-of-the-resource)现在在为[网络日志](../../../network/index.md#log-network-activity)中的资源打开它时会集中注意力。  此更改允许屏幕阅读器读出内容并与“ **详细信息** ”窗格的内容进行交互。
 
 ![“网络”面板中的“详细信息”窗格现在在打开时占据焦点。](../../media/2020/05/network-details.msft.png)
 
@@ -140,13 +140,13 @@ Chromium 问题 [#963183](https://crbug.com/963183)
 <!-- ====================================================================== -->
 ## <a name="announcements-from-the-chromium-project"></a>来自 Chromium 项目的公告
 
-以下部分将公布Microsoft Edge 84 中为开放源代码 Chromium项目提供的其他功能。
+以下部分将公布 Microsoft Edge 84 中为开放源代码 Chromium项目提供的其他功能。
 
 
 <!-- ====================================================================== -->
 ### <a name="fix-site-issues-with-the-new-issues-tool-in-the-devtools-drawer"></a>修复 DevTools 抽屉中新问题工具的站点问题
 
-DevTools 底部抽屉中的新 **问题** 工具可减少 **控制台**的通知疲劳和混乱。  目前，**控制台**是网站开发人员、库、框架和Microsoft Edge记录消息、警告和错误的中心位置。  **“问题**”工具以结构化、聚合和可操作的方式聚合来自浏览器的警告。  **“问题**”工具链接到 DevTools 中受影响的资源，并提供有关如何解决问题的指导。
+DevTools 底部抽屉中的新 **问题** 工具可减少 **控制台**的通知疲劳和混乱。  目前， **控制台** 是网站开发人员、库、框架和 Microsoft Edge 记录消息、警告和错误的中心位置。  **“问题**”工具以结构化、聚合和可操作的方式聚合来自浏览器的警告。  **“问题**”工具链接到 DevTools 中受影响的资源，并提供有关如何解决问题的指导。
 
 随着时间的推移， **问题工具中** 会显示更多警告，而不是在 **控制台**中显示，以简化 **控制台** 消息。
 
@@ -194,7 +194,7 @@ Chromium问题 [#1040025](https://crbug.com/1040025)
 
 而是选择 **“记录记录**![”图标，](../../../media/record-icon.msft.png)手动重新加载页面，等待页面加载，然后停止录制。
 
-如果`Total Blocking Time: Unavailable`显示，Microsoft Edge DevTools 未从Microsoft Edge中的内部分析数据获取所需的信息。
+如果 `Total Blocking Time: Unavailable` 显示，Microsoft Edge DevTools 不会从 Microsoft Edge 中的内部分析数据中获取所需的信息。
 
 ![性能面板录制页脚中的总阻塞时间信息。](../../media/2020/05/tbt.msft.png)
 
@@ -227,7 +227,7 @@ Chromium问题 [#1054381](https://crbug.com/1054381)
 
 ![使用旧解析术语的控制台示例。](../../media/2020/05/resolved.msft.png)
 
-**控制台**现在使用与规范一致的`Promise`术语`fulfilled`。  有关规范的`Promise`详细信息，请参阅[GitHub上的状态和命运](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md)。<!-- changing master to main doesn't work 5/19/2022 -->
+**控制台**现在使用与规范一致的`Promise`术语`fulfilled`。  有关规范的 `Promise` 详细信息，请参阅 [GitHub 上的状态和命运](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md)。<!-- changing master to main doesn't work 5/19/2022 -->
 
 ![使用新的已完成术语的控制台示例。](../../media/2020/05/fulfilled.msft.png)
 
@@ -281,7 +281,7 @@ Chromium问题 [#1040019](https://crbug.com/1040019)
 
 还应在 **“计算** ”窗格和“ **检查模式** ”工具提示中显示语法。
 
-Microsoft Edge DevTools 使用新语法，因为即将推出的 CSS 功能（如[颜色 () ](https://drafts.csswg.org/css-color#the-color-property)）不支持已弃用的逗号分隔参数语法。
+Microsoft Edge DevTools 正在使用新语法，因为即将推出的 CSS 功能（如 [颜色 () ](https://drafts.csswg.org/css-color#the-color-property) ）不支持已弃用的逗号分隔参数语法。
 
 一段时间以来，大多数浏览器都支持空格分隔参数语法。  是否 [可以使用：空格分隔功能颜色表示号？](https://caniuse.com/#feat=mdn-css_types_color_space_separated_functional_notation)
 
@@ -322,5 +322,5 @@ Chromium问题 [#1072952](https://crbug.com/1072952)
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-84)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

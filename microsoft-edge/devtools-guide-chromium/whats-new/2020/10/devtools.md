@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 48756f1c9d226dd259d3cb5300fd41ec481e45de
-ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
+ms.openlocfilehash: 5f39a1e0e0996252c98a166f97ffde53ebca65c6
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "12551593"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630533"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -99,7 +99,7 @@ DevTools 现在支持在顶部和底部面板之间移动工具。  通过同时
 <!-- ====================================================================== -->
 ## <a name="improved-css-grid-tooling"></a>改进了 CSS 网格工具
 
-Microsoft Edge DevTools 现在支持以下功能来检查、查看和调试 CSS 网格。
+Microsoft Edge DevTools 现在支持以下用于检查、查看和调试 CSS 网格的功能。
 
 *  使用 **“检查** ”工具显示简化的网格覆盖，或使用持久覆盖获取更详细的信息。
 
@@ -126,7 +126,7 @@ Microsoft Edge DevTools 团队正在与 Chrome DevTools 团队和Chromium社区�
 <!-- ====================================================================== -->
 ## <a name="customize-keyboard-shortcuts-in-settings"></a>在“设置”中自定义键盘快捷方式
 
-现在，你可以为 DevTools 中的任何操作自定义键盘快捷方式。  自 Microsoft Edge 版本 84 起，你可以在**Visual Studio Code**和 **DevTools (** 键盘快捷方式的默认) 预设之间进行选择。  从Microsoft Edge版本 87 开始，可以进一步自定义键盘快捷方式。
+现在，你可以为 DevTools 中的任何操作自定义键盘快捷方式。  自 Microsoft Edge 版本 84 起，你可以在**Visual Studio Code**和 **DevTools (** 键盘快捷方式的默认) 预设之间进行选择。  从 Microsoft Edge 版本 87 开始，可以进一步自定义键盘快捷方式。
 
 ![用于暂停脚本的自定义快捷方式。](../../media/2020/10/custom-shortcut-pause-script.msft.png)
 
@@ -139,15 +139,15 @@ Microsoft Edge DevTools 团队正在与 Chrome DevTools 团队和Chromium社区�
 
 
 <!-- ====================================================================== -->
-## <a name="introducing-the-microsoft-edge-tools-for-visual-studio-code-extension"></a>Microsoft Edge工具Visual Studio Code扩展简介
+## <a name="introducing-the-microsoft-edge-tools-for-visual-studio-code-extension"></a>Microsoft Edge Tools for Visual Studio Code 扩展简介
 
-Visual Studio Code和**网络Visual Studio Code**扩展的**元素**现在合并到新的[Microsoft Edge开发人员工具中，用于Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)扩展。  使用 Microsoft Edge DevTools 进行以下活动，而无需保留Microsoft Visual Studio代码。
+Visual Studio Code和**网络Visual Studio Code**扩展的**元素**现在合并到新的 [Microsoft Edge 开发人员工具Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)扩展中。  在不离开 Microsoft Visual Studio Code的情况下，将 Microsoft Edge DevTools 用于以下活动。
 
 *  调试 DOM
 *  编辑 CSS
 *  检查网络流量
 
-使用扩展，启动Microsoft Edge、连接到浏览器的现有实例，或直接从编辑器使用无头浏览器。  若要开始参与和提交有关此扩展的反馈问题，请参阅GitHub上用于Visual Studio Code存储库的[Microsoft Edge开发人员工具](https://github.com/Microsoft/vscode-edge-devtools)。
+使用扩展，启动 Microsoft Edge，连接到浏览器的现有实例，或直接从编辑器使用无头浏览器。  若要开始参与和提交有关此扩展的反馈问题，请参阅 GitHub 上用于 Visual Studio Code 存储库的 [Microsoft Edge 开发人员工具](https://github.com/Microsoft/vscode-edge-devtools)。
 
 在完整浏览器模式下使用扩展：
 
@@ -157,7 +157,7 @@ Visual Studio Code和**网络Visual Studio Code**扩展的**元素**现在合并
 
 ![在无头模式下使用扩展。](../../media/2020/10/microsoft-edge-tools-headless.msft.png)
 
-有关详细信息，请参阅 [Microsoft Edge Visual Studio Code 的 DevTools 扩展](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)。
+有关详细信息，请参阅[适用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)。
 
 
 <!-- ====================================================================== -->
@@ -169,7 +169,7 @@ Visual Studio Code和**网络Visual Studio Code**扩展的**元素**现在合并
 <!-- ====================================================================== -->
 ### <a name="new-webauthn-tool"></a>新建 WebAuthn 工具
 
-在早期版本的Microsoft Edge中，没有本机 WebAuthn 调试支持。  需要物理身份验证器才能使用 [Web 身份验证 API 测试 Web](https://w3c.github.io/webauthn) 应用程序。  使用新的 **WebAuthn** 工具，无需使用任何物理身份验证器即可执行以下操作：
+在早期版本的 Microsoft Edge 中，没有本机 WebAuthn 调试支持。  需要物理身份验证器才能使用 [Web 身份验证 API 测试 Web](https://w3c.github.io/webauthn) 应用程序。  使用新的 **WebAuthn** 工具，无需使用任何物理身份验证器即可执行以下操作：
 
 *  模拟身份验证器。
 *  自定义身份验证器的属性。
@@ -288,7 +288,7 @@ performance.mark('end');
 有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1051466](https://crbug.com/1051466)。
 
 另请参阅：
-* 在 _DevTools (Microsoft Edge 88) 中 _ [显示打开窗口的开机帧详细信息](../11/devtools.md#display-opener-frame-details-for-opened-windows)
+* 在 _DevTools (Microsoft Edge 88) 中 _ [显示打开的窗口的开机帧详细信息](../11/devtools.md#display-opener-frame-details-for-opened-windows)
 * [用于管理存储的应用程序工具](../../../storage/application-tool.md)
 
 
@@ -304,7 +304,7 @@ performance.mark('end');
 有关Chromium开源项目中此功能的实时更新，请参阅问题 [#1051466](https://crbug.com/1051466)。
 
 另请参阅：
-* 在 _DevTools (Microsoft Edge 88) 中 _ [显示打开窗口的开机帧详细信息](../11/devtools.md#display-opener-frame-details-for-opened-windows)
+* 在 _DevTools (Microsoft Edge 88) 中 _ [显示打开的窗口的开机帧详细信息](../11/devtools.md#display-opener-frame-details-for-opened-windows)
 * [用于管理存储的应用程序工具](../../../storage/application-tool.md)
 
 
@@ -330,5 +330,5 @@ performance.mark('end');
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-87)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

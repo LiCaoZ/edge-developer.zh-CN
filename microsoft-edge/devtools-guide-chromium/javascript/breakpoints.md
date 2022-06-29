@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: f017598178dd9480082c305d801b78f73b5e6d3e
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 0b3e8211be1d85dfac5bac71b221c69fd44c8c5a
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610448"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631037"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,7 +30,7 @@ ms.locfileid: "12610448"
 
 使用断点暂停 JavaScript 代码。  本文介绍 DevTools 中可用的每种类型的断点，以及何时使用以及如何设置每种类型。
 
-有关使用现有网页的介绍性教程，请[参阅开始调试 JavaScript](index.md)。
+有关使用现有网页的介绍性教程，请 [参阅开始调试 JavaScript](index.md)。
 
 
 <!-- ====================================================================== -->
@@ -249,5 +249,5 @@ debug(hey); // This doesn't work.  hey() is out of scope.
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/javascript/breakpoints/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

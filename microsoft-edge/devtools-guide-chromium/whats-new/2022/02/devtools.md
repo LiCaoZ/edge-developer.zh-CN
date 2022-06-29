@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/02/2022
-ms.openlocfilehash: 9210855b79efe86e9229d94fe903242d88786e00
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 18c81d58ee8ae007e9f95972be3d591c1ea29901
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514284"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631625"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-98"></a>DevTools (Microsoft Edge 98) 中的新增功能
 
@@ -124,7 +124,7 @@ ms.locfileid: "12514284"
 
 另请参阅：
 * _调试渐进式Web 应用 (PVA 中的 _ [服务工作者](../../../progressive-web-apps/index.md#service-workers)) - 在 DevTools 中调试服务工作者。
-* [使用 HTML 和 DOM](../../../beginners/html.md) - `<script>` 开始**Elements** 工具中的标记。
+* [HTML 和 DOM](../../../beginners/html.md) - `<script>` 入门 **Elements** 工具中的标记。
 
 
 <!-- ====================================================================== -->
@@ -163,6 +163,6 @@ Microsoft Edge 版本 98 还包括来自 Chromium 项目的以下更新：
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
 <!--
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 -->

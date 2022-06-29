@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 984186248c0c14b55472800f1fe192a43db7e2d2
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: af46fa6fd9b07a549266340cd639e794885d2bd2
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610210"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630524"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,7 +30,7 @@ ms.locfileid: "12610210"
 
 了解如何使用 Microsoft Edge 和 DevTools 查找影响页面性能的内存问题，包括内存泄漏、内存膨胀和频繁的垃圾回收。
 
-*  了解页面当前与Microsoft Edge浏览器任务管理器一起使用的内存量。
+*  了解页面当前在 Microsoft Edge 浏览器任务管理器中使用的内存。
 *  使用内存面板可视化一段时间内的 **内存** 使用情况。
 *  使用 **堆快照**识别分离的 DOM 树 (内存泄漏的常见原因) 。
 *  了解何时在 JavaScript 堆中分配新内存 (JS 堆) **在时间线上使用分配检测**。
@@ -63,15 +63,15 @@ ms.locfileid: "12610210"
 
 
 <!-- ====================================================================== -->
-## <a name="monitor-memory-use-in-realtime-with-the-microsoft-edge-browser-task-manager"></a>使用Microsoft Edge浏览器任务管理器实时监视内存使用
+## <a name="monitor-memory-use-in-realtime-with-the-microsoft-edge-browser-task-manager"></a>使用 Microsoft Edge 浏览器任务管理器实时监视内存使用
 
-使用Microsoft Edge浏览器任务管理器作为内存问题调查的起点。  Microsoft Edge浏览器任务管理器是一个实时监视器，用于告知页面当前使用的内存量。
+使用 Microsoft Edge 浏览器任务管理器作为内存问题调查的起点。  Microsoft Edge 浏览器任务管理器是一个实时监视器，用于告知页面当前使用的内存量。
 
-1. 按`Shift`+`Esc`或转到Microsoft Edge主菜单，然后选择 **“更多工具** > **浏览器任务管理器**”打开Microsoft Edge浏览器任务管理器。
+1. 按 `Shift`+`Esc` 或转到 Microsoft Edge 主菜单，然后选择 **“更多工具** > **浏览器任务管理器** ”打开 Microsoft Edge 浏览器任务管理器。
 
-   ![打开Microsoft Edge浏览器任务管理器。](../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png)
+   ![打开 Microsoft Edge 浏览器任务管理器。](../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png)
 
-1. 右键单击Microsoft Edge浏览器任务管理器的表标题，然后启用 **JavaScript 内存**。
+1. 右键单击 Microsoft Edge 浏览器任务管理器的表标题，然后启用 **JavaScript 内存**。
 
    ![启用 JavaScript 内存。](../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png)
 
@@ -212,7 +212,7 @@ document.getElementById('grow').addEventListener('click', grow);
 
 1. 打开 DevTools，然后选择 **“内存** ”面板。
 
-1. 单击时间线单选按钮**上的“分配检测**”，然后单击 **"开始"菜单**按钮。
+1. 单击时间线单选按钮 **上的“分配检测** ”，然后单击 **“开始”** 按钮。
 
 1. 执行你怀疑导致内存泄漏的操作。
 
@@ -244,9 +244,9 @@ document.getElementById('grow').addEventListener('click', grow);
 
 1. 单击“ **分配采样** 单选”按钮。
 
-1. 如果页面上有辅助角色，则可以使用 **"开始"菜单**按钮旁边的下拉菜单将其选为分析目标。
+1. 如果页面上有辅助角色，则可以使用 **“开始”** 按钮旁边的下拉菜单选择该工作线程作为分析目标。
 
-1. 单击 **"开始"菜单**按钮。
+1. 单击 **“开始”** 按钮。
 
 1. 在网页上，执行要调查的操作。
 
@@ -262,9 +262,9 @@ DevTools 显示按函数划分的内存分配细分。  默认视图为 **“重
 
 如果页面出现频繁暂停，则可能会出现垃圾回收问题。
 
-可以使用Microsoft Edge浏览器任务管理器或性能内存录制来发现频繁的垃圾回收。
+可以使用 Microsoft Edge 浏览器任务管理器或性能内存记录来发现频繁的垃圾回收。
 
-*  在Microsoft Edge浏览器任务管理器中，经常上升和下降**的内存**或 **JavaScript 内存**值表示频繁的垃圾回收。
+*  在 Microsoft Edge 浏览器任务管理器中，经常上升和下降 **的内存** 或 **JavaScript 内存** 值表示频繁的垃圾回收。
 
 *  在性能记录中，频繁的更改 (JS 堆或节点计数图) 上升和下降表示频繁的垃圾回收。
 
@@ -276,7 +276,7 @@ DevTools 显示按函数划分的内存分配细分。  默认视图为 **“重
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/memory-problems/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。
 
 <!-- [recording](/profile/evaluate-performance/timeline-tool#make-a-recording) -->

@@ -1,17 +1,17 @@
 ---
 title: CSS 功能参考
-description: 用于查看和更改 Microsoft Edge DevTools 中的 CSS 规则的功能。
+description: 用于在 Microsoft Edge DevTools 中查看和更改 CSS 规则的功能。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/29/2021
-ms.openlocfilehash: 0653fdd286deb252bb5842bc2e950b16bc7ac31d
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 6f27d63153a7dd54bd8f8012a827a9112126063a
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610609"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631214"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,7 +30,7 @@ ms.locfileid: "12610609"
 
 在以下与查看和更改 CSS 相关的 Microsoft Edge DevTools 功能综合参考中发现新的工作流。
 
-若要了解基础知识，请参阅[开始查看和更改 CSS](../css/index.md)。
+若要了解基础知识，请参阅 [开始查看和更改 CSS](../css/index.md)。
 
 
 <!-- ====================================================================== -->
@@ -46,7 +46,7 @@ DevTools 中的 **元素** 工具允许你一次查看或更改一个元素的 C
 
 *  在呈现的网页中，右键单击页面元素，然后单击“ **检查**”。
 
-*  在 DevTools 中，单击“**选择元素** (![选择元素。](../media/select-an-element-icon.msft.png)) 或按`Shift``C`+`Ctrl`+ (Windows、Linux) 或`C``Command`+`Shift`+ (macOS) ，然后单击视区中的元素。
+*  在 DevTools 中，单击“**选择元素** (![选择一个元素。](../media/select-an-element-icon.msft.png)) 或按`Shift``C`+`Ctrl`+ (Windows、Linux) 或`C``Command`+`Shift`+ (macOS) ，然后单击视区中的元素。
 
 *  在 DevTools 中，单击 **DOM 树**中的元素。
 
@@ -154,7 +154,7 @@ DevTools 中的 **元素** 工具允许你一次查看或更改一个元素的 C
 
 1. 打开“[命令菜单](../command-menu/index.md)”。
 
-1. "开始"菜单键入`rendering`，然后选择 **“显示呈现**”。
+1. 开始键入 `rendering`，然后选择 **“显示呈现**”。
 
 1. 单击 **“模拟 CSS 媒体** ”下拉列表，然后选择 **打印**。
 
@@ -164,9 +164,9 @@ DevTools 中的 **元素** 工具允许你一次查看或更改一个元素的 C
 
 **“覆盖”** 工具显示页面实际使用 CSS。
 
-1. 按++`Ctrl``P``Shift` (Windows、Linux) 或`Command``P`++`Shift` (macOS) 打开[命令菜单](../command-menu/index.md)，而 DevTools 具有焦点。
+1. 按++`Shift``P` `Ctrl` (Windows、Linux) 或 `Command``P`++`Shift` (macOS) 打开[命令菜单](../command-menu/index.md)，而 DevTools 具有焦点。
 
-1. "开始"菜单键入`coverage`，然后选择 **“显示覆盖范围**”。  出现 **“覆盖”** 工具。
+1. 开始键入 `coverage`，然后选择 **“显示覆盖范围**”。  出现 **“覆盖”** 工具。
 
    从命令菜单打开“覆盖范围”选项卡：
 
@@ -176,7 +176,7 @@ DevTools 中的 **元素** 工具允许你一次查看或更改一个元素的 C
 
    ![“覆盖范围”选项卡。](../media/css-console-qs-coverage-empty.msft.png)
 
-1. 单击 **"开始"菜单检测覆盖范围，刷新页面** (!["开始"菜单检测覆盖范围并刷新页面。](../media/refresh-icon.msft.png)) 。  页面刷新和 **“覆盖范围** ”选项卡概述了浏览器加载的每个文件中使用多少 CSS (和 JavaScript) 。  绿色表示已使用的 CSS。  红色表示未使用的 CSS。
+1. 单击 **“开始检测覆盖范围”，刷新页面** (![“开始检测覆盖范围”并刷新页面。](../media/refresh-icon.msft.png)) 。  页面刷新和 **“覆盖范围** ”选项卡概述了浏览器加载的每个文件中使用多少 CSS (和 JavaScript) 。  绿色表示已使用的 CSS。  红色表示未使用的 CSS。
 
    概述使用和未使用多少 CSS (和 JavaScript) ：
 
@@ -261,10 +261,10 @@ DevTools 中的 **元素** 工具允许你一次查看或更改一个元素的 C
 
 | 键盘快捷方式 | 递增方式 |
 |---|---|
-| `Alt`+`Up` (Windows、Linux) 或`Option`+`Up` (macOS)  | 0.1 |
+| `Alt`+`Up` (Windows、Linux) 或 `Option`+`Up` (macOS)  | 0.1 |
 | `Up` | 1 (或 0.1，如果当前值介于 -1 和 1 之间)  |
 | `Shift`+`Up` | 10 |
-| `Shift`+`Page Up` (Windows、Linux) 或`Shift``Up`+`Command`+ (macOS)  | 100 |
+| `Shift`+`Page Up` (Windows、Linux) 或 `Shift`++`Command``Up` (macOS)  | 100 |
 
 若要递减，请按 `Down` 键而不是 `Up` 键。
 
@@ -515,5 +515,5 @@ DevTools 中的 **元素** 工具允许你一次查看或更改一个元素的 C
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/css/reference/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

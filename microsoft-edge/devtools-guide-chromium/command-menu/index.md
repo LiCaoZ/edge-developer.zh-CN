@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: f7d04267ae6d41c27c994bf718123e005c1bbbf4
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: fb9afa7466686959e068bfbef4db72f34c7915d7
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610511"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630451"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,7 +28,7 @@ ms.locfileid: "12610511"
    limitations under the License.  -->
 # <a name="run-commands-in-the-command-menu"></a>在“命令”菜单中运行命令
 
-命令菜单提供了一种快速导航Microsoft Edge DevTools UI 并完成常见任务的方法。  命令菜单类似于[Visual Studio Code中的命令面板](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette)：
+命令菜单提供了快速导航 Microsoft Edge DevTools UI 并完成常见任务的方法。  命令菜单类似于[Visual Studio Code中的命令面板](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette)：
 
 ![使用命令菜单禁用 JavaScript。](../media/command-menu-run-command-java.msft.png)
 
@@ -71,5 +71,5 @@ ms.locfileid: "12610511"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面 [在此](https://developer.chrome.com/docs/devtools/command-menu/) 处找到，由 [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer、Chrome DevTools & Lighthouse) 创作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -1,17 +1,17 @@
 ---
 title: 网络问题指南
-description: 如何在 Microsoft Edge DevTools 的网络面板中检测网络问题。
+description: 如何检测 Microsoft Edge DevTools 网络面板中的网络问题。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 9e57976ba76a9834b85f08c40ee3cad7d79dd4f4
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 206bf69c0a6773bee9032e6097ea4b6daabdebae
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610168"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631570"
 ---
 <!-- delete this notice and at bottom of file? search other repo to try to confirm that this article is based on a copy -->
 <!-- Copyright Kayce Basques and Jonathan Garbee
@@ -120,5 +120,5 @@ Do you have a network issue that should be added to this guide?
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面 [在此](https://developer.chrome.com/docs/devtools/network/) 处找到，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (技术作家、Chrome DevTools \& Lighthouse) 和 [Jonathan Garbee](https://developers.google.com/web/resources/contributors#jonathan-garbee) (Google 开发人员 Web 技术专家) 创作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

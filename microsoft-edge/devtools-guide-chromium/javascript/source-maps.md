@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/02/2022
-ms.openlocfilehash: 1007d63e9f727ded2338c8580799fe52222bf1c0
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 907ca31e06d459d88948b503cd6e05b644ecaead
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610343"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631058"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -42,7 +42,7 @@ todo: add link to preprocessors capable of producing source maps when section is
 
 
 <!-- ====================================================================== -->
-## <a name="get-started-with-preprocessors"></a>使用预处理器开始
+## <a name="get-started-with-preprocessors"></a>预处理器入门
 
 本文介绍如何在 **“源** ”工具中与 JavaScript 源映射交互。  <!--For a first overview of what preprocessors are, how each may help, and how source maps work; see Set Up CSS & JS Preprocessors.  -->
 
@@ -81,21 +81,21 @@ todo: add link to display the preprocessor support section when section is avail
 任何错误、日志和断点都映射到原始源代码，以便更轻松地进行调试。
 
 
-### <a name="enable-source-maps-in-settings"></a>在设置中启用源映射
+### <a name="enable-source-maps-in-settings"></a>在“设置”中启用源映射
 
 默认情况下启用源映射。
 
 若要确保已启用源映射，请执行以下操作：
 
-1. 若要打开 DevTools，请在Microsoft Edge中右键单击网页，然后选择 **“检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。
+1. 若要打开 DevTools，请在 Microsoft Edge 中右键单击网页，然后选择 **“检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。
 
-1. 在 DevTools 中，单击**设置** (设置![图标。](../media/settings-gear-icon-light-theme.png)) >**首选项**。
+1. 在 DevTools 中，单击 **“设置** ” (![“设置”图标。](../media/settings-gear-icon-light-theme.png)) > **首选项**。
 
 1. 在 **“首选项”** 页的 **“源** ”部分中，确保选中 **“启用 JavaScript 源映射** ”复选框和 **“启用 CSS 源映射** ”复选框：
 
    ![“首选项”页的“源”部分，其中选择了“启用源映射”复选框。](../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png)
 
-1. 在**设置**右上角，单击“**关闭** (**x**) ”按钮。
+1. 在 **“设置”** 右上角，单击“ **关闭** (**x**) ”按钮。
 
 
 ### <a name="debugging-with-source-maps"></a>使用源映射进行调试
@@ -136,5 +136,5 @@ todo: add link to display the preprocessor support section when section is avail
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面 [在此](https://developer.chrome.com/docs/devtools/javascript/source-maps/) 处找到，由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和 [Paul Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Open Web Developer Advocate， Google： Tools， Performance， Animation， and UX) 创作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

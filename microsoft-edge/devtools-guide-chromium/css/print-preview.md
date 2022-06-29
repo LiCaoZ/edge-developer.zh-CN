@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: d7d7072d6f52bedc8f41e71dc103066b2f5c75d0
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 3eac460a715b79bebcc5154cbf65fae396046156
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610714"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631068"
 ---
 <!-- Copyright Kayce Basques
 
@@ -44,7 +44,7 @@ ms.locfileid: "12610714"
    > [!div class="mx-imgBorder"]
    > ![已选择打印 CSS 媒体类型的呈现面板。](../media/print-preview-css-media-type.png)
 
-在此处，可以显示和更改 CSS，就像任何其他网页一样。  请参阅[开始查看和更改 CSS](index.md)。
+在此处，可以显示和更改 CSS，就像任何其他网页一样。  请参阅 [开始查看和更改 CSS](index.md)。
 
 
 <!-- ====================================================================== -->
@@ -68,5 +68,5 @@ ms.locfileid: "12610714"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/rendering/emulate-css/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

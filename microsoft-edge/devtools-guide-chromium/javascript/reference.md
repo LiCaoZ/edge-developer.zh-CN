@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: c9639cd1ce99a357ea4e694faa5e5a07c56ef27a
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 409bcbd1565531922df3c23d4a3d24c7595bf2c5
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610434"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630586"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,7 +30,7 @@ ms.locfileid: "12610434"
 
 本文介绍如何在 Microsoft Edge DevTools 中使用调试器，包括如何设置代码行断点。  若要设置其他类型的断点，请参阅 [使用断点暂停代码](breakpoints.md)。
 
-若要了解调试的基础知识，请参阅[开始调试 JavaScript](index.md)，这是一个使用基于表单的现有网页的教程。  本教程包含屏幕捕获，因此可以对其进行浏览。  可以使用演示网页轻松试用调试器功能。
+若要了解调试的基础知识，请参阅 [开始调试 JavaScript](index.md)，这是一个使用基于表单的现有网页的教程。  本教程包含屏幕捕获，因此可以对其进行浏览。  可以使用演示网页轻松试用调试器功能。
 
 
 <!-- ====================================================================== -->
@@ -46,7 +46,7 @@ ms.locfileid: "12610434"
 
 1. 在 **“编辑器** ”窗格中，编辑文件。
 
-1. 按`Ctrl`+`S` (Windows、Linux) 或`Command`+`S` (macOS) 进行保存。  然后，DevTools 将 JavaScript 文件加载到 Microsoft Edge 的 JavaScript 引擎中。
+1. 按 `Ctrl`+`S` (Windows、Linux) 或 `Command`+`S` (macOS) 进行保存。  然后，DevTools 将 JavaScript 文件加载到 Microsoft Edge 的 JavaScript 引擎中。
 
    ![“编辑器”窗格。](../media/javascript-sources-html-minified.msft.png)
 
@@ -298,7 +298,7 @@ function animate() {
 
 ### <a name="mark-a-script-as-library-code-from-settings"></a>在设置中将脚本标记为库代码
 
-若要从**设置**标记单个脚本或脚本模式：
+若要从 **“设置**”标记单个脚本或脚本模式：
 
 1. 打开“[设置](../customize/index.md)”。
 
@@ -310,7 +310,7 @@ function animate() {
 
 1. 单击**添加**。
 
-   ![将脚本标记为设置中的库代码。](../media/javascript-framework-library-code.msft.png)
+   ![将脚本标记为“设置”中的库代码。](../media/javascript-framework-library-code.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -334,5 +334,5 @@ function animate() {
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/javascript/reference/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

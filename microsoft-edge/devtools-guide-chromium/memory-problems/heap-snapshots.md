@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/21/2022
-ms.openlocfilehash: 8c07deadf80caf4033a532b0a31e93f9704a1b6b
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: c3209be02f82fa7c73a5dc10afd7a92d3dca3526
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610595"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631644"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -51,7 +51,7 @@ DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用
 
 1. 在 **“选择分析类型** ”部分中，选择 **“堆快照** ”选项按钮。
 
-1. 单击“**拍摄快照**”按钮，然后单击 **"开始"菜单**。  或者，按`Ctrl`+`E` (Windows、Linux) 或`Cmd`+`E` (macOS) 。
+1. 单击“ **获取快照** ”按钮，然后单击 **“开始**”。  或者，按 `Ctrl`+`E` (Windows、Linux) 或 `Cmd`+`E` (macOS) 。
 
 ![在内存工具中选择“堆快照”分析类型。](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png)
 
@@ -136,7 +136,7 @@ DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用
 | ** (数组、字符串、数字、regexp) ** | 具有引用数组、字符串、数字或正则表达式的属性的对象类型的列表。 |
 | ** (编译的代码) ** | 与编译的代码相关的所有内容。  脚本类似于函数，但对应于正文 `<script>` 。  SharedFunctionInfos (SFI) 是位于函数和编译代码之间的对象。  函数通常具有上下文，而 SPI 则没有。 |
 | **HTMLDivElement**、 **HTMLAnchorElement**、 **DocumentFragment** 等。  | 对代码引用的特定类型的元素或文档对象的引用。 |
-| ** (对象形状) ** | 对 V8 (Microsoft Edge) 的 JavaScript 引擎用来理解和索引对象中的属性的隐藏类和描述符数组的引用。  请参阅 [HiddenClasses 和 DescriptorArrays](https://v8.dev/blog/fast-properties#hiddenclasses-and-descriptorarrays)。 |
+| ** (对象形状) ** | 对 V8 (Microsoft Edge JavaScript 引擎的隐藏类和描述符数组的引用) 用于了解和索引对象中的属性。  请参阅 [HiddenClasses 和 DescriptorArrays](https://v8.dev/blog/fast-properties#hiddenclasses-and-descriptorarrays)。 |
 | ** (BigInt) ** | 对 **BigInt** 对象的引用，该对象用于表示和操作太大而不能由 **Number** 对象表示的值。  请参阅 [BigInt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt)。 |
 
 
@@ -148,7 +148,7 @@ todo: add heap profiling summary section when available
 
 ### <a name="comparison-view"></a>比较视图
 
-通过将多个快照相互比较来查找泄漏的对象。  通常，直接和反向操作的配对（例如打开文档，然后关闭文档）不应留下任何垃圾。
+通过将多个快照相互比较来查找泄漏的对象。  通常，一对直接和反向操作（例如打开文档，然后关闭文档）不应留下任何垃圾。
 
 验证某个应用程序操作是否未创建泄漏：
 
@@ -297,7 +297,7 @@ leafRef = null;
 <!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 
-若要详细了解 DOM 泄漏和内存分析基础知识，请查看使用 Gonzalo Ruiz de Villa [的 Microsoft Edge DevTools 查找和调试内存泄漏](https://slid.es/gruizdevilla/memory)。
+若要详细了解 DOM 泄漏和内存分析基础知识，请查看 Gonzalo Ruiz de Villa [的 Microsoft Edge DevTools 查找和调试内存泄漏](https://slid.es/gruizdevilla/memory) 。
 
 <!-- Example: Try this **demo** to play with detached DOM trees. -->
 
@@ -329,5 +329,5 @@ leafRef = null;
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面 [在此](https://developer.chrome.com/docs/devtools/memory-problems/heap-snapshots/) 处找到，由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

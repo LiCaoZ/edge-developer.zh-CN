@@ -1,17 +1,17 @@
 ---
 title: 模拟和测试其他浏览器
-description: 你的作业不会以确保网站在Microsoft Edge和Android中运行出色而结束。  尽管设备仿真 (设备模式) 可以模拟一系列其他设备，例如智能手机，但我们鼓励你查看其他浏览器提供的仿真解决方案。
+description: 你的作业不会以确保你的网站在 Microsoft Edge 和 Android 中运行出色而结束。  尽管设备仿真 (设备模式) 可以模拟一系列其他设备，例如智能手机，但我们鼓励你查看其他浏览器提供的仿真解决方案。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: f348cf973347f47a36ba9b8b565141bfb6316a3d
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 5fc59c6626727ef74943566c84dbe9b59cfb8bc6
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610707"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630774"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -28,7 +28,7 @@ ms.locfileid: "12610707"
    limitations under the License.  -->
 # <a name="emulate-and-test-other-browsers"></a>模拟和测试其他浏览器
 
-你的作业不会以确保网站在Microsoft Edge和Android中运行出色而结束。  即使 [设备仿真](index.md) 工具可以模拟一系列其他设备，如智能手机，我们鼓励你查看其他浏览器提供的仿真解决方案。
+你的作业不会以确保你的网站在 Microsoft Edge 和 Android 中运行出色而结束。  即使 [设备仿真](index.md) 工具可以模拟一系列其他设备，如智能手机，我们鼓励你查看其他浏览器提供的仿真解决方案。
 
 ### <a name="summary"></a>摘要
 
@@ -50,7 +50,7 @@ Firefox 具有 [响应式设计视图](https://developer.mozilla.org/docs/Tools/
 
 ### <a name="edgehtml-emulation"></a>EdgeHTML 仿真
 
-若要模拟Windows电话，请使用 Microsoft Edge (EdgeHTML) [内置仿真](/archive/microsoft-edge/legacy/developer/devtools-guide/emulation)。
+若要模拟 Windows Phone，请使用 Microsoft Edge (EdgeHTML) [内置模拟](/archive/microsoft-edge/legacy/developer/devtools-guide/emulation)。
 
 使用 [IE 11 仿真](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85)) 模拟页面在较旧版本的 Internet Explorer 中的外观。
 
@@ -60,24 +60,24 @@ Firefox 具有 [响应式设计视图](https://developer.mozilla.org/docs/Tools/
 
 设备模拟器和模拟器不仅模拟浏览器环境，还模拟整个设备。  每个模拟器都可用于测试需要 OS 集成的东西，例如使用虚拟键盘的表单输入。
 
-### <a name="android-emulator"></a>Android模拟器
+### <a name="android-emulator"></a>Android 仿真器
 
 <!--
 ![Stock Browser in Android Emulator.](../media/device-mode-android-emulator-stock-browser.msft.png)
 -->
 
-目前，无法在Android模拟器上安装Microsoft Edge。  但是，可以使用 Android 浏览器、Chromium Content Shell 和 Firefox for Android，本文稍后将对此进行回顾。  Chromium Content Shell 运行与Microsoft Edge相同的Chromium呈现引擎，但不使用特定于浏览器的功能。
+目前，无法在 Android 仿真器上安装 Microsoft Edge。  但是，可以使用 Android 浏览器、Chromium Content Shell 和 Firefox for Android，本文稍后将对此进行回顾。  Chromium Content Shell 运行与 Microsoft Edge 相同的Chromium呈现引擎，但不提供特定于浏览器的功能。
 
-Android模拟器随附Android SDK，需要将其作为[Android Studio](https://developer.android.com/sdk/installing/studio.html)的一部分下载。  然后按照说明 [设置虚拟设备](https://developer.android.com/tools/devices/managing-avds.html) 并 [启动模拟器](https://developer.android.com/tools/devices/emulator.html)。
-启动模拟器后，选择 **“浏览器**”图标，并在旧的“股票浏览器”上测试站点以进行Android。
+Android 仿真器附带 Android SDK，需要将其下载为[Android Studio的一](https://developer.android.com/sdk/installing/studio.html)部分。  然后按照说明 [设置虚拟设备](https://developer.android.com/tools/devices/managing-avds.html) 并 [启动模拟器](https://developer.android.com/tools/devices/emulator.html)。
+启动模拟器后，选择 **“浏览器** ”图标，并在旧版 Stock Browser for Android 上测试站点。
 
-#### <a name="chromium-content-shell-on-android"></a>Android上Chromium内容 shell
+#### <a name="chromium-content-shell-on-android"></a>Chromium Android 上的内容 shell
 
 <!--
 ![Android Emulator Content Shell.](../media/device-mode-android-avd-contentshell.msft.png)
 -->
 
-若要安装用于Android的 Chromium Content Shell，请保持模拟器运行并运行以下命令：
+若要安装适用于 Android 的 Chromium Content Shell，请保持模拟器运行并运行以下命令：
 
 ```shell
 git clone https://github.com/PaulKinlan/chromium-android-installer.git
@@ -87,7 +87,7 @@ chmod u+x ./chromium-android-installer/*.sh
 
 现在，可以使用 Chromium Content Shell 测试网站。
 
-#### <a name="firefox-on-android"></a>Android上的 Firefox
+#### <a name="firefox-on-android"></a>Android 上的 Firefox
 
 <!--
 ![Firefox Icon on Android Emulator.](../media/device-mode-ff-on-android-emulator.msft.png)
@@ -97,20 +97,20 @@ chmod u+x ./chromium-android-installer/*.sh
 
 [下载正确的 .apk 文件](https://www.mozilla.org/firefox/all/#product-android-beta)。
 
-若要将文件安装到打开的模拟器或连接Android设备上，请运行以下命令：
+若要将文件安装到打开的仿真器或连接的 Android 设备上，请运行以下命令：
 
 ```shell
 adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 ```
 
-### <a name="ios-simulator"></a>iOS模拟器
+### <a name="ios-simulator"></a>iOS 模拟器
 
-用于Mac OS X的iOS模拟器随附Xcode，[这是从App Store安装的](https://itunes.apple.com/app/xcode/id497799835)。
+适用于 Mac OS X 的 iOS 模拟器附带 Xcode，[可从App Store安装](https://itunes.apple.com/app/xcode/id497799835)。
 
 完成后，通过 [Apple 开发人员文档](https://help.apple.com/simulator/mac/current)了解如何使用模拟器。
 
 > [!NOTE]
-> 若要避免每次想要使用iOS模拟器时都必须打开Xcode，请打开 <!--Xcode, or iOS Simulator?-->然后，右键单击码头中的iOS模拟器图标，然后选择 **“保留在码头中**”。  现在只需在需要时单击该图标即可。
+> 若要避免每次想要使用 iOS 模拟器时都必须打开 Xcode，请打开 <!--Xcode, or iOS Simulator?-->然后，右键单击码头中的 iOS 模拟器图标，然后选择 **“保留在码头中**”。  现在只需在需要时单击该图标即可。
 
 ### <a name="microsoft-edge-edgehtml"></a>Microsoft Edge (EdgeHTML) 
 
@@ -130,7 +130,7 @@ Microsoft Edge (EdgeHTML) 虚拟机 (VM) 使你能够通过 VirtualBox (或 VMWa
 
 * [Mobileum](https://www.sigos.com/app-experience/) 不使用仿真器，而是可远程控制的实际设备。  当需要在特定设备上重现问题且某些报表中可能未出现问题时，这非常有用。
 
-* [HeadSpin](https://www.headspin.io/) 可帮助你在数千台实际设备、浏览器和操作系统上执行手动跨浏览器测试。  可以通过 Slack、JIRA 等集成来录制复杂 bug 的视频并共享它们。  通过并行测试，快速推进市场推广。
+* [HeadSpin](https://www.headspin.io/) 可帮助你在数千台实际设备、浏览器和操作系统上执行手动跨浏览器测试。  可以通过 Slack、JIRA 等集成录制复杂 bug 的视频并共享它们。  通过并行测试，快速推进市场推广。
 
 * [LambdaTest](https://www.lambdatest.com/) 可帮助你在各种浏览器和操作系统的组合上执行手动跨浏览器测试。  可以通过集成（如 Microsoft Teams、Slack 等）录制复杂 bug 的视频并共享它们。  可以通过并行运行测试来加快测试速度。
 
@@ -144,5 +144,5 @@ Microsoft Edge (EdgeHTML) 虚拟机 (VM) 使你能够通过 VirtualBox (或 VMWa
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面 [在这里](https://developer.chrome.com/docs/devtools/device-mode/testing-other-browsers/) 找到，由 [梅金·科尔尼](https://developers.google.com/web/resources/contributors#meggin-kearney) (技术作家) 和 [保罗·巴考斯](https://developers.google.com/web/resources/contributors#paul-bakaus) (开放 Web 开发大使在谷歌|工具、性能、动画、UX) 。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

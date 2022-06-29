@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: e26a47a8c69762a2d772fb17bdf8667259e4a9bd
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: a82e7e198260fbdaa4934866e443a61553ebfe0e
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12513854"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631275"
 ---
 <!-- Copyright Kayce Basques
 
@@ -38,13 +38,13 @@ ms.locfileid: "12513854"
 
 
 <!-- ====================================================================== -->
-### <a name="remotely-debug-microsoft-edge-on-windows-10-or-later-devices"></a>在Windows 10或更高版本设备上远程调试Microsoft Edge
+### <a name="remotely-debug-microsoft-edge-on-windows-10-or-later-devices"></a>在 Windows 10 或更高版本设备上远程调试 Microsoft Edge
 
-远程[工具Microsoft Edge (Beta) ](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) 应用现已在[Microsoft Store](https://www.microsoft.com/store/apps/windows)中提供。 此应用扩展[了设备门户Windows](/windows/uwp/debug-test-perf/device-portal)。  可以从开发计算机上运行的Microsoft Edge连接到远程Windows 10或更高版本的设备，并显示目标列表。  此目标列表包括Microsoft Edge中的所有选项卡，以及在Windows设备上打开的 [PVA](../../../../progressive-web-apps-chromium/index.md)。  针对远程Windows设备上运行的目标，在开发计算机上使用 DevTools。
+[Microsoft Edge (Beta) 应用的远程工具](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)现已在 [Microsoft Store 中](https://www.microsoft.com/store/apps/windows)提供。 此应用扩展 [了 Windows 设备门户](/windows/uwp/debug-test-perf/device-portal)。  可以从开发计算机上运行的 Microsoft Edge 连接到远程Windows 10或更高版本设备，并显示目标列表。  此目标列表包括在 Windows 设备上打开的 Microsoft Edge 和 [PVA](../../../../progressive-web-apps-chromium/index.md) 中的所有选项卡。  针对远程 Windows 设备上运行的目标，在开发计算机上使用 DevTools。
 
-![Microsoft Store中提供的远程工具Microsoft Edge (Beta) 应用。](../../media/2020/03/remote-tools.msft.png)
+![Microsoft Edge 远程工具 (Microsoft Store 中提供的 Beta) 应用。](../../media/2020/03/remote-tools.msft.png)
 
-阅读本指南，了解如何为远程调试设置Windows 10设备和开发计算机：[远程调试Windows设备](../../../remote-debugging/windows.md)。
+阅读本指南，了解如何为远程调试设置Windows 10设备和开发计算机：[远程调试 Windows 设备](../../../remote-debugging/windows.md)。
 
 通过 [推特](https://twitter.com/intent/tweet?text=@EdgeDevTools) 或单击“ [发送反馈](../../../contact.md) ”图标，让我们知道远程调试体验。
 
@@ -52,13 +52,13 @@ ms.locfileid: "12513854"
 <!-- ====================================================================== -->
 ### <a name="new-ways-to-access-settings"></a>访问设置的新方法
 
-可以自定义大量 DevTools 设置，使 DevTools 的外观和工作方式与所需方式一样。 在 Microsoft Edge 83 中，现在在 DevTools 中访问[设置](../../../customize/index.md#settings)要容易得多。  单击控制台警报和主菜单旁边的齿轮图标打开**设置**。
+可以自定义大量 DevTools 设置，使 DevTools 的外观和工作方式与所需方式一样。 在 Microsoft Edge 83 中，现在在 DevTools 中访问 [设置](../../../customize/index.md#settings) 要容易得多。  单击控制台警报和主菜单旁边的齿轮图标打开 **“设置** ”。
 
-![齿轮图标在 DevTools 中打开设置。](../../media/2020/03/settings.msft.png)
+![齿轮图标在 DevTools 中打开“设置”。](../../media/2020/03/settings.msft.png)
 
-还可以在 **“更多工具**”下的**主菜单**中打开**设置**。
+还可以在 **“更多工具**”下从 **“主菜单****”打开“设置**”。
 
-![主菜单>更多工具> 设置。](../../media/2020/03/settings2.msft.png)
+![主菜单>更多工具>设置。](../../media/2020/03/settings2.msft.png)
 
 Chromium 问题 [#1050855](https://crbug.com/1050855)
 
@@ -69,9 +69,9 @@ Chromium 问题 [#1050855](https://crbug.com/1050855)
 <!-- ====================================================================== -->
 ### <a name="new-and-improved-infobars"></a>新增和改进的 infobars
 
-在 DevTools 中 (信息栏) 的信息通知栏现在具有改进的外观和更多功能。 在 Microsoft Edge 83 中，信息栏更易于阅读和提供按钮，因此你可以立即执行相关操作。
+在 DevTools 中 (信息栏) 的信息通知栏现在具有改进的外观和更多功能。 在 Microsoft Edge 83 中，信息栏更易于阅读并提供按钮，因此你可以立即执行相关操作。
 
-![用于在 Microsoft Edge 83 中对已缩小的文件进行美化打印的信息栏。](../../media/2020/03/infobar.msft.png)
+![用于在 Microsoft Edge 83 中对已缩小文件进行美化打印的信息栏。](../../media/2020/03/infobar.msft.png)
 
 Chromium 问题 [#1056348](https://crbug.com/1056348)
 
@@ -81,7 +81,7 @@ Chromium 问题 [#1056348](https://crbug.com/1056348)
 <!-- ====================================================================== -->
 ### <a name="navigate-the-color-picker-with-your-keyboard"></a>使用键盘导航颜色选取器
 
-在早期版本的Microsoft Edge中，无法使用键盘导航[颜色选取器](../../../css/reference.md#change-colors-with-the-color-picker)的 **“阴影**”部分。  在 Microsoft Edge 83 中，现在可以使用键盘在颜色选取器的 **“阴影**”部分移动选择器。
+在早期版本的 Microsoft Edge 中，无法使用键盘导航[颜色选取器](../../../css/reference.md#change-colors-with-the-color-picker)的 **“阴影**”部分。  在 Microsoft Edge 83 中，现在可以使用键盘在颜色选取器的 **“阴影** ”部分移动选择器。
 
 颜色选取器是 **元素** 面板中用于更改 `color` 和 `background-color` 声明的 GUI：
 
@@ -100,7 +100,7 @@ Chromium 问题 [#963183](https://crbug.com/963183)
 
 ![在 Microsoft Edge 81 及更早版本中，“属性”选项卡在页面刷新后为空。](../../media/2020/03/properties-in-81.msft.png)
 
-在 Microsoft Edge 83 中，现在可以在“**属性”选项卡**中刷新页面后显示当前所选元素的属性：
+在 Microsoft Edge 83 中，现在可以在“ **属性”选项卡**中刷新页面后显示当前所选元素的属性：
 
 ![在 Microsoft Edge 83 中，“属性”选项卡在页面刷新后显示当前所选元素的属性。](../../media/2020/03/properties-in-82.msft.png)
 
@@ -177,7 +177,7 @@ Chromium 问题 [#1003700](https://crbug.com/1003700)
 *  [接受语言](https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language)HTTP 请求标头
 
 > [!NOTE]
-> 更新到 `navigator.language` 并 `navigator.languages` 不会立即显示，但仅在下一次导航或页面刷新之后才可见。  只有后续请求才会反映对 `Accept-Language` HTTP 标头的更改。
+> 更新到`navigator.language`并`navigator.languages`不会立即显示，但仅在下一次导航或页面刷新之后显示。  只有后续请求才会反映对 `Accept-Language` HTTP 标头的更改。
 
 ![模拟区域设置。](../../media/2020/03/locale.msft.png)
 
@@ -240,7 +240,7 @@ Chromium 问题 [#1041830](https://crbug.com/1041830)
 <!-- ====================================================================== -->
 ### <a name="dock-to-left-from-the-command-menu"></a>从 "命令" 菜单向左停靠
 
-若要将 DevTools 移到视区左侧 (呈现的网页) ，请打开 [命令菜单](../../../command-menu/index.md) 并运行命令 `Dock to left` 。  **停靠左**侧功能自 Microsoft Edge 75 起可用，但以前只能从主菜单访问。  现在也可以从命令菜单访问 **“停靠到左侧** ”功能。
+若要将 DevTools 移到视区左侧 (呈现的网页) ，请打开 [命令菜单](../../../command-menu/index.md) 并运行命令 `Dock to left` 。  自 Microsoft Edge 75 以来，“ **停靠到左** ”功能一直可用，但以前只能从主菜单访问。  现在也可以从命令菜单访问 **“停靠到左侧** ”功能。
 
 ![DevTools 停靠在视区左侧。](../../media/2020/03/dock-to-left.msft.png)"
 
@@ -285,7 +285,7 @@ Chromium 问题 [#1016501](https://crbug.com/1016501)
 
 **长任务**是长时间垄断了主线程，从而导致网页冻结的 JavaScript 代码。
 
-一段时间以来，你一直能够[在“性能”面板中可视化“长任务](../../../evaluate-performance/reference.md#view-main-thread-activity)”，但在 Microsoft Edge 83 中，**性能**面板中的长任务可视化 UI 已更新。  任务的 Long Task 部分现在带有带条带红色背景的颜色：
+一段时间以来，你一直能够 [在“性能”面板中直观显示“长任务](../../../evaluate-performance/reference.md#view-main-thread-activity) ”，但在 Microsoft Edge 83 中， **性能** 面板中的长任务可视化 UI 已更新。  任务的 Long Task 部分现在带有带条带红色背景的颜色：
 
 ![新的长任务 UI。](../../media/2020/03/long-task.msft.png)
 
@@ -301,13 +301,13 @@ Chromium 问题 [#1054447](https://crbug.com/1054447)
 
 Android Oreo 引入了自适应图标，可在不同的设备模型之间显示各种形状中的应用图标。  **可屏蔽图标**是支持自适应图标的新图标格式，使你可以确保[ PWA ](../../../../progressive-web-apps-chromium/index.md)图标在支持可屏蔽图标标准的设备上看起来不错。
 
-若要检查可掩码图标在 Android Oreo 设备上是否良好，请在**应用程序工具的****“清单**”窗格中，选择新的复选框 **，仅显示可掩码图标的最小安全区域**：
+若要检查 Android Oreo 设备上的可掩码图标是否良好，请在**应用程序工具的****“清单**”窗格中，选择新的复选框 **，仅显示可屏蔽图标的最小安全区域**：
 
 ![复选框中，仅显示可掩码图标的最小安全区域。](../../media/2020/03/maskable-icons.msft.png)
 
 <!-- Check out [Are my current icons ready?] to learn more.  -->
 
-此功能在 Microsoft Edge 81 中发布。  Microsoft Edge 83 中介绍的更新未[在 DevTools (Microsoft Edge 81) ](../01/devtools.md)中介绍。
+此功能在 Microsoft Edge 81 中发布。  Microsoft Edge 83 中所述的更新未 [在 DevTools (Microsoft Edge 81) ](../01/devtools.md)中介绍。
 
 另请参阅：
 * [查看、编辑和删除 Cookie](../../../storage/cookies.md) - **有关应用程序工具** 的文章。
@@ -318,5 +318,5 @@ Android Oreo 引入了自适应图标，可在不同的设备模型之间显示�
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-83)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

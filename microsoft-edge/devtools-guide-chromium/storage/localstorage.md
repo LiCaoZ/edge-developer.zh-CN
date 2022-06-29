@@ -1,17 +1,17 @@
 ---
 title: 查看和编辑本地存储
-description: 如何使用“本地存储”窗格和控制台查看和编辑 localStorage 键值对。
+description: 如何使用本地存储窗格和控制台查看和编辑 localStorage 键值对。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: e160c83b2b68b2acee04c4379c7581e448aafb42
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 5b9408695ee6ed9c4365317ec6fe2025e506ef2e
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610840"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631469"
 ---
 <!-- Copyright Kayce Basques
 
@@ -40,7 +40,7 @@ ms.locfileid: "12610840"
 
 1. 展开“**本地存储**”菜单。
 
-   ![“本地存储”菜单。](../media/storage-application-local-storage.msft.png)
+   ![本地存储菜单。](../media/storage-application-local-storage.msft.png)
 
 1. 单击域可查看键值对。
 
@@ -58,7 +58,7 @@ ms.locfileid: "12610840"
 
 1. 双击表的空白部分。  DevTools 将新建行，并将光标停留在**键**列。
 
-   ![要双击表的空部分，以便创建新的键值配对。](../media/storage-application-local-storage-new-key-value.msft.png)
+   ![要双击表的空部分以创建新的键值对。](../media/storage-application-local-storage-new-key-value.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -76,7 +76,7 @@ ms.locfileid: "12610840"
 
 1. [查看域的`localStorage`键值对](#view-localstorage-keys-and-values)。
 
-1. 单击要删除的键值配对。  DevTools 会以蓝色将其突出显示以表示其已选中。
+1. 单击要删除的键值对。  DevTools 会以蓝色将其突出显示以表示其已选中。
 
 1. 按 `Delete`下，或单击“ **删除选定** (![删除已选中。](../media/delete-icon.msft.png)) 。
 
@@ -108,5 +108,5 @@ ms.locfileid: "12610840"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/storage/localstorage/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

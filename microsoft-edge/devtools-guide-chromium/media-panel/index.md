@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 0be70bb64f7c94f164ea51aaf5e03fdfe43422a5
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 3fcd6b5a7839cf37291c358d2221cb0d73938692
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610308"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631021"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -70,9 +70,9 @@ ms.locfileid: "12610308"
 
 ### <a name="remote-debugging"></a>远程调试
 
-从Windows或macOS计算机查看Android设备上的媒体播放器信息。
+从 Windows 或 macOS 计算机查看 Android 设备上的媒体播放器信息。
 
-1. 若要设置远程调试，请参阅[开始远程调试Android设备](../remote-debugging/index.md)。
+1. 若要设置远程调试，请参阅 [远程调试 Android 设备入](../remote-debugging/index.md)门。
 
 1. 远程查看媒体播放器信息。
 
@@ -111,5 +111,5 @@ ms.locfileid: "12610308"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/docs/devtools/media-panel/)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

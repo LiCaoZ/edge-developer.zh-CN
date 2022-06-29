@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 6b42b0dc3ca181555eabf91f23621cd488cf66c4
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 69dc6d3427e700519ecd6fdfb4b654ff072e62ae
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610316"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631305"
 ---
 # <a name="emulate-authenticators-and-debug-webauthn"></a>模拟身份验证器并调试 WebAuthn
 
@@ -51,10 +51,10 @@ ms.locfileid: "12610316"
 
 1. 在 **“新建身份验证器** ”部分中，配置以下选项：
 
-    | 选项 | Value | 详细信息 |
+    | 选项 | 值 | 详细信息 |
     |:--- |:--- |:--- |
     | `Protocol` | [ctap2](https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html) 或 [u2f](https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-u2f-overview-v1.2-ps-20170411.html) | 虚拟身份验证器用于编码和解码的协议 |
-    | `Transport` |   `usb`、 `nfc`、 `ble`或 `internal` | 虚拟身份验证器模拟用于与客户端通信的所选传输，以获取特定凭据的断言。  请参阅[Authenticator传输枚举](https://w3c.github.io/webauthn#enum-transport) |
+    | `Transport` |   `usb`、 `nfc`、 `ble`或 `internal` | 虚拟身份验证器模拟用于与客户端通信的所选传输，以获取特定凭据的断言。  请参阅 [Authenticator 传输枚举](https://w3c.github.io/webauthn#enum-transport) |
     |  `Supports resident keys` | 使用复选框打开 (或关闭)  | 如果 Web 应用依赖于驻留密钥，则打开 (也称为客户端可发现凭据) 。  请参阅 [驻留密钥要求枚举](https://w3c.github.io/webauthn#enum-residentKeyRequirement)。 |
     | `Supports user verification` | 使用复选框打开 (或关闭)  | 如果 Web 应用依赖于使用手势方式（如触摸加上引脚代码、密码输入或生物识别）的本地授权，请启用。  请参阅 [用户验证](https://w3c.github.io/webauthn#user-verification) |
 
@@ -64,7 +64,7 @@ ms.locfileid: "12610316"
 
    ![Authenticator。](../media/webauthn-authenticator.msft.png)
 
-**Authenticator**部分包含凭**据**表。  在向身份验证器注册凭据之前，该表为空：
+**Authenticator** 部分包含凭**据**表。  在向身份验证器注册凭据之前，该表为空：
 
 ![无凭据。](../media/webauthn-no-cred.msft.png)
 
@@ -130,5 +130,5 @@ DevTools 在任何时间点仅支持一个活动虚拟验证器。  如果删除
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/docs/devtools/webauthn/)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

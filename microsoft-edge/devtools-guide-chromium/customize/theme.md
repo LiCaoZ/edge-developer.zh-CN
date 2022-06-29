@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/03/2021
-ms.openlocfilehash: fad6ff7bfb9b69bbc0e5cee6d5e3a71195cac9eb
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: f34656e00221a4eac48cc96eb09ffc0983bf9eed
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610861"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631060"
 ---
 <!-- Copyright Kayce Basques
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ ms.locfileid: "12610861"
    limitations under the License.  -->
 # <a name="apply-a-color-theme-to-devtools"></a>将颜色主题应用于开发工具
 
-你可以将各种颜色主题应用于Microsoft Edge DevTools，包括[来自Visual Studio Code](https://code.visualstudio.com)的多个主题，如 Monokai 和 Solarized Dark。  主题会影响窗格、按钮和代码语法突出显示的颜色。
+可以将各种颜色主题应用于 Microsoft Edge DevTools，包括[来自Visual Studio Code](https://code.visualstudio.com)的多个主题，例如 Monokai 和 Solarized Dark。  主题会影响窗格、按钮和代码语法突出显示的颜色。
 
 ![各种 DevTools 颜色主题。](./media/all-devtools-themes.png)
 
@@ -56,11 +56,11 @@ ms.locfileid: "12610861"
 
 
 <!-- ====================================================================== -->
-## <a name="changing-the-color-theme-from-settings"></a>从设置更改颜色主题
+## <a name="changing-the-color-theme-from-settings"></a>从“设置”更改颜色主题
 
-1. 打开 DevTools，然后选择**设置** (齿轮图标) 。
+1. 打开 DevTools，然后 (齿轮图标) 选择 **“设置** ”。
 
-   ![设置 (齿轮) 图标](./media/setting-button.png)
+   ![“设置” (齿轮) 图标](./media/setting-button.png)
 
 1. 选择 **“首选项”**，然后在 **“外观** ”部分中，从 **“主题** ”下拉列表中选择一个主题。
 
@@ -86,5 +86,5 @@ ms.locfileid: "12610861"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/customize/dark-theme/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

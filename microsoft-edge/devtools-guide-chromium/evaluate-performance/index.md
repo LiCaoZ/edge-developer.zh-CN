@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 747d06189b0c8679e3e0aafee6e0613b5a889763
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 71897337791c12e8f5f831b50041626b399e8199
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610217"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631111"
 ---
 <!-- Copyright Kayce Basques
 
@@ -54,7 +54,7 @@ _运行时性能_ 是页面在运行时的表现，而不是加载。  以下教
 
     <!-- You can view the source files for the "Sluggish Animation" demo page at the [MicrosoftEdge/Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started) repo folder. -->
 
-1. 按`Ctrl`++`Shift``I` (Windows、Linux) 或`I``Command`+`Option`+ (macOS) 打开 DevTools。
+1. 按 `Ctrl`++`Shift``I` (Windows、Linux) 或`I` `Command`+`Option`+ (macOS) 打开 DevTools。
 
    ![左侧为演示，右侧为 DevTools](../media/evaluate-performance-get-started-side-by-side.msft.png)
 
@@ -143,7 +143,7 @@ _运行时性能_ 是页面在运行时的表现，而不是加载。  以下教
 
 1. 按“`Ctrl`+`Shift`+`P`”(Windows、Linux)或“`Command`+`Shift`+`P`”(macOS)以打开“**命令菜单**”。
 
-1. "开始"菜单在**命令菜单**中键`Rendering`入，然后单击 **“显示呈现**”。
+1. 开始在**命令菜单**中键`Rendering`入，然后单击 **“显示呈现**”。
 
 1. 在呈现**工具** 中，打开 **FPS 指示器**。  新的叠加层将显示在视线的右上角。
 
@@ -210,7 +210,7 @@ _运行时性能_ 是页面在运行时的表现，而不是加载。  以下教
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.
 To learn more, see [Measure Performance With The RAIL Model](https://web.dev/rail/). -->
 
-为了更加熟悉**性能**工具，需要多加练习。  试着对页面进行剖析并分析结果。  如果对结果有任何疑问，请使用 **“发送反馈**”图标、按`Alt``Shift``I`++ (Windows、Linux) 或`Option``Shift`++`I` (macOS) ，或[在 DevTools 团队中发布推文](https://twitter.com/intent/tweet?text=@EdgeDevTools)。  如果可能，请包括屏幕截图或指向可重现页面的链接。
+为了更加熟悉**性能**工具，需要多加练习。  试着对页面进行剖析并分析结果。  如果对结果有任何疑问，请使用 **“发送反馈**”图标，按 `Alt``I``Shift`++ (Windows、Linux) 或`Option``Shift`++`I` (macOS) ，或[在 DevTools 团队中发布推文](https://twitter.com/intent/tweet?text=@EdgeDevTools)。  如果可能，请包括屏幕截图或指向可重现页面的链接。
 
 ![Microsoft Edge 开发人员工具中的**反馈**图标](../media/evaluate-performance-feedback-icon.msft.png)
 
@@ -233,5 +233,5 @@ To learn more, see [Measure Performance With The RAIL Model](https://web.dev/rai
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/evaluate-performance/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

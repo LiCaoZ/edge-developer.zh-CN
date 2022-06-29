@@ -1,17 +1,17 @@
 ---
 title: 加速 JavaScript 运行时
-description: 使用 Microsoft Edge DevTools 的内存面板识别成本高昂、效率低下的函数。
+description: 使用 Microsoft Edge DevTools 的内存面板识别成本高、效率低下的函数。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 186800425fbd73f6e64c9c0ff84eaf276d6ea4b8
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 0dc49cf04312d2f508c1a2960ee9a9a7394f5a62
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610301"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630959"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -139,5 +139,5 @@ ms.locfileid: "12610301"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面 [在这里](https://developer.chrome.com/docs/devtools/evaluate-performance/) 找到，由 [凯斯·巴斯克斯](https://developers.google.com/web/resources/contributors#kayce-basques) (技术作家，Chrome DevTools \& Lighthouse) 和 [梅金·科尔尼](https://developers.google.com/web/resources/contributors#meggin-kearney) (技术作家) 创作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: bddec738fb0075945567c331cc5e579aa74f2530
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 9d3b9e2e1f4d497304534531c8c6208dfe175e9b
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610574"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630327"
 ---
 <!-- Copyright Kayce Basques
 
@@ -40,7 +40,7 @@ ms.locfileid: "12610574"
 
 *  使用 **“服务工作者** ”窗格执行一系列与服务辅助角色相关的任务，例如取消注册或更新服务、模拟推送事件、脱机或停止服务辅助角色。
 
-*  从 **“缓存存储**”窗格中查看服务辅助角色缓存。
+*  从 **“缓存存储** ”窗格中查看服务辅助角色缓存。
 
 *  从“ **清除存储** ”窗格单击一个按钮，取消注册服务辅助角色并清除所有存储和缓存。
 
@@ -130,7 +130,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 *  **“状态**”行将告知服务辅助角色的状态。  上图中绿色状态指示器旁边的 ID 号 (`#36`) 当前处于活动状态的服务辅助角色。  在状态旁边，如果服务辅助角色) 停止，则 (**启动按钮** ;如果显示服务辅助角色正在运行) ，则 (**停止** 按钮。  服务辅助角色设计为随时由浏览器停止和启动。  使用 **“停止** ”按钮显式停止服务辅助角色可能会模拟这一点。  停止服务辅助角色是测试当服务辅助角色重新启动时代码的行为方式的好方法。  它经常显示 bug，因为对持久性全球状态的错误假设。
 
-*  客户 **端** 行将告知服务辅助角色的作用域。  启用 **“显示所有**”复选框后，**焦点**按钮最为有用。  启用该复选框后，将列出所有已注册的服务工作者。  如果单击另一个选项卡中运行的服务辅助角色旁边**的“焦点**”按钮，Microsoft Edge将焦点放在该选项卡上。
+*  客户 **端** 行将告知服务辅助角色的作用域。  启用 **“显示所有**”复选框后，**焦点**按钮最为有用。  启用该复选框后，将列出所有已注册的服务工作者。  如果单击另一个选项卡中运行的服务辅助角色旁边 **的“焦点** ”按钮，Microsoft Edge 将重点关注该选项卡。
 
 如果服务辅助角色导致任何错误，则会显示名为 **“错误** ”的新标签。
 
@@ -145,14 +145,14 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!-- ====================================================================== -->
 ## <a name="service-worker-caches"></a>服务辅助角色缓存
 
-**“缓存存储**”窗格提供使用 (服务辅助角色) [缓存 API](https://developer.mozilla.org/docs/Web/API/Cache) 缓存的资源的只读列表。
+**缓存存储**窗格提供使用 (服务辅助角色) [缓存 API](https://developer.mozilla.org/docs/Web/API/Cache) 缓存的资源的只读列表。
 
 ![缓存存储窗格。](../media/cache-pane-cache-storage-resources.msft.png)
 
 > [!NOTE]
 > 首次打开缓存并向其添加资源时，DevTools 可能无法检测到更改。  刷新页面并显示缓存。
 
-如果已打开两个或多个缓存，缓存将显示**在缓存存储**下拉列表下，如以下屏幕截图所示。
+如果已打开两个或更多缓存，缓存将显示在 **缓存存储** 下拉列表下，如以下屏幕截图所示。
 
 ![缓存存储下拉列表。](../media/cache-pane-cache-storage.msft.png)
 
@@ -160,7 +160,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!-- ====================================================================== -->
 ## <a name="quota-usage"></a>配额使用情况
 
-**缓存存储**窗格中的某些响应可能标记为“不透明”。<!-- [opaque](/web/fundamentals/glossary#opaque-response) -->  这指的是从其他源检索的响应，例如从**CDN**<!-- [CDN](/web/fundamentals/glossary#CDN) --> 如果未启用 [CORS](https://fetch.spec.whatwg.org/#http-cors-protocol) ，则为远程 API。
+**缓存存储**窗格中的某些响应可能标记为“不透明”。<!-- [opaque](/web/fundamentals/glossary#opaque-response) -->  这指的是从其他源检索的响应，例如从 **CDN** 中检索的响应<!-- [CDN](/web/fundamentals/glossary#CDN) --> 如果未启用 [CORS](https://fetch.spec.whatwg.org/#http-cors-protocol) ，则为远程 API。
 
 <!--TODO:  Link Web "CDN" section when available. -->
 <!--TODO:  Link Web "opaque" section when available. -->
@@ -170,7 +170,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 <!-- [Estimating available storage space](whats-new/2017/08/estimating-available-storage-space) -->
 
-此填充的详细信息因浏览器而异，但对于Microsoft Edge，这意味着任何单个缓存不透明响应对总体存储使用量的贡献**的最小大小**[约为 7 MB](https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17)。  在确定要缓存的不透明响应数量时，请记住填充，因为根据不透明资源的实际大小，可能会比预期的更快轻松超出存储配额限制。
+此填充的详细信息因浏览器而异，但对于 Microsoft Edge，这意味着任何单个缓存的不透明响应对总体存储使用量的贡献**最小大小**[约为 7 MB](https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17)。  在确定要缓存的不透明响应数量时，请记住填充，因为根据不透明资源的实际大小，可能会比预期的更快轻松超出存储配额限制。
 
 相关指南：
 
@@ -183,7 +183,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!-- ====================================================================== -->
 ## <a name="clear-storage"></a>清除存储
 
-在开发渐进式 Web 应用时，“**清除存储**”窗格是一项非常有用的功能。  此窗格允许注销服务人员，并单击单击一个按钮清除所有缓存和存储。  <!--Check out the section below to learn more.  -->
+在开发渐进式 Web 应用时，“ **清除存储** ”窗格是一项非常有用的功能。  此窗格允许注销服务人员，并单击单击一个按钮清除所有缓存和存储。  <!--Check out the section below to learn more.  -->
 
 <!--Related Guides:
 
@@ -206,5 +206,5 @@ Related Guides:
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/progressive-web-apps/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

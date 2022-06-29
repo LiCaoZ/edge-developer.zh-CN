@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 390140b9c8270b774edeff3fe1ca471d16cc7bb7
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 334a7bdf8334377cecf985da1ba3aedfba945445
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610910"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630862"
 ---
 <!-- Copyright Kayce Basques
 
@@ -77,7 +77,7 @@ lighthouse: 9 -->
 
    ![单击“tony”后显示的菜单。](../media/speed-glitch-tony-server-js-remix-project.msft.png)
 
-1. 单击 **“混音Project**”。  项目的名称从 **tony** 更改为随机生成的名称。  现在，你拥有了自己的可编辑代码副本。  稍后，可以对此代码进行更改。
+1. 单击 **“混音项目**”。  项目的名称从 **tony** 更改为随机生成的名称。  现在，你拥有了自己的可编辑代码副本。  稍后，可以对此代码进行更改。
 
 1. 单击 **“显示** ”，然后选择 **“新建窗口**”。  演示将在新选项卡中打开。 此选项卡称为**演示选项卡**。 站点加载可能需要一段时间。
 
@@ -87,7 +87,7 @@ lighthouse: 9 -->
 
    ![DevTools 和演示。](../media/speed-glitch-tony-show-live-console.msft.png)
 
-对于本教程中的其余屏幕截图，开发人员工具显示在单独窗口中。  按`Ctrl`+`Shift``P`+ (Windows、Linux) 或`P``Shift`++`Command` (macOS) 打开命令菜单，键入`Undock`，然后将 **Undock 选入单独的窗口**。
+对于本教程中的其余屏幕截图，开发人员工具显示在单独窗口中。  按 `Ctrl``P`+`Shift`+ (Windows、Linux) 或`P``Shift`++`Command` (macOS) 打开命令菜单，键入`Undock`，然后将 **Undock 选择为单独的窗口**。
 
 ![DevTools 已撤并到单独的窗口中。](../media/speed-console.msft.png)
 
@@ -304,7 +304,7 @@ lighthouse: 9 -->
 
    ![有关消除呈现阻止资源机会的详细信息。](../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png)
 
-1. 按`Ctrl`+`Shift``P`+ (Windows、Linux) 或`P``Shift`++`Command` (macOS) 打开命令菜单，开始键入`Coverage`，然后选择 **“显示覆盖范围**”。
+1. 按 `Ctrl``P`+`Shift`+ (Windows、Linux) 或`P``Shift`++`Command` (macOS) 打开命令菜单，开始键入`Coverage`，然后选择 **“显示覆盖范围**”。
 
    ![从“审核”面板打开命令菜单。](../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png)
 
@@ -326,9 +326,9 @@ lighthouse: 9 -->
 
 1. 选择 **网络** 工具。
 
-1. 按`Ctrl`++`Shift``P` (Windows、Linux) 或`P``Command`+`Shift`+ (macOS) 再次打开命令菜单。
+1. 按 `Ctrl`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 再次打开命令菜单。
 
-1. "开始"菜单键入`blocking`，然后选择 **“显示请求阻止**”。
+1. 开始键入 `blocking`，然后选择 **“显示请求阻止**”。
 
    ![请求阻止工具。](../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png)
 
@@ -469,5 +469,5 @@ lighthouse: 9 -->
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/speed/get-started/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

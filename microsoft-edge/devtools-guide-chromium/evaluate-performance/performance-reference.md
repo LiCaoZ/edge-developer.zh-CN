@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: edda1f787144923824331fd4dba5c0f369530e0d
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 0660fe3bdf9256dc5cbea46b4a76a1c77c77bf7e
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610896"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631422"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -56,7 +56,7 @@ ms.locfileid: "12610896"
 
 | 事件 | 描述 |
 |:--- |:--- |
-| 分析 HTML |  Microsoft Edge运行 HTML 分析算法。 |
+| 分析 HTML |  Microsoft Edge 运行了 HTML 分析算法。 |
 | 完成加载 |  网络请求已完成。 |
 | 接收数据 |  已收到请求的数据。  有一个或多个接收数据事件。 |
 | 接收响应 |  来自请求的初始 HTTP 响应。 |
@@ -116,7 +116,7 @@ ms.locfileid: "12610896"
 |:--- |:--- |
 | 布局无效 | 页面布局因 DOM 更改而失效。 |
 | 布局 | 页面布局已完成。 |
-| 重新计算样式 | Microsoft Edge重新计算的元素样式。 |
+| 重新计算样式 | Microsoft Edge 重新计算元素样式。 |
 | 滚动 | 嵌套视图的内容已滚动。 |
 
 ### <a name="rendering-event-properties"></a>呈现事件属性
@@ -125,7 +125,7 @@ ms.locfileid: "12610896"
 |:--- |:--- |
 | 布局失效 | 对于布局记录，导致布局失效的代码的堆栈跟踪。 |
 | 需要布局的节点 | 对于布局记录，在中继启动之前标记为需要布局的节点数。  这些节点通常是开发人员代码失效的节点，外加一个向上到中继根的路径。 |
-| 布局树大小 | 对于布局记录，中继根下的节点总数 (Microsoft Edge启动中继) 的节点。 |
+| 布局树大小 | 对于布局记录，中继根 (Microsoft Edge 启动中继) 的节点下的节点总数。 |
 | 布局范围 | 可能的值 `Partial` (重新布局边界是 DOM) 或 `Whole document`的一部分。 |
 | 受影响的元素 | 对于重新计算样式记录，受样式重新计算影响的元素数。 |
 | 样式无效 | 对于重新计算样式记录，请提供导致样式失效的代码的堆栈跟踪。 |
@@ -138,10 +138,10 @@ ms.locfileid: "12610896"
 
 | 事件 | 描述 |
 |:--- |:--- |
-| 复合层 | Microsoft Edge呈现引擎的复合图像层。 |
+| 复合层 | Microsoft Edge 呈现引擎的复合映像层。 |
 | 图像解码 | 映像资源已解码。 |
 | 图像调整大小 | 图像的原生维度调整了其大小。 |
-| 画图 | 复合层被绘制到显示的区域。  将鼠标悬停在画图记录上突出显示了已更新的显示区域。 |
+| 画图 | 复合层被绘制到显示的区域。  将鼠标悬停在画图记录上突出显示已更新的显示区域。 |
 
 ### <a name="painting-event-properties"></a>绘制事件属性
 
@@ -156,5 +156,5 @@ ms.locfileid: "12610896"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面 [在此](https://developer.chrome.com/docs/devtools/evaluate-performance/performance-reference/) 处找到，由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 和 [Flavio Copes](https://developers.google.com/web/resources/contributors#flavio-copes) (Full Stack 开发人员) 创作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

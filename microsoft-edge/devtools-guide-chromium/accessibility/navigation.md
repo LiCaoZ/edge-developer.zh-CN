@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 7da2e64c48d11dbdc3ce0ef26e1782d290db5930
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: a905d522d37f1e8f84e01a1037614a5c9e5c0031
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610273"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630608"
 ---
 <!-- Copyright Rob Dodson
 
@@ -62,7 +62,7 @@ ms.locfileid: "12610273"
 [Open DevTools](accessibility/navigation.md#open-devtools) in _Navigate DevTools with assistive technology_
 -->
 
-在Microsoft Edge中，可以通过以下任一方式使用鼠标或键盘打开 DevTools。  打开哪个工具取决于打开 DevTools 的方式。
+在 Microsoft Edge 中，可以通过以下任一方式使用鼠标或键盘打开 DevTools。  打开哪个工具取决于打开 DevTools 的方式。
 
 **主要方式：**
 
@@ -76,7 +76,7 @@ ms.locfileid: "12610273"
 
 | 操作 | 生成的工具 |
 |---|---|
-| 在Microsoft Edge工具栏上，**选择设置和更多** (![“设置和更多”图标。](media/edge-settings-and-more-icon.png)) >**更多工具** >  **开发人员工具**。 | 以前使用的工具或 **欢迎** 工具。 |
+| 在 Microsoft Edge 工具栏上，选择 **“设置”和“更多**”图标 (![“设置和更多”图标。](media/edge-settings-and-more-icon.png)) >**更多工具** >  **开发人员工具**。 | 以前使用的工具或 **欢迎** 工具。 |
 | 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。 | **控制台**工具。 |
 | 按`Ctrl`+`Shift`+`C`（Windows、Linux）或 `Command`+`Option`+`C` （macOS）。 | **“元素**”工具，其中扩展了 DOM 树以显示元素`<body>`。 |
 | 按 `Shift`+`F10` 下以打开右键单击菜单。  若要选择 **“检查**”命令，请按下，然后`Enter`按`Up Arrow`。 | **“元素**”工具，其中扩展了 DOM 树以显示元素`<html>`。 |
@@ -92,8 +92,8 @@ ms.locfileid: "12610273"
 
 ### <a name="navigate-by-keyboard"></a>使用键盘导航
 
-*  打开 DevTools 后，按 `Ctrl`+`]` (Windows、Linux) 或`Command`+`]` (macOS) 将焦点移到主工具栏上的下一个工具。
-*  按`Ctrl`+`[` (Windows、Linux) 或`Command`+`[` (macOS) 将焦点移到主工具栏上的上一个工具。
+*  打开 DevTools 后，按 `Ctrl`+`]` (Windows、Linux) 或 `Command`+`]` (macOS) 将焦点移动到主工具栏上的下一个工具。
+*  按 `Ctrl`+`[` (Windows、Linux) 或 `Command`+`[` (macOS) 将焦点移动到主工具栏上的上一个工具。
 *  按 `Tab` 或 `Shift`+`Tab` 重复，直到焦点移动到主工具栏或抽屉工具栏的选项卡，然后使用箭头键在工具之间移动。
 
 #### <a name="known-issues"></a>已知问题
@@ -106,7 +106,7 @@ ms.locfileid: "12610273"
 
 若要选择特定工具，请使用 [命令菜单](../command-menu/index.md)。  在命令菜单中，工具称为 _面板_ 或 _抽屉_ 项。
 
-1. 打开 DevTools 后，按 `Ctrl``Shift``P`++ (Windows、Linux) 或`Command``Shift`++`P` (macOS) 打开**命令菜单**。
+1. 打开 DevTools 后，按 `Ctrl``P``Shift`++ (Windows、Linux) 或 `Command``Shift`++`P` (macOS) 打开**命令菜单**。
 
    **命令菜单**是模糊搜索自动完成组合框。
 
@@ -119,7 +119,7 @@ ms.locfileid: "12610273"
 
 1. 打开“**命令菜单**”。
 
-1. "开始"菜单键入`elements`，选择 **“面板>显示元素**”命令，然后按。`Enter`
+1. 开始键入`elements`，选择 **“面板>显示元素**”命令，然后按。`Enter`
 
 以这种方式打开工具会将焦点放在工具的内容区域中。  就 **元素** 工具而言，焦点将移到 **DOM 树**中。
 
@@ -155,7 +155,7 @@ ms.locfileid: "12610273"
 
 *  按 `Tab` 下以在属性值之间移动。  听到“空格”时，你位于空文本输入中，并且可以键入新的属性值。
 
-*  按`Ctrl`+`Enter` (Windows、Linux) 或`Command`+`Enter` (macOS) 接受更改并听到元素的整个内容。
+*  按 `Ctrl`+`Enter` (Windows、Linux) 或 `Command`+`Enter` (macOS) 接受更改并听到元素的整个内容。
 
 #### <a name="known-issues"></a>已知问题
 
@@ -168,9 +168,9 @@ ms.locfileid: "12610273"
 
 *  按 `Tab` 下以在属性值之间移动。  例如，当你听到元素的名称时， `h2`你位于文本输入的内部，并且可以更改元素的类型。
 
-*  按`Ctrl`+`Enter` (Windows、Linux) 或`Command`+`Enter` (macOS) 接受更改。
+*  按 `Ctrl`+`Enter` (Windows、Linux) 或 `Command`+`Enter` (macOS) 接受更改。
 
-例如，键入 **h3**，然后按 `Ctrl`+`Enter` (Windows、Linux) 或`Enter``Command`+ (macOS) 时，元素的`h3`起始标记和结束标记会更改。
+例如，键入 **h3**，然后按 `Ctrl`+`Enter` (Windows、Linux) 或`Enter` `Command`+ (macOS) 时，元素的`h3`起始标记和结束标记会更改。
 
 
 <!-- ====================================================================== -->
@@ -284,7 +284,7 @@ ms.locfileid: "12610273"
 
 **已知问题**
 
-*  对于 VoiceOver 等macOS屏幕阅读器，**辅助功能**选项卡使用的 [ARIA 树](https://www.w3.org/TR/wai-aria-1.1/#tree)类型可能无法在Microsoft Edge中正确公开。  订阅 [Chromium 问题 #868480](https://bugs.chromium.org/p/chromium/issues/detail?id=868480) 以获取有关此问题进展的通知。
+*  对于 MacOS 屏幕阅读器（如 VoiceOver），**辅助功能**选项卡使用的 [ARIA 树](https://www.w3.org/TR/wai-aria-1.1/#tree)类型可能无法在 Microsoft Edge 中正确公开。  订阅 [Chromium 问题 #868480](https://bugs.chromium.org/p/chromium/issues/detail?id=868480) 以获取有关此问题进展的通知。
 *  每个 **ARIA 属性** 和 **计算属性** 部分都标记为 [ARIA 树](https://www.w3.org/TR/wai-aria-1.1/#tree)，但每个节当前没有焦点管理，也不具有键盘操作性。
 
 
@@ -293,7 +293,7 @@ ms.locfileid: "12610273"
 <!-- keep sync'd:
 * [Persisting the Inspect tool's tooltip and grid color overlay](../css/inspect.md#persisting-the-inspect-tools-tooltip-and-grid-color-overlay) in _Analyze pages using the Inspect tool_ -->
 
-单击 **“检查** ”工具按钮并在呈现的网页中四处移动时，“检查”工具提示会更改。  若要保持显示当前工具提示和网格颜色覆盖，请在呈现的网页中四处移动时按住 `Ctrl`+`Alt` (Windows、Linux) 或`Ctrl`+`Option` (macOS) 。
+单击 **“检查** ”工具按钮并在呈现的网页中四处移动时，“检查”工具提示会更改。  若要保持显示当前工具提示和网格颜色覆盖，请在呈现的网页中四处移动时按住 `Ctrl`+`Alt` (Windows、Linux) 或 `Ctrl`+`Option` (macOS) 。
 
 使用屏幕放大镜或其他辅助技术时，此技术很有用。  如果未使“检查”工具的工具提示保持不变，则使用“ **检查”工具** (![“检查”工具按钮时，悬停覆盖层会不断更改。](../media/inspect-tool-icon-light-theme.png)) 。
 
@@ -340,5 +340,5 @@ Lighthouse 报表分为与每个审核类别对应的部分。  报告打开时�
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面 [在此](https://developer.chrome.com/docs/devtools/accessibility/navigation/) 处找到，由 [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (参与者、Google WebFundamentals) 创作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

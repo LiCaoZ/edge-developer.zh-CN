@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 4b246b63420c1f2f14dbcb78f453d0c8a9fbd057
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: be4db1e0ef8b109ff4545e03cac7ea3d6ceb924d
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610427"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631351"
 ---
 <!-- Copyright Kayce Basques
 
@@ -56,7 +56,7 @@ ms.locfileid: "12610427"
 
 如果已在服务器上设置 HTTPS，则要解决此问题，只需将服务器配置为将所有 HTTP 请求重定向到 HTTPS。
 
-如果尚未在服务器上设置 HTTPS， [让我们加密](https://letsencrypt.org) 可以提供一种免费且相对简单的方法来启动该过程。  或者，可以考虑在CDN上托管网站。  默认情况下，HTTPS 上的大多数主要 CDN 主机站点现在。
+如果尚未在服务器上设置 HTTPS， [让我们加密](https://letsencrypt.org) 可以提供一种免费且相对简单的方法来启动该过程。  或者，可以考虑在 CDN 上托管站点。  默认情况下，HTTPS 上的大多数主要 CDN 主机站点现在。
 
 > [!TIP]
 > [Webhint](https://webhint.io) 中的[使用 HTTPS](https://webhint.io/docs/user-guide/hints/hint-https-only) 提示可以帮助自动完成确保所有 HTTP 请求都定向到 HTTPS 的过程。
@@ -93,5 +93,5 @@ ms.locfileid: "12610427"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/security/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 09/03/2021
-ms.openlocfilehash: 29e195ef941bd7186ca1174473fcf8cafd5b1f78
-ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
+ms.openlocfilehash: d4a4e4188c583bb926b1c813ebbcf9ef2bb9420c
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "12550674"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631181"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-94"></a>DevTools (Microsoft Edge 94) 中的新增功能
 
@@ -37,7 +37,7 @@ ms.locfileid: "12550674"
 <!-- Title: Microsoft Edge DevTools for Visual Studio Code now supports themes and uses the most recent codebase -->
 <!-- Subtitle: The Microsoft Edge DevTools extension for Visual Studio Code now uses the same version of the Developer Tools as your Microsoft Edge browser. We also added ways to learn more and for you to tell us what we could do better from within Visual Studio Code. -->
 
-在适用于Visual Studio Code的最新版本的 Microsoft Edge DevTools 扩展中，我们发布了以下更新或新功能：
+在适用于 Visual Studio Code 的最新版本的 Microsoft Edge DevTools 扩展中，我们发布了以下更新或新功能：
 *  共享用于基于浏览器的 DevTools 的相同代码库。
 *  支持 Visual Studio Code 随附的主题。
 *  在 **Microsoft Edge 工具**边栏中添加“**有用链接**”部分，其中包含“**文档**”、“**报告错误**”和“**申请功能**”按钮。
@@ -80,7 +80,7 @@ ms.locfileid: "12550674"
 
 以前，如果工具栏具有焦点，则无法使用键盘上的箭头键导航到 DevTools 中的“**更多工具**”(`+`) 按钮。  使用箭头键时，到达工具栏中的最后一个工具后，焦点会循环回第一个工具，或者显示“**更多选项卡**”菜单。
 
-从Microsoft Edge版本 93 开始，“**更多”选项卡** (`>>`) 按钮，当焦点位于工具栏上时，可以使用箭头键选择 **“更多工具**”按钮：
+从 Microsoft Edge 版本 93 开始，“ **更多”选项卡** (`>>`) 按钮，当焦点位于工具栏上时，可以使用箭头键选择 **“更多工具** ”按钮：
 
 ![使用箭头键将焦点放在“更多选项卡”或“更多工具”按钮上。](../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png)
 
@@ -93,5 +93,5 @@ ms.locfileid: "12550674"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-94)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

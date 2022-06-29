@@ -1,17 +1,17 @@
 ---
 title: 控制台功能参考
-description: 针对 Microsoft Edge DevTools 中控制台 UI 的每个功能和行为的综合参考。
+description: Microsoft Edge DevTools 中控制台 UI 的每个功能和行为的综合参考。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: ea26216aaad071ea9fda2e43a147ae1994dd2249
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 5f9eeaa117278e14dc87170b454feae3c0a9c423
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610805"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630616"
 ---
 <!-- Copyright Kayce Basques
 
@@ -91,7 +91,7 @@ ms.locfileid: "12610805"
 
 ### <a name="open-console-settings"></a>打开控制台设置
 
-单击**控制台设置** (![控制台设置图标。](../media/settings-button-icon.msft.png)) 按钮。
+单击 **“控制台设置** (![控制台设置”图标。](../media/settings-button-icon.msft.png)) 按钮。
 
 ![控制台设置。](../media/console-settings-group-similar-empty.msft.png)
 
@@ -111,12 +111,12 @@ ms.locfileid: "12610805"
 
 ### <a name="turn-off-message-grouping"></a>关闭消息分组
 
-若要关闭**主机**的默认消息分组行为，请单击**主机设置 (**![主机设置图标。](../media/settings-button-icon.msft.png)) 按钮，然后选中 **“类似组**”旁边的复选框。  有关示例，请参阅 [日志 XHR 和提取请求](#log-xhr-and-fetch-requests)。
+若要关闭 **主机**的默认消息分组行为，请单击 **“主机设置** (![主机设置”图标。](../media/settings-button-icon.msft.png)) 按钮，然后选择 **“组相似**”旁边的复选框。  有关示例，请参阅 [日志 XHR 和提取请求](#log-xhr-and-fetch-requests)。
 
 
 ### <a name="log-xhr-and-fetch-requests"></a>记录 XHR 和 Fetch 请求
 
-若要在每次发生时记录**主机**的所有`XMLHttpRequest`和`Fetch`请求，请单击**主机设置 (**![主机设置图标。](../media/settings-button-icon.msft.png)) 按钮，然后选择 **Log XMLHttpRequests 旁边的**复选框。
+若要在每次发生时将所有 `XMLHttpRequest` 和 `Fetch` 请求记录到 **主机** ，请单击 **主机设置** (![“控制台设置”图标。](../media/settings-button-icon.msft.png)) 按钮，然后选择 **Log XMLHttpRequests 旁边的**复选框。
 
 ![记录 XMLHttpRequest 和 Fetch 请求。](../media/console-xhr-fetch.msft.png)
 
@@ -133,18 +133,18 @@ ms.locfileid: "12610805"
 
 ### <a name="persist-messages-across-page-loads"></a>跨页面加载保留消息
 
-加载新网页时，默认操作会清除 **控制台**。  若要跨页面加载保存消息，请单击**主机设置 (**![主机设置图标。](../media/settings-button-icon.msft.png)) 按钮，然后选择 **“保留日志**”旁边的复选框。
+加载新网页时，默认操作会清除 **控制台**。  若要跨页面加载保存消息，请单击 **“主机设置** (![主机设置”图标。](../media/settings-button-icon.msft.png)) 按钮，然后选择 **“保留日志**”旁边的复选框。
 
 
 ### <a name="hide-network-messages"></a>隐藏网络消息
 
-Microsoft Edge的默认操作是将网络消息记录到**控制台**。  在下图中，选定的消息表示 `429` 的 HTTP 状态代码。
+Microsoft Edge 的默认操作是将网络消息记录到 **控制台**。  在下图中，选定的消息表示 `429` 的 HTTP 状态代码。
 
 ![控制台中的“429”消息。](../media/console-show-network.msft.png)
 
 隐藏网络消息：
 
-1. 单击**控制台设置** (![控制台设置图标。](../media/settings-button-icon.msft.png)) 按钮。
+1. 单击 **“控制台设置** (![控制台设置”图标。](../media/settings-button-icon.msft.png)) 按钮。
 
 1. 选中 **“隐藏网络”** 旁边的复选框。
 
@@ -207,7 +207,7 @@ DevTools 为每个 `console.*` 方法分配四个严重级别之一：
 
 ### <a name="filter-out-messages-from-different-contexts"></a>筛选出不同上下文的消息
 
-假设网页上有广告 (广告) 。  广告嵌入到控制`<iframe>`**台**中并生成许多消息。  由于广告在其他 [JavaScript 上下文](#select-javascript-context)中运行，因此隐藏消息的一种方法是单击**主机设置 (**![主机设置图标。](../media/settings-button-icon.msft.png)) 按钮，然后选择 **“仅选定上下文**”旁边的复选框。
+假设网页上有广告 (广告) 。  广告嵌入到控制`<iframe>`**台**中并生成许多消息。  由于广告在其他 [JavaScript 上下文](#select-javascript-context)中运行，因此隐藏消息的一种方法是单击 **主机设置** (![主机设置图标。](../media/settings-button-icon.msft.png)) 按钮，然后选择 **“仅选定上下文**”旁边的复选框。
 
 
 ### <a name="filter-out-messages-that-dont-match-a-regular-expression-pattern"></a>筛选出与正则表达式模式不匹配的消息
@@ -237,13 +237,13 @@ DevTools 为每个 `console.*` 方法分配四个严重级别之一：
 
 在**控制台**中键入 JavaScript 表达式时，**热切评估**会显示返回值的预览。  若要关闭返回值预览，请执行以下操作：
 
-1. 单击**控制台设置** (![控制台设置图标。](../media/settings-button-icon.msft.png)) 按钮。
+1. 单击 **“控制台设置** (![控制台设置”图标。](../media/settings-button-icon.msft.png)) 按钮。
 1. 清除 **“急切评估**”旁边的复选框。
 
 
 ### <a name="turn-off-autocomplete-from-history"></a>关闭历史记录中的自动完成
 
-键入表达式时， **控制台** 的自动完成弹出窗口将显示之前运行的表达式。  表达式预置了 `>` 字符。  若要停止显示历史记录中的表达式，请单击**主机设置 (**![主机设置图标。](../media/settings-button-icon.msft.png)) 按钮，然后清除 **“自动完成历史记录**”复选框旁边的复选框。
+键入表达式时， **控制台** 的自动完成弹出窗口将显示之前运行的表达式。  表达式预置了 `>` 字符。  若要停止显示历史记录中的表达式，请单击 **“主机设置** (![主机设置”图标。](../media/settings-button-icon.msft.png)) 按钮，然后清除 **“从历史记录自动完成** ”复选框旁边的复选框。
 
 在下图中，`document.querySelector('a')` 和 `document.querySelector('img')` 是之前评估的表达式。
 
@@ -282,7 +282,7 @@ DevTools 为每个 `console.*` 方法分配四个严重级别之一：
 
 <!-- if an article's title is adequately descriptive, and the article is in the same TOC bucket as the present article, don't much need a link here: -->
 * [控制台工具中的日志消息](console-log.md) - 如何筛选控制台中的信息、警告和错误等日志消息。
-* [开始控制台中运行 JavaScript](console-javascript.md) 的步骤 - 逐步讲解如何在控制台中发出 JavaScript 语句和表达式。
+* [在控制台中运行 JavaScript 入门](console-javascript.md) - 指导你完成在控制台中发出 JavaScript 语句和表达式的步骤。
 * [控制台对象 API 参考](api.md) - 可在控制台中输入的函数和表达式，以将消息写入控制台，例如 `console.log()`。
 * [控制台工具实用工具函数和选择器](utilities.md) - 可在 **控制台** 工具中输入的便利函数，例如`monitorEvents()`。
 
@@ -292,5 +292,5 @@ DevTools 为每个 `console.*` 方法分配四个严重级别之一：
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/console/reference/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

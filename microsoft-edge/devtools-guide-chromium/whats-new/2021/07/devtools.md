@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/30/2021
-ms.openlocfilehash: 4221fb81ee234d55419cc4553fbae28a8cedadec
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 61acfb95029d1ecb8a61391116ef2cc7ccedd1cf
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514788"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631193"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-93"></a>DevTools (Microsoft Edge 93) 中的新增功能
 
@@ -24,7 +24,7 @@ ms.locfileid: "12514788"
 <!-- Title: Apply themes from Visual Studio Code to DevTools -->
 <!-- Subtitle: You can now use some of the most popular color themes from Visual Studio Code, such as Monokai and Solarized Dark, in Microsoft Edge DevTools. -->
 
-除了现有的浅色和深色主题，Microsoft Edge DevTools 现在还支持Visual Studio Code中一些最常用的颜色主题。  若要选择颜色主题，请单击“DevTools **”设置** (设置![图标。](../../../media/settings-gear-icon-light-theme.png)) 按钮，然后从 **“主题**”下拉列表中选择一个主题。
+除了现有的浅色和深色主题，Microsoft Edge DevTools 现在还支持Visual Studio Code中一些最常用的颜色主题。  若要选择颜色主题，请单击“DevTools **设置** (![”设置“图标。](../../../media/settings-gear-icon-light-theme.png)) 按钮，然后从 **”主题** “下拉列表中选择一个主题。
 
 ![DevTools 的颜色主题。](../../media/2021/07/all-devtools-themes.msft.png)
 
@@ -58,7 +58,7 @@ DOM 节点被视为"已分离">当不再附加到 DOM 的任何元素，但仍�
 
 ![“分离元素”工具。](../../media/2021/07/detached-elements-tool.msft.png)
 
-更新：此功能已发布，不再具有实验性。<!-- To turn on this experiment, go to **Settings** > **Experiments** and select the checkbox next to **Detached Elements**. -->
+更新：此功能已发布，不再处于实验性状态。<!-- To turn on this experiment, go to **Settings** > **Experiments** and select the checkbox next to **Detached Elements**. -->
 
 另请参阅：
 * [使用分离的元素工具调试 DOM 内存泄漏](../../../memory-problems/dom-leaks.md)
@@ -85,7 +85,7 @@ DOM 节点被视为"已分离">当不再附加到 DOM 的任何元素，但仍�
 
 ![与 Visual Studio Code 调试器工作流集成的 DevTools 扩展。](../../media/2021/07/extension-integrated-debugger.msft.png)
 
-有关详细信息，请参阅 Visual Studio Code 中 [使用 Microsoft Edge DevTools 集成进行浏览器调](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code)试。  获取[Visual Studio Code扩展的Microsoft Edge 开发人员工具。](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)  Microsoft Visual Studio代码自动更新扩展;若要手动更新此扩展，请参阅[手动更新扩展](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually)。
+有关详细信息，请参阅 Visual Studio Code 中 [使用 Microsoft Edge DevTools 集成进行浏览器调](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code)试。  获取[Visual Studio Code扩展的Microsoft Edge 开发人员工具。](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)  Microsoft Visual Studio Code自动更新扩展;若要手动更新此扩展，请参阅[手动更新扩展](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually)。
 
 你可以在 [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools) 上提交问题并参与扩展的改进。
 
@@ -107,11 +107,11 @@ Microsoft Edge DevTools 采用了[Fluent UI](https://developer.microsoft.com/flu
 <!-- Title: DevTools Settings now includes display language -->
 <!-- Subtitle: You can now skip the browser settings and change the DevTools display language directly within DevTools Settings. -->
 
-以前，若要更改 DevTools 中的显示语言，必须更改浏览器语言。  现在，你可以在 DevTools **设置**中轻松切换显示语言，而无需更改浏览器设置。  为此，请打开**设置**，然后在 **“首选项**”中，从 **“语言**”下拉列表中选择一种语言。
+以前，若要更改 DevTools 中的显示语言，必须更改浏览器语言。  现在，你可以在 DevTools **设置**中轻松切换显示语言，而无需更改浏览器设置。  为此，请打开 **“设置”**，然后在 **“首选项**”中，从 **“语言** ”下拉列表中选择一种语言。
 
-![直接从 DevTools 设置 页更改 DevTools 显示语言。](../../media/2021/07/settings-browser-ui-language.msft.png)
+![直接从“DevTools 设置”页更改 DevTools 显示语言。](../../media/2021/07/settings-browser-ui-language.msft.png)
 
-默认情况下，DevTools 与浏览器的显示语言匹配。  请参阅 [更改 DevTools 语言设置](../../../customize/localization.md)。
+默认情况下，DevTools 与浏览器的显示语言匹配。  请参见 [更改开发工具语言设置](../../../customize/localization.md)。
 
 有关Chromium开源项目中此功能的历史记录，[请参阅问题2882756](https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756)。
 
@@ -147,9 +147,9 @@ Microsoft Edge DevTools 采用了[Fluent UI](https://developer.microsoft.com/flu
 
 在此版本中，我们重新设计了调试体验，以便你可以通过包含多个单独字段和控件的 UI 轻松修改用户代理客户端提示。  此外，现在可以同时测试自定义用户代理客户端提示和用户代理字符串。  现在可以在 **设置** 或 **网络条件**工具中为自定义设备定义用户代理客户端提示。
 
-![为设置中的自定义设备定义User-Agent客户端提示。](../../media/2021/07/ua-client-hints-in-settings.msft.png)
+![在“设置”中定义自定义设备的User-Agent客户端提示。](../../media/2021/07/ua-client-hints-in-settings.msft.png)
 
-有关在**设置**中定义提示的详细信息，请[参阅“设置用户代理客户端提示](../../../device-mode/index.md#set-user-agent-client-hints)”。
+有关在 **“设置”** 中定义提示的详细信息，请参 [阅“设置用户代理客户端提示](../../../device-mode/index.md#set-user-agent-client-hints)”。
 
 还可以使用 **网络条件** 工具替代当前页面的用户代理客户端提示。
 
@@ -201,5 +201,5 @@ Microsoft Edge DevTools 采用了[Fluent UI](https://developer.microsoft.com/flu
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-93)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: b7203a1057e97df0a6361b0949237bafe11400d7
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: d5a5b52d1d7ed1bd460915f0a6c7e482ccc08d4a
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610700"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630887"
 ---
 <!-- Copyright Kayce Basques
 
@@ -62,7 +62,7 @@ ms.locfileid: "12610700"
 
 1. [打开“命令”菜单](../command-menu/index.md)。
 
-1. "开始"菜单键入`coverage`，选择 **“显示覆盖**范围”命令，然后按下`Enter`。  **覆盖**工具在**抽屉**中打开。
+1. 开始键入`coverage`，选择 **“显示覆盖**范围”命令，然后按。`Enter`  **覆盖**工具在**抽屉**中打开。
 
    ![覆盖工具。](../media/coverage-console-drawer-coverage-empty.msft.png)
 
@@ -72,7 +72,7 @@ ms.locfileid: "12610700"
 
 1. 在 **“覆盖** 范围”工具中单击以下按钮之一：
 
-   *  单击 **"开始"菜单检测覆盖率和重载页** ("开始"菜单![检测覆盖率和重载页。](../media/reload-icon.msft.png)) <!--todo: check UI string--> 如果想要查看加载页面所需的代码。
+   *  单击 **“开始检测覆盖范围”和“重新加载”页** (![“开始检测覆盖范围”和“重新加载”页。](../media/reload-icon.msft.png)) <!--todo: check UI string--> 如果想要查看加载页面所需的代码。
 
    *  如果想要查看与页面交互后使用的代码，请单击**检测覆盖率**![ (检测覆盖率](../media/record-icon.msft.png)) 。
 
@@ -104,5 +104,5 @@ ms.locfileid: "12610700"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/coverage/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

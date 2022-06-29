@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/13/2021
-ms.openlocfilehash: b860616035f3ff2c7fb5d39e44fe1f992c6cbbb8
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: fa2c81c7b8ac64d9e63bcc08d910dcc681fa9dd7
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610238"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630516"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -237,7 +237,7 @@ _周期_ 是至少在保留器路径中显示两次的节点。
 ### <a name="using-filters-to-hide-internal-nodes"></a>使用筛选器隐藏内部节点
 
 若要筛选出内部节点的显示，以便它们不会显示在 **“保留器** ”部分中，请在 **“筛选器边缘** ”下拉菜单中选择 **“隐藏内部**”。
-_内部节点_是特定于 V8 (Microsoft Edge) 中的 JavaScript 引擎的对象。
+_内部节点_ 是特定于 V8 (Microsoft Edge) 中的 JavaScript 引擎的对象。
 
 
 <!-- ====================================================================== -->
@@ -245,5 +245,5 @@ _内部节点_是特定于 V8 (Microsoft Edge) 中的 JavaScript 引擎的对象
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面 [在此](https://developer.chrome.com/docs/devtools/memory-problems/memory-101/) 处找到，由 [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) 创作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

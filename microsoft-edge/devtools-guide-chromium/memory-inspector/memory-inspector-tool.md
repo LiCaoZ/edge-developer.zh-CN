@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 05/04/2022
-ms.openlocfilehash: cc2db178bd2feab02b3ef2328c8933f8dc9ed248
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 54a696e7a45bff1e4572d4d63f8f15787e4092a1
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514522"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630802"
 ---
 <!-- Copyright Kim-Anh Tran
 
@@ -53,11 +53,11 @@ https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2021
 <!-- ====================================================================== -->
 ## <a name="open-memory-inspector-while-debugging"></a>调试时打开内存检查器
 
-1. "开始"菜单 Microsoft Edge。
+1. 启动 Microsoft Edge。
 
 1. 打开 [JS (JS) 内存中的测试站点“检查 ArrayBuffers ](http://memory-inspector.glitch.me/demo-js.html)”。 <!-- To do item: copy to Microsoft Repo and reference there -->
 
-1. 按`F12`或`Shift``I`+`Ctrl`+ (Windows、Linux) 或`I``Command`+`Option`+ (macOS) 打开 DevTools。
+1. 按`F12`或`Shift``I`+`Ctrl`+ (Windows、Linux) 或`I` `Command`+`Option`+ (macOS) 打开 DevTools。
 
 1. 单击 **“源** ”并打开文件 `demo-js.js` 。
 
@@ -178,7 +178,7 @@ Enter **地址** 文本框以十六进制格式显示当前字节地址。 可�
 
 1. 在 [Wasm) 中打开 Wasm 测试站点检查 Wasm 记忆 (内存 ](http://memory-inspector.glitch.me/demo-wasm.html)。 <!-- To do item: copy to Microsoft Repo and reference there -->
 
-1. 按`F12`或`Shift``I`+`Ctrl`+ (Windows、Linux) 或`I``Command`+`Option`+ (macOS) 打开 DevTools。
+1. 按`F12`或`Shift``I`+`Ctrl`+ (Windows、Linux) 或`I` `Command`+`Option`+ (macOS) 打开 DevTools。
 
 1. 单击 **“源** ”并打开文件 `memory-write.wasm` 。
 
@@ -202,5 +202,5 @@ Enter **地址** 文本框以十六进制格式显示当前字节地址。 可�
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面 [在此](https://developer.chrome.com/docs/devtools/memory-inspector/) 处找到，由 [Kim-Anh Tran](https://developer.chrome.com/authors/kimanh/) (Chrome DevTools) 创作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

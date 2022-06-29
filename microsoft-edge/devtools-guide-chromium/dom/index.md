@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/29/2021
-ms.openlocfilehash: 53655c69dc7beb79c3a4f5168c0303cbb7e9ad1d
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 696e71d5792b31ecb23975f29bbdf1e09697a09c
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610469"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630483"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,7 +28,7 @@ ms.locfileid: "12610469"
    limitations under the License.  -->
 # <a name="get-started-viewing-and-changing-the-dom"></a>开始查看和更改 DOM
 
-按照这些交互式教程部分了解使用 Microsoft Edge DevTools 查看和更改页面的文[档对象模型](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) (DOM) 的基础知识。
+按照这些交互式教程部分了解使用 Microsoft Edge DevTools 查看和更改页面的 DOM)  (文 [档对象模型](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) 的基础知识。
 
 若要了解 DOM 和 HTML 之间的区别，请参 [阅以下附录：HTML 与 DOM](#appendix-html-versus-the-dom)。
 
@@ -43,7 +43,7 @@ ms.locfileid: "12610469"
 
 当你对特定 DOM 节点感兴趣时，可通过“**检查**”快速打开开发人员工具并调查该节点。
 
-1. 在新窗口或选项卡中打开[“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/)”演示页。 为此，请右键单击链接，或按住`Control` (Windows、Linux) 或`Command` (macOS) ，然后单击链接。
+1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。 为此，请右键单击链接，或按住 `Control` (Windows、Linux) 或 `Command` (macOS) ，然后单击该链接。
 
 <!-- You can view the source files for the DOM Examples demo in the [MicrosoftEdge/Demos > devtools-dom-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) repo folder. -->
 
@@ -61,7 +61,7 @@ ms.locfileid: "12610469"
 
 1. 在 **“检查节点**”下，单击 **“东京** 文本”。  现在，`<li>Tokyo</li>` 在 DOM 树中突出显示。
 
-检查节点也是查看和更改节点样式的第一步。  请参阅[开始查看和更改 CSS](../css/index.md)。
+检查节点也是查看和更改节点样式的第一步。  请参阅 [开始查看和更改 CSS](../css/index.md)。
 
 
 ### <a name="navigate-the-dom-tree-with-a-keyboard"></a>使用键盘浏览 DOM 树
@@ -109,7 +109,7 @@ ms.locfileid: "12610469"
 
 1. 将光标焦点放在“**元素**”工具上。
 
-1. 按`Ctrl`+`F` (Windows、Linux) 或`Command`+`F` (macOS) 。  搜索栏在 DOM 树的底部打开。
+1. 按 `Ctrl`+`F` (Windows、Linux) 或 `Command`+`F` (macOS) 。  搜索栏在 DOM 树的底部打开。
 
 1. 键入 `The Moon is a Harsh Mistress`。  最后一句在 DOM 树中突出显示。
 
@@ -218,7 +218,7 @@ ms.locfileid: "12610469"
 
 1. 选择 `Delete` 键。  节点将被删除。
 
-1. 按`Ctrl`+`Z` (Windows、Linux) 或`Command`+`Z` (macOS) 。  最后一个操作将被撤消，节点将重新出现。
+1. 按 `Ctrl`+`Z` (Windows、Linux) 或 `Command`+`Z` (macOS) 。  最后一个操作将被撤消，节点将重新出现。
 
 
 <!-- ====================================================================== -->
@@ -252,9 +252,9 @@ ms.locfileid: "12610469"
 
 1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。
 
-1. 在**作为全局变量的Microsoft Store**下，右键单击 **“大睡眠**”，然后选择 **“检查**”。
+1. 在 **“存储”作为全局变量**下，右键单击 **“大睡眠**”，然后选择 **“检查**”。
 
-1. 在 DOM 树中右键单击`<li>The Big Sleep</li>`，然后选择**Microsoft Store作为全局变量**。  请参阅 [附录：](#appendix-missing-options) 如果未显示该选项，则缺少选项。
+1. 在 DOM 树中右键单击 `<li>The Big Sleep</li>` ，然后选择 **“存储”作为全局变量**。  请参阅 [附录：](#appendix-missing-options) 如果未显示该选项，则缺少选项。
 
 1. 键 `temp1` 入控制台，然后按 `Enter`。  表达式的结果显示变量的计算结果为节点。
 
@@ -270,7 +270,7 @@ ms.locfileid: "12610469"
 
 1. 在 DOM 树中右键单击 `<li>The Brothers Karamazov</li>` ，然后选择 **“复制** > **JS 路径**”。  解析为节点的 `document.querySelector()` 表达式已复制到剪贴板。
 
-1. 按`Ctrl`+`V` (Windows、Linux) 或`Command`+`V` (macOS) 将表达式粘贴到控制台中。
+1. 按 `Ctrl`+`V` (Windows、Linux) 或 `Command`+`V` (macOS) 将表达式粘贴到控制台。
 
 1. 按 `Enter` 下以评估表达式。
 
@@ -428,5 +428,5 @@ html
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/dom/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

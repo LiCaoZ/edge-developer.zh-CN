@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 11/16/2021
-ms.openlocfilehash: aede64c344186e76246d1ec23c7473e077b8dad8
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
-ms.translationtype: HT
+ms.openlocfilehash: 18293eb1513a27999173da22e9e354548bdeb133
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514081"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630669"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-96"></a>DevTools 中的最近更新 (Microsoft Edge 96)
 
@@ -167,5 +167,5 @@ Microsoft Edge DevTools for Visual Studio Code 扩展现在具有可停靠的截
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 来自 Chromium 项目公告的原始页面为“[DevTools 中的最近更新 (Chrome 96)](https://developer.chrome.com/blog/new-in-devtools-96)”，作者为 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen)（Google 负责 Chrome DevTools 工作的开发人员大使）。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/25/2021
-ms.openlocfilehash: c0295c786c69fd3c75d36d4eadf716ffef1003c0
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 72e50ff0ff85a58d5ec2eb8332ef7b9117429db8
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610833"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630443"
 ---
 <!-- Copyright Alex Rudenko
 
@@ -48,7 +48,7 @@ ms.locfileid: "12610833"
 
    ![样式规则的上下文菜单，包括“将声明复制为 JS”和“将所有声明复制为 JS”命令。](images/copy-declaration-as-js.msft.png)
 
-此功能从Microsoft Edge版本 93 开始提供。 <!-- delete statement sometime after September 2, 2021 --> 要详细了解如何在 DevTools 中编写 CSS，请参阅 [CSS 功能参考](reference.md)。
+此功能从 Microsoft Edge 版本 93 开始可用。 <!-- delete statement sometime after September 2, 2021 --> 要详细了解如何在 DevTools 中编写 CSS，请参阅 [CSS 功能参考](reference.md)。
 
 
 <!-- ====================================================================== -->
@@ -87,7 +87,7 @@ function addStyle() {
 <!-- ====================================================================== -->
 ## <a name="what-is-css-in-js"></a>什么是 CSS in-JS？
 
-本部分摘自博客帖子 [DevTools 中的 CSS in-JS 支持](https://developer.chrome.com/blog/css-in-js/)。
+本部分摘自 [DevTools 中的博客文章 CSS in-JS 支持](https://developer.chrome.com/blog/css-in-js/)。
 
 以下是 _CSS in-JS_ 的含义，以及它与常规 CSS 有何不同。  _CSS in-JS_ 的定义有些模糊。  从广义上讲，这是一种使用 JavaScript 管理 CSS 代码的方法。  例如，这可能意味着使用 JavaScript 定义 CSS 内容，并且最终的 CSS 输出由应用即时生成。
 
@@ -135,5 +135,5 @@ document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面 [在这里](https://developer.chrome.com/blog/css-in-js/) 找到，由 [亚历克斯·鲁登科](https://developers.google.com/web/resources/contributors#alex-rudenko) (技术作家，Chrome DevTools \& Lighthouse) 创作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

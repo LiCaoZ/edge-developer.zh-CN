@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/06/2021
-ms.openlocfilehash: 157dea62fef68b5be82949a60d39b65e3b16ba15
-ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
+ms.openlocfilehash: e40c9e8c80de037f9ca26759164e657875f3604a
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "12551622"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631639"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -124,7 +124,7 @@ DevTools 工具提示功能可帮助你了解所有不同的工具和窗格。  
 Most operating systems require square icons.  Please include at least one square icon in the array.
 ```
 
-在 Microsoft Edge 版本 90 或更早版本中，为非正方形的每个图标显示错误：
+在 Microsoft Edge 版本 90 或更低版本中，为非正方形的每个图标显示错误：
 
 ![在 Microsoft Edge 版本 90 或更低版本中，为非正方形的每个图标显示错误。](../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png)
 
@@ -147,9 +147,9 @@ Most operating systems require square icons.  Please include at least one square
 <!--  Title: Localization for all  -->
 <!--  Subtitle: Match browser language enabled to all Chromium-based browsers  -->
 
-从 [Microsoft Edge 版本 81](../../2020/01/devtools.md#using-the-devtools-in-other-languages) 开始，Microsoft Edge DevTools UI 以你自己的语言显示。  许多开发人员使用开发人员工具（如 StackOverflow 和 Visual Studio Code）作为本机语言。  为了提供类似的 UI 语言灵活性，Microsoft Edge DevTools 团队、Chrome DevTools 团队和 Google Lighthouse 团队协作在所有基于Chromium的浏览器中提供相同的体验。
+从 [Microsoft Edge 版本 81](../../2020/01/devtools.md#using-the-devtools-in-other-languages) 开始，Microsoft Edge DevTools UI 以自己的语言显示。  许多开发人员使用开发人员工具（如 StackOverflow 和 Visual Studio Code）作为本机语言。  为了提供类似的 UI 语言灵活性，Microsoft Edge DevTools 团队、Chrome DevTools 团队和 Google Lighthouse 团队协作在所有基于 Chromium 的浏览器中提供相同的体验。
 
-![Microsoft Edge浏览器和 DevTools 设置为日语。](../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png)
+![Microsoft Edge 浏览器和 DevTools 设置为日语。](../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png)
 
 请参见 [更改开发工具语言设置](../../../customize/localization.md)。
 
@@ -225,7 +225,7 @@ Most operating systems require square icons.  Please include at least one square
 
 在 **“元素”** 工具中，现在可以切换 `scroll-snap` 锁屏提醒来检查 CSS 滚动快照对齐方式。  当网页上的 HTML 元素应用`scroll-snap-type`到它时，**元素**工具中会在它旁边显示一个`scroll-snap`锁屏提醒。  `scroll-snap`单击锁屏提醒以切换在网页上显示滚动贴贴。
 
-有关示例网页，请参阅[滚动贴靠演示](https://mathiasbynens.github.io/css-dbg-stories/css-scroll-snap.html)。  在该示例中，点显示在快照边缘上。  滚动端口具有坚实的轮廓，而快照项具有虚线轮廓。  滚动填充以绿色填充，而滚动边距以橙色填充：
+有关示例网页，请参阅 [滚动快照演示](https://mathiasbynens.github.io/css-dbg-stories/css-scroll-snap.html)。  在该示例中，点显示在快照边缘上。  滚动端口具有坚实的轮廓，而快照项具有虚线轮廓。  滚动填充以绿色填充，而滚动边距以橙色填充：
 
 ![CSS 滚动快照。](../../media/2021/04/elements-scroll-snap-highlight.msft.png)
 
@@ -331,7 +331,7 @@ For the history of this feature in the Chromium open-source project, see Issue [
 
 另请参阅：
 * [仅查看实际应用于 CSS](../../../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) _功能引用中的元素的 CSS_。
-* 在 _DevTools (Microsoft Edge 87) _的“样[式”窗格中查看“计算”边栏窗格](../../2020/10/devtools.md#view-the-computed-sidebar-pane-in-the-styles-pane)。
+* 在 _DevTools (Microsoft Edge 87) _中的“样[式”窗格中查看“计算”边栏窗格](../../2020/10/devtools.md#view-the-computed-sidebar-pane-in-the-styles-pane)。
 * 使用_辅助技术浏览 Navigate DevTools_ 中[的所有计算样式](../../../accessibility/navigation.md#explore-all-computed-styles)。
 
 若要在Chromium开源项目中查看此功能的历史记录，请参阅问题[1076198](https://crbug.com/1076198)。
@@ -382,7 +382,7 @@ For the history of this feature in the Chromium open-source project, see Issue [
 
 使用新的试验筛选器更快地查找试验。  例如，为代码问题启用新试验：
 
-1. 在 DevTools 中，选择**设置** (设置![图标。](../../../media/settings-gear-icon-light-theme.png)) >**试验**。
+1. 在 DevTools 中，选择 **“设置** (![设置”图标。](../../../media/settings-gear-icon-light-theme.png)) > **试验**。
 
 1. 在 **“筛选器** ”文本框中，开始键入 **问题**：
 
@@ -395,7 +395,7 @@ For the history of this feature in the Chromium open-source project, see Issue [
 <!-- ====================================================================== -->
 ### <a name="new-vary-header-column-in-the-cache-storage-pane"></a>缓存存储窗格中的新的变化标头列
 
-**在应用程序**工具的 **“缓存存储**”窗格中，使用新`Vary Header`列显示 `Vary` HTTP 响应标头值：
+**在应用程序**工具的**缓存存储**窗格中，使用新`Vary Header`列显示 `Vary` HTTP 响应标头值：
 
 ![Vary Header 列。](../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png)
 
@@ -461,7 +461,7 @@ Webpack 和[汇总](https://rollupjs.org)等[](https://webpack.js.org)新式 Jav
 <!-- ====================================================================== -->
 #### <a name="improved-outline-of-html-files"></a>改进的 HTML 文件大纲
 
-DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工具中，打开 `.html` 文件。  若要打开 (或关闭) 代码大纲，请按`Ctrl`++`Shift``O`Windows/Linux 或`O``Cmd`+`Shift`+macOS。  以前，DevTools 仅显示一些函数。  在下图中，DevTools 现在正确列出了大纲中的所有函数：
+DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工具中，打开 `.html` 文件。  若要打开 (或关闭) 代码大纲，请在 Windows/Linux 或`O``Shift`++`Cmd` macOS 上按`O``Ctrl`+`Shift`+下。  以前，DevTools 仅显示一些函数。  在下图中，DevTools 现在正确列出了大纲中的所有函数：
 
 ![改进了 HTML 文件的大纲。](../../media/2021/04/sources-page-jobobbx-at.msft.png)
 
@@ -495,5 +495,5 @@ DevTools 现在对 `.html` 文件具有更好的大纲支持。  在 **源** 工
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-91)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

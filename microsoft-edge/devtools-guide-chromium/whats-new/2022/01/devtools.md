@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/14/2022
-ms.openlocfilehash: 61b7c1ffee2ce35db9b12a15f8f6d864bc5eb6ea
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
-ms.translationtype: HT
+ms.openlocfilehash: f69ee9b0dbb7e9a173d6706d588e86a5222e2ccd
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514746"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630335"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-97"></a>DevTools (Microsoft Edge 97) 中的新增功能
 
@@ -114,5 +114,5 @@ Microsoft Edge 版本 97 还包括来自 Chromium 项目的以下更新：
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 97)](https://developer.chrome.com/blog/new-in-devtools-97) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 10f0f216f43061172d191a5d367d0f20aa6415cc
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 088b1295c61005310826085fb7e732ab104c81c2
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610630"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631338"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -155,15 +155,15 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会使应
 
 
 <!-- ====================================================================== -->
-## <a name="paint-and-composite"></a>画图和复合
+## <a name="paint-and-composite"></a>油漆和复合
 
-画图是填充像素的过程。  它通常是呈现过程中成本最高的部分。  如果注意到页面未按任何方式按设计工作，则可能会出现油漆问题。
+油漆是填充像素的过程。  它通常是呈现过程中成本最高的部分。  如果注意到页面未按任何方式按设计工作，则可能会出现油漆问题。
 
 组合是将页面的绘图部分放在一起以在屏幕上显示的位置。  在大多数情况下，如果坚持仅限撰写器的属性并完全避免绘制，则应注意到性能有重大改进，但需要注意层计数过多。  <!--See [Stick to compositor-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->
 
-### <a name="paint-and-composite-tools"></a>画图和复合：工具
+### <a name="paint-and-composite-tools"></a>绘图和复合：工具
 
 想知道绘画需要多长时间或画画的频率？  在 **“性能**”面板中检查[“启用高级油漆检测](../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation)”设置，然后进行录制。  如果大部分渲染时间都花在了绘画上，则会出现油漆问题。
 
@@ -178,13 +178,13 @@ The Timeline Tool page is deprecated.
 -->
 
 
-### <a name="paint-and-composite-problems"></a>画图和复合：问题
+### <a name="paint-and-composite-problems"></a>油漆和复合：问题
 
 下表介绍了一些常见的油漆和复合问题以及潜在的解决方案。
 
 | 问题 | 示例 | 解决方案 |
 |:--- |:--- |:--- |
-| 画图影响响应或动画的风暴。  | 影响响应或动画的大油漆区域或昂贵的油漆。  | 避免绘制、提升移动到自身层的元素、使用转换和不透明度。  <!--See [Simplify paint complexity and reduce paint areas](/web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas).  -->  |
+| 绘制影响响应或动画的风暴。  | 影响响应或动画的大油漆区域或昂贵的油漆。  | 避免绘制、提升移动到自身层的元素、使用转换和不透明度。  <!--See [Simplify paint complexity and reduce paint areas](/web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas).  -->  |
 | 影响动画的层爆炸。  | 过度提升过多的元素会 `translateZ(0)` 极大地影响动画性能。  | 请谨慎地升级到层，并且仅当你知道它提供切实的改进时。  <!--See [Stick to composite-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->  |
 
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->
@@ -196,5 +196,5 @@ The Timeline Tool page is deprecated.
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面 [在这里](https://developer.chrome.com/docs/devtools/evaluate-performance/) 找到，由 [凯斯·巴斯克斯](https://developers.google.com/web/resources/contributors#kayce-basques) (技术作家，Chrome DevTools \& Lighthouse) 和 [梅金·科尔尼](https://developers.google.com/web/resources/contributors#meggin-kearney) (技术作家) 创作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

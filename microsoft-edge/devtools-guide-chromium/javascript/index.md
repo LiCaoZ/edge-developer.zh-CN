@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 5e19a43f505c1229f502b6793a7877f3e1322f1a
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: fba62615c33f2ede077cee8f095a4fb2229889eb
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610546"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630782"
 ---
 <!-- Copyright Kayce Basques
 
@@ -36,7 +36,7 @@ ms.locfileid: "12610546"
 
 调试的第一步是查找一系列持续重现 bug 的操作。
 
-1. 在新窗口或选项卡[中入门调试 JavaScript](https://microsoftedge.github.io/Demos/devtools-js-get-started/) 打开演示网页。 为此，请右键单击链接。  或者，按住`Ctrl` (Windows、Linux) 或`Command` (macOS) ，然后单击链接。
+1. 在新窗口或选项卡中打开演示网页 [“开始调试 JavaScript](https://microsoftedge.github.io/Demos/devtools-js-get-started/) ”。 为此，请右键单击链接。  或者，按住 `Ctrl` (Windows、Linux) 或 `Command` (macOS) ，然后单击链接。
 
    <!-- You can view the source files for the Debugging demo at the [MicrosoftEdge/Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) repo folder. -->
 
@@ -54,7 +54,7 @@ ms.locfileid: "12610546"
 
 开发工具为不同的任务提供了许多工具。  不同的任务包括更改 CSS、分析页面加载性能以及监视网络请求。  **源**工具是调试 JavaScript 的地方。
 
-1. 若要在 DevTools 中打开**控制台**工具，请按 `Ctrl`++`Shift``J` (Windows、Linux) 或`J``Command`+`Option`+ (macOS) 。
+1. 若要在 DevTools 中打开**控制台**工具，请按 `Ctrl`++`Shift``J` (Windows、Linux) 或`J` `Command`+`Option`+ (macOS) 。
 
    ![控制台工具。](../media/javascript-console-empty.msft.png)
 
@@ -216,7 +216,7 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 
 1. 在 **“编辑器** ”窗格中，将行 `var sum = addend1 + addend2` 替换为 `var sum = parseInt(addend1) + parseInt(addend2)`。
 
-1. 按`Ctrl`+`S` (Windows、Linux) 或`Command`+`S` (macOS) 保存更改。
+1. 按 `Ctrl`+`S` (Windows、Linux) 或 `Command`+`S` (macOS) 保存更改。
 
 1. 单击 **“停用断点** (![停用断点。](../media/deactivate-breakpoints-button-icon.msft.png)) 。  它将更改蓝色，以指示选项处于活动状态。  设置“**停用断点**”时，开发工具会忽略你设置的任何断点。
 
@@ -254,5 +254,5 @@ Bug 的一个常见原因是脚本以错误的顺序运行。  单步执行代�
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/javascript/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

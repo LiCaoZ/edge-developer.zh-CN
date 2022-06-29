@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/24/2021
-ms.openlocfilehash: e69a28f54c8b1e35113ca469bd640176180ab2d0
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: e15a094d45d9bf804a73a9b2299053d5656cec39
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610826"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631520"
 ---
 <!-- Copyright Sam Dutton
 
@@ -149,7 +149,7 @@ ms.locfileid: "12610826"
 默认情况下，仅显示错误和警告。 显示其他严重性级别的问题：
 
 * 单击 **默认级别**。
-* 选择任意数量的严重性级别：**使用技巧**、**信息**、**警告**、**错误**。
+* 选择任意数量的严重性级别： **提示**、 **信息**、 **警告**、 **错误**。
 * 选择 **“默认** 值”以还原为仅警告和错误。
 
 ![展开严重性下拉列表的“问题”面板，显示可选择的不同级别。](media/severity-filter.png)
@@ -163,8 +163,8 @@ ms.locfileid: "12610826"
 * Firefox
 * Safari
 * Safari iOS
-* Chrome for Android
-* firefox for Android
+* 适用于 Android 的 Chrome
+* 适用于 Android 的 Firefox
 
 若要更改测试兼容性问题的浏览器列表，请执行以下操作：
 
@@ -192,5 +192,5 @@ ms.locfileid: "12610826"
 > [!NOTE]
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面 [在此](https://developer.chrome.com/docs/devtools/issues/) 处找到，由 [Sam Dutton](https://developers.google.com/web/resources/contributors#sam-dutton) (开发大使) 创作。
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

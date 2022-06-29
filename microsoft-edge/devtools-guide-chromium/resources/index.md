@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: a013c8952b700c9e38bcdd3c3da82037dfcec48a
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 85751b619493a0f3174d416deb41430cc238c252
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610196"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631354"
 ---
 <!-- Copyright Kayce Basques
 
@@ -36,7 +36,7 @@ ms.locfileid: "12610196"
 
 可以从多个工具或面板中查看构成网页的资源。
 
-本指南假定你熟悉 [Web 开发](https://developer.mozilla.org/docs/Learn)的基础知识，并[Microsoft Edge DevTools](../../devtools-guide-chromium/overview.md)。
+本指南假定你熟悉 [Web 开发](https://developer.mozilla.org/docs/Learn) 和 [Microsoft Edge DevTools](../../devtools-guide-chromium/overview.md) 的基础知识。
 
 
 <!-- ====================================================================== -->
@@ -44,7 +44,7 @@ ms.locfileid: "12610196"
 
 当知道要检查的资源的名称时， **命令菜单** 提供了快速打开资源的方法。
 
-1. 按`Ctrl`+`P` (Windows、Linux) 或`Command`+`P` (macOS) 。  打开“ **打开文件”** 对话框。
+1. 按 `Ctrl`+`P` (Windows、Linux) 或 `Command`+`P` (macOS) 。  打开“ **打开文件”** 对话框。
 
    ![“打开文件”对话框。](../media/resources-command-menu-empty.msft.png)
 
@@ -166,5 +166,5 @@ ms.locfileid: "12610196"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/resources/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

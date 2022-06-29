@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: dc7bcaf63cc2dae1712d8214d7c76f51606294bd
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 3e74589c7db1a6d1c353c27845d951a8372d17f8
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610385"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631495"
 ---
 <!-- Copyright Kayce Basques
 
@@ -74,7 +74,7 @@ document.body.appendChild(p);
 
 1. 在 DevTools 中选择任何内容，以便 DevTools 具有焦点。
 
-1. 按`Ctrl`++`Shift``P` (Windows、Linux) 或`P``Command`+`Shift`+ (macOS) 打开命令菜单。
+1. 按 `Ctrl`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 打开命令菜单。
 
 1. 键入 `Snippets`，选择 **“显示代码段**”，然后按 `Enter` 下以运行命令：
 
@@ -98,9 +98,9 @@ document.body.appendChild(p);
 
 1. 将光标停在 DevTools 中的任一位置。
 
-1. 按`Ctrl`++`Shift``P` (Windows、Linux) 或`P``Command`+`Shift`+ (macOS) 打开命令菜单。
+1. 按 `Ctrl`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 打开命令菜单。
 
-1. "开始"菜单键入`snippet`，选择 **“新建代码片段**”，然后按`Enter`下：
+1. 开始键入 `snippet`，选择 **“新建代码片段**”，然后按 `Enter`下：
 
    ![用于创建新代码片段的命令。](../media/javascript-search-create-new-snippet.msft.png)
 
@@ -118,7 +118,7 @@ document.body.appendChild(p);
 
 1. 使用**代码编辑器**将 JavaScript 添加到代码片段。
 
-1. 当代码片段名称旁边出现星号时，表示有代码未保存。  按`Ctrl`+`S` (Windows、Linux) 或`Command`+`S` (macOS) 保存：
+1. 当代码片段名称旁边出现星号时，表示有代码未保存。  按 `Ctrl`+`S` (Windows、Linux) 或 `Command`+`S` (macOS) 保存：
 
    ![代码段名称旁边的星号指示未保存的代码。](../media/javascript-sources-snippets-editor-unsaved.msft.png)
 
@@ -138,7 +138,7 @@ document.body.appendChild(p);
 
 1. 将光标停在 DevTools 中的任一位置。
 
-1. 按`Ctrl`++`Shift``P` (Windows、Linux) 或`P``Command`+`Shift`+ (macOS) 打开命令菜单。
+1. 按 `Ctrl`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 打开命令菜单。
 
 1. 删除 `>` 该字符并键入 `!` 字符，然后键入要运行的代码段的名称：
 
@@ -180,5 +180,5 @@ document.body.appendChild(p);
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/javascript/snippets/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

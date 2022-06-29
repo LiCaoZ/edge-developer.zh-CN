@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 778406f09e09e88a044cfffcc4e664ea67dee221
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 0cd3847893ecb86257af1a095f27a76ff78babc5
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610413"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630464"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,15 +28,15 @@ ms.locfileid: "12610413"
    limitations under the License.  -->
 # <a name="customize-devtools"></a>自定义 DevTools
 
-此页列出了自定义 Microsoft Edge DevTools 的方法。
+本页列出了自定义 Microsoft Edge DevTools 的方法。
 
 
 <!-- ====================================================================== -->
 ## <a name="settings"></a>“设置”
 
-**** > 设置**Preferences** 包含许多用于自定义 DevTools 的选项。
+**设置** > **首选项** 包含许多用于自定义 DevTools 的选项。
 
-若要打开设置，请在 DevTools 中单击设置图标** (**![设置图标。](../media/settings-icon-dark.msft.png)) 。  或者，虽然 DevTools 具有焦点，但按下 `F1`。
+若要打开“设置”，请在 DevTools 中单击 **“设置”** 图标 (![“设置”图标。](../media/settings-icon-dark.msft.png)) 。  或者，虽然 DevTools 具有焦点，但按下 `F1`。
 
 ![“设置”。](../media/customize-settings-preferences.msft.png)
 
@@ -108,7 +108,7 @@ ms.locfileid: "12610413"
 <!-- ====================================================================== -->
 ## <a name="restore-default-settings"></a>还原默认设置
 
-若要还原默认主题、放置、工具顺序和任何其他自定义设置，请选择 **“设置** > **提供** > **还原默认值和刷新**”。
+若要还原默认主题、位置、工具顺序和任何其他自定义设置，请选择 **“设置** > **首选项** > **还原默认值”和“刷新**”。
 
 ![还原默认设置。](../media/restore-default-settings.png)
 
@@ -124,5 +124,5 @@ ms.locfileid: "12610413"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/customize/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

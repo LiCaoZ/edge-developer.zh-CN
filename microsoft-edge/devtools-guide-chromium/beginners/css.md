@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/26/2021
-ms.openlocfilehash: f5b223d8943ccd606c7f4f46465cbc6901b72eff
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.openlocfilehash: 2f31b1169d571c6787d59ea52dcd14475fd363fa
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12553523"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630998"
 ---
 <!-- Copyright Katherine Jackson
 
@@ -30,9 +30,9 @@ ms.locfileid: "12553523"
 
 本教程介绍如何使用 CSS 设置网页样式。  此外，还了解如何使用 Microsoft Edge DevTools 试验 CSS 更改。
 
-本文是一系列教程的一部分，这些教程介绍 Web 开发和开发工具Microsoft Edge的基础知识。  通过实际构建自己的网站，可以获得实践体验。  完成本教程之前，无需完成前面的教程。
+本文是一系列教程的一部分，教你 Web 开发和 Microsoft Edge DevTools 的基础知识。  通过实际构建自己的网站，可以获得实践体验。  完成本教程之前，无需完成前面的教程。
 
-本教程专为绝对初学者设计，专注于 Web 开发 **的** 基础知识和使用 DevTools 进行 CSS 测试的基础知识。  如果想要仅关注 DevTools 的教程，请参阅[开始查看和更改 CSS](../css/index.md)。
+本教程专为绝对初学者设计，专注于 Web 开发 **的** 基础知识和使用 DevTools 进行 CSS 测试的基础知识。  如果想要仅关注 DevTools 的教程，请参阅 [开始查看和更改 CSS](../css/index.md)。
 
 在教程的开头，网站应如下图所示：
 
@@ -60,7 +60,7 @@ ms.locfileid: "12553523"
 
 在执行本教程之前：
 
-*  使用 [HTML 和 DOM](html.md) 演练教程开始，或确保你已了解 HTML 和 DOM。
+*  演练 [HTML 和 DOM](html.md) 入门教程，或确保你已了解 HTML 和 DOM。
 *  下载 [Microsoft Edge](https://www.microsoftedgeinsider.com) Web 浏览器。  以下教程使用一组内置于 Microsoft Edge 中的 Web 开发工具（称为 Microsoft Edge DevTools）。
 
 
@@ -70,7 +70,7 @@ ms.locfileid: "12553523"
 若要创建站点，请先执行以下步骤来设置代码。
 
 > [!NOTE]
-> 如果已完成系列的第一个教程，请跳到下一部分。  继续使用上一教程中的代码，[开始 HTML 和 DOM](html.md)。
+> 如果已完成系列的第一个教程，请跳到下一部分。  继续使用上一教程中的代码 [，HTML 和 DOM](html.md) 入门。
 
 1. 打开[源代码](https://glitch.com/edit/#!/cooked-amphibian?path=index.html)。  当前选择的浏览器选项 **卡称为“编辑”选项卡**。
 
@@ -102,7 +102,7 @@ ms.locfileid: "12553523"
 </p>
 ```
 
-HTML 属性 `style="border: 1px dashed red; padding: 5px;"` 可能看起来很新。  其余部分看起来应该很熟悉。  如果没有，请先使用 [HTML 和 DOM 完成开始](html.md)，然后再尝试以下部分。
+HTML 属性 `style="border: 1px dashed red; padding: 5px;"` 可能看起来很新。  其余部分看起来应该很熟悉。  如果没有，请在尝试以下部分之前完成 [HTML 和 DOM 入](html.md) 门。
 
 
 <!-- ====================================================================== -->
@@ -241,7 +241,7 @@ li a {
 <!-- ====================================================================== -->
 ## <a name="experiment-with-devtools"></a>使用 DevTools 进行试验
 
-当你继续成为 Web 开发方面的专家时，你可能会发现 CSS 很复杂。  可以编写一些不显示所需内容的代码。  Microsoft Edge DevTools 可通过实时在页面中显示更改来轻松进行试验。
+当你继续成为 Web 开发方面的专家时，你可能会发现 CSS 很复杂。  可以编写一些不显示所需内容的代码。  Microsoft Edge DevTools 通过在页面中实时显示更改，便于进行试验。
 
 ### <a name="add-a-declaration-to-an-existing-ruleset-in-devtools"></a>将声明添加到 DevTools 中的现有规则集
 
@@ -251,7 +251,7 @@ li a {
 
    ![检查“主页”链接。](../media/beginners-css-add1.msft.png)
 
-   DevTools 将在页面旁边打开。  代表"主页"链接的代码在 DOM 树中突出显示 `<a href="/">Home</a>` 为蓝色。  本教程[开始 HTML 和 DOM](html.md) 时，应熟悉代码片段和预览。
+   DevTools 将在页面旁边打开。  代表"主页"链接的代码在 DOM 树中突出显示 `<a href="/">Home</a>` 为蓝色。  从 [HTML 和 DOM](html.md) 入门教程中，代码片段和预览应该很熟悉。
 
    在下图中 `font-family: 'Courier New', Courier, serif` ，之前添加到 `contact.html` 的声明显示在 DOM 树下方 **的“样式”** 选项卡中：
 
@@ -507,7 +507,7 @@ li a {
 
 *  若要了解有关设置网页样式的详细信息，请参阅 [CSS 简介](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS)。
 
-*  若要详细了解如何在 DevTools 中试验 CSS，请[参阅开始查看和更改 CSS](../css/index.md)。
+*  若要详细了解如何在 DevTools 中试验 CSS， [请参阅开始查看和更改 CSS](../css/index.md)。
 
 
 <!-- ====================================================================== -->
@@ -515,5 +515,5 @@ li a {
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面是由[凯瑟琳杰克逊](https://developers.google.com/web/resources/contributors#katherine-jackson) (技术作家实习生，Chrome DevTools) 找到`https://developers.google.com/web/tools/chrome-devtools/beginners/css`和创作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

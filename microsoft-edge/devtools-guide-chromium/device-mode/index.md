@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
-ms.openlocfilehash: 25ed6536a8b2416b5e12b3042ea60e576a973e95
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 992db9f46e7a29f431173ab7840f923d54da630b
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610588"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630600"
 ---
 <!-- Copyright Kayce Basques
 
@@ -126,9 +126,9 @@ DevTools 提供以下移动设备仿真功能：
 
 如果未显示特定设备的设备帧，则表示 DevTools 没有该设备的艺术。
 
-iPhone 6 的设备帧：
+iPhone 6 的设备框架：
 
-![iPhone 6 的设备帧。](../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png)
+![iPhone 6 的设备框架。](../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png)
 
 #### <a name="add-a-custom-mobile-device"></a>添加自定义移动设备
 
@@ -185,7 +185,7 @@ iPhone 6 的设备帧：
 
 仅限 CPU 而不限制网络：
 
-1. 选择 **“性能”** 面板，然后选择“**捕获设置 (**![捕获设置。](../media/capture-settings-icon.msft.png)) 。
+1. 选择 **“性能** ”面板，然后选择“ **捕获设置** (![捕获设置。](../media/capture-settings-icon.msft.png)) 。
 
 1. 选择 **CPU** > **4 倍减速** 或 **6 倍减速**。
 
@@ -200,13 +200,13 @@ iPhone 6 的设备帧：
 
    ![网络面板中的“限制”列表。](../media/device-mode-network-throttle.msft.png)
 
-    或者，按`Ctrl``P`+`Shift`+ (Windows、Linux) 或+`Shift``Command`+`P` (macOS) 打开**命令菜单**，开始键`3g`入，然后选择 **“启用快速 3G 限制**”或 **“启用慢速 3G 限制**”。
+    或者，按 `Ctrl`+`Shift``P`+ (Windows、Linux) 或 `Command``P`++`Shift` (macOS) 打开**命令菜单**，开始键入`3g`，然后选择 **“启用快速 3G 限制**”或 **“启用慢速 3G 限制**”。
 
    ![从命令菜单中选择“启用快速或慢速 3G 限制”。](../media/device-mode-command-menu-throttle.msft.png)
 
 还可以从 **“性能** ”面板设置网络限制：
 
-1. 选择 **“捕获设置** (![捕获设置。](../media/capture-settings-icon.msft.png)) 并选择 **”网络**“列表，并将预设更改为 **”快速 3G**“或 **”慢速 3G**”。
+1. 选择 **捕获设置** (![捕获设置。](../media/capture-settings-icon.msft.png)) 并选择 **“网络** ”列表，并将预设更改为 **“快速 3G** ”或 **“慢速 3G**”。
 
    ![设置性能面板中的网络限制。](../media/device-mode-performance-network-throttle.msft.png)
 
@@ -220,7 +220,7 @@ iPhone 6 的设备帧：
 
    ![用于地理位置的传感器。](../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png)
 
-    或者，通过选择`Ctrl`++`Shift``P` (Windows、Linux) 或`P``Command`+`Shift`+ (macOS) 打开命令菜单。  键入 `Sensors` 并选择 **“显示传感器**”。
+    或者，通过选择 `Ctrl`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 打开命令菜单。  键入 `Sensors` 并选择 **“显示传感器**”。
 
    ![从命令菜单显示用于地理位置的传感器。](../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png)
 
@@ -238,7 +238,7 @@ iPhone 6 的设备帧：
 
    ![“更多工具”菜单上的“传感器”命令。](../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png)
 
-   或者，通过选择`Ctrl`++`Shift``P` (Windows、Linux) 或`P``Command`+`Shift`+ (macOS) 打开命令菜单。  键 `Sensors`入，然后选择 **“显示传感器**”。
+   或者，通过选择 `Ctrl`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 打开命令菜单。  键 `Sensors`入，然后选择 **“显示传感器**”。
 
    ![显示传感器以获取方向。](../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png)
 
@@ -258,7 +258,7 @@ iPhone 6 的设备帧：
 
    ![“更多工具”菜单中的“网络条件”条目。](../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png)
 
-   或者，通过选择`Ctrl`++`Shift``P` (Windows、Linux) 或`P``Command`+`Shift`+ (macOS) 打开命令菜单。键入`Network conditions`并选择 **“显示网络条件**”。
+   或者，通过选择 `Ctrl`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 打开命令菜单。键入`Network conditions`并选择 **“显示网络条件**”。
 
    ![显示网络条件。](../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png)
 
@@ -268,7 +268,7 @@ iPhone 6 的设备帧：
 
 1. 若要输入你自己的用户代理字符串，请在“**输入自定义用户代理**”中输入字符串。
 
-   ![将用户代理字符串设置为在macOS上Microsoft Edge。](../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png)
+   ![在 macOS 上将用户代理字符串设置为 Microsoft Edge。](../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png)
 
 
 ### <a name="see-also"></a>另请参阅
@@ -283,7 +283,7 @@ iPhone 6 的设备帧：
 
 1. 在网页中右键单击，然后选择 **“检查**”。
 
-1. 选择**设置** > **Devices**。
+1. 选择 **“设置** > **设备**”。
 
 1. 在“模拟设备”面板中，选择 **“添加自定义设备** ”并展开 **用户代理客户端提示**。
 
@@ -312,5 +312,5 @@ iPhone 6 的设备帧：
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/device-mode/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

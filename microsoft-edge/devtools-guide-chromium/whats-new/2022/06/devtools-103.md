@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/23/2022
-ms.openlocfilehash: 78f9d3836fc26505d6a33e791ccdb8fe33edbba9
-ms.sourcegitcommit: 05753adf2734d9bd118d2b224883eeb26028000c
+ms.openlocfilehash: 2d1b7d1f79b63591dec17c238cdfb77a844a0936
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630057"
+ms.locfileid: "12631606"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-103"></a>DevTools (Microsoft Edge 103) 中的新增功能
 
@@ -148,5 +148,5 @@ Microsoft Edge 103 还包括来自Chromium项目的以下更新：
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
 
-<!-- [![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+<!-- [![Creative Commons License.](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->

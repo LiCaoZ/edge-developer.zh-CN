@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/13/2021
-ms.openlocfilehash: de580d3b7ff0816bc8140571f992f2de065507f8
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.openlocfilehash: 9820fa3cfa35241790909f4d7451eee4f6565feb
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522488"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631322"
 ---
 <!-- Copyright Kayce Basques
 
@@ -44,7 +44,7 @@ DevTools 团队为Chromium提供了 170 项更改，以解决 DevTools 中影响
 
 ![DevTools 中的性能工具，具有键盘导航和屏幕阅读器改进功能。](../../media/2019/12/a11y-performance-tool.msft.png)
 
-想要了解如何使您的网页可供所有用户访问？  下载[辅助功能Insights](https://aka.ms/a11yinsights)和 [webhint](https://aka.ms/webhint/browser-extension) 扩展，以便Microsoft Edge入门。
+想要了解如何使您的网页可供所有用户访问？  下载 Microsoft Edge 的 [Accessibility Insights](https://aka.ms/a11yinsights) 和 [Webhint](https://aka.ms/webhint/browser-extension) 扩展以开始使用。
 
 如果使用屏幕阅读器或键盘在 DevTools 中导航，请通过 [向我们发微博](https://aka.ms/tweet/edgedevtools) 或选择 [“发送反馈](../../../contact.md) ”图标来发送反馈！
 
@@ -83,7 +83,7 @@ Chromium 问题 [#963183](https://crbug.com/963183)
 | Russian – русский | Spanish - español |
 -->
 
-转到`edge://flags`**“启用本地化开发人员工具**”标志并将其设置为 **“已启用**”。  还将 **开发人员工具试验** 标志设置为 **“已启用**”。  重启Microsoft Edge并打开 DevTools。  <!-- Select `F1` in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  DevTools 与用于Microsoft Edge的`edge://settings/languages`语言匹配。
+转到`edge://flags`**“启用本地化开发人员工具**”标志并将其设置为 **“已启用**”。  还将 **开发人员工具试验** 标志设置为 **“已启用**”。  重启 Microsoft Edge 并打开 DevTools。  <!-- Select `F1` in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  DevTools 与用于 Microsoft Edge 的 `edge://settings/languages`语言匹配。
 
 ![德语中的 DevTools。](../../images/2019/12/localized-devtools.msft.png)
 
@@ -96,15 +96,15 @@ Chromium问题 [#941561](https://crbug.com/941561)
 
 
 <!-- ====================================================================== -->
-### <a name="webhint-microsoft-edge-extension"></a>webhint Microsoft Edge扩展
+### <a name="webhint-microsoft-edge-extension"></a>webhint Microsoft Edge 扩展
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
-通过 webhint Microsoft Edge 扩展，可以轻松扫描网页，并在 DevTools 中获取有关辅助功能、浏览器兼容性、安全性、性能等的反馈。  阅读有关内容的详细信息 [https://webhint.io](https://aka.ms/webhint)。
+通过 Webhint Microsoft Edge 扩展，可以轻松扫描网页，并在 DevTools 中获取有关辅助功能、浏览器兼容性、安全性、性能等的反馈。  阅读有关内容的详细信息 [https://webhint.io](https://aka.ms/webhint)。
 
 ![安装 Webhint 浏览器扩展时，DevTools 中的提示工具。](../../images/2019/12/webhint-browser-extension.msft.png)
 
-[在Microsoft Edge中尝试 webhint 浏览器扩展](https://aka.ms/webhint/edge-extension)。  安装扩展后，打开 DevTools，然后选择 **“提示”** 工具。  在此处，运行可自定义的站点扫描。  转到 [webhint.io](https://aka.ms/webhint/browser-extension) 了解详细信息。
+[在 Microsoft Edge 中尝试 Webhint 浏览器扩展](https://aka.ms/webhint/edge-extension)。  安装扩展后，打开 DevTools，然后选择 **“提示”** 工具。  在此处，运行可自定义的站点扫描。  转到 [webhint.io](https://aka.ms/webhint/browser-extension) 了解详细信息。
 
 另请参阅：
 * [Visual Studio Code的 webhint 扩展](../../../../test-and-automation/webhint.md)
@@ -119,7 +119,7 @@ Chromium问题 [#941561](https://crbug.com/941561)
 
 ![DevTools 中的 3D 视图。](../../images/2019/12/3dview.msft.png)
 
-若要访问 3D 视图，请转到 `edge://flags` 并确保开发 **人员工具试验** 标志设置为 **“已启用**”。  重启Microsoft Edge并打开 DevTools。  在 DevTools 中选择`F1`或打开 **“设置** > **体验”** 部分，然后打开 **“启用 3D 视图**”复选框。  现在，按 `Ctrl` + `Shift` + `P`**3D 视图**键入，然后选择 **“显示 3D 视图**”。
+若要访问 3D 视图，请转到 `edge://flags` 并确保开发 **人员工具试验** 标志设置为 **“已启用**”。  重启 Microsoft Edge 并打开 DevTools。  在 DevTools 中选择`F1`或打开 **“设置试验”** > 部分，然后打开 **“启用 3D 视图**”复选框。****  现在，按 `Ctrl` + `Shift` + `P`**3D 视图**键入，然后选择 **“显示 3D 视图**”。
 
 我们正在处理 UI 并将更多功能添加到 3D 视图，因此请向我们发送 [反馈](../../../contact.md)。
 
@@ -134,28 +134,28 @@ Chromium问题 [#987787](https://crbug.com/987787)
 
 DevTools 团队还发布了一些[用于Visual Studio Code](https://aka.ms/vscode)扩展，可让你直接从文本编辑器使用 DevTools 的功能。 请查看以下扩展。
 
-#### <a name="elements-for-microsoft-edge"></a>用于Microsoft Edge的元素
+#### <a name="elements-for-microsoft-edge"></a>Microsoft Edge 的元素
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
-通过添加Microsoft Edge Visual Studio Code扩展的元素，从Visual Studio Code中使用 [Elements ](https://aka.ms/elements4code) 工具。
+通过添加 [Microsoft Edge 的 Elements ](https://aka.ms/elements4code) Visual Studio Code 扩展，从Visual Studio Code中使用 Elements 工具。
 
-![Visual Studio Code中使用元素进行扩展Microsoft Edge元素的元素工具。](../../images/2019/12/elements-for-edge.msft.png)
+![使用 Microsoft Edge 元素扩展Visual Studio Code中的 Elements 工具。](../../images/2019/12/elements-for-edge.msft.png)
 
-更新：从 2022 年起，**Microsoft Edge扩展的 Elements** 现在是 **Visual Studio Code 的 Microsoft Edge DevTools 扩展**。
+更新：从 2022 年起，**Microsoft Edge 的 Elements** 扩展现在是**适用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展**。
 
-有关详细信息，请查看[Visual Studio Code Microsoft Edge DevTools 扩展](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)。
+有关详细信息，请查看[适用于Visual Studio Code的 Microsoft Edge DevTools 扩展](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)。
 
 
-#### <a name="debugger-for-microsoft-edge"></a>Microsoft Edge调试器
+#### <a name="debugger-for-microsoft-edge"></a>Microsoft Edge 的调试器
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
-使用[Microsoft Edge Visual Studio Code扩展的调试器](https://aka.ms/debugger4code)，直接从Visual Studio Code调试Microsoft Edge中运行的 JavaScript。
+使用 [Microsoft Edge 的调试器](https://aka.ms/debugger4code)Visual Studio Code扩展，直接从Visual Studio Code调试在 Microsoft Edge 中运行的 JavaScript。
 
-![Visual Studio Code中Microsoft Edge扩展的调试器。](../../images/2019/12/vscode-debugger.msft.png)
+![Visual Studio Code中的 Microsoft Edge 扩展调试器。](../../images/2019/12/vscode-debugger.msft.png)
 
-更新：从 2022 年起，**Microsoft Edge Visual Studio Code扩展的调试器**已被内置调试器替换为Visual Studio Code中Microsoft Edge的内置调试器。  请参阅[Visual Studio Code中的调试Microsoft Edge](../../../../visual-studio-code/debugger-for-edge.md)。
+更新：截至 2022 年，**Microsoft Edge 的调试器Visual Studio Code扩展**已替换为 Visual Studio Code 中 Microsoft Edge 的内置调试器。  请参阅[Visual Studio Code中的“调试 Microsoft Edge](../../../../visual-studio-code/debugger-for-edge.md)”。
 
 
 #### <a name="webhint"></a>webhint
@@ -174,17 +174,17 @@ DevTools 团队还发布了一些[用于Visual Studio Code](https://aka.ms/vscod
 
 
 <!-- ====================================================================== -->
-### <a name="visual-studio-integration"></a>Visual Studio集成
+### <a name="visual-studio-integration"></a>Visual Studio 集成
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
 在 Visual Studio 2019 版本 16.2 或更高版本中，使用 Visual Studio 调试器调试在 Microsoft Edge 中运行的 JavaScript。  [下载 Visual Studio 2019](https://aka.ms/vs/download) 以试用此功能。
 
-![Visual Studio，可以选择在Microsoft Edge Canary、Dev 或 Beta 中启动 Web 应用。](../../images/2019/12/vs.msft.png)
+![Visual Studio 可以选择在 Microsoft Edge Canary、Dev 或 Beta 中启动 Web 应用。](../../images/2019/12/vs.msft.png)
 
-[阅读我们的博客帖子，了解如何从Visual Studio调试Microsoft Edge](https://aka.ms/vs/debug-edge)。
+[阅读我们的博客文章，了解如何从 Visual Studio 调试 Microsoft Edge](https://aka.ms/vs/debug-edge)。
 
-若要详细了解如何从Visual Studio调试Microsoft Edge，请[参阅 web 开发Visual Studio](../../../../visual-studio/index.md)。
+若要详细了解如何从 Visual Studio 调试 Microsoft Edge，请参阅 [Visual Studio 进行 Web 开发](../../../../visual-studio/index.md)。
 
 
 
@@ -193,7 +193,7 @@ DevTools 团队还发布了一些[用于Visual Studio Code](https://aka.ms/vscod
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
-跟踪防护是Microsoft Edge中的一项独特功能，它阻止你在访问网站之前被网站跟踪。  默认跟踪防护设置是均衡模式，它阻止第三方跟踪器和已知的恶意跟踪器，以获得平衡隐私和 Web 兼容性的体验。  为了更深入地了解某些跟踪器被阻止时网页的兼容性，Microsoft Edge团队在阻止跟踪器时在**控制台**中添加了警告消息。
+跟踪防护是 Microsoft Edge 中的一项独特功能，它阻止你在访问网站之前被网站跟踪。  默认跟踪防护设置是均衡模式，它阻止第三方跟踪器和已知的恶意跟踪器，以获得平衡隐私和 Web 兼容性的体验。  为了更深入地了解某些跟踪器被阻止时网页的兼容性，Microsoft Edge 团队在阻止跟踪器时在 **控制台** 中添加了警告消息。
 
 ![跟踪防护时控制台中的消息阻止了对跟踪器存储的访问。](../../images/2019/12/tracking-prevention.msft.png)
 
@@ -207,7 +207,7 @@ DevTools 团队还发布了一些[用于Visual Studio Code](https://aka.ms/vscod
 <!-- ====================================================================== -->
 ## <a name="announcements-from-the-chromium-project"></a>来自 Chromium 项目的公告
 
-以下部分将公布Microsoft Edge 80 中为开放源代码 Chromium项目提供的其他功能。
+以下部分将公布 Microsoft Edge 80 中为开放源代码 Chromium项目提供的其他功能。
 
 
 <!-- ====================================================================== -->
@@ -247,7 +247,7 @@ DevTools 已开始支持 DWARF 调试标准版，这意味着对在 DevTools 中
 -->
 
 另请参阅：
-* _在 DevTools _的“新增功能”中[筛选网络工具中的 Wasm 资源类型](../../../whats-new/2021/05/devtools.md#filter-wasm-resource-type-in-the-network-tool) (Microsoft Edge 92) 。
+* 在 _DevTools (Microsoft Edge 92) 中的_[“网络”工具中筛选 Wasm 资源类型](../../../whats-new/2021/05/devtools.md#filter-wasm-resource-type-in-the-network-tool)。
 * [WebAssembly 调试：在](../../../experimental-features/index.md#webassembly-debugging-enable-dwarf-support)_实验功能_中启用 DWARF 支持。
 
 
@@ -360,5 +360,5 @@ Chromium问题 [#1004203](https://crbug.com/1004203)
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/blog/new-in-devtools-80)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

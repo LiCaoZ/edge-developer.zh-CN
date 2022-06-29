@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: ee5a383ae75e65fc890401367217e7bf08953553
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: c838e23329e5cdfa1194e007c23dfbbbe65d2ebf
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610770"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12630879"
 ---
 <!-- Copyright Kayce Basques
 
@@ -34,7 +34,7 @@ ms.locfileid: "12610770"
 <!-- ====================================================================== -->
 ## <a name="view-the-css-for-an-element"></a>查看元素的 CSS
 
-1. 在新窗口或选项卡中打开 [CSS 示例](https://microsoftedge.github.io/Demos/devtools-css-get-started/)演示页。 为此，请右键单击链接，或按住`Control` (Windows、Linux) 或`Command` (macOS) ，然后单击链接。
+1. 在新窗口或选项卡中打开 [CSS 示例](https://microsoftedge.github.io/Demos/devtools-css-get-started/) 演示页。 为此，请右键单击链接，或按住 `Control` (Windows、Linux) 或 `Command` (macOS) ，然后单击该链接。
 
    <!-- You can view the source files for the CSS Examples demo page at the [MicrosoftEdge/Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) repo folder. -->
 
@@ -164,7 +164,7 @@ ms.locfileid: "12610770"
 
 1. 打开 DevTools。  为此，可以在网页中右键单击，然后选择 **“检查**”。
 
-1. 单击“ **设备仿真** ”图标 (![切换设备仿真。](../media/device-emulation-icon-light-theme.png)) 按钮。  或者，当 DevTools 具有焦点时，请按`Ctrl`++`Shift``M` (`M` `Cmd`+`Shift`+macOS) 。
+1. 单击“ **设备仿真** ”图标 (![切换设备仿真。](../media/device-emulation-icon-light-theme.png)) 按钮。  或者，当 DevTools 具有焦点时，请在 macOS) 上按`Ctrl`+`Shift``M`+ (。`Cmd`+`Shift`+`M`
 
    <!-- todo: update to show new tooltip: -->
 
@@ -190,5 +190,5 @@ ms.locfileid: "12610770"
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于[此处](https://developer.chrome.com/docs/devtools/css/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/20/2021
-ms.openlocfilehash: ffbfa39002f878749aa3bb1bbeac733ebaa1749e
-ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
+ms.openlocfilehash: 40e37908121853dc58b6eb5eeb4bc7a9b08d0fcb
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "12550575"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631189"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-95"></a>DevTools (Microsoft Edge 95)中的新增功能
 
@@ -67,7 +67,7 @@ ms.locfileid: "12550575"
 
 要了解有关用户代理客户端提示的详细信息，请参阅[从网站检测 Microsoft Edge](../../../../web-platform/user-agent-guidance.md#user-agent-client-hints)。
 
-![设置 >设备>设置User-Agent客户端提示。](../../media/2021/10/keyboard-define-ua-client-hints.png)
+![设置>设备>设置User-Agent客户端提示。](../../media/2021/10/keyboard-define-ua-client-hints.png)
 
 要在 Chromium 开放源代码项目中查看此功能的历史记录，请参阅[问题 1243827：用户代理客户端提示窗体辅助功能](https://bugs.chromium.org/p/chromium/issues/detail?id=1243827)。
 
@@ -156,7 +156,7 @@ link.search = `?access=${link.access}`;
 
 <!-- Chromium What's New entry: [Improved UI for DevTools command menu](https://developer.chrome.com/blog/new-in-devtools-95/#command-menu) at _What's New in DevTools (Chrome 95)_. -->
 
-已增强**命令菜单**，以便更轻松地搜索文件。  按Windows和 Linux 或`Command+P`macOS时，**命令菜单**现在会以粗体显示文件名，以及指示文件类型的图标：`Ctrl`+`P`
+已增强**命令菜单**，以便更轻松地搜索文件。  在 Windows 和 Linux 或 `Command+P` macOS 中按下`P``Ctrl`+时，**命令菜单**现在以粗体显示文件名，以及指示文件类型的图标：
 
 ![命令菜单以粗体显示文件名，并显示指示文件类型的图标。](../../media/2021/10/command-menu-filenames-bold-icons.png)
 
@@ -170,5 +170,5 @@ link.search = `?access=${link.access}`;
 > [!NOTE]
 > 本页中“Chromium 项目公告”部分是基于 Google 根据[网站策略](https://developers.google.com/terms/site-policies)创建和共享的工作进行的修改，其使用应符合[知识共享署名 4.0 国际许可协议](https://creativecommons.org/licenses/by/4.0)中所述的条款。  Chromium 项目公告的原始页面为“[DevTools 中的最近更新 (Chrome 95)](https://developer.chrome.com/blog/new-in-devtools-95)”，作者为 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen)（Google 负责 Chrome DevTools 工作的开发人员大使）。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。

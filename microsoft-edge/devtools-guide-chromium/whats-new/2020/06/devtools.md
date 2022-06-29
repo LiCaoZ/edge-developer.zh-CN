@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 5bf45368098e89a281e995da823a708e8396d027
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: a7efa967bf0385bdf24711cf1418998e3edd61ef
+ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514655"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "12631225"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -42,7 +42,7 @@ Microsoft Edge DevTools 团队正在与 Chrome DevTools 团队和Chromium社区�
 
 ![CSS 网格调试功能。](../../media/2020/06/experiments-grid.msft.png)
 
-更新：此功能已发布，不再具有实验性。<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable new CSS Grid debugging features**. -->
+更新：此功能已发布，不再处于实验性状态。<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable new CSS Grid debugging features**. -->
 
 若要使用示例试用试验，请参阅 [CSS 网格规划器示例](https://codepen.io/hxlnt/full/YzwBzKM)。
 
@@ -67,7 +67,7 @@ Chromium问题 [#1047356](https://crbug.com/1047356)
 
 提示：若要在主 (顶部) 面板（而不是 [DevTools 抽屉](../../../customize/index.md#drawer)）中显示**网络控制台**，请参阅[面板之间的移动工具](#move-tools-between-panels)。
 
-更新：此功能已发布，不再具有实验性。<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Network Console**. -->
+更新：此功能已发布，不再处于实验性状态。<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Network Console**. -->
 
 Chromium问题 [#1093687](https://crbug.com/1093687)
 
@@ -87,7 +87,7 @@ Chromium问题 [#1066579](https://crbug.com/1066579)
 
 另请参阅：
 * 在_网络功能参考_中[显示请求的计时关系](../../../network/reference.md#display-the-timing-relationship-of-requests)。
-* 在_网络功能参考_中[显示请求的计时细目](../../../network/reference.md#display-the-timing-breakdown-of-a-request)。
+* _网络功能参考_中的[显示请求的计时细目](../../../network/reference.md#display-the-timing-breakdown-of-a-request)。
 
 
 <!-- ====================================================================== -->
@@ -115,7 +115,7 @@ Chromium问题 [#1070378](https://crbug.com/1070378)
 
 ![在面板之间移动工具。](../../media/2020/06/experiments-move-panels.msft.png)
 
-更新：此功能已发布，不再具有实验性。<!-- Note: To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable support to move tabs between panels**. -->
+更新：此功能已发布，不再处于实验性状态。<!-- Note: To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable support to move tabs between panels**. -->
 
 Chromium问题 [#897944](https://crbug.com/897944)
 
@@ -126,7 +126,7 @@ Chromium问题 [#897944](https://crbug.com/897944)
 <!-- ====================================================================== -->
 ### <a name="improved-initiator-tooltip-in-the-network-panel"></a>改进了网络面板中的发起程序工具提示
 
-在 Microsoft Edge 83 和 84 中，使用水平滚动条显示的[网络日志](../../../network/index.md#log-network-activity)中“发起程序”列的工具提示（显示资源请求的原因）。  只能通过在工具提示中水平滚动来显示启动请求的调用堆栈。
+在 Microsoft Edge 83 和 84 中，使用水平滚动条显示的 [网络日志](../../../network/index.md#log-network-activity) 中显示“发起程序”列的工具提示（显示资源请求的原因）。  只能通过在工具提示中水平滚动来显示启动请求的调用堆栈。
 
 ![Microsoft Edge 84 中的发起程序工具提示。](../../media/2020/06/initiator-tooltip-84.msft.png)
 
@@ -140,7 +140,7 @@ Chromium问题 [#1069404](https://crbug.com/1069404)
 <!-- ====================================================================== -->
 ## <a name="announcements-from-the-chromium-project"></a>来自 Chromium 项目的公告
 
-以下部分将公布Microsoft Edge 85 中为开放源代码 Chromium项目提供的其他功能。
+以下部分将公布 Microsoft Edge 85 中为开放源代码 Chromium项目提供的其他功能。
 
 
 <!-- ====================================================================== -->
@@ -164,7 +164,7 @@ Chromium问题 [#946975](https://crbug.com/946975)
 
 **灯塔**面板现在运行灯塔 6。  有关所有更改的完整列表，请参阅 [v6.0.0 发行说明](https://github.com/GoogleChrome/lighthouse/releases/tag/v6.0.0)。
 
-Lighthouse 6.0 为报表引入了三个新指标：最大的内容画图 (LCP) 、累积布局转移 (CLS) 和总阻塞时间 (TBT) 。
+Lighthouse 6.0 为报表引入了三个新指标：最大的内容画 (LCP) 、CLS) 的累积布局转移 (和总阻塞时间 (TBT) 。
 
 性能分数公式也已重新加权，以更好地反映用户的加载体验。
 
@@ -174,9 +174,9 @@ Chromium问题 [#772558](https://crbug.com/772558)
 * [Lighthouse 工具](../../../lighthouse/lighthouse-tool.md)
 
 
-#### <a name="first-meaningful-paint-deprecation"></a>第一个有意义的画图弃用
+#### <a name="first-meaningful-paint-deprecation"></a>第一次有意义的油漆弃用
 
-第一个有意义的画图 (FMP) 在 Lighthouse 6.0 中弃用。  FMP 也已从 **“性能”** 面板中删除。  **建议将最大的内容画图**替换为 FMP。  <!--For an explanation of why it was deprecated, see [First Meaningful Paint](https://web.dev/first-meaningful-paint).  -->
+第一个有意义的油漆 (FMP) 在 Lighthouse 6.0 中弃用。  FMP 也已从 **“性能”** 面板中删除。  **建议将最大的内容绘制** 替换为 FMP。  <!--For an explanation of why it was deprecated, see [First Meaningful Paint](https://web.dev/first-meaningful-paint).  -->
 
 <!--todo: add Largest Contentful Paint when section available  -->
 <!--todo: add First Meaningful Paint link and note when available  -->
@@ -265,7 +265,7 @@ Chromium问题 [#800028](https://crbug.com/800028)
 
 #### <a name="ungroup-same-console-messages"></a>取消组合相同的控制台消息
 
-控制台中类似切换的**组**设置现在适用于重复消息。  以前，它只应用于类似的消息。
+控制台设置中的 **组类似** 切换现在适用于重复的消息。  以前，它只应用于类似的消息。
 
 例如，以前，即使未选中“**组相似**”，DevTools 也不会取消对消息进行分组`hello`。  现在， `hello` 消息已取消分组。
 
@@ -282,7 +282,7 @@ Chromium问题 [#1082963](https://crbug.com/1082963)
 <!-- ====================================================================== -->
 ### <a name="persisting-selected-context-only-settings"></a>仅保留所选上下文设置
 
-现在将保留控制台设置中**仅选定的上下文**设置。  以前，每次关闭并重新打开 DevTools 时都会重置设置。  此更改使设置行为与其他控制台设置选项一致。
+现在将保留控制台设置中 **仅选择的上下文** 设置。  以前，每次关闭并重新打开 DevTools 时都会重置设置。  此更改使设置行为与其他控制台设置选项一致。
 
 ![仅选定的上下文设置。](../../media/2020/06/selected-context.msft.png)
 
@@ -314,7 +314,7 @@ Chromium问题 [#912581](https://crbug.com/912581)
 
 ![在性能工具中对齐导航计时。](../../media/2020/06/nav-timing.msft.png)
 
-第一画图、第一个内容画图和最大的内容画图事件的时间`DOMContentLoaded`更新为相对于导航的开始，这意味着计时匹配所`PerformanceObserver`报告的时间。
+第一个油漆，第一个内容画，和最大的内容画事件的时间 `DOMContentLoaded`更新为相对于导航的开始，这意味着计时匹配报告 `PerformanceObserver`的时间。
 
 Chromium问题 [#974550](https://crbug.com/974550)
 
@@ -327,7 +327,7 @@ Chromium问题 [#974550](https://crbug.com/974550)
 
 更新：从 2022 年起，断点现在由蓝色矩形（而不是红色圆圈）指示。
 
-**“源**”面板有针对断点、条件断点和日志点的新设计。  断点由红色圆圈表示，就像[Visual Studio Code](https://code.visualstudio.com/)和[Visual Studio](https://visualstudio.microsoft.com/)一样。  添加图标以区分条件断点和日志点。
+**“源**”面板有针对断点、条件断点和日志点的新设计。  断点由红色圆圈表示，就像[Visual Studio Code](https://code.visualstudio.com/)和 [Visual Studio 一](https://visualstudio.microsoft.com/)样。  添加图标以区分条件断点和日志点。
 
 <!-- todo: update capture -->
 ![断点。](../../media/2020/06/breakpoints.msft.png)
@@ -343,5 +343,5 @@ Chromium 问题 [#1041830](https://crbug.com/1041830)
 > 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
 > 原始页面位于 [此处](https://developer.chrome.com/blog/new-in-devtools-85)，并由 [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen)  \（开发人员支持者，Chrome DevTools\）制作。
 
-[![知识共享许可协议。](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![知识共享许可协议。](../../../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。
