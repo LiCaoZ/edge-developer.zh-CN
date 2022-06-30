@@ -22,11 +22,11 @@ Microsoft 及任何创作人保留所有其他权利（无论是其各自的版�
 <!-- ====================================================================== -->
 ## <a name="contributing"></a>贡献
 
-此存储库`edge-developer`是Microsoft Edge开发人员文档的源 Markdown 文件的存储库。  生成的呈现文档托管在[Microsoft Edge文档](https://docs.microsoft.com/microsoft-edge/developer/)中。  此存储库还包括Microsoft Edge Enterprise文档的中心页面和Microsoft Edge开发人员文档。  Microsoft Edge Enterprise文档的源文件不在此存储库中，而是在 [Edge-Enterprise](https://github.com/MicrosoftDocs/Edge-Enterprise) 存储库中。
+此存储库 `edge-developer`是 Microsoft Edge 开发人员文档的源 Markdown 文件的存储库。  生成的呈现文档托管在 [Microsoft Edge 文档](https://docs.microsoft.com/microsoft-edge/developer/)中。  此存储库还包括 Microsoft Edge Enterprise 文档的中心页面和 Microsoft Edge 开发人员文档。  Microsoft Edge Enterprise 文档的源文件不在此存储库中，而是在 [Edge-Enterprise](https://github.com/MicrosoftDocs/Edge-Enterprise) 存储库中。
 
-如果想要包括新的覆盖范围或提供反馈，请考虑 [参与](CONTRIBUTING.md)。  可以编辑现有内容、添加新内容或报告新 [问题](https://github.com/MicrosoftDocs/edge-developer/issues)。  Microsoft Edge团队会查看建议，并努力将建议合并到文档中。
+如果想要包括新的覆盖范围或提供反馈，请考虑 [参与](CONTRIBUTING.md)。  可以编辑现有内容、添加新内容或报告新 [问题](https://github.com/MicrosoftDocs/edge-developer/issues)。  Microsoft Edge 团队会查看建议，并努力将建议合并到文档中。
 
-有关Microsoft Edge中 Web 平台功能的最新实现状态和未来计划，[请参阅Microsoft Edge平台状态](https://developer.microsoft.com/microsoft-edge/status)。 有关用于填充上述状态站点的数据，请参阅 [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status)。
+有关 Microsoft Edge 中 Web 平台功能的最新实现状态和未来计划，请参阅 [Microsoft Edge 平台状态](https://developer.microsoft.com/microsoft-edge/status)。 有关用于填充上述状态站点的数据，请参阅 [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status)。
 
 
 ### <a name="file-names-and-directories"></a>文件名和目录
@@ -41,134 +41,14 @@ Microsoft 及任何创作人保留所有其他权利（无论是其各自的版�
 <!-- ====================================================================== -->
 ## <a name="markdown-tagging"></a>Markdown 标记
 
-此存储库使用简单的 Markdown 标记，这是根据 _Docs 参与者指南_ docs.microsoft.com 的标准。
-
+* [基本写入和格式化语法](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) - GitHub 文档中的 _GitHub_ Flavored Markdown。
 * [Docs Markdown 参考](https://docs.microsoft.com/contribute/markdown-reference) - 在 _Docs 参与者指南_中。
-* [写在GitHub](https://docs.github.com/en/github/writing-on-github) - GitHub调味马克当，在_GitHub文档_。
-
-
-### <a name="lists"></a>列表
-
-这些其他文本元素具有可用的样式：
-
-*  未排序的列表
-*  有常规项目符号
-   *  还可以嵌套项目符号。
-   *  项目符号列表应有多个条目。
-*  标准排列
-
-1. 已排序列表。
-1. 使用常规的西式编号。
-1. 仅当列表真正具有顺序时才应使用。
-
-请参阅 _Docs 参与者指南_[中的列表 (编号、项目符号、清单) ](https://docs.microsoft.com/contribute/markdown-reference#lists-numbered-bulleted-checklist)。
-
-
-### <a name="links"></a>Links
-
-请参阅文档中的 _“Docs 参与者指南_”中的[“使用”链接](https://docs.microsoft.com/contribute/how-to-write-links)。
-
-
-### <a name="formatting-code-blocks"></a>设置代码块格式
-
-若要在句子中设置内联代码的格式（例如 `functionName`，用反斜线包装代码）。  背尖是一个倾斜的单引号，通常位于键盘左上角。
-
-也可以显示多行代码块。  下面的代码片段是一个 CSS 示例。
-
-```css
-body {
-    background: #fff;
-}
-```
-
-用于语法着色的有效编码语言包括以下内容等。  其他值通常是安全的;未知的“slug”字符串的呈现方式与键入它们的方式相同。
-
-| 塞 | 呈现为 |
-|---|---|
-| Html | HTML |
-| Css | CSS |
-| javascript | JavaScript | 
-| typescript | TypeScript |
-| Json | JSON |
-| Cpp | C++ |
-| 主机 | 控制台 |
-
-例如，键入三个后台键，然后键入“css”slug。
-
-请参阅如何在_文档参与者指南_[中包含文档中的代码](https://docs.microsoft.com/contribute/code-in-docs)。
-
-
-### <a name="tables"></a>表
-
-| 你可以 | 使用列标题 | 在表上 |
-|:-- |:--- |:--- |
-| 左对齐 | 除非 a# | 456 |
-| 文本值 | 更多文本 | $0.00 |
-
-请参阅 _Docs 参与者指南_中的[表](https://docs.microsoft.com/contribute/markdown-reference#tables)。
-
-
-### <a name="notes-alerts"></a>备注 (警报) 
-
-请谨慎使用警报（如备注）。  这些块旨在突出显示“不要错过”信息。
-
-以下版本的警报可用。  将纯文本替换为你自己的内容。
-
-```md
-> [!NOTE]
-> Information the user should notice even if skimming.
-```
-
-```md
-> [!TIP]
-> Optional information to help a user be more successful.
-```
-
-```md
-> [!IMPORTANT]
-> Essential information required for user success.
-```
-
-```md
-> [!CAUTION]
-> Negative potential consequences of an action.
-```
-
-```md
-> [!WARNING]
-> Dangerous certain consequences of an action.
-```
-
-![注意模式。](media/notes.png)
-
-对于多行块引注，请在备注的每行前面使用大于 (`>`) 字符：
-
-```md
-> This is a line in a blockquote.  It's ok for it to be very long; it will wrap.
-> *  This is a list item.
-> *  This is another list item.
->
-> This is another line in a blockquote.
-```
-
-请参阅 _Docs 参与者指南_[中的警报 (注意、提示、重要、警告、警告) ](https://docs.microsoft.com/contribute/markdown-reference#alerts-note-tip-important-caution-warning)。
 
 
 ### <a name="images"></a>图片
 
-映像应存储在目录中 `media` 。  使用以下三重冒号图像标记，使用相对于 Markdown 文件的相对路径引用图像：
-
 ```md
-:::image type="content" source="./media/notes.png" alt-text="Describe what's shown in the image." lightbox="./media/notes.png":::
+![Alt text](articlefilename-images/image-file-name.png)
 ```
 
-请参阅 _Docs 参与者指南_中的[图像](https://docs.microsoft.com/contribute/markdown-reference#images)。
-
-
----
-
-### <a name="horizontal-rules-divider-lines"></a>水平规则 (分隔线) 
-
-若要创建水平规则，请在行上单独使用三个连字符： `---`.  在此存储库中，很少使用这些存储库;它们在 API 函数部分之间使用。
-
-此存储库中的几个文件中使用了等效的 `* * *` Markdown 标记，用于标识一组选项卡的末尾，以便为每个选项卡生成一种编程语言的文档。
+此存储库使用 Markdown 映像标记。  请参阅 [图像](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images)。

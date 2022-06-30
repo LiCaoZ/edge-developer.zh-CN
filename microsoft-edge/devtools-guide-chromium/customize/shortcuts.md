@@ -6,16 +6,16 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/10/2021
-ms.openlocfilehash: 2c91e5295efad5b186f70c400d173eae0f503797
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.openlocfilehash: 79589a89bb0aa8731c26f0a49e65a42d5ba9053b
+ms.sourcegitcommit: b140f9beedaed9763d40de34234274b342894b76
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12553460"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "12632698"
 ---
 # <a name="customize-keyboard-shortcuts"></a>自定义键盘快捷方式
 
-在**设置****的快捷**方式页中，可以查看 Microsoft Edge DevTools 的定义快捷方式、为特定操作定义自己的快捷方式，或使用预设来匹配 Microsoft Visual Studio Code 中的默认快捷方式。
+在 **“设置****”的快捷方式**页中，可以查看 Microsoft Edge DevTools 的定义快捷方式、为特定操作定义自己的快捷方式，或者使用预设来匹配 Microsoft Visual Studio Code中的默认快捷方式。
 
 有关默认键盘快捷方式，请参阅 [键盘快捷方式](../shortcuts/index.md)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "12553460"
 
 1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
 
-1. 在 DevTools 的主工具栏上，单击**设置 (** 设置![图标。](../media/settings-gear-icon-light-theme.png)) 按钮。  或者，按 。`Shift`+`?`
+1. 在 DevTools 的主工具栏上，单击 **“设置** (![”图标。](../media/settings-gear-icon-light-theme.png)) 按钮。  或者，按 。`Shift`+`?`
 
-1. 在**设置**面板中，选择 **“快捷方式”** 页。
+1. 在 **“设置”** 面板中，选择 **“快捷方式”** 页。
 
 1. 在右上角，在预设下拉列表**的“匹配”快捷方式**中，选择 **“Visual Studio Code**”而不是 **“DevTools” (默认) **。
 
@@ -40,7 +40,7 @@ ms.locfileid: "12553460"
 ### <a name="see-also"></a>另请参阅
 
 * [Microsoft Visual Studio代码](https://code.visualstudio.com)
-* [Visual Studio Code PDF 文件Windows (键盘快捷方式](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)) 
+* Visual Studio Code Windows (PDF 文件的[键盘快捷方式](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)) 
 
 
 <!-- ====================================================================== -->
@@ -48,15 +48,15 @@ ms.locfileid: "12553460"
 
 1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
 
-1. 在 DevTools 的主工具栏上，单击**设置 (** 设置![图标。](../media/settings-gear-icon-light-theme.png)) 按钮。  或者，按 。`Shift`+`?`
+1. 在 DevTools 的主工具栏上，单击 **“设置** (![”图标。](../media/settings-gear-icon-light-theme.png)) 按钮。  或者，按 。`Shift`+`?`
 
-1. 在**设置**面板中，选择 **“快捷方式”** 页。
+1. 在 **“设置”** 面板中，选择 **“快捷方式”** 页。
 
 1. 选择要自定义的操作。  例如，在 **“调试器** ”部分中，选择 **“暂停脚本执行** ”操作。
 
 1. 单击 **“编辑** (![EditKeyboardShortcut。](../media/edit-keyboard-shortcut-icon.msft.png)) 图标。
 
-   ![从设置中的快捷方式页中选择要自定义的操作。](../media/experiments-custom-keyboard-shortcuts-select-action.msft.png)
+   ![从“设置”中的“快捷方式”页中选择要自定义的操作。](../media/experiments-custom-keyboard-shortcuts-select-action.msft.png)
 
 1. 若要将快捷键绑定到操作，请确保操作旁边的文本框具有焦点，然后使用键盘选择快捷键。
 
@@ -66,7 +66,7 @@ ms.locfileid: "12553460"
 
 1. 若要保存新键盘快捷方式，请选择复选标记 (![CheckmarkKeyboardShortcut。](../media/checkmark-keyboard-shortcut-icon.msft.png)) 图标。
 
-   :::image type="content" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="选择复选标记图标以保存新键盘快捷方式。" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+   ![选择复选标记图标以保存新键盘快捷方式](../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png)
 
 1. 选择新的键盘快捷方式以触发 DevTools 中的操作。
 

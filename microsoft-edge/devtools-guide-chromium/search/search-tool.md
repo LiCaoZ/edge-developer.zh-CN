@@ -1,17 +1,17 @@
 ---
 title: 使用搜索工具查找页面的源文件
-description: Microsoft Edge DevTools 中的搜索工具有助于查找源文件。
+description: Microsoft Edge DevTools 中的搜索工具可帮助查找源文件。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/28/2021
-ms.openlocfilehash: 8fd9a0f69a9f6675ab5ea9805f8e72fbc0635fdf
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.openlocfilehash: f74ca6daacf2ccb1396107d67e8803e234bc2d2b
+ms.sourcegitcommit: b140f9beedaed9763d40de34234274b342894b76
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12553279"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "12632685"
 ---
 # <a name="find-source-files-for-a-page-using-the-search-tool"></a>使用搜索工具查找页面的源文件
 
@@ -35,7 +35,7 @@ ms.locfileid: "12553279"
 
 **搜索**工具显示在**抽屉**中，其中包含搜索工具栏：
 
-:::image type="content" source="../media/search-tool/search-tool-first-open-reduced.png" alt-text="带有搜索工具栏的搜索工具。" lightbox="../media/search-tool/search-tool-first-open.png":::
+![带有搜索工具栏的搜索工具](../media/search-tool/search-tool-first-open.png)
 
 另请参阅 [全局键盘快捷方式](../shortcuts/index.md#global-keyboard-shortcuts)。
 
@@ -47,7 +47,7 @@ ms.locfileid: "12553279"
 
 1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`I`”(Windows、Linux)或“`Command`+`Option`+`I`”(macOS)。  DevTools 随即打开。
 
-1. 按++`Ctrl``P``Shift` (Windows、Linux) 或`Command``P`++`Shift` (macOS) 打开[命令菜单](../command-menu/index.md)。
+1. 按++`Shift``P` `Ctrl` (Windows、Linux) 或 `Command``P`++`Shift` (macOS) 打开[命令菜单](../command-menu/index.md)。
 
 1. 键 `search`入，然后按 `Enter`。
 
