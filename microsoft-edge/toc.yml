@@ -94,6 +94,9 @@
             - name: 使用专注模式简化开发工具
               href: devtools-guide-chromium/experimental-features/focus-mode.md
               displayName: 'Experimental features, Focus Mode'
+            - name: 使用命令面板通过键盘运行命令
+              href: devtools-guide-chromium/experimental-features/edge-command-palette.md
+              displayName: 'Experimental features, Edge Command Palette'
         - name: 工具
           items:
             - name: 关于工具列表
