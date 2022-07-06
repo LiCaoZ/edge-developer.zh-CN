@@ -6,18 +6,14 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/28/2022
-ms.openlocfilehash: 508bc119cce9724c2951ad5dba5755e2fddc7ee9
-ms.sourcegitcommit: 05753adf2734d9bd118d2b224883eeb26028000c
+ms.openlocfilehash: 192feb064a96650c5790c1adcdc48e3fb7c0c1ce
+ms.sourcegitcommit: 108b9a0673be978d89bc99d923582f569a43f6fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630076"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "12635323"
 ---
 # <a name="create-an-extension-tutorial-part-1"></a>创建扩展教程，第 1 部分
-
-
-<!-- ====================================================================== -->
-## <a name="overview"></a>概述
 
 本教程的目标是从空目录开始生成 Microsoft Edge 扩展。  你正在构建一个扩展，弹出美国宇航局当天的照片。  在本教程中，你将了解如何通过以下方式创建扩展：
 

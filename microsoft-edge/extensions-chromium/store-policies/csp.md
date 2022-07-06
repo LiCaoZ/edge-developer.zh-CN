@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/07/2021
-ms.openlocfilehash: 2ec10109da8fe120fd6a64e3ef12cc4c0de972dd
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: e6c243cc8bad1f0ad16ca529649bc1ae0ce0e96f
+ms.sourcegitcommit: 108b9a0673be978d89bc99d923582f569a43f6fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630653"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "12635316"
 ---
 # <a name="content-security-policy-csp"></a>内容安全策略 (CSP) 
 

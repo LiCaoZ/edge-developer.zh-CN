@@ -6,21 +6,18 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/17/2022
-ms.openlocfilehash: 2ff0016991ddbabad8e7a99650d04d024e0b4d39
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.openlocfilehash: 0dffcd8ceb05c3221587403cc875ad93574328ed
+ms.sourcegitcommit: 108b9a0673be978d89bc99d923582f569a43f6fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12553578"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "12635309"
 ---
 # <a name="using-the-microsoft-edge-add-ons-api"></a>使用 Microsoft Edge 加载项 API 
 
-> [!NOTE]
-> 合作伙伴中心存在 **“发布 API** ”页。 
+Microsoft Edge 加载项 API 提供一组 REST 终结点，用于以编程方式将更新发布到提交到 Microsoft Edge 加载项网站的加载项。  可以使用这些 REST 终结点自动将加载项上载和发布到 Microsoft Edge 加载项网站。  在合作伙伴中心使用 **“发布 API** ”页。
 
-本文与[Microsoft Edge加载项 API 参考](addons-api-reference.md)一起概述了建议的Microsoft Edge加载项 API。  请提交有关建议的 API 合同的建议和反馈，作为 [有关加载项 API 的问题](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API])。
-
-Microsoft Edge加载项 API 提供了一组 REST 终结点，用于以编程方式将更新发布到提交到Microsoft Edge加载项网站的加载项。  可以使用这些 REST 终结点自动将加载项上传和发布到Microsoft Edge加载项网站的过程。
+若要提交建议和反馈，请输入 [有关加载项 API 的问题](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API])。
 
 
 <!-- ====================================================================== -->
@@ -30,8 +27,8 @@ Microsoft Edge加载项 API 提供了一组 REST 终结点，用于以编程方�
 |---|---|
 | _操作_ | REST 操作，例如 GET 或 PUT。 |
 | _操作 ID_ | REST 操作的 ID。 |
-| _package_ | `.zip`包含Microsoft Edge加载项的文件的包。 |
-| _产品_ | Microsoft Edge扩展或主题。  也称为Microsoft Edge_加载项_。 |
+| _package_ | `.zip`包含 Microsoft Edge 加载项文件的包。 |
+| _产品_ | Microsoft Edge 扩展或主题。  也称为 Microsoft Edge _加载项_。 |
 | _产品 ID_ | 需要发布草稿的产品的产品 ID。  产品 ID 是与合作伙伴中心的产品关联的 128 位 GUID。  例如：`d34f98f5-f9b7-42b1-bebb-98707202b21d`。 |
 | _提交_ | 正在提交到合作伙伴中心现有产品的更新。  每次更新产品都是提交，无论状态是`In Draft``In Review`，还是`In the Store` (发布的) 。 |
 
@@ -39,12 +36,11 @@ Microsoft Edge加载项 API 提供了一组 REST 终结点，用于以编程方�
 <!-- ====================================================================== -->
 ## <a name="before-you-begin"></a>在开始之前
 
-若要使用Microsoft Edge加载项 API，需要通过创建 API 凭据在 Microsoft 合作伙伴中心为项目启用 API。
-
+若要使用 Microsoft Edge 加载项 API，需要通过创建 API 凭据在 Microsoft 合作伙伴中心为项目启用 API，如下所示：
 
 1. 访问 Microsoft 合作伙伴中心并登录到已从中发布加载项的帐户。
 
-1. 在**Microsoft Edge**程序下，选择 **“发布 API**”。
+1. 在 **Microsoft Edge** 程序下，选择 **“发布 API**”。
 
 1. 在 **“发布 API** ”页中，单击 **“创建 API 凭据** ”按钮。  此步骤可能需要几分钟时间。
 
@@ -101,7 +97,7 @@ https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v2
 <!-- ====================================================================== -->
 ## <a name="using-the-api-endpoints"></a>使用 API 终结点
 
-拥有访问令牌后，可以使用Microsoft Edge加载项 API。  此 API 公开用于获取产品列表、更新产品和发布产品的终结点。
+获得访问令牌后，可以使用 Microsoft Edge 加载项 API。  此 API 公开用于获取产品列表、更新产品和发布产品的终结点。
 
 > [!NOTE]
 > 没有用于创建新产品或更新产品的元数据的 API，例如说明。  必须在 Microsoft 合作伙伴中心手动完成这些任务。
@@ -121,13 +117,13 @@ Header Parameters: Authorization: Bearer $TOKEN; Content-Type: application/zip
 Body content: the package file to upload
 ```
 
-`$productID` 是要更新的Microsoft Edge加载项的产品 ID。 
+`$productID` 是要更新的 Microsoft Edge 加载项的产品 ID。 
 
 若要获取产品 ID，请执行以下操作：
 
 1. 登录到 Microsoft 合作伙伴中心。
 
-1. 转到 **Microsoft Edge** >  **Overview**。
+1. 转到 **Microsoft Edge** > **概述**。
 
 1. 选择要为其提供产品 ID 的扩展。
 
@@ -151,7 +147,7 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 
 ### <a name="see-also"></a>另请参阅
 
-*  API 参考：[Upload包以更新现有提交](addons-api-reference.md#upload-a-package-to-update-an-existing-submission)
+*  API 参考： [上传包以更新现有提交](addons-api-reference.md#upload-a-package-to-update-an-existing-submission)
 
 
 <!-- ====================================================================== -->
@@ -183,7 +179,7 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 <!-- ====================================================================== -->
 ## <a name="publishing-the-submission"></a>发布提交
 
-使用此 API 将产品当前草稿发布到Microsoft Edge加载项网站。
+使用此 API 将产品当前草稿发布到 Microsoft Edge 加载项网站。
 
 ```rest
 Endpoint: /v1/products/$productID/submissions
@@ -233,4 +229,4 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 
 ### <a name="see-also"></a>另请参阅
 
-*  [使用Microsoft Edge加载项 API：检查发布状态](addons-api-reference.md#check-the-publishing-status)
+*  [使用 Microsoft Edge 加载项 API：检查发布状态](addons-api-reference.md#check-the-publishing-status)

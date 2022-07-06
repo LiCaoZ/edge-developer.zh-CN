@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
-ms.openlocfilehash: 8d473d9f0eb6129e7890e91438decf6be654338d
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: abb29cce8450590f01f1776d8510cccc64b637f2
+ms.sourcegitcommit: 108b9a0673be978d89bc99d923582f569a43f6fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630744"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "12635337"
 ---
 # <a name="manifest-file-format-for-extensions"></a>扩展名的清单文件格式
 
@@ -21,7 +21,7 @@ Microsoft Edge 的每个扩展都有一个名为 JSON 格式的清单文件 `man
 *  扩展的标题。
 *  要运行扩展所需的权限。
 
-扩展的格式 `manifest.json` 从清单 V2 移动到清单 V3。  此处显示了这两种格式。  若要将清单 V2 扩展迁移到清单 V3，请参阅 [准备将扩展从清单 V2 更新到 V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md)。
+扩展的格式 `manifest.json` 从清单 V2 移动到清单 V3。  此处显示了这两种格式。  若要将清单 V2 扩展迁移到清单 V3，请 [参阅将扩展从清单 V2 迁移到 V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md)。
 
 
 <!-- ====================================================================== -->

@@ -6,20 +6,16 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/28/2022
-ms.openlocfilehash: 3955d65ae69d322742fdfffe113d7bb230910f2b
-ms.sourcegitcommit: 05753adf2734d9bd118d2b224883eeb26028000c
+ms.openlocfilehash: 7a6a6cc4953081238b7358a4e97a9856f6c1de99
+ms.sourcegitcommit: 108b9a0673be978d89bc99d923582f569a43f6fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630078"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "12635351"
 ---
 # <a name="create-an-extension-tutorial-part-2"></a>创建扩展教程，第 2 部分
 
 若要查看本教程的这一部分的已完成扩展包源，请转到 [MicrosoftEdge-Extensions 存储库>扩展入门部分 2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2)。  源代码已从清单 V2 更新到清单 V3。
-
-
-<!-- ====================================================================== -->
-## <a name="overview"></a>概述
 
 本教程介绍以下扩展技术：
 *   将 JavaScript 库注入扩展。

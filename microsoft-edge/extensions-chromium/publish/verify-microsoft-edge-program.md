@@ -1,27 +1,27 @@
 ---
 title: 验证与 Microsoft 合作伙伴中心帐户关联的公司帐户信息
-description: 了解在公司注册合作伙伴中心Microsoft Edge计划以将扩展发布到Microsoft Edge加载项网站时如何验证帐户信息。
+description: 了解如何在公司注册合作伙伴中心上的 Microsoft Edge 计划以将扩展发布到 Microsoft Edge 加载项网站时验证帐户信息。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/09/2022
-ms.openlocfilehash: fc8a261228b9e5015065211d4e06e72bc5972733
-ms.sourcegitcommit: 1ef1d8c7126985a3fed5e2216a7fce159574e037
+ms.openlocfilehash: cb776850d795d476c2132adce4cfed81939cba87
+ms.sourcegitcommit: 108b9a0673be978d89bc99d923582f569a43f6fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "12599111"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "12635344"
 ---
 # <a name="verify-the-company-account-information-associated-with-your-microsoft-partner-center-account"></a>验证与 Microsoft 合作伙伴中心帐户关联的公司帐户信息
 
-在合作伙伴中心注册Microsoft Edge计划以发布扩展名或更改个人资料中的法律详细信息时，Microsoft 会验证你提供的信息。 信息可以包括公司名称、公司地址和主要联系人详细信息。 在此过程中，Microsoft 可能会向主要联系人发送电子邮件以请求验证。
+在合作伙伴中心注册 Microsoft Edge 计划以发布扩展名或更改配置文件中的法律详细信息时，Microsoft 会验证你提供的信息。 信息可以包括公司名称、公司地址和主要联系人详细信息。 在此过程中，Microsoft 可能会向主要联系人发送电子邮件以请求验证。
 
-可以转到合作伙伴中心[的法律信息](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer)，监视Microsoft Edge开发人员计划的验证状态。
+可以转到合作伙伴中心 [的法律信息](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer) ，监视 Microsoft Edge 开发人员计划的验证状态。
 
-帐户验证完成后，可以使用合作伙伴中心仪表板将扩展发布到Microsoft Edge加载项网站。
+帐户验证完成后，可以使用合作伙伴中心仪表板将扩展发布到 Microsoft Edge 加载项网站。
 
-验证通常需要三到五个工作日。 如果已过五天以上，可以联系[Microsoft Edge扩展支持](/microsoft-edge/extensions-chromium/publish/contact-extensions-team/)部门寻求帮助。
+验证通常需要三到五个工作日。 如果已过五天以上，可以联系 [Microsoft Edge 扩展支持](/microsoft-edge/extensions-chromium/publish/contact-extensions-team/) 部门寻求帮助。
 
 
 <!-- ====================================================================== -->
@@ -34,7 +34,7 @@ ms.locfileid: "12599111"
 电子邮件所有权验证主要联系人 (主电子邮件) 地址是否有效。
 
 * 主要联系人电子邮件地址必须是受监视并可以发送和接收电子邮件的工作帐户。
-* 避免使用与公司域无关的个人电子邮件地址，例如 \<alias\>@contoso.com。
+* 避免使用个人电子邮件地址。  必须使用与公司域关联的电子邮件地址，例如 \<alias\>@contoso.com。
 * 避免使用未与电子邮件关联的租户用户凭据，例如 \<alias\>microsoft.com 上的@contoso。
 
 #### <a name="suggestions"></a>建议
@@ -86,7 +86,7 @@ Microsoft 使用此文档验证公司是否有权以该名称进行业务，以�
 <!-- ====================================================================== -->
 ## <a name="checking-your-verification-status"></a>检查验证状态
 
-可以在帐户中的合作伙伴中心检查验证状态**[设置 |法律信息](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer)**，可在其中看到：
+可以在“帐户设置”中的合作伙伴中心检查验证状态 **[|法律信息](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer)**，可在其中看到：
 
 1. 一个或多个选项卡，例如 **合作伙伴**、 **开发人员**或 **经销商**，具体取决于组织在其中注册的程序。
 1. “ **开发人员”** 选项卡包含显示验证阶段和任何挂起阶段的 **“帐户详细信息** ”进度栏。
@@ -102,7 +102,7 @@ Microsoft 使用此文档验证公司是否有权以该名称进行业务，以�
 
 *   **已授权/接受**：你提交的信息已验证，你已收到接受程序的通知。 无需执行其他操作。
 
-*   **挂起**：验证过程已启动，但尚未完成。 如果已完成电子邮件验证步骤，则无需执行其他操作。 可以在帐户设置 |监视验证状态法律信息。 验证通常需要三到五个工作日。
+*   **挂起**：验证过程已启动，但尚未完成。 如果已完成电子邮件验证步骤，则无需执行其他操作。 可以在帐户设置|监视验证状态法律信息。 验证通常需要三到五个工作日。
 
 *   **操作必需/已拒绝**：无法验证你提交的信息。 原因以及如何上诉的说明显示在 **“帐户验证** ”窗格中。 请参阅下面 [的“对已拒绝的应用程序进行上诉](#appealing-a-rejected-application)”。
 
@@ -112,14 +112,14 @@ Microsoft 使用此文档验证公司是否有权以该名称进行业务，以�
 
 对被拒绝的应用程序提出上诉：
 
-1. 在**[帐户设置 |法律信息](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer)**，立即选择 **“修复**”。
+1. 在 **[帐户设置|法律信息](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer)**，立即选择 **“修复**”。
 1. 在 **帐户验证**中，从 **“选择要上传的文档类型**”中，选择要上传以进行验证的文档类型。
 1. 在 **“输入批注**”中，可以输入有关上诉的详细信息。
-1. 选择**Upload**。
+1. 选择 **“上传**”。
 
-审查上诉所需的时间不同。 可以返回到**[帐户设置 |随时](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer)** 检查验证状态的法律信息。 审阅期间验证状态 **为“挂起** ”。
+审查上诉所需的时间不同。 可以返回到 **[帐户设置|随时](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer)** 检查验证状态的法律信息。 审阅期间验证状态 **为“挂起** ”。
 
-![帐户设置 |法律信息](media/account-settings-legal-info-microsoft-edge-partner-center.png)
+![帐户设置|法律信息](media/account-settings-legal-info-microsoft-edge-partner-center.png)
 
 
 > [!NOTE]
@@ -135,5 +135,5 @@ Microsoft 使用此文档验证公司是否有权以该名称进行业务，以�
 
 *  [扩展概念和体系结构](../getting-started/index.md)
 
-*  [将用户添加到Microsoft Edge程序](aad-account.md) - 将其他用户添加到Microsoft Edge计划和合作伙伴中心开发人员帐户。  若要启用添加用户，请将组织的Azure Active Directory帐户与合作伙伴中心上 MSA)  (Microsoft 帐户相关联。
+*  [将用户添加到 Microsoft Edge 计划](aad-account.md) - 将其他用户添加到 Microsoft Edge 计划和合作伙伴中心开发人员帐户。  若要启用添加用户，请将组织的 Azure Active Directory 帐户与合作伙伴中心上的 MICROSOFT 帐户 (MSA) 相关联。
 
