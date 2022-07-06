@@ -595,60 +595,63 @@
               href: extensions-chromium/getting-started/extension-sideloading.md
         - name: 开发人员指南
           items:
-            - name: API 支持
+            - name: Microsoft Edge 扩展支持的 API
               href: extensions-chromium/developer-guide/api-support.md
-            - name: 声明权限
-              href: extensions-chromium/enterprise/declare-permissions.md
+            - name: 在扩展清单中声明 API 权限
+              href: extensions-chromium/developer-guide/declare-permissions.md
             - name: 将 Chrome 扩展移植到Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
             - name: 分发扩展的备用方法
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
             - name: 本机消息传递
               href: extensions-chromium/developer-guide/native-messaging.md
+            - name: 定义用于访问文件 URL 的扩展的匹配模式
+              href: extensions-chromium/developer-guide/match-patterns.md
         - name: Manifest
           items:
             - name: 迁移到清单 V3 的概述和日程表
               href: extensions-chromium/developer-guide/manifest-v3.md
-              displayName: null
             - name: 将扩展从清单 V2 迁移到 V3
               href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
-              displayName: null
             - name: 扩展名的清单文件格式
               href: extensions-chromium/getting-started/manifest-format.md
-              displayName: null
         - name: 发布到加载项网站
           items:
-            - name: 注册为扩展开发人员
+            - name: 注册为 Microsoft Edge 扩展开发人员
               href: extensions-chromium/publish/create-dev-account.md
             - name: 验证公司帐户信息
               href: extensions-chromium/publish/verify-microsoft-edge-program.md
-            - name: 使用 GitHub 帐户发布扩展
+            - name: 使用 GitHub 帐户发布 Microsoft Edge 扩展
               href: extensions-chromium/publish/github.md
             - name: 将用户添加到Microsoft Edge程序
               href: extensions-chromium/publish/aad-account.md
-            - name: 发布扩展
+            - name: 发布 Microsoft Edge 扩展
               href: extensions-chromium/publish/publish-extension.md
-            - name: 更新扩展
+            - name: 扩展托管
+              href: extensions-chromium/publish/hosting-and-updating.md
+            - name: 更新 Microsoft Edge 扩展
               href: extensions-chromium/publish/update-extension.md
-            - name: 提交状态
+            - name: 在 Microsoft Edge 中自动更新扩展
+              href: extensions-chromium/publish/auto-update.md
+            - name: Microsoft Edge 加载项网站中扩展的提交状态
               href: extensions-chromium/publish/submission-states.md
-            - name: 查看扩展分析仪表板
+            - name: 查看 Microsoft Edge 扩展分析仪表板
               href: extensions-chromium/publish/extensions-analytics.md
             - name: 回复用户评论
               href: extensions-chromium/publish/reply-user-reviews.md
               displayName: Respond to user reviews
             - name: 管理帐户设置
               href: extensions-chromium/publish/manage-settings.md
-            - name: 联系人扩展支持
+            - name: 联系 Microsoft Edge 扩展支持
               href: extensions-chromium/publish/contact-extensions-team.md
               displayName: 'feedback, log issues, enter issues, report issues, reporting issues'
             - name: Microsoft Edge加载项的策略
               items:
-                - name: 内容安全策略
+                - name: 内容安全策略 (CSP)
                   href: extensions-chromium/store-policies/csp.md
-                - name: Microsoft Edge 开发人员 ADA 附录
+                - name: 适用于 Microsoft Edge 程序用户的应用开发人员协议附录
                   href: extensions-chromium/store-policies/ada-addendum.md
-                - name: 开发人员策略
+                - name: Microsoft Edge 加载项商店开发人员策略
                   href: extensions-chromium/store-policies/developer-policies.md
             - name: Microsoft Edge 加载项 API
               items:
@@ -656,14 +659,6 @@
                   href: extensions-chromium/publish/api/using-addons-api.md
                 - name: Microsoft Edge 加载项 API 参考
                   href: extensions-chromium/publish/api/addons-api-reference.md
-        - name: 适用于企业的扩展
-          items:
-            - name: 匹配模式
-              href: extensions-chromium/enterprise/match-patterns.md
-            - name: 托管和更新
-              href: extensions-chromium/enterprise/hosting-and-updating.md
-            - name: 自动更新
-              href: extensions-chromium/enterprise/auto-update.md
     - name: 渐进式 Web 应用
       items:
         - name: 渐进式 Web 应用 （PWA） 概述
