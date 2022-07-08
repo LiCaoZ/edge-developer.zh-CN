@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/30/2021
-ms.openlocfilehash: 61acfb95029d1ecb8a61391116ef2cc7ccedd1cf
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: 10f88c1ac70e05fe5c7e28aea16e33b5351c5aa2
+ms.sourcegitcommit: 9cc13dd2d0e0360013a127b8e39b09e535b08f1b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12631193"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "12636241"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-93"></a>DevTools (Microsoft Edge 93) 中的新增功能
 
@@ -85,7 +85,10 @@ DOM 节点被视为"已分离">当不再附加到 DOM 的任何元素，但仍�
 
 ![与 Visual Studio Code 调试器工作流集成的 DevTools 扩展。](../../media/2021/07/extension-integrated-debugger.msft.png)
 
-有关详细信息，请参阅 Visual Studio Code 中 [使用 Microsoft Edge DevTools 集成进行浏览器调](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code)试。  获取[Visual Studio Code扩展的Microsoft Edge 开发人员工具。](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)  Microsoft Visual Studio Code自动更新扩展;若要手动更新此扩展，请参阅[手动更新扩展](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually)。
+另请参阅：
+* 将扩展与 Microsoft _Edge DevTools 扩展_中[用于Visual Studio Code的Visual Studio Code调试工作流配合使用](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#use-the-extension-with-the-visual-studio-code-debugging-workflow)。
+
+获取[Visual Studio Code扩展的Microsoft Edge 开发人员工具。](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)  Microsoft Visual Studio Code自动更新扩展;若要手动更新此扩展，请参阅[手动更新扩展](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually)。
 
 你可以在 [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools) 上提交问题并参与扩展的改进。
 
