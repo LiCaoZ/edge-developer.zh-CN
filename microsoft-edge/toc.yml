@@ -573,6 +573,11 @@
         - name: 联系 Microsoft Edge 开发工具团队
           href: devtools-guide-chromium/contact.md
           displayName: 'feedback, log issues, enter issues, report issues, reporting issues, support'
+    - name: 适用于 Visual Studio Code 的开发工具
+      items:
+        - name: 适用于 Visual Studio Code 的 DevTools 扩展
+          href: visual-studio-code/microsoft-edge-devtools-extension.md
+          displayName: Microsoft Edge DevTools extension for Visual Studio Code
     - name: Microsoft Edge 扩展
       items:
         - name: Microsoft Edge 扩展概述
@@ -964,20 +969,12 @@
         - name: Microsoft Edge IDE 集成
           href: visual-studio-code/ide-integration.md
           displayName: null
-        - name: Visual Studio Code
-          items:
-            - name: 用于 Web 开发的Visual Studio Code
-              href: visual-studio-code/index.md
-              displayName: null
-            - name: Microsoft Edge 开发人员工具扩展
-              href: visual-studio-code/microsoft-edge-devtools-extension.md
-              displayName: null
-            - name: 在 Visual Studio Code 中的打开源文件
-              href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
-              displayName: null
-            - name: Edge 调试程序
-              href: visual-studio-code/debugger-for-edge.md
-              displayName: null
+        - name: 在 Visual Studio Code 中打开源文件
+          href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
+          displayName: null
+        - name: 在 Visual Studio Code 中调试 Microsoft Edge
+          href: visual-studio-code/debugger-for-edge.md
+          displayName: null
         - name: 用于 Web 开发的Visual Studio
           href: visual-studio/index.md
           displayName: null
