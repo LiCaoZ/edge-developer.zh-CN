@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 2/24/2022
-ms.openlocfilehash: f412ac1cf2f5d2c960a927fb40766d9ec19ef60e
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.openlocfilehash: 5f162734184b6565710bb546d1ae4965d0417e6c
+ms.sourcegitcommit: 61d541b18043bdc4b2a6d65d6eb7422d54da2c2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12553741"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "12639929"
 ---
 # <a name="interop-of-native-side-and-web-side-code"></a>本机和 Web 端代码的互操作
 
-Microsoft Edge WebView2 控件可将 Web 内容嵌入本机应用程序。  可以以不同的方式使用 WebView2，具体取决于需要完成的操作。  本文介绍如何使用简单消息、JavaScript 代码和本机对象进行通信。
+Microsoft Edge WebView2 控件允许你将 Web 内容嵌入本机应用程序。  可以以不同的方式使用 WebView2，具体取决于需要完成的操作。  本文介绍如何使用简单消息、JavaScript 代码和本机对象进行通信。
 
 一些常见用例包括：
 *  导航到其他网站后，更新本机主机窗口标题。
@@ -27,7 +27,7 @@ Microsoft Edge WebView2 控件可将 Web 内容嵌入本机应用程序。  可�
 <!-- ====================================================================== -->
 ## <a name="before-you-begin"></a>在开始之前
 
-本教程逐步讲解示例应用代码，以演示 WebView2 中的一些通信功能。  克隆 [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples)，在Visual Studio中打开`.sln`文件，生成项目，并运行 (调试) 以按照本文中的步骤操作。
+本教程逐步讲解示例应用代码，以演示 WebView2 中的一些通信功能。  克隆 [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples)，在 Visual Studio 中打开 `.sln` 文件，生成项目，并运行 (调试) ，按照本文中的步骤进行操作。
 
 有关克隆存储库的详细步骤，请参阅 [WebView2 示例](../code-samples-links.md)。
 
@@ -53,9 +53,9 @@ Microsoft Edge WebView2 控件可将 Web 内容嵌入本机应用程序。  可�
 
    ![“发布 Web 消息 JSON”演示。](../media/postmessagejson.png)
 
-   如何更改文本颜色？  示例首先在本机端创建按钮。  然后，当单击该按钮时，该示例将添加以下代码以帖子 Web 消息。  此代码将 Web 文本的颜色更改为蓝色。
+   如何更改文本颜色？  示例首先在本机端创建按钮。  然后，该示例添加以下代码，以便在单击按钮时发布 Web 消息。  此代码将 Web 文本的颜色更改为蓝色。
 
-   该示例包括 C++ 代码，用于创建单击时调`SendJsonWebMessage()`用的Windows按钮。
+   该示例包括 C++ 代码，用于创建在单击时调 `SendJsonWebMessage()` 用的 Windows 按钮。
 
    有关在 C++中创建按钮的详细信息， [请参阅如何创建按钮](/windows/win32/controls/create-a-button)。
 
@@ -284,3 +284,9 @@ C++ 文件处理标题文本，并将其作为字符串传达给主机应用。
 [接口 ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2) 的 [AddHostObjectToScript](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript) 部分介绍了将本机对象传递到应用程序的 Web 端。
 
 祝贺你！ 你已成功将 Web 内容嵌入本机应用程序。
+
+
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
+
+* _WebView2 功能和 API 概述中的 Web_[/本机互操作](../concepts/overview-features-apis.md#webnative-interop)。

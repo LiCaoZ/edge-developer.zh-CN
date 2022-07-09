@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 71e1598cc40b98e1191b88429871b4621f5086e3
-ms.sourcegitcommit: b2062efd99182cb0b6c3115439fb45838841b276
+ms.openlocfilehash: 8776d1384d6bff162a055f268c523a5ae007aa41
+ms.sourcegitcommit: 61d541b18043bdc4b2a6d65d6eb7422d54da2c2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "12496986"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "12639936"
 ---
 # <a name="call-native-side-code-from-web-side-code"></a>从 Web 端代码调用本机代码
 
@@ -34,7 +34,7 @@ WebView2 使应用程序能够通过启用要传递到 Web 的对象来弥合应
 
 **本文中主要步骤的预览：**
 
-1. 安装Visual Studio、安装 git、克隆 [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample)并打开解决方案。
+1. 安装 Visual Studio、安装 git、克隆 [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample)并打开解决方案。
 
 1. 定义主机对象并实现 `IDispatch` ，以便 WebView2 可以投影/将其添加到 Web 端。
 
@@ -44,11 +44,11 @@ WebView2 使应用程序能够通过启用要传递到 Web 的对象来弥合应
 
 
 <!-- ====================================================================== -->
-## <a name="step-1-install-visual-studio-install-git-clone-the-webview2samples-repo-and-open-the-solution"></a>步骤 1：安装Visual Studio、安装 git、克隆 WebView2Samples 存储库并打开解决方案
+## <a name="step-1-install-visual-studio-install-git-clone-the-webview2samples-repo-and-open-the-solution"></a>步骤 1：安装 Visual Studio、安装 git、克隆 WebView2Samples 存储库并打开解决方案
 
-1. 下载并安装 [Microsoft Visual Studio](https://visualstudio.microsoft.com/) 2019 (版本 16.11.10) 或更高版本，以及 [Win32 应用中 WebView2 开始中](/microsoft-edge/webview2/get-started/win32)所述的其他先决条件。
+1. 下载并安装 [Microsoft Visual Studio](https://visualstudio.microsoft.com/) 2019 (版本 16.11.10) 或更高版本，以及 [Win32 应用中 WebView2 入门中](/microsoft-edge/webview2/get-started/win32)所述的其他先决条件。
 
-1. 克隆 [WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) 存储库，其中包括特定于 Win32 的 WebView2 示例应用。  有关说明，在新窗口或选项卡中，使用 [Win32 应用中的 WebView2 打开开始](/microsoft-edge/webview2/get-started/win32)。
+1. 克隆 [WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) 存储库，其中包括特定于 Win32 的 WebView2 示例应用。  有关说明，请在新窗口或选项卡中打开  [Win32 应用中的 WebView2 入](/microsoft-edge/webview2/get-started/win32)门。
 
 1. 打开 Microsoft Visual Studio。
 
@@ -72,7 +72,7 @@ WebView2 使应用程序能够通过启用要传递到 Web 的对象来弥合应
 
 在 WebView2 示例代码中，该文件 `HostObjectSample.idl` 创建一个 COM 对象。 此步骤介绍如何在 IDL 文件中创建自己的对象。
 
-1. 在Visual Studio**解决方案资源管理器**中，打开 **WebView2APISampleSource** >  **FilesHostObjectSample.idl****** > 。
+1. 在 Visual Studio **解决方案资源管理器**中，打开 **WebView2APISample** > **源文件** > **HostObjectSample.idl**。
 
     以下代码示例分为两个部分。 第一个接口是 `IHostObjectSample`从继承 `IUnknown` 接口的第 9 行开始。 使用此 `IHostObjectSample` 定义作为模板来定义对象的方法、属性、回调函数等。
     
@@ -132,7 +132,7 @@ WebView2 使应用程序能够通过启用要传递到 Web 的对象来弥合应
 
     可能有库可以自动执行此操作。  若要详细了解为要公开的对象编写 `IDispatch` 类包装所需的步骤，请参阅 [自动化](/previous-versions/windows/desktop/automat/automation-programming-reference)。
     
-1. 在 IDL 中定义接口后，保存并编译Visual Studio中的示例项目，以创建转换外观缓冲区 (TLB) 文件。 需要从以下部分中所示的 C++ 源代码引用 TLB 文件。
+1. 在 IDL 中定义接口后，在 Visual Studio 中保存并编译示例项目，以创建转换外观缓冲区 (TLB) 文件。 需要从以下部分中所示的 C++ 源代码引用 TLB 文件。
 
 ### <a name="part-2b-create-the-c-object"></a>第 2B 部分：创建 C++ 对象
 
@@ -142,7 +142,7 @@ WebView2 使应用程序能够通过启用要传递到 Web 的对象来弥合应
 
 接下来，我们检查 IDL 中定义的两个特定属性，以显示 IDL 与文件的相关 `.cpp` 性。
 
-1. 在Visual Studio**解决方案资源管理器**中，打开 **WebView2APISampleSource** >  **FilesHostObjectSampleImpl.cpp****** > 。
+1. 在 Visual Studio **解决方案资源管理器**中，打开 **WebView2APISample** > **源文件** > **HostObjectSampleImpl.cpp**。
 
 1. 比较属性 *声明*，在 `HostObjectSample.idl` ...
  
@@ -172,7 +172,7 @@ WebView2 使应用程序能够通过启用要传递到 Web 的对象来弥合应
 
 到目前为止，我们已经构建了接口并实现了主机对象。 现在，我们已准备好使用 `AddHostObjectToScript` API 将主机对象传递到应用的 Web 端 JavaScript 代码。
 
-1. 在Visual Studio**解决方案资源管理器**中，打开 **WebVie2APISampleSource** >  **FilesScenarioHostObject.cpp****** > 。
+1. 在 Visual Studio **解决方案资源管理器**中，打开 **WebVie2APISample** > **源文件** > **ScenarioHostObject.cpp**。
 
 1. 转到课程开始的第 `ScenarioAddHostObject` 28 行。
 
@@ -236,13 +236,13 @@ WebView2 使应用程序能够通过启用要传递到 Web 的对象来弥合应
 
 若要继续操作，我们使用 WebView2 示例应用。  
 
-1. 在Microsoft Visual Studio中，选择 **“文件** > **保存所有 (Ctrl+Shift+S) **以保存项目。
+1. 在 Microsoft Visual Studio 中，选择 **“文件** > **保存所有 (Ctrl+Shift+S) ** 以保存项目。
 
 1. 按 **F5** 生成并运行项目。
 
 1. 打开 `ScenarioAddHostObject.html`。
 
-1. 单击 **ScenarioHost****** >  对象。
+1. 单击 **方案** > **主机对象**。
 
 1. 通过单击**属性、****方法**和**回调**等按钮来浏览属性，以查看示例代码的行为方式。
 
@@ -266,3 +266,23 @@ WebView2 使应用程序能够通过启用要传递到 Web 的对象来弥合应
 祝贺你！ 你已在应用的本机代码中成功创建了主机对象，将主机对象传递给应用的 Web 端代码，然后使用应用的 Web 端代码中的主机对象。
 
 现在，让我们看看主机对象生态系统中还有哪些其他 API。 有关主机对象的详细信息，请参阅 [WebView2 Win32 C++ ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1054.31#addhostobjecttoscript&preserve-view=true)。
+
+
+<!-- ====================================================================== -->
+## <a name="api-reference-overview"></a>API 参考概述
+
+以下是用于从 Web 端代码调用本机代码的一些关键 API。
+
+# [<a name="c"></a>C#](#tab/c-sharp)
+
+
+# [<a name="c"></a>C++](#tab/cpp)
+
+
+---
+
+
+<!-- ====================================================================== -->
+## <a name="see-also"></a>另请参阅
+
+* _WebView2 功能和 API 概述中的 Web_[/本机互操作](../concepts/overview-features-apis.md#webnative-interop)。

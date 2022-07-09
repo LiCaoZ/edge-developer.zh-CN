@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/29/2022
-ms.openlocfilehash: 267ea95472e5c4fd64576a62a81f131f50ed7c21
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.openlocfilehash: dc8570d2591757b5be0f42b447eac5fcf73bb481
+ms.sourcegitcommit: 61d541b18043bdc4b2a6d65d6eb7422d54da2c2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522264"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "12639922"
 ---
 # <a name="custom-management-of-network-requests"></a>网络请求的自定义管理
 <!--
@@ -29,7 +29,7 @@ writer: read through body content
 Microsoft Edge WebView2 控件允许你与网络请求进行交互和修改。  可以使用这些和`WebResourceResponseReceived`事件提供响应或修改网络请求`WebResourceRequested`。  还有一些特殊功能，可用于使用 `NavigateWithWebResourceRequest API`特定的网络请求进行导航。
 
 本文介绍如何修改网络请求。  使用此 API 和方法可执行以下操作：
-* 将本地文件内容Upload到应用，以添加对脱机功能的支持。
+* 将本地文件内容上传到应用，以添加对脱机功能的支持。
 * 阻止网页中的内容，例如特定图像。
 * 微调特定页面的身份验证。
 
@@ -583,6 +583,8 @@ m_webView->add_WebResourceResponseReceived(
 ## <a name="see-also"></a>另请参阅
 
 * [从 Web 端代码调用本机代码](hostobject.md)
+* _WebView2 功能和 API 概述中的 Web_[/本机互操作](../concepts/overview-features-apis.md#webnative-interop)。
+
 <!-- 
 * [NavigateWithWebResourceRequest spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/NavigateWithWebResourceRequest.md)
 * [WebResourceResponseReceived event spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/WebResourceResponseReceived.md) -->

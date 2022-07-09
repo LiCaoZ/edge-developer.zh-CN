@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 4/1/2022
-ms.openlocfilehash: fd4edf9d9892854d9fcaeacbbe3ba6b9f81ebe53
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.openlocfilehash: 9cdcfd4bec99ce77bb233ae3917aab9046b388a2
+ms.sourcegitcommit: 61d541b18043bdc4b2a6d65d6eb7422d54da2c2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12552928"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "12639943"
 ---
 # <a name="call-web-side-code-from-native-side-code"></a>从本机代码调用 Web 端代码
 <!-- old title: Use JavaScript in WebView for extended scenarios -->
@@ -23,7 +23,7 @@ ms.locfileid: "12552928"
 <!-- ====================================================================== -->
 ## <a name="before-you-begin"></a>在开始之前
 
-本文假定你已有一个工作项目。 如果没有项目，并且想要跟进，请参阅 [WebView2 的开始](../get-started/get-started.md)。
+本文假定你已有一个工作项目。 如果没有项目，并且想要跟进，请参阅 [WebView2 入](../get-started/get-started.md)门。
 
 
 <!-- ====================================================================== -->
@@ -33,7 +33,7 @@ ms.locfileid: "12552928"
 
 | API | 描述 |
 | --- | --- |
-| [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | 在 WebView2 控件中运行 JavaScript。 加载内容或[导航完成](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigationcompleted)后[，在页面文档对象模型 (DOM) ](/dotnet/api/microsoft.web.webview2.core.corewebview2.domcontentloaded)调用此方法。 请参阅 [WebView2 的开始](../get-started/get-started.md)。 |
+| [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | 在 WebView2 控件中运行 JavaScript。 加载内容或[导航完成](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigationcompleted)后[，在页面文档对象模型 (DOM) ](/dotnet/api/microsoft.web.webview2.core.corewebview2.domcontentloaded)调用此方法。 请参阅 [WebView2 入](../get-started/get-started.md)门。 |
 | [AddScriptToExecuteOnDocumentCreatedAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2.addscripttoexecuteondocumentcreatedasync) | 创建 DOM 时，在每个页面上运行。 初始化 CoreWebView2 后调用此方法。 |
 
 
@@ -75,7 +75,7 @@ Debug.Assert(result == "\"example\"");
 在本部分中，将从 WebView2 控件访问专用 JavaScript 文件。
 
 > [!NOTE]
-> 尽管在快速 JavaScript 命令中内联编写 JavaScript 可能很有效，但会丢失 JavaScript 颜色主题和行格式，因此很难在Visual Studio中编写大量代码。
+> 尽管在快速 JavaScript 命令中编写 JavaScript 可能很有效，但会丢失 JavaScript 颜色主题和行格式，这使在 Visual Studio 中编写大量代码变得困难。
 
 若要解决此问题，请使用代码创建单独的 JavaScript 文件，然后使用参数传递对该文件的 `ExecuteScriptAsync` 引用。
 
@@ -156,4 +156,5 @@ Debug.Assert(result == "\"example\"");
 * [WebView2 入门](../get-started/get-started.md)
 * [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。
 * [WebView2 API 参考](../webview2-api-reference.md)
-* [另请参阅](../index.md#see-also)_Microsoft Edge WebView2 简介_。
+* [另请参阅](../index.md#see-also) _Microsoft Edge WebView2 简介_。
+* _WebView2 功能和 API 概述中的 Web_[/本机互操作](../concepts/overview-features-apis.md#webnative-interop)。

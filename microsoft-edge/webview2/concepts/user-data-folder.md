@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 061fe65b9c133c36639cb03fc1fdf4f552d42b43
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.openlocfilehash: 300bc5487481691154860004d4d596b8408f9c99
+ms.sourcegitcommit: 61d541b18043bdc4b2a6d65d6eb7422d54da2c2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522453"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "12639915"
 ---
 # <a name="manage-user-data-folders"></a>管理用户数据文件夹
 <!-- # old title: Manage the user data folder -->
 
-UDF)  (用户数据文件夹是存储在用户计算机上的文件夹，其中包含与主机应用和 WebView2 相关的数据。
+UDF)  (用户数据文件夹是存储在用户计算机上的文件夹，其中包含与主机应用和 WebView2 相关的数据。  WebView2 应用使用用户数据文件夹来存储浏览器数据，例如 Cookie、权限和缓存资源。
 
 
 **术语：**
@@ -56,7 +56,7 @@ WebView2 应用使用用户数据文件夹 (UDF) 来存储浏览器数据，例�
 | `LocalStorage` | localStorage DOM API 存储的数据。 |
 | `PasswordAutosave` | 密码自动保存数据。 |
 | `Settings` | 设置数据。 |
-| `WebSql` | Web SQL数据库 DOM API 存储的数据。 |
+| `WebSql` | Web SQL 数据库 DOM API 存储的数据。 |
 
 上述类型的数据在 [CoreWebView2BrowsingDataKinds 枚举](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds#fields)中列为枚举成员。
 
@@ -92,7 +92,7 @@ WebView2 控件的每个实例都与用户数据文件夹 (UDF) 相关联。
 
 1. 关闭所有 WebView2 会话。
 
-1. "开始"菜单新的 WebView2 主机应用会话，指定新的自定义 UDF 位置。
+1. 启动新的 WebView2 主机应用会话，指定新的自定义 UDF 位置。
 
 
 <!-- ====================================================================== -->
@@ -161,24 +161,24 @@ Win32 MSIX 打包是独立的 `.exe`。
 
 **默认位置为何可写入：**
 
-在运行时，ClickOnce会自动在 WebView2 具有写入权限的位置安装主机应用。  ClickOnce可以使用默认的 UDF 位置，并保证 WebView2 具有写入权限，以便能够在此处创建 UDF。
+在运行时，ClickOnce 会自动在 WebView2 具有写入权限的位置安装主机应用。  ClickOnce 可以使用默认的 UDF 位置，并保证 WebView2 具有写入权限，以便能够在那里创建 UDF。
 
 但是，主机应用可能无法使用该位置将数据写入其中。  如果主机应用无法写入默认 UDF 位置，请参阅下面的“指定自定义 UDF 位置”部分。
 
 
 **清理：**
 
-会话结束时，ClickOnce自动清理。  
+会话结束时，ClickOnce 会自动清理。  
 
 
 **包装：**
 
-ClickOnce是轻型暂时性应用的部署方法;它是混合模型。  可以保留ClickOnce应用，但这不是标准的典型做法。  
+ClickOnce 是轻型暂时性应用的部署方法;它是一个混合模型。  可以保留 ClickOnce 应用，但这不是标准的典型做法。  
 
 
-**ClickOnce应用包装的平台应用类型：**
+**ClickOnce 应用包装的平台应用类型：**
 
-ClickOnce应用通常包含 .NET 应用。
+ClickOnce 应用通常包含 .NET 应用。
 
 
 <!-- ====================================================================== -->
@@ -558,7 +558,7 @@ private void OnGetUDFClick(object sender, RoutedEventArgs e)
 
 无论用户数据文件夹的位置是默认 UDF 位置还是自定义 UDF 位置，上述内容均为 true。
 
-如果内存不足，或者Microsoft Edge运行时无法启动，或者找不到 WebView2 运行时，可能会返回类似于以下内容的错误消息字符串：
+如果内存不足，或者 Microsoft Edge 运行时无法启动，或者找不到 WebView2 运行时，可能会返回类似于以下的错误消息字符串：
 *  `Microsoft Edge runtime unable to start`
 *  `Failed to create WebView2 environment`
 
@@ -598,7 +598,7 @@ WebView2 控件为每个新用户创建一个新的 UDF。  WebView2 控件为�
 
 *  对于 Win32 主机应用，不会自动删除 UDF。
 *  对于 .NET (WPF & WinForms) 主机应用，不会自动删除 UDF。
-*  对于ClickOnce主机应用，将自动删除 UDF。
+*  对于 ClickOnce 主机应用，将自动删除 UDF。
 *  对于 WinUI 2 (UWP) 主机应用，不会自动删除 UDF。
 *  对于 WinUI 3 主机应用，不会自动删除 UDF。
 
@@ -612,7 +612,7 @@ WebView2 控件为每个新用户创建一个新的 UDF。  WebView2 控件为�
 
 如果创建主机应用、创建 MSIX 安装程序、安装主机应用，然后运行主机应用，则会创建 UDF。  但是，如果卸载主机应用，则不会自动清理 UDF (，因为卸载程序会保护并保留用户数据) ，因此卸载过程需要注意这一注意事项。
 
-在ClickOnce应用中，它将安装在单个位置，会话结束时，它会删除整个树，以便自动删除 UDF。  这是因为ClickOnce的工作原理，而不是因为 WebView2 的工作原理。
+在 ClickOnce 应用中，它将安装在单个位置，当会话结束时，它会删除整个树，以便自动删除 UDF。  这是因为 ClickOnce 的工作原理，而不是因为 WebView2 的工作原理。
 
 <!-- details about these Windows considerations belong in a whitepaper article -->
 
@@ -628,7 +628,7 @@ WebView2 控件为每个新用户创建一个新的 UDF。  WebView2 控件为�
 
 主机应用或卸载程序可以删除用户数据文件夹 (UDF) 。  出于以下任何原因，可能需要删除 UDF：
 
-*  如果要卸载打包的Windows Microsoft Store应用。  在这种情况下，Windows自动删除 UDF。
+*  如果要卸载打包的 Windows 应用商店应用。  在这种情况下，Windows 会自动删除 UDF。
 
 *  如果要清理所有浏览数据历史记录。  但是，请首先将 _清晰的浏览数据_ 方法视为更简单、更灵活的方法。
 
@@ -680,8 +680,8 @@ WebView2 控件实例可以在 UDF)  (共享相同的用户数据文件夹，以
 ## <a name="see-also"></a>另请参阅
 
 * [从用户数据文件夹中清除浏览数据](clear-browsing-data.md)
-* _在Windows应用开发_文档中[打包和部署](/windows/apps/package-and-deploy/) (生成适用于Windows) 的桌面应用。
-* [ClickOnce安全和部署](/visualstudio/deployment/clickonce-security-and-deployment) - Visual Studio部署文档。
-* [了解 Microsoft Edge 中的 ClickOnce 和 DirectInvoke 功能](/deployedge/edge-learn-more-co-di) - Microsoft Edge Enterprise文档。
+* 在 _Windows 应用开发_文档中[打包和部署](/windows/apps/package-and-deploy/) (为 Windows) 生成桌面应用。
+* [ClickOnce 安全性和部署](/visualstudio/deployment/clickonce-security-and-deployment) - Visual Studio 部署文档。
+* [了解 Microsoft Edge 中的 ClickOnce 和 DirectInvoke 功能](/deployedge/edge-learn-more-co-di) - 在 Microsoft Edge Enterprise 文档中。
 
 <!-- clickable: https://docs.microsoft.com/windows/apps/package-and-deploy/ -->
