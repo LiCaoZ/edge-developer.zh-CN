@@ -8,12 +8,12 @@ ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.technology: webview
 ms.date: 11/12/2021
-ms.openlocfilehash: 48aeedcd760621e1e191c6685bf13a64c446ace5
-ms.sourcegitcommit: 5351b3950b3bb7bc698415a2e5608816f1f9fca4
+ms.openlocfilehash: af01f13153288c64b80fb381d257ab902259c7f7
+ms.sourcegitcommit: 61d541b18043bdc4b2a6d65d6eb7422d54da2c2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "12473938"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "12639901"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介
 
@@ -106,6 +106,7 @@ WebView2 应用可以在以下版本的 Windows 上运行：
 
 <!-- possibly remove some of these and rely on TOC instead -->
 
+* [WebView2 功能和 API 概述](concepts/overview-features-apis.md)
 * [了解不同的 WebView2 SDK 版本](concepts/versioning.md)
 * [分发应用和 WebView2 运行时](concepts/distribution.md)
 * [开发安全的 WebView2 应用的最佳做法](concepts/security.md)

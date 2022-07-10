@@ -713,6 +713,9 @@
         - name: Microsoft Edge WebView2 简介
           href: webview2/index.md
           displayName: null
+        - name: WebView2 功能和 API 概述
+          href: webview2/concepts/overview-features-apis.md
+          displayName: null
         - name: 设置和示例代码
           items:
             - name: 设置开发环境
@@ -776,6 +779,9 @@
           items:
             - name: Microsoft Edge 与 WebView2 之间的区别
               href: webview2/concepts/browser-features.md
+              displayName: null
+            - name: WebView2 的主要类：环境、控制器和核心
+              href: webview2/concepts/environment-controller-core.md
               displayName: null
             - name: 导航事件
               href: webview2/concepts/navigation-events.md
