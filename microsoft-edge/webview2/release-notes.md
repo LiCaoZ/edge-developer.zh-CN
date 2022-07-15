@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 07/05/2022
-ms.openlocfilehash: d1c91aa3cfc19ef718d22071bb3d0e428004c0d0
-ms.sourcegitcommit: e1e47591adeff9468cc37d316ef73fcbb028faa8
+ms.openlocfilehash: 5ff03d3fbed0bc330b10cb012ef906c83fc24b8a
+ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "12635597"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "12668662"
 ---
 # <a name="release-notes-for-the-webview2-sdk"></a>WebView2 SDK 发行说明
 
@@ -420,7 +420,7 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 *  修复了在 Visual Studio 错误列表窗口中导致错误警告的问题。   ([问题 #1722](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1722)) 
 *  修复了在打开 PDF 下载时未引发 NewWindowRequested 的 bug。
-*  解决了 WinUI3 中未显示选择下拉列表的 bug。   ([问题 #1693](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1693)) 
+*  解决了 WinUI 3 中未显示选择下拉列表的 bug。   ([问题 #1693](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1693)) 
 *  添加了切换 WebView2 静音状态的功能，即使没有音频播放。
 
 

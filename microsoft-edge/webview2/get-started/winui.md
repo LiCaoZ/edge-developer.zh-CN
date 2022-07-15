@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 06/28/2022
-ms.openlocfilehash: a4f8d27e439e4f23bf6172907c1f3e470e50f861
-ms.sourcegitcommit: e1e47591adeff9468cc37d316ef73fcbb028faa8
+ms.date: 07/06/2022
+ms.openlocfilehash: 3711161f79eb2fb058d3326bd11f5c21533e85fc
+ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "12635548"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "12668452"
 ---
 # <a name="get-started-with-webview2-in-winui-3-windows-app-sdk-apps"></a>WinUI 3 (Windows 应用 SDK) 应用中的 WebView2 入门
 
@@ -345,9 +345,11 @@ maintenance link (keep)
 1.  这些调试器对话框是已知 bug。  单击 **“确定** ”按钮，然后单击 **“取消”** 按钮关闭对话框。
 
 
-### <a name="winrt-corewebview2-object-availability"></a>WinRT CoreWebView2 对象可用性
+#### <a name="winrt-corewebview2-object-availability"></a>WinRT CoreWebView2 对象可用性
 
-WinRT `CoreWebView2` 对象可能无法与 WebView2 API 的版本一起使用。  [WebView2 规范](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)<!-- changing master to main doesn't work 5/19/2022 --> 列出哪些 API 可用于 WebView2。
+WinRT `CoreWebView2` 对象可能无法与 WebView2 API 的版本一起使用。  有关可用 API 的列表，请参阅：
+* WinUI 3 API 参考 (Windows 应用 SDK) - [Microsoft.UI.Xaml.Controls.WebView2 类](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2) - Windows 桌面应用> WinRT API 的 API 参考。
+* [WebView2 规范](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)<!-- changing master to main doesn't work 5/19/2022 -->
 
 
 <!-- ====================================================================== -->
@@ -359,7 +361,9 @@ WinRT `CoreWebView2` 对象可能无法与 WebView2 API 的版本一起使用。
 
 *  运行注入的 JavaScript，然后运行 HTML 文档中包含的任何其他脚本。
 
-例如，接下来，添加在用户尝试打开非 HTTPS 站点时发送警报的脚本。  为此，请将脚本注入使用 [ExecuteScriptAsync 的](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) Web 内容。
+例如，接下来，添加在用户尝试打开非 HTTPS 站点时发送警报的脚本。  为此，请将脚本注入使用 [ExecuteScriptAsync 的](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.executescriptasync) Web 内容。
+<!-- todo: correct link? -->
+<!-- [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync). -->
 
 1.  按如下所示修改函 `EnsureHttps` 数：
 
@@ -390,6 +394,37 @@ WinRT `CoreWebView2` 对象可能无法与 WebView2 API 的版本一起使用。
     ![示例应用 WebView2 控件显示非 HTTPS 网站的警报对话框](winui-images/getting-started-script.png)
 
 恭喜你，你构建了第一个 WebView2 应用！
+
+
+<!-- ====================================================================== -->
+## <a name="winui-3-webview2-special-considerations"></a>WinUI 3 WebView2 特别注意事项
+
+#### <a name="smartscreen"></a>SmartScreen
+
+WebView2 将应用程序中导航到的 URL 发送到 [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) 服务，以确保客户保持安全。 如果要禁用此导航，可以通过环境变量执行此操作：
+
+* `Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--disable-features=msSmartScreenProtection");`
+
+必须在创建之前 `CoreWebView2` 设置此环境变量，这在最初设置 [WebView2.Source 属性](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.source#microsoft-ui-xaml-controls-webview2-source) 或最初调用 [WebView2.EnsureCoreWebView2Async 方法](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async#microsoft-ui-xaml-controls-webview2-ensurecorewebview2async) 时发生。
+
+
+#### <a name="api-limitations"></a>API 限制
+
+WinUI 3 中无法访问以下接口：
+
+* `ICoreWebView2Environment`
+* `ICoreWebView2EnvironmentOptions` and `ICoreWebView2EnvironmentOptions2`
+* `ICoreWebView2ControllerOptions`
+
+
+<!-- ====================================================================== -->
+## <a name="api-reference"></a>API 参考
+
+WinUI 3 API 参考 (Windows 应用 SDK) ：
+* [Microsoft.UI.Xaml.Controls.WebView2 类](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2) - Windows 桌面应用的 API 参考> WinRT API。
+
+所有平台/语言：
+* [WebView2 API 参考](../webview2-api-reference.md) - 每个平台的 API 参考。
 
 
 <!-- ====================================================================== -->

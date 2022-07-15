@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 05/09/2022
-ms.openlocfilehash: ef73d51c804cad3bfb68f21ce6274380c830c8c5
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.openlocfilehash: 8703edfee55825f6b2004be804279e9aa26ce81f
+ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522376"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "12668537"
 ---
 # <a name="call-native-side-winrt-code-from-web-side-code"></a>从 Web 端代码调用本机端 WinRT 代码
 
@@ -50,9 +50,9 @@ ms.locfileid: "12522376"
 <!-- ====================================================================== -->
 ## <a name="end-goal-of-this-example"></a>此示例的最终目标
 
-首先，我们将选择一些我们有兴趣从 JavaScript 代码调用的 WinRT API。  在此示例中，我们将使用命名空间中的 `Windows.Globalization` WinRT `Language` 类Windows UWP 应用程序。  [语言类](/uwp/api/windows.globalization.language)允许从客户端的本机 OS 获取语言信息。
+首先，我们将选择一些我们有兴趣从 JavaScript 代码调用的 WinRT API。  在本示例中，我们将使用命名空间中的 `Windows.Globalization` WinRT `Language` 类作为 Windows UWP 应用程序。  [语言类](/uwp/api/windows.globalization.language)允许从客户端的本机 OS 获取语言信息。
 
-在 WebView2 主机应用中，Web 端 JavaScript 代码随后可以访问本机端代码中的对象上 `Language` 的方法和属性。  在本示例演练结束时，你将使用 Microsoft Edge DevTools 控制**台**测试读取类的`displayName`主机属性`Language`：
+在 WebView2 主机应用中，Web 端 JavaScript 代码随后可以访问本机端代码中的对象上 `Language` 的方法和属性。  在本示例演练结束时，你将使用 Microsoft Edge DevTools 控制 **台** 测试读取类的 `displayName` 主机属性 `Language` ：
 
 ```javascript
 const Windows = chrome.webview.hostObjects.sync.Windows;
@@ -82,24 +82,24 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 <!-- ====================================================================== -->
 ## <a name="step-1-clone-the-repo-and-build-the-webview2-uwp-sample"></a>步骤 1：克隆存储库并生成 WebView2 UWP 示例
 
-1. 如果尚未安装Visual Studio 2015 或更高版本，请在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发人员环境_时[安装Visual Studio](../how-to/machine-setup.md#install-visual-studio)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
+1. 如果 Visual Studio 2015 或更高版本尚未安装，请在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发环境_时[安装 Visual Studio](../how-to/machine-setup.md#install-visual-studio)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
 
-1. 如果尚未安装 Microsoft Edge (Beta、Dev 或 Canary) 的预览频道，请参阅在_为 WebView2 设置开发人员环境_时，在单独的窗口或选项卡中[安装Microsoft Edge的预览频道](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
+1. 如果尚未安装 Microsoft Edge (Beta、Dev 或 Canary) 的预览频道，请参阅在_为 WebView2 设置开发环境_时[安装 Microsoft Edge 的预览频道](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
 
-   如果已有自己的应用代码库，则可以在Visual Studio中打开该项目，而不是从`WebView2Samples`存储库中的**webview2_sample_uwp**示例开始。
+   如果已有自己的应用代码库，则可以在 Visual Studio 中打开该项目，而不是从`WebView2Samples`存储库中的**webview2_sample_uwp**示例开始。
 
 1. 如果尚未完成，请将存储库下载或克隆 `WebView2Samples` 到本地驱动器。  在单独的窗口或选项卡中，请参阅“_为 WebView2 设置开发环境_”中的“[下载 WebView2Samples 存储库](../how-to/machine-setup.md#download-the-webview2samples-repo)”。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
 
-1. 在本地驱动器上，在 Visual Studio 中打开`.sln`文件，目录如下所示：
+1. 在本地驱动器上 `.sln` ，在 Visual Studio 中的目录中打开该文件，例如：
 
    *  `<your-repos-directory>/WebView2Samples-main/SampleApps/webview2_sample_uwp/webview2_sample_uwp.sln`
    *  `<your-repos-directory>/WebView2Samples/SampleApps/webview2_sample_uwp/webview2_sample_uwp.sln`
 
-   示例解决方案在Visual Studio中打开：
+   示例解决方案将在 Visual Studio 中打开：
 
    ![为 wv2winrt 工具添加新项目。](winrt-from-js-images/add-new-project-for-tool.png)
 
-1. 在Visual Studio中，选择“**调试** > **"开始"菜单调试**。  这将生成 **webview2_sample_uwp** 项目，然后运行项目的基线版本。  **WebView2 WinUI 2 UWP 示例**窗口随即打开：
+1. 在 Visual Studio 中，选择 **“调试** > **开始调试**”。  这将生成 **webview2_sample_uwp** 项目，然后运行项目的基线版本。  **WebView2 WinUI 2 UWP 示例**窗口随即打开：
 
    ![WebView2 WinUI 2 UWP 示例窗口。](winrt-from-js-images/webview2-winui-2-uwp-sample-app-window.png)
 
@@ -107,7 +107,7 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 
 如果需要更多信息，请参阅这些页面中的详细步骤，然后继续以下操作：
 * [WebView2 示例：WinUI 2 (UWP) 浏览器应用](../samples/webview2_sample_uwp.md) - 打开、编译和运行示例应用的步骤。
-* [开始 WinUI 2 中的 WebView2 (UWP) 应用 (公共预览) ](../get-started/winui2.md) - 设置基本 WebView2 应用。
+* [WinUI 2 中的 WebView2 入门 (UWP) 应用](../get-started/winui2.md) - 设置基本 WebView2 应用。
 * [GitHub > WebView2Samples 存储库> webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp)
 * [为 WebView2 设置开发环境](machine-setup.md) - 有关设置先决条件的详细信息。
 
@@ -119,7 +119,7 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 
 为 wv2winrt 工具添加项目，如下所示：
 
-1. 右键单击**webview2_sample_uwp**解决方案 (不是项目) ，然后选择 **AddNew****** >  项目。  “ **添加新项目** ”对话框随即打开。
+1. 右键单击 **webview2_sample_uwp** 解决方案 (项目) ，然后选择 **“添加** > **新项目**”。  “ **添加新项目** ”对话框随即打开。
 
 1. 在 **“搜索**”文本框中，输入**Windows 运行时组件 (C++/WinRT) **。
 
@@ -131,11 +131,11 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 
    “ **配置新项目** ”窗口随即打开。
 
-1. 在**Project名称**文本框中，将Project命名为 **WinRTAdapter**。  **注意：** 目前，必须使用此特定项目名称：
+1. 在 **“项目名称** ”文本框中，将 Project 命名为 **WinRTAdapter**。  **注意：** 目前，必须使用此特定项目名称：
 
    ![在“配置新项目”窗口中，将项目命名为“WinRTAdapter”。](winrt-from-js-images/config-proj-name-winrtadapter.png)
 
-1. 单击 **“创建”** 按钮。  “**新建通用 Windows 平台 Project**”对话框随即打开：
+1. 单击 **“创建”** 按钮。  “**新建通用 Windows 平台项目**”对话框随即打开：
 
    ![“新建 UWP 项目”对话框。](winrt-from-js-images/new-uwpp.png)
 
@@ -149,19 +149,19 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 
 
 <!-- =============================================== -->
-## <a name="step-3-install-windows-implementation-library-for-winrtadapter-project"></a>步骤 3： 为 WinRTAdapter 项目安装Windows实现库
+## <a name="step-3-install-windows-implementation-library-for-winrtadapter-project"></a>步骤 3： 安装适用于 WinRTAdapter 项目的 Windows 实现库
 
-在 WinRTAdapter 项目中，安装Windows实现库 (WIL) ，如下所示：
+在 WinRTAdapter 项目中，安装 WINDOWS 实现库 (WIL) ，如下所示：
 
-1. 在**解决方案资源管理器**中，右键单击 **WinRTAdapter** 项目，然后选择 **“管理NuGet包**”。  NuGet 程序包管理器窗口在**Visual Studio**中打开。
+1. 在**解决方案资源管理器**中，右键单击 **WinRTAdapter** 项目，然后选择 **“管理 NuGet 包**”。  在 Visual Studio 中打开 **NuGet 包管理器** 窗口。
 
-1. 在**NuGet 程序包管理器**窗口的 **“搜索**”框中，输入**Windows实现库**，然后选择**Windows实现库**卡：
+1. 在 **“NuGet 包管理器** ”窗口的 **“搜索** ”框中，输入 **Windows 实现库**，然后选择 **Windows 实现库** 卡：
 
-   ![NuGet 程序包管理器，选择“Windows实现库”包。](winrt-from-js-images/pkg-mgr-wil.png)
+   ![NuGet 包管理器，选择“Windows 实现库”包。](winrt-from-js-images/pkg-mgr-wil.png)
 
 1. 单击“ **安装** ”按钮。
 
-现在已为 **WinRTAdapter** 项目安装 WIL。  Windows实现库 (WIL) 是一个仅限标头的 C++ 库，可以更轻松地使用 COM 编码Windows。  它为Windows COM 编码模式提供可读、类型安全的 C++ 接口。
+现在已为 **WinRTAdapter** 项目安装 WIL。  Windows 实现库 (WIL) 是仅限标头的 C++ 库，可更轻松地使用适用于 Windows 的 COM 编码。  它为 Windows COM 编码模式提供可读、类型安全的 C++ 接口。
 
 
 <!-- =============================================== -->
@@ -169,7 +169,7 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 
 在 WinRTAdapter 项目中，还安装 WebView2 SDK 的预发行版，如下所示：
 
-1. 在解决方案资源管理器中，右键单击 **WinRTAdapter** 项目，然后选择 **“管理NuGet包**”。  打开NuGet 程序包管理器窗口。
+1. 在解决方案资源管理器中，右键单击 **WinRTAdapter** 项目，然后选择 **“管理 NuGet 包**”。  “NuGet 包管理器”窗口随即打开。
 
 1. 选中 **“包括预发行版** ”复选框。
 
@@ -181,7 +181,7 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 
 1. 单击“ **安装** ”按钮：
 
-   ![NuGet 程序包管理器，选择 WinRTAdapter 项目的 WebView2 SDK 包。](winrt-from-js-images/pkg-mgr-wv2-sdk.png)
+   ![为 WinRTAdapter 项目选择 WebView2 SDK 包的 NuGet 包管理器。](winrt-from-js-images/pkg-mgr-wv2-sdk.png)
 
 现在已为 **WinRTAdapter** 项目安装 WebView2 预发行版 SDK。
 
@@ -191,7 +191,7 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 
 在 **webview2_sample_uwp** 项目中，安装与为 **WinRTAdapter** 项目安装的 WebView2 SDK 相同的预发行版本，如下所示：
 
-1. 在解决方案资源管理器中，右键单击**webview2_sample_uwp**项目，然后选择 **“管理NuGet包**”。  打开NuGet 程序包管理器窗口。
+1. 在解决方案资源管理器中，右键单击**webview2_sample_uwp**项目，然后选择 **“管理 NuGet 包**”。  “NuGet 包管理器”窗口随即打开。
 
 1. 选中 **“包括预发行版** ”复选框。
 
@@ -203,7 +203,7 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 
 1. 单击“ **安装** ”按钮。
 
-   屏幕应类似于上述部分，只是现在 **，NuGet 程序包管理器**为**webview2_sample_uwp**项目打开，而不是 **WinRTAdapter** 项目。
+   屏幕应类似于上述部分，只是现在为**webview2_sample_uwp**项目打开 **NuGet 包**管理器，而不是 **WinRTAdapter** 项目。
 
 现已为 **webview2_sample_uwp** 项目安装 WebView2 预发行版 SDK。
 
@@ -223,7 +223,7 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 
 1. 在解决方案资源管理器中，右键单击 **WinRTAdapter** 项目，然后选择 **“属性**”。  **“WinRTAdapter 属性页**”对话框随即打开。
 
-1. 在左侧，选择 **Common** **PropertiesWebView2** > 。
+1. 在左侧，选择 **“公共属性** > **WebView2**”。
 
 1. 将 **“使用 WebView2 WinRT API** ”设置为 **“否**”。  因此，WebView2 SDK 不会将 WebView2 WinRT 组件复制到项目的输出。  此 WinRTAdapter 项目不调用任何 WebView2 WinRT API，因此它不需要 WinRT 组件。
 
@@ -316,9 +316,9 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 
 接下来，使用 DevTools 控制台演示 Web 端代码可以调用包含的指定主机端 API。
 
-1. 单击 WebView2 示例应用窗口的主部分以使其成为焦点，然后按下`Ctrl+Shift+I`打开Microsoft Edge DevTools。  或者，右键单击页面，然后选择 **“检查**”。  Microsoft Edge DevTools 窗口随即打开。
+1. 单击 WebView2 示例应用窗口的主部分以使其成为焦点，然后按下 `Ctrl+Shift+I` 以打开 Microsoft Edge DevTools。  或者，右键单击页面，然后选择 **“检查**”。  Microsoft Edge DevTools 窗口随即打开。
 
-1. 如果Microsoft Edge DevTools 窗口不可见，请按下`Alt+Tab`以显示 DevTools 窗口。  如果需要，请移动 DevTools 窗口。
+1. 如果 Microsoft Edge DevTools 窗口不可见，请按下 `Alt+Tab` 以显示 DevTools 窗口。  如果需要，请移动 DevTools 窗口。
 
 1. 在 DevTools 控制台中，粘贴以下代码，然后按 `Enter`下：
 
@@ -427,8 +427,8 @@ webView->CoreWebView2->AddScriptToExecuteOnDocumentCreatedAsync(
 
 示例： 
 * [WebView2Samples > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) - WebView2 UWP WinUi2 浏览器。
-* [WebView2 示例：WinUI 2 (UWP) 浏览器应用](../samples/webview2_sample_uwp.md) - 有关如何下载、编译和运行示例的一般演练。
-* [开始 WinUI 2 中的 WebView2 (UWP) 应用 (公共预览) ](../get-started/winui2.md) - 下载、编译和运行示例的教程。
+* [WinUI 2 (UWP) 示例应用](../samples/webview2_sample_uwp.md) - 有关如何下载、编译和运行示例的一般演练。
+* [WinUI 2 (UWP) 应用中的 WebView2 入](../get-started/winui2.md) 门 - 下载、编译和运行示例的教程。
 
 API 参考：
 * WinRT： [CoreWebView2.AddHostObjectToScript 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript)

@@ -1,54 +1,54 @@
 ---
 title: WPF 应用中的 WebView2 入门
-description: 开始适用于 Windows Presentation Foundation (WPF) 应用的 WebView2 指南。
+description: 适用于 Windows Presentation Foundation (WPF) 应用的 WebView2 入门指南。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 842c996356866b4eb888d8d199a5a62cca9fc5aa
-ms.sourcegitcommit: 62f55a8303644d4d3f2ea29e624efcc54f465aa1
+ms.openlocfilehash: dcb1d91ae1dd940983b47151711813be724886d4
+ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "12521841"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "12668865"
 ---
 # <a name="get-started-with-webview2-in-wpf-apps"></a>WPF 应用中的 WebView2 入门
 
 本文介绍如何设置开发工具并为Windows Presentation Foundation (WPF) 创建初始 WebView2 应用，并了解 WebView2 概念。
 
-* GitHub的相应入门示例：[在 WPF (WPF_GettingStarted/WPFSample.sln) 中使用 WebView2 入门 ](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted#readme)
+* GitHub 的相应入门示例：[入门 WPF (WPF_GettingStarted/WPFSample.sln) 中的 WebView2 ](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted#readme)
 
 
 <!-- ====================================================================== -->
-## <a name="step-1---install-visual-studio"></a>步骤 1 - 安装Visual Studio
+## <a name="step-1---install-visual-studio"></a>步骤 1 - 安装 Visual Studio
 
-本教程需要Microsoft Visual Studio，而不是Microsoft Visual Studio代码。
+本教程需要 Microsoft Visual Studio，而不是 Microsoft Visual Studio Code。
 
-1. 安装[Visual Studio](https://visualstudio.microsoft.com) 2017 或更高版本。  可以接受默认值。
+1. 安装 [Visual Studio](https://visualstudio.microsoft.com) 2017 或更高版本。  可以接受默认值。
 
 
 <!-- ====================================================================== -->
-## <a name="step-2---install-a-preview-channel-of-microsoft-edge"></a>步骤 2 - 安装预览频道Microsoft Edge
+## <a name="step-2---install-a-preview-channel-of-microsoft-edge"></a>步骤 2 - 安装 Microsoft Edge 的预览频道
 
-1. 在受支持的[操作系统 (OS) 上下载任何Microsoft Edge预览](https://www.microsoftedgeinsider.com/download)体验成员 (预览) 频道 (Beta、Dev 或 Canary) ：
+1. 在受支持的操作系统 [上下载任何 Microsoft Edge 预览体验成员 (预览) 频道](https://www.microsoftedgeinsider.com/download) (Beta、Dev 或 Canary) ， (OS) ：
    *  Windows 7
    *  Windows 8.1
    *  Windows 10
    *  Windows 11
 
-   建议使用Microsoft Edge的 Canary 通道。  所需的最低版本为 82.0.488.0。
+   建议使用 Microsoft Edge 的 Canary 通道。  所需的最低版本为 82.0.488.0。
 
 
 <!-- ====================================================================== -->
 ## <a name="step-3---create-a-single-window-webview2-app"></a>步骤 3 - 创建单窗口 WebView2 应用
 
-"开始"菜单包含单个主窗口的基本桌面项目。
+从包含单个主窗口的基本桌面项目开始。
 
 1. 打开 Microsoft Visual Studio。 
 
-1. 在打开面板中，单击 **“新建项目**”。  或者，在主Visual Studio窗口中，选择 **FileNew** > **** >  **Project**。
+1. 在打开面板中，单击 **“新建项目**”。  或者，在 Visual Studio 主窗口中，选择 **“文件** > **新建** > **项目**”。
 
 1. `WPF App`搜索 。
  
@@ -68,7 +68,7 @@ ms.locfileid: "12521841"
 
    ![“配置新项目”WPF 应用程序对话框。](media/wpf-getting-started-create-core.png)
 
-1. 输入**Project名称**和**位置**的值，然后单击 **“下一步**”。
+1. 输入 **项目名称** 和 **位置**的值，然后单击 **“下一步**”。
 
    随即显示“ **其他信息** ”对话框，其中包含 **“目标框架”** 下拉列表：
 
@@ -80,13 +80,13 @@ ms.locfileid: "12521841"
 
    ![“配置新项目 WPF 应用 .NET Framework”对话框显示项目名称、位置和解决方案名称文本框。](media/wpf-getting-started-create-fw.png)
 
-1. 输入**Project名称**和**位置**的值。
+1. 输入 **项目名称** 和 **位置**的值。
 
 1. 在 **“框架”** 下拉列表中，选择 **.NET Framework 4.6.2** 或更高版本。
 
 1. 单击 **“创建”** 按钮。
 
-   Visual Studio创建项目。
+   Visual Studio 创建项目。
 
 
 <!-- maintenance link; keep: main copy:
@@ -95,26 +95,26 @@ ms.locfileid: "12521841"
 <!-- ====================================================================== -->
 ## <a name="step-4---install-the-webview2-sdk"></a>步骤 4 - 安装 WebView2 SDK
 
-使用NuGet将 WebView2 SDK 添加到项目。
+使用 NuGet 将 WebView2 SDK 添加到项目。
 
-1. 在**解决方案资源管理器**中，右键单击项目名称，然后选择 **“管理NuGet包**：
+1. 在**解决方案资源管理器**中，右键单击项目名称，然后选择 **“管理 NuGet 包**”：
 
-   ![右键单击菜单上的“管理NuGet包”命令。](media/wpf-getting-started-mng-nuget.png)
+   ![右键单击菜单上的“管理 NuGet 包”命令。](media/wpf-getting-started-mng-nuget.png)
 
    <!-- todo: The above image is supposed to show the WPF project instead of the WinForms project.  generally, avoid sharing images across multiple .md files -->
    _ (上面的图像应该显示 WPF 项目，而不是 WinForms 项目。) _
 
 1. 在左上角，单击“ **浏览”** 选项卡。 在搜索栏中键入 `Microsoft.Web.WebView2`，然后单击 **Microsoft.Web.WebView2** 卡。
 
-   NuGet包管理器对话框显示搜索结果，包括 **Microsoft.Web.WebView2** 卡。  对话框具有版本号和 **“安装”** 按钮。
+   NuGet 包管理器对话框显示搜索结果，包括 **Microsoft.Web.WebView2** 卡。  对话框具有版本号和 **“安装”** 按钮。
    
-   ![NuGet包管理器对话框显示 Microsoft.Web.WebView2 卡。](media/install-nuget.png)
+   ![NuGet 包管理器对话框显示 Microsoft.Web.WebView2 卡。](media/install-nuget.png)
 
 1. 接受默认版本，然后单击 **“安装** ”按钮。
 
 1. 在 **“预览更改** ”对话框中，单击 **“确定**”。
 
-1. 选择 **“文件** > **保存全部** ”以保存项目。
+1. 选择“**全部保存****文件** > ”以保存项目。
 
 1. 按 **F5** 生成并运行项目。
 
@@ -165,7 +165,7 @@ ms.locfileid: "12521841"
    </DockPanel>
    ```
 
-1. 选择 **“文件** > **保存全部** ”以保存项目。
+1. 选择“**全部保存****文件** > ”以保存项目。
 
 1. 按 **F5** 生成并运行项目。
 
@@ -249,7 +249,7 @@ ms.locfileid: "12521841"
    }
    ```
 
-1. 选择 **“文件** > **保存全部** ”以保存项目。
+1. 选择“**全部保存****文件** > ”以保存项目。
 
 1. 按 **F5** 生成并运行项目。
 
@@ -336,7 +336,7 @@ maintenance link (keep)
     
    在构造函数中， `EnsureHttps` 在 WebView2 控件上 `NavigationStarting` 注册为事件处理程序。
 
-1. 选择 **“文件** > **保存全部** ”以保存项目。
+1. 选择“**全部保存****文件** > ”以保存项目。
 
 1. 按 **F5** 生成并运行项目。
 
@@ -371,7 +371,7 @@ maintenance link (keep)
    }
    ```
 
-1. 选择 **“文件** > **保存全部** ”以保存项目。
+1. 选择“**全部保存****文件** > ”以保存项目。
 
 1. 按 **F5** 生成并运行项目。
 
@@ -385,9 +385,9 @@ maintenance link (keep)
 
 主机和 Web 内容可以使用以下方式进行 `postMessage`通信：
 
-*  WebView2 控件中的 Web 内容可以使用 `window.chrome.webview.postMessage`>a0>帖子消息发送给主机。  主机使用在主机上注册 `WebMessageReceived` 的任何消息来处理消息。
+*  WebView2 控件中的 Web 内容可以使用 `window.chrome.webview.postMessage`以下方式将消息发布到主机。  主机使用在主机上注册 `WebMessageReceived` 的任何消息来处理消息。
 
-*  在 WebView2 控件中使用或`CoreWebView2.PostWebMessageAsJSON`将`CoreWebView2.PostWebMessageAsString`消息帖子到 Web 内容。 邮件由添加到 `window.chrome.webview.addEventListener`的处理程序捕获。
+*  主机使用或`CoreWebView2.PostWebMessageAsJSON`将消息发布到 WebView2 控件`CoreWebView2.PostWebMessageAsString`中的 Web 内容。 邮件由添加到 `window.chrome.webview.addEventListener`的处理程序捕获。
 
 通信机制使用本机功能将消息从 Web 内容传递到主机。
 
@@ -443,7 +443,7 @@ maintenance link (keep)
    }
    ```
 
-1. 选择 **“文件** > **保存全部** ”以保存项目。
+1. 选择“**全部保存****文件** > ”以保存项目。
 
 1. 按 **F5** 生成并运行项目。
 
@@ -463,11 +463,11 @@ developer.microsoft.com：
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - developer.microsoft.com 的 WebView2 功能的初始简介。
 
 本地页面：
-* [WebView2 示例：WPF .NET 浏览器应用](../samples/webview2wpfbrowser.md)
+* [WPF 示例应用](../samples/webview2wpfbrowser.md)
 * [管理用户数据文件夹](../concepts/user-data-folder.md)
 * [WebView2 示例代码](../code-samples-links.md) - 存储库指南 `WebView2Samples` 。
 * [WebView2 应用的开发最佳做法](../concepts/developer-guide.md)
-* [另请参阅](../index.md#see-also)_Microsoft Edge WebView2 简介_。
+* [另请参阅](../index.md#see-also) _Microsoft Edge WebView2 简介_。
 
 API 参考：
 * [API 参考：WebView2.Wpf 命名空间中的 WebView2 类](/dotnet/api/microsoft.web.webview2.wpf.webview2)

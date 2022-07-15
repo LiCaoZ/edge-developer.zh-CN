@@ -1,5 +1,5 @@
 ---
-title: WebView2 示例：WebView2 部署 Visual Studio 安装程序
+title: WebView2 部署Visual Studio安装程序
 description: 此 WebView2 示例演示如何使用 Visual Studio 安装程序部署 WebView2 应用。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 06/17/2022
-ms.openlocfilehash: 33aaa480e1e99bc290dd871d2ef38f2011a27fb4
-ms.sourcegitcommit: 05753adf2734d9bd118d2b224883eeb26028000c
+ms.openlocfilehash: c3274721c86c0eb93dfba62f027d66a7360e4a46
+ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630097"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "12668735"
 ---
-# <a name="webview2-sample-webview2-deployment-visual-studio-installer"></a>WebView2 示例：WebView2 部署 Visual Studio 安装程序
+# <a name="webview2-deployment-visual-studio-installer"></a>WebView2 部署Visual Studio安装程序
 
 此 WebView2 示例演示如何使用 Visual Studio 安装程序部署 WebView2 应用。
 
@@ -125,7 +125,7 @@ Microsoft Visual Studio 是必需的。 此示例不支持 Microsoft Visual Stud
    1. 在 Visual Studio 中，选择 **“文件** > **新建** > **项目**”。 
    1. `Setup Project`搜索 。
 
-       ![WebView2 部署Visual Studio 安装程序：创建安装项目](./wv2deploymentvsinstaller-create-setup-project.png)
+       ![WebView2 部署Visual Studio 安装程序：创建安装项目](wv2deploymentvsinstallersample-images/create-setup-project.png)
 
    1. 创建安装项目。
 
@@ -133,11 +133,11 @@ Microsoft Visual Studio 是必需的。 此示例不支持 Microsoft Visual Stud
    1. 在 Visual Studio 中，选择 **“项目** > **属性**”。
    1. 在“属性”页中，选择 **“先决条件**”。
 
-       ![WebView2 部署Visual Studio 安装程序：设置先决条件](./wv2deploymentvsinstaller-setup-prerequisites.png)
+       ![WebView2 部署Visual Studio 安装程序：设置先决条件](wv2deploymentvsinstallersample-images/setup-prerequisites.png)
 
    1. 检查 **Edge WebView2 运行时**，并取消检查其他先决条件。 选择“确定”****。
    
-       ![WebView2 部署Visual Studio 安装程序：选择先决条件](./wv2deploymentvsinstaller-select-prerequisites.png)
+       ![WebView2 部署Visual Studio 安装程序：选择先决条件](wv2deploymentvsinstallersample-images/select-prerequisites.png)
 
 1. 按 **F5** 保存并生成安装程序项目。
 

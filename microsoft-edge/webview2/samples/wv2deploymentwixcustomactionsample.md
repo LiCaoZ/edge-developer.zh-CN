@@ -1,5 +1,5 @@
 ---
-title: WebView2 示例：用于部署 WebView2 运行时的 WiX 自定义操作
+title: 用于部署 WebView2 运行时的 WiX 自定义操作
 description: 演示如何使用 WiX 自定义操作部署 WebView2 运行时的 WebView2 示例。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 818925d3bbcbe2891d3e840560be67a4bec74a6a
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.openlocfilehash: ddaa25d477d6aa641f9454445328e50aabb80b35
+ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522278"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "12668690"
 ---
-# <a name="webview2-sample-wix-custom-action-to-deploy-the-webview2-runtime"></a>WebView2 示例：用于部署 WebView2 运行时的 WiX 自定义操作
+# <a name="wix-custom-action-to-deploy-the-webview2-runtime"></a>用于部署 WebView2 运行时的 WiX 自定义操作
 
 这是一个 WebView2 示例，演示如何使用 WiX 自定义操作部署 WebView2 运行时。
 
@@ -26,13 +26,13 @@ Directory &amp; .proj： **WV2DeploymentWiXCustomActionSample/WV2DeploymentWiXCu
 
 当前页面上的步骤是通用的。  请参阅 README 部分中特定于示例的步骤，这些步骤可能会覆盖当前页面。
 
-1. 在单独的窗口或选项卡中，在 GitHub：[WV2DeploymentWiXCustomActionSample 的自述文件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample#readme)中读取此项目的呈现 README.md 文件。  然后返回到此页面，并继续执行以下步骤。
+1. 在单独的窗口或选项卡中，在 GitHub： [WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample#readme) 中读取此项目的呈现 README.md 文件。  然后返回到此页面，并继续执行以下步骤。
 
    * [自述文件>先决条件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample#prerequisites)
 
    * [自述>生成步骤](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXCustomActionSample#build-steps)
 
-   还可以查看Visual Studio中未呈现)  (README.md 源文件。  在**文件管理器**或Visual Studio > 解决方案资源管理器中，打开该文件：<!-- todo: is there a .md preview capability locally? -->
+   还可以在 Visual Studio 中查看 README.md 源文件 (未呈现的) 。  在**文件管理器**或 Visual Studio > 解决方案资源管理器中，打开该文件：<!-- todo: is there a .md preview capability locally? -->
 
    `<your-repos-directory>/WebView2Samples/SampleApps/WV2DeploymentWiXCustomActionSample/README.md`
 
@@ -42,17 +42,17 @@ Directory &amp; .proj： **WV2DeploymentWiXCustomActionSample/WV2DeploymentWiXCu
 
 
 <!-- ====================================================================== -->
-## <a name="step-2---install-visual-studio"></a>步骤 2 - 安装Visual Studio
+## <a name="step-2---install-visual-studio"></a>步骤 2 - 安装 Visual Studio
 
-Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studio代码。
+Microsoft Visual Studio 是必需的。  此示例不支持 Microsoft Visual Studio Code。
 
-1. **Visual Studio** - 如果尚未安装Visual Studio (所需的最低版本) ，请参阅在_为 WebView2 设置开发环境_时[安装Visual Studio](../how-to/machine-setup.md#install-visual-studio)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
+1. **Visual Studio** - 如果 Visual Studio (尚未安装所需的最低版本) ，请在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发环境_时[安装 Visual Studio](../how-to/machine-setup.md#install-visual-studio)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
 
 
 <!-- ====================================================================== -->
-## <a name="step-3---install-a-preview-channel-of-microsoft-edge"></a>步骤 3 - 安装预览频道Microsoft Edge
+## <a name="step-3---install-a-preview-channel-of-microsoft-edge"></a>步骤 3 - 安装 Microsoft Edge 的预览频道
 
-1. **Microsoft Edge预览频道** - 如果尚未在单独的窗口或选项卡中安装 Microsoft Edge (Beta、Dev 或 Canary) 的预览频道，请参阅在_为 WebView2 设置开发环境_时[安装Microsoft Edge预览频道](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
+1. **Microsoft Edge 的预览频道** - 如果尚未安装 Microsoft Edge (Beta、Dev 或 Canary) 的预览频道，请参阅在_为 WebView2 设置开发环境_时[安装 Microsoft Edge 的预览频道](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
 
 
 <!-- ====================================================================== -->

@@ -1,18 +1,18 @@
 ---
 title: WebView2 示例代码
-description: GitHub上托管的 WebView2 示例代码的链接。
+description: GitHub 上托管的 WebView2 示例代码的链接。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 3bd37cee35072955b2348072fe2ab357650aeeb6
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.openlocfilehash: ad2ed5bba436994660f182ed60f6b1f41adc153e
+ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522446"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "12668851"
 ---
 # <a name="sample-code-for-webview2"></a>WebView2 示例代码
 
@@ -20,21 +20,21 @@ ms.locfileid: "12522446"
 
 
 <!-- ====================================================================== -->
-## <a name="sample-code-for-get-started-guides"></a>入门指南的示例代码
+## <a name="completed-versions-of-getstarted-tutorials"></a>GetStarted 教程的已完成版本
 
-WebView2 入门指南可帮助你创建与存储库中`WebView2Samples`相同的已完成的工作项目，你可以下载或克隆这些项目。
+WebView2 入门指南可帮助你使用各种框架创建主机应用来托管 WebView2。  大多数入门指南在存储库中 `WebView2Samples` 都有一个已完成的工作项目。
 
-| 平台 | 文章 | 代码 |
+| 平台 | 教程文章 | 已完成的教程项目 |
 |---|---|---|
-| Win32 | [Win32 应用中的 WebView2 入门](get-started/win32.md) | [WebView2Samples > Win32_GettingStarted的](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted)初学者代码 |
-| WinForms | [WinForms 应用中的 WebView2 入门](get-started/winforms.md) | [WebView2Samples > WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted)上的 .NET 初学者代码 |
-| WinUI 2 | [WinUI 2 (UWP) 应用中的 WebView2 入门（公共预览版）](get-started/winui2.md) | 使用 WinUI 2 NuGet包。  没有示例代码。 |
-| WinUI 3 | [在 WinUI 3 (Windows 应用 SDK) 应用中使用 WebView2 开始](get-started/winui.md) | [WebView2Samples > WinUI3_GettingStarted的](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted)初学者代码 |
-| WPF | [WPF 应用中的 WebView2 入门](get-started/wpf.md) | [WebView2Samples 上的](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted) .NET 初学者代码> WPF_GettingStarted |
+| Win32 | [Win32 应用中的 WebView2 入门](get-started/win32.md) | 完成的教程位于 [WebView2Samples > Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) |
+| WinForms | [WinForms 应用中的 WebView2 入门](get-started/winforms.md) | 完成的教程位于 [WebView2Samples > WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted) |
+| WinUI 2 | [WinUI 2 (UWP) 应用中的 WebView2 入门](get-started/winui2.md) | 使用 WinUI 2 NuGet 包。  WebView2Samples 存储库中没有已完成的教程项目或目录。 |
+| WinUI 3 | [WinUI 3 (Windows 应用 SDK) 应用中的 WebView2 入门](get-started/winui.md) | 完成的教程位于 [WebView2Samples > WinUI3_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted) |
+| WPF | [WPF 应用中的 WebView2 入门](get-started/wpf.md) | 完成的教程位于 [WebView2Samples > WPF_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted) |
 
 
 <!-- ====================================================================== -->
-## <a name="apps-in-the-webview2samplessln-file"></a>WebView2Samples.sln 文件中的应用
+## <a name="the-win32-and-multi-project-webview2samplessln-file"></a>Win32 和多项目 WebView2Samples.sln 文件
 
 存储 `WebView2Samples` 库包含演示 Win32、WPF、WinForms 和 WinUI 的 WebView2 控件和 WebView2 API 的示例。  这些示例是使用 Microsoft Edge WebView2 控件的混合应用程序。
 
@@ -44,38 +44,49 @@ WebView2 入门指南可帮助你创建与存储库中`WebView2Samples`相同的
 
 1. 在生成的存储库目录结构的本地副本中，查找 `*.sln` 文件。
 
-1. 打开其中 `.sln` 一个文件。  例如，打开多平台解决方案文件 [WebView2Samples/SampleApps/WebView2Samples.sln 的](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2Samples.sln)本地副本 (下载为Microsoft Visual Studio中的路径`WebView2Samples-main/SampleApps/WebView2Samples.sln`) 。  在 Visual Studio 中打开该解决方案文件时，**解决方案资源管理器**包含以下 WebView2 示例，作为项目：
+1. 打开其中 `.sln` 一个文件。  例如，打开本地副本的多平台解决方案文件 [WebView2Samples/SampleApps/WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2Samples.sln) (下载为 Microsoft Visual Studio 中的路径 `WebView2Samples-main/SampleApps/WebView2Samples.sln`) 。  在 Visual Studio 中打开该解决方案文件时，**解决方案资源管理器**包含以下 WebView2 示例，作为项目：
 
    ![解决方案资源管理器 WebView2Samples 存储库，将 WebView2 示例显示为项目。](media/solution-file-webview2samples.png)
 
-此特定`.sln`文件不包括入门项目，这些项目是单独`.sln`的文件，每个平台一个。
+此特定 `.sln` 文件不包括入门项目，即每个平台一个单独 `.sln` 的文件。
 
-存储 `WebView2Samples` 库包含以下项目。  这些项目包含在文件中 `WebView2Samples.sln` ，每个平台也有一个专用 `.sln` 文件。
 
-| 示例类型 | 示例Project | 描述 |
+<!-- ====================================================================== -->
+## <a name="samples-in-the-webview2samples-repo"></a>WebView2Samples 存储库中的示例
+
+存储 `WebView2Samples` 库包含以下项目。  其中一些项目包含在文件中 `WebView2Samples.sln` ，但每个平台也有一个专用 `.sln` 文件。
+
+#### <a name="regular-samples"></a>常规示例
+
+| 示例类型 | 示例项目 | 描述 |
 |---|---|---|
-| UWP WinUI 2 浏览器 | [webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/webview2_sample_uwp#readme) | 在 UWP 应用程序中嵌入 WebView2 控件。<br/><br/>  作为 UWP Visual Studio 2019 项目生成。  在 WebView2 环境中使用 C++ 和 HTML/CSS/JavaScript。 |
-| Win32 C++ | [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme) | 在 Win32 本机应用程序中嵌入 WebView2 控件。  演示了 WebView2 事件处理程序和 API 方法的选择，这些方法允许本机 Win32 应用程序直接与 WebView2 控件交互，反之亦然。<br/><br/>  在 [2019 Visual Studio作为 Win32](https://visualstudio.microsoft.com/vs/) 项目生成。  在 WebView2 环境中使用 C++ 和 HTML/CSS/JavaScript。<br/><br/>该 `.sln` 文件位于父目录 [SampleApps](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps) 目录中。 |
-| 使用 Visual Composition 的 Win32 C++ | [WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2SampleWinComp) | 在 Win32 本机应用程序中嵌入 WebView2 控件。  使用[Windows 运行时组合 API](/uwp/api/windows.ui.composition)（也称为视觉对象层）利用最新的Windows 10或更高版本的 UI 功能，并在 C++ Win32 应用程序中创建更好的外观、感觉和功能。<br/><br/>  在 2019 Visual Studio作为 Win32 项目生成。  在 WebView2 环境中使用 C++ 和 HTML/CSS/JavaScript。 |
-| WinForms | [WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser) | 在Windows 窗体应用程序中嵌入 WebView2 控件。<br/><br/>  Visual Studio 2019 年作为Windows 窗体项目生成。  在 WebView2 环境中使用 C# 和 HTML/CSS/JavaScript。 |
-| Windows Presentation Foundation (WPF) .NET | [WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser) | 在 WPF 应用程序中嵌入 WebView2 控件。<br/><br/>  在 2019 Visual Studio构建为 WPF 项目。  在 WebView2 环境中使用 C# 和 HTML/CSS/JavaScript。 |
-| WPF 中的 Chrome DevTools 协议 (CDP)  | [WV2CDPExtensionWPFSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample) | 使用 `DevToolsProtocolHelper` WebView2 中的对象使用 Chrome [DevTools 协议](../devtools-protocol-chromium/index.md)函数。  演示 WPF 中 WebView2 CDP 扩展的使用模式。  此应用程序是使用 [WebView2 CDP 扩展](https://aka.ms/webviewcdp) 构建的，该扩展定义所有 CDP 方法、事件和类型。<br/><br/>  在 2019 Visual Studio构建为 WPF 项目。  在 WebView2 环境中使用 C#。 |
-| 用于部署运行时的 WiX Burn捆绑包 | [WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WV2DeploymentWiXBurnBundleSample/README.md) | 为 [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/README.md) 创建 [WiX](https://wixtoolset.org/) 安装程序，并使用 [WiX Burn捆绑包](https://wixtoolset.org/documentation/manual/v3/bundle/)链接安装 Evergreen WebView2 运行时。<br/><br/>  使用应用部署 [Evergreen WebView2 运行时](concepts/distribution.md) 时使用。 |
+| WinUI 2 (UWP) 浏览器 | [webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/webview2_sample_uwp#readme) | 在 UWP 应用程序中嵌入 WebView2 控件。<br/><br/>  作为 UWP Visual Studio 2019 项目生成。  在 WebView2 环境中使用 C++ 和 HTML/CSS/JavaScript。 |
+| Win32 C++ | [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme) | 在 Win32 本机应用程序中嵌入 WebView2 控件。  演示了 WebView2 事件处理程序和 API 方法的选择，这些方法允许本机 Win32 应用程序直接与 WebView2 控件交互，反之亦然。<br/><br/>  在 [Visual Studio 2019](https://visualstudio.microsoft.com/vs/) 中作为 Win32 项目生成。  在 WebView2 环境中使用 C++ 和 HTML/CSS/JavaScript。<br/><br/>该 `.sln` 文件位于父目录 [SampleApps](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps) 目录中。 |
+| 使用 Visual Composition 的 Win32 C++ | [WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2SampleWinComp) | 在 Win32 本机应用程序中嵌入 WebView2 控件。  使用[Windows 运行时组合 API](/uwp/api/windows.ui.composition)（也称为视觉对象层）利用最新的Windows 10或更高版本的 UI 功能，并在 C++ Win32 应用程序中创建更好的外观、感觉和功能。<br/><br/>  在 Visual Studio 2019 中作为 Win32 项目生成。  在 WebView2 环境中使用 C++ 和 HTML/CSS/JavaScript。 |
+| WinForms | [WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser) | 在Windows 窗体应用程序中嵌入 WebView2 控件。<br/><br/>  在 Visual Studio 2019 中构建为Windows 窗体项目。  在 WebView2 环境中使用 C# 和 HTML/CSS/JavaScript。 |
+| Windows Presentation Foundation (WPF) .NET | [WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser) | 在 WPF 应用程序中嵌入 WebView2 控件。<br/><br/>  在 Visual Studio 2019 中构建为 WPF 项目。  在 WebView2 环境中使用 C# 和 HTML/CSS/JavaScript。 |
+| WPF 中的 Chrome DevTools 协议 (CDP)  | [WV2CDPExtensionWPFSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample) | 使用 `DevToolsProtocolHelper` WebView2 中的对象使用 Chrome [DevTools 协议](../devtools-protocol-chromium/index.md)函数。  演示 WPF 中 WebView2 CDP 扩展的使用模式。  此应用程序是使用 [WebView2 CDP 扩展](https://aka.ms/webviewcdp) 构建的，该扩展定义所有 CDP 方法、事件和类型。<br/><br/>  在 Visual Studio 2019 中构建为 WPF 项目。  在 WebView2 环境中使用 C#。 |
+
+#### <a name="deployment-samples"></a>部署示例
+
+| 示例类型 | 示例项目 | 描述 |
+|---|---|---|
+| 用于部署运行时的 WiX 燃烧捆绑包 | [WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WV2DeploymentWiXBurnBundleSample/README.md) | 为 [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/README.md) 创建 [WiX](https://wixtoolset.org/) 安装程序，并使用 [WiX Burn 捆绑包](https://wixtoolset.org/documentation/manual/v3/bundle/)链接安装 Evergreen WebView2 运行时。<br/><br/>  使用应用部署 [Evergreen WebView2 运行时](concepts/distribution.md) 时使用。 |
 | 用于部署运行时的 WiX 自定义操作 | [WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WV2DeploymentWiXCustomActionSample/README.md) | 为 `WebView2APISample` WiX 安装程序创建 WiX 安装程序，并使用 [WiX 自定义操作](https://wixtoolset.org/documentation/manual/v3/wixdev/extensions/authoring_custom_actions.html) 链接安装 Evergreen WebView2 运行时。<br/><br/>  使用应用部署 Evergreen WebView2 运行时时使用。 |
 
 
 <!-- ====================================================================== -->
-## <a name="uwpwinui-samples"></a>UWP/WinUI 示例
+## <a name="uwpwinui-samples-other-than-in-the-webview2samples-repo"></a>除 WebView2Samples 存储库之外的 UWP/WinUI 示例
 
 [WinUI 控件库](https://github.com/microsoft/Xaml-Controls-Gallery/tree/winui3preview)提供了适用于 UWP/WinUI 的综合 API 示例。
 
-此 WinUI 控件库示例以交互式格式显示所有 XAML 控件。  此应用是[Fluent设计指南](/windows/uwp/design/basics/)的交互式配套，显示 UWP XAML API 和 [Windows UI Toolkit](/uwp/toolkits/winui/) API 的用法。
+此 WinUI 控件库示例以交互式格式显示所有 XAML 控件。  此应用是 [Fluent 设计指南](/windows/uwp/design/basics/) 的交互式配套，显示 UWP XAML API 和 [Windows UI 工具包](/uwp/toolkits/winui/) API 的使用情况。
 
 
 <!-- ====================================================================== -->
 ## <a name="deploy-the-evergreen-webview2-runtime"></a>部署 Evergreen WebView2 运行时
 
-[WV2DeploymentVSInstallerSample](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WV2DeploymentVSInstallerSample/README.md) 使用[适用于 Visual Studio 的 Microsoft Visual Studio Installer Projects](https://marketplace.visualstudio.com/items?itemName=visualstudioclient.MicrosoftVisualStudio2017InstallerProjects) 扩展，为 [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/README.md) 创建安装程序，并链接安装 Evergreen WebView2 运行时。
+[WV2DeploymentVSInstallerSample](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WV2DeploymentVSInstallerSample/README.md) 使用适用于 Visual Studio [的 Microsoft Visual Studio 安装程序 Projects](https://marketplace.visualstudio.com/items?itemName=visualstudioclient.MicrosoftVisualStudio2017InstallerProjects) 扩展，为 [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/README.md) 创建安装程序，并链接安装 Evergreen WebView2 运行时。
 
 此示例是一个单独的安装程序。 它不是存储库的一 `WebView2Samples` 部分。
 
@@ -98,7 +109,7 @@ WebView2 入门指南可帮助你创建与存储库中`WebView2Samples`相同的
 
 存储 `WebView2Samples` 库包含两个主要部分：
 
-*  一组入门解决方案 (`.sln`文件及其各种项目文件) 。  每个文件都有`.sln`一个`README.md`文件;其中大多数非常短。  大多数文档都位于当前的一组文章中。
+*  一组入门解决方案 (`.sln` 文件及其各种项目文件) 。  每个文件都有`.sln`一个`README.md`文件;其中大多数非常短。  大多数文档都位于当前的一组文章中。
 
 *  一组特定于平台的示例 (每个示例都有其自己的目录和 `.sln` 文件) ，以及一个多平台 `.sln` 文件。
 
@@ -115,11 +126,11 @@ WebView2 入门指南可帮助你创建与存储库中`WebView2Samples`相同的
 
 本部分显示下载存储库或将存储库克隆到本地驱动器所产生的每个 `.sln` 和 `README.md` 文件的路径。
 
-存储 `WebView2Samples` 库包含多个 `README.md` 文件和 `.sln` 文件，如下所示。  下载或克隆存储库时，可以在Visual Studio中查看这些`README.md`文件中的任何一个。  或者，在GitHub存储库中联机查看它们。
+存储 `WebView2Samples` 库包含多个 `README.md` 文件和 `.sln` 文件，如下所示。  下载或克隆存储库时，可以在 Visual Studio 中查看这些 `README.md` 文件中的任何一个。  或者，在 GitHub 存储库中联机查看它们。
 
 在下载 `.zip` 的文件中，根目录是命名 `WebView2Samples-main` 的，而不是 `WebView2Samples`表示 `main` 存储库的分支。
 
-在下面的链接中，将显示 .sln 或 README.md 的本地目录路径。  链接将转到GitHub存储库的目录级别，可在其中查看`.sln`目录列表中的或`README.md`文件。  在GitHub时，自述文件会自动追加到包含自述文件的目录的网页。
+在下面的链接中，将显示 .sln 或 README.md 的本地目录路径。  链接将转到 GitHub 存储库的目录级别，可在其中查看 `.sln` 目录列表中的或 `README.md` 文件。  在 GitHub 上，自述文件会自动追加到包含自述文件的目录的网页。
 <!--
 pattern for link construction below: 
 for the .sln line, link text = local path to .sln

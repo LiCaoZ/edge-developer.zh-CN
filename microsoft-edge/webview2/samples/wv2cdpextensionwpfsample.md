@@ -1,5 +1,5 @@
 ---
-title: WebView2 示例：WPF 应用中的 Chrome DevTools 协议扩展
+title: 具有 CDP 扩展的 WPF 示例应用
 description: 此 WebView2 示例演示如何使用 WebView2 CDP 扩展在 WPF 应用中使用 DevTools 协议。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 14f050e9a5393e6ac4ba2c5df724b9d520d78cb4
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.openlocfilehash: 9f59c93c54585b73cdb06f118aae4966bb6a09e1
+ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522474"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "12668767"
 ---
-# <a name="webview2-sample-chrome-devtools-protocol-extension-in-a-wpf-app"></a>WebView2 示例：WPF 应用中的 Chrome DevTools 协议扩展
+# <a name="wpf-sample-app-with-cdp-extension"></a>具有 CDP 扩展的 WPF 示例应用
 
 此 WebView2 示例演示如何使用 WebView2 CDP 扩展在 WPF 应用中使用 Chrome DevTools 协议。
 
@@ -26,13 +26,13 @@ ms.locfileid: "12522474"
 
 当前页面上的步骤是通用的。  请参阅 README 部分中特定于示例的步骤，这些步骤可能会覆盖当前页面。
 
-1. 在单独的窗口或选项卡中，在 GitHub：[WV2CDPExtensionWPFSample 的 README 文件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample#readme)中读取此项目的呈现 README.md 文件。  然后返回到此页面，并继续执行以下步骤。
+1. 在单独的窗口或选项卡中，在 GitHub： [WV2CDPExtensionWPFSample 的 README 文件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample#readme)中读取此项目的呈现 README.md 文件。  然后返回到此页面，并继续执行以下步骤。
 
    * [自述文件>先决条件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample#prerequisites)
 
    * [自述文件>生成 WebView2 WPF 浏览器](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample#build-the-webview2-wpf-browser)
 
-   还可以查看Visual Studio中未呈现)  (README.md 源文件。  在**文件管理器**或Visual Studio > 解决方案资源管理器中，打开该文件：<!-- todo: is there a .md preview capability locally? -->
+   还可以在 Visual Studio 中查看 README.md 源文件 (未呈现的) 。  在**文件管理器**或 Visual Studio > 解决方案资源管理器中，打开该文件：<!-- todo: is there a .md preview capability locally? -->
 
    `<your-repos-directory>/WebView2Samples/SampleApps/WV2CDPExtensionWPFSample/README.md`
 
@@ -42,17 +42,17 @@ ms.locfileid: "12522474"
 
 
 <!-- ====================================================================== -->
-## <a name="step-2---install-visual-studio"></a>步骤 2 - 安装Visual Studio
+## <a name="step-2---install-visual-studio"></a>步骤 2 - 安装 Visual Studio
 
-Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studio代码。
+Microsoft Visual Studio 是必需的。  此示例不支持 Microsoft Visual Studio Code。
 
-1. 如果尚未安装Visual Studio (所需的最低版本) ，请在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发人员环境_时[安装Visual Studio](../how-to/machine-setup.md#install-visual-studio)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
+1. 如果 Visual Studio (尚未安装所需的最低版本) ，请在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发环境_时[安装 Visual Studio](../how-to/machine-setup.md#install-visual-studio)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
 
 
 <!-- ====================================================================== -->
-## <a name="step-3---install-a-preview-channel-of-microsoft-edge"></a>步骤 3 - 安装预览频道Microsoft Edge
+## <a name="step-3---install-a-preview-channel-of-microsoft-edge"></a>步骤 3 - 安装 Microsoft Edge 的预览频道
 
-1.  如果尚未安装 Microsoft Edge (Beta、Dev 或 Canary) 的预览频道，请参阅在_为 WebView2 设置开发人员环境_时[安装Microsoft Edge预览频道](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
+1.  如果尚未安装 Microsoft Edge (Beta、Dev 或 Canary) 的预览频道，请参阅在_为 WebView2 设置开发环境_时[安装 Microsoft Edge 的预览频道](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
 
 
 <!-- ====================================================================== -->
@@ -64,7 +64,7 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 <!-- ====================================================================== -->
 ## <a name="step-5---open-sln-in-visual-studio"></a>步骤 5 - 在 Visual Studio 中打开 .sln
 
-1. 在本地驱动器上`.sln`，在目录中打开Visual Studio中的文件：
+1. 在本地驱动器上 `.sln` ，在 Visual Studio 中的目录中打开该文件：
 
    *  `<your-repos-directory>/WebView2Samples/SampleApps/WV2CDPExtensionWPFSample/WV2CDPExtensionWPFSample.sln`
 
@@ -76,11 +76,11 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 <!-- ====================================================================== -->
 ## <a name="step-6---install-workloads-if-prompted"></a>步骤 6 - 如果出现提示，请安装工作负载
 
-1. 如果出现提示，请安装请求的任何Visual Studio工作负荷。  在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发人员环境_时[安装Visual Studio工作负荷](../how-to/machine-setup.md#install-visual-studio-workloads)。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
+1. 如果出现提示，请安装请求的任何 Visual Studio 工作负载。  在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发人员环境_时[安装 Visual Studio 工作负载](../how-to/machine-setup.md#install-visual-studio-workloads)。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
 
-   **WV2CDPExtensionWPFSample** 项目将在Visual Studio中打开：
+   **WV2CDPExtensionWPFSample** 项目将在 Visual Studio 中打开：
 
-   ![WV2CDPExtensionWPFSample 示例在 解决方案资源管理器 Visual Studio 中打开。](media/wv2cdpextensionwpfsample-opened.png)
+   ![解决方案资源管理器在 Visual Studio 中打开的 WV2CDPExtensionWPFSample 示例。](media/wv2cdpextensionwpfsample-opened.png)
 
 
 <!-- ====================================================================== -->
@@ -88,7 +88,7 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 
 1. 在项目节点上安装或更新 WebView2 SDK， (不是解决方案资源管理器中) 的解决方案节点。  在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发环境_时[安装 WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk)。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
 
-   在Visual Studio顶部设置生成目标，如下所示：
+   在 Visual Studio 顶部设置生成目标，如下所示：
 
 
 <!-- ====================================================================== -->
@@ -106,7 +106,7 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 <!-- ====================================================================== -->
 ## <a name="step-9---run-debug-the-project"></a>步骤 9 -) 项目运行 (调试
 
-1. 在Visual Studio中，选择“**调试** > **"开始"菜单调试** () `F5` 。
+1. 在 Visual Studio 中，选择 **“调试** > **开始调试** ” () `F5` 。
 
    随即打开示例应用窗口：
 
@@ -114,15 +114,15 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 
 1. 使用示例应用;请参阅 [WV2CDPExtensionWPFSample 的 README 文件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample#readme)。
 
-1. 在Visual Studio中，选择 **“调试** > **Stop调试**”。  Visual Studio关闭应用。
+1. 在 Visual Studio 中，选择 **“调试** > **停止调试**”。  Visual Studio 关闭应用。
 
 
 <!-- ====================================================================== -->
 ## <a name="step-10---inspect-the-code"></a>步骤 10 - 检查代码
 
-1. 在Visual Studio代码编辑器中，检查代码：
+1. 在 Visual Studio 代码编辑器中，检查代码：
 
-   ![Visual Studio中的 WV2CDPExtensionWPFSample 项目的代码。](media/wv2cdpextensionwpfsample-code.png)
+   ![Visual Studio 中的 WV2CDPExtensionWPFSample 项目的代码。](media/wv2cdpextensionwpfsample-code.png)
 
    _若要缩放，请右键单击> **在新选项卡中打开图像**。_
 
@@ -130,4 +130,4 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-* [WinUI 2 (UWP) 应用中的 WebView2 入门（公共预览版）](../get-started/winui2.md)
+* [WinUI 2 (UWP) 应用中的 WebView2 入门](../get-started/winui2.md)

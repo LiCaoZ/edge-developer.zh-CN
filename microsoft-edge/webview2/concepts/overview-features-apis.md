@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/08/2022
-ms.openlocfilehash: 0a66e8b42f6c56623828595ca96e59bf79a9b04f
-ms.sourcegitcommit: 61d541b18043bdc4b2a6d65d6eb7422d54da2c2f
+ms.date: 07/12/2022
+ms.openlocfilehash: bd4c852a8be59a1e51b1265b6011590f92e1f3e2
+ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "12639974"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "12668697"
 ---
 # <a name="overview-of-webview2-features-and-apis"></a>WebView2 功能和 API 概述
 
@@ -266,7 +266,13 @@ WebView2 控件允许应用访问许多浏览器功能。  可以修改这些浏
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2Cookie 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2cookie)
+* [CoreWebView2.CookieManager 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#cookiemanager)
+   * [CoreWebView2CookieManager 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2cookiemanager)
+
+<!-- TODO: not found, omit?
+* [CoreWebView2CookieList Class]()
+-->
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -327,7 +333,21 @@ WebView2 控件允许应用访问许多浏览器功能。  可以修改这些浏
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+一般：
+* [CoreWebView2.IsDefaultDownloadDialogOpenChanged 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#isdefaultdownloaddialogopenchanged)
+* [CoreWebView2.IsDefaultDownloadDialogOpen 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#isdefaultdownloaddialogopen)
+* [CoreWebView2.OpenDefaultDownloadDialog 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#opendefaultdownloaddialog)
+* [CoreWebView2.CloseDefaultDownloadDialog 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#closedefaultdownloaddialog)
+
+修改默认体验：
+* [CoreWebView2.DefaultDownloadDialogCornerAlignment 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#defaultdownloaddialogcorneralignment)
+* [CoreWebView2.DefaultDownloadDialogMargin 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#defaultdownloaddialogmargin)
+* [CoreWebView2Profile.DefaultDownloadFolderPath 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#defaultdownloadfolderpath)
+
+自定义下载体验：
+* [CoreWebView2.DownloadStarting 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#downloadstarting)
+   * [CoreWebView2DownloadStartingEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2downloadstartingeventargs)
+* [CoreWebView2DownloadOperation 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2downloadoperation)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -395,7 +415,12 @@ WebView2 控件提供默认上下文菜单 (右键单击菜单) 可以自定义�
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2Environment.CreateContextMenuItem 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcontextmenuitem)
+* [CoreWebView2ContextMenuItem 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenuitem)
+* [CoreWebView2ContextMenuTarget 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenutarget)
+* [CoreWebView2.ContextMenuRequested 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#contextmenurequested)
+   * [CoreWebView2ContextMenuRequestedEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenurequestedeventargs)
+* [CoreWebView2Settings.AreDefaultContextMenusEnabled 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#aredefaultcontextmenusenabled)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -413,12 +438,10 @@ WebView2 控件提供默认上下文菜单 (右键单击菜单) 可以自定义�
 <!-- ------------------------------ -->
 #### <a name="status-bar"></a>状态栏
 
-<!-- why is this desirable, what kinds of changes for example, does this mean programmatically monitor? -->
 状态栏位于页面左下角，显示正在显示的网页的状态。 在 WebView2 中，可以启用/禁用状态栏，获取状态栏中的文本，并了解状态栏文本何时更改。 
 
 <!--
 See also:
-* []()
 -->
 
 ##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
@@ -429,7 +452,9 @@ See also:
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2.StatusBarTextChanged 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#statusbartextchanged)
+* [CoreWebView2.StatusBarText 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#statusbartext)
+* [CoreWebView2Settings.IsStatusBarEnabled 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isstatusbarenabled)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -446,10 +471,10 @@ See also:
 <!-- why would you do this, what is benefit for end user, what's involved?  Your app can detect which XYZ and then ABC so that the X is Y. -->
 用户代理是一个字符串，代表代表用户的程序标识，例如浏览器名称。 在 WebView2 中，可以设置用户代理。
 
-<!--
-See also:
-* []()
--->
+另请参阅：
+* [使用用户代理客户端提示检测 Windows 11](../../web-platform/how-to-detect-win11.md)
+* [替代用户代理字符串](../../devtools-guide-chromium/device-mode/override-user-agent.md)
+
 
 ##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
 
@@ -503,7 +528,10 @@ See also:
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2.IsDocumentPlayingAudioChanged 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#isdocumentplayingaudiochanged)
+* [CoreWebView2.IsMutedChanged 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#ismutedchanged)
+* [CoreWebView2.IsDocumentPlayingAudio 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#isdocumentplayingaudio)
+* [CoreWebView2.IsMuted 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#ismuted)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -531,7 +559,8 @@ See also:
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2Settings.IsSwipeNavigationEnabled 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isswipenavigationenabled)
+* [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#additionalbrowserarguments)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -553,7 +582,8 @@ See also:
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2.DocumentTitle 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#documenttitle)
+* [CoreWebView2.DocumentTitleChanged 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#documenttitlechanged)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -575,7 +605,8 @@ See also:
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2.ContainsFullScreenElement 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#containsfullscreenelement)
+* [CoreWebView2.ContainsFullScreenElementChanged 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#containsfullscreenelementchanged)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -595,7 +626,7 @@ See also:
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2Settings.HiddenPdfToolbarItems 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#hiddenpdftoolbaritems)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -614,7 +645,7 @@ See also:
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2Profile.PreferredColorScheme 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#preferredcolorscheme)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -654,7 +685,9 @@ WebView2 提供用于处理 JavaScript 函数 `window.open()`的功能。
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2.NewWindowRequested 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#newwindowrequested)
+   * [CoreWebView2NewWindowRequestedEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2newwindowrequestedeventargs)
+   * [CoreWebView2WindowFeatures 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2windowfeatures)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -711,7 +744,19 @@ WebView2 提供用于处理 JavaScript 函数 `window.close()`的功能。
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+信息：
+* [CoreWebView2.BrowserProcessId 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#browserprocessid)
+* [CoreWebView2Environment.GetProcessInfos 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#getprocessinfos)
+* [CoreWebView2Environment.ProcessInfosChanged 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#processinfoschanged)
+* [CoreWebView2ProcessInfo 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processinfo)
+
+退出：
+* [CoreWebView2Environment.BrowserProcessExited 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#browserprocessexited)
+   * [CoreWebView2BrowserProcessExitedEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2browserprocessexitedeventargs)
+
+失败：
+* [CoreWebView2.ProcessFailed 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#processfailed)
+   * [CoreWebView2ProcessFailedEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -761,7 +806,14 @@ WebView2 提供用于处理 JavaScript 函数 `window.close()`的功能。
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2.Navigate 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#navigate)
+* [CoreWebView2.NavigateToString 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#navigatetostring)
+* [CoreWebView2.NavigateWithWebResourceRequest 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#navigatewithwebresourcerequest)
+* [CoreWebView2.Stop 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#stop)
+* [CoreWebView2.Reload 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#reload)
+* [CoreWebView2.SetVirtualHostNameToFolderMapping 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#setvirtualhostnametofoldermapping)
+* [CoreWebView2.ClearVirtualHostNameToFolderMapping 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#clearvirtualhostnametofoldermapping)
+* [CoreWebView2Settings.IsBuiltInErrorPageEnabled 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isbuiltinerrorpageenabled)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -795,7 +847,14 @@ WebView2 提供用于处理 JavaScript 函数 `window.close()`的功能。
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2.Source 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#source)
+* [CoreWebView2.SourceChanged 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#sourcechanged)
+   * [CoreWebView2SourceChangedEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sourcechangedeventargs)
+* [CoreWebView2.HistoryChanged 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#historychanged)
+* [CoreWebView2.CanGoBack 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#cangoback)
+   * [CoreWebView2.GoBack 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#goback)
+* [CoreWebView2.CanGoForward 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#cangoforward)
+   * [CoreWebView2.GoForward 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#goforward)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -826,7 +885,11 @@ WebView2 提供用于处理 JavaScript 函数 `window.close()`的功能。
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2.NavigationStarting 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#navigationstarting)
+   * [CoreWebView2NavigationStartingEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationstartingeventargs)
+* [CoreWebView2.FrameNavigationStarting 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framenavigationstarting)
+* [CoreWebView2Frame.NavigationStarting 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#navigationstarting)
+   * [CoreWebView2NavigationStartingEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationstartingeventargs)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -862,7 +925,16 @@ WebView2 提供用于处理 JavaScript 函数 `window.close()`的功能。
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2.ContentLoading 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#contentloading)
+   * [CoreWebView2ContentLoadingEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contentloadingeventargs)
+* [CoreWebView2.DOMContentLoaded 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#domcontentloaded)
+   * [CoreWebView2DOMContentLoadedEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2domcontentloadedeventargs)
+* [CoreWebView2.NavigationCompleted 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#navigationcompleted)
+   * [CoreWebView2NavigationCompletedEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2navigationcompletedeventargs)
+* [CoreWebView2.FrameNavigationCompleted 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framenavigationcompleted)
+* [CoreWebView2Frame.ContentLoading 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#contentloading)
+* [CoreWebView2Frame.DOMContentLoaded 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#domcontentloaded)
+* [CoreWebView2Frame.NavigationCompleted 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#navigationcompleted)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -898,7 +970,10 @@ WebView2 提供用于处理 JavaScript 函数 `window.close()`的功能。
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2.WebResourceRequested 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#webresourcerequested)
+   * [CoreWebView2WebResourceRequestedEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestedeventargs)
+* [CoreWebView2.WebResourceResponseReceived 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#webresourceresponsereceived)
+   * [CoreWebView2WebResourceResponseReceivedEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourceresponsereceivedeventargs)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -927,7 +1002,9 @@ WebView2 提供用于处理 JavaScript 函数 `window.close()`的功能。
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2ClientCertificate 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clientcertificate)
+* [CoreWebView2.ClientCertificateRequested 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#clientcertificaterequested)
+   * [CoreWebView2ClientCertificateRequestedEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clientcertificaterequestedeventargs)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -981,7 +1058,10 @@ Embed other webpages into your own webpage.  Detect when embedded webpages are c
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2Frame 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame)
+* [CoreWebView2FrameInfo 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo)
+* [CoreWebView2.FrameCreated 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framecreated)
+   * [CoreWebView2FrameCreatedEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2framecreatedeventargs)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -1018,7 +1098,12 @@ Embed other webpages into your own webpage.  Detect when embedded webpages are c
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2HttpRequestHeaders 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2httprequestheaders)
+* [CoreWebView2.BasicAuthenticationRequested 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#basicauthenticationrequested)
+   * [CoreWebView2BasicAuthenticationRequestedEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2basicauthenticationrequestedeventargs)
+* [CoreWebView2BasicAuthenticationResponse 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2basicauthenticationresponse)
+   * [CoreWebView2HttpResponseHeaders 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2httpresponseheaders)
+* [CoreWebView2HttpHeadersCollectionIterator 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2httpheaderscollectioniterator)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -1051,7 +1136,9 @@ Embed other webpages into your own webpage.  Detect when embedded webpages are c
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2Controller.CoreWebView2 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#corewebview2)
+* [CoreWebView2Controller.Close 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#close)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2controllerasync)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -1077,7 +1164,8 @@ WebView2 gives your app access to window-specific attributes, such as positionin
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2Controller.Bounds 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#bounds)
+* [CoreWebView2Controller.IsVisible 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#isvisible)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -1104,7 +1192,13 @@ WebView2 `ZoomFactor` 用于仅缩放窗口的 Web 内容。  当用户通过在
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2Controller.ZoomFactor 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#zoomfactor)
+* [CoreWebView2Controller.ZoomFactorChanged 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#zoomfactorchanged)
+* [CoreWebView2Controller.SetBoundsAndZoomFactor 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#setboundsandzoomfactor)
+
+浏览器/手势/缩放功能：
+* [CoreWebView2Settings.IsPinchZoomEnabled 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#ispinchzoomenabled)
+* [CoreWebView2Settings.IsZoomControlEnabled 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#iszoomcontrolenabled)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -1112,7 +1206,7 @@ WebView2 `ZoomFactor` 用于仅缩放窗口的 Web 内容。  当用户通过在
 * [ICoreWebView2Controller：：ZoomFactorChanged 事件 (添加](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_zoomfactorchanged)， [删除) ](/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_zoomfactorchanged)
 * [ICoreWebView2Controller：：SetBoundsAndZoomFactor 方法](/microsoft-edge/webview2/reference/win32/icorewebview2controller#setboundsandzoomfactor)
 
-浏览器/手势/缩放功能：<!-- moved from Rendering section - fits best in "gestures", or "zoom" list? -->
+浏览器/手势/缩放功能：
 * [ICoreWebView2Settings5：：IsPinchZoomEnabled 属性 (获取](/microsoft-edge/webview2/reference/win32/icorewebview2settings5#get_ispinchzoomenabled)， [放) ](/microsoft-edge/webview2/reference/win32/icorewebview2settings5#put_ispinchzoomenabled)
 * [ICoreWebView2Settings：：IsZoomControlEnabled 属性 (获取](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_iszoomcontrolenabled)， [放) ](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_iszoomcontrolenabled)
 
@@ -1133,7 +1227,10 @@ RasterizationScale API 缩放所有 WebView2 UI，包括上下文菜单、工具
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2Controller.BoundsMode 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#boundsmode)
+* [CoreWebView2Controller.RasterizationScale 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#rasterizationscale)
+* [CoreWebview2Controller.RasterizationScaleChanged 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#rasterizationscalechanged)
+* [CoreWebview2Controller.ShouldDetectMonitorScaleChanges 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#shoulddetectmonitorscalechanges)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -1160,7 +1257,11 @@ WebView2 控件会引发事件，让应用知道控件何时获得焦点或失�
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebview2Controller.MoveFocus 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#movefocus)
+* [CoreWebview2Controller.MoveFocusRequested 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#movefocusrequested)
+   * [CoreWebView2MoveFocusRequestedEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2movefocusrequestedeventargs)
+* [CoreWebview2Controller.GotFocus 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#gotfocus)
+* [CoreWebview2Controller.LostFocus 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#lostfocus)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -1209,7 +1310,9 @@ WebView2 可以重新向不同的父窗口句柄 () `HWND` 。  当应用在屏�
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2Settings.AreBrowserAcceleratorKeysEnabled 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#arebrowseracceleratorkeysenabled)
+* [CoreWebView2Controller.AcceleratorKeyPressed 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#acceleratorkeypressed)
+   * [CoreWebView2AcceleratorKeyPressedEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2acceleratorkeypressedeventargs)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -1252,7 +1355,8 @@ WebView2 可以指定默认背景色。  颜色可以是任何不透明的颜色
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2CompositionController 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller)
+* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2compositioncontrollerasync)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -1298,7 +1402,16 @@ WebView2 可以将其合成树连接到 [IDCompositionVisual](/windows/win32/api
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2CompositionController.Cursor 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#cursor)
+* [CoreWebView2CompositionController.CursorChanged 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#cursorchanged)
+* [CoreWebView2CompositionController.SendMouseInput 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#sendmouseinput)
+* [CoreWebView2CompositionController.SendPointerInput 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller#sendpointerinput)
+* [CoreWebView2Environment.CreateCoreWebView2PointerInfo 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2pointerinfo)
+   * [CoreWebView2PointerInfo 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2pointerinfo)
+
+<!--TODO - not found, omit?
+* `CoreWebView2CompositionController.SystemCursorId` Property
+-->
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -1351,7 +1464,13 @@ WebView2 可以将其合成树连接到 [IDCompositionVisual](/windows/win32/api
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2Environment.UserDataFolder 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#userdatafolder)
+* [CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions#exclusiveuserdatafolderaccess)
+* [CoreWebView2Profile.ClearBrowsingDataAsync 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#clearbrowsingdataasync)
+* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2compositioncontrollerasync)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync (选项) 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2controllerasync)<!-- c#: might ~=CreateCoreWebView2CompositionControllerAsync -->
+* [CoreWebView2Environment.CreateCoreWebView2ControllerAsync 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2controllerasync-1)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerOptions 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createcorewebview2controlleroptions)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -1360,11 +1479,12 @@ WebView2 可以将其合成树连接到 [IDCompositionVisual](/windows/win32/api
 * [ICoreWebView2Profile2：：ClearBrowsingData 方法](/microsoft-edge/webview2/reference/win32/icorewebview2profile2#clearbrowsingdata)
 * [ICoreWebView2Profile2：：ClearBrowsingDataAll 方法](/microsoft-edge/webview2/reference/win32/icorewebview2profile2#clearbrowsingdataall)
 * [ICoreWebView2Profile2：：ClearBrowsingDataInTimeRange 方法](/microsoft-edge/webview2/reference/win32/icorewebview2profile2#clearbrowsingdataintimerange)
-* [ICoreWebView2Environment10：：CreateCoreWebView2CompositionControllerWithOptions 方法](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2compositioncontrollerwithoptions)<!-- c#: CreateCoreWebView2CompositionControllerAsync -->
+* [ICoreWebView2Environment10：：CreateCoreWebView2CompositionControllerWithOptions 方法](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2compositioncontrollerwithoptions)<!-- c#: might ~=CreateCoreWebView2CompositionControllerAsync -->
 * [ICoreWebView2Environment10：：CreateCoreWebView2ControllerOptions 方法](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2controlleroptions)
 * [ICoreWebView2Environment10：：CreateCoreWebView2ControllerWithOptions 方法](/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2controllerwithoptions)
 
 ---
+
 
 <!-- ====================================================================== -->
 ## <a name="performance-and-debugging"></a>性能和调试
@@ -1381,7 +1501,11 @@ WebView2 可以将其合成树连接到 [IDCompositionVisual](/windows/win32/api
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+* [CoreWebView2.MemoryUsageTargetLevel 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#memoryusagetargetlevel)
+* [CoreWebView2.TrySuspendAsync 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#trysuspendasync)
+   * [CoreWebView2.IsSuspended 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#issuspended)
+   * [CoreWebView2.Resume 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#resume)
+* [CoreWebView2.OpenTaskManagerWindow 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#opentaskmanagerwindow)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -1421,7 +1545,18 @@ Chrome DevTools 协议提供用于检测、检查、调试和配置文件Chromiu
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [WinRT API 参考](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/) - 命名与 .NET/C# 相同。
+开放：
+* [CoreWebView2Settings.AreDevToolsEnabled 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#aredevtoolsenabled)
+* [CoreWebView2.OpenDevToolsWindow 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#opendevtoolswindow)
+
+叫：
+* [CoreWebView2.CallDevToolsProtocolMethodAsync 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#calldevtoolsprotocolmethodasync)
+* [CoreWebView2.CallDevToolsProtocolMethodForSessionAsync 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#calldevtoolsprotocolmethodforsessionasync)
+
+接收机：
+* [CoreWebView2.GetDevToolsProtocolEventReceiver 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#getdevtoolsprotocoleventreceiver)
+   * [CoreWebView2DevToolsProtocolEventReceivedEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2devtoolsprotocoleventreceivedeventargs)
+   * [CoreWebView2DevToolsProtocolEventReceiver 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2devtoolsprotocoleventreceiver)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 

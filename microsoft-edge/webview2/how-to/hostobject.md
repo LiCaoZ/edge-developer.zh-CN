@@ -7,18 +7,33 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 8776d1384d6bff162a055f268c523a5ae007aa41
-ms.sourcegitcommit: 61d541b18043bdc4b2a6d65d6eb7422d54da2c2f
+ms.openlocfilehash: 05e3d4a0d16d550e2227c71ec88e47ee0e78c395
+ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "12639936"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "12668858"
 ---
 # <a name="call-native-side-code-from-web-side-code"></a>从 Web 端代码调用本机代码
 
 WebView2 使应用程序能够通过启用要传递到 Web 的对象来弥合应用程序的 Web 和本机端之间的差距。 此类对象在本机代码中定义，通常称为 *主机对象*。 可以使用 WebView2 `AddHostObjectToScript` API 将它们投影到 JavaScript 中，如本文档中所述。
 
-为什么要使用 `AddHostObjectToScript`？
+##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2.AddHostObjectToScript 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2.addhostobjecttoscript)
+
+##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.AddHostObjectToScript 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript)
+
+##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2：：AddHostObjectToScript 方法](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript)
+
+---
+
+
+#### <a name="why-use-addhostobjecttoscript"></a>为什么要使用 `AddHostObjectToScript`？
 
   * 开发 WebView2 应用时，可能会遇到一个本机对象，该对象的方法或属性非常有用。 你可能想要从 Web 端代码触发这些本机对象方法，或者是应用 Web 端的用户交互的结果。 此外，你可能不想在 Web 端代码中重新实现本机对象的方法。  API `AddHostObjectToScript` 允许通过 Web 端代码重新使用本机端代码。 
 
@@ -32,7 +47,8 @@ WebView2 使应用程序能够通过启用要传递到 Web 的对象来弥合应
 
 本文使用 [WebView2 Win32 示例应用](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample) 演示一些实际应用 `AddHostObjectToScript`。 有关如何将 Web 内容嵌入本机应用程序的详细信息，请参阅 [将 Web 内容嵌入本机应用程序](/microsoft-edge/webview2/how-to/communicate-btwn-web-native)。
 
-**本文中主要步骤的预览：**
+
+#### <a name="preview-of-the-major-steps-in-this-article"></a>本文中主要步骤的预览
 
 1. 安装 Visual Studio、安装 git、克隆 [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample)并打开解决方案。
 
@@ -142,9 +158,9 @@ WebView2 使应用程序能够通过启用要传递到 Web 的对象来弥合应
 
 接下来，我们检查 IDL 中定义的两个特定属性，以显示 IDL 与文件的相关 `.cpp` 性。
 
-1. 在 Visual Studio **解决方案资源管理器**中，打开 **WebView2APISample** > **源文件** > **HostObjectSampleImpl.cpp**。
+1.  在 Visual Studio **解决方案资源管理器**中，打开 **WebView2APISample** > **源文件** > **HostObjectSampleImpl.cpp**。
 
-1. 比较属性 *声明*，在 `HostObjectSample.idl` ...
+1.  比较属性 *声明*，在 `HostObjectSample.idl` ...
  
     ```csharp
     [propget] HRESULT Property([out, retval] BSTR* stringResult);
@@ -271,13 +287,23 @@ WebView2 使应用程序能够通过启用要传递到 Web 的对象来弥合应
 <!-- ====================================================================== -->
 ## <a name="api-reference-overview"></a>API 参考概述
 
-以下是用于从 Web 端代码调用本机代码的一些关键 API。
+##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
 
-# [<a name="c"></a>C#](#tab/c-sharp)
+* [CoreWebView2.AddHostObjectToScript 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2.addhostobjecttoscript)
+* [CoreWebView2.RemoveHostObjectFromScript 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2.removehostobjectfromscript)
+* [CoreWebView2Settings.AreHostObjectsAllowed 属性](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.arehostobjectsallowed)
 
+##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-# [<a name="c"></a>C++](#tab/cpp)
+* [CoreWebView2.AddHostObjectToScript 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript)
+* [CoreWebView2.RemoveHostObjectFromScript 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#removehostobjectfromscript)
+* [CoreWebView2Settings.AreHostObjectsAllowed 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#arehostobjectsallowed)
 
+##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2：：AddHostObjectToScript 方法](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript)
+* [ICoreWebView2：：RemoveHostObjectFromScript 方法](/microsoft-edge/webview2/reference/win32/icorewebview2#removehostobjectfromscript)
+* [ICoreWebView2Settings：：AreHostObjectsAllowed 属性 (获取](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_arehostobjectsallowed)， [放) ](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_arehostobjectsallowed)
 
 ---
 

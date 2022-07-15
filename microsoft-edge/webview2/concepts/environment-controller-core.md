@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 06/24/2022
-ms.openlocfilehash: 13ff7694e4136bc21d73f596513b0dd7ec0b00f8
-ms.sourcegitcommit: 61d541b18043bdc4b2a6d65d6eb7422d54da2c2f
+ms.openlocfilehash: 1c4808388d294db68942ae0ccb4b890992fcac6b
+ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "12639965"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "12668592"
 ---
 # <a name="main-classes-for-webview2-environment-controller-and-core"></a>WebView2 的主要类：环境、控制器和核心
 
@@ -29,13 +29,19 @@ ms.locfileid: "12639965"
 
 <!-- / keep sync'd -->
 
-#### [<a name="c"></a>C#](#tab/c-sharp)
+##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2 类](/dotnet/api/microsoft.web.webview2.core.corewebview2)
 * [CoreWebView2Controller 类](/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
 * [CoreWebView2Environment 类](/dotnet/api/microsoft.web.webview2.core.corewebview2environment)
 
-#### [<a name="c"></a>C++](#tab/cpp)
+##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2)
+* [CoreWebView2Controller 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller)
+* [CoreWebView2Environment 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment)
+
+##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
 * [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)
@@ -43,10 +49,11 @@ ms.locfileid: "12639965"
 
 ---
 
+
 跨平台 API 实现：大多数 WebView2 API 最初是针对 C++开发的，然后大多数 C++ API 都包装为 C# API。  这样，平台和编程语言之间就具有一致的并行性和等效性。
 
 
-### <a name="overview-of-the-top-level-classes"></a>顶级类概述
+#### <a name="overview-of-the-top-level-classes"></a>顶级类概述
 
 概述：
 * `CoreWebView2Environment`

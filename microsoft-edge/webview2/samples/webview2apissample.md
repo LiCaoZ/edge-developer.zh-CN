@@ -1,5 +1,5 @@
 ---
-title: WebView2 示例：Win32 C++ 应用
+title: Win32 示例应用
 description: 此 WebView2 示例演示如何使用 WebView2 控件和 WebView2 API 向 Win32 C++ 应用添加功能。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,18 +7,18 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 396ab1373f11f3d3c05f3b0f95dddb7ed11c987a
-ms.sourcegitcommit: dc0001e208a1511cbeca620a5790aad54b3bfbb3
+ms.openlocfilehash: 49b5ab206ee2e73ceb4c7625510f368856624b2a
+ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "12522397"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "12668480"
 ---
-# <a name="webview2-sample-win32-c-app"></a>WebView2 示例：Win32 C++ 应用
+# <a name="win32-sample-app"></a>Win32 示例应用
 
 此 WebView2 示例演示如何使用 WebView2 控件和 WebView2 API 向 Win32 C++ 应用添加功能。
 
-WebView2APISample 是应用程序在 Win32 本机应用程序中嵌入 WebView2 控件的示例。 它构建为 Win32 Visual Studio项目，并在 WebView2 环境中同时使用 C++ 和 HTML/CSS/JavaScript。
+WebView2APISample 是应用程序在 Win32 本机应用程序中嵌入 WebView2 控件的示例。 它构建为 Win32 Visual Studio 项目，并在 WebView2 环境中同时使用 C++ 和 HTML/CSS/JavaScript。
 
 API 示例展示了一系列 WebView2 的事件处理程序和 API 方法，这些方法允许本机 Win32 应用程序直接与 WebView2 控件交互，反之亦然。
 
@@ -30,13 +30,13 @@ API 示例展示了一系列 WebView2 的事件处理程序和 API 方法，这�
 
 当前页面上的步骤是通用的。  请参阅 README 部分中特定于示例的步骤，这些步骤可能会覆盖当前页面。
 
-1. 在单独的窗口或选项卡中，阅读此项目的呈现 README.md 文件GitHub：[WebView2APISample 的自述文件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme)。  然后返回到此页面，并继续执行以下步骤。
+1. 在单独的窗口或选项卡中，在 GitHub： [适用于 WebView2APISample 的 README 文件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme)中读取此项目的呈现 README.md 文件。  然后返回到此页面，并继续执行以下步骤。
 
    * [自述文件>先决条件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#prerequisites)
 
    * [自述文件>生成 WebView2 API 示例](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#build-the-webview2-api-sample)
 
-   还可以查看Visual Studio中未呈现)  (README.md 源文件。  在**文件管理器**或Visual Studio > 解决方案资源管理器中，打开该文件：<!-- todo: is there a .md preview capability locally? -->
+   还可以在 Visual Studio 中查看 README.md 源文件 (未呈现的) 。  在**文件管理器**或 Visual Studio > 解决方案资源管理器中，打开该文件：<!-- todo: is there a .md preview capability locally? -->
 
    `<your-repos-directory>/WebView2Samples/SampleApps/README.md`
 
@@ -46,17 +46,17 @@ API 示例展示了一系列 WebView2 的事件处理程序和 API 方法，这�
 
 
 <!-- ====================================================================== -->
-## <a name="step-2---install-visual-studio"></a>步骤 2 - 安装Visual Studio
+## <a name="step-2---install-visual-studio"></a>步骤 2 - 安装 Visual Studio
 
-Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studio代码。
+Microsoft Visual Studio 是必需的。  此示例不支持 Microsoft Visual Studio Code。
 
-1. 如果尚未安装Visual Studio (所需的最低版本) ，请在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发人员环境_时[安装Visual Studio](../how-to/machine-setup.md#install-visual-studio)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
+1. 如果 Visual Studio (尚未安装所需的最低版本) ，请在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发环境_时[安装 Visual Studio](../how-to/machine-setup.md#install-visual-studio)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
 
 
 <!-- ====================================================================== -->
-## <a name="step-3---install-a-preview-channel-of-microsoft-edge"></a>步骤 3 - 安装预览频道Microsoft Edge
+## <a name="step-3---install-a-preview-channel-of-microsoft-edge"></a>步骤 3 - 安装 Microsoft Edge 的预览频道
 
-1. 如果尚未安装 Microsoft Edge (Beta、Dev 或 Canary) 的预览频道，请参阅在_为 WebView2 设置开发人员环境_时[安装Microsoft Edge预览频道](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
+1. 如果尚未安装 Microsoft Edge (Beta、Dev 或 Canary) 的预览频道，请参阅在_为 WebView2 设置开发环境_时[安装 Microsoft Edge 的预览频道](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
 
 
 <!-- ====================================================================== -->
@@ -68,7 +68,7 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 <!-- ====================================================================== -->
 ## <a name="step-5---open-sln-in-visual-studio"></a>步骤 5 - 在 Visual Studio 中打开 .sln
 
-1. 在本地驱动器上`.sln`，在目录中打开Visual Studio中的文件：
+1. 在本地驱动器上 `.sln` ，在 Visual Studio 中的目录中打开该文件：
 
    *  `<your-repos-directory>/WebView2Samples/SampleApps/WebView2Samples.sln`
 
@@ -80,7 +80,7 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 <!-- ====================================================================== -->
 ## <a name="step-6---install-workloads-if-prompted"></a>步骤 6 - 如果出现提示，请安装工作负载
 
-1. **Visual Studio工作负荷** - 如果出现提示，请安装请求的任何Visual Studio工作负荷。  在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发人员环境_时[安装Visual Studio工作负荷](../how-to/machine-setup.md#install-visual-studio-workloads)。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
+1. **Visual Studio 工作负荷** - 如果出现提示，请安装请求的任何 Visual Studio 工作负荷。  在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发人员环境_时[安装 Visual Studio 工作负载](../how-to/machine-setup.md#install-visual-studio-workloads)。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
 
 
 <!-- ====================================================================== -->
@@ -88,7 +88,7 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 
 解决方案资源管理器显示多个项目，包括 **WebView2APISample** 项目：
 
-![WebView2APISample 在 解决方案资源管理器 的 Visual Studio 中打开。](media/webview2apisample-in-solution-explorer.png)
+![WebView2APISample 解决方案资源管理器在 Visual Studio 中打开。](media/webview2apisample-in-solution-explorer.png)
 
 
 <!-- ====================================================================== -->
@@ -96,11 +96,11 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 
 安装或更新项目的 _预发行_ 版 WebView2 SDK，如下所示：
 
-1. 在解决方案资源管理器中，右键单击项目 (而不是它上面) 的解决方案节点，然后选择 **“管理NuGet包**”。
+1. 在解决方案资源管理器中，右键单击项目 (而不是它上面的解决方案节点) ，然后选择 **“管理 NuGet 包**”。
 
-   NuGet 程序包管理器面板在**Visual Studio**中打开。
+   **NuGet 包管理器**面板在 Visual Studio 中打开。
 
-1. 在**NuGet 程序包管理器**中，单击“**浏览”** 选项卡。
+1. 在 **NuGet 包管理器**中，单击“ **浏览”** 选项卡。
 
 1. 在搜索文本框的右侧，选中 **“包括预发行版** ”复选框。
 
@@ -112,7 +112,7 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 
 1. 在右侧的 **“版本** ”下拉列表中，确保选择了 **最新预发行版** ：
 
-   ![NuGet 程序包管理器选中了 WebView2 SDK 预发行版。](media/webview2apisample-pkg-mgr-prerelease-webview2.png)
+   ![已选择 WebView2 SDK 预发行版的 NuGet 包管理器。](media/webview2apisample-pkg-mgr-prerelease-webview2.png)
 
    _上面的图像来自另一个项目，但相似。  若要缩放，请右键单击> **在新选项卡中打开图像**。_
 
@@ -132,7 +132,7 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 <!-- ====================================================================== -->
 ## <a name="step-9---build-the-project"></a>步骤 9 - 生成项目
 
-在Visual Studio顶部设置生成目标，如下所示：
+在 Visual Studio 顶部设置生成目标，如下所示：
 
 1. 在 **“解决方案配置”** 下拉列表中，选择 **“调试** ”或 **“发布**”。
 
@@ -150,9 +150,9 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 <!-- ====================================================================== -->
 ## <a name="step-10---run-debug-the-project"></a>步骤 10 -) 项目运行 (调试
 
-1. 选择 **“调试** > **"开始"菜单**调试 () `F5` 。  
+1. 选择 **“调试** > **开始调试** ” () `F5` 。  
 
-   故障排除：如果跳过生成步骤，并立即选择“**调试** > **"开始"菜单调试** () `F5` ，可能会显示一个对话框”无法启动程序：找不到指定的路径“：
+   故障排除：如果跳过生成步骤，并立即选择“ **调试** > **开始调试** ” () `F5` ，则可能会显示一个对话框“无法启动程序：找不到指定的路径”：
 
    ![对话框：无法启动程序：找不到指定的路径。](media/webview2apisample-unable-to-start-program-cannot-find-path.png)
 
@@ -166,13 +166,13 @@ Microsoft Visual Studio是必需的。  此示例不支持Microsoft Visual Studi
 
 1. 使用示例应用。  请参阅 [WebView2 API 示例的自述文件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme)
 
-1. 在Visual Studio中，选择 **“调试** > **Stop调试**”。  Visual Studio关闭应用。
+1. 在 Visual Studio 中，选择 **“调试** > **停止调试**”。  Visual Studio 关闭应用。
 
 
 <!-- ====================================================================== -->
 ## <a name="step-11---inspect-the-code"></a>步骤 11 - 检查代码
 
-1. 在Visual Studio代码编辑器中，检查代码。
+1. 在 Visual Studio 代码编辑器中，检查代码。
 
 
 <!--
