@@ -724,24 +724,24 @@
             - name: 示例代码
               href: webview2/code-samples-links.md
               displayName: Sample Code for WebView2
-            - name: WebView2 控件和 API 示例
+            - name: WebView2 示例应用
               items:
-                - name: WinUI 2 （UWP） 浏览器应用
+                - name: WinUI 2 (UWP) 示例应用
                   href: webview2/samples/webview2_sample_uwp.md
                   displayName: webview2_sample_uwp
-                - name: Win32 C++ 应用
+                - name: Win32 示例应用
                   href: webview2/samples/webview2apissample.md
                   displayName: 'WebView2APISample, SampleApps'
-                - name: 使用 Visual Composition 的 Win32 C++ 应用
+                - name: 使用 Visual Composition 的 Win32 示例应用
                   href: webview2/samples/webview2samplewincomp.md
                   displayName: WebView2SampleWinComp
-                - name: WinForms 浏览器应用
+                - name: WinForms 示例应用
                   href: webview2/samples/webview2windowsformsbrowser.md
                   displayName: WebView2WindowsFormsBrowser
-                - name: WPF .NET 浏览器应用
+                - name: WPF 示例应用
                   href: webview2/samples/webview2wpfbrowser.md
                   displayName: WebView2WpfBrowser
-                - name: WPF 应用中的 Chrome DevTools 协议扩展
+                - name: 具有 CDP 扩展的 WPF 示例应用
                   href: webview2/samples/wv2cdpextensionwpfsample.md
                   displayName: WV2CDPExtensionWPFSample
             - name: 部署示例
@@ -749,10 +749,10 @@
                 - name: WebView2 部署Visual Studio安装程序
                   href: webview2/samples/wv2deploymentvsinstallersample.md
                   displayName: WV2DeploymentVSInstallerSample
-                - name: 用于部署运行时的 WiX 刻录捆绑包
+                - name: 用于部署 WebView2 运行时的 WiX 刻录捆绑包
                   href: webview2/samples/wv2deploymentwixburnbundlesample.md
                   displayName: WV2DeploymentWiXBurnBundleSample
-                - name: 用于部署运行时的 WiX 自定义操作
+                - name: 用于部署 WebView2 运行时的 WiX 自定义操作
                   href: webview2/samples/wv2deploymentwixcustomactionsample.md
                   displayName: WV2DeploymentWiXCustomActionSample
         - name: 教程：创建 WebView2 应用
@@ -766,9 +766,9 @@
             - name: WinForms
               href: webview2/get-started/winforms.md
               displayName: 'WinForms_GettingStarted, Get started with WebView2 in WinForms apps'
-            - name: WinUI 2（UWP、公共预览版）
+            - name: WinUI 2 (UWP)
               href: webview2/get-started/winui2.md
-              displayName: Get started with WebView2 in WinUI 2 (UWP) apps (public preview)
+              displayName: Get started with WebView2 in WinUI 2 (UWP) apps
             - name: WinUI 3 （Windows 应用 SDK）
               href: webview2/get-started/winui.md
               displayName: 'WinUI3_GettingStarted, Get started with WebView2 in WinUI 3 (Windows App SDK) apps'
@@ -887,14 +887,6 @@
             - name: WebView2 API 参考
               href: webview2/webview2-api-reference.md
               displayName: 'functions, methods'
-            - name: Win32 C++
-              items:
-                - name: Win32 C++ WebView2 API 约定
-                  href: webview2/concepts/win32-api-conventions.md
-                  displayName: null
-                - name: Win32 C++ API 参考
-                  href: /microsoft-edge/webview2/reference/win32/index
-                  displayName: 'functions, methods'
             - name: .NET
               items:
                 - name: Microsoft.Web.WebView2.Core
@@ -908,11 +900,19 @@
                   displayName: 'functions, methods'
             - name: WinRT
               items:
-                - name: Microsoft.Web.WebView2.Core
+                - name: Microsoft.Web.WebView2.Core (C#)
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                   displayName: 'functions, methods'
-                - name: COM 互操作
+                - name: COM 互操作 (C++)
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
+                  displayName: 'functions, methods'
+            - name: Win32 C++
+              items:
+                - name: Win32 C++ WebView2 API 约定
+                  href: webview2/concepts/win32-api-conventions.md
+                  displayName: null
+                - name: Win32 C++ API 参考
+                  href: /microsoft-edge/webview2/reference/win32/index
                   displayName: 'functions, methods'
         - name: 联系 WebView2 团队
           href: webview2/contact.md
