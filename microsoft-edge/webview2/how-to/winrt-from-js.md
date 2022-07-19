@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 05/09/2022
-ms.openlocfilehash: 8703edfee55825f6b2004be804279e9aa26ce81f
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.openlocfilehash: cd0d1dc5d546f99c5ce247906b46f4331e1f522b
+ms.sourcegitcommit: 2390a40f692ae8bf834d146d8196a8e5ad81555b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668537"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "12672233"
 ---
 # <a name="call-native-side-winrt-code-from-web-side-code"></a>从 Web 端代码调用本机端 WinRT 代码
 
@@ -128,6 +128,8 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 1. 选择**Windows 运行时组件 (C++/WinRT) **卡，然后单击“**下一步**”按钮：
 
    ![在“添加新项目”对话框中选择Windows 运行时组件 (C++/WinRT) 卡。](winrt-from-js-images/add-proj-cpp-winrt.png)
+
+   **注意：** 请确保模板名称中包含 C++/WinRT。 如果看不到此模板，请从Visual Studio 安装程序中安装**通用 Windows 平台开发**工作负荷。 如果使用的是 Visual Studio 2019，但仍找不到模板，请从 **Visual Studio >扩展**安装**用于 VS2019 扩展的 C++/WinRT 模板和可视化工具**>管理扩展。
 
    “ **配置新项目** ”窗口随即打开。
 
@@ -273,6 +275,21 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 
 为在 **“包括筛选** 器”对话框中指定的命名空间或类生成源代码。  该对话框填充 **WinRTAdapter 项目的 WinRTAdapter 属性页**对话框的 **Include 筛选****器**行。
 
+> [!IMPORTANT]
+> 如果安装了 WebView2 SDK 的发布版本，并且生成失败 `error MIDL2011: [msg]unresolved type declaration [context]: Microsoft.Web.WebView2.Core.ICoreWebView2DispatchAdapter [ RuntimeClass 'WinRTAdapter.DispatchAdapter'  ]`，则这是 WebView2 SDK 版本中的问题，需要在上述步骤中将 **“使用 WebView2 WinRT API** ”更改为 **“是** ”。
+>
+> 或者，在项目文件`WinRTAdapter.vcxproj`中的最后`</ItemGroup>`一个文件后添加以下内容：
+>
+>```xml
+><ItemGroup Condition="'$(WebView2UseDispatchAdapter)' == 'true'">
+>  <Reference Include="$(WebView2SDKPath)lib\Microsoft.Web.WebView2.Core.winmd">
+>    <!-- wv2winrt needs Dispatch Adapter metadata to generate code -->
+>  </Reference>
+></ItemGroup>
+>```
+>
+> 替换 `$(WebView2SDKPath)` 为安装了 WebView2 SDK 的目录，最后替换为一个 `\` 目录。 例如：`..\webview2_sample_uwp\packages\Microsoft.Web.WebView2.1.0.1264.42\`。
+
 
 <!-- =============================================== -->
 ## <a name="step-7-add-the-host-object-in-the-webview2_sample_uwp-project"></a>步骤 7： 在webview2_sample_uwp项目中添加主机对象
@@ -370,8 +387,8 @@ webview.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync(
                     "if (chrome && chrome.webview) {" +
                         "console.log('Setting up WinRT projection options');" +
                         "chrome.webview.hostObjects.options.defaultSyncProxy = true;" +
-                        "chrome.webview.hostObjects.options.forceAsyncMethodMatches = [/Async$/,/AsyncWithSpeller$/];" + 
-                        "chrome.webview.hostObjects.options.ignoreMemberNotFoundError = true;"  + 
+                        "chrome.webview.hostObjects.options.forceAsyncMethodMatches = [/Async$/,/AsyncWithSpeller$/];" +
+                        "chrome.webview.hostObjects.options.ignoreMemberNotFoundError = true;"  +
                         "window.Windows = chrome.webview.hostObjects.sync.Windows;" +
                     "}" +
                 "})();");
