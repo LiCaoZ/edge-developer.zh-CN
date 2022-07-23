@@ -1,5 +1,5 @@
 ---
-title: 具有 Visual Composition 的 Win32 示例应用
+title: 使用 Visual Composition 的 Win32 示例应用
 description: 此 WebView2 示例演示如何创建在 Win32 本机应用程序中嵌入 WebView2 控件的应用程序。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 06/14/2022
-ms.openlocfilehash: 9e6f28118eafa1d80062fed017b63bfa3ce91408
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.openlocfilehash: 88823d2acc147b405e5e76d7839466383d57e4b1
+ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668550"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12675547"
 ---
-# <a name="win32-sample-app-with-visual-composition"></a>具有 Visual Composition 的 Win32 示例应用
+# <a name="win32-sample-app-with-visual-composition"></a>使用 Visual Composition 的 Win32 示例应用
 
 此 WebView2 示例演示如何创建在 Win32 本机应用程序中嵌入 WebView2 控件的应用程序。
 
@@ -22,7 +22,10 @@ ms.locfileid: "12668550"
 
 它还使用Windows 运行时组合 API (也称为视觉对象层) ，以利用 Windows UI 功能，在 C++ Win32 应用程序中创建更好的外观、感觉和功能。
 
-&amp; `.sln`目录：**WebView2SampleWinComp/WebView2SampleWinComp.sln**。
+
+*  示例名称： **WebView2SampleWinComp**
+*  存储库目录： **WebView2SampleWinComp**
+*  解决方案文件： **WebView2SampleWinComp.sln**
 
 
 **若要使用此示例 (常规用途步骤) ：**

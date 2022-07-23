@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 05/09/2022
-ms.openlocfilehash: cd0d1dc5d546f99c5ce247906b46f4331e1f522b
-ms.sourcegitcommit: 2390a40f692ae8bf834d146d8196a8e5ad81555b
+ms.openlocfilehash: 56c24b6929fd6a05c386a7703e6ab468f75e7de0
+ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "12672233"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12675659"
 ---
 # <a name="call-native-side-winrt-code-from-web-side-code"></a>从 Web 端代码调用本机端 WinRT 代码
 
@@ -106,7 +106,7 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 1. 关闭 **WebView2 WinUI 2 UWP 示例** 窗口。
 
 如果需要更多信息，请参阅这些页面中的详细步骤，然后继续以下操作：
-* [WebView2 示例：WinUI 2 (UWP) 浏览器应用](../samples/webview2_sample_uwp.md) - 打开、编译和运行示例应用的步骤。
+* [WinUI 2 (UWP) 示例应用](../samples/webview2_sample_uwp.md) - 打开、编译和运行示例应用的步骤。
 * [WinUI 2 中的 WebView2 入门 (UWP) 应用](../get-started/winui2.md) - 设置基本 WebView2 应用。
 * [GitHub > WebView2Samples 存储库> webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp)
 * [为 WebView2 设置开发环境](machine-setup.md) - 有关设置先决条件的详细信息。
@@ -442,10 +442,9 @@ webView->CoreWebView2->AddScriptToExecuteOnDocumentCreatedAsync(
 一般文章：
 * [从 Web 端代码调用本机代码](hostobject.md)
 
-示例： 
-* [WebView2Samples > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) - WebView2 UWP WinUi2 浏览器。
-* [WinUI 2 (UWP) 示例应用](../samples/webview2_sample_uwp.md) - 有关如何下载、编译和运行示例的一般演练。
-* [WinUI 2 (UWP) 应用中的 WebView2 入](../get-started/winui2.md) 门 - 下载、编译和运行示例的教程。
+教程和示例：
+* [WinUI 2 (UWP) 应用入](../get-started/winui2.md) 门 - 教程：使用项目模板使用 WebView2 创建应用的步骤。
+* [WinUI 2 (UWP) 示例应用](../samples/webview2_sample_uwp.md) - 示例：下载、生成、运行和更新示例的步骤。
 
 API 参考：
 * WinRT： [CoreWebView2.AddHostObjectToScript 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript)

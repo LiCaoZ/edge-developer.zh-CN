@@ -7,18 +7,21 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 680dd191a3a5e76825a7d62ae445bf5c1a535aab
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.openlocfilehash: 10e72f6704ada029aed409cecc5e5c3f98afa482
+ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668529"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12675568"
 ---
 # <a name="winforms-sample-app"></a>WinForms 示例应用
 
 此 WebView2 示例演示如何使用 WebView2 控件和 WebView2 API 在 WinForms 应用中实现 Web 浏览器。
 
-Directory &amp; .sln： **WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln**。
+
+*  示例名称： **WebView2WindowsFormsBrowser**
+*  存储库目录： **WebView2WindowsFormsBrowser**
+*  解决方案文件： **WebView2WindowsFormsBrowser.sln**
 
 
 <!-- ====================================================================== -->

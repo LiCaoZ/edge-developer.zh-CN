@@ -7,18 +7,18 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: dcb1d91ae1dd940983b47151711813be724886d4
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.openlocfilehash: d7fee7706ca69394aebc6c996cbacdf7ef1fc969
+ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668865"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12675701"
 ---
 # <a name="get-started-with-webview2-in-wpf-apps"></a>WPF 应用中的 WebView2 入门
 
 本文介绍如何设置开发工具并为Windows Presentation Foundation (WPF) 创建初始 WebView2 应用，并了解 WebView2 概念。
 
-* GitHub 的相应入门示例：[入门 WPF (WPF_GettingStarted/WPFSample.sln) 中的 WebView2 ](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted#readme)
+WebView2Samples 存储库中提供了本教程项目的已完成版本：[入门 WPF (WPF_GettingStarted/WPFSample.sln) 中的 WebView2](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted#readme)。
 
 
 <!-- ====================================================================== -->
@@ -474,4 +474,4 @@ API 参考：
 * [API 参考：WebView2.Wpf 命名空间](/dotnet/api/microsoft.web.webview2.wpf)
 
 GitHub：
-* [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。
+* [WebView2Samples 存储库> WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser)

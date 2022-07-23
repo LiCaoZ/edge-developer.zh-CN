@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 49b5ab206ee2e73ceb4c7625510f368856624b2a
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.openlocfilehash: e426cd356df0b4d4d78784eeb4cf051000c29976
+ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668480"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12675722"
 ---
 # <a name="win32-sample-app"></a>Win32 示例应用
 
@@ -22,7 +22,10 @@ WebView2APISample 是应用程序在 Win32 本机应用程序中嵌入 WebView2 
 
 API 示例展示了一系列 WebView2 的事件处理程序和 API 方法，这些方法允许本机 Win32 应用程序直接与 WebView2 控件交互，反之亦然。
 
-&amp; 目录 .sln：**父 dir) 中的 WebView2APISample / WebView2Samples.sln (**。
+*  示例名称： **WebView2APISample**
+*  存储库目录： **WebView2APISample**
+*  解决方案文件：父目录) 中的 **WebView2Samples.sln** (
+*  解决方案资源管理器中的项目名称：**WebView2APISample**
 
 
 <!-- ====================================================================== -->
@@ -164,7 +167,7 @@ Microsoft Visual Studio 是必需的。  此示例不支持 Microsoft Visual Stu
 
    _若要缩放，请右键单击> **在新选项卡中打开图像**。_
 
-1. 使用示例应用。  请参阅 [WebView2 API 示例的自述文件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme)
+1. 使用示例应用。  请参阅 [WebView2 API 示例的自述文件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme)，这是有关此示例中代码的长自述文件。
 
 1. 在 Visual Studio 中，选择 **“调试** > **停止调试**”。  Visual Studio 关闭应用。
 

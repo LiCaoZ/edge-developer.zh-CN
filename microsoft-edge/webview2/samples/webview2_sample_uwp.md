@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 07/13/2022
-ms.openlocfilehash: 8e692799fe01229a327cb154cc085046ebc51519
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.openlocfilehash: 5c571948e79963b1396a4ab71d321d7fcabb1430
+ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668788"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12675575"
 ---
 # <a name="winui-2-uwp-sample-app"></a>WinUI 2 (UWP) 示例应用
 
@@ -23,10 +23,9 @@ spelling conventions:
 
 此 WebView2 示例演示如何使用 WebView2 控件和 WebView2 API 在 WinUI 2 (UWP) 应用中实现 Web 浏览器。
 
-
-#### <a name="sample-name"></a>示例名称
-
-**webview2_sample_uwp**;存储库目录和解决方案文件为： **webview2_sample_uwp/webview2_sample_uwp.sln**。
+*  示例名称： **webview2_sample_uwp**
+*  存储库目录： **webview2_sample_uwp**
+*  解决方案文件： **webview2_sample_uwp.sln**
 
 
 #### <a name="installed-nuget-packages"></a>已安装的 NuGet 包

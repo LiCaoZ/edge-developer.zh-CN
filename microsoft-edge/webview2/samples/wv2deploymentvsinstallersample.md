@@ -7,20 +7,22 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 06/17/2022
-ms.openlocfilehash: c3274721c86c0eb93dfba62f027d66a7360e4a46
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.openlocfilehash: 16cc3cfc7c443777b9f93e44b5d2bc16b0601950
+ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668735"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12675694"
 ---
 # <a name="webview2-deployment-visual-studio-installer"></a>WebView2 部署Visual Studio安装程序
 
 此 WebView2 示例演示如何使用 Visual Studio 安装程序部署 WebView2 应用。
 
-目录： **WV2DeploymentVSInstallerSample** (没有 `.sln` 文件) 
-
 为了帮助你了解如何使用应用程序部署 [Evergreen WebView2 运行时](/microsoft-edge/webview2/concepts/distribution#deploying-the-evergreen-webview2-runtime)，本文介绍如何使用 [Microsoft Visual Studio 安装程序 Project](https://marketplace.visualstudio.com/items?itemName=visualstudioclient.MicrosoftVisualStudio2017InstallerProjects) 为 [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample#readme) 创建安装程序，并链接安装 Evergreen WebView2 运行时。
+
+*  示例名称： **WV2DeploymentVSInstallerSample**
+*  存储库目录： **WV2DeploymentVSInstallerSample**
+
 
 <!-- ====================================================================== -->
 ## <a name="step-1---install-visual-studio-and-installer-projects"></a>步骤 1 - 安装 Visual Studio 和安装程序项目

@@ -1,5 +1,5 @@
 ---
-title: 用于部署 WebView2 运行时的 WiX 燃烧捆绑包
+title: 用于部署 WebView2 运行时的 WiX 刻录捆绑包
 description: 演示如何使用 WiX 燃烧捆绑包部署 WebView2 运行时的 WebView2 示例。
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,18 +7,21 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: dcaf46819bffe9bbc5c21401c6cb9a132cfed068
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.openlocfilehash: 5d6ca64b2054a9516b49ed4cbcc4f48926fc0127
+ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668473"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12675687"
 ---
-# <a name="wix-burn-bundle-to-deploy-the-webview2-runtime"></a>用于部署 WebView2 运行时的 WiX 燃烧捆绑包
+# <a name="wix-burn-bundle-to-deploy-the-webview2-runtime"></a>用于部署 WebView2 运行时的 WiX 刻录捆绑包
 
 这是一个 WebView2 示例，演示如何使用 WiX 燃烧捆绑包部署 WebView2 运行时。
 
-目录& .proj： **WV2DeploymentWiXBurnBundleSample/WV2DeploymentWiXBurnBundleSample.wixproj** (no .sln) 
+
+*  示例名称： **WV2DeploymentWiXBurnBundleSample**
+*  存储库目录： **WV2DeploymentWiXBurnBundleSample**
+*  项目文件： **WV2DeploymentWiXBurnBundleSample.wixproj**
 
 
 <!-- ====================================================================== -->

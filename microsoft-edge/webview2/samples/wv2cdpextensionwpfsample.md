@@ -7,18 +7,21 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 9f59c93c54585b73cdb06f118aae4966bb6a09e1
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.openlocfilehash: cd6bc61368afebe8cc3da71b0c70d80db7943c13
+ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668767"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12675652"
 ---
 # <a name="wpf-sample-app-with-cdp-extension"></a>具有 CDP 扩展的 WPF 示例应用
 
 此 WebView2 示例演示如何使用 WebView2 CDP 扩展在 WPF 应用中使用 Chrome DevTools 协议。
 
-&amp; 目录 .sln：**WV2CDPExtensionWPFSample/WV2CDPExtensionWPFSample.sln**。
+
+*  示例名称： **WV2CDPExtensionWPFSample**
+*  存储库目录： **WV2CDPExtensionWPFSample**
+*  解决方案文件： **WV2CDPExtensionWPFSample.sln**
 
 
 <!-- ====================================================================== -->

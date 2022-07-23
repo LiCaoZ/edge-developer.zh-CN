@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2022
-ms.openlocfilehash: 2932086a30f318cab116783a113a8a4d8aff4282
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.date: 07/27/2022
+ms.openlocfilehash: ff7e56ad55324d128c82c581da8a605b8ec98875
+ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668872"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12675554"
 ---
 # <a name="set-up-your-dev-environment-for-webview2"></a>为 WebView2 设置开发环境
 
@@ -185,7 +185,7 @@ ms.locfileid: "12668872"
 
 下载或克隆 `WebView2Samples` 存储库后，在 Visual Studio 中打开文件 `.sln` 。
 
-1. 在存储库目录结构的本地副本中，找到一个 `.sln` 文件。  请参阅 _WebView2 示例代码_中[所有 .sln 和 README.md 文件的本地路径](../code-samples-links.md#local-paths-for-sln-and-readmemd-files)。  [WebView2Samples 存储库中的顶级自述文件](https://github.com/MicrosoftEdge/WebView2Samples#readme)提供了类似的概述。
+1. 在存储库目录结构的本地副本中，找到一个 `.sln` 文件。  [WebView2Samples 存储库中的顶级自述文件](https://github.com/MicrosoftEdge/WebView2Samples#readme)提供了类似的概述。
 
 1. `.sln`在 Visual Studio 中打开文件。  例如，打开 [WebView2Samples.sln 的](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2Samples.sln)本地副本。  此存储库的解决方案文件需要 Visual Studio，而不是Visual Studio Code。
 
@@ -196,7 +196,7 @@ ms.locfileid: "12668872"
 
 对于常规的初始开发人员环境设置，可以从`WebView2Samples`存储库中打开任何类型的`.sln`文件：
 
-*  目录子目录`GettingStartedGuides`中特定`.sln`于平台的文件。  这些示例与入门教程匹配，并且是演示几个 API 功能的已完成示例。
+*  目录子目录`GettingStartedGuides`中特定`.sln`于平台的文件。  这些示例与入门教程匹配，并且是演示几个 API 功能的完整示例。
 
 *  目录中`SampleApps`包含多个平台项目的 Win32 `.sln` 文件。  这是一个全面的 API 演示。
 

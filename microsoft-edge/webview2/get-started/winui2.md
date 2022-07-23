@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/13/2022
-ms.openlocfilehash: 5344482f4f3186539ac14470e1442ed033442873
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.date: 07/14/2022
+ms.openlocfilehash: 019a9e7d72defc1d7f3c459f60dafefb1cf99510
+ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668610"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12675589"
 ---
 # <a name="get-started-with-webview2-in-winui-2-uwp-apps"></a>WinUI 2 (UWP) 应用中的 WebView2 入门
 

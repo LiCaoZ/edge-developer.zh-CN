@@ -7,18 +7,21 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 6e55bcb8a72769e4d4c92091925fecbcfbd1fc5b
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.openlocfilehash: f2b47c9489dae08dc8cdb80c7a1a9c13afffebc1
+ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668494"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12675729"
 ---
 # <a name="wpf-sample-app"></a>WPF 示例应用
 
-此 WebView2 示例演示如何使用 WebView2 控件和 WebView2 API 在 WPF .NET 应用中实现 Web 浏览器。
+此 WebView2 示例可从 WebView2Samples 存储库获取，演示如何使用 WebView2 控件和 WebView2 API 在 WPF .NET 应用中实现 Web 浏览器。
 
-Directory &amp; .sln： **WebView2WpfBrowser/WebView2WpfBrowser.sln**。
+
+*  示例名称： **WebView2WpfBrowser**
+*  存储库目录： **WebView2WpfBrowser**
+*  解决方案文件： **WebView2WpfBrowser.sln**
 
 
 <!-- ====================================================================== -->

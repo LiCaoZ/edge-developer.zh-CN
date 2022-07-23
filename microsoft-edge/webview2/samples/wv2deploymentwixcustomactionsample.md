@@ -7,18 +7,21 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: ddaa25d477d6aa641f9454445328e50aabb80b35
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.openlocfilehash: 22045fe3ae29328e0a0a4f8c3697e6451a39b7e2
+ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668690"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12675645"
 ---
 # <a name="wix-custom-action-to-deploy-the-webview2-runtime"></a>用于部署 WebView2 运行时的 WiX 自定义操作
 
 这是一个 WebView2 示例，演示如何使用 WiX 自定义操作部署 WebView2 运行时。
 
-Directory &amp; .proj： **WV2DeploymentWiXCustomActionSample/WV2DeploymentWiXCustomActionSample.wixproj** (no .sln) 
+
+*  示例名称： **WV2DeploymentWiXCustomActionSample**
+*  存储库目录： **WV2DeploymentWiXCustomActionSample**
+*  项目文件： **WV2DeploymentWiXCustomActionSample.wixproj**
 
 
 <!-- ====================================================================== -->
