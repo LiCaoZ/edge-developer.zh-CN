@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 2dd94e96b23134998e53b582a42d4b1fc6510416
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: f3053331e378b0da2dd128dc660379f7f43e47e1
+ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630945"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12676099"
 ---
 <!-- Copyright Kayce Basques
 
@@ -81,19 +81,78 @@ ms.locfileid: "12630945"
 <!-- summary to bubble up: -->
 返回最近评估的表达式的值。
 
-### <a name="syntax"></a>语法
+**语法：**
 
 ```javascript
 $_
 ```
 
-### <a name="example"></a>示例
+### <a name="example-1"></a>示例 1
 
-在下图中，计算 () `2+2` 的简单表达式。  然后计算该 `$_` 属性，其中包含相同的值：
+1. 若要打开**控制台**工具：在 Edge 中，单击 **“设置”等**，将鼠标悬停在**更多工具**上，然后选择**开发人员工具**。  DevTools 将在当前网页旁边打开。  单击 **“控制台** ”选项卡。
 
-![$_ 是最近评估的表达式。](../media/console-arithmatic.msft.png)
+1. 在 **控制台**中单击，键入表达式 `2+2`，然后按 `Enter`下：
 
-在下图中，评估的表达式最初包含一个名称数组。  评估`$_.length`以查找数组的长度，现在存储在其中`$_`的值将成为最新的评估表达式： `4`
+   在下图中，计算 () `2+2` 的简单表达式。  然后计算该 `$_` 属性，其中包含相同的值：
+
+   ![$_ 是最近评估的表达式。](../media/console-arithmatic.msft.png)
+
+   ```javascript
+   2+2
+   ```
+   
+   键入时， `2+2` 将计算 () 的简单表达式，控制台将输出该数字 `4`。  该 `$_` 属性接受该值 `4`。
+
+1. 键入表达式 `$_`，然后按 `Enter`：
+
+   ```javascript
+   $_
+   ```
+
+   属性的 `$_` 值是以前评估的表达式的值;数字 4。
+
+   ![$_ 表示最近评估的表达式，即先前输入的语句中的数字 4。](../media/console-arithmatic.msft.png)
+
+
+### <a name="example-2"></a>示例 2
+
+1. 若要打开**控制台**工具：在 Edge 中，单击 **“设置”等**，将鼠标悬停在**更多工具**上，然后选择**开发人员工具**。  DevTools 将在当前网页旁边打开。  单击 **“控制台** ”选项卡。
+
+1. 将以下代码粘贴到 **控制台**中，然后按 `Enter`下：
+
+   ```javascript
+   ["john", "paul", "george", "ringo"]
+   ```
+   
+   计算的表达式是一个名称数组。
+
+1. 在 **控制台**中键入以下代码，然后按 `Enter`下：
+
+   ```javascript
+   $_
+   ```
+
+   `$_` 表示以前评估的表达式，即名称数组。
+
+   
+1. 在 **控制台**中键入以下代码，然后按 `Enter`下：
+
+   ```javascript
+   $_.length
+   ```
+
+   计算表达式 `$_.length` 以查找数组的长度，即数字 4。  `$_` 现在采用值 4，而不是名称数组。
+   
+1. 在 **控制台**中键入以下代码，然后按 `Enter`下：
+
+   ```javascript
+   $_
+   ```
+   
+   `$_` 表示以前评估的表达式，现在是数字 4。
+
+
+   ![$_ 的值更改为以前评估的表达式的值。](../media/console-array-length.msft.png)
 
 ![$_ 在评估新命令时更改。](../media/console-array-length.msft.png)
 
@@ -631,7 +690,7 @@ monitorEvents(window, ["resize", "scroll"]);
 | `mouse` | “click”、“dblclick”、“mousedown”、“mousemove”、“mouseout”、“mouseover”、“mouseup”、“mousewheel” |
 | `key` | “keydown”、“keypress”、“keyup”、“textInput” |
 | `touch` | “touchcancel”、“touchend”、“touchmove”、“touchstart” |
-| `control` | “blur”、“change”、“focus”、“reset”、“resize”、“scroll”、“select”、“submit”、“zoom” |
+| `Ctrl` | “blur”、“change”、“focus”、“reset”、“resize”、“scroll”、“select”、“submit”、“zoom” |
 
 ### <a name="example"></a>示例
 

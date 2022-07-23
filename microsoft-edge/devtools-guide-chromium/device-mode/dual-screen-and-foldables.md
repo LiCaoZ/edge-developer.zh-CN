@@ -1,21 +1,21 @@
 ---
 title: 模拟双屏幕和可折叠设备
-description: 使用Microsoft Edge中的虚拟设备增强双屏和可折叠设备的网站。
+description: 使用 Microsoft Edge 中的虚拟设备增强双屏和可折叠设备的网站。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 6a129ead4ef1fd04c0d43a65420a1ed1d21c8481
-ms.sourcegitcommit: a5aa193a2267019251d2447a2bdb088d979c6045
+ms.openlocfilehash: fafc1489dc62afda3d4783b55d5f571f6d05c256
+ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "12568626"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12675976"
 ---
 # <a name="emulate-dual-screen-and-foldable-devices"></a>模拟双屏幕和可折叠设备
 
-可以在 Microsoft Edge DevTools 中模拟以下双屏和可折叠设备。
+可以使用 DevTools 的设备仿真功能，在 Microsoft Edge DevTools 中模拟以下双屏和可折叠设备：
 
 * [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo)
 * [Samsung Galaxy Fold](https://www.samsung.com/global/galaxy/galaxy-fold)
@@ -31,9 +31,9 @@ ms.locfileid: "12568626"
 <!-- ====================================================================== -->
 ## <a name="test-on-foldable-and-dual-screen-devices"></a>在可折叠设备和双屏设备上进行测试
 
-在Microsoft Edge中以双屏姿势模拟 [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) 时， (两个屏幕之间的空间的接缝) 通过网站或应用绘制。
+在 Microsoft Edge 中以双屏姿势模拟 [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) 时，接缝 (两个屏幕之间的空间) 通过网站或应用绘制。
 
-模拟的显示与网站 (或应用) 在 [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) 上运行时在[Microsoft Edge Android应用](https://play.google.com/store/apps/details?id=com.microsoft.emmx)中呈现的方式相匹配。  可能需要更新网站 (或应用) 才能在接缝上更好地显示。  有关将网站 (或应用) 适应接缝的详细信息，请参阅 [如何使用接缝](/dual-screen/introduction#how-to-work-with-the-seam)。
+模拟的显示与网站 (或应用) 在 [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) 上运行时在 [Microsoft Edge Android 应用](https://play.google.com/store/apps/details?id=com.microsoft.emmx)中呈现的方式相匹配。  可能需要更新网站 (或应用) 才能在接缝上更好地显示。  有关将网站 (或应用) 适应接缝的详细信息，请参阅 [如何使用接缝](/dual-screen/introduction#how-to-work-with-the-seam)。
 
 [设备工具栏](../device-mode/index.md#simulate-a-mobile-viewport)具有其他功能，可帮助你以多种姿势和方向测试网站或应用。  单击 **“旋转** (![旋转。](../media/rotate-dark-icon.msft.png)) 将视区旋转为横向。 将该功能与 **Span** (Span 组合在一 ![起。](../media/span-dark-icon.msft.png)) 在单屏、折叠和双屏或展开的姿势之间切换。  通过这些功能，你可以以所有四种可能的姿势和方向测试网站或应用。
 
@@ -55,4 +55,4 @@ ms.locfileid: "12568626"
 
 *  有关双屏设备上的 Web 开发的详细信息，请参阅 [双屏 Web 体验](/dual-screen/web/index)。
 
-*  安装 [Surface Duo 仿真器](/dual-screen/android/use-emulator)。  Surface Duo 模拟器不同于Microsoft Edge中的模拟器、运行Android以及与[Android Studio](https://developer.android.com/studio/)集成。  请参阅 [“获取 Surface Duo SDK](/dual-screen/android/get-duo-sdk)”。
+*  安装 [Surface Duo 仿真器](/dual-screen/android/use-emulator)。  Surface Duo 仿真器不同于 Microsoft Edge 中的仿真器、运行 Android 以及与 [Android Studio](https://developer.android.com/studio/) 集成。  请参阅 [“获取 Surface Duo SDK](/dual-screen/android/get-duo-sdk)”。

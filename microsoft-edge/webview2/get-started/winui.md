@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 07/06/2022
-ms.openlocfilehash: 3711161f79eb2fb058d3326bd11f5c21533e85fc
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.openlocfilehash: f1372eea3ee3cd1501e30ef3b4334b229ee09c58
+ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668452"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12676067"
 ---
 # <a name="get-started-with-webview2-in-winui-3-windows-app-sdk-apps"></a>WinUI 3 (Windows 应用 SDK) 应用中的 WebView2 入门
 
@@ -89,11 +89,11 @@ Return here and continue with the steps below.
 
     *  该 `MainWindow.xaml.cs` 文件定义一个 `MainWindow` 类，该类表示应用实例显示的主窗口。  这些类派生自 WinUI 命名空间中的 `Microsoft.UI.Xaml` 类型。
 
-1.  选择 **“文件** > **保存所有** (`Ctrl`++`Shift``S`) 保存项目。
-
 1.  在 **“解决方案配置”** 下拉列表中，选择 **“调试**”。
 
 1.  在 **“解决方案平台** ”下拉列表中，选择一个平台，例如 **x64**。
+
+1.  选择 **“文件** > **保存所有** (`Ctrl`++`Shift``S`) 保存项目。
 
 1.  按 **F5** 生成并运行项目。  将打开空白的 WinUI 桌面应用，但尚未添加 WebView2 控件：
 
@@ -254,8 +254,6 @@ Return here and continue with the steps below.
 1.  在地址栏中输入不完整的 URL，例如 `bing.com`，然后单击 **“转到** ”按钮。
 
     引发 `ArgumentException` 异常，<!--and appears after you close the app--> 因为 URL 不是以或 `https://`. 开头`http://`。
-
-1.  关闭示例应用。
 
 1.  关闭示例应用。  可能会显示以下对话框：
 

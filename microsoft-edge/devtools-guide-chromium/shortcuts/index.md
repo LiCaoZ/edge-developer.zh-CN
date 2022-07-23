@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 8f9534890cf0e5efb8e3736c5680497a0d361dc6
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: 65763263689301c0cb02e800ccbc08154f420669
+ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12631631"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12676053"
 ---
 <!-- Copyright Kayce Basques
 
@@ -96,7 +96,7 @@ ms.locfileid: "12631631"
 
 | 操作 | Windows/Linux | macOS |
 |---|---|---|
-| 转到声明属性值的行 | 按住 `Control`，然后单击属性值 | 按住 `Command`，然后单击属性值 |
+| 转到声明属性值的行 | 按住 `Ctrl`，然后单击属性值 | 按住 `Command`，然后单击属性值 |
 | 循环显示颜色值的 RBGA、HSLA 和 Hex 表示形式 | 按住 `Shift`，然后单击值旁边的 **“颜色预览** ”框 | 按住 `Shift`，然后单击值旁边的 **“颜色预览** ”框 |
 | 选择下一个/上一个属性或值 | 单击属性名称或值，然后按 `Tab` / `Shift`+`Tab` | 单击属性名称或值，然后按 `Tab` / `Shift`+`Tab` |
 | 将属性值递增/减 0.1 | 单击某个值，然后按下 `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | 单击一个值，然后按 `Option`+`Up Arrow` /Option+向下键 |
@@ -118,7 +118,7 @@ ms.locfileid: "12631631"
 | 单步跳过下一函数调用 | `F10` 或 `Ctrl`+`'` | `F10` 或 `Command`+`'` |
 | 单步执行下一函数调用 | `F11` 或 `Ctrl`+`;` | `F11` 或 `Command`+`;` |
 | 跳出当前函数 | `Shift`+`F11` 或 `Ctrl`+`Shift`+`;` | `Shift`+`F11` 或 `Command`+`Shift`+`;` |
-| 暂停时继续至指定的代码行[](../javascript/breakpoints.md#line-of-code-breakpoints) | 按住 `Control`，然后单击代码行 | 按住 `Command`，然后单击代码行 |
+| 暂停时继续至指定的代码行[](../javascript/breakpoints.md#line-of-code-breakpoints) | 按住 `Ctrl`，然后单击代码行 | 按住 `Command`，然后单击代码行 |
 | 选择当前所选帧下方/上方的调用帧 | `Ctrl`+`.` / `Ctrl`+`,` | `Ctrl`+`.` / `Ctrl`+`,` |
 | 保存对本地修改的更改 | `Ctrl`+`S` | `Command`+`S` |
 | 保存所有更改 | `Ctrl`+`Alt`+`S` | `Command`+`Option`+`S` |

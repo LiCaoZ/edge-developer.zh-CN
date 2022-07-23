@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 088b1295c61005310826085fb7e732ab104c81c2
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: e7449baeef8026fd29483f1247ce9c83b0d03c9e
+ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12631338"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12676060"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -140,7 +140,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会使应
 
 ![强制同步布局。](../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png)
 
-“布局打击”是强制同步布局条件的重复。  当 JavaScript 反复写入和读取 DOM 时，会发生这种情况，这会强制浏览器一遍又一遍地重新计算布局。  若要标识布局重排，请查找多个强制同步布局警告的模式。  查看上一个数字。
+“布局打击”是强制同步布局条件的重复。  当 JavaScript 反复写入和读取 DOM 时，会发生这种情况，这会强制浏览器一遍又一遍地重新计算布局。  若要标识布局重排，请查找多个强制同步布局警告的模式。  请参阅上图。
 
 ### <a name="layout-problems"></a>布局：问题
 

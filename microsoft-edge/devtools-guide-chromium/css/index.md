@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: c838e23329e5cdfa1194e007c23dfbbbe65d2ebf
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: 2a7681363e701c9188600fbe22ccd672ac566dd9
+ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630879"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12676074"
 ---
 <!-- Copyright Kayce Basques
 
@@ -34,7 +34,7 @@ ms.locfileid: "12630879"
 <!-- ====================================================================== -->
 ## <a name="view-the-css-for-an-element"></a>查看元素的 CSS
 
-1. 在新窗口或选项卡中打开 [CSS 示例](https://microsoftedge.github.io/Demos/devtools-css-get-started/) 演示页。 为此，请右键单击链接，或按住 `Control` (Windows、Linux) 或 `Command` (macOS) ，然后单击该链接。
+1. 在新窗口或选项卡中打开 [CSS 示例](https://microsoftedge.github.io/Demos/devtools-css-get-started/) 演示页。 为此，请右键单击链接，或按住 `Ctrl` (Windows、Linux) 或 `Command` (macOS) ，然后单击该链接。
 
    <!-- You can view the source files for the CSS Examples demo page at the [MicrosoftEdge/Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) repo folder. -->
 

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/21/2022
-ms.openlocfilehash: c3209be02f82fa7c73a5dc10afd7a92d3dca3526
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: 0e00d34f2623b5a41dc013db5b603b9213b68d07
+ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12631644"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12676081"
 ---
 <!-- Copyright Meggin Kearney
 
@@ -36,8 +36,15 @@ ms.locfileid: "12631644"
 
 DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用的内存分布。  另请参阅_内存术语_中[保留树](memory-101.md#objects-retaining-tree)) 的对象。
 
-<!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
-<!-- 21 hits on "devtools-memory-heap-snapshot" in this article -->
+<!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder.
+
+This article uses five demo webpages, all sourced at https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot -
+*  [Example 3: Scattered objects](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html)
+*  [Example 7: Eval is evil](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-07.html)
+*  [Example 8: Recording heap allocations](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-08.html)
+*  [Example 6: Leaking DOM nodes](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-06.html)
+*  [Example 9: DOM leaks bigger than expected](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-09.html)
+-->
 
 
 <!-- ====================================================================== -->
@@ -74,8 +81,10 @@ DevTools 堆探查器显示页面的 JavaScript 对象和相关 DOM 节点使用
 
 关闭 DevTools 窗口不会从与呈现器进程关联的内存中删除配置文件。  重新打开 DevTools 时，以前拍摄的所有快照都会重新出现在快照列表中。
 
-> [!NOTE]
-> 试用此 [分散对象](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html) 示例，并使用堆探查器对其进行分析。  显示多个 (对象) 项分配。
+
+## <a name="demo-webpage-example-3-scattered-objects"></a>演示网页：示例 3：分散的对象
+
+*  打开此演示示例网页： [示例 3：](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html) 新窗口或选项卡中的分散对象。 使用堆探查器对其进行分析。  显示多个 (对象) 项分配。
 
 <!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
@@ -206,15 +215,15 @@ function createLargeClosure() {
 }
 ```
 
-#### <a name="demo-impact-of-closures-on-memory"></a>演示：关闭对内存的影响
+#### <a name="demo-webpage-example-7-eval-is-evil"></a>演示网页：示例 7：Eval 是邪恶的
 
-若要分析关闭对内存的影响，请尝试以下示例：在新窗口或选项卡中打开演示网页 [为什么 `eval` 是邪恶](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-07.html) 的。
+若要分析关闭对内存的影响，请尝试以下示例：打开演示网页 [示例 7：新](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-07.html) 窗口或选项卡中的 Eval 是邪恶的。
 
 <!-- You can view the source files for the Heap Snapshots demo pages in the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
-#### <a name="demo-recording-heap-allocations"></a>演示：录制堆分配
+#### <a name="demo-webpage-example-8-recording-heap-allocations"></a>演示网页：示例 8：记录堆分配
 
-你可能还有兴趣使用以下示例跟进上述演示，该示例将引导你记录堆分配：在新窗口或选项卡中打开演示网页 [堆分配](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-08.html) 。
+你可能还有兴趣使用以下示例跟进上述演示，该示例将引导你完成录制堆分配：打开演示网页 [示例 8：在新](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-08.html) 窗口或选项卡中录制堆分配。
 
 <!-- You can view the source files for the Heap Snapshots demo pages in the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
@@ -283,16 +292,16 @@ leafRef = null;
 ![DOM 子树。](../media/memory-problems-tree-gc.msft.png)
 
 
-### <a name="example-leaking-dom-nodes"></a>示例：泄漏 DOM 节点
+### <a name="demo-webpage-example-6-leaking-dom-nodes"></a>演示网页：示例 6：泄漏 DOM 节点
 
-请尝试此 [DOM 节点泄漏](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-06.html) 示例，了解 DOM 节点可能泄漏的位置，以及如何检测此类泄漏。
+打开示例网页示例 6：在新窗口或选项卡中 [泄漏 DOM 节点](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-06.html) ，了解 DOM 节点可能泄漏的位置以及如何检测此类泄漏。
 
 <!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 
-### <a name="example-dom-leaks-being-bigger-than-expected"></a>示例：DOM 泄漏大于预期
+### <a name="demo-webpage-example-9-dom-leaks-bigger-than-expected"></a>演示网页：示例 9：DOM 泄漏大于预期
 
-另请尝试此 [DOM 泄漏大于预期](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-09.html)的示例。
+打开示例网页 [示例 9：](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-09.html) 新窗口或选项卡中大于预期的 DOM 泄漏。
 
 <!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/29/2021
-ms.openlocfilehash: 696e71d5792b31ecb23975f29bbdf1e09697a09c
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: 52bd6af158849dc80a894b4f5444766a43ca7a3f
+ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630483"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12676137"
 ---
 <!-- Copyright Kayce Basques
 
@@ -43,7 +43,7 @@ ms.locfileid: "12630483"
 
 当你对特定 DOM 节点感兴趣时，可通过“**检查**”快速打开开发人员工具并调查该节点。
 
-1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。 为此，请右键单击链接，或按住 `Control` (Windows、Linux) 或 `Command` (macOS) ，然后单击该链接。
+1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。 为此，请右键单击链接，或按住 `Ctrl` (Windows、Linux) 或 `Command` (macOS) ，然后单击该链接。
 
 <!-- You can view the source files for the DOM Examples demo in the [MicrosoftEdge/Demos > devtools-dom-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) repo folder. -->
 

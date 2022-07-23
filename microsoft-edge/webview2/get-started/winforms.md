@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 2ab4d6629ec06e3239bfd1d44c5b0fb004885aa2
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.openlocfilehash: 222b458665f3e2df7efeb6c1b44f0f50ba6f76a5
+ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668466"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12675997"
 ---
 # <a name="get-started-with-webview2-in-winforms-apps"></a>WinForms 应用中的 WebView2 入门
 
@@ -267,7 +267,7 @@ Microsoft Visual Studio 是必需的。  本教程不支持 Microsoft Visual Stu
 
 1. 确保按钮控件具有焦点。
 
-1. 在 **“属性”** 面板的“ **设计** ”部分中，将 ** (名称) ** (可能从 **button1**) 更改为 **goButton**。
+<!-- 1. In the **Properties** panel, in the **Design** section, change the **(Name)** (probably from **button1**) to **goButton**. -->
 
 1. 在 **“属性”** 面板中，在粗体 **外观** 部分 (大约 15 个属性) ，将 **Text** 属性 (可能从 **button1**) 更改为 **Go！**
 
@@ -567,7 +567,7 @@ maintenance link (keep)
 
 1. 选择 **“文件** > **保存所有** (`Ctrl`++`Shift``S`) 保存更改。
 
-1. 按 **F5** 生成并运行项目。
+1. 按 `F5` 下以生成并运行项目。
 
 1. 输入 URL，例如 `https://www.bing.com`：
 

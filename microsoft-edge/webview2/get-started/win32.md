@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 64b8d91df8234c59d1cc2369b71bb32a16370541
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.openlocfilehash: 4f88964999886dc9363c6db1d7873d4e760c1a86
+ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668508"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12676088"
 ---
 # <a name="get-started-with-webview2-in-win32-apps"></a>Win32 应用中的 WebView2 入门
 
@@ -674,7 +674,7 @@ maintenance link (keep)
 
 1. 选择 **“文件** > **保存所有** (`Ctrl`++`Shift``S`) 保存项目。
 
-1. 按 **F5** 生成并运行项目。
+1. 按 `F5` 下以生成并运行项目。
 
    示例应用首先打开一个弹出窗口，其中显示将加载的 URL 以及“ **确定”** 按钮：
 

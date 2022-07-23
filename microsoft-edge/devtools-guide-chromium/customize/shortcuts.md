@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/10/2021
-ms.openlocfilehash: 79589a89bb0aa8731c26f0a49e65a42d5ba9053b
-ms.sourcegitcommit: b140f9beedaed9763d40de34234274b342894b76
+ms.openlocfilehash: 7142325edceb8fa3d93703927fad0690519d5596
+ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "12632698"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12676130"
 ---
 # <a name="customize-keyboard-shortcuts"></a>自定义键盘快捷方式
 
@@ -35,7 +35,7 @@ ms.locfileid: "12632698"
 
    ![将 DevTools 中的键盘快捷方式匹配为Visual Studio Code。](../media/match-keyboard-shortcuts-visual-studio-code.msft.png)
 
-例如，若要在Visual Studio Code中暂停或继续运行脚本，请选择`F5`。  但是，使用 **DevTools (默认) ** 预设，若要暂停或继续运行脚本，请按下 `F8`。  将预设更改**为Visual Studio Code**时，现在也按 `F5` DevTools，就像在Visual Studio Code中一样。
+例如，若要在Visual Studio Code中暂停或继续运行脚本，请按下。`F5`  但是，使用 **DevTools (默认) ** 预设，若要暂停或继续运行脚本，请按下 `F8`。  将预设更改**为Visual Studio Code**时，现在也按 `F5` DevTools，就像在Visual Studio Code中一样。
 
 ### <a name="see-also"></a>另请参阅
 

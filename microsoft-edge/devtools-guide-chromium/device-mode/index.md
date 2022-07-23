@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
-ms.openlocfilehash: 992db9f46e7a29f431173ab7840f923d54da630b
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: 19342fb212d47912cb669dcf5e65488ac075bbb5
+ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630600"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12676116"
 ---
 <!-- Copyright Kayce Basques
 
@@ -238,7 +238,7 @@ iPhone 6 的设备框架：
 
    ![“更多工具”菜单上的“传感器”命令。](../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png)
 
-   或者，通过选择 `Ctrl`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 打开命令菜单。  键 `Sensors`入，然后选择 **“显示传感器**”。
+   或者，按 `Ctrl`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 打开命令菜单。  键 `Sensors`入，然后选择 **“显示传感器**”。
 
    ![显示传感器以获取方向。](../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png)
 
@@ -258,7 +258,7 @@ iPhone 6 的设备框架：
 
    ![“更多工具”菜单中的“网络条件”条目。](../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png)
 
-   或者，通过选择 `Ctrl`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 打开命令菜单。键入`Network conditions`并选择 **“显示网络条件**”。
+   或者，按 `Ctrl`++`Shift``P` (Windows、Linux) 或`P` `Command`+`Shift`+ (macOS) 打开命令菜单。键入`Network conditions`并选择 **“显示网络条件**”。
 
    ![显示网络条件。](../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png)
 

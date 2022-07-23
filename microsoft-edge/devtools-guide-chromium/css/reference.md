@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/29/2021
-ms.openlocfilehash: 6f27d63153a7dd54bd8f8012a827a9112126063a
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: 9efa2fa607bed8c78e8abd3d52b130232826df56
+ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12631214"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12676046"
 ---
 <!-- Copyright Kayce Basques
 
@@ -131,6 +131,7 @@ DevTools 中的 **元素** 工具允许你一次查看或更改一个元素的 C
 ## <a name="toggle-a-pseudo-class"></a>切换伪类
 
 切换伪类，例如`:active`，`:focus``:hover`或`:visited`：
+<!-- :focus-within, :focus-visible, :target. -->
 
 1. [选择元素](#select-an-element)。
 
@@ -144,7 +145,7 @@ DevTools 中的 **元素** 工具允许你一次查看或更改一个元素的 C
 
    ![切换 ：hover 伪类。](../media/css-elements-styles-hov-hover.msft.png)
 
-有关交互式教程，请参阅 [向类添加伪状态](../css/index.md#add-a-pseudostate-to-a-class)。
+有关交互式教程，请参阅将 [伪状态添加到类](../css/index.md#add-a-pseudostate-to-a-class)。
 
 
 <!-- ====================================================================== -->

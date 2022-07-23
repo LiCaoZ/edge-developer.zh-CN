@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/19/2021
-ms.openlocfilehash: b4978a81ae31709e1918efee2e0c214f065f4c11
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: 4d1a5c91698093f373af47a5aa50813af5f0e57c
+ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12631137"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "12676123"
 ---
 <!-- Copyright Kayce Basques
 
@@ -268,7 +268,7 @@ ms.locfileid: "12631137"
 
 如果未显示按钮，则可能隐藏**筛选器**窗格。  参阅[隐藏“筛选器”窗格](#hide-the-filters-pane)。
 
-若要同时启用多个类型筛选器，请长按 `Control` (Windows、Linux) 或 `Command` (macOS)，然后单击筛选器。
+若要同时启用多个类型筛选器，请长按 `Ctrl` (Windows、Linux) 或 `Command` (macOS)，然后单击筛选器。
 
 使用**类型**筛选器来显示 JS、CSS、文档资源：
 
