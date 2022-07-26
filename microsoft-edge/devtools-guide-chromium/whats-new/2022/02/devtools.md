@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/02/2022
-ms.openlocfilehash: 18c81d58ee8ae007e9f95972be3d591c1ea29901
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: 0b97dfa4ad4f30f93d5b83d1a467c680c9c754ce
+ms.sourcegitcommit: 4e2422123f89fd168dedd9722af8a3281b0f3128
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12631625"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "12682715"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-98"></a>DevTools (Microsoft Edge 98) 中的新增功能
 
@@ -124,7 +124,6 @@ ms.locfileid: "12631625"
 
 另请参阅：
 * _调试渐进式Web 应用 (PVA 中的 _ [服务工作者](../../../progressive-web-apps/index.md#service-workers)) - 在 DevTools 中调试服务工作者。
-* [HTML 和 DOM](../../../beginners/html.md) - `<script>` 入门 **Elements** 工具中的标记。
 
 
 <!-- ====================================================================== -->

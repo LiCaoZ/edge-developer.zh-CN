@@ -5,13 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/29/2021
-ms.openlocfilehash: 52bd6af158849dc80a894b4f5444766a43ca7a3f
-ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
+ms.date: 07/22/2022
+ms.openlocfilehash: f141b912a09525d6a09f05ddf3c3edb0c6eea3be
+ms.sourcegitcommit: 4e2422123f89fd168dedd9722af8a3281b0f3128
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "12676137"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "12682504"
 ---
 <!-- Copyright Kayce Basques
 
@@ -47,11 +47,11 @@ ms.locfileid: "12676137"
 
 <!-- You can view the source files for the DOM Examples demo in the [MicrosoftEdge/Demos > devtools-dom-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) repo folder. -->
 
-1. 在 **“检查节点**”下，右键单击 **米开朗基罗** ，然后选择 **“检查**”。
+1. 在呈现的网页中的 **“检查节点**”下，右键单击 **米开朗基罗** ，然后选择 **“检查**”。
 
    ![检查节点。](../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png)
 
-   此时将打开开发人员工具的“**元素**”工具。  `<li>Michelangelo</li>` 将在“**DOM 树**”中突出显示。
+   此时将打开开发人员工具的“**元素**”工具。  `<p>Michelangelo</p>` 节点在 **DOM 树**中突出显示。
 
    ![突出显示米开朗基罗节点。](../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png)
 
@@ -59,7 +59,7 @@ ms.locfileid: "12676137"
 
    ![“检查”图标。](../media/dom-elements-highlighted-select-element-page-inspect.msft.png)
 
-1. 在 **“检查节点**”下，单击 **“东京** 文本”。  现在，`<li>Tokyo</li>` 在 DOM 树中突出显示。
+1. 在 **“检查节点**”下，单击 **“东京** 文本”。  现在， `<p>Tokyo</p>` 节点在 DOM 树中突出显示。
 
 检查节点也是查看和更改节点样式的第一步。  请参阅 [开始查看和更改 CSS](../css/index.md)。
 
@@ -70,19 +70,19 @@ ms.locfileid: "12676137"
 
 1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。
 
-1. 在 **使用键盘导航 DOM 树**下，右键单击 **Ringo** ，然后选择 **“检查**”。  `<li>Ringo</li>` 在 DOM 树中已选中。
+1. 在呈现的网页中，使用 **键盘在 DOM 树下导航**，右键单击 **Ringo** ，然后选择 **“检查**”。  `<p>Ringo</p>` 在 DOM 树中已选中。
 
    ![检查“Ringo”节点。](../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png)
 
-1. `Up`按箭头键 2 次。  `<ul>` 已选中。
+1. `Up`按箭头键 2 次。  `<div>` 已选中。
 
-   ![检查“ul”节点。](../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png)
+   ![检查“div”节点。](../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png)
 
-1. `Left`按箭头键。  `<ul>` 列表会折叠。
+1. `Left`按箭头键。  `<div>` 列表会折叠。
 
-1. `Left`再次按箭头键。  `<ul>` 节点的父节点已被选中。  在这种情况下，它是 ID 为 `navigate-the-dom-tree-with-a-keyboard-1` 的 `<div>`。
+1. `Left`再次按箭头键。  `<div>` 节点的父节点已被选中。  在这种情况下，它是 ID 为 `navigate-the-dom-tree-with-a-keyboard-1` 的 `<section>`。
 
-1. `Down`按箭头键 2 次，以便重新选择刚刚折叠的`<ul>`列表。  应如下所示： `<ul>... </ul>`
+1. `Down`按箭头键 2 次，以便重新选择刚刚折叠的`<div>`列表。  应如下所示： `<div>... </div>`
 
 1. `Right`按箭头键。  列表将展开。
 
@@ -93,13 +93,13 @@ ms.locfileid: "12676137"
 
 1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。
 
-1. 在 **“滚动到视图**”下，右键单击 **“Magritte** ”，然后选择 **“检查**”。
+1. 在呈现的网页中，在 **“滚动到视图**”下，右键单击 **“Magritte** ”，然后选择 **“检查**”。
 
 1. 滚动到“DOM 示例”页面的底部。
 
-1. 仍应在 DOM 树中选择 `<li>Magritte</li>` 节点。  如果没有，请返回到“[滚动到视图](#scroll-into-view)”，然后重新开始。
+1. 仍应在 DOM 树中选择 `<p>Magritte</p>` 节点。  如果没有，请返回到“[滚动到视图](#scroll-into-view)”，然后重新开始。
 
-1. 右键单击 `<li>Magritte</li>` 节点，然后单击 **“滚动到视图**”。  视区向上滚动以显示 **Magritte** 节点。  如果未显示 **“滚动到视图**”选项，请参阅[附录：缺少选项](#appendix-missing-options)。
+1. 右键单击 `<p>Magritte</p>` 节点，然后单击 **“滚动到视图**”。  视区向上滚动以显示 **Magritte** 节点。  如果未显示 **“滚动到视图**”选项，请参阅[附录：缺少选项](#appendix-missing-options)。
 
 ![滚动到视图。](../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png)
 
@@ -123,15 +123,15 @@ ms.locfileid: "12676137"
 
 可以即时编辑 DOM，并查看更改对页面的影响。
 
-### <a name="edit-content"></a>编辑内容
+### <a name="edit-text-content"></a>编辑文本内容
 
-若要编辑节点的内容，请双击 DOM 树中的内容。
+若要编辑节点的文本内容，请双击 DOM 树中的内容。
 
 1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。
 
-1. 在 **“编辑内容**”下，右键单击 **“米歇尔** ”，然后选择 **“检查**”。
+1. 在呈现的网页中，在 **“编辑内容**”下，右键单击 **“Michelle** ”，然后选择 **“检查**”。
 
-1. 在 DOM 树中，双击 `Michelle`。  换言之，双击 `<li>` 和 `</li>` 之间的文本。  此时将突出显示文本，表明该文本已被选中。
+1. 在 DOM 树中，双击 `Michelle`。  换言之，双击 `<p>` 和 `</p>` 之间的文本。  此时将突出显示文本，表明该文本已被选中。
 
    ![编辑文本。](../media/dom-elements-highlighted-edit-content.msft.png)
 
@@ -143,9 +143,9 @@ ms.locfileid: "12676137"
 
 1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。
 
-1. 在 **“编辑属性**”下，右键单击 **Howard** ，然后选择 **“检查**”。
+1. 在呈现的网页中，在 **“编辑属性**”下，右键单击 **“Howard** ”，然后选择 **“检查**”。
 
-1. 双击 `<li>`。  此时将突出显示文本，表示节点已被选中。
+1. 双击 `<p>`。  此时将突出显示文本，表示节点已被选中。
 
    ![编辑节点。](../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png)
 
@@ -153,19 +153,45 @@ ms.locfileid: "12676137"
 
    ![将样式属性添加到节点。](../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png)
 
-### <a name="edit-node-type"></a>编辑节点类型
+### <a name="edit-node-tag-name"></a>编辑节点标记名称
 
-若要编辑节点的类型，请双击该类型，然后键入新类型。<!--do the following steps do that?-->
+若要编辑节点的标记名称，请双击标记名称，然后键入新标记名称。
 
 1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。
 
-1. 在 **“编辑节点类型**”下，右键单击 **“汉克** ”，然后选择 **“检查**”。
+1. 在呈现的网页中，在 **“编辑节点标记名称**”下，右键单击 **“汉克** ”，然后选择 **“检查**”。
 
-1. 双击 `<li>`。  文本 `li` 将突出显示。
+1. 双击 `<p>`。  文本 `p` 将突出显示。
 
-1. 删除 `li`，键入 `button`，然后按 `Enter`。  节点 `<li>` 将更改为 `<button>` 节点。
+1. 删除 `p`，键入 `button`，然后按 `Enter`。  节点 `<p>` 将更改为 `<button>` 节点。
 
    ![将节点类型更改为按钮。](../media/dom-elements-highlighted-edit-node-type-button.msft.png)
+
+### <a name="edit-multiple-nodes-text-and-attributes"></a>编辑多个节点、文本和属性 
+
+若要同时更改多个节点的标记名称、文本内容或属性，可以使用 HTML 文本编辑器编辑部分 DOM。
+
+若要使用 HTML 编辑器，请执行以下操作：
+
+1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。
+
+1. 在呈现的网页中，右键单击“ **编辑内容”、“标记名称”和“属性** ”部分，然后选择“ **检查**”。
+
+1. 在 DOM 树中，右键单击 `<section id="edit-as-html-1">` 节点，然后选择 **“编辑为 HTML**”。 将显示 HTML 编辑器。
+
+   ![HTML 编辑器。](../media/dom-elements-highlighted-edit-html-editor.png)
+
+1. 键入要在 HTML 编辑器中所做的更改，例如：
+
+   * 添加、删除或编辑属性。
+   * 添加或删除节点。
+   * 编辑节点的文本内容或标记名称。
+
+   例如，尝试在行后`<p>Marseille</p>`添加`<p>Dijon</p>`。
+
+1. 键 `Ctrl`+`Enter` 入以将更改应用于 DOM 树并关闭 HTML 编辑器。
+
+   ![HTML 编辑器关闭后，新的 DOM 树具有额外的<p> 节点。](../media/dom-elements-highlighted-edit-html-editor-closed.png)
 
 ### <a name="reorder-dom-nodes"></a>对 DOM 节点重新排序
 
@@ -173,9 +199,9 @@ ms.locfileid: "12676137"
 
 1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。
 
-1. 在 **“重新排序 DOM 节点**”下，右键单击 **“猫王”** ，然后选择 **“检查**”。
+1. 在呈现的网页中，在 **“重新排序 DOM 节点**”下，右键单击 **“猫王”，** 然后选择“ **检查**”。
 
-1. 在 DOM 树中，将 `<li>Elvis Presley</li>` 拖动到列表顶部。
+1. 在 DOM 树中，将 `<p>Elvis Presley</p>` 拖动到列表顶部。
 
 ![将节点拖到列表顶部。](../media/dom-elements-reorder-dom-nodes.msft.png)
 
@@ -185,11 +211,11 @@ ms.locfileid: "12676137"
 
 1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。
 
-1. 在“**强制状态**”下，将鼠标悬停在“**The Lord of the Flies**”上。  背景色变为橙色。
+1. 在呈现的网页中，在 **“力”状态**下，将鼠标悬停在 **苍蝇之王**上。  背景色变为橙色。
 
 1. 右键单击 **“苍蝇之主**”，然后选择 **“检查**”。
 
-1. 右键单击 `<li class="demo--hover">The Lord of the Flies</li>`，然后选择 **“强制状态** > **：悬停**”。  请参阅 [附录：](#appendix-missing-options) 如果未显示该选项，则缺少选项。  尽管实际上并没有将鼠标悬停在节点上，但背景色仍保持橙色。
+1. 右键单击 `<p class="demo--hover">The Lord of the Flies</p>`，然后选择 **“强制状态** > **：悬停**”。  请参阅 [附录：](#appendix-missing-options) 如果未显示该选项，则缺少选项。  尽管实际上并没有将鼠标悬停在节点上，但背景色仍保持橙色。
 
 ### <a name="hide-a-node"></a>隐藏节点
 
@@ -197,7 +223,7 @@ ms.locfileid: "12676137"
 
 1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。
 
-1. 在 **“隐藏节点**”下，右键单击 **“明星我的目标** ”，然后选择 **“检查**”。
+1. 在呈现的网页中， **在“隐藏节点**”下，右键单击 **“星我的目标”** ，然后选择 **“检查**”。
 
 1. 按键 `H` 。  节点处于隐藏状态。
 
@@ -211,12 +237,9 @@ ms.locfileid: "12676137"
 
 1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。
 
-1. 在 **“删除节点**”下，右键单击 **“基础** ”，然后选择 **“检查**”。  检查以下节点：
-    * 插图人物
-    * 通过Looking-Glass
-    * Foundation
+1. 在呈现的网页中，在 **“删除节点**”下，右键单击 **“基础** ”，然后选择 **“检查**”。
 
-1. 选择 `Delete` 键。  节点将被删除。
+1. 按 `Delete`。  节点将被删除。
 
 1. 按 `Ctrl`+`Z` (Windows、Linux) 或 `Command`+`Z` (macOS) 。  最后一个操作将被撤消，节点将重新出现。
 
@@ -232,17 +255,17 @@ ms.locfileid: "12676137"
 
 1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。
 
-1. 在 **“引用”当前选定的 0 美元节点**下，右键单击 **“黑暗的左手”** ，然后选择“ **检查**”。
+1. 在呈现的网页中，在“ **引用”当前选定的具有 $0 的节点**下，右键单击 **“黑暗的左手”** ，然后选择 **“检查**”。
 
 1. 选择 `Escape` 键以打开控制台抽屉。
 
-1. 键入 `$0` 并选择 `Enter` 键。  表达式的结果显示 `$0` 计算结果为 `<li>The Left Hand of Darkness</li>`：
+1. 键入“`$0`”，然后按“`Enter`”。  表达式的结果显示 `$0` 计算结果为 `<p>The Left Hand of Darkness</p>`：
 
    ![控制台中第一个 $0 表达式的结果。](../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png)
 
 1. 将鼠标悬停在结果上。  节点在视区中突出显示。
 
-1. 在 DOM 树中单击 `<li>Dune</li>` ，再次键 `$0` 入控制台，然后再次按 `Enter` 下。  现在， `$0` 计算结果为 `<li>Dune</li>`：
+1. 在 DOM 树中单击 `<p>Dune</p>` ，再次键 `$0` 入控制台，然后再次按 `Enter` 下。  现在， `$0` 计算结果为 `<p>Dune</p>`：
 
 ![控制台中第二个 $0 表达式的结果。](../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png)
 
@@ -252,9 +275,9 @@ ms.locfileid: "12676137"
 
 1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。
 
-1. 在 **“存储”作为全局变量**下，右键单击 **“大睡眠**”，然后选择 **“检查**”。
+1. 在呈现的网页中， **在“存储”作为全局变量**下，右键单击 **“大睡眠”**，然后选择“ **检查**”。
 
-1. 在 DOM 树中右键单击 `<li>The Big Sleep</li>` ，然后选择 **“存储”作为全局变量**。  请参阅 [附录：](#appendix-missing-options) 如果未显示该选项，则缺少选项。
+1. 在 DOM 树中右键单击 `<p>The Big Sleep</p>` ，然后选择 **“存储”作为全局变量**。  请参阅 [附录：](#appendix-missing-options) 如果未显示该选项，则缺少选项。
 
 1. 键 `temp1` 入控制台，然后按 `Enter`。  表达式的结果显示变量的计算结果为节点。
 
@@ -266,9 +289,9 @@ ms.locfileid: "12676137"
 
 1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。
 
-1. 在 **“复制 JS”路径**下，右键单击 **“兄弟卡拉马佐夫**”，然后选择“ **检查**”。
+1. 在呈现的网页中，在 **“复制 JS”路径**下，右键单击 **“兄弟卡拉马佐夫”**，然后选择“ **检查**”。
 
-1. 在 DOM 树中右键单击 `<li>The Brothers Karamazov</li>` ，然后选择 **“复制** > **JS 路径**”。  解析为节点的 `document.querySelector()` 表达式已复制到剪贴板。
+1. 在 DOM 树中右键单击 `<p>The Brothers Karamazov</p>` ，然后选择 **“复制** > **JS 路径**”。  解析为节点的 `document.querySelector()` 表达式已复制到剪贴板。
 
 1. 按 `Ctrl`+`V` (Windows、Linux) 或 `Command`+`V` (macOS) 将表达式粘贴到控制台。
 
@@ -290,19 +313,17 @@ ms.locfileid: "12676137"
 
 1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。
 
-1. **在“断开属性修改**”下，右键单击 **“Sauerkraut**”，然后选择 **“检查**”。
+1. 在呈现的网页中， **在属性修改的“中断**”下，右键单击 **Sauerkraut** ，然后选择 **“检查**”。
 
-1. 在 DOM 树中，右键单击 `<li id="target">Sauerkraut</li>`，然后选择 **“断开** > **属性修改**”。  请参阅 [附录：](#appendix-missing-options) 如果未显示该选项，则缺少选项。
+1. 在 DOM 树中，右键单击 `<p id="botm_target">Sauerkraut</p>`，然后选择 **“断开** > **属性修改**”。  请参阅 [附录：](#appendix-missing-options) 如果未显示该选项，则缺少选项。
 
    ![在属性修改时中断。](../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png)
 
-1. 在下一步中，系统将指示你单击暂停页面代码的按钮。  在页面暂停后，无法再滚动页面。  若要使页面再次可滚动，请选择“ **恢复脚本** (![恢复脚本](../media/resume-script-icon.msft.png)) 。
+1. 单击“ **设置背景”** 按钮。  这会将节点的 `style` 属性设置为 `background-color:thistle`。  开发人员工具将暂停页面并突出显示导致属性发生更改的代码。
 
-   ![在何处恢复脚本运行。](../media/dom-break-attribute-modifications-sources-paused-on.msft.png)
+   ![显示导致属性更改的代码行的“源”工具。](../media/dom-break-attribute-modifications-sources-paused-on.msft.png)
 
-1. 单击上面的 **“设置背景”** 按钮。  这会将节点的 `style` 属性设置为 `background-color:thistle`。  开发人员工具将暂停页面并突出显示导致属性发生更改的代码。
-
-1. 选择 **“恢复脚本** (![恢复脚本。](../media/resume-script-icon.msft.png) 如前所述，) 。
+1. 单击 **“恢复脚本** (![恢复脚本。](../media/resume-script-icon.msft.png)) 恢复 JavaScript 执行。
 
 ### <a name="break-on-node-removal"></a>中断节点删除
 
@@ -310,9 +331,9 @@ ms.locfileid: "12676137"
 
 1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。
 
-1. 在 **“断开节点删除**”下，右键单击 **“神经人”** ，然后选择 **“检查**”。
+1. 在呈现的网页中， **在“断开节点删除**”下，右键单击 **“神经宏基** ”，然后选择 **“检查**”。
 
-1. 在 DOM 树中，右键单击 `<li id="target">Neuromancer</li>`，然后选择 **“断开** > **节点删除**”。  请参阅 [附录：](#appendix-missing-options) 如果未显示该选项，则缺少选项。
+1. 在 DOM 树中，右键单击 `<p id="target">Neuromancer</p>`，然后选择 **“断开** > **节点删除**”。  请参阅 [附录：](#appendix-missing-options) 如果未显示该选项，则缺少选项。
 
 1. 单击上面 **的“删除”** 按钮。  开发人员工具将暂停页面并突出显示导致节点被删除的代码。
 
@@ -324,11 +345,11 @@ ms.locfileid: "12676137"
 
 1. 在新窗口或选项卡中打开 [“DOM 示例](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) ”演示页。
 
-1. **在“子树修改的中断**”下，右键单击 **“深层上的火”**，然后选择 **“检查**”。
+1. 在呈现的网页中， **在“子树修改的中断**”下，右键单击 **“深层火”** ，然后选择 **“检查**”。
 
-1. 在 DOM 树中，右键单击 `<ul id="target">`上面 `<li>A Fire Upon the Deep</li>`的节点，然后选择 **“断开** > **子树修改**”。  如果 **子树修改** 命令未显示，请参阅 [附录：缺少选项](#appendix-missing-options)。
+1. 在 DOM 树中，右键单击 `<div id="ul_target">`上面 `<p>A Fire Upon the Deep</p>`的节点，然后选择 **“断开** > **子树修改**”。  如果 **子树修改** 命令未显示，请参阅 [附录：缺少选项](#appendix-missing-options)。
 
-1. 单击 **“添加子级**”。  由于向列表中添加了 `<li>` 节点，因此代码将暂停。
+1. 单击 **“添加子级**”。  由于向列表中添加了 `<p>` 节点，因此代码将暂停。
 
 1. 选择 **“恢复脚本** (![恢复脚本。](../media/resume-script-icon.msft.png)) 。
 
@@ -348,7 +369,7 @@ ms.locfileid: "12676137"
 
 本部分介绍 HTML 与 DOM 之间的差异。
 
-使用 Web 浏览器请求页面时，服务器将返回如下所示的 HTML：
+使用 Web 浏览器请求页面时，服务器将返回如下所示的 HTML 代码：
 
 ```html
 <!doctype html>
@@ -364,7 +385,7 @@ ms.locfileid: "12676137"
 </html>
 ```
 
-浏览器分析 HTML 并创建如下所示的对象树：
+然后，浏览器分析 HTML，并基于如下所示的 HTML 创建对象树：
 
 ```DOM
 html
@@ -398,27 +419,15 @@ html
         p
 ```
 
-页面的 HTML 现在不同于其 DOM。  换句话说，HTML 表示初始页面内容，而 DOM 表示当前页面内容。  当 JavaScript 添加、删除或编辑节点时，DOM 将与 HTML 不同。
+页面的 HTML 现在不同于其 DOM。  换句话说，HTML 表示初始页面内容，DOM 表示当前页面内容。  当 JavaScript 添加、删除或编辑节点时，DOM 将与 HTML 不同。
 
 有关详细信息，请参阅 [DOM 简介](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction) 。
 
 
 <!-- ====================================================================== -->
-## <a name="appendix-scroll-into-view"></a>附录：滚动到视图
-
-这是 [“滚动到视图](#scroll-into-view) ”部分的延续。  按照以下说明完成该部分。
-
-1. 仍应在 DOM 树中选择 `<li>Magritte</li>` 节点。  如果没有，请返回到“[滚动到视图](#scroll-into-view)”，然后重新开始。
-
-1. 右键单击 `<li>Magritte</li>` 节点，然后选择 **“滚动到视图**”。  视区向上滚动，以便显示 **Magritte** 节点。  如果未显示 **“滚动到视图** ”选项，请参阅 [附录：缺少选项](#appendix-missing-options)。
-
-![滚动到视图。](../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png)
-
-
-<!-- ====================================================================== -->
 ## <a name="appendix-missing-options"></a>附录：缺少选项
 
-本教程中的许多说明指示你右键单击 DOM 树中的节点，然后从弹出的上下文菜单中选择一个选项。  如果在上下文菜单中看不到指定的选项，请尝试右键单击节点文本。
+本教程中的许多说明指示你右键单击 DOM 树中的节点，然后从弹出的上下文菜单中选择一个选项。  如果在上下文菜单中看不到指定选项，请尝试右键单击节点文本，或单击 `...` 节点左侧的按钮。
 
 ![如果未显示所有选项，则单击何处。](../media/dom-elements-highlighted-right-click-right-side.msft.png)
 

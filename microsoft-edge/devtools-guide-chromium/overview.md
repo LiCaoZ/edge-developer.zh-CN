@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 09/23/2021
-ms.openlocfilehash: d929406e0144e3df22c6c22f0c87427bd163ad45
-ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
+ms.openlocfilehash: 6c4cce7ecf833f3a5c2d34b14c7a86e03950c582
+ms.sourcegitcommit: 4e2422123f89fd168dedd9722af8a3281b0f3128
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "12551268"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "12682722"
 ---
 # <a name="overview-of-devtools"></a>开发工具概述
 
@@ -24,7 +24,7 @@ ms.locfileid: "12551268"
 * [Microsoft Edge DevTools](../develop-web-microsoft-edge.md#microsoft-edge-devtools) in _Develop for the web with Microsoft Edge_
 -->
 
-Microsoft Edge浏览器附带内置 Web 开发工具，称为 Microsoft Edge DevTools。  DevTools 是一组 Web 开发工具，显示在浏览器中呈现的网页旁边。  DevTools 提供了一种用于检查和调试网页和 Web 应用的强大方法。  甚至可以在 DevTools 环境中编辑源文件并创建网站项目。
+Microsoft Edge 浏览器附带内置 Web 开发工具，称为 Microsoft Edge DevTools。  DevTools 是一组 Web 开发工具，显示在浏览器中呈现的网页旁边。  DevTools 提供了一种用于检查和调试网页和 Web 应用的强大方法。  甚至可以在 DevTools 环境中编辑源文件并创建网站项目。
 
 使用 DevTools 可以执行以下操作：
 
@@ -51,7 +51,7 @@ Microsoft Edge浏览器附带内置 Web 开发工具，称为 Microsoft Edge Dev
 [Open DevTools](accessibility/navigation.md#open-devtools) in _Navigate DevTools with assistive technology_
 -->
 
-在Microsoft Edge中，可以通过以下任一方式使用鼠标或键盘打开 DevTools。  打开哪个工具取决于打开 DevTools 的方式。
+在 Microsoft Edge 中，可以通过以下任一方式使用鼠标或键盘打开 DevTools。  打开哪个工具取决于打开 DevTools 的方式。
 
 **主要方式：**
 
@@ -65,7 +65,7 @@ Microsoft Edge浏览器附带内置 Web 开发工具，称为 Microsoft Edge Dev
 
 | 操作 | 生成的工具 |
 |---|---|
-| 在Microsoft Edge工具栏上，**选择设置和更多** (![“设置和更多”图标。](media/edge-settings-and-more-icon.png)) >**更多工具** >  **开发人员工具**。 | 以前使用的工具或 **欢迎** 工具。 |
+| 在 Microsoft Edge 工具栏上，选择 **“设置”和“更多**”图标 (![“设置和更多”图标。](media/edge-settings-and-more-icon.png)) >**更多工具** >  **开发人员工具**。 | 以前使用的工具或 **欢迎** 工具。 |
 | 按`Ctrl`+`Shift`+`J`（Windows、Linux）或 `Command`+`Option`+`J` （macOS）。 | **控制台**工具。 |
 | 按`Ctrl`+`Shift`+`C`（Windows、Linux）或 `Command`+`Option`+`C` （macOS）。 | **“元素**”工具，其中扩展了 DOM 树以显示元素`<body>`。 |
 | 按 `Shift`+`F10` 下以打开右键单击菜单。  若要选择 **“检查**”命令，请按下，然后`Enter`按`Up Arrow`。 | **“元素**”工具，其中扩展了 DOM 树以显示元素`<html>`。 |
@@ -98,20 +98,20 @@ DevTools 随即打开，**在 Elements** 工具的 **DOM 树**中突出显示了
 ![DevTools 随即打开，在 Elements 工具中突出显示了右键单击的元素。](media/devtools-intro-inspect-devtools-open.png)
 
 
-### <a name="open-devtools-by-using-the-microsoft-edge-toolbar"></a>使用Microsoft Edge工具栏打开 DevTools
+### <a name="open-devtools-by-using-the-microsoft-edge-toolbar"></a>使用 Microsoft Edge 工具栏打开 DevTools
 
-在Microsoft Edge工具栏上，可以选择**设置和更多** () > `...` **更多工具** >  **开发人员工具**：
+在 Microsoft Edge 工具栏上，可以选择 **“设置”和更多** () > `...` **更多工具** >  **开发人员工具**：
 
-![在Microsoft Edge工具栏上，选择“设置和更多”>“更多工具”>“开发人员工具”。](media/edge-settings-and-more-tools-developer-tools.png)
+![在 Microsoft Edge 工具栏上，选择“设置和更多”>“更多工具”>“开发人员工具”。](media/edge-settings-and-more-tools-developer-tools.png)
 
 
 ### <a name="have-devtools-automatically-open-when-you-open-a-new-tab"></a>打开新选项卡时，让 DevTools 自动打开
 
 若要让 DevTools 在浏览器中打开新选项卡时自动打开：
 
-1. 在命令行中，打开Microsoft Edge，传入`--auto-open-devtools-for-tabs`标志，如下所示：
+1. 在命令行中，打开 Microsoft Edge，传入 `--auto-open-devtools-for-tabs` 标志，如下所示：
 
-   Windows命令提示符：
+   Windows 命令提示符：
    
    ```cmd
    start msedge --auto-open-devtools-for-tabs
@@ -123,7 +123,7 @@ DevTools 随即打开，**在 Elements** 工具的 **DOM 树**中突出显示了
    Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
    ```
    
-   bash shell on macOS：
+   macOS 上的 bash shell：
    
    ```bash
    /Applications/Microsoft\ Edge\ Beta.app/Contents/MacOS/Microsoft\ Edge\ Beta --auto-open-devtools-for-tabs
@@ -140,11 +140,11 @@ DevTools 随即打开，**在 Elements** 工具的 **DOM 树**中突出显示了
 
 防止按下打开 `F12` DevTools：
 
-1. 在Microsoft Edge，去`edge://settings/system`。
+1. 在 Microsoft Edge 中，转到 `edge://settings/system`.
 
 1. 在“ **开发人员工具** ”部分中，在 **按下 F12 键切换时关闭“打开 DevTools** ”。
 
-   ![在 Edge 设置中，禁用用于打开 DevTools 的 F12 密钥。](media/disable-f12.png)
+   ![在边缘设置中，禁用用于打开 DevTools 的 F12 密钥。](media/disable-f12.png)
 
 
 <!-- ====================================================================== -->
@@ -169,7 +169,7 @@ DevTools UI 是使用 HTML 和 CSS（如网页）实现的，因此可以使用�
 **若要缩放浏览器的 DevTools 部分，请执行以下操作：**
 
 1. 如果焦点尚未放在 DevTools 上，请单击 DevTools 中的某个位置。
-1. 按`Ctrl`+`+`或`Ctrl`+`-` (Windows或 Linux) 。  或者，按`Command`+`+`或`Command`+`-` (macOS) 。
+1. 按 `Ctrl`+`+` 或 `Ctrl`+`-` (Windows 或 Linux) 。  或者，按 `Command`+`+` 或 `Command`+`-` (macOS) 。
 
 ![DevTools 缩小。](overview-images/zoom-devtools.png)
 
@@ -180,13 +180,13 @@ DevTools UI 是使用 HTML 和 CSS（如网页）实现的，因此可以使用�
 **将缩放还原到 100%：**
 
 1. 请确保焦点位于浏览器的所需部分（DevTools 或呈现的页面）上。
-1. `Ctrl``NumPad0`+按`Ctrl`+`0`或 (Windows或 Linux) 或`Command`+`0` (macOS) 。
+1. 按`Ctrl``0`+或`Ctrl`+`NumPad0` (Windows 或 Linux) ，或`Command`+`0` (macOS) 。
 
-**若要缩放 DevTools 设置：**
+**若要缩放 DevTools 设置，请执行以下操作：**
 
-1. 在 DevTools **设置**中，单击右上角的 **“关闭** (**x**) ”。
+1. 在“DevTools **设置**”中，单击右上角的 **“关闭** (**x**) ”。
 1. 更改 DevTools 的缩放级别，如上所述。
-1. 单击**设置 (** 设置![图标。](media/settings-gear-icon-light-theme.png)) 按钮。
+1. 单击 **“设置** (![”图标。](media/settings-gear-icon-light-theme.png)) 按钮。
 
 **若要使用命令菜单缩放 DevTools：**
 
@@ -262,7 +262,7 @@ DevTools 为你提供了极大的功能来检查、调试和更改当前显示�
    *  **“更多工具** (![”更多工具“图标。](media/more-tools-icon-light-theme.png)) 按钮。
    *  **JavaScript 错误计数器** (![JavaScript 错误计数器图标。](media/javascript-counter-icon-light-theme.png)) 按钮。
    *  **问题计数器** (![问题计数器图标。](media/issues-counter-icon-light-theme.png)) 按钮。
-   *  **设置** (![设置图标。](media/settings-gear-icon-light-theme.png)) 按钮。
+   *  **设置** (![“设置”图标。](media/settings-gear-icon-light-theme.png)) 按钮。
    *  **发送反馈** (![“发送反馈”图标。](media/send-feedback-icon-light-theme.png)) 按钮。
    *  **自定义和控制 DevTools** (![自定义图标。](media/customize-devtools-icon-light-theme.png)) 菜单按钮。
    *  **关闭** DevTools (![“关闭 DevTools”图标。](media/close-devtools-icon-light-theme.png)) 按钮。
@@ -326,7 +326,7 @@ DevTools 为你提供了极大的功能来检查、调试和更改当前显示�
 
 ### <a name="performance-tool"></a>性能工具
 
-请参阅[开始分析运行时性能](evaluate-performance/index.md)。
+请参阅 [开始分析运行时性能](evaluate-performance/index.md)。
 
 
 ### <a name="memory-tool"></a>内存工具
@@ -387,9 +387,9 @@ DevTools 为你提供了极大的功能来检查、调试和更改当前显示�
 单击 **“问题”计数器** 打开 [“问题](issues/index.md) ”工具。
 
 
-### <a name="settings-button"></a>设置按钮
+### <a name="settings-button"></a>“设置”按钮
 
-若要打开 DevTools **设置** 网页，请单击**设置 (** 设置![图标。](media/settings-gear-icon-light-theme.png)) 按钮。  **设置**页包含以下子页：
+若要打开“DevTools **设置”** 网页，请单击 **“设置** (![”图标。](media/settings-gear-icon-light-theme.png)) 按钮。  **“设置”** 页包含以下子页：
 
 *  首选项
 *  工作
@@ -401,14 +401,14 @@ DevTools 为你提供了极大的功能来检查、调试和更改当前显示�
 *  快捷方式
 *  符号服务器
 
-请参阅自_定义 DevTools_ 中的[设置](customize/index.md#settings)。
+请参阅_自定义 DevTools 中的_[设置](customize/index.md#settings)。
 
 
 ### <a name="send-feedback-button"></a>“发送反馈”按钮
 
 若要打开“ **发送反馈** ”对话框，请单击“ **发送反馈** (![”发送反馈“图标。](media/send-feedback-icon-light-theme.png)) 按钮。  随即打开“ **发送反馈** ”对话框。  输入信息以描述所发生的情况，并自动包含屏幕截图。  使用 **"发送反馈** "与 DevTools 团队联系，报告问题、问题或提出建议。
 
-请参阅[联系 Microsoft Edge DevTools 团队](contact.md)。
+请参阅 [联系 Microsoft Edge DevTools 团队](contact.md)。
 
 
 ### <a name="customize-and-control-devtools-menu"></a>自定义和控制 DevTools 菜单
@@ -455,12 +455,12 @@ DevTools 为你提供了极大的功能来检查、调试和更改当前显示�
 | 在抽屉工具栏上打开工具 | 当 DevTools 具有焦点时，按 **Esc** 显示抽屉。  在抽屉工具栏上，单击“ **更多工具** ” () **+** ，然后选择一个工具。 |
 | 将工具从抽屉工具栏移动到主工具栏 | 当 DevTools 具有焦点时，按 **Esc** 显示抽屉。  在抽屉工具栏上，右键单击工具的选项卡，然后选择 **“移动到顶部**”。 |
 | 将工具从主工具栏移动到抽屉工具栏 | 在主工具栏上，右键单击工具的选项卡，然后选择 **“移到底部**”。 |
-| 在其默认工具栏中打开工具 | 当 DevTools 具有焦点时，按++`Ctrl``P``Shift` (Windows、Linux) 或`Command``P`++`Shift` (macOS) 打开**命令菜单**。  键入工具的名称，然后选择该工具。 |
+| 在其默认工具栏中打开工具 | 当 DevTools 具有焦点时，请按++`Shift``P` `Ctrl` (Windows、Linux) 或 `Command``P`++`Shift` (macOS) 打开**命令菜单**。  键入工具的名称，然后选择该工具。 |
 
 除了面板工具和抽屉工具，DevTools 还包括以下工具：
 *  **“检查**”工具。  请参阅 [使用“检查”工具通过将鼠标悬停在网页上来检测辅助功能问题](accessibility/test-inspect-tool.md)。
 *  **设备仿真**工具。  请参阅 [模拟移动设备 (设备仿真) ](device-mode/index.md)。
-*  **命令菜单**。  请参阅[包含 Microsoft Edge DevTools 命令菜单的“运行”命令](command-menu/index.md)。
+*  **命令菜单**。  使用 [Microsoft Edge DevTools 命令菜单查看“运行”命令](command-menu/index.md)。
 
 ### <a name="see-also"></a>另请参阅
 
@@ -502,9 +502,9 @@ DevTools 提供了许多可用于网站的功能和功能。  可以通过多种
 ## <a name="customizing-devtools"></a>自定义 DevTools
 
 <!-- todo: add icon -->
-可以自定义 DevTools 以满足工作方式的需求。  若要更改设置，请单击**设置** (右上角的齿轮图标) ，或按。`F1`
+可以自定义 DevTools 以满足工作方式的需求。  若要更改设置，请单击右上角) 的齿轮图标 (**“设置** ”，或按下 `F1`。
 
-在 **“设置** > **参考**”页中，可以更改 DevTools 的多个部分。  例如，可以使用 **"匹配浏览器语言** "设置在 DevTools 中使用浏览器中使用的相同语言。  有关另一个示例，请使用 **Theme** 设置更改 DevTools 的主题。
+在 **“设置****首选项**” > 页中，可以更改 DevTools 的多个部分。  例如，可以使用 **"匹配浏览器语言** "设置在 DevTools 中使用浏览器中使用的相同语言。  有关另一个示例，请使用 **Theme** 设置更改 DevTools 的主题。
 
 ![DevTools 中的所有设置。](media/devtools-intro-all-settings.msft.png)
 
@@ -535,7 +535,6 @@ DevTools 团队在 DevTools 中提供新功能作为_实验_。  可以打开或
 -->
 
 * [关于工具列表](about-tools.md)
-* [HTML 和 DOM 入门](beginners/html.md)
 * [检查并更改当前网页](dom/index.md)
 * [模拟产品在不同设备上的行为方式](device-mode/index.md)
 * [检查、调整和更改元素的样式](inspect-styles/edit-fonts.md)

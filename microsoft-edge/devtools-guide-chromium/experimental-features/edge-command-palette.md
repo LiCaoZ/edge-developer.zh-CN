@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/24/2022
-ms.openlocfilehash: b9502a1cd33181583db266f11aa8a176bf0bea26
-ms.sourcegitcommit: a195f49f7135342ef19cc12052ed48797150c9a3
+ms.openlocfilehash: e0636fde92287b7e9bb4191116831f4f950e86b0
+ms.sourcegitcommit: 4e2422123f89fd168dedd9722af8a3281b0f3128
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "12632939"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "12682695"
 ---
 # <a name="run-commands-via-keyboard-with-command-palette"></a>使用命令面板通过键盘运行命令
 
@@ -31,15 +31,13 @@ ms.locfileid: "12632939"
 
 1. 转到 `edge://flags`。
 
-<!-- DevTools Toaster is in the process of being changed in Edge to match the feature's name -->
-1. 在 **“搜索标志** ”文本字段中，键入 **DevTools Toaster** 或 **Command Palette**。
+1. 在 **“搜索标志** ”文本字段中，键入 **命令面板**。
 
-<!-- DevTools Toaster is in the process of being changed in Edge to match the feature's name -->
-1. 在 **“DevTools Toaster** ”或 **“命令面板** ”下拉菜单中，选择 **“已启用**”
+1. 在 **“命令面板** ”下拉菜单中，选择 **“已启用**”。
+
+1. 单击右下角显示的 **“重启** ”按钮：
 
    ![在 edge://flags 页中启用命令面板标志](./media/command-palette-flag.png)
-
-1. 单击右下角显示的 **“重启** ”按钮。
 
 
 <!-- ====================================================================== -->

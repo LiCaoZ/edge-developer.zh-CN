@@ -11,12 +11,12 @@ metadata:
   ms.date: 09/09/2021
   ms.localizationpriority: high
   ms.prod: microsoft-edge
-  ms.openlocfilehash: 19dd8a55643ea1d99fb285594006e146f7f1ae2b
-  ms.sourcegitcommit: 9cc13dd2d0e0360013a127b8e39b09e535b08f1b
+  ms.openlocfilehash: 47964c2d70143fb12ed8212efdc4a330aa481aca
+  ms.sourcegitcommit: 4e2422123f89fd168dedd9722af8a3281b0f3128
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/08/2022
-  ms.locfileid: "12636208"
+  ms.lasthandoff: 07/26/2022
+  ms.locfileid: "12682680"
 highlightedContent:
   items:
   - title: Microsoft Edge（官方稳定频道）
@@ -122,9 +122,6 @@ conceptualContent:
       - text: DevTools Microsoft Edge的新增功能
         url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
         itemType: whats-new
-      - text: 面向初学者的开发工具
-        url: /microsoft-edge/devtools-guide-chromium/beginners/html
-        itemType: overview
       - text: 命令菜单
         url: /microsoft-edge/devtools-guide-chromium/command-menu/index
         itemType: how-to-guide

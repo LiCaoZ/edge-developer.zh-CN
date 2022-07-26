@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/18/2022
-ms.openlocfilehash: d82dd4a72dd2f28d5b24f76f4549a2c2a9019a85
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: e76a33467756f72a3a405e854c86cf2c8e45ef25
+ms.sourcegitcommit: 4e2422123f89fd168dedd9722af8a3281b0f3128
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12631563"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "12682729"
 ---
 <!-- Copyright Kayce Basques
 
@@ -375,7 +375,6 @@ CSS 更改会立即生效;无需手动保存更改。
 #### <a name="see-also"></a>另请参阅
 
 * [在“样式”窗格中编辑 CSS 字体样式和设置](../inspect-styles/edit-fonts.md)
-* [适用于初学者的 DevTools：CSS 入门](../beginners/css.md) - 教程
 * _键盘快捷方式_中的[源工具键盘快捷方式](../shortcuts/index.md#sources-tool-keyboard-shortcuts)
 
 
@@ -398,8 +397,6 @@ CSS 更改会立即生效;无需手动保存更改。
 若要撤销编辑，请在 Windows/Linux 上按 `Ctrl`+`Z`，在 macOS 上按 `Command`+`Z`。
 
 若要在编辑 HTML 文件时查看其他命令，请在"编辑器"窗格中右键单击 HTML 文件。
-
-您还可以使用 HTML 编辑器（而不是 DevTools）编辑 HTML。  例如，文章 [DevTools for beginners： Get started with HTML and the DOM](../beginners/html.md) uses a website that enables HTML editing within the webpage.
 
 
 ### <a name="going-to-a-line-number-or-function"></a>访问行号或函数

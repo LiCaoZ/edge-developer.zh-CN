@@ -125,9 +125,6 @@
                 - name: CSS 功能参考
                   href: devtools-guide-chromium/css/reference.md
                   displayName: Elements tool
-                - name: CSS 入门
-                  href: devtools-guide-chromium/beginners/css.md
-                  displayName: Elements tool
                 - name: 查看和更改 CSS 入门
                   href: devtools-guide-chromium/css/index.md
                   displayName: Elements tool
@@ -139,9 +136,6 @@
                   displayName: Elements tool
                 - name: CSS-in-JS 框架的样式编辑
                   href: devtools-guide-chromium/css/css-in-js.md
-                  displayName: Elements tool
-                - name: HTML 和 DOM 入门
-                  href: devtools-guide-chromium/beginners/html.md
                   displayName: Elements tool
                 - name: 开始查看和更改 DOM
                   href: devtools-guide-chromium/dom/index.md
