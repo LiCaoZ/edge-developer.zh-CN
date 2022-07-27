@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.date: 05/04/2021
 ms.openlocfilehash: d254d084503a2723af62383ecc97b5d3a04c46e4
 ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/23/2022
 ms.locfileid: "12676144"
@@ -275,7 +275,7 @@ DevTools 提供大量工作流，用于筛选出与手头任务无关的资源:
 
    ![只显示 CSS 文件。](../media/network-glitch-network-filter-file-type-css.msft.png)
 
-1. 若要显示脚本，请按住 `Ctrl` (Windows、Linux) 或 `Command` (macOS) ，然后单击 **JS**。
+1. 若要显示脚本，请长按“`Ctrl`”(Windows、Linux) 或“`Command`”(macOS)，然后点击“**JS**”。
 
    ![只显示 CSS 和 JS 文件。](../media/network-glitch-network-filter-file-type-css-js.msft.png)
 
