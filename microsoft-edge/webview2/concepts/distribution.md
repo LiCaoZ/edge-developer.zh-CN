@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 1/20/2022
-ms.openlocfilehash: c7a59345c0151c629d1d95948b8f6f198dbdd35b
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.openlocfilehash: ab4354ec4d80c9450acb7e93f968debbae7826ba
+ms.sourcegitcommit: 2617558f3934ae09ef9705c8022004353a579315
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668725"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "12685543"
 ---
 # <a name="distribute-your-app-and-the-webview2-runtime"></a>分发应用和 WebView2 运行时
 
@@ -158,6 +158,32 @@ Evergreen WebView2 运行时将作为Windows 11操作系统的一部分包含在
 
 使用以下联机部署工作流或脱机部署工作流，确保在应用启动之前已安装运行时。  可以根据方案调整工作流。  示例代码在 [示例存储库](https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment)中可用。
 
+#### <a name="detect-if-a-suitable-webview2-runtime-is-already-installed"></a>检测是否已安装合适的 WebView2 运行时
+
+若要验证 WebView2 运行时是否已安装，请使用以下方法之一：
+
+   *  方法 1：在以下两个注册表位置检查 `pv (REG_SZ)` WebView2 运行时的 regkey。  regkey `HKEY_LOCAL_MACHINE` 用于 _每台计算机_ 安装。  regkey `HKEY_CURRENT_USER` 用于 _按用户_ 安装。
+
+      对于 WebView2 应用程序，必须至少存在其中一个具有大于 0.0.0.0 的版本并对其进行定义。  如果两个 regkey 都不存在，或者仅存在其中一个 regkey，但其值为 `null`空字符串或 0.0.0.0，则表示未在客户端上安装 WebView2 运行时。  检查这些 regkey 以检测是否安装了 WebView2 运行时，并获取 WebView2 运行时的版本。  在以下两个位置找到 `pv (REG_SZ)` 。
+
+      要在 64 位 Windows 上检查的两个注册表位置：
+
+      ```
+      HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
+
+      HKEY_CURRENT_USER\Software\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
+      ```
+
+      要在 32 位 Windows 上检查的两个注册表位置：
+
+      ```
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
+
+      HKEY_CURRENT_USER\Software\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
+      ```
+
+   *  方法 2：运行 [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) 并评估是否 `versionInfo` 为 `nullptr`。  `nullptr` 指示未安装 WebView2 运行时。  此 API 返回 WebView2 运行时或任何安装的 Microsoft Edge (Beta、Dev 或 Canary) 预览频道的版本信息。
+
 #### <a name="online-only-deployment"></a>仅联机部署
 
 如果有一个仅限联机的部署方案，假定用户具有 Internet 访问权限，请使用以下工作流。
@@ -207,32 +233,6 @@ Evergreen WebView2 运行时将作为Windows 11操作系统的一部分包含在
    ```Shell
    MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install
    ```
-
-#### <a name="detect-if-a-suitable-webview2-runtime-is-already-installed"></a>检测是否已安装合适的 WebView2 运行时
-
-若要验证 WebView2 运行时是否已安装，请使用以下方法之一：
-
-   *  方法 1：在以下两个注册表位置检查 `pv (REG_SZ)` WebView2 运行时的 regkey。  regkey `HKEY_LOCAL_MACHINE` 用于 _每台计算机_ 安装。  regkey `HKEY_CURRENT_USER` 用于 _按用户_ 安装。
-
-      对于 WebView2 应用程序，必须至少存在其中一个具有大于 0.0.0.0 的版本并对其进行定义。  如果两个 regkey 都不存在，或者仅存在其中一个 regkey，但其值为 `null`空字符串或 0.0.0.0，则表示未在客户端上安装 WebView2 运行时。  检查这些 regkey 以检测是否安装了 WebView2 运行时，并获取 WebView2 运行时的版本。  在以下两个位置找到 `pv (REG_SZ)` 。
-
-      要在 64 位 Windows 上检查的两个注册表位置：
-
-      ```
-      HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
-
-      HKEY_CURRENT_USER\Software\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
-      ```
-
-      要在 32 位 Windows 上检查的两个注册表位置：
-
-      ```
-      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
-
-      HKEY_CURRENT_USER\Software\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
-      ```
-
-   *  方法 2：运行 [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) 并评估是否 `versionInfo` 为 `nullptr`。  `nullptr` 指示未安装 WebView2 运行时。  此 API 返回 WebView2 运行时或任何安装的 Microsoft Edge (Beta、Dev 或 Canary) 预览频道的版本信息。
 
 ### <a name="test-your-app-for-forward-compatibility"></a>测试应用是否具有转发兼容性
 
