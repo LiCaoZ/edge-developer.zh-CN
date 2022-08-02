@@ -1,17 +1,17 @@
 ---
 title: Microsoft Edge 加载项商店开发人员策略
-description: Microsoft Edge加载项存储开发人员策略。
+description: Microsoft Edge 加载项存储开发人员策略。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/17/2021
-ms.openlocfilehash: d80713bba5977567155b501dc74957ad72e03917
-ms.sourcegitcommit: e33dc94c1a64cb6a7b5c40ca6886fefa6865c9d0
+ms.openlocfilehash: 38f28686fbf54365db7065d1dd0f780afb969e7f
+ms.sourcegitcommit: 59d8095df38d8d54366bd788f2187944eb7e592d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "12514852"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "12686464"
 ---
 # <a name="microsoft-edge-add-ons-store-developer-policies"></a>Microsoft Edge 加载项商店开发人员策略
 
@@ -19,9 +19,9 @@ ms.locfileid: "12514852"
 <!-- ====================================================================== -->
 ## <a name="introduction-and-objective-of-this-document"></a>本文档的简介和目标
 
-感谢你对开发Microsoft Edge加载项存储的扩展感兴趣。  Microsoft Edge加载项存储开发人员策略 (加载项存储开发人员策略) 适用于扩展，包括通过[合作伙伴中心](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)提交扩展，以及通过Microsoft Edge加载项预配此类扩展。
+感谢你对为 Microsoft Edge 加载项存储开发扩展的兴趣。  Microsoft Edge 加载项存储开发人员策略 (加载项存储开发人员策略) 适用于扩展，包括通过 [合作伙伴中心](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) 提交扩展，以及通过 Microsoft Edge 加载项预配此类扩展。
 
-_Microsoft Edge加载项存储_也称为_Microsoft Edge加载项网站_。  _Microsoft Edge加载项存储开发人员策略_也称为_Microsoft Edge加载项网站开发人员策略_。
+_Microsoft Edge 加载项存储_也称为 _Microsoft Edge 加载项网站_。  _Microsoft Edge 加载项存储开发人员策略_也称为 _Microsoft Edge 加载项网站开发人员策略_。
 
 
 <!-- ====================================================================== -->
@@ -29,13 +29,13 @@ _Microsoft Edge加载项存储_也称为_Microsoft Edge加载项网站_。  _Mic
 
 下面是一些入门准则：
 
-*   应在扩展中为Microsoft Edge提供唯一和独特的值。  提供从Microsoft Edge加载项存储 (Microsoft Edge加载项) 下载扩展的令人信服的理由。
+*   应在 Microsoft Edge 的扩展中提供唯一且不同的值。  提供从 Microsoft Edge 加载项存储 (Microsoft Edge 加载项) 下载扩展的令人信服的理由。
 
 *   您不得误导我们的联合用户，了解扩展的功能、提供扩展的人员等。
 
-*   不得尝试欺骗用户、系统或生态系统。  我们的Microsoft Edge加载项中没有任何位置可用于任何类型的欺诈;无论是评级和审查操作、信用卡欺诈或其他欺诈活动。
+*   不得尝试欺骗用户、系统或生态系统。  我们的 Microsoft Edge 加载项中不存在任何欺诈行为;无论是评级和审查操作，信用卡欺诈或其他欺诈活动。
 
-遵守Microsoft Edge加载项存储开发人员策略应有助于你做出增强扩展吸引力和受众的选择。
+遵守 Microsoft Edge 加载项存储开发人员策略应有助于做出增强扩展吸引力和受众的选择。
 
 你的扩展对亿万用户的体验至关重要。  我们期待着体验你创建的内容，并非常激动地帮助向世界提供你的扩展。
 
@@ -65,11 +65,11 @@ _Microsoft Edge加载项存储_也称为_Microsoft Edge加载项网站_。  _Mic
 
 #### <a name="115-provide-appropriate-details"></a>1.1.5 提供适当的详细信息
 
-必须提供有关扩展的不同信息详细信息，以及列出扩展 (元数据) 中的功能。  扩展必须提供有价值且高质量的用户体验。  扩展还必须在Microsoft Edge加载项中具有活动状态。
+必须提供有关扩展的不同信息详细信息，以及列出扩展 (元数据) 中的功能。  扩展必须提供有价值且高质量的用户体验。  你的扩展还必须在 Microsoft Edge 加载项中具有活动状态。
 
 #### <a name="116-stability-and-performance"></a>1.1.6 稳定性和性能
 
-扩展不得对Microsoft Edge的性能或稳定性产生负面影响。
+扩展不得对 Microsoft Edge 的性能或稳定性产生负面影响。
 
 #### <a name="117-obfuscation"></a>1.1.7 模糊
 
@@ -89,7 +89,7 @@ _Microsoft Edge加载项存储_也称为_Microsoft Edge加载项网站_。  _Mic
 
 #### <a name="121-content-security-policies"></a>1.2.1 内容安全策略
 
-如果对扩展所做的任何更改超出了所述的功能，则对代码所做的任何更改都必须符合[Microsoft Edge内容安全策略](csp.md#relaxing-the-default-policy)。  例如，扩展不应下载远程脚本，随后以与所述功能不一致的方式运行该脚本。
+如果对扩展所做的任何更改超出了所述的功能，则对代码所做的任何更改都必须符合 [Microsoft Edge 内容安全策略](csp.md#relaxing-the-default-policy)。  例如，扩展不应下载远程脚本，随后以与所述功能不一致的方式运行该脚本。
 
 #### <a name="122-unwanted-and-malicious-software"></a>1.2.2 不需要和恶意软件
 
@@ -101,7 +101,7 @@ _Microsoft Edge加载项存储_也称为_Microsoft Edge加载项网站_。  _Mic
 
 #### <a name="124-extensions-update"></a>1.2.4 扩展更新
 
-除非 Microsoft 另有允许，否则只能通过Microsoft Edge加载项更新扩展。
+除非 Microsoft 另有允许，否则只能通过 Microsoft Edge 加载项更新扩展。
 
 ### <a name="13-product-is-testable"></a>1.3 产品是可测试的
 
@@ -117,11 +117,11 @@ _Microsoft Edge加载项存储_也称为_Microsoft Edge加载项网站_。  _Mic
 
 ### <a name="14-usability"></a>1.4 可用性
 
-扩展必须符合Microsoft Edge加载项存储标准才能使用，包括但不限于以下子节中列出的扩展。
+扩展必须符合 Microsoft Edge 加载项存储标准才能实现可用性，包括但不限于以下子节中列出的扩展。
 
 #### <a name="141-compatibility-across-platforms"></a>跨平台的 1.4.1 兼容性
 
-扩展应与可下载扩展的所有设备和平台上的Microsoft Edge兼容。  如果在不兼容的设备上下载了扩展，则它应在启动时检测到该扩展，并向用户显示一条消息，详细说明设备必须满足的要求才能与扩展兼容。
+你的扩展应与 Microsoft Edge 在可以下载其所有设备和平台上兼容。  如果在不兼容的设备上下载了扩展，则它应在启动时检测到该扩展，并向用户显示一条消息，详细说明设备必须满足的要求才能与扩展兼容。
 
 #### <a name="142-user-experience"></a>1.4.2 用户体验
 
@@ -215,7 +215,7 @@ _Microsoft Edge加载项存储_也称为_Microsoft Edge加载项网站_。  _Mic
 
 ### <a name="19-notifications"></a>1.9 通知
 
-扩展必须遵守通知的系统设置。  这意味着任何向用户显示广告和通知都必须与用户首选项一致，无论这些通知是由 Microsoft 推送通知服务 (MPNS) 、Windows推送通知服务 (WNS) 还是任何其他服务提供。  如果用户在特定于产品或系统范围内禁用通知，则扩展必须保持正常运行。
+扩展必须遵守通知的系统设置。  这意味着任何向用户呈现广告和通知都必须与用户首选项一致，无论这些通知是由 Microsoft 推送通知服务 (MPNS) 、Windows 推送通知服务 (WNS) 还是任何其他服务提供。  如果用户在特定于产品或系统范围内禁用通知，则扩展必须保持正常运行。
 
 如果产品使用 MPNS 或 WNS 来传输通知，则必须符合以下要求：
 
@@ -271,13 +271,13 @@ _Microsoft Edge加载项存储_也称为_Microsoft Edge加载项网站_。  _Mic
 <!-- ====================================================================== -->
 ## <a name="2-content-policies"></a>2 个内容策略
 
-以下策略适用于内容和元数据 (包括发布者名称、扩展名称、扩展图标、扩展说明、扩展屏幕截图、扩展预告片和预告片缩略图，以及用于在Microsoft Edge加载项中分发的任何其他扩展元数据) 。  _内容_ 是指扩展中包含的图像、声音、视频和文本、通过扩展公开的磁贴、通知、错误消息或广告，以及从服务器或扩展连接到的任何内容。
+以下策略适用于内容和元数据 (包括发布者名称、扩展名称、扩展图标、扩展说明、扩展屏幕截图、扩展预告片和预告片缩略图，以及用于在 Microsoft Edge 加载项中分发的任何其他扩展元数据) 。  _内容_ 是指扩展中包含的图像、声音、视频和文本、通过扩展公开的磁贴、通知、错误消息或广告，以及从服务器或扩展连接到的任何内容。
 
-由于扩展和Microsoft Edge加载项在世界各地使用，因此这些要求在区域和文化规范的上下文中得到解释和应用。
+由于扩展和 Microsoft Edge 加载项在世界各地使用，因此这些要求在区域和文化规范的上下文中得到解释和应用。
 
-### <a name="21-content-requirements-for-microsoft-edge-add-on-catalog-listing"></a>2.1 Microsoft Edge加载项目录列表的内容要求
+### <a name="21-content-requirements-for-microsoft-edge-add-on-catalog-listing"></a>2.1 Microsoft Edge 加载项目录列表的内容要求
 
-在扩展过程中提交的元数据和其他内容可能不包含成熟的内容。  不符合加载项存储列表要求Microsoft Edge提交将被拒绝或立即删除。
+在扩展过程中提交的元数据和其他内容可能不包含成熟的内容。  不符合 Microsoft Edge 加载项存储列表要求的提交将被拒绝或立即删除。
 
 ### <a name="22-content-including-names-logos-original-and-third-party"></a>2.2 内容，包括名称、徽标、原始和第三方
 
@@ -349,7 +349,7 @@ _Microsoft Edge加载项存储_也称为_Microsoft Edge加载项网站_。  _Mic
 
 将扩展提交到 [合作伙伴中心](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)时，必须指示扩展是否显示应标记为“成熟”的内容。  确定扩展的分级时，请考虑应用中的所有内容，包括用户生成的内容和广告，以及扩展链接的内容。  如果指示扩展不包含任何“成熟”内容，则负责保持此分级的准确性。
 
-无论给扩展的分级如何，它仍必须遵守Microsoft Edge加载项开发人员策略的所有内容要求。
+无论为扩展提供何种分级，它仍必须遵守 Microsoft Edge 加载项开发人员策略的所有内容要求。
 
 #### <a name="2122-ratings-change"></a>2.12.2 分级更改
 
@@ -365,8 +365,18 @@ _Microsoft Edge加载项存储_也称为_Microsoft Edge加载项网站_。  _Mic
 
 所有扩展都应遵循上面列出的存储策略。 如果扩展在评审过程中失败，请查看应用商店策略以了解失败的原因。 使用合作伙伴中心提交扩展后，若要询问有关其评审或认证状态的问题，请转到 [“新建支持请求](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4) ”并完成表单。
 
-### <a name="microsoft-edge-add-ons-appeal-statistics-for-fy2021"></a>Microsoft Edge加载项吸引 2021 财年统计信息
+### <a name="microsoft-edge-add-ons-appeal-statistics-for-fy2021"></a>Microsoft Edge 加载项吸引 2021 财年统计信息
 
-| 主要投诉类型 #1：强制上诉 | 主要投诉类型 #2：认证结果 | 其他投诉类型 | 投诉总数 | 已推翻的投诉 |
-|:--- |:--- |
-| 8 | 2 | 4 | 14 | 0 |
+2022/8/1 上报告的数字
+
+
+| 统计                                             | Count    |
+|----------------------------------------------|----------|
+| 应用和/或帐户强制措施上诉 |      42 |
+| 有关技术问题的投诉  |       27 |
+| 法规合规性投诉    |       0 |
+| 有关认证、策略、提交和技术帮助的问题                    |      76 |
+| 杂项 | 15 |
+| 总问题数                              |      160 |
+| 推翻的决策                        |       8 |
+| 平均处理时间                      | 3.6 天 |

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/29/2021
-ms.openlocfilehash: 9efa2fa607bed8c78e8abd3d52b130232826df56
-ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
+ms.openlocfilehash: 6dbf631fa59eea5b4b1e19e714a355a8d84cf8ab
+ms.sourcegitcommit: 59d8095df38d8d54366bd788f2187944eb7e592d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "12676046"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "12686473"
 ---
 <!-- Copyright Kayce Basques
 
@@ -473,11 +473,11 @@ DevTools 中的 **元素** 工具允许你一次查看或更改一个元素的 C
 
 ### <a name="sample-a-color-off-the-page-with-the-eyedropper"></a>用“取色器“在页面上打样着色
 
-打开 **颜色选取器**时， **眼滴器** (![眼滴。](../media/eyedropper-icon.msft.png) 默认情况下，) 处于打开状态。
-
 若要将所选颜色更改为页面上的一些其他颜色，请执行以下操作：
 
-1. 将鼠标悬停在视区中的目标颜色上。
+1. 单击 **“眼滴**](../media/eyedropper-icon.msft.png)”图标 (![。) 。 光标更改为放大镜。
+
+1. 将鼠标悬停在屏幕中任意位置的颜色为要采样的像素上。
 
 1. 单击以确认。
 
