@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/06/2022
-ms.openlocfilehash: 865ea8588aaf478606787b0e097d7179e4fe16e3
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.date: 08/03/2022
+ms.openlocfilehash: 6dbe1289b3e93f2d2ecc08d372000456c8b01e8b
+ms.sourcegitcommit: e367f0e2c9e59648b2e6243297c4073ebeb7a8ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668704"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "12691944"
 ---
 # <a name="webview2-api-reference"></a>WebView2 API 参考
 
@@ -20,18 +20,18 @@ ms.locfileid: "12668704"
 
 WebView2 适用于以下框架 (或平台) 和编程语言：
 
-* .NET
-   * [Core/C#](/dotnet/api/microsoft.web.webview2.core)
+*  .NET
+   * [核心版](/dotnet/api/microsoft.web.webview2.core)
    * [WPF](/dotnet/api/microsoft.web.webview2.wpf)
    * [Windows 窗体](/dotnet/api/microsoft.web.webview2.winforms)
 
-* WinRT for WinUI 2 (UWP) 
-   * [Core/C#](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
-   * [COM 互操作/C++](/microsoft-edge/webview2/reference/winrt/interop/index)
-
-* WinRT for WinUI 3 (Windows 应用 SDK) 
-   * [Microsoft.UI.Xaml.Controls.WebView2 类](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2)
-      * [规范：WebView2 Xaml 控件](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)<!-- changing master to main doesn't work 5/19/2022 -->
+*  WinRT
+   * [Microsoft.Web.WebView2.Core](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index) - 适用于所有 WinRT 框架。
+   * [COM 互操作/C++](/microsoft-edge/webview2/reference/winrt/interop/index) - 适用于所有 WinRT 框架。
+   *  WinUI 2 (UWP)
+      * [Microsoft.UI.Xaml.Controls.WebView2 类](/windows/winui/api/microsoft.ui.xaml.controls.webview2)
+   *  WinUI 3 （Windows 应用 SDK）
+      * [Microsoft.UI.Xaml.Controls.WebView2 类](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2)
 
 * [Win32/C++](/microsoft-edge/webview2/reference/win32/index)
 

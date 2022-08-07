@@ -7,19 +7,19 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/01/2022
-ms.openlocfilehash: ec503395ff90a812a5d9227d14a9570a4d65ff1f
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: 3d1e068c4dc3e0b36027ede0018523722fb3db05
+ms.sourcegitcommit: e367f0e2c9e59648b2e6243297c4073ebeb7a8ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610679"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "12691951"
 ---
 # <a name="process-model-for-webview2-apps"></a>WebView2 应用的处理模型
 <!-- old title: # The WebView2 process model -->
 
 支持的平台：Win32、Windows 窗体、WinUI、WPF。
 
-WebView2 运行时使用与Microsoft Edge浏览器相同的进程模型。  此浏览器进程模型在 [浏览器体系](https://developer.chrome.com/blog/inside-browser-part1/#browser-architecture) 结构中介绍，在内部 _查看新式 Web 浏览器 (第 1 部分) _。
+WebView2 运行时使用与 Microsoft Edge 浏览器相同的进程模型。  此浏览器进程模型在 [浏览器体系](https://developer.chrome.com/blog/inside-browser-part1/#browser-architecture) 结构中介绍，在内部 _查看新式 Web 浏览器 (第 1 部分) _。
 
 
 <!-- ====================================================================== -->
@@ -59,6 +59,11 @@ WebView2 运行时进程集合中的所有进程都绑定到浏览器进程，�
 <!-- TODO: update with profile info -->
 表示 `CoreWebView2Environment` 用户数据文件夹及其关联的进程集合。  给定的呈现器进程不与单 `CoreWebView2` 个实例相关联，因为呈现器进程可以在使用相同用户数据文件夹的多个 `CoreWebView2` 实例中提供帧，具体取决于网站隔离。  请参阅 [每帧呈现器进程 - 站点隔离](https://developers.google.com/web/updates/2018/09/inside-browser-part1#site-isolation)。
 
+#### <a name="multiple-environment-objects"></a>多个环境对象
+
+如果创建的多个 `CoreWebView2Environment` 对象的配置方式与 (包括共享相同用户数据文件夹) 相同，则它们将表示相同的用户数据文件夹和相同的进程关联集合。 使用这些 `CoreWebView2Environment` 对象中的任何一个创建具有一个 `CoreWebView2` 共享用户数据文件夹和相关进程集合的对象。
+
+如果尝试创建一个用户数据文件夹，而另`CoreWebView2Environment`一个对象已在使用该文件夹，并且未将这两个对象配置为相同，例如，如果使用不同的`CoreWebView2EnvironmentOptions.Language`值创建了这两`CoreWebView2Environment`个`CoreWebView2Environment`对象，则第二`CoreWebView2Environment`个对象将无法创建`WebView2`对象。 对于处于同一进程或不同进程中的对象，这是事实 `CoreWebView2Environment` 。
 
 <!-- ====================================================================== -->
 ## <a name="handling-process-events-and-lifetime"></a>处理进程事件和生存期
@@ -95,8 +100,8 @@ WebView2 运行时进程集合中的所有进程都绑定到浏览器进程，�
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-* [在内部查看新式 Web 浏览器 (第 1 部分) ](https://developer.chrome.com/blog/inside-browser-part1/#browser-architecture) - WebView2 运行时和Microsoft Edge浏览器使用的浏览器进程模型。
+* [在内部查看新式 Web 浏览器 (第 1 部分) ](https://developer.chrome.com/blog/inside-browser-part1/#browser-architecture) - WebView2 运行时和 Microsoft Edge 浏览器使用的浏览器进程模型。
 * [WebView2 入门](../get-started/get-started.md)
 * [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。
 * [WebView2 API 参考](/dotnet/api/microsoft.web.webview2.wpf.webview2)
-* [另请参阅](../index.md#see-also)_Microsoft Edge WebView2 简介_。
+* [另请参阅](../index.md#see-also) _Microsoft Edge WebView2 简介_。

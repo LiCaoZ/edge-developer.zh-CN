@@ -7,13 +7,13 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 no-loc:
 - Enable webhint
-ms.date: 06/24/2022
-ms.openlocfilehash: c71cf9d6f86aedeae5732cc5d175996b7a98945b
-ms.sourcegitcommit: 05753adf2734d9bd118d2b224883eeb26028000c
+ms.date: 08/03/2022
+ms.openlocfilehash: 84c0d8208c704fb1628f6f2516387ba127b21c0c
+ms.sourcegitcommit: e367f0e2c9e59648b2e6243297c4073ebeb7a8ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630114"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "12691972"
 ---
 # <a name="experimental-features"></a>试验功能
 
@@ -54,10 +54,12 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 
 <!-- listed in order of the Settings > Experiments pane -->
 
-**默认情况下在 Microsoft Edge Stable v102 中启用：**
+**默认情况下在 Microsoft Edge Stable v103 中启用：**
 * [在应用程序面板中启用“报告 API”面板](#enable-reporting-api-panel-in-the-application-panel)
 * [在“更改”选项卡中显示更精确的更改](#display-more-precise-changes-in-the-changes-tab)
+* [将 Lighthouse 面板与时间跨度和快照模式配合使用](#use-lighthouse-panel-with-timespan-and-snapshot-modes)
 * [样式窗格中 CSS 层的工具](#tooling-for-css-layers-in-the-styles-pane)
+* [在浏览器窗口外启用颜色选取](#enable-color-picking-outside-the-browser-window)
 * [Enable webhint](#enable-webhint)
 * [在元素中显示问题](#show-issues-in-elements)
 * [焦点模式](#focus-mode)
@@ -154,7 +156,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 某些 Microsoft Edge 加载项可以定义 DevTools 的自定义颜色主题。 如果使用主题安装加载项，则需要启用 **允许扩展来加载自定义样式表** 试验以查看加载项主题。
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -164,7 +166,7 @@ Microsoft Edge DevTools 提供对仍在开发中的试验功能的访问权限�
 若要在运行时将 DOM 节点添加到 DOM 时捕获 JavaScript 堆栈跟踪，请启用此试验。 捕获的堆栈跟踪显示在 **“元素**”面板的 **“堆栈跟踪**”窗格中。
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -192,7 +194,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 1. **协议监视**器工具显示在 DevTools 底部的**抽屉**中。
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -204,7 +206,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 ![CSP 冲突工具。](index-images/csp-violations-tool.png)
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -215,37 +217,22 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 <!-- todo: need text -->
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
 <!-- ====================================================================== -->
-## <a name="show-option-to-take-heap-snapshot-where-globals-are-treated-as-root"></a>显示用于在其中将全局视为根的堆快照的选项
+## <a name="show-option-to-take-heap-snapshot-where-globals-are-not-treated-as-root"></a>显示用于在不将全局视为根的堆快照的选项
 <!-- older checkbox -->
 
-显示用于在其中将全局视为根的堆快照的选项。
+显示用于创建堆快照的选项，其中不将全局视为根。
 <!-- todo: need text, except going away -->
 
 另请参阅：
 * [使用内存工具记录堆快照](../memory-problems/heap-snapshots.md)
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
-*  Microsoft Edge Canary v105 中不存在此复选框。
-
-
-<!-- ====================================================================== -->
-## <a name="show-backforward-cache-blocking-reasons-in-the-frame-tree-structure-view"></a>在帧树结构视图中显示后/向缓存阻止原因
-<!-- older checkbox -->
-
-是否在帧树结构视图中显示回/前缓存阻塞原因。
-<!-- todo: need text, except going away -->
-
-另请参阅：
-* [用于管理存储的应用程序工具](../storage/application-tool.md)
-
-状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  Microsoft Edge Canary v105 中不存在此复选框。
 
 
@@ -260,7 +247,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 * [使用内存工具记录堆快照](../memory-problems/heap-snapshots.md)
 
 状态：
-*  Microsoft Edge Stable v102 中不存在此复选框。
+*  Microsoft Edge Stable v103 中不存在此复选框。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -273,7 +260,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 * [使用源订单查看器测试键盘支持](../accessibility/test-tab-key-source-order-viewer.md)
 
 状态：
-*  Microsoft Edge Stable v102 中不存在此复选框。
+*  Microsoft Edge Stable v103 中不存在此复选框。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -284,7 +271,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 <!-- todo: need text -->
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -295,7 +282,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 <!-- todo: need text -->
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -306,7 +293,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 <!-- todo: need text -->
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -318,7 +305,7 @@ DevTools 使用 DevTools 协议与检查的页面通信。
 有关 [调试，请参阅将已处理代码映射到原始源代码](../javascript/source-maps.md)。
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -339,7 +326,7 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 * [使用颜色选取器测试文本颜色对比度](../accessibility/color-picker.md)
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -349,7 +336,7 @@ APCA 是一种计算对比度的新方法。  它基于对颜色感知的新式�
 在 **Elements** 工具中添加一个按钮，该按钮可在 DOM 树和辅助功能树之间切换。
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -380,7 +367,7 @@ omit period, even though checkbox label has period -->
 有关详细信息，请参阅"样式"窗格中[的"编辑 CSS 字体样式和设置"。](../inspect-styles/edit-fonts.md)
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -391,7 +378,7 @@ omit period, even though checkbox label has period -->
 <!-- todo: need text -->
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -402,7 +389,7 @@ omit period, even though checkbox label has period -->
 <!-- todo: need text -->
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -412,7 +399,7 @@ omit period, even though checkbox label has period -->
 使用报告 API 捕获某些错误，例如安全违规或已弃用的 API 调用。 当用户访问您的站点并发送到服务器终结点时，会发生这些错误。 启用此试验可在**应用程序面板中**添加 **“报告 API**”部分，其中列出发送到终结点的所有报表。
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -422,7 +409,7 @@ omit period, even though checkbox label has period -->
 在 [“更改”选项卡中查看更精确的更改](https://developer.chrome.com/blog/new-in-devtools-98/#changes)。
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -433,7 +420,7 @@ omit period, even though checkbox label has period -->
 <!-- todo: need text -->
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -444,7 +431,7 @@ omit period, even though checkbox label has period -->
 <!-- todo: need text -->
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -458,7 +445,7 @@ omit period, even though checkbox label has period -->
 在 Canary v105 中，此复选框不起作用。  实现此功能后，此功能将在“ **样式** ”面板中编写或检查 CSS 时提供帮助。  小型信息图标将显示在非活动 (或已弃用) 的 CSS 属性旁边。
 
 状态：
-*  Microsoft Edge Stable v102 中不存在此复选框。
+*  Microsoft Edge Stable v103 中不存在此复选框。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -471,7 +458,7 @@ omit period, even though checkbox label has period -->
 * [Lighthouse 工具](../lighthouse/lighthouse-tool.md)
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -481,7 +468,7 @@ omit period, even though checkbox label has period -->
 在“**样式**”窗格中添加了对 `@layer` CSS 规则的支持。  **样式**窗格中的 CSS 规则按它们所属的层进行分组。  将显示一个层概述小组件，其中显示了当前检查的元素的层树。
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -498,7 +485,7 @@ omit period, even though checkbox label has period -->
 * 使用 _CSS 功能参考_中的[颜色选择器更改颜色](../css/reference.md#change-colors-with-the-color-picker)
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -511,7 +498,7 @@ omit period, even though checkbox label has period -->
 *  在编译和捆绑源文件) 后，生产文件 (Web 服务器上已部署的文件。
 
 状态：
-*  Microsoft Edge Stable v102 中不存在此复选框。
+*  Microsoft Edge Stable v103 中不存在此复选框。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -522,7 +509,7 @@ omit period, even though checkbox label has period -->
 <!-- todo: need text -->
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -543,7 +530,7 @@ omit period, even though checkbox label has period -->
 ![问题面板中的 webhint 反馈。](../media/experiments-webhint.msft.png)
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -553,7 +540,7 @@ omit period, even though checkbox label has period -->
 使此实验能够在 **Elements** 工具的 **DOM** 视图中查看 HTML 下的语法错误。 有关详细信息，请参阅 [Wavy 下划线，突出显示“元素”工具中的代码问题和改进](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool)。
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -569,7 +556,7 @@ omit period, even though checkbox label has period -->
 请参阅 [使用焦点模式降低 DevTools 的复杂性](focus-mode.md)。
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -585,7 +572,7 @@ omit period, even though checkbox label has period -->
 在 DevTools 中进行的任何编辑现在会更改硬盘上的文件，并使用Visual Studio Code进行实时同步。 可以在打开Visual Studio Code[中的源文件中](../sources/opening-sources-in-vscode.md)了解如何设置工作区。
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -600,7 +587,7 @@ omit period, even though checkbox label has period -->
 *  相比之下， _漂亮的打印_ 以缩进的、更人性化的可读格式呈现文件的内容。
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -616,7 +603,7 @@ omit period, even though checkbox label has period -->
 <!-- todo: need text -->
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -627,7 +614,7 @@ omit period, even though checkbox label has period -->
 <!-- todo: need text -->
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -641,7 +628,7 @@ omit period, even though checkbox label has period -->
 * [使用内存工具记录堆快照](../memory-problems/heap-snapshots.md)
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -655,7 +642,7 @@ omit period, even though checkbox label has period -->
 * [使用内存工具记录堆快照](../memory-problems/heap-snapshots.md)
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -668,7 +655,7 @@ omit period, even though checkbox label has period -->
 * [自定义键盘快捷方式](../customize/shortcuts.md)
 
 状态：
-*  Microsoft Edge Stable v102 中不存在此复选框。
+*  Microsoft Edge Stable v103 中不存在此复选框。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -678,7 +665,7 @@ omit period, even though checkbox label has period -->
 控制是否在时间线上显示无效跟踪。
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -688,7 +675,7 @@ omit period, even though checkbox label has period -->
 控制是否在时间线上显示所有事件。
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -698,7 +685,7 @@ omit period, even though checkbox label has period -->
 控制是否在时间线上显示 v8 运行时调用统计信息。
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -708,7 +695,7 @@ omit period, even though checkbox label has period -->
 控制是否在时间线上重播输入事件。
 
 状态：
-*  此复选框位于 Microsoft Edge Stable v102 中。
+*  此复选框位于 Microsoft Edge Stable v103 中。
 *  此复选框位于 Microsoft Edge Canary v105 中。
 
 
@@ -722,5 +709,5 @@ omit period, even though checkbox label has period -->
 * [首次加载源文件时，断点可能不会触发](https://bugs.chromium.org/p/chromium/issues/detail?id=1133307&q=%22instrumentation%20breakpoints%22&can=2)
 
 状态：
-*  Microsoft Edge Stable v102 中不存在此复选框。
+*  Microsoft Edge Stable v103 中不存在此复选框。
 *  此复选框位于 Microsoft Edge Canary v105 中。
