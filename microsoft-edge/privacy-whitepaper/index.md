@@ -10,12 +10,12 @@ no-loc:
 - Cast
 - Google Cast
 ms.date: 12/10/2021
-ms.openlocfilehash: 2b581887d96c772676a9dbbbbb2277192b0d2298
-ms.sourcegitcommit: 872263458513fee2f2c06a9ab456ddb5cf4c0993
+ms.openlocfilehash: b50d28d4f3658f9080d5819a5e2cf1dbeb80946b
+ms.sourcegitcommit: e367f0e2c9e59648b2e6243297c4073ebeb7a8ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "12572916"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "12691979"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书
 
@@ -204,6 +204,20 @@ Microsoft Edge 支持 Adobe 的 Flash Access DRM，由某些网站使用，而�
 
 若要查看先前下载的历史记录，请转到 `edge://downloads`。  若要清除浏览数据并删除下载历史记录，请转到 `edge://settings/clearBrowserData`。  从 Microsoft Edge 中删除下载历史记录不会删除设备中的文件。  从设备中删除下载的文件不会从下载历史记录中删除文件。  使用 **InPrivate** 浏览或 **来宾** 模式时，关闭 **InPrivate** 或来 **宾** 窗口时，会清除会话中的下载历史记录。 文件仍保存在设备上。
 
+<!-- ====================================================================== -->
+## <a name="enterprise-security-and-compliance"></a>企业安全性与合规性
+
+Microsoft Edge 支持各种第一方企业安全性与合规性功能，包括：
+* [Windows 信息保护](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
+* [Microsoft Defender 应用程序防护](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview)
+* [Microsoft 终结点数据丢失防护 (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
+* [Microsoft 内部风险管理](/microsoft-365/compliance/insider-risk-management-solution-overview) 
+
+这些功能只有在企业托管设备上才能正常运行，其方法是获取该功能的适当许可证或通过管理员在设备上部署特定的策略。
+
+启用这些企业功能后，浏览器会根据功能正常运行、管理和诊断的要求，向管理员发送审核和诊断数据。 此数据收集由企业管理员控制，最终用户无法选择退出。
+
+请与企业管理员联系，以了解公司对于此类数据收集的策略。
 
 <!-- ====================================================================== -->
 ## <a name="extensions-and-microsoft-edge-add-ons"></a>扩展和 Microsoft Edge 加载项
@@ -743,24 +757,6 @@ Microsoft Edge使你能够安装网站开发人员创建的 Web 应用，并固�
 Microsoft Edge WebView 控件允许应用开发人员在 Windows 7、Windows 10 及更高版本的本机应用程序中托管 Web 内容。  托管 WebView2 实例的应用程序可能会向 Microsoft 发送诊断数据。 诊断数据可以包括你如何使用Microsoft Edge和你访问的站点。
 
 若要启用诊断数据收集，请转到 `edge://settings/privacy`。 打开 **可选诊断数据** 设置。 若要在 Windows 10 上禁用 Microsoft Edge 故障诊断数据收集，请打开“**开始**” > “**设置**” > “**隐私**”并选择“**诊断和反馈**”。 若要关闭所有其他平台的诊断数据收集，请转到 `edge://settings/privacy`。 **通过发送有关如何使用浏览器、访问的网站和故障报告设置的可选诊断数据，关闭帮助改进 Microsoft 产品**。 托管 Microsoft Edge WebView 的应用程序可能会收集受开发人员数据收集管理和相关隐私策略约束的其他数据。
-
-
-<!-- ====================================================================== -->
-## <a name="windows-defender-application-guard"></a>Windows Defender 应用程序防护
-
-Windows Defender 应用程序防护 (WDAG) 是一项适用于组织的功能。  打开Windows Defender 应用程序防护时，Microsoft Edge打开隔离容器内不受信任的站点。 使用容器有助于保护组织中的资源免受恶意站点或网络钓鱼攻击。 仅对组织管理的组策略启用此功能。 它仅适用于最新版本的 Windows 10 和更高版本。 WDAG 收集有关在独立容器中打开不受信任的网站的产品改进诊断数据（例如打开新应用程序防护窗口所需的时间）。
-
-在你同意后，WDAG 还会收集有关如何使用浏览器的信息以及有关你访问的网站的信息。  若要在 Windows 10 上禁用 Microsoft Edge 故障诊断数据收集，请打开“**开始**” > “**设置**” > “**隐私**”并选择“**诊断和反馈**”。  若要禁止所有其他平台的诊断数据收集，请在正常浏览会话中转到 `edge://settings/privacy`，然后禁用“通过发送有关如何使用浏览器的可选诊断数据、访问的网站和故障报告来帮助改进 Microsoft 产品****”设置。
-
-
-<!-- ====================================================================== -->
-## <a name="windows-information-protection"></a>Windows 信息保护
-
-Windows 信息保护 (WIP) 有助于防止意外泄漏公司信息。 它仅适用于组织通过组织管理的组策略。 为标识为公司资产的站点启用 WIP。 通过地址栏中的“管理”图标标识属于企业资产的网站。 WIP 可防止从浏览器复制和粘贴，或将某些文件上传到组织外部的站点。
-
-![Windows 信息保护。](./media/w-i-p.png)
-
-如果你的 Microsoft Edge 版本启用了 WIP，该浏览器将收集事件日志，并将其发送给你的组织。  如果 WIP 已打开，则无法选择退出数据收集。  WIP 只适用于 2016 年 8 月或更高版本的 Windows 10 版本。  有关由 WIP 捕获的事件日志的详细信息，请参阅[如何收集 Windows 信息保护 (WIP) 审核事件日志](/windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs)。
 
 
 <!-- ====================================================================== -->
