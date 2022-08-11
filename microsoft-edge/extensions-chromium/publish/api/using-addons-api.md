@@ -6,18 +6,26 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/17/2022
-ms.openlocfilehash: 0dffcd8ceb05c3221587403cc875ad93574328ed
-ms.sourcegitcommit: 108b9a0673be978d89bc99d923582f569a43f6fe
+ms.openlocfilehash: f28feb868e45a200dc89e3607ca1e45d969c469a
+ms.sourcegitcommit: 783366bcf61399859594a5bedd7563b6a8ab09f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "12635309"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "12699416"
 ---
 # <a name="using-the-microsoft-edge-add-ons-api"></a>使用 Microsoft Edge 加载项 API 
 
 Microsoft Edge 加载项 API 提供一组 REST 终结点，用于以编程方式将更新发布到提交到 Microsoft Edge 加载项网站的加载项。  可以使用这些 REST 终结点自动将加载项上载和发布到 Microsoft Edge 加载项网站。  在合作伙伴中心使用 **“发布 API** ”页。
 
 若要提交建议和反馈，请输入 [有关加载项 API 的问题](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API])。
+
+
+<!-- ====================================================================== -->
+## <a name="library-support"></a>库支持
+
+| 语言 | 包 | 源代码 | 注释 |
+| --- | --- | --- | --- |
+| Node.js | [Edge Webstore 上传](https://www.npmjs.com/package/@plasmo-corp/ewu) | [GitHub](https://github.com/plasmo-corp/edge-webstore-upload)| 这是第三方库。 Microsoft 不对此处提供的信息作任何明示或默示的担保。 |
 
 
 <!-- ====================================================================== -->

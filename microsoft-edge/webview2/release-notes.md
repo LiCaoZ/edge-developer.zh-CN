@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 07/05/2022
-ms.openlocfilehash: 5ff03d3fbed0bc330b10cb012ef906c83fc24b8a
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.date: 08/09/2022
+ms.openlocfilehash: 902c34c29b794c67d8d336ddea4ccbf1da39ddfe
+ms.sourcegitcommit: 783366bcf61399859594a5bedd7563b6a8ab09f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668662"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "12699402"
 ---
 # <a name="release-notes-for-the-webview2-sdk"></a>WebView2 SDK 发行说明
 
@@ -22,9 +22,7 @@ WebView2 团队以四周的节奏更新 [WebView2 SDK](https://www.nuget.org/pac
 
 WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特定于 SDK。
 
-
-<!-- ====================================================================== -->
-## <a name="recommended-browser-channel-and-runtime"></a>建议的浏览器通道和运行时
+#### <a name="recommended-browser-channel-and-runtime"></a>建议的浏览器通道和运行时
 
 更新 WebView2 SDK NuGet 包后，请务必重新编译 WebView2 应用。  WebView2 团队建议执行以下操作：
 
@@ -34,13 +32,126 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 有关详细信息，请参阅 [将运行时版本与 SDK 版本匹配](concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version)。
 
-
-<!-- ====================================================================== -->
-## <a name="minimum-version-of-the-browser-or-runtime-to-load-webview2"></a>用于加载 WebView2 的浏览器或运行时的最小版本
+#### <a name="minimum-version-of-the-browser-or-runtime-to-load-webview2"></a>用于加载 WebView2 的浏览器或运行时的最小版本
 
 若要加载 WebView2，Microsoft Edge 或 WebView2 运行时的最小版本为 86.0.616.0。  仅当 Web 平台中发生重大更改时，要加载 WebView2 的最小版本才会更改。
 
 若要将预发行版 SDK 与 Microsoft Edge 预览频道一起使用，请参阅 [测试即将推出的 API 和功能](how-to/set-preview-channel.md)。
+
+
+<!-- ====================================================================== -->
+## <a name="10129344"></a>1.0.1293.44
+
+发布日期：2022 年 8 月 8 日
+
+[适用于 WebView2 SDK 1.0.1293.44 的 NuGet 包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1293.44)
+
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 WebView2 运行时版本 104.0.1293.44 或更高版本。
+
+### <a name="general"></a>概要
+
+#### <a name="promotions"></a>促销
+
+以下项现在稳定：
+
+* The Favicon API:
+
+##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2.FaviconChanged 事件](/dotnet/api/microsoft.web.webview2.core.corewebview2.faviconchanged?view=webview2-dotnet-1.0.1293.44&preserve-view=true)
+* [CoreWebView2.FaviconUri 属性](/dotnet/api/microsoft.web.webview2.core.corewebview2.faviconuri?view=webview2-dotnet-1.0.1293.44&preserve-view=true)
+
+##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.FaviconChanged 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1293.44&preserve-view=true#faviconchanged)
+* [CoreWebView2.FaviconUri 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1293.44&preserve-view=true#faviconuri)
+
+##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2_15：：faviconChanged 事件 (添加](/microsoft-edge/webview2/reference/win32/icorewebview2_15?view=webview2-1.0.1293.44&preserve-view=true#add_faviconchanged)、 [删除) ](/microsoft-edge/webview2/reference/win32/icorewebview2_15?view=webview2-1.0.1293.44&preserve-view=true#remove_faviconchanged)
+* [ICoreWebView2_15：：FaviconUri 属性 (获取) ](/microsoft-edge/webview2/reference/win32/icorewebview2_15?view=webview2-1.0.1293.44&preserve-view=true#get_faviconuri)<!--no put-->
+
+
+---
+
+
+<!-- ====================================================================== -->
+## <a name="101340-prerelease"></a>1.0.1340-prerelease
+
+发布日期：2022 年 8 月 8 日
+
+[适用于 WebView2 SDK 1.0.1340-prerelease 的 NuGet 包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1340-prerelease)
+
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 Microsoft Edge 版本 105.0.1340.0 或更高版本。
+
+### <a name="general"></a>概要
+
+#### <a name="experimental-features"></a>实验功能
+
+*  添加了对 `WebResourceRequested` 辅助角色的支持，这些辅助角色允许设置筛选器以接收 `WebResourceRequested` 服务工作者、共享辅助角色和不同源 iFrame 的事件。 
+
+##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2.AddWebResourceRequestedFilter (RequestSourceKinds) 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter?view=webview2-dotnet-1.0.1340-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2-addwebresourcerequestedfilter(system-string-microsoft-web-webview2-core-corewebview2webresourcecontext-microsoft-web-webview2-core-corewebview2webresourcerequestsourcekinds))
+* [CoreWebView2.RemoveWebResourceRequestedFilter (RequestSourceKinds) 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2.removewebresourcerequestedfilter?view=webview2-dotnet-1.0.1340-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2-removewebresourcerequestedfilter(system-string-microsoft-web-webview2-core-corewebview2webresourcecontext-microsoft-web-webview2-core-corewebview2webresourcerequestsourcekinds))
+* [CoreWebView2WebResourceRequestedEventArgs 类](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs?view=webview2-dotnet-1.0.1340-prerelease&preserve-view=true)
+
+##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.AddWebResourceRequestedFilter (requestSourceKinds) 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1340-prerelease&preserve-view=true#addwebresourcerequestedfilter)
+* [CoreWebView2.RemoveWebResourceRequestedFilter (requestSourceKinds) 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1340-prerelease&preserve-view=true#removewebresourcerequestedfilter)
+* [CoreWebView2WebResourceRequestedEventArgs 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2webresourcerequestedeventargs?view=webview2-winrt-1.0.1340-prerelease&preserve-view=true)
+
+##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Experimental16.AddWebResourceRequestedFilterWithRequestSourceKinds 方法](/microsoft-edge/webview2/reference/win32/icorewebview2experimental16?view=webview2-1.0.1340-prerelease&preserve-view=true#addwebresourcerequestedfilterwithrequestsourcekinds)
+* [ICoreWebView2Experimental16.RemoveWebResourceRequestedFilterWithRequestSourceKinds 方法](/microsoft-edge/webview2/reference/win32/icorewebview2experimental16?view=webview2-1.0.1340-prerelease&preserve-view=true#removewebresourcerequestedfilterwithrequestsourcekinds)
+* [ICoreWebView2ExperimentalWebResourceRequestedEventArgs 接口](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourcerequestedeventargs?view=webview2-1.0.1340-prerelease&preserve-view=true)
+
+---
+
+*  添加了对自定义方案注册的支持，使 WebView2 应用能够使用指定方案处理 `WebResourceRequested` 请求的事件，并能够将 WebView2 控件导航到自定义方案。 
+
+##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2EnvironmentOptions 类](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions?view=webview2-dotnet-1.0.1340-prerelease&preserve-view=true)
+* [CoreWebView2CustomSchemeRegistration 类](/dotnet/api/microsoft.web.webview2.core.corewebview2customschemeregistration?view=webview2-dotnet-1.0.1340-prerelease&preserve-view=true)
+
+##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2EnvironmentOptions 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.1340-prerelease&preserve-view=true)
+* [CoreWebView2CustomSchemeRegistration 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2customschemeregistration?view=webview2-winrt-1.0.1340-prerelease&preserve-view=true)
+
+##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ExperimentalEnvironmentOptions 接口](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.1340-prerelease&preserve-view=true)
+* [ICoreWebView2ExperimentalCustomSchemeRegistration 接口](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcustomschemeregistration?view=webview2-1.0.1340-prerelease&preserve-view=true)
+
+---
+
+#### <a name="bug-fixes"></a>Bug 修复
+
+*   添加了开发人员可以显式指定从中加载WebView2Loader.dll的路径。  ([问题 #767](https://github.com/MicrosoftEdge/WebView2Feedback/issues/767)) 
+
+*   使用 `CallDevToolsProtocolMethod`时添加了有用的错误消息。  ([问题 #1609](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1609))   
+
+*   修复了查找和加载 `WebView2Loader.dll` 某些 .NET 应用中的 bug。  ([问题 #2372](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2372))   
+
+*   修复了重试下载时未触发事件的 bug `DownloadStarting` 。  ([问题 #2489](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2489)) 
+
+*   修复了服务辅助角色缓存中路径过长的问题。  ([问题 #1900](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1900))   
+
+*   改进了将 wv2winrt `IMap` 和 `IMapView` 投影转换为 JavaScript 的性能。
+
+*   添加对用作 WebView2 父窗口的HWND_MESSAGE的支持，以支持无头方案。   ([问题 #202](https://github.com/MicrosoftEdge/WebView2Feedback/issues/202)) 
+
+*   改进了以管理员用户应用身份运行的处理。
+
+*   修复了在 UWP 应用中使用 WebView2 时的联机/脱机状态和通知。
+
+*   现在可以为 WebView2 启用 GDI 缩放。  WebView2 将遵循托管应用程序的 GDI 缩放设置，而无需从应用执行其他工作。   ([问题 #1700](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1700)) 
+
+*   修复了关闭窗口模式的查找栏后焦点未返回到应用程序的 bug。  ([问题 #1225](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1225)) 
 
 
 <!-- ====================================================================== -->

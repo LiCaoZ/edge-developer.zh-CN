@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/17/2021
-ms.openlocfilehash: 52cf404ddf570d7da3f17af79614c9f24d1868cf
-ms.sourcegitcommit: 108b9a0673be978d89bc99d923582f569a43f6fe
+ms.openlocfilehash: 7f407d69fd03f9f478557d8d49ae0053bc376894
+ms.sourcegitcommit: bbbf0c01af1bc21ab02da849e04408e1dafaeeaf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "12635441"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "12699514"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -50,7 +50,7 @@ ms.locfileid: "12635441"
 |:--- |:--- |
 | `activeTab` | 请求根据 `activeTab` 规范授予扩展权限。 |
 | `alarms` | 提供对 API 的 `chrome.alarms` 扩展访问权限。 |
-| `background` | 使 Microsoft Edge 提前启动并延迟关闭，以便扩展的使用寿命可能更长。  当任何已安装的扩展具有 `background` 权限时，当用户登录到用户的计算机后以及在用户启动 Microsoft Edge 之前，Microsoft Edge 将立即以无形方式运行。  该 `background` 权限还允许 Microsoft Edge 继续运行，即使在其最后一个窗口关闭之后，直到用户显式退出 Microsoft Edge。  此权限不会影响在浏览器中关闭的扩展。  权 `background` 限通常用于后台页面。 |
+| `background` | 使 Microsoft Edge 提前启动并延迟关闭，以便扩展的使用寿命可能更长。  当任何已安装的扩展具有 `background` 权限时，当用户登录到用户的计算机后以及在用户启动 Microsoft Edge 之前，Microsoft Edge 将立即以无形方式运行。  该 `background` 权限还允许 Microsoft Edge 继续运行，即使在其最后一个窗口关闭之后，直到用户显式退出 Microsoft Edge。 权 `background` 限通常用于后台页面。 <br/>禁用的扩展被视为未安装。 应将“后台”权限与 [后台脚本配合使用](https://developer.chrome.com/docs/extensions/mv3/background_pages/)。|
 | `bookmarks` | 提供对 API 的 `chrome.bookmarks` 扩展访问权限。 |
 | `browsingData` | 提供对 API 的 `chrome.browsingData` 扩展访问权限。 |
 | `certificateProvider` | 提供对 API 的 `chrome.certificateProvider` 扩展访问权限。 |
@@ -107,7 +107,7 @@ ms.locfileid: "12635441"
 | `topSites` | 提供对 API 的 `chrome.topSites` 扩展访问权限。 |
 | `tts` | 提供对 API 的 `chrome.tts` 扩展访问权限。 |
 | `ttsEngine` | 提供对 API 的 `chrome.ttsEngine` 扩展访问权限。 |
-| `unlimitedStorage` | 为存储客户端数据（例如数据库和本地存储文件）提供无限配额。  如果没有此权限，扩展限制为 5 MB 的本地存储。 |
+| `unlimitedStorage` | 为存储客户端数据（例如数据库和本地存储文件）提供无限配额。  如果没有此权限，扩展限制为 5 MB 的本地存储。 <br/>此权限仅适用于 Web SQL 数据库和应用程序缓存 (请参阅[问题 58985：无限存储权限应应用于本地存储](https://bugs.chromium.org/p/chromium/issues/detail?id=58985)) 。 <br/>此权限当前不适用于通配符子域，例如 `http://*.contoso.com`。 |
 | `vpnProvider` | 提供对 API 的 `chrome.vpnProvider` 扩展访问权限。 |
 | `wallpaper` | 提供对 API 的 `chrome.wallpaper` 扩展访问权限。 |
 | `webNavigation` | 提供对 API 的 `chrome.webNavigation` 扩展访问权限。 |
