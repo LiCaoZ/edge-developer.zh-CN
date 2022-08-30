@@ -223,7 +223,7 @@
                 - name: 检查和修改 CSS 动画效果
                   href: devtools-guide-chromium/inspect-styles/animations.md
                   displayName: Animations tool
-            - name: 用于存储的应用程序工具
+            - name: 用于存储和 PVA 的应用程序工具
               items:
                 - name: 用于管理存储的应用程序工具
                   href: devtools-guide-chromium/storage/application-tool.md
@@ -248,6 +248,9 @@
                   displayName: Application tool
                 - name: 调试渐进式 Web 应用 (PWA)
                   href: devtools-guide-chromium/progressive-web-apps/index.md
+                  displayName: Application tool
+                - name: 测试渐进式 Web 应用 (PWA) 协议处理
+                  href: devtools-guide-chromium/progressive-web-apps/protocol-handlers.md
                   displayName: Application tool
                 - name: 调试后台服务
                   href: devtools-guide-chromium/javascript/background-services.md
@@ -968,6 +971,9 @@
         - name: 自定义“密码显示”按钮
           href: web-platform/password-reveal.md
           displayName: null
+        - name: 操作系统区域数据显示
+          href: web-platform/os-regional-settings.md
+          displayName: 'globalization, language, region, limited, intl, date, time, format'
     - name: Microsoft Edge IDE 集成
       items:
         - name: Microsoft Edge IDE 集成

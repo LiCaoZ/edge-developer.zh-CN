@@ -8,12 +8,12 @@ ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.technology: webview
 ms.date: 11/12/2021
-ms.openlocfilehash: af01f13153288c64b80fb381d257ab902259c7f7
-ms.sourcegitcommit: 61d541b18043bdc4b2a6d65d6eb7422d54da2c2f
-ms.translationtype: HT
+ms.openlocfilehash: c21ab31743528739c76fbc9bed67257f37af3c56
+ms.sourcegitcommit: bc111fcce45b119bbf0cd4ae6942fa77aca41613
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "12639901"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "12713467"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介
 
@@ -61,7 +61,7 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术(HTML、C
 
 *  **代码共享**。  向代码库添加 web 代码可以增加跨多个平台的重用。
 
-*  **Microsoft 支持**。  当 WebView2 发布一般可用版 (GA) 时，Microsoft 会提供支持并添加新功能请求。
+*  **Microsoft 支持**。  Microsoft 在支持的平台上提供支持并添加新的功能请求。
 
 *  **常青分布**。  依赖带有定期平台更新和安全修补的最新版 Chromium。
 
@@ -73,15 +73,15 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术(HTML、C
 <!-- ====================================================================== -->
 ## <a name="supported-platforms"></a>受支持的平台
 
-WebView2 的正式发布版 (GA) 或预览版适用于以下编程环境：
+支持以下编程环境：
 
-*  Win32 C/C++ (GA)
+*  Win32 C/C++
 *  .NET Framework 4.5 或更高版本
 *  .NET Core 3.1 或更高版本
 *  .NET 5
 *  .NET 6
-*  WinUI 2.0（预览版）
-*  [WinUI 3.0](/uwp/toolkits/winui3/index)
+*  [WinUI 2.0](/windows/apps/winui/winui2/)
+*  [WinUI 3.0](/windows/apps/winui/winui3/)
 
 WebView2 应用可以在以下版本的 Windows 上运行：
 

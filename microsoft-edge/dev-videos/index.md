@@ -6,20 +6,20 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/24/2022
-ms.openlocfilehash: 27853fe587a3a348dcab2a5fd8f267630a3aeba5
-ms.sourcegitcommit: 92a0cd0a86cc8ef49e4f90ea660d43106a4d19b8
+ms.openlocfilehash: cb3e3c95f20c999d67a29c3cc3d4ee76e2f54687
+ms.sourcegitcommit: 7b71b918ab5e41c254579404154164a9f4932200
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2022
-ms.locfileid: "12610224"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "12736829"
 ---
 # <a name="videos-about-web-development-with-microsoft-edge"></a>有关使用 Microsoft Edge 进行 Web 开发的视频
 
-发现并了解新的Microsoft Edge Web 开发技术和产品，包括 DevTools、Web 平台 API 和功能、渐进式Web 应用和 WebView2。
+发现并了解新的 Microsoft Edge Web 开发技术和产品，包括 DevTools、Web 平台 API 和功能、渐进式Web 应用和 WebView2。
 
 此页面包含指向短视频的链接，每个视频只关注一项功能，包括演示。
 
-Microsoft 定期在 [Microsoft Edge YouTube 频道](https://www.youtube.com/channel/UCIGx7oT8p6-jUpOfg98yelA)上发布新视频，这些视频也列在下面。
+Microsoft 定期在 [Microsoft Edge YouTube 频道](https://www.youtube.com/channel/UCIGx7oT8p6-jUpOfg98yelA)上发布新视频，它们也列在下面。
 
 单击以下列表中的缩略图，观看 YouTube 上的相应视频。
 
@@ -36,13 +36,33 @@ To add a new video:
 
 
 <!-- ====================================================================== -->
+## <a name="devtools---whats-new-in-devtools-104"></a>DevTools - DevTools 104 中的新增功能
+
+_发布于 2022 年 8 月 5 日。_
+
+[![T104 视频中 DevTools 新增功能的 humbnail 图像](./images/devtools-whatsnew-104.png)](https://www.youtube.com/watch?v=0_ZprFX8x0I)
+
+在 [DevTools 104 中](../devtools-guide-chromium/whats-new/2022/08/devtools-104.md)了解 Microsoft Edge DevTools 团队的最新公告的详细信息。
+
+
+<!-- ====================================================================== -->
+## <a name="devtools---whats-new-in-devtools-103"></a>DevTools - DevTools 103 中的新增功能
+
+_发布日期：2022 年 7 月 5 日。_
+
+[![T103 视频中的 DevTools 新增功能的 humbnail 图像](./images/devtools-whatsnew-103.png)](https://www.youtube.com/watch?v=aa0C6BRdaPA)
+
+在 [DevTools 103](../devtools-guide-chromium/whats-new/2022/06/devtools-103.md) 中了解 Microsoft Edge DevTools 团队的最新公告的详细信息。
+
+
+<!-- ====================================================================== -->
 ## <a name="devtools---debug-the-web-in-3d"></a>DevTools - 以 3D 调试 Web
 
 _发布于 2022 年 6 月 21 日。_
 
 [![TDevTools 3D 视图工具视频的 humbnail 图像](./images/3d-view-tool.png)](https://www.youtube.com/watch?v=LVb1Xzzd72w)
 
-Microsoft Edge DevTools 中的 **3D 视图**工具提供要检查的网页的三维表示形式。  使用 **3D 视图** 工具调试常见的 Web 开发问题，例如：
+Microsoft Edge DevTools 中的 **3D 视图** 工具提供要检查的网页的三维表示形式。  使用 **3D 视图** 工具调试常见的 Web 开发问题，例如：
 
 * 深嵌 DOM 节点。
 * 文档外元素。
@@ -64,7 +84,7 @@ Microsoft Edge DevTools 支持 13 种不同的语言。 在此视频中，团队
 
 若要详细了解如何更改 DevTools 语言设置，请查看 [更改 DevTools 语言设置](../devtools-guide-chromium/customize/localization.md)。
 
-若要报告任何翻译错误，请查看[Microsoft Edge DevTools 团队](../devtools-guide-chromium/contact.md)。
+若要报告任何翻译错误，请查看 [Microsoft Edge DevTools 团队](../devtools-guide-chromium/contact.md)。
 
 
 <!-- ====================================================================== -->
@@ -74,7 +94,7 @@ _发布日期：2022 年 6 月 1 日。_
 
 [![T102 视频中的 DevTools 新增功能的 humbnail 图像](./images/devtools-whatsnew-102.png)](https://www.youtube.com/watch?v=JY6DfhSdr_A)
 
-在 [DevTools 102 中的新增](../devtools-guide-chromium/whats-new/2022/05/devtools-102.md)功能中，从 Microsoft Edge DevTools 团队了解有关我们的最新公告的详细信息。
+在 [DevTools 102](../devtools-guide-chromium/whats-new/2022/05/devtools-102.md) 中了解 Microsoft Edge DevTools 团队的最新公告的详细信息。
 
 
 <!-- ====================================================================== -->
@@ -86,7 +106,7 @@ _发布于 2022 年 5 月 31 日。_
 
 样式 `<select>` 元素具有挑战性。 实验 `<selectmenu>` 元素有望通过使 Web 开发人员能够设置元素的所有部分的样式来克服剩余的限制。
 
-若要详细了解样式元素`<select>`和新`<selectmenu>`元素，请参阅博客帖子[真实样式`<select>`元素](https://blogs.windows.com/msedgedev/2022/05/05/styling-select-elements-for-real/)。
+若要了解有关样式元素 `<select>` 和新 `<selectmenu>` 元素的详细信息，请参阅博客文章 [“为真实元素设置样 `<select>` 式](https://blogs.windows.com/msedgedev/2022/05/05/styling-select-elements-for-real/)”。
 
 
 <!-- ====================================================================== -->
@@ -96,15 +116,15 @@ _发布于 2022 年 5 月 20 日。_
 
 [![TDevTools 问题筛选视频的 humbnail 图像](./images/advanced-issues-filtering.png)](https://www.youtube.com/watch?v=_dePgo89bq0)
 
-每个 Web 产品都有问题。 Microsoft Edge DevTools **问题**工具按类型（包括辅助功能、兼容性、性能等）分析当前网页和报告问题。
+每个 Web 产品都有问题。 Microsoft Edge DevTools **问题** 工具分析当前网页，并按类型（包括辅助功能、兼容性、性能等）分组报告问题。
 
-如果已VS Code，则VS Code的 Microsoft Edge DevTools 扩展会直接在源代码中提供问题。
+如果有 VS Code，则 VS Code 的 Microsoft Edge DevTools 扩展会直接在源代码中提供问题。
 
 发布的产品也可能有很多问题。 根据你的反馈，我们添加了有用的方法来筛选问题。 例如，可以禁用来自第三方库的问题，并选择要查看相关问题的浏览器。
 
 若要详细了解“问题”工具，请 [参阅使用“问题”工具查找和解决问题](../devtools-guide-chromium/issues/index.md)。
 
-若要详细了解VS Code的 Microsoft Edge DevTools 扩展，请[参阅 Microsoft Edge Visual Studio Code 的 DevTools 扩展](../visual-studio-code/microsoft-edge-devtools-extension.md)。
+若要详细了解适用于 VS Code 的 Microsoft Edge DevTools 扩展，请参阅[适用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展](../visual-studio-code/microsoft-edge-devtools-extension.md)。
 
 
 <!-- ====================================================================== -->
@@ -116,7 +136,7 @@ _发布于 2022 年 5 月 12 日。_
 
 了解即将推出的 CSS 滚动链接动画功能，以及如何在不使用 JavaScript 的情况下在网页上创建读取进度指示器。
 
-CSS 滚动链接动画是Microsoft Edge中的一项实验性功能。  若要尝试此功能，请转到 `edge://flags` 并启用 **实验性 Web 平台功能** 设置。
+CSS 滚动链接动画是 Microsoft Edge 中的一项实验性功能。  若要尝试此功能，请转到 `edge://flags` 并启用 **实验性 Web 平台功能** 设置。
 
 若要播放视频中显示的演示应用程序，请参阅呈现的 [阅读器演示](https://microsoftedge.github.io/Demos/reader/) 及其 [源代码](https://github.com/MicrosoftEdge/Demos/tree/main/reader)。
 
@@ -124,7 +144,7 @@ CSS 滚动链接动画是Microsoft Edge中的一项实验性功能。  若要尝
 
 
 <!-- ====================================================================== -->
-## <a name="devtools---customizing-microsoft-edge-developer-tools-and-quick-feature-access"></a>DevTools - 自定义Microsoft Edge开发人员工具和快速功能访问
+## <a name="devtools---customizing-microsoft-edge-developer-tools-and-quick-feature-access"></a>DevTools - 自定义 Microsoft Edge 开发人员工具和快速功能访问
 
 _发布于 2022 年 5 月 5 日。_
 
@@ -142,7 +162,7 @@ _发布于 2022 年 4 月 28 日。_
 
 [![T101 视频中的 DevTools 新增功能的 humbnail 图像](./images/devtools-whatsnew-101.png)](https://www.youtube.com/watch?v=kv6Q8a9bsbA)
 
-在 [DevTools 101](../devtools-guide-chromium/whats-new/2022/04/devtools-101.md) 的新增功能中，从 Microsoft Edge DevTools 团队详细了解我们的最新公告。
+在 [DevTools 101](../devtools-guide-chromium/whats-new/2022/04/devtools-101.md) 中了解 Microsoft Edge DevTools 团队的最新公告的详细信息。
 
 
 <!-- ====================================================================== -->
@@ -166,7 +186,7 @@ _发布于 2022 年 4 月 19 日。_
 
 [![T100 视频中的 DevTools 新增功能的 humbnail 图像](./images/devtools-whatsnew-100.png)](https://www.youtube.com/watch?v=aP6d2PIU7hc)
 
-在 [DevTools 100](../devtools-guide-chromium/whats-new/2022/03/devtools-100.md) 中的新增功能上，从 Microsoft Edge DevTools 团队详细了解我们的最新公告。
+在 [DevTools 100 中的新增](../devtools-guide-chromium/whats-new/2022/03/devtools-100.md)功能中，详细了解 Microsoft Edge DevTools 团队的最新公告。
 
 
 <!-- ====================================================================== -->
@@ -176,7 +196,7 @@ _发布于 2022 年 3 月 21 日。_
 
 [![T99 视频中 DevTools 新增功能的 humbnail 图像](./images/devtools-whatsnew-99.png)](https://www.youtube.com/watch?v=Z5-tEE_cNTo)
 
-在 [DevTools 99](../devtools-guide-chromium/whats-new/2022/03/devtools.md) 的新增功能中，从 Microsoft Edge DevTools 团队详细了解我们的最新公告。
+在 [DevTools 99 中](../devtools-guide-chromium/whats-new/2022/03/devtools.md)了解 Microsoft Edge DevTools 团队的最新公告的详细信息。
 
 
 <!-- ====================================================================== -->
@@ -186,7 +206,7 @@ _发布于 2022 年 2 月 23 日。_
 
 [![T98 视频中 DevTools 新增功能的 humbnail 图像](./images/devtools-whatsnew-98.png)](https://www.youtube.com/watch?v=HpaRDwU_AZI)
 
-在 [DevTools 98](../devtools-guide-chromium/whats-new/2022/03/devtools.md) 的新增功能中，从 Microsoft Edge DevTools 团队详细了解我们的最新公告。
+在 [DevTools 98 中的新增](../devtools-guide-chromium/whats-new/2022/03/devtools.md)功能中，详细了解 Microsoft Edge DevTools 团队的最新公告。
 
 
 <!-- ====================================================================== -->
@@ -196,7 +216,7 @@ _发布于 2022 年 2 月 1 日。_
 
 [![T97 视频中 DevTools 新增功能的 humbnail 图像](./images/devtools-whatsnew-97.png)](https://www.youtube.com/watch?v=qbDLtE0a_yQ)
 
-在 [DevTools 97](../devtools-guide-chromium/whats-new/2022/01/devtools.md) 的新增功能中，从 Microsoft Edge DevTools 团队详细了解我们的最新公告。
+在 [DevTools 97 中的新增](../devtools-guide-chromium/whats-new/2022/01/devtools.md)功能中，详细了解 Microsoft Edge DevTools 团队的最新公告。
 
 
 <!-- ====================================================================== -->
@@ -206,11 +226,11 @@ _发布于 2021 年 12 月 9 日。_
 
 [![T96 视频中 DevTools 新增功能的 humbnail 图像](./images/devtools-whatsnew-96.png)](https://www.youtube.com/watch?v=H6dYeoGOIDk)
 
-在 [DevTools 96](../devtools-guide-chromium/whats-new/2021/11/devtools.md) 的新增功能中，从 Microsoft Edge DevTools 团队详细了解我们的最新公告。
+在 [DevTools 96 中的新增](../devtools-guide-chromium/whats-new/2021/11/devtools.md)功能中，详细了解 Microsoft Edge DevTools 团队的最新公告。
 
 
 <!-- ====================================================================== -->
-## <a name="devtools---debug-memory-leaks-with-the-microsoft-edge-detached-elements-tool"></a>DevTools - 使用Microsoft Edge分离的元素工具调试内存泄漏
+## <a name="devtools---debug-memory-leaks-with-the-microsoft-edge-detached-elements-tool"></a>DevTools - 使用 Microsoft Edge 分离元素工具调试内存泄漏
 
 _发布于 2021 年 12 月 9 日。_
 
@@ -219,9 +239,9 @@ _发布于 2021 年 12 月 9 日。_
 我们很高兴在 Microsoft Edge DevTools 中宣布新的分离元素工具，帮助你调查和解决 DOM 内存泄漏。
 
 当应用程序的 JavaScript 代码在内存中保留越来越多的对象，而不是为浏览器释放对象以进行垃圾回收时，会发生内存泄漏。
-我们与Microsoft Teams开发人员一起构建了此工具，它已帮助我们查找并修复了许多自己的网站和应用的内存泄漏。
+我们与 Microsoft Teams 开发人员一起构建了此工具，它已帮助我们查找并修复了许多自己的网站和应用中的内存泄漏。
 
-有关详细信息，请参阅使用[分离元素工具调试 DOM 内存泄漏](../devtools-guide-chromium/memory-problems/dom-leaks.md)，并阅读相应的博客帖子使用[Microsoft Edge分离元素工具调试内存泄漏](https://blogs.windows.com/msedgedev/2021/12/09/debug-memory-leaks-detached-elements-tool-devtools/)。
+有关详细信息，请参阅使用 [分离元素工具调试 DOM 内存泄漏](../devtools-guide-chromium/memory-problems/dom-leaks.md)，并使用 [Microsoft Edge 分离元素工具阅读相应的博客文章“调试内存泄漏](https://blogs.windows.com/msedgedev/2021/12/09/debug-memory-leaks-detached-elements-tool-devtools/)”。
 
 
 <!-- ====================================================================== -->
@@ -231,7 +251,7 @@ _发布于 2021 年 12 月 8 日。_
 
 [![T95 视频中 DevTools 新增功能的 humbnail 图像](./images/devtools-whatsnew-95.png)](https://www.youtube.com/watch?v=JsnW0CU1l80)
 
-在 [DevTools 95](../devtools-guide-chromium/whats-new/2021/10/devtools.md) 中的新增功能中，从 Microsoft Edge DevTools 团队了解有关我们的最新公告的详细信息。
+在 [DevTools 95 中的新增](../devtools-guide-chromium/whats-new/2021/10/devtools.md)功能中，从 Microsoft Edge DevTools 团队了解有关我们最新公告的详细信息。
 
 
 <!-- ====================================================================== -->
@@ -241,7 +261,7 @@ _发布于 2021 年 11 月 22 日。_
 
 [![T眼投影机 API 视频的 humbnail 图像](./images/eyedropper-api.png)](https://www.youtube.com/watch?v=XZUEnUbI7dE)
 
-Microsoft Edge团队与Chromium开源项目合作指定并实施了新的 EyeDropper API。 提供 [有关问题的反馈 - WICG/眼球| github.com](https://github.com/WICG/eyedropper-api/issues)。
+Microsoft Edge 团队与Chromium开源项目协作指定并实施了新的 EyeDropper API。 提供 [有关问题的反馈 - WICG/眼球| github.com](https://github.com/WICG/eyedropper-api/issues)。
 
 许多创造性的应用程序使用户能够从应用窗口的各个部分，甚至从整个屏幕中选择颜色，通常使用眼球隐喻。 通过 EyeDropper API，作者可以在 Web 上构建自定义颜色选取器时使用浏览器提供的眼滴。
 
@@ -255,4 +275,4 @@ _发布于 2021 年 11 月 12 日。_
 
 [![T94 视频中 DevTools 新增功能的 humbnail 图像](./images/devtools-whatsnew-94.png)](https://www.youtube.com/watch?v=S-g1E_W9wQQ)
 
-在 [DevTools 94](../devtools-guide-chromium/whats-new/2021/09/devtools.md) 的新增功能上，从 Microsoft Edge DevTools 团队详细了解我们的最新公告。
+在 [DevTools 94 中的新增](../devtools-guide-chromium/whats-new/2021/09/devtools.md)功能中，详细了解 Microsoft Edge DevTools 团队的最新公告。

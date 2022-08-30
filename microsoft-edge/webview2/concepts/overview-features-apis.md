@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 07/12/2022
-ms.openlocfilehash: bd4c852a8be59a1e51b1265b6011590f92e1f3e2
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.openlocfilehash: c4163df790a48461f78b4fbb0f2c6f10a6f98068
+ms.sourcegitcommit: 1958cc52c3e61705a4872a9f22d5fe414560d5af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668697"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "12730242"
 ---
 # <a name="overview-of-webview2-features-and-apis"></a>WebView2 功能和 API 概述
 
@@ -28,7 +28,7 @@ ms.locfileid: "12668697"
 | [进程管理](#process-management) | 获取有关运行 WebView2 进程、退出进程和失败进程的信息，以便应用可以相应地采取措施。 |
 | [导航到页面并管理已加载的内容](#navigate-to-pages-and-manage-loaded-content) | 管理网页导航和管理网页中加载的内容。 |
 | [iFrames](#iframes) | 将其他网页嵌入到自己的网页中。  检测何时创建嵌入的网页、检测嵌入网页导航的时间，以及选择性地绕过 x 帧选项。 |
-| [Authentication](#authentication) | 应用可以使用 WebView2 控件处理基本身份验证。  _基本身份验证_ 是属于 HTTP 协议的特定身份验证方法。 |
+| [身份验证](#authentication) | 应用可以使用 WebView2 控件处理基本身份验证。  _基本身份验证_ 是属于 HTTP 协议的特定身份验证方法。 |
 | [在非框架应用中呈现 WebView2](#rendering-webview2-in-non-framework-apps) | 如果主机应用不使用 UI 框架，请使用这些 API 设置 WebView2 呈现系统。  此呈现设置控制 WebView2 如何将输出呈现到主机应用，以及 WebView2 如何处理输入、焦点和辅助功能。 |
 | [使用合成呈现 WebView2](#rendering-webview2-using-composition) | 对于基于合成的 WebView2 呈现，请使用 `CoreWebView2Environment` 它来创建一个 `CoreWebView2CompositionController`。  `CoreWebView2CompositionController` 提供与之相同的 API `CoreWebView2Controller`，但也包括用于基于合成的呈现的 API。 |
 | [用户数据](#user-data) | 管理用户数据文件夹 (UDF) （即用户计算机上的文件夹）。  UDF 包含与主机应用和 WebView2 相关的数据。  WebView2 应用使用用户数据文件夹来存储浏览器数据，例如 Cookie、权限和缓存资源。 |
@@ -569,30 +569,6 @@ See also:
 
 ---
 
-
-<!-- ------------------------------ -->
-#### <a name="document-title"></a>文档标题
-
-应用可以检测当前顶级文档的标题何时更改。
-
-##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2.DocumentTitle 属性](/dotnet/api/microsoft.web.webview2.core.corewebview2.documenttitle)
-* [CoreWebView2.DocumentTitleChanged 事件](/dotnet/api/microsoft.web.webview2.core.corewebview2.documenttitlechanged)
-
-##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2.DocumentTitle 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#documenttitle)
-* [CoreWebView2.DocumentTitleChanged 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#documenttitlechanged)
-
-##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2：:D ocumentTitle 属性 (获取) ](/microsoft-edge/webview2/reference/win32/icorewebview2#get_documenttitle)<!--no put-->
-* [ICoreWebView2：:D ocumentTitleChanged 事件 (添加](/microsoft-edge/webview2/reference/win32/icorewebview2#add_documenttitlechanged)， [删除) ](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_documenttitlechanged)
-
----
-
-
 <!-- ------------------------------ -->
 #### <a name="fullscreen"></a>全屏
 
@@ -697,7 +673,6 @@ WebView2 提供用于处理 JavaScript 函数 `window.open()`的功能。
 
 ---
 
-
 <!-- ------------------------------ -->
 #### <a name="close-window"></a>关闭窗口
 
@@ -720,6 +695,49 @@ WebView2 提供用于处理 JavaScript 函数 `window.close()`的功能。
 
 ---
 
+<!-- ------------------------------ -->
+#### <a name="document-title"></a>文档标题
+
+应用可以检测当前顶级文档的标题何时更改。
+
+##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2.DocumentTitle 属性](/dotnet/api/microsoft.web.webview2.core.corewebview2.documenttitle)
+* [CoreWebView2.DocumentTitleChanged 事件](/dotnet/api/microsoft.web.webview2.core.corewebview2.documenttitlechanged)
+
+##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.DocumentTitle 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#documenttitle)
+* [CoreWebView2.DocumentTitleChanged 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#documenttitlechanged)
+
+##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2：:D ocumentTitle 属性 (获取) ](/microsoft-edge/webview2/reference/win32/icorewebview2#get_documenttitle)<!--no put-->
+* [ICoreWebView2：:D ocumentTitleChanged 事件 (添加](/microsoft-edge/webview2/reference/win32/icorewebview2#add_documenttitlechanged)， [删除) ](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_documenttitlechanged)
+
+---
+
+<!-- ------------------------------ -->
+#### <a name="favicon"></a>Favicon 
+
+在 WebView2 中，可以为网站设置 [Favicon](https://developer.mozilla.org/en-US/docs/Glossary/Favicon) ，也可以在网站更改时收到通知。 
+
+##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2.FaviconChanged 事件](/dotnet/api/microsoft.web.webview2.core.corewebview2.faviconchanged)
+* [CoreWebView2.FaviconUri 属性](/dotnet/api/microsoft.web.webview2.core.corewebview2.faviconuri)
+
+##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.FaviconChanged 事件](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#faviconchanged)
+* [CoreWebView2.FaviconUri 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#faviconuri)
+
+##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2_15：：faviconChanged 事件 (添加](/microsoft-edge/webview2/reference/win32/icorewebview2_15#add_faviconchanged)、 [删除) ](/microsoft-edge/webview2/reference/win32/icorewebview2_15#remove_faviconchanged)
+* [ICoreWebView2_15：：FaviconUri 属性 (获取) ](/microsoft-edge/webview2/reference/win32/icorewebview2_15#get_faviconuri)<!--no put-->
+
+----
 
 <!-- ====================================================================== -->
 ## <a name="process-management"></a>进程管理
@@ -1076,7 +1094,7 @@ Embed other webpages into your own webpage.  Detect when embedded webpages are c
 
 
 <!-- ====================================================================== -->
-## <a name="authentication"></a>Authentication
+## <a name="authentication"></a>身份验证
 
 <!-- selling point / value prop: easy configuration of WebView2 apps - support user accounts -->
 

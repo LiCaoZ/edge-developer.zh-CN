@@ -6,16 +6,34 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 11/19/2021
-ms.openlocfilehash: 2d5c545b1c2a2b54a36cc321b2574845efad4dd1
-ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
+ms.openlocfilehash: 9d7023d8e7b7b0f7978034af1670fe3f2bf59cf8
+ms.sourcegitcommit: 7b71b918ab5e41c254579404154164a9f4932200
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "12550820"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "12736812"
 ---
 # <a name="sample-pwas"></a>示例 PWA
 
 使用这些示例渐进式Web 应用 (PVA) 了解如何使用 PVA 的功能和 API。
+
+
+<!-- ====================================================================== -->
+## <a name="pwamp"></a>PWAmp
+
+桌面音乐播放器应用。
+
+[应用](https://microsoftedge.github.io/Demos/pwamp/)、 [源代码和自述文件](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp)。
+
+特征：
+
+*  [窗口控件覆盖](how-to/window-controls-overlay.md)
+*  [协议处理](how-to/handle-protocols.md)
+*  [文件处理](how-to/handle-files.md)
+*  [Web 共享](how-to/share.md#sharing-content)
+*  [共享目标](how-to/share.md#receiving-shared-content)
+
+![PWAmp 应用的屏幕截图，其中显示了播放按钮和歌曲列表。](./media/pwamp.png)
 
 
 <!-- ====================================================================== -->
@@ -35,7 +53,7 @@ ms.locfileid: "12550820"
 
 
 <!-- ====================================================================== -->
-## <a name="devtools-tips"></a>DevTools 使用技巧
+## <a name="devtools-tips"></a>DevTools 提示
 
 显示 DevTools 的提示和技巧列表。
 

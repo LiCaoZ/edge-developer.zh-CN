@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 05/09/2022
-ms.openlocfilehash: 56c24b6929fd6a05c386a7703e6ab468f75e7de0
-ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
+ms.date: 08/02/2022
+ms.openlocfilehash: 161e431bf4fb297697330ae36f4c9a043f248458
+ms.sourcegitcommit: 2a64780c851848c04b0791b5ea1a1543aca2a80a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "12675659"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "12707990"
 ---
 # <a name="call-native-side-winrt-code-from-web-side-code"></a>从 Web 端代码调用本机端 WinRT 代码
 
@@ -311,6 +311,16 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 
    此方法调用 `AddHostObjectToScript`。
 
+   在行 `AddHostObjectToScript("Windows", ...`中， `Windows` 是顶级命名空间。  如果有其他顶级命名空间，可以添加其他调用 `AddHostObjectToScript`，如以下示例所示：
+
+   ```csharp
+   WebView2.CoreWebView2.AddHostObjectToScript("RuntimeComponent1", dispatchAdapter.WrapNamedObject("RuntimeComponent1", dispatchAdapter));
+   ```
+
+   调 `WrapNamedObject` 用为 `RuntimeComponent1` 命名空间创建包装器对象。 调 `AddHostObjectToScript` 用使用名称 `RuntimeComponent1`将包装的对象添加到脚本。
+
+   有关如何使用自定义 WinRT 组件的完整指南，请参阅下面 [的自定义 (第三方) WinRT 组件](#custom-3rd-party-winrt-components)。
+
 1. 在 `MainPage` 构造函数的 `StatusUpdate("Ready");` 行上方添加以下代码：
 
    ```csharp
@@ -349,6 +359,92 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
    ![使用 DevTools 控制台测试从 Web 端代码调用本机代码。](winrt-from-js-images/devtools-console-calling-native-side-code.png)
 
 祝贺你！  你已完成从 JavaScript 代码调用 WinRT 代码的示例演示。
+
+
+<!-- =============================================== -->
+## <a name="custom-3rd-party-winrt-components"></a>自定义 (第三方) WinRT 组件
+
+除了第一方 OS WinRT API 之外，wv2winrt 工具还支持自定义第三方 WinRT 组件。
+
+![使用 wv2winrt 工具的第三方 WinRT 组件](./winrt-from-js-images/wv2winrt-custom-components.png)
+
+若要将自定义 (第三方) WinRT 组件与 wv2winrt 工具配合使用，除了上述步骤外，还执行以下步骤：
+
+1. 将主应用和 WinRTAdapter 项目) 以外的第三个项目 (添加到实现 WinRT 类的 Visual Studio 解决方案。
+
+1. 让 WinRTAdapter 项目“添加引用”到包含 WinRT 类的新第三个项目。
+
+1. 更新属性中的 WinRTAdapter 项目的 Include 筛选器，以包含新类。
+
+1. 添加其他行以 `InitializeWebView2Async` 添加 winrt 类的命名空间：
+
+   `WebView2.CoreWebView2.AddHostObjectToScript("MyCustomNamespace", dispatchAdapter.WrapNamedObject("MyCustomNamespace", dispatchAdapter));`
+
+1. 若要从 Web 轻松调用方法，可选择在脚本中将命名空间同步代理添加为全局对象。  例如：
+
+   `window.MyCustomNamespace = chrome.webview.hostObjects.sync.MyCustomNamespace;`
+
+有关此示例，请参阅以下 WebView2 示例：
+
+* [uwp-wv2winrt-custom-csharp-winrt](https://github.com/MicrosoftEdge/WebView2Samples/compare/uwp-wv2winrt-custom-csharp-winrt) - 作为分支的示例。
+
+
+<!-- =============================================== -->
+## <a name="asynchronous-winrt-methods"></a>异步 WinRT 方法
+
+按照上述指南中的步骤操作，应能够使用同步代理。 对于异步方法调用，需要使用 `chrome.webview.hostObjects.options.forceAsyncMethodMatches`。
+
+该 `forceAsyncMethodMatches` 属性是正则表达式的数组，如果任何正则表达式与同步代理上的方法名称匹配，则该方法将改为异步运行。 将此设置为 `[/Async$/]` 使其与以后缀 `Async`结尾的任何方法匹配。  然后，匹配方法调用的工作方式就像异步代理上的方法一样，并返回可以等待的承诺。
+
+示例：
+
+```javascript
+const Windows = chrome.webview.hostObjects.sync.Windows;
+chrome.webview.hostObjects.options.forceAsyncMethodMatches = [/Async$/];
+
+let result = await Windows.System.Launcher.launchUriAsync(new Windows.Foundation.Uri('https://contoso.com/'));
+```
+
+有关详细信息，请参阅 `forceAsyncMethodMatches` [CoreWebView2.AddHostObjectToScript 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript)中的行。
+
+
+<!-- ====================================================================== -->
+
+## <a name="subscribing-to-winrt-events"></a>订阅 WinRT 事件
+
+WinRT 事件也通过脚本代理公开。 可以使用和方法`addEventListener(string eventName, function handler)``removeEventListener(string eventName, function handler)`添加和删除实例 WinRT 事件和静态 WinRT 事件的事件处理程序。 
+
+这些方法的工作方式与同名的 DOM 方法类似。 使用要作为第一个参数订阅的 WinRT 事件的字符串名称进行调用 `addEventListener` ，并在引发事件时调用函数回调。 使用相同的参数调用 `removeEventListener` 会取消订阅该事件。 例如：
+
+```javascript
+const Windows = chrome.webview.hostObjects.sync.Windows;
+const coreApplication = Windows.ApplicationModel.Core.CoreApplication;
+const coreApplicationView = coreApplication.getCurrentView();
+const titleBar = coreApplicationView.titleBar;
+titleBar.addEventListener('IsVisibleChanged', () => {
+    console.log('titlebar visibility changed to: ' + titleBar.isVisible);
+});
+```
+
+对于提供事件参数的 WinRT 事件，这些参数作为事件处理程序函数的第一个参数提供。 例如， `Windows.Foundation.Collections.PropertySet.MapChanged` 事件具有 `IMapChangedEventArgs<string, object>` 事件 arg 对象，该对象作为回调的参数提供。
+
+```javascript
+const Windows = chrome.webview.hostObjects.sync.Windows;
+const propertySet = new Windows.Foundation.Collections.PropertySet();
+propertySet.addEventListener('MapChanged', eventArgs => {
+    const key = eventArgs.key;
+    const collectionChange = eventArgs.collectionChange;
+    // ...
+});
+```
+
+事件 args 对象还将具有以下属性：
+
+| 属性名称 | 描述 |
+| --- | --- |
+| `target` | 引发事件的对象 |
+| `type` | 事件的字符串名称 |
+| `detail` | 提供给 WinRT 委托的所有参数的数组 |
 
 
 <!-- ====================================================================== -->
