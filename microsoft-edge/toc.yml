@@ -270,7 +270,7 @@
                   displayName: Coverage tool
             - name: CSS 概述工具
               items:
-                - name: 确定可进行的 CSS 改进
+                - name: 使用 CSS 概述工具优化 CSS 样式
                   href: devtools-guide-chromium/css/css-overview-tool.md
                   displayName: CSS Overview tool
             - name: 分离的元素工具
