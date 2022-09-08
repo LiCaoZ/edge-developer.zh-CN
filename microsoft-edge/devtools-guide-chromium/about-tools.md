@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/02/2022
-ms.openlocfilehash: cca1f3d749ed6071be98b8abbee79803e198ee12
-ms.sourcegitcommit: 83d9ab6020896e397154672eae9089dba15f4bda
-ms.translationtype: HT
+ms.openlocfilehash: ca7727fdf9ab00c6d7beeca23340657bc95752c9
+ms.sourcegitcommit: f5f3e4febdef33e036f0c6946eab0f419d50d28d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "12593587"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "12746529"
 ---
 # <a name="about-the-list-of-tools"></a>关于工具列表
 
@@ -50,9 +50,9 @@ Microsoft Edge DevTools 包括以下工具。
 | **CSS 概述**工具 | 帮助你更好地了解页面的 CSS 并确定潜在的改进。 | [CSS 概述工具](css/css-overview-tool.md) |
 | **分离的元素**工具 | 为了提高页面的性能，此工具会查找浏览器无法垃圾回收的分离元素，并标识仍在引用分离元素的 JavaScript 对象。  通过将 JavaScript 更改为释放元素，可以减少页面上分离的元素数，从而提高页面性能和响应能力。 | [使用分离的元素工具调试 DOM 内存泄漏](memory-problems/dom-leaks.md) |
 | **开发人员资源** | 显示网页的资源 URL。 | [开发人员资源工具](developer-resources/developer-resources.md) |
-| **设备仿真** | 使用**设备仿真**工具（有时称为“_设备模式_”）来大致了解页面在移动设备上的外观和响应方式。 | [模拟移动设备（设备仿真）](device-mode/index.md) |
+| **设备仿真** | 使用 **设备仿真** 工具（也称为 _设备模拟模式_ 或 _设备模式）_ 来大致了解页面在移动设备上的外观和响应方式。 | [模拟移动设备（设备仿真）](device-mode/index.md) |
 | **元素**工具 | 检查、编辑、调试 HTML 和 CSS。  可以在浏览器中实时显示更改时在工具中进行编辑。  使用 DOM 树调试 HTML，并检查和处理网页的 CSS。 | [使用 Elements 工具检查、编辑和调试 HTML 和 CSS](elements-tool/elements-tool.md) |
-| **检查**工具 | 使用**检查**工具查看呈现的网页中的项的相关信息。  当**检查**工具处于活动状态时，可将鼠标_悬浮_在网页中的项上，DevTools 会在网页上添加信息覆盖信息和网格突出显示。 | [使用检查工具分析页面](css/inspect.md) |
+| **检查**工具 | 使用**检查**工具查看呈现的网页中的项的相关信息。  当 **“检查** ”工具处于活动状态时，将 _鼠标悬停在_ 网页中的项上，DevTools 会在网页上添加信息覆盖和网格突出显示。 | [使用检查工具分析页面](css/inspect.md) |
 | **问题** 工具 | **问题**工具会自动分析当前网页，按类型报告问题，并提供关于解释和解决问题的文档。 | [使用问题工具查找和修复问题](issues/index.md) |
 | **JavaScript 探查器**工具 | 此工具已被替换为**性能**工具和**内存**工具。 | [JavaScript 探查器工具](javascript-profiler/javascript-profiler-tool.md) |
 | **Lighthouse** 工具 | 使用 Lighthouse 工具识别和修复影响网站性能、辅助功能和用户体验的常见问题。 | [Lighthouse 工具](lighthouse/lighthouse-tool.md) |

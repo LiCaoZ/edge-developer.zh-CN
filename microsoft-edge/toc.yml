@@ -17,6 +17,9 @@
             - name: Microsoft Edge DevTools 中的新增功能
               href: devtools-guide-chromium/whats-new/whats-new.md
               displayName: null
+            - name: Microsoft Edge 105
+              href: devtools-guide-chromium/whats-new/2022/09/devtools-105.md
+              displayName: 'what''s new, announcements, release notes'
             - name: Microsoft Edge 104
               href: devtools-guide-chromium/whats-new/2022/08/devtools-104.md
               displayName: 'what''s new, announcements, release notes'
@@ -113,7 +116,7 @@
               items:
                 - name: 模拟移动设备（设备仿真）
                   href: devtools-guide-chromium/device-mode/index.md
-                  displayName: 'Device Emulation, Device Emulator, Device Mode'
+                  displayName: 'device emulator, device mode, device simulation, device simulator'
                 - name: 模拟双屏幕和可折叠设备
                   href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
                   displayName: 'Device Emulation, Device Emulator, Device Mode'

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2022
-ms.openlocfilehash: 300bc5487481691154860004d4d596b8408f9c99
-ms.sourcegitcommit: 61d541b18043bdc4b2a6d65d6eb7422d54da2c2f
+ms.date: 08/31/2022
+ms.openlocfilehash: db43523387703edf2068e8962cdfa7b3939ff17f
+ms.sourcegitcommit: f5f3e4febdef33e036f0c6946eab0f419d50d28d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "12639915"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "12746508"
 ---
 # <a name="manage-user-data-folders"></a>管理用户数据文件夹
 <!-- # old title: Manage the user data folder -->
@@ -25,14 +25,22 @@ UDF)  (用户数据文件夹是存储在用户计算机上的文件夹，其中�
 | 术语 | 定义 |
 |---|---|
 | _用户数据文件夹_ | WebView2 创建的用于存储浏览器数据的文件夹，例如 Cookie、权限和缓存资源。 |
-| _UDF_ | 用户数据文件夹。 |
+| _Udf_ | 用户数据文件夹。 |
 | _UDF 位置_ | 用户数据文件夹的目录路径。 |
 | _默认 UDF 位置_ | 用户数据文件夹的默认目录路径。  如果未指定自定义 UDF 位置，则 WebView2 将在其中创建 UDF 的目录路径。 |
 | _自定义 UDF 位置_ | 用户数据文件夹的自定义位置。  WebView2 主机应用指定 WebView2 将创建用户数据文件夹的位置的目录路径。 |
 
 WebView2 在平台的默认位置或主机应用显式指定的自定义 UDF 位置中创建 UDF。
 
-默认情况下，WebView2 在特定平台的默认位置创建 UDF。  这适用于某些平台，但不适用于其他平台。  如果应用有特定需求，可以指定自定义 UDF 位置。  确保指定的自定义 UDF 位置对 WebView2 应用运行时具有适当的读/写权限。
+默认情况下，WebView2 在特定平台的默认位置创建 UDF。  这适用于某些平台，但不适用于其他平台。  如果应用有特定需求，可以指定自定义 UDF 位置。
+
+#### <a name="suitable-custom-udf-locations"></a>合适的自定义 UDF 位置
+
+如果指定自定义 UDF 位置，它应满足以下要求：
+
+* 自定义 UDF 位置必须具有相应的 WebView2 应用运行时的读/写权限。
+
+* 避免在网络驱动器上存储用户设置。 这可能会导致数据减速、崩溃或丢失。
 
 
 <!-- ====================================================================== -->
@@ -184,7 +192,7 @@ ClickOnce 应用通常包含 .NET 应用。
 <!-- ====================================================================== -->
 <!-- default UDF location -->
 
-# [<a name="winui-2-uwp"></a>WinUI 2 (UWP) ](#tab/uwp)
+# [<a name="winui-2-uwp"></a>WinUI 2 (UWP)](#tab/uwp)
 
 <!--
 **What is the default UDF location?**
@@ -381,7 +389,7 @@ _task = CoreWebView2Environment.CreateAsync(BrowserExecutableFolder,
 <!-- ====================================================================== -->
 <!-- custom UDF location -->
 
-# [<a name="winui-2-uwp"></a>WinUI 2 (UWP) ](#tab/uwp)
+# [<a name="winui-2-uwp"></a>WinUI 2 (UWP)](#tab/uwp)
 
 <!--
 **Should you use default or custom UDF location?**
@@ -497,7 +505,7 @@ environment7->get_UserDataFolder(&userDataFolder);
 <!-- ====================================================================== -->
 <!-- retrieving UDF location -->
 
-# [<a name="winui-2-uwp"></a>WinUI 2 (UWP) ](#tab/uwp)
+# [<a name="winui-2-uwp"></a>WinUI 2 (UWP)](#tab/uwp)
 
 使用 WinRT [CoreWebView2Environment.UserDataFolder 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#userdatafolder)。
 

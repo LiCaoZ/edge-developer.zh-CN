@@ -2,17 +2,18 @@
 title: Microsoft Edge 开发人员文档
 summary: 使用 Microsoft Edge DevTools、Microsoft Edge 扩展、渐进式Web 应用、WebDriver 自动化、WebView2 等进行开发。
 metadata:
-  ms.service: websites
+  ms.service: app-service#Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
   ms.date: 09/02/2021
-  ms.openlocfilehash: 330706d43369472cb81bb3710ec960ab96fb58d5
-  ms.sourcegitcommit: 4e2422123f89fd168dedd9722af8a3281b0f3128
+  ms.subservice: web-apps
+  ms.openlocfilehash: f5964ffec639c5ded24abbfb1d6e76bfed0292af
+  ms.sourcegitcommit: f5f3e4febdef33e036f0c6946eab0f419d50d28d
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/26/2022
-  ms.locfileid: "12682687"
+  ms.lasthandoff: 09/08/2022
+  ms.locfileid: "12746487"
 landingContent:
 - title: Microsoft Edge 开发工具
   linkLists:
