@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 01/07/2021
-ms.openlocfilehash: aee1b52a559ea898f30d93c7cec51a87951c917a
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.openlocfilehash: 0c5db8d4c2a0783a7ac2c3f8a0e1a824194ccb23
+ms.sourcegitcommit: 77a812ec441451b8ae50c2a95782701e08af73c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668886"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "12746782"
 ---
 # <a name="webview2-roadmap"></a>WebView2 路线图
 
@@ -24,7 +24,6 @@ WebView2 正在积极开发中，根据市场变化和客户反馈，路线图�
 
 WebView2 团队正在规划未来更新的以下主要工作：
 
-* UWP 预览版
 * MacOS 预览版
 * Xbox 预览版
 * HoloLens 预览版
@@ -56,6 +55,10 @@ Win32 C/C++ SDK 已到达 GA。
 
 .NET SDK 已到达 GA。
 
+### <a name="windows-ui-library-2"></a>Windows UI 库 2
+
+可以使用 [Windows UI 库 2 (WinUI 2) ](get-started/winui2.md)访问 UWP 应用程序中的 WebView2 控件。 这已经到达了正式大会。
+
 ### <a name="windows-ui-library-3"></a>Windows UI 库 3
 
-可以将 [Windows UI 库 3 (WinUI 3) 与Windows 应用 SDK](/uwp/toolkits/winui3/index)一起访问应用程序中的 WebView2 控件。  目前为预览版。 有关详细信息，请参阅[Windows 应用 SDK路线图](https://github.com/microsoft/WindowsAppSDK/blob/main/docs/roadmap.md)。
+可以将 [Windows UI 库 3 (WinUI 3) 与Windows 应用 SDK](/uwp/toolkits/winui3/index)一起访问应用程序中的 WebView2 控件。  这已经到达了正式大会。
