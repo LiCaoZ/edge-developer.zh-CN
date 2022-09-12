@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/24/2022
-ms.openlocfilehash: cb3e3c95f20c999d67a29c3cc3d4ee76e2f54687
-ms.sourcegitcommit: 7b71b918ab5e41c254579404154164a9f4932200
+ms.openlocfilehash: 7996f63d6310c1df0f4c5ac860f312b9d9ddbd09
+ms.sourcegitcommit: e8815a92ac0c11ca3cab689dd128db6ee65ea1e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2022
-ms.locfileid: "12736829"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "12747448"
 ---
 # <a name="videos-about-web-development-with-microsoft-edge"></a>有关使用 Microsoft Edge 进行 Web 开发的视频
 
@@ -33,6 +33,28 @@ To add a new video:
 - Add a markdown image below the date, with the thumbnail you added before, and link this image tag to the YouTube video.
 - Place the description below that, fixing any links that came from YouTube and that might have been shortened.
 -->
+
+
+<!-- ====================================================================== -->
+## <a name="devtools---whats-new-in-devtools-105"></a>DevTools - DevTools 105 中的新增功能
+
+_发布于 2022 年 9 月 6 日。_
+
+[![T105 视频中的 DevTools 新增功能的 humbnail 图像](./images/devtools-whatsnew-105.png)](https://www.youtube.com/watch?v=h0XJH_iLoUk)
+
+在 [DevTools 105](../devtools-guide-chromium/whats-new/2022/09/devtools-105.md) 中了解 Microsoft Edge DevTools 团队的最新公告的详细信息。
+
+
+<!-- ====================================================================== -->
+## <a name="devtools---understand-the-devtools-user-interface"></a>DevTools - 了解 DevTools 用户界面
+
+_发布于 2022 年 9 月 1 日。_
+
+[![T了解 DevTools UI 视频的 humbnail 图像](./images/learn-devtools-ui.png)](https://www.youtube.com/watch?v=ayemJLeE55c)
+
+了解如何组织 Microsoft Edge DevTools UI。 如果你对可用的工具以及 DevTools 接口的主要部分执行哪些操作感到困惑，则此视频将帮助你获得更舒适的功能。
+
+在本视频中，我们将查看 UI 结构及其主工具栏和面板及其抽屉区域。 我们还介绍如何查找、打开和关闭工具、还原默认设置以及查看可用工具列表。
 
 
 <!-- ====================================================================== -->

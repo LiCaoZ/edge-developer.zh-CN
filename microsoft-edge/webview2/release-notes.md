@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 08/09/2022
-ms.openlocfilehash: 902c34c29b794c67d8d336ddea4ccbf1da39ddfe
-ms.sourcegitcommit: 783366bcf61399859594a5bedd7563b6a8ab09f3
+ms.date: 09/09/2022
+ms.openlocfilehash: 3c432ed390447f23b2edc19d11f94b06b95f82cd
+ms.sourcegitcommit: 8af7cd902e6410799c02d5ddf295b9ea070bd74a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "12699402"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "12747481"
 ---
 # <a name="release-notes-for-the-webview2-sdk"></a>WebView2 SDK 发行说明
 
@@ -40,6 +40,72 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 
 <!-- ====================================================================== -->
+## <a name="10134322"></a>1.0.1343.22
+
+发布日期：2022 年 9 月 6 日
+
+[适用于 WebView2 SDK 1.0.1343.22 的 NuGet 包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1343.22)
+
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 WebView2 运行时版本 105.0.1343.22 或更高版本。
+
+<!-- ====================================================================== -->
+## <a name="101369-prerelease"></a>1.0.1369-prerelease
+
+发布日期：2022 年 9 月 6 日
+
+[适用于 WebView2 SDK 1.0.1369-prerelease 的 NuGet 包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1369-prerelease)
+
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 Microsoft Edge 版本 106.0.1369.0 或更高版本。 
+
+### <a name="general"></a>概要
+
+#### <a name="promotions"></a>促销
+
+以下项现在稳定：
+
+*  拖放 API： 
+   * `DragEnter`
+   * `DragLeave`
+   * `DragOver`
+   * `Drop`
+
+##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2CompositionController.DragLeave 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.dragleave?view=webview2-dotnet-1.0.1369-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2compositioncontroller-dragleave)
+
+
+
+##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2CompositionController.DragLeave 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.1369-prerelease&preserve-view=true#dragleave)
+
+
+
+##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2CompositionController3.DragEnter 方法](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#dragenter)
+* [ICoreWebView2CompositionController3.DragLeave 方法](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#dragleave)
+* [ICoreWebView2CompositionController3.DragOver 方法](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#dragover)
+* [ICoreWebView2CompositionController3.Drop 方法](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#drop)
+
+
+---
+
+#### <a name="bug-fixes"></a>Bug 修复
+
+*   修复了关闭具有 WebView2 的窗口时 WPF 应用会崩溃的 bug。  ([问题 #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640)) 
+
+*   修复了在运行时)  (同时生成 WebView 创建失败的 bug。 [问题 #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703)
+
+
+*   修复了打印设置纸张大小以支持小于 0.01 英寸的尺寸 (运行时) 。  
+
+* 修复了 WebView2 打印对话框每次将 **“缩** 放”设置重置 **为适合可打印区域** 的 bug。  ([问题 #2523](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2523)) 
+
+*   修复了 **wv2winrt** 工具中的 bug，其中某些项目中未引用 WinMD 文件。
+
+<!-- ====================================================================== -->
+
 ## <a name="10129344"></a>1.0.1293.44
 
 发布日期：2022 年 8 月 8 日
@@ -141,7 +207,7 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 *   修复了服务辅助角色缓存中路径过长的问题。  ([问题 #1900](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1900))   
 
-*   改进了将 wv2winrt `IMap` 和 `IMapView` 投影转换为 JavaScript 的性能。
+*   改进了 **将 wv2winrt** `IMap` 和 `IMapView` 投影转换为 JavaScript 的性能。
 
 *   添加对用作 WebView2 父窗口的HWND_MESSAGE的支持，以支持无头方案。   ([问题 #202](https://github.com/MicrosoftEdge/WebView2Feedback/issues/202)) 
 
