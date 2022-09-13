@@ -5,13 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
-ms.openlocfilehash: 0cd3847893ecb86257af1a095f27a76ff78babc5
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.date: 09/08/2022
+ms.openlocfilehash: c01f6f0383e152b6055889a9818151b536e84018
+ms.sourcegitcommit: b04ee1e1cf86cb9ad732bc242a8cd23a9112c31f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630464"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "12752714"
 ---
 <!-- Copyright Kayce Basques
 
@@ -117,6 +117,41 @@ ms.locfileid: "12630464"
 ## <a name="customize-keyboard-shortcuts"></a>自定义键盘快捷方式
 
 请参阅 [自定义键盘快捷方式](../customize/shortcuts.md)。
+
+
+<!-- ====================================================================== -->
+## <a name="videos-about-customizing-the-devtools-ui"></a>有关自定义 DevTools UI 的视频
+
+
+#### <a name="customizing-microsoft-edge-developer-tools-and-quick-feature-access"></a>自定义 Microsoft Edge 开发人员工具和快速功能访问
+
+_发布于 2022 年 5 月 5 日。_
+
+[![TDevTools 自定义视频的 humbnail 图像](./index-images/customize-devtools.png)](https://www.youtube.com/watch?v=ypRzEBYNptQ)
+
+了解如何根据需要自定义 DevTools。
+
+此视频介绍如何停靠或撤换 DevTools、打开新工具以及关闭不需要的工具。 它介绍如何在底部抽屉中移动工具并自定义文本大小和主题。 该视频还介绍了如何使用命令菜单键盘快捷方式快速自定义 DevTools。
+
+
+#### <a name="understand-the-devtools-user-interface"></a>了解 DevTools 用户界面
+
+_发布于 2022 年 9 月 1 日。_
+
+[![T了解 DevTools UI 视频的 humbnail 图像](./index-images/learn-devtools-ui.png)](https://www.youtube.com/watch?v=ayemJLeE55c)
+
+了解如何组织 Microsoft Edge DevTools UI。 如果你对可用的工具以及 DevTools 接口的主要部分执行哪些操作感到困惑，则此视频将帮助你获得更舒适的功能。
+
+在本视频中，我们将查看 UI 结构及其主工具栏和面板及其抽屉区域。 我们还介绍如何查找、打开和关闭工具、还原默认设置以及查看可用工具列表。
+
+<!-- additional text, from Welcome panel, which includes 'customize': -->
+
+请查看此视频，了解 DevTools UI 的主要部分、如何自定义它以满足你的需求、了解可用的不同工具以及在何处寻求帮助。
+
+
+#### <a name="see-also"></a>另请参阅
+
+* [有关使用 Microsoft Edge 进行 Web 开发的视频](../../dev-videos/index.md)
 
 
 <!-- ====================================================================== -->

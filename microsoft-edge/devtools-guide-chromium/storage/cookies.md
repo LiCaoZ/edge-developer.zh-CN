@@ -5,13 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
-ms.openlocfilehash: 46ddb536a2b0bd199a712fd8ce4735a64d3c33c1
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.date: 09/09/2022
+ms.openlocfilehash: 5f84ce0e45537853f3a30b944603c8388624e122
+ms.sourcegitcommit: b04ee1e1cf86cb9ad732bc242a8cd23a9112c31f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12631474"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "12752652"
 ---
 <!-- Copyright Kayce Basques
 
@@ -36,16 +36,15 @@ _HTTP Cookie_ 主要用于管理用户会话、存储用户个性化首选项和
 <!-- ====================================================================== -->
 ## <a name="open-the-cookies-pane"></a>打开“Cookie”窗格
 
-1. [打开 DevTools](/microsoft-edge/devtools-guide-chromium/open)。
+1. 在要编辑的网页上打开 DevTools。  例如，右键单击页面，然后选择 **“检查**”或“按下 `F12`”。  有关其他方法，请参阅 [Open DevTools](/microsoft-edge/devtools-guide-chromium/open)。
 
-1. 选择“**应用程序**”选项卡以打开“**应用程序**”面板。  **Manifest**窗格随即打开：
+2. 单击“ **应用程序** ”选项卡打开“ **应用程序** ”工具。 **Manifest**窗格随即打开：
 
-   ![清单窗格。](../media/storage-application-manifest-empty.msft.png)
+   ![清单窗格](cookies-images/pick-application-no-manifest.png)
 
-1. 在“**存储**“下，展开 “**Cookie**”，然后选择一个源:
+3. 在“**存储**“下，展开 “**Cookie**”，然后选择一个源:
 
-   ![Cookie 窗格。](../media/storage-application-storage-cookies-selected.msft.png)
-
+   ![“Cookie”窗格](cookies-images/open-cookies-select-source.png)
 
 <!-- ====================================================================== -->
 ## <a name="fields"></a>字段
@@ -64,13 +63,17 @@ _HTTP Cookie_ 主要用于管理用户会话、存储用户个性化首选项和
 
 *  **大小**。  Cookie 的大小（以字节为单位）。
 
-*  **HTTP**。  如果为 true，则此字段指示 Cookie 只应通过 HTTP 使用，不允许修改 JavaScript。  请参阅 [HttpOnly Cookie](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies)。
+*  **HttpOnly**。  如果 `true`此字段指示 Cookie 仅应通过 HTTP 使用，并且不允许使用 JavaScript 修改。  请参阅 [HttpOnly Cookie](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies)。
 
-*  **安全**。  如果为 true，则此字段指示必须通过安全的 HTTPS 连接将 Cookie 发送到服务器。  请参阅[安全 Cookie](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies)。
+*  **安全**。  如果 `true`，此字段指示 Cookie 必须仅通过安全的 HTTPS 连接发送到服务器。  请参阅[安全 Cookie](https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies)。
 
 *  **SameSite**。  包含 `strict`，当 Cookie 使用实验性 [Samesite](https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies) 属性时包含 `lax`。
 
-*  **优先级**。  包含 `low`、`medium` \(default\)，当 Cookie 使用已弃用的 [Cookie Priority](https://bugs.chromium.org/p/chromium/issues/detail?id=232693) 属性时包含 `high`。
+*  **SameParty**。 此属性为 Web 开发人员提供了一种对允许在同一方跨站点上下文中设置或发送的 Cookie 进行批注的方法。 
+
+*  **分区键**。 _分区键_是文档中的属性或路径，可用于在文档中分发数据，但将数据存储在一起。 分布在文档中且具有相同分区键值的多个数据片段在逻辑上分组在一起并存储在同一物理分区中。
+
+*  **优先级**。  包含 `low`、 `medium` (默认) 或 `high` Cookie 是否使用已弃用的 [Cookie Priority](https://bugs.chromium.org/p/chromium/issues/detail?id=232693) 属性。
 
 
 <!-- ====================================================================== -->
@@ -78,29 +81,28 @@ _HTTP Cookie_ 主要用于管理用户会话、存储用户个性化首选项和
 
 使用“**筛选器**”文本框按**名称**或**值**筛选 Cookie:
 
-![筛选出不包含文本 ID 的任何 Cookie。](../media/storage-application-storage-cookies-filter-id.msft.png)
+![筛选出不包含文本 ID 的任何 Cookie](cookies-images/filter-cookies-name.png)
 
-不支持按其他字段进行筛选。
-
+**注意：** 不支持按其他字段进行筛选。
 
 <!-- ====================================================================== -->
 ## <a name="edit-a-cookie"></a>编辑 Cookie
 
 **名称**、**值**、**域**、**路径**和**过期日期/最长期限**字段是可编辑的。  双击字段进行编辑：
 
-![将 Cookie 的名称设置为"DEVTOOLS！"](../media/storage-application-storage-cookies-rename.msft.png)
-
+![将 Cookie 的名称设置为"DEVTOOLS！"](cookies-images/rename-cookie.png)
 
 <!-- ====================================================================== -->
 ## <a name="delete-cookies"></a>删除 Cookie
 
-若要删除特定 Cookie，请单击 Cookie，然后单击" **删除已选中** "（!["已选中删除"。](../media/delete-icon.msft.png)）：
+若要删除特定 Cookie，请单击 Cookie，然后单击“ **删除选定** (![删除所选](cookies-images/delete-cookie-icon.png)) ：
 
-![正在删除特定 Cookie。](../media/storage-application-storage-cookies-delete-selected.msft.png)
+![正在删除特定 Cookie。](cookies-images/delete-selected-cookie.png)
 
-选择“**清除所有** (![清除所有](../media/clear-icon.msft.png)\)” 来删除所有 Cookie：
+若要删除所有 Cookie，请单击 **“清除所有 Cookie** (![清除所有 Cookie 图标](cookies-images/clear-all-cookies-icon.png)) ：
 
-![正在清除所有 Cookie。](../media/storage-application-storage-cookies-clear-all.msft.png)
+![清除所有 Cookie](cookies-images/clear-all-cookies.png)
+
 
 
 <!-- ====================================================================== -->

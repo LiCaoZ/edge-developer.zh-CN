@@ -5,13 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 07/07/2022
-ms.openlocfilehash: b03bbf6ae159e1dd50ecb1269dd9b6f4b84c91bd
-ms.sourcegitcommit: 9cc13dd2d0e0360013a127b8e39b09e535b08f1b
+ms.date: 09/07/2022
+ms.openlocfilehash: e58230abd4fc609379e451dee6f6fee8c63e9acc
+ms.sourcegitcommit: b04ee1e1cf86cb9ad732bc242a8cd23a9112c31f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2022
-ms.locfileid: "12636302"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "12752736"
 ---
 # <a name="microsoft-edge-devtools-extension-for-visual-studio-code"></a>用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展
 
@@ -78,6 +78,32 @@ CSS mirror editing (lowercased in UI, initcapped at gh)
 编辑代码时会实时评估问题。  键入时，你将获得有关找到的任何问题以及如何解决这些问题的反馈：
 
 ![在输出元素上解释的可能问题](microsoft-edge-devtools-extension-images/live-issue-reporting.png)
+
+
+#### <a name="automated-quick-fixes-and-issue-filtering"></a>自动快速修复和问题筛选
+
+<!--
+bold "Quick Fix" when focusing on the UI
+the UI label string is "Quick Fix", not "Quick Fixes"
+-->
+
+适用于Visual Studio Code的 Microsoft Edge DevTools 扩展包括**快速修复**功能。  通过使用快速修复，可以自定义扩展的错误报告以满足当前项目的需求。
+
+将鼠标悬停在有问题的元素上时，会收到一个灯泡图标，指示有可用的快速修复：
+
+![一个定位点元素，其特定于协议的 href 属性突出显示为问题，由上面的波浪下划线和灯泡图标显示](microsoft-edge-devtools-extension-images/light-bulb.png)
+
+单击灯泡图标会显示选项列表。 例如，如果添加了具有协议相对 URL 的链接，则可从以下 **快速修复** 列表中进行选择：
+
+![在定位点元素旁边打开的“快速修复”面板出现错误，提供多个快速修复选项](microsoft-edge-devtools-extension-images/quick-fix-options.png)
+
+可以选择要使用哪种 **快速修复** 来解决问题或停止将其报告为问题：
+
+* **修复了“no-protocol-relative-urls”问题** - 将缺少的 URL 前缀 `https://` 添加到链接。
+
+* **在此项目中禁用“no-protocol-relative-url”提示** - 在项目文件夹中创建 `.hintrc` 配置文件，并告知扩展不再报告此问题。
+
+* **编辑此项目的 .hintrc** - 打开 `.hintrc` 配置文件，以便可以对其进行编辑以自定义扩展的错误报告。
 
 
 <!-- ====================================================================== -->
