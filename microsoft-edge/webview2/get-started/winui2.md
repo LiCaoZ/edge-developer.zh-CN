@@ -7,20 +7,23 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 07/14/2022
-ms.openlocfilehash: 019a9e7d72defc1d7f3c459f60dafefb1cf99510
-ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
+ms.openlocfilehash: dff2a71b41f2f8aa67395f27b9ec1e1cdadfdb7c
+ms.sourcegitcommit: ff01ae09a41be04a53ca8ee918bbf5fb999543c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "12675589"
+ms.lasthandoff: 09/17/2022
+ms.locfileid: "12754831"
 ---
 # <a name="get-started-with-webview2-in-winui-2-uwp-apps"></a>WinUI 2 (UWP) 应用中的 WebView2 入门
 
 在本教程中，你：
 *  设置用于创建使用 WebView2 显示 Web 内容的 UWP 应用的开发工具。
 *  创建初始 WinUI 2 (UWP) 应用。
+*  为项目安装 **Microsoft.UI.Xaml** 包 (WinUI 2) 。
 *  添加显示网页内容的 WebView2 控件。
 *  了解一路上的 WebView2 概念。
+
+使用 **C# 空白应用 (通用 Windows) ** 项目模板，然后为此项目安装 **Microsoft.UI.Xaml** 包 (WinUI 2) 。  安装该包会将 **Microsoft.Web.WebView2** 包安装 (WebView2 SDK) 作为依赖项。
 
 **Microsoft.UI.Xaml** (WinUI 2) 包是 Windows UI 库的一部分。  此包提供 Windows UI 功能，包括：
 *  UWP XAML 控件。
@@ -29,9 +32,17 @@ ms.locfileid: "12675589"
 
 WinUI 2 仅支持 UWP。  这些控件是向后兼容的。
 
-按照以下顺序执行主要步骤部分。
 
-<!-- skip h3 -->
+#### <a name="completed-project"></a>已完成的项目
+
+与其他一些教程不同，WebView2Samples 存储库中没有此入门教程的完整版本。
+<!-- A completed version of this tutorial project is available in the **WebView2Samples** repo:
+*  Sample name: **__**
+*  Repo directory: [__](__)
+*  Solution file: **__.sln**
+-->
+
+按照以下顺序执行主要步骤部分。
 
 
 <!-- ====================================================================== -->
@@ -52,15 +63,15 @@ WinUI 2 仅支持 UWP。  这些控件是向后兼容的。
 
 1. 打开 Microsoft Visual Studio。  将显示“打开选项”窗口：
 
-   ![Visual Studio 2022 打开选项窗口。](media/winui2-vs2022-opening-option-window.png)
+   ![Visual Studio 2022 打开选项窗口](media/winui2-vs2022-opening-option-window.png)
 
 1. 在右下角，单击 **“继续”，不带代码**。  Visual Studio 打开，为空：
 
-   ![Visual Studio 2022 为空。](media/winui2-visual-studio-2022-empty.png)
+   ![Visual Studio 2022 空](media/winui2-visual-studio-2022-empty.png)
 
 1. 选择 **“工具** > **获取工具”和“功能**”。  **打开Visual Studio 安装程序**窗口，然后在其中打开 **“修改 - Visual Studio**”窗口：
 
-   ![“修改 Visual Studio”窗口，初始状态。](media/winui2-modifying-vs-window.png)
+   ![“修改 Visual Studio”窗口，初始状态](media/winui2-modifying-vs-window.png)
 
   如果未打开 **“修改 Visual Studio**”窗口，请在**Visual Studio 安装程序**窗口中单击“**修改**”按钮。
 
@@ -71,7 +82,7 @@ WinUI 2 仅支持 UWP。  这些控件是向后兼容的。
 
 1. 在右侧的 **“安装详细信息**”部分中，展开**通用 Windows 平台开发**，然后选择 **C++ (v143) 通用 Windows 平台工具**或 **C++ (v142) 通用 Windows 平台工具**：
 
-   ![“修改 Visual Studio 2019”对话框显示卡片和安装详细信息。](media/winui2-getting-started-install-workloads.png)
+   ![“修改 Visual Studio 2019”对话框显示卡片和安装详细信息](media/winui2-getting-started-install-workloads.png)
 
    如果所有这些组件都已安装，则可以单击“**关闭**”按钮，关闭**Visual Studio 安装程序**窗口，然后跳到下面步骤的下一个主要部分。
 
@@ -83,13 +94,13 @@ WinUI 2 仅支持 UWP。  这些控件是向后兼容的。
 
 1. 将显示一个对话框“在开始之前，关闭 Visual Studio”：
 
-   ![对话框：在开始之前，请关闭 Visual Studio。](media/winui2-before-we-get-started.png)
+   ![对话框：在开始之前，关闭 Visual Studio](media/winui2-before-we-get-started.png)
 
 1. 单击“ **继续** ”按钮。
 
    Visual Studio 下载、验证和安装所选包：
 
-   ![Visual Studio 安装程序工作。](media/winui2-vs-installer-working.png)
+   ![Visual Studio 安装程序工作](media/winui2-vs-installer-working.png)
 
    这可能需要几分钟时间。  在新窗口或选项卡中，可以在 [Microsoft Edge WebView2 上](https://developer.microsoft.com/microsoft-edge/webview2) 查看顶级概述 - developer.microsoft.com 的 WebView2 功能的初始简介。
 
@@ -105,17 +116,17 @@ WinUI 2 仅支持 UWP。  这些控件是向后兼容的。
 
    或者，如果 Visual Studio 已关闭，请打开它，然后在 Visual Studio 的启动屏幕中单击 **“创建新项目** 卡”：
 
-   ![Visual Studio 的启动屏幕：单击“创建新项目”卡。](media/winui2-opening-win-create-new-project-card.png)
+   ![Visual Studio 的启动屏幕：单击“创建新项目”卡片](media/winui2-opening-win-create-new-project-card.png)
 
 1. 在顶部 **的“搜索模板** ”文本框中， **输入通用 Windows)  (C# 空白应用 **，然后选择 **通用 Windows) 卡 (C# 空白应用 ** ：
 
-   ![“创建新项目”对话框显示通用 Windows) 卡 (空白应用。](media/winui2-getting-started-create-project.png)
+   ![“创建新项目”对话框显示通用 Windows) 卡 (空白应用](media/winui2-getting-started-create-project.png)
 
 1. 单击“下一步”**** 按钮。
 
    “ **配置新项目** ”对话框将显示为 **“空白应用” (通用 Windows) **：
 
-   ![“配置新项目”对话框显示空白应用 (通用 Windows) 的文本框。](media/winui2-getting-started-config-new-project.png)
+   ![“配置新项目”对话框显示空白应用的文本框 (通用 Windows) ](media/winui2-getting-started-config-new-project.png)
 
 1. 在 **“项目名称** ”文本框中，输入项目名称，例如 `MyUWPGetStartApp`。
 
@@ -126,12 +137,12 @@ WinUI 2 仅支持 UWP。  这些控件是向后兼容的。
 <!-- apparently old ui, doesn't appear in latest vs2022 july 11 2022, apparently got simplified later:
    The **New Universal Windows Platform Project** dialog box appears:
 
-   ![The 'New Universal Windows Platform Project' dialog box.](media/winui2-new-univ-win-plat-project.png)
+   ![The 'New Universal Windows Platform Project' dialog box](media/winui2-new-univ-win-plat-project.png)
  -->
 
    将显示 **“新建 Windows 项目** ”对话框：
 
-   ![“新建 Windows 项目”对话框。](media/winui2-new-windows-project.png)
+   ![“新建 Windows 项目”对话框](media/winui2-new-windows-project.png)
 
 1. 接受默认值，然后单击 **“确定** ”按钮。
 
@@ -140,7 +151,7 @@ WinUI 2 仅支持 UWP。  这些控件是向后兼容的。
 
    Visual Studio 显示新创建的解决方案和项目：
 
-   ![Visual Studio，包含新创建的 WinUI 2 (UWP) 项目。](media/winui2-vs-after-new-project-created.png)
+   ![包含新创建的 WinUI 2 (UWP) 项目的 Visual Studio](media/winui2-vs-after-new-project-created.png)
 
 
 <!-- ====================================================================== -->
@@ -186,7 +197,7 @@ WinUI 2 仅支持 UWP。  这些控件是向后兼容的。
 
    将显示 **“预览更改** ”对话框：
 
-   ![用于安装 Microsoft.UI.Xaml 包的“预览更改”对话框。](media/winui2-preview-changes-ui-xaml-pkg.png)
+   ![用于安装 Microsoft.UI.Xaml 包的“预览更改”对话框](media/winui2-preview-changes-ui-xaml-pkg.png)
    <!-- TODO: update capture after 2.8 GA, show 2.8.0 or later -->
 
    上图显示了 2.7.1，但这些说明实际上是为 2.8.0 或更高版本编写的，用于 Microsoft.UI.Xaml NuGet 包中 WebView2 的正式发布。
@@ -196,11 +207,11 @@ WinUI 2 仅支持 UWP。  这些控件是向后兼容的。
 
 1. 将显示 **“许可证接受** ”对话框：
 
-   ![用于安装 Microsoft.UI.Xaml 包的“许可证接受”对话框。](media/winui2-license-acceptance-ui-xaml-pkg.png)
+   ![用于安装 Microsoft.UI.Xaml 包的“许可证接受”对话框](media/winui2-license-acceptance-ui-xaml-pkg.png)
 
 1. 单击 **“我接受** ”按钮。  在 Visual Studio 中，将显示该 `readme.txt` 文件，表示已安装 WinUI 包：
 
-   ![安装 Microsoft.UI.Xaml 包后readme.txt文件报告已安装 WinUI NuGet 包。](media/winui2-readme-winui-pkg.png)
+   ![安装 Microsoft.UI.Xaml 包后readme.txt文件，报告已安装 WinUI NuGet 包](media/winui2-readme-winui-pkg.png)
 
    自述文件列出了一些类似于我们将添加的代码行。
 
@@ -238,7 +249,7 @@ WinUI 2 仅支持 UWP。  这些控件是向后兼容的。
 
     `MainPage.xaml`在代码编辑器中的文件上方，可能会显示 WebView2 内容的预览，或者，在首次生成应用之前，它可能会保持空白 (白色) ：
 
-    ![WebView2 内容预览。](media/winui2-getting-started-preview-webview2-content.png)
+    ![WebView2 内容预览](media/winui2-getting-started-preview-webview2-content.png)
 
     上图显示两行中的“控件”：建议改为在这些行上使用“控件”一词。
     <!-- TODO: update capture after GA -->
@@ -253,11 +264,11 @@ WinUI 2 仅支持 UWP。  这些控件是向后兼容的。
 
 1. 单击 **“调试** > **开始调试**”。  应用窗口随即打开，简要显示 WebView2 WebUI 网格：
 
-   ![在调试期间，WebView2 WebUI 网格会短暂显示。](media/winui2-getting-started-webview2-grid.png)
+   ![在调试期间，WebView2 WebUI 网格会短暂显示](media/winui2-getting-started-webview2-grid.png)
 
 1. 片刻之后，应用窗口会在 WebUI 2 的 WebView2 控件中显示必应网站：
 
-   ![示例应用显示必应网站。](media/winui2-getting-started-webview2-with-content.png)
+   ![示例应用显示必应网站](media/winui2-getting-started-webview2-with-content.png)
 
 1. 在 Visual Studio 中，单击 **“调试** > **停止调试** ”以关闭应用窗口。
 

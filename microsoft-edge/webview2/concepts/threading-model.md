@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 09/21/2021
-ms.openlocfilehash: 8327f25f851a358176cc54e3a6d4303ea0b42134
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.openlocfilehash: 962358a63c6e18c8cd4ff26ff91d8bc1877efd0d
+ms.sourcegitcommit: ff01ae09a41be04a53ca8ee918bbf5fb999543c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12553060"
+ms.lasthandoff: 09/17/2022
+ms.locfileid: "12754362"
 ---
 # <a name="threading-model-for-webview2-apps"></a>WebView2 应用的线程模型
 
@@ -76,11 +76,11 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 
 > [!NOTE]
 > 对于 WinForms 和 WPF 应用，若要获取用于调试的完整调用堆栈，必须为 WebView2 应用启用本机代码调试，如下所示：
-> 1. 在Visual Studio中打开 WebView2 项目。
+> 1. 在 Visual Studio 中打开 WebView2 项目。
 > 1. 在**解决方案资源管理器**中，右键单击 WebView2 项目，然后选择 **“属性**”。
 > 1. 选择 **“调试** ”选项卡，然后选中 **“启用本机代码调试** ”复选框，如下所示。
 
-![在Visual Studio中启用本机代码调试。](../media/webview-enable-native-debug.png)
+![在 Visual Studio 中启用本机代码调试](../media/webview-enable-native-debug.png)
 
 
 <!-- ====================================================================== -->
@@ -158,4 +158,4 @@ private async void Button_Click(object sender, EventArgs e)
 * [WebView2 入门](../get-started/get-started.md)
 * [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。
 * [WebView2 API 参考](/dotnet/api/microsoft.web.webview2.wpf.webview2)
-* [另请参阅](../index.md#see-also) _Microsoft Edge WebView2 简介_。
+* [另请参阅](../index.md#see-also) - _在 Microsoft Edge WebView2 简介中_。

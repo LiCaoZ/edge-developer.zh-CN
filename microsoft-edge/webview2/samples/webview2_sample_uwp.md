@@ -7,24 +7,19 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 07/13/2022
-ms.openlocfilehash: 5c571948e79963b1396a4ab71d321d7fcabb1430
-ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
+ms.openlocfilehash: 4fd20fafff623388deae95d62cc7d0fbcd676387
+ms.sourcegitcommit: ff01ae09a41be04a53ca8ee918bbf5fb999543c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "12675575"
+ms.lasthandoff: 09/17/2022
+ms.locfileid: "12754565"
 ---
 # <a name="winui-2-uwp-sample-app"></a>WinUI 2 (UWP) 示例应用
-
-<!--
-spelling conventions:
-"WinUI 2" https://docs.microsoft.com/en-us/windows/apps/winui/winui2/
--->
 
 此 WebView2 示例演示如何使用 WebView2 控件和 WebView2 API 在 WinUI 2 (UWP) 应用中实现 Web 浏览器。
 
 *  示例名称： **webview2_sample_uwp**
-*  存储库目录： **webview2_sample_uwp**
+*  存储库目录： [webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp)
 *  解决方案文件： **webview2_sample_uwp.sln**
 
 
@@ -38,27 +33,11 @@ spelling conventions:
 为了演示最新功能，WebView2Samples 存储库中的此示例设置为使用预发行版的 WinUI 2 SDK (在 NuGet 包管理器) 中列为 **Microsoft.UI.Xaml** ，而不是稳定版本。  WinUI 2 SDK 包含兼容版本的 WebView2 SDK，作为 **Microsoft.UI.Xaml** 的依赖项。
 <!-- After you update the packages, the resulting WebView2 SDK might be a stable or prerelease SDK.  Per screenshots below; appears to have switched from prerelease (per repo) to stable (after local update) -->
 
-
-<!-- ====================================================================== -->
-## <a name="step-1---view-the-readme"></a>步骤 1 - 查看自述文件
-
-1. 在单独的窗口或选项卡中，在 GitHub： README 文件中简要读取此项目的呈现 [README.md 文件，以便webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp#readme)。  然后返回到此页面，并继续执行以下步骤。
-
-   * [自述文件>先决条件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp#prerequisites)
-
-   * [README >生成 WebView2 UWP WinUi2 浏览器](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp#build-the-webview2-uwp-winui2-browser)
-
-   还可以在 Visual Studio 中查看 README.md 源文件 (未呈现的) 。  在**文件管理器**或 Visual Studio > 解决方案资源管理器中，打开该文件：
-
-   `<your-repos-directory>/WebView2Samples/SampleApps/webview2_sample_uwp/README.md`
-
-   或者：
-
-   `<your-repos-directory>/WebView2Samples-main/SampleApps/webview2_sample_uwp/README.md`
+另请参阅 [自述文件webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp#readme)。
 
 
 <!-- ====================================================================== -->
-## <a name="step-2---install-visual-studio"></a>步骤 2 - 安装 Visual Studio
+## <a name="step-1---install-visual-studio"></a>步骤 1 - 安装 Visual Studio
 
 Microsoft Visual Studio 是必需的。  此示例不支持 Microsoft Visual Studio Code。
 
@@ -66,19 +45,19 @@ Microsoft Visual Studio 是必需的。  此示例不支持 Microsoft Visual Stu
 
 
 <!-- ====================================================================== -->
-## <a name="step-3---install-a-preview-channel-of-microsoft-edge"></a>步骤 3 - 安装 Microsoft Edge 的预览频道
+## <a name="step-2---install-a-preview-channel-of-microsoft-edge"></a>步骤 2 - 安装 Microsoft Edge 的预览频道
 
 1. 如果尚未安装 Microsoft Edge (Beta、Dev 或 Canary) 的预览频道，请参阅在_为 WebView2 设置开发环境_时[安装 Microsoft Edge 的预览频道](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
 
 
 <!-- ====================================================================== -->
-## <a name="step-4---download-or-clone-the-webview2samples-repo"></a>步骤 4 - 下载或克隆 WebView2Samples 存储库
+## <a name="step-3---clone-or-download-the-webview2samples-repo"></a>步骤 3 - 克隆或下载 WebView2Samples 存储库
 
-1. 如果尚未完成，请将存储库下载或克隆 `WebView2Sample` 到本地驱动器。  在单独的窗口或选项卡中，请参阅“_为 WebView2 设置开发环境_”中的“[下载 WebView2Samples 存储库](../how-to/machine-setup.md#download-the-webview2samples-repo)”。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
+1. 如果尚未完成，请将存储库克隆或下载 `WebView2Sample` 到本地驱动器。  在单独的窗口或选项卡中，请参阅“_为 WebView2 设置开发环境_”中的“[下载 WebView2Samples 存储库](../how-to/machine-setup.md#download-the-webview2samples-repo)”。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
 
 
 <!-- ====================================================================== -->
-## <a name="step-5---open-the-solution-in-visual-studio"></a>步骤 5 - 在 Visual Studio 中打开解决方案
+## <a name="step-4---open-the-solution-in-visual-studio"></a>步骤 4 - 在 Visual Studio 中打开解决方案
 
 1. 在本地驱动器上 `.sln` ，在 Visual Studio 中的目录中打开该文件：
 
@@ -90,13 +69,13 @@ Microsoft Visual Studio 是必需的。  此示例不支持 Microsoft Visual Stu
 
 
 <!-- ====================================================================== -->
-## <a name="step-6---install-workloads-if-prompted"></a>步骤 6 - 如果出现提示，请安装工作负载
+## <a name="step-5---install-workloads-if-prompted"></a>步骤 5 - 如果出现提示，请安装工作负载
 
 1. 如果出现提示，请安装请求的任何 Visual Studio 工作负载。  在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发人员环境_时[安装 Visual Studio 工作负载](../how-to/machine-setup.md#install-visual-studio-workloads)。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
 
 
 <!-- ====================================================================== -->
-## <a name="step-7---build-and-run-the-project-using-the-initial-nuget-packages"></a>步骤 7 - 使用初始 NuGet 包生成和运行项目
+## <a name="step-6---build-and-run-the-project-using-pre-installed-packages"></a>步骤 6 - 使用预安装的包生成和运行项目
 
 解决方案资源管理器显示**webview2_sample_uwp**项目：
 
@@ -126,12 +105,11 @@ Microsoft Visual Studio 是必需的。  此示例不支持 Microsoft Visual Stu
 
 1. 在 Visual Studio 中，选择 **“调试** > **停止调试**”。  Visual Studio 关闭应用。
 
-
 接下来，根据以下部分更新项目的 NuGet 包。
 
 
 <!-- ====================================================================== -->
-## <a name="step-8---update-the-nuget-packages"></a>步骤 8 - 更新 NuGet 包
+## <a name="step-7---update-the-nuget-packages"></a>步骤 7 - 更新 NuGet 包
 
 在此步骤中，我们将更新项目的 NuGet 包，以获取 WinUI 2 SDK 的最新预发行版本。  WinUI 2 SDK 包括兼容的 WebView2 SDK 预发行版或版本。
 
@@ -147,7 +125,7 @@ Microsoft Visual Studio 是必需的。  此示例不支持 Microsoft Visual Stu
 
    列出了 **Microsoft.UI.Xaml** 包的预发行版本，指示 WinUI 2 SDK。  **Microsoft.UI.Xaml** 包包括 WebView2 SDK;**Microsoft.Web.WebView2** 在 **Microsoft.UI.Xaml** 包的 **“依赖项**”部分中列出。  更新 **Microsoft.UI.Xaml** 包也会导致对兼容的 WebView2 SDK 进行更新。
 
-1. 在 **NuGet 包管理器**中，单击**更新**选项卡。
+1. 在 **NuGet 包管理器**中，单击**汇报**选项卡。
 
 1. 单击左侧的 **Microsoft.UI.Xaml** 卡。
 
@@ -194,7 +172,7 @@ Microsoft Visual Studio 是必需的。  此示例不支持 Microsoft Visual Stu
 
 
 <!-- ====================================================================== -->
-## <a name="step-9---build-and-run-the-project-with-updated-packages"></a>步骤 9 - 使用更新的包生成和运行项目
+## <a name="step-8---build-and-run-the-project-with-updated-packages"></a>步骤 8 - 使用更新后的包生成并运行项目
 
 现在，NuGet 包已更新，请再次生成并运行项目：
 
@@ -216,7 +194,7 @@ Microsoft Visual Studio 是必需的。  此示例不支持 Microsoft Visual Stu
 
 
 <!-- ====================================================================== -->
-## <a name="step-10---inspect-the-code"></a>步骤 10 - 检查代码
+## <a name="step-9---inspect-the-code"></a>步骤 9 - 检查代码
 
 1. 在 Visual Studio 代码编辑器中，检查代码：
 

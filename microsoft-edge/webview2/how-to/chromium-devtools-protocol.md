@@ -1,18 +1,18 @@
 ---
 title: 在 WebView2 应用中使用 Chrome DevTools 协议
-description: 如何使用 Microsoft Edge WebView2 Chrome DevTools 协议NuGet包在 WebView2 应用中使用 Chrome DevTools 协议。
+description: 如何使用 Microsoft Edge WebView2 Chrome DevTools 协议 NuGet 包在 WebView2 应用中使用 Chrome DevTools 协议。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 05/06/2021
-ms.openlocfilehash: eb9dbe00c81ac5f67680f0dafee44fadfdeaf4c7
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.openlocfilehash: 169a30da6b7a61341c8c97a56dcfcce21b052cb7
+ms.sourcegitcommit: ff01ae09a41be04a53ca8ee918bbf5fb999543c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12552651"
+ms.lasthandoff: 09/17/2022
+ms.locfileid: "12754740"
 ---
 # <a name="use-the-chrome-devtools-protocol-in-webview2-apps"></a>在 WebView2 应用中使用 Chrome DevTools 协议
 
@@ -20,7 +20,7 @@ ms.locfileid: "12552651"
 
 若要在 WebView2 应用中使用 Chrome DevTools 协议 API，请执行以下任一操作：
 
-*  安装并使用 [Microsoft.Web.WebView2.DevToolsProtocolExtension (预览) NuGet ](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) 包 (.NET) 。
+*  安装并使用 [Microsoft.Web.WebView2.DevToolsProtocolExtension (预览) ](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) NuGet 包 (.NET) 。
 
 *  或者，运行以下方法之一：
 
@@ -32,11 +32,11 @@ ms.locfileid: "12552651"
 <!-- ====================================================================== -->
 ## <a name="use-devtoolsprotocolhelper"></a>使用 DevToolsProtocolHelper
 
-[Microsoft.Web.WebView2.DevToolsProtocolExtension (预览版) ](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension)是由 WebView2 团队创建的NuGet包，可轻松访问 Chrome DevTools 协议功能。  以下示例介绍如何在 WebView2 控件的 Chrome DevTools 协议中使用地理位置功能。  若要使用其他 Chrome DevTools 协议功能，可以遵循类似的模式。
+[Microsoft.Web.WebView2.DevToolsProtocolExtension (预览) ](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) 是由 WebView2 团队创建的 NuGet 包，可轻松访问 Chrome DevTools 协议功能。  以下示例介绍如何在 WebView2 控件的 Chrome DevTools 协议中使用地理位置功能。  若要使用其他 Chrome DevTools 协议功能，可以遵循类似的模式。
 
 ### <a name="dont-use-the-preview-package-in-production-apps"></a>不要在生产应用中使用预览包
 
-[Microsoft.Web.WebView2.DevToolsProtocolExtension](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) NuGet包目前处于技术预览状态。  在预览版中，请不要在生产应用中使用此NuGet包。
+[Microsoft.Web.WebView2.DevToolsProtocolExtension](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) NuGet 包目前处于技术预览阶段。  在预览版中，请不要在生产应用中使用此 NuGet 包。
 
 
 <!-- ====================================================================== -->
@@ -89,7 +89,7 @@ ms.locfileid: "12552651"
 
 1. 若要显示纬度和经度坐标，请单击 **“显示位置”** 按钮。  若要验证和比较地理位置，请复制并粘贴坐标 [https://www.bing.com/maps](https://www.bing.com/maps)。
 
-   ![在Microsoft Edge中显示用户的地理位置坐标。](./media/geolocater-browser.png)
+   ![在 Microsoft Edge 中显示用户的地理位置坐标](./media/geolocater-browser.png)
 
 
 <!-- ====================================================================== -->
@@ -109,23 +109,23 @@ ms.locfileid: "12552651"
 
 1. 确保该 `geolocation.html` 文件显示在 WebView2 控件应用中：
 
-   ![WebView2 控件应用中显示的geolocation.html文件。](./media/initial-geolocate.png)
+   ![WebView2 控件应用中显示的geolocation.html文件](./media/initial-geolocate.png)
 
 
 <!-- ====================================================================== -->
-## <a name="step-3-install-the-devtoolsprotocolhelper-nuget-package"></a>步骤 3：安装 DevToolsProtocolHelper NuGet包
+## <a name="step-3-install-the-devtoolsprotocolhelper-nuget-package"></a>步骤 3：安装 DevToolsProtocolHelper NuGet 包
 
-使用NuGet下载`Microsoft.Web.WebView2.DevToolsProtocolExtension`。
+使用 NuGet 下载 `Microsoft.Web.WebView2.DevToolsProtocolExtension`。
 
 若要安装包，请执行以下操作：
 
-1. 选择**Project** > 包**浏览**NuGet  > **Manage**。
+1. 选择 **“项目** > **管理 NuGet 包** > **浏览**”。
 
 1. 键入 `Microsoft.Web.WebView2.DevToolsProtocolExtension` 并选择 **Microsoft.Web.WebView2.DevToolsProtocolExtension** > **安装**。
 
-1. 确保 **Microsoft.Web.WebView2.DevToolsProtocolExtension** 显示在Visual Studio NuGet 程序包管理器中：
+1. 确保 **Microsoft.Web.WebView2.DevToolsProtocolExtension** 显示在 Visual Studio NuGet 包管理器中：
 
-   ![确保 Microsoft.Web.WebView2.DevToolsProtocolExtension 显示在Visual Studio NuGet 程序包管理器中。](./media/cdp-nuget.png)
+   ![确保在 Visual Studio NuGet 包管理器中显示 Microsoft.Web.WebView2.DevToolsProtocolExtension](./media/cdp-nuget.png)
 
 
 <!-- ====================================================================== -->
@@ -172,7 +172,7 @@ ms.locfileid: "12552651"
 
 1. 若要显示法国巴黎的坐标，请单击“ **显示位置”** 按钮：
 
-   ![使用巴黎的坐标在 WebView2 控件中显示.html文件。](./media/final-location-cdp.png)
+   ![使用巴黎的坐标在 WebView2 控件中显示.html文件](./media/final-location-cdp.png)
 
 
 <!-- ====================================================================== -->

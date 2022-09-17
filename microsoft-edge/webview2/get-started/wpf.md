@@ -7,18 +7,26 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: d7fee7706ca69394aebc6c996cbacdf7ef1fc969
-ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
+ms.openlocfilehash: 821901adb2af3718c8d77fab2e8954e86b6533b9
+ms.sourcegitcommit: ff01ae09a41be04a53ca8ee918bbf5fb999543c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "12675701"
+ms.lasthandoff: 09/17/2022
+ms.locfileid: "12754678"
 ---
 # <a name="get-started-with-webview2-in-wpf-apps"></a>WPF 应用中的 WebView2 入门
 
 本文介绍如何设置开发工具并为Windows Presentation Foundation (WPF) 创建初始 WebView2 应用，并了解 WebView2 概念。
 
-WebView2Samples 存储库中提供了本教程项目的已完成版本：[入门 WPF (WPF_GettingStarted/WPFSample.sln) 中的 WebView2](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted#readme)。
+在本教程中，你将使用 **WPF 应用程序**或 **WPF 应用 (.NET Framework) **项目模板创建 WPF 应用，然后为项目安装 WebView2 SDK 以添加 WebView2。
+
+
+#### <a name="completed-project"></a>已完成的项目
+
+已完成的版本<!--TODO: what date?--> 此教程项目的 **WebView2Samples** 存储库中提供：
+*  示例名称： **WPF_GettingStarted**
+*  存储库目录： [WPF_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted#readme)
+*  解决方案文件： **WPFSample.sln**
 
 
 <!-- ====================================================================== -->
@@ -58,27 +66,27 @@ WebView2Samples 存储库中提供了本教程项目的已完成版本：[入门
 
    下图中突出显示的卡片是 **WPF 应用程序：.NET Core WPF 应用程序**：
     
-   ![选中卡片“WPF 应用程序：.NET Core WPF 应用程序”的“创建新项目”面板。](media/wpf-getting-started-wpf-core.png)
+   ![选中卡片“WPF 应用程序：.NET Core WPF 应用程序”的“创建新项目”面板](media/wpf-getting-started-wpf-core.png)
 
    或者，下图中突出显示的卡片是 **WPF 应用 (.NET Framework) ：Windows Presentation Foundation客户端应用程序**：
 
-   ![“创建新项目”面板，其中选择了卡片“WPF 应用 (.NET Framework) ：Windows Presentation Foundation客户端应用程序”。](media/wpf-getting-started-wpf-fw.png)
+   ![“创建新项目”面板，其中选择了卡片“WPF 应用 (.NET Framework) ：Windows Presentation Foundation客户端应用程序”](media/wpf-getting-started-wpf-fw.png)
 
    将显示“ **配置新项目** WPF 应用程序”对话框。
 
-   ![“配置新项目”WPF 应用程序对话框。](media/wpf-getting-started-create-core.png)
+   ![“配置新项目”WPF 应用程序对话框](media/wpf-getting-started-create-core.png)
 
 1. 输入 **项目名称** 和 **位置**的值，然后单击 **“下一步**”。
 
    随即显示“ **其他信息** ”对话框，其中包含 **“目标框架”** 下拉列表：
 
-   ![包含“目标框架”下拉列表的“其他信息”对话框。](media/wpf-getting-started-create-core-add-info.png)
+   ![包含“目标框架”下拉列表的“其他信息”对话框](media/wpf-getting-started-create-core-add-info.png)
 
 1. 选择 **.NET Core 3.1**、 **5.0**、 **6.0** 或更高版本 (不是 **3.0**) 。  然后，单击“下一步”****。
 
    将显示“ **配置新项目** ”对话框，用于 **WPF 应用 (.NET 框架) **：
 
-   ![“配置新项目 WPF 应用 .NET Framework”对话框显示项目名称、位置和解决方案名称文本框。](media/wpf-getting-started-create-fw.png)
+   ![“配置新项目 WPF 应用 .NET Framework”对话框显示项目名称、位置和解决方案名称文本框](media/wpf-getting-started-create-fw.png)
 
 1. 输入 **项目名称** 和 **位置**的值。
 
@@ -97,18 +105,13 @@ WebView2Samples 存储库中提供了本教程项目的已完成版本：[入门
 
 使用 NuGet 将 WebView2 SDK 添加到项目。
 
-1. 在**解决方案资源管理器**中，右键单击项目名称，然后选择 **“管理 NuGet 包**”：
-
-   ![右键单击菜单上的“管理 NuGet 包”命令。](media/wpf-getting-started-mng-nuget.png)
-
-   <!-- todo: The above image is supposed to show the WPF project instead of the WinForms project.  generally, avoid sharing images across multiple .md files -->
-   _ (上面的图像应该显示 WPF 项目，而不是 WinForms 项目。) _
+1. 在**解决方案资源管理器**中，右键单击项目名称 (而不是解决方案节点) ，然后选择 **“管理 NuGet 包**”。  **“NuGet 包管理器**”窗口随即打开。
 
 1. 在左上角，单击“ **浏览”** 选项卡。 在搜索栏中键入 `Microsoft.Web.WebView2`，然后单击 **Microsoft.Web.WebView2** 卡。
 
    NuGet 包管理器对话框显示搜索结果，包括 **Microsoft.Web.WebView2** 卡。  对话框具有版本号和 **“安装”** 按钮。
    
-   ![NuGet 包管理器对话框显示 Microsoft.Web.WebView2 卡。](media/install-nuget.png)
+   ![NuGet 包管理器对话框显示 Microsoft.Web.WebView2 卡](media/install-nuget.png)
 
 1. 接受默认版本，然后单击 **“安装** ”按钮。
 
@@ -120,7 +123,7 @@ WebView2Samples 存储库中提供了本教程项目的已完成版本：[入门
 
    项目运行，并显示一个空窗口。  这会验证 WebView2 是否已安装并正常工作，尽管 WebView2 尚无要显示的内容：
 
-   ![空应用窗口。](media/winforms-empty-app.png)
+   ![空应用窗口](media/winforms-empty-app.png)
 
 
 <!-- ====================================================================== -->
@@ -171,7 +174,7 @@ WebView2Samples 存储库中提供了本教程项目的已完成版本：[入门
 
 1. 确保 WebView2 控件显示 [https://www.microsoft.com](https://www.microsoft.com)：
 
-   ![WebView2 控件，显示来自 microsoft.com 的网页内容。](media/wpf-getting-started-microsoft.png)
+   ![WebView2 控件，显示来自 microsoft.com 的网页内容](media/wpf-getting-started-microsoft.png)
 
 
 <!-- ====================================================================== -->
@@ -261,7 +264,7 @@ WebView2Samples 存储库中提供了本教程项目的已完成版本：[入门
 
    示例应用在地址栏中显示包含 URL `https://www.bing.com` 的必应网站：
 
-   ![应用显示必应网站。](media/wpf-getting-started-bing.png)
+   ![应用显示必应网站](media/wpf-getting-started-bing.png)
 
 
 <!--
@@ -279,7 +282,7 @@ maintenance link (keep)
 *  `HistoryChanged`
 *  `NavigationCompleted`
 
-![导航事件，从新文档到导航启动，通过导航完成。](../media/navigation-events.png)
+![导航事件，从新文档到导航启动，通过导航完成](../media/navigation-events.png)
 
 上图显示了事件序列。  导航事件以新文档开头。
 
@@ -377,7 +380,7 @@ maintenance link (keep)
 
 1. 导航到不使用 HTTPS 的网站时，请确保应用显示警报。
 
-   ![显示 http：URL 不安全的消息，建议改为尝试 https：URL。](media/wpf-getting-started-https.png)
+   ![显示 http： URL 不安全的消息，并建议尝试 https：URL](media/wpf-getting-started-https.png)
 
 
 <!-- ====================================================================== -->
@@ -451,7 +454,7 @@ maintenance link (keep)
 
    示例应用在地址栏和 Microsoft 网站中显示 URI， https://www.microsoft.com:
 
-   ![示例应用在地址栏和 Microsoft 网站中显示 URI。](media/wpf-getting-started-searchbar.png)
+   ![示例应用在地址栏和 Microsoft 网站中显示 URI](media/wpf-getting-started-searchbar.png)
 
 恭喜你，你构建了第一个 WebView2 应用！
 

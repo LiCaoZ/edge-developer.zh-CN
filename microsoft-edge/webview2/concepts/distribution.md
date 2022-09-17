@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 1/20/2022
-ms.openlocfilehash: ab4354ec4d80c9450acb7e93f968debbae7826ba
-ms.sourcegitcommit: 2617558f3934ae09ef9705c8022004353a579315
+ms.openlocfilehash: cce3bf746c88d564ddc055ee272b69e3295656f6
+ms.sourcegitcommit: ff01ae09a41be04a53ca8ee918bbf5fb999543c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "12685543"
+ms.lasthandoff: 09/17/2022
+ms.locfileid: "12754705"
 ---
 # <a name="distribute-your-app-and-the-webview2-runtime"></a>分发应用和 WebView2 运行时
 
@@ -69,7 +69,7 @@ WebView2 运行时是可再发行运行时，充当 WebView2 应用的基础 (�
 
 **Microsoft Edge WebView2** 页面的“[下载 WebView2 运行时](https://developer.microsoft.com/microsoft-edge/webview2#download-section)”部分提供了多个选项，用于将 WebView2 运行时分发到客户端计算机上。  了解此页面上的选项提供了很好的介绍，有助于确定要使用哪种方法。
 
-![用于分发和更新 WebView2 运行时的选项。](../media/runtime-distrib-options.png)
+![用于分发和更新 WebView2 运行时的选项](../media/runtime-distrib-options.png)
 
 对于大多数应用，建议使用常青分发模式。
 
@@ -125,7 +125,7 @@ Evergreen WebView2 运行时将作为Windows 11操作系统的一部分包含在
 
 常青分发模式可确保 WebView2 应用正在利用最新的 WebView2 功能和安全更新。  常青分布模式具有以下特征：
 
-*  WebView2 运行时会自动更新，而无需执行任何操作。 它接收的 Microsoft Edge 更新与 [Microsoft Edge 稳定频道发行说明](/deployedge/microsoft-edge-relnote-stable-channel)和 [Microsoft Edge 安全更新发行说明](/deployedge/microsoft-edge-relnotes-security)中所述的 Microsoft Edge 更新相同。
+*  WebView2 运行时会自动更新，而无需执行任何操作。 它接收的 Microsoft Edge 更新与 [Microsoft Edge 稳定频道发行说明](/deployedge/microsoft-edge-relnote-stable-channel)和 [Microsoft Edge 安全汇报发行说明](/deployedge/microsoft-edge-relnotes-security)中所述的相同。
 
 *  所有使用常青分发模式的 WebView2 应用都使用常青 WebView2 运行时的共享副本，从而节省磁盘空间。
 
@@ -338,7 +338,7 @@ Microsoft Edge 和 WebView2 运行时的更新策略是单独的。  即使 IT �
 
    1. 若要确认 PlayReady 已正确安装，请在 **“固定版本**”文件夹的“**安全**”选项卡中，确保为其授予`ALL APPLICATION PACKAGES`权限，`ALL RESTRICTED APPLICATION PACKAGES`如下所示：
 
-      ![PlayReady 的权限。](../media/play-ready-permission.png)
+      ![PlayReady 的权限](../media/play-ready-permission.png)
 
 
 <!-- ====================================================================== -->

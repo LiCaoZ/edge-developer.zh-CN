@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 05e3d4a0d16d550e2227c71ec88e47ee0e78c395
-ms.sourcegitcommit: 43f79138241aa7906f6631759aa0a2165e0e8ef3
+ms.openlocfilehash: d234122b154e488091137c53f7e7215110e7a9a4
+ms.sourcegitcommit: ff01ae09a41be04a53ca8ee918bbf5fb999543c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "12668858"
+ms.lasthandoff: 09/17/2022
+ms.locfileid: "12754586"
 ---
 # <a name="call-native-side-code-from-web-side-code"></a>从 Web 端代码调用本机代码
 
@@ -45,7 +45,7 @@ WebView2 使应用程序能够通过启用要传递到 Web 的对象来弥合应
 
   * JavaScript 是沙盒的，限制了其在本机端的功能。 例如，如果需要访问本机端的文件，则必须使用本机文件系统。 如果你有一个通过 `AddHostObjectToScript`JavaScript 公开的本机对象，则可以使用它来操作本机文件系统上的文件。
 
-本文使用 [WebView2 Win32 示例应用](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample) 演示一些实际应用 `AddHostObjectToScript`。 有关如何将 Web 内容嵌入本机应用程序的详细信息，请参阅 [将 Web 内容嵌入本机应用程序](/microsoft-edge/webview2/how-to/communicate-btwn-web-native)。
+本文使用 [Win32 示例应用](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample) 演示一些实际的 `AddHostObjectToScript`应用程序。 有关如何将 Web 内容嵌入本机应用程序的详细信息，请参阅 [将 Web 内容嵌入本机应用程序](/microsoft-edge/webview2/how-to/communicate-btwn-web-native)。
 
 
 #### <a name="preview-of-the-major-steps-in-this-article"></a>本文中主要步骤的预览

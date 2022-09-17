@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/01/2022
-ms.openlocfilehash: 3d1e068c4dc3e0b36027ede0018523722fb3db05
-ms.sourcegitcommit: e367f0e2c9e59648b2e6243297c4073ebeb7a8ee
+ms.openlocfilehash: d126c508175127c3b82ea96c74d266af0f11cfe6
+ms.sourcegitcommit: ff01ae09a41be04a53ca8ee918bbf5fb999543c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "12691951"
+ms.lasthandoff: 09/17/2022
+ms.locfileid: "12754838"
 ---
 # <a name="process-model-for-webview2-apps"></a>WebView2 应用的处理模型
 <!-- old title: # The WebView2 process model -->
@@ -30,7 +30,7 @@ _WebView2 进程组_是 WebView2 运行时进程的集合。  WebView2 进程组
 *  一个或多个呈现器进程。
 *  其他帮助程序进程，例如 GPU 进程和音频服务进程。
 
-![进程 1。](../media/process-model-1.png)
+![进程 1](../media/process-model-1.png)
 
 当 WebView2 应用程序使用 WebView2 功能时，WebView2 进程组中的进程数目和状态可能会更改。   (但是，WebView2 进程组中只有一个特定的浏览器进程。) 例如，从同 `CoreWebView2Environment`一个实例创建新的 WebView2 实例，但属性中 `Source` 具有不同的域，通常会启动新的呈现器进程。
 
@@ -50,7 +50,7 @@ WebView2 运行时进程集合中的所有进程都绑定到浏览器进程，�
 
 用户数据文件夹可由多个应用程序共享，但请务必考虑对性能和管理的影响，如“ [管理用户数据”文件夹](user-data-folder.md)中所述。
 
-![进程 2。](../media/process-model-2.png)
+![进程 2](../media/process-model-2.png)
 
 若要使用多个用户数据文件夹，WebView2 应用程序需要创建不同的 `CoreWebView2Environment` 对象。  `WebView2`通过配置的对象为给定用户数据文件夹创建实`CoreWebView2Environment`例。  每个 `CoreWebView2Environment` 对象都需要使用不同的用户数据文件夹值进行配置。
 

@@ -6,26 +6,38 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2022
-ms.openlocfilehash: 4f88964999886dc9363c6db1d7873d4e760c1a86
-ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
+ms.date: 07/29/2022
+ms.openlocfilehash: 2d173abbfcee1ab3cbe09a119c005a982c599b69
+ms.sourcegitcommit: ff01ae09a41be04a53ca8ee918bbf5fb999543c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "12676088"
+ms.lasthandoff: 09/17/2022
+ms.locfileid: "12754621"
 ---
 # <a name="get-started-with-webview2-in-win32-apps"></a>Win32 应用中的 WebView2 入门
 
-本文将设置开发工具 (（如果尚未完成）) 、将 WebView2 代码添加到 Win32 应用，并了解 WebView2 概念。
+<!-- TODO: Rewrite to start from a project template? -->
 
-该项目使用存储库的 [Win32_GettingStarted/WebView2GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) 目录 `WebView2Samples` 。  若要使用本文，请执行以下操作：
-1. 将存储库下载或克隆 `WebView2Samples` 到本地驱动器。
+在本文中，你将设置开发工具 (（如果尚未完成）) ，了解如何将 WebView2 代码添加到 Win32 应用项目，并在此过程中了解 WebView2 概念。
+
+本教程首先打开已添加 WebView2 代码的现有 Win32 应用项目。  该项目使用作为存储库[一部分的 Win32_GettingStarted (WebView2GettingStarted.sln) ](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted)目录。`WebView2Samples`  若要使用本文，请执行以下操作：
+1. 将存储库克隆或下载 `WebView2Samples` 到本地驱动器。
 1. 运行已完成的项目。
-1. （可选）从 `HelloWebView.cpp`中删除 WebView2 代码。
+1. （可选）从 `HelloWebView.cpp` 中删除 WebView2 代码以还原 Win32 基线应用。
 1. 按照本文中有关添加和理解 WebView2 代码的剩余步骤操作。
 
+<!-- A completed version of this tutorial project is available in the WebView2Samples repo: [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted#readme). -->
 
-* 对应的、已完成的、可运行的 GitHub 入门示例：[入门 WebView2 for Win32 应用 (Win32_GettingStarted/WebView2GettingStarted.sln) ](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted#readme)。
+本教程没有创建新项目;不使用 Visual Studio 中的项目模板来创建新项目。  而是从存储库中的已完成项目开始。
+
+
+#### <a name="completed-project"></a>已完成的项目
+
+**WebView2Samples** 存储库中提供了已完成的教程项目：
+
+*  示例名称： **Win32_GettingStarted**
+*  存储库目录： [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted)
+*  解决方案文件： **WebView2GettingStarted.sln**
 
 
 <!-- ====================================================================== -->
@@ -47,7 +59,7 @@ ms.locfileid: "12676088"
 
 
 <!-- ====================================================================== -->
-## <a name="step-3---download-or-clone-the-webview2samples-repo"></a>步骤 3 - 下载或克隆 WebView2Samples 存储库
+## <a name="step-3---clone-or-download-the-webview2samples-repo"></a>步骤 3 - 克隆或下载 WebView2Samples 存储库
 
 在本教程的步骤中添加的代码已添加到示例存储库中。  下面的可选步骤允许你从 `HelloWebView.cpp`中删除 WebView2 代码，以便你可以根据需要自行添加它。
 
@@ -57,15 +69,15 @@ ms.locfileid: "12676088"
 
 ---
 
-下载或克隆 WebView2Samples 存储库，如下所示：
+克隆或下载 WebView2Samples 存储库，如下所示：
 
-1. 如果尚未下载或克隆 `WebView2Samples` 存储库。  为此，请在单独的窗口或选项卡中，按照[“下载 WebView2Samples 存储库](../how-to/machine-setup.md#download-the-webview2samples-repo)”中的步骤操作，或在_为 WebView2 设置开发环境时克隆 WebView2Samples_ [存储库](../how-to/machine-setup.md#clone-the-webview2samples-repo)。
+1. 如果尚未，请克隆或下载 `WebView2Samples` 存储库。  为此，请在单独的窗口或选项卡中，按照[“下载 WebView2Samples 存储库](../how-to/machine-setup.md#download-the-webview2samples-repo)”中的步骤操作，或在_为 WebView2 设置开发环境时克隆 WebView2Samples_ [存储库](../how-to/machine-setup.md#clone-the-webview2samples-repo)。
 
 将存储库复制到本地驱动器后返回此处，然后继续执行以下步骤。
 
 
 <!-- ====================================================================== -->
-## <a name="step-4---open-the-existing-win32-single-window-app-webview2gettingstartedsln"></a>步骤 4 - 打开现有的 Win32 单窗口应用 (WebView2GettingStarted.sln) 
+## <a name="step-4---open-the-finished-solution-webview2gettingstartedsln"></a>步骤 4 - 打开 WebView2GettingStarted.sln (已完成的解决方案) 
 
 首先是包含单个主窗口的基本桌面项目。  我们将从 **WebView2Samples** 存储库中的现有应用项目开始，在上一步中从 GitHub 克隆或下载该存储库。
 
@@ -79,7 +91,7 @@ ms.locfileid: "12676088"
 
 Visual Studio 安装程序可能会打开并提示你安装工作负载：
 
-![Visual Studio 安装程序提示安装“使用 C++进行桌面开发”工作负荷。](../media/installer-prompt-desktop-cpp-workload.png)
+![Visual Studio 安装程序提示安装“使用 C++进行桌面开发”工作负荷](../media/installer-prompt-desktop-cpp-workload.png)
 
 如果Visual Studio 安装程序提示安装工作负荷：
 
@@ -96,7 +108,7 @@ Visual Studio 安装程序可能会打开并提示你安装工作负载：
 
 可能会显示 Visual Studio **“查看解决方案操作”** 对话框，提示你是否要 **重定向项目**：
 
-![Visual Studio 的“查看解决方案操作”对话框，提示重定向项目。](../media/review-solution-actions-retarget-projects.png)
+![Visual Studio 的“查看解决方案操作”对话框，提示重定向项目](../media/review-solution-actions-retarget-projects.png)
 
 1. 如果出现该对话框，则可以单击 **“确定**”。
 
@@ -114,7 +126,7 @@ Visual Studio 安装程序可能会打开并提示你安装工作负载：
 
    `HelloWebView.cpp` 在 Visual Studio 的代码编辑器中打开。
 
-   ![克隆或下载的 WebView2 存储库中的“WebView2GettingStarted.sln”文件，在 visual Studio 中打开，解决方案资源管理器。](../media/webview2gettingstarted-sln-in-solution-explorer.png)
+   ![在 Visual Studio 中打开的克隆或下载的 WebView2 存储库中的“WebView2GettingStarted.sln”文件解决方案资源管理器](../media/webview2gettingstarted-sln-in-solution-explorer.png)
 
 上面的屏幕截图显示了一些 WebView2 代码 (`#include "WebView2.h"`) ，这些代码在克隆 (下载) 存储库后立即存在于文件中。
 
@@ -137,17 +149,42 @@ Visual Studio 安装程序可能会打开并提示你安装工作负载：
 
    下面是 Visual Studio 2017 屏幕截图，其中显示了一些有效的设置：
 
-   ![在 Visual Studio 2017 中，将 Windows SDK 版本设置为 10，将平台工具集设置为 Visual Studio。](../media/tool-version.png)
+   ![在 Visual Studio 2017 中，将 Windows SDK 版本设置为 10，将平台工具集设置为 Visual Studio](../media/tool-version.png)
 
    下面是 Visual Studio 2022 屏幕截图;这些值已正确，因此无需进行更改：
 
-   ![在 Visual Studio 2022 中，Windows SDK 版本已为 10，平台工具集已为 Visual Studio。](../media/tool-version-2022.png)
+   ![在 Visual Studio 2022 中，Windows SDK 版本已为 10，平台工具集已为 Visual Studio](../media/tool-version-2022.png)
 
 继续执行以下步骤。
 
 
 <!-- ====================================================================== -->
-## <a name="step-7---install-the-windows-implementation-libraries-wil"></a>步骤 7 - 安装 WINDOWS 实现库 (WIL) 
+## <a name="step-7---build-and-run-the-repos-finished-project"></a>步骤 7 - 生成并运行存储库的已完成项目
+
+此时，开发人员环境已设置为在 Visual Studio 的调试模式下运行 Win32 WebView2 应用并添加 WebView2 功能。
+
+---
+
+若要确认系统已设置为 WebView2 编码，请在调试模式下运行项目，如下所示：
+
+1. 选择 **“调试** > **开始调试** ” (`F5`) 生成并运行项目。
+
+   示例应用首先打开一个弹出窗口，其中显示将加载的 URL 以及“ **确定”** 按钮：
+
+   ![示例应用在空的 WebView2 窗口上显示一个弹出窗口，其中包含 URL 和“确定”按钮](../media/show-url.png)
+
+1. 单击 **“确定”** 按钮以关闭弹出窗口并继续转到 URL：
+
+   WebView2 窗口现在显示网页内容：必应网站。 `http://www.bing.com`
+
+   <!-- instance 3 of bing-window.png -->
+   ![示例应用现在显示必应网站](../media/bing-window.png)
+
+1. 关闭 **WebView 示例** 窗口。
+
+
+<!-- ====================================================================== -->
+## <a name="step-8---update-or-install-the-windows-implementation-libraries-wil"></a>步骤 8 - 更新或安装 WINDOWS 实现库 (WIL) 
 
 WIL 已安装在存储库的项目中，但请逐步完成这些步骤，了解设置并检查项目的设置。
 
@@ -163,7 +200,7 @@ WIL 已安装在存储库的项目中，但请逐步完成这些步骤，了解�
 
 1. 在**解决方案资源管理器**中，右键单击 **WebView2GettingStarted** 项目节点 (不是解决方案节点) ，然后选择 **“管理 NuGet 包**”。
 
-   ![管理 NuGet 包。](../media/manage-nuget-packages.png)
+   ![管理 NuGet 程序包](../media/manage-nuget-packages.png)
 
 1. 在 **NuGet** 窗口中，单击“ **浏览”** 选项卡。
 
@@ -175,7 +212,7 @@ WIL 已安装在存储库的项目中，但请逐步完成这些步骤，了解�
 
    在 Visual Studio 的 NuGet 包管理器中选择 **Microsoft.Windows.ImplementationLibrary** 包：
 
-   ![在 Visual Studio 的 NuGet 包管理器中选择“Microsoft.Windows.ImplementationLibrary”包。](../media/wil.png)
+   ![在 Visual Studio 的 NuGet 包管理器中选择“Microsoft.Windows.ImplementationLibrary”包](../media/wil.png)
 
    _若要缩放，请右键单击> **在新选项卡中打开图像**。_
 
@@ -198,13 +235,15 @@ Windows 实现库 (WIL) 现已安装，Windows 运行时 C++ 模板库 (WRL) 。
 [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 -->
 <!-- ====================================================================== -->
-## <a name="step-8---install-the-webview2-sdk"></a>步骤 8 - 安装 WebView2 SDK
+## <a name="step-9---update-or-install-the-webview2-sdk"></a>步骤 9 - 更新或安装 WebView2 SDK
 
-接下来，将安装 WebView2 SDK。  WebView2 SDK 包括由 Microsoft Edge 提供支持的 WebView2 控件，使你能够将 Web 技术 (HTML、CSS 和 JavaScript) 嵌入本机应用程序中。
+存储库中已完成的项目已为项目安装了 WebView2 SDK 版本。  如果从头开始使用 Win32 项目模板创建项目，则需要安装项目的 WebView SDK 包，如下所述。
+
+接下来，更新 (或安装) WebView2 SDK。  WebView2 SDK 包括由 Microsoft Edge 提供支持的 WebView2 控件，使你能够将 Web 技术 (HTML、CSS 和 JavaScript) 嵌入本机应用程序中。
 
 ---
 
-安装 WebView2 SDK，如下所示：
+更新 (或安装) WebView2 SDK，如下所示：
 
 1. 在 Visual Studio 中，请确保 **WebView2GettingStarted** 解决方案已打开，如上所述。
 
@@ -212,9 +251,11 @@ Windows 实现库 (WIL) 现已安装，Windows 运行时 C++ 模板库 (WRL) 。
 
    在 Visual Studio 中打开 **“NuGet 包管理器** ”选项卡和面板。
 
-   ![管理 NuGet 包。](../media/manage-nuget-packages.png)
+   ![管理 NuGet 程序包](../media/manage-nuget-packages.png)
 
-1. 在 **NuGet** 窗口中，单击“ **浏览”** 选项卡。
+1. 如果已为项目安装 WebView2 SDK，与存储库项目的情况一样，请在 **NuGet** 窗口中单击“ **已安装** ”选项卡或 **“更新”** 选项卡。
+
+1. 或者，如果要在新项目中安装 WebView2 SDK，请单击“ **浏览”** 选项卡。
 
 1. 在搜索栏的右侧，清除 **“包括预发行版** ”复选框 (除非你知道需要 SDK) 的预发行版本。
 
@@ -224,42 +265,15 @@ Windows 实现库 (WIL) 现已安装，Windows 运行时 C++ 模板库 (WRL) 。
    Microsoft.Web.WebView2
    ```
 
-1. 在右侧窗口中，单击 **“安装** (或 **更新**) 。  NuGet 将 WebView2 SDK 下载到计算机。
+1. 在右侧窗口中，单击 **“更新** (”或 **“安装**) ”。  NuGet 将 WebView2 SDK 下载到计算机。
 
-   ![在 Visual Studio 的 NuGet 包管理器中选择“Microsoft.Web.WebView2”包。](../media/nuget.png)
-
-   _若要缩放，请右键单击> **在新选项卡中打开图像**。_
+   ![在 Visual Studio 的 NuGet 包管理器中选择“Microsoft.Web.WebView2”包](../media/nuget.png)
 
 1. 关闭 **“NuGet 包管理器** ”选项卡。
 
-现已安装 WebView2 SDK，因此开发环境现已设置为将 WebView2 功能添加到 Win32 应用。
+WebView2 SDK 现已更新或安装，因此开发环境现已设置为将 WebView2 功能添加到 Win32 应用。
 
 继续执行以下步骤。
-
-
-<!-- ====================================================================== -->
-## <a name="step-9---run-the-finished-project"></a>步骤 9 - 运行已完成的项目
-
-此时，开发人员环境已设置为在 Visual Studio 的调试模式下运行 Win32 WebView2 应用并添加 WebView2 功能。
-
----
-
-若要确认系统已设置为 WebView2 编码，请在调试模式下运行项目，如下所示：
-
-1. 选择 **“调试** > **开始调试** ” (`F5`) 生成并运行项目。
-
-   示例应用首先打开一个弹出窗口，其中显示将加载的 URL 以及“ **确定”** 按钮：
-
-   ![示例应用在空的 WebView2 窗口上显示一个弹出窗口，其中包含 URL 和“确定”按钮。](../media/show-url.png)
-
-1. 单击 **“确定”** 按钮以关闭弹出窗口并继续转到 URL：
-
-   WebView2 窗口现在显示网页内容：必应网站。 `http://www.bing.com`
-
-   <!-- instance 3 of bing-window.png -->
-   ![示例应用现在显示必应网站。](../media/bing-window.png)
-
-1. 关闭 **WebView 示例** 窗口。
 
 
 <!-- ====================================================================== -->
@@ -269,104 +283,23 @@ Windows 实现库 (WIL) 现已安装，Windows 运行时 C++ 模板库 (WRL) 。
 
 1. 在 `HelloWebView.cpp`其中，删除以下代码：
 
+    :::code language="cpp" source="../code/sample/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp" id="IncludeHeader":::
+
+1. 在 `HelloWebView.cpp`其中，删除这两个注释行之间的代码行，但保留以下两个注释行：
+
    ```cpp
-   // include WebView2 header
-   #include "WebView2.h"
+   // <-- WebView2 sample code starts here -->
+   ...
+   // <-- WebView2 sample code ends here -->
    ```
-
-1. 在 `HelloWebView.cpp`其中，删除以下代码：
-
-```cpp
-// Step 3 - Create a single WebView within the parent window
-// Locate the browser and set up the environment for WebView
-CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
-   Callback<ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler>(
-      [hWnd](HRESULT result, ICoreWebView2Environment* env) -> HRESULT {
-
-         // Create a CoreWebView2Controller and get the associated CoreWebView2 whose parent is the main window hWnd
-         env->CreateCoreWebView2Controller(hWnd, Callback<ICoreWebView2CreateCoreWebView2ControllerCompletedHandler>(
-            [hWnd](HRESULT result, ICoreWebView2Controller* controller) -> HRESULT {
-               if (controller != nullptr) {
-                  webviewController = controller;
-                  webviewController->get_CoreWebView2(&webviewWindow);
-               }
-
-               // Add a few settings for the webview
-               // The demo step is redundant since the values are the default settings
-               ICoreWebView2Settings* Settings;
-               webviewWindow->get_Settings(&Settings);
-               Settings->put_IsScriptEnabled(TRUE);
-               Settings->put_AreDefaultScriptDialogsEnabled(TRUE);
-               Settings->put_IsWebMessageEnabled(TRUE);
-
-               // Resize WebView to fit the bounds of the parent window
-               RECT bounds;
-               GetClientRect(hWnd, &bounds);
-               webviewController->put_Bounds(bounds);
-
-               // Schedule an async task to navigate to Bing
-               webviewWindow->Navigate(L"https://www.bing.com/");
-
-               // Step 4 - Navigation events
-               // register an ICoreWebView2NavigationStartingEventHandler to cancel any non-https navigation
-               EventRegistrationToken token;
-               webviewWindow->add_NavigationStarting(Callback<ICoreWebView2NavigationStartingEventHandler>(
-                  [](ICoreWebView2* webview, ICoreWebView2NavigationStartingEventArgs* args) -> HRESULT {
-                     PWSTR uri;
-                     args->get_Uri(&uri);
-                     std::wstring source(uri);
-                     if (source.substr(0, 5) != L"https") {
-                        args->put_Cancel(true);
-                     }
-                     CoTaskMemFree(uri);
-                     return S_OK;
-                  }).Get(), &token);
-
-               // Step 5 - Scripting
-               // Schedule an async task to add initialization script that freezes the Object object
-               webviewWindow->AddScriptToExecuteOnDocumentCreated(L"Object.freeze(Object);", nullptr);
-               // Schedule an async task to get the document URL
-               webviewWindow->ExecuteScript(L"window.document.URL;", Callback<ICoreWebView2ExecuteScriptCompletedHandler>(
-                  [](HRESULT errorCode, LPCWSTR resultObjectAsJson) -> HRESULT {
-                     LPCWSTR URL = resultObjectAsJson;
-                     //doSomethingWithURL(URL);
-                     return S_OK;
-                  }).Get());
-
-               // Step 6 - Communication between host and web content
-               // Set an event handler for the host to return received message back to the web content
-               webviewWindow->add_WebMessageReceived(Callback<ICoreWebView2WebMessageReceivedEventHandler>(
-                  [](ICoreWebView2* webview, ICoreWebView2WebMessageReceivedEventArgs* args) -> HRESULT {
-                     PWSTR message;
-                     args->TryGetWebMessageAsString(&message);
-                     // processMessage(&message);
-                     webview->PostWebMessageAsString(message);
-                     CoTaskMemFree(message);
-                     return S_OK;
-                  }).Get(), &token);
-
-               // Schedule an async task to add initialization script that
-               // 1) Add an listener to print message from the host
-               // 2) Post document URL to the host
-               webviewWindow->AddScriptToExecuteOnDocumentCreated(
-                  L"window.chrome.webview.addEventListener(\'message\', event => alert(event.data));" \
-                  L"window.chrome.webview.postMessage(window.document.URL);",
-                  nullptr);
-
-               return S_OK;
-            }).Get());
-         return S_OK;
-      }).Get());
-```
-
 
 <!-- ====================================================================== -->
 ## <a name="step-11---include-the-webview2h-header-in-hellowebviewcpp"></a>步骤 11 - 在 HelloWebView.cpp 中包含 WebView2.h 标头
 
 上面，我们执行了以下操作：
-*  克隆或下载了包含标准 C++ Windows 桌面应用程序的现有项目。
-*  已安装 WINDOWS 实现库 (WIL) 。
-*  安装了 WebView2 SDK 以添加 WebView2 功能。
+*  克隆或下载了示例存储库，包括包含标准 C++ Windows 桌面应用程序的现有项目。
+*  已更新或安装 WINDOWS 实现库 (WIL) 。
+*  更新或安装 WebView2 SDK 以添加 WebView2 功能。
 *  （可选）从 `HelloWebView.cpp`中删除了 WebView2 代码。
 
 ---
@@ -379,10 +312,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 
 1. 如果以下代码尚不存在，请将以下代码粘贴到 `HelloWebView.cpp`最后 `#include` 一行之后：
 
-   ```cpp
-   // include WebView2 header
-   #include "WebView2.h"
-   ```
+    :::code language="cpp" source="../code/sample/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp" id="IncludeHeader":::
 
    请确保该 `include` 部分如下所示：
 
@@ -416,7 +346,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 
    示例应用将打开并显示一个空窗口：
 
-   ![示例应用显示一个空窗口。](../media/empty-app.png)
+   ![示例应用显示一个空窗口](../media/empty-app.png)
 
    你现在有一个正在运行的空 Win32 桌面应用，具有潜在的 WebView2 功能。
 
@@ -452,12 +382,12 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 
 1. 在 `HelloWebView.cpp`其中，找到以下代码：
 
-```cpp
-   UpdateWindow(hWnd);
-
-   // <-- WebView2 sample code starts here -->
-```
-
+   ```cpp
+      UpdateWindow(hWnd);
+   
+      // <-- WebView2 sample code starts here -->
+   ```
+   
 1. 如果以下代码尚不存在，请将以下代码粘贴到 `HelloWebView.cpp`其中。  将代码粘贴到行之间，并`// <-- WebView2 sample code ends here -->`执行以下操作`// <-- WebView2 sample code starts here -->`：
 
    ```cpp
@@ -467,40 +397,40 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
       Callback<ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler>(
          [hWnd](HRESULT result, ICoreWebView2Environment* env) -> HRESULT {
 
-               // Create a CoreWebView2Controller and get the associated CoreWebView2 whose parent is the main window hWnd
-               env->CreateCoreWebView2Controller(hWnd, Callback<ICoreWebView2CreateCoreWebView2ControllerCompletedHandler>(
-                  [hWnd](HRESULT result, ICoreWebView2Controller* controller) -> HRESULT {
+            // Create a CoreWebView2Controller and get the associated CoreWebView2 whose parent is the main window hWnd
+            env->CreateCoreWebView2Controller(hWnd, Callback<ICoreWebView2CreateCoreWebView2ControllerCompletedHandler>(
+               [hWnd](HRESULT result, ICoreWebView2Controller* controller) -> HRESULT {
                   if (controller != nullptr) {
                      webviewController = controller;
-                     webviewController->get_CoreWebView2(&webviewWindow);
+                     webviewController->get_CoreWebView2(&webview);
                   }
 
                   // Add a few settings for the webview
                   // The demo step is redundant since the values are the default settings
-                  ICoreWebView2Settings* Settings;
-                  webviewWindow->get_Settings(&Settings);
-                  Settings->put_IsScriptEnabled(TRUE);
-                  Settings->put_AreDefaultScriptDialogsEnabled(TRUE);
-                  Settings->put_IsWebMessageEnabled(TRUE);
+                  wil::com_ptr<ICoreWebView2Settings> settings;
+                  webview->get_Settings(&settings);
+                  settings->put_IsScriptEnabled(TRUE);
+                  settings->put_AreDefaultScriptDialogsEnabled(TRUE);
+                  settings->put_IsWebMessageEnabled(TRUE);
 
-                  // Resize the WebView2 control to fit the bounds of the parent window
+                  // Resize WebView to fit the bounds of the parent window
                   RECT bounds;
                   GetClientRect(hWnd, &bounds);
                   webviewController->put_Bounds(bounds);
 
                   // Schedule an async task to navigate to Bing
-                  webviewWindow->Navigate(L"https://www.bing.com/");
+                  webview->Navigate(L"https://www.bing.com/");
 
-                  // 4 - Navigation events
+                  // Step 4 - Navigation events
 
-                  // 5 - Scripting
+                  // Step 5 - Scripting
 
-                  // 6 - Communication between host and web content
+                  // Step 6 - Communication between host and web content
 
                   return S_OK;
                }).Get());
-         return S_OK;
-      }).Get());
+            return S_OK;
+         }).Get());
    ```
 
 1. 选择 **“文件** > **保存所有** (`Ctrl`++`Shift``S`) 保存项目。
@@ -512,13 +442,13 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 
    如果首先删除所有 WebView2 代码，此时，你已有一个 Win32 窗口，其中填充了一个 WebView2 控件，其中包含网页内容：
 
-   ![必应窗口。](../media/bing-window.png)
+   ![必应窗口](../media/bing-window.png)
 
 1. 关闭 **WebView 示例** 应用窗口。
 
    或者，如果保留所有 WebView2 代码，此时会在空的 WebView2 窗口上打开一个弹出的 WebView2 窗口，其中包含必应的警报对话框。  单击 **“确定”** 按钮关闭必应对话框。  现在，WebView2 控件由必应页面内容填充：
 
-   ![示例应用显示一个最初为空的窗口，其中包含必应对话框。](../media/empty-app-with-bing-dialog.png)
+   ![示例应用使用必应对话框显示最初为空的窗口](../media/empty-app-with-bing-dialog.png)
 
 1. 如果 **WebView 示例** 应用窗口处于打开状态，请关闭它。
 
@@ -542,7 +472,7 @@ maintenance link (keep)
 
    如果现在需要详细信息，请在新窗口或选项卡中查看 [WebView2 应用的导航事件](../concepts/navigation-events.md)。
 
-![导航事件。](../media/navigation-events.png)
+![导航事件](../media/navigation-events.png)
 
 在错误情况下，可能会发生以下一个或多个事件，具体取决于导航是否继续到错误网页：
 
@@ -558,22 +488,7 @@ maintenance link (keep)
 
 1. 如果尚不存在，请将以下代码粘贴到 `HelloWebView.cpp`步骤 3 代码下方：
 
-   ```cpp
-   // Step 4 - Navigation events
-   // register an ICoreWebView2NavigationStartingEventHandler to cancel any non-https navigation
-   EventRegistrationToken token;
-   webviewWindow->add_NavigationStarting(Callback<ICoreWebView2NavigationStartingEventHandler>(
-      [](ICoreWebView2* webview, ICoreWebView2NavigationStartingEventArgs * args) -> HRESULT {
-         PWSTR uri;
-         args->get_Uri(&uri);
-         std::wstring source(uri);
-         if (source.substr(0, 5) != L"https") {
-               args->put_Cancel(true);
-         }
-         CoTaskMemFree(uri);
-         return S_OK;
-      }).Get(), &token);
-   ```
+    :::code language="cpp" source="../code/sample/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp" id="NavigationEvents":::
 
 现在，应用不会打开任何非 https 站点。  可以使用类似的机制来完成其他任务，例如将导航限制在自己的域中。
 
@@ -596,18 +511,7 @@ maintenance link (keep)
 
 1. 如果以下代码尚不存在，请将以下代码粘贴到 `HelloWebView.cpp`以下代码中：
 
-   ```cpp
-   // Step 5 - Scripting
-   // Schedule an async task to add initialization script that freezes the Object object
-   webviewWindow->AddScriptToExecuteOnDocumentCreated(L"Object.freeze(Object);", nullptr);
-   // Schedule an async task to get the document URL
-   webviewWindow->ExecuteScript(L"window.document.URL;", Callback<ICoreWebView2ExecuteScriptCompletedHandler>(
-      [](HRESULT errorCode, LPCWSTR resultObjectAsJson) -> HRESULT {
-         LPCWSTR URL = resultObjectAsJson;
-         //doSomethingWithURL(URL);
-         return S_OK;
-      }).Get());
-   ```
+    :::code language="cpp" source="../code/sample/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp" id="Scripting":::
 
 1. 选择 **“文件** > **保存所有** (`Ctrl`++`Shift``S`) 保存项目。
 
@@ -650,27 +554,7 @@ maintenance link (keep)
 
 1. 如果尚未存在，请将以下代码粘贴到 `HelloWebView.cpp`以下代码中：
 
-   ```cpp
-   // Step 6 - Communication between host and web content
-   // Set an event handler for the host to return received message back to the web content
-   webviewWindow->add_WebMessageReceived(Callback<ICoreWebView2WebMessageReceivedEventHandler>(
-      [](ICoreWebView2* webview, ICoreWebView2WebMessageReceivedEventArgs * args) -> HRESULT {
-         PWSTR message;
-         args->TryGetWebMessageAsString(&message);
-         // processMessage(&message);
-         webview->PostWebMessageAsString(message);
-         CoTaskMemFree(message);
-         return S_OK;
-      }).Get(), &token);
-
-   // Schedule an async task to add initialization script that
-   // 1) Add an listener to print message from the host
-   // 2) Post document URL to the host
-   webviewWindow->AddScriptToExecuteOnDocumentCreated(
-      L"window.chrome.webview.addEventListener(\'message\', event => alert(event.data));" \
-      L"window.chrome.webview.postMessage(window.document.URL);",
-   nullptr);
-   ```
+    :::code language="cpp" source="../code/sample/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp" id="CommunicationHostWeb":::
 
 1. 选择 **“文件** > **保存所有** (`Ctrl`++`Shift``S`) 保存项目。
 
@@ -678,19 +562,19 @@ maintenance link (keep)
 
    示例应用首先打开一个弹出窗口，其中显示将加载的 URL 以及“ **确定”** 按钮：
 
-   ![示例应用在空的 WebView2 窗口上显示一个弹出窗口，其中包含 URL 和“确定”按钮。](../media/show-url.png)
+   ![示例应用在空的 WebView2 窗口上显示一个弹出窗口，其中包含 URL 和“确定”按钮](../media/show-url.png)
 
 1. 单击 **“确定”** 按钮以关闭弹出窗口并继续转到 URL：
 
    WebView2 窗口现在显示网页内容：必应网站。 `http://www.bing.com`
 
    <!-- instance 2 of bing-window.png -->
-   ![示例应用现在显示必应网站。](../media/bing-window.png)
+   ![示例应用现在显示必应网站](../media/bing-window.png)
 
 1. 准备好后，关闭 **WebView 示例** 窗口。
 
 
-恭喜你，你构建了第一个 WebView2 应用！  现已为 WebView2 应用开发设置开发环境，以便在 Win32 应用中包含 WebView2 控件。  你还介绍了 WebView2 编程概念。
+恭喜，你构建了一个 Win32 应用，用于托管和使用 WebView2 控件！  现已为 WebView2 应用开发设置开发环境，以便在 Win32 应用中包含 WebView2 控件。  你还介绍了 WebView2 编程概念。
 
 
 <!-- ====================================================================== -->
@@ -703,25 +587,6 @@ maintenance link (keep)
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-developer.microsoft.com：
-* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - developer.microsoft.com 的 WebView2 功能的初始简介。
-
-本地页面：
-* [Win32 示例应用](../samples/webview2apissample.md)
-* [管理用户数据文件夹](../concepts/user-data-folder.md)
-* [WebView2 示例代码](../code-samples-links.md) - **WebView2Samples** 存储库中的示例指南。
-* [WebView2 应用的开发最佳做法](../concepts/developer-guide.md)
-
-WebView2Samples 存储库：
-* [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples)
-* [Win32 示例代码](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) - 本教程中使用的代码。
-* [WebView2 API 示例](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/README.md) - WebView2 功能的综合示例。
-* [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) - WebView2 示例应用。
-
-图书馆：
+* [WebView2 示例代码](../code-samples-links.md)
 * [Windows 运行时 C++ 模板库 (WRL)](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true)
 * [WINDOWS 实现库 (WIL) ](https://github.com/Microsoft/wil) GitHub 存储库。
-
-<!--clickable full link:
-https://docs.microsoft.com/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=msvc-170&preserve-view=true&viewFallbackFrom=vs-2019
--->

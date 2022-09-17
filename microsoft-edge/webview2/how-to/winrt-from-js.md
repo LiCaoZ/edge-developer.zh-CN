@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 08/02/2022
-ms.openlocfilehash: 161e431bf4fb297697330ae36f4c9a043f248458
-ms.sourcegitcommit: 2a64780c851848c04b0791b5ea1a1543aca2a80a
+ms.openlocfilehash: eff47c0dc4d7364a5627e1c58f50d3b2be46b345
+ms.sourcegitcommit: ff01ae09a41be04a53ca8ee918bbf5fb999543c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "12707990"
+ms.lasthandoff: 09/17/2022
+ms.locfileid: "12754747"
 ---
 # <a name="call-native-side-winrt-code-from-web-side-code"></a>从 Web 端代码调用本机端 WinRT 代码
 
@@ -88,7 +88,7 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 
    如果已有自己的应用代码库，则可以在 Visual Studio 中打开该项目，而不是从`WebView2Samples`存储库中的**webview2_sample_uwp**示例开始。
 
-1. 如果尚未完成，请将存储库下载或克隆 `WebView2Samples` 到本地驱动器。  在单独的窗口或选项卡中，请参阅“_为 WebView2 设置开发环境_”中的“[下载 WebView2Samples 存储库](../how-to/machine-setup.md#download-the-webview2samples-repo)”。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
+1. 如果尚未完成，请将存储库克隆或下载 `WebView2Samples` 到本地驱动器。  在单独的窗口或选项卡中，请参阅“_为 WebView2 设置开发环境_”中的“[下载 WebView2Samples 存储库](../how-to/machine-setup.md#download-the-webview2samples-repo)”。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
 
 1. 在本地驱动器上 `.sln` ，在 Visual Studio 中的目录中打开该文件，例如：
 

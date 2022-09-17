@@ -8,12 +8,12 @@ ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.technology: webview
 ms.date: 11/12/2021
-ms.openlocfilehash: c21ab31743528739c76fbc9bed67257f37af3c56
-ms.sourcegitcommit: bc111fcce45b119bbf0cd4ae6942fa77aca41613
+ms.openlocfilehash: 1c62f51428486508ff4880af74faa2d15dbe91eb
+ms.sourcegitcommit: ff01ae09a41be04a53ca8ee918bbf5fb999543c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "12713467"
+ms.lasthandoff: 09/17/2022
+ms.locfileid: "12754789"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介
 
@@ -21,7 +21,7 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术(HTML、C
 
 使用 WebView2 可以在本机应用的不同部分嵌入 Web 代码，或在单个 WebView2 实例中生成所有本机应用。
 
-![应用示意图，其中本机 UI 区域位于左上角，WebView2 UI 区域位于右上角底部。](media/webview2/what-webview.png)
+![左上角和左上角具有本机 UI 区域的应用图，以及右上角和底部的 WebView2 UI 区域图](media/webview2/what-webview.png)
 
 若要开始生成 WebView2 应用，请参阅 [WebView2 入门](get-started/get-started.md)。
 
@@ -37,7 +37,7 @@ Microsoft Edge WebView2 控件允许在本机应用中嵌入 web 技术(HTML、C
 
 下图显示了从最大覆盖范围到最大功率的应用范围：
 
-![应用的范围，从最大覆盖范围但更少的功率，到最佳混合，最大功率但较少覆盖范围。](media/webview2/web-native.png)
+![应用的频谱，从最大覆盖范围，但更少的功率，到最佳混合混合，到最大功率，但触手可及](media/webview2/web-native.png)
 
 *  广泛的**范围**包括网站和渐进式 Web 应用。
 
@@ -104,13 +104,9 @@ WebView2 应用可以在以下版本的 Windows 上运行：
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-<!-- possibly remove some of these and rely on TOC instead -->
-
 * [WebView2 功能和 API 概述](concepts/overview-features-apis.md)
-* [了解不同的 WebView2 SDK 版本](concepts/versioning.md)
+* [入门教程](get-started/get-started.md)
 * [分发应用和 WebView2 运行时](concepts/distribution.md)
-* [开发安全的 WebView2 应用的最佳做法](concepts/security.md)
-* [管理用户数据文件夹](concepts/user-data-folder.md)
-* [如何使用 WebView2 进行调试](how-to/debug.md)
-* [使用 Microsoft Edge WebDriver 自动执行和测试 WebView2](how-to/webdriver.md)
-* [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - 演示 WebView2 SDK 功能和 API 使用模式的示例，包括最近添加的 WebView2 功能。
+
+developer.microsoft.com：
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - developer.microsoft.com 的 WebView2 功能的初始简介。

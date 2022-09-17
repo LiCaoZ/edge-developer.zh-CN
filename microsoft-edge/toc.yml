@@ -747,6 +747,15 @@
             - name: 示例应用
               href: webview2/code-samples-links.md
               displayName: null
+            - name: Win32 示例应用
+              href: webview2/samples/webview2apissample.md
+              displayName: 'WebView2APISample, SampleApps, Win32 sample app'
+            - name: 使用 Visual Composition 的 Win32 示例应用
+              href: webview2/samples/webview2samplewincomp.md
+              displayName: 'WebView2SampleWinComp, Win32 sample app with Visual Composition'
+            - name: Win32 示例 WebView2Browser
+              href: webview2/samples/webview2browser.md
+              displayName: WebView2Browser
             - name: WinUI 2 (UWP) 示例应用
               href: webview2/samples/webview2_sample_uwp.md
               displayName: 'webview2_sample_uwp, WinUI 2 (UWP) sample app'
@@ -759,12 +768,6 @@
             - name: WinForms 示例应用
               href: webview2/samples/webview2windowsformsbrowser.md
               displayName: 'WebView2WindowsFormsBrowser, WinForms sample app'
-            - name: Win32 示例应用
-              href: webview2/samples/webview2apissample.md
-              displayName: 'WebView2APISample, SampleApps, Win32 sample app'
-            - name: 使用 Visual Composition 的 Win32 示例应用
-              href: webview2/samples/webview2samplewincomp.md
-              displayName: 'WebView2SampleWinComp, Win32 sample app with Visual Composition'
         - name: 部署示例
           items:
             - name: 部署示例

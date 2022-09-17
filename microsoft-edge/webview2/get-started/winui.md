@@ -7,18 +7,31 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 07/06/2022
-ms.openlocfilehash: f1372eea3ee3cd1501e30ef3b4334b229ee09c58
-ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
+ms.openlocfilehash: 9c43313650b9ed31d86c042b84241f07dcd15f7f
+ms.sourcegitcommit: ff01ae09a41be04a53ca8ee918bbf5fb999543c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "12676067"
+ms.lasthandoff: 09/17/2022
+ms.locfileid: "12754614"
 ---
 # <a name="get-started-with-webview2-in-winui-3-windows-app-sdk-apps"></a>WinUI 3 (Windows 应用 SDK) 应用中的 WebView2 入门
 
 本文介绍如何为 WinUI 3 (Windows 应用 SDK) 设置开发工具和创建初始 WebView2 应用，并在此过程中了解 WebView2 概念。
 
-本教程从空白 WinUI 3 项目的 Visual Studio 项目模板开始，然后添加 WebView2 控件。  然后，在用户尝试导航到带有 `http://` 前缀的 URL 时，添加地址栏和逻辑以显示警告对话框。  GitHub： [WebView2Samples 存储库> WinUI3_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted)中提供了已完成的示例。
+在本教程中，你将使用桌面) Visual Studio 项目模板 **中的空白应用打包 (WinUI ** 创建空白 WinUI 3 项目。  该项目模板使用 WindowsAppSDK，其中包括 WebView2 SDK。  添加 WebView2 控件。  然后，在用户尝试导航到带有 `http://` 前缀的 URL 时，添加地址栏和逻辑以显示警告对话框。
+
+![显示必应网站的示例应用](winui-images/getting-started-bing.png)
+
+
+#### <a name="completed-project"></a>已完成的项目
+
+从 2020 年起 (此教程项目的已完成版本) 可在 **WebView2Samples** 存储库中使用：
+
+*  示例名称： **WinUI3_GettingStarted**
+*  存储库目录： [WinUI3_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted)
+*  解决方案文件： **WinUI_Sample.sln**
+
+本教程已更新，仅创建一个项目，而不是另一个项目，“ (包) ”项目，如 2020 年。
 
 
 <!-- ====================================================================== -->

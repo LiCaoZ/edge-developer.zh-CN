@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 07/27/2022
-ms.openlocfilehash: ff7e56ad55324d128c82c581da8a605b8ec98875
-ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
+ms.openlocfilehash: ceedd319f77ca37df3b5082cd0feac79fce6575e
+ms.sourcegitcommit: ff01ae09a41be04a53ca8ee918bbf5fb999543c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "12675554"
+ms.lasthandoff: 09/17/2022
+ms.locfileid: "12754761"
 ---
 # <a name="set-up-your-dev-environment-for-webview2"></a>为 WebView2 设置开发环境
 
@@ -22,11 +22,11 @@ ms.locfileid: "12675554"
 <!-- ====================================================================== -->
 ## <a name="install-visual-studio"></a>安装 Visual Studio
 
-1. 安装 [Visual Studio](https://visualstudio.microsoft.com) 2015 或更高版本，例如 Visual Studio Professional 2022。
+1. 安装 [Visual Studio](https://visualstudio.microsoft.com) 2015 或更高版本，例如 Visual Studio Professional 2019。  大多数 WebView2 示例都是使用 Visual Studio 2019 创建和测试的。  如果示例是使用 Visual Studio 2019 创建的，则在使用 Visual Studio 2022 中的示例之前，应在 Visual Studio 2019 中生成并运行该示例。
 
    WebView2 示例专为 Microsoft **Visual Studio** 而不适用于 Microsoft **Visual Studio Code**。
 
-   如果要安装 Visual Studio 2022，则可以立即接受默认值;此时可以单击 **“安装**”，并拒绝安装工作负荷。  稍后打开特定 `.sln` 文件时，Visual Studio 会提示你安装适合平台的工作负载。
+   如果要安装 Visual Studio，则可以立即接受默认值;此时，可以单击 **“安装**”，然后拒绝安装工作负荷。  稍后打开特定 `.sln` 文件时，Visual Studio 会提示你安装适合平台的工作负载。
 
 
 <!-- ====================================================================== -->
@@ -51,11 +51,15 @@ ms.locfileid: "12675554"
 请参阅 [了解不同的 WebView2 SDK 版本](../concepts/versioning.md)。
 
 
-<!-- The h3 section [Download or clone the WebView2Samples repo](../get-started/win32.md#download-or-clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->
+<!-- The h3 section [Clone or download the WebView2Samples repo](../get-started/win32.md#download-or-clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->
 <!-- ====================================================================== -->
 ## <a name="download-the-webview2samples-repo"></a>下载 WebView2Samples 存储库
 
-可以将存储库下载为 `.zip` 文件，也可以克隆存储库。
+有两个存储库包含 WebView2 示例：
+*  [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples)
+*  [WebView2Browser 存储库](https://github.com/MicrosoftEdge/WebView2Browser)
+
+可以下载存储库作为 `.zip` 文件，或克隆存储库。
 
 *  如果将存储库 (作为 `.zip` 文件) 下载，则会获得存储库的快照副本。  然后，可以稍后下载另一个更新的存储库副本。
 
@@ -64,7 +68,7 @@ ms.locfileid: "12675554"
 
 若要将存储库 (作为 `.zip` 文件下载) ：
 
-1. 在新窗口或选项卡中打开 [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) 。
+1. 在新窗口或选项卡中打开 [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) (或 [WebView2Browser 存储库](https://github.com/MicrosoftEdge/WebView2Browser)) 。
 
 1. 单击 GitHub 存储库右上角的绿色 **“代码”** 按钮，然后单击 **“下载 ZIP**”。
 
@@ -93,7 +97,7 @@ ms.locfileid: "12675554"
 1. 建议：从`WebView2Samples-main``WebView2Samples`中重命名根目录，以匹配存储库名称和路径。
 
 
-<!-- The h3 section [Download or clone the WebView2Samples repo](../get-started/win32.md#download-or-clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->
+<!-- The h3 section [Clone or download the WebView2Samples repo](../get-started/win32.md#download-or-clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->
 <!-- ====================================================================== -->
 ## <a name="clone-the-webview2samples-repo"></a>克隆 WebView2Samples 存储库
 
@@ -104,7 +108,7 @@ ms.locfileid: "12675554"
 *  如果克隆存储库，则可以使用 git 命令或各种开发人员应用的功能更新本地副本。
 
 
-若要 `WebView2Samples` 克隆存储库，必须先安装 git。  可以下载存储库，如上所述，也可以克隆它。
+若要克隆 `WebView2Samples` 存储库 (或 `WebView2Browser` 存储库) ，必须先安装 git。  可以下载存储库，如上所述，也可以克隆它。
 
 ### <a name="install-git"></a>安装 git
 
@@ -183,7 +187,7 @@ ms.locfileid: "12675554"
 <!-- ====================================================================== -->
 ## <a name="open-a-webview2samples-sln-file-in-visual-studio"></a>在 Visual Studio 中打开 WebView2Samples .sln 文件
 
-下载或克隆 `WebView2Samples` 存储库后，在 Visual Studio 中打开文件 `.sln` 。
+克隆或下载 `WebView2Samples` 存储库后，在 Visual Studio 中打开文件 `.sln` 。
 
 1. 在存储库目录结构的本地副本中，找到一个 `.sln` 文件。  [WebView2Samples 存储库中的顶级自述文件](https://github.com/MicrosoftEdge/WebView2Samples#readme)提供了类似的概述。
 
@@ -251,7 +255,7 @@ WebView2 SDK 包括由 Microsoft Edge 提供支持的 WebView2 控件，使你�
 
 每个文件的每个项目节点安装 `.sln` 一次 WebView2 SDK。  WebView2 SDK 安装仅适用于它所安装的项目。
 
-通过 Visual Studio 中的 **NuGet 包**管理器面板安装 WebView2 SDK NuGet 包，而不是从 nuget.org 下载 `Microsoft.Web.WebView2` SDK NuGet 包。  下载或克隆 WebView2Samples 存储库后，在 Visual Studio 中打开存储库的文件 `.sln` 之一，并在解决方案中右键单击项目节点。  使用 **NuGet 包管理器** 面板将 SDK 安装 `Microsoft.Web.WebView2` 为 NuGet 包。
+通过 Visual Studio 中的 **NuGet 包**管理器面板安装 WebView2 SDK NuGet 包，而不是从 nuget.org 下载 `Microsoft.Web.WebView2` SDK NuGet 包。  克隆或下载 WebView2Samples 存储库后，在 Visual Studio 中打开存储库的文件 `.sln` 之一，然后右键单击解决方案中的项目节点。  使用 **NuGet 包管理器** 面板将 SDK 安装 `Microsoft.Web.WebView2` 为 NuGet 包。
 
 SDK `Microsoft.Web.WebView2` 在发布和预发行版本中可用。  若要开始使用，建议使用发布版本。
 

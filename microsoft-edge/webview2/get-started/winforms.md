@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 222b458665f3e2df7efeb6c1b44f0f50ba6f76a5
-ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
+ms.openlocfilehash: 1ed1c8c93e1f67f1fa744300adf603a1269544fc
+ms.sourcegitcommit: ff01ae09a41be04a53ca8ee918bbf5fb999543c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "12675997"
+ms.lasthandoff: 09/17/2022
+ms.locfileid: "12754726"
 ---
 # <a name="get-started-with-webview2-in-winforms-apps"></a>WinForms 应用中的 WebView2 入门
 
@@ -21,19 +21,30 @@ todo: errors experienced with vs2022 by following these instructions:
 *  The addressbar text box & Go button shift to the right when alt+tab to the Form1 window. 
 -->
 
-本文介绍如何为 WinForms 平台设置开发工具和创建初始 WebView2 应用，并在此过程中了解 WebView2 概念。
+本教程可帮助你：
+*  设置开发工具。
+*  使用 **C# Windows 窗体应用 (.NET Framework) ** Visual Studio 项目模板创建 WinForms 项目。
+*  安装 **WinForms 项目的 Microsoft.Web.WebView2** SDK 包。
+*  了解一路上的 WebView2 概念。
+
+
+#### <a name="completed-project"></a>已完成的项目
+
+已完成的版本<!--TODO: what date?--> 此教程项目的 **WebView2Samples** 存储库中提供：
+
+*  示例名称： **Win32_GettingStarted**
+*  存储库目录： [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted)
+*  解决方案文件： **WebView2GettingStarted.sln**
 
 
 <!-- ====================================================================== -->
-## <a name="step-1---optionally-download-or-clone-the-webview2samples-repo"></a>步骤 1 - （可选）下载或克隆 WebView2Samples 存储库
+## <a name="step-1---optionally-clone-or-download-the-webview2samples-repo"></a>步骤 1 - 可以选择克隆或下载 WebView2Samples 存储库
 
 执行以下任一操作：
 
-*  使用以下步骤在 Visual Studio 中创建新项目。  若要查看已完成的项目，可以在存储库中`WebView2Samples`看到[WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted)目录。
+*  使用以下步骤从项目模板开始，在 Visual Studio 中创建新项目。
 
-*  下载或克隆 `WebView2Samples` 存储库，在 Visual Studio 中打开已完成的项目，并按照本文中的步骤了解创建 WinForms 项目并了解添加的 WebView2 代码。
-
-GitHub 的相应入门示例： [WinForms_GettingStarted/WinForms_GettingStarted.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted) (没有自述文件) 。
+*  克隆或下载 `WebView2Samples` 存储库，在 Visual Studio 中打开已完成的项目，并按照本文中的步骤了解创建 WinForms 项目并了解添加的 WebView2 代码。  请参阅在_为 WebView2 设置开发人员环境_时[下载 WebView2Samples 存储库](../how-to/machine-setup.md#download-the-webview2samples-repo)。  WebView2Samples 存储库目录 [WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted)中提供了本教程项目的已完成版本。
 
 
 <!-- ====================================================================== -->
@@ -49,6 +60,8 @@ Microsoft Visual Studio 是必需的。  本教程不支持 Microsoft Visual Stu
 <!-- ====================================================================== -->
 ## <a name="step-3---install-a-preview-channel-of-microsoft-edge"></a>步骤 3 - 安装 Microsoft Edge 的预览频道
 
+<!-- TODO: delete this major step? -->
+
 1. 在受支持的操作系统 [上安装任何 Microsoft Edge 预览体验成员 (预览) 频道](https://www.microsoftedgeinsider.com/download) (Beta、Dev 或 Canary) ， (OS) ：
    *  Windows 7
    *  Windows 8.1
@@ -61,7 +74,9 @@ Microsoft Visual Studio 是必需的。  本教程不支持 Microsoft Visual Stu
 <!-- ====================================================================== -->
 ## <a name="step-4---install-the-webview2-runtime-optional"></a>步骤 4 - 安装 WebView2 运行时 (可选) 
 
-1. （可选）安装 WebView2 运行时。  请参阅 [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2)。
+<!-- TODO: delete this major step? -->
+
+1. （可选）安装 WebView2 <!--Fixed Version--> 运行。  转到 [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2)，单击 **“立即下载”** 链接。  在“ **固定版本”** 部分中，选择版本和体系结构，然后单击“ **下载** ”按钮。  一个文件，例如 `Microsoft.WebView2.FixedVersionRuntime.103.0.1264.71.x64.cab` 放置在 **下载目录中** 。  
 
    如果不确定，请跳过此步骤;可以改用上一步中的 Microsoft Edge 预览频道。
   
@@ -83,13 +98,9 @@ Microsoft Visual Studio 是必需的。  本教程不支持 Microsoft Visual Stu
 
    “Visual Studio **打开”最近** 显示的窗口：
 
-   ![Visual Studio 打开面板显示“创建新项目卡”。](media/winforms-opening-panel.png)
+   ![Visual Studio 打开面板显示“创建新项目卡”](media/winforms-opening-panel.png)
 
-1. 在右侧，单击 **“创建新项目** 卡”。
-
-   将显示“Visual Studio **创建新项目** ”窗口：
-
-   ![Visual Studio“创建新项目”窗口。](media/vs2022-create-a-new-project.png)
+1. 在右侧，单击 **“创建新项目** 卡”。  Visual Studio **“创建新项目** ”窗口随即打开。
 
 1. 在 **“搜索** ”文本框中，粘贴或开始键入以下内容：
 
@@ -99,9 +110,9 @@ Microsoft Visual Studio 是必需的。  本教程不支持 Microsoft Visual Stu
 
    显示搜索结果，列出项目类型。
 
-1. 选择 **C# Windows 窗体应用 (.NET Framework) **卡，然后单击“**下一步**”按钮：
+1. 选择 **C# Windows 窗体应用 (.NET Framework) **卡。  请确保名称与 **C#** 图标匹配，然后将名称**Windows 窗体应用 (.NET Framework) **。  然后单击“ **下一步** ”按钮：
 
-   ![在“创建新项目”面板中，选择“C# > Windows 窗体应用 (.NET Framework) ”。](media/winforms-new-project.png)
+   ![在“创建新项目”面板中，选择“C# > Windows 窗体应用 (.NET Framework) ”](media/winforms-new-project.png)
 
 1. 在 **“项目名称** ”文本框中，输入项目名称。  本教程文章使用名称 **WinForms_GettingStarted**，如已完成项目的 [存储库目录名称](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted) 。
 
@@ -109,13 +120,13 @@ Microsoft Visual Studio 是必需的。  本教程不支持 Microsoft Visual Stu
 
 1. 在 **“框架”** 下拉列表中，选择 **.NET Framework 4.7.2** 或更高版本，例如 **.NET Framework 4.8**：
 
-   ![填写“配置新项目”窗口。](media/winforms-start-proj.png)
+   ![填写“配置新项目”窗口](media/winforms-start-proj.png)
 
 1. 单击 **“创建”** 按钮。
 
    Visual Studio 窗口随即打开，显示解决方案资源管理器中的基线 WinForms 项目，并显示窗体设计器窗口：
 
-   ![Visual Studio 窗口，显示基线 WinForms 项目和窗体设计器。](media/vs2022-new-empty-winforms-gettingstarted-project.png)
+   ![Visual Studio 窗口，显示基线 WinForms 项目和窗体设计器](media/vs2022-new-empty-winforms-gettingstarted-project.png)
 
 1. 选择 **“文件** > **保存所有** () `Ctrl``S`+`Shift`+。
 
@@ -124,7 +135,7 @@ Microsoft Visual Studio 是必需的。  本教程不支持 Microsoft Visual Stu
    从新的 WinForms 项目打开一个空的 **Form1** 窗口：
    
    <!-- used at end of 2 sections: -->
-   ![来自全新 WinForms 项目的空 Form1 窗口。](media/form1-empty-window-fresh-winforms-project.png)
+   ![来自新 WinForms 项目的空 Form1 窗口](media/form1-empty-window-fresh-winforms-project.png)
 
 1. 关闭 **Form1** 窗口。
 
@@ -137,13 +148,13 @@ Microsoft Visual Studio 是必需的。  本教程不支持 Microsoft Visual Stu
 <!-- ====================================================================== -->
 ## <a name="step-6---install-the-webview2-sdk"></a>步骤 6 - 安装 WebView2 SDK
 
-对于每个 WebView2 项目，使用 Visual Studio 中的 NuGet 包管理器将 WebView2 SDK 添加到项目。  安装 Microsoft.Web.WebView2 SDK NuGet 包供当前项目使用。
+对于每个 WebView2 项目，使用 Visual Studio 中的 NuGet 包管理器将 WebView2 SDK 添加到项目。  安装 **Microsoft.Web.WebView2** SDK NuGet 包供当前项目使用。
 
 使用 NuGet 将 WebView2 SDK 添加到项目，如下所示：
 
 1. 在**解决方案资源管理器**中，右键单击项目名称 (而不是它上面) 的解决方案名称，然后选择 **“管理 NuGet 包**”：
 
-   ![管理 NuGet 包。](media/winforms-getting-started-mng-nuget.png)
+   ![管理 NuGet 包](media/winforms-getting-started-mng-nuget.png)
 
    NuGet 包管理器将在 Visual Studio 中打开。
 
@@ -153,13 +164,13 @@ Microsoft Visual Studio 是必需的。  本教程不支持 Microsoft Visual Stu
 
 1. 在搜索栏中键入 **WebView2**，然后在搜索栏下方单击 **Microsoft.Web.WebView2** 进行选择：
 
-   ![Visual Studio 中的 NuGet 包管理器，为当前项目安装 Microsoft.Web.WebView2 SDK NuGet 包。](media/winforms-project-nuget-webview2-install.png)
+   ![Visual Studio 中的 NuGet 包管理器，为当前项目安装 Microsoft.Web.WebView2 SDK NuGet 包](media/winforms-project-nuget-webview2-install.png)
 
    _若要缩放，请右键单击> **在新选项卡中打开图像**。_
 
 1. 单击“ **安装** (”或 **“更新**) ”按钮。  “ **预览更改** ”对话框随即打开：
 
-   ![“预览更改”对话框。](media/winforms-install-webview2-preview.png)
+   ![“预览更改”对话框](media/winforms-install-webview2-preview.png)
 
 1. 单击 **“确定”** 按钮。
 
@@ -172,10 +183,10 @@ Microsoft Visual Studio 是必需的。  本教程不支持 Microsoft Visual Stu
    正在运行的项目显示与之前相同的空窗口：
 
    <!-- used at end of 2 sections: -->
-   ![来自全新 WinForms 项目的空 Form1 窗口。](media/form1-empty-window-fresh-winforms-project.png)
+   ![来自新 WinForms 项目的空 Form1 窗口](media/form1-empty-window-fresh-winforms-project.png)
 
    <!-- what's the toolbar?
-   ![Sample app displays an empty window.](media/winforms-empty-app.png) -->
+   ![Sample app displays an empty window](media/winforms-empty-app.png) -->
 
 1. 关闭 **Form1** 窗口。
 
@@ -195,11 +206,11 @@ Microsoft Visual Studio 是必需的。  本教程不支持 Microsoft Visual Stu
 
 1. 在右侧，选择**窗体 (Windows 窗体) **，然后单击“**添加**”按钮：
 
-   ![“添加新项”窗口，扩展为“Visual C# Items”>“Windows 窗体”，选择“窗体 (Windows 窗体) ”。](media/add-new-item-form-windows-forms.png)
+   ![“添加新项”窗口，扩展为“Visual C# 项目”>“Windows 窗体”，选择“窗体 (Windows 窗体) ”](media/add-new-item-form-windows-forms.png)
 
    项目现在有一个附加窗体，其中的文件名`Form2.cs`显示在窗体设计器和解决方案资源管理器中：
 
-   ![在窗体设计器和解决方案资源管理器中添加的窗体 Form2.cs。](media/winforms-added-form2.png)
+   ![窗体设计器和解决方案资源管理器中添加的窗体 Form2.cs](media/winforms-added-form2.png)
 
 1. 单击 **Form1** 画布。  我们不会使用 **Form2**。
 
@@ -213,13 +224,13 @@ Microsoft Visual Studio 是必需的。  本教程不支持 Microsoft Visual Stu
 
 1. 在 **工具箱**中，单击或拖动 **WebView2** 控件到添加的控件的窗体设计器画布上，例如 `Form2.cs`：
 
-   ![显示 WebView2 的工具箱。](media/winforms-toolbox.png)
+   ![显示 WebView2 的工具箱](media/winforms-toolbox.png)
 
 1. 拖动 WebView2 控件的两侧，使其几乎填满所有画布。
 
 1. 确保选中窗体上的新 **WebView2** 控件。  在 **“属性** ”面板的“ **设计** ”部分中，将 ** (名称) ** 属性设置为 **webView** (小写“w”，大写“V”，没有数值后缀) 。  该控件最初可能命名为其他内容，例如 **WebView21**。  根据需要使用 **分类** 和 **字母排** 序选项按钮来查找属性：
 
-   ![WebView2 控件的属性。](media/winforms-properties.png)
+   ![WebView2 控件的属性](media/winforms-properties.png)
 
 1. 在 **“属性”** 面板的 **“Misc** ”部分中，将 **“源** ”属性设置为 `https://www.microsoft.com`”  **Source** 属性设置将在 WebView2 控件中显示的初始 URL。  
 
@@ -229,13 +240,13 @@ Microsoft Visual Studio 是必需的。  本教程不支持 Microsoft Visual Stu
 
    如果按下`Tab`+`Alt`切换到窗口，WebView2 控件在Windows 窗体窗体的 WebView2 控件中显示内容https://www.microsoft.com，并带有**跳转到主内容**链接：
 
-   ![Alt+Tab 使示例应用最初显示“跳到主内容”链接。](media/winforms-hello-webview-skip-to-main-content.png)
+   ![Alt+Tab 导致示例应用最初显示“跳到主内容”链接](media/winforms-hello-webview-skip-to-main-content.png)
 
 1. 如果需要，请单击 **“跳到主内容** ”链接。
 
    WebView2 控件以Windows 窗体形式显示 WebView2 https://www.microsoft.com控件中的内容：
 
-   ![示例应用显示 Microsoft 网站。](media/winforms-hello-webview.png)
+   ![示例应用显示 Microsoft 网站](media/winforms-hello-webview.png)
 
 1. 关闭 **Form1** 窗口。
 
@@ -276,11 +287,11 @@ Microsoft Visual Studio 是必需的。  本教程不支持 Microsoft Visual Stu
 
 1. 将文本框置于窗体左侧，与按钮垂直对齐，如下所示：
 
-   ![WinForms 设计器。](media/winforms-designer.png)
+   ![WinForms 设计器](media/winforms-designer.png)
 
 1. 调整文本框的大小，如下所示：
 
-   ![WinForms 设计器文本框和按钮。](media/winforms-designer-txtbtn.png)
+   ![WinForms 设计器文本框和按钮](media/winforms-designer-txtbtn.png)
 
 
 1. 单击 **“查看** > **代码”** 打开 `Form1.cs`。
@@ -313,7 +324,7 @@ Microsoft Visual Studio 是必需的。  本教程不支持 Microsoft Visual Stu
    }
    ```
 
-   ![添加Form_Resize代码。](media/winforms-form-resize-code-added.png)
+   ![添加Form_Resize代码](media/winforms-form-resize-code-added.png)
 
 1. 选择 **“文件** > **保存所有** (`Ctrl`++`Shift``S`) 保存项目。
 
@@ -321,7 +332,7 @@ Microsoft Visual Studio 是必需的。  本教程不支持 Microsoft Visual Stu
 
    将显示一个 **Form1** 窗口，其中显示了网页内容 https://www.microsoft.com:
 
-   ![显示来自 microsoft.com 的网页内容的 Form1 WinForm 窗口。](media/winforms-app.png)
+   ![显示 microsoft.com 网页内容的 Form1 WinForm 窗口](media/winforms-app.png)
 
    如果按 `Alt`+`Tab` 下以切换到 **Form1** 窗口，则可能需要单击 **“跳到添加的主要内容** ”链接。
 
@@ -367,13 +378,13 @@ Microsoft Visual Studio 是必需的。  本教程不支持 Microsoft Visual Stu
 
 1. 在地址栏中，输入以 Go 开头 `https`的 URL，例如 `https://www.bing.com`，然后单击 **Go！** 按钮：
 
-   ![bing.com。](media/winforms-bing.png)
+   ![bing.com](media/winforms-bing.png)
 
    WebView2 控件显示 URL 的网页内容。
 
 1. 在地址栏中，输入一个不以此类`www.bing.com`开头`http`的字符串，然后单击 **Go！** 按钮。
 
-   ![由于输入非 URL 而导致的参数异常。](media/winforms-non-url-arg-exception.png)
+   ![输入非 URL 导致的参数异常](media/winforms-non-url-arg-exception.png)
 
    如果 URL 不是以或 `https://`开头`http://`，则引发一个 `ArgumentException` 。
 
@@ -399,7 +410,7 @@ maintenance link (keep)
 
 有关详细信息，请参阅 [WebView2 应用的导航事件](../concepts/navigation-events.md)。
 
-![导航事件。](../media/navigation-events.png)
+![导航事件](../media/navigation-events.png)
 
 发生错误时，会引发以下事件，并且可能依赖于导航到错误网页：
 
@@ -492,7 +503,7 @@ maintenance link (keep)
 
    应用显示警报：
 
-   ![一个 http 警报， 说改为尝试 https。](media/winforms-https.png)
+   ![一个 http 警报， 说改为试用 https](media/winforms-https.png)
 
 
 <!-- ====================================================================== -->
@@ -571,7 +582,7 @@ maintenance link (keep)
 
 1. 输入 URL，例如 `https://www.bing.com`：
 
-   ![更新后的地址栏 URL 最初显示在警报框中。](media/winforms-update-addr-bar-alert.png)
+   ![更新后的地址栏 URL 最初显示在警报框中](media/winforms-update-addr-bar-alert.png)
 
    最初会显示警报，显示从主机网站发送的结果 URL。
 
@@ -579,7 +590,7 @@ maintenance link (keep)
 
    WebView2 控件现在显示地址栏中的新 URL，URL 中的网页内容显示在 WinForms 窗口的 WebView2 控件中：
 
-   ![应用程序在地址栏中显示 URL。](media/winforms-final-app.png)
+   ![应用程序在地址栏中显示 URL](media/winforms-final-app.png)
 
    * 当应用启动时，默认 URL 为 `https://www.microsoft.com`，生成的显示地址会显示区域设置，例如 `https://www.microsoft.com/en-us/`。<!--keep /en-us here-->
 
@@ -591,22 +602,6 @@ maintenance link (keep)
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-developer.microsoft.com：
-* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - developer.microsoft.com 的 WebView2 功能的初始简介。
-
-本地页面：
 * [WinForms 示例应用](../samples/webview2windowsformsbrowser.md) - 演示的 WebView2 API 比本教程多。
-* [管理用户数据文件夹](../concepts/user-data-folder.md)
-* [WebView2 示例代码](../code-samples-links.md) - 存储库指南 `WebView2Samples` 。
-* [WebView2 应用的开发最佳做法](../concepts/developer-guide.md)
 * [另请参阅](../index.md#see-also) _Microsoft Edge WebView2 简介_ - 有关生成和部署 WebView2 应用的概念和操作方法文章。
-
-GitHub：
-* [WebView2Samples 存储库](https://github.com/MicrosoftEdge/WebView2Samples) - WebView2 功能的综合示例。
-
-API 参考：
-* [API 参考：Microsoft.Web.WebView2.WinForms 命名空间](/dotnet/api/microsoft.web.webview2.winforms)
-* [WebView2 API 参考](/dotnet/api/microsoft.web.webview2.winforms.webview2)
-
-NuGet：
-* [microsoft.Web.WebView2 SDK at nuget.org](https://www.nuget.org/packages/Microsoft.Web.WebView2)
+* [Microsoft.Web.WebView2.WinForms](/dotnet/api/microsoft.web.webview2.winforms) - API 参考。

@@ -7,65 +7,63 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: f2b47c9489dae08dc8cdb80c7a1a9c13afffebc1
-ms.sourcegitcommit: 0de6ae79c3e2532d35dd160b468746111f516a99
+ms.openlocfilehash: 17fcbd1606becc20df3ff8d4f15221f0b48ac7c3
+ms.sourcegitcommit: ff01ae09a41be04a53ca8ee918bbf5fb999543c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "12675729"
+ms.lasthandoff: 09/17/2022
+ms.locfileid: "12754817"
 ---
 # <a name="wpf-sample-app"></a>WPF 示例应用
 
-此 WebView2 示例可从 WebView2Samples 存储库获取，演示如何使用 WebView2 控件和 WebView2 API 在 WPF .NET 应用中实现 Web 浏览器。
+<!-- todo: paste/merge into here from corresp Readme https://github.com/MicrosoftEdge/WebView2Samples/pull/140/files -->
 
+此示例 **WebView2WpfBrowser** 是一个 WPF .NET 应用，演示如何嵌入 WebView2 控件并使用 WebView2 API 实现 Web 浏览器。
 
 *  示例名称： **WebView2WpfBrowser**
-*  存储库目录： **WebView2WpfBrowser**
+*  存储库目录： [WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser)
 *  解决方案文件： **WebView2WpfBrowser.sln**
 
+此示例是作为 WPF Visual Studio 2019 项目生成的。  它在 WebView2 环境中使用 C# 和 HTML/CSS/JavaScript。
 
-<!-- ====================================================================== -->
-## <a name="step-1---view-the-readme"></a>步骤 1 - 查看自述文件
+此示例展示了一系列 WebView2 的事件处理程序和 API 方法，这些方法允许 WPF 应用程序直接与 WebView 交互，反之亦然。
 
-当前页面上的步骤是通用的。  请参阅 README 部分中特定于示例的步骤，这些步骤可能会覆盖当前页面。
+![WebView2WpfBrowser 示例应用](media/webview2wpfbrowser-sample-app.png)
 
-1. 在单独的窗口或选项卡中，在 GitHub： [WebView2WpfBrowser 的 README 文件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser#readme)中读取此项目的呈现 README.md 文件。  然后返回到此页面，并继续执行以下步骤。
+**WebView2WpfBrowser** 示例应用包含以下菜单，其中包含许多有用的菜单：
+*  **文件**
+*  **视图**
+*  **“设置”**
+*  **方案**
 
-   * [自述文件>先决条件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser#prerequisites)
+如果这是你第一次使用 WebView2，我们建议先遵循入门教程，该教程介绍如何创建 WebView2 并演练一些基本的 WebView2 功能。  请参阅 [WPF 应用中的 WebView2 入](../get-started/wpf.md)门。
 
-   * [自述文件>生成 WebView2 WPF 浏览器](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser#build-the-webview2-wpf-browser)
-
-   还可以在 Visual Studio 中查看 README.md 源文件 (未呈现的) 。  在**文件管理器**或 Visual Studio > 解决方案资源管理器中，打开该文件：<!-- todo: is there a .md preview capability locally? -->
-
-   `<your-repos-directory>/WebView2Samples/SampleApps/WebView2WpfBrowser/README.md`
-
-   或者：
-
-   `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WpfBrowser/README.md`
+有关 WebView2 中的事件和 API 处理程序的详细信息， [请参阅 WebView2 API 参考](/microsoft-edge/webview2/webview2-api-reference)。
 
 
 <!-- ====================================================================== -->
-## <a name="step-2---install-visual-studio"></a>步骤 2 - 安装 Visual Studio
+## <a name="step-1---install-a-preview-channel-of-microsoft-edge"></a>步骤 1 - 安装 Microsoft Edge 的预览频道
+
+1. 如果尚未安装 Microsoft Edge (Beta、Dev 或 Canary) 的预览频道，请参阅在_为 WebView2 设置开发环境_时[安装 Microsoft Edge 的预览频道](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
+
+
+<!-- ====================================================================== -->
+## <a name="step-2---install-visual-studio-2019-with-net-support"></a>步骤 2 - 使用 .NET 支持安装 Visual Studio 2019
 
 Microsoft Visual Studio 是必需的。  此示例不支持 Microsoft Visual Studio Code。
 
-1. 如果 Visual Studio (尚未安装所需的最低版本) ，请在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发环境_时[安装 Visual Studio](../how-to/machine-setup.md#install-visual-studio)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
+1. 如果 Visual Studio 2019 (尚未安装具有 .NET 支持的最低必需版本) ，请参阅在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发环境_时[安装 Visual Studio](../how-to/machine-setup.md#install-visual-studio)。  按照该部分中的步骤在 .NET 支持下安装 Visual Studio 2019，然后返回到此页面并继续执行以下步骤。
+<!-- could show selecting .NET support -->
 
 
 <!-- ====================================================================== -->
-## <a name="step-3---install-a-preview-channel-of-microsoft-edge"></a>步骤 3 - 安装 Microsoft Edge 的预览频道
+## <a name="step-3---clone-or-download-the-webview2samples-repo"></a>步骤 3 - 克隆或下载 WebView2Samples 存储库
 
-1.如果尚未安装 Microsoft Edge (Beta、Dev 或 Canary) 的预览频道，请参阅在_为 WebView2 设置开发环境_时[安装 Microsoft Edge 的预览频道](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge)。  按照该部分中的步骤操作，然后返回到此页并继续执行以下步骤。
-
-
-<!-- ====================================================================== -->
-## <a name="step-4---download-or-clone-the-webview2samples-repo"></a>步骤 4 - 下载或克隆 WebView2Samples 存储库
-
-1. 如果尚未完成，请将存储库下载或克隆 `WebView2Sample` 到本地驱动器。  在单独的窗口或选项卡中，请参阅“_为 WebView2 设置开发环境_”中的“[下载 WebView2Samples 存储库](../how-to/machine-setup.md#download-the-webview2samples-repo)”。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
+1. 如果尚未完成，请将存储库克隆或下载 `WebView2Sample` 到本地驱动器。  在单独的窗口或选项卡中，请参阅“_为 WebView2 设置开发环境_”中的“[下载 WebView2Samples 存储库](../how-to/machine-setup.md#download-the-webview2samples-repo)”。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
 
 
 <!-- ====================================================================== -->
-## <a name="step-5---open-sln-in-visual-studio"></a>步骤 5 - 在 Visual Studio 中打开 .sln
+## <a name="step-4---open-the-solution-in-visual-studio"></a>步骤 4 - 在 Visual Studio 中打开解决方案
 
 1. 在本地驱动器上 `.sln` ，在 Visual Studio 中的目录中打开该文件：
 
@@ -77,25 +75,17 @@ Microsoft Visual Studio 是必需的。  此示例不支持 Microsoft Visual Stu
 
 
 <!-- ====================================================================== -->
-## <a name="step-6---install-workloads-if-prompted"></a>步骤 6 - 如果出现提示，请安装工作负载
+## <a name="step-5---install-workloads-if-prompted"></a>步骤 5 - 如果出现提示，请安装工作负载
 
 1. 如果出现提示，请安装请求的任何 Visual Studio 工作负载。  在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发人员环境_时[安装 Visual Studio 工作负载](../how-to/machine-setup.md#install-visual-studio-workloads)。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
 
    **WebView2WpfBrowser** 项目在 Visual Studio 中打开：
 
-   ![Visual Studio 中的 WebView2WpfBrowser 项目。](media/webview2wpfbrowser-project-opened.png)
-
-   _若要缩放，请右键单击> **在新选项卡中打开图像**。_
+   ![Visual Studio 中的 WebView2WpfBrowser 项目](media/webview2wpfbrowser-project-opened.png)
 
 
 <!-- ====================================================================== -->
-## <a name="step-7---install-or-update-the-webview2-sdk"></a>步骤 7 - 安装或更新 WebView2 SDK
-
-1. 在项目节点上安装或更新 WebView2 SDK， (不是解决方案资源管理器中) 的解决方案节点。  在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发环境_时[安装 WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk)。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
-
-
-<!-- ====================================================================== -->
-## <a name="step-8---build-the-project"></a>步骤 8 - 生成项目
+## <a name="step-6---build-and-run-the-project"></a>步骤 6 - 生成并运行项目
 
 在 Visual Studio 顶部设置生成目标，如下所示：
 
@@ -107,29 +97,35 @@ Microsoft Visual Studio 是必需的。  此示例不支持 Microsoft Visual Stu
 
    这会生成项目文件 `WebView2WpfBrowser.csproj`。
 
-
-<!-- ====================================================================== -->
-## <a name="step-9---run-debug-the-project"></a>步骤 9 -) 项目运行 (调试
-
 1. 在 Visual Studio 中，选择 **“调试** > **开始调试** ” () `F5` 。
 
    随即打开示例应用窗口：
 
-   ![WebView2WpfBrowser 示例应用。](media/webview2wpfbrowser-sample-app.png)
-
-1. 使用示例应用;请参阅 [WebView2WpfBrowser 的 README 文件](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser#readme)。
+   ![WebView2WpfBrowser 示例应用](media/webview2wpfbrowser-sample-app.png)
 
 1. 在 Visual Studio 中，选择 **“调试** > **停止调试**”。  Visual Studio 关闭应用。
 
 
 <!-- ====================================================================== -->
-## <a name="step-10---inspect-the-code"></a>步骤 10 - 检查代码
+## <a name="step-7---update-the-webview2-sdk"></a>步骤 7 - 更新 WebView2 SDK
 
+1. 更新项目节点上的预发行 WebView2 SDK (解决方案资源管理器中) 的解决方案节点。  安装 WebView2 SDK 的最新预发行版，以便可以尝试使用最新功能。  在单独的窗口或选项卡中，请参阅在_为 WebView2 设置开发环境_时[安装 WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk)。  按照该部分中的步骤操作，然后返回到此页，然后继续下文。
+
+1. 再次生成并运行项目。
+
+
+<!-- ====================================================================== -->
+## <a name="step-8---explore-the-menus-and-inspect-the-code"></a>步骤 8 - 浏览菜单并检查代码
+
+1. 浏览 **WebView2WpfBrowser** 示例应用的菜单，其中包含许多有用的菜单：
+   *  **文件**
+   *  **视图**
+   *  **“设置”**
+   *  **方案**
+   
 1. 在 Visual Studio 代码编辑器中，检查代码：
 
-   ![Visual Studio 中的 WebView2WpfBrowser 项目的代码。](media/webview2wpfbrowser-code.png)
-
-   _若要缩放，请右键单击> **在新选项卡中打开图像**。_
+   ![Visual Studio 中的 WebView2WpfBrowser 项目的代码](media/webview2wpfbrowser-code.png)
 
 
 <!-- ====================================================================== -->
