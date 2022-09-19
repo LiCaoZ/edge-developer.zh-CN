@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 08/31/2022
-ms.openlocfilehash: db43523387703edf2068e8962cdfa7b3939ff17f
-ms.sourcegitcommit: f5f3e4febdef33e036f0c6946eab0f419d50d28d
+ms.openlocfilehash: 5d6457a297f83a9875dd2fc04116f1f64567495d
+ms.sourcegitcommit: 682d8875c1d7c69dcdae15df51683fb5fb75ec2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "12746508"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "12755136"
 ---
 # <a name="manage-user-data-folders"></a>管理用户数据文件夹
 <!-- # old title: Manage the user data folder -->
@@ -421,7 +421,7 @@ _task = CoreWebView2Environment.CreateAsync(BrowserExecutableFolder,
 
 **示例代码：**
 
-例如代码，请参阅 [WebView2Samples 存储库> WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2_WinUI3_Sample)中的 WinUI 3 `.cs` 文件。
+例如代码，请参阅 [WebView2Samples 存储库> WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted)中的 WinUI 3 `.cs` 文件。
 
 
 **在 UDF 中存储浏览器数据的位置：**
@@ -471,7 +471,7 @@ environment7->get_UserDataFolder(&userDataFolder);
 
 # [<a name="net-wpfwinforms"></a>.NET (WPF/WinForms) ](#tab/dotnet)
 
-使用 .NET [CoreWebView2Environment.UserDataFolder 属性](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder)。
+<!-- Use the .NET [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder). -->
 
 <!-- dev: add example code to https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder showing how to read the `UserDataFolder` property, copy that from the below code block: -->
 

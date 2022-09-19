@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 67648ac668b6205c3d12a340cd0812afccf35e78
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: c0d7580aae0992d32ee7facc13a5c986d1abf1df
+ms.sourcegitcommit: 682d8875c1d7c69dcdae15df51683fb5fb75ec2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630436"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "12755143"
 ---
 <!-- Copyright Kayce Basques
 
@@ -38,7 +38,7 @@ ms.locfileid: "12630436"
 
    ![命令菜单。](../media/device-mode-console-command-menu.msft.png)
 
-1. 键 `sensors`入，选择 **“面板：显示传感器**”，然后按下 `Enter`。  **传感器**工具在 DevTools 窗口底部打开。
+1. 键 `sensors`入，选择 **“抽屉：显示传感器**”，然后按下 `Enter`。  **传感器**工具在 DevTools 窗口底部打开。
 
 1. 单击 **“位置”** 下拉列表，然后：
    *  选择一个城市，例如 `Tokyo`。
