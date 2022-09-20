@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/24/2022
-ms.openlocfilehash: e0636fde92287b7e9bb4191116831f4f950e86b0
-ms.sourcegitcommit: 4e2422123f89fd168dedd9722af8a3281b0f3128
+ms.openlocfilehash: 8121db8e271533efef4eead2aa8c72be8ce2358e
+ms.sourcegitcommit: a955b0025aa97ed6165ebc4201d22bdea8614bb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "12682695"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "12755930"
 ---
 # <a name="run-commands-via-keyboard-with-command-palette"></a>使用命令面板通过键盘运行命令
 
@@ -39,6 +39,7 @@ ms.locfileid: "12682695"
 
    ![在 edge://flags 页中启用命令面板标志](./media/command-palette-flag.png)
 
+上面的屏幕截图显示了 Microsoft Edge 105-107 的快捷方式。  Microsoft Edge 108 或更高版本将改为显示快捷方式 `Ctrl+Q` 。
 
 <!-- ====================================================================== -->
 ## <a name="open-command-palette"></a>打开命令面板
@@ -47,7 +48,7 @@ ms.locfileid: "12682695"
 
 若要打开命令面板，请执行以下操作：
 
-1. 在 Microsoft Edge 中，按 `Ctrl``Space`+`Shift`+。  命令面板随即打开。
+1. 在 Microsoft Edge 108 或更高版本中，按 `Ctrl`+`Q`下 。  或者，在 Microsoft Edge 105-107 中，按 `Ctrl``Space`+`Shift`+。 命令面板随即打开。
 
 1. 开始在输入框中键入。 例如：
    * 键 **入选项卡** 以显示有关选项卡管理的命令。
@@ -68,7 +69,7 @@ ms.locfileid: "12682695"
 
 若要使用命令面板打开 DevTools 设备仿真工具：
 
-1. 在 Microsoft Edge 中，按 `Ctrl``Space`+`Shift`+。  命令面板随即打开。
+1. 在 Microsoft Edge 108 或更高版本中，按 `Ctrl`+`Q`下 。 或者，在 Microsoft Edge 105-107 中，按 `Ctrl``Space`+`Shift`+。 命令面板随即打开。
 
 1. 按 `>`。
 
@@ -82,7 +83,7 @@ ms.locfileid: "12682695"
 
 若要使用命令面板打开 DevTools **代码片段** 选项卡：
 
-1. 在 Microsoft Edge 中，按 `Ctrl``Space`+`Shift`+。  命令面板随即打开。
+1. 在 Microsoft Edge 108 或更高版本中，按 `Ctrl`+`Q`下 。 或者，在 Microsoft Edge 105-107 中，按 `Ctrl``Space`+`Shift`+。 命令面板随即打开。
 
 1. 按 `>`。
 
@@ -98,7 +99,7 @@ ms.locfileid: "12682695"
 *  **打开最近关闭的选项卡**
 *  **搜索选项卡**
 
-1. 在 Microsoft Edge 中，按 `Ctrl``Space`+`Shift`+。  命令面板随即打开。
+1. 在 Microsoft Edge 108 或更高版本中，按 `Ctrl`+`Q`下 。 或者，在 Microsoft Edge 105-107 中，按 `Ctrl``Space`+`Shift`+。 命令面板随即打开。
 
 1. 键入单词 **选项卡**，按 `Down Arrow` 或 `Up Arrow` 选择命令，然后按 `Enter`。
 

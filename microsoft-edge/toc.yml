@@ -320,6 +320,9 @@
                 - name: 加速 JavaScript 运行时
                   href: devtools-guide-chromium/rendering-tools/js-runtime.md
                   displayName: Memory tool
+                - name: 堆快照文件格式
+                  href: devtools-guide-chromium/memory-problems/heap-snapshot-schema.md
+                  displayName: Memory tool
             - name: 内存检查器工具
               items:
                 - name: 使用内存检查器工具检查 JavaScript ArrayBuffer
