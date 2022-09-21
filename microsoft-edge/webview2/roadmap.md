@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 01/07/2021
-ms.openlocfilehash: 0c5db8d4c2a0783a7ac2c3f8a0e1a824194ccb23
-ms.sourcegitcommit: 77a812ec441451b8ae50c2a95782701e08af73c5
+ms.openlocfilehash: 450c030b8b71850376c878a838cf68ee3da8a886
+ms.sourcegitcommit: 4d5a0892ecdfbb06749149bd516c92b190700a9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "12746782"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "12757713"
 ---
 # <a name="webview2-roadmap"></a>WebView2 路线图
 
@@ -62,3 +62,7 @@ Win32 C/C++ SDK 已到达 GA。
 ### <a name="windows-ui-library-3"></a>Windows UI 库 3
 
 可以将 [Windows UI 库 3 (WinUI 3) 与Windows 应用 SDK](/uwp/toolkits/winui3/index)一起访问应用程序中的 WebView2 控件。  这已经到达了正式大会。
+
+#### <a name="xbox-hololens-and-xaml-limitations"></a>Xbox、HoloLens 和 XAML 限制
+
+此版本的 WebView 2 仅适用于电脑类设备，提供在 WinUI 3 变体中找到的完整功能。 Xbox、HoloLens 和 XAML 岛支持需要额外的工作，将来可能会考虑这些设备和方案。

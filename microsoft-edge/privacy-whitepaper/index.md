@@ -10,12 +10,12 @@ no-loc:
 - Cast
 - Google Cast
 ms.date: 12/10/2021
-ms.openlocfilehash: b50d28d4f3658f9080d5819a5e2cf1dbeb80946b
-ms.sourcegitcommit: e367f0e2c9e59648b2e6243297c4073ebeb7a8ee
-ms.translationtype: HT
+ms.openlocfilehash: 5330396a7158ba0e8f5c74cc6fe26c81f2ec4301
+ms.sourcegitcommit: 4d5a0892ecdfbb06749149bd516c92b190700a9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "12691979"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "12757863"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书
 
@@ -414,7 +414,7 @@ Microsoft Edge提供了一个以用户为中心的新选项卡页面，其中的
 
 ![“新建选项卡”页面。](./media/n-t-p1.png)
 
-### <a name="microsoft-news"></a>Microsoft 资讯
+#### <a name="microsoft-news"></a>Microsoft 资讯
 
 为了根据用户的交互和偏好定制内容，Microsoft Edge 中的“新建选项卡”页面会在设备上使用随机生成的标识符存储 cookie。  还会使用你的 IP 地址的精制版本，来根据你的通用区域定制内容。  若要清除设备上保留的 cookie，请转到 `edge://settings/siteData`。
 
@@ -428,7 +428,7 @@ Microsoft Edge 收集有关如何使用新选项卡页的诊断数据，如与�
 
 通过“新建选项卡”页面，你还可以将自定义图像设置为背景。 图像本地存储在设备上，可通过删除图像或上传新图像进行删除。 不会向 Microsoft 发送有关图像的任何信息。
 
-### <a name="office-365"></a>Office 365
+#### <a name="office-365"></a>Office 365
 
 如果你使用工作或学校帐户登录到 Microsoft Edge，则你的组织可能会在“新建选项卡”页面上启用 Office 365 作为页面内容的选项。 此功能目前仅适用于商业客户，并受到 [Microsoft 在线服务条款 (OST)](https://www.microsoft.com/licensing/product-licensing/products) 的制约。 有关 Office 365 隐私的详细信息，请参阅 [Microsoft 365 企业应用版的隐私控制概述](/deployoffice/privacy/overview-privacy-controls)。
 
@@ -474,6 +474,10 @@ Microsoft Edge支持 PaymentRequest API。 API 允许你使用之前使用自动
 
 该功能仅适用于具有非 Microsoft 子帐户的用户。  对于使用工作或学校帐户登录到 Microsoft Edge 的用户，此功能不可用。
 
+
+<!-- ====================================================================== -->
+## <a name="personalization"></a>个性化
+
 如果你允许个性化，Microsoft Edge 团队会收集并使用你的 Microsoft Edge 浏览历史记录，以便对[必应](https://bing.com)、Microsoft 资讯和其他 Microsoft 服务的体验和广告进行个性化设置。  个性化设置提供了更为相关且有用的搜索结果、广告和资讯内容。  例如，如果 Microsoft Edge 团队根据你的浏览情况推断出你喜欢在某个商店购物，则你看到的广告可能是根据特定商店中的产品定制的。  类似地，如果经常查看旅行博客和阅读旅行文章，你的新闻源可能包含更多旅行相关的资讯内容。
 
 该功能仅适用于具有非 Microsoft 子帐户的用户。 对于使用工作或学校帐户登录到 Microsoft Edge 的用户，此功能不可用。
@@ -489,8 +493,7 @@ Microsoft Edge支持 PaymentRequest API。 API 允许你使用之前使用自动
 
 可从“[Microsoft 隐私仪表板](https://account.microsoft.com/privacy/)”上的“[广告设置](https://account.microsoft.com/privacy/ad-settings)”中修改兴趣或选择退出个性化广告。
 
-> [!NOTE]
-> 选择退出“[Microsoft 隐私仪表板](https://account.microsoft.com/privacy/)”上的个性化广告，不会禁用对个性化搜索结果和新闻源内容的浏览历史记录的收集和使用。 您可以关闭个性化搜索结果和新闻的 Microsoft Edge浏览历史记录的收集和使用。 转到 `edge://settings/privacy`。 在 **"个性化 Web 体验** "中， **允许 Microsoft 使用帐户中的浏览历史记录个性化广告、搜索、新闻和其他Microsoft 服务** 设置，从而关闭"改善 Web 体验"。 如果停止共享数据，Microsoft 将不再收集和使用你的浏览历史记录来个性化广告、搜索结果和资讯。 有关 Microsoft Edge 中的个性化设置的详细信息，请参阅[用于个性化广告和体验的 Microsoft Edge 浏览历史记录](https://support.microsoft.com/help/4532583)。
+选择退出“[Microsoft 隐私仪表板](https://account.microsoft.com/privacy/)”上的个性化广告，不会禁用对个性化搜索结果和新闻源内容的浏览历史记录的收集和使用。 您可以关闭个性化搜索结果和新闻的 Microsoft Edge浏览历史记录的收集和使用。 转到 `edge://settings/privacy`。 在 **"个性化 Web 体验** "中， **允许 Microsoft 使用帐户中的浏览历史记录个性化广告、搜索、新闻和其他Microsoft 服务** 设置，从而关闭"改善 Web 体验"。 如果停止共享数据，Microsoft 将不再收集和使用你的浏览历史记录来个性化广告、搜索结果和资讯。 有关 Microsoft Edge 中的个性化设置的详细信息，请参阅[用于个性化广告和体验的 Microsoft Edge 浏览历史记录](https://support.microsoft.com/help/4532583)。
 
 
 <!-- ====================================================================== -->
@@ -665,15 +668,6 @@ SmartScreen 服务存储有关信誉检查的数据，并生成已知恶意 URL 
 
 若要关闭将语音转换为文本，可以拒绝任何提示许可的站点的麦克风访问。  若要关闭所有网站的麦克风权限，请转到 `edge://settings/content/microphone`。
 
-
-<!-- ====================================================================== -->
-## <a name="spellcheck"></a>拼写检查
-
-当你在浏览器中输入时，Microsoft Edge 将检查拼写。  拼写检查服务已在设备本地完成。 Microsoft Edge不会将有关键入的信息发送给 Microsoft 进行拼写检查。 可以关闭该功能。 转到 `edge://settings/languages`。 在 **"检查拼写"中**，关闭每种所需语言的设置。
-
-向 Microsoft Edge 添加新语言后，浏览器将使用 HTTPS 将新语言字典下载到设备。  该字典用于内置拼写检查服务。  从 Microsoft Edge 设置中删除语言将从设备中删除字典。  来宾模式不使用来自配置文件或任何添加的语言的自定义字典。  若要添加或删除本地字典中的单词，请转到 `edge://settings/languages`，在“**检查拼写**”下选择“**添加或删除单词**”。
-
-
 <!-- ====================================================================== -->
 ## <a name="suggest-similar-sites"></a>建议类似网站
 
@@ -758,6 +752,22 @@ Microsoft Edge WebView 控件允许应用开发人员在 Windows 7、Windows 10 
 
 若要启用诊断数据收集，请转到 `edge://settings/privacy`。 打开 **可选诊断数据** 设置。 若要在 Windows 10 上禁用 Microsoft Edge 故障诊断数据收集，请打开“**开始**” > “**设置**” > “**隐私**”并选择“**诊断和反馈**”。 若要关闭所有其他平台的诊断数据收集，请转到 `edge://settings/privacy`。 **通过发送有关如何使用浏览器、访问的网站和故障报告设置的可选诊断数据，关闭帮助改进 Microsoft 产品**。 托管 Microsoft Edge WebView 的应用程序可能会收集受开发人员数据收集管理和相关隐私策略约束的其他数据。
 
+<!-- ====================================================================== -->
+## <a name="writing-assistance"></a>编写帮助
+
+在浏览器中键入时，Microsoft Edge 提供增强的拼写和语法检查。  若要使用增强的拼写和语法检查，请转到`edge://settings/languages`并选择“**使用写入帮助**切换”下**的Microsoft 编辑器**。 
+
+如果选择**Microsoft 编辑器**，Microsoft Edge 会通过安全的 HTTPS 连接将类型化文本和服务令牌发送到 Microsoft 云服务。 服务令牌不包含任何用户身份信息。 然后，Microsoft 云服务将处理文本以检测文本中的拼写和语法错误。 处理完成后，将立即删除发送到 Microsoft 的所有类型化文本。 任何时间段内均不存储任何数据。 
+
+如果在`edge://settings/languages`**“使用写入帮助**”切换下选择 **“基本**”，服务将仅在设备上执行本地拼写检查，并且不会将任何数据发送到云中进行拼写检查服务。 
+
+若要关闭所有拼写和语法功能，请关闭 **“使用写入帮助** ”切换。
+ 
+将新语言添加到 Microsoft Edge 时，浏览器会通过 HTTPS 将新语言的字典下载到设备。 该字典用于基本拼写检查服务或Microsoft 编辑器拼写和语法检查不支持的语言。 从 Microsoft Edge 设置中删除语言将从设备中删除字典。
+
+若要在本地字典中添加单词，请转到 `edge://settings/languages`“ **自定义”字典**，在 **“添加新单词** ”文本框中键入一个单词，然后单击 **“添加单词** ”按钮。  若要删除单词，请单击单词旁边的 **X** 按钮。
+
+自定义字典在 **来宾** 模式下不可用。
 
 <!-- ====================================================================== -->
 ## <a name="thank-you"></a>谢谢！

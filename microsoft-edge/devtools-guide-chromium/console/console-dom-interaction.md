@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
-ms.openlocfilehash: 3a04d7c1cca30da135e56a2d537740c464523e46
-ms.sourcegitcommit: 627ac3e3d4404d9701c81a81609dc49de7c28add
+ms.openlocfilehash: 83a563dc827d1b9936e9efb40f6ae0df05976f38
+ms.sourcegitcommit: 4d5a0892ecdfbb06749149bd516c92b190700a9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "12552551"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "12757720"
 ---
 # <a name="interact-with-the-dom-using-the-console"></a>使用控制台与 DOM 交互
 
@@ -23,7 +23,7 @@ ms.locfileid: "12552551"
 
 若要引用网页的标头，请执行以下操作：
 
-1. 打开 DevTools **控制台**。  若要从网页执行此操作，可以按 `Ctrl`++`Shift``J` (Windows、Linux) 或`J``Command`+`Option`+ (macOS) 。
+1. 打开 DevTools **控制台**。  若要从网页执行此操作，可以按 `Ctrl`++`Shift``J` (Windows、Linux) 或`J` `Command`+`Option`+ (macOS) 。
 
 1. 键入或粘贴以下代码到 **控制台**，然后按 `Enter`下：
 
@@ -122,7 +122,7 @@ ms.locfileid: "12552551"
 
 ### <a name="example-extracting-all-links-from-a-page-as-a-sortable-table"></a>示例：从页面中提取所有链接，作为可排序表
 
-1. 输入以下代码，该代码检索网页中的所有链接，并将链接显示为可排序表，以复制和粘贴 (，例如，Excel) ：
+1. 输入以下代码，该代码检索网页中的所有链接，并将链接显示为可排序表，以复制和粘贴 (，例如，将其粘贴到 Excel) ：
 
    ```javascript
    console.table($$('a'),['href','text']);
@@ -160,7 +160,7 @@ ms.locfileid: "12552551"
    $$('a').map(a => {
       return {text: a.innerText, url: a.href}
    }).filter(a => {
-      return a.text !== '' && !a.url.match('docs.microsoft.com')
+      return a.text !== '' && !a.url.match('learn.microsoft.com')
    })
    ```
 
@@ -187,7 +187,7 @@ ms.locfileid: "12552551"
 
 1. 打开“**控制台**”。
 
-1. 将以下代码粘贴到 **控制台**中，然后按 `Enter`下：
+1. 将以下代码粘贴到**控制台**，然后按 `Enter`：
 
    ```javascript
    console.table($$('img:not([src^=data])'), ['src','alt'])
@@ -288,7 +288,7 @@ ms.locfileid: "12552551"
 
 你可能会发现从 **控制台**操作 DOM 很有用。  你可能很快就会遇到 **控制台** 作为开发平台的限制。  好消息是，DevTools 中的 [“源](../sources/index.md) ”工具提供了一个功能齐全的开发环境。  在 **“源** ”工具中，可以：
 
-*  Microsoft Store**控制台**的脚本作为代码片段;请参阅[任何网页上的 JavaScript 运行代码片段](../javascript/snippets.md)。
+*  将 **控制台** 的脚本存储为代码片段;请参阅 [任何网页上 JavaScript 的运行代码片段](../javascript/snippets.md)。
 
 *  使用键盘快捷方式或编辑器在网页中运行脚本。
 

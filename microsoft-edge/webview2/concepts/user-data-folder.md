@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 08/31/2022
-ms.openlocfilehash: 5d6457a297f83a9875dd2fc04116f1f64567495d
-ms.sourcegitcommit: 682d8875c1d7c69dcdae15df51683fb5fb75ec2b
+ms.openlocfilehash: 0a270f3ea7b031d74e474fa04bc861bd1f41c910
+ms.sourcegitcommit: 4d5a0892ecdfbb06749149bd516c92b190700a9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "12755136"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "12757804"
 ---
 # <a name="manage-user-data-folders"></a>管理用户数据文件夹
 <!-- # old title: Manage the user data folder -->
@@ -473,7 +473,7 @@ environment7->get_UserDataFolder(&userDataFolder);
 
 <!-- Use the .NET [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder). -->
 
-<!-- dev: add example code to https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder showing how to read the `UserDataFolder` property, copy that from the below code block: -->
+<!-- dev: add example code to https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder showing how to read the `UserDataFolder` property, copy that from the below code block: -->
 
 
 **示例代码：**
@@ -692,4 +692,4 @@ WebView2 控件实例可以在 UDF)  (共享相同的用户数据文件夹，以
 * [ClickOnce 安全性和部署](/visualstudio/deployment/clickonce-security-and-deployment) - Visual Studio 部署文档。
 * [了解 Microsoft Edge 中的 ClickOnce 和 DirectInvoke 功能](/deployedge/edge-learn-more-co-di) - 在 Microsoft Edge Enterprise 文档中。
 
-<!-- clickable: https://docs.microsoft.com/windows/apps/package-and-deploy/ -->
+<!-- clickable: https://learn.microsoft.com/windows/apps/package-and-deploy/ -->

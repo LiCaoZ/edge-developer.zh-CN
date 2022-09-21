@@ -22,7 +22,7 @@ Microsoft 及任何创作人保留所有其他权利（无论是其各自的版�
 <!-- ====================================================================== -->
 ## <a name="contributing"></a>贡献
 
-此存储库 `edge-developer`是 Microsoft Edge 开发人员文档的源 Markdown 文件的存储库。  生成的呈现文档托管在 [Microsoft Edge 文档](https://docs.microsoft.com/microsoft-edge/developer/)中。  此存储库还包括 Microsoft Edge Enterprise 文档的中心页面和 Microsoft Edge 开发人员文档。  Microsoft Edge Enterprise 文档的源文件不在此存储库中，而是在 [Edge-Enterprise](https://github.com/MicrosoftDocs/Edge-Enterprise) 存储库中。
+此存储库 `edge-developer`是 Microsoft Edge 开发人员文档的源 Markdown 文件的存储库。  生成的呈现文档托管在 [Microsoft Edge 文档](https://learn.microsoft.com/microsoft-edge/developer/)中。  此存储库还包括 Microsoft Edge Enterprise 文档的中心页面和 Microsoft Edge 开发人员文档。  Microsoft Edge Enterprise 文档的源文件不在此存储库中，而是在 [Edge-Enterprise](https://github.com/MicrosoftDocs/Edge-Enterprise) 存储库中。
 
 如果想要包括新的覆盖范围或提供反馈，请考虑 [参与](CONTRIBUTING.md)。  可以编辑现有内容、添加新内容或报告新 [问题](https://github.com/MicrosoftDocs/edge-developer/issues)。  Microsoft Edge 团队会查看建议，并努力将建议合并到文档中。
 
@@ -35,14 +35,14 @@ Microsoft 及任何创作人保留所有其他权利（无论是其各自的版�
 
 *  目录可以包含更多目录或 `readme.md` 文件。
 
-*  文件夹/目录名称是短划线分隔的 (例如， `f12-tools`) 和小写。  目录用于网站上的 `docs.microsoft.com` URL。  避免使用下划线、PascalCase 或 camelCase。
+*  文件夹/目录名称是短划线分隔的 (例如， `f12-tools`) 和小写。  目录用于网站上的 `learn.microsoft.com` URL。  避免使用下划线、PascalCase 或 camelCase。
 
 
 <!-- ====================================================================== -->
 ## <a name="markdown-tagging"></a>Markdown 标记
 
 * [基本写入和格式化语法](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) - GitHub 文档中的 _GitHub_ Flavored Markdown。
-* [Docs Markdown 参考](https://docs.microsoft.com/contribute/markdown-reference) - 在 _Docs 参与者指南_中。
+* [Docs Markdown 参考](https://learn.microsoft.com/contribute/markdown-reference) - 在 _Docs 参与者指南_中。
 
 
 ### <a name="images"></a>图片

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/29/2021
-ms.openlocfilehash: 6dbf631fa59eea5b4b1e19e714a355a8d84cf8ab
-ms.sourcegitcommit: 59d8095df38d8d54366bd788f2187944eb7e592d
+ms.openlocfilehash: a01fde372490133cff392b39b15987d35e6ef478
+ms.sourcegitcommit: 4d5a0892ecdfbb06749149bd516c92b190700a9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "12686473"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "12757790"
 ---
 <!-- Copyright Kayce Basques
 
@@ -62,7 +62,7 @@ DevTools 中的 **元素** 工具允许你一次查看或更改一个元素的 C
 
 <!-- todo: delete /en-us ? 2x -->
 在下图中，单击后
-`https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2`<!-- :2 at end causes not to work. --> 你将转到第 2 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`行，其中定义了 `.content h1:first-of-type` CSS 规则。<!-- master kind of works but all lines are concated.  changing master to main doesn't work -->
+`https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2`<!-- :2 at end causes not to work. --> 你将转到第 2 `https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`行，其中定义了 `.content h1:first-of-type` CSS 规则。<!-- master kind of works but all lines are concated.  changing master to main doesn't work -->
 
 ![查看定义规则的样式表。](../media/css-elements-styles-h1-highlight.msft.png)
 

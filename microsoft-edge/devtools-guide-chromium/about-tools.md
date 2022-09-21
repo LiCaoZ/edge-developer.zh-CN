@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/02/2022
-ms.openlocfilehash: ca7727fdf9ab00c6d7beeca23340657bc95752c9
-ms.sourcegitcommit: f5f3e4febdef33e036f0c6946eab0f419d50d28d
+ms.openlocfilehash: c0d3b44302d77c1c9559f80480b5aa853abbcf5f
+ms.sourcegitcommit: 4d5a0892ecdfbb06749149bd516c92b190700a9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "12746529"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "12757693"
 ---
 # <a name="about-the-list-of-tools"></a>关于工具列表
 
@@ -78,7 +78,7 @@ Microsoft Edge DevTools 包括以下工具。
 
 <!-- when no longer experimental, move into table:
 | **CSP Violations** tool | Displays any Content Security Policy (CSP) violations that are detected on the inspected webpage. | [CSP Violations tool](csp-violations/csp-violations-tool.md) |
-https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
+https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
 -->
 
 

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
-ms.openlocfilehash: 6ab85db63132b13ba3cd7bbbfc78300f144e95b1
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
-ms.translationtype: HT
+ms.openlocfilehash: ee012c51728be2d349c682a38bbdd8dd2dda10b1
+ms.sourcegitcommit: 4d5a0892ecdfbb06749149bd516c92b190700a9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630813"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "12757873"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -264,7 +264,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 另请参阅：
 * [用于管理存储的应用程序工具](../../../storage/application-tool.md)
 <!-- todo: the Application tool seems under-doc'd; contrast the TOC > Tools > Application tool vs. the left-side tree in the tool:
-https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/storage/application-tool -->
+https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/storage/application-tool -->
 
 
 <!-- ====================================================================== -->

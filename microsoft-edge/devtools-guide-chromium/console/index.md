@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/13/2021
-ms.openlocfilehash: 9040f5da4fbbd4bcba299f50d6caa10a58658745
-ms.sourcegitcommit: 8aee95757de12c62f4a74d37649ad5979f9e0ba9
-ms.translationtype: HT
+ms.openlocfilehash: f40a1c142a4cb39bc1627656d430410372187a73
+ms.sourcegitcommit: 4d5a0892ecdfbb06749149bd516c92b190700a9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "12550511"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "12757849"
 ---
 # <a name="console-overview"></a>控制台概述
 
@@ -53,7 +53,7 @@ DevTools 提供了有关**控制台**中的错误的详细信息：
 
 ![控制台中出现错误消息时的“在 Web 上搜索此消息”按钮。](../media/search-console-icon.msft.png)
 <!-- to set up screenshot, went to 
-https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/console-debug-javascript to get a good page that has an error: 
+https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/console/console-debug-javascript to get a good page that has an error: 
 https://microsoftedge.github.io/Demos/devtools-console/error.html -->
 
 当你单击“**在 Web 上搜索此消息**”按钮时，浏览器中会打开一个新选项卡，并显示此错误消息的搜索结果：

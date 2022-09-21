@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 9a3f16a3c098ac711f714f4adf502a2799f0e684
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: c9c487c3f671e216c5e2d87a0c1fe5571808be48
+ms.sourcegitcommit: 4d5a0892ecdfbb06749149bd516c92b190700a9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12631503"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "12757879"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -153,7 +153,7 @@ To meet your translation needs, the Microsoft Edge DevTools team is focused on i
 The current effort to improve translation quality enables easier support for more languages in the future.
 
 See also:
-* [Change DevTools language settings](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/customize/localization)
+* [Change DevTools language settings](https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/customize/localization)
 -->
 
 

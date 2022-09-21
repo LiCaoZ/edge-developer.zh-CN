@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 05/04/2022
-ms.openlocfilehash: 54a696e7a45bff1e4572d4d63f8f15787e4092a1
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: 529c6941263898486b4ea5f46cf4546c7d5ccf8c
+ms.sourcegitcommit: 4d5a0892ecdfbb06749149bd516c92b190700a9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630802"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "12757732"
 ---
 <!-- Copyright Kim-Anh Tran
 
@@ -46,7 +46,7 @@ ms.locfileid: "12630802"
 ![源工具范围面板提供检查内存的有限功能](../media/memory-inspector-sources-scope-limited-ability.png)
 
 <!-- this page's initial content was from
-https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2021/04/devtools#new-memory-inspector-tool
+https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2021/04/devtools#new-memory-inspector-tool
 -->
 
 

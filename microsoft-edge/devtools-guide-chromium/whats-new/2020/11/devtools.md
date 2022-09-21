@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
-ms.openlocfilehash: c1f356ba5adc8094c57f6a06e9da3e9a503b59b8
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
-ms.translationtype: HT
+ms.openlocfilehash: 30de3992c4a1413cbc297d59b89b98cb9ef81cae
+ms.sourcegitcommit: 4d5a0892ecdfbb06749149bd516c92b190700a9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12631229"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "12757858"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -349,7 +349,7 @@ background: linear-gradient(100deg, lightblue, pink);
 <!-- ====================================================================== -->
 #### <a name="display-opener-frame-details-for-opened-windows"></a>显示已打开窗口的原框架详细信息
 
-现在，DevTools 在相关的父 [框架](https://developer.mozilla.org/docs/Web/API/Window/frames) 下组织已打开的 [窗口](https://developer.mozilla.org/docs/Web/API/Window#Constructors)。  例如，如果 `top` 框架打开 `Window` 到 `https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium`， 则框架 `Window` 将显示在 **列表** 中的 `top` 之下。
+现在，DevTools 在相关的父 [框架](https://developer.mozilla.org/docs/Web/API/Window/frames) 下组织已打开的 [窗口](https://developer.mozilla.org/docs/Web/API/Window#Constructors)。  例如，如果 `top` 框架打开 `Window` 到 `https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium`， 则框架 `Window` 将显示在 **列表** 中的 `top` 之下。
 
 若要显示负责打开另一个窗口的帧，请在“**元素**”工具中查看该帧：
 

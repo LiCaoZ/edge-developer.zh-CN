@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/25/2021
-ms.openlocfilehash: 72e50ff0ff85a58d5ec2eb8332ef7b9117429db8
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: dd79dd0c46838c1fb90f13147239027db4003ed6
+ms.sourcegitcommit: 4d5a0892ecdfbb06749149bd516c92b190700a9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630443"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "12757702"
 ---
 <!-- Copyright Alex Rudenko
 
@@ -54,7 +54,7 @@ ms.locfileid: "12630443"
 <!-- ====================================================================== -->
 ## <a name="editing-style-rules-that-were-initially-defined-by-a-cssom-function"></a>编辑最初由 CSSOM 函数定义的样式规则
 
-<!-- from https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#style-editing-for-css-in-js-frameworks -->
+<!-- from https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#style-editing-for-css-in-js-frameworks -->
 
 “ **样式** ”窗格支持使用 [CSS 对象模型 (CSSOM) ](https://drafts.csswg.org/cssom) API 创建的编辑样式。  许多 CSS in-JS 框架和库使用引擎盖下的 CSS 对象模型 API 来构造样式。
 

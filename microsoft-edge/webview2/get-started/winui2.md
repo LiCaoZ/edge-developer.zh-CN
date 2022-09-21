@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 07/14/2022
-ms.openlocfilehash: dff2a71b41f2f8aa67395f27b9ec1e1cdadfdb7c
-ms.sourcegitcommit: ff01ae09a41be04a53ca8ee918bbf5fb999543c1
+ms.openlocfilehash: 58c864ce3fb4f871017110a680da8341223b2ccf
+ms.sourcegitcommit: 4d5a0892ecdfbb06749149bd516c92b190700a9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2022
-ms.locfileid: "12754831"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "12757845"
 ---
 # <a name="get-started-with-webview2-in-winui-2-uwp-apps"></a>WinUI 2 (UWP) 应用中的 WebView2 入门
 
@@ -49,7 +49,7 @@ WinUI 2 仅支持 UWP。  这些控件是向后兼容的。
 ## <a name="step-1---install-visual-studio"></a>步骤 1 - 安装 Visual Studio
 
 本教程需要 Visual Studio 2019 版本 16.9 或更高版本。  支持 Visual Studio 2022。  不支持 Visual Studio 2017。
-<!-- https://docs.microsoft.com/visualstudio/releases/2019/release-notes-v16.9 -->
+<!-- https://learn.microsoft.com/visualstudio/releases/2019/release-notes-v16.9 -->
 
 1. 如果尚未安装合适的 Microsoft Visual Studio 版本，请在新窗口或选项卡中，请参阅在_为 WebView2 设置开发环境_时[安装 Visual Studio](../how-to/machine-setup.md#install-visual-studio)。  按照该页中的步骤执行 Visual Studio 的基本默认安装。
 
@@ -319,6 +319,9 @@ WebView2 将应用程序中导航到的 URL 发送到 [SmartScreen](/windows/sec
 
 必须在创建之前 `CoreWebView2` 设置此环境变量，这在最初设置 [WebView2.Source 属性](/windows/winui/api/microsoft.ui.xaml.controls.webview2.source) 或最初调用 [WebView2.EnsureCoreWebView2Async 方法](/windows/winui/api/microsoft.ui.xaml.controls.webview2.ensurecorewebview2async) 时发生。
 
+#### <a name="xbox-hololens-and-xaml-limitations"></a>Xbox、HoloLens 和 XAML 限制
+
+此版本的 WebView 2 仅适用于电脑类设备，提供在 WinUI 3 变体中找到的完整功能。 Xbox、HoloLens 和 XAML 岛支持需要额外的工作，将来可能会考虑这些设备和方案。
 
 #### <a name="api-limitations"></a>API 限制
 

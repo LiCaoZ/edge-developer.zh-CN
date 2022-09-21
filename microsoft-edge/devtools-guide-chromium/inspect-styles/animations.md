@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/11/2021
-ms.openlocfilehash: 8d255cc7ba6abda77791b1115f76053fd65e79df
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: 21facfbdadeead9058432dad3f688f135a40d2c5
+ms.sourcegitcommit: 4d5a0892ecdfbb06749149bd516c92b190700a9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630747"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "12757831"
 ---
 <!-- Copyright Kayce Basques
 
@@ -29,7 +29,7 @@ ms.locfileid: "12630747"
 # <a name="inspect-and-modify-css-animation-effects"></a>检查和修改 CSS 动画效果
 <!-- orig title: # Inspect animations -->
 
-使用动画工具中的 **动画检查器** 检查和修改 CSS **动画** 效果。
+使用**动画**工具中的**动画检查器**检查和修改 CSS 动画效果。
 
 ![动画工具。](../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png)
 
@@ -92,7 +92,7 @@ _动画组_是一组可能彼此相关的动画。  目前，Web 没有组动画
 
 <!--  old link: <video src="animations/capture-animations.mp4" autoplay loop muted controls></video>  -->
 
-<!--  import the video to ACOM using https://review.docs.microsoft.com/help/contribute/contribute-video-publish  -->
+<!--  import the video to ACOM using https://review.learn.microsoft.com/help/contribute/contribute-video-publish  -->
 
 <!--  > [!VIDEO animations/capture-animations.mp4]  -->
 
