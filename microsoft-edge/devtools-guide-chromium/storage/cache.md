@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 9ac2c2620207b8beb34dbf541fca72ab60c4a36d
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: 22dde81872b1fc918536f51badb675c9020489c4
+ms.sourcegitcommit: 4bf86f3e8546adc924a85f044885d1672fd554f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630467"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "12759694"
 ---
 <!-- Copyright Kayce Basques
 
@@ -55,6 +55,8 @@ ms.locfileid: "12630467"
 1. 单击 **“预览** ”可查看资源的内容。
 
    ![查看资源的内容。](../media/storage-application-cache-storage-domain-js-preview.msft.png)
+
+若要详细了解缓存数据存储配额，请参阅调试渐进式Web 应用文章的[“配额使用情况](../progressive-web-apps/index.md#quota-usage)”部分。
 
 
 <!-- ====================================================================== -->
