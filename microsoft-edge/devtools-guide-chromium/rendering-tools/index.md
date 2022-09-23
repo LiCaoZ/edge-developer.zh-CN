@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: e7449baeef8026fd29483f1247ce9c83b0d03c9e
-ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
+ms.openlocfilehash: dd3071ca84a72952f397d50c562fa77bf7a6690f
+ms.sourcegitcommit: 8f71eaa807bb9c325bdd94e0396bc991d3803190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "12676060"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "12760383"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -93,10 +93,7 @@ JavaScript 计算（尤其是触发大量视觉更改的计算）可能会使应
 
 ![长重新计算样式。](../media/rendering-tools-performance-recalculate-style-summary.msft.png)
 
-若要减少事件的影响 `Recalculate Style` ，
-
-*  使用 [CSS 触发器](https://csstriggers.com) 了解哪些 CSS 属性触发布局、绘制和复合。  这些属性对呈现性能的影响最为严重。
-*  切换到影响较小的属性。  <!--For more guidance, See [Stick to compositor-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->
+若要减少事件的影响 `Recalculate Style` ，请尽量减少使用触发布局、绘制和复合的 CSS 属性。  这些属性对呈现性能的影响最大。  有关详细信息，请参阅 [“坚持Compositor-Only属性和管理层计数](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/)
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available -->
 
