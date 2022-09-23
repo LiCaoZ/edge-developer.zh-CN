@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: 65763263689301c0cb02e800ccbc08154f420669
-ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
+ms.openlocfilehash: b44ed1eaf56f41c593c09e5aa841d31ea0ce0cd9
+ms.sourcegitcommit: 0d14dd864518c5b10cb844c14d80ea1cb589481c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "12676053"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "12759715"
 ---
 <!-- Copyright Kayce Basques
 
@@ -54,7 +54,7 @@ ms.locfileid: "12676053"
 
 | 操作 | Windows/Linux | macOS |
 |---|---|---|
-| 显示“**设置**” | `?` 或 `F1` | `?` 或 `Function`+`F1` |
+| 显示“**设置**” | `Shift`+`?` 或  `F1` | `Shift`+`?` 或 `Function`+`F1` |
 | 聚焦于下一窗格 | `Ctrl`+`]` | `Command`+`]` |
 | 聚焦于上一窗格 | `Ctrl`+`[` | `Command`+`[` |
 | 切换回上一次使用的[对接位置](../customize/placement.md)。  如果 DevTools 在整个会话中处于默认位置，则此快捷方式会将 DevTools 撤空到单独的窗口中。 | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |
