@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 02/14/2022
-ms.openlocfilehash: c80a5f1a4899ebeb6e01f189f57f580a4b73e05b
-ms.sourcegitcommit: f5f3e4febdef33e036f0c6946eab0f419d50d28d
+ms.openlocfilehash: e37250e24e730d64362e0fcbcb47cad82b830210
+ms.sourcegitcommit: 96614dbe082df25981cb375fa240eb4bc9b028cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "12746501"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "12760886"
 ---
 # <a name="develop-for-the-web-with-microsoft-edge"></a>使用 Microsoft Edge 开发网页版
 
@@ -163,11 +163,11 @@ See [The Web We Want initiative](web-we-want/index.md).
 <!-- ============================================================================================================================================ -->
 ## <a name="how-to-use-this-documentation"></a>如何使用此文档
 
-以下是使用Microsoft Docs文档 UI 的提示。
+以下是使用 Microsoft Learn 文档 UI 的提示。
 
 
 <!-- ====================================================================== -->
-## <a name="zoom-an-image-in-the-docs"></a>在文档中缩放图像
+## <a name="zoom-an-image-in-an-article"></a>缩放文章中的图像
 
 若要查看屏幕截图或图表的详细信息，请参阅：
 
@@ -175,30 +175,31 @@ See [The Web We Want initiative](web-we-want/index.md).
 
 1. 关闭图像选项卡以返回到文章。
 
-
 <!-- ====================================================================== -->
+
 ## <a name="look-up-key-words-and-terms-in-filter-by-title-text-box"></a>在“按标题筛选”文本框中查找关键字词和术语
 
 “按 **标题** 筛选”的多用途文本框支持：
-*  导航 TOC)  (目录。
-*  关键字的索引词查找。
-*  全文搜索文档。
+
+* 导航 TOC)  (目录。
+* 关键字的索引词查找。
+* 文档的全文搜索。
 
 在左上角 **的“按标题筛选”** 框中，输入要查找的术语或关键字：
 
-![用于导航 TOC、搜索文档和关键字的索引字词查找的多用途“按标题筛选”文本框。](media/filter-by-title-ui.png)
+![用于导航目录、搜索文档和关键字的索引字词查找的多用途“按标题筛选”文本框。](media/filter-by-title-ui.png)
 
 如果找不到所需文章，请 **在所有 Microsoft Edge 文档中选择“_搜索术语_”**：
 
 ![如果找不到标题字词或索引词，则会为全文搜索所有 Microsoft Edge 文档提供一个选项。](media/full-text-search-fallback.png)
 
-全文搜索页面最初搜索所有 _Microsoft Edge_ 文档。 或者，单击 **“查看所有结果** ”链接以进行更广泛的搜索：
+全文搜索页最初搜索所有 _Microsoft Edge_ 文档。  或者，单击 **“查看所有结果** ”链接以进行更广泛的搜索：
 
-![全文搜索页最初搜索所有 Microsoft Edge 文档，或单击链接“查看所有结果”以进行更广泛的搜索。](media/full-text-search-page.png)
-
+![全文搜索页最初搜索所有 Microsoft Edge 文档，也可以单击链接“查看所有结果”以进行更广泛的搜索。](media/full-text-search-page.png)
 
 <!-- ====================================================================== -->
-## <a name="provide-feedback-or-report-issues-in-the-microsoft-edge-developer-docs"></a>在 Microsoft Edge 开发人员文档中提供反馈或报告问题
+
+## <a name="provide-feedback-or-report-issues-in-the-microsoft-edge-developer-documentation"></a>在 Microsoft Edge 开发人员文档中提供反馈或报告问题
 
 若要提供反馈或输入问题，
 
