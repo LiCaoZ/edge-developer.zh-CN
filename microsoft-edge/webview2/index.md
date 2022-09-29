@@ -8,12 +8,12 @@ ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.technology: webview
 ms.date: 11/12/2021
-ms.openlocfilehash: 1c62f51428486508ff4880af74faa2d15dbe91eb
-ms.sourcegitcommit: ff01ae09a41be04a53ca8ee918bbf5fb999543c1
+ms.openlocfilehash: 9a291da9228ab4a02d78b1853ed59f35cf4cacb5
+ms.sourcegitcommit: fda7892846aaeb39ad76680384b081caaaeef406
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2022
-ms.locfileid: "12754789"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "12761601"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Microsoft Edge WebView2 简介
 
@@ -92,6 +92,7 @@ WebView2 应用可以在以下版本的 Windows 上运行：
 *  Windows 10 IoT 企业版 21h1 x64
 *  Windows 8.1
 *  Windows 7 \*\*
+*  Windows Server 2022
 *  Windows Server 2019
 *  Windows Server 2016
 *  Windows Server 2012
