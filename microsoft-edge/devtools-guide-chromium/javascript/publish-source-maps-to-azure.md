@@ -1,23 +1,23 @@
 ---
 title: 通过将源映射发布到Azure Artifacts符号服务器来安全地调试原始代码
-description: 了解如何将源映射发布到Azure Artifacts符号服务器，以便在 DevTools 中安全调试原始源代码。
+description: 了解如何将源映射发布到 Azure Artifacts 符号服务器，以便在 DevTools 中安全调试原始源代码。
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/26/2022
-ms.openlocfilehash: 45de64b7ee4f733697ff90d33a2b87fa47dab576
-ms.sourcegitcommit: cceea19c69eddaad5ba7d6cece07fbca2b02614e
+ms.openlocfilehash: bcfa5dfcfe65c62ed0ff052e20037f2163bc5966
+ms.sourcegitcommit: d9119fef1ebadc8dbe5e1d201131b292a18d3c02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "12551555"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "12762988"
 ---
 # <a name="securely-debug-original-code-by-publishing-source-maps-to-the-azure-artifacts-symbol-server"></a>通过将源映射发布到Azure Artifacts符号服务器来安全地调试原始代码
 
-安全地<!-- add sentence to define "securely", what are we making not happen?  what's the UX/end-result motivation for "securely"? --> 查看并使用 DevTools 中的原始开发源代码，而不是 Web 服务器返回的编译、细化和捆绑生产代码，使用由Azure Artifacts符号服务器提供的源映射。
+安全地<!-- add sentence to define "securely", what are we making not happen?  what's the UX/end-result motivation for "securely"? --> 查看并使用 DevTools 中的原始开发源代码，而不是 Web 服务器返回的编译、细化和捆绑生产代码，使用 Azure Artifacts 符号服务器提供的源映射。
 
-将源映射直接发布到 Web 服务器将使原始源代码公开可见。  若要避免使原始源代码公开可见，请将源映射发布到Azure Artifacts符号服务器。  通过此方法，可以在调试生产网站时在 DevTools 中使用源映射，而无需将源映射发布到 Web 服务器。
+将源映射直接发布到 Web 服务器将使原始源代码公开可见。  为了避免使原始源代码公开可见，请将源映射发布到 Azure Artifacts 符号服务器。  通过此方法，可以在调试生产网站时在 DevTools 中使用源映射，而无需将源映射发布到 Web 服务器。
 
 源映射将已编译的生产代码映射到原始开发源文件。 然后，在 DevTools 中，可以看到并使用熟悉的开发源文件，而不是编译的代码。 若要详细了解源映射和使用 DevTools 中的源映射，请参阅 [将已处理代码映射到原始源代码，以便进行调试](source-maps.md)。
 
@@ -25,29 +25,29 @@ ms.locfileid: "12551555"
 <!-- ====================================================================== -->
 ## <a name="concepts"></a>概念
 
-必须在Azure Artifacts符号服务器上为源映射编制索引，以便在调试生产网站时，源映射可供 DevTools 使用。
+必须在 Azure Artifacts 符号服务器上为源映射编制索引，以便在调试生产网站时，源映射可供 DevTools 使用。
 
 为此，请在 `x_microsoft_symbol_client_key` 编译时将字符串属性添加到源映射。  此属性包含相应原始源文件的 [256 位 SHA-2 哈希](https://en.wikipedia.org/wiki/SHA-2) 的小写十六进制值。
 
-然后，DevTools 能够计算每个已编译文件的此哈希，并使用哈希从Azure Artifacts符号服务器检索正确的源映射。  为了安全地检索源映射，DevTools 使用你提供的个人访问令牌连接到Azure Artifacts符号服务器。
+然后，DevTools 能够计算每个已编译文件的此哈希，并使用哈希从 Azure Artifacts 符号服务器中检索正确的源映射。  为了安全地检索源映射，DevTools 使用你提供的个人访问令牌连接到 Azure Artifacts 符号服务器。
 
 
 <!-- ====================================================================== -->
-## <a name="step-1-generate-a-personal-access-token-for-azure-devops"></a>步骤 1：为Azure DevOps生成个人访问令牌
+## <a name="step-1-generate-a-personal-access-token-for-azure-devops"></a>步骤 1：为 Azure DevOps 生成个人访问令牌
 
-将源映射发布到Azure Artifacts符号服务器需要[个人访问令牌](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate) (或 PAT) 。 编译代码和发布源映射时，生成系统将使用此 PAT。
+将源映射发布到 Azure Artifacts 符号服务器需要 [个人访问令牌](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate) (或 PAT) 。 编译代码和发布源映射时，生成系统将使用此 PAT。
 
-若要在Azure DevOps中生成 PAT：
+若要在 Azure DevOps 中生成 PAT，
 
-1. 通过转到`https://dev.azure.com/{yourorganization}`Azure DevOps组织登录。
+1. 通过转到 `https://dev.azure.com/{yourorganization}`Azure DevOps 组织登录。
 
-1. 在Azure DevOps中，转到 **“用户设置** > **个人访问令牌**”：
+1. 在 Azure DevOps 中，转到 **用户设置** > **个人访问令牌**：
     
-   ![Azure DevOps中的“用户设置”菜单，其中包含“个人访问令牌”命令。](images/ado-pat-settings.png)
+   ![Azure DevOps 中的“用户设置”菜单，其中包含“个人访问令牌”命令。](images/ado-pat-settings.png)
 
    将显示 **“个人访问令牌”** 页：
 
-   ![Azure DevOps中的“个人访问令牌”页。](images/ado-pat-page.png)
+   ![Azure DevOps 中的“个人访问令牌”页。](images/ado-pat-page.png)
 
 1. 单击 **“新建令牌**”。  “ **创建新的个人访问令牌** ”对话框随即打开：
 
@@ -83,9 +83,6 @@ ms.locfileid: "12551555"
 // Licensed under the BSD 3-clause license.
 
 const crypto = require('crypto');
-const fs = require('fs');
-const path = require('path');
-const process = require('process');
 
 module.exports = class PrepareSourceMapsForSymbolServerPlugin {
   /**
@@ -119,8 +116,7 @@ module.exports = class PrepareSourceMapsForSymbolServerPlugin {
         if (!sourceMapAsset.isBuffer()) {
           // Not a buffer -- write to the _value property
           sourceMapAsset._value = rewrittenSourceMapContents;
-        }
-        else {
+        } else {
           sourceMapAsset._valueAsBuffer = Buffer.from(rewrittenSourceMapContents, 'utf-8');
         }
 
@@ -161,26 +157,26 @@ module.exports = (env, args) => {
         // ... other plugins
         new PrepareSourceMapsForSymbolServerPlugin(),
     ]
-  });
+  };
 };
 ```
 
 
 <!-- ====================================================================== -->
-## <a name="step-3-publish-source-maps-to-the-azure-artifacts-symbol-server"></a>步骤 3：将源映射发布到Azure Artifacts符号服务器
+## <a name="step-3-publish-source-maps-to-the-azure-artifacts-symbol-server"></a>步骤 3：将源映射发布到 Azure Artifacts 符号服务器
 
 完成以下任一选项以发布源映射。
 
-### <a name="publish-source-maps-using-azure-devops-pipelines"></a>使用Azure DevOps Pipelines发布源映射
+### <a name="publish-source-maps-using-azure-devops-pipelines"></a>使用 Azure DevOps Pipelines 发布源映射
 
-Azure DevOps随管道生成任务一[`PublishSymbols@2`](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols)起完成。 此任务可用于将源映射发布到Azure Artifacts符号服务器。
+Azure DevOps 随附管道 [`PublishSymbols@2`](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) 生成任务。 此任务可用于将源映射发布到 Azure Artifacts 符号服务器。
 
 请确保将此任务`indexableFileFormats`的参数设置为或`All``SourceMap`设置为 。
 
 
 ### <a name="publish-source-maps-using-symbolexe"></a>使用 >a0/a0> `symbol.exe`
 
-符号服务器团队发布 .NET Core 应用程序，`symbol.exe`[可自动下载](/rest/api/azure/devops/symbol/client/get)。 下载`symbol.exe`后，可以执行命令，将源映射发布到Azure Artifacts符号服务器：
+符号服务器团队发布 .NET Core 应用程序，`symbol.exe`[可自动下载](/rest/api/azure/devops/symbol/client/get)。 下载 `symbol.exe`后，可以执行命令将源映射发布到 Azure Artifacts 符号服务器：
 
 ```cmd
 symbol publish
