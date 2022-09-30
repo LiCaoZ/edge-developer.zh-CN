@@ -5,13 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 08/03/2021
-ms.openlocfilehash: f34656e00221a4eac48cc96eb09ffc0983bf9eed
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.date: 09/20/2022
+ms.openlocfilehash: 433cd8471e2140e1dd036d69c62b445032fb64fd
+ms.sourcegitcommit: 45320a2c51db77c1e1d77ea04421a8a470ee5d85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12631060"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "12762670"
 ---
 <!-- Copyright Kayce Basques
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -39,14 +39,12 @@ ms.locfileid: "12631060"
 
 浅色主题：
 - Light+ (默认) 
-- Chromium光
 - 安静光
 - 太阳能化光
 
 深色主题：
 - Dark+ (默认) 
 - 深渊
-- Chromium深色
 - 金月深色
 - Monokai
 - Mono kai Dimmed

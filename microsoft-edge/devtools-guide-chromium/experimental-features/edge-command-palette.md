@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/24/2022
-ms.openlocfilehash: 8121db8e271533efef4eead2aa8c72be8ce2358e
-ms.sourcegitcommit: a955b0025aa97ed6165ebc4201d22bdea8614bb0
+ms.openlocfilehash: c1227ab35cb79e2d5792976e809ec20829f54c03
+ms.sourcegitcommit: 45320a2c51db77c1e1d77ea04421a8a470ee5d85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "12755930"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "12762643"
 ---
 # <a name="run-commands-via-keyboard-with-command-palette"></a>使用命令面板通过键盘运行命令
 
@@ -39,7 +39,8 @@ ms.locfileid: "12755930"
 
    ![在 edge://flags 页中启用命令面板标志](./media/command-palette-flag.png)
 
-上面的屏幕截图显示了 Microsoft Edge 105-107 的快捷方式。  Microsoft Edge 108 或更高版本将改为显示快捷方式 `Ctrl+Q` 。
+Microsoft Edge 108 或更高版本的标志页显示快捷方式 `Ctrl+Q`。  版本 105 到大多数版本的 107 改为显示`Ctrl``Space`+`Shift`+。
+
 
 <!-- ====================================================================== -->
 ## <a name="open-command-palette"></a>打开命令面板
@@ -57,7 +58,7 @@ ms.locfileid: "12755930"
 
    ![键入“书签”一词的命令面板，以及相关命令的列表](./media/command-palette-bookmark.png)
 
-1. 按 `Down Arrow` 或 `Up Arrow` 选择命令，然后按 `Enter`。
+1. 按 `Down Arrow` 或 `Up Arrow` 选择命令，或使用鼠标滚轮，然后按 `Enter`。
 
 下面显示了几个有用的命令的示例。
 
