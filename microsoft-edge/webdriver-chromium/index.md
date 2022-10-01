@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 05/17/2022
-ms.openlocfilehash: ede3875a83675bd9ca46acc263fff8da692fec6e
-ms.sourcegitcommit: 62f55a8303644d4d3f2ea29e624efcc54f465aa1
+ms.openlocfilehash: 2ac0734e490f403f3b76ec2557b23f66aa1bcc61
+ms.sourcegitcommit: 3b891b5cfd662778b71a78833fbe17c31c579bdf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "12521743"
+ms.lasthandoff: 10/01/2022
+ms.locfileid: "12763071"
 ---
 # <a name="use-webdriver-to-automate-microsoft-edge"></a>使用 WebDriver 自动执行 Microsoft Edge
 
@@ -77,16 +77,16 @@ WebDriver 允许你通过模拟用户交互来自动执行 Microsoft Edge。  �
 
 ### <a name="using-selenium-4"></a>使用 Selenium 4
 
-Selenium WebDriver 是一个开放源代码测试框架，可在任何平台上使用，并为 Java、Python、C#、Ruby、JavaScript 提供语言绑定。
+Selenium WebDriver 是一个开放源代码测试框架，可在任何平台上使用，并为 Java、Python、C#、Ruby、JavaScript 提供语言绑定。 注意：运行 Selenium 4 测试需要 Python 3。 不支持 (Python 2.7。) 
 
-若要使用 WebDriver 自动执行Microsoft Edge，如果使用 Selenium，则必须使用具有内置Microsoft Edge (Chromium) 支持的 Selenium 4。
+若要使用 WebDriver 自动执行 Microsoft Edge，如果使用 Selenium，则必须使用 Selenium 4，它内置支持 Microsoft Edge (Chromium) 。
 
 若要安装 Selenium 4，请 [参阅安装 Selenium 库](https://www.selenium.dev/documentation/webdriver/getting_started/install_library/)。  如果需要，nuget 包页为 [Selenium.WebDriver](https://www.nuget.org/packages/Selenium.WebDriver)。
 
 
 ### <a name="upgrading-from-selenium-3"></a>从 Selenium 3 升级
 
-若要使用 WebDriver 自动执行Microsoft Edge，如果使用 Selenium，请确保使用的是 Selenium 4。  不再支持 Selenium 3。
+若要使用 WebDriver 自动执行 Microsoft Edge，如果使用 Selenium，请确保使用的是 Selenium 4。  不再支持 Selenium 3。
 
 必须将现有的 Selenium 3 测试升级到 Selenium 4。  若要了解有关升级到 Selenium 4 的详细信息，请参阅[升级到 Selenium 4](https://www.selenium.dev/documentation/webdriver/getting_started/upgrade_to_selenium_4/)。
 
@@ -381,7 +381,7 @@ let driver = edge.Driver.createSession(options);
 
 ### <a name="docker"></a>Docker
 
-如果使用 [Docker](https://hub.docker.com)，请运行以下命令下载预配置的图像，该映像已预安装Microsoft Edge并Microsoft Edge WebDriver。
+如果使用 [Docker](https://hub.docker.com)，请运行以下命令下载预配置的预配置映像，该映像已预安装 Microsoft Edge 和 Microsoft Edge WebDriver。
 
 ```console
 docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
@@ -427,11 +427,11 @@ Microsoft WebDriver 是基于 EdgeHTML 的 Microsoft Edge 的旧版 WebDriver �
 
 ### <a name="developer-tools-availability-policy"></a>开发人员工具可用性策略
 
-如果 IT 管理员已将 [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) 策略设置为`2`，Microsoft Edge WebDriver 会被阻止Microsoft Edge，因为驱动程序使用 [Microsoft Edge DevTools](../devtools-guide-chromium/overview.md)。  若要自动执行 Microsoft Edge，请确保将 [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) 策略设置为 `0` 或 `1`。
+如果 IT 管理员已将 [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) 策略设置为 `2`“Microsoft Edge WebDriver”，将阻止其驾驶 Microsoft Edge，因为驱动程序使用 [Microsoft Edge DevTools](../devtools-guide-chromium/overview.md)。  若要自动执行 Microsoft Edge，请确保将 [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) 策略设置为 `0` 或 `1`。
 
 ### <a name="upgrading-from-selenium-3-to-selenium-4"></a>从 Selenium 3 升级到 Selenium 4
 
-若要使用 WebDriver 自动执行Microsoft Edge，如果使用 Selenium，请确保使用的是 Selenium 4。  不再支持 Selenium 3。
+若要使用 WebDriver 自动执行 Microsoft Edge，如果使用 Selenium，请确保使用的是 Selenium 4。  不再支持 Selenium 3。
 
 如果使用 Selenium 4，则无需使用用于 Microsoft Edge 的 Selenium 工具。  用于 Microsoft Edge 的 Selenium 工具仅适用于 Selenium 3。  如果尝试将 Selenium 4 与 Selenium Tools for Microsoft Edge 配合使用，并尝试创建新的 `EdgeDriver` 实例，则会收到以下错误：`System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'`。
 
@@ -441,5 +441,5 @@ Microsoft WebDriver 是基于 EdgeHTML 的 Microsoft Edge 的旧版 WebDriver �
 <!-- ====================================================================== -->
 ## <a name="see-also"></a>另请参阅
 
-* [Selenium 浏览器自动化Project](https://www.selenium.dev/documentation) - 有关 Selenium 上下文中的 WebDriver 的信息，以及如何使用 Selenium 编写自动化 WebDriver 测试。
+* [Selenium 浏览器自动化项目](https://www.selenium.dev/documentation) - 有关 Selenium 上下文中的 WebDriver 的信息，以及如何使用 Selenium 编写自动化 WebDriver 测试。
 * [请联系 Microsoft Edge WebDriver 团队](contact.md)，发送有关使用 WebDriver、WebDriver 测试框架（如 Selenium）和 Microsoft Edge 的反馈。
