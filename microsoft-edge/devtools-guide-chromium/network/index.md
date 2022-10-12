@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
-ms.openlocfilehash: d254d084503a2723af62383ecc97b5d3a04c46e4
-ms.sourcegitcommit: 667a1a83c0eb44b18b4817cc0c3a980e87c40901
-ms.translationtype: HT
+ms.openlocfilehash: 215e3e77457e7c5523004dcdb78f75502d8911d4
+ms.sourcegitcommit: f364fe2c3fcd3d84c8ebd30256e2dce04ed12d8e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "12676144"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "12775786"
 ---
 <!-- Copyright Kayce Basques
 
@@ -28,11 +28,15 @@ ms.locfileid: "12676144"
    limitations under the License. -->
 # <a name="inspect-network-activity"></a>检查网络活动
 
-使用 **网络** 工具确保正在按预期下载或上传资源。  检查单个资源的属性，例如 HTTP 标头、内容或大小。
+使用 **网络** 工具确保网页需要运行的资源按预期下载，并正确发送对服务器端 API 的请求。  检查单个 HTTP 请求和响应的属性，例如 HTTP 标头、内容或大小。
 
 此为 **网络** 工具的分步教程演练，用于检查页面的网络活动。
 
 有关与网络相关的 DevTools 功能的概述，请参阅 [网络功能参考](reference.md)。
+
+有关本教程的视频版本，请查看以下视频：
+
+[![TDevTools 网络工具视频的 humbnail 图像](./images/network-tool-intro-video.png)](https://www.youtube.com/watch?v=niG_Ck6E5L8)
 
 <!-- TODO: entire section needs a Microsoft Edge DevTools rewrite  -->
 
@@ -40,19 +44,19 @@ ms.locfileid: "12676144"
 
 
 <!-- ====================================================================== -->
-## <a name="when-to-use-the-network-panel"></a>何时使用网络面板
+## <a name="when-to-use-the-network-tool"></a>何时使用网络工具
 
-一般情况下，当您需要确保资源正在下载或上传时，请使用网络面板。  **网络** 面板的最常见用例包括:
+一般情况下，当需要确保资源正确下载且服务器端 API 的请求按预期发送时，请使用网络工具。  **网络**工具最常见的用例是：
 
-*  确保资源上载或下载实际正在进行。
+*  确保正在实际下载资源。
 
-*  检查单个资源的属性，如 HTTP 标头、内容、大小等。
+*  验证服务器端 API 调用的请求参数和响应。
 
-如果正在寻找提高页面加载性能的方法，请不要从 **网络** 工具开始。  有许多类型的加载性能问题与网络活动无关。  从 ** Lighthouse** 工具开始，因为它提供了有关如何改进页面的针对性建议。  请参阅 [使用 Lighthouse 优化网站速度](../speed/get-started.md)。
+如果正在寻找提高页面负载性能的方法， **网络** 工具可以帮助了解下载数据的数量以及下载数据所需的时间，但还有许多其他类型的负载性能问题与网络活动无关。  若要进一步调查页面加载性能问题，可以使用 **性能工具**、 **问题** 工具和 **Lighthouse** 工具，因为它提供有关如何改进页面的有针对性的建议。  例如，请参阅 [使用 Lighthouse 优化网站速度](../speed/get-started.md)。
 
 
 <!-- ====================================================================== -->
-## <a name="open-the-network-panel"></a>打开网络面板
+## <a name="open-the-network-tool"></a>打开网络工具
 
 要充分利用本教程，请打开演示并试用演示页面上的功能。
 
@@ -68,15 +72,9 @@ ms.locfileid: "12676144"
 
 1. 要打开 DevTools，请右击网页，然后选择“**检查**”。  或者，按“`Ctrl`+`Shift`+`J`”(Windows、Linux)或“`Command`+`Option`+`J`”(macOS)。  DevTools 随即打开。
 
-1. 在 DevTools 的主工具栏上，选择“**控制台**”选项卡。 如果该选项卡不可见，请点击“**更多选项卡**”(“![更多选项卡图标。](../media/more-tabs-icon-light-theme.png)”)按钮:
-
-   ![控制台。](../media/network-glitch-console.msft.png)
+1. 在 DevTools 的主工具栏上，选择 **“网络** ”选项卡。 如果该选项卡不可见，请单击“ **更多工具** ” (![“更多工具”图标。](../media/more-tools-icon-light-theme.png)) 按钮：
 
    你可能更愿意 [将 DevTools 停靠到窗口底部](../customize/placement.md):
-
-   ![停靠在窗口底部的 DevTools。](../media/network-glitch-console-bottom.msft.png)
-
-1. 打开“**网络**”工具:
 
    ![DevTools 中的网络工具，其中 DevTools 停靠在窗口底部。](../media/network-glitch-network-bottom.msft.png)
 
@@ -84,11 +82,23 @@ ms.locfileid: "12676144"
 
 
 <!-- ====================================================================== -->
+## <a name="understand-the-network-tool-user-interface"></a>了解网络工具用户界面
+
+网络工具分为三个主要部分：
+
+* 顶部工具栏包含用于自定义工具和筛选网络请求的选项。
+* 在顶部工具栏下方，“ **概述** ”图提供了一段时间内网络流量的高级概述，并允许筛选网络请求。
+* 在 **“概述** ”图下， **“网络日志** ”部分显示网络活动并允许检查单个请求。
+
+![网络工具的三个主要部分](./images/network-ui-sections.png)
+
+
+<!-- ====================================================================== -->
 ## <a name="log-network-activity"></a>记录网络活动
 
 查看页面导致的网络活动：
 
-1. 刷新网页。  **网络** 面板会记录 **网络日志** 中的所有网络活动:
+1. 刷新网页。  **网络**工具记录**网络日志**中的所有网络活动：
 
    ![网络日志。](../media/network-glitch-network.msft.png)
 
@@ -106,8 +116,7 @@ ms.locfileid: "12676144"
 
     *  **粘滞键**。  请求的不同阶段的图形表示形式。  要显示细目，请将鼠标悬停在“**瀑布图**”上。
 
-    > [!NOTE]
-    > **网络日志** 上方的图形称为 **概述**。  本教程不会使用 **概述** 图，因此可以将其隐藏。  请参阅 [隐藏概述窗格](reference.md#hide-the-overview-pane)。
+    请注意，“ **概述** ”图还显示了网络活动。  本教程不会使用 **概述** 图，因此可以将其隐藏。  请参阅 [隐藏概述窗格](reference.md#hide-the-overview-pane)。
 
    打开 DevTools 后，它会记录 **网络日志** 中的网络活动。
 
@@ -137,7 +146,7 @@ ms.locfileid: "12676144"
 
 用于构建站点的计算机的网络连接可能比用户的移动设备的网络连接速度快。  通过限制页面，可以更好地了解页面在移动设备上加载所花的时间。
 
-1. 选择“**限制**”下拉列表，该列表默认设置为“**无限制**”。
+1. 选择顶部工具栏中的 **“限制** ”下拉列表。 默认情况下，它设置为 **“无限制** ”。
 
 1. 选择“**慢速 3G**”:
 
@@ -235,32 +244,26 @@ ms.locfileid: "12676144"
 <!-- ====================================================================== -->
 ## <a name="filter-resources"></a>筛选资源
 
-DevTools 提供大量工作流，用于筛选出与手头任务无关的资源:
+DevTools 提供了许多工作流，用于筛选出与当前任务无关的资源。
+
+默认情况下 **应** 打开"筛选器"工具栏。  如果“ **筛选器”** 工具栏未打开，请单击“ **筛选** 器 (![筛选器。](../media/filter-icon.msft.png)) 显示：
 
 ![“筛选器”工具栏。](../media/network-glitch-network-filter-empty.msft.png)
-
-默认情况下 **应** 打开"筛选器"工具栏。  如果“**筛选器**”工具栏未打开，请点击“**筛选器**”(“![筛选器。](../media/filter-icon.msft.png)”)以显示。
 
 
 ### <a name="filter-by-string-regular-expression-or-property"></a>按字符串、正则表达式或属性筛选
 
 “**筛选器**”文本框支持许多不同类型的筛选。
 
-1. 键入 `png` 到“**筛选器**”文本框。  只显示包含文本 `png` 的文件。  在这种情况下，唯一与筛选器匹配的文件为 PNG 图像:
+![网络工具的筛选器文本框](images/network-tool-filter-textbox.png)
 
-   ![字符串筛选器。](../media/network-glitch-network-filter-png.msft.png)
+1. 键入 `png` 到“**筛选器**”文本框。  只显示包含文本 `png` 的文件。  在这种情况下，与筛选器匹配的唯一文件是 PNG 图像。
 
-1. 键入 `/.*\.[cj]s+$/`。  DevTools 会筛选出任何文件名不以 `j` 或 `c` 结尾，且后跟 1 个或多个 `s` 字符的资源:
+1. 类型 `/.*\.[cj]s+$/`，即 JavaScript 正则表达式。  DevTools 筛选出文件名不以 1 个`j`或`c``s`多个字符结尾的任何资源。
 
-   ![正则表达式筛选器。](../media/network-glitch-network-filter-regex.msft.png)
+1. 键入 `-main.css`。  DevTools 筛选器出 `main.css`。  如果任何文件与该模式匹配，也会将其筛选掉。
 
-1. 键入 `-main.css`。  DevTools 筛选器出 `main.css`。  如果有文件与该模式匹配，则也会被筛选出:
-
-   ![负筛选器。](../media/network-glitch-network-filter-negative-statement.msft.png)
-
-1. 键入 `larger-than:1000` 到“**筛选器**”文本框。  DevTools 会筛选出任何响应小于 1000 字节的资源:
-
-   ![属性筛选器。](../media/network-glitch-network-filter-property-value.msft.png)
+1. 键入 `larger-than:1000` 到“**筛选器**”文本框。  DevTools 筛选出响应小于 1000 字节的资源。
 
    有关可筛选属性的完整列表，请参阅 [按属性筛选请求](reference.md#filter-requests-by-properties)。
 
@@ -276,8 +279,6 @@ DevTools 提供大量工作流，用于筛选出与手头任务无关的资源:
    ![只显示 CSS 文件。](../media/network-glitch-network-filter-file-type-css.msft.png)
 
 1. 若要显示脚本，请长按“`Ctrl`”(Windows、Linux) 或“`Command`”(macOS)，然后点击“**JS**”。
-
-   ![只显示 CSS 和 JS 文件。](../media/network-glitch-network-filter-file-type-css-js.msft.png)
 
 1. 要删除筛选器并再次显示所有资源，请选择 **全部**。
 
@@ -295,13 +296,9 @@ DevTools 提供大量工作流，用于筛选出与手头任务无关的资源:
 
    ![显示请求阻止。](../media/network-glitch-network-cli-block.msft.png)
 
-1. 点击“**添加模式**”(“![添加模式。](../media/add-icon.msft.png)”)。
-
-1. 键入“`main.css`”:
+1. 单击 **“添加模式** (![添加模式。](../media/add-icon.msft.png)) ，然后键入 `main.css`，然后单击 **”添加**：
 
    ![正在阻止 "main.css"。](../media/network-glitch-network-cli-block-add-pattern.msft.png)
-
-1. 单击**添加**。
 
 1. 刷新页面。  与预期一样，由于已阻止主样式表，因此页面的样式略为混乱。
 

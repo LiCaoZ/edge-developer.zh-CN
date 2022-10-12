@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: extensions
 ms.date: 5/09/2022
-ms.openlocfilehash: 68ff06b88f31f8383ce3d4076e95ec5ba480f3e3
-ms.sourcegitcommit: 59e8749cdca66da97bbe9f7bbde42d8c491231ca
+ms.openlocfilehash: 94a2ff1ddb34ac034ce9308396109b389d22b9b0
+ms.sourcegitcommit: f364fe2c3fcd3d84c8ebd30256e2dce04ed12d8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "12513283"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "12775745"
 ---
 # <a name="overview-and-timelines-for-migrating-to-manifest-v3"></a>迁移到清单 V3 的概述和日程表
 
@@ -34,16 +34,19 @@ ms.locfileid: "12513283"
 
 * 清单 V3 中还将引入一些次要功能改进。
 
-若要帮助你进行规划，请考虑 Microsoft 合作伙伴中心的以下计划并Microsoft Edge更改。
+若要帮助你进行规划，请考虑 Microsoft 合作伙伴中心和 Microsoft Edge 更改的以下计划。
 
-此时间线可能会更改。 随着里程碑的临近，本文将更新为共享确切详细信息。
 
-| 时间 | Microsoft 合作伙伴中心更改 | Microsoft Edge更改 |
+#### <a name="revised-timeline"></a>修订后的时间线
+
+此时间线可能会更改。 随着里程碑的临近，本文将更新。  Chrome 已修改清单 V2 日落的时间线，我们将更新本文以反映该更改。
+
+| 时间 | Microsoft 合作伙伴中心更改 | Microsoft Edge 更改 |
 |--- |--- |--- |
 | 2022 年 7 月 | Microsoft 合作伙伴中心将不再接受新的清单 V2 扩展，其可见性设置为 `Hidden` 或 `Public`。 | 无更改。 |
-| 2023 年 1 月 | Microsoft 合作伙伴中心将不再接受对现有清单 V2 扩展的更新。 开发人员可以提交更新以将 V2 扩展迁移到 V3。 | Microsoft Edge停止运行清单 V2 扩展。 企业可以使用Enterprise策略允许清单 V2 扩展在Microsoft Edge上运行。 |
-| 2023 年 6 月 | 无更改。 | 清单 V2 扩展将不再在Microsoft Edge中运行，即使使用Enterprise策略。 |
+| 2023 年 1 月 | Microsoft 合作伙伴中心将不再接受对现有清单 V2 扩展的更新。 开发人员可以提交更新以将 V2 扩展迁移到 V3。 | Microsoft Edge 停止运行清单 V2 扩展。 企业可以使用企业策略允许清单 V2 扩展在 Microsoft Edge 上运行。 |
+| 2023 年 6 月 | 无更改。 | 清单 V2 扩展将不再在 Microsoft Edge 中运行，即使使用企业策略。 |
 
 Microsoft 继续以迭代方式改进平台并解决扩展开发人员共享的反馈问题。
 
-在 Twitter [@MSEdgeDev](https://twitter.com/msedgedev/)上或通过  [TechCommunity Microsoft Edge 预览体验论坛](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254)与团队分享你的问题、评论和关注。
+在 Twitter [@MSEdgeDev](https://twitter.com/msedgedev/) 或通过 [TechCommunity 上的 Microsoft Edge 预览体验成员论坛](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254)与团队分享你的问题、评论和关注。
