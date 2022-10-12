@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 10/07/2022
-ms.openlocfilehash: d44b17edf6ec2a1e79eb22c71c4ac09f470e4bf2
-ms.sourcegitcommit: abf18b3d2ac43ff56ce0ab567db698351def791a
+ms.openlocfilehash: 7313f4111a9ef13534540494fb98fb8683630e6f
+ms.sourcegitcommit: 4f98bf6d17d865fc01f0d84edc3d8dfae74e57e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "12772586"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "12776165"
 ---
 # <a name="release-notes-for-the-webview2-sdk"></a>WebView2 SDK 发行说明
 
@@ -37,6 +37,158 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 若要加载 WebView2，Microsoft Edge 或 WebView2 运行时的最小版本为 86.0.616.0。  仅当 Web 平台中发生重大更改时，要加载 WebView2 的最小版本才会更改。
 
 若要将预发行版 SDK 与 Microsoft Edge 预览频道一起使用，请参阅 [测试即将推出的 API 和功能](how-to/set-preview-channel.md)。
+
+<!-- ====================================================================== -->
+## <a name="10137028"></a>1.0.1370.28
+
+发布日期：2022 年 10 月 11 日
+
+[适用于 WebView2 SDK 1.0.1370.28 的 NuGet 包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1370.28)
+
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 WebView2 运行时版本 106.0.1370.28 或更高版本。
+
+### <a name="general"></a>概要
+
+#### <a name="promotions"></a>促销
+
+以下项现在稳定：
+
+*  拖放 API：
+   * `DragEnter`
+   * `DragLeave`
+   * `DragOver`
+   * `Drop`
+
+##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2CompositionController.DragLeave 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.dragleave?view=webview2-dotnet-1.0.1370.28&preserve-view=true#microsoft-web-webview2-core-corewebview2compositioncontroller-dragleave)
+
+##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
+
+* [ICoreWebView2CompositionControllerInterop2.DragEnter 方法](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop2?view=webview2-winrt-1.0.1370.28&preserve-view=true#dragenter)
+* [ICoreWebView2CompositionControllerInterop2.DragLeave 方法](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop2?view=webview2-winrt-1.0.1370.28&preserve-view=true#dragleave)
+* [ICoreWebView2CompositionControllerInterop2.DragOver 方法](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop2?view=webview2-winrt-1.0.1370.28&preserve-view=true#dragover)
+* [ICoreWebView2CompositionControllerInterop2.Drop 方法](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop2?view=webview2-winrt-1.0.1370.28&preserve-view=true#drop)
+* [CoreWebView2CompositionController.DragLeave 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.1370.28&preserve-view=true#dragleave)
+
+##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2CompositionController3：:D ragEnter 方法](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1370.28&preserve-view=true#dragenter)
+* [ICoreWebView2CompositionController3：:D ragLeave 方法](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1370.28&preserve-view=true#dragleave)
+* [ICoreWebView2CompositionController3：:D ragOver 方法](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1370.28&preserve-view=true#dragover)
+* [ICoreWebView2CompositionController3：:D rop 方法](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1370.28&preserve-view=true#drop)
+
+---
+
+
+<!-- ====================================================================== -->
+## <a name="101414-prerelease"></a>1.0.1414-prerelease
+
+发布日期：2022 年 10 月 11 日
+
+[适用于 WebView2 SDK 1.0.1414-prerelease 的 NuGet 包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1414-prerelease)
+
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 Microsoft Edge 版本 107.0.1414.0 或更高版本。
+
+### <a name="general"></a>概要
+
+#### <a name="experimental-features"></a>实验功能
+
+*  添加了对打印 API 的支持：
+
+##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2.PrintAsync 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2.printasync?view=webview2-dotnet-1.0.1414-prerelease&preserve-view=true)
+* [CoreWebView2.PrintToPdfStreamAsync 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2.printtopdfstreamasync?view=webview2-dotnet-1.0.1414-prerelease&preserve-view=true)
+* [CoreWebView2.ShowPrintUI 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2.showprintui?view=webview2-dotnet-1.0.1414-prerelease&preserve-view=true)
+* [CoreWebView2PrintSettings 类](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings?view=webview2-dotnet-1.0.1414-prerelease&preserve-view=true)
+   * [CoreWebView2PrintSettings.Collation 属性](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings.collation?view=webview2-dotnet-1.0.1414-prerelease&preserve-view=true)
+   * [CoreWebView2PrintSettings.ColorMode 属性](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings.colormode?view=webview2-dotnet-1.0.1414-prerelease&preserve-view=true)
+   * [CoreWebView2PrintSettings.Copies 属性](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings.copies?view=webview2-dotnet-1.0.1414-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2printsettings-copies)
+   * [CoreWebView2PrintSettings.Duplex 属性](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings.duplex?view=webview2-dotnet-1.0.1414-prerelease&preserve-view=true)
+   * [CoreWebView2PrintSettings.MediaSize 属性](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings.mediasize?view=webview2-dotnet-1.0.1414-prerelease&preserve-view=true)
+   * [CoreWebView2PrintSettings.PageRanges 属性](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings.pageranges?view=webview2-dotnet-1.0.1414-prerelease&preserve-view=true)
+   * [CoreWebView2PrintSettings.PagesPerSide 属性](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings.pagesperside?view=webview2-dotnet-1.0.1414-prerelease&preserve-view=true)
+   * [CoreWebView2PrintSettings.PrinterName 属性](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings.printername?view=webview2-dotnet-1.0.1414-prerelease&preserve-view=true)
+
+##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2.PrintAsync 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1414-prerelease&preserve-view=true#printasync)
+* [CoreWebView2.PrintToPdfStreamAsync](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1414-prerelease&preserve-view=true#printtopdfstreamasync)
+* [CoreWebView2.ShowPrintUI 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.1414-prerelease&preserve-view=true#showprintui)
+* [CoreWebView2PrintSettings 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2printsettings?view=webview2-winrt-1.0.1414-prerelease&preserve-view=true)
+   * [CoreWebView2PrintSettings.Collation 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2printsettings?view=webview2-winrt-1.0.1414-prerelease&preserve-view=true#collation)
+   * [CoreWebView2PrintSettings.ColorMode 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2printsettings?view=webview2-winrt-1.0.1414-prerelease&preserve-view=true#colormode)
+   * [CoreWebView2PrintSettings.Copies 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2printsettings?view=webview2-winrt-1.0.1414-prerelease&preserve-view=true#copies)
+   * [CoreWebView2PrintSettings.Duplex 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2printsettings?view=webview2-winrt-1.0.1414-prerelease&preserve-view=true#duplex)
+   * [CoreWebView2PrintSettings.MediaSize 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2printsettings?view=webview2-winrt-1.0.1414-prerelease&preserve-view=true#mediasize)
+   * [CoreWebView2PrintSettings.PageRanges 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2printsettings?view=webview2-winrt-1.0.1414-prerelease&preserve-view=true#pageranges)
+   * [CoreWebView2PrintSettings.PagesPerSide 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2printsettings?view=webview2-winrt-1.0.1414-prerelease&preserve-view=true#pagesperside)
+   * [CoreWebView2PrintSettings.PrinterName 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2printsettings?view=webview2-winrt-1.0.1414-prerelease&preserve-view=true#printername)
+
+##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Experimental17：:P rint 方法](/microsoft-edge/webview2/reference/win32/icorewebview2experimental17?view=webview2-1.0.1414-prerelease&preserve-view=true#print)
+* [ICoreWebView2Experimental17：:P rintToPdfStream 方法](/microsoft-edge/webview2/reference/win32/icorewebview2experimental17?view=webview2-1.0.1414-prerelease&preserve-view=true#printtopdfstream)
+* [ICoreWebView2Experimental17：：ShowPrintUI 方法](/microsoft-edge/webview2/reference/win32/icorewebview2experimental17?view=webview2-1.0.1414-prerelease&preserve-view=true#showprintui)
+* [ICoreWebView2ExperimentalPrintCompletedHandler 接口](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprintcompletedhandler?view=webview2-1.0.1414-prerelease&preserve-view=true)
+* [ICorewebView2ExperimentalPrintToPdfStreamCompletedHandler 接口](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprinttopdfstreamcompletedhandler?view=webview2-1.0.1414-prerelease&preserve-view=true)
+* [ICoreWebView2ExperimentalPrintSettings2 接口](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprintsettings2?view=webview2-1.0.1414-prerelease&preserve-view=true)
+   * [ICoreWebView2ExperimentalPrintSettings2：：Collation 属性 (获取](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprintsettings2?view=webview2-1.0.1414-prerelease&preserve-view=true#get_collation)， [放) ](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprintsettings2?view=webview2-1.0.1414-prerelease&preserve-view=true#put_collation)
+   * [ICoreWebView2ExperimentalPrintSettings2：：ColorMode 属性 (获取](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprintsettings2?view=webview2-1.0.1414-prerelease&preserve-view=true#get_colormode)， [放) ](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprintsettings2?view=webview2-1.0.1414-prerelease&preserve-view=true#put_colormode)
+   * [ICoreWebView2ExperimentalPrintSettings2：：Copies 属性 (获取](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprintsettings2?view=webview2-1.0.1414-prerelease&preserve-view=true#get_copies)， [放) ](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprintsettings2?view=webview2-1.0.1414-prerelease&preserve-view=true#put_copies)
+   * [ICoreWebView2ExperimentalPrintSettings2：:D uplex 属性 (获取](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprintsettings2?view=webview2-1.0.1414-prerelease&preserve-view=true#get_duplex)， [放) ](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprintsettings2?view=webview2-1.0.1414-prerelease&preserve-view=true#put_duplex)
+   * [ICoreWebView2ExperimentalPrintSettings2：：MediaSize 属性 (获取](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprintsettings2?view=webview2-1.0.1414-prerelease&preserve-view=true#get_mediasize)， [放) ](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprintsettings2?view=webview2-1.0.1414-prerelease&preserve-view=true#put_mediasize)
+   * [ICoreWebView2ExperimentalPrintSettings2：:P ageRanges 属性 (获取](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprintsettings2?view=webview2-1.0.1414-prerelease&preserve-view=true#get_pageranges)， [放) ](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprintsettings2?view=webview2-1.0.1414-prerelease&preserve-view=true#put_pageranges)
+   * [ICoreWebView2ExperimentalPrintSettings2：:P agesPerSide 属性 (获取](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprintsettings2?view=webview2-1.0.1414-prerelease&preserve-view=true#get_pagesperside)， [放) ](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprintsettings2?view=webview2-1.0.1414-prerelease&preserve-view=true#put_pagesperside)
+   * [ICoreWebView2ExperimentalPrintSettings2：:P rinterName 属性 (获取](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprintsettings2?view=webview2-1.0.1414-prerelease&preserve-view=true#get_printername)， [放) ](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprintsettings2?view=webview2-1.0.1414-prerelease&preserve-view=true#put_printername)
+
+---
+
+*  添加了对 SmartScreen API 的支持：
+
+##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2Settings.IsReputationCheckingRequired 属性](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired?view=webview2-dotnet-1.0.1414-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2settings-isreputationcheckingrequired)
+
+##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2Settings.IsReputationCheckingRequired 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings?view=webview2-winrt-1.0.1414-prerelease&preserve-view=true#isreputationcheckingrequired)
+
+##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ExperimentalSettings7：：IsReputationCheckingRequired 属性 (获取](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings7?view=webview2-1.0.1414-prerelease&preserve-view=true#get_isreputationcheckingrequired)， [放) ](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings7?view=webview2-1.0.1414-prerelease&preserve-view=true#put_isreputationcheckingrequired)
+
+---
+
+*  添加了对自定义故障报告 API 的支持：
+
+##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled 属性](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.iscustomcrashreportingenabled?view=webview2-dotnet-1.0.1414-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2environmentoptions-iscustomcrashreportingenabled)
+
+* [CoreWebView2Environment.FailureReportFolderPath 属性](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.failurereportfolderpath?view=webview2-dotnet-1.0.1414-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2environment-failurereportfolderpath)
+
+
+##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.1414-prerelease&preserve-view=true#iscustomcrashreportingenabled)
+* [CoreWebView2Environment.FailureReportFolderPath 属性](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1414-prerelease&preserve-view=true#failurereportfolderpath)
+
+##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ExperimentalEnvironmentOptions2：：IsCustomCrashReportingEnabled 属性 (获取](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions2?view=webview2-1.0.1414-prerelease&preserve-view=true#get_iscustomcrashreportingenabled)， [放) ](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions2?view=webview2-1.0.1414-prerelease&preserve-view=true#put_iscustomcrashreportingenabled)
+* [ICoreWebView2ExperimentalEnvironment：：FailureReportFolderPath 属性 (获取) ](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment?view=webview2-1.0.1414-prerelease&preserve-view=true#get_failurereportfolderpath)<!--no put-->
+
+---
+
+#### <a name="bug-fixes"></a>Bug 修复
+
+*   从下载页中删除了链接断开的三点菜单。  (运行时)  ([问题 #2753](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2753)) 
+*   修复了 WebView2 WinRT JS 投影工具 (wv2winrt) 中 C++20 项目无法编译的 bug。   ([问题 #2768](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2768)) 
+*   修复了在关闭 WebView2 时，如果订阅了任何事件（尤其是事件）时 WebView2 WinRT API 可能发生的 `CoreWebView2.GetDevToolsEventReceiver` 崩溃。 这是仅限 SDK 的更改。
+*   修复了在最小化窗口后无法关闭下载弹出窗口的 bug。  (运行时) 
+
 
 
 <!-- ====================================================================== -->

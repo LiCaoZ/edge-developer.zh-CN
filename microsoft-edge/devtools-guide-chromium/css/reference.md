@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/29/2021
-ms.openlocfilehash: a01fde372490133cff392b39b15987d35e6ef478
-ms.sourcegitcommit: 4d5a0892ecdfbb06749149bd516c92b190700a9e
+ms.openlocfilehash: b8d5a3d8300350f13bbfb7d6eb7037773da90eea
+ms.sourcegitcommit: e6c9736d481b85a789b585a73d02eebb544f5e5e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2022
-ms.locfileid: "12757790"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "12776150"
 ---
 <!-- Copyright Kayce Basques
 
@@ -279,7 +279,7 @@ DevTools 中的 **元素** 工具允许你一次查看或更改一个元素的 C
 
 1. 单击 **.cls**。
 
-1. 在 **“添加新类”** 文本框中输入类的名称。
+1. 在 **“添加新类** ”文本框中输入类的名称。
 
 1. 按 `Enter`。
 
