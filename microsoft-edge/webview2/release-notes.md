@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 09/09/2022
-ms.openlocfilehash: 3c432ed390447f23b2edc19d11f94b06b95f82cd
-ms.sourcegitcommit: 8af7cd902e6410799c02d5ddf295b9ea070bd74a
+ms.date: 10/07/2022
+ms.openlocfilehash: d44b17edf6ec2a1e79eb22c71c4ac09f470e4bf2
+ms.sourcegitcommit: abf18b3d2ac43ff56ce0ab567db698351def791a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "12747481"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "12772586"
 ---
 # <a name="release-notes-for-the-webview2-sdk"></a>WebView2 SDK 发行说明
 
@@ -48,6 +48,11 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 WebView2 运行时版本 105.0.1343.22 或更高版本。
 
+### <a name="general"></a>概要
+
+此 WebView2 SDK 版本具有与 WebView2 SDK 1.0.1369-prerelease 中相同的 bug 修复。  请参阅以下部分中的 **Bug 修复** 。
+
+
 <!-- ====================================================================== -->
 ## <a name="101369-prerelease"></a>1.0.1369-prerelease
 
@@ -55,7 +60,7 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 [适用于 WebView2 SDK 1.0.1369-prerelease 的 NuGet 包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1369-prerelease)
 
-为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 Microsoft Edge 版本 106.0.1369.0 或更高版本。 
+为了实现完整的 API 兼容性，此版本的 WebView2 SDK 需要 Microsoft Edge 版本 106.0.1369.0 或更高版本。
 
 ### <a name="general"></a>概要
 
@@ -63,7 +68,7 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 以下项现在稳定：
 
-*  拖放 API： 
+*  拖放 API：
    * `DragEnter`
    * `DragLeave`
    * `DragOver`
@@ -73,13 +78,9 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 * [CoreWebView2CompositionController.DragLeave 方法](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.dragleave?view=webview2-dotnet-1.0.1369-prerelease&preserve-view=true#microsoft-web-webview2-core-corewebview2compositioncontroller-dragleave)
 
-
-
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2CompositionController.DragLeave 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.1369-prerelease&preserve-view=true#dragleave)
-
-
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
@@ -88,24 +89,22 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 * [ICoreWebView2CompositionController3.DragOver 方法](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#dragover)
 * [ICoreWebView2CompositionController3.Drop 方法](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller3?view=webview2-1.0.1369-prerelease&preserve-view=true#drop)
 
-
 ---
 
 #### <a name="bug-fixes"></a>Bug 修复
 
-*   修复了关闭具有 WebView2 的窗口时 WPF 应用会崩溃的 bug。  ([问题 #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640)) 
+*  修复了关闭具有 WebView2 的窗口时 WPF 应用会崩溃的 bug。  ([问题 #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640)) 
 
-*   修复了在运行时)  (同时生成 WebView 创建失败的 bug。 [问题 #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703)
+*  修复了在运行时)  (同时生成 WebView 创建失败的 bug。 [问题 #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703)
 
+*  修复了打印设置纸张大小以支持小于 0.01 英寸的尺寸 (运行时) 。
 
-*   修复了打印设置纸张大小以支持小于 0.01 英寸的尺寸 (运行时) 。  
+*  修复了 WebView2 打印对话框每次将 **“缩** 放”设置重置 **为适合可打印区域** 的 bug。  ([问题 #2523](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2523)) 
 
-* 修复了 WebView2 打印对话框每次将 **“缩** 放”设置重置 **为适合可打印区域** 的 bug。  ([问题 #2523](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2523)) 
+*  修复了 **wv2winrt** 工具中的 bug，其中某些项目中未引用 WinMD 文件。
 
-*   修复了 **wv2winrt** 工具中的 bug，其中某些项目中未引用 WinMD 文件。
 
 <!-- ====================================================================== -->
-
 ## <a name="10129344"></a>1.0.1293.44
 
 发布日期：2022 年 8 月 8 日
@@ -137,7 +136,6 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 * [ICoreWebView2_15：：faviconChanged 事件 (添加](/microsoft-edge/webview2/reference/win32/icorewebview2_15?view=webview2-1.0.1293.44&preserve-view=true#add_faviconchanged)、 [删除) ](/microsoft-edge/webview2/reference/win32/icorewebview2_15?view=webview2-1.0.1293.44&preserve-view=true#remove_faviconchanged)
 * [ICoreWebView2_15：：FaviconUri 属性 (获取) ](/microsoft-edge/webview2/reference/win32/icorewebview2_15?view=webview2-1.0.1293.44&preserve-view=true#get_faviconuri)<!--no put-->
 
-
 ---
 
 
@@ -154,7 +152,7 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 #### <a name="experimental-features"></a>实验功能
 
-*  添加了对 `WebResourceRequested` 辅助角色的支持，这些辅助角色允许设置筛选器以接收 `WebResourceRequested` 服务工作者、共享辅助角色和不同源 iFrame 的事件。 
+*  添加了对 `WebResourceRequested` 辅助角色的支持，这些辅助角色允许设置筛选器以接收 `WebResourceRequested` 服务工作者、共享辅助角色和不同源 iFrame 的事件。
 
 ##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
 
@@ -176,7 +174,7 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 ---
 
-*  添加了对自定义方案注册的支持，使 WebView2 应用能够使用指定方案处理 `WebResourceRequested` 请求的事件，并能够将 WebView2 控件导航到自定义方案。 
+*  添加了对自定义方案注册的支持，使 WebView2 应用能够使用指定方案处理 `WebResourceRequested` 请求的事件，并能够将 WebView2 控件导航到自定义方案。
 
 ##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
 
@@ -199,13 +197,13 @@ WebView2 bug 修复（如下面列出的修补程序）特定于运行时或特�
 
 *   添加了开发人员可以显式指定从中加载WebView2Loader.dll的路径。  ([问题 #767](https://github.com/MicrosoftEdge/WebView2Feedback/issues/767)) 
 
-*   使用 `CallDevToolsProtocolMethod`时添加了有用的错误消息。  ([问题 #1609](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1609))   
+*   使用 `CallDevToolsProtocolMethod`时添加了有用的错误消息。  ([问题 #1609](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1609)) 
 
-*   修复了查找和加载 `WebView2Loader.dll` 某些 .NET 应用中的 bug。  ([问题 #2372](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2372))   
+*   修复了查找和加载 `WebView2Loader.dll` 某些 .NET 应用中的 bug。  ([问题 #2372](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2372)) 
 
 *   修复了重试下载时未触发事件的 bug `DownloadStarting` 。  ([问题 #2489](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2489)) 
 
-*   修复了服务辅助角色缓存中路径过长的问题。  ([问题 #1900](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1900))   
+*   修复了服务辅助角色缓存中路径过长的问题。  ([问题 #1900](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1900)) 
 
 *   改进了 **将 wv2winrt** `IMap` 和 `IMapView` 投影转换为 JavaScript 的性能。
 

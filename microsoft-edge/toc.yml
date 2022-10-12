@@ -470,6 +470,9 @@
             - name: 自定义键盘快捷方式
               href: devtools-guide-chromium/customize/shortcuts.md
               displayName: 'Settings, Shortcuts'
+            - name: 使用扩展将自定义 UI 添加到 DevTools
+              href: devtools-guide-chromium/customize/extensions.md
+              displayName: Extensions
         - name: 远程调试
           items:
             - name: 远程调试 Android 设备
@@ -621,6 +624,8 @@
               href: extensions-chromium/developer-guide/native-messaging.md
             - name: 定义用于访问文件 URL 的扩展的匹配模式
               href: extensions-chromium/developer-guide/match-patterns.md
+            - name: 创建自定义 DevTools UI 的扩展
+              href: extensions-chromium/developer-guide/devtools-extension.md
         - name: Manifest
           items:
             - name: 迁移到清单 V3 的概述和日程表

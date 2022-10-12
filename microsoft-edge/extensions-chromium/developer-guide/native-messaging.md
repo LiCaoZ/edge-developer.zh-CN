@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/31/2021
-ms.openlocfilehash: 6b2a043a0c07d063d923d51ae85198fc009e39b8
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: 44647f961fd1a921c2e8b17cfa549b7210954ce1
+ms.sourcegitcommit: abf18b3d2ac43ff56ce0ab567db698351def791a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630922"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "12772572"
 ---
 # <a name="native-messaging"></a>本机消息传递
 
@@ -39,7 +39,7 @@ ms.locfileid: "12630922"
 {
     "name": "Native Messaging Example",
     "version": "1.0",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "description": "Send a message to a native app.",
     "app": {
         "launch": {

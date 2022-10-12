@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/28/2022
-ms.openlocfilehash: 192feb064a96650c5790c1adcdc48e3fb7c0c1ce
-ms.sourcegitcommit: 108b9a0673be978d89bc99d923582f569a43f6fe
+ms.openlocfilehash: bb0f0051ff090648e1990e0d95285adc0cb47f60
+ms.sourcegitcommit: abf18b3d2ac43ff56ce0ab567db698351def791a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "12635323"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "12772558"
 ---
 # <a name="create-an-extension-tutorial-part-1"></a>创建扩展教程，第 1 部分
 
@@ -35,17 +35,6 @@ ms.locfileid: "12635323"
 
 以下代码概述了文件中 `manifest.json` 所需的基本信息：
 
-#### [<a name="manifest-v2"></a>清单 V2](#tab/v2)
-
-```json
-{
-    "name": "NASA picture of the day viewer",
-    "version": "0.0.0.1",
-    "manifest_version": 2,
-    "description": "An extension to display the NASA picture of the day."
-}
-```
-
 #### [<a name="manifest-v3"></a>清单 V3](#tab/v3)
 
 ```json
@@ -53,6 +42,17 @@ ms.locfileid: "12635323"
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
     "manifest_version": 3,
+    "description": "An extension to display the NASA picture of the day."
+}
+```
+
+#### [<a name="manifest-v2"></a>清单 V2](#tab/v2)
+
+```json
+{
+    "name": "NASA picture of the day viewer",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
     "description": "An extension to display the NASA picture of the day."
 }
 ```
@@ -85,13 +85,13 @@ ms.locfileid: "12635323"
 
 接下来，将图标添加到 `manifest.json` 文件。 `manifest.json`使用图标信息更新文件，使其与以下代码匹配。 `png`以下代码中列出的文件在本文前面提到的下载文件中可用。
 
-#### [<a name="manifest-v2"></a>清单 V2](#tab/v2)
+#### [<a name="manifest-v3"></a>清单 V3](#tab/v3)
 
 ```json
 {
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "description": "An extension to display the NASA picture of the day.",
     "icons": {
         "16": "icons/nasapod16x16.png",
@@ -102,13 +102,13 @@ ms.locfileid: "12635323"
 }
 ```
 
-#### [<a name="manifest-v3"></a>清单 V3](#tab/v3)
+#### [<a name="manifest-v2"></a>清单 V2](#tab/v2)
 
 ```json
 {
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
-    "manifest_version": 3,
+    "manifest_version": 2,
     "description": "An extension to display the NASA picture of the day.",
     "icons": {
         "16": "icons/nasapod16x16.png",
@@ -161,26 +161,6 @@ ms.locfileid: "12635323"
 
 最后，在 `manifest.json` `browser_action` 清单 V2) 或清单 V3) 中 (下 `action` 的 (下注册弹出窗口，如以下代码所示：
 
-#### [<a name="manifest-v2"></a>清单 V2](#tab/v2)
-
-```json
-{
-    "name": "NASA picture of the day viewer",
-    "version": "0.0.0.1",
-    "manifest_version": 2,
-    "description": "An extension to display the NASA picture of the day.",
-    "icons": {
-        "16": "icons/nasapod16x16.png",
-        "32": "icons/nasapod32x32.png",
-        "48": "icons/nasapod48x48.png",
-        "128": "icons/nasapod128x128.png"
-    },
-    "browser_action": {
-        "default_popup": "popup/popup.html"
-    }
-}
-```
-
 #### [<a name="manifest-v3"></a>清单 V3](#tab/v3)
 
 ```json
@@ -196,6 +176,26 @@ ms.locfileid: "12635323"
         "128": "icons/nasapod128x128.png"
     },
     "action": {
+        "default_popup": "popup/popup.html"
+    }
+}
+```
+
+#### [<a name="manifest-v2"></a>清单 V2](#tab/v2)
+
+```json
+{
+    "name": "NASA picture of the day viewer",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "description": "An extension to display the NASA picture of the day.",
+    "icons": {
+        "16": "icons/nasapod16x16.png",
+        "32": "icons/nasapod32x32.png",
+        "48": "icons/nasapod48x48.png",
+        "128": "icons/nasapod128x128.png"
+    },
+    "browser_action": {
         "default_popup": "popup/popup.html"
     }
 }

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/05/2022
-ms.openlocfilehash: f45eb560a7c8c5570ee063dec7a18f3c9711e14b
-ms.sourcegitcommit: 1958cc52c3e61705a4872a9f22d5fe414560d5af
+ms.openlocfilehash: 61bba9c64dfb7f43f4a739d94fc384c7e3bac4fe
+ms.sourcegitcommit: abf18b3d2ac43ff56ce0ab567db698351def791a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "12730230"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "12772579"
 ---
 # <a name="create-an-extension-tutorial-part-2"></a>创建扩展教程，第 2 部分
 
@@ -95,7 +95,7 @@ if (sendMessageId) {
 
 以下代码概述了更新后的代码 `popup/popup.js`。  你还将传递当前选项卡 ID，本文稍后将使用该 ID：
 
-#### [<a name="manifest-v2"></a>清单 V2](#tab/v2)
+#### [<a name="manifest-v3"></a>清单 V3](#tab/v3)
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
@@ -105,7 +105,7 @@ if (sendMessageId) {
             chrome.tabs.sendMessage(
                 tabs[0].id,
                 {
-                    url: chrome.extension.getURL("images/stars.jpeg"),
+                    url: chrome.runtime.getURL("images/stars.jpeg"),
                     imageDivId: `${guidGenerator()}`,
                     tabId: tabs[0].id
                 },
@@ -124,7 +124,7 @@ if (sendMessageId) {
 }
 ```
 
-#### [<a name="manifest-v3"></a>清单 V3](#tab/v3)
+#### [<a name="manifest-v2"></a>清单 V2](#tab/v2)
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
@@ -134,7 +134,7 @@ if (sendMessageId) {
             chrome.tabs.sendMessage(
                 tabs[0].id,
                 {
-                    url: chrome.runtime.getURL("images/stars.jpeg"),
+                    url: chrome.extension.getURL("images/stars.jpeg"),
                     imageDivId: `${guidGenerator()}`,
                     tabId: tabs[0].id
                 },
@@ -169,14 +169,6 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 
 在文件中 `manifest.json` 添加另一个条目，声明图像可用于所有浏览器选项卡。  该条目如下 (在添加即将) 的内容脚本声明时，应在下面的完整 `manifest.json` 文件中看到该条目：
 
-#### [<a name="manifest-v2"></a>清单 V2](#tab/v2)
-
-```json
-"web_accessible_resources": [
-    "images/*.jpeg"
-]
-```
-
 #### [<a name="manifest-v3"></a>清单 V3](#tab/v3)
 
 ```json
@@ -188,6 +180,14 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
   ]
 ```
 
+#### [<a name="manifest-v2"></a>清单 V2](#tab/v2)
+
+```json
+"web_accessible_resources": [
+    "images/*.jpeg"
+]
+```
+
 ---
 
 现在，你已在文件中 `popup.js` 编写代码，将消息发送到嵌入在当前活动选项卡页上的内容页，但尚未创建并注入该内容页。  立即执行此操作。
@@ -197,37 +197,6 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 ## <a name="step-5-update-your-manifestjson-for-content-and-web-access"></a>步骤 5：更新 `manifest.json` 内容和 Web 访问
 
 已更新`manifest.json`，其中包括和`content-scripts``web_accessible_resources`如下所示：
-
-#### [<a name="manifest-v2"></a>清单 V2](#tab/v2)
-
-```json
-{
-    "name": "NASA picture of the day viewer",
-    "version": "0.0.0.1",
-    "manifest_version": 2,
-    "description": "An extension to display the NASA picture of the day.",
-    "icons": {
-        "16": "icons/nasapod16x16.png",
-        "32": "icons/nasapod32x32.png",
-        "48": "icons/nasapod48x48.png",
-        "128": "icons/nasapod128x128.png"
-    },
-    "browser_action": {
-        "default_popup": "popup/popup.html"
-    },
-    "content_scripts": [
-        {
-            "matches": [
-              "<all_urls>"
-            ],
-            "js": ["lib/jquery.min.js","content-scripts/content.js"]
-        }
-    ],
-    "web_accessible_resources": [
-        "images/*.jpeg"
-    ]
-}
-```
 
 #### [<a name="manifest-v3"></a>清单 V3](#tab/v3)
 
@@ -259,6 +228,37 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
             "resources": ["images/*.jpeg"],
             "matches": ["<all_urls>"]
         }
+    ]
+}
+```
+
+#### [<a name="manifest-v2"></a>清单 V2](#tab/v2)
+
+```json
+{
+    "name": "NASA picture of the day viewer",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "description": "An extension to display the NASA picture of the day.",
+    "icons": {
+        "16": "icons/nasapod16x16.png",
+        "32": "icons/nasapod32x32.png",
+        "48": "icons/nasapod48x48.png",
+        "128": "icons/nasapod128x128.png"
+    },
+    "browser_action": {
+        "default_popup": "popup/popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+              "<all_urls>"
+            ],
+            "js": ["lib/jquery.min.js","content-scripts/content.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        "images/*.jpeg"
     ]
 }
 ```
