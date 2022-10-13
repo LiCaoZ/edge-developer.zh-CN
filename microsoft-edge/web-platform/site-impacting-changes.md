@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/24/2022
-ms.openlocfilehash: 82f1fa811986c208de32086632c721ea7852d9e9
-ms.sourcegitcommit: b04ee1e1cf86cb9ad732bc242a8cd23a9112c31f
+ms.openlocfilehash: e05be021a9e18dad1da9bbc275a9691f0ccb1fd5
+ms.sourcegitcommit: 58ef2d8fe343db6b8248f48b486de7fc18b53ea3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "12752704"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "12776260"
 ---
 # <a name="site-compatibility-impacting-changes-coming-to-microsoft-edge"></a>Microsoft Edge 中影响网站兼容性的更改
 
@@ -55,7 +55,7 @@ Web 平台是用于生成网页的技术集合，包括 HTML、CSS、JavaScript 
 | User-Agent字符串中的三位数版本号 | v100 | | 从 v100 开始，Microsoft Edge 将在User-Agent标头中发送一个三位数的版本号，例如 `Edg/100`。 这可能会混淆使用错误分析器来确定 User-Agent 字符串版本号的脚本或服务器端分析。 从 v97 开始，站点所有者可以通过在 v100 中启用试验标志`#force-major-version-to-100``edge://flags`来模拟此条件。 |
 | 默认情况下阻止沙盒帧中的外部协议 | v103 | | 阻止使用外部协议 (与从沙盒 iframe) 的非浏览器应用程序交互，除非框架上的属性显式授予 `sandbox` 权限。 此更改发生在 Microsoft Edge 基于的 Chromium 项目中。 有关详细信息，请参阅 [Chrome 平台状态条目](https://chromestatus.com/feature/5680742077038592)。 |
 | 默认情况下忽略修改`document.domain` | v109 | | 该 `document.domain` 属性在历史上可以设置为放宽同一源策略，并允许来自网站的子域进行交互。 默认情况下将禁用此行为，这样设置属性 `document.domain` 将不起作用。  有关详细信息和解决方法，请参阅 [Microsoft Edge 将禁用修改 document.domain](/deployedge/edge-learnmore-origin-keyed-agent-cluster)。
-| 删除跨源子帧 JavaScript 对话框 | v107 (Chrome+1)  | | `window.alert``window.prompt`从跨源 iframe 中删除和`window.confirm`删除。  此更改发生在 Microsoft Edge 基于的 Chromium 项目中。  有关详细信息，请参阅 [“删除意向：跨源子帧 JS”对话框](https://groups.google.com/a/chromium.org/g/blink-dev/c/hTOXiBj3D6A/m/JtkdpDd1BAAJ)。 |
+| 删除跨源子帧 JavaScript 对话框 | 未来版本 (TBD)  | | `window.alert``window.prompt`从跨源 iframe 中删除和`window.confirm`删除。  此更改发生在 Microsoft Edge 基于的 Chromium 项目中。  有关详细信息，请参阅 [“删除意向：跨源子帧 JS”对话框](https://groups.google.com/a/chromium.org/g/blink-dev/c/hTOXiBj3D6A/m/JtkdpDd1BAAJ)。 |
 
 
 <!-- ====================================================================== -->
