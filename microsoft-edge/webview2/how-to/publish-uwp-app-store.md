@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/27/2022
-ms.openlocfilehash: 02aa39e49cfe7ba227c58b8e36c2c8cfebff8d17
-ms.sourcegitcommit: 4d5a0892ecdfbb06749149bd516c92b190700a9e
+ms.openlocfilehash: 1e527b109902684448deddc5f0262a9835836ab6
+ms.sourcegitcommit: 5214653055d9223b4458947da318d23df93ff5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2022
-ms.locfileid: "12757818"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "12791850"
 ---
 # <a name="publish-a-uwp-webview2-app-to-the-microsoft-store"></a>将 UWP WebView2 应用发布到 Microsoft Store
 
@@ -50,9 +50,11 @@ Microsoft Store 需要提交打包的应用。  按如下所示打包应用：
 
 1. 通过选择 **Project** > **Publish** > **Associate App 和 Store**，将应用程序与预留名称相关联。
 
-1. 通过选择 **“项目** > **发布** > **创建应用包”来创建应用包**。  选择目标配置。  只有 64 位版本的 WebView2 运行时才能在 UWP 中运行：
+1. 通过选择 **“项目** > **发布** > **创建应用包”来创建应用包**。  选择目标配置：
 
-   ![包选择](publish-uwp-app-store-images/package-selection.png)
+   ![选择目标配置](publish-uwp-app-store-images/package-selection.png)
+
+   32 位和 64 位版本的 WebView2 运行时将在非 ARM 平台上的 UWP 中工作。 由于依赖 Microsoft Edge，ARM 不支持 32 位。  ARM 支持 64 位。
 
 1. 为配置创建应用包后，“ **创建应用包** ”窗口将显示 **“完成创建包** ”对话框：
 
