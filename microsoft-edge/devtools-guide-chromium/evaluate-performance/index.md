@@ -5,13 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
-ms.openlocfilehash: 71897337791c12e8f5f831b50041626b399e8199
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.date: 10/10/2022
+ms.openlocfilehash: ba9d632afed1abff397023522c3419ac65a45fce
+ms.sourcegitcommit: 81c0b3c87d152858f76a5f1b1cf8a742fd6b69e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12631111"
+ms.lasthandoff: 10/19/2022
+ms.locfileid: "12813554"
 ---
 <!-- Copyright Kayce Basques
 
@@ -113,24 +113,11 @@ _运行时性能_ 是页面在运行时的表现，而不是加载。  以下教
 
 录制页面的性能后，可以评估页面的性能并查找任何性能问题的原因。
 
-
-### <a name="analyze-frames-per-second"></a>分析每秒帧数
-
-衡量任何动画性能的主要指标是每秒帧 (FPS) 。  当动画以 60 FPS运行时，用户会觉得很享受。
-
-1. 查看 **FPS** 图表，如下所示。  每当 **FPS** 上方显示红色条形图时，表示帧速率下降得如此之低，可能会损害用户体验。  通常，绿色条越高，FPS 越高。
-
-   ![FPS 图表。](../media/evaluate-performance-performance-fps-chart.msft.png)
-
-1. 在 **FPS** 图表下方，显示 **CPU** 图表。  **CPU** 图表中的颜色对应于 **“性能**”工具底部**摘要**面板中的颜色。  **CPU** 图表充满颜色意味着在录制过程中 CPU 已达到极限。  每当 CPU 长时间用完时，这一指示你应找到减少工作的方法。
+1. **CPU** 图表沿顶部显示。  **CPU** 图表中的颜色对应于 **“性能**”工具底部**摘要**面板中的颜色。  **CPU** 图表显示这些区域占了很大的区域，这意味着在录制过程中 CPU 已用完。  每当 CPU 长时间用完时，这一指示你应找到减少工作的方法。
 
    ![CPU 图表和摘要面板。](../media/evaluate-performance-performance-cpu-chart.msft.png)
 
-1. 将鼠标悬停在 **FPS**、 **CPU** 或 **NET** 图表上。  DevTools 将显示该时间点处的页面截图。  左右移动鼠标以重播录音。  此操作称为 _“擦洗_”，可用于手动分析动画的进度。
-
-   ![在录制的 2500ms 标记周围查看页面的屏幕截图。](../media/evaluate-performance-performance-screenshot-hover.msft.png)
-
-1. 在“**框架**”部分，将鼠标悬停在其中一个绿色方块上。  DevTools 将显示该特定帧的 FPS。  每帧可能远低于 60 FPS的目标。
+1. 将鼠标悬停在 **CPU** 或 **NET** 图表上。  DevTools 将显示该时间点处的页面截图。  左右移动鼠标以重播录音。  该操作称为 _“擦洗_”，可用于手动分析性能录制的进度。
 
    ![将鼠标悬停在框架上。](../media/evaluate-performance-performance-frame-hover.msft.png)
 
@@ -230,8 +217,7 @@ To learn more, see [Measure Performance With The RAIL Model](https://web.dev/rai
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。
-> 原始页面位于[此处](https://developer.chrome.com/docs/devtools/evaluate-performance/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
+> 此页面的某些部分是根据 [Google 创建和共享的](https://developers.google.com/terms/site-policies)作品所做的修改，并根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)中描述的条款使用。 原始页面位于[此处](https://developer.chrome.com/docs/devtools/evaluate-performance/)，由 [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques)\（Chrome DevTools 和 Lighthouse 的技术作家）撰写。
 
 [![知识共享许可协议。](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 本作品根据[ Creative Commons Attribution 4.0 International License ](https://creativecommons.org/licenses/by/4.0)获得许可。
