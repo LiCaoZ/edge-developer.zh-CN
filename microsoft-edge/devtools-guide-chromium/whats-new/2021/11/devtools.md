@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 11/16/2021
-ms.openlocfilehash: 18293eb1513a27999173da22e9e354548bdeb133
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: 3ebfc2f484e98c3bd697b14047c4abcda0049e2a
+ms.sourcegitcommit: 87adf3723b7434231f3e65663846eb8b404a92e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630669"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "12815825"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-96"></a>DevTools 中的最近更新 (Microsoft Edge 96)
 
@@ -85,7 +85,7 @@ Microsoft Edge DevTools for Visual Studio Code 扩展现在具有可停靠的截
 
 ![显示仿真 iPhone 5 中当前文档的截屏视频，其大小正确且带有仿真的触摸屏界面。](../../media/2021/11/edge-devtools-for-vscode-simulated-iphone-red-boxes.png)
 
-有关设备仿真的详细信息，请参阅 [设备和状态仿真](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#device-and-state-emulation)。
+有关设备仿真的详细信息，请参阅 [设备和状态仿真](../../../../visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md)。
 
 
 ### <a name="live-inline-issue-reporting"></a>实时内联问题报告
@@ -94,7 +94,7 @@ Microsoft Edge DevTools for Visual Studio Code 扩展现在具有可停靠的截
 
 ![在代码段内报告的辅助功能问题，显示如何解决该问题以及在何处查找详细信息。](../../media/2021/11/edge-devtools-for-vscode-inline-issue-reporting-addl-red.png)
 
-有关详细信息，请参阅[内联和实时问题分析](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#inline-and-live-issue-analysis)。
+有关详细信息，请参阅[内联和实时问题分析](../../../../visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md)。
 
 
 <!-- ====================================================================== -->
