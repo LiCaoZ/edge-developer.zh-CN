@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 07/05/2022
-ms.openlocfilehash: 8af6f998e9fc44311091f927920ffc5ba09598f6
-ms.sourcegitcommit: 9cc13dd2d0e0360013a127b8e39b09e535b08f1b
+ms.openlocfilehash: f70827d44996df597df7cb3a646098455c27a56e
+ms.sourcegitcommit: 87adf3723b7434231f3e65663846eb8b404a92e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2022
-ms.locfileid: "12636207"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "12815846"
 ---
 # <a name="microsoft-edge-ide-integration"></a>Microsoft Edge IDE 集成
 
@@ -72,9 +72,6 @@ Microsoft 工具的各种功能提供使用 Microsoft Edge、Visual Studio Code 
 *   安全性。
 
 webhint 检查代码是否存在最佳做法和常见错误。  识别并修复文件中的问题，包括 HTML、CSS、JavaScript 和 TypeScript。  提示在文本编辑器中显示为波浪下划线，并汇总在 **“问题** ”窗格中。
-
-<!-- todo: don't have png files in this nav page.  delete png (only used here) -->
-<!-- ![The webhint extension for Visual Studio Code.](media/webhint-extension.png) -->
 
 **注意：** 自 2022 年 4 月起，不再维护Visual Studio Code的 webhint 扩展。  参阅[适用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展](microsoft-edge-devtools-extension.md)。
 
