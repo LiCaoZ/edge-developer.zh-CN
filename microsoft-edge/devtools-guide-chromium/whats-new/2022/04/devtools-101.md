@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/28/2022
-ms.openlocfilehash: 9542d636a4944a248cb3014bab3aaa053b3393fd
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: 9534ffd70aa93ef0333ca1877dc23cd797be9371
+ms.sourcegitcommit: 87adf3723b7434231f3e65663846eb8b404a92e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12631030"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "12815720"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-101"></a>DevTools (Microsoft Edge 101) 中的新增功能
 
@@ -40,7 +40,7 @@ Microsoft Edge DevTools 扩展的抽屉中用于Visual Studio Code的控制台�
 
 ![Microsoft Edge DevTools 扩展的抽屉中用于Visual Studio Code的控制台工具。](devtools-101-images/console-tool-vsc-2.png)
 
-有关详细信息，请参阅 [Microsoft Edge DevTools 扩展Visual Studio Code >控制台集成](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#console-integration)。
+有关详细信息，请参阅 [控制台集成](../../../../visual-studio-code/microsoft-edge-devtools-extension/console-integration.md)。
 
 
 <!-- ====================================================================== -->

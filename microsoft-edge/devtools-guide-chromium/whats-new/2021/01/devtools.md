@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
-ms.openlocfilehash: 06eba15f5ac208fe10c43b124a26b30adf6b37fd
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
-ms.translationtype: HT
+ms.openlocfilehash: f35157a79c9332d3c5f065acb6d1812d53026a9c
+ms.sourcegitcommit: 87adf3723b7434231f3e65663846eb8b404a92e0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12631508"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "12815734"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -89,7 +89,7 @@ Microsoft Edge DevTools 中的“**新增功能**”工具现在具有新的外�
 * _使用“检查”工具从“分析”页_ 中的 [“检查”覆盖层获取元素信息](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay)。
 * [使用“检查”工具中的颜色突出显示来识别嵌套区域](../../../accessibility/test-inspect-tool.md#identify-nested-regions-using-color-highlighting)，_通过将鼠标悬停在网页上来检测辅助功能问题_。
 * _使用开发人员工具在辅助功能测试概述_中[使用“检查”工具检测辅助功能问题](../../../accessibility/accessibility-testing-in-devtools.md#using-the-inspect-tool-to-detect-accessibility-issues)。
-* _使用适用于 Visual Studio Code 的 Microsoft Edge 开发人员工具扩展_中的 [CSS 镜像编辑从样式工具同步实时更改](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#syncing-live-changes-from-the-styles-tool-by-using-css-mirror-editing)。
+* [从“样式”选项卡中更新 .css 文件 (CSS 镜像编辑) ](../../../../visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md)。
 
 网格：
 * [CSS 网格](../../../css/grid.md)

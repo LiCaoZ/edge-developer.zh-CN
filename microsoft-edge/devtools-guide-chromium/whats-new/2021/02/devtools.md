@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021
-ms.openlocfilehash: ee012c51728be2d349c682a38bbdd8dd2dda10b1
-ms.sourcegitcommit: 4d5a0892ecdfbb06749149bd516c92b190700a9e
+ms.openlocfilehash: 840fc86ab939fe117383847d6ecc463d472616c1
+ms.sourcegitcommit: 87adf3723b7434231f3e65663846eb8b404a92e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2022
-ms.locfileid: "12757873"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "12815741"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -150,7 +150,7 @@ DevTools 现在具有专用的 CSS 弹性框调试工具。  如果将 `display:
 
 另请参阅：
 * [在“样式”窗格中编辑 CSS 字体样式和设置](../../../inspect-styles/edit-fonts.md)
-* _使用适用于 Visual Studio Code 的 Microsoft Edge 开发人员工具扩展_中的 [CSS 镜像编辑从样式工具同步实时更改](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#syncing-live-changes-from-the-styles-tool-by-using-css-mirror-editing)。<!-- eg "flex-direction" is only mentioned in this extension article -->
+* [从“样式”选项卡中更新 .css 文件 (CSS 镜像编辑) ](../../../../visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md)<!-- eg "flex-direction" is only mentioned in this extension article -->
 <!-- todo: copy section content to regular docs -->
 
 

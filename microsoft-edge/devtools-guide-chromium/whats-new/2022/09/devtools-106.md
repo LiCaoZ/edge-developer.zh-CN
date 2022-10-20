@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 09/29/2022
-ms.openlocfilehash: 1a57d16507f5407b40348db1a372ee082cf53411
-ms.sourcegitcommit: 45320a2c51db77c1e1d77ea04421a8a470ee5d85
+ms.openlocfilehash: f92f42f17e2de478fa02cb49ff1a07209ab501d9
+ms.sourcegitcommit: 87adf3723b7434231f3e65663846eb8b404a92e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "12762691"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "12815769"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-106"></a>DevTools (Microsoft Edge 106) 中的新增功能
 
@@ -82,7 +82,7 @@ ms.locfileid: "12762691"
 1. 选择要使用哪种 **快速修复** 来解决问题或停止将其报告为问题。  选择忽略问题会自动创建一个 `.hintrc` 文件，该文件指示扩展名忽略此问题类型，而不是再次报告它。
 
 另请参阅：
-* _Microsoft Edge DevTools 扩展中针对 Visual Studio Code_ 的[自动快速修复和问题筛选](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#automated-quick-fixes-and-issue-filtering)
+* _内联和实时问题分析_中的[自动快速修复和问题筛选](../../../../visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md#automated-quick-fixes-and-issue-filtering)
 
 
 <!-- ====================================================================== -->

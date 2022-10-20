@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/24/2022
-ms.openlocfilehash: 21e0c02ea7d5d1f881663a28b8c92d42999d2c56
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: e1e7666e02aa8d192c1be68ce00899d43769efff
+ms.sourcegitcommit: 87adf3723b7434231f3e65663846eb8b404a92e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12630342"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "12815839"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-102"></a>DevTools (Microsoft Edge 102) 中的新增功能
 
@@ -38,9 +38,9 @@ ms.locfileid: "12630342"
 其他新功能包括一种更简单的切换 CSS 镜像的方法，该方法现在也支持源地图。  这意味着你可以在浏览器中实时调试和修改由 Sass、React 和其他抽象创建的 CSS，并查看源文件中的更改。
 
 另请参阅：
-* _Microsoft Edge DevTools 扩展中用于Visual Studio Code的_[设备和状态仿真](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#device-and-state-emulation)。
+* [设备和状态仿真](../../../../visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md)
 * [将已处理的代码映射到原始源代码，以便进行调试](../../../javascript/source-maps.md)
-* [使用源图进行 CSS 镜像编辑：已知问题和反馈](https://github.com/microsoft/vscode-edge-devtools/issues/965)。
+* [使用源图进行 CSS 镜像编辑：已知问题和反馈](https://github.com/microsoft/vscode-edge-devtools/issues/965)
 
 
 <!-- ====================================================================== -->

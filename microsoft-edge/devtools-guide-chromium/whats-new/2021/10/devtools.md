@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/20/2021
-ms.openlocfilehash: 40e37908121853dc58b6eb5eeb4bc7a9b08d0fcb
-ms.sourcegitcommit: 6f5fd86f5c5d9f200fb83defaec955dae438169d
+ms.openlocfilehash: 79e9024910d3ce911856877459c29897faff8a4b
+ms.sourcegitcommit: 87adf3723b7434231f3e65663846eb8b404a92e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "12631189"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "12815832"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-95"></a>DevTools (Microsoft Edge 95)中的新增功能
 
@@ -26,7 +26,7 @@ ms.locfileid: "12631189"
 
 现在，[适用于 Visual Studio Code 的 Microsoft Edge DevTools 扩展](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)具有名为 **CSS 镜像编辑**的试验功能。  使用此功能，可以使用**样式**工具来调整 CSS，并将所应用的更改自动添加到 Visual Studio Code 编辑器中的 CSS 源文件中。  可以切换打开和关闭此功能。
 
-有关详细信息，请参阅[通过使用 CSS 镜像编辑从样式工具同步实时更改](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#syncing-live-changes-from-the-styles-tool-by-using-css-mirror-editing)。
+有关详细信息，请参阅 [“样式”选项卡中的 Update .css 文件 (CSS 镜像编辑) ](../../../../visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md)。
 
 要提供反馈，请在 Visual Studio Code 的“**活动栏**”中，单击“**Microsoft Edge 工具**”，然后在“**CSS 镜像编辑**”部分中，单击“**在此处留下反馈**”链接。
 
