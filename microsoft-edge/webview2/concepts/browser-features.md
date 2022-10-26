@@ -77,10 +77,12 @@ WebView2 基于 Microsoft Edge 浏览器。  你有机会将功能从浏览器�
 | Intrusive Ads | 关闭 | 否 | 此功能已关闭。 |
 | 键盘快捷方式 | 查看详细信息 | 查看详细信息 | 默认情况下关闭的键盘快捷方式在 WebView2 中没有意义或导致问题。  不能关闭或打开这些快捷方式。  相反，可以使用事件侦听密钥组合， `AcceleratorKeyPressed` 并在需要时创建自定义响应。  有关详细信息，请参阅 [其他键盘快捷方式信息](#additional-keyboard-shortcuts-information)。 |
 | PDF 批注 | 关闭 | 否 | 此功能已关闭。 已启用 PDF 查看功能，但未启用 PDF 中的绘图、墨迹和突出显示。 有关详细信息，请参阅 [禁用功能：PDF 注释支持](https://github.com/MicrosoftEdge/WebView2Announcements/issues/21)。 |
+| 微型菜单 | 关闭 | 否 | 此功能已关闭。 |
 | Read Aloud | 关闭 | 否 | 此功能已关闭。 |
 | Smart Screen | 开`*` | 否 | `*` 此功能的 UI 已删除，但基础功能仍可用。  此外，可以使用命令行开关关闭 Smart Screen 。 |
 | Translate | 关闭 | 否 | 此功能已关闭。 |
 | Tracking Prevention | 开`*` | 否 | `*` 此功能的 UI 已删除，但基础功能仍可用。  跟踪防护始终设置为均衡。 |
+| 图像悬停时的视觉搜索 | 关闭 | 否 | 此功能已关闭。
 | Profile and Identity | 关闭 | 否 | 同步收藏夹、Cookie 等的功能已关闭。 |
 | Windows Defender Application Guard | 关闭 | 否 | 此功能已关闭。 |
 | edge:// URLs | 查看详细信息 | 否 | Microsoft Edge 浏览器的设置位于 URL 上 `edge://` 。  由于这些网页中的大多数都有 Microsoft Edge 品牌，或者在 WebView2 的上下文中没有意义，因此其中一些 URL 会关闭。  有关详细信息，请参阅 [受阻的内部 URL](#blocked-internal-urls)。 |
@@ -150,7 +152,7 @@ Microsoft Edge 和 WebView2 支持键盘快捷方式或键绑定。
 | 打开文件 | `Ctrl`+`O` |
 | Read Aloud `*` | `Ctrl`+`Shift`+`U` |
 | Web 捕获 `*` | `Ctrl`+`Shift`+`S` |
-| 侧 栏 `*` | `Ctrl`+`Shift`+`E` |
+| 侧 栏 | `Ctrl`+`Shift`+`E` |
 | 保存页 | `Ctrl`+`S` |
 | 选择“最后一个”选项卡 | `Ctrl`+`9` |
 | 选择“下一个”选项卡 | `Ctrl`+`Tab` |
