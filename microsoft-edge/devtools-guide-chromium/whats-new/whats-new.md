@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/16/2022
-ms.openlocfilehash: d269ceab8d0f02a430af92e84834dcb669888acc
-ms.sourcegitcommit: 45320a2c51db77c1e1d77ea04421a8a470ee5d85
+ms.openlocfilehash: 9b58a23a9320ea81974c244d682b794b02e8d82f
+ms.sourcegitcommit: b15c540b2c48da3887d23e401e8543f297d178fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "12762656"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "12849297"
 ---
 # <a name="whats-new-in-microsoft-edge-devtools"></a>Microsoft Edge DevTools 中的新增功能
 
@@ -19,6 +19,7 @@ ms.locfileid: "12762656"
 
 <!-- add new pages to toc too -->
 
+* [DevTools (Microsoft Edge 107) 中的新增功能](2022/10/devtools-107.md)
 * [DevTools (Microsoft Edge 106) 中的新增功能](2022/09/devtools-106.md)
 * [DevTools (Microsoft Edge 105) 中的新增功能](2022/09/devtools-105.md)
 * [DevTools (Microsoft Edge 104) 中的新增功能](2022/08/devtools-104.md)

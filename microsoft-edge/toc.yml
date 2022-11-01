@@ -17,6 +17,8 @@
             - name: Microsoft Edge DevTools 中的新增功能
               href: devtools-guide-chromium/whats-new/whats-new.md
               displayName: 'release notes, announcements'
+            - name: Microsoft Edge 107
+              href: devtools-guide-chromium/whats-new/2022/10/devtools-107.md
             - name: Microsoft Edge 106
               href: devtools-guide-chromium/whats-new/2022/09/devtools-106.md
             - name: Microsoft Edge 105
@@ -203,7 +205,7 @@
                 - name: 检查和修改 CSS 动画效果
                   href: devtools-guide-chromium/inspect-styles/animations.md
                   displayName: Animations tool
-            - name: 用于存储和 PVA 的应用程序工具
+            - name: 用于存储和 PWA 的应用程序工具
               items:
                 - name: 用于管理存储的应用程序工具
                   href: devtools-guide-chromium/storage/application-tool.md
@@ -564,10 +566,10 @@
             - name: 适用于 Visual Studio Code 的 DevTools 扩展
               href: visual-studio-code/microsoft-edge-devtools-extension.md
               displayName: Microsoft Edge DevTools extension for Visual Studio Code
-            - name: 安装用于Visual Studio Code的 DevTools 扩展
+            - name: 安装适用于 Visual Studio Code 的 DevTools 扩展
               href: visual-studio-code/microsoft-edge-devtools-extension/install.md
               displayName: 'installing, setup'
-            - name: 开始将 DevTools 扩展用于Visual Studio Code
+            - name: 开始使用适用于 Visual Studio Code 的 DevTools 扩展
               href: visual-studio-code/microsoft-edge-devtools-extension/get-started.md
               displayName: 'tutorial, demo to do'
             - name: 打开 DevTools 和 DevTools 浏览器
@@ -576,7 +578,7 @@
             - name: 与Visual Studio Code调试集成
               href: visual-studio-code/microsoft-edge-devtools-extension/debugging-a-webpage.md
               displayName: null
-            - name: 从 Elements 工具打开源文件
+            - name: 从“元素”工具打开源文件
               href: visual-studio-code/microsoft-edge-devtools-extension/opening-source-files-from-elements-tool.md
               displayName: null
             - name: 内联和实时问题分析
@@ -585,7 +587,7 @@
             - name: 设备和状态仿真
               href: visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md
               displayName: null
-            - name: '从 Styles 工具中更新 .css 文件 (CSS 镜像编辑) '
+            - name: '从样式工具中更新 .css 文件 (CSS 镜像编辑) '
               href: visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md
               displayName: Syncing live changes from the Styles tool by using CSS mirror editing
             - name: 网络工具集成
@@ -606,10 +608,10 @@
             - name: 使用外部浏览器窗口
               href: visual-studio-code/microsoft-edge-devtools-extension/external-browser-window.md
               displayName: null
-            - name: DevTools 扩展疑难解答
+            - name: 对 DevTools 扩展进行故障排除
               href: visual-studio-code/microsoft-edge-devtools-extension/troubleshooting.md
               displayName: error messages
-            - name: 与 Microsoft Edge DevTools 扩展团队取得联系
+            - name: 与 Microsoft Edge DevTools 扩展团队联系
               href: visual-studio-code/microsoft-edge-devtools-extension/contact-devtools-extension-team.md
               displayName: null
     - name: Microsoft Edge 扩展
@@ -646,7 +648,7 @@
               href: extensions-chromium/developer-guide/native-messaging.md
             - name: 定义用于访问文件 URL 的扩展的匹配模式
               href: extensions-chromium/developer-guide/match-patterns.md
-            - name: 创建自定义 DevTools UI 的扩展
+            - name: 创建用于自定义 DevTools UI 的扩展
               href: extensions-chromium/developer-guide/devtools-extension.md
         - name: Manifest
           items:
@@ -830,7 +832,7 @@
             - name: 基本身份验证
               href: webview2/concepts/basic-authentication.md
               displayName: 'auth, Basic authentication for WebView2 apps'
-            - name: Windowsed 与 WebView2 的视觉托管
+            - name: WebView2 的窗口化与可视托管
               href: webview2/concepts/windowed-vs-visual-hosting.md
               displayName: null
             - name: 网络请求的自定义管理
