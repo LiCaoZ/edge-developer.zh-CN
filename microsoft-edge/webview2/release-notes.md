@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 11/01/2022
-ms.openlocfilehash: 7f1b45010dd15aa50d1482b2be4d06f446592c3b
-ms.sourcegitcommit: 69a5ecbbf57b6a56c6f49998542c8a8ffa4b0802
+ms.date: 11/03/2022
+ms.openlocfilehash: 5301530da8a20aa7057da941e627f28412f70a6c
+ms.sourcegitcommit: 8a4a8c685bd5b68d95d879a12c642e435e000d86
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2022
-ms.locfileid: "12852292"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "12854483"
 ---
 # <a name="release-notes-for-the-webview2-sdk"></a>WebView2 SDK 发行说明
 
@@ -21,6 +21,7 @@ WebView2 团队以四周的节奏更新 [WebView2 SDK](https://www.nuget.org/pac
 通常，发行说明适用于 [WebView2 API 参考](webview2-api-reference.md)中列出的受支持平台。
 
 WebView2 bug 修复（如下面列出的修复程序）是特定于运行时的或特定于 SDK 的。
+
 
 #### <a name="recommended-browser-channel-and-runtime"></a>推荐的浏览器通道和运行时
 
@@ -32,26 +33,26 @@ WebView2 bug 修复（如下面列出的修复程序）是特定于运行时的�
 
 有关详细信息，请参阅 [将运行时版本与 SDK 版本匹配](concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version)。
 
+
 #### <a name="minimum-version-of-the-browser-or-runtime-to-load-webview2"></a>用于加载 WebView2 的浏览器或运行时的最低版本
 
 若要加载 WebView2，Microsoft Edge 或 WebView2 运行时的最低版本为 86.0.616.0。  仅当 Web 平台中发生中断性变更时，加载 WebView2 的最低版本才会更改。
 
 若要将预发布 SDK 与 Microsoft Edge 预览频道一起使用，请参阅 [测试即将推出的 API 和功能](how-to/set-preview-channel.md)。
 
+
 <!-- ====================================================================== -->
 ## <a name="10141822"></a>1.0.1418.22
 
-发布日期：2022 年 10 月 31 日 
+发布日期：2022 年 10 月 31 日
 
 [用于 WebView2 SDK 1.0.1418.22 的 NuGet 包](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1418.22)
 
 为了完全实现 API 兼容性，此版本的 WebView2 SDK 需要 WebView2 运行时版本 107.0.1418.22 或更高版本。
 
-### <a name="general"></a>概要 
+### <a name="general"></a>概要
 
 此 WebView2 SDK 版本具有与 WebView2 SDK 1.0.1466-prerelease 中相同的 bug 修复。 请参阅以下部分中的 **Bug 修复** 。
-
----
 
 
 <!-- ====================================================================== -->
@@ -68,27 +69,37 @@ WebView2 bug 修复（如下面列出的修复程序）是特定于运行时的�
 #### <a name="experimental-features"></a>实验功能
 
 * 添加了对创建具有指定大小的基于共享内存的缓冲区的支持：
-    *  `close`
-    *  `get_Buffer`
-    *  `get_FileMappingHandle`
-    *  `get_Size`
-    *  `OpenStream`  
 
 ##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2SharedBuffer 类](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer?view=webview2-dotnet-1.0.1466-prerelease&preserve-view=true)
+    * `Buffer`
+    * `FileMappingHandle`
+    * `Size`
+    * `Close`
+    * `Dispose`
+    * `OpenStream`
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2SharedBuffer 类](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedbuffer?view=webview2-1.0.1466-prerelease&preserve-view=true)
+* [CoreWebView2SharedBuffer 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbuffer?view=webview2-winrt-1.0.1466-prerelease&preserve-view=true)
+    * `Buffer`
+    * `Size`
+    * `Close`
+    * `OpenStream`
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
-* [CoreWebView2SharedBuffer 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbuffer?view=webview2-winrt-1.0.1466-prerelease&preserve-view=true)
+* [ICoreWebView2ExperimentalSharedBuffer 接口](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedbuffer?view=webview2-1.0.1466-prerelease&preserve-view=true)
+    * `Close`
+    * `get_Buffer`
+    * `get_FileMappingHandle`
+    * `get_Size`
+    * `OpenStream`
 
 ---
 
-*  添加了对从主帧或 `iframe`的脚本访问共享缓冲区对象的支持。
+*  添加了对从主帧或 `iframe`的脚本访问共享缓冲区对象的支持：
 
 ##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
 
@@ -108,34 +119,45 @@ WebView2 bug 修复（如下面列出的修复程序）是特定于运行时的�
 ---
 
 *  在当前顶级文档中添加了对从 `JavaScript` 参数运行 JavaScript 代码的支持：
-    *  `ColumnNumber`
-    *  `LineNumber`
-    *  `Message`
-    *  `Name`
-    *  `ToJson`
 
 ##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2ScriptException 类](/dotnet/api/microsoft.web.webview2.core.corewebview2scriptexception?view=webview2-dotnet-1.0.1466-prerelease&preserve-view=true)
+   * `ColumnNumber`
+   * `LineNumber`
+   * `Message`
+   * `Name`
+   * `ToJson`
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2ScriptException 类](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2scriptexception?view=webview2-winrt-1.0.1466-prerelease&preserve-view=true)
+   * `ColumnNumber`
+   * `LineNumber`
+   * `Message`
+   * `Name`
+   * `ToJson`
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2ExperimentalScriptException 接口](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalscriptexception?view=webview2-1.0.1466-prerelease&preserve-view=true)
+   * `get_ColumnNumber`
+   * `get_LineNumber`
+   * `get_Message`
+   * `get_Name`
+   * `get_ToJson`
 
 ---
 
 #### <a name="bug-fixes"></a>Bug 修复
 
 *   修复了打印设置中的自定义标题可能错误的 bug。  ([问题 #2093](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2093)) 
-*   以字符串的形式`Base64`在事件中`add_ClientCertificateRequested`显示`AllowedCertificateAuthorities`。  (Runtime)  ([问题 #2346](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2346)) 
+*   以字符串的形式`Base64`在事件中`add_ClientCertificateRequested`显示`AllowedCertificateAuthorities`。  (运行时)  ([问题 #2346](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2346)) 
 *   修复了打印设置中缺少默认页脚 URI 的 bug。  ([问题 #2851](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2851)) 
-*   修复了生成与打印设置相关的 null 指针异常的 bug。  (Runtime)  ([问题 #2858](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2858)) 
+*   修复了生成与打印设置相关的 null 指针异常的 bug。  (运行时)  ([问题 #2858](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2858)) 
 *   修复了在重定向到已配置了客户端证书身份验证的服务器以及订阅事件时 `WebResourceRequested` 报告导航失败的 bug。  (运行时) 
 *   修复了以下 `AddHostObjectToScript` bug：当 JavaScript 调用异步方法，然后调用同步方法时，异步方法调用可能会失败。
+
 
 <!-- ====================================================================== -->
 ## <a name="10137028"></a>1.0.1370.28
@@ -153,10 +175,6 @@ WebView2 bug 修复（如下面列出的修复程序）是特定于运行时的�
 以下项现已稳定：
 
 *  拖放 API：
-   * `DragEnter`
-   * `DragLeave`
-   * `DragOver`
-   * `Drop`
 
 ##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
 
@@ -289,7 +307,6 @@ WebView2 bug 修复（如下面列出的修复程序）是特定于运行时的�
 *   修复了在最小化窗口后无法关闭下载弹出窗口的 bug。  (运行时) 
 
 
-
 <!-- ====================================================================== -->
 ## <a name="10134322"></a>1.0.1343.22
 
@@ -320,10 +337,6 @@ WebView2 bug 修复（如下面列出的修复程序）是特定于运行时的�
 以下项现已稳定：
 
 *  拖放 API：
-   * `DragEnter`
-   * `DragLeave`
-   * `DragOver`
-   * `Drop`
 
 ##### [<a name="netc"></a>.NET/C#](#tab/dotnetcsharp)
 
@@ -331,6 +344,10 @@ WebView2 bug 修复（如下面列出的修复程序）是特定于运行时的�
 
 ##### [<a name="winrtc"></a>WinRT/C#](#tab/winrtcsharp)
 
+* [ICoreWebView2CompositionControllerInterop2.DragEnter 方法](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop2?view=webview2-winrt-1.0.1369-prerelease&preserve-view=true#dragenter)
+* [ICoreWebView2CompositionControllerInterop2.DragLeave 方法](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop2?view=webview2-winrt-1.0.1369-prerelease&preserve-view=true#dragleave)
+* [ICoreWebView2CompositionControllerInterop2.DragOver 方法](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop2?view=webview2-winrt-1.0.1369-prerelease&preserve-view=true#dragover)
+* [ICoreWebView2CompositionControllerInterop2.Drop 方法](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop2?view=webview2-winrt-1.0.1369-prerelease&preserve-view=true#drop)
 * [CoreWebView2CompositionController.DragLeave 方法](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.1369-prerelease&preserve-view=true#dragleave)
 
 ##### [<a name="win32c"></a>Win32/C++](#tab/win32cpp)

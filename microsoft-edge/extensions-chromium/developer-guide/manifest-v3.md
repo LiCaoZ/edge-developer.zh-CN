@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: extensions
 ms.date: 5/09/2022
-ms.openlocfilehash: ea693feab0449cc4faff1af61498b2b7c4d25227
-ms.sourcegitcommit: 31669c03063cb6de515ba9c6d57a9cd8658f445e
+ms.openlocfilehash: ce90a24343fbdb219fb266e54238ed5d83d81206
+ms.sourcegitcommit: 8a4a8c685bd5b68d95d879a12c642e435e000d86
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "12841135"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "12854462"
 ---
 # <a name="overview-and-timelines-for-migrating-to-manifest-v3"></a>迁移到清单 V3 的概述和日程表
 
@@ -36,14 +36,15 @@ ms.locfileid: "12841135"
 
 为了帮助你进行规划，请考虑以下 Microsoft 合作伙伴中心和 Microsoft Edge 更改计划。
 
-我们目前正在更新 MV3 迁移时间线。
+**我们目前正在更新 MV3 迁移时间线。
+**
 
-我们知道，Chrome 已修改了清单 V2 日落的时间线，到目前为止，我们将继续遵循Chromium的时间线。 我们将继续分析扩展开发人员提出的问题，并探索 Microsoft Edge 加载项生态系统的最佳路径。 我们将独立决定 Microsoft Edge 加载项的 MV3 迁移时间线，并在此处分享更新。 同时，请参阅[Chromium时间线](https://developer.chrome.com/docs/extensions/mv3/mv2-sunset/)来规划扩展的迁移。
+我们知道，Chromium已修订了清单 V2 日落的时间线。 我们将独立决定 Microsoft Edge 加载项的 MV3 迁移时间线，并在此处共享更新。 我们将继续分析扩展开发人员提出的问题，并探索 Microsoft Edge 加载项生态系统的最佳路径。 同时，请参阅[Chromium时间线](https://developer.chrome.com/docs/extensions/mv3/mv2-sunset/)来规划扩展的迁移。
 
 
 | 时间 | Microsoft 合作伙伴中心更改 | Microsoft Edge 更改 |
 |--- |--- |--- |
-| 2022 年 7 月 | Microsoft 合作伙伴中心将不再接受将可见性设置为 `Hidden` 或 `Public`的新清单 V2 扩展。 | 无更改。 |
+| 2022 年 7 月 (已生效)  | Microsoft 合作伙伴中心将不再接受将可见性设置为 `Hidden` 或 `Public`的新清单 V2 扩展。 | 无更改。 |
 | TBD - 请参阅上面的说明 | Microsoft 合作伙伴中心将不再接受对现有清单 V2 扩展的更新。 开发人员可以提交更新，以便将 V2 扩展迁移到 V3。 | Microsoft Edge 停止运行清单 V2 扩展。 企业可以使用企业策略允许清单 V2 扩展在 Microsoft Edge 上运行。 |
 | TBD - 请参阅上面的说明 | 无更改。 | 即使使用企业策略，清单 V2 扩展也不会在 Microsoft Edge 中运行。 |
 

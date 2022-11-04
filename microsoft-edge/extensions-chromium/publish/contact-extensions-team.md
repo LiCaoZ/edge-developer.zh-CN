@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/17/2021
-ms.openlocfilehash: 12eb6f27b14468ab2cad0a15e98ab164b84f23a5
-ms.sourcegitcommit: 31669c03063cb6de515ba9c6d57a9cd8658f445e
+ms.openlocfilehash: c7f38b6649c57a8e0f8d0d1065ee9dd41b7a866e
+ms.sourcegitcommit: 8a4a8c685bd5b68d95d879a12c642e435e000d86
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "12841128"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "12854490"
 ---
 # <a name="contact-microsoft-edge-extensions-support"></a>联系 Microsoft Edge 扩展支持
 
@@ -33,4 +33,4 @@ ms.locfileid: "12841128"
 <!-- ====================================================================== -->
 ## <a name="report-copyright-or-trademark-infringement"></a>举报版权或商标侵权
 
-如果你认为 Microsoft Edge 加载项网站上的某个项目侵犯了版权或商标，请参阅 [侵权通知](https://www.microsoft.com/info/Marketplace.html) 并填写表单。  Microsoft Edge 扩展团队会审查你的报表，然后采取必要的操作。
+如果你认为 Microsoft Edge 加载项网站上的某个项侵犯了版权或商标，请填写 [“报告侵权](https://www.microsoft.com/en-us/concern/dmca) ”表单。  Microsoft Edge 扩展团队将审查你的报表，然后采取必要的措施。
