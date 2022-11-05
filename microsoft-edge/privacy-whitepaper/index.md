@@ -10,12 +10,12 @@ no-loc:
 - Cast
 - Google Cast
 ms.date: 12/10/2021
-ms.openlocfilehash: 5330396a7158ba0e8f5c74cc6fe26c81f2ec4301
-ms.sourcegitcommit: 4d5a0892ecdfbb06749149bd516c92b190700a9e
+ms.openlocfilehash: c1102b9b49b5b93eb813e150bcbf3fad7ee6997a
+ms.sourcegitcommit: 4191964fa3c15e4133667be285a9373bed5cb6fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2022
-ms.locfileid: "12757863"
+ms.lasthandoff: 11/05/2022
+ms.locfileid: "12854875"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Microsoft Edge 隐私白皮书
 
@@ -748,24 +748,24 @@ Microsoft Edge使你能够安装网站开发人员创建的 Web 应用，并固�
 <!-- ====================================================================== -->
 ## <a name="webview"></a>WebView
 
-Microsoft Edge WebView 控件允许应用开发人员在 Windows 7、Windows 10 及更高版本的本机应用程序中托管 Web 内容。  托管 WebView2 实例的应用程序可能会向 Microsoft 发送诊断数据。 诊断数据可以包括你如何使用Microsoft Edge和你访问的站点。
+Microsoft Edge WebView 控件允许应用开发人员在 Windows 7、Windows 10 及更高版本和所选非 Windows 平台上的本机应用程序中托管 Web 内容。 托管 WebView2 实例的应用程序可能会使用自己的标识符向 Microsoft 发送诊断数据。 诊断数据可以包括你如何使用Microsoft Edge和你访问的站点。
 
 若要启用诊断数据收集，请转到 `edge://settings/privacy`。 打开 **可选诊断数据** 设置。 若要在 Windows 10 上禁用 Microsoft Edge 故障诊断数据收集，请打开“**开始**” > “**设置**” > “**隐私**”并选择“**诊断和反馈**”。 若要关闭所有其他平台的诊断数据收集，请转到 `edge://settings/privacy`。 **通过发送有关如何使用浏览器、访问的网站和故障报告设置的可选诊断数据，关闭帮助改进 Microsoft 产品**。 托管 Microsoft Edge WebView 的应用程序可能会收集受开发人员数据收集管理和相关隐私策略约束的其他数据。
 
 <!-- ====================================================================== -->
-## <a name="writing-assistance"></a>编写帮助
+## <a name="writing-assistance"></a>写作帮助
 
-在浏览器中键入时，Microsoft Edge 提供增强的拼写和语法检查。  若要使用增强的拼写和语法检查，请转到`edge://settings/languages`并选择“**使用写入帮助**切换”下**的Microsoft 编辑器**。 
+在浏览器中键入时，Microsoft Edge 提供增强的拼写和语法检查。  若要使用增强的拼写和语法检查，请转到`edge://settings/languages`“**使用写作辅助**”开关下的“**Microsoft 编辑器**”。 
 
-如果选择**Microsoft 编辑器**，Microsoft Edge 会通过安全的 HTTPS 连接将类型化文本和服务令牌发送到 Microsoft 云服务。 服务令牌不包含任何用户身份信息。 然后，Microsoft 云服务将处理文本以检测文本中的拼写和语法错误。 处理完成后，将立即删除发送到 Microsoft 的所有类型化文本。 任何时间段内均不存储任何数据。 
+如果选择**Microsoft 编辑器**，Microsoft Edge 会通过安全的 HTTPS 连接将键入的文本和服务令牌发送到 Microsoft 云服务。 服务令牌不包含任何用户身份信息。 然后，Microsoft 云服务会处理文本以检测文本中的拼写和语法错误。 处理完成后，将立即删除发送给 Microsoft 的所有键入文本。 任何时间段内均不存储任何数据。 
 
-如果在`edge://settings/languages`**“使用写入帮助**”切换下选择 **“基本**”，服务将仅在设备上执行本地拼写检查，并且不会将任何数据发送到云中进行拼写检查服务。 
+如果在 中的`edge://settings/languages`**“使用书写帮助**”开关下选择“**基本**”，该服务将仅在设备上执行本地拼写检查，并且不会将任何数据发送到云进行拼写检查服务。 
 
-若要关闭所有拼写和语法功能，请关闭 **“使用写入帮助** ”切换。
+若要关闭所有拼写和语法功能，请关闭 **“使用写作辅助** ”切换。
  
-将新语言添加到 Microsoft Edge 时，浏览器会通过 HTTPS 将新语言的字典下载到设备。 该字典用于基本拼写检查服务或Microsoft 编辑器拼写和语法检查不支持的语言。 从 Microsoft Edge 设置中删除语言将从设备中删除字典。
+向 Microsoft Edge 添加新语言时，浏览器会通过 HTTPS 将新语言的字典下载到设备。 字典用于基本拼写检查服务或Microsoft 编辑器拼写和语法检查不支持的语言。 从 Microsoft Edge 设置中删除语言将从设备中删除字典。
 
-若要在本地字典中添加单词，请转到 `edge://settings/languages`“ **自定义”字典**，在 **“添加新单词** ”文本框中键入一个单词，然后单击 **“添加单词** ”按钮。  若要删除单词，请单击单词旁边的 **X** 按钮。
+若要在本地词典中添加字词，请转到 `edge://settings/languages`，单击“ **自定义词典**”，在“ **添加新** 单词”文本框中键入单词，然后单击“ **添加单词** ”按钮。  若要删除某个单词，请单击单词旁边的 **“X** ”按钮。
 
 自定义字典在 **来宾** 模式下不可用。
 
