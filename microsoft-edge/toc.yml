@@ -888,6 +888,9 @@
             - name: 管理用户数据文件夹
               href: webview2/concepts/user-data-folder.md
               displayName: Manage the user data folder
+            - name: 支持单个用户数据文件夹下的多个配置文件
+              href: webview2/concepts/multi-profile-support.md
+              displayName: null
             - name: 从用户数据文件夹中清除浏览数据
               href: webview2/concepts/clear-browsing-data.md
               displayName: null
