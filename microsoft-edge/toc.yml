@@ -642,7 +642,7 @@
               href: extensions-chromium/developer-guide/declare-permissions.md
             - name: 将 Chrome 扩展移植到Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
-            - name: 分发扩展的备用方法
+            - name: 分发扩展的替代方法
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
             - name: 本机消息传递
               href: extensions-chromium/developer-guide/native-messaging.md
