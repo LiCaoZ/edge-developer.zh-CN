@@ -765,7 +765,7 @@
               displayName: GettingStartedGuides
             - name: WinUI 2 (UWP)
               href: webview2/get-started/winui2.md
-              displayName: Get started with WinUI 2 (UWP) apps
+              displayName: Get started with WebView2 in WinUI 2 (UWP) apps
             - name: WinUI 3 （Windows 应用 SDK）
               href: webview2/get-started/winui.md
               displayName: 'WinUI3_GettingStarted, Get started with WinUI 3 (Windows App SDK) apps'
