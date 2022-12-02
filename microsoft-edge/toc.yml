@@ -740,12 +740,14 @@
                   href: progressive-web-apps-chromium/how-to/share.md
                 - name: 定义应用快捷方式
                   href: progressive-web-apps-chromium/how-to/shortcuts.md
+                - name: 生成操作系统小组件
+                  href: progressive-web-apps-chromium/how-to/widgets.md
                 - name: 在后台同步和更新
                   href: progressive-web-apps-chromium/how-to/background-syncs.md
         - name: 新增功能
           href: progressive-web-apps-chromium/whats-new/pwa.md
           displayName: 'release notes, announcements'
-        - name: 示例 PWA
+        - name: 渐进式 Web 应用演示
           href: progressive-web-apps-chromium/demo-pwas.md
     - name: WebView2
       items:
