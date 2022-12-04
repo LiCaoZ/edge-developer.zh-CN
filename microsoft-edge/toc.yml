@@ -17,6 +17,8 @@
             - name: Microsoft Edge DevTools 中的新增功能
               href: devtools-guide-chromium/whats-new/whats-new.md
               displayName: 'release notes, announcements'
+            - name: Microsoft Edge 108
+              href: devtools-guide-chromium/whats-new/2022/12/devtools-108.md
             - name: Microsoft Edge 107
               href: devtools-guide-chromium/whats-new/2022/10/devtools-107.md
             - name: Microsoft Edge 106
