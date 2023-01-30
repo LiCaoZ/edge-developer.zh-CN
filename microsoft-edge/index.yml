@@ -119,7 +119,7 @@ conceptualContent:
       - text: 开发工具概述
         url: /microsoft-edge/devtools-guide-chromium/overview
         itemType: overview
-      - text: DevTools Microsoft Edge的新增功能
+      - text: Microsoft Edge DevTools 的新增功能
         url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
         itemType: whats-new
       - text: 命令菜单
