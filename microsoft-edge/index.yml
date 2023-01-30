@@ -1,28 +1,28 @@
 ### YamlMime:Hub
 title: Microsoft Edge 文档
-summary: 了解如何通过Microsoft Edge文档、教程和示例来使用工具。  包括用户、开发人员和管理员的信息。
+summary: 通过浏览面向用户、开发人员和 IT 管理员的文档、教程和示例，了解如何使用 Microsoft Edge。
 brand: m365
 metadata:
   title: Microsoft Edge 文档
-  description: 为开发人员、IT 管理员和浏览器用户Microsoft Edge信息;包括 DevTools、扩展、PWA、WebDriver 等。
+  description: 为开发人员、IT 管理员和浏览器用户提供的 Microsoft Edge 信息；包括 DevTools、扩展、PWA、WebDriver 等。
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
   ms.date: 09/09/2021
   ms.localizationpriority: high
   ms.prod: microsoft-edge
-  ms.openlocfilehash: 47964c2d70143fb12ed8212efdc4a330aa481aca
-  ms.sourcegitcommit: 4e2422123f89fd168dedd9722af8a3281b0f3128
+  ms.openlocfilehash: 47964c2d70143fb12ed8212efdc4a330aa481aca # Need Edit
+  ms.sourcegitcommit: 4e2422123f89fd168dedd9722af8a3281b0f3128 # Need Edit
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/26/2022
-  ms.locfileid: "12682680"
+  ms.lasthandoff: 01/30/2023
+  ms.locfileid: "12682680" # Need Edit
 highlightedContent:
   items:
   - title: Microsoft Edge（官方稳定频道）
     itemType: download
     url: https://www.microsoft.com/edge
-  - title: Microsoft Edge Insider Channels
+  - title: Microsoft Edge 预览体验频道
     itemType: download
     url: https://www.microsoft.com/edge/business/download
   - title: 了解新增功能
@@ -34,7 +34,7 @@ highlightedContent:
   - title: 如何使用 Microsoft Edge
     itemType: learn
     url: https://support.microsoft.com/microsoft-edge?ocid=DMC-End-User-Support
-  - title: 在企业中管理Microsoft Edge
+  - title: 在企业中管理 Microsoft Edge
     itemType: learn
     url: /deployedge/index
   - title: 发现 Web 开发人员功能
@@ -42,7 +42,7 @@ highlightedContent:
     url: /microsoft-edge/index#microsoft-edge-for-developers
 conceptualContent:
   sections:
-  - title: 企业版Microsoft Edge
+  - title: 企业版 Microsoft Edge
     items:
     - title: 了解有关企业中的 Microsoft Edge 的信息
       links:
@@ -103,14 +103,14 @@ conceptualContent:
       - itemType: reference
         text: 扩展托管
         url: /microsoft-edge/extensions-chromium/enterprise/hosting-and-updating
-  - title: 面向开发人员的Microsoft Edge
+  - title: 面向开发人员的 Microsoft Edge
     items:
     - title: Microsoft Edge 开发工具
       links:
       - text: Microsoft Edge 开发人员文档
         url: /microsoft-edge/developer/index
         itemType: overview
-      - text: 使用 Web 开发Microsoft Edge
+      - text: 使用 Web 开发 Microsoft Edge
         url: /microsoft-edge/develop-web-microsoft-edge
         itemType: overview
       - text: Microsoft Edge DevTools 文档
@@ -158,7 +158,7 @@ conceptualContent:
         text: 入门教程
       - url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
         itemType: overview
-        text: 将 Chromium 扩展移植到Microsoft Edge
+        text: 将 Chromium 扩展移植到 Microsoft Edge
       - url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
         itemType: how-to-guide
         text: 分发扩展的备用方法
@@ -221,7 +221,7 @@ conceptualContent:
       links:
       - url: /microsoft-edge/test-and-automation/test-and-automation
         itemType: overview
-        text: 测试并自动化Microsoft Edge
+        text: 测试并自动化 Microsoft Edge
       - url: /microsoft-edge/devtools-protocol-chromium
         itemType: how-to-guide
         text: 开发工具协议
@@ -273,13 +273,13 @@ additionalContent:
   - title: 帮助和支持
     items:
     - summary: 从社区专家获取建议和答案。
-      title: Microsoft Q&A上的社区支持
+      title: Microsoft Q&A 上的社区支持
       url: /answers/topics/ms-edge.html
-    - summary: Microsoft 致力于确保应用在Microsoft Edge上正常工作。  如果在最新版本的 Edge 上遇到业务应用或网站问题，Microsoft 将帮助你免费修复应用和网站。  有关资格要求，请参阅产品/服务详细信息。
+    - summary: Microsoft 致力于确保应用在 Microsoft Edge 上正常工作。如果你的业务应用或网站在最新版本的 Edge 上遇到问题，Microsoft 将协助你免费修复。有关资格要求，请参阅产品/服务详细信息。
       title: 使用应用 Assure 获取免费帮助
       url: https://fasttrack.microsoft.com/portal
-    - summary: 如果你的企业需要针对Microsoft Edge的即时技术支持，则 Microsoft 提供 1：1 支持，使用各种计划来帮助你获得所需的支持级别。
-      title: Microsoft 支持 for Business
+    - summary: 如果你的企业需要针对 Microsoft Edge 的即时技术支持，由 Microsoft 提供的一对一支持使用各种计划来帮助你获得所需的支持级别。
+      title: Microsoft 商业支持
       url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
     - summary: 为用户提供有用的支持资源。
       title: 用户支持
@@ -288,7 +288,7 @@ additionalContent:
     items:
     - title: 参考
       links:
-      - text: 如何检测网站中的 Microsoft Edge
+      - text: 如何识别网站中的 Microsoft Edge
         url: /microsoft-edge/web-platform/user-agent-guidance
       - text: Microsoft Edge 平台状态
         url: https://developer.microsoft.com/microsoft-edge/status
